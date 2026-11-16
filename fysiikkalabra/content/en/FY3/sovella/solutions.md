@@ -75,9 +75,9 @@
 **Reading the graph:** A tangent is drawn to the curve at $0\,\text{min}$. It passes through the points $(0\,\text{min};\ 20.0\,{}^\circ\text{C})$ and $(10\,\text{min};\ 28.5\,{}^\circ\text{C})$, so the initial rate of warming is $\dfrac{\Delta T}{\Delta t} = \dfrac{8.5\,\text{K}}{10\,\text{min}} = 0.85\,\text{K/min}$.
 **Formula:** $P = \dfrac{Q}{\Delta t} = cm \cdot \dfrac{\Delta T}{\Delta t}$
 **Conversions:** $0.85\,\text{K/min} = 0.85\,\text{K} : 60\,\text{s} = 0.014\,17\,\text{K/s}$. A change in temperature is the same in degrees Celsius and in kelvins.
-**Substitution:** $P = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 0.014\,17\,\text{K/s} = 237\,\text{W}$
+**Substitution:** $$\begin{aligned} P &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 0.014\,17\,\text{K/s} \\ &= 237\,\text{W} \end{aligned}$$
 **Answer:** $P \approx 240\,\text{W}$, two significant figures, because the slope of the tangent is read from the graph to about two figures.
-**Reasonableness:** The radiation arriving at the collector is $800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 = 400\,\text{W}$, so the water receives a little over half of it. The rise of $4.1\,\text{K}$ in the first five minutes gives almost the same power: $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 4.1\,\text{K} : 300\,\text{s} \approx 230\,\text{W}$.
+**Reasonableness:** The radiation arriving at the collector is $$\begin{aligned} &800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 \\ &= 400\,\text{W} \end{aligned}$$, so the water receives a little over half of it. The rise of $4.1\,\text{K}$ in the first five minutes gives almost the same power: $$\begin{aligned} &4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 4.1\,\text{K} : 300\,\text{s} \\ &\approx 230\,\text{W} \end{aligned}$$.
 
 ### c)
 **Given:** power received by the water $P \approx 237\,\text{W}$, radiation power per area $800\,\text{W/m}^2$ and area $A = 0.50\,\text{m}^2$
@@ -96,7 +96,7 @@
 **Reading the graph:** The slope at $50\,\text{min}$ is read from the line through the points at $40\,\text{min}$ and $60\,\text{min}$, which is almost parallel to the tangent of the curve: $\dfrac{54.7\,{}^\circ\text{C} - 46.2\,{}^\circ\text{C}}{20\,\text{min}} = 0.425\,\text{K/min}$.
 **Formula:** $P_\text{water} = cm \cdot \dfrac{\Delta T}{\Delta t}$ and $P_\text{loss} = P - P_\text{water}$
 **Conversions:** $0.425\,\text{K/min} = 0.425\,\text{K} : 60\,\text{s} = 0.007\,08\,\text{K/s}$
-**Substitution:** $P_\text{water} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 0.007\,08\,\text{K/s} = 119\,\text{W}$ and $P_\text{loss} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
+**Substitution:** $$\begin{aligned} P_\text{water} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \\ &\cdot 0.007\,08\,\text{K/s} \\ &= 119\,\text{W} \end{aligned}$$ and $P_\text{loss} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
 **Answer:** $P_\text{loss} \approx 120\,\text{W}$, two significant figures, because both slopes are read from the graph.
 **Reasonableness:** At $50\,\text{min}$ the water is about $31\,\text{K}$ warmer than the air, and the loss is about half of the power received from the Sun. If it continued at the same rate, the loss would grow equal to the power received when the temperature difference is about $60\,\text{K}$. Then the temperature of the water would stop rising at about $80\,{}^\circ\text{C}$, which is believable for a simple collector.
 
@@ -170,7 +170,7 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 **Principle:** The amount of air in the bubble stays the same. The bubble is small, so it is always at the temperature of the surrounding water, and its pressure is the pressure of the water at that depth: atmospheric pressure and hydrostatic pressure together. From the equation of state of an ideal gas $pV = nRT$ it follows that when $n$ is constant, $\dfrac{pV}{T}$ stays the same. Both pressure and temperature change, so neither can be left out.
 **Formula:** $p_1 = p_0 + \rho g h$ and $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1}$, where at the surface $p_2 = p_0$
 **Conversions:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6.0 + 273.15)\,\text{K} = 279.15\,\text{K}$ and $T_2 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. The volume can stay in cubic centimetres, because the equation has a ratio of volumes.
-**Substitution:** $p_1 = 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 248\,150\,\text{Pa}$ and $V_2 = 4.0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293.15\,\text{K}}{279.15\,\text{K}} = 10.3\,\text{cm}^3$
+**Substitution:** $$\begin{aligned} p_1 &= 101\,000\,\text{Pa} \\ &+ 1000\,\text{kg/m}^3 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} \\ &= 248\,150\,\text{Pa} \end{aligned}$$ and $$\begin{aligned} V_2 &= 4.0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293.15\,\text{K}}{279.15\,\text{K}} \\ &= 10.3\,\text{cm}^3 \end{aligned}$$
 **Answer:** $V_2 \approx 10\,\text{cm}^3$, two significant figures as in the volume $4.0\,\text{cm}^3$.
 **Reasonableness:** The pressure falls by a factor of about $2.5$ as the bubble rises, so the volume grows to about $2.5$ times, and the warming increases it by about $5\,\%$ more. The growth of bubbles as they rise can also be seen in diving videos.
 

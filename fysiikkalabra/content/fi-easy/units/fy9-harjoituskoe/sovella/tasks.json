@@ -243,7 +243,7 @@
           "text": "Kuljettaja ehdottaa, että laatikkoon laitetaan lisää työkaluja. Silloin laatikko olisi raskaampi ja pysyisi paremmin paikallaan. Arvioi ehdotusta fysiikan avulla.",
           "criteria": [
             {
-              "text": "Suurin lepokitka $\\mu_0 mg$ kasvaa, kun massa kasvaa. Myös voima $ma$, joka tarvitaan laatikon hidastamiseen, kasvaa samassa suhteessa.",
+              "text": "Lähtökitka eli täysin kehittynyt lepokitka $\\mu_0 mg$ kasvaa, kun massa kasvaa. Myös voima $ma$, joka tarvitaan laatikon hidastamiseen, kasvaa samassa suhteessa.",
               "tag": "concept",
               "points": 2
             },
@@ -475,7 +475,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho muuttuu jatkojohdossa lämmöksi?",
+          "text": "Kuinka suuri teho muuttuu jatkojohdossa sisäenergiaksi?",
           "answer": {
             "value": 114.0,
             "unit": "W",
@@ -502,7 +502,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "Oletetaan, että jatkojohdon johtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Kuinka suuri teho muuttuisi silloin lämmöksi?",
+          "text": "Oletetaan, että jatkojohdon johtimien poikkipinta-ala on $2{,}5\\,\\text{mm}^2$. Kuinka suuri teho muuttuisi silloin sisäenergiaksi?",
           "answer": {
             "value": 70.4,
             "unit": "W",

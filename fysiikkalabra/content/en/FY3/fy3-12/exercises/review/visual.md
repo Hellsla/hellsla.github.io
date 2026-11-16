@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e958149d90cd81ad
+CONTENT-HASH: 72730a1a2c9928de
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy3-12-L1-05 / L2-09 — "the arrow between the Sun and the Earth that points up and to the left" is clumsy; "the pale arrow pointing up and left away from the Earth" matches the figure.
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- Round 3, delta. Opened fy3-12-open-exercises-1280-5 (15-5): "Reading the graph" now quotes "heat radiation", which is the label shown on the English figure; no "lämpösäteily" remains in solutions.md.
-- Round 2 captures of 15-18 (L2-1280-12) unchanged by this fix; figure, answer box and solution layout fine.
-- Hash at start and end the same.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

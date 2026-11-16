@@ -34,4 +34,6 @@ a["fy2-3-L3-05"] = (100 * run / (run + off) / 1000 * YEAR_H - 130) * PRICE   # 3
 # fy2-3-L2-08 is multiple choice: no number (P doubles: 6,0 kWh : 1,5 h = 4,0 kW vs 6,0 kWh : 3,0 h = 2,0 kW)
 a["fy2-3-L1-09"] = 5.0 * 735.5 * 30 * 60 / 1e6     # 5,0 hp · 735,5 W/hp (MAFY) = 3677,5 W; 30 min = 1800 s; E = Pt = 6 619 500 J = 6,6 MJ
 a["fy2-3-L1-10"] = ((120e3 - 60e3) / (80 - 40)) / (40e3 / 80)   # read off fy2-3/graph-ab: A (40 s; 60 kJ),(80 s; 120 kJ) -> 1500 W; B (80 s; 40 kJ) -> 500 W; ratio 3,0
+E_a4 = 2.0 * 4                                          # E = P dt = 2,0 kW · 4 h = 8,0 kWh (the four hours are exact)
+a["fy2-3-L2-09"] = -5.0 * E_a4                          # cost at -5,0 snt/kWh: -40 snt (part b; at +15 snt/kWh 120 snt; Vaasan sahko margin 0,41 snt/kWh · 8,0 kWh = 3,28 snt)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

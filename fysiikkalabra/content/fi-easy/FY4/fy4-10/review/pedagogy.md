@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: df2e1a6a6b5af038
+CONTENT-HASH: 4bf9d326d2301a78
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+1. lesson.md:235 — the caption describes the photo but not why it is here — add one sentence that ties it to the paragraph above: "Kuulat ovat yhtä raskaita, kuten biljardipallot. Siksi liike siirtyy rivin toiseen päähän."
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Delta: the Newton's cradle photo stands right after the paragraph on equal masses in a nearly elastic collision, which it illustrates; recognisable, alt text and caption plain.
+- meta.json key concept "kimmoton törmäys": "sisäenergiaksi" instead of "lämmöksi", in line with the glossary and the chapters on energy.
+- Hash the same at start and end.

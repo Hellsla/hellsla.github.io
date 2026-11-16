@@ -398,6 +398,8 @@ Behind and in front of every pixel of a liquid crystal display there is a polari
 
 ## Formula: Malus's law and Brewster's law
 
+**Extension section.** Malus's law and Brewster's law take the topic of the chapter further. On the core path it is enough to understand the qualitative model above: how a polariser and reflection polarise light. The calculations of this section and the worked example of the chapter are extension material, and so are the tasks marked as extension tasks.
+
 ### Malus's law
 Polarised light whose electric field has amplitude $E_0$ arrives at an analyser whose transmission axis makes an angle $\theta$ with the direction of polarisation of the light. The component of the electric field along the transmission axis, $E_0 \cos\theta$, passes through, and the perpendicular component, $E_0 \sin\theta$, is absorbed. The intensity of a wave is proportional to the square of its amplitude, so the intensity decreases by the factor $\cos^2\theta$.
 
@@ -533,7 +535,7 @@ where $\alpha_\text{B}$ is Brewster's angle measured from the normal of the surf
 </svg>
 
 ## Worked example
-The intensity of unpolarised light is $840\,\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $35^\circ$. What is the intensity of the light after the second polariser?
+Extension example. The intensity of unpolarised light is $840\,\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $35^\circ$. What is the intensity of the light after the second polariser?
 
 <!-- vaihe -->
 

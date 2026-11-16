@@ -135,7 +135,7 @@
           {
             "text": "Ilmakehästä tulee maanpinnalle alas $150\\,\\text{W/m}^2$. Pinta saa siis yhteensä $390\\,\\text{W/m}^2$. Tasapainossa sen on säteiltävä sama $390\\,\\text{W/m}^2$, ja se vaatii korkeamman lämpötilan.",
             "correct": true,
-            "feedback": "Oikein. Maanpinnalle tulee $240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 = 390\\,\\text{W/m}^2$. Tasapainossa lähtevä teho on yhtä suuri. Mitä kuumempi kappale on, sitä enemmän se säteilee. Siksi $390\\,\\text{W/m}^2$ vastaa korkeampaa lämpötilaa kuin $240\\,\\text{W/m}^2$. Ilmakehä ei tuota energiaa. Se säteilee alas osan maanpinnalta imemästään säteilystä."
+            "feedback": "Oikein. Maanpinnalle tulee $$\\begin{aligned} &240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 \\\\ &= 390\\,\\text{W/m}^2 \\end{aligned}$$. Tasapainossa lähtevä teho on yhtä suuri. Mitä kuumempi kappale on, sitä enemmän se säteilee. Siksi $390\\,\\text{W/m}^2$ vastaa korkeampaa lämpötilaa kuin $240\\,\\text{W/m}^2$. Ilmakehä ei tuota energiaa. Se säteilee alas osan maanpinnalta imemästään säteilystä."
           },
           {
             "text": "Maanpinta säteilee ilmakehän kanssa vähemmän, joten energiaa jää pintaan enemmän.",
@@ -176,7 +176,7 @@
             "feedback": "Kerroit ylimäärän ja $1{,}2\\,\\text{W/m}^2$ kelviniä kohti. Kysytään, montako kelviniä tarvitaan, jotta ylimäärä $3{,}6\\,\\text{W/m}^2$ pienenee nollaan. Jaa ylimäärä luvulla $1{,}2\\,\\text{W/m}^2$ kelviniä kohti."
           }
         ],
-        "solution": "**Annettu:** taulukon rivi \"heti jälkeen\": lähtevä teho $236{,}4\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja ylimäärä $3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Imeytyvä teho on $240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Mallissa lähtevä teho kasvaa $k = 1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ jokaista lämpenemisen kelviniä kohti.\n\n**Kysytty:** kokonaislämpeneminen $\\Delta T$ kelvineinä, kun lähtevä teho on taas yhtä suuri kuin imeytyvä\n\n**Periaate:** Pitoisuus pysyy vakiona, joten imeytyvä teho pysyy samana $240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Maapallo lämpenee, kun ylimäärä on positiivinen. Lämmetessään se säteilee enemmän. Tasapaino saavutetaan, kun lämpeneminen on kasvattanut lähtevää tehoa täsmälleen ylimäärän verran.\n\n**Kaava:** Lähtevän tehon on kasvettava ylimäärän $\\Delta P$ verran. Kasvu on $k\\,\\Delta T$:\n\n$$k\\,\\Delta T = \\Delta P \\quad\\Rightarrow\\quad \\Delta T = \\frac{\\Delta P}{k}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Ylimäärä ja kerroin on annettu yksiköissä $\\tfrac{\\text{W}}{\\text{m}^2}$ ja $\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, ja neliömetrit supistuvat.\n\n**Sijoitus:** $\\Delta T = \\dfrac{3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}}{1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}} = 3{,}0\\,\\text{K}$\n\n**Vastaus:** $3{,}0\\,\\text{K}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat ylimäärä $240{,}0 - 236{,}4 = 3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja kerroin $1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Erotuksella on yksi desimaali ja kaksi numeroa. Kertoimessa on kaksi numeroa.\n\n**Järkevyys:** Tase kuntoon: lähtevä teho on $236{,}4 + 1{,}2 \\cdot 3{,}0 = 240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2}$, yhtä suuri kuin imeytyvä. Tulos sopii taulukkoon. Kahden kelvinin kohdalla ylimäärä on vielä $1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Kolmannen kelvinin jälkeen se on nolla. Lämpeneminen jatkuu siis vielä pitkään sen jälkeen, kun pitoisuus on lakannut kasvamasta. Se pysähtyy uuteen tasapainoon."
+        "solution": "**Annettu:** taulukon rivi \"heti jälkeen\": lähtevä teho $236{,}4\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja ylimäärä $3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Imeytyvä teho on $240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Mallissa lähtevä teho kasvaa $k = 1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ jokaista lämpenemisen kelviniä kohti.\n\n**Kysytty:** kokonaislämpeneminen $\\Delta T$ kelvineinä, kun lähtevä teho on taas yhtä suuri kuin imeytyvä\n\n**Periaate:** Pitoisuus pysyy vakiona, joten imeytyvä teho pysyy samana $240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Maapallo lämpenee, kun ylimäärä on positiivinen. Lämmetessään se säteilee enemmän. Tasapaino saavutetaan, kun lämpeneminen on kasvattanut lähtevää tehoa täsmälleen ylimäärän verran.\n\n**Kaava:** Lähtevän tehon on kasvettava ylimäärän $\\Delta P$ verran. Kasvu on $k\\,\\Delta T$:\n\n$$k\\,\\Delta T = \\Delta P \\quad\\Rightarrow\\quad \\Delta T = \\frac{\\Delta P}{k}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Ylimäärä ja kerroin on annettu yksiköissä $\\tfrac{\\text{W}}{\\text{m}^2}$ ja $\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, ja neliömetrit supistuvat.\n\n**Sijoitus:** $\\Delta T = \\dfrac{3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}}{1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}} = 3{,}0\\,\\text{K}$\n\n**Vastaus:** $3{,}0\\,\\text{K}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat ylimäärä $240{,}0 - 236{,}4 = 3{,}6\\,\\tfrac{\\text{W}}{\\text{m}^2}$ ja kerroin $1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Erotuksella on yksi desimaali ja kaksi numeroa. Kertoimessa on kaksi numeroa.\n\n**Järkevyys:** Tase kuntoon: lähtevä teho on $$\\begin{aligned} &236{,}4 + 1{,}2 \\cdot 3{,}0 \\\\ &= 240{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2} \\end{aligned}$$, yhtä suuri kuin imeytyvä. Tulos sopii taulukkoon. Kahden kelvinin kohdalla ylimäärä on vielä $1{,}2\\,\\tfrac{\\text{W}}{\\text{m}^2}$. Kolmannen kelvinin jälkeen se on nolla. Lämpeneminen jatkuu siis vielä pitkään sen jälkeen, kun pitoisuus on lakannut kasvamasta. Se pysähtyy uuteen tasapainoon."
       },
       "source": "model"
     },
@@ -228,16 +228,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Ikkunan pinta-ala on 1,5 m² ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $20\\,{}^\\circ\\text{C}$ ja ulkona $-10\\,{}^\\circ\\text{C}$. Opiskelija laskee: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ ja $P = UA\\Delta T = 1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 10\\,\\text{K} = 15\\,\\text{W}$. Missä on virhe?",
+      "prompt": "Ikkunan pinta-ala on 1,5 m² ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $20\\,{}^\\circ\\text{C}$ ja ulkona $-10\\,{}^\\circ\\text{C}$. Opiskelija laskee: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ ja $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
           "text": "Lämpötilat pitäisi muuttaa kelvineiksi ennen vähennyslaskua.",
           "feedback": "Lämpötilaero on kelvineinä ja celsiusasteina sama, joten muunnos ei muuta tulosta. Virhe on ulkolämpötilan etumerkissä."
         },
         {
-          "text": "Ulkolämpötila on $-10\\,{}^\\circ\\text{C}$, joten $\\Delta T = 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 30\\,\\text{K}$ ja $P = 45\\,\\text{W}$.",
+          "text": "Ulkolämpötila on $-10\\,{}^\\circ\\text{C}$, joten $$\\begin{aligned} \\Delta T &= 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) \\\\ &= 30\\,\\text{K} \\end{aligned}$$ ja $P = 45\\,\\text{W}$.",
           "correct": true,
-          "feedback": "Oikein. Pakkaslämpötila vähennetään etumerkkeineen. Silloin ero on $30\\,\\text{K}$ eikä $10\\,\\text{K}$. Teho on $1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 45\\,\\text{W}$. Se on kolminkertainen opiskelijan tulokseen verrattuna."
+          "feedback": "Oikein. Pakkaslämpötila vähennetään etumerkkeineen. Silloin ero on $30\\,\\text{K}$ eikä $10\\,\\text{K}$. Teho on $$\\begin{aligned} &1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 30\\,\\text{K} \\\\ &= 45\\,\\text{W} \\end{aligned}$$. Se on kolminkertainen opiskelijan tulokseen verrattuna."
         },
         {
           "text": "U-arvolla pitäisi jakaa, koska hyvä eriste päästää vähemmän lämpöä läpi.",
@@ -262,7 +262,7 @@
       "hints": [
         "Mihin suuntaan lämpö siirtyy? Mikä on sisä- ja ulkopuolen lämpötilaero?",
         "Seinien läpi johtuva teho on $P = UA\\Delta T$, ja energia vuorokaudessa on $E = Pt$.",
-        "$\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$ ja $P = 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19{,}2\\,\\text{W}$. Kerro tunneilla ja muuta kilowattitunneiksi."
+        "$\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$ ja $$\\begin{aligned} P &= 0{,}30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\\\ &\\cdot 4{,}0\\,\\text{m}^2 \\cdot 16\\,\\text{K} \\\\ &= 19{,}2\\,\\text{W} \\end{aligned}$$. Kerro tunneilla ja muuta kilowattitunneiksi."
       ],
       "mistakes": [
         {
@@ -342,8 +342,8 @@
       "tolerance": 0.02,
       "hints": [
         "Mistä kahdesta osasta avaruuteen lähtevä $240\\,\\text{W/m}^2$ koostuu?",
-        "Avaruuteen lähtee kaksi osaa. Ensimmäinen on maanpinnalta suoraan läpi päässyt säteily. Toinen on ilmakehän ylöspäin säteilemä teho: $240\\,\\text{W/m}^2 = 100\\,\\text{W/m}^2 + P_\\text{ylös}$.",
-        "Tarkista lopuksi ilmakehän oma tase. Se imee $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$. Sen on säteiltävä sama määrä ylös ja alas yhteensä."
+        "Avaruuteen lähtee kaksi osaa. Ensimmäinen on maanpinnalta suoraan läpi päässyt säteily. Toinen on ilmakehän ylöspäin säteilemä teho: $$\\begin{aligned} &240\\,\\text{W/m}^2 \\\\ &= 100\\,\\text{W/m}^2 + P_\\text{ylös} \\end{aligned}$$.",
+        "Tarkista lopuksi ilmakehän oma tase. Se imee $$\\begin{aligned} &390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 \\\\ &= 290\\,\\text{W/m}^2 \\end{aligned}$$. Sen on säteiltävä sama määrä ylös ja alas yhteensä."
       ],
       "mistakes": [
         {

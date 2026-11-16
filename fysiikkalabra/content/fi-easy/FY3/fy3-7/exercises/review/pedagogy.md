@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9a88d35a19ddea79
+CONTENT-HASH: 1bd40b6aab18a0cb
+SCOPE: delta added-exercise from 94d3ec592415aaf0 base b2eac257e05e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- Model answer b) uses "interaction energy" of the particles; FY3 scope may not teach this term explicitly. Optional: one sentence tying it to the lesson wording.
+- d) rewards "two things of each kind"; the model answer lists more, which is fine.
 
 ## Checked
-- Delta 2026-11-15: melting-heat solution answer is now 3,3 · 10² kJ/kg (two significant figures like the mass 0,60 kg), calculated 333 kJ/kg kept in brackets, accepted range 323–343 unchanged; consistent with the table value 334 kJ/kg in the reasonableness line.
-- No task text or level changed.
+- fy3-7-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).

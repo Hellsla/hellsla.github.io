@@ -364,7 +364,7 @@
     {
       "id": "fy5-4-L3-06",
       "level": 3,
-      "text": "The mass of a car is $1200\\,\\text{kg}$, and it drives through a level, circular bend at a steady speed. The graph shows the friction force $F$ the car needs in the bend as a function of its speed $v$. The car goes through the bend at $20\\,\\text{m/s}$. Read the required friction force from the graph and calculate the least coefficient of static friction $\\mu_0$ that keeps the car on the road. Assume that friction is the only horizontal force and that the greatest static friction is $\\mu_0 N$. The answer box takes the value of the coefficient.",
+      "text": "The mass of a car is $1200\\,\\text{kg}$, and it drives through a level, circular bend at a steady speed. The graph shows the friction force $F$ the car needs in the bend as a function of its speed $v$. The car goes through the bend at $20\\,\\text{m/s}$. Read the required friction force from the graph and calculate the least coefficient of static friction $\\mu_0$ that keeps the car on the road. Assume that friction is the only horizontal force and that the maximum static friction is $\\mu_0 N$. The answer box takes the value of the coefficient.",
       "figure": "fy5-4/kuvaaja-b",
       "answer": 0.68,
       "unit": "",

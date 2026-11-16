@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 11f14cc0ba53b85c
+CONTENT-HASH: 0afbb0e960a7159d
+SCOPE: delta added-exercise from 14b54a6e061b7b91 base 415cbc7c6bc3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
+- [Minor] fy8-12-L2-08 task b) — one paragraph of about 90 words; split the comparison and the explanation into two paragraphs.
+- [Minor] Mallivastaus c) — one block of about 150 words; split at "Säteilylaji tunnistetaan…".
+- [Minor] Vastaus — "Laatikko hyväksyy myös arvon 14,5 µeV" is interface talk inside a model answer; consider dropping it.
 
 ## Checked
-- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
-- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
+- fy8-12-open-exercises-L2-1280-11, -12, -13 (task end, Annettu to Muunnokset; Sijoitus, Mallivastaus c/d; Vastaus, Järkevyys), captures regenerated for the current hash.
+- Round 1 defects are fixed: $24\,\text{h}$ is LaTeX, the comparison sentences are no longer cut by display boxes (chain after the sentence), and $h$ is "J s" everywhere. The $\mu\text{eV}$ chain, fractions and units render cleanly.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -10,7 +10,7 @@
 **Perustelu:** Yön aikana lusikat ovat asettuneet lämpötasapainoon huoneen kanssa, joten niiden lämpötila on sama. Lämmin käsi luovuttaa lämpöä kumpaankin, mutta metalli johtaa lämpöä paljon paremmin kuin puu ja vie sitä kädestä nopeammin pois. Iho jäähtyy, ja metalli tuntuu kylmältä. Kylmä ei ole ainetta, joka siirtyisi. Ominaislämpökapasiteetti ei yksin selitä tuntemusta, ja metallin ominaislämpökapasiteetti massaa kohti on itse asiassa pienempi kuin puun.
 
 ### d)
-**Perustelu:** Hydrostaattinen paine on $p = \rho g h$, joten $h = \dfrac{p}{\rho g} = \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 10\,\text{m}$. Vaihtoehto $1\,\text{m}$ on kymmenen kertaa liian pieni: metrin vesipatsaan paine on vain noin $9{,}8\,\text{kPa}$.
+**Perustelu:** Hydrostaattinen paine on $p = \rho g h$, joten $$\begin{aligned} h &= \dfrac{p}{\rho g} \\ &= \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \\ &\approx 10\,\text{m} \end{aligned}$$. Vaihtoehto $1\,\text{m}$ on kymmenen kertaa liian pieni: metrin vesipatsaan paine on vain noin $9{,}8\,\text{kPa}$.
 
 ### e)
 **Perustelu:** Sisäenergian muutos on $\Delta U = Q + W$, missä $W$ on kaasuun tehty työ. Lämpöä ei siirry, joten $Q = 0$, mutta mäntä tekee ilmaan työtä, joten $W > 0$ ja sisäenergia kasvaa. Siksi ilman lämpötila nousee, kuten pyörän pumppu lämpenee. Vastaus ”sisäenergia ei muutu” unohtaa, että energiaa voi siirtyä myös työnä.
@@ -193,7 +193,7 @@ $W = 521{,}7\,\text{N} \cdot 0{,}0512\,\text{m} \approx 26{,}7\,\text{J}$
 **Annettu:** $m = 1{,}20\,\text{kg}$, $\theta_1 = -8{,}0\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, $c_\text{j} = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $s = 333\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** lumen ja veden saama energia $Q$
 **Periaate:** Lumi lämpenee ensin sulamispisteeseen $0\,{}^\circ\text{C}$, sulaa sitten vakiolämpötilassa ja lopuksi vesi lämpenee kiehumispisteeseen. Kunkin vaiheen lämpömäärät lasketaan yhteen.
-**Kaava:** $Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$
+**Kaava:** $$Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$$
 **Muunnokset:** $\Delta T_1 = 8{,}0\,\text{K}$ ja $\Delta T_2 = 100\,\text{K}$
 **Sijoitus:** $Q_1 = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 1{,}20\,\text{kg} \cdot 8{,}0\,\text{K} \approx 20\,\text{kJ}$
 
@@ -379,7 +379,7 @@ $p_2 = 650\,000\,\text{Pa} - 325\,000\,\text{Pa} = 325\,000\,\text{Pa}$
 **Mallivastaus:** Alussa pisteet ovat vaakasuoralla suoralla noin $0{,}2\,{}^\circ\text{C}$:ssa. Hetkestä $8\,\text{min}$ alkaen pisteet ovat nousevalla suoralla, sillä silloin astiassa on pelkkää vettä. Piste $7\,\text{min}$ ($0{,}6\,{}^\circ\text{C}$) on siirtymävaiheessa, jolloin viimeiset jääpalat sulavat, eikä se kuulu kumpaankaan suoraan. Jää on sulanut kokonaan suorien leikkauskohdassa, noin hetkellä $t \approx 7{,}6\,\text{min}$.
 
 ### c)
-**Annettu:** nouseva suora, $m = 0{,}400\,\text{kg} + 0{,}100\,\text{kg} = 0{,}500\,\text{kg}$ ja $c = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
+**Annettu:** nouseva suora, $$\begin{aligned} m &= 0{,}400\,\text{kg} + 0{,}100\,\text{kg} \\ &= 0{,}500\,\text{kg} \end{aligned}$$ ja $c = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** teho $P$, jolla vastus luovuttaa energiaa veteen
 **Periaate:** Kun jää on sulanut, vastuksen energia lämmittää koko vesimäärää. Teho on lämpömäärä aikayksikköä kohti, ja lämpötilan nousunopeus on suoran kulmakerroin.
 **Kuvaajan lukeminen:** Nousevalta suoralta luetaan pisteet $(9{,}0\,\text{min};\ 11{,}2\,{}^\circ\text{C})$ ja $(13{,}0\,\text{min};\ 42{,}9\,{}^\circ\text{C})$.
@@ -429,7 +429,7 @@ Koska virhelähteet vaikuttavat samaan suuntaan, ne sopivat havaittuun eroon. Mi
 **Annettu:** rakennusosien pinta-alat ja U-arvot, $\theta_\text{sisä} = 21\,{}^\circ\text{C}$ ja $\theta_\text{ulko} = +1{,}0\,{}^\circ\text{C}$
 **Kysytty:** rakennusosien läpi johtuva lämpöteho $P$ ja suurin lämmön karkaamisreitti
 **Periaate:** Rakennusosan läpi johtuva lämpöteho on verrannollinen U-arvoon, pinta-alaan ja lämpötilaeroon. Rakennusosat johtavat lämpöä rinnakkain, joten tehot lasketaan yhteen.
-**Kaava:** $P = (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T$
+**Kaava:** $$\begin{aligned} &P \\ &= (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T \end{aligned}$$
 **Muunnokset:** $\Delta T = 21\,{}^\circ\text{C} - 1{,}0\,{}^\circ\text{C} = 20\,\text{K}$
 **Sijoitus:** Ulkoseinät $0{,}40 \cdot 140\,\tfrac{\text{W}}{\text{K}} = 56\,\tfrac{\text{W}}{\text{K}}$, yläpohja $0{,}25 \cdot 100\,\tfrac{\text{W}}{\text{K}} = 25\,\tfrac{\text{W}}{\text{K}}$ ja ikkunat $2{,}0 \cdot 20\,\tfrac{\text{W}}{\text{K}} = 40\,\tfrac{\text{W}}{\text{K}}$.
 

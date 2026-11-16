@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 65a4139d383a71ec
+CONTENT-HASH: 2bb981571ee01f3d
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json kuukoe, feedback for $0{,}00272$ — "Lukusi on oikea kiihtyvyys yksikössä …, tai etäisyys …" reads as one claim at first — "Lukusi on joko oikea kiihtyvyys yksikössä $\text{m/s}^2$, tai etäisyys on jäänyt kilometreiksi."
+- [Minor] Transfer task feedback (6378 km option): 'pienentäisi voiman neljäsosaan, koska $g \propto \tfrac{1}{r^2}$' now speaks of force but keeps g; write $F \propto \tfrac{1}{r^2}$.
+- [Minor] 'Voit myös syventää osaamistasi' bullet marker is pale at 360 px; the project's list style, low contrast.
+- [Minor] Known, not part of the change: find-the-error prompt formula overflows at 360 px (499 px edge), docs/clipped-formulas.tsv.
+- [Minor] Exit-ticket answer 1: the \tfrac fractions in the aligned rows are small at 360 px but legible.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: both rewritten kuukoe mistake feedbacks rendered (injected into the task card as the page would show them) at 390 and 1280: $\text{m/s}^2$, $r = 3{,}844 \cdot 10^{8}\,\text{m}$, $\text{mm/s}^2$ all LaTeX, none wraps; captures fy5-5-fi-390-fb1/fb2.png, -1280-fb1/fb2.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Own captures at 360 px (all details open): exit ticket (re-broken chain, aligned, answer text apart), 'Tällä tunnilla opit' with the new extension goal (reads naturally), summary/transfer sections; overflow scan of the lesson at 360/390/1280. Other edits (note wording, find-the-error title 'Syventävä:', summary items) read from the diff.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

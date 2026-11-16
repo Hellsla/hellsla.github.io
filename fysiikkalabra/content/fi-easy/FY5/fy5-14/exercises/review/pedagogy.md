@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cc3d43818e25b127
+CONTENT-HASH: 4f57cbe8a8fe14f8
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. exercises.json L1-04 solution — 'nimittäjään tulee plusmerkki' is reasoned from 'loittonee'; good, keep.
-2. L3-04 — blood-flow chain (moving observer then moving source) is demanding for a first Doppler lesson; the solution explains it, but a hint sentence in the task text would help.
-3. 'Syventävä tehtävä' prefix on many level-2 tasks blurs the levels; use it only on level 3.
+- fy5-14-L2-09 c): "lukumystiikka" and "salaliittoteoria" are not explained; add "(luvuille annetaan salaperäinen merkitys)" and "(väite, jonka mukaan joku salaa jotain)".
+- fy5-14-L2-09 c): tell the student what to look for in the article ("Etsi kohdat, joissa kerrotaan, mitä 432 Hz:n sanotaan tekevän"); "chakra" is not explained until the solution.
+- The title "Onko 432 Hz luonnon parantava taajuus?" states the claim; "Väitetäänkö ... ?" is a more neutral wording.
 
 ## Checked
-Read exercises.json (all 23 tasks, levels 10/8/5, kinds: concept, data, error, model, figure) and solutions.md (L1-01..04, L3-04, L3-05 in full, others by structure); no task repeats the train example; each solution runs given, principle, symbols, units, substitution, answer, check; fi, fi-easy and en have identical ids, kinds and answers (checked by script).
+- Source claims in the solution match the notes (Yle 25.1.2020: spectrum/chakras, "luonnon oma taajuus", 440 as manipulation, Nazi theory, 103+107+109+113, 432·2 = 864; 2 Hz audible; 415 Hz a semitone below; 390–460 Hz); the article's verdict is reported.
+- a) 343/432 = 0,794 m and 0,780 m, answer box tolerance fine; b) 8 Hz is about a third of a semitone: correct.
+- The three claim groups correspond to the article; d) explains a reliable study (blinding, randomisation, pre-set measure).
+- Solution keeps all steps and a limits paragraph (an article is not a study).
+- Set has 10/9/5 tasks; no repeat of the example.

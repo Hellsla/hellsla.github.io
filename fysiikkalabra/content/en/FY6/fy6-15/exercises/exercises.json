@@ -270,6 +270,18 @@
       "answer": 17.3913,
       "unit": "A",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-15-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Source material: <a href=\"https://tukes.fi/-/ala-kayta-pistorasiaan-kytkettavaa-aurinkopaneelia\" target=\"_blank\" rel=\"noopener\">Tukes – notice on solar panels that plug into a socket (in Finnish)</a>\n\nSuppose that a web shop sells solar panels that come with an inverter, a device that changes the direct voltage of the panel into an alternating voltage of $230\\,\\text{V}$. The panel is connected with a plug to an ordinary socket, and it feeds electricity through the socket into the wiring of the home. Tukes, the Finnish Safety and Chemicals Agency, has published a notice about these panels. The notice is in Finnish. Its title says: “Do not use a solar panel that plugs into a socket”.\n\na) What kind of solar panel system does the notice warn about, and which dangers does it name? Also compare the direction in which energy is transferred at the socket when such a panel is connected to it and when an ordinary electrical device is connected to it.\n\nb) The largest power of the inverter of one panel is $800\\,\\text{W}$. Calculate the electric current that corresponds to a power of $800\\,\\text{W}$ at an alternating voltage of $230\\,\\text{V}$ when the power factor is assumed to be one.\n\nc) The panel is connected to a socket circuit with a $16\\,\\text{A}$ fuse. Use the physics of this chapter to explain how two dangers, an electric shock from live plug pins and overheating of the circuit cable, can arise when electricity is fed into the electrical system of a building through an ordinary socket. To support your reasoning, calculate how large a current can flow in a part of the circuit wiring without the rated current of the fuse being exceeded.\n\nd) Use the situation of the task and the title of the notice to evaluate the claim: “If an electrical device is on sale in a Finnish web shop, using it is certainly safe and allowed.”\n\nEnter the current of part b) in amperes in the answer box.",
+      "answer": 3.478261,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [

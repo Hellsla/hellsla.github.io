@@ -106,7 +106,7 @@
       "text": "Upota kappale veteen ja seuraa, miten veden ja kappaleen lämpötilat lähestyvät toisiaan.",
       "howto": "Säädä veden massa ja alkulämpötila. Säädä myös kappaleen aine, massa ja alkulämpötila. Paina sitten *Upota*. Kappale laskeutuu veteen. Kuvaaja piirtää veden (sininen) ja kappaleen (oranssi) lämpötilan ajan funktiona. Katkoviiva on tasapainolämpötila $T$. Kun muutat jotakin arvoa, kappale nousee pois vedestä ja koe alkaa alusta. *Nopeus* muuttaa vain animaation tahtia. Se ei muuta lämpötiloja eikä lämpömääriä.",
       "model": "Astia on täysin eristetty. Lämpöä ei siirry ympäristöön eikä astiaan itseensä. Siksi kappaleen luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Kappaleen lämpötila pysyy välillä 0–$100\\,{}^\\circ\\text{C}$, eikä kummankaan olomuoto muutu. Tasapainolämpötila ja lämpömäärät ovat mallin laskemia arvoja, eivät mittauksia. Lähestymisen nopeus (aikavakio noin $1{,}5\\,\\text{s}$) on vain havainnollistus, ei fysikaalinen malli. Todellisuudessa nopeus riippuu sekoittamisesta ja kappaleen muodosta.",
-      "calc": "Lämpökapasiteetit ovat $C_\\text{v} = c_\\text{v} m_\\text{v}$ ja $C_\\text{k} = c_\\text{k} m_\\text{k}$, missä $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Tasapainolämpötila on alkulämpötilojen painotettu keskiarvo:\n\n$$T = \\frac{C_\\text{v} T_\\text{v} + C_\\text{k} T_\\text{k}}{C_\\text{v} + C_\\text{k}}$$\n\nKuumempi luovuttaa lämpömäärän $Q = c m \\, |\\Delta T|$, ja kylmempi vastaanottaa saman verran. Kun kappale on kuumempi, $Q = c_\\text{k} m_\\text{k} (T_\\text{k} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$. Kuvaajan lämpötila-asteikko alkaa ja päättyy alkulämpötiloista pyöristettyihin kymmeniin asteisiin."
+      "calc": "Lämpökapasiteetit ovat $C_\\text{v} = c_\\text{v} m_\\text{v}$ ja $C_\\text{k} = c_\\text{k} m_\\text{k}$, missä $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Tasapainolämpötila on alkulämpötilojen painotettu keskiarvo:\n\n$$T = \\frac{C_\\text{v} T_\\text{v} + C_\\text{k} T_\\text{k}}{C_\\text{v} + C_\\text{k}}$$\n\nKuumempi luovuttaa lämpömäärän $Q = c m \\, |\\Delta T|$, ja kylmempi vastaanottaa saman verran. Kun kappale on kuumempi, $$\\begin{aligned} Q &= c_\\text{k} m_\\text{k} (T_\\text{k} - T) \\\\ &= c_\\text{v} m_\\text{v} (T - T_\\text{v}) \\end{aligned}$$. Kuvaajan lämpötila-asteikko alkaa ja päättyy alkulämpötiloista pyöristettyihin kymmeniin asteisiin."
     },
     {
       "id": "koe-1",
@@ -248,16 +248,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija ratkaisee, mihin lämpötilaan $0{,}20\\,\\text{kg}$:n alumiinikappale ($100\\,{}^\\circ\\text{C}$) ja $0{,}30\\,\\text{kg}$ vettä ($20\\,{}^\\circ\\text{C}$) asettuvat eristetyssä astiassa. Lämpökapasiteetit ovat $c_1 m_1 = 180\\,\\text{J/K}$ ja $c_2 m_2 = 1257\\,\\text{J/K}$. Hän kirjoittaa $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$ ja ratkaisee siitä\n\n$$\\begin{aligned} T &= \\frac{c_1 m_1 T_1 - c_2 m_2 T_2}{c_1 m_1 - c_2 m_2} \\\\ &= \\frac{180 \\cdot 100 - 1257 \\cdot 20}{180 - 1257}\\,{}^\\circ\\text{C} \\\\ &\\approx 6{,}6\\,{}^\\circ\\text{C} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Opiskelija ratkaisee, mihin lämpötilaan $0{,}20\\,\\text{kg}$:n alumiinikappale ($100\\,{}^\\circ\\text{C}$) ja $0{,}30\\,\\text{kg}$ vettä ($20\\,{}^\\circ\\text{C}$) asettuvat eristetyssä astiassa. Lämpökapasiteetit ovat $c_1 m_1 = 180\\,\\text{J/K}$ ja $c_2 m_2 = 1257\\,\\text{J/K}$. Hän kirjoittaa $$\\begin{aligned} &c_1 m_1 (T_1 - T) \\\\ &= c_2 m_2 (T - T_2) \\end{aligned}$$ ja ratkaisee siitä\n\n$$\\begin{aligned} T &= \\frac{c_1 m_1 T_1 - c_2 m_2 T_2}{c_1 m_1 - c_2 m_2} \\\\ &= \\frac{180 \\cdot 100 - 1257 \\cdot 20}{180 - 1257}\\,{}^\\circ\\text{C} \\\\ &\\approx 6{,}6\\,{}^\\circ\\text{C} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Lämpötilat olisi pitänyt muuttaa kelvineiksi ennen sijoitusta.",
           "feedback": "Muunnos ei muuta tulosta. Kun jokaiseen lämpötilaan lisätään 273,15, sama lisäys siirtyy suoraan tulokseen. Tulos on taas $6{,}6\\,{}^\\circ\\text{C}$. Virhe on yhtälön ratkaisemisessa."
         },
         {
-          "text": "Hän siirsi $T$:n termit samalle puolelle vaihtamatta etumerkkejä oikein. Oikea ratkaisu on $T = \\dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2} \\approx 30{,}0\\,{}^\\circ\\text{C}$.",
+          "text": "Hän siirsi $T$:n termit samalle puolelle vaihtamatta etumerkkejä oikein. Oikea ratkaisu on $$\\begin{aligned} T &= \\dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2} \\\\ &\\approx 30{,}0\\,{}^\\circ\\text{C} \\end{aligned}$$.",
           "correct": true,
-          "feedback": "Oikein. Kun sulut kerrotaan auki, saadaan $c_1 m_1 T_1 + c_2 m_2 T_2 = (c_1 m_1 + c_2 m_2)T$. Molemmat termit ovat plusmerkkisiä. Tuloksen olisi voinut huomata vääräksi jo ilman algebraa: $6{,}6\\,{}^\\circ\\text{C}$ on alle kummankin alkulämpötilan. Eristetyssä astiassa mikään ei voi jäähtyä kylmemmäksi kuin kylmin osa oli alussa."
+          "feedback": "Oikein. Kun sulut kerrotaan auki, saadaan $$\\begin{aligned} &c_1 m_1 T_1 + c_2 m_2 T_2 \\\\ &= (c_1 m_1 + c_2 m_2)T \\end{aligned}$$. Molemmat termit ovat plusmerkkisiä. Tuloksen olisi voinut huomata vääräksi jo ilman algebraa: $6{,}6\\,{}^\\circ\\text{C}$ on alle kummankin alkulämpötilan. Eristetyssä astiassa mikään ei voi jäähtyä kylmemmäksi kuin kylmin osa oli alussa."
         },
         {
           "text": "Lämpömäärien yhtälö on kirjoitettu väärin: oikealla pitäisi olla $(T_2 - T)$.",
@@ -281,7 +281,7 @@
       "tolerance": 0.02,
       "hints": [
         "Kuka luovuttaa lämpöä ja kuka vastaanottaa? Kuinka monta kelviniä kumpikin vesimäärä muuttuu, kun loppulämpötila on $38{,}0\\,{}^\\circ\\text{C}$?",
-        "Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama: $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$. Sama $c$ supistuu pois.",
+        "Kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama: $$\\begin{aligned} &c\\, m_\\text{k} (T_\\text{k} - T) \\\\ &= c\\, m_\\text{a} (T - T_\\text{a}) \\end{aligned}$$. Sama $c$ supistuu pois.",
         "$m_\\text{k} = \\dfrac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}}$."
       ],
       "mistakes": [
@@ -294,7 +294,7 @@
           "feedback": "Laskit kuuman veden lämpötilan muutokseksi $60{,}0\\,{}^\\circ\\text{C} - 30{,}0\\,{}^\\circ\\text{C}$. Kuuma vesi jäähtyy vain loppulämpötilaan $38{,}0\\,{}^\\circ\\text{C}$ asti. Sen muutos on siis $60{,}0\\,{}^\\circ\\text{C} - 38{,}0\\,{}^\\circ\\text{C} = 22{,}0\\,\\text{K}$."
         }
       ],
-      "solution": "**Annettu:** ammeen vesi $m_\\text{a} = 80{,}0\\,\\text{kg}$, $T_\\text{a} = 30{,}0\\,{}^\\circ\\text{C}$; kuuma vesi $T_\\text{k} = 60{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 38{,}0\\,{}^\\circ\\text{C}$; ei lämpöhäviöitä\n\n**Kysytty:** kuuman veden massa $m_\\text{k}$\n\n**Periaate:** Energia säilyy: kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama. Kumpikin on vettä, joten sama $c$ supistuu pois.\n\n**Kaava:** $c\\, m_\\text{k} (T_\\text{k} - T) = c\\, m_\\text{a} (T - T_\\text{a})$, josta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\\text{a} = 8{,}0\\,\\text{K}$ ja $T_\\text{k} - T = 22{,}0\\,\\text{K}$. Massa on jo kilogrammoina.\n\n**Sijoitus:** $m_\\text{k} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}} = 29{,}09\\,\\text{kg}$\n\n**Vastaus:** $29\\,\\text{kg}$, kaksi merkitsevää numeroa, koska ammeen veden lämpötilan muutos $8{,}0\\,\\text{K}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu $22\\,\\text{K}$ ja ammeen veden vain $8\\,\\text{K}$. Tarkistus: $29{,}09\\,\\text{kg} \\cdot 22{,}0\\,\\text{K} = 80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
+      "solution": "**Annettu:** ammeen vesi $m_\\text{a} = 80{,}0\\,\\text{kg}$, $T_\\text{a} = 30{,}0\\,{}^\\circ\\text{C}$; kuuma vesi $T_\\text{k} = 60{,}0\\,{}^\\circ\\text{C}$; loppulämpötila $T = 38{,}0\\,{}^\\circ\\text{C}$; ei lämpöhäviöitä\n\n**Kysytty:** kuuman veden massa $m_\\text{k}$\n\n**Periaate:** Energia säilyy: kuuman veden luovuttama lämpömäärä on yhtä suuri kuin ammeen veden vastaanottama. Kumpikin on vettä, joten sama $c$ supistuu pois.\n\n**Kaava:** $$\\begin{aligned} &c\\, m_\\text{k} (T_\\text{k} - T) \\\\ &= c\\, m_\\text{a} (T - T_\\text{a}) \\end{aligned}$$, josta\n\n$$m_\\text{k} = \\frac{m_\\text{a}(T - T_\\text{a})}{T_\\text{k} - T}$$\n\n**Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\\text{a} = 8{,}0\\,\\text{K}$ ja $T_\\text{k} - T = 22{,}0\\,\\text{K}$. Massa on jo kilogrammoina.\n\n**Sijoitus:** $m_\\text{k} = \\dfrac{80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K}}{22{,}0\\,\\text{K}} = 29{,}09\\,\\text{kg}$\n\n**Vastaus:** $29\\,\\text{kg}$, kaksi merkitsevää numeroa, koska ammeen veden lämpötilan muutos $8{,}0\\,\\text{K}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kuumaa vettä tarvitaan vähemmän kuin ammeessa on, koska sen lämpötila muuttuu $22\\,\\text{K}$ ja ammeen veden vain $8\\,\\text{K}$. Tarkistus: $29{,}09\\,\\text{kg} \\cdot 22{,}0\\,\\text{K} = 80{,}0\\,\\text{kg} \\cdot 8{,}0\\,\\text{K} = 640\\,\\text{kg}\\cdot\\text{K}$. Todellisuudessa amme ja ilma vievät osan lämmöstä, joten kuumaa vettä kuluu hieman enemmän.",
       "optional": true
     },
     {
@@ -317,7 +317,7 @@
         {
           "text": "Padan, koska sen lämpökapasiteetti $C = cm$ on suurempi.",
           "correct": true,
-          "feedback": "Oikein. Padan $C = 450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 10\\,\\text{kg} = 4500\\,\\text{J/K}$ ja vesilasin $C = 838\\,\\text{J/K}$. Raudan pieni $c$ ei riitä, kun massaa on 50-kertaisesti."
+          "feedback": "Oikein. Padan $$\\begin{aligned} C &= 450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 10\\,\\text{kg} \\\\ &= 4500\\,\\text{J/K} \\end{aligned}$$ ja vesilasin $C = 838\\,\\text{J/K}$. Raudan pieni $c$ ei riitä, kun massaa on 50-kertaisesti."
         },
         {
           "text": "Yhtä paljon, koska kummankin lämpötila nousee yhden kelvinin.",
@@ -339,7 +339,7 @@
         {
           "text": "$35\\,{}^\\circ\\text{C}$, koska luovutettu ja vastaanotettu lämpömäärä ovat yhtä suuret ja kylmää vettä on enemmän.",
           "correct": true,
-          "feedback": "Oikein. Kuuma vesi luovuttaa lämpömäärän $c \\cdot 1{,}0\\,\\text{kg} \\cdot (80\\,{}^\\circ\\text{C} - T)$. Kylmä vesi vastaanottaa lämpömäärän $c \\cdot 3{,}0\\,\\text{kg} \\cdot (T - 20\\,{}^\\circ\\text{C})$. Kun nämä asetetaan yhtä suuriksi, saadaan $T = \\dfrac{1{,}0 \\cdot 80 + 3{,}0 \\cdot 20}{1{,}0 + 3{,}0}\\,{}^\\circ\\text{C} = 35\\,{}^\\circ\\text{C}$. Lämpötila on lähempänä sen veden alkulämpötilaa, jonka massa on suurempi."
+          "feedback": "Oikein. Kuuma vesi luovuttaa lämpömäärän $c \\cdot 1{,}0\\,\\text{kg} \\cdot (80\\,{}^\\circ\\text{C} - T)$. Kylmä vesi vastaanottaa lämpömäärän $c \\cdot 3{,}0\\,\\text{kg} \\cdot (T - 20\\,{}^\\circ\\text{C})$. Kun nämä asetetaan yhtä suuriksi, saadaan $$\\begin{aligned} T &= \\dfrac{1{,}0 \\cdot 80 + 3{,}0 \\cdot 20}{1{,}0 + 3{,}0}\\,{}^\\circ\\text{C} \\\\ &= 35\\,{}^\\circ\\text{C} \\end{aligned}$$. Lämpötila on lähempänä sen veden alkulämpötilaa, jonka massa on suurempi."
         },
         {
           "text": "$65\\,{}^\\circ\\text{C}$, koska kuuma vesi määrää lämpötilan.",
@@ -358,7 +358,7 @@
       "tolerance": 0.02,
       "hints": [
         "Kumpi luovuttaa lämpöä, kumpi vastaanottaa? Paljonko kummankin lämpötila muuttuu?",
-        "$c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$, josta $c_\\text{m} = \\dfrac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$.",
+        "$$\\begin{aligned} &c_\\text{m} m_\\text{m} (T_\\text{m} - T) \\\\ &= c_\\text{v} m_\\text{v} (T - T_\\text{v}) \\end{aligned}$$, josta $c_\\text{m} = \\dfrac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$.",
         "Metalli jäähtyy $69{,}0\\,\\text{K}$ ja vesi lämpenee $11{,}0\\,\\text{K}$: $c_\\text{m} = \\dfrac{4190 \\cdot 0{,}200 \\cdot 11{,}0}{0{,}150 \\cdot 69{,}0}\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$."
       ],
       "mistakes": [
@@ -371,7 +371,7 @@
           "feedback": "Massat ovat vaihtaneet paikkaa: veden massa $0{,}200\\,\\text{kg}$ kuuluu veden lämpömäärään ja metallin massa $0{,}150\\,\\text{kg}$ metallin lämpömäärään."
         }
       ],
-      "solution": "**Annettu:** vesi $m_\\text{v} = 0{,}200\\,\\text{kg}$, $T_\\text{v} = 18{,}0\\,{}^\\circ\\text{C}$, $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$; metalli $m_\\text{m} = 0{,}150\\,\\text{kg}$, $T_\\text{m} = 98{,}0\\,{}^\\circ\\text{C}$; tasapainolämpötila $T = 29{,}0\\,{}^\\circ\\text{C}$\n\n**Kysytty:** metallin ominaislämpökapasiteetti $c_\\text{m}$\n\n**Periaate:** Energia säilyy: metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, kun kalorimetri ja ilma eivät ota lämpöä. Lopussa molemmat ovat lämpötilassa $T$.\n\n**Kaava:** $c_\\text{m} m_\\text{m} (T_\\text{m} - T) = c_\\text{v} m_\\text{v} (T - T_\\text{v})$, josta\n\n$$c_\\text{m} = \\frac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$$\n\n**Muunnokset:** Massat ovat kilogrammoina. Metalli jäähtyy $T_\\text{m} - T = 69{,}0\\,\\text{K}$ ja vesi lämpenee $T - T_\\text{v} = 11{,}0\\,\\text{K}$.\n\n**Sijoitus:** $c_\\text{m} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}200\\,\\text{kg} \\cdot 11{,}0\\,\\text{K}}{0{,}150\\,\\text{kg} \\cdot 69{,}0\\,\\text{K}} = \\dfrac{9218\\,\\text{J}}{10{,}35\\,\\text{kg}\\cdot\\text{K}} = 890{,}6\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Vastaus:** $891\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, kolme merkitsevää numeroa kuten mittaustuloksissa.\n\n**Järkevyys:** Arvo on lähellä alumiinin ominaislämpökapasiteettia $900\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, joten kappale on luultavasti alumiinia. Vesi lämpenee paljon vähemmän kuin metalli jäähtyy, koska veden lämpökapasiteetti $838\\,\\tfrac{\\text{J}}{\\text{K}}$ on yli kuusinkertainen metallin $134\\,\\tfrac{\\text{J}}{\\text{K}}$:iin verrattuna."
+      "solution": "**Annettu:** vesi $m_\\text{v} = 0{,}200\\,\\text{kg}$, $T_\\text{v} = 18{,}0\\,{}^\\circ\\text{C}$, $c_\\text{v} = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$; metalli $m_\\text{m} = 0{,}150\\,\\text{kg}$, $T_\\text{m} = 98{,}0\\,{}^\\circ\\text{C}$; tasapainolämpötila $T = 29{,}0\\,{}^\\circ\\text{C}$\n\n**Kysytty:** metallin ominaislämpökapasiteetti $c_\\text{m}$\n\n**Periaate:** Energia säilyy: metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, kun kalorimetri ja ilma eivät ota lämpöä. Lopussa molemmat ovat lämpötilassa $T$.\n\n**Kaava:** $$\\begin{aligned} &c_\\text{m} m_\\text{m} (T_\\text{m} - T) \\\\ &= c_\\text{v} m_\\text{v} (T - T_\\text{v}) \\end{aligned}$$, josta\n\n$$c_\\text{m} = \\frac{c_\\text{v} m_\\text{v} (T - T_\\text{v})}{m_\\text{m} (T_\\text{m} - T)}$$\n\n**Muunnokset:** Massat ovat kilogrammoina. Metalli jäähtyy $T_\\text{m} - T = 69{,}0\\,\\text{K}$ ja vesi lämpenee $T - T_\\text{v} = 11{,}0\\,\\text{K}$.\n\n**Sijoitus:** $c_\\text{m} = \\dfrac{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 0{,}200\\,\\text{kg} \\cdot 11{,}0\\,\\text{K}}{0{,}150\\,\\text{kg} \\cdot 69{,}0\\,\\text{K}} = \\dfrac{9218\\,\\text{J}}{10{,}35\\,\\text{kg}\\cdot\\text{K}} = 890{,}6\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$\n\n**Vastaus:** $891\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, kolme merkitsevää numeroa kuten mittaustuloksissa.\n\n**Järkevyys:** Arvo on lähellä alumiinin ominaislämpökapasiteettia $900\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, joten kappale on luultavasti alumiinia. Vesi lämpenee paljon vähemmän kuin metalli jäähtyy, koska veden lämpökapasiteetti $838\\,\\tfrac{\\text{J}}{\\text{K}}$ on yli kuusinkertainen metallin $134\\,\\tfrac{\\text{J}}{\\text{K}}$:iin verrattuna."
     },
     {
       "id": "tarkistus-3",

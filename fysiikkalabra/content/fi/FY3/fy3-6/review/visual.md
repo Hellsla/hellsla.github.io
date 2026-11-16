@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 57f90cde845360e2
+CONTENT-HASH: 447b7d34704aab71
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, example stages 2 and 3 — stage 3 still restates stage 2's sentence (luovutettu = vastaanotettu) — let stage 3 say only "Kirjoitetaan se auki ja ratkaistaan $c_\text{m}$:".
-- [Minor] lesson.md, Kaava text — the unit parentheses "(J)", "(K)", "(kg)", "(J/K)" are plain text (untouched reviewed text) — make them inline maths when next edited.
-- [Minor] lesson.md, Yleinen virhekäsitys block — the first rows of the numeric group start with "c · 1,0 kg · …" without a leading quantity, which the teacher's chain rule asks for. The rows follow directly after the symbolic row $Q_\text{luovutettu} = Q_\text{vastaanotettu}$, so it reads clearly.
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- delta review of the Kaava text and the Yleinen virhekäsitys block: fy3-6-theory-1280-2.png and fy3-6-theory-1280-3.png. The new principle row, the "Kun kummallekin ... pätee Q = cmΔT, tämä on" row and the grouped numeric rows are centred and aligned, and nothing is clipped.
-- fy3-6-example-390-1.png (stage 3 with the principle row above the chain; the equals signs are aligned).
-- Figures were not changed (teacher-approved); the figure-9 bar chart is visible in theory-1280-3 and its layout survived.
-- The inquiry.json feedback change is wording only ("nettomääräisesti"): fluent, with no new symbols or units. I did not open the open-ennusta capture.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

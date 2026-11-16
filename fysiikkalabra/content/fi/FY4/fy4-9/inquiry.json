@@ -29,7 +29,7 @@
     {
      "text": "$1{,}5\\,\\text{m/s}$",
      "correct": true,
-     "feedback": "Oikein. Kiihtyvyys on $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$, ja nopeus kasvaa $$\\begin{aligned} &a\\,\\Delta t = 3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} \\\\ &= 1{,}5\\,\\text{m/s} \\end{aligned}$$ (luku *Newtonin toinen laki*). Huomaa, että tulos riippuu sekä voimasta että ajasta."
+     "feedback": "Oikein. Kiihtyvyys on $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$, ja nopeus kasvaa $a\\,\\Delta t = 3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} = 1{,}5\\,\\text{m/s}$ (luku *Newtonin toinen laki*). Huomaa, että tulos riippuu sekä voimasta että ajasta."
     },
     {
      "text": "$3{,}0\\,\\text{m/s}$",
@@ -253,7 +253,7 @@
      },
      {
       "text": "$I = \\Delta p$ vain pysähtyvällä kärryllä, koska kimpoava kärry on lopussa liikkeessä.",
-      "feedback": "Katso kimpoamisen riviä: mallin arvoissa $$\\begin{aligned} &\\Delta p \\\\ &= 1{,}0\\,\\text{kg} \\\\ &\\cdot (-2{,}00 - 2{,}00)\\,\\text{m/s} \\\\ &= -4{,}00\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$ ja $I = -4{,}00\\,\\text{N}\\cdot\\text{s}$. Yhtäsuuruus pätee kummallakin rivillä."
+      "feedback": "Katso kimpoamisen riviä: mallin arvoissa $\\Delta p = 1{,}0\\,\\text{kg} \\cdot (-2{,}00 - 2{,}00)\\,\\text{m/s} = -4{,}00\\,\\text{kg}\\cdot\\text{m/s}$ ja $I = -4{,}00\\,\\text{N}\\cdot\\text{s}$. Yhtäsuuruus pätee kummallakin rivillä."
      },
      {
       "text": "Impulssi on negatiivinen, joten se pienentää kärryn vauhtia kummassakin.",
@@ -376,12 +376,12 @@
    "type": "choice",
    "title": "Etsi virhe",
    "optional": true,
-   "prompt": "Pallo, jonka massa on $0{,}40\\,\\text{kg}$, osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $5{,}0\\,\\text{m/s}$. Opiskelija laskee: $$\\begin{aligned} &\\Delta p = m(v - v_0) \\\\ &= 0{,}40\\,\\text{kg} \\\\ &\\cdot (5{,}0 - 5{,}0)\\,\\text{m/s} \\\\ &= 0 \\end{aligned}$$, joten seinä ei anna pallolle impulssia. Missä on virhe?",
+   "prompt": "Pallo, jonka massa on $0{,}40\\,\\text{kg}$, osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa suoraan takaisin nopeudella $5{,}0\\,\\text{m/s}$. Opiskelija laskee: $\\Delta p = m(v - v_0) = 0{,}40\\,\\text{kg} \\cdot (5{,}0 - 5{,}0)\\,\\text{m/s} = 0$, joten seinä ei anna pallolle impulssia. Missä on virhe?",
    "choices": [
     {
      "text": "Nopeudet ovat vastakkaissuuntaiset, joten $v = -5{,}0\\,\\text{m/s}$ ja $\\Delta p = -4{,}0\\,\\text{kg}\\cdot\\text{m/s}$.",
      "correct": true,
-     "feedback": "Oikein. Kun positiivinen suunta on kohti seinää, $$\\begin{aligned} &\\Delta p \\\\ &= 0{,}40\\,\\text{kg} \\\\ &\\cdot (-5{,}0 - 5{,}0)\\,\\text{m/s} \\\\ &= -4{,}0\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$. Seinä antaa pallolle impulssin $-4{,}0\\,\\text{N}\\cdot\\text{s}$ poispäin seinästä: se pysäyttää pallon ja kiihdyttää sen takaisin."
+     "feedback": "Oikein. Kun positiivinen suunta on kohti seinää, $\\Delta p = 0{,}40\\,\\text{kg} \\cdot (-5{,}0 - 5{,}0)\\,\\text{m/s} = -4{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Seinä antaa pallolle impulssin $-4{,}0\\,\\text{N}\\cdot\\text{s}$ poispäin seinästä: se pysäyttää pallon ja kiihdyttää sen takaisin."
     },
     {
      "text": "Laskussa ei ole virhettä: vauhti ei muutu, joten liikemäärä ei muutu.",
@@ -405,7 +405,7 @@
    "hints": [
     "Kuinka paljon pallon liikemäärä muuttuu, kun se pysähtyy? Mikä periaate yhdistää liikemäärän muutoksen ja voiman?",
     "Impulssiperiaate: $F_\\text{ka}\\,\\Delta t = |\\Delta p| = mv_0$, kun loppunopeus on nolla.",
-    "Liikemäärän muutos on $$\\begin{aligned} &0{,}16\\,\\text{kg} \\cdot 25\\,\\text{m/s} \\\\ &= 4{,}0\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$. Jaa se pysähtymisajalla."
+    "Liikemäärän muutos on $0{,}16\\,\\text{kg} \\cdot 25\\,\\text{m/s} = 4{,}0\\,\\text{kg}\\cdot\\text{m/s}$. Jaa se pysähtymisajalla."
    ],
    "mistakes": [
     {
@@ -439,7 +439,7 @@
     {
      "text": "Liikemäärät ovat yhtä suuret mutta vastakkaissuuntaiset.",
      "correct": true,
-     "feedback": "Oikein. Kummankin liikemäärän suuruus on $$\\begin{aligned} &60\\,\\text{kg} \\cdot 2{,}0\\,\\text{m/s} \\\\ &= 120\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$, mutta liikemäärällä on nopeuden suunta. Kun positiivinen suunta valitaan, toisen liikemäärä on $+120$ ja toisen $-120\\,\\text{kg}\\cdot\\text{m/s}$."
+     "feedback": "Oikein. Kummankin liikemäärän suuruus on $60\\,\\text{kg} \\cdot 2{,}0\\,\\text{m/s} = 120\\,\\text{kg}\\cdot\\text{m/s}$, mutta liikemäärällä on nopeuden suunta. Kun positiivinen suunta valitaan, toisen liikemäärä on $+120$ ja toisen $-120\\,\\text{kg}\\cdot\\text{m/s}$."
     },
     {
      "text": "Liikemäärät ovat samat, koska massat ja vauhdit ovat samat.",

@@ -374,21 +374,21 @@
       "prompt": "The efficiency of an LED lamp is $35\\,\\%$: that is the share of the electrical energy it takes in that becomes light. What happens to the rest of the energy?",
       "choices": [
         {
-          "text": "It becomes heat in the lamp and its surroundings; no energy disappears.",
+          "text": "It becomes internal energy of the lamp and its surroundings; no energy disappears.",
           "correct": true,
           "feedback": "Correct. Energy is always conserved. The efficiency only tells how large a share of the energy ends up in the wanted form; the rest heats the lamp and the room. Review this in the chapter [*Efficiency*](fy2-4.html)."
         },
         {
           "text": "It disappears completely, because the efficiency is below $100\\,\\%$ and no energy is left.",
-          "feedback": "Energy does not disappear in any device. An efficiency below one hundred per cent means that part of the energy turns into something other than the useful form, here heat. Review this in the chapter [*Efficiency*](fy2-4.html)."
+          "feedback": "Energy does not disappear in any device. An efficiency below one hundred per cent means that part of the energy turns into something other than the useful form, here internal energy. Review this in the chapter [*Efficiency*](fy2-4.html)."
         },
         {
           "text": "It is stored inside the lamp and released when the lamp is switched off.",
-          "feedback": "A lamp has no energy store. The energy that does not become light becomes heat at once in the lamp and its surroundings. Review this in the chapter [*Efficiency*](fy2-4.html)."
+          "feedback": "A lamp has no energy store. The energy that does not become light becomes internal energy of the lamp and its surroundings at once. Review this in the chapter [*Efficiency*](fy2-4.html)."
         },
         {
           "text": "It flows back along the wires into the electricity grid unused.",
-          "feedback": "A lamp does not feed energy into the grid. The electrical energy it takes in becomes light and heat, and their sum equals the energy taken in. Review this in the chapter [*Efficiency*](fy2-4.html)."
+          "feedback": "A lamp does not feed energy into the grid. The electrical energy it takes in becomes light and internal energy, and their sum equals the energy taken in. Review this in the chapter [*Efficiency*](fy2-4.html)."
         }
       ]
     },

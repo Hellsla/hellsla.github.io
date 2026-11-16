@@ -250,7 +250,7 @@ Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energ
 
 ## fy8-4-L3-04
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, rakoihin tulevan valon teho $P = 1{,}5 \cdot 10^{-15}\,\text{W}$. Rakoihin tulevista fotoneista $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimen alueelle, ja ilmaisin rekisteröi $40\,\%$ siihen osuvista fotoneista; tavoite $5000$ osumaa, laitteen pituus $1{,}5\,\text{m}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
-**Kysytty:** osumien keräämiseen kuluva aika $t$ sekunteina fotonien keskimääräinen väli $d$ sekä perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion
+**Kysytty:** osumien keräämiseen kuluva aika $t$ sekunteina, fotonien keskimääräinen väli $d$ sekä perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion
 **Periaate:** Teho on fotonien energia sekunnissa, joten rakoihin tulee $\tfrac{P}{hf}$ fotonia sekunnissa. Rakoihin tulevista fotoneista vain osa päätyy rekisteröidyksi osumaksi: ensin $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimeen ja siitä $40\,\%$ rekisteröidään, joten osumia kertyy $0{,}20 \cdot 0{,}40 = 0{,}080$ kertaa rakoihin tulevien fotonien määrä. Fotonit etenevät nopeudella $c$, joten niiden väli on matka sekunnissa jaettuna fotonien lukumäärällä sekunnissa.
 **Kaava:** $hf = \dfrac{hc}{\lambda}$, $\dfrac{N}{t} = \dfrac{P}{hf}$, rekisteröidyt osumat sekunnissa $r = 0{,}20 \cdot 0{,}40 \cdot \dfrac{N}{t}$, aika $t = \dfrac{5000}{r}$ ja väli $d = \dfrac{c}{N/t}$
 **Muunnokset:** $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ ja $20\,\% = 0{,}20$, $40\,\% = 0{,}40$. Teho on jo watteina eli jouleina sekunnissa.

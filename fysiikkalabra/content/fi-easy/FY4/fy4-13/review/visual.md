@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 494c46b1e7d36455
+CONTENT-HASH: e427a25a8d698b92
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- [Minor] fy4-13 Teoria, Yleinen virhekäsitys — "Ne ovat yhtä suuret, koska lanka on kevyt ja väkipyörä on kevyt ja kitkaton" is a long, stacked sentence for S2 readers; split after "kevyt".
+- [Minor] fy4-13 two-hanging-bodies figure — $\overline{T}_1$ and $\overline{G}_1$ labels sit very close to their arrowheads in the small upper force diagram (unchanged, passed earlier).
 
 ## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (list items 2-3, summary bullet): inline $\Sigma F = ma$, $\overline{F}$ only; list numbering intact. Captures current, not re-opened.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
+- fy4-13-theory-1280-2 (two-body figure with changed alt text, the two display equation blocks, method list; layout intact) and -3 (Yleinen virhekäsitys, Tiivistelmä, concept chips). Changed lesson sentence ("langan jännitysvoima on kappaleiden välinen sisäinen voima") and the new graph description ("Kuvaaja mittakaavassa. Siinä on…", split into short sentences) read in the diff; both are correct and clearer. Captures 390 px not re-opened (wording-only delta).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

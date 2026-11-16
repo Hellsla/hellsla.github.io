@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 8dc2567292c69c38
-SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
+CONTENT-HASH: c55461f4fa2a8ea8
+SCOPE: delta added-exercise from 08a5298251fe93cc base 415cbc7c6bc3
 
 ## Blocking
+
 (none)
 
 ## Polish
-(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
+
+- fy8-1-L2-10 text, a) — a) and b) overlap (both find where electrons stop coming); merge into one step or let a) ask for the colours, so the sub-parts do not repeat. 
+- fy8-1-L2-10 d) — the model answer is good, but ask for one observation from a) and one from c) explicitly, so the explain criterion is observable.
 
 ## Checked
-- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
-- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
-- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
-- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
-- Method: text diff only.
+
+- The task needs the PhET simulation: the box answer comes from the student's own slider reading, so the data is necessary (audit section 2/6 point 2).
+- Link answers 200; tolerance 0,05 eV covers readings 530-550 nm (2,25-2,34 eV).
+- Steps a) investigate, b) calculate, c) vary intensity then wavelength (variable control), d) model limit: the audit's progression. Four parts, fits.
+- Solution step by step, with a sanity check against W of sodium; not a repeat of L2-05/06/08/09 (graph tasks) or L1-06.
+- Method: delta, added exercise only; text and solution read, no captures opened.

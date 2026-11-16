@@ -71,7 +71,12 @@
 **Conversions:** None needed: the force is in newtons, and the angles are given in degrees directly for the sine function.
 **Substitution:** $F_2 = 0.050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0.050\,\text{N} \cdot \dfrac{0.6428}{0.3420} = 0.09397\,\text{N}$
 **Answer:** $0.094\,\text{N}$, two significant figures like the force $0.050\,\text{N}$.
-**Reasonableness:** The force increases as the angle approaches $90^\circ$, but by less than a factor of two: $0.094\,\text{N} < 2 \cdot 0.050\,\text{N} = 0.100\,\text{N}$. The greatest possible force would be $0.050\,\text{N} : 0.3420 = 0.146\,\text{N}$, and $0.094\,\text{N}$ stays below it.
+**Reasonableness:** The force increases as the angle approaches $90^\circ$, but by less than a factor of two: $0.094\,\text{N} < 2 \cdot 0.050\,\text{N} = 0.100\,\text{N}$. The greatest possible force would be $$
+\begin{aligned}
+&0.050\,\text{N} : 0.3420 \\
+&= 0.146\,\text{N}
+\end{aligned}
+$$, and $0.094\,\text{N}$ stays below it.
 
 ## fy7-4-L2-01
 **Given:** currents of the wires $I_1 = I_2 = 10\,\text{A}$ in the same direction, distance $r = 5.0\,\text{mm}$, length of the parallel part $l = 0.80\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$

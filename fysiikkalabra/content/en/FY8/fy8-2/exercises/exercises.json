@@ -360,7 +360,7 @@
     {
       "id": "fy8-2-L3-03",
       "level": 3,
-      "text": "The molecule of a dye absorbs a UV photon with a wavelength of $365\\,\\text{nm}$. The molecule returns to the ground state in two steps: first it emits an infrared photon with an energy of $1.20\\,\\text{eV}$, and then a second photon, with which it ends up in the ground state. Assume that no energy is transferred to heat. What is the wavelength of the second photon? Give the answer in nanometres.",
+      "text": "The molecule of a dye absorbs a UV photon with a wavelength of $365\\,\\text{nm}$. The molecule returns to the ground state in two steps: first it emits an infrared photon with an energy of $1.20\\,\\text{eV}$, and then a second photon, with which it ends up in the ground state. Assume that no energy is converted to internal energy. What is the wavelength of the second photon? Give the answer in nanometres.",
       "answer": 564,
       "unit": "nm",
       "tolerance": 0.02
@@ -410,7 +410,7 @@
     {
       "id": "fy8-2-L3-05",
       "level": 3,
-      "text": "Three fluorescent dyes are illuminated with short-wavelength light, and the wavelength of the light that each dye radiates is measured (example data). Assume that for each absorbed photon the dye emits one fluorescence photon, and that the energy that does not leave as a photon is converted to heat.\n\na) Calculate the energies of the absorbed and the emitted photon for each dye in electronvolts.\n\nb) In which dye is the share converted to heat the greatest, and what percentage of the energy of the absorbed photon is it?\n\nc) Explain why the wavelength of fluorescent light is longer than that of the absorbed light and where the missing energy goes.\n\nd) A fourth dye, D, absorbs light with a wavelength of $400\\,\\text{nm}$, and for each absorbed photon $0.50\\,\\text{eV}$ is converted to heat. What is the wavelength of its fluorescent light in nanometres?\n\nThe answer box takes the share of part b) in per cent.",
+      "text": "Three fluorescent dyes are illuminated with short-wavelength light, and the wavelength of the light that each dye radiates is measured (example data). Assume that for each absorbed photon the dye emits one fluorescence photon, and that the energy that does not leave as a photon is converted to internal energy.\n\na) Calculate the energies of the absorbed and the emitted photon for each dye in electronvolts.\n\nb) In which dye is the share converted to internal energy the greatest, and what percentage of the energy of the absorbed photon is it?\n\nc) Explain why the wavelength of fluorescent light is longer than that of the absorbed light and where the missing energy goes.\n\nd) A fourth dye, D, absorbs light with a wavelength of $400\\,\\text{nm}$, and for each absorbed photon $0.50\\,\\text{eV}$ is converted to internal energy. What is the wavelength of its fluorescent light in nanometres?\n\nThe answer box takes the share of part b) in per cent.",
       "kind": [
         "data",
         "model",

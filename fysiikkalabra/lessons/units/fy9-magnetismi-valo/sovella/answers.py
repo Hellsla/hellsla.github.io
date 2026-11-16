@@ -113,6 +113,32 @@ out.update({f"{S}-s6-a-T": round(T6 * 1e9, 2), f"{S}-s6-a": round(f6 / 1e6, 2),
             f"{S}-s6-d": round(an / 1e15, 3), f"{S}-s6-d-F": round(m_p * an * 1e12, 3),
             f"{S}-s6-d-check": round(e * v6 * B6 * 1e12, 3)})
 
+# s7 (FY9-A2): the energy stored in an LHC beam. Source: CERN, The Large Hadron Collider,
+# https://home.cern/science/accelerators/large-hadron-collider (checked 16.11.2026): circumference 26 659 m,
+# 11 245 turns per second, 6,8 TeV per proton, about 2500 bunches per beam, 1,6e11 protons per bunch at the start.
+c_mafy = 2.99792458e8                              # m/s, the MAFY value (part a needs more than three figures)
+l7, N7 = 26659.0, 11245.0                          # m, turns in one second
+v7 = N7 * l7 / 1.0                                 # m/s
+v7_lo, v7_hi = (N7 - 0.5) * (l7 - 0.5), (N7 + 0.5) * (l7 + 0.5)   # the source's figures are rounded to whole units
+E1 = 6.8e12 * e                                    # J, one proton
+Nb, Npb = 2500, 1.6e11
+Np = Nb * Npb                                      # protons in one beam
+E7 = Np * E1                                       # J, one beam
+m_car, v_car = 1500.0, 100 / 3.6
+Ek_car = 0.5 * m_car * v_car ** 2
+out.update({f"{S}-s7-a": round(v7 / 1e8, 4), f"{S}-s7-a-ratio": round(v7 / c_mafy, 5),
+            f"{S}-s7-a-diff-km-s": round((c_mafy - v7) / 1000, 1), f"{S}-s7-a-diff-pct": round(100 * (1 - v7 / c_mafy), 4),
+            f"{S}-s7-a-lo": round(v7_lo / 1e8, 5), f"{S}-s7-a-hi": round(v7_hi / 1e8, 5),
+            f"{S}-s7-b": round(E1 * 1e6, 3), f"{S}-s7-b-full": round(E1 * 1e6, 4),
+            f"{S}-s7-b-v-classical": round(math.sqrt(2 * E1 / m_p) / 1e10, 2),
+            f"{S}-s7-b-v-classical-c": round(math.sqrt(2 * E1 / m_p) / c_mafy, 0),
+            f"{S}-s7-b-mosquito": 0.5 * 2e-6 * 1.0 ** 2,
+            f"{S}-s7-c-N": Np, f"{S}-s7-c": round(E7 / 1e6, 1), f"{S}-s7-c-mass-ng": round(Np * m_p * 1e12, 2),
+            f"{S}-s7-c-both": round(2 * E7 / 1e6, 0),
+            f"{S}-s7-d-v": round(v_car, 3), f"{S}-s7-d-Ek": round(Ek_car / 1e6, 4), f"{S}-s7-d-n": round(E7 / Ek_car, 0),
+            f"{S}-s7-d-n-rounded": round(4.4e8 / 0.579e6, 0),
+            f"{S}-s7-d-wrong-Ek": round(0.5 * m_car * 100 ** 2 / 1e6, 2), f"{S}-s7-d-wrong-n": round(E7 / (0.5 * m_car * 100 ** 2), 0)})
+
 # the unit's own numbers (hook, Ennusta, Tutki, Sovella, Tarkista, exit ticket), quoted in inquiry.json and unit.md
 P_h0, R_h0 = 40e3, 0.50
 for U in (230.0, 20e3):

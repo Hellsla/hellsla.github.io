@@ -210,18 +210,18 @@
     {
       "id": "fy7-13-L2-07",
       "level": 2,
-      "text": "Opiskelija määrittää laserin aallonpituuden hilalla ja mittaa mittanauhalla maksimin etäisyyden $x$ keskimaksimista. Lukemisvirhe on aina noin $\\Delta x = 2\\,\\text{mm}$. Mikä muutos pienentää aallonpituuden suhteellista virhettä?",
+      "text": "Opiskelija määrittää laserin aallonpituuden hilalla ja mittaa mittanauhalla maksimin etäisyyden $x$ keskimaksimista. Lukeman epävarmuus on aina noin $\\Delta x = 2\\,\\text{mm}$. Mikä muutos pienentää aallonpituuden suhteellista epävarmuutta?",
       "kind": [
         "experiment",
         "concept"
       ],
-      "answer": "Mitataan kaukaisempi maksimi, koska sama lukemisvirhe on pienempi osa suuremmasta etäisyydestä.",
+      "answer": "Mitataan kaukaisempi maksimi, koska sama lukeman epävarmuus on pienempi osa suuremmasta etäisyydestä.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "Siirretään varjostin lähemmäs hilaa, koska lyhyempi etäisyys pienentää mittausvirhettä.",
-          "feedback": "Väärin: kun $L$ pienenee, myös $x$ pienenee. Sama $\\Delta x$ on silloin suurempi osa etäisyydestä, joten suhteellinen virhe kasvaa."
+          "feedback": "Väärin: kun $L$ pienenee, myös $x$ pienenee. Sama $\\Delta x$ on silloin suurempi osa etäisyydestä, joten suhteellinen epävarmuus kasvaa."
         },
         {
           "text": "Käytetään harvempaa hilaa, koska silloin maksimit ovat lähempänä ja virhe jakautuu useammalle.",
@@ -232,8 +232,8 @@
           "feedback": "Väärin: laserin kirkkaus ei vaikuta maksimien paikkoihin. Paikat määräytyvät aallonpituudesta, hilavakiosta ja etäisyydestä $L$, ei valon voimakkuudesta."
         },
         {
-          "text": "Mitataan kaukaisempi maksimi, koska sama lukemisvirhe on pienempi osa suuremmasta etäisyydestä.",
-          "feedback": "Oikein: kun mitataan suuremman kertaluvun maksimi, $x$ on suurempi mutta lukemisvirhe $\\Delta x$ pysyy samana. Suhteellinen virhe $\\Delta x : x$ pienenee, ja sama pätee aallonpituuteen.",
+          "text": "Mitataan kaukaisempi maksimi, koska sama lukeman epävarmuus on pienempi osa suuremmasta etäisyydestä.",
+          "feedback": "Oikein: kun mitataan suuremman kertaluvun maksimi, $x$ on suurempi mutta lukeman epävarmuus $\\Delta x$ pysyy samana. Suhteellinen epävarmuus $\\Delta x : x$ pienenee, ja sama pätee aallonpituuteen.",
           "correct": true
         }
       ]

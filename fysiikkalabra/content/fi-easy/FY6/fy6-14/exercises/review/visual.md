@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3f48bc8fead4207e
+CONTENT-HASH: 99ab280aa2e4e2d7
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
@@ -8,10 +9,7 @@ CONTENT-HASH: 3f48bc8fead4207e
 - none
 
 ## Checked
-- Delta, round 1 (a·10^n answers, new 147 mW row, caption marker removed).
-- open-exercises-L2-1280-5 (14-12, 2,1·10² Ω), -6 (14-13 powers, 1,8·10² mW, new row), -7 (14-13 end, 14-15, 3,9·10² Ω).
-- open-exercises-L3-1280-6 (88 %, 4,7·10³ kWh; 14-22 start).
-- Powers of ten render upright with units, nothing clipped, tables and solutions intact.
+- All 1 proof sheet(s) of fi-easy-fy6-14-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

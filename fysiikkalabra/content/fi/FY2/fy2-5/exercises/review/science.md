@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b8187c70d80f7adc
-SCOPE: delta added-exercise from 648be0e8512e7cf8 base 611fb7d5c174
-Mode: delta
-Round: 1
+CONTENT-HASH: 5ca23e469a626f1f
 
 ## Blocking
 
 ## Polish
-- solutions.md fy2-5-L2-09 Kuvaajan lukeminen — "Vaaka-akselin yksikkö on MJ/kg" is right, but in the figure the unit is written as the heading "H (MJ/kg)" above the bars. "Kuvan otsikon mukaan yksikkö on MJ/kg" would match what the student sees (C).
-- Earlier items outside this delta (L2-08 "lähes 40 MJ", L2-08 104 MJ significant figures, L1-06 distractor wording, L3-04/L3-05 same chain) are still open.
+- Earlier items outside this delta (L2-08 104 MJ figures, L1-06 distractor, L2-09 axis wording) are still open, as recorded in round 1.
 
 ## Checked
-- Hash b8187c70d80f7adc at the start and the end. I judged only the added L1-09 and L2-09.
-- L1-09 recomputed: E = Hm = 26,7 MJ/kg · 0,50 kg = 13,35 MJ, the same as answers.py. H = 26,7 MJ/kg is the MAFY LHV value (docs/mafy-arvot.tsv, VERIFIED). The rounded 13 MJ is 2,6 % away, inside the 4 % tolerance. Other table values (26,8–27,0 MJ/kg) give 13,4–13,5 MJ, also accepted.
-- L1-09: two significant figures follow m = 0,50 kg. The estimate 25 · 0,5 ≈ 12 MJ and "about two thirds of petrol's 43" (0,62) are real checks. The solution rightly says that ethanol is not in the lesson's table, and the hint sits in `hints`.
-- L1-09 physics: an LHV for a heating value agrees with the lesson's "teholliset lämpöarvot". E = Hm is used with the mass in kg, as the lesson requires.
-- L2-09 recomputed: E = 43 · 12 = 516 MJ and m_p = H_b m_b / H_p = 516 : 15 = 34,4 kg, the same as answers.py. The stated 34 kg is 1,2 % away, inside the 2 % tolerance.
-- L2-09 figure: the bars print 43 (bensiini) and 15 (polttopuu), and the description says "polttopuu (ilmakuiva) 15". The lengths are to scale (6,8 units per MJ/kg, 48 : 10 ≈ 5 as said). The figure does not give the answer.
-- L2-09 solution: m_p is solved symbolically from H_p m_p = H_b m_b before substitution. No conversions are needed (as it says), two significant figures follow from 12 kg, and the ratio check 43 : 15 ≈ 2,9 → about 36 kg is a real check.
-- Both tasks stay inside FY2 (E = Hm, comparing fuels) and use the lesson's symbols H, m, E.
+- Delta review, round 2: hash 5ca23e469a626f1f at the start and the end. I judged the fix for my round-1 Blocking item (L3-05 oil row) and the 40{,}6 notation in L3-01 and L3-04.
+- exercises.json:427–428 (L3-05): the row now reads "Öljykattila (kevyt polttoöljy, MAFY-taulukko)", 40.6, 90. The task data and the solution's Annettu (40,6) now agree. The decimal point in the JSON row follows the convention other sets use, e.g. fy1-1 "0.387".
+- L3-05 recomputed with my own formula m = E_hyöty/(ηH): wood 3429 kg, pellets 2491 kg, oil 985 kg (written as 990 kg), Δm = 937 kg (written as 940 kg); answers.py gives 937,22, box 940, tolerance 0,01. At η = 0,75: 2824 kg, 332 kg more (written as 330 kg). d) 40,6 : 15 = 2,71 (written as 2,7). The solution matches every value.
+- L3-01: 120 : 15 = 8,0 kg, 120 : 40,6 = 2,96 kg, Δm = 5,04 kg (written as 5,0 kg); answers.py 5,044, box 5,0, tolerance 0,02. Text and solution write 40{,}6, and the earlier round's Polish item is fixed.
+- L3-04: 13 300 kWh · 3,6 = 47 880 MJ. Pellets 3313 kg (written as 3300 kg, the box answer). Oil 1310 kg (written as 1300 kg). Mass ratio 2,53, heating-value ratio 2,39, and 2,39 · 0,90/0,85 = 2,53. The task text writes 40{,}6 with "MAFY-taulukko".
+- 40,6 MJ/kg is MAFY's value for light fuel oil (guardrail P8: a clear contradiction takes MAFY's value). It is now the same in all three oil tasks.
+- answers.py comments match the new values (1310 kg, 985 kg).

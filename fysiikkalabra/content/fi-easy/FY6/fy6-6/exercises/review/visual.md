@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d41d82457f2f3aac
-SCOPE: delta added-exercise from bd18cf01612b6d99 base c7f5e91173b0
+CONTENT-HASH: 14160b7c35b760a5
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-6-L2-09 solution — ranges "0-3,0 min", "3,0-8,0 min", "0,5-2,0 kW" are written with a hyphen — use an en dash.
+- none
 
 ## Checked
-- fy6-6-L2-09 (task 6-17) in open-exercises-L2-1280 parts 10 and 11: task text, figure ex-pt (power in three steps, axes with units, ticks every minute readable, gridlines, 2000/1000/500 W readable), solution with aligned Kaava, Muunnokset and Sijoitus rows, Vastaus, Järkevyys. Nothing clipped; the set reads as one.
+- All 1 proof sheet(s) of fi-easy-fy6-6-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

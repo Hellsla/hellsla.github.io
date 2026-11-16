@@ -6,7 +6,7 @@
 **Conversions:** The mass and the velocity are in SI units, so no conversions are needed.
 **Substitution:** $p = 0.17\,\text{kg} \cdot 30\,\text{m/s} = 5.1\,\text{kg}\cdot\text{m/s}$
 **Answer:** $5.1\,\text{kg}\cdot\text{m/s}$, two significant figures like the mass $0.17\,\text{kg}$ and the velocity $30\,\text{m/s}$.
-**Reasonableness:** Estimate with round numbers: $$\begin{aligned} &0.2\,\text{kg} \cdot 30\,\text{m/s} \\ &= 6\,\text{kg}\cdot\text{m/s} \end{aligned}$$, so the result is of the right order of magnitude. A light puck has a small momentum even though its velocity is large: the momentum of a walking person is about $100\,\text{kg}\cdot\text{m/s}$.
+**Reasonableness:** Estimate with round numbers: $0.2\,\text{kg} \cdot 30\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}$, so the result is of the right order of magnitude. A light puck has a small momentum even though its velocity is large: the momentum of a walking person is about $100\,\text{kg}\cdot\text{m/s}$.
 
 ## fy4-9-L1-02
 **Given:** pushing force $F = 12\,\text{N}$, time of action $\Delta t = 0.50\,\text{s}$
@@ -26,7 +26,7 @@
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $I = 0.27\,\text{kg} \cdot 18\,\text{m/s} = 4.86\,\text{N}\cdot\text{s}$
 **Answer:** $4.9\,\text{N}\cdot\text{s}$, two significant figures like the mass $0.27\,\text{kg}$ and the velocity $18\,\text{m/s}$.
-**Reasonableness:** Estimate: $$\begin{aligned} &0.3\,\text{kg} \cdot 20\,\text{m/s} \\ &= 6\,\text{kg}\cdot\text{m/s} \end{aligned}$$, and both numbers were rounded up, so the result $4.9$ is suitable. The impulse is in the direction the ball leaves, since the ball started from rest and moved off in that direction.
+**Reasonableness:** Estimate: $0.3\,\text{kg} \cdot 20\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}$, and both numbers were rounded up, so the result $4.9$ is suitable. The impulse is in the direction the ball leaves, since the ball started from rest and moved off in that direction.
 
 ## fy4-9-L1-04
 **Given:** mass of the skier $m = 70\,\text{kg}$, momentum $p = 420\,\text{kg}\cdot\text{m/s}$
@@ -36,7 +36,7 @@
 **Conversions:** The quantities are in SI units, so no conversions are needed; $\tfrac{\text{kg}\cdot\text{m/s}}{\text{kg}} = \text{m/s}$.
 **Substitution:** $v = \dfrac{420\,\text{kg}\cdot\text{m/s}}{70\,\text{kg}} = 6.0\,\text{m/s}$
 **Answer:** $6.0\,\text{m/s}$, two significant figures like the mass $70\,\text{kg}$.
-**Reasonableness:** $$\begin{aligned} &70\,\text{kg} \cdot 6.0\,\text{m/s} \\ &= 420\,\text{kg}\cdot\text{m/s} \end{aligned}$$, so the calculation works backwards. The velocity is about $22\,\text{km/h}$, which fits a skier.
+**Reasonableness:** $70\,\text{kg} \cdot 6.0\,\text{m/s} = 420\,\text{kg}\cdot\text{m/s}$, so the calculation works backwards. The velocity is about $22\,\text{km/h}$, which fits a skier.
 
 ## fy4-9-L1-05
 **Given:** impulse $I = 0.15\,\text{N}\cdot\text{s}$, contact time $\Delta t = 0.0010\,\text{s}$
@@ -56,7 +56,7 @@
 **Conversions:** $v_0 = 54\,\text{km/h} = \dfrac{54\,\text{m}}{3.6\,\text{s}} = 15\,\text{m/s}$
 **Substitution:** $F_\text{avg} = \dfrac{1200\,\text{kg} \cdot 15\,\text{m/s}}{3.0\,\text{s}} = \dfrac{18\,000\,\text{kg}\cdot\text{m/s}}{3.0\,\text{s}} = 6000\,\text{N}$
 **Answer:** $6.0\,\text{kN}$, two significant figures like the velocity $54\,\text{km/h}$ and the time $3.0\,\text{s}$.
-**Reasonableness:** The sign of the force is negative, that is, it points against the motion, as a braking force should. The force is about half of the weight of the car, $$\begin{aligned} &1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\approx 12\,\text{kN} \end{aligned}$$, which corresponds to ordinary braking on a dry road.
+**Reasonableness:** The sign of the force is negative, that is, it points against the motion, as a braking force should. The force is about half of the weight of the car, $1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 12\,\text{kN}$, which corresponds to ordinary braking on a dry road.
 
 ## fy4-9-L2-02
 **Given:** mass of the ball $m = 46\,\text{g}$, initial velocity $v_0 = 0$, final velocity $v = 70\,\text{m/s}$, contact time $\Delta t = 0.50\,\text{ms}$; the effect of the weight is neglected
@@ -66,17 +66,17 @@
 **Conversions:** $m = 46\,\text{g} = 0.046\,\text{kg}$ and $\Delta t = 0.50\,\text{ms} = 0.00050\,\text{s}$
 **Substitution:** $F_\text{avg} = \dfrac{0.046\,\text{kg} \cdot 70\,\text{m/s}}{0.00050\,\text{s}} = \dfrac{3.22\,\text{kg}\cdot\text{m/s}}{0.00050\,\text{s}} = 6440\,\text{N}$
 **Answer:** $6.4\,\text{kN}$, two significant figures like the mass $46\,\text{g}$, the velocity $70\,\text{m/s}$ and the time $0.50\,\text{ms}$.
-**Reasonableness:** The weight of the ball is only $$\begin{aligned} &0.046\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\approx 0.45\,\text{N} \end{aligned}$$, so the force of the club is over $10\,000$ times larger and neglecting the weight was justified. A large force is possible because it acts for only half a millisecond.
+**Reasonableness:** The weight of the ball is only $0.046\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.45\,\text{N}$, so the force of the club is over $10\,000$ times larger and neglecting the weight was justified. A large force is possible because it acts for only half a millisecond.
 
 ## fy4-9-L2-03
 **Given:** mass of the ball $m = 60\,\text{g}$, incoming velocity $14\,\text{m/s}$ towards the wall, outgoing velocity $11\,\text{m/s}$ away from the wall
 **Find:** the magnitude of the impulse the wall gives the ball $|I|$ in $\text{N}\cdot\text{s}$
 **Principle:** The force of the wall changes the ball's momentum, and by the impulse–momentum principle the impulse equals the change in momentum. The ball rebounds in the opposite direction, so the velocities need signs. The positive direction is chosen towards the wall: $v_0 = +14\,\text{m/s}$ and $v = -11\,\text{m/s}$.
-**Formula:** $$\begin{aligned} &I = \Delta p \\ &= mv - mv_0 \\ &= m(v - v_0) \end{aligned}$$
+**Formula:** $I = \Delta p = mv - mv_0 = m(v - v_0)$
 **Conversions:** $m = 60\,\text{g} = 0.060\,\text{kg}$
 **Substitution:** $I = 0.060\,\text{kg} \cdot (-11 - 14)\,\text{m/s} = 0.060\,\text{kg} \cdot (-25\,\text{m/s}) = -1.5\,\text{N}\cdot\text{s}$
 **Answer:** $1.5\,\text{N}\cdot\text{s}$, two significant figures like the mass $60\,\text{g}$ and the velocities; the impulse points away from the wall.
-**Reasonableness:** The impulse is larger than the $$\begin{aligned} &0.060\,\text{kg} \cdot 14\,\text{m/s} \\ &= 0.84\,\text{N}\cdot\text{s} \end{aligned}$$ needed just to stop the ball, because the wall also accelerates the ball back. If the velocities were subtracted without signs, the result would be only $0.18\,\text{N}\cdot\text{s}$, which is too small even to stop the ball.
+**Reasonableness:** The impulse is larger than the $0.060\,\text{kg} \cdot 14\,\text{m/s} = 0.84\,\text{N}\cdot\text{s}$ needed just to stop the ball, because the wall also accelerates the ball back. If the velocities were subtracted without signs, the result would be only $0.18\,\text{N}\cdot\text{s}$, which is too small even to stop the ball.
 
 ## fy4-9-L2-04
 **Given:** mass of the puck $m = 0.17\,\text{kg}$, initial velocity $v_0 = 8.0\,\text{m/s}$, average force of the stick $F = 120\,\text{N}$ in the direction of motion, contact time $\Delta t = 0.025\,\text{s}$; friction from the ice is neglected
@@ -132,7 +132,7 @@
 **Conversions:** The quantities are in SI units, so no conversions are needed; $\tfrac{\text{N}\cdot\text{s}}{\text{kg}} = \text{m/s}$.
 **Substitution:** $v = \dfrac{36\,\text{N}\cdot\text{s}}{20\,\text{kg}} = 1.8\,\text{m/s}$
 **Answer:** $1.8\,\text{m/s}$, two significant figures like the mass $20\,\text{kg}$ and the impulse $36\,\text{N}\cdot\text{s}$.
-**Reasonableness:** Working backwards $$\begin{aligned} &20\,\text{kg} \cdot 1.8\,\text{m/s} \\ &= 36\,\text{kg}\cdot\text{m/s} \end{aligned}$$, so the calculation checks out. A heavy stone starts moving slowly: the velocity $1.8\,\text{m/s}$ is the pace of brisk walking.
+**Reasonableness:** Working backwards $20\,\text{kg} \cdot 1.8\,\text{m/s} = 36\,\text{kg}\cdot\text{m/s}$, so the calculation checks out. A heavy stone starts moving slowly: the velocity $1.8\,\text{m/s}$ is the pace of brisk walking.
 
 ## fy4-9-L1-08
 **Given:** mass of the van $m = 1800\,\text{kg}$, velocity $v = 36\,\text{km/h}$; the student's result $64\,800$
@@ -173,7 +173,7 @@
 **Conversions:** $\Delta t = 10\,\text{ms} = 0.010\,\text{s}$
 **Substitution:** $I = 0.010\,\text{s} \cdot 144.0\,\text{N} = 1.44\,\text{N}\cdot\text{s}$ and $\Delta v = \dfrac{1.44\,\text{N}\cdot\text{s}}{0.50\,\text{kg}} = 2.88\,\text{m/s}$
 **Answer:** $2.9\,\text{m/s}$, two significant figures like the mass $0.50\,\text{kg}$ and the velocity $1.50\,\text{m/s}$ rounded.
-**Reasonableness:** The velocity of the cart is $-1.50\,\text{m/s}$ before the collision and $$\begin{aligned} &-1.50\,\text{m/s} + 2.88\,\text{m/s} \\ &= +1.38\,\text{m/s} \end{aligned}$$ after it, so the cart rebounds slightly slower than it arrived. That fits an elastic bumper that does not add to the velocity of the cart. The peak force $36.5\,\text{N}$ is greater than the average force $\dfrac{1.44\,\text{N}\cdot\text{s}}{0.070\,\text{s}} \approx 21\,\text{N}$, as it should be.
+**Reasonableness:** The velocity of the cart is $-1.50\,\text{m/s}$ before the collision and $-1.50\,\text{m/s} + 2.88\,\text{m/s} = +1.38\,\text{m/s}$ after it, so the cart rebounds slightly slower than it arrived. That fits an elastic bumper that does not add to the velocity of the cart. The peak force $36.5\,\text{N}$ is greater than the average force $\dfrac{1.44\,\text{N}\cdot\text{s}}{0.070\,\text{s}} \approx 21\,\text{N}$, as it should be.
 
 ## fy4-9-L3-04
 **Given:** mass of the dummy $m = 70\,\text{kg}$, stopping time in the airbag $100\,\text{ms}$, final velocity $v = 0$; the force $F$ as a function of time in the table (example data); in the horizontal direction only the force of the airbag acts
@@ -192,7 +192,7 @@
 **Principle:** In the air the acceleration of the ball is $g$ downwards, so the velocity before the hit follows from the falling time and the velocity after the bounce from the rising time, because the ball is at rest at the highest point. The positive direction is up. During the contact the force of the floor $N$ upwards and the weight $G = mg$ downwards act on the ball, so the net force is $N - G$. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
 **Formula:** $v_1 = -g\,t_\text{fall}$ and $v_2 = g\,t_\text{rise}$; $(N_\text{avg} - mg)\,\Delta t = mv_2 - mv_1$, so $N_\text{avg} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
 **Conversions:** The falling time is $0.500\,\text{s}$, the contact time $\Delta t = 0.512\,\text{s} - 0.500\,\text{s} = 0.012\,\text{s}$ and the rising time $0.912\,\text{s} - 0.512\,\text{s} = 0.400\,\text{s}$.
-**Substitution:** a) $v_1 = -9.81\,\text{m/s}^2 \cdot 0.500\,\text{s} = -4.905\,\text{m/s}$ and $v_2 = 9.81\,\text{m/s}^2 \cdot 0.400\,\text{s} = 3.924\,\text{m/s}$. b) The change in momentum is $$\begin{aligned} &m(v_2 - v_1) \\ &= 0.60\,\text{kg} \\ &\cdot (3.924 + 4.905)\,\text{m/s} \\ &= 5.297\,\text{kg}\cdot\text{m/s} \end{aligned}$$, and the weight is $mg = 0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 5.886\,\text{N}$. So $N_\text{avg} = 5.886\,\text{N} + \dfrac{5.297\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 5.886\,\text{N} + 441.5\,\text{N} = 447.3\,\text{N}$. c) For the clay ball $v_2 = 0$, so $$\begin{aligned} &N_\text{avg} = 5.886\,\text{N} \\ &+ \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.012\,\text{s}} \\ &= 5.886\,\text{N} + 245.3\,\text{N} \\ &= 251.1\,\text{N} \end{aligned}$$.
+**Substitution:** a) $v_1 = -9.81\,\text{m/s}^2 \cdot 0.500\,\text{s} = -4.905\,\text{m/s}$ and $v_2 = 9.81\,\text{m/s}^2 \cdot 0.400\,\text{s} = 3.924\,\text{m/s}$. b) The change in momentum is $m(v_2 - v_1) = 0.60\,\text{kg} \cdot (3.924 + 4.905)\,\text{m/s} = 5.297\,\text{kg}\cdot\text{m/s}$, and the weight is $mg = 0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 5.886\,\text{N}$. So $N_\text{avg} = 5.886\,\text{N} + \dfrac{5.297\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 5.886\,\text{N} + 441.5\,\text{N} = 447.3\,\text{N}$. c) For the clay ball $v_2 = 0$, so $N_\text{avg} = 5.886\,\text{N} + \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.012\,\text{s}} = 5.886\,\text{N} + 245.3\,\text{N} = 251.1\,\text{N}$.
 **Answer:** b) $4.5 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.60\,\text{kg}$ and the contact time $0.012\,\text{s}$. The velocities in part a are $-4.9\,\text{m/s}$ and $+3.9\,\text{m/s}$, and for the clay ball of part c the force is $2.5 \cdot 10^2\,\text{N}$.
 **Reasonableness:** The weight $5.9\,\text{N}$ is only about $1.3\,\%$ of the force of the floor. The ball fell about $1.2\,\text{m}$ and rose about $0.78\,\text{m}$, which fits a basketball. Explanation for c: the change in momentum of the clay ball is $2.9\,\text{kg}\cdot\text{m/s}$, but the momentum of the rebounding ball also changes upwards to $+2.4\,\text{kg}\cdot\text{m/s}$, so its change $5.3\,\text{kg}\cdot\text{m/s}$ is greater and a greater force is needed in the same time.
 
@@ -221,3 +221,44 @@ The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailsto
 **Substitution:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N}\cdot\text{s}$ and $F_\text{avg} = \dfrac{5.4\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 450\,\text{N}$
 **Answer:** $450\,\text{N}$, two significant figures ($4.5\cdot 10^2\,\text{N}$), because the peak value $900\,\text{N}$ and the duration $12\,\text{ms}$ are read from the graph to two figures.
 **Reasonableness:** The average is half the peak, as it should be for a force that rises and falls steadily. It is smaller than $900\,\text{N}$ and larger than zero.
+
+## fy4-9-L2-09
+**Find:** a) why a bathroom scale is not suited to determining mass on the space station, b) the mass measurement method of the video and how it works, c) a method of your own for determining the mass $m$ in weightlessness and the equation from which the mass is solved, d) the sources of error of your own method and how their effect is reduced
+**Principle:** Mass describes the inertia of a body, that is, how hard it is to change the motion of the body. Inertia does not depend on whether the body is supported or in free fall. That is why the mass can be determined from a known force and the measured change of motion. Newton's second law $\Sigma\overline{F} = m\overline{a}$ and the impulse principle $\overline{I} = \Delta\overline{p}$ fit when the pushing force is the only significant force in the direction of motion: then it is the net force. These facts are taken from the source (NASA, read 16 November 2026): the device is SLAMMD, it applies a known force to an astronaut attached to the arm of the device, and the mass is calculated from the resulting acceleration with Newton's second law. The rest is reasoning with physics.
+**Model answer:** a) A bathroom scale does not measure mass but the supporting force with which the scale pushes on the person. At rest on the surface of the Earth the supporting force is equal to the weight $mg$, and the scale shows the mass calculated from it. The space station and the astronaut are both in free fall around the Earth with the same acceleration. So the astronaut does not press on the scale, and the scale does not support the astronaut: the reading is zero. The mass has still not changed, and gravity still acts on the astronaut, since it is what keeps the station and the astronaut in orbit. The mass must therefore be measured through inertia.
+
+b) According to NASA's description, SLAMMD applies a known force $F$ to an astronaut attached to the arm of the device, and the device measures the resulting motion. Compare the description with what you saw in the video. The other forces in the direction of motion are small, so this force is the net force. From Newton's second law $\Sigma F = ma$ we get
+
+$m = \dfrac{F}{a}$
+
+With the impulse principle the same measurement is read like this: a known force acts for a time $\Delta t$ and changes the velocity by $\Delta v$. Then $I = \Delta p$, that is $F\,\Delta t = m\,\Delta v$, so
+
+$m = \dfrac{F\,\Delta t}{\Delta v}$
+
+The equations are the same law, because $a = \dfrac{\Delta v}{\Delta t}$. The same force gives a larger mass a smaller acceleration. The astronaut has to keep the body rigid and fixed to the arm, so that the whole body moves as one piece.
+
+c) The task has many correct solutions, and this is one example. Its numbers are example values, not measured results. A spring-driven pusher pushes the body with a known constant force $F = 20.0\,\text{N}$ for a time $\Delta t = 0.50\,\text{s}$. A motion sensor or video analysis gives the change in velocity $\Delta v = 0.125\,\text{m/s}$. The measured quantities are the force, the time it acts and the change in velocity (from a video, distance and time). From the impulse principle $F\,\Delta t = m\,\Delta v$, so
+
+$m = \dfrac{F\,\Delta t}{\Delta v}$
+
+$$\begin{aligned} m &= \dfrac{20.0\,\text{N} \cdot 0.50\,\text{s}}{0.125\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+
+The result has two significant figures, like the time $0.50\,\text{s}$. The unit is right, because $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
+
+Another possible method: a known body with the mass $m_1 = 10.0\,\text{kg}$ and the unknown body are pushed apart from rest. According to Newton's third law they push each other with equal and opposite forces for the same time. The impulses and the changes in momentum are therefore equal in magnitude, $m_1 v_1 = m_2 v_2$, where $v_1$ and $v_2$ are the speeds measured from a video. When, for example, $v_1 = 0.40\,\text{m/s}$ and $v_2 = 0.050\,\text{m/s}$, we get
+
+$m_2 = \dfrac{m_1 v_1}{v_2}$
+
+The magnitude of the momentum of the known body is
+
+$$\begin{aligned} p_1 &= m_1 v_1 \\ &= 10.0\,\text{kg} \cdot 0.40\,\text{m/s} \\ &= 4.0\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+and the mass of the unknown body is
+
+$$\begin{aligned} m_2 &= \dfrac{4.0\,\text{kg}\cdot\text{m/s}}{0.050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+
+d) The sources of error of the example method are these: the force of the spring does not stay constant during the push; the duration of a short push is hard to measure; the velocity read from a video depends on the scale and the frame rate; the body is not rigid if limbs or loose items move; air currents and touching the walls or cables add forces; the pusher's own moving parts have mass. Repeating the measurement and taking the mean reduce the effect of random error. Systematic error is reduced by calibrating the device with known masses. In addition, the body is kept rigid and fixed to the arm, the push is made longer and the time is measured with a sensor instead of a stopwatch.
+
+In the equation $m = \dfrac{F\,\Delta t}{\Delta v}$ the mass is a product and a quotient. That is why a relative error in $F$, $\Delta t$ or $\Delta v$ causes approximately the same relative error in the mass. If the change in velocity is read as $0.130\,\text{m/s}$, which is $4\,\%$ too large, the mass becomes $77\,\text{kg}$, about $4\,\%$ too small.
+
+Reasonableness: $80\,\text{kg}$ is of the order of the mass of an adult, and with the example values both methods give the same result.

@@ -30,7 +30,7 @@
         {
           "text": "$0{,}75$, koska hyödyksi saatu energia jaetaan käytetyllä: $6{,}0 : 8{,}0$.",
           "correct": true,
-          "feedback": "Oikein. Hyötysuhde on hyödyksi saadun energian osuus käytetystä energiasta, $\\eta = E_\\text{hyöty} : E_\\text{käytetty} = 6{,}0 : 8{,}0 = 0{,}75$ eli $75\\,\\%$ (luku *Hyötysuhde*). Siirron hyötysuhde lasketaan tänään samalla tavalla: perille tuleva energia jaetaan lähtevällä."
+          "feedback": "Oikein. Hyötysuhde on hyödyksi saadun energian osuus käytetystä energiasta, $$\n\\begin{aligned}\n\\eta &= E_\\text{hyöty} : E_\\text{käytetty} \\\\\n&= 6{,}0 : 8{,}0 \\\\\n&= 0{,}75\n\\end{aligned}\n$$ eli $75\\,\\%$ (luku *Hyötysuhde*). Siirron hyötysuhde lasketaan tänään samalla tavalla: perille tuleva energia jaetaan lähtevällä."
         },
         {
           "text": "$1{,}33$, koska käytetty energia jaetaan hyödyllä: $8{,}0\\,\\text{kWh} : 6{,}0\\,\\text{kWh}$.",
@@ -42,7 +42,7 @@
         },
         {
           "text": "$2{,}0\\,\\text{kWh}$, koska hyötysuhde on käytetyn ja hyödyn erotus.",
-          "feedback": "Erotus $8{,}0\\,\\text{kWh} - 6{,}0\\,\\text{kWh} = 2{,}0\\,\\text{kWh}$ on häviävä energia. Hyötysuhde on osuus ilman yksikköä, ei energia."
+          "feedback": "Erotus $$\n\\begin{aligned}\n&8{,}0\\,\\text{kWh} - 6{,}0\\,\\text{kWh} \\\\\n&= 2{,}0\\,\\text{kWh}\n\\end{aligned}\n$$ on häviävä energia. Hyötysuhde on osuus ilman yksikköä, ei energia."
         }
       ]
     },
@@ -117,7 +117,7 @@
         "tolerance": 0.03,
         "hints": [
           "Laske ensin, kuinka paljon energiaa jäi matkalle: lähtevä energia miinus perille tullut energia.",
-          "$E_\\text{häviö} = 36{,}0\\,\\text{TWh} - 32{,}7\\,\\text{TWh}$.",
+          "$$\n\\begin{aligned}\nE_\\text{häviö} &= 36{,}0\\,\\text{TWh} \\\\\n&- 32{,}7\\,\\text{TWh}\n\\end{aligned}\n$$.",
           "Osuus on häviö jaettuna lähtevällä energialla: $3{,}3\\,\\text{TWh} : 36{,}0\\,\\text{TWh}$. Kerro lopuksi tulos sadalla, niin saat prosentin."
         ],
         "mistakes": [
@@ -130,7 +130,7 @@
             "feedback": "Tämä on häviö terawattitunteina, ei prosenttina. Jaa häviö lähtevällä energialla ja ilmoita osuus prosentteina."
           }
         ],
-        "solution": "**Annettu:** verkkoon hankittu energia $E_\\text{lähtö} = 36{,}0\\,\\text{TWh}$ ja asiakkaiden käyttämä energia $E_\\text{perille} = 32{,}7\\,\\text{TWh}$ (Energiateollisuus, 2024)\n\n**Kysytty:** häviön osuus lähtevästä energiasta prosentteina\n\n**Periaate:** Energia ei katoa. Osa energiasta lähtee mutta ei tule asiakkaille. Tämä osa on muuttunut lämmöksi ympäristöön. Se on siirtohäviötä. Osuus lasketaan lähtevästä energiasta. Prosentti kertoo, kuinka suuri osa verkkoon syötetystä lämmöstä hävisi.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Yksikkömuunnoksia ei tarvita, koska molemmat energiat ovat terawattitunteina. Osuus muutetaan prosentiksi. Se kerrotaan sadalla: $0{,}0917 = 0{,}0917 \\cdot 100\\,\\% = 9{,}17\\,\\%$.\n\n**Sijoitus:** $E_\\text{häviö} = 36{,}0\\,\\text{TWh} - 32{,}7\\,\\text{TWh} = 3{,}3\\,\\text{TWh}$, ja $\\text{osuus} = 3{,}3\\,\\text{TWh} : 36{,}0\\,\\text{TWh} = 0{,}0917 = 9{,}17\\,\\%$\n\n**Vastaus:** $9{,}2\\,\\%$, kaksi merkitsevää numeroa. Syy on, että erotus $3{,}3\\,\\text{TWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kymmenen prosenttia luvusta $36{,}0\\,\\text{TWh}$ olisi $3{,}6\\,\\text{TWh}$. Häviö $3{,}3\\,\\text{TWh}$ on vähän pienempi. Siksi noin $9\\,\\%$ on oikean suuruinen. Se on yli kaksi kertaa sähköverkon noin $4\\,\\%$:n häviö."
+        "solution": "**Annettu:** verkkoon hankittu energia $E_\\text{lähtö} = 36{,}0\\,\\text{TWh}$ ja asiakkaiden käyttämä energia $E_\\text{perille} = 32{,}7\\,\\text{TWh}$ (Energiateollisuus, 2024)\n\n**Kysytty:** häviön osuus lähtevästä energiasta prosentteina\n\n**Periaate:** Energia ei katoa. Osa energiasta lähtee mutta ei tule asiakkaille. Tämä osa on muuttunut lämmöksi ympäristöön. Se on siirtohäviötä. Osuus lasketaan lähtevästä energiasta. Prosentti kertoo, kuinka suuri osa verkkoon syötetystä lämmöstä hävisi.\n\n**Kaava:** $E_\\text{häviö} = E_\\text{lähtö} - E_\\text{perille}$ ja $\\text{osuus} = \\dfrac{E_\\text{häviö}}{E_\\text{lähtö}}$\n\n**Muunnokset:** Yksikkömuunnoksia ei tarvita, koska molemmat energiat ovat terawattitunteina. Osuus muutetaan prosentiksi. Se kerrotaan sadalla: $0{,}0917 = 0{,}0917 \\cdot 100\\,\\% = 9{,}17\\,\\%$.\n\n**Sijoitus:** $$\n\\begin{aligned}\nE_\\text{häviö} &= 36{,}0\\,\\text{TWh} \\\\\n&- 32{,}7\\,\\text{TWh} \\\\\n&= 3{,}3\\,\\text{TWh}\n\\end{aligned}\n$$, ja $\\text{osuus} = 3{,}3\\,\\text{TWh} : 36{,}0\\,\\text{TWh} = 0{,}0917 = 9{,}17\\,\\%$\n\n**Vastaus:** $9{,}2\\,\\%$, kaksi merkitsevää numeroa. Syy on, että erotus $3{,}3\\,\\text{TWh}$ tunnetaan kahden numeron tarkkuudella.\n\n**Järkevyys:** Kymmenen prosenttia luvusta $36{,}0\\,\\text{TWh}$ olisi $3{,}6\\,\\text{TWh}$. Häviö $3{,}3\\,\\text{TWh}$ on vähän pienempi. Siksi noin $9\\,\\%$ on oikean suuruinen. Se on yli kaksi kertaa sähköverkon noin $4\\,\\%$:n häviö."
       }
     },
     {
@@ -245,12 +245,12 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Sähköverkkoon syötetään $500\\,\\text{MWh}$ ja häviö on $4\\,\\%$ lähtevästä energiasta. Opiskelija laskee: perille tulee $500\\,\\text{MWh} - 4\\,\\text{MWh} = 496\\,\\text{MWh}$. Missä on virhe?",
+      "prompt": "Sähköverkkoon syötetään $500\\,\\text{MWh}$ ja häviö on $4\\,\\%$ lähtevästä energiasta. Opiskelija laskee: perille tulee $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 4\\,\\text{MWh} \\\\\n&= 496\\,\\text{MWh}\n\\end{aligned}\n$$. Missä on virhe?",
       "choices": [
         {
           "text": "Prosentti on vähennetty megawattitunteina, vaikka häviö $4\\,\\%$ on $20\\,\\text{MWh}$.",
           "correct": true,
-          "feedback": "Oikein. Häviö $4\\,\\%$ tarkoittaa neljää sadasosaa lähtevästä energiasta, $4 : 100 = 0{,}04$. Häviö on $0{,}04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, ja perille tulee $500\\,\\text{MWh} - 20\\,\\text{MWh} = 480\\,\\text{MWh}$. Arvion olisi voinut tehdä näin: kun $1\\,\\%$ on $5\\,\\text{MWh}$, neljä prosenttia on $20\\,\\text{MWh}$."
+          "feedback": "Oikein. Häviö $4\\,\\%$ tarkoittaa neljää sadasosaa lähtevästä energiasta, $4 : 100 = 0{,}04$. Häviö on $0{,}04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$, ja perille tulee $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. Arvion olisi voinut tehdä näin: kun $1\\,\\%$ on $5\\,\\text{MWh}$, neljä prosenttia on $20\\,\\text{MWh}$."
         },
         {
           "text": "Häviö pitää laskea perille tulevasta energiasta eikä verkkoon lähtevästä energiasta.",
@@ -374,7 +374,7 @@
           "feedback": "Lisäsit perille tulevaan energiaan $25\\,\\%$ siitä. Häviöprosentti lasketaan lähtevästä energiasta, ei perille tulevasta. Jaa siis luvulla $0{,}75$."
         }
       ],
-      "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 375\\,\\text{MWh}$ ja hyötysuhde $\\eta = 75\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Tässä tunnetaan perille tuleva energia ja hyötysuhde. Silloin lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $75\\,\\% = 75 : 100 = 0{,}75$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = 375\\,\\text{MWh} : 0{,}75 = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa. Syy on, että hyötysuhde $75\\,\\%$ on epätarkin tieto.\n\n**Järkevyys:** Häviö on $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$ eli $25\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
+      "solution": "**Annettu:** perille tuleva energia $E_\\text{perille} = 375\\,\\text{MWh}$ ja hyötysuhde $\\eta = 75\\,\\%$\n\n**Kysytty:** verkkoon syötettävä energia $E_\\text{lähtö}$ megawattitunteina\n\n**Periaate:** Hyötysuhde on perille tulevan energian osuus lähtevästä energiasta. Tässä tunnetaan perille tuleva energia ja hyötysuhde. Silloin lähtevä energia saadaan jakamalla.\n\n**Kaava:** $\\eta = \\dfrac{E_\\text{perille}}{E_\\text{lähtö}}$, josta $E_\\text{lähtö} = \\dfrac{E_\\text{perille}}{\\eta}$\n\n**Muunnokset:** $75\\,\\% = 75 : 100 = 0{,}75$. Energian yksikkö pysyy megawattitunteina.\n\n**Sijoitus:** $E_\\text{lähtö} = 375\\,\\text{MWh} : 0{,}75 = 500\\,\\text{MWh}$\n\n**Vastaus:** $5{,}0 \\cdot 10^2\\,\\text{MWh}$, kaksi merkitsevää numeroa. Syy on, että hyötysuhde $75\\,\\%$ on epätarkin tieto.\n\n**Järkevyys:** Häviö on $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 375\\,\\text{MWh} \\\\\n&= 125\\,\\text{MWh}\n\\end{aligned}\n$$ eli $25\\,\\%$ luvusta $500\\,\\text{MWh}$. Lähtevä energia on perille tulevaa suurempi, kuten pitääkin."
     },
     {
       "id": "tarkistus-3",

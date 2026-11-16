@@ -90,14 +90,14 @@
 **Järkevyys:** Bensiinin tiheys on noin $0{,}74\,\tfrac{\text{kg}}{\textsf{l}}$, joten $4{,}5\,\text{kg}$ on noin $6\,\textsf{l}$ eli tyypillinen kulutus sadalla kilometrillä. Bensiinin energia $192\,\text{MJ}$ on neljä kertaa hyötyenergia, koska hyötysuhde on neljäsosa.
 
 ## fy2-5-L3-01
-**Annettu:** tarvittava energia $E = 120\,\text{MJ}$, ilmakuivan polttopuun $H_\text{puu} = 15\,\tfrac{\text{MJ}}{\text{kg}}$ ja polttoöljyn $H_\text{öljy} = 43\,\tfrac{\text{MJ}}{\text{kg}}$
+**Annettu:** tarvittava energia $E = 120\,\text{MJ}$, ilmakuivan polttopuun $H_\text{puu} = 15\,\tfrac{\text{MJ}}{\text{kg}}$ ja polttoöljyn $H_\text{öljy} = 40{,}6\,\tfrac{\text{MJ}}{\text{kg}}$
 **Kysytty:** kuinka monta kilogrammaa enemmän puuta kuin öljyä tarvitaan, $\Delta m = m_\text{puu} - m_\text{öljy}$
 **Periaate:** Kummastakin polttoaineesta pitää vapautua sama energia $E$. Lain $E = Hm$ mukaan massa on energia jaettuna lämpöarvolla, joten pienemmällä lämpöarvolla tarvitaan suurempi massa.
 **Kaava:** $E = Hm$, josta $m = \dfrac{E}{H}$ kummallekin polttoaineelle, ja $\Delta m = m_\text{puu} - m_\text{öljy}$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
-**Sijoitus:** $m_\text{puu} = 120\,\text{MJ} : 15\,\tfrac{\text{MJ}}{\text{kg}} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = 120\,\text{MJ} : 43\,\tfrac{\text{MJ}}{\text{kg}} = 2{,}79\,\text{kg}$. Erotus: $\Delta m = 8{,}0\,\text{kg} - 2{,}79\,\text{kg} = 5{,}21\,\text{kg}$.
-**Vastaus:** Puuta tarvitaan $5{,}2\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}}$. Puuta tarvitaan enemmän, koska yksi kilogramma puuta sisältää vähemmän kemiallista energiaa kuin kilogramma öljyä.
-**Järkevyys:** Puun massa on noin $2{,}9$-kertainen öljyn massaan verrattuna, sillä $43 : 15 = 2{,}87$. Siksi $2{,}87 \cdot 2{,}79\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}87 - 1 = 1{,}87$ kertaa öljyn massa: $1{,}87 \cdot 2{,}79\,\text{kg} \approx 5{,}2\,\text{kg}$, kuten pitää.
+**Sijoitus:** $m_\text{puu} = 120\,\text{MJ} : 15\,\tfrac{\text{MJ}}{\text{kg}} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = 120\,\text{MJ} : 40{,}6\,\tfrac{\text{MJ}}{\text{kg}} = 2{,}96\,\text{kg}$. Erotus: $\Delta m = 8{,}0\,\text{kg} - 2{,}96\,\text{kg} = 5{,}04\,\text{kg}$.
+**Vastaus:** Puuta tarvitaan $5{,}0\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}}$. Puuta tarvitaan enemmän, koska yksi kilogramma puuta sisältää vähemmän kemiallista energiaa kuin kilogramma öljyä.
+**Järkevyys:** Puun massa on noin $2{,}7$-kertainen öljyn massaan verrattuna, sillä $40{,}6 : 15 = 2{,}71$. Siksi $2{,}71 \cdot 2{,}96\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}71 - 1 = 1{,}71$ kertaa öljyn massa: $1{,}71 \cdot 2{,}96\,\text{kg} \approx 5{,}0\,\text{kg}$, kuten pitää.
 
 ## fy2-5-L3-02
 **Annettu:** ruoan energiasisältö $e = 18\,\tfrac{\text{MJ}}{\text{kg}}$, massa $m = 2{,}4\,\text{kg}$, päiväkulutus $12\,\text{MJ}$
@@ -117,12 +117,23 @@
 **Muunnokset:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ ja $1\,\text{h} = 3600\,\text{s}$. Koska $1\,\text{MJ/s} = 1\,\text{MW}$, tehon yksikkö tulee suoraan megawatteina.
 **Sijoitus:** $E_\text{sisään} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{hyöty} = 0{,}35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ ja $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$
 **Vastaus:** $35\,\text{MW}$, kaksi merkitsevää numeroa kuten tiedoissa $10\,\tfrac{\text{MJ}}{\text{kg}}$ ja $35\,\%$.
-**Järkevyys:** Jos kaikki turpeen energia muuttuisi sähköksi, teho olisi $360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}$. Hyötysuhteella $35\,\%$ saadaan $35\,\%$ siitä eli $35\,\text{MW}$, mikä on tyypillinen pienen voimalaitoksen teho.
+**Järkevyys:** Jos kaikki turpeen energia muuttuisi sähköksi, teho olisi $$
+\begin{aligned}
+&360\,000\,\text{MJ} : 3600\,\text{s} \\
+&= 100\,\text{MW}
+\end{aligned}
+$$. Hyötysuhteella $35\,\%$ saadaan $35\,\%$ siitä eli $35\,\text{MW}$, mikä on tyypillinen pienen voimalaitoksen teho.
 
 ## fy2-5-L1-06
 **Kysytty:** mitä bensiinin lämpöarvo $H = 43\,\tfrac{\text{MJ}}{\text{kg}}$ kertoo
 **Periaate:** Lämpöarvo on polttoaineen palaessa vapautuva energia massayksikköä kohti, joten sen yksikkö $\text{MJ/kg}$ on energia jaettuna massalla. Se ei ole lämpötila, eikä energiaa synny tyhjästä: kemiallinen energia muuntuu lämmöksi ja valoksi.
-**Mallivastaus:** Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$. Kahdesta kilogrammasta vapautuu kaksinkertainen määrä, $E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa syntyisi uutena.
+**Mallivastaus:** Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$. Kahdesta kilogrammasta vapautuu kaksinkertainen määrä, $$
+\begin{aligned}
+E &= Hm \\
+&= 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} \\
+&= 86\,\text{MJ}
+\end{aligned}
+$$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa syntyisi uutena.
 
 ## fy2-5-L1-07
 **Annettu:** vapautuvan energian pitää olla $E = 255\,\text{MJ}$ ja pellettien lämpöarvo $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$
@@ -157,7 +168,13 @@
 ## fy2-5-L2-06
 **Kysytty:** missä oppilaan laskussa on virhe ja mikä on oikea tulos
 **Periaate:** Lämpöarvo on energia kilogrammaa kohti, joten kaavassa $E = Hm$ massa pitää sijoittaa kilogrammoina. Tonni ei ole kilogramma, vaan $1\,\text{t} = 1000\,\text{kg}$.
-**Mallivastaus:** Oppilas sijoitti massan tonneina, vaikka lämpöarvo on yksikössä $\text{MJ/kg}$. Oikein $3{,}0\,\text{t} = 3{,}0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ ja $E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,\text{MJ}$. Oppilaan tulos $78\,\text{MJ}$ on tuhat kertaa liian pieni. Kaava, kivihiilen lämpöarvo ja vastauksen yksikkö $\text{MJ}$ olivat oikein. Tuhatkertainen virhe näkyy myös arviosta: yksi kilogramma kivihiiltä antaa jo $26\,\text{MJ}$, joten kolme tonnia antaa paljon enemmän kuin $78\,\text{MJ}$.
+**Mallivastaus:** Oppilas sijoitti massan tonneina, vaikka lämpöarvo on yksikössä $\text{MJ/kg}$. Oikein $3{,}0\,\text{t} = 3{,}0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ ja $$
+\begin{aligned}
+E &= Hm \\
+&= 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} \\
+&= 78\,000\,\text{MJ}
+\end{aligned}
+$$. Oppilaan tulos $78\,\text{MJ}$ on tuhat kertaa liian pieni. Kaava, kivihiilen lämpöarvo ja vastauksen yksikkö $\text{MJ}$ olivat oikein. Tuhatkertainen virhe näkyy myös arviosta: yksi kilogramma kivihiiltä antaa jo $26\,\text{MJ}$, joten kolme tonnia antaa paljon enemmän kuin $78\,\text{MJ}$.
 
 ## fy2-5-L2-07
 **Annettu:** taulukko $(t, m)$, pellettien lämpöarvo $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$; poltin palaa tasaisesti
@@ -171,27 +188,27 @@
 **Järkevyys:** Minuutissa palaa $0{,}065\,\text{kg}$, jolloin vapautuu $17\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}065\,\text{kg} = 1{,}1\,\text{MJ}$. Se on $1{,}1\,\text{MJ} : 60\,\text{s} = 0{,}018\,\text{MJ/s} = 18\,\text{kW}$, mikä sopii omakotitalon pellettikattilan polttoaineteholle. Teho on vapautuva teho, ei talon saama hyötyteho.
 
 ## fy2-5-L3-04
-**Annettu:** taulukon kuukausienergiat (summa alla); pelletit $H_\text{p} = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{p} = 85\,\% = 0{,}85$; öljy $H_\text{ö} = 43\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{ö} = 90\,\% = 0{,}90$; huonon säädön hyötysuhde $\eta_\text{p}' = 0{,}70$
+**Annettu:** taulukon kuukausienergiat (summa alla); pelletit $H_\text{p} = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{p} = 85\,\% = 0{,}85$; öljy $H_\text{ö} = 40{,}6\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{ö} = 90\,\% = 0{,}90$; huonon säädön hyötysuhde $\eta_\text{p}' = 0{,}70$
 **Kysytty:** pellettien vuosikulutus $m_\text{p}$ kilogrammoina; lisäksi vuoden hyötyenergia $E_\text{hyöty}$, öljyn massa $m_\text{ö}$ ja pellettien lisäkulutus hyötysuhteella $0{,}70$
 **Periaate:** Taulukon energia on lämmitykseen päätyvä hyötyenergia. Hyötysuhde on hyötyenergian osuus polttoaineesta vapautuvasta energiasta, joten vapautuva energia on $E_\text{sisään} = E_\text{hyöty} : \eta$ ja polttoaineen massa saadaan lailla $E = Hm$. Energia säilyy: se, mikä ei päädy lämmitykseen, menee savukaasujen ja kattilan häviöinä (luku *Hyötysuhde*).
 **Kaava:** $E_\text{sisään} = \dfrac{E_\text{hyöty}}{\eta}$ ja $E_\text{sisään} = Hm$, joten $m = \dfrac{E_\text{hyöty}}{\eta H}$
 **Muunnokset:** $1\,\text{kWh} = 3{,}6\,\text{MJ}$, joten $E_\text{hyöty} = 13\,300 \cdot 3{,}6\,\text{MJ}$. Hyötysuhteet $85\,\% = 0{,}85$, $90\,\% = 0{,}90$ ja $70\,\% = 0{,}70$.
-**Sijoitus:** Lasketaan kuukaudet neljän kuukauden ryhmissä: $2100 + 1900 + 1600 + 1100$ eli $6700$, $600 + 250 + 200 + 250$ eli $1300$ ja $600 + 1100 + 1600 + 2000$ eli $5300$, joten summa on $6700 + 1300 + 5300 = 13\,300$, joten $E_\text{hyöty} = 13\,300\,\text{kWh} = 13\,300 \cdot 3{,}6\,\text{MJ} = 47\,880\,\text{MJ}$. Pelleteillä $E_\text{sisään} = 47\,880\,\text{MJ} : 0{,}85 = 56\,329\,\text{MJ}$ ja $m_\text{p} = 56\,329\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 3313\,\text{kg}$. Öljyllä $E_\text{sisään} = 47\,880\,\text{MJ} : 0{,}90 = 53\,200\,\text{MJ}$ ja $m_\text{ö} = 53\,200\,\text{MJ} : 43\,\tfrac{\text{MJ}}{\text{kg}} = 1237\,\text{kg}$. Hyötysuhteella $0{,}70$ pelletteihin menee $47\,880\,\text{MJ} : 0{,}70 = 68\,400\,\text{MJ}$ ja $m_\text{p}' = 68\,400\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 4024\,\text{kg}$, eli lisäkulutus on $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
-**Vastaus:** Vuoden lämmitysenergia on $13\,300\,\text{kWh} = 47\,900\,\text{MJ}$. Pellettejä kuluu $3300\,\text{kg}$ eli noin $3{,}3$ tonnia, kaksi merkitsevää numeroa kuten hyötysuhteessa $85\,\%$ ja lämpöarvossa $17\,\tfrac{\text{MJ}}{\text{kg}}$. Öljyä kuluu $1200\,\text{kg}$ ja huonolla säädöllä pellettejä kuluu noin $710\,\text{kg}$ enemmän. Pellettejä kuluu massana noin $2{,}7$ kertaa niin paljon kuin öljyä, mutta lämpöarvojen suhde on $43 : 17 = 2{,}5$. Ero johtuu hyötysuhteista: öljykattilan hyötysuhde on suurempi ($0{,}90$ eikä $0{,}85$), joten öljyä tarvitaan vielä vähemmän, ja $2{,}5 \cdot (0{,}90 : 0{,}85) = 2{,}7$. Hyötysuhteen lasku kasvattaa kulutusta, koska sama hyötyenergia pitää saada suuremmasta vapautuvasta energiasta; häviöt kasvavat.
+**Sijoitus:** Lasketaan kuukaudet neljän kuukauden ryhmissä: $2100 + 1900 + 1600 + 1100$ eli $6700$, $600 + 250 + 200 + 250$ eli $1300$ ja $600 + 1100 + 1600 + 2000$ eli $5300$, joten summa on $6700 + 1300 + 5300 = 13\,300$, joten $E_\text{hyöty} = 13\,300\,\text{kWh} = 13\,300 \cdot 3{,}6\,\text{MJ} = 47\,880\,\text{MJ}$. Pelleteillä $E_\text{sisään} = 47\,880\,\text{MJ} : 0{,}85 = 56\,329\,\text{MJ}$ ja $m_\text{p} = 56\,329\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 3313\,\text{kg}$. Öljyllä $E_\text{sisään} = 47\,880\,\text{MJ} : 0{,}90 = 53\,200\,\text{MJ}$ ja $m_\text{ö} = 53\,200\,\text{MJ} : 40{,}6\,\tfrac{\text{MJ}}{\text{kg}} = 1310\,\text{kg}$. Hyötysuhteella $0{,}70$ pelletteihin menee $47\,880\,\text{MJ} : 0{,}70 = 68\,400\,\text{MJ}$ ja $m_\text{p}' = 68\,400\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 4024\,\text{kg}$, eli lisäkulutus on $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
+**Vastaus:** Vuoden lämmitysenergia on $13\,300\,\text{kWh} = 47\,900\,\text{MJ}$. Pellettejä kuluu $3300\,\text{kg}$ eli noin $3{,}3$ tonnia, kaksi merkitsevää numeroa kuten hyötysuhteessa $85\,\%$ ja lämpöarvossa $17\,\tfrac{\text{MJ}}{\text{kg}}$. Öljyä kuluu $1300\,\text{kg}$ ja huonolla säädöllä pellettejä kuluu noin $710\,\text{kg}$ enemmän. Pellettejä kuluu massana noin $2{,}5$ kertaa niin paljon kuin öljyä, mutta lämpöarvojen suhde on $40{,}6 : 17 = 2{,}4$. Ero johtuu hyötysuhteista: öljykattilan hyötysuhde on suurempi ($0{,}90$ eikä $0{,}85$), joten öljyä tarvitaan vielä vähemmän, ja $2{,}4 \cdot (0{,}90 : 0{,}85) = 2{,}5$. Hyötysuhteen lasku kasvattaa kulutusta, koska sama hyötyenergia pitää saada suuremmasta vapautuvasta energiasta; häviöt kasvavat.
 **Järkevyys:** Karkea arvio: $13\,300\,\text{kWh}$ on noin $48\,000\,\text{MJ}$, ja pelletit antavat $17\,\text{MJ}$ kilogrammaa kohti, joten ilman häviöitä tarvittaisiin $48\,000 : 17 = 2820\,\text{kg}$. Häviöiden takia määrä on suurempi, $2820\,\text{kg} : 0{,}85 = 3320\,\text{kg}$, mikä sopii tulokseen. Talvikuukausina kulutus on suurin, ja kesällä lämmitysenergiaa tarvitaan vain lämpimän veden tarpeeseen.
 
 ## fy2-5-L3-05
-**Annettu:** vuotuinen hyötyenergia $E_\text{hyöty} = 36\,000\,\text{MJ}$; taulukosta puu $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}70$; pelletit $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}85$; öljy $H = 43\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}90$
+**Annettu:** vuotuinen hyötyenergia $E_\text{hyöty} = 36\,000\,\text{MJ}$; taulukosta puu $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}70$; pelletit $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}85$; öljy $H = 40{,}6\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0{,}90$
 **Kysytty:** puun ja pellettien massojen erotus $\Delta m = m_\text{puu} - m_\text{pelletti}$ kilogrammoina; lisäksi jokaisen polttoaineen massa ja pellettien kulutus hyötysuhteella $0{,}75$
 **Periaate:** Malli: polttoaineesta vapautuva energia on $E_\text{sisään} = Hm$, ja siitä vain osa $\eta$ päätyy hyötyenergiaksi, $E_\text{hyöty} = \eta H m$. Massa on sitä suurempi, mitä pienempi on lämpöarvo ja hyötysuhde. Malli on yksinkertainen: kattilan hyötysuhteen oletetaan pysyvän vakiona.
 **Kaava:** $E_\text{hyöty} = \eta H m$, josta $m = \dfrac{E_\text{hyöty}}{\eta H}$, ja $\Delta m = m_\text{puu} - m_\text{pelletti}$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti. Prosentit ovat suhdelukuina $70\,\% = 0{,}70$, $85\,\% = 0{,}85$, $90\,\% = 0{,}90$ ja $75\,\% = 0{,}75$.
-**Sijoitus:** $m_\text{puu} = \dfrac{36\,000\,\text{MJ}}{0{,}70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pelletti} = \dfrac{36\,000\,\text{MJ}}{0{,}85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ ja $m_\text{öljy} = \dfrac{36\,000\,\text{MJ}}{0{,}90 \cdot 43\,\tfrac{\text{MJ}}{\text{kg}}} = 930\,\text{kg}$. Erotus on $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. Hyötysuhteella $0{,}75$ pellettejä kuluu $m_\text{pelletti}' = \dfrac{36\,000\,\text{MJ}}{0{,}75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
+**Sijoitus:** $m_\text{puu} = \dfrac{36\,000\,\text{MJ}}{0{,}70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pelletti} = \dfrac{36\,000\,\text{MJ}}{0{,}85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ ja $m_\text{öljy} = \dfrac{36\,000\,\text{MJ}}{0{,}90 \cdot 40{,}6\,\tfrac{\text{MJ}}{\text{kg}}} = 985\,\text{kg}$. Erotus on $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. Hyötysuhteella $0{,}75$ pellettejä kuluu $m_\text{pelletti}' = \dfrac{36\,000\,\text{MJ}}{0{,}75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
 **Vastaus:** vastauslaatikkoon kohdan b) tulos $940\,\text{kg}$.
-a) Puuta kuluu $3400\,\text{kg}$, pellettejä $2500\,\text{kg}$ ja öljyä $930\,\text{kg}$.
+a) Puuta kuluu $3400\,\text{kg}$, pellettejä $2500\,\text{kg}$ ja öljyä $990\,\text{kg}$.
 b) Puuta kuluu noin $940\,\text{kg}$ enemmän kuin pellettejä, kaksi merkitsevää numeroa kuten tiedoissa $36\,000\,\text{MJ}$.
 c) Pellettien kulutus nousee hyötysuhteella $0{,}75$ määrään $2800\,\text{kg}$, eli $330\,\text{kg}$ enemmän: kun hyötysuhde laskee, osa vapautuvasta energiasta menee häviöihin ja samaan hyötyenergiaan tarvitaan enemmän polttoainetta.
-d) Öljyä kuluu vähiten, koska sen lämpöarvo on yli kaksi kertaa niin suuri kuin puulla ja pelleteillä ($43 : 15 = 2{,}9$), kun taas hyötysuhteet ovat samaa suuruusluokkaa ($0{,}90$ ja $0{,}70$); lämpöarvo ratkaisee massan suuruusluokan.
+d) Öljyä kuluu vähiten, koska sen lämpöarvo on yli kaksi kertaa niin suuri kuin puulla ja pelleteillä ($40{,}6 : 15 = 2{,}7$), kun taas hyötysuhteet ovat samaa suuruusluokkaa ($0{,}90$ ja $0{,}70$); lämpöarvo ratkaisee massan suuruusluokan.
 **Järkevyys:** Arvio ilman häviöitä: puuta $36\,000 : 15 = 2400\,\text{kg}$ ja pellettejä $36\,000 : 17 = 2120\,\text{kg}$. Hyötysuhteet suurentavat nämä arvoihin $2400 : 0{,}70 = 3430\,\text{kg}$ ja $2120 : 0{,}85 = 2490\,\text{kg}$, mikä sopii tulokseen. Pellettikattilan massa kasvaa $2824\,\text{kg} : 2491\,\text{kg} = 1{,}13$-kertaiseksi, ja $0{,}85 : 0{,}75 = 1{,}13$, kuten pitää.
 
 ## fy2-5-L2-08
@@ -202,7 +219,7 @@ Bensiini: $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 1{,}5\,\text{kg} = 64{,}5\
 Polttopuu: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5{,}0\,\text{kg} = 75\,\text{MJ}$
 Kivihiili: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4{,}0\,\text{kg} = 104\,\text{MJ}$
 Jyrsinturve: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
-Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$), joten polttopuu ja kivihiili vaihtavat paikkaa: kivihiilen suurempi lämpöarvo korvaa pienemmän massan. Arvio: bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä, joten sen energia jää pienimmäksi, mikä sopii.
+Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$), joten polttopuu ja kivihiili vaihtavat paikkaa: kivihiilen suurempi lämpöarvo korvaa pienemmän massan. Arvio: bensiinissä on yli $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä, joten sen energia jää pienimmäksi, mikä sopii.
 
 ## fy2-5-L1-09
 **Annettu:** etanolin massa $m = 0{,}50\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, etanoli) $H = 26{,}7\,\tfrac{\text{MJ}}{\text{kg}}$

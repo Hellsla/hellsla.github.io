@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb4527761a2779c
+CONTENT-HASH: be8b26190b060e32
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-3-L1-09 / L2-09 — F_{AB}, F_{BA} are set in italic subscripts while L2-08 uses upright \text{KH}; use F_{\text{AB}}.
-- [Minor] fy4/anturit graph — label "F_B (kärry B)" sits close to the top data points; nudge right.
+- [Minor] fy4-3-L3-05 (task 4-23) — the task text still says "Taulukossa on esimerkkiaineisto mittauksesta" and the solution's Annettu ends "(esimerkkiaineisto)", although the marker was taken out of the captions (teacher 2026-11-15); remove it there too for consistency (same in L3-04's Annettu "esimerkkiaineisto").
+- [Minor] fy4-3-L3-05 Vastaus c) — long single paragraph now with the extra sentence about the hand; the content is right, but a line break before "Kolmannen lain mukaan" would help.
 
 ## Checked
-- open-exercises-1280-9, -10 (L1-09 task, figure fy4-3/anturit, solution) and L2-11 (L2-09 figure and solution). Axes F (N) and t (s) with units, two series told apart by colour and direct labels, points distinct from lines, readable at 1280 px; solutions render without errors; the changed v_k lines read consistently.
+- open-exercises-L3-1280-6 (L3-04 end, L3-05 task text and table), -7 (L3-05 full solution with the new Periaate and Vastaus sentences), -8 (end).
+- The changed sentences read fluently ("Oppilasta ei vedä kärry vaan köysi"); "$5{,}1\,\text{N}$:n" case endings correct; the table is narrow but not clipped; no layout damage at 1280. The L3-03 wording fix ("ilmanvastus on hyvin pieni") was read in source only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

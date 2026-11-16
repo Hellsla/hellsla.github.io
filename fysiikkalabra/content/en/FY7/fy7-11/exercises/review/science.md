@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2b6cc03e5029cd6d
-Mode: delta
+CONTENT-HASH: 8399cca233d99b8e
 
 ## Blocking
-- none
 
 ## Polish
-- content/en/FY7/fy7-11/exercises/exercises.json:127,129 and solutions.md:166,223 — "inner/outer edge of a rainbow" stays unqualified there; correct in context (one internal reflection is stated or implied), but adding "primary" as in L1-05 would make the set uniform.
 
 ## Checked
-- Hash at start and end identical (2b6cc03e5029cd6d).
-- Diff, solutions.md L1-05 Principle and Reasonableness: "red is on the outer edge" -> "on the outer edge of the primary rainbow". Correct: with one internal reflection theta_red ≈ 42.3° > theta_violet ≈ 40.6°; in the secondary bow the order reverses, so the qualifier removes a B-type missing condition.
-- Numbers in the touched solution unchanged and right: beta_r 40.32°, theta_r 42.30°; beta_v 39.56°, theta_v 40.63°; width 1.66° ≈ 1.7°.
-- figures.json change is teacher-approved figures only (outside this review).
+- Delta: the diff is one phrase in fy7-11-L3-05, "(example data)" removed from the task text. No number, symbol, answer, unit or tolerance changed; solutions.md and answers.py are untouched.
+- The removal makes no claim false: the task states the two refractive indices as given properties of the flint glass and never calls them measured. $1.6150$ (red) and $1.6498$ (violet) are realistic for a dense flint.
+- L3-05 recomputed from the task text with my own prism model: $A_\text{max}$ is $64.98^\circ$ for violet and $66.57^\circ$ for red, so violet limits. At $A = 64.0^\circ$ the deviations are $56.40^\circ$ and $63.82^\circ$, so $\Delta\delta = 7.417^\circ$, equal to the key (7.417, tolerance 0.05). At $60.0^\circ$ the difference is $3.91^\circ$.
+- The label still stands in the table task of level 2 (caption "typical values, example data"); that is a matter of consistent wording, not of physics.
+- Every other task stands as recomputed in the previous report.
+- Hash 8399cca233d99b8e at the start and at the end.

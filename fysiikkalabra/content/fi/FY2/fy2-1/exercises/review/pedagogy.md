@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1b1e4f5288cc758f
-
-Round: 1
+CONTENT-HASH: 575f3df5f4e893ad
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json fy2-1-L1-10 — the 4 % tolerance is explained only in the solution; "noin" in the question would tell the student. Optional.
+- none
 
 ## Checked
-- Diff: the hint sentence moved from the task text into the `hints` field; the question "Kuinka paljon kemiallista energiaa bensiinistä vapautuu?" now closes the text as its own sentence.
-- The hint names only the table (*Polttoaineiden LHV-lämpöarvoja*), not the value or the row, as the teacher decided 2026-11-12.
-- The `hints` entry is a single line a student can use without it giving the answer away.
-- Answer, unit, tolerance and the solution are unchanged (86,8 MJ), so the earlier review of the solution stands.
-- Hash identical at start and end (1b1e4f5288cc758f).
+- Delta review: the sanity-check sentence of the bensiini task now says "kuivaan puuhun, jonka lämpöarvo on MAFY-taulukon mukaan 16,2 MJ/kg"; it is correct, sourced and consistent with the changed sentence in the lesson fy2-5.
+- The answer, tolerance and the rest of the solution are unchanged.

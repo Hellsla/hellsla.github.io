@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6e6209f27ed720e0
+CONTENT-HASH: 2447ad326132609c
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: fy6-5 misconception paragraph at 390 px (fi, en, fi-easy) opened: all values and units in LaTeX, decimal comma/point right, `:` for division, chain legible, no overflow.
+- round 3, delta review (reflow): proof sheets en-fy6-5-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

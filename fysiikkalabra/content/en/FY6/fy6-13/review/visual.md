@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d3bbbfc30db75858
+CONTENT-HASH: d965bd0cbae036ef
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: no text diff; opened the connected-breakdown readout (air, d = 1,0 mm, U0 = 4,0 kV) at 360 and 1280 px on the built page: the third line (Jännite U, kenttä E, läpilyöntilujuus Emax) wraps cleanly, nothing clipped, no horizontal overflow.
+- round 3, delta review (reflow): proof sheets en-fy6-13-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

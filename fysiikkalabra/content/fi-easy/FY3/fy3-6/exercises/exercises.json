@@ -283,6 +283,19 @@
       "answer": 69.3,
       "unit": "kJ",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-6-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://yle.fi/a/3-5678966\" target=\"_blank\" rel=\"noopener\">Yle – Kuuma vesi jäätyy kylmää nopeammin</a> (luettu 16. marraskuuta 2026)\n\nLue artikkeli. Se kertoo Mpemba-ilmiöstä. Artikkeli on julkaistu vuonna 2010.\n\na) Kuvaile ilmiö, josta artikkeli kertoo. Miksi havainto voi tuntua ristiriitaiselta, kun sitä vertaa arkikokemukseen? Ristiriitainen tarkoittaa, että kaksi asiaa eivät sovi yhteen.\n\nb) Vettä on $0{,}50\\,\\text{kg}$. Se jäähtyy lämpötilasta $80\\,{}^\\circ\\text{C}$ lämpötilaan $0\\,{}^\\circ\\text{C}$. Laske, kuinka suuren lämpömäärän vesi luovuttaa eli antaa ympäristöön. Oleta, että vettä ei haihdu. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nc) Artikkeli selittää ilmiötä muun muassa haihtumisella. Haihtuminen tarkoittaa, että nesteen pinnasta muuttuu vettä höyryksi. Selitä, miten haihtuminen, astian ominaisuudet ja koeolosuhteet voivat vaikuttaa siihen, kuinka kauan veden jäätyminen kestää.\n\nd) Suunnittele koe. Kokeella tutkitaan, millaisissa olosuhteissa kuuma vesi mahdollisesti jäätyy nopeammin kuin kylmä vesi. Kerro, mitkä suureet pitää mitata. Kerro myös, mitkä tekijät pitää vakioida eli pitää samoina.\n\nVastauskenttään tulee kohdan b) tulos kilojouleina positiivisena lukuna.",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": 170,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [

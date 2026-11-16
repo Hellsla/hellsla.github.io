@@ -6,7 +6,11 @@
 **Muunnokset:** Ei tarvita: teho on megawatteina ja aika tunteina, joten tulo on suoraan megawattitunteina.
 **Sijoitus:** $E = 2{,}5\,\text{MW} \cdot 168\,\text{h} = 420\,\text{MWh}$
 **Vastaus:** $420\,\text{MWh}$, kaksi merkitsevää numeroa kuten tehossa $2{,}5\,\text{MW}$.
-**Järkevyys:** Arvio: $2{,}5\,\text{MW} \cdot 170\,\text{h} \approx 425\,\text{MWh}$. Viikko on noin $1 : 52$ vuodesta. Samalla keskiteholla voimala tuottaisi vuodessa noin $52 \cdot 420\,\text{MWh} \approx 22\,000\,\text{MWh}$. Se on kymmeniä gigawattitunteja, ja se sopii yhden tuulivoimalan kokoon.
+**Järkevyys:** Arvio: $$
+2{,}5\,\text{MW} \cdot 170\,\text{h} \approx 425\,\text{MWh}
+$$. Viikko on noin $1 : 52$ vuodesta. Samalla keskiteholla voimala tuottaisi vuodessa noin $$
+52 \cdot 420\,\text{MWh} \approx 22\,000\,\text{MWh}
+$$. Se on kymmeniä gigawattitunteja, ja se sopii yhden tuulivoimalan kokoon.
 
 ## fy2-6-L1-02
 **Annettu:** teho $P = 120\,\text{MW}$, aika $t = 8{,}0\,\text{h}$
@@ -16,7 +20,9 @@
 **Muunnokset:** Ei tarvita: teho on megawatteina ja aika tunteina, joten tulo on suoraan megawattitunteina.
 **Sijoitus:** $E = 120\,\text{MW} \cdot 8{,}0\,\text{h} = 960\,\text{MWh}$
 **Vastaus:** $960\,\text{MWh}$, kaksi merkitsevää numeroa kuten ajassa $8{,}0\,\text{h}$ ja tehossa $120\,\text{MW}$.
-**Järkevyys:** Kahdeksan tuntia on kolmasosa vuorokaudesta, joten energia on kolmasosa vuorokauden energiasta $120\,\text{MW} \cdot 24\,\text{h} = 2880\,\text{MWh}$, ja $2880 : 3 = 960$.
+**Järkevyys:** Kahdeksan tuntia on kolmasosa vuorokaudesta, joten energia on kolmasosa vuorokauden energiasta $$
+120\,\text{MW} \cdot 24\,\text{h} = 2880\,\text{MWh}
+$$, ja $2880 : 3 = 960$.
 
 ## fy2-6-L1-03
 **Annettu:** teho $P = 1{,}6\,\text{GW}$, aika $t = 24\,\text{h}$
@@ -82,7 +88,12 @@ eli $E = 8{,}67 \cdot 10^{6}\,\text{kWh}$.
 Talojen määrä on $8{,}67 \cdot 10^{6}\,\text{kWh} : 5000\,\text{kWh}$,
 eli noin $1700$. Lähin vaihtoehto on siis $2000$ taloa.
 
-Arvio pyöreillä luvuilla: keskiteho on noin $1\,\text{MW}$. Vuosienergia on silloin noin $1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}$, ja $9 \cdot 10^{6} : 5000 \approx 2000$.
+Arvio pyöreillä luvuilla: keskiteho on noin $1\,\text{MW}$. Vuosienergia on silloin noin $$
+\begin{aligned}
+&1000\,\text{kW} \cdot 9000\,\text{h} \\
+&= 9 \cdot 10^{6}\,\text{kWh}
+\end{aligned}
+$$, ja $9 \cdot 10^{6} : 5000 \approx 2000$.
 
 Muut vaihtoehdot: $2$ taloa tulee, kun megawattitunnit ja kilowattitunnit jaetaan keskenään muuntamatta. Silloin luku on tuhat kertaa liian pieni. $200$ taloa tulee, kun osuus $33\,\%$ luetaan väärin kymmenesosaksi. $5000$ taloa tulee, kun keskitehon sijaan käytetään nimellistehoa: $3{,}0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh}$, mikä on noin $5300$. Se on väärin, koska tuuli ei puhalla koko ajan. Siksi energia lasketaan keskiteholla.
 
@@ -114,7 +125,9 @@ Muut vaihtoehdot: $2$ taloa tulee, kun megawattitunnit ja kilowattitunnit jaetaa
 **Muunnokset:** $31\,\text{TWh} = 31 \cdot 10^{9}\,\text{kWh}$ ja $12\,\text{GWh} = 12 \cdot 10^{6}\,\text{kWh}$.
 **Sijoitus:** $N = 31 \cdot 10^{9}\,\text{kWh} : (12 \cdot 10^{6}\,\text{kWh}) = 2583$
 **Vastaus:** $2600$ tuulivoimalaa, kaksi merkitsevää numeroa kuten tuulivoimalan energiassa $12\,\text{GWh}$.
-**Järkevyys:** Arvio: $30\,000\,\text{GWh} : 12\,\text{GWh} = 2500$. Lukumäärä on tuhansia. Yksi tuulivoimala tuottaa vuodessa vain noin $0{,}012\,\text{TWh}$, mutta ydinvoima tuottaa kolmekymmentä teravattituntia.
+**Järkevyys:** Arvio: $$
+30\,000\,\text{GWh} : 12\,\text{GWh} = 2500
+$$. Lukumäärä on tuhansia. Yksi tuulivoimala tuottaa vuodessa vain noin $0{,}012\,\text{TWh}$, mutta ydinvoima tuottaa kolmekymmentä teravattituntia.
 
 ## fy2-6-L2-04
 **Annettu:** teho $P = 1{,}6\,\text{GW}$, aika $t = 8760\,\text{h}$, yhden kotitalouden kulutus $5000\,\text{kWh}$
@@ -122,7 +135,15 @@ Muut vaihtoehdot: $2$ taloa tulee, kun megawattitunnit ja kilowattitunnit jaetaa
 **Periaate:** Ensin lasketaan laitoksen vuosienergia kaavalla $E = P t$, koska teho on vakio. Sitten energia jaetaan yhden kotitalouden kulutuksella.
 **Kaava:** $N = \dfrac{P t}{E_\text{koti}}$
 **Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$. Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
-**Sijoitus:** $N = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh} = 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh} = 2\,803\,200$
+**Sijoitus:** $$
+\begin{aligned}
+N &= 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} \\
+&: 5000\,\text{kWh} \\
+&= 14\,016\,000\,000\,\text{kWh} \\
+&: 5000\,\text{kWh} \\
+&= 2\,803\,200
+\end{aligned}
+$$
 **Vastaus:** $2{,}8$ miljoonaa kotitaloutta, kaksi merkitsevää numeroa kuten tehossa $1{,}6\,\text{GW}$.
 **Järkevyys:** Tulos on samaa suuruusluokkaa kuin Suomen kotitalouksien lukumäärä (noin $2{,}86$ miljoonaa vuonna 2024, Tilastokeskus). Yksi laitos ei silti kata koko maan sähköä. Teollisuus ja palvelut käyttävät suuren osan sähköstä.
 
@@ -132,9 +153,44 @@ Muut vaihtoehdot: $2$ taloa tulee, kun megawattitunnit ja kilowattitunnit jaetaa
 **Periaate:** Osuus on lähteen energia jaettuna kokonaisenergialla. Siksi lasketaan ensin kokonaistuotanto yhteenlaskulla. Osuuden muutos on toisen vuoden osuus miinus ensimmäisen vuoden osuus.
 **Kaava:** $o = \dfrac{E_\text{tuuli}}{E_\text{yht}}$ ja $\Delta o = o_2 - o_1$
 **Muunnokset:** Ei tarvita: kaikki energiat ovat teravattitunteina. Osuus muutetaan prosenteiksi kertomalla sadalla.
-**Sijoitus:** Kokonaistuotanto on ensimmäisenä vuonna $22{,}0 + 16{,}0 + 1{,}5 + 28{,}5 = 68{,}0\,\text{TWh}$ ja toisena $32{,}0 + 14{,}0 + 20{,}0 + 14{,}0 = 80{,}0\,\text{TWh}$. Tuulivoiman osuudet ovat $o_1 = 1{,}5 : 68{,}0 = 0{,}0221 = 2{,}2\,\%$ ja $o_2 = 20{,}0 : 80{,}0 = 0{,}250 = 25\,\%$. Muutos on $\Delta o = 25{,}0\,\% - 2{,}2\,\% = 22{,}8$ prosenttiyksikköä.
-**Vastaus:** Tuulivoiman osuus kasvoi $23$ prosenttiyksikköä (laskettu arvo $22{,}8$; $2{,}2\,\%$:sta $25\,\%$:iin), kaksi merkitsevää numeroa kuten tuulivoiman energiassa $1{,}5\,\text{TWh}$. Eniten väheni polttoaineita käyttävä lämpövoima: $28{,}5\,\text{TWh} - 14{,}0\,\text{TWh} = 14{,}5\,\text{TWh}$. Tuotanto siirtyi polttoaineista tuuleen ja ydinvoimaan. Päästöjä aiheuttavan tuotannon osuus pieneni. Samalla sääriippuvaisen tuotannon osuus kasvoi, joten säätövoiman tarve kasvoi.
-**Järkevyys:** Osuuksien summan pitää olla sata prosenttia. Toisena vuonna $32{,}0 : 80{,}0 + 14{,}0 : 80{,}0 + 20{,}0 : 80{,}0 + 14{,}0 : 80{,}0 = 0{,}40 + 0{,}175 + 0{,}25 + 0{,}175 = 1{,}00$. Tuulivoiman energia kasvoi noin $20{,}0 : 1{,}5 \approx 13$-kertaiseksi. Siksi osuuden kasvu kymmeniä prosenttiyksikköjä on uskottava.
+**Sijoitus:** Kokonaistuotanto on ensimmäisenä vuonna $$
+\begin{aligned}
+&22{,}0 + 16{,}0 + 1{,}5 + 28{,}5 \\
+&= 68{,}0\,\text{TWh}
+\end{aligned}
+$$ ja toisena $$
+\begin{aligned}
+&32{,}0 + 14{,}0 + 20{,}0 + 14{,}0 \\
+&= 80{,}0\,\text{TWh}
+\end{aligned}
+$$. Tuulivoiman osuudet ovat $$
+\begin{aligned}
+o_1 &= 1{,}5 : 68{,}0 \\
+&= 0{,}0221 \\
+&= 2{,}2\,\%
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+o_2 &= 20{,}0 : 80{,}0 \\
+&= 0{,}250 \\
+&= 25\,\%
+\end{aligned}
+$$. Muutos on $\Delta o = 25{,}0\,\% - 2{,}2\,\% = 22{,}8$ prosenttiyksikköä.
+**Vastaus:** Tuulivoiman osuus kasvoi $23$ prosenttiyksikköä (laskettu arvo $22{,}8$; $2{,}2\,\%$:sta $25\,\%$:iin), kaksi merkitsevää numeroa kuten tuulivoiman energiassa $1{,}5\,\text{TWh}$. Eniten väheni polttoaineita käyttävä lämpövoima: $$
+\begin{aligned}
+&28{,}5\,\text{TWh} - 14{,}0\,\text{TWh} \\
+&= 14{,}5\,\text{TWh}
+\end{aligned}
+$$. Tuotanto siirtyi polttoaineista tuuleen ja ydinvoimaan. Päästöjä aiheuttavan tuotannon osuus pieneni. Samalla sääriippuvaisen tuotannon osuus kasvoi, joten säätövoiman tarve kasvoi.
+**Järkevyys:** Osuuksien summan pitää olla sata prosenttia. Toisena vuonna $$
+\begin{aligned}
+&32{,}0 : 80{,}0 + 14{,}0 : 80{,}0 \\
+&+ 20{,}0 : 80{,}0 + 14{,}0 : 80{,}0 \\
+&= 0{,}40 + 0{,}175 + 0{,}25 \\
+&+ 0{,}175 \\
+&= 1{,}00
+\end{aligned}
+$$. Tuulivoiman energia kasvoi noin $20{,}0 : 1{,}5 \approx 13$-kertaiseksi. Siksi osuuden kasvu kymmeniä prosenttiyksikköjä on uskottava.
 
 ## fy2-6-L2-06
 **Annettu:** puistot A $30\,\text{MW}$, $84\,\text{GWh}$; B $60\,\text{MW}$, $150\,\text{GWh}$; C $12\,\text{MW}$, $35\,\text{GWh}$; vuosi $8760\,\text{h}$
@@ -165,7 +221,16 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 **Periaate:** Päästö on päästökerroin kerrottuna tuotetulla energialla. Säästö on kivihiilen ja tuulivoiman päästöjen erotus, koska energia on molemmissa sama.
 **Kaava:** $\Delta m = (k_\text{hiili} - k_\text{tuuli})\, E$
 **Muunnokset:** $2{,}0\,\text{TWh} = 2{,}0 \cdot 10^{9}\,\text{kWh}$. Lopuksi grammat tonneiksi: $1{,}616 \cdot 10^{12}\,\text{g} = 1{,}616 \cdot 10^{12} : 10^{6}\,\text{t} = 1{,}616 \cdot 10^{6}\,\text{t}$.
-**Sijoitus:** $\Delta m = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 808\,\text{g/kWh} \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 1{,}616 \cdot 10^{12}\,\text{g} = 1{,}616 \cdot 10^{6}\,\text{t}$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta m &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&\cdot 2{,}0 \cdot 10^{9}\,\text{kWh} \\
+&= 808\,\text{g/kWh} \cdot 2{,}0 \\
+&\cdot 10^{9}\,\text{kWh} \\
+&= 1{,}616 \cdot 10^{12}\,\text{g} \\
+&= 1{,}616 \cdot 10^{6}\,\text{t}
+\end{aligned}
+$$
 **Vastaus:** Noin $1{,}6$ miljoonaa tonnia hiilidioksidiekvivalenttia vuodessa, kaksi merkitsevää numeroa kuten energiassa $2{,}0\,\text{TWh}$. Päästöjen ja käyttöiän perusteella paras valinta on ydinvoima. Sen päästökerroin $12\,\text{g/kWh}$ on pienin (yhtä pieni kuin tuulivoimalla), ja käyttöikä $60\,\text{a}$ on pisin. Taulukko ei kerro tehon säädettävyyttä, kustannuksia, sääriippuvuutta, maankäyttöä eikä jätteitä. Ne kaikki vaikuttavat valintaan. Esimerkiksi tuulivoima ja aurinkosähkö ovat sääriippuvaisia ja tarvitsevat säätövoimaa.
 **Järkevyys:** Kivihiilen päästöt ovat $820 : 12 \approx 68$ kertaa tuulivoiman päästöt. Siksi lähes koko kivihiilen päästö säästyy: $820\,\text{g/kWh} \cdot 2{,}0 \cdot 10^{9}\,\text{kWh} = 1{,}64 \cdot 10^{6}\,\text{t}$, ja $1{,}616 : 1{,}64 = 0{,}99$.
 
@@ -173,9 +238,17 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 **Annettu:** kulutus $11\,\text{GW}$, ydinvoima $3{,}5\,\text{GW}$, tuulivoiman nimellisteho $9{,}0\,\text{GW}$ ja toteutunut teho $4{,}0\,\%$ siitä
 **Kysytty:** muiden voimaloiden ja tuonnin tuotettava teho $P_\text{muut}$ gigawatteina
 **Periaate:** Sähköverkossa tuotannon ja kulutuksen on oltava yhtä suuret joka hetki. Puuttuva teho on siis kulutus miinus sääriippuvan ja tasaisen tuotannon teho.
-**Kaava:** $P_\text{muut} = P_\text{kulutus} - P_\text{ydin} - 0{,}040 \cdot P_\text{tuuli,nim}$
+**Kaava:** $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} - P_\text{ydin} \\ &- 0{,}040 \cdot P_\text{tuuli,nim} \end{aligned} $$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina. Prosentti on $4{,}0\,\% = 0{,}040$.
-**Sijoitus:** $P_\text{muut} = 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}040 \cdot 9{,}0\,\text{GW} = 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}36\,\text{GW} = 7{,}14\,\text{GW}$
+**Sijoitus:** $$
+\begin{aligned}
+P_\text{muut} &= 11\,\text{GW} - 3{,}5\,\text{GW} \\
+&- 0{,}040 \cdot 9{,}0\,\text{GW} \\
+&= 11\,\text{GW} - 3{,}5\,\text{GW} \\
+&- 0{,}36\,\text{GW} \\
+&= 7{,}14\,\text{GW}
+\end{aligned}
+$$
 **Vastaus:** $7{,}1\,\text{GW}$, kaksi merkitsevää numeroa kuten tuulivoiman nimellistehossa $9{,}0\,\text{GW}$.
 **Järkevyys:** Heikolla tuulella tuulivoima kattaa vain noin $0{,}36 : 11 \approx 3\,\%$ kulutuksesta. Suurin osa puuttuvasta tehosta on siis tuotettava säädettävästi: vesivoimalla, polttoaineilla tai tuonnilla. Siksi sääriippuvainen tuotanto tarvitsee rinnalleen säädettävää tuotantoa.
 
@@ -187,7 +260,17 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 **Muunnokset:** Ei tarvita: nimellisteho ja aika supistuvat pois.
 **Sijoitus:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = 0{,}90 : 0{,}33 = 2{,}727$
 **Vastaus:** $2{,}7$ kertaa, kaksi merkitsevää numeroa kuten osuuksissa $0{,}90$ ja $0{,}33$.
-**Järkevyys:** Tarkistus vuosienergioilla: ydinvoima $0{,}90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 4{,}7\,\text{TWh}$ ja tuulipuisto $0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 1{,}7\,\text{TWh}$, ja $4{,}7 : 1{,}7 \approx 2{,}7$. Sama nimellisteho ei siis tarkoita samaa vuosienergiaa.
+**Järkevyys:** Tarkistus vuosienergioilla: ydinvoima $$
+\begin{aligned}
+&0{,}90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \\
+&\approx 4{,}7\,\text{TWh}
+\end{aligned}
+$$ ja tuulipuisto $$
+\begin{aligned}
+&0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \\
+&\approx 1{,}7\,\text{TWh}
+\end{aligned}
+$$, ja $4{,}7 : 1{,}7 \approx 2{,}8$. Sama nimellisteho ei siis tarkoita samaa vuosienergiaa.
 
 ## fy2-6-L3-03
 **Annettu:** Olkiluoto 3:n nimellisteho $P_\text{O} = 1600\,\text{MW}$ ja keskiteho $90\,\%$ siitä, aurinkopuiston keskiteho $11\,\%$ nimellistehosta, molemmille sama aika $t$ (vuosi)
@@ -203,10 +286,21 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 **Annettu:** tuulivoiman nimellisteho $P_\text{nim} = 9{,}0\,\text{GW}$, ydinvoima $P_\text{ydin} = 3{,}5\,\text{GW}$ koko viikon, päiväkohtaiset $P_\text{tuuli}$ ja $P_\text{kulutus}$ taulukosta, viikko $168\,\text{h}$
 **Kysytty:** a) tuulivoiman viikon energia ja keskiteho osuutena nimellistehosta; b) muiden voimaloiden ja tuonnin päiväkohtainen teho, sen suurin arvo; c) mitä vaihtelu vaatii järjestelmältä
 **Periaate:** Verkossa tuotannon pitää vastata kulutusta joka hetki. Siksi muiden pitää tuottaa kulutus miinus ydin- ja tuulivoima. Tuulivoiman viikon energia on päivien tehojen summa kerrottuna vuorokauden pituudella, koska teho on kunakin päivänä keskimäärin vakio.
-**Kaava:** $E_\text{tuuli} = \left(\sum P_\text{tuuli}\right) \Delta t_\text{päivä}$, $P_\text{ka} = \dfrac{E_\text{tuuli}}{\Delta t_\text{viikko}}$ ja $P_\text{muut} = P_\text{kulutus} - P_\text{ydin} - P_\text{tuuli}$
+**Kaava:** $E_\text{tuuli} = \left(\sum P_\text{tuuli}\right) \Delta t_\text{päivä}$, $P_\text{ka} = \dfrac{E_\text{tuuli}}{\Delta t_\text{viikko}}$ ja $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} \\ &- P_\text{ydin} - P_\text{tuuli} \end{aligned} $$
 **Muunnokset:** Ei tarvita: tehot ovat gigawatteina ja energia lasketaan gigawattitunteina. Viikossa on $7 \cdot 24\,\text{h} = 168\,\text{h}$.
-**Sijoitus:** a) Tuulivoiman päiväkohtaisten tehojen summa on $4{,}8 + 3{,}1 + 0{,}6 + 0{,}4 + 1{,}9 + 4{,}2 + 5{,}4 = 20{,}4\,\text{GW}$, joten $E_\text{tuuli} = (\Sigma P_\text{tuuli}) \cdot 24\,\text{h} = 20{,}4\,\text{GW} \cdot 24\,\text{h} = 489{,}6\,\text{GWh}$. Keskiteho on $P_\text{ka} = 489{,}6\,\text{GWh} : 168\,\text{h} = 2{,}91\,\text{GW}$ ja osuus nimellistehosta $2{,}91 : 9{,}0 = 0{,}32$ eli $32\,\%$.
-b) Muiden teho on $P_\text{muut} = P_\text{kulutus} - 3{,}5\,\text{GW} - P_\text{tuuli}$, gigawatteina:
+**Sijoitus:** a) Tuulivoiman päiväkohtaisten tehojen summa on $$
+\begin{aligned}
+&4{,}8 + 3{,}1 + 0{,}6 + 0{,}4 + 1{,}9 \\
+&+ 4{,}2 + 5{,}4 \\
+&= 20{,}4\,\text{GW}
+\end{aligned}
+$$, joten $E_\text{tuuli} = (\Sigma P_\text{tuuli}) \cdot 24\,\text{h} = 20{,}4\,\text{GW} \cdot 24\,\text{h} = 489{,}6\,\text{GWh}$. Keskiteho on $P_\text{ka} = 489{,}6\,\text{GWh} : 168\,\text{h} = 2{,}91\,\text{GW}$ ja osuus nimellistehosta $2{,}91 : 9{,}0 = 0{,}32$ eli $32\,\%$.
+b) Muiden teho on $$
+\begin{aligned}
+P_\text{muut} &= P_\text{kulutus} \\
+&- 3{,}5\,\text{GW} - P_\text{tuuli}
+\end{aligned}
+$$, gigawatteina:
 ```latex
 \begin{aligned}
 P_\text{ma} &= 9{,}5 - 3{,}5 - 4{,}8 = 1{,}2 \\
@@ -219,19 +313,64 @@ P_\text{su} &= 8{,}4 - 3{,}5 - 5{,}4 = -0{,}5
 \end{aligned}
 ```
 **Vastaus:** a) $490\,\text{GWh}$ ja $32\,\%$ nimellistehosta. b) Suurin tarve on torstaina, $6{,}7\,\text{GW}$, kaksi merkitsevää numeroa kuten tuulivoiman nimellistehossa $9{,}0\,\text{GW}$. c) Muun järjestelmän tehon pitää vaihdella paljon. Tarve oli torstaina $6{,}7\,\text{GW}$ ja lauantaina vain $1{,}0\,\text{GW}$. Arkipäivien ja lauantain välillä vaihtelu on siis $5{,}7\,\text{GW}$. Sunnuntai ($-0{,}5\,\text{GW}$) mukaan lukien vaihtelu on peräti $7{,}2\,\text{GW}$ muutamassa päivässä. Keskiviikkona ja torstaina tuuli tuotti vain noin $0{,}4$–$0{,}6\,\text{GW}$, vaikka nimellisteho on $9{,}0\,\text{GW}$. Nimellisteho ei siis takaa tuotantoa. Heikon tuulen päiville tarvitaan säädettävää tuotantoa (esimerkiksi vesivoimaa), tuontia tai energiavarastoja. Sunnuntaina tuotanto ylittää kulutuksen $0{,}5\,\text{GW}$:lla. Ylimääräinen sähkö pitää viedä maasta, varastoida tai tuotantoa pitää vähentää.
-**Järkevyys:** Päiväkohtaisten kulutustehojen summa on $9{,}5 + 9{,}8 + 10{,}2 + 10{,}6 + 10{,}1 + 8{,}7 + 8{,}4 = 67{,}3\,\text{GW}$. Kerrottuna luvulla $24\,\text{h}$ se antaa viikon kulutuksen $1615\,\text{GWh}$. Ydinvoima tuottaa $3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ ja tuulivoima $489{,}6\,\text{GWh}$. Muiden energia on siis $1615 - 588 - 490 = 537\,\text{GWh}$. Muiden päiväkohtaisten tehojen summa on $\Sigma P_\text{muut} = 1{,}2 + 3{,}2 + 6{,}1 + 6{,}7 + 4{,}7 + 1{,}0 - 0{,}5 = 22{,}4\,\text{GW}$. Kerrottuna luvulla $24\,\text{h}$ se on $538\,\text{GWh}$, joten laskut täsmäävät. Tuulivoima kattaa viikon kulutuksesta vain $490 : 1615 = 0{,}30$ eli $30\,\%$, vaikka sen nimellisteho on lähes yhtä suuri kuin kulutus.
+**Järkevyys:** Päiväkohtaisten kulutustehojen summa on $$
+\begin{aligned}
+&9{,}5 + 9{,}8 + 10{,}2 + 10{,}6 \\
+&+ 10{,}1 + 8{,}7 + 8{,}4 \\
+&= 67{,}3\,\text{GW}
+\end{aligned}
+$$. Kerrottuna luvulla $24\,\text{h}$ se antaa viikon kulutuksen $1615\,\text{GWh}$. Ydinvoima tuottaa $3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ ja tuulivoima $489{,}6\,\text{GWh}$. Muiden energia on siis $$
+\begin{aligned}
+&1615 - 588 - 490 \\
+&= 537\,\text{GWh}
+\end{aligned}
+$$. Muiden päiväkohtaisten tehojen summa on $$
+\begin{aligned}
+\Sigma P_\text{muut} &= 1{,}2 + 3{,}2 + 6{,}1 \\
+&+ 6{,}7 + 4{,}7 + 1{,}0 \\
+&- 0{,}5 \\
+&= 22{,}4\,\text{GW}
+\end{aligned}
+$$. Kerrottuna luvulla $24\,\text{h}$ se on $538\,\text{GWh}$, joten laskut täsmäävät. Tuulivoima kattaa viikon kulutuksesta vain $490 : 1615 = 0{,}30$ eli $30\,\%$, vaikka sen nimellisteho on lähes yhtä suuri kuin kulutus.
 
 ## fy2-6-L3-05
 **Annettu:** tuulipuisto $P_\text{nim} = 100\,\text{MW}$, keskiteho $33\,\%$, $K = 120$ milj. euroa, käyttöikä $25\,\text{a}$, $12\,\text{g/kWh}$; ydinvoimala $1200\,\text{MW}$, $90\,\%$, $K = 6000$ milj. euroa, $60\,\text{a}$, $12\,\text{g/kWh}$; vuosi $8760\,\text{h}$
 **Kysytty:** a) vuosienergiat; b) rakennuskustannus tuotettua megawattituntia kohti, tuulipuisto laatikkoon; c) elinkaaren päästöistä yhden vuoden tuotannolle kuuluva päästö hiilidioksidiekvivalentteina; d) perusteltu vertailu
 **Periaate:** Vuosienergia on keskiteho kerrottuna vuoden pituudella. Keskiteho on osuus nimellistehosta. Energia koko käyttöiältä on vuosienergia kerrottuna käyttöiällä. Kustannus energiaa kohti on rakennuskustannus jaettuna käyttöiän energialla. Päästö on päästökerroin kerrottuna energialla.
 **Kaava:** $E_\text{v} = o\, P_\text{nim}\, t$, $E_\text{kok} = E_\text{v} \cdot a$ ja $k = \dfrac{K}{E_\text{kok}}$
-**Muunnokset:** $120\,\text{milj. euroa} = 120 \cdot 10^{6}\,\text{euroa}$ ja $6000\,\text{milj. euroa} = 6000 \cdot 10^{6}\,\text{euroa}$. Päästöissä $1\,\text{MWh} = 1000\,\text{kWh}$ ja $1\,\text{t} = 10^{6}\,\text{g}$.
+**Muunnokset:** $$
+\begin{aligned}
+&120\,\text{milj. euroa} \\
+&= 120 \cdot 10^{6}\,\text{euroa}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+&6000\,\text{milj. euroa} \\
+&= 6000 \cdot 10^{6}\,\text{euroa}
+\end{aligned}
+$$. Päästöissä $1\,\text{MWh} = 1000\,\text{kWh}$ ja $1\,\text{t} = 10^{6}\,\text{g}$.
 **Sijoitus:** a) Tuulipuisto: $E_\text{v} = 0{,}33 \cdot 100\,\text{MW} \cdot 8760\,\text{h} = 289\,080\,\text{MWh}$. Ydinvoimala: $E_\text{v} = 0{,}90 \cdot 1200\,\text{MW} \cdot 8760\,\text{h} = 9\,460\,800\,\text{MWh}$.
-b) Tuulipuisto: $E_\text{kok} = 289\,080\,\text{MWh} \cdot 25 = 7\,227\,000\,\text{MWh}$ ja $k = 120 \cdot 10^{6}\,\text{euroa} : 7\,227\,000\,\text{MWh} = 16{,}6\,\text{euroa/MWh}$. Ydinvoimala: $E_\text{kok} = 9\,460\,800\,\text{MWh} \cdot 60 = 567\,648\,000\,\text{MWh}$ ja $k = 6000 \cdot 10^{6}\,\text{euroa} : 567\,648\,000\,\text{MWh} = 10{,}6\,\text{euroa/MWh}$.
+b) Tuulipuisto: $E_\text{kok} = 289\,080\,\text{MWh} \cdot 25 = 7\,227\,000\,\text{MWh}$ ja $$
+\begin{aligned}
+k &= 120 \cdot 10^{6}\,\text{euroa} \\
+&: 7\,227\,000\,\text{MWh} \\
+&= 16{,}6\,\text{euroa/MWh}
+\end{aligned}
+$$. Ydinvoimala: $E_\text{kok} = 9\,460\,800\,\text{MWh} \cdot 60 = 567\,648\,000\,\text{MWh}$ ja $$
+\begin{aligned}
+k &= 6000 \cdot 10^{6}\,\text{euroa} \\
+&: 567\,648\,000\,\text{MWh} \\
+&= 10{,}6\,\text{euroa/MWh}
+\end{aligned}
+$$.
 c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdot 10^{9}\,\text{g} = 3469\,\text{t}$. Ydinvoimala: $9\,460\,800\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 1{,}135 \cdot 10^{11}\,\text{g} = 113\,500\,\text{t}$.
 **Vastaus:** Tuulipuiston rakennuskustannus on $17\,\text{euroa/MWh}$ (laskettu arvo $16{,}6$; kaksi merkitsevää numeroa kuten osuudessa $33\,\%$) ja ydinvoimalan $11\,\text{euroa/MWh}$. Vuosienergiat ovat $2{,}9 \cdot 10^{5}\,\text{MWh}$ ja $9{,}5 \cdot 10^{6}\,\text{MWh}$. Vuoden tuotannolle kuuluvat elinkaaripäästöt ovat noin $3500\,\text{t}$ ja $114\,000\,\text{t}$. Päästöt energiaa kohti ovat samat ($12\,\text{g/kWh}$). Ydinvoimalan suuret vuosipäästöt johtuvat siis vain suuresta tuotannosta. Tässä aineistossa rakennuskustannus energiaa kohti on ydinvoimalla pienempi, koska se tuottaa suuremmalla osuudella nimellistehosta ja kauemmin. Ydinvoima on tasaista perusvoimaa, mutta sen tehoa ei voi säätää nopeasti, ja siihen liittyy ydinjäte. Tuulivoima on sääriippuvaista, joten se tarvitsee rinnalleen säätövoimaa tai varastoja. Perusteltu suositus on yhdistelmä. Päästöjen perusteella kumpikin kelpaa. Kustannuksen perusteella ydinvoima on edullisempi. Sääriippuvainen tuulivoima sopii täydentämään sitä, kun säätövoimaa on riittävästi. Suositus perustuu kuitenkin vain tähän esimerkkiaineistoon ja pelkkään rakennuskustannukseen.
-**Järkevyys:** Ydinvoimala tuottaa vuodessa $9\,460\,800 : 289\,080 \approx 33$ kertaa enemmän kuin tuulipuisto. Päästöt ovat $113\,500 : 3469 \approx 33$ kertaa suuremmat. Se vastaa tuotannon suhdetta, koska päästökerroin on kummallakin sama $12\,\text{g/kWh}$. Jos tuulipuisto toimisi koko vuoden täydellä teholla, se tuottaisi $100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}$. Lasku $289\,080 : 876\,000 = 0{,}33$.
+**Järkevyys:** Ydinvoimala tuottaa vuodessa $9\,460\,800 : 289\,080 \approx 33$ kertaa enemmän kuin tuulipuisto. Päästöt ovat $113\,500 : 3469 \approx 33$ kertaa suuremmat. Se vastaa tuotannon suhdetta, koska päästökerroin on kummallakin sama $12\,\text{g/kWh}$. Jos tuulipuisto toimisi koko vuoden täydellä teholla, se tuottaisi $$
+\begin{aligned}
+&100\,\text{MW} \cdot 8760\,\text{h} \\
+&= 876\,000\,\text{MWh}
+\end{aligned}
+$$. Lasku $289\,080 : 876\,000 = 0{,}33$.
 
 ## fy2-6-L1-10
 **Annettu:** teho $P = 2{,}0\,\text{MW}$, aika $t = 1\,\text{h}$; jyrsinturpeen lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
@@ -252,4 +391,9 @@ c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdo
 **Muunnokset:** $20{,}2\,\text{TWh} = 20\,200\,\text{GWh}$, koska $1\,\text{TWh} = 1000\,\text{GWh}$.
 **Sijoitus:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2{,}30\,\text{GW}$
 **Vastaus:** $P \approx 2{,}30\,\text{GW}$, kolme merkitsevää numeroa kuten luetussa tuotannossa $20{,}2\,\text{TWh}$.
-**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Luvun mallin mukaan tuulivoimalan keskiteho on noin kolmasosa nimellistehosta. Siis yhteenlaskettu nimellisteho on noin $3 \cdot 2{,}30\,\text{GW} \approx 6{,}9\,\text{GW}$. Se vastaa noin $1400$:aa voimalaa, joiden nimellisteho on $5\,\text{MW}$. Se on tuhansien voimaloiden suuruusluokkaa.
+**Järkevyys:** Tarkistus: $$
+\begin{aligned}
+&2{,}30\,\text{GW} \cdot 8784\,\text{h} \\
+&\approx 20\,200\,\text{GWh}
+\end{aligned}
+$$. Luvun mallin mukaan tuulivoimalan keskiteho on noin kolmasosa nimellistehosta. Siis yhteenlaskettu nimellisteho on noin $3 \cdot 2{,}30\,\text{GW} \approx 6{,}9\,\text{GW}$. Se vastaa noin $1400$:aa voimalaa, joiden nimellisteho on $5\,\text{MW}$. Se on tuhansien voimaloiden suuruusluokkaa.

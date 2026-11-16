@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cad77fce5d9ca1ca
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 2e773a4efb287773
 
 ## Blocking
 - none
@@ -9,6 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- irradianssi used consistently (lesson, summary, inquiry, glossary, lang/fi.json label 'Irradianssi $G$'); no 'valon voimakkuus' left in fi lesson, exercises, inquiry, figures.py, sim-spec; LED current-limiting paragraph and summary bullet; aria-labels of figures kenno and teho (figures.py and lesson.md match, units and values unchanged, 'kahdella irradianssilla' reads correctly).
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
-- Round 2: inquiry.json tarkistus-3 model sentence "LED ei rajoita virtaansa samalla tavalla, joten sen virtaa on rajoitettava kytkennällä." is fluent, fits the surrounding text and the lesson wording.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-14-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

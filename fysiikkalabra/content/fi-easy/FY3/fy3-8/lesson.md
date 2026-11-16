@@ -282,7 +282,7 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta l$ tulee metreinä. Lopuksi muutetaan tulos millimetreiksi: $1\,\text{m} = 1000\,\text{mm}$.
+**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $$\begin{aligned} &\Delta T \\ &= 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) \\ &= 60\,\text{K} \end{aligned}$$. Pituudet ovat metreinä, joten $\Delta l$ tulee metreinä. Lopuksi muutetaan tulos millimetreiksi: $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 

@@ -151,7 +151,7 @@
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and slope $a = \dfrac{\lambda}{d}$, so $\lambda = a\,d$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$ and finally $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\lambda = 0.06337 \cdot 1.00 \cdot 10^{-5}\,\text{m} = 6.337 \cdot 10^{-7}\,\text{m} = 633.7\,\text{nm}$
-**Answer:** $634\,\text{nm}$, three significant figures like the distance $L$. The wavelength of red light is usually about $630$–$650\,\text{nm}$, so the result fits.
+**Answer:** $634\,\text{nm}$, three significant figures like the distance $L$. The wavelength of a red laser is usually about $630$–$650\,\text{nm}$, so the result fits.
 **Reasonableness:** A single point gives the same order of magnitude: $k = 8$ gives $\lambda = 0.5081 \cdot 10.0\,\mu\text{m} : 8 = 635\,\text{nm}$. For the most distant maximum the same measurement error in $x_k$ is a smaller part, so fitting a line to the whole data set confirms the result.
 
 ## fy7-13-L2-06
@@ -165,9 +165,9 @@
 **Reasonableness:** At the angle $18.6^\circ$ the tangent is larger than the sine: $\tan\theta : \sin\theta = 0.337 : 0.3193 = 1.055$, so the student's result is $5.5\,\%$ too large. The correct result $532\,\text{nm}$ matches the stated wavelength of a green laser. The error grows with the angle.
 
 ## fy7-13-L2-07
-**Find:** which change reduces the relative error of the wavelength when the reading error $\Delta x$ is always the same
-**Principle:** The wavelength is calculated from the distance $x$, and the relative error is approximately $\Delta x : x$. When $\Delta x$ stays the same, the error is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
-**Model answer:** The relative error decreases when a more distant maximum is measured: the same reading error is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the error grows. A sparser grating makes the angles and so $x$ smaller, so the relative error grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
+**Find:** which change reduces the relative uncertainty of the wavelength when the reading uncertainty $\Delta x$ is always the same
+**Principle:** The wavelength is calculated from the distance $x$, and the relative uncertainty is approximately $\Delta x : x$. When $\Delta x$ stays the same, the uncertainty is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
+**Model answer:** The relative uncertainty decreases when a more distant maximum is measured: the same reading uncertainty is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the uncertainty grows. A sparser grating makes the angles and so $x$ smaller, so the relative uncertainty grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
 
 ## fy7-13-L2-08
 **Find:** how the distance $x$ of the first-order maximum from the central maximum changes when the grating is replaced with a denser one and the screen is moved closer.
@@ -202,7 +202,7 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $\lambda = \dfrac{d\sin\theta}{k}$ and $x_k = L\tan\theta_k$
 **Conversions:** $d = 0.250\,\text{mm} = 2.50 \cdot 10^{-4}\,\text{m}$ and $x_1 = 5.0\,\text{mm} = 5.0 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** a) $\theta_1 = \tan^{-1}\dfrac{5.0 \cdot 10^{-3}\,\text{m}}{2.00\,\text{m}} = \tan^{-1} 0.00250 = 0.143^\circ$ and $\lambda = 2.50 \cdot 10^{-4}\,\text{m} \cdot \sin 0.143^\circ = 2.50 \cdot 10^{-4}\,\text{m} \cdot 0.00250 = 6.25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$. b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2.50 \cdot 10^{-4}\,\text{m}} = 0.00500$, so $x_2 = 2.00\,\text{m} \cdot \tan 0.2865^\circ = 0.0100\,\text{m} = 10.0\,\text{mm}$; in the table the peak $I = 1.00$ is exactly at this position. c) The first maximum of the grating appears at the same position, $x_1 = 5.0\,\text{mm}$.
-**Answer:** $625\,\text{nm}$, three significant figures like the slit separation and the distance. The second-order maximum is at $10.0\,\text{mm}$, which fits the table. The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
+**Answer:** $\lambda \approx 6.3 \cdot 10^2\,\text{nm}$ (calculated value $625\,\text{nm}$), two significant figures, because the position of the maximum read from the table, $x_1 = 5.0\,\text{mm}$, has two. The second-order maximum is at $10.0\,\text{mm}$, which fits the table. The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
 **Reasonableness:** The wavelength $625\,\text{nm}$ is orange-red light. The spacing of the maxima is $5.0\,\text{mm}$, so the minima are at $2.5\,\text{mm}$ and $7.5\,\text{mm}$, and in the table the intensity is $0.00$ there. A grating spacing of $0.250\,\text{mm}$ means only $4$ lines per millimetre, so the grating of part c) is imaginary; the line density of a real grating is hundreds of lines per millimetre. The angle is small, so $\lambda \approx d x_1 : L = 625\,\text{nm}$.
 
 ## fy7-13-L3-05
@@ -245,4 +245,10 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Conversions:** $x = 17.8\,\text{cm} = 0.178\,\text{m}$, $700\,\text{nm} = 7.00 \cdot 10^{-7}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.178\,\text{m}}{1.00\,\text{m}} = 10.09^\circ$, $d = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{\sin 10.09^\circ} = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{0.1752} = 3.99 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3.99 \cdot 10^{-6}\,\text{m}} = 250$ lines per millimetre
 **Answer:** $250$ lines per millimetre, three significant figures like the distance $L$ and the read position.
-**Reasonableness:** Check with violet ($400\,\text{nm}$): $x = 1.00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4.00\,\mu\text{m}}\bigr) = 10.1\,\text{cm}$, and in the figure the inner edge is at about $10\,\text{cm}$. A grating with $250$ lines per millimetre is a common school grating.
+**Reasonableness:** Check with violet ($400\,\text{nm}$): $$
+\begin{aligned}
+x &= 1.00\,\text{m} \\
+&\cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4.00\,\mu\text{m}}\bigr) \\
+&= 10.1\,\text{cm}
+\end{aligned}
+$$, and in the figure the inner edge is at about $10\,\text{cm}$. A grating with $250$ lines per millimetre is a common school grating.

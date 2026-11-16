@@ -34,4 +34,6 @@ E_lo = 0.015 * 7 * 18 + 0.035 * 5 * 42 + 0.042 * 7 * 50 + 0.055 * 5 * 66   # los
 a["fy2-7-L3-05"] = E_lo / E_in * 100                  # 42,09 / 1016 = 4,14 %
 a["fy2-7-L1-09"] = 0.040 * 500 * 3.6                    # loss 4,0 % · 500 kWh = 20 kWh; MAFY (Yksikkömuunnoksia) 1 kWh = 3,6 MJ -> 72 MJ
 a["fy2-7-L2-09"] = 250 * (0.09 - 0.04)                  # shares read off fy2-7/sankey: district heating 9 %, grid 4 %: 22,5 - 10,0 = 12,5 MWh
+P_k, P_t, P_imp = 11603, 11341, 210                     # Fingrid 16.11.2026 klo 10.48: consumption, production, net import (MW)
+a["fy2-7-L2-10"] = P_k * 1 / 1000                       # E = P dt = 11 603 MW · 1 h = 11 603 MWh = 11,6 GWh (box: part b); a) 262 MW gap, 52 MW unexplained; d) wind 5571/11341 = 49,1 %, nuclear 2594/11341 = 22,9 %
 print(json.dumps(a))

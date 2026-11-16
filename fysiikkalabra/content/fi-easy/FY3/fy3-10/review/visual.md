@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 22d5a045d608c2a4
+CONTENT-HASH: 965e244a3ddef6a5
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] inquiry.json optional Sovella task "Kuumailmapallo" — the changed Järkevyys line ("$3360\,\text{kg} - 2640\,\text{kg}$ eli $720\,\text{kg}$ kevyempää") sits in a closed solution and no capture shows it open; judged from source: valid LaTeX, units upright with thin space, sentence reads correctly.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta: the single changed line (diff read). stage-sovella-390-2 and -3 (surrounding example and optional boxes: layout intact, nothing clipped, formulas aligned).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

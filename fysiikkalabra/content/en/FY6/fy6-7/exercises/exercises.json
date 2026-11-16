@@ -324,6 +324,38 @@
       "answer": 0.45,
       "unit": "€",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-7-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results\" target=\"_blank\" rel=\"noopener\">ENERGY STAR – Certified Residential Refrigerators</a> (the product finder of the ENERGY STAR programme of the US Environmental Protection Agency)\n\nHow much electricity does a refrigerator use? A product card in the database gives the type of the refrigerator (Type), its volume in cubic feet (Capacity (Total Volume)) and its annual electrical energy use in kilowatt-hours (Annual Energy Use). One cubic foot is $1\\,\\text{ft}^3 \\approx 28.3\\,\\textsf{l}$. The stated energy use is the result of a standard test, not a value measured in a home.\n\nChoose from the database two refrigerators that are as similar in size and type as possible but differ in their annual energy use. The filters Type and Capacity on the left help you narrow the search. The database is updated, so write down the models you chose and the date of your search. The table shows an example pair that was taken from the database on 15 November 2026. Both are refrigerator-freezers with the freezer on top (Top Freezer). If the database is not available, do parts a)–c) with the pair in the table.\n\na) Compare the stated annual energy uses of the appliances: how many kilowatt-hours and how many per cent more does one of them use in a year?\n\nb) Calculate the average electrical power of each refrigerator in watts.\n\nc) Calculate the electricity costs of the appliances over ten years when the total price of electricity is $0.20\\,\\text{€/kWh}$. How large is the difference between the costs?\n\nd) Explain why the calculated average electrical power is not the same thing as the momentary input power of the compressor, that is, the power the compressor draws from the mains while it runs.\n\nEnter in the answer box the average electrical power of model A in the table, in watts.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 39.269,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Example pair from the ENERGY STAR database on 15 November 2026",
+        "columns": [
+          "Model",
+          "$V\\,(\\text{ft}^3)$",
+          "$E\\,(\\text{kWh/a})$"
+        ],
+        "rows": [
+          [
+            "A: LG LT18S1100*",
+            "17.5",
+            "344"
+          ],
+          [
+            "B: LG LT18S1200*",
+            "17.5",
+            "440"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

@@ -86,7 +86,7 @@
     {
       "id": "fy3-10-L1-08",
       "level": 1,
-      "text": "Oppilas laskee kaasun ainemäärän. Paine on $150\\,\\text{kPa}$, tilavuus $0{,}0020\\,\\text{m}^3$ ja lämpötila $300\\,\\text{K}$. Hän kirjoittaa\n\n$n = \\dfrac{150 \\cdot 0{,}0020}{8{,}31 \\cdot 300} = 1{,}2 \\cdot 10^{-4}\\,\\text{mol}$\n\nTulos tuntuu oppilaasta pieneltä. Kahden litran kaasumäärässä on varmasti enemmän kuin tuhannesosa moolista. Mikä virhe laskussa on?",
+      "text": "Oppilas laskee kaasun ainemäärän. Paine on $150\\,\\text{kPa}$, tilavuus $0{,}0020\\,\\text{m}^3$ ja lämpötila $300\\,\\text{K}$. Hän kirjoittaa\n\n$$\\begin{aligned} n &= \\dfrac{150 \\cdot 0{,}0020}{8{,}31 \\cdot 300} \\\\ &= 1{,}2 \\cdot 10^{-4}\\,\\text{mol} \\end{aligned}$$\n\nTulos tuntuu oppilaasta pieneltä. Kahden litran kaasumäärässä on varmasti enemmän kuin tuhannesosa moolista. Mikä virhe laskussa on?",
       "kind": [
         "error",
         "concept"
@@ -317,7 +317,7 @@
       "choices": [
         {
           "text": "Rivi 1: paineen ja tilavuuden muunnokset",
-          "feedback": "Rivi 1 on oikein: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ ja $2{,}00\\,\\textsf{l} = 2{,}00\\,\\text{dm}^3 = 0{,}00200\\,\\text{m}^3$. Jos luulet riviä virheelliseksi, sekoitat litran ja kuutiometrin. Kuutiometrissä on $1000\\,\\textsf{l}$."
+          "feedback": "Rivi 1 on oikein: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ ja $$\\begin{aligned} 2{,}00\\,\\textsf{l} &= 2{,}00\\,\\text{dm}^3 \\\\ &= 0{,}00200\\,\\text{m}^3 \\end{aligned}$$. Jos luulet riviä virheelliseksi, sekoitat litran ja kuutiometrin. Kuutiometrissä on $1000\\,\\textsf{l}$."
         },
         {
           "text": "Rivi 2: tilanyhtälön ratkaiseminen",

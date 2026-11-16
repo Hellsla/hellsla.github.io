@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6add813177ef7122
+CONTENT-HASH: a33c7f3328ffbc31
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta since 8b7dd5d78: step 3 now says "the acceleration $a$" (not magnitude), consistent with step 2's assumed direction where $a$ may come out negative; with per-body positive directions fitted along the string, $a$ is the same for both bodies — correct.
-- Earlier round (unchanged): assumed-direction rule, negative solution = opposite acceleration, friction caveat (recheck the assumed direction) — correct; summary says the same.
-- Atwood formula, $m_1 g < T < m_2 g$, worked example and inquiry untouched and consistent.
+- The diff changes one clause in lesson.md: "koska lanka on kappaleiden välinen sisäinen voima" became "koska langan jännitysvoima on kappaleiden välinen sisäinen voima". A string is not a force, so the new wording is the correct one.
+- The physics holds: for the system of cart and weight the tension acts on the two bodies with equal magnitude and, along the string's direction of motion, in opposite senses, so it cancels when the two equations of motion are added. This rests on the massless string and frictionless pulley the section already assumes. (C)
+- The clause agrees with the equations around it: two unknowns $a$ and $T$, two equations, $T$ eliminated by adding, then $T$ solved. No number, symbol or formula changed.
+- Hash a33c7f3328ffbc31 at the start and at the end.

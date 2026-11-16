@@ -16,7 +16,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\text{kg} \cdot \text{m/s}^2 \cdot \text{m} = \text{J}$. Muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = 2{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 8{,}00\,\text{m} = 196{,}2\,\text{J}$
 **Vastaus:** $196\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa ja korkeudessa.
-**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $$\begin{aligned} &2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} \\ &= 200\,\text{J} \end{aligned}$$. Ruukun paino on noin $25\,\text{N}$, ja sen nostaminen kahdeksaan metriin vaatii muutaman sadan joulen energian. Tulos on positiivinen, koska ruukku on nollatason yläpuolella.
+**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 200\,\text{J}$. Ruukun paino on noin $25\,\text{N}$, ja sen nostaminen kahdeksaan metriin vaatii muutaman sadan joulen energian. Tulos on positiivinen, koska ruukku on nollatason yläpuolella.
 
 ## fy4-7-L1-03
 **Annettu:** massa $m = 1{,}20\,\text{kg}$, nopeus $v = 10{,}0\,\text{m/s}$, korkeus $h = 20{,}0\,\text{m}$ nollatason eli merenpinnan yläpuolella, $g = 9{,}81\,\text{m/s}^2$
@@ -24,7 +24,7 @@
 **Periaate:** Mekaaninen energia on liike-energian ja potentiaalienergian summa. Liike-energia lasketaan nopeudesta. Potentiaalienergia lasketaan korkeudesta merenpinnan yläpuolella.
 **Kaava:** $E_\text{mek} = E_\text{k} + E_\text{p}$, joten $E_\text{mek} = \tfrac{1}{2}\,mv^2 + m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten molemmat termit tulevat jouleina. Muunnoksia ei tarvita.
-**Sijoitus:** $$\begin{aligned} &E_\text{mek} \\ &= \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \\ &\cdot (10{,}0\,\text{m/s})^2 \\ &+ 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 20{,}0\,\text{m} \\ &= 60{,}0\,\text{J} + 235{,}4\,\text{J} \\ &\approx 295\,\text{J} \end{aligned}$$
+**Sijoitus:** $E_\text{mek} = \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \cdot (10{,}0\,\text{m/s})^2 + 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 20{,}0\,\text{m} = 60{,}0\,\text{J} + 235{,}4\,\text{J} \approx 295\,\text{J}$
 **Vastaus:** $295\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Lasketaan pyöristetyillä luvuilla: $60\,\text{J} + 1{,}2\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 20\,\text{m} = 60\,\text{J} + 240\,\text{J} = 300\,\text{J}$. Potentiaalienergia on suurempi kuin liike-energia, mikä sopii lokkiin, joka lentää korkealla mutta hitaasti.
 
@@ -74,7 +74,7 @@
 **Periaate:** Potentiaalienergiassa korkeus mitataan valitusta nollatasosta. Nollataso on pöydän pinta. Siksi korkeus on hyllyn ja pöydän korkeuksien erotus, ei hyllyn korkeus lattiasta.
 **Kaava:** $E_\text{p} = m g h$, missä $h = h_\text{hylly} - h_\text{pöytä}$. Siis $E_\text{p} = m g\,(h_\text{hylly} - h_\text{pöytä})$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $$\begin{aligned} &E_\text{p} \\ &= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot (1{,}90 - 0{,}75)\,\text{m} \\ &= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}15\,\text{m} \\ &\approx 13{,}5\,\text{J} \end{aligned}$$
+**Sijoitus:** $E_\text{p} = 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}90 - 0{,}75)\,\text{m} = 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}15\,\text{m} \approx 13{,}5\,\text{J}$
 **Vastaus:** $13{,}5\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa ja korkeuserossa $1{,}15\,\text{m}$.
 **Järkevyys:** Lattian suhteen potentiaalienergia olisi $1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}90\,\text{m} \approx 22{,}4\,\text{J}$. Pöydän suhteen se on pienempi, koska kirja on pöydän pinnasta matalammalla kuin lattiasta. Ero $8{,}8\,\text{J}$ on juuri pöydän korkeuden $0{,}75\,\text{m}$ osuus.
 
@@ -104,7 +104,7 @@
 **Periaate:** Potentiaalienergiaa varten tarvitaan punnuksen korkeus alimman kohdan yläpuolella. Punnus liikkuu ympyrän kaarella, jonka säde on langan pituus. Ripustuspisteestä mitattuna punnus on alimmillaan matkan $L$ alempana. Sivuun vedettynä se on matkan $L\cos\alpha$ alempana. Korkeus on näiden erotus.
 **Kaava:** $h = L - L\cos\alpha = L\,(1 - \cos\alpha)$ ja $E_\text{p} = m g h$, joten $E_\text{p} = m g L\,(1 - \cos\alpha)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Laskimen on oltava asteissa.
-**Sijoitus:** $h = 1{,}20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1{,}20\,\text{m} \cdot 0{,}2340 \approx 0{,}2808\,\text{m}$, joten $$\begin{aligned} &E_\text{p} \\ &= 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 0{,}2808\,\text{m} \\ &\approx 1{,}377\,\text{J} \end{aligned}$$
+**Sijoitus:** $h = 1{,}20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1{,}20\,\text{m} \cdot 0{,}2340 \approx 0{,}2808\,\text{m}$, joten $E_\text{p} = 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}2808\,\text{m} \approx 1{,}377\,\text{J}$
 **Vastaus:** $1{,}38\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa $0{,}500\,\text{kg}$ ja langan pituudessa $1{,}20\,\text{m}$.
 **Järkevyys:** Korkeus $0{,}28\,\text{m}$ on selvästi langan pituutta pienempi, kuten pitää, kun kulma on alle $90^\circ$; kulmalla $90^\circ$ korkeus olisi koko $1{,}20\,\text{m}$. Lasketaan pyöristetyillä luvuilla: $5\,\text{N} \cdot 0{,}28\,\text{m} \approx 1{,}4\,\text{J}$.
 
@@ -114,7 +114,7 @@
 **Periaate:** Ilman kitkaa ja ilmanvastusta mekaaninen energia pysyisi samana. Kitka ja ilmanvastus eivät ole konservatiivisia, ja ne muuttavat osan mekaanisesta energiasta sisäenergiaksi. Muuttunut määrä on mekaanisen energian väheneminen juurelta ylimpään kohtaan. Juurella on vain liike-energiaa ($h = 0$). Ylimmässä kohdassa on vain potentiaalienergiaa ($v = 0$).
 **Kaava:** $E_\text{muu} = E_\text{mek,1} - E_\text{mek,2}$, missä $E_\text{mek,1} = \tfrac{1}{2}\,mv^2$ ja $E_\text{mek,2} = m g h$. Siis $E_\text{muu} = \tfrac{1}{2}\,mv^2 - m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $$\begin{aligned} &m g h \\ &= 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 2{,}10\,\text{m} \\ &\approx 1133{,}1\,\text{J} \end{aligned}$$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
+**Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $m g h = 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}10\,\text{m} \approx 1133{,}1\,\text{J}$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
 **Vastaus:** $214\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Ilman kitkaa luistelija nousisi korkeudelle $\tfrac{v^2}{2g} = \tfrac{49\,\text{m}^2/\text{s}^2}{19{,}62\,\text{m/s}^2} \approx 2{,}50\,\text{m}$. Hän nousee $2{,}10\,\text{m}$ eli noin $16\,\%$ vähemmän, ja muuttunut energia $214\,\text{J}$ on noin $16\,\%$ alkuperäisestä $1347{,}5\,\text{J}$:sta. Tulos on positiivinen, koska kitka vain vähentää mekaanista energiaa.
 
@@ -131,7 +131,7 @@
 **Muunnokset:** $9{,}4\,\text{kJ} = 9{,}4 \cdot 1000\,\text{J} = 9400\,\text{J}$
 **Sijoitus:** $\Delta h = \dfrac{9400\,\text{J}}{80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{9400\,\text{J}}{784{,}8\,\text{N}} \approx 11{,}98\,\text{m}$
 **Vastaus:** $12\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa ja energiassa.
-**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} \approx 9{,}4\,\text{kJ}$. Noin $12\,\text{m}$ on neljän kerroksen korkeus. Se sopii hissin matkaksi.
+**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} = 9{,}6\,\text{kJ}$. Se on lähellä annettua arvoa $9{,}4\,\text{kJ}$. Ero tulee siitä, että $g$ pyöristettiin ylöspäin. Noin $12\,\text{m}$ on neljän kerroksen korkeus. Se sopii hissin matkaksi.
 
 ## fy4-7-L1-08
 **Kysytty:** ämpärin liike-energian ja potentiaalienergian etumerkit, kun ämpäri on nollatason alapuolella ja liikkuu
@@ -171,7 +171,7 @@ t\,(\text{s}) & E_\text{k} & E_\text{p} & E_\text{mek} \\ \hline
 Kohta b): liike-energia kasvaa melkein nollasta noin yhteen jouleen. Potentiaalienergia pienenee yhtä paljon. Niiden summa eli mekaaninen energia pysyy lähes samana. Se vaihtelee alle $1{,}5\,\%$ keskiarvosta. Se on mittausvirheen suuruinen.
 Kohta c): mekaanisten energioiden summa on $7{,}061\,\text{J}$, joten $E_{\text{mek,ka}} = 7{,}061\,\text{J} : 7 \approx 1{,}009\,\text{J}$.
 **Vastaus:** $1{,}0\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $0{,}057\,\text{kg}$.
-**Järkevyys:** Alussa pallo on levossa korkeudella $1{,}80\,\text{m}$. Silloin $$\begin{aligned} &E_\text{mek} = m g h \\ &= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}80\,\text{m} \\ &\approx 1{,}01\,\text{J} \end{aligned}$$. Se on sama kuin keskiarvo. Viimeisellä hetkellä pallo on melkein lattiassa, ja lähes kaikki energia on liike-energiaa.
+**Järkevyys:** Alussa pallo on levossa korkeudella $1{,}80\,\text{m}$. Silloin $E_\text{mek} = m g h = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}80\,\text{m} \approx 1{,}01\,\text{J}$. Se on sama kuin keskiarvo. Viimeisellä hetkellä pallo on melkein lattiassa, ja lähes kaikki energia on liike-energiaa.
 
 ## fy4-7-L2-06
 **Annettu:** massa $m = 70\,\text{kg}$, syvyys $1{,}5\,\text{m}$ nollatason eli vedenpinnan alapuolella, nopeus $v = 4{,}0\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
@@ -333,3 +333,40 @@ Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia kirjo
 **Sijoitus:** $m = \dfrac{39\,\text{J}}{9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{m}} = 1{,}99\,\text{kg}$
 **Vastaus:** $2{,}0\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska korkeudessa $2{,}0\,\text{m}$ on kaksi.
 **Järkevyys:** Toinen luettu piste on korkeudella $1{,}0\,\text{m}$, ja siinä energia on noin $20\,\text{J}$. Se antaa $m = \dfrac{20\,\text{J}}{9{,}81\,\text{m/s}^2 \cdot 1{,}0\,\text{m}} \approx 2{,}0\,\text{kg}$. Suoran kulmakerroin $\dfrac{39\,\text{J}}{2{,}0\,\text{m}} \approx 19{,}5\,\text{N}$ on laatikon paino.
+
+## fy4-7-L2-10
+**Annettu:** taulukon luvut kesäkaudelta 2025: kolmen tietyypin keskinopeus, rajoituksen ylittäneiden osuus ja yli $10\,\text{km/h}$ ylittäneiden osuus. Auton massa on $m = 1500\,\text{kg}$. Nopeudet ovat $v_1 = 80\,\text{km/h}$ ja $v_2 = 92\,\text{km/h}$. Reaktioaika on $t_\text{r} = 1{,}0\,\text{s}$. Hidastuvuus on $8{,}0\,\text{m/s}^2$. Hidastuvuus kertoo, kuinka paljon nopeus pienenee sekunnissa, joten jarrutuksen kiihtyvyys on $a = -8{,}0\,\text{m/s}^2$.
+Lähteestä otetut tiedot: taulukon luvut ovat raportista <a href="https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf" rel="noopener">Fintraffic: Ajonopeudet maanteillä 2025</a> (luettu 16. marraskuuta 2026). Raportin mukaan kunkin tietyypin luku on sen mittausasemien keskiarvo. Ylinopeus tarkoittaa, että ajoneuvo ylittää tien nopeusrajoituksen. Tiet, joilla nopeusrajoitus vaihtuu, on jätetty pois. Mittausasemien raaka-aineisto on avattu Fintrafficin sivulla <a href="https://www.fintraffic.fi/fi/fintraffic/digitraffic-ja-avoin-data" rel="noopener">Digitraffic ja avoin data</a>.
+**Kysytty:** a) ajonopeuksien jakauma $80\,\text{km/h}$:n teillä ja vertailu $100\,\text{km/h}$:n teihin, b) liike-energiat $E_\text{k,1}$ ja $E_\text{k,2}$ sekä niiden ero prosentteina, c) pysähtymismatkojen ero $\Delta s$ metreinä, d) päätelmät liikenneturvallisuudesta ja asiat, joista aineisto ei kerro
+**Periaate:** Liike-energia riippuu massasta ja nopeuden neliöstä. Pysähtymismatkassa on kaksi osaa. Reaktioajan auto liikkuu tasaisesti, koska kuljettaja ei vielä jarruta. Tämä osa on reaktiomatka. Sen jälkeen auto jarruttaa. Liike on tasaisesti hidastuvaa, koska hidastuvuus oletetaan vakioksi. Tämä osa on jarrutusmatka. Siksi käytetään tasaisen liikkeen ja tasaisesti kiihtyvän liikkeen yhtälöitä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Jarrutuksessa kiihtyvyys on negatiivinen.
+**Kaava:** Liike-energia on $E_\text{k} = \tfrac{1}{2}\,m v^2$. Reaktiomatka on $s_\text{r} = v_0\,t_\text{r}$. Jarrutuksen lopussa nopeus on nolla, $v_0 + a\,t_\text{j} = 0$. Siitä saadaan jarrutusaika $t_\text{j} = -\dfrac{v_0}{a}$. Jarrutusmatka on silloin
+$$\begin{aligned} s_\text{j} &= v_0\,t_\text{j} + \tfrac{1}{2}\,a\,t_\text{j}^2 \\ &= -\dfrac{v_0^2}{a} + \dfrac{v_0^2}{2a} \\ &= -\dfrac{v_0^2}{2a} \end{aligned}$$
+Pysähtymismatka on $s = s_\text{r} + s_\text{j}$, ja kysytty ero on $\Delta s = s_2 - s_1$
+**Muunnokset:** Nopeudet muunnetaan yksikköön $\text{m/s}$:
+$$\begin{aligned} v_1 &= 80 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 22{,}22\ldots\,\text{m/s} \end{aligned}$$
+$$\begin{aligned} v_2 &= 92 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 25{,}55\ldots\,\text{m/s} \end{aligned}$$
+**Sijoitus:** Kohta a): $80\,\text{km/h}$:n teillä enintään rajoituksen mukaista nopeutta ajaa $100\,\% - 62{,}0\,\% = 38{,}0\,\%$ ajoneuvoista. Enintään $10\,\text{km/h}$ ylinopeutta ajaa $62{,}0\,\% - 13{,}8\,\% = 48{,}2\,\%$. Yli $10\,\text{km/h}$ ylinopeutta ajaa $13{,}8\,\%$ eli noin joka seitsemäs ajoneuvo. Suurin ryhmä, lähes puolet ajoneuvoista, ajaa siis enintään $10\,\text{km/h}$ yli rajoituksen. Yli puolet ajoneuvoista ylittää rajoituksen. Siksi keskinopeus $82{,}3\,\text{km/h}$ on rajoitusta suurempi.
+$100\,\text{km/h}$:n teillä samat osuudet ovat $100\,\% - 39{,}8\,\% = 60{,}2\,\%$, $39{,}8\,\% - 8{,}1\,\% = 31{,}7\,\%$ ja $8{,}1\,\%$. Keskinopeus $96{,}3\,\text{km/h}$ on rajoitusta pienempi. Jakauma on siis rajoitukseen verrattuna alempana. Taulukossa on vain keskiarvo ja kaksi osuutta. Jakauman tarkkaa muotoa näiden rajojen välillä siitä ei voi lukea.
+Kohta b):
+$$\begin{aligned} E_\text{k,1} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (22{,}22\ldots\,\text{m/s})^2 \\ &\approx 370\,370\,\text{J} \\ &\approx 0{,}37\,\text{MJ} \end{aligned}$$
+$$\begin{aligned} E_\text{k,2} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (25{,}55\ldots\,\text{m/s})^2 \\ &\approx 489\,815\,\text{J} \\ &\approx 0{,}49\,\text{MJ} \end{aligned}$$
+Kun energiat jaetaan keskenään, massa ja kerroin $\tfrac{1}{2}$ supistuvat pois:
+$$\begin{aligned} \dfrac{E_\text{k,2}}{E_\text{k,1}} &= \dfrac{v_2^2}{v_1^2} \\ &= \left(\dfrac{92\,\text{km/h}}{80\,\text{km/h}}\right)^2 \\ &= 1{,}3225 \end{aligned}$$
+Liike-energia on noin $32\,\%$ suurempi. Nopeus on kuitenkin vain $15\,\%$ suurempi. Syy on se, että liike-energia kasvaa nopeuden neliössä.
+Kohta c): nopeudella $v_1$
+$$\begin{aligned} s_\text{r,1} &= 22{,}22\ldots\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &\approx 22{,}2\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_\text{j,1} &= -\dfrac{(22{,}22\ldots\,\text{m/s})^2}{2 \cdot (-8{,}0\,\text{m/s}^2)} \\ &\approx 30{,}9\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_1 &= 22{,}2\,\text{m} + 30{,}9\,\text{m} \\ &= 53{,}1\,\text{m} \end{aligned}$$
+ja nopeudella $v_2$
+$$\begin{aligned} s_\text{r,2} &= 25{,}55\ldots\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &\approx 25{,}6\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_\text{j,2} &= -\dfrac{(25{,}55\ldots\,\text{m/s})^2}{2 \cdot (-8{,}0\,\text{m/s}^2)} \\ &\approx 40{,}8\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_2 &= 25{,}6\,\text{m} + 40{,}8\,\text{m} \\ &= 66{,}4\,\text{m} \end{aligned}$$
+Pysähtymismatkojen ero on
+$$\begin{aligned} \Delta s &= 66{,}4\,\text{m} - 53{,}1\,\text{m} \\ &= 13{,}3\,\text{m} \end{aligned}$$
+Jarrutusmatkat ovat samassa suhteessa kuin liike-energiat, $40{,}8\,\text{m} : 30{,}9\,\text{m} \approx 1{,}32$. Syy on se, että molemmat ovat verrannollisia nopeuden neliöön. Jarrutuksessa auton liike-energia muuttuu jarrujen, renkaiden ja tien sisäenergiaksi.
+Lisähuomio, jota tehtävässä ei kysytty: oletetaan, että kuljettajat alkavat reagoida samassa kohdassa. Siinä kohdassa, johon hitaampi auto pysähtyy, nopeammalla autolla on vielä $13{,}3\,\text{m}$ jarrutusmatkaa jäljellä. Kaavasta $s_\text{j} = -\dfrac{v^2}{2a}$ saadaan sen nopeus tässä kohdassa: $v = \sqrt{-2a\,\Delta s} \approx 14{,}6\,\text{m/s}$ eli noin $52\,\text{km/h}$.
+Kohta d): aineistosta voi päätellä, että $80\,\text{km/h}$:n teillä suurin osa ajoneuvoista ylittää rajoituksen. Noin joka seitsemäs ylittää sen yli $10\,\text{km/h}$:lla. Kohtien b ja c mukaan tällainen nopeusero tarkoittaa noin kolmanneksen suurempaa liike-energiaa ja noin $13\,\text{m}$ pidempää pysähtymismatkaa. Mitatuilla ylinopeuksilla on siis fysikaalisesti merkittäviä seurauksia.
+Aineistosta ei voi päätellä, kuinka paljon nopeus lisää onnettomuuksia. Taulukossa ei ole tietoja onnettomuuksista. Luvut ovat myös koko kesäkauden ja monen aseman keskiarvoja. Ne eivät kerro yhdestä tiestä tai yhdestä hetkestä.
+Aineisto ei kerro esimerkiksi näistä asioista: sää ja tien pinta (kitka), näkyvyys ja pimeys, liikenteen määrä ja turvavälit eli autojen väliset etäisyydet, kuljettajan vireys ja reaktioaika, ajoneuvon kunto, renkaat ja turvalaitteet, jalankulkijat ja pyöräilijät, kadut, taajamat ja pienemmät tiet (aineistossa on vain pääteitä eli valta- ja kantateitä), tiet, joilla rajoitus vaihtuu, sekä talvikausi, jolloin rajoitukset ja nopeudet ovat toiset. Myös kohdan c malli on yksinkertaistus. Kaikilla kuljettajilla ja autoilla ei ole samaa reaktioaikaa eikä samaa hidastuvuutta.
+**Vastaus:** $13\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeuksissa, reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuudessa $8{,}0\,\text{m/s}^2$.
+**Järkevyys:** Eron voi arvioida osissa. Reaktioaikana nopeampi auto kulkee $12\,\text{km/h} \cdot 1{,}0\,\text{s} \approx 3{,}3\,\text{m/s} \cdot 1{,}0\,\text{s} \approx 3\,\text{m}$ pidemmälle. Jarrutusmatka kasvaa samassa suhteessa kuin liike-energia eli noin $32\,\%$. Se on $0{,}32 \cdot 30{,}9\,\text{m} \approx 10\,\text{m}$. Yhteensä ero on noin $13\,\text{m}$. Se on noin kolmen henkilöauton pituus.

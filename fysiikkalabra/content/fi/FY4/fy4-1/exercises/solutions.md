@@ -37,7 +37,7 @@
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Lähtöpaikka $4{,}0\,\text{m}$ ei ole nolla, mutta se supistuu erotuksessa pois.
 **Sijoitus:** $v = \dfrac{24\,\text{m} - 4{,}0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = \dfrac{20\,\text{m}}{10\,\text{s}} = 2{,}0\,\text{m/s}$
 **Vastaus:** $2{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikka $24\,\text{m}$ on annettu metrin tarkkuudella ($4{,}0\,\text{m}$ desimetrin), joten erotus $20\,\text{m}$ on kahden numeron luku; aika $10\,\text{s}$ on myös kahdella numerolla.
-**Järkevyys:** Kuvaaja nousee, joten nopeus on positiivinen. Tarkistus: $$\begin{aligned} &4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} \\ &= 24\,\text{m} \end{aligned}$$, mikä on suoran toinen piste. Jos nopeudeksi laskettaisiin $\dfrac{24\,\text{m}}{10\,\text{s}} = 2{,}4\,\text{m/s}$, unohtuisi lähtöpaikka.
+**Järkevyys:** Kuvaaja nousee, joten nopeus on positiivinen. Tarkistus: $4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}$, mikä on suoran toinen piste. Jos nopeudeksi laskettaisiin $\dfrac{24\,\text{m}}{10\,\text{s}} = 2{,}4\,\text{m/s}$, unohtuisi lähtöpaikka.
 
 ## fy4-1-L1-05
 **Annettu:** $x_0 = 15\,\text{m}$ hetkellä $t = 0\,\text{s}$, $v = 1{,}5\,\text{m/s}$, haluttu hetki $t = 20\,\text{s}$
@@ -77,7 +77,7 @@
 **Muunnokset:** Paikat ovat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita. Erotukset lasketaan aina loppu miinus alku.
 **Sijoitus:** $v = \dfrac{3{,}0\,\text{m} - 18\,\text{m}}{7{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{-15\,\text{m}}{5{,}0\,\text{s}} = -3{,}0\,\text{m/s}$
 **Vastaus:** $-3{,}0\,\text{m/s}$, kaksi merkitsevää numeroa, koska paikkojen erotus $3{,}0\,\text{m} - 18\,\text{m} = -15\,\text{m}$ on metrin tarkkuudella (kaksi numeroa) ja ajan muutos $5{,}0\,\text{s}$ on myös kahdella.
-**Järkevyys:** Paikka pienenee, joten nopeuden pitää olla negatiivinen: kärry liikkuu kohti origoa. Takaisinlasku: $$\begin{aligned} &18\,\text{m} \\ &+ (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} \\ &= 3{,}0\,\text{m} \end{aligned}$$, mikä on toinen annettu paikka. Vauhti on $3{,}0\,\text{m/s}$.
+**Järkevyys:** Paikka pienenee, joten nopeuden pitää olla negatiivinen: kärry liikkuu kohti origoa. Takaisinlasku: $18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\text{m}$, mikä on toinen annettu paikka. Vauhti on $3{,}0\,\text{m/s}$.
 
 ## fy4-1-L2-04
 **Annettu:** $x_0 = -24\,\text{m}$ hetkellä $t = 0\,\text{s}$, $v = 1{,}5\,\text{m/s}$, haluttu paikka $x = 0$
@@ -142,7 +142,7 @@ $$\begin{aligned} x &= 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} \\ &=
 ## fy4-1-L1-08
 **Kysytty:** mikä virhe oppilaan nopeuden laskussa on.
 **Periaate:** Suoran kulmakerroin on paikan muutos jaettuna ajan muutoksella, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. Muutos on aina erotus loppu miinus alku, joten pelkkä toisen pisteen paikka ei kelpaa osoittajaksi eikä pelkkä toisen pisteen aika nimittäjäksi.
-**Mallivastaus:** Oppilas jakoi toisen pisteen paikan $13\,\text{m}$ sen ajalla $6{,}0\,\text{s}$ eikä laskenut erotuksia. Oikein: $$\begin{aligned} &v = \dfrac{13\,\text{m} - 5{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} \\ &= \dfrac{8{,}0\,\text{m}}{4{,}0\,\text{s}} \\ &= 2{,}0\,\text{m/s} \end{aligned}$$. Oppilaan tapa toimisi vain, jos suora lähtisi origosta hetkellä nolla, mutta tässä alkupiste on $(2{,}0\,\text{s};\, 5{,}0\,\text{m})$. Etumerkki ei ole väärin, koska paikka kasvaa ja nopeus on positiivinen. Nopeus ei ole paikkojen summa jaettuna aikojen summalla, koska summa ei kuvaa muutosta.
+**Mallivastaus:** Oppilas jakoi toisen pisteen paikan $13\,\text{m}$ sen ajalla $6{,}0\,\text{s}$ eikä laskenut erotuksia. Oikein: $v = \dfrac{13\,\text{m} - 5{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{8{,}0\,\text{m}}{4{,}0\,\text{s}} = 2{,}0\,\text{m/s}$. Oppilaan tapa toimisi vain, jos suora lähtisi origosta hetkellä nolla, mutta tässä alkupiste on $(2{,}0\,\text{s};\, 5{,}0\,\text{m})$. Etumerkki ei ole väärin, koska paikka kasvaa ja nopeus on positiivinen. Nopeus ei ole paikkojen summa jaettuna aikojen summalla, koska summa ei kuvaa muutosta.
 **Kuvaajan lukeminen:** Suoralta luetaan kaksi pistettä: $(t_1;\, x_1) = (2{,}0\,\text{s};\, 5{,}0\,\text{m})$ ja $(t_2;\, x_2) = (6{,}0\,\text{s};\, 13\,\text{m})$. Nousu on $x_2 - x_1$ ja eteneminen $t_2 - t_1$.
 
 ## fy4-1-L2-05
@@ -158,7 +158,7 @@ $$\begin{aligned} v &= \dfrac{3{,}54\,\text{m} - 0{,}49\,\text{m}}{5{,}0\,\text{
 
 Alkupaikka luetaan suoran leikkauskohdasta: $x_0 \approx 0{,}49\,\text{m}$. Paikka on siis $x = 0{,}49\,\text{m} + 0{,}61\,\text{m/s} \cdot t$.
 **Vastaus:** $0{,}61\,\text{m/s}$, kaksi merkitsevää numeroa, koska taulukon paikat ovat kahden desimaalin tarkkuudella ja suoran sovitus rajoittaa tarkkuutta. Suoran luenta voi vaihdella muutamalla prosentilla.
-**Järkevyys:** Tarkistus keskimmäisellä pisteellä: $$\begin{aligned} &0{,}49\,\text{m} + 0{,}61\,\text{m/s} \cdot 2{,}0\,\text{s} \\ &= 1{,}71\,\text{m} \end{aligned}$$, kun taulukossa on $1{,}67\,\text{m}$, eli ero on pieni. Paikka kasvaa, joten nopeus on positiivinen. Nopeus $0{,}61\,\text{m/s}$ sopii pienelle kärrylle.
+**Järkevyys:** Tarkistus keskimmäisellä pisteellä: $0{,}49\,\text{m} + 0{,}61\,\text{m/s} \cdot 2{,}0\,\text{s} = 1{,}71\,\text{m}$, kun taulukossa on $1{,}67\,\text{m}$, eli ero on pieni. Paikka kasvaa, joten nopeus on positiivinen. Nopeus $0{,}61\,\text{m/s}$ sopii pienelle kärrylle.
 
 ## fy4-1-L2-06
 **Annettu:** taulukon paikat kärryille A ja B hetkillä $0{,}0\,\text{s} \ldots 8{,}0\,\text{s}$; liikkeet ovat tasaisia
@@ -172,7 +172,7 @@ $$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
 
 $$\begin{aligned} t &= \dfrac{20{,}0\,\text{m} - 1{,}0\,\text{m}}{1{,}5\,\text{m/s} - (-1{,}8\,\text{m/s})} \\ &= \dfrac{19{,}0\,\text{m}}{3{,}3\,\text{m/s}} \\ &= 5{,}8\,\text{s} \end{aligned}$$
 **Vastaus:** $5{,}8\,\text{s}$, kaksi merkitsevää numeroa, koska nopeudet $1{,}5\,\text{m/s}$ ja $1{,}8\,\text{m/s}$ ovat kahdella numerolla.
-**Järkevyys:** Hetkellä $5{,}8\,\text{s}$ kärry A on paikassa $$\begin{aligned} &1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} \\ &= 9{,}7\,\text{m} \end{aligned}$$ ja kärry B paikassa $$\begin{aligned} &20{,}0\,\text{m} - 1{,}8\,\text{m/s} \cdot 5{,}8\,\text{s} \\ &= 9{,}6\,\text{m} \end{aligned}$$, eli paikat ovat yhtä suuret pyöristyksen tarkkuudella. Ajanhetki on mittausvälin $0{,}0\ldots 8{,}0\,\text{s}$ sisällä, ja taulukossa kärryjen järjestys vaihtuu hetkien $4{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ välillä, kuten pitääkin.
+**Järkevyys:** Hetkellä $5{,}8\,\text{s}$ kärry A on paikassa $1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\text{m}$ ja kärry B paikassa $20{,}0\,\text{m} - 1{,}8\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}6\,\text{m}$, eli paikat ovat yhtä suuret pyöristyksen tarkkuudella. Ajanhetki on mittausvälin $0{,}0\ldots 8{,}0\,\text{s}$ sisällä, ja taulukossa kärryjen järjestys vaihtuu hetkien $4{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ välillä, kuten pitääkin.
 
 ## fy4-1-L2-07
 **Annettu:** robotin pisteet $(t;\, x)$: $(0\,\text{s};\, 2{,}0\,\text{m})$, $(4{,}0\,\text{s};\, 14\,\text{m})$, $(10\,\text{s};\, 14\,\text{m})$, $(16\,\text{s};\, 5{,}0\,\text{m})$ ja $(20\,\text{s};\, 5{,}0\,\text{m})$; pisteiden välillä liike on tasaista
@@ -185,7 +185,7 @@ $$\begin{aligned} t &= \dfrac{20{,}0\,\text{m} - 1{,}0\,\text{m}}{1{,}5\,\text{m
 
 $$\begin{aligned} v &= \dfrac{5{,}0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\,\text{s}} \\ &= \dfrac{-9{,}0\,\text{m}}{6{,}0\,\text{s}} \\ &= -1{,}5\,\text{m/s} \end{aligned}$$
 **Vastaus:** $-1{,}5\,\text{m/s}$ välillä $10\ldots16\,\text{s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $9{,}0\,\text{m}$.
-**Järkevyys:** Robotin paikka pienenee välillä $10\ldots16\,\text{s}$, joten nopeuden pitää olla negatiivinen. Takaisinlasku: $$\begin{aligned} &14\,\text{m} \\ &+ (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} \\ &= 5{,}0\,\text{m} \end{aligned}$$, mikä on taulukon paikka hetkellä $16\,\text{s}$. Vaakasuorilla osilla nopeus on nolla, koska paikka ei muutu.
+**Järkevyys:** Robotin paikka pienenee välillä $10\ldots16\,\text{s}$, joten nopeuden pitää olla negatiivinen. Takaisinlasku: $14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\text{m}$, mikä on taulukon paikka hetkellä $16\,\text{s}$. Vaakasuorilla osilla nopeus on nolla, koska paikka ei muutu.
 
 ## fy4-1-L3-04
 **Annettu:** ohjelman paikat $x_\text{ohj}$ hetkillä $0{,}0\ldots5{,}0\,\text{s}$ (esim. $(0{,}0\,\text{s};\, 0{,}30\,\text{m})$ ja $(5{,}0\,\text{s};\, 3{,}52\,\text{m})$); mittanauhan todellinen pituus $2{,}00\,\text{m}$, ohjelman antama pituus $1{,}60\,\text{m}$; liike on tasaista
@@ -268,4 +268,4 @@ $$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2{,}0\,\text{m/s}) \cdot 6{,}0\
 
 $$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8{,}0\,\text{m} \end{aligned}$$
 **Vastaus:** $8{,}0\,\text{m}$, kaksi merkitsevää numeroa, koska nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on luettu kuvaajasta ja annettu kahdella numerolla.
-**Järkevyys:** Välimatka kasvaa ristiin menon jälkeen nopeuksien erotuksella $$\begin{aligned} &2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) \\ &= 4{,}0\,\text{m/s} \end{aligned}$$. Hetkestä $4{,}0\,\text{s}$ on kulunut $2{,}0\,\text{s}$, joten välimatka on $4{,}0\,\text{m/s} \cdot 2{,}0\,\text{s} = 8\,\text{m}$, sama kuin yllä. Kuvaajassa viivojen pystysuuntainen väli hetkellä $6\,\text{s}$ on $8\,\text{m}$.
+**Järkevyys:** Välimatka kasvaa ristiin menon jälkeen nopeuksien erotuksella $2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) = 4{,}0\,\text{m/s}$. Hetkestä $4{,}0\,\text{s}$ on kulunut $2{,}0\,\text{s}$, joten välimatka on $4{,}0\,\text{m/s} \cdot 2{,}0\,\text{s} = 8\,\text{m}$, sama kuin yllä. Kuvaajassa viivojen pystysuuntainen väli hetkellä $6\,\text{s}$ on $8\,\text{m}$.

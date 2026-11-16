@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b7e48a8781d7529c
+CONTENT-HASH: 1e8c103369245378
 
 ## Blocking
-
+None.
 
 ## Polish
-
+None.
 
 ## Checked
-- Round 2, delta. Opened fy3-13-open-exercises-L2-1280-13, -14, -15 (13-? tasks 4-18 and 4-19: both graphs, whole solutions) in this language where captured; the new text says the horizontal axis does not reach zero pressure, which the graph confirms (axis ends near -150 °C); 4-19 may keep drawing by eye since -73 °C lies inside the axis. Fractions, aligned rows and answer boxes fine.
-- Hash at start and end the same.
+- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
+- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

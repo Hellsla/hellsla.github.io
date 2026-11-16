@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 69af52f6f77a83ff
-SCOPE: delta reflow from 604ed8c23072c5a2 base cf5f907
+CONTENT-HASH: 0dd97b80b772b1e9
+SCOPE: delta answers,levels,numbers,reflow,structure,typography,wording from 69af52f6f77a83ff base bf67392
 
 ## Blocking
 - none
@@ -9,8 +9,8 @@ SCOPE: delta reflow from 604ed8c23072c5a2 base cf5f907
 - none
 
 ## Checked
-- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
-- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+- Delta (round 3): only the Mallivastaus d) line of fy8-13-L2-09 (inline chain split into two adjacent formulas) in solutions.md. Opened the 1280 px level-2 open-solution captures (parts 11-13, fi) around 13-17, the 0,88 mSv chain at the end.
+- The two formulas read as one continuous line with a normal space, same weight and spacing as neighbouring maths, equals sign intact, numbers, signs and units unchanged; surrounding layout (Vastaus, Järkevyys boxes) survived. 360 px clipping: the packet's layout 360 px check is ok; no 360 px capture of this line exists, so wrapping is taken from that check.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

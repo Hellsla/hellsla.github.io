@@ -4,9 +4,9 @@
 **Principle:** The water falling through the turbines loses potential energy $mgh$, and the mass $\rho Q$ falls every second. The plant converts the fraction $\eta$ of this power into electricity, so we use the formula for the power of a hydropower plant.
 **Formula:** $P = \eta\rho Q g h$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
-**Substitution:** $$\begin{aligned} &P \\ &= 0.900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 15.0\,\text{m} \\ &= 15\,892\,200\,\text{W} \\ &\approx 15.9\,\text{MW} \end{aligned}$$
+**Substitution:** $P = 0.900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 15.0\,\text{m} = 15\,892\,200\,\text{W} \approx 15.9\,\text{MW}$
 **Answer:** $15.9\,\text{MW}$, three significant figures like the head $15.0\,\text{m}$, the flow rate $120\,\text{m}^3\text{/s}$ and the efficiency $0.900$.
-**Reasonableness:** A cubic metre of water gives about $$\begin{aligned} &1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} \\ &= 150\,\text{kJ} \end{aligned}$$ in a $15\,\text{m}$ drop, so $120$ cubic metres per second give about $18\,\text{MW}$, and $90\,\%$ of that is about $16\,\text{MW}$. The power is smaller than the $192\,\text{MW}$ of Imatra, because both the flow rate and the head are smaller.
+**Reasonableness:** A cubic metre of water gives about $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} = 150\,\text{kJ}$ in a $15\,\text{m}$ drop, so $120$ cubic metres per second give about $18\,\text{MW}$, and $90\,\%$ of that is about $16\,\text{MW}$. The power is smaller than the $192\,\text{MW}$ of Imatra, because both the flow rate and the head are smaller.
 
 ## fy4-15-L1-02
 **Given:** mass of water $m = 1000\,\text{kg}$, height difference $h = 24.0\,\text{m}$; $g = 9.81\,\text{m/s}^2$
@@ -16,7 +16,7 @@
 **Conversions:** The quantities are in SI units, so the energy comes out in joules; finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $E_\text{p} = 1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 24.0\,\text{m} = 235\,440\,\text{J} \approx 235\,\text{kJ}$
 **Answer:** $235\,\text{kJ}$, three significant figures like the height difference $24.0\,\text{m}$.
-**Reasonableness:** The estimate $$\begin{aligned} &1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} \\ &= 240\,\text{kJ} \end{aligned}$$ is close to the result. If hundreds of cubic metres fall every second, the power is hundreds of times $235\,\text{kW}$, that is tens or hundreds of megawatts, as in large hydropower plants.
+**Reasonableness:** The estimate $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text{kJ}$ is close to the result. If hundreds of cubic metres fall every second, the power is hundreds of times $235\,\text{kW}$, that is tens or hundreds of megawatts, as in large hydropower plants.
 
 ## fy4-15-L1-03
 **Given:** power of the water flowing into the turbine $P_\text{o} = 50.0\,\text{MW}$, electric power $P_\text{a} = 46.0\,\text{MW}$
@@ -34,9 +34,9 @@
 **Principle:** In time $t$ the undisturbed wind would carry a cylinder of air through the swept area, with mass $m = \rho A v t$ and kinetic energy $\tfrac{1}{2}mv^2$. The power of the wind is this kinetic energy divided by the time. The efficiency is not needed, because we are asked for the power of the wind, not the electric power.
 **Formula:** $P_\text{wind} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, so $P_\text{wind} = \tfrac{1}{2}\rho A v^3$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{kW} = 1000\,\text{W}$.
-**Substitution:** $$\begin{aligned} &P_\text{wind} \\ &= \tfrac{1}{2} \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \\ &\cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 480\,000\,\text{W} \\ &= 480\,\text{kW} \end{aligned}$$
+**Substitution:** $P_\text{wind} = \tfrac{1}{2} \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 480\,000\,\text{W} = 480\,\text{kW}$
 **Answer:** $480\,\text{kW}$ or $4.8 \cdot 10^{2}\,\text{kW}$, two significant figures like the wind speed $8.0\,\text{m/s}$.
-**Reasonableness:** Every second $$\begin{aligned} &1.25 \cdot 1500 \cdot 8\,\text{kg} \\ &= 15\,000\,\text{kg} \end{aligned}$$ of air passes through the swept area in the undisturbed wind, and each kilogram has kinetic energy $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. The product is $480\,000\,\text{J}$ per second, the same result. Less than half of this would become electricity.
+**Reasonableness:** Every second $1.25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ of air passes through the swept area in the undisturbed wind, and each kilogram has kinetic energy $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. The product is $480\,000\,\text{J}$ per second, the same result. Less than half of this would become electricity.
 
 ## fy4-15-L1-05
 **Given:** electric power $P = 3.00\,\text{MW}$, time $t = 6.00\,\text{h}$
@@ -74,7 +74,7 @@
 **Principle:** The water falling through the turbine loses potential energy, and the mass $\rho Q$ falls every second. The plant converts the fraction $\eta$ of this power into electricity, so we use the formula for the power of a hydropower plant.
 **Formula:** $P = \eta\rho Q g h$
 **Conversions:** $850\,\textsf{l} = 850 \cdot 0.001\,\text{m}^3 = 0.850\,\text{m}^3$, so $Q = 0.850\,\text{m}^3\text{/s}$; finally $1\,\text{kW} = 1000\,\text{W}$.
-**Substitution:** $$\begin{aligned} &P \\ &= 0.75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 0.850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 6.5\,\text{m} \\ &= 40\,650\,\text{W} \\ &\approx 41\,\text{kW} \end{aligned}$$
+**Substitution:** $P = 0.75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 6.5\,\text{m} = 40\,650\,\text{W} \approx 41\,\text{kW}$
 **Answer:** $41\,\text{kW}$, two significant figures like the head $6.5\,\text{m}$ and the efficiency $0.75$.
 **Reasonableness:** Every second $850\,\text{kg}$ of water falls, which gives about $850 \cdot 10 \cdot 6.5\,\text{J} \approx 55\,\text{kJ}$ in a $6.5\,\text{m}$ drop, and three quarters of that is about $41\,\text{kJ}$ per second. If the litres were not converted, the result would be a thousand times too large, $41\,\text{MW}$, which is far too much for a stream.
 
@@ -84,7 +84,7 @@
 **Principle:** First we calculate the electric power from the formula for the power of a hydropower plant, because the fraction $\eta$ of the potential energy of the falling water becomes electricity. The power stays constant when the flow rate stays constant, so the energy is power times time.
 **Formula:** $P = \eta\rho Q g h$ and $E = Pt$, so $E = \eta\rho Q g h t$
 **Conversions:** The power is calculated in watts and converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$; the time is kept in hours, so the energy comes out in megawatt-hours.
-**Substitution:** $$\begin{aligned} &P \\ &= 0.800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 3.20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 9.50\,\text{m} \\ &= 238\,579\,\text{W} \end{aligned}$$ and $E = 0.238\,579\,\text{MW} \cdot 24.0\,\text{h} = 5.7259\,\text{MWh}$
+**Substitution:** $P = 0.800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 3.20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.50\,\text{m} = 238\,579\,\text{W}$ and $E = 0.238\,579\,\text{MW} \cdot 24.0\,\text{h} = 5.7259\,\text{MWh}$
 **Answer:** $5.73\,\text{MWh}$, three significant figures like the initial data.
 **Reasonableness:** The power is about $0.24\,\text{MW}$, and a day has $24$ hours: $0.24 \cdot 24 \approx 5.8\,\text{MWh}$. That is about a third of the yearly consumption of a detached house with electric heating, which fits a small power plant.
 
@@ -129,7 +129,7 @@
 **Principle:** The water mass $\rho Q$ falls through the turbines every second, and every kilogram loses potential energy $gh$. The efficiency is not taken into account, so the power asked for is the rate at which the potential energy decreases.
 **Formula:** $P_\text{o} = \rho Q g h$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
-**Substitution:** $$\begin{aligned} &P_\text{o} \\ &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35.0\,\tfrac{\text{m}^3}{\text{s}} \\ &\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8.50\,\text{m} \\ &= 2\,918\,475\,\text{W} \\ &\approx 2.92\,\text{MW} \end{aligned}$$
+**Substitution:** $P_\text{o} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35.0\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8.50\,\text{m} = 2\,918\,475\,\text{W} \approx 2.92\,\text{MW}$
 **Answer:** $2.92\,\text{MW}$, three significant figures like the flow rate $35.0\,\text{m}^3\text{/s}$ and the head $8.50\,\text{m}$.
 **Reasonableness:** $35\,000\,\text{kg}$ of water falls every second, and a kilogram loses about $10 \cdot 8.5\,\text{J} = 85\,\text{J}$ in an $8.5\,\text{m}$ drop. The product is about $3.0\,\text{MW}$, so the result is of the right magnitude. With an efficiency, the electric power would be less than $2.92\,\text{MW}$.
 
@@ -149,7 +149,7 @@
 **Principle:** Power tells the rate at which energy is converted, so the energy is power times time. At each speed the power is constant, so the energy of each row is $P t$. The annual energy is the sum of the energies of the rows.
 **Formula:** $E = \sum P t$
 **Conversions:** When the power is in kilowatts and the time in hours, the energy comes out in kilowatt-hours. Finally $1\,\text{GWh} = 10^{6}\,\text{kWh}$.
-**Substitution:** The energies of the rows are $$\begin{aligned} &100\,\text{kW} \cdot 1500\,\text{h} \\ &= 150\,000\,\text{kWh} \end{aligned}$$, $340 \cdot 2200 = 748\,000\,\text{kWh}$, $850 \cdot 1800 = 1\,530\,000\,\text{kWh}$, $1650 \cdot 1000 = 1\,650\,000\,\text{kWh}$ and $2000 \cdot 700 = 1\,400\,000\,\text{kWh}$. The sum is $5\,478\,000\,\text{kWh}$, so $E = 5.478\,\text{GWh}$.
+**Substitution:** The energies of the rows are $100\,\text{kW} \cdot 1500\,\text{h} = 150\,000\,\text{kWh}$, $340 \cdot 2200 = 748\,000\,\text{kWh}$, $850 \cdot 1800 = 1\,530\,000\,\text{kWh}$, $1650 \cdot 1000 = 1\,650\,000\,\text{kWh}$ and $2000 \cdot 700 = 1\,400\,000\,\text{kWh}$. The sum is $5\,478\,000\,\text{kWh}$, so $E = 5.478\,\text{GWh}$.
 **Answer:** $5.5\,\text{GWh}$, two significant figures, because the powers in the table are given to two or three significant figures.
 **Reasonableness:** If the turbine produced its rated power $2000\,\text{kW}$ for the whole year ($8760\,\text{h}$), the energy would be $17.5\,\text{GWh}$. The result $5.5\,\text{GWh}$ is about $31\,\%$ of that, which fits the fact that the mean power of a wind turbine is clearly lower than its rated power.
 
@@ -159,13 +159,13 @@
 **Principle:** The power of a hydropower plant at the flow rate of a month is $P = \eta\rho Q g h$. Since $\eta$, $\rho$ and $h$ are constants, the power is proportional to the flow rate. Energy is power times time, and every month has the same length, so the energy is obtained by summing the powers of the months and multiplying by the length of one month.
 **Formula:** $P = \eta\rho Q g h$ and $E = Pt$, so $E = \eta\rho g h\,\left(\sum Q\right) t$
 **Conversions:** The length of a month is $t = 30 \cdot 24\,\text{h} = 720\,\text{h}$. The power is calculated in watts and converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$, so the energy comes out in megawatt-hours; finally $1\,\text{GWh} = 1000\,\text{MWh}$.
-**Substitution:** The sum of the flow rates is $$\begin{aligned} &85 + 120 + 45 + 30 \\ &+ 28 + 40 \\ &= 348\,\text{m}^3\text{/s} \end{aligned}$$. The sum of the monthly powers is
+**Substitution:** The sum of the flow rates is $85 + 120 + 45 + 30 + 28 + 40 = 348\,\text{m}^3\text{/s}$. The sum of the monthly powers is
 $$\begin{aligned}\textstyle\sum P &= 0.85 \cdot 1000 \cdot 9.81 \cdot 9.0 \cdot 348\,\text{W} \\ &= 26.12\,\text{MW}\end{aligned}$$
 and the energy
 $$\begin{aligned}E &= 26.12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\text{MWh} \\ &= 18.8\,\text{GWh}\end{aligned}$$
 **Answer:** $19\,\text{GWh}$, two significant figures like the head $9.0\,\text{m}$ and the efficiency $0.85$.
 **Model answer for part b:** The power is proportional to the flow rate, so the ratio of the powers in May and August is the same as the ratio of the flow rates, $120 : 28 = 4.3$. In May the power is about $9.0\,\text{MW}$ and in August about $2.1\,\text{MW}$. In the table the flow rate is greatest in spring and smallest in late summer, so the production varies with how much water flows in the river. The head and the efficiency stay constant, so they do not explain the variation.
-**Reasonableness:** The mean flow rate is $348 : 6 = 58\,\text{m}^3\text{/s}$, and at that flow rate the power would be $0.85 \cdot 1000 \cdot 58 \cdot 9.81 \cdot 9.0\,\text{W} \approx 4.35\,\text{MW}$. Over six months ($4320\,\text{h}$) the energy would be $$\begin{aligned} &4.35\,\text{MW} \cdot 4320\,\text{h} \\ &\approx 18.8\,\text{GWh} \end{aligned}$$, the same result.
+**Reasonableness:** The mean flow rate is $348 : 6 = 58\,\text{m}^3\text{/s}$, and at that flow rate the power would be $0.85 \cdot 1000 \cdot 58 \cdot 9.81 \cdot 9.0\,\text{W} \approx 4.35\,\text{MW}$. Over six months ($4320\,\text{h}$) the energy would be $4.35\,\text{MW} \cdot 4320\,\text{h} \approx 18.8\,\text{GWh}$, the same result.
 
 ## fy4-15-L2-07
 **Given:** diameter $d = 60\,\text{m}$, wind speed $v = 7.0\,\text{m/s}$, density of air $\rho = 1.25\,\text{kg/m}^3$, efficiency $\eta = 0.40$; the student's result $4.9\,\text{kW}$
@@ -189,7 +189,7 @@ $$\begin{aligned}P &= 0.5 \cdot 0.40 \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \
 The sum of the ratios is $7.513$, so the mean is $k_\text{mean} = 7.513 : 6 = 1.252\,\tfrac{\text{kW}}{(\text{m/s})^3} = 1252\,\tfrac{\text{W}}{(\text{m/s})^3}$. The efficiency is
 $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1.25 \cdot 5027} \\ &= 0.3986\end{aligned}$$
 **Answer:** $40\,\%$, two significant figures, because the powers in the table are given to two or three significant figures.
-**Model answer for parts a and c:** The speed grows from $4\,\text{m/s}$ to $9\,\text{m/s}$, that is, $2.25$-fold, so $v^3$ grows more than $11$-fold, and the power grows by the same factor: $905 : 80 \approx 11.3$. The ratio $P/v^3$ stays between $1.24$ and $1.27$, that is, it varies only by about $\pm 2\,\%$ over the whole speed range. The random scatter of the points explains the small variation, and the ratio neither grows nor decreases with the speed, so the model $P = k v^3$ fits the data. Doubling supports the result: from $4\,\text{m/s}$ to $8\,\text{m/s}$ the power grows by a factor of $650 : 80 \approx 8.1$, and $2^3 = 8$. The prediction of the model at $13\,\text{m/s}$ is $$\begin{aligned} &1.252 \cdot 13^3\,\text{kW} \\ &\approx 2750\,\text{kW} \\ &= 2.8\,\text{MW} \end{aligned}$$, which is greater than the rated power $2.0\,\text{MW}$. The turbine cannot produce more than its rated power; the blades are turned to let part of the wind pass, so the model $P = k v^3$ holds only below the rated power.
+**Model answer for parts a and c:** The speed grows from $4\,\text{m/s}$ to $9\,\text{m/s}$, that is, $2.25$-fold, so $v^3$ grows more than $11$-fold, and the power grows by the same factor: $905 : 80 \approx 11.3$. The ratio $P/v^3$ stays between $1.24$ and $1.27$, that is, it varies only by about $\pm 2\,\%$ over the whole speed range. The random scatter of the points explains the small variation, and the ratio neither grows nor decreases with the speed, so the model $P = k v^3$ fits the data. Doubling supports the result: from $4\,\text{m/s}$ to $8\,\text{m/s}$ the power grows by a factor of $650 : 80 \approx 8.1$, and $2^3 = 8$. The prediction of the model at $13\,\text{m/s}$ is $1.252 \cdot 13^3\,\text{kW} \approx 2750\,\text{kW} = 2.8\,\text{MW}$, which is greater than the rated power $2.0\,\text{MW}$. The turbine cannot produce more than its rated power; the blades are turned to let part of the wind pass, so the model $P = k v^3$ holds only below the rated power.
 **Reasonableness:** The power of the wind at $9\,\text{m/s}$ is $\tfrac{1}{2} \cdot 1.25 \cdot 5027 \cdot 9^3\,\text{W} \approx 2290\,\text{kW}$, and $905\,\text{kW}$ is $905 : 2290 \approx 0.40$ of it, the same as the efficiency obtained. The result is below the theoretical upper limit of $59\,\%$ and below half, as for a wind turbine.
 
 ## fy4-15-L3-05
@@ -198,11 +198,11 @@ $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1.25 \cdot 5027} \\ &= 0.3986\end{a
 **Principle:** The surplus electric energy is power times time. The pumps convert the fraction $\eta$ of it into the potential energy $mgh$ of the water, from which the mass of the lifted water is solved, and then the volume $V = m/\rho$.
 **Formula:** $E = \sum P t$, $\eta E = mgh$, so $m = \dfrac{\eta E}{gh}$ and $V = \dfrac{m}{\rho}$
 **Conversions:** The power of each hour is constant, so $E$ comes out in megawatt-hours. Finally $1\,\text{MWh} = 10^{6}\,\text{W} \cdot 3600\,\text{s} = 3.6 \cdot 10^{9}\,\text{J}$.
-**Substitution:** The sum of the powers is $$\begin{aligned} &40 + 52 + 62 + 58 + 48 \\ &+ 40 \\ &= 300\,\text{MW} \end{aligned}$$, and each power lasts one hour, so $E = 300\,\text{MWh} = 300 \cdot 3.6 \cdot 10^{9}\,\text{J} = 1.08 \cdot 10^{12}\,\text{J}$. The energy transferred to the water is $\eta E = 0.800 \cdot 1.08 \cdot 10^{12}\,\text{J} = 8.64 \cdot 10^{11}\,\text{J}$. The mass and the volume are
+**Substitution:** The sum of the powers is $40 + 52 + 62 + 58 + 48 + 40 = 300\,\text{MW}$, and each power lasts one hour, so $E = 300\,\text{MWh} = 300 \cdot 3.6 \cdot 10^{9}\,\text{J} = 1.08 \cdot 10^{12}\,\text{J}$. The energy transferred to the water is $\eta E = 0.800 \cdot 1.08 \cdot 10^{12}\,\text{J} = 8.64 \cdot 10^{11}\,\text{J}$. The mass and the volume are
 $$\begin{aligned}m &= \frac{8.64 \cdot 10^{11}\,\text{J}}{9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 85.0\,\text{m}} \\ &= 1.036 \cdot 10^{9}\,\text{kg} \\ V &= \frac{m}{\rho} = 1.036 \cdot 10^{6}\,\text{m}^3\end{aligned}$$
 **Answer:** $1.04 \cdot 10^{6}\,\text{m}^3$, three significant figures like the height $85.0\,\text{m}$ and the efficiency $0.800$.
 **Model answer for parts b and c:** The pumped water $1.04 \cdot 10^{6}\,\text{m}^3$ is less than the volume of the upper reservoir $1.20 \cdot 10^{6}\,\text{m}^3$, so the water fits into the reservoir and it fills to about $86\,\%$. The energy stored in the water is $0.800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. At a power of $40.0\,\text{MW}$ it would last $240\,\text{MWh} : 40.0\,\text{MW} = 6.00\,\text{h}$, if the losses of the turbine and the generator are ignored. In reality the losses shorten the time. A pumped-storage plant suits well alongside wind power, because wind power depends on the weather and its power can exceed consumption, while hydropower is easy to regulate. Surplus electricity can be stored as the potential energy of water and converted back into electricity when the wind calms down and consumption is greater than production.
-**Reasonableness:** Let us check the potential energy: $$\begin{aligned} &1.036 \cdot 10^{9}\,\text{kg} \\ &\cdot 9.81\,\text{m/s}^2 \cdot 85.0\,\text{m} \\ &= 8.64 \cdot 10^{11}\,\text{J} \end{aligned}$$, which is $240\,\text{MWh}$. A cubic metre of water at a height of $85\,\text{m}$ stores about $$\begin{aligned} &1000 \cdot 9.81 \cdot 85\,\text{J} \\ &= 0.83\,\text{MJ} \end{aligned}$$, so $240\,\text{MWh} = 8.64 \cdot 10^{5}\,\text{MJ}$ requires about $10^{6}$ cubic metres, as obtained.
+**Reasonableness:** Let us check the potential energy: $1.036 \cdot 10^{9}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 85.0\,\text{m} = 8.64 \cdot 10^{11}\,\text{J}$, which is $240\,\text{MWh}$. A cubic metre of water at a height of $85\,\text{m}$ stores about $1000 \cdot 9.81 \cdot 85\,\text{J} = 0.83\,\text{MJ}$, so $240\,\text{MWh} = 8.64 \cdot 10^{5}\,\text{MJ}$ requires about $10^{6}$ cubic metres, as obtained.
 
 ## fy4-15-L2-08
 **Find:** the order of magnitude of the electric power $P$ of the wind turbine.
@@ -231,7 +231,7 @@ The result is reasonable. The power of the wind is $P : \eta \approx 4.9\,\text{
 **Principle:** The undisturbed wind carries the power $\tfrac{1}{2}\rho A v^3$ through the swept area, and the turbine turns the fraction $\eta$ of it into electricity. Cold air is denser than the $1.25\,\text{kg/m}^3$ used in the chapter, so the density from the table is substituted into the formula.
 **Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$, so $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
 **Conversions:** The radius is $r = 82\,\text{m} : 2 = 41\,\text{m}$; finally $1\,\text{kW} = 1000\,\text{W}$.
-**Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $$\begin{aligned} &P \\ &= \tfrac{1}{2} \cdot 0.45 \cdot 1.29\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 5281.0\,\text{m}^2 \cdot \left(9.0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 1\,117\,422\,\text{W} \\ &\approx 1100\,\text{kW} \end{aligned}$$
+**Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $P = \tfrac{1}{2} \cdot 0.45 \cdot 1.29\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281.0\,\text{m}^2 \cdot \left(9.0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 1\,117\,422\,\text{W} \approx 1100\,\text{kW}$
 **Answer:** $1100\,\text{kW}$, or about $1.1\,\text{MW}$, two significant figures like the efficiency $0.45$ and the wind speed $9.0\,\text{m/s}$.
 **Reasonableness:** With the density $1.25\,\text{kg/m}^3$ the power would be $1.08\,\text{MW}$. The density is about $3\,\%$ larger and the power is directly proportional to the density, so in frost the power is about $3\,\%$ larger. The result is smaller than that of the $120\,\text{m}$ turbine in the chapter, because the rotor is smaller.
 

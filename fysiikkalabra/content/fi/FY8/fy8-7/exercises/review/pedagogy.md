@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7484fd155bd7aa7c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 6eb91ace4b5c1ba6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- Solution of the quantum-dot data task: "rako" replaced by the glossary-style term "energia-aukko" in the principle, parts b) and the check; a repair of terminology, meaning unchanged.
+- Method: diff in context.

@@ -210,18 +210,18 @@
     {
       "id": "fy7-13-L2-07",
       "level": 2,
-      "text": "A student determines the wavelength of a laser with a grating and measures with a tape measure the distance $x$ of a maximum from the central maximum. The reading error is always about $\\Delta x = 2\\,\\text{mm}$. Which change reduces the relative error of the wavelength?",
+      "text": "A student determines the wavelength of a laser with a grating and measures with a tape measure the distance $x$ of a maximum from the central maximum. The reading uncertainty is always about $\\Delta x = 2\\,\\text{mm}$. Which change reduces the relative uncertainty of the wavelength?",
       "kind": [
         "experiment",
         "concept"
       ],
-      "answer": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
+      "answer": "Measure a more distant maximum, because the same reading uncertainty is a smaller part of a larger distance.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "Move the screen closer to the grating, because a shorter distance reduces the measurement error.",
-          "feedback": "Wrong: when $L$ decreases, $x$ also decreases. The same $\\Delta x$ is then a larger part of the distance, so the relative error grows."
+          "feedback": "Wrong: when $L$ decreases, $x$ also decreases. The same $\\Delta x$ is then a larger part of the distance, so the relative uncertainty grows."
         },
         {
           "text": "Use a sparser grating, because then the maxima are closer together and the error is shared among more of them.",
@@ -232,8 +232,8 @@
           "feedback": "Wrong: the brightness of the laser does not affect the positions of the maxima. The positions are determined by the wavelength, the grating spacing and the distance $L$, not by the intensity of the light."
         },
         {
-          "text": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
-          "feedback": "Correct: when the maximum of a higher order is measured, $x$ is larger but the reading error $\\Delta x$ stays the same. The relative error $\\Delta x : x$ becomes smaller, and the same holds for the wavelength.",
+          "text": "Measure a more distant maximum, because the same reading uncertainty is a smaller part of a larger distance.",
+          "feedback": "Correct: when the maximum of a higher order is measured, $x$ is larger but the reading uncertainty $\\Delta x$ stays the same. The relative uncertainty $\\Delta x : x$ becomes smaller, and the same holds for the wavelength.",
           "correct": true
         }
       ]

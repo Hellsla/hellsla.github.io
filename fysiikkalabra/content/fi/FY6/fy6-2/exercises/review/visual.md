@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7a0d19ceab83f0dd
+CONTENT-HASH: cf7e2ad112db4616
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: 7a0d19ceab83f0dd
 - none
 
 ## Checked
-- open-exercises-1280-1 (task 2-1, changed Vastaus: "virhearvio"): reads correctly, rows aligned.
-- open-exercises-L2-1280-12 (tasks 2-17/2-18 with the multimeter figure, tolerance only changed): figure legible, labels intact, no answer shown; solution rows aligned.
+- Delta (reflow, 5d), round 3. Opened all 1 proof sheet(s) fi-fy6-2-exercises-* and every numbered formula; all `fits`, breaks sensible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

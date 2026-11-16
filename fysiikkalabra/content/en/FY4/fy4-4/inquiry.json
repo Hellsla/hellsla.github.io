@@ -513,7 +513,7 @@
           "detail": "In the horizontal direction $F - F_\\mu = ma$ and in the vertical direction $N - mg = 0$, the positive directions named; $a \\approx 1.7\\,\\text{m/s}^2$."
         }
       ],
-      "model": "The Earth (weight $\\overline{G}$), the table (normal force $\\overline{N}$ and friction force $\\overline{F}_\\mu$) and the hand (pushing force $\\overline{F}$) act on the book. In the vertical direction the book does not accelerate, so $N - mg = 0$ and $$\\begin{aligned} &N = mg \\\\ &= 1.2\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 11.8\\,\\text{N} \\end{aligned}$$. In the horizontal direction, when the positive direction is the direction of the push, $F - F_\\mu = ma$, so $$\\begin{aligned} &a = \\dfrac{F - F_\\mu}{m} \\\\ &= \\dfrac{5.0\\,\\text{N} - 3.0\\,\\text{N}}{1.2\\,\\text{kg}} \\\\ &\\approx 1.7\\,\\text{m/s}^2 \\end{aligned}$$. The net force $2.0\\,\\text{N}$ and the acceleration point in the direction of the push."
+      "model": "The Earth (weight $\\overline{G}$), the table (normal force $\\overline{N}$ and friction force $\\overline{F}_\\mu$) and the hand (pushing force $\\overline{F}$) act on the book. In the vertical direction the book does not accelerate, so $N - mg = 0$ and $N = mg = 1.2\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2 \\approx 11.8\\,\\text{N}$. In the horizontal direction, when the positive direction is the direction of the push, $F - F_\\mu = ma$, so $a = \\dfrac{F - F_\\mu}{m} = \\dfrac{5.0\\,\\text{N} - 3.0\\,\\text{N}}{1.2\\,\\text{kg}} \\approx 1.7\\,\\text{m/s}^2$. The net force $2.0\\,\\text{N}$ and the acceleration point in the direction of the push."
     },
     {
       "id": "lahtolippu",

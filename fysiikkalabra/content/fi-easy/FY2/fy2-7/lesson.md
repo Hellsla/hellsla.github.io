@@ -518,7 +518,12 @@ E_\text{häviö} &= E_\text{lähtö} - E_\text{perille} \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Kymmenen prosenttia energiasta $245\,\text{MWh}$ olisi $24{,}5\,\text{MWh}$. Luku $9{,}0\,\%$ on hieman pienempi, joten häviö $22\,\text{MWh}$ on oikean suuruinen. Lisäksi $222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} = 245\,\text{MWh}$, eli energia säilyy.
+**Järkevyys.** Kymmenen prosenttia energiasta $245\,\text{MWh}$ olisi $24{,}5\,\text{MWh}$. Luku $9{,}0\,\%$ on hieman pienempi, joten häviö $22\,\text{MWh}$ on oikean suuruinen. Lisäksi $$
+\begin{aligned}
+&222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} \\
+&= 245\,\text{MWh}
+\end{aligned}
+$$, eli energia säilyy.
 
 ## Yleinen virhekäsitys
 

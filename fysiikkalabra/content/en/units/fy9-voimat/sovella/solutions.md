@@ -47,7 +47,7 @@ T &= 280\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 \end{aligned}
 $$
 **Answer:** $T \approx 1.3\,\text{kN}$, two significant figures like the angle $14^\circ$ and the coefficient of friction $0.25$.
-**Reasonableness:** The component of the weight along the ramp is $665\,\text{N}$ and the friction $666\,\text{N}$, so the winch works against friction almost as much as it lifts the boat. The pull is about half of the weight $2.7\,\text{kN}$: the ramp makes the work lighter, but friction takes a large part of it.
+**Reasonableness:** The component of the weight along the ramp is $665\,\text{N}$ and the friction $666\,\text{N}$, so the winch works against friction almost as much as it lifts the boat. The pull is about half of the weight $2.7\,\text{kN}$: the ramp reduces the force needed, not the work, but friction takes a large part of that gain.
 
 ### c)
 **Given:** $m = 280\,\text{kg}$, $\alpha = 14^\circ$, coefficient of static friction $\mu_0 = 0.35$, $g = 9.81\,\text{m/s}^2$
@@ -349,7 +349,7 @@ $$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the r
 ### a)
 **Given:** limiting angles $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ and $33^\circ$; in measurement 5 the book was lifted with a jerk
 **Find:** the coefficient of static friction $\mu_0$ and its uncertainty
-**Principle:** At the limiting angle the component of the weight along the cover is as large as the largest value of static friction, and the normal force is the perpendicular component of the weight (chapter *Weight, friction and the inclined plane*). Measurement 5 is left out, because a gross error is recorded in the report: a quick lift momentarily presses the cover against the phone, so the normal force and the upper limit of static friction grow for a moment, and the angle is read too late. So $33^\circ$ is not the limit of sliding. A result would not be removed only because it differs from the others.
+**Principle:** At the limiting angle the component of the weight along the cover is as large as the maximum (fully developed) static friction, and the normal force is the perpendicular component of the weight (chapter *Weight, friction and the inclined plane*). Measurement 5 is left out, because a gross error is recorded in the report: a quick lift momentarily presses the cover against the phone, so the normal force and the upper limit of static friction grow for a moment, and the angle is read too late. So $33^\circ$ is not the limit of sliding. A result would not be removed only because it differs from the others.
 **Formula:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, so $\mu_0 = \tan\alpha_0$. The limiting angle is the mean of the accepted readings, $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, so $\mu_0 = \tan\alpha_\text{ka}$, and the uncertainty is half the range, $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$
 **Conversions:** None needed. The angles are in degrees, and the coefficient has no unit.
 **Substitution:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22.5^\circ$ and $\mu_0 = \tan 22.5^\circ = 0.414$. Limits of the spread: $\tan 21^\circ = 0.384$ and $\tan 24^\circ = 0.445$

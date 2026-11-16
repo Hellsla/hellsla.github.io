@@ -1,25 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 54aea9709824828a
+CONTENT-HASH: 6d4426affade3fc5
 
 ## Blocking
-(none) The two round-2 blockers are fixed at 390 px:
-- k2 c: the boxed answer "(1,74 ± 0,08)·10^11 C/kg" is complete and inside the card (page-390-16).
-- k2 b and c Sijoitus chains: they wrap at "=" and "ja" and every row fits the card (page-390-15, -16).
-- k5, k6 and k7 chains (page-390-36, -37, -44, -46) have no clipped rows. Equations are aligned and the fractions are legible.
+(none)
 
 ## Polish
-- [Minor] k7 c Sijoitus (page-390-46) — "säästö = (6912 MWh − 228,5 MWh) · 50" has no unit on the 50 and no result on that row. Write "· 50 €/MWh" and add "= 3,0·10^5 €" before "ja takaisinmaksuaika". For science: the unit is missing in the substitution.
-- [Minor] k5 b (page-390-37) — the inline "Keskiarvo \frac{3,327+3,347+3,321}{3} µm" is set small on its own row. Use \tfrac or a display line.
-- [Minor] k2 c (page-390-15) — the row "B²k = 6,4·10^-7 T²·1,81·10^-5 m²/V" runs almost to the card edge at 390 px. It fits, but is tight.
-- [Minor] Out of scope, noted for the teacher: the "120 p:n"/"70 p." line break comes from the shared lang key koe.max.
+- [Major, may wait: known, listed issue, work queue 5d] shots/FY7-koe-stage-osa-3-390-5.png (task 6 c, Sijoitus; solutions.md:305-306) — at 390 px the rows "1,728 MW · 4000 h = 6912 MWh", "0,0571 MW · 4000 h = 228,5 MWh" and "= (6912 MWh − 228,5 MWh) · 50 €/MWh = 334 200 €" are clipped. I confirmed it in the capture. It may wait because the rows are in docs/clipped-formulas.tsv (FY7-koe, lines 60-62), the fix is the separate re-break PR of item 5d (own PR, no other content changes), the lines are not part of this change, and the clipped step's result still shows in Vastaus and Järkevyys. Do it in 5d; a new visual look is needed after the re-break.
+- [Minor] fig-3 / fig-12 — markers and error bars are small at 390 px; make them a little larger.
+- [Minor] osa-2-390-4 (task 2 b, Järkevyys) — the unit fraction 1/(T²·m²/V) = V/(T²m²) is tiny in its display box; set it larger or inline.
+- [Minor] fig-6 — the t-axis numbers sit at the bottom of the plot, not on the axis; ticks on the axis would be clearer.
 
 ## Checked
-- contact-1 to contact-4 (the page at 390 px, captures #1–#48), for triage.
-- page-390-15, -16 and -17: k2 b, c and d. Opened at readable size.
-- page-390-36, -37: k5 b and c. Opened at readable size.
-- page-390-44: k6 a Sijoitus. Opened at readable size.
-- page-390-46: k7 c Sijoitus. Opened at readable size.
-- Not opened at full size: the 1280 px captures and the fig-N-390 captures. The figure score is carried from the contact sheets only.
+- top-390, fig-1, fig-3, fig-6, fig-12 (graphs: quantities, units, ticks, labelled points fine); fig-2, 4, 5 and 14 (inline formulas render and read).
+- stage-osa-1-390-1, osa-2-390-1, osa-2-390-4, osa-2-390-12, osa-3-390-1, osa-3-390-5; page-1280-5 (opened model answer, wide layout).
+- Not opened: the contact sheets and the other page-390/1280 parts. The verdict rests on this sample.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4

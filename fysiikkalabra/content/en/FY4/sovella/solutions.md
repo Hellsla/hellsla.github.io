@@ -86,7 +86,7 @@
 **Find:** the free-body diagram of the skier during the run, when air resistance is not taken into account
 **Principle:** The object is chosen to be the skier with equipment, and we look for what interacts with it: the Earth (weight) and the snow of the slope (normal force and friction). Air is left out according to the problem. The skier does not push with poles, so there is no forward force: the motion down the slope does not need a force of its own.
 
-<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Two figures. On the left a picture of the situation: the skier glides upright down a snowy slope to the right, and a blue velocity arrow v points down the slope. On the right the skier&#x27;s free-body diagram, with the skier as a rectangle tilted parallel to the slope: the weight G from the centre straight down, the normal force N from the lower surface perpendicular to the slope and away from it, and kinetic friction from the upper corner of the lower surface up the slope. The components of the weight as dashed lines from the centre: G x down the slope and G y perpendicular to the slope and towards it; G y is as long as the normal force and G x is longer than the friction. Separately an orange acceleration arrow a down the slope. Axes: x down the slope and y perpendicular to the slope, away from it. The slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Two figures. On the left a picture of the situation: the skier glides upright down a snowy slope to the right, and a blue velocity arrow v points down the slope. On the right the skier&#x27;s free-body diagram, with the skier as a rectangle tilted parallel to the slope: the weight G from the centre straight down, the normal force N from the lower surface perpendicular to the slope and away from it, and sliding friction from the upper corner of the lower surface up the slope. The components of the weight as dashed lines from the centre: G x down the slope and G y perpendicular to the slope and towards it; G y is as long as the normal force and G x is longer than the friction. Separately an orange acceleration arrow a down the slope. Axes: x down the slope and y perpendicular to the slope, away from it. The slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart." style="max-width:100%;font-size:24px">
   <foreignObject x="80" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation}$</div></foreignObject>
   <path d="M14,170 L286.5,269 L286.5,380 L14,380 Z" fill="#f8fbfd" stroke="#9fb8c8" stroke-width="2" stroke-linejoin="round"/>
   <path d="M61.5,185 L185.5,230.5 L197.5,227 L185.5,225 L63.5,180.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
@@ -156,13 +156,13 @@
 **Model answer:** The skier is drawn as a rectangle parallel to the slope.
 - The weight $\overline{G}$ starts from the centre and points straight down, not perpendicular to the slope.
 - The normal force $\overline{N}$ starts from the lower surface and points perpendicular to the slope, away from it. It is equal to the component of the weight perpendicular to the slope, so it is slightly smaller than the weight.
-- The kinetic friction $\overline{F}_\mu$ starts from the upper corner of the lower surface and points up the slope, because the skier slides down the slope.
+- The sliding friction $\overline{F}_\mu$ starts from the upper corner of the lower surface and points up the slope, because the skier slides down the slope.
 
 The acceleration $\overline{a}$ points down the slope, so the sum of the forces also points down the slope: the component of the weight along the slope is larger than the friction. The acceleration arrow is drawn next to the object in its own colour, because it is not a force. The dashed arrows $G_x$ and $G_y$ in the model figure are the components of the weight along the slope and perpendicular to it, not new forces: together they replace the weight and help with the equations of motion in part c. They do not need to be drawn in your own free-body diagram. In the model figure the slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart: on a $4.0^\circ$ slope the normal force is almost equal to the weight and the friction is very short.
 
 ### c)
 **Given:** the angle of inclination of the slope $\alpha = 4.0^\circ$, $g = 9.81\,\text{m/s}^2$ and the graph of part a; mass $m = 72\,\text{kg}$
-**Find:** the coefficients of kinetic friction $\mu_\text{A}$ and $\mu_\text{B}$
+**Find:** the coefficients of sliding friction $\mu_\text{A}$ and $\mu_\text{B}$
 **Principle:** The graphs are straight lines, so the acceleration is constant and it is the slope of the line. By Newton's second law the acceleration is caused by the sum of the forces, so the friction force is deduced from the acceleration and the coefficient of friction from that. On a slope it is best to choose the axes along the slope, because the motion is along the slope.
 **Free-body diagram:** The diagram of part b: the $x$-axis down the slope and the $y$-axis perpendicular to the slope, away from it. The components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. The normal force is in the direction of the $y$-axis and the friction opposite to the $x$-axis.
 ```voimakuvio
@@ -256,7 +256,7 @@ komponentit G
 
 **Model answer:** The acceleration decreases more and more steeply as the speed increases, so a straight line does not fit the points; a curve does. The friction force does not depend on the speed, but air resistance grows with the speed, so the decrease in the acceleration is caused by air resistance. At a very low speed air resistance is almost zero. When the curve is extended to the speed $v = 0$, it gives the acceleration without air resistance: $a_0 \approx 0.45\,\text{m/s}^2$.
 
-Substituting $a_0$ into the equation of part c: $$\begin{aligned} &\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} \\ &= \dfrac{(0.684 - 0.45)\,\text{m/s}^2}{9.786\,\text{m/s}^2} \\ &\approx 0.024 \end{aligned}$$.
+Substituting $a_0$ into the equation of part c: $\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0.684 - 0.45)\,\text{m/s}^2}{9.786\,\text{m/s}^2} \approx 0.024$.
 
 The value $0.030$ of part c is therefore about $0.006$ too large, an error of about a fifth of the value of part c, because there the slowing effect of air resistance was counted as friction. This is a systematic error: it always changes the result in the same direction, and repeating the runs does not remove it. The error is about three times the uncertainty of reading the slope, $0.002$, but smaller than the difference between the waxes, $0.015$. In the slower run B air resistance has a smaller effect, so wax A glides better also after the correction.
 
@@ -283,7 +283,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed in the calculation. For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m}} = \sqrt{294.3}\,\text{m/s} = 17.2\,\text{m/s}$ and $17.2 \cdot 3.6\,\text{km/h} = 61.8\,\text{km/h}$
 **Answer:** $v \approx 17.2\,\text{m/s} \approx 62\,\text{km/h}$, three significant figures like the height $15.0\,\text{m}$. The instructor's claim is thus based on a model in which mechanical energy is conserved.
-**Reasonableness:** The same speed would be reached if the rider fell freely $15\,\text{m}$. It is the greatest possible speed, because in reality part of the energy changes into heat.
+**Reasonableness:** The same speed would be reached if the rider fell freely $15\,\text{m}$. It is the greatest possible speed, because in reality part of the energy changes into internal energy.
 
 ### b)
 **Given:** $m = 62\,\text{kg}$, $h = 15.0\,\text{m}$, the length of the cable from the starting platform to the beginning of the brake $s = 180\,\text{m}$ and the measured speed $v = 11.2\,\text{m/s}$
@@ -293,7 +293,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 9123\,\text{J}$ and $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11.2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{res} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29.1\,\text{N}$
 **Answer:** $F_\text{res} \approx 29\,\text{N}$, two significant figures like the mass $62\,\text{kg}$.
-**Reasonableness:** The force is about $5\,\%$ of the rider's weight $608\,\text{N}$, which fits the friction of the wheels and air resistance. However, the distance is long, so more than half of the energy changes into heat: $5234\,\text{J} : 9123\,\text{J} \approx 0.57$.
+**Reasonableness:** The force is about $5\,\%$ of the rider's weight $608\,\text{N}$, which fits the friction of the wheels and air resistance. However, the distance is long, so more than half of the energy changes into internal energy: $5234\,\text{J} : 9123\,\text{J} \approx 0.57$.
 
 ### c)
 **Given:** $m = 95\,\text{kg}$, $h = 15.0\,\text{m}$, $s = 180\,\text{m}$ and the work of the resisting force from part b, $F_\text{res}\,s = 5234\,\text{J}$ ($F_\text{res} \approx 29\,\text{N}$)
@@ -323,7 +323,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 - In part d it is only stated that "the heavy one goes faster" or "the mass does not matter", without comparing either claim with the resisting forces.
 
 ### Hyväksytään myös
-- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $$\begin{aligned} &F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} \\ &= 5220\,\text{J} \end{aligned}$$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
+- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
 - In part d the conclusion may be based on the estimate of part c, $14\,\text{m/s}$, or on the reference value of the frictionless model, $17.2\,\text{m/s}$. Either justified choice earns the point for the conclusion.
 
 ## fy4-s3
@@ -331,7 +331,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### a)
 **Given:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, sliding distance $s = 4.2\,\text{m}$, coefficient of friction $\mu = 0.75$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the cars' common speed $v'$ right after the collision
-**Principle:** After the collision the cars move as one object with the mass $m = m_\text{A} + m_\text{B}$. The road is horizontal, so there is no acceleration in the vertical direction and the normal force is equal to the weight, $N = mg$. The wheels are locked, so the kinetic friction is $F_\mu = \mu N = \mu mg$, and it is the only horizontal force. Friction does negative work until the kinetic energy has been used up (the work–energy principle). Newton's second law gives the same result: the deceleration is $\mu g$.
+**Principle:** After the collision the cars move as one object with the mass $m = m_\text{A} + m_\text{B}$. The road is horizontal, so there is no acceleration in the vertical direction and the normal force is equal to the weight, $N = mg$. The wheels are locked, so the sliding friction is $F_\mu = \mu N = \mu mg$, and it is the only horizontal force. Friction does negative work until the kinetic energy has been used up (the work–energy principle). Newton's second law gives the same result: the deceleration is $\mu g$.
 **Formula:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, so $v' = \sqrt{2\mu g s}$
 **Conversions:** Not needed. The masses cancel, so they are not needed in this part.
 **Substitution:** $v' = \sqrt{2 \cdot 0.75 \cdot 9.81\,\text{m/s}^2 \cdot 4.2\,\text{m}} = \sqrt{61.8}\,\text{m/s} = 7.86\,\text{m/s}$
@@ -473,7 +473,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Formula:** $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Formula:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Conversions:** For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7.86\,\text{m/s}}{1700\,\text{kg}} = 13.6\,\text{m/s}$ and $13.6 \cdot 3.6\,\text{km/h} = 49\,\text{km/h}$
 **Answer:** $v_\text{B} \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the sliding distance $4.2\,\text{m}$ and the coefficient of friction $0.75$ are known to two figures. The account is not true: according to the model, the speed of car B just before the collision was about $49\,\text{km/h}$, about $9\,\text{km/h}$ over the limit.
@@ -487,7 +487,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed.
 **Substitution:** $F_\text{avg} = \dfrac{68\,\text{kg} \cdot 7.86\,\text{m/s}}{0.12\,\text{s}} = 4455\,\text{N}$ and $\dfrac{F_\text{avg}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6.7$
 **Answer:** $F_\text{avg} \approx 4.5\,\text{kN}$, that is, about $6.7$ times the driver's weight. Two significant figures like the duration of the collision $0.12\,\text{s}$.
-**Reasonableness:** The driver's average acceleration is $7.86\,\text{m/s} : 0.12\,\text{s} \approx 66\,\text{m/s}^2$, almost $7g$. It is large but typical for a rear-end collision, and the force is spread over the whole area of the seat back, so the body can withstand it. The peak force is larger than the average.
+**Reasonableness:** The driver's average acceleration is $$\begin{aligned} &7.86\,\text{m/s} : 0.12\,\text{s} \\ &\approx 66\,\text{m/s}^2 \end{aligned}$$, almost $7g$. It is large but typical for a rear-end collision, and the force is spread over the whole area of the seat back, so the body can withstand it. The peak force is larger than the average.
 
 ### d)
 **Find:** why a head restraint and a flexible seat back reduce injuries

@@ -327,6 +327,19 @@
       "answer": 428,
       "unit": "nm",
       "tolerance": 0.04
+    },
+    {
+      "id": "fy8-1-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "text": "Source: <a href=\"https://phet.colorado.edu/en/simulations/photoelectric\" target=\"_blank\" rel=\"noopener\">PhET – Photoelectric Effect</a> (accessed 16 November 2026)\n\nIn the simulation light hits a metal plate, and the electrons released from the plate show up as a current. The wavelength ($\\text{nm}$) and the intensity ($\\%$) of the light are set with sliders; the frequency is not set. The simulation runs in the browser.\n\na) Choose sodium as the target metal and keep the battery voltage at zero. Change the wavelength over the whole range of the slider and find at which wavelengths electrons are released. You may also try other metals.\n\nb) Find the longest wavelength $\\lambda_0$ at which electrons are still released and write it down. Convert it to the threshold frequency $f_0 = \\tfrac{c}{\\lambda_0}$ and calculate the photon energy $hf_0$ that corresponds to the threshold frequency, in electronvolts. Use $c = 2.998 \\cdot 10^8\\,\\text{m/s}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nc) Choose a wavelength at which electrons are released. First change the intensity, then change the wavelength to a shorter one. Record how the current, that is, the number of released electrons, and the greatest kinetic energy of the electrons change. You find the kinetic energy by adjusting the battery voltage until the current stops (the stopping voltage), or from the energy graph of the simulation.\n\nd) Explain why the classical wave model alone, in which the energy of the light is spread evenly over the surface, does not explain your observations in parts a) and c).\n\nEnter in the box the photon energy $hf_0$ for sodium from part b), corresponding to the threshold frequency, in $\\text{eV}$.",
+      "answer": 2.3,
+      "unit": "eV",
+      "tolerance": 0.05
     }
   ],
   "level3": [

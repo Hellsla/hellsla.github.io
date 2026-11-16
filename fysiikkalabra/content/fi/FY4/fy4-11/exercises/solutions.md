@@ -122,7 +122,7 @@ a &= \frac{1}{2 \cdot 0{,}0637\,\text{s}^2/\text{m}} \\
 &= 7{,}85\,\text{m/s}^2
 \end{aligned}
 ```
-**Vastaus:** $7{,}9\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska jarrutusmatkat on mitattu kolmen tai neljän numeron tarkkuudella ja suoran luenta on likimääräinen.
+**Vastaus:** $7{,}9\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska jarrutusmatkat on mitattu kahden tai kolmen numeron tarkkuudella ja suoran luenta on likimääräinen.
 **Järkevyys:** Tulos on lähellä kuivan asfaltin arvoa $9{,}0\,\text{m/s}^2$ mutta hieman pienempi. Tarkistus yhdellä pisteellä: nopeudella $20{,}0\,\text{m/s}$ saadaan $\dfrac{(20{,}0\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 25{,}5\,\text{m}$, ja mitattu arvo on $25{,}9\,\text{m}$. Kun nopeus kaksinkertaistuu $10$:stä $20\,\text{m/s}$:iin, matka kasvaa $6{,}5\,\text{m}$:stä $25{,}9\,\text{m}$:iin eli noin nelinkertaiseksi, kuten neliöllinen riippuvuus ennustaa.
 
 ## fy4-11-L2-06
@@ -141,7 +141,7 @@ v_0 &= \frac{1250\,\text{kg}\cdot\text{m/s}}{75{,}0\,\text{kg}} \\
 \end{aligned}
 ```
 **Vastaus:** $60\,\text{km/h}$, kaksi merkitsevää numeroa, koska suoran kulmakerroin luetaan kuvaajasta likimääräisesti.
-**Järkevyys:** Tulo $F_\text{ka}\,\Delta t$ on jokaisessa mittauksessa lähes sama: $$\begin{aligned} &24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} \\ &= 1{,}24\,\text{kN}\cdot\text{s} \end{aligned}$$ ja $$\begin{aligned} &6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} \\ &= 1{,}26\,\text{kN}\cdot\text{s} \end{aligned}$$, kuten pitääkin, kun liikemäärän muutos on vakio. Pisin pysähtymisaika antaa pienimmän voiman, joten aineisto näyttää vyön joustavuuden vaikutuksen.
+**Järkevyys:** Tulo $F_\text{ka}\,\Delta t$ on jokaisessa mittauksessa lähes sama: $24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} = 1{,}24\,\text{kN}\cdot\text{s}$ ja $6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} = 1{,}26\,\text{kN}\cdot\text{s}$, kuten pitääkin, kun liikemäärän muutos on vakio. Pisin pysähtymisaika antaa pienimmän voiman, joten aineisto näyttää vyön joustavuuden vaikutuksen.
 
 ## fy4-11-L2-07
 **Annettu:** jarrutusmatka nopeudesta $50\,\text{km/h}$ on $12{,}0\,\text{m}$, kysytään jarrutusmatka nopeudesta $90\,\text{km/h}$; hidastuvuus vakio ja sama molemmissa
@@ -181,7 +181,7 @@ Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{
 **Periaate:** Ensin lasketaan etäisyys $d$ pysähtymismatkan kaavasta. Nopeudella $40\,\text{km/h}$ auto kulkee reaktiomatkan tasaisella nopeudella ja jarruttaa loput matkasta. Jos nopeus lapsen kohdalla on $v$, pysähtyminen vaatisi vielä matkan $\tfrac{v^2}{2a}$, joten koko jarrutusmatka on lapseen asti jarrutettu matka plus tämä.
 **Kaava:** $d = u\,t_\text{r} + \dfrac{u^2}{2a}$, jossa $u = 30\,\text{km/h}$, ja $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$, joten $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Muunnokset:** $u = 30\,\text{km/h} \approx 8{,}333\,\text{m/s}$ ja $v_0 = 40\,\text{km/h} \approx 11{,}11\,\text{m/s}$; vastaus kerrotaan lopuksi luvulla $3{,}6$.
-**Sijoitus:** $$\begin{aligned} &d = 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \dfrac{(8{,}333\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} \\ &= 8{,}333\,\text{m} + 3{,}858\,\text{m} \\ &= 12{,}19\,\text{m} \end{aligned}$$; $d - v_0\,t_\text{r} = 12{,}19\,\text{m} - 11{,}11\,\text{m} = 1{,}080\,\text{m}$; $$\begin{aligned} &v^2 = (11{,}11\,\text{m/s})^2 \\ &- 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\,\text{m} \\ &= 104{,}0\,\text{m}^2/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{104{,}0}\,\text{m/s} = 10{,}20\,\text{m/s} = 36{,}7\,\text{km/h}$
+**Sijoitus:** $d = 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(8{,}333\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} = 8{,}333\,\text{m} + 3{,}858\,\text{m} = 12{,}19\,\text{m}$; $d - v_0\,t_\text{r} = 12{,}19\,\text{m} - 11{,}11\,\text{m} = 1{,}080\,\text{m}$; $v^2 = (11{,}11\,\text{m/s})^2 - 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\,\text{m} = 104{,}0\,\text{m}^2/\text{s}^2$, joten $v = \sqrt{104{,}0}\,\text{m/s} = 10{,}20\,\text{m/s} = 36{,}7\,\text{km/h}$
 **Vastaus:** $37\,\text{km/h}$, kaksi merkitsevää numeroa kuten reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuudessa $9{,}0\,\text{m/s}^2$.
 **Järkevyys:** Nopeudella $40\,\text{km/h}$ jo reaktiomatka $11{,}1\,\text{m}$ vie lähes koko $12{,}2\,\text{m}$:n matkan, joten jarrutukseen jää vain noin metri, ja nopeus ehtii pienentyä vain vähän. Siksi auto osuisi lapseen lähes alkuperäisellä nopeudellaan, vaikka nopeus ylittää rajoituksen vain $10\,\text{km/h}$:lla.
 
@@ -201,7 +201,7 @@ Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{
 **Periaate:** Edellä ajava auto alkaa jarruttaa heti ja pysähtyy jarrutusmatkansa päähän. Takana ajava kulkee ensin reaktiomatkan ja sitten pidemmän jarrutusmatkan, koska sen hidastuvuus on pienempi. Edellä ajava liikkuu koko ajan hitaammin kuin takana ajava, joten välimatka pienenee, kunnes takana ajava pysähtyy. Törmäystä ei tapahdu, jos välimatka on vähintään yhtä suuri kuin autojen kulkemien matkojen erotus.
 **Kaava:** $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, joten $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
 **Muunnokset:** $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 22{,}22\,\text{m/s}$
-**Sijoitus:** $$\begin{aligned} &d = 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 6{,}0\,\text{m/s}^2} \\ &- \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} \\ &= 22{,}22\,\text{m} + 41{,}15\,\text{m} \\ &- 27{,}43\,\text{m} \\ &= 35{,}94\,\text{m} \end{aligned}$$
+**Sijoitus:** $d = 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 6{,}0\,\text{m/s}^2} - \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} = 22{,}22\,\text{m} + 41{,}15\,\text{m} - 27{,}43\,\text{m} = 35{,}94\,\text{m}$
 **Vastaus:** $36\,\text{m}$, kaksi merkitsevää numeroa kuten reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuuksissa.
 **Järkevyys:** Jos autojen hidastuvuudet olisivat samat, välimatkaksi riittäisi reaktiomatka $22\,\text{m}$. Kuluneet renkaat lisäävät tarvittavaa väliä noin $14\,\text{m}$. Välimatka $36\,\text{m}$ vastaa noin $1{,}6\,\text{s}$:n ajoaikaa nopeudella $22\,\text{m/s}$.
 
@@ -243,7 +243,7 @@ s_\text{p} &= 22{,}22\,\text{m/s} \cdot 1{,}2\,\text{s} \\
 **Kuvaajan lukeminen:** Välien nopeuden muutokset ovat $1{,}6$; $3{,}3$; $4{,}5$; $3{,}4$; $1{,}5$ ja $0{,}7\,\text{m/s}$. Nopeus muuttuu eniten välillä $40$–$60\,\text{ms}$, jolla se pienenee $4{,}5\,\text{m/s}$. Nuken pysähtymisaika on $120\,\text{ms}$, koska nopeus on silloin nolla.
 **Kaava:** $s = \sum \tfrac{v_\text{alku} + v_\text{loppu}}{2}\,\Delta t$, $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$ ja kullakin välillä $F = \dfrac{m\,\Delta v_\text{väli}}{\Delta t_\text{väli}}$
 **Muunnokset:** $20\,\text{ms} = 0{,}020\,\text{s}$ ja $120\,\text{ms} = 0{,}120\,\text{s}$.
-**Sijoitus:** a) Keskinopeuksien summa on $$\begin{aligned} &14{,}2 + 11{,}75 + 7{,}85 \\ &+ 3{,}9 + 1{,}45 + 0{,}35 \\ &= 39{,}5\,\text{m/s} \end{aligned}$$, joten
+**Sijoitus:** a) Keskinopeuksien summa on $14{,}2 + 11{,}75 + 7{,}85 + 3{,}9 + 1{,}45 + 0{,}35 = 39{,}5\,\text{m/s}$, joten
 ```latex
 \begin{aligned}
 s &= 39{,}5\,\text{m/s} \cdot 0{,}020\,\text{s} \\
@@ -262,12 +262,12 @@ c) Suurin voima on välillä $40$–$60\,\text{ms}$:
 \begin{aligned}
 F_\text{max} &= \frac{80{,}0\,\text{kg} \cdot 4{,}5\,\text{m/s}}{0{,}020\,\text{s}} \\
 &= 18\,000\,\text{N} \\
-&= 18{,}0\,\text{kN}
+&= 18\,\text{kN}
 \end{aligned}
 ```
 d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ riippumatta siitä, onko nuken suojana vyö ja turvatyyny. Jos nukke pysähtyisi ajassa $0{,}010\,\text{s}$, keskimääräinen voima olisi $F_\text{ka} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0{,}010\,\text{s}} = 120\,000\,\text{N}$ eli $120\,\text{kN}$.
-**Vastaus:** c) Suurin voima on $18{,}0\,\text{kN}$, kolme merkitsevää numeroa kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$ ja massassa $80{,}0\,\text{kg}$. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$, kun taas jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$, jolloin keskimääräinen voima olisi $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa, ja turvatyyny jakaa voiman suurelle alalle; ne toimivat yhdessä, ei toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18{,}0\,\text{kN}$ on keskimääräistä suurempi.
-**Järkevyys:** Nuken paino on $$\begin{aligned} &80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 785\,\text{N} \end{aligned}$$, joten suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matka tarkistuu keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$, mikä on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
+**Vastaus:** c) Suurin voima on $18\,\text{kN}$, kaksi merkitsevää numeroa kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$; massassa $80{,}0\,\text{kg}$ numeroita on enemmän, joten se ei rajoita tarkkuutta. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$, kun taas jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$, jolloin keskimääräinen voima olisi $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa, ja turvatyyny jakaa voiman suurelle alalle; ne toimivat yhdessä, ei toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18\,\text{kN}$ on keskimääräistä suurempi.
+**Järkevyys:** Nuken paino on $80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}$, joten suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matka tarkistuu keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$, mikä on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
 
 ## fy4-11-L1-09
 **Annettu:** $v_0 = 80\,\text{km/h}$, lopussa $v = 0$; liukukitkakerroin kumin ja asfaltin välillä MAFY-taulukosta (taulukko *Kitkakertoimia*, kumi–asfaltti, liukukitka): väli $0{,}5$–$0{,}8$, käytetään suurinta arvoa $\mu = 0{,}8$; $g = 9{,}81\,\text{m/s}^2$
@@ -286,7 +286,7 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kuvaajan lukeminen:** Suorakulmion korkeus on $20\,\text{m/s}$ ja leveys $1{,}0\,\text{s}$. Kolmion korkeus on $20\,\text{m/s}$ ja kanta $3{,}5\,\text{s} - 1{,}0\,\text{s} = 2{,}5\,\text{s}$.
 **Kaava:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä.
-**Sijoitus:** $$\begin{aligned} &s = 20\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2{,}5\,\text{s} \\ &= 20\,\text{m} + 25\,\text{m} \\ &= 45\,\text{m} \end{aligned}$$
+**Sijoitus:** $s = 20\,\text{m/s} \cdot 1{,}0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2{,}5\,\text{s} = 20\,\text{m} + 25\,\text{m} = 45\,\text{m}$
 **Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa kuvaajasta luettujen arvojen tarkkuudella.
 **Järkevyys:** Nopeus $20\,\text{m/s}$ on $72\,\text{km/h}$, ja pysähtymismatka $45\,\text{m}$ on tyypillinen. Hidastuvuus on kuvaajan kulmakertoimen suuruus $\dfrac{20\,\text{m/s}}{2{,}5\,\text{s}} = 8{,}0\,\text{m/s}^2$, joka sopii kuivalle tielle. Matka on pienempi kuin se, jonka koko ajan $20\,\text{m/s}$ kulkeva auto kulkisi ajassa $3{,}5\,\text{s}$ ($70\,\text{m}$), kuten pitää.
 
@@ -298,5 +298,57 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kaava:** $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, joten $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä; lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}060\,\text{s}} = 17\,500\,\text{N}$ ja $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}150\,\text{s}} = 7000\,\text{N}$, joten $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10{,}5\,\text{kN}$
-**Vastaus:** $10{,}5\,\text{kN}$, Massa $70\,\text{kg}$ ja nopeus $15\,\text{m/s}$ ovat kahden merkitsevän numeron arvoja, joten myös $11\,\text{kN}$ hyväksytään; kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta.
+**Vastaus:** $11\,\text{kN}$. Massa $70\,\text{kg}$ ja nopeus $15\,\text{m/s}$ ovat kahden merkitsevän numeron arvoja, joten vastaus annetaan kahdella merkitsevällä numerolla. Laskettu arvo on $10{,}5\,\text{kN}$, ja pyöristys tehdään vasta lopussa.
 **Järkevyys:** Koe A: $17{,}5\,\text{kN}$ on noin $25$-kertainen nuken painoon $70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 690\,\text{N}$ nähden, koe B: $7{,}0\,\text{kN}$ noin $10$-kertainen. Voimien suhde $17{,}5/7{,}0 = 2{,}5$ on sama kuin aikojen käänteinen suhde $0{,}150/0{,}060 = 2{,}5$, kuten pitää: sama liikemäärän muutos, pidempi aika, pienempi voima.
+
+## fy4-11-L2-10
+**Annettu:** Tämä on esimerkkiratkaisu, jonka aineisto on luettu 16. marraskuuta 2026. Jos laskurin arvot ovat muuttuneet, käytä itse lukemiasi arvoja samalla menetelmällä. Lähteestä (Liikenneturva: Pysähtymismatka, kohta *Lisätietoa*) on otettu reaktioaika $t_\text{r} = 1\,\text{s}$ sekä keskimääräinen hidastuvuus kuivalla tienpinnalla $a = 9\,\text{m/s}^2$ ja jäisellä $a_\text{jää} = 1{,}5\,\text{m/s}^2$. Lähteen mukaan matkat on pyöristetty lähimpään metriin. Tehtävästä: esteen etäisyys $d = 50\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$.
+**Kysytty:** a) taulukko ja kuvaajan muoto; b) jarrutusmatkat $s_\text{j}$ ja syy siihen, ettei $s_\text{j}$ ole suoraan verrannollinen nopeuteen $v_0$; c) ehtiikö auto pysähtyä, ja törmäysnopeus $v$ yksikössä $\text{km/h}$; d) pysähtymismatkat $s_\text{p}$ kuivalla ja jäisellä tiellä ja eron selitys voimilla; e) arvio väitteestä
+**Periaate:** Reaktioajan auto liikkuu tasaisella nopeudella $v_0$. Laskuri käyttää jarrutuksessa yhtä keskimääräistä hidastuvuutta, joten jarrutus mallinnetaan tasaisesti hidastuvana liikkeenä: nopeus pienenee $(t,v)$-kuvaajassa suoraviivaisesti, ja matka on kuvaajan alle jäävä pinta-ala. Kohdassa d hidastuvuus selitetään Newtonin toisella lailla, koska vaakasuoralla tiellä jarruttavaan autoon vaikuttava ainoa vaakasuora voima on renkaiden ja tien välinen kitka.
+**Kuvaajan lukeminen:** a) Laskurin arvot kuivalla tienpinnalla (reaktiomatka, jarrutusmatka, pysähtymismatka): nopeudella $40\,\text{km/h}$ $11\,\text{m}$, $7\,\text{m}$ ja $18\,\text{m}$; nopeudella $60\,\text{km/h}$ $17\,\text{m}$, $15\,\text{m}$ ja $32\,\text{m}$; nopeudella $80\,\text{km/h}$ $22\,\text{m}$, $27\,\text{m}$ ja $50\,\text{m}$; nopeudella $100\,\text{km/h}$ $28\,\text{m}$, $43\,\text{m}$ ja $71\,\text{m}$. Kuvaajan pisteet $(40;\ 7)$, $(60;\ 15)$, $(80;\ 27)$ ja $(100;\ 43)$ eivät ole samalla suoralla. Niiden kautta kulkee ylöspäin kaartuva käyrä, paraabeli, joka alkaa origosta: jarrutusmatka kasvaa sitä jyrkemmin, mitä suurempi nopeus on.
+**Kaava:** Jarrutusaika saadaan hidastuvuuden määritelmästä $a = \dfrac{v_0}{t_\text{j}}$, joten $t_\text{j} = \dfrac{v_0}{a}$. Jarrutusmatka on kolmion pinta-ala $s_\text{j} = \tfrac{1}{2}\,v_0\,t_\text{j}$, joten $s_\text{j} = \dfrac{v_0^2}{2a}$. Reaktiomatka on $s_\text{r} = v_0\,t_\text{r}$ ja pysähtymismatka $s_\text{p} = s_\text{r} + s_\text{j}$. Jos auto ei ehdi pysähtyä, jarrutukseen jää matka $s = d - s_\text{r}$. Nopeudesta $v$ pysähtyminen vaatisi vielä matkan $\dfrac{v^2}{2a}$, joten $\dfrac{v_0^2}{2a} = s + \dfrac{v^2}{2a}$ eli $v^2 = v_0^2 - 2as$. Kohdassa d Newtonin toisesta laista $\Sigma F = ma$ saadaan $\mu mg = ma$, joten $\mu = \dfrac{a}{g}$. Törmäysnopeus on $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
+**Muunnokset:** $40\,\text{km/h} = \dfrac{40 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 11{,}11\,\text{m/s}$. Samoin $60\,\text{km/h} \approx 16{,}67\,\text{m/s}$, $80\,\text{km/h} \approx 22{,}22\,\text{m/s}$ ja $100\,\text{km/h} \approx 27{,}78\,\text{m/s}$. Laskuissa käytetään pyöristämättömiä arvoja. Lopuksi $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** b) Nopeudella $40\,\text{km/h}$ jarrutusmatka on
+```latex
+\begin{aligned}
+s_\text{j} &= \frac{(11{,}11\,\text{m/s})^2}{2 \cdot 9\,\text{m/s}^2} \\
+&= 6{,}86\,\text{m}
+\end{aligned}
+```
+Samalla tavalla saadaan muilla nopeuksilla $15{,}43\,\text{m}$, $27{,}43\,\text{m}$ ja $42{,}87\,\text{m}$. Metrin tarkkuuteen pyöristettyinä tulokset ovat $7\,\text{m}$, $15\,\text{m}$, $27\,\text{m}$ ja $43\,\text{m}$ eli samat kuin laskurissa. Kaavassa nopeus on toisessa potenssissa. Kun nopeus kaksinkertaistuu arvosta $40\,\text{km/h}$ arvoon $80\,\text{km/h}$, jarrutusmatka kasvaa arvosta $6{,}86\,\text{m}$ arvoon $27{,}43\,\text{m}$ eli nelinkertaiseksi. Suorassa verrannollisuudessa se vain kaksinkertaistuisi.
+c) Nopeudella $80\,\text{km/h}$ reaktiomatka on $s_\text{r} = 22{,}22\,\text{m/s} \cdot 1\,\text{s} = 22{,}22\,\text{m}$ ja pysähtymismatka
+```latex
+\begin{aligned}
+s_\text{p} &= 22{,}22\,\text{m} + 27{,}43\,\text{m} \\
+&\approx 49{,}7\,\text{m}
+\end{aligned}
+```
+Tämä on $0{,}3\,\text{m}$ vähemmän kuin $50\,\text{m}$. Nopeudella $100\,\text{km/h}$ reaktiomatka on $s_\text{r} = 27{,}78\,\text{m/s} \cdot 1\,\text{s} = 27{,}78\,\text{m}$ ja pysähtymismatka $s_\text{p} = 27{,}78\,\text{m} + 42{,}87\,\text{m} \approx 70{,}6\,\text{m}$, mikä on enemmän kuin $50\,\text{m}$. Jarrutukseen jää matka $s = 50\,\text{m} - 27{,}78\,\text{m} = 22{,}22\,\text{m}$, joten
+```latex
+\begin{aligned}
+v^2 &= (27{,}78\,\text{m/s})^2 \\
+&\quad - 2 \cdot 9\,\text{m/s}^2 \cdot 22{,}22\,\text{m} \\
+&= 771{,}6\,\text{m}^2/\text{s}^2 - 400{,}0\,\text{m}^2/\text{s}^2 \\
+&= 371{,}6\,\text{m}^2/\text{s}^2 \\
+v &= 19{,}28\,\text{m/s} \\
+&= 69{,}4\,\text{km/h}
+\end{aligned}
+```
+d) Jäisellä tiellä nopeudella $80\,\text{km/h}$ jarrutusmatka on
+```latex
+\begin{aligned}
+s_\text{j} &= \frac{(22{,}22\,\text{m/s})^2}{2 \cdot 1{,}5\,\text{m/s}^2} \\
+&= 164{,}6\,\text{m}
+\end{aligned}
+```
+ja pysähtymismatka $s_\text{p} = 22{,}22\,\text{m} + 164{,}6\,\text{m} = 186{,}8\,\text{m}$. Kitkakertoimet ovat $\mu = \dfrac{9\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}92$ kuivalla ja $\mu = \dfrac{1{,}5\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}15$ jäisellä tiellä.
+**Vastaus:** c) Törmäysnopeus on noin $69\,\text{km/h}$, kun auton nopeus on aluksi $100\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, koska laskuri ilmoittaa matkat metrin tarkkuudella eli kahdella numerolla ja etäisyydessä $50\,\text{m}$ on kaksi numeroa. Reaktioaika $1\,\text{s}$ ja hidastuvuus $9\,\text{m/s}^2$ ovat mallin sovittuja arvoja, joten tulos on suuntaa antava. Nopeudella $80\,\text{km/h}$ mallin auto pysähtyy noin $0{,}3\,\text{m}$ ennen estettä. Laskuri näyttää pyöristyksen vuoksi $50\,\text{m}$. Vara on paljon pienempi kuin mallin epävarmuus, sillä todellinen reaktioaika ja hidastuvuus vaihtelevat. Käytännössä pysähtymiseen ei siis voi luottaa.
+
+Lisäksi: a) Taulukko ja kuvaajan muoto ovat kohdassa Kuvaajan lukeminen.
+
+b) Lasketut jarrutusmatkat ovat pyöristettyinä samat kuin laskurin arvot, ja jarrutusmatka on verrannollinen nopeuden neliöön, ei nopeuteen.
+
+d) Pysähtymismatka on kuivalla tiellä noin $50\,\text{m}$ ja jäisellä noin $187\,\text{m}$, kuten laskurissakin. Reaktiomatka on sama, mutta jarrutusmatka on kuusinkertainen, koska hidastuvuus on kuudesosa ($9 : 1{,}5 = 6$). Pystysuunnassa paino ja tukivoima kumoavat toisensa. Ainoa vaakasuora voima on renkaiden ja tien välinen kitka, joten $\mu mg = ma$ ja $a = \mu g$. Massa supistuu pois. Jäällä kitkakerroin on noin $0{,}15$ ja kuivalla tiellä noin $0{,}92$, joten jäällä kitka ja hidastuvuus ovat paljon pienemmät.
+
+e) Väite on väärä. ABS estää pyöriä lukkiutumasta, joten autoa voi ohjata ja kitka pysyy lähellä suurinta arvoaan. ABS ei kuitenkaan voi kasvattaa kitkakerrointa suuremmaksi kuin renkaat ja tie sallivat. Suurimmallakin hidastuvuudella jarrutusmatka $s_\text{j} = \tfrac{v_0^2}{2a}$ kasvaa nopeuden neliön mukaan. Laskurissa nopeuden kasvu arvosta $80\,\text{km/h}$ arvoon $100\,\text{km/h}$ eli $25\,\%$ pidentää jarrutusmatkan arvosta $27\,\text{m}$ arvoon $43\,\text{m}$. Mallissa kerroin on $1{,}25^2 \approx 1{,}56$ eli kasvu on $56\,\%$. Myös reaktiomatka pitenee.
+**Järkevyys:** Tarkistus kohtaan c: nopeudesta $19{,}28\,\text{m/s}$ pysähtyminen vaatisi vielä matkan $\dfrac{(19{,}28\,\text{m/s})^2}{2 \cdot 9\,\text{m/s}^2} = 20{,}65\,\text{m}$, ja summa $22{,}22\,\text{m} + 20{,}65\,\text{m}$ on $42{,}87\,\text{m}$ eli koko jarrutusmatka nopeudesta $100\,\text{km/h}$, kuten pitää. Jos käyttää laskurin pyöristettyä reaktiomatkaa $28\,\text{m}$, tulos on $69{,}8\,\text{km/h}$ eli lähes sama. Kitkakerroin $0{,}92$ on sama kuin luvun kuivan asfaltin arvo. Mallin rajat: hidastuvuus oletetaan vakioksi, reaktioaika on kaikilla sama $1\,\text{s}$ ja matkat on pyöristetty metriin. Todelliset arvot vaihtelevat ajoneuvon, renkaiden ja kuljettajan mukaan.

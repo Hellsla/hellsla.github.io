@@ -288,7 +288,7 @@ Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei läh
 E_\text{alussa} = E_\text{lopussa}
 ```
 
-Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös lämpöenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
+Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös sisäenergia on mukana. Sisäenergia on aineen hiukkasten liike-energian ja niiden välisten vuorovaikutusten energian summa. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
 
 ```kaavat
 teho :: P = \frac{\Delta E}{\Delta t}
@@ -310,7 +310,7 @@ Kaavassa $\eta$ on hyötysuhde. $W_\text{a}$ on annettu hyötyenergia ja $P_\tex
 
 Energiaketjussa on monta vaihetta peräkkäin. Jokaisen vaiheen antama hyötyteho on seuraavan vaiheen ottama teho. Kuvan esimerkkilaitoksessa on kolme vaihetta. Niiden hyötysuhteet ovat $\eta_1$, $\eta_2$ ja $\eta_3$. Polttoainetehosta $500\,\text{MW}$ tulee sähköksi $198\,\text{MW}$. Siksi koko laitoksen hyötysuhde on $\eta = \tfrac{198\,\text{MW}}{500\,\text{MW}} \approx 0{,}40$. Kuvan kaistojen leveydet ovat mittakaavassa. Lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva kaista.
 
-<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio lauhdevoimalaitoksesta. Kuva on mittakaavassa. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäinen vaihe on kattila. Sen hyötysuhde on 0,90. Kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toinen vaihe on höyrykierto. Sen hyötysuhde on 0,45. Alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmas vaihe on generaattori ja muuntaja. Sen hyötysuhde on 0,98, ja häviö on vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW. Se on noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi." style="max-width:100%;font-size:20px">
+<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio lauhdevoimalaitoksesta. Kuva on mittakaavassa. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäinen vaihe on kattila. Sen hyötysuhde on 0,90. Kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toinen vaihe on höyrykierto. Sen hyötysuhde on 0,45. Alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmas vaihe on generaattori ja muuntaja. Sen hyötysuhde on 0,98, ja häviö on vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW. Se on noin 40 prosenttia polttoainetehosta. Häviöt siirtyvät hukkalämpönä ympäristöön." style="max-width:100%;font-size:20px">
   <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M8,56 L298,56 L298,129 L198,129 L198,218 L98,218 L98,236 L8,236 Z" fill="url(#fy9en-in)" stroke-linejoin="round"/>
   <path d="M298,56 L368,56 L368,46 L408,91.5 L368,137.5 L368,127.5 L298,127.5 Z" fill="url(#fy9en-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
@@ -350,7 +350,7 @@ Käytetään hyötysuhteen määritelmää. Koko ketjun hyötysuhde on $\eta = \
 
 Hyötysuhteesta saadaan teho, jonka vaihe antaa. Se on vaiheen hyötysuhde kertaa teho, jonka vaihe ottaa. Vaihe ottaa sen tehon, jonka edellinen vaihe antaa:
 
-$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+$$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\ P_2 &= \eta_2 P_1 \\ P_3 &= \eta_3 P_2 \end{aligned}$$
 
 Sijoitetaan tehot peräkkäin:
 
@@ -380,7 +380,7 @@ Ensimmäisessä kaavassa $Q$ on vapautuva lämpö (J), $H$ on lämpöarvo ($\tex
 - **Hyötysuhteet lasketaan yhteen tai vähennetään.** Ketjussa hyötysuhteet kerrotaan. Siksi koko ketjun hyötysuhde on pienempi kuin heikoimman vaiheen hyötysuhde.
 - **Nimittäjä on väärä.** Häviöprosentti ja hyötysuhde lasketaan aina otetusta energiasta. Niitä ei lasketa annetusta energiasta.
 - **Minuutit ovat tunteina.** $30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0{,}50\,\text{h}$. Tehon ja ajan tulo on kilowattitunteja vain silloin, kun aika on tunteina.
-- **Häviöt ”katoavat”.** Häviöt eivät katoa. Ne ovat energiaa, joka on muuttunut muotoon, josta ei ole hyötyä. Yleensä häviöt muuttuvat lämmöksi.
+- **Häviöt ”katoavat”.** Häviöt eivät katoa. Ne ovat energiaa, joka on muuttunut muotoon, josta ei ole hyötyä. Yleensä häviöt muuttuvat sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 - **Yhteistuotannon kokonaishyötysuhdetta verrataan sähköhyötysuhteeseen.** Yhteistuotannossa voimala tuottaa sekä sähköä että kaukolämpöä. Sähkö ja kaukolämpö eivät ole yhtä arvokkaita. Siksi luvut kertovat eri asioista.
 
 ## Kertaa tarvittaessa {Kertaa}

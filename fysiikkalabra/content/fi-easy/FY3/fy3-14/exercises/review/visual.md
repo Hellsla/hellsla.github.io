@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2463f282c511689b
+CONTENT-HASH: 25bf7efe56113c72
 
 ## Blocking
-
+(none)
 
 ## Polish
-- [Minor] fy3-14-L2-09 text — 'Lämpöä ei siirry astiaan eikä ympäristöön' next to 'tuoda lisälämpöä' may read as contradictory; add 'ennen lisälämmön tuomista' (before extra heat is added).
+- [Minor] L3-04 Kaava / L3-05 Järkevyys: the two numerator rows are centred/right-aligned against each other (second row starts with a minus); readable, left-aligning the rows would be tidier.
+- [Minor] L3-05 Järkevyys: the chain T = ... = ... is split into two display boxes; one aligned block would read as one equation.
 
 ## Checked
-- Round 2, delta. Opened fy3-14-open-exercises-L2-1280-12 (9-18 task, bar graph, solution start) and -13 (rest of solution) in this language; fi also 1280-9 (9-9 task, MAFY lookup). Bars end on grid lines at 25, 5 and 60 kJ and match the solution; Q (kJ) axis with unit; labels LaTeX.
-- Hash at start and end the same.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Opened L3-04 (Kaava, Sijoitus, Järkevyys) and L3-05 (Sijoitus, Vastaus, Järkevyys) at 360 px (fi) and 1280 px (en, fi-easy): the two-row-numerator fractions fit, equals signs aligned, nothing clipped.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

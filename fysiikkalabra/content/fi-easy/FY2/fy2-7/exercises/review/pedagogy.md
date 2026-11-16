@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4f14228b78fa5222
+CONTENT-HASH: a1cac1a76ad996ac
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy2-7-L1-09, Järkevyys: "20 * 4 = 80 MJ, hieman vähemmän" is still loose; "20 * 4 = 80 on hieman liikaa, koska 3,6 on pienempi kuin 4".
+- Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- The new sentence "Muunnos 1 kWh = 3,6 MJ on tarkka" is true (definition of the units) and explains why the tolerance is only for table rounding.
-- Key 72 MJ, staged solution and level unchanged; the diff touches nothing else.
-- Hash is the same at the start and the end (4f14228b78fa5222).
+- Delta: L2-10 Periaate adds P = ΔE : Δt before E = PΔt (principle explained); a) 262/11603 = 2,3 % correct; c) wind 7639 MW at 01:00 matches d); numbers consistent.
+- Pedagogy of the tasks unchanged from the earlier PASS.

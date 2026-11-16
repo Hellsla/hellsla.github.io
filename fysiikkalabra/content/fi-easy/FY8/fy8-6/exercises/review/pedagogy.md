@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 138a67d70afe38e3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 3f3114ccfa6f8f33
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- L1 and L2 Vastaus: "usually about 0,1 V smaller" now "slightly smaller; in this chapter's data about 0,1 V": the claim matches what the data show and no longer overgeneralises; the student's reasoning about Salla's cancelling offset still follows.
+- Method: diff in context.

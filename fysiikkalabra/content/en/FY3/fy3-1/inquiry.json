@@ -276,16 +276,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates the weight of a $500\\,\\text{g}$ bag of flour on Earth like this: $G = mg = 500 \\cdot 9.81\\,\\text{m/s}^2 = 4905\\,\\text{N}$. Where is the error?",
+      "prompt": "A student calculates the weight of a $500\\,\\text{g}$ bag of flour on Earth like this: $$\\begin{aligned} G &= mg \\\\ &= 500 \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 4905\\,\\text{N} \\end{aligned}$$. Where is the error?",
       "choices": [
         {
-          "text": "The mass must be converted to kilograms: $G = 0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$.",
+          "text": "The mass must be converted to kilograms: $$\\begin{aligned} G &= 0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 4.91\\,\\text{N} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. The weight comes out in newtons only when the mass is in kilograms, because $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. The reasonableness check says the same: the weight of a half-kilo bag is about $5\\,\\text{N}$, not almost $5000\\,\\text{N}$."
         },
         {
           "text": "The weight should be given in kilograms, so the answer is $500\\,\\text{g}$.",
-          "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is a unit of mass. The mass of the bag is $500\\,\\text{g}$, but its weight is $0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 4.91\\,\\text{N}$."
+          "feedback": "Weight is a force, and the unit of force is the newton. The kilogram is a unit of mass. The mass of the bag is $500\\,\\text{g}$, but its weight is $$\\begin{aligned} &0.500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 4.91\\,\\text{N} \\end{aligned}$$."
         },
         {
           "text": "The acceleration of free fall should be $1.62\\,\\text{m/s}^2$.",
@@ -310,7 +310,7 @@
       "hints": [
         "What stays the same about the box when it is brought from the Moon to Earth? Can you calculate it from the reading on the Moon?",
         "The mass is obtained from the weight on the Moon, $m = \\dfrac{G_\\text{Moon}}{g_\\text{Moon}}$, and the weight on Earth for the same mass is $G_\\text{Earth} = m g_\\text{Earth}$.",
-        "$m = \\dfrac{12\\,\\text{N}}{1.62\\,\\text{m/s}^2} \\approx 7.41\\,\\text{kg}$, so $G_\\text{Earth} = 7.41\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2$."
+        "$m = \\dfrac{12\\,\\text{N}}{1.62\\,\\text{m/s}^2} \\approx 7.41\\,\\text{kg}$, so $$\\begin{aligned} G_\\text{Earth} &= 7.41\\,\\text{kg} \\\\ &\\cdot 9.81\\,\\text{m/s}^2 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -323,7 +323,7 @@
         },
         {
           "value": 7.41,
-          "feedback": "This is the mass of the box in kilograms, not its weight. Still multiply by the Earth's acceleration of free fall: $G_\\text{Earth} = 7.41\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2$."
+          "feedback": "This is the mass of the box in kilograms, not its weight. Still multiply by the Earth's acceleration of free fall: $$\\begin{aligned} G_\\text{Earth} &= 7.41\\,\\text{kg} \\\\ &\\cdot 9.81\\,\\text{m/s}^2 \\end{aligned}$$."
         }
       ],
       "solution": "**Given:** the reading on the Moon, that is, the weight $G_\\text{Moon} = 12\\,\\text{N}$; from the table $g_\\text{Moon} = 1.62\\,\\text{m/s}^2$ and $g_\\text{Earth} = 9.81\\,\\text{m/s}^2$\n\n**Find:** the weight of the box on Earth $G_\\text{Earth}$ in newtons\n\n**Principle:** A force meter shows the weight, and weight is directly proportional to mass: $G = m g$. The box is brought as it is, so its mass stays the same and only $g$ changes. The mass links the reading on the Moon to the weight on Earth.\n\n**Formula:** $G_\\text{Moon} = m g_\\text{Moon}$ and $G_\\text{Earth} = m g_\\text{Earth}$, so $m = \\dfrac{G_\\text{Moon}}{g_\\text{Moon}}$ and\n\n$$G_\\text{Earth} = m g_\\text{Earth} = G_\\text{Moon} \\frac{g_\\text{Earth}}{g_\\text{Moon}}$$\n\n**Conversions:** No conversions are needed: the weight is in newtons and $g$ in $\\text{m/s}^2$, so the mass comes out in kilograms and the weight on Earth in newtons.\n\n**Substitution:** $m = \\dfrac{12\\,\\text{N}}{1.62\\,\\text{m/s}^2} = 7.407\\,\\text{kg}$, so $G_\\text{Earth} = 7.407\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 72.67\\,\\text{N}$\n\n**Answer:** $73\\,\\text{N}$, two significant figures like the reading on the Moon, $12\\,\\text{N}$.\n\n**Reasonableness:** The Earth's $g$ is about six times the Moon's value, so the weight is about $6 \\cdot 12\\,\\text{N} = 72\\,\\text{N}$. The weight increases when the box is brought from the Moon to Earth, as it should. Check by calculating back: $\\dfrac{72.67\\,\\text{N}}{9.81\\,\\text{m/s}^2} = 7.41\\,\\text{kg}$, the same mass as on the Moon.",
@@ -375,7 +375,7 @@
         {
           "text": "The mass of the water is $1.5\\,\\text{kg}$ and its weight on Earth is about $15\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Correct. The mass is $1.5\\,\\text{kg}$ and weight is a force: $G = mg = 1.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. The scale shows kilograms because its scale has been made on Earth by dividing the force by $9.81\\,\\text{m/s}^2$."
+          "feedback": "Correct. The mass is $1.5\\,\\text{kg}$ and weight is a force: $$\\begin{aligned} G &= mg \\\\ &= 1.5\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 15\\,\\text{N} \\end{aligned}$$. The scale shows kilograms because its scale has been made on Earth by dividing the force by $9.81\\,\\text{m/s}^2$."
         },
         {
           "text": "The mass of the water is $1.5\\,\\text{kg}$ and its weight is $1.5\\,\\text{N}$, because the same number gives both.",

@@ -16,7 +16,7 @@
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$, joten muunnoksia ei tarvita. Massa supistuu pois.
 **Sijoitus:** $h = \dfrac{(6{,}0\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} = \dfrac{36\,\text{m}^2/\text{s}^2}{19{,}62\,\text{m/s}^2} = 1{,}835\,\text{m}$
 **Vastaus:** $1{,}8\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $6{,}0\,\text{m/s}$.
-**Järkevyys:** Kun pudotaan $1{,}8\,\text{m}$, nopeus on $$\begin{aligned} &\sqrt{2 \cdot 9{,}81 \cdot 1{,}835}\,\text{m/s} \\ &= 6{,}0\,\text{m/s} \end{aligned}$$, joten lasku toimii myös takaperin. Todellisuudessa kitka ja ilmanvastus pienentävät nousukorkeutta hieman.
+**Järkevyys:** Kun pudotaan $1{,}8\,\text{m}$, nopeus on $\sqrt{2 \cdot 9{,}81 \cdot 1{,}835}\,\text{m/s} = 6{,}0\,\text{m/s}$, joten lasku toimii myös takaperin. Todellisuudessa kitka ja ilmanvastus pienentävät nousukorkeutta hieman.
 
 ## fy4-8-L1-03
 **Annettu:** matka $s = 4{,}0\,\text{m}$, kitkavoima $F_\mu = 35\,\text{N}$ liikettä vastaan
@@ -66,7 +66,7 @@
 **Muunnokset:** $v_1 = 72\,\text{km/h} = 72 : 3{,}6\,\text{m/s} = 20\,\text{m/s}$ ja $F_\mu = 6{,}0\,\text{kN} = 6{,}0 \cdot 1000\,\text{N} = 6000\,\text{N}$
 **Sijoitus:** $s = \dfrac{1200\,\text{kg} \cdot (20\,\text{m/s})^2}{2 \cdot 6000\,\text{N}} = \dfrac{480\,000\,\text{J}}{12\,000\,\text{N}} = 40\,\text{m}$
 **Vastaus:** $40\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $72\,\text{km/h}$ ja voimassa $6{,}0\,\text{kN}$.
-**Järkevyys:** Hidastuvuus on $$\begin{aligned} &6000\,\text{N} : 1200\,\text{kg} \\ &= 5{,}0\,\text{m/s}^2 \end{aligned}$$, ja liikeyhtälöistä saadaan sama matka: $\tfrac{(20\,\text{m/s})^2}{2 \cdot 5{,}0\,\text{m/s}^2} = 40\,\text{m}$. Liike-energia on verrannollinen nopeuden neliöön, joten kaksinkertaisesta nopeudesta jarrutusmatka olisi nelinkertainen.
+**Järkevyys:** Hidastuvuus on $6000\,\text{N} : 1200\,\text{kg} = 5{,}0\,\text{m/s}^2$, ja liikeyhtälöistä saadaan sama matka: $\tfrac{(20\,\text{m/s})^2}{2 \cdot 5{,}0\,\text{m/s}^2} = 40\,\text{m}$. Liike-energia on verrannollinen nopeuden neliöön, joten kaksinkertaisesta nopeudesta jarrutusmatka olisi nelinkertainen.
 
 ## fy4-8-L2-03
 **Annettu:** $m = 250\,\text{kg}$, nostokorkeus $h = 18{,}0\,\text{m}$, nopeus vakio, $g = 9{,}81\,\text{m/s}^2$
@@ -92,9 +92,9 @@
 **Annettu:** $m = 80\,\text{kg}$, nopeus mäen päällä $v_1 = 4{,}0\,\text{m/s}$ ja mäen alla $v_2 = 13{,}0\,\text{m/s}$, korkeus $h = 12{,}0\,\text{m}$, tien pituus $s = 150\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** keskimääräinen vastusvoima $F_\text{vast}$ yksikössä $\text{N}$
 **Periaate:** Pyöräilijään vaikuttavat paino, tien tukivoima sekä ilmanvastus ja vierimisvastus. Tukivoima ei tee työtä. Vastusvoimat ovat muita voimia kuin paino, joten energiaperiaate antaa niiden työn. Vastusvoima osoittaa liikettä vastaan koko matkan, joten sen työ on $-F_\text{vast} s$. Nollataso valitaan mäen alle.
-**Kaava:** $$\begin{aligned} &\tfrac{1}{2} mv_1^2 + mgh - F_\text{vast} s \\ &= \tfrac{1}{2} mv_2^2 \end{aligned}$$, joten $F_\text{vast} = \dfrac{\tfrac{m}{2}(v_1^2 - v_2^2) + mgh}{s}$
+**Kaava:** $\tfrac{1}{2} mv_1^2 + mgh - F_\text{vast} s = \tfrac{1}{2} mv_2^2$, joten $F_\text{vast} = \dfrac{\tfrac{m}{2}(v_1^2 - v_2^2) + mgh}{s}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** Ensin $$\begin{aligned} &\tfrac{m}{2}(v_1^2 - v_2^2) \\ &= \tfrac12 \cdot 80\,\text{kg} \\ &\cdot (16 - 169)\,\text{m}^2/\text{s}^2 \\ &= -6120\,\text{J} \end{aligned}$$ ja $$\begin{aligned} &mgh \\ &= 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 12{,}0\,\text{m} \\ &= 9417{,}6\,\text{J} \end{aligned}$$, joten $F_\text{vast} = \dfrac{-6120\,\text{J} + 9417{,}6\,\text{J}}{150\,\text{m}} = \dfrac{3297{,}6\,\text{J}}{150\,\text{m}} = 21{,}98\,\text{N}$
+**Sijoitus:** Ensin $\tfrac{m}{2}(v_1^2 - v_2^2) = \tfrac12 \cdot 80\,\text{kg} \cdot (16 - 169)\,\text{m}^2/\text{s}^2 = -6120\,\text{J}$ ja $mgh = 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12{,}0\,\text{m} = 9417{,}6\,\text{J}$, joten $F_\text{vast} = \dfrac{-6120\,\text{J} + 9417{,}6\,\text{J}}{150\,\text{m}} = \dfrac{3297{,}6\,\text{J}}{150\,\text{m}} = 21{,}98\,\text{N}$
 **Vastaus:** $22\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{kg}$ ja nopeudessa $4{,}0\,\text{m/s}$.
 **Järkevyys:** Vastusvoimat veivät $3{,}3\,\text{kJ}$ eli noin kolmanneksen potentiaalienergiasta $9{,}4\,\text{kJ}$. Noin $13\,\text{m/s}$:n nopeudella pyöräilijän ilmanvastus on muutamia kymmeniä newtoneja, joten keskiarvo $22\,\text{N}$ koko mäelle on uskottava.
 
@@ -102,7 +102,7 @@
 **Annettu:** $m = 500\,\text{kg}$, ensimmäisen huipun korkeus $h_1 = 35{,}0\,\text{m}$, nopeus siellä $v_1 = 2{,}0\,\text{m/s}$, ratamatka $s = 120\,\text{m}$, vastusvoima $F_\text{vast} = 150\,\text{N}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** seuraavan mäen suurin korkeus $h_2$ yksikössä $\text{m}$
 **Periaate:** Vaunuun vaikuttavat paino, radan tukivoima ja vastusvoima. Tukivoima ei tee työtä, ja vastusvoima tekee työn $-F_\text{vast} s$, joten käytetään energiaperiaatetta. Korkeimmalle mäelle vaunu pääsee, kun sen nopeus huipulla on juuri ja juuri nolla. Nollataso valitaan maahan.
-**Kaava:** $$\begin{aligned} &\tfrac{1}{2} mv_1^2 + mgh_1 - F_\text{vast} s \\ &= mgh_2 \end{aligned}$$, joten $h_2 = h_1 + \dfrac{v_1^2}{2 \cdot g} - \dfrac{F_\text{vast} s}{mg}$
+**Kaava:** $\tfrac{1}{2} mv_1^2 + mgh_1 - F_\text{vast} s = mgh_2$, joten $h_2 = h_1 + \dfrac{v_1^2}{2 \cdot g} - \dfrac{F_\text{vast} s}{mg}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\dfrac{v_1^2}{2g} = \dfrac{(2{,}0\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} = 0{,}204\,\text{m}$ ja $\dfrac{F_\text{vast} s}{mg} = \dfrac{150\,\text{N} \cdot 120\,\text{m}}{500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = 3{,}670\,\text{m}$, joten $h_2 = (35{,}0 + 0{,}204 - 3{,}670)\,\text{m} = 31{,}53\,\text{m}$
 **Vastaus:** enintään $31{,}5\,\text{m}$, kolme merkitsevää numeroa kuten korkeudessa $35{,}0\,\text{m}$.
@@ -147,7 +147,7 @@
 **Kaava:** $mgh = \tfrac{1}{2} mv^2$, joten $v^2 = 2g \cdot h$. Suoran kulmakerroin on $k = 2g$, joten $g = \dfrac{k}{2}$.
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{19{,}5\,\text{m/s}^2}{2} = 9{,}77\,\text{m/s}^2$
-**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten korkeuksissa $h$ (esimerkiksi $0{,}05\,\text{m}$). Kuvaajasta luettu tarkempi arvo on $9{,}77\,\text{m/s}^2$.
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten korkeuksissa $h$ (esimerkiksi $0{,}10\,\text{m}$). Kuvaajasta luettu tarkempi arvo on $9{,}77\,\text{m/s}^2$.
 **Järkevyys:** Tulos poikkeaa tunnetusta arvosta $9{,}81\,\text{m/s}^2$ alle prosentin, mikä on mittausvirheen rajoissa. Yksittäinen mittaus antaa samaa suuruusluokkaa: $h = 0{,}30\,\text{m}$ ja $v = 2{,}41\,\text{m/s}$ antavat $g = v^2 : (2h) = 9{,}68\,\text{m/s}^2$. c) Suoran pitää kulkea origon kautta, koska kun $h = 0$, kuula on alimmassa kohdassa levossa eikä sillä ole liike-energiaa, joten $v = 0$ ja $v^2 = 0$. Yhtälö $v^2 = 2gh$ on verrannollisuus, jossa ei ole vakiotermiä.
 
 ## fy4-8-L2-06
@@ -177,7 +177,7 @@
 **Periaate:** Lautailijaan vaikuttavat paino, lumen tukivoima ja kitka. Tukivoima ei tee työtä, joten kitka on ainoa muu voima ja käytetään energiaperiaatetta. Koko liikkeen ajan kitka on liikettä vastaan, joten sen työ on $-F$ kertaa koko kuljettu matka $L + s_\text{ka}$. Nollataso on rinteen alapää. Alussa ja lopussa nopeus on nolla, joten koko alun potentiaalienergia $mgh$ muuttuu sisäenergiaksi.
 **Kaava:** a) $s_\text{ka} = \dfrac{\text{summa}}{6}$. b) $mgh - F\left(L + s_\text{ka}\right) = 0$, joten $F = \dfrac{mgh}{L + s_\text{ka}}$. c) Rinteessä $mgh - F L = \tfrac{1}{2} mv^2$, joten $v = \sqrt{\dfrac{2\left(mgh - F L\right)}{m}}$.
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** a) Pysähtymismatkojen summa on $180{,}4\,\text{m}$, joten $s_\text{ka} = 180{,}4\,\text{m} : 6 = 30{,}07\,\text{m}$. b) $$\begin{aligned} &mgh \\ &= 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 6{,}0\,\text{m} \\ &= 4120\,\text{J} \end{aligned}$$ ja $L + s_\text{ka} = 45\,\text{m} + 30{,}07\,\text{m} = 75{,}07\,\text{m}$, joten $F = 4120\,\text{J} : 75{,}07\,\text{m} = 54{,}9\,\text{N}$. c) Kitkan työ rinteessä on $F L = 54{,}9\,\text{N} \cdot 45\,\text{m} = 2470\,\text{J}$, joten $\tfrac{1}{2} mv^2 = 4120\,\text{J} - 2470\,\text{J} = 1650\,\text{J}$ ja $v = \sqrt{2 \cdot 1650\,\text{J} : 70\,\text{kg}} = 6{,}87\,\text{m/s}$.
+**Sijoitus:** a) Pysähtymismatkojen summa on $180{,}4\,\text{m}$, joten $s_\text{ka} = 180{,}4\,\text{m} : 6 = 30{,}07\,\text{m}$. b) $mgh = 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}0\,\text{m} = 4120\,\text{J}$ ja $L + s_\text{ka} = 45\,\text{m} + 30{,}07\,\text{m} = 75{,}07\,\text{m}$, joten $F = 4120\,\text{J} : 75{,}07\,\text{m} = 54{,}9\,\text{N}$. c) Kitkan työ rinteessä on $F L = 54{,}9\,\text{N} \cdot 45\,\text{m} = 2470\,\text{J}$, joten $\tfrac{1}{2} mv^2 = 4120\,\text{J} - 2470\,\text{J} = 1650\,\text{J}$ ja $v = \sqrt{2 \cdot 1650\,\text{J} : 70\,\text{kg}} = 6{,}87\,\text{m/s}$.
 **Vastaus:** b) $F \approx 55\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$ ja korkeudessa $6{,}0\,\text{m}$. c) Nopeus rinteen alapäässä on noin $6{,}9\,\text{m/s}$, ja se on pienempi kuin kitkattoman rinteen nopeus $\sqrt{2gh} = 10{,}8\,\text{m/s}$, koska kitka on muuttanut osan potentiaalienergiasta sisäenergiaksi jo rinteessä: mekaaninen energia rinteen alapäässä on $1650\,\text{J}$ eikä $4120\,\text{J}$.
 **Järkevyys:** Kitkavoima $55\,\text{N}$ on noin $8\,\%$ lautailijan painosta $687\,\text{N}$ eli kitkakerroin on noin $0{,}08$, mikä sopii liukkaalle lumelle. Rinteessä kitka muuttaa $2470\,\text{J} : 4120\,\text{J} \approx 60\,\%$ energiasta sisäenergiaksi, mikä vastaa rinteen osuutta koko matkasta $45 : 75{,}07 \approx 60\,\%$.
 
@@ -187,7 +187,7 @@
 **Periaate:** Ylimmässä kohdassa pallo on hetken levossa, joten liike-energia on nolla ja $E_\text{mek} = mgh$ (nollataso lattia). Lennon aikana vaikuttaa vain paino, joten mekaaninen energia säilyy, ja muutokset tapahtuvat kimmahduksissa. Massa ja $g$ supistuvat osuudesta, joten osuus on korkeuksien suhde, $\dfrac{E_{n+1}}{E_n} = \dfrac{h_{n+1}}{h_n}$.
 **Kaava:** $E_n = mgh_n$, osuus $r_n = \dfrac{h_{n+1}}{h_n}$, ja ensimmäisen kimmahduksen energiamuutos $\Delta E = E_0 - E_1 = mg\left(h_0 - h_1\right)$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Osuus muutetaan prosenteiksi kertomalla sadalla.
-**Sijoitus:** a) Energiat ovat $E_0 = 0{,}057 \cdot 9{,}81 \cdot 1{,}20\,\text{J} = 0{,}671\,\text{J}$, $E_1 = 0{,}431\,\text{J}$, $E_2 = 0{,}274\,\text{J}$, $E_3 = 0{,}179\,\text{J}$ ja $E_4 = 0{,}112\,\text{J}$. Osuudet ovat $r_0 = 0{,}77 : 1{,}20 = 0{,}642$, $r_1 = 0{,}636$, $r_2 = 0{,}653$ ja $r_3 = 0{,}625$. b) Osuuksien summa on $2{,}556$, joten keskiarvo on $2{,}556 : 4 = 0{,}639 = 63{,}9\,\%$. c) $$\begin{aligned} &\Delta E \\ &= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot (1{,}20 - 0{,}77)\,\text{m} \\ &= 0{,}240\,\text{J} \end{aligned}$$.
+**Sijoitus:** a) Energiat ovat $E_0 = 0{,}057 \cdot 9{,}81 \cdot 1{,}20\,\text{J} = 0{,}671\,\text{J}$, $E_1 = 0{,}431\,\text{J}$, $E_2 = 0{,}274\,\text{J}$, $E_3 = 0{,}179\,\text{J}$ ja $E_4 = 0{,}112\,\text{J}$. Osuudet ovat $r_0 = 0{,}77 : 1{,}20 = 0{,}642$, $r_1 = 0{,}636$, $r_2 = 0{,}653$ ja $r_3 = 0{,}625$. b) Osuuksien summa on $2{,}556$, joten keskiarvo on $2{,}556 : 4 = 0{,}639 = 63{,}9\,\%$. c) $\Delta E = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}20 - 0{,}77)\,\text{m} = 0{,}240\,\text{J}$.
 **Vastaus:** b) Pallo säilyttää kimmahduksessa keskimäärin noin $64\,\%$ mekaanisesta energiastaan, kaksi merkitsevää numeroa kuten korkeuksissa. c) Ensimmäisessä kimmahduksessa mekaanista energiaa muuttuu sisäenergiaksi noin $0{,}24\,\text{J}$. Perustelu: pallon mekaaninen energia ei säily kimmahduksissa, koska se pienenee joka kerta (korkeudet pienenevät: $1{,}20 \to 0{,}77 \to 0{,}49 \to 0{,}32 \to 0{,}20\,\text{m}$), mutta kokonaisenergia säilyy: kimmahduksessa pallon ja lattian vuorovaikutus muuttaa osan mekaanisesta energiasta pallon ja lattian sisäenergiaksi (lämpenemiseksi) ja ääneksi.
 **Järkevyys:** Osuudet $0{,}625$–$0{,}653$ ovat lähes samat, joten pallo menettää jokaisessa kimmahduksessa suunnilleen saman osuuden, ja se on uskottava tennispallolle. Neljän kimmahduksen jälkeen jäljellä on $0{,}20 : 1{,}20 \approx 17\,\%$ alkuenergiasta, ja $0{,}639^4 \approx 0{,}167$ antaa saman.
 
@@ -239,3 +239,45 @@ Vaunu pysähtyisi vasta lähtökorkeudella $20\,\text{m}$.
 **Sijoitus:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, ja $F_\mu = \dfrac{15\,\text{J}}{6{,}0\,\text{m}} = 2{,}5\,\text{N}$
 **Vastaus:** $2{,}5\,\text{N}$, kaksi merkitsevää numeroa kuten matkassa $6{,}0\,\text{m}$.
 **Järkevyys:** Mekaaninen energia väheni $15\,\text{J}$, mikä on erotus palkkien $40\,\text{J}$ ja $25\,\text{J}$ välillä, ja $2{,}5\,\text{N} \cdot 6{,}0\,\text{m} = 15\,\text{J}$. Kitkan työ on negatiivinen, koska kitka vastustaa liikettä.
+
+## fy4-8-L2-10
+**Annettu:** auton massa $m = 1500\,\text{kg}$ ja nopeudet $30\,\text{km/h}$, $50\,\text{km/h}$ ja $90\,\text{km/h}$. Aineistosta (Liikenneturva: Turvallinen ajonopeus, luettu 16. marraskuuta 2026) on otettu kaksi tietoa. Ensimmäinen: törmäysenergia nelinkertaistuu, kun törmäysnopeus kaksinkertaistuu. Toinen: kun auto törmää kiinteään esteeseen nopeudella $v = 50\,\text{km/h}$, ihmiseen, jonka massa on $m_\text{i} = 80\,\text{kg}$, vaikuttava törmäysvoima ”on $3\,000\,\text{kg}$”. Luku tulkitaan massaksi $m_F = 3000\,\text{kg}$, jonka paino on voima $F$. Putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$.
+**Kysytty:** a) auton liike-energia $E_\text{k}$ kolmella nopeudella; b) perustelu aineiston väitteelle ja liike-energioiden suhde; c) mihin auton liike-energia siirtyy tai miksi se muuttuu; d) ihmisen pysähtymismatka $s$ yksikössä $\text{m}$; e) miksi liike-energia ei yksin ennusta henkilövahinkoja
+**Periaate:** Liikkuvalla kappaleella on liike-energiaa $E_\text{k} = \tfrac{1}{2} mv^2$. Törmäyksessä pysäyttävä voima osoittaa liikettä vastaan ja tekee negatiivista työtä. Liike on vaakasuoraa, joten paino ja tukivoima eivät tee työtä ja pysäyttävä voima on kokonaisvoima. Siksi käytetään työperiaatetta $E_{\text{k}0} + W = E_\text{k}$: kokonaisvoiman työ on liike-energian muutos. Kohdassa d voima oletetaan vakioksi, joten sen työ on $W = -F s$.
+**Kaava:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) Kun nopeus on $2v$, liike-energia on $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$ eli $4E_\text{k}$. Samoin nopeudella $3v$ se on $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$ eli $9E_\text{k}$. d) Voima on painon suuruinen, $F = m_F g$. Alussa $E_{\text{k}0} = \tfrac{1}{2} m_\text{i} v^2$ ja lopussa ihminen on levossa, $E_\text{k} = 0$, joten työperiaate on $\tfrac{1}{2} m_\text{i} v^2 - F s = 0$. Tästä $s = \dfrac{m_\text{i} v^2}{2F}$.
+**Muunnokset:** $30\,\text{km/h} = 30 : 3{,}6\,\text{m/s} = 8{,}333\,\text{m/s}$, $50\,\text{km/h} = 50 : 3{,}6\,\text{m/s} = 13{,}889\,\text{m/s}$ ja $90\,\text{km/h} = 90 : 3{,}6\,\text{m/s} = 25{,}0\,\text{m/s}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** a) Nopeudella $30\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (8{,}333\,\text{m/s})^2 \\ &= 52\,083\,\text{J} \end{aligned}$$
+
+Nopeudella $50\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (13{,}889\,\text{m/s})^2 \\ &= 144\,676\,\text{J} \end{aligned}$$
+
+Nopeudella $90\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (25{,}0\,\text{m/s})^2 \\ &= 468\,750\,\text{J} \end{aligned}$$
+
+b) Nopeus $90\,\text{km/h}$ on kolminkertainen nopeuteen $30\,\text{km/h}$ verrattuna, joten suhde on $3^2 = 9$. Lasketuista arvoista saadaan sama: $468\,750\,\text{J} : 52\,083\,\text{J} = 9{,}00$.
+
+d) Voima:
+
+$$\begin{aligned} F &= 3000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 29\,430\,\text{N} \end{aligned}$$
+
+Ihmisen liike-energia alussa:
+
+$$\begin{aligned} E_{\text{k}0} &= \tfrac{1}{2} \cdot 80\,\text{kg} \cdot (13{,}889\,\text{m/s})^2 \\ &= 7716\,\text{J} \end{aligned}$$
+
+Pysähtymismatka:
+
+$$\begin{aligned} s &= \dfrac{80\,\text{kg} \cdot (13{,}889\,\text{m/s})^2}{2 \cdot 29\,430\,\text{N}} \\ &= \dfrac{7716\,\text{J}}{29\,430\,\text{N}} \\ &= 0{,}2622\,\text{m} \end{aligned}$$
+**Vastaus:** d) $s \approx 0{,}26\,\text{m}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{kg}$. Voima on noin $29\,\text{kN}$.
+
+Lisäksi: a) Auton liike-energia $E_\text{k}$ on noin $52{,}1\,\text{kJ}$, $145\,\text{kJ}$ ja $469\,\text{kJ}$. Tulokset annetaan kolmella merkitsevällä numerolla: nopeudet ovat tarkkoja vertailuarvoja ja massassa $1500\,\text{kg}$ on neljä merkitsevää numeroa, joten kolme numeroa ei lupaa liikaa.
+
+b) Väite pitää paikkansa, koska liike-energia on verrannollinen nopeuden neliöön: kaksinkertainen nopeus antaa $2^2 = 4$-kertaisen energian, ja tämä pätee kaikilla massoilla. Nopeudella $90\,\text{km/h}$ liike-energia on $9$-kertainen verrattuna nopeuteen $30\,\text{km/h}$.
+
+c) Esteen voima tekee autoon negatiivista työtä, ja työperiaatteen mukaan auton liike-energia pienenee nollaan. Energia ei häviä. Suurin osa kuluu auton rakenteiden (ja esteen) pysyvään muodonmuutokseen ja muuttuu niiden sisäenergiaksi: osat lämpenevät, ja tämä energia siirtyy vähitellen lämpönä ympäristöön. Pieni osa siirtyy ääneen ja irtoavien osien liike-energiaksi.
+
+e) Liike-energia määrää vain pysäyttämiseen tarvittavan työn eli tulon $F s$. Sama energia voidaan poistaa pitkällä matkalla pienellä voimalla tai lyhyellä matkalla suurella voimalla. Jos ihminen, jonka liike-energia on $7716\,\text{J}$, pysähtyy matkalla $1{,}0\,\text{m}$ (auton keula painuu kasaan, turvavyö ja turvatyyny joustavat), keskimääräinen voima on noin $7{,}7\,\text{kN}$. Jos matka on $0{,}05\,\text{m}$ (kova pinta, ei turvavyötä), voima on noin $150\,\text{kN}$ eli kaksikymmenkertainen. Vammat riippuvat voimasta ja siitä, miten se jakautuu kehoon ja ajallisesti, mihin keho osuu, törmäyksen suunnasta ja ihmisestä itsestään, esimerkiksi iästä. Jalankulkijaa eivät suojaa auton rakenteet: aineiston mukaan jalankulkijan kuoleman todennäköisyys kasvaa jyrkästi, kun törmäysnopeus on yli $60\,\text{km/h}$. Liike-energia kertoo siis, kuinka paljon energiaa on poistettava, mutta ei sitä, miten se poistuu.
+**Järkevyys:** Neljännesmetri on samaa suuruusluokkaa kuin turvavyön jousto ja auton keulan kasaan painuminen yhteensä, joten tulos on uskottava. Voima on $3000\,\text{kg} : 80\,\text{kg} = 37{,}5$ kertaa ihmisen oman painon suuruinen, joten hidastuvuus on $a = F : m_\text{i} = 368\,\text{m/s}^2$ eli noin $37{,}5\,g$. Liikeyhtälöistä saadaan sama matka: $v^2 : (2a) = 0{,}262\,\text{m}$. Aineiston arvo nopeudelle $100\,\text{km/h}$ on $12\,000\,\text{kg}$ eli tasan nelinkertainen. Se vastaa mallia, jossa pysähtymismatka on sama $0{,}262\,\text{m}$: energia nelinkertaistuu, joten voimakin nelinkertaistuu. Mallin raja: todellinen voima ei ole vakio, joten $29\,\text{kN}$ on keskimääräinen arvo ja suurin hetkellinen voima on sitä suurempi.

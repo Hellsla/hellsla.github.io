@@ -23,7 +23,7 @@
 ### c)
 **Annettu:** $\Delta E_\text{p} = 36\,198{,}9\,\text{J}$, vastusvoima $F_\text{v} = 18\,\text{N}$, tien pituus $s = 1{,}20\,\text{km}$, $t = 270\,\text{s}$; nopeus vakio
 **Kysytty:** pyöräilijän keskimääräinen mekaaninen teho $P$
-**Periaate:** Energiaperiaatteen mukaan lihasten polkimiin tekemä työ $W$ kattaa potentiaalienergian kasvun ja sen energian, jonka vastusvoimat muuttavat lämmöksi. Liike-energia ei muutu, koska nopeus pysyy samana. Vastusvoimat vaikuttavat koko tien matkalla, joten niiden työ lasketaan tien pituudella, ei korkeudella.
+**Periaate:** Energiaperiaatteen mukaan lihasten polkimiin tekemä työ $W$ kattaa potentiaalienergian kasvun ja sen energian, jonka vastusvoimat muuttavat sisäenergiaksi. Liike-energia ei muutu, koska nopeus pysyy samana. Vastusvoimat vaikuttavat koko tien matkalla, joten niiden työ lasketaan tien pituudella, ei korkeudella.
 **Kaava:** $W = \Delta E_\text{p} + F_\text{v} s$ ja $P = \dfrac{W}{t}$, joten $P = \dfrac{\Delta E_\text{p} + F_\text{v} s}{t}$
 **Muunnokset:** $s = 1{,}20\,\text{km} = 1{,}20 \cdot 1000\,\text{m} = 1200\,\text{m}$
 **Sijoitus:** $F_\text{v} s = 18\,\text{N} \cdot 1200\,\text{m} = 21\,600\,\text{J}$ ja $P = \dfrac{36\,198{,}9\,\text{J} + 21\,600\,\text{J}}{270\,\text{s}} = \dfrac{57\,798{,}9\,\text{J}}{270\,\text{s}} = 214{,}07\,\text{W}$
@@ -33,7 +33,7 @@
 ### d)
 **Annettu:** mekaaninen työ $W = 57\,798{,}9\,\text{J}$ (c-kohta), lihasten hyötysuhde $\eta = 22\,\% = 0{,}22$
 **Kysytty:** ravinnon energian kulutus $E$ kilojouleina
-**Periaate:** Hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla. Hyödyksi saadaan polkimiin tehty työ, ja käytetty energia tulee ravinnosta. Loput muuttuu lihaksissa lämmöksi.
+**Periaate:** Hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla. Hyödyksi saadaan polkimiin tehty työ, ja käytetty energia tulee ravinnosta. Loput muuttuu lihaksissa sisäenergiaksi.
 **Kaava:** $\eta = \dfrac{W}{E}$, josta $E = \dfrac{W}{\eta}$
 **Muunnokset:** $22\,\% = 0{,}22$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $E = \dfrac{57\,798{,}9\,\text{J}}{0{,}22} = 262\,722\,\text{J} = 262{,}7\,\text{kJ}$

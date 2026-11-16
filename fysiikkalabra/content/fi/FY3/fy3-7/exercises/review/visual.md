@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b0becb0dcbed361b
+CONTENT-HASH: 51751878d112a680
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy3-7-L3-05 Muunnokset — "…$35{,}0\,\text{K}$. $r = …$" runs two statements together without a connector; add "Lisäksi".
 
 ## Checked
-- Round 1, delta. Opened fy3-7-open-exercises-1280-5: task 8-5 with the melting-curve graph (axes T (°C), Q (kJ), markers at the grid crossings, nothing clipped), answer box "3,3 · 10² kJ/kg" and solution start. The changed Vastaus line (two significant figures, "laskettu 333 kJ/kg", accepted range) lies below the capture and was read from the diff: stacked units upright, LaTeX throughout.
-- Hash same at start and end.
+- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-7 L2 captures 8, 14 and 15 (new PhET data task with a-d model answers; L2 Sijoitus rows) and L3 capture 8 (L3-05 Kaava rows).
+- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean. The new exercise fy3-7-L2-10 reads well: source link first, a-d clear, model solution complete and typographically clean. 
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

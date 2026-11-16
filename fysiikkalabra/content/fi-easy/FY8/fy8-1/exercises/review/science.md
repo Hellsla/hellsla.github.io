@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 660f444084d55575
-SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
+CONTENT-HASH: 914daee64065bfde
+SCOPE: delta added-exercise from 689c71af3cad3c07 base 415cbc7c6bc3
 
 ## Blocking
-(none)
 
 ## Polish
-- lessons/FY8/fy8-1/answers.py:263 — the comment says "387,6 nm -> 388 nm", but hc/W computes to 387,50 nm and the stored answer is 387 nm (the solution says 387,5 nm). Both are inside the ±5 % tolerance. — Make the comment say 387,5 nm -> 387 nm (shared file).
+- content/fi-easy/FY8/fy8-1/exercises/solutions.md:408 and :431 — Annettu says a slider reading "voi poiketa muutaman nanometrin", Vastaus says "noin ±10 nm"; the two disagree — give one figure (the 530–550 nm range fits ±10 nm).
+- content/fi-easy/FY8/fy8-1/exercises/solutions.md:412 — "vihreällä ... valolla" releases electrons, yet green runs to about 570 nm, and 540–570 nm gives no current; "Muut metallit" also covers the "?" metal, whose work function was not checked — say "lyhyemmillä kuin noin 540 nm (vihreä–violetti, UV)" and "muut nimetyt metallit".
+- content/fi-easy/FY8/fy8-1/exercises/solutions.md:432 — "natriumin raja-aallonpituudella 544 nm teoriassa" gives no source or reason; 544 nm is the value for a tabulated W ≈ 2,28 eV, not a theoretical value — name it so, or drop it. The aligned block inside the sentence is a layout issue too.
 
 ## Checked
-- L1-10: λ0 = hc/W with W = 3,20 eV (MAFY, Ca) gives 387,50 nm; answer 387 nm, tol 5 %. The added definition of irrotustyö matches the glossary. The principle, the symbolic step, the conversion and the 1240 eV nm estimate are right.
-- L2-08: h/e = 0,41361 eV per 1e14 Hz, f0A = 5,56e14 Hz, E_k,max = 4,963 − 2,30 = 2,663 eV; answer 2,66, tol 5 % takes the reading of 2,7 eV. The reading description is right.
-- L2-09: f0B = 7,01e14 Hz (halfway between the 6 and 8 grid lines), λ0 = c/7,0e14 = 428,3 nm; answer 428, tol 4 %. The added definition of rajataajuus is right, and the warning not to read f0 from the vertical axis is right.
-- The figure kuvaaja-ab (W_A = 2,30 eV, W_B = 2,90 eV, slope h/e) gives the needed values and no answers.
-- The numbers and physics match the Finnish set the earlier review passed. The clearer Finnish drops no step of the solutions.
-- Notation is the same as the brief's lesson (E_k,max, f0, λ0, hf = W + E_k,max). It is inside FY8 scope.
-- Recomputed in one script, compared with answers.py: they agree.
-- Hash 660f444084d55575 at start and end.
+- Recomputed: f0 = c/539 nm = 5,562e14 Hz, hf0 = 3,686e-19 J = 2,3006 eV; answers.py gives 2,30055 ✓.
+- Reading range 530–550 nm gives 2,340–2,255 eV; tolerance 0,05 is relative in lesson.js (±0,115 eV), so it accepts every reading in that range ✓.
+- Physics: hf ≥ W is the release condition, hf0 = W, E_k,max = hf − W does not depend on intensity, current grows with intensity; the classical-wave argument (d) is right. Symbol W matches the lesson.
+- Source facts against the verified list: wavelength and intensity sliders (no frequency), sodium 2,3 eV, zinc 4,3 eV, platinum 6,3 eV, the graphs, a browser run, all ✓. Nothing else is attributed to PhET.
+- The box value (2,3 eV) is the model's own and does not depend on the student's reading; the dated example reading is given.
+- Hash 914daee64065bfde at the start and the end.

@@ -206,7 +206,7 @@
     {
       "id": "fy6-11-L2-06",
       "level": 2,
-      "text": "The distance of two vertical plates is $6.0\\,\\text{cm}$ and the voltage between them is $1.8\\,\\text{kV}$. Between the plates there is a small ball whose charge is $4.0\\,\\text{nC}$ and whose distance from the positive plate is $1.5\\,\\text{cm}$. The ball is far from the ends of the plates.\n\nA student solves the force like this: “The ball is $1.5\\,\\text{cm}$ from the plate, so $E = U : d = 1800\\,\\text{V} : 0.015\\,\\text{m} = 1.2 \\cdot 10^{5}\\,\\text{V/m}$ and $F = qE = 4.0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1.2 \\cdot 10^{5}\\,\\text{V/m} = 0.48\\,\\text{mN}$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the electric force correctly.\n\nGive the result of part b) in millinewtons in the answer box.",
+      "text": "The distance of two vertical plates is $6.0\\,\\text{cm}$ and the voltage between them is $1.8\\,\\text{kV}$. Between the plates there is a small ball whose charge is $4.0\\,\\text{nC}$ and whose distance from the positive plate is $1.5\\,\\text{cm}$. The ball is far from the ends of the plates.\n\nA student solves the force like this: “The ball is $1.5\\,\\text{cm}$ from the plate, so $$\\begin{aligned} E &= U : d \\\\ &= 1800\\,\\text{V} : 0.015\\,\\text{m} \\\\ &= 1.2 \\cdot 10^{5}\\,\\text{V/m} \\end{aligned}$$ and $$\\begin{aligned} F &= qE \\\\ &= 4.0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1.2 \\cdot 10^{5}\\,\\text{V/m} \\\\ &= 0.48\\,\\text{mN} \\end{aligned}$$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the electric force correctly.\n\nGive the result of part b) in millinewtons in the answer box.",
       "kind": [
         "error",
         "concept"

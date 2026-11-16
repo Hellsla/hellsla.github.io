@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 850c429f67e949f3
-Delta review (hero figure without calculator, Part II source-material sentence, 2026-11-14) of the version passed at d3680dc9c54e00c7.
+CONTENT-HASH: c8d1c7be46b19133
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- The 'four or five of seven' figure will age; 'recent exams' already signals that. Nothing to change now.
+- (none)
 
 ## Checked
-- Hero figure: removing the calculator fits the exam rules (no separate calculators) and the alt text matches the drawing (no calculator mentioned).
-- New sentence: placed under the Part III bullet, corrects the impression that source material is only Part III, correct and not confusing; it does not change what the student must do. Reading level: short sentences, no new terms.
-- Rest of the page unchanged and not re-judged.
+- inquiry.json "6. Hyötysuhde": read the prompt with the changed correct option and the three changed feedbacks. The correct option still answers the question, is not longer or more telling than the distractors, and the distractors stay wrong for the same misconceptions; each feedback still repairs its misconception ("Niiden summa" refers clearly to valo and sisäenergia).
+- sovella/solutions.md, two Periaate lines (vastusvoimat, lihakset): sentences read well and agree with the rest of the solution.
+- Searched the unit for remaining "lämmöksi": none. No task added in fi-easy.

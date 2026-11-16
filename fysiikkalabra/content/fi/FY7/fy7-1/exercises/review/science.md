@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7da54a5fc6a1b1
-SCOPE: delta added-exercise from aea283ed5e43115e base 8f23aa7ae3bd
+CONTENT-HASH: 9a398310c855a2de
 
 ## Blocking
 
 ## Polish
+- solutions.md L2-04 Järkevyys: "kuten magneetin kenttä luvun simulaatiossakin" refers to the lesson's simulation. The check would stand without it: compare with the on-axis 1/r³ value 2³ = 8.
 
 ## Checked
-- Delta: only L2-08 and L2-09 added; hash identical at start and end.
-- L2-08: figures.py sum-grid arrows end at 15 µT north and 20 µT east on the 5 µT grid (third and fourth lines, as the solution says); B = 25 µT, θ = atan(20/15) = 53,13° = answers.py 53.1; tolerance 2 % fits two-figure data.
-- L2-09: incl-grid arrow ends at (15; 50) µT; B = 52,2 µT, I = 73,3°, consistent with the lesson's 52 µT / 74° (rounded course values); the check B cos I = 15,0 µT is right.
-- Both solutions: perpendicular components, tan from the right angle, symbolic first, real checks; notation B_h, B_m, B_v, I as in the brief. Figures give every needed value and show no resultant or angle.
+- Round 3 diff (`git diff HEAD~1`): it changes only two texts of fy7-1-L3-02, the answer in exercises.json and the Mallivastaus in solutions.md. Both now say "teräksessä moni niistä / moni alkeisalue jää järjestykseen", which matches the Periaate ("säilyy osittain"). The physics is right: remanent magnetisation after the field is removed is only partial. No number, answer, answers.py line, figure or data changed.
+- fy7-1-L1-09 statement 4 (round 2) names the bar-magnet model, so "Tosi" is unambiguous. That matches L1-07 and the lesson.
+- All 17 numeric answers were recomputed in round 1 with my own formulas (tan θ = B_m : B_h, B_h = B cos I, B_v = B sin I, Pythagorean sums, the r₀ from the mean of B_m r³). They agree with exercises.json and answers.py. Unchanged since.
+- Every tolerance accepts the rounded answer given in the solution (L1-02 2,1 % vs 3 %, L2-05 3,4 % vs 4 %, L3-05 1,2 % vs 5 %).
+- L2-05 and L3-05 data: B_m r³ is nearly constant in both tables, so the falloff is consistent with 1/r³. r₀ = 16,2 cm. Field directions on the axis and in the equatorial position (L1-05, L3-01, L3-05) are correct.
+- L1-06 and L1-07: exactly one correct option, and every distractor's feedback is right physics.
+- Figures sum-grid and incl-grid: to scale, they match how the solutions read the grid, and neither gives the answer away.
+- Angle notation `^\circ` is the same everywhere, and every angle answer has the unit "°". Everything is in FY7 scope and uses the lesson's notation.

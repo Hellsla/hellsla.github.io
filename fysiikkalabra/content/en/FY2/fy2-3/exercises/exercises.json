@@ -305,6 +305,18 @@
           "feedback": "The time is halved only once, and the power is inversely proportional to the time, not to its square. Halving the time doubles the power, it does not quadruple it."
         }
       ]
+    },
+    {
+      "id": "fy2-3-L2-09",
+      "level": 2,
+      "text": "In the article <a href=\"https://yle.fi/a/74-20045312\" target=\"_blank\" rel=\"noopener\">Yle: Vaasan sähkö ei hyvitä miinukselle painuvaa pörssisähkön hintaa asiakkailleen (Vaasan sähkö does not credit a negative exchange price to its customers)</a> (published 16.8.2023, accessed 16 November 2026) the Finnish broadcaster Yle explains why the exchange price of electricity can fall below zero and how electricity sellers treat negative hours. The article is in Finnish and over three years old, so its details may be out of date, but the principle of price formation is not. According to the article the sales margin (välityspalkkio) of Vaasan sähkö, for example, is $0.41\\,\\text{snt/kWh}$ (cents per kilowatt-hour), and Vaasan sähkö treats a negative hourly price as zero.\n\na) Use the article to explain in what situation the market price of electricity can become negative.\n\nb) An appliance uses a steady power of $2.0\\,\\text{kW}$ for four hours. Calculate the electrical energy used and its cost at the market price $-5.0\\,\\text{snt/kWh}$. A negative cost means a credit. Give the cost in cents.\n\nc) Compare the result of part b) with a situation where the market price is $+15\\,\\text{snt/kWh}$. Explain why a negative market price does not necessarily mean free electricity for a consumer. You may use the sales margin of the article and the fact that on the page <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (accessed 16 November 2026) the regional price is given without taxes and electricity transmission costs.\n\nd) Estimate how electricity storage and timing consumption can affect how the electricity system works.\n\nThe answer field takes the cost of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -40,
+      "unit": "snt",
+      "tolerance": 0.02
     }
   ],
   "level3": [

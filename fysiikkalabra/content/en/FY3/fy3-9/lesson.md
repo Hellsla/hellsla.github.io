@@ -472,7 +472,7 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 Three mistakes are often repeated:
 
 - **Inverse proportionality is not a falling straight line.** When the volume doubles, the pressure halves, so the $(V, p)$ graph is a curve that approaches the axes but never meets them. A straight line is obtained only when $p$ is plotted as a function of $1/V$.
-- **Celsius degrees do not work in a ratio of temperatures.** When $1.00\,\textsf{l}$ of air is heated at constant pressure from $10\,{}^\circ\text{C}$ to $20\,{}^\circ\text{C}$, its volume does not double. Calculated in kelvins, $V_2 = V_1 T_2 / T_1 = 1.00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1.04\,\textsf{l}$, so the volume increases by only about $3.5\,\%$.
+- **Celsius degrees do not work in a ratio of temperatures.** When $1.00\,\textsf{l}$ of air is heated at constant pressure from $10\,{}^\circ\text{C}$ to $20\,{}^\circ\text{C}$, its volume does not double. Calculated in kelvins, $$\begin{aligned} V_2 &= V_1 T_2 / T_1 \\ &= 1.00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \\ &\approx 1.04\,\textsf{l} \end{aligned}$$, so the volume increases by only about $3.5\,\%$.
 - **The pressure of a gas in a closed container does not come from the weight of the gas.** In a small container the weight of the gas is negligible, and the pressure comes from the collisions of the particles, so it is equal everywhere in the container.
 
 ## Summary

@@ -47,7 +47,12 @@
 **Conversions:** Both energies were read in joules, so no conversions are needed.
 **Substitution:** $N = 10^{9}\,\text{J} : 10^{4}\,\text{J} = 10^{9-4} = 10^{5} = 100\,000$
 **Answer:** About $100\,000$ batteries. The result is an order of magnitude, because the energies in the figure are orders of magnitude.
-**Reasonableness:** Five steps of a factor of ten means multiplying by ten five times: $10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000$. The energy of lightning is large, but it is released in an instant; the same energy takes an enormous number of small batteries.
+**Reasonableness:** Five steps of a factor of ten means multiplying by ten five times: $$
+\begin{aligned}
+&10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \\
+&= 100\,000
+\end{aligned}
+$$. The energy of lightning is large, but it is released in an instant; the same energy takes an enormous number of small batteries.
 
 ## fy2-2-L2-01
 **Given:** chocolate bar ($100\,\text{g}$) $E_1 = 2.2\,\text{MJ}$ and nuts $E_2 = 800\,\text{kJ}$
@@ -117,7 +122,12 @@
 **Conversions:** Replace the prefixes with their values: $370\,\text{TJ} = 370 \cdot 1000\,\text{GJ} = 370 \cdot 1000 \cdot 1000\,\text{MJ} = 3.7 \cdot 10^{8}\,\text{MJ}$
 **Substitution:** $V = 3.7 \cdot 10^{8}\,\text{MJ} : 32\,\text{MJ}/\textsf{l} = 1.16 \cdot 10^{7}\,\textsf{l}$
 **Answer:** About $1.2 \cdot 10^{7}\,\textsf{l}$, that is, about $12$ million litres of petrol, two significant figures as in the data $370\,\text{TJ}$ and $32\,\text{MJ}/\textsf{l}$. Comparison: only about $4.5\,\text{kg}$ of uranium-235 gives the same energy in a day, which fits in the palm of a hand, whereas the petrol would fill hundreds of tanker lorries.
-**Reasonableness:** Estimate: $400\,000\,000 : 40 = 10\,000\,000$ litres, so about ten million litres is the right order of magnitude. The litres remain in the result, because the megajoules cancel. The difference from uranium is huge, which fits the fact that much more nuclear energy is released from the same amount of matter than in burning.
+**Reasonableness:** Estimate: $$
+\begin{aligned}
+&400\,000\,000 : 40 \\
+&= 10\,000\,000
+\end{aligned}
+$$ litres, so about ten million litres is the right order of magnitude. The litres remain in the result, because the megajoules cancel. The difference from uranium is huge, which fits the fact that much more nuclear energy is released from the same amount of matter than in burning.
 
 ## fy2-2-L1-06
 **Find:** which of the four energies given in different units is the greatest.
@@ -152,7 +162,12 @@
 **Conversions:** The megajoule is converted to kilojoules: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
 **Substitution:** $1\,\text{MJ} = 1000\,\text{kJ}$
 **Model answer:** The correct answer is $1000\,\text{kJ}$. The value $1000\,\text{J}$ is only $1\,\text{kJ}$, the value $1\,000\,000\,\text{kJ}$ is $1\,\text{GJ}$, and the value $1000\,\text{GJ}$ is a million times too large.
-**Reasonableness:** The megajoule is a larger unit than the kilojoule, so the same energy is a greater number in kilojoules. Check: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
+**Reasonableness:** The megajoule is a larger unit than the kilojoule, so the same energy is a greater number in kilojoules. Check: $$
+\begin{aligned}
+&1000\,\text{kJ} \cdot 1000 \\
+&= 1\,000\,000\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-2-L2-05
 **Given:** foods of the table: porridge $250\,\text{g}$ ($300\,\text{kJ}$ per hundred grams), banana $120\,\text{g}$ ($400\,\text{kJ}$) and orange juice $200\,\text{g}$ ($190\,\text{kJ}$); energy used in walking $220\,\text{kJ}$ per kilometre
@@ -191,9 +206,19 @@
 **Principle:** Energies can be compared only in a common unit. Each given unit is a fixed number of gigajoules, so the energy of each is obtained by multiplying the number by the size of the unit. The ratio is obtained by dividing the greatest energy by the smallest.
 **Formula:** $E = \text{value} \cdot E_\text{unit}$ and $N = E_\text{greatest} : E_\text{smallest}$
 **Conversions:** Use the given relations: $1\,\text{MWh} = 3.6\,\text{GJ}$, $1\,\text{toe} = 42\,\text{GJ}$ and $1\,\text{PJ} = 1\,000\,000\,\text{GJ}$.
-**Substitution:** Detached house: $18 \cdot 3.6\,\text{GJ} = 65\,\text{GJ}$. Farm oil: $12 \cdot 42\,\text{GJ} = 504\,\text{GJ}$. Hydropower plant: $1200 \cdot 3.6\,\text{GJ} = 4320\,\text{GJ}$. District heating: $3.2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}$. Order from smallest to greatest: detached house, farm, hydropower plant, district heating. The ratio is $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
+**Substitution:** Detached house: $18 \cdot 3.6\,\text{GJ} = 65\,\text{GJ}$. Farm oil: $12 \cdot 42\,\text{GJ} = 504\,\text{GJ}$. Hydropower plant: $1200 \cdot 3.6\,\text{GJ} = 4320\,\text{GJ}$. District heating: $$
+\begin{aligned}
+&3.2 \cdot 1\,000\,000\,\text{GJ} \\
+&= 3\,200\,000\,\text{GJ}
+\end{aligned}
+$$. Order from smallest to greatest: detached house, farm, hydropower plant, district heating. The ratio is $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
 **Answer:** The greatest energy is about $49\,000$ times the smallest (two significant figures as in the data). The numbers of the table give a misleading picture because the units are of different sizes: $\text{PJ}$ is a million gigajoules, $\text{toe}$ is $42\,\text{GJ}$ and $\text{MWh}$ is only $3.6\,\text{GJ}$. That is why the smallest number of the table, the $3.2$ of district heating, is the greatest in energy, and the number $1200$ of the hydropower plant does not make it the greatest.
-**Reasonableness:** Estimate: $3\,000\,000 : 60 = 50\,000$, so a ratio of about $50\,000$ is the right order of magnitude. A city's district heating is a year's heating for tens of thousands of houses (about $3\,200\,000\,\text{GJ} : 70\,\text{GJ} \approx 45\,000$ houses), and energies are not compared by their numbers; the units must be converted.
+**Reasonableness:** Estimate: $3\,000\,000 : 60 = 50\,000$, so a ratio of about $50\,000$ is the right order of magnitude. A city's district heating is a year's heating for tens of thousands of houses (about $$
+\begin{aligned}
+&3\,200\,000\,\text{GJ} : 70\,\text{GJ} \\
+&\approx 46\,000
+\end{aligned}
+$$ houses), and energies are not compared by their numbers; the units must be converted.
 
 ## fy2-2-L3-05
 **Given:** energies of the food $1.4\,\text{MJ}$, $3200\,\text{kJ}$, $650\,\text{kJ}$, $0.0042\,\text{GJ}$ and $900\,\text{kJ}$; use $E_\text{basic} = 10.2\,\text{MJ}$ per day; walking $s = 5.0\,\text{km}$ per day, $250\,\text{kJ/km}$; energy of fat $37\,\text{MJ/kg}$; time $30$ days
@@ -201,7 +226,13 @@
 **Principle:** Energy is conserved. If the energy obtained from food is less than the use, the missing energy is taken from the body's fat store, whose chemical energy turns into motion and thermal energy. The daily deficit is multiplied by the number of days and divided by the energy of fat per kilogram.
 **Formula:** $E_\text{use} = E_\text{basic} + s \cdot E_\text{km}$, $\Delta E = E_\text{use} - E_\text{food}$ and $m = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
 **Conversions:** All to megajoules: $3200\,\text{kJ} = 3.2\,\text{MJ}$, $650\,\text{kJ} = 0.65\,\text{MJ}$, $0.0042\,\text{GJ} = 4.2\,\text{MJ}$, $900\,\text{kJ} = 0.90\,\text{MJ}$ and walking $1250\,\text{kJ} = 1.25\,\text{MJ}$.
-**Substitution:** The meals together are $1.4 + 3.2 + 0.65 + 4.2 + 0.90 = 10.35$, so $E_\text{food} = 10.35\,\text{MJ}$. The use is $E_\text{use} = 10.2\,\text{MJ} + 1.25\,\text{MJ} = 11.45\,\text{MJ}$. The deficit is $\Delta E = 11.45\,\text{MJ} - 10.35\,\text{MJ} = 1.10\,\text{MJ}$ per day. The deficit of thirty days is $30 \cdot 1.10\,\text{MJ} = 33\,\text{MJ}$, and $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0.89\,\text{kg}$.
+**Substitution:** The meals together are $$
+\begin{aligned}
+&1.4 + 3.2 + 0.65 + 4.2 \\
+&+ 0.90 \\
+&= 10.35
+\end{aligned}
+$$, so $E_\text{food} = 10.35\,\text{MJ}$. The use is $E_\text{use} = 10.2\,\text{MJ} + 1.25\,\text{MJ} = 11.45\,\text{MJ}$. The deficit is $\Delta E = 11.45\,\text{MJ} - 10.35\,\text{MJ} = 1.10\,\text{MJ}$ per day. The deficit of thirty days is $30 \cdot 1.10\,\text{MJ} = 33\,\text{MJ}$, and $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0.89\,\text{kg}$.
 **Answer:** About $0.89\,\text{kg}$ of fat is used up in a month. The chemical energy of the fat does not disappear: it turns into the motion of the muscles and mostly into thermal energy, which is transferred to the surroundings as heat. Two significant figures as in the data.
 **Reasonableness:** The deficit is only about $10\,\%$ of the day's energy, so losing a little under a kilogram in a month is believable. Estimate: $30 \cdot 1 : 37 \approx 0.8$. The tolerance of five percent covers the rounding of the deficit $1.10\,\text{MJ}$.
 

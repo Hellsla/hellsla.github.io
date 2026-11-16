@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8eaee81f9fae4b2f
-SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
+CONTENT-HASH: 9a26cfef32568a85
 
 ## Blocking
 
 ## Polish
+- exercises/solutions.md (fy7-14-L3-05, Kuvaajan lukeminen) — the intercept is called "eikä mittaus", which implies the table rows are measurements, while the task text no longer says what kind of data the table holds. Not an error: the task nowhere claims a measurement was made. If a label is wanted, the caption can carry it.
 
 ## Checked
-- Delta round 2: L2-08 and L3-06 (added exercises); hash identical at start and end.
-- coating-curve recomputed with the figure's thin-film formula (d = 90 nm): minimum 1,26 % at 497 nm, bare glass 4,258 %; share removed 70,4 % = answers.py; the reading 1,3 / 4,3 gives 69,8 %, inside the 3 % tolerance.
-- "Valoa ei katoa" (less reflected, more transmitted) is right and matches the chapter.
-- soap-curve (350 nm, n = 1,33, air both sides): the only minimum in 400–700 nm at 465,5 nm (R ≈ 0) and the only maximum at 620,5 nm, height 7,7 %, as the solution reads.
-- L3-06: one inversion, dark 2nd = kλ, adjacent longer-λ maximum 2nd = (k − ½)λ; k = 621/(2·155) = 2,00, d = 350,4 nm = answers.py; k = 1 would put the minimum at 931 nm (IR), right.
+- Delta: the diff is one phrase in fy7-14-L3-05, "(esimerkkiaineisto)" removed from the sentence that introduces the table. No number, symbol, answer, unit or tolerance changed; solutions.md and answers.py are untouched.
+- The removal makes no claim false: the sentence says only what the table holds (the distance $x$ of the dark fringes from the line of contact).
+- L3-05 recomputed from the table with my own least-squares fit: slope $\Delta x = 1{,}896\,\text{mm}$, intercept $0{,}05\,\text{mm}$, $D = \dfrac{L}{\Delta x}\cdot\dfrac{\lambda}{2} = 12{,}42\,\mu\text{m}$, equal to the key (12.423, tolerance 4 %). The solution's $12{,}44\,\mu\text{m}$ from the eye fit is inside it.
+- Phase-shift count unchanged and right: only the lower surface (air to glass) inverts, so the contact line is dark with $k = 0$.
+- The label still stands in the two level-2 table tasks of this set; that is a matter of consistent wording, not of physics.
+- Every other task stands as recomputed in the previous report.
+- Hash 9a26cfef32568a85 at the start and at the end.

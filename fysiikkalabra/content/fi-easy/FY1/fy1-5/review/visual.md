@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cf7b8cb193c11209
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 2b80fe7f3df934a6
 
 ## Blocking
 - none
 
 ## Polish
-- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
+- none
 
 ## Checked
-- figures.py graph(): upper line, dot and s = s_0 + vt label HEAT -> INK, rendered the fy15-graph SVG (360 px figure, 720 px render): black vs blue lines distinct, labels at line ends unchanged and uncluttered, no clipping; sim.js comment only; inquiry.json/lesson.md wording (heliopaussi, paikka vs matka title)
-- Changes mirror the Finnish fix in fi-easy; no notation, unit or decimal-comma error introduced.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-03, solutions 04-06); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

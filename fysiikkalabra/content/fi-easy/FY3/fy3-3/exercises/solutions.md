@@ -26,7 +26,7 @@
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla. Muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = (77{,}4 - 273{,}15)\,{}^\circ\text{C} = -195{,}75\,{}^\circ\text{C}$
 **Vastaus:** $-196\,{}^\circ\text{C}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $77{,}4\,\text{K}$. Tarkka vakio $273{,}15$ ei rajoita tarkkuutta. Desimaalin tarkkuudella tulos olisi $-195{,}8\,{}^\circ\text{C}$.
-**Järkevyys:** Typpi on ilman pääainesosa. Se muuttuu nesteeksi vasta hyvin kylmässä. Tulos on selvästi alle veden jäätymispisteen $0\,{}^\circ\text{C}$. Se on kuitenkin yli absoluuttisen nollapisteen $-273{,}15\,{}^\circ\text{C}$. Lasketaan vielä takaisin: $-195{,}75 + 273{,}15 = 77{,}4\,\text{K}$. Arvio: $77 - 273 \approx -196$.
+**Järkevyys:** Typpi on ilman pääainesosa. Se muuttuu nesteeksi vasta hyvin kylmässä. Tulos on selvästi alle veden jäätymispisteen $0\,{}^\circ\text{C}$. Se on kuitenkin yli absoluuttisen nollapisteen $-273{,}15\,{}^\circ\text{C}$. Lasketaan vielä takaisin: $$\begin{aligned} &-195{,}75 + 273{,}15 \\ &= 77{,}4\,\text{K} \end{aligned}$$. Arvio: $77 - 273 \approx -196$.
 
 ## fy3-3-L1-04
 **Annettu:** $\theta_1 = 20\,{}^\circ\text{C}$, $\theta_2 = 45\,{}^\circ\text{C}$
@@ -86,7 +86,7 @@
 **Muunnokset:** Muunnoksia ei tarvita. Paineet ovat samassa yksikössä. Lämpötilaero $\theta_2 - \theta_1$ on sama celsiusasteina ja kelvineinä. Kulmakertoimen yksikkö on $\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Sijoitus:** $k = \dfrac{(123 - 90{,}0)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 90{,}0\,\text{kPa} + 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 35\,{}^\circ\text{C} = 101{,}55\,\text{kPa}$
 **Vastaus:** $102\,\text{kPa}$. Paine-ero $\Delta p = 123 - 90{,}0 = 33\,\text{kPa}$ on kaksinumeroinen. Siksi $k = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $k\theta \approx 12\,\text{kPa}$. Summa $90{,}0 + 12 = 102\,\text{kPa}$ pyöristetään kokonaisiin kilopascaleihin.
-**Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een. Siksi paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $90{,}0 + 0{,}35 \cdot 33 = 101{,}55\,\text{kPa}$. Tulos on pisteiden paineiden välissä. Se on myös alle välin keskiarvon $106{,}5\,\text{kPa}$.
+**Järkevyys:** Lämpötila $35\,{}^\circ\text{C}$ on $35\,\%$ matkasta $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een. Siksi paineen pitää olla $35\,\%$ matkasta välillä $90{,}0\ldots123\,\text{kPa}$: $$\begin{aligned} &90{,}0 + 0{,}35 \cdot 33 \\ &= 101{,}55\,\text{kPa} \end{aligned}$$. Tulos on pisteiden paineiden välissä. Se on myös alle välin keskiarvon $106{,}5\,\text{kPa}$.
 
 ## fy3-3-L2-03
 **Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Paine riippuu lämpötilasta lineaarisesti, myös mittausalueen ulkopuolella.
@@ -95,7 +95,7 @@
 **Kuvaajan lukeminen:** Mittauspisteet ovat lämpötiloissa $0\ldots 100\,{}^\circ\text{C}$. Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin. Sitten suoraa jatketaan vasemmalle lämpötilaan $-100\,{}^\circ\text{C}$. Jos piirrät suoran silmämääräisesti, saat arvon $45$–$50\,\text{kPa}$. Se hyväksytään.
 **Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$
 **Muunnokset:** Muunnoksia ei tarvita. Paineet ovat kilopascaleina. Lämpötilaerot ovat samat celsiusasteina ja kelvineinä.
-**Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 75\,\text{kPa} + 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 27{,}5\,\text{kPa} = 47{,}5\,\text{kPa}$
+**Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $$\begin{aligned} p &= 75\,\text{kPa} \\ &+ 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} \\ &= 75\,\text{kPa} - 27{,}5\,\text{kPa} \\ &= 47{,}5\,\text{kPa} \end{aligned}$$
 **Vastaus:** $p \approx 48\,\text{kPa}$. Vastaus annetaan kahdella merkitsevällä numerolla. Kuvaajasta luettu paine-ero $27{,}5\,\text{kPa}$ on kolmen numeron arvo, mutta lukutarkkuus on vain noin $1\,\text{kPa}$.
 **Järkevyys:** Lämpötila on mittausalueen alapuolella. Siksi paineen pitää olla pienempi kuin pienin mitattu paine $75\,\text{kPa}$. Paineen pitää kuitenkin olla selvästi yli nollan. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p \approx 75\,\text{kPa} \cdot \dfrac{173{,}15\,\text{K}}{273{,}15\,\text{K}} = 47{,}5\,\text{kPa}$. Tulos on sama.
 
@@ -233,7 +233,7 @@ T_3 &= 293{,}15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 \end{aligned}$$
 Liike-energia kasvaa siis $13{,}6\,\%$.
 **Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$). Vastauksessa on kolme merkitsevää numeroa, kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: lämpötilassa $60{,}0\,{}^\circ\text{C}$ kokonaispaine on $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$, eikä venttiili avaudu. Liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia. Ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä. Ylipaine on kokonaispaineen ja ilmanpaineen erotus.
-**Järkevyys:** Kun venttiili avautuu, kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$. Kelvinlämpötilan on siis kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$. Se vastaa tulosta $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $293{,}15 \cdot 1{,}5 - 273{,}15 \approx 167\,{}^\circ\text{C}$.
+**Järkevyys:** Kun venttiili avautuu, kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$. Kelvinlämpötilan on siis kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$. Se vastaa tulosta $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $$\begin{aligned} &293{,}15 \cdot 1{,}5 - 273{,}15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L1-09
 **Kysytty:** vakion $c$ yksikkö, kun $p = c\,T$, paine on yksikössä $\text{kPa}$ ja lämpötila yksikössä $\text{K}$
@@ -246,7 +246,7 @@ Sijoitetaan yksiköt:
 
 $[c] = \dfrac{\text{kPa}}{\text{K}}$
 
-Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\,T$ on paine. Vastaus on siis $\tfrac{\text{kPa}}{\text{K}}$. Vaihtoehto $\text{kPa} \cdot \text{K}$ kertoo yksiköt keskenään, vaikka $c$ saadaan jakamalla. Vaihtoehto $\tfrac{\text{K}}{\text{kPa}}$ on jakolasku väärinpäin. Vaihtoehto $\text{kPa}$ unohtaa lämpötilan yksikön. Esimerkkiarvoilla $p = 120\,\text{kPa}$ ja $T = 300\,\text{K}$ saadaan $c = 120\,\text{kPa} : 300\,\text{K} = 0{,}40\,\tfrac{\text{kPa}}{\text{K}}$.
+Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\,T$ on paine. Vastaus on siis $\tfrac{\text{kPa}}{\text{K}}$. Vaihtoehto $\text{kPa} \cdot \text{K}$ kertoo yksiköt keskenään, vaikka $c$ saadaan jakamalla. Vaihtoehto $\tfrac{\text{K}}{\text{kPa}}$ on jakolasku väärinpäin. Vaihtoehto $\text{kPa}$ unohtaa lämpötilan yksikön. Esimerkkiarvoilla $p = 120\,\text{kPa}$ ja $T = 300\,\text{K}$ saadaan $$\begin{aligned} c &= 120\,\text{kPa} : 300\,\text{K} \\ &= 0{,}40\,\tfrac{\text{kPa}}{\text{K}} \end{aligned}$$.
 
 ## fy3-3-L1-10
 **Annettu:** taulukosta (MAFY-taulukko *Aineiden olomuodon muutokset: Kaasut*, typpi, kiehumispiste) $\theta = -196\,{}^\circ\text{C}$
@@ -256,7 +256,7 @@ Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\
 **Muunnokset:** Celsius-lukema sijoitetaan lukuarvona: $\theta = -196$. Tulos on kelvineinä.
 **Sijoitus:** $T = (-196 + 273{,}15)\,\text{K} = 77{,}15\,\text{K}$
 **Vastaus:** $T \approx 77\,\text{K}$. Vastauksessa on kaksi merkitsevää numeroa, koska taulukon arvo $-196\,{}^\circ\text{C}$ on kokonaisina asteina. Arvo $-196\,{}^\circ\text{C}$ on MAFY-taulukosta *Aineiden olomuodon muutokset: Kaasut*. Eri taulukoiden arvot poikkeavat hieman toisistaan. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Kelvinlukema on positiivinen, kuten pitääkin. Kelvinasteikolla ei ole negatiivisia lukemia. Lämpötila on lähellä absoluuttista nollapistettä, vain noin $77\,\text{K}$ sen yläpuolella. Typpi on siis todella kylmää. Tarkistus: $77{,}15\,\text{K} - 273{,}15\,\text{K} = -196\,{}^\circ\text{C}$.
+**Järkevyys:** Kelvinlukema on positiivinen, kuten pitääkin. Kelvinasteikolla ei ole negatiivisia lukemia. Lämpötila on lähellä absoluuttista nollapistettä, vain noin $77\,\text{K}$ sen yläpuolella. Typpi on siis todella kylmää. Tarkistus: $$\begin{aligned} &77{,}15\,\text{K} - 273{,}15\,\text{K} \\ &= -196\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L2-08
 **Annettu:** kuvaajasta luetut pisteet: ensimmäinen piste $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ on ruudukon ristikohdassa ja viimeinen piste on lämpötilassa $100\,{}^\circ\text{C}$ vähän ruudukon $100\,\text{kPa}$-viivan yläpuolella, noin $102{,}5\,\text{kPa}$. Paine on $p = 100\,\text{kPa}$.
@@ -267,4 +267,4 @@ Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\
 **Muunnokset:** Muunnoksia ei tarvita. Paine on kilopascaleina ja lämpötila celsiusasteina.
 **Sijoitus:** $\theta = \dfrac{(100 - 75)\,\text{kPa}}{0{,}275\,\text{kPa}/{}^\circ\text{C}} = 90{,}9\,{}^\circ\text{C}$
 **Vastaus:** $\theta \approx 91\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta voi lukea paineen noin yhden kilopascalin tarkkuudella. Luentavirheen takia $8\,\%$ sisällä oleva arvo $84$–$98\,{}^\circ\text{C}$ hyväksytään.
-**Järkevyys:** Paine $100\,\text{kPa}$ on pisteiden $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$ välissä, lähempänä jälkimmäistä. Lämpötilan pitää siis olla välillä $75$–$100\,{}^\circ\text{C}$, lähempänä sataa. Tarkistus: $75\,\text{kPa} + 0{,}275\,\text{kPa}/{}^\circ\text{C} \cdot 90{,}9\,{}^\circ\text{C} = 100\,\text{kPa}$.
+**Järkevyys:** Paine $100\,\text{kPa}$ on pisteiden $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$ välissä, lähempänä jälkimmäistä. Lämpötilan pitää siis olla välillä $75$–$100\,{}^\circ\text{C}$, lähempänä sataa. Tarkistus: $$\begin{aligned} &75\,\text{kPa} + 0{,}275\,\text{kPa}/{}^\circ\text{C} \cdot 90{,}9\,{}^\circ\text{C} \\ &= 100\,\text{kPa} \end{aligned}$$.

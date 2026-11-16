@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ba2e7818bfdd7810
+CONTENT-HASH: 43ecc7d869e0221e
 
 ## Blocking
 (none)
 
 ## Polish
-1. L2-09 reads 39 J at 2.0 m between 5 J gridlines; a student reading 40 J gets 2.04 kg, about 2 % off: check the tolerance or use a gridline crossing.
-2. L2-08 is little more than two readings and a subtraction; the quadratic insight is only in the Reasonableness; ask also for the ratio.
+1. exercises/solutions.md:348 — "More than half of the vehicles exceed the limit, and that is why the mean speed is above the limit" does not follow (a share over one half fixes the median, not the mean) — write "which fits a mean speed above the limit".
+2. exercises/solutions.md:348 — parts a–d of L2-10 all sit under Substitution, the conclusions of d included — a blank line between the parts (as in fy4-8-L2-10) would make the long solution easier to scan.
+3. exercises/solutions.md (L1-01) — "240 kJ, two significant figures like the mass 1200 kg", while fy4-8-L2-10 counts 1500 kg as four figures — use one convention for trailing zeros across the chapters.
 
 ## Checked
-- Levels 1-3 follow the plan: Ek, Ep with zero levels, sign cases, data tasks and a dimension-analysis choice (L1-09).
-- L2-08 and L2-09: graphs read at grid crossings and the mass hidden; both solutions explain and check by a second route.
-- Multiple-choice distractors in L1-06/L1-08 are misconception-based (doubling, negative Ek).
-- Task texts: situation first, question last.
+- Full review; hash 43ecc7d869e0221e at start and end. The packet's exercise brief was empty, so "nothing the lesson does not teach" was judged from the glossary, the slot's goals and the tasks themselves.
+- New L2-10 (Fintraffic speeds): applied and authentic; the table carries the source's figures and the link lets the student check them; the task says the PDF is in Finnish.
+- Four parts, no overlap: a) read cumulative shares (38.0 / 48.2 / 13.8 %) and compare road types, b) kinetic energy at 80 and 92 km/h (+32 %), c) stopping distances (13.3 m), d) conclusion and what the data cannot say.
+- Only kinetic energy and uniform / uniformly decelerated motion (chapter Acceleration and uniformly accelerated motion); nothing beyond FY4.
+- Solution: braking distance derived from v0 + a t = 0, not quoted; symbols first, conversions shown, check by two estimates; facts taken from the source are marked as such.
+- Workload is at the upper end of level 2 but each part is one or two steps; answer box 13.3 m, the stated 13 m is inside the tolerance.
+- 1280 px captures of L2-10 (table, link, derivation, parts a–b): nothing clipped, table readable.
+- Rest of the set: levels 9/10/5, distractors of L1-06/08/09 misconception-based, data tasks L2-05/07, L3-04/05 follow the bank plan; situation first, question last.

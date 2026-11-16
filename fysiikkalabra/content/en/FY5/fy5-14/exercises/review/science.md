@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dec48399de81c652
+CONTENT-HASH: 8bde674d3810f5d8
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- none.
 
 ## Checked
-Full review of exercises.json, solutions.md and answers.py. Recomputed every answer from the task text with my own formulas: L1-01 340,6; L1-02 7,556 mm; L1-03 588; L1-04 397,5; L1-08 0,1667 s; L1-10 1400; L2-01 259; L2-02 3,70 m; L2-03 697,8; L2-04 23,07 m/s; L2-05 30,41 m/s; L2-06 262; L2-07 548,4 (student 544,1); L2-08 519 Hz; L3-01 v(f1-f2)/(f1+f2) = 27,82 m/s; L3-02 444; L3-04 vΔf/(2f0+Δf) = 0,4752 m/s; L3-05 254,8 m/s; all agree with answers.py and the solutions. Every Doppler solution chooses the right one of the four MAFY formulas (L1-04 source receding, L2-03 observer approaching, L2-04/L2-05/L3-01/L2-07 source, L3-04 observer then source) and says why; v_L, v_H, f_H, T_H used consistently (v_v/v_b is the blood's speed, defined). Choice and true/false items have exactly one correct key and right feedback; the closed-pipe reasoning (L3-03) and the centre-pluck missing even harmonics with 1/n² amplitudes (L3-05) are correct; rounding reasons are sound; figures give the values the tasks need without the answer. Compared with fi: every number, correct option, tolerance, unit and experiment setup is identical (scripted comparison); the note on the MAFY subscripts (H = huojunta/havaitsija, L = lähde) is right.
+- fy5-14-L2-09 recomputed: λ = 343/432 = 0.7940 m and 343/440 = 0.7795 m; Δλ = 1.44 cm; Δf = 8 Hz (1.8 % lower), λ 1.9 % longer; 8 Hz : 25 Hz ≈ ⅓ semitone; a beat of 8 Hz. Box 0.794 m, tolerance 0.02 right.
+- Physics wording: the speed depends on the medium, not on f; light is about 10¹² times higher in frequency (5·10¹⁴/432 ≈ 1.2·10¹²); the value 432 depends on the unit of time; the wavelength depends on temperature. All right.
+- Claims and facts (1955 standard, the 2 Hz difference, 415 Hz a semitone below, 390–460 Hz, chakras via the site Prince linked, the Nazi theory, 103+107+109+113, 864 and 86 400 s, the article's verdict) agree with the verified Yle source and the Finnish.
+- The blinded randomised study design in part d is sound.
+- fy5-14-L1-04: (415 − 397)/415 = 4.3 % (corrected from 4.2) is right; 397.46 Hz recomputed.
+- Script comparison of fi and en: every number is identical (word order only).
+- Hash unchanged at start and end.

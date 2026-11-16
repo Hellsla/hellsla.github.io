@@ -199,6 +199,38 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin: $400
 **Periaate:** Beetahiukkasella on kantama, koska se luovuttaa energiansa ionisoimalla, ja muutaman millimetrin alumiini pysäyttää sen. Gammasäteily vaimenee kerros kerrokselta, ja esimerkiksi alumiinin puoliintumispaksuus on kymmeniä millimetrejä. GM-putki laskee tapahtumat mutta ei erota säteilylajeja.
 **Mallivastaus:** Lajit erottaa vertaamalla nettopulssimäärää ilman estettä ja ohuen alumiinilevyn takana. Jos nettopulssimäärä putoaa lähes nollaan, lähde on beetalähde, koska levy pysäyttää beetahiukkaset. Jos pulssimäärä pienenee vain vähän, lähde on gammalähde, koska ohut alumiinilevy päästää suurimman osan gammafotoneista läpi. Paperiarkki ei erota lajeja, koska se ei pysäytä beetahiukkasia. Lyijylevy ei erota niitä, koska se vaimentaa molempia, ja GM-putken pulssit ovat aina yhtä suuria, joten pulssin korkeudesta lajia ei voi päätellä.
 
+## fy8-12-L2-08
+**Annettu:** aineistosta: kymmenen koruna tai unimaskina myytyä tuotetta (muun muassa ”Quantum Pendant” -riipus, joka oli nimetty 5G-vastaiseksi, sekä ”negative ion” -rannekoruja, kaulakoruja ja unimaski); RIVM:n tutkimuksessa ne sisälsivät radioaktiivisia aineita ja lähettivät jatkuvasti ionisoivaa säteilyä; säteilytaso oli matala ja terveyshaitan riski pieni, mutta yhtäjaksoinen käyttö vuoden ajan $24\,\text{h}$ vuorokaudessa voisi ylittää Alankomaiden tiukan ihoaltistuksen rajan; myynti on kielletty. Oletus: 5G-signaalin taajuus $f = 3{,}5\,\text{GHz}$. Taulukosta $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Kysytty:** a) tuotteiden väite nimistä päätellen ja viranomaisen havainto; b) radioaaltofotonin energia $E$ mikroelektronivoltteina ja vertailu; c) altistuksen mittaaminen; d) tarvittava näyttö ja väitteen luokittelu
+**Periaate:** Säteily ionisoi vain, jos yksittäisen fotonin tai hiukkasen energia riittää irrottamaan elektronin atomista. Ratkaisevaa on yhden fotonin energia $E = hf$, ei intensiteetti: suuri intensiteetti tarkoittaa vain, että fotoneja on paljon, ja jokaisella niistä on yhä sama pieni energia. Fotonin energia on verrannollinen taajuuteen, ja radioaallon taajuus on paljon pienempi kuin gammasäteilyn.
+**Mallivastaus a):** Nimestä ”anti-5G” voi päätellä, että tuotteen väitettiin suojaavan 5G-verkon säteilyltä, ja nimestä ”negative ion” (negatiivinen ioni), että sen väitettiin tuottavan jonkinlaisen ionivaikutuksen. Tämä on päätelmä nimistä: uutinen ei kerro, mitä myyjät tarkemmin väittivät. Viranomaisen havainto on eri asia: tuotteet sisälsivät radioaktiivisia aineita ja lähettivät jatkuvasti ionisoivaa säteilyä. Säteilytaso oli matala, mutta jatkuva käyttö vuoden ajan voisi ylittää ihoaltistuksen rajan, ja myynti kiellettiin.
+**Kaava:** $E = hf$, ja elektronivoltteina $E_\text{eV} = \dfrac{E}{1{,}602 \cdot 10^{-19}\,\text{J/eV}}$. Vertailu tehdään jakamalla ionisaatioenergia fotonin energialla.
+**Muunnokset:** $f = 3{,}5\,\text{GHz} = 3{,}5 \cdot 10^{9}\,\text{Hz} = 3{,}5 \cdot 10^{9}\,\tfrac{1}{\text{s}}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\mu\text{eV} = 10^{-6}\,\text{eV}$.
+**Sijoitus:** Kohta b):
+
+$$\begin{aligned}
+E &= hf \\
+&= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}5 \cdot 10^{9}\,\tfrac{1}{\text{s}} \\
+&= 2{,}319 \cdot 10^{-24}\,\text{J} \\
+&= \dfrac{2{,}319 \cdot 10^{-24}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 1{,}448 \cdot 10^{-5}\,\text{eV} \\
+&= 14{,}48\,\mu\text{eV}
+\end{aligned}$$
+
+Vertailu: elektronin irrottamiseen tarvittavan energian $10\,\text{eV}$ suhde fotonin energiaan on
+
+$$\dfrac{10\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{5}$$
+
+ja gammafotonin energian $10^{5}\,\text{eV}$ suhde fotonin energiaan on
+
+$$\dfrac{10^{5}\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{9}$$
+
+Suuremmilla gammaenergioilla suhde on vielä suurempi.
+**Mallivastaus c):** Altistus mitattaisiin annosnopeusmittarilla tai GM-putkella, joka asetetaan tuotteen lähelle samalle etäisyydelle kuin missä tuote on ihoon nähden. Etäisyys on valittava tarkoituksella, koska säteilyn voimakkuus pienenee etäisyyden kasvaessa. Ensin mitataan taustasäteily samassa paikassa ilman tuotetta, ja se vähennetään tuotteen kanssa mitatusta pulssi- tai annosnopeudesta, jolloin saadaan nettoarvo. Mittausajan on oltava riittävän pitkä, jotta pulssien satunnaisvaihtelu jää pieneksi. Annos saadaan kertomalla annosnopeus käyttöajalla: yksi vuosi vuorokauden ympäri on $8760\,\text{h}$. Säteilylaji tunnistetaan asettamalla tuotteen ja mittarin väliin paperi, ohut alumiinilevy ja lyijylevy: paperi pysäyttää alfahiukkaset, alumiini beetahiukkaset, ja gammasäteilyä vaimentaa parhaiten lyijy. Uutinen ei kerro, miten RIVM mittasi tuotteet, joten tämä on yleinen menetelmä eikä kuvaus heidän tutkimuksestaan.
+**Mallivastaus d):** Väitetyistä terveysvaikutuksista tarvittaisiin ensin mekanismi, joka sopii fysiikkaan: mikä tuotteessa vuorovaikuttaa kehon kanssa ja miten. Lisäksi tarvittaisiin kontrolloituja sokkotutkimuksia, joissa on oikea ja samannäköinen vaikutukseton tuote eikä tutkittavilla tai tutkijoilla ole tietoa, kumpi on kumpi, riittävän suuri otos ja muiden tutkimusryhmien toistamat tulokset. ”Anti-5G”-väite on fysikaalisesti väärä: pieni riipus ei voi pysäyttää radioaaltoja, jotka tulevat joka suunnasta koko kehoon, eikä 5G-signaali ionisoi, koska sen fotonien energia on pieni. Riipus ei siis suojaa 5G:ltä, mutta se tuo ihon lähelle ionisoivaa säteilyä, ja se on todellinen vaikutus, jonka viranomainen havaitsi. Luokittelu: suojaväite on fysikaalisesti väärä, ja todellinen vaikutus on tuotteen oma ionisoiva säteily.
+**Vastaus:** $14\,\mu\text{eV}$, kaksi merkitsevää numeroa. Taajuudessa $3{,}5\,\text{GHz}$ on kaksi merkitsevää numeroa, ja laatikko hyväksyy myös arvon $14{,}5\,\mu\text{eV}$. Radioaaltofotonin energia on noin miljoona kertaa pienempi kuin elektronin irrottamiseen tarvittava energia, joten radioaallot eivät ionisoi, vaikka intensiteetti olisi suuri. Gammafotonit ionisoivat, koska niiden energia on yli $10^{5}\,\text{eV}$.
+**Järkevyys:** Suuruusluokka: $6 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 4 \cdot 10^{9}\,\tfrac{1}{\text{s}} \approx 2 \cdot 10^{-24}\,\text{J}$, ja jakaminen luvulla $1{,}6 \cdot 10^{-19}$ antaa noin $1{,}5 \cdot 10^{-5}\,\text{eV}$, kuten laskettiin. Radiotaajuuden fotonin energia on miljoonasosia elektronivoltista, ja yksikään ionisaatioon tarvittava energia ($10\,\text{eV}$ tai enemmän) ei lähelläkään tätä.
+
 ## fy8-12-L3-04
 **Annettu:** lähde cesium-137 ($662\,\text{keV}$), paksuudet $d = 0$, $6$, $12$, $18$, $24$ ja $30\,\text{mm}$ ja pulssit $60\,\text{s}$:ssa $2640$, $1895$, $1330$, $950$, $685$ ja $495$; tausta $N_\text{t} = 40$; taulukon puoliintumispaksuudet lyijy $5{,}5\,\text{mm}$, rauta $12\,\text{mm}$, alumiini $34\,\text{mm}$, betoni $39\,\text{mm}$, vesi $81\,\text{mm}$
 **Kysytty:** puoliintumispaksuuden keskiarvo $d_{1/2}$ millimetreinä, levyjen aine, paksuus joka pudottaa nettopulssimäärän yhteen prosenttiin sekä miksi paksuin mittaus on epävarmin
@@ -212,7 +244,7 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin: $400
 
 ## fy8-12-L3-05
 **Annettu:** lyijyseinän paksuus $d = 8{,}0\,\text{mm}$ ja puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$, geometrinen hyötysuhde $\eta = 1{,}5\,\% = 0{,}015$, viiden $60\,\text{s}$:n jakson pulssit lähteen kanssa $1010$, $987$, $1032$, $1001$ ja $1020$ sekä ilman lähdettä $24$, $29$, $22$, $27$ ja $28$
-**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleina
+**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleinä
 **Periaate:** Tausta vähennetään ensin, ja nettopulssitaajuus kertoo, kuinka monta fotonia sekunnissa osuu putkeen. Näistä fotoneista vain osuus $\eta$ lähtee putken suuntaan, ja lyijyseinä vaimentaa fotonit vaimenemislain mukaan. Aktiivisuus on hajoamisten määrä sekunnissa, ja jokainen hajoaminen lähettää oletuksen mukaan yhden fotonin, joten lähteen fotonit sekunnissa saadaan jakamalla pulssitaajuus putkeen asti pääsevällä osuudella.
 **Kaava:** $R = \dfrac{N_\text{l,ka} - N_\text{t,ka}}{t}$, seinän läpäisevä osuus $T = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ ja $R = A \cdot T \cdot \eta$, josta $A = \dfrac{R}{T \cdot \eta}$
 **Muunnokset:** $t = 60\,\text{s}$ ja $1{,}5\,\% = 0{,}015$. Lopuksi $1\,\text{kBq} = 1000\,\text{Bq}$ ja $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.

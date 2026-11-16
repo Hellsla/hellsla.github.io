@@ -130,7 +130,7 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "A probe orbits the Moon in an almost circular orbit whose radius from the centre of the Moon is $1840\\,\\text{km}$. Look up the mass of the Moon in the MAFY table (mafytaulukot.fi). Calculate the gravitational acceleration of the Moon at the probe's orbit. Give the answer in $\\text{m/s}^2$.",
+      "text": "Extension task.\n\nA probe orbits the Moon in an almost circular orbit whose radius from the centre of the Moon is $1840\\,\\text{km}$. Look up the mass of the Moon in the MAFY table (mafytaulukot.fi). Calculate the gravitational acceleration of the Moon at the probe's orbit. Give the answer in $\\text{m/s}^2$.",
       "lookup": "MAFY",
       "answer": 1.45,
       "unit": "m/s²",
@@ -278,6 +278,19 @@
       "figure": "fy5-6/radat",
       "answer": 7.7,
       "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "text": "Extension task.\n\nSource material: <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/\" target=\"_blank\" rel=\"noopener\">NASA – Planetary Fact Sheet</a>\n\nDo the planets obey Kepler's third law? According to Kepler's third law, the square of a planet's orbital period $T$ is proportional to the cube of the semi-major axis $a$ of its orbit: $T^2 \\propto a^3$. For a circular orbit the semi-major axis is the radius $r$ of the orbit.\n\nStudy the orbital data of the planets. The row <em>Distance from Sun</em> of the table gives the planet's mean distance from the Sun, which is the semi-major axis of its orbit, in the unit $10^{6}\\,\\text{km}$, and the row <em>Orbital Period</em> gives the orbital period in days. The <em>Moon</em> column is not part of the material, because the Moon orbits the Earth.\n\na) Choose five planets and collect their orbital periods and the semi-major axes of their orbits in a table.\n\nb) Plot a graph of the squares of the orbital periods as a function of the cubes of the semi-major axes. The numbers stay a convenient size in, for example, the units $10^{8}\\,\\text{km}$ and $10^{3}\\,\\text{d}$. You may draw the graph on paper or with a spreadsheet.\n\nc) Use the graph to examine how the observational data support Kepler's third law.\n\nd) Calculate the orbital period of Mars from the Earth's orbital data and the semi-major axis of Mars, and compare the result with the value NASA gives. Assess the reasons for any differences.\n\nThe answer field takes the orbital period of Mars calculated in part d) in days.",
+      "answer": 687.1,
+      "unit": "d",
       "tolerance": 0.02
     }
   ],

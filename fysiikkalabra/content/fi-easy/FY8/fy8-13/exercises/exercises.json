@@ -237,6 +237,18 @@
           "feedback": "Tässä tulos $1944\\,\\mu\\text{Sv}$ on merkitty millisieverteiksi muuntamatta yksikköä. Mikrosievertit muutetaan millisieverteiksi jakamalla luvulla $1000$, koska $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
         }
       ]
+    },
+    {
+      "id": "fy8-13-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.julkari.fi/items/8f76b41d-b3d6-4470-a97a-992347ab547f\" target=\"_blank\" rel=\"noopener\">STUK – Suomalaisten keskimääräinen efektiivinen annos vuonna 2018 (STUK-A263, 2020)</a> ja <a href=\"https://www.julkari.fi/items/86968f39-ac37-47d6-90b7-068406ac016d\" target=\"_blank\" rel=\"noopener\">STUK – Ympäristön säteilyvalvonta Suomessa: Vuosiraportti 2024 (STUK-B 341, 2025)</a> (luettu 16. marraskuuta 2026)\n\nRaporteissa kerrotaan, kuinka paljon säteilyä suomalainen saa keskimäärin vuodessa. Määrä on efektiivinen annos, ja se ilmoitetaan millisieverteinä ($\\text{mSv}$). Annos jaetaan eri lähteisiin, esimerkiksi radoniin. Radon on maaperästä tuleva radioaktiivinen kaasu. Tässä tehtävässä verrataan koko annosta annokseen, jonka pelkkä säteilymittarin näyttämä annosnopeus antaisi.\n\na) Lue raportista suomalaisen keskimääräinen efektiivinen vuosiannos. Lue myös kolme suurinta lähdettä annoksineen. Kirjaa ne ylös.\n\nb) Laske, kuinka monta prosenttia kokonaisannoksesta radon on. Käytä kohdan a) lukuja.\n\nc) Oletetaan, että säteilymittari näyttää koko vuoden annosnopeutta $0{,}10\\,\\mu\\text{Sv/h}$. Annosnopeus kertoo, kuinka paljon annosta kertyy yhdessä tunnissa. Laske, kuinka suuri annos kertyy vuodessa. Vuodessa on $8760\\,\\text{h}$. Anna tulos millisieverteinä.\n\nd) Vertaa tulosta keskimääräiseen vuosiannokseen. Selitä, miksi annosnopeuden avulla laskettu annos on niin paljon pienempi.\n\nVastaa laatikkoon kohdan c) tulos millisieverteinä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.88,
+      "unit": "mSv",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -18,7 +18,7 @@ E_\text{need} &= 0.045\,\text{kW} \cdot 24\,\text{h} \\
 \end{aligned}
 $$
 **Answer:** $E_\text{need} \approx 1.5\,\text{kWh}$, that is, $1.54 \cdot 3.6\,\text{MJ} \approx 5.5\,\text{MJ}$, two significant figures like the power of the fridge $45\,\text{W}$ and the power of the coffee maker $1.0\,\text{kW}$.
-**Reasonableness:** The fridge uses almost two thirds of the energy, even though its power is the second smallest of the devices: it is on all the time. The large power of the coffee maker matters little, because it is on for only a quarter of an hour. One and a half kilowatt-hours a day is a usual consumption for a small summer cottage.
+**Reasonableness:** The fridge uses about $70\,\%$ of the energy, even though its power is the second smallest of the devices: it is on all the time. The large power of the coffee maker matters little, because it is on for only a quarter of an hour. One and a half kilowatt-hours a day is a usual consumption for a small summer cottage.
 
 ### b)
 **Given:** from part a $E_\text{need} = 1.54\,\text{kWh}$; efficiency of the battery $\eta_\text{batt} = 90\,\%$, of the inverter $\eta_\text{inv} = 93\,\%$; production on a cloudy day $1.5\,\text{kWh}$
@@ -219,8 +219,8 @@ $$
 
 ### d)
 **Find:** the outdoor temperature at which, according to the model, no heating is needed, and why it is not $21\,{}^\circ\text{C}$
-**Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes heat, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
-**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
+**Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes internal energy of the house, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
+**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes internal energy in the house. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
 
 ### Yleisiä virheitä
 - The points are joined into a broken line in the order of the dates, so the graph does not show the dependence on temperature.
@@ -355,12 +355,12 @@ $$
 &= 215.8\,\text{MWh} : 288.5\,\text{MWh} \\
 &= 0.748
 \end{aligned}
-$$, the same as the product of the efficiencies. About a quarter of the energy becomes heat in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
+$$, the same as the product of the efficiencies. About a quarter of the energy becomes internal energy in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
 
 ### d)
 **Find:** whether the claim “the plant produces $216\,\text{MWh}$ of electricity every day” holds, and why the plant can still be useful
 **Principle:** Energy is conserved: as electricity the plant can give at most the energy stored in it by pumping, and because of the losses less (chapter *Forms of energy and conservation of energy*). A store shifts energy in time (chapter *Transferring energy: electricity and heat*).
-**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes heat. The plant is still useful, because it shifts energy in time. It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
+**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes internal energy, which is transferred to the surroundings as heat. The plant is still useful, because it shifts energy in time. It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
 
 ### Yleisiä virheitä
 - In part a the mass is calculated directly from the volume without the density, or the kilometres are not converted to metres.
@@ -370,3 +370,97 @@ $$, the same as the product of the efficiencies. About a quarter of the energy b
 
 ### Hyväksytään myös
 - The energy of part c to three significant figures, $289\,\text{MWh}$, and the overall efficiency $74.8\,\%$.
+
+## fy9-energia-s7
+
+### a)
+**Given:** from the chart of the source (checked 16 Nov 2026) the stated range $s_\text{stated}$ and the measured range $s_\text{meas}$ of three cars: Hyundai Inster $360\,\text{km}$ and $256\,\text{km}$, Tesla Model Y $629\,\text{km}$ and $359\,\text{km}$, Lucid Air $960\,\text{km}$ and $520\,\text{km}$. If you chose other cars from the chart, your numbers are different, but the method is the same.
+**Find:** by how many per cent the measured range deviates from the stated one, and what the comparison shows
+**Principle:** A relative difference tells how large a part of the reference value the difference is. The reference value is the stated range, because the deviation from it is asked. The difference is negative when the measured distance is shorter than the stated one.
+**Formula:** The difference is $\Delta s = s_\text{meas} - s_\text{stated}$, and the relative difference is $\dfrac{\Delta s}{s_\text{stated}} = \dfrac{s_\text{meas} - s_\text{stated}}{s_\text{stated}}$
+**Conversions:** The distances are in kilometres, so the units cancel. A decimal number is changed to per cent by multiplying by a hundred: $-0.289 = -28.9\,\%$.
+**Substitution:** Hyundai Inster: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{stated}} &= \dfrac{256\,\text{km} - 360\,\text{km}}{360\,\text{km}} \\
+&= \dfrac{-104\,\text{km}}{360\,\text{km}} \\
+&= -0.289
+\end{aligned}
+$$
+Tesla Model Y: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{stated}} &= \dfrac{359\,\text{km} - 629\,\text{km}}{629\,\text{km}} \\
+&= \dfrac{-270\,\text{km}}{629\,\text{km}} \\
+&= -0.429
+\end{aligned}
+$$
+Lucid Air: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{stated}} &= \dfrac{520\,\text{km} - 960\,\text{km}}{960\,\text{km}} \\
+&= \dfrac{-440\,\text{km}}{960\,\text{km}} \\
+&= -0.458
+\end{aligned}
+$$
+**Answer:** The measured range was $28.9\,\%$ shorter than the stated one for the Hyundai Inster, $42.9\,\%$ for the Tesla Model Y and $45.8\,\%$ for the Lucid Air, that is, about $29\,\%$, $43\,\%$ and $46\,\%$. Three significant figures match the distances read from the chart, and whole per cents are enough for the comparison. The comparison shows that every car drove a clearly shorter distance in the frost than stated and that the deviation varied from car to car from about $30\,\%$ to almost a half.
+**Reasonableness:** The mean of the deviations of the three cars is $39.2\,\%$, close to the average of all the cars given by the source, $38\,\%$. One of the chosen cars is below the average and two are above it, as it should be when both short-range and long-range cars are included.
+
+### b)
+**Given:** usable battery energy $E = 75\,\text{kWh}$, range in mild weather $s = 450\,\text{km}$, reference distance $s_{100} = 100\,\text{km}$; from the source (checked 16 Nov 2026) the average loss of range $38\,\%$
+**Find:** the energy the car uses on a hundred kilometres in mild weather, $E_{100}$, and in frost, $E_{100,\text{c}}$; an assessment of the assumption that the battery gives the same energy
+**Principle:** An average consumption means that the same amount of energy is used on every kilometre, so the energy used is directly proportional to the distance. Energy is conserved: the energy $E$ available from the battery is enough for the distance $s$ (chapter *Forms of energy and conservation of energy*). In frost the energy is assumed to be the same, but it is enough for a shorter distance $s_\text{c}$.
+**Formula:** $\dfrac{E_{100}}{s_{100}} = \dfrac{E}{s}$, so $E_{100} = \dfrac{E\,s_{100}}{s}$. In frost the distance is $s_\text{c} = (1 - 0.38)\,s$ and $E_{100,\text{c}} = \dfrac{E\,s_{100}}{s_\text{c}}$.
+**Conversions:** $38\,\% = 0.38$. The energy stays in kilowatt-hours and the distances in kilometres, so the kilometres cancel.
+**Substitution:** $$
+\begin{aligned}
+E_{100} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{450\,\text{km}} \\
+&= 16.67\,\text{kWh} \\
+s_\text{c} &= 0.62 \cdot 450\,\text{km} = 279\,\text{km} \\
+E_{100,\text{c}} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{279\,\text{km}} \\
+&= 26.88\,\text{kWh}
+\end{aligned}
+$$
+**Answer:** The consumption is about $17\,\text{kWh}$ in mild weather and about $27\,\text{kWh}$ in frost per hundred kilometres, two significant figures like the battery energy $75\,\text{kWh}$ and the loss $38\,\%$. The assumption does not hold exactly: a cold battery gives less energy than a warm one. Part of the loss of range therefore comes from the smaller energy and not from a larger consumption, so the real consumption grows less than the model gives.
+**Reasonableness:** In the model the consumption grows by the factor $\tfrac{1}{0.62} \approx 1.6$, that is, by more than $38\,\%$, because the same energy is divided over a shorter distance. The measured consumptions of the source, $21.2\,\text{kWh}$ and $21.6\,\text{kWh}$ per hundred kilometres, are of the same order of magnitude but smaller than the model's $27\,\text{kWh}$. The measured consumptions are, however, those of other cars than the model car, so they show only the order of magnitude. Energy per distance is also a force, because $W = Fs$: $$
+\begin{aligned}
+\dfrac{E}{s} &= \dfrac{75 \cdot 1000\,\text{W} \cdot 3600\,\text{s}}{450 \cdot 1000\,\text{m}} \\
+&= 600\,\text{N}
+\end{aligned}
+$$
+That is of the order of magnitude of the forces that resist a passenger car at highway speed.
+
+### c)
+**Find:** why the energy consumption of an electric car per kilometre grows in frost, explained with thermal physics, electricity and mechanics
+**Principle:** Energy is conserved, and all the energy the car uses is taken from the same battery. Heat is transferred the faster the larger the temperature difference is (chapter *Heat transfer, energy balance and climate change*). The power of an electrical device is $P = UI$, and in a resistance the power $P = RI^2$ becomes internal energy (chapters *Electric power and the heating of a resistor* and *Electromotive force and internal resistance*). At a steady speed the motor does the work $W = Fs$ against the resistive forces (chapter *Air resistance and falling through air*).
+**Model answer:** In frost the same battery gives energy to more uses, and the car moves against larger resistive forces.
+
+- *Thermal physics.* Heat is transferred from the warm cabin and battery to the cold surroundings the faster the larger the temperature difference is. If the cabin is at $20\,{}^\circ\text{C}$, the difference to the outdoor air is $27\,\text{K}$ at Oslo's $-7\,{}^\circ\text{C}$ and $52\,\text{K}$ at Folldal's $-32\,{}^\circ\text{C}$, almost twice as large. Keeping the temperature takes heating power, and in an electric car it is taken from the traction battery. In a combustion-engine car the cabin is heated with the internal energy of the engine, which would otherwise be transferred as heat to the surroundings. The efficiency of an electric motor is high, so there is little such energy.
+- *Electricity.* The heater takes the power $P = UI$ from the battery for the whole drive, so it uses the energy $E = Pt$. If the heating power is for example $3.0\,\text{kW}$ and the drive lasts $5.0\,\text{h}$, the heating takes $15\,\text{kWh}$, a fifth of the $75\,\text{kWh}$ battery. In addition, the internal resistance $R_\text{s}$ of a cold battery is larger. Inside the battery the power $P = R_\text{s}I^2$ becomes internal energy, and the voltage drop $R_\text{s}I$ across the internal resistance lowers the terminal voltage. Less energy is therefore available from the battery.
+- *Mechanics.* At a steady speed the motor has to do the work $W = Fs$ against the resistive forces, so the larger the resistive forces are, the more energy is used on a kilometre. Cold air is denser: by the ideal gas law $pV = nRT$ the amount of substance per volume at the same pressure is $\tfrac{n}{V} = \tfrac{p}{RT}$, that is, about $16\,\%$ larger at $-20\,{}^\circ\text{C}$ than at $+20\,{}^\circ\text{C}$. The car then pushes aside a larger mass of air on every metre, so the air resistance is larger. Snow, slush and soft winter tyres increase the rolling resistance.
+
+The energy used for heating and the energy that becomes internal energy of the battery, as well as the larger work against the resistive forces, are all taken from the same battery. Every kilometre therefore takes more energy from the battery than in mild weather, and less energy is available from a cold battery, so the range shrinks.
+
+### d)
+**Find:** why the largest deviation of the car that drove the furthest does not show that the car withstands frost worse than the others
+**Principle:** Two measurement results can be compared only if they were measured in the same conditions. If the conditions change together with the object studied, the difference does not tell which of them caused it (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** The cars did not drive in the same conditions. According to the source (checked 16 Nov 2026) the temperature fell along the route from about $-7\,{}^\circ\text{C}$ in Oslo to $-32\,{}^\circ\text{C}$ at Folldal. The short-range Hyundai Inster stopped already at a point where it was $-16\,{}^\circ\text{C}$, so it drove its whole distance in the milder first part of the route. The Lucid Air drove $520\,\text{km}$, the furthest, so it drove a large part of its distance on the coldest section of the route and was in the frost the longest. Its heating took energy from the battery for the longest time and with the largest temperature difference. A large percentage therefore tells at least partly about the conditions and not only about the car. The cars cannot be ranked by how well they withstand frost by comparing the percentages directly.
+
+### e)
+**Find:** why one winter test is not enough to predict the range of a particular car in all winter conditions, and how the test could be improved
+**Principle:** One measurement gives the result only in the conditions in which it was made. A reliable experiment changes one variable at a time, keeps the others constant and repeats the measurements, so that the size of the random variation is seen (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** The test is one drive on one route on one day, and there was one car of each model.
+
+- *The conditions vary.* The consumption is affected by the temperature, the wind, the road surface (snow, slush or dry asphalt), the speed, the climbs of the route, the preheating of the battery and the cabin, the heating settings, the load and the driving style. On another winter day they are different. The source shows the size of the effect: in the test of 2025, in which the temperature was between $-6\,{}^\circ\text{C}$ and $+8\,{}^\circ\text{C}$, the average deviation was $18\,\%$, and now it was $38\,\%$.
+- *The scatter is not known.* Each car was driven only once, so it is not known how much the result would vary if the same car drove the same route again. Different individual cars of the same model can also differ from each other.
+- *A better test.* All the cars would be driven at the same temperature and at the same speed, for example by repeating the same loop or in a cold chamber, and the preheating and the cabin temperature would be the same for all. The measurement would be made at several temperatures and repeated. Then the range as a function of temperature and the scatter of the result would be obtained.
+
+The test still gives a useful order of magnitude: in hard frost the range can be about a third or almost a half shorter than stated.
+
+### Yleisiä virheitä
+- In part a the difference is divided by the measured range. For the Inster this gives $\tfrac{104\,\text{km}}{256\,\text{km}} \approx 41\,\%$, which tells how much longer the stated distance is than the measured one.
+- In part b the consumption in frost is calculated by multiplying $16.7\,\text{kWh}$ by $1.38$, which gives $23\,\text{kWh}$. The distance becomes $38\,\%$ shorter, so the energy is divided by the distance $0.62 \cdot 450\,\text{km}$.
+- In part c the answer says that energy “disappears” or that it “turns into heat”. Energy is conserved: it becomes internal energy of the battery, the air and the tyres and is transferred as heat to the surroundings.
+- In parts d and e the percentages are treated as permanent properties of the car, although the cars drove at different temperatures and only once.
+
+### Hyväksytään myös
+- In part a cars other than those of the table, when the values are read from the chart of the source and the calculation is correct; the results can be given as whole per cents and as positive numbers when the answer says that the measured distance is shorter.
+- The results of part b to three significant figures, $16.7\,\text{kWh}$ and $26.9\,\text{kWh}$ per hundred kilometres.
+- In part c also other justified reasons, for example the larger friction of cold lubricant in the drivetrain.

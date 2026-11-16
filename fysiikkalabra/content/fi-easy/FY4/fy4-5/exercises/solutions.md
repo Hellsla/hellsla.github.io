@@ -207,7 +207,7 @@ a 0
 **Muunnokset:** $m = 4{,}0\,\text{g} = 4{,}0 \cdot 0{,}001\,\text{kg} = 0{,}0040\,\text{kg}$
 **Sijoitus:** $N = 0{,}10\,\text{N} - 0{,}0040\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}10\,\text{N} - 0{,}03924\,\text{N} = 0{,}06076\,\text{N}$
 **Vastaus:** $0{,}061\,\text{N} \approx 0{,}06\,\text{N}$. Tukivoima on kahden voiman erotus. Erotuksessa ratkaisee desimaalien määrä. Noste $0{,}10\,\text{N}$ tunnetaan sadasosanewtonin tarkkuudella.
-**Järkevyys:** Noste on suurempi kuin paino $0{,}039\,\text{N}$. Ilman kattoa pallo nousisi. Katto pysäyttää pallon työntämällä alaspäin juuri ylimäärän verran: $$\begin{aligned} &0{,}039\,\text{N} + 0{,}061\,\text{N} \\ &= 0{,}10\,\text{N} \end{aligned}$$. Tukivoima osoittaa tässä alas, ei ylös.
+**Järkevyys:** Noste on suurempi kuin paino $0{,}039\,\text{N}$. Ilman kattoa pallo nousisi. Katto pysäyttää pallon työntämällä alaspäin juuri ylimäärän verran: $0{,}039\,\text{N} + 0{,}061\,\text{N} = 0{,}10\,\text{N}$. Tukivoima osoittaa tässä alas, ei ylös.
 
 ## fy4-5-L1-06
 **Kysytty:** mitkä voimat piirretään voimakuvioon, kun laatikko liukuu vaakasuoralla lattialla ja kitka hidastaa sitä.
@@ -367,7 +367,7 @@ T 880,7 ylös
 v ylös
 a ylös
 ```
-**Kuvaajan lukeminen:** Taulukon lukemat jaetaan vaiheisiin hetkien $2{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ mukaan. Vaiheen 1 lukemien summa on $$\begin{aligned} &881\,\text{N} + 878\,\text{N} + 883\,\text{N} \\ &= 2642\,\text{N} \end{aligned}$$, joten keskiarvo on $880{,}7\,\text{N}$. Vaiheessa 2 summa on $2354\,\text{N}$ ja keskiarvo $784{,}7\,\text{N}$. Vaiheessa 3 summa on $2069\,\text{N}$ ja keskiarvo $689{,}7\,\text{N}$.
+**Kuvaajan lukeminen:** Taulukon lukemat jaetaan vaiheisiin hetkien $2{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ mukaan. Vaiheen 1 lukemien summa on $881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}$, joten keskiarvo on $880{,}7\,\text{N}$. Vaiheessa 2 summa on $2354\,\text{N}$ ja keskiarvo $784{,}7\,\text{N}$. Vaiheessa 3 summa on $2069\,\text{N}$ ja keskiarvo $689{,}7\,\text{N}$.
 **Kaava:** $T - mg = m a_y$, joten $a_y = \dfrac{T - mg}{m}$. Suurin nopeus on $v_\text{max} = a_1 \Delta t_1$. Matkat ovat $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ ja $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, koska kolmannessa vaiheessa nopeus pienenee tasaisesti nollaan. Korkeus on $h = h_1 + h_2 + h_3$
 **Muunnokset:** Voimat ovat newtoneina, massa kilogrammoina ja ajat sekunteina. Muunnoksia ei tarvita. Paino on $mg = 80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 784{,}8\,\text{N}$.
 **Sijoitus:** Kiihtyvyydet:
@@ -394,7 +394,7 @@ h_3 &= \tfrac12\cdot 2{,}397\,\tfrac{\text{m}}{\text{s}}\cdot 2{,}0\,\text{s} \\
 ```
 Korkeus on $h = 2{,}40\,\text{m} + 9{,}59\,\text{m} + 2{,}40\,\text{m} = 14{,}38\,\text{m}$.
 **Vastaus:** a) Voimakuvio ja yhtälö ovat yllä. b) $a_1 \approx 1{,}2\,\text{m/s}^2$ ylös, $a_2 \approx 0$ ja $a_3 \approx -1{,}2\,\text{m/s}^2$ eli kiihtyvyys alas. c) Kolmannessa vaiheessa kokonaisvoima osoittaa alas. Siksi köyden voima on painoa pienempi, vaikka nopeus osoittaa ylös. Kuorma hidastuu. Kiihtyvyyden suunta on kokonaisvoiman suunta. Se ei ole liikkeen suunta. d) $h \approx 14{,}4\,\text{m}$. Kahdella merkitsevällä numerolla se on $14\,\text{m}$ kuten massa $80\,\text{kg}$. Vastauslaatikkoon käy tarkempi arvo $14{,}4\,\text{m}$.
-**Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa. Vaiheessa 3 nopeus pienenee $$\begin{aligned} &1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} \\ &= 2{,}38\,\text{m/s} \end{aligned}$$. Se on lähes koko nopeus $2{,}40\,\text{m/s}$, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo. Kiihdytys- ja hidastusvaihe kattavat yhdessä saman matkan kuin tasainen nopeus ajassa $2{,}0\,\text{s}$. Siksi $h = v_\text{max}\cdot 6{,}0\,\text{s} = 2{,}397\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.
+**Järkevyys:** Tasaisessa vaiheessa köyden voima $785\,\text{N}$ on sama kuin paino $785\,\text{N}$, kuten pitää. Nopeuden muutokset kumoavat toisensa. Vaiheessa 3 nopeus pienenee $1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}$. Se on lähes koko nopeus $2{,}40\,\text{m/s}$, joten nosto päättyy levossa kuten tehtävässä. Korkeus on myös suurimman nopeuden ja ajan tulo. Kiihdytys- ja hidastusvaihe kattavat yhdessä saman matkan kuin tasainen nopeus ajassa $2{,}0\,\text{s}$. Siksi $h = v_\text{max}\cdot 6{,}0\,\text{s} = 2{,}397\,\text{m/s}\cdot 6{,}0\,\text{s} = 14{,}4\,\text{m}$.
 
 ## fy4-5-L1-09
 **Kysytty:** mikä neljästä voimakuviosta esittää oikein ne voimat, jotka vaikuttavat vaakasuoralla lattialla tasaisella nopeudella työnnettävään laatikkoon.

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9a88d35a19ddea79
+CONTENT-HASH: 1bd40b6aab18a0cb
+Mode: delta
+Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md 8-5 — the accepted range is typeset "323 . . . 343"; use \ldots spacing or an en dash, e.g. $323\text{–}343$.
+- [Minor] none beyond the Checked scope.
 
 ## Checked
-- Delta (8-5 answer $3{,}3 \cdot 10^{2}\,\text{kJ/kg}$ with computed 333): open-exercises-1280-5 and -6 (graph with data points and solution, units upright), -1 and -4 for surrounding layout.
+- fy3-7-open-exercises-L3-1280-6, L2-1280-14 (jähmettymis displays, aligned rows, new source task context).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

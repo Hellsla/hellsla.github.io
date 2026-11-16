@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f3a59ac83b2cce67
-SCOPE: delta reflow from 863e5a33fd901319 base b525423bfeedcf7782f19e02f245d66dfadb296f
+CONTENT-HASH: c8d58abe3c8d97bc
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] L3-05 solution — "the share $p$ of the energy converted to internal energy of the energy of the absorbed photon" stacks two "of"s; "the fraction $p$ of the absorbed photon's energy that is converted to internal energy" reads more easily.
 
 ## Checked
-- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
-- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
-- Hash re-run at the end: unchanged.
+- Delta: heat -> internal energy in L3-03 and L3-05 task text and solutions; significant-figure sentences in two answers. Opened open-exercises-L3-1280-8 (L3-05 solution): aligned rows, fractions, upright units, answer box, no clipping.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish (English) 4 · accessibility 4

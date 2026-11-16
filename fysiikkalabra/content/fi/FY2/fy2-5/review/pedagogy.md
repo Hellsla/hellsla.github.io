@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4d8688e99d2ef3cb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 3
+CONTENT-HASH: ebe800111c50a61e
+Mode: delta (one changed sentence in Kosteus ja polttoaineen laatu)
 
 ## Blocking
 - none
@@ -10,6 +9,5 @@ Round: 3
 - none
 
 ## Checked
-- git diff HEAD~1 (commit a84956a90) of the unit's files (fi), judged in context.
-- The new second question is neutral: it asks whether the numbers can be compared as the same physical quantity without presupposing the answer. Options 2 ('larger, but they describe different things') and 3 ('same quantity, so chocolate would be a better fuel') are now two genuine answers the student must choose between, so my round-1 Polish is resolved.
-- The options and their feedback were unchanged and still fit the new prompt: each feedback answers the new question (nutrition label = energy the body can use, heating value = energy released in burning) and repairs the misconception. No answer is disclosed before the student commits.
+- The sentence now gives dry wood as 16,2 MJ/kg (MAFY) instead of 19; it is above the table's air-dry 15 MJ/kg, so the point "drier wood gives more" holds and the sentence no longer contradicts the table.
+- No other text (figures, inquiry, example) uses the old 19 MJ/kg value.

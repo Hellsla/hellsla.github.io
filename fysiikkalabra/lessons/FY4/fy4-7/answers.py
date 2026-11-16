@@ -52,4 +52,19 @@ a["fy4-7-L3-05"] = sf((em[0] - em[4]) / 1000, 2)        # ΔE = 8530 J − 6933 
 # Added exercises (figure tasks)
 a["fy4-7-L2-08"] = 9.0 - 1.0                                       # pallo-ek: E_k(6,0 m/s) = 9,0 J, E_k(2,0 m/s) = 1,0 J → ΔE_k = 8,0 J
 a["fy4-7-L2-09"] = sf(39 / (g * 2.0), 2)                           # ep-kuvaaja: E_p = 39 J at h = 2,0 m → m = E_p/(g h) = 1,99 kg
+# Data task (teacher's brief FY4-A2): Fintraffic, Ajonopeudet maanteillä 2025, summer 2025, all vehicles
+# (road group: mean speed km/h, share over the limit %, share more than 10 km/h over %)
+lam = {80: (82.3, 62.0, 13.8), 100: (96.3, 39.8, 8.1), 120: (112.6, 36.2, 7.3)}
+shares = {k: (round(100 - o, 1), round(o - o10, 1), o10) for k, (_, o, o10) in lam.items()}   # a) at or under the limit, at most 10 km/h over, more than 10 km/h over: 80: 38,0 / 48,2 / 13,8 %; 100: 60,2 / 31,7 / 8,1 %
+one_in = 100 / lam[80][2]                               # 13,8 % is about one vehicle in 7,2
+m_car, t_r, a_br = 1500, 1.0, -8.0                      # car 1500 kg, reaction time 1,0 s, braking acceleration −8,0 m/s²
+v1, v2 = 80 * 1000 / 3600, 92 * 1000 / 3600             # 80 km/h = 22,22… m/s, 92 km/h = 25,55… m/s
+ek1, ek2 = 0.5 * m_car * v1 ** 2, 0.5 * m_car * v2 ** 2   # b) E_k = ½ m v²: 370 370 J -> 0,37 MJ and 489 815 J -> 0,49 MJ
+ek_more = (ek2 / ek1 - 1) * 100                         # (92/80)² = 1,3225 -> 32 % more; the speed is 92/80 = 1,15 -> 15 % larger
+sr1, sr2 = v1 * t_r, v2 * t_r                           # c) reaction distances s_r = v_0 t_r: 22,22 m and 25,56 m
+sj1, sj2 = -v1 ** 2 / (2 * a_br), -v2 ** 2 / (2 * a_br)   # braking: v = v_0 + a t = 0 -> t_j = −v_0/a, s_j = v_0 t_j + ½ a t_j² = −v_0²/(2a): 30,86 m and 40,82 m
+s1, s2 = sr1 + sj1, sr2 + sj2                           # stopping distances 53,09 m and 66,37 m
+a["fy4-7-L2-10"] = sf(s2 - s1, 3)                       # Δs = 13,29 m -> answer 13.3; shown with two significant figures: 13 m
+rounded_ok(s2 - s1, 13, 0.05)
+v_left = math.sqrt(-2 * a_br * (s2 - s1)) * 3.6         # beyond the question: where the slower car has stopped the faster one still has 13,29 m to go: v = √(−2aΔs) = 14,58 m/s = 52 km/h
 print(json.dumps(a))

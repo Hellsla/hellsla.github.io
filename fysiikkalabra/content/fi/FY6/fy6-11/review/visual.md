@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a71b156bfd3b2778
+CONTENT-HASH: b355145b63d5a274
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] inquiry.json koe-2 (proof formula 2) — the second row begins with the division colon `: (3 \cdot 10^{-9}\,\text{C})`; legible and breaks between whole quantities, but a row beginning with an operator is slightly unusual — optional: keep as is.
 
 ## Checked
-- Delta: koe-2 solution Periaate, 'jokaisella taulukon rivillä'. The solution is not captured open; read from the diff: grammatical, one sentence, maths untouched.
-- Opened fy6-11-open-exercises-1280-6 (fi) and the lab layout (en, same structure): layout unchanged, units upright, decimal comma kept.
-- Hash at start and end: a71b156bfd3b2778. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+- Delta round 4: proof sheet review-batch/proof/fi-fy6-11-lesson-1.png opened, all 7 formulas looked at (simulaatio calc, koe-2, koe-3, koe-3 solution, virhe feedback x2, siirto): every one fits its box at 352 px, rows break at relations or between whole quantities, never between a number and its power of ten, units upright with thin space, relation signs aligned.
+- The one change since the last PASS (the 2000 V feedback formula back to inline) is the accepted known clipped formula listed in docs/clipped-formulas.tsv; not a finding.
+- check_layout.py passes at 352–1920 px per the prompt; page captures not re-opened (nothing else changed).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

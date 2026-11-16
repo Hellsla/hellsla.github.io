@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8bbe1c98fa95eed9
+CONTENT-HASH: 3a5329e4800fba78
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-15: P_a label in the figure (fi, fi-easy, en) is legible and upright at 390 px; table η = W_a/W_o = P_a/P_o fits.
+- [Minor] fy4-15 Example 2 (untouched) — at 390 px the long formula line of Sara's solution ($P = 0.85 \cdot 1000 \ldots \cdot 6\ldots$) is cut at the right edge of the card in the capture; confirm it scrolls or wraps (check_layout covers it).
 
-Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+## Checked
+- Opened fy4-15-stage-sovella-390-2 (worked example stage 7/7: changed Reasonableness $(120 : 82)^2 \approx 2.14$, $2.14 \cdot 1.02\,\text{MW} \approx 2.2\,\text{MW}$) and -3: the new numbers render in clean inline maths, colon division, decimal point, units upright; arithmetic presentation consistent with the 1017 kW figure. Packet gives no SCOPE line.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

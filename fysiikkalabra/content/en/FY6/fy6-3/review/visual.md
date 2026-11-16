@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1801dc8d3de815ed
+CONTENT-HASH: deb7315c39d1f7f0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
-- Re-ran screenshot.py for this hash and opened the captures of the lesson's theory pages at 1280 px (figures, labels, units, captions): all labels render, nothing clipped, no overflow, no figure label changed.
-- No lesson figure shows F_s or F_e, so the en label mapping "s" to "e" has no effect on the lesson's figures.
+- round 3, delta review (reflow): proof sheets en-fy6-3-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

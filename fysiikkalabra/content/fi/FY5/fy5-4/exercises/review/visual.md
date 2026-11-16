@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 70d174f2f9293390
-SCOPE: delta added-exercise from a6b9feb8d21605fb base 8f23aa7ae3bd
+CONTENT-HASH: 7ae124fdf02b5df7
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-4-L2-09 Järkevyys — "Kaarre, jossa $15\,\text{m/s}$ … antaa" reads oddly; "Kaarre" could be "Kaarteessa, jossa …" or "Kaarre, jossa ajetaan nopeudella …".
-- [Minor] fy5-4-L2-09 Kuvaajan lukeminen — "säde saadaan niiden avulla" is vague; could say the radius follows from $a_\text{n} = \tfrac{v^2}{r}$.
+- [Minor] fy5-4 L2-07 — "vaatisi kitkan, joka … ja se vaatisi jo erittäin hyvän pidon" repeats "vaatisi"; e.g. "ja se edellyttäisi jo erittäin hyvää pitoa".
+- [Minor] fy5-4 L3-05 — "antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" echoes the previous clause word for word; "kitkan ei tarvitse tuottaa koko voimaa yksin" reads lighter. Optional.
 
 ## Checked
-- fy5-4-open-exercises-L2-1280-12 and -13 (task 4-9 with `kuvaaja-a`, solution open) and L3-1280-10 and -11 (task 4-23 with `kuvaaja-b`, solution open), 664 px wide. Delta only: L2-09 and L3-06.
-- Both graphs: axes with arrowheads, titles `a_n (m/s^2)` / `F (kN)` and `v (m/s)` LaTeX, ticks and numbers legible, gridlines, dashed guide lines to a single marked point, curve in the acceleration (orange) and force (red) colours; the curves end inside the last gridline, and nothing runs outside the plot or overlaps a label. Units are on the axes (kN stated in the solution too). The point gives all needed values; the radius and the answer are not shown.
-- Solutions: seven-part order, KaTeX units upright, `\cdot`, decimal comma, chains as aligned rows; no plain quantity.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed Järkevyys and Mallivastaus sentences read correctly.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

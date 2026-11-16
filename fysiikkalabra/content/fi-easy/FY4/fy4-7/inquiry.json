@@ -29,7 +29,7 @@
         {
           "text": "$5{,}1\\,\\text{m}$",
           "correct": true,
-          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$. Nousun aikana keskinopeus on puolet alkunopeudesta. Siksi $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\\\ &\\approx 5{,}1\\,\\text{m} \\end{aligned}$$."
+          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$. Nousun aikana keskinopeus on puolet alkunopeudesta. Siksi $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 5{,}1\\,\\text{m}$."
         },
         {
           "text": "$10\\,\\text{m}$",
@@ -447,7 +447,7 @@
         {
           "text": "Nopeus pitää ensin muuttaa: $36\\,\\text{km/h} = 10\\,\\text{m/s}$. Silloin $E_\\text{k} = 50\\,\\text{kJ}$.",
           "correct": true,
-          "feedback": "Oikein. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$ ja $$\\begin{aligned} &E_\\text{k} \\\\ &= \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\\\ &\\cdot (10\\,\\text{m/s})^2 \\\\ &= 50\\,000\\,\\text{J} \\end{aligned}$$. Joule on $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$. Siksi nopeuden yksikön pitää olla $\\text{m/s}$."
+          "feedback": "Oikein. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$ ja $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot (10\\,\\text{m/s})^2 = 50\\,000\\,\\text{J}$. Joule on $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$. Siksi nopeuden yksikön pitää olla $\\text{m/s}$."
         },
         {
           "text": "Kerroin $\\tfrac{1}{2}$ kuuluu pois. Silloin tulos on $1\\,296\\,000\\,\\text{J}$.",

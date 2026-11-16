@@ -101,7 +101,7 @@ def coil_overlap(t, v=V_COIL):
 def graph():
     f = Fig("fy75-graph", 380, "Kaksi kuvaajaa mittakaavassa samalla aika-akselilla nollasta neljään sekuntiin. Kymmenen "
             "kierroksen neliön muotoinen käämi, sivu 0,10 m, kulkee vauhdilla 0,10 m/s magneettikentän 0,20 T alueen läpi. "
-            "Ylempi kuvaaja: magneettivuo millivebereinä on nolla 0,5 sekuntiin asti, kasvaa tasaisesti arvoon 2,0 hetkellä "
+            "Ylempi kuvaaja: magneettivuo milliwebereinä on nolla 0,5 sekuntiin asti, kasvaa tasaisesti arvoon 2,0 hetkellä "
             "1,5 s, pysyy vakiona 2,5 sekuntiin ja pienenee tasaisesti nollaan hetkellä 3,5 s. Alempi kuvaaja: "
             "induktiojännite millivoltteina on nolla, kun vuo ei muutu, miinus 20 vuon kasvaessa ja plus 20 vuon pienentyessä. "
             "Katkoviivat hetkillä 0,5; 1,5; 2,5 ja 3,5 s yhdistävät kuvaajat. Kuvan oikeassa yläkulmassa on merkintä "
@@ -174,7 +174,7 @@ def rod():
 def flux_task():
     """Task figure: the flux through a coil of 50 turns against time, piecewise linear: 0 -> 4,0 mWb in 0–0,20 s,
     constant to 0,50 s, 4,0 -> 0 mWb in 0,50–0,60 s, zero to 0,70 s. No voltage drawn or written."""
-    f = Fig("fy75-flux-task", 340, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo millivebereinä ajan funktiona "
+    f = Fig("fy75-flux-task", 340, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo milliwebereinä ajan funktiona "
             "sekunteina. Vuo kasvaa tasaisesti nollasta arvoon 4,0 hetkestä 0 hetkeen 0,20 s, pysyy arvossa 4,0 hetkeen "
             "0,50 s asti, pienenee tasaisesti nollaan hetkeen 0,60 s mennessä ja on sen jälkeen nolla. Ruudukon väli on "
             "0,1 s ja 1 mWb.")
@@ -188,7 +188,7 @@ def flux_task():
 def flux_task_2():
     """Task figure: the flux through a coil against time, piecewise linear and changing sign: 5,0 mWb at 0, falling to
     -3,0 mWb at 0,40 s, constant to 0,60 s, rising to 0 at 0,80 s. No voltage drawn or written."""
-    f = Fig("fy75-flux-task-2", 362, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo millivebereinä ajan funktiona "
+    f = Fig("fy75-flux-task-2", 362, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo milliwebereinä ajan funktiona "
             "sekunteina. Vuo on hetkellä 0 arvossa 5,0 ja pienenee tasaisesti arvoon miinus 3,0 hetkeen 0,40 s mennessä. "
             "Sen jälkeen vuo pysyy arvossa miinus 3,0 hetkeen 0,60 s asti ja kasvaa tasaisesti nollaan hetkeen 0,80 s "
             "mennessä. Ruudukon väli on 0,1 s ja 1 mWb.")

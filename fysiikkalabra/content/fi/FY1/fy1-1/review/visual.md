@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 10dada60177789aa
+CONTENT-HASH: b73fa5e62d69739d
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 10dada60177789aa
 - none
 
 ## Checked
-- batch delta review: diff is one rewritten wording sentence (no numbers or symbols changed); opened fy1-1-fig-20-390 (the object-types figure beside the changed paragraph) at 390 px: legible, nothing clipped; figures are teacher-approved and untouched.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-1 captures at 360 px (captures 01.png); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

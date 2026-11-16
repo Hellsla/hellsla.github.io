@@ -197,7 +197,7 @@ def kolme():
             "laskeutuu varjon varassa tasaisella nopeudella: nopeusnuoli alas. Voimakuviossa paino G alas ja ilmanvastus F_v "
             "yläpinnasta ylös, yhtä pitkinä, kiihtyvyys nolla. Oikealla pulkka liukuu rinnettä alas vasemmalle: nopeusnuoli rinnettä "
             "alas. Voimakuviossa pulkka on rinteen suuntaisesti kallistettu suorakulmio: paino G keskipisteestä suoraan alas, "
-            "tukivoima N alapinnasta kohtisuoraan rinteestä ulos ja liikekitka F_mu alapinnan ylemmästä kulmasta rinnettä ylös, "
+            "tukivoima N alapinnasta kohtisuoraan rinteestä ulos ja liukukitka F_mu alapinnan ylemmästä kulmasta rinnettä ylös, "
             "lyhyenä. Kiihtyvyysnuoli rinnettä alas.", size=26)
     f.line(14, 196, 586, 196, RULE, 1.5, "6 6")
     f.line(200, 36, 200, 446, RULE_LIGHT, 1.5, "4 6"); f.line(400, 36, 400, 446, RULE_LIGHT, 1.5, "4 6")
@@ -286,7 +286,7 @@ def esimerkki():
     f = Fig("fy416-esimerkki", 400, "Vasemmalla tilannekuva: pulkka ja lapsi liukuvat lumista rinnettä alas vasemmalle, ja pulkan yllä "
             "sininen nopeusnuoli osoittaa rinnettä alas. Rinne nousee oikealle kulmassa 20 astetta. Oikealla pulkan voimakuvio, pulkka "
             "suorakulmiona rinteen suuntaisesti kallistettuna, voimat mittakaavassa. Paino G keskipisteestä suoraan alas. Tukivoima N "
-            "alapinnasta kohtisuoraan rinteestä ulos, vähän painoa lyhyempänä. Liikekitka F_mu alapinnan ylemmästä kulmasta rinnettä "
+            "alapinnasta kohtisuoraan rinteestä ulos, vähän painoa lyhyempänä. Liukukitka F_mu alapinnan ylemmästä kulmasta rinnettä "
             "ylös, lyhyenä. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas, kitkaa pidempänä, ja G y kohtisuoraan "
             "rinnettä kohti. Erillään oranssi kiihtyvyysnuoli rinnettä alas. Nurkassa akselit: x rinnettä alas ja y kohtisuoraan "
             "rinteestä ulos.")

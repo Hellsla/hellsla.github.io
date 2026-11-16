@@ -283,6 +283,19 @@
       "answer": 61.05,
       "unit": "Wh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Source material: <a href=\"https://tukes.fi/litiumioniakkujen-turvallinen-kayttaminen\" target=\"_blank\" rel=\"noopener\">Tukes – Litiumioniakkujen turvallinen käyttäminen (Safe use of lithium-ion batteries; the page is in Finnish)</a>\n\nHow much energy is there in an electric-bike battery? Study the material of the Finnish Safety and Chemicals Agency (Tukes) on the safe use of lithium-ion batteries.\n\na) The nominal voltage of an electric-bike battery is $36\\,\\text{V}$ and its capacity is $14\\,\\text{Ah}$. Calculate the nominal energy content of the battery in watt-hours and in joules.\n\nb) A charger feeds a power of $120\\,\\text{W}$ into the empty battery. Estimate the minimum time needed to charge the battery. Assume that the charging power stays the same during the whole charge, and ignore the charging losses.\n\nc) Explain why the real charging time is usually longer than the value calculated in part b).\n\nd) Choose two instructions about charging a battery from the source material. For each, use the physics of this chapter to explain why the charging conditions or the use of a suitable charger matter for safety.\n\nEnter in the box the minimum time of part b) in hours.",
+      "answer": 4.2,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level3": [

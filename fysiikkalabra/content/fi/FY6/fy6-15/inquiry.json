@@ -30,15 +30,15 @@
         {
           "text": "Noin $8{,}7\\,\\text{A}$, koska virta on teho jaettuna jännitteellä.",
           "correct": true,
-          "feedback": "Oikein. $P = UI$, joten $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, mitä tapahtuu, kun monta tällaista laitetta on samassa ryhmässä."
+          "feedback": "Oikein. $P = UI$, joten $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, mitä tapahtuu, kun monta tällaista laitetta on samassa ryhmässä."
         },
         {
           "text": "Noin $0{,}12\\,\\text{A}$, koska virta on jännite jaettuna teholla.",
-          "feedback": "Jännite jaettuna teholla ei ole virta, eikä sen yksikkö ole ampeeri. Tehosta $P = UI$ ratkaistaan $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "feedback": "Jännite jaettuna teholla ei ole virta, eikä sen yksikkö ole ampeeri. Tehosta $P = UI$ ratkaistaan $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         },
         {
           "text": "Noin $2000\\,\\text{A}$, koska laitteen virta on sama luku kuin sen teho.",
-          "feedback": "Teho ja virta ovat eri suureita. Sama teho saadaan pienellä virralla, kun jännite on suuri: $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "feedback": "Teho ja virta ovat eri suureita. Sama teho saadaan pienellä virralla, kun jännite on suuri: $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         }
       ]
     },
@@ -122,7 +122,7 @@
         "hints": [
           "Laitteet ovat rinnan. Miten rinnakkaisten laitteiden virrat yhdistyvät ryhmäjohdossa?",
           "Ryhmäjohdon virta on laitteiden virtojen summa, eli yhteisteho jaettuna jännitteellä.",
-          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+          "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1200\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "Jatkojohdon läpi kulkee molempien laitteiden virta. Kuinka suuri se on?",
-        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. Johdossa kehittyvä lämpöteho riippuu johdon resistanssista ja virrasta.",
+        "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1400\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$. Johdossa kehittyvä lämpöteho riippuu johdon resistanssista ja virrasta.",
         "$P = RI^2 = 0{,}60\\,\\Omega \\cdot (14{,}8\\,\\text{A})^2$."
       ],
       "mistakes": [

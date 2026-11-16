@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 401502d5a1468825
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 072bc679bb45dcdc
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] fy7-8-theory-1280-2 — the scene figure (phone charger) now sits beside the paragraph; the text column beside the transformer photo leaves a small empty gap on the left; acceptable, no action.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Three-phase subsection: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en: "At the same voltage, current and power factor … $1.73$ times") reads correctly; display formula $P = \sqrt{3}\,U I \cos\varphi$ and symbol list unchanged.
-- Aria texts of grid and loss-graph unchanged since round 1 and consistent across lesson.md, figures.py, figures.json.
-- Hash identical at start and end of this round.
+- Delta: "lämmöksi" to "sisäenergiaksi" in text, tasks, aria-label and the moved scene figure.
+- Opened fy7-8-fig-11-390 (charger scene: nothing clipped, legible, palette ok) and fy7-8-theory-1280-2 (new sentence "osa ... sisäenergiaksi, joka siirtyy lämpönä ympäristöön", scene beside its paragraph, formula block and surrounding layout intact).
+- The wording is fluent and consistent with the sim note; no plain quantity added.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

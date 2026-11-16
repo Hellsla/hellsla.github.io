@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0c746c938ac9ccb7
+CONTENT-HASH: 585ea6d0cadefd72
 
 ## Blocking
 - none
@@ -8,9 +8,7 @@ CONTENT-HASH: 0c746c938ac9ccb7
 - none
 
 ## Checked
-- open-exercises-L2-1280-5 (14-13, 2,1·10^2 Ω), -6 (14-14, 1,8·10^2 mW eli 0,18 W, added 147 mW row), -7 and -8 (14-15, 3,9·10^2 Ω; 14-16).
-- open-exercises-L3-1280-4 and -5 (14-20/14-21, 4,7·10^3 kWh area).
-- a·10^n and the "(laskettu 181 mW)" clause render cleanly; the Sijoitus line wraps by item without clipping; units upright; no overflow.
+- Delta (reflow, 5d), round 3. Opened all 1 proof sheet(s) fi-fy6-14-exercises-* and every numbered formula; all `fits`, breaks sensible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

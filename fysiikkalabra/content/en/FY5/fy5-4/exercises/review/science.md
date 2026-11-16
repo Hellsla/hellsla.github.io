@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 669fa3763072ddd0
-SCOPE: delta added-exercise from 659ad3e05eafaa51 base 8f23aa7ae3bd
+CONTENT-HASH: 972e8efd5f7c706b
 
 ## Blocking
-(none)
 
 ## Polish
-- none.
 
 ## Checked
-- fy5-4-L2-09: figure kuvaaja-a draws a_n = v²/75; marked point (15 m/s, 3.0 m/s²); r = v²/a_n = 75 m; check at 10 m/s, 1.33 m/s², right. Own script, answers.py and JSON agree (75.0).
-- fy5-4-L3-06: figure kuvaaja-b draws F = 1200 kg · v²/60 m, so at 20 m/s F = 8.0 kN exactly as marked; level road, N = mg, limiting case F = μ0 N gives μ0 = 8000/(1200 · 9.81) = 0.680. Conditions (friction the only horizontal force, greatest static friction μ0 N) stated in the task.
-- Ground-frame model: friction is the net force towards the centre, no centrifugal force; consistent with the passed set.
-- Significant figures (two, from the read values) and the reasonableness checks (0.3 g, dry vs wet asphalt) right.
-- Figures: English axis labels and descriptions give the values the solutions quote; the radius is not given away.
-- Compared with the Finnish set by script: every number, answer, unit, tolerance and figure id identical.
-- Hash unchanged at start and end.
+- The hash was 972e8efd5f7c706b at the start and at the end. I judged only the diff (solutions.md, the L2-07 Reasonableness and the L3-05 Model answer on the justification).
+- L2-07: I recomputed the numbers. a = 4.32 m/s² = 0.440 g, mg = 8.34 kN, and the student's 7344 N / 8.34 kN = 0.881. No number changed.
+- L2-07: "would already require very good grip" is correct for 0.88. It agrees with line 184 (0.92, possible on dry asphalt) and line 323 (dry asphalt 0.7–0.9). The contradiction is gone.
+- L3-05: "friction does not have to supply the whole net force towards the centre" is correct. The net force is N sin α + F cos α. The wrong reference to work is gone.
+- Both sentences say the same as the Finnish version.

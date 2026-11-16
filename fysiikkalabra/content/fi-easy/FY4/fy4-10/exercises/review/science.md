@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 76508de88ca598d0
-SCOPE: delta added-exercise from 7285f36aa764b4e1 base 81db4a6fd727
+CONTENT-HASH: e1082b35426289cf
+SCOPE: delta added-exercise from a5cb18686cec075d base abdc9e095e4f
+
 ## Blocking
 
 ## Polish
+- solutions.md fy4-10-L2-10 (c, last paragraph) — "sitä enemmän liike-energiaa häviää": part d says rightly that it turns into internal energy and sound — write "sitä enemmän liike-energiaa muuttuu muuksi energiaksi", as two sentences earlier.
+- solutions.md fy4-10-L2-10 (c) — "noin $72\,\%$" is from the exact values (72,3 %); from the shown 0,44 J and 0,12 J a student gets 73 % — say "noin 72–73 %" or name the exact values.
 
 ## Checked
-- L2-09: from figures.py ex_vt_kaarryt v_A = 0,8, v_B = −0,4, v_A' = 0,2, v_B' = 0,6 m/s (collision at 2,0 s); m_B = m_A(v_A − v_A')/(v_B' − v_B) = 0,50 · 0,6 / 1,0 = 0,30 kg (recomputed); momentum 0,28 kg·m/s before and after; E_k 0,184 J → 0,064 J, so the data are physically possible.
-- L3-06: from ex_xt_tarra v = 0,60 m/s, v' = 0,40 m / 2,0 s = 0,20 m/s; m_B = 0,30(3 − 1) = 0,60 kg; ΔE_k = 0,054 − 0,018 = 0,036 J (recomputed); share m_B/(m_A + m_B) = 2/3 correct for a perfectly inelastic hit on a body at rest.
-- Figure tick labels: the v axis at v = 0 with labels below the plot (ticks_below) changes no value; every needed value still sits on a grid crossing (0,5 s, 0,2 m/s steps) and the descriptions give the same numbers without the answer.
-- Friction neglected and stated in both tasks; conservation applied over the collision only, as in the brief.
-- All 23 tasks: answer, unit, tolerance, figure, data and correct options equal the Finnish set; answers.py agrees.
-- Hash unchanged at start and end.
+- Hash the same at the start and the end (e1082b35426289cf).
+- Added task fy4-10-L2-10 only; the other 23 exercises are unchanged by the packet's check.
+- Source (coordinator's record, PhET Collision Lab 1.1.25, run 16.11.2026): screen Tutki 1D, controls Arvot, Liike-energia, Lisää tietoja, Seinä, Elastisuus and the defaults 0,50 kg, 1,00 m/s; 1,50 kg, −0,50 m/s are as recorded; link and date in the task, date and version in the solution.
+- Recomputed from the defaults with my own collision formulas: 100 %: −1,25 and 0,25 m/s; 50 %: −0,6875 and 0,0625 m/s; 0 %: −0,125 m/s. Momentum −0,25 kg·m/s in every case; E_k 0,4375 J → 0,4375; 0,1211; 0,0156 J. The solution's values from the shown two decimals (−0,255 and −0,26 kg·m/s; 0,1217 J and 0,0169 J) are computed right and the rounding of the display is named as the reason.
+- Momentum changes at 100 %: −1,125 and +1,125 kg·m/s; losses 72 % and 96 %.
+- The student chooses the values: the solution says there is no single right number, gives the method first and the default-value run as a dated example; the answer string states the conservation result and names its numbers as the default values.
+- d: equal and opposite internal forces for the same time (Newton III) → impulses cancel; no external force along the track with Seinä off; kinetic energy is a scalar that no law conserves in a non-elastic collision: it becomes internal energy and sound, total energy conserved. Agrees with the brief's Tiivistelmä.
+- Check v' = (m1v1 + m2v2)/(m1 + m2) = −0,125 m/s; limits of the model stated.
+- Scope: one-dimensional collisions, elastic and perfectly inelastic, inside FY4.

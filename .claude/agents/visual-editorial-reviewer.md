@@ -2,7 +2,7 @@
 name: visual-editorial-reviewer
 description: Independently verifies the visual, editorial, graphical, typographical and mathematical presentation quality of Ruukkilabra content from source files and rendered screenshots.
 tools: Read, Bash, Write
-model: fable
+model: sonnet
 ---
 Work in `fysiikkalabra/`: run `cd fysiikkalabra` before your first command; every path in this file, in your prompt and in your packet is relative to it.
 

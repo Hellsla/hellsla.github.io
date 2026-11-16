@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b1f9cda044de58c0
+CONTENT-HASH: 2f696bac3aa33109
 
 ## Blocking
 
@@ -7,8 +7,11 @@ CONTENT-HASH: b1f9cda044de58c0
 
 ## Polish
 
-(none; round 1 items resolved)
+(none)
 
 ## Checked
 
-- Round 2: re-read the changed task and solution from the JSON and solutions.md (text only, no renders). Stem now asks which option is closest and the correct option is 1600 MeV for 1560 MeV; options 0,002/8/1600/180000 are unambiguous.
+- Delta only: solutions.md line 74, "rautaatomin" corrected to "rauta-atomin" (a hyphen is required between the same vowels in a Finnish compound); the sentence's meaning, numbers and symbols are unchanged.
+- The Periaate step still explains why hydrogen-atom masses are used (the electrons' masses cancel) and that the result is divided by the number of nucleons.
+- exercises.json: calculation chains only re-broken into rows, no change of content to judge.
+- Judged from the diff and the packet text; no capture opened.

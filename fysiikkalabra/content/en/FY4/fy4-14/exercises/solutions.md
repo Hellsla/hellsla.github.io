@@ -44,7 +44,7 @@ a ylös
 **Conversions:** The quantities are in SI units, and $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$, so no conversions are needed.
 **Substitution:** $a = \dfrac{0.600\,\text{kg}\cdot 9.81\,\text{m/s}^2 - 8.00\,\text{N}}{0.600\,\text{kg}} = \dfrac{5.886\,\text{N} - 8.00\,\text{N}}{0.600\,\text{kg}} = -3.523\,\text{m/s}^2$
 **Answer:** $3.52\,\text{m/s}^2$ upward, three significant figures like the mass $0.600\,\text{kg}$ and the air resistance $8.00\,\text{N}$. The minus sign tells that the acceleration points up.
-**Reasonableness:** Air resistance is about $1.4$ times the weight $5.9\,\text{N}$, so about $2\,\text{N}$ remains upward and the acceleration is about $2\,\text{N} : 0.6\,\text{kg} \approx 3.5\,\text{m/s}^2$. The ball slows down until the air resistance has decreased to the size of the weight.
+**Reasonableness:** Air resistance is about $1.4$ times the weight $5.9\,\text{N}$, so about $2\,\text{N}$ remains upward and the acceleration is about $2\,\text{N} : 0.6\,\text{kg} \approx 3.3\,\text{m/s}^2$. The ball slows down until the air resistance has decreased to the size of the weight.
 
 ## fy4-14-L1-04
 **Given:** $m = 0.450\,\text{kg}$, air resistance $F_\text{v} = 1.20\,\text{N}$, the ball is rising; $g = 9.81\,\text{m/s}^2$
@@ -59,7 +59,7 @@ v ylös
 ```
 **Formula:** $\Sigma F = -G - F_\text{v} = -mg - F_\text{v}$, so the magnitude of the net force is $|\Sigma F| = mg + F_\text{v}$
 **Conversions:** The mass is in kilograms and the force in newtons, so no conversions are needed.
-**Substitution:** $$\begin{aligned} &|\Sigma F| \\ &= 0.450\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &+ 1.20\,\text{N} \\ &= 4.4145\,\text{N} + 1.20\,\text{N} \\ &= 5.6145\,\text{N} \end{aligned}$$
+**Substitution:** $|\Sigma F| = 0.450\,\text{kg}\cdot 9.81\,\text{m/s}^2 + 1.20\,\text{N} = 4.4145\,\text{N} + 1.20\,\text{N} = 5.6145\,\text{N}$
 **Answer:** $5.61\,\text{N}$ downward, three significant figures like the mass $0.450\,\text{kg}$ and the air resistance $1.20\,\text{N}$.
 **Reasonableness:** The net force is greater than the weight $4.41\,\text{N}$, because the air resistance pulls in the same direction. That is why a rising ball slows down faster than without air. The net force points down even though the ball is moving up.
 
@@ -111,7 +111,7 @@ a alas
 ```
 **Formula:** $mg - F_\text{v} = ma$, so $F_\text{v} = mg - ma = m(g - a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $$\begin{aligned} &F_\text{v} \\ &= 70.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 6.00\,\text{m/s}^2) \\ &= 70.0\,\text{kg}\cdot 3.81\,\text{m/s}^2 \\ &= 266.7\,\text{N} \end{aligned}$$
+**Substitution:** $F_\text{v} = 70.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 6.00\,\text{m/s}^2) = 70.0\,\text{kg}\cdot 3.81\,\text{m/s}^2 = 266.7\,\text{N}$
 **Answer:** $267\,\text{N}$ upward, three significant figures like the mass $70.0\,\text{kg}$ and the acceleration $6.00\,\text{m/s}^2$.
 **Reasonableness:** The weight of the skydiver is about $690\,\text{N}$. The acceleration is about $60\,\%$ of the free-fall acceleration, so air resistance cancels about $40\,\%$ of the weight, about $270\,\text{N}$. The skydiver is not yet at terminal velocity, because the air resistance is smaller than the weight.
 
@@ -204,9 +204,9 @@ a alas
 **Reading the graph:** The tangent starts on the vertical axis at $(0;\, 2.0\,\text{m/s})$ and passes through the grid crossing $(2.0\,\text{s};\, 15.0\,\text{m/s})$. These points are far apart and on the grid lines, so they are read accurately. The slope is read from the tangent, not from points of the curve.
 **Formula:** $a = \dfrac{\Delta v}{\Delta t}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
-**Substitution:** $a = \dfrac{15.0\,\text{m/s} - 2.0\,\text{m/s}}{2.0\,\text{s} - 0\,\text{s}} = 6.5\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 0.150\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 6.5\,\text{m/s}^2) \\ &= 0.150\,\text{kg}\cdot 3.31\,\text{m/s}^2 \\ &= 0.4965\,\text{N} \end{aligned}$$
+**Substitution:** $a = \dfrac{15.0\,\text{m/s} - 2.0\,\text{m/s}}{2.0\,\text{s} - 0\,\text{s}} = 6.5\,\text{m/s}^2$ and $F_\text{v} = 0.150\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 6.5\,\text{m/s}^2) = 0.150\,\text{kg}\cdot 3.31\,\text{m/s}^2 = 0.4965\,\text{N}$
 **Answer:** $0.50\,\text{N}$ upward, two significant figures, because the acceleration $6.5\,\text{m/s}^2$ read from the graph is given to two digits.
-**Reasonableness:** The weight of the ball is $$\begin{aligned} &0.150\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 1.5\,\text{N} \end{aligned}$$. The acceleration is about two thirds of the free-fall acceleration, so the air resistance cancels about a third of the weight, about $0.5\,\text{N}$. Later the curve flattens, the air resistance grows and approaches the weight.
+**Reasonableness:** The weight of the ball is $0.150\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.5\,\text{N}$. The acceleration is about two thirds of the free-fall acceleration, so the air resistance cancels about a third of the weight, about $0.5\,\text{N}$. Later the curve flattens, the air resistance grows and approaches the weight.
 
 ## fy4-14-L1-06
 **Find:** which statement correctly describes a falling object that has reached its terminal velocity.
@@ -248,9 +248,9 @@ a alas
 ```
 **Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
 **Conversions:** $m = 20.0\,\text{g} = 20.0 \cdot 10^{-3}\,\text{kg} = 0.0200\,\text{kg}$
-**Substitution:** $a = \dfrac{5.15\,\text{m/s} - 3.35\,\text{m/s}}{0.80\,\text{s} - 0.40\,\text{s}} = 4.50\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 0.0200\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 4.50\,\text{m/s}^2) \\ &= 0.0200\,\text{kg}\cdot 5.31\,\text{m/s}^2 \\ &= 0.1062\,\text{N} \end{aligned}$$
+**Substitution:** $a = \dfrac{5.15\,\text{m/s} - 3.35\,\text{m/s}}{0.80\,\text{s} - 0.40\,\text{s}} = 4.50\,\text{m/s}^2$ and $F_\text{v} = 0.0200\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 4.50\,\text{m/s}^2) = 0.0200\,\text{kg}\cdot 5.31\,\text{m/s}^2 = 0.1062\,\text{N}$
 **Answer:** $0.106\,\text{N}$ upward, three significant figures like the mass $20.0\,\text{g}$ and the speeds.
-**Reasonableness:** The weight of the ball is $$\begin{aligned} &0.0200\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &= 0.196\,\text{N} \end{aligned}$$, and the air resistance $0.106\,\text{N}$ is about half of it. The acceleration $4.50\,\text{m/s}^2$ is about half of the free-fall acceleration, as it should be. At the end of the table the speed is almost constant, $5.8\,\text{m/s}$, and then the air resistance is close to the weight $0.196\,\text{N}$.
+**Reasonableness:** The weight of the ball is $0.0200\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.196\,\text{N}$, and the air resistance $0.106\,\text{N}$ is about half of it. The acceleration $4.50\,\text{m/s}^2$ is about half of the free-fall acceleration, as it should be. At the end of the table the speed is almost constant, $5.8\,\text{m/s}$, and then the air resistance is close to the weight $0.196\,\text{N}$.
 
 ## fy4-14-L2-06
 **Given:** from the table cone 4: $m_4 = 4.8\,\text{g}$ and $v_4 = 1.49\,\text{m/s}$; cone 1: $m_1 = 1.2\,\text{g}$ and $v_1 = 0.72\,\text{m/s}$; the cones are at terminal velocity; $g = 9.81\,\text{m/s}^2$
@@ -287,7 +287,7 @@ v alas
 ```
 **Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$. At the end $a = 0$, so $F_\text{v} = mg$.
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
-**Substitution:** a) $a = \dfrac{15.5\,\text{m/s} - 33.0\,\text{m/s}}{1.5\,\text{s} - 0.5\,\text{s}} = -17.5\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 82.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &+ 17.5\,\text{m/s}^2) \\ &= 82.0\,\text{kg}\cdot 27.31\,\text{m/s}^2 \\ &= 2239.42\,\text{N} \end{aligned}$$. b) $mg = 82.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 804.42\,\text{N}$, so $F_\text{v} : mg = 2239.42\,\text{N} : 804.42\,\text{N} = 2.78$. c) $F_\text{v} = mg = 804.42\,\text{N}$.
+**Substitution:** a) $a = \dfrac{15.5\,\text{m/s} - 33.0\,\text{m/s}}{1.5\,\text{s} - 0.5\,\text{s}} = -17.5\,\text{m/s}^2$ and $F_\text{v} = 82.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 17.5\,\text{m/s}^2) = 82.0\,\text{kg}\cdot 27.31\,\text{m/s}^2 = 2239.42\,\text{N}$. b) $mg = 82.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 804.42\,\text{N}$, so $F_\text{v} : mg = 2239.42\,\text{N} : 804.42\,\text{N} = 2.78$. c) $F_\text{v} = mg = 804.42\,\text{N}$.
 **Answer:** a) $2240\,\text{N}$ upward, three significant figures like the mass $82.0\,\text{kg}$. b) The air resistance is about $2.8$ times the weight. The net force $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ points up, because the acceleration is up. The skydiver does not rise, because the net force only decreases the downward speed: the speed is positive downward at every point of the table. c) The air resistance is about $804\,\text{N}$, the size of the weight. The speed stays constant, because the weight and the air resistance cancel each other and the net force is zero.
 **Reasonableness:** The air resistance is about three times the weight, so the net force is about two weights upward and the acceleration is about $2g \approx 20\,\text{m/s}^2$. The calculated $17.5\,\text{m/s}^2$ is close to this. As the speed decreases, the air resistance decreases, the acceleration approaches zero and the speed levels off, as the end of the table shows.
 
@@ -305,14 +305,14 @@ a 0
 **Conversions:** $m = 0.0140\,\text{g} = 1.40 \cdot 10^{-5}\,\text{kg}$ and $h = 1.50\,\text{km} = 1500\,\text{m}$
 **Substitution:** a) $F_\text{v} = 1.40 \cdot 10^{-5}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 1.373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171.55\,\text{m/s}$
 **Answer:** a) $1.37 \cdot 10^{-4}\,\text{N}$ upward. b) $172\,\text{m/s}$, three significant figures like the height $1.50\,\text{km}$. c) Without air resistance the speed would be about $620\,\text{km/h}$, over $20$ times the real $8.0\,\text{m/s}$, and the drop would be dangerous. As the drop falls, the air resistance grows as the speed grows until it is the size of the weight. Then the net force is zero and the speed stays constant. The weight of the drop is only about $1.4 \cdot 10^{-4}\,\text{N}$, so a small air resistance is enough to cancel it already at a small speed.
-**Reasonableness:** With the acceleration $g$ the drop would reach the speed $8.0\,\text{m/s}$ in the time $$\begin{aligned} &8.0\,\text{m/s} : 9.81\,\text{m/s}^2 \\ &= 0.82\,\text{s} \end{aligned}$$, that is within a few metres, even though the distance is $1500\,\text{m}$. In reality the air resistance limits the speed right at the start, so the drop travels almost the whole distance at a constant speed and falls for only about $190\,\text{s}$. The result $171.55\,\text{m/s}$ is of the right order of magnitude, since $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
+**Reasonableness:** With the acceleration $g$ the drop would reach the speed $8.0\,\text{m/s}$ in the time $8.0\,\text{m/s} : 9.81\,\text{m/s}^2 = 0.82\,\text{s}$, that is within a few metres, even though the distance is $1500\,\text{m}$. In reality the air resistance limits the speed right at the start, so the drop travels almost the whole distance at a constant speed and falls for only about $190\,\text{s}$. The result $171.55\,\text{m/s}$ is of the right order of magnitude, since $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
 
 ## fy4-14-L1-09
 **Find:** which of the five statements about a volleyball thrown up and dropped from a height are true.
 **Principle:** The forces acting on the ball are the weight $\overline{G}$ and the air resistance $\overline{F}_\text{v}$, and the equation of motion is $\overline{G} + \overline{F}_\text{v} = m\overline{a}$. The air resistance points against the velocity and increases as the speed increases. At the terminal speed $F_\text{v} = G$, so the net force is zero.
 **Model answer:** The weight of the ball is
 
-$$\begin{aligned} &G = mg \\ &= 0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2 \end{aligned}$$, that is $G \approx 2.65\,\text{N}$.
+$G = mg = 0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2$, that is $G \approx 2.65\,\text{N}$.
 
 1 true: during the rise the air resistance points down together with the weight, so the net force is greater than $mg$ and the magnitude of the acceleration is greater than $9.81\,\text{m/s}^2$.
 2 false: at the highest point the speed is zero, so the air resistance is momentarily zero, but the weight $2.65\,\text{N}$ still acts and the acceleration is $g$ downwards.
@@ -334,6 +334,6 @@ v alas
 **Reading the graph:** We read the points $(6.0\,\text{s};\, 40.4\,\text{m/s})$ and $(10.0\,\text{s};\, 46.4\,\text{m/s})$ on both sides of the moment $8.0\,\text{s}$. The speed is still increasing, so the slope, that is the acceleration, is positive downward. The rise of the curve flattens: on the interval $0 \ldots 2.0\,\text{s}$ the slope is about $9.3\,\text{m/s}^2$, almost $g$, but on $10 \ldots 12\,\text{s}$ only about $0.5\,\text{m/s}^2$.
 **Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
-**Substitution:** a) $a = \dfrac{46.4\,\text{m/s} - 40.4\,\text{m/s}}{10.0\,\text{s} - 6.0\,\text{s}} = 1.50\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 75.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 \\ &- 1.50\,\text{m/s}^2) \\ &= 75.0\,\text{kg} \cdot 8.31\,\text{m/s}^2 \\ &= 623.25\,\text{N} \end{aligned}$$. b) The weight is $G = mg = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$, so $\dfrac{F_\text{v}}{G} = \dfrac{623.25\,\text{N}}{735.75\,\text{N}} = 0.847$
+**Substitution:** a) $a = \dfrac{46.4\,\text{m/s} - 40.4\,\text{m/s}}{10.0\,\text{s} - 6.0\,\text{s}} = 1.50\,\text{m/s}^2$ and $F_\text{v} = 75.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 1.50\,\text{m/s}^2) = 75.0\,\text{kg} \cdot 8.31\,\text{m/s}^2 = 623.25\,\text{N}$. b) The weight is $G = mg = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$, so $\dfrac{F_\text{v}}{G} = \dfrac{623.25\,\text{N}}{735.75\,\text{N}} = 0.847$
 **Answer:** a) $F_\text{v} \approx 623\,\text{N}$ upward, three significant figures like the mass $75.0\,\text{kg}$. b) The air resistance is about $85\,\%$ of the weight. The points of the graph level off near $48\,\text{m/s}$: over the last two seconds the speed increases by only $0.9\,\text{m/s}$. When the speed no longer changes, the acceleration is zero, so the net force is zero and the air resistance equals the weight, about $736\,\text{N}$.
-**Reasonableness:** The weight is about $736\,\text{N}$, and the air resistance $623\,\text{N}$ is smaller, as it must be while the skydiver is still accelerating downward. The acceleration $1.5\,\text{m/s}^2$ is clearly smaller than $g$ but not yet zero, so the air resistance is a little smaller than the weight. At the start the speed and the air resistance are zero, which is why the initial slope is almost $g$.
+**Reasonableness:** The weight is about $736\,\text{N}$, and the air resistance $623\,\text{N}$ is smaller, as it must be while the skydiver is still accelerating downward. The acceleration $1.5\,\text{m/s}^2$ is clearly smaller than $g$ but not yet zero, so the air resistance is a little smaller than the weight. At the start the speed and the air resistance are zero, which is why the initial slope is almost $g$. The terminal speed $48\,\text{m/s}$ is lower than the about $53\,\text{m/s}$ that the model of the chapter's graph would give for the same mass, because this skydiver falls in a wider position (a larger cross-sectional area, for example a loose suit) than the skydivers of the graph.

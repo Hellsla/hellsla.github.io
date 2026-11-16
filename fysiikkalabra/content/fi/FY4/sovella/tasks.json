@@ -39,7 +39,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Paino, rinteen tukivoima ja liikekitka; ei eteenpäin vievää voimaa."
+              "detail": "Paino, rinteen tukivoima ja liukukitka; ei eteenpäin vievää voimaa."
             },
             {
               "key": "fbd_directions",
@@ -57,7 +57,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Määritä kummankin voiteen liikekitkakerroin.",
+          "text": "Määritä kummankin voiteen liukukitkakerroin.",
           "answer": [
             {
               "name": "A",
@@ -264,7 +264,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} &E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\\\ &\\approx 8{,}74\\,\\text{kJ} \\end{aligned}$$"
+              "detail": "$E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
             },
             {
               "key": "units_precision",

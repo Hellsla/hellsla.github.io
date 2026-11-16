@@ -11,6 +11,7 @@
     {
       "id": "fy5-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Satamassa on vierekkäin kaksi risteilyalusta, joiden massat ovat $5{,}0 \\cdot 10^{7}\\,\\text{kg}$ ja $3{,}0 \\cdot 10^{7}\\,\\text{kg}$. Alusten painopisteiden etäisyys on $200\\,\\text{m}$. Kuinka suurella gravitaatiovoimalla alukset vetävät toisiaan? Käsittele aluksia pistemäisinä kappaleina.",
       "answer": 2.5,
       "unit": "N",
@@ -19,8 +20,7 @@
     {
       "id": "fy5-5-L1-03",
       "level": 1,
-      "core": true,
-      "text": "Merkurius-planeetan massa on $3{,}30 \\cdot 10^{23}\\,\\text{kg}$ ja säde $2{,}44 \\cdot 10^{6}\\,\\text{m}$. Kuinka suuri on gravitaatiokentän voimakkuus Merkuriuksen pinnalla?",
+      "text": "Syventävä tehtävä.\n\nMerkurius-planeetan massa on $3{,}30 \\cdot 10^{23}\\,\\text{kg}$ ja säde $2{,}44 \\cdot 10^{6}\\,\\text{m}$. Kuinka suuri on gravitaatiokentän voimakkuus Merkuriuksen pinnalla?",
       "answer": 3.70,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -136,7 +136,7 @@
     {
       "id": "fy5-5-L1-09",
       "level": 1,
-      "text": "Kuvassa on putoamiskiihtyvyys eli gravitaatiokentän voimakkuus neljän taivaankappaleen pinnalla. Marsin pinnalla seisoo astronautti, jonka massa varusteineen on $85\\,\\text{kg}$. Lue kuvasta Marsin arvo. Kuinka suuri gravitaatiovoima Marsin pinnalla vaikuttaa astronauttiin?",
+      "text": "Syventävä tehtävä.\n\nKuvassa on putoamiskiihtyvyys eli gravitaatiokentän voimakkuus neljän taivaankappaleen pinnalla. Marsin pinnalla seisoo astronautti, jonka massa varusteineen on $85\\,\\text{kg}$. Lue kuvasta Marsin arvo. Kuinka suuri gravitaatiovoima Marsin pinnalla vaikuttaa astronauttiin?",
       "answer": 320,
       "unit": "N",
       "tolerance": 0.02,
@@ -156,7 +156,7 @@
     {
       "id": "fy5-5-L2-02",
       "level": 2,
-      "text": "Venuksen pinnalla gravitaatiokentän voimakkuus on $8{,}87\\,\\text{m/s}^2$, ja Venuksen säde on $6052\\,\\text{km}$. Kuinka moninkertainen Venuksen massa on Maan massaan $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ verrattuna?",
+      "text": "Syventävä tehtävä.\n\nVenuksen pinnalla gravitaatiokentän voimakkuus on $8{,}87\\,\\text{m/s}^2$, ja Venuksen säde on $6052\\,\\text{km}$. Kuinka moninkertainen Venuksen massa on Maan massaan $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ verrattuna?",
       "answer": 0.815,
       "unit": "",
       "tolerance": 0.02
@@ -172,7 +172,7 @@
     {
       "id": "fy5-5-L2-04",
       "level": 2,
-      "text": "Matkustajakone lentää $11{,}0\\,\\text{km}$:n korkeudella. Kuinka monta prosenttia pienempi Maan gravitaatiokentän voimakkuus on siellä kuin Maan pinnalla? Maan säde on $6378\\,\\text{km}$.",
+      "text": "Syventävä tehtävä.\n\nMatkustajakone lentää $11{,}0\\,\\text{km}$:n korkeudella. Kuinka monta prosenttia pienempi Maan gravitaatiokentän voimakkuus on siellä kuin Maan pinnalla? Maan säde on $6378\\,\\text{km}$.",
       "answer": 0.344,
       "unit": "%",
       "tolerance": 0.02
@@ -180,7 +180,7 @@
     {
       "id": "fy5-5-L2-05",
       "level": 2,
-      "text": "Taulukossa on kolmen kaasujättiplaneetan massat ja keskimääräiset säteet (lähde: NASA Planetary Fact Sheet). Tulkitse säde planeetan pinnaksi ja oleta planeetat pallosymmetrisiksi.\n\na) Laske gravitaatiokentän voimakkuus kunkin planeetan pinnalla.\n\nb) Kuinka moninkertainen Neptunuksen pintakenttä on Uranuksen pintakenttään verrattuna?\n\nc) Saturnuksen massa on yli viisinkertainen Neptunuksen massaan verrattuna, mutta sen pintakenttä on silti lähes sama. Selitä miksi.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Syventävä tehtävä.\n\nTaulukossa on kolmen kaasujättiplaneetan massat ja keskimääräiset säteet (lähde: NASA Planetary Fact Sheet). Tulkitse säde planeetan pinnaksi ja oleta planeetat pallosymmetrisiksi.\n\na) Laske gravitaatiokentän voimakkuus kunkin planeetan pinnalla.\n\nb) Kuinka moninkertainen Neptunuksen pintakenttä on Uranuksen pintakenttään verrattuna?\n\nc) Saturnuksen massa on yli viisinkertainen Neptunuksen massaan verrattuna, mutta sen pintakenttä on silti lähes sama. Selitä miksi.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data"
       ],
@@ -216,6 +216,7 @@
     {
       "id": "fy5-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "Cavendishin tyyppisessä kokeessa mitataan suuren pallon ($M = 1{,}50\\,\\text{kg}$) ja pienen pallon ($m = 20{,}0\\,\\text{g}$) välistä gravitaatiovoimaa $F$ keskipisteiden etäisyyden $r$ funktiona. Taulukossa on esimerkkiaineisto.\n\na) Laske gravitaatiovakion $\\gamma$ arvo jokaisesta mittauksesta ja laske arvojen keskiarvo.\n\nb) Vertaa keskiarvoa tunnettuun arvoon $6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ ja kerro, minkä muotoinen kuvaajan $F$ suhteessa $\\tfrac{1}{r^2}$ pitäisi olla.\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
       "kind": [
         "data",
@@ -253,8 +254,7 @@
     {
       "id": "fy5-5-L2-07",
       "level": 2,
-      "core": true,
-      "text": "Taulukossa on Maan gravitaatiokentän voimakkuus $g$ eri korkeuksilla $h$ Maan pinnan yläpuolella (esimerkkiaineisto). Maan säde on $R = 6378\\,\\text{km}$.\n\na) Laske jokaiselle riville tulo $g\\,(R + h)^2$ yksikössä $\\text{m}^3/\\text{s}^2$ ja laske tulojen keskiarvo.\n\nb) Mitä suuretta tulo vastaa gravitaatiolain mukaan ja mitä sen pysyminen likimain vakiona osoittaa?\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
+      "text": "Syventävä tehtävä.\n\nTaulukossa on Maan gravitaatiokentän voimakkuus $g$ eri korkeuksilla $h$ Maan pinnan yläpuolella (esimerkkiaineisto). Maan säde on $R = 6378\\,\\text{km}$.\n\na) Laske jokaiselle riville tulo $g\\,(R + h)^2$ yksikössä $\\text{m}^3/\\text{s}^2$ ja laske tulojen keskiarvo.\n\nb) Mitä suuretta tulo vastaa gravitaatiolain mukaan ja mitä sen pysyminen likimain vakiona osoittaa?\n\nKirjoita a-kohdan keskiarvo vastauslaatikkoon yksikössä $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
       "kind": [
         "data"
       ],
@@ -325,7 +325,7 @@
         },
         {
           "text": "Kaikki kappaleet putoavat gravitaatiokentässä samalla kiihtyvyydellä massastaan riippumatta.",
-          "feedback": "Tämä pätee kappaleille, jotka ovat saman kappaleen kentässä, kuten Maan pinnalla. Tässä A on B:n kentässä ja B on A:n kentässä. Kenttä $g = \\gamma \\tfrac{M}{r^2}$ on A:n kohdalla pienempi, koska B:n massa on pienempi."
+          "feedback": "Tämä pätee kappaleille, joita vetää sama kappale, kuten Maan pinnalla olevia kappaleita Maa. Tässä A:ta vetää vain B ja B:tä vain A. Voima on kumpaankin yhtä suuri, mutta A:n massa on suurempi, joten A kiihtyy vähemmän."
         },
         {
           "text": "Kumpaankin asteroidiin vaikuttaa yhtä suuri voima, ja sama voima kiihdyttää kevyempää enemmän.",
@@ -341,7 +341,7 @@
     {
       "id": "fy5-5-L2-09",
       "level": 2,
-      "text": "Kuvassa on putoamiskiihtyvyys neljän taivaankappaleen pinnalla. Jupiterin päiväntasaajan säde on $7{,}15 \\cdot 10^{7}\\,\\text{m}$. Luotain, jonka massa on $850\\,\\text{kg}$, on Jupiterin päiväntasaajan yläpuolella korkeudella $7{,}15 \\cdot 10^{7}\\,\\text{m}$ pinnasta. Lue kuvasta Jupiterin pinnan gravitaatiokentän voimakkuus. Kuinka suurella voimalla Jupiter vetää luotainta? Anna vastaus kilonewtoneina.",
+      "text": "Syventävä tehtävä.\n\nKuvassa on putoamiskiihtyvyys neljän taivaankappaleen pinnalla. Jupiterin päiväntasaajan säde on $7{,}15 \\cdot 10^{7}\\,\\text{m}$. Luotain, jonka massa on $850\\,\\text{kg}$, on Jupiterin päiväntasaajan yläpuolella korkeudella $7{,}15 \\cdot 10^{7}\\,\\text{m}$ pinnasta. Lue kuvasta Jupiterin pinnan gravitaatiokentän voimakkuus. Kuinka suurella voimalla Jupiter vetää luotainta? Anna vastaus kilonewtoneina.",
       "answer": 5.27,
       "unit": "kN",
       "tolerance": 0.02,
@@ -360,7 +360,7 @@
     {
       "id": "fy5-5-L3-02",
       "level": 3,
-      "text": "Kaukaisen eksoplaneetan keskimääräinen tiheys on sama kuin Maan, mutta sen säde on kaksi kertaa Maan säde. Kuinka suuri on gravitaatiokentän voimakkuus planeetan pinnalla, kun se Maan pinnalla on $9{,}81\\,\\text{m/s}^2$? Oleta molemmat planeetat pallosymmetrisiksi.",
+      "text": "Syventävä tehtävä.\n\nKaukaisen eksoplaneetan keskimääräinen tiheys on sama kuin Maan, mutta sen säde on kaksi kertaa Maan säde. Kuinka suuri on gravitaatiokentän voimakkuus planeetan pinnalla, kun se Maan pinnalla on $9{,}81\\,\\text{m/s}^2$? Oleta molemmat planeetat pallosymmetrisiksi.",
       "answer": 19.6,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -376,7 +376,7 @@
     {
       "id": "fy5-5-L3-04",
       "level": 3,
-      "text": "Henry Cavendish määritti vuonna 1798 lyijypallojen välisen gravitaatiovuorovaikutuksen avulla Maan keskitiheyden. Nykyään laskun voi tehdä toisin päin: kun gravitaatiovakio tunnetaan, Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä. Tee tämä laskelma nykyarvoilla. Maan pinnalla gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ ja Maan keskimääräinen säde on $6371\\,\\text{km}$. Mallinna Maa pallosymmetrisenä pallona ja jätä sen pyöriminen huomiotta.\n\na) Laske Maan massa.\n\nb) Laske Maan keskitiheys.\n\nc) Taulukossa on Maan kuoren yleisimpien kivilajien tiheyksiä. Voiko Maa koostua kauttaaltaan tällaisista kivilajeista? Perustele laskemasi keskitiheyden avulla ja päättele, mitä se kertoo Maan sisuksesta.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Syventävä tehtävä.\n\nHenry Cavendish määritti vuonna 1798 lyijypallojen välisen gravitaatiovuorovaikutuksen avulla Maan keskitiheyden. Nykyään laskun voi tehdä toisin päin: kun gravitaatiovakio tunnetaan, Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä. Tee tämä laskelma nykyarvoilla. Maan pinnalla gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ ja Maan keskimääräinen säde on $6371\\,\\text{km}$. Mallinna Maa pallosymmetrisenä pallona ja jätä sen pyöriminen huomiotta.\n\na) Laske Maan massa.\n\nb) Laske Maan keskitiheys.\n\nc) Taulukossa on Maan kuoren yleisimpien kivilajien tiheyksiä. Voiko Maa koostua kauttaaltaan tällaisista kivilajeista? Perustele laskemasi keskitiheyden avulla ja päättele, mitä se kertoo Maan sisuksesta.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "reasoning",
@@ -410,7 +410,7 @@
     {
       "id": "fy5-5-L3-05",
       "level": 3,
-      "text": "Maa pyörähtää akselinsa ympäri ajassa $T = 24{,}0\\,\\text{h}$. Päiväntasaajalla seisova ihminen kulkee tällöin ympyrärataa, jonka säde on Maan säde $R = 6378\\,\\text{km}$. Mallinna ihminen pistemäisenä ja Maa pallona. Oleta, että Maan gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ sekä päiväntasaajalla että navalla. Ihmisen massa on $62{,}0\\,\\text{kg}$, ja vaa'an lukema on vaa'an tukivoiman suuruus.\n\na) Laske ihmisen normaalikiihtyvyys pyörimisen takia ja vaa'an lukema newtoneina päiväntasaajalla.\n\nb) Kuinka suuri olisi vaa'an lukema päiväntasaajalla, jos Maa pyörähtäisi akselinsa ympäri kerran $6{,}0\\,\\text{h}$:ssa? Anna vastaus newtoneina.\n\nc) Selitä sanoin, miksi vaaka näyttää päiväntasaajalla vähemmän kuin navalla, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
+      "text": "Syventävä tehtävä.\n\nMaa pyörähtää akselinsa ympäri ajassa $T = 24{,}0\\,\\text{h}$. Päiväntasaajalla seisova ihminen kulkee tällöin ympyrärataa, jonka säde on Maan säde $R = 6378\\,\\text{km}$. Mallinna ihminen pistemäisenä ja Maa pallona. Oleta, että Maan gravitaatiokentän voimakkuus on $g = 9{,}81\\,\\text{m/s}^2$ sekä päiväntasaajalla että navalla. Ihmisen massa on $62{,}0\\,\\text{kg}$, ja vaa'an lukema on vaa'an tukivoiman suuruus.\n\na) Laske ihmisen normaalikiihtyvyys pyörimisen takia ja vaa'an lukema newtoneina päiväntasaajalla.\n\nb) Kuinka suuri olisi vaa'an lukema päiväntasaajalla, jos Maa pyörähtäisi akselinsa ympäri kerran $6{,}0\\,\\text{h}$:ssa? Anna vastaus newtoneina.\n\nc) Selitä sanoin, miksi vaaka näyttää päiväntasaajalla vähemmän kuin navalla, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.\n\nKirjoita b-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "model",
         "reasoning"

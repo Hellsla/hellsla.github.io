@@ -356,7 +356,7 @@
         },
         {
           "text": "The light becomes bluer, because the electrons receive more energy.",
-          "feedback": "The energy of a photon is approximately equal to the energy gap, and the energy gap does not change with the voltage. The extra energy turns into heat in the LED, and the colour stays red."
+          "feedback": "The energy of a photon is approximately equal to the energy gap, and the energy gap does not change with the voltage. The extra energy turns into internal energy in the LED, and the colour stays red."
         },
         {
           "text": "Nothing changes, because the LED has already lit up.",

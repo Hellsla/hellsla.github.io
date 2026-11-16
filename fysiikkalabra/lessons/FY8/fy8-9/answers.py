@@ -25,6 +25,7 @@ BA = [291, 250, 204, 178, 143, 126, 103, 90, 72, 66, 51]   # Ba-137m counts per 
 a["fy8-9-L2-05"] = 320 * LN2 / math.log((BA[0] - 8) / (BA[8] - 8))   # net 283 -> 64 in 320 s: T½ = 149,2 s -> 149 s
 a["fy8-9-L2-06"] = 120 / 2                          # net 180 -> 45 (quarter, background 20) at 120 s: T½ = 60 s
 a["fy8-9-L2-07"] = (340 - 80 / 10) / 10.0           # background sum 80 in 10 periods -> 8,0; net 332 pulses in 10 s = 33,2 1/s
+a["fy8-9-L2-08"] = 100 * 0.5 ** (40 / 30)           # Cs-137 (T½ taken as exactly 30 a) 1986 -> 2026, 40 a: 39,69 % left -> 40 %
 # Level 3: reasoning or an unfamiliar context
 a["fy8-9-L3-01"] = 5700 * math.log(1 / 0.380) / LN2 # C-14 activity 38,0 % of a living sample: t = T½ log2(1/0,380) = 7957 a
 net0, net1 = 820 - 30, 230 - 30                     # GM counter 820 and 230 pulses/min, background 30 pulses/min

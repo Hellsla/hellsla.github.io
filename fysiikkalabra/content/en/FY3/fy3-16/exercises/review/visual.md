@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 885be814ebf99534
+CONTENT-HASH: e592a51123c9f1c7
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Diff: "round up" instructions, answers 1.7 and 1.6 kg and their precision notes. Opened fy3-16-open-exercises-L2-1280-1 (task 16-10 with the new sentence and answer 1.7 kg, solution opened).
+- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
+- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

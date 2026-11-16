@@ -246,7 +246,7 @@
       "kind": [
         "error"
       ],
-      "text": "Nosturi laskee betonielementin, jonka massa on $820\\,\\text{kg}$, laiturille. Elementti liikkuu alaspäin ja hidastuu tasaisesti, ja sen kiihtyvyyden suuruus on $1{,}20\\,\\text{m/s}^2$. Ilmanvastus jätetään huomiotta.\n\nOpiskelija laski köyden jännitysvoiman näin: ”Elementti liikkuu alaspäin, joten kiihtyvyys osoittaa alas. Siis $mg - T = ma$, josta $$\\begin{aligned} &T = m(g - a) \\\\ &= 820\\,\\text{kg}\\cdot(9{,}81\\,\\text{m/s}^2 \\\\ &- 1{,}20\\,\\text{m/s}^2) \\\\ &= 7{,}06\\,\\text{kN} \\end{aligned}$$.”\n\nMikä on opiskelijan ratkaisun virhe? Laske oikea köyden jännitysvoima. Vastauslaatikkoon köyden jännitysvoiman suuruus.",
+      "text": "Nosturi laskee betonielementin, jonka massa on $820\\,\\text{kg}$, laiturille. Elementti liikkuu alaspäin ja hidastuu tasaisesti, ja sen kiihtyvyyden suuruus on $1{,}20\\,\\text{m/s}^2$. Ilmanvastus jätetään huomiotta.\n\nOpiskelija laski köyden jännitysvoiman näin: ”Elementti liikkuu alaspäin, joten kiihtyvyys osoittaa alas. Siis $mg - T = ma$, josta $T = m(g - a) = 820\\,\\text{kg}\\cdot(9{,}81\\,\\text{m/s}^2 - 1{,}20\\,\\text{m/s}^2) = 7{,}06\\,\\text{kN}$.”\n\nMikä on opiskelijan ratkaisun virhe? Laske oikea köyden jännitysvoima. Vastauslaatikkoon köyden jännitysvoiman suuruus.",
       "answer": 9028.2,
       "unit": "N",
       "tolerance": 0.02,

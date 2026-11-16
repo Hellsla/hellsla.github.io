@@ -81,4 +81,25 @@ out.update({"fy9-energia-s6-a": round(Ep_MWh, 2), "fy9-energia-s6-EpJ": Ep, "fy9
             "fy9-energia-s6-c-E": round(E_in, 1), "fy9-energia-s6-c-eta": round(100 * eta_t * eta_p, 2),
             "fy9-energia-s6-loss": round(E_in - E_out, 1)})
 
+# s7 (FY9-A4): the winter range test of electric cars. Source: NAF and Motor, El Prix vinter 2026
+# (https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026), checked 16.11.2026: stated (WLTP) and measured ranges in km
+cars = {"inster": (360, 256), "tesla": (629, 359), "lucid": (960, 520)}
+rel = {k: 100 * (m - s) / s for k, (s, m) in cars.items()}        # relative difference in per cent of the stated range
+E7, s7, cut = 75.0, 450.0, 0.38                                    # kWh, km, the test's mean loss of range
+E100 = E7 * 100 / s7                                               # kWh per 100 km in mild weather
+s_cold = (1 - cut) * s7                                            # km
+E100_cold = E7 * 100 / s_cold                                      # kWh per 100 km, the same usable energy assumed
+F7 = E7 * kWh / (s7 * 1000)                                        # N: energy per distance is a force (W = Fs)
+heat7 = 3.0 * 5.0                                                  # kWh: an example heater, 3,0 kW for 5,0 h
+rho_ratio = (273.15 + 20) / (273.15 - 20)                          # n/V = p/(RT): -20 °C against +20 °C at the same pressure
+out.update({"fy9-energia-s7-a-inster": round(rel["inster"], 2), "fy9-energia-s7-a-tesla": round(rel["tesla"], 2),
+            "fy9-energia-s7-a-lucid": round(rel["lucid"], 2), "fy9-energia-s7-a-mean": round(-sum(rel.values()) / 3, 2),
+            "fy9-energia-s7-a-wrong": round(100 * 104 / 256, 1),
+            "fy9-energia-s7-b-E100": round(E100, 2), "fy9-energia-s7-b-range": round(s_cold, 1),
+            "fy9-energia-s7-b-E100k": round(E100_cold, 2), "fy9-energia-s7-b-factor": round(1 / (1 - cut), 3),
+            "fy9-energia-s7-b-force": round(F7, 1), "fy9-energia-s7-b-wrong": round(E100 * 1.38, 1),
+            "fy9-energia-s7-c-dT-oslo": 20 - (-7), "fy9-energia-s7-c-dT-folldal": 20 - (-32),
+            "fy9-energia-s7-c-dT-ratio": round((20 + 32) / (20 + 7), 2), "fy9-energia-s7-c-heat": heat7,
+            "fy9-energia-s7-c-heat-share": round(heat7 / E7, 2), "fy9-energia-s7-c-density": round(100 * (rho_ratio - 1), 1)})
+
 print(json.dumps(out))

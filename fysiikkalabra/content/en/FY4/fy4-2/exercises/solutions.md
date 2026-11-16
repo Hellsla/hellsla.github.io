@@ -26,7 +26,7 @@
 **Conversions:** All quantities are in SI units, and $\text{m/s}^2 \cdot \text{s}^2 = \text{m}$. No conversions are needed.
 **Substitution:** $s = \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.50\,\text{s})^2 = \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot 2.25\,\text{s}^2 \approx 11.04\,\text{m}$
 **Answer:** $11.0\,\text{m}$, three significant figures like the time $1.50\,\text{s}$.
-**Reasonableness:** The final velocity is $$\begin{aligned} &9.81\,\text{m/s}^2 \cdot 1.50\,\text{s} \\ &\approx 14.7\,\text{m/s} \end{aligned}$$, so the average velocity is about $7.4\,\text{m/s}$ and $7.4\,\text{m/s} \cdot 1.50\,\text{s} \approx 11\,\text{m}$. In the first second the stone falls about $5\,\text{m}$, so a little over $10\,\text{m}$ in one and a half seconds is plausible.
+**Reasonableness:** The final velocity is $9.81\,\text{m/s}^2 \cdot 1.50\,\text{s} \approx 14.7\,\text{m/s}$, so the average velocity is about $7.4\,\text{m/s}$ and $7.4\,\text{m/s} \cdot 1.50\,\text{s} \approx 11\,\text{m}$. In the first second the stone falls about $5\,\text{m}$, so a little over $10\,\text{m}$ in one and a half seconds is plausible.
 
 ## fy4-2-L1-04
 **Given:** from the graph, the velocity $v_1 = 2.0\,\text{m/s}$ at $t_1 = 0$ and $v_2 = 7.0\,\text{m/s}$ at $t_2 = 5.0\,\text{s}$; the graph is a straight line
@@ -55,7 +55,7 @@
 **Principle:** The braking is uniform, so the acceleration is constant. The acceleration comes from the change in velocity and the time, and then the distance comes from the equation of position. The car does not turn round, so the distance equals the displacement.
 **Formula:** $a = \dfrac{v - v_0}{t}$ and $\Delta x = v_0\,t + \tfrac{1}{2}\,a\,t^2$
 **Conversions:** The velocity is converted by substituting units: $72\,\text{km/h} = 72 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$.
-**Substitution:** $a = \dfrac{0 - 20\,\text{m/s}}{4.0\,\text{s}} = -5.0\,\text{m/s}^2$ and $$\begin{aligned} &\Delta x = 20\,\text{m/s} \cdot 4.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot (-5.0\,\text{m/s}^2) \\ &\cdot (4.0\,\text{s})^2 \\ &= 80\,\text{m} - 40\,\text{m} \\ &= 40\,\text{m} \end{aligned}$$
+**Substitution:** $a = \dfrac{0 - 20\,\text{m/s}}{4.0\,\text{s}} = -5.0\,\text{m/s}^2$ and $\Delta x = 20\,\text{m/s} \cdot 4.0\,\text{s} + \tfrac{1}{2} \cdot (-5.0\,\text{m/s}^2) \cdot (4.0\,\text{s})^2 = 80\,\text{m} - 40\,\text{m} = 40\,\text{m}$
 **Answer:** $40\,\text{m}$, two significant figures like the velocity $72\,\text{km/h}$ and the time $4.0\,\text{s}$.
 **Reasonableness:** The velocity decreases steadily from $20\,\text{m/s}$ to zero, so the average velocity is $10\,\text{m/s}$ and $10\,\text{m/s} \cdot 4.0\,\text{s} = 40\,\text{m}$, the same result. The magnitude of the acceleration, $5\,\text{m/s}^2$, is about half of $g$, which is an ordinary hard braking on a dry road.
 
@@ -76,7 +76,7 @@
 **Principle:** Take upwards as the positive direction, so the acceleration is $-g$ during the whole flight. At the highest point the velocity is zero for a moment. First solve the time of the rise from the condition $v = 0$, then the height from the equation of position.
 **Formula:** $v = v_0 - g\,t = 0$, so $t = \dfrac{v_0}{g}$, and the height is $h = v_0\,t - \dfrac{g\,t^2}{2}$
 **Conversions:** All quantities are in SI units. No conversions are needed.
-**Substitution:** $t = \dfrac{15.0\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 1.529\,\text{s}$ and $$\begin{aligned} &h = 15.0\,\text{m/s} \cdot 1.529\,\text{s} \\ &- \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \\ &\cdot (1.529\,\text{s})^2 \\ &\approx 22.94\,\text{m} - 11.47\,\text{m} \\ &\approx 11.47\,\text{m} \end{aligned}$$
+**Substitution:** $t = \dfrac{15.0\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 1.529\,\text{s}$ and $h = 15.0\,\text{m/s} \cdot 1.529\,\text{s} - \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.529\,\text{s})^2 \approx 22.94\,\text{m} - 11.47\,\text{m} \approx 11.47\,\text{m}$
 **Answer:** $11.5\,\text{m}$, three significant figures like the initial velocity $15.0\,\text{m/s}$.
 **Reasonableness:** During the rise the velocity decreases steadily from $15.0\,\text{m/s}$ to zero, so the average velocity is $7.5\,\text{m/s}$ and $7.5\,\text{m/s} \cdot 1.529\,\text{s} \approx 11.5\,\text{m}$. A height of about three storeys is plausible for a hard throw.
 
@@ -88,7 +88,7 @@
 **Conversions:** The height is in metres and the time in seconds, so the result comes out in $\text{m/s}^2$. No conversions are needed.
 **Substitution:** $g_\text{M} = \dfrac{2 \cdot 1.60\,\text{m}}{(1.41\,\text{s})^2} = \dfrac{3.20\,\text{m}}{1.9881\,\text{s}^2} \approx 1.610\,\text{m/s}^2$
 **Answer:** $1.61\,\text{m/s}^2$, three significant figures like the height $1.60\,\text{m}$ and the time $1.41\,\text{s}$.
-**Reasonableness:** The table value for the Moon's acceleration of free fall is $1.62\,\text{m/s}^2$, about one sixth of the Earth's value, so the result is close to it. On Earth the same drop would take only $$\begin{aligned} &\sqrt{2 \cdot 1.60\,\text{m} : 9.81\,\text{m/s}^2} \\ &\approx 0.57\,\text{s} \end{aligned}$$; the slower fall on the Moon corresponds to the smaller acceleration.
+**Reasonableness:** The table value for the Moon's acceleration of free fall is $1.62\,\text{m/s}^2$, about one sixth of the Earth's value, so the result is close to it. On Earth the same drop would take only $\sqrt{2 \cdot 1.60\,\text{m} : 9.81\,\text{m/s}^2} \approx 0.57\,\text{s}$; the slower fall on the Moon corresponds to the smaller acceleration.
 
 ## fy4-2-L3-01
 **Given:** initial velocity $v_0 = 8.00\,\text{m/s}$ upwards, point of release $6.00\,\text{m}$ above the ground, acceleration of free fall from the table $g = 9.81\,\text{m/s}^2$; air resistance is small
@@ -96,9 +96,9 @@
 **Principle:** The ball's acceleration is $g$ downwards during the whole flight, also at the highest point, so the whole flight is one uniformly accelerated motion. Place the origin at the point of release and take upwards as positive. The ground is then at the position $y = -6.00\,\text{m}$, and the time comes from a quadratic equation.
 **Formula:** $y = v_0\,t - \tfrac{1}{2}\,g\,t^2$. When $y = -h$: $\tfrac{1}{2}\,g\,t^2 - v_0\,t - h = 0$, whose positive solution is $t = \dfrac{v_0 + \sqrt{v_0^2 + 2gh}}{g}$
 **Conversions:** All quantities are in SI units. No conversions are needed.
-**Substitution:** Under the root $$\begin{aligned} &v_0^2 + 2gh = (8.00\,\text{m/s})^2 \\ &+ 2 \cdot 9.81\,\text{m/s}^2 \cdot 6.00\,\text{m} \\ &= 181.72\,\text{m}^2/\text{s}^2 \end{aligned}$$, and $\sqrt{181.72\,\text{m}^2/\text{s}^2} \approx 13.48\,\text{m/s}$. So $t = \dfrac{8.00\,\text{m/s} + 13.48\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 2.19\,\text{s}$
+**Substitution:** Under the root $v_0^2 + 2gh = (8.00\,\text{m/s})^2 + 2 \cdot 9.81\,\text{m/s}^2 \cdot 6.00\,\text{m} = 181.72\,\text{m}^2/\text{s}^2$, and $\sqrt{181.72\,\text{m}^2/\text{s}^2} \approx 13.48\,\text{m/s}$. So $t = \dfrac{8.00\,\text{m/s} + 13.48\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 2.19\,\text{s}$
 **Answer:** $2.19\,\text{s}$, three significant figures like the initial velocity and the height. The other solution, $t \approx -0.56\,\text{s}$, is rejected because it is before the throw.
-**Reasonableness:** The rise takes $$\begin{aligned} &8.00\,\text{m/s} : 9.81\,\text{m/s}^2 \\ &\approx 0.82\,\text{s} \end{aligned}$$ and lifts the ball $3.26\,\text{m}$, so from the highest point to the ground it is $9.26\,\text{m}$. A fall from rest takes $$\begin{aligned} &\sqrt{2 \cdot 9.26\,\text{m} : 9.81\,\text{m/s}^2} \\ &\approx 1.37\,\text{s} \end{aligned}$$, and $0.82\,\text{s} + 1.37\,\text{s} = 2.19\,\text{s}$, the same result.
+**Reasonableness:** The rise takes $8.00\,\text{m/s} : 9.81\,\text{m/s}^2 \approx 0.82\,\text{s}$ and lifts the ball $3.26\,\text{m}$, so from the highest point to the ground it is $9.26\,\text{m}$. A fall from rest takes $\sqrt{2 \cdot 9.26\,\text{m} : 9.81\,\text{m/s}^2} \approx 1.37\,\text{s}$, and $0.82\,\text{s} + 1.37\,\text{s} = 2.19\,\text{s}$, the same result.
 
 ## fy4-2-L3-02
 **Given:** acceleration $0 \to 15.0\,\text{m/s}$ in $t_1 = 20.0\,\text{s}$, constant speed $v = 15.0\,\text{m/s}$ for $t_2 = 60.0\,\text{s}$, braking to zero in $t_3 = 15.0\,\text{s}$
@@ -106,19 +106,19 @@
 **Principle:** The train always moves in the same direction, so the distance is the area under the $(t,v)$ graph. The graph is a triangle (accelerating), a rectangle (constant speed) and a triangle (braking). The accelerations do not need to be calculated, because the areas come directly from the velocity and the times.
 **Formula:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Conversions:** The velocity is in $\text{m/s}$ and the times in seconds, so the result comes out in metres. No conversions are needed.
-**Substitution:** $$\begin{aligned} &s = \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 20.0\,\text{s} \\ &+ 15.0\,\text{m/s} \cdot 60.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 15.0\,\text{s} \\ &= 150\,\text{m} + 900\,\text{m} \\ &+ 112.5\,\text{m} \\ &= 1162.5\,\text{m} \end{aligned}$$
+**Substitution:** $s = \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 20.0\,\text{s} + 15.0\,\text{m/s} \cdot 60.0\,\text{s} + \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 15.0\,\text{s} = 150\,\text{m} + 900\,\text{m} + 112.5\,\text{m} = 1162.5\,\text{m}$
 **Answer:** $1160\,\text{m}$ or $1.16\,\text{km}$, three significant figures like the velocity and the times. The result $1162.5\,\text{m}$ is rounded to three significant figures, so the zero at the end of the number is not significant; in kilometres this is clearer.
-**Reasonableness:** If the train travelled the whole $95\,\text{s}$ at $15.0\,\text{m/s}$, the distance would be $1425\,\text{m}$; the acceleration and the braking take away half of their own shares, $150\,\text{m} + 112.5\,\text{m}$, so $$\begin{aligned} &1425\,\text{m} - 262.5\,\text{m} \\ &= 1162.5\,\text{m} \end{aligned}$$. A distance of a little over a kilometre between stations is usual for a metro.
+**Reasonableness:** If the train travelled the whole $95\,\text{s}$ at $15.0\,\text{m/s}$, the distance would be $1425\,\text{m}$; the acceleration and the braking take away half of their own shares, $150\,\text{m} + 112.5\,\text{m}$, so $1425\,\text{m} - 262.5\,\text{m} = 1162.5\,\text{m}$. A distance of a little over a kilometre between stations is usual for a metro.
 
 ## fy4-2-L3-03
-**Given:** the fitted polynomial $$\begin{aligned} &y = -4.86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 \\ &+ 3.10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1.20\,\text{m} \end{aligned}$$, upwards positive; the moment $t = 0.500\,\text{s}$
+**Given:** the fitted polynomial $y = -4.86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3.10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1.20\,\text{m}$, upwards positive; the moment $t = 0.500\,\text{s}$
 **Find:** the ball's velocity $v$ with its sign in $\text{m/s}$ at $0.500\,\text{s}$
 **Principle:** The polynomial is compared with the equation of position of uniformly accelerated motion, $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. From the coefficients we read the initial velocity $v_0 = 3.10\,\text{m/s}$ and $\tfrac{1}{2}\,a = -4.86\,\text{m/s}^2$, so $a = -9.72\,\text{m/s}^2$. The velocity then comes from the equation $v = v_0 + a\,t$.
 **Formula:** From the coefficients of the polynomial $y = A\,t^2 + B\,t + C$ we get $v_0 = B$ and $a = 2A$, so $v = B + 2A\,t$
 **Conversions:** The coefficients are in SI units and the time in seconds. No conversions are needed.
-**Substitution:** $$\begin{aligned} &v = 3.10\,\text{m/s} \\ &+ 2 \cdot (-4.86\,\text{m/s}^2) \\ &\cdot 0.500\,\text{s} \\ &= 3.10\,\text{m/s} - 4.86\,\text{m/s} \\ &= -1.76\,\text{m/s} \end{aligned}$$
+**Substitution:** $v = 3.10\,\text{m/s} + 2 \cdot (-4.86\,\text{m/s}^2) \cdot 0.500\,\text{s} = 3.10\,\text{m/s} - 4.86\,\text{m/s} = -1.76\,\text{m/s}$
 **Answer:** $-1.76\,\text{m/s}$, three significant figures, because the coefficients of the polynomial and the moment $0.500\,\text{s}$ are given to three significant figures. The negative sign means that the ball is already moving downwards.
-**Reasonableness:** The acceleration obtained from the measurement, $-9.72\,\text{m/s}^2$, is close to $-g$, as it should be. The ball is at its highest point at the time $$\begin{aligned} &3.10\,\text{m/s} : 9.72\,\text{m/s}^2 \\ &\approx 0.32\,\text{s} \end{aligned}$$, so at $0.500\,\text{s}$ it is already descending and the velocity must be negative. The descent has lasted $0.18\,\text{s}$, and $$\begin{aligned} &9.72\,\text{m/s}^2 \cdot 0.18\,\text{s} \\ &\approx 1.8\,\text{m/s} \end{aligned}$$.
+**Reasonableness:** The acceleration obtained from the measurement, $-9.72\,\text{m/s}^2$, is close to $-g$, as it should be. The ball is at its highest point at the time $3.10\,\text{m/s} : 9.72\,\text{m/s}^2 \approx 0.32\,\text{s}$, so at $0.500\,\text{s}$ it is already descending and the velocity must be negative. The descent has lasted $0.18\,\text{s}$, and $$9.72\,\text{m/s}^2 \cdot 0.18\,\text{s} \approx 1.8\,\text{m/s}$$.
 
 ## fy4-2-L1-06
 **Find:** in which direction the acceleration of a car driving east and braking points.
@@ -132,9 +132,9 @@
 **Reading the graph:** The endpoints of the line are at intersections of grid lines: the starting point $(0;\, 2.0\,\text{m/s})$ and the end point $(5.0\,\text{s};\, 7.0\,\text{m/s})$.
 **Formula:** $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, that is, the average of the velocities times the time
 **Conversions:** The velocities are in $\text{m/s}$ and the time in seconds, so the result comes out in metres. No conversions are needed.
-**Substitution:** $$\begin{aligned} &\Delta x = 2.0\,\text{m/s} \cdot 5.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 5.0\,\text{m/s} \cdot 5.0\,\text{s} \\ &= 10\,\text{m} + 12.5\,\text{m} \\ &= 22.5\,\text{m} \end{aligned}$$
+**Substitution:** $\Delta x = 2.0\,\text{m/s} \cdot 5.0\,\text{s} + \tfrac{1}{2} \cdot 5.0\,\text{m/s} \cdot 5.0\,\text{s} = 10\,\text{m} + 12.5\,\text{m} = 22.5\,\text{m}$
 **Answer:** $22.5\,\text{m}$, three significant figures, because the values read are exactly on grid lines.
-**Reasonableness:** The average velocity is $$\begin{aligned} &(2.0\,\text{m/s} + 7.0\,\text{m/s}) : 2 \\ &= 4.5\,\text{m/s} \end{aligned}$$, and $4.5\,\text{m/s} \cdot 5.0\,\text{s} = 22.5\,\text{m}$. The distance is greater than the $10\,\text{m}$ travelled at the initial velocity and smaller than the $35\,\text{m}$ travelled at the final velocity, as it should be.
+**Reasonableness:** The average velocity is $(2.0\,\text{m/s} + 7.0\,\text{m/s}) : 2 = 4.5\,\text{m/s}$, and $4.5\,\text{m/s} \cdot 5.0\,\text{s} = 22.5\,\text{m}$. The distance is greater than the $10\,\text{m}$ travelled at the initial velocity and smaller than the $35\,\text{m}$ travelled at the final velocity, as it should be.
 
 ## fy4-2-L1-08
 **Find:** what is wrong in the student's solution.
@@ -188,7 +188,7 @@
 **Conversions:** All quantities are in SI units. No conversions are needed.
 **Substitution:** $t_k = \dfrac{2.42\,\text{m/s}}{0.81\,\text{m/s}^2} \approx 2.99\,\text{s}$. The distance is $s = \dfrac{(2.42\,\text{m/s})^2}{2 \cdot 0.81\,\text{m/s}^2} = \dfrac{5.86\,\text{m}^2/\text{s}^2}{1.62\,\text{m/s}^2} \approx 3.61\,\text{m}$. c) The graphs are not drawn in the answer box but described in words below.
 **Answer:** The cart gets about $3.6\,\text{m}$ upwards from the starting point, two significant figures, because the acceleration and the initial velocity have been fitted from scattered data. c) The $(t,a)$ graph is a horizontal line at $a \approx -0.81\,\text{m/s}^2$ for the whole interval, because the acceleration is constant and points down the track also at the turning moment. The $(t,x)$ graph is a downward-opening parabola that starts from the origin, rises steeply at first and flattens, has its peak at $x \approx 3.6\,\text{m}$ at $t \approx 3.0\,\text{s}$ (the tangent is horizontal, because $v = 0$) and falls after that; the cart returns to the starting point at $2\,t_k \approx 6.0\,\text{s}$, so in the range $0 \ldots 5.0\,\text{s}$ the graph is still positive.
-**Reasonableness:** The average velocity of the ascent is $2.42\,\text{m/s} : 2 = 1.21\,\text{m/s}$, and $1.21\,\text{m/s} \cdot 2.99\,\text{s} \approx 3.6\,\text{m}$. The last velocity of the data, $-0.83\,\text{m/s}$, is close to the value of the fit, $$\begin{aligned} &2.42 - 0.81 \cdot 4.0 \\ &\approx -0.82\,\text{m/s} \end{aligned}$$, and the data includes the turning moment $t \approx 3.0\,\text{s}$ ($v \approx 0$). The acceleration $0.81\,\text{m/s}^2$ is plausible for a gentle slope: it corresponds to an angle of inclination where $g \sin\alpha \approx 0.81\,\text{m/s}^2$, that is, $\alpha \approx 5\,{}^\circ$.
+**Reasonableness:** The average velocity of the ascent is $2.42\,\text{m/s} : 2 = 1.21\,\text{m/s}$, and $1.21\,\text{m/s} \cdot 2.99\,\text{s} \approx 3.6\,\text{m}$. The last velocity of the data, $-0.83\,\text{m/s}$, is close to the value of the fit, $2.42 - 0.81 \cdot 4.0 \approx -0.82\,\text{m/s}$, and the data includes the turning moment $t \approx 3.0\,\text{s}$ ($v \approx 0$). The acceleration $0.81\,\text{m/s}^2$ is plausible for a gentle slope: it corresponds to an angle of inclination where $g \sin\alpha \approx 0.81\,\text{m/s}^2$, that is, $\alpha \approx 5\,{}^\circ$.
 
 ## fy4-2-L2-08
 **Find:** how the braking distance $s$ of the cyclist changes when the initial speed is the same $8.0\,\text{m/s}$ but the magnitude of the acceleration decreases from $4.0\,\text{m/s}^2$ to $2.0\,\text{m/s}^2$.
@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, that is $s_2 = 16\,\text{m}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24.79\,\text{m/s}^2}} = \sqrt{1.613\,\text{s}^2} \approx 1.270\,\text{s}$
 **Answer:** $1.27\,\text{s}$. The height $20\,\text{m}$ is taken as exact, and the table value $24.79\,\text{m/s}^2$ has four significant figures. The result is still given with three, because different tables differ already in the fourth figure, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** On Earth the same drop would take $$\begin{aligned} &\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \\ &\approx 2.02\,\text{s} \end{aligned}$$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.
+**Reasonableness:** On Earth the same drop would take $$\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s}$$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.

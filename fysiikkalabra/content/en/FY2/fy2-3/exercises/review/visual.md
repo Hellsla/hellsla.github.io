@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 87d1286e80d3816b
-SCOPE: delta added-exercise from 563ece0a62c60f6f base 611fb7d5c174
+CONTENT-HASH: 05fd3289498b07ef
+SCOPE: delta added-exercise from 325eef0773b53418 base 6ecef1197865
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 task: inline $P = \Delta E/\Delta t$ uses a slash; \tfrac would match the house style.
-- [Minor] L1-10 solution: the Conversions block is split into three boxes joined by "with" and "and"; one chain would read more smoothly.
+- [Minor] 3-19 solution — subscript $C_\text{väl}$ is Finnish in an English text, and snt (cent) is unexplained in the solution itself — use $C_\text{margin}$; the task text does gloss snt.
 
 ## Checked
-- Opened fy2-3-open-exercises-1280-8, -9 and -10.png (content/en/FY2/fy2-3/review/shots/): L1-09 reworded task and solution (metric horsepower, mechanical energy); L1-10 reworded ratio task with the A/B graph, answer field without unit, and the new solution (A and B powers, ratio 3.0 as stacked fractions).
-- Graph axes, ticks, A and B labels legible; solution rows aligned, no red KaTeX, nothing clipped.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Delta review. Opened fy2-3-open-exercises-L2-1280-9, -10, -11: new exercise 3-19 (text, solution, answer, reasonableness). Source link to Yle is visible, underlined, target=_blank rel=noopener, date in words (accessed 16 November 2026); Fingrid link likewise in part c.
+- Hash at start and end: 05fd3289498b07ef.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

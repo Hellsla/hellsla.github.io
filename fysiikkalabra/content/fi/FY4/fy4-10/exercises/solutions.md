@@ -12,7 +12,7 @@
 **Annettu:** $m_1 = 0{,}50\,\text{kg}$, $v_1 = 0{,}80\,\text{m/s}$, $m_2 = 0{,}30\,\text{kg}$, $v_2 = 0$; vaunut jäävät kiinni toisiinsa
 **Kysytty:** yhteinen nopeus $v'$ yksikössä $\text{m/s}$
 **Periaate:** Valitaan systeemiksi molemmat vaunut ja positiiviseksi suunnaksi vaunun 1 liikesuunta. Ilmatyynyrata on vaakasuora, joten paino ja tukivoima kumoavat toisensa, ja kitka jätetään huomiotta. Kokonaisliikemäärä säilyy. Vaunut jatkavat yhdessä, joten törmäys on täysin kimmoton.
-**Kaava:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, ja $v_2 = 0$, joten $v' = \dfrac{m_1 v_1}{m_1 + m_2}$
+**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, ja $v_2 = 0$, joten $v' = \dfrac{m_1 v_1}{m_1 + m_2}$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v' = \dfrac{0{,}50\,\text{kg} \cdot 0{,}80\,\text{m/s}}{0{,}50\,\text{kg} + 0{,}30\,\text{kg}} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}80\,\text{kg}} = 0{,}50\,\text{m/s}$
 **Vastaus:** $0{,}50\,\text{m/s}$ vaunun 1 alkuperäiseen liikesuuntaan, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -32,7 +32,7 @@
 **Annettu:** $m_\text{A} = 0{,}16\,\text{kg}$, $v_\text{A} = +4{,}0\,\text{m/s}$, $m_\text{B} = 0{,}20\,\text{kg}$, $v_\text{B} = 0$, kiekon A nopeus jälkeen $v_\text{A}' = -0{,}44\,\text{m/s}$ (takaisin)
 **Kysytty:** kiekon B nopeus $v_\text{B}'$ yksikössä $\text{m/s}$
 **Periaate:** Valitaan systeemiksi molemmat kiekot ja positiiviseksi suunnaksi kiekon A alkuperäinen liikesuunta. Ilmakiekkopöydällä paino ja ilmatyynyn tukivoima kumoavat toisensa ja kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Takaisin liikkuvan kiekon A nopeus on negatiivinen.
-**Kaava:** $$\begin{aligned} &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' \\ &+ m_\text{B} v_\text{B}' \end{aligned}$$, ja $v_\text{B} = 0$, joten $v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
+**Kaava:** $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, ja $v_\text{B} = 0$, joten $v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_\text{B}' = \dfrac{0{,}16 \cdot 4{,}0 - 0{,}16 \cdot (-0{,}44)}{0{,}20}\,\text{m/s} = \dfrac{0{,}64 + 0{,}0704}{0{,}20}\,\text{m/s} = 3{,}552\,\text{m/s}$
 **Vastaus:** $3{,}6\,\text{m/s}$ kiekon A alkuperäiseen liikesuuntaan, kaksi merkitsevää numeroa kuten nopeuksissa $4{,}0\,\text{m/s}$ ja $0{,}44\,\text{m/s}$.
@@ -42,11 +42,11 @@
 **Annettu:** $m_1 = m_2 = 0{,}30\,\text{kg}$, $v_1 = +0{,}60\,\text{m/s}$ (oikealle), $v_2 = -0{,}20\,\text{m/s}$ (vasemmalle); vaunut jäävät kiinni toisiinsa
 **Kysytty:** yhteinen nopeus $v'$ yksikössä $\text{m/s}$
 **Periaate:** Valitaan systeemiksi molemmat vaunut ja positiiviseksi suunnaksi oikea. Paino ja tukivoima kumoavat toisensa ja kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Vaunut jatkavat yhdessä, joten törmäys on täysin kimmoton.
-**Kaava:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, joten $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
+**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, joten $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v' = \dfrac{0{,}30 \cdot 0{,}60 + 0{,}30 \cdot (-0{,}20)}{0{,}60}\,\text{m/s} = \dfrac{0{,}18 - 0{,}06}{0{,}60}\,\text{m/s} = 0{,}20\,\text{m/s}$
 **Vastaus:** $0{,}20\,\text{m/s}$ oikealle, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Samanmassaisilla vaunuilla yhteinen nopeus on alkunopeuksien keskiarvo: $$\begin{aligned} &(0{,}60 - 0{,}20)\,\text{m/s} : 2 \\ &= 0{,}20\,\text{m/s} \end{aligned}$$. Vaunut liikkuvat oikealle, koska oikealle liikkuneella vaunulla oli suurempi liikemäärä.
+**Järkevyys:** Samanmassaisilla vaunuilla yhteinen nopeus on alkunopeuksien keskiarvo: $(0{,}60 - 0{,}20)\,\text{m/s} : 2 = 0{,}20\,\text{m/s}$. Vaunut liikkuvat oikealle, koska oikealle liikkuneella vaunulla oli suurempi liikemäärä.
 
 ## fy4-10-L2-01
 **Annettu:** luodin massa $m_\text{luoti} = 0{,}50\,\text{g}$, luodin nopeus $v_\text{luoti}' = 180\,\text{m/s}$, kiväärin massa $m_\text{kiv} = 3{,}2\,\text{kg}$; alussa molemmat levossa
@@ -56,15 +56,15 @@
 **Muunnokset:** $m_\text{luoti} = 0{,}50\,\text{g} = 0{,}50 \cdot 10^{-3}\,\text{kg}$
 **Sijoitus:** $v_\text{kiv}' = -\dfrac{0{,}50 \cdot 10^{-3}\,\text{kg} \cdot 180\,\text{m/s}}{3{,}2\,\text{kg}} = -\dfrac{0{,}090\,\text{kg}\cdot\text{m/s}}{3{,}2\,\text{kg}} = -0{,}028125\,\text{m/s}$
 **Vastaus:** $0{,}028\,\text{m/s}$ eli noin $2{,}8\,\text{cm/s}$ taaksepäin, kaksi merkitsevää numeroa kuten luodin massassa $0{,}50\,\text{g}$ ja kiväärin massassa $3{,}2\,\text{kg}$.
-**Järkevyys:** Kivääri on $6400$ kertaa niin raskas kuin luoti, joten sen nopeus on $6400$ kertaa pienempi: $$\begin{aligned} &180\,\text{m/s} : 6400 \\ &\approx 0{,}028\,\text{m/s} \end{aligned}$$. Ilmakiväärin rekyyli on tosiaan tuskin tuntuva.
+**Järkevyys:** Kivääri on $6400$ kertaa niin raskas kuin luoti, joten sen nopeus on $6400$ kertaa pienempi: $180\,\text{m/s} : 6400 \approx 0{,}028\,\text{m/s}$. Ilmakiväärin rekyyli on tosiaan tuskin tuntuva.
 
 ## fy4-10-L2-02
 **Annettu:** $m_1 = 85\,\text{kg}$, $v_1 = 6{,}0\,\text{m/s}$, $m_2 = 75\,\text{kg}$, $v_2 = 0$; pelaajat liukuvat törmäyksen jälkeen yhdessä
 **Kysytty:** muiksi energiamuodoiksi muuttuva liike-energia $\Delta E$ yksikössä $\text{J}$
 **Periaate:** Valitaan systeemiksi molemmat pelaajat. Paino ja jään tukivoima kumoavat toisensa ja kitka jätetään törmäyksen ajalta huomiotta, joten kokonaisliikemäärä säilyy. Pelaajat jatkavat yhdessä, joten törmäys on täysin kimmoton, eikä liike-energia säily. Yhteinen nopeus saadaan liikemäärän säilymislaista, ja sen avulla lasketaan liike-energia jälkeen.
-**Kaava:** $m_1 v_1 = (m_1 + m_2)\,v'$, joten $v' = \dfrac{m_1 v_1}{m_1 + m_2}$, ja $$\begin{aligned} &\Delta E = \tfrac12 m_1 v_1^2 \\ &- \tfrac12 (m_1 + m_2)\,v'^2 \end{aligned}$$
+**Kaava:** $m_1 v_1 = (m_1 + m_2)\,v'$, joten $v' = \dfrac{m_1 v_1}{m_1 + m_2}$, ja $\Delta E = \tfrac12 m_1 v_1^2 - \tfrac12 (m_1 + m_2)\,v'^2$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
-**Sijoitus:** $v' = \dfrac{85\,\text{kg} \cdot 6{,}0\,\text{m/s}}{160\,\text{kg}} = 3{,}1875\,\text{m/s}$ ja $$\begin{aligned} &\Delta E \\ &= \tfrac12 \cdot 85\,\text{kg} \cdot (6{,}0\,\text{m/s})^2 \\ &- \tfrac12 \cdot 160\,\text{kg} \\ &\cdot (3{,}1875\,\text{m/s})^2 \\ &= 1530\,\text{J} - 812{,}8\,\text{J} \\ &= 717{,}2\,\text{J} \end{aligned}$$
+**Sijoitus:** $v' = \dfrac{85\,\text{kg} \cdot 6{,}0\,\text{m/s}}{160\,\text{kg}} = 3{,}1875\,\text{m/s}$ ja $\Delta E = \tfrac12 \cdot 85\,\text{kg} \cdot (6{,}0\,\text{m/s})^2 - \tfrac12 \cdot 160\,\text{kg} \cdot (3{,}1875\,\text{m/s})^2 = 1530\,\text{J} - 812{,}8\,\text{J} = 717{,}2\,\text{J}$
 **Vastaus:** $720\,\text{J}$ eli noin $0{,}72\,\text{kJ}$, kaksi merkitsevää numeroa kuten nopeudessa $6{,}0\,\text{m/s}$ ja massoissa.
 **Järkevyys:** Liike-energiasta muuttuu muihin muotoihin $717 : 1530 \approx 47\,\%$, mikä on vähemmän kuin koko liike-energia, kuten pitää, koska pelaajat liikkuvat vielä. Osuus on $\tfrac{m_2}{m_1 + m_2} = \tfrac{75}{160} \approx 47\,\%$, mikä vastaa täysin kimmotonta törmäystä levossa olevaan kappaleeseen. Energia muuttuu varusteiden ja kehon muodonmuutoksiksi, sisäenergiaksi ja ääneksi.
 
@@ -74,7 +74,7 @@
 **Periaate:** Valitaan systeemiksi molemmat vaunut ja positiiviseksi suunnaksi kevyemmän vaunun alkuperäinen liikesuunta. Paino ja tukivoima kumoavat toisensa ja kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Siitä saadaan raskaamman vaunun nopeus, ja sitten verrataan liike-energioita ennen ja jälkeen. Liike-energia ei välttämättä säily, joten sitä ei voi käyttää yhtälönä.
 **Kaava:** $m_1 v_1 = m_1 v_1' + m_2 v_2'$, joten $v_2' = \dfrac{m_1 v_1 - m_1 v_1'}{m_2}$, ja osuus on $\dfrac{\tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2}{\tfrac12 m_1 v_1^2} \cdot 100\,\%$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
-**Sijoitus:** $v_2' = \dfrac{0{,}20 \cdot 0{,}60 - 0{,}20 \cdot (-0{,}10)}{0{,}40}\,\text{m/s} = 0{,}35\,\text{m/s}$, liike-energia ennen $\tfrac12 \cdot 0{,}20 \cdot 0{,}60^2\,\text{J} = 0{,}036\,\text{J}$ ja jälkeen $$\begin{aligned} &(\tfrac12 \cdot 0{,}20 \cdot 0{,}10^2 \\ &+ \tfrac12 \cdot 0{,}40 \cdot 0{,}35^2)\,\text{J} \\ &= 0{,}0255\,\text{J} \end{aligned}$$, joten osuus on $$\begin{aligned} &0{,}0255 : 0{,}036 \cdot 100\,\% \\ &= 70{,}8\,\% \end{aligned}$$
+**Sijoitus:** $v_2' = \dfrac{0{,}20 \cdot 0{,}60 - 0{,}20 \cdot (-0{,}10)}{0{,}40}\,\text{m/s} = 0{,}35\,\text{m/s}$, liike-energia ennen $\tfrac12 \cdot 0{,}20 \cdot 0{,}60^2\,\text{J} = 0{,}036\,\text{J}$ ja jälkeen $(\tfrac12 \cdot 0{,}20 \cdot 0{,}10^2 + \tfrac12 \cdot 0{,}40 \cdot 0{,}35^2)\,\text{J} = 0{,}0255\,\text{J}$, joten osuus on $0{,}0255 : 0{,}036 \cdot 100\,\% = 70{,}8\,\%$
 **Vastaus:** $71\,\%$, kaksi merkitsevää numeroa kuten nopeuksissa ja massoissa.
 **Järkevyys:** Osuus on alle $100\,\%$, joten törmäys on kimmoton, mutta vaunut erkanevat toisistaan, joten se ei ole täysin kimmoton. Täysin kimmottomassa törmäyksessä jäljelle jäisi vain $\tfrac{m_1}{m_1 + m_2} = 33\,\%$, joten tulos on näiden ääritapausten välissä, kuten pitää.
 
@@ -86,7 +86,7 @@
 **Muunnokset:** Massa on kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $m_2 = \dfrac{30\,000\,\text{kg} \cdot (1{,}8 - 1{,}2)\,\text{m/s}}{1{,}2\,\text{m/s}} = \dfrac{30\,000\,\text{kg} \cdot 0{,}6}{1{,}2} = 15\,000\,\text{kg}$
 **Vastaus:** $15\,000\,\text{kg}$, kaksi merkitsevää numeroa kuten nopeuksissa $1{,}8\,\text{m/s}$ ja $1{,}2\,\text{m/s}$.
-**Järkevyys:** Nopeus pieneni suhteessa $1{,}8 : 1{,}2 = 1{,}5$, joten kokonaismassan on oltava $1{,}5$ kertaa liikkuneen vaunun massa: $45\,000\,\text{kg}$. Toisen vaunun massa on siis $$\begin{aligned} &45\,000\,\text{kg} - 30\,000\,\text{kg} \\ &= 15\,000\,\text{kg} \end{aligned}$$, mikä on tavallinen tavaravaunun massa.
+**Järkevyys:** Nopeus pieneni suhteessa $1{,}8 : 1{,}2 = 1{,}5$, joten kokonaismassan on oltava $1{,}5$ kertaa liikkuneen vaunun massa: $45\,000\,\text{kg}$. Toisen vaunun massa on siis $45\,000\,\text{kg} - 30\,000\,\text{kg} = 15\,000\,\text{kg}$, mikä on tavallinen tavaravaunun massa.
 
 ## fy4-10-L3-01
 **Annettu:** luodin massa $m = 10\,\text{g}$, luodin nopeus $v = 400\,\text{m/s}$, palikan massa $M = 2{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; palikka aluksi levossa
@@ -99,14 +99,14 @@
 **Järkevyys:** Palikan nopeus on noin $\tfrac{1}{200}$ luodin nopeudesta, koska massa on noin $200$-kertainen. Liike-energiaa jää vain $\tfrac{1}{201}$ luodin alkuperäisestä $800\,\text{J}$:sta, noin $4\,\text{J}$, ja se riittää nostamaan $2\,\text{kg}$:n palikkaa noin $\tfrac{4\,\text{J}}{20\,\text{N}} = 0{,}2\,\text{m}$. Muu energia muuttui puun ja luodin sisäenergiaksi.
 
 ## fy4-10-L3-02
-**Annettu:** raketin massa $M = 0{,}90\,\text{kg}$, nopeus $v = +12\,\text{m/s}$ (ylös), kappaleen 1 massa $m_1 = 0{,}30\,\text{kg}$ ja nopeus $v_1' = +40\,\text{m/s}$, kappaleen 2 massa $$\begin{aligned} &m_2 = 0{,}90\,\text{kg} - 0{,}30\,\text{kg} \\ &= 0{,}60\,\text{kg} \end{aligned}$$; ylöspäin on positiivinen suunta
+**Annettu:** raketin massa $M = 0{,}90\,\text{kg}$, nopeus $v = +12\,\text{m/s}$ (ylös), kappaleen 1 massa $m_1 = 0{,}30\,\text{kg}$ ja nopeus $v_1' = +40\,\text{m/s}$, kappaleen 2 massa $m_2 = 0{,}90\,\text{kg} - 0{,}30\,\text{kg} = 0{,}60\,\text{kg}$; ylöspäin on positiivinen suunta
 **Kysytty:** kappaleen 2 nopeus $v_2'$ etumerkkeineen yksikössä $\text{m/s}$
 **Periaate:** Valitaan systeemiksi raketti ja sen kappaleet. Räjähdyksen voimat ovat sisäisiä ja paljon suurempia kuin paino ja ilmanvastus, ja räjähdys kestää hyvin lyhyen ajan, joten ulkoisten voimien impulssi on merkityksettömän pieni ja kokonaisliikemäärä säilyy. Systeemi liikkuu ennen räjähdystä, joten kokonaisliikemäärä ei ole nolla vaan $Mv$.
 **Kaava:** $Mv = m_1 v_1' + m_2 v_2'$, joten $v_2' = \dfrac{Mv - m_1 v_1'}{m_2}$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_2' = \dfrac{0{,}90 \cdot 12 - 0{,}30 \cdot 40}{0{,}60}\,\text{m/s} = \dfrac{10{,}8 - 12{,}0}{0{,}60}\,\text{m/s} = -2{,}0\,\text{m/s}$
 **Vastaus:** $-2{,}0\,\text{m/s}$ eli $2{,}0\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Ylös lentävän kappaleen liikemäärä $12{,}0\,\text{kg}\cdot\text{m/s}$ on suurempi kuin koko raketin liikemäärä $10{,}8\,\text{kg}\cdot\text{m/s}$, joten toisen kappaleen liikemäärän on oltava alaspäin, $-1{,}2\,\text{kg}\cdot\text{m/s}$. Tarkistus: $$\begin{aligned} &0{,}30 \cdot 40 + 0{,}60 \cdot (-2{,}0) \\ &= 10{,}8 \end{aligned}$$, sama kuin ennen räjähdystä.
+**Järkevyys:** Ylös lentävän kappaleen liikemäärä $12{,}0\,\text{kg}\cdot\text{m/s}$ on suurempi kuin koko raketin liikemäärä $10{,}8\,\text{kg}\cdot\text{m/s}$, joten toisen kappaleen liikemäärän on oltava alaspäin, $-1{,}2\,\text{kg}\cdot\text{m/s}$. Tarkistus: $0{,}30 \cdot 40 + 0{,}60 \cdot (-2{,}0) = 10{,}8$, sama kuin ennen räjähdystä.
 
 ## fy4-10-L3-03
 **Annettu:** etäisyys $s = 12{,}0\,\text{m}$, astronautin massa pukuineen $M = 120\,\text{kg}$, työkalun massa $m = 3{,}0\,\text{kg}$ ja nopeus $v_\text{t}' = 4{,}0\,\text{m/s}$ poispäin asemasta; alussa molemmat levossa aseman suhteen
@@ -131,7 +131,7 @@
 **Muunnokset:** Massat ovat kilogrammoina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_\text{lu}' = -\dfrac{2{,}0\,\text{kg} \cdot 6{,}0\,\text{m/s}}{35\,\text{kg}} = -\dfrac{12\,\text{kg}\cdot\text{m/s}}{35\,\text{kg}} = -0{,}342857\,\text{m/s}$
 **Vastaus:** $0{,}34\,\text{m/s}$ pallon lentosuuntaan nähden vastakkaiseen suuntaan, kaksi merkitsevää numeroa kuten pallon massassa ja nopeudessa.
-**Järkevyys:** Luistelija on $35 : 2{,}0 = 17{,}5$ kertaa niin raskas kuin pallo, joten hänen nopeutensa on $17{,}5$ kertaa pienempi: $6{,}0\,\text{m/s} : 17{,}5 = 0{,}34\,\text{m/s}$. Luistelijan liikemäärä on $$\begin{aligned} &35 \cdot 0{,}343\,\text{kg}\cdot\text{m/s} \\ &= 12\,\text{kg}\cdot\text{m/s} \end{aligned}$$, sama kuin pallon.
+**Järkevyys:** Luistelija on $35 : 2{,}0 = 17{,}5$ kertaa niin raskas kuin pallo, joten hänen nopeutensa on $17{,}5$ kertaa pienempi: $6{,}0\,\text{m/s} : 17{,}5 = 0{,}34\,\text{m/s}$. Luistelijan liikemäärä on $35 \cdot 0{,}343\,\text{kg}\cdot\text{m/s} = 12\,\text{kg}\cdot\text{m/s}$, sama kuin pallon.
 
 ## fy4-10-L1-08
 **Annettu:** molempien pallojen massa $m = 0{,}17\,\text{kg}$, lyöntipallon nopeus $v_1 = 1{,}8\,\text{m/s}$, kohdepallo $v_2 = 0$; törmäys on kimmoisa
@@ -141,7 +141,7 @@
 **Muunnokset:** Massa on kilogrammoina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_2' = v_1 = 1{,}8\,\text{m/s}$
 **Vastaus:** $1{,}8\,\text{m/s}$ lyöntipallon alkuperäiseen liikesuuntaan, kaksi merkitsevää numeroa kuten nopeudessa.
-**Järkevyys:** Liikemäärä ennen on $$\begin{aligned} &0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s} \\ &= 0{,}306\,\text{kg}\cdot\text{m/s} \end{aligned}$$ ja jälkeen $$\begin{aligned} &0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s} \\ &= 0{,}306\,\text{kg}\cdot\text{m/s} \end{aligned}$$. Liike-energia on ennen ja jälkeen $\tfrac12 \cdot 0{,}17 \cdot 1{,}8^2\,\text{J} = 0{,}275\,\text{J}$, joten molemmat säilyvät.
+**Järkevyys:** Liikemäärä ennen on $0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s} = 0{,}306\,\text{kg}\cdot\text{m/s}$ ja jälkeen $0{,}17 \cdot 1{,}8\,\text{kg}\cdot\text{m/s} = 0{,}306\,\text{kg}\cdot\text{m/s}$. Liike-energia on ennen ja jälkeen $\tfrac12 \cdot 0{,}17 \cdot 1{,}8^2\,\text{J} = 0{,}275\,\text{J}$, joten molemmat säilyvät.
 
 ## fy4-10-L2-05
 **Annettu:** $m_\text{A} = 0{,}50\,\text{kg}$, $m_\text{B} = 0{,}30\,\text{kg}$, $v_\text{A} = 0{,}60\,\text{m/s}$, $v_\text{B} = 0$ kaikissa kokeissa; jälkeen: koe 1 $v_\text{A}' = 0{,}16\,\text{m/s}$, $v_\text{B}' = 0{,}74\,\text{m/s}$, koe 2 $0{,}37\,\text{m/s}$ ja $0{,}37\,\text{m/s}$, koe 3 $0{,}25\,\text{m/s}$ ja $0{,}58\,\text{m/s}$
@@ -150,11 +150,11 @@
 **Kuvaajan lukeminen:** Taulukon rivi kertoo yhden kokeen nopeudet ennen ja jälkeen. Kaikissa kokeissa vaunu A tulee nopeudella $0{,}60\,\text{m/s}$ ja B on levossa, joten kokeet eroavat vain törmäyksen jälkeisistä nopeuksista.
 **Kaava:** $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$ ja jäljellä oleva osuus $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
-**Sijoitus:** a) Ennen kaikissa kokeissa $p = 0{,}50 \cdot 0{,}60\,\text{kg}\cdot\text{m/s} = 0{,}300\,\text{kg}\cdot\text{m/s}$. Jälkeen koe 1: $(0{,}50 \cdot 0{,}16 + 0{,}30 \cdot 0{,}74)\,\text{kg}\cdot\text{m/s} = 0{,}302\,\text{kg}\cdot\text{m/s}$, koe 2: $$\begin{aligned} &0{,}80 \cdot 0{,}37\,\text{kg}\cdot\text{m/s} \\ &= 0{,}296\,\text{kg}\cdot\text{m/s} \end{aligned}$$ ja koe 3: $$\begin{aligned} &(0{,}125 + 0{,}174)\,\text{kg}\cdot\text{m/s} \\ &= 0{,}299\,\text{kg}\cdot\text{m/s} \end{aligned}$$.
+**Sijoitus:** a) Ennen kaikissa kokeissa $p = 0{,}50 \cdot 0{,}60\,\text{kg}\cdot\text{m/s} = 0{,}300\,\text{kg}\cdot\text{m/s}$. Jälkeen koe 1: $(0{,}50 \cdot 0{,}16 + 0{,}30 \cdot 0{,}74)\,\text{kg}\cdot\text{m/s} = 0{,}302\,\text{kg}\cdot\text{m/s}$, koe 2: $0{,}80 \cdot 0{,}37\,\text{kg}\cdot\text{m/s} = 0{,}296\,\text{kg}\cdot\text{m/s}$ ja koe 3: $(0{,}125 + 0{,}174)\,\text{kg}\cdot\text{m/s} = 0{,}299\,\text{kg}\cdot\text{m/s}$.
 
-b) Liike-energia ennen on $\tfrac12 \cdot 0{,}50 \cdot 0{,}60^2\,\text{J} = 0{,}090\,\text{J}$. Koe 1 jälkeen: $$\begin{aligned} &(\tfrac12 \cdot 0{,}50 \cdot 0{,}16^2 \\ &+ \tfrac12 \cdot 0{,}30 \cdot 0{,}74^2)\,\text{J} \\ &= (0{,}0064 + 0{,}0821)\,\text{J} \\ &= 0{,}0885\,\text{J} \end{aligned}$$, eli $98\,\%$. Koe 2 jälkeen: $\tfrac12 \cdot 0{,}80 \cdot 0{,}37^2\,\text{J} = 0{,}0548\,\text{J}$, eli $61\,\%$.
+b) Liike-energia ennen on $\tfrac12 \cdot 0{,}50 \cdot 0{,}60^2\,\text{J} = 0{,}090\,\text{J}$. Koe 1 jälkeen: $(\tfrac12 \cdot 0{,}50 \cdot 0{,}16^2 + \tfrac12 \cdot 0{,}30 \cdot 0{,}74^2)\,\text{J} = (0{,}0064 + 0{,}0821)\,\text{J} = 0{,}0885\,\text{J}$, eli $98\,\%$. Koe 2 jälkeen: $\tfrac12 \cdot 0{,}80 \cdot 0{,}37^2\,\text{J} = 0{,}0548\,\text{J}$, eli $61\,\%$.
 
-c) Koe 3 jälkeen: $$\begin{aligned} &(\tfrac12 \cdot 0{,}50 \cdot 0{,}25^2 \\ &+ \tfrac12 \cdot 0{,}30 \cdot 0{,}58^2)\,\text{J} \\ &= (0{,}0156 + 0{,}0505)\,\text{J} \\ &= 0{,}0661\,\text{J} \end{aligned}$$, joten osuus on $\dfrac{0{,}0661}{0{,}090} \cdot 100\,\% = 73{,}4\,\%$
+c) Koe 3 jälkeen: $(\tfrac12 \cdot 0{,}50 \cdot 0{,}25^2 + \tfrac12 \cdot 0{,}30 \cdot 0{,}58^2)\,\text{J} = (0{,}0156 + 0{,}0505)\,\text{J} = 0{,}0661\,\text{J}$, joten osuus on $\dfrac{0{,}0661}{0{,}090} \cdot 100\,\% = 73{,}4\,\%$
 **Vastaus:** $73\,\%$, kaksi merkitsevää numeroa kuten nopeuksissa ja massoissa.
 **Järkevyys:** Liikemäärä säilyy kaikissa kokeissa mittaustarkkuuden rajoissa: poikkeamat ovat enintään $0{,}004\,\text{kg}\cdot\text{m/s}$ eli alle $2\,\%$. Koe 1 on kimmoisa, koska liike-energiasta jää lähes kaikki. Koe 2 on täysin kimmoton, koska vaunut jäävät kiinni toisiinsa ja liike-energiaa jää vain $61\,\%$, mikä on lähellä arvoa $\tfrac{m_\text{A}}{m_\text{A} + m_\text{B}} = \tfrac{0{,}50}{0{,}80} = 62{,}5\,\%$. Koe 3 on osittain kimmoisa, koska vaunut erkanevat toisistaan mutta liike-energiaa jää vain $73\,\%$, eli tulos on kokeiden 1 ja 2 välissä.
 
@@ -165,9 +165,9 @@ c) Koe 3 jälkeen: $$\begin{aligned} &(\tfrac12 \cdot 0{,}50 \cdot 0{,}25^2 \\ &
 **Kuvaajan lukeminen:** Ennen törmäystä A:n paikka kasvaa ja B:n paikka pysyy samana, joten B on levossa. Törmäyksen jälkeen kummankin paikka kasvaa, joten kumpikin liikkuu oikealle. Nopeus on paikan muutos jaettuna ajan muutoksella: $v_\text{A} = \dfrac{0{,}51\,\text{m} - 0{,}00\,\text{m}}{1{,}0\,\text{s}} = 0{,}51\,\text{m/s}$, $v_\text{B} = 0$, $v_\text{A}' = \dfrac{1{,}21\,\text{m} - 1{,}10\,\text{m}}{1{,}0\,\text{s}} = 0{,}11\,\text{m/s}$ ja $v_\text{B}' = \dfrac{1{,}54\,\text{m} - 1{,}27\,\text{m}}{1{,}0\,\text{s}} = 0{,}27\,\text{m/s}$.
 **Kaava:** $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$ ja osuus $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
 **Muunnokset:** Massat ovat kilogrammoina, paikat metreinä ja ajat sekunteina, joten muunnoksia ei tarvita.
-**Sijoitus:** b) Ennen $p = 0{,}40 \cdot 0{,}51\,\text{kg}\cdot\text{m/s} = 0{,}204\,\text{kg}\cdot\text{m/s}$ ja jälkeen $$\begin{aligned} &p' \\ &= (0{,}40 \cdot 0{,}11 \\ &+ 0{,}60 \cdot 0{,}27)\,\text{kg}\cdot\text{m/s} \\ &= (0{,}044 \\ &+ 0{,}162)\,\text{kg}\cdot\text{m/s} \\ &= 0{,}206\,\text{kg}\cdot\text{m/s} \end{aligned}$$.
+**Sijoitus:** b) Ennen $p = 0{,}40 \cdot 0{,}51\,\text{kg}\cdot\text{m/s} = 0{,}204\,\text{kg}\cdot\text{m/s}$ ja jälkeen $p' = (0{,}40 \cdot 0{,}11 + 0{,}60 \cdot 0{,}27)\,\text{kg}\cdot\text{m/s} = (0{,}044 + 0{,}162)\,\text{kg}\cdot\text{m/s} = 0{,}206\,\text{kg}\cdot\text{m/s}$.
 
-c) Liike-energia ennen on $\tfrac12 \cdot 0{,}40 \cdot 0{,}51^2\,\text{J} = 0{,}0520\,\text{J}$ ja jälkeen $$\begin{aligned} &(\tfrac12 \cdot 0{,}40 \cdot 0{,}11^2 \\ &+ \tfrac12 \cdot 0{,}60 \cdot 0{,}27^2)\,\text{J} \\ &= (0{,}00242 + 0{,}0219)\,\text{J} \\ &= 0{,}0243\,\text{J} \end{aligned}$$, joten osuus on $\dfrac{0{,}0243}{0{,}0520} \cdot 100\,\% = 46{,}7\,\%$
+c) Liike-energia ennen on $\tfrac12 \cdot 0{,}40 \cdot 0{,}51^2\,\text{J} = 0{,}0520\,\text{J}$ ja jälkeen $(\tfrac12 \cdot 0{,}40 \cdot 0{,}11^2 + \tfrac12 \cdot 0{,}60 \cdot 0{,}27^2)\,\text{J} = (0{,}00242 + 0{,}0219)\,\text{J} = 0{,}0243\,\text{J}$, joten osuus on $\dfrac{0{,}0243}{0{,}0520} \cdot 100\,\% = 46{,}7\,\%$
 **Vastaus:** $47\,\%$, kaksi merkitsevää numeroa kuten nopeuksissa.
 **Järkevyys:** Liikemäärä säilyy mittaustarkkuuden rajoissa, koska $0{,}204$ ja $0{,}206\,\text{kg}\cdot\text{m/s}$ eroavat alle $1\,\%$. Liike-energiaa jää alle puolet, joten törmäys ei ole kimmoisa. Se ei ole täysin kimmotonkaan, koska vaunut liikkuvat eri nopeuksilla ja erkanevat toisistaan: täysin kimmottomassa törmäyksessä jäisi $\tfrac{m_\text{A}}{m_\text{A} + m_\text{B}} = 40\,\%$.
 
@@ -175,7 +175,7 @@ c) Liike-energia ennen on $\tfrac12 \cdot 0{,}40 \cdot 0{,}51^2\,\text{J} = 0{,}
 **Annettu:** $m_1 = 0{,}60\,\text{kg}$, $v_1 = +0{,}80\,\text{m/s}$ (oikealle), $m_2 = 0{,}20\,\text{kg}$, $v_2 = -0{,}40\,\text{m/s}$ (vasemmalle); vaunut jäävät kiinni toisiinsa; oppilaan tulos $0{,}70\,\text{m/s}$
 **Kysytty:** oppilaan virhe ja oikea yhteinen nopeus $v'$ etumerkkeineen yksikössä $\text{m/s}$
 **Periaate:** Valitaan systeemiksi molemmat vaunut ja positiiviseksi suunnaksi oikea. Paino ja tukivoima kumoavat toisensa ja kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Vaunut jatkavat yhdessä, joten törmäys on täysin kimmoton. Liikemäärä on vektorisuure, joten vasemmalle liikkuvan vaunun nopeus on negatiivinen.
-**Kaava:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, joten $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
+**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, joten $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
 **Muunnokset:** Massat ovat kilogrammoina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v' = \dfrac{0{,}60 \cdot 0{,}80 + 0{,}20 \cdot (-0{,}40)}{0{,}60 + 0{,}20}\,\text{m/s} = \dfrac{0{,}48 - 0{,}08}{0{,}80}\,\text{m/s} = 0{,}50\,\text{m/s}$
 **Vastaus:** $0{,}50\,\text{m/s}$ oikealle, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -187,7 +187,7 @@ c) Liike-energia ennen on $\tfrac12 \cdot 0{,}40 \cdot 0{,}51^2\,\text{J} = 0{,}
 **Periaate:** Kitka jätetään huomiotta, ja paino ja radan tukivoima kumoavat toisensa, joten vaunujen kokonaisliikemäärä säilyy törmäyksessä. Yhdessä ulottuvuudessa jokainen nopeus on etumerkillinen luku: vasemmalle eli negatiiviseen suuntaan liikkuvan vaunun nopeus ja liikemäärä ovat negatiivisia. Laskun voi tarkistaa rivi riviltä: liikemäärä ennen, yhtälö, nopeuksien etumerkit ja ratkaiseminen.
 **Mallivastaus:** Rivi 1 on oikein: $m_\text{A} v_\text{A} = 0{,}24\,\text{kg}\cdot\text{m/s}$, ja levossa olevan B:n liikemäärä on nolla.
 
-Rivi 2 on oikein: se on säilymislaki $$\begin{aligned} &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' \\ &+ m_\text{B} v_\text{B}' \end{aligned}$$, kun $v_\text{B} = 0$.
+Rivi 2 on oikein: se on säilymislaki $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, kun $v_\text{B} = 0$.
 
 Rivi 3 on väärin. A kimpoaa vasemmalle, joten $v_\text{A}' = -0{,}20\,\text{m/s}$.
 
@@ -199,7 +199,7 @@ $v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}
 
 $v_\text{B}' = \dfrac{0{,}24 - (-0{,}060)}{0{,}50}\,\text{m/s}$, eli $v_\text{B}' = 0{,}60\,\text{m/s}$
 
-Oikea vastaus on rivi 3. Tarkistus: kun A kimpoaa taaksepäin, B:n liikemäärän on oltava suurempi kuin kokonaisliikemäärä $0{,}24\,\text{kg}\cdot\text{m/s}$. Oikealla tuloksella se on $$\begin{aligned} &0{,}50\,\text{kg} \cdot 0{,}60\,\text{m/s} \\ &= 0{,}30\,\text{kg}\cdot\text{m/s} \end{aligned}$$, oppilaan tuloksella vain $0{,}18\,\text{kg}\cdot\text{m/s}$, mikä on mahdotonta.
+Oikea vastaus on rivi 3. Tarkistus: kun A kimpoaa taaksepäin, B:n liikemäärän on oltava suurempi kuin kokonaisliikemäärä $0{,}24\,\text{kg}\cdot\text{m/s}$. Oikealla tuloksella se on $0{,}50\,\text{kg} \cdot 0{,}60\,\text{m/s} = 0{,}30\,\text{kg}\cdot\text{m/s}$, oppilaan tuloksella vain $0{,}18\,\text{kg}\cdot\text{m/s}$, mikä on mahdotonta.
 
 ## fy4-10-L3-04
 **Annettu:** $m_\text{A} = 1100\,\text{kg}$, $m_\text{B} = 1400\,\text{kg}$, $v_\text{B} = 0$, liukumismatka $s = 8{,}0\,\text{m}$, $\mu = 0{,}60$, $g = 9{,}81\,\text{m/s}^2$, nopeusrajoitus $50\,\text{km/h}$
@@ -225,7 +225,7 @@ c) Vertailu: väite $50\,\text{km/h}$ vastaa nopeutta $13{,}9\,\text{m/s}$. Kun 
 **Muunnokset:** $m_\text{A} + m_\text{B} = 0{,}40\,\text{kg} + 0{,}20\,\text{kg} = 0{,}60\,\text{kg}$. Muita muunnoksia ei tarvita.
 **Sijoitus:** b) $F_\mu = 0{,}60\,\text{kg} \cdot 1{,}96\,\text{m/s}^2 = 1{,}175\,\text{N}$
 
-c) Liikemäärä ennen törmäystä on $$\begin{aligned} &0{,}40 \cdot 1{,}50\,\text{kg}\cdot\text{m/s} \\ &= 0{,}600\,\text{kg}\cdot\text{m/s} \end{aligned}$$ ja heti sen jälkeen $$\begin{aligned} &0{,}60 \cdot 1{,}00\,\text{kg}\cdot\text{m/s} \\ &= 0{,}600\,\text{kg}\cdot\text{m/s} \end{aligned}$$, joten liikemäärä säilyy. Oppilaan käyttämä ensimmäinen mittauspiste antaisi $$\begin{aligned} &0{,}60 \cdot 0{,}88\,\text{kg}\cdot\text{m/s} \\ &= 0{,}528\,\text{kg}\cdot\text{m/s} \end{aligned}$$, mikä on $12\,\%$ liian pieni.
+c) Liikemäärä ennen törmäystä on $0{,}40 \cdot 1{,}50\,\text{kg}\cdot\text{m/s} = 0{,}600\,\text{kg}\cdot\text{m/s}$ ja heti sen jälkeen $0{,}60 \cdot 1{,}00\,\text{kg}\cdot\text{m/s} = 0{,}600\,\text{kg}\cdot\text{m/s}$, joten liikemäärä säilyy. Oppilaan käyttämä ensimmäinen mittauspiste antaisi $0{,}60 \cdot 0{,}88\,\text{kg}\cdot\text{m/s} = 0{,}528\,\text{kg}\cdot\text{m/s}$, mikä on $12\,\%$ liian pieni.
 **Vastaus:** $1{,}2\,\text{N}$, kaksi merkitsevää numeroa kuten nopeuksissa ja massoissa. Vastaava liukukitkakerroin on $\mu = \dfrac{F_\mu}{(m_\text{A} + m_\text{B})\,g} = 0{,}20$.
 **Järkevyys:** Kitkavoima $1{,}2\,\text{N}$ on $20\,\%$ vaunuparin painosta $0{,}60 \cdot 9{,}81\,\text{N} = 5{,}9\,\text{N}$, mikä on tavallinen liukukitkakertoimen suuruus. Vaunupari pysähtyisi ajassa $\dfrac{1{,}00\,\text{m/s}}{1{,}96\,\text{m/s}^2} = 0{,}51\,\text{s}$, joten mittaus loppuu ennen pysähtymistä, kuten pitää.
 **Mallivastaus virheestä:** Oppilaan päättely oli väärin, koska ensimmäinen mittauspiste on hetkellä $0{,}06\,\text{s}$ törmäyksen jälkeen, ja siihen mennessä kitka on jo ehtinyt hidastaa vaunuja. Liikemäärän säilymislaki koskee hetkiä juuri ennen ja juuri jälkeen törmäyksen, ei myöhempää hetkeä, jolloin ulkoinen kitka on vaikuttanut. Kun nopeus ekstrapoloidaan hetkeen $t = 0$, saadaan $1{,}00\,\text{m/s}$ ja liikemäärä säilyy. Oppilaan havaitsema liikemäärän pieneneminen johtui kitkan impulssista mittausvälillä, ei itse törmäyksestä.
@@ -235,11 +235,11 @@ c) Liikemäärä ennen törmäystä on $$\begin{aligned} &0{,}40 \cdot 1{,}50\,\
 **Kysytty:** vaunun B massa $m_\text{B}$ yksikössä $\text{kg}$
 **Periaate:** Törmäyksen aikana vaunujen välinen voima on sisäinen voima, ja kitkan impulssi on lyhyen törmäyksen aikana merkityksettömän pieni, joten kokonaisliikemäärä säilyy. Suunnat otetaan huomioon etumerkeillä.
 **Kuvaajan lukeminen:** Törmäyshetkellä $2{,}0\,\text{s}$ nopeudet vaihtuvat. Ennen: $v_\text{A} = 0{,}8\,\text{m/s}$ ja $v_\text{B} = -0{,}4\,\text{m/s}$ (vaunu B liikkuu vasemmalle, joten nopeus on negatiivinen). Jälkeen: $v_\text{A}' = 0{,}2\,\text{m/s}$ ja $v_\text{B}' = 0{,}6\,\text{m/s}$.
-**Kaava:** $$\begin{aligned} &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' \\ &+ m_\text{B} v_\text{B}' \end{aligned}$$, joten $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
+**Kaava:** $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, joten $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä.
 **Sijoitus:** $m_\text{B} = \dfrac{0{,}50\,\text{kg} \cdot (0{,}8 - 0{,}2)\,\text{m/s}}{(0{,}6 - (-0{,}4))\,\text{m/s}} = \dfrac{0{,}30\,\text{kg}\cdot\text{m/s}}{1{,}0\,\text{m/s}} = 0{,}30\,\text{kg}$
 **Vastaus:** $0{,}30\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
-**Järkevyys:** Tarkistus: liikemäärä ennen on $$\begin{aligned} &0{,}50 \cdot 0{,}8 \\ &+ 0{,}30 \cdot (-0{,}4) \\ &= 0{,}28\,\text{kg}\cdot\text{m/s} \end{aligned}$$ ja jälkeen $$\begin{aligned} &0{,}50 \cdot 0{,}2 + 0{,}30 \cdot 0{,}6 \\ &= 0{,}28\,\text{kg}\cdot\text{m/s} \end{aligned}$$. Massa on samaa suuruusluokkaa kuin vaunun A massa, kuten kuvaajan nopeuksien muutoksista voi odottaa. Jos vaunun B nopeuden etumerkki unohdettaisiin, tulokseksi tulisi $\dfrac{0{,}30}{0{,}2}\,\text{kg} = 1{,}5\,\text{kg}$, ja liikemäärä ei säilyisi.
+**Järkevyys:** Tarkistus: liikemäärä ennen on $0{,}50 \cdot 0{,}8 + 0{,}30 \cdot (-0{,}4) = 0{,}28\,\text{kg}\cdot\text{m/s}$ ja jälkeen $0{,}50 \cdot 0{,}2 + 0{,}30 \cdot 0{,}6 = 0{,}28\,\text{kg}\cdot\text{m/s}$. Massa on samaa suuruusluokkaa kuin vaunun A massa, kuten kuvaajan nopeuksien muutoksista voi odottaa. Jos vaunun B nopeuden etumerkki unohdettaisiin, tulokseksi tulisi $\dfrac{0{,}30}{0{,}2}\,\text{kg} = 1{,}5\,\text{kg}$, ja liikemäärä ei säilyisi.
 
 ## fy4-10-L3-06
 **Annettu:** $m_\text{A} = 0{,}30\,\text{kg}$, vaunu B on aluksi levossa ja vaunut jäävät kiinni toisiinsa; kuvaajasta paikka ajan funktiona
@@ -248,6 +248,49 @@ c) Liikemäärä ennen törmäystä on $$\begin{aligned} &0{,}40 \cdot 1{,}50\,\
 **Kuvaajan lukeminen:** Vaunu A kulkee paikasta $0$ paikkaan $0{,}60\,\text{m}$ ajassa $1{,}0\,\text{s}$, joten $v = \dfrac{0{,}60\,\text{m}}{1{,}0\,\text{s}} = 0{,}60\,\text{m/s}$. Törmäys tapahtuu hetkellä $1{,}0\,\text{s}$ paikassa $0{,}60\,\text{m}$, jossa vaunu B on levossa. Yhdessä vaunut kulkevat paikasta $0{,}60\,\text{m}$ paikkaan $1{,}00\,\text{m}$ ajassa $2{,}0\,\text{s}$, joten $v' = \dfrac{0{,}40\,\text{m}}{2{,}0\,\text{s}} = 0{,}20\,\text{m/s}$.
 **Kaava:** $m_\text{A} v = (m_\text{A} + m_\text{B})\,v'$, joten $m_\text{B} = m_\text{A}\left(\dfrac{v}{v'} - 1\right)$; $\Delta E_\text{k} = \tfrac{1}{2} m_\text{A} v^2 - \tfrac{1}{2}(m_\text{A} + m_\text{B})\,v'^2$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä.
-**Sijoitus:** $m_\text{B} = 0{,}30\,\text{kg} \cdot \left(\dfrac{0{,}60}{0{,}20} - 1\right) = 0{,}60\,\text{kg}$ ja $$\begin{aligned} &\Delta E_\text{k} \\ &= \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \\ &\cdot (0{,}60\,\text{m/s})^2 \\ &- \tfrac{1}{2} \cdot 0{,}90\,\text{kg} \\ &\cdot (0{,}20\,\text{m/s})^2 \\ &= 0{,}054\,\text{J} - 0{,}018\,\text{J} \\ &= 0{,}036\,\text{J} \end{aligned}$$
+**Sijoitus:** $m_\text{B} = 0{,}30\,\text{kg} \cdot \left(\dfrac{0{,}60}{0{,}20} - 1\right) = 0{,}60\,\text{kg}$ ja $\Delta E_\text{k} = \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \cdot (0{,}60\,\text{m/s})^2 - \tfrac{1}{2} \cdot 0{,}90\,\text{kg} \cdot (0{,}20\,\text{m/s})^2 = 0{,}054\,\text{J} - 0{,}018\,\text{J} = 0{,}036\,\text{J}$
 **Vastaus:** $0{,}036\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $0{,}30\,\text{kg}$.
-**Järkevyys:** Liike-energiasta $0{,}054\,\text{J}$ muuttuu $0{,}036\,\text{J}$ eli kaksi kolmasosaa, mikä sopii täysin kimmottomaan törmäykseen (yhteen jäävät kappaleet menettävät massojen suhteessa $$\begin{aligned} &m_\text{B}/(m_\text{A} + m_\text{B}) \\ &= 0{,}60/0{,}90 \end{aligned}$$ liike-energiasta). Energia ei voi kasvaa, ja tulos on positiivinen, kuten pitää.
+**Järkevyys:** Liike-energiasta $0{,}054\,\text{J}$ muuttuu $0{,}036\,\text{J}$ eli kaksi kolmasosaa, mikä sopii täysin kimmottomaan törmäykseen (yhteen jäävät kappaleet menettävät massojen suhteessa $m_\text{B}/(m_\text{A} + m_\text{B}) = 0{,}60/0{,}90$ liike-energiasta). Energia ei voi kasvaa, ja tulos on positiivinen, kuten pitää.
+
+## fy4-10-L2-10
+**Kysytty:** a) pallojen nopeudet etumerkkeineen ennen törmäystä ja sen jälkeen, b) systeemin kokonaisliikemäärä $p$ ja kokonaisliike-energia $E_\text{k}$ ennen ja jälkeen, c) elastisuuden vaikutus niiden säilymiseen ja d) selitys sille, miksi liikemäärä säilyy, vaikka liike-energia pienenee
+**Periaate:** Valitaan systeemiksi molemmat pallot ja positiiviseksi suunnaksi oikea. Simulaatiossa ei ole kitkaa, ja kun valinta Seinä on pois, radan suunnassa palloihin ei vaikuta ulkoisia voimia. Törmäyksen voimat ovat systeemin sisäisiä voimia, joten kokonaisliikemäärä säilyy. Liike-energia säilyy vain kimmoisassa törmäyksessä. Nopeudet ovat etumerkillisiä: vasemmalle liikkuvan pallon nopeus on negatiivinen.
+**Mallivastaus:** Tulokset riippuvat valitsemistasi massoista ja alkunopeuksista, joten yhtä ainoaa oikeaa lukuarvoa ei ole. Menetelmä on aina sama: lue kummankin pallon massa ja etumerkillinen nopeus taulukosta Lisää tietoja ennen törmäystä ja sen jälkeen, laske liikemäärät ja liike-energiat ja vertaa summia.
+
+Esimerkkiratkaisu simulaation oletusarvoilla (luettu 16.11.2026, simulaation versio 1.1.25). Simulaatiosta on luettu massat, nopeudet ja sen näyttämä liike-energia. Kaikki muu on laskettu niistä.
+
+a) Ennen törmäystä: $m_1 = 0{,}50\,\text{kg}$ ja $v_1 = 1{,}00\,\text{m/s}$ sekä $m_2 = 1{,}50\,\text{kg}$ ja $v_2 = -0{,}50\,\text{m/s}$. Pallo 2 liikkuu vasemmalle, joten sen nopeus on negatiivinen. Kun elastisuus on $100\,\%$, törmäyksen jälkeen $v_1' = -1{,}25\,\text{m/s}$ ja $v_2' = 0{,}25\,\text{m/s}$: kumpikin pallo vaihtaa suuntaa.
+
+b) Kappaleen liikemäärä on $p = mv$ ja liike-energia $E_\text{k} = \tfrac12 mv^2$. Systeemin kokonaisliikemäärä ja kokonaisliike-energia ovat pallojen arvojen summat. Yksiköt ovat $\text{kg}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. Ennen törmäystä:
+
+$$\begin{aligned} p &= m_1 v_1 + m_2 v_2 \\ &= 0{,}50\,\text{kg} \cdot 1{,}00\,\text{m/s} \\ &\quad + 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s}) \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1} &= \tfrac12 m_1 v_1^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (1{,}00\,\text{m/s})^2 \\ &= 0{,}25\,\text{J} \\[6pt] E_{\text{k},2} &= \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s})^2 \\ &= 0{,}1875\,\text{J} \\[6pt] E_\text{k} &= E_{\text{k},1} + E_{\text{k},2} \\ &= 0{,}25\,\text{J} + 0{,}1875\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+
+Törmäyksen jälkeen, kun elastisuus on $100\,\%$:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}25\,\text{m/s} \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s})^2 \\ &= 0{,}3906\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}25\,\text{m/s})^2 \\ &= 0{,}0469\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}3906\,\text{J} + 0{,}0469\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+
+Liikemäärä ja liike-energia ovat samat ennen ja jälkeen, eli molemmat säilyvät. Simulaatio näyttää liike-energiaksi saman arvon $0{,}44\,\text{J}$ ennen törmäystä ja sen jälkeen. Tulokset ilmoitetaan kahdella desimaalilla, koska simulaatio näyttää arvot kahdella desimaalilla.
+
+c) Kun elastisuus on $50\,\%$, simulaatio näyttää törmäyksen jälkeen nopeudet $v_1' = -0{,}69\,\text{m/s}$ ja $v_2' = 0{,}06\,\text{m/s}$:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}06\,\text{m/s} \\ &= -0{,}255\,\text{kg}\cdot\text{m/s} \\ &\approx -0{,}26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s})^2 \\ &= 0{,}1190\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}06\,\text{m/s})^2 \\ &= 0{,}0027\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}1190\,\text{J} + 0{,}0027\,\text{J} \\ &= 0{,}1217\,\text{J} \\ &\approx 0{,}12\,\text{J} \end{aligned}$$
+
+Kun elastisuus on $0\,\%$, pallot jäävät kiinni toisiinsa ja liikkuvat yhteisellä nopeudella $v' = -0{,}13\,\text{m/s}$. Yhteinen massa on $m_1 + m_2 = 2{,}00\,\text{kg}$:
+
+$$\begin{aligned} p' &= (m_1 + m_2)\,v' \\ &= 2{,}00\,\text{kg} \cdot (-0{,}13\,\text{m/s}) \\ &= -0{,}26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_\text{k}' &= \tfrac12 (m_1 + m_2)\,v'^2 \\ &= \tfrac12 \cdot 2{,}00\,\text{kg} \cdot (-0{,}13\,\text{m/s})^2 \\ &= 0{,}0169\,\text{J} \\ &\approx 0{,}02\,\text{J} \end{aligned}$$
+
+Liikemäärä on kaikissa tapauksissa sama $-0{,}25\,\text{kg}\cdot\text{m/s}$ näytön pyöristyksen tarkkuudella. Arvo $-0{,}26\,\text{kg}\cdot\text{m/s}$ johtuu kahteen desimaaliin pyöristetyistä nopeuksista: tarkka yhteinen nopeus on $-0{,}125\,\text{m/s}$, ja se antaa $2{,}00\,\text{kg} \cdot (-0{,}125\,\text{m/s})$ eli $-0{,}25\,\text{kg}\cdot\text{m/s}$. Liike-energia sen sijaan pienenee: arvosta $0{,}44\,\text{J}$ jää $0{,}12\,\text{J}$, kun elastisuus on $50\,\%$ (noin $72\,\%$ liike-energiasta muuttuu muuksi energiaksi), ja $0{,}02\,\text{J}$, kun elastisuus on $0\,\%$ (noin $96\,\%$). Liikemäärä siis säilyy jokaisella elastisuuden arvolla, mutta liike-energia säilyy vain, kun elastisuus on $100\,\%$, ja mitä pienempi elastisuus on, sitä enemmän liike-energiaa häviää. Elastisuus $100\,\%$ vastaa kimmoisaa törmäystä ja $0\,\%$ täysin kimmotonta törmäystä.
+
+d) Törmäyksen aikana pallot vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla saman ajan (Newtonin kolmas laki). Siksi pallojen saamat impulssit ja liikemäärien muutokset ovat yhtä suuret ja vastakkaissuuntaiset ja kumoavat toisensa. Esimerkissä pallon 1 liikemäärä muuttuu $-1{,}125\,\text{kg}\cdot\text{m/s}$ ja pallon 2 liikemäärä $+1{,}125\,\text{kg}\cdot\text{m/s}$, kun elastisuus on $100\,\%$. Kokonaisliikemäärä ei voi muuttua, kun radan suunnassa ei vaikuta ulkoista voimaa. Liikemäärä on vektorisuure, joten vastakkaissuuntaiset liikemäärät voivat kumota toisensa.
+
+Liike-energia on skalaarisuure, joka ei ole koskaan negatiivinen, eikä mikään laki vaadi sen säilymistä. Kun törmäys ei ole kimmoisa, sisäiset voimat tekevät työtä, joka muuttaa kappaleiden muotoa pysyvästi ja lämmittää niitä: liike-energiaa muuttuu sisäenergiaksi ja ääneksi. Kokonaisenergia säilyy, mekaaninen energia ei.
+
+Tarkistus ja rajoitukset: täysin kimmottomassa törmäyksessä säilymislaki antaa $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$ eli $-0{,}125\,\text{m/s}$, mikä sopii simulaation näyttämään arvoon $-0{,}13\,\text{m/s}$. Simulaatio on malli: pallot ovat ideaalisia, kitkaa ei ole ja arvot näytetään pyöristettyinä. Oikeassa kokeessa kitka ja mittausepävarmuus aiheuttaisivat pieniä poikkeamia.

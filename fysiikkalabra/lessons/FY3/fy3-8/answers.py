@@ -41,4 +41,12 @@ A_kapillaari = 3.141592653589793 * 0.30**2                   # capillary cross-s
 a["fy3-8-L3-05"] = (dV_etanoli - dV_pallo) / A_kapillaari    # column rise (22,0 − 0,54) mm³ / 0,283 mm² = 75,9 mm (without bulb 77,8 mm = +2,5 %; water: (4,2 − 0,54) / 0,283 = 12,9 mm)
 a["fy3-8-L1-09"] = 12e-6 * 25 * 50 * 1000                     # steel rail 25 m, ΔT = 50 K: α = 12e-6 1/K (MAFY), ΔL = 0,015 m = 15 mm
 a["fy3-8-L2-09"] = 20 + 2.0 / (3.0 / 50)                     # figure fy3-8/length-graph: (20 °C; 0 mm) to (70 °C; 3,0 mm), k = 0,060 mm/K; ΔL = 2,0 mm -> ΔT = 33,3 K -> 53,3 °C
+# Data task L2-10: NASA "Sea Level (Earth Indicator)", page read 16 November 2026 (the page updates: dated example)
+dt_meri = round((2026 + 9.5 / 12) - 1993.0, 1)               # start of 1993 -> mid-October 2026: 33 a 9,5 months = 33,79 a -> 33,8 a
+v_meri = 115.8 / dt_meri                                     # part a: latest measurement 115,8 mm over 33,8 a = 3,43 mm/a -> 3,4 mm/a
+dv_meri = 4.0 / dt_meri                                      # the latest measurement's ±4,0 mm corresponds to ±0,12 mm/a in the rate
+v_teksti = 91 / dt_meri                                      # with the page text's 91 mm instead: 2,69 mm/a -> 2,7 mm/a (state which value was used)
+a["fy3-8-L2-10"] = 2.0e-4 * 1000 * 0.30 * 1000               # part c: Δh = γ h₀ ΔT = 2,0e-4 1/K · 1000 m · 0,30 K = 0,060 m = 60 mm
+suhde_meri = 2.0e-4 * 0.30                                   # relative change γ ΔT = 6,0e-5 = 0,0060 %
+dh_lampo = 115.8 / 3                                         # source: one third of the rise is thermal expansion: 38,6 mm -> 39 mm (same order as 60 mm)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

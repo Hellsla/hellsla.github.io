@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3d1e122452fa32a3
-SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
+CONTENT-HASH: 7f19929160d7f4d9
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- L2-08: 1 - 1,3/4,3 = 69,8 %, answer 70 % within tolerance; L3-06: k = 2, d = 350 nm checked, new graph task at the right level.
-- Language checked: fi-easy. Hash 3d1e122452fa32a3 at start; unchanged at end.
+- Delta: the only change is the removal of the parenthesis "(esimerkkiaineisto)" from the text of fy7-14-L3-05; no number, symbol, question or answer field changed.
+- The sentence reads correctly without it: "Taulukossa on tummien raitojen etäisyys x koskettumisviivasta. Raita k = 0 on ..."; punctuation and spacing intact.
+- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
+- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
+- Language checked: fi-easy. Hash 7f19929160d7f4d9 at start and end.

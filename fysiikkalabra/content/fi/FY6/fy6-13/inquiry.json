@@ -30,11 +30,11 @@
         {
           "text": "$150\\,\\text{kV/m}$",
           "correct": true,
-          "feedback": "Oikein. Homogeenisen kentän voimakkuus on $E = \\tfrac{U}{d} = 300\\,\\text{V} : 0{,}0020\\,\\text{m} = 150\\,000\\,\\text{V/m}$ (luku *Homogeeninen sähkökenttä*). Tänään samanlaisista levyistä tehdään kondensaattori."
+          "feedback": "Oikein. Homogeenisen kentän voimakkuus on $$\\begin{aligned} E &= \\tfrac{U}{d} \\\\ &= 300\\,\\text{V} : 0{,}0020\\,\\text{m} \\\\ &= 150\\,000\\,\\text{V/m} \\end{aligned}$$ (luku *Homogeeninen sähkökenttä*). Tänään samanlaisista levyistä tehdään kondensaattori."
         },
         {
           "text": "$150\\,\\text{V/m}$",
-          "feedback": "Jaoit jännitteen millimetreillä. Kentän yksikkö on $\\text{V/m}$, joten etäisyys muutetaan metreiksi: $2{,}0\\,\\text{mm} = 0{,}0020\\,\\text{m}$, ja $E = 300\\,\\text{V} : 0{,}0020\\,\\text{m} = 150\\,\\text{kV/m}$."
+          "feedback": "Jaoit jännitteen millimetreillä. Kentän yksikkö on $\\text{V/m}$, joten etäisyys muutetaan metreiksi: $2{,}0\\,\\text{mm} = 0{,}0020\\,\\text{m}$, ja $$\\begin{aligned} E &= 300\\,\\text{V} : 0{,}0020\\,\\text{m} \\\\ &= 150\\,\\text{kV/m} \\end{aligned}$$."
         },
         {
           "text": "$0{,}60\\,\\text{V/m}$",
@@ -464,7 +464,7 @@
         {
           "text": "Kapasitanssia ei ole muutettu faradeiksi: $470\\,\\mu\\text{F} = 470 \\cdot 10^{-6}\\,\\text{F}$, joten energia on noin $0{,}034\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Kaavaan sijoitetaan kapasitanssi faradeina: $W = \\tfrac{1}{2} \\cdot 470 \\cdot 10^{-6}\\,\\text{F} \\cdot (12\\,\\text{V})^2 \\approx 0{,}034\\,\\text{J}$. Opiskelijan tulos on miljoona kertaa liian suuri, ja yli $30\\,\\text{kJ}$ pienessä kondensaattorissa olisi järjetön määrä."
+          "feedback": "Oikein. Kaavaan sijoitetaan kapasitanssi faradeina: $$\\begin{aligned} W &= \\tfrac{1}{2} \\cdot 470 \\cdot 10^{-6}\\,\\text{F} \\cdot (12\\,\\text{V})^2 \\\\ &\\approx 0{,}034\\,\\text{J} \\end{aligned}$$. Opiskelijan tulos on miljoona kertaa liian suuri, ja yli $30\\,\\text{kJ}$ pienessä kondensaattorissa olisi järjetön määrä."
         },
         {
           "text": "Kerroin $\\tfrac{1}{2}$ on turha, koska lähde antaa energian $QU$, joten energia on $67\\,680\\,\\text{J}$.",
@@ -571,7 +571,7 @@
       "title": "3. Selitä vaara",
       "optional": true,
       "prompt": "Vanhan television virtalähteessä on kondensaattori, jonka kapasitanssi on $220\\,\\mu\\text{F}$ ja jännite $330\\,\\text{V}$. Selitä, miksi kondensaattori voi olla vaarallinen vielä sen jälkeen, kun televisio on irrotettu sähköverkosta, ja kuinka suuri sen energia on.",
-      "model": "Kun televisio irrotetaan verkosta, kondensaattorin levyjen välille ei synny reittiä, jota pitkin varaus pääsisi levystä toiseen, joten varaus ja jännite säilyvät. Kondensaattorissa on yhä $330\\,\\text{V}$:n jännite, ja sen energia on $W = \\tfrac{1}{2} C U^2 = \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\cdot (330\\,\\text{V})^2 \\approx 12\\,\\text{J}$. Jos ihminen koskettaa molempia napoja, kondensaattori purkautuu hänen kehonsa kautta, ja virta on suurin heti alussa. Siksi avattua laitetta ei kosketa, ennen kuin kondensaattori on purettu.",
+      "model": "Kun televisio irrotetaan verkosta, kondensaattorin levyjen välille ei synny reittiä, jota pitkin varaus pääsisi levystä toiseen, joten varaus ja jännite säilyvät. Kondensaattorissa on yhä $330\\,\\text{V}$:n jännite, ja sen energia on $$\\begin{aligned} W &= \\tfrac{1}{2} C U^2 \\\\ &= \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\\\ &\\cdot (330\\,\\text{V})^2 \\\\ &\\approx 12\\,\\text{J} \\end{aligned}$$. Jos ihminen koskettaa molempia napoja, kondensaattori purkautuu hänen kehonsa kautta, ja virta on suurin heti alussa. Siksi avattua laitetta ei kosketa, ennen kuin kondensaattori on purettu.",
       "criteria": [
         "Vastaus kertoo, että irrotetun kondensaattorin varaus ja jännite säilyvät, koska varauksella ei ole reittiä levystä toiseen.",
         "Vastaus laskee energian kaavalla $W = \\tfrac{1}{2} C U^2$ ja saa noin $12\\,\\text{J}$.",
