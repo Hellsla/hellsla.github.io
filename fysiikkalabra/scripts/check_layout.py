@@ -105,6 +105,15 @@ JS = """() => {
     const box = t.parentElement, cs = getComputedStyle(box), room = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
     const over = Math.max(t.scrollWidth - t.clientWidth, Math.round(t.getBoundingClientRect().width - room));   // it would scroll, or it is wider than its box (no table scrolls, 2026-11-08)
     if (over > 1) out.push({what: 'table', over, text: t.innerText.replace(/\\s+/g, ' ').slice(0, 60)});
+    if (!t.classList.contains('tbl-stack')) for (const k of t.querySelectorAll('th .katex, td .katex')) {   // a cell's formula that scrolls in its column: "E_distri" in a
+      if (k.scrollWidth > k.clientWidth + 3) { out.push({what: 'table', over: k.scrollWidth - k.clientWidth, text: 'formula in a cell scrolls, not fully shown: ' + ((k.querySelector('annotation') || {}).textContent || '').slice(0, 50)}); break; }   // heading (en/fy3-15, 2026-11-16)
+    }
+    if (t.classList.contains('tbl-stack')) for (const c of t.querySelectorAll('td, tbody th')) {   // a stacked table (lesson.js): its label must not run into its value
+      const l = c.querySelector(':scope > .tbl-lab'), v = c.querySelector(':scope > .tbl-val');   // ("E_district heating (GWh)" over 1190 at 390 px, en/fy3-15, 2026-11-16)
+      if (!l || !v || !v.textContent.trim()) continue;
+      const vr = v.getBoundingClientRect(), vl = vr.left, lr = Math.max(ink(l), l.getBoundingClientRect().left + l.scrollWidth);
+      if (lr > vl + 1 && l.getBoundingClientRect().bottom > vr.top + 2) { out.push({what: 'table', over: Math.round(lr - vl), text: 'stacked table: label runs into its value: ' + l.textContent.trim().slice(0, 50)}); break; }
+    }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // regression 2026-11-04: rows of a calculation collapsed to 0 px (kx-wide inside the grid)
     if (!c.checkVisibility()) continue;
