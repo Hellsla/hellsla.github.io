@@ -1,18 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: ecd7c7f1f550da9a
+VERDICT: PASS
+CONTENT-HASH: 90f7ef37fb4a112f
 
 ## Blocking
-- [Major] fy8-s3 a) model answer, the Rr² table (solutions.md:128 and :1086; capture page-390-27/28) — at 390 px the table is stacked as label/value rows, and the label "R r² (10³ cm²/min)" is wider than its cell, so its end ("min") is overprinted by the value (12,1 … 28,6) in every row — a header unit unreadable and values collide — shorten the label (e.g. $Rr^2\ (10^{3}\,\text{cm}^2/\text{min})$ → $Rr^2$ and give the unit once in the text, or let the label column wrap) in the shared stacked-table component; check the other long headers of the table too.
+- none
 
 ## Polish
-- [Minor] fy8-s1 b) — substitution gives 1193 (4 sig. figs.), the answer is "noin 1200", the rubric detail says "≈ 1190": three roundings of one number; use one.
-- [Minor] fy8-s1 a) Vastaus — "kolme merkitsevää numeroa kuten energiatasoissa" fine, but the paragraph is long and mixes answer, sig-figs and a spectral remark; split.
-- [Minor] fy8-s1 a) Vastaus — "kolme merkitsevää numeroa" vs λ ≈ 296 nm printed after a 4-digit 2,959·10⁻⁷ m: consistent, only note.
+- [Minor] carried from round 2 (unchanged, none blocks): fy8-s1 b) three roundings of one value (1193 / "noin 1200" / "≈ 1190") and the long a) Vastaus paragraph; fy8-s3 b) range "1,0 −1,6 cm" should be an en dash; fy8-s3 c) openings "20 cm. ΔN ≈ …" read as fragments; fy8-s2 d) rubric says heat where the solution says internal energy.
 
 ## Checked
-- contact-1, -2, -3 (captures #1–#36); page-390-4, -5, -6 (fy8-s1 a–c solutions: re-broken chains aligned, nothing clipped, sub-/superscripts and units upright), page-390-27 and -31 (fy8-s3 table, b/c/d solutions: chains fine).
-- Not opened individually: s4/s5 chains, the 1280 px captures, the two fy8-s3 SVG graphs at full size (seen only in the contact sheet: axes, labels present); the sheets showed no clipped chains elsewhere.
-- Reworded text (sisäenergiaksi, rubric criteria) read in the packet; Finnish fluent.
+- Round 3, delta: the only change is the fy8-s3 a) model-answer table header, now `10^{3}\,\tfrac{\text{cm}^2}{\text{min}}`. Opened the Finnish 390 px capture review/shots/FY8-sovella-stage-fy8-s3-390-4.png (page captured in Finnish only): the four labels r (cm), 1/r² (1/cm²), R (1/min) and Rr² (10³ cm²/min) each stand clear of their values 20,0 / 0,0025 / 72 / 28,6, no overlap or clipping. Also looked at parts 5, 6, 8 and 9 for layout around it: intact. The `illustrations 4 · typography 4 · Finnish 4 · accessibility 3` change is the same source in this language; its layout is the shared component.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 3

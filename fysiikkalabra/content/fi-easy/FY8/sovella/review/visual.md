@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fdfef8c5d164e6f2
+CONTENT-HASH: 3058bd6e3c2509cc
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions fy8-s3 b (Finnish capture, stage s3 p.6) — "d = 1,0 −1,6 cm" renders the range with a minus sign and spaces — use an en dash without spaces: $1{,}0\text{–}1{,}6\,\text{cm}$ (check the fi-easy text carries the same).
-- [Minor] fy8-s3 c — paragraph openings "20 cm. ΔN ≈ …" read as a fragment; write "At $20\,\text{cm}$: …" in the lead-in of each row.
-- [Minor] rubric of fy8-s2 d (\"the heat of the fissions boiled the water away\") still says heat while the solution says internal energy — align the wording.
+- [Minor] carried from round 2 (unchanged, none blocks): fy8-s1 b) three roundings of one value (1193 / "noin 1200" / "≈ 1190") and the long a) Vastaus paragraph; fy8-s3 b) range "1,0 −1,6 cm" should be an en dash; fy8-s3 c) openings "20 cm. ΔN ≈ …" read as fragments; fy8-s2 d) rubric says heat where the solution says internal energy.
 
 ## Checked
-- Translation source for fi-easy read from packet (solutions, rubric, tasks); layout judged from the Finnish captures only (as instructed): contact-1, stage-fy8-s3-390-6/-7/-8, fig-37-390. The re-broken calculation rows (aligned, wrapped, no clipping or overflow at 390 px), the opened model answers and the s3 b graph area looked sound. Not every figure capture was opened (figures unchanged by this round); this is a sample, not a full figure review.
-- Hash run at start and end identical.
+- Round 3, delta: the only change is the fy8-s3 a) model-answer table header, now `10^{3}\,\tfrac{\text{cm}^2}{\text{min}}`. Opened the Finnish 390 px capture review/shots/FY8-sovella-stage-fy8-s3-390-4.png (page captured in Finnish only): the four labels r (cm), 1/r² (1/cm²), R (1/min) and Rr² (10³ cm²/min) each stand clear of their values 20,0 / 0,0025 / 72 / 28,6, no overlap or clipping. Also looked at parts 5, 6, 8 and 9 for layout around it: intact. The `illustrations 4 · typography 4 · Finnish 4 · accessibility 4` change is the same source in this language; its layout is the shared component.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
