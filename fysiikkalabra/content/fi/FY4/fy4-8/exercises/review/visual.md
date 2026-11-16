@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9b97de86157d65a5
+CONTENT-HASH: 3adcc392f3bc2b66
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-8-L2-10 — "3 000 kg" (thin-space thousand separator, quoted from the source) next to "3000 kg" in the formulas: use one form.
-- [Minor] fy4-8-L2-10 Muunnokset — "Lopuksi 1 kJ = 1000 J" is stated but the answer then uses kJ without a visible conversion row; fine, but could be dropped or moved next to the answer.
-- [Minor] fy4-8-L2-10 Vastaus e) — a long single paragraph (about 150 words); splitting after "kaksikymmenkertainen" would help.
-- for science: Järkevyys cites an unquoted source value (12 000 kg at 100 km/h) and e) a 60 km/h pedestrian figure; check that they are on the linked page.
+- [Minor] fy4-8-L2-10 Vastaus/Answer — the d)-first order reads naturally; "Lisäksi: a)" is a clear bridge. No change needed.
+- [Minor] fy4-8-L2-10 — "3 000 kg" in the source quote vs "3000 kg" in formulas: one form (carried over).
+- [Minor] fy4-8-L2-10 e) — long paragraph (~150 words); split before "Vammat/The injuries/Vammat riippuvat" (carried over).
 
 ## Checked
-- open-exercises-L2-1280-13 (task text, link, a)–e) separated, answer box), -14 (Periaate, Kaava, Muunnokset, Sijoitus rows), -15 (Sijoitus d), Vastaus, Järkevyys), -16.
-- Link underlined and readable; every number has its unit in LaTeX; \cdot, colon division, decimal comma, aligned rows correct; no clipping. Only 1280 px captures of level 2 exist; phone width rests on the layout check.
+- Delta: only the order of the Vastaus/Answer paragraphs. Opened fy4-8-open-exercises-L2-1280-14 (Fi) and -15 (all three languages): d) first with the answer value, then "Lisäksi/In addition: a)", b), c), e), Järkevyys. No clipping, KaTeX renders, units upright with thin space, spacing and aligned rows intact. Only 1280 px captures of level 2 exist; phone width rests on the layout check.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
