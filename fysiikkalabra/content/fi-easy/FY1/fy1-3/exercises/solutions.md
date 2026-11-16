@@ -214,7 +214,7 @@ Lisäksi: virhearvio on $$\begin{aligned} \Delta x &= \tfrac{1{,}014 - 1{,}004}{
 **Järkevyys:** Kaikki mittaukset ovat taulukon arvoa suurempia, ja poikkeama on yli prosentin. Veden tiheys on kuitenkin noin $1\,\text{g/cm}^3$, joten keskiarvo on oikean kokoinen ja poikkeama pieni.
 
 ## fy1-3-L2-09
-**Annettu:** CERNin tiedote 23.9.2011 ja sen päivitykset: lähteen ja ilmaisimen välinen matka noin $730\,\text{km}$, mitattu $20\,\text{cm}$:n epävarmuudella; neutriinojen kulkuaika mitattu alle $10\,\text{ns}$:n tarkkuudella; yli $15\,000$ havaittua neutriinoa. Valon nopeus tyhjiössä $c = 2{,}998\cdot10^{8}\,\text{m/s}$ ja poikkeama $\Delta t = 60\,\text{ns}$.
+**Annettu:** CERNin tiedote 23. syyskuuta 2011 ja sen päivitykset: lähteen ja ilmaisimen välinen matka noin $730\,\text{km}$, mitattu $20\,\text{cm}$:n epävarmuudella; neutriinojen kulkuaika mitattu alle $10\,\text{ns}$:n tarkkuudella; yli $15\,000$ havaittua neutriinoa. Valon nopeus tyhjiössä $c = 2{,}998\cdot10^{8}\,\text{m/s}$ ja poikkeama $\Delta t = 60\,\text{ns}$.
 
 **Kysytty:** a) mittaus ja sen tarkkuus, tuloksen yllättävyys; b) valon kulkuaika $t$, suhteellinen poikkeama $\dfrac{\Delta t}{t}$ prosentteina ja valon kulkema matka $\Delta s$ ajassa $\Delta t$; c) mitä myöhemmin havaittiin ja virheen laji; d) miksi yksi poikkeava tulos ei kumoa teoriaa
 

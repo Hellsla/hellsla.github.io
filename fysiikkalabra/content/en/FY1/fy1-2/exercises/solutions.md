@@ -213,7 +213,7 @@
 
 **Model answer a):** The old kilogram was the mass of one object: a platinum-iridium cylinder kept at BIPM near Paris. National copies were made of it too. In the new definition the Planck constant has been given an exact numerical value, $h = 6.626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, and the kilogram follows from it together with the definitions of the metre and the second. The definition based on an object was given up because the comparisons showed the masses of the national copies drifting away from the mass of the international prototype. No one could know which object was changing, since by definition the international prototype always had a mass of exactly $1\,\text{kg}$.
 
-**Formula:** $\dfrac{\Delta m}{m} \cdot 100\,\%$
+**Formula:** the relative change $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
 
 **Conversions:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ and $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2.5\cdot10^{-8}\,\text{kg}$
 

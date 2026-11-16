@@ -232,7 +232,7 @@ k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
 &\approx 1{,}52\,{}^\circ\text{C/h}
 \end{aligned}$$
 
-**Mallivastaus c):** Malli on $T(t) = 7{,}2\,{}^\circ\text{C} + 1{,}52\,{}^\circ\text{C/h} \cdot (t - 6\,\text{h})$. Se antaa klo $8$ lämpötilan $10{,}2\,{}^\circ\text{C}$ (mitattu $10{,}4\,{}^\circ\text{C}$) ja klo $10$ lämpötilan $13{,}3\,{}^\circ\text{C}$ (mitattu $13{,}5\,{}^\circ\text{C}$). Aikavälillä ero on enintään $0{,}2\,{}^\circ\text{C}$, joten malli kuvaa mittauksia hyvin.
+**Mallivastaus c):** Malli on $T(t) = T_1 + k(t - t_1)$, missä $T_1 = 7{,}2\,{}^\circ\text{C}$, $k = 1{,}52\,{}^\circ\text{C/h}$ ja $t_1 = 6\,\text{h}$. Se antaa klo $8$ lämpötilan $10{,}2\,{}^\circ\text{C}$ (mitattu $10{,}4\,{}^\circ\text{C}$) ja klo $10$ lämpötilan $13{,}3\,{}^\circ\text{C}$ (mitattu $13{,}5\,{}^\circ\text{C}$). Aikavälillä ero on enintään $0{,}2\,{}^\circ\text{C}$, joten malli kuvaa mittauksia hyvin.
 
 Aikavälin ulkopuolella malli epäonnistuu. Klo $16$ se antaa $22{,}3\,{}^\circ\text{C}$, vaikka mitattu lämpötila on $18{,}1\,{}^\circ\text{C}$, ja klo $0$ se antaisi $-1{,}9\,{}^\circ\text{C}$, vaikka mitattu on $8{,}1\,{}^\circ\text{C}$. Malli on hyvä vain sillä alueella, jonka mittauksista se tehtiin.
 

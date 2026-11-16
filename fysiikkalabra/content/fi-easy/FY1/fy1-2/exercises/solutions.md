@@ -213,7 +213,7 @@
 
 **Mallivastaus a):** Vanha kilogramma oli yhden esineen massa: Pariisin lähellä BIPM:ssä säilytettävän platina-iridiumkappaleen. Sitä varten valmistettiin myös kansallisia kopioita. Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, ja kilogramma seuraa siitä yhdessä metrin ja sekunnin määritelmien kanssa. Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui. Määritelmän mukaan kansainvälisen kappaleen massa oli nimittäin aina tasan $1\,\text{kg}$.
 
-**Kaava:** $\dfrac{\Delta m}{m} \cdot 100\,\%$
+**Kaava:** suhteellinen muutos $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
 
 **Muunnokset:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ ja $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2{,}5\cdot10^{-8}\,\text{kg}$
 

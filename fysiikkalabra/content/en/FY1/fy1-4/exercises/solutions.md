@@ -232,7 +232,7 @@ k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
 &\approx 1.52\,{}^\circ\text{C/h}
 \end{aligned}$$
 
-**Model answer c):** The model is $T(t) = 7.2\,{}^\circ\text{C} + 1.52\,{}^\circ\text{C/h} \cdot (t - 6\,\text{h})$. It gives $10.2\,{}^\circ\text{C}$ at $8$ o'clock (measured $10.4\,{}^\circ\text{C}$) and $13.3\,{}^\circ\text{C}$ at $10$ o'clock (measured $13.5\,{}^\circ\text{C}$). Inside the interval the difference is at most $0.2\,{}^\circ\text{C}$, so the model describes the measurements well.
+**Model answer c):** The model is $T(t) = T_1 + k(t - t_1)$, where $T_1 = 7.2\,{}^\circ\text{C}$, $k = 1.52\,{}^\circ\text{C/h}$ and $t_1 = 6\,\text{h}$. It gives $10.2\,{}^\circ\text{C}$ at $8$ o'clock (measured $10.4\,{}^\circ\text{C}$) and $13.3\,{}^\circ\text{C}$ at $10$ o'clock (measured $13.5\,{}^\circ\text{C}$). Inside the interval the difference is at most $0.2\,{}^\circ\text{C}$, so the model describes the measurements well.
 
 Outside the interval the model fails. At $16$ o'clock it gives $22.3\,{}^\circ\text{C}$, although the measured temperature is $18.1\,{}^\circ\text{C}$, and at $0$ o'clock it would give $-1.9\,{}^\circ\text{C}$, although the measured one is $8.1\,{}^\circ\text{C}$. The model is good only in the range of the measurements it was made from.
 
