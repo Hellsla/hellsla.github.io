@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5795571696dfa9b0
+CONTENT-HASH: 08a5298251fe93cc
 
 ## Blocking
 (none)
@@ -8,6 +8,5 @@ CONTENT-HASH: 5795571696dfa9b0
 (none)
 
 ## Checked
-- solutions.md L2-08: "Planckin vakio $h$ yksikössä eV s" is correct for the slope in eV/Hz and consistent with the lesson's h; the old "h/e" was the confusing one.
-- L2-09 (kuvaaja-ab) Kaava line: $E = h(f - f_0)$ with $h = 4{,}136\cdot10^{-15}\,\text{eV s}$ = $0{,}4136$ eV per $10^{14}$ Hz; the chain below still matches (2,66 eV).
+- solutions.md L2-06: slope in eV/Hz named h = 4,14e-15 eV s; correct (the old h/e was the confusing form) and consistent with L2-07 and L2-08.
 - Method: diff in context.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6e3fb1b8a584919f
+CONTENT-HASH: 689c71af3cad3c07
 
 ## Blocking
 (none)
@@ -8,5 +8,5 @@ CONTENT-HASH: 6e3fb1b8a584919f
 (none)
 
 ## Checked
-- Same two solution lines as the Finnish version: slope in eV/Hz is h in eV s, and the L2-09 Formula line E = h(f - f0) with h = 4,136e-15 eV s = 0,4136 eV per 1e14 Hz; correct and consistent with the chain below.
+- solutions.md L2-06: slope in eV/Hz named h = 4,14e-15 eV s; correct (the old h/e was the confusing form) and consistent with L2-07 and L2-08.
 - Method: diff in context.
