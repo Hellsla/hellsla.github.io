@@ -129,13 +129,6 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 2. `verify` johtaa reflow-rivit uudelleen eikä hyväksy reflow-riviä ulkoasukatselmoinnille.
 3. Testi (`test_reviews.py` 8n): yksikön kaava nostettuna `aligned`-muotoon siirtää tieteen ja pedagogiikan, ei ulkoasua;
    muuttunut luku, merkki tai sana ei siirrä mitään.
-## 5g. Aineistotaulukko puhelimella ja test_inquiry.py:n _letters (koordinaattori 2026-11-16)
-
-Varattu: claude/data-table-mobile. FY3-työntekijän löydökset: (1) tehtävän aineistotaulukon (`data`) pitkä riviotsikko
-(en/fy3-15-L2-05 "E_district heating (GWh)") menee 390 px:llä arvojen päälle; korjataan jaetussa komponentissa ja
-lisätään layout-tarkistus. (2) `scripts/test_inquiry.py`:n `_letters` ei poista `$$…$$`-näyttökaavaa eikä kaavaan
-siirtyvää välimerkkiä (`\text{.}`); korjaus ja yksikkötesti. Jaettu muutos: ajetaan yksin, ei muuta sivujen sisältöä.
-
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
