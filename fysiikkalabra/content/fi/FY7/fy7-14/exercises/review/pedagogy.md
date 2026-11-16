@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8eaee81f9fae4b2f
-SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
+CONTENT-HASH: 9a26cfef32568a85
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- fy7-14-L3-06 text asks for 'kertaluku k ja kalvon paksuus' but the answer field is d only; end with 'Anna vastaus paksuutena nanometreinä' (carried over).
-- fy7-14/soap-curve and coating-curve alt texts give no reading values (extrema positions, levels); a reader without sight cannot do L2-08 or L3-06. Add the grid and the number of extrema without the answer values.
+(none)
 
 ## Checked
-- L2-08: R0 4,3 %, Rpinn 1,3 %, 1 - 1,3/4,3 = 69,8 %; reading steps explicit; the earlier sqrt(1,52) remark is gone from Järkevyys.
-- L3-06: one minimum (466 nm) and one maximum (621 nm) in 400-700 nm; other orders fall at 931 nm and 372 nm, outside, so k = 2 is unique; d = 2 x 466 / (2 x 1,33) = 350 nm; recomputed.
-- Principle (one reversal: 2nd = k lambda minimum, (k - 1/2) lambda maximum) is explained, and the check with k = 1 helps.
-- Level 3 justified (inverse inference, thickness unknown); not a repeat of L3-03 or the worked set.
-- Language checked: fi. Hash 8eaee81f9fae4b2f at start and end.
+- Delta: the only change is the removal of the parenthesis "(esimerkkiaineisto)" from the text of fy7-14-L3-05; no number, symbol, question or answer field changed.
+- The sentence reads correctly without it: "Taulukossa on tummien raitojen etäisyys x koskettumisviivasta. Raita k = 0 on ..."; punctuation and spacing intact.
+- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
+- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
+- Language checked: fi. Hash 9a26cfef32568a85 at start and end.

@@ -215,7 +215,7 @@ m_2 g - T &= m_2 a
 ```
 missä $m_1$ on kärryn massa (kg), $m_2$ punnuksen massa (kg), $T$ langan jännitysvoima (N), $a$ kiihtyvyys (m/s²) ja $g = 9{,}81\,\text{m/s}^2$. Tuntemattomia on kaksi, $a$ ja $T$, ja yhtälöitä on kaksi.
 
-Lasketaan yhtälöt puolittain yhteen. Silloin $T$ poistuu, koska lanka on kappaleiden välinen sisäinen voima. Näin saadaan ensin kiihtyvyys ja sitten jännitysvoima:
+Lasketaan yhtälöt puolittain yhteen. Silloin $T$ poistuu, koska langan jännitysvoima on kappaleiden välinen sisäinen voima. Näin saadaan ensin kiihtyvyys ja sitten jännitysvoima:
 ```latex
 \begin{aligned}
 a &= \frac{m_2}{m_1 + m_2}\,g \\

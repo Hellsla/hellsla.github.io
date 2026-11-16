@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a4e89ddd6c729072
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: a2889d1cea15a4dc
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the opening wireless-charger paragraph ("The pad of a wireless charger contains …") is about 142 words; optionally break before "The electronics of the phone rectifies".
+- [Major, outside this change, queue item 5d] formulas listed for en/fy7-16 in docs/clipped-formulas.tsv (8 rows) are known clipped at 360 px; the diff touches none of them.
+- none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blockers fixed: the three long paragraphs are split at "In one device comparison made in 2020", "The working of an induction hob thus resembles a transformer" and "Aluminium and copper are not ferromagnetic"; all parts within about 122 words.
-- Hash identical at start and end of this round.
+- batch delta review: fig-10-390 (induction hob cross-section, eddy-current marks in the base of the pan, labels legible; the reworded misconception and feedback agree with it); wording read in lesson.md and inquiry.json.

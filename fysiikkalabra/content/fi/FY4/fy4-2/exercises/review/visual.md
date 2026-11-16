@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 14555a0377ff79b2
-SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
+CONTENT-HASH: fa896eb8e6db4d5e
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] None. The two lifted rows (9,72 m/s² · 0,18 s ≈ 1,8 m/s and √(2 · 20 m : 9,81 m/s²) ≈ 2,02 s) sit in a Järkevyys panel as boxed display rows, the sentence continuing after them; not clipped, the trailing full stop is inside the formula.
 
 ## Checked
-- Diff read: one answer paragraph reworded, no layout change. No capture opened for it.
-- Round 2 wording is clear and gives the reason for three significant figures.
+- fy4-2-open-exercises-L3-1280-4 (the 9,72 row), fy4-2-open-exercises-1280-10 (the 2,02 row), L3-1280-3 and L2-1280-9/10 for surrounding layout (fi captures; en and fi-easy share the same layout and the same lifted rows, judged from source and the passing 352/360 px checks).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

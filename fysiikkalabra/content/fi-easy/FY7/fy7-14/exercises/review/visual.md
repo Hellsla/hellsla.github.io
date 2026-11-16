@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3d1e122452fa32a3
-SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
+CONTENT-HASH: 7f19929160d7f4d9
 
 ## Blocking
 
+## Outside this change (queue item 5d, not blocking here)
+- [Major] docs/clipped-formulas.tsv lists 8 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
+
 ## Polish
-- [Minor] 14-17 Järkevyys: wording "Se on odotettua, koska yksi pinnoitekerros ei voi kumota…" is fine now; no further change.
+- [Minor] 14-20 Vastaus (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
 
 ## Checked
-- Added 14-17 (L2-08) and 14-23 (L3-06) with graphs and open solutions (fy7-14-open-exercises-L2-1280-10, -11, L3-1280-9, -10, full size). Redrawn soap-curve: label "saippuakalvo" now in the clear area below the peak, the earlier Major is resolved; coating graph labelled and legible; chains aligned, decimal comma, units upright; the set reads as one.
-- Rest not re-reviewed.
+- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
+- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
+- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
+- Not opened: other captures (outside the delta).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

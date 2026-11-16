@@ -77,6 +77,8 @@ FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksi
 
 FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
 
+FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe kolmella kielellä); 53 jää (47 vanhaa inline-kaavaa, jotka CI löysi 360 px:llä, ja kahden tehtävätekstin opiskelijan laskun 6 riviä, koska tehtävätekstissä välimerkki jäisi display-kaavan jälkeen yksin).
+
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
 näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
@@ -451,7 +453,7 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
-Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613).
+Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613). FY7 tehty (PR #617, claude/fy7-oikoluku). P6 (fy7-8:n kaavanimi) ja fy7-8:n simulaation selite (lang/fi.json, lang/fi-easy.json "lämmöksi") tehdään kohdassa 8m.
 
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
 ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
@@ -470,6 +472,7 @@ Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja li
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
+FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
@@ -482,6 +485,7 @@ kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn ka
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
 FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2-10, fy5-14-L2-09, fy5-17-L2-10, fy5-16-L2-10.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
+FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 

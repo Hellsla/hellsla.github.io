@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 74b50c2bb09b776e
+CONTENT-HASH: ffd2c67e70d46b4c
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] fy4-9-L2-09 solution, end — "Järkevyys:" is a plain run-in word at the end of the Mallivastaus card, not the shared Järkevyys block of other solutions; also no Annettu/Vastaus blocks (acceptable for a written task, but the structure differs).
+- [Minor] fy4-9-L2-09 b) — "Vertaa kuvausta siihen, mitä näit videolla." is an instruction to the student inside a model answer; reword as a statement or move to the task text.
+- [Minor] fy4-9-L2-09 b) — Newton II is $\Sigma F = ma$ here but $\Sigma\overline{F} = m\overline{a}$ in Periaate; harmless (magnitudes), but one form would read better.
+- [Minor] fy4-9-L2-09 d) — the list of error sources is one long sentence with semicolons; a bullet list would scan more easily.
 
 ## Checked
-- Delta: fy4-9-L1-03 (task 13-3) in fy4-9-open-exercises-1280-2.png at readable size; layout survived: situation paragraph, question on its own line, answer field, opened solution start (Annettu) intact.
-- fy4-9-open-exercises-1280-1.png for the surrounding tasks (13-1, 13-2).
-- en text of the task read from exercises.json (fi-easy not opened; same wording change per the brief).
-- Finnish: "heitetään pystysuoraan ylöspäin. Pelaaja iskee palloa sen ollessa hetkellisesti levossa lentoratansa ylimmässä kohdassa" is fluent, glossary-consistent; quantities are inline LaTeX with units, no plain quantities. English reads naturally.
+- open-exercises-L2-1280-11 (task text, NASA link, parts a)–d), short answer, Kysytty, Periaate), -12 (Mallivastaus a)–c) with aligned rows), -13 (rest of c), d), Järkevyys).
+- Link underlined and readable; a)–d) are separate paragraphs; units upright with thin space, decimal comma, \cdot correct; no clipping at 1280. Only 1280 px level-2 captures exist; phone width rests on the layout check.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

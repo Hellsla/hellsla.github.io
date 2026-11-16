@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 66b641106a3af95a
+CONTENT-HASH: 8adfe08694ac5522
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta since 8b7dd5d78: step 3 now says "the acceleration $a$" (not magnitude), consistent with step 2's assumed direction where $a$ may come out negative; with per-body positive directions fitted along the string, $a$ is the same for both bodies — correct.
-- Earlier round (unchanged): assumed-direction rule, negative solution = opposite acceleration, friction caveat (recheck the assumed direction) — correct; summary says the same.
-- Atwood formula, $m_1 g < T < m_2 g$, worked example and inquiry untouched and consistent.
+- Delta (wording, figure-words-added): lesson.md:218 now says "the tension in the string is an internal force between the bodies" — correct: a string is not a force; the two tensions are the internal pair of the system cart + hanging mass, so $T$ cancels when the equations are added. Agrees with the glossary (jännitysvoima) and the per-body equations above it.
+- figures.json: new description of the $(t, v)$ graph translates the Finnish key with the same five points (0; 0), (0.5; 1.0), (1.0; 2.0), (1.5; 2.9), (2.0; 3.9) and grid spacings; "speed" for a cart released from rest in one direction is acceptable; the description does not draw a line or state the slope.
+- Nothing else changed; Atwood formula, worked example and inquiry as passed.

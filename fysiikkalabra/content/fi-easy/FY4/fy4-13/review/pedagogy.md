@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 494c46b1e7d36455
+CONTENT-HASH: e427a25a8d698b92
 
 ## Blocking
+None.
 
 ## Polish
-- 'kunhan kappaleiden suunnat sopivat yhteen langan kanssa' on abstrakti; esimerkki (toinen nousee, toinen laskee) selkeyttäisi.
+None.
 
 ## Checked
-- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-13 fi-easy (short sentences, plain wording; reading level fits).
-- Oletetun positiivisen suunnan sääntö, negatiivinen ratkaisu ja kitkavaroitus ovat ymmärrettäviä ja yhdenmukaisia tiivistelmän kanssa; tukee itsenäistä voimakuvioiden käyttöä.
-- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
-- Hash at start and end 494c46b1e7d36455.
+- Delta: "langan jännitysvoima on kappaleiden välinen sisäinen voima" replaces "lanka on … voima"; the term is now right (a thread is not a force) and matches the symbol T.
+- figures.json: the new description of the (t, v) points is split into short sentences and gives the five points and the grid without a slope or an answer.
+- Hash the same at start and end.

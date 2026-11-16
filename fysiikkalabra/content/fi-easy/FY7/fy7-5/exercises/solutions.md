@@ -1,12 +1,12 @@
 ## fy7-5-L1-01
 **Annettu:** neliön sivu $a = 0{,}12\,\text{m}$, magneettivuon tiheys $B = 0{,}35\,\text{T}$, kenttä kohtisuorassa silmukan tasoa vastaan
-**Kysytty:** silmukan läpi kulkeva magneettivuo $\Phi$ millivebereinä
+**Kysytty:** silmukan läpi kulkeva magneettivuo $\Phi$ milliwebereinä
 **Periaate:** Kenttä on homogeeninen ja kohtisuorassa silmukan tasoa vastaan. Silloin magneettivuo on kentän ja pinta-alan tulo. Silmukka on neliö, joten sen pinta-ala on sivun neliö.
 **Kaava:** $\Phi = BA$ ja $A = a^2$, joten $\Phi = B a^2$
-**Muunnokset:** Lähtöarvot ovat SI-yksiköissä. Vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
+**Muunnokset:** Lähtöarvot ovat SI-yksiköissä. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Phi = 0{,}35\,\text{T} \cdot (0{,}12\,\text{m})^2 = 0{,}35\,\text{T} \cdot 0{,}0144\,\text{m}^2 = 0{,}00504\,\text{Wb} = 5{,}04\,\text{mWb}$
 **Vastaus:** $5{,}0\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
-**Järkevyys:** Silmukan pinta-ala on vähän alle $0{,}015\,\text{m}^2$. Se on noin A6-arkin (postikortin) kokoinen. Kenttä on kymmenesosien teslojen luokkaa, joten vuo on tuhannesosien vebereiden luokkaa. Jos sivu olisi kaksinkertainen, vuo olisi nelinkertainen.
+**Järkevyys:** Silmukan pinta-ala on vähän alle $0{,}015\,\text{m}^2$. Se on noin A6-arkin (postikortin) kokoinen. Kenttä on kymmenesosien teslojen luokkaa, joten vuo on tuhannesosien webereiden luokkaa. Jos sivu olisi kaksinkertainen, vuo olisi nelinkertainen.
 
 ## fy7-5-L1-02
 **Annettu:** kierrosten lukumäärä $N = 400$, yhden kierroksen vuon muutos $\Delta\Phi = 1{,}5\,\text{mWb}$, aika $\Delta t = 0{,}20\,\text{s}$
@@ -30,10 +30,10 @@
 
 ## fy7-5-L1-04
 **Annettu:** kierrosten lukumäärä $N = 150$, keskimääräinen induktiojännite $|e| = 0{,}45\,\text{V}$, aika $\Delta t = 0{,}12\,\text{s}$
-**Kysytty:** yhden kierroksen läpi kulkevan magneettivuon muutos $\Delta\Phi$ millivebereinä
+**Kysytty:** yhden kierroksen läpi kulkevan magneettivuon muutos $\Delta\Phi$ milliwebereinä
 **Periaate:** Jännite syntyy, koska vuo pienenee, kun magneetti vedetään pois. Induktiolain mukaan keskimääräinen jännite on vuon muutos jaettuna ajalla ja kerrottuna kierrosten lukumäärällä. Jännite, aika ja kierrokset tunnetaan, joten vuon muutoksen voi ratkaista.
 **Kaava:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, josta $\Delta\Phi = \dfrac{|e|\,\Delta t}{N}$
-**Muunnokset:** Lähtöarvot ovat SI-yksiköissä, ja $\text{V}\cdot\text{s} = \text{Wb}$. Vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
+**Muunnokset:** Lähtöarvot ovat SI-yksiköissä, ja $\text{V}\cdot\text{s} = \text{Wb}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Delta\Phi = \dfrac{0{,}45\,\text{V} \cdot 0{,}12\,\text{s}}{150} = \dfrac{0{,}054\,\text{V}\cdot\text{s}}{150} = 3{,}6 \cdot 10^{-4}\,\text{Wb} = 0{,}36\,\text{mWb}$
 **Vastaus:** $0{,}36\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä ja ajassa on kaksi.
 **Järkevyys:** Tarkistus: $150 \cdot 3{,}6 \cdot 10^{-4}\,\text{Wb} : 0{,}12\,\text{s} = 0{,}45\,\text{V}$. Oletetaan, että käämin pinta-ala on noin $10\,\text{cm}^2$. Silloin vuo vastaa noin $0{,}4\,\text{T}$:n kenttää käämin sisällä. Se sopii voimakkaalle kestomagneetille.
@@ -87,7 +87,12 @@
 **Muunnokset:** $l = 5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$
 **Sijoitus:** $|e| = 20 \cdot 0{,}30\,\text{T} \cdot 0{,}050\,\text{m} \cdot 0{,}25\,\text{m/s} = 0{,}075\,\text{V} = 75\,\text{mV}$
 **Vastaus:** $75\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
-**Järkevyys:** Tarkistus koko sisääntulolla: vuo kasvaa nollasta arvoon $BA = 0{,}30\,\text{T} \cdot (0{,}050\,\text{m})^2 = 7{,}5 \cdot 10^{-4}\,\text{Wb}$. Siihen kuluu aika $0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}$. Siis $|e| = 20 \cdot 7{,}5 \cdot 10^{-4}\,\text{Wb} : 0{,}20\,\text{s} = 0{,}075\,\text{V}$.
+**Järkevyys:** Tarkistus koko sisääntulolla: vuo kasvaa nollasta arvoon $BA = 0{,}30\,\text{T} \cdot (0{,}050\,\text{m})^2 = 7{,}5 \cdot 10^{-4}\,\text{Wb}$. Siihen kuluu aika $$
+\begin{aligned}
+&0{,}050\,\text{m} : 0{,}25\,\text{m/s} \\
+&= 0{,}20\,\text{s}
+\end{aligned}
+$$. Siis $|e| = 20 \cdot 7{,}5 \cdot 10^{-4}\,\text{Wb} : 0{,}20\,\text{s} = 0{,}075\,\text{V}$.
 
 ## fy7-5-L3-01
 **Annettu:** junan vauhti $v = 200\,\text{km/h}$, akselin pituus kiskosta kiskoon $l = 1524\,\text{mm}$, Maan magneettikentän pystykomponentti $B_\text{v} = 50\,\mu\text{T}$
@@ -95,7 +100,14 @@
 **Periaate:** Akseli on metallitanko, joka liikkuu vaakasuoraan kohtisuoraan itseään vastaan. Elektroneihin kohdistuva magneettinen voima on kohtisuorassa nopeutta ja kenttää vastaan. Akselin suuntainen voima syntyy vain kentän pystykomponentista. Vaakakomponentti joko on nopeuden suuntainen tai antaa pystysuoran voiman. Siksi jännitteen antaa $e = vB_\text{v}l$.
 **Kaava:** $e = vB_\text{v}l$
 **Muunnokset:** $v = 200\,\text{km/h} = 200 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 55{,}56\,\text{m/s}$, $l = 1524\,\text{mm} = 1524 \cdot 0{,}001\,\text{m} = 1{,}524\,\text{m}$ ja $B_\text{v} = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T}$
-**Sijoitus:** $e = 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,\text{m} = 4{,}233 \cdot 10^{-3}\,\text{V} = 4{,}2\,\text{mV}$
+**Sijoitus:** $$
+\begin{aligned}
+e &= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \\
+&\cdot 1{,}524\,\text{m} \\
+&= 4{,}233 \cdot 10^{-3}\,\text{V} \\
+&= 4{,}2\,\text{mV}
+\end{aligned}
+$$
 **Vastaus:** $4{,}2\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska kentässä $50\,\mu\text{T}$ on kaksi.
 **Järkevyys:** Maan kenttä on noin kymmenentuhannesosa laboratoriomagneetin kentästä. Siksi jännite jää millivolttien luokkaan, vaikka vauhti on suuri. Pyöräilijän vauhdilla $20\,\text{km/h}$ jännite olisi kymmenesosa tästä, noin $0{,}4\,\text{mV}$.
 
@@ -111,10 +123,10 @@
 
 ## fy7-5-L3-03
 **Annettu:** kierrosten lukumäärä $N = 300$, kolmion muotoinen jännitepulssi, huippuarvo $e_0 = 0{,}90\,\text{V}$, kesto $\Delta t = 40\,\text{ms}$. Aluksi magneetti on kaukana, joten vuo on nolla.
-**Kysytty:** yhden kierroksen läpi kulkeva magneettivuo $\Phi$ keskimäärin millivebereinä, kun magneetti on käämin keskellä
+**Kysytty:** yhden kierroksen läpi kulkeva magneettivuo $\Phi$ keskimäärin milliwebereinä, kun magneetti on käämin keskellä
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin jännitteen ja keston tulo on $N$ kertaa vuon muutos. Kun pulssin aikavälit lasketaan yhteen, jännitteen kuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala on $N\Delta\Phi$. Pulssin lopussa jännite on nolla, koska vuo on suurimmillaan eikä enää kasva. Silloin magneetti on käämin keskellä. Vuo kasvaa nollasta tähän arvoon, joten $\Delta\Phi = \Phi$.
 **Kaava:** kolmion pinta-ala on $N\Phi = \tfrac{1}{2} e_0 \Delta t$, josta $\Phi = \dfrac{e_0 \Delta t}{2 \cdot N}$
-**Muunnokset:** $\Delta t = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$. Vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
+**Muunnokset:** $\Delta t = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Phi = \dfrac{0{,}90\,\text{V} \cdot 0{,}040\,\text{s}}{2 \cdot 300} = \dfrac{0{,}036\,\text{V}\cdot\text{s}}{600} = 6{,}0 \cdot 10^{-5}\,\text{Wb} = 0{,}060\,\text{mWb}$
 **Vastaus:** $0{,}060\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska huippuarvossa $0{,}90\,\text{V}$ ja kestossa $40\,\text{ms}$ on kaksi.
 **Järkevyys:** Oletetaan, että käämin poikkipinta-ala on noin $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$. Silloin keskimääräinen kenttä kierroksen läpi on $6{,}0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 = 0{,}3\,\text{T}$. Se sopii pienelle voimakkaalle magneetille. Kun magneetti lähtee käämistä, syntyy vastakkaismerkkinen pulssi, jonka pinta-ala on yhtä suuri.
@@ -136,7 +148,7 @@
 
 ## fy7-5-L1-08
 **Annettu:** tangon pituus $l = 0{,}50\,\text{m}$, vauhti $v = 0{,}60\,\text{m/s}$, induktiojännite $e = 18\,\text{mV}$; tanko, nopeus ja kenttä ovat keskenään kohtisuorassa
-**Kysytty:** magneettivuon tiheys $B$ teslaina
+**Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Liikkuvan tangon elektroneihin vaikuttaa magneettinen voima. Tangon päiden välille syntyy jännite $e = vBl$. Jännite on suoraan verrannollinen magneettivuon tiheyteen. Siksi $B$ voidaan ratkaista mitatusta jännitteestä.
 **Kaava:** $e = vBl$, josta $B = \dfrac{e}{vl}$
 **Muunnokset:** $e = 18\,\text{mV} = 18 \cdot 0{,}001\,\text{V} = 0{,}018\,\text{V}$
@@ -157,7 +169,7 @@
 
 ## fy7-5-L2-06
 **Annettu:** tangon pituus kentässä $l = 0{,}20\,\text{m}$; taulukosta jännite $e$ vauhdin $v$ funktiona (esimerkkiaineisto); tanko ja nopeus ovat kohtisuorassa kenttää vastaan
-**Kysytty:** magneettivuon tiheys $B$ teslaina
+**Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Liikkuvan tangon jännite on $e = vBl$. Kun $B$ ja $l$ pysyvät samoina, $e$ on suoraan verrannollinen vauhtiin $v$. Silloin $(v, e)$-pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on $Bl$. Pisteet poikkeavat suorasta vähän mittausvirheiden takia.
 **Kuvaajan lukeminen:** Sovitettu suora kulkee origosta pisteiden lomitse. Se kulkee esimerkiksi pisteen $(0{,}60\,\text{m/s};\ 18\,\text{mV})$ ja origon kautta. Suoran kulmakerroin on $k = \Delta e : \Delta v = 18\,\text{mV} : 0{,}60\,\text{m/s} = 30\,\tfrac{\text{mV}}{\text{m/s}}$. Kaikkien pisteiden osamäärät $e : v$ ovat välillä $29$–$31\,\tfrac{\text{mV}}{\text{m/s}}$. Suora kuvaa siis aineistoa hyvin.
 **Kaava:** $k = Bl$, josta $B = \dfrac{k}{l}$
@@ -184,11 +196,11 @@
 
 ## fy7-5-L3-05
 **Annettu:** kierrosten lukumäärä $N = 250$; taulukosta $e(t)$ ajanhetkillä $0$–$48\,\text{ms}$ välein $4\,\text{ms}$ (esimerkkiaineisto); ennen pudotusta ja sen jälkeen vuo on nolla; jännite on nolla noin hetkellä $24\,\text{ms}$, kun magneetti on käämin keskellä
-**Kysytty:** a) yhden kierroksen läpi kulkeva suurin magneettivuo $\Phi$ millivebereinä; b) sama toisesta pulssista ja pulssien erojen selitys
+**Kysytty:** a) yhden kierroksen läpi kulkeva suurin magneettivuo $\Phi$ milliwebereinä; b) sama toisesta pulssista ja pulssien erojen selitys
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin tulo $e\,\Delta t$ on $-N\Delta\Phi$. Kun nämä tulot lasketaan yhteen koko pulssin yli, summa on jännitekuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala. Se on $N$ kertaa vuon kokonaismuutos. Ensimmäisen pulssin aikana vuo kasvaa nollasta suurimpaan arvoon. Pulssin lopussa jännite on nolla, koska vuo ei enää muutu.
 **Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä. Jokaisen $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summasta saadaan pinta-alan itseisarvo $|A_\text{a}| = 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 + 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} = 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} = 0{,}01946\,\text{V}\cdot\text{s}$.
 **Kaava:** $|A_\text{a}| = N\Phi$, josta $\Phi = \dfrac{|A_\text{a}|}{N}$
-**Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$. Vastaus muunnetaan millivebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$. Lisäksi $\text{V}\cdot\text{s} = \text{Wb}$.
+**Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$. Lisäksi $\text{V}\cdot\text{s} = \text{Wb}$.
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$. Siis $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
 **Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa, ja toisessa se pienenee takaisin nollaan. Siksi jännitteiden etumerkit ovat vastakkaiset. Vuon kokonaismuutos on kummassakin pulssissa yhtä suuri, joten pinta-alat ovat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan. Siksi sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa. Pulssi on kapeampi ja korkeampi.
 **Järkevyys:** Pulssien pinta-alat eroavat toisistaan noin $1\,\%$, joten mittausaineisto on sisäisesti johdonmukainen. Kolmion likiarvo $\tfrac{1}{2} \cdot 1{,}8\,\text{V} \cdot 0{,}020\,\text{s} = 0{,}018\,\text{V}\cdot\text{s}$ antaa saman suuruusluokan.
@@ -239,4 +251,9 @@ Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vai
 **Muunnokset:** $|\Delta\Phi| = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$
 **Sijoitus:** $|e_\text{ka}| = 200 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} = 200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$
 **Vastaus:** $4{,}0\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetuissa vuoissa $5{,}0\,\text{mWb}$ ja $-3{,}0\,\text{mWb}$ on kaksi.
-**Järkevyys:** Jos käyttäisi vain loppuarvoa $3{,}0\,\text{mWb}$, tulos olisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$. Se on liian pieni, koska vuo kulkee nollan kautta ja muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$ antaa saman tuloksen: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.
+**Järkevyys:** Jos käyttäisi vain loppuarvoa $3{,}0\,\text{mWb}$, tulos olisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$. Se on liian pieni, koska vuo kulkee nollan kautta ja muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $$
+\begin{aligned}
+&-8{,}0\,\text{mWb} : 0{,}40\,\text{s} \\
+&= -20\,\tfrac{\text{mWb}}{\text{s}}
+\end{aligned}
+$$ antaa saman tuloksen: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.

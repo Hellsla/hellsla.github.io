@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 94988e3ebeb7dad6
+CONTENT-HASH: bd38d23a9510cd0c
 
 ## Blocking
 None.
 
 ## Polish
-1. lesson.md: 'antotyö W_a' and 'ottotyö W_o' are named but not explained in one phrase (output/input work); a half-sentence defining them for a first-time reader would help, especially in fi-easy.
+None new.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+- Delta: worked example, Järkevyys: (120 : 82)² ≈ 2,14 and 2,14 · 1,02 MW ≈ 2,2 MW; the chain now follows from the 1017 kW it cites, so the student can redo it.
+- Figures approved by the teacher: not judged.
+- Hash the same at start and end.

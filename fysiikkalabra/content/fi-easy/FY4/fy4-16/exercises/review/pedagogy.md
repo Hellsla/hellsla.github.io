@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 92fbde3992f971c6
+CONTENT-HASH: 810265934d1de6e2
 
 ## Blocking
 None.
@@ -8,8 +8,5 @@ None.
 None.
 
 ## Checked
-- Diff is a term change liikekitka -> liukukitka in texts and solutions, matching the lesson's glossary term; numbers, answers and steps unchanged.
-- grep finds no leftover "liikekitka" in exercises.json or solutions.md.
-- Voimakuvio descriptions in solutions use the same term; the force diagram still comes before the equation.
-- figures.json changes are caption wording only; the figure descriptions give no answers.
-- "Taulukko on esimerkkiaineisto" in the task texts still marks invented data, as the lesson intends.
+- Järkevyys row: 20,5 m/s2 is correct and consistent with the next sentence; easy-Finnish sentence structure unchanged.
+- Delta review of the changed lines only; the rest rests on the previous report.

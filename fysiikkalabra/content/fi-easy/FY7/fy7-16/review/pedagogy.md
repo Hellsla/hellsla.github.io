@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d2e65e166ed2dcc5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 894ad00a6f2c93d6
 
 ## Blocking
 - none
@@ -9,6 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Diff: receiver-coil sentence describes the instantaneous voltage in words instead of the average formula; 47 % framed as one 2020 device comparison that depends on devices and alignment (text and summary); hob heading 'kattilan pohja toisiopuolena', many eddy-current paths instead of one shorted turn; household hobs designed for ferromagnetic bases, physics does not require it.
-- The source framing models how to read a single measurement; the ferromagnetic sentence is followed by the existing explanation why steel heats better, so no contradiction.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash d2e65e166ed2dcc5 at start and end.
+batch delta review: virhekäsitysteksti ja kahden vaihtoehdon palaute ('pohja lämpenee itse', lasi lämpenee kuumasta kattilasta siirtyvästä lämmöstä); selkeämpi kuin ennen, korjaa väärinkäsityksen eikä toista vastausta pelkästään; sopii ydinajatukseen. Hash sama alussa ja lopussa.

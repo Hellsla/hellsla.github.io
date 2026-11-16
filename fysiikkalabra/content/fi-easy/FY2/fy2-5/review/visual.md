@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 34fe4a4dc1063d55
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-3 diff (git diff HEAD~1, commit a84956a90) only
-Round: 3
+CONTENT-HASH: 15b09a49ae14d59c
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- inquiry.json ennuste-2 prompt: "Voiko lukuja verrata keskenään niin kuin ne olisivat samaa suuretta?" is plain Selkeä suomi and neutral; the LaTeX is unchanged.
-- Earlier rounds are not re-reviewed. No captures opened (diff judged from source).
+batch delta review: reflow contact sheets at 390 px (rows legible, signs aligned, nothing clipped, sentences read naturally) and the changed-figure captures; no regressions seen.

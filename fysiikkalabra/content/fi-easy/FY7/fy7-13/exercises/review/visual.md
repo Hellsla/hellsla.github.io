@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fcf85ef109574b6d
-SCOPE: delta added-exercise from e43942314a516939 base 8f23aa7ae3bd
+CONTENT-HASH: eb2ecaef729f003c
 
 ## Blocking
 - none
@@ -9,9 +8,9 @@ SCOPE: delta added-exercise from e43942314a516939 base 8f23aa7ae3bd
 - none
 
 ## Checked
-- Added exercises L1-09, L2-09, L2-10 (fi-easy, FY7 fy7-13): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-13.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Delta: Järkevyys of the violet-light check (x = 1,00 m · tan(sin⁻¹ …) = 10,1 cm.) rendered at 390 and 1280 px: aligned rows, the nested fraction inside tan readable, nothing clipped.
+- Reworded unsure-ness text (epävarmuus) and the 2-sig-fig answer read fluently.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

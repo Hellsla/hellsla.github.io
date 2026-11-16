@@ -117,12 +117,23 @@
 **Conversions:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ and $1\,\text{h} = 3600\,\text{s}$. Since $1\,\text{MJ/s} = 1\,\text{MW}$, the unit of power comes out directly in megawatts.
 **Substitution:** $E_\text{in} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{useful} = 0.35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ and $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$
 **Answer:** $35\,\text{MW}$, two significant figures like the data $10\,\tfrac{\text{MJ}}{\text{kg}}$ and $35\,\%$.
-**Reasonableness:** If all the energy of the peat became electricity, the power would be $360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}$. With an efficiency of $35\,\%$ we get $35\,\%$ of that, $35\,\text{MW}$, which is a typical power for a small power plant.
+**Reasonableness:** If all the energy of the peat became electricity, the power would be $$
+\begin{aligned}
+&360\,000\,\text{MJ} : 3600\,\text{s} \\
+&= 100\,\text{MW}
+\end{aligned}
+$$. With an efficiency of $35\,\%$ we get $35\,\%$ of that, $35\,\text{MW}$, which is a typical power for a small power plant.
 
 ## fy2-5-L1-06
 **Find:** what the heat of combustion of petrol $H = 43\,\tfrac{\text{MJ}}{\text{kg}}$ tells
 **Principle:** The heat of combustion is the energy released per unit of mass when a fuel burns, so its unit $\text{MJ/kg}$ is energy divided by mass. It is not a temperature, and energy is not created from nothing: chemical energy is transformed into heat and light.
-**Model answer:** When one kilogram of petrol burns, an energy of $43\,\text{MJ}$ is released. Two kilograms release twice as much, $E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 86\,\text{MJ}$. The heat of combustion does not tell the temperature of the flame, and it does not mean that energy would be created anew.
+**Model answer:** When one kilogram of petrol burns, an energy of $43\,\text{MJ}$ is released. Two kilograms release twice as much, $$
+\begin{aligned}
+E &= Hm \\
+&= 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} \\
+&= 86\,\text{MJ}
+\end{aligned}
+$$. The heat of combustion does not tell the temperature of the flame, and it does not mean that energy would be created anew.
 
 ## fy2-5-L1-07
 **Given:** the energy to be released is $E = 255\,\text{MJ}$ and the heat of combustion of the pellets is $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$
@@ -157,7 +168,13 @@
 ## fy2-5-L2-06
 **Find:** where the student’s calculation goes wrong and what the correct result is
 **Principle:** The heat of combustion is energy per kilogram, so in the formula $E = Hm$ the mass must be substituted in kilograms. A tonne is not a kilogram: $1\,\text{t} = 1000\,\text{kg}$.
-**Model answer:** The student substituted the mass in tonnes, although the heat of combustion is in the unit $\text{MJ/kg}$. Correctly, $3.0\,\text{t} = 3.0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ and $E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,\text{MJ}$. The student’s result $78\,\text{MJ}$ is a thousand times too small. The formula, the heat of combustion of coal and the unit $\text{MJ}$ of the answer were correct. The thousandfold error also shows in an estimate: one kilogram of coal already gives $26\,\text{MJ}$, so three tonnes give much more than $78\,\text{MJ}$.
+**Model answer:** The student substituted the mass in tonnes, although the heat of combustion is in the unit $\text{MJ/kg}$. Correctly, $3.0\,\text{t} = 3.0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ and $$
+\begin{aligned}
+E &= Hm \\
+&= 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} \\
+&= 78\,000\,\text{MJ}
+\end{aligned}
+$$. The student’s result $78\,\text{MJ}$ is a thousand times too small. The formula, the heat of combustion of coal and the unit $\text{MJ}$ of the answer were correct. The thousandfold error also shows in an estimate: one kilogram of coal already gives $26\,\text{MJ}$, so three tonnes give much more than $78\,\text{MJ}$.
 
 ## fy2-5-L2-07
 **Given:** a table $(t, m)$, heat of combustion of the pellets $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$; the burner burns steadily

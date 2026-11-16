@@ -71,7 +71,12 @@
 **Muunnokset:** Ei tarvita. Voima on newtoneina, ja kulmat annetaan asteina suoraan sinifunktiolle.
 **Sijoitus:** $F_2 = 0{,}050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0{,}050\,\text{N} \cdot \dfrac{0{,}6428}{0{,}3420} = 0{,}09397\,\text{N}$
 **Vastaus:** $0{,}094\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska voimassa $0{,}050\,\text{N}$ on kaksi.
-**Järkevyys:** Voima kasvaa, kun kulma lähestyy $90^\circ$:ta. Se kasvaa kuitenkin vähemmän kuin kaksinkertaiseksi: $0{,}094\,\text{N} < 2 \cdot 0{,}050\,\text{N} = 0{,}100\,\text{N}$. Suurin mahdollinen voima olisi $0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}$, ja $0{,}094\,\text{N}$ jää sen alle.
+**Järkevyys:** Voima kasvaa, kun kulma lähestyy $90^\circ$:ta. Se kasvaa kuitenkin vähemmän kuin kaksinkertaiseksi: $0{,}094\,\text{N} < 2 \cdot 0{,}050\,\text{N} = 0{,}100\,\text{N}$. Suurin mahdollinen voima olisi $$
+\begin{aligned}
+&0{,}050\,\text{N} : 0{,}3420 \\
+&= 0{,}146\,\text{N}
+\end{aligned}
+$$, ja $0{,}094\,\text{N}$ jää sen alle.
 
 ## fy7-4-L2-01
 **Annettu:** johtimien virrat $I_1 = I_2 = 10\,\text{A}$ samaan suuntaan, etäisyys $r = 5{,}0\,\text{mm}$, rinnakkaisen osan pituus $l = 0{,}80\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$

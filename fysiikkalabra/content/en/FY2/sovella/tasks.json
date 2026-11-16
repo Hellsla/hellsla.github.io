@@ -27,7 +27,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_1 = 0.32 \\cdot 5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 14.0\\,\\text{GWh}$ and $N \\approx 27.1$."
+              "detail": "$$\n\\begin{aligned}\nE_1 &= 0.32 \\cdot 5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\\\\n&\\approx 14.0\\,\\text{GWh}\n\\end{aligned}\n$$ and $N \\approx 27.1$."
             },
             {
               "text": "Rounds up to $28$ turbines and justifies it: $27$ turbines would produce too little.",
