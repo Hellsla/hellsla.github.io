@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: cef163f17e81a48e
-SCOPE: delta, solutions.md only, L2-11 (export values now three separate "±N MW" items instead of the arrow chain)
+
 
 ## Blocking
 - none

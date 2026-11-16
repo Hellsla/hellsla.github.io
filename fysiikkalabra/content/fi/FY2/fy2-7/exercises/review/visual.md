@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: d678f4eb5ef3254a
-SCOPE: delta, solutions.md only, L2-10 ("erotus/difference 262 MW − 210 MW" now a separate phrase, answer 52 MW in plain words)
+
 
 ## Blocking
 - none

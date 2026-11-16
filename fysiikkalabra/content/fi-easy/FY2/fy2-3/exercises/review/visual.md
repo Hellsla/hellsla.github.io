@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: e603919a2eee171f
-SCOPE: delta, solutions.md only, L2-09 Järkevyys (price magnitude $-5{,}0\,\text{snt/kWh}$ vs $+15\,\text{snt/kWh}$ now as in the Finnish)
+SCOPE: delta added-exercise from fa419009145ea186 base 07af77a4596f
 
 ## Blocking
 (none)

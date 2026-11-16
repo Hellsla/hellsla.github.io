@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 08eba19797a49a39
-SCOPE: delta, solutions.md only, L2-11 c) (unit-bearing values, MW changes as LaTeX)
+
 
 ## Blocking
 (none)

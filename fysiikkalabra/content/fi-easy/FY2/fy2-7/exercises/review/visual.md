@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: a1cac1a76ad996ac
-SCOPE: delta, solutions.md only, L2-10 Periaate, a) and c) (P = ΔE : Δt, E = PΔt, MW values as LaTeX)
+
 
 ## Blocking
 (none)

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 09e49c1d1adb4b79
-SCOPE: delta, solutions.md only, L2-11 (export values now three separate "±N MW" items instead of the arrow chain)
+SCOPE: delta answers,comments,levels,numbers,structure,typography,wording from c58324be388ede19 base 432a19368f4c
 
 ## Blocking
 - none
