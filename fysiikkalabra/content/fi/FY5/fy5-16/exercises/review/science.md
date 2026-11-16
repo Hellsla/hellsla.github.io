@@ -1,16 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: dacf6bcb0f4a71eb
-SCOPE: delta added-exercise from 9b2ee0bf44613b3e base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 21a7e8ebe0232319
 
 ## Blocking
+- content/fi/FY5/fy5-16/exercises/solutions.md:295 (L2-10, Vastaus c) — B (a condition missing) and an internal contradiction: "Taso 94 dB on 7 dB raja-arvon 87 dB(A) yläpuolella, joten kuulonsuojainten on vaimennettava vähintään sen verran". The limit value and the action values are 8-hour daily exposure levels. This holds only if 94 dB lasts the whole 8-hour day, and the same answer then shows that 1,0 h at 94 dB gives the same dose as 8 h at 85 dB, which is below 87 dB(A). — Add the condition ("jos altistus kestää koko kahdeksan tunnin työpäivän"). Also say that for a shorter exposure the 8-hour equivalent level is what is compared. The task's question in c) can get the same words.
+- content/fi/FY5/fy5-16/exercises/solutions.md:296 (L2-10, Järkevyys) — A (a claim about the source with no basis): "iskumelua, jossa aineiston mukaan yksikin riittävän voimakas huippu voi olla vaarallinen". The fetched page only names impulsive noise and the peak values 135/137/140 dB(C). It does not say this. — Write "Malli ei kata iskumelua, jolle aineistossa on omat huippuarvonsa (dB(C))", or delete "aineiston mukaan".
 
 ## Polish
+- solutions.md:295 (c) — "alueet merkittävä" at 85 dB: the page mentions warning signs but does not tie them to the upper action value in the notes. Check this or say it without "aineiston mukaan".
+- solutions.md:295 (d) — "tiedottamisen" as the obligation at 80 dB(A) is not in the source notes (only "alempi toiminta-arvo"). Write "työnantajan ensimmäiset velvoitteet".
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09 (kierros 3).
-- L2-09 käyttää nyt korvatulppia. Kuvasta luetaan 105 dB, ja korvassa taso on 105 − 12 = 93 dB. Siitä n = 8/3 ja t_v = 480 min / 2^(8/3) = 75,6 min. Tulos on sama kuin answers.py:ssä. Vastaus 76 min eroaa siitä 0,5 %, joten se on toleranssin 2 % sisällä.
-- Toistoa ei ole: L2-07 (109 dB ilman suojaimia) on eri tehtävä. L3-05 yhdistää etäisyyden ja tulpat, mutta siinä ei lueta kuvaa. Kuvaa scale-tehtava ei käytetä inquiry.json:ssa.
-- L1-09: 8 h / 2^(5/3) = 2,52 h → 2,5 h, ero 0,8 %.
-- Malli on luvun mukainen: t_v = t₀/2ⁿ, ja tulpat vähentävät korvan tasoa vaimennuksensa verran. Vertailuaikaa ei kutsuta sallituksi tai turvalliseksi ajaksi, kuten ohjeistus vaatii.
-- Järkevyystarkistus on oikein: 8 dB on 6 dB:n (120 min) ja 9 dB:n (60 min) välissä. Ilman tulppia aika olisi 4,7 min, ja 12 dB vastaa 2⁴ = 16-kertaista aikaa.
-- Kuvan merkit ovat tarkasti kohdissa 90 dB ja 105 dB, ja arvot on kirjoitettu kuvaan. Alt-teksti antaa samat arvot.
+- The hash was the same at the start and at the end. I judged only the added exercise L2-10.
+- Recomputed: 10^0,3 = 1,995 and 10^1 = 10. 10^0,9 = 7,943, so t₂ = 8 h/7,943 = 1,007 h, which is 1,0 h (tolerance 3 %). The 3-dB rule gives 1 h exactly, and the solution explains the difference.
+- The dose model I₁t₁ = I₂t₂ follows from "energia-annos … kahdeksan tunnin laskennalliselle työpäivälle", which the page says. The solution does not claim that the page states the 3-dB rule or a time for 94 dB.
+- The source values (80, 85, 87 dB(A); the limit assessed with protectors; protectors compulsory and a noise-control programme at 85) agree with the fetched notes.
+- In a), the level is proportional to lg I, and 10¹² fits into 0–120 dB. In d), the claim is refuted with numbers. "1 dB ≈ +26 %" is right.
+- The time is called a reference value and not a safe time, as the guardrails and the brief require.

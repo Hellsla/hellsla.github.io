@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 63025e53f5a57e21
-SCOPE: delta added-exercise from 1ae57cce87a7a6fc base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: fcb321d5570d6cec
 
 ## Blocking
-(none)
+- [Major] fy5-6-L2-09 task text (exercises.json) — "*Distance from Sun*", "*Orbital Period*" and "*Moon*" show literal asterisks on the page (the task text is not rendered as Markdown; the solution's Annettu italics are) — raw markup in a student's first paragraph looks like an error — write the names plain in quotation marks or with `<em>…</em>`.
 
 ## Polish
-- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
-- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
+- [Minor] fy5-6-L2-09 Vastaus — one paragraph of about 125 words covers answer, parts c) and d) and caveats; start c) and d) on their own lines.
+- [Minor] fy5-6-L2-09 Kuvaajan lukeminen table at 360 px — each planet is a stacked card with the unit header "((10^8 km)^3)" touching the value ("…)0,194"); add a thin space or separate the unit from the value.
+- [Minor] fy5-6-L2-09 — the "Syventävä tehtävä." chip renders well; no change.
 
 ## Checked
-- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
-- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
-- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
-- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
+- Own 360 px render with every lock open, card fy5-6-L2-09 in 6 tiles (the packet's captures are 1280 px only): source link short and wrapped inside the card (300/300), a)–d), answer field, Annettu table, Kaava, Muunnokset, Sijoitus rows, Vastaus, Järkevyys.
+- Maths: rows aligned at =, units upright, decimal comma, fractions legible; no clipping. Dated source line "luettu 15. marraskuuta 2026" is clear.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

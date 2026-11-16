@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e89f2ece4618584e
+CONTENT-HASH: 4d4bfb5fc5e7d672
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- content/fi/FY5/fy5-14/exercises/solutions.md:252 (L2-09, Kohta c) — "Erään sivuston mukaan" and "tunnetuimman salaliittoteorian mukaan" add attributions that the verified source notes do not hold: the article reports the claims, but not that they come from one site or that this theory is the best known. Write "Artikkelin mukaan väitetään…" or drop the qualifiers.
+- content/fi/FY5/fy5-14/exercises/exercises.json:174 (L2-02) — the answer is 3.7 but the solution gives 3,70 m with three significant figures, as the data has. Make the answer 3.70 so that both say the same.
 
 ## Checked
-Full review of exercises.json, solutions.md and answers.py. Recomputed every answer from the task text with my own formulas: L1-01 340,6; L1-02 7,556 mm; L1-03 588; L1-04 397,5; L1-08 0,1667 s; L1-10 1400; L2-01 259; L2-02 3,70 m; L2-03 697,8; L2-04 23,07 m/s; L2-05 30,41 m/s; L2-06 262; L2-07 548,4 (student 544,1); L2-08 519 Hz; L3-01 v(f1-f2)/(f1+f2) = 27,82 m/s; L3-02 444; L3-04 vΔf/(2f0+Δf) = 0,4752 m/s; L3-05 254,8 m/s; all agree with answers.py and the solutions. Every Doppler solution chooses the right one of the four MAFY formulas (L1-04 source receding, L2-03 observer approaching, L2-04/L2-05/L3-01/L2-07 source, L3-04 observer then source) and says why; v_L, v_H, f_H, T_H used consistently (v_v/v_b is the blood's speed, defined). Choice and true/false items have exactly one correct key and right feedback; the closed-pipe reasoning (L3-03) and the centre-pluck missing even harmonics with 1/n² amplitudes (L3-05) are correct; rounding reasons are sound; figures give the values the tasks need without the answer.
+- The hash was the same at the start and at the end.
+- I recomputed all 18 numeric answers in one script (2d/t, λ = v/f, f_n = n f₁, f_H = |f₁ − f₂|, the Doppler formulas for a moving source and a moving listener, the double shift v_v = vΔf/(2f₀ + Δf), v = 2Lf₁). All of them are within 0,7 % of my values and inside their tolerances.
+- L2-09 a–b: λ = 0,79398 m and 0,77955 m. The difference is 1,44 cm, 8 Hz is 1,82 % and the wavelength is 1,85 % longer. 8 Hz : 25 Hz ≈ 1/3 semitone (an exact semitone at 440 Hz is 24,7 Hz). Visible light is about 10¹² times 432 Hz.
+- L2-09 against the source notes: the 2 Hz discrimination, 415 Hz almost a semitone below 440 Hz, the historical range 390–460 Hz, chakras and the colour spectrum, "valon, ajan, aineen ja tietoisuuden jatke", healing and "nature's frequency", 440 Hz as brains/manipulation and the Nazi theory, 103+107+109+113 = 432 and 864 against 86 400 s, and the verdict "no scientific basis" are all in the fetched article. The box answer comes from the task's own numbers, not from the source.
+- L2-09 d: the research design (blinding, randomisation, an outcome fixed beforehand, enough subjects, replication) is sound. "The article is not a study" is stated.
+- L3-04: treating the cell first as a moving listener and then as a moving source gives f = f₀(v + v_v)/(v − v_v), the right double shift.
+- L3-05: plucking at the centre leaves out the even harmonics (a node at the centre), and the odd ones fall as about 1/n² (0,11, 0,04), as for a triangular pluck.

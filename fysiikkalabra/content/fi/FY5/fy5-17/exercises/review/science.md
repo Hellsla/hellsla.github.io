@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: fb0d0423c711ce05
-SCOPE: delta added-exercise from caaeaa93666bca57 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 7b8809a307253ebd
 
 ## Blocking
+- content/fi/FY5/fy5-17/exercises/solutions.md:240 (L2-10, Kohta a) — A (a claim about the source with no basis): "Taulukon uusimmat rivit ovat alustavia, joten arvot voivat vielä tarkentua" presents a property of the Institute's tables as fact, but the fetched page says nothing about preliminary rows. It notes only that F marks a fixed depth. — Delete the sentence, or replace it with what the page says (for example that the location is uncertain by a few hundred metres to 2 km).
 
 ## Polish
-- exercises.json (L2-09 ja L1-01) — lasku on lähes sama: L1-01 antaa kaiun ajaksi 91,0 µs (vastaus 7,01 cm), ja L2-09 lukee kuvasta 90 µs (vastaus 6,93 cm). L2-09:ssä on lisänä kuvaajan lukeminen, joten tehtävä ei ole toisto. Kerroksen paksuus (esim. A–C) olisi kuitenkin erilaisempi kysymys, kunhan se ei ole inquiry-tarkistuksen B–C.
-- solutions.md (L2-09, Vastaus) — pyöristysperuste "kuten nopeudessa 1540 m/s" ei nimeä rajoittavaa tietoa. Rajoittava tieto on kuvasta luettu aika 90 µs: lukema on noin ±1 µs:n tarkka, mikä tekee noin 1 %. — Perustele kolme numeroa lukematarkkuudella.
-- solutions.md (L1-09, Vastaus) — ilmaus "Aika 20 ms on sovittu tarkaksi" ei ole kurssin käytäntö. — Perustele vastaus merkitsevillä numeroilla.
+- content/fi/FY5/fy5-17/exercises/exercises.json:348 (L2-10) — the answer is stored as 11.905, five figures, but the solution gives Δt ≈ 12 s with two figures (from the speeds). Store 11.9 or 12. The tolerance of 3 % already accepts 12.
+- content/fi/FY5/fy5-17/exercises/exercises.json (L2-10 text) — "Sivun lopussa on linkki alasivulle": the source notes confirm that the subpage exists, but not where its link is. Write "Sivulta on linkki alasivulle".
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Kierros 5: arvioin muutetun tehtävän L2-09 ja tehtävän L1-09.
-- L2-09: d = vt/2 = 1540·90·10⁻⁶/2 m = 6,93 cm, kuten answers.py:ssä. Lukemilla 89 µs ja 91 µs saadaan 6,85 cm ja 7,01 cm, joten ±1 µs:n lukema mahtuu toleranssiin 2 %.
-- Kuvassa piikki C on 90 µs:n apuviivalla. Kuvan generaattori, alt-teksti ja ratkaisu ovat yhtäpitäviä. Kuva ei kerro syvyyttä, joten se ei paljasta vastausta.
-- Toisto: inquiry-tarkistus kysyy samasta kuvasta kerrosta B–C (3,08 cm, edellinen raporttini). L2-05 käyttää taulukkoa (58,9 µs ja 109,2 µs). L2-09 kysyy luun pinnan syvyyttä ihosta, eikä sitä kysy mikään muu tehtävä.
-- Periaate (kaiku kulkee edestakaisin, anturi on iholla) ja järkevyystarkistus (13,9 cm/2) ovat oikein. Syvyys on suurempi kuin A:n (1,54 cm) ja B:n (3,85 cm).
-- L1-09: 1402,4·0,020/2 = 14,02 m. Arvo on VERIFIED-riviltä, ja tehtävä on ennallaan.
-- Kaikkien kolmen kieliversion answer, unit ja tolerance ovat samat.
+- The hash was the same at the start and at the end.
+- I recomputed all 23 numeric answers in one script. All of them are inside their tolerances. The largest differences come from two-significant-figure rounding, as the solutions explain: L2-04 is 20 s against 19,6 s (2,0 %, tolerance 3 %), and L2-03 is 3,9 kHz against 3,85 kHz.
+- L2-10 c: Δt = 100/3,5 − 100/6,0 = 11,905 s, which is 12 s with two figures. The check 100 km : 8,4 km/s = 11,9 s and the claim that 2 km equals 0,24 s are right.
+- L2-10 a against the source notes: row no. 149 (10.11.2026 01:34 UTC, 61,754° N 24,361° E, 18,3 km, M 1,0, Orivesi) and the magnitude range 0–4 are as the page gave them. More than 40 stations and an uncertainty from a few hundred metres to 2 km are in d). The example says that another earthquake or a later reading gives other values, so no number depends on the source alone.
+- L2-10 b, d: P is longitudinal and S transverse, S does not travel in liquids (no restoring force against shear), and the third station resolves the two intersections. The limits of the model (depth, varying speeds) are stated.
+- L3-04: d = 84,0; 63,0; 49,6 km, the point is (72,9; ±41,8), and C gives 49,9 km against 132,4 km, so y = 42 km.

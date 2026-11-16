@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 21165e7fa5250d9b
-SCOPE: delta added-exercise from 37891267a0068020 base 81db4a6fd727
+CONTENT-HASH: 2ced2c581f51c659
+SCOPE: delta added-exercise from 21165e7fa5250d9b base b5600a63ddae
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-12 — heading Kuvaajan lukeminen / Reading the graph is used for a grid diagram, while fy5-15 says Reading the figure; use one wording (optional).
+- [Minor] fy5-12-L2-10 solution, Kohta d) and Kaava rows — the d) paragraph is about 100 words in one block; split at "Todellisessa huoneessa" so a phone reads two paragraphs.
+- [Minor] fy5-12-L2-10 Annettu — begins with a lowercase "aineistosta (PhET-simulaatio …)" fragment; fine as a list entry, but a full sentence would match the other solutions.
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12 (L2-09 with the loudspeaker grid figure, solution) and L3 part 9 (L3-06).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Own 360 px render with every lock open (?ratkaisut=1), whole card fy5-12-L2-10 in 5 tiles: source line wraps inside the card (scrollWidth 300/300, page 360), task text, answer field, Annettu, Kohta b), Kaava, Sijoitus (aligned rows, units upright), Vastaus box, Järkevyys.
+- Maths: delta s rows aligned at =, thin spaces, decimal comma, 2 s.f. consistent. Finnish reads fluently.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

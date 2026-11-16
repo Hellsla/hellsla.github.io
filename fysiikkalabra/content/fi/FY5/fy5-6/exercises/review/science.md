@@ -16,4 +16,3 @@ CONTENT-HASH: fcb321d5570d6cec
 - L1-09 distractors: 0,0036 h (square root forgotten), 0,24 h (km under the root) and 460 h (divided by 60) are each reproduced by the stated error.
 - L3-04: the ratios are 2,67/2,71/10,8/2,67·10¹⁸. Planet d's ratio is about four times the others, so its period should be T_d = 15,7 d. Leaving it out is justified and documented, as the guardrails require.
 - In L1-06 the "88 %" is right ((6371/6771)² = 0,885). Weightlessness is described as free fall with no support force, and no centrifugal force is used.
-- Figure fy5-6/radat gives 147,1–152,1 and 88–5250 milj. km, the values L1-10 and L2-08 read. Its alt text has the same values.
