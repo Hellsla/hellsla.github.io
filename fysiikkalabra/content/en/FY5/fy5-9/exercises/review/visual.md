@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4004f4d2e0ec049c
-SCOPE: delta added-exercise from 56d3a67124511b7c base 81db4a6fd727
+CONTENT-HASH: 1189d3193db55601
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-9/kuvaaja-k — the time tick labels (0.2 ... 1.0) sit on the t axis through the middle of the plot, so the curve runs through or touches them (0.6, 0.8) — move the labels below the lowest curve line or give them a paper-coloured halo. The figure is unchanged since it was passed; low priority.
+- [Minor] L3-01..L3-05 eq-chain rows slightly wider than 360 px scroll; known clipped formulas, untouched.
 
 ## Checked
-- Delta: fy5-9-L1-09 (open-exercises-1280-10 area), fy5-9-L1-10 (1280-10, -11) and fy5-9-L2-09 (L2-1280-12, -13): graph fy5-9/kuvaaja-k with English axis labels x (cm), t (s), solutions, Reasonableness blocks, answer chips.
+- own Playwright render of preview/en/fy5-9.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-05, L2-07, L3-04, L3-05 at 360 and 1280 px opened where noted.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

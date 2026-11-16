@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a65be9056dce17b6
-SCOPE: delta added-exercise from 5575f15b7bd4bcfd base 81db4a6fd727
+CONTENT-HASH: 3738e31f67d62cf9
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] L2-10 (16-19) solution paragraphs of 123 and 121 words; split when convenient.
+- [Minor] L2-05/L2-06 data tables 341–368 px in a 298 px box scroll at 360 px (existing, untouched).
 
 ## Checked
-- Delta: fy5-16-L1-09 (open-exercises-1280-7, -8) and fy5-16-L2-09 (L2-1280-11, -12): new figure fy5-16/scale-tehtava in English (L (dB) scale, threshold of pain, rock concert, lawn mower, conversation, whisper, red 'risk of hearing damage' bracket from 85 dB), solutions quote the same labels.
+- own Playwright render of preview/en/fy5-16.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-09, L2-05, L2-06, L2-08..L2-10 (new), L3-04, L3-05 at 360 and 1280 px opened where noted. Opened 16-19 at 360 and 1280: source line first, a)–d), answer in h.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

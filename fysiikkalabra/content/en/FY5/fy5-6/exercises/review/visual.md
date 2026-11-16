@@ -1,19 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 16c8b891104d7a49
-SCOPE: delta added-exercise from 0b8adf1d8e82e8e4 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: c06a00dcc4be71b7
 
 ## Blocking
-(none)
+- [Major] fy5-6-L3-04 solution, Answer — one paragraph of about 247 words (mass, significant figures, justification, comparison, explanation all in one) in the edited text; a text wall at 360 px; the Finnish version was split at 120 words — split into short paragraphs (significant figures / why d is left out / corrected period / explanation of the halved interval), as fi.
 
 ## Polish
-- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
-- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
+- [Minor] fy5-6-L1-06 solution has a 142-word paragraph (untouched text).
+- [Minor] L2-09 phone table (a³, T², T²/a³): header label and value touch (`a³ ((10⁸ km)³)0.194`); add a gap.
+- [Minor] Known clipped formula in L3-04 Reasonableness (`… ≈ 0.80` loses its value at 360 px, docs/clipped-formulas.tsv, untouched line).
 
 ## Checked
-- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
-- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
-- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
-- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
+- own Playwright render of preview/en/fy5-6.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-10, L1-11, L2-01, L2-05..L2-09, L3-02, L3-04 at 360 and 1280 px opened where noted. Opened: 6-20 (L2-09) full card at 360 (cropped) and 1280 (tables, figure-free), 6-3-04 at 360 (rows, Answer wall).
+- New task L2-09: first paragraph is "Source material: link", link works as a link, a)–d) parts clear, units LaTeX.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

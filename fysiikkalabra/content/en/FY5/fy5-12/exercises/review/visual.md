@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: a7e8c805b6c08c2c
-SCOPE: delta added-exercise from 592a69c2bb05368a base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 97e669270a808dfc
 
 ## Blocking
-(none)
+- [Major] fy5-12-L2-10 solution, Part d) — one paragraph of about 136–142 words in new text (listener's position, model assumptions, real room, music, loudspeakers); a text wall on a phone, the Finnish version was split at 120 words — split into two paragraphs (path difference and loudness / why a real room is more complicated).
 
 ## Polish
-- [Minor] fy5-12 — heading Kuvaajan lukeminen / Reading the graph is used for a grid diagram, while fy5-15 says Reading the figure; use one wording (optional).
-- [Minor] fy5-12 — English figure labels (wall, direction of the waves, 1 square = ..., decimal point) match the solutions' wording; the figure descriptions in the figure catalogue are Finnish, so the English alt text should be confirmed (for the page, not a finding).
+- [Minor] L2-10 Substitution rows (Δs_c, Δs_d, Δs_d2) are separate blocks, not one column of equals signs; acceptable.
+- [Minor] L2-07 and L3-02..L3-06 chains scroll slightly at 360 px; known/untouched.
 
 ## Checked
-- Delta of the two or three added exercises (en): 1280 px open-exercises L2 parts 11, 12 (L2-09 with the loudspeaker grid figure, solution) and L3 part 9 (L3-06).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal point consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- own Playwright render of preview/en/fy5-12.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-10 (new) at 360 and 1280 px opened where noted. Opened 12-18 (L2-10) at 360 (cropped top and solution) and 1280.
+- Task opens with "Source material: PhET – Wave Interference" link, parts a)–d), answer box in m. English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

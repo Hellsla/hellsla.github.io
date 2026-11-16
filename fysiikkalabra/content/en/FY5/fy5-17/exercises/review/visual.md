@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 34b802bc7a3c2838
-SCOPE: delta added-exercise from 11d7d1d54e3ae477 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 8f16389ec9a01707
 
 ## Blocking
-(none)
+- [Major] fy5-17-L2-10 solution (new task) — paragraphs of about 150 and 184 words (Part a) alone about 186 with maths), text walls on a phone; the Finnish version was split at 120 words — split each part into short paragraphs.
+- [Major] fy5-17-L2-07 solution (edited) — one paragraph of about 146 words — split at the significant-figures justification.
 
 ## Polish
-- [Minor] fy5-17/a-scan figure — it is invented illustrative data and the y-axis has unlabelled ticks; a small "esimerkkiaineisto / illustrative data" note in the caption or figure would make the status visible to the student (the description already says it).
-- [Minor] fy5-17-L1-09 — the Vihje/Hint tells exactly where in MAFY to look; fine for a lookup task, no change needed.
+- [Minor] L3-02 and L3-03 eq-chain rows scroll slightly at 360 px; known/untouched.
 
 ## Checked
-- Opened at 1280 px: open-exercises part 9 (L1-09 solution), L2 parts 11 and 12 (L2-09 with the a-scan figure, answer box and complete solution).
-- A-scan: axis title t (µs), ticks every 20 µs with gridlines every 5 µs, echoes A, B, C and the transmitted pulse labelled; C peak sits at 90 µs on the grid, so the reading is possible without the figure giving the answer; nothing clipped.
-- Maths: units upright, µs and ms in LaTeX, chains aligned at =, ±4 % in LaTeX; Finnish/English wording of the tasks clear.
+- own Playwright render of preview/en/fy5-17.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-05, L2-06, L2-07, L2-09, L2-10 (new), L3-04, L3-05 at 360 and 1280 px opened where noted.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 3 · accessibility 4
