@@ -504,7 +504,7 @@ FY1 tehty: FY1-A1…A5 (PR #634, oma PR): fy1-7-L2-09, fy1-4-L2-09, fy1-3-L2-09,
 käsitekortteja eikä alleviivauksia.
 Järjestys (opettaja 2026-11-15): kohdan 18 jälkeen ja ennen lopputarkistusta (15), jotta tarkistus kattaa myös kortit.
 
-## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
+## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14) (kevennetty, opettaja 2026-11-16)
 
 Tavoite: FY1–FY8-oppimateriaali kaupallisen kustantajan julkaisuvalmiutta vastaavalle laatutasolle. Tarkistaja toimii
 kokeneena lukion fysiikan kustannustoimittajana, fysiikan didaktiikan asiantuntijana ja ohjelmistojen
@@ -523,7 +523,7 @@ Tarkistetaan jokaisesta oppitunnista:
 8. käyttöliittymän, saavutettavuuden ja tallennustoimintojen toimivuus.
 
 Työskentelytapa:
-- Kaikki FY1–FY8-oppitunnit järjestelmällisesti, kurssi kerrallaan.
+- Kevennetty (opettaja 2026-11-16, 'ota se kevyt 15'): kohdat 1–8 on jo katettu jokaisen luvun kolmella katselmoinnilla, oikoluvulla (18) ja CI:n tarkistuksilla. (1) Automaattiset läpikäynnit kaikista kursseista: concepts.py (käsitteiden, merkintöjen ja selitysten yhdenmukaisuus kurssien välillä), coverage.py --all, physics_phrases, check_a11y; yksi raportti. (2) Otos: täysi kustannustoimituksellinen tarkistus yhdelle luvulle per kurssi (8 lukua), raportti opettajalle ensin. (3) Laajennus vain, jos otos löytää kriittisiä virheitä, ja silloin vain sille kurssille.
 - LOPS 2019 (`docs/lops2019/`) on opetussuunnitelmallinen vertailuperusta.
 - Julkaistuja oppikirjoja ei käytetä eikä mainita vertailuaineistona (opettaja 2026-11-14).
 - Virheitä ei oleteta. Muutosta ei ehdoteta vain siksi, että asian voisi ilmaista toisin.
