@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 35ea97317da552d9
+CONTENT-HASH: d3a93f2474a8d1b8
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 35ea97317da552d9
 - none
 
 ## Checked
-- delta (L3-04 text split into short sentences, Kysytty 'mitä väitteitä'). fi-easy captures regenerated but not opened; read in the diff: clear, units LaTeX. Layout checked on the fi capture L3-1280-5.
+- Delta 8c md-paragraphs (true/false Mallivastaus, Vastaus of the two experiment-design tasks). Opened fy1-8-open-exercises-1280-9, L3-1280-6, L3-1280-8. Breaks clean, formulas and Järkevyys block intact, nothing clipped.
+- Hash run at start; the content was not edited meanwhile.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
