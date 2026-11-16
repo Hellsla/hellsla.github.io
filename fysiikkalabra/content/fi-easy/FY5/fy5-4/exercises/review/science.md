@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fc973652ab241b0a
-SCOPE: delta added-exercise from 053cb480bab0df62 base 8f23aa7ae3bd
+CONTENT-HASH: 77ea855d8210779a
 
 ## Blocking
 
 ## Polish
+- content/fi-easy/FY5/fy5-4/exercises/solutions.md:201, :285 — "Lähtökitka" is used alone in solutions that each open on their own button, so a student who opens only this solution never sees the term defined; the guardrail's "name it so where introduced, then lähtökitka" is met for the set as a whole (L2 solution at :113, L3-06 task text) — optionally write "lähtökitka (lepokitkan suurin arvo)" once in each.
 
 ## Checked
-- Delta round 2, fi-easy: added fy5-4-L2-09 and fy5-4-L3-06 only (new figures kuvaaja-a, kuvaaja-b).
-- Compared by script with the passed Finnish set: answer, unit, tolerance, figure, level identical; every number in task text and solution the same in fi and fi-easy.
-- Recomputed independently: L2-09 r = v²/a_n = 225/3,0 = 75 m; L3-06 μ0 = F/(mg) = 8000/(1200 · 9,81) = 0,6796 -> 0,68. answers.py agrees; 2 % tolerance fits two significant figures.
-- Figures: kuvaaja-a plots v²/75 and passes (15; 3,0); kuvaaja-b plots 1,2v²/60 kN = mv²/r for 1200 kg, r = 60 m, and passes (20; 8,0). The marked points lie on the curves; the radius is not stated, so neither figure gives the answer away; the descriptions give the same values.
-- Physics: uniform circular motion on a level curve, friction the only horizontal force, N = mg stated, limiting case F = μ0 N. Matches the brief's worked example; symbolic first; rounding reason is the 2-figure reading.
-- Reasonableness checks are real checks (second point 10 m/s -> 1,33 m/s²; mg ≈ 12 kN).
-- Hash same at start and end.
+- Diff only: "suurin lepokitka" replaced by "täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo)" or "lähtökitka" in the L3-06 task text and four solutions; no number, symbol, answer, unit or tolerance changed.
+- Terms match docs/physics-guardrails.md Friction (P8): lepokitka ≤ μ0 N kept in the principles ("Lepokitka on enintään μ0 N"), its greatest value μ0 N named lähtökitka, no liikekitka in the set.
+- Physics of each touched sentence still right: level curve, the limiting static friction toward the centre at the largest speed (:113, :201); banked curve, the limiting friction down the slope at the largest speed (:285); L3-06 condition "required friction not larger than lähtökitka μ0 N", limiting case F = μ0 N (:317).
+- Force-diagram descriptions unchanged apart from the name: the arrow lengths (one tenth of G for μ0 = 0,10; a little over half of G for μ0 ≈ 0,5) still fit the data.
+- Previous recomputations stand (L2-09 r = 75 m; L3-06 μ0 = 8000/(1200 · 9,81) = 0,68); the figures kuvaaja-a and kuvaaja-b are unchanged.
+- Hash 77ea855d8210779a (with --lang fi-easy) the same at start and end, equal to the packet's.

@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3f3066119fcda820
+CONTENT-HASH: 29511f4151251bcf
 
 ## Blocking
 
 ## Polish
-- lesson.md:209 (photo caption): the loss is written $P = RI^2$, but everywhere else it is $P_\text{h} = RI^2$, and $P$ is the transmitted power. Fix: write $P_\text{h} = R I^2$.
-- inquiry.json `virhe`, the kilovolt distractor: $400^2 : 6{,}0 \approx 26\,667$, so "$27\,\text{kW}$" only comes out if that number is read as watts. Its feedback is still correct. Fix (optional): write the distractor's number as the one that arithmetic gives.
-- The sim legend and `lang/fi-easy.json` (`selite`) say "johdossa lämmöksi muuttuva teho", but the lesson, the experiment and the sim box say "sisäenergiaksi". This is not wrong, because the glossary says "muuttuu lämmöksi ympäristöön". Fix: use one wording in both places.
-- lesson.md `grid` figure: the sähköasema goes from $400\,\text{kV}$ straight to $20\,\text{kV}$, while the text names the $110\,\text{kV}$ alueverkko step. The figure is schematic and says it is not to scale, so this is a C. Fix (optional): add "(110 kV)" or "vaiheittain" to the aria-label.
+- lesson.md:160, 224, 235 (aria); inquiry.json:76, 106, 107, 109, 227, 250; exit-ticket.json:7 — "muuttuu lämmöksi" / "lämmöksi muuttuva teho" breaks the guardrail "Energy into heat" (P1). It is not blocking here: these are the same sentences as in the version that passed before, and docs/tyojono.md item 18 already schedules them, FY7's translations included (docs/audits/2026-11-15-oikoluku.md §4, §11 FY7 fy7-8). The FY7 round is PR #617. — Fix in item 18: "johdossa sisäenergiaksi muuttuva teho", the same wording everywhere.
+- lesson.md:209 — the photo caption writes $P = RI^2$ for the loss, but the lesson's symbol is $P_\text{h}$ ($P$ is the transmitted power). Use $P_\text{h} = RI^2$.
+- lesson.md:361 — the summary's "Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan" should say "kun teho ja johto pysyvät samoina" (line 231 says so).
+- inquiry.json siirto mistakes — add the value 2400 for $RI$ given in volts without converting. Only 2,4 is caught now.
+- lesson.md:302 (three-phase) — "noin 1,73-kertaisen tehon" assumes the same $\cos\varphi$ in both models. The two-wire $P = UI$ implies $\cos\varphi = 1$.
 
 ## Checked
-- I recomputed every number in one script with my own formulas: worked example ($N_1 = 1980$, $I_1 = 81{,}82\,\text{A}$, both $9{,}0\,\text{MW}$), the four sim voltages (I, P_h, share), ennuste-2, johtopäätös, virhe ($2{,}67\cdot10^{10}\,\text{W}$, $1{,}5\,\text{MW}$, $RI = 3{,}0\,\text{kV}$), siirto (720 kW, 2,2 %, the three mistake values), tarkistus-2 (0,2609 A, 5,0 A, 95,83 A) and the exit ticket (11,5 V, 1/9). All agree with lesson-answers.py.
-- The loss graph is to scale: the curve points at 70, 100, 200 and 400 kV match $100\,\% \cdot RP/U^2$ to within 0,5 px. The labels 12 %, 3,0 % and 0,75 % are right.
-- The transformer figure: the core is closed, the flux arrows go round in one consistent direction, it has more primary turns and is labelled as a step-down transformer, and it says it is not to scale.
-- Models and their conditions: ideal transformer stated; $P = UI$ for a resistive load; effective values; the two-wire model is named at every point of use; three-phase $P = \sqrt3\,UI\cos\varphi$ is given as context and the 1,73 factor is correct. No self-induction (within the scope note).
-- Causality: flux changing → the same emf per turn → $U \propto N$. A DC primary gives zero output after the switching transient. Loss $RI^2$ with $I = P/U$, and the $U^2/R$ misconception is handled correctly (the voltage across the line is $RI$).
-- sim.js implements $R = 0{,}040\,\Omega/\text{km}\cdot l$, $I = P/U$, $P_\text{h} = RI^2$ and $N_2:N_1 = U:20\,\text{kV}$. The "impossible" condition $RI \ge U$ is the same as $P_\text{h} \ge P$, and the sim says so. Its values are called model values.
-- koe-1: P and l are locked, U is the only thing that varies. The slider steps reach 50, 100, 200 and 400 kV, P = 200 and l = 150. simState gives I (A), Ph (MW) and osuus (%).
-- Exactly one correct option in each of kertaus, ennuste-dc, ennuste-jannite, virhe and check-1. Every distractor's feedback names the right physics.
-- The model answers (johtopäätös, tarkistus-3) and the summary agree with the theory. Magnitudes are realistic: generator about 20 kV, grid voltages 400/220/110 kV, transformer efficiency over 99 %, losses about 2 %.
-- The content hash was the same at the start and at the end.
+- One `python3 -I` run against lesson-answers.py: every number matches my own formulas. Worked example $N_1 = 1980$, $I_1 = 81{,}82 \to 82\,\text{A}$, $9{,}0\,\text{MW}$ both sides. The sim table at 50, 100, 200 and 400 kV. The virhe numbers. Siirto 720 kW with its three mistakes. Check 2 gives 0,26 A, with 5,0 A and 95,8 A as mistakes. Exit ticket 11,5 V and 1/9.
+- The loss-graph is to scale: the polyline is within 0,9 px of $100\,\% \cdot RP/U^2$ over 70–400 kV, and the 12 / 3,0 / 0,75 % markers are right.
+- Sim: $I = P/U$, $P_\text{h} = RI^2$, $R = 0{,}040\,\Omega/\text{km} \cdot l$. "Mahdoton" when $RI \ge U$ is the same as $P_\text{h} \ge P$ (30 kV and below at 200 MW, 150 km). simState gives I, Ph, osuus. Koe-1's initial values can be reached on the sliders, and locking P and l isolates U.
+- Predictions: one right option each (0 V; neljäsosaan), and every feedback's numbers are right. The kertaus, virhe and check-1 distractors are really wrong, and their feedback is right.
+- Transformer figure: closed core, $N_1 > N_2$ for a step-down, the flux arrows go one way round.
+- Grid values (400/220/110 kV, 20 kV, 400/230 V, efficiency over 99 %) are right, the Fingrid 2 % is sourced, and scope stays inside FY7.

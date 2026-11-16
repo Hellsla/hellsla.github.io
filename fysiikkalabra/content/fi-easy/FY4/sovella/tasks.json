@@ -39,7 +39,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Paino, rinteen tukivoima ja liikekitka. Eteenpäin vievää voimaa ei ole."
+              "detail": "Paino, rinteen tukivoima ja liukukitka. Eteenpäin vievää voimaa ei ole."
             },
             {
               "key": "fbd_directions",
@@ -57,7 +57,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Laske liikekitkakerroin kummallekin voiteelle.",
+          "text": "Laske liukukitkakerroin kummallekin voiteelle.",
           "answer": [
             {
               "name": "A",

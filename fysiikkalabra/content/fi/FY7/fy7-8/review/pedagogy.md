@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 6d89e55a6a451d04
+CONTENT-HASH: 6a72c489fde97bd9
 
 ## Blocking
-- none (round 2: figure `scene` now stands directly after "Jännite lasketaan vaiheittain"; at 1280 px it sits beside that paragraph, theory-1280-2, no longer beside the summary).
+(none)
 
 ## Polish
-- Pohdinta/Ennusta: ennuste-dc has no experiment in the sim and is revealed only after Teoria; acceptable, but the retrieval item (induction) is optional, so a student who skips it meets the prediction cold. Make it required, or keep it and accept it.
-- koe-1 sim computes only P_h = R I² (the formula being predicted); it confirms the arithmetic, not an emergent result. The model box says so; fine for this topic, but the transformer ratio (a stated goal) has no hands-on step beyond the readout "N₂ : N₁".
-- Etsi virhe: the correct option is the longest and also gives the full solution; shorten it so length is not a cue.
-- ```kaavat line "tehonkulutus johtimessa :: P = U I" names only the first formula, but the block also holds P_h = R I²; split or rename ("Teho ja häviöteho").
-- Exit ticket question 1 repeats L1-01 and check 2 in kind; replace with the DC/no-induction idea, which the exit ticket does not test.
-- Etsi virhe is optional while the P = U²/R misconception is the lesson's main risk; consider required.
+- lesson.md "Todellinen kantaverkko on kolmivaiheinen" — $P=\sqrt3 UI\cos\varphi$ and "tehokerroin" are beyond the slot goals and cosφ is undefined for a student with only fy7-7; the section also sits inside the theory stage — mark as syventävä or cut to one sentence (the model note already says the sim is two-conductor).
+- lesson.md "Jännite lasketaan vaiheittain" — one dense paragraph (pienjänniteverkko 400/230 V, safety, phone charger at high frequency); split in two or drop the charger sentences. Also check the cross-reference *Sähköturvallisuus kotona ja työssä* is an existing chapter.
+- inquiry.json ennuste-dc — no experiment can refute it (the sim has only the transmission line); it is answered by reading the theory, which is a statement, not evidence. Acceptable, but say in the pending text that it is settled by the theory, or let the sim show a DC/AC switch.
+- inquiry.json koe-1 — only U varies and the sim computes the very formula predicted. Optional second experiment varying l or P (loss share grows, low U impossible) would use the sim's other controls and the "mahdoton" case, which is otherwise never visited.
+- inquiry.json check-1 and virhe — the correct option is the longest in each; shorten it or lengthen the distractors. "Etsi virhe" correct option also hands over the full solution.
 
 ## Checked
-- Path: hook, retrieval, two predictions (justify), sim, experiment with locked P and l, explain with `after`, theory, example (7 stages), transfer with 3 hints and mistake values, 2 required checks, exit ticket. Fits one hour.
-- ennuste-jannite can be refuted: the table gives 24, 6,0, 1,5 MW; the feedback names model values.
-- Opening question is answered by theory plus conclusion; no disclosure before commitment (hook states only what happens).
-- Figures legible at 390: transformer, grid, loss graph (labels, colour plus values); the transformer figure sits beside its paragraph at 1280.
-- Sim at 390 and 1280: bars, readout and three boxes; lead under 30 words.
-- Worked example staged, derivation before numbers; reasonableness check present.
-- Finnish: case endings after units ("$400\,\text{V}$:iin") fine.
-- Hash 6d89e55a6a451d04 at start and end.
+- Path: induction retrieval → DC prediction → loss prediction → sim → explain → theory → example; opening question answered only after commitment.
+- Predictions have misconception-repairing feedback, revealed after the experiment (min 3); numbers (6,0 → 1,5 MW at R=6 Ω) agree with koe-1 and the model answer.
+- Experiment locks P and l, varies U; initial value 100 kV and the 50–400 kV range stay feasible (RI < U).
+- Example is staged one step per stage, units step included, and differs from every exercise-style task here (stepping-down substation, 110 → 20 kV).
+- Siirto task: three progressive hints, mistakes (U²:R, RI, MW unit) are real; solution explains the principle and sanity-checks against Fingrid's 2 %.
+- Tarkista: concept item with misconception distractors, calculation item, explain criteria observable; exit ticket tests ratio and I² core idea.
+- Finnish and case endings after units read correctly; glossary terms used consistently (muuntosuhde, siirtohäviö, suurjännite).
+- Workload fits one lesson (optional items marked).
+- Not checked: figure and phone captures do not exist (review/shots absent); figure alt texts read well and the loss-graph description carries the data without a giveaway.

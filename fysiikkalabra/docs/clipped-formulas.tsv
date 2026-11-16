@@ -20,8 +20,6 @@ FY3-sovella	800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}
 FY3-sovella	= 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2
 FY3-sovella	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{k
 FY3-sovella	= 4{,}0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text
-FY4-koe	24\,000\,\text{kg} \cdot 0{,}90\,\tfrac{\text{m}}{\text{s}} : 0{,}80\,
-FY4-koe	\mu_0 N = 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\t
 FY4-sovella	E_\text{k} \approx 13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}
 FY4-sovella	F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
 FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}68
