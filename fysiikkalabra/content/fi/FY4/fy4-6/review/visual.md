@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1851f07829edb1ac
+CONTENT-HASH: 8b0962f5cbc82d0f
 
 ## Blocking
 None.
 
 ## Polish
-None. The one changed word is the fix itself: "jonka silta pystyy antamaan" became "jonka pinta pystyy aiheuttamaan". The old wording was a leftover from the bridge/plank example and fit the plank-ramp figure badly. The new wording matches the glossary ("pinta", "kitka ... pintojen välillä"). The sentence reads fluently, has no maths or unit change, and needs no case-ending fix.
+None.
 
 ## Checked
-- Source diff: one sentence in the paragraph after the Kitkavoima ja kalteva taso figure. No figures, formulas, numbers or symbols changed.
-- Opened fy4-6-fig-16-390.png, the figure beside that paragraph. The plank and box situation and the force diagram (G red with dashed components G_x and G_y, N and F_μ) are unchanged, readable, not clipped and consistent with the paragraph.
-- Did not open the theory-1280 or contact-sheet captures. The deterministic layout checks at 360, 768 and 1280 px are green, and a one-word change cannot alter the layout.
+- Delta: liikekitka changed to liukukitka everywhere (lesson, inquiry, meta, sim-spec, malli-veto description); "täysin kehittynyt lepokitka eli lähtökitka" wording in theory and in Käsite task 1.
+- Opened fy4-6-fig-10-390.png (kitka graph): the label now reads "liukukitka", blue, not clipped, axes and units intact.
+- Opened fy4-6-example-390-1.png: worked example and the force diagram, with the changed wording; layout intact, KaTeX fine.
+- Opened fy4-6-theory-1280-3.png: formula paragraph, figure and the Kitkakertoimen määrittäminen paragraph with liukukitkakerroin; reads fluently, no layout damage.
+- Opened fy4-6-open-exercises-1280-10.png: solution with liukukitka and its figure; fine. The malli-veto change is only its description text (Liukukitka), and its drawing is unchanged.
+- Content hash was the same at the start and the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

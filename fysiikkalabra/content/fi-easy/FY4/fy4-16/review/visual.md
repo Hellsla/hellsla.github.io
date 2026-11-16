@@ -1,9 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 54ee9d4945d7d36c
+CONTENT-HASH: 40b05f162c9c2e30
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-16 lesson (fi-easy). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] example figure (fy4-16-example-390-1) — the acceleration arrow and label $\overline{a}$ in the situation picture sit small and pale near the dashed divider; at 390 px they are legible but faint — enlarge slightly if the figure is redrawn.
+- [Minor] Tiivistelmä last bullet — "Työ on positiivista, kun hissi nousee, ja negatiivista, kun hissi laskeutuu" is fine in language; for science: confirm the sign claim is meant for the floor force on the person at constant and varying speed alike.
+
+## Checked
+- Delta covers the liukukitka rename, the Pohdinta hook rewording, the Tiivistelmä lift sentence, the exit ticket and the aria-label changes.
+- Opened at 390 px: fig-9 (three situations), fig-11 (scale diagram), example-390-1 (stages 1–3 with the sled figure), stage-herata-390 (Pohdinta).
+- Opened at 1280 px: theory-1280-3 (Yleinen virhekäsitys and Tiivistelmä).
+- Figures nothing clipped. $\overline{F}_\mu$ and units render in KaTeX. liukukitka is used consistently in the text I opened. No leftover liikekitka seen.
+- Not opened: the other contact sheets, the simulation and the exercise captures, which this diff does not touch.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

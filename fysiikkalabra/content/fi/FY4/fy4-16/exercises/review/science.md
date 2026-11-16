@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 5583281d5053c519
+CONTENT-HASH: 300f0acc09180cf2
 
 ## Blocking
-None.
 
 ## Polish
-1. solutions.md L3-04 Periaate: "pulkka pysähtyy aidan viereen" (en "next to the fence") contradicts the task: at the maximum length it stops 5,0 m before the fence (20,0 m from the foot). Write "pysähtyy 5,0 m ennen aitaa".
+- exercises/solutions.md:68 (L1-04 Järkevyys) — "$6\,\text{s} : 0{,}8 \approx 7{,}5\,\text{s}$" has the wrong unit on the speed. Fix: $6{,}0\,\text{m/s} : 0{,}8\,\text{m/s}^2 \approx 7{,}5\,\text{s}$.
+- exercises/solutions.md:347 (L3-05 Vastaus) — "kolme merkitsevää numeroa kuten massassa ja nopeuksissa", but $7{,}9\,\text{m/s}$ has two figures and $h$ is a trapezoid estimate. Fix: give the reason as the initial speed $46{,}0\,\text{m/s}$ and the mass, or answer $2{,}2\,\text{kN}$ (tolerance 0,03 accepts it).
+- L3-04 Vastaus b) — $16{,}33 \to 16\,\text{m}$ is rounded down, which is right for an "enintään" value (P7), but the text does not say so. Fix: add "pyöristetään alaspäin, koska kyse on suurimmasta sallitusta pituudesta".
 
 ## Checked
-- Every answer recomputed from the task text (own script): L1-01…L1-08, L2-01…L2-09, L3-01…L3-05 agree with exercises.json and answers.py (e.g. L1-08 33,98 N, L2-05 633 N, L2-06 0,0805, L2-07 0,321 and 0,306–0,335, L3-04 16,33 m and 7,67 m/s, L3-05 h = 55,6 m, 2,205 kN, 851 N).
-- Added exercises: models and conditions stated (tan α = μ only for steady sliding after a push; trapezoid distance; constant mean drag), L2-08 uncertainty reasoning (2Δx, overlap does not prove equality, extrapolation) follows the guardrails; exactly one correct option, distractor feedback right.
-- E_k0/E_k in L3-03 and L3-05 use the new index rule correctly; no leftover old symbol; fi, fi-easy and en answers, tolerances and keys identical.
+- I recomputed all 19 numeric answers in one script with my own formulas from the task texts. All agree with exercises.json and answers.py to 1e-3: L1-01…L1-05, L1-08, L2-01…L2-07, L2-09, L3-01…L3-05.
+- Recomputed side values: L3-04 $v = 7{,}67\,\text{m/s}$; L3-02 deceleration $0{,}857\,\text{m/s}^2$ with stop at $8{,}67\,\text{s}$, matching the ex-hissi figure; L2-07 range $0{,}306\ldots0{,}335$; L3-05 trapezoid $h = 55{,}625\,\text{m}$ and the distance mean ($2{,}21\,\text{kN}$) vs the time mean ($1{,}76\,\text{kN}$), with the right reason given.
+- L2-06 data fit uniform deceleration ($v_0 \approx 4{,}0\,\text{m/s}$, stops just after $5\,\text{s}$), so the mid-interval method holds.
+- L2-07 uses a pushed box at constant speed, so it measures μ, not μ₀; the reason is stated.
+- L2-08: exactly one supported conclusion; the uncertainty-interval reasoning, the "absence of evidence" and the extrapolation feedback are all right.
+- L1-06 and L1-07: one correct option each, and each distractor's feedback is right.
+- L1-08: the error ($N = mg$ on a slope) is correctly diagnosed, and the factor $1/\cos 30^\circ$ checks out.
+- Force diagrams in the solutions: friction up the slope or backward, normal force perpendicular, components dashed, v and a apart from the forces, and equations from the stated axes.
+- Every task is inside FY4 (Newton II, energy principle, friction). L2-04's $P = W/t$ is prior knowledge.
+- Rounding: L1-04 and L1-05 use two figures from $6{,}0$ / $0{,}15$; the others use three.

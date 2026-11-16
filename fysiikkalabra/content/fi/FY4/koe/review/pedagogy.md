@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b5386256db2417e0
-Mode: delta (k7 text, d, e)
+CONTENT-HASH: 570b93738d02c5c4
 
 ## Blocking
+None.
 
 ## Polish
-- tasks.json (k7 text) — "Tässä tehtävässä kypärä läpäisee iskutestin, jos…" then "Kypärän hyväksyntään eli sertifiointiin kuuluu lisäksi muita testejä" is two sentences of framing a student must read before the data; acceptable, could be one: "Tämä testi on vain osa kypärän hyväksyntää."
-- k7 e math criterion mixes the calculation (1,6-fold) and the caveat that head speed is not automatically riding speed; one point covers both, still observable.
+- fy4-k3 b (solutions.md): the solution says "lepokitka voi olla enintään $\mu_0 N$" but never names that greatest value. "lähtökitka" first appears in c ("jonka lähtökitka voi laatikolle antaa") and d without being introduced in this task. Add "eli täysin kehittynyt lepokitka eli lähtökitka" once in b's Periaate, as k1-f's solution does, so the term is learned where the limit is derived.
+- fy4-k3 d: "Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain" is muddled (kitka is a force, so the law does not give "ennallaan" here). Say that without the pushing force nothing moves the box forward, and friction slows it less than it slows the car.
+- k1-f: "ei lepokitkan arvo tässä tilanteessa" reads awkwardly. Better "ei tässä tilanteessa vaikuttavan lepokitkan arvo".
 
 ## Checked
-- Diff only; text read.
-- d: "iskutesti" wording consistent in prompt, solution, rubric; answer 2300 m/s², 7 % margin unchanged; the "muut standardin testit" sentence is a useful caveat and does not change the task.
-- e: the solution now says the 1,6-fold energy holds only if the head hits perpendicular at full riding speed, and lists why real speed differs; matches the rubric points (math, transfer, assumptions) and the question ("arvioi, kuinka hyvin testi kuvaa").
-- Marks total unchanged (d 5, e 4).
+- Term change: no "liikekitka" anywhere in tasks or solutions. Liukukitka and liukukitkakerroin are used consistently (k1-e, k3 d, k4 a-d). Lepokitka and lepokitkakerroin are used for a body at rest.
+- "Täysin kehittynyt lepokitka eli lähtökitka" appears only in solutions (k1-f, k3 c and d), never in a task text or heading, so no model or term is given away. The k1-f distractor 196 N (the greatest value) is the real misconception, and its feedback names it.
+- k3 task texts say only "lepokitkakerroin" and "ei liu'u". They do not hand the student "lähtökitka" or the formula $\mu_0 N$.
+- The k3 sequence a-d (force diagram, limit, braking, sliding) rises in demand. The diagram is drawn before any equation. Rubric keys are specific, with no points for irrelevant things.
+- k4 (liukukitkakerroin from measured data) is unchanged in demand. The common mistakes are real.
+- Deterministic checks: practice.py check OK.
+- Not re-judged: tasks unrelated to friction (k2, k5-k7). The change touches no wording there.

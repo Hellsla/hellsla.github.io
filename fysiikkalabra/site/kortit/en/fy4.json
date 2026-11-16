@@ -397,15 +397,15 @@
    "luku": "fy4-6",
    "aihe": "fy4-kitka-ja-vastusvoimat",
    "kasite": "Static friction",
-   "maaritelma": "Prevents surfaces from sliding over each other and adjusts to the size needed, up to its maximum."
+   "maaritelma": "Prevents surfaces from sliding over each other and adjusts to the size needed. Its greatest value is the maximum (fully developed) static friction."
   },
   {
    "id": "fy4-liikekitka",
    "moduuli": "FY4",
    "luku": "fy4-6",
    "aihe": "fy4-kitka-ja-vastusvoimat",
-   "kasite": "Kinetic friction",
-   "maaritelma": "Opposes the motion of surfaces sliding over each other (sliding friction).",
+   "kasite": "Sliding friction",
+   "maaritelma": "The friction between surfaces sliding over each other, which opposes their sliding.",
    "kaava": "F_{\\mu} = \\mu N",
    "kaava_puhe": "F mu equals mu times N"
   },
@@ -793,7 +793,7 @@
    "luku": "fy4-8",
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Work done by friction",
-   "maaritelma": "The negative work done by kinetic friction; on a straight surface it depends on the horizontal length $x$ of the path.",
+   "maaritelma": "The negative work done by sliding friction; on a straight surface it depends on the horizontal length $x$ of the path.",
    "kaava": "W_\\mu = -\\mu m g x",
    "kaava_puhe": "W mu equals minus mu times m times g times x"
   }

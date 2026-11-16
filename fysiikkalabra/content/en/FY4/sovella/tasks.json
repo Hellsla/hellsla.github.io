@@ -39,7 +39,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Weight, the normal force from the slope and kinetic friction; no forward force."
+              "detail": "Weight, the normal force from the slope and sliding friction; no forward force."
             },
             {
               "key": "fbd_directions",
@@ -57,7 +57,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Determine the coefficient of kinetic friction for each wax.",
+          "text": "Determine the coefficient of sliding friction for each wax.",
           "answer": [
             {
               "name": "A",

@@ -110,7 +110,7 @@ akselit 0
 **Annettu:** kaarteen säde $r = 60\,\text{m}$, lepokitkakerroin $\mu_0 = 0{,}10$, tie vaakasuora; $g = 9{,}81\,\text{m/s}^2$; ilmanvastus ja vierimisvastus jätetään huomiotta
 **Kysytty:** suurin nopeus $v$ yksikössä $\text{km/h}$
 **Periaate:** Kaarteessa ainoa vaakasuora voima autoon on tien lepokitka, ja Newtonin toisen lain mukaan sen on oltava $m\tfrac{v^2}{r}$ kohti keskipistettä. Lepokitka voi olla enintään $\mu_0 N$. Suurimmalla nopeudella kitka on suurimmillaan.
-**Voimakuvio:** Auto takaa katsottuna suorakulmiona, kaarteen keskipiste oikealla, $x$ kohti keskipistettä ja $y$ ylös. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja suurin lepokitka $\overline{F}_\mu$ alapinnan kulmasta kohti keskipistettä, kymmenesosa painon pituudesta. Kiihtyvyys erikseen kohti keskipistettä.
+**Voimakuvio:** Auto takaa katsottuna suorakulmiona, kaarteen keskipiste oikealla, $x$ kohti keskipistettä ja $y$ ylös. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja täysin kehittynyt lepokitka eli lähtökitka $\overline{F}_\mu$ alapinnan kulmasta kohti keskipistettä, kymmenesosa painon pituudesta. Kiihtyvyys erikseen kohti keskipistettä.
 ```voimakuvio
 pinta 0
 G 100
@@ -198,7 +198,7 @@ akselit 0
 **Annettu:** taulukosta $(r, v)$-parit $(20\,\text{m},\ 10{,}4\,\text{m/s})$, $(30\,\text{m},\ 12{,}6\,\text{m/s})$, $(40\,\text{m},\ 14{,}8\,\text{m/s})$ ja $(50\,\text{m},\ 16{,}3\,\text{m/s})$; $g = 9{,}81\,\text{m/s}^2$; rata vaakasuora, ilmanvastus jätetään huomiotta; esimerkkiaineisto
 **Kysytty:** lepokitkakertoimen $\mu_0$ keskiarvo $\mu_{0,\text{ka}}$ (ei yksikköä)
 **Periaate:** Auton vaakasuora voima on tien lepokitka, ja Newtonin toisen lain mukaan sen on oltava $m\tfrac{v^2}{r}$ kohti keskipistettä. Juuri ennen liukumista kitka on suurimmillaan, $\mu_0 N$. Pystysuunnassa auto ei kiihdy, joten $N = mg$.
-**Voimakuvio:** Auto takaa katsottuna suorakulmiona, kaarteen keskipiste oikealla, $x$ kohti keskipistettä ja $y$ ylös. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja suurin lepokitka $\overline{F}_\mu$ alapinnan kulmasta kohti keskipistettä, hieman yli puolet painon pituudesta. Kiihtyvyys erikseen kohti keskipistettä.
+**Voimakuvio:** Auto takaa katsottuna suorakulmiona, kaarteen keskipiste oikealla, $x$ kohti keskipistettä ja $y$ ylös. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja lähtökitka $\overline{F}_\mu$ alapinnan kulmasta kohti keskipistettä, hieman yli puolet painon pituudesta. Kiihtyvyys erikseen kohti keskipistettä.
 ```voimakuvio
 pinta 0
 G 100
@@ -282,7 +282,7 @@ c) $v_\text{min} = \sqrt{9{,}81\,\text{m/s}^2\cdot 13{,}90\,\text{m}} = \sqrt{13
 **Annettu:** säde $r = 130\,\text{m}$, kallistuskulma $\alpha = 8{,}0\,{}^\circ$ (tie laskee kohti sisäreunaa), lepokitkakerroin $\mu_0 = 0{,}40$; $g = 9{,}81\,\text{m/s}^2$; ilmanvastus ja vierimisvastus jätetään huomiotta
 **Kysytty:** a) nopeus $v_0$ ilman kitkaa, b) suurin nopeus $v_\text{max}$ kitka mukaan lukien, c) perustelu. Vastauslaatikkoon $v_\text{max}$ yksikössä $\text{km/h}$.
 **Periaate:** Auto on tasaisessa ympyräliikkeessä, ja kokonaisvoima on vaakasuora ja osoittaa kohti keskipistettä, suuruudeltaan $m\tfrac{v^2}{r}$. Tien tukivoima $\overline{N}$ on kohtisuorassa tietä vastaan, joten kallistetulla tiellä sillä on vaakasuora komponentti kohti keskipistettä. Suurimmalla nopeudella auto pyrkii liukumaan ulos ja ylös rinnettä, joten lepokitka $\overline{F}_\mu$ osoittaa alas rinnettä pitkin ja on suurimmillaan, $\mu_0 N$. Pystysuunnassa auto ei kiihdy.
-**Voimakuvio:** Auto takaa katsottuna suorakulmiona kallistetulla tiellä, joka nousee oikealle, ja kaarteen keskipiste vasemmalla. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan tietä vasten ja suurin lepokitka $\overline{F}_\mu$ alapinnan kulmasta alas rinnettä pitkin. Kiihtyvyys erikseen vaakasuoraan vasemmalle kohti keskipistettä. Vaakasuora akseli $x$ osoittaa kohti keskipistettä ja $y$ ylös.
+**Voimakuvio:** Auto takaa katsottuna suorakulmiona kallistetulla tiellä, joka nousee oikealle, ja kaarteen keskipiste vasemmalla. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan tietä vasten ja lähtökitka $\overline{F}_\mu$ alapinnan kulmasta alas rinnettä pitkin. Kiihtyvyys erikseen vaakasuoraan vasemmalle kohti keskipistettä. Vaakasuora akseli $x$ osoittaa kohti keskipistettä ja $y$ ylös.
 ```voimakuvio
 pinta 8
 G 100
@@ -314,7 +314,7 @@ Vaakasuorassa kaarteessa ($\alpha = 0$) olisi $v = \sqrt{\mu_0\,g\,r} = \sqrt{0{
 ## fy5-4-L3-06
 **Annettu:** $m = 1200\,\text{kg}$; $v = 20\,\text{m/s}$; kuvaajasta tässä nopeudessa $F = 8{,}0\,\text{kN}$; $g = 9{,}81\,\text{m/s}^2$; vaakasuora tie, kitka on ainoa vaakasuuntainen voima
 **Kysytty:** pienin lepokitkakerroin $\mu_0$ (ei yksikköä)
-**Periaate:** Kitkavoima on ainoa vaakasuuntainen voima, joten se on kokonaisvoima kohti kaarteen keskipistettä. Tie on vaakasuora ja pystysuunnassa ei ole kiihtyvyyttä, joten tukivoima on $N = mg$. Auto pysyy tiellä, kun tarvittava kitka ei ylitä suurinta lepokitkaa $\mu_0 N$; rajatapauksessa $F = \mu_0 N$.
+**Periaate:** Kitkavoima on ainoa vaakasuuntainen voima, joten se on kokonaisvoima kohti kaarteen keskipistettä. Tie on vaakasuora ja pystysuunnassa ei ole kiihtyvyyttä, joten tukivoima on $N = mg$. Auto pysyy tiellä, kun tarvittava kitka ei ylitä lähtökitkaa $\mu_0 N$; rajatapauksessa $F = \mu_0 N$.
 **Kuvaajan lukeminen:** Käyrälle merkitty piste on apuviivojen $v = 20\,\text{m/s}$ ja $F = 8{,}0\,\text{kN}$ risteyksessä (pystyakselin luku on kilonewtoneina). Luetaan tarvittava kitka $F = 8{,}0\,\text{kN}$ nopeudella $20\,\text{m/s}$.
 **Kaava:** $F = \mu_0 N$ ja $N = mg$, joten $\mu_0 = \dfrac{F}{mg}$
 **Muunnokset:** $F = 8{,}0\,\text{kN} = 8{,}0 \cdot 1000\,\text{N} = 8000\,\text{N}$
