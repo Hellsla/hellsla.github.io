@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
-
+CONTENT-HASH: 3982956434865159
 ## Blocking
-None.
-
+(none)
 ## Polish
-None.
-
+(none)
 ## Checked
-- The one changed sentence (L2 solution "Järkevyys": "kaukolämpöä käytetään pääasiassa lämmitykseen") is accurate and matches the lesson's wording.
-- The reasoning in the sentence (total efficiency does not tell profitability, since electricity suits everything and heat mainly heating) is intact, and the final clause on need and prices still follows.
-- No numbers, task text or levels changed; the level counts and the solution steps are as approved earlier.
-- Finnish: the sentence is grammatical.
+- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
+- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
+- Judged from the diff and the previous PASS; captures not opened.

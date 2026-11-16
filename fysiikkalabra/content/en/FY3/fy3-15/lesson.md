@@ -281,7 +281,7 @@ Many people think that waste heat is energy that has been lost. Energy does not 
 
 If heat is transferred to the surroundings at a temperature only slightly above that of the surroundings, it is hard to obtain much mechanical work or electricity from it. The smaller the temperature difference, the lower the maximum possible efficiency of a heat engine.
 
-In combined heat and power production, part of the energy that would otherwise be left as waste heat can be used as district heating.
+In combined heat and power production, part of the energy that would otherwise be transferred to the surroundings as waste heat can be used as district heating.
 
 Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating mainly for heating.
 

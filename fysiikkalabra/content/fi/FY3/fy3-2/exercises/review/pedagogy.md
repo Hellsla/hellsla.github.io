@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c71996eeddd805e1
+CONTENT-HASH: b6ab507aba8871f7
 ## Blocking
 (none)
 ## Polish
-- none
+- solutions.md:50 — 'Muutaman kymmenen watin teho' sits oddly beside 60 W; say 'Kuudenkymmenen watin teho on tavallinen ...'.
 ## Checked
-- Diff is one wording change (vs -> ja) in the L2-09 sanity check; reads correctly, no numbers touched.
-- Captures not opened.
+- Delta: L-sled Järkevyys now ties 3,0 m/s to about 11 km/h (10,8) as a skier's pace; accurate and concrete, 60 W stays 'few tens of watts' plausible.
+- Judged from the diff text; captures not opened.

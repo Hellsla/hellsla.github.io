@@ -250,7 +250,7 @@ Absoluuttinen nollapiste on siis $0\,\text{K}$ = $-273{,}15\,{}^\circ\text{C}$. 
   <foreignObject x="553" y="167.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
 </svg>
 
-Kuva on piirretty mittakaavassa. Yläasteikko on kelvinasteikko ja alaasteikko celsiusasteikko; väli $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een on yhtä pitkä kuin väli $273{,}15\,\text{K}$:sta $373{,}15\,\text{K}$:iin.
+Kuva on piirretty mittakaavassa. Yläasteikko on kelvinasteikko ja ala-asteikko celsiusasteikko; väli $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:een on yhtä pitkä kuin väli $273{,}15\,\text{K}$:sta $373{,}15\,\text{K}$:iin.
 
 ## Esimerkki
 Suljetussa jäykässä astiassa on kaasua, joten sen tilavuus ja aineen määrä pysyvät samoina. Kaasun paine mitataan eri lämpötiloissa:

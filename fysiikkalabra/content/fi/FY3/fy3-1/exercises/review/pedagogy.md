@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9cf120f0c0c90ba6
+CONTENT-HASH: fbc2796c4aef5550
 ## Blocking
 (none)
 ## Polish
-- solutions.md fy3-1-L2-08 — the answer is accepted at 60 N ±3 % but the lesson tolerance for the whole set is wider; fine, just keep exercises.json tolerance 0,03 in step.
+(none)
 ## Checked
-- L2-08 diff: g = G/m = 5,0 m/s² replaces N/kg, in line with house rule (g always m/s²); Kaava line now reads cleanly; accepted range 58,2–61,8 N stated.
-- Wording fix 'suurempi kuin' correct Finnish.
-- Captures not opened; judged from text.
+- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
+- Judged from the diff text; captures not opened.

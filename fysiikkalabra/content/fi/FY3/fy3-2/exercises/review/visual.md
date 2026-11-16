@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c71996eeddd805e1
-ROUND: 2
+CONTENT-HASH: b6ab507aba8871f7
 
 ## Blocking
 (none)
@@ -9,7 +8,8 @@ ROUND: 2
 (none)
 
 ## Checked
-- Round 2, delta: the one-word change ('vs' to 'ja') in L2-09 Järkevyys was read from the diff; no capture opened, the line is plain text and cannot disturb layout. Round-1 polish fixed. Hash same at start and end.
+- Round 1, delta. Opened fy3-2-open-exercises-1280-5 (task 2-5, pulkka: answer, Annettu to Vastaus; layout intact). The changed Järkevyys sentence (L1-05) lies just below this capture and was read from the diff: quantity "$11\,\text{km/h}$" is LaTeX, wording fluent.
+- Hash same at start and end.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
