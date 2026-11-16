@@ -5,6 +5,6 @@
   },
   {
     "q": "How large is the hydrostatic pressure at a depth of $5.0\\,\\text{m}$ in water ($\\rho = 1000\\,\\text{kg/m}^3$)? And the total pressure, when atmospheric pressure is $101\\,\\text{kPa}$?",
-    "a": "$\\rho g h = 1000\\,\\text{kg/m}^3 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 5.0\\,\\text{m} \\approx 49\\,\\text{kPa}$. The total pressure is $101\\,\\text{kPa} + 49\\,\\text{kPa} \\approx 150\\,\\text{kPa}$."
+    "a": "$$\\begin{aligned} \\rho g h &= 1000\\,\\text{kg/m}^3 \\\\ &\\cdot 9.81\\,\\text{m/s}^2 \\cdot 5.0\\,\\text{m} \\\\ &\\approx 49\\,\\text{kPa} \\end{aligned}$$. The total pressure is $$\\begin{aligned} &101\\,\\text{kPa} + 49\\,\\text{kPa} \\\\ &\\approx 150\\,\\text{kPa} \\end{aligned}$$."
   }
 ]

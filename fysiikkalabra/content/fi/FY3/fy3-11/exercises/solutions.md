@@ -6,7 +6,7 @@
 **Muunnokset:** $480{,}0\,\text{kPa} = 480\,000\,\text{Pa}$. Tilavuus on jo kuutiometreinä, joten $\text{Pa} \cdot \text{m}^3 = \text{J}$ ilman lisämuunnosta. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 480\,000\,\text{Pa} \cdot 0{,}0250\,\text{m}^3 = 12\,000\,\text{J} = 12{,}0\,\text{kJ}$
 **Vastaus:** $12{,}0\,\text{kJ}$, kolme merkitsevää numeroa. Molemmat tiedot, paine $480{,}0\,\text{kPa}$ ja tilavuuden muutos $0{,}0250\,\text{m}^3$, on annettu vähintään kolmella numerolla.
-**Järkevyys:** Yksikkö on oikea: $\text{Pa} \cdot \text{m}^3 = \tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Arvio: $500\,\text{kPa} \cdot 0{,}025\,\text{m}^3 \approx 12\,\text{kJ}$. Työ on positiivinen, koska höyry laajenee ja työntää mäntää. Se riittäisi nostamaan noin 1,2 tonnin kuorman metrin korkeudelle, ja veturin männät tekevät tällaisen työn monta kertaa sekunnissa.
+**Järkevyys:** Yksikkö on oikea: $\text{Pa} \cdot \text{m}^3 = \tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Arvio: $$\begin{aligned} &500\,\text{kPa} \cdot 0{,}025\,\text{m}^3 \\ &\approx 12\,\text{kJ} \end{aligned}$$. Työ on positiivinen, koska höyry laajenee ja työntää mäntää. Se riittäisi nostamaan noin 1,2 tonnin kuorman metrin korkeudelle, ja veturin männät tekevät tällaisen työn monta kertaa sekunnissa.
 
 ## fy3-11-L1-02
 **Annettu:** ilmanpaine $p = 101\,\text{kPa}$, höyryn viemä lisätilavuus $\Delta V = 1{,}70\,\textsf{l}$
@@ -16,7 +16,7 @@
 **Muunnokset:** $101\,\text{kPa} = 101\,000\,\text{Pa}$ ja $1\,\textsf{l} = 10^{-3}\,\text{m}^3$, joten $1{,}70\,\textsf{l} = 0{,}00170\,\text{m}^3$. Silloin $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Sijoitus:** $W = 101\,000\,\text{Pa} \cdot 0{,}00170\,\text{m}^3 = 171{,}7\,\text{J} \approx 172\,\text{J}$
 **Vastaus:** $172\,\text{J}$, kolme merkitsevää numeroa kuten tiedoissa $101\,\text{kPa}$ ja $1{,}70\,\textsf{l}$.
-**Järkevyys:** Arvio: $100\,\text{kPa} \cdot 0{,}0017\,\text{m}^3 = 170\,\text{J}$. Gramman höyrystämiseen tarvitaan lämpöä noin $2{,}3\,\text{kJ}$, joten työn osuus on $\tfrac{172\,\text{J}}{2300\,\text{J}} \approx 7{,}5\,\%$ eli alle kymmenesosa. Loput lämmöstä jää höyryn sisäenergiaksi. Löylyn pöllähdys on juuri tätä laajenemista.
+**Järkevyys:** Arvio: $$\begin{aligned} &100\,\text{kPa} \cdot 0{,}0017\,\text{m}^3 \\ &= 170\,\text{J} \end{aligned}$$. Gramman höyrystämiseen tarvitaan lämpöä noin $2{,}3\,\text{kJ}$, joten työn osuus on $\tfrac{172\,\text{J}}{2300\,\text{J}} \approx 7{,}5\,\%$ eli alle kymmenesosa. Loput lämmöstä jää höyryn sisäenergiaksi. Löylyn pöllähdys on juuri tätä laajenemista.
 
 ## fy3-11-L1-03
 **Annettu:** reaktorin lämpöteho $P_\text{lämpö} = 4{,}30 \cdot 10^3\,\text{MW}$, sähköteho $P_\text{sähkö} = 1{,}60 \cdot 10^3\,\text{MW}$
@@ -26,7 +26,7 @@
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksikkö supistuu eikä muunnosta tarvita. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{1{,}60 \cdot 10^3\,\text{MW}}{4{,}30 \cdot 10^3\,\text{MW}} = 0{,}3721 = 37{,}21\,\%$
 **Vastaus:** $37{,}2\,\%$, kolme merkitsevää numeroa. Molemmat tehot ($1{,}60 \cdot 10^3\,\text{MW}$ ja $4{,}30 \cdot 10^3\,\text{MW}$) on annettu kolmella numerolla.
-**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin, koska osa lämmöstä on luovutettava kylmempään, ja ydinvoimalaitoksen tyypillinen arvo on noin $35\,\%$. Energiatase: merivesi vie lauhduttimesta $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$, enemmän kuin yksikkö tuottaa sähköä. Arvio: $\tfrac{1600}{4300} \approx \tfrac{1}{2{,}7} \approx 0{,}37$.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin, koska osa lämmöstä on luovutettava kylmempään, ja ydinvoimalaitoksen tyypillinen arvo on noin $35\,\%$. Energiatase: merivesi vie lauhduttimesta $$\begin{aligned} &4300\,\text{MW} - 1600\,\text{MW} \\ &= 2700\,\text{MW} \end{aligned}$$, enemmän kuin yksikkö tuottaa sähköä. Arvio: $\tfrac{1600}{4300} \approx \tfrac{1}{2{,}7} \approx 0{,}37$.
 
 ## fy3-11-L1-04
 **Annettu:** kuvaajasta luettuna paine pysyy vakiona $p = 250\,\text{kPa}$, ja tilavuus kasvaa arvosta $V_1 = 1{,}0\,\textsf{l}$ arvoon $V_2 = 4{,}0\,\textsf{l}$
@@ -47,7 +47,7 @@
 **Muunnokset:** Kummatkin energiat ovat kilowattitunteina, joten yksikkö supistuu eikä jouleiksi muuntamista tarvita. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{2{,}60\,\text{kWh}}{12{,}0\,\text{kWh}} = 0{,}2167 = 21{,}67\,\%$
 **Vastaus:** $21{,}7\,\%$, kolme merkitsevää numeroa. Molemmat energiat ($2{,}60\,\text{kWh}$ ja $12{,}0\,\text{kWh}$) on annettu kolmella numerolla.
-**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin. Pieni moottori jää alle automoottorin noin $30\,\%$:n. Energiatase: loput $12{,}0\,\text{kWh} - 2{,}60\,\text{kWh} = 9{,}4\,\text{kWh}$ siirtyy lämpönä ympäristöön, ja $\tfrac{9{,}4}{12{,}0} \approx 78\,\%$ täydentää hyötysuhteen sataan prosenttiin.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten lämpövoimakoneella pitääkin. Pieni moottori jää alle automoottorin noin $30\,\%$:n. Energiatase: loput $$\begin{aligned} &12{,}0\,\text{kWh} - 2{,}60\,\text{kWh} \\ &= 9{,}4\,\text{kWh} \end{aligned}$$ siirtyy lämpönä ympäristöön, ja $\tfrac{9{,}4}{12{,}0} \approx 78\,\%$ täydentää hyötysuhteen sataan prosenttiin.
 
 ## fy3-11-L2-01
 **Annettu:** sähköenergia $W = 3830\,\text{MWh}$, polttoaineen energia $Q_1 = 33{,}6\,\text{TJ} = 33{,}6 \cdot 10^{12}\,\text{J}$, vuorokaudessa
@@ -75,7 +75,7 @@
 **Periaate:** Energia säilyy, joten ilmaan tuleva lämpö jakautuu sisäenergian muutokseksi ja ilman tekemäksi työksi: ensimmäinen pääsääntö $\Delta U = Q + W$, jossa $W$ on ilmaan tehty työ. Mäntä liikkuu kevyesti, joten paine pysyy vakiona. Ilma laajenee ja tekee työn $p\,\Delta V$, joten siihen tehty työ on $W = -p\,\Delta V$.
 **Kaava:** $W = -p\,\Delta V$, joten $\Delta U = Q + W = Q - p\,\Delta V$
 **Muunnokset:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ ja $1{,}60\,\textsf{l} = 0{,}00160\,\text{m}^3$, jolloin $\text{Pa} \cdot \text{m}^3 = \text{J}$.
-**Sijoitus:** $\Delta U = 700{,}0\,\text{J} - 125\,000\,\text{Pa} \cdot 0{,}00160\,\text{m}^3 = 700{,}0\,\text{J} - 200\,\text{J} = 500\,\text{J}$
+**Sijoitus:** $$\begin{aligned} \Delta U &= 700{,}0\,\text{J} \\ &- 125\,000\,\text{Pa} \cdot 0{,}00160\,\text{m}^3 \\ &= 700{,}0\,\text{J} - 200\,\text{J} \\ &= 500\,\text{J} \end{aligned}$$
 **Vastaus:** $+500\,\text{J}$ eli sisäenergia kasvaa, kolme merkitsevää numeroa. Rajoittava tieto on ilman tekemä työ $p\,\Delta V = 200\,\text{J}$, jolla on kolme numeroa ja joulen tarkkuus, koska paine $125\,\text{kPa}$ ja tilavuuden muutos $1{,}60\,\textsf{l}$ on annettu kolmella numerolla. Erotuksessa $700{,}0 - 200$ desimaalit määrää epätarkempi luku, joten tulos tunnetaan joulen tarkkuudella.
 **Järkevyys:** Lämmöstä $200\,\text{J}$ kuluu männän työntämiseen ja loput $500\,\text{J}$ nostavat ilman lämpötilaa, joten $\Delta U > 0$ ja $\Delta U < Q$. Jos työ lisättäisiin lämpöön, tulokseksi tulisi $900\,\text{J}$, enemmän kuin ilmaan tuli lämpöä, vaikka ilma luovuttaa energiaa työntäessään mäntää. Siksi etumerkki on oikein.
 
@@ -95,7 +95,7 @@
 **Periaate:** Samat sähkö- ja lämpötehot tuotetaan kahdessa erillisessä laitoksessa, ja kummankin polttoaineteho saadaan hyötysuhteesta $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, missä $P_\text{a}$ on laitoksen hyötyteho ja $P_\text{o}$ sen polttoaineteho: $P_\text{o} = \tfrac{P_\text{a}}{\eta}$. Vertailu on oikeudenmukainen, koska hyödyksi tulevat tehot ovat molemmissa tapauksissa samat.
 **Kaava:** $P_\text{lauh} = \dfrac{P_\text{s}}{\eta_\text{lauh}}$ ja $P_\text{lk} = \dfrac{P_\text{kl}}{\eta_\text{k}}$, joten $\Delta P = \dfrac{P_\text{s}}{\eta_\text{lauh}} + \dfrac{P_\text{kl}}{\eta_\text{k}} - P_\text{pa}$
 **Muunnokset:** Hyötysuhteet $40{,}0\,\% = 0{,}400$ ja $90{,}0\,\% = 0{,}900$. Kaikki tehot ovat megawatteina, joten muuta muunnosta ei tarvita.
-**Sijoitus:** $\Delta P = \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
+**Sijoitus:** $$\begin{aligned} \Delta P &= \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} \\ &- 320\,\text{MW} \\ &= 240\,\text{MW} + 200\,\text{MW} \\ &- 320\,\text{MW} \\ &= 120\,\text{MW} \end{aligned}$$
 **Vastaus:** $120\,\text{MW}$, kaksi merkitsevää numeroa. Rajoittava tieto on sähköteho $96\,\text{MW}$ (kaksi numeroa): se määrää lauhdevoimalan polttoainetehon $240\,\text{MW}$ kymmenien megawattien tarkkuudelle, ja erotus $440\,\text{MW} - 320\,\text{MW}$ säilyttää tämän tarkkuuden. Hyötysuhteet $40{,}0\,\%$ ja $90{,}0\,\%$ ovat kolmen numeron arvoja eivätkä rajoita.
 **Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa $\dfrac{96 + 180}{320} \approx 86\,\%$ ja erillistuotannossa $\dfrac{276}{440} \approx 63\,\%$, joten erillinen tuotanto tarvitsee enemmän polttoainetta. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi, ja silloin osa lämmöstä on aina luovutettava kylmempään ympäristöön, tavallisesti mereen.
 
@@ -107,7 +107,7 @@
 **Muunnokset:** Kaikki energiat ovat megawattitunteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.
 **Sijoitus:** $W = \dfrac{16{,}0\,\text{MWh}}{2{,}50} = 6{,}40\,\text{MWh}$, joten $\Delta E = Q_2 = 16{,}0\,\text{MWh} - 6{,}40\,\text{MWh} = 9{,}60\,\text{MWh}$, eli suoraan $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16{,}0\,\text{MWh} \cdot 0{,}600 = 9{,}60\,\text{MWh}$
 **Vastaus:** $9{,}60\,\text{MWh}$ sekä säästettyä sähköä että ulkoilmasta otettua lämpöä, kolme merkitsevää numeroa. Pumpun sähkö $6{,}40\,\text{MWh}$ on laskettu lämmöntarpeesta $16{,}0\,\text{MWh}$ eikä ole erillinen mittaus, joten erotussääntöä ei käytetä. Tulos on tulo $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, ja sen numerot rajoittavat lämmöntarve $16{,}0\,\text{MWh}$ ja lämpökerroin $2{,}50$ (kumpikin kolme numeroa).
-**Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö, ja pumppu käyttää vain $\tfrac{1}{2{,}50} = 40\,\%$ sähköstä. Taseen tarkistus: taloon tulee $9{,}60\,\text{MWh} + 6{,}40\,\text{MWh} = 16{,}0\,\text{MWh}$. Pumppu ei ole ikiliikkuja, koska se ei luo energiaa vaan siirtää lämpöä sähkön avulla kylmästä lämpimään.
+**Järkevyys:** Säästetty sähkö on täsmälleen ulkoilmasta tuotu lämpö, ja pumppu käyttää vain $\tfrac{1}{2{,}50} = 40\,\%$ sähköstä. Taseen tarkistus: taloon tulee $$\begin{aligned} &9{,}60\,\text{MWh} + 6{,}40\,\text{MWh} \\ &= 16{,}0\,\text{MWh} \end{aligned}$$. Pumppu ei ole ikiliikkuja, koska se ei luo energiaa vaan siirtää lämpöä sähkön avulla kylmästä lämpimään.
 
 ## fy3-11-L3-03
 **Annettu:** polttoaineen tilavuus $V = 6{,}00\,\textsf{l}$ matkalla $s = 100\,\text{km}$ (kulutuksen vertailumatka), nopeus $v = 80{,}0\,\tfrac{\text{km}}{\text{h}}$; bensiinin tiheys $\rho = 0{,}750\,\tfrac{\text{kg}}{\textsf{l}}$ ja lämpöarvo $H = 43{,}0\,\tfrac{\text{MJ}}{\text{kg}}$; hyötysuhde $\eta = 28{,}0\,\% = 0{,}280$
@@ -115,7 +115,7 @@
 **Periaate:** Moottori on lämpövoimakone: bensiinin palaessa vapautuva energia $Q_1$ jakautuu työhön $W = \eta Q_1$ ja hukkalämpöön, joka siirtyy ympäristöön. Teho on työ jaettuna matkaan kuluneella ajalla, ja nopeus on tasainen, joten teho on vakio.
 **Kaava:** $Q_1 = \rho V H$ ja $t = \dfrac{s}{v}$, joten $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
 **Muunnokset:** $t = \dfrac{100\,\text{km}}{80{,}0\,\text{km/h}} = 1{,}25\,\text{h} = 4500\,\text{s}$ ja $43{,}0\,\tfrac{\text{MJ}}{\text{kg}} = 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** Polttoaineen energiasta saatava työ on $W = 0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} = 5{,}418 \cdot 10^7\,\text{J}$, joten
+**Sijoitus:** Polttoaineen energiasta saatava työ on $$\begin{aligned} W &= 0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \\ &\cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \\ &= 5{,}418 \cdot 10^7\,\text{J} \end{aligned}$$, joten
 
 $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12{,}04\,\text{kW} \end{aligned}$$
 
@@ -140,7 +140,7 @@ $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &
 **Muunnokset:** Molemmat tehot ovat kilowatteina, joten yksikkö supistuu eikä muunnosta tarvita. Lämpökertoimella ei ole yksikköä.
 **Sijoitus:** $\varepsilon = \dfrac{3{,}90\,\text{kW}}{1{,}20\,\text{kW}} = 3{,}25$
 **Vastaus:** $\varepsilon = 3{,}25$, kolme merkitsevää numeroa, koska molemmat tehot on annettu kolmella numerolla.
-**Järkevyys:** Lämpökerroin on yli 1, kuten lämpöpumpulla voi ollakin. Ulkoilmasta otettu teho on $3{,}90\,\text{kW} - 1{,}20\,\text{kW} = 2{,}70\,\text{kW}$, eli $2{,}25$ kertaa sähköteho. Arvio: $\tfrac{3{,}9}{1{,}2} \approx \tfrac{4}{1{,}2} \approx 3{,}3$.
+**Järkevyys:** Lämpökerroin on yli 1, kuten lämpöpumpulla voi ollakin. Ulkoilmasta otettu teho on $$\begin{aligned} &3{,}90\,\text{kW} - 1{,}20\,\text{kW} \\ &= 2{,}70\,\text{kW} \end{aligned}$$, eli $2{,}25$ kertaa sähköteho. Arvio: $\tfrac{3{,}9}{1{,}2} \approx \tfrac{4}{1{,}2} \approx 3{,}3$.
 
 ## fy3-11-L2-05
 **Annettu:** polttoaineen lämpöarvo $H = 43\,\text{MJ/kg}$. Teho ja kulutus: $20{,}0\,\text{kW}$ ja $7{,}9\,\text{kg/h}$; $40{,}0\,\text{kW}$ ja $11{,}6\,\text{kg/h}$; $60{,}0\,\text{kW}$ ja $16{,}0\,\text{kg/h}$; $80{,}0\,\text{kW}$ ja $22{,}5\,\text{kg/h}$
@@ -180,7 +180,7 @@ Q_2 &= 33{,}8\,\text{kWh} - 12{,}9\,\text{kWh} \\
 \end{aligned}
 ```
 **Vastaus:** $20{,}9\,\text{kWh}$, kolme merkitsevää numeroa, koska energiat on annettu kymmenesosan tarkkuudella ja erotus tunnetaan sillä tarkkuudella.
-**Järkevyys:** Ulkoa otettu lämpö on pienempi kuin sisälle luovutettu lämpö, kuten pitääkin. Energiatase: $20{,}9\,\text{kWh} + 12{,}9\,\text{kWh} = 33{,}8\,\text{kWh}$. Ulkolämpötilat $T_\text{ulko}$ eivät kuulu laskuun, koska energiatase ei tarvitse niitä. Jokaisen vuorokauden lämpökerroin $Q_1/W$ on yli 1 ($3{,}05$; $2{,}70$; $2{,}38$; $2{,}58$) ja pienenee pakkasen kiristyessä, mikä sopii siihen, että kylmästä ilmasta on vaikeampi siirtää lämpöä.
+**Järkevyys:** Ulkoa otettu lämpö on pienempi kuin sisälle luovutettu lämpö, kuten pitääkin. Energiatase: $$\begin{aligned} &20{,}9\,\text{kWh} + 12{,}9\,\text{kWh} \\ &= 33{,}8\,\text{kWh} \end{aligned}$$. Ulkolämpötilat $T_\text{ulko}$ eivät kuulu laskuun, koska energiatase ei tarvitse niitä. Jokaisen vuorokauden lämpökerroin $Q_1/W$ on yli 1 ($3{,}05$; $2{,}70$; $2{,}38$; $2{,}58$) ja pienenee pakkasen kiristyessä, mikä sopii siihen, että kylmästä ilmasta on vaikeampi siirtää lämpöä.
 
 ## fy3-11-L3-04
 **Annettu:** kuukausittaiset lämmöntarpeet $Q$ ja lämpökertoimet $\varepsilon$ taulukosta: marraskuu $1{,}8\,\text{MWh}$ ja $3{,}4$; joulukuu $2{,}6\,\text{MWh}$ ja $2{,}9$; tammikuu $4{,}0\,\text{MWh}$ ja $2{,}4$; helmikuu $3{,}1\,\text{MWh}$ ja $2{,}6$; maaliskuu $2{,}2\,\text{MWh}$ ja $3{,}1$
@@ -198,7 +198,7 @@ W_\text{helmi} &= \frac{3{,}1\,\text{MWh}}{2{,}6} = 1{,}192\,\text{MWh} \\
 W_\text{maalis} &= \frac{2{,}2\,\text{MWh}}{3{,}1} = 0{,}710\,\text{MWh}
 \end{aligned}
 ```
-Sähköenergioiden summa on $4{,}995\,\text{MWh}$ ja lämmöntarpeiden summa $1{,}8 + 2{,}6 + 4{,}0 + 3{,}1 + 2{,}2 = 13{,}7\,\text{MWh}$.
+Sähköenergioiden summa on $4{,}995\,\text{MWh}$ ja lämmöntarpeiden summa $$\begin{aligned} &1{,}8 + 2{,}6 + 4{,}0 + 3{,}1 + 2{,}2 \\ &= 13{,}7\,\text{MWh} \end{aligned}$$.
 
 b) Kauden lämpökerroin:
 ```latex
@@ -207,9 +207,9 @@ b) Kauden lämpökerroin:
 &= 2{,}74
 \end{aligned}
 ```
-c) Suora sähkölämmitys kuluttaa $13{,}7\,\text{MWh}$ sähköä, joten säästö on $13{,}7\,\text{MWh} - 4{,}995\,\text{MWh} = 8{,}7\,\text{MWh}$.
+c) Suora sähkölämmitys kuluttaa $13{,}7\,\text{MWh}$ sähköä, joten säästö on $$\begin{aligned} &13{,}7\,\text{MWh} - 4{,}995\,\text{MWh} \\ &= 8{,}7\,\text{MWh} \end{aligned}$$.
 **Vastaus:** b) $\varepsilon_\text{kausi} = 2{,}74$, kolme merkitsevää numeroa. Lähtötiedot on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($2{,}7$), ja kolmas numero annetaan, jotta pyöristys ei siirrä vastausta ulos hyväksytystä välistä. Vastauslaatikkoon tulee tämä luku.
-**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri. Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} = 13{,}7\,\text{MWh}$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta. Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi siirtää kylmästä ulkoilmasta lämpimään sisälle, kun lämpötilaero kasvaa.
+**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri. Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $$\begin{aligned} &4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} \\ &= 13{,}7\,\text{MWh} \end{aligned}$$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta. Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi siirtää kylmästä ulkoilmasta lämpimään sisälle, kun lämpötilaero kasvaa.
 
 ## fy3-11-L3-05
 **Annettu:** poikkipinta-ala $A = 200\,\text{cm}^2$, paine $p = 125\,\text{kPa}$ vakiona, vastuksen teho $P = 260\,\text{W}$, aika $t = 4{,}0\,\text{s}$, männän korkeus $h_1 = 10{,}0\,\text{cm}$ alussa ja $h_2 = 22{,}0\,\text{cm}$ lopussa
@@ -261,7 +261,7 @@ Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $10
 **Muunnokset:** $p = 1\,\text{atm} = 101\,325\,\text{Pa}$ ja $\Delta V = 2{,}0\,\textsf{l} = 2{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0020\,\text{m}^3$. Silloin $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$.
 **Sijoitus:** $W_\text{k} = 101\,325\,\text{Pa} \cdot 0{,}0020\,\text{m}^3 = 202{,}65\,\text{J}$
 **Vastaus:** $W_\text{k} \approx 2{,}0 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Muunnos $1\,\text{atm} = 101\,325\,\text{Pa}$ on MAFY-taulukosta (yksikkömuunnoksia); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $100\,000\,\text{Pa} \cdot 0{,}002\,\text{m}^3 = 200\,\text{J}$. Kaasun työ on $(V, p)$-kuvaajassa suorakulmion ala, ja se on vakiopaineessa ja laajenemisessa positiivinen. Noin $200\,\text{J}$ riittää nostamaan $2\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen.
+**Järkevyys:** Karkea arvio: $$\begin{aligned} &100\,000\,\text{Pa} \cdot 0{,}002\,\text{m}^3 \\ &= 200\,\text{J} \end{aligned}$$. Kaasun työ on $(V, p)$-kuvaajassa suorakulmion ala, ja se on vakiopaineessa ja laajenemisessa positiivinen. Noin $200\,\text{J}$ riittää nostamaan $2\,\text{kg}$:n kappaleen noin $10\,\text{m}$:n korkeuteen.
 
 ## fy3-11-L2-09
 **Annettu:** kuvaajasta luettuna alkutilavuus $V_1 = 1{,}0\,\textsf{l}$ ja lopputilavuus $V_2 = 4{,}0\,\textsf{l}$; poikkipinta-ala $A = 50\,\text{cm}^2$
@@ -272,4 +272,4 @@ Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $10
 **Muunnokset:** $V_2 - V_1 = 4{,}0\,\textsf{l} - 1{,}0\,\textsf{l} = 3{,}0\,\textsf{l} = 3{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0030\,\text{m}^3$ ja $A = 50\,\text{cm}^2 = 50 \cdot 0{,}0001\,\text{m}^2 = 0{,}0050\,\text{m}^2$.
 **Sijoitus:** $\Delta s = \dfrac{0{,}0030\,\text{m}^3}{0{,}0050\,\text{m}^2} = 0{,}60\,\text{m}$
 **Vastaus:** $\Delta s \approx 0{,}60\,\text{m}$, kaksi merkitsevää numeroa kuten luetuissa tilavuuksissa ja pinta-alassa.
-**Järkevyys:** Alussa kaasupatsaan pituus on $0{,}0010\,\text{m}^3 : 0{,}0050\,\text{m}^2 = 0{,}20\,\text{m}$ ja lopussa $0{,}0040\,\text{m}^3 : 0{,}0050\,\text{m}^2 = 0{,}80\,\text{m}$. Erotus on $0{,}60\,\text{m}$, kuten laskettu.
+**Järkevyys:** Alussa kaasupatsaan pituus on $$\begin{aligned} &0{,}0010\,\text{m}^3 : 0{,}0050\,\text{m}^2 \\ &= 0{,}20\,\text{m} \end{aligned}$$ ja lopussa $$\begin{aligned} &0{,}0040\,\text{m}^3 : 0{,}0050\,\text{m}^2 \\ &= 0{,}80\,\text{m} \end{aligned}$$. Erotus on $0{,}60\,\text{m}$, kuten laskettu.

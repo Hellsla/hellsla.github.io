@@ -230,7 +230,7 @@
     {
       "id": "fy3-12-L2-06",
       "level": 2,
-      "text": "A student calculates how large a thermal power is conducted through a window. The window has an area of $1.6\\,\\text{m}^2$ and a U-value of $1.0\\,\\text{W/(m}^2\\cdot\\text{K)}$. It is $21\\,{}^\\circ\\text{C}$ indoors and $-15\\,{}^\\circ\\text{C}$ outdoors. The student's solution is: “The temperature difference is $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, so $P = UA\\Delta T = 1.0 \\cdot 1.6 \\cdot 6\\,\\text{W} = 9.6\\,\\text{W}$.”\n\na) Where is the error in the student's solution, and how would you notice already with rounded numbers that the result is too small?\n\nb) Calculate correctly the thermal power conducted through the window.\n\nEnter the result of part b) in the answer box.",
+      "text": "A student calculates how large a thermal power is conducted through a window. The window has an area of $1.6\\,\\text{m}^2$ and a U-value of $1.0\\,\\text{W/(m}^2\\cdot\\text{K)}$. It is $21\\,{}^\\circ\\text{C}$ indoors and $-15\\,{}^\\circ\\text{C}$ outdoors. The student's solution is: “The temperature difference is $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, so $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1.0 \\cdot 1.6 \\cdot 6\\,\\text{W} \\\\ &= 9.6\\,\\text{W} \\end{aligned}$$.”\n\na) Where is the error in the student's solution, and how would you notice already with rounded numbers that the result is too small?\n\nb) Calculate correctly the thermal power conducted through the window.\n\nEnter the result of part b) in the answer box.",
       "kind": [
         "error"
       ],

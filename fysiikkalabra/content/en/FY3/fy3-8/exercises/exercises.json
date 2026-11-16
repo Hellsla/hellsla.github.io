@@ -108,7 +108,7 @@
       "kind": [
         "error"
       ],
-      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 = 3.0\\,\\text{mm}$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
+      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 \\\\ &= 3.0\\,\\text{mm} \\end{aligned}$$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02

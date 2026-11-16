@@ -96,7 +96,7 @@
 **Periaate:** Syvällä kuplaan kohdistuu ilmanpaineen lisäksi veden hydrostaattinen paine. Nouseva kupla on tasapainossa ympäröivän veden kanssa. Sen paine on siis aina ympäristön paine. Lämpötila ja ilman määrä pysyvät samoina, joten Boylen laki pätee.
 **Kaava:** $p_1 = p_0 + \rho g h$ ja $p_1 V_1 = p_0 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_0} = \dfrac{(p_0 + \rho g h) V_1}{p_0}$
 **Muunnokset:** Hydrostaattinen paine pascaleina: $\rho g h = 196\,200\,\text{Pa} = 196{,}2\,\text{kPa}$, koska $1\,\text{kPa} = 1000\,\text{Pa}$. Tilavuudet ovat samassa yksikössä, joten niitä ei tarvitse muuntaa.
-**Sijoitus:** $p_1 = 101\,\text{kPa} + 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} = 101\,\text{kPa} + 196{,}2\,\text{kPa} = 297{,}2\,\text{kPa}$. $V_2 = \dfrac{297{,}2\,\text{kPa} \cdot 2{,}0\,\text{cm}^3}{101\,\text{kPa}} = 5{,}885\,\text{cm}^3$
+**Sijoitus:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} \\ &= 101\,\text{kPa} + 196{,}2\,\text{kPa} \\ &= 297{,}2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297{,}2\,\text{kPa} \cdot 2{,}0\,\text{cm}^3}{101\,\text{kPa}} = 5{,}885\,\text{cm}^3$
 **Vastaus:** $V_2 \approx 5{,}9\,\text{cm}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on kuplan tilavuus $2{,}0\,\text{cm}^3$ (kaksi numeroa). Syvyys $20{,}0\,\text{m}$ ja ilmanpaine $101\,\text{kPa}$ ovat kolmen numeron arvoja. Veden tiheys $1000\,\tfrac{\text{kg}}{\text{m}^3}$ on tunnettu taulukkoarvo, eikä se rajoita tulosta.
 **Järkevyys:** Joka kymmenes vesimetri lisää noin ilmanpaineen verran. Syvyydessä $20\,\text{m}$ paine on siis noin $3 p_0$. Tilavuus pinnalla on noin kolminkertainen: $3 \cdot 2{,}0\,\text{cm}^3 \approx 6\,\text{cm}^3$. Sama koskee keuhkoja. Jos paineilmalla sukeltava pidättäisi hengitystään noustessaan, keuhkojen ilma pyrkisi laajenemaan lähes kolminkertaiseksi. Keuhkot eivät veny niin paljon. Keuhkokudos voi vaurioitua jo paljon pienemmästä laajenemisesta. Noustessa ei saa koskaan pidättää hengitystä. Hengitetään normaalisti koko nousun ajan. Silloin laajeneva ilma pääsee ulos keuhkoista.
 
@@ -134,7 +134,7 @@
 **Muunnokset:** Yksikköjä ei tarvitse muuntaa. Kilopascalit supistuvat osamäärässä. Tilavuus tulee suoraan litroina.
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1{,}50\,\textsf{l}}{240\,\text{kPa}} = 0{,}6312\,\textsf{l}$
 **Vastaus:** $V_2 \approx 0{,}63\,\textsf{l}$, kaksi merkitsevää numeroa. Paine $240\,\text{kPa}$ on annettu kahdella merkitsevällä numerolla.
-**Järkevyys:** Paine kasvaa, joten tilavuuden täytyy pienentyä. Painesuhde on $240 : 101 \approx 2{,}4$, ja $1{,}50\,\textsf{l} : 2{,}4 \approx 0{,}63\,\textsf{l}$. Tulo $pV$ on alussa $101\,\text{kPa} \cdot 1{,}50\,\textsf{l} = 151{,}5\,\text{kPa}\cdot\textsf{l}$. Lopussa se on $240\,\text{kPa} \cdot 0{,}6312\,\textsf{l} = 151{,}5\,\text{kPa}\cdot\textsf{l}$.
+**Järkevyys:** Paine kasvaa, joten tilavuuden täytyy pienentyä. Painesuhde on $240 : 101 \approx 2{,}4$, ja $1{,}50\,\textsf{l} : 2{,}4 \approx 0{,}63\,\textsf{l}$. Tulo $pV$ on alussa $101\,\text{kPa} \cdot 1{,}50\,\textsf{l} = 151{,}5\,\text{kPa}\cdot\textsf{l}$. Lopussa se on $$\begin{aligned} &240\,\text{kPa} \cdot 0{,}6312\,\textsf{l} \\ &= 151{,}5\,\text{kPa}\cdot\textsf{l} \end{aligned}$$.
 
 ## fy3-9-L1-08
 **Kysytty:** mitä origon kautta kulkeva suora $(1/V,\,p)$-kuvaajassa osoittaa.
@@ -159,7 +159,7 @@ p &= kT \\
 \end{aligned}$$
 
 **Vastaus:** $p \approx 127\,\text{kPa}$, kolme merkitsevää numeroa kuten taulukon paineissa.
-**Järkevyys:** Kelvinlämpötila kasvaa lämpötilasta $80\,{}^\circ\text{C}$ lämpötilaan $100\,{}^\circ\text{C}$ suhteessa $373{,}15 : 353{,}15 \approx 1{,}057$. Lasku $119{,}8\,\text{kPa} \cdot 1{,}057 \approx 126{,}6\,\text{kPa}$ antaa lähes saman tuloksen. Sama lasku alkutilasta: $99{,}8\,\text{kPa} \cdot \dfrac{373{,}15}{293{,}15} \approx 127{,}0\,\text{kPa}$. Tulos on suurempi kuin viimeinen mitattu arvo $119{,}8\,\text{kPa}$. Niin pitääkin olla, kun lämpötila nousee.
+**Järkevyys:** Kelvinlämpötila kasvaa lämpötilasta $80\,{}^\circ\text{C}$ lämpötilaan $100\,{}^\circ\text{C}$ suhteessa $373{,}15 : 353{,}15 \approx 1{,}057$. Lasku $$\begin{aligned} &119{,}8\,\text{kPa} \cdot 1{,}057 \\ &\approx 126{,}6\,\text{kPa} \end{aligned}$$ antaa lähes saman tuloksen. Sama lasku alkutilasta: $99{,}8\,\text{kPa} \cdot \dfrac{373{,}15}{293{,}15} \approx 127{,}0\,\text{kPa}$. Tulos on suurempi kuin viimeinen mitattu arvo $119{,}8\,\text{kPa}$. Niin pitääkin olla, kun lämpötila nousee.
 
 ## fy3-9-L2-06
 **Annettu:** taulukosta $V = 10{,}0$; $20{,}0$; $30{,}0$; $40{,}0\,\text{ml}$ ja $p = 200$; $109$; $75{,}0$; $57{,}1\,\text{kPa}$, lämpötila vakio; letkun ja mittarin ilman tilavuus $V_\text{h}$ on vakio mutta tuntematon
@@ -177,7 +177,7 @@ V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142{,}9\,\text{kPa}} \\
 \end{aligned}$$
 
 **Vastaus:** $V_\text{h} \approx 2{,}0\,\text{ml}$, kaksi merkitsevää numeroa. Tulo-ero $284\,\text{kPa}\cdot\text{ml}$ on pieni verrattuna tuloihin. Tulos on siksi herkkä lukemille, eikä sitä voi antaa tarkemmin.
-**Järkevyys:** Tulot $p\,(V + V_\text{h})$ arvolla $V_\text{h} = 2{,}0\,\text{ml}$ ovat $200 \cdot 12{,}0 = 2400$; $109 \cdot 22{,}0 = 2398$; $75{,}0 \cdot 32{,}0 = 2400$ ja $57{,}1 \cdot 42{,}0 = 2398\,\text{kPa}\cdot\text{ml}$. Ne ovat vakioita alle $0{,}1\,\%$:n tarkkuudella. Korjattu Boylen laki sopii siis kaikkiin neljään riviin. Kahden millilitran letkutilavuus on järkevä. Ohut letku ja mittarin sisus mahtuvat pieneen tilaan.
+**Järkevyys:** Tulot $p\,(V + V_\text{h})$ arvolla $V_\text{h} = 2{,}0\,\text{ml}$ ovat $200 \cdot 12{,}0 = 2400$; $109 \cdot 22{,}0 = 2398$; $75{,}0 \cdot 32{,}0 = 2400$ ja $$\begin{aligned} &57{,}1 \cdot 42{,}0 \\ &= 2398\,\text{kPa}\cdot\text{ml} \end{aligned}$$. Ne ovat vakioita alle $0{,}1\,\%$:n tarkkuudella. Korjattu Boylen laki sopii siis kaikkiin neljään riviin. Kahden millilitran letkutilavuus on järkevä. Ohut letku ja mittarin sisus mahtuvat pieneen tilaan.
 
 ## fy3-9-L2-07
 **Annettu:** taulukosta $\theta = 0{,}0$; $20{,}0$; $40{,}0$; $60{,}0$; $80{,}0\,{}^\circ\text{C}$ ja $p = 100{,}1$; $107{,}3$; $114{,}9$; $121{,}8$; $129{,}1\,\text{kPa}$, tilavuus ja ilman määrä vakioita
@@ -202,7 +202,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Vastaus:** $\theta_0 \approx -276\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten paineissa. Kuvaajalta lukeminen ja jatkaminen ovat arvioita, joten hyväksytään $\pm 3\,\%$.
-**Järkevyys:** Kun $\theta = -276\,{}^\circ\text{C}$, paine on $100{,}1\,\text{kPa} + 0{,}3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276{,}1\,\text{K}) \approx 0\,\text{kPa}$. Tulos on lähellä tunnettua arvoa $-273{,}15\,{}^\circ\text{C}$. Jos tulokseksi tulisi esimerkiksi $-100\,{}^\circ\text{C}$ tai $-500\,{}^\circ\text{C}$, kulmakerroin olisi luettu väärin.
+**Järkevyys:** Kun $\theta = -276\,{}^\circ\text{C}$, paine on $$\begin{aligned} &100{,}1\,\text{kPa} \\ &+ 0{,}3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276{,}1\,\text{K}) \\ &\approx 0\,\text{kPa} \end{aligned}$$. Tulos on lähellä tunnettua arvoa $-273{,}15\,{}^\circ\text{C}$. Jos tulokseksi tulisi esimerkiksi $-100\,{}^\circ\text{C}$ tai $-500\,{}^\circ\text{C}$, kulmakerroin olisi luettu väärin.
 
 ## fy3-9-L3-04
 **Annettu:** alkutila $V_1 = 40{,}0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 20{,}0\,{}^\circ\text{C}$; taulukosta paineet hitaassa ja nopeassa puristuksessa tilavuuksilla $40{,}0$; $30{,}0$; $20{,}0$ ja $10{,}0\,\text{ml}$; nopean puristuksen lopputilavuus $V_2 = 10{,}0\,\text{ml}$ ja paine $p_2 = 481\,\text{kPa}$
@@ -278,7 +278,7 @@ Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};
 **Muunnokset:** $70\,100\,\text{Pa} = 70{,}1\,\text{kPa}$, koska $1\,\text{kPa} = 1000\,\text{Pa}$. Tilavuus pysyy litroina, koska paineyksiköt supistuvat.
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}0\,\textsf{l}}{70{,}1\,\text{kPa}} = 2{,}882\,\textsf{l}$
 **Vastaus:** $V_2 \approx 2{,}9\,\textsf{l}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Paine $70\,100\,\text{Pa}$ on MAFY-taulukosta (ilmanpaine, tiheys ja lämpötila eri korkeuksilla). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Paine pienenee. Siksi tilavuuden täytyy kasvaa. Painesuhde on $101 : 70{,}1 \approx 1{,}44$, ja $2{,}0\,\textsf{l} \cdot 1{,}44 \approx 2{,}9\,\textsf{l}$. Tulo $pV$ on lopussa $70{,}1\,\text{kPa} \cdot 2{,}882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$. Se on sama kuin alussa: $101\,\text{kPa} \cdot 2{,}0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.
+**Järkevyys:** Paine pienenee. Siksi tilavuuden täytyy kasvaa. Painesuhde on $101 : 70{,}1 \approx 1{,}44$, ja $2{,}0\,\textsf{l} \cdot 1{,}44 \approx 2{,}9\,\textsf{l}$. Tulo $pV$ on lopussa $70{,}1\,\text{kPa} \cdot 2{,}882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$. Se on sama kuin alussa: $$\begin{aligned} &101\,\text{kPa} \cdot 2{,}0\,\textsf{l} \\ &= 202\,\text{kPa}\cdot\textsf{l} \end{aligned}$$.
 
 ## fy3-9-L2-09
 **Annettu:** kuvaajasta piste $(300\,\text{K};\ 120\,\text{kPa})$. Tilavuus ja ilman määrä eivät muutu. Lopputilan lämpötila on $\theta_2 = 100\,{}^\circ\text{C}$.

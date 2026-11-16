@@ -25,15 +25,15 @@
         {
           "text": "$30\\,\\text{N}$",
           "correct": true,
-          "feedback": "Oikein: $F = pA = 100\\,000\\,\\text{Pa} \\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 = 30\\,\\text{N}$. Paine on hiukkasten törmäysten aiheuttama voima pinta-alaa kohti, ja siihen tämä tunti nojaa."
+          "feedback": "Oikein: $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$. Paine on hiukkasten törmäysten aiheuttama voima pinta-alaa kohti, ja siihen tämä tunti nojaa."
         },
         {
           "text": "$300\\,\\text{N}$",
-          "feedback": "Neliösenttimetrien muunnos meni pieleen: $1\\,\\text{cm}^2 = (0{,}01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$, joten $3{,}0\\,\\text{cm}^2 = 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2$ ja $F = pA = 30\\,\\text{N}$."
+          "feedback": "Neliösenttimetrien muunnos meni pieleen: $$\\begin{aligned} 1\\,\\text{cm}^2 &= (0{,}01\\,\\text{m})^2 \\\\ &= 10^{-4}\\,\\text{m}^2 \\end{aligned}$$, joten $3{,}0\\,\\text{cm}^2 = 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2$ ja $F = pA = 30\\,\\text{N}$."
         },
         {
           "text": "$0{,}030\\,\\text{N}$",
-          "feedback": "Paine on sijoitettava pascaleina: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$. Silloin $F = pA = 100\\,000\\,\\text{Pa} \\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 = 30\\,\\text{N}$."
+          "feedback": "Paine on sijoitettava pascaleina: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$. Silloin $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$."
         },
         {
           "text": "$3{,}3 \\cdot 10^{8}$ N",
@@ -265,7 +265,7 @@
         "choices": [
           {
             "text": "Rivi $20\\,\\text{ml}$, koska siinä paine on suurin.",
-            "feedback": "Suuri paine ei ole poikkeama: pienin tilavuus antaa suurimman paineen. Rivillä $20\\,\\text{ml}$ $pV = 252\\,\\text{kPa} \\cdot 20\\,\\text{ml} = 5040\\,\\text{kPa}\\cdot\\text{ml}$, sama kuin rivillä $60\\,\\text{ml}$."
+            "feedback": "Suuri paine ei ole poikkeama: pienin tilavuus antaa suurimman paineen. Rivillä $20\\,\\text{ml}$ $$\\begin{aligned} pV &= 252\\,\\text{kPa} \\cdot 20\\,\\text{ml} \\\\ &= 5040\\,\\text{kPa}\\cdot\\text{ml} \\end{aligned}$$, sama kuin rivillä $60\\,\\text{ml}$."
           },
           {
             "text": "Rivi $30\\,\\text{ml}$, koska nopeassa puristuksessa ilma lämpeni.",
@@ -338,7 +338,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Pyöräpumpun sylinterissä on $0{,}50\\,\\textsf{l}$ ilmaa $101\\,\\text{kPa}$:n paineessa. Venttiili on kiinni, ja mäntää painetaan hitaasti, kunnes ilman tilavuus on $0{,}20\\,\\textsf{l}$. Lämpötila pysyy samana. Opiskelija laskee: $p_2 = \\dfrac{p_1 V_2}{V_1} = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}20\\,\\textsf{l}}{0{,}50\\,\\textsf{l}} \\approx 40\\,\\text{kPa}$. Missä on virhe?",
+      "prompt": "Pyöräpumpun sylinterissä on $0{,}50\\,\\textsf{l}$ ilmaa $101\\,\\text{kPa}$:n paineessa. Venttiili on kiinni, ja mäntää painetaan hitaasti, kunnes ilman tilavuus on $0{,}20\\,\\textsf{l}$. Lämpötila pysyy samana. Opiskelija laskee: $$\\begin{aligned} p_2 &= \\dfrac{p_1 V_2}{V_1} \\\\ &= \\dfrac{101\\,\\text{kPa} \\cdot 0{,}20\\,\\textsf{l}}{0{,}50\\,\\textsf{l}} \\\\ &\\approx 40\\,\\text{kPa} \\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
           "text": "Tilavuudet olisi pitänyt muuntaa kuutiometreiksi ja paine pascaleiksi.",
@@ -347,7 +347,7 @@
         {
           "text": "Tilavuuksien suhde on käännetty väärin päin. Boylen laista $p_2 = \\dfrac{p_1 V_1}{V_2} \\approx 250\\,\\text{kPa}$.",
           "correct": true,
-          "feedback": "Oikein. Kun tilavuus pienenee, paineen täytyy kasvaa, joten $40\\,\\text{kPa}$ on mahdoton tulos. Ratkaistaan symbolisesti ensin: $p_2 = p_1V_1/V_2 = 101\\,\\text{kPa} \\cdot 0{,}50\\,\\textsf{l} / 0{,}20\\,\\textsf{l} \\approx 250\\,\\text{kPa}$."
+          "feedback": "Oikein. Kun tilavuus pienenee, paineen täytyy kasvaa, joten $40\\,\\text{kPa}$ on mahdoton tulos. Ratkaistaan symbolisesti ensin: $$\\begin{aligned} p_2 &= p_1V_1/V_2 \\\\ &= 101\\,\\text{kPa} \\cdot 0{,}50\\,\\textsf{l} / 0{,}20\\,\\textsf{l} \\\\ &\\approx 250\\,\\text{kPa} \\end{aligned}$$."
         },
         {
           "text": "Lämpötila olisi pitänyt ottaa mukaan kelvineinä.",
@@ -433,7 +433,7 @@
         {
           "text": "Paine kasvaa noin $10\\,\\%$, koska kelvinlämpötila kasvaa arvosta $280\\,\\text{K}$ arvoon $308\\,\\text{K}$.",
           "correct": true,
-          "feedback": "Oikein. Kun tilavuus ja kaasun määrä pysyvät samoina, paine on verrannollinen kelvinlämpötilaan: $p_2/p_1 = T_2/T_1 = 308{,}15\\,\\text{K} / 280{,}15\\,\\text{K} \\approx 1{,}10$. Suhde lasketaan kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
+          "feedback": "Oikein. Kun tilavuus ja kaasun määrä pysyvät samoina, paine on verrannollinen kelvinlämpötilaan: $$\\begin{aligned} p_2/p_1 &= T_2/T_1 \\\\ &= 308{,}15\\,\\text{K} / 280{,}15\\,\\text{K} \\\\ &\\approx 1{,}10 \\end{aligned}$$. Suhde lasketaan kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
         },
         {
           "text": "Paine kasvaa $28\\,\\%$, koska lämpötila nousee $28$ astetta.",

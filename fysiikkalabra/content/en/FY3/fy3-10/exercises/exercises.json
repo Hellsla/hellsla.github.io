@@ -86,7 +86,7 @@
     {
       "id": "fy3-10-L1-08",
       "level": 1,
-      "text": "A student calculates the amount of substance of a gas when the pressure is $150\\,\\text{kPa}$, the volume is $0.0020\\,\\text{m}^3$ and the temperature is $300\\,\\text{K}$. The student writes\n\n$n = \\dfrac{150 \\cdot 0.0020}{8.31 \\cdot 300} = 1.2 \\cdot 10^{-4}\\,\\text{mol}$\n\nThe result seems small to the student, because two litres of gas surely contains more than a thousandth of a mole. What is the error in the calculation?",
+      "text": "A student calculates the amount of substance of a gas when the pressure is $150\\,\\text{kPa}$, the volume is $0.0020\\,\\text{m}^3$ and the temperature is $300\\,\\text{K}$. The student writes\n\n$$\\begin{aligned} n &= \\dfrac{150 \\cdot 0.0020}{8.31 \\cdot 300} \\\\ &= 1.2 \\cdot 10^{-4}\\,\\text{mol} \\end{aligned}$$\n\nThe result seems small to the student, because two litres of gas surely contains more than a thousandth of a mole. What is the error in the calculation?",
       "kind": [
         "error",
         "concept"
@@ -317,7 +317,7 @@
       "choices": [
         {
           "text": "Row 1: the conversions of pressure and volume",
-          "feedback": "Row 1 is correct: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ and $2.00\\,\\textsf{l} = 2.00\\,\\text{dm}^3 = 0.00200\\,\\text{m}^3$. If you think this row is wrong, you are mixing up the litre and the cubic metre (a cubic metre contains $1000\\,\\textsf{l}$)."
+          "feedback": "Row 1 is correct: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$ and $$\\begin{aligned} 2.00\\,\\textsf{l} &= 2.00\\,\\text{dm}^3 \\\\ &= 0.00200\\,\\text{m}^3 \\end{aligned}$$. If you think this row is wrong, you are mixing up the litre and the cubic metre (a cubic metre contains $1000\\,\\textsf{l}$)."
         },
         {
           "text": "Row 2: solving the equation of state",

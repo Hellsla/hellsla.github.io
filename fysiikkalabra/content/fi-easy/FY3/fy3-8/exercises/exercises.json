@@ -108,7 +108,7 @@
       "kind": [
         "error"
       ],
-      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee. Tangon lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Oppilas kirjoitti $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 = 3{,}0\\,\\text{mm}$ (yksiköt jätetty pois).\n\nLaskussa on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
+      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee. Tangon lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Oppilas kirjoitti $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 \\\\ &= 3{,}0\\,\\text{mm} \\end{aligned}$$ (yksiköt jätetty pois).\n\nLaskussa on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02

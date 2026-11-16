@@ -81,7 +81,7 @@
 **Conversions:** The grams do not need to be converted to kilograms, because the mass is in both the numerator and the denominator and the unit cancels. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
 **Substitution:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8.0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77.6\,{}^\circ\text{C}$
 **Answer:** $78\,{}^\circ\text{C}$, two significant figures as in the temperature $95\,{}^\circ\text{C}$ and the mass $40\,\text{g}$.
-**Reasonableness:** The result is between the initial temperatures and close to $95\,{}^\circ\text{C}$, because there is four times as much hot water. The energy balance holds: $160\,\text{g} \cdot 17.4\,\text{K} = 40\,\text{g} \cdot 69.6\,\text{K}$.
+**Reasonableness:** The result is between the initial temperatures and close to $95\,{}^\circ\text{C}$, because there is four times as much hot water. The energy balance holds: $$\begin{aligned} &160\,\text{g} \cdot 17.4\,\text{K} \\ &= 40\,\text{g} \cdot 69.6\,\text{K} \end{aligned}$$.
 
 ## fy3-6-L2-02
 **Given:** power $P = 100\,\text{W}$, mass of the object $m = 0.50\,\text{kg}$, temperature as a function of time in the graph; all the energy of the heater is transferred to the object
@@ -108,7 +108,7 @@
 **Given:** aluminium $m_1 = 0.25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; water $m_2 = 0.40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; from the table $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
 **Find:** the common final temperature $T$
 **Principle:** Energy is conserved: the heat given out by the ladle is equal to the heat received by the water, and at the end both have the same temperature. The substances are different, so the specific heat capacities do not cancel.
-**Formula:** $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$, from which $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
+**Formula:** $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$, from which $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
 **Conversions:** The masses are already in kilograms. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
 **Substitution:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ and $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, so $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27.11\,{}^\circ\text{C}$
 **Answer:** $27\,{}^\circ\text{C}$, two significant figures as in the masses.
@@ -140,7 +140,7 @@
 **Given:** water $m_\text{w} = 0.50\,\text{kg}$, $T_\text{w} = 20\,{}^\circ\text{C}$; copper $m_\text{c} = 0.20\,\text{kg}$, $T_\text{c} = 100\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $c_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
 **Find:** a) the error of the student; b) the equilibrium temperature $T$
 **Principle:** In an insulated vessel the heat given out by the copper is equal to the heat received by the water. The student's mean would be correct only if the heat capacities $c m$ of the objects were equal. Here the heat capacity of the water is many times that of the copper, so the equilibrium temperature is close to the initial temperature of the water, not halfway.
-**Formula:** $c_\text{c} m_\text{c} (T_\text{c} - T) = c_\text{w} m_\text{w} (T - T_\text{w})$, so $T = \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}$
+**Formula:** $$\begin{aligned} &c_\text{c} m_\text{c} (T_\text{c} - T) \\ &= c_\text{w} m_\text{w} (T - T_\text{w}) \end{aligned}$$, so $T = \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}$
 **Conversions:** The heat capacities are $c_\text{c} m_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ and $c_\text{w} m_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. The temperatures can be substituted in degrees Celsius, because the result is a weighted mean.
 **Substitution:** The numerator is $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ and the denominator $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, so $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22.84\,{}^\circ\text{C}$
 **Answer:** $23\,{}^\circ\text{C}$, two significant figures as in the mass $0.20\,\text{kg}$ and the temperature $20\,{}^\circ\text{C}$.
@@ -149,7 +149,7 @@
 ## fy3-6-L2-08
 **Find:** which of the lines of the student's calculation is wrong.
 **Principle:** The amount of heat is $Q = c m \Delta T$, where $\Delta T$ is the final temperature minus the initial temperature. When something cools, $\Delta T$ and $Q$ are negative, and the minus sign tells that the body gives out energy to the surroundings. The calculation can be checked line by line: the change in temperature, the formula, the substitution and the interpretation of the result.
-**Model answer:** Line 1: $\Delta T = 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} = -180\,\text{K}$ is correct, because a change in temperature is the same in kelvins and in degrees Celsius.
+**Model answer:** Line 1: $$\begin{aligned} \Delta T &= 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} \\ &= -180\,\text{K} \end{aligned}$$ is correct, because a change in temperature is the same in kelvins and in degrees Celsius.
 Line 2: $Q = c m \Delta T$ is correct, because the state of matter of the plate does not change.
 Line 3: $450 \cdot 3.0 = 1350$ and $1350 \cdot (-180) = -243\,000$, so $Q = -243\,000\,\text{J}$ is correct.
 Line 4 is wrong, because a negative amount of heat is possible: it tells that the plate gives out energy.
@@ -160,7 +160,7 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Given:** water $m_\text{w} = 20\,\text{kg}$, $T_\text{w} = 10\,{}^\circ\text{C}$, target $T = 40\,{}^\circ\text{C}$, $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; stones $T_\text{s} = 300\,{}^\circ\text{C}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no losses and no vaporisation
 **Find:** the mass of the stones $m_\text{s}$
 **Principle:** Energy is conserved: the heat given out by the stones is equal to the heat received by the water. In equilibrium the stones and the water are at the same temperature, so the stones cool down to $40\,{}^\circ\text{C}$, not to $0\,{}^\circ\text{C}$.
-**Formula:** $c_\text{s} m_\text{s} (T_\text{s} - T) = c_\text{w} m_\text{w} (T - T_\text{w})$, from which $m_\text{s} = \dfrac{c_\text{w} m_\text{w} (T - T_\text{w})}{c_\text{s} (T_\text{s} - T)}$
+**Formula:** $$\begin{aligned} &c_\text{s} m_\text{s} (T_\text{s} - T) \\ &= c_\text{w} m_\text{w} (T - T_\text{w}) \end{aligned}$$, from which $m_\text{s} = \dfrac{c_\text{w} m_\text{w} (T - T_\text{w})}{c_\text{s} (T_\text{s} - T)}$
 **Conversions:** The temperature differences are the same in kelvins: $T - T_\text{w} = 30\,\text{K}$ and $T_\text{s} - T = 260\,\text{K}$. The other quantities are in SI units.
 **Substitution:** $m_\text{s} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12.09\,\text{kg}$
 **Answer:** $12\,\text{kg}$, two significant figures as in the mass $20\,\text{kg}$.

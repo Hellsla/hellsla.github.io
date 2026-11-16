@@ -81,7 +81,7 @@
 **Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi. Massa on sekä osoittajassa että nimittäjässä, joten yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8{,}0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77{,}6\,{}^\circ\text{C}$
 **Vastaus:** $78\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpötilassa $95\,{}^\circ\text{C}$ ja massassa $40\,\text{g}$.
-**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta. Kuumaa vettä on nimittäin neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
+**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta. Kuumaa vettä on nimittäin neljä kertaa enemmän. Energiatase toteutuu: $$\begin{aligned} &160\,\text{g} \cdot 17{,}4\,\text{K} \\ &= 40\,\text{g} \cdot 69{,}6\,\text{K} \end{aligned}$$.
 
 ## fy3-6-L2-02
 **Annettu:** teho $P = 100\,\text{W}$, kappaleen massa $m = 0{,}50\,\text{kg}$, lämpötila ajan funktiona kuvaajassa; kaikki lämmittimen energia siirtyy kappaleeseen
@@ -108,7 +108,7 @@
 **Annettu:** alumiini $m_1 = 0{,}25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; vesi $m_2 = 0{,}40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; taulukosta $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** yhteinen loppulämpötila $T$
 **Periaate:** Energia säilyy. Kauhan luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Lopussa molemmilla on sama lämpötila. Aineet ovat eri, joten ominaislämpökapasiteetit eivät supistu.
-**Kaava:** $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
+**Kaava:** $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
 **Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ ja $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27{,}11\,{}^\circ\text{C}$
 **Vastaus:** $27\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massoissa.
@@ -140,7 +140,7 @@
 **Annettu:** vesi $m_\text{v} = 0{,}50\,\text{kg}$, $T_\text{v} = 20\,{}^\circ\text{C}$; kupari $m_\text{k} = 0{,}20\,\text{kg}$, $T_\text{k} = 100\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $c_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** a) oppilaan virhe; b) tasapainolämpötila $T$
 **Periaate:** Eristetyssä astiassa kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Oppilaan keskiarvo olisi oikein vain, jos kappaleiden lämpökapasiteetit $c m$ olisivat yhtä suuret. Nyt veden lämpökapasiteetti on moninkertainen kuparin kapasiteettiin verrattuna. Siksi tasapainolämpötila on lähellä veden alkulämpötilaa, ei puolivälissä.
-**Kaava:** $c_\text{k} m_\text{k} (T_\text{k} - T) = c_\text{v} m_\text{v} (T - T_\text{v})$, joten $T = \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}$
+**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, joten $T = \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}$
 **Muunnokset:** Lämpökapasiteetit ovat $c_\text{k} m_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ ja $c_\text{v} m_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. Lämpötilat voi sijoittaa celsiusasteina, koska tulos on keskiarvo, jossa suuremman lämpökapasiteetin kappaleen lämpötila painaa enemmän.
 **Sijoitus:** Osoittaja on $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ ja nimittäjä $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22{,}84\,{}^\circ\text{C}$
 **Vastaus:** $23\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja lämpötilassa $20\,{}^\circ\text{C}$.
@@ -149,7 +149,7 @@
 ## fy3-6-L2-08
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
 **Periaate:** Lämpömäärä on $Q = c m \Delta T$, missä $\Delta T$ on loppulämpötila miinus alkulämpötila. Jäähtyessä $\Delta T$ ja $Q$ ovat negatiivisia. Miinusmerkki kertoo, että kappale luovuttaa eli antaa energiaa ympäristöön. Laskun voi tarkistaa rivi riviltä: lämpötilan muutos, kaava, sijoitus ja tuloksen tulkinta.
-**Mallivastaus:** Rivi 1: $\Delta T = 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} = -180\,\text{K}$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
+**Mallivastaus:** Rivi 1: $$\begin{aligned} \Delta T &= 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} \\ &= -180\,\text{K} \end{aligned}$$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
 Rivi 2: $Q = c m \Delta T$ on oikein, koska levyn olomuoto ei muutu.
 Rivi 3: $450 \cdot 3{,}0 = 1350$ ja $1350 \cdot (-180) = -243\,000$, joten $Q = -243\,000\,\text{J}$ on oikein.
 Rivi 4 on väärin, koska negatiivinen lämpömäärä on mahdollinen: se kertoo, että levy luovuttaa energiaa.
@@ -160,7 +160,7 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee. Levy ei voi samalla 
 **Annettu:** vesi $m_\text{v} = 20\,\text{kg}$, $T_\text{v} = 10\,{}^\circ\text{C}$, tavoite $T = 40\,{}^\circ\text{C}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kivet $T_\text{k} = 300\,{}^\circ\text{C}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei häviöitä eikä höyrystymistä
 **Kysytty:** kivien massa $m_\text{k}$
 **Periaate:** Energia säilyy. Kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa. Siksi kivet jäähtyvät $40\,{}^\circ\text{C}$:seen asti, eivät $0\,{}^\circ\text{C}$:seen.
-**Kaava:** $c_\text{k} m_\text{k} (T_\text{k} - T) = c_\text{v} m_\text{v} (T - T_\text{v})$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
+**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\text{v} = 30\,\text{K}$ ja $T_\text{k} - T = 260\,\text{K}$. Muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $m_\text{k} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12{,}09\,\text{kg}$
 **Vastaus:** $12\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{kg}$.

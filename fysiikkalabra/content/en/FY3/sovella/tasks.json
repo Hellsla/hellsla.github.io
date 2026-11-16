@@ -74,7 +74,7 @@
           },
           "criteria": [
             {
-              "text": "Calculates the radiation power arriving at the collector, $800\\,\\text{W/m}^2 \\cdot 0.50\\,\\text{m}^2 = 400\\,\\text{W}$, and the efficiency as the ratio of useful power to incoming power.",
+              "text": "Calculates the radiation power arriving at the collector, $$\\begin{aligned} &800\\,\\text{W/m}^2 \\cdot 0.50\\,\\text{m}^2 \\\\ &= 400\\,\\text{W} \\end{aligned}$$, and the efficiency as the ratio of useful power to incoming power.",
               "tag": "math",
               "points": 1
             },

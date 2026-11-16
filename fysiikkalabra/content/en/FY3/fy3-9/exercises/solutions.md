@@ -96,7 +96,7 @@
 **Principle:** Deep down, the bubble is subject to the hydrostatic pressure of the water in addition to the atmospheric pressure. A rising bubble is in balance with the surrounding water, so its pressure is always the pressure of its surroundings. The temperature and the amount of air stay the same, so Boyle's law holds.
 **Formula:** $p_1 = p_0 + \rho g h$ and $p_1 V_1 = p_0 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_0} = \dfrac{(p_0 + \rho g h) V_1}{p_0}$
 **Conversions:** The hydrostatic pressure in pascals: $\rho g h = 196\,200\,\text{Pa} = 196.2\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volumes are in the same unit, so they do not need to be converted.
-**Substitution:** $p_1 = 101\,\text{kPa} + 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} = 101\,\text{kPa} + 196.2\,\text{kPa} = 297.2\,\text{kPa}$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
+**Substitution:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} \\ &= 101\,\text{kPa} + 196.2\,\text{kPa} \\ &= 297.2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
 **Answer:** $V_2 \approx 5.9\,\text{cm}^3$, two significant figures. The limiting value is the volume of the bubble, $2.0\,\text{cm}^3$ (two figures); the depth $20.0\,\text{m}$ and the atmospheric pressure $101\,\text{kPa}$ have three figures, and the density of water, $1000\,\tfrac{\text{kg}}{\text{m}^3}$, is a known table value that does not limit the result.
 **Reasonableness:** Every ten metres of water adds about one atmosphere of pressure, so at $20\,\text{m}$ the pressure is about $3 p_0$ and the volume at the surface is about three times as large: $3 \cdot 2.0\,\text{cm}^3 \approx 6\,\text{cm}^3$. The same applies to the lungs: if a person diving with compressed air held their breath while rising, the air in the lungs would try to expand to almost three times its volume. The lungs cannot stretch that much, and lung tissue can be damaged by far smaller expansion. You must never hold your breath when rising: breathe normally throughout the ascent, so that the expanding air can leave the lungs.
 
@@ -134,7 +134,7 @@
 **Conversions:** No units need to be converted: the kilopascals cancel in the quotient, and the volume comes out directly in litres.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1.50\,\textsf{l}}{240\,\text{kPa}} = 0.6312\,\textsf{l}$
 **Answer:** $V_2 \approx 0.63\,\textsf{l}$, two significant figures like the pressure $240\,\text{kPa}$.
-**Reasonableness:** The pressure increases, so the volume must decrease. The pressure ratio is $240 : 101 \approx 2.4$, and $1.50\,\textsf{l} : 2.4 \approx 0.63\,\textsf{l}$. The product $pV$ is $101\,\text{kPa} \cdot 1.50\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the start and $240\,\text{kPa} \cdot 0.6312\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the end.
+**Reasonableness:** The pressure increases, so the volume must decrease. The pressure ratio is $240 : 101 \approx 2.4$, and $1.50\,\textsf{l} : 2.4 \approx 0.63\,\textsf{l}$. The product $pV$ is $101\,\text{kPa} \cdot 1.50\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the start and $$\begin{aligned} &240\,\text{kPa} \cdot 0.6312\,\textsf{l} \\ &= 151.5\,\text{kPa}\cdot\textsf{l} \end{aligned}$$ at the end.
 
 ## fy3-9-L1-08
 **Find:** what a straight line through the origin in a $(1/V,\,p)$ graph shows.
@@ -159,7 +159,7 @@ p &= kT \\
 \end{aligned}$$
 
 **Answer:** $p \approx 127\,\text{kPa}$, three significant figures like the pressures in the table.
-**Reasonableness:** The temperature in kelvins increases from $80\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ in the ratio $373.15 : 353.15 \approx 1.057$, and $119.8\,\text{kPa} \cdot 1.057 \approx 126.6\,\text{kPa}$. The same calculation from the initial state: $99.8\,\text{kPa} \cdot \dfrac{373.15}{293.15} \approx 127.0\,\text{kPa}$. The result is greater than the last measured value $119.8\,\text{kPa}$, as it should be when the temperature rises.
+**Reasonableness:** The temperature in kelvins increases from $80\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ in the ratio $373.15 : 353.15 \approx 1.057$, and $$\begin{aligned} &119.8\,\text{kPa} \cdot 1.057 \\ &\approx 126.6\,\text{kPa} \end{aligned}$$. The same calculation from the initial state: $99.8\,\text{kPa} \cdot \dfrac{373.15}{293.15} \approx 127.0\,\text{kPa}$. The result is greater than the last measured value $119.8\,\text{kPa}$, as it should be when the temperature rises.
 
 ## fy3-9-L2-06
 **Given:** from the table $V = 10.0$; $20.0$; $30.0$; $40.0\,\text{ml}$ and $p = 200$; $109$; $75.0$; $57.1\,\text{kPa}$, temperature constant; the volume $V_\text{h}$ of the air in the hose and the gauge is constant but unknown
@@ -177,7 +177,7 @@ V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142.9\,\text{kPa}} \\
 \end{aligned}$$
 
 **Answer:** $V_\text{h} \approx 2.0\,\text{ml}$, two significant figures. The difference of the products $284\,\text{kPa}\cdot\text{ml}$ is small compared with the products, so the result is sensitive to the readings and cannot be given more precisely.
-**Reasonableness:** The products $p\,(V + V_\text{h})$ with $V_\text{h} = 2.0\,\text{ml}$ are $200 \cdot 12.0 = 2400$; $109 \cdot 22.0 = 2398$; $75.0 \cdot 32.0 = 2400$ and $57.1 \cdot 42.0 = 2398\,\text{kPa}\cdot\text{ml}$. They are constant to within $0.1\,\%$, so the corrected Boyle's law fits all four rows. A hose volume of two millilitres is reasonable: a thin hose and the inside of the gauge fit in a small space.
+**Reasonableness:** The products $p\,(V + V_\text{h})$ with $V_\text{h} = 2.0\,\text{ml}$ are $200 \cdot 12.0 = 2400$; $109 \cdot 22.0 = 2398$; $75.0 \cdot 32.0 = 2400$ and $$\begin{aligned} &57.1 \cdot 42.0 \\ &= 2398\,\text{kPa}\cdot\text{ml} \end{aligned}$$. They are constant to within $0.1\,\%$, so the corrected Boyle's law fits all four rows. A hose volume of two millilitres is reasonable: a thin hose and the inside of the gauge fit in a small space.
 
 ## fy3-9-L2-07
 **Given:** from the table $\theta = 0.0$; $20.0$; $40.0$; $60.0$; $80.0\,{}^\circ\text{C}$ and $p = 100.1$; $107.3$; $114.9$; $121.8$; $129.1\,\text{kPa}$, volume and amount of air constant
@@ -202,7 +202,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Answer:** $\theta_0 \approx -276\,{}^\circ\text{C}$, three significant figures like the pressures. Reading from a graph and extrapolating are estimates, so $\pm 3\,\%$ is accepted.
-**Reasonableness:** When $\theta = -276\,{}^\circ\text{C}$, the pressure is $100.1\,\text{kPa} + 0.3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276.1\,\text{K}) \approx 0\,\text{kPa}$. The result is close to the known value $-273.15\,{}^\circ\text{C}$. If the result were, for example, $-100\,{}^\circ\text{C}$ or $-500\,{}^\circ\text{C}$, the slope would have been read wrongly.
+**Reasonableness:** When $\theta = -276\,{}^\circ\text{C}$, the pressure is $$\begin{aligned} &100.1\,\text{kPa} \\ &+ 0.3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276.1\,\text{K}) \\ &\approx 0\,\text{kPa} \end{aligned}$$. The result is close to the known value $-273.15\,{}^\circ\text{C}$. If the result were, for example, $-100\,{}^\circ\text{C}$ or $-500\,{}^\circ\text{C}$, the slope would have been read wrongly.
 
 ## fy3-9-L3-04
 **Given:** initial state $V_1 = 40.0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 20.0\,{}^\circ\text{C}$; from the table the pressures in slow and fast compression at the volumes $40.0$; $30.0$; $20.0$ and $10.0\,\text{ml}$; final volume of the fast compression $V_2 = 10.0\,\text{ml}$ and pressure $p_2 = 481\,\text{kPa}$
@@ -278,7 +278,7 @@ Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\te
 **Conversions:** $70\,100\,\text{Pa} = 70.1\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volume stays in litres, because the pressure units cancel.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.0\,\textsf{l}}{70.1\,\text{kPa}} = 2.882\,\textsf{l}$
 **Answer:** $V_2 \approx 2.9\,\textsf{l}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The pressure $70\,100\,\text{Pa}$ is from the MAFY table (air pressure, density and temperature at different heights); the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $101\,\text{kPa} \cdot 2.0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.
+**Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $$\begin{aligned} &101\,\text{kPa} \cdot 2.0\,\textsf{l} \\ &= 202\,\text{kPa}\cdot\textsf{l} \end{aligned}$$.
 
 ## fy3-9-L2-09
 **Given:** from the graph the point $(300\,\text{K};\ 120\,\text{kPa})$, volume and amount of air constant; final temperature $\theta_2 = 100\,{}^\circ\text{C}$

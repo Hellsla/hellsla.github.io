@@ -105,7 +105,7 @@ Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mu
 **Annettu:** mehu (veden $c$) $m_1 = 0{,}35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; jää $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** loppulämpötila $T$, kun kaikki jää on sulanut
 **Periaate:** Energia säilyy, kun lämpöä ei siirry lasiin eikä ilmaan: mehun luovuttama lämpömäärä on yhtä suuri kuin jään sulamiseen ja sulamisveden lämmittämiseen kuluva. Jää sulaa kokonaan, jos mehu riittää: se luovuttaisi jäähtyessään $0\,{}^\circ\text{C}$:seen $36\,662{,}5\,\text{J}$, mutta sulaminen vaatii vain $20\,040\,\text{J}$.
-**Kaava:** $cm_1(T_1 - T) = sm_2 + cm_2(T - T_0)$, josta $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
+**Kaava:** $$\begin{aligned} &cm_1(T_1 - T) \\ &= sm_2 + cm_2(T - T_0) \end{aligned}$$, josta $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
 **Muunnokset:** $m_2 = 60\,\text{g} = 0{,}060\,\text{kg}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Koska $T_0 = 0\,{}^\circ\text{C}$, termi $cm_2T_0$ on nolla, ja lämpötilat voi sijoittaa celsiusasteina, koska kaava sisältää lämpötilaeroja.
 **Sijoitus:** Osoittaja on $4190 \cdot 0{,}35 \cdot 25 - 334\,000 \cdot 0{,}060 = 36\,662{,}5 - 20\,040 = 16\,622{,}5$ ja nimittäjä $4190 \cdot 0{,}41 = 1717{,}9$, joten
 
@@ -118,7 +118,7 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Annettu:** vesi $m = 0{,}25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, lämpenee $T_2 = 100\,{}^\circ\text{C}$:seen ja höyrystyy kokonaan; kivet $m_\text{k} = 30\,\text{kg}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kivien lämpötilan lasku $\Delta T$ kelvineinä
 **Periaate:** Energia säilyy: kaikki veden tarvitsema energia tulee kivistä. Vesi tarvitsee ensin lämpenemiseen $cm(T_2 - T_1)$ ja sitten höyrystymiseen, jossa lämpötila ei muutu, $rm$. Kivien luovuttama lämpömäärä on $c_\text{k}m_\text{k}\Delta T$.
-**Kaava:** $c_\text{k}m_\text{k}\Delta T = cm(T_2 - T_1) + rm$, josta $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{k}m_\text{k}}$
+**Kaava:** $$c_\text{k}m_\text{k}\Delta T = cm(T_2 - T_1) + rm$$, josta $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{k}m_\text{k}}$
 **Muunnokset:** $T_2 - T_1 = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ ja $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}25\,\text{kg} = 565\,000\,\text{J}$, joten $\Delta T = \dfrac{648\,800\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{648\,800\,\text{J}}{24\,000\,\tfrac{\text{J}}{\text{K}}} = 27{,}03\,\text{K}$
 **Vastaus:** $27\,\text{K}$, kaksi merkitsevää numeroa kuten massassa $0{,}25\,\text{kg}$.
@@ -132,7 +132,7 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Muunnokset:** $t = 10{,}0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0{,}196\,\text{kg}$ ja $\Delta m_2 = 0{,}0900\,\text{kg}$. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
 **Sijoitus:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0{,}196\,\text{kg} - 0{,}0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0{,}106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2{,}264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Vastaus:** $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$, kolme merkitsevää numeroa: erotus $196\,\text{g} - 90{,}0\,\text{g} = 106\,\text{g}$ on gramman tarkkuudella ja sillä on kolme numeroa.
-**Järkevyys:** Ilmaan siirtyvä energia $P_\text{h}t$ on sama kummassakin mittauksessa ja kumoutuu erotuksesta. Yksittäiset mittaukset antaisivat $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0{,}196\,\text{kg}} \approx 2{,}45\,\tfrac{\text{MJ}}{\text{kg}}$ ja $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0{,}0900\,\text{kg}} \approx 2{,}67\,\tfrac{\text{MJ}}{\text{kg}}$, liian suuria, koska niissä myös ilmaan siirtynyt energia luettaisiin höyrystymiseen. Häviöteho on $800\,\text{W} - 2{,}264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0{,}196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, ja tulos on taulukon arvon $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ mukainen.
+**Järkevyys:** Ilmaan siirtyvä energia $P_\text{h}t$ on sama kummassakin mittauksessa ja kumoutuu erotuksesta. Yksittäiset mittaukset antaisivat $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0{,}196\,\text{kg}} \approx 2{,}45\,\tfrac{\text{MJ}}{\text{kg}}$ ja $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0{,}0900\,\text{kg}} \approx 2{,}67\,\tfrac{\text{MJ}}{\text{kg}}$, liian suuria, koska niissä myös ilmaan siirtynyt energia luettaisiin höyrystymiseen. Häviöteho on $$\begin{aligned} &800\,\text{W} \\ &- 2{,}264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0{,}196\,\text{kg}}{600\,\text{s}} \\ &\approx 60\,\text{W} \end{aligned}$$, ja tulos on taulukon arvon $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ mukainen.
 
 ## fy3-7-L1-06
 **Kysytty:** mitä sulavan jään ja sulamisveden seoksen lämpötilalle tapahtuu, kun jäätä on vielä jäljellä.
@@ -142,7 +142,7 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 ## fy3-7-L1-07
 **Kysytty:** miksi hien haihtuminen viilentää ihoa.
 **Periaate:** Nesteen höyrystyminen vaatii energiaa, $Q = rm$. Haihtuva hiki ottaa tämän energian ympäristöstään, tässä iholta, joten iho menettää energiaa ja sen lämpötila laskee.
-**Mallivastaus:** Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa ja viilenee. Höyrystyminen sitoo energiaa eikä luovuta sitä, joten väite, että hiki lämmittäisi ihoa, on väärä. Hiki on yhtä lämmintä kuin iho, joten se ei viilennä ihoa lämpötilaeronsa vuoksi. Haihtuminen ei myöskään kuluta ihon happea. Energian määrä on suuri: yhden grammin haihtuminen vaatii $r m = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}001\,\text{kg} = 2{,}26\,\text{kJ}$.
+**Mallivastaus:** Haihtuvat vesimolekyylit ottavat energiaa mukaansa iholta, joten iho menettää energiaa ja viilenee. Höyrystyminen sitoo energiaa eikä luovuta sitä, joten väite, että hiki lämmittäisi ihoa, on väärä. Hiki on yhtä lämmintä kuin iho, joten se ei viilennä ihoa lämpötilaeronsa vuoksi. Haihtuminen ei myöskään kuluta ihon happea. Energian määrä on suuri: yhden grammin haihtuminen vaatii $$\begin{aligned} r m &= 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}001\,\text{kg} \\ &= 2{,}26\,\text{kJ} \end{aligned}$$.
 
 ## fy3-7-L1-08
 **Annettu:** höyrystymiseen kuluva energia $Q = 1{,}36\,\text{MJ}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -171,7 +171,7 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
 \end{aligned}$$
 
 **Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 5\,\%$, ja kolme merkitsevää numeroa annetaan massan ja tehon mukaan. Jos tasanteeksi lukee suoraan rivit $20\,\text{s}$ ja $150\,\text{s}$, aika on $130\,\text{s}$ ja tulos $312\,\tfrac{\text{kJ}}{\text{kg}}$, liian pieni, koska sulaminen alkoi jo ennen riviä $20\,\text{s}$ ja päättyi vasta rivin $150\,\text{s}$ jälkeen.
-**Järkevyys:** Tulos vastaa jään tunnettua ominaissulamislämpöä $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $c m \Delta T = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} = 10\,500\,\text{J}$, joten mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$, noin kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
+**Järkevyys:** Tulos vastaa jään tunnettua ominaissulamislämpöä $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $$\begin{aligned} c m \Delta T &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ &\cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} \\ &= 10\,500\,\text{J} \end{aligned}$$, joten mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$, noin kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
 
 ## fy3-7-L2-06
 **Annettu:** teho $P = 3{,}0\,\text{kW}$, aika $t = 5{,}0\,\text{min}$, kaikki hellan energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -221,9 +221,9 @@ $$\begin{aligned}
 
 Jähmettyminen alkaa noin $3{,}2\,\text{min}$:ssa: tasanteelle päästään nesteen jäähtymislinjaa pitkin, noin $0{,}8\,\text{K} : 3{,}27\,\tfrac{\text{K}}{\text{min}} = 0{,}24\,\text{min}$ rivin $3\,\text{min}$ jälkeen.
 
-Jähmettyminen päättyy noin $30{,}9\,\text{min}$:ssa: kiinteän aineen rivit $32\,\text{min}$ ja $34\,\text{min}$ antavat jäähtymisnopeuden $(65{,}0\,\text{K} - 57{,}4\,\text{K}) : 2\,\text{min} = 3{,}8\,\tfrac{\text{K}}{\text{min}}$, joten tasanteen lämpötilasta $69{,}2\,{}^\circ\text{C}$ rivin $32\,\text{min}$ lämpötilaan $65{,}0\,{}^\circ\text{C}$ kuluu aikaa $4{,}2\,\text{K} : 3{,}8\,\tfrac{\text{K}}{\text{min}} = 1{,}1\,\text{min}$.
+Jähmettyminen päättyy noin $30{,}9\,\text{min}$:ssa: kiinteän aineen rivit $32\,\text{min}$ ja $34\,\text{min}$ antavat jäähtymisnopeuden $$\begin{aligned} &(65{,}0\,\text{K} - 57{,}4\,\text{K}) : 2\,\text{min} \\ &= 3{,}8\,\tfrac{\text{K}}{\text{min}} \end{aligned}$$, joten tasanteen lämpötilasta $69{,}2\,{}^\circ\text{C}$ rivin $32\,\text{min}$ lämpötilaan $65{,}0\,{}^\circ\text{C}$ kuluu aikaa $4{,}2\,\text{K} : 3{,}8\,\tfrac{\text{K}}{\text{min}} = 1{,}1\,\text{min}$.
 
-Jähmettymisen kesto on noin $30{,}9\,\text{min} - 3{,}2\,\text{min} = 27{,}7\,\text{min}$.
+Jähmettymisen kesto on noin $$\begin{aligned} &30{,}9\,\text{min} - 3{,}2\,\text{min} \\ &= 27{,}7\,\text{min} \end{aligned}$$.
 **Kaava:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{jähm}$ ja $Q = sm$, josta $s = \dfrac{Q}{m}$
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. $\Delta t = 3\,\text{min} = 180\,\text{s}$ ja $\Delta t_\text{jähm} = 27{,}7\,\text{min} = 1662\,\text{s}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:**
@@ -251,9 +251,9 @@ s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
 **Annettu:** maito $M = 0{,}300\,\text{kg}$, $T_0 = 20{,}0\,{}^\circ\text{C}$, loppulämpötila $T = 65{,}0\,{}^\circ\text{C}$; höyry $100\,{}^\circ\text{C}$:ssa; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** a) tiivistyvän höyryn massa $m_\text{h}$ grammoina; b) vertailu: tarvittava $100\,{}^\circ\text{C}$:n veden massa
 **Periaate:** Energia säilyy, kun häviöitä ei ole: maidon vastaanottama energia on yhtä suuri kuin höyryn luovuttama. Höyry luovuttaa energiaa kahdessa vaiheessa: tiivistyessään $100\,{}^\circ\text{C}$:n vedeksi ($Q = rm_\text{h}$) ja sitten tiivistynyt vesi jäähtyessään $100\,{}^\circ\text{C}$:sta loppulämpötilaan ($Q = cm_\text{h}\Delta T$).
-**Kaava:** $c M (T - T_0) = r m_\text{h} + c\, m_\text{h}(100\,{}^\circ\text{C} - T)$, josta $m_\text{h} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. Vertailussa pelkkä $100\,{}^\circ\text{C}$:n vesi luovuttaa vain jäähtyessään: $c M (T - T_0) = c\, m_\text{v}(100\,{}^\circ\text{C} - T)$, josta $m_\text{v} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Kaava:** $$\begin{aligned} &c M (T - T_0) \\ &= r m_\text{h} + c\, m_\text{h}(100\,{}^\circ\text{C} - T) \end{aligned}$$, josta $m_\text{h} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. Vertailussa pelkkä $100\,{}^\circ\text{C}$:n vesi luovuttaa vain jäähtyessään: $$\begin{aligned} &c M (T - T_0) \\ &= c\, m_\text{v}(100\,{}^\circ\text{C} - T) \end{aligned}$$, josta $m_\text{v} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
 **Muunnokset:** Lämpötilaerot ovat samat celsiusasteina ja kelvineinä: $T - T_0 = 45{,}0\,\text{K}$ ja $100\,{}^\circ\text{C} - T = 35{,}0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kg} = 1000\,\text{g}$.
-**Sijoitus:** Osoittaja on $4190 \cdot 0{,}300 \cdot 45{,}0\,\text{J} = 56\,565\,\text{J}$ ja nimittäjä $2\,260\,000 + 4190 \cdot 35{,}0 = 2\,406\,650\,\tfrac{\text{J}}{\text{kg}}$, joten
+**Sijoitus:** Osoittaja on $$\begin{aligned} &4190 \cdot 0{,}300 \cdot 45{,}0\,\text{J} \\ &= 56\,565\,\text{J} \end{aligned}$$ ja nimittäjä $$\begin{aligned} &2\,260\,000 + 4190 \cdot 35{,}0 \\ &= 2\,406\,650\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$, joten
 
 $$\begin{aligned}
 m_\text{h} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}} \\

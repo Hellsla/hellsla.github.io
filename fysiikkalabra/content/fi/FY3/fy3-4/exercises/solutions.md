@@ -77,7 +77,7 @@
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat suhteessa $k_\text{B}/k_\text{A}$.
 **Sijoitus:** $h_\text{A} = \dfrac{15\,\text{kPa/m}}{10\,\text{kPa/m}} \cdot 4{,}0\,\text{m} = 6{,}0\,\text{m}$
 **Vastaus:** $h_\text{A} = 6{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten syvyydessä $4{,}0\,\text{m}$. Silmällä luettu arvo $5{,}8$–$6{,}2\,\text{m}$ hyväksytään.
-**Järkevyys:** Neste A on harvempaa, joten saman paineen saavuttamiseen tarvitaan suurempi syvyys kuin $4{,}0\,\text{m}$. Tarkistus: $100\,\text{kPa} + 10\,\tfrac{\text{kPa}}{\text{m}} \cdot 6{,}0\,\text{m} = 160\,\text{kPa} = 100\,\text{kPa} + 15\,\tfrac{\text{kPa}}{\text{m}} \cdot 4{,}0\,\text{m}$.
+**Järkevyys:** Neste A on harvempaa, joten saman paineen saavuttamiseen tarvitaan suurempi syvyys kuin $4{,}0\,\text{m}$. Tarkistus: $$\begin{aligned} &100\,\text{kPa} + 10\,\tfrac{\text{kPa}}{\text{m}} \cdot 6{,}0\,\text{m} \\ &= 160\,\text{kPa} \\ &= 100\,\text{kPa} + 15\,\tfrac{\text{kPa}}{\text{m}} \cdot 4{,}0\,\text{m} \end{aligned}$$.
 
 ## fy3-4-L2-04
 **Annettu:** ylipaine $\Delta p = 0{,}85\,\text{bar}$ (tehtävän mukaan $1\,\text{bar} = 100\,\text{kPa}$), kannen ala $A = 380\,\text{cm}^2$
@@ -97,7 +97,7 @@
 **Muunnokset:** $6{,}0\,\text{kPa} = 6000\,\text{Pa}$. Massa on jo kilogrammoina.
 **Sijoitus:** $G = 85\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 833{,}85\,\text{N}$; $A = \dfrac{833{,}85\,\text{N}}{6000\,\text{Pa}} = 0{,}13898\,\text{m}^2$
 **Vastaus:** $0{,}14\,\text{m}^2$, kaksi merkitsevää numeroa kuten paineessa $6{,}0\,\text{kPa}$ ja massassa $85\,\text{kg}$.
-**Järkevyys:** Takaisin laskettuna $833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \approx 5960\,\text{Pa}$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \cdot 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
+**Järkevyys:** Takaisin laskettuna $$\begin{aligned} &833{,}85\,\text{N} / 0{,}14\,\text{m}^2 \\ &\approx 5960\,\text{Pa} \end{aligned}$$, mikä on alle $6000\,\text{Pa}$. Ala on esimerkiksi $25\,\text{cm} \cdot 56\,\text{cm}$, tavallisen lumikengän koko. Tavallisen kengän pohjan ala on noin $0{,}03\,\text{m}^2$, ja sillä paine olisi noin $28\,\text{kPa}$, joten kenkä uppoaisi.
 
 ## fy3-4-L3-02
 **Annettu:** letkun korkeus kannen yläpuolella $h = 4{,}0\,\text{m}$, kannen ala $A = 0{,}25\,\text{m}^2$, $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$; letkun vesimäärä $0{,}40\,\textsf{l}$
@@ -107,7 +107,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 4{,}0\,\text{m} = 39\,240\,\text{Pa}$; $\Delta F = 39\,240\,\text{Pa} \cdot 0{,}25\,\text{m}^2 = 9810\,\text{N} = 9{,}81\,\text{kN}$
 **Vastaus:** $9{,}8\,\text{kN}$, kaksi merkitsevää numeroa kuten korkeudessa $4{,}0\,\text{m}$ ja alassa $0{,}25\,\text{m}^2$.
-**Järkevyys:** Letkun $0{,}40\,\textsf{l}$ vettä painaa vain $0{,}40\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 3{,}9\,\text{N}$, mutta kanteen tulee lähes $10\,\text{kN}$. Suhde on $9810 / 3{,}9 \approx 2500$, ja se on sama kuin kannen ja letkun poikkipinta-alan ($1\,\text{cm}^2$) suhde. Siksi ohut letku voi rikkoa tynnyrin.
+**Järkevyys:** Letkun $0{,}40\,\textsf{l}$ vettä painaa vain $$\begin{aligned} &0{,}40\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 3{,}9\,\text{N} \end{aligned}$$, mutta kanteen tulee lähes $10\,\text{kN}$. Suhde on $9810 / 3{,}9 \approx 2500$, ja se on sama kuin kannen ja letkun poikkipinta-alan ($1\,\text{cm}^2$) suhde. Siksi ohut letku voi rikkoa tynnyrin.
 
 ## fy3-4-L3-03
 **Annettu:** vesikerros $h_2 = 1{,}60\,\text{m}$, $\rho_2 = 1000\,\text{kg/m}^3$; sen päällä öljykerros $h_1 = 0{,}40\,\text{m}$, $\rho_1 = 850\,\text{kg/m}^3$; $g = 9{,}81\,\text{m/s}^2$
@@ -117,7 +117,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paine tulee pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $\rho_1 g h_1 = 850\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}40\,\text{m} = 3335{,}4\,\text{Pa}$; $\rho_2 g h_2 = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}60\,\text{m} = 15\,696\,\text{Pa}$; $\Delta p = 3335{,}4\,\text{Pa} + 15\,696\,\text{Pa} = 19\,031{,}4\,\text{Pa}$
 **Vastaus:** $19{,}0\,\text{kPa}$. Summassa desimaalit määräytyvät epätarkimman termin mukaan: öljykerroksen $3{,}3\,\text{kPa}$ (paksuus $0{,}40\,\text{m}$, kaksi numeroa) on tarkka desimaalin tarkkuudella, joten $3{,}3 + 15{,}7 = 19{,}0\,\text{kPa}$.
-**Järkevyys:** Jos koko $2{,}00\,\text{m}$ olisi vettä, ylipaine olisi $1000 \cdot 9{,}81 \cdot 2{,}00 = 19\,620\,\text{Pa}$. Öljy on kevyempää, joten tulos on pienempi: ero on $(1000 - 850) \cdot 9{,}81 \cdot 0{,}40\,\text{Pa} = 588{,}6\,\text{Pa}$ ja $19\,620 - 588{,}6 = 19\,031{,}4\,\text{Pa}$, kuten laskettiin.
+**Järkevyys:** Jos koko $2{,}00\,\text{m}$ olisi vettä, ylipaine olisi $$\begin{aligned} &1000 \cdot 9{,}81 \cdot 2{,}00 \\ &= 19\,620\,\text{Pa} \end{aligned}$$. Öljy on kevyempää, joten tulos on pienempi: ero on $$\begin{aligned} &(1000 - 850) \cdot 9{,}81 \cdot 0{,}40\,\text{Pa} \\ &= 588{,}6\,\text{Pa} \end{aligned}$$ ja $$\begin{aligned} &19\,620 - 588{,}6 \\ &= 19\,031{,}4\,\text{Pa} \end{aligned}$$, kuten laskettiin.
 
 ## fy3-4-L1-06
 **Kysytty:** miksi naula menee puuhun kärki edellä mutta ei kanta edellä, kun peukalon voima on sama.
@@ -170,7 +170,7 @@ $$\begin{aligned} p_0 &= 148{,}63\,\text{kPa} - 9{,}78\,\tfrac{\text{kPa}}{\text
 **Periaate:** Putken avoin haara on ilmanpaineessa. Samalla vaakatasolla samassa nesteessä paine on sama, joten korkeuseron $\Delta h$ aiheuttama hydrostaattinen paine $\rho g \Delta h$ on kaasun paineen ja ilmanpaineen erotus. Toistetun mittauksen keskiarvo pienentää satunnaista lukuvirhettä.
 **Kaava:** $\Delta h_{\text{ka}} = \dfrac{\text{summa}}{3}$; $\Delta p = \rho g \Delta h_{\text{ka}}$; $p = p_0 + \Delta p$
 **Muunnokset:** Korkeus senttimetreistä metreiksi: $14{,}5\,\text{cm} = 14{,}5 : 100\,\text{m} = 0{,}145\,\text{m}$. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
-**Sijoitus:** a) Summa on $14{,}2\,\text{cm} + 14{,}8\,\text{cm} + 14{,}5\,\text{cm} = 43{,}5\,\text{cm}$, joten $\Delta h_{\text{ka}} = 43{,}5\,\text{cm} : 3 = 14{,}5\,\text{cm}$. b) $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}145\,\text{m} = 1422{,}45\,\text{Pa} = 1{,}42\,\text{kPa}$. c) $p = 101\,\text{kPa} + 1{,}42\,\text{kPa} = 102{,}42\,\text{kPa}$
+**Sijoitus:** a) Summa on $$\begin{aligned} &14{,}2\,\text{cm} + 14{,}8\,\text{cm} + 14{,}5\,\text{cm} \\ &= 43{,}5\,\text{cm} \end{aligned}$$, joten $\Delta h_{\text{ka}} = 43{,}5\,\text{cm} : 3 = 14{,}5\,\text{cm}$. b) $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}145\,\text{m} = 1422{,}45\,\text{Pa} = 1{,}42\,\text{kPa}$. c) $p = 101\,\text{kPa} + 1{,}42\,\text{kPa} = 102{,}42\,\text{kPa}$
 **Vastaus:** b) $1{,}42\,\text{kPa}$, kolme merkitsevää numeroa kuten korkeuserossa $14{,}5\,\text{cm}$. Kohdassa c) kokonaispaine on $102\,\text{kPa}$, koska ilmanpaine $101\,\text{kPa}$ on annettu kolmella numerolla. Kaasun puoleinen pinta on alempana, koska kaasun paine on suurempi kuin ilmanpaine ja se painaa nestettä alas omassa haarassaan, kunnes korkeuseron vesipatsas tasapainottaa ylipaineen.
 **Järkevyys:** Vesipatsas $10\,\text{cm}$ vastaa noin $1\,\text{kPa}$, joten $14{,}5\,\text{cm}$ vastaa noin $1{,}4\,\text{kPa}$. Ylipaine on vain noin $1{,}4\,\%$ ilmanpaineesta ($1{,}42/101 = 0{,}014$), mikä sopii pieneen korkeuseroon.
 
@@ -181,7 +181,7 @@ $$\begin{aligned} p_0 &= 148{,}63\,\text{kPa} - 9{,}78\,\tfrac{\text{kPa}}{\text
 **Taulukon lukeminen:** Taulukosta luetaan kunkin kerroksen paksuus $d_i$ ja tiheys $\rho_i$; paksuuksien summa on mittarin syvyys $20{,}0\,\text{m}$.
 **Kaava:** a) $\Delta p_{\text{a}} = g\,(\rho_1 d_1 + \rho_2 d_2 + \rho_3 d_3)$. b) $\Delta p_{\text{b}} = \rho g h$ ja $\delta p = \Delta p_{\text{b}} - \Delta p_{\text{a}}$. c) syvyysvirhe $\delta h = h - \dfrac{\Delta p_{\text{a}}}{\rho g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paineet tulevat pascaleina. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
-**Sijoitus:** a) $\rho_i d_i$ -summa on $998{,}2 \cdot 5{,}0 + 999{,}7 \cdot 10{,}0 + 1000{,}0 \cdot 5{,}0 = 19\,988\,\tfrac{\text{kg}}{\text{m}^2}$, joten $\Delta p_{\text{a}} = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 19\,988\,\tfrac{\text{kg}}{\text{m}^2} = 196\,082\,\text{Pa} = 196{,}08\,\text{kPa}$. b) $\Delta p_{\text{b}} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} = 196\,200\,\text{Pa}$, joten $\delta p = 196\,200\,\text{Pa} - 196\,082\,\text{Pa} = 118\,\text{Pa} = 0{,}118\,\text{kPa}$. c) Kun mittarin lukema $196\,082\,\text{Pa}$ muutetaan syvyydeksi tiheydellä $1000\,\text{kg/m}^3$:
+**Sijoitus:** a) $\rho_i d_i$ -summa on $$\begin{aligned} &998{,}2 \cdot 5{,}0 + 999{,}7 \cdot 10{,}0 \\ &+ 1000{,}0 \cdot 5{,}0 \\ &= 19\,988\,\tfrac{\text{kg}}{\text{m}^2} \end{aligned}$$, joten $\Delta p_{\text{a}} = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 19\,988\,\tfrac{\text{kg}}{\text{m}^2} = 196\,082\,\text{Pa} = 196{,}08\,\text{kPa}$. b) $\Delta p_{\text{b}} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} = 196\,200\,\text{Pa}$, joten $\delta p = 196\,200\,\text{Pa} - 196\,082\,\text{Pa} = 118\,\text{Pa} = 0{,}118\,\text{kPa}$. c) Kun mittarin lukema $196\,082\,\text{Pa}$ muutetaan syvyydeksi tiheydellä $1000\,\text{kg/m}^3$:
 
 $$\begin{aligned} h' &= \dfrac{196\,082\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \\ &= 19{,}988\,\text{m} \end{aligned}$$
 
@@ -196,11 +196,11 @@ joten syvyysvirhe on $20{,}0\,\text{m} - 19{,}988\,\text{m} = 0{,}012\,\text{m} 
 **Taulukon lukeminen:** Taulukosta luetaan kunkin osan ylä- ja alareunan syvyydet $h_1$ ja $h_2$. Osien korkeus on $h_2 - h_1 = 5{,}0\,\text{m}$ jokaisessa, joten osan ala on $A = 5{,}0\,\text{m} \cdot 1{,}0\,\text{m} = 5{,}0\,\text{m}^2$.
 **Kaava:** a) $\Delta p = \rho g h$. b) $p_{\text{ka}} = \dfrac{\rho g h_1 + \rho g h_2}{2}$ ja $F = p_{\text{ka}} A$. c) koko kaista: $F_{\text{kok}} = \dfrac{0 + \rho g H}{2} \cdot H w$. d) vertaillaan voimia $F_4$ ja $F_1$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten paineet tulevat pascaleina ja voimat newtoneina. Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** a) $\rho g = 9810\,\text{Pa/m}$, joten reunojen paineet ovat $0$, $49{,}05$, $98{,}1$, $147{,}15$ ja $196{,}2\,\text{kPa}$ syvyyksillä $0$, $5{,}0$, $10{,}0$, $15{,}0$ ja $20{,}0\,\text{m}$. b) Osan 1 keskipaine on $(0 + 49{,}05\,\text{kPa}) : 2 = 24{,}525\,\text{kPa}$, joten $F_1 = 24{,}525\,\text{kPa} \cdot 5{,}0\,\text{m}^2 = 122{,}6\,\text{kN}$. Osan 4 keskipaine on $(147{,}15\,\text{kPa} + 196{,}2\,\text{kPa}) : 2 = 171{,}675\,\text{kPa}$, joten
+**Sijoitus:** a) $\rho g = 9810\,\text{Pa/m}$, joten reunojen paineet ovat $0$, $49{,}05$, $98{,}1$, $147{,}15$ ja $196{,}2\,\text{kPa}$ syvyyksillä $0$, $5{,}0$, $10{,}0$, $15{,}0$ ja $20{,}0\,\text{m}$. b) Osan 1 keskipaine on $$\begin{aligned} &(0 + 49{,}05\,\text{kPa}) : 2 \\ &= 24{,}525\,\text{kPa} \end{aligned}$$, joten $F_1 = 24{,}525\,\text{kPa} \cdot 5{,}0\,\text{m}^2 = 122{,}6\,\text{kN}$. Osan 4 keskipaine on $$\begin{aligned} &(147{,}15\,\text{kPa} + 196{,}2\,\text{kPa}) : 2 \\ &= 171{,}675\,\text{kPa} \end{aligned}$$, joten
 
 $$\begin{aligned} F_4 &= 171{,}675\,\text{kPa} \cdot 5{,}0\,\text{m}^2 \\ &= 858{,}375\,\text{kN} \end{aligned}$$
 
-c) Osille 2 ja 3 saadaan samalla tavalla $367{,}9\,\text{kN}$ ja $613{,}1\,\text{kN}$. Summa on $122{,}6\,\text{kN} + 367{,}9\,\text{kN} + 613{,}1\,\text{kN} + 858{,}4\,\text{kN} = 1962\,\text{kN}$. Tarkistus koko kaistalle: $98{,}1\,\text{kPa} \cdot 20{,}0\,\text{m}^2 = 1962\,\text{kN}$. d) Voimien suhde on $F_4 : F_1 = 858{,}4\,\text{kN} : 122{,}6\,\text{kN} = 7{,}0$.
+c) Osille 2 ja 3 saadaan samalla tavalla $367{,}9\,\text{kN}$ ja $613{,}1\,\text{kN}$. Summa on $$\begin{aligned} &122{,}6\,\text{kN} + 367{,}9\,\text{kN} \\ &+ 613{,}1\,\text{kN} + 858{,}4\,\text{kN} \\ &= 1962\,\text{kN} \end{aligned}$$. Tarkistus koko kaistalle: $98{,}1\,\text{kPa} \cdot 20{,}0\,\text{m}^2 = 1962\,\text{kN}$. d) Voimien suhde on $F_4 : F_1 = 858{,}4\,\text{kN} : 122{,}6\,\text{kN} = 7{,}0$.
 **Vastaus:** $F_4 = 858\,\text{kN}$, kolme merkitsevää numeroa, koska syvyydet $15{,}0\,\text{m}$ ja $20{,}0\,\text{m}$ on annettu kolmella numerolla ja kaistan leveys on tasan yksi metri. Alimpaan osaan kohdistuu seitsenkertainen voima ylimpään verrattuna ($F_1 = 123\,\text{kN}$), koska paine kasvaa syvyyden mukana. Siksi muuri tehdään alaosastaan paksummaksi: alaosan on kestettävä paljon suurempi voima kuin yläosan.
 **Järkevyys:** Osien voimat kasvavat tasaisin askelin suhteessa $1 : 3 : 5 : 7$ ($122{,}6 \cdot 3 \approx 367{,}9$, $122{,}6 \cdot 5 \approx 613{,}1$, $122{,}6 \cdot 7 \approx 858{,}4$), mikä sopii lineaarisesti kasvavaan paineeseen.
 
@@ -223,7 +223,7 @@ Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, j
 **Kysytty:** kokonaispaine $p$ sukeltajan kohdalla kilopascaleina
 **Periaate:** Sukeltaja tuntee veden painon ja veden pinnalla olevan ilman painon. Nesteen pinta välittää ilmanpaineen koko nesteeseen, ja sen päälle tulee hydrostaattinen paine $\rho g h$. Siksi paineet lasketaan yhteen.
 **Kaava:** $p = p_0 + \rho g h$; tuntematon $p$ on jo yksin vasemmalla puolella
-**Muunnokset:** Tiheys $1{,}02 \cdot 10^{3}\,\text{kg/m}^3 = 1020\,\text{kg/m}^3$. Hydrostaattinen paine lasketaan pascaleina ja muutetaan kilopascaleiksi: $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Muunnokset:** Tiheys $$\begin{aligned} &1{,}02 \cdot 10^{3}\,\text{kg/m}^3 \\ &= 1020\,\text{kg/m}^3 \end{aligned}$$. Hydrostaattinen paine lasketaan pascaleina ja muutetaan kilopascaleiksi: $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25{,}0\,\text{m} = 250\,155\,\text{Pa} = 250{,}2\,\text{kPa}$; $p = 101\,\text{kPa} + 250{,}2\,\text{kPa} = 351{,}2\,\text{kPa}$
 **Vastaus:** $p \approx 351\,\text{kPa}$, kolme merkitsevää numeroa kuten syvyydessä $25{,}0\,\text{m}$, ilmanpaineessa ja tiheydessä. Tiheys $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$ on MAFY-taulukosta *Tiheyksiä: Nesteiden tiheyksiä*; eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Arvio: $10\,\text{m}$ vettä lisää paineeseen noin $100\,\text{kPa}$, joten $25\,\text{m}$ lisää noin $250\,\text{kPa}$. Siihen lisätään ilmanpaine noin $100\,\text{kPa}$, ja yhteensä saadaan noin $350\,\text{kPa}$ eli noin $3{,}5$ ilmanpainetta.
@@ -237,4 +237,4 @@ Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, j
 **Muunnokset:** $15\,\dfrac{\text{kPa}}{\text{m}} = 15\,000\,\dfrac{\text{Pa}}{\text{m}}$, ja $1\,\text{Pa} = 1\,\dfrac{\text{kg}}{\text{m} \cdot \text{s}^2}$, joten $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ on $\text{kg/m}^3$.
 **Sijoitus:** $\rho_\text{B} = \dfrac{15\,000\,\text{Pa/m}}{9{,}81\,\text{m/s}^2} = 1529\,\text{kg/m}^3$
 **Vastaus:** $\rho_\text{B} \approx 1{,}5 \cdot 10^{3}\,\text{kg/m}^3$ eli $1500\,\text{kg/m}^3$, kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta. Silmällä luettu arvo $1450$–$1600\,\text{kg/m}^3$ hyväksytään.
-**Järkevyys:** Nesteen A kulmakerroin on $10\,\text{kPa/m}$ ja sen tiheys $\dfrac{10\,000}{9{,}81} \approx 1020\,\text{kg/m}^3$ eli lähes veden. Neste B on jyrkempi, $1{,}5$-kertainen, joten sen tiheys on $1{,}5$-kertainen: noin $1{,}5 \cdot 1020\,\text{kg/m}^3 \approx 1530\,\text{kg/m}^3$.
+**Järkevyys:** Nesteen A kulmakerroin on $10\,\text{kPa/m}$ ja sen tiheys $\dfrac{10\,000}{9{,}81} \approx 1020\,\text{kg/m}^3$ eli lähes veden. Neste B on jyrkempi, $1{,}5$-kertainen, joten sen tiheys on $1{,}5$-kertainen: noin $$\begin{aligned} &1{,}5 \cdot 1020\,\text{kg/m}^3 \\ &\approx 1530\,\text{kg/m}^3 \end{aligned}$$.

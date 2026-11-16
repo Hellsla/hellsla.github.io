@@ -84,9 +84,9 @@
 **Kysytty:** kokonaistyö $W$ jouleina
 **Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala, ja sen voi laskea osissa: vakiovoiman osuus on suorakulmio ja tasaisesti kasvavan osuus puolisuunnikas.
 **Kuvaajan lukeminen:** Kuvaajassa on vaakasuora jana korkeudella $10\,\text{N}$ välillä $0\ldots 2{,}0\,\text{m}$ ja sen jatkona suora jana korkeudesta $10\,\text{N}$ korkeuteen $30\,\text{N}$ välillä $2{,}0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $10\,\text{N}$ ja leveys $2{,}0\,\text{m}$. Puolisuunnikkaan yhdensuuntaiset sivut ovat $10\,\text{N}$ ja $30\,\text{N}$ ja korkeus (leveys $s$-akselilla) $4{,}0\,\text{m}$.
-**Kaava:** $W = A_\text{suorakulmio} + A_\text{puolisuunnikas}$, joten $W = F_1 s_1 + 0{,}5 \cdot (F_1 + F_2)\, s_2$
+**Kaava:** $$W = A_\text{suorakulmio} + A_\text{puolisuunnikas}$$, joten $W = F_1 s_1 + 0{,}5 \cdot (F_1 + F_2)\, s_2$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $W = 10\,\text{N} \cdot 2{,}0\,\text{m} + \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4{,}0\,\text{m} = 20\,\text{J} + 80\,\text{J} = 100\,\text{J}$
+**Sijoitus:** $$\begin{aligned} W &= 10\,\text{N} \cdot 2{,}0\,\text{m} \\ &+ \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4{,}0\,\text{m} \\ &= 20\,\text{J} + 80\,\text{J} \\ &= 100\,\text{J} \end{aligned}$$
 **Vastaus:** $100\,\text{J}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa (esimerkiksi $2{,}0\,\text{m}$).
 **Järkevyys:** Keskimääräinen voima koko $6{,}0\,\text{m}$:n matkalla on $\dfrac{100\,\text{J}}{6{,}0\,\text{m}} \approx 17\,\text{N}$, mikä on voiman pienimmän ($10\,\text{N}$) ja suurimman ($30\,\text{N}$) arvon välissä. Karkea alaraja: vähintään $10\,\text{N} \cdot 6{,}0\,\text{m} = 60\,\text{J}$ ja enintään $30\,\text{N} \cdot 6{,}0\,\text{m} = 180\,\text{J}$, ja tulos on niiden välissä.
 
@@ -97,9 +97,9 @@
 **Kuvaajan lukeminen:** Kuvaaja on puolisuunnikas: nouseva kolmio ($0\ldots 0{,}50\,\text{m}$, korkeus $40\,\text{N}$), vaakasuora osa suorakulmiona ($0{,}50\ldots 1{,}5\,\text{m}$, korkeus $40\,\text{N}$) ja laskeva kolmio ($1{,}5\ldots 2{,}0\,\text{m}$, korkeus $40\,\text{N}$). Työ on näiden kolmen pinta-alan summa.
 **Kaava:** $W = \tfrac{1}{2} F s_1 + F s_2 + \tfrac{1}{2} F s_3$ ja $W = F_\text{ka}\, s$, joten $F_\text{ka} = \dfrac{W}{s}$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** $W = \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} + 40\,\text{N} \cdot 1{,}0\,\text{m} + \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} = 10\,\text{J} + 40\,\text{J} + 10\,\text{J} = 60\,\text{J}$; $F_\text{ka} = \dfrac{60\,\text{J}}{2{,}0\,\text{m}} = 30\,\text{N}$
+**Sijoitus:** $$\begin{aligned} W &= \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} + 40\,\text{N} \cdot 1{,}0\,\text{m} \\ &+ \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0{,}50\,\text{m} \\ &= 10\,\text{J} + 40\,\text{J} + 10\,\text{J} \\ &= 60\,\text{J} \end{aligned}$$; $F_\text{ka} = \dfrac{60\,\text{J}}{2{,}0\,\text{m}} = 30\,\text{N}$
 **Vastaus:** $30\,\text{N}$, kaksi merkitsevää numeroa kuten matkassa $2{,}0\,\text{m}$.
-**Järkevyys:** Keskiarvo on huippuarvoa $40\,\text{N}$ pienempi, koska voima on alussa ja lopussa pieni, mutta suurempi kuin puolet huipusta, koska voima on huipussa puolet matkasta. Puolisuunnikaskaava antaa saman työn: $0{,}5 \cdot (2{,}0\,\text{m} + 1{,}0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. Tasaisesti nollasta kasvavan voiman keskiarvo olisi $20\,\text{N}$.
+**Järkevyys:** Keskiarvo on huippuarvoa $40\,\text{N}$ pienempi, koska voima on alussa ja lopussa pieni, mutta suurempi kuin puolet huipusta, koska voima on huipussa puolet matkasta. Puolisuunnikaskaava antaa saman työn: $$\begin{aligned} &0{,}5 \cdot (2{,}0\,\text{m} + 1{,}0\,\text{m}) \cdot 40\,\text{N} \\ &= 60\,\text{J} \end{aligned}$$. Tasaisesti nollasta kasvavan voiman keskiarvo olisi $20\,\text{N}$.
 
 ## fy3-2-L3-02
 **Annettu:** massa $m = 2{,}0\,\text{kg}$, putoamiskorkeus $h = 1{,}5\,\text{m}$, pudotuksia $n = 20$, $g = 9{,}81\,\text{m/s}^2$
@@ -146,7 +146,7 @@
 **Kysytty:** voiman tekemä työ $W$ jouleina matkalla $0\ldots 4{,}0\,\text{m}$
 **Periaate:** Voima muuttuu matkalla, joten työ on $(s,F)$-kuvaajan pinta-ala. Kullakin yhden metrin osalla pinta-ala saadaan puolisuunnikkaana, jonka korkeus on voiman keskiarvo osan päissä, ja osat lasketaan yhteen.
 **Kuvaajan lukeminen:** Taulukon pisteet ajatellaan yhdistetyiksi suorilla janoilla $(s,F)$-koordinaatistossa. Osan $0\ldots 1{,}0\,\text{m}$ päissä voima on $18{,}0\,\text{N}$ ja $17{,}2\,\text{N}$, osan $1{,}0\ldots 2{,}0\,\text{m}$ päissä $17{,}2\,\text{N}$ ja $15{,}1\,\text{N}$, osan $2{,}0\ldots 3{,}0\,\text{m}$ päissä $15{,}1\,\text{N}$ ja $11{,}0\,\text{N}$ ja osan $3{,}0\ldots 4{,}0\,\text{m}$ päissä $11{,}0\,\text{N}$ ja $6{,}0\,\text{N}$. Jokaisen osan leveys on $\Delta s = 1{,}0\,\text{m}$.
-**Kaava:** $W = \sum 0{,}5 \cdot (F_\text{alku} + F_\text{loppu})\,\Delta s$, joten $W = W_1 + W_2 + W_3 + W_4$
+**Kaava:** $$W = \sum 0{,}5 \cdot (F_\text{alku} + F_\text{loppu})\,\Delta s$$, joten $W = W_1 + W_2 + W_3 + W_4$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:**
 
