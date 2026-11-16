@@ -1,0 +1,208 @@
+FY7 – KÄSITTELYRAPORTTI
+
+Luettelon käsiteltäviä rivejä: 98.
+Generoitu ja tallennettu: 90 (28 kuvitusta, 62 kaaviota).
+Kuvaajina pois rajattu: 8. Tekstipainotteisina pois rajattu: 0.
+Puuttuvia tulostiedostoja: 0. Ratkaisemattomia teknisiä generointivirheitä: 0.
+3-kuvaajat-alkuisista kansioista jätetty käsittelemättä 0 PNG-kuvaa. Niitä ei kopioitu.
+
+MENETELMÄ
+Sisäänrakennettu kuvagenerointi; alkuperäinen ja hyväksytty tyylinayte.png syötteinä.
+Ensimmäinen kuvitus on käyttäjän hyväksymä tyylinäyte ja myös ensimmäisen kuvan tulos.
+Ei API-avainta tai fallback-piirtoskriptiä. Kuvia ei yhdistetty keskenään.
+Järjestys: 1-kuvitukset, sitten 2-kaaviot, luettelon järjestyksessä ryhmän sisällä.
+Jatkettaessa aiemmin tallennetut tulokset säilytettiin. Havaittuja generointivirheitä korjattiin erillisillä uusintageneroinneilla.
+
+EPÄONNISTUMISET JA KORJAUKSET
+Aiempi Faradayn kokeen generointiyritys epäonnistui HTTP 429 usage_limit_reached -virheeseen. Uusintayritys onnistui käyttörajan nollauduttua.
+Induktiolieden kuvituksen väärä taivas ja käämin rakennekuvan puuttuvia johtimia korjattiin uusintageneroinneilla.
+Langattoman laturin kuvan valkoinen tekstialue korjattiin uusintageneroinnilla.
+
+TARKKUUSPUUTTEET – KAIKKI KOVAT EHDOT EIVÄT TÄYTY
+Kuvasuhde poikkeaa alkuperäisestä 76 tuloksessa. Suurin suhteellinen poikkeama: 0.152228 %.
+Generointityökalu palautti hieman pyöristettyjä mittoja. Kuvia ei venytetty tai rajattu jälkikäteen. Todelliset mitat ovat tiedostoluettelossa.
+Fysiikkavärien täsmälliset RGB-arvot eivät säilyneet kaikissa kuvissa; esimerkiksi pinkki ja vihreä ovat paikoin alkuperäistä kylläisempiä.
+Geometria, viivapaksuudet, yksittäisten viivojen lukumäärät ja muut yksityiskohdat eivät ole varmennettuja mittatarkkoja kopioita.
+Latauskaavioiden kenttäviivamäärät vaativat erityistarkastuksen. Charger-kuvassa vasemman paneelin suuntakolmio ei näy myöskään uusintatuloksessa.
+Tallennettujen generointien olemassaolo ei tarkoita kaikkien fysiikka-, väri- ja ulkoasuehtojen hyväksyttyä laaduntarkastusta.
+Ennen oppikirjakäyttöä tarvitaan kuvakohtainen tarkastus alkuperäisiä vasten.
+
+TEHDYT
+1-kuvitukset/FY7_luku-01_fy7-1__hero.png -> FY7_luku-01_fy7-1__hero-uusi.png
+1-kuvitukset/FY7_luku-01_fy7-1__scene.png -> FY7_luku-01_fy7-1__scene-uusi.png
+1-kuvitukset/FY7_luku-01_fy7-1__two-magnets.png -> FY7_luku-01_fy7-1__two-magnets-uusi.png
+1-kuvitukset/FY7_luku-03_fy7-3__hero.png -> FY7_luku-03_fy7-3__hero-uusi.png
+1-kuvitukset/FY7_luku-04_fy7-4__hero.png -> FY7_luku-04_fy7-4__hero-uusi.png
+1-kuvitukset/FY7_luku-04_fy7-4__scene.png -> FY7_luku-04_fy7-4__scene-uusi.png
+1-kuvitukset/FY7_luku-05_fy7-5__hero.png -> FY7_luku-05_fy7-5__hero-uusi.png
+1-kuvitukset/FY7_luku-05_fy7-5__scene.png -> FY7_luku-05_fy7-5__scene-uusi.png
+1-kuvitukset/FY7_luku-06_fy7-6__hero.png -> FY7_luku-06_fy7-6__hero-uusi.png
+1-kuvitukset/FY7_luku-06_fy7-6__scene.png -> FY7_luku-06_fy7-6__scene-uusi.png
+1-kuvitukset/FY7_luku-07_fy7-7__hero.png -> FY7_luku-07_fy7-7__hero-uusi.png
+1-kuvitukset/FY7_luku-07_fy7-7__scene.png -> FY7_luku-07_fy7-7__scene-uusi.png
+1-kuvitukset/FY7_luku-08_fy7-8__hero.png -> FY7_luku-08_fy7-8__hero-uusi.png
+1-kuvitukset/FY7_luku-08_fy7-8__scene.png -> FY7_luku-08_fy7-8__scene-uusi.png
+1-kuvitukset/FY7_luku-09_fy7-9__hero.png -> FY7_luku-09_fy7-9__hero-uusi.png
+1-kuvitukset/FY7_luku-10_fy7-10__hero.png -> FY7_luku-10_fy7-10__hero-uusi.png
+1-kuvitukset/FY7_luku-10_fy7-10__scene.png -> FY7_luku-10_fy7-10__scene-uusi.png
+1-kuvitukset/FY7_luku-11_fy7-11__hero.png -> FY7_luku-11_fy7-11__hero-uusi.png
+1-kuvitukset/FY7_luku-11_fy7-11__scene.png -> FY7_luku-11_fy7-11__scene-uusi.png
+1-kuvitukset/FY7_luku-12_fy7-12__hero.png -> FY7_luku-12_fy7-12__hero-uusi.png
+1-kuvitukset/FY7_luku-12_fy7-12__scene.png -> FY7_luku-12_fy7-12__scene-uusi.png
+1-kuvitukset/FY7_luku-13_fy7-13__hero.png -> FY7_luku-13_fy7-13__hero-uusi.png
+1-kuvitukset/FY7_luku-13_fy7-13__scene.png -> FY7_luku-13_fy7-13__scene-uusi.png
+1-kuvitukset/FY7_luku-14_fy7-14__hero.png -> FY7_luku-14_fy7-14__hero-uusi.png
+1-kuvitukset/FY7_luku-14_fy7-14__scene.png -> FY7_luku-14_fy7-14__scene-uusi.png
+1-kuvitukset/FY7_luku-15_fy7-15__hero.png -> FY7_luku-15_fy7-15__hero-uusi.png
+1-kuvitukset/FY7_luku-15_fy7-15__scene.png -> FY7_luku-15_fy7-15__scene-uusi.png
+1-kuvitukset/FY7_luku-16_fy7-16__hero.png -> FY7_luku-16_fy7-16__hero-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__bar-field.png -> FY7_luku-01_fy7-1__bar-field-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__cut-magnet.png -> FY7_luku-01_fy7-1__cut-magnet-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__domains.png -> FY7_luku-01_fy7-1__domains-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__earth-field.png -> FY7_luku-01_fy7-1__earth-field-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__inclination.png -> FY7_luku-01_fy7-1__inclination-uusi.png
+2-kaaviot/FY7_luku-01_fy7-1__vector-sum.png -> FY7_luku-01_fy7-1__vector-sum-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__circle-path.png -> FY7_luku-02_fy7-2__circle-path-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__force-dir.png -> FY7_luku-02_fy7-2__force-dir-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__pick-oikea.png -> FY7_luku-02_fy7-2__pick-oikea-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__pick-ulos.png -> FY7_luku-02_fy7-2__pick-ulos-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__pick-vasen.png -> FY7_luku-02_fy7-2__pick-vasen-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__pick-ylos.png -> FY7_luku-02_fy7-2__pick-ylos-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__spectrometer.png -> FY7_luku-02_fy7-2__spectrometer-uusi.png
+2-kaaviot/FY7_luku-02_fy7-2__track-sign.png -> FY7_luku-02_fy7-2__track-sign-uusi.png
+2-kaaviot/FY7_luku-03_fy7-3__coil-dims.png -> FY7_luku-03_fy7-3__coil-dims-uusi.png
+2-kaaviot/FY7_luku-03_fy7-3__coil-field.png -> FY7_luku-03_fy7-3__coil-field-uusi.png
+2-kaaviot/FY7_luku-03_fy7-3__electromagnet.png -> FY7_luku-03_fy7-3__electromagnet-uusi.png
+2-kaaviot/FY7_luku-03_fy7-3__wire-field.png -> FY7_luku-03_fy7-3__wire-field-uusi.png
+2-kaaviot/FY7_luku-04_fy7-4__angle.png -> FY7_luku-04_fy7-4__angle-uusi.png
+2-kaaviot/FY7_luku-04_fy7-4__motor.png -> FY7_luku-04_fy7-4__motor-uusi.png
+2-kaaviot/FY7_luku-04_fy7-4__speaker.png -> FY7_luku-04_fy7-4__speaker-uusi.png
+2-kaaviot/FY7_luku-04_fy7-4__swing.png -> FY7_luku-04_fy7-4__swing-uusi.png
+2-kaaviot/FY7_luku-04_fy7-4__wires.png -> FY7_luku-04_fy7-4__wires-uusi.png
+2-kaaviot/FY7_luku-05_fy7-5__faraday.png -> FY7_luku-05_fy7-5__faraday-uusi.png
+2-kaaviot/FY7_luku-05_fy7-5__flux.png -> FY7_luku-05_fy7-5__flux-uusi.png
+2-kaaviot/FY7_luku-05_fy7-5__rod.png -> FY7_luku-05_fy7-5__rod-uusi.png
+2-kaaviot/FY7_luku-06_fy7-6__core.png -> FY7_luku-06_fy7-6__core-uusi.png
+2-kaaviot/FY7_luku-06_fy7-6__ring.png -> FY7_luku-06_fy7-6__ring-uusi.png
+2-kaaviot/FY7_luku-06_fy7-6__tube.png -> FY7_luku-06_fy7-6__tube-uusi.png
+2-kaaviot/FY7_luku-07_fy7-7__derive.png -> FY7_luku-07_fy7-7__derive-uusi.png
+2-kaaviot/FY7_luku-07_fy7-7__generator.png -> FY7_luku-07_fy7-7__generator-uusi.png
+2-kaaviot/FY7_luku-08_fy7-8__grid.png -> FY7_luku-08_fy7-8__grid-uusi.png
+2-kaaviot/FY7_luku-08_fy7-8__transformer.png -> FY7_luku-08_fy7-8__transformer-uusi.png
+2-kaaviot/FY7_luku-09_fy7-9__antenna.png -> FY7_luku-09_fy7-9__antenna-uusi.png
+2-kaaviot/FY7_luku-10_fy7-10__depth.png -> FY7_luku-10_fy7-10__depth-uusi.png
+2-kaaviot/FY7_luku-10_fy7-10__interface.png -> FY7_luku-10_fy7-10__interface-uusi.png
+2-kaaviot/FY7_luku-10_fy7-10__protractor.png -> FY7_luku-10_fy7-10__protractor-uusi.png
+2-kaaviot/FY7_luku-10_fy7-10__wavefronts.png -> FY7_luku-10_fy7-10__wavefronts-uusi.png
+2-kaaviot/FY7_luku-11_fy7-11__drop.png -> FY7_luku-11_fy7-11__drop-uusi.png
+2-kaaviot/FY7_luku-11_fy7-11__observer.png -> FY7_luku-11_fy7-11__observer-uusi.png
+2-kaaviot/FY7_luku-11_fy7-11__prism.png -> FY7_luku-11_fy7-11__prism-uusi.png
+2-kaaviot/FY7_luku-11_fy7-11__prism-angles.png -> FY7_luku-11_fy7-11__prism-angles-uusi.png
+2-kaaviot/FY7_luku-12_fy7-12__diamond.png -> FY7_luku-12_fy7-12__diamond-uusi.png
+2-kaaviot/FY7_luku-12_fy7-12__fibre.png -> FY7_luku-12_fy7-12__fibre-uusi.png
+2-kaaviot/FY7_luku-12_fy7-12__water.png -> FY7_luku-12_fy7-12__water-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__geometry.png -> FY7_luku-13_fy7-13__geometry-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__setup.png -> FY7_luku-13_fy7-13__setup-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__setup-q.png -> FY7_luku-13_fy7-13__setup-q-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__slit.png -> FY7_luku-13_fy7-13__slit-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__white.png -> FY7_luku-13_fy7-13__white-uusi.png
+2-kaaviot/FY7_luku-13_fy7-13__young.png -> FY7_luku-13_fy7-13__young-uusi.png
+2-kaaviot/FY7_luku-14_fy7-14__reflections.png -> FY7_luku-14_fy7-14__reflections-uusi.png
+2-kaaviot/FY7_luku-15_fy7-15__brewster.png -> FY7_luku-15_fy7-15__brewster-uusi.png
+2-kaaviot/FY7_luku-15_fy7-15__components.png -> FY7_luku-15_fy7-15__components-uusi.png
+2-kaaviot/FY7_luku-15_fy7-15__glare.png -> FY7_luku-15_fy7-15__glare-uusi.png
+2-kaaviot/FY7_luku-15_fy7-15__sheets.png -> FY7_luku-15_fy7-15__sheets-uusi.png
+2-kaaviot/FY7_luku-16_fy7-16__charger.png -> FY7_luku-16_fy7-16__charger-uusi.png
+2-kaaviot/FY7_luku-16_fy7-16__charger-points.png -> FY7_luku-16_fy7-16__charger-points-uusi.png
+2-kaaviot/FY7_luku-16_fy7-16__hob.png -> FY7_luku-16_fy7-16__hob-uusi.png
+2-kaaviot/FY7_fy7-sovella__fy7-s1-forces.png -> FY7_fy7-sovella__fy7-s1-forces-uusi.png
+2-kaaviot/FY7_fy7-sovella__fy7-s1-implanter.png -> FY7_fy7-sovella__fy7-s1-implanter-uusi.png
+2-kaaviot/FY7_fy7-sovella__fy7-s4-fibre.png -> FY7_fy7-sovella__fy7-s4-fibre-uusi.png
+
+POIS JÄTETYT JA SYYT
+1-kuvitukset/FY7_luku-02_fy7-2__hero.png — Kuva sisältää näytöllä piirretyn käyrän (kaksi spektripiikkiä). Ei piirretä uudelleen kuvaajien rajauksen vuoksi.
+2-kaaviot/FY7_luku-01_fy7-1__incl-grid.png — Koordinaatisto ja mittakaavaruudukko. Kuvaaja.
+2-kaaviot/FY7_luku-09_fy7-9__spectrum.png — Aallonpituuden logaritmisella asteikolla esitetyt spektripalkit. Mittakaavaan piirretty kuvaaja.
+2-kaaviot/FY7_luku-09_fy7-9__wave.png — Akselille piirretyt sähkökentän ja magneettikentän aaltokäyrät. Kuvaaja.
+2-kaaviot/FY7_luku-13_fy7-13__spectrum-q.png — Senttimetriasteikolle mittakaavaan sijoitetut spektripalkit. Kuvaaja.
+2-kaaviot/FY7_luku-14_fy7-14__bands.png — Kalvon paksuuden funktiona esitetty väripalkki numeerisella akselilla. Kuvaaja.
+2-kaaviot/FY7_luku-14_fy7-14__phase.png — Piirretyt aaltokäyrät ja niiden summakäyrät. Kuvaaja.
+2-kaaviot/FY7_luku-15_fy7-15__polariser.png — Polarisaattorin jälkeen piirretty sähkökentän aaltokäyrä. Kuva sisältää kuvaajan.
+
+KUVASUHDEPOIKKEAMAT (SUHTEELLINEN %)
+FY7_luku-01_fy7-1__hero-uusi.png	0.015605
+FY7_luku-01_fy7-1__scene-uusi.png	0.011553
+FY7_luku-01_fy7-1__two-magnets-uusi.png	0.074156
+FY7_luku-03_fy7-3__hero-uusi.png	0.015605
+FY7_luku-04_fy7-4__hero-uusi.png	0.015605
+FY7_luku-04_fy7-4__scene-uusi.png	0.100547
+FY7_luku-05_fy7-5__hero-uusi.png	0.040964
+FY7_luku-06_fy7-6__hero-uusi.png	0.015605
+FY7_luku-07_fy7-7__hero-uusi.png	0.015605
+FY7_luku-07_fy7-7__scene-uusi.png	0.100547
+FY7_luku-08_fy7-8__hero-uusi.png	0.015605
+FY7_luku-09_fy7-9__hero-uusi.png	0.015605
+FY7_luku-10_fy7-10__hero-uusi.png	0.015605
+FY7_luku-10_fy7-10__scene-uusi.png	0.100547
+FY7_luku-11_fy7-11__hero-uusi.png	0.015605
+FY7_luku-12_fy7-12__hero-uusi.png	0.015605
+FY7_luku-12_fy7-12__scene-uusi.png	0.100547
+FY7_luku-13_fy7-13__hero-uusi.png	0.015605
+FY7_luku-13_fy7-13__scene-uusi.png	0.100547
+FY7_luku-14_fy7-14__hero-uusi.png	0.015605
+FY7_luku-15_fy7-15__hero-uusi.png	0.015605
+FY7_luku-15_fy7-15__scene-uusi.png	0.011553
+FY7_luku-16_fy7-16__hero-uusi.png	0.015605
+FY7_luku-01_fy7-1__bar-field-uusi.png	0.054741
+FY7_luku-01_fy7-1__cut-magnet-uusi.png	0.008756
+FY7_luku-01_fy7-1__domains-uusi.png	0.027225
+FY7_luku-01_fy7-1__earth-field-uusi.png	0.017230
+FY7_luku-01_fy7-1__inclination-uusi.png	0.034416
+FY7_luku-01_fy7-1__vector-sum-uusi.png	0.116219
+FY7_luku-02_fy7-2__circle-path-uusi.png	0.011553
+FY7_luku-02_fy7-2__force-dir-uusi.png	0.058967
+FY7_luku-02_fy7-2__pick-oikea-uusi.png	0.013718
+FY7_luku-02_fy7-2__pick-ulos-uusi.png	0.013718
+FY7_luku-02_fy7-2__pick-vasen-uusi.png	0.013718
+FY7_luku-02_fy7-2__pick-ylos-uusi.png	0.013718
+FY7_luku-02_fy7-2__spectrometer-uusi.png	0.003196
+FY7_luku-02_fy7-2__track-sign-uusi.png	0.035069
+FY7_luku-03_fy7-3__coil-dims-uusi.png	0.120192
+FY7_luku-03_fy7-3__coil-field-uusi.png	0.100547
+FY7_luku-03_fy7-3__wire-field-uusi.png	0.152228
+FY7_luku-04_fy7-4__angle-uusi.png	0.045370
+FY7_luku-04_fy7-4__motor-uusi.png	0.074405
+FY7_luku-04_fy7-4__wires-uusi.png	0.100547
+FY7_luku-05_fy7-5__faraday-uusi.png	0.139223
+FY7_luku-05_fy7-5__flux-uusi.png	0.139223
+FY7_luku-05_fy7-5__rod-uusi.png	0.011553
+FY7_luku-06_fy7-6__core-uusi.png	0.045370
+FY7_luku-06_fy7-6__tube-uusi.png	0.054741
+FY7_luku-07_fy7-7__generator-uusi.png	0.100547
+FY7_luku-08_fy7-8__grid-uusi.png	0.088719
+FY7_luku-08_fy7-8__transformer-uusi.png	0.100547
+FY7_luku-09_fy7-9__antenna-uusi.png	0.139223
+FY7_luku-10_fy7-10__depth-uusi.png	0.100547
+FY7_luku-10_fy7-10__interface-uusi.png	0.100547
+FY7_luku-10_fy7-10__protractor-uusi.png	0.017230
+FY7_luku-11_fy7-11__drop-uusi.png	0.152228
+FY7_luku-11_fy7-11__observer-uusi.png	0.054741
+FY7_luku-11_fy7-11__prism-uusi.png	0.045370
+FY7_luku-11_fy7-11__prism-angles-uusi.png	0.113122
+FY7_luku-12_fy7-12__diamond-uusi.png	0.087460
+FY7_luku-12_fy7-12__fibre-uusi.png	0.045370
+FY7_luku-12_fy7-12__water-uusi.png	0.011553
+FY7_luku-13_fy7-13__geometry-uusi.png	0.011553
+FY7_luku-13_fy7-13__setup-uusi.png	0.048604
+FY7_luku-13_fy7-13__setup-q-uusi.png	0.020550
+FY7_luku-13_fy7-13__white-uusi.png	0.036602
+FY7_luku-13_fy7-13__young-uusi.png	0.100547
+FY7_luku-15_fy7-15__brewster-uusi.png	0.147351
+FY7_luku-15_fy7-15__components-uusi.png	0.011553
+FY7_luku-15_fy7-15__glare-uusi.png	0.100547
+FY7_luku-15_fy7-15__sheets-uusi.png	0.015822
+FY7_luku-16_fy7-16__charger-uusi.png	0.054741
+FY7_luku-16_fy7-16__charger-points-uusi.png	0.017230
+FY7_fy7-sovella__fy7-s1-forces-uusi.png	0.003915
+FY7_fy7-sovella__fy7-s1-implanter-uusi.png	0.017230
+FY7_fy7-sovella__fy7-s4-fibre-uusi.png	0.005269
