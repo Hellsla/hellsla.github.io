@@ -381,4 +381,4 @@ F_0 &= 850\,\text{kg}\cdot 24.8\,\text{m/s}^2 \\
 &= 21.1\,\text{kN}
 \end{aligned}$$
 
-and $21.1\,	ext{kN} : 4 = 5.27\,\text{kN}$.
+and $21.1\,\text{kN} : 4 = 5.27\,\text{kN}$.
