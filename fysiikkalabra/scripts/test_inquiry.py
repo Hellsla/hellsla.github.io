@@ -217,6 +217,34 @@ def page_form(pg, b, url, acts, page):
     L = q.evaluate(WIDE)
     check("360 px: one column", not L["lab"] and not any(L["figs"][i] and side for i, side in enumerate(L["sides"])), str(L))
     q.close()
+    if pg.locator(".lab-side #sim-root > .sim-canvas").count():
+        stick_checks(b, url, pathlib.Path(url).stem)
+
+
+STICK = """() => { const c = document.querySelector('#sim-root > .sim-canvas'), r = document.querySelector('#sim-root > .readout'), t = document.querySelector('nav.toc');
+  const toc = t ? t.getBoundingClientRect().bottom : 0, h = c.getBoundingClientRect().height;
+  if (r) window.scrollBy(0, r.getBoundingClientRect().top - (toc + h + 8));   // the readouts just under where the stuck picture stands
+  const cb = c.getBoundingClientRect(), rb = r ? r.getBoundingClientRect() : null;
+  return { pos: getComputedStyle(c).position, stick: !!c.closest('.sim-stick'), top: cb.top, bottom: cb.bottom, toc, h,
+           readTop: rb ? rb.top : null, inView: Math.max(0, Math.min(cb.bottom, innerHeight) - Math.max(cb.top, toc)) / h }; }"""
+
+
+def stick_checks(b, url, lid):
+    """Work queue 10, PR 4 (pilot, inquiry.SIM_STICK_PILOT): on a phone the simulation's picture sticks under the stage
+    bar while the student uses its controls and reads its readouts; every other chapter keeps the picture in the flow
+    until the teacher approves the pilot."""
+    for w, h in ((390, 844), (360, 740)):
+        q = b.new_page(viewport={"width": w, "height": h}); q.goto(url); q.wait_for_timeout(800)
+        q.evaluate("document.querySelector('#sim').scrollIntoView({ block: 'start' })"); q.wait_for_timeout(150)
+        S = q.evaluate(STICK); q.wait_for_timeout(150)
+        if lid in inquiry.SIM_STICK_PILOT:
+            check(f"{w} px: the simulation's picture sticks right under the stage bar, whole, while the readouts are in view (work queue 10, PR 4 pilot)",
+                  S["stick"] and S["pos"] == "sticky" and abs(S["top"] - S["toc"]) <= 1.5 and S["inView"] >= 0.99
+                  and (S["readTop"] is None or S["readTop"] >= S["bottom"] - 1), str(S))
+        else:
+            check(f"{w} px: the simulation's picture stays in the flow (the sticky picture is a pilot of fy4-1 and fy2-2 until the teacher approves it)",
+                  not S["stick"] and S["pos"] != "sticky", str(S))
+        q.close()
 
 
 

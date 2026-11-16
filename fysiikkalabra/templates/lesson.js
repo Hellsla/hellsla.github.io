@@ -154,6 +154,9 @@
      Without JavaScript the bar is a plain list of links. */
   const toc = document.querySelector('nav.toc');
   if (toc) {
+    // the height of the bar for a simulation picture that sticks under it on a phone (site.css .sim-stick, work queue 10 PR 4 pilot)
+    if (document.querySelector('.sim-stick') && 'ResizeObserver' in window)
+      new ResizeObserver(() => document.documentElement.style.setProperty('--toc-h', toc.getBoundingClientRect().height + 'px')).observe(toc);
     const links = [...toc.querySelectorAll('a[href^="#"]')];
     const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
     const targets = pairs.map((p) => p[1]);
