@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1189d3193db55601
+CONTENT-HASH: b07c1ed2cb3fa66d
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L3-01..L3-05 eq-chain rows slightly wider than 360 px scroll; known clipped formulas, untouched.
+- [Minor] fy5-9-L3-05 Vastaus/Answer — the a), b), c) parts run together in one paragraph; readable at 360 px, but a full stop before each letter is the only separator. Accepted trade-off for answers_shown.py; optional: bold the letters.
 
 ## Checked
-- own Playwright render of preview/en/fy5-9.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-05, L2-07, L3-04, L3-05 at 360 and 1280 px opened where noted.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Delta round 1: rendered the solution open at 360 px (?ratkaisut=1), the one-paragraph answer row; scrollWidth 360, no overflow, no clipped formulas, units upright with thin spaces, decimal handling unchanged.
+- Judged the changed paragraph only; no word changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: aef0621091c93428
+CONTENT-HASH: 1cfae8fb7e6374c1
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-9-L2-05/-06/-07 Vastaus — several changed Vastaus blocks carry 70+ words; fine, optionally split the b) and c) parts as in L3.
+- [Minor] fy5-9-L3-05 Vastaus/Answer — the a), b), c) parts run together in one paragraph; readable at 360 px, but a full stop before each letter is the only separator. Accepted trade-off for answers_shown.py; optional: bold the letters.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-9.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- Changed Sijoitus/Vastaus (pendulum a–c) and the revised L2-06 answer (20 N/m, two figures) read in the packet.
+- Delta round 1: rendered the solution open at 360 px (?ratkaisut=1), the one-paragraph answer row; scrollWidth 360, no overflow, no clipped formulas, units upright with thin spaces, decimal handling unchanged.
+- Judged the changed paragraph only; no word changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

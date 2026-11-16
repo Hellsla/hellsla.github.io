@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b83d89918db889fd
+CONTENT-HASH: 5635c992b22793c9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] sovella section (not part of this change): one chain scrolls 3 px at 360 px (274 vs 271).
-- [Minor] L3-05 Järkevyys: an inline '(' ends a line before '0,5988 m/s > 0,5981 m/s)'; a non-breaking join would read better.
+- [Minor] fy5-9-L3-05 Vastaus/Answer — the a), b), c) parts run together in one paragraph; readable at 360 px, but a full stop before each letter is the only separator. Accepted trade-off for answers_shown.py; optional: bold the letters.
 
 ## Checked
-- L3-05 solution open at 360 px (Vastaus now a), b), c) as separate lines, clear); scans at 360/390/1280 of all .eq-chain; changed Vastaus wordings (L2-05..07) read.
+- Delta round 1: rendered the solution open at 360 px (?ratkaisut=1), the one-paragraph answer row; scrollWidth 360, no overflow, no clipped formulas, units upright with thin spaces, decimal handling unchanged.
+- Judged the changed paragraph only; no word changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
