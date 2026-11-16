@@ -234,7 +234,7 @@ k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
 
 **Model answer c):** The model is $T(t) = T_1 + k(t - t_1)$, where $T_1 = 7.2\,{}^\circ\text{C}$, $k = 1.52\,{}^\circ\text{C/h}$ and $t_1 = 6\,\text{h}$. It gives $10.2\,{}^\circ\text{C}$ at $8$ o'clock (measured $10.4\,{}^\circ\text{C}$) and $13.3\,{}^\circ\text{C}$ at $10$ o'clock (measured $13.5\,{}^\circ\text{C}$). Inside the interval the difference is at most $0.2\,{}^\circ\text{C}$, so the model describes the measurements well.
 
-Outside the interval the model fails. At $16$ o'clock it gives $22.3\,{}^\circ\text{C}$, although the measured temperature is $18.1\,{}^\circ\text{C}$, and at $0$ o'clock it would give $-1.9\,{}^\circ\text{C}$, although the measured one is $8.1\,{}^\circ\text{C}$. The model is good only in the range of the measurements it was made from.
+Outside the interval the model fails. At $16$ o'clock it gives $22.4\,{}^\circ\text{C}$, although the measured temperature is $18.1\,{}^\circ\text{C}$, and at $0$ o'clock it would give $-1.9\,{}^\circ\text{C}$, although the measured one is $8.1\,{}^\circ\text{C}$. The model is good only in the range of the measurements it was made from.
 
 **Model answer d):** The morning rise happens because the Sun heats the ground and the air more and more effectively. In the afternoon the heating weakens and at night the air cools, so the temperature cannot rise evenly all day. The next day's temperature also depends on the cloud cover, the wind and the kind of air mass that arrives. One morning's straight line contains none of this, so it cannot forecast another day. That needs a weather forecast based on models of the physics of the atmosphere and on a large body of observations.
 
