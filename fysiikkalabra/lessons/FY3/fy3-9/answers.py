@@ -56,4 +56,19 @@ a["fy3-9-L3-05"] = (pV_dive / 1.5 - p0) / (rho_vesi * g / 1000)   # V = 1,5 l: p
 a["fy3-9-L1-09"] = 101 * 2.0 / 70.1                    # MAFY 3000 m: p₂ = 70 100 Pa = 70,1 kPa; Boyle (T constant): V₂ = p₁V₁/p₂ = 202 kPa·l / 70,1 kPa = 2,882 l -> 2,9 l
 # Added exercise (teacher 2026-11-13: second figure task)
 a["fy3-9-L2-09"] = 120.0 * K(100) / 300.0              # figure: (300 K; 120 kPa); isochoric, p₂ = p₁T₂/T₁ = 120 kPa · 373,15 K / 300 K = 149,3 kPa -> 149 kPa
+# Added exercise (teacher 2026-11-16: data task FY3-A1, PhET Gas Properties; example measurement of 16 November 2026)
+T_ph = [197, 254, 300, 352, 405, 454, 511]             # K, 100 heavy particles, volume held constant, one gauge reading each
+p_ph = [824, 994, 1170, 1363, 1581, 1766, 2024]        # kPa
+suhteet_ph = [pp / T for pp, T in zip(p_ph, T_ph)]     # p/T per row: 4,18; 3,91; 3,90; 3,87; 3,90; 3,89; 3,96 kPa/K
+k_ph = sum(pp * T for pp, T in zip(p_ph, T_ph)) / sum(T * T for T in T_ph)   # line through origin: k = Σ(pT)/Σ(T²) = 3 721 913/948 491 = 3,924 kPa/K
+poikkeamat_ph = [pp - k_ph * T for pp, T in zip(p_ph, T_ph)]   # p − kT: +51; −3; −7; −18; −8; −16; +19 kPa (largest at 197 K: 51 kPa)
+mT, mp = sum(T_ph) / 7, sum(p_ph) / 7                  # free line p = bT + a for the origin check
+b_ph = sum((T - mT) * (pp - mp) for pp, T in zip(p_ph, T_ph)) / sum((T - mT) ** 2 for T in T_ph)   # slope 3,84 kPa/K
+a_ph = mp - b_ph * mT                                  # intercept 32 kPa, the size of the gauge's fluctuation (about ±30 kPa)
+p_enn = k_ph * 601                                     # prediction at 601 K (not used in the fit): 2358 kPa
+ero_ph = p_enn - 2346                                  # simulation read 2346 kPa: difference 12 kPa
+ero_pros = ero_ph / 2346 * 100                         # = 0,53 % -> 0,5 %
+p300, p450 = k_ph * 300, k_ph * 450                    # reasonableness: model 1177 kPa and 1766 kPa
+suhde_mitattu = 1766 / 1170                            # measured rows 454 K and 300 K: 1,509 -> 1,51
+a["fy3-9-L2-10"] = 450 / 300                           # p = kT: p₂/p₁ = T₂/T₁ = 450 K / 300 K = 1,50 (the same for every k)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

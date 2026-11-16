@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 80088db3c3777a8f
+CONTENT-HASH: 1e3321925072288a
+Round: 1
+Mode: delta
 
 ## Blocking
 
 ## Polish
-- lessons/FY3/fy3-8/answers.py:2 — the docstring and comments still say ΔL and L₀, while the texts use Δl and l₀. This was raised before and is carried over; answers.py is not part of this diff.
 
 ## Checked
-- I judged the only change in the diff, the L2-07 Järkevyys: "Millimetrin murto-osa metrien pituudella" became "metriä kohti". This is a factual correction. The steel beam lengthens 3,0 mm / 5,00 m = 0,60 mm per metre at ΔT = 50 K, which is a fraction of a millimetre per metre. The whole 5 m beam lengthens 3,0 mm, which is not a fraction of a millimetre, so the old wording was wrong as a statement about the beam (A, minor), and the new one is right.
-- I recomputed the comparison numbers in the same Järkevyys. Aluminium: 23·10⁻⁶ · 5,00 · 50 m = 5,75 mm. Copper: 17·10⁻⁶ · 5,00 · 50 m = 4,25 mm. Steel: α = 0,0030/250 = 12·10⁻⁶ 1/K. All are unchanged and correct.
-- The change contains no number, symbol or unit. No answer, unit or tolerance changed.
-- Hash at start and end: 80088db3c3777a8f.
+- New fy3-8-L2-10: Δh = γh₀ΔT = 2.0·10⁻⁴ · 1000 · 0.30 = 0.060 m = 60 mm, inside the 3 % tolerance. The derivation, with A cancelling, is symbolic first.
+- The dated example in a) was recomputed: 115.8 mm / 33.8 a = 3.43 mm/a, with 91 mm the rate is 2.7 mm/a, the ±4.0 mm uncertainty gives ±0.12 mm/a, and 115.8 mm / 3 is about 39 mm. All agree with the source facts.
+- The physics of b) and d) is the same as in the Finnish set passed today: the particle spacing grows, the basin does not give way, two thirds of the rise is meltwater, γ depends on T, salinity and pressure (smaller in cold water), the warming is uneven, and the land is rising in Finland. The glosses are correct.
+- A scripted comparison with the Finnish set found identical answer, unit, tolerance and kind, and the same numbers in the text and in every solution section.
+- Caption edits: "(esimerkkiaineisto)" removed only.
+- Hash identical at start and end.

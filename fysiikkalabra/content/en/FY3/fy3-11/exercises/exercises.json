@@ -330,6 +330,19 @@
       "answer": 0.6,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-10",
+      "level": 2,
+      "text": "Source material: <a href=\"https://www.motiva.fi/wp-content/uploads/sites/2/2026/01/Saatojen-ja-kayttotapojen-vaikutus-energiakulutukseen-–-Omakotitalot.pdf\" target=\"_blank\" rel=\"noopener\">Motiva – Säätöjen ja käyttötapojen vaikutus energiankulutukseen – Omakotitalot (PDF, in Finnish)</a> (read 16 November 2026)\n\nThe source by Motiva tells how the settings and the ways of use of the heating of a detached house affect its energy consumption. Read its chapters on the air-source heat pump (Ilmalämpöpumppu) and the air-to-water heat pump (Ilma-vesilämpöpumppu) and the glossary entries Lämpökerroin and COP. According to the glossary, a coefficient of performance of $3.0$ means that “the efficiency is $300$ per cent”. The COP of the source is the same quantity as the coefficient of performance $\\varepsilon$ of this chapter.\n\na) Explain with the help of the source what the coefficient of performance of a heat pump means. How does it differ from the energy-conversion efficiency of an ordinary electric heater, and why is the glossary's expression “the efficiency is $300$ per cent” inexact in physics?\n\nb) The coefficient of performance of a heat pump is $4.0$, and the pump uses $2.5\\,\\text{kWh}$ of electrical energy. Calculate the heat $Q_1$ transferred to the room and the heat $Q_2$ taken from the surroundings.\n\nc) Explain with the help of the source how the outdoor temperature and the temperature needed for the heating (the temperature of the indoor air or of the heating water) affect the coefficient of performance of a heat pump. What follows from this in a hard frost?\n\nd) Assess the claim: “A heat pump breaks the law of conservation of energy, because it produces more thermal energy than it uses electrical energy.” Use the energy balance of part b) in your justification.\n\nThe heat $Q_2$ taken from the surroundings in part b) goes in the answer field, in kilowatt-hours.",
+      "kind": [
+        "data",
+        "error",
+        "concept"
+      ],
+      "answer": 7.5,
+      "unit": "kWh",
+      "tolerance": 0.02
     }
   ],
   "level3": [

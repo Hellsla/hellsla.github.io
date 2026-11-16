@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 55d454ed07d07adc
+CONTENT-HASH: 6a7f08d6c72a452e
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] lesson.md Ydinajatus (theory-1280-1) — the bridge photo stands alone at the left with an empty column beside it at 1280 px — put it beside the "Miksi aine laajenee?" paragraph or accept.
-- [Minor] lesson.md "Pohjalla on talvellakin noin 4-asteista vettä" — a number without LaTeX unit form in prose — write $4\,{}^\circ\text{C}$:n vettä.
-- [Minor] table headers "(10⁻⁶ 1/K)" use Unicode superscripts, not LaTeX like the rest — set as $\alpha\ (10^{-6}\,\tfrac{1}{\text{K}})$.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- fig-1 (hero), fig-9 (particles), fig-11 (volume), fig-13 (rod), fig-15 (rail scene) at 390 px: legible, palette consistent, LaTeX labels, cold blue / warm red, nothing clipped; the hero shows the car from behind as described.
-- intro-1280, top via sim-390, theory-1280-1 and -2 (formula blocks, tables, figure beside text), example-390-1 and -2 (aligned rows, no clipping), open-exercises-1280-3 (solutions open, formulas aligned).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

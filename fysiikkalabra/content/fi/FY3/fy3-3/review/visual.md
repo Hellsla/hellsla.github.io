@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 646fb90069f3ea68
+CONTENT-HASH: 7fb5048f44ee8647
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json task "Sovella uuteen tilanteeseen", Järkevyys — the re-broken chain is a two-row display block in mid-sentence ("…paine nousee noin [block], ja 101 + 21…") with a trailing comma; it reads, but a one-row chain would fit. The source keeps chains inline for the build to break (NOTES §1).
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- delta: no capture shows the changed solution open, so I rendered the page myself at 360 and 1280 px with the solutions open (the Järkevyys block of "Sovella uuteen tilanteeseen"): rows aligned, nothing clipped, no horizontal overflow, numbers, signs and units as before.
-- stage-sovella-390-2/-3 and open-tarkista-1280-3/-4 (layout around the changed text survived).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

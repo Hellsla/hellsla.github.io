@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b05343478c76c7ec
+CONTENT-HASH: 4c7d387dc2e7668e
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] inquiry.json check-c2 option 3 feedback — the new wording ("Sähkövastuksessa $1{,}0\,\text{kWh}$ sähköä kasvattaisi vastuksen sisäenergiaa täsmälleen $1{,}0\,\text{kWh}$, ja tämä energia siirtyisi lämpönä huoneeseen") reads fluently; its feedback state is not captured open (another option was selected), judged from source.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta: diff read (prose only: sisäenergia / lämpönä wording). open-tarkista-1280-2 (Käsitetehtävä Lämpöpumppu: kWh upright, options and feedback box readable, layout intact).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

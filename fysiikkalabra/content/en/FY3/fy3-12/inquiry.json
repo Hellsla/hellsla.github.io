@@ -135,7 +135,7 @@
           {
             "text": "$150\\,\\text{W/m}^2$ comes down to the ground from the atmosphere, so the surface receives $390\\,\\text{W/m}^2$ in total, and in balance it must radiate the same $390\\,\\text{W/m}^2$, which requires a higher temperature.",
             "correct": true,
-            "feedback": "Correct. The ground receives $240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 = 390\\,\\text{W/m}^2$, and in balance the power leaving is equal. The hotter an object is, the more it radiates, so $390\\,\\text{W/m}^2$ corresponds to a higher temperature than $240\\,\\text{W/m}^2$. The atmosphere does not produce energy: it radiates down part of the radiation it has absorbed from the ground."
+            "feedback": "Correct. The ground receives $$\\begin{aligned} &240\\,\\text{W/m}^2 + 150\\,\\text{W/m}^2 \\\\ &= 390\\,\\text{W/m}^2 \\end{aligned}$$, and in balance the power leaving is equal. The hotter an object is, the more it radiates, so $390\\,\\text{W/m}^2$ corresponds to a higher temperature than $240\\,\\text{W/m}^2$. The atmosphere does not produce energy: it radiates down part of the radiation it has absorbed from the ground."
           },
           {
             "text": "With an atmosphere the ground radiates less, so more energy is left in the surface.",
@@ -176,7 +176,7 @@
             "feedback": "You multiplied the excess and $1.2\\,\\text{W/m}^2$ per kelvin. The question asks how many kelvins are needed for the $3.6\\,\\text{W/m}^2$ excess to drop to zero: divide the excess by $1.2\\,\\text{W/m}^2$ per kelvin."
           }
         ],
-        "solution": "**Given:** row \"just after\" of the table: power leaving $236.4\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and excess $3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$; absorbed power $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$; in the model the power leaving increases by $k = 1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ for every kelvin of warming\n\n**Find:** the total warming $\\Delta T$ in kelvins when the power leaving is again equal to the power absorbed\n\n**Principle:** The concentration stays constant, so the absorbed power stays the same $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. The Earth warms while the excess is positive, and as it warms it radiates more. Balance is reached when the warming has increased the power leaving by exactly the excess.\n\n**Formula:** The power leaving must increase by the excess $\\Delta P$, and the increase is $k\\,\\Delta T$:\n\n$$k\\,\\Delta T = \\Delta P \\quad\\Rightarrow\\quad \\Delta T = \\frac{\\Delta P}{k}$$\n\n**Conversions:** No conversions are needed, because the excess and the coefficient are given in the units $\\tfrac{\\text{W}}{\\text{m}^2}$ and $\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ and the square metres cancel.\n\n**Substitution:** $\\Delta T = \\dfrac{3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}}{1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}} = 3.0\\,\\text{K}$\n\n**Answer:** $3.0\\,\\text{K}$, two significant figures. The limiting data are the excess $240.0 - 236.4 = 3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$ (the difference has one decimal and two figures) and the coefficient $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ (two figures).\n\n**Reasonableness:** Check the balance: the power leaving is $236.4 + 1.2 \\cdot 3.0 = 240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$, equal to the power absorbed. The result fits the table: at two kelvins the excess is still $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and after the third kelvin it is zero. The warming therefore continues for a long time after the concentration has stopped increasing, but it stops at a new balance."
+        "solution": "**Given:** row \"just after\" of the table: power leaving $236.4\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and excess $3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$; absorbed power $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$; in the model the power leaving increases by $k = 1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ for every kelvin of warming\n\n**Find:** the total warming $\\Delta T$ in kelvins when the power leaving is again equal to the power absorbed\n\n**Principle:** The concentration stays constant, so the absorbed power stays the same $240.0\\,\\tfrac{\\text{W}}{\\text{m}^2}$. The Earth warms while the excess is positive, and as it warms it radiates more. Balance is reached when the warming has increased the power leaving by exactly the excess.\n\n**Formula:** The power leaving must increase by the excess $\\Delta P$, and the increase is $k\\,\\Delta T$:\n\n$$k\\,\\Delta T = \\Delta P \\quad\\Rightarrow\\quad \\Delta T = \\frac{\\Delta P}{k}$$\n\n**Conversions:** No conversions are needed, because the excess and the coefficient are given in the units $\\tfrac{\\text{W}}{\\text{m}^2}$ and $\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ and the square metres cancel.\n\n**Substitution:** $\\Delta T = \\dfrac{3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}}{1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}} = 3.0\\,\\text{K}$\n\n**Answer:** $3.0\\,\\text{K}$, two significant figures. The limiting data are the excess $240.0 - 236.4 = 3.6\\,\\tfrac{\\text{W}}{\\text{m}^2}$ (the difference has one decimal and two figures) and the coefficient $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$ (two figures).\n\n**Reasonableness:** Check the balance: the power leaving is $$\\begin{aligned} &236.4 + 1.2 \\cdot 3.0 \\\\ &= 240.0\\,\\tfrac{\\text{W}}{\\text{m}^2} \\end{aligned}$$, equal to the power absorbed. The result fits the table: at two kelvins the excess is still $1.2\\,\\tfrac{\\text{W}}{\\text{m}^2}$ and after the third kelvin it is zero. The warming therefore continues for a long time after the concentration has stopped increasing, but it stops at a new balance."
       },
       "source": "model"
     },
@@ -228,16 +228,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The area of a window is 1.5 m² and its U-value is $1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $P = UA\\Delta T = 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} = 15\\,\\text{W}$. Where is the error?",
+      "prompt": "The area of a window is 1.5 m² and its U-value is $1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Where is the error?",
       "choices": [
         {
           "text": "The temperatures should be converted to kelvins before subtracting.",
           "feedback": "A temperature difference is the same in kelvins and in degrees Celsius, so the conversion does not change the result. The error is in the sign of the outdoor temperature."
         },
         {
-          "text": "The outdoor temperature is $-10\\,{}^\\circ\\text{C}$, so $\\Delta T = 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) = 30\\,\\text{K}$ and $P = 45\\,\\text{W}$.",
+          "text": "The outdoor temperature is $-10\\,{}^\\circ\\text{C}$, so $$\\begin{aligned} \\Delta T &= 20\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C}) \\\\ &= 30\\,\\text{K} \\end{aligned}$$ and $P = 45\\,\\text{W}$.",
           "correct": true,
-          "feedback": "Correct. The freezing temperature is subtracted with its sign, so the difference is $30\\,\\text{K}$ and not $10\\,\\text{K}$. The power is $1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 30\\,\\text{K} = 45\\,\\text{W}$, three times the student's result."
+          "feedback": "Correct. The freezing temperature is subtracted with its sign, so the difference is $30\\,\\text{K}$ and not $10\\,\\text{K}$. The power is $$\\begin{aligned} &1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 30\\,\\text{K} \\\\ &= 45\\,\\text{W} \\end{aligned}$$, three times the student's result."
         },
         {
           "text": "You should divide by the U-value, because a good insulator lets less heat through.",
@@ -262,7 +262,7 @@
       "hints": [
         "In which direction does heat transfer, and what is the temperature difference between the inside and the outside?",
         "The power conducted through the walls is $P = UA\\Delta T$, and the energy in one day is $E = Pt$.",
-        "$\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$ and $P = 0.30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 4.0\\,\\text{m}^2 \\cdot 16\\,\\text{K} = 19.2\\,\\text{W}$. Multiply by the hours and convert to kilowatt-hours."
+        "$\\Delta T = 21\\,{}^\\circ\\text{C} - 5\\,{}^\\circ\\text{C} = 16\\,\\text{K}$ and $$\\begin{aligned} P &= 0.30\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\\\ &\\cdot 4.0\\,\\text{m}^2 \\cdot 16\\,\\text{K} \\\\ &= 19.2\\,\\text{W} \\end{aligned}$$. Multiply by the hours and convert to kilowatt-hours."
       ],
       "mistakes": [
         {
@@ -342,8 +342,8 @@
       "tolerance": 0.02,
       "hints": [
         "What two parts does the $240\\,\\text{W/m}^2$ leaving into space consist of?",
-        "What leaves into space is the radiation that passed straight through from the ground and the power radiated upwards by the atmosphere: $240\\,\\text{W/m}^2 = 100\\,\\text{W/m}^2 + P_\\text{up}$.",
-        "Finally check the balance of the atmosphere itself: it absorbs $390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 = 290\\,\\text{W/m}^2$, and up and down together it must radiate the same amount."
+        "What leaves into space is the radiation that passed straight through from the ground and the power radiated upwards by the atmosphere: $$\\begin{aligned} &240\\,\\text{W/m}^2 \\\\ &= 100\\,\\text{W/m}^2 + P_\\text{up} \\end{aligned}$$.",
+        "Finally check the balance of the atmosphere itself: it absorbs $$\\begin{aligned} &390\\,\\text{W/m}^2 - 100\\,\\text{W/m}^2 \\\\ &= 290\\,\\text{W/m}^2 \\end{aligned}$$, and up and down together it must radiate the same amount."
       ],
       "mistakes": [
         {

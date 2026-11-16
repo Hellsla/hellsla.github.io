@@ -272,7 +272,7 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvio: $0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$. Se vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin. Se sopii lauhdevoimalaitoksen tavalliseen noin $40\,\%$:n hyötysuhteeseen (tyypillisesti $38$–$42\,\%$). Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$. Se on yli puolet polttoaineen energiasta.
+**Järkevyys.** Arvio: $$\begin{aligned} &0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \\ &\approx 231\,\text{MW} \end{aligned}$$. Se vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin. Se sopii lauhdevoimalaitoksen tavalliseen noin $40\,\%$:n hyötysuhteeseen (tyypillisesti $38$–$42\,\%$). Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$. Se on yli puolet polttoaineen energiasta.
 
 Kattilan häviö on vain $54\,\text{MW}$ ja generaattorin ja muuntajan $12\,\text{MW}$. Parannukset kannattaa siis kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 

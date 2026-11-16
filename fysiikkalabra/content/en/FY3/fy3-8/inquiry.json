@@ -28,11 +28,11 @@
         {
           "text": "$60\\,\\text{K}$",
           "correct": true,
-          "feedback": "Correct. A kelvin and a degree Celsius are the same size, so the change is the same number: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. The conversion $+273.15$ cancels in the difference."
+          "feedback": "Correct. A kelvin and a degree Celsius are the same size, so the change is the same number: $$\\begin{aligned} \\Delta T &= 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) \\\\ &= 60\\,\\text{K} \\end{aligned}$$. The conversion $+273.15$ cancels in the difference."
         },
         {
           "text": "$333\\,\\text{K}$",
-          "feedback": "You added 273 to the *change* in temperature. The conversion $T = \\theta + 273.15$ applies to a single temperature; in a difference it cancels: $(303.15 - 243.15)\\,\\text{K} = 60\\,\\text{K}$."
+          "feedback": "You added 273 to the *change* in temperature. The conversion $T = \\theta + 273.15$ applies to a single temperature; in a difference it cancels: $$\\begin{aligned} &(303.15 - 243.15)\\,\\text{K} \\\\ &= 60\\,\\text{K} \\end{aligned}$$."
         },
         {
           "text": "$0\\,\\text{K}$",
@@ -308,12 +308,12 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "An aluminium ladder ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is $4.0\\,\\text{m}$ long. A student calculates how much it gets longer when the temperature rises from $10\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, so $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0.028\\,\\text{m} = 28\\,\\text{mm}$.\n\nWhere is the error?",
+      "prompt": "An aluminium ladder ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) is $4.0\\,\\text{m}$ long. A student calculates how much it gets longer when the temperature rises from $10\\,{}^\\circ\\text{C}$ to $30\\,{}^\\circ\\text{C}$:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, so $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 303\\,\\text{K} \\\\ &\\approx 0.028\\,\\text{m} \\\\ &= 28\\,\\text{mm} \\end{aligned}$$.\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The formula needs the change in temperature, not the final temperature in kelvins: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, and $\\Delta l \\approx 1.8\\,\\text{mm}$.",
+          "text": "The formula needs the change in temperature, not the final temperature in kelvins: $$\\begin{aligned} \\Delta T &= 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} \\\\ &= 20\\,\\text{K} \\end{aligned}$$, and $\\Delta l \\approx 1.8\\,\\text{mm}$.",
           "correct": true,
-          "feedback": "Correct. The student put the final temperature in kelvins in place of the change in temperature. The correct calculation is $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4.0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1.8\\,\\text{mm}$. Reasonableness check: $28\\,\\text{mm}$ would be $0.7\\,\\%$ of the length of the ladder, which is far too much for thermal expansion."
+          "feedback": "Correct. The student put the final temperature in kelvins in place of the change in temperature. The correct calculation is $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 4.0\\,\\text{m} \\cdot 20\\,\\text{K} \\\\ &\\approx 1.8\\,\\text{mm} \\end{aligned}$$. Reasonableness check: $28\\,\\text{mm}$ would be $0.7\\,\\%$ of the length of the ladder, which is far too much for thermal expansion."
         },
         {
           "text": "The coefficient $\\alpha$ must be converted to the unit 1/°C before substituting.",
@@ -342,7 +342,7 @@
       "hints": [
         "Where does the increase in the volume of the ethanol in the bulb go? Think of the liquid column rising in the tube as a cylinder.",
         "The change in volume is $\\Delta V = \\gamma V_0 \\Delta T$, and in the tube it forms a cylinder $\\Delta V = A h$, so $h = \\dfrac{\\gamma V_0 \\Delta T}{A}$.",
-        "First convert $V_0 = 0.20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$. Then $\\Delta V = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K}$."
+        "First convert $V_0 = 0.20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$. Then $$\\begin{aligned} \\Delta V &= 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -354,7 +354,7 @@
           "feedback": "You used the final temperature $25\\,{}^\\circ\\text{C}$ in place of the change in temperature. The temperature rises from $15\\,{}^\\circ\\text{C}$ to $25\\,{}^\\circ\\text{C}$, so $\\Delta T = 10\\,\\text{K}$."
         }
       ],
-      "solution": "**Given:** ethanol, $V_0 = 0.20\\,\\text{cm}^3$, $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (given in the problem), cross-sectional area of the tube $A = 0.050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Find:** the rise $h$ of the liquid column in millimetres\n\n**Principle:** Ethanol is a liquid and expands when it warms up, so the change in its volume is proportional to the initial volume and the change in temperature: $\\Delta V = \\gamma V_0 \\Delta T$. The expansion of the glass is about forty times smaller and is ignored, so the whole increase in volume goes into the thin tube. The volume of the column rising in the tube is the volume of a cylinder, $\\Delta V = A h$.\n\n**Formula:** $\\Delta V = \\gamma V_0 \\Delta T$ and $\\Delta V = A h$, so $\\gamma V_0 \\Delta T = A h$, from which\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Conversions:** The area is in square millimetres, so the volume is converted: $V_0 = 0.20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, because $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. The change in temperature is the same in kelvins: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta V &= 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2.2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2.2\\,\\text{mm}^3}{0.050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Answer:** $h = 44\\,\\text{mm}$, two significant figures. There are four limiting data: $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0.20\\,\\text{cm}^3$, $A = 0.050\\,\\text{mm}^2$ and the difference of whole degrees $\\Delta T = 10\\,\\text{K}$ are all two-figure values.\n\n**Reasonableness:** The volume of the ethanol grows by only $\\gamma \\Delta T = 1.1\\,\\%$, but in a thin tube even a small volume is a long column: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ per kelvin, which is the order of magnitude of the scale of an ordinary thermometer. The column rises because the liquid warms up. If the expansion of the glass is taken into account, the column rises by about $43\\,\\text{mm}$.",
+      "solution": "**Given:** ethanol, $V_0 = 0.20\\,\\text{cm}^3$, $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (given in the problem), cross-sectional area of the tube $A = 0.050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Find:** the rise $h$ of the liquid column in millimetres\n\n**Principle:** Ethanol is a liquid and expands when it warms up, so the change in its volume is proportional to the initial volume and the change in temperature: $\\Delta V = \\gamma V_0 \\Delta T$. The expansion of the glass is about forty times smaller and is ignored, so the whole increase in volume goes into the thin tube. The volume of the column rising in the tube is the volume of a cylinder, $\\Delta V = A h$.\n\n**Formula:** $\\Delta V = \\gamma V_0 \\Delta T$ and $\\Delta V = A h$, so $\\gamma V_0 \\Delta T = A h$, from which\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Conversions:** The area is in square millimetres, so the volume is converted: $V_0 = 0.20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, because $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. The change in temperature is the same in kelvins: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Substitution:**\n\n$$\\begin{aligned} \\Delta V &= 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2.2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2.2\\,\\text{mm}^3}{0.050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Answer:** $h = 44\\,\\text{mm}$, two significant figures. There are four limiting data: $\\gamma = 1.1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0.20\\,\\text{cm}^3$, $A = 0.050\\,\\text{mm}^2$ and the difference of whole degrees $\\Delta T = 10\\,\\text{K}$ are all two-figure values.\n\n**Reasonableness:** The volume of the ethanol grows by only $\\gamma \\Delta T = 1.1\\,\\%$, but in a thin tube even a small volume is a long column: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ per kelvin, which is the order of magnitude of the scale of an ordinary thermometer. The column rises because the liquid warms up. If the expansion of the glass is taken into account, the column rises by about $43\\,\\text{mm}$.",
       "optional": true
     },
     {

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 241f39cba1ade0b1
+CONTENT-HASH: 0b825cde023c24d3
+Mode: delta
+Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] 2-11 Järkevyys — the \tfrac fraction $\frac{360\,000\,\text{J}}{1000\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}$ is set very small in its box — use \dfrac in the display.
 
 ## Checked
-- Delta (solutions.md 2-5 pulkka wording, figures.json Joule words): open-exercises-1280-5 (task 2-5 solution layout, formulas, järkevyys box). Diff read: figure words now say "sisäenergia", matching the lesson's figure.
+- fy3-2-open-exercises-L2-1280-2 (2-11), L3-1280-1 (2-19 joined W row, aligned rows).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 50fec54398b12fb1
+CONTENT-HASH: 9ec259238b146c26
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] top-390/top-1280 — the title formula is set in KaTeX serif at a slightly larger optical size than the heading font; reads clearly and is a consequence of the project-wide all-LaTeX rule, so nothing to change.
-- [Minor] top-390 breadcrumb — the title formula wraps to its own line (or the crumb wraps) in the breadcrumb on a phone — harmless, optional: none needed.
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): Esimerkki 1: $1{,}20 \cdot 10^2\,\text{kg}$ in the task, Given and both substitution rows, the rewritten Result and Reasonableness; opened fy3-1-fi-tehtava-390/-1280 and fy3-1-fi-tulos-390/-1280 (\cdot, exponent and units render, decimal comma in fi/fi-easy, point in en; no wrap problem).
-batch delta review: opened fy3-1-top-390 (and top-1280 for fy2-5, fy3-6); the title formula renders as KaTeX (no red source), on one block with the heading, nothing clipped, no overflow, breadcrumb legible; the rest of the lesson is unchanged by the diff.
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

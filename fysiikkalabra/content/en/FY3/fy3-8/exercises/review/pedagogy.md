@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cd25322f12bff34e
-SCOPE: delta added-exercise from c8fd8fdeae438699 base 5453544b2abc
-
+CONTENT-HASH: e280ca9270616f82
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. fy3-8-L1-09 sits close to L1-01 (steel gutter, same formula); it adds the MAFY lookup, which is the point, so it is acceptable. Its hint names the table, good.
-2. Earlier polish still open: no task uses l = l0(1 + alpha dT) for the length after heating or cooling.
-
+- Polish: L2-10 depends on a live NASA page (the page text says 91 mm, the box 115.8 mm); the solution handles this well, but the answer to a) cannot be auto-checked; fine as is.
 ## Checked
-- L1-09: level 1 (one formula, one lookup); situation then question; solution symbolic first, units, reasonableness check; +-4 % tolerance explained.
-- L2-09: graph reading plus slope plus rearrangement is level 2; the figure gives start and end points, no alpha or material; description equals the picture; the solution says how the graph is read; tolerance matches grid reading.
-- Set mix: graph/data task fits the data-task goal; no repeat of the worked example.
+- Level 2 source task L2-10 fits the slot: data/graph/model, situation first, parts a–d rising in demand, answer field names its part.
+- Solution follows step by step (principle, conversions, substitution, reasonableness); model answers for open parts are observable.
+- Rows re-broken in calculation chains keep numbers and units; readable.
+- Level counts and goals unchanged; no repeat of the lesson example.

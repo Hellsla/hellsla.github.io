@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ef7b4644ff709336
+CONTENT-HASH: 04a69ae855461354
+Round: 1
+Mode: delta
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- I judged the only change in the diff, the L2-04 Answer line: "two significant figures … 480 kW limiting" became "three significant figures, because 480 kW (the final zero is significant) and 40.0 % both have three".
-- The new reason is consistent. The efficiency is given as 40.0 %, three figures. Reading the 480 kW power as three figures matches the set's convention elsewhere (whole kilowatts or megawatts count as three figures). P_o = 480/0.400 = 1200 kW and P_waste = 1200 − 480 = 720 kW, and the subtraction keeps the kilowatt precision. So "720 kW, three figures" is justified, and the old "two figures" contradicted the 40.0 % the task gives.
-- The change matches the Finnish solution word for word ("kolme merkitsevää numeroa … loppunolla on merkitsevä").
-- The key is unchanged: answer 720, tolerance 0.02, so a student's 720 kW or 7.2·10² kW is accepted. No number, symbol or unit changed elsewhere.
-- Hash at start and end: ef7b4644ff709336.
+- New fy3-11-L2-10 (Motiva PDF, heat pump COP). The model is Q₁ = Q₂ + W and ε = Q₁/W, so Q₁ = εW = 10 kWh and Q₂ = (ε − 1)W = 7.5 kWh. The key is 7.5 kWh with a 2 % tolerance, and two significant figures fit 4.0 and 2.5 kWh. The values are recomputed independently.
+- Part a) matches the guardrail: a heat pump has a coefficient of performance, not an efficiency; the heat from outdoors is not in the denominator; "300 per cent" is inexact; an electric heater is practically 100 %.
+- Part c) is right: a larger temperature difference (colder outdoors or warmer heating water) lowers ε. The figure of 1–2 at −25 °C is from the source, and at ε = 1 the pump has Q₂ = 0, like an electric heater.
+- Part d) closes the energy balance: 2.5 + 7.5 = 10 kWh. The claim is shown false.
+- The limits of the model (COP at one moment, 1.4–3 over the year for the houses studied) agree with the source facts. The quotations are translated faithfully.
+- The aligned b) chains keep the same numbers, signs and units as the Finnish. A scripted comparison found identical answer, unit, tolerance and kind, and the same numbers in the text and in every solution section.
+- Captions: only "(example data)" removed.
+- Hash identical at start and end.

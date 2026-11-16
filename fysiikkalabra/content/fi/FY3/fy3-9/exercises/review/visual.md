@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 07b8fc3a7879dabc
+CONTENT-HASH: 2c6d0cf2ab541ab3
 SCOPE: delta added-exercise from fb4c9e7694ba0259 base 81db4a6fd727
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy3-9-L2-09 solution, Muunnokset — `T_2 = 100 + 273{,}15\,\text{K}` adds a bare 100 to a kelvin value; write `T_2 = 100\,{}^\circ\text{C} + 273{,}15\,\text{K}` or `(100 + 273{,}15)\,\text{K}`.
-- [Minor] fy3-9-L1-09 — the litre sign `\textsf{l}` reads as a vertical bar next to "2,0" in the capture (project convention, only noted).
+- [Minor] fy3-9-L2-10, Annettu — the paragraph packs the whole measurement series (about 90 words with seven values twice) into one block; a small table (T, p) would read better (optional).
+- [Minor] fy3-9-L2-10, Kysytty — a)–d) run as one sentence; one item per line would be clearer (optional).
 
 ## Checked
-- Round 1, delta. Opened fy3-9-open-exercises-1280-10 (10-9 solution end), L2-1280-13 and -14 (11-18 task with graph kelvin-points, whole solution).
-- Graph: axis names with units, ticks 100 K and 40 kPa, four distinct points and no fitted line (as intended), grid every 50 K and 20 kPa; the description lists the same points; the answer is not given away.
-- Typography: fractions, units, aligned rows and the answer box read cleanly; set still reads as one.
-- Hash at start and end the same.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 15 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- New exercise fy3-9-L2-10 read at 1280 px in the existing captures L2-1280-14…17 (source link first, a–d, model solution, answer box, Järkevyys): layout, typography and language clean; decimal commas, units and `:`-division correct.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

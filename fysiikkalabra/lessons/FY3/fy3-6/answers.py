@@ -43,4 +43,10 @@ Q5 = c_vesi * 0.300 * (T5[0] - T5[1])                    # first interval: 4190 
 a["fy3-6-L3-05"] = (Q5 / 600) / ((T5[0] + T5[1]) / 2 - 20.0)   # k = P / (T_ka − T_huone) = 36,66 W / 61,25 K = 0,599 W/K -> 0,60
 a["fy3-6-L1-09"] = 0.896 * 0.80 * (100 - 20)                  # aluminium pot: c = 0,896 kJ/(kg·K) (MAFY), Q = c m ΔT = 57,344 kJ
 a["fy3-6-L2-09"] = 385 * 3.0 * (85 - 25) / 1e3                # figure fy3-6/c-bars: c(copper) = 385 J/(kg·K); Q = 385 · 3,0 kg · 60 K = 69 300 J = 69,3 kJ
+# --- Source-material exercise FY3-A4 (Yle: "Kuuma vesi jäätyy kylmää nopeammin", Mpemba effect) ---
+Q_kuuma = c_vesi * 0.50 * (80 - 0)                            # L2-10 b) hot sample 0,50 kg, 80 -> 0 °C, nothing evaporates: Q = c m |ΔT| = 4190 · 0,50 kg · 80 K = 167 600 J
+Q_kylma = c_vesi * 0.50 * (20 - 0)                            # comparison of the solution: the same mass from 20 °C gives out 4190 · 0,50 kg · 20 K = 41 900 J
+Q_ero = Q_kuuma - Q_kylma                                     # the hot sample must give out 125 700 J more before freezing can start; ratio 167 600/41 900 = 4,0
+assert (Q_kuuma, Q_kylma, Q_ero, Q_kuuma / Q_kylma) == (167600, 41900, 125700, 4.0)
+a["fy3-6-L2-10"] = Q_kuuma / 1e3                              # 167,6 kJ -> 170 kJ (two significant figures)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

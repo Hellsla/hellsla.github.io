@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f34c27af88a25519
+CONTENT-HASH: f734cab4b65864ae
 
 ## Blocking
 (none)
@@ -8,9 +8,9 @@ CONTENT-HASH: f34c27af88a25519
 (none)
 
 ## Checked
-- Round 1, delta. Opened fy3-10-open-exercises-L2-1280-9 (a graph-reading solution in the same style; aligned chains, answer box, Vastaus wrapping fine) and -11 (task 12-17 and its feedback).
-- The changed Vastaus/Järkevyys lines (L2-04, L2-09, L3-05: two significant figures, "$1{,}7$", "$7{,}5\,\text{m}^3$") were read from the diff: all quantities are LaTeX, decimal commas right, wording fluent. I did not locate them inside a capture.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 15 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
 - Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

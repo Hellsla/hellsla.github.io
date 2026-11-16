@@ -303,6 +303,19 @@
       "answer": 2083.3,
       "unit": "J/(kg·K)",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "model",
+        "concept"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/states-of-matter-basics\" target=\"_blank\" rel=\"noopener\">PhET – States of Matter: Basics (Aineen olomuodot: Perusteet)</a> (luettu 16. marraskuuta 2026)\n\nSimulaatio näyttää aineen hiukkasmallin: hiukkaset ovat palloja säiliössä, ja vesi näkyy pieninä molekyyleinä. Avaa simulaatio ja valitse aineeksi vesi. Painikkeilla saat aineen kiinteäksi, nesteeksi tai kaasuksi. Säiliön lämmittimellä voit lämmittää tai jäähdyttää ainetta, ja lämpömittari näyttää lämpötilan.\n\na) Katso jokaista kolmea olomuotoa. Vertaa aineen hiukkasten liikettä ja järjestäytymistä kiinteässä, nestemäisessä ja kaasumaisessa olomuodossa.\n\nb) Lämmitä kiinteää ainetta ja seuraa, mitä hiukkasten rakenteelle tapahtuu. Selitä hiukkasmallin avulla, miksi aineeseen siirtyvä energia ei olomuodon muutoksen aikana välttämättä kasvata sen lämpötilaa. Tarkastele puhdasta ainetta, joka sulaa vakiopaineessa.\n\nc) Simulaation malli ei anna todellisia energiamääriä, joten tarkastellaan oikeaa jäätä. Laske, kuinka paljon energiaa tarvitaan $0{,}20\\,\\text{kg}$:n jääpalan sulattamiseen sulamispisteessä $0\\,{}^\\circ\\text{C}$, kun sulamisvesi jää $0\\,{}^\\circ\\text{C}$:n lämpöiseksi. Käytä jään ominaissulamislämpönä arvoa $334\\,\\text{kJ/kg}$.\n\nd) Arvioi simulaation ja kohdan c) perusteella, millaisia aineen olomuodon muutokseen liittyviä ilmiöitä yksinkertainen hiukkasmalli kuvaa hyvin ja mitä se jättää kuvaamatta. Mainitse kummastakin vähintään kaksi asiaa.\n\nVastauskenttään tulee kohdan c) tulos yksikössä $\\text{kJ}$. Kohtien a), b) ja d) vastaukset tarkistat mallivastauksesta.",
+      "answer": 67,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [

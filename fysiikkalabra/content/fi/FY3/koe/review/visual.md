@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: aa340d4a51436c93
+CONTENT-HASH: 54c5ed4f55bbadb8
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] solutions.md k4 d Mallivastaus — Q_1 and Q_3 are two-row display blocks but Q_2 stays an inline one-row line between them, so the three steps look uneven; set Q_2 as an aligned row too, or leave all three inline.
-- [Minor] solutions.md k2 d Periaate — the two-row block "58,0 mm + 2,0 mm = 60,0 mm" sits mid-sentence; reads fine, but a one-row chain would fit.
+- [Minor] koe, re-broken formulas — a lone "ja" between two display formulas (Sijoitus lines, rubric) and, in the exam's Kaava line, a row holding only `P` before `= (U_1A_1 + …)` — acceptable per the layout rule; optional: keep `P = …` together if it fits.
+- [Minor] koe — a full re-read of every figure and page part was not repeated; the figures and text are unchanged from the earlier visual PASS (only formula rows differ).
 
 ## Checked
-- Full page captured earlier PASS; this round I rendered the page myself at 360 and 1280 px with every box open and looked at k2 (Periaate with the chain, Sijoitus, Mallivastaus), k4 d (Q_1, Q_2, Q_3 rows) and checked no overflow (scrollWidth equals viewport).
-- Table captions: "(esimerkkiaineisto)" is gone from the built page and tasks.json.
-- Opened the figure and page captures indirectly via the unchanged earlier PASS; figures not touched by the diff.
+- The changed formulas rendered in a browser at 360, 390 and 1280 px with every box and solution open: no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator; sheet of the changed blocks viewed at 390 px.
+- Contact sheet 1 opened (page structure, tables, task cards, solutions at 390 px).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

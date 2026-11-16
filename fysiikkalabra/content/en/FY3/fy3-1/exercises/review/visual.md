@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9f35c8b8291f8ed1
+CONTENT-HASH: c14cb01ddf5f4584
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 9f35c8b8291f8ed1
 - none
 
 ## Checked
-- Diff: two Reasonableness lines in solutions.md (extension per newton; 61 N, within rounding). Opened fy3-1-open-exercises-1280-3 (the Jupiter/Moon solution blocks and the graph task heading): layout and maths fine.
+- Delta (chains re-broken, captions): 390 px chain montage opened (40 chains: `=` in one column, no clipping, no break inside a number or unit); fy3-1-open-exercises-1280-3 not reopened (unchanged since last pass).
+- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

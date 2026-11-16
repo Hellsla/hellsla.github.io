@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3c6d489f9b4c8ed7
+CONTENT-HASH: 28f2d7de0e91fa4e
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta: Joule figure (fig-10-390): the new label "työ → sisäenergia" fits its widened box, nothing clipped, aria-label matches ("työ kasvattaa veden sisäenergiaa"), figure unchanged otherwise.
-- lab-1280 (simulation lead text "Simulaatio laskee arvot W ja P mallista", wording reads fluently, layout intact beside the experiments).
-- Diff text read: only wording; no numbers or formulas changed.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

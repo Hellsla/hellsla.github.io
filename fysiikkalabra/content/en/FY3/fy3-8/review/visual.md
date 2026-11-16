@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e76d57b5440c5048
+CONTENT-HASH: dae6c1b01b660955
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md Formula section: "(m)", "(1/K)", "(m³)", "(K)" and table headers "(10⁻⁶ 1/K)", "(10⁻³ 1/K)" are plain units in untouched reviewed text; typeset them next time the text is edited.
-- [Minor] sim-1280 readout: "-20–30 mm" reads like a subtraction; "−20 … 30 mm" is clearer (canvas decimal comma allowed).
 
 ## Checked
-- top-390, sim-390, intro-1280, theory-1280-2 (water paragraph: "$4\,{}^\circ\text{C}$" typeset, "about four degrees" now words; fixed), sim-1280, example-390-2, fig-1 (hero), fig-9 (particles), fig-11 (flask), fig-13 (rod), fig-15 (rails), contact-1.
-- Figures: LaTeX labels, no clipping, exaggeration stated, red warm / blue cold consistent; hero and scene unlabeled as required.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.

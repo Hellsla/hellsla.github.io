@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b6ab507aba8871f7
+CONTENT-HASH: c60e84b6e10928a3
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: b6ab507aba8871f7
 (none)
 
 ## Checked
-- Round 1, delta. Opened fy3-2-open-exercises-1280-5 (task 2-5, pulkka: answer, Annettu to Vastaus; layout intact). The changed Järkevyys sentence (L1-05) lies just below this capture and was read from the diff: quantity "$11\,\text{km/h}$" is LaTeX, wording fluent.
-- Hash same at start and end.
+- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-2 L2 capture 4 (L2-04 Kaava and Sijoitus, Järkevyys display fraction).
+- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
