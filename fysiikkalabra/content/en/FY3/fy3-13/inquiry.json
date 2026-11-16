@@ -266,7 +266,7 @@
       "prompt": "A student solves the temperature at zero pressure. They read the point $(40\\,{}^\\circ\\text{C};\\ 116\\,\\text{kPa})$ from the line, calculate the slope $0.367\\,\\text{kPa}/{}^\\circ\\text{C}$ and write: $$\\begin{aligned} \\theta_0 &= -\\dfrac{116\\,\\text{kPa}}{0.367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -316\\,{}^\\circ\\text{C} \\end{aligned}$$. Where is the error?",
       "choices": [
         {
-          "text": "In the formula $\\theta_0 = -p_0/k$ you must substitute the pressure at $0\\,{}^\\circ\\text{C}$, not the pressure of the point at $40\\,{}^\\circ\\text{C}$. The correct calculation is $$\\begin{aligned} \\theta_0 &= 40\\,{}^\\circ\\text{C} - \\dfrac{116\\,\\text{kPa}}{0.367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -276\\,{}^\\circ\\text{C} \\end{aligned}$$.",
+          "text": "In the formula $\\theta_0 = -p_0/k$ you must substitute the pressure at $0\\,{}^\\circ\\text{C}$, not the pressure of the point at $40\\,{}^\\circ\\text{C}$. The correct calculation is $$\\begin{aligned} \\theta_0 &= 40\\,{}^\\circ\\text{C} \\\\ &- \\dfrac{116\\,\\text{kPa}}{0.367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -276\\,{}^\\circ\\text{C} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. The formula $\\theta_0 = -p_0/k$ assumes that the temperature of the point is $0\\,{}^\\circ\\text{C}$. When the point is elsewhere, the temperature $\\theta_1$ must be included: $\\theta_0 = \\theta_1 - p_1/k$."
         },

@@ -266,7 +266,7 @@
       "prompt": "Oppilas ratkaisee nollapaineen lämpötilan. Hän lukee suoralta pisteen $(40\\,{}^\\circ\\text{C};\\ 116\\,\\text{kPa})$ ja laskee kulmakertoimeksi $0{,}367\\,\\text{kPa}/{}^\\circ\\text{C}$. Sitten hän kirjoittaa: $$\\begin{aligned} \\theta_0 &= -\\dfrac{116\\,\\text{kPa}}{0{,}367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -316\\,{}^\\circ\\text{C} \\end{aligned}$$. Missä virhe on?",
       "choices": [
         {
-          "text": "Kaavaan $\\theta_0 = -p_0/k$ pitää sijoittaa paine lämpötilassa $0\\,{}^\\circ\\text{C}$. Pisteen $40\\,{}^\\circ\\text{C}$ paine ei kelpaa. Oikein on $$\\begin{aligned} \\theta_0 &= 40\\,{}^\\circ\\text{C} - \\dfrac{116\\,\\text{kPa}}{0{,}367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -276\\,{}^\\circ\\text{C} \\end{aligned}$$.",
+          "text": "Kaavaan $\\theta_0 = -p_0/k$ pitää sijoittaa paine lämpötilassa $0\\,{}^\\circ\\text{C}$. Pisteen $40\\,{}^\\circ\\text{C}$ paine ei kelpaa. Oikein on $$\\begin{aligned} \\theta_0 &= 40\\,{}^\\circ\\text{C} \\\\ &- \\dfrac{116\\,\\text{kPa}}{0{,}367\\,\\text{kPa}/{}^\\circ\\text{C}} \\\\ &\\approx -276\\,{}^\\circ\\text{C} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Kaava $\\theta_0 = -p_0/k$ olettaa, että pisteen lämpötila on $0\\,{}^\\circ\\text{C}$. Kun piste on muualla, lämpötila $\\theta_1$ pitää ottaa mukaan: $\\theta_0 = \\theta_1 - p_1/k$."
         },
