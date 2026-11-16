@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 6a0a33a715c949de
-SCOPE: delta added-exercise fy1-7-L2-09, fy1-7-L2-10 (work queue 19), round 2
 
 ## Blocking
 

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 9446a1ba13882d4d
-SCOPE: delta solutions.md fy1-4-L2-09 c) from 7fdb35af3dfbe53b
 
 ## Blocking
 - none

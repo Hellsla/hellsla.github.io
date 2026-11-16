@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: c608f2d0b5a85f56
-SCOPE: delta added-exercise fy1-3-L2-09 (work queue 19, English of the Finnish task that passed science); one re-spaced formula in fy1-3-L1-09
 
 ## Blocking
 - none

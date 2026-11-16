@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 4364693aa2edd197
-SCOPE: delta added-exercises fy1-7-L2-09 and fy1-7-L2-10 (work queue 19, English of the Finnish tasks that passed science)
 
 ## Blocking
 - none
