@@ -8,7 +8,8 @@ None.
 None.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md, three hunks). Judged from the diff and the fi fy4-15 L3 captures (1280 parts 6-7) of the same structure: paragraphs short, display block stays whole between sentences, nothing clipped. The fi-easy captures themselves were not opened.
+- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-15-L2-08-390.png (wind options, one per paragraph), sol-fy4-15-L3-04-390.png (ratio / scatter and doubling / 13 m/s prediction with its display block / rated power) and sol-fy4-15-L3-05-390.png (pumped storage and surplus storage).
+- Breaks separate distinct points; display blocks stay whole; spacing even, nothing clipped.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

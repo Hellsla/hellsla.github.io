@@ -8,7 +8,8 @@ None.
 None.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md). Opened fy4-13-open-exercises-1280-6, -7 and -8 (fi): task 7-6 Mallivastaus now three short paragraphs (conclusion; why the string cannot hold the full weight; why it cannot pull harder), each one thought, even spacing, nothing clipped, step labels intact. The Voimakuvio split of L3-04 (diagram tasks, later part) was judged from the diff and the same shared component, not opened.
+- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-13-L1-06-390.png (Mallivastaus now three paragraphs: result, why the string cannot hold the full weight, why it cannot pull harder, T and m2a) and sol-fy4-13-L3-04-390.png (Voimakuvio split into three one-topic paragraphs, Järkevyys intact). Also fy4-13-open-exercises-1280-6/-7/-8.
+- Every break separates one thing from the next, none cuts a thought; spacing even, nothing clipped, step labels and formulas intact.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

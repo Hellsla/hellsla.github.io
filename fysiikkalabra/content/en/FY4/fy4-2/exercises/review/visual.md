@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b7e1ec8f7eece8c8
+CONTENT-HASH: b07b754fc3d8f6ce
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] exercises.json:92 (en-390-03 tile #4, en-1280-02) — the full stop after the lifted formula is left outside it and starts the next line: “. The depth is …” — put the full stop on the formula's last row (`19.6\,\text{m/s}.`).
-- [Minor] exercises.json:344 (en-390-03 tile #13) — same with the comma: the line after the polynomial starts “, with the upward direction positive.” — put the comma on the last row (`1.20\,\text{m},`).
+- [Minor] 2-8 task text (not in the diff) — a stray ". The depth is" line follows the display block of the student's solution; reads as a broken sentence. Keep the display inline or continue the sentence.
+- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-02, en-390-03, en-390-04, en-1280-02 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-2-L1-06-390.png, sol-fy4-2-L1-08-390.png, sol-fy4-2-L2-07-390.png, sol-fy4-2-L2-08-390.png, sol-fy4-2-L3-04-390.png, sol-fy4-2-L3-05-390.png.
+- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

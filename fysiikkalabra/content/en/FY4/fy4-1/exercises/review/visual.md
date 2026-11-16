@@ -5,11 +5,11 @@ CONTENT-HASH: a6741e28bf576004
 None.
 
 ## Polish
-- [Minor] exercises/solutions.md (1-22 Reasonableness) — "It is reliable only if the track is level…" is a one-sentence paragraph directly continuing the previous one; reads fine, could stay joined. Optional.
+- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
 
 ## Checked
-- Delta, md-paragraphs only. Opened en fy4-1-open-exercises-L3-1280-6 (solution of 1-22 with the new Reasonableness paragraphs): even spacing, breaks at sentence ends, nothing clipped, formulas intact.
-- The other changed solutions of this set were judged from the diff only (words unchanged); not opened. Hash unchanged.
+- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-1-L1-06-390.png, sol-fy4-1-L1-07-390.png, sol-fy4-1-L1-08-390.png, sol-fy4-1-L1-09-390.png, sol-fy4-1-L2-06-390.png, sol-fy4-1-L2-07-390.png, sol-fy4-1-L2-09-390.png, sol-fy4-1-L3-03-390.png, sol-fy4-1-L3-04-390.png, sol-fy4-1-L3-05-390.png.
+- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

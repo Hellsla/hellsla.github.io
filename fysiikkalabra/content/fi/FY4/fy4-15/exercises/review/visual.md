@@ -8,7 +8,8 @@ None.
 None.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md). Opened fy4-15-open-exercises-L3-1280-6 and -7 (fi): the split Mallivastaus of the wind task (ratio, doubling check, the 13 m/s prediction with its display block, the rated-power remark) and of the pumped-storage task reads in short paragraphs, the lifted aligned formula stays whole between its sentences, spacing even, nothing clipped. The Periaate-style multiple-choice explanation (L2-08) judged from the diff only.
+- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-15-L2-08-390.png (wind option solution: order of magnitude, formula, each rejected option, unit slip), sol-fy4-15-L3-04-390.png (ratio / scatter and doubling / 13 m/s prediction / rated-power remark) and sol-fy4-15-L3-05-390.png (storage check / why pumped storage suits wind / surplus storage).
+- Each break separates one point from the next; the display block between sentences stays whole; spacing even, nothing clipped.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
