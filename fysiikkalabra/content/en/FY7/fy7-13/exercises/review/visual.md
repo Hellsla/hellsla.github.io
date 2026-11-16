@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4aab64de290ab785
+CONTENT-HASH: 60023ef97e0f5014
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-13 — the diff (error to uncertainty; red laser; two-significant-figure answer) was read in the source; only the 13-15 solution capture (L2 part 8) was opened for the layout. Consistent wording, no issue seen.
+- [Minor] solutions.md, grating reasonableness check — the chain is now three aligned rows (x = 1.00 m / · tan(sin^-1 ...) / = 10.1 cm,) with the comma inside the block and the sentence continuing "and in the figure ..."; at 390 px (checked in a capture of the block) it is readable, nothing clipped, equals sign and continuation aligned. No change needed.
 
 ## Outside this change (queue 5d, not blocking here)
-- [Major] fy7-13 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d; many rows in this set) — outside this change; fix under 5d.
+- [Major] en/fy7-13 rows in docs/clipped-formulas.tsv (the d = 1 mm : 600 = ... conversions, 1.667 µm · sin ... = ..., the (561.7 nm − 532.3 nm) fraction) remain clipped on a phone.
 
 ## Checked
-- Delta: exercises.json and solutions.md diff read in full; capture fy7-13 L2-8 at 1280 px (tan/sin solution, aligned rows, units upright).
+- 390 px render of the changed reasonableness block; the exercise captures at 1280 are in the fy7-13 lesson shots folder only if present, so the surrounding layout was not re-opened.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

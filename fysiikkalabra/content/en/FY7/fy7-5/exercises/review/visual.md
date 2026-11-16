@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: de75476b05fb7d4e
+CONTENT-HASH: a845cf8deec5c093
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-5/flux-task-2 — y tick labels 5 4 3 2 1 and −1 −2 −3 are close together — label every second gridline when next drawn.
+- [Minor] solutions.md, flux-graph task, Reasonableness — in "$$ -8.0 mWb : 0.40 s = -20 mWb/s $$" the leading minus is set with operator spacing ("− 8.0 mWb"), which reads as a subtraction; write it "{-}8.0" so the sign hugs the number (390 px capture shows the gap).
+- [Minor] solutions.md, entering coil, Reasonableness (open-exercises-L2-1280-5) — the time block "0.050 m : 0.25 m/s = 0.20 s," runs the full card width while its neighbours are narrow; the trailing comma sits inside the block, which is sensible.
+- [Minor] solutions.md, train axle, Substitution (open-exercises-L3-1280-2) — the break after the second factor is forced at 1280 px although the row fits; the second row also carries "= 4.233·10^-3 V", so the equals signs are not in one column.
 
 ## Outside this change (queue 5d, not blocking here)
-- [Major] fy7-5 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d) — a formula that has to be scrolled to is clipped — outside this change; fix in the shared component or text under 5d.
+- [Major] en/fy7-5 rows in docs/clipped-formulas.tsv (200 · 3.0 · 10^-3 Wb : 0.40 s = 1.5 V, 50 · 4.0 · 10^-3 Wb : 0.20 s = 1.0 V, ...) remain clipped on a phone.
 
 ## Checked
-- Delta (alt-text and translation words only): task 5-11 (L2-2) and 5-17 (L2-10) at 1280 px with solutions open. Both graphs unchanged in look, units on both axes, the line crossed by no label; solution typography clean.
+- open-exercises-L2-1280-5, L3-1280-1, L3-1280-2 at 1280 px; 390 px render of the slope block (readable, nothing clipped).
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

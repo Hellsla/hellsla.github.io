@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6f158dcc37c616a5
+CONTENT-HASH: c918df32a039785d
 
 ## Blocking
 - none
 
 ## Polish
-- [Major, outside this change, queue item 5d] formulas listed for en/fy7-2 in docs/clipped-formulas.tsv (12 rows) are known clipped at 360 px; the diff touches none of them.
-- [Minor] 2-L3 graph task: the table caption wraps into five lines in the narrow table; widen the table or shorten the caption.
+- [Minor] solutions.md, L2 deuteron, Substitution (open-exercises-L2-1280-3) — the numerator of the fraction is split in two rows ("1.602 · 10^-19 C · 0.60 T" / "· 0.12 m"): readable and unclipped, but the continuation row is centred and starts with a bare "·". Acceptable for a phone; no change needed.
+- [Minor] solutions.md, force-diagram task (open-exercises-L2-1280-11) — the weight G chain is broken by hand into "G = 9.109·10^-31 kg / · 9.81 m/s^2" at 1280 px although it fits, then the result "G ≈ 8.9·10^-30 N" stands in a separate line. Reads fine; the F_m block above it is laid out the same way.
+
+## Outside this change (queue 5d, not blocking here)
+- [Major] en/fy7-2 rows in docs/clipped-formulas.tsv (the deuteron reasonableness row "3.344 · 10^-27 · 3.449 · 10^6 : (...)", the 1.602 · 10^-19 C · ... lines) remain clipped on a phone.
 
 ## Checked
-- fy7-2-open-exercises-L3-1280-5 (a neighbouring L3 graph task with solution: layout, units, chains intact). The changed cyclotron task 2-L3-05 was read in the diff only ($60.0\,\text{kV}$, $0.200\,\text{m}$, $6.00 \cdot 10^{4}\,\text{V}$, upright with thin spaces, consistent figures); its own capture was not opened.
+- open-exercises-L2-1280-2, -3, -4, -5, -11, -12: deuteron fraction, velocity selector, proton weight, force diagram, graph task; rows aligned, nothing clipped at 1280.
+- No 390 px capture of opened solutions exists; the broken rows are narrower than the one-line forms they replace.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -65,7 +65,6 @@ FY7-koe	\sqrt{(50/2200)^2 + (15/1262)^2} = 0{,}026
 FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
 FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
@@ -1220,7 +1219,6 @@ fi-easy/FY6-sovella	qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}
 fi-easy/FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 fi-easy/FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
 fi-easy/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-fi-easy/FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 fi-easy/FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 fi-easy/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 fi-easy/FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
@@ -3551,7 +3549,6 @@ fy7-13	1{,}667\,\mu\text{m} \cdot \sin 20{,}64^\circ = 0{,}588\,\mu\text{m}
 fy7-13	1{,}679\,\mu\text{m} \cdot 0{,}3168 = 0{,}532\,\mu\text{m}
 fy7-13	2{,}00\,\mu\text{m} \cdot \sin 18{,}97^\circ = 0{,}650\,\mu\text{m}
 fy7-13	3333\,\text{nm} \cdot \sin 11{,}24^\circ = 650\,\text{nm}
-fy7-13	= 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,
 fy7-13	= 1{,}20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2{,
 fy7-13	= 2 \cdot 589 \cdot 10^{-9}\,\text{m} : (2{,}00 \cdot 10^{-6}\,\text{m
 fy7-13	= 532 \cdot 10^{-9}\,\text{m} : (1{,}667 \cdot 10^{-6}\,\text{m})
