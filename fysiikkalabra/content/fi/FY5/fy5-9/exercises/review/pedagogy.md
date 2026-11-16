@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b83d89918db889fd
-
+CONTENT-HASH: 5635c992b22793c9
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md (L2-05 Vastaus) — the two-figure remark on the shortest pendulum is accurate but long; one sentence would do.
 
 ## Checked
-- Sig-fig justifications now name the datum that limits the result (graph point, time difference); correct and instructive.
-- Answer of the 10-degree pendulum split into a), b), c); each value matches the calculations above it.
-- L2-06 stored 20,14 against two-figure answer: tolerance covers it (answers.py comment explains).
-- No change to tasks or levels.
+- fy5-9-L3-05 Answer as one short paragraph with a), b), c) inline still reads clearly: three short results, each labelled, no content lost.
+- No word, number or formula changed; solution steps and learning path unaffected.
