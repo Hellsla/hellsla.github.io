@@ -325,7 +325,7 @@
         },
         {
           "text": "All bodies fall in a gravitational field with the same acceleration regardless of their mass.",
-          "feedback": "This holds for bodies that are in the field of the same body, such as on the surface of the Earth. Here A is in the field of B and B is in the field of A. The field $g = \\gamma \\tfrac{M}{r^2}$ is smaller at A, because the mass of B is smaller."
+          "feedback": "This holds for bodies that are pulled by the same body, such as on the surface of the Earth. Here A is pulled only by B and B only by A. The force is equally great on both, but the mass of A is larger, so A accelerates less."
         },
         {
           "text": "An equal force acts on each asteroid, and the same force accelerates the lighter one more.",

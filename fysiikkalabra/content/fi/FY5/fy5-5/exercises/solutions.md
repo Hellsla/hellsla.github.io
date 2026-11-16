@@ -14,7 +14,13 @@
 **Periaate:** Alukset vetävät toisiaan Newtonin gravitaatiolain mukaisesti. Tehtävässä alukset käsitellään pistemäisinä kappaleina. Todellisuudessa alukset ovat yhtä pitkiä kuin niiden etäisyys, joten tulos on vain suuruusluokka-arvio.
 **Kaava:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja etäisyys metreinä.
-**Sijoitus:** $F = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{5{,}0 \cdot 10^{7}\,\text{kg} \cdot 3{,}0 \cdot 10^{7}\,\text{kg}}{(200\,\text{m})^2} = 2{,}503\,\text{N}$
+**Sijoitus:**
+
+$$\begin{aligned}
+F &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot \dfrac{5{,}0 \cdot 10^{7}\,\text{kg} \cdot 3{,}0 \cdot 10^{7}\,\text{kg}}{(200\,\text{m})^2} \\
+&= 2{,}503\,\text{N}
+\end{aligned}$$
 **Vastaus:** $2{,}5\,\text{N}$, kaksi merkitsevää numeroa kuten massoissa.
 **Järkevyys:** Pyöristetyillä luvuilla $7 \cdot 10^{-11} \cdot \tfrac{1{,}5 \cdot 10^{15}}{4 \cdot 10^{4}}\,\text{N} \approx 2{,}6\,\text{N}$. Valtavienkin alusten välinen veto on vain noin $250\,\text{g}$:n kappaleen painon luokkaa, mutta köysien ja veden voimiin verrattuna se on mitätön.
 
@@ -24,7 +30,13 @@
 **Periaate:** Planeetta on likimain pallosymmetrinen, joten se vetää kuin sen massa olisi keskipisteessä. Pinnalla etäisyys keskipisteestä on planeetan säde.
 **Kaava:** $g = \gamma \dfrac{M}{R^2}$
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja säde metreinä, joten tulos on yksikössä $\text{m/s}^2$.
-**Sijoitus:** $g = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{3{,}30 \cdot 10^{23}\,\text{kg}}{(2{,}44 \cdot 10^{6}\,\text{m})^2} = 3{,}699\,\text{m/s}^2$
+**Sijoitus:**
+
+$$\begin{aligned}
+g &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot \dfrac{3{,}30 \cdot 10^{23}\,\text{kg}}{(2{,}44 \cdot 10^{6}\,\text{m})^2} \\
+&= 3{,}699\,\text{m/s}^2
+\end{aligned}$$
 **Vastaus:** $3{,}70\,\text{m/s}^2$, kolme merkitsevää numeroa kuten massassa ja säteessä.
 **Järkevyys:** Merkurius on pienempi ja kevyempi kuin Maa, joten kentän pitää olla heikompi kuin $9{,}81\,\text{m/s}^2$. Tulos on lähes sama kuin Marsilla ($3{,}71\,\text{m/s}^2$), joka on Merkuriusta suurempi mutta myös massiivisempi.
 
@@ -34,7 +46,14 @@
 **Periaate:** Mars on likimain pallosymmetrinen, joten sen ja mönkijän välinen voima saadaan gravitaatiolaista, kun etäisyys on Marsin säde.
 **Kaava:** $F = \gamma \dfrac{M m}{R^2}$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** $F = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{6{,}42 \cdot 10^{23}\,\text{kg} \cdot 1025\,\text{kg}}{(3{,}40 \cdot 10^{6}\,\text{m})^2} = 3799\,\text{N} = 3{,}799\,\text{kN}$
+**Sijoitus:**
+
+$$\begin{aligned}
+F &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot \dfrac{6{,}42 \cdot 10^{23}\,\text{kg} \cdot 1025\,\text{kg}}{(3{,}40 \cdot 10^{6}\,\text{m})^2} \\
+&= 3799\,\text{N} \\
+&= 3{,}799\,\text{kN}
+\end{aligned}$$
 **Vastaus:** $3{,}80\,\text{kN}$, kolme merkitsevää numeroa kuten Marsin massassa ja säteessä.
 **Järkevyys:** Toinen reitti: mönkijän paino Marsissa on $mg = 1025\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \approx 3800\,\text{N}$, mikä on vain noin kaksi viidesosaa sen painosta Maassa ($10{,}1\,\text{kN}$).
 
@@ -64,7 +83,19 @@
 **Periaate:** Pallosymmetrisen planeetan gravitaatiokentän voimakkuus pinnalla on $g = \gamma \tfrac{M}{R^2}$, joten mitatusta $g$:stä ja säteestä voidaan ratkaista planeetan massa. Sen jälkeen massaa verrataan Maan massaan jakamalla.
 **Kaava:** $g = \gamma \dfrac{M}{R^2}$, josta $M = \dfrac{g R^2}{\gamma}$ ja suhde $\dfrac{M}{M_\text{Maa}} = \dfrac{g R^2}{\gamma M_\text{Maa}}$
 **Muunnokset:** $R = 6052\,\text{km} = 6052 \cdot 10^{3}\,\text{m} = 6{,}052 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** $R^2 = (6{,}052 \cdot 10^{6}\,\text{m})^2 = 3{,}6627 \cdot 10^{13}\,\text{m}^2$, $g R^2 = 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2 = 3{,}2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2$ ja $M = \dfrac{g R^2}{\gamma} = \dfrac{3{,}2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 4{,}868 \cdot 10^{24}\,\text{kg}$ ja $\dfrac{M}{M_\text{Maa}} = \dfrac{4{,}868 \cdot 10^{24}\,\text{kg}}{5{,}97 \cdot 10^{24}\,\text{kg}} = 0{,}8154$
+**Sijoitus:**
+
+$$\begin{aligned}
+R^2 &= (6{,}052 \cdot 10^{6}\,\text{m})^2 \\
+&= 3{,}6627 \cdot 10^{13}\,\text{m}^2 \\
+g R^2 &= 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2 \\
+&= 3{,}2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \\
+M &= \dfrac{g R^2}{\gamma} \\
+&= \dfrac{3{,}2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} \\
+&= 4{,}868 \cdot 10^{24}\,\text{kg} \\
+\dfrac{M}{M_\text{Maa}} &= \dfrac{4{,}868 \cdot 10^{24}\,\text{kg}}{5{,}97 \cdot 10^{24}\,\text{kg}} \\
+&= 0{,}8154
+\end{aligned}$$
 **Vastaus:** $0{,}815$, kolme merkitsevää numeroa kuten kentän voimakkuudessa $8{,}87\,\text{m/s}^2$.
 **Järkevyys:** Venus on lähes Maan kokoinen ja sen kenttä on vähän heikompi kuin Maan, joten massan pitää olla vähän pienempi kuin Maan. NASAn taulukon mukaan Venuksen massa on $4{,}87 \cdot 10^{24}\,\text{kg}$, mikä vastaa tulosta.
 
@@ -74,9 +105,37 @@
 **Periaate:** Maa vetää luotainta kuin sen massa olisi keskipisteessä, joten gravitaatiolaista saadaan ensin etäisyys $r$ Maan keskipisteestä. Korkeus pinnasta on tämä etäisyys vähennettynä Maan säteellä.
 **Kaava:** $F = \gamma \dfrac{M m}{r^2}$, josta $r = \sqrt{\dfrac{\gamma M m}{F}}$ ja $h = r - R = \sqrt{\dfrac{\gamma M m}{F}} - R$
 **Muunnokset:** $F = 1{,}00\,\text{kN} = 1000\,\text{N}$; $R = 6378\,\text{km} = 6{,}378 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km} = 1000\,\text{m}$
-**Sijoitus:** Osoittaja on $\gamma M m = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \cdot 1200\,\text{kg} = 4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2$, joten $r = \sqrt{\dfrac{4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2}{1000\,\text{N}}} = 2{,}1866 \cdot 10^{7}\,\text{m}$ ja $h = 2{,}1866 \cdot 10^{7}\,\text{m} - 6{,}378 \cdot 10^{6}\,\text{m} = 1{,}5488 \cdot 10^{7}\,\text{m} = 15\,488\,\text{km}$
+**Sijoitus:** Osoittaja on
+
+$$\begin{aligned}
+\gamma M m &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \cdot 1200\,\text{kg} \\
+&= 4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2
+\end{aligned}$$
+
+joten
+
+$$\begin{aligned}
+r &= \sqrt{\dfrac{4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2}{1000\,\text{N}}} \\
+&= 2{,}1866 \cdot 10^{7}\,\text{m}
+\end{aligned}$$
+
+ja
+
+$$\begin{aligned}
+h &= 2{,}1866 \cdot 10^{7}\,\text{m} - 6{,}378 \cdot 10^{6}\,\text{m} \\
+&= 1{,}5488 \cdot 10^{7}\,\text{m} \\
+&= 15\,488\,\text{km}
+\end{aligned}$$
 **Vastaus:** $15\,500\,\text{km}$, kolme merkitsevää numeroa kuten voimassa $1{,}00\,\text{kN}$.
-**Järkevyys:** Maan pinnalla luotaimen paino on $1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}$. Voima $1{,}00\,\text{kN}$ on noin $\tfrac{1}{11{,}8}$ siitä, joten etäisyyden keskipisteestä pitää olla $\sqrt{11{,}8} \approx 3{,}4$ Maan sädettä: $3{,}4 \cdot 6378\,\text{km} \approx 21\,700\,\text{km}$, mikä vastaa arvoa $r$.
+**Järkevyys:** Maan pinnalla luotaimen paino on
+
+$$\begin{aligned}
+G &= 1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\approx 11{,}8\,\text{kN}
+\end{aligned}$$
+
+Voima $1{,}00\,\text{kN}$ on noin $\tfrac{1}{11{,}8}$ siitä, joten etäisyyden keskipisteestä pitää olla $\sqrt{11{,}8} \approx 3{,}4$ Maan sädettä: $3{,}4 \cdot 6378\,\text{km} \approx 21\,700\,\text{km}$, mikä vastaa arvoa $r$.
 
 ## fy5-5-L2-04
 **Annettu:** lentokorkeus $h = 11{,}0\,\text{km}$, Maan säde $R = 6378\,\text{km}$
@@ -114,7 +173,14 @@
 **Periaate:** Kumpikin voima saadaan Newtonin gravitaatiolaista, kun etäisyydet mitataan keskipisteiden välillä. Suhteessa $\gamma$ ja Maan massa supistuvat pois, joten tarvitaan vain massat ja etäisyydet.
 **Kaava:** $\dfrac{F_\text{A}}{F_\text{K}} = \dfrac{\gamma \tfrac{M_\text{A} m}{r_\text{A}^2}}{\gamma \tfrac{M_\text{K} m}{r_\text{K}^2}} = \dfrac{M_\text{A}}{M_\text{K}} \cdot \left(\dfrac{r_\text{K}}{r_\text{A}}\right)^2$
 **Muunnokset:** Ei tarvita: etäisyydet ovat kumpikin kilometreinä, ja yksiköt supistuvat.
-**Sijoitus:** $\dfrac{F_\text{A}}{F_\text{K}} = \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{kg}} \cdot \left(\dfrac{3{,}84 \cdot 10^{5}\,\text{km}}{1{,}50 \cdot 10^{8}\,\text{km}}\right)^2 = 2{,}707 \cdot 10^{7} \cdot 6{,}554 \cdot 10^{-6} = 177{,}4$
+**Sijoitus:**
+
+$$\begin{aligned}
+\dfrac{F_\text{A}}{F_\text{K}} &= \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{kg}} \\
+&\quad \cdot \left(\dfrac{3{,}84 \cdot 10^{5}\,\text{km}}{1{,}50 \cdot 10^{8}\,\text{km}}\right)^2 \\
+&= 2{,}707 \cdot 10^{7} \cdot 6{,}554 \cdot 10^{-6} \\
+&= 177{,}4
+\end{aligned}$$
 **Vastaus:** Aurinko vetää Maata noin $177$ kertaa voimakkaammin kuin Kuu; kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Auringon massa on noin $27$ miljoonakertainen, mutta se on noin $390$ kertaa kauempana, mikä pienentää voimaa $390^2 \approx 150\,000$-kertaisesti: $\tfrac{2{,}7 \cdot 10^{7}}{1{,}5 \cdot 10^{5}} \approx 180$. Aurinko pitää Maan radallaan, vaikka Kuu on paljon lähempänä.
 
@@ -257,7 +323,14 @@ N_\text{b} &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}5397)\,\tfrac{\text{m}}{\tex
 \end{aligned}
 ```
 **Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$; jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$, kun navalla se olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$), joten $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
-**Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi: $16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2$. Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.
+**Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi:
+
+$$\begin{aligned}
+a_\text{n}' &= 16 \cdot 0{,}0337\,\text{m/s}^2 \\
+&\approx 0{,}54\,\text{m/s}^2
+\end{aligned}$$
+
+Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.
 
 ## fy5-5-L2-08
 **Kysytty:** miten asteroidien kiihtyvyyksien suuruudet $a_{\text{A}}$ ja $a_{\text{B}}$ suhtautuvat toisiinsa liikkeen alussa, ja mikä perustelu selittää sen.
@@ -279,7 +352,7 @@ $$\begin{aligned}
 &\phantom{a_{\text{B}}} \approx 2{,}1 \cdot 10^{-5}\,\text{m/s}^2
 \end{aligned}$$
 
-Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä, koska kumpikin asteroidi on toisen asteroidin kentässä ja kentät ovat eri suuret. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.
+Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä, koska asteroideja ei vedä sama kappale: A:ta vetää vain B ja B:tä vain A. Voima on kumpaankin yhtä suuri, ja A:n suurempi massa saa sen kiihtymään vähemmän. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.
 
 ## fy5-5-L1-09
 **Annettu:** massa $m = 85\,\text{kg}$; Marsin kentän voimakkuus luetaan kuvasta
@@ -301,4 +374,11 @@ Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}
 **Muunnokset:** $r = R + h = 7{,}15 \cdot 10^{7}\,\text{m} + 7{,}15 \cdot 10^{7}\,\text{m} = 1{,}430 \cdot 10^{8}\,\text{m} = 2R$; lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $g = 24{,}8\,\text{m/s}^2\cdot\left(\dfrac{7{,}15 \cdot 10^{7}\,\text{m}}{1{,}430 \cdot 10^{8}\,\text{m}}\right)^2 = 24{,}8\,\text{m/s}^2\cdot\dfrac{1}{4} = 6{,}20\,\text{m/s}^2$ ja $F = 850\,\text{kg}\cdot 6{,}20\,\text{m/s}^2 = 5270\,\text{N} = 5{,}27\,\text{kN}$
 **Vastaus:** $5{,}27\,\text{kN}$, kolme merkitsevää numeroa kuten kuvan arvossa $24{,}8\,\text{m/s}^2$ ja säteessä. Kuvan arvo pätee päiväntasaajan säteellä, joten käytetään samaa sädettä.
-**Järkevyys:** Etäisyys keskipisteestä kaksinkertaistuu, joten kentän voimakkuus ja voima ovat neljäsosa pinnan arvosta. Pinnalla voima olisi $850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}$ ja $21{,}1\,\text{kN} : 4 = 5{,}27\,\text{kN}$.
+**Järkevyys:** Etäisyys keskipisteestä kaksinkertaistuu, joten kentän voimakkuus ja voima ovat neljäsosa pinnan arvosta. Pinnalla voima olisi
+
+$$\begin{aligned}
+F_0 &= 850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 \\
+&= 21{,}1\,\text{kN}
+\end{aligned}$$
+
+ja $21{,}1\,	ext{kN} : 4 = 5{,}27\,\text{kN}$.

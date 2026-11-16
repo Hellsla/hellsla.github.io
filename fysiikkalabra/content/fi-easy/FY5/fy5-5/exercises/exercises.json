@@ -325,7 +325,7 @@
         },
         {
           "text": "Kaikki kappaleet putoavat gravitaatiokentässä samalla kiihtyvyydellä massastaan riippumatta.",
-          "feedback": "Tämä pätee kappaleille, jotka ovat saman kappaleen kentässä, kuten Maan pinnalla. Tässä A on B:n kentässä ja B on A:n kentässä. Kenttä $g = \\gamma \\tfrac{M}{r^2}$ on A:n kohdalla pienempi, koska B:n massa on pienempi."
+          "feedback": "Tämä pätee kappaleille, joita vetää sama kappale, kuten Maan pinnalla olevia kappaleita Maa. Tässä A:ta vetää vain B ja B:tä vain A. Voima on kumpaankin yhtä suuri, mutta A:n massa on suurempi, joten A kiihtyy vähemmän."
         },
         {
           "text": "Kumpaankin asteroidiin vaikuttaa yhtä suuri voima, ja sama voima kiihdyttää kevyempää enemmän.",
