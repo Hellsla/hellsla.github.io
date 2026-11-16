@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e96fb55b4604ec47
-Mode: delta
-Round: 2
+CONTENT-HASH: 5d123ece9cf19afa
 
 ## Blocking
 
 ## Polish
-- solutions.md L1-10 Vastaus: food labels use the thermochemical kilocalorie (1 cal = 4,184 J), not the international-table 4,1868 J. The difference is 0,07 %, so it is still open but harmless (C).
+- solutions.md L1-10 Vastaus: the thermochemical kilocalorie (4,184 J) point from my earlier round is still open (0,07 %, C).
 
 ## Checked
-- Hash e96fb55b4604ec47 at the start and the end. I judged only the two-line diff.
-- exercises.json L1-11 text was reworded: "every small step is ten times the one before, and three energies are marked". The figure still has evenly spaced decades (dx 33,2) and the tea point at 10^5 J, so the answer is still 100 kJ. The new wording gives no value away and matches the figure's description.
-- solutions.md L1-10 Järkevyys: "Joulut" became "Joulet", as I asked in round 1. Nothing in the numbers changed: 180 · 4,2 kJ ≈ 756 kJ against 754 kJ.
-- answers.py, unit and tolerance did not change.
+- Delta review: hash 5d123ece9cf19afa at the start and the end; I judged only the changed line in solutions.md L3-04 Järkevyys and the note that exercises.json calculation chains were only re-broken.
+- Recomputed: 3 200 000 GJ : 70 GJ = 45 714 ≈ 46 000 houses, so the corrected "≈ 46 000" is right (the old 45 000 was a rounding slip). The main result N = 3 200 000 : 65 ≈ 49 000 is unchanged.
+- "Kymmenien tuhansien talojen" still agrees with 46 000.
+- No answer, unit, tolerance or answers.py line changed.
