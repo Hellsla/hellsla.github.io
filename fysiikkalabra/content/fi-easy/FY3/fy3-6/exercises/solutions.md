@@ -233,3 +233,29 @@ Samoin muille väleille: lämpömäärät ovat $16{,}2$, $12{,}7$, $9{,}05$, $7{
 **Sijoitus:** $Q_\text{luov} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3{,}0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69{,}3\,\text{kJ} \approx 69\,\text{kJ}$
 **Vastaus:** $69\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $3{,}0\,\text{kg}$ ja $60\,\text{K}$. Arvo $385$ luetaan suoraan pylvään vierestä. Siksi hyväksytään $67{,}2\ldots71{,}4\,\text{kJ}$.
 **Järkevyys:** Jos putki olisi vettä, sama lämpömäärä jäähdyttäisi sitä vain noin $\dfrac{69\,300\,\text{J}}{4190 \cdot 3{,}0} \approx 5{,}5\,\text{K}$. Kuparin $c$ on vain noin kymmenesosa veden $c$:stä. Siksi jokaisesta kilogrammasta kuparia irtoaa vähän lämpöä. Tulos on järkevä.
+
+## fy3-6-L2-10
+**Annettu:** Aineistosta: artikkelin mukaan ”On mahdollista saada aikaan olosuhteet, joissa kuuma vesi jäätyy nopeammin kuin kylmä.” Artikkeli käyttää ilmiöstä nimeä Mpemba-efekti. Fysiikan professori selittää ilmiötä lähinnä haihtumisella laakeassa eli matalassa ja leveässä astiassa. Hän mainitsee myös veden virtaukset, veteen liuenneet kaasut ja epäpuhtaudet. Artikkelissa ei ole lämpötiloja, vesimääriä eikä mitattuja aikoja. Tehtävästä: $m = 0{,}50\,\text{kg}$, $T_1 = 80\,{}^\circ\text{C}$, $T_2 = 0\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; vettä ei haihdu.
+**Kysytty:** a) ilmiö ja sen ristiriita arkikokemuksen kanssa; b) veden luovuttama lämpömäärä $Q_\text{luov}$ kilojouleina; c) haihtumisen, astian ja koeolosuhteiden vaikutus jäätymisaikaan; d) koesuunnitelma
+**Periaate:** Kappale luovuttaa jäähtyessään lämpömäärän, jonka suuruus on $cm\left|\Delta T\right|$. Näin on, kun olomuoto ei muutu. Vesi pysyy nesteenä koko välin $80\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$. Siksi laki sopii jäähtymiseen jäätymispisteeseen asti. Itse jäätymistä laki ei kuvaa. Kun vesi jäätyy, se luovuttaa vielä lisää energiaa, vaikka lämpötila ei muutu (luku *Olomuodon muutokset*).
+**Kaava:** $Q = cm\Delta T$, joten luovutetun lämpömäärän suuruus on $Q_\text{luov} = cm\left|\Delta T\right|$
+**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $\left|\Delta T\right| = 80\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned} Q_\text{luov} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \\ &\cdot 80\,\text{K} \\ &= 167\,600\,\text{J} \\ &\approx 170\,\text{kJ} \end{aligned}$$
+**Vastaus:** b) $170\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$ ja lämpötilassa $80\,{}^\circ\text{C}$.
+
+a) Artikkelin mukaan kuuma vesi voi joissakin olosuhteissa jäätyä nopeammin kuin kylmä vesi. Arkikokemus sanoo päinvastaista. Kuuman veden täytyy ensin jäähtyä kylmän veden lämpötilaan, ja siihen kuluu aikaa. Laskun mukaan kuuman veden täytyy luovuttaa $170\,\text{kJ}$, ennen kuin jäätyminen voi edes alkaa. Otsikko esittää asian yleisenä tosiasiana. Itse teksti kuitenkin rajaa asian erityisiin olosuhteisiin.
+
+c) Haihtuminen vaikuttaa kahdella tavalla. Ensiksi haihtuva vesi vie mukanaan energiaa. Siksi jäljelle jäävä vesi jäähtyy nopeammin. Toiseksi veden massa pienenee. $Q = cm\Delta T$ on suoraan verrannollinen massaan, joten pienemmän vesimäärän täytyy luovuttaa vähemmän energiaa. Kuumasta vedestä haihtuu paljon enemmän vettä kuin kylmästä. Astia vaikuttaa siihen, kuinka nopeasti energia siirtyy. Laakeassa astiassa veden pinta-ala on suuri. Kansi estää haihtumisen. Metalli johtaa lämpöä paremmin kuin muovi. Myös astia itse jäähtyy, ja sen lämpökapasiteetti on $C = cm$. Olosuhteista vaikuttavat pakastimen lämpötila, ilman liike ja astian alusta. Kuuma astia voi esimerkiksi sulattaa huurretta eli ohutta jäätä altaan. Silloin astia koskettaa kylmää hyllyä paremmin.
+
+d) Otetaan kaksi samanlaista astiaa. Kumpaankin pannaan sama massa vettä samasta hanasta, esimerkiksi $0{,}20\,\text{kg}$. Toisen näytteen alkulämpötila on esimerkiksi $80\,{}^\circ\text{C}$ ja toisen $20\,{}^\circ\text{C}$. Astiat pannaan samaan pakastimeen samanlaiselle alustalle. Mitataan veden lämpötila ajan funktiona, aika jäätymiseen ja veden massa ennen koetta ja kokeen jälkeen. Vakioidaan eli pidetään samoina veden massa ja laatu, astian muoto ja materiaali, paikka pakastimessa ja pakastimen lämpötila. Ennen koetta päätetään, mitä jäätyminen tarkoittaa: ensimmäiset jääkiteet vai kokonaan kiinteä vesi. Muutetaan yhtä tekijää kerrallaan, esimerkiksi kansi päällä ja ilman kantta. Koe toistetaan monta kertaa.
+**Järkevyys:** Vertailu: sama vesimäärä lämpötilasta $20\,{}^\circ\text{C}$ luovuttaa vain neljäsosan tästä, kun se jäähtyy jäätymispisteeseen.
+
+$$\begin{aligned} Q_{20} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \\ &\cdot 20\,\text{K} \\ &= 41\,900\,\text{J} \end{aligned}$$
+
+Kuuman veden täytyy siis luovuttaa enemmän. Erotus on
+
+$$\begin{aligned} \Delta Q &= 167\,600\,\text{J} - 41\,900\,\text{J} \\ &= 125\,700\,\text{J} \end{aligned}$$
+
+Siksi ilmiö vaatii jotakin, mikä muuttaa vertailua, esimerkiksi haihtumisen. Malli $Q = cm\Delta T$ ei kerro aikaa. Aika riippuu siitä, kuinka nopeasti energia siirtyy. Artikkelissa ei ole mittaustuloksia. Tutkijat eivät myöskään ole yksimielisiä siitä, milloin ilmiö esiintyy. Ilmiö on siis mahdollinen, mutta sitä ei ole varmistettu yleiseksi säännöksi.

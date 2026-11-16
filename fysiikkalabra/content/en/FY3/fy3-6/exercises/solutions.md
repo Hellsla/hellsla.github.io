@@ -233,3 +233,29 @@ In the same way for the other intervals: the quantities of heat are $16.2$, $12.
 **Substitution:** $Q_\text{given} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3.0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69.3\,\text{kJ} \approx 69\,\text{kJ}$
 **Answer:** $69\,\text{kJ}$, two significant figures, like the data $3.0\,\text{kg}$ and $60\,\text{K}$. The value $385$ is read directly beside the bar, so $67.2\ldots71.4\,\text{kJ}$ is accepted.
 **Reasonableness:** If the tube were water, the same quantity of heat would cool it by only about $\dfrac{69\,300\,\text{J}}{4190 \cdot 3.0} \approx 5.5\,\text{K}$. The $c$ of copper is only about a tenth of the $c$ of water, so little heat leaves each kilogram of copper.
+
+## fy3-6-L2-10
+**Given:** From the source: according to the article, it is possible to create conditions in which hot water freezes faster than cold water. The article calls this the Mpemba effect. The physics professor interviewed explains it mainly with evaporation in a shallow, wide bowl and also mentions the flows in the water, dissolved gases and impurities. The article gives no temperatures, amounts of water or measured times. From the task: $m = 0.50\,\text{kg}$, $T_1 = 80\,{}^\circ\text{C}$, $T_2 = 0\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no water evaporates.
+**Find:** a) the phenomenon and why it seems to contradict everyday experience; b) the quantity of heat given off by the water, $Q_\text{given}$, in kilojoules; c) the effect of evaporation, the container and the conditions on the freezing time; d) a plan for an experiment
+**Principle:** When the state of matter does not change, the quantity of heat a body gives off has the magnitude $cm\left|\Delta T\right|$. The water stays liquid over the whole range $80\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$, so the law fits the cooling down to the freezing point. It does not describe the freezing itself: when water freezes it gives off still more energy although its temperature does not change (chapter *Changes of state*).
+**Formula:** $Q = cm\Delta T$, so the magnitude of the heat given off is $Q_\text{given} = cm\left|\Delta T\right|$
+**Conversions:** A change in temperature is the same in degrees Celsius and in kelvins, so $\left|\Delta T\right| = 80\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned} Q_\text{given} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \\ &\cdot 80\,\text{K} \\ &= 167\,600\,\text{J} \\ &\approx 170\,\text{kJ} \end{aligned}$$
+**Answer:** b) $170\,\text{kJ}$, two significant figures as in the mass $0.50\,\text{kg}$ and the temperature $80\,{}^\circ\text{C}$.
+
+a) According to the article, hot water can in some conditions freeze faster than cold water. Everyday experience says the opposite: the hot water must first cool to the temperature of the cold water, and that takes time. By the calculation the hot water must give off $170\,\text{kJ}$ before freezing can even start. The headline states the matter as a general fact, but the text itself limits it to special conditions.
+
+c) Evaporation acts in two ways. The water that evaporates takes energy with it, so the water left behind cools faster. In addition the mass of the water decreases, and $Q = cm\Delta T$ is directly proportional to the mass: a smaller amount of water has to give off less energy. Much more water evaporates from hot water than from cold. The container affects how fast the energy is transferred: a shallow, wide container has a large surface area, a lid prevents evaporation, and metal conducts heat better than plastic. The container itself cools too, and its heat capacity is $C = cm$. Of the conditions, the temperature of the freezer, the movement of the air and the surface under the container matter. A hot container can, for example, melt the frost under it and get a better contact with the cold shelf.
+
+d) Take two identical containers and put the same mass of water from the same tap in each, for example $0.20\,\text{kg}$. The initial temperature of one sample is, for example, $80\,{}^\circ\text{C}$ and of the other $20\,{}^\circ\text{C}$. Put the containers in the same freezer on the same kind of surface. Measure the temperature of the water as a function of time, the time to freezing and the mass of the water before and after the experiment. Keep constant the mass and quality of the water, the shape and material of the container, the place in the freezer and the temperature of the freezer. Decide before the experiment what freezing means (the first ice crystals or completely solid). Change one factor at a time, for example with a lid and without, and repeat the experiment several times.
+**Reasonableness:** A comparison: the same amount of water at $20\,{}^\circ\text{C}$ gives off only a quarter of this when it cools to the freezing point.
+
+$$\begin{aligned} Q_{20} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \\ &\cdot 20\,\text{K} \\ &= 41\,900\,\text{J} \end{aligned}$$
+
+So the hot water must give off more, and the difference is
+
+$$\begin{aligned} \Delta Q &= 167\,600\,\text{J} - 41\,900\,\text{J} \\ &= 125\,700\,\text{J} \end{aligned}$$
+
+That is why the phenomenon needs something that changes the comparison, such as evaporation. The model $Q = cm\Delta T$ does not give the time, because the time depends on how fast the energy is transferred. The article contains no measurements, and researchers do not agree on when the phenomenon occurs. The phenomenon is therefore possible, but it has not been confirmed as a general rule.
