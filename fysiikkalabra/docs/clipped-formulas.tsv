@@ -3499,11 +3499,6 @@ FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
 FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
-FY8-koe	E_\text{s} = 0{,}030377\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 0{,}018883\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	Q = 17{,}59\,\text{MeV} = 2{,}818 \cdot 10^{-12}\,\text{J}
-FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
 en/FY2-sovella	0.90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh}
 en/FY2-sovella	5.0\,\text{MW} \cdot 8760\,\text{h} = 43.8\,\text{GWh}
 en/FY4-sovella	0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \approx 0.002
@@ -3512,7 +3507,6 @@ en/FY7-sovella	1667\,\text{nm} \cdot \sin 20.8^\circ \approx 592.0\,\text{nm}
 en/FY7-sovella	6.0\,\text{MW} - 0.85\,\text{MW} \approx 5.2\,\text{MW}
 en/FY7-sovella	= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^{4}\,
 en/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
-en/FY8-sovella	3.0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}\r
 en/fy14-atom-models	= -0.544\ \text{eV} - (-3.40\ \text{eV})
 en/fy14-big-machines	{1.958 \cdot 10^{6}} : {3.00 \cdot 10^{8}} \approx 0.65\ \%
 en/fy14-binding-energy	250
@@ -3548,7 +3542,6 @@ fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\te
 fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 fi-easy/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 fi-easy/FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
-fi-easy/FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
 fi-easy/fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
 fi-easy/fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
 fi-easy/fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
