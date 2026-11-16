@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 95dcb8b70d26daad
+CONTENT-HASH: 5e2512dc92f36748
 
 ## Blocking
-(none) The round-1 Major is fixed: the Sijoitus chains of L1-02, L1-03, L1-04, L2-02, L2-03, L3-03 and the Järkevyys chains now sit in aligned rows; scan of every .eq-chain with all details open at 360, 390 and 1280 px: none scrolls, page width = viewport (only the known find-the-error formula of the lesson overflows).
+(none)
 
 ## Polish
-- [Minor] L2-02 Sijoitus — the chain is correct but long (10 rows at 360 px); acceptable.
-- [Minor] Gravitaatiolaki-chains: the \cdot continuation row is indented with \quad; fine, only note the fraction font is small at 360 px.
+- [Minor] solutions.md:7 (L1-01) — at 390 px the "·" of the continuation row sits in the "=" column while L1-02 and L1-04 indent it; make the neighbours alike when they are next edited.
 
 ## Checked
-- Own captures at 360 px of solutions L1-02, L1-04, L2-02, L2-03, L3-03 (opened and read); scan at 360/390/1280 of all .eq-chain; changed Järkevyys (L2-03 21 700 km, L3-01 F_0 row) legible.
+- Delta: the one re-broken chain, solutions.md:7 (L1-01 Sijoitus).
+- Own captures from preview/fy5-5.html?ratkaisut=1, levels and solutions opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-1: fy5-5-ex-390-1.png, fy5-5-ex-1280-1.png (L1-01 beside the untouched L1-02, L1-04, L2-08 for comparison).
+- L1-01: constant with its unit on the first row, the mass fraction whole on the second, "= 4,015 · 10⁻⁷ N" and "= 0,4015 µN" each on a row, mantissa and power together; at 1280 px constant and fraction joined. Nothing clipped, scrollWidth 390 and 1280.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
