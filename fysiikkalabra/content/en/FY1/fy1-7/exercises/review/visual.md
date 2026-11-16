@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 77a3559ba8d13a7a
-SCOPE: delta answers,levels,numbers,structure,teacher-figure,typography,wording from 7f32c937f097b93c base e4013ef
+CONTENT-HASH: a909ab9f065d4201
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-7-L1-09 — `Give the answer in kg` plain unit; `\tfrac{kg}{m^3}` small in the substitution.
+- [Minor] fy1-7 solutions 08-09 — 08 keeps the left side on the first row and aligns at the equals sign, 09 puts the left side on a row of its own; both read well, a small inconsistency between neighbours.
 
 ## Checked
-- fy1-7-open-exercises-1280-8 (new MAFY task L1-09 (7-9): text, hint, answer check, solution)
-- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+- delta review 5d reflow, round 3: only the one re-broken solution formula changed (`git diff HEAD~1`, numbers, units and words unchanged).
+- opened the 360 px capture 08 (en), with 07 and 09-11 tiled beside it at readable resolution: two rows aligned at the equals sign, nothing clipped or scrolling; compared with the neighbouring captures 07 and 09-11 (same type size, same card, same break style).
+- not re-opened this round: the other captures of this set (unchanged since round 1).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 4

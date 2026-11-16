@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 14d7fe4a096ab481
-Mode: delta, round 2
+CONTENT-HASH: 181d2016abeec092
 
 ## Blocking
 - none
@@ -9,7 +8,7 @@ Mode: delta, round 2
 - none
 
 ## Checked
-- fy1-2-theory-1280-2.png: the heading "Koko tai etäisyys" fits its column without wrapping, the table is intact (four headers, LaTeX cells with units), and the text after it is unchanged. The heading is also correct for the "Planeettojen radat" and "Tähtien väliset matkat" rows.
+- delta review 5d reflow, round 1: opened the 360 px captures (lesson 02-03, inquiry 04, 06-07, 16, solutions 01, 05, 08-15); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
