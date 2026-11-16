@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c2d11b5d1dc9750b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: ad27f678c8778b1c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] inquiry.json tarkistus-2 hint 3 and virhe feedback (390 px) — the widest rows ("… · sin 30°.", "… · 0,30 T · 0,5", "(6,0 A · 0,050 m)") end 2–6 px from the box border; complete and legible, but no margin left for a wider font — break before the last factor if it ever clips.
+- [Minor] tarkistus-2 hint 3 (phone) — a lone $F$ on its own row above one `=` row; acceptable under the long-left-side rule.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-4.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed) and the official fy7-4-open-tarkista-1280-1.png; glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

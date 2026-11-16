@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fd4fea8ed3adf8ba
+CONTENT-HASH: 660e1899027dc8bc
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json siirto solution, Sijoitus — the numerator of the root is split by hand into two rows (2 · 1,602 · 10^-19 C / · 20 000 V); readable and unclipped at 390 px, but the radical becomes tall and the result row starts at the far left; acceptable, a cleaner shared reflow would be nicer.
-- [Minor] docs/clipped-formulas.tsv — fy7-2 keeps formulas that were already clipped before this change (outside this change, work queue 5d; Major outside this change, not blocking): about a dozen Sovella chains and exercise formulas (qB, 1,602 · 10^-19 C …) are still listed.
+- [Minor] inquiry.json siirto, Sijoitus (352 and 1280 px) — the stacked numerator's second row reads "·20 000 V" with no space after the dot, because the row starts with a bare `\cdot` — write `{} \cdot 20\,000\,\text{V}` so the multiplication dot keeps its spacing.
 
 ## Checked
-- Delta: only inquiry.json re-breaks. Rendered the changed items myself from the built page (preview/fy7-2.html) at 390 px with hints and solutions open; the Sovella "uuteen tilanteeseen" solution: Muunnokset, Sijoitus (v and B rows, ja), Vastaus, Järkevyys all readable, nothing clipped. 
-- Opened the lesson's existing 390 px stage captures (herata, sovella, tarkista) and contact sheet; the stages around the changes keep their layout, no horizontal overflow.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-2.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

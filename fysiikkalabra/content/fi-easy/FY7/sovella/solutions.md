@@ -69,7 +69,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 **Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei muuta vauhtia, vaan kääntää liikkeen suuntaa. Homogeenisessa kentässä ioni kulkee tasaista ympyräliikettä, ja magneettinen voima on sen keskeisvoima. Valitsimen jälkeen kaikilla ioneilla on sama nopeus. Siksi radan säde on suoraan verrannollinen ionin massaan. Puoliympyrän jälkeen ioni osuu seinään halkaisijan $2r$ päähän tulokohdasta. Kahden ionilajin osumakohtien etäisyys on siis niiden halkaisijoiden erotus.
 **Kaava:** $evB = \dfrac{m v^2}{r}$, josta $B = \dfrac{m_{11} v}{e r}$. Samalla nopeudella ja kentällä $r_{10} = \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r$, ja osumakohtien etäisyys on $\Delta x = 2r - 2r_{10} = 2(r - r_{10})$.
 **Muunnokset:** $r = 40{,}0\,\text{cm} = 0{,}400\,\text{m}$
-**Sijoitus:** $$\begin{aligned} mv &= 1{,}8281 \cdot 10^{-26}\,\text{kg} \\ &\cdot 7{,}251 \cdot 10^{5}\,\text{m/s} \\ &= 1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s} \end{aligned}$$, joten $B = \dfrac{1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}400\,\text{m}} = 0{,}2069\,\text{T}$. Boori-10-ionien säde on $r_{10} = \dfrac{1{,}6627}{1{,}8281} \cdot 0{,}400\,\text{m} = 0{,}3638\,\text{m}$, joten $\Delta x = 2 \cdot (0{,}400\,\text{m} - 0{,}3638\,\text{m}) = 0{,}0724\,\text{m}$
+**Sijoitus:** $mv = 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text{m/s} = 1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}$, joten $B = \dfrac{1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}400\,\text{m}} = 0{,}2069\,\text{T}$. Boori-10-ionien säde on $r_{10} = \dfrac{1{,}6627}{1{,}8281} \cdot 0{,}400\,\text{m} = 0{,}3638\,\text{m}$, joten $\Delta x = 2 \cdot (0{,}400\,\text{m} - 0{,}3638\,\text{m}) = 0{,}0724\,\text{m}$
 **Vastaus:** $B \approx 0{,}207\,\text{T}$ ja $\Delta x \approx 7{,}2\,\text{cm}$. Boori-10-ionit osuisivat seinään noin $7\,\text{cm}$ lähemmäs tulokohtaa kuin rako. Kentässä on kolme merkitsevää numeroa, kuten lähtötiedoissa. Etäisyys on kahden lähes yhtä suuren luvun erotus, joten siinä on kaksi merkitsevää numeroa.
 **Järkevyys:** Kenttä on samaa suuruusluokkaa kuin tavallisen sähkömagneetin kenttä. Massat eroavat noin $9\,\%$, joten myös säteet eroavat noin $9\,\%$ eli noin $3{,}6\,\text{cm}$. Halkaisijat eroavat kaksinkertaisen määrän. Ero on paljon suurempi kuin raon koko, joten magneetti erottaa isotoopit varmasti.
 
@@ -78,7 +78,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 **Periaate:** Valitsimen läpi kulkevan ionin voimat ovat tasapainossa: $eE = evB_\text{s}$. Tästä varaus supistuu, eikä massa esiinny yhtälössä lainkaan. Valitsin päästää siis suoraan läpi jokaisen ionin, jonka nopeus on $E : B_\text{s}$. Kiihdytyksen jälkeinen nopeus riippuu sekä massasta että liike-energiasta.
 **Mallivastaus:** *Ilman energian vaihtelua.* Täyden kiihdytyksen saanut boori-10-ioni on kevyempi, joten sen nopeus on suurempi: $v_{10} = \sqrt{\dfrac{2eU}{m_{10}}}$. Sijoitetaan b-kohdan arvot ja massa $m_{10} = 1{,}6627 \cdot 10^{-26}\,\text{kg}$. Saadaan $v_{10} \approx 7{,}60 \cdot 10^{5}\,\text{m/s}$. Tällä nopeudella magneettinen voima on suurempi kuin sähköinen. Ioni kaartuu valitsimessa ylöspäin eikä pääse läpi. Tässä insinööri on oikeassa.
 
-*Energian vaihdellessa.* Boori-10-ioni kulkee valitsimen läpi, jos sen nopeus on sama kuin boori-11-ionien eli $7{,}25 \cdot 10^{5}\,\text{m/s}$. Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$. Boori-11-ionin liike-energia on $\tfrac{1}{2} m_{11} v^2$. Suhde on siis $$\begin{aligned} m_{10} : m_{11} &= 1{,}6627 : 1{,}8281 \\ &\approx 0{,}91 \end{aligned}$$. Boori-10-ioni, jonka liike-energia on noin $9\,\%$ täyttä pienempi, pääsee siis suoraan läpi. Kun energia vaihtelee jopa $10\,\%$, tällaisia ioneja on varmasti.
+*Energian vaihdellessa.* Boori-10-ioni kulkee valitsimen läpi, jos sen nopeus on sama kuin boori-11-ionien eli $7{,}25 \cdot 10^{5}\,\text{m/s}$. Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$. Boori-11-ionin liike-energia on $\tfrac{1}{2} m_{11} v^2$. Suhde on siis $m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91$. Boori-10-ioni, jonka liike-energia on noin $9\,\%$ täyttä pienempi, pääsee siis suoraan läpi. Kun energia vaihtelee jopa $10\,\%$, tällaisia ioneja on varmasti.
 
 *Johtopäätös.* Ehdotus ei käy. Valitsin valitsee nopeuden, ei massaa. Kun energia vaihtelee, sen läpi pääsee myös boori-10-ioneja. Vasta analysointimagneetti erottaa samalla nopeudella kulkevat ionit massan mukaan, koska radan säde on silloin suoraan verrannollinen massaan.
 
@@ -204,7 +204,7 @@ $\approx 5{,}2\,\text{MW}$.
 **Periaate:** Häviöteho on $P_\text{h} = RI^2$. Kun jännite on $20\,\text{kV}$, virta on aina $300\,\text{A}$. Häviötä voi siis pienentää vain pienentämällä resistanssia. Resistanssi on kääntäen verrannollinen poikkipinta-alaan. Johtimien massa on suoraan verrannollinen niiden tilavuuteen.
 **Mallivastaus:** *Tarvittava paksuus.* Häviön pitää olla sama kuin $110\,\text{kV}$:n johdossa. Resistanssin on siis oltava $846\,\text{kW} : 28{,}0\,\text{kW} \approx 30$ kertaa pienempi. Poikkipinta-alan on silloin oltava $30{,}25 \cdot 150\,\text{mm}^2 \approx 4500\,\text{mm}^2$. Umpinaisen pyöreän johtimen halkaisija olisi $2\sqrt{4{,}5 \cdot 10^{-3}\,\text{m}^2 : \pi} \approx 7{,}6\,\text{cm}$.
 
-*Alumiinin määrä.* Nykyisten johtimien massa on $$\begin{aligned} &2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \\ &\cdot 150 \cdot 10^{-6}\,\text{m}^2 \\ &\approx 20\,\text{t} \end{aligned}$$. Paksujen johtimien massa olisi $30$-kertainen, noin $610\,\text{t}$. Pylväiden pitäisi kantaa tämä kaikki.
+*Alumiinin määrä.* Nykyisten johtimien massa on $2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot 10^{-6}\,\text{m}^2 \approx 20\,\text{t}$. Paksujen johtimien massa olisi $30$-kertainen, noin $610\,\text{t}$. Pylväiden pitäisi kantaa tämä kaikki.
 
 *Miksi jännite kannattaa nostaa.* Jännitteen nostaminen pienentää virtaa samassa suhteessa, ja häviö riippuu virran neliöstä. $5{,}5$-kertainen jännite pienentää häviön noin $30$:nteen osaan. Paksumpi johdin pienentää häviötä vain samassa suhteessa kuin poikkipinta-ala kasvaa. Saman tuloksen saamiseksi johdinta on siis paksunnettava $30$-kertaisesti.
 
@@ -231,7 +231,7 @@ $$.
 - a-kohdan voi laskea suoraan kaavalla $P_\text{h} = \dfrac{R P^2}{U^2}$. b-kohdan voi laskea a-kohdan tuloksesta suhteella $P_\text{h,110} = P_\text{h,20} \cdot (20 : 110)^2$.
 - c-kohdassa voi verrata jännitehäviötä suoraan sallittuun poikkeamaan $0{,}10 \cdot 20\,\text{kV} = 2{,}0\,\text{kV}$.
 - d-kohdassa riittää arvio, joka perustuu siihen, että poikkipinta-alan ja massan on oltava noin $30$-kertaiset.
-- e-kohdan oikosulkuvoiman voi laskea normaalikäytön voimasta virtojen suhteen neliöllä: $$\begin{aligned} &0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \\ &\approx 8{,}5\,\text{N/m} \end{aligned}$$.
+- e-kohdan oikosulkuvoiman voi laskea normaalikäytön voimasta virtojen suhteen neliöllä: $0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}$.
 
 ### Yleisiä virheitä
 - Johdon pituudeksi otetaan $25\,\text{km}$, vaikka virtapiirissä on kaksi johdinta. Silloin resistanssi ja häviöt ovat puolet liian pienet.
@@ -429,7 +429,7 @@ Esimerkiksi toisen kertaluvun punaiselle viivalle $k\lambda = 2 \cdot 656{,}28\,
 **Annettu:** a-kohdan kuvaaja ja sen suora
 **Kysytty:** hilan viivatiheys eli viivojen lukumäärä millimetrillä
 **Periaate:** Suoran kulmakerroin on mallin mukaan $\tfrac{1}{d}$, missä $d$ on hilavakio eli vierekkäisten rakojen etäisyys. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä. Toinen niistä voi olla origo, koska suora kulkee sen kautta. Viivatiheys on millimetri jaettuna hilavakiolla.
-**Kuvaajan lukeminen:** Suoralta luetaan piste $(1300\,\text{nm};\ 0{,}780)$, joka on kaukana origosta. Kulmakerroin on $$\begin{aligned} &0{,}780 : 1300\,\text{nm} \\ &= 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}} \end{aligned}$$.
+**Kuvaajan lukeminen:** Suoralta luetaan piste $(1300\,\text{nm};\ 0{,}780)$, joka on kaukana origosta. Kulmakerroin on $0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}$.
 **Kaava:** $\dfrac{1}{d} = \text{kulmakerroin}$, joten $d = \dfrac{1}{\text{kulmakerroin}}$, ja viivatiheys on $N = \dfrac{1\,\text{mm}}{d}$.
 **Muunnokset:** $1\,\text{mm} = 10^{6}\,\text{nm}$
 **Sijoitus:** $d = \dfrac{1}{6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}} = 1667\,\text{nm}$ ja $N = \dfrac{10^{6}\,\text{nm}}{1667\,\text{nm}} = 600$

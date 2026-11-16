@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 50e828664421391d
-SCOPE: delta added-exercise from b366c16fb04b0dad base 8f23aa7ae3bd
+CONTENT-HASH: 1e0c9f8fcf1c5474
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md:132 — at 390 px the left side "mgh − ½mv²" stands alone and every following row ("= …", "· 1,00 m", "− ½ · …") is flush left; correct, but the "· 1,00 m" row is short. Could break before "− ½" only.
 
 ## Checked
-- Added exercises L2-09, L3-06 (fi-easy, FY7 fy7-6): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-6.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Delta (reflow): solutions.md:22, 34, 107, 132, 160, 196 from preview/fi-easy/fy7-6.html, every solution open, at 390 and 1280 px (own captures of all eight re-broken steps). Rows start with "=", "≈", "−" or "·" between whole quantities; the fraction with N·s/m stays whole; 100 800 J → 100,8 kJ on their own rows; punctuation inside the blocks; at 1280 px the "·" rows are joined.
+- Captions without the "(esimerkkiaineisto)" marker: nothing left dangling in the task cards seen.
+- Overflow scan of every display formula, eq-chain and table at 360, 390 and 1280 px: none; no red KaTeX.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

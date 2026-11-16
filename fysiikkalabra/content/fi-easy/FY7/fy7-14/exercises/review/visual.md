@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7f19929160d7f4d9
+CONTENT-HASH: d546c7be180b582b
 
 ## Blocking
 
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 8 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
-
 ## Polish
-- [Minor] 14-20 Vastaus (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
+- [Minor] solutions.md:64 — at 390 px the line breaks after the opening parenthesis before the inline formula; harmless, could be avoided with "eli" instead of brackets.
 
 ## Checked
-- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
-- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
-- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
-- Not opened: other captures (outside the delta).
+- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
+- The hash changed during the review (f139c7b268916dd7 → current: commit 7e4ba8466f put the bracketed formula of 14-7 back inline); preview rebuilt, 14-7 Järkevyys re-captured at 390 and 1280: the formula sits inside its parentheses in the sentence, nothing clipped.
+- Delta: the other 4 re-broken blocks (607,2 nm, 94,2 nm, 540 nm, 221 nm) at 390 and 1280 px, full size (unchanged by the later commit). Rest not re-reviewed.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

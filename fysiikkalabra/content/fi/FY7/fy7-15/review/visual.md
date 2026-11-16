@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0e9256de0c213bf4
+CONTENT-HASH: 69a733651c764fc1
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: opened theory-1280-1/2/3, example-390-1, fig-row-1280; Syventävä example lead reads well in its card; the new Syventävä paragraph under the Kaava heading is not in any capture (formula section), judged from source only: plain Finnish, no maths.
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-15.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

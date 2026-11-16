@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c4fd2b7feb9ccd07
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: e55124710df8233f
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "…kuorman, kuten ideaalisen vastuksen, läpi, …" reads heavily; optionally "Kun vaihtovirta kulkee puhtaasti resistiivisen kuorman, esimerkiksi ideaalisen vastuksen, läpi …" or two sentences.
+- [Minor] inquiry.json johtopaatos (1280 px, narrow column beside the simulation) — the joined row "NBA · 2π = 500 · 0,20 T · 0,0020 m² · 2π" ends at the box border; complete, but tight.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Resistive-load limitation of P = UI in theory, summary and inquiry feedbacks; instantaneous-voltage sentence after the generator formula; decimal comma/point and units in LaTeX.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-7.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

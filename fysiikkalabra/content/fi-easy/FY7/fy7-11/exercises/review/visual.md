@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d08eceb1247765e5
+CONTENT-HASH: b8ba260488bd61fc
 
 ## Blocking
-- none
-
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 4 formulas of this language's fy7-11 solutions that are clipped at 360 px with solutions open: (180° + 2·59,0° − 4·40,07°; the 2,55033·10⁻⁵ s difference; Δx = 2,00 m·(tan … − tan …); sin α₂ = sin 60,0° : 1,5302). Old, untouched by this diff; fix under 5d.
 
 ## Polish
-- [Minor] 11-20 task text — "Aineisto on esimerkki." — the provenance marker was taken out of 11-21 but stays here; ask the teacher whether it goes too (rule 2026-11-13: no provenance badge on example data).
+
 
 ## Checked
-- Delta (wording only, task 11-21 text; no figure, number or formula changed). Captures are current for this hash.
-- contact-8 (level 3 overview: card order, no overflow, solutions inside their cards).
-- fy7-11-open-exercises-L3-1280-7 and -8: the 11-21 card with the changed first sentence, the rest of the task text, answer field, and the opened solution below it. The sentence reads naturally without the bracket, the inline formulas sit on their lines, the paragraph breaks and the card layout are unchanged; the end of the 11-20 card above is intact.
+- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
+- Delta: the 2 re-broken blocks (Δt difference chain; rainbow deviation 137,7°) at 390 and 1280 px, full size. Minus row under the equals sign reads clearly; wide form joins to one row. Rest not re-reviewed.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

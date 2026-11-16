@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: ca50f9cdba5399f8
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-3.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.
