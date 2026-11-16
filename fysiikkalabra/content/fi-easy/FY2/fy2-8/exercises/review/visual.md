@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5adb89f5eac07ee8
+CONTENT-HASH: 14ecee1f947f5685
+SCOPE: delta reflow from 5adb89f5eac07ee8 base b5600a63ddae
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] reflow-exercises-1, fy2-8: the m_1 − m_2 chain takes seven rows; legible, optional tightening.
 
 ## Checked
-- Diff is one Järkevyys sentence ("noin $2{,}6$ kertaa niin paljon kuin kaasua on"), fluent Finnish; read in the diff. No capture opened.
-- Delta only; unchanged exercises not re-opened.
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

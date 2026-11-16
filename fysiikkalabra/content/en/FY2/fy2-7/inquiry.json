@@ -30,7 +30,7 @@
         {
           "text": "$0.75$, because the useful energy is divided by the energy used: $6.0 : 8.0$.",
           "correct": true,
-          "feedback": "Correct. Efficiency is the share of the energy used that is obtained as useful energy, $\\eta = E_\\text{useful} : E_\\text{used} = 6.0 : 8.0 = 0.75$, or $75\\,\\%$ (chapter *Efficiency*). The efficiency of a transfer is calculated in the same way today: the energy that arrives is divided by the energy sent."
+          "feedback": "Correct. Efficiency is the share of the energy used that is obtained as useful energy, $$\n\\begin{aligned}\n\\eta &= E_\\text{useful} : E_\\text{used} \\\\\n&= 6.0 : 8.0 \\\\\n&= 0.75\n\\end{aligned}\n$$, or $75\\,\\%$ (chapter *Efficiency*). The efficiency of a transfer is calculated in the same way today: the energy that arrives is divided by the energy sent."
         },
         {
           "text": "$1.33$, because the energy used is divided by the useful energy: $8.0\\,\\text{kWh} : 6.0\\,\\text{kWh}$.",
@@ -42,7 +42,7 @@
         },
         {
           "text": "$2.0\\,\\text{kWh}$, because efficiency is the difference between the energy used and the useful energy.",
-          "feedback": "The difference $8.0\\,\\text{kWh} - 6.0\\,\\text{kWh} = 2.0\\,\\text{kWh}$ is the energy that is lost. Efficiency is a share without a unit, not an energy."
+          "feedback": "The difference $$\n\\begin{aligned}\n&8.0\\,\\text{kWh} - 6.0\\,\\text{kWh} \\\\\n&= 2.0\\,\\text{kWh}\n\\end{aligned}\n$$ is the energy that is lost. Efficiency is a share without a unit, not an energy."
         }
       ]
     },
@@ -117,7 +117,7 @@
         "tolerance": 0.03,
         "hints": [
           "First calculate how much energy was left on the way: sent energy minus arrived energy.",
-          "$E_\\text{loss} = 36.0\\,\\text{TWh} - 32.7\\,\\text{TWh}$.",
+          "$$\n\\begin{aligned}\nE_\\text{loss} &= 36.0\\,\\text{TWh} \\\\\n&- 32.7\\,\\text{TWh}\n\\end{aligned}\n$$.",
           "The share is the loss divided by the sent energy: $3.3\\,\\text{TWh} : 36.0\\,\\text{TWh}$. Finally multiply by one hundred to get a percentage."
         ],
         "mistakes": [
@@ -130,7 +130,7 @@
             "feedback": "This is the loss in terawatt-hours, not a percentage. Divide the loss by the sent energy and give the share as a percentage."
           }
         ],
-        "solution": "**Given:** energy supplied to the network $E_\\text{sent} = 36.0\\,\\text{TWh}$ and energy used by customers $E_\\text{arrived} = 32.7\\,\\text{TWh}$ (Finnish Energy, 2024)\n\n**Find:** the share of the loss in the sent energy as a percentage\n\n**Principle:** Energy does not disappear. What is sent but does not reach customers has turned into heat in the surroundings, that is, it is transmission loss. The share is calculated from the sent energy, because the percentage tells what part of the heat fed into the network was lost.\n\n**Formula:** $E_\\text{loss} = E_\\text{sent} - E_\\text{arrived}$ and $\\text{share} = \\dfrac{E_\\text{loss}}{E_\\text{sent}}$\n\n**Conversions:** No unit conversions, because both energies are in terawatt-hours. The share is changed into a percentage by multiplying by one hundred: $0.0917 = 0.0917 \\cdot 100\\,\\% = 9.17\\,\\%$.\n\n**Substitution:** $E_\\text{loss} = 36.0\\,\\text{TWh} - 32.7\\,\\text{TWh} = 3.3\\,\\text{TWh}$, and $\\text{share} = 3.3\\,\\text{TWh} : 36.0\\,\\text{TWh} = 0.0917 = 9.17\\,\\%$\n\n**Answer:** $9.2\\,\\%$, two significant figures, because the difference $3.3\\,\\text{TWh}$ is known to two figures.\n\n**Reasonableness:** Ten per cent of $36.0\\,\\text{TWh}$ would be $3.6\\,\\text{TWh}$, and the loss $3.3\\,\\text{TWh}$ is a little smaller, so about $9\\,\\%$ is of the right size. It is more than twice the loss of about $4\\,\\%$ in the electricity grid."
+        "solution": "**Given:** energy supplied to the network $E_\\text{sent} = 36.0\\,\\text{TWh}$ and energy used by customers $E_\\text{arrived} = 32.7\\,\\text{TWh}$ (Finnish Energy, 2024)\n\n**Find:** the share of the loss in the sent energy as a percentage\n\n**Principle:** Energy does not disappear. What is sent but does not reach customers has turned into heat in the surroundings, that is, it is transmission loss. The share is calculated from the sent energy, because the percentage tells what part of the heat fed into the network was lost.\n\n**Formula:** $E_\\text{loss} = E_\\text{sent} - E_\\text{arrived}$ and $\\text{share} = \\dfrac{E_\\text{loss}}{E_\\text{sent}}$\n\n**Conversions:** No unit conversions, because both energies are in terawatt-hours. The share is changed into a percentage by multiplying by one hundred: $0.0917 = 0.0917 \\cdot 100\\,\\% = 9.17\\,\\%$.\n\n**Substitution:** $$\n\\begin{aligned}\nE_\\text{loss} &= 36.0\\,\\text{TWh} \\\\\n&- 32.7\\,\\text{TWh} \\\\\n&= 3.3\\,\\text{TWh}\n\\end{aligned}\n$$, and $\\text{share} = 3.3\\,\\text{TWh} : 36.0\\,\\text{TWh} = 0.0917 = 9.17\\,\\%$\n\n**Answer:** $9.2\\,\\%$, two significant figures, because the difference $3.3\\,\\text{TWh}$ is known to two figures.\n\n**Reasonableness:** Ten per cent of $36.0\\,\\text{TWh}$ would be $3.6\\,\\text{TWh}$, and the loss $3.3\\,\\text{TWh}$ is a little smaller, so about $9\\,\\%$ is of the right size. It is more than twice the loss of about $4\\,\\%$ in the electricity grid."
       }
     },
     {
@@ -245,12 +245,12 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "$500\\,\\text{MWh}$ is fed into the electricity grid and the loss is $4\\,\\%$ of the sent energy. A student calculates: the energy that arrives is $500\\,\\text{MWh} - 4\\,\\text{MWh} = 496\\,\\text{MWh}$. Where is the error?",
+      "prompt": "$500\\,\\text{MWh}$ is fed into the electricity grid and the loss is $4\\,\\%$ of the sent energy. A student calculates: the energy that arrives is $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 4\\,\\text{MWh} \\\\\n&= 496\\,\\text{MWh}\n\\end{aligned}\n$$. Where is the error?",
       "choices": [
         {
           "text": "The percentage was subtracted as megawatt-hours, although the loss of $4\\,\\%$ is $20\\,\\text{MWh}$.",
           "correct": true,
-          "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ and the energy that arrives is $500\\,\\text{MWh} - 20\\,\\text{MWh} = 480\\,\\text{MWh}$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
+          "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ and the energy that arrives is $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
         },
         {
           "text": "The loss should be calculated from the energy that arrives, not from the energy sent into the network.",
@@ -374,7 +374,7 @@
           "feedback": "You added $25\\,\\%$ of the arrived energy to it. The loss percentage is taken of the sent energy, not of the arrived energy, so divide by $0.75$."
         }
       ],
-      "solution": "**Given:** arrived energy $E_\\text{arrived} = 375\\,\\text{MWh}$ and efficiency $\\eta = 75\\,\\%$\n\n**Find:** the energy to be fed into the network $E_\\text{sent}$ in megawatt-hours\n\n**Principle:** Efficiency is the share of the sent energy that arrives. When the arrived energy and the efficiency are known, the sent energy is obtained by dividing.\n\n**Formula:** $\\eta = \\dfrac{E_\\text{arrived}}{E_\\text{sent}}$, so $E_\\text{sent} = \\dfrac{E_\\text{arrived}}{\\eta}$\n\n**Conversions:** $75\\,\\% = 75 : 100 = 0.75$. The unit of energy stays megawatt-hours.\n\n**Substitution:** $E_\\text{sent} = 375\\,\\text{MWh} : 0.75 = 500\\,\\text{MWh}$\n\n**Answer:** $5.0 \\cdot 10^2\\,\\text{MWh}$, two significant figures, because the efficiency $75\\,\\%$ is the least precise value.\n\n**Reasonableness:** The loss is $500\\,\\text{MWh} - 375\\,\\text{MWh} = 125\\,\\text{MWh}$, which is $25\\,\\%$ of $500\\,\\text{MWh}$. The sent energy is larger than the arrived energy, as it should be."
+      "solution": "**Given:** arrived energy $E_\\text{arrived} = 375\\,\\text{MWh}$ and efficiency $\\eta = 75\\,\\%$\n\n**Find:** the energy to be fed into the network $E_\\text{sent}$ in megawatt-hours\n\n**Principle:** Efficiency is the share of the sent energy that arrives. When the arrived energy and the efficiency are known, the sent energy is obtained by dividing.\n\n**Formula:** $\\eta = \\dfrac{E_\\text{arrived}}{E_\\text{sent}}$, so $E_\\text{sent} = \\dfrac{E_\\text{arrived}}{\\eta}$\n\n**Conversions:** $75\\,\\% = 75 : 100 = 0.75$. The unit of energy stays megawatt-hours.\n\n**Substitution:** $E_\\text{sent} = 375\\,\\text{MWh} : 0.75 = 500\\,\\text{MWh}$\n\n**Answer:** $5.0 \\cdot 10^2\\,\\text{MWh}$, two significant figures, because the efficiency $75\\,\\%$ is the least precise value.\n\n**Reasonableness:** The loss is $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 375\\,\\text{MWh} \\\\\n&= 125\\,\\text{MWh}\n\\end{aligned}\n$$, which is $25\\,\\%$ of $500\\,\\text{MWh}$. The sent energy is larger than the arrived energy, as it should be."
     },
     {
       "id": "tarkistus-3",
