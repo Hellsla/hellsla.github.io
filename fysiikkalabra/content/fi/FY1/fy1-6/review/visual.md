@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6fcd799d6fd6f900
+CONTENT-HASH: bd64ed194e22490f
 
 ## Blocking
-None. Built preview/fy1-6.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
+- none
 
 ## Polish
-none.
+- none
 
-(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)
+## Checked
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-6 captures at 360 px (captures 01,02,07); no clipping, equals signs aligned, rows break outside numbers and units.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

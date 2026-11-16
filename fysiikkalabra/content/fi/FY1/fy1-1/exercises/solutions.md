@@ -24,7 +24,7 @@
 **Kysytty:** halkaisija $d$ kilometreinä, yksikössä $\text{km}$
 **Periaate:** Kilometri on tuhat metriä, $1\,\text{km} = 10^{3}\,\text{m}$. Kirjoitetaan pituus muotoon, jossa on tekijä $10^{3}\,\text{m}$, ja korvataan se yksiköllä $\text{km}$.
 **Kaava:** $10^{3}\,\text{m} = 1\,\text{km}$
-**Muunnokset:** $10^{7} = 10^{4}\cdot10^{3}$, joten $1{,}27\cdot10^{7}\,\text{m} = 1{,}27\cdot10^{4}\cdot10^{3}\,\text{m}$.
+**Muunnokset:** $10^{7} = 10^{4}\cdot10^{3}$, joten $$\begin{aligned} &1{,}27\cdot10^{7}\,\text{m} \\ &= 1{,}27\cdot10^{4}\cdot10^{3}\,\text{m} \end{aligned}$$.
 **Sijoitus:** $d = 1{,}27\cdot10^{4}\cdot10^{3}\,\text{m} = 1{,}27\cdot10^{4}\,\text{km} = 12\,700\,\text{km}$
 **Vastaus:** $12\,700\,\text{km}$ eli $1{,}27\cdot10^{4}\,\text{km}$, kolme merkitsevää numeroa kuten annetussa halkaisijassa.
 **Järkevyys:** Maan ympärysmitta on noin $40\,000\,\text{km}$, ja halkaisija on ympärysmitta jaettuna luvulla $\pi \approx 3{,}14$, siis noin $12\,700\,\text{km}$. Tulos täsmää.
@@ -65,9 +65,9 @@
 **Periaate:** Valo kulkee tasaisella nopeudella, joten aika on matka jaettuna nopeudella. Aika saadaan ensin sekunteina ja muutetaan sitten vuosiksi.
 **Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
 **Muunnokset:** Yksi vuosi on $3{,}156\cdot10^{7}\,\text{s}$, joten vuosien määrä saadaan, kun sekunnit jaetaan yhden vuoden sekunneilla: montako kertaa vuosi mahtuu aikaan.
-**Sijoitus:** $t = \dfrac{4{,}0\cdot10^{16}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}334\cdot10^{8}\,\text{s}$ ja vuosina $1{,}334\cdot10^{8}\,\text{s} : 3{,}156\cdot10^{7}\,\text{s} = 4{,}23$, eli $t = 4{,}23\,\text{a}$
+**Sijoitus:** $t = \dfrac{4{,}0\cdot10^{16}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}334\cdot10^{8}\,\text{s}$ ja vuosina $$\begin{aligned} &1{,}334\cdot10^{8}\,\text{s} : 3{,}156\cdot10^{7}\,\text{s} \\ &= 4{,}23 \end{aligned}$$, eli $t = 4{,}23\,\text{a}$
 **Vastaus:** $4{,}2\,\text{a}$, kaksi merkitsevää numeroa kuten matkassa $4{,}0\cdot10^{16}\,\text{m}$ (kenttään sopii $4{,}23$).
-**Järkevyys:** Yksi valovuosi on $9{,}46\cdot10^{15}\,\text{m}$ ja matka on noin $4$ valovuotta ($4{,}0\cdot10^{16} : 9{,}46\cdot10^{15} \approx 4{,}2$), joten aika on noin $4$ vuotta. Tulos täsmää.
+**Järkevyys:** Yksi valovuosi on $9{,}46\cdot10^{15}\,\text{m}$ ja matka on noin $4$ valovuotta ($4{,}0\cdot10^{16} : 9{,}46\cdot10^{15}$ $\approx 4{,}2$), joten aika on noin $4$ vuotta. Tulos täsmää.
 
 ## fy1-1-L2-03
 **Annettu:** ympärysmitta $s = 4{,}0\cdot10^{7}\,\text{m}$ ja yhden ihmisen pituus $h = 1{,}7\,\text{m}$
@@ -107,7 +107,7 @@
 **Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.
 **Sijoitus:** Planckin pituudesta protoniin $-15 - (-35) = 20$ askelta ja protonista ihmiseen $0 - (-15) = 15$ askelta
 **Vastaus:** Suurempi ero on $20$ suuruusluokkaa, Planckin pituuden ja protonin välillä; luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja.
-**Järkevyys:** Tarkka suhde Planckin pituudesta protoniin on $1{,}7\cdot10^{-15} : 1{,}6\cdot10^{-35} \approx 1{,}1\cdot10^{20}$ ja protonista ihmiseen $1{,}7 : 1{,}7\cdot10^{-15} = 1{,}0\cdot10^{15}$. Ensimmäinen on suurempi, kuten askelten määrätkin kertovat.
+**Järkevyys:** Tarkka suhde Planckin pituudesta protoniin on $$\begin{aligned} &1{,}7\cdot10^{-15} : 1{,}6\cdot10^{-35} \\ &\approx 1{,}1\cdot10^{20} \end{aligned}$$ ja protonista ihmiseen $$\begin{aligned} &1{,}7 : 1{,}7\cdot10^{-15} \\ &= 1{,}0\cdot10^{15} \end{aligned}$$. Ensimmäinen on suurempi, kuten askelten määrätkin kertovat.
 
 ## fy1-1-L3-03
 **Annettu:** viruksen koko $d_\text{v} = 1{,}0\cdot10^{-7}\,\text{m}$ kuvassa $5{,}0\,\text{cm}$; punasolun koko $d_\text{p} = 7{,}5\cdot10^{-6}\,\text{m}$
@@ -151,7 +151,7 @@
 **Kaava:** $r_\text{malli,J} = r_\text{malli,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptunus}}$
 **Muunnokset:** $r_\text{malli,N} = 2{,}0\,\text{m} = 2{,}0\cdot100\,\text{cm} = 200\,\text{cm}$. Tähtitieteelliset yksiköt supistuvat suhteesta pois.
 **Sijoitus:** $r_\text{malli,J} = 200\,\text{cm}\cdot\dfrac{5{,}20\,\text{AU}}{30{,}1\,\text{AU}} = 200\,\text{cm}\cdot0{,}1727 = 34{,}6\,\text{cm}$
-**Vastaus:** $35\,\text{cm}$, kaksi merkitsevää numeroa kuten mallin pituudessa $2{,}0\,\text{m}$ (kenttään sopii $34{,}6$). Kohtaa $1{,}0\,\text{m}$ lähimpänä on Uranus: kohtaa $100\,\text{cm}$ vastaa todellinen etäisyys $100\,\text{cm} : 200\,\text{cm}\cdot30{,}1\,\text{AU} = 15{,}05\,\text{AU}$, joka on lähempänä Uranuksen arvoa $19{,}2\,\text{AU}$ (ero $4{,}15\,\text{AU}$) kuin Saturnuksen arvoa $9{,}58\,\text{AU}$ (ero $5{,}47\,\text{AU}$).
+**Vastaus:** $35\,\text{cm}$, kaksi merkitsevää numeroa kuten mallin pituudessa $2{,}0\,\text{m}$ (kenttään sopii $34{,}6$). Kohtaa $1{,}0\,\text{m}$ lähimpänä on Uranus: kohtaa $100\,\text{cm}$ vastaa todellinen etäisyys $$\begin{aligned} &100\,\text{cm} : 200\,\text{cm} \\ &\cdot30{,}1\,\text{AU} \\ &= 15{,}05\,\text{AU} \end{aligned}$$, joka on lähempänä Uranuksen arvoa $19{,}2\,\text{AU}$ (ero $4{,}15\,\text{AU}$) kuin Saturnuksen arvoa $9{,}58\,\text{AU}$ (ero $5{,}47\,\text{AU}$).
 **Järkevyys:** Jupiter on noin $5\,\text{AU}$:n päässä ja Neptunus noin $30\,\text{AU}$:n päässä, eli Jupiter on noin kuudesosa Neptunuksen etäisyydestä. Kuudesosa luvusta $200\,\text{cm}$ on noin $33\,\text{cm}$, ja tulos $34{,}6\,\text{cm}$ on lähellä sitä. Maa olisi mallissa vain noin $6{,}6\,\text{cm}$ päässä Auringosta.
 
 ## fy1-1-L2-06
@@ -162,7 +162,7 @@
 **Muunnokset:** Ei tarvita: eksponentit ovat yksiköttömiä lukuja.
 **Sijoitus:** Ihminen $1{,}7 < 3$, joten $10^{0}\,\text{m}$. Maa $1{,}27 < 3$, joten $10^{7}\,\text{m}$. Aurinko $1{,}39 < 3$, joten $10^{9}\,\text{m}$. Linnunrata $9{,}46 > 3$, joten $10^{20+1} = 10^{21}\,\text{m}$. Siis $\text{askelia} = 21 - 0 = 21$.
 **Vastaus:** $21$, eli ihmisen ja Linnunradan suuruusluokkien välillä on $21$ suuruusluokkaa; luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Linnunradan suuruusluokka on $10^{21}\,\text{m}$, koska kerroin $9{,}46$ on lähempänä lukua $10$ kuin lukua $1$: $9{,}46\cdot10^{20}\,\text{m}$ on lähempänä arvoa $10^{21}\,\text{m}$ kuin arvoa $10^{20}\,\text{m}$.
-**Järkevyys:** Linnunrata on noin $10^{21}\,\text{m}$ ja ihminen noin $1\,\text{m}$, joten suhde on $9{,}46\cdot10^{20}\,\text{m} : 1{,}7\,\text{m} \approx 5{,}6\cdot10^{20}$ eli noin $10^{21}$. Se sopii 21 askeleeseen.
+**Järkevyys:** Linnunrata on noin $10^{21}\,\text{m}$ ja ihminen noin $1\,\text{m}$, joten suhde on $$\begin{aligned} &9{,}46\cdot10^{20}\,\text{m} : 1{,}7\,\text{m} \\ &\approx 5{,}6\cdot10^{20} \end{aligned}$$ eli noin $10^{21}$. Se sopii 21 askeleeseen.
 
 ## fy1-1-L2-07
 **Annettu:** taulukon pisteet $(N;\ h)$: $(50;\ 5{,}0\,\text{mm})$, $(100;\ 10{,}5\,\text{mm})$, $(150;\ 15{,}0\,\text{mm})$, $(200;\ 20{,}5\,\text{mm})$, $(250;\ 25{,}5\,\text{mm})$ ja $(300;\ 30{,}5\,\text{mm})$; viivaimen luku on puolen millimetrin tarkkuudella
@@ -184,7 +184,7 @@
 **Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
 **Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \dfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
 **Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten mitatuissa lähtötiedoissa (kenttään sopii $1{,}19$). Kesto $10\,\text{min}$ on tarkka, valittu tarkasteluaika, joten se ei rajoita tarkkuutta. Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\%$. Jos pisaran halkaisija on $20\,\%$ liian suuri, pisaran tilavuus kasvaa tekijällä $1{,}2^{3} = 1{,}73$ ja $N$ pienenee noin $42\,\%$. Pisaran koko vaikuttaa eniten, koska tilavuus on halkaisijan kolmannessa potenssissa.
-**Järkevyys:** Jokaiselle neliömetrille tulee $1{,}19\cdot10^{9} : 6{,}0\cdot10^{3} \approx 2\cdot10^{5}$ pisaraa eli noin $20$ pisaraa neliösenttimetrille kymmenessä minuutissa, mikä on kohtuullinen määrä. Suuruusluokka $10^{9}$ ei muutu, vaikka yksittäinen oletus heittäisi parikymmentä prosenttia.
+**Järkevyys:** Jokaiselle neliömetrille tulee $$\begin{aligned} &1{,}19\cdot10^{9} : 6{,}0\cdot10^{3} \\ &\approx 2\cdot10^{5} \end{aligned}$$ pisaraa eli noin $20$ pisaraa neliösenttimetrille kymmenessä minuutissa, mikä on kohtuullinen määrä. Suuruusluokka $10^{9}$ ei muutu, vaikka yksittäinen oletus heittäisi parikymmentä prosenttia.
 
 ## fy1-1-L3-05
 **Annettu:** $d_0 = 119{,}0\,\text{AU}$, $v = 15{,}341\,\text{km/s}$, $t = 7{,}25\,\text{a}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ ja havainto $143{,}05\,\text{AU}$ Maasta (JPL, helmikuu 2026)
@@ -201,7 +201,7 @@
 **Annettu:** Kuun etäisyys $3{,}84\cdot10^{8}\,\text{m}$, Kuun halkaisija $3{,}47\cdot10^{6}\,\text{m}$, Auringon halkaisija $1{,}39\cdot10^{9}\,\text{m}$; pimennyksessä Aurinko ja Kuu näyttävät yhtä suurilta.
 **Kysytty:** Maan etäisyys Auringosta $d_\text{A}$, valittuna neljästä suuruusluokaltaan eri vaihtoehdosta.
 **Periaate:** Kohde näyttää yhtä suurelta, kun sen etäisyys on yhtä monta kertaa Kuun etäisyys kuin sen halkaisija on Kuun halkaisija. Tehtävän oletuksen mukaisessa pimennystilanteessa Aurinko ja Kuu näyttävät likimain yhtä suurilta, joten etäisyyksien suhde on likimain sama kuin halkaisijoiden suhde.
-**Mallivastaus:** Halkaisijoiden suhde on $\dfrac{1{,}39\cdot10^{9}\,\text{m}}{3{,}47\cdot10^{6}\,\text{m}}\approx400$, joten $d_\text{A}\approx400\cdot3{,}84\cdot10^{8}\,\text{m}\approx1{,}5\cdot10^{11}\,\text{m}$. Se on oikea vastaus. Arvo $1{,}5\cdot10^{8}\,\text{m}$ on alle puolet Kuun etäisyydestä, joten Aurinko olisi Kuuta lähempänä. Arvo $1{,}5\cdot10^{9}\,\text{m}$ on vain noin $4$ kertaa Kuun etäisyys, ja arvo $1{,}5\cdot10^{13}\,\text{m}$ noin $39\,000$ kertaa; kumpikaan ei vastaa kerrointa $400$.
+**Mallivastaus:** Halkaisijoiden suhde on $\dfrac{1{,}39\cdot10^{9}\,\text{m}}{3{,}47\cdot10^{6}\,\text{m}}\approx400$, joten $$\begin{aligned} d_\text{A}&\approx400\cdot3{,}84\cdot10^{8}\,\text{m} \\ &\approx1{,}5\cdot10^{11}\,\text{m} \end{aligned}$$. Se on oikea vastaus. Arvo $1{,}5\cdot10^{8}\,\text{m}$ on alle puolet Kuun etäisyydestä, joten Aurinko olisi Kuuta lähempänä. Arvo $1{,}5\cdot10^{9}\,\text{m}$ on vain noin $4$ kertaa Kuun etäisyys, ja arvo $1{,}5\cdot10^{13}\,\text{m}$ noin $39\,000$ kertaa; kumpikaan ei vastaa kerrointa $400$.
 **Järkevyys:** Valo kulkee matkan $1{,}5\cdot10^{11}\,\text{m} : 3{,}0\cdot10^{8}\,\text{m/s} = 5{,}0\cdot10^{2}\,\text{s}$ eli noin $8\,\text{min}$, mikä on Auringon valon tunnettu kulkuaika.
 
 ## fy1-1-L1-10

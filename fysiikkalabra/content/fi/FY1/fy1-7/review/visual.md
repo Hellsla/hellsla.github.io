@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f447cdfb0ba35ecd
+CONTENT-HASH: 73d59bacf2013450
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: f447cdfb0ba35ecd
 - none
 
 ## Checked
-- batch delta review: diff is one inquiry feedback sentence ('noin 2,7 kertaa niin tiheää kuin vesi', fixes the odd '2,7-kertaisen tiheää'); dimensionless 2,7 in plain text is fine, units are LaTeX; no figure changed (teacher-approved). Opened no fy1-7 capture, the text change does not touch layout.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-7 captures at 360 px (captures 01-06,12,13); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
