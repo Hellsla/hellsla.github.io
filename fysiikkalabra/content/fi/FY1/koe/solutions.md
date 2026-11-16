@@ -25,7 +25,7 @@
 **Perustelu:** $(t, s)$-kuvaajan jyrkkyys kertoo vauhdin. Välillä $0$–$4\,\text{s}$ kävelijä kulkee $6\,\text{m}$ eli vauhti on $1{,}5\,\text{m/s}$, välillä $4$–$7\,\text{s}$ paikka ei muutu eli kävelijä on levossa, ja välillä $7$–$9\,\text{s}$ hän palaa $4\,\text{m}$ eli vauhti on $2{,}0\,\text{m/s}$. Vauhti on siis suurin lopussa. Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\text{m}$ välillä $4$–$7\,\text{s}$ on paikka eikä nopeus.
 
 ### i)
-**Perustelu:** Ilman ilmanvastusta kaikki kappaleet putoavat samalla kiihtyvyydellä $g$ massasta riippumatta, joten molempien nopeus on $v = gt = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \approx 4{,}9\,\text{m/s}$. Ajatus, että raskas kappale putoaa nopeammin, on yleinen virhekäsitys.
+**Perustelu:** Ilman ilmanvastusta kaikki kappaleet putoavat samalla kiihtyvyydellä $g$ massasta riippumatta, joten molempien nopeus on $$\begin{aligned} v &= gt \\ &= 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \\ &\approx 4{,}9\,\text{m/s} \end{aligned}$$. Ajatus, että raskas kappale putoaa nopeammin, on yleinen virhekäsitys.
 
 ### j)
 **Perustelu:** Lasketaan tiheydet samassa yksikössä $\text{g/cm}^3$. A: $40\,\text{g} : 50\,\text{cm}^3 = 0{,}80\,\text{g/cm}^3$. B: $270\,\text{g} : 100\,\text{cm}^3 = 2{,}70\,\text{g/cm}^3$. C: $0{,}50\,\text{dm}^3 = 500\,\text{cm}^3$, joten $1000\,\text{g} : 500\,\text{cm}^3 = 2{,}0\,\text{g/cm}^3$. D: $79\,\text{g} : 10\,\text{cm}^3 = 7{,}9\,\text{g/cm}^3$. Järjestys on A, C, B, D. Suurin massa ei tarkoita suurinta tiheyttä.

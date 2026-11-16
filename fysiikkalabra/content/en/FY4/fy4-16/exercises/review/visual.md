@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b51853db61eb872f
+CONTENT-HASH: ce62540bde4a3a8a
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-16 exercise set (en). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] fy4-16-open-exercises-1280-4 (16-4 solution) — "sliding distance" is now beside "sliding friction"; clear in context, no change needed.
+
+## Checked
+- Delta: wording kinetic friction → sliding friction (exercises.json, solutions.md) and the figures.json alt texts. No "kinetic friction" remains in the files.
+- Opened contact-7, fy4-16-open-exercises-1280-2 and -4 (16-2 and 16-4 with open solutions), fy4-16-fig-9-390 (free-body diagram with sliding friction F_mu).
+- Captures are in content/en/FY4/fy4-16/review/shots/ (stamp matches exercises hash ce62540bde4a3a8a); the exercises/review/shots folder does not exist, so I regenerated them with --exercises.
+- Layout intact: formulas, tables and diagrams unclipped; F_mu label and alt text agree.
+
+## Scores
+illustrations 5 · typography 5 · Finnish n/a (English) 5 · accessibility 5

@@ -314,7 +314,7 @@ In a horizontal bend ($\alpha = 0$) we would have $v = \sqrt{\mu_0\,g\,r} = \sqr
 ## fy5-4-L3-06
 **Given:** $m = 1200\,\text{kg}$; $v = 20\,\text{m/s}$; from the graph at this speed $F = 8.0\,\text{kN}$; $g = 9.81\,\text{m/s}^2$; level road, friction is the only horizontal force
 **Find:** the least coefficient of static friction $\mu_0$ (no unit)
-**Principle:** Friction is the only horizontal force, so it is the net force towards the centre of the bend. The road is level and there is no vertical acceleration, so the support force is $N = mg$. The car stays on the road as long as the friction needed does not exceed the greatest static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
+**Principle:** Friction is the only horizontal force, so it is the net force towards the centre of the bend. The road is level and there is no vertical acceleration, so the support force is $N = mg$. The car stays on the road as long as the friction needed does not exceed the maximum static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
 **Reading the graph:** The marked point on the curve is where the gridlines $v = 20\,\text{m/s}$ and $F = 8.0\,\text{kN}$ meet (the vertical axis is in kilonewtons). The friction needed at $20\,\text{m/s}$ is read as $F = 8.0\,\text{kN}$.
 **Formula:** $F = \mu_0 N$ and $N = mg$, so $\mu_0 = \dfrac{F}{mg}$
 **Conversions:** $F = 8.0\,\text{kN} = 8.0 \cdot 1000\,\text{N} = 8000\,\text{N}$

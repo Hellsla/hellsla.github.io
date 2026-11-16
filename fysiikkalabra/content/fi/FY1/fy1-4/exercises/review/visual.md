@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e4df69026a6db390
+CONTENT-HASH: c109fb6875e61c4c
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-4 solutions 03 — the display block now sits in the middle of a sentence, right after the bold lead-in; reads correctly, but a sentence that ends before the formula would be calmer. Optional.
 
 ## Checked
-- delta of solutions.md only: Järkevyys line. Opened fi fy1-4 open-exercises-L2-1280-8 (task 4-15 solution, new ≈3,0 m and the rest of the solution laid out cleanly) and -7 (neighbour, 4-15 task); no clipping, KaTeX clean, 3,0 m consistent with 3,07 m.
+- delta review 5d reflow, round 3: only the one re-broken solution formula changed (`git diff HEAD~1`, numbers, units and words unchanged).
+- opened the 360 px capture 03 (fi) at readable resolution: two rows inside the formula card, both left-aligned, break before the equals sign and outside numbers and units, decimal separator and thin space before the unit correct, nothing clipped or scrolling; the sentence's comma sits after the block and the clause continues naturally below it.
+- not re-opened this round: the other captures of this set (unchanged since round 1).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

@@ -180,14 +180,14 @@
           {
             "text": "The total mass is not directly proportional to volume. However, the mass increases by almost the same amount, about $16\\,\\text{g}$, for every $20\\,\\text{cm}^3$, and the mass of the empty cylinder is about $42\\,\\text{g}$.",
             "correct": true,
-            "feedback": "Correct. The increases are $15.8$, $15.6$, $16.1$ and $15.5\\,\\text{g}$. Volume and mass depend on each other linearly: $m_\\text{tot} = \\rho V + m_0$. The slope of the line, $(105.1 - 42.1)\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0.79\\,\\text{g/cm}^3$, is the density of the liquid, and the intercept $m_0 \\approx 42\\,\\text{g}$ is the mass of the cylinder."
+            "feedback": "Correct. The increases are $15.8$, $15.6$, $16.1$ and $15.5\\,\\text{g}$. Volume and mass depend on each other linearly: $m_\\text{tot} = \\rho V + m_0$. The slope of the line, $$\\begin{aligned} &(105.1 - 42.1)\\,\\text{g} \\\\ &: 80\\,\\text{cm}^3 \\\\ &\\approx 0.79\\,\\text{g/cm}^3 \\end{aligned}$$, is the density of the liquid, and the intercept $m_0 \\approx 42\\,\\text{g}$ is the mass of the cylinder."
           },
           {
             "text": "The slope of the line is the mass of the empty cylinder, about $42\\,\\text{g}$.",
             "feedback": "The mass of the empty cylinder is the intercept of the line on the vertical axis, that is, the mass when $V = 0$. The slope tells you how much the mass increases per unit of volume, and it is the density of the liquid."
           },
           {
-            "text": "The density of the liquid is obtained from the last row: $105.1\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 1.3\\,\\text{g/cm}^3$.",
+            "text": "The density of the liquid is obtained from the last row: $$\\begin{aligned} &105.1\\,\\text{g} : 80\\,\\text{cm}^3 \\\\ &\\approx 1.3\\,\\text{g/cm}^3 \\end{aligned}$$.",
             "feedback": "The mass in the last row includes the cylinder. If the mass of the cylinder, $42.1\\,\\text{g}$, is subtracted, the mass of the liquid is $63.0\\,\\text{g}$ and the density is $63.0\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0.79\\,\\text{g/cm}^3$."
           }
         ]
@@ -199,7 +199,7 @@
       "type": "explain",
       "title": "Conclusion: how are mass and volume related?",
       "prompt": "Write based on the three tables: How do you know that the mass of the aluminium pieces is directly proportional to volume? How was the density of the unknown metal obtained? Which line, that of aluminium or that of the unknown metal, would be steeper in the coordinate system, and why? What must you do if a liquid is measured in a container? Why do the results not lie exactly on the same line? So what should you measure about the cubes in the opening task?",
-      "model": "For the aluminium pieces the ratio $m : V$ was about $2.7\\,\\text{g/cm}^3$ in every row, so mass is directly proportional to volume and the ratio is the density of the substance. The density of the unknown metal was obtained from the differences of two points far apart, $\\rho = \\Delta m : \\Delta V = 179.2\\,\\text{g} : 20.0\\,\\text{cm}^3 = 8.96\\,\\text{g/cm}^3$, and it matched copper. The line of copper is steeper than that of aluminium, because its density, that is its slope, is greater. The total mass of a liquid with its container is not proportional to volume, because the mass of the empty container is included. So the mass of the container must be subtracted from the total mass, or the density must be read from the slope of the line, in which case the mass of the container is the intercept. The data were example values with small measurement error. So you can work out what the cubes are made of by measuring their mass and volume and calculating the density from them.",
+      "model": "For the aluminium pieces the ratio $m : V$ was about $2.7\\,\\text{g/cm}^3$ in every row, so mass is directly proportional to volume and the ratio is the density of the substance. The density of the unknown metal was obtained from the differences of two points far apart, $$\\begin{aligned} \\rho &= \\Delta m : \\Delta V \\\\ &= 179.2\\,\\text{g} : 20.0\\,\\text{cm}^3 \\\\ &= 8.96\\,\\text{g/cm}^3 \\end{aligned}$$, and it matched copper. The line of copper is steeper than that of aluminium, because its density, that is its slope, is greater. The total mass of a liquid with its container is not proportional to volume, because the mass of the empty container is included. So the mass of the container must be subtracted from the total mass, or the density must be read from the slope of the line, in which case the mass of the container is the intercept. The data were example values with small measurement error. So you can work out what the cubes are made of by measuring their mass and volume and calculating the density from them.",
       "criteria": [
         "I justified proportionality with the ratio $m : V$, not only with the increase in mass.",
         "I calculated the density using two points far apart or as the ratio $m : V$.",
@@ -231,12 +231,12 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "A student calculates the mass of a $250\\,\\text{cm}^3$ piece of aluminium: $m = \\rho V = 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 = 675\\,000\\,\\text{kg}$. The result is far too large. Where is the error?",
+      "prompt": "A student calculates the mass of a $250\\,\\text{cm}^3$ piece of aluminium: $$\\begin{aligned} m &= \\rho V \\\\ &= 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 \\\\ &= 675\\,000\\,\\text{kg} \\end{aligned}$$. The result is far too large. Where is the error?",
       "choices": [
         {
           "text": "The volume is in cubic centimetres, although the density is in $\\text{kg/m}^3$. Correct: $250\\,\\text{cm}^3 = 2.5 \\cdot 10^{-4}\\,\\text{m}^3$ and $m = 0.675\\,\\text{kg}$.",
           "correct": true,
-          "feedback": "Correct. The units must be converted to the same system: $250\\,\\text{cm}^3 = 250 \\cdot 10^{-6}\\,\\text{m}^3 = 2.5 \\cdot 10^{-4}\\,\\text{m}^3$, and $2700\\,\\text{kg/m}^3 \\cdot 2.5 \\cdot 10^{-4}\\,\\text{m}^3 = 0.675\\,\\text{kg}$. You could have spotted the wrong result with an estimate: a quarter-litre piece of aluminium cannot have a mass of hundreds of tonnes."
+          "feedback": "Correct. The units must be converted to the same system: $$\\begin{aligned} 250\\,\\text{cm}^3 &= 250 \\cdot 10^{-6}\\,\\text{m}^3 \\\\ &= 2.5 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$, and $$\\begin{aligned} &2700\\,\\text{kg/m}^3 \\\\ &\\cdot 2.5 \\cdot 10^{-4}\\,\\text{m}^3 \\\\ &= 0.675\\,\\text{kg} \\end{aligned}$$. You could have spotted the wrong result with an estimate: a quarter-litre piece of aluminium cannot have a mass of hundreds of tonnes."
         },
         {
           "text": "The formula is wrong: mass should be calculated by dividing volume by density, $m = V : \\rho$.",
@@ -298,7 +298,7 @@
         {
           "text": "The cooking oil, because its density is lower and so the same mass takes up a greater volume: $V = m : \\rho$.",
           "correct": true,
-          "feedback": "Correct. The volume of the water is $0.50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 = 5.0 \\cdot 10^{-4}\\,\\text{m}^3$ and that of the oil is $0.50\\,\\text{kg} : 920\\,\\text{kg/m}^3 = 5.4 \\cdot 10^{-4}\\,\\text{m}^3$. The lower the density, the more volume per unit of mass."
+          "feedback": "Correct. The volume of the water is $$\\begin{aligned} &0.50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 \\\\ &= 5.0 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$ and that of the oil is $$\\begin{aligned} &0.50\\,\\text{kg} : 920\\,\\text{kg/m}^3 \\\\ &= 5.4 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$. The lower the density, the more volume per unit of mass."
         },
         {
           "text": "The water, because the density of water is greater and a dense substance takes up more space.",

@@ -501,16 +501,16 @@ When you change a unit, the quantity does not change, only the way of writing it
 4.2\,\text{km} = 4.2\cdot1000\,\text{m} = 4200\,\text{m}
 ```
 
-In the other direction $1\,\text{m} = 0.001\,\text{km}$, so $350\,\text{m} = 350\cdot0.001\,\text{km} = 0.35\,\text{km}$. Always check the result by reasoning: in a smaller unit the numerical value is greater, because more of the small units are needed. For area, the unit is a product of two lengths, so $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$.
+In the other direction $1\,\text{m} = 0.001\,\text{km}$, so $350\,\text{m} = 350\cdot0.001\,\text{km} = 0.35\,\text{km}$. Always check the result by reasoning: in a smaller unit the numerical value is greater, because more of the small units are needed. For area, the unit is a product of two lengths, so $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$.
 
-In astronomy the kilometre is too small a unit. The **astronomical unit** $\text{AU}$ is an agreed unit of length that is close to the mean distance between the Earth and the Sun: $1\,\text{AU} = 149\,597\,870.7\,\text{km} \approx 1.496\cdot10^{8}\,\text{km}$. The light-year is also a unit of length, not of time: it is the distance light travels in a vacuum in a year, about $9.46\cdot10^{12}\,\text{km}$.
+In astronomy the kilometre is too small a unit. The **astronomical unit** $\text{AU}$ is an agreed unit of length that is close to the mean distance between the Earth and the Sun: $$\begin{aligned} 1\,\text{AU} &= 149\,597\,870.7\,\text{km} \\ &\approx 1.496\cdot10^{8}\,\text{km} \end{aligned}$$. The light-year is also a unit of length, not of time: it is the distance light travels in a vacuum in a year, about $9.46\cdot10^{12}\,\text{km}$.
 
 A distance can also be given as the time light needs to travel it. Light travels in a vacuum at a constant speed $c$, so the distance it covers is speed times time, $s = ct$. The travel time is obtained by solving this formula for time:
 
 ```latex
 t = \frac{s}{c}
 ```
-where $t$ is the travel time of light, $s$ the distance travelled by light and $c = 299\,792\,458\,\text{m/s} \approx 2.998\cdot10^{5}\,\text{km/s}$ the speed of light in a vacuum. Light travels one AU in $\tfrac{1.496\cdot10^{8}\,\text{km}}{2.998\cdot10^{5}\,\text{km/s}} = 499\,\text{s}$, which is $8.32\,\text{min}$.
+where $t$ is the travel time of light, $s$ the distance travelled by light and $$\begin{aligned} c &= 299\,792\,458\,\text{m/s} \\ &\approx 2.998\cdot10^{5}\,\text{km/s} \end{aligned}$$ the speed of light in a vacuum. Light travels one AU in $\tfrac{1.496\cdot10^{8}\,\text{km}}{2.998\cdot10^{5}\,\text{km/s}} = 499\,\text{s}$, which is $8.32\,\text{min}$.
 
 <svg data-fig="conversion" data-style="house" viewBox="0 0 600 372" role="img" aria-label="Diagram, not to scale: the same distance from the Sun to the Earth can be given in three ways. At the top a ray of light travels from the Sun to the Earth. Below, the distance $s$ is $1.496\cdot10^{8}\,\text{km}$, which is one astronomical unit $1\,\text{AU}$ and which light travels in 499 seconds, that is 8.32 minutes. The sizes of the Sun and the Earth and the distance between them are not to scale." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy12-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><radialGradient id="fy12-earth" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><linearGradient id="fy12-ray" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -551,7 +551,7 @@ t = \frac{s}{c}
 
 <!-- vaihe -->
 
-**Unit conversions.** The distance is converted to kilometres by writing $1.496\cdot10^{8}\,\text{km}$ in place of $\text{AU}$: $s = 30.1\,\text{AU} = 30.1\cdot1.496\cdot10^{8}\,\text{km} = 4.503\cdot10^{9}\,\text{km}$.
+**Unit conversions.** The distance is converted to kilometres by writing $1.496\cdot10^{8}\,\text{km}$ in place of $\text{AU}$: $$\begin{aligned} &s \\ &= 30.1\,\text{AU} \\ &= 30.1\cdot1.496\cdot10^{8}\,\text{km} \\ &= 4.503\cdot10^{9}\,\text{km} \end{aligned}$$.
 The travel time comes out in seconds, because $\text{km}$ cancels. The time is asked in hours, so the seconds are converted to hours: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->

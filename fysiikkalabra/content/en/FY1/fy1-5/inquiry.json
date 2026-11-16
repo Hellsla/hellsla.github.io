@@ -82,7 +82,7 @@
         {
           "text": "$14\\,\\text{m}$.",
           "correct": true,
-          "feedback": "The values of the model support this: $s = 6.0\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot 4.0\\,\\text{s} = 14\\,\\text{m}$. The distance doubled ($4.0\\,\\text{m}$ became $8.0\\,\\text{m}$), but the position did not, because the initial position $6.0\\,\\text{m}$ stays in the sum."
+          "feedback": "The values of the model support this: $$\\begin{aligned} s &= 6.0\\,\\text{m} \\\\ &+ 2.0\\,\\text{m/s} \\cdot 4.0\\,\\text{s} \\\\ &= 14\\,\\text{m} \\end{aligned}$$. The distance doubled ($4.0\\,\\text{m}$ became $8.0\\,\\text{m}$), but the position did not, because the initial position $6.0\\,\\text{m}$ stays in the sum."
         },
         {
           "text": "$12\\,\\text{m}$, because the speed is $2.0\\,\\text{m/s}$ and so the position grows by $2.0\\,\\text{m}$.",
@@ -201,7 +201,7 @@
           {
             "text": "The distance $\\Delta s$: the quotient $\\Delta s : t$ is the same in every row, $2.0\\,\\text{m/s}$.",
             "correct": true,
-            "feedback": "Correct. For example $4.0\\,\\text{m} : 2.0\\,\\text{s} = 8.0\\,\\text{m} : 4.0\\,\\text{s} = 2.0\\,\\text{m/s}$. The quotient of the position $s : t$ changes ($10 : 2.0 = 5.0$, but $14 : 4.0 = 3.5$), so the position is not directly proportional to time."
+            "feedback": "Correct. For example $$\\begin{aligned} &4.0\\,\\text{m} : 2.0\\,\\text{s} \\\\ &= 8.0\\,\\text{m} : 4.0\\,\\text{s} \\\\ &= 2.0\\,\\text{m/s} \\end{aligned}$$. The quotient of the position $s : t$ changes ($10 : 2.0 = 5.0$, but $14 : 4.0 = 3.5$), so the position is not directly proportional to time."
           },
           {
             "text": "The position $s$, because it is on the vertical axis of the graph.",
@@ -269,7 +269,7 @@
       "prompt": "A student solves a problem: a trolley starts at $s_0 = 5.0\\,\\text{m}$ and moves at $3.0\\,\\text{m/s}$. Where is it at $t = 6.0\\,\\text{s}$? The student calculates: “At $2.0\\,\\text{s}$ the position is $5.0\\,\\text{m} + 3.0\\,\\text{m/s} \\cdot 2.0\\,\\text{s} = 11\\,\\text{m}$. The time $6.0\\,\\text{s}$ is three times as much, so the position is $3 \\cdot 11\\,\\text{m} = 33\\,\\text{m}$.” Where is the error?",
       "choices": [
         {
-          "text": "The position is not directly proportional to time, because the initial position is not zero. The correct result is $s = 5.0\\,\\text{m} + 3.0\\,\\text{m/s} \\cdot 6.0\\,\\text{s} = 23\\,\\text{m}$.",
+          "text": "The position is not directly proportional to time, because the initial position is not zero. The correct result is $$\\begin{aligned} s &= 5.0\\,\\text{m} \\\\ &+ 3.0\\,\\text{m/s} \\cdot 6.0\\,\\text{s} \\\\ &= 23\\,\\text{m} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. Only the distance $\\Delta s = vt$ triples ($6.0\\,\\text{m}$ becomes $18\\,\\text{m}$), and the initial position is added once: $5.0\\,\\text{m} + 18\\,\\text{m} = 23\\,\\text{m}$. The error could have been noticed by reasoning: the trolley cannot be at $33\\,\\text{m}$, because it starts at $5.0\\,\\text{m}$ and in $6.0\\,\\text{s}$ it travels only $18\\,\\text{m}$."
         },
