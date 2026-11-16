@@ -159,7 +159,7 @@
 **Periaate:** Nappi on tasaisessa ympyräliikkeessä, ja vaakasuora valo heittää seinälle sen korkeuden akselin tasosta. Ympyräliikkeen pisteen korkeus värähtelee sinimuotoisesti: amplitudi on ympyrän säde ja taajuus on pyörimistaajuus. Valo tulee kaukaa ja on yhdensuuntaista, joten varjo on yhtä suuri kuin napin korkeus akselin tasosta. Aika lasketaan keskikohdan ohituksesta ylöspäin, joten käytetään sinimallia.
 **Kaava:** $x = A \sin(2\pi f t)$, missä $A = r$, eli $x = r \sin(2\pi f t)$
 **Muunnokset:** $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0{,}75\,\text{Hz}$
-**Sijoitus:** $x = 15\,\text{cm} \cdot \sin(2\pi \cdot 0{,}75\,\text{Hz} \cdot 0{,}20\,\text{s}) = 15\,\text{cm} \cdot \sin 0{,}9425 = 15\,\text{cm} \cdot 0{,}8090 = 12{,}14\,\text{cm}$
+**Sijoitus:** $$\begin{aligned} x &= 15\,\text{cm} \\ &\cdot \sin(2\pi \cdot 0{,}75\,\text{Hz} \cdot 0{,}20\,\text{s}) \\ &= 15\,\text{cm} \cdot \sin 0{,}9425 \\ &= 15\,\text{cm} \cdot 0{,}8090 \\ &= 12{,}14\,\text{cm} \end{aligned}$$
 **Vastaus:** $12\,\text{cm}$ keskikohdan yläpuolella, kaksi merkitsevää numeroa kuten etäisyydessä $15\,\text{cm}$ ja tahdissa $45\,\tfrac{1}{\text{min}}$.
 **Järkevyys:** Jaksonaika on $\tfrac{1}{0{,}75\,\text{Hz}} = 1{,}33\,\text{s}$, joten varjo on ylimmillään hetkellä $\tfrac{T}{4} = 0{,}33\,\text{s}$. Hetkellä $0{,}20\,\text{s}$ se on vielä nousemassa, joten poikkeaman pitää olla vähän alle $15\,\text{cm}$, kuten $12\,\text{cm}$. Kiekko on kiertänyt $0{,}15$ kierrosta eli $54^\circ$, ja $\sin 54^\circ = 0{,}81$.
 

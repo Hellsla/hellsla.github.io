@@ -51,7 +51,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "The total moment in the direction of the load is at most the limit: $m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} = 600\\,\\text{kNm}$, solved for $m$."
+              "detail": "The total moment in the direction of the load is at most the limit: $$\\begin{aligned} &m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} \\\\ &= 600\\,\\text{kNm} \\end{aligned}$$, solved for $m$."
             },
             {
               "key": "calculation",
@@ -507,7 +507,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v' = 343\\,\\text{m/s} - 12 \\cdot 0.6\\,\\text{m/s} = 335.8\\,\\text{m/s}$ and $f' \\approx 244.8\\,\\text{Hz}$"
+              "detail": "$$\\begin{aligned} v' &= 343\\,\\text{m/s} - 12 \\cdot 0.6\\,\\text{m/s} \\\\ &= 335.8\\,\\text{m/s} \\end{aligned}$$ and $f' \\approx 244.8\\,\\text{Hz}$"
             },
             {
               "key": "units_precision",

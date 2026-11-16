@@ -145,7 +145,7 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 **Given:** before the panels the level falls from $90.3\,\text{dB}$ to $74.4\,\text{dB}$ and after the panels from $90.2\,\text{dB}$ to $50.1\,\text{dB}$ in a time $\Delta t = 0.40\,\text{s}$; the fall is steady
 **Find:** the shortening of the reverberation time as a percentage
 **Principle:** When the level falls steadily, the reverberation time is the time in which the fall is $60\,\text{dB}$. It is calculated for both measurements from the measured drop and time, and the times are compared.
-**Reading the table:** The drop before the panels is $\Delta L_1 = 90.3\,\text{dB} - 74.4\,\text{dB} = 15.9\,\text{dB}$ and after the panels $\Delta L_2 = 90.2\,\text{dB} - 50.1\,\text{dB} = 40.1\,\text{dB}$.
+**Reading the table:** The drop before the panels is $$\begin{aligned} \Delta L_1 &= 90.3\,\text{dB} - 74.4\,\text{dB} \\ &= 15.9\,\text{dB} \end{aligned}$$ and after the panels $$\begin{aligned} \Delta L_2 &= 90.2\,\text{dB} - 50.1\,\text{dB} \\ &= 40.1\,\text{dB} \end{aligned}$$.
 **Formula:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ and shortening $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Conversions:** Not needed.
 **Substitution:**

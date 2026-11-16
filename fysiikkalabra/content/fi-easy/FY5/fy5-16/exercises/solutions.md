@@ -145,7 +145,7 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin. Levyjen jälkeen se laskee $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin. Aika on $\Delta t = 0{,}40\,\text{s}$. Lasku on tasainen.
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla. Sitten verrataan aikoja.
-**Taulukon lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$. Levyjen jälkeen pudotus on $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
+**Taulukon lukeminen:** Pudotus ennen levyjä on $$\begin{aligned} \Delta L_1 &= 90{,}3\,\text{dB} - 74{,}4\,\text{dB} \\ &= 15{,}9\,\text{dB} \end{aligned}$$. Levyjen jälkeen pudotus on $$\begin{aligned} \Delta L_2 &= 90{,}2\,\text{dB} - 50{,}1\,\text{dB} \\ &= 40{,}1\,\text{dB} \end{aligned}$$.
 **Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**

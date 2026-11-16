@@ -6,7 +6,7 @@
 **Periaate:** Puomiin vaikuttaa kolme painoa. Ne ovat kuorman paino vaunun kohdalla (vaijerin kautta), puomin oma paino sen painopisteessä ja vastapainon paino. Puomi kääntyy tornin pystysuoran akselin ympäri. Pystysuorat painot ovat kuitenkin tämän akselin suuntaisia, eivätkä ne kierrä puomia sen ympäri. Painot pyrkivät kallistamaan puomia sen pystytasossa. Siksi momentit lasketaan vaakasuoran momenttiakselin A suhteen. Akseli A kulkee tornin kohdalla, ja se on kohtisuorassa tätä tasoa vastaan. Voiman varsi on matka akselilta A voiman vaikutussuoralle. Painot ovat pystysuoria ja akseli on vaakasuora. Siksi varsi on painon vaakasuora etäisyys tornin akselista. Kuorma ja puomin paino kiertävät puomia kuorman puolelle. Vastapaino kiertää puomia vastakkaiseen suuntaan. Tasapainossa momenttien summa on nolla.
 **Kaava:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. Putoamiskiihtyvyys supistuu, joten $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
 **Muunnokset:** $1\,\text{t} = 1000\,\text{kg}$, joten $m_\text{p} = 4000\,\text{kg}$ ja $m_\text{v} = 9000\,\text{kg}$.
-**Sijoitus:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &r \\ &= \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} \\ &= \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} \\ &= 21\,\text{m} \end{aligned}$$
 **Vastaus:** $r \approx 21\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten etäisyyksissä ja massoissa.
 **Järkevyys:** Vastapainon momentti on noin kaksinkertainen puomin momenttiin verrattuna. Kuorman pitää siis korvata erotus. Kevyt kuorma joutuu kauas, ja kohta on puomin $40\,\text{m}$:n pituuden sisällä.
 
@@ -16,18 +16,18 @@
 **Periaate:** Kun kuorma on kärjessä, kokonaismomentti osoittaa kuorman puolelle. Suurimmalla sallitulla kuormalla se on yhtä suuri kuin raja. Momentit lasketaan momenttiakselin A suhteen kuten a-kohdassa. Positiivinen kiertosuunta on kuorman puolelle.
 **Kaava:** $m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} = M_\text{max}$, josta $m = \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}}$
 **Muunnokset:** $M_\text{max} = 600\,\text{kNm} = 600\,000\,\text{Nm}$
-**Sijoitus:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ ja $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. Kuorman momentti saa siis olla $600\,000\,\text{Nm} + 882\,900\,\text{Nm} - 470\,880\,\text{Nm} = 1\,012\,020\,\text{Nm}$. Siitä saadaan $m = \dfrac{1\,012\,020\,\text{Nm}}{9{,}81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
+**Sijoitus:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ ja $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. Kuorman momentti saa siis olla $$\begin{aligned} &600\,000\,\text{Nm} + 882\,900\,\text{Nm} \\ &- 470\,880\,\text{Nm} \\ &= 1\,012\,020\,\text{Nm} \end{aligned}$$. Siitä saadaan $m = \dfrac{1\,012\,020\,\text{Nm}}{9{,}81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
 **Vastaus:** $m \approx 2{,}6\,\text{t}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nosturin tiedoissa.
-**Järkevyys:** Ilman kuormaa kokonaismomentti on $882{,}9\,\text{kNm} - 470{,}9\,\text{kNm} = 412\,\text{kNm}$ vastapainon suuntaan. Raja ei siis ylity tyhjälläkään nosturilla. Kärjen kuorma on pienempi kuin kuorma, jonka nosturi kantaa lähempänä tornia. Näin on myös nosturien kuormakaavioissa.
+**Järkevyys:** Ilman kuormaa kokonaismomentti on $$\begin{aligned} &882{,}9\,\text{kNm} - 470{,}9\,\text{kNm} \\ &= 412\,\text{kNm} \end{aligned}$$ vastapainon suuntaan. Raja ei siis ylity tyhjälläkään nosturilla. Kärjen kuorma on pienempi kuin kuorma, jonka nosturi kantaa lähempänä tornia. Näin on myös nosturien kuormakaavioissa.
 
 ### c)
 **Kysytty:** voiko vastapainoa lisätä pari tonnia, jotta kärjestä voisi nostaa raskaampia kuormia
 **Periaate:** Vastapainon momentti kiertää puomia vastakkaiseen suuntaan kuin kuorma. Raja koskee kokonaismomenttia kumpaankin suuntaan. Siksi pitää tarkistaa sekä täysin kuormattu että tyhjä nosturi.
 **Mallivastaus:** *Kuormattu nosturi.* Suurempi vastapaino pienentää kuorman puolelle jäävää kokonaismomenttia. Kärjessä voisi siis nostaa raskaamman kuorman. Mestari on tässä oikeassa.
 
-*Tyhjä nosturi.* Ilman kuormaa kokonaismomentti osoittaa vastapainon suuntaan. Nyt se on $412\,\text{kNm}$. Kahden tonnin lisäys kasvattaa sitä $2000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} = 196{,}2\,\text{kNm}$. Kokonaismomentti on silloin $608\,\text{kNm}$. Se ylittää rajan $600\,\text{kNm}$. Torni kuormittuu liikaa vastapainon puolella aina, kun koukussa ei ole kuormaa.
+*Tyhjä nosturi.* Ilman kuormaa kokonaismomentti osoittaa vastapainon suuntaan. Nyt se on $412\,\text{kNm}$. Kahden tonnin lisäys kasvattaa sitä $$\begin{aligned} &2000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} \\ &= 196{,}2\,\text{kNm} \end{aligned}$$. Kokonaismomentti on silloin $608\,\text{kNm}$. Se ylittää rajan $600\,\text{kNm}$. Torni kuormittuu liikaa vastapainon puolella aina, kun koukussa ei ole kuormaa.
 
-*Kuinka paljon voisi lisätä.* Tyhjällä nosturilla rajaan on varaa $600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$. Vastapainoa voi siis lisätä enintään $188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \approx 1{,}9\,\text{t}$. Silloin kärjen suurin kuorma olisi $1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text{t}$.
+*Kuinka paljon voisi lisätä.* Tyhjällä nosturilla rajaan on varaa $600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$. Vastapainoa voi siis lisätä enintään $$\begin{aligned} &188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \\ &\approx 1{,}9\,\text{t} \end{aligned}$$. Silloin kärjen suurin kuorma olisi $1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text{t}$.
 
 *Johtopäätös.* Ehdotus ei käy sellaisenaan. Tehtävän mallissa vastapaino mitoitetaan niin, että raja ei ylity tyhjällä eikä täysin kuormatulla nosturilla. Kahden tonnin sijaan vastapainoa voisi lisätä enintään noin $1{,}9\,\text{t}$. Nostokykyä ei voi kasvattaa siitä enempää ilman tukevampaa tornia. Oikeassa nosturissa yksi momenttiehto ei riitä. Vastapainoa saa muuttaa vain valmistajan ohjeiden mukaan, koska turvallisuus riippuu myös esimerkiksi tuulesta, rakenteiden lujuudesta ja perustuksesta.
 
@@ -88,7 +88,7 @@ Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä 
 **Järkevyys:** Normaalikiihtyvyys $a_\text{n} = (1{,}466\,\text{m/s})^2 : 21\,\text{m} \approx 0{,}10\,\text{m/s}^2$ on vain noin prosentti putoamiskiihtyvyydestä. Kulma on siis pieni, ja jännitysvoima on käytännössä yhtä suuri kuin paino. Tasaisella kääntämisellä ei ole nostotyössä juuri merkitystä. Äkillinen liikkeelle lähtö tai pysähdys sen sijaan saa kuorman heilumaan. Vaijeri ei heti pysty antamaan kuormalle samaa kiihtyvyyttä kuin vaunulle.
 
 ### Hyväksytään myös
-- a- ja b-kohdan momentit voi laskea massan ja etäisyyden tuloina ilman putoamiskiihtyvyyttä, kun $g$ supistuu. Silloin b-kohdassa raja pitää muuttaa samaan muotoon: $600\,000\,\text{Nm} : 9{,}81\,\text{m/s}^2 \approx 61\,160\,\text{kg}\cdot\text{m}$.
+- a- ja b-kohdan momentit voi laskea massan ja etäisyyden tuloina ilman putoamiskiihtyvyyttä, kun $g$ supistuu. Silloin b-kohdassa raja pitää muuttaa samaan muotoon: $$\begin{aligned} &600\,000\,\text{Nm} : 9{,}81\,\text{m/s}^2 \\ &\approx 61\,160\,\text{kg}\cdot\text{m} \end{aligned}$$.
 - b-kohdassa vastaukset $2{,}6\,\text{t}$ ja $2580\,\text{kg}$ hyväksytään.
 - e-kohdassa kulman saa myös piirtämällä voimat mittakaavaan, kun normaalikiihtyvyys on laskettu oikein. Vastaukseksi hyväksytään $0{,}6^\circ$.
 
@@ -105,7 +105,7 @@ Pystysuunnassa kuorma ei kiihdy. Jännitysvoiman pystykomponentti on siis yhtä 
 
 ### a)
 **Kysytty:** kuvaaja, jonka pisteisiin ympyräratamallin mukaan sopii origon kautta kulkeva suora
-**Kuvaaja:** Mallissa kuuta pitää ympyräradalla Jupiterin gravitaatio. Se on kuuhun vaikuttava ainoa merkittävä voima. Gravitaatio on kuun ympyräliikkeen keskeisvoima: $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, joten $v^2 = \gamma M \cdot \dfrac{1}{r}$. Ratanopeus lasketaan kiertoajasta: $v = \dfrac{2\pi r}{T}$. Säde pitää laskea metreinä ja kiertoaika sekunteina ($1\,\text{d} = 86\,400\,\text{s}$). Esimerkiksi Iolle $v = \dfrac{2\pi \cdot 421{,}8 \cdot 10^{6}\,\text{m}}{1{,}769 \cdot 86\,400\,\text{s}} = 17\,340\,\text{m/s}$. Siitä saadaan $v^2 = 3{,}01 \cdot 10^{8}\,\text{m}^2/\text{s}^2$ ja $\tfrac{1}{r} = 2{,}37 \cdot 10^{-9}\,\tfrac{1}{\text{m}}$.
+**Kuvaaja:** Mallissa kuuta pitää ympyräradalla Jupiterin gravitaatio. Se on kuuhun vaikuttava ainoa merkittävä voima. Gravitaatio on kuun ympyräliikkeen keskeisvoima: $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, joten $v^2 = \gamma M \cdot \dfrac{1}{r}$. Ratanopeus lasketaan kiertoajasta: $v = \dfrac{2\pi r}{T}$. Säde pitää laskea metreinä ja kiertoaika sekunteina ($1\,\text{d} = 86\,400\,\text{s}$). Esimerkiksi Iolle $$\begin{aligned} v &= \dfrac{2\pi \cdot 421{,}8 \cdot 10^{6}\,\text{m}}{1{,}769 \cdot 86\,400\,\text{s}} \\ &= 17\,340\,\text{m/s} \end{aligned}$$. Siitä saadaan $v^2 = 3{,}01 \cdot 10^{8}\,\text{m}^2/\text{s}^2$ ja $\tfrac{1}{r} = 2{,}37 \cdot 10^{-9}\,\tfrac{1}{\text{m}}$.
 
 | kuu | $v\ (\text{km/s})$ | $\tfrac{1}{r}\ (10^{-9}\,\tfrac{1}{\text{m}})$ | $v^2\ (10^{8}\,\tfrac{\text{m}^2}{\text{s}^2})$ |
 |---|---|---|---|
@@ -320,7 +320,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 
 *Poikkeaman syy.* Mallissa $T = 2\pi\sqrt{\tfrac{m}{k}}$ värähtelee vain punnus, ja jousi on massaton. Jousen oma massa $45\,\text{g}$ liikkuu kuitenkin mukana. Sen alapää liikkuu punnuksen mukana ja yläpää on paikallaan. Värähtelevä massa on siksi punnuksen massaa suurempi. Se siirtää koko suoraa ylöspäin mutta ei muuta suoran kulmakerrointa. Leikkauskohdasta saadaan lisämassa $0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/\text{kg} \approx 0{,}014\,\text{kg}$. Se on noin kolmasosa jousen massasta. Tulos on järkevä, koska jousen alaosa liikkuu lähes yhtä paljon kuin punnus ja yläosa tuskin lainkaan.
 
-*Vertailu.* Lepomittauksesta saadaan $k = \dfrac{mg}{x} = \dfrac{0{,}200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}098\,\text{m}} \approx 20{,}0\,\text{N/m}$. Se eroaa b-kohdan tuloksesta $19{,}9\,\text{N/m}$ alle prosentin. Kaksi toisistaan riippumatonta menetelmää tukevat siis toisiaan.
+*Vertailu.* Lepomittauksesta saadaan $$\begin{aligned} k &= \dfrac{mg}{x} \\ &= \dfrac{0{,}200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}098\,\text{m}} \\ &\approx 20{,}0\,\text{N/m} \end{aligned}$$. Se eroaa b-kohdan tuloksesta $19{,}9\,\text{N/m}$ alle prosentin. Kaksi toisistaan riippumatonta menetelmää tukevat siis toisiaan.
 
 *Johtopäätös.* Ristiriitaa ei ole. Jousivakio on luotettava, koska se saadaan kulmakertoimesta, johon jousen massa ei vaikuta. Jos suora olisi pakotettu origon kautta, jousivakioksi olisi saatu liian pieni arvo, noin $18{,}9\,\text{N/m}$.
 

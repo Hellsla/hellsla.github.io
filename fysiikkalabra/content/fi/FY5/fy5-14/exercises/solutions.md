@@ -183,7 +183,7 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 **Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
 **Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+**Sijoitus:** Nimittäjä on $$\begin{aligned} 2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\ &+ 2470\,\text{Hz} \\ &= 8\,002\,470\,\text{Hz} \end{aligned}$$.
 $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0{,}4753\,\text{m/s} \end{aligned}$
 **Vastaus:** $0{,}475\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuden muutoksessa.
 **Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus, joten $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, mikä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.

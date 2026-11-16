@@ -186,7 +186,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text
 ## fy5-15-L2-05
 **Given:** from the table the distances $1.0\,\text{m}$, $2.0\,\text{m}$, $4.0\,\text{m}$, $8.0\,\text{m}$ and $16\,\text{m}$ and the levels $84.2\,\text{dB}$, $78.1\,\text{dB}$, $72.3\,\text{dB}$, $66.2\,\text{dB}$ and $60.1\,\text{dB}$
 **Find:** the average drop in level $\Delta L_1$ per doubling of the distance, in decibels
-**Principle:** Each measuring point is twice the previous one, so the distances are $1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \to 16\,\text{m}$, so there are $n = 4$ doublings. The average drop is obtained by dividing the total change in level by $n$.
+**Principle:** Each measuring point is twice the previous one, so the distances are $$\begin{aligned} &1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \\ &\to 16\,\text{m} \end{aligned}$$, so there are $n = 4$ doublings. The average drop is obtained by dividing the total change in level by $n$.
 **Formula:** $\Delta L_1 = \dfrac{L(1.0\,\text{m}) - L(16\,\text{m})}{n}$
 **Conversions:** Not needed: the levels are in decibels, and $n$ is a plain number.
 **Substitution:** there are $n = 4$ doublings, so
@@ -319,4 +319,4 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 **Conversions:** $\dfrac{L}{10\,\text{dB}} = 8.00$. The result comes out in watts, and $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8.00} = 1.0 \cdot 10^{-4}\,\text{W/m}^2$, and $P = 4\pi \cdot (2.0\,\text{m})^2 \cdot 1.0 \cdot 10^{-4}\,\text{W/m}^2 = 5.03 \cdot 10^{-3}\,\text{W} = 5.03\,\text{mW}$
 **Answer:** $5.0\,\text{mW}$, two significant figures like the distance $2.0\,\text{m}$ read from the figure.
-**Reasonableness:** The other point in the figure gives the same result: $r = 4.0\,\text{m}$ and $L = 74.0\,\text{dB}$ give $I = 2.51 \cdot 10^{-5}\,\text{W/m}^2$ and $P = 4\pi \cdot (4.0\,\text{m})^2 \cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2 = 5.05\,\text{mW}$, which differs by less than $1\,\%$ from the first (reading accuracy). The power is small, as for a small loudspeaker: the electric power is many times greater because only a small part of it becomes sound.
+**Reasonableness:** The other point in the figure gives the same result: $r = 4.0\,\text{m}$ and $L = 74.0\,\text{dB}$ give $I = 2.51 \cdot 10^{-5}\,\text{W/m}^2$ and $$\begin{aligned} P &= 4\pi \cdot (4.0\,\text{m})^2 \cdot 2.51 \\ &\cdot 10^{-5}\,\text{W/m}^2 \\ &= 5.05\,\text{mW} \end{aligned}$$, which differs by less than $1\,\%$ from the first (reading accuracy). The power is small, as for a small loudspeaker: the electric power is many times greater because only a small part of it becomes sound.

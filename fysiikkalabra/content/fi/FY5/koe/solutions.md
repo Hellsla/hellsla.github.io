@@ -72,7 +72,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $G = 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 392{,}4\,\text{N}$ ja $F_\text{h} = 60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 588{,}6\,\text{N}$. Kun voimat ovat newtoneina ja varret metreinä, $F_\text{A} = \dfrac{392{,}4 \cdot 0{,}8 + 588{,}6 \cdot 2{,}8}{1{,}2}\,\text{N} \approx 1635\,\text{N}$ ja $N = 1635\,\text{N} + 392{,}4\,\text{N} + 588{,}6\,\text{N} \approx 2616\,\text{N}$.
 **Vastaus:** Pultti vetää lautaa alaspäin noin $1{,}6\,\text{kN}$:n voimalla, ja tuki työntää sitä ylöspäin noin $2{,}6\,\text{kN}$:n voimalla. Kaksi merkitsevää numeroa, kuten massoissa ja pituuksissa.
-**Järkevyys:** Momenttiehto takapään A suhteen antaa saman tukivoiman: $N = \dfrac{392{,}4 \cdot 2{,}0 + 588{,}6 \cdot 4{,}0}{1{,}2}\,\text{N} \approx 2616\,\text{N}$. Tukivoima on yli kaksi ja puoli kertaa laudan ja hyppääjän yhteinen paino $981\,\text{N}$, koska laudan lyhyt takaosa toimii vipuna, jota pultti pitää alhaalla.
+**Järkevyys:** Momenttiehto takapään A suhteen antaa saman tukivoiman: $$\begin{aligned} &N \\ &= \dfrac{392{,}4 \cdot 2{,}0 + 588{,}6 \cdot 4{,}0}{1{,}2}\,\text{N} \\ &\approx 2616\,\text{N} \end{aligned}$$. Tukivoima on yli kaksi ja puoli kertaa laudan ja hyppääjän yhteinen paino $981\,\text{N}$, koska laudan lyhyt takaosa toimii vipuna, jota pultti pitää alhaalla.
 
 ### c)
 **Annettu:** $G = 392{,}4\,\text{N}$, $F_\text{h} = 588{,}6\,\text{N}$, laudan painopiste $r_G = 0{,}8\,\text{m}$ tuen B kärjen puolella, tuki $1{,}2\,\text{m}$:n päässä takapäästä
@@ -113,7 +113,7 @@
 **Periaate:** Gravitaatiolaki. Etäisyys mitataan Maan keskipisteestä, joten radan säde on Maan säde ja korkeus yhteensä. Maanpinnalla satelliitin paino on $mg$.
 **Kaava:** $F = \gamma\dfrac{Mm}{r^2}$, missä $r = R + h$, ja osuus on $\dfrac{F}{mg}$.
 **Muunnokset:** $r = 6371\,\text{km} + 520\,\text{km} = 6891\,\text{km} = 6{,}891 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** Kun suureet ovat SI-yksiköissä, $F = 6{,}674 \cdot 10^{-11} \cdot \dfrac{5{,}97 \cdot 10^{24} \cdot 4{,}0}{(6{,}891 \cdot 10^{6})^2}\,\text{N} \approx 33{,}6\,\text{N}$ ja $\dfrac{F}{mg} = \dfrac{33{,}6\,\text{N}}{4{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 0{,}86$
+**Sijoitus:** Kun suureet ovat SI-yksiköissä, $$\begin{aligned} F &= 6{,}674 \cdot 10^{-11} \\ &\cdot \dfrac{5{,}97 \cdot 10^{24} \cdot 4{,}0}{(6{,}891 \cdot 10^{6})^2}\,\text{N} \\ &\approx 33{,}6\,\text{N} \end{aligned}$$ ja $\dfrac{F}{mg} = \dfrac{33{,}6\,\text{N}}{4{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 0{,}86$
 **Vastaus:** Satelliittiin vaikuttaa radalla noin $34\,\text{N}$:n gravitaatiovoima, noin $86\,\%$ sen painosta maanpinnalla.
 **Järkevyys:** Voima on kääntäen verrannollinen etäisyyden neliöön: $\left(\tfrac{6371\,\text{km}}{6891\,\text{km}}\right)^2 \approx 0{,}855$, sama osuus: pyöristys $85\,\%$ tai $86\,\%$ on yhtä hyvä. Radan korkeus on vain noin $8\,\%$ Maan säteestä, joten gravitaatio heikkenee vain vähän.
 
@@ -275,7 +275,7 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 
 ### d)
 **Kysytty:** miksi suora ei kulje origon kautta, pallon säde kuvaajasta ja vaikutus $g$:n arvoon
-**Periaate:** Heilurin pituus on $L = l + r$, missä $r$ on pallon säde, koska pituus mitattiin pallon yläpintaan eikä keskipisteeseen. Silloin $T^2 = \tfrac{4\pi^2}{g}\,(l + r) = \tfrac{4\pi^2}{g}\,l + \tfrac{4\pi^2}{g}\,r$.
+**Periaate:** Heilurin pituus on $L = l + r$, missä $r$ on pallon säde, koska pituus mitattiin pallon yläpintaan eikä keskipisteeseen. Silloin $$\begin{aligned} T^2 &= \tfrac{4\pi^2}{g}\,(l + r) \\ &= \tfrac{4\pi^2}{g}\,l + \tfrac{4\pi^2}{g}\,r \end{aligned}$$.
 **Mallivastaus:** Jokainen mitattu pituus on säteen verran todellista heilurin pituutta lyhyempi. Siksi suora on siirtynyt ylöspäin: kun $l = 0$, heilurin pituus olisi vielä $r$, ja $T^2$-akselin leikkauskohta on $\tfrac{4\pi^2}{g}\,r$. Kuvaajan mukaan leikkauskohta on noin $0{,}09\,\text{s}^2$, joten säde on noin $0{,}09\,\text{s}^2 : 4{,}0\,\tfrac{\text{s}^2}{\text{m}} \approx 0{,}02\,\text{m}$ eli noin $2\,\text{cm}$. Saman tuloksen saa, kun suoraa jatketaan $l$-akselille: se leikkaa akselin noin kohdassa $l = -2\,\text{cm}$. Vakiosuuruinen virhe pituudessa siirtää suoraa mutta ei muuta sen kulmakerrointa, joten c-kohdan tulos $g$:lle ei muutu. Kulmakertoimesta määrittäminen poistaa siis tämän systemaattisen virheen, kun taas yhdestä mittauksesta pituudella $l$ laskettu $g$ olisi liian pieni.
 
 ### Yleisiä virheitä

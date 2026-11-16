@@ -4,7 +4,7 @@
 **Principle:** All bodies attract each other according to Newton's law of gravitation. When the students are treated as point masses, the distance is measured between their centres of mass, and the same force acts on each of them.
 **Formula:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Conversions:** The masses and the distance are in SI units. Finally $1\,\mu\text{N} = 10^{-6}\,\text{N}$.
-**Substitution:** $F = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0.80\,\text{m})^2} = 4.015 \cdot 10^{-7}\,\text{N} = 0.4015\,\mu\text{N}$
+**Substitution:** $$\begin{aligned} F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot \dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0.80\,\text{m})^2} \\ &= 4.015 \cdot 10^{-7}\,\text{N} \\ &= 0.4015\,\mu\text{N} \end{aligned}$$
 **Answer:** $0.40\,\mu\text{N}$, two significant figures as in the masses and in the distance $0.80\,\text{m}$.
 **Reasonableness:** The force corresponds to the weight of a particle of mass about $0.04\,\text{mg}$, so it is not noticed in everyday life. The order of magnitude is the same as in the example of the chapter, where the force between two people one metre apart was about $0.28\,\mu\text{N}$; here the distance is smaller, so the force is slightly greater.
 
@@ -14,7 +14,7 @@
 **Principle:** The ships attract each other according to Newton's law of gravitation. In the task the ships are treated as point masses. In reality the ships are as long as the distance between them, so the result is only an estimate of the order of magnitude.
 **Formula:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Conversions:** None needed: the masses are in kilograms and the distance in metres.
-**Substitution:** $F = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{5.0 \cdot 10^{7}\,\text{kg} \cdot 3.0 \cdot 10^{7}\,\text{kg}}{(200\,\text{m})^2} = 2.503\,\text{N}$
+**Substitution:** $$\begin{aligned} F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot \dfrac{5.0 \cdot 10^{7}\,\text{kg} \cdot 3.0 \cdot 10^{7}\,\text{kg}}{(200\,\text{m})^2} \\ &= 2.503\,\text{N} \end{aligned}$$
 **Answer:** $2.5\,\text{N}$, two significant figures as in the masses.
 **Reasonableness:** With rounded numbers $7 \cdot 10^{-11} \cdot \tfrac{1.5 \cdot 10^{15}}{4 \cdot 10^{4}}\,\text{N} \approx 2.6\,\text{N}$. Even between enormous ships the pull is only of the order of the weight of a body of $250\,\text{g}$, and compared with the forces of ropes and water it is negligible.
 
@@ -24,7 +24,7 @@
 **Principle:** The planet is approximately spherically symmetric, so it attracts as if its mass were at its centre. On the surface the distance from the centre is the radius of the planet.
 **Formula:** $g = \gamma \dfrac{M}{R^2}$
 **Conversions:** None needed: the mass is in kilograms and the radius in metres, so the result is in $\text{m/s}^2$.
-**Substitution:** $g = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{3.30 \cdot 10^{23}\,\text{kg}}{(2.44 \cdot 10^{6}\,\text{m})^2} = 3.699\,\text{m/s}^2$
+**Substitution:** $$\begin{aligned} g &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot \dfrac{3.30 \cdot 10^{23}\,\text{kg}}{(2.44 \cdot 10^{6}\,\text{m})^2} \\ &= 3.699\,\text{m/s}^2 \end{aligned}$$
 **Answer:** $3.70\,\text{m/s}^2$, three significant figures as in the mass and the radius.
 **Reasonableness:** Mercury is smaller and lighter than the Earth, so the field must be weaker than $9.81\,\text{m/s}^2$. The result is almost the same as on Mars ($3.71\,\text{m/s}^2$), which is larger than Mercury but also more massive.
 
@@ -34,7 +34,7 @@
 **Principle:** Mars is approximately spherically symmetric, so the force between it and the rover is obtained from the law of gravitation when the distance is the radius of Mars.
 **Formula:** $F = \gamma \dfrac{M m}{R^2}$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kN} = 1000\,\text{N}$.
-**Substitution:** $F = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{6.42 \cdot 10^{23}\,\text{kg} \cdot 1025\,\text{kg}}{(3.40 \cdot 10^{6}\,\text{m})^2} = 3799\,\text{N} = 3.799\,\text{kN}$
+**Substitution:** $$\begin{aligned} F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot \dfrac{6.42 \cdot 10^{23}\,\text{kg} \cdot 1025\,\text{kg}}{(3.40 \cdot 10^{6}\,\text{m})^2} \\ &= 3799\,\text{N} \\ &= 3.799\,\text{kN} \end{aligned}$$
 **Answer:** $3.80\,\text{kN}$, three significant figures as in the mass and radius of Mars.
 **Reasonableness:** Another route: the weight of the rover on Mars is $mg = 1025\,\text{kg} \cdot 3.71\,\text{m/s}^2 \approx 3800\,\text{N}$, which is only about two fifths of its weight on the Earth ($10.1\,\text{kN}$).
 
@@ -64,7 +64,7 @@
 **Principle:** The gravitational field strength on the surface of a spherically symmetric planet is $g = \gamma \tfrac{M}{R^2}$, so the mass of the planet can be solved from the measured $g$ and the radius. The mass is then compared with the mass of the Earth by dividing.
 **Formula:** $g = \gamma \dfrac{M}{R^2}$, so $M = \dfrac{g R^2}{\gamma}$ and the ratio is $\dfrac{M}{M_\text{E}} = \dfrac{g R^2}{\gamma M_\text{E}}$
 **Conversions:** $R = 6052\,\text{km} = 6052 \cdot 10^{3}\,\text{m} = 6.052 \cdot 10^{6}\,\text{m}$
-**Substitution:** $R^2 = (6.052 \cdot 10^{6}\,\text{m})^2 = 3.6627 \cdot 10^{13}\,\text{m}^2$, $g R^2 = 8.87\,\text{m/s}^2 \cdot 3.6627 \cdot 10^{13}\,\text{m}^2 = 3.2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2$ and $M = \dfrac{g R^2}{\gamma} = \dfrac{3.2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 4.868 \cdot 10^{24}\,\text{kg}$ and $\dfrac{M}{M_\text{E}} = \dfrac{4.868 \cdot 10^{24}\,\text{kg}}{5.97 \cdot 10^{24}\,\text{kg}} = 0.8154$
+**Substitution:** $R^2 = (6.052 \cdot 10^{6}\,\text{m})^2 = 3.6627 \cdot 10^{13}\,\text{m}^2$, $$\begin{aligned} g R^2 &= 8.87\,\text{m/s}^2 \cdot 3.6627 \cdot 10^{13}\,\text{m}^2 \\ &= 3.2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$ and $M = \dfrac{g R^2}{\gamma} = \dfrac{3.2488 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 4.868 \cdot 10^{24}\,\text{kg}$ and $\dfrac{M}{M_\text{E}} = \dfrac{4.868 \cdot 10^{24}\,\text{kg}}{5.97 \cdot 10^{24}\,\text{kg}} = 0.8154$
 **Answer:** $0.815$, three significant figures as in the field strength $8.87\,\text{m/s}^2$.
 **Reasonableness:** Venus is almost the size of the Earth and its field is a little weaker than the Earth's, so its mass must be a little smaller than the Earth's. According to NASA's table the mass of Venus is $4.87 \cdot 10^{24}\,\text{kg}$, which agrees with the result.
 
@@ -74,7 +74,7 @@
 **Principle:** The Earth attracts the probe as if its mass were at its centre, so the law of gravitation first gives the distance $r$ from the Earth's centre. The height above the surface is this distance minus the radius of the Earth.
 **Formula:** $F = \gamma \dfrac{M m}{r^2}$, so $r = \sqrt{\dfrac{\gamma M m}{F}}$ and $h = r - R = \sqrt{\dfrac{\gamma M m}{F}} - R$
 **Conversions:** $F = 1.00\,\text{kN} = 1000\,\text{N}$; $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km} = 1000\,\text{m}$
-**Substitution:** The numerator is $\gamma M m = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} \cdot 1200\,\text{kg} = 4.7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2$, so $r = \sqrt{\dfrac{4.7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2}{1000\,\text{N}}} = 2.1866 \cdot 10^{7}\,\text{m}$ and $h = 2.1866 \cdot 10^{7}\,\text{m} - 6.378 \cdot 10^{6}\,\text{m} = 1.5488 \cdot 10^{7}\,\text{m} = 15\,488\,\text{km}$
+**Substitution:** The numerator is $$\begin{aligned} \gamma M m &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \\ &\cdot 10^{24}\,\text{kg} \cdot 1200\,\text{kg} \\ &= 4.7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2 \end{aligned}$$, so $r = \sqrt{\dfrac{4.7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2}{1000\,\text{N}}} = 2.1866 \cdot 10^{7}\,\text{m}$ and $h = 2.1866 \cdot 10^{7}\,\text{m} - 6.378 \cdot 10^{6}\,\text{m} = 1.5488 \cdot 10^{7}\,\text{m} = 15\,488\,\text{km}$
 **Answer:** $15\,500\,\text{km}$, three significant figures as in the force $1.00\,\text{kN}$.
 **Reasonableness:** On the Earth's surface the weight of the probe is $1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 11.8\,\text{kN}$. The force $1.00\,\text{kN}$ is about $\tfrac{1}{11.8}$ of that, so the distance from the centre must be $\sqrt{11.8} \approx 3.4$ Earth radii: $3.4 \cdot 6378\,\text{km} \approx 21\,900\,\text{km}$, which agrees with the value of $r$.
 
@@ -114,7 +114,7 @@
 **Principle:** Each force is obtained from Newton's law of gravitation when the distances are measured between the centres. In the ratio $\gamma$ and the mass of the Earth cancel, so only the masses and distances are needed.
 **Formula:** $\dfrac{F_\text{S}}{F_\text{M}} = \dfrac{\gamma \tfrac{M_\text{S} m}{r_\text{S}^2}}{\gamma \tfrac{M_\text{M} m}{r_\text{M}^2}} = \dfrac{M_\text{S}}{M_\text{M}} \cdot \left(\dfrac{r_\text{M}}{r_\text{S}}\right)^2$
 **Conversions:** None needed: the distances are both in kilometres, and the units cancel.
-**Substitution:** $\dfrac{F_\text{S}}{F_\text{M}} = \dfrac{1.99 \cdot 10^{30}\,\text{kg}}{7.35 \cdot 10^{22}\,\text{kg}} \cdot \left(\dfrac{3.84 \cdot 10^{5}\,\text{km}}{1.50 \cdot 10^{8}\,\text{km}}\right)^2 = 2.707 \cdot 10^{7} \cdot 6.554 \cdot 10^{-6} = 177.4$
+**Substitution:** $$\begin{aligned} \dfrac{F_\text{S}}{F_\text{M}} &= \dfrac{1.99 \cdot 10^{30}\,\text{kg}}{7.35 \cdot 10^{22}\,\text{kg}} \\ &\cdot \left(\dfrac{3.84 \cdot 10^{5}\,\text{km}}{1.50 \cdot 10^{8}\,\text{km}}\right)^2 \\ &= 2.707 \cdot 10^{7} \cdot 6.554 \cdot 10^{-6} \\ &= 177.4 \end{aligned}$$
 **Answer:** The Sun attracts the Earth about $177$ times as strongly as the Moon does; three significant figures as in the data.
 **Reasonableness:** The mass of the Sun is about $27$ million times as great, but it is about $390$ times farther away, which reduces the force by a factor $390^2 \approx 150\,000$: $\tfrac{2.7 \cdot 10^{7}}{1.5 \cdot 10^{5}} \approx 180$. The Sun holds the Earth in its orbit, although the Moon is much closer.
 

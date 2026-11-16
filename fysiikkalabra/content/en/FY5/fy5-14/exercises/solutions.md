@@ -183,7 +183,7 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30.0)\
 **Processing the data:** The greatest change in the table is $\Delta f = 2.47\,\text{kHz}$ at the moment $t = 0.20\,\text{s}$.
 **Formula:** $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$, so $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{b}}{v - v_\text{b}}$ and $v_\text{b} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Conversions:** $\Delta f = 2.47\,\text{kHz} = 2470\,\text{Hz}$ and $f_0 = 4.00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Substitution:** The denominator is $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+**Substitution:** The denominator is $$\begin{aligned} 2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\ &+ 2470\,\text{Hz} \\ &= 8\,002\,470\,\text{Hz} \end{aligned}$$.
 $\begin{aligned} v_\text{b} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0.4753\,\text{m/s} \end{aligned}$
 **Answer:** $0.475\,\text{m/s}$, three significant figures like the change in frequency.
 **Reasonableness:** The speed is much smaller than the speed of sound, so $v_\text{b} \approx \tfrac{v \, \Delta f}{2 f_0} = 0.4755\,\text{m/s}$, which differs from the result by less than $0.1\,\%$. The result for one shift would be $\tfrac{v \, \Delta f}{f_0} \approx 0.95\,\text{m/s}$, double. A peak speed of less than a metre per second is plausible in a blood vessel.

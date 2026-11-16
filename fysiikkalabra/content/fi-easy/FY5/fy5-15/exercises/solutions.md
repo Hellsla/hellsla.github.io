@@ -186,7 +186,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1{,}0\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\
 ## fy5-15-L2-05
 **Annettu:** taulukosta etäisyydet $1{,}0\,\text{m}$, $2{,}0\,\text{m}$, $4{,}0\,\text{m}$, $8{,}0\,\text{m}$ ja $16\,\text{m}$ sekä tasot $84{,}2\,\text{dB}$, $78{,}1\,\text{dB}$, $72{,}3\,\text{dB}$, $66{,}2\,\text{dB}$ ja $60{,}1\,\text{dB}$
 **Kysytty:** tason keskimääräinen lasku $\Delta L_1$ yhtä etäisyyden kaksinkertaistumista kohti desibeleinä
-**Periaate:** Jokainen mittauspiste on edellisen kaksinkertainen. Etäisyydet ovat $1{,}0\,\text{m} \to 2{,}0\,\text{m} \to 4{,}0\,\text{m} \to 8{,}0\,\text{m} \to 16\,\text{m}$, joten kaksinkertaistumisia on $n = 4$. Keskimääräinen lasku saadaan jakamalla tason kokonaismuutos luvulla $n$.
+**Periaate:** Jokainen mittauspiste on edellisen kaksinkertainen. Etäisyydet ovat $$\begin{aligned} &1{,}0\,\text{m} \to 2{,}0\,\text{m} \to 4{,}0\,\text{m} \to 8{,}0\,\text{m} \\ &\to 16\,\text{m} \end{aligned}$$, joten kaksinkertaistumisia on $n = 4$. Keskimääräinen lasku saadaan jakamalla tason kokonaismuutos luvulla $n$.
 **Kaava:** $\Delta L_1 = \dfrac{L(1{,}0\,\text{m}) - L(16\,\text{m})}{n}$
 **Muunnokset:** Niitä ei tarvita. Tasot ovat desibeleinä, ja $n$ on paljas luku.
 **Sijoitus:** kaksinkertaistumisia on $n = 4$, joten
@@ -319,4 +319,4 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 **Muunnokset:** $\dfrac{L}{10\,\text{dB}} = 8{,}00$. Tulos tulee watteina. Koska $1\,\text{W} = 1000\,\text{mW}$, tulos muunnetaan milliwateiksi.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}00} = 1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, ja $P = 4\pi \cdot (2{,}0\,\text{m})^2 \cdot 1{,}0 \cdot 10^{-4}\,\text{W/m}^2 = 5{,}03 \cdot 10^{-3}\,\text{W} = 5{,}03\,\text{mW}$
 **Vastaus:** $5{,}0\,\text{mW}$, kaksi merkitsevää numeroa kuten kuvasta luetussa etäisyydessä $2{,}0\,\text{m}$.
-**Järkevyys:** Toinen kuvan piste antaa saman tuloksen: $r = 4{,}0\,\text{m}$ ja $L = 74{,}0\,\text{dB}$ antavat $I = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $P = 4\pi \cdot (4{,}0\,\text{m})^2 \cdot 2{,}51 \cdot 10^{-5}\,\text{W/m}^2 = 5{,}05\,\text{mW}$, mikä poikkeaa alle $1\,\%$ ensimmäisestä. Ero johtuu lukemistarkkuudesta. Teho on pieni, kuten pienellä kaiuttimella. Sähköteho on moninkertainen, koska vain pieni osa siitä muuttuu ääneksi.
+**Järkevyys:** Toinen kuvan piste antaa saman tuloksen: $r = 4{,}0\,\text{m}$ ja $L = 74{,}0\,\text{dB}$ antavat $I = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $$\begin{aligned} P &= 4\pi \cdot (4{,}0\,\text{m})^2 \cdot 2{,}51 \\ &\cdot 10^{-5}\,\text{W/m}^2 \\ &= 5{,}05\,\text{mW} \end{aligned}$$, mikä poikkeaa alle $1\,\%$ ensimmäisestä. Ero johtuu lukemistarkkuudesta. Teho on pieni, kuten pienellä kaiuttimella. Sähköteho on moninkertainen, koska vain pieni osa siitä muuttuu ääneksi.

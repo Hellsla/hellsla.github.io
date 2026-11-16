@@ -198,7 +198,7 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42.16 \cdot 10^{6}\,\text{m}}{86\,160\,\text{
 \end{aligned}
 ```
 **Answer:** a) The speeds are $7.59\,\text{km/s}$, $3.87\,\text{km/s}$ and, for the geostationary satellite, $3.07\,\text{km/s}$, three significant figures like the values in the table. b) The satellite farther away is slower: the radius of the orbit grows from top to bottom in the table, but the speed decreases. The answer box gets $3.07\,\text{km/s}$.
-**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth. The circumference is $2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} = 2.649 \cdot 10^{8}\,\text{m}$, and $3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2.649 \cdot 10^{8}\,\text{m}$. In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
+**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth. The circumference is $2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} = 2.649 \cdot 10^{8}\,\text{m}$, and $$\begin{aligned} 3075\,\text{m/s} \cdot 86\,160\,\text{s} &= 2.649 \\ &\cdot 10^{8}\,\text{m} \end{aligned}$$. In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
 
 ## fy5-3-L2-07
 **Given:** diameter of the tyre $d = 64\,\text{cm}$, rotation frequency $f = 8.0\,\tfrac{1}{\text{s}}$; the result of the student $32\,\text{m/s}$
@@ -301,6 +301,6 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 **Reading the figure:** The dimension lines show $r_\text{A} = 0.60\,\text{m}$ and $r_\text{B} = 1.80\,\text{m}$, both measured from the centre.
 **Formula:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
 **Conversions:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0.3333\,\tfrac{1}{\text{s}}$
-**Substitution:** $\Delta v = 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\text{m}) = 2.513\,\text{m/s}$
+**Substitution:** $$\begin{aligned} \Delta v &= 2\pi\cdot \\ &0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\text{m}) \\ &= 2.513\,\text{m/s} \end{aligned}$$
 **Answer:** $2.5\,\text{m/s}$, two significant figures like the frequency $20\,\tfrac{1}{\text{min}}$.
 **Reasonableness:** Separately $v_\text{B} = 3.77\,\text{m/s}$ and $v_\text{A} = 1.26\,\text{m/s}$, and the difference is $2.51\,\text{m/s}$. The point $B$ is three times as far from the centre, so its speed is three times as great.

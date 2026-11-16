@@ -507,7 +507,7 @@
           "detail": "$x$: $kx - F_\\mu = 0$, joten $x = \\tfrac{F_\\mu}{k} = 0{,}15\\,\\text{m}$, ja $y$: $N - mg = 0$."
         }
       ],
-      "model": "Laatikkoon vaikuttavat Maa, lattia ja jousi. Paino $\\overline{G}$ osoittaa keskipisteestä alas, ja lattian tukivoima $\\overline{N}$ alapinnasta ylös. Jousen voima $\\overline{F}$ vetää laatikkoa vaakasuoraan vetosuuntaan, ja liikekitka $\\overline{F}_\\mu$ osoittaa sitä vastaan alapinnan kulmasta. Jousta venyttävää voimaa ei piirretä, koska se vaikuttaa jouseen. Nopeus on vakio, joten voimat kumoavat toisensa. Kun $x$ osoittaa vetosuuntaan ja $y$ ylös: $y$: $N - mg = 0$, joten $N = 6{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\approx 59\\,\\text{N}$. $x$: $kx - F_\\mu = 0$, joten $x = \\dfrac{F_\\mu}{k} = \\dfrac{18\\,\\text{N}}{120\\,\\text{N/m}} = 0{,}15\\,\\text{m}$. Jousi on venynyt $15\\,\\text{cm}$."
+      "model": "Laatikkoon vaikuttavat Maa, lattia ja jousi. Paino $\\overline{G}$ osoittaa keskipisteestä alas, ja lattian tukivoima $\\overline{N}$ alapinnasta ylös. Jousen voima $\\overline{F}$ vetää laatikkoa vaakasuoraan vetosuuntaan, ja liikekitka $\\overline{F}_\\mu$ osoittaa sitä vastaan alapinnan kulmasta. Jousta venyttävää voimaa ei piirretä, koska se vaikuttaa jouseen. Nopeus on vakio, joten voimat kumoavat toisensa. Kun $x$ osoittaa vetosuuntaan ja $y$ ylös: $y$: $N - mg = 0$, joten $$\\begin{aligned} N &= 6{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 59\\,\\text{N} \\end{aligned}$$. $x$: $kx - F_\\mu = 0$, joten $$\\begin{aligned} x &= \\dfrac{F_\\mu}{k} \\\\ &= \\dfrac{18\\,\\text{N}}{120\\,\\text{N/m}} \\\\ &= 0{,}15\\,\\text{m} \\end{aligned}$$. Jousi on venynyt $15\\,\\text{cm}$."
     },
     {
       "id": "lahtolippu",
