@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5b31514997a4592b
-SCOPE: delta numbers from 9b0c475077d8b946 base 6ecef1197865
+CONTENT-HASH: d82fee78a025d07e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none (paragraph breaks only; no new findings)
 
 ## Checked
-- Delta review. Opened fy2-1-open-exercises-1280-10.png (lesson shots folder; exercise 1-10 solution open): the changed Reasonableness sentence (dry wood, MAFY $16.2\,\text{MJ/kg}$) renders whole; units upright, thin spaces, nothing clipped.
-- Hash at start and end: 5b31514997a4592b.
+- en exercises: same kind of change in more solutions; layout judged from the fi open-exercise captures above (same template), en example capture opened. Limit: en solution captures themselves not opened.
+- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
