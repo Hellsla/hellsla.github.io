@@ -568,3 +568,9 @@ Perustelu: marginaaliin mahtuva kuva olisi noin neljänneksen pienempi, ja Teori
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
 Kortteja ei lisätä niihin.
+
+## Kirjattu päätös: mallit takaisin alkuperäisiin (opettaja 2026-11-16)
+
+Opettaja 16.11: "Palaa alkuperäiseen" (tokenit loppumassa). #620 (kaikki roolit Fable, 15.11) on peruttu: agentit ja
+komennot ajetaan taas `/lesson`-komennon mallitaulukon mukaan (Sonnet, tiedekatselmointi Opus), ja Fable vaatii
+opettajan sanan.
