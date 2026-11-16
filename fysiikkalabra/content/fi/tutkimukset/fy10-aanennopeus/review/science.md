@@ -1,22 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fb38b448634abc0e
+CONTENT-HASH: 85386c40a3dc2ce8
 
 ## Blocking
 None.
 
 ## Polish
-- The text links `tvt-taulukkolaskenta`, which the prerequisite's `guides` does not list.
+None.
 
-## Checked (delta 2026-10-31)
-- `topic` "aallot" fits the physics area.
-- `tvt-mittausohjelma` fits reading a time difference from a recorded sound signal; the fit guides fit determining $v$ from a slope.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
-- F1/E2 and F1/E3 unchanged.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-- `guides`: tvt-kuvaaja replaced by tvt-taulukkolaskenta; the list still covers the fit, its slope and Δk the method needs.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 2026-11-16)
+Diff `git diff origin/main` of investigation.md read with surrounding context. Typography/wording branch; no figure changed.
+- Data table headers: LaTeX spacing `\ ` -> `\,` between number and unit; repetition columns renamed *mittaus 1–3* (same meaning).
+- Temperature model $v = v_0\sqrt{T/T_0}$ with $v_0 \approx 331\,\text{m/s}$, $T_0 = 273{,}15\,\text{K}$ = $0\,^\circ\text{C}$: values and conditions (dry air, kelvins) unchanged and correct.

@@ -45,7 +45,7 @@ Voimalevy näyttää lattialla vain vaa'alta, mutta se mittaa jalkojen ja levyn 
 
 **Selvitettävä:** mitä voima–aika-kuvaajan eri osat kertovat hypyn vaiheista, sekä ponnistuksen aikana tapahtuva liikemäärän muutos, lähtönopeus ja hypyn korkeus. Määritä hypyn korkeus myös toisella menetelmällä ja vertaa tuloksia epävarmuuksineen.
 
-Tarvitset painoa laskuissa, mutta voimat voi ilmoittaa painon monikertoina $\dfrac{N}{G}$. Ryhmä voi käyttää yhtä vapaaehtoista hyppääjää.
+Tarvitset painoa laskuissa, mutta voimat voi ilmoittaa painon monikertoina $\dfrac{N}{G}$. Kukaan ei ole velvollinen hyppäämään, ja ryhmä voi käyttää yhtä vapaaehtoista hyppääjää.
 
 **Päätät itse:** hyppytavan ja sen, miten pidät sen samana hypystä toiseen, hyppyjen määrän ja sen, millä perusteella hylkäät epäonnistuneen hypyn, sen, miten luet kuvaajasta hyppääjän painon sekä irtoamis- ja alastulohetken, mistä mihin lasket pinta-alan, toisen menetelmän sekä tavan, jolla arvioit tulosten epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.
 

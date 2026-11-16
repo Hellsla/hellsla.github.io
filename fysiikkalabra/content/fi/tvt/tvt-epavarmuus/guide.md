@@ -66,7 +66,7 @@ Valitse kulmakertoimen epävarmuuden $\Delta k$ arvioimiseen jompikumpi tapa ja 
 
 ### Tapa 2: sovitusparametrin epävarmuus
 
-1. **Näytä parametrien epävarmuudet.** Sovita suora valinnoilla **Käyrän sovitus** ja **Lineaarinen** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]). Parametrien epävarmuuksien näyttäminen (englanninkielisessä versiossa **Show uncertainty of curve fit parameters**, Pro) voi olla tulosruudun rattaan kuvakkeen takana; jos et löydä sitä, kysy opettajalta. Kun asetus on päällä, tulosruudussa näkyy kulmakertoimen eli ohjelman $m$:n vieressä sen epävarmuus. Käytä tätä parametrin epävarmuutta kulmakertoimen epävarmuutena $\Delta k$.
+1. **Näytä parametrien epävarmuudet.** Sovita suora valinnoilla **Käyrän sovitus** ja **Lineaarinen** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]). Parametrien epävarmuuksien näyttäminen (englanninkielisessä versiossa **Show uncertainty of curve fit parameters**, Pro) voi olla tulosruudun rattaan kuvakkeen takana; jos et löydä sitä, kysy opettajalta. Kun asetus on päällä, tulosruudussa näkyy kulmakertoimen eli ohjelman m:n vieressä sen epävarmuus. Käytä tätä parametrin epävarmuutta kulmakertoimen epävarmuutena $\Delta k$.
 
 2. **Tiedä, mitä luku kertoo.** Luku perustuu pisteiden hajontaan suoran ympärillä, ei virhepalkkeihin. Jos pisteitä on vähän ja ne osuvat sattumalta lähes suoralle, epävarmuus voi olla epärealistisen pieni. Vertaa sitä silloin jyrkimmän ja loivimman suoran arvioon.
 
@@ -74,11 +74,7 @@ Valitse kulmakertoimen epävarmuuden $\Delta k$ arvioimiseen jompikumpi tapa ja 
 
 1. **Siirrä epävarmuus lopputulokseen.** Jos tulos saadaan kertomalla tai jakamalla kulmakerroin tarkasti tunnetulla vakiolla, tuloksen suhteellinen epävarmuus on sama kuin kulmakertoimen. Heilurin putoamiskiihtyvyydelle $g = \tfrac{4\pi^2}{k}$ pätee siis $\tfrac{\Delta g}{g} = \tfrac{\Delta k}{k}$. Jos tuloksen laskemiseen tarvitaan muitakin mitattuja suureita, tulon ja osamäärän suhteellinen epävarmuus on enintään suureiden suhteellisten epävarmuuksien summa.
 
-2. **Laske välivaiheet pyöristämättä.** Keksityssä esimerkkiaineistossa $k_\text{max} = 4{,}21\,\text{s}^2/\text{m}$ ja $k_\text{min} = 3{,}89\,\text{s}^2/\text{m}$, joten $\Delta k = (4{,}21 - 3{,}89)\,\text{s}^2/\text{m} : 2 = 0{,}16\,\text{s}^2/\text{m}$.
-
-    Kun $k = 4{,}05\,\text{s}^2/\text{m}$, suhteellinen epävarmuus on $0{,}16 : 4{,}05 \approx 0{,}040$ eli noin $4\,\%$.
-
-    Putoamiskiihtyvyys on $g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}748\,\text{m/s}^2$ ja sen epävarmuus $\Delta g \approx 0{,}040 \cdot 9{,}748\,\text{m/s}^2 \approx 0{,}39\,\text{m/s}^2$.
+2. **Laske välivaiheet pyöristämättä.** Keksityssä esimerkkiaineistossa $k_\text{max} = 4{,}21\,\text{s}^2/\text{m}$ ja $k_\text{min} = 3{,}89\,\text{s}^2/\text{m}$, joten $\Delta k = (4{,}21 - 3{,}89)\,\text{s}^2/\text{m} : 2 = 0{,}16\,\text{s}^2/\text{m}$. Kun $k = 4{,}05\,\text{s}^2/\text{m}$, suhteellinen epävarmuus on $0{,}16 : 4{,}05 \approx 0{,}040$ eli noin $4\,\%$. Putoamiskiihtyvyys on $g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}748\,\text{m/s}^2$ ja sen epävarmuus $\Delta g \approx 0{,}040 \cdot 9{,}748\,\text{m/s}^2 \approx 0{,}39\,\text{m/s}^2$.
 
 3. **Pyöristä ja ilmoita.** Pyöristä epävarmuus yhteen merkitsevään numeroon ja tulos samaan desimaaliin kuin epävarmuus. Esimerkin tulos on $g = (9{,}7 \pm 0{,}4)\,\text{m/s}^2$: lukuarvo, epävarmuus ja yksikkö.
 

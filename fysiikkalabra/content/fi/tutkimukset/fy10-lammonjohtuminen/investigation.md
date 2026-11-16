@@ -192,7 +192,7 @@ Kuvaaja esittää mallin muotoa, ei mittaustuloksia: samassa kohdassa lämpötil
 Ennen mittaamista päätä ja kirjaa ylös, millä suureella vertailet materiaaleja, mitä pidät vakiona ja miten varmistat, että lämpökamera mittaa kaikkien kappaleiden lämpötilaa yhtä luotettavasti.
 
 ::: tuki O
-**Ohjattu.** Käytä samankokoisia sauvoja tai liuskoja, esimerkiksi noin $15\,\text{cm}$–$20\,\text{cm}$ pitkiä, ja päällystä niiden vedenpinnan yläpuoliset osat samanlaisella mattapintaisella teipillä. Työnnä kappaleet eristävän kannen reikien läpi niin, että ne ovat yhtä syvällä kuumassa vedessä eivätkä kosketa toisiaan. Kiinnitä lämpökamera jalustaan niin, että kaikki kappaleet näkyvät samassa kuvassa. Tutki ainakin kolmea materiaalia, esimerkiksi kuparia, terästä ja puuta, ja lue lämpötilat yhdestä mittauskohdasta kannen yläpuolelta, esimerkiksi $x = 3\,\text{cm}$. Jos aikaa jää, voit lisätä materiaaleja tai toisen mittauskohdan. Mittaa veden lämpötila lämpömittarilla mittauksen alussa ja lopussa.
+**Ohjattu.** Käytä samankokoisia sauvoja tai liuskoja, esimerkiksi noin $15\ \text{cm}$ – $20\ \text{cm}$ pitkiä, ja päällystä niiden vedenpinnan yläpuoliset osat samanlaisella mattapintaisella teipillä. Työnnä kappaleet eristävän kannen reikien läpi niin, että ne ovat yhtä syvällä kuumassa vedessä eivätkä kosketa toisiaan. Kiinnitä lämpökamera jalustaan niin, että kaikki kappaleet näkyvät samassa kuvassa. Tutki ainakin kolmea materiaalia, esimerkiksi kuparia, terästä ja puuta, ja lue lämpötilat yhdestä mittauskohdasta kannen yläpuolelta, esimerkiksi $x = 3\ \text{cm}$. Jos aikaa jää, voit lisätä materiaaleja tai toisen mittauskohdan. Mittaa veden lämpötila lämpömittarilla mittauksen alussa ja lopussa.
 :::
 
 ::: tuki OO
@@ -206,7 +206,7 @@ Mieti ainakin näitä:
 - Miten tunnistat lämpökamerakuvasta kohdan, joka on etäisyydellä $x$? Voit käyttää mittakaavana esimerkiksi kappaleen tunnettua pituutta kuvassa.
 - Veden lämpötila laskee mittauksen aikana. Miksi se ei haittaa vertailua, kun kaikki kappaleet ovat samassa astiassa, ja miten voit pienentää laskua?
 - Kuinka kauan mittaus kestää, ja kuinka usein otat kuvan? Kokeile ennen varsinaista mittausta, kuinka nopeasti lämpö etenee nopeimmassa kappaleessa.
-- Miksi lämpökameraa ei kannata pitää kädessä eikä kameran käyttäjän pidä seistä kappaleiden takana?
+- Miksi lämpökameraa ei kannata pitää kädessä eikä kuvaajan pidä seistä kappaleiden takana?
 - Näkyykö kappale kuvassa niin leveänä, että lukemasi kohta on kokonaan kappaleen päällä? Mitä lukemalle tapahtuu, jos kappale on kuvassa vain muutaman kuvapisteen levyinen?
 - Kannen yläpuolinen lämmin ilma voi lämmittää kappaleita myös ulkopuolelta. Miten erotat sen johtumisesta, esimerkiksi huonosti johtavan kappaleen lukemista?
 :::

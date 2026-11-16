@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9101d17d059b30c0
+CONTENT-HASH: 4d38135ea821fc70
 
 ## Blocking
 
@@ -23,3 +23,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Checked (delta 2026-11-16)
+
+- Text/typography diff read in context: thin spaces only. No blocking finding.

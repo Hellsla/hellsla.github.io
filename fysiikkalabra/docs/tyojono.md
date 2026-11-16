@@ -18,6 +18,10 @@ kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valm
 
 Varattu: claude/fy10-minor-sisalto (vain sisältöosa: tutkimusten ja TVT-ohjeiden omat Minor-löydökset ja fy10-induktion kenttäviivat; jaetut komponentit eivät kuulu siihen).
 
+Sisältöosa (PR #645): tekstin ja LaTeXin Minorit korjataan. Kuviin ei kosketa (opettaja 16.11: "älä tee näille kuville mitään, piirrän ne uudelleen ChatGPT:llä"); jokainen kuvalöydös, myös fy10-induktion kenttäviivat, on PR #645:n avoimissa kohdissa opettajan piirtämistä varten.
+
+Ehdotus yhteiseksi kuvasäännöksi (koordinaattori 16.11; opettajan päätettäväksi): toistuvat kuvalöydökset kirjataan yhtenä sääntönä, ei kuva kerrallaan: (1) nimikkeet luettavia 390 px:ssä (vähintään noin 12 px, ei vaaleanharmaata ohutta tekstiä); (2) mallikuvaajan akseleilla suure ja yksikkö, tai kuvaus sanoo, että kuva on kaavio ilman mittakaavaa; (3) kaaviokuvan aria-label tai kuvateksti sanoo sen kaaviokuvaksi ("ei mittakaavassa", "havainnollistava, ei mitattu"); (4) malli- tai luonnoskuvaaja merkitsee itsensä malliksi kuvan sisällä. Jaettu osa (taulukoiden otsakkeet ja tyhjät rivit 390 px:ssä, listojen numerointi, laskurivit listoissa, apulinkit, tyhjät 28×28 px:n kaappaukset) kuuluu erään 1.
+
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
