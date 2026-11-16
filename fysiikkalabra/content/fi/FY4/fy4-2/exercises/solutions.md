@@ -107,7 +107,7 @@
 **Kaava:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja ajat sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
 **Sijoitus:** $s = \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} + 15{,}0\,\text{m/s} \cdot 60{,}0\,\text{s} + \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 15{,}0\,\text{s} = 150\,\text{m} + 900\,\text{m} + 112{,}5\,\text{m} = 1162{,}5\,\text{m}$
-**Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa. Tulos $1162{,}5\,\text{m}$ pyöristetään kolmeen merkitsevään numeroon, joten luvun lopun nolla ei ole merkitsevä; kilometreina asia näkyy selvemmin.
+**Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa. Tulos $1162{,}5\,\text{m}$ pyöristetään kolmeen merkitsevään numeroon, joten luvun lopun nolla ei ole merkitsevä; kilometreinä asia näkyy selvemmin.
 **Järkevyys:** Jos juna kulkisi koko ajan $95\,\text{s}$ nopeudella $15{,}0\,\text{m/s}$, matka olisi $1425\,\text{m}$; kiihdytys ja jarrutus vievät tästä puolet omista osuuksistaan, $150\,\text{m} + 112{,}5\,\text{m}$, joten $1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}$. Reilun kilometrin asemaväli on metrolle tavallinen.
 
 ## fy4-2-L3-03
@@ -118,7 +118,7 @@
 **Muunnokset:** Kertoimet ovat SI-yksiköissä ja aika sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
 **Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
-**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.
+**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $$9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$$.
 
 ## fy4-2-L1-06
 **Kysytty:** mihin suuntaan itään ajavan ja jarruttavan auton kiihtyvyys osoittaa.
@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24{,}79\,\text{m/s}^2}} = \sqrt{1{,}613\,\text{s}^2} \approx 1{,}270\,\text{s}$
 **Vastaus:** $1{,}27\,\text{s}$. Korkeus $20\,\text{m}$ tulkitaan tarkaksi arvoksi, ja taulukon arvossa $24{,}79\,\text{m/s}^2$ on neljä merkitsevää numeroa. Tulos annetaan silti kolmella, koska eri taulukoiden arvot poikkeavat toisistaan jo neljännessä numerossa, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, ja aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
+**Järkevyys:** Maassa sama pudotus kestäisi $$\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, ja aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.

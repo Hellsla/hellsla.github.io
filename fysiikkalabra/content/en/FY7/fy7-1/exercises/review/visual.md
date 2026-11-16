@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7c42a154c01acd85
-SCOPE: delta added-exercise from 24b9ddd2db5cbc0a base 8f23aa7ae3bd
+CONTENT-HASH: d5144adbabad529a
 
 ## Blocking
 - none
@@ -9,9 +8,7 @@ SCOPE: delta added-exercise from 24b9ddd2db5cbc0a base 8f23aa7ae3bd
 - none
 
 ## Checked
-- fy7-1-open-exercises-L2-1280-9, -10, -11, -12 (en): tasks 1-17 and 1-18 with their figures (sum-grid, incl-grid), answer fields and fully opened solutions.
-- Figures: green arrows on a 5 µT grid, axis titles and ticks in KaTeX, labels $\overline{B}_\text{h}$, $\overline{B}_\text{m}$, $\overline{B}$ legible, nothing clipped; neither figure draws the resultant, needle or angle.
-- Typography: units upright with thin space, aligned rows, no red KaTeX; the set reads as one.
+- Delta: Reasonableness line in fy7-1 exercise solutions (two-row display block). Rendered preview page (en) with solutions opened at 360, 390 and 1280 px: the display block fits its container (scrollWidth = clientWidth), no page overflow, rows aligned, numbers, signs, units and order unchanged. Screenshot opened for en at 360 px; fi and fi-easy verified by measurement.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -179,7 +179,14 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 ## fy5-17-L2-07
 **Kysytty:** mikä virhe opiskelijan ratkaisussa on
 **Periaate:** Kumpikin aalto kulkee saman matkan $d$ tasaisella nopeudella. Saapumisaikojen ero on S- ja P-aallon kulkuaikojen erotus: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. Pelkkä tulo $v_\text{P}\,\Delta t$ olisi matka, jonka P-aalto kulkisi ajassa $\Delta t$. Se ei ole järistyksen etäisyys.
-**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan, ennen kuin $\Delta t$ alkaa. Oikea tulos on $d = \dfrac{6{,}0 \cdot 3{,}5}{6{,}0 - 3{,}5} \cdot 16{,}0\,\text{km} = 134\,\text{km}$. Tarkistus: P-aallon kulkuaika on $134\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$ ja S-aallon $134\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$. Erotus on $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon. S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$. Yksiköt ovat ratkaisussa kunnossa.
+**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan, ennen kuin $\Delta t$ alkaa. Oikea tulos on $$
+\begin{aligned}
+d &= \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{6{,}0\,\text{km/s} - 3{,}5\,\text{km/s}} \\
+&\cdot 16{,}0\,\text{s} \\
+&= 134{,}4\,\text{km} \\
+&\approx 134\,\text{km}
+\end{aligned}
+$$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$ ja S-aallon $134{,}4\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$. Erotus on $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon. S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$. Yksiköt ovat ratkaisussa kunnossa.
 
 ## fy5-17-L3-04
 **Annettu:** asemat A$(0, 0)$, B$(120, 0)$ ja C$(60, 90)$ kilometreinä; $\Delta t_\text{A} = 10{,}0\,\text{s}$, $\Delta t_\text{B} = 7{,}5\,\text{s}$, $\Delta t_\text{C} = 5{,}9\,\text{s}$; $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
@@ -224,3 +231,22 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Sijoitus:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0693\,\text{m} = 6{,}93\,\text{cm}$
 **Vastaus:** $6{,}93\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
 **Järkevyys:** Kaiun kulkema matka on $1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} = 13{,}9\,\text{cm}$, josta puolet on $6{,}9\,\text{cm}$. Reisiluun pinta noin seitsemän senttimetrin syvyydessä on järkevä, ja se on syvemmällä kuin kaikuja A ja B vastaavat rajapinnat.
+
+## fy5-17-L2-10
+**Annettu:** aineistosta valitun järistyksen aika, paikka, syvyys ja magnitudi (kohta a); $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$ ja matka $d = 100\,\text{km}$ (kohta c)
+**Kysytty:** a) valitun järistyksen sijainti ja voimakkuus, b) P-aallon ja S-aallon erot, c) saapumisaikojen ero $\Delta t$ sekunteina, d) paikantamisen periaate
+**Periaate:** P-aalto ja S-aalto lähtevät järistyksestä samalla hetkellä. Ne kulkevat asemalle saman matkan mutta eri nopeuksilla. Kun nopeus on tasainen, kulkuaika on matka jaettuna nopeudella. Hitaampi S-aalto jää P-aallosta jälkeen sitä enemmän, mitä pidempi matka on. Siksi saapumisaikojen ero kertoo matkan pituuden.
+**Kohta a):** Aineistosta luetaan valitun järistyksen päivämäärä, paikkakunta, koordinaatit, syvyys ja magnitudi. Sijainti kuvataan paikkakunnan ja koordinaattien avulla. Voimakkuus kuvataan magnitudin avulla. Esimerkki, aineisto luettu 15. marraskuuta 2026: alasivun vuoden 2026 taulukon järistys numero $149$ tapahtui 10. marraskuuta 2026 kello 01:34 UTC-aikaa Orivedellä Pirkanmaalla. Taulukon koordinaatit ovat $61{,}754{}^\circ$ pohjoista leveyttä ja $24{,}361{}^\circ$ itäistä pituutta eli noin $61{,}8{}^\circ\,\text{N}$ ja $24{,}4{}^\circ\,\text{E}$. Järistys alkoi noin $18\,\text{km}$:n syvyydessä (taulukossa $18{,}3\,\text{km}$). Sen magnitudi oli $1{,}0$. Sivun mukaan Suomen maanjäristykset ovat heikkoja: niiden magnitudi on $0\text{–}4$. Tämä järistys kuuluu siis Suomenkin järistysten heikompaan päähän. Seismometrit eli maan tärinää mittaavat laitteet rekisteröivät sen. Aineisto ei kerro, huomasivatko ihmiset sitä. Vuoden 2026 taulukon otsikossa on tähti. Tulokset, joita ei vielä ole Pohjois-Euroopan maanjäristysluettelossa (FENCAT), ovat alustavia analyysituloksia, joten arvot voivat vielä tarkentua. Toinen järistys tai myöhempi lukukerta antaa eri arvot.
+**Kohta b):** P-aalto on pitkittäistä aaltoliikettä. Siinä aine värähtelee samassa suunnassa kuin aalto etenee, ja aallossa etenevät tihentymät ja harventumat. S-aalto on poikittaista aaltoliikettä. Siinä aine värähtelee kohtisuorasti etenemissuuntaa vastaan. P-aalto on nopeampi, joten se saapuu asemalle ensin. S-aalto saapuu sen jälkeen. P-aalto etenee sekä kiinteässä aineessa että nesteessä. S-aalto etenee vain kiinteässä aineessa. Nesteessä vierekkäiset kerrokset liukuvat toistensa ohi, eikä mikään voima palauta niitä takaisin.
+**Kaava:** Kohta c): tasaisessa liikkeessä $v = \dfrac{d}{t}$, joten kulkuajat ovat $t_\text{P} = \dfrac{d}{v_\text{P}}$ ja $t_\text{S} = \dfrac{d}{v_\text{S}}$. Saapumisaikojen ero on kulkuaikojen erotus: $\Delta t = t_\text{S} - t_\text{P} = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$
+**Muunnokset:** Matka on kilometreinä ja nopeudet ovat yksikössä km/s. Kilometrit supistuvat, ja aika tulee suoraan sekunteina. Muunnoksia ei tarvita.
+**Sijoitus:** $\Delta t = \dfrac{100\,\text{km}}{3{,}5\,\text{km/s}} - \dfrac{100\,\text{km}}{6{,}0\,\text{km/s}} = 28{,}571\,\text{s} - 16{,}667\,\text{s} = 11{,}905\,\text{s}$
+**Vastaus:** $\Delta t \approx 12\,\text{s}$. Yksi sekunti S–P-aikaeroa vastaa matkaa $100\,\text{km} / 11{,}905\,\text{s} \approx 8{,}4\,\text{km}$. Tulos annetaan kahdella merkitsevällä numerolla, koska nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$ on kaksi merkitsevää numeroa. Tehtävän matkassa $100\,\text{km}$ niitä on kolme, joten se ei rajoita tarkkuutta.
+**Järkevyys:** P-aallon kulkuaika on noin $16{,}7\,\text{s}$ ja S-aallon noin $28{,}6\,\text{s}$. S-aalto saapuu siis myöhemmin, kuten hitaamman aallon pitääkin. Luvun mukaan näillä nopeuksilla yksi sekunti aikaeroa vastaa $8{,}4\,\text{km}$:n matkaa. Lasku $100\,\text{km} : 8{,}4\,\text{km/s} = 11{,}9\,\text{s}$ antaa saman tuloksen.
+**Kohta d):** Asema ei tiedä, milloin järistys tapahtui. Se mittaa kuitenkin S-aallon ja P-aallon saapumisaikojen eron. Kohdan c) yhtälöstä ratkaistaan matka: $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. Kohdan c) nopeuksilla $100\,\text{km}$ vastaa $11{,}9\,\text{s}$:n eroa. Jokainen sekunti aikaeroa vastaa siis noin $8{,}4\,\text{km}$:n matkaa.
+
+Yksi asema saa näin selville vain etäisyyden, ei suuntaa. Järistys voi olla missä tahansa kohdassa ympyrällä, jonka keskipiste on asema. Kahden aseman ympyrät leikkaavat yleensä kahdessa pisteessä. Vasta kolmannen aseman ympyrä osoittaa, kumpi piste on oikea. Siksi tarvitaan vähintään kolme asemaa.
+
+Todellisuudessa järistys alkaa syvällä maan sisällä, ja aaltojen nopeudet vaihtelevat maankuoressa. Tasaisen nopeuden malli antaa siksi vain arvion. Kun asemia on monta, myös syvyys saadaan selville ja mittausvirheiden vaikutus pienenee.
+
+Aineiston mukaan Suomessa on yli $40$ pysyvää asemaa. Paikannuksen epävarmuus on muutamasta sadasta metristä kahteen kilometriin. Kahden kilometrin ero matkassa vastaa näillä nopeuksilla vain noin $0{,}24\,\text{s}$:n eroa aikaerossa. Saapumisajat on siis luettava tarkasti.

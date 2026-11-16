@@ -105,7 +105,7 @@
     {
       "id": "fy7-1-L1-08",
       "level": 1,
-      "text": "Oulussa Maan magneettikentän magneettivuon tiheys on noin $53\\,\\mu\\text{T}$. Kenttä osoittaa $76\\,{}^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän pystykomponentti mikrotesloina?",
+      "text": "Oulussa Maan magneettikentän magneettivuon tiheys on noin $53\\,\\mu\\text{T}$. Kenttä osoittaa $76^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän pystykomponentti mikrotesloina?",
       "kind": [
         "model"
       ],
@@ -141,9 +141,9 @@
           "feedback": "Tosi: ulkona viivat kulkevat $\\text{N}$:stä $\\text{S}$:ään ja sisällä $\\text{S}$:stä $\\text{N}$:ään. Viivalla ei ole alkua eikä loppua, koska yksittäistä magneettinapaa ei ole."
         },
         {
-          "text": "Kun magneetti ripustetaan langasta vapaasti kääntyväksi, sen $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa.",
+          "text": "Kun magneetti ripustetaan langasta vapaasti kääntyväksi, sen $\\text{N}$-pää kääntyy kohti Maan sauvamagneettimallin etelänapaa.",
           "true": true,
-          "feedback": "Tosi: erinimiset navat vetävät toisiaan, joten $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa. Se on maantieteellisen pohjoisnavan lähellä, joten $\\text{N}$-pää osoittaa pohjoiseen."
+          "feedback": "Tosi: erinimiset navat vetävät toisiaan, joten $\\text{N}$-pää kääntyy kohti Maan sauvamagneettimallin etelänapaa. Se on maantieteellisen pohjoisnavan lähellä, joten $\\text{N}$-pää osoittaa pohjoiseen."
         },
         {
           "text": "Kun pöydälle tuodaan toinen magneetti, kahden magneetin kenttäviivat voivat leikata toisiaan niiden välissä.",
@@ -275,7 +275,7 @@
     {
       "id": "fy7-1-L2-07",
       "level": 2,
-      "text": "Opiskelija ratkaisee tehtävän: ”Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Pöydällä olevan magneetin kenttä on $30\\,\\mu\\text{T}$ itään. Kuinka monta astetta pohjoisesta itään neula kääntyy?”\n\nHänen ratkaisunsa: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0{,}467$, joten $\\theta = \\tan^{-1} 0{,}467 = 25\\,{}^\\circ$.\n\na) Miksi tulos on epäuskottava, kun magneetin kenttä on paljon Maan kenttää suurempi? Mikä ratkaisussa on virhe?\n\nb) Laske oikea kulma.\n\nKirjoita vastauskenttään kohdan b) tulos asteina.",
+      "text": "Opiskelija ratkaisee tehtävän: ”Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Pöydällä olevan magneetin kenttä on $30\\,\\mu\\text{T}$ itään. Kuinka monta astetta pohjoisesta itään neula kääntyy?”\n\nHänen ratkaisunsa: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0{,}467$, joten $\\theta = \\tan^{-1} 0{,}467 = 25^\\circ$.\n\na) Miksi tulos on epäuskottava, kun magneetin kenttä on paljon Maan kenttää suurempi? Mikä ratkaisussa on virhe?\n\nb) Laske oikea kulma.\n\nKirjoita vastauskenttään kohdan b) tulos asteina.",
       "kind": [
         "error"
       ],
@@ -315,7 +315,7 @@
       "id": "fy7-1-L3-02",
       "level": 3,
       "text": "Teräksinen paperiliitin vedetään useita kertoja samaan suuntaan magneetin napaa pitkin. Sen jälkeen se nostaa pieniä nastoja. Kuumenna liitin liekissä riittävän kuumaksi ja anna sen jäähtyä. Silloin se ei enää nosta nastoja. Selitä molemmat havainnot alkeisalueiden avulla.",
-      "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi. Kovassa teräksessä ne jäävät järjestykseen, joten liitin on magneetti. Riittävän kuuma lämpötila sekoittaa alkeisalueiden järjestyksen. Silloin liitin ei enää ole magneetti.",
+      "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi. Teräksessä moni niistä jää järjestykseen, joten liitin on magneetti. Riittävän kuuma lämpötila sekoittaa alkeisalueiden järjestyksen. Silloin liitin ei enää ole magneetti.",
       "unit": "",
       "tolerance": 0.02
     },

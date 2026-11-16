@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e5d3fab773ab40c6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 44aa98302c3e42f8
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, Yleinen virhekäsitys — "…koska Maan pohjoista magneettista napaa kutsutaan magneettiseksi pohjoisnavaksi" is circular — e.g. "Moni päättelee nimestä *magneettinen pohjoisnapa*, että Maan pohjoisessa on magneetin pohjoisnapa, jonka luo neulan pohjoispää hakeutuu."
+- none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Bar-magnet model vs geomagnetic naming: Why-question, theory, new naming paragraph, misconception, summary, inquiry check-1 feedbacks; terms consistent (sauvamagneettimalli / magneettinen pohjoisnapa).
-- No paragraph changed in this round in fi-easy exceeds about 120 words
+- Delta: Pohdinta retrieval feedback (three options share one re-broken Pythagoras chain), rendered from the built page at 390 and 1280 px (option 2 opened): aligned rows, full stop inside the formula, sentence reads on, nothing clipped.
+- Opened fy7-1-stage-herata-390, fy7-1-open-tarkista-1280-1, fy7-1-open-ennusta-1280: layout intact.
+- figures.json: only the descriptions of two scale diagrams reworded (fluent, same content); figure drawings unchanged.
 - Hash identical at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

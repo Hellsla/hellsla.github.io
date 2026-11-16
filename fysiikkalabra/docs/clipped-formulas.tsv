@@ -1,15 +1,9 @@
 # Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
 # page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
 # (fix the formula and delete its row); written by `check_layout.py --write-known`, never by hand.
-FY2-koe	13\,700\,\text{MW} - 10\,200\,\text{MW} = 3500\,\text{MW}
-FY2-koe	= P_\text{ydin} + P_\text{tuuli} + P_\text{vesi} + P_\text{muu}
-FY2-sovella	0{,}11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9{,}6\,\text{G
-FY2-sovella	0{,}50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4{,}6 \cdo
-FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8{,}7 \cd
-FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-FY2-sovella	E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} \approx 14{,}
-FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
+FY4-koe	\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} = 6{,}0\,\t
+FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
+FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
 FY4-sovella	E_\text{k} \approx 13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}
 FY4-sovella	F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
 FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}68
@@ -18,6 +12,7 @@ FY5-koe	331\,\text{m/s} + 8{,}0 \cdot 0{,}6\,\text{m/s} \approx 336\,\text{m/s
 FY5-koe	= 6{,}674 \cdot 10^{-11} \cdot \dfrac{5{,}97 \cdot 10^{24} \cdot 4{,}0
 FY5-koe	F_\text{A} \cdot 1{,}2\,\text{m} = G \cdot 0{,}8\,\text{m} + F_\text{h
 FY5-koe	M_2 = 150\,\text{N} \cdot 0{,}15\,\text{m} = 22{,}5\,\text{Nm}
+FY5-koe	t = 8\,\text{h} : 2^6 = 0{,}125\,\text{h} = 7{,}5\,\text{min}
 FY5-sovella	0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/\text{kg} \approx 0{,}014\,\
 FY5-sovella	1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text
 FY5-sovella	188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \appro
@@ -38,6 +33,7 @@ FY6-sovella	16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}
 FY6-sovella	3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}
 FY6-sovella	3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 
 FY6-sovella	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \c
+FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
 FY6-sovella	E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text
 FY6-sovella	F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} 
 FY6-sovella	R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,
@@ -52,34 +48,15 @@ FY7-koe	= 6{,}4 \cdot 10^{-7}\,\text{T}^2 \cdot 1{,}81 \cdot 10^{-5}\,\text{m}
 FY7-koe	\sqrt{(50/2200)^2 + (15/1262)^2} = 0{,}026
 FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
+FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
+FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
+FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
+FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
 FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-FY8-koe	17{,}59\,\text{MeV} : 5{,}03\,\text{u} = 3{,}5\,\text{MeV/u}
-FY8-koe	1\,\text{u} = 931{,}5\,\text{MeV}/c^2 = 1{,}6605 \cdot 10^{-27}\,\text
-FY8-koe	1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}
-FY8-koe	= 280\,\text{MBq} \cdot 2^{2{,}46} \approx 280\,\text{MBq} \cdot 5{,}5
-FY8-koe	= 28{,}30\,\text{MeV} - 2{,}22\,\text{MeV} - 8{,}48\,\text{MeV}
-FY8-koe	E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2
-FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
-en/FY2-sovella	0.11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9.6\,\text{GWh}
-en/FY2-sovella	0.50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-en/FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4.6 \cdot 
-en/FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8.7 \cdot
-en/FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-en/FY2-sovella	E_1 = 0.32 \cdot 5.0\,\text{MW} \cdot 8760\,\text{h} \approx 14.0\,\te
-en/FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
+en/FY4-sovella	0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \approx 0.002
 en/FY4-sovella	E_\text{k} \approx 13.98\,\text{kJ} - 5.23\,\text{kJ} \approx 8.74\,\t
 en/FY4-sovella	F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
 en/FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0.684 
@@ -111,34 +88,36 @@ en/FY6-sovella	\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0.20\,\text{m}} = 13.4\,\te
 en/FY6-sovella	qU = 6.0 \cdot 10^{-13}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} = 3
 en/FY7-sovella	0.012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8.5\,\text{N/m}
 en/FY7-sovella	0.780 : 1300\,\text{nm} = 6.00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
+en/FY7-sovella	1667\,\text{nm} \cdot \sin 20.6^\circ \approx 586.5\,\text{nm}
+en/FY7-sovella	1667\,\text{nm} \cdot \sin 20.8^\circ \approx 592.0\,\text{nm}
 en/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5.0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot 1
+en/FY7-sovella	6.0\,\text{MW} - 0.85\,\text{MW} \approx 5.2\,\text{MW}
 en/FY7-sovella	= 1.8281 \cdot 10^{-26}\,\text{kg} \cdot 7.251 \cdot 10^{5}\,\text{m/s
+en/FY7-sovella	= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^{4}\,
+en/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 en/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 30.0 \cdot
 en/FY7-sovella	m_{10} : m_{11} = 1.6627 : 1.8281 \approx 0.91
-en/FY8-sovella	1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2} = 1.66054 \cdot 10^{-27}\
-en/FY8-sovella	939.565\,\tfrac{\text{MeV}}{c^2} - 938.272\,\tfrac{\text{MeV}}{c^2} - 
-en/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} \cdot 8.9
-en/FY8-sovella	= 238.049560 \cdot 1.66054 \cdot 10^{-27}\,\text{kg}
-en/FY8-sovella	= 238.049560\,\text{u} - 234.040952\,\text{u} - 4.002603\,\text{u}
-en/FY8-sovella	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10
-en/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-en/FY8-sovella	k = \dfrac{12.0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20.0\,\text{cm} 
 en/fy1-3	= \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\
 en/fy14-atom-models	-0.85\ \text{eV} - (-1.51\ \text{eV}) = 0.66\ \text{eV}
 en/fy14-atom-models	1240\ \text{eV} \cdot \text{nm} : 13.6\ \text{eV} \approx 91\ \text{nm
 en/fy14-atom-models	1240\ \text{eV} \cdot \text{nm} : 656\ \text{nm} \approx 1.9\ \text{eV
 en/fy14-atom-models	6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \cdot 2.998 \cdot 10^{8}
+en/fy14-atom-models	= -0.544\ \text{eV} - (-3.40\ \text{eV})
 en/fy14-atom-models	E = 1240\ \text{eV} \cdot \text{nm} : 656.3\ \text{nm}
 en/fy14-atom-models	E_3 - E_1 = -1.51\ \text{eV} - (-13.6\ \text{eV}) = 12.1\ \text{eV}
 en/fy14-atom-models	\lambda = 1240\ \text{eV} \cdot \text{nm} : 12.1\ \text{eV} \approx 10
 en/fy14-atom-models	hc = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \cdot 2.998 \cdot 1
 en/fy14-atom-models	hc/\lambda = 1240\ \text{eV} \cdot \text{nm} : 410\ \text{nm} \approx 
 en/fy14-big-machines	1\ \text{keV} = 1000 \cdot 1.602 \cdot 10^{-19}\ \text{J}
+en/fy14-big-machines	{1.958 \cdot 10^{6}} : {3.00 \cdot 10^{8}} \approx 0.65\ \%
 en/fy14-binding-energy	0.002388\ \text{u} \cdot 931.5\ \text{MeV/u} = 2.22\ \text{MeV}
+en/fy14-binding-energy	250
 en/fy14-binding-energy	= 28.30\ \text{MeV} - 2.22\ \text{MeV} - 8.48\ \text{MeV}
 en/fy14-binding-energy	B = 0.002388\ \text{u} \cdot 931.5\ \text{MeV/u} = 2.22\ \text{MeV}
 en/fy14-binding-energy	m_\text{parts} = 2 \cdot 1.007825\ \text{u} + 2 \cdot 1.008665\ \text{
+en/fy14-classical-limits	= 2.898 \cdot 10^{6}\ \text{nm} \cdot \text{K} : 10\,000\ \text{K}
 en/fy14-classical-limits	T = (400 + 273)\ \text{K} = 673\ \text{K}
+en/fy14-fotoni	0.76\ \text{mm} : 490\ \text{mm} \approx 0.0015
 en/fy14-fotoni	B^2r^2 \approx 2.30 \cdot 10^{-9}\ \text{T}^2 \cdot \text{m}^2
 en/fy14-fusion-reactions	1\ \text{kg} : (235.04\ \text{u} \cdot 1.66 \cdot 10^{-27}\ \text{kg/u
 en/fy14-fusion-reactions	3.37 \cdot 10^{14} : 3.25 \cdot 10^{7} = 1.04 \cdot 10^{7}
@@ -148,6 +127,7 @@ en/fy14-fusion-society	m = 25\ \text{kg} \cdot (1/2)^{10/12.3} = 25\ \text{kg} \
 en/fy14-fusion-society	{}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He}\ (3.5\
 en/fy14-inside-iter	Q = P_\text{fusion} / P_\text{heating} = 16\ \text{MW} : 24\ \text{MW}
 en/fy14-inside-iter	^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He}\ (3.5\ \
+en/fy14-nucleus	N = A - Z = 235 - 92 = 143
 en/fy14-photoelectric	3.97 \cdot 10^{-19}\ \text{J} : 1.602 \cdot 10^{-19}\ \text{J/eV} = 2.
 en/fy14-photoelectric	E_{\text{k,max}} = 2.48\ \text{eV} - 2.14\ \text{eV} = 0.34\ \text{eV}
 en/fy14-photoelectric	E_{\text{k,max}} = 3.10\ \text{eV} - 2.36\ \text{eV} = 0.74\ \text{eV}
@@ -158,118 +138,20 @@ en/fy14-quantum-tunnelling	\lambda \approx 7.79 \cdot 10^{-13}\ \text{m} = 779\ 
 en/fy14-secret-fusion	= 1.381 \cdot 10^{-23}\ \text{J/K} \cdot 5.0 \cdot 10^{6}\ \text{K}
 en/fy14-sun-puzzle	4.3 \cdot 10^{9}\ \text{kg/s} \cdot 1.45 \cdot 10^{17}\ \text{s} = 6.2
 en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 0.0003 = 0.03\ \%
+en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 3 \cdot 10^{-4}
 en/fy14-sun-puzzle	= 32.5 \cdot 10^{6}\ \text{J/kg} \cdot 1.99 \cdot 10^{30}\ \text{kg}
 en/fy14-sun-puzzle	G = 6.674 \cdot 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2
 en/fy14-sun-puzzle	M \cdot 32.5\ \text{MJ/kg} : L \approx 1.7 \cdot 10^{11}\ \text{s}
-en/fy2-1	218\,\text{GJ} \cdot 5.5 \cdot 10^{6} \approx 1.2 \cdot 10^{9}\,\text{
-en/fy2-1	3.20\,\text{J} + 0.80\,\text{J} + 1.00\,\text{J} = 5.00\,\text{J}
-en/fy2-1	331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}
-en/fy2-1	= (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J})
-en/fy2-1	= (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J})
-en/fy2-1	= (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})
-en/fy2-1	= 36.0\,\text{GJ} + 10.5\,\text{GJ} + 9.0\,\text{GJ} + 4.5\,\text{GJ}
-en/fy2-1	= 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 
-en/fy2-1	= 4.20\,\text{MJ} + 0.16\,\text{MJ} + 0.08\,\text{MJ} + 0.42\,\text{MJ
-en/fy2-1	= E_\text{heating} + E_\text{water} + E_\text{elec} + E_\text{sauna}
-en/fy2-1	= E_\text{p,C} + E_\text{k,C} + E_\text{thermal}
-en/fy2-1	\Delta E_\text{thermal} = E_\text{thermal,C} - E_\text{thermal,B}
-en/fy2-1	\Delta E_\text{thermal} = E_\text{thermal,incand} - E_\text{thermal,LE
-en/fy2-2	0.0033\,\text{GJ} = 0.0033 \cdot 1000\,\text{MJ} = 3.3\,\text{MJ}
-en/fy2-2	1.4 + 3.2 + 0.65 + 4.2 + 0.90 = 10.35
-en/fy2-2	2.2\,\text{MJ} = 2.2 \cdot 1000\,\text{kJ} = 2200\,\text{kJ}
-en/fy2-2	3.2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}
-en/fy2-2	60\,\text{MJ} + 2\,\text{MJ} + 4\,\text{MJ} = 66\,\text{MJ}
-en/fy2-2	9\,\text{GJ} + 300\,\text{GJ} + 51\,\text{GJ} = 360\,\text{GJ}
-en/fy2-2	E_\text{battery} = 360\,\text{GJ} - 9\,\text{GJ} - 300\,\text{GJ}
-en/fy2-2	E_\text{battery} = E_\text{produced} - E_\text{heat} - E_\text{use}
-en/fy2-2	E_\text{produced} = E_\text{heat} + E_\text{use} + E_\text{battery}
-en/fy2-3	(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0.20\,\text{€/kWh}
-en/fy2-3	11.5 + 12.0 + 11.5 + 12.0 = 47.0\,\text{min}
-en/fy2-3	18.0 + 18.5 + 17.5 + 18.0 = 72.0\,\text{min}
-en/fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
-en/fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\te
-en/fy2-3	200 + 600 + 800 + 800 + 400 = 2800
-en/fy2-3	47.0\,\text{min} + 72.0\,\text{min} = 119.0\,\text{min}
-en/fy2-3	800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}
-en/fy2-3	E = 1500 \cdot 3.0\,\text{kWh} = 4500\,\text{kWh}
+en/fy2-2	2.5\,\text{kJ} = 2.5 : 1000\,\text{J} = 0.0025\,\text{J}
 en/fy2-3	E = P\,t = 2.0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-en/fy2-3	P_2 : P_1 = 4.0\,\text{kW} : 2.0\,\text{kW} = 2.0
-en/fy2-3	\text{saving} = (E - E_\text{new}) \cdot \text{unit price}
-en/fy2-4	0.228\,\text{kWh} + 0.012\,\text{kWh} = 0.24\,\text{kWh}
-en/fy2-4	150\,000\,\text{J} + 450\,000\,\text{J} = 600\,000\,\text{J}
-en/fy2-4	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
-en/fy2-4	2.96\,\text{kWh} + 6.89\,\text{kWh} = 9.85\,\text{kWh}
-en/fy2-4	6.89\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 1.38\,\text{€}
-en/fy2-4	= \dfrac{\text{thickness of the useful arrow}}{\text{thickness of the 
-en/fy2-4	\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\t
-en/fy2-5	250\,\text{g} = 250 \cdot (1 : 1000)\,\text{kg} = 0.250\,\text{kg}
-en/fy2-5	E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,
-en/fy2-5	E = Hm = 15\,\text{MJ/kg} \cdot 4.0\,\text{kg} = 60\,\text{MJ}
-en/fy2-5	E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,
-en/fy2-5	E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 86\,\
-en/fy2-6	0.33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 1.7\,\text{TWh}
-en/fy2-6	0.90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 4.7\,\text{TWh}
-en/fy2-6	1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}
-en/fy2-6	100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}
-en/fy2-6	11.3\,\text{GW} - 4.3\,\text{GW} - 6.4\,\text{GW} = 0.6\,\text{GW}
-en/fy2-6	120\,\text{million euros} = 120 \cdot 10^{6}\,\text{euros}
-en/fy2-6	1600\,\text{MW} = 1600 \cdot 1000\,\text{kW}
-en/fy2-6	2.30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}
-en/fy2-6	22.0 + 16.0 + 1.5 + 28.5 = 68.0\,\text{TWh}
-en/fy2-6	28.5\,\text{TWh} - 14.0\,\text{TWh} = 14.5\,\text{TWh}
-en/fy2-6	32.0 + 14.0 + 20.0 + 14.0 = 80.0\,\text{TWh}
-en/fy2-6	32.0 : 80.0 + 14.0 : 80.0 + 20.0 : 80.0 + 14.0 : 80.0
-en/fy2-6	4.8 + 3.1 + 0.6 + 0.4 + 1.9 + 4.2 + 5.4 = 20.4\,\text{GW}
-en/fy2-6	6000\,\text{million euros} = 6000 \cdot 10^{6}\,\text{euros}
-en/fy2-6	9.5 + 9.8 + 10.2 + 10.6 + 10.1 + 8.7 + 8.4 = 67.3\,\text{GW}
-en/fy2-6	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2.0 \cdot 10^{9}\,\text
-en/fy2-6	= 1.2 + 3.2 + 6.1 + 6.7 + 4.7 + 1.0 - 0.5
-en/fy2-6	= 1.6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh}
-en/fy2-6	= 11\,\text{GW} - 3.5\,\text{GW} - 0.040 \cdot 9.0\,\text{GW}
-en/fy2-6	= 11\,\text{GW} - 3.5\,\text{GW} - 0.36\,\text{GW}
-en/fy2-6	= 120 \cdot 10^{6}\,\text{euros} : 7\,227\,000\,\text{MWh}
-en/fy2-6	= 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh}
-en/fy2-6	= 6000 \cdot 10^{6}\,\text{euros} : 567\,648\,000\,\text{MWh}
-en/fy2-6	= P_\text{cons} - P_\text{nuc} - 0.040 \cdot P_\text{wind,nom}
-en/fy2-6	P = 14 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h} \approx 1.6\,\text{MW
-en/fy2-6	P = 14\,\text{GWh} \cdot 8760\,\text{h} \approx 123\,000\,\text{GW}
-en/fy2-6	P_\text{m} = 13.1\,\text{GW} - 4.3\,\text{GW} - 0.4\,\text{GW}
-en/fy2-6	P_\text{other} = P_\text{consumption} - 3.5\,\text{GW} - P_\text{wind}
-en/fy2-6	P_\text{other} = P_\text{consumption} - P_\text{nuclear} - P_\text{win
-en/fy2-6	o_1 = 1.5 : 68.0 = 0.0221 = 2.2\,\%
-en/fy2-6	o_2 = 20.0 : 80.0 = 0.250 = 25\,\%
+en/fy2-3	P_1 = 6.0\,\text{kWh} : 3.0\,\text{h} = 2.0\,\text{kW}
+en/fy2-3	P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}
+en/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
+en/fy2-5	2.2\,\text{MJ} : 0.100\,\text{kg} = 22\,\text{MJ/kg}
+en/fy2-6	E = 1.6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
+en/fy2-6	P = 20.2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
 en/fy2-7	0.048 = 0.048 \cdot 100\,\% = 4.8\,\%
-en/fy2-7	0.40 \cdot 1.8\,\text{kW} \cdot 5000\,\text{h} = 3600\,\text{kWh}
-en/fy2-7	0.60 \cdot 1.5\,\text{kW} \cdot 5000\,\text{h} = 4500\,\text{kWh}
-en/fy2-7	120.0\,\text{MW} + 5.0\,\text{MW} = 125\,\text{MW}
-en/fy2-7	1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}
-en/fy2-7	1500\,\text{MWh} - 1200\,\text{MWh} = 300\,\text{MWh}
-en/fy2-7	222.95\,\text{MWh} + 22.05\,\text{MWh} = 245\,\text{MWh}
-en/fy2-7	238\,\text{MWh} + 12\,\text{MWh} = 250\,\text{MWh}
-en/fy2-7	2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}
-en/fy2-7	33.0\,\text{MWh} - 20\,\text{MWh} = 13.0\,\text{MWh}
-en/fy2-7	360\,\text{MWh} - 32.4\,\text{MWh} \approx 328\,\text{MWh}
-en/fy2-7	480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}
-en/fy2-7	500\,\text{MWh} - 20\,\text{MWh} = 480\,\text{MWh}
-en/fy2-7	500\,\text{MWh} - 375\,\text{MWh} = 125\,\text{MWh}
-en/fy2-7	500\,\text{MWh} - 4\,\text{MWh} = 496\,\text{MWh}
-en/fy2-7	520\,\text{MWh} - 442.0\,\text{MWh} = 78.0\,\text{MWh}
-en/fy2-7	6.593\,\text{MWh} - 6.0\,\text{MWh} = 0.593\,\text{MWh}
-en/fy2-7	8.0\,\text{kWh} - 6.0\,\text{kWh} = 2.0\,\text{kWh}
-en/fy2-7	80.0\,\text{MWh} - 76.8\,\text{MWh} = 3.2\,\text{MWh}
-en/fy2-7	E_\text{loss} = 36.0\,\text{TWh} - 32.7\,\text{TWh}
-en/fy2-7	\eta = E_\text{useful} : E_\text{used} = 6.0 : 8.0 = 0.75
-en/fy2-8	12\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 1.2 \cdot 10^{9}
-en/fy2-8	13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}
-en/fy2-8	1640\,\text{g} = 1640 \cdot 0.001\,\text{kg} = 1.64\,\text{kg}
-en/fy2-8	19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}
-en/fy2-8	32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t}
-en/fy2-8	490\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 4.9 \cdot 10^{1
-en/fy2-8	= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh}
-en/fy2-8	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh}
-en/fy2-8	= 414\,\text{ppm} + 2.2\,\text{ppm/a} \cdot 20\,\text{a}
 en/fy2-8	m = 820\,\text{g/kWh} \cdot 2.0\,\text{kWh} = 1640
-en/fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 en/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2.80 \cdot 10^3\,\text{m}^3}{8.31\,
 en/fy3-12	P = UA\Delta T = 1.0 \cdot 1.6 \cdot 6\,\text{W} = 9.6\,\text{W}
 en/fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
@@ -407,6 +289,7 @@ en/fy4-2	= 20\,\text{m/s} \cdot 4.0\,\text{s} + \tfrac{1}{2} \cdot (-5.0\,\text
 en/fy4-2	= 3.10\,\text{m/s} + 2 \cdot (-4.86\,\text{m/s}^2) \cdot 0.500\,\text{
 en/fy4-2	= \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 20.0\,\text{s} + 15.0\,\te
 en/fy4-2	\sqrt{2 \cdot 1.60\,\text{m} : 9.81\,\text{m/s}^2} \approx 0.57\,\text
+en/fy4-2	\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s
 en/fy4-2	\sqrt{2 \cdot 9.26\,\text{m} : 9.81\,\text{m/s}^2} \approx 1.37\,\text
 en/fy4-2	v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} \approx 19.6\,\text{
 en/fy4-2	y = -4.86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3.10\,\tfrac{\text
@@ -477,6 +360,7 @@ en/fy5-14	= 2000\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} - 12.5
 en/fy5-15	1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \t
 en/fy5-15	2\,\text{W} : 8000\,\text{m}^2 = 0.00025\,\text{W/m}^2
 en/fy5-15	= 10\,\text{dB} \cdot \lg \dfrac{1.25 \cdot 10^{-4}\,\text{W/m}^2}{1.0
+en/fy5-15	= 4\pi \cdot (4.0\,\text{m})^2 \cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2
 en/fy5-15	I = 10^{-0.5} I_0 \approx 3.2 \cdot 10^{-13}\,\text{W/m}^2
 en/fy5-15	I = 10^{6.5} \cdot I_0 \approx 3.2 \cdot 10^{-6}\,\text{W/m}^2
 en/fy5-16	D = 0.198 + 1.0 + 0.375 = 1.57
@@ -519,7 +403,6 @@ en/fy5-2	m_\text{p} g\,(x_2 - x_\text{p}) - m_\text{pt} g\,(x - x_2) = 0
 en/fy5-3	0.2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 en/fy5-3	2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} = 2.649 \cdot 10^{8}\,\text{m}
 en/fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2.649 \cdot 10^{8}\,\text{m
-en/fy5-3	= 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\t
 en/fy5-3	v = 2\pi \cdot 0.35\,\text{m} \cdot 3.0\,\tfrac{1}{\text{s}} = 6.6\,\t
 en/fy5-3	v_1 = 2\pi \cdot 1.2\,\text{m} \cdot 0.267\,\tfrac{1}{\text{s}} \appro
 en/fy5-3	v_2 = 2\pi \cdot 2.4\,\text{m} \cdot 0.133\,\tfrac{1}{\text{s}} \appro
@@ -528,7 +411,6 @@ en/fy5-4	= 80\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 + \dfrac{(8.0\,\text{m/s}
 en/fy5-4	N = 0.17\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.7\,\text{N}
 en/fy5-4	T = m\dfrac{v^2}{r} = 0.17\,\text{kg}\cdot\dfrac{(1.5\,\text{m/s})^2}{
 en/fy5-5	= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \
-en/fy5-5	= \dfrac{1.99 \cdot 10^{30}\,\text{kg}}{7.35 \cdot 10^{22}\,\text{kg}}
 en/fy5-5	g = \gamma \tfrac{M}{r^2} = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot
 en/fy5-6	1.588 \cdot 10^{30}\,\text{kg} : 1.99 \cdot 10^{30}\,\text{kg} \approx
 en/fy5-6	42\,164\,\text{km} \cdot \sqrt[3]{0.107} \approx 20\,000\,\text{km}
@@ -538,6 +420,7 @@ en/fy5-7	= 4.0\,\text{cm} \cdot \sin(2\pi \cdot 0.50\,\text{Hz} \cdot 0.40\,\te
 en/fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0.090\,
 en/fy5-8	N = 6.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 59\,\text{N}
 en/fy5-8	x = \dfrac{F_\mu}{k} = \dfrac{18\,\text{N}}{120\,\text{N/m}} = 0.15\,\
+en/fy5-9	= (0.100\,\text{m})^2 - (0.0500\,\text{m})^2
 en/fy5-9	= \dfrac{1200\,\text{N/m} \cdot (1.66\,\text{s})^2}{4\pi^2} - 10.0\,\t
 en/fy5-9	kx = 40\,\text{N/m} \cdot 0.050\,\text{m} = 2.0\,\text{N}
 en/fy6-1	0.31\,\text{A} + 0.30\,\text{A} + 0.32\,\text{A} + 0.30\,\text{A} + 0.
@@ -702,6 +585,7 @@ en/fy6-9	I = (14.4\,\text{V} - 12.6\,\text{V}) : (0.25\,\Omega + 0.050\,\Omega)
 en/fy7-1	= (12\,\mu\text{T})^2 + (-5.0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 en/fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 en/fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
+en/fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
 en/fy7-10	0.020\,\text{m} : 3.00 \cdot 10^{8}\,\text{m/s} \approx 67\,\text{ps}
 en/fy7-10	1.3274 + 1.3319 + 1.3344 + 1.3268 = 5.3205
 en/fy7-10	26.0\,\text{mm} \cdot \tan 55.0^\circ = 37.1\,\text{mm}
@@ -766,7 +650,9 @@ en/fy7-2	= \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot (0.200\,\text{T})^2}{2}
 en/fy7-2	= \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.20\,\text{T} \cdot 0.1
 en/fy7-2	= \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T} \cdot 0.2
 en/fy7-2	= \dfrac{1.8288 \cdot 10^{-26}\,\text{kg} \cdot 5.919 \cdot 10^{5}\,\t
+en/fy7-2	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\,\
 en/fy7-2	= \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \cdot (1.92 \cdot
+en/fy7-2	G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2
 en/fy7-3	2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}
 en/fy7-3	= 2.465 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0.160\,\text{m
 en/fy7-3	= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2.31\,\text{A
@@ -787,6 +673,7 @@ en/fy7-4	= 4.0\,\text{A} \cdot 0.50\,\text{m} \cdot 0.20\,\text{T} \cdot \sin 3
 en/fy7-4	B = F : (I l) = 0.0240\,\text{N} : (6.0\,\text{A} \cdot 0.050\,\text{m
 en/fy7-4	F = 5.0\,\text{A} \cdot 0.20\,\text{m} \cdot 0.30\,\text{T} \cdot 0.5 
 en/fy7-4	F = \Delta m \cdot g = 0.00245\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0
+en/fy7-5	-8.0\,\text{mWb} : 0.40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}
 en/fy7-5	-N\Delta\Phi = -10 \cdot 2.0\,\text{mWb} = -20\,\text{mWb}
 en/fy7-5	0.40\,\text{m/s} \cdot 0.15\,\text{T} \cdot 0.20\,\text{m} = 12\,\text
 en/fy7-5	150 \cdot 3.6 \cdot 10^{-4}\,\text{Wb} : 0.12\,\text{s} = 0.45\,\text{
@@ -794,7 +681,9 @@ en/fy7-5	200 \cdot 3.0 \cdot 10^{-3}\,\text{Wb} : 0.40\,\text{s} = 1.5\,\text{V
 en/fy7-5	50 \cdot 4.0 \cdot 10^{-3}\,\text{Wb} : 0.20\,\text{s} = 1.0\,\text{V}
 en/fy7-5	6.0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 = 0.3\,\tex
 en/fy7-5	= 0.004\,\text{s} \cdot (\tfrac{1}{2}(-0.02) + 0.09 + 0.63 + 1.77 + 1.
+en/fy7-5	= 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1.524\,\tex
 en/fy7-5	= 600 \cdot 0.12 \cdot 10^{-3}\,\text{Wb} : (15 \cdot 10^{-3}\,\text{s
+en/fy7-5	e = 4.0\,\text{m/s} \cdot 0.25\,\text{T} \cdot 0.50\,\text{m}
 en/fy7-5	e = vBl = 2.0\,\text{m/s} \cdot 0.50\,\text{T} \cdot 0.30\,\text{m} = 
 en/fy7-5	|e| = 200 \cdot 0.30\,\text{T} \cdot 6.0 \cdot 10^{-4}\,\text{m}^2 : 0
 en/fy7-6	= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.1366\,\text{m/s}
@@ -859,14 +748,8 @@ en/fy9-voimat	a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2
 en/fy9-ympyraliike	= \dfrac{3.984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdot 
 en/fy9-ympyraliike	= \sqrt{518.0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9.81\,\tfrac{\
 en/fy9-ympyraliike	= \sqrt{\dfrac{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\
-fi-easy/FY2-sovella	0{,}11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9{,}6\,\text{G
-fi-easy/FY2-sovella	0{,}50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-fi-easy/FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4{,}6 \cdo
-fi-easy/FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8{,}7 \cd
-fi-easy/FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-fi-easy/FY2-sovella	5{,}0\,\text{MW} \cdot 8760\,\text{h} = 43{,}8\,\text{GWh}
-fi-easy/FY2-sovella	E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} \approx 14{,}
-fi-easy/FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
+fi-easy/FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
+fi-easy/FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
 fi-easy/FY4-sovella	E_\text{k} \approx 13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}
 fi-easy/FY4-sovella	F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
 fi-easy/FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}68
@@ -889,6 +772,7 @@ fi-easy/FY6-sovella	16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\
 fi-easy/FY6-sovella	3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}
 fi-easy/FY6-sovella	3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 
 fi-easy/FY6-sovella	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \c
+fi-easy/FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
 fi-easy/FY6-sovella	E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text
 fi-easy/FY6-sovella	F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} 
 fi-easy/FY6-sovella	R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,
@@ -898,150 +782,37 @@ fi-easy/FY6-sovella	\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}
 fi-easy/FY6-sovella	qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V}
 fi-easy/FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 fi-easy/FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
+fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
+fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 fi-easy/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-fi-easy/FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 fi-easy/FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
+fi-easy/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
+fi-easy/FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
 fi-easy/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 fi-easy/FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-fi-easy/FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-fi-easy/FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-fi-easy/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-fi-easy/FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-fi-easy/FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-fi-easy/FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-fi-easy/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-fi-easy/FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
 fi-easy/fy1-3	= \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\
-fi-easy/fy2-1	331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}
-fi-easy/fy2-1	3{,}20\,\text{J} + 0{,}80\,\text{J} + 1{,}00\,\text{J} = 5{,}00\,\text
-fi-easy/fy2-1	= (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J})
-fi-easy/fy2-1	= (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J})
-fi-easy/fy2-1	= (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})
-fi-easy/fy2-1	= 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\t
-fi-easy/fy2-1	= 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 
-fi-easy/fy2-1	= 4{,}20\,\text{MJ} + 0{,}16\,\text{MJ} + 0{,}08\,\text{MJ} + 0{,}42\,
-fi-easy/fy2-1	= E_\text{lämmitys} + E_\text{vesi} + E_\text{sähkö} + E_\text{sauna}
-fi-easy/fy2-1	E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{lä
-fi-easy/fy2-1	\Delta E_\text{lämpö} = E_\text{lämpö,hehku} - E_\text{lämpö,LED}
-fi-easy/fy2-2	0{,}0033\,\text{GJ} = 0{,}0033 \cdot 1000\,\text{MJ} = 3{,}3\,\text{MJ
-fi-easy/fy2-2	10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000
-fi-easy/fy2-2	1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}
-fi-easy/fy2-2	1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 + 0{,}90 = 10{,}35
-fi-easy/fy2-2	2{,}2\,\text{MJ} = 2{,}2 \cdot 1000\,\text{kJ} = 2200\,\text{kJ}
-fi-easy/fy2-2	3\,200\,000\,\text{GJ} : 70\,\text{GJ} \approx 45\,000
-fi-easy/fy2-2	3{,}2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}
-fi-easy/fy2-2	400\,000\,000 : 40 = 10\,000\,000
-fi-easy/fy2-2	60\,\text{MJ} + 2\,\text{MJ} + 4\,\text{MJ} = 66\,\text{MJ}
-fi-easy/fy2-2	9\,\text{GJ} + 300\,\text{GJ} + 51\,\text{GJ} = 360\,\text{GJ}
-fi-easy/fy2-2	E_\text{akku} = 360\,\text{GJ} - 9\,\text{GJ} - 300\,\text{GJ}
-fi-easy/fy2-2	E_\text{akku} = E_\text{tuotettu} - E_\text{lämpö} - E_\text{käyttö}
-fi-easy/fy2-2	E_\text{tuotettu} = E_\text{lämpö} + E_\text{käyttö} + E_\text{akku}
-fi-easy/fy2-3	(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0{,}20\,\text{€/kWh}
-fi-easy/fy2-3	10\,\text{J/s} \cdot 540\,000\,\text{s} = 5\,400\,000\,\text{J}
-fi-easy/fy2-3	11{,}5 + 12{,}0 + 11{,}5 + 12{,}0 = 47{,}0\,\text{min}
-fi-easy/fy2-3	18{,}0 + 18{,}5 + 17{,}5 + 18{,}0 = 72{,}0\,\text{min}
-fi-easy/fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\te
-fi-easy/fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fi-easy/fy2-3	1{,}8\,\text{kW} \cdot (1\,\text{h} : 6) = 0{,}30\,\text{kWh}
-fi-easy/fy2-3	200 + 600 + 800 + 800 + 400 = 2800
-fi-easy/fy2-3	47{,}0\,\text{min} + 72{,}0\,\text{min} = 119{,}0\,\text{min}
-fi-easy/fy2-3	800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}
-fi-easy/fy2-3	E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}
+fi-easy/fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
+fi-easy/fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
+fi-easy/fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
 fi-easy/fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-fi-easy/fy2-3	P_2 : P_1 = 4{,}0\,\text{kW} : 2{,}0\,\text{kW} = 2{,}0
-fi-easy/fy2-3	\text{säästö} = (E - E_\text{uusi}) \cdot \text{yksikköhinta}
-fi-easy/fy2-4	0{,}228\,\text{kWh} + 0{,}012\,\text{kWh} = 0{,}24\,\text{kWh}
-fi-easy/fy2-4	0{,}30 \cdot 9{,}855\,\text{kWh} = 2{,}96\,\text{kWh}
-fi-easy/fy2-4	150\,000\,\text{J} + 450\,000\,\text{J} = 600\,000\,\text{J}
-fi-easy/fy2-4	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fi-easy/fy2-4	2{,}96\,\text{kWh} + 6{,}89\,\text{kWh} = 9{,}85\,\text{kWh}
-fi-easy/fy2-4	4{,}5 \cdot 10^{6}\,\text{J} : 3600\,\text{s} = 1250\,\text{W}
-fi-easy/fy2-4	6{,}89\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 1{,}38\,\text{€}
-fi-easy/fy2-4	\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\t
-fi-easy/fy2-5	250\,\text{g} = 250 \cdot (1 : 1000)\,\text{kg} = 0{,}250\,\text{kg}
-fi-easy/fy2-5	360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}
-fi-easy/fy2-5	E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,
-fi-easy/fy2-5	E = Hm = 15\,\text{MJ/kg} \cdot 4{,}0\,\text{kg} = 60\,\text{MJ}
-fi-easy/fy2-5	E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,
-fi-easy/fy2-5	E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\
-fi-easy/fy2-6	0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 1{,}7\,\text{
-fi-easy/fy2-6	0{,}90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 4{,}7\,\text{
-fi-easy/fy2-6	1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}
-fi-easy/fy2-6	100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}
-fi-easy/fy2-6	11{,}3\,\text{GW} - 4{,}3\,\text{GW} - 6{,}4\,\text{GW} = 0{,}6\,\text
-fi-easy/fy2-6	120\,\text{MW} \cdot 24\,\text{h} = 2880\,\text{MWh}
-fi-easy/fy2-6	120\,\text{milj. euroa} = 120 \cdot 10^{6}\,\text{euroa}
-fi-easy/fy2-6	1600\,\text{MW} = 1600 \cdot 1000\,\text{kW}
-fi-easy/fy2-6	1615 - 588 - 490 = 537\,\text{GWh}
-fi-easy/fy2-6	22{,}0 + 16{,}0 + 1{,}5 + 28{,}5 = 68{,}0\,\text{TWh}
-fi-easy/fy2-6	28{,}5\,\text{TWh} - 14{,}0\,\text{TWh} = 14{,}5\,\text{TWh}
-fi-easy/fy2-6	2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}
-fi-easy/fy2-6	2{,}5\,\text{MW} \cdot 170\,\text{h} \approx 425\,\text{MWh}
-fi-easy/fy2-6	30\,000\,\text{GWh} : 12\,\text{GWh} = 2500
-fi-easy/fy2-6	32{,}0 + 14{,}0 + 20{,}0 + 14{,}0 = 80{,}0\,\text{TWh}
-fi-easy/fy2-6	32{,}0 : 80{,}0 + 14{,}0 : 80{,}0 + 20{,}0 : 80{,}0 + 14{,}0 : 80{,}0
-fi-easy/fy2-6	4{,}8 + 3{,}1 + 0{,}6 + 0{,}4 + 1{,}9 + 4{,}2 + 5{,}4 = 20{,}4\,\text{
-fi-easy/fy2-6	52 \cdot 420\,\text{MWh} \approx 22\,000\,\text{MWh}
-fi-easy/fy2-6	6000\,\text{milj. euroa} = 6000 \cdot 10^{6}\,\text{euroa}
-fi-easy/fy2-6	9{,}5 + 9{,}8 + 10{,}2 + 10{,}6 + 10{,}1 + 8{,}7 + 8{,}4
-fi-easy/fy2-6	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2{,}0 \cdot 10^{9}\,\te
-fi-easy/fy2-6	= 0{,}40 + 0{,}175 + 0{,}25 + 0{,}175
-fi-easy/fy2-6	= 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}040 \cdot 9{,}0\,\text{GW}
-fi-easy/fy2-6	= 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}36\,\text{GW}
-fi-easy/fy2-6	= 120 \cdot 10^{6}\,\text{euroa} : 7\,227\,000\,\text{MWh}
-fi-easy/fy2-6	= 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh}
-fi-easy/fy2-6	= 1{,}2 + 3{,}2 + 6{,}1 + 6{,}7 + 4{,}7 + 1{,}0 - 0{,}5
-fi-easy/fy2-6	= 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh
-fi-easy/fy2-6	= 6000 \cdot 10^{6}\,\text{euroa} : 567\,648\,000\,\text{MWh}
-fi-easy/fy2-6	= P_\text{kulutus} - P_\text{ydin} - 0{,}040 \cdot P_\text{tuuli,nim}
-fi-easy/fy2-6	P = 14 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h} \approx 1{,}6\,\text{
-fi-easy/fy2-6	P = 14\,\text{GWh} \cdot 8760\,\text{h} \approx 123\,000\,\text{GW}
-fi-easy/fy2-6	P_\text{muut} = P_\text{kulutus} - 3{,}5\,\text{GW} - P_\text{tuuli}
-fi-easy/fy2-6	P_\text{m} = 13{,}1\,\text{GW} - 4{,}3\,\text{GW} - 0{,}4\,\text{GW}
+fi-easy/fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
+fi-easy/fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
+fi-easy/fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
+fi-easy/fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
+fi-easy/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
+fi-easy/fy2-5	2{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg}
+fi-easy/fy2-5	E_\text{sisään} = 46\,\text{MJ/kg} \cdot 0{,}230\,\text{kg}
+fi-easy/fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
+fi-easy/fy2-6	= 219\,000\,\text{MWh}
+fi-easy/fy2-6	= 525\,600\,\text{MWh}
+fi-easy/fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
+fi-easy/fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
 fi-easy/fy2-7	0{,}04 \cdot 500\,\text{MWh} = 20\,\text{MWh}
-fi-easy/fy2-7	0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}
-fi-easy/fy2-7	0{,}20 \cdot 600\,\text{MWh} = 120\,\text{MWh}
-fi-easy/fy2-7	0{,}40 \cdot 1{,}8\,\text{kW} \cdot 5000\,\text{h} = 3600\,\text{kWh}
-fi-easy/fy2-7	0{,}60 \cdot 1{,}5\,\text{kW} \cdot 5000\,\text{h} = 4500\,\text{kWh}
-fi-easy/fy2-7	1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}
-fi-easy/fy2-7	120{,}0\,\text{MW} + 5{,}0\,\text{MW} = 125\,\text{MW}
-fi-easy/fy2-7	1500\,\text{MWh} - 1200\,\text{MWh} = 300\,\text{MWh}
-fi-easy/fy2-7	150\,\text{kW} \cdot 9000\,\text{h} \approx 1350\,\text{MWh}
 fi-easy/fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
-fi-easy/fy2-7	20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}
-fi-easy/fy2-7	222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} = 245\,\text{MWh}
-fi-easy/fy2-7	238\,\text{MWh} + 12\,\text{MWh} = 250\,\text{MWh}
-fi-easy/fy2-7	2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}
-fi-easy/fy2-7	33{,}0\,\text{MWh} - 20\,\text{MWh} = 13{,}0\,\text{MWh}
-fi-easy/fy2-7	360\,\text{MWh} - 32{,}4\,\text{MWh} \approx 328\,\text{MWh}
-fi-easy/fy2-7	480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}
 fi-easy/fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
-fi-easy/fy2-7	4{,}0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}
-fi-easy/fy2-7	500\,\text{MWh} - 20\,\text{MWh} = 480\,\text{MWh}
-fi-easy/fy2-7	500\,\text{MWh} - 375\,\text{MWh} = 125\,\text{MWh}
-fi-easy/fy2-7	500\,\text{MWh} - 4\,\text{MWh} = 496\,\text{MWh}
-fi-easy/fy2-7	520\,\text{MWh} - 442{,}0\,\text{MWh} = 78{,}0\,\text{MWh}
-fi-easy/fy2-7	6{,}593\,\text{MWh} - 6{,}0\,\text{MWh} = 0{,}593\,\text{MWh}
-fi-easy/fy2-7	728\,\text{kW} + 72\,\text{kW} = 800\,\text{kW}
-fi-easy/fy2-7	80{,}0\,\text{MWh} - 76{,}8\,\text{MWh} = 3{,}2\,\text{MWh}
-fi-easy/fy2-7	8{,}0\,\text{kWh} - 6{,}0\,\text{kWh} = 2{,}0\,\text{kWh}
-fi-easy/fy2-7	E_\text{häviö} = 36{,}0\,\text{TWh} - 32{,}7\,\text{TWh}
-fi-easy/fy2-7	\eta = E_\text{hyöty} : E_\text{käytetty} = 6{,}0 : 8{,}0 = 0{,}75
-fi-easy/fy2-8	10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}
-fi-easy/fy2-8	12\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 1{,}2 \cdot 10^{
-fi-easy/fy2-8	13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}
-fi-easy/fy2-8	15\,\text{a} \cdot 2{,}3\,\text{ppm/a} = 34{,}5\,\text{ppm}
-fi-easy/fy2-8	1640\,\text{g} = 1640 \cdot 0{,}001\,\text{kg} = 1{,}64\,\text{kg}
-fi-easy/fy2-8	19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}
-fi-easy/fy2-8	32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t}
-fi-easy/fy2-8	490\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 4{,}9 \cdot 10^
-fi-easy/fy2-8	= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh}
-fi-easy/fy2-8	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh}
 fi-easy/fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
-fi-easy/fy2-8	= 414\,\text{ppm} + 2{,}2\,\text{ppm/a} \cdot 20\,\text{a}
 fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
-fi-easy/fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 fi-easy/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
 fi-easy/fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
 fi-easy/fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
@@ -1193,10 +964,12 @@ fi-easy/fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2
 fi-easy/fy4-16	mgh = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
 fi-easy/fy4-2	(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}
 fi-easy/fy4-2	(4{,}0\,\text{m/s} + 8{,}72\,\text{m/s}) : 2 \approx 6{,}36\,\text{m/s
+fi-easy/fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
 fi-easy/fy4-2	1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}
 fi-easy/fy4-2	2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}
 fi-easy/fy4-2	3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}
 fi-easy/fy4-2	8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \approx 0{,}82\,\text{s}
+fi-easy/fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
 fi-easy/fy4-2	9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \approx 14{,}7\,\text{m/s}
 fi-easy/fy4-2	= (8{,}00\,\text{m/s})^2 + 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,
 fi-easy/fy4-2	= 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} - \tfrac{1}{2} \cdot 9{,}
@@ -1293,6 +1066,7 @@ fi-easy/fy5-1	F\sin 30^\circ = 200\,\text{N}\cdot 0{,}5 = 100\,\text{N}
 fi-easy/fy5-1	\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)
 fi-easy/fy5-10	v = f\lambda = 2{,}0\,\text{Hz} \cdot 0{,}50\,\text{m} = 1{,}0\,\text{
 fi-easy/fy5-11	(180^\circ - 2 \cdot 35^\circ) + (180^\circ - 2 \cdot 55^\circ)
+fi-easy/fy5-11	8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}
 fi-easy/fy5-12	3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}
 fi-easy/fy5-12	7{,}9\,\text{mm} + 8{,}1\,\text{mm} + 7{,}8\,\text{mm} = 23{,}8\,\text
 fi-easy/fy5-13	1530\,\text{Hz} \cdot 0{,}222\,\text{m} \approx 340\,\text{m/s}
@@ -1365,7 +1139,6 @@ fi-easy/fy5-3	0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 fi-easy/fy5-3	0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}
 fi-easy/fy5-3	2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} = 2{,}649 \cdot 10^{8}\,\tex
 fi-easy/fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2{,}649 \cdot 10^{8}\,\text
-fi-easy/fy5-3	= 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}
 fi-easy/fy5-3	v = 2\pi \cdot 0{,}35\,\text{m} \cdot 3{,}0\,\tfrac{1}{\text{s}} = 6{,
 fi-easy/fy5-3	v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \a
 fi-easy/fy5-3	v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \a
@@ -1373,15 +1146,10 @@ fi-easy/fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\te
 fi-easy/fy5-4	= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{
 fi-easy/fy5-4	N = 0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N
 fi-easy/fy5-4	T = m\dfrac{v^2}{r} = 0{,}17\,\text{kg}\cdot\dfrac{(1{,}5\,\text{m/s})
-fi-easy/fy5-5	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}
-fi-easy/fy5-5	16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2
-fi-easy/fy5-5	850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}
 fi-easy/fy5-5	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
-fi-easy/fy5-5	= 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2
-fi-easy/fy5-5	= 9{,}80\,\text{m/s}^2 \cdot \left(\tfrac{6378}{384\,400}\right)^2
-fi-easy/fy5-5	= \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{
 fi-easy/fy5-5	g = \gamma \tfrac{M}{r^2} = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cd
 fi-easy/fy5-6	1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2
+fi-easy/fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
 fi-easy/fy5-6	42\,164\,\text{km} \cdot \sqrt[3]{0{,}107} \approx 20\,000\,\text{km}
 fi-easy/fy5-6	7{,}66\,\text{km/s} \cdot \sqrt{\tfrac{318}{62}} \approx 17\,\text{km/
 fi-easy/fy5-6	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
@@ -1394,7 +1162,9 @@ fi-easy/fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,
 fi-easy/fy5-8	N = 6{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 59\,\text{N}
 fi-easy/fy5-8	\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\te
 fi-easy/fy5-8	x = \dfrac{F_\mu}{k} = \dfrac{18\,\text{N}}{120\,\text{N/m}} = 0{,}15\
+fi-easy/fy5-9	25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}
 fi-easy/fy5-9	2\pi\sqrt{0{,}300 : 20{,}14}\,\text{s} = 0{,}767\,\text{s}
+fi-easy/fy5-9	= (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2
 fi-easy/fy5-9	= \dfrac{1200\,\text{N/m} \cdot (1{,}66\,\text{s})^2}{4\pi^2} - 10{,}0
 fi-easy/fy5-9	kx = 40\,\text{N/m} \cdot 0{,}050\,\text{m} = 2{,}0\,\text{N}
 fi-easy/fy6-1	0{,}019\,\text{mm/s}\cdot 3600\,\text{s} \approx 69\,\text{mm}
@@ -1534,6 +1304,7 @@ fi-easy/fy6-4	100\,\Omega + 100\,\Omega + 100\,\Omega = 300\,\Omega
 fi-easy/fy6-4	60{,}0\,\text{mA} + 30{,}0\,\text{mA} = 90{,}0\,\text{mA}
 fi-easy/fy6-4	= 62\,500\,\Omega^2 - 60\,000\,\Omega^2
 fi-easy/fy6-4	I = U : R = 6{,}0\,\text{V} : 100\,\Omega = 0{,}060\,\text{A} = 60\,\t
+fi-easy/fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
 fi-easy/fy6-5	0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text
 fi-easy/fy6-5	12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}
 fi-easy/fy6-5	12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}
@@ -1595,9 +1366,11 @@ fi-easy/fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}05
 fi-easy/fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
 fi-easy/fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
 fi-easy/fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
+fi-easy/fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
 fi-easy/fy7-1	= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 fi-easy/fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 fi-easy/fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
+fi-easy/fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
 fi-easy/fy7-10	0{,}020\,\text{m} : 3{,}00 \cdot 10^{8}\,\text{m/s} \approx 67\,\text{
 fi-easy/fy7-10	1{,}3274 + 1{,}3319 + 1{,}3344 + 1{,}3268 = 5{,}3205
 fi-easy/fy7-10	26{,}0\,\text{mm} \cdot \tan 55{,}0^\circ = 37{,}1\,\text{mm}
@@ -1674,7 +1447,9 @@ fi-easy/fy7-2	= \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}20\,\text{T} \
 fi-easy/fy7-2	= \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T} \cdot
 fi-easy/fy7-2	= \dfrac{1{,}8288 \cdot 10^{-26}\,\text{kg} \cdot 5{,}919 \cdot 10^{5}
 fi-easy/fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
+fi-easy/fy7-2	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\
 fi-easy/fy7-2	= \tfrac{1}{2} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \cdot (1{,}92 \
+fi-easy/fy7-2	G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
 fi-easy/fy7-3	2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}
 fi-easy/fy7-3	= 2{,}465 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0{,}160\,\te
 fi-easy/fy7-3	= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2{,}31\,\text
@@ -1687,6 +1462,7 @@ fi-easy/fy7-3	\Delta \mu_0 \approx 0{,}017 \cdot 1{,}23 \cdot 10^{-6}\,\tfrac{\t
 fi-easy/fy7-4	(0{,}0871\,\text{T} - 0{,}0834\,\text{T}) : 2 = 0{,}0018\,\text{T}
 fi-easy/fy7-4	0{,}00090\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 : (3{,}0\,\text{A} \cd
 fi-easy/fy7-4	0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}0294\,\text{N}
+fi-easy/fy7-4	0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}
 fi-easy/fy7-4	0{,}225\,\text{N} : (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin
 fi-easy/fy7-4	20\,\text{cm} = 20 \cdot 0{,}01\,\text{m} = 0{,}20\,\text{m}
 fi-easy/fy7-4	54{,}25\,\text{A} \cdot 0{,}50\,\text{m} \cdot 1{,}085 \cdot 10^{-3}\,
@@ -1698,8 +1474,11 @@ fi-easy/fy7-4	F = 5{,}0\,\text{A} \cdot 0{,}20\,\text{m} \cdot 0{,}30\,\text{T} 
 fi-easy/fy7-4	F = \Delta m \cdot g = 0{,}00245\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
 fi-easy/fy7-5	-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{
 fi-easy/fy7-5	-N\Delta\Phi = -10 \cdot 2{,}0\,\text{mWb} = -20\,\text{mWb}
+fi-easy/fy7-5	0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}
 fi-easy/fy7-5	= 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1
+fi-easy/fy7-5	= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,
 fi-easy/fy7-5	= 600 \cdot 0{,}12 \cdot 10^{-3}\,\text{Wb} : (15 \cdot 10^{-3}\,\text
+fi-easy/fy7-5	e = 4{,}0\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}50\,\text{m}
 fi-easy/fy7-5	e = vBl = 2{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}30\,\text
 fi-easy/fy7-5	|e| = 200 \cdot 0{,}30\,\text{T} \cdot 6{,}0 \cdot 10^{-4}\,\text{m}^2
 fi-easy/fy7-6	0{,}25\,\text{N} \cdot 0{,}3\,\text{m/s} \approx 0{,}075\,\text{W}
@@ -1777,134 +1556,27 @@ fi-easy/fy9-ympyraliike	= \sqrt{518{,}0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdo
 fi-easy/fy9-ympyraliike	= \sqrt{\dfrac{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}
 fy1-3	= \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\
 fy10-hissi	\tfrac{1}{2} \cdot \delta a \cdot t_\text{loppu}^2 = \tfrac{1}{2} \cdo
-fy2-1	331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}
-fy2-1	3{,}20\,\text{J} + 0{,}80\,\text{J} + 1{,}00\,\text{J} = 5{,}00\,\text
-fy2-1	= (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J})
-fy2-1	= (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J})
-fy2-1	= (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})
-fy2-1	= 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\t
-fy2-1	= 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 
-fy2-1	= 4{,}20\,\text{MJ} + 0{,}16\,\text{MJ} + 0{,}08\,\text{MJ} + 0{,}42\,
-fy2-1	= E_\text{lämmitys} + E_\text{vesi} + E_\text{sähkö} + E_\text{sauna}
-fy2-1	E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{lä
-fy2-1	\Delta E_\text{lämpö} = E_\text{lämpö,hehku} - E_\text{lämpö,LED}
-fy2-2	0{,}0033\,\text{GJ} = 0{,}0033 \cdot 1000\,\text{MJ} = 3{,}3\,\text{MJ
-fy2-2	10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000
-fy2-2	1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}
-fy2-2	1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 + 0{,}90 = 10{,}35
-fy2-2	2{,}2\,\text{MJ} = 2{,}2 \cdot 1000\,\text{kJ} = 2200\,\text{kJ}
-fy2-2	3\,200\,000\,\text{GJ} : 70\,\text{GJ} \approx 45\,000
-fy2-2	3{,}2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}
-fy2-2	400\,000\,000 : 40 = 10\,000\,000
-fy2-2	60\,\text{MJ} + 2\,\text{MJ} + 4\,\text{MJ} = 66\,\text{MJ}
-fy2-2	9\,\text{GJ} + 300\,\text{GJ} + 51\,\text{GJ} = 360\,\text{GJ}
-fy2-2	E_\text{akku} = 360\,\text{GJ} - 9\,\text{GJ} - 300\,\text{GJ}
-fy2-2	E_\text{akku} = E_\text{tuotettu} - E_\text{lämpö} - E_\text{käyttö}
-fy2-2	E_\text{tuotettu} = E_\text{lämpö} + E_\text{käyttö} + E_\text{akku}
-fy2-3	(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0{,}20\,\text{€/kWh}
-fy2-3	11{,}5 + 12{,}0 + 11{,}5 + 12{,}0 = 47{,}0\,\text{min}
-fy2-3	18{,}0 + 18{,}5 + 17{,}5 + 18{,}0 = 72{,}0\,\text{min}
-fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\te
-fy2-3	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fy2-3	1{,}8\,\text{kW} \cdot (1\,\text{h} : 6) = 0{,}30\,\text{kWh}
-fy2-3	200 + 600 + 800 + 800 + 400 = 2800
-fy2-3	47{,}0\,\text{min} + 72{,}0\,\text{min} = 119{,}0\,\text{min}
-fy2-3	800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}
-fy2-3	E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}
+fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
+fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
+fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
 fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-fy2-3	P_2 : P_1 = 4{,}0\,\text{kW} : 2{,}0\,\text{kW} = 2{,}0
-fy2-3	\text{säästö} = (E - E_\text{uusi}) \cdot \text{yksikköhinta}
-fy2-4	0{,}228\,\text{kWh} + 0{,}012\,\text{kWh} = 0{,}24\,\text{kWh}
-fy2-4	0{,}30 \cdot 9{,}855\,\text{kWh} = 2{,}96\,\text{kWh}
-fy2-4	150\,000\,\text{J} + 450\,000\,\text{J} = 600\,000\,\text{J}
-fy2-4	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fy2-4	2{,}96\,\text{kWh} + 6{,}89\,\text{kWh} = 9{,}85\,\text{kWh}
-fy2-4	4{,}5 \cdot 10^{6}\,\text{J} : 3600\,\text{s} = 1250\,\text{W}
-fy2-4	6{,}89\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 1{,}38\,\text{€}
-fy2-4	\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\t
-fy2-5	250\,\text{g} = 250 \cdot (1 : 1000)\,\text{kg} = 0{,}250\,\text{kg}
-fy2-5	360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}
-fy2-5	E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,
-fy2-5	E = Hm = 15\,\text{MJ/kg} \cdot 4{,}0\,\text{kg} = 60\,\text{MJ}
-fy2-5	E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,
-fy2-5	E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\
-fy2-6	0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 1{,}7\,\text{
-fy2-6	0{,}90 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \approx 4{,}7\,\text{
-fy2-6	1000\,\text{kW} \cdot 9000\,\text{h} = 9 \cdot 10^{6}\,\text{kWh}
-fy2-6	100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}
-fy2-6	11{,}3\,\text{GW} - 4{,}3\,\text{GW} - 6{,}4\,\text{GW} = 0{,}6\,\text
-fy2-6	120\,\text{MW} \cdot 24\,\text{h} = 2880\,\text{MWh}
-fy2-6	120\,\text{milj. euroa} = 120 \cdot 10^{6}\,\text{euroa}
-fy2-6	1600\,\text{MW} = 1600 \cdot 1000\,\text{kW}
-fy2-6	1615 - 588 - 490 = 537\,\text{GWh}
-fy2-6	22{,}0 + 16{,}0 + 1{,}5 + 28{,}5 = 68{,}0\,\text{TWh}
-fy2-6	28{,}5\,\text{TWh} - 14{,}0\,\text{TWh} = 14{,}5\,\text{TWh}
-fy2-6	2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}
-fy2-6	2{,}5\,\text{MW} \cdot 170\,\text{h} \approx 425\,\text{MWh}
-fy2-6	30\,000\,\text{GWh} : 12\,\text{GWh} = 2500
-fy2-6	32{,}0 + 14{,}0 + 20{,}0 + 14{,}0 = 80{,}0\,\text{TWh}
-fy2-6	32{,}0 : 80{,}0 + 14{,}0 : 80{,}0 + 20{,}0 : 80{,}0 + 14{,}0 : 80{,}0
-fy2-6	4{,}8 + 3{,}1 + 0{,}6 + 0{,}4 + 1{,}9 + 4{,}2 + 5{,}4 = 20{,}4\,\text{
-fy2-6	52 \cdot 420\,\text{MWh} \approx 22\,000\,\text{MWh}
-fy2-6	6000\,\text{milj. euroa} = 6000 \cdot 10^{6}\,\text{euroa}
-fy2-6	9{,}5 + 9{,}8 + 10{,}2 + 10{,}6 + 10{,}1 + 8{,}7 + 8{,}4
-fy2-6	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 2{,}0 \cdot 10^{9}\,\te
-fy2-6	= 0{,}40 + 0{,}175 + 0{,}25 + 0{,}175
-fy2-6	= 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}040 \cdot 9{,}0\,\text{GW}
-fy2-6	= 11\,\text{GW} - 3{,}5\,\text{GW} - 0{,}36\,\text{GW}
-fy2-6	= 120 \cdot 10^{6}\,\text{euroa} : 7\,227\,000\,\text{MWh}
-fy2-6	= 14\,016\,000\,000\,\text{kWh} : 5000\,\text{kWh}
-fy2-6	= 1{,}2 + 3{,}2 + 6{,}1 + 6{,}7 + 4{,}7 + 1{,}0 - 0{,}5
-fy2-6	= 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h} : 5000\,\text{kWh
-fy2-6	= 6000 \cdot 10^{6}\,\text{euroa} : 567\,648\,000\,\text{MWh}
-fy2-6	= P_\text{kulutus} - P_\text{ydin} - 0{,}040 \cdot P_\text{tuuli,nim}
-fy2-6	P = 14 \cdot 10^{6}\,\text{kWh} : 8760\,\text{h} \approx 1{,}6\,\text{
-fy2-6	P = 14\,\text{GWh} \cdot 8760\,\text{h} \approx 123\,000\,\text{GW}
-fy2-6	P_\text{muut} = P_\text{kulutus} - 3{,}5\,\text{GW} - P_\text{tuuli}
-fy2-6	P_\text{m} = 13{,}1\,\text{GW} - 4{,}3\,\text{GW} - 0{,}4\,\text{GW}
-fy2-7	0{,}041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}
-fy2-7	0{,}20 \cdot 600\,\text{MWh} = 120\,\text{MWh}
-fy2-7	0{,}40 \cdot 1{,}8\,\text{kW} \cdot 5000\,\text{h} = 3600\,\text{kWh}
-fy2-7	0{,}60 \cdot 1{,}5\,\text{kW} \cdot 5000\,\text{h} = 4500\,\text{kWh}
-fy2-7	1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}
-fy2-7	120{,}0\,\text{MW} + 5{,}0\,\text{MW} = 125\,\text{MW}
-fy2-7	1500\,\text{MWh} - 1200\,\text{MWh} = 300\,\text{MWh}
-fy2-7	150\,\text{kW} \cdot 9000\,\text{h} \approx 1350\,\text{MWh}
+fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
+fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
+fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
+fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
+fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
+fy2-5	2{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg}
+fy2-5	E_\text{sisään} = 46\,\text{MJ/kg} \cdot 0{,}230\,\text{kg}
+fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
+fy2-6	= 219\,000\,\text{MWh}
+fy2-6	= 525\,600\,\text{MWh}
+fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
+fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
 fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
-fy2-7	20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}
-fy2-7	222{,}95\,\text{MWh} + 22{,}05\,\text{MWh} = 245\,\text{MWh}
-fy2-7	238\,\text{MWh} + 12\,\text{MWh} = 250\,\text{MWh}
-fy2-7	2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}
-fy2-7	33{,}0\,\text{MWh} - 20\,\text{MWh} = 13{,}0\,\text{MWh}
-fy2-7	360\,\text{MWh} - 32{,}4\,\text{MWh} \approx 328\,\text{MWh}
-fy2-7	480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}
 fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
-fy2-7	4{,}0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}
-fy2-7	500\,\text{MWh} - 20\,\text{MWh} = 480\,\text{MWh}
-fy2-7	500\,\text{MWh} - 375\,\text{MWh} = 125\,\text{MWh}
-fy2-7	500\,\text{MWh} - 4\,\text{MWh} = 496\,\text{MWh}
-fy2-7	520\,\text{MWh} - 442{,}0\,\text{MWh} = 78{,}0\,\text{MWh}
-fy2-7	6{,}593\,\text{MWh} - 6{,}0\,\text{MWh} = 0{,}593\,\text{MWh}
-fy2-7	728\,\text{kW} + 72\,\text{kW} = 800\,\text{kW}
-fy2-7	80{,}0\,\text{MWh} - 76{,}8\,\text{MWh} = 3{,}2\,\text{MWh}
-fy2-7	8{,}0\,\text{kWh} - 6{,}0\,\text{kWh} = 2{,}0\,\text{kWh}
-fy2-7	E_\text{häviö} = 36{,}0\,\text{TWh} - 32{,}7\,\text{TWh}
-fy2-7	\eta = E_\text{hyöty} : E_\text{käytetty} = 6{,}0 : 8{,}0 = 0{,}75
-fy2-8	10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}
-fy2-8	12\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 1{,}2 \cdot 10^{
-fy2-8	13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}
-fy2-8	15\,\text{a} \cdot 2{,}3\,\text{ppm/a} = 34{,}5\,\text{ppm}
-fy2-8	1640\,\text{g} = 1640 \cdot 0{,}001\,\text{kg} = 1{,}64\,\text{kg}
-fy2-8	19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}
-fy2-8	32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t}
-fy2-8	490\,\text{g/kWh} \cdot 100 \cdot 10^{6}\,\text{kWh} = 4{,}9 \cdot 10^
-fy2-8	= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh}
-fy2-8	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh}
 fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
-fy2-8	= 414\,\text{ppm} + 2{,}2\,\text{ppm/a} \cdot 20\,\text{a}
 fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
-fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
 fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
 fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
@@ -2056,10 +1728,12 @@ fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2
 fy4-16	mgh = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
 fy4-2	(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}
 fy4-2	(4{,}0\,\text{m/s} + 8{,}72\,\text{m/s}) : 2 \approx 6{,}36\,\text{m/s
+fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
 fy4-2	1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}
 fy4-2	2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}
 fy4-2	3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}
 fy4-2	8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \approx 0{,}82\,\text{s}
+fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
 fy4-2	9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \approx 14{,}7\,\text{m/s}
 fy4-2	= (8{,}00\,\text{m/s})^2 + 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,
 fy4-2	= 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} - \tfrac{1}{2} \cdot 9{,}
@@ -2156,6 +1830,7 @@ fy5-1	F\sin 30^\circ = 200\,\text{N}\cdot 0{,}5 = 100\,\text{N}
 fy5-1	\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)
 fy5-10	v = f\lambda = 2{,}0\,\text{Hz} \cdot 0{,}50\,\text{m} = 1{,}0\,\text{
 fy5-11	(180^\circ - 2 \cdot 35^\circ) + (180^\circ - 2 \cdot 55^\circ)
+fy5-11	8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}
 fy5-12	3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}
 fy5-12	7{,}9\,\text{mm} + 8{,}1\,\text{mm} + 7{,}8\,\text{mm} = 23{,}8\,\text
 fy5-13	1530\,\text{Hz} \cdot 0{,}222\,\text{m} \approx 340\,\text{m/s}
@@ -2228,7 +1903,6 @@ fy5-3	0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 fy5-3	0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}
 fy5-3	2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} = 2{,}649 \cdot 10^{8}\,\tex
 fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2{,}649 \cdot 10^{8}\,\text
-fy5-3	= 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}
 fy5-3	v = 2\pi \cdot 0{,}35\,\text{m} \cdot 3{,}0\,\tfrac{1}{\text{s}} = 6{,
 fy5-3	v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \a
 fy5-3	v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \a
@@ -2236,15 +1910,10 @@ fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\text{m
 fy5-4	= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{
 fy5-4	N = 0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N
 fy5-4	T = m\dfrac{v^2}{r} = 0{,}17\,\text{kg}\cdot\dfrac{(1{,}5\,\text{m/s})
-fy5-5	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}
-fy5-5	16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2
-fy5-5	850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}
 fy5-5	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
-fy5-5	= 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2
-fy5-5	= 9{,}80\,\text{m/s}^2 \cdot \left(\tfrac{6378}{384\,400}\right)^2
-fy5-5	= \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{
 fy5-5	g = \gamma \tfrac{M}{r^2} = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cd
 fy5-6	1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2
+fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
 fy5-6	42\,164\,\text{km} \cdot \sqrt[3]{0{,}107} \approx 20\,000\,\text{km}
 fy5-6	7{,}66\,\text{km/s} \cdot \sqrt{\tfrac{318}{62}} \approx 17\,\text{km/
 fy5-6	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
@@ -2257,7 +1926,9 @@ fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,}090
 fy5-8	N = 6{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 59\,\text{N}
 fy5-8	\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\te
 fy5-8	x = \dfrac{F_\mu}{k} = \dfrac{18\,\text{N}}{120\,\text{N/m}} = 0{,}15\
+fy5-9	25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}
 fy5-9	2\pi\sqrt{0{,}300 : 20{,}14}\,\text{s} = 0{,}767\,\text{s}
+fy5-9	= (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2
 fy5-9	= \dfrac{1200\,\text{N/m} \cdot (1{,}66\,\text{s})^2}{4\pi^2} - 10{,}0
 fy5-9	kx = 40\,\text{N/m} \cdot 0{,}050\,\text{m} = 2{,}0\,\text{N}
 fy6-1	0{,}019\,\text{mm/s}\cdot 3600\,\text{s} \approx 69\,\text{mm}
@@ -2397,6 +2068,7 @@ fy6-4	100\,\Omega + 100\,\Omega + 100\,\Omega = 300\,\Omega
 fy6-4	60{,}0\,\text{mA} + 30{,}0\,\text{mA} = 90{,}0\,\text{mA}
 fy6-4	= 62\,500\,\Omega^2 - 60\,000\,\Omega^2
 fy6-4	I = U : R = 6{,}0\,\text{V} : 100\,\Omega = 0{,}060\,\text{A} = 60\,\t
+fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
 fy6-5	0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text
 fy6-5	12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}
 fy6-5	12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}
@@ -2458,9 +2130,11 @@ fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}050\,\
 fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
 fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
 fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
+fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
 fy7-1	= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
+fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
 fy7-10	0{,}020\,\text{m} : 3{,}00 \cdot 10^{8}\,\text{m/s} \approx 67\,\text{
 fy7-10	1{,}3274 + 1{,}3319 + 1{,}3344 + 1{,}3268 = 5{,}3205
 fy7-10	26{,}0\,\text{mm} \cdot \tan 55{,}0^\circ = 37{,}1\,\text{mm}
@@ -2487,7 +2161,6 @@ fy7-13	1{,}667\,\mu\text{m} \cdot \sin 20{,}64^\circ = 0{,}588\,\mu\text{m}
 fy7-13	1{,}679\,\mu\text{m} \cdot 0{,}3168 = 0{,}532\,\mu\text{m}
 fy7-13	2{,}00\,\mu\text{m} \cdot \sin 18{,}97^\circ = 0{,}650\,\mu\text{m}
 fy7-13	3333\,\text{nm} \cdot \sin 11{,}24^\circ = 650\,\text{nm}
-fy7-13	= 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,
 fy7-13	= 1{,}20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2{,
 fy7-13	= 2 \cdot 589 \cdot 10^{-9}\,\text{m} : (2{,}00 \cdot 10^{-6}\,\text{m
 fy7-13	= 532 \cdot 10^{-9}\,\text{m} : (1{,}667 \cdot 10^{-6}\,\text{m})
@@ -2538,7 +2211,9 @@ fy7-2	= \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}20\,\text{T} \cdot
 fy7-2	= \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}00\,\text{T} \cdot
 fy7-2	= \dfrac{1{,}8288 \cdot 10^{-26}\,\text{kg} \cdot 5{,}919 \cdot 10^{5}
 fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
+fy7-2	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\
 fy7-2	= \tfrac{1}{2} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \cdot (1{,}92 \
+fy7-2	G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
 fy7-3	2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}
 fy7-3	= 2{,}465 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0{,}160\,\te
 fy7-3	= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2{,}31\,\text
@@ -2551,6 +2226,7 @@ fy7-3	\Delta \mu_0 \approx 0{,}017 \cdot 1{,}23 \cdot 10^{-6}\,\tfrac{\text{
 fy7-4	(0{,}0871\,\text{T} - 0{,}0834\,\text{T}) : 2 = 0{,}0018\,\text{T}
 fy7-4	0{,}00090\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 : (3{,}0\,\text{A} \cd
 fy7-4	0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}0294\,\text{N}
+fy7-4	0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}
 fy7-4	0{,}225\,\text{N} : (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin
 fy7-4	20\,\text{cm} = 20 \cdot 0{,}01\,\text{m} = 0{,}20\,\text{m}
 fy7-4	54{,}25\,\text{A} \cdot 0{,}50\,\text{m} \cdot 1{,}085 \cdot 10^{-3}\,
@@ -2562,8 +2238,11 @@ fy7-4	F = 5{,}0\,\text{A} \cdot 0{,}20\,\text{m} \cdot 0{,}30\,\text{T} \cdo
 fy7-4	F = \Delta m \cdot g = 0{,}00245\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
 fy7-5	-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{
 fy7-5	-N\Delta\Phi = -10 \cdot 2{,}0\,\text{mWb} = -20\,\text{mWb}
+fy7-5	0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}
 fy7-5	= 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1
+fy7-5	= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,
 fy7-5	= 600 \cdot 0{,}12 \cdot 10^{-3}\,\text{Wb} : (15 \cdot 10^{-3}\,\text
+fy7-5	e = 4{,}0\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}50\,\text{m}
 fy7-5	e = vBl = 2{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}30\,\text
 fy7-5	|e| = 200 \cdot 0{,}30\,\text{T} \cdot 6{,}0 \cdot 10^{-4}\,\text{m}^2
 fy7-6	0{,}25\,\text{N} \cdot 0{,}3\,\text{m/s} \approx 0{,}075\,\text{W}
@@ -2643,129 +2322,5 @@ fy9-ympyraliike	= \sqrt{\dfrac{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text
 tvt-epavarmuus	\Delta g \approx 0{,}040 \cdot 9{,}748\,\text{m/s}^2 \approx 0{,}39\,\
 tvt-epavarmuus	\Delta k = (4{,}21 - 3{,}89)\,\text{s}^2/\text{m} : 2 = 0{,}16\,\text{
 tvt-epavarmuus	g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}748\,\text{m/s}^2
-FY2-koe	= 42{,}7\,\text{kWh} \cdot 0{,}12\,\tfrac{€}{\text{kWh}} \approx 5{,}1
-FY2-sovella	0{,}90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh
-FY2-sovella	5{,}0\,\text{MW} \cdot 8760\,\text{h} = 43{,}8\,\text{GWh}
-FY4-koe	\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} = 6{,}0\,\t
-FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
-FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
-FY5-koe	t = 8\,\text{h} : 2^6 = 0{,}125\,\text{h} = 7{,}5\,\text{min}
-FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
-FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
-FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
-FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
-FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
-FY8-koe	E_\text{s} = 0{,}030377\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 0{,}018883\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	Q = 17{,}59\,\text{MeV} = 2{,}818 \cdot 10^{-12}\,\text{J}
-FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
-en/FY2-sovella	0.90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh}
-en/FY2-sovella	5.0\,\text{MW} \cdot 8760\,\text{h} = 43.8\,\text{GWh}
-en/FY4-sovella	0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \approx 0.002
-en/FY7-sovella	1667\,\text{nm} \cdot \sin 20.6^\circ \approx 586.5\,\text{nm}
-en/FY7-sovella	1667\,\text{nm} \cdot \sin 20.8^\circ \approx 592.0\,\text{nm}
-en/FY7-sovella	6.0\,\text{MW} - 0.85\,\text{MW} \approx 5.2\,\text{MW}
-en/FY7-sovella	= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^{4}\,
-en/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
-en/FY8-sovella	3.0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}\r
-en/fy14-atom-models	= -0.544\ \text{eV} - (-3.40\ \text{eV})
-en/fy14-big-machines	{1.958 \cdot 10^{6}} : {3.00 \cdot 10^{8}} \approx 0.65\ \%
-en/fy14-binding-energy	250
-en/fy14-classical-limits	= 2.898 \cdot 10^{6}\ \text{nm} \cdot \text{K} : 10\,000\ \text{K}
-en/fy14-fotoni	0.76\ \text{mm} : 490\ \text{mm} \approx 0.0015
-en/fy14-nucleus	N = A - Z = 235 - 92 = 143
-en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 3 \cdot 10^{-4}
-en/fy2-2	2.5\,\text{kJ} = 2.5 : 1000\,\text{J} = 0.0025\,\text{J}
-en/fy2-3	10\,\text{J/s} \cdot 540\,000\,\text{s} = 5\,400\,000\,\text{J}
-en/fy2-3	P_1 = 6.0\,\text{kWh} : 3.0\,\text{h} = 2.0\,\text{kW}
-en/fy2-3	P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}
-en/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-en/fy2-5	2.2\,\text{MJ} : 0.100\,\text{kg} = 22\,\text{MJ/kg}
-en/fy2-5	360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}
-en/fy2-6	1615 - 588 - 490 = 537\,\text{GWh}
-en/fy2-6	30\,000\,\text{GWh} : 12\,\text{GWh} = 2500
-en/fy2-6	E = 1.6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-en/fy2-6	P = 20.2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-en/fy4-2	\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s
-en/fy5-15	= 4\pi \cdot (4.0\,\text{m})^2 \cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2
-en/fy5-9	= (0.100\,\text{m})^2 - (0.0500\,\text{m})^2
-en/fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
-en/fy7-2	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\,\
-en/fy7-2	G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2
-en/fy7-5	-8.0\,\text{mWb} : 0.40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}
-en/fy7-5	= 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1.524\,\tex
-en/fy7-5	e = 4.0\,\text{m/s} \cdot 0.25\,\text{T} \cdot 0.50\,\text{m}
-fi-easy/FY2-sovella	0{,}90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh
-fi-easy/FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
-fi-easy/FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
-fi-easy/FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
-fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
-fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
-fi-easy/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
-fi-easy/FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
-fi-easy/FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
-fi-easy/fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
-fi-easy/fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
-fi-easy/fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
-fi-easy/fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
-fi-easy/fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
-fi-easy/fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
-fi-easy/fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
-fi-easy/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-fi-easy/fy2-5	2{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg}
-fi-easy/fy2-5	E_\text{sisään} = 46\,\text{MJ/kg} \cdot 0{,}230\,\text{kg}
-fi-easy/fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
-fi-easy/fy2-6	= 219\,000\,\text{MWh}
-fi-easy/fy2-6	= 525\,600\,\text{MWh}
-fi-easy/fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-fi-easy/fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-fi-easy/fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
-fi-easy/fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
-fi-easy/fy5-11	8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}
-fi-easy/fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
-fi-easy/fy5-9	25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}
-fi-easy/fy5-9	= (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2
-fi-easy/fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
-fi-easy/fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
-fi-easy/fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
-fi-easy/fy7-2	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\
-fi-easy/fy7-2	G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
-fi-easy/fy7-4	0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}
-fi-easy/fy7-5	0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}
-fi-easy/fy7-5	= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,
-fi-easy/fy7-5	e = 4{,}0\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}50\,\text{m}
-fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
-fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
-fy2-3	10\,\text{J/s} \cdot 540\,000\,\text{s} = 5\,400\,000\,\text{J}
-fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
-fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
-fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
-fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
-fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
-fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-fy2-5	2{,}2\,\text{MJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg}
-fy2-5	E_\text{sisään} = 46\,\text{MJ/kg} \cdot 0{,}230\,\text{kg}
-fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
-fy2-6	= 219\,000\,\text{MWh}
-fy2-6	= 525\,600\,\text{MWh}
-fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
-fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
-fy5-11	8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}
-fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
-fy5-9	25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}
-fy5-9	= (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2
-fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
-fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
-fy7-1	15\,\mu\text{T} \cdot \tan 53{,}13^\circ = 20\,\mu\text{T}
-fy7-1	\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}
-fy7-2	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 20\,000\
-fy7-2	G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
-fy7-4	0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}
-fy7-5	0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}
-fy7-5	= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,
-fy7-5	e = 4{,}0\,\text{m/s} \cdot 0{,}25\,\text{T} \cdot 0{,}50\,\text{m}
 tvt-kulmakerroin	g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}75\,\text{m/s}^2
 tvt-nopeus-datasta	v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}

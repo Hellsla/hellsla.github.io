@@ -64,7 +64,12 @@
 **Periaate:** Maksetaan siitä energiasta, joka otetaan verkosta, myös siitä osasta, joka muuttuu hukkalämmöksi.
 **Kaava:** hinta $= E_\text{verkko} \cdot$ yksikköhinta
 **Muunnokset:** $12\,\text{snt} = 0{,}12\,€$
-**Sijoitus:** hinta $= 42{,}7\,\text{kWh} \cdot 0{,}12\,\tfrac{€}{\text{kWh}} \approx 5{,}12\,€$
+**Sijoitus:** hinta $$
+\begin{aligned}
+&= 42{,}7\,\text{kWh} \cdot 0{,}12\,\tfrac{€}{\text{kWh}} \\
+&\approx 5{,}12\,€
+\end{aligned}
+$$
 **Vastaus:** Lataus maksaa noin $5{,}1\,€$.
 **Järkevyys:** Noin neljäkymmentä kilowattituntia hieman yli kymmenen sentin hintaan tekee noin viisi euroa.
 
@@ -249,10 +254,15 @@
 **Annettu:** taulukon tuotannot kello $3$ ja kello $18$
 **Kysytty:** tuulivoiman osuus kotimaisesta tuotannosta sekä tuonti tai vienti kello $3$
 **Periaate:** Osuus on tuulivoiman teho jaettuna kaikkien kotimaisten tuotantotapojen yhteisteholla. Jos tuotanto on suurempi kuin kulutus, ylijäämä viedään.
-**Kaava:** osuus $= \dfrac{P_\text{tuuli}}{P_\text{tuotanto}}$, kun $P_\text{tuotanto} = P_\text{ydin} + P_\text{tuuli} + P_\text{vesi} + P_\text{muu}$
+**Kaava:** osuus $= \dfrac{P_\text{tuuli}}{P_\text{tuotanto}}$, kun $$ \begin{aligned} P_\text{tuotanto} &= P_\text{ydin} + P_\text{tuuli} \\ &+ P_\text{vesi} + P_\text{muu} \end{aligned} $$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** Kello $3$: $P_\text{tuotanto} = 13\,700\,\text{MW}$ ja osuus $= \dfrac{5600\,\text{MW}}{13\,700\,\text{MW}} \approx 0{,}41$. Kello $18$: $P_\text{tuotanto} = 11\,600\,\text{MW}$ ja osuus $= \dfrac{900\,\text{MW}}{11\,600\,\text{MW}} \approx 0{,}078$.
-**Vastaus:** Tuulivoiman osuus oli kello $3$ noin $41\,\%$ ja kello $18$ noin $8\,\%$. Kello $3$ tuotanto ylitti kulutuksen $13\,700\,\text{MW} - 10\,200\,\text{MW} = 3500\,\text{MW}$, joten sähköä vietiin.
+**Vastaus:** Tuulivoiman osuus oli kello $3$ noin $41\,\%$ ja kello $18$ noin $8\,\%$. Kello $3$ tuotanto ylitti kulutuksen $$
+\begin{aligned}
+&13\,700\,\text{MW} - 10\,200\,\text{MW} \\
+&= 3500\,\text{MW}
+\end{aligned}
+$$, joten sähköä vietiin.
 **Järkevyys:** Yöllä tuulee paljon ja kulutus on pieni, joten suuri osuus ja vienti ovat uskottavia.
 
 ### b)

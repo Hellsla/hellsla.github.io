@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7c46ff42f3980942
-SCOPE: delta added-exercise from 12247bcf797a5c2e base 81db4a6fd727
+CONTENT-HASH: 5a4d90ef9afdba0b
 
 ## Blocking
-none
+(none)
 
 ## Polish
-1. L2-09 is close to the depth part of L2-05 (table instead of figure) but now asks a single depth with the figure to read and a µs and cm conversion; acceptable at level 2.
-2. L1-09 is near L1-03 (sonar depth); the MAFY lookup and ms conversion justify it.
+- fy5-17-L2-10: the opening is one paragraph of about 170 words; split it (what to open / what the tables contain / what magnitude is), as the 120-word rule asks.
+- fy5-17-L2-10 d): the circle-intersection reasoning for several stations is not prepared by b) and c); a short cue ("Piirrä asemasta ympyrä") would help an S2 reader.
+- fy5-17-L2-10 a): "Kirjoita näkyviin ... päivä, jona luit aineiston" is good; add that the student should open the 2026 or any year table.
 
 ## Checked
-- L2-09 now asks the depth of echo C: d = vt/2 = 1540·90e-6/2 = 6,93 cm recomputed; the repeat of L2-05 b (layer thickness) is gone.
-- Figure a-scan gives C at 90 µs, no depths, description gives the same data without the answer.
-- L1-09: 14,0 m correct, MAFY table named, trap of 1540 m/s caught by tolerance.
-- Solutions complete; set mix fits.
+- The task tells exactly where to go: main page, link at its end, the table's columns, natural quakes only so any row will do, magnitude 0 to 4; matches the verified source (row 149, Orivesi, M 1,0, asterisk on 2026).
+- c) 28,57 s − 16,67 s = 11,9 s, 8,4 km per second recomputed; answer 11,905 tolerance 0,03 consistent.
+- Solution a) reads a real row, notes preliminary data; b) correct on P/S, fluid; d) explains one station gives a distance, three stations a point.
+- Set has 9/10/5 tasks; the new task is the data-reading step above the calculation tasks.

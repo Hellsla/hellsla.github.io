@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 799fb4d8eefe224d
+CONTENT-HASH: 972e8efd5f7c706b
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy5-4 L2-07 — "would already require very good grip" repeats "require" from the previous clause; "and that would already demand very good grip" if wanted.
 
 ## Checked
-- Delta (greatest -> maximum static friction in task 4-23 / fy5-4-L3-06 text and solution Principle): open-exercises-L3-1280-10 and -11 (captures in content/en/FY5/fy5-4/review/shots/, they show the new wording). Task text, graph, Principle block and the layout around them are intact; the unchanged graph, solution blocks and answer were seen again and are unaffected.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed Reasonableness and Model answer sentences read fluently.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

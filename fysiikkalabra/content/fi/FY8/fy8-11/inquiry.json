@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Olkiluodon kolmas yksikkö tuottaa yksinään sähkötehoa $1600\\,\\text{MW}$, ja sen reaktorin sydämessä on noin $130$ tonnia uraania. Hiilivoimala polttaisi saman sähkön tuottamiseen noin $14\\,000$ tonnia hiiltä joka päivä. Ydinvoimalan energia tulee atomiytimistä, jotka jakautuvat kahtia. Jokainen jakautuminen vapauttaa neutroneja, jotka voivat jakaa uusia ytimiä.",
+      "text": "Olkiluodon kolmas yksikkö tuottaa yksinään sähkötehoa $1600\\,\\text{MW}$, ja sen reaktorin sydämessä on noin $130$ tonnia uraania. Hiilivoimala polttaisi saman sähkön tuottamiseen noin $12\\,000$ tonnia hiiltä joka päivä. Ydinvoimalan energia tulee atomiytimistä, jotka jakautuvat kahtia. Jokainen jakautuminen vapauttaa neutroneja, jotka voivat jakaa uusia ytimiä.",
       "question": "Mistä ytimen jakautumisessa vapautuva energia on peräisin, ja miten reaktori estää neutronien ketjua karkaamasta käsistä?"
     },
     {

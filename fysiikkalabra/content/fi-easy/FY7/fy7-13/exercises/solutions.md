@@ -151,7 +151,7 @@
 **Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja kulmakerroin $a = \dfrac{\lambda}{d}$, josta $\lambda = a\,d$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1{,}00 \cdot 10^{-5}\,\text{m}$ ja lopuksi $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\lambda = 0{,}06337 \cdot 1{,}00 \cdot 10^{-5}\,\text{m} = 6{,}337 \cdot 10^{-7}\,\text{m} = 633{,}7\,\text{nm}$
-**Vastaus:** $634\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyys $L$. Punaisen valon aallonpituus on yleensä noin $630$–$650\,\text{nm}$, joten tulos sopii.
+**Vastaus:** $634\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyys $L$. Punaisen laserin aallonpituus on yleensä noin $630$–$650\,\text{nm}$, joten tulos sopii.
 **Järkevyys:** Yksi piste antaa saman suuruusluokan: $k = 8$ antaa $\lambda = 0{,}5081 \cdot 10{,}0\,\mu\text{m} : 8 = 635\,\text{nm}$. Kaukaisimmalle maksimille sama mittausvirhe $x_k$:ssa on pienempi osa. Siksi suoran sovittaminen koko aineistoon vahvistaa tuloksen.
 
 ## fy7-13-L2-06
@@ -165,9 +165,9 @@
 **Järkevyys:** Kulmassa $18{,}6^\circ$ tangentti on suurempi kuin sini: $\tan\theta : \sin\theta = 0{,}337 : 0{,}3193 = 1{,}055$. Siksi opiskelijan tulos on $5{,}5\,\%$ liian suuri. Oikea tulos $532\,\text{nm}$ vastaa vihreän laserin ilmoitettua aallonpituutta. Virhe kasvaa kulman mukana.
 
 ## fy7-13-L2-07
-**Kysytty:** mikä muutos pienentää aallonpituuden suhteellista virhettä, kun lukemisvirhe $\Delta x$ on aina sama
-**Periaate:** Aallonpituus lasketaan etäisyydestä $x$. Suhteellinen virhe on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, virhe on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
-**Mallivastaus:** Suhteellinen virhe pienenee, kun mitataan kauempana oleva maksimi. Sama lukemisvirhe on silloin pienempi osa suuremmasta etäisyydestä. Jos varjostin siirretään lähemmäs hilaa, $x$ pienenee. Silloin sama $\Delta x$ on suurempi osa, ja virhe kasvaa. Harvempi hila pienentää kulmia ja siksi myös $x$:ää. Silloin suhteellinen virhe kasvaa, eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
+**Kysytty:** mikä muutos pienentää aallonpituuden suhteellista epävarmuutta, kun lukeman epävarmuus $\Delta x$ on aina sama
+**Periaate:** Aallonpituus lasketaan etäisyydestä $x$. Suhteellinen epävarmuus on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, epävarmuus on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
+**Mallivastaus:** Suhteellinen epävarmuus pienenee, kun mitataan kauempana oleva maksimi. Sama lukeman epävarmuus on silloin pienempi osa suuremmasta etäisyydestä. Jos varjostin siirretään lähemmäs hilaa, $x$ pienenee. Silloin sama $\Delta x$ on suurempi osa, ja suhteellinen epävarmuus kasvaa. Harvempi hila pienentää kulmia ja siksi myös $x$:ää. Silloin suhteellinen epävarmuus kasvaa, eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
 
 ## fy7-13-L2-08
 **Kysytty:** miten ensimmäisen kertaluvun maksimin etäisyys $x$ keskimaksimista muuttuu, kun hila vaihdetaan tiheämpään ja varjostin siirretään lähemmäs.
@@ -202,7 +202,7 @@ Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : 
 **Kaava:** $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $\lambda = \dfrac{d\sin\theta}{k}$ ja $x_k = L\tan\theta_k$
 **Muunnokset:** $d = 0{,}250\,\text{mm} = 2{,}50 \cdot 10^{-4}\,\text{m}$ ja $x_1 = 5{,}0\,\text{mm} = 5{,}0 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** a) $\theta_1 = \tan^{-1}\dfrac{5{,}0 \cdot 10^{-3}\,\text{m}}{2{,}00\,\text{m}} = \tan^{-1} 0{,}00250 = 0{,}143^\circ$ ja $\lambda = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot \sin 0{,}143^\circ = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot 0{,}00250 = 6{,}25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$. b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2{,}50 \cdot 10^{-4}\,\text{m}} = 0{,}00500$, joten $x_2 = 2{,}00\,\text{m} \cdot \tan 0{,}2865^\circ = 0{,}0100\,\text{m} = 10{,}0\,\text{mm}$. Taulukossa huippu $I = 1{,}00$ on juuri tässä kohdassa. c) Hilan ensimmäinen maksimi tulee samaan kohtaan, $x_1 = 5{,}0\,\text{mm}$.
-**Vastaus:** $625\,\text{nm}$, kolme merkitsevää numeroa kuten rakoväli ja etäisyys. Toisen kertaluvun maksimi on kohdassa $10{,}0\,\text{mm}$, mikä sopii taulukkoon. Hilan maksimit ovat samoissa kohdissa, koska $d$ ja ehto $d\sin\theta = k\lambda$ ovat samat. Hilan maksimit ovat kuitenkin kapeampia ja kirkkaampia. Niiden välissä on laaja pimeä alue.
+**Vastaus:** $\lambda \approx 6{,}3 \cdot 10^2\,\text{nm}$ (laskettu arvo on $625\,\text{nm}$). Vastauksessa on kaksi merkitsevää numeroa, koska taulukosta luettu maksimin paikka $x_1 = 5{,}0\,\text{mm}$ on kahden numeron tarkkuudella. Toisen kertaluvun maksimi on kohdassa $10{,}0\,\text{mm}$, mikä sopii taulukkoon. Hilan maksimit ovat samoissa kohdissa, koska $d$ ja ehto $d\sin\theta = k\lambda$ ovat samat. Hilan maksimit ovat kuitenkin kapeampia ja kirkkaampia. Niiden välissä on laaja pimeä alue.
 **Järkevyys:** Aallonpituus $625\,\text{nm}$ on oranssinpunaista valoa. Maksimien väli on $5{,}0\,\text{mm}$, joten minimit ovat kohdissa $2{,}5\,\text{mm}$ ja $7{,}5\,\text{mm}$. Taulukossa intensiteetti on niissä $0{,}00$. Hilavakio $0{,}250\,\text{mm}$ tarkoittaa vain $4$ viivaa millimetrillä, joten c)-kohdan hila on kuviteltu. Oikean hilan viivatiheys on satoja viivoja millimetrillä. Kulma on pieni, joten $\lambda \approx d x_1 : L = 625\,\text{nm}$.
 
 ## fy7-13-L3-05
@@ -245,4 +245,10 @@ Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : 
 **Muunnokset:** $x = 17{,}8\,\text{cm} = 0{,}178\,\text{m}$, $700\,\text{nm} = 7{,}00 \cdot 10^{-7}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}178\,\text{m}}{1{,}00\,\text{m}} = 10{,}09^\circ$, $d = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{\sin 10{,}09^\circ} = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{0{,}1752} = 3{,}99 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3{,}99 \cdot 10^{-6}\,\text{m}} = 250$ viivaa millimetrillä
 **Vastaus:** $250$ viivaa millimetrillä. Vastauksessa on kolme merkitsevää numeroa, koska etäisyys $L$ ja luettu paikka on annettu kolmella.
-**Järkevyys:** Tarkistus violetilla ($400\,\text{nm}$): $x = 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,}00\,\mu\text{m}}\bigr) = 10{,}1\,\text{cm}$. Kuvassa sisäreuna on noin $10\,\text{cm}$:n kohdalla. Hila, jossa on $250$ viivaa millimetrillä, on tavallinen koulun hila.
+**Järkevyys:** Tarkistus violetilla ($400\,\text{nm}$): $$
+\begin{aligned}
+x &= 1{,}00\,\text{m} \\
+&\cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,}00\,\mu\text{m}}\bigr) \\
+&= 10{,}1\,\text{cm}
+\end{aligned}
+$$. Kuvassa sisäreuna on noin $10\,\text{cm}$:n kohdalla. Hila, jossa on $250$ viivaa millimetrillä, on tavallinen koulun hila.

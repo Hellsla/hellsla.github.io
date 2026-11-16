@@ -105,7 +105,7 @@
     {
       "id": "fy7-1-L1-08",
       "level": 1,
-      "text": "In Oulu the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $76\\,{}^\\circ$ below the horizontal. What is the vertical component of the field in microtesla?",
+      "text": "In Oulu the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $76^\\circ$ below the horizontal. What is the vertical component of the field in microtesla?",
       "kind": [
         "model"
       ],
@@ -141,9 +141,9 @@
           "feedback": "True: outside the lines go from $\\text{N}$ to $\\text{S}$ and inside from $\\text{S}$ to $\\text{N}$. A line has no beginning and no end, because there is no single magnetic pole."
         },
         {
-          "text": "When the magnet is hung from a thread so that it can turn freely, its $\\text{N}$ end turns towards the Earth's magnetic south pole.",
+          "text": "When the magnet is hung from a thread so that it can turn freely, its $\\text{N}$ end turns towards the south pole of the Earth's bar-magnet model.",
           "true": true,
-          "feedback": "True: unlike poles attract each other, so the $\\text{N}$ end turns towards the Earth's magnetic south pole. It is near the geographic north pole, so the $\\text{N}$ end points north."
+          "feedback": "True: unlike poles attract each other, so the $\\text{N}$ end turns towards the south pole of the Earth's bar-magnet model. It is near the geographic north pole, so the $\\text{N}$ end points north."
         },
         {
           "text": "When a second magnet is brought onto the table, the field lines of the two magnets can cross each other between them.",
@@ -275,7 +275,7 @@
     {
       "id": "fy7-1-L2-07",
       "level": 2,
-      "text": "A student solves the problem: “At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $30\\,\\mu\\text{T}$ towards the east. Through how many degrees does the needle turn from north towards east?”\n\nTheir solution: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0.467$, so $\\theta = \\tan^{-1} 0.467 = 25\\,{}^\\circ$.\n\na) Why is the result implausible when the field of the magnet is much greater than the Earth's field? What is the mistake in the solution?\n\nb) Calculate the correct angle.\n\nEnter the result of part b) in degrees in the answer field.",
+      "text": "A student solves the problem: “At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $30\\,\\mu\\text{T}$ towards the east. Through how many degrees does the needle turn from north towards east?”\n\nTheir solution: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0.467$, so $\\theta = \\tan^{-1} 0.467 = 25^\\circ$.\n\na) Why is the result implausible when the field of the magnet is much greater than the Earth's field? What is the mistake in the solution?\n\nb) Calculate the correct angle.\n\nEnter the result of part b) in degrees in the answer field.",
       "kind": [
         "error"
       ],
@@ -315,7 +315,7 @@
       "id": "fy7-1-L3-02",
       "level": 3,
       "text": "A steel paper clip is drawn several times in the same direction along a pole of a magnet, after which it picks up small pins. When the clip is heated in a flame hot enough and allowed to cool, it no longer picks up pins. Explain both observations using magnetic domains.",
-      "answer": "The field of a magnet aligns the magnetic domains of the steel, and in hard steel they stay aligned, so the clip is a magnet. Heating to a high enough temperature mixes up the alignment of the domains, so the clip is no longer a magnet.",
+      "answer": "The field of a magnet aligns the magnetic domains of the steel, and in steel many of them stay aligned, so the clip is a magnet. Heating to a high enough temperature mixes up the alignment of the domains, so the clip is no longer a magnet.",
       "unit": "",
       "tolerance": 0.02
     },

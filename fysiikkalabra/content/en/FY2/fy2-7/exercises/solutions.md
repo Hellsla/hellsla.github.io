@@ -6,7 +6,14 @@
 **Conversions:** The efficiency is obtained from the percentage: $\eta = 100\,\% - 4.0\,\% = 96.0\,\% = 96.0 : 100 = 0.960$. The unit of energy stays the same.
 **Substitution:** $E_\text{arrived} = 0.960 \cdot 500\,\text{MWh} = 480\,\text{MWh}$
 **Answer:** $480\,\text{MWh}$, three significant figures as in the given data.
-**Reasonableness:** The loss is $4.0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}$, and $480\,\text{MWh} + 20\,\text{MWh} = 500\,\text{MWh}$, so the energy is conserved. The arriving energy is smaller than the sent energy, as it should be.
+**Reasonableness:** The loss is $$
+4.0\,\% \cdot 500\,\text{MWh} = 20\,\text{MWh}
+$$, and $$
+\begin{aligned}
+&480\,\text{MWh} + 20\,\text{MWh} \\
+&= 500\,\text{MWh}
+\end{aligned}
+$$, so the energy is conserved. The arriving energy is smaller than the sent energy, as it should be.
 
 ## fy2-7-L1-02
 **Given:** energy sent into the district heating network $E_\text{sent} = 360\,\text{MWh}$; the share of the loss is read from the figure
@@ -17,7 +24,12 @@
 **Conversions:** Percentage to decimal number: $9\,\% = 9 \cdot 0.01 = 0.09$. The energy stays in megawatt-hours.
 **Substitution:** $E_\text{loss} = 0.09 \cdot 360\,\text{MWh} = 32.4\,\text{MWh}$
 **Answer:** about $32\,\text{MWh}$, two significant figures, because the percentage in the figure is rounded to whole percent.
-**Reasonableness:** One tenth of $360\,\text{MWh}$ is $36\,\text{MWh}$, and $9\,\%$ is a little less than a tenth, so about $32\,\text{MWh}$ is the right order of magnitude. The energy that arrives is $360\,\text{MWh} - 32.4\,\text{MWh} \approx 328\,\text{MWh}$, or $91\,\%$, as in the figure.
+**Reasonableness:** One tenth of $360\,\text{MWh}$ is $36\,\text{MWh}$, and $9\,\%$ is a little less than a tenth, so about $32\,\text{MWh}$ is the right order of magnitude. The energy that arrives is $$
+\begin{aligned}
+&360\,\text{MWh} - 32.4\,\text{MWh} \\
+&\approx 328\,\text{MWh}
+\end{aligned}
+$$, or $91\,\%$, as in the figure.
 
 ## fy2-7-L1-03
 **Given:** sent energy $E_\text{sent} = 80.0\,\text{MWh}$ and arrived energy $E_\text{arrived} = 76.8\,\text{MWh}$
@@ -27,7 +39,12 @@
 **Conversions:** The ratio is a decimal number, which is changed into a percentage by multiplying by one hundred: $0.960 = 0.960 \cdot 100\,\% = 96.0\,\%$.
 **Substitution:** $\eta = \dfrac{76.8\,\text{MWh}}{80.0\,\text{MWh}} = 0.960 = 96.0\,\%$
 **Answer:** $96.0\,\%$, three significant figures as in the energies.
-**Reasonableness:** The efficiency is below $100\,\%$, as it should be, and the loss $80.0\,\text{MWh} - 76.8\,\text{MWh} = 3.2\,\text{MWh}$ is $4.0\,\%$ of the sent energy, which is a usual loss for an electricity grid.
+**Reasonableness:** The efficiency is below $100\,\%$, as it should be, and the loss $$
+\begin{aligned}
+&80.0\,\text{MWh} - 76.8\,\text{MWh} \\
+&= 3.2\,\text{MWh}
+\end{aligned}
+$$ is $4.0\,\%$ of the sent energy, which is a usual loss for an electricity grid.
 
 ## fy2-7-L1-04
 **Given:** sent power $P_\text{sent} = 125\,\text{MW}$, loss $4.0\,\%$ of the sent power
@@ -37,7 +54,12 @@
 **Conversions:** $\eta = 100\,\% - 4.0\,\% = 96.0\,\% = 96.0 : 100 = 0.960$.
 **Substitution:** $P_\text{arrived} = 0.960 \cdot 125\,\text{MW} = 120.0\,\text{MW}$
 **Answer:** $120\,\text{MW}$, three significant figures as in the sent power $125\,\text{MW}$.
-**Reasonableness:** The power lost is $4.0\,\% \cdot 125\,\text{MW} = 5.0\,\text{MW}$, and $120.0\,\text{MW} + 5.0\,\text{MW} = 125\,\text{MW}$. The result is a little below $125\,\text{MW}$, as it should be.
+**Reasonableness:** The power lost is $4.0\,\% \cdot 125\,\text{MW} = 5.0\,\text{MW}$, and $$
+\begin{aligned}
+&120.0\,\text{MW} + 5.0\,\text{MW} \\
+&= 125\,\text{MW}
+\end{aligned}
+$$. The result is a little below $125\,\text{MW}$, as it should be.
 
 ## fy2-7-L1-05
 **Given:** loss power $P_\text{loss} = 2.5\,\text{kW}$ and time $t = 24\,\text{h}$
@@ -57,7 +79,11 @@
 **Conversions:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0.80$. The unit of energy stays megawatt-hours.
 **Substitution:** $E_\text{sent} = \dfrac{600\,\text{MWh}}{0.80} = 750\,\text{MWh}$, and $E_\text{loss} = 750\,\text{MWh} - 600\,\text{MWh} = 150\,\text{MWh}$
 **Answer:** $150\,\text{MWh}$, two significant figures as in the loss percentage $20\,\%$.
-**Reasonableness:** The loss is $20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}$, which matches. If the percentage were taken of the energy that arrived, we would get $0.20 \cdot 600\,\text{MWh} = 120\,\text{MWh}$, which is too little: the sent energy would then be $720\,\text{MWh}$, and $120\,\text{MWh}$ of that is only about $17\,\%$, not $20\,\%$.
+**Reasonableness:** The loss is $$
+20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}
+$$, which matches. If the percentage were taken of the energy that arrived, we would get $$
+0.20 \cdot 600\,\text{MWh} = 120\,\text{MWh}
+$$, which is too little: the sent energy would then be $720\,\text{MWh}$, and $120\,\text{MWh}$ of that is only about $17\,\%$, not $20\,\%$.
 
 ## fy2-7-L2-02
 **Given:** arrived energy $E_\text{arrived} = 1.20\,\text{GWh}$, efficiency $\eta = 80\,\%$
@@ -67,7 +93,12 @@
 **Conversions:** $80\,\% = 80 : 100 = 0.80$ and $1\,\text{GWh} = 1000\,\text{MWh}$, so $1.20\,\text{GWh} = 1.20 \cdot 1000\,\text{MWh} = 1200\,\text{MWh}$.
 **Substitution:** $E_\text{sent} = \dfrac{1200\,\text{MWh}}{0.80} = 1500\,\text{MWh}$
 **Answer:** $1500\,\text{MWh}$, or $1.5 \cdot 10^3\,\text{MWh}$, two significant figures as in the efficiency $80\,\%$.
-**Reasonableness:** The loss is $1500\,\text{MWh} - 1200\,\text{MWh} = 300\,\text{MWh}$, which is $20\,\%$ of $1500\,\text{MWh}$. The sent energy is larger than the need, as it should be.
+**Reasonableness:** The loss is $$
+\begin{aligned}
+&1500\,\text{MWh} - 1200\,\text{MWh} \\
+&= 300\,\text{MWh}
+\end{aligned}
+$$, which is $20\,\%$ of $1500\,\text{MWh}$. The sent energy is larger than the need, as it should be.
 
 ## fy2-7-L2-03
 **Given:** energy fed into the network $E_\text{sent} = 2.40\,\text{TWh}$, loss $4.0\,\%$ of the sent energy, time $t = 8760\,\text{h}$
@@ -87,7 +118,12 @@
 **Conversions:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0.80$. A kilowatt times an hour is directly a kilowatt-hour.
 **Substitution:** $P_\text{sent} = \dfrac{40.0\,\text{kW}}{0.80} = 50.0\,\text{kW}$, and $E_\text{sent} = 50.0\,\text{kW} \cdot 24\,\text{h} = 1200\,\text{kWh}$
 **Answer:** $1200\,\text{kWh}$, or $1.2 \cdot 10^3\,\text{kWh}$, two significant figures as in the loss percentage $20\,\%$ (the least precise value).
-**Reasonableness:** Without losses the energy would be $40.0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. The loss is $1200\,\text{kWh} - 960\,\text{kWh} = 240\,\text{kWh}$, which is $20\,\%$ of $1200\,\text{kWh}$, and the result is $25\,\%$ larger than the need.
+**Reasonableness:** Without losses the energy would be $40.0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. The loss is $$
+\begin{aligned}
+&1200\,\text{kWh} - 960\,\text{kWh} \\
+&= 240\,\text{kWh}
+\end{aligned}
+$$, which is $20\,\%$ of $1200\,\text{kWh}$, and the result is $25\,\%$ larger than the need.
 
 ## fy2-7-L2-08
 **Find:** in which network more energy is lost per week and why.
@@ -118,7 +154,17 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Conversions:** $\eta_\text{A} = 91.0 : 100 = 0.910$ and $\eta_\text{B} = 85.0 : 100 = 0.850$. The energies are in the same unit.
 **Substitution:** $E_\text{arrived,A} = 0.910 \cdot 500\,\text{MWh} = 455.0\,\text{MWh}$, $E_\text{arrived,B} = 0.850 \cdot 520\,\text{MWh} = 442.0\,\text{MWh}$, so $\Delta E = 455.0\,\text{MWh} - 442.0\,\text{MWh} = 13.0\,\text{MWh}$
 **Answer:** network A brings customers $13.0\,\text{MWh}$ more, three significant figures as in the efficiencies and energies.
-**Reasonableness:** Network B feeds in $20\,\text{MWh}$ more, but its loss $520\,\text{MWh} - 442.0\,\text{MWh} = 78.0\,\text{MWh}$ is $33.0\,\text{MWh}$ larger than the loss of network A, $45.0\,\text{MWh}$. The difference $33.0\,\text{MWh} - 20\,\text{MWh} = 13.0\,\text{MWh}$ matches.
+**Reasonableness:** Network B feeds in $20\,\text{MWh}$ more, but its loss $$
+\begin{aligned}
+&520\,\text{MWh} - 442.0\,\text{MWh} \\
+&= 78.0\,\text{MWh}
+\end{aligned}
+$$ is $33.0\,\text{MWh}$ larger than the loss of network A, $45.0\,\text{MWh}$. The difference $$
+\begin{aligned}
+&33.0\,\text{MWh} - 20\,\text{MWh} \\
+&= 13.0\,\text{MWh}
+\end{aligned}
+$$ matches.
 
 ## fy2-7-L3-03
 **Given:** loss power $P_\text{loss} = 150\,\text{kW}$ steadily, time $t = 8760\,\text{h}$, annual consumption of one house $E_\text{house} = 20\,\text{MWh}$
@@ -128,7 +174,12 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Conversions:** $1\,\text{kWh} = 0.001\,\text{MWh}$, so the energy is converted into megawatt-hours in the substitution.
 **Substitution:** $E_\text{loss} = 150\,\text{kW} \cdot 8760\,\text{h} = 1\,314\,000\,\text{kWh} = 1\,314\,000 \cdot 0.001\,\text{MWh} = 1314\,\text{MWh}$, and $N = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65.7$
 **Answer:** about $66$ houses, two significant figures as in the consumption of a house, $20\,\text{MWh}$ (the least precise value).
-**Reasonableness:** Estimate: $150\,\text{kW} \cdot 9000\,\text{h} \approx 1350\,\text{MWh}$ and $1350 : 20 \approx 68$, so the result is of the right size. So the small loss power of the pipework corresponds to the whole heating of dozens of houses.
+**Reasonableness:** Estimate: $$
+\begin{aligned}
+&150\,\text{kW} \cdot 9000\,\text{h} \\
+&\approx 1350\,\text{MWh}
+\end{aligned}
+$$ and $1350 : 20 \approx 68$, so the result is of the right size. So the small loss power of the pipework corresponds to the whole heating of dozens of houses.
 
 ## fy2-7-L1-06
 **Find:** why electrical energy is transmitted at a high voltage in the national grid.
@@ -143,7 +194,12 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $0.048 = 0.048 \cdot 100\,\% = 4.8\,\%$.
 **Substitution:** $E_\text{loss} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, and $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
 **Answer:** $4.8\,\%$, two significant figures, because the difference $12\,\text{MWh}$ is a two-digit number.
-**Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $238\,\text{MWh} + 12\,\text{MWh} = 250\,\text{MWh}$.
+**Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $$
+\begin{aligned}
+&238\,\text{MWh} + 12\,\text{MWh} \\
+&= 250\,\text{MWh}
+\end{aligned}
+$$.
 
 ## fy2-7-L1-08
 **Given:** sent power $P_\text{sent} = 800\,\text{kW}$ and arrived power $P_\text{arrived} = 728\,\text{kW}$
@@ -153,7 +209,9 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Conversions:** Not needed: both powers are in kilowatts.
 **Substitution:** $P_\text{loss} = 800\,\text{kW} - 728\,\text{kW} = 72\,\text{kW}$
 **Answer:** $72\,\text{kW}$, two significant figures, because the precision of the difference is limited by the power $728\,\text{kW}$ in whole kilowatts.
-**Reasonableness:** The share of the loss is $72\,\text{kW} : 800\,\text{kW} = 0.090 = 9.0\,\%$, which is a typical loss of a district heating network. Also $728\,\text{kW} + 72\,\text{kW} = 800\,\text{kW}$.
+**Reasonableness:** The share of the loss is $72\,\text{kW} : 800\,\text{kW} = 0.090 = 9.0\,\%$, which is a typical loss of a district heating network. Also $$
+728\,\text{kW} + 72\,\text{kW} = 800\,\text{kW}
+$$.
 
 ## fy2-7-L2-05
 **Given:** from the table, the sent energies of four months $820$, $760$, $640$ and $430\,\text{MWh}$ and the arrived energies $745$, $692$, $577$ and $381\,\text{MWh}$
@@ -163,7 +221,12 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Conversions:** The quotient is converted into a percentage by multiplying by one hundred. The energies are in the same unit, megawatt-hours.
 **Substitution:** The sum of the sent energies is $2650\,\text{MWh}$ and that of the arrived energies $2395\,\text{MWh}$. So $E_\text{loss} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ and $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0.0962 = 9.62\,\%$
 **Answer:** $9.62\,\%$, three significant figures, because the energies are given with three digits (example data set). The monthly share of the loss is $9.1\,\%$ in January, $8.9\,\%$ in February, $9.8\,\%$ in March and $11\,\%$ in April, so it is greatest in April. Explanation: the need for heat decreases in spring, but the loss decreases ($75 \to 49\,\text{MWh}$) much less than the energy fed in ($820 \to 430\,\text{MWh}$), because the pipes are hot and the ground is cold in spring too, so the loss is a greater share of a smaller energy.
-**Reasonableness:** The monthly shares are between $8.9\,\%$ and $11\,\%$, so the $9.62\,\%$ of the whole period lies between them. Also $2395\,\text{MWh} + 255\,\text{MWh} = 2650\,\text{MWh}$.
+**Reasonableness:** The monthly shares are between $8.9\,\%$ and $11\,\%$, so the $9.62\,\%$ of the whole period lies between them. Also $$
+\begin{aligned}
+&2395\,\text{MWh} + 255\,\text{MWh} \\
+&= 2650\,\text{MWh}
+\end{aligned}
+$$.
 
 ## fy2-7-L2-06
 **Given:** transmitted power $100\,\text{MW}$; the loss power at voltages $20$, $40$, $80$ and $160\,\text{kV}$ is $16$, $4.0$, $1.0$ and $0.25\,\text{MW}$
@@ -186,9 +249,24 @@ The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the d
 **Principle:** An improvement reduces the loss power by a certain share, and energy is obtained from power and time. The saving of the house is heat that has arrived. The loss of the network is calculated from the sent energy, so the saving of the heating plant is the saving of the house divided by the efficiency.
 **Formula:** $\Delta P = r\, P_\text{loss}$, $\Delta E_\text{house} = \Delta P \cdot t$ and $\Delta E_\text{plant} = \dfrac{\Delta E_\text{house}}{\eta}$
 **Conversions:** $\eta = 100\,\% - 9.0\,\% = 91.0\,\% = 0.910$ and $r$ is the reduction as a decimal number, for example $50\,\% = 0.50$. A kilowatt times an hour is directly a kilowatt-hour, and $1000\,\text{kWh} = 1\,\text{MWh}$.
-**Substitution:** A: $\Delta P = 0.50 \cdot 2.4\,\text{kW} = 1.2\,\text{kW}$ and $\Delta E_\text{house} = 1.2\,\text{kW} \cdot 5000\,\text{h} = 6000\,\text{kWh}$. B: $0.40 \cdot 1.8\,\text{kW} \cdot 5000\,\text{h} = 3600\,\text{kWh}$. C: $0.60 \cdot 1.5\,\text{kW} \cdot 5000\,\text{h} = 4500\,\text{kWh}$. A saves the most, and $\Delta E_\text{plant} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
+**Substitution:** A: $\Delta P = 0.50 \cdot 2.4\,\text{kW} = 1.2\,\text{kW}$ and $\Delta E_\text{house} = 1.2\,\text{kW} \cdot 5000\,\text{h} = 6000\,\text{kWh}$. B: $$
+\begin{aligned}
+&0.40 \cdot 1.8\,\text{kW} \cdot 5000\,\text{h} \\
+&= 3600\,\text{kWh}
+\end{aligned}
+$$. C: $$
+\begin{aligned}
+&0.60 \cdot 1.5\,\text{kW} \cdot 5000\,\text{h} \\
+&= 4500\,\text{kWh}
+\end{aligned}
+$$. A saves the most, and $\Delta E_\text{plant} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
 **Answer:** $6.6\,\text{MWh}$, two significant figures as in the loss power $2.4\,\text{kW}$. Choice: insulating the external walls, because the loss power of the walls is the greatest and its reduction of $50\,\%$ is large, so the saving of $6000\,\text{kWh}$ beats improvements B ($3600\,\text{kWh}$) and C ($4500\,\text{kWh}$). The saving of the plant is greater than the saving of the house, because the heat that the house needs passes through the network: when the house needs $6.0\,\text{MWh}$ less, the plant also saves the part that would be lost on the way. The improvement should be aimed at the greatest loss, and in reality the price and the effect on living also influence the decision.
-**Reasonableness:** The part of the saving that is the loss of the network is $6.593\,\text{MWh} - 6.0\,\text{MWh} = 0.593\,\text{MWh}$, and $0.593\,\text{MWh} : 6.593\,\text{MWh} = 0.090 = 9.0\,\%$, as the loss of the network. The total loss power of the house, $8.0\,\text{kW}$, is more than $1.2\,\text{kW}$, so the saving is a sensible part of it.
+**Reasonableness:** The part of the saving that is the loss of the network is $$
+\begin{aligned}
+&6.593\,\text{MWh} - 6.0\,\text{MWh} \\
+&= 0.593\,\text{MWh}
+\end{aligned}
+$$, and $0.593\,\text{MWh} : 6.593\,\text{MWh} = 0.090 = 9.0\,\%$, as the loss of the network. The total loss power of the house, $8.0\,\text{kW}$, is more than $1.2\,\text{kW}$, so the saving is a sensible part of it.
 
 ## fy2-7-L3-05
 **Given:** from the table, the durations of the periods $7$, $5$, $7$ and $5\,\text{h}$, the fed-in powers $18$, $42$, $50$ and $66\,\text{MW}$, and the loss shares $1.5\,\%$, $3.5\,\%$, $4.2\,\%$ and $5.5\,\%$
@@ -211,7 +289,12 @@ H_4 &= 0.055 \cdot 330 = 18.15\,\text{MWh}
 ```
 The sum of the energies fed in is $1016\,\text{MWh}$ and the sum of the losses $42.09\,\text{MWh}$. So $p = \dfrac{42.09\,\text{MWh}}{1016\,\text{MWh}} = 0.0414 = 4.1\,\%$
 **Answer:** $4.1\,\%$, two significant figures as in the loss shares (example data set). The result is close to the loss of about $4\,\%$ in the Finnish electricity grid (Finnish Energy, 2024), that is, of the same order of magnitude. The lost energy is greatest in the period 19–24, when $18.15\,\text{MWh}$ is lost, about $43\,\%$ of the loss of the whole day. A greater power requires a greater current, and the loss grows faster than the current (a doubled current gives about a fourfold loss), so the loss grows faster than the power fed in, and its share increases.
-**Reasonableness:** The ordinary average of the loss shares of the periods would be $3.7\,\%$, which is too small, because a lot of energy is fed in during the evening and the share is then the greatest. The result $4.1\,\%$ lies between the shares $1.5\,\%$ and $5.5\,\%$, and $0.041 \cdot 1016\,\text{MWh} \approx 42\,\text{MWh}$ matches the sum $42.09\,\text{MWh}$.
+**Reasonableness:** The ordinary average of the loss shares of the periods would be $3.7\,\%$, which is too small, because a lot of energy is fed in during the evening and the share is then the greatest. The result $4.1\,\%$ lies between the shares $1.5\,\%$ and $5.5\,\%$, and $$
+\begin{aligned}
+&0.041 \cdot 1016\,\text{MWh} \\
+&\approx 42\,\text{MWh}
+\end{aligned}
+$$ matches the sum $42.09\,\text{MWh}$.
 
 ## fy2-7-L1-09
 **Given:** energy fed into the grid $E_\text{in} = 500\,\text{kWh}$; loss $4.0\,\%$ of the energy fed in; conversion from the MAFY table (Yksikkömuunnoksia, energy/work, kilowatt-hour) $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$

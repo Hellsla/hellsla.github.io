@@ -90,7 +90,7 @@ $$; polttoaineen massa $$
 $$
 **Sijoitus:** $Q = 0{,}0188829 \cdot 931{,}5\,\text{MeV} = 17{,}589\,\text{MeV} = 17{,}589 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}8178 \cdot 10^{-12}\,\text{J}$, joten $\dfrac{E}{m} = \dfrac{2{,}8178 \cdot 10^{-12}\,\text{J}}{8{,}3528 \cdot 10^{-27}\,\text{kg}} = 3{,}3735 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Vastaus:** $3{,}37 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$. Vastauksessa on kolme merkitsevää numeroa. Atomimassat ovat hyvin tarkkoja, ja muuntokerroin $1{,}602 \cdot 10^{-19}\,\text{J}$ rajoittaa tarkkuuden neljään numeroon.
-**Järkevyys:** Kivihiilen lämpöarvo on noin $2{,}4 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$. Fuusiopolttoaine vapauttaa siis noin $10^{7}$-kertaisesti energiaa kilogrammaa kohti. Luvun mukaan fuusio tuottaa noin nelinkertaisesti energiaa fissioon verrattuna. Uraani-235:n fissio vapauttaa $8{,}2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$, ja kun se kerrotaan neljällä, saadaan noin $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
+**Järkevyys:** Kivihiilen lämpöarvo on noin $2{,}9 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$. Fuusiopolttoaine vapauttaa siis noin $10^{7}$-kertaisesti energiaa kilogrammaa kohti. Luvun mukaan fuusio tuottaa noin nelinkertaisesti energiaa fissioon verrattuna. Uraani-235:n fissio vapauttaa $8{,}2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$, ja kun se kerrotaan neljällä, saadaan noin $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
 
 ## fy8-11-L2-03
 **Annettu:** reaktio $$
@@ -275,7 +275,7 @@ Perustelu, että sidosenergia vapautuu ytimen jakautuessa, on virheellinen: sido
 **Järkevyys:** Taulukossa aktiivisuus on $30$ vuodessa $15\,050$ eli noin puolet alkuarvosta $30\,000$, joten puoliintumisaika on noin $30\,\text{a}$. Kahdeksan puoliintumisaikaa pienentää aktiivisuuden tekijällä $2^{8} = 256$, ja $30\,000 : 256 \approx 117$. Siksi $100\,\tfrac{\text{TBq}}{\text{t}}$ saavutetaan noin $250\,\text{a}$ kuluttua. Malli kuvaa vain fissiotuotteita.
 
 ## fy8-11-L3-05
-**Annettu:** (tehtävä jatkaa tehtävää L3-01 toisella reaktorilla) nettosähköteho $P_\text{s} = 507\,\text{MW}$, hyötysuhde $\eta = 0{,}33$, käyttöaika $92\,\%$ vuodesta ($365\,\text{d}$), fission energia $Q = 200\,\text{MeV}$, $m_\text{U} = 235{,}0439282\,\text{u}$, $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, kivihiilen lämpöarvo $24\,\tfrac{\text{MJ}}{\text{kg}}$
+**Annettu:** (tehtävä jatkaa tehtävää L3-01 toisella reaktorilla) nettosähköteho $P_\text{s} = 507\,\text{MW}$, hyötysuhde $\eta = 0{,}33$, käyttöaika $92\,\%$ vuodesta ($365\,\text{d}$), fission energia $Q = 200\,\text{MeV}$, $m_\text{U} = 235{,}0439282\,\text{u}$, $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, kivihiilen lämpöarvo $29\,\tfrac{\text{MJ}}{\text{kg}}$
 **Kysytty:** a) lämpöteho $P_\text{th}$ ja jäähdytysveteen siirtyvä teho $P_\text{jäte}$, b) vuodessa fissioituvan uraani-235:n massa $m$, c) vastaavan kivihiilen massa
 **Periaate:** Hyötysuhde on sähköteho jaettuna lämpöteholla, joten lämpöteho saadaan sähkötehosta. Se osa lämpötehosta, joka ei muutu sähköksi, siirtyy jäähdytysveteen. Oletuksen mukaan kaikki lämpöteho syntyy uraani-235:n fissioista. Vuodessa vapautunut energia jaettuna yhden fission energialla on fissioiden määrä. Jokainen fissio kuluttaa yhden uraani-235-atomin.
 **Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{th}}$, $P_\text{jäte} = P_\text{th} - P_\text{s}$, $E = 0{,}92\,P_\text{th}\,t$, $N = \dfrac{E}{Q}$, $m = N\,m_\text{U}$ ja $m_\text{hiili} = \dfrac{E}{\text{lämpöarvo}}$
@@ -285,13 +285,13 @@ m_\text{U} &= 235{,}0439282 \\
 &\cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} \\
 &= 3{,}9030 \cdot 10^{-25}\,\text{kg}
 \end{aligned}
-$$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
+$$; $29\,\tfrac{\text{MJ}}{\text{kg}} = 29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
 **Sijoitus:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0{,}33} = 1536\,\text{MW}$ ja $P_\text{jäte} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $$
 \begin{aligned}
 E &= 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \\
 &\cdot 31\,536\,000\,\text{s} \\
 &= 4{,}457 \cdot 10^{16}\,\text{J}
 \end{aligned}
-$$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}857 \cdot 10^{9}\,\text{kg} = 1{,}86 \cdot 10^{6}\,\text{t}$
-**Vastaus:** $540\,\text{kg}$ kohdan b) tuloksena. Kaksi merkitsevää numeroa riittää, koska hyötysuhde $0{,}33$ ja käyttöaika $92\,\%$ on annettu kahdella numerolla. Kohdassa a) lämpöteho on $1500\,\text{MW}$ ja jäähdytysveteen siirtyy $1000\,\text{MW}$ (samat kaksi merkitsevää numeroa). Kohdassa c) tarvittaisiin noin $1{,}9$ miljoonaa tonnia kivihiiltä. Ydinreaktioissa energia on miljoonia elektronivoltteja atomia kohti, ja palamisessa se on elektronivoltin luokkaa. Siksi hiiltä tarvitaan noin $3{,}4$ miljoonaa kertaa enemmän massaa kuin uraani-235:tä.
+$$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}537 \cdot 10^{9}\,\text{kg} = 1{,}54 \cdot 10^{6}\,\text{t}$
+**Vastaus:** $540\,\text{kg}$ kohdan b) tuloksena. Kaksi merkitsevää numeroa riittää, koska hyötysuhde $0{,}33$ ja käyttöaika $92\,\%$ on annettu kahdella numerolla. Kohdassa a) lämpöteho on $1500\,\text{MW}$ ja jäähdytysveteen siirtyy $1000\,\text{MW}$ (samat kaksi merkitsevää numeroa). Kohdassa c) tarvittaisiin noin $1{,}5$ miljoonaa tonnia kivihiiltä. Ydinreaktioissa energia on miljoonia elektronivoltteja atomia kohti, ja palamisessa se on elektronivoltin luokkaa. Siksi hiiltä tarvitaan noin $2{,}8$ miljoonaa kertaa enemmän massaa kuin uraani-235:tä.
 **Järkevyys:** Luvun mukaan gramma uraani-235:tä vapauttaa noin $82\,\text{GJ}$. Energia $4{,}457 \cdot 10^{16}\,\text{J}$ jaettuna luvulla $8{,}2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ on noin $5{,}4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$. Se täsmää. Jäähdytysveteen siirtyvä teho on suurempi kuin sähköteho, mikä sopii hyötysuhteeseen $0{,}33$, koska $1029 > 507$.

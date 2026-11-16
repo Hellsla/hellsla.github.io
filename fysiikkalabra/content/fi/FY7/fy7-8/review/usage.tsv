@@ -1,4 +1,18 @@
 date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-15T20:50Z	fy7-8	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	752243	20	12817	627219	112187	119052	10	131	11		0.9428	transcript	435721218a4a
+2026-11-15T20:50Z	fy7-8	FY7	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	477393	28	7122	419603	50640	56901	13	236	14		0.2818	transcript	1d1583b59029
+2026-11-15T20:50Z	fy7-8	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	1111480	32	11590	923531	176327	97602	15	464	15		1.2983	transcript	7356eb3cd45e
+2026-11-15T20:50Z	fy7-8	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	2014537	50	16560	1878966	118961	125980	24	218	25		1.3020	transcript	642d713a06d0
+2026-11-15T20:50Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/7	1	199664	6	1418	184208	14032	14674	20	83	30		0.0861	transcript	3e28fe347375
+2026-11-15T20:50Z	fy7-8	FY7	pedagogy-reviewer	review	claude-sonnet-5-5	medium	batch/6	1	83023	4	848	70260	11911	13082	10	43	10		0.0523	transcript	6543ffe3628d
+2026-11-15T20:50Z	fy7-8	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	503595	16	7836	403067	92676	99338	7	88	7		0.7008	transcript	f6204c72ae9d
+2026-11-15T20:50Z	fy7-8	FY7	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	263473	18	4484	228932	30039	36730	9	35	10		0.1658	transcript	300d5b5adbef
+2026-11-15T20:50Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/7	1	113405	4	942	100103	12356	13002	13	58	21		0.0603	transcript	7578a8842bad
+2026-11-15T20:50Z	fy7-8	FY7	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	1089376	34	9287	984105	95950	102106	15	195	21		0.5296	transcript	eaa91486c9f7
+2026-11-15T20:50Z	fy7-8	FY7	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	909113	24	8371	802419	98299	104994	12	68	14		0.4900	transcript	dc01252baf17
+2026-11-15T20:50Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	819779	32	5679	733588	80480	87929	15	47	22		0.4048	transcript	076432c9c06d
+2026-11-15T20:50Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/5	1	198530	7	1150	181382	15991	17504	16	96	29		0.0878	transcript	0babcdd7f6a4
+2026-11-15T20:50Z	fy7-8	FY7	orchestrator	orchestrate	claude-opus-5-5		since/10		10355151	58	13482	10287214	54397	61297	285	5086	316		2.7625	transcript	f901aaaccbe2
 2026-11-15T21:06Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	117583	12	1659	81815	34097	41135	5	16	7		0.1182	transcript	e83e387691f8
 2026-11-15T21:06Z	fy7-8	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	1248069	28	11584	1135917	100540	107323	14	135	15		0.9617	transcript	f226d5f38217
 2026-11-15T21:06Z	fy7-8	FY7	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	289467	20	2711	243045	43691	50797	9	22	13		0.1850	transcript	aa484bf49d12

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7441783f2882cd78
+CONTENT-HASH: 2492493ba54a8626
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
+- [Minor] solutions.md fy8-9-L2-05 Vastaus — for an S2 reader the last sentence is compressed; clearer: "Puoliintumisajan epätarkkuus saadaan, kun tämä jaetaan luvulla $\ln 4{,}42 \approx 1{,}5$: tulos on noin $8\,\%$." Understandable as it is.
+- [Minor] for science: the $\pm 8\,\%$ estimate uses only the spread of the count $64$ (not that of $R_0 = 283$ or the background); confirm the simplification is acceptable.
 
 ## Checked
-- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
-- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
+- Hash at start and end 2492493ba54a8626; the captures' stamp shows the same hash.
+- fy8-9-open-exercises-L2-1280-6 (content/fi-easy/FY8/fy8-9/review/shots/): task 9-14 (fy8-9-L2-05) solution open. The Vastaus sentences render on three short lines: answer box "149 s", "±8 %", "√64 = 8", 8/64 ≈ 13 %, "ln 4,42 ≈ 1,5" in KaTeX, decimal comma, nothing clipped; Sijoitus chain aligned, Järkevyys block intact.
+- Delta: the packet diff is empty; only this capture judged. No 390 px capture of the opened exercises exists; the 360 px layout check is the developer's.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

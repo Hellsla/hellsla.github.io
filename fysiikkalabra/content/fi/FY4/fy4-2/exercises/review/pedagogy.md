@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 14555a0377ff79b2
-SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
-
+CONTENT-HASH: fd25c4dd05e39506
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. solutions.md fy4-2-L1-09 Järkevyys - division still written with a colon (2 * 20 m : 9,81 m/s^2); use \dfrac. Optional.
-
+(none)
 ## Checked
-- Round 2, delta: the round-1 fixes judged in their context.
-- L1-09 significant-figure wording is now honest: four figures in the table value, three in the answer because tables differ in the fourth; consistent with the 4 % tolerance.
-- No new task, figure or level change; set mix and counts unchanged from the passed version.
-- Language and case endings in the changed text are correct.
+- Round 1, delta: only the diff judged; the rest of the set as passed.
+- solutions.md, the train task's Vastaus: "kilometreina" corrected to "kilometreinä" (vowel harmony); the sentence now reads "… luvun lopun nolla ei ole merkitsevä; kilometreinä asia näkyy selvemmin."
+- No number, symbol, unit or step changed; the explanation of the non-significant trailing zero stands as passed.
+- Hash unchanged at the end of the review.

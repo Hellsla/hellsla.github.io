@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f2fe49d14207dcbb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 35d50fed670b3d0d
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Työmäärä: 5 tehtävää, 26 osaa ja noin 90 pistettä on raskas 2 op:n moduulin Sovella-osuudeksi (arvio useita tunteja). Harkitse yhden osan (esim. s3 e tai s2 e) merkitsemistä lisätehtäväksi.
+- Dispositiot: s1 c, s2 a-b ja s3 a-b ovat lähes vihjeitä (levyjen jännite, tehollinen arvo, "14 jaksoa", "kaksi johdinta" annetaan tekstissä). Osat, joissa mallin valinta jää opiskelijalle, ovat d- ja e-kohdat; käsittele a-c-kohtia rauhassa lyhyempinä tai poista yksi vihje (esim. s3:n "kaksi johdinta" voisi päätellä kuvasta).
+- s5 a: tehtävänanto kertoo jo, että pisteisiin sopii origon kautta kulkeva suora. Itse akselien valinta (kλ ja sinθ) jää opiskelijalle, mutta lause voisi olla pelkkä "muodosta kuvaaja, josta hilan voi määrittää".
+- Kattavuus: kuvaajan laatiminen on edelleen "ohut näyttö", koska vain s5 a tekee sen. Aukko on todellinen; tämä tehtävä ei sulje sitä kokonaan. Polarisaatio (LOPS-sisältö) ja sähkömagneettisen säteilyn lähteet ja vaikutukset (tavoite) puuttuvat tehtävistä kokonaan; sano intron tai kattavuusraportin selityksessä, että ne harjoitellaan luvuissa.
+- s2 d: toisen osan (pyörrevirrat valon ollessa pois) pisteytys edellyttää, että opiskelija tietää dynamon rautasydämestä; mainitse tekstissä "rautasydän", se on jo siellä, joten kriteeri on reilu, mutta sana "pieni jarrutus" voisi olla mitattavampi.
+- s4 d: erotus 34 K ja lukuepävarmuus 36 K on sovitettu lähes täsmälleen; hyväksy rubriikissa myös perusteltu vastaus, jossa epävarmuus arvioidaan toisin.
 
 ## Checked
-- Diff: s3 stem: substation FEEDS 6.0 MW into the line, part becomes heat, so the mine receives less; 'yksinkertaistettu kaksijohtiminen malli' with P = UI; 'noin' removed (exact data); solution a) notes ~5.2 MW left; part a answer now two items (Ph 846 kW, rel 14.1 %), answers.py key fy7-s3-a-Ph; mu0 approx in e) text and solution.
-- Stem still gives situation and model before the parts; no heading names the formula; the two-item answer matches the two questions of part a.
-- Round 2: s3 part a question, Vastaus and rubric detail now say 'johtoon syötetystä tehosta' / 'the power fed into the line', matching the stem; the 14.1 % answer is now unambiguous; my item is resolved.
-- Language checked: fi. Hash f2fe49d14207dcbb at start and end.
+- Jokainen tehtävä on aito, vieras tilanne (ioni-istutin, napadynamo, kaivoksen liittymä, pyrometri, hilaspektrometri) ja otsikot eivät nimeä kaavaa tai mallia.
+- Osat nousevat vaativuudessa: laskuista perusteluihin ja ehdotuksen arviointiin (insinööri, pyöräilijä, valtuutettu, valssaaja, opiskelija); jokaisessa tehtävässä on arvioitavaksi annettu väite.
+- Pisteytys on täsmällinen eikä anna pisteitä epäolennaisesta; yhteiset kriteerit (graph_*, equation, units_precision) on käytetty oikein ja jokaisessa on tehtäväkohtainen detail.
+- Ratkaisut opettavat: kysytty, periaate, kaava, järkevyys, hyväksytään myös; voimakuvaa edeltää yhtälö (s1 a). Yleiset virheet ovat todellisia (kilovolttien unohtaminen, nollakohtien väli jaksona, halkaisijoiden ero).
+- Tieteellinen sisältö vastaa packetin answers.py-arvoja (725 000 m/s, 2900 V, 846 kW, 362 nm, 589 nm).
+- Vaihtelu: hiukkaset, induktio, sähkönsiirto, lämpösäteily, valokuitu, ohut kalvo, hila; mukana kuvaaja-, epävarmuus- ja mallin pätevyys -tehtäviä.

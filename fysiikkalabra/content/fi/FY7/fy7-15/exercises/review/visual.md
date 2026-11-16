@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 00b8c689c34d85f6
-SCOPE: delta added-exercise from 49d3bc7f92e37a89 base 8f23aa7ae3bd
+CONTENT-HASH: 18b7d27b5621721b
 
 ## Blocking
-- none
+
+## Outside this change (queue item 5d, not blocking here)
+- [Major] fy7-15 solutions at 360 px — the clipped formulas listed for this language in docs/clipped-formulas.tsv — old, outside this change; fix under 5d.
 
 ## Polish
-- [Minor] 15-10 — Sijoitus gives 268 W/m² from 0,67 (two figures) while Vastaus says 270 W/m²; keep one rule. The Kaava I = I_0·I/I_0 is a tautology.
-- [Minor] 15-19 Järkevyys — 'lähellä väliä, jonka keskikohta 195 lx' is clumsy; say 'lukema 200 lx on hieman suurempi kuin 195 lx, joka vastaa kulmaa 45°'.
+- [Minor] solutions.md fy7-15-L2-09 — tehtävä puhuu polarisaatiosuotimesta, Periaate alkaa sanalla "Polarisaattori" kytkemättä niitä — lisää esim. "Polarisaatiosuodin on polarisaattori: se päästää läpi vain …".
+- [Minor] 15-16 ja 15-17 puhelimella — aineistotaulukko on kapea ja sen otsikko rivittyy neljälle riville (vanha, ei tämän muutoksen osa).
 
 ## Checked
-- fy7-15 L1 captures 10-12 (15-10 graph, 15-11), L2 captures 9-11 (15-19 graph, solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Delta review. Hash identical at start and end.
+- open-exercises-L2-1280-11 and -10: the new core task 15-20 (fy7-15-L2-09) with answer and solution open at 1280 px: Core badge, text, green answer panel and Kysytty/Periaate/Mallivastaus panels inside the card, nothing clipped, no empty column.
+- The same card at 390 px, closed and with the solution open, captured by the reviewer from the preview page (the packet's inventory has no phone capture of the exercises): heading row wraps cleanly, locked solution in view, no horizontal overflow (page width 390 px).
+- L2-05 and L2-06 after the "example data" sentence was removed (390 px): text, table and answer row intact.
+- "Syventävä tehtävä." starts: contact-6 (15-5 … 15-15) and 15-2 at 390 px, 15-16 at 390 px: shown as the badge only, the text starts with the situation, no duplicate.
+- Tehtävän 15-20 teksti ja mallivastaus luettu: sujuvaa suomea, tilanne ensin ja kysymys omana kappaleenaan, $90^\circ$ LaTeXina, ei paljaita lukuja.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

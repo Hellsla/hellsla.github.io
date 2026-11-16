@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 44581897e649e0f4
-SCOPE: delta added-exercise from 82235841107272d6 base 81db4a6fd727
+CONTENT-HASH: bac8be65332f1964
 
 ## Blocking
 (none)
 
 ## Polish
-1. Part b) has no answer box; the solution answer is clear, but ask for a single number ('about what percentage') to keep it parallel to a).
+1. exercises/solutions.md:339 — "the model of the chapter's graph" and "the skydivers of the graph" are hard to place for a student — "the chapter's example skydiver (belly down)" is enough.
 
 ## Checked
-Added L2-08 (skydiver, air resistance from a (t,v) graph).
-- Level 2 fits: slope between two points, F = m(g - a), then the terminal value; the diagram comes before the equations.
-- Figure gives seven points and no curve; the solution justifies using the interval average at the midpoint.
-- Part b) uses the graph to reach terminal velocity and 85 % of weight, not a repeat of L2-05 or L2-07.
+- Delta: the diff judged in its context; hash bac8be65332f1964 at start and end.
+- L1-03 Reasonableness: 2 N : 0.6 kg is now 3.3 m/s², a correct rough estimate beside the answer 3.52 m/s².
+- L2-08 Reasonableness: the added sentence explains why 48 m/s is below the chapter's 53 m/s (a wider position); it does not disclose anything before the student acts.
+- The marker "(example data)" taken out of captions changes no task.
+- Force-diagram checklist untouched by the diff.

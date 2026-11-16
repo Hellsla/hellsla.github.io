@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 323023f502e30fb8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: d9f79207147a8ef9
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- none
+
+(none)
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+
+- Delta only: solutions.md line 158, "leptolukua" and "baryolukua" corrected to "leptonilukua" and "baryonilukua" in the Järkevyys step of the conservation-law counting task.
+- The corrected words are the chapter's own terms (baryoniluku, leptoniluku), which matters most for an S2 reader who looks a word up. No old form remains in exercises.json or solutions.md.
+- The step still names which law each forbidden reaction breaks, in agreement with the Sijoitus line; the short sentences of this version are unchanged, no number or symbol changed.
+- Removing the caption marker (esimerkkiaineisto) takes nothing a task needs.
+- Judged from the diff and the packet text; no capture opened.

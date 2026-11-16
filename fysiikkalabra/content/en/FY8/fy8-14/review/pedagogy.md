@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7ca8af81a83eed0d
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 74dc9ad12cabc1e1
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none (the earlier polish is met: the small-N values are now marked "when $N$ was $10$ and $20$", though the parenthesis still sits inside the large-N sentence; acceptable).
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff: one reworded feedback sentence of the supporting option; numbers ($10\,\%$, $5\,\%$, about a quarter) unchanged.
+- The feedback still names the evidence from the model values and the chance variation; no answer disclosed before commitment.

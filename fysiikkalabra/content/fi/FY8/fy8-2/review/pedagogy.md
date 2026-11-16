@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7346d9cf9e68d361
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 82fca11c683128df
 
 ## Blocking
 - none
@@ -9,5 +8,4 @@ Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix d
 - none
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff is one hint sentence: "Lämmöksi jää" to "Sisäenergiaksi jää"; now matches the task and the other hints; numbers and answer unchanged.

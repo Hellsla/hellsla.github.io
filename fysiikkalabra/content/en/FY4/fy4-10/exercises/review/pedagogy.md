@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fd054a287d5cf164
-SCOPE: delta added-exercise from 2040e0e2c0e5a3c7 base 81db4a6fd727
+CONTENT-HASH: da2c178e628d95c8
+SCOPE: delta added-exercise from 4c8ef47087644985 base abdc9e095e4f
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. solutions.md fy4-10-L3-06 Järkevyys - the factor m_B/(m_A+m_B) is not in the chapter; keep to the computed energies 0,054 J and 0,018 J. Optional.
+1. exercises/exercises.json:279 — no part asks for the limits of the model; the solution has them under "Check and limitations" — end d) with "How does the simulation differ from a real collision experiment?".
+2. exercises/exercises.json:279 — part b repeated at three elasticities is twelve similar calculations — say that at 50 % and 0 % the totals are enough.
+3. exercises/solutions.md (part c) — the rounding remark (−0.26 against −0.25 kg·m/s) comes after both calculations — move one sentence to the first place −0.255 appears.
 
 ## Checked
-- Round 2, delta: the round-1 fixes judged in their context.
-- L2-09 (v-t, 0,30 kg) and L3-06 (x-t, 0,036 J) correct; figure descriptions give the grid scales and values without the answers and the tick labels are described.
-- No new task, figure or level change; set mix and counts unchanged from the passed version.
-- Language and case endings in the changed text are correct.
+- Delta: only fy4-10-L2-10 judged, with the list of the set; hash da2c178e628d95c8 at start and end.
+- Applied: the student produces the data in PhET Collision Lab, so the source is necessary; the settings to tick are named and the positive direction fixed.
+- Parts progress record → compute and compare → vary elasticity → explain; c) asks what happens, d) why, so no overlap.
+- Only momentum, kinetic energy and elastic / inelastic collisions of this chapter.
+- Solution: system and external forces argued first, a dated example with the default values (version named), signed velocities, the display's rounding explained, third-law and impulse explanation for d).
+- Fits level 2 as the set's simulation-data task; no repeat of L2-05/06 (table data) or the worked example.

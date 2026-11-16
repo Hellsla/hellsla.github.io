@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2615e4af46870a85
-SCOPE: delta added-exercise from 0be719f8b69971cc base 81db4a6fd727
+CONTENT-HASH: 7d2542dd563a3195
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
-- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
+- [Minor] fy5-6-L2-09 solution, Annettu — 'Kohta a), esimerkki, aineisto luettu 15. marraskuuta 2026.' reads like a fragment; write 'Kohdan a) esimerkkitaulukko, aineisto luettu 15. marraskuuta 2026.'
+- [Minor] fy5-6-L2-09 at 360 px — in the stacked a³/T² table the label '(10^8 km)^3)' touches the value ('0,194'); add a gap.
 
 ## Checked
-- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
-- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
-- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
-- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
+- Rendered preview/fi-easy/fy5-6.html?ratkaisut=1 at 360 and 1280 px with every solution open: no red KaTeX, no clipped formula, no paragraph over 110 words in any task, no asterisks.
+- Reopened after the fix: opened the 360 px render of the fy5-6-L3-04 solution; Vastaus is now five short paragraphs (answer with significant figures; outlier reasoning; correct period; explanation), each under 55 words, nothing lost. The earlier Major is resolved.
+- Earlier: full 360 px render of the new task fy5-6-L2-09, no clipping, units in LaTeX.
+- Note: with the details opened the page measures 7 px wider than the viewport, caused by an SVG circle in the lesson's Teoria figure area, not by this change.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

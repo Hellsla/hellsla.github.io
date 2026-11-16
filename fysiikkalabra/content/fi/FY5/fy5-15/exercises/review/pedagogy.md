@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0951554d40dc2e9f
+CONTENT-HASH: 29114098e00b3554
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- solutions.md (L2-06 Vastaus) — the 315 m is rounded up 'turvalliselle puolelle' and the box answer is 3,2·10^2 m: fine, but one clause saying that the box accepts 315 within tolerance would help.
 
 ## Checked
-Delta only. L2-09 answer 5.0 mW, tolerance 0.04 (accepts 4.96-5.04): a student typing 5,03 or 5,0 passes; reading from the graph gives about 5.
+- Rounding up for a limit value (315 m to 320 m, 44,6 m to 45 m) is stated with its reason.
+- 74,0 dB with +-0,1 dB giving about 2,3 % in intensity justifies two figures; correct.
+- L_malli chain broken as 86,0 dB − over a line break: readable, small oddity only.
+- No change to task texts.

@@ -76,7 +76,12 @@
 **Muunnokset:** Teho kilowateiksi: $60\,\text{W} = 60 \cdot 0{,}001\,\text{kW} = 0{,}060\,\text{kW}$. Kun teho on kilowatteina ja aika tunteina, energia tulee suoraan kilowattitunteina. Lisäksi $5{,}0\,\% = 5{,}0 \cdot 0{,}01 = 0{,}050$.
 **Sijoitus:** $E_\text{o} = 0{,}060\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}24\,\text{kWh}$, joten $E_\text{h} = (1 - 0{,}050) \cdot 0{,}24\,\text{kWh} = 0{,}228\,\text{kWh}$
 **Vastaus:** $0{,}23\,\text{kWh}$. Vastauksessa on kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
-**Järkevyys:** Lamppu muuttaa noin $95\,\%$ otetusta energiasta lämmöksi. Häviöenergia on siis lähes yhtä suuri kuin otettu energia $0{,}24\,\text{kWh}$, mutta vähän pienempi. Hyötyenergia on $0{,}012\,\text{kWh}$. Yhteensä $0{,}228\,\text{kWh} + 0{,}012\,\text{kWh} = 0{,}24\,\text{kWh}$.
+**Järkevyys:** Lamppu muuttaa noin $95\,\%$ otetusta energiasta lämmöksi. Häviöenergia on siis lähes yhtä suuri kuin otettu energia $0{,}24\,\text{kWh}$, mutta vähän pienempi. Hyötyenergia on $0{,}012\,\text{kWh}$. Yhteensä $$
+\begin{aligned}
+&0{,}228\,\text{kWh} + 0{,}012\,\text{kWh} \\
+&= 0{,}24\,\text{kWh}
+\end{aligned}
+$$.
 
 ## fy2-4-L2-04
 **Annettu:** hyötysuhde $\eta = 25\,\%$ ja hyötyteho $P_\text{a} = 15\,\text{kW}$
@@ -173,9 +178,19 @@
 ## fy2-4-L3-04
 **Annettu:** sähköauto: akusta otettu energia $E_\text{s} = 17\,\text{kWh}$ sadalla kilometrillä ja hyötysuhde $\eta_\text{s} = 90\,\%$. Bensiiniauto: bensiiniä $V = 6{,}0\,\textsf{l}$ sadalla kilometrillä, energiasisältö $h = 32\,\text{MJ/l}$ ja hyötysuhde $\eta_\text{b} = 25\,\%$
 **Kysytty:** kuinka moninkertainen bensiiniauton tankista ottama energia $E_\text{b}$ on sähköauton akusta ottamaan energiaan $E_\text{s}$ verrattuna. Lisäksi kummankin auton hyötyenergia ja perustelu erolle
-**Periaate:** Autoja voi verrata vain, kun energiat ovat samassa yksikössä. Bensiinin energia lasketaan litramäärästä ja energiasisällöstä. Sen jälkeen se muutetaan kilowattitunneiksi sijoittamalla $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Hyötyenergia on hyötysuhde kerrottuna otetulla energialla. Energia säilyy: otettu energia on hyötyä ja häviöitä (lämpöä).
+**Periaate:** Autoja voi verrata vain, kun energiat ovat samassa yksikössä. Bensiinin energia lasketaan litramäärästä ja energiasisällöstä. Sen jälkeen se muutetaan kilowattitunneiksi sijoittamalla $$
+\begin{aligned}
+1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
+&= 3{,}6\,\text{MJ}
+\end{aligned}
+$$. Hyötyenergia on hyötysuhde kerrottuna otetulla energialla. Energia säilyy: otettu energia on hyötyä ja häviöitä (lämpöä).
 **Kaava:** $E_\text{b} = V \cdot h$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o}$, ja vertailu $\dfrac{E_\text{b}}{E_\text{s}}$
-**Muunnokset:** $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$, joten $1\,\text{MJ} = \dfrac{1}{3{,}6}\,\text{kWh}$. Hyötysuhteet: $90\,\% = 0{,}90$ ja $25\,\% = 0{,}25$.
+**Muunnokset:** $$
+\begin{aligned}
+1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
+&= 3{,}6\,\text{MJ}
+\end{aligned}
+$$, joten $1\,\text{MJ} = \dfrac{1}{3{,}6}\,\text{kWh}$. Hyötysuhteet: $90\,\% = 0{,}90$ ja $25\,\% = 0{,}25$.
 **Sijoitus:** Bensiinin energia on $E_\text{b} = 6{,}0 \text{ litraa} \cdot 32\,\text{MJ/l} = 192\,\text{MJ}$. Kilowattitunteina $E_\text{b} = \dfrac{192\,\text{MJ}}{3{,}6\,\text{MJ/kWh}} = 53{,}3\,\text{kWh}$. Suhde on $\dfrac{E_\text{b}}{E_\text{s}} = \dfrac{53{,}3\,\text{kWh}}{17\,\text{kWh}} = 3{,}1$. Hyötyenergiat ovat sähköautolla $E_\text{a,s} = 0{,}90 \cdot 17\,\text{kWh} = 15{,}3\,\text{kWh}$ ja bensiiniautolla $E_\text{a,b} = 0{,}25 \cdot 53{,}3\,\text{kWh} = 13{,}3\,\text{kWh}$.
 **Vastaus:** Bensiiniauto ottaa tankista noin $3{,}1$ kertaa enemmän energiaa kuin sähköauto akusta. Vastauksessa on kaksi merkitsevää numeroa. Samankokoisten autojen hyötyenergiat ovat lähes yhtä suuret, $15\,\text{kWh}$ ja $13\,\text{kWh}$, koska molempien on ajettava sama matka. Ero otetussa energiassa johtuu hyötysuhteesta. Sähköauto hyödyntää $90\,\%$ otetusta energiasta, bensiiniauto vain $25\,\%$. Loput $75\,\%$ eli noin $40\,\text{kWh}$ muuttuu lämmöksi.
 **Järkevyys:** Hyötysuhteiden suhde $0{,}90 : 0{,}25 = 3{,}6$ ja hyötyenergioiden suhde $15{,}3 : 13{,}3 = 1{,}15$ antavat $3{,}6 : 1{,}15 = 3{,}1$, kuten pitääkin. Tarkastelu koskee vain autojen omaa energiankäyttöä. Sähkön ja bensiinin tuotannon häviöt eivät ole mukana. Tulos ei siis yksin ratkaise, kumpi on ympäristön kannalta parempi.
@@ -188,9 +203,24 @@
 **Kaava:** $E_\text{a} = E_\text{o} - E_\text{h}$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, $P = \dfrac{E}{t}$, $E_\text{o,v} = P \cdot t_\text{v}$ ja $E_\text{h,v} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,v}$
 **Muunnokset:** Vuoden käyttöaika on $t_\text{v} = 3{,}0\,\text{h} \cdot 365 = 1095\,\text{h}$. Teho on $9{,}0\,\text{W} = 0{,}0090\,\text{kW}$.
 **Sijoitus:** Oppilaan virhe: hän jakoi häviöenergian otetulla energialla. Luku $0{,}70$ on siis häviöiden osuus eikä hyötysuhde. Valoenergia on $E_\text{a} = 2160\,\text{J} - 1510\,\text{J} = 650\,\text{J}$, ja $\eta = \dfrac{650\,\text{J}}{2160\,\text{J}} = 0{,}301 = 30\,\%$.
-Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\text{h} = 9{,}855\,\text{kWh}$. Siitä muuttuu lämmöksi osuus $\dfrac{1510}{2160} = 0{,}699$, eli $E_\text{h,v} = 0{,}699 \cdot 9{,}855\,\text{kWh} = 6{,}89\,\text{kWh}$. Hinta on $6{,}89\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 1{,}38\,\text{€}$.
+Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\text{h} = 9{,}855\,\text{kWh}$. Siitä muuttuu lämmöksi osuus $\dfrac{1510}{2160} = 0{,}699$, eli $E_\text{h,v} = 0{,}699 \cdot 9{,}855\,\text{kWh} = 6{,}89\,\text{kWh}$. Hinta on $$
+\begin{aligned}
+&6{,}89\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} \\
+&= 1{,}38\,\text{€}
+\end{aligned}
+$$.
 **Vastaus:** Oikea hyötysuhde on $30\,\%$. Oppilaan $70\,\%$ on häviöiden osuus eikä hyötysuhde. Lampun ottamasta sähköstä muuttuu vuodessa lämmöksi noin $6{,}9\,\text{kWh}$. Sen hinta on noin $1{,}4\,\text{€}$. Oppilaan $70\,\%$ on tähän laskuun oikea luku, koska kysytään lämmöksi muuttuvaa osaa: $30\,\% + 70\,\% = 100\,\%$.
-**Järkevyys:** Valoksi menee $0{,}30 \cdot 9{,}855\,\text{kWh} = 2{,}96\,\text{kWh}$. Valo ja lämpö yhteensä ovat $2{,}96\,\text{kWh} + 6{,}89\,\text{kWh} = 9{,}85\,\text{kWh}$, kuten pitääkin. Ledilampun tyypillinen hyötysuhde on noin $30\,\%$. Koko lampun vuosisähkö maksaa vain $1{,}97\,\text{€}$, joten $1{,}4\,\text{€}$ on järkevä.
+**Järkevyys:** Valoksi menee $$
+\begin{aligned}
+&0{,}30 \cdot 9{,}855\,\text{kWh} \\
+&= 2{,}96\,\text{kWh}
+\end{aligned}
+$$. Valo ja lämpö yhteensä ovat $$
+\begin{aligned}
+&2{,}96\,\text{kWh} + 6{,}89\,\text{kWh} \\
+&= 9{,}85\,\text{kWh}
+\end{aligned}
+$$, kuten pitääkin. Ledilampun tyypillinen hyötysuhde on noin $30\,\%$. Koko lampun vuosisähkö maksaa vain $1{,}97\,\text{€}$, joten $1{,}4\,\text{€}$ on järkevä.
 
 ## fy2-4-L2-08
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
@@ -198,7 +228,14 @@ Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\
 **Mallivastaus:** Rivi 1: $2{,}5\,\text{kW} = 2500\,\text{W}$ ja $4{,}0\,\text{min} = 240\,\text{s}$ ovat oikein.
 Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, eli $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
 Rivi 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ on oikein.
-Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0{,}60 = 60\,\%$. Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$. Oikea tulos sopii myös riviin 3, sillä $240\,\text{kJ} : 600\,\text{kJ} = 0{,}40$ ja $60\,\% + 40\,\% = 100\,\%$. Oikea vastaus on siis rivi 4.
+Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $$
+\begin{aligned}
+\eta &= \dfrac{E_\text{a}}{E_\text{o}} \\
+&= \dfrac{360\,\text{kJ}}{600\,\text{kJ}} \\
+&= 0{,}60 \\
+&= 60\,\%
+\end{aligned}
+$$. Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$. Oikea tulos sopii myös riviin 3, sillä $240\,\text{kJ} : 600\,\text{kJ} = 0{,}40$ ja $60\,\% + 40\,\% = 100\,\%$. Oikea vastaus on siis rivi 4.
 
 ## fy2-4-L1-09
 **Annettu:** polttoöljyn massa $m = 2{,}5\,\text{kg}$ ja hyötyenergia $E_\text{a} = 80\,\text{MJ}$. Taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, polttoöljy, kevyt): $H = 40{,}6\,\text{MJ/kg}$
@@ -215,7 +252,7 @@ Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $\eta = \dfra
 **Kysytty:** moottorin hyötysuhde $\eta$ prosentteina
 **Periaate:** Nuolen paksuus on mittakaavassa suoraan verrannollinen energiaan. Hyötysuhde on siis hyötynuolen paksuus jaettuna tulevan nuolen paksuudella. Saman tuloksen saa myös energioista.
 **Kuvaajan lukeminen:** Luetaan energiavuokaaviota. Tuleva nuoli kattaa $8$ ruutua. Vihreä hyötynuoli kattaa $2$ ruutua. Lue paksuudet ruutupaperin viivoista.
-**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{hyötynuolen paksuus}}{\text{tulevan nuolen paksuus}}$
+**Kaava:** $$ \begin{aligned} \eta &= \dfrac{E_\text{a}}{E_\text{o}} \\ &= \dfrac{\text{hyötynuolen paksuus}}{\text{tulevan nuolen paksuus}} \end{aligned} $$
 **Muunnokset:** Ruutuja ei tarvitse muuttaa jouleiksi. Paksuuksien suhde on pelkkä luku. Prosentteina $\eta \cdot 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{2}{8} = 0{,}25 = 25\,\%$
 **Vastaus:** Moottorin hyötysuhde on $25\,\%$.

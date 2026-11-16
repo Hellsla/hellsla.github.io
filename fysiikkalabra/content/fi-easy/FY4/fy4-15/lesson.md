@@ -431,7 +431,7 @@ P &= \tfrac{1}{2}\eta\rho A v^3 \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Tehokäyrän voimalan roottorin halkaisija on $82\,\text{m}$. Se antaa tuulen nopeudella $9\,\text{m/s}$ tehon $1017\,\text{kW}$. Tämän esimerkin roottorin pinta-ala on $(120 : 82)^2 \approx 2{,}1$ kertaa suurempi. Tehon pitäisi siis olla noin $2{,}1 \cdot 1{,}0\,\text{MW} \approx 2{,}2\,\text{MW}$. Tulos $2{,}3\,\text{MW}$ on samaa suuruusluokkaa. Häiriöttömän tuulen vertailuteho on $5{,}2\,\text{MW}$, ja sähköksi saadaan alle puolet, kuten pitääkin.
+**Järkevyys.** Tehokäyrän voimalan roottorin halkaisija on $82\,\text{m}$. Se antaa tuulen nopeudella $9\,\text{m/s}$ tehon $1017\,\text{kW}$. Tämän esimerkin roottorin pinta-ala on $(120 : 82)^2 \approx 2{,}14$ kertaa suurempi. Tehon pitäisi siis olla noin $2{,}14 \cdot 1{,}02\,\text{MW} \approx 2{,}2\,\text{MW}$. Tulos $2{,}3\,\text{MW}$ on samaa suuruusluokkaa. Häiriöttömän tuulen vertailuteho on $5{,}2\,\text{MW}$, ja sähköksi saadaan alle puolet, kuten pitääkin.
 
 ## Yleinen virhekäsitys
 Usein ajatellaan, että voimala tuottaa energiaa. Voimala vain muuntaa energiaa. Vesivoimalan sähkö tulee veden potentiaalienergiasta ja tuulivoimalan sähkö tuulen liike-energiasta. Osa energiasta muuttuu aina muuksi kuin sähköksi. Toinen virhe on ajatella, että kaksinkertainen tuuli antaa kaksinkertaisen tehon. Teho kasvaa nopeuden kolmannessa potenssissa, kunnes voimala saavuttaa nimellistehonsa. Kolmas virhe on sekoittaa teho ja energia. Teho ilmoitetaan watteina. Energia saadaan, kun teho kerrotaan ajalla. Voimala, jonka teho on $3\,\text{MW}$, tuottaa tunnissa $3\,\text{MWh}$ energiaa.

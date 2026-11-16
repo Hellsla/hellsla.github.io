@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 16c8b891104d7a49
-SCOPE: delta added-exercise from 0b8adf1d8e82e8e4 base 81db4a6fd727
+CONTENT-HASH: 0fd9280d139201ab
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
-- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
+- [Minor] L1-06 solution has a 142-word paragraph (untouched).
+- [Minor] L2-09 phone table: header label and value touch (`a³ ((10⁸ km)³)0.194`).
+- [Minor] Known clipped formula in L3-04 Reasonableness (docs/clipped-formulas.tsv).
 
 ## Checked
-- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
-- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
-- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
-- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
+- Round 2: re-rendered preview/en/fy5-6.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L3-04 Answer, 5 paragraphs) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

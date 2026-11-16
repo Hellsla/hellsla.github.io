@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 43ce35828e573b26
-SCOPE: delta added-exercise from 0712046380ca6300 base 81db4a6fd727
+CONTENT-HASH: 95dcb8b70d26daad
 
 ## Blocking
 
 ## Polish
-- lessons/FY5/fy5-5/figures.py (planeetat) — kuvassa Maan arvo on 9,80 m/s², mutta kurssi käyttää arvoa 9,81 m/s². Lisätyt tehtävät eivät käytä Maan arvoa, joten tämä ei ole kiireellinen.
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09 (kierros 3).
-- L2-09:n uusi luotain: h = R, joten r = 2R ja g = 24,8/4 = 6,20 m/s². Siitä F = 850 kg · 6,20 m/s² = 5270 N = 5,27 kN, sama kuin answers.py:ssä. Laskin myös toisin, M = g₀R²/γ ja F = γMm/(2R)², ja sain saman tuloksen.
-- Periaate on oikea: etäisyys mitataan keskipisteestä, ja kenttä pienenee kääntäen verrannollisesti etäisyyden neliöön. Suhdemuoto g = g₀(R/r)² seuraa luvun kaavasta g = γM/r². Säteen valinta (päiväntasaajan säde, kuten kuvan arvossa) perustellaan.
-- Toistoa ei ole: L2-03 ratkaisee korkeuden voimasta Maan gravitaatiolailla, ja L2-04 laskee prosenttimuutoksen. Kumpikaan ei lue kuvan arvoa. Kuvaa planeetat ei käytetä inquiry.json:ssa.
-- Merkitsevät numerot: 5,27 kN on kolmen numeron tarkkuudella kuten 24,8 ja 7,15. L1-09: 85 · 3,71 = 315 N → 3,2·10² N, ja rajoittava tieto on 85 kg. Kumpikin vastaus on toleranssin 2 % sisällä.
-- Järkevyystarkistukset ovat oikein: pinnalla voima olisi 21,1 kN, ja siitä neljäsosa on 5,27 kN. Marsissa 0,38 · 834 N ≈ 320 N.
+- The hash was the same at the start and at the end. Round 2 judged only `git diff 09d57eb5ac..HEAD` of exercises.json, solutions.md and answers.py; answers.py is unchanged. Unchanged content rests on the round-1 review, which recomputed all 19 answers.
+- Re-broken chains, recomputed in one script. Each has the same numbers, signs and units in the same order. Ships 2,503 N. Mercury 3,699 m/s². Mars rover 3799 N = 3,799 kN. Venus R² = 3,6627·10¹³ m², gR² = 3,2488·10¹⁴ m³/s², M = 4,868·10²⁴ kg, ratio 0,8154. Probe γMm = 4,7812·10¹⁷ N·m², r = 2,1866·10⁷ m, h = 15 488 km, weight 11,8 kN. Sun:Moon 2,707·10⁷ · 6,554·10⁻⁶ = 177,4. Spin 16 · 0,0337 = 0,54 m/s². Jupiter F₀ = 21,1 kN.
+- The new row labels (G, a_n′, F₀) name the quantity correctly.
+- L2-08 (exercises.json:327 and the model answer): the round-1 Polish is fixed. The reasoning now uses forces only. Each asteroid is pulled only by the other, with forces of equal size, and A (8,0·10¹² kg, four times B's mass) accelerates less. This is correct and agrees with a_B/a_A = m_A/m_B = 4. "joita vetää sama kappale, kuten Maan pinnalla olevia kappaleita Maa" states the condition well enough for this level (C).
+- The round-1 Polish on the level-3 core count is pedagogy's to decide. It is not a physics item.

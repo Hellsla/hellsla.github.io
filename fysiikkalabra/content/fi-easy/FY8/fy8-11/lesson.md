@@ -1,6 +1,6 @@
 # Fissio, fuusio ja ydinvoima
 
-> **Miksi** gramma uraani-235:tä vapauttaa fissiossa eli ytimen jakautumisessa yhtä paljon energiaa kuin noin $3{,}4$ tonnia kivihiiltä palaessaan?
+> **Miksi** gramma uraani-235:tä vapauttaa fissiossa eli ytimen jakautumisessa yhtä paljon energiaa kuin noin $2{,}8$ tonnia kivihiiltä palaessaan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ydinvoimala kallioisella merenrannalla. Keskellä on lieriön muotoinen reaktorirakennus. Sen kupolista osa on piirretty auki. Sisällä reaktorin sydän hehkuu vedessä. Vieressä on pitkä turbiinihalli, ja sen takana on voimalinjan pylväitä. Edessä on meri, ja taivaalla on muutama pilvi." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy811h-sky-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy811h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy811h-core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
@@ -552,7 +552,7 @@ Kuvassa ovat uraani-235:n fission massat ennen reaktiota ja sen jälkeen. Massa 
 ### Fissio ja fuusio rinnakkain
 Deuteriumin ja tritiumin fuusiossa massa pienenee $0{,}01888\,\text{u}$, joten $Q = 17{,}6\,\text{MeV}$. Yksi fuusio vapauttaa siis vähemmän energiaa kuin yksi fissio. Nukleonia kohti fuusio vapauttaa kuitenkin enemmän: fuusiossa noin $3{,}5\,\text{MeV}$ ja fissiossa noin $0{,}85\,\text{MeV}$. Saman polttoainemassan fuusio vapauttaa siten noin nelinkertaisesti energiaa fissioon verrattuna.
 
-Alun kysymykseen voi nyt vastata. Grammassa uraani-235:tä on $2{,}56 \cdot 10^{21}$ ydintä. Jos kaikki fissioituvat ja kustakin vapautuu $200\,\text{MeV}$, energiaa vapautuu $8{,}2 \cdot 10^{10}\,\text{J}$ eli noin $82\,\text{GJ}$. Kivihiilen lämpöarvo on noin $24\,\tfrac{\text{MJ}}{\text{kg}}$. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu, kun kilogramma ainetta palaa. Sama energia saadaan siis polttamalla noin $3{,}4$ tonnia hiiltä. Palaminen on kemiallinen reaktio, jossa muuttuvat elektronien sidokset. Niiden energiat ovat elektronivoltin luokkaa. Ydinreaktiossa energiat ovat miljoonia elektronivoltteja.
+Alun kysymykseen voi nyt vastata. Grammassa uraani-235:tä on $2{,}56 \cdot 10^{21}$ ydintä. Jos kaikki fissioituvat ja kustakin vapautuu $200\,\text{MeV}$, energiaa vapautuu $8{,}2 \cdot 10^{10}\,\text{J}$ eli noin $82\,\text{GJ}$. Kivihiilen lämpöarvo on noin $29\,\tfrac{\text{MJ}}{\text{kg}}$ (MAFY-taulukoissa $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$). Lämpöarvo kertoo, kuinka paljon energiaa vapautuu, kun kilogramma ainetta palaa. Sama energia saadaan siis polttamalla noin $2{,}8$ tonnia hiiltä. Palaminen on kemiallinen reaktio, jossa muuttuvat elektronien sidokset. Niiden energiat ovat elektronivoltin luokkaa. Ydinreaktiossa energiat ovat miljoonia elektronivoltteja.
 
 ## Ydinvoima Suomessa
 

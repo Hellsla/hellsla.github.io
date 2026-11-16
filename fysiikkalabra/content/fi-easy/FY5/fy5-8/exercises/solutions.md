@@ -253,7 +253,7 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0{,}025\,\text{kg}\cdot(47{,}0\,\text{m/s})^2 \\
 \eta &= \frac{27{,}61\,\text{J}}{37{,}75\,\text{J}} = 0{,}731
 \end{aligned}
 ```
-**Vastaus:** $73\,\%$ varastoituneesta energiasta muuttui nuolen liike-energiaksi, kaksi merkitsevää numeroa kuten nuolen massassa $25\,\text{g}$. Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön. Jousi ja jänne liikkuvat itsekin ja pysähtyvät lopuksi. Vastaus perustuu oletukseen, että kuvaaja on suora koko vetomatkalla.
+**Vastaus:** $73\,\%$ varastoituneesta energiasta muuttui nuolen liike-energiaksi, kaksi merkitsevää numeroa kuten nuolen massassa $25\,\text{g}$. Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn ja ääneen ja lopulta jousen, jänteen ja ilman sisäenergiaan (joka siirtyy ympäristöön lämpönä). Jousi ja jänne liikkuvat itsekin ja pysähtyvät lopuksi. Vastaus perustuu oletukseen, että kuvaaja on suora koko vetomatkalla.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten pitääkin. Yli $70\,\%$:n hyötysuhde on todellisille jousipyssyille tavallinen. Nopeus tarkistetaan toisinpäin: jos kaikki $37{,}75\,\text{J}$ menisi nuolelle, sen nopeus olisi
 ```latex
 v = \sqrt{\dfrac{2\cdot 37{,}75\,\text{J}}{0{,}025\,\text{kg}}} = 55{,}0\,\text{m/s}

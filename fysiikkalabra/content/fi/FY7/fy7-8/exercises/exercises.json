@@ -12,7 +12,7 @@
     {
       "id": "fy7-8-L1-02",
       "level": 1,
-      "text": "Puutarhavalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $8{,}0\\,\\text{V}$. Toisiokäämissä on $40$ kierrosta. Kuinka monta kierrosta ensiökäämissä on?",
+      "text": "Puutarhavalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $8{,}00\\,\\text{V}$. Toisiokäämissä on $40$ kierrosta. Kuinka monta kierrosta ensiökäämissä on?",
       "answer": 1150.0,
       "unit": "kierrosta",
       "tolerance": 0.02
@@ -28,7 +28,7 @@
     {
       "id": "fy7-8-L1-04",
       "level": 1,
-      "text": "Jakelujohdon johtimien yhteinen resistanssi on $2{,}5\\,\\Omega$, ja johdossa kulkee $120\\,\\text{A}$:n virta. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "text": "Jakelujohdon johtimien yhteinen resistanssi on $2{,}5\\,\\Omega$, ja johdossa kulkee $120\\,\\text{A}$:n virta. Kuinka suuri teho johdossa muuttuu sisäenergiaksi? Anna vastaus kilowatteina.",
       "answer": 36.0,
       "unit": "kW",
       "tolerance": 0.02
@@ -76,7 +76,7 @@
       "id": "fy7-8-L1-07",
       "level": 1,
       "core": true,
-      "text": "Voimalaitos siirtää tehon johtoa pitkin, ja johdossa muuttuu lämmöksi teho $840\\,\\text{kW}$. Siirtojännite nostetaan kaksinkertaiseksi, ja siirrettävä teho sekä johdon resistanssi pysyvät samoina. Kuinka suuri häviöteho on nyt? Anna vastaus kilowatteina.",
+      "text": "Voimalaitos siirtää tehon johtoa pitkin, ja johdossa muuttuu sisäenergiaksi teho $840\\,\\text{kW}$. Siirtojännite nostetaan kaksinkertaiseksi, ja siirrettävä teho sekä johdon resistanssi pysyvät samoina. Kuinka suuri häviöteho on nyt? Anna vastaus kilowatteina.",
       "kind": [
         "reasoning"
       ],
@@ -101,7 +101,7 @@
       "id": "fy7-8-L2-01",
       "level": 2,
       "core": true,
-      "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ $110\\,\\text{kV}$:n jännitteellä sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka suuri teho johdossa muuttuu lämmöksi? Anna vastaus kilowatteina.",
+      "text": "Vesivoimala siirtää tehon $50\\,\\text{MW}$ $110\\,\\text{kV}$:n jännitteellä sähköasemalle. Johtimien yhteinen resistanssi on $4{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka suuri teho johdossa muuttuu sisäenergiaksi? Anna vastaus kilowatteina.",
       "answer": 826.4463,
       "unit": "kW",
       "tolerance": 0.02
@@ -117,7 +117,7 @@
     {
       "id": "fy7-8-L2-03",
       "level": 2,
-      "text": "Voimalaitos siirtää tehon $100\\,\\text{MW}$ $220\\,\\text{kV}$:n jännitteellä johtoa pitkin, jonka johtimien yhteinen resistanssi on $4{,}8\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?",
+      "text": "Voimalaitos siirtää tehon $100\\,\\text{MW}$ $220\\,\\text{kV}$:n jännitteellä johtoa pitkin, jonka johtimien yhteinen resistanssi on $4{,}8\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa sisäenergiaksi?",
       "answer": 0.9917,
       "unit": "%",
       "tolerance": 0.02
@@ -125,7 +125,7 @@
     {
       "id": "fy7-8-L2-04",
       "level": 2,
-      "text": "Opiskelijat rakensivat siirtojohdon pienoismallin vastuslangasta ja mittasivat, kuinka suuri teho langassa muuttuu lämmöksi eri virroilla. Kuvaajassa on häviöteho $P_\\text{h}$ virran $I$ funktiona ja mittauspisteisiin sovitettu käyrä. Määritä langan resistanssi. Lue tarvittavat arvot kuvaajan käyrältä.",
+      "text": "Opiskelijat rakensivat siirtojohdon pienoismallin vastuslangasta ja mittasivat, kuinka suuri teho langassa muuttuu sisäenergiaksi eri virroilla. Kuvaajassa on häviöteho $P_\\text{h}$ virran $I$ funktiona ja mittauspisteisiin sovitettu käyrä. Määritä langan resistanssi. Lue tarvittavat arvot kuvaajan käyrältä.",
       "figure": "fy7-8/loss-current",
       "answer": 0.8,
       "unit": "Ω",
@@ -239,7 +239,7 @@
       "kind": [
         "reasoning"
       ],
-      "text": "Tuulivoimalan generaattori tuottaa tehon $3{,}0\\,\\text{MW}$ jännitteellä $690\\,\\text{V}$. Voimalan muuntaja nostaa jännitteen $20\\,\\text{kV}$:iin, ja teho siirretään kaapelia pitkin sähköasemalle. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Arvot ovat esimerkkiarvoja, muuntaja oletetaan ideaaliseksi, ja siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla.\n\nMikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\\text{h}$ suuruusluokka?",
+      "text": "Tuulivoimalan generaattori tuottaa tehon $3{,}0\\,\\text{MW}$ jännitteellä $690\\,\\text{V}$. Voimalan muuntaja nostaa jännitteen $20\\,\\text{kV}$:iin, ja teho siirretään kaapelia pitkin sähköasemalle. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Arvot ovat esimerkkiarvoja, muuntaja oletetaan ideaaliseksi, ja siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla.\n\nMikä on kaapelissa sisäenergiaksi muuttuvan häviötehon $P_\\text{h}$ suuruusluokka?",
       "answer": "noin $10\\,\\text{kW}$",
       "unit": "",
       "tolerance": 0.02,
@@ -266,7 +266,7 @@
     {
       "id": "fy7-8-L2-09",
       "level": 2,
-      "text": "Siirtojohdon pienoismalli: voimalaitos siirtää johtoa pitkin tehon $200\\,\\text{MW}$. Kuvaajassa on lämmöksi muuttuvan tehon osuus siirretystä tehosta siirtojännitteen funktiona. Käytä yksinkertaistettua kaksijohtimista mallia. Määritä johtimien yhteenlaskettu resistanssi $R$. Lue tarvittavan osuuden arvo kuvaajan käyrältä.",
+      "text": "Siirtojohdon pienoismalli: voimalaitos siirtää johtoa pitkin tehon $200\\,\\text{MW}$. Kuvaajassa on sisäenergiaksi muuttuvan tehon osuus siirretystä tehosta siirtojännitteen funktiona. Käytä yksinkertaistettua kaksijohtimista mallia. Määritä johtimien yhteenlaskettu resistanssi $R$. Lue tarvittavan osuuden arvo kuvaajan käyrältä.",
       "figure": "fy7-8/loss-graph-curve",
       "answer": 6.0,
       "unit": "Ω",
@@ -277,7 +277,7 @@
     {
       "id": "fy7-8-L3-01",
       "level": 3,
-      "text": "Voimalaitoksen generaattori tuottaa tehon $150\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Ideaalinen muuntaja nostaa jännitteen $400\\,\\text{kV}$:iin, ja sähkö siirretään johtoa pitkin, jonka johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?",
+      "text": "Voimalaitoksen generaattori tuottaa tehon $150\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Ideaalinen muuntaja nostaa jännitteen $400\\,\\text{kV}$:iin, ja sähkö siirretään johtoa pitkin, jonka johtimien yhteinen resistanssi on $8{,}0\\,\\Omega$. Siirtoa kuvataan yksinkertaistetulla kaksijohtimisella mallilla. Kuinka monta prosenttia tehosta muuttuu johdossa sisäenergiaksi?",
       "answer": 0.75,
       "unit": "%",
       "tolerance": 0.02
@@ -313,7 +313,7 @@
     {
       "id": "fy7-8-L3-05",
       "level": 3,
-      "text": "Jakelumuuntajan ulostuloteho $P_\\text{ulos}$ ja sisääntuloteho $P_\\text{sisään}$ mitattiin eri kuormilla (esimerkkiaineisto). Ilman kuormaa muuntaja ottaa silti tehon, joka muuttuu rautasydämessä lämmöksi. Häviöteho on $P_\\text{h} = P_\\text{sisään} - P_\\text{ulos}$.\n\na) Laske jokaiselle riville häviöteho ja hyötysuhde $\\eta = P_\\text{ulos} : P_\\text{sisään}$.\n\nb) Häviötehoa kuvaa malli $P_\\text{h} = P_0 + a P_\\text{ulos}^2$. Perustele, miksi kuormasta riippuva osa on verrannollinen ulostehon neliöön, kun jännite on vakio, ja määritä vakiot $P_0$ ja $a$ taulukosta.\n\nc) Hyötysuhde on suurin kuormalla, jolla vakiohäviö $P_0$ on yhtä suuri kuin kuormasta riippuva häviö $a P_\\text{ulos}^2$. Laske tämä ulostehon arvo mallin avulla.\n\nAnna vastauslaatikkoon kohdan c) ulostehon arvo kilowatteina.",
+      "text": "Jakelumuuntajan ulostuloteho $P_\\text{ulos}$ ja sisääntuloteho $P_\\text{sisään}$ mitattiin eri kuormilla (esimerkkiaineisto). Ilman kuormaa muuntaja ottaa silti tehon, joka muuttuu rautasydämessä sisäenergiaksi. Häviöteho on $P_\\text{h} = P_\\text{sisään} - P_\\text{ulos}$.\n\na) Laske jokaiselle riville häviöteho ja hyötysuhde $\\eta = P_\\text{ulos} : P_\\text{sisään}$.\n\nb) Häviötehoa kuvaa malli $P_\\text{h} = P_0 + a P_\\text{ulos}^2$. Perustele, miksi kuormasta riippuva osa on verrannollinen ulostehon neliöön, kun jännite on vakio, ja määritä vakiot $P_0$ ja $a$ taulukosta.\n\nc) Hyötysuhde on suurin kuormalla, jolla vakiohäviö $P_0$ on yhtä suuri kuin kuormasta riippuva häviö $a P_\\text{ulos}^2$. Laske tämä ulostehon arvo mallin avulla.\n\nAnna vastauslaatikkoon kohdan c) ulostehon arvo kilowatteina.",
       "kind": [
         "data",
         "model"

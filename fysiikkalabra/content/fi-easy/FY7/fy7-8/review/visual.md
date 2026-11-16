@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 29511f4151251bcf
+CONTENT-HASH: 66f0f815e545d511
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md "Siirtojohdon tehohäviö" (and "Siirtohäviö ja suurjännite") — the sim note now says "sisäenergiaksi muuttuva teho", but the text beside it still says "johdossa lämmöksi muuttuva teho" and "Lämmöksi muuttuva teho on verrannollinen…". The wording differs between sim and text; align when the P1 correction reaches this chapter's text.
+- [Minor] fy7-8-theory-1280-2 — the charger scene now stands alone at about 600 px wide under the paragraph, taller than its neighbours; acceptable, optional to size it down.
 
 ## Checked
-- Delta: sim.js note change (lab-1280, the sim panel): "Vihreä palkki on perille tuleva teho. Oranssi palkki on johdossa sisäenergiaksi muuttuva teho." fits on one line, no clipping, legend colours match the bars.
-- Delta: lesson.md formula block (theory-1280-2): P = UI and P_h = RI² = RP²/U² now render as two rows (the kaavat fence became a latex aligned block); KaTeX fine, no overflow, the "=" signs are aligned. The unnamed block is correct, as the formula is not in MAFY.
-- Surroundings (theory-1280-3, -4): graph, three-phase formula, summary and the chapter layout intact.
-- Hash identical at start and end.
+- Delta: "lämmöksi" to "sisäenergiaksi" in text, tasks, aria-label; the scene figure moved to follow the charger paragraph.
+- Opened fy7-8-fig-11-390 (scene legible, nothing clipped) and fy7-8-theory-1280-2 (new short sentences "Osa siirrettävästä energiasta muuttuu johdon sisäenergiaksi. Se siirtyy lämpönä ympäristöön." read clearly for S2; layout intact).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

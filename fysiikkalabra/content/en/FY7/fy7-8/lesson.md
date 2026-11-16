@@ -203,6 +203,21 @@ At substations, transformers lower the voltage to $110\,\text{kV}$ in the region
 
 High voltage is not brought into homes, because insulating it requires long insulators and large distances, and touching it would be fatal (chapter *Electrical safety at home and at work*). The charger of a phone lowers the voltage still further to about $5\,\text{V}$. A modern charger first changes the mains voltage to a very high frequency, so that the transformer can be small, and rectifies it at the end. The coils of the charger's transformer do not touch each other, so the phone is not conductively connected to the power grid.
 
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a small phone charger is plugged into a wall socket, and its cable leads to a phone on a table, which is charging." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
+  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
+  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
+  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
+  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
+  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
+  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
+  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
+</svg>
+
 ## Formula: Transformer and transmission loss
 The voltages and currents of an ideal transformer depend on the numbers of turns of the coils:
 ```kaavat
@@ -343,18 +358,3 @@ Many people calculate the power loss of a power line with the expression $P = U^
 - The power loss of a transmission line is $P_\text{h} = R I^2$, where $I = P : U$. Double the transmission voltage reduces the loss to a quarter.
 - Electricity is transmitted over long distances at high voltage: the voltages of the Finnish transmission grid are $400\,\text{kV}$, $220\,\text{kV}$ and $110\,\text{kV}$, and transformers lower the voltage step by step to the $400\,\text{V}$ and $230\,\text{V}$ of the low-voltage network.
 - Calculations use the simplified two-wire model $P = UI$. The real transmission grid is three-phase: $400\,\text{kV}$ is the line voltage, and the active power is $P = \sqrt{3}\,U I \cos\varphi$.
-
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a small phone charger is plugged into a wall socket, and its cable leads to a phone on a table, which is charging." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
-  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
-  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
-  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
-  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
-</svg>

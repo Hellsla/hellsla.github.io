@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6a4b518eb95a91d8
-SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
+CONTENT-HASH: 75aa6a48bc6fe02f
+SCOPE: delta reflow from 6a4b518eb95a91d8 base b5600a63ddae
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] reflow-exercises-1, fy2-3: short displays leave a little extra space under the block; fine, optional tightening.
 
 ## Checked
-- fy2-3-open-exercises-1280-9: L1-09 solution end (mekaaninen energia wording, units upright) and the new L1-10 task text with graph (E (kJ), t (s), A and B labelled, grid, readable).
-- fy2-3-open-exercises-1280-10: L1-10 solution: Annettu, dfrac rows aligned at =, ratio 3,0 shown, Vastaus; nothing clipped.
-- 360 px from the packet's layout check only.
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

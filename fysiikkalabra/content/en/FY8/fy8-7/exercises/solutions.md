@@ -84,7 +84,7 @@ $$
 ## fy8-7-L2-01
 **Given:** wavelength of the pump light $\lambda_\text{p} = 808\,\text{nm}$, wavelength of the laser light $\lambda_\text{L} = 1064\,\text{nm}$; one pump photon produces at most one laser photon
 **Find:** the greatest share $\eta$ of the energy of a pump photon that ends up as the energy of a laser photon, as a percentage
-**Principle:** When one pump photon produces one laser photon, the energy of the laser photon is what ends up in it, and the rest stays in the medium as heat. The energy of a photon is $\tfrac{hc}{\lambda}$, so the share is the ratio of the energies of the photons.
+**Principle:** When one pump photon produces one laser photon, the energy of the laser photon is what ends up in it, and the rest stays in the medium as internal energy. The energy of a photon is $\tfrac{hc}{\lambda}$, so the share is the ratio of the energies of the photons.
 **Formula:** $\eta = \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}}$, from which $\eta = \dfrac{\lambda_\text{p}}{\lambda_\text{L}}$
 **Conversions:** None are needed: the wavelengths are in the same unit, and $hc$ cancels. Finally the share is converted to a percentage by multiplying by $100\,\%$.
 **Substitution:** $\eta = \dfrac{808\,\text{nm}}{1064\,\text{nm}} = 0.75940 = 75.940\,\%$
@@ -148,7 +148,7 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10
 **Conversions:** $\lambda_\text{p} = 808\,\text{nm} = 808 \cdot 10^{-9}\,\text{m}$; the power is already in watts.
 **Substitution:** $\dfrac{N_\text{g}}{t} = \dfrac{1.0\,\text{W} \cdot 808 \cdot 10^{-9}\,\text{m}}{2 \cdot 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = \dfrac{4.0675 \cdot 10^{18}}{2}\,\tfrac{1}{\text{s}} = 2.0338 \cdot 10^{18}\,\tfrac{1}{\text{s}}$
 **Answer:** $2.0 \cdot 10^{18}$ green photons per second, two significant figures like the power $1.0\,\text{W}$.
-**Reasonableness:** The total power of the green photons would be at most $2.0 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 0.76\,\text{W}$, less than the pump power $1.0\,\text{W}$, as conservation of energy requires. The green power of a real laser pointer is only milliwatts, because the conversions are much weaker than this ideal case.
+**Reasonableness:** The total power of the green photons would be at most $2.0 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 0.75\,\text{W}$, less than the pump power $1.0\,\text{W}$, as conservation of energy requires. The green power of a real laser pointer is only milliwatts, because the conversions are much weaker than this ideal case.
 
 ## fy8-7-L3-03
 **Given:** frequency of the photon corresponding to the energy difference of the states of the qubit $f_\text{q} = 5.0\,\text{GHz}$, wavelength of the red light $\lambda = 650\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
@@ -188,7 +188,7 @@ $$ and $P\lambda = 5.0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m}
 
 ## fy8-7-L1-09
 **Find:** which of the five statements about the laser and quantum dots A and B are true.
-**Principle:** The energy of a photon depends only on the wavelength, $hf = \tfrac{hc}{\lambda}$, not on what kind of light source emits it. Laser light is produced in stimulated emission, which requires population inversion $N_2 > N_1$; it is achieved by pumping a material that has at least three levels. In a quantum dot the energy gap grows as the dot gets smaller.
+**Principle:** The energy of a photon depends only on the wavelength, $hf = \tfrac{hc}{\lambda}$, not on what kind of light source emits it. Laser light is produced in stimulated emission, which requires population inversion $N_2 > N_1$; in atomic and ion lasers it is achieved by pumping a material that has at least three energy levels. In a quantum dot the energy gap grows as the dot gets smaller.
 **Model answer:** The energy of a $650\,\text{nm}$ photon of both light sources is
 
 $hf = \dfrac{hc}{\lambda}$
@@ -280,7 +280,7 @@ P_\text{unav} &= 8.080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \\
 \end{aligned}
 $$, that is, about $29\,\%$ of the thermal power.
 
-d) The energy efficiency is $\tfrac{15.0\,\text{W}}{20.0\,\text{W}} = 0.750 = 75.0\,\%$, so it is smaller than $\eta_\text{q} = 82.2\,\%$. The reason is that the energy of each laser photon is smaller than that of a pump photon: the ratio of the energies is $\eta_\text{q}$ multiplied by the ratio of the energies of the photons $\tfrac{976}{1070} = 0.912$, and $0.8222 \cdot 0.912 = 0.750$. The difference between the energies of a pump photon and a laser photon remains in the medium as heat, even if every pump photon produced a laser photon.
+d) The energy efficiency is $\tfrac{15.0\,\text{W}}{20.0\,\text{W}} = 0.750 = 75.0\,\%$, so it is smaller than $\eta_\text{q} = 82.2\,\%$. The reason is that the energy of each laser photon is smaller than that of a pump photon: the ratio of the energies is $\eta_\text{q}$ multiplied by the ratio of the energies of the photons $\tfrac{976}{1070} = 0.912$, and $0.8222 \cdot 0.912 = 0.750$. The difference between the energies of a pump photon and a laser photon remains in the medium as internal energy, even if every pump photon produced a laser photon.
 
 **Answer:** $82.2\,\%$, three significant figures like the power $20.0\,\text{W}$. The thermal power $5.0\,\text{W}$ and its unavoidable part $1.4\,\text{W}$ do not belong in the answer box.
 **Reasonableness:** The quantum efficiency is less than $100\,\%$, because no more laser photons are produced than pump photons. The upper limit of the energy efficiency is $\tfrac{976}{1070} = 91.2\,\%$, and the actual $75.0\,\%$ is below it, as it should be. The unavoidable heat $1.44\,\text{W}$ is smaller than the whole thermal power $5.0\,\text{W}$, as it should be.

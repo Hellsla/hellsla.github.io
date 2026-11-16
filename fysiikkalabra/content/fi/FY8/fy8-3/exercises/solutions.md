@@ -285,7 +285,7 @@ Molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, j
 **Kysytty:** vähimmäistaajuus $f_\text{ion}$ terahertseinä, jolla fotoni ionisoi atomin siitä tasosta, jolle siirtymät päättyvät
 **Periaate:** Jokaisen viivan fotonin energia on lähtö- ja päätason energioiden erotus, $\tfrac{hc}{\lambda} = E_\text{y} - E_m$, missä $m$ on yhteinen päätaso. Kokeillaan päätasoa: ylempi taso on $E_\text{y} = E_m + \tfrac{hc}{\lambda}$, ja siitä saadaan $n_\text{y} = \sqrt{\tfrac{13{,}6\,\text{eV}}{-E_\text{y}}}$, jonka on oltava kokonaisluku. Ionisaatioon tilasta $m$ tarvitaan energia $0 - E_m$, ja fotonin energia on $hf$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_m$ ja ionisaatiolle $h f_\text{ion} = 0 - E_m$, josta $f_\text{ion} = \dfrac{13{,}6\,\text{eV}}{m^2 h}$
-**Muunnokset:** Fotonien energiat lasketaan joulina ja muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Ionisaatioenergia muunnetaan jouleiksi kertomalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$ ja lopuksi $1\,\text{THz} = 10^{12}\,\text{Hz}$.
+**Muunnokset:** Fotonien energiat lasketaan jouleina ja muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Ionisaatioenergia muunnetaan jouleiksi kertomalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$ ja lopuksi $1\,\text{THz} = 10^{12}\,\text{Hz}$.
 **Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotonien energiat ovat $\tfrac{hc}{\lambda} = 0{,}6610\,\text{eV}$, $0{,}9672\,\text{eV}$ ja $1{,}1335\,\text{eV}$.
 
 - Päätaso $m = 1$ (ylätaso kokonaisluku): $n_\text{y} \approx 1{,}03$; $1{,}04$ ja $1{,}04$, ei kokonaislukuja.

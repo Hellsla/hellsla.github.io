@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 494c46b1e7d36455
+CONTENT-HASH: e427a25a8d698b92
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta since 8b7dd5d78: step 3 now says "the acceleration $a$" (not magnitude), consistent with step 2's assumed direction where $a$ may come out negative; with per-body positive directions fitted along the string, $a$ is the same for both bodies — correct.
-- Earlier round (unchanged): assumed-direction rule, negative solution = opposite acceleration, friction caveat (recheck the assumed direction) — correct; summary says the same.
-- Atwood formula, $m_1 g < T < m_2 g$, worked example and inquiry untouched and consistent.
+- Delta (wording, figure-words-added): lesson.md:218 says now "langan jännitysvoima on kappaleiden välinen sisäinen voima" — correct: the string is not a force; the tensions on the two bodies are the system's internal pair, so $T$ cancels in the sum. Agrees with the glossary term jännitysvoima.
+- figures.json: the selkeä suomi description of the $(t, v)$ graph keeps the five points (0; 0), (0,5; 1,0), (1,0; 2,0), (1,5; 2,9), (2,0; 3,9) and both grid spacings unchanged; no line or slope is disclosed.
+- Nothing else changed; formulas, worked example and inquiry as passed.

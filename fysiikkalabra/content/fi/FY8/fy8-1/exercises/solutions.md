@@ -218,7 +218,7 @@ $$, ja kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyemp
 **Annettu:** taulukko $E_\text{k,A}$ ja $E_\text{k,B}$ taajuuksilla $8{,}0$–$11{,}0 \cdot 10^{14}\,\text{Hz}$
 **Kysytty:** irrotustöiden erotus $W_\text{B} - W_\text{A}$ elektronivoltteina sekä se, kumman metallin irrotustyö on suurempi
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ kummallekin metallille. Samalla taajuudella fotonin energia $hf$ on sama, joten liike-energioiden erotus on irrotustöiden erotus. Suorien kulmakerroin on kummallakin $h$.
-**Kuvaajan lukeminen:** Paperille piirretyssä kuvaajassa A:n suora kulkee B:n suoran yläpuolella. Suorien pystysuuntainen väli on joka taajuudella noin $0{,}9\,\text{eV}$, joten ne ovat yhdensuuntaiset. Kulmakertoimet ovat $\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ ja $\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, eli kumpikin on likimain $\tfrac{h}{e} = 4{,}14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
+**Kuvaajan lukeminen:** Paperille piirretyssä kuvaajassa A:n suora kulkee B:n suoran yläpuolella. Suorien pystysuuntainen väli on joka taajuudella noin $0{,}9\,\text{eV}$, joten ne ovat yhdensuuntaiset. Kulmakertoimet ovat $\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ ja $\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, eli kumpikin on likimain $h = 4{,}14 \cdot 10^{-15}\,\text{eV}\,\text{s}$.
 **Kaava:** $$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
@@ -256,7 +256,7 @@ $$
 &\cdot 6{,}5 \cdot 10^{14}\,\text{Hz} \\
 &= -2{,}137\,\text{eV}
 \end{aligned}
-$$, joten sen itseisarvo on sama kuin $W$, ja opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $\tfrac{h}{e}$, kuten pitää, ja rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
+$$, joten sen itseisarvo on sama kuin $W$, ja opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $h$ yksikössä $\text{eV}\,\text{s}$, kuten pitää, ja rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
 
 ## fy8-1-L3-01
 **Annettu:** natriumin irrotustyö $W = 2{,}28\,\text{eV}$, aallonpituus $\lambda = 350\,\text{nm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -372,7 +372,7 @@ $$ sekunnissa. Punaisen lähteen $8{,}0\,\text{mW}$ vastaa $2{,}5 \cdot 10^{16}$
 \end{aligned}
 $$
 **Vastaus:** $\lambda_0 \approx 387\,\text{nm}$, kolme merkitsevää numeroa kuten irrotustyössä $3{,}20\,\text{eV}$. Irrotustyö $3{,}20\,\text{eV}$ on MAFY-taulukon *Irrotustöitä* arvo kalsiumille; taulukkojen painosten arvot voivat poiketa hieman, ja vastaus hyväksytään noin $\pm 5\,\%$ tarkkuudella.
-**Järkevyys:** Pikaarvio: $$
+**Järkevyys:** Pika-arvio: $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 3{,}20\,\text{eV} &\approx 388\,\text{nm}
 \end{aligned}
@@ -383,7 +383,7 @@ $$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{
 **Kysytty:** metallin A irtoavien elektronien suurin liike-energia $E_\text{k,max}$ elektronivoltteina
 **Periaate:** Kuvaajan suora esittää valosähköistä yhtälöä $E_\text{k,max} = hf - W$. Kun taajuus tunnetaan, suurin liike-energia luetaan suoralta suoraan pystyakselilta.
 **Kuvaajan lukeminen:** Vaaka-akselilta etsitään taajuus $12 \cdot 10^{14}\,\text{Hz}$ ja noustaan pystysuoraan metallin A suoralle. Suora kohtaa tämän pystyviivan ruudukkoviivojen $2\,\text{eV}$ ja $3\,\text{eV}$ välissä, kolmen kymmenesosan verran alempana kuin $3\,\text{eV}$, eli lukema on noin $2{,}7\,\text{eV}$.
-**Kaava:** Tarkistus lasketaan: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, missä suoran kulmakerroin on $\dfrac{h}{e} = 0{,}4136\,\text{eV}$ jokaista $10^{14}\,\text{Hz}$ kohti ja metallin A suora alkaa vaaka-akselilta rajataajuudelta $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$.
+**Kaava:** Tarkistus lasketaan: $E_\text{k,max} = hf - W = h\,(f - f_0)$, missä suoran kulmakerroin on $h = 4{,}136 \cdot 10^{-15}\,\text{eV}\,\text{s}$ eli $0{,}4136\,\text{eV}$ jokaista $10^{14}\,\text{Hz}$ kohti ja metallin A suora alkaa vaaka-akselilta rajataajuudelta $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$.
 **Muunnokset:** Taajuudet lasketaan yksikössä $10^{14}\,\text{Hz}$, jolloin kulmakerroin on $0{,}4136\,\text{eV}$ ja tulos tulee suoraan elektronivoltteina.
 **Sijoitus:** $E_\text{k,max} = 0{,}4136\,\text{eV} \cdot (12 - 5{,}56) = 2{,}66\,\text{eV}$
 **Vastaus:** $E_\text{k,max} \approx 2{,}7\,\text{eV}$ (laskettuna $2{,}66\,\text{eV}$); kuvaajan lukutarkkuus on noin $0{,}1\,\text{eV}$, joten kaksi merkitsevää numeroa riittää.
@@ -397,7 +397,7 @@ $$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{
 **Kaava:** $c = f_0 \lambda_0$, joten $\lambda_0 = \dfrac{c}{f_0}$
 **Muunnokset:** $f_0 = 7{,}0 \cdot 10^{14}\,\text{Hz}$ on jo hertseinä; tulos metreinä muunnetaan nanometreiksi: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $\lambda_0 = \dfrac{2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7{,}0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4{,}283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
-**Vastaus:** $\lambda_0 \approx 428\,\text{nm}$, kolme merkitsevää numeroa; luettu taajuus on kahden merkitsevän numeron tarkkuudella, joten tulos on tarkka noin $\pm 1\,\%$.
+**Vastaus:** $\lambda_0 \approx 4{,}3 \cdot 10^{2}\,\text{nm}$ (laskettu arvo $428\,\text{nm}$). Kaksi merkitsevää numeroa, koska kuvaajasta luettu taajuus $7{,}0 \cdot 10^{14}\,\text{Hz}$ on kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Raja-aallonpituus on violetin valon alueella, ja sitä vastaava fotonin energia on $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2{,}9\,\text{eV}

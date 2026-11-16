@@ -28,15 +28,15 @@
         {
           "text": "$50\\,\\text{N}$, because perpendicular forces are the legs of a right-angled triangle.",
           "correct": true,
-          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$. Magnetic fields are added together in this chapter in the same way."
+          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$. Magnetic fields are added together in this chapter in the same way."
         },
         {
           "text": "$70\\,\\text{N}$, because the magnitudes of the forces are added.",
-          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         },
         {
           "text": "$10\\,\\text{N}$, because the smaller force is subtracted from the greater.",
-          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         }
       ]
     },

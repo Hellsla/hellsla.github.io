@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 13eb4fb8ef479d8c
-SCOPE: delta added-exercise from 8582b9190f73f167 base 81db4a6fd727
+CONTENT-HASH: 0f05dc9f0c7301b7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-12 — heading Kuvaajan lukeminen / Reading the graph is used for a grid diagram, while fy5-15 says Reading the figure; use one wording (optional).
+- [Minor] fy5-12-L2-10 — the task text opens with a long situation paragraph (about 90 words) before a)–d); acceptable, but the PhET set-up steps could be a short list.
 
 ## Checked
-- Delta of the two or three added exercises (fi-easy): 1280 px open-exercises L2 parts 11, 12 (L2-09 with the loudspeaker grid figure, solution) and L3 part 9 (L3-06).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Rendered preview/fi-easy/fy5-12.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
+- New task fy5-12-L2-10 (Aineisto: link first, a–d, Vastaa laatikkoon) and its solution read in the packet and rendered.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

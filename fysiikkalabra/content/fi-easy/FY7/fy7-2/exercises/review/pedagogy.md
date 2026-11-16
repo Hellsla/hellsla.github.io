@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 404b2f409486b34d
-SCOPE: delta numbers from 8fa4836f5a4d0631 base 619f34a
+CONTENT-HASH: 3c90a5200b5f471b
 
 ## Blocking
 - none
@@ -9,5 +8,4 @@ SCOPE: delta numbers from 8fa4836f5a4d0631 base 619f34a
 - none
 
 ## Checked
-- L2-09 Järkevyys: task 2-2 radius 7,6 mm x 3,75 = 28 mm matches 2,8 cm; the id replaced by the task number the student sees.
-- Language checked: fi-easy. Hash 404b2f409486b34d at start; unchanged at end.
+batch delta review: syklotronitehtävän merkitsevät numerot (60,0 kV, 0,200 m, 6,00e4 V) tekstissä ja ratkaisussa täsmäävät; tulokset 1,92e7 m/s, 3,07e-13 J, 32 ylitystä ja 1,05 µs pysyvät samoina; ratkaisu seurattavissa. Hash sama alussa ja lopussa.

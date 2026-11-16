@@ -1,20 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 02b5aa9f39ab5ea1
-Mode: full (translation review against the reviewed Finnish set; new task fy5-8-L2-08)
-Round 1
+CONTENT-HASH: 2394483ffa588457
 
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-8-L2-08 was already faithful to content/fi.
 
 ## Polish
-(none)
 
 ## Checked
-- fy5-8-L2-08 (spring data with uncertainty): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
-- Recomputed independently: ratios 25.5/24.5/24.5/25.0/25.1 N/m, k=25 N/m, uncertainty 1.3 N/m at 4.0 cm; the 0.25 N/cm distractor; all agree with the solution and with the correct choice.
-- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- check_i18n.py shows nothing for fy5-8; build.py fy5-8 succeeds.
+- The hash was 2394483ffa588457 at the start and at the end. I judged only the diff (the solutions.md crossbow Answer, the figures.json caption added for the model diagram, and the caption-marker removal).
+- I recomputed the numbers. 0.73 · 37.75 J = 27.6 J goes to the arrow, and the rest is 10.2 J ≈ 10 J (27 %). No number changed.
+- The new sentence follows guardrail P1. The energy ends up as internal energy of the spring, string and air, which is transferred to the surroundings as heat. It says the same as the Finnish version. "Spring" for jousi is used the same way in the rest of the file (line 237 and the task text).
+- The figures.json caption added for the model diagram (box pulled by a spring with sliding friction) shows the right physics. F and F_μ are equal and opposite, N equals G, and v points to the right, which fits constant velocity.

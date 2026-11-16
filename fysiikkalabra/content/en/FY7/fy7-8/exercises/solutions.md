@@ -9,14 +9,14 @@
 **Reasonableness:** The secondary coil has $20$ times fewer turns, so the voltage must be $20$ times smaller: $230\,\text{V} : 20 = 11.5\,\text{V}$. A small voltage like this suits a doorbell and is safe to touch.
 
 ## fy7-8-L1-02
-**Given:** primary voltage $U_1 = 230\,\text{V}$, secondary voltage $U_2 = 8.0\,\text{V}$, number of turns of the secondary coil $N_2 = 40$, ideal transformer
+**Given:** primary voltage $U_1 = 230\,\text{V}$, secondary voltage $U_2 = 8.00\,\text{V}$, number of turns of the secondary coil $N_2 = 40$, ideal transformer
 **Find:** the number of turns $N_1$ of the primary coil
 **Principle:** In an ideal transformer the same changing magnetic flux passes through both coils, so the same voltage is induced in every turn and the voltages of the coils are in the same ratio as the numbers of turns.
 **Formula:** $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2}$, so $N_1 = \dfrac{N_2 U_1}{U_2}$
 **Conversions:** Not needed: in the ratio of the voltages the volts cancel.
-**Substitution:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8.0\,\text{V}} = 1150$
-**Answer:** $1150$ turns. The number of turns is a whole number, and the two significant figures of the voltage $8.0\,\text{V}$ are enough for this precision.
-**Reasonableness:** The voltage falls by a factor of about $29$ ($230\,\text{V} : 8.0\,\text{V} \approx 29$), so the primary coil must have about $29$ times as many turns as the secondary coil: $29 \cdot 40 \approx 1150$.
+**Substitution:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8.00\,\text{V}} = 1150$
+**Answer:** $1150$ turns, three significant figures like the voltages $230\,\text{V}$ and $8.00\,\text{V}$.
+**Reasonableness:** The voltage falls by a factor of about $29$ ($230\,\text{V} : 8.00\,\text{V} \approx 29$), so the primary coil must have about $29$ times as many turns as the secondary coil: $29 \cdot 40 = 1160$, which is close to the result $1150$.
 
 ## fy7-8-L1-03
 **Given:** primary voltage $U_1 = 20\,\text{kV}$, secondary voltage $U_2 = 400\,\text{V}$, secondary current $I_2 = 250\,\text{A}$, ideal transformer
@@ -87,7 +87,12 @@
 **Conversions:** Not needed: the power is in watts and the current in amperes, and $\tfrac{\text{W}}{\text{A}^2} = \tfrac{\text{V}}{\text{A}} = \Omega$.
 **Substitution:** $R = \dfrac{20\,\text{W}}{(5.0\,\text{A})^2} = \dfrac{20\,\text{W}}{25\,\text{A}^2} = 0.80\,\Omega$
 **Answer:** $0.80\,\Omega$, two significant figures like the current $5.0\,\text{A}$ read from the graph.
-**Reasonableness:** A check with another point of the curve: at the current $2.5\,\text{A}$ the curve gives $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) and $7.4\,\text{W}$ ($3.0\,\text{A}$). A resistance of less than an ohm is plausible for a few metres of resistance wire.
+**Reasonableness:** A check with another point of the curve: at the current $2.5\,\text{A}$ the curve gives $$
+\begin{aligned}
+&0.80\,\Omega \cdot (2.5\,\text{A})^2 \\
+&= 5.0\,\text{W}
+\end{aligned}
+$$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) and $7.4\,\text{W}$ ($3.0\,\text{A}$). A resistance of less than an ohm is plausible for a few metres of resistance wire.
 
 ## fy7-8-L3-01
 **Given:** power of the generator $P = 150\,\text{MW}$ and voltage $20\,\text{kV}$, an ideal transformer raises the voltage to $U = 400\,\text{kV}$, resistance of the conductors $R = 8.0\,\Omega$

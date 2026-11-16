@@ -180,7 +180,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1{,}0\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\
 &= 120\,\text{dB}
 \end{aligned}
 ```
-**Vastaus:** $120\,\text{dB}$. Vastauksessa on kaksi merkitsevää numeroa kuten kipukynnyksessä $1{,}0\,\text{W/m}^2$.
+**Vastaus:** $120\,\text{dB}$. Vastaus annetaan kokonaisina desibeleinä, koska kipukynnys $1{,}0\,\text{W/m}^2$ on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Intensiteettien suhde on $10^{12}$. Jokainen kymmenkertaistuminen lisää tasoa $10\,\text{dB}$, joten $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. Tämä sopii yleiseen tietoon: $120\,\text{dB}$ on suihkukoneen lähellä oleva taso, ja se sattuu korvaan.
 
 ## fy5-15-L2-05
@@ -212,7 +212,8 @@ L_\text{malli} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\righ
 **Sijoitus:** etäisyyksien suhde on $8{,}0$, joten
 ```latex
 \begin{aligned}
-L_\text{malli} &= 86{,}0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
+L_\text{malli} &= 86{,}0\,\text{dB} - \\
+&\quad 10\,\text{dB} \cdot \lg 64 \\
 &= 86{,}0\,\text{dB} - 18{,}06\,\text{dB} \\
 &= 67{,}94\,\text{dB} \\
 L_\text{mit} - L_\text{malli} &= 71{,}9\,\text{dB} - 67{,}94\,\text{dB} \\
@@ -263,7 +264,7 @@ r &= \sqrt{\dfrac{0{,}3945\,\text{W}}{4\pi \cdot 3{,}162 \cdot 10^{-7}\,\text{W/
 &= 315\,\text{m} \approx 3{,}2 \cdot 10^{2}\,\text{m}
 \end{aligned}
 ```
-**Vastaus:** Kohdan b) tulos on $3{,}2 \cdot 10^{2}\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska raja-arvo $55\,\text{dB}$ on annettu täysinä desibeleinä. Muutos $\pm 0{,}5\,\text{dB}$ muuttaa etäisyyttä välillä $297\,\text{m}$–$334\,\text{m}$. Kohdan a) ääniteho on noin $0{,}39\,\text{W}$.
+**Vastaus:** Kohdan b) tulos on $3{,}2 \cdot 10^{2}\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska raja-arvo $55\,\text{dB}$ on annettu täysinä desibeleinä. Muutos $\pm 0{,}5\,\text{dB}$ muuttaa etäisyyttä välillä $297\,\text{m}$–$334\,\text{m}$. Tulos $315\,\text{m}$ pyöristetään ylöspäin, turvalliselle puolelle, koska $55\,\text{dB}$ on raja-arvo. Kohdan a) ääniteho on noin $0{,}39\,\text{W}$.
 **Järkevyys:** Taso laskee $6{,}0\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tasosta $72{,}6\,\text{dB}$ kohdassa $40\,\text{m}$ tasoon $55\,\text{dB}$ on noin $17{,}6\,\text{dB}$. Se on noin $2{,}9$ kaksinkertaistumista, joten etäisyys on noin $40\,\text{m} \cdot 2^{2{,}9} \approx 300\,\text{m}$. Se sopii tulokseen $3{,}2 \cdot 10^{2}\,\text{m}$. **Perustelu (kohta c):** Yksittäinen lukema sisältää mittausvirhettä. Tehoarviot vaihtelevat välillä $0{,}366\,\text{W}$–$0{,}428\,\text{W}$, joten keskiarvo tasoittaa virheen. Pitkällä matkalla ilman aiheuttama vaimennus, maan ja kasvillisuuden vaimennus, tuuli, lämpötilakerrokset ja rakennusten heijastukset voivat poiketa mallista, koska malli ei sisällä niitä. Todellinen taso voi olla pienempi tai suurempi kuin malli ennustaa. Ilman ja maan vaimennus pienentää sitä yleensä, ja heijastukset suurentavat sitä. Siksi tulos $3{,}2 \cdot 10^{2}\,\text{m}$ on arvio.
 
 ## fy5-15-L3-05
@@ -296,7 +297,7 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 &= 44{,}6\,\text{m}
 \end{aligned}
 ```
-**Vastaus:** Kohdan b) tulos on $45\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten tehossa $0{,}20\,\text{W}$ ja etäisyydessä $8{,}0\,\text{m}$. Kohdan a) yhteistaso on noin $85\,\text{dB}$.
+**Vastaus:** Kohdan b) tulos on $45\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten tehossa $0{,}20\,\text{W}$ ja etäisyydessä $8{,}0\,\text{m}$. Tulos $44{,}6\,\text{m}$ pyöristetään ylöspäin, turvalliselle puolelle, koska $70\,\text{dB}$ on raja-arvo. Kohdan a) yhteistaso on noin $85\,\text{dB}$.
 **Järkevyys:** Taso laskee yhteistasosta $84{,}9\,\text{dB}$ tasoon $70\,\text{dB}$, eli $14{,}9\,\text{dB}$. Se on noin $2{,}5$ etäisyyden kaksinkertaistumista ($6{,}0\,\text{dB}$ kutakin kohti), ja $8{,}0\,\text{m} \cdot 2^{2{,}5} \approx 45\,\text{m}$. Yhteistaso on suurempi kuin kumpikaan lähde yksin ($84{,}0\,\text{dB}$ ja $78{,}0\,\text{dB}$), mutta pienempi kuin niiden desibelien summa. **Perustelu (kohta c):** Kuulon intensiteettialue on valtava. Kuulokynnyksestä kipukynnykseen intensiteetti kasvaa kertoimella $10^{12}$. Logaritminen asteikko pakkaa tämän alueen lukuihin $0\,\text{dB}$–$120\,\text{dB}$. Kuulo erottaa likimain suhteellisia eroja. Siksi sama intensiteetin kerroin, esimerkiksi kaksinkertaistuminen, tuntuu suunnilleen samalta muutokselta (noin $3\,\text{dB}$) hiljaisella ja kovalla äänellä.
 
 ## fy5-15-L1-09
@@ -307,7 +308,7 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 **Kaava:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, joten $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Muunnokset:** Niitä ei tarvita. $\dfrac{L}{10\,\text{dB}} = \dfrac{74{,}0\,\text{dB}}{10\,\text{dB}} = 7{,}40$, desibelit supistuvat.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7{,}40} = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$
-**Vastaus:** $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$ eli $0{,}000025\,\text{W/m}^2$, kaksi merkitsevää numeroa kuten kuulokynnys $1{,}0 \cdot 10^{-12}\,\text{W/m}^2$.
+**Vastaus:** $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$ eli $0{,}000025\,\text{W/m}^2$, kaksi merkitsevää numeroa. Kuvasta luettu taso $74{,}0\,\text{dB}$ on desibelin kymmenesosan tarkkuudella, ja $\pm 0{,}1\,\text{dB}$ muuttaa intensiteettiä noin $\pm 2{,}3\,\%$. Siksi kolmas numero ei ole varma.
 **Järkevyys:** $70\,\text{dB}$ vastaa intensiteettiä $10^{-5}\,\text{W/m}^2$ ja $80\,\text{dB}$ intensiteettiä $10^{-4}\,\text{W/m}^2$, joten $74\,\text{dB}$:n intensiteetin on oltava näiden välissä, lähempänä alempaa. Kuvan $80\,\text{dB}$ kohdassa $r = 2{,}0\,\text{m}$ intensiteetti on $1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, ja kaksinkertaisella etäisyydellä se on neljäsosa eli $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$. Tulos on siis oikein.
 
 ## fy5-15-L2-09
@@ -319,4 +320,10 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 **Muunnokset:** $\dfrac{L}{10\,\text{dB}} = 8{,}00$. Tulos tulee watteina. Koska $1\,\text{W} = 1000\,\text{mW}$, tulos muunnetaan milliwateiksi.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8{,}00} = 1{,}0 \cdot 10^{-4}\,\text{W/m}^2$, ja $P = 4\pi \cdot (2{,}0\,\text{m})^2 \cdot 1{,}0 \cdot 10^{-4}\,\text{W/m}^2 = 5{,}03 \cdot 10^{-3}\,\text{W} = 5{,}03\,\text{mW}$
 **Vastaus:** $5{,}0\,\text{mW}$, kaksi merkitsevää numeroa kuten kuvasta luetussa etäisyydessä $2{,}0\,\text{m}$.
-**Järkevyys:** Toinen kuvan piste antaa saman tuloksen: $r = 4{,}0\,\text{m}$ ja $L = 74{,}0\,\text{dB}$ antavat $I = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $P = 4\pi \cdot (4{,}0\,\text{m})^2 \cdot 2{,}51 \cdot 10^{-5}\,\text{W/m}^2 = 5{,}05\,\text{mW}$, mikä poikkeaa alle $1\,\%$ ensimmäisestä. Ero johtuu lukemistarkkuudesta. Teho on pieni, kuten pienellä kaiuttimella. Sähköteho on moninkertainen, koska vain pieni osa siitä muuttuu ääneksi.
+**Järkevyys:** Toinen kuvan piste antaa saman tuloksen: $r = 4{,}0\,\text{m}$ ja $L = 74{,}0\,\text{dB}$ antavat $I = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$ ja $$
+\begin{aligned}
+P &= 4\pi \cdot (4{,}0\,\text{m})^2 \\
+&\cdot 2{,}51 \cdot 10^{-5}\,\text{W/m}^2 \\
+&= 5{,}05\,\text{mW}
+\end{aligned}
+$$, mikä poikkeaa alle $1\,\%$ ensimmäisestä. Ero johtuu lukemistarkkuudesta. Teho on pieni, kuten pienellä kaiuttimella. Sähköteho on moninkertainen, koska vain pieni osa siitä muuttuu ääneksi.

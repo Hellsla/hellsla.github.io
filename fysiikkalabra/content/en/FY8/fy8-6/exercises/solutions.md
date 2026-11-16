@@ -98,7 +98,7 @@ $$, so $e\lambda = 1.602 \cdot 10^{-19}\,\text{C} \cdot 470 \cdot 10^{-9}\,\text
 \begin{aligned}
 1240\,\text{V}\,\text{nm} : 470\,\text{nm} &\approx 2.6\,\text{V}
 \end{aligned}
-$$. The voltage is greater than that of a red LED, about $1.9\,\text{V}$, because a photon of blue light needs more energy. The measured threshold voltage is usually about $0.1\,\text{V}$ smaller than this estimate.
+$$. The voltage is greater than that of a red LED, about $1.9\,\text{V}$, because a photon of blue light needs more energy. The measured threshold voltage is usually slightly smaller than this estimate. In the data sets of this chapter the difference is about $0.1\,\text{V}$.
 
 ## fy8-6-L2-02
 **Given:** peak wavelength $\lambda = 605\,\text{nm}$, threshold voltage $U_\text{k} = 1.95\,\text{V}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
@@ -140,13 +140,13 @@ $$
 
 ## fy8-6-L2-04
 **Given:** wavelength of the blue photon $\lambda_1 = 450\,\text{nm}$, wavelength of the yellow photon $\lambda_2 = 560\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the energy $\Delta E$ left as heat per photon, in electronvolts
-**Principle:** In fluorescence (chapter *Spectra reveal the energy levels of atoms*) a substance absorbs a photon and emits a photon of lower energy. Energy is conserved, so the difference between the energies of the absorbed and the emitted photon is left in the phosphor as heat.
+**Asked:** the energy $\Delta E$ left as internal energy per photon, in electronvolts
+**Principle:** In fluorescence (chapter *Spectra reveal the energy levels of atoms*) a substance absorbs a photon and emits a photon of lower energy. Energy is conserved, so the difference between the energies of the absorbed and the emitted photon is left in the phosphor as internal energy.
 **Formula:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
 **Conversions:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; the energies from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $\dfrac{hc}{\lambda_1} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4.4144 \cdot 10^{-19}\,\text{J} = 2.7556\,\text{eV}$ and $\dfrac{hc}{\lambda_2} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3.5473 \cdot 10^{-19}\,\text{J} = 2.2143\,\text{eV}$, so $\Delta E = 2.7556\,\text{eV} - 2.2143\,\text{eV} = 0.5413\,\text{eV}$
 **Answer:** $0.541\,\text{eV}$, three significant figures like the wavelengths.
-**Reasonableness:** With round numbers $1240 : 450 - 1240 : 560 \approx 2.76 - 2.21 = 0.55$, that is about $0.5\,\text{eV}$. The emitted photon has a longer wavelength than the absorbed one, so the difference must be positive, as it always is in fluorescence. About a fifth of the energy of the blue photon turns into heat.
+**Reasonableness:** With round numbers $1240 : 450 - 1240 : 560 \approx 2.76 - 2.21 = 0.55$, that is about $0.5\,\text{eV}$. The emitted photon has a longer wavelength than the absorbed one, so the difference must be positive, as it always is in fluorescence. About a fifth of the energy of the blue photon turns into internal energy.
 
 ## fy8-6-L3-01
 **Given:** the peak wavelengths and threshold voltages of four LEDs: $625\,\text{nm}$ and $1.86\,\text{V}$, $590\,\text{nm}$ and $1.97\,\text{V}$, $520\,\text{nm}$ and $2.27\,\text{V}$, $465\,\text{nm}$ and $2.55\,\text{V}$; $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
@@ -283,7 +283,7 @@ eU_\text{k}\lambda &= 1.602 \cdot 10^{-19}\,\text{C} \\
 &= 2.0589 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, so $h = \dfrac{2.0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.998 \cdot 10^8\,\text{m/s}} = 6.868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Salla’s deviation is $\dfrac{6.868 - 6.626}{6.626} \cdot 100\,\% = 3.65\,\%$.
-**Answer:** Salla’s Planck constant deviates from the accepted value by $3.65\,\%$ upwards, three significant figures like the voltages. The other results are, for Aino, $5.86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11.6\,\%$) and, for Eero, $6.33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4.5\,\%$). Part b): Aino’s and Salla’s reading methods are incorrect because the result depends on the current chosen. Aino’s reading is too small because the current $0.1\,\text{mA}$ already flows before the threshold given by the extension of the line, and Salla’s too large because at the current $10\,\text{mA}$ the electrons need extra voltage, on top of the threshold, to make the current larger. Eero’s method does not depend on the current chosen. Salla’s value happens to come closer to the accepted value because her extra $0.16\,\text{V}$ or so cancels part of the fact that the threshold voltage is usually about $0.1\,\text{V}$ smaller than $\tfrac{hf}{e}$. A result close to the table value does not prove the reading method correct; the remaining difference of the extension of the line disappears from the slope.
+**Answer:** Salla’s Planck constant deviates from the accepted value by $3.65\,\%$ upwards, three significant figures like the voltages. The other results are, for Aino, $5.86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11.6\,\%$) and, for Eero, $6.33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4.5\,\%$). Part b): Aino’s and Salla’s reading methods are incorrect because the result depends on the current chosen. Aino’s reading is too small because the current $0.1\,\text{mA}$ already flows before the threshold given by the extension of the line, and Salla’s too large because at the current $10\,\text{mA}$ the electrons need extra voltage, on top of the threshold, to make the current larger. Eero’s method does not depend on the current chosen. Salla’s value happens to come closer to the accepted value because her extra $0.16\,\text{V}$ or so cancels part of the fact that the threshold voltage is in this data set about $0.1\,\text{V}$ smaller than $\tfrac{hf}{e}$. A result close to the table value does not prove the reading method correct; the remaining difference of the extension of the line disappears from the slope.
 **Reasonableness:** Eero’s $h$ still deviates from the accepted value by $-4.5\,\%$, and the difference is exactly the difference of about $0.1\,\text{V}$ mentioned in the chapter ($\tfrac{hc}{e\lambda} = 1.97\,\text{V}$ and Eero’s $1.88\,\text{V}$), so it should not be regarded as an incorrect reading method. The direction agrees: $5.86 < 6.33 < 6.87$ corresponds to the order of the voltages $1.74\,\text{V} < 1.88\,\text{V} < 2.04\,\text{V}$.
 
 ## fy8-6-L2-07

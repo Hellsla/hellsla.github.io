@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5220d35f28b84d7f
-SCOPE: delta added-exercise from 92a6c24e78a8af80 base 8f23aa7ae3bd
+CONTENT-HASH: 60023ef97e0f5014
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-13-L2-10 (13-19) Formula row — the wrapped second line "$N = \tfrac{\sin\theta}{k\lambda}$" sits so close under "$N = \tfrac{1}{d}$" that the denominator $d$ and the numerator $\sin\theta$ nearly touch — give the inline row a little more line spacing, or let the build set the two steps as separate rows.
-- [Minor] fy7/spectrum-q — the card has a tall empty band under the ruler (about 60 px at 1280) — trim the viewBox height.
-- [Minor] fy7-13-L2-10 solution — "250" followed by "lines per millimetre" outside the maths is set as separate fragments in Substitution and Answer — acceptable, as the unit is not an SI unit.
+- [Minor] solutions.md, grating reasonableness check — the chain is now three aligned rows (x = 1.00 m / · tan(sin^-1 ...) / = 10.1 cm,) with the comma inside the block and the sentence continuing "and in the figure ..."; at 390 px (checked in a capture of the block) it is readable, nothing clipped, equals sign and continuation aligned. No change needed.
+
+## Outside this change (queue 5d, not blocking here)
+- [Major] en/fy7-13 rows in docs/clipped-formulas.tsv (the d = 1 mm : 600 = ... conversions, 1.667 µm · sin ... = ..., the (561.7 nm − 532.3 nm) fraction) remain clipped on a phone.
 
 ## Checked
-- fy7-13-open-exercises-1280-9 (en): task 13-9 (helium line from MAFY) hint, answer, opened solution.
-- fy7-13-open-exercises-L2-1280-11, -12, -13, -14: task 13-18 with the set-up diagram (laser, grating, screen with cm scale, five red spots, dimension line $L = 1.20\,\text{m}$, nothing overlapping), task 13-19 with the front view of the spectrum on a ruler (violet inner, red outer, edges at true places), both solutions.
-- Typography: units upright with thin space, tan/sin of degrees and $\sin^{-1}$ nested fractions set cleanly, no red KaTeX, no overflow; the set reads as one.
+- 390 px render of the changed reasonableness block; the exercise captures at 1280 are in the fy7-13 lesson shots folder only if present, so the surrounding layout was not re-opened.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

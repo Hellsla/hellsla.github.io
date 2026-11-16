@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 730aa0cfcf2b68b4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: e4989bd9cca37b33
 
 ## Blocking
 - none
 
 ## Polish
+- [Major, outside this change, queue item 5d] formulas listed for en/fy7-8 in docs/clipped-formulas.tsv (5 rows) are known clipped at 360 px; the diff touches none of them.
 - none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Three-phase subsection: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en: "At the same voltage, current and power factor … $1.73$ times") reads correctly; display formula $P = \sqrt{3}\,U I \cos\varphi$ and symbol list unchanged.
-- Aria texts of grid and loss-graph unchanged since round 1 and consistent across lesson.md, figures.py, figures.json.
-- Round-1 blocker fixed: substation paragraph split at "High voltage is not brought into homes"; both parts under the limit.
-- Hash identical at start and end of this round.
+- batch delta review: fig-6-390 (transformer: coils, core, flux, I1/I2 in violet, labels legible) and fig-8-390 (single-line grid diagram, 20 kV / 400 kV / 230 V labels, nothing overlapping); the blank-line and bullet edits cause no layout damage.

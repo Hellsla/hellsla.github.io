@@ -12,7 +12,7 @@
     {
       "id": "fy7-8-L1-02",
       "level": 1,
-      "text": "The ideal transformer of a garden light lowers the mains voltage $230\\,\\text{V}$ to a voltage of $8.0\\,\\text{V}$. The secondary coil has $40$ turns. How many turns does the primary coil have?",
+      "text": "The ideal transformer of a garden light lowers the mains voltage $230\\,\\text{V}$ to a voltage of $8.00\\,\\text{V}$. The secondary coil has $40$ turns. How many turns does the primary coil have?",
       "answer": 1150.0,
       "unit": "turns",
       "tolerance": 0.02

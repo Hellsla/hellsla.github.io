@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 300f0acc09180cf2
+CONTENT-HASH: cfc0ccfe7d260c04
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] exercise 16-14 table — the caption "Pulkan paikka vaakasuoralla lumella" is a narrow wrapped header over a table that fills only about half the card; a wider caption cell would read better (shared component, not this lesson).
+- none
 
 ## Checked
-- Delta: only exercises.json and solutions.md changed (liikekitka → liukukitka in task texts, Kysytty, Periaate and Voimakuvio lines; marker "esimerkkiaineisto" kept in the text). grep finds no remaining "liikekitka" in either file; the new forms ("liukukitkakerroin", "liukukitkavoima", "liukukitka $\overline{F}_\mu$") are glossary-consistent and correctly inflected.
-- Opened fy4-16-open-exercises-1280-7.png (16-6 solution) and fy4-16-open-exercises-L2-1280-8.png (16-14 with the table and its solution), plus the surrounding layout: no clipping, KaTeX rendered, solutions open inside their cards. Contact sheets and the figures were not changed by the diff; the deterministic 360/768/1280 px layout checks are clean.
+- Delta: the Järkevyys/Reasonableness step of the parachute exercise (16-20), fi L3 open-solutions capture (fy4-16-open-exercises-L3-1280-5): the formula stands on its own display row between the sentence halves, not clipped, comma and unit intact, consistent with the neighbouring display blocks. At 1280 px the two aligned rows fit on one row; the 360/390 px layout check passes (no phone capture opened). Numbers, signs and units unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
