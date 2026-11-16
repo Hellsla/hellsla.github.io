@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 35e4527519483d6a
+CONTENT-HASH: afbfe6932ef85119
 
 ## Blocking
 - none
@@ -8,7 +8,4 @@ CONTENT-HASH: 35e4527519483d6a
 - none
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures inquiry 01-02 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
-
-## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+batch delta review: opened fy1-4-example-390-1 and -3 (stages 1-2, 7, figure); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.
