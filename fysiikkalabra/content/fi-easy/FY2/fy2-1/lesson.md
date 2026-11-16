@@ -98,13 +98,17 @@ Energiaa on monessa muodossa. Jokaista muotoa sanotaan **energialajiksi**. Energ
 <figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="Vesivoimalaitoksen alue ylhäältä. Vasemmalla on joki ja alhaalla sähkölaitteita."><figcaption>Vesivoimalaitos ylhäältä. Veden potentiaalienergia muuttuu turbiinissa liike-energiaksi. Generaattori muuttaa sen sähköenergiaksi.</figcaption></figure>
 
 ### Seitsemän energialajia
-- **Potentiaalienergia** $E_\text{p}$ on energiaa, joka riippuu kappaleen paikasta. Tässä se on painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia.
-- **Liike-energia** $E_\text{k}$ on liikkuvan kappaleen energiaa. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole.
-- **Lämpöenergia** $E_\text{lämpö}$ liittyy aineen hiukkasten liikkeeseen ja siihen, miten hiukkaset vaikuttavat toisiinsa. Kun kappale lämpenee, sen hiukkaset liikkuvat enemmän. Silloin kappaleen lämpöenergia kasvaa. Lämpöenergia riippuu myös aineen määrästä. Siksi se ei ole sama asia kuin lämpötila. Sana **lämpö** tarkoittaa fysiikassa energiaa, joka *siirtyy* lämpötilaeron vuoksi. Energiaa siirtyy nettomääräisesti lämpimämmästä kappaleesta kylmempään. Kappaleella on lämpöenergiaa. Lämpönä energiaa siirtyy kappaleesta toiseen.
-- **Kemiallinen energia** on energiaa, joka on varastoitunut aineiden kemiallisiin sidoksiin. Sitä on ravinnossa, polttoaineissa ja paristoissa. Se vapautuu esimerkiksi palamisessa ja aineenvaihdunnassa.
-- **Säteilyenergia** kulkee säteilyn mukana, esimerkiksi auringonvalossa. Se kulkee myös tyhjiön läpi.
-- **Sähköenergia** siirtyy sähkövirran mukana, esimerkiksi sähköverkossa.
-- **Ydinenergia** on energiaa, joka on sitoutunut atomiytimiin. Se vapautuu ydinreaktioissa. Niitä tapahtuu ydinvoimalassa ja Auringossa.
+| Energialaji | Mihin liittyy | Esimerkki |
+|---|---|---|
+| **Potentiaalienergia** $E_\text{p}$ | Kappaleen paikkaan. Tässä se on painovoiman potentiaalienergiaa. Mitä korkeammalla kappale on ja mitä suurempi sen massa on, sitä enemmän sillä on potentiaalienergiaa. | Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia. |
+| **Liike-energia** $E_\text{k}$ | Kappaleen liikkeeseen. Mitä nopeammin kappale liikkuu ja mitä suurempi sen massa on, sitä enemmän sillä on liike-energiaa. Levossa olevalla kappaleella sitä ei ole. | Vierivä pallo |
+| **Lämpöenergia** $E_\text{lämpö}$ | Aineen hiukkasten liikkeeseen ja siihen, miten hiukkaset vaikuttavat toisiinsa. Kun kappale lämpenee, sen hiukkaset liikkuvat enemmän. Silloin kappaleen lämpöenergia kasvaa. | Kuuma kahvikuppi |
+| **Kemiallinen energia** | Aineiden kemiallisiin sidoksiin. Energia vapautuu esimerkiksi palamisessa ja aineenvaihdunnassa. | Ravinto, polttoaineet ja paristot |
+| **Säteilyenergia** | Säteilyyn. Energia kulkee säteilyn mukana. Se kulkee myös tyhjiön läpi. | Auringonvalo |
+| **Sähköenergia** | Sähkövirtaan. Energia siirtyy sähkövirran mukana. | Sähköverkko |
+| **Ydinenergia** | Atomiytimiin. Energia vapautuu ydinreaktioissa. | Ydinvoimala ja Aurinko |
+
+Lämpöenergia riippuu myös aineen määrästä. Siksi se ei ole sama asia kuin lämpötila. Sana **lämpö** tarkoittaa fysiikassa energiaa, joka *siirtyy* lämpötilaeron vuoksi. Energiaa siirtyy nettomääräisesti lämpimämmästä kappaleesta kylmempään. Kappaleella on lämpöenergiaa. Lämpönä energiaa siirtyy kappaleesta toiseen.
 
 Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\text{mek} = E_\text{p} + E_\text{k}$.
 
