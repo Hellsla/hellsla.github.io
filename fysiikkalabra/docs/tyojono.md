@@ -485,6 +485,7 @@ Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi t
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
 luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
 ympäristön sallituissa (16.11).
+Varattu: claude/fy8-aineisto (FY8)
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
