@@ -87,7 +87,7 @@
 **Conversions:** The speeds are in km/s and the time in seconds, so the distance comes out in kilometres and the travel time in seconds.
 **Substitution:** $d = \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{2.5\,\text{km/s}} \cdot 14.0\,\text{s} = 117.6\,\text{km}$ and $t_\text{P} = \dfrac{117.6\,\text{km}}{6.0\,\text{km/s}} = 19.6\,\text{s}$
 **Answer:** about $20\,\text{s}$, two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$.
-**Reasonableness:** The travel time of the S wave is $$117.6\,\text{km} : 3.5\,\text{km/s} = 33.6\,\text{s}$$, and $33.6\,\text{s} - 19.6\,\text{s} = 14.0\,\text{s}$, as measured. The travel time of the P wave is greater than the time difference, because the P wave also needs time for the whole distance.
+**Reasonableness:** The travel time of the S wave is $117.6\,\text{km} : 3.5\,\text{km/s} = 33.6\,\text{s}$, and $33.6\,\text{s} - 19.6\,\text{s} = 14.0\,\text{s}$, as measured. The travel time of the P wave is greater than the time difference, because the P wave also needs time for the whole distance.
 
 ## fy5-17-L2-08
 **Find:** how the distances of stations A and B from the origin of the earthquake compare with each other, when the delay of the S wave behind the P wave is $8.0\,\text{s}$ at station A and $24.0\,\text{s}$ at station B, and which reason explains it
@@ -106,7 +106,7 @@ $d_\text{A} = 8.4\,\text{km/s} \cdot 8.0\,\text{s} \approx 67\,\text{km}$
 
 For station B:
 
-$$\begin{aligned} d_\text{B} &= 8.4\,\text{km/s} \cdot 24.0\,\text{s} \\ &\approx 2.0 \cdot 10^{2}\,\text{km} \end{aligned}$$
+$d_\text{B} = 8.4\,\text{km/s} \cdot 24.0\,\text{s} \approx 2.0 \cdot 10^{2}\,\text{km}$
 
 The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text{s}} = 3$. Reason: the waves travel the same distance at steady speeds, so the time difference is proportional to the distance. The time difference is not the same constant at all stations, because the longer the path the waves travel, the more the S wave falls behind the P wave. The missing moment of the earthquake does not prevent the comparison, because the time difference is measured with the station's own clock. That the P wave arrives first is true, but it does not tell the ratio of the distances.
 
@@ -118,7 +118,7 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $40\,\text{ms} = 40 \cdot 10^{-3}\,\text{s} = 0.040\,\text{s}$
 **Substitution:** $d = \dfrac{(343\,\text{m/s} + 10\,\text{m/s}) \cdot 0.040\,\text{s}}{2} = \dfrac{14.12\,\text{m}}{2} = 7.06\,\text{m}$
 **Answer:** $7.06\,\text{m}$ (data with two significant figures would give $7.1\,\text{m}$; the third figure is shown so that the difference from the result for a stationary bat, $6.86\,\text{m}$, can be seen).
-**Reasonableness:** If the bat were stationary, the distance would be $$343\,\text{m/s} \cdot 0.040\,\text{s} : 2 = 6.86\,\text{m}$$. The motion of the bat shortens the return trip, so the wall was farther away, by $20\,\text{cm}$, half of the distance the bat flew, $10\,\text{m/s} \cdot 0.040\,\text{s} = 0.40\,\text{m}$.
+**Reasonableness:** If the bat were stationary, the distance would be $343\,\text{m/s} \cdot 0.040\,\text{s} : 2 = 6.86\,\text{m}$. The motion of the bat shortens the return trip, so the wall was farther away, by $20\,\text{cm}$, half of the distance the bat flew, $10\,\text{m/s} \cdot 0.040\,\text{s} = 0.40\,\text{m}$.
 
 ## fy5-17-L3-02
 **Given:** thickness of the fat $d_\text{fat} = 4.0\,\text{cm}$, $v_\text{fat} = 1450\,\text{m/s}$, for muscle $v_\text{mus} = 1580\,\text{m/s}$, travel time of the echo $t = 80.0\,\mu\text{s}$ from the lower surface of the muscle layer
@@ -128,7 +128,7 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $d_\text{fat} = 4.0\,\text{cm} = 0.040\,\text{m}$, $t = 80.0 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $t_\text{fat} = \dfrac{2 \cdot 0.040\,\text{m}}{1450\,\text{m/s}} = 55.17 \cdot 10^{-6}\,\text{s}$, $d_\text{mus} = \dfrac{1580\,\text{m/s} \cdot 24.83 \cdot 10^{-6}\,\text{s}}{2} = 0.019\,62\,\text{m}$ and $d = 0.040\,\text{m} + 0.019\,62\,\text{m} = 0.059\,62\,\text{m} = 5.96\,\text{cm}$
 **Answer:** $5.96\,\text{cm}$ (the thickness of the fat $4.0\,\text{cm}$ would limit the answer to two significant figures, $6.0\,\text{cm}$; three figures are shown so that the difference from the result with a single speed can be seen).
-**Reasonableness:** A machine that assumes the speed $1540\,\text{m/s}$ would show the depth $$\begin{aligned} &1540\,\text{m/s} \cdot 80.0\,\mu\text{s} : 2 \\ &= 6.16\,\text{cm} \end{aligned}$$, which is $2\,\text{mm}$ too much. If the whole distance were muscle, the result would be $$\begin{aligned} &1580\,\text{m/s} \cdot 80.0\,\mu\text{s} : 2 \\ &= 6.32\,\text{cm} \end{aligned}$$. The true depth is less than both of these, because sound travels more slowly in fat. The difference is still only a few per cent, so a single assumed speed is enough for most measurements.
+**Reasonableness:** A machine that assumes the speed $1540\,\text{m/s}$ would show the depth $1540\,\text{m/s} \cdot 80.0\,\mu\text{s} : 2 = 6.16\,\text{cm}$, which is $2\,\text{mm}$ too much. If the whole distance were muscle, the result would be $1580\,\text{m/s} \cdot 80.0\,\mu\text{s} : 2 = 6.32\,\text{cm}$. The true depth is less than both of these, because sound travels more slowly in fat. The difference is still only a few per cent, so a single assumed speed is enough for most measurements.
 
 ## fy5-17-L3-03
 **Given:** depths $h_1 = 4000\,\text{m}$ and $h_2 = 10\,\text{m}$, wavelength $\lambda_1 = 200\,\text{km}$; period $T$ the same
@@ -138,7 +138,7 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** The depths are in the same unit, so their ratio is dimensionless; the wavelength can be kept in kilometres.
 **Substitution:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0.050 = 10.0\,\text{km}$
 **Answer:** $10\,\text{km}$, two significant figures like the depth $10\,\text{m}$.
-**Reasonableness:** In the ocean the speed is $$\sqrt{9.81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$$, so the period is $$200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$$, or about $17\,\text{min}$. At the coast the speed is $9.9\,\text{m/s}$, and $9.9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. The wavelength is still much greater than the depth, so the formula holds.
+**Reasonableness:** In the ocean the speed is $\sqrt{9.81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$, so the period is $200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$, or about $17\,\text{min}$. At the coast the speed is $9.9\,\text{m/s}$, and $9.9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. The wavelength is still much greater than the depth, so the formula holds.
 
 ## fy5-17-L1-06
 **Find:** what is concluded about the interior of the Earth from the fact that a P wave but no S wave is detected on the opposite side
@@ -159,12 +159,12 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Given:** the moments of the echo peaks $t_1 = 21.4\,\mu\text{s}$, $t_2 = 58.9\,\mu\text{s}$ and $t_3 = 109.2\,\mu\text{s}$, speed of sound in tissue $v = 1540\,\text{m/s}$
 **Find:** a) the depths of the boundaries $d_1$, $d_2$ and $d_3$; b) the thickness $\Delta d$ of the layer between the boundaries corresponding to peaks 2 and 3, in centimetres
 **Principle:** Each peak is an echo from one boundary, and the pulse travels to the boundary and back. So the depth of each boundary is the speed times the moment of the peak divided by two. The thickness of the layer is the difference of two depths, so it is also obtained from the difference of the moments of the peaks.
-**Reading the table:** The moments of the peaks in the table are the time from the sending of the pulse. The echo from the upper surface of the layer is peak 2 and the echo from the lower surface is peak 3, so the time spent in the layer is $$\begin{aligned} t_3 - t_2 &= 109.2\,\mu\text{s} - 58.9\,\mu\text{s} \\ &= 50.3\,\mu\text{s} \end{aligned}$$.
+**Reading the table:** The moments of the peaks in the table are the time from the sending of the pulse. The echo from the upper surface of the layer is peak 2 and the echo from the lower surface is peak 3, so the time spent in the layer is $t_3 - t_2 = 109.2\,\mu\text{s} - 58.9\,\mu\text{s} = 50.3\,\mu\text{s}$.
 **Formula:** $d = \dfrac{v t}{2}$ and $\Delta d = d_3 - d_2 = \dfrac{v\,(t_3 - t_2)}{2}$
 **Conversions:** $50.3\,\mu\text{s} = 50.3 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** a) $d_1 = 1540\,\text{m/s} \cdot 21.4 \cdot 10^{-6}\,\text{s} : 2 = 1.65\,\text{cm}$, $d_2 = 4.54\,\text{cm}$ and $d_3 = 8.41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50.3 \cdot 10^{-6}\,\text{s}}{2} = 0.038\,73\,\text{m} = 3.873\,\text{cm}$
 **Answer:** $3.87\,\text{cm}$, three significant figures like the moments of the peaks.
-**Reasonableness:** The difference of the depths $$8.41\,\text{cm} - 4.54\,\text{cm} = 3.87\,\text{cm}$$ is the same as the thickness calculated directly from the time difference. In the layer the echo covers the round trip of $2 \cdot 3.87\,\text{cm} = 7.7\,\text{cm}$, and $7.7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, as measured.
+**Reasonableness:** The difference of the depths $8.41\,\text{cm} - 4.54\,\text{cm} = 3.87\,\text{cm}$ is the same as the thickness calculated directly from the time difference. In the layer the echo covers the round trip of $2 \cdot 3.87\,\text{cm} = 7.7\,\text{cm}$, and $7.7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, as measured.
 
 ## fy5-17-L2-06
 **Given:** distances $L = 20.0$; $30.0$; $40.0$ and $50.0\,\text{cm}$ and return times of the echo $t = 270$; $407$; $540$ and $677\,\mu\text{s}$
@@ -179,17 +179,28 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 ## fy5-17-L2-07
 **Find:** what the error is in the student’s solution
 **Principle:** Each wave covers the same distance $d$ at a constant speed, and the difference in arrival times is the difference of the travel times of the S wave and the P wave: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. The product $v_\text{P}\,\Delta t$ alone would be the distance the P wave would cover in the time $\Delta t$, and that is not the distance of the earthquake.
-**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins. The correct result is $$\begin{aligned} d &= \dfrac{6.0 \cdot 3.5}{6.0 - 3.5} \cdot 16.0\,\text{km} \\ &= 134\,\text{km} \end{aligned}$$. Check: the travel time of the P wave is $134\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$. Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
+**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins.
+
+The correct result is $$
+\begin{aligned}
+d &= \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{6.0\,\text{km/s} - 3.5\,\text{km/s}} \\
+&\cdot 16.0\,\text{s} \\
+&= 134.4\,\text{km} \\
+&\approx 134\,\text{km}
+\end{aligned}
+$$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134.4\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$.
+
+Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
 
 ## fy5-17-L3-04
 **Given:** stations A$(0, 0)$, B$(120, 0)$ and C$(60, 90)$ in kilometres; $\Delta t_\text{A} = 10.0\,\text{s}$, $\Delta t_\text{B} = 7.5\,\text{s}$, $\Delta t_\text{C} = 5.9\,\text{s}$; $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$
 **Find:** the $y$-coordinate of the earthquake in kilometres
 **Principle:** The time difference at each station gives the distance to the earthquake, so the earthquake is on a circle centred at the station. Two circles have two points of intersection, and the circle of the third station chooses the correct one of them.
-**Formula:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. The equations of the circles of stations A and B are $x^2 + y^2 = d_\text{A}^2$ and $(x - 120)^2 + y^2 = d_\text{B}^2$. Expand the second equation: $$(x - 120)^2 = x^2 - 240x + 14\,400$$. When the first equation is subtracted from the second, $x^2$ and $y^2$ cancel and what remains is $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, so $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ and $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Formula:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. The equations of the circles of stations A and B are $x^2 + y^2 = d_\text{A}^2$ and $(x - 120)^2 + y^2 = d_\text{B}^2$. Expand the second equation: $(x - 120)^2 = x^2 - 240x + 14\,400$. When the first equation is subtracted from the second, $x^2$ and $y^2$ cancel and what remains is $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, so $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ and $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
 **Conversions:** The speeds are in km/s and the times in seconds, so the distances come out in kilometres. The factor is $\dfrac{6.0 \cdot 3.5}{2.5}\,\text{km/s} = 8.4\,\text{km/s}$.
-**Substitution:** a) $d_\text{A} = 8.4\,\text{km/s} \cdot 10.0\,\text{s} = 84.0\,\text{km}$, $d_\text{B} = 8.4\,\text{km/s} \cdot 7.5\,\text{s} = 63.0\,\text{km}$ and $d_\text{C} = 8.4\,\text{km/s} \cdot 5.9\,\text{s} = 49.6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72.9\,\text{km}$ and $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41.8\,\text{km}$. The possible locations are $(72.9;\ 41.8)$ and $(72.9;\ -41.8)$. The distance to station C from the first is $$\begin{aligned} &\sqrt{(72.9 - 60)^2 + (41.8 - 90)^2}\,\text{km} \\ &= 49.9\,\text{km} \end{aligned}$$ and from the second $$\sqrt{12.9^2 + 131.8^2}\,\text{km} = 132.4\,\text{km}$$. The measured $49.6\,\text{km}$ fits the first.
+**Substitution:** a) $d_\text{A} = 8.4\,\text{km/s} \cdot 10.0\,\text{s} = 84.0\,\text{km}$, $d_\text{B} = 8.4\,\text{km/s} \cdot 7.5\,\text{s} = 63.0\,\text{km}$ and $d_\text{C} = 8.4\,\text{km/s} \cdot 5.9\,\text{s} = 49.6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72.9\,\text{km}$ and $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41.8\,\text{km}$. The possible locations are $(72.9;\ 41.8)$ and $(72.9;\ -41.8)$. The distance to station C from the first is $\sqrt{(72.9 - 60)^2 + (41.8 - 90)^2}\,\text{km} = 49.9\,\text{km}$ and from the second $\sqrt{12.9^2 + 131.8^2}\,\text{km} = 132.4\,\text{km}$. The measured $49.6\,\text{km}$ fits the first.
 **Answer:** $y = 42\,\text{km}$ (north of stations A and B), two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$. The earthquake is at the point $(73;\ 42)\,\text{km}$.
-**Reasonableness:** Check the distance to station A: $$\begin{aligned} &\sqrt{72.9^2 + 41.8^2}\,\text{km} \\ &= 84.0\,\text{km} \end{aligned}$$ and to station B: $$\begin{aligned} &\sqrt{47.1^2 + 41.8^2}\,\text{km} \\ &= 63.0\,\text{km} \end{aligned}$$, as measured. The time difference predicted for station C would be $49.9\,\text{km} : 8.4\,\text{km/s} = 5.9\,\text{s}$, the same as measured. At the other location it would be $$132.4\,\text{km} : 8.4\,\text{km/s} = 15.8\,\text{s}$$.
+**Reasonableness:** Check the distance to station A: $\sqrt{72.9^2 + 41.8^2}\,\text{km} = 84.0\,\text{km}$ and to station B: $\sqrt{47.1^2 + 41.8^2}\,\text{km} = 63.0\,\text{km}$, as measured. The time difference predicted for station C would be $49.9\,\text{km} : 8.4\,\text{km/s} = 5.9\,\text{s}$, the same as measured. At the other location it would be $132.4\,\text{km} : 8.4\,\text{km/s} = 15.8\,\text{s}$.
 **Justification for part c:** The time difference at one station gives only the distance, so the earthquake can be at any point on the circle around the station. Two circles usually intersect at two points, which are mirror images of each other with respect to the line joining the stations, and the data of two stations cannot be used to choose between them. The circle of the third station passes through only one of the points, so three stations are enough.
 
 ## fy5-17-L3-05
@@ -201,7 +212,7 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ and $s_3 = 20\,000\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** The speeds are $v_1 = \sqrt{9.81 \cdot 4000}\,\text{m/s} = 198.1\,\text{m/s}$, $v_2 = 99.05\,\text{m/s}$ and $v_3 = 22.15\,\text{m/s}$. The travel times are $t_1 = 300\,000\,\text{m} : 198.1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ and $t_3 = 903\,\text{s}$. The sum is $3427\,\text{s}$, so $t = 3427\,\text{s} : 60\,\text{s/min} = 57.1\,\text{min}$.
 **Answer:** $57\,\text{min}$, two significant figures like the depths and the lengths of the sections.
-**Reasonableness:** The whole distance is $420\,\text{km}$, so the mean speed is $$420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$$. It is between the lowest ($22\,\text{m/s}$) and the highest ($198\,\text{m/s}$) speed and closer to the high speeds, because the longest section is deep water.
+**Reasonableness:** The whole distance is $420\,\text{km}$, so the mean speed is $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. It is between the lowest ($22\,\text{m/s}$) and the highest ($198\,\text{m/s}$) speed and closer to the high speeds, because the longest section is deep water.
 **Justification for part b:** Section 3 is $15$ times shorter than section 1, but the speed there is only $22.15\,\text{m/s}$, about $9$ times smaller than $198.1\,\text{m/s}$. The travel time $903\,\text{s}$ is therefore $903\,\text{s} : 1514\,\text{s} = 0.60$, more than half of the time of section 1. The formula applies in the last section, because the wavelength is over $10\,\text{km}$, much greater than the depth $50\,\text{m}$.
 
 ## fy5-17-L1-09
@@ -212,7 +223,7 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0.020\,\text{s}$.
 **Substitution:** $d = \dfrac{1402.4\,\text{m/s} \cdot 0.020\,\text{s}}{2} = 14.024\,\text{m}$
 **Answer:** $14\,\text{m}$, more precisely $14.0\,\text{m}$. The time $20\,\text{ms}$ is taken as exact and the table value gives three significant figures; values from different tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** The echo travels $$1402.4\,\text{m/s} \cdot 0.020\,\text{s} = 28\,\text{m}$$, half of which is $14\,\text{m}$. With the tissue value $1540\,\text{m/s}$ the result would be $15.4\,\text{m}$, about $10\,\%$ too much, so using the value for the right medium matters.
+**Reasonableness:** The echo travels $1402.4\,\text{m/s} \cdot 0.020\,\text{s} = 28\,\text{m}$, half of which is $14\,\text{m}$. With the tissue value $1540\,\text{m/s}$ the result would be $15.4\,\text{m}$, about $10\,\%$ too much, so using the value for the right medium matters.
 
 ## fy5-17-L2-09
 **Given:** from the figure the time of echo C, the speed of sound in tissue $v = 1540\,\text{m/s}$
@@ -223,4 +234,29 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Conversions:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0.0693\,\text{m} = 6.93\,\text{cm}$
 **Answer:** $6.93\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
-**Reasonableness:** The echo travels $$\begin{aligned} &1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} \\ &= 13.9\,\text{cm} \end{aligned}$$, half of which is $6.9\,\text{cm}$. A femur lying about seven centimetres below the skin is sensible, deeper than the boundaries of echoes A and B.
+**Reasonableness:** The echo travels $1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} = 13.9\,\text{cm}$, half of which is $6.9\,\text{cm}$. A femur lying about seven centimetres below the skin is sensible, deeper than the boundaries of echoes A and B.
+
+## fy5-17-L2-10
+**Given:** the time, place, depth and magnitude of the earthquake chosen from the source material (part a); $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$ and the distance $d = 100\,\text{km}$ (part c)
+**Find:** a) the location and strength of the chosen earthquake, b) the differences between the P wave and the S wave, c) the difference in arrival times $\Delta t$ in seconds, d) the principle of locating
+**Principle:** The P wave and the S wave leave the earthquake at the same moment and travel the same distance to the station but at different speeds. At a constant speed the travel time is the distance divided by the speed, so the slower S wave falls further behind the P wave the longer the distance is. That is why the difference in arrival times tells the length of the distance.
+**Part a):** From the source material we read the date, municipality, coordinates, depth and magnitude of the chosen earthquake. The location is described with the municipality and the coordinates and the strength with the magnitude.
+
+Example, material read on 15 November 2026: earthquake number $149$ in the subpage’s table for the year 2026 occurred on 10 November 2026 at 01:34 UTC in Orivesi, in the region of Pirkanmaa. The coordinates in the table are $61.754{}^\circ$ north latitude and $24.361{}^\circ$ east longitude, that is, about $61.8{}^\circ\,\text{N}$ and $24.4{}^\circ\,\text{E}$. The earthquake began at a depth of about $18\,\text{km}$ ($18.3\,\text{km}$ in the table). Its magnitude was $1.0$.
+
+According to the institute’s Finnish page, earthquakes in Finland are weak, with magnitudes $0\text{–}4$, so this earthquake belongs to the weaker end even among the earthquakes of Finland. Seismometers recorded it, but the material does not say whether people noticed it.
+
+The heading of the 2026 table has an asterisk: results that are not yet in the Northern European earthquake catalogue (FENCAT) are preliminary analysis results, so the values may still be refined. Another earthquake or a later reading gives different values.
+**Part b):** The P wave is a longitudinal wave: the material oscillates in the direction in which the wave travels, and compressions and rarefactions move along with the wave. The S wave is a transverse wave: the material oscillates perpendicular to the direction of travel. The P wave is faster, so it arrives at the station first and the S wave after it. The P wave travels both in a solid and in a liquid. The S wave travels only in a solid, because in a liquid neighbouring layers slide past each other and no force restores them.
+**Formula:** Part c): in uniform motion $v = \dfrac{d}{t}$, so the travel times are $t_\text{P} = \dfrac{d}{v_\text{P}}$ and $t_\text{S} = \dfrac{d}{v_\text{S}}$. The difference in arrival times is the difference of the travel times: $\Delta t = t_\text{S} - t_\text{P} = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$
+**Conversions:** The distance is in kilometres and the speeds in km/s, so the kilometres cancel and the time comes out directly in seconds. No conversions are needed.
+**Substitution:** $\Delta t = \dfrac{100\,\text{km}}{3.5\,\text{km/s}} - \dfrac{100\,\text{km}}{6.0\,\text{km/s}} = 28.571\,\text{s} - 16.667\,\text{s} = 11.905\,\text{s}$
+**Answer:** $\Delta t \approx 12\,\text{s}$. One second of S–P time difference corresponds to a distance of $100\,\text{km} / 11.905\,\text{s} \approx 8.4\,\text{km}$. The result is given to two significant figures, because the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$ have two significant figures; the distance $100\,\text{km}$ of the exercise has three, so it does not limit the precision.
+**Reasonableness:** The travel time of the P wave is about $16.7\,\text{s}$ and that of the S wave about $28.6\,\text{s}$, so the S wave arrives later, as the slower wave should. According to the chapter, at these speeds one second of time difference corresponds to a distance of $8.4\,\text{km}$, and $100\,\text{km} : 8.4\,\text{km/s} = 11.9\,\text{s}$ gives the same result.
+**Part d):** A station does not know when the earthquake occurred, but it measures the difference in the arrival times of the S wave and the P wave. The distance is solved from the equation of part c): $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. At the speeds of part c) $100\,\text{km}$ corresponds to a difference of $11.9\,\text{s}$, so each second of time difference corresponds to a distance of about $8.4\,\text{km}$.
+
+One station thus finds out only the distance, not the direction: the earthquake can be at any point of a circle around the station. The circles of two stations usually intersect at two points, and only the circle of a third station shows which of them is the right one. That is why at least three stations are needed.
+
+In reality an earthquake begins deep inside the ground and the speeds of the waves vary in the crust, so the constant-speed model gives only an estimate. With many stations the depth is found as well and the effect of measurement errors becomes smaller.
+
+According to the source material (the institute’s Finnish page), Finland has over $40$ permanent stations and the uncertainty of the location is from a few hundred metres to two kilometres. At these speeds a difference of two kilometres in the distance corresponds to only about $0.24\,\text{s}$ in the time difference, so the arrival times must be read precisely.

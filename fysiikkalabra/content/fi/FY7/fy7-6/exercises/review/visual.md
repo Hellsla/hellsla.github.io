@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a7bd01372641e3fc
-SCOPE: delta added-exercise from 8b13af556f7aa21c base 8f23aa7ae3bd
+CONTENT-HASH: 8bf96838ab2212ae
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 6-17/L3-06 solutions — '(neljäs ruudukon viiva ylöspäin, kun väli on $0{,}1\,\text{N}$)' wraps awkwardly; fine otherwise.
+- [Minor] L3-06 solution — '(neljäs ruudukon viiva ylöspäin, …)' wraps awkwardly (earlier note stands).
 
 ## Checked
-- fy7-6 L2 captures 11-12 (6-17 graph, solution) and L3 capture 9 (L3-06 solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Delta (reflow): Q = 100,8 kJ chain, 0,075 W check, P = 26,80 mW chain, mgh − ½mv² chain (six rows), a = 2,652 m/s² chain, the second-point check 1,6 N·s/m; captions without the example-data marker (teacher's approval 2026-11-15).
+- Own captures of these opened solutions from the current preview at 390 px, read at full size; formula overflow measured at 360, 390 and 1280 px: none.
+- Rows start with a relation, a minus sign or between whole quantities. Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

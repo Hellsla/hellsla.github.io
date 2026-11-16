@@ -51,7 +51,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Kokonaismomentti kuorman suuntaan on enintään raja: $$\\begin{aligned} &m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} \\\\ &= 600\\,\\text{kNm} \\end{aligned}$$, ratkaistuna $m$:n suhteen."
+              "detail": "Kokonaismomentti kuorman suuntaan on enintään raja: $m g r_\\text{max} + m_\\text{p} g r_\\text{p} - m_\\text{v} g r_\\text{v} = 600\\,\\text{kNm}$, ratkaistuna $m$:n suhteen."
             },
             {
               "key": "calculation",
@@ -252,7 +252,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$$\\begin{aligned} r &\\approx 1{,}6 \\cdot 10^{8}\\,\\text{m} \\\\ &= 160\\,000\\,\\text{km} \\end{aligned}$$"
+              "detail": "$r \\approx 1{,}6 \\cdot 10^{8}\\,\\text{m} = 160\\,000\\,\\text{km}$"
             }
           ]
         },
@@ -507,7 +507,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} v' &= 343\\,\\text{m/s} - 12 \\cdot 0{,}6\\,\\text{m/s} \\\\ &= 335{,}8\\,\\text{m/s} \\end{aligned}$$ ja $f' \\approx 244{,}8\\,\\text{Hz}$"
+              "detail": "$v' = 343\\,\\text{m/s} - 12 \\cdot 0{,}6\\,\\text{m/s} = 335{,}8\\,\\text{m/s}$ ja $f' \\approx 244{,}8\\,\\text{Hz}$"
             },
             {
               "key": "units_precision",

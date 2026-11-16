@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5cb4d86d56728236
+CONTENT-HASH: 28a3b421e466f8b3
+SCOPE: delta added-exercise from 9cc21f77dd6113db base 71f5784fca44
 
 ## Blocking
 
 ## Polish
-- exercises.json (fy3-11-L2-04) — "480 kW" alone does not show that its final zero is significant; the solution now declares it so. Acceptable, but the task could make it unambiguous (e.g. $480\,\text{kW}$ with "kolmen numeron tarkkuudella", or $0{,}480\,\text{MW}$).
-- Earlier polish points (P_o named once, answers.py docstring, L3-04 Q₁, L2-09 stroke) remain optional.
+- exercises/solutions.md (fy3-11-L2-10, c) — "Ilma-vesilämpöpumpussa vaikutus on kaksinkertainen" can be read as "twice as large". What is meant is that two causes act together: colder outdoor air and warmer heating water. Optional: "vaikuttaa kaksi tekijää yhtä aikaa".
+- Same c) — "Kovalla pakkasella lämpökerroin lähestyy arvoa 1": the source gives COP 1–2 at about −25 °C for a newish pump and the electric-heating level for older ones. Optional: "voi pudota lähelle arvoa 1" to keep it as the source says.
 
 ## Checked
-- Delta: L2-04 Periaate, L2-04 Vastaus, L3-01 Vastaus typo ("polttoatehon" → "polttoainetehon"), L3-02 Periaate.
-- L2-04 recomputed: P_o = 480/0,400 = 1200 kW, P_hukka = 720 kW; answer 720, tolerance 0,02 unchanged.
-- L2-04 rounding now three figures (480 kW read as three, 40,0 %), which matches 720 kW as given; the old reason ("two first figures certain") was self-contradictory. fi-easy and en solutions give the same three-figure reason, so the languages agree.
-- L3-01 keeps two figures from 96 MW; ΔP = 240 + 200 − 320 = 120 MW unchanged.
-- "hukkalämpöön, joka siirtyy ympäristöön" (L2-04, L3-02): energy conservation stated right, the waste heat leaves to the surroundings, matching the L2-04 question (pakokaasut, jäähdytysvesi) and the heat-engine model; no "heat created" picture.
-- L3-02 W = ηQ₁ and P = ηρVH/t unchanged.
-- No numbers, symbols or answers.py changed; hash 5cb4d86d56728236 the same at start and end.
+- b) recomputed: Q₁ = εW = 4,0 · 2,5 kWh = 10 kWh and Q₂ = Q₁ − W = (ε − 1)W = 7,5 kWh. Both are two figures; the answer is 7,5 kWh with tolerance 0,02. The chain starts from energy conservation Q₁ = Q₂ + W and ε = Q₁/W, then solves symbolically. Symbols Q₁, Q₂, W, ε as in the brief's heat-pump formula.
+- a) the lämpökerroin is not an efficiency, because Q₂ is not in the denominator. Efficiency ≤ 100 %, and a resistance heater's is practically 100 %. "hyötysuhde 300 prosenttia" is called imprecise for the right reason. This matches the guardrail and the glossary.
+- c) a larger temperature difference means more electrical work per unit of heat, so ε falls. Warmer heating water in frost, COP 1–2 at −25 °C, and ε = 1 → Q₂ = 0 like a resistance heater. All right and consistent with the source facts.
+- d) the claim is false: the balance closes (2,5 + 7,5 = 10 kWh), and the error is leaving out the outdoor heat. Right; no "energy created" picture.
+- Järkevyys: the 75 % share, the 2,5 kWh for a resistance heater, and the limit that one instantaneous COP does not give the yearly consumption (source: yearly COP 1,4–3). Correct and quoted within the facts.
+- Source quotations (COP definition, smaller temperature difference, −25 °C, 1,4–3) match the verified document text.
+- Inside FY3 (energy conservation, heat pump as in the lesson; no cycle analysis).
+- Hash the same at start and end.

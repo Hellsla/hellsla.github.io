@@ -3,8 +3,11 @@
   "contribution": "Gravitaatio yleistyy painosta kaikkien kappaleiden väliseksi vuorovaikutukseksi: Newtonin gravitaatiolaki $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, voimien yhtäsuuruus ja kiihtyvyyksien ero, gravitaatiokentän voimakkuus $g = \\gamma \\tfrac{M}{r^2}$ putoamiskiihtyvyytenä taivaankappaleilla sekä gravitaation rooli maailmankaikkeuden rakenteiden synnyssä. Ratanopeudet jäävät seuraavaan lukuun.",
   "learn": [
     "vertailemaan kahden toisiaan vetävän kappaleen voimia ja kiihtyvyyksiä.",
-    "laskemaan gravitaatiovoiman ja gravitaatiokentän voimakkuuden Newtonin gravitaatiolain avulla.",
+    "laskemaan gravitaatiovoiman Newtonin gravitaatiolain avulla.",
     "selittämään, miten gravitaatio kokoaa ainetta tähdiksi, planeetoiksi ja galakseiksi."
+  ],
+  "deepen": [
+    "laskemalla gravitaatiokentän voimakkuuden Maan ja muiden taivaankappaleiden pinnalla."
   ],
   "prior": [
     "Vuorovaikutuksessa kappaleet vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
@@ -241,7 +244,7 @@
             "feedback": "Etäisyys on jäänyt kilometreiksi, eikä tulosta ole muunnettu yksikköön $\\text{mm/s}^2$. Muunna $r = 384\\,400\\,\\text{km} = 3{,}844 \\cdot 10^{8}\\,\\text{m}$ ennen sijoitusta."
           }
         ],
-        "solution": "**Annettu:** Kuun keskietäisyys $r = 384\\,400\\,\\text{km}$, kiertoaika $T = 27{,}32\\,\\text{vrk}$; vertailuun $g = 9{,}80\\,\\text{m/s}^2$ ja $R = 6378\\,\\text{km}$\n\n**Kysytty:** Kuun normaalikiihtyvyys $a_\\text{n}$ yksikössä $\\text{mm/s}^2$\n\n**Periaate:** Kuu kiertää Maata lähes tasaisella vauhdilla lähes ympyrärataa, joten sillä on normaalikiihtyvyys kohti Maan keskipistettä. Ratanopeus saadaan yhden kierroksen matkasta ja ajasta.\n\n**Kaava:** $a_\\text{n} = \\tfrac{v^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$, josta $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Muunnokset:** $r = 384\\,400\\,\\text{km} = 3{,}844 \\cdot 10^{8}\\,\\text{m}$; $T = 27{,}32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2{,}3604 \\cdot 10^{6}\\,\\text{s}$; lopuksi $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Sijoitus:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3{,}844 \\cdot 10^{8}\\,\\text{m}}{(2{,}3604 \\cdot 10^{6}\\,\\text{s})^2} = 2{,}724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2{,}724\\,\\text{mm/s}^2$\n\n**Vastaus:** $2{,}72\\,\\text{mm/s}^2$, kolme merkitsevää numeroa kuten etäisyydessä ja kiertoajassa.\n\n**Järkevyys:** Neliölain ennuste on $$\\begin{aligned} &g \\cdot \\left(\\tfrac{R}{r}\\right)^2 \\\\ &= 9{,}80\\,\\text{m/s}^2 \\\\ &\\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\\\ &\\approx 2{,}70\\,\\text{mm/s}^2 & \\end{aligned}$$. Arvot eroavat alle prosentin, joten sama Maan veto, joka saa omenan putoamaan, riittää selittämään Kuun liikkeen."
+        "solution": "**Annettu:** Kuun keskietäisyys $r = 384\\,400\\,\\text{km}$, kiertoaika $T = 27{,}32\\,\\text{vrk}$; vertailuun $g = 9{,}80\\,\\text{m/s}^2$ ja $R = 6378\\,\\text{km}$\n\n**Kysytty:** Kuun normaalikiihtyvyys $a_\\text{n}$ yksikössä $\\text{mm/s}^2$\n\n**Periaate:** Kuu kiertää Maata lähes tasaisella vauhdilla lähes ympyrärataa, joten sillä on normaalikiihtyvyys kohti Maan keskipistettä. Ratanopeus saadaan yhden kierroksen matkasta ja ajasta.\n\n**Kaava:** $a_\\text{n} = \\tfrac{v^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$, josta $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Muunnokset:** $r = 384\\,400\\,\\text{km} = 3{,}844 \\cdot 10^{8}\\,\\text{m}$; $T = 27{,}32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2{,}3604 \\cdot 10^{6}\\,\\text{s}$; lopuksi $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Sijoitus:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3{,}844 \\cdot 10^{8}\\,\\text{m}}{(2{,}3604 \\cdot 10^{6}\\,\\text{s})^2} = 2{,}724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2{,}724\\,\\text{mm/s}^2$\n\n**Vastaus:** $2{,}72\\,\\text{mm/s}^2$, kolme merkitsevää numeroa kuten etäisyydessä ja kiertoajassa.\n\n**Järkevyys:** Neliölain ennuste on $$\n\\begin{aligned}\n&g \\cdot \\left(\\tfrac{R}{r}\\right)^2 \\\\\n&= 9{,}80\\,\\text{m/s}^2 \\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\\\\n&\\approx 2{,}70\\,\\text{mm/s}^2\n\\end{aligned}\n$$. Arvot eroavat alle prosentin, joten sama Maan veto, joka saa omenan putoamaan, riittää selittämään Kuun liikkeen."
       }
     },
     {
@@ -297,9 +300,9 @@
       "id": "etsi-virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laski gravitaatiokentän voimakkuuden $300\\,\\text{km}$:n korkeudella Maan pinnasta näin: $$\\begin{aligned} g &= \\gamma \\tfrac{M}{r^2} \\\\ &= 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\\\ &\\cdot \\tfrac{5{,}97 \\cdot 10^{24}\\,\\text{kg}}{(3{,}0 \\cdot 10^{5}\\,\\text{m})^2} \\\\ &\\approx 4400\\,\\text{m/s}^2 & \\end{aligned}$$. Mikä ratkaisussa on vialla?",
+      "prompt": "Opiskelija laski gravitaatiokentän voimakkuuden $300\\,\\text{km}$:n korkeudella Maan pinnasta näin: $g = \\gamma \\tfrac{M}{r^2} = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5{,}97 \\cdot 10^{24}\\,\\text{kg}}{(3{,}0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. Mikä ratkaisussa on vialla?",
       "choices": [
         {
           "text": "Etäisyys mitataan Maan keskipisteestä, joten $r = 6378\\,\\text{km} + 300\\,\\text{km}$.",
@@ -325,26 +328,26 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Avaruusluotain nousee suoraan ylöspäin Maan pinnalta. Kuinka korkealla Maan pinnan yläpuolella Maan gravitaatiokentän voimakkuus on puolet sen arvosta Maan pinnalla? Maan säde on $6378\\,\\text{km}$. Anna vastaus kilometreinä.",
+      "prompt": "Avaruusluotain, jonka massa on $m$, nousee suoraan ylöspäin Maan pinnalta. Kuinka korkealla Maan pinnan yläpuolella Maan luotaimeen kohdistama gravitaatiovoima on puolet sen arvosta Maan pinnalla? Maan säde on $6378\\,\\text{km}$. Anna vastaus kilometreinä.",
       "answer": 2640,
       "unit": "km",
       "tolerance": 0.02,
       "hints": [
-        "Miten kentän voimakkuus riippuu etäisyydestä $r$ Maan keskipisteestä? Kirjoita ehto $g(r) = \\tfrac{1}{2} g(R)$ kaavan $g = \\gamma \\tfrac{M}{r^2}$ avulla.",
-        "$\\gamma \\tfrac{M}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M}{R^2}$, josta $r^2 = 2R^2$ eli $r = \\sqrt{2}\\,R$. Korkeus pinnasta on $h = r - R$.",
+        "Miten gravitaatiovoima riippuu etäisyydestä $r$ Maan keskipisteestä? Kirjoita ehto $F(r) = \\tfrac{1}{2} F(R)$ gravitaatiolain $F = \\gamma \\tfrac{M m}{r^2}$ avulla.",
+        "$\\gamma \\tfrac{M m}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M m}{R^2}$, josta $r^2 = 2R^2$ eli $r = \\sqrt{2}\\,R$. Korkeus pinnasta on $h = r - R$.",
         "$h = (\\sqrt{2} - 1) R = 0{,}4142 \\cdot 6378\\,\\text{km}$."
       ],
       "mistakes": [
         {
           "value": 6378,
-          "feedback": "Kaksinkertainen etäisyys keskipisteestä, $r = 2R$, pienentäisi kentän neljäsosaan, koska $g \\propto \\tfrac{1}{r^2}$. Puolet saadaan, kun $r^2 = 2R^2$."
+          "feedback": "Kaksinkertainen etäisyys keskipisteestä, $r = 2R$, pienentäisi voiman neljäsosaan, koska $g \\propto \\tfrac{1}{r^2}$. Puolet saadaan, kun $r^2 = 2R^2$."
         },
         {
           "value": 9020,
           "feedback": "Laskit etäisyyden $r = \\sqrt{2}\\,R$ Maan keskipisteestä. Kysytään korkeutta pinnan yläpuolella: vähennä Maan säde."
         }
       ],
-      "solution": "**Annettu:** Maan säde $R = 6378\\,\\text{km}$; kentän voimakkuus korkeudella $h$ on puolet pinnan arvosta\n\n**Kysytty:** korkeus $h$ Maan pinnasta kilometreinä\n\n**Periaate:** Maan gravitaatiokentän voimakkuus on $g = \\gamma \\tfrac{M}{r^2}$, missä $r$ on etäisyys Maan keskipisteestä, koska Maa vetää kuin sen massa olisi keskipisteessä. Pinnalla $r = R$, korkeudella $h$ taas $r = R + h$. Maan massaa ei tarvita, koska se supistuu pois.\n\n**Kaava:** $\\gamma \\dfrac{M}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M}{R^2}$, josta $(R + h)^2 = 2R^2$ ja $h = (\\sqrt{2} - 1) R$\n\n**Muunnokset:** Ei tarvita: säde on kilometreinä, ja vastaus pyydetään kilometreinä.\n\n**Sijoitus:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0{,}41421 \\cdot 6378\\,\\text{km} = 2641{,}9\\,\\text{km}$\n\n**Vastaus:** $2640\\,\\text{km}$ kolmen merkitsevän numeron tarkkuudella; säteen neljällä numerolla tulos olisi $2642\\,\\text{km}$.\n\n**Järkevyys:** Tarkistus: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0{,}500$. Korkeus on pienempi kuin Maan säde, mikä sopii siihen, että kaksinkertainen etäisyys keskipisteestä pienentäisi kentän jo neljäsosaan."
+      "solution": "**Annettu:** Maan säde $R = 6378\\,\\text{km}$; Maan luotaimeen kohdistama gravitaatiovoima korkeudella $h$ on puolet pinnan arvosta\n\n**Kysytty:** korkeus $h$ Maan pinnasta kilometreinä\n\n**Periaate:** Gravitaatiolain mukaan luotaimeen kohdistuva voima on $F = \\gamma \\tfrac{M m}{r^2}$, missä $r$ on etäisyys Maan keskipisteestä, koska Maa vetää kuin sen massa olisi keskipisteessä. Pinnalla $r = R$, korkeudella $h$ taas $r = R + h$. Maan massaa ja luotaimen massaa ei tarvita, koska ne supistuvat pois.\n\n**Kaava:** $\\gamma \\dfrac{M m}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M m}{R^2}$, josta $(R + h)^2 = 2R^2$ ja $h = (\\sqrt{2} - 1) R$\n\n**Muunnokset:** Ei tarvita: säde on kilometreinä, ja vastaus pyydetään kilometreinä.\n\n**Sijoitus:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0{,}41421 \\cdot 6378\\,\\text{km} = 2641{,}9\\,\\text{km}$\n\n**Vastaus:** $2640\\,\\text{km}$ kolmen merkitsevän numeron tarkkuudella; säteen neljällä numerolla tulos olisi $2642\\,\\text{km}$.\n\n**Järkevyys:** Tarkistus: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0{,}500$. Korkeus on pienempi kuin Maan säde, mikä sopii siihen, että kaksinkertainen etäisyys keskipisteestä pienentäisi voiman jo neljäsosaan."
     },
     {
       "id": "harjoitukset",

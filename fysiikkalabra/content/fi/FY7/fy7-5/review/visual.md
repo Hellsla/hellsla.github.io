@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: bb4b6b5b410a9a8f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 98fad472744e5c73
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "ja silloin merkitään lyhyesti $e$" → "ja silloin sitä merkitään lyhyesti $e$:llä"; inquiry model "…koska vuo muuttui tasaisesti: sama vuon muutos…" — the colon explains the wrong clause; use a full stop.
+
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Hash identical at start and end of this round.
+- batch delta review, round 2: fresh preview/fy7-5.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-5-lesson-360-s*.png, fy7-5-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; `virhe` is the conversion row and the |e| chain again (two equations, aligned); the model answer of `johtopaatos` now wraps before "= −20 mWb" at 360 px and nothing is cut; the feedback's |e| block, the `siirto` hint and `tarkistus-2` rows start with · : or = only; nothing clipped. Hash the same at the start and the end.

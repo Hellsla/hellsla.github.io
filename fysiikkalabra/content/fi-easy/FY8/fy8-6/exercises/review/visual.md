@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36b14526dfed3d4f
-SCOPE: delta reflow from b9c3e0d18fbc45bb base 56362aafa0
+CONTENT-HASH: 3f3114ccfa6f8f33
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Opened fy8-6 open-exercises-1280-1 (1240 eV nm : 605 nm row) and L2-1280-8/9 (three-row e U_k lambda products, = and dot rows aligned, readable, nothing clipped).
-- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.
+- Delta: sisäenergiaksi, threshold-voltage remark. Captures opened (open-exercises-L2 parts, 1280 px): formulas render, no clipping or red KaTeX, text reads naturally.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

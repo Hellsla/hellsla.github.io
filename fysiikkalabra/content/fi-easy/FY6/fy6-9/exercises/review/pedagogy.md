@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c464157cc013fdd3
+CONTENT-HASH: 36c2c5b745ea76ef
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- solutions.md L1 (3000 mAh to C) — "neljä merkitsevää numeroa kuten 3000 mAh" treats trailing zeros as significant, while 40 kWh and 90 W elsewhere count as two figures; a phone battery rating is not four-figure data. Fix: keep $1{,}1 \cdot 10^{4}\,\text{C}$ (two figures) or state in the task that the capacity is given to four figures.
-- solutions.md charging-resistance task — Vastaus is $0{,}2\,\Omega$ but Järkevyys still checks with $0{,}20\,\Omega$; fix: write "$0{,}2\,\Omega$ (tarkemmin $0{,}20\,\Omega$)" in the check.
+- fy6-9-L2-09 d): the Tukes page could not be checked (known); the solution says to verify the wording, and any two instructions are accepted. Only a- and b) are fully material-independent, so the task is partly a standard calculation; acceptable at level 2.
+- The d) solution is very long (three examples); consider trimming the third (cold battery) which it says is out of scope.
+- c) solution first says 120 W goes into the battery, then that power is not constant: clear enough, but one sentence linking the two would help.
 
 ## Checked
-- 4,7 · 10^2 Wh eli 0,47 kWh: correct for 36 V · 13 Ah = 468 Wh.
-- Rounding of 1,0 Ω − 0,80 Ω to one decimal follows the subtraction rule and is explained.
-- 1,5 Wh justified by two-figure current and time; the explanation is correct and followable.
+New task against section 6: 36 V x 14 Ah = 504 Wh = 1.8 MJ, 4.2 h verified; c) and d) reason with chapter physics (internal resistance, charger voltage); terms (kenno, oikosulku, häviö) explained; set mix unchanged.

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 58b94744514c92ce
+CONTENT-HASH: 96d603d38bea9bcb
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] proof sheet 1 #3: the row break leaves `v` alone on the first row and `= √…` on the next; readable, but `v = √…` on one row would be tidier.
 
 ## Checked
-- batch delta review: named formula block V = Ep/q, Ep = qV and the work formula in theory-1280-2 (aligned, readable), caption of lightning photo, fig-row-1280, theory-1280-3/4; new text and units LaTeX.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-12-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

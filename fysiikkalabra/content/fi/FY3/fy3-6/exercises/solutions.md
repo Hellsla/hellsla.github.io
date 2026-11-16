@@ -81,7 +81,7 @@
 **Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi, koska massa on sekä osoittajassa että nimittäjässä ja yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8{,}0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77{,}6\,{}^\circ\text{C}$
 **Vastaus:** $78\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpötilassa $95\,{}^\circ\text{C}$ ja massassa $40\,\text{g}$.
-**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta, koska kuumaa vettä on neljä kertaa enemmän. Energiatase toteutuu: $160\,\text{g} \cdot 17{,}4\,\text{K} = 40\,\text{g} \cdot 69{,}6\,\text{K}$.
+**Järkevyys:** Tulos on alkulämpötilojen välissä ja lähellä $95\,{}^\circ\text{C}$:ta, koska kuumaa vettä on neljä kertaa enemmän. Energiatase toteutuu: $$\begin{aligned} &160\,\text{g} \cdot 17{,}4\,\text{K} \\ &= 40\,\text{g} \cdot 69{,}6\,\text{K} \end{aligned}$$.
 
 ## fy3-6-L2-02
 **Annettu:** teho $P = 100\,\text{W}$, kappaleen massa $m = 0{,}50\,\text{kg}$, lämpötila ajan funktiona kuvaajassa; kaikki lämmittimen energia siirtyy kappaleeseen
@@ -108,7 +108,7 @@
 **Annettu:** alumiini $m_1 = 0{,}25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; vesi $m_2 = 0{,}40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; taulukosta $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** yhteinen loppulämpötila $T$
 **Periaate:** Energia säilyy: kauhan luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, ja lopussa molemmilla on sama lämpötila. Aineet ovat eri, joten ominaislämpökapasiteetit eivät supistu.
-**Kaava:** $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
+**Kaava:** $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
 **Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ ja $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27{,}11\,{}^\circ\text{C}$
 **Vastaus:** $27\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massoissa.
@@ -140,7 +140,7 @@
 **Annettu:** vesi $m_\text{v} = 0{,}50\,\text{kg}$, $T_\text{v} = 20\,{}^\circ\text{C}$; kupari $m_\text{k} = 0{,}20\,\text{kg}$, $T_\text{k} = 100\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $c_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** a) oppilaan virhe; b) tasapainolämpötila $T$
 **Periaate:** Eristetyssä astiassa kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Oppilaan keskiarvo olisi oikein vain, jos kappaleiden lämpökapasiteetit $c m$ olisivat yhtä suuret. Nyt veden lämpökapasiteetti on moninkertainen kuparin kapasiteettiin verrattuna, joten tasapainolämpötila on lähellä veden alkulämpötilaa, ei puolivälissä.
-**Kaava:** $c_\text{k} m_\text{k} (T_\text{k} - T) = c_\text{v} m_\text{v} (T - T_\text{v})$, joten $T = \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}$
+**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, joten $T = \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}$
 **Muunnokset:** Lämpökapasiteetit ovat $c_\text{k} m_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ ja $c_\text{v} m_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. Lämpötilat voi sijoittaa celsiusasteina, koska tulos on painotettu keskiarvo.
 **Sijoitus:** Osoittaja on $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ ja nimittäjä $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22{,}84\,{}^\circ\text{C}$
 **Vastaus:** $23\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja lämpötilassa $20\,{}^\circ\text{C}$.
@@ -149,7 +149,7 @@
 ## fy3-6-L2-08
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
 **Periaate:** Lämpömäärä on $Q = c m \Delta T$, missä $\Delta T$ on loppulämpötila miinus alkulämpötila. Jäähtyessä $\Delta T$ ja $Q$ ovat negatiivisia, ja miinusmerkki kertoo, että kappale luovuttaa energiaa ympäristöön. Laskun voi tarkistaa rivi riviltä: lämpötilan muutos, kaava, sijoitus ja tuloksen tulkinta.
-**Mallivastaus:** Rivi 1: $\Delta T = 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} = -180\,\text{K}$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
+**Mallivastaus:** Rivi 1: $$\begin{aligned} \Delta T &= 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} \\ &= -180\,\text{K} \end{aligned}$$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
 Rivi 2: $Q = c m \Delta T$ on oikein, koska levyn olomuoto ei muutu.
 Rivi 3: $450 \cdot 3{,}0 = 1350$ ja $1350 \cdot (-180) = -243\,000$, joten $Q = -243\,000\,\text{J}$ on oikein.
 Rivi 4 on väärin, koska negatiivinen lämpömäärä on mahdollinen: se kertoo, että levy luovuttaa energiaa.
@@ -160,7 +160,7 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Annettu:** vesi $m_\text{v} = 20\,\text{kg}$, $T_\text{v} = 10\,{}^\circ\text{C}$, tavoite $T = 40\,{}^\circ\text{C}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kivet $T_\text{k} = 300\,{}^\circ\text{C}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei häviöitä eikä höyrystymistä
 **Kysytty:** kivien massa $m_\text{k}$
 **Periaate:** Energia säilyy: kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa, joten kivet jäähtyvät $40\,{}^\circ\text{C}$:seen asti, eivät $0\,{}^\circ\text{C}$:seen.
-**Kaava:** $c_\text{k} m_\text{k} (T_\text{k} - T) = c_\text{v} m_\text{v} (T - T_\text{v})$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
+**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\text{v} = 30\,\text{K}$ ja $T_\text{k} - T = 260\,\text{K}$. Muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $m_\text{k} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12{,}09\,\text{kg}$
 **Vastaus:** $12\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{kg}$.
@@ -233,3 +233,29 @@ Samoin muille väleille: lämpömäärät ovat $16{,}2$, $12{,}7$, $9{,}05$, $7{
 **Sijoitus:** $Q_\text{luov} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3{,}0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69{,}3\,\text{kJ} \approx 69\,\text{kJ}$
 **Vastaus:** $69\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $3{,}0\,\text{kg}$ ja $60\,\text{K}$. Kuvan arvo $385$ luetaan suoraan pylvään vierestä, joten hyväksytään $67{,}2\ldots71{,}4\,\text{kJ}$.
 **Järkevyys:** Jos putki olisi vettä, sama lämpömäärä jäähdyttäisi sitä vain noin $\dfrac{69\,300\,\text{J}}{4190 \cdot 3{,}0} \approx 5{,}5\,\text{K}$. Kuparin $c$ on veden $c$:stä vain noin kymmenesosa, joten kuparista irtoaa kilogrammaa kohti vähän lämpöä.
+
+## fy3-6-L2-10
+**Annettu:** Aineistosta: artikkelin mukaan ”On mahdollista saada aikaan olosuhteet, joissa kuuma vesi jäätyy nopeammin kuin kylmä.” Artikkeli kutsuu ilmiötä Mpemba-efektiksi. Haastateltu fysiikan professori selittää sitä lähinnä haihtumisella laakeassa astiassa ja mainitsee myös veden virtaukset, liuenneet kaasut ja epäpuhtaudet. Lämpötiloja, vesimääriä tai mitattuja aikoja artikkelissa ei ole. Tehtävästä: $m = 0{,}50\,\text{kg}$, $T_1 = 80\,{}^\circ\text{C}$, $T_2 = 0\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; vettä ei haihdu.
+**Kysytty:** a) ilmiö ja sen ristiriita arkikokemuksen kanssa; b) veden luovuttama lämpömäärä $Q_\text{luov}$ kilojouleina; c) haihtumisen, astian ja koeolosuhteiden vaikutus jäätymisaikaan; d) koesuunnitelma
+**Periaate:** Kun olomuoto ei muutu, kappaleen luovuttaman lämpömäärän suuruus on $cm\left|\Delta T\right|$. Vesi pysyy nesteenä koko välin $80\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$, joten laki sopii jäähtymiseen jäätymispisteeseen asti. Itse jäätymistä se ei kuvaa: jäätyessään vesi luovuttaa vielä lisää energiaa, vaikka lämpötila ei muutu (luku *Olomuodon muutokset*).
+**Kaava:** $Q = cm\Delta T$, joten luovutetun lämpömäärän suuruus on $Q_\text{luov} = cm\left|\Delta T\right|$
+**Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\left|\Delta T\right| = 80\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned} Q_\text{luov} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \\ &\cdot 80\,\text{K} \\ &= 167\,600\,\text{J} \\ &\approx 170\,\text{kJ} \end{aligned}$$
+**Vastaus:** b) $170\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$ ja lämpötilassa $80\,{}^\circ\text{C}$.
+
+a) Artikkelin mukaan kuuma vesi voi joissakin olosuhteissa jäätyä nopeammin kuin kylmä. Arkikokemus sanoo päinvastaista: kuuman veden on ensin jäähdyttävä kylmän veden lämpötilaan, ja siihen kuluu aikaa. Laskun mukaan kuuman veden on luovutettava $170\,\text{kJ}$, ennen kuin jäätyminen voi edes alkaa. Otsikko esittää asian yleisenä tosiasiana, mutta itse teksti rajaa sen erityisiin olosuhteisiin.
+
+c) Haihtuminen vaikuttaa kahdella tavalla. Haihtuva vesi vie mukanaan energiaa, joten jäljelle jäävä vesi jäähtyy nopeammin. Lisäksi veden massa pienenee, ja $Q = cm\Delta T$ on suoraan verrannollinen massaan: pienemmän vesimäärän on luovutettava vähemmän energiaa. Kuumasta vedestä haihtuu paljon enemmän kuin kylmästä. Astia vaikuttaa siihen, kuinka nopeasti energia siirtyy: laakeassa astiassa pinta-ala on suuri, kansi estää haihtumisen, ja metalli johtaa lämpöä paremmin kuin muovi. Myös astia itse jäähtyy, ja sen lämpökapasiteetti on $C = cm$. Olosuhteista vaikuttavat pakastimen lämpötila, ilman liike ja astian alusta. Kuuma astia voi esimerkiksi sulattaa alleen huurretta ja saada paremman kosketuksen kylmään hyllyyn.
+
+d) Otetaan kaksi samanlaista astiaa ja kumpaankin sama massa vettä samasta hanasta, esimerkiksi $0{,}20\,\text{kg}$. Toisen näytteen alkulämpötila on esimerkiksi $80\,{}^\circ\text{C}$ ja toisen $20\,{}^\circ\text{C}$. Astiat pannaan samaan pakastimeen samanlaiselle alustalle. Mitataan veden lämpötila ajan funktiona, aika jäätymiseen ja veden massa ennen koetta ja sen jälkeen. Vakioidaan veden massa ja laatu, astian muoto ja materiaali, paikka pakastimessa ja pakastimen lämpötila. Ennen koetta päätetään, mitä jäätyminen tarkoittaa (ensimmäiset jääkiteet vai kokonaan kiinteä). Muutetaan yhtä tekijää kerrallaan, esimerkiksi kansi päällä ja ilman kantta, ja toistetaan koe useita kertoja.
+**Järkevyys:** Vertailu: sama vesimäärä lämpötilasta $20\,{}^\circ\text{C}$ luovuttaa jäähtyessään jäätymispisteeseen vain neljäsosan tästä.
+
+$$\begin{aligned} Q_{20} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \\ &\cdot 20\,\text{K} \\ &= 41\,900\,\text{J} \end{aligned}$$
+
+Kuuman veden on siis luovutettava enemmän, ja erotus on
+
+$$\begin{aligned} \Delta Q &= 167\,600\,\text{J} - 41\,900\,\text{J} \\ &= 125\,700\,\text{J} \end{aligned}$$
+
+Siksi ilmiö vaatii jotakin, mikä muuttaa vertailua, kuten haihtumisen. Malli $Q = cm\Delta T$ ei kerro aikaa, koska aika riippuu siitä, kuinka nopeasti energia siirtyy. Artikkelissa ei ole mittaustuloksia, eivätkä tutkijat ole yksimielisiä siitä, milloin ilmiö esiintyy. Ilmiö on siis mahdollinen, mutta sitä ei ole varmistettu yleiseksi säännöksi.

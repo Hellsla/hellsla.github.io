@@ -472,7 +472,7 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 Kolme virhettä toistuu usein:
 
 - **Kääntäen verrannollisuus ei ole laskeva suora.** Kun tilavuus kaksinkertaistuu, paine puolittuu, joten $(V, p)$-kuvaaja on kaari, joka lähestyy akseleita mutta ei koskaan kohtaa niitä. Suora syntyy vasta, kun $p$ piirretään $1/V$:n funktiona.
-- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Kun $1{,}00\,\textsf{l}$ ilmaa lämpenee vakiopaineessa $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:seen, sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $V_2 = V_1 T_2 / T_1 = 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1{,}04\,\textsf{l}$, joten tilavuus kasvaa vain noin $3{,}5\,\%$.
+- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Kun $1{,}00\,\textsf{l}$ ilmaa lämpenee vakiopaineessa $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:seen, sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $$\begin{aligned} V_2 &= V_1 T_2 / T_1 \\ &= 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \\ &\approx 1{,}04\,\textsf{l} \end{aligned}$$, joten tilavuus kasvaa vain noin $3{,}5\,\%$.
 - **Suljetun astian kaasun paine ei johdu kaasun painosta.** Pienessä astiassa kaasun paino on mitätön, ja paine syntyy hiukkasten törmäyksistä, joten se on yhtä suuri kaikkialla astiassa.
 
 ## Tiivistelmä

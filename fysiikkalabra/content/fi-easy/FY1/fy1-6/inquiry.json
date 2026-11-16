@@ -31,7 +31,7 @@
         },
         {
           "text": "$30\\,\\text{m}$",
-          "feedback": "Oikein: $s = vt = 6{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} = 30\\,\\text{m}$. Tasaisessa liikkeessä nopeus pysyy samana. Tässä luvussa tutkit liikettä, jossa nopeus itse muuttuu.",
+          "feedback": "Oikein: $$\\begin{aligned} s &= vt \\\\ &= 6{,}0\\,\\text{m/s} \\cdot 5{,}0\\,\\text{s} \\\\ &= 30\\,\\text{m} \\end{aligned}$$. Tasaisessa liikkeessä nopeus pysyy samana. Tässä luvussa tutkit liikettä, jossa nopeus itse muuttuu.",
           "correct": true
         },
         {
@@ -392,7 +392,7 @@
       "prompt": "Opiskelija laskee, mikä on tyhjiössä levosta pudotetun pallon nopeus $2{,}0\\,\\text{s}$:n kuluttua. Hän kirjoittaa: \"Putoamiskiihtyvyys on $9{,}81\\,\\text{m/s}^2$, joten pallon nopeus on $9{,}81\\,\\text{m/s}$.\" Missä virhe on?",
       "choices": [
         {
-          "text": "Hän pitää kiihtyvyyttä nopeutena. Nopeus on $v = g\\,t = 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} = 19{,}6\\,\\text{m/s}$.",
+          "text": "Hän pitää kiihtyvyyttä nopeutena. Nopeus on $$\\begin{aligned} v &= g\\,t \\\\ &= 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\\\ &= 19{,}6\\,\\text{m/s} \\end{aligned}$$.",
           "feedback": "Oikein. Luku $9{,}81\\,\\text{m/s}^2$ kertoo, kuinka paljon nopeus kasvaa joka sekunti. Nopeus saadaan, kun se kerrotaan kuluneella ajalla.",
           "correct": true
         },
@@ -526,7 +526,7 @@
           "feedback": "Jaoit luvun $g$ nopeudella. Ratkaisussa $v = g\\,t$ aika on $t = \\dfrac{v}{g}$."
         }
       ],
-      "solution": "**Annettu:** pallo lähtee levosta, loppunopeus $v = 108\\,\\text{km/h}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** aika $t$ yksikössä $\\text{s}$\n\n**Periaate:** Pallo on tyhjiössä vapaassa pudotuksessa ja lähtee levosta. Nopeus on siis suoraan verrannollinen aikaan: $v = g\\,t$. Kun nopeus tunnetaan, aika saadaan ratkaisemalla kaavasta $t$.\n\n**Kaava:** $v = g\\,t$, josta $t = \\dfrac{v}{g}$\n\n**Muunnokset:** Nopeus muunnetaan yksikköön $\\text{m/s}$, koska $g$ on yksikössä $\\text{m/s}^2$. Sijoitetaan $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 30{,}0\\,\\text{m/s}$.\n\n**Sijoitus:** $t = \\dfrac{30{,}0\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 3{,}058\\,\\text{s}$\n\n**Vastaus:** $3{,}06\\,\\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $108\\,\\text{km/h}$.\n\n**Järkevyys:** Nopeus kasvaa noin $10\\,\\text{m/s}$ sekunnissa. Nopeuteen $30\\,\\text{m/s}$ pääseminen vie siis noin $3\\,\\text{s}$. Tämä vastaa tulosta. Takaisinlasku: $9{,}81\\,\\text{m/s}^2 \\cdot 3{,}06\\,\\text{s} = 30{,}0\\,\\text{m/s}$. Yksiköt $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$ täsmäävät."
+      "solution": "**Annettu:** pallo lähtee levosta, loppunopeus $v = 108\\,\\text{km/h}$, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** aika $t$ yksikössä $\\text{s}$\n\n**Periaate:** Pallo on tyhjiössä vapaassa pudotuksessa ja lähtee levosta. Nopeus on siis suoraan verrannollinen aikaan: $v = g\\,t$. Kun nopeus tunnetaan, aika saadaan ratkaisemalla kaavasta $t$.\n\n**Kaava:** $v = g\\,t$, josta $t = \\dfrac{v}{g}$\n\n**Muunnokset:** Nopeus muunnetaan yksikköön $\\text{m/s}$, koska $g$ on yksikössä $\\text{m/s}^2$. Sijoitetaan $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$: $v = 108\\,\\text{km/h} = \\dfrac{108\\cdot1000\\,\\text{m}}{3600\\,\\text{s}} = 30{,}0\\,\\text{m/s}$.\n\n**Sijoitus:** $t = \\dfrac{30{,}0\\,\\text{m/s}}{9{,}81\\,\\text{m/s}^2} = 3{,}058\\,\\text{s}$\n\n**Vastaus:** $3{,}06\\,\\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $108\\,\\text{km/h}$.\n\n**Järkevyys:** Nopeus kasvaa noin $10\\,\\text{m/s}$ sekunnissa. Nopeuteen $30\\,\\text{m/s}$ pääseminen vie siis noin $3\\,\\text{s}$. Tämä vastaa tulosta. Takaisinlasku: $$\\begin{aligned} &9{,}81\\,\\text{m/s}^2 \\cdot 3{,}06\\,\\text{s} \\\\ &= 30{,}0\\,\\text{m/s} \\end{aligned}$$. Yksiköt $\\text{m/s}^2 \\cdot \\text{s} = \\text{m/s}$ täsmäävät."
     },
     {
       "id": "check-3",

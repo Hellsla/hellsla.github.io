@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3dbd4a28b1f97ddd
+CONTENT-HASH: ac8b5b8037eb042a
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-1 lesson, formula table: v_k named 'keskinopeus'/'average velocity'; upright subscript k renders correctly at 390 and 1280 px, no overflow.
+None.
 
-Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+## Checked
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-01, fi-390-02 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

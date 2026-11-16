@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 19551b21747c9115
+CONTENT-HASH: 42196e279c0b5e67
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] none.
+- none
 
 ## Checked
-batch delta review: opened the rendered Esimerkki 3 / transfer task at 390 px (en): situation and question split onto their own lines, units in LaTeX, answer unit fits the reworded question, solution block intact.
+- round 3, delta review (reflow): proof sheets en-fy6-9-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

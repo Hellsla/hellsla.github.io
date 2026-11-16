@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a514089c83370aaa
+CONTENT-HASH: 810265934d1de6e2
 
 ## Blocking
-None. Solutions use the new symbols consistently; steps and answers unchanged.
+None.
 
 ## Polish
 None.
 
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+- Järkevyys row: 20,5 m/s2 is correct and consistent with the next sentence; easy-Finnish sentence structure unchanged.
+- Delta review of the changed lines only; the rest rests on the previous report.

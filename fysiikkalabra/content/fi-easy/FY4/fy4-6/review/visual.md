@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 69f07803e19cee87
+CONTENT-HASH: 9b33ed72e7b7fd86
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] inquiry.json:479 (tile fy4-6 #8, 390 px) — the restored inline `N = 20 kg · 9,81 m/s² · cos 20° ≈ 184 N` is cut at the right edge on a phone exactly as on main (`≈ 184 N` lost) — keep it on the clipped-formula list; when re-broken, break before the operator (`\\ &\quad\cdot\cos 20^\circ`).
+- [Minor] inquiry.json (tile #0, 390 px) — the mean is broken inside the bracket (`(0,347 + 0,357 / + 0,347 + 0,352) : 4`) with the continuation flush left — indent the continuation row with `\quad`.
 
 ## Checked
-- Delta: one word changed in the Kaltevan tason Ydinajatus paragraph ("silta" to "pinta", "pystyy aiheuttamaan"). Captures regenerated for fi-easy (the first run wrote the fi captures; redone with --lang fi-easy).
-- Opened fy4-6-theory-1280-2 (changed sentence in context, both force figures: kalteva taso and avolava-auto), -3 and -4 (formula tables, Kitkavoima ja kalteva taso, virhekäsitys): layout intact, no KaTeX errors, no overflow.
-- The wording is now consistent with the rest of the section (pinta, not silta) and with the glossary (lepokitka). Figures untouched (teacher-approved).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- delta round 2: opened fi-easy-390-01, fi-easy-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

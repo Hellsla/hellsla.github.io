@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3725efef3cd38e4b
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: d08eceb1247765e5
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- New task fy7-11-L1-09: a six-statement true/false task on dispersion and the rainbow. Compared with content/fi: ids, kinds, answers, correct flags, choice/statement counts, tolerances and every number in text, choices, feedback identical (decimal point/comma per language).
-- Recomputed the task's key numbers myself; they agree with fi and the physics is correct.
-- solutions.md: same sections and numbers as fi for the whole set; the new solution is a faithful translation.
-- All other tasks re-compared with fi by script: no number, answer, unit or tolerance differs.
-- Language: follows NOTES.md section 12: shorter sentences, same physics and numbers, decimal comma, no new content.
-- check_i18n.py: nothing for fy7-11; build.py fy7-11 succeeds.
+- Delta: the diff is one phrase in fy7-11-L3-05, "(esimerkkiaineisto)" removed from the task text. No number, symbol, answer, unit or tolerance changed; solutions.md and answers.py are untouched.
+- The removal makes no claim false: the task states the two refractive indices as given properties of the flint glass and never calls them measured. $1{,}6150$ (red) and $1{,}6498$ (violet) are realistic for a dense flint.
+- L3-05 recomputed from the task text with my own prism model: $A_\text{max}$ is $64{,}98^\circ$ for violet and $66{,}57^\circ$ for red, so violet limits. At $A = 64{,}0^\circ$ the deviations are $56{,}40^\circ$ and $63{,}82^\circ$, so $\Delta\delta = 7{,}417^\circ$, equal to the key (7.417, tolerance 0.05). At $60{,}0^\circ$ the difference is $3{,}91^\circ$.
+- The label still stands in the table task of level 2 (caption "tyypillisiä arvoja, esimerkkiaineisto"); that is a matter of consistent wording, not of physics.
+- Every other task stands as recomputed in the previous report.
+- Hash d08eceb1247765e5 at the start and at the end.

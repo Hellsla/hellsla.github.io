@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a514089c83370aaa
+CONTENT-HASH: 88409ed26c9d807f
 
 ## Blocking
-None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-16 exercise set (fi-easy). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] exercises.json (tile fy4-16 #5) — `."` alone on a line after the formula; move the full stop into the last row.
+- [Minor] solutions.md:347 — break inside a short group (`(9,81 / + 12,7) m/s²`); keep the parenthesis on one row.
+
+## Checked
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

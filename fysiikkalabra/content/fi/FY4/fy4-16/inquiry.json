@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Soveltava tunti: moduulin työkalut yhdistetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta, ja oppilas valitsee kysymyksen mukaan liikeyhtälön tai energiaperiaatteen: hississä vaaka mittaa tukivoimaa $N = m(g + a)$, rajanopeudella ilmanvastuksen työ on $-mgh$, ja suoralla rinteellä liikekitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
+  "contribution": "Soveltava tunti: moduulin työkalut yhdistetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta, ja oppilas valitsee kysymyksen mukaan liikeyhtälön tai energiaperiaatteen: hississä vaaka mittaa tukivoimaa $N = m(g + a)$, rajanopeudella ilmanvastuksen työ on $-mgh$, ja suoralla rinteellä liukukitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
   "learn": [
     "valitsemaan voimakuvion perusteella, ratkaisetko tilanteen liikeyhtälöllä vai energiaperiaatteella.",
     "piirtämään voimakuvion ja laskemaan tukivoiman tai kiihtyvyyden kiihtyvässä hississä.",
@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
-    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liikekitka $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
+    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liukukitka $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
     "Mekaanisen energian muutos on muiden voimien kuin painon tekemä työ (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
   ],
   "activities": [
@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Kun hissi lähtee ylös, lukema kasvaa hetkeksi, ja kun hissi pysähtyy, se pienenee. Ikkunasta näkyy laskuvarjohyppääjä, joka laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia: toinen jyrkkää ja lyhyttä, toinen loivaa ja pitkää rinnettä. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle, mutta kun pysähtymiskohdat mitataan, kumpikin on yhtä kaukana mäen huipusta.",
+      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin ja seuraa sen lukemaa, kun hissi lähtee ylös, kulkee ja pysähtyy. Ikkunasta näkyy laskuvarjohyppääjä, joka laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia: toinen jyrkkää ja lyhyttä, toinen loivaa ja pitkää rinnettä. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle, mutta kun pysähtymiskohdat mitataan, kumpikin on yhtä kaukana mäen huipusta.",
       "question": "Kaikissa kolmessa tilanteessa vaikuttavat tutut voimat. Milloin tilanne kannattaa ratkaista voimilla ja milloin energialla, ja miksi pulkat pysähtyvät yhtä kauas huipusta?"
     },
     {
@@ -145,7 +145,7 @@
       "type": "interpret",
       "title": "Kolme yhtä korkeaa mäkeä",
       "source": "model",
-      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä, joiden korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta, liikekitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella, ilmanvastus jätetään huomiotta ja rinteen juuren mutkassa ei menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma, $x_1$ rinteen vaakasuora pituus, $v$ pulkan nopeus rinteen juurella ja $x_2$ matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
+      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä, joiden korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta, liukukitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella, ilmanvastus jätetään huomiotta ja rinteen juuren mutkassa ei menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma, $x_1$ rinteen vaakasuora pituus, $v$ pulkan nopeus rinteen juurella ja $x_2$ matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
       "question": {
         "type": "choice",
         "prompt": "Laske jokaiselta riviltä $x_1 + x_2$, pulkan koko vaakasuora matka huipulta pysähtymiskohtaan. Mitä taulukko osoittaa?",
@@ -153,7 +153,7 @@
           {
             "text": "Vaakamatka on joka rivillä $60{,}0\\,\\text{m}$, vaikka jyrkältä rinteeltä tuleva pulkka on juurella nopeampi.",
             "correct": true,
-            "feedback": "Oikein. $10{,}4 + 49{,}6 = 16{,}5 + 43{,}5 = 34{,}0 + 26{,}0 = 60{,}0$ metriä, ja $\\tfrac{h}{\\mu} = \\tfrac{6{,}0\\,\\text{m}}{0{,}10} = 60\\,\\text{m}$. Jyrkältä rinteeltä tuleva pulkka on juurella nopeampi ja liukuu tasaisella pidemmälle, mutta rinteessä sen vaakamatka on lyhyempi."
+            "feedback": "Oikein. $$\\begin{aligned} &10{,}4 + 49{,}6 = 16{,}5 \\\\ &+ 43{,}5 \\\\ &= 34{,}0 + 26{,}0 \\\\ &= 60{,}0 \\end{aligned}$$ metriä, ja $\\tfrac{h}{\\mu} = \\tfrac{6{,}0\\,\\text{m}}{0{,}10} = 60\\,\\text{m}$. Jyrkältä rinteeltä tuleva pulkka on juurella nopeampi ja liukuu tasaisella pidemmälle, mutta rinteessä sen vaakamatka on lyhyempi."
           },
           {
             "text": "Vaakamatka on sitä pidempi, mitä jyrkempi rinne, koska jyrkältä rinteeltä tuleva pulkka on juurella nopeampi.",
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös",
-      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi mutta pysähtyy silti lähes yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
+      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi mutta pysähtyy silti yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
       "criteria": [
         "Vastaus kertoo, että vaaka mittaa tukivoimaa ja että lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas, mutta tasaisella nopeudella sama kuin levossa.",
         "Vastaus käyttää kuvaajan lukuja, esimerkiksi $650\\,\\text{N}$ lähdössä ja noin $589\\,\\text{N}$ tasaisella nopeudella.",
@@ -248,7 +248,7 @@
           "detail": "$mg - T = ma$, joten $T = m(g - a) < mg$: vaaka näyttää vähemmän kuin levossa."
         }
       ],
-      "model": "Laukkuun vaikuttavat vain Maa (paino $\\overline{G}$) ja vaaka, jonka koukku pitää laukusta kiinni (jännitysvoima $\\overline{T}$). Hissi ja katto vaikuttavat laukkuun vain vaa'an kautta, joten niille ei piirretä omia voimia. Hissi liikkuu alas ja kiihtyy, joten nopeus ja kiihtyvyys osoittavat alas. Kokonaisvoiman on osoitettava alas, joten jännitysvoima on painoa pienempi. Kun positiivinen suunta on alas, liikeyhtälö on $mg - T = ma$, josta $T = m(g - a)$. Vaaka näyttää vähemmän kuin levossa. Esimerkiksi kun $a = 1{,}5\\,\\text{m/s}^2$, $T = 18{,}0\\,\\text{kg}\\cdot 8{,}31\\,\\text{m/s}^2 \\approx 150\\,\\text{N}$, kun paino on $177\\,\\text{N}$."
+      "model": "Laukkuun vaikuttavat vain Maa (paino $\\overline{G}$) ja vaaka, jonka koukku pitää laukusta kiinni (jännitysvoima $\\overline{T}$). Hissi ja katto vaikuttavat laukkuun vain vaa'an kautta, joten niille ei piirretä omia voimia. Hissi liikkuu alas ja kiihtyy, joten nopeus ja kiihtyvyys osoittavat alas. Kokonaisvoiman on osoitettava alas, joten jännitysvoima on painoa pienempi. Kun positiivinen suunta on alas, liikeyhtälö on $mg - T = ma$, josta $T = m(g - a)$. Vaaka näyttää vähemmän kuin levossa. Esimerkiksi kun $a = 1{,}5\\,\\text{m/s}^2$, $$\\begin{aligned} &T = 18{,}0\\,\\text{kg}\\cdot 8{,}31\\,\\text{m/s}^2 \\\\ &\\approx 150\\,\\text{N} \\end{aligned}$$, kun paino on $177\\,\\text{N}$."
     },
     {
       "id": "siirto",
@@ -326,7 +326,7 @@
       "hints": [
         "Kumpi on suurempi, paino vai tukivoima, kun kiihtyvyys osoittaa alas?",
         "Valitse positiivinen suunta ylös: $N - mg = ma$, jossa $a = -1{,}20\\,\\text{m/s}^2$.",
-        "$N = 55{,}0\\,\\text{kg}\\cdot(9{,}81 - 1{,}20)\\,\\text{m/s}^2$. Jaa lopuksi luvulla $9{,}81\\,\\text{m/s}^2$."
+        "$$\\begin{aligned} &N \\\\ &= 55{,}0\\,\\text{kg}\\cdot(9{,}81 \\\\ &- 1{,}20)\\,\\text{m/s}^2 \\end{aligned}$$. Jaa lopuksi luvulla $9{,}81\\,\\text{m/s}^2$."
       ],
       "mistakes": [
         {

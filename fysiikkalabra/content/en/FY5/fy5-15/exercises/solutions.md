@@ -36,7 +36,7 @@
 **Conversions:** Not needed: the power is in watts and the distance in metres.
 **Substitution:** $I = \dfrac{2.0\,\text{W}}{4\pi \cdot (25\,\text{m})^2} = \dfrac{2.0\,\text{W}}{7854\,\text{m}^2} = 2.55 \cdot 10^{-4}\,\text{W/m}^2 = 0.000255\,\text{W/m}^2$
 **Answer:** $0.00025\,\text{W/m}^2$, two significant figures like the power $2.0\,\text{W}$ and the distance $25\,\text{m}$.
-**Reasonableness:** The area of the sphere is about $8000\,\text{m}^2$, and $$\begin{aligned} &2\,\text{W} : 8000\,\text{m}^2 \\ &= 0.00025\,\text{W/m}^2 \end{aligned}$$. As a level this is about $84\,\text{dB}$, which is believable for a siren at $25\,\text{m}$.
+**Reasonableness:** The area of the sphere is about $8000\,\text{m}^2$, and $2\,\text{W} : 8000\,\text{m}^2 = 0.00025\,\text{W/m}^2$. As a level this is about $84\,\text{dB}$, which is believable for a siren at $25\,\text{m}$.
 
 ## fy5-15-L1-05
 **Given:** ratio of the intensities $\dfrac{I_2}{I_1} = 100$
@@ -83,7 +83,7 @@
 **Conversions:** Not needed: both distances are in metres, and the units cancel.
 **Substitution:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3.0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, so $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12.04\,\text{dB} = 72.96\,\text{dB}$
 **Answer:** $73\,\text{dB}$, in whole decibels like the initial level $85\,\text{dB}$.
-**Reasonableness:** The distance doubles twice ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), and each doubling lowers the level by about $6\,\text{dB}$: $$85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$$. The level decreases, as it should farther from the source.
+**Reasonableness:** The distance doubles twice ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), and each doubling lowers the level by about $6\,\text{dB}$: $85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$. The level decreases, as it should farther from the source.
 
 ## fy5-15-L2-04
 **Given:** one saw $L_1 = 85\,\text{dB}$, all saws together $L = 91\,\text{dB}$, the saws are identical and equally far from the meter
@@ -180,13 +180,13 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text
 &= 120\,\text{dB}
 \end{aligned}
 ```
-**Answer:** $120\,\text{dB}$, two significant figures like the threshold of pain $1.0\,\text{W/m}^2$.
+**Answer:** $120\,\text{dB}$, in whole decibels, because the threshold of pain $1.0\,\text{W/m}^2$ is given with two significant figures.
 **Reasonableness:** The ratio of the intensities is $10^{12}$, and every tenfold increase raises the level by $10\,\text{dB}$, so $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. This matches the common knowledge that $120\,\text{dB}$ is the level near a jet aircraft and hurts the ear.
 
 ## fy5-15-L2-05
 **Given:** from the table the distances $1.0\,\text{m}$, $2.0\,\text{m}$, $4.0\,\text{m}$, $8.0\,\text{m}$ and $16\,\text{m}$ and the levels $84.2\,\text{dB}$, $78.1\,\text{dB}$, $72.3\,\text{dB}$, $66.2\,\text{dB}$ and $60.1\,\text{dB}$
 **Find:** the average drop in level $\Delta L_1$ per doubling of the distance, in decibels
-**Principle:** Each measuring point is twice the previous one, so the distances are $$\begin{aligned} &1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \\ &\to 16\,\text{m} \end{aligned}$$, so there are $n = 4$ doublings. The average drop is obtained by dividing the total change in level by $n$.
+**Principle:** Each measuring point is twice the previous one, so the distances are $1.0\,\text{m} \to 2.0\,\text{m} \to 4.0\,\text{m} \to 8.0\,\text{m} \to 16\,\text{m}$, so there are $n = 4$ doublings. The average drop is obtained by dividing the total change in level by $n$.
 **Formula:** $\Delta L_1 = \dfrac{L(1.0\,\text{m}) - L(16\,\text{m})}{n}$
 **Conversions:** Not needed: the levels are in decibels, and $n$ is a plain number.
 **Substitution:** there are $n = 4$ doublings, so
@@ -212,7 +212,8 @@ L_\text{mod} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)
 **Substitution:** the ratio of the distances is $8.0$, so
 ```latex
 \begin{aligned}
-L_\text{mod} &= 86.0\,\text{dB} - 10\,\text{dB} \cdot \lg 64 \\
+L_\text{mod} &= 86.0\,\text{dB} - \\
+&\quad 10\,\text{dB} \cdot \lg 64 \\
 &= 86.0\,\text{dB} - 18.06\,\text{dB} \\
 &= 67.94\,\text{dB} \\
 L_\text{obs} - L_\text{mod} &= 71.9\,\text{dB} - 67.94\,\text{dB} \\
@@ -263,8 +264,10 @@ r &= \sqrt{\dfrac{0.3945\,\text{W}}{4\pi \cdot 3.162 \cdot 10^{-7}\,\text{W/m}^2
 &= 315\,\text{m} \approx 3.2 \cdot 10^{2}\,\text{m}
 \end{aligned}
 ```
-**Answer:** The result of part b) is $3.2 \cdot 10^{2}\,\text{m}$, two significant figures, because the limit $55\,\text{dB}$ is given in whole decibels and $\pm 0.5\,\text{dB}$ changes the distance between $297\,\text{m}$ and $334\,\text{m}$; the sound power of part a) is about $0.39\,\text{W}$.
-**Reasonableness:** The level drops by $6.0\,\text{dB}$ with every doubling of the distance. From the level $72.6\,\text{dB}$ at $40\,\text{m}$ to the level $55\,\text{dB}$ is about $17.6\,\text{dB}$, that is, about $2.9$ doublings, so the distance is about $40\,\text{m} \cdot 2^{2.9} \approx 300\,\text{m}$, which fits the result $3.2 \cdot 10^{2}\,\text{m}$. **Justification (part c):** A single reading contains measurement error: the power estimates vary between $0.366\,\text{W}$ and $0.428\,\text{W}$, so the mean evens out the error. Over a long distance, the attenuation of sound by air, attenuation by the ground and vegetation, wind and temperature layers, and reflections from buildings can differ from the model, because the model does not include them; the real level may be lower or higher than the model predicts (attenuation by air and ground usually lowers it, reflections raise it), so the result $3.2 \cdot 10^{2}\,\text{m}$ is an estimate.
+**Answer:** The result of part b) is $3.2 \cdot 10^{2}\,\text{m}$, two significant figures, because the limit $55\,\text{dB}$ is given in whole decibels and $\pm 0.5\,\text{dB}$ changes the distance between $297\,\text{m}$ and $334\,\text{m}$. The result $315\,\text{m}$ is rounded up, to the safe side, because $55\,\text{dB}$ is a limit value. The sound power of part a) is about $0.39\,\text{W}$.
+**Reasonableness:** The level drops by $6.0\,\text{dB}$ with every doubling of the distance. From the level $72.6\,\text{dB}$ at $40\,\text{m}$ to the level $55\,\text{dB}$ is about $17.6\,\text{dB}$, that is, about $2.9$ doublings, so the distance is about $40\,\text{m} \cdot 2^{2.9} \approx 300\,\text{m}$, which fits the result $3.2 \cdot 10^{2}\,\text{m}$.
+
+**Justification (part c):** A single reading contains measurement error: the power estimates vary between $0.366\,\text{W}$ and $0.428\,\text{W}$, so the mean evens out the error. Over a long distance, the attenuation of sound by air, attenuation by the ground and vegetation, wind and temperature layers, and reflections from buildings can differ from the model, because the model does not include them; the real level may be lower or higher than the model predicts (attenuation by air and ground usually lowers it, reflections raise it), so the result $3.2 \cdot 10^{2}\,\text{m}$ is an estimate.
 
 ## fy5-15-L3-05
 **Given:** power of the guitar amplifier $P_1 = 0.20\,\text{W}$, level of the drum kit $L_2 = 90\,\text{dB}$ at distance $r_2 = 2.0\,\text{m}$, distance of the listener $r = 8.0\,\text{m}$, target level $L_\text{limit} = 70\,\text{dB}$ and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; the sources are in the same place, independent and point sources
@@ -296,7 +299,7 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 &= 44.6\,\text{m}
 \end{aligned}
 ```
-**Answer:** The result of part b) is $45\,\text{m}$, two significant figures like the power $0.20\,\text{W}$ and the distance $8.0\,\text{m}$; the combined level of part a) is about $85\,\text{dB}$.
+**Answer:** The result of part b) is $45\,\text{m}$, two significant figures like the power $0.20\,\text{W}$ and the distance $8.0\,\text{m}$. The result $44.6\,\text{m}$ is rounded up, to the safe side, because $70\,\text{dB}$ is a limit value. The combined level of part a) is about $85\,\text{dB}$.
 **Reasonableness:** The level drops from the combined level $84.9\,\text{dB}$ to $70\,\text{dB}$, that is, by $14.9\,\text{dB}$, which is about $2.5$ doublings of the distance ($6.0\,\text{dB}$ each), and $8.0\,\text{m} \cdot 2^{2.5} \approx 45\,\text{m}$. The combined level is greater than either source alone ($84.0\,\text{dB}$ and $78.0\,\text{dB}$) but smaller than the sum of their decibels. **Justification (part c):** The range of intensities of hearing is enormous: from the threshold of hearing to the threshold of pain the intensity grows by a factor of $10^{12}$. The logarithmic scale compresses this range into the numbers $0\,\text{dB}$–$120\,\text{dB}$, and hearing distinguishes roughly relative differences, so the same factor of intensity, for example doubling, feels like roughly the same change (about $3\,\text{dB}$) at a quiet and at a loud sound.
 
 ## fy5-15-L1-09
@@ -307,7 +310,7 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 **Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Conversions:** None are needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{74.0\,\text{dB}}{10\,\text{dB}} = 7.40$, the decibels cancel.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7.40} = 2.51 \cdot 10^{-5}\,\text{W/m}^2$
-**Answer:** $2.5 \cdot 10^{-5}\,\text{W/m}^2$, that is $0.000025\,\text{W/m}^2$, two significant figures like the hearing threshold $1.0 \cdot 10^{-12}\,\text{W/m}^2$.
+**Answer:** $2.5 \cdot 10^{-5}\,\text{W/m}^2$, that is $0.000025\,\text{W/m}^2$, two significant figures, because the level $74.0\,\text{dB}$ read from the figure is given to a tenth of a decibel and $\pm 0.1\,\text{dB}$ changes the intensity by about $\pm 2.3\,\%$, so the third figure is not certain.
 **Reasonableness:** $70\,\text{dB}$ corresponds to the intensity $10^{-5}\,\text{W/m}^2$ and $80\,\text{dB}$ to $10^{-4}\,\text{W/m}^2$, so the intensity of $74\,\text{dB}$ must lie between them, nearer the lower one. At $r = 2.0\,\text{m}$ in the figure, at $80\,\text{dB}$, the intensity is $1.0 \cdot 10^{-4}\,\text{W/m}^2$, and at double the distance it is a quarter of that, $2.5 \cdot 10^{-5}\,\text{W/m}^2$, as it should be.
 
 ## fy5-15-L2-09
@@ -319,4 +322,10 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 **Conversions:** $\dfrac{L}{10\,\text{dB}} = 8.00$. The result comes out in watts, and $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8.00} = 1.0 \cdot 10^{-4}\,\text{W/m}^2$, and $P = 4\pi \cdot (2.0\,\text{m})^2 \cdot 1.0 \cdot 10^{-4}\,\text{W/m}^2 = 5.03 \cdot 10^{-3}\,\text{W} = 5.03\,\text{mW}$
 **Answer:** $5.0\,\text{mW}$, two significant figures like the distance $2.0\,\text{m}$ read from the figure.
-**Reasonableness:** The other point in the figure gives the same result: $r = 4.0\,\text{m}$ and $L = 74.0\,\text{dB}$ give $I = 2.51 \cdot 10^{-5}\,\text{W/m}^2$ and $$\begin{aligned} P &= 4\pi \cdot (4.0\,\text{m})^2 \\ &\cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2 \\ &= 5.05\,\text{mW} & \end{aligned}$$, which differs by less than $1\,\%$ from the first (reading accuracy). The power is small, as for a small loudspeaker: the electric power is many times greater because only a small part of it becomes sound.
+**Reasonableness:** The other point in the figure gives the same result: $r = 4.0\,\text{m}$ and $L = 74.0\,\text{dB}$ give $I = 2.51 \cdot 10^{-5}\,\text{W/m}^2$ and $$
+\begin{aligned}
+P &= 4\pi \cdot (4.0\,\text{m})^2 \\
+&\cdot 2.51 \cdot 10^{-5}\,\text{W/m}^2 \\
+&= 5.05\,\text{mW}
+\end{aligned}
+$$, which differs by less than $1\,\%$ from the first (reading accuracy). The power is small, as for a small loudspeaker: the electric power is many times greater because only a small part of it becomes sound.

@@ -129,7 +129,7 @@
         {
           "text": "Levyjen varaukset ovat $+1{,}2\\,\\text{mC}$ ja $-1{,}2\\,\\text{mC}$, joten kondensaattorin kokonaisvaraus on nolla.",
           "true": true,
-          "feedback": "Oikein: $Q = CU$, eli $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1{,}2\\,\\text{mC}$. Paristo vain siirtää varausta levystä toiseen, joten levyjen varaukset ovat yhtä suuret ja vastakkaismerkkiset."
+          "feedback": "Oikein: $Q = CU$, eli $$\\begin{aligned} Q &= 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} \\\\ &= 1{,}2\\,\\text{mC} \\end{aligned}$$. Paristo vain siirtää varausta levystä toiseen, joten levyjen varaukset ovat yhtä suuret ja vastakkaismerkkiset."
         },
         {
           "text": "Latauksen päätyttyä virta kulkee levyjen välisen eristeen läpi samalla tavalla kuin johtimissa.",
@@ -336,6 +336,19 @@
       "figure": "fy6-13/ex-qu2",
       "answer": 367.5,
       "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/fi/simulations/capacitor-lab-basics\" target=\"_blank\" rel=\"noopener\">PhET – Capacitor Lab: Basics (Kondensaattorilaboratorio: Perusteet)</a>\n\nMiten kondensaattori varastoi energiaa? Tutki kondensaattorin ominaisuuksia simulaatiolla. Simulaatio toimii selaimessa ilman asennusta. Siinä on levykondensaattori, joka on kytketty paristoon. Pariston jännitettä, levyjen välimatkaa ja levyjen pinta-alaa voi muuttaa, ja simulaatio voi näyttää kapasitanssin, levyn varauksen ja varastoituneen energian.\n\na) Tutki, miten kondensaattorin varaus riippuu jännitteestä, kun levyjen välimatka ja pinta-ala pysyvät samoina. Tutki sitten, miten levyjen välimatka vaikuttaa kapasitanssiin. Kirjaa kummastakin vähintään kolme arvoparia ja kuvaile riippuvuus.\n\nb) Elektroniikassa käytetyn kondensaattorin kapasitanssi on $1000\\,\\mu\\text{F}$ ja jännite $12\\,\\text{V}$. Laske kondensaattoriin varastoitunut energia.\n\nc) Kuinka varastoitunut energia muuttuu, jos jännite kaksinkertaistetaan kapasitanssin pysyessä vakiona? Perustele kaavalla ja tarkista päätelmäsi simulaatiolla.\n\nd) Vertaa kondensaattoria ja akkua energian varastointimenetelminä. Arvioi, millaisiin käyttötarkoituksiin kumpikin sopii.\n\nVastauslaatikkoon tulee kohdan b) energia millijouleina.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 72,
+      "unit": "mJ",
       "tolerance": 0.02
     }
   ],

@@ -189,7 +189,7 @@
         "koe-2"
       ],
       "prompt": "Write, based on your tables: how does the wavelength of the peak of the spectrum change when the temperature doubles? What do you notice about the result $\\lambda_\\text{max} T$? In which wavelength region is the peak of a body at room temperature, and why does the body not glow?",
-      "model": "When the temperature doubles from $3000\\,\\text{K}$ to $6000\\,\\text{K}$, the peak shifts from $966\\,\\text{nm}$ to $483\\,\\text{nm}$, that is, it is halved. The product $\\lambda_\\text{max} T$ is the same in every row, about $2.90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} = 2.90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$, so the wavelength of the peak is inversely proportional to the absolute temperature. The peak of a body at room temperature ($300\\,\\text{K}$) is at $9659\\,\\text{nm}$, that is, at about $9.7\\,\\mu\\text{m}$, in the infrared region, and there is less than $0.01\\,\\%$ visible light. That is why the body does not glow, even though it radiates. The values are calculated by the model.",
+      "model": "When the temperature doubles from $3000\\,\\text{K}$ to $6000\\,\\text{K}$, the peak shifts from $966\\,\\text{nm}$ to $483\\,\\text{nm}$, that is, it is halved. The product $\\lambda_\\text{max} T$ is the same in every row, about $$\\begin{aligned} &2.90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} \\\\ &= 2.90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\end{aligned}$$, so the wavelength of the peak is inversely proportional to the absolute temperature. The peak of a body at room temperature ($300\\,\\text{K}$) is at $9659\\,\\text{nm}$, that is, at about $9.7\\,\\mu\\text{m}$, in the infrared region, and there is less than $0.01\\,\\%$ visible light. That is why the body does not glow, even though it radiates. The values are calculated by the model.",
       "criteria": [
         "I stated that the wavelength of the peak is halved when the absolute temperature doubles.",
         "I calculated the product $\\lambda_\\text{max} T$ and noted that it is the same in every row, about $2.9 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
@@ -236,7 +236,7 @@
         {
           "text": "The temperature is in degrees Celsius: in kelvins it is $1173\\,\\text{K}$, which gives a peak at $2.47\\,\\mu\\text{m}$.",
           "correct": true,
-          "feedback": "Correct. In Wien's displacement law $T$ is the absolute temperature: $T = (900 + 273.15)\\,\\text{K} = 1173\\,\\text{K}$, and $\\lambda_\\text{max} = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 1173\\,\\text{K} = 2.47\\,\\mu\\text{m}$. With degrees Celsius the result would be the more wrong the colder the body is."
+          "feedback": "Correct. In Wien's displacement law $T$ is the absolute temperature: $$\\begin{aligned} T &= (900 + 273.15)\\,\\text{K} \\\\ &= 1173\\,\\text{K} \\end{aligned}$$, and $$\\begin{aligned} \\lambda_\\text{max} &= 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: 1173\\,\\text{K} \\\\ &= 2.47\\,\\mu\\text{m} \\end{aligned}$$. With degrees Celsius the result would be the more wrong the colder the body is."
         },
         {
           "text": "The formula is the wrong way round: the correct one is $\\lambda_\\text{max} = b T$, which gives a peak at $2.61\\,\\text{m}$.",
@@ -261,7 +261,7 @@
       "hints": [
         "Which law gives the position of the peak of the spectrum when the temperature is known, and in what unit must the temperature be?",
         "Wien's displacement law $\\lambda_\\text{max} = b : T$, where $T$ is in kelvins.",
-        "$T = (2430 + 273.15)\\,\\text{K} = 2703.15\\,\\text{K}$, so $\\lambda_\\text{max} = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 2703.15\\,\\text{K}$."
+        "$T = (2430 + 273.15)\\,\\text{K} = 2703.15\\,\\text{K}$, so $$\\begin{aligned} \\lambda_\\text{max} &= 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: 2703.15\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -315,7 +315,7 @@
       "hints": [
         "Which law connects the peak of the spectrum and the temperature, and in what unit does it give the temperature?",
         "From Wien's displacement law $T = b : \\lambda_\\text{max}$ in kelvins, and degrees Celsius are obtained by subtracting $273.15\\,\\text{K}$ from it.",
-        "$T = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : (2.1 \\cdot 10^{-6}\\,\\text{m}) = 1380\\,\\text{K}$."
+        "$$\\begin{aligned} T &= 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: (2.1 \\cdot 10^{-6}\\,\\text{m}) \\\\ &= 1380\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {

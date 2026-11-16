@@ -319,6 +319,18 @@
       "answer": 75.6,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://www.ttl.fi/teemat/tyoturvallisuus/altistuminen-tyoympariston-haittatekijoille/fysikaaliset-altisteet-tyopaikalla/melu\" target=\"_blank\" rel=\"noopener\">Työterveyslaitos – Melu</a>\n\nKuinka vaarallista voimakas ääni on kuulolle? Lue aineisto, joka kertoo melualtistuksesta eli siitä, kuinka paljon melua ihminen saa. Etsi aineistosta melun viitearvot (toiminta-arvot ja raja-arvo).\n\na) Selitä, miksi desibeliasteikkoa kutsutaan logaritmiseksi.\n\nb) Äänitaso kasvaa $3\\,\\text{dB}$ tai $10\\,\\text{dB}$. Laske, kuinka moninkertaiseksi äänen intensiteetti muuttuu.\n\nc) Vertaa $85\\,\\text{dB}$:n ja $94\\,\\text{dB}$:n melualtistuksia. Aineiston taulukossa $85\\,\\text{dB}$ on ylempi toiminta-arvo. Mitä siitä aineiston mukaan seuraa työpaikalla? Ajattele ensin, että melu kestää koko kahdeksan tunnin työpäivän. Miten $94\\,\\text{dB}$ sijoittuu silloin taulukon raja-arvoon nähden? Kuinka pitkä altistus $94\\,\\text{dB}$:n melulle antaa saman energia-annoksen kuin kahdeksan tunnin altistus $85\\,\\text{dB}$:n melulle? Energia-annos tarkoittaa korvaan tulleen äänen energian määrää.\n\nd) Arvioi väitettä: ”Muutaman desibelin muutos äänenvoimakkuudessa ei ole kuulon kannalta merkittävä.” Perustele laskuillasi ja aineiston viitearvoilla.\n\nKirjoita c-kohdan aika tunteina vastauslaatikkoon.",
+      "answer": 1.0,
+      "unit": "h",
+      "tolerance": 0.03
     }
   ],
   "level3": [

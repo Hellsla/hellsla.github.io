@@ -108,7 +108,7 @@
       "kind": [
         "error"
       ],
-      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 = 3.0\\,\\text{mm}$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
+      "text": "A student calculated how much a $2.0\\,\\text{m}$ long aluminium rod ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) gets longer when its temperature rises from $15\\,{}^\\circ\\text{C}$ to $65\\,{}^\\circ\\text{C}$. The student wrote $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2.0\\,\\text{m} \\cdot 65 \\\\ &= 3.0\\,\\text{mm} \\end{aligned}$$ (units left out).\n\nThere is an error here. Calculate the change in the length of the rod correctly. Give the answer in millimetres.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
@@ -306,6 +306,19 @@
       "figure": "fy3-8/length-graph",
       "answer": 53.3,
       "unit": "°C",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "text": "Source material: <a href=\"https://science.nasa.gov/earth/explore/earth-indicators/sea-leve/\" target=\"_blank\" rel=\"noopener\">NASA – Sea Level (Earth Indicator)</a> (read 16 November 2026)\n\nThe graph on the page shows the change in the global mean sea level since 1993, measured by satellites. The page is updated continuously, so write down in your answer the day you read the graph and the values you read from it.\n\na) Describe how the mean sea level has changed during the measurement period. Read the first and the latest measurement point from the graph (the time and the change in height) and use them to determine the average rate of rise in millimetres per year.\n\nb) Explain with thermal expansion why the warming of seawater can raise the sea level.\n\nc) Consider a simplified model in which a water column $1000\\,\\text{m}$ high warms evenly by $0.30\\,{}^\\circ\\text{C}$. The coefficient of volume expansion is $\\gamma = 2.0 \\cdot 10^{-4}\\,\\tfrac{1}{\\text{K}}$, and the cross-sectional area of the column is assumed constant. Calculate the change in the height of the water column.\n\nd) Assess why this model alone cannot explain or predict the rise of the global sea level. In your reasoning, also use what the source says about the causes of the rise.\n\nThe answer field takes the result of part c) in millimetres.",
+      "answer": 60,
+      "unit": "mm",
       "tolerance": 0.03
     }
   ],

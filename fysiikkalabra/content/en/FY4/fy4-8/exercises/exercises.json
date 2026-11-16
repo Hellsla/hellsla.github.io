@@ -84,7 +84,7 @@
     {
       "id": "fy4-8-L1-08",
       "level": 1,
-      "text": "A student solves the problem: “A box slides down an inclined plank a distance of $5.0\\,\\text{m}$. The height difference between the ends of the plank is $1.5\\,\\text{m}$, and the frictional force opposing the motion is $8.0\\,\\text{N}$. How much work does friction do on the box?”\n\nThe student’s solution: $W = -F_\\mu h = -8.0\\,\\text{N} \\cdot 1.5\\,\\text{m} = -12\\,\\text{J}$.\n\nWhat is wrong in the student’s solution?",
+      "text": "A student solves the problem: “A box slides down an inclined plank a distance of $5.0\\,\\text{m}$. The height difference between the ends of the plank is $1.5\\,\\text{m}$, and the frictional force opposing the motion is $8.0\\,\\text{N}$. How much work does friction do on the box?”\n\nThe student’s solution: $$\\begin{aligned} &W = -F_\\mu h \\\\ &= -8.0\\,\\text{N} \\cdot 1.5\\,\\text{m} \\\\ &= -12\\,\\text{J} \\end{aligned}$$.\n\nWhat is wrong in the student’s solution?",
       "kind": [
         "error",
         "concept"
@@ -346,6 +346,19 @@
       "unit": "N",
       "tolerance": 0.05,
       "figure": "fy4-8/palkit-asteikko"
+    },
+    {
+      "id": "fy4-8-L2-10",
+      "level": 2,
+      "text": "The page <a href=\"https://www.liikenneturva.fi/liikenteessa/turvallinen-ajonopeus/\" target=\"_blank\" rel=\"noopener\">Liikenneturva: Turvallinen ajonopeus</a> (read 16 November 2026) of the Finnish Road Safety Council tells how driving speed affects the consequences of a collision. The page is in Finnish. Read its section ”Nopeus lisää törmäysvoimaa” (Speed increases the collision force). Consider a car of mass $1500\\,\\text{kg}$.\n\na) Calculate the kinetic energy of the car at the speeds $30\\,\\text{km/h}$, $50\\,\\text{km/h}$ and $90\\,\\text{km/h}$. The speeds are exact comparison values.\n\nb) The source says: ”Ajoneuvon törmäysenergia nelinkertaistuu, kun törmäysnopeus kaksinkertaistuu.” (The collision energy of a vehicle quadruples when the collision speed doubles.) Justify the claim with the expression for kinetic energy. How many times as large is the kinetic energy of the car at $90\\,\\text{km/h}$ as at $30\\,\\text{km/h}$?\n\nc) The car hits a fixed obstacle and stops. Where does the kinetic energy of the car go, or what does it turn into?\n\nd) The source states that when a car hits a fixed obstacle at $50\\,\\text{km/h}$, the collision force acting on a person of mass $80\\,\\text{kg}$ is, in the words of the source, ”$3\\,000\\,\\text{kg}$”. The kilogram is a unit of mass, so interpret the number as a force equal to the weight of a body of mass $3000\\,\\text{kg}$. Over what distance does the person then stop, when the force is assumed to be constant?\n\ne) Use part d to explain why the kinetic energy alone cannot predict unambiguously what kind of injuries people get in a collision.\n\nThe answer field takes the stopping distance of part d).",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 0.26,
+      "unit": "m",
+      "tolerance": 0.05
     }
   ],
   "level3": [

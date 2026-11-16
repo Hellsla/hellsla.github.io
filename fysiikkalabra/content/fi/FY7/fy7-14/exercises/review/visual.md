@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8eaee81f9fae4b2f
-SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
+CONTENT-HASH: 41d463c0e7ecca1f
 
 ## Blocking
 
 ## Polish
-- [Minor] 14-16 solution, Kuvaajan lukeminen — "Pohja on käyrän alin kohta ja viiva on sen yläpuolella" is still clumsy; write "viiva on pohjan yläpuolella".
+
 
 ## Checked
-- Redrawn fy7/soap-curve in 14-23 (open-exercises-L3-1280 parts 9-10, full size): the label "saippuakalvo" now sits at the lower right under the curve, so the peak (about 7,7 %, 620 nm) and the minimum (466 nm) are fully visible and readable; axes, units and ticks good. Reads well; the earlier Major is resolved.
-- 14-16 (coating-curve, open-exercises-L2-1280 parts 10-11): graph, solution and typography fine.
-- Delta only: the added exercises; rest of the set not re-reviewed.
+- Round 2, delta. Fresh preview/fy7-14.html at this hash, every solution open; own captures of every aligned block and split inline chain of the exercises at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-14-ex-360-s*.png, fy7-14-ex-1280-s*.png), read at full size.
+- fy7-14-L1-07 Järkevyys: the bracketed check is inline inside its parentheses again, "(570 nm : (4 · 1,33) = 107 nm), koska …", wrapping before "=" on a phone; no lone bracket. Round 1's Blocking is gone.
+- L1-09, L2-02, L2-03, L2-07, L3-01 blocks: two rows on a phone, one row at 1280 px, punctuation inside the last row.
+- Formula overflow measured in the browser at 352, 360, 390 and 1280 px, everything open. Hash the same at the start and the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 5

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3e26f3c308e053a3
+CONTENT-HASH: 5f154e60a7a79437
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] exercises/solutions.md (tiles fy4-6 #4–#6, 390 px) — chains break inside the bracket (`(sin 30° / − 0,35 · cos 30°)`) with the continuation flush left under the relation — indent the continuation row with `\quad`.
+- [Minor] exercises/solutions.md, `F_max` row — restored inline as on main, still over-wide on a phone — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- Task text now introduces the data as example data from a pulling experiment; clear, units LaTeX. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- delta round 2: opened en-390-01, en-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

@@ -44,7 +44,7 @@ a ylös
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$. Muunnoksia ei siis tarvita.
 **Sijoitus:** $a = \dfrac{0{,}600\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = \dfrac{5{,}886\,\text{N} - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = -3{,}523\,\text{m/s}^2$
 **Vastaus:** $3{,}52\,\text{m/s}^2$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $0{,}600\,\text{kg}$ ja ilmanvastus $8{,}00\,\text{N}$ on annettu kolmella numerolla. Miinusmerkki kertoo, että kiihtyvyys osoittaa ylös.
-**Järkevyys:** Ilmanvastus on noin $1{,}4$ kertaa paino $5{,}9\,\text{N}$. Ylöspäin jää siis noin $2\,\text{N}$, ja kiihtyvyys on noin $2\,\text{N} : 0{,}6\,\text{kg} \approx 3{,}5\,\text{m/s}^2$. Pallo hidastuu, kunnes ilmanvastus on pienentynyt painon suuruiseksi.
+**Järkevyys:** Ilmanvastus on noin $1{,}4$ kertaa paino $5{,}9\,\text{N}$. Ylöspäin jää siis noin $2\,\text{N}$, ja kiihtyvyys on noin $2\,\text{N} : 0{,}6\,\text{kg} \approx 3{,}3\,\text{m/s}^2$. Pallo hidastuu, kunnes ilmanvastus on pienentynyt painon suuruiseksi.
 
 ## fy4-14-L1-04
 **Annettu:** $m = 0{,}450\,\text{kg}$, ilmanvastus $F_\text{v} = 1{,}20\,\text{N}$, pallo nousee; $g = 9{,}81\,\text{m/s}^2$
@@ -59,7 +59,7 @@ v ylös
 ```
 **Kaava:** $\Sigma F = -G - F_\text{v} = -mg - F_\text{v}$, joten kokonaisvoiman suuruus on $|\Sigma F| = mg + F_\text{v}$
 **Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
-**Sijoitus:** $|\Sigma F| = 0{,}450\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 1{,}20\,\text{N} = 4{,}4145\,\text{N} + 1{,}20\,\text{N} = 5{,}6145\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &|\Sigma F| \\ &= 0{,}450\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ 1{,}20\,\text{N} \\ &= 4{,}4145\,\text{N} + 1{,}20\,\text{N} \\ &= 5{,}6145\,\text{N} \end{aligned}$$
 **Vastaus:** $5{,}61\,\text{N}$ alaspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $0{,}450\,\text{kg}$ ja ilmanvastus $1{,}20\,\text{N}$ on annettu kolmella numerolla.
 **Järkevyys:** Kokonaisvoima on suurempi kuin paino $4{,}41\,\text{N}$, koska ilmanvastus vetää samaan suuntaan. Siksi nouseva pallo hidastuu nopeammin kuin ilman ilmaa. Kokonaisvoima osoittaa alas, vaikka pallo liikkuu ylös.
 
@@ -111,7 +111,7 @@ a alas
 ```
 **Kaava:** $mg - F_\text{v} = ma$, joten $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $F_\text{v} = 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}00\,\text{m/s}^2) = 70{,}0\,\text{kg}\cdot 3{,}81\,\text{m/s}^2 = 266{,}7\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &F_\text{v} \\ &= 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 6{,}00\,\text{m/s}^2) \\ &= 70{,}0\,\text{kg}\cdot 3{,}81\,\text{m/s}^2 \\ &= 266{,}7\,\text{N} \end{aligned}$$
 **Vastaus:** $267\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $70{,}0\,\text{kg}$ ja kiihtyvyys $6{,}00\,\text{m/s}^2$ on annettu kolmella numerolla.
 **Järkevyys:** Hyppääjän paino on noin $690\,\text{N}$. Kiihtyvyys on noin $60\,\%$ putoamiskiihtyvyydestä, joten ilmanvastus kumoaa noin $40\,\%$ painosta eli noin $270\,\text{N}$. Hyppääjä ei ole vielä rajanopeudella, koska ilmanvastus on painoa pienempi.
 
@@ -204,9 +204,9 @@ a alas
 **Kuvaajan lukeminen:** Tangentti alkaa pystyakselilta kohdasta $(0;\, 2{,}0\,\text{m/s})$ ja kulkee ruudukon risteyksen $(2{,}0\,\text{s};\, 15{,}0\,\text{m/s})$ kautta. Nämä pisteet ovat kaukana toisistaan ja ruudukon viivoilla, joten ne voi lukea tarkasti. Kulmakerroin luetaan tangentilta, ei käyrän pisteistä.
 **Kaava:** $a = \dfrac{\Delta v}{\Delta t}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $a = \dfrac{15{,}0\,\text{m/s} - 2{,}0\,\text{m/s}}{2{,}0\,\text{s} - 0\,\text{s}} = 6{,}5\,\text{m/s}^2$ ja $F_\text{v} = 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}5\,\text{m/s}^2) = 0{,}150\,\text{kg}\cdot 3{,}31\,\text{m/s}^2 = 0{,}4965\,\text{N}$
+**Sijoitus:** $a = \dfrac{15{,}0\,\text{m/s} - 2{,}0\,\text{m/s}}{2{,}0\,\text{s} - 0\,\text{s}} = 6{,}5\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 6{,}5\,\text{m/s}^2) \\ &= 0{,}150\,\text{kg}\cdot 3{,}31\,\text{m/s}^2 \\ &= 0{,}4965\,\text{N} \end{aligned}$$
 **Vastaus:** $0{,}50\,\text{N}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luettu kiihtyvyys $6{,}5\,\text{m/s}^2$ on kahden numeron tarkkuudella.
-**Järkevyys:** Pallon paino on $0{,}150\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}5\,\text{N}$. Kiihtyvyys on noin kaksi kolmasosaa putoamiskiihtyvyydestä, joten ilmanvastus kumoaa noin kolmasosan painosta eli noin $0{,}5\,\text{N}$. Myöhemmin käyrä loivenee, ilmanvastus kasvaa ja lähestyy painoa.
+**Järkevyys:** Pallon paino on $$\begin{aligned} &0{,}150\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 1{,}5\,\text{N} \end{aligned}$$. Kiihtyvyys on noin kaksi kolmasosaa putoamiskiihtyvyydestä, joten ilmanvastus kumoaa noin kolmasosan painosta eli noin $0{,}5\,\text{N}$. Myöhemmin käyrä loivenee, ilmanvastus kasvaa ja lähestyy painoa.
 
 ## fy4-14-L1-06
 **Kysytty:** mikä väite kuvaa oikein putoavaa kappaletta, joka on saavuttanut rajanopeuden.
@@ -248,9 +248,9 @@ a alas
 ```
 **Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** $m = 20{,}0\,\text{g} = 20{,}0 \cdot 10^{-3}\,\text{kg} = 0{,}0200\,\text{kg}$
-**Sijoitus:** $a = \dfrac{5{,}15\,\text{m/s} - 3{,}35\,\text{m/s}}{0{,}80\,\text{s} - 0{,}40\,\text{s}} = 4{,}50\,\text{m/s}^2$ ja $F_\text{v} = 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 4{,}50\,\text{m/s}^2) = 0{,}0200\,\text{kg}\cdot 5{,}31\,\text{m/s}^2 = 0{,}1062\,\text{N}$
+**Sijoitus:** $a = \dfrac{5{,}15\,\text{m/s} - 3{,}35\,\text{m/s}}{0{,}80\,\text{s} - 0{,}40\,\text{s}} = 4{,}50\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 4{,}50\,\text{m/s}^2) \\ &= 0{,}0200\,\text{kg}\cdot 5{,}31\,\text{m/s}^2 \\ &= 0{,}1062\,\text{N} \end{aligned}$$
 **Vastaus:** $0{,}106\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $20{,}0\,\text{g}$ ja nopeuksissa.
-**Järkevyys:** Pallon paino on $0{,}0200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}196\,\text{N}$. Ilmanvastus $0{,}106\,\text{N}$ on noin puolet siitä. Kiihtyvyys $4{,}50\,\text{m/s}^2$ on noin puolet putoamiskiihtyvyydestä, kuten pitää. Taulukon lopussa nopeus on lähes vakio, $5{,}8\,\text{m/s}$. Silloin ilmanvastus on lähellä painoa $0{,}196\,\text{N}$.
+**Järkevyys:** Pallon paino on $$\begin{aligned} &0{,}0200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &= 0{,}196\,\text{N} \end{aligned}$$. Ilmanvastus $0{,}106\,\text{N}$ on noin puolet siitä. Kiihtyvyys $4{,}50\,\text{m/s}^2$ on noin puolet putoamiskiihtyvyydestä, kuten pitää. Taulukon lopussa nopeus on lähes vakio, $5{,}8\,\text{m/s}$. Silloin ilmanvastus on lähellä painoa $0{,}196\,\text{N}$.
 
 ## fy4-14-L2-06
 **Annettu:** taulukosta kartio 4: $m_4 = 4{,}8\,\text{g}$ ja $v_4 = 1{,}49\,\text{m/s}$; kartio 1: $m_1 = 1{,}2\,\text{g}$ ja $v_1 = 0{,}72\,\text{m/s}$; kartiot ovat rajanopeudella; $g = 9{,}81\,\text{m/s}^2$
@@ -287,7 +287,7 @@ v alas
 ```
 **Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$. Lopussa $a = 0$, joten $F_\text{v} = mg$.
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** a) $a = \dfrac{15{,}5\,\text{m/s} - 33{,}0\,\text{m/s}}{1{,}5\,\text{s} - 0{,}5\,\text{s}} = -17{,}5\,\text{m/s}^2$ ja $F_\text{v} = 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 17{,}5\,\text{m/s}^2) = 82{,}0\,\text{kg}\cdot 27{,}31\,\text{m/s}^2 = 2239{,}42\,\text{N}$. b) $mg = 82{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 804{,}42\,\text{N}$, joten $F_\text{v} : mg = 2239{,}42\,\text{N} : 804{,}42\,\text{N} = 2{,}78$. c) $F_\text{v} = mg = 804{,}42\,\text{N}$.
+**Sijoitus:** a) $a = \dfrac{15{,}5\,\text{m/s} - 33{,}0\,\text{m/s}}{1{,}5\,\text{s} - 0{,}5\,\text{s}} = -17{,}5\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &+ 17{,}5\,\text{m/s}^2) \\ &= 82{,}0\,\text{kg}\cdot 27{,}31\,\text{m/s}^2 \\ &= 2239{,}42\,\text{N} \end{aligned}$$. b) $mg = 82{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 804{,}42\,\text{N}$, joten $F_\text{v} : mg = 2239{,}42\,\text{N} : 804{,}42\,\text{N} = 2{,}78$. c) $F_\text{v} = mg = 804{,}42\,\text{N}$.
 **Vastaus:** a) $2240\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $82{,}0\,\text{kg}$. b) Ilmanvastus on noin $2{,}8$-kertainen paino. Kokonaisvoima $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ osoittaa ylös, koska kiihtyvyys on ylös. Hyppääjä ei nouse, koska kokonaisvoima vain pienentää alaspäin suuntautuvaa nopeutta. Nopeus on kaikissa taulukon kohdissa positiivinen alas. c) Ilmanvastus on noin $804\,\text{N}$ eli painon suuruinen. Nopeus pysyy vakiona, koska paino ja ilmanvastus kumoavat toisensa ja kokonaisvoima on nolla.
 **Järkevyys:** Ilmanvastus on kolmisen kertaa paino. Kokonaisvoima on siis noin kaksi painoa ylöspäin, ja kiihtyvyys on noin $2g \approx 20\,\text{m/s}^2$. Laskettu $17{,}5\,\text{m/s}^2$ on tätä lähellä. Kun nopeus pienenee, ilmanvastus pienenee. Kiihtyvyys lähestyy nollaa ja nopeus tasaantuu, kuten taulukon loppu näyttää.
 
@@ -305,14 +305,14 @@ a 0
 **Muunnokset:** $m = 0{,}0140\,\text{g} = 1{,}40 \cdot 10^{-5}\,\text{kg}$ ja $h = 1{,}50\,\text{km} = 1500\,\text{m}$
 **Sijoitus:** a) $F_\text{v} = 1{,}40 \cdot 10^{-5}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 1{,}373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171{,}55\,\text{m/s}$
 **Vastaus:** a) $1{,}37 \cdot 10^{-4}\,\text{N}$ ylöspäin. b) $172\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa kuten korkeudessa $1{,}50\,\text{km}$. c) Ilman ilmanvastusta nopeus olisi noin $620\,\text{km/h}$. Se on yli $20$-kertainen todelliseen $8{,}0\,\text{m/s}$ verrattuna, ja pisara olisi vaarallinen. Kun pisara putoaa, ilmanvastus kasvaa nopeuden kasvaessa, kunnes se on painon suuruinen. Silloin kokonaisvoima on nolla ja nopeus pysyy vakiona. Pisaran paino on vain noin $1{,}4 \cdot 10^{-4}\,\text{N}$. Pieni ilmanvastus riittää kumoamaan sen jo pienellä nopeudella.
-**Järkevyys:** Kiihtyvyydellä $g$ pisara saavuttaisi nopeuden $8{,}0\,\text{m/s}$ ajassa $8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 = 0{,}82\,\text{s}$. Se tapahtuisi muutamassa metrissä, vaikka matkaa on $1500\,\text{m}$. Todellisuudessa ilmanvastus rajoittaa nopeuden heti alussa. Pisara kulkee lähes koko matkan vakionopeudella ja putoaa vain noin $190\,\text{s}$. Tulos $171{,}55\,\text{m/s}$ on suuruusluokaltaan oikea, sillä $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
+**Järkevyys:** Kiihtyvyydellä $g$ pisara saavuttaisi nopeuden $8{,}0\,\text{m/s}$ ajassa $$\begin{aligned} &8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 \\ &= 0{,}82\,\text{s} \end{aligned}$$. Se tapahtuisi muutamassa metrissä, vaikka matkaa on $1500\,\text{m}$. Todellisuudessa ilmanvastus rajoittaa nopeuden heti alussa. Pisara kulkee lähes koko matkan vakionopeudella ja putoaa vain noin $190\,\text{s}$. Tulos $171{,}55\,\text{m/s}$ on suuruusluokaltaan oikea, sillä $\sqrt{2 \cdot 10 \cdot 1500} \approx 170$.
 
 ## fy4-14-L1-09
 **Kysytty:** mitkä viidestä väitteestä ylös heitetystä ja korkealta pudotetusta lentopallosta ovat tosia.
 **Periaate:** Palloon vaikuttavat paino $\overline{G}$ ja ilmanvastus $\overline{F}_\text{v}$. Liikeyhtälö on $\overline{G} + \overline{F}_\text{v} = m\overline{a}$. Ilmanvastus osoittaa nopeutta vastaan ja kasvaa nopeuden kasvaessa. Rajanopeudella $F_\text{v} = G$, joten kokonaisvoima on nolla.
 **Mallivastaus:** Pallon paino on
 
-$G = mg = 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$, eli $G \approx 2{,}65\,\text{N}$.
+$$\begin{aligned} &G = mg \\ &= 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \end{aligned}$$, eli $G \approx 2{,}65\,\text{N}$.
 
 1 tosi: nousun aikana ilmanvastus osoittaa alas, samaan suuntaan kuin paino. Siksi kokonaisvoima on suurempi kuin $mg$ ja kiihtyvyyden suuruus on suurempi kuin $9{,}81\,\text{m/s}^2$.
 2 epätosi: lakipisteessä nopeus on nolla, joten ilmanvastus on hetken nolla. Paino $2{,}65\,\text{N}$ vaikuttaa kuitenkin edelleen, ja kiihtyvyys on $g$ alaspäin.
@@ -334,6 +334,6 @@ v alas
 **Kuvaajan lukeminen:** Lue pisteet $(6{,}0\,\text{s};\, 40{,}4\,\text{m/s})$ ja $(10{,}0\,\text{s};\, 46{,}4\,\text{m/s})$. Ne ovat hetken $8{,}0\,\text{s}$ molemmin puolin. Nopeus kasvaa vielä, joten kiihtyvyys on positiivinen alas. Käyrän nousu loivenee. Välillä $0 \ldots 2{,}0\,\text{s}$ kulmakerroin on noin $9{,}3\,\text{m/s}^2$ eli lähes $g$. Välillä $10 \ldots 12\,\text{s}$ se on vain noin $0{,}5\,\text{m/s}^2$.
 **Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina. Muunnoksia ei tarvita.
-**Sijoitus:** a) $a = \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10{,}0\,\text{s} - 6{,}0\,\text{s}} = 1{,}50\,\text{m/s}^2$ ja $F_\text{v} = 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}50\,\text{m/s}^2) = 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 = 623{,}25\,\text{N}$. b) Paino $G = mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, joten $\dfrac{F_\text{v}}{G} = \dfrac{623{,}25\,\text{N}}{735{,}75\,\text{N}} = 0{,}847$
+**Sijoitus:** a) $a = \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10{,}0\,\text{s} - 6{,}0\,\text{s}} = 1{,}50\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 1{,}50\,\text{m/s}^2) \\ &= 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 \\ &= 623{,}25\,\text{N} \end{aligned}$$. b) Paino $G = mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, joten $\dfrac{F_\text{v}}{G} = \dfrac{623{,}25\,\text{N}}{735{,}75\,\text{N}} = 0{,}847$
 **Vastaus:** a) $F_\text{v} \approx 623\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $75{,}0\,\text{kg}$. b) Ilmanvastus on noin $85\,\%$ painosta. Kuvaajan pisteet tasaantuvat lähelle arvoa $48\,\text{m/s}$. Viimeisellä kahden sekunnin välillä nopeus kasvaa enää $0{,}9\,\text{m/s}$. Kun nopeus ei enää muutu, kiihtyvyys on nolla ja kokonaisvoima on nolla. Silloin ilmanvastus on yhtä suuri kuin paino, noin $736\,\text{N}$.
-**Järkevyys:** Paino on noin $736\,\text{N}$. Ilmanvastus $623\,\text{N}$ on sitä pienempi, kuten pitää, kun hyppääjä vielä kiihtyy alas. Kiihtyvyys $1{,}5\,\text{m/s}^2$ on selvästi pienempi kuin $g$, mutta se ei ole vielä nolla. Alussa nopeus on nolla ja ilmanvastus on nolla. Siksi alun kulmakerroin on lähes $g$.
+**Järkevyys:** Paino on noin $736\,\text{N}$. Ilmanvastus $623\,\text{N}$ on sitä pienempi, kuten pitää, kun hyppääjä vielä kiihtyy alas. Kiihtyvyys $1{,}5\,\text{m/s}^2$ on selvästi pienempi kuin $g$, mutta se ei ole vielä nolla. Alussa nopeus on nolla ja ilmanvastus on nolla. Siksi alun kulmakerroin on lähes $g$. Luvun kuvaajan malli antaisi samalle massalle rajanopeuden noin $53\,\text{m/s}$. Tämän hyppääjän rajanopeus $48\,\text{m/s}$ on pienempi, koska hän putoaa leveämmässä asennossa kuin kuvaajan hyppääjät (suurempi poikkipinta-ala, esimerkiksi väljä puku).

@@ -129,7 +129,7 @@
         {
           "text": "The charges of the plates are $+1.2\\,\\text{mC}$ and $-1.2\\,\\text{mC}$, so the total charge of the capacitor is zero.",
           "true": true,
-          "feedback": "Correct: $Q = CU$, that is, $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1.2\\,\\text{mC}$. The battery only moves charge from one plate to the other, so the charges of the plates are equal and opposite."
+          "feedback": "Correct: $Q = CU$, that is, $$\\begin{aligned} Q &= 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} \\\\ &= 1.2\\,\\text{mC} \\end{aligned}$$. The battery only moves charge from one plate to the other, so the charges of the plates are equal and opposite."
         },
         {
           "text": "After charging has ended, current passes through the insulator between the plates in the same way as in conductors.",
@@ -336,6 +336,19 @@
       "figure": "fy6-13/ex-qu2",
       "answer": 367.5,
       "unit": "µJ",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy6-13-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://phet.colorado.edu/en/simulations/capacitor-lab-basics\" target=\"_blank\" rel=\"noopener\">PhET – Capacitor Lab: Basics</a>\n\nHow does a capacitor store energy? Study the properties of a capacitor with the simulation. The simulation runs in the browser without installation. It has a parallel-plate capacitor connected to a battery. The voltage of the battery, the plate separation and the plate area can be changed, and the simulation can show the capacitance, the charge of a plate and the stored energy.\n\na) Study how the charge of the capacitor depends on the voltage when the plate separation and the plate area stay the same. Then study how the plate separation affects the capacitance. Record at least three pairs of values for each and describe the dependence.\n\nb) A capacitor used in electronics has a capacitance of $1000\\,\\mu\\text{F}$ and a voltage of $12\\,\\text{V}$. Calculate the energy stored in the capacitor.\n\nc) How does the stored energy change if the voltage is doubled while the capacitance stays constant? Justify with the formula and check your conclusion with the simulation.\n\nd) Compare a capacitor and a battery as ways of storing energy. Assess what kinds of uses each is suited to.\n\nThe answer box takes the energy of part b) in millijoules.",
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "answer": 72,
+      "unit": "mJ",
       "tolerance": 0.02
     }
   ],

@@ -203,10 +203,10 @@ v_4 &= \frac{12{,}0\,\text{m}}{0{,}410\,\text{s}} = 29{,}3\,\text{m/s}
 Kun jännitys kaksinkertaistuu, nopeus kasvaa kertoimella $\tfrac{15{,}0}{10{,}4} = 1{,}44$, $\tfrac{21{,}1}{15{,}0} = 1{,}41$ ja $\tfrac{29{,}3}{21{,}1} = 1{,}39$ eli noin $\sqrt{2} = 1{,}41$. Nopeus ei siis ole suoraan verrannollinen jännitykseen, mutta $v^2$ on. Lasketaan suhteet $C = v^2/F$:
 ```latex
 \begin{aligned}
-C_1 &= \frac{(10{,}4)^2}{5{,}0} = 21{,}8 \\
+C_1 &= \frac{(10{,}4)^2}{5{,}0} = 21{,}6 \\
 C_2 &= \frac{(15{,}0)^2}{10{,}0} = 22{,}5 \\
-C_3 &= \frac{(21{,}1)^2}{20{,}0} = 22{,}2 \\
-C_4 &= \frac{(29{,}3)^2}{40{,}0} = 21{,}4
+C_3 &= \frac{(21{,}1)^2}{20{,}0} = 22{,}3 \\
+C_4 &= \frac{(29{,}3)^2}{40{,}0} = 21{,}5
 \end{aligned}
 ```
 Suhteet ovat likimain yhtä suuret. Niiden summa on $87{,}9$, joten keskiarvo on $C = \tfrac{87{,}9}{4} = 22{,}0\,\tfrac{\text{m}^2}{\text{s}^2\,\text{N}}$. Jännityksellä $30\,\text{N}$ nopeus ja aallonpituus ovat

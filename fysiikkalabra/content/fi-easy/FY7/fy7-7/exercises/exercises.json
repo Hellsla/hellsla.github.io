@@ -268,12 +268,25 @@
       "id": "fy7-7-L2-07",
       "level": 2,
       "core": true,
-      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
+      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U$ $= 60\\,\\text{W} : 163\\,\\text{V}$ $= 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
       "kind": [
         "error"
       ],
       "answer": 0.26087,
       "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/faradays-law\" target=\"_blank\" rel=\"noopener\">PhET – Faraday's Law</a> (luettu 16. marraskuuta 2026)\n\nMiten sähköä tuotetaan magneetin avulla? Avaa simulaatio ja ota käyttöön jännitemittari (Voltmeter). Simulaatiossa on sauvamagneetti ja käämi eli johdin, joka on kierretty monelle kierrokselle. Magneettia voi liikuttaa. Käämiin on kytketty lamppu ja jännitemittari. Mittarin asteikolla on vain merkit $-$ ja $+$. Siinä ei ole lukuarvoja.\n\na) Liikuta magneettia käämin lähellä ja käämin läpi. Pidä magneettia välillä paikallaan, myös käämin sisällä. Kuvaile, milloin käämiin indusoituu eli syntyy jännite ja milloin ei.\n\nb) Tutki, miten magneetin liikenopeus ja liikesuunta vaikuttavat mittarin neulaan ja lampun kirkkauteen. Liikesuunta on joko kohti käämiä tai käämistä poispäin. Kirjaa havaintosi.\n\nc) Selitä kohtien a) ja b) havainnot magneettivuon muutoksen ja induktiolain avulla. Mittarissa ei ole lukuarvoja, joten tarkastele lisäksi esimerkkiä. Oletetaan, että käämissä on $4$ kierrosta. Kun magneettia työnnetään, yhden kierroksen läpi kulkeva magneettivuo kasvaa $0{,}25\\,\\text{mWb}$. Laske käämiin indusoituvan keskimääräisen jännitteen suuruus kahdessa tapauksessa: työntö kestää $2{,}0\\,\\text{s}$, ja työntö kestää $0{,}50\\,\\text{s}$.\n\nd) Sovella havaintojasi generaattoriin, jossa käämi pyörii magneettikentässä. Selitä, miksi käämiin syntyy vaihtojännite. Selitä myös, miten generaattori muuntaa mekaanista energiaa sähköenergiaksi.\n\nVastaa laatikkoon kohdan c) keskimääräisen jännitteen suuruus millivoltteina, kun työntö kestää $0{,}50\\,\\text{s}$.",
+      "answer": 2.0,
+      "unit": "mV",
       "tolerance": 0.02
     }
   ],

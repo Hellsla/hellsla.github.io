@@ -26,7 +26,9 @@
 **Muunnokset:** Ei tarvita: kilowattitunnit supistuvat ja tulos tulee jo grammoina, kuten vastaus pyydetään.
 **Sijoitus:** $m = 12\,\text{g/kWh} \cdot 18\,\text{kWh} = 216\,\text{g}$
 **Vastaus:** $220\,\text{g}$. Tuloksessa on kaksi merkitsevää numeroa, kuten tiedoissa $12\,\text{g/kWh}$ ja $18\,\text{kWh}$.
-**Järkevyys:** Pyöristetyillä luvuilla $10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa sadalta kilometriltä. Tämä sopii tuulivoiman pieneen päästökertoimeen.
+**Järkevyys:** Pyöristetyillä luvuilla $$
+10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}
+$$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa sadalta kilometriltä. Tämä sopii tuulivoiman pieneen päästökertoimeen.
 
 ## fy2-8-L1-04
 **Annettu:** kattopaneelien päästökerroin $e_1 = 41\,\text{g/kWh}$; maakaasusähkön päästökerroin $e_2 = 490\,\text{g/kWh}$; sama energia $E$
@@ -64,7 +66,18 @@
 **Periaate:** Energian määrä pysyy samana. Vain tuotantotapa vaihtuu. Päästöjen pieneneminen on vanhan ja uuden päästön erotus. Kummankin päästö on kerroin kertaa energia.
 **Kaava:** $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
 **Muunnokset:** Kilowattitunnit supistuvat, joten tulos tulee grammoina. Lopuksi $1\,\text{g} = 10^{-6}\,\text{t}$.
-**Sijoitus:** $m_1 - m_2 = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh} = 808\,\text{g/kWh} \cdot 3600\,\text{kWh} = 2\,908\,800\,\text{g} = 2\,908\,800 \cdot 10^{-6}\,\text{t} = 2{,}9088\,\text{t}$
+**Sijoitus:** $$
+\begin{aligned}
+m_1 - m_2 &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&\cdot 3600\,\text{kWh} \\
+&= 808\,\text{g/kWh} \\
+&\cdot 3600\,\text{kWh} \\
+&= 2\,908\,800\,\text{g} \\
+&= 2\,908\,800 \\
+&\cdot 10^{-6}\,\text{t} \\
+&= 2{,}9088\,\text{t}
+\end{aligned}
+$$
 **Vastaus:** $2{,}9\,\text{t}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kertoimissa $820\,\text{g/kWh}$ ja $12\,\text{g/kWh}$ (pyöristettyjä mediaaneja; energian $3600\,\text{kWh}$ nollat eivät kerro tarkkuutta).
 **Järkevyys:** Kivihiilellä päästö on $820 \cdot 3600\,\text{g} = 2\,952\,000\,\text{g} = 2\,952\,000 \cdot 10^{-6}\,\text{t} \approx 2{,}95\,\text{t}$ ja tuulella $12 \cdot 3600\,\text{g} = 43\,200\,\text{g} = 43\,200 \cdot 10^{-6}\,\text{t} \approx 0{,}043\,\text{t}$. Tuulella päästö on lähes nolla kivihiileen verrattuna. Säästö on siis lähes koko kivihiilen päästö.
 
@@ -96,7 +109,12 @@
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästö tulee grammoina.
 **Sijoitus:** $m_\text{bensa} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Vastaus:** $740\,\text{g/kWh}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulutuksessa $6{,}0\,\textsf{l}$ ja $18\,\text{kWh}$.
-**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) sähköauton päästö jää selvästi rajan alle. Pyöristettynä $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
+**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) sähköauton päästö jää selvästi rajan alle. Pyöristettynä $$
+\begin{aligned}
+&13\,000\,\text{g} : 18\,\text{kWh} \\
+&\approx 720\,\text{g/kWh}
+\end{aligned}
+$$.
 **Johtopäätös:** Kivihiilisähkön kerroin $820\,\text{g/kWh}$ on vain noin $10\,\%$ suurempi kuin raja $740\,\text{g/kWh}$. Ero on pienempi kuin vertailun epävarmuus. Bensiinille on nimittäin laskettu vain polttaminen, ei esimerkiksi öljyn tuotannon, jalostuksen ja kuljetuksen päästöjä. Kivihiilisähköllä ladatun sähköauton päästövähennys on siis vertailun tarkkuudella pieni tai olematon. Vähäpäästöisellä sähköllä, kuten tuuli- tai vesivoimalla, sähköauto on selvästi parempi.
 
 ## fy2-8-L3-02
@@ -145,7 +163,12 @@
 **Muunnokset:** Ei tarvita: pitoisuus on ppm-yksikössä ja aika vuosina.
 **Sijoitus:** $\Delta c = 414\,\text{ppm} - 380\,\text{ppm} = 34\,\text{ppm}$ ja $\Delta t = 2020\,\text{a} - 2005\,\text{a} = 15\,\text{a}$, joten $k = 34\,\text{ppm} : 15\,\text{a} = 2{,}27\,\text{ppm/a}$
 **Vastaus:** $k \approx 2{,}3\,\text{ppm/a}$. Tuloksessa on kaksi merkitsevää numeroa.
-**Järkevyys:** Vuosien $2005$ ja $2010$ välillä kasvu on $10\,\text{ppm}$ eli $2{,}0\,\text{ppm/a}$. Vuosien $2015$ ja $2020$ välillä kasvu on $13\,\text{ppm}$ eli noin $2{,}6\,\text{ppm/a}$. Keskiarvo $2{,}3\,\text{ppm/a}$ on näiden välissä. Tarkistus: $15\,\text{a} \cdot 2{,}3\,\text{ppm/a} = 34{,}5\,\text{ppm}$, mikä on lähellä muutosta $34\,\text{ppm}$.
+**Järkevyys:** Vuosien $2005$ ja $2010$ välillä kasvu on $10\,\text{ppm}$ eli $2{,}0\,\text{ppm/a}$. Vuosien $2015$ ja $2020$ välillä kasvu on $13\,\text{ppm}$ eli noin $2{,}6\,\text{ppm/a}$. Keskiarvo $2{,}3\,\text{ppm/a}$ on näiden välissä. Tarkistus: $$
+\begin{aligned}
+&15\,\text{a} \cdot 2{,}3\,\text{ppm/a} \\
+&= 34{,}5\,\text{ppm}
+\end{aligned}
+$$, mikä on lähellä muutosta $34\,\text{ppm}$.
 ## fy2-8-L2-06
 **Annettu:** päästöt $\text{Mt}$ vuonna $2010$: $30$, $12$, $10$, $6$ ja $3$; vuonna $2020$: $18$, $10$, $9$, $6$ ja $2$ (esimerkkiaineisto, ei tilasto)
 **Kysytty:** a) kokonaispäästöt $m_{2010}$ ja $m_{2020}$; b) kokonaispäästöjen pieneneminen prosentteina
@@ -161,7 +184,12 @@ b) Muutos on $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, ja $\dfrac{16}{61}
 ## fy2-8-L2-07
 **Kysytty:** mikä virhe opiskelijan laskussa on.
 **Periaate:** Päästö on päästökerroin kertaa energia, $m = e \cdot E$. Kun kerroin on yksikössä $\text{g/kWh}$ ja energia kilowattitunteina, kilowattitunnit supistuvat ja tulos on grammoina. Tulos muutetaan kilogrammoiksi kertomalla luvulla $0{,}001$.
-**Mallivastaus:** Kertolasku $820 \cdot 2{,}0 = 1640$ on oikein, mutta tulos on grammoina. Opiskelija kirjoitti yksiköksi kilogramman ja unohti muunnoksen. Siksi vastaus on tuhatkertainen. Oikea päästö on $1640\,\text{g} = 1640 \cdot 0{,}001\,\text{kg} = 1{,}64\,\text{kg}$ eli noin $1{,}6\,\text{kg}$. Tulos on järkevä myös arviolla: kaksi kilowattituntia kivihiilellä tuottaa alle kaksi kilogrammaa, ei puolitoista tonnia.
+**Mallivastaus:** Kertolasku $820 \cdot 2{,}0 = 1640$ on oikein, mutta tulos on grammoina. Opiskelija kirjoitti yksiköksi kilogramman ja unohti muunnoksen. Siksi vastaus on tuhatkertainen. Oikea päästö on $$
+\begin{aligned}
+1640\,\text{g} &= 1640 \cdot 0{,}001\,\text{kg} \\
+&= 1{,}64\,\text{kg}
+\end{aligned}
+$$ eli noin $1{,}6\,\text{kg}$. Tulos on järkevä myös arviolla: kaksi kilowattituntia kivihiilellä tuottaa alle kaksi kilogrammaa, ei puolitoista tonnia.
 ## fy2-8-L3-04
 **Annettu:** pitoisuudet $c_{1960} = 317\,\text{ppm}$, $c_{1980} = 339\,\text{ppm}$, $c_{2000} = 370\,\text{ppm}$ ja $c_{2020} = 414\,\text{ppm}$ (lähde: NOAA, Mauna Loan vuosikeskiarvot, pyöristetty)
 **Kysytty:** a) kasvunopeus kullakin $20$ vuoden jaksolla; b) ennuste vuodelle $2040$ viimeisen jakson kasvunopeudella; c) vertailu koko aineiston kasvunopeuteen ja perustelu
@@ -172,7 +200,15 @@ b) Muutos on $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, ja $\dfrac{16}{61}
 a) $k_{1960-1980} = (339 - 317)\,\text{ppm} : 20\,\text{a} = 22\,\text{ppm} : 20\,\text{a} = 1{,}1\,\text{ppm/a}$
 a) $k_{1980-2000} = (370 - 339)\,\text{ppm} : 20\,\text{a} = 31\,\text{ppm} : 20\,\text{a} \approx 1{,}6\,\text{ppm/a}$
 a) $k_{2000-2020} = (414 - 370)\,\text{ppm} : 20\,\text{a} = 44\,\text{ppm} : 20\,\text{a} = 2{,}2\,\text{ppm/a}$
-b) $c(2040) = 414\,\text{ppm} + 2{,}2\,\text{ppm/a} \cdot 20\,\text{a} = 414\,\text{ppm} + 44\,\text{ppm} = 458\,\text{ppm}$
+b) $$
+\begin{aligned}
+c(2040) &= 414\,\text{ppm} \\
+&+ 2{,}2\,\text{ppm/a} \cdot 20\,\text{a} \\
+&= 414\,\text{ppm} \\
+&+ 44\,\text{ppm} \\
+&= 458\,\text{ppm}
+\end{aligned}
+$$
 c) Koko aineiston kasvunopeus on $k = (414 - 317)\,\text{ppm} : 60\,\text{a} = 97\,\text{ppm} : 60\,\text{a} \approx 1{,}6\,\text{ppm/a}$, ja ennuste on $414\,\text{ppm} + 1{,}6\,\text{ppm/a} \cdot 20\,\text{a} \approx 414\,\text{ppm} + 32\,\text{ppm} = 446\,\text{ppm}$.
 **Vastaus:** b) Ennuste vuodelle $2040$ on noin $458\,\text{ppm}$. Tuloksessa on kolme merkitsevää numeroa. c) Koko aineiston suora antaisi noin $446\,\text{ppm}$ eli $12\,\text{ppm}$ vähemmän.
 **Järkevyys:** Viimeisen jakson muutos $44\,\text{ppm}$ on kaksi kertaa ensimmäisen jakson muutos $22\,\text{ppm}$. Ennuste $458\,\text{ppm}$ on suurempi kuin nykyinen $414\,\text{ppm}$. Näin pitää olla, kun pitoisuus kasvaa.
@@ -188,11 +224,22 @@ a) Kivihiili: $820\,\text{g/kWh} \cdot 40 \cdot 10^6\,\text{kWh} = 32{,}8 \cdot 
 a) Maakaasu: $490 \cdot 30 \cdot 10^6\,\text{g} = 14\,700\,\text{t}$
 a) Biomassa: $230 \cdot 20 \cdot 10^6\,\text{g} = 4600\,\text{t}$
 a) Tuulivoima: $12 \cdot 10 \cdot 10^6\,\text{g} = 120\,\text{t}$
-a) Summa: $32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t} = 52\,220\,\text{t}$
+a) Summa: $$
+\begin{aligned}
+&32\,800\,\text{t} + 14\,700\,\text{t} \\
+&+ 4600\,\text{t} + 120\,\text{t} \\
+&= 52\,220\,\text{t}
+\end{aligned}
+$$
 b) Maakaasu $30 + 10 = 40\,\text{GWh}$: $490 \cdot 40 \cdot 10^6\,\text{g} = 19\,600\,\text{t}$
 b) Biomassa: $4600\,\text{t}$
 b) Tuulivoima $10 + 30 = 40\,\text{GWh}$: $12 \cdot 40 \cdot 10^6\,\text{g} = 480\,\text{t}$
-b) Uusi summa: $19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}$
+b) Uusi summa: $$
+\begin{aligned}
+&19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} \\
+&= 24\,680\,\text{t}
+\end{aligned}
+$$
 b) Pieneneminen: $52\,220\,\text{t} - 24\,680\,\text{t} = 27\,540\,\text{t}$, ja $\dfrac{27\,540}{52\,220} \cdot 100\,\% = 52{,}7\,\%$
 c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,\text{t} + 4600\,\text{t} + 12 \cdot 50 \cdot 10^6\,\text{g} = 14\,700\,\text{t} + 4600\,\text{t} + 600\,\text{t} = 19\,900\,\text{t}$, pieneneminen $\dfrac{32\,320}{52\,220} \cdot 100\,\% = 61{,}9\,\%$, ja ero on $61{,}9 - 52{,}7 = 9{,}2$ prosenttiyksikköä.
 **Vastaus:** a) noin $52\,000\,\text{t}$ vuodessa. b) Päästöt pienenevät noin $53\,\%$. Tuloksessa on kaksi merkitsevää numeroa. c) Vähennys on noin $9\,$ prosenttiyksikköä pienempi.
@@ -221,6 +268,74 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 **Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$. Siis $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
 **Kaava:** $\Delta m = (e_\text{kivihiili} - e_\text{kaasu})E$
 **Muunnokset:** $20{,}0\,\text{MWh} = 20\,000\,\text{kWh}$; lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
-**Sijoitus:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6{,}6 \cdot 10^{6}\,\text{g} = 6{,}6\,\text{t}$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta m &= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \\
+&\cdot 20\,000\,\text{kWh} \\
+&= 6{,}6 \cdot 10^{6}\,\text{g} \\
+&= 6{,}6\,\text{t}
+\end{aligned}
+$$
 **Vastaus:** $\Delta m \approx 6{,}6\,\text{t}$, kaksi merkitsevää numeroa, koska päästökertoimien erotus $330\,\tfrac{\text{g}}{\text{kWh}}$ on kahden luetun luvun erotus.
 **Järkevyys:** Kivihiilellä päästö on $820 \cdot 20\,000\,\text{g} = 16{,}4\,\text{t}$ ja kaasulla $490 \cdot 20\,000\,\text{g} = 9{,}8\,\text{t}$. Erotus $16{,}4\,\text{t} - 9{,}8\,\text{t} = 6{,}6\,\text{t}$ vastaa tulosta. Se on noin $40\,\%$ kivihiilen päästöstä.
+
+## fy2-8-L2-10
+**Annettu:** päästökertoimet $e_\text{Suomi} = 57{,}47\,\text{g/kWh}$, $e_\text{Ruotsi} = 35{,}26\,\text{g/kWh}$ ja $e_\text{Puola} = 588{,}6\,\text{g/kWh}$ sekä tuotantomuotojen osuudet (taulukosta, Our World in Data / Ember, vuosi $2025$, luettu 16. marraskuuta 2026); sähköenergia $E = 5{,}0\,\text{kWh}$; Fingridin lukemat 16. marraskuuta 2026 klo 10:48 taulukosta: tuotetun sähkön arvio $16\,\text{g/kWh}$, kulutetun $15\,\text{g/kWh}$, tuonti −/vienti + $-210\,\text{MW}$, tuotanto $11\,341\,\text{MW}$, kulutus $11\,603\,\text{MW}$ ja tuulivoima $5571\,\text{MW}$
+**Kysytty:** a) kunkin maan kaksi suurinta tuotantomuotoa; b) suurimman ja pienimmän päästökertoimen suhde; c) päästö $m$ kussakin maassa yksikössä $\text{kg}$ (vastauskenttään Puola); d) miksi tuotetun ja kulutetun sähkön arviot sekä Fingridin ja OWIDin luvut eroavat; e) väitteen arviointi
+**Periaate:** Päästökerroin kertoo päästön yhtä energiayksikköä kohti. Siksi päästö on päästökerroin kertaa energia, $m = eE$. Kaikissa maissa energia on sama, $5{,}0\,\text{kWh}$. Siksi päästöjen suhde on sama kuin päästökertoimien suhde. Laskenta on malli: se olettaa, että laite käyttää maan keskimääräistä sähköä.
+**Kaava:** $m = eE$ ja suhde $\dfrac{e_\text{suurin}}{e_\text{pienin}}$
+**Muunnokset:** $1\,\text{kg} = 1000\,\text{g}$, joten gramman tulos jaetaan luvulla $1000$. Päästökerroin on yksikössä $\text{g/kWh}$ ja energia yksikössä $\text{kWh}$, joten muita muunnoksia ei tarvita.
+**Sijoitus:**
+b) $\dfrac{e_\text{Puola}}{e_\text{Ruotsi}} = \dfrac{588{,}6}{35{,}26} = 16{,}69$
+c) Puola: $m = 588{,}6\,\text{g/kWh} \cdot 5{,}0\,\text{kWh} = 2943\,\text{g} = 2{,}943\,\text{kg}$
+c) Suomi: $m = 57{,}47\,\text{g/kWh} \cdot 5{,}0\,\text{kWh} = 287{,}35\,\text{g} = 0{,}287\,\text{kg}$
+c) Ruotsi: $m = 35{,}26\,\text{g/kWh} \cdot 5{,}0\,\text{kWh} = 176{,}3\,\text{g} = 0{,}176\,\text{kg}$
+d) Tuonnin osuus kulutuksesta: $\dfrac{210\,\text{MW}}{11\,603\,\text{MW}} = 0{,}018 = 1{,}8\,\%$. Tuulivoiman osuus tuotannosta: $\dfrac{5571\,\text{MW}}{11\,341\,\text{MW}} = 0{,}491 = 49{,}1\,\%$. Luvut $57{,}47\,\text{g/kWh}$ ja $16\,\text{g/kWh}$: $57{,}47 : 16 = 3{,}6$.
+**Vastaus:** c) Puola $m \approx 2{,}9\,\text{kg}$, kaksi merkitsevää numeroa kuten energiassa $5{,}0\,\text{kWh}$. Suomi noin $0{,}29\,\text{kg}$ ja Ruotsi noin $0{,}18\,\text{kg}$. b) Suhde on noin $16{,}7$, eli Puolan arvo on noin $17$-kertainen Ruotsin arvoon verrattuna.
+**Järkevyys:** Pyöreillä luvuilla $600 \cdot 5 = 3000\,\text{g}$ on lähellä tulosta $2943\,\text{g}$. Päästöjen suhde $2943 : 176{,}3 = 16{,}7$ on sama kuin päästökertoimien suhde, kuten pitääkin. Yksikkö $\text{g/kWh} \cdot \text{kWh} = \text{g}$ on oikea.
+**Johtopäätös:** a) Suomessa eniten sähköä tuottavat ydinvoima ($39{,}9\,\%$) ja tuulivoima ($27{,}4\,\%$). Ruotsissa ne ovat vesivoima ($40{,}0\,\%$) ja ydinvoima ($27{,}6\,\%$). Puolassa suurin on hiili ($50{,}4\,\%$). Toiseksi suurin on maakaasu ($14{,}3\,\%$), mutta tuulivoima ($14{,}2\,\%$) on käytännössä yhtä suuri. Hiilen päästökerroin on oppitunnin taulukossa $820\,\text{g/kWh}$. Siksi Puolan sähkö on paljon päästöisempää kuin Suomen ja Ruotsin sähkö, joka tulee pääosin ydin-, vesi- ja tuulivoimasta.
+d) Tuotetun ja kulutetun sähkön arvioiden ero on vain $16 - 15 = 1\,\text{g/kWh}$. Kulutettu sähkö on Suomessa tuotettu sähkö ja tuonti miinus vienti. Tuonti on vain $1{,}8\,\%$ kulutuksesta. Vaikka tuotu sähkö olisi täysin päästötöntä, kulutetun sähkön arvio laskisi alle $0{,}3\,\text{g/kWh}$. Luvut on annettu kokonaislukuina, joten ero on melkein pyöristyksen kokoinen. Sivu ei kerro laskentatapaa tarkemmin.
+Fingridin luku $16\,\text{g/kWh}$ on noin $3{,}6$ kertaa pienempi kuin OWIDin luku $57{,}47\,\text{g/kWh}$. Luvut kuvaavat eri asioita. Fingrid kuvaa yhtä hetkeä, jolloin tuulivoima tuotti $49{,}1\,\%$ sähköstä. OWIDin vuoden $2025$ keskiarvossa tuulen osuus on $27{,}4\,\%$. OWIDin luku on myös elinkaaripäästö. Siinä on kaikki kasvihuonekaasut hiilidioksidiekvivalentteina, myös polttoaineketju ja rakentaminen. Fingridin sivu sanoo laskevansa tuotantomuotojen päästökertoimilla. Se ei sano arviota elinkaariarvioksi. Tuulinen marraskuun aamu on siis vähäpäästöisempi kuin vuosi keskimäärin.
+e) Väite ei pidä. Päästökerroin kertoo vain kasvihuonekaasujen määrän tuotettua sähköä kohti. Se on yhden hetken tai yhden vuoden keskiarvo. Ympäristöystävällisyyteen kuuluu muutakin: maankäyttö, vaikutukset luontoon, jätteet ja turvallisuus. Esimerkiksi ydinvoiman päästöt ovat pienet, mutta se tuottaa käytettyä ydinpolttoainetta. Lisäksi OWIDin elinkaaripäästö ja Fingridin arvio eivät ole suoraan vertailukelpoisia.
+
+## fy2-8-L2-11
+**Annettu:** taulukosta tuulivoima $P_\text{t}$, tuotanto $P$ ja kulutetun sähkön päästöarvio $e$ kolmena hetkenä (Fingrid, Sähköjärjestelmän tila, näkymä Tänään, luettu 16. marraskuuta 2026), sekä energia $E = 10\,\text{kWh}$
+**Kysytty:** a) tuulivoiman osuus tuotannosta prosentteina; b) päästö $m$ yksikössä $\text{g}$ jokaisena hetkenä (vastauskenttään klo 10:00); c) tuulivoiman tehon ja $e$:n muutokset jaksoilla ja $e$:n muutos tehon $1000\,\text{MW}$:n muutosta kohti sekä selitys; d) sähköauton latauksen ajoittamisen hyödyt ja rajoitukset
+**Periaate:** Osuus on tuulivoiman teho jaettuna tuotannon kokonaisteholla. Päästö on päästökerroin kertaa energia, $m = eE$, koska $e$ kertoo päästön kulutettua kilowattituntia kohti. Vertaamme kolmea hetkeä, jolloin sama energia $10\,\text{kWh}$ on aina sama, joten päästön ero tulee vain $e$:stä.
+**Kaava:** osuus $= \dfrac{P_\text{t}}{P} \cdot 100\,\%$, $m = eE$ ja muutosten suhde $\dfrac{\Delta e}{\Delta P_\text{t}}$
+**Muunnokset:** Osuudessa yksikkö $\text{MW}$ supistuu pois. Päästö saadaan suoraan grammoina, koska $\text{g/kWh} \cdot \text{kWh} = \text{g}$. Tehon muutos jaetaan luvulla $1000$, jotta saadaan muutos tehon $1000\,\text{MW}$ muutosta kohti.
+**Sijoitus:**
+a) Klo 01:00: $\dfrac{7639}{12\,791} \cdot 100\,\% = 59{,}7\,\%$
+a) Klo 08:00: $\dfrac{6716}{12\,570} \cdot 100\,\% = 53{,}4\,\%$
+a) Klo 10:00: $\dfrac{5885}{11\,610} \cdot 100\,\% = 50{,}7\,\%$
+b) Klo 01:00: $m = 9{,}8\,\text{g/kWh} \cdot 10\,\text{kWh} = 98\,\text{g}$
+b) Klo 08:00: $m = 13{,}7\,\text{g/kWh} \cdot 10\,\text{kWh} = 137\,\text{g}$
+b) Klo 10:00: $m = 15{,}0\,\text{g/kWh} \cdot 10\,\text{kWh} = 150\,\text{g}$
+c) Jakso 01:00–08:00: $\Delta P_\text{t} = 6716\,\text{MW} - 7639\,\text{MW} = -923\,\text{MW}$ ja $\Delta e = 13{,}7 - 9{,}8 = 3{,}9\,\text{g/kWh}$, joten $3{,}9 : 0{,}923 = 4{,}2\,\text{g/kWh}$ tuulivoiman $1000\,\text{MW}$:n vähenemistä kohti.
+c) Jakso 08:00–10:00: $\Delta P_\text{t} = 5885\,\text{MW} - 6716\,\text{MW} = -831\,\text{MW}$ ja $\Delta e = 15{,}0 - 13{,}7 = 1{,}3\,\text{g/kWh}$, joten $1{,}3 : 0{,}831 = 1{,}6\,\text{g/kWh}$ tuulivoiman $1000\,\text{MW}$:n vähenemistä kohti.
+d) Päästöjen ero: $150\,\text{g} - 98\,\text{g} = 52\,\text{g}$, ja $\dfrac{52\,\text{g}}{150\,\text{g}} = 0{,}35 = 35\,\%$.
+**Vastaus:** b) Klo 10:00 päästö on $m = 150\,\text{g}$, kolme merkitsevää numeroa kuten päästöarviossa $15{,}0\,\text{g/kWh}$ ($10\,\text{kWh}$ on tehtävän asettama tarkka arvo). Klo 01:00 päästö on $98\,\text{g}$ ja klo 08:00 $137\,\text{g}$. a) Tuulivoiman osuus on $59{,}7\,\%$, $53{,}4\,\%$ ja $50{,}7\,\%$.
+**Järkevyys:** Pyöreillä luvuilla $15 \cdot 10 = 150\,\text{g}$. Vertailun vuoksi kivihiilisähkö ($820\,\text{g/kWh}$, oppitunnin taulukko) antaisi $8200\,\text{g}$, noin $55$ kertaa enemmän, joten suomalainen sähkö on näinä hetkinä hyvin vähäpäästöistä. Suunta on oikea: kun tuulivoiman osuus pienenee, $e$ kasvaa.
+**Johtopäätös:** a) Kun tuulivoiman osuus on suurin ($59{,}7\,\%$), kulutetun sähkön päästöarvio on pienin ($9{,}8\,\text{g/kWh}$). Kun osuus on pienin ($50{,}7\,\%$), arvio on suurin ($15{,}0\,\text{g/kWh}$). Kolmesta hetkestä näkee yhteyden mutta ei syytä.
+c) Kun tuulivoima väheni $1000\,\text{MW}$, $e$ kasvoi ensimmäisellä jaksolla $4{,}2$ ja toisella $1{,}6\,\text{g/kWh}$. Ensimmäinen muutos on noin $2{,}7$-kertainen. Kulutetun sähkön $e$ on koko tuotannon ja tuonnin keskiarvo. Puuttuvaa tuulivoimaa korvaavat muut lähteet, joiden päästökertoimet ovat erilaiset. Vesivoima kasvoi jaksolla 01:00–08:00 $400\,\text{MW}$ ($1520 \to 1920\,\text{MW}$). Jaksolla 08:00–10:00 se pieneni $140\,\text{MW}$ ($1920 \to 1780\,\text{MW}$). Ydinvoima pysyi lähes samana. Myös vienti muuttui: $+2142\,\text{MW}$, $+1124\,\text{MW}$ ja $-152\,\text{MW}$. Tuulen väheneminen korvautui siis eri tavoin eri jaksoilla. Se voi osaltaan selittää eron. Kolmesta hetkestä ei voi erottaa kaikkia syitä.
+d) Hyödyt: jos $10\,\text{kWh}$ ladataan klo 01:00 eikä klo 10:00, laskennallinen päästö on $52\,\text{g}$ pienempi. Se on noin $35\,\%$ pienempi. Latauksen voi usein siirtää yöhön, ja se tasoittaa sähköjärjestelmän kuormaa. Rajoitukset: kolme hetkeä ei ole tilasto. Yksi päivä ei kerro, milloin tuulee tulevina päivinä. Päästöarvio on keskiarvo. Se ei kerro, mikä voimala tuottaa lisäkulutuksen. Auton pitää olla ladattu, kun sitä tarvitaan. Lataus ei saa myöskään maksaa enemmän kuin hyöty. Päästöero on pieni verrattuna siihen, mitä auton valinta tai ajomäärä muuttaa.
+
+## fy2-8-L3-06
+**Annettu:** päästökertoimet $e$ vuosina $2000$ ja $2025$: Suomi $246{,}82$ ja $57{,}47\,\text{g/kWh}$, Puola $954{,}6$ ja $588{,}6\,\text{g/kWh}$, Tanska $627{,}89$ ja $114{,}41\,\text{g/kWh}$, sekä hiilen, ydinvoiman ja tuulivoiman osuudet (taulukosta, Our World in Data / Ember, luettu 16. marraskuuta 2026)
+**Kysytty:** a) muutos $\Delta e$ yksikössä $\text{g/kWh}$ kussakin maassa; b) suhteellinen muutos prosentteina (vastauskenttään Suomi); c) selitys tuotantoosuuksien avulla; d) mitä elinkaaren päästöt tarkoittavat ja miksi pelkkä voimalaitoksen päästö johtaa harhaan; e) väitteen arviointi
+**Periaate:** Muutos on loppuarvo miinus alkuarvo, $\Delta e = e_{2025} - e_{2000}$. Suhteellinen muutos jakaa muutoksen alkuarvolla. Se kertoo, kuinka suuri muutos on alkutasoon verrattuna. Sama muutos $\text{g/kWh}$ on suuri, kun alkutaso on pieni. Se on pieni, kun alkutaso on suuri. Siksi maita verrataan suhteellisella muutoksella.
+**Kaava:** $\Delta e = e_{2025} - e_{2000}$ ja suhteellinen muutos $= \dfrac{\Delta e}{e_{2000}} \cdot 100\,\%$
+**Muunnokset:** Kaikki arvot ovat samassa yksikössä $\text{g/kWh}$, joten muunnoksia ei tarvita. Suhde muutetaan prosenteiksi kertomalla luvulla $100$.
+**Sijoitus:**
+a) Suomi: $\Delta e = 57{,}47 - 246{,}82 = -189{,}35\,\text{g/kWh}$
+a) Puola: $\Delta e = 588{,}6 - 954{,}6 = -366{,}0\,\text{g/kWh}$
+a) Tanska: $\Delta e = 114{,}41 - 627{,}89 = -513{,}48\,\text{g/kWh}$
+b) Suomi: $\dfrac{-189{,}35}{246{,}82} \cdot 100\,\% = -76{,}72\,\%$
+b) Puola: $\dfrac{-366{,}0}{954{,}6} \cdot 100\,\% = -38{,}34\,\%$
+b) Tanska: $\dfrac{-513{,}48}{627{,}89} \cdot 100\,\% = -81{,}78\,\%$
+**Vastaus:** b) Suomen päästökerroin pieneni noin $77\,\%$ eli suhteellinen muutos on $-77\,\%$. Annetaan kaksi merkitsevää numeroa, koska elinkaaripäästöjen arvio on epävarmuudeltaan suurempi kuin $1\,\%$, joten lisänumerot eivät lisäisi tietoa. Puolassa muutos on $-38\,\%$ ja Tanskassa $-82\,\%$. a) Muutokset ovat noin $-189\,\text{g/kWh}$, $-366\,\text{g/kWh}$ ja $-513\,\text{g/kWh}$, joten absoluuttisesti suurin muutos on Tanskassa.
+**Järkevyys:** Suomen vuoden $2025$ arvo on $57{,}47 : 246{,}82 = 0{,}233$ eli $23\,\%$ vuoden $2000$ arvosta, joten pieneneminen on $100\,\% - 23\,\% = 77\,\%$. Pyöreillä luvuilla $(60 - 250) : 250 = -0{,}76$. Tanskan loppuarvo on alle viidesosa alkuarvosta ($114{,}41 : 627{,}89 = 0{,}18$), joten noin $-82\,\%$ on uskottava. Tulosten etumerkki on negatiivinen, koska päästökerroin pieneni.
+**Johtopäätös:** a), b) Tanskassa muutos on suurin sekä $\text{g/kWh}$:na että suhteellisesti. Puolassa muutos $366\,\text{g/kWh}$ on suurempi kuin Suomessa $189\,\text{g/kWh}$. Suhteellinen muutos on kuitenkin pienempi ($38\,\%$ ja $77\,\%$), koska Puolan alkutaso oli paljon korkeampi.
+c) Tuotantorakenne selittää erot. Tanskassa hiilen osuus pieneni $46{,}5\,\%$:sta $2{,}7\,\%$:iin. Tuulivoiman osuus kasvoi $11{,}8\,\%$:sta $57{,}7\,\%$:iin. Siksi päästökerroin romahti. Suomessa hiilen osuus pieneni $12{,}1\,\%$:sta $0{,}2\,\%$:iin. Tuulivoiman osuus kasvoi $0{,}1\,\%$:sta $27{,}4\,\%$:iin ja ydinvoiman $32{,}1\,\%$:sta $39{,}9\,\%$:iin. Puolassa hiili tuotti vielä vuonna $2025$ puolet sähköstä ($50{,}4\,\%$). Tuulivoiman osuus oli vasta $14{,}2\,\%$. Siksi Puolan päästökerroin $588{,}6\,\text{g/kWh}$ on noin $10$ kertaa Suomen arvo ($588{,}6 : 57{,}47 = 10{,}2$). Taulukko ei näytä kaasun, öljyn, veden, auringon ja bion osuuksia. Siksi selitys ei ole täydellinen.
+d) Elinkaaren päästöt ovat kaikki sähköntuotannon kasvihuonekaasupäästöt koko ketjussa. Mukana ovat polttoaineen hankinta ja kuljetus, voimalan ja laitteiden valmistus ja rakentaminen, käyttö ja purku. Ne ilmoitetaan hiilidioksidiekvivalentteina. Jos katsotaan vain voimalaitoksella syntyviä päästöjä, tuulivoima, aurinkovoima ja ydinvoima näyttävät päästöttömiltä. Niiden rakentamisessa ja materiaaleissa syntyy kuitenkin päästöjä. Oppitunnin taulukossa tuulivoiman elinkaaren päästökerroin on $12\,\text{g/kWh}$, vaikka siinä ei ole polttoa. Pelkkä voimalaitoksen päästö aliarvioisi puhtaiden tuotantotapojen päästöt ja jättäisi polttoaineketjun huomiotta.
+e) Väite ei pidä. Taulukossa on vain kaksi vuotta, $2000$ ja $2025$. Se näyttää kokonaismuutoksen mutta ei sitä, mitä välivuosina tapahtui. Kehitys on voinut olla tasaista. Se on voinut olla myös äkillistä, esimerkiksi uuden voimalan tai sään (tuuli, vesi) takia. Päästökerroin on voinut kasvaa joinakin vuosina. Tasaisuuden osoittamiseen tarvittaisiin jokainen vuosi, jotka sivu näyttää. Luku koskee myös vain sähköä, ei kaikkea energiankäyttöä, esimerkiksi liikennettä ja lämmitystä.

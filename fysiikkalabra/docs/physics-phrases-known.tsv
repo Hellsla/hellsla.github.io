@@ -1,0 +1,6 @@
+folder	file	rule	sentence (physics_phrases.py; work queue 18 deletes a row when it corrects the sentence)
+FY5/fy5-12	exercises/solutions.md	heat-into	Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.
+FY6/fy6-10	exercises/exercises.json	heat-into	Varaus ei muutu lämmöksi eikä häviä.
+FY6/fy6-10	exercises/solutions.md	heat-into	Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
+FY6/sovella	solutions.md	heat-into	- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
+units/fy9-lampo	sovella/solutions.md	heat-into	### d) **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi **Periaate:** Energia säilyy: kuumentimen

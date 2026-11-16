@@ -285,6 +285,37 @@
       "answer": "Kappale B ($0{,}90\\,\\text{g/cm}^3$), kappale D ($1{,}2\\,\\text{g/cm}^3$), kappale A ($2{,}7\\,\\text{g/cm}^3$), kappale C ($9{,}0\\,\\text{g/cm}^3$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/\" target=\"_blank\" rel=\"noopener\">NASA – Planetary Fact Sheet</a> (luettu 16. marraskuuta 2026)\n\nVoiko planeetan koosta päätellä sen tiheyden? NASA on Yhdysvaltojen avaruusjärjestö. Sen taulukossa on tietoja aurinkokunnan planeetoista. Taulukossa on esimerkiksi planeetan massa (Mass, yksikkönä $10^{24}\\,\\text{kg}$), halkaisija (Diameter, $\\text{km}$) ja keskitiheys (Density, $\\text{kg/m}^3$). Keskitiheys on koko planeetan massa jaettuna koko planeetan tilavuudella. Sivun <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/planetfact_notes.html\" target=\"_blank\" rel=\"noopener\">taulukon selitykset (Notes on the Fact Sheets)</a> kertovat, että halkaisija on mitattu päiväntasaajalta. Päiväntasaaja on planeetan keskikohdan ympäri kulkeva viiva. Pallon tilavuus on $V = \\dfrac{\\pi d^3}{6}$, missä $d$ on pallon halkaisija.\n\na) Valitse neljä planeettaa, joista yksi on Maa ja yksi Saturnus. Tee taulukko, jossa ovat näiden planeettojen massat, halkaisijat ja keskitiheydet.\n\nb) Piirrä kuvaaja kaikista kahdeksasta planeetasta. Vaaka-akselille tulee halkaisija ja pystyakselille keskitiheys. Kuvaile, miten tiheys riippuu halkaisijasta.\n\nc) Laske Maan ja Saturnuksen keskitiheys niiden massasta ja halkaisijasta. Vertaa tuloksia NASAn taulukon keskitiheyksiin. Saturnuksen tulos eroaa NASAn arvosta paljon enemmän kuin Maan tulos. Miksi?\n\nd) Eräs opiskelija väittää: ”Mitä suurempi planeetta on, sitä suurempi on sen tiheys.” Onko väite oikein? Perustele vastauksesi aineiston avulla.\n\nVastauskenttään tulee kohdan c) Maan keskitiheys yksikössä $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 5493,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "Kohta c): Saturnus pyörähtää akselinsa ympäri noin $11$ tunnissa (taulukon rivi Rotation Period). Mieti, millainen muoto on kaasupallolla, joka pyörii nopeasti. Mitä tämä muoto tekee tilavuudelle, jonka lasket päiväntasaajan halkaisijasta?"
+      ]
+    },
+    {
+      "id": "fy1-7-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/density\" target=\"_blank\" rel=\"noopener\">PhET – Density (Tiheys)</a> (luettu 16. marraskuuta 2026)\n\nVoiko materiaalin tunnistaa tiheyden perusteella? Materiaali tarkoittaa ainetta, josta kappale on tehty. Tutki simulaatiolla saman materiaalin eri kokoisia kappaleita. Tee ensin nämä asetukset: Avaa näkymä Intro. Valitse kappaleen materiaaliksi alumiini (Aluminum). Yläreunassa on tiheysmittari (Density). Pienennä se miinusnapista. Silloin mittari ei näytä tiheyttä, ja määrität tiheyden itse.\n\na) Muuta kappaleen massaa liukusäätimellä (Mass). Lue ohjauspaneelista kappaleen massa ja tilavuus (Volume). Tee tämä vähintään viidellä eri massalla. Kirjoita tulokset taulukkoon. Piirrä kuvaaja: vaaka-akselille tilavuus ja pystyakselille massa.\n\nb) Piirrä pisteiden kautta sopiva suora ja kirjoita sen yhtälö. Yhtälö on mallisi. Määritä mallin avulla alumiinin tiheys yksikössä $\\text{kg/m}^3$.\n\nc) Aseta tilavuudeksi arvo, jota et mitannut, esimerkiksi noin $9\\,\\textsf{l}$. Laske mallilla, mikä kappaleen massa on. Tämä on ennuste. Tarkista ennuste simulaatiosta.\n\nd) Avaa tiheysmittari uudelleen. Katso, mitä materiaaleja sen asteikolle on merkitty. Kappaleen materiaali on tuntematon, ja tiedät vain sen tiheyden. Voitko varmasti sanoa, mistä materiaalista kappale on tehty? Perustele.\n\nVastauskenttään tulee kohdan b) alumiinin tiheys yksikössä $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 2700,
+      "unit": "kg/m³",
+      "tolerance": 0.02
     }
   ],
   "level3": [

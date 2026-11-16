@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b00b18d0b241bb39
-SCOPE: delta added-exercise from 593f504a543bc1e6 base 8f23aa7ae3bd
+CONTENT-HASH: 2eb18a63c0e1ad44
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-3-L1-10 Järkevyys — "Yksiköt: $\Omega\cdot\text{m}\cdot\text{m}:\text{m}^2 = \Omega$" reads oddly with the colon beside a product; a fraction $\dfrac{\Omega\cdot\text{m}\cdot\text{m}}{\text{m}^2}$ would show the unit check at a glance.
+- [Minor] fy6-3 all languages: the data-table caption wraps in a narrow, cramped table box; widen the table or keep the caption on one line.
+- [Minor] fy6-3 solution: the Kaava stage mixes parts b) and c) in one paragraph; give each part's formula its own line. 'Kohta b)' also appears twice (Sijoitus and as its own stage).
 
 ## Checked
-- open-exercises-1280-9 and -10 (task 3-10 with its hint, answer field and the whole solution open): $R = \rho \dfrac{l}{A}$, conversion, substitution as aligned rows, number with unit LaTeX, decimal comma, glossary terms (resistiivisyys, resistanssi) and instruction ("Vastaa ohmeina") clear; the set reads as one.
+- Proof sheets fi-fy6-3-exercises-* (all, every numbered formula); captures open-exercises-L2 of the new task with solutions open (source link, table or sub-questions, solution stages, units), opened for fi.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

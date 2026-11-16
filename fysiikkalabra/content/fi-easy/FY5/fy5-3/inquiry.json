@@ -282,7 +282,7 @@
         {
           "text": "Hän sijoitti halkaisijan säteen paikalle. Säde on $0{,}35\\,\\text{m}$, joten $v \\approx 6{,}6\\,\\text{m/s}$.",
           "correct": true,
-          "feedback": "Oikein. Kaavassa $v = 2\\pi r f$ on säde $r = \\tfrac{d}{2} = 0{,}35\\,\\text{m}$. Siis $$\\begin{aligned} v &= 2\\pi \\cdot 0{,}35\\,\\text{m} \\cdot 3{,}0\\,\\tfrac{1}{\\text{s}} \\\\ &= 6{,}6\\,\\text{m/s} \\end{aligned}$$. Halkaisijalla voi laskea suoraan kaavalla $v = \\pi d f$."
+          "feedback": "Oikein. Kaavassa $v = 2\\pi r f$ on säde $r = \\tfrac{d}{2} = 0{,}35\\,\\text{m}$. Siis $v = 2\\pi \\cdot 0{,}35\\,\\text{m} \\cdot 3{,}0\\,\\tfrac{1}{\\text{s}} = 6{,}6\\,\\text{m/s}$. Halkaisijalla voi laskea suoraan kaavalla $v = \\pi d f$."
         },
         {
           "text": "Pyörimistaajuus olisi pitänyt ensin muuttaa kierrosajaksi, koska kaava $v = 2\\pi r f$ ei kelpaa.",

@@ -4,9 +4,9 @@
 **Periaate:** Turbiinien läpi putoava vesi menettää potentiaalienergiaa $mgh$, ja sekunnissa putoaa massa $\rho Q$. Voimala muuttaa tästä tehosta sähköksi osuuden $\eta$, joten käytetään vesivoimalan tehon kaavaa.
 **Kaava:** $P = \eta\rho Q g h$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{MW} = 10^{6}\,\text{W}$.
-**Sijoitus:** $P = 0{,}900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 15{,}0\,\text{m} = 15\,892\,200\,\text{W} \approx 15{,}9\,\text{MW}$
+**Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 15{,}0\,\text{m} \\ &= 15\,892\,200\,\text{W} \\ &\approx 15{,}9\,\text{MW} \end{aligned}$$
 **Vastaus:** $15{,}9\,\text{MW}$, kolme merkitsevää numeroa kuten putouskorkeudessa $15{,}0\,\text{m}$, virtaamassa $120\,\text{m}^3\text{/s}$ ja hyötysuhteessa $0{,}900$.
-**Järkevyys:** Kuutiometri vettä antaa $15\,\text{m}$:n pudotuksessa noin $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} = 150\,\text{kJ}$, joten $120$ kuutiometriä sekunnissa antaa noin $18\,\text{MW}$, ja siitä $90\,\%$ on noin $16\,\text{MW}$. Teho on pienempi kuin Imatran $192\,\text{MW}$, koska sekä virtaama että putouskorkeus ovat pienempiä.
+**Järkevyys:** Kuutiometri vettä antaa $15\,\text{m}$:n pudotuksessa noin $$\begin{aligned} &1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} \\ &= 150\,\text{kJ} \end{aligned}$$, joten $120$ kuutiometriä sekunnissa antaa noin $18\,\text{MW}$, ja siitä $90\,\%$ on noin $16\,\text{MW}$. Teho on pienempi kuin Imatran $192\,\text{MW}$, koska sekä virtaama että putouskorkeus ovat pienempiä.
 
 ## fy4-15-L1-02
 **Annettu:** veden massa $m = 1000\,\text{kg}$, korkeusero $h = 24{,}0\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
@@ -16,7 +16,7 @@
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten energia saadaan jouleina; lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $E_\text{p} = 1000\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 24{,}0\,\text{m} = 235\,440\,\text{J} \approx 235\,\text{kJ}$
 **Vastaus:** $235\,\text{kJ}$, kolme merkitsevää numeroa kuten korkeuserossa $24{,}0\,\text{m}$.
-**Järkevyys:** Arvio $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text{kJ}$ on lähellä tulosta. Jos sekunnissa putoaa satoja kuutiometrejä, teho on satoja kertoja $235\,\text{kW}$ eli kymmeniä tai satoja megawatteja, kuten suurissa vesivoimaloissa.
+**Järkevyys:** Arvio $$\begin{aligned} &1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} \\ &= 240\,\text{kJ} \end{aligned}$$ on lähellä tulosta. Jos sekunnissa putoaa satoja kuutiometrejä, teho on satoja kertoja $235\,\text{kW}$ eli kymmeniä tai satoja megawatteja, kuten suurissa vesivoimaloissa.
 
 ## fy4-15-L1-03
 **Annettu:** turbiiniin virtaavan veden teho $P_\text{o} = 50{,}0\,\text{MW}$, sähköteho $P_\text{a} = 46{,}0\,\text{MW}$
@@ -34,9 +34,9 @@
 **Periaate:** Ajassa $t$ häiriötön tuuli kuljettaisi pyyhkäisypinta-alan läpi ilmalieriön, jonka massa on $m = \rho A v t$ ja liike-energia $\tfrac{1}{2}mv^2$. Tuulen teho on tämä liike-energia jaettuna ajalla. Hyötysuhdetta ei tarvita, koska kysytään tuulen tehoa, ei sähkötehoa.
 **Kaava:** $P_\text{tuuli} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, joten $P_\text{tuuli} = \tfrac{1}{2}\rho A v^3$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $P_\text{tuuli} = \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 480\,000\,\text{W} = 480\,\text{kW}$
+**Sijoitus:** $$\begin{aligned} &P_\text{tuuli} \\ &= \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \\ &\cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 480\,000\,\text{W} \\ &= 480\,\text{kW} \end{aligned}$$
 **Vastaus:** $480\,\text{kW}$ eli $4{,}8 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten tuulen nopeudessa $8{,}0\,\text{m/s}$.
-**Järkevyys:** Häiriötön tuuli kuljettaa sekunnissa pyyhkäisypinta-alan läpi $1{,}25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}$ ilmaa, ja jokaisella kilogrammalla on liike-energiaa $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. Tulo on $480\,000\,\text{J}$ sekunnissa, sama tulos. Sähköksi saataisiin tästä alle puolet.
+**Järkevyys:** Häiriötön tuuli kuljettaa sekunnissa pyyhkäisypinta-alan läpi $$\begin{aligned} &1{,}25 \cdot 1500 \cdot 8\,\text{kg} \\ &= 15\,000\,\text{kg} \end{aligned}$$ ilmaa, ja jokaisella kilogrammalla on liike-energiaa $\tfrac{1}{2}\cdot 8^2\,\text{J} = 32\,\text{J}$. Tulo on $480\,000\,\text{J}$ sekunnissa, sama tulos. Sähköksi saataisiin tästä alle puolet.
 
 ## fy4-15-L1-05
 **Annettu:** sähköteho $P = 3{,}00\,\text{MW}$, aika $t = 6{,}00\,\text{h}$
@@ -74,7 +74,7 @@
 **Periaate:** Turbiinin läpi putoava vesi menettää potentiaalienergiaa, ja sekunnissa putoaa massa $\rho Q$. Voimala muuttaa tästä tehosta sähköksi osuuden $\eta$, joten käytetään vesivoimalan tehon kaavaa.
 **Kaava:** $P = \eta\rho Q g h$
 **Muunnokset:** $850\,\textsf{l} = 850 \cdot 0{,}001\,\text{m}^3 = 0{,}850\,\text{m}^3$, joten $Q = 0{,}850\,\text{m}^3\text{/s}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $P = 0{,}75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 6{,}5\,\text{m} = 40\,650\,\text{W} \approx 41\,\text{kW}$
+**Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 0{,}850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 6{,}5\,\text{m} \\ &= 40\,650\,\text{W} \\ &\approx 41\,\text{kW} \end{aligned}$$
 **Vastaus:** $41\,\text{kW}$, kaksi merkitsevää numeroa kuten putouskorkeudessa $6{,}5\,\text{m}$ ja hyötysuhteessa $0{,}75$.
 **Järkevyys:** Sekunnissa putoaa $850\,\text{kg}$ vettä, joka antaa $6{,}5\,\text{m}$:n pudotuksessa noin $850 \cdot 10 \cdot 6{,}5\,\text{J} \approx 55\,\text{kJ}$, ja siitä kolme neljäsosaa on noin $41\,\text{kJ}$ sekunnissa. Jos litroja ei muunnettaisi, tulos olisi tuhatkertainen, $41\,\text{MW}$, mikä on purolle aivan liikaa.
 
@@ -84,7 +84,7 @@
 **Periaate:** Ensin lasketaan sähköteho vesivoimalan tehon kaavasta, koska putoavan veden potentiaalienergiasta muuttuu sähköksi osuus $\eta$. Teho pysyy vakiona, kun virtaama pysyy samana, joten energia on teho kertaa aika.
 **Kaava:** $P = \eta\rho Q g h$ ja $E = Pt$, joten $E = \eta\rho Q g h t$
 **Muunnokset:** Teho lasketaan watteina ja muunnetaan megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$; aika pidetään tunteina, jolloin energia saadaan megawattitunteina.
-**Sijoitus:** $P = 0{,}800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 3{,}20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}50\,\text{m} = 238\,579\,\text{W}$ ja $E = 0{,}238\,579\,\text{MW} \cdot 24{,}0\,\text{h} = 5{,}7259\,\text{MWh}$
+**Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 3{,}20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 9{,}50\,\text{m} \\ &= 238\,579\,\text{W} \end{aligned}$$ ja $E = 0{,}238\,579\,\text{MW} \cdot 24{,}0\,\text{h} = 5{,}7259\,\text{MWh}$
 **Vastaus:** $5{,}73\,\text{MWh}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Teho on noin $0{,}24\,\text{MW}$, ja vuorokaudessa on $24$ tuntia: $0{,}24 \cdot 24 \approx 5{,}8\,\text{MWh}$. Se vastaa noin kolmasosaa sähkölämmitteisen omakotitalon vuoden kulutuksesta, mikä sopii pienvoimalalle.
 
@@ -130,7 +130,7 @@
 **Periaate:** Sekunnissa turbiinien läpi putoaa vesimassa $\rho Q$, ja jokainen kilogramma menettää potentiaalienergiaa $gh$. Hyötysuhdetta ei oteta huomioon, joten kysytty teho on potentiaalienergian pienenemisnopeus.
 **Kaava:** $P_\text{o} = \rho Q g h$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{MW} = 10^{6}\,\text{W}$.
-**Sijoitus:** $P_\text{o} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35{,}0\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8{,}50\,\text{m} = 2\,918\,475\,\text{W} \approx 2{,}92\,\text{MW}$
+**Sijoitus:** $$\begin{aligned} &P_\text{o} \\ &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35{,}0\,\tfrac{\text{m}^3}{\text{s}} \\ &\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8{,}50\,\text{m} \\ &= 2\,918\,475\,\text{W} \\ &\approx 2{,}92\,\text{MW} \end{aligned}$$
 **Vastaus:** $2{,}92\,\text{MW}$, kolme merkitsevää numeroa kuten virtaamassa $35{,}0\,\text{m}^3\text{/s}$ ja putouskorkeudessa $8{,}50\,\text{m}$.
 **Järkevyys:** Sekunnissa putoaa $35\,000\,\text{kg}$ vettä, ja kilogramma menettää $8{,}5\,\text{m}$:n pudotuksessa noin $10 \cdot 8{,}5\,\text{J} = 85\,\text{J}$. Tulo on noin $3{,}0\,\text{MW}$, joten tulos on oikean suuruinen. Sähkötehoa saataisiin hyötysuhteella vähemmän kuin $2{,}92\,\text{MW}$.
 
@@ -150,7 +150,7 @@
 **Periaate:** Teho kertoo energian muuntumisnopeuden, joten energia on teho kertaa aika. Kullakin nopeudella teho on vakio, joten jokaisen rivin energia on $P t$. Vuosienergia on rivien energioiden summa.
 **Kaava:** $E = \sum P t$
 **Muunnokset:** Kun teho on kilowatteina ja aika tunteina, energia saadaan kilowattitunteina. Lopuksi $1\,\text{GWh} = 10^{6}\,\text{kWh}$.
-**Sijoitus:** Rivien energiat ovat $100\,\text{kW} \cdot 1500\,\text{h} = 150\,000\,\text{kWh}$, $340 \cdot 2200 = 748\,000\,\text{kWh}$, $850 \cdot 1800 = 1\,530\,000\,\text{kWh}$, $1650 \cdot 1000 = 1\,650\,000\,\text{kWh}$ ja $2000 \cdot 700 = 1\,400\,000\,\text{kWh}$. Summa on $5\,478\,000\,\text{kWh}$, joten $E = 5{,}478\,\text{GWh}$.
+**Sijoitus:** Rivien energiat ovat $$\begin{aligned} &100\,\text{kW} \cdot 1500\,\text{h} \\ &= 150\,000\,\text{kWh} \end{aligned}$$, $340 \cdot 2200 = 748\,000\,\text{kWh}$, $850 \cdot 1800 = 1\,530\,000\,\text{kWh}$, $1650 \cdot 1000 = 1\,650\,000\,\text{kWh}$ ja $2000 \cdot 700 = 1\,400\,000\,\text{kWh}$. Summa on $5\,478\,000\,\text{kWh}$, joten $E = 5{,}478\,\text{GWh}$.
 **Vastaus:** $5{,}5\,\text{GWh}$, kaksi merkitsevää numeroa, koska taulukon tehot ovat kahden tai kolmen merkitsevän numeron tarkkuudella.
 **Järkevyys:** Jos voimala tuottaisi koko vuoden ($8760\,\text{h}$) nimellistehoa $2000\,\text{kW}$, energia olisi $17{,}5\,\text{GWh}$. Saatu $5{,}5\,\text{GWh}$ on noin $31\,\%$ siitä, mikä sopii sille, että tuulivoimalan keskiteho on selvästi nimellistehoa pienempi.
 
@@ -160,13 +160,13 @@
 **Periaate:** Vesivoimalan teho on kuukauden virtaamalla $P = \eta\rho Q g h$. Koska $\eta$, $\rho$ ja $h$ ovat vakioita, teho on verrannollinen virtaamaan. Energia on teho kertaa aika, ja kullakin kuukaudella on sama pituus, joten energia saadaan summaamalla kuukausien tehot ja kertomalla yhden kuukauden pituudella.
 **Kaava:** $P = \eta\rho Q g h$ ja $E = Pt$, joten $E = \eta\rho g h\,\left(\sum Q\right) t$
 **Muunnokset:** Kuukauden pituus on $t = 30 \cdot 24\,\text{h} = 720\,\text{h}$. Teho lasketaan watteina ja muunnetaan megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$, jolloin energia saadaan megawattitunteina; lopuksi $1\,\text{GWh} = 1000\,\text{MWh}$.
-**Sijoitus:** Virtaamien summa on $85 + 120 + 45 + 30 + 28 + 40 = 348\,\text{m}^3\text{/s}$. Kuukausitehojen summa on
+**Sijoitus:** Virtaamien summa on $$\begin{aligned} &85 + 120 + 45 + 30 \\ &+ 28 + 40 \\ &= 348\,\text{m}^3\text{/s} \end{aligned}$$. Kuukausitehojen summa on
 $$\begin{aligned}\textstyle\sum P &= 0{,}85 \cdot 1000 \cdot 9{,}81 \cdot 9{,}0 \cdot 348\,\text{W} \\ &= 26{,}12\,\text{MW}\end{aligned}$$
 ja energia
 $$\begin{aligned}E &= 26{,}12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\text{MWh} \\ &= 18{,}8\,\text{GWh}\end{aligned}$$
 **Vastaus:** $19\,\text{GWh}$, kaksi merkitsevää numeroa kuten putouskorkeudessa $9{,}0\,\text{m}$ ja hyötysuhteessa $0{,}85$.
 **Mallivastaus kohtaan b:** Teho on verrannollinen virtaamaan, joten toukokuun ja elokuun tehojen suhde on sama kuin virtaamien suhde $120 : 28 = 4{,}3$. Toukokuussa teho on noin $9{,}0\,\text{MW}$ ja elokuussa noin $2{,}1\,\text{MW}$. Taulukossa virtaama on suurin keväällä ja pienin loppukesällä, joten tuotanto vaihtelee sen mukaan, kuinka paljon vettä joessa virtaa. Putouskorkeus ja hyötysuhde pysyvät vakioina, joten ne eivät selitä vaihtelua.
-**Järkevyys:** Keskivirtaama on $348 : 6 = 58\,\text{m}^3\text{/s}$, ja sillä teho olisi $0{,}85 \cdot 1000 \cdot 58 \cdot 9{,}81 \cdot 9{,}0\,\text{W} \approx 4{,}35\,\text{MW}$. Kuuden kuukauden ($4320\,\text{h}$) aikana energia olisi $4{,}35\,\text{MW} \cdot 4320\,\text{h} \approx 18{,}8\,\text{GWh}$, sama tulos.
+**Järkevyys:** Keskivirtaama on $348 : 6 = 58\,\text{m}^3\text{/s}$, ja sillä teho olisi $0{,}85 \cdot 1000 \cdot 58 \cdot 9{,}81 \cdot 9{,}0\,\text{W} \approx 4{,}35\,\text{MW}$. Kuuden kuukauden ($4320\,\text{h}$) aikana energia olisi $$\begin{aligned} &4{,}35\,\text{MW} \cdot 4320\,\text{h} \\ &\approx 18{,}8\,\text{GWh} \end{aligned}$$, sama tulos.
 
 ## fy4-15-L2-07
 **Annettu:** halkaisija $d = 60\,\text{m}$, tuulen nopeus $v = 7{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$, hyötysuhde $\eta = 0{,}40$; oppilaan tulos $4{,}9\,\text{kW}$
@@ -190,7 +190,7 @@ $$\begin{aligned}P &= 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m
 Suhteiden summa on $7{,}513$, joten keskiarvo on $k_\text{ka} = 7{,}513 : 6 = 1{,}252\,\tfrac{\text{kW}}{(\text{m/s})^3} = 1252\,\tfrac{\text{W}}{(\text{m/s})^3}$. Hyötysuhde on
 $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1{,}25 \cdot 5027} \\ &= 0{,}3986\end{aligned}$$
 **Vastaus:** $40\,\%$, kaksi merkitsevää numeroa, koska taulukon tehot ovat kahden tai kolmen merkitsevän numeron tarkkuudella.
-**Mallivastaus kohtiin a ja c:** Nopeus kasvaa nopeudesta $4\,\text{m/s}$ nopeuteen $9\,\text{m/s}$ eli $2{,}25$-kertaiseksi, jolloin $v^3$ kasvaa yli $11$-kertaiseksi, ja teho kasvaa saman verran: $905 : 80 \approx 11{,}3$. Suhde $P/v^3$ pysyy välillä $1{,}24$–$1{,}27$, eli se vaihtelee vain noin $\pm 2\,\%$ koko nopeusalueella. Pisteiden satunnaishajonta selittää pienen vaihtelun, eikä suhde kasva tai pienene nopeuden mukana, joten malli $P = k v^3$ sopii aineistoon. Tuplaus tukee tulosta: nopeudesta $4\,\text{m/s}$ nopeuteen $8\,\text{m/s}$ teho kasvaa $650 : 80 \approx 8{,}1$-kertaiseksi, ja $2^3 = 8$. Mallin ennuste nopeudella $13\,\text{m/s}$ on $1{,}252 \cdot 13^3\,\text{kW} \approx 2750\,\text{kW} = 2{,}8\,\text{MW}$, mikä on suurempi kuin nimellisteho $2{,}0\,\text{MW}$. Voimala ei voi tuottaa nimellistehoaan enempää, vaan lapoja käännetään päästämään osa tuulesta ohi, joten malli $P = k v^3$ pätee vain nimellistehon alapuolella.
+**Mallivastaus kohtiin a ja c:** Nopeus kasvaa nopeudesta $4\,\text{m/s}$ nopeuteen $9\,\text{m/s}$ eli $2{,}25$-kertaiseksi, jolloin $v^3$ kasvaa yli $11$-kertaiseksi, ja teho kasvaa saman verran: $905 : 80 \approx 11{,}3$. Suhde $P/v^3$ pysyy välillä $1{,}24$–$1{,}27$, eli se vaihtelee vain noin $\pm 2\,\%$ koko nopeusalueella. Pisteiden satunnaishajonta selittää pienen vaihtelun, eikä suhde kasva tai pienene nopeuden mukana, joten malli $P = k v^3$ sopii aineistoon. Tuplaus tukee tulosta: nopeudesta $4\,\text{m/s}$ nopeuteen $8\,\text{m/s}$ teho kasvaa $650 : 80 \approx 8{,}1$-kertaiseksi, ja $2^3 = 8$. Mallin ennuste nopeudella $13\,\text{m/s}$ on $$\begin{aligned} &1{,}252 \cdot 13^3\,\text{kW} \\ &\approx 2750\,\text{kW} \\ &= 2{,}8\,\text{MW} \end{aligned}$$, mikä on suurempi kuin nimellisteho $2{,}0\,\text{MW}$. Voimala ei voi tuottaa nimellistehoaan enempää, vaan lapoja käännetään päästämään osa tuulesta ohi, joten malli $P = k v^3$ pätee vain nimellistehon alapuolella.
 **Järkevyys:** Tuulen teho nopeudella $9\,\text{m/s}$ on $\tfrac{1}{2} \cdot 1{,}25 \cdot 5027 \cdot 9^3\,\text{W} \approx 2290\,\text{kW}$, ja $905\,\text{kW}$ on siitä $905 : 2290 \approx 0{,}40$, sama kuin saatu hyötysuhde. Tulos on alle teoreettisen ylärajan $59\,\%$ ja alle puolet, kuten tuulivoimalalla.
 
 ## fy4-15-L3-05
@@ -199,11 +199,11 @@ $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1{,}25 \cdot 5027} \\ &= 0{,}3986\e
 **Periaate:** Ylijäämäsähköenergia on teho kertaa aika. Pumput muuttavat siitä osuuden $\eta$ veden potentiaalienergiaksi $mgh$, josta ratkaistaan nostetun veden massa ja edelleen tilavuus $V = m/\rho$.
 **Kaava:** $E = \sum P t$, $\eta E = mgh$, joten $m = \dfrac{\eta E}{gh}$ ja $V = \dfrac{m}{\rho}$
 **Muunnokset:** Jokaisen tunnin teho on vakio, joten $E$ saadaan megawattitunteina. Lopuksi $1\,\text{MWh} = 10^{6}\,\text{W} \cdot 3600\,\text{s} = 3{,}6 \cdot 10^{9}\,\text{J}$.
-**Sijoitus:** Tehojen summa on $40 + 52 + 62 + 58 + 48 + 40 = 300\,\text{MW}$, ja jokainen teho kestää yhden tunnin, joten $E = 300\,\text{MWh} = 300 \cdot 3{,}6 \cdot 10^{9}\,\text{J} = 1{,}08 \cdot 10^{12}\,\text{J}$. Veteen siirtyy energiaa $\eta E = 0{,}800 \cdot 1{,}08 \cdot 10^{12}\,\text{J} = 8{,}64 \cdot 10^{11}\,\text{J}$. Massa ja tilavuus ovat
+**Sijoitus:** Tehojen summa on $$\begin{aligned} &40 + 52 + 62 + 58 + 48 \\ &+ 40 \\ &= 300\,\text{MW} \end{aligned}$$, ja jokainen teho kestää yhden tunnin, joten $E = 300\,\text{MWh} = 300 \cdot 3{,}6 \cdot 10^{9}\,\text{J} = 1{,}08 \cdot 10^{12}\,\text{J}$. Veteen siirtyy energiaa $\eta E = 0{,}800 \cdot 1{,}08 \cdot 10^{12}\,\text{J} = 8{,}64 \cdot 10^{11}\,\text{J}$. Massa ja tilavuus ovat
 $$\begin{aligned}m &= \frac{8{,}64 \cdot 10^{11}\,\text{J}}{9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 85{,}0\,\text{m}} \\ &= 1{,}036 \cdot 10^{9}\,\text{kg} \\ V &= \frac{m}{\rho} = 1{,}036 \cdot 10^{6}\,\text{m}^3\end{aligned}$$
 **Vastaus:** $1{,}04 \cdot 10^{6}\,\text{m}^3$, kolme merkitsevää numeroa kuten korkeudessa $85{,}0\,\text{m}$ ja hyötysuhteessa $0{,}800$.
 **Mallivastaus kohtiin b ja c:** Pumpattu vesi $1{,}04 \cdot 10^{6}\,\text{m}^3$ on pienempi kuin yläaltaan tilavuus $1{,}20 \cdot 10^{6}\,\text{m}^3$, joten vesi mahtuu altaaseen ja allas täyttyy noin $86\,\%$:iin. Veteen varastoitunut energia on $0{,}800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. Teholla $40{,}0\,\text{MW}$ se riittäisi ajaksi $240\,\text{MWh} : 40{,}0\,\text{MW} = 6{,}00\,\text{h}$, jos turbiinin ja generaattorin häviöt jätetään huomiotta. Todellisuudessa häviöt lyhentävät aikaa. Pumppuvoimala sopii tuulivoiman rinnalle, koska tuulivoima on sääriippuvaa ja sen teho voi ylittää kulutuksen, kun taas vesivoima on hyvin säädettävää. Ylijäämäsähkö voidaan varastoida veden potentiaalienergiaksi ja muuttaa takaisin sähköksi, kun tuuli tyyntyy ja kulutus on suurempi kuin tuotanto.
-**Järkevyys:** Tarkistetaan potentiaalienergia: $1{,}036 \cdot 10^{9}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}0\,\text{m} = 8{,}64 \cdot 10^{11}\,\text{J}$, joka on $240\,\text{MWh}$. Kuutiometri vettä sitoo $85\,\text{m}$:n korkeudella noin $1000 \cdot 9{,}81 \cdot 85\,\text{J} = 0{,}83\,\text{MJ}$, joten $240\,\text{MWh} = 8{,}64 \cdot 10^{5}\,\text{MJ}$ vaatii noin $10^{6}$ kuutiometriä, kuten saatiin.
+**Järkevyys:** Tarkistetaan potentiaalienergia: $$\begin{aligned} &1{,}036 \cdot 10^{9}\,\text{kg} \\ &\cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}0\,\text{m} \\ &= 8{,}64 \cdot 10^{11}\,\text{J} \end{aligned}$$, joka on $240\,\text{MWh}$. Kuutiometri vettä sitoo $85\,\text{m}$:n korkeudella noin $$\begin{aligned} &1000 \cdot 9{,}81 \cdot 85\,\text{J} \\ &= 0{,}83\,\text{MJ} \end{aligned}$$, joten $240\,\text{MWh} = 8{,}64 \cdot 10^{5}\,\text{MJ}$ vaatii noin $10^{6}$ kuutiometriä, kuten saatiin.
 
 ## fy4-15-L2-08
 **Kysytty:** tuulivoimalan sähkötehon $P$ suuruusluokka.
@@ -232,7 +232,7 @@ Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siit�
 **Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi tehon $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Kylmä ilma on tiheämpää kuin luvussa käytetty $1{,}25\,\text{kg/m}^3$, joten taulukon tiheys sijoitetaan kaavaan.
 **Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$, joten $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
 **Muunnokset:** Säde $r = 82\,\text{m} : 2 = 41\,\text{m}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $P = \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281{,}0\,\text{m}^2 \cdot \left(9{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 1\,117\,422\,\text{W} \approx 1100\,\text{kW}$
+**Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $$\begin{aligned} &P \\ &= \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 5281{,}0\,\text{m}^2 \cdot \left(9{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 1\,117\,422\,\text{W} \\ &\approx 1100\,\text{kW} \end{aligned}$$
 **Vastaus:** $1100\,\text{kW}$ eli noin $1{,}1\,\text{MW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $0{,}45$ ja tuulen nopeudessa $9{,}0\,\text{m/s}$.
 **Järkevyys:** Tiheydellä $1{,}25\,\text{kg/m}^3$ teho olisi $1{,}08\,\text{MW}$. Tiheys on noin $3\,\%$ suurempi, ja teho on suoraan verrannollinen tiheyteen, joten pakkasilla teho on noin $3\,\%$ suurempi. Tulos on luvun $120\,\text{m}$:n voimalan tulosta pienempi, koska roottori on pienempi.
 
@@ -245,7 +245,7 @@ Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siit�
 **Muunnokset:** $P = 511\,\text{kW} = 0{,}511\,\text{MW}$, ja aika pidetään tunteina, jolloin energia saadaan megawattitunteina.
 **Sijoitus:** $E = 0{,}511\,\text{MW} \cdot 120\,\text{h} = 61{,}32\,\text{MWh} \approx 61{,}3\,\text{MWh}$
 **Vastaus:** $61{,}3\,\text{MWh}$, kolme merkitsevää numeroa kuten kuvaajasta luetussa tehossa $511\,\text{kW}$.
-**Järkevyys:** Teho on noin $0{,}5\,\text{MW}$ ja aikaa on noin $100\,\text{h}$, joten energia on noin $50\,\text{MWh}$. Tuuli on tässä keskinopeutta, joten pelkkä teho aikaa kohti on sopiva arvio vain, koska tuuli on oletettu tasaiseksi.
+**Järkevyys:** Teho on noin $0{,}5\,\text{MW}$ ja aikaa on noin $100\,\text{h}$, joten energia on noin $50\,\text{MWh}$. Energia on tehon ja ajan tulo vain, koska tuuli on oletettu tasaiseksi: vaihtelevassa tuulessa teho muuttuu koko ajan, eikä keskinopeudesta luettu teho anna oikeaa energiaa.
 
 ## fy4-15-L2-10
 **Annettu:** tehokäyrä pisteinä, tuulen nopeus kasvaa arvosta $9\,\text{m/s}$ arvoon $12\,\text{m/s}$

@@ -272,7 +272,7 @@ From this the efficiency is $\eta = \tfrac{228.228\,\text{MW}}{600\,\text{MW}} =
 
 <!-- vaihe -->
 
-**Reasonableness.** Estimate: $0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual efficiency of a condensing power plant of about $40\,\%$ (typically $38$–$42\,\%$). The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
+**Reasonableness.** Estimate: $$\begin{aligned} &0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \\ &\approx 231\,\text{MW} \end{aligned}$$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual efficiency of a condensing power plant of about $40\,\%$ (typically $38$–$42\,\%$). The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
 
 The loss of the boiler is only $54\,\text{MW}$ and that of the generator and transformer $12\,\text{MW}$, so improvements should be aimed at the steam cycle and after that at the use of the heat of the condenser.
 

@@ -325,6 +325,20 @@
       "answer": 149,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/gas-properties\" target=\"_blank\" rel=\"noopener\">PhET – Gas Properties (Kaasun ominaisuuksia)</a> (luettu 16. marraskuuta 2026)\n\nSimulaatiossa on säiliö. Säiliöön pumpataan kaasuhiukkasia. Säiliön alla on laite, joka lämmittää tai jäähdyttää kaasua. Lämpömittari näyttää kaasun lämpötilan ja painemittari kaasun paineen. Tutki simulaatiolla, miten kaasun paine riippuu lämpötilasta. Tee ensin nämä asetukset: Avaa näkymä ”Ideaalikaasu” (Ideal). Valitse lämpömittarin yksiköksi kelvin ($\\text{K}$). Valitse painemittarin yksiköksi kilopascal ($\\text{kPa}$). Pumppaa säiliöön noin 100 painavaa hiukkasta.\n\na) Pidä kaasun tilavuus ja hiukkasten määrä samoina. Valitse siksi kohdasta ”pidä vakiona” tilavuus (V). Älä pumppaa lisää hiukkasia mittausten aikana. Lämmitä ja jäähdytä kaasua. Mittaa paine vähintään kuudessa eri lämpötilassa väliltä $200\\,\\text{K}$–$500\\,\\text{K}$. Painemittarin lukema heilahtelee eli muuttuu koko ajan vähän. Lue lukema siksi jokaisessa lämpötilassa muutaman kerran. Kirjaa taulukkoon keskimmäinen lukema. Arvioi myös, kuinka paljon yksi lukema voi poiketa keskimmäisestä.\n\nb) Piirrä kuvaaja, jossa vaaka-akselilla on kelvinlämpötila eli absoluuttinen lämpötila ja pystyakselilla paine. Aloita molemmat akselit nollasta. Sovita pisteisiin suora. Määritä, miten paine riippuu lämpötilasta: kirjoita malli yhtälönä ja määritä sen vakio ja vakion yksikkö.\n\nc) Ennusta mallillasi paine lämpötilassa, jota et käyttänyt mallin tekemiseen. Voit valita esimerkiksi lämpötilan $600\\,\\text{K}$. Tarkista ennuste simulaatiolla. Päättele, mahtuuko ero painemittarin heilahtelun rajoihin. Laske lisäksi mallistasi, kuinka moninkertaiseksi paine kasvaa, kun lämpötila nousee arvosta $300\\,\\text{K}$ arvoon $450\\,\\text{K}$.\n\nd) Selitä havaitsemasi riippuvuus kaasun hiukkasmallin avulla. Hiukkasmallissa kaasu koostuu pienistä hiukkasista, jotka liikkuvat koko ajan.\n\nVastauskenttään tulee kohdan c) viimeinen tulos: kuinka moninkertaiseksi paine kasvaa. Kirjoita pelkkä luku ilman yksikköä.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

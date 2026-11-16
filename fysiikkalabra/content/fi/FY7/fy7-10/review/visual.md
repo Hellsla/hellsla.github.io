@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f7bbaabd76044508
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 275a0f5e01919603
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "rajapinnassa … läpäisee rajapinnan" repeats the noun; e.g. "…osa valosta heijastuu ja osa menee läpi".
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Exception wording now "Tähän on kuitenkin poikkeuksia:" / "Tähän on kuitenkin poikkeuksia." / "There are exceptions, however:", which fits both total internal reflection and Brewster; chapter titles exact.
-- Hash identical at start and end of this round.
+- batch delta review: every re-broken chain of inquiry.json and exit-ticket.json rendered from preview/fy7-10.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

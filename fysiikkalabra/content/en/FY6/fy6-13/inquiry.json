@@ -30,11 +30,11 @@
         {
           "text": "$150\\,\\text{kV/m}$",
           "correct": true,
-          "feedback": "Correct. The strength of a uniform field is $E = \\tfrac{U}{d} = 300\\,\\text{V} : 0.0020\\,\\text{m} = 150\\,000\\,\\text{V/m}$ (chapter *Uniform electric field*). Today a capacitor is made from plates like these."
+          "feedback": "Correct. The strength of a uniform field is $$\\begin{aligned} E &= \\tfrac{U}{d} \\\\ &= 300\\,\\text{V} : 0.0020\\,\\text{m} \\\\ &= 150\\,000\\,\\text{V/m} \\end{aligned}$$ (chapter *Uniform electric field*). Today a capacitor is made from plates like these."
         },
         {
           "text": "$150\\,\\text{V/m}$",
-          "feedback": "You divided the voltage by the distance in millimetres. The unit of the field is $\\text{V/m}$, so the distance is converted to metres: $2.0\\,\\text{mm} = 0.0020\\,\\text{m}$, and $E = 300\\,\\text{V} : 0.0020\\,\\text{m} = 150\\,\\text{kV/m}$."
+          "feedback": "You divided the voltage by the distance in millimetres. The unit of the field is $\\text{V/m}$, so the distance is converted to metres: $2.0\\,\\text{mm} = 0.0020\\,\\text{m}$, and $$\\begin{aligned} E &= 300\\,\\text{V} : 0.0020\\,\\text{m} \\\\ &= 150\\,\\text{kV/m} \\end{aligned}$$."
         },
         {
           "text": "$0.60\\,\\text{V/m}$",
@@ -464,7 +464,7 @@
         {
           "text": "The capacitance has not been converted to farads: $470\\,\\mu\\text{F} = 470 \\cdot 10^{-6}\\,\\text{F}$, so the energy is about $0.034\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Correct. The capacitance is substituted into the formula in farads: $W = \\tfrac{1}{2} \\cdot 470 \\cdot 10^{-6}\\,\\text{F} \\cdot (12\\,\\text{V})^2 \\approx 0.034\\,\\text{J}$. The student's result is a million times too large, and over $30\\,\\text{kJ}$ would be an absurd amount in a small capacitor."
+          "feedback": "Correct. The capacitance is substituted into the formula in farads: $$\\begin{aligned} W &= \\tfrac{1}{2} \\cdot 470 \\cdot 10^{-6}\\,\\text{F} \\cdot (12\\,\\text{V})^2 \\\\ &\\approx 0.034\\,\\text{J} \\end{aligned}$$. The student's result is a million times too large, and over $30\\,\\text{kJ}$ would be an absurd amount in a small capacitor."
         },
         {
           "text": "The factor $\\tfrac{1}{2}$ is unnecessary, because the source delivers the energy $QU$, so the energy is $67\\,680\\,\\text{J}$.",
@@ -571,7 +571,7 @@
       "title": "3. Explain the danger",
       "optional": true,
       "prompt": "The power supply of an old television has a capacitor with a capacitance of $220\\,\\mu\\text{F}$ and a voltage of $330\\,\\text{V}$. Explain why the capacitor can still be dangerous after the television has been disconnected from the mains, and how large its energy is.",
-      "model": "When the television is disconnected from the mains, there is no path between the plates of the capacitor along which the charge could move from one plate to the other, so the charge and the voltage are retained. The capacitor still has a voltage of $330\\,\\text{V}$, and its energy is $W = \\tfrac{1}{2} C U^2 = \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\cdot (330\\,\\text{V})^2 \\approx 12\\,\\text{J}$. If a person touches both terminals, the capacitor discharges through the person's body, and the current is greatest at the very start. Therefore an opened device is not touched until the capacitor has been discharged.",
+      "model": "When the television is disconnected from the mains, there is no path between the plates of the capacitor along which the charge could move from one plate to the other, so the charge and the voltage are retained. The capacitor still has a voltage of $330\\,\\text{V}$, and its energy is $$\\begin{aligned} W &= \\tfrac{1}{2} C U^2 \\\\ &= \\tfrac{1}{2} \\cdot 220 \\cdot 10^{-6}\\,\\text{F} \\\\ &\\cdot (330\\,\\text{V})^2 \\\\ &\\approx 12\\,\\text{J} \\end{aligned}$$. If a person touches both terminals, the capacitor discharges through the person's body, and the current is greatest at the very start. Therefore an opened device is not touched until the capacitor has been discharged.",
       "criteria": [
         "The answer states that the charge and the voltage of a disconnected capacitor are retained, because the charge has no path from one plate to the other.",
         "The answer calculates the energy with the formula $W = \\tfrac{1}{2} C U^2$ and gets about $12\\,\\text{J}$.",

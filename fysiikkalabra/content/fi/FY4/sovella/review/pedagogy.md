@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a65ec454cabb7a0f
+CONTENT-HASH: 7a83c16bbde5a61b
 
 ## Blocking
-None. Delta: line 294 (fy4-s2 b) now writes E_p0, the starting potential energy, as the energy principle needs; consistent with the lesson and the rest of the task.
+None.
 
 ## Polish
 None.
 
 ## Checked
-Diff of solutions.md since the passed version.
+- fy4-s2 Järkevyys sentences (s2 a, c): "muuttuu sisäenergiaksi" is the correct term and fits the course level; the reasoning (upper-bound speed; over half the energy lost, 0,57) is unchanged.
+- Delta review of the changed lines only; the rest rests on the previous report.

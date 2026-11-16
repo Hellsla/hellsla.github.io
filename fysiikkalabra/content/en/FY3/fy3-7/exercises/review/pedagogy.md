@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: afd036d994463efc
+CONTENT-HASH: 430bd768d08773f3
+SCOPE: delta added-exercise from e62e3634bc7984aa base b2eac257e05e
 
 ## Blocking
 (none)
 
 ## Polish
-- fy3-7 latent-heat-of-fusion task (solutions.md:49) — "3.3 * 10^2 kJ/kg" with the calculated 333 in brackets is correct, but the line that follows says "three significant figures" nowhere now; fine. Optional: say why two significant figures (0.60 kg) beats the grid reading of 200 kJ, which is also exact to two.
+- Model answer b) uses "interaction energy" of the particles; FY3 scope may not teach this term explicitly. Optional: one sentence tying it to the lesson wording.
+- d) rewards "two things of each kind"; the model answer lists more, which is fine.
 
 ## Checked
-- The answer line now follows the data (mass 0.60 kg, two significant figures); the calculated 333 kJ/kg is shown, so no step is hidden.
-- The accepted range 323...343 is consistent with the stored answer and the 334 kJ/kg table value used in the reasonableness check.
-- Reasonableness comparison (20 kJ to warm the ice versus 200 kJ to melt it) still agrees with the melting-curve figure; the figure needs no change and does not give the answer away.
-- Conversions, substitution and principle lines unchanged; the question order and levels are untouched.
+- fy3-7-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).

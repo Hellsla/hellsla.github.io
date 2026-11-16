@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c66f27034b63f0f5
+CONTENT-HASH: 1a9d7eb4f629555e
 
 ## Blocking
 - none
@@ -8,4 +8,7 @@ CONTENT-HASH: c66f27034b63f0f5
 - none
 
 ## Checked
-- batch delta review: opened fy6-2-fig-row-1280.png (first theory figure, unchanged by the diff), fy6-2-theory-1280-2.png (the changed sentence "sama kuin virhearviossa" in the error-limit section, plus table, formulas and figures around it) and fy6-2-theory-1280-3.png (end of the theory: range figure, Yleinen virhekäsitys, Tiivistelmä; the changed "Tulos" sentence was not visible there and was read from the diff only). Wording-only change, spelling "virhearvio" consistent, nothing clipped. The inquiry.json solution change was read from the diff only, not as a capture.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-2-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

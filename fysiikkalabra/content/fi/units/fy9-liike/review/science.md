@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b8e3ee3f1f15aa3e
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (a160a51a52b7e3ef).
+CONTENT-HASH: 4333a9f1a3bfa2cc
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "matka nopeuskuvaajasta → pinta-ala" is the displacement when v changes sign; "kiihtyvyys on vakio, matka?" gives position (round 1, stand).
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed: row 4 is now "vakiokiihtyvyys, a ei tiedossa → keskinopeus, Δx = (v_0 + v)/2 · t" in the chart and the aria-label; the condition of the Kaava's derivation is stated.
-- aria-label: the broken "pinta- ala" is now "pinta-ala"; no physics change.
-- teacher.md: slope leads x → v → a, area v → x: correct.
-- Other rows unchanged and correct as in round 1.
-- Hash taken at the start and the end (b8e3ee3f1f15aa3e).
+- solutions.md s5 a Vastaus, the added rounding reason. Recomputed: a = 0,9375 m/s², range 0,741…1,224 m/s², half-range 0,242 m/s², upper limit 0,287 m/s² above and lower limit 0,197 m/s² below the best estimate; so ±0,3 m/s² covers the whole interval and ±0,2 would not. Agrees with the 25 % estimate in Järkevyys.
+- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-liike` OK; hash the same at start and end.

@@ -30,15 +30,15 @@
         {
           "text": "About $8.7\\,\\text{A}$, because current is power divided by voltage.",
           "correct": true,
-          "feedback": "Correct. $P = UI$, so $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ (chapter *Electric power and the heating of a resistor*). Today you calculate what happens when many such devices are on the same circuit."
+          "feedback": "Correct. $P = UI$, so $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8.7\\,\\text{A} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today you calculate what happens when many such devices are on the same circuit."
         },
         {
           "text": "About $0.12\\,\\text{A}$, because current is voltage divided by power.",
-          "feedback": "Voltage divided by power is not current, and its unit is not the ampere. Solve $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ from $P = UI$ (chapter *Electric power and the heating of a resistor*)."
+          "feedback": "Voltage divided by power is not current, and its unit is not the ampere. Solve $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8.7\\,\\text{A} \\end{aligned}$$ from $P = UI$ (chapter *Electric power and the heating of a resistor*)."
         },
         {
           "text": "About $2000\\,\\text{A}$, because the current of a device is the same number as its power.",
-          "feedback": "Power and current are different quantities. The same power is obtained with a small current when the voltage is large: $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8.7\\,\\text{A}$ (chapter *Electric power and the heating of a resistor*)."
+          "feedback": "Power and current are different quantities. The same power is obtained with a small current when the voltage is large: $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8.7\\,\\text{A} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*)."
         }
       ]
     },
@@ -122,7 +122,7 @@
         "hints": [
           "The devices are in parallel. How do the currents of devices in parallel combine in the circuit cable?",
           "The current in the circuit cable is the sum of the currents of the devices, that is, the total power divided by the voltage.",
-          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+          "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1200\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "The current of both devices flows through the extension cord. How large is it?",
-        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. The thermal power produced in the cord depends on the resistance of the cord and the current.",
+        "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1400\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$. The thermal power produced in the cord depends on the resistance of the cord and the current.",
         "$P = RI^2 = 0.60\\,\\Omega \\cdot (14.8\\,\\text{A})^2$."
       ],
       "mistakes": [

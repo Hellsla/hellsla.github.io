@@ -317,7 +317,7 @@
           "feedback": "Correct. The path difference has been calculated correctly, $0.80\\,\\text{m} = 1 \\cdot \\lambda$. The wave from farther away lags by exactly one period, so a crest arrives together with a crest and the sound is loud. Destructive interference would need a path difference of $0.40\\,\\text{m}$ or $1.20\\,\\text{m}$."
         },
         {
-          "text": "The path difference is calculated as a sum, $$3.20\\,\\text{m} + 2.40\\,\\text{m} = 5.60\\,\\text{m}$$.",
+          "text": "The path difference is calculated as a sum, $3.20\\,\\text{m} + 2.40\\,\\text{m} = 5.60\\,\\text{m}$.",
           "feedback": "The path difference is the difference of the distances, because it tells how much farther the other wave travels. The student's difference $0.80\\,\\text{m}$ is correct; the error is in the conclusion."
         },
         {

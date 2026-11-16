@@ -29,7 +29,7 @@
         {
           "text": "$100\\,\\text{N}$, koska pystykomponentti on $F\\sin 30^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0{,}5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. Samaa suorakulmaisen kolmion sääntöä tarvitaan tässä luvussa, kun lasketaan vinon voiman vartta."
+          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0{,}5 = 100\\,\\text{N}$. Samaa suorakulmaisen kolmion sääntöä tarvitaan tässä luvussa, kun lasketaan vinon voiman vartta."
         },
         {
           "text": "$173\\,\\text{N}$, koska pystykomponentti on $F\\cos 30^\\circ$.",
@@ -342,7 +342,7 @@
       "hints": [
         "Paino osoittaa suoraan alas. Kuinka kaukana akselista kulkee pystysuora vaikutussuora?",
         "Varsi on painon vaikutuskohdan vaakasuora etäisyys akselista: $r = 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
-        "$$\\begin{aligned} M &= mg\\cdot r \\\\ &= 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot \\\\ &1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ \\end{aligned}$$."
+        "$M = mg\\cdot r = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ$."
       ],
       "mistakes": [
         {
@@ -358,7 +358,7 @@
           "feedback": "Paino vaikuttaa puomin keskikohdassa, $1{,}50\\,\\text{m}$:n päässä akselista, ei puomin päässä."
         }
       ],
-      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli vaikutuskohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $$\\begin{aligned} &M \\\\ &= 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot \\\\ &1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ \\\\ &= 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} & \\\\ &= 135{,}3\\,\\text{Nm} \\end{aligned}$$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
+      "solution": "**Annettu:** puomin pituus $3{,}00\\,\\text{m}$, massa $m = 12{,}0\\,\\text{kg}$, paino vaikuttaa keskikohdassa $d = 1{,}50\\,\\text{m}$:n päässä akselista, puomin kulma vaakatasoon $40^\\circ$; $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** painon momentti $M$ akselin suhteen yksikössä $\\text{Nm}$\n\n**Periaate:** Puomi voi vain kääntyä akselinsa ympäri, joten painon vääntövaikutuksen kertoo sen momentti $M = Fr$. Paino osoittaa suoraan alas, joten sen varsi on akselin kohtisuora etäisyys pystysuorasta vaikutussuorasta eli vaikutuskohdan vaakasuora etäisyys akselista. Se on suorakulmaisessa kolmiossa kulman $40^\\circ$ viereinen kateetti.\n\n**Kaava:** $M = Gr$, missä $G = mg$ ja $r = d\\cos 40^\\circ$, joten $M = mgd\\cos 40^\\circ$\n\n**Muunnokset:** Massa on kilogrammoina ja pituus metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $M = 12{,}0\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2\\cdot 1{,}50\\,\\text{m}\\cdot\\cos 40^\\circ = 117{,}72\\,\\text{N}\\cdot 1{,}149\\,\\text{m} = 135{,}3\\,\\text{Nm}$\n\n**Vastaus:** $135\\,\\text{Nm}$, kolme merkitsevää numeroa kuten massassa $12{,}0\\,\\text{kg}$ ja pituudessa $3{,}00\\,\\text{m}$.\n\n**Järkevyys:** Vaakasuoran puomin painon varsi olisi koko $1{,}50\\,\\text{m}$ ja momentti $177\\,\\text{Nm}$. Nostettuna varsi lyhenee, joten momentti pienenee, ja pystyssä se olisi nolla. Kulman voi tarkistaa myös kaavalla $r = d\\sin\\alpha$: painon ja puomin jatkeen välinen kulma on $90^\\circ + 40^\\circ = 130^\\circ$ ja $\\sin 130^\\circ = \\cos 40^\\circ$."
     },
     {
       "id": "tehtavat",
@@ -404,7 +404,7 @@
       "hints": [
         "Kehän suuntainen voima on kohtisuorassa sädettä vastaan. Kuinka pitkä on silloin voiman varsi?",
         "Kummankin voiman varsi on säde $0{,}19\\,\\text{m}$. Vastapäivään kiertävä momentti on positiivinen, myötäpäivään kiertävä negatiivinen.",
-        "$$\\begin{aligned} \\Sigma M &= 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} \\\\ &- 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} \\end{aligned}$$."
+        "$\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m}$."
       ],
       "mistakes": [
         {
@@ -417,7 +417,7 @@
         }
       ],
       "practice": "Harjoittele kokonaismomenttia tason 2 tehtävissä.",
-      "solution": "**Annettu:** ohjauspyörän säde $R = 0{,}19\\,\\text{m}$, vasemman käden voima $F_1 = 25\\,\\text{N}$ vastapäivään, oikean käden voima $F_2 = 15\\,\\text{N}$ myötäpäivään, molemmat kehän suuntaisia\n\n**Kysytty:** kokonaismomentti $\\Sigma M$ akselin suhteen yksikössä $\\text{Nm}$, vastapäivään positiivisena\n\n**Periaate:** Ohjauspyörä kiertyy akselinsa ympäri, joten kunkin voiman vääntövaikutuksen kertoo sen momentti. Kehän suuntainen voima on kohtisuorassa sädettä vastaan, joten sen varsi on säde. Kokonaismomentti on momenttien summa etumerkkeineen.\n\n**Kaava:** $M_1 = F_1 R$ ja $M_2 = -F_2 R$, joten $\\Sigma M = F_1 R - F_2 R$\n\n**Muunnokset:** Voimat ovat newtoneina ja säde metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $$\\begin{aligned} \\Sigma M &= 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} \\\\ &- 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} \\\\ &= 4{,}75\\,\\text{Nm} & \\\\ &- 2{,}85\\,\\text{Nm} \\\\ &= 1{,}9\\,\\text{Nm} & \\end{aligned}$$\n\n**Vastaus:** $1{,}9\\,\\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten säteessä $0{,}19\\,\\text{m}$ ja voimissa.\n\n**Järkevyys:** Molemmilla voimilla on sama varsi, joten kokonaismomentti on voimien erotuksen $10\\,\\text{N}$ ja säteen tulo: $10\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 1{,}9\\,\\text{Nm}$. Suurempi voima kiertää vastapäivään, joten etumerkki on positiivinen: käsien voimat kiertävät pyörää yhdessä vastapäivään."
+      "solution": "**Annettu:** ohjauspyörän säde $R = 0{,}19\\,\\text{m}$, vasemman käden voima $F_1 = 25\\,\\text{N}$ vastapäivään, oikean käden voima $F_2 = 15\\,\\text{N}$ myötäpäivään, molemmat kehän suuntaisia\n\n**Kysytty:** kokonaismomentti $\\Sigma M$ akselin suhteen yksikössä $\\text{Nm}$, vastapäivään positiivisena\n\n**Periaate:** Ohjauspyörä kiertyy akselinsa ympäri, joten kunkin voiman vääntövaikutuksen kertoo sen momentti. Kehän suuntainen voima on kohtisuorassa sädettä vastaan, joten sen varsi on säde. Kokonaismomentti on momenttien summa etumerkkeineen.\n\n**Kaava:** $M_1 = F_1 R$ ja $M_2 = -F_2 R$, joten $\\Sigma M = F_1 R - F_2 R$\n\n**Muunnokset:** Voimat ovat newtoneina ja säde metreinä, joten muunnoksia ei tarvita.\n\n**Sijoitus:** $\\Sigma M = 25\\,\\text{N}\\cdot 0{,}19\\,\\text{m} - 15\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 4{,}75\\,\\text{Nm} - 2{,}85\\,\\text{Nm} = 1{,}9\\,\\text{Nm}$\n\n**Vastaus:** $1{,}9\\,\\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten säteessä $0{,}19\\,\\text{m}$ ja voimissa.\n\n**Järkevyys:** Molemmilla voimilla on sama varsi, joten kokonaismomentti on voimien erotuksen $10\\,\\text{N}$ ja säteen tulo: $10\\,\\text{N}\\cdot 0{,}19\\,\\text{m} = 1{,}9\\,\\text{Nm}$. Suurempi voima kiertää vastapäivään, joten etumerkki on positiivinen: käsien voimat kiertävät pyörää yhdessä vastapäivään."
     },
     {
       "id": "check-3",

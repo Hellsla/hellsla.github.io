@@ -218,7 +218,7 @@ $$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than
 **Given:** table $E_\text{k,A}$ and $E_\text{k,B}$ at the frequencies $8.0$–$11.0 \cdot 10^{14}\,\text{Hz}$
 **Find:** the difference of the work functions $W_\text{B} - W_\text{A}$ in electronvolts and which metal has the greater work function
 **Principle:** According to the photoelectric equation $E_\text{k,max} = hf - W$ for both metals. At the same frequency the photon energy $hf$ is the same, so the difference of the kinetic energies is the difference of the work functions. The slope of both lines is $h$.
-**Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $\tfrac{h}{e} = 4.14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
+**Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $h = 4.14 \cdot 10^{-15}\,\text{eV}\,\text{s}$.
 **Formula:** $$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
@@ -256,7 +256,7 @@ $$
 &\cdot 6.5 \cdot 10^{14}\,\text{Hz} \\
 &= -2.137\,\text{eV}
 \end{aligned}
-$$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $\tfrac{h}{e}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
+$$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $h$ in the unit $\text{eV}\,\text{s}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
 
 ## fy8-1-L3-01
 **Given:** work function of sodium $W = 2.28\,\text{eV}$, wavelength $\lambda = 350\,\text{nm}$, mass of the electron $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -383,7 +383,7 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 **Asked:** the greatest kinetic energy $E_\text{k,max}$ of the electrons released from metal A, in electronvolts
 **Principle:** The line of the graph shows the photoelectric equation $E_\text{k,max} = hf - W$. When the frequency is known, the greatest kinetic energy is read from the line directly on the vertical axis.
 **Reading the graph:** Find the frequency $12 \cdot 10^{14}\,\text{Hz}$ on the horizontal axis and go straight up to the line of metal A. The line meets this vertical line between the grid lines $2\,\text{eV}$ and $3\,\text{eV}$, three tenths below $3\,\text{eV}$, so the reading is about $2.7\,\text{eV}$.
-**Formula:** The check is calculated: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, where the slope of the line is $\dfrac{h}{e} = 0.4136\,\text{eV}$ for every $10^{14}\,\text{Hz}$ and the line of metal A starts on the horizontal axis at the threshold frequency $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$.
+**Formula:** The check is calculated: $E_\text{k,max} = hf - W = h\,(f - f_0)$, where the slope of the line is $h = 4.136 \cdot 10^{-15}\,\text{eV}\,\text{s}$, that is $0.4136\,\text{eV}$ for every $10^{14}\,\text{Hz}$ and the line of metal A starts on the horizontal axis at the threshold frequency $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$.
 **Conversions:** The frequencies are used in units of $10^{14}\,\text{Hz}$, so the slope is $0.4136\,\text{eV}$ and the result comes out directly in electronvolts.
 **Substitution:** $E_\text{k,max} = 0.4136\,\text{eV} \cdot (12 - 5.56) = 2.66\,\text{eV}$
 **Answer:** $E_\text{k,max} \approx 2.7\,\text{eV}$ (calculated $2.66\,\text{eV}$); the graph can be read to about $0.1\,\text{eV}$, so two significant figures are enough.
@@ -397,9 +397,38 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 **Formula:** $c = f_0 \lambda_0$, so $\lambda_0 = \dfrac{c}{f_0}$
 **Conversions:** $f_0 = 7.0 \cdot 10^{14}\,\text{Hz}$ is already in hertz; the result in metres is converted to nanometres: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
-**Answer:** $\lambda_0 \approx 428\,\text{nm}$, three significant figures; the frequency was read to two, so the result is accurate to about $\pm 1\,\%$.
+**Answer:** $\lambda_0 \approx 4.3 \cdot 10^{2}\,\text{nm}$ (calculated value $428\,\text{nm}$). Two significant figures, because the frequency $7.0 \cdot 10^{14}\,\text{Hz}$ read from the graph has two.
 **Reasonableness:** The threshold wavelength is in the violet region, and the photon energy there is $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2.9\,\text{eV}
 \end{aligned}
 $$. It is larger than the work function of metal A, $2.3\,\text{eV}$, and the line of B indeed starts to the right of the line of A.
+
+## fy8-1-L2-10
+**Given:** a reading made by yourself in the simulation, so here are the method and an example reading of 16 November 2026: for sodium, electrons are still released at the wavelength $538\,\text{nm}$ but no longer at $540\,\text{nm}$, so $\lambda_0 \approx 539\,\text{nm}$. A reading made with the slider can differ by a few nanometres. Constants $c = 2.998 \cdot 10^8\,\text{m/s}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+**Asked:** a) at which wavelengths electrons are released; b) the threshold frequency $f_0$ and the photon energy $hf_0$ in $\text{eV}$; c) the effect of intensity and frequency on the current and on the greatest kinetic energy; d) why the classical wave model is not enough
+**Principle:** In the photoelectric effect one photon gives all its energy $hf$ to one electron, and the electron is released only if $hf \geq W$. At the threshold frequency $hf_0 = W$, so the photon energy that corresponds to the threshold frequency is the work function of the metal.
+**Reading the graph:** In the current–voltage graph of the simulation the stopping voltage is the battery voltage at which the current becomes zero, and in the energy graph the greatest kinetic energy of the electrons is read from the vertical axis at the chosen wavelength or frequency. At the threshold the line of the energy graph starts from the horizontal axis: the greatest kinetic energy is zero at the frequency $f_0$. The reading of part b) is, however, taken straight from the slider: the longest wavelength at which the current is still larger than zero.
+**Model answer a):** For sodium, electrons are released when the wavelength is shorter than about $540\,\text{nm}$: with green, blue and violet light and with ultraviolet radiation. At longer wavelengths (yellow, orange, red) the current is zero even at the greatest intensity. Other metals need a shorter wavelength: in the model of the simulation the work function is $4.3\,\text{eV}$ for zinc and $6.3\,\text{eV}$ for platinum.
+**Formula:** $c = f_0\lambda_0$, so $f_0 = \dfrac{c}{\lambda_0}$, and the photon energy that corresponds to the threshold frequency is $E = hf_0$. In electronvolts $E = \dfrac{hf_0}{1\,\text{eV}}$.
+**Conversions:** $\lambda_0 = 539\,\text{nm} = 539 \cdot 10^{-9}\,\text{m}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+f_0 &= \tfrac{2.998 \cdot 10^8\,\text{m/s}}{539 \cdot 10^{-9}\,\text{m}} \\
+&= 5.562 \cdot 10^{14}\,\text{Hz}
+\end{aligned}$$
+
+$$\begin{aligned}
+hf_0 &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.562 \cdot 10^{14}\,\text{Hz} \\
+&= 3.686 \cdot 10^{-19}\,\text{J} \\
+&= \tfrac{3.686 \cdot 10^{-19}\,\text{J}}{1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 2.30\,\text{eV}
+\end{aligned}$$
+
+**Model answer c):** When the intensity is increased and the wavelength stays the same, the current grows, because more photons arrive and more electrons are released. The greatest kinetic energy of the electrons does not change: the stopping voltage stays the same. When the wavelength is made shorter, that is, the frequency is raised, the photon energy $hf$ grows and the greatest kinetic energy $E_\text{k,max} = hf - W$ grows. The intensity does not appear in the equation at all.
+**Model answer d):** By the classical wave model the energy of the light would arrive at the surface evenly, and brighter light would give the electrons more energy. Then light that is bright enough would release electrons at any wavelength, and raising the intensity would raise the kinetic energy. The observations are different: long-wavelength light releases no electrons at any intensity, and the intensity changes only the current, not the greatest kinetic energy. In the photon model energy comes in portions of size $hf$, and one portion is given to one electron. The threshold $hf \geq W$ and the dependence of the kinetic energy on the frequency follow from this.
+**Answer:** $hf_0 \approx 2.3\,\text{eV}$, two significant figures, because the wavelength is read from the slider to about $\pm 10\,\text{nm}$. Readings of $530\,\text{nm}$–$550\,\text{nm}$ give $2.25\,\text{eV}$–$2.34\,\text{eV}$.
+**Reasonableness:** A quick calculation gives $$\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 539\,\text{nm} &\approx 2.3\,\text{eV}
+\end{aligned}$$. The result equals the work function of sodium, $2.3\,\text{eV}$, in the model of the simulation, as it should, because the threshold is the frequency at which $hf = W$. The threshold is in the green region of light, as the threshold wavelength of sodium, $544\,\text{nm}$, in the theory.

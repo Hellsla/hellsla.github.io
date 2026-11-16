@@ -29,7 +29,7 @@
         {
           "text": "$1.5\\,\\text{m/s}$",
           "correct": true,
-          "feedback": "Correct. The acceleration is $a = \\tfrac{\\Sigma F}{m} = 3.0\\,\\text{m/s}^2$, and the velocity increases by $a\\,\\Delta t = 3.0\\,\\text{m/s}^2 \\cdot 0.50\\,\\text{s} = 1.5\\,\\text{m/s}$ (chapter *Newton's second law*). Note that the result depends on both the force and the time."
+          "feedback": "Correct. The acceleration is $a = \\tfrac{\\Sigma F}{m} = 3.0\\,\\text{m/s}^2$, and the velocity increases by $$\\begin{aligned} &a\\,\\Delta t = 3.0\\,\\text{m/s}^2 \\cdot 0.50\\,\\text{s} \\\\ &= 1.5\\,\\text{m/s} \\end{aligned}$$ (chapter *Newton's second law*). Note that the result depends on both the force and the time."
         },
         {
           "text": "$3.0\\,\\text{m/s}$",
@@ -253,7 +253,7 @@
           },
           {
             "text": "$I = \\Delta p$ only for the stopping cart, because the rebounding cart is moving at the end.",
-            "feedback": "Look at the rebound row: in the model's values $\\Delta p = 1.0\\,\\text{kg} \\cdot (-2.00 - 2.00)\\,\\text{m/s} = -4.00\\,\\text{kg}\\cdot\\text{m/s}$ and $I = -4.00\\,\\text{N}\\cdot\\text{s}$. The equality holds in both rows."
+            "feedback": "Look at the rebound row: in the model's values $$\\begin{aligned} &\\Delta p \\\\ &= 1.0\\,\\text{kg} \\\\ &\\cdot (-2.00 - 2.00)\\,\\text{m/s} \\\\ &= -4.00\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$ and $I = -4.00\\,\\text{N}\\cdot\\text{s}$. The equality holds in both rows."
           },
           {
             "text": "The impulse is negative, so it lowers the speed of the cart in both cases.",
@@ -376,12 +376,12 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "A ball of mass $0.40\\,\\text{kg}$ hits a wall at $5.0\\,\\text{m/s}$ and rebounds straight back at $5.0\\,\\text{m/s}$. A student calculates: $\\Delta p = m(v - v_0) = 0.40\\,\\text{kg} \\cdot (5.0 - 5.0)\\,\\text{m/s} = 0$, so the wall gives the ball no impulse. Where is the error?",
+      "prompt": "A ball of mass $0.40\\,\\text{kg}$ hits a wall at $5.0\\,\\text{m/s}$ and rebounds straight back at $5.0\\,\\text{m/s}$. A student calculates: $$\\begin{aligned} &\\Delta p = m(v - v_0) \\\\ &= 0.40\\,\\text{kg} \\\\ &\\cdot (5.0 - 5.0)\\,\\text{m/s} \\\\ &= 0 \\end{aligned}$$, so the wall gives the ball no impulse. Where is the error?",
       "choices": [
         {
           "text": "The velocities are in opposite directions, so $v = -5.0\\,\\text{m/s}$ and $\\Delta p = -4.0\\,\\text{kg}\\cdot\\text{m/s}$.",
           "correct": true,
-          "feedback": "Correct. When the positive direction is towards the wall, $\\Delta p = 0.40\\,\\text{kg} \\cdot (-5.0 - 5.0)\\,\\text{m/s} = -4.0\\,\\text{kg}\\cdot\\text{m/s}$. The wall gives the ball an impulse of $-4.0\\,\\text{N}\\cdot\\text{s}$ away from the wall: it stops the ball and accelerates it back."
+          "feedback": "Correct. When the positive direction is towards the wall, $$\\begin{aligned} &\\Delta p \\\\ &= 0.40\\,\\text{kg} \\\\ &\\cdot (-5.0 - 5.0)\\,\\text{m/s} \\\\ &= -4.0\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$. The wall gives the ball an impulse of $-4.0\\,\\text{N}\\cdot\\text{s}$ away from the wall: it stops the ball and accelerates it back."
         },
         {
           "text": "There is no error in the calculation: the speed does not change, so the momentum does not change.",
@@ -405,7 +405,7 @@
       "hints": [
         "By how much does the momentum of the ball change when it stops? Which principle connects the change in momentum and the force?",
         "The impulse–momentum principle: $F_\\text{avg}\\,\\Delta t = |\\Delta p| = mv_0$ when the final velocity is zero.",
-        "The change in momentum is $0.16\\,\\text{kg} \\cdot 25\\,\\text{m/s} = 4.0\\,\\text{kg}\\cdot\\text{m/s}$. Divide it by the stopping time."
+        "The change in momentum is $$\\begin{aligned} &0.16\\,\\text{kg} \\cdot 25\\,\\text{m/s} \\\\ &= 4.0\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$. Divide it by the stopping time."
       ],
       "mistakes": [
         {
@@ -439,7 +439,7 @@
         {
           "text": "The momenta are equal in magnitude but opposite in direction.",
           "correct": true,
-          "feedback": "Correct. The magnitude of each momentum is $60\\,\\text{kg} \\cdot 2.0\\,\\text{m/s} = 120\\,\\text{kg}\\cdot\\text{m/s}$, but momentum has the direction of the velocity. Once the positive direction is chosen, one momentum is $+120$ and the other $-120\\,\\text{kg}\\cdot\\text{m/s}$."
+          "feedback": "Correct. The magnitude of each momentum is $$\\begin{aligned} &60\\,\\text{kg} \\cdot 2.0\\,\\text{m/s} \\\\ &= 120\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$, but momentum has the direction of the velocity. Once the positive direction is chosen, one momentum is $+120$ and the other $-120\\,\\text{kg}\\cdot\\text{m/s}$."
         },
         {
           "text": "The momenta are the same, because the masses and speeds are the same.",

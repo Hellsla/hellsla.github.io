@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e070b14b313b08c9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 52e6bc077f7f5d52
 
 ## Blocking
 - none
@@ -9,7 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
-- No paragraph changed in this round in en exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-3) and every changed formula of inquiry.json captured from preview/en/fy7-3.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. Round-1 Critical resolved: the "How the calculation works" box again shows B, k1 and k2 as three definitions, identical to main; seen at 390 and 1280 px. Hint 3 (`μ0 = … / : 320.`), the uncertainty rows and the "She writes" chain read correctly. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

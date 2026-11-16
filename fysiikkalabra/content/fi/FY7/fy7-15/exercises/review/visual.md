@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 00b8c689c34d85f6
-SCOPE: delta added-exercise from 49d3bc7f92e37a89 base 8f23aa7ae3bd
+CONTENT-HASH: 8e4e028db7bda2c3
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] 15-10 — Sijoitus gives 268 W/m² from 0,67 (two figures) while Vastaus says 270 W/m²; keep one rule. The Kaava I = I_0·I/I_0 is a tautology.
-- [Minor] 15-19 Järkevyys — 'lähellä väliä, jonka keskikohta 195 lx' is clumsy; say 'lukema 200 lx on hieman suurempi kuin 195 lx, joka vastaa kulmaa 45°'.
+- [Minor] fy7-15-L1-09: the block I_D = ½ · 800 W/m² · cos² 60,0° is followed by "eli $I_\text{D} = 100\,\text{W/m}^2$" as inline text in a larger size than the chain; one chain would read better.
 
 ## Checked
-- fy7-15 L1 captures 10-12 (15-10 graph, 15-11), L2 captures 9-11 (15-19 graph, solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- own captures of every aligned block of the opened solutions at 390 and 1280 px (preview page at this hash, /tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/vis_b916/shots/fy7-15-390-s1, fy7-15-1280-s1): L1-09, L1-10, L3-01, L3-03, L3-04. I_3 and E chains break before · and +, the left side stands on its own row on a phone where needed, wide form joined; W/m² and lx intact.
+- No formula of the exercises overflows its box at 360 or 390 px (measured in the browser, every solution open).
+- Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

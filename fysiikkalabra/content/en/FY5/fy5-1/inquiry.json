@@ -29,7 +29,7 @@
         {
           "text": "$100\\,\\text{N}$, because the vertical component is $F\\sin 30^\\circ$.",
           "correct": true,
-          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0.5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
+          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0.5 = 100\\,\\text{N}$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
         },
         {
           "text": "$173\\,\\text{N}$, because the vertical component is $F\\cos 30^\\circ$.",
@@ -342,7 +342,7 @@
       "hints": [
         "The weight points straight down. How far from the axis does the vertical line of action pass?",
         "The lever arm is the horizontal distance of the point of application of the weight from the axis: $r = 1.50\\,\\text{m}\\cdot\\cos 40^\\circ$.",
-        "$$\\begin{aligned} M &= mg\\cdot r \\\\ &= 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot \\\\ &1.50\\,\\text{m}\\cdot\\cos 40^\\circ \\end{aligned}$$."
+        "$M = mg\\cdot r = 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 1.50\\,\\text{m}\\cdot\\cos 40^\\circ$."
       ],
       "mistakes": [
         {
@@ -358,7 +358,7 @@
           "feedback": "The weight acts at the middle of the barrier, $1.50\\,\\text{m}$ from the axis, not at the end of the barrier."
         }
       ],
-      "solution": "**Given:** length of the barrier $3.00\\,\\text{m}$, mass $m = 12.0\\,\\text{kg}$, the weight acts at the middle, $d = 1.50\\,\\text{m}$ from the axis, angle of the barrier to the horizontal $40^\\circ$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** moment $M$ of the weight about the axis in the unit $\\text{Nm}$\n\n**Principle:** The barrier can only turn about its axis, so the turning effect of the weight is given by its moment $M = Fr$. The weight points straight down, so its lever arm is the perpendicular distance from the axis to the vertical line of action, that is the horizontal distance of the point of application from the axis. In the right-angled triangle it is the side adjacent to the angle $40^\\circ$.\n\n**Formula:** $M = Gr$, where $G = mg$ and $r = d\\cos 40^\\circ$, so $M = mgd\\cos 40^\\circ$\n\n**Conversions:** The mass is in kilograms and the length in metres, so no conversions are needed.\n\n**Substitution:** $$\\begin{aligned} &M \\\\ &= 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot \\\\ &1.50\\,\\text{m}\\cdot\\cos 40^\\circ \\\\ &= 117.72\\,\\text{N}\\cdot 1.149\\,\\text{m} & \\\\ &= 135.3\\,\\text{Nm} \\end{aligned}$$\n\n**Answer:** $135\\,\\text{Nm}$, three significant figures like the mass $12.0\\,\\text{kg}$ and the length $3.00\\,\\text{m}$.\n\n**Reasonableness:** For a horizontal barrier the lever arm of the weight would be the whole $1.50\\,\\text{m}$ and the moment $177\\,\\text{Nm}$. When raised, the lever arm shortens, so the moment decreases, and when vertical it would be zero. The angle can also be checked with the formula $r = d\\sin\\alpha$: the angle between the weight and the extension of the barrier is $90^\\circ + 40^\\circ = 130^\\circ$ and $\\sin 130^\\circ = \\cos 40^\\circ$."
+      "solution": "**Given:** length of the barrier $3.00\\,\\text{m}$, mass $m = 12.0\\,\\text{kg}$, the weight acts at the middle, $d = 1.50\\,\\text{m}$ from the axis, angle of the barrier to the horizontal $40^\\circ$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** moment $M$ of the weight about the axis in the unit $\\text{Nm}$\n\n**Principle:** The barrier can only turn about its axis, so the turning effect of the weight is given by its moment $M = Fr$. The weight points straight down, so its lever arm is the perpendicular distance from the axis to the vertical line of action, that is the horizontal distance of the point of application from the axis. In the right-angled triangle it is the side adjacent to the angle $40^\\circ$.\n\n**Formula:** $M = Gr$, where $G = mg$ and $r = d\\cos 40^\\circ$, so $M = mgd\\cos 40^\\circ$\n\n**Conversions:** The mass is in kilograms and the length in metres, so no conversions are needed.\n\n**Substitution:** $M = 12.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 1.50\\,\\text{m}\\cdot\\cos 40^\\circ = 117.72\\,\\text{N}\\cdot 1.149\\,\\text{m} = 135.3\\,\\text{Nm}$\n\n**Answer:** $135\\,\\text{Nm}$, three significant figures like the mass $12.0\\,\\text{kg}$ and the length $3.00\\,\\text{m}$.\n\n**Reasonableness:** For a horizontal barrier the lever arm of the weight would be the whole $1.50\\,\\text{m}$ and the moment $177\\,\\text{Nm}$. When raised, the lever arm shortens, so the moment decreases, and when vertical it would be zero. The angle can also be checked with the formula $r = d\\sin\\alpha$: the angle between the weight and the extension of the barrier is $90^\\circ + 40^\\circ = 130^\\circ$ and $\\sin 130^\\circ = \\cos 40^\\circ$."
     },
     {
       "id": "tehtavat",
@@ -404,7 +404,7 @@
       "hints": [
         "A force along the rim is perpendicular to the radius. How long is the lever arm of the force then?",
         "The lever arm of both forces is the radius $0.19\\,\\text{m}$. An anticlockwise moment is positive and a clockwise moment negative.",
-        "$$\\begin{aligned} \\Sigma M &= 25\\,\\text{N}\\cdot 0.19\\,\\text{m} \\\\ &- 15\\,\\text{N}\\cdot 0.19\\,\\text{m} \\end{aligned}$$."
+        "$\\Sigma M = 25\\,\\text{N}\\cdot 0.19\\,\\text{m} - 15\\,\\text{N}\\cdot 0.19\\,\\text{m}$."
       ],
       "mistakes": [
         {
@@ -417,7 +417,7 @@
         }
       ],
       "practice": "Practise the net moment in the level 2 tasks.",
-      "solution": "**Given:** radius of the steering wheel $R = 0.19\\,\\text{m}$, force of the left hand $F_1 = 25\\,\\text{N}$ anticlockwise, force of the right hand $F_2 = 15\\,\\text{N}$ clockwise, both along the rim\n\n**Find:** net moment $\\Sigma M$ about the axis in the unit $\\text{Nm}$, anticlockwise positive\n\n**Principle:** The steering wheel rotates about its axis, so the turning effect of each force is given by its moment. A force along the rim is perpendicular to the radius, so its lever arm is the radius. The net moment is the sum of the moments with their signs.\n\n**Formula:** $M_1 = F_1 R$ and $M_2 = -F_2 R$, so $\\Sigma M = F_1 R - F_2 R$\n\n**Conversions:** The forces are in newtons and the radius in metres, so no conversions are needed.\n\n**Substitution:** $$\\begin{aligned} \\Sigma M &= 25\\,\\text{N}\\cdot 0.19\\,\\text{m} \\\\ &- 15\\,\\text{N}\\cdot 0.19\\,\\text{m} \\\\ &= 4.75\\,\\text{Nm} & \\\\ &- 2.85\\,\\text{Nm} \\\\ &= 1.9\\,\\text{Nm} & \\end{aligned}$$\n\n**Answer:** $1.9\\,\\text{Nm}$ anticlockwise, two significant figures like the radius $0.19\\,\\text{m}$ and the forces.\n\n**Reasonableness:** Both forces have the same lever arm, so the net moment is the product of the difference of the forces, $10\\,\\text{N}$, and the radius: $10\\,\\text{N}\\cdot 0.19\\,\\text{m} = 1.9\\,\\text{Nm}$. The larger force rotates anticlockwise, so the sign is positive: together the hands' forces rotate the wheel anticlockwise."
+      "solution": "**Given:** radius of the steering wheel $R = 0.19\\,\\text{m}$, force of the left hand $F_1 = 25\\,\\text{N}$ anticlockwise, force of the right hand $F_2 = 15\\,\\text{N}$ clockwise, both along the rim\n\n**Find:** net moment $\\Sigma M$ about the axis in the unit $\\text{Nm}$, anticlockwise positive\n\n**Principle:** The steering wheel rotates about its axis, so the turning effect of each force is given by its moment. A force along the rim is perpendicular to the radius, so its lever arm is the radius. The net moment is the sum of the moments with their signs.\n\n**Formula:** $M_1 = F_1 R$ and $M_2 = -F_2 R$, so $\\Sigma M = F_1 R - F_2 R$\n\n**Conversions:** The forces are in newtons and the radius in metres, so no conversions are needed.\n\n**Substitution:** $\\Sigma M = 25\\,\\text{N}\\cdot 0.19\\,\\text{m} - 15\\,\\text{N}\\cdot 0.19\\,\\text{m} = 4.75\\,\\text{Nm} - 2.85\\,\\text{Nm} = 1.9\\,\\text{Nm}$\n\n**Answer:** $1.9\\,\\text{Nm}$ anticlockwise, two significant figures like the radius $0.19\\,\\text{m}$ and the forces.\n\n**Reasonableness:** Both forces have the same lever arm, so the net moment is the product of the difference of the forces, $10\\,\\text{N}$, and the radius: $10\\,\\text{N}\\cdot 0.19\\,\\text{m} = 1.9\\,\\text{Nm}$. The larger force rotates anticlockwise, so the sign is positive: together the hands' forces rotate the wheel anticlockwise."
     },
     {
       "id": "check-3",

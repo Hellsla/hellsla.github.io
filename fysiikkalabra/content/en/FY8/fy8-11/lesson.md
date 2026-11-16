@@ -1,6 +1,6 @@
 # Fission, fusion and nuclear power
 
-> **Why** does one gram of uranium-235 release as much energy in fission as about $3.4$ tonnes of coal do when burned?
+> **Why** does one gram of uranium-235 release as much energy in fission as about $2.8$ tonnes of coal do when burned?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a nuclear power plant on a rocky sea shore. In the middle is a cylindrical reactor building with part of its dome drawn open: inside, the reactor core glows in the water. Next to it is a long turbine hall and behind it are the pylons of a power line. In front is the sea and in the sky a few clouds." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy811h-sky-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy811h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy811h-core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
@@ -552,7 +552,7 @@ The figure shows the masses of the fission of uranium-235 before and after the r
 ### Fission and fusion side by side
 In the fusion of deuterium and tritium, the mass decreases by $0.01888\,\text{u}$, so $Q = 17.6\,\text{MeV}$. One fusion therefore releases less energy than one fission, but more per nucleon: about $3.5\,\text{MeV}$ in fusion and about $0.85\,\text{MeV}$ in fission. The fusion of the same mass of fuel therefore releases about four times as much energy as fission.
 
-The question at the beginning can now be answered. One gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei. If all of them undergo fission and each releases $200\,\text{MeV}$, the energy released is $8.2 \cdot 10^{10}\,\text{J}$, or about $82\,\text{GJ}$. The heating value of coal is about $24\,\tfrac{\text{MJ}}{\text{kg}}$, so the same energy is obtained by burning about $3.4$ tonnes of coal. Burning is a chemical reaction in which the bonds of electrons change, with energies of the order of an electronvolt; in a nuclear reaction the energies are millions of electronvolts.
+The question at the beginning can now be answered. One gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei. If all of them undergo fission and each releases $200\,\text{MeV}$, the energy released is $8.2 \cdot 10^{10}\,\text{J}$, or about $82\,\text{GJ}$. The heating value of coal is about $29\,\tfrac{\text{MJ}}{\text{kg}}$ (the MAFY tables give $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$), so the same energy is obtained by burning about $2.8$ tonnes of coal. Burning is a chemical reaction in which the bonds of electrons change, with energies of the order of an electronvolt; in a nuclear reaction the energies are millions of electronvolts.
 
 ## Nuclear power in Finland {Ydinvoima Suomessa}
 

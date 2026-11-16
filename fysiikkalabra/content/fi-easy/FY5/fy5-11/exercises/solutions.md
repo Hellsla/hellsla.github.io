@@ -26,7 +26,7 @@
 **Muunnokset:** Tulos saadaan metreinä. Lopuksi muutetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\lambda = \dfrac{0{,}24\,\text{m/s}}{8{,}0\,\text{Hz}} = 0{,}030\,\text{m} = 0{,}030 \cdot 100\,\text{cm} = 3{,}0\,\text{cm}$
 **Vastaus:** $3{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten nopeudessa ja taajuudessa.
-**Järkevyys:** Aaltoaltaan aaltojen harjat ovat muutaman senttimetrin päässä toisistaan. Tarkistus: $$8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}$$, ja yksikkö $\tfrac{\text{m/s}}{\text{1/s}} = \text{m}$.
+**Järkevyys:** Aaltoaltaan aaltojen harjat ovat muutaman senttimetrin päässä toisistaan. Tarkistus: $8{,}0\,\text{Hz} \cdot 0{,}030\,\text{m} = 0{,}24\,\text{m/s}$, ja yksikkö $\tfrac{\text{m/s}}{\text{1/s}} = \text{m}$.
 
 ## fy5-11-L1-04
 **Kysytty:** heijastuneen pulssin poikkeaman suunta ja sen syy

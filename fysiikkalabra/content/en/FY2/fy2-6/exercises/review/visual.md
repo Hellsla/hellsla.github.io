@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ff05584a8eb5bd9a
-SCOPE: delta added-exercise from ce4d78b324133976 base c7f5e91173b0
+CONTENT-HASH: a72da2feb382aa9f
+SCOPE: delta numbers from e70ffa37157788e4 base 6ecef1197865
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-08 Reasonableness: "a number of the order of thousands" next to about 1400 reads awkwardly; "of the order of a thousand" is more natural.
-- [Minor] mafytaulukot.fi is plain text (optional).
+(none)
 
 ## Checked
-- Opened fy2-6-open-exercises-1280-9.png and fy2-6-open-exercises-L2-1280-10.png (content/en/FY2/fy2-6/review/shots/): L1-10 reworded peat task with hint and answer row; L2-08 solution with the new Reasonableness paragraph (units upright, $3 \cdot 2.30\,\text{GW}$ chain inline); nothing clipped.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Delta review. Changed line is the single ratio $4.7 : 1.7 \approx 2.8$ in 6-L3-02; judged from the source and the fy2-6-open-exercises-L3-1280-4.png context (display boxes in this exercise render cleanly). I did not locate the exact changed line in a capture.
+- Hash at start and end: a72da2feb382aa9f.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

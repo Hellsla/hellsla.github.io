@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2b6cc03e5029cd6d
+CONTENT-HASH: 445cc525ee3bfa4e
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta: L3-03 solution at 1280 px (open-exercises-L3-1280-4), en: Principle sentence and rainbow-width substitution blocks render and align; the Reasonableness sentence is just below the capture's edge and was not opened. figures.json change is approval metadata only.
+- Delta (queue 5d reflow). Hash identical at the end.
+- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
+- 390 and 1280 px: 11-L2-01 Substitution (57: Δt in four rows on a phone, the difference on one row wide) and 11-L2-06 Model answer (166: the turning angle, two rows on a phone, one row wide). Nothing clipped; the minus row starts with its sign; text around the blocks reads on.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

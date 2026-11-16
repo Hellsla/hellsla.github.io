@@ -39,4 +39,13 @@ a["fy7-9-L3-05"] = 12 + (Ts[-1] - 800) / rate          # glow ends (T = 800 K) a
 a["fy7-9-L1-09"] = 2.897771955e-3 / 350e-9             # star, peak 350 nm, b from MAFY table Luonnonvakiot: T = b / λ_max = 8279 K -> 8,3 · 10³ K
 # figure fy7-9/spectrum-task, peak at 1,20 µm: T = b / 1,20 µm = 2415 K; cooled to 1000 K the peak is b / 1000 K = 2,898 µm
 a["fy7-9-L2-09"] = (b / 1000 - 1.20e-6) * 1e6          # shift of the peak = 2,898 - 1,20 = 1,698 µm -> 1,70 µm
+# Added lines (data tasks FY7-A2 and FY7-A3, work queue 19)
+# Copernicus Sentinel-2 page, table Spectral Bands (read 16 Nov 2026): B02 0,49 µm, B04 0,665 µm, B08 0,842 µm
+# f = c / λ: B02 6,122 · 10¹⁴ Hz, B04 4,511 · 10¹⁴ Hz; visible edges 0,75 µm -> 4,0 · 10¹⁴ Hz, 0,38 µm -> 7,9 · 10¹⁴ Hz
+# part d): ground 300 K peaks at b / T = 9,66 µm (11,5 times 0,842 µm); a peak at 0,842 µm needs T = b / λ = 3442 K
+a["fy7-9-L2-10"] = c / 0.842e-6 / 1e12                 # band B08: f = c / λ = 3,563 · 10¹⁴ Hz = 356,3 THz
+h, eV = 6.626e-34, 1.602e-19                           # Planck constant (J·s) and 1 eV in joules, both given in the task
+# 5G band 3,5 GHz: λ = c / f = 0,08571 m = 8,6 cm; E = h f = 2,3191 · 10⁻²⁴ J
+a["fy7-9-L2-11"] = h * 3.5e9 / eV * 1e6                # E = 1,4476 · 10⁻⁵ eV = 14,476 µeV -> 14 µeV
+# part c): 10 eV / 1,4476 · 10⁻⁵ eV = 6,9 · 10⁵; 1000 eV -> 6,9 · 10⁷. Check: 500 nm light f = 6,0 · 10¹⁴ Hz (171 429 times 3,5 GHz), E = h f = 2,48 eV
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

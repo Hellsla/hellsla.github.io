@@ -316,6 +316,18 @@
           "feedback": "A beat frequency of $8\\,\\text{Hz}$ comes from counting the quiet points as loud moments too, which gives a spacing of $0.125\\,\\text{s}$. The loud moments are at $0$, $0.25\\,\\text{s}$, $0.50\\,\\text{s}$, $\\ldots$, so the beat period is $0.25\\,\\text{s}$ and the beat frequency $4\\,\\text{Hz}$. A higher frequency also does not fit the wax test: wax lowers the frequency, and if the unknown fork had been higher, the difference would have shrunk and the beats slowed down. The beats got faster instead."
         }
       ]
+    },
+    {
+      "id": "fy5-14-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://yle.fi/a/3-11158392\" target=\"_blank\" rel=\"noopener\">Yle – 440 vai 432 hertsiä?</a> (in Finnish)\n\nIs $432\\,\\text{Hz}$ nature's healing frequency? Study the Yle article and listen to its sound samples. The article reports that many websites describe this tuning level of the note A as nature's own frequency, calming and even healing, and link it with the colour spectrum, the chakras (energy fields of Hindu tradition) and number patterns. A conspiracy theory in turn says that the present standard tuning spreads fear and aggression.\n\na) Calculate the wavelengths of sound in air that correspond to the frequencies $432\\,\\text{Hz}$ and $440\\,\\text{Hz}$. Use $343\\,\\text{m/s}$ as the speed of sound.\n\nb) Compare the frequencies and the wavelengths. Assess what physical significance this difference has.\n\nc) Find out from the article what special effects are claimed to be connected with the $432\\,\\text{Hz}$ tuning level. Sort the claims into three groups: an effect on the listener that could in principle be tested; a claim about physics; number mysticism or a conspiracy theory.\n\nd) Assess the scientific grounds of the claims in each group. With what kind of study could possible health effects be established reliably?\n\nEnter in the answer box the wavelength of part a) at the frequency $432\\,\\text{Hz}$ in metres.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.794,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

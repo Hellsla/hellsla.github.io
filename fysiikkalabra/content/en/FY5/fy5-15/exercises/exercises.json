@@ -339,7 +339,7 @@
       "id": "fy5-15-L3-03",
       "level": 3,
       "text": "In the anechoic room of an acoustics laboratory the sound intensity level of a very quiet fan is measured as $-5\\,\\text{dB}$. A student says: “The measurement must be wrong, because a negative sound intensity level would mean a negative intensity.” Is she right? Explain what a negative sound intensity level means and whether the fan can be heard. Remember that the threshold of hearing $I_0$ is defined for a frequency of about $1000\\,\\text{Hz}$.",
-      "answer": "She is not: a negative level means that the intensity is positive but less than the threshold of hearing, $$\\begin{aligned} I &= 10^{-0.5} I_0 \\\\ &\\approx 3.2 \\cdot 10^{-13}\\,\\text{W/m}^2 \\end{aligned}$$; the average listener cannot hear it, but the most sensitive listeners may hear it at the most sensitive frequencies.",
+      "answer": "She is not: a negative level means that the intensity is positive but less than the threshold of hearing, $I = 10^{-0.5} I_0 \\approx 3.2 \\cdot 10^{-13}\\,\\text{W/m}^2$; the average listener cannot hear it, but the most sensitive listeners may hear it at the most sensitive frequencies.",
       "unit": "",
       "tolerance": 0.02
     },

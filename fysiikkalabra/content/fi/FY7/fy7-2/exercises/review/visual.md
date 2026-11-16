@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: c282aa48e9d21cc9
-SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
+CONTENT-HASH: c4a62c74b27e255e
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] 2-18 (fy7-2/r-points) — the top point (2,0; about 21 cm) lies just above the last gridline (20) — extend the y axis to 25 for room.
+- [Minor] exercises.json fy7-2-L2-10 and solutions.md Kohta d) — straight quotation marks ("Magneettinen aktiivisuus…", "voimakas häiriö takaa revontulet"); Finnish text elsewhere uses ”…”.
+- [Minor] 2-19 and Vastaus — the answer box "84 m" is followed by the fragment "On protonin ympyräradan säde, …" with a capital O (the answer split capitalises the rest); reads oddly.
+- [Minor] 2-7 Järkevyys (untouched) — at 360 px the chain r = mv/(qB) is 20 px wider than its box and scrolls; fits at 390 px.
+- [Minor] 2-11 Sijoitus — hand-broken numerator (earlier note stands).
 
 ## Checked
-- Delta: added 2-9 (fy7-2-L1-09) and 2-18 (fy7-2-L2-09) with solutions: open-exercises-1280 parts 9-10, open-exercises-L2-1280 parts 11-12 (graph and solution read at full size).
-- The earlier Major (exercise id shown to the student) is gone: Järkevyys now says "Tehtävän 2-2". The rest of the set not re-reviewed.
+- New data exercise 2-19 (fy7-2-L2-10) in full: task, source line with both links and the read date, table with its caption, complete solution; own captures at 390 px and 1280 px read at full size.
+- Reflow: 2-1, 2-5, 2-7, 2-11, 2-15, 2-18, 2-23, 2-24 solutions at 390 px; 2-24 at 1280 px (rows joined, no awkward break).
+- review/shots/contact-8.png (triage of L2/L3 with the new task). Formula overflow measured at 390 and 1280 px: none.
+- Every number with its unit is LaTeX; decimal commas, \cdot, colon division, upright units throughout. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

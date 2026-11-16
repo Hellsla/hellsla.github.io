@@ -87,7 +87,7 @@
 **Conversions:** The distance is calculated in metres, and finally $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5.0\,\text{s} = 1715\,\text{m} = 1.7\,\text{km}$
 **Answer:** $1.7\,\text{km}$, two significant figures as in the time $5.0\,\text{s}$.
-**Reasonableness:** Rule of thumb: three seconds corresponds to about a kilometre, so five seconds corresponds to about $1.7\,\text{km}$. Light would travel this distance in $1715\,\text{m} : (3.0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, which is negligible compared with the delay $5.0\,\text{s}$.
+**Reasonableness:** Rule of thumb: three seconds corresponds to about a kilometre, so five seconds corresponds to about $1.7\,\text{km}$. Light would travel this distance in $$\begin{aligned} &1715\,\text{m} \\ &: (3.0 \cdot 10^{8}\,\text{m/s}) \\ &\approx 6\,\mu\text{s} \end{aligned}$$, which is negligible compared with the delay $5.0\,\text{s}$.
 
 ## fy1-5-L3-01
 **Given:** $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$, $1\,\text{day} = 86\,400\,\text{s}$
@@ -102,7 +102,7 @@
 ## fy1-5-L3-02
 **Given:** distance $d = 150\,\text{AU}$, speed of the signal $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$
 **Find:** round-trip travel time $t$ in hours
-**Principle:** A radio signal travels in vacuum at constant speed, so the distance it travels is $s = ct$. The command and the reply each travel the distance $d$, so the total distance is $2d$. During this time the probe moves about $15\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \approx 2.3 \cdot 10^{6}\,\text{km} \approx 0.015\,\text{AU}$, which is only $0.01\,\%$ of the distance $150\,\text{AU}$. In the same time the Earth moves about $30\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \approx 0.03\,\text{AU}$, only about $0.02\,\%$, so neither motion needs to be taken into account.
+**Principle:** A radio signal travels in vacuum at constant speed, so the distance it travels is $s = ct$. The command and the reply each travel the distance $d$, so the total distance is $2d$. During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 2.3 \cdot 10^{6}\,\text{km} \\ &\approx 0.015\,\text{AU} \end{aligned}$$, which is only $0.01\,\%$ of the distance $150\,\text{AU}$. In the same time the Earth moves about $$\begin{aligned} &30\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 0.03\,\text{AU} \end{aligned}$$, only about $0.02\,\%$, so neither motion needs to be taken into account.
 **Formula:** $2d = ct$, so $t = \dfrac{2d}{c}$
 **Conversions:** $d = 150 \cdot 149\,597\,870.7\,\text{km} = 2.2440 \cdot 10^{10}\,\text{km} = 2.2440 \cdot 10^{13}\,\text{m}$. Finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{2 \cdot 2.2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1.497 \cdot 10^{5}\,\text{s} = \dfrac{1.497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41.58\,\text{h}$

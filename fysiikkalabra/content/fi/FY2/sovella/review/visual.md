@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d24acf3a281cd034
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 8f38449850697baf
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md a: "Tyynellä jaksolla teho on $P_\text{tuuli} < …$" reads "teho on P < …"; e.g. "Tyynellä jaksolla tuulivoimaloiden teho on $P_\text{tuuli} < …$" (optional).
+- [Minor] solutions.md "Hyväksytään myös" (untouched text; FY2-sovella-page-1280-9.png) — the list items run into the paragraph ("Esimerkiksi: - Pieni ydinvoimala. … - Tuulivoima…"); the markdown list is not rendered as a list; put a blank line before the list.
 
 ## Checked
-- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (Finnish), changed passages with surrounding paragraph.
-- solutions.md a: $P < 0{,}05 \cdot 28 \cdot 5{,}0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; "alle $7\,\text{MW}$:n" inflection correct.
-- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
-- No captures opened (diff judged from source).
+- Delta review of the changed fi line (Muut perusteet, "taulukon tyypillisellä käyttöasteella $0{,}70$"): captures were missing, made with screenshot.py FY2-sovella; opened FY2-sovella-page-1280-9.png and -8.png (sentence reads well, number in LaTeX with decimal comma, no clipping; surrounding layout intact).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

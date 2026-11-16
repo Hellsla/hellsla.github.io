@@ -88,7 +88,7 @@
 **Conversions:** The values of the graph are in newtons and metres, so no conversions are needed.
 **Substitution:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0.080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0.0064\,\text{m}^2 = 0.192\,\text{J}$
 **Answer:** $0.19\,\text{J}$, two significant figures, to which the values of the graph can be read.
-**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $$\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
+**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
 
 ## fy5-8-L3-01
 **Given:** mass of the passengers $\Delta m = 300\,\text{kg}$, extra compression of the springs $\Delta x = 3.0\,\text{cm}$, four identical springs; $g = 9.81\,\text{m/s}^2$
@@ -108,7 +108,7 @@
 **Conversions:** $x = 3.0\,\text{cm} = 0.030\,\text{m}$ and $m = 50\,\text{g} = 50 \cdot 0.001\,\text{kg} = 0.050\,\text{kg}$
 **Substitution:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0.030\,\text{m})^2}{2\cdot 0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{0.18\,\text{J}}{0.981\,\text{N}} = 0.1835\,\text{m}$
 **Answer:** $0.18\,\text{m}$ or about $18\,\text{cm}$, two significant figures like the compression $3.0\,\text{cm}$ and the mass $50\,\text{g}$.
-**Reasonableness:** The energy of the spring is $0.090\,\text{J}$, and lifting a $50\,\text{g}$ toy $18\,\text{cm}$ needs $$\begin{aligned} &0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot \\ &0.1835\,\text{m} \\ &\approx 0.090\,\text{J} & \end{aligned}$$. A jump of a few tens of centimetres is typical for such a toy; in reality some of the energy goes into the oscillation of the spring and the toy and into air resistance, so the toy rises a little less.
+**Reasonableness:** The energy of the spring is $0.090\,\text{J}$, and lifting a $50\,\text{g}$ toy $18\,\text{cm}$ needs $0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 0.1835\,\text{m} \approx 0.090\,\text{J}$. A jump of a few tens of centimetres is typical for such a toy; in reality some of the energy goes into the oscillation of the spring and the toy and into air resistance, so the toy rises a little less.
 
 ## fy5-8-L3-03
 **Given:** $m = 0.50\,\text{kg}$, spring constant of the left spring $k_1 = 30\,\text{N/m}$, of the right $k_2 = 50\,\text{N/m}$, displacement $x = 4.0\,\text{cm}$ to the right, frictionless track; $g = 9.81\,\text{m/s}^2$
@@ -253,7 +253,7 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0.025\,\text{kg}\cdot(47.0\,\text{m/s})^2 \\
 \eta &= \frac{27.61\,\text{J}}{37.75\,\text{J}} = 0.731
 \end{aligned}
 ```
-**Answer:** $73\,\%$ of the stored energy changed into the kinetic energy of the arrow, two significant figures like the mass of the arrow $25\,\text{g}$. The rest, about $27\,\%$ or about $10\,\text{J}$, probably went into the kinetic energy of the spring and the string, vibration, sound and heat: the spring and the string move themselves and finally stop. The answer is based on the assumption that the graph is a line over the whole draw distance.
+**Answer:** $73\,\%$ of the stored energy changed into the kinetic energy of the arrow, two significant figures like the mass of the arrow $25\,\text{g}$. The rest, about $27\,\%$ or about $10\,\text{J}$, probably went into the kinetic energy of the spring and the string, vibration and sound, and finally the internal energy of the spring, the string and the air (which is transferred to the surroundings as heat): the spring and the string move themselves and finally stop. The answer is based on the assumption that the graph is a line over the whole draw distance.
 **Reasonableness:** The efficiency is below $100\,\%$, as it must be, and an efficiency above $70\,\%$ is usual for real crossbows. The speed is checked the other way round: if all of the $37.75\,\text{J}$ went to the arrow, its speed would be
 ```latex
 v = \sqrt{\dfrac{2\cdot 37.75\,\text{J}}{0.025\,\text{kg}}} = 55.0\,\text{m/s}

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7af1b6d05699a20c
+CONTENT-HASH: a29457d3e5db6182
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy6-7 all languages: the data-table caption wraps in a narrow table box; widen the table.
+- [Minor] fy6-7 solution: the Kaava stage mixes b) and c) in one paragraph and ends 'K = aE_n = naE' without a full stop; trailing comma/full stop varies between formula boxes (L3-02: comma in fi, full stop in fi-easy).
 
 ## Checked
-- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi/FY6/fy6-7/review/shots/fy6-7-open-exercises-L2-1280-6.png: L2-05 Järkevyys "365 · 2 kWh = 7,3·10² kWh" and the 2,01 kWh : 24 h block above it.
-- At 1280 px (captured column 664 px) the block is aligned at `=`, unclipped, operators spaced, units upright with thin space; reads as a natural continuation of the sentence.
-- No 360/390 px capture shows an opened solution (only the closed stage-exercises-390), so phone wrapping rests on the passing check_layout 360 px result in the packet, not on my eyes.
+- Proof sheets fi-fy6-7-exercises-* (all, every numbered formula); captures open-exercises-L2 of the new task with solutions open (source link, table or sub-questions, solution stages, units), opened for fi.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

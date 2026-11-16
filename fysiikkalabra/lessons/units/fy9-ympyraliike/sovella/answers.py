@@ -91,4 +91,30 @@ out.update({f"{S}-s6-a": round(vb, 3), f"{S}-s6-a-kmh": round(vb * 3.6, 1),
             f"{S}-s6-c-v": round(vt, 3), f"{S}-s6-c-N": round(Nt, 1), f"{S}-s6-c-ratio": round(Nt / (m6 * g), 3),
             f"{S}-s6-c-an": round(vt2 / r6, 3), f"{S}-s6-vmin": round(math.sqrt(g * r6), 2)})
 
+# s7 (FY9-A1): the International Space Station. Source: NASA, International Space Station,
+# https://www.nasa.gov/reference/international-space-station/ (checked 16.11.2026): altitude 370-460 km,
+# solar arrays 735 000 kWh of electrical energy a year. The task gives h = 400 km, T = 92 min and R = 6371 km.
+h7, T7 = 400e3, 92 * 60.0               # m, s
+E7 = 735000.0                           # kWh in a year (source)
+r7 = R_E + h7
+v7 = 2 * math.pi * r7 / T7              # m/s, from the period
+an7 = v7 ** 2 / r7                      # m/s^2, = 4 pi^2 r / T^2
+g7 = GM / r7 ** 2                       # m/s^2, the reasonableness check with the law of gravitation
+t_year = 365 * 24.0                     # h
+P7 = E7 / t_year                        # kW, mean electrical power
+shadow = math.asin(R_E / r7) / math.pi  # largest share of an orbit in the Earth's shadow (cylinder shadow, Sun in the orbit plane)
+out.update({f"{S}-s7-a": round(v7 / 1000, 4), f"{S}-s7-a-r": round(r7 / 1000), f"{S}-s7-a-T": round(T7),
+            f"{S}-s7-a-circ": round(2 * math.pi * r7 / 1000), f"{S}-s7-a-kmh": round(v7 * 3.6),
+            f"{S}-s7-a-vgrav": round(math.sqrt(GM / r7) / 1000, 3),
+            f"{S}-s7-b": round(an7, 4), f"{S}-s7-b-v2": round(v7 ** 2), f"{S}-s7-b-ratio": round(100 * an7 / g, 1),
+            f"{S}-s7-b-g400": round(g7, 3), f"{S}-s7-b-diff": round(100 * (an7 - g7) / g7, 2),
+            f"{S}-s7-a-range": round(100 * (460e3 - 370e3) / r7, 1),   # the altitude range of the source against r, %
+            f"{S}-s7-d": round(P7, 3), f"{S}-s7-d-h": round(t_year), f"{S}-s7-d-P366": round(E7 / (366 * 24), 3),
+            f"{S}-s7-d-kettles": round(P7 / 2.0, 1),
+            f"{S}-s7-e-orbits": round(24 * 60 / 92, 2), f"{S}-s7-e-shadow-share": round(100 * shadow, 1),
+            f"{S}-s7-e-shadow-min": round(shadow * 92, 1), f"{S}-s7-e-sun-share": round(100 * (1 - shadow), 1),
+            f"{S}-s7-e-P-sun": round(P7 / (1 - shadow), 1),
+            f"{S}-s7-e-theta": round(math.degrees(math.asin(R_E / r7)), 1),
+            f"{S}-s7-d-E-J": E7 * 3.6e6, f"{S}-s7-d-t-s": 365 * 86400})
+
 print(json.dumps(out))

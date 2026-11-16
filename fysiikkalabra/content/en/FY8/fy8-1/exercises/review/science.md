@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f22ac3e71db8780e
-SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
+CONTENT-HASH: 9939aab4e79fce7e
+Mode: delta (added aineisto task fy8-1-L2-10)
 
 ## Blocking
 (none)
 
 ## Polish
-- lessons/FY8/fy8-1/answers.py:263 — the comment says "387,6 nm -> 388 nm", but hc/W computes to 387.50 nm and the stored answer is 387 nm (the solution says 387.5 nm). Both are well inside the ±5 % tolerance. — Make the comment say 387.5 nm -> 387 nm (shared file; this is not a translation issue).
+- exercises/solutions.md:431 — the Answer says the slider is read "to about $\pm 10\,\text{nm}$", while Given (line 408) says a reading "can differ by a few nanometres" — use one statement (the 530–550 nm range is the honest one).
+- exercises/solutions.md:412 — "Other metals need a shorter wavelength" holds for the five named metals (W 2.9–6.3 eV) but the unknown "?" metal's work function is not verified — say "the other named metals".
 
 ## Checked
-- L1-10: λ0 = hc/W with W = 3.20 eV (MAFY, Ca) gives 387.50 nm; answer 387 nm, tol 5 %. Principle hf0 = W, the symbolic step, the eV→J conversion and the 1240 eV nm estimate are all right. Calling 387 nm UV, just short of the violet edge, is correct.
-- L2-08: h/e = 0.41361 eV per 1e14 Hz, f0A = 5.56e14 Hz, E_k,max = 4.963 − 2.30 = 2.663 eV; answer 2.66, tol 5 % (2.53–2.79) takes the graph reading of 2.7 eV. The reading description (about 0.3 below 3 eV) matches the line.
-- L2-09: f0B = 2.90/0.41361 = 7.01e14 Hz, halfway between the 6 and 8 grid lines; λ0 = c/7.0e14 = 428.3 nm; answer 428, tol 4 %. The reasonableness check (2.9 eV > W_A, so B's line lies to the right of A's) is a real check.
-- The figure kuvaaja-ab (W_A = 2.30 eV, W_B = 2.90 eV, slope h/e, axes 0–16e14 Hz and 0–5 eV) gives every value the tasks need and writes no f0 or W on it; its description does not give the answers away.
-- The solutions use the brief's notation and model (E_k,max = hf − W, f0, λ0). It is all inside FY8 scope.
-- The English wording and numbers match the Finnish set the earlier review passed, with decimal points.
-- Recomputed in one script, compared with answers.py: they agree.
-- Hash f22ac3e71db8780e at start and end.
+- Recomputed: f0 = c/539 nm = 5.562e14 Hz, hf0 = 3.686e-19 J = 2.30 eV; answers.py 2.3006; box 2.3 eV with relative tolerance 0.05 (2.19–2.42 eV) covers readings 513–567 nm, so 530–550 nm (2.25–2.34 eV) is inside.
+- Sodium W = 2.3 eV in the PhET model gives λ0 = 539 nm, consistent with the example reading; the lesson's 2.28 eV gives 544 nm as the Reasonableness says.
+- Source claims (metals, work functions of zinc 4.3 eV and platinum 6.3 eV, wavelength and intensity sliders, current and energy graphs) are within the verified list; the 538/540 nm reading is labelled as a dated example.
+- Principle hf0 = W and the threshold condition hf ≥ W stated correctly; symbolic f0 = c/λ0, E = hf0 before substitution.
+- Part c): intensity changes the current, not E_k,max; frequency raises E_k,max = hf − W; stopping-voltage method correct.
+- Part d): wave-model predictions (threshold-free emission, intensity-dependent energy) correctly contrasted with observations.
+- Two significant figures justified by the slider reading.
+- Hash 9939aab4e79fce7e at start and end.

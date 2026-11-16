@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cc0c6be54948b8a2
+CONTENT-HASH: 639880ed2cd691f0
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md sarjaan kytkettyjen paristojen kappale — "lähdejännitteen kaksinkertaisen verran pienempi" is clumsy Finnish; for example "on kaksi kertaa niin paljon pienempi kuin ..." is not better either: write "Ryhmän lähdejännite on silloin E$ pienempi kuin silloin, kun kaikki paristot ovat oikein päin" (E = the reversed battery's emf), or "pienempi kuin ... kahden E:n verran".
+- none
 
 ## Checked
-- batch delta review: opened fig-15 and fig-23 (graphs fine: axes, units, points distinct from line, legible at 390 px), theory-1280-4 (rewritten series paragraph reads, no overflow); figure descriptions split into shorter sentences, read fine.
+- All 1 proof sheet(s) of fi-easy-fy6-8-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

@@ -12,7 +12,7 @@
       "id": "fy4-6-L1-02",
       "level": 1,
       "core": true,
-      "text": "A sled of mass $30\\,\\text{kg}$ slides on horizontal snow. The coefficient of kinetic friction between the sled and the snow is $0.12$. Draw the free-body diagram of the sled. How large is the friction force of the snow on the sled?",
+      "text": "A sled of mass $30\\,\\text{kg}$ slides on horizontal snow. The coefficient of sliding friction between the sled and the snow is $0.12$. Draw the free-body diagram of the sled. How large is the friction force of the snow on the sled?",
       "answer": 35.0,
       "unit": "N",
       "tolerance": 0.02,
@@ -21,7 +21,7 @@
     {
       "id": "fy4-6-L1-03",
       "level": 1,
-      "text": "A box of mass $40\\,\\text{kg}$ is pushed on a horizontal floor with a horizontal force of $120\\,\\text{N}$, and it slides at a constant velocity. How large is the coefficient of kinetic friction between the box and the floor?",
+      "text": "A box of mass $40\\,\\text{kg}$ is pushed on a horizontal floor with a horizontal force of $120\\,\\text{N}$, and it slides at a constant velocity. How large is the coefficient of sliding friction between the box and the floor?",
       "answer": 0.31,
       "unit": "",
       "tolerance": 0.02,
@@ -48,7 +48,7 @@
       "id": "fy4-6-L1-06",
       "level": 1,
       "core": true,
-      "text": "A box is at rest on a horizontal floor. It is pushed horizontally with a force of $20\\,\\text{N}$, but it does not move.\n\nThe greatest possible value of the static friction between the box and the floor is $60\\,\\text{N}$. Which statement about the static friction $F_{\\mu 0}$ exerted by the floor on the box is correct?",
+      "text": "A box is at rest on a horizontal floor. It is pushed horizontally with a force of $20\\,\\text{N}$, but it does not move.\n\nThe maximum static friction between the box and the floor is $60\\,\\text{N}$. Which statement about the static friction $F_{\\mu 0}$ exerted by the floor on the box is correct?",
       "kind": [
         "concept"
       ],
@@ -82,9 +82,9 @@
         "reasoning"
       ],
       "text": "A $50\\,\\text{kg}$ box is at rest on a horizontal floor. The coefficient of static friction between the box and the floor is $0.45$. How large a horizontal force must at least be applied to the box for it to start moving?",
-      "answer": 220.0,
+      "answer": 230.0,
       "unit": "N",
-      "tolerance": 0.02,
+      "tolerance": 0.05,
       "fbd": "equations"
     },
     {
@@ -121,7 +121,7 @@
     {
       "id": "fy4-6-L1-09",
       "level": 1,
-      "text": "A sled on steel runners, with a mass of $45\\,\\text{kg}$, is pulled horizontally on ice at a constant velocity. Look up the coefficient of kinetic friction between steel and ice in the MAFY table (mafytaulukot.fi). How large is the pulling force? Air resistance is neglected.",
+      "text": "A sled on steel runners, with a mass of $45\\,\\text{kg}$, is pulled horizontally on ice at a constant velocity. Look up the coefficient of sliding friction between steel and ice in the MAFY table (mafytaulukot.fi). How large is the pulling force? Air resistance is neglected.",
       "kind": [
         "data"
       ],
@@ -140,7 +140,7 @@
       "id": "fy4-6-L2-01",
       "level": 2,
       "core": true,
-      "text": "A sled starts from rest and slides down a hill with an angle of inclination of $12^\\circ$, and reaches a velocity of $3.0\\,\\text{m/s}$ in $4.0\\,\\text{s}$. The acceleration is constant. How large is the coefficient of kinetic friction between the sled and the snow? Air drag is ignored.",
+      "text": "A sled starts from rest and slides down a hill with an angle of inclination of $12^\\circ$, and reaches a velocity of $3.0\\,\\text{m/s}$ in $4.0\\,\\text{s}$. The acceleration is constant. How large is the coefficient of sliding friction between the sled and the snow? Air drag is ignored.",
       "answer": 0.13,
       "unit": "",
       "tolerance": 0.04,
@@ -149,7 +149,7 @@
     {
       "id": "fy4-6-L2-02",
       "level": 2,
-      "text": "A warehouse worker pulls a $40\\,\\text{kg}$ pallet along a concrete floor with a horizontal rope. The tension of the rope is $150\\,\\text{N}$, and the coefficient of kinetic friction between the pallet and the floor is $0.30$. How large is the acceleration of the pallet?",
+      "text": "A warehouse worker pulls a $40\\,\\text{kg}$ pallet along a concrete floor with a horizontal rope. The tension of the rope is $150\\,\\text{N}$, and the coefficient of sliding friction between the pallet and the floor is $0.30$. How large is the acceleration of the pallet?",
       "answer": 0.81,
       "unit": "m/s²",
       "tolerance": 0.02,
@@ -158,7 +158,7 @@
     {
       "id": "fy4-6-L2-03",
       "level": 2,
-      "text": "Below is example data: the kinetic friction of a wooden block measured at different normal forces. The graph shows the measurement points. Determine from the graph the coefficient of kinetic friction between the block and the table.",
+      "text": "Below is example data: the sliding friction of a wooden block measured at different normal forces. The graph shows the measurement points. Determine from the graph the coefficient of sliding friction between the block and the table.",
       "answer": 0.21,
       "unit": "",
       "tolerance": 0.05,
@@ -167,7 +167,7 @@
     {
       "id": "fy4-6-L2-04",
       "level": 2,
-      "text": "A moving box of mass $10\\,\\text{kg}$ is placed at rest on a plank that is at an angle of $35^\\circ$ to the horizontal. The coefficient of static friction between the box and the plank is $0.60$.\n\nCalculate the greatest possible value of static friction and compare it with the component of the weight along the slope. By how many newtons does the component exceed the greatest static friction? (If the number were negative, the box would stay in place.)",
+      "text": "A moving box of mass $10\\,\\text{kg}$ is placed at rest on a plank that is at an angle of $35^\\circ$ to the horizontal. The coefficient of static friction between the box and the plank is $0.60$.\n\nCalculate the maximum static friction and compare it with the component of the weight along the slope. By how many newtons does the component exceed the maximum static friction? (If the number were negative, the box would stay in place.)",
       "answer": 8.1,
       "unit": "N",
       "tolerance": 0.04,
@@ -181,7 +181,7 @@
         "data",
         "graph"
       ],
-      "text": "Students pulled a wooden block on a horizontal table with a spring balance, horizontally and at a constant velocity. Weights were added on top of the block, and for each mass the pull shown by the balance was read. Below is example data.\n\nDraw the $(N, F_\\mu)$ graph and fit a straight line through the origin to it. Determine the coefficient of kinetic friction between the block and the table from the graph. The normal force is calculated from the mass.",
+      "text": "Students pulled a wooden block on a horizontal table with a spring balance, horizontally and at a constant velocity. Weights were added on top of the block, and for each mass the pull shown by the balance was read. Below is example data.\n\nDraw the $(N, F_\\mu)$ graph and fit a straight line through the origin to it. Determine the coefficient of sliding friction between the block and the table from the graph. The normal force is calculated from the mass.",
       "answer": 0.42,
       "unit": "",
       "tolerance": 0.05,
@@ -222,7 +222,7 @@
         "data",
         "graph"
       ],
-      "text": "A force sensor was used to pull a $0.75\\,\\text{kg}$ wooden block on a horizontal table. The pull was horizontal all the time. The pull was increased slowly until the block started to move, and after that the block was pulled horizontally at a constant velocity. The block moved at a constant velocity from the moment $t = 3.5\\,\\text{s}$ onward. Below is example data.\n\nDraw the $(t, F)$ graph and read from the table the greatest reading as the greatest value of static friction and the pulling force during the uniform motion. Determine the coefficient of static friction $\\mu_0$ and the coefficient of kinetic friction $\\mu$.\n\nWrite the coefficient of kinetic friction $\\mu$ in the answer box.",
+      "text": "A force sensor was used to pull a $0.75\\,\\text{kg}$ wooden block on a horizontal table. The pull was horizontal all the time. The pull was increased slowly until the block started to move, and after that the block was pulled horizontally at a constant velocity. The block moved at a constant velocity from the moment $t = 3.5\\,\\text{s}$ onward. Below is example data.\n\nDraw the $(t, F)$ graph and read from the table the greatest reading as the maximum static friction and the pulling force during the uniform motion. Determine the coefficient of static friction $\\mu_0$ and the coefficient of sliding friction $\\mu$.\n\nWrite the coefficient of sliding friction $\\mu$ in the answer box.",
       "answer": 0.29,
       "unit": "",
       "tolerance": 0.04,
@@ -320,7 +320,7 @@
     {
       "id": "fy4-6-L2-08",
       "level": 2,
-      "text": "Four boxes are on a floor or on a slope. Only the weight, the normal force and friction act on each box, and on box B also a horizontal push. Air resistance is ignored. The data of the boxes are example values.\n\nBox A: mass $20\\,\\text{kg}$, slides on a horizontal floor, coefficient of kinetic friction $0.30$.\n\nBox B: mass $40\\,\\text{kg}$, on a horizontal floor, pushed horizontally with a force of $30\\,\\text{N}$ but does not move, coefficient of static friction $0.50$.\n\nBox C: mass $10\\,\\text{kg}$, slides on a horizontal floor, coefficient of kinetic friction $0.45$.\n\nBox D: mass $25\\,\\text{kg}$, at rest on a slope with an angle of inclination of $30^\\circ$, coefficient of static friction $0.70$.\n\nIn which order are the boxes, from the smallest to the largest, by the magnitude of the friction force acting on them?",
+      "text": "Four boxes are on a floor or on a slope. Only the weight, the normal force and friction act on each box, and on box B also a horizontal push. Air resistance is ignored. The data of the boxes are example values.\n\nBox A: mass $20\\,\\text{kg}$, slides on a horizontal floor, coefficient of sliding friction $0.30$.\n\nBox B: mass $40\\,\\text{kg}$, on a horizontal floor, pushed horizontally with a force of $30\\,\\text{N}$ but does not move, coefficient of static friction $0.50$.\n\nBox C: mass $10\\,\\text{kg}$, slides on a horizontal floor, coefficient of sliding friction $0.45$.\n\nBox D: mass $25\\,\\text{kg}$, at rest on a slope with an angle of inclination of $30^\\circ$, coefficient of static friction $0.70$.\n\nIn which order are the boxes, from the smallest to the largest, by the magnitude of the friction force acting on them?",
       "kind": [
         "reasoning",
         "model"
@@ -372,7 +372,7 @@
     {
       "id": "fy4-6-L3-02",
       "level": 3,
-      "text": "A puck is pushed up a $20^\\circ$ slope and leaves the hand at a velocity of $3.0\\,\\text{m/s}$. The coefficient of kinetic friction between the puck and the slope is $0.25$. How far up the slope does the puck slide before it stops? Air drag is ignored.",
+      "text": "A puck is pushed up a $20^\\circ$ slope and leaves the hand at a velocity of $3.0\\,\\text{m/s}$. The coefficient of sliding friction between the puck and the slope is $0.25$. How far up the slope does the puck slide before it stops? Air drag is ignored.",
       "answer": 0.8,
       "unit": "m",
       "tolerance": 0.02,
@@ -394,13 +394,13 @@
         "data",
         "model"
       ],
-      "text": "The braking distance of a passenger car is calculated with a model in which the wheels lock and kinetic friction acts between the tires and the road. Below is example data on the coefficients of kinetic friction between the tires and the road.\n\nThe car brakes from a speed of $80\\,\\text{km/h}$ to a stop. Air drag is ignored, and the acceleration is constant.\n\na) Determine the braking distance on dry horizontal asphalt.\n\nb) Determine the braking distance on wet horizontal asphalt.\n\nc) The wet road slopes downhill at an angle of $6.0^\\circ$. Determine the braking distance downhill and justify why the mass of the car is not needed.\n\nWrite the braking distance of part c) in the answer box.",
+      "text": "The braking distance of a passenger car is calculated with a model in which the wheels lock and sliding friction acts between the tires and the road. Below is example data on the coefficients of sliding friction between the tires and the road.\n\nThe car brakes from a speed of $80\\,\\text{km/h}$ to a stop. Air drag is ignored, and the acceleration is constant.\n\na) Determine the braking distance on dry horizontal asphalt.\n\nb) Determine the braking distance on wet horizontal asphalt.\n\nc) The wet road slopes downhill at an angle of $6.0^\\circ$. Determine the braking distance downhill and justify why the mass of the car is not needed.\n\nWrite the braking distance of part c) in the answer box.",
       "answer": 73,
       "unit": "m",
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Coefficient of kinetic friction $\\mu$ between the tires and the road",
+        "caption": "Coefficient of sliding friction $\\mu$ between the tires and the road",
         "columns": [
           "Road surface",
           "$\\mu$"
@@ -424,7 +424,7 @@
         "error",
         "model"
       ],
-      "text": "A box of mass $20\\,\\text{kg}$ starts from rest and slides down a slope of $30^\\circ$. The coefficient of kinetic friction between the box and the slope is $0.35$, and air drag is ignored.\n\nA student solved the problem like this: “The normal force is equal to the weight, $N = mg$. The equation of motion along the slope is $mg\\sin\\alpha - \\mu mg = ma$, so $a = g(\\sin\\alpha - \\mu) \\approx 1.5\\,\\text{m/s}^2$.”\n\na) Explain the student’s error and draw the free-body diagram of the box.\n\nb) Calculate the correct acceleration of the box.\n\nc) How long a distance does the box slide during the first $3.0\\,\\text{s}$?\n\nWrite the distance of part c) in the answer box.",
+      "text": "A box of mass $20\\,\\text{kg}$ starts from rest and slides down a slope of $30^\\circ$. The coefficient of sliding friction between the box and the slope is $0.35$, and air drag is ignored.\n\nA student solved the problem like this: “The normal force is equal to the weight, $N = mg$. The equation of motion along the slope is $mg\\sin\\alpha - \\mu mg = ma$, so $a = g(\\sin\\alpha - \\mu) \\approx 1.5\\,\\text{m/s}^2$.”\n\na) Explain the student’s error and draw the free-body diagram of the box.\n\nb) Calculate the correct acceleration of the box.\n\nc) How long a distance does the box slide during the first $3.0\\,\\text{s}$?\n\nWrite the distance of part c) in the answer box.",
       "answer": 8.7,
       "unit": "m",
       "tolerance": 0.03,

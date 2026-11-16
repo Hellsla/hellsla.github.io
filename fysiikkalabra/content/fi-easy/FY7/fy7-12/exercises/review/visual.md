@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d1141ef5592c4034
-SCOPE: delta added-exercise from 20fff19d13b9916e base 8f23aa7ae3bd
+CONTENT-HASH: 87c3815a9a0340e8
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] solutions.md:107 — on a phone Δt stands alone on the first row; acceptable (the fraction row would not fit beside it), wide form is one row.
 
 ## Checked
-- Added exercises L1-09, L2-09 (fi-easy, FY7 fy7-12): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-12.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
+- Delta: the 2 re-broken blocks (Δt chain with the bracketed fraction; sum of five angles) at 390 and 1280 px, full size. Nothing clipped; the bracket and fractions intact. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 60566c60301b819d
+CONTENT-HASH: b7449d711a6ed4ad
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `q = e = 1{,}602 \cdot 10^{-19}\,\text{C}` (worked example, Siirto; also at 1280 px), `v = E : B = 1{,}0 \cdot 10^{6}\,\text{m/s}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
+- [Minor] `siirto` Sijoitus — the stacked numerator's second row still reads "·20 000 V" with no space after the dot (unchanged from main) — `{} \cdot 20\,000\,\text{V}`.
 
 ## Checked
-- delta review of 2c31ff041: Laskennan selitys box: $|q|vB$, $F_\text{m} = |q|vB$, $F_\text{s} = |q|E$; diff read. `screenshot.py fy7-2 --if-stale` (fresh captures).
-- Own 390 px element captures of each changed block opened (scratchpad caps/fi-fy7-2-*-390.png): text wraps cleanly, KaTeX renders, no clipping, no horizontal scroll. Measured every inline .katex (getClientRects().length) at 360, 390 and 1280 px, all boxes open and all feedback shown, after `build.py fy7-2`: no formula in a changed passage breaks onto two lines.
-- Earlier: batch delta review: all $|q|$ formulas of the lesson (sähköinen voima, $W = |q|U$, $F_\text{m} = |q|vB \sin\alpha$, $r = mv : (|q|B)$ inline and in displays, the nopeusvalitsin display $|q|E = |q|vB$, massaspektrometri $m = |q| B_2 r / v$, summary bullets). Built page at 360, 390 and 1280 px with every box open: all 23 inline formulas containing $|q|$ stay on one line in the lesson text (the one that wraps is in the exercise solutions, see exercises/review/visual.md); captures q-390-1 to q-390-3 opened: the bars read as absolute value, $\overline{F}_\text{s} = q\overline{E}$ vector set correctly, the aligned display is centred. No clipping, no horizontal scroll.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review, round 2: fresh preview/fy7-2.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-2-lesson-360-s*.png, fy7-2-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; `virhe` is three equations again, each with its own left side ($qU$, $v$, $r$), aligned at the equals signs; the feedback's kV chain and the `siirto` B block (B, then two = rows; one row plus result at 1280 px) read correctly; nothing clipped. Hash the same at the start and the end.

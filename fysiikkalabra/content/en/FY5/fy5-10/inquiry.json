@@ -330,7 +330,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The end of a rope is shaken steadily. A sensor measures the displacement of one point of the rope, and a student gets from it a graph whose horizontal axis shows the time $t$ in seconds. The distance between successive peaks of the graph is $0.50$. The student concludes: “The wavelength is $0.50\\,\\text{m}$. Since the frequency is $2.0\\,\\text{Hz}$, the speed is $$\\begin{aligned} v &= f\\lambda \\\\ &= 2.0\\,\\text{Hz} \\cdot 0.50\\,\\text{m} \\\\ &= 1.0\\,\\text{m/s} \\end{aligned}$$.” Where is the error?",
+      "prompt": "The end of a rope is shaken steadily. A sensor measures the displacement of one point of the rope, and a student gets from it a graph whose horizontal axis shows the time $t$ in seconds. The distance between successive peaks of the graph is $0.50$. The student concludes: “The wavelength is $0.50\\,\\text{m}$. Since the frequency is $2.0\\,\\text{Hz}$, the speed is $v = f\\lambda = 2.0\\,\\text{Hz} \\cdot 0.50\\,\\text{m} = 1.0\\,\\text{m/s}$.” Where is the error?",
       "choices": [
         {
           "text": "The distance between peaks here is the period $0.50\\,\\text{s}$, so the wavelength cannot be obtained from the graph.",

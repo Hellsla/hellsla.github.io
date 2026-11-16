@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da4ba59f593fc976
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: adcf382f1148c000
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Diff of sovella/tasks.json, sovella/solutions.md, lessons/FY2/sovella/answers.py (Selkeä suomi), changed passages with surrounding paragraph.
-- solutions.md a: $P < 0{,}05 \cdot 28 \cdot 5{,}0\,\text{MW} = 7\,\text{MW}$ and $P > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$: inequality signs, \cdot, thin spaces correct; "alle $7\,\text{MW}$:n" inflection correct.
-- tasks.json source_note and biomass paragraph (accounting assumption, IPCC AR5 WGIII Annex III, forest chips may differ): grammar correct, $230\,\text{g/kWh}$ in LaTeX; criterion text for a); part b answer list (five values) is data only, no presentation change; counterargument and option lines in solutions.md.
-- No captures opened (diff judged from source).
+- Delta review of the fi-easy line in solutions.md: "taulukon tyypillisellä käyttöasteella $0{,}70$" replaces the old phrase; LaTeX number, decimal comma, sentence reads naturally. No captures present, so judged from the source.
+
+## Scores
+illustrations 4 (no figures) · typography 5 · Finnish 4 · accessibility 4

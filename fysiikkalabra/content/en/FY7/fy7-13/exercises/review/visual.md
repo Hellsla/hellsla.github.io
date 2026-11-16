@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5220d35f28b84d7f
-SCOPE: delta added-exercise from 92a6c24e78a8af80 base 8f23aa7ae3bd
+CONTENT-HASH: 4fd262dbfa71e157
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-13-L2-10 (13-19) Formula row — the wrapped second line "$N = \tfrac{\sin\theta}{k\lambda}$" sits so close under "$N = \tfrac{1}{d}$" that the denominator $d$ and the numerator $\sin\theta$ nearly touch — give the inline row a little more line spacing, or let the build set the two steps as separate rows.
-- [Minor] fy7/spectrum-q — the card has a tall empty band under the ruler (about 60 px at 1280) — trim the viewBox height.
-- [Minor] fy7-13-L2-10 solution — "250" followed by "lines per millimetre" outside the maths is set as separate fragments in Substitution and Answer — acceptable, as the unit is not an SI unit.
+- [Minor] solutions.md:163 — the block after “and error” still starts with a bare `=` (recorded in round 1).
+- [Minor] exercises.json (fy7-13-L2-06 quotation) — the split pieces that begin with `=` lack the relation space on their left (`0.337= 562 nm`).
+- [Minor] at 1280 px the two-row blocks with a left side (`d = 1 · 10⁻³ m : 300` / `= 3.333 · 10⁻⁶ m,`) stay two rows while the checks without one are joined; consistent with the Conversions steps, harmless.
 
 ## Checked
-- fy7-13-open-exercises-1280-9 (en): task 13-9 (helium line from MAFY) hint, answer, opened solution.
-- fy7-13-open-exercises-L2-1280-11, -12, -13, -14: task 13-18 with the set-up diagram (laser, grating, screen with cm scale, five red spots, dimension line $L = 1.20\,\text{m}$, nothing overlapping), task 13-19 with the front view of the spectrum on a ruler (violet inner, red outer, edges at true places), both solutions.
-- Typography: units upright with thin space, tan/sin of degrees and $\sin^{-1}$ nested fractions set cleanly, no red KaTeX, no overflow; the set reads as one.
+- Delta (queue 5d reflow), round 2. The packet's inventory has no phone capture of the opened solutions, so own captures were made from preview/en/fy7-13.html (rebuilt with build.py) with every solution open at 360, 390 and 1280 px; the 390 and 1280 px sheets of every solution step and task text the diff touches were read at full size (S-Efy7-13-390-*.png, S-Efy7-13-1280-*.png in the session scratchpad).
+- Measured at all three widths over the whole exercise section: no formula wider than its card or scrolling in its box (so nothing of docs/clipped-formulas.tsv clips on this page in these captures), no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line.
+- Source against main: the same tokens in the same order outside any new exercise; every new row starts with a relation, a sign or between whole quantities; the older aligned blocks are unchanged.
+- 390 px (both sheets) and 1280 px (both sheets): L1-02, L1-04, L2-01, L2-03, L2-04, L2-06 (conversions, substitution, the quotation inline again and closed with `.”` on its text line), L2-08 model answer, L1-09, L2-09 (`x₁ = L tan θ₁` / `= 1.20 m` / `· tan(sin⁻¹ …)` / `= 31.2 cm,`).
+- Hash identical at the end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 5

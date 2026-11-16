@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f596af22d0620375
+CONTENT-HASH: 0c12487bf803f010
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-- Re-review of the fix: fy4-s2 b) Sijoitus (line 294) now writes the starting potential energy as E_p0 = 9123 J, consistent with E_p0 + E_k0 + W = E_p + E_k and the zero level at the brake (E_p = 0, E_k = 3889 J at the end). git diff HEAD~1: only this line changed in solutions.md; tasks.json untouched.
-- Recomputed (own script): a) 17,2 m/s, b) 9123 J, 3889 J, 29,1 N, c) 13,6 m/s; numbers and answers unchanged.
-- No leftover W_muut, E_k,1, F_∥ in any Sovella task; fi, fi-easy and en say the same.
+- Delta review (teacher 2026-11-16, economical): only the two fy4-s2 Järkevyys sentences were judged; the rest rests on my previous report (hash bbc2878b1964517a, reflow carried in carry.tsv).
+- "muuttuu sisäenergiaksi" (was "lämmöksi") follows guardrail P1 and matches fi and en.
+- The upper bound still holds: $\sqrt{2gh} = 17{,}2\,\text{m/s}$. The ratio $5234{,}7 : 9123{,}3 = 0{,}574$ is "yli puolet", as stated.
+- No number, rubric criterion or point changed.
+- Content hash (`--lang fi-easy`) was the same at the start and at the end.

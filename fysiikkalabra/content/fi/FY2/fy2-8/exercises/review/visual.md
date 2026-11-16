@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8b6a553933284aed
-SCOPE: delta added-exercise from 0d804621ffb859e2 base 611fb7d5c174
+CONTENT-HASH: cef163f17e81a48e
+
 
 ## Blocking
 - none
@@ -9,8 +9,7 @@ SCOPE: delta added-exercise from 0d804621ffb859e2 base 611fb7d5c174
 - none
 
 ## Checked
-- fy2-8-open-exercises-1280-10: L1-09 Sijoitus, Vastaus and Järkevyys; the earlier hyphen split is gone ("2,6 kertaa suuremman massan"); units upright, nothing clipped.
-- 360 px from the packet's layout check only.
+Delta: diff read in source (each unit keeps number, sign and unit; every number is LaTeX with \,\text{MW}); the formula is now short enough to wrap at 360 px as the CI finding required (check_layout 360 px was run by the developer; I did not re-measure). Opened content/fi/FY2/fy2-7/review/shots/fy2-7-open-exercises-L2-1280-14.png and fy2-8-open-exercises-L2-1280-16.png (1280 px) to see the layout survived: solutions render, KaTeX fine, no clipping. Hash re-run at the end: cef163f17e81a48e (now cef163f17e81a48e).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

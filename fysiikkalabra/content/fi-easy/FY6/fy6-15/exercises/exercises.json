@@ -270,6 +270,18 @@
       "answer": 17.3913,
       "unit": "A",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-15-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://tukes.fi/-/ala-kayta-pistorasiaan-kytkettavaa-aurinkopaneelia\" target=\"_blank\" rel=\"noopener\">Tukes – tiedote pistorasiaan kytkettävistä aurinkopaneeleista</a>\n\nOletetaan, että eräs verkkokauppa myy aurinkopaneeleja, joiden mukana on vaihtosuuntaaja. Vaihtosuuntaaja on laite, joka muuttaa paneelin tasajännitteen $230\\,\\text{V}$:n vaihtojännitteeksi. Paneeli kytketään pistotulpalla tavalliseen pistorasiaan. Paneeli syöttää sähköä pistorasian kautta kodin sähköverkkoon. Tukes eli Turvallisuus- ja kemikaalivirasto on julkaissut näistä paneeleista tiedotteen. Lue tiedote.\n\na) Millaisesta aurinkopaneelijärjestelmästä tiedote varoittaa? Mitä vaaroja tiedote nimeää? Vertaa lisäksi, mihin suuntaan energia siirtyy pistorasiassa, kun siihen on kytketty tällainen paneeli ja kun siihen on kytketty tavallinen sähkölaite.\n\nb) Erään paneelin vaihtosuuntaajan suurin teho on $800\\,\\text{W}$. Laske, kuinka suuri sähkövirta vastaa $800\\,\\text{W}$:n tehoa $230\\,\\text{V}$:n vaihtojännitteellä. Oleta, että tehokerroin on yksi.\n\nc) Paneeli kytketään pistorasiaryhmään, jonka sulake on $16\\,\\text{A}$. Selitä luvun fysiikan avulla, miten kaksi vaaraa, sähköisku jännitteisistä pistotulpan nastoista ja ryhmäjohdon ylikuumeneminen, voivat syntyä, kun sähköä syötetään rakennuksen sähköjärjestelmään tavallisen pistorasian kautta. Laske perustelusi tueksi, kuinka suuri virta ryhmäjohdon osassa voi kulkea ilman, että sulakkeen nimellisvirta ylittyy.\n\nd) Arvioi tehtävän tilanteen ja tiedotteen otsikon avulla väitettä: ”Jos sähkölaite on myynnissä suomalaisessa verkkokaupassa, sen käyttäminen on varmasti turvallista ja sallittua.”\n\nKirjoita vastauslaatikkoon kohdan b) virta ampeereina.",
+      "answer": 3.478261,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [

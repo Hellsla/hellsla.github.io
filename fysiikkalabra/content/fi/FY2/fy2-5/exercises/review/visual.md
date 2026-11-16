@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b8187c70d80f7adc
+CONTENT-HASH: 5ca23e469a626f1f
 
 ## Blocking
 - none
@@ -8,10 +8,7 @@ CONTENT-HASH: b8187c70d80f7adc
 - none
 
 ## Checked
-- fy2-5-open-exercises-1280-9: L1-09 solution end (Sijoitus, Vastaus, Järkevyys with a framed rough estimate); units upright, decimal comma, nothing clipped. The L1-09 task text and Vihje box I judged from source only.
-- fy2-5-open-exercises-L2-1280-10: L2-09 (5-18) task, bar chart (H (MJ/kg) axis with unit, ticks, values at bar ends, fuel names), answer row, solution start.
-- fy2-5-open-exercises-L2-1280-11: L2-09 Muunnokset, Sijoitus, Vastaus, Järkevyys.
-- 360 px from the packet's layout check only.
+Delta: first saw $40,6$ in exercises.json (L3-01, L3-04; renders as 40, 6 with a gap, fy2-5-open-exercises-L3-1280-1.png); at the end the source reads $40{,}6$ in both, so the finding is closed. Solutions' changed rows (40{,}6, 2,96 kg, 5,04 kg, 1310 kg, ratios) read in the diff and in L3-1280-1: rows aligned, units upright. Re-capture of the fixed task not opened.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

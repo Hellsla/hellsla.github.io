@@ -96,7 +96,7 @@
 **Principle:** Deep down, the bubble is subject to the hydrostatic pressure of the water in addition to the atmospheric pressure. A rising bubble is in balance with the surrounding water, so its pressure is always the pressure of its surroundings. The temperature and the amount of air stay the same, so Boyle's law holds.
 **Formula:** $p_1 = p_0 + \rho g h$ and $p_1 V_1 = p_0 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_0} = \dfrac{(p_0 + \rho g h) V_1}{p_0}$
 **Conversions:** The hydrostatic pressure in pascals: $\rho g h = 196\,200\,\text{Pa} = 196.2\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volumes are in the same unit, so they do not need to be converted.
-**Substitution:** $p_1 = 101\,\text{kPa} + 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} = 101\,\text{kPa} + 196.2\,\text{kPa} = 297.2\,\text{kPa}$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
+**Substitution:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} \\ &= 101\,\text{kPa} + 196.2\,\text{kPa} \\ &= 297.2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
 **Answer:** $V_2 \approx 5.9\,\text{cm}^3$, two significant figures. The limiting value is the volume of the bubble, $2.0\,\text{cm}^3$ (two figures); the depth $20.0\,\text{m}$ and the atmospheric pressure $101\,\text{kPa}$ have three figures, and the density of water, $1000\,\tfrac{\text{kg}}{\text{m}^3}$, is a known table value that does not limit the result.
 **Reasonableness:** Every ten metres of water adds about one atmosphere of pressure, so at $20\,\text{m}$ the pressure is about $3 p_0$ and the volume at the surface is about three times as large: $3 \cdot 2.0\,\text{cm}^3 \approx 6\,\text{cm}^3$. The same applies to the lungs: if a person diving with compressed air held their breath while rising, the air in the lungs would try to expand to almost three times its volume. The lungs cannot stretch that much, and lung tissue can be damaged by far smaller expansion. You must never hold your breath when rising: breathe normally throughout the ascent, so that the expanding air can leave the lungs.
 
@@ -134,7 +134,7 @@
 **Conversions:** No units need to be converted: the kilopascals cancel in the quotient, and the volume comes out directly in litres.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1.50\,\textsf{l}}{240\,\text{kPa}} = 0.6312\,\textsf{l}$
 **Answer:** $V_2 \approx 0.63\,\textsf{l}$, two significant figures like the pressure $240\,\text{kPa}$.
-**Reasonableness:** The pressure increases, so the volume must decrease. The pressure ratio is $240 : 101 \approx 2.4$, and $1.50\,\textsf{l} : 2.4 \approx 0.63\,\textsf{l}$. The product $pV$ is $101\,\text{kPa} \cdot 1.50\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the start and $240\,\text{kPa} \cdot 0.6312\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the end.
+**Reasonableness:** The pressure increases, so the volume must decrease. The pressure ratio is $240 : 101 \approx 2.4$, and $1.50\,\textsf{l} : 2.4 \approx 0.63\,\textsf{l}$. The product $pV$ is $101\,\text{kPa} \cdot 1.50\,\textsf{l} = 151.5\,\text{kPa}\cdot\textsf{l}$ at the start and $$\begin{aligned} &240\,\text{kPa} \cdot 0.6312\,\textsf{l} \\ &= 151.5\,\text{kPa}\cdot\textsf{l} \end{aligned}$$ at the end.
 
 ## fy3-9-L1-08
 **Find:** what a straight line through the origin in a $(1/V,\,p)$ graph shows.
@@ -159,7 +159,7 @@ p &= kT \\
 \end{aligned}$$
 
 **Answer:** $p \approx 127\,\text{kPa}$, three significant figures like the pressures in the table.
-**Reasonableness:** The temperature in kelvins increases from $80\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ in the ratio $373.15 : 353.15 \approx 1.057$, and $119.8\,\text{kPa} \cdot 1.057 \approx 126.6\,\text{kPa}$. The same calculation from the initial state: $99.8\,\text{kPa} \cdot \dfrac{373.15}{293.15} \approx 127.0\,\text{kPa}$. The result is greater than the last measured value $119.8\,\text{kPa}$, as it should be when the temperature rises.
+**Reasonableness:** The temperature in kelvins increases from $80\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ in the ratio $373.15 : 353.15 \approx 1.057$, and $$\begin{aligned} &119.8\,\text{kPa} \cdot 1.057 \\ &\approx 126.6\,\text{kPa} \end{aligned}$$. The same calculation from the initial state: $99.8\,\text{kPa} \cdot \dfrac{373.15}{293.15} \approx 127.0\,\text{kPa}$. The result is greater than the last measured value $119.8\,\text{kPa}$, as it should be when the temperature rises.
 
 ## fy3-9-L2-06
 **Given:** from the table $V = 10.0$; $20.0$; $30.0$; $40.0\,\text{ml}$ and $p = 200$; $109$; $75.0$; $57.1\,\text{kPa}$, temperature constant; the volume $V_\text{h}$ of the air in the hose and the gauge is constant but unknown
@@ -177,7 +177,7 @@ V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142.9\,\text{kPa}} \\
 \end{aligned}$$
 
 **Answer:** $V_\text{h} \approx 2.0\,\text{ml}$, two significant figures. The difference of the products $284\,\text{kPa}\cdot\text{ml}$ is small compared with the products, so the result is sensitive to the readings and cannot be given more precisely.
-**Reasonableness:** The products $p\,(V + V_\text{h})$ with $V_\text{h} = 2.0\,\text{ml}$ are $200 \cdot 12.0 = 2400$; $109 \cdot 22.0 = 2398$; $75.0 \cdot 32.0 = 2400$ and $57.1 \cdot 42.0 = 2398\,\text{kPa}\cdot\text{ml}$. They are constant to within $0.1\,\%$, so the corrected Boyle's law fits all four rows. A hose volume of two millilitres is reasonable: a thin hose and the inside of the gauge fit in a small space.
+**Reasonableness:** The products $p\,(V + V_\text{h})$ with $V_\text{h} = 2.0\,\text{ml}$ are $200 \cdot 12.0 = 2400$; $109 \cdot 22.0 = 2398$; $75.0 \cdot 32.0 = 2400$ and $$\begin{aligned} &57.1 \cdot 42.0 \\ &= 2398\,\text{kPa}\cdot\text{ml} \end{aligned}$$. They are constant to within $0.1\,\%$, so the corrected Boyle's law fits all four rows. A hose volume of two millilitres is reasonable: a thin hose and the inside of the gauge fit in a small space.
 
 ## fy3-9-L2-07
 **Given:** from the table $\theta = 0.0$; $20.0$; $40.0$; $60.0$; $80.0\,{}^\circ\text{C}$ and $p = 100.1$; $107.3$; $114.9$; $121.8$; $129.1\,\text{kPa}$, volume and amount of air constant
@@ -202,7 +202,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Answer:** $\theta_0 \approx -276\,{}^\circ\text{C}$, three significant figures like the pressures. Reading from a graph and extrapolating are estimates, so $\pm 3\,\%$ is accepted.
-**Reasonableness:** When $\theta = -276\,{}^\circ\text{C}$, the pressure is $100.1\,\text{kPa} + 0.3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276.1\,\text{K}) \approx 0\,\text{kPa}$. The result is close to the known value $-273.15\,{}^\circ\text{C}$. If the result were, for example, $-100\,{}^\circ\text{C}$ or $-500\,{}^\circ\text{C}$, the slope would have been read wrongly.
+**Reasonableness:** When $\theta = -276\,{}^\circ\text{C}$, the pressure is $$\begin{aligned} &100.1\,\text{kPa} \\ &+ 0.3625\,\tfrac{\text{kPa}}{\text{K}} \cdot (-276.1\,\text{K}) \\ &\approx 0\,\text{kPa} \end{aligned}$$. The result is close to the known value $-273.15\,{}^\circ\text{C}$. If the result were, for example, $-100\,{}^\circ\text{C}$ or $-500\,{}^\circ\text{C}$, the slope would have been read wrongly.
 
 ## fy3-9-L3-04
 **Given:** initial state $V_1 = 40.0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 20.0\,{}^\circ\text{C}$; from the table the pressures in slow and fast compression at the volumes $40.0$; $30.0$; $20.0$ and $10.0\,\text{ml}$; final volume of the fast compression $V_2 = 10.0\,\text{ml}$ and pressure $p_2 = 481\,\text{kPa}$
@@ -278,7 +278,7 @@ Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\te
 **Conversions:** $70\,100\,\text{Pa} = 70.1\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volume stays in litres, because the pressure units cancel.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.0\,\textsf{l}}{70.1\,\text{kPa}} = 2.882\,\textsf{l}$
 **Answer:** $V_2 \approx 2.9\,\textsf{l}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The pressure $70\,100\,\text{Pa}$ is from the MAFY table (air pressure, density and temperature at different heights); the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $101\,\text{kPa} \cdot 2.0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.
+**Reasonableness:** The pressure decreases, so the volume must increase. The pressure ratio is $101 : 70.1 \approx 1.44$, and $2.0\,\textsf{l} \cdot 1.44 \approx 2.9\,\textsf{l}$. The product $pV$ at the end is $70.1\,\text{kPa} \cdot 2.882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$, the same as at the start, $$\begin{aligned} &101\,\text{kPa} \cdot 2.0\,\textsf{l} \\ &= 202\,\text{kPa}\cdot\textsf{l} \end{aligned}$$.
 
 ## fy3-9-L2-09
 **Given:** from the graph the point $(300\,\text{K};\ 120\,\text{kPa})$, volume and amount of air constant; final temperature $\theta_2 = 100\,{}^\circ\text{C}$
@@ -290,3 +290,34 @@ Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\te
 **Substitution:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373.15\,\text{K}}{300\,\text{K}} = 149.26\,\text{kPa}$
 **Answer:** $p_2 \approx 149\,\text{kPa}$, three significant figures as in the pressure read, $120\,\text{kPa}$. Reading a graph is an estimate, so the answer is accepted within $\pm 2\,\%$.
 **Reasonableness:** The temperature rises by about $24\,\%$ ($373 : 300 \approx 1.24$), so the pressure must rise by the same amount: $120\,\text{kPa} \cdot 1.24 \approx 149\,\text{kPa}$. The result is also above the last point of the graph, $140\,\text{kPa}$, as it should be, because $100\,{}^\circ\text{C}$ is hotter than $350\,\text{K}$.
+
+## fy3-9-L2-10
+**Given:** the pairs of temperature and pressure $(T,\,p)$ you measured in the simulation while the volume and the number of particles stay the same. Your own numbers depend on how many particles you pumped in, so here is the method and an example measurement of 16 November 2026 (100 heavy particles, one gauge reading per temperature): $T = 197$; $254$; $300$; $352$; $405$; $454$; $511\,\text{K}$ and $p = 824$; $994$; $1170$; $1363$; $1581$; $1766$; $2024\,\text{kPa}$. A check point that is not used in forming the model: $T_\text{pred} = 601\,\text{K}$, where the simulation showed the pressure $2346\,\text{kPa}$. In the ratio of part c) $T_1 = 300\,\text{K}$ and $T_2 = 450\,\text{K}$.
+**Find:** a) the measurement series and the uncertainty of a pressure reading; b) the $(T,\,p)$ graph and the dependence between the quantities; c) the prediction $p_\text{pred}$, its check and the pressure ratio $p_2/p_1$; d) an explanation with the particle model
+**Principle:** The volume of the container and the number of particles stay the same, so the change of state is isochoric. The pressure of a thin gas is then directly proportional to the kelvin temperature, that is, $p/T$ is constant. The measurement tests this: if the model fits, the points lie within the measurement uncertainty on a straight line through the origin.
+**Model answer a):** The temperature is taken from the simulation in kelvins and the pressure in kilopascals. The setting “Hold Constant: Volume (V)” locks the wall of the container, and the number of particles stays the same when the pump is not touched. Only the temperature is changed, so the change in pressure is due to the temperature. The reading of the pressure gauge fluctuates by a few per cent although the temperature stays the same. In the example measurement the fluctuation was about $\pm 30\,\text{kPa}$ at pressures of $1000\,\text{kPa}$–$2000\,\text{kPa}$. This is an estimate of the uncertainty of a single pressure reading. The middle one of several readings is more reliable than one reading.
+**Reading the graph:** The horizontal axis shows $T$ in kelvins and the vertical axis $p$ in kilopascals, and both axes start from zero, so that one can see whether the extension of the line passes through the origin. The line is fitted so that the points are spread evenly on both sides of it. The slope is read from two points of the line that are far apart, not from two neighbouring measured points, or it is obtained from the fit of a spreadsheet or a calculator. In the example measurement the fit of a line through the origin gives the slope $k = 3.924\,\tfrac{\text{kPa}}{\text{K}}$.
+**Model answer b):** The points lie on a rising straight line whose extension passes through the origin within the measurement uncertainty. In the example measurement a freely fitted line has the slope $3.84\,\tfrac{\text{kPa}}{\text{K}}$ and the constant term $32\,\text{kPa}$. The constant term is of the same order as the fluctuation of the pressure reading and small compared with the measured pressures, so the data fit a line through the origin. So the pressure is directly proportional to the kelvin temperature: $p = kT$, where $k \approx 3.92\,\tfrac{\text{kPa}}{\text{K}}$.
+The same is seen in the ratios $p/T$, which are row by row $4.18$; $3.91$; $3.90$; $3.87$; $3.90$; $3.89$; $3.96\,\tfrac{\text{kPa}}{\text{K}}$. They are almost the same. The first point deviates most: it is $51\,\text{kPa}$ above the line, while the others are at most $19\,\text{kPa}$ from it. It is one reading of a fluctuating gauge. A result that clearly deviates is checked, and the measurement can be repeated if needed. A result is not removed merely because it differs from the others. The constant $k$ depends on the number of particles and the volume, so your own value may be different, but the form of the dependence is the same.
+**Formula:** $p = kT$, so the prediction is $p_\text{pred} = kT_\text{pred}$ and the pressure ratio is $\dfrac{p_2}{p_1} = \dfrac{kT_2}{kT_1} = \dfrac{T_2}{T_1}$
+**Conversions:** None needed: the temperatures are already in kelvins and the pressures in kilopascals. The ratio could not be calculated in degrees Celsius.
+**Substitution:** The prediction of part c) with the model of the example measurement:
+
+$$\begin{aligned}
+p_\text{pred} &= kT_\text{pred} \\
+&= 3.924\,\tfrac{\text{kPa}}{\text{K}} \cdot 601\,\text{K} \\
+&\approx 2358\,\text{kPa}
+\end{aligned}$$
+
+At this temperature the simulation showed the pressure $2346\,\text{kPa}$. The difference is $12\,\text{kPa}$, about $0.5\,\%$, which is less than the fluctuation of the pressure reading, $\pm 30\,\text{kPa}$. So the prediction and the check agree within the measurement uncertainty, and the model also works $90\,\text{K}$ above the measured range. The pressure ratio:
+
+$$\begin{aligned}
+\dfrac{p_2}{p_1} &= \dfrac{T_2}{T_1} \\
+&= \dfrac{450\,\text{K}}{300\,\text{K}} \\
+&= 1.50
+\end{aligned}$$
+
+**Model answer d):** The pressure of a gas arises when the particles collide with the walls of the container. In an ideal gas the temperature measures the mean kinetic energy of the particles' motion from place to place, so in a warmer gas the particles move faster on average. Faster particles hit the walls more often and harder. The volume and the number of particles stay the same, so there are as many particles in a unit of volume as before, and the whole change in pressure is due to the particles moving faster. That is why the pressure increases when the temperature rises, and decreases towards zero when the kelvin temperature approaches zero.
+Limits of the model: the gas of the simulation is an ideal gas, so the line continues unchanged at all temperatures. For a real gas the result holds when the gas is thin and far from condensing. A real gas condenses into a liquid before $0\,\text{K}$ is reached.
+**Answer:** The pressure increases by a factor of $1.50$, three significant figures as in the temperatures. Your own constant $k$ and your prediction may differ from the example, but the ratio is the same for every model $p = kT$, because $k$ cancels.
+**Reasonableness:** The kelvin temperature increases by $50\,\%$, so a directly proportional pressure must increase by $50\,\%$. The model of the example measurement gives the pressures $1177\,\text{kPa}$ and $1766\,\text{kPa}$, whose ratio is $1.50$. The measured rows $300\,\text{K}$ and $454\,\text{K}$ give almost the same ratio: $1766 : 1170 \approx 1.51$.

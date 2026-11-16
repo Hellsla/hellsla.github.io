@@ -3,8 +3,11 @@
   "contribution": "Gravitation is generalised from weight to an interaction between all bodies: Newton's law of gravitation $F = \\gamma \\tfrac{m_1 m_2}{r^2}$, the equality of the forces and the difference between the accelerations, the gravitational field strength $g = \\gamma \\tfrac{M}{r^2}$ as the acceleration due to gravity on celestial bodies, and the role of gravitation in the formation of the structures of the universe. Orbital speeds are left for the next chapter.",
   "learn": [
     "compare the forces and accelerations of two bodies that attract each other.",
-    "calculate the gravitational force and the gravitational field strength using Newton's law of gravitation.",
+    "calculate the gravitational force using Newton's law of gravitation.",
     "explain how gravitation gathers matter into stars, planets and galaxies."
+  ],
+  "deepen": [
+    "calculate the gravitational field strength at the surface of the Earth and other celestial bodies."
   ],
   "prior": [
     "In an interaction, bodies exert forces of equal magnitude and opposite directions on each other (chapter *Interaction and force: Newton's first and third laws*)",
@@ -241,7 +244,7 @@
             "feedback": "The distance was left in kilometres, and the result was not converted to $\\text{mm/s}^2$. Convert $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$ before substituting."
           }
         ],
-        "solution": "**Given:** mean distance of the Moon $r = 384\\,400\\,\\text{km}$, orbital period $T = 27.32\\,\\text{d}$; for comparison $g = 9.80\\,\\text{m/s}^2$ and $R = 6378\\,\\text{km}$\n\n**Find:** the centripetal acceleration of the Moon $a_\\text{n}$ in $\\text{mm/s}^2$\n\n**Principle:** The Moon moves round the Earth at a nearly constant speed along a nearly circular path, so it has a centripetal acceleration towards the Earth's centre. The orbital speed is obtained from the distance and the time of one revolution.\n\n**Formula:** $a_\\text{n} = \\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$, so $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Conversions:** $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$; $T = 27.32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2.3604 \\cdot 10^{6}\\,\\text{s}$; finally $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Substitution:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3.844 \\cdot 10^{8}\\,\\text{m}}{(2.3604 \\cdot 10^{6}\\,\\text{s})^2} = 2.724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2.724\\,\\text{mm/s}^2$\n\n**Answer:** $2.72\\,\\text{mm/s}^2$, three significant figures as in the distance and the period.\n\n**Reasonableness:** The prediction of the inverse-square law is $$\\begin{aligned} &g \\cdot \\left(\\tfrac{R}{r}\\right)^2 \\\\ &= 9.80\\,\\text{m/s}^2 \\\\ &\\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\\\ &\\approx 2.70\\,\\text{mm/s}^2 & \\end{aligned}$$. The values differ by less than one per cent, so the same pull of the Earth that makes the apple fall is enough to explain the motion of the Moon."
+        "solution": "**Given:** mean distance of the Moon $r = 384\\,400\\,\\text{km}$, orbital period $T = 27.32\\,\\text{d}$; for comparison $g = 9.80\\,\\text{m/s}^2$ and $R = 6378\\,\\text{km}$\n\n**Find:** the centripetal acceleration of the Moon $a_\\text{n}$ in $\\text{mm/s}^2$\n\n**Principle:** The Moon moves round the Earth at a nearly constant speed along a nearly circular path, so it has a centripetal acceleration towards the Earth's centre. The orbital speed is obtained from the distance and the time of one revolution.\n\n**Formula:** $a_\\text{n} = \\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$, so $a_\\text{n} = \\dfrac{4\\pi^2 r}{T^2}$\n\n**Conversions:** $r = 384\\,400\\,\\text{km} = 3.844 \\cdot 10^{8}\\,\\text{m}$; $T = 27.32 \\cdot 24 \\cdot 3600\\,\\text{s} = 2.3604 \\cdot 10^{6}\\,\\text{s}$; finally $1\\,\\text{m/s}^2 = 1000\\,\\text{mm/s}^2$\n\n**Substitution:** $a_\\text{n} = \\dfrac{4\\pi^2 \\cdot 3.844 \\cdot 10^{8}\\,\\text{m}}{(2.3604 \\cdot 10^{6}\\,\\text{s})^2} = 2.724 \\cdot 10^{-3}\\,\\text{m/s}^2 = 2.724\\,\\text{mm/s}^2$\n\n**Answer:** $2.72\\,\\text{mm/s}^2$, three significant figures as in the distance and the period.\n\n**Reasonableness:** The prediction of the inverse-square law is $$\n\\begin{aligned}\n&g \\cdot \\left(\\tfrac{R}{r}\\right)^2 \\\\\n&= 9.80\\,\\text{m/s}^2 \\cdot \\left(\\tfrac{6378}{384\\,400}\\right)^2 \\\\\n&\\approx 2.70\\,\\text{mm/s}^2\n\\end{aligned}\n$$. The values differ by less than one per cent, so the same pull of the Earth that makes the apple fall is enough to explain the motion of the Moon."
       }
     },
     {
@@ -297,9 +300,9 @@
       "id": "etsi-virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Find the error",
+      "title": "Extension: Find the error",
       "optional": true,
-      "prompt": "A student calculated the gravitational field strength at a height of $300\\,\\text{km}$ above the Earth's surface like this: $$\\begin{aligned} g &= \\gamma \\tfrac{M}{r^2} \\\\ &= 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\\\ &\\cdot \\tfrac{5.97 \\cdot 10^{24}\\,\\text{kg}}{(3.0 \\cdot 10^{5}\\,\\text{m})^2} \\\\ &\\approx 4400\\,\\text{m/s}^2 & \\end{aligned}$$. What is wrong with the solution?",
+      "prompt": "A student calculated the gravitational field strength at a height of $300\\,\\text{km}$ above the Earth's surface like this: $g = \\gamma \\tfrac{M}{r^2} = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5.97 \\cdot 10^{24}\\,\\text{kg}}{(3.0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. What is wrong with the solution?",
       "choices": [
         {
           "text": "The distance is measured from the Earth's centre, so $r = 6378\\,\\text{km} + 300\\,\\text{km}$.",
@@ -325,26 +328,26 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A space probe rises straight up from the Earth's surface. At what height above the Earth's surface is the Earth's gravitational field strength half of its value at the surface? The radius of the Earth is $6378\\,\\text{km}$. Give the answer in kilometres.",
+      "prompt": "A space probe of mass $m$ rises straight up from the Earth's surface. At what height above the Earth's surface is the gravitational force that the Earth exerts on the probe half of its value at the surface? The radius of the Earth is $6378\\,\\text{km}$. Give the answer in kilometres.",
       "answer": 2640,
       "unit": "km",
       "tolerance": 0.02,
       "hints": [
-        "How does the field strength depend on the distance $r$ from the Earth's centre? Write the condition $g(r) = \\tfrac{1}{2} g(R)$ using the formula $g = \\gamma \\tfrac{M}{r^2}$.",
-        "$\\gamma \\tfrac{M}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M}{R^2}$, so $r^2 = 2R^2$, that is, $r = \\sqrt{2}\\,R$. The height above the surface is $h = r - R$.",
+        "How does the gravitational force depend on the distance $r$ from the Earth's centre? Write the condition $F(r) = \\tfrac{1}{2} F(R)$ using the law $F = \\gamma \\tfrac{M m}{r^2}$.",
+        "$\\gamma \\tfrac{M m}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M m}{R^2}$, so $r^2 = 2R^2$, that is, $r = \\sqrt{2}\\,R$. The height above the surface is $h = r - R$.",
         "$h = (\\sqrt{2} - 1) R = 0.4142 \\cdot 6378\\,\\text{km}$."
       ],
       "mistakes": [
         {
           "value": 6378,
-          "feedback": "A distance of twice the radius from the centre, $r = 2R$, would reduce the field to a quarter, because $g \\propto \\tfrac{1}{r^2}$. Half is obtained when $r^2 = 2R^2$."
+          "feedback": "A distance of twice the radius from the centre, $r = 2R$, would reduce the force to a quarter, because $g \\propto \\tfrac{1}{r^2}$. Half is obtained when $r^2 = 2R^2$."
         },
         {
           "value": 9020,
           "feedback": "You calculated the distance $r = \\sqrt{2}\\,R$ from the Earth's centre. The question asks for the height above the surface: subtract the radius of the Earth."
         }
       ],
-      "solution": "**Given:** radius of the Earth $R = 6378\\,\\text{km}$; the field strength at height $h$ is half of its value at the surface\n\n**Find:** the height $h$ above the Earth's surface in kilometres\n\n**Principle:** The Earth's gravitational field strength is $g = \\gamma \\tfrac{M}{r^2}$, where $r$ is the distance from the Earth's centre, because the Earth attracts as if its mass were at its centre. On the surface $r = R$, at height $h$ it is $r = R + h$. The mass of the Earth is not needed, because it cancels.\n\n**Formula:** $\\gamma \\dfrac{M}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M}{R^2}$, so $(R + h)^2 = 2R^2$ and $h = (\\sqrt{2} - 1) R$\n\n**Conversions:** None needed: the radius is in kilometres, and the answer is asked in kilometres.\n\n**Substitution:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0.41421 \\cdot 6378\\,\\text{km} = 2641.9\\,\\text{km}$\n\n**Answer:** $2640\\,\\text{km}$ to three significant figures; with four figures of the radius the result would be $2642\\,\\text{km}$.\n\n**Reasonableness:** Check: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0.500$. The height is smaller than the radius of the Earth, which fits the fact that twice the distance from the centre would already reduce the field to a quarter."
+      "solution": "**Given:** radius of the Earth $R = 6378\\,\\text{km}$; the gravitational force on the probe at height $h$ is half of its value at the surface\n\n**Find:** the height $h$ above the Earth's surface in kilometres\n\n**Principle:** By the law of gravitation the force on the probe is $F = \\gamma \\tfrac{M m}{r^2}$, where $r$ is the distance from the Earth's centre, because the Earth attracts as if its mass were at its centre. On the surface $r = R$, at height $h$ it is $r = R + h$. The mass of the Earth and the mass of the probe are not needed, because they cancel.\n\n**Formula:** $\\gamma \\dfrac{M m}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M m}{R^2}$, so $(R + h)^2 = 2R^2$ and $h = (\\sqrt{2} - 1) R$\n\n**Conversions:** None needed: the radius is in kilometres, and the answer is asked in kilometres.\n\n**Substitution:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0.41421 \\cdot 6378\\,\\text{km} = 2641.9\\,\\text{km}$\n\n**Answer:** $2640\\,\\text{km}$ to three significant figures; with four figures of the radius the result would be $2642\\,\\text{km}$.\n\n**Reasonableness:** Check: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0.500$. The height is smaller than the radius of the Earth, which fits the fact that twice the distance from the centre would already reduce the force to a quarter."
     },
     {
       "id": "harjoitukset",

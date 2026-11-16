@@ -27,7 +27,7 @@
 **Muunnokset:** Ei tarvita: pystyakselin arvot ovat senttimetreinä.
 **Sijoitus:** $A = 2{,}5\,\text{cm} - 0\,\text{cm} = 2{,}5\,\text{cm}$
 **Vastaus:** $2{,}5\,\text{cm}$, kaksi merkitsevää numeroa, koska arvo luetaan puolen senttimetrin apuviivalta.
-**Järkevyys:** Toinen reitti: huipun ja pohjan välinen etäisyys on $$2{,}5\,\text{cm} - (-2{,}5\,\text{cm}) = 5{,}0\,\text{cm}$$, ja amplitudi on puolet siitä, $2{,}5\,\text{cm}$. Arvo $5{,}0\,\text{cm}$ olisi ääriasemien väli $2A$.
+**Järkevyys:** Toinen reitti: huipun ja pohjan välinen etäisyys on $2{,}5\,\text{cm} - (-2{,}5\,\text{cm}) = 5{,}0\,\text{cm}$, ja amplitudi on puolet siitä, $2{,}5\,\text{cm}$. Arvo $5{,}0\,\text{cm}$ olisi ääriasemien väli $2A$.
 
 ## fy5-7-L1-04
 **Annettu:** täysiä heilahduksia $n = 20$, niiden kesto $t_n = 36\,\text{s}$
@@ -108,7 +108,7 @@
 **Muunnokset:** Ei tarvita: kumpikin etäisyys on senttimetreinä.
 **Sijoitus:** $A = \dfrac{47{,}0\,\text{cm} - 32{,}0\,\text{cm}}{2} = \dfrac{15{,}0\,\text{cm}}{2} = 7{,}50\,\text{cm}$
 **Vastaus:** $7{,}50\,\text{cm}$, kolme merkitsevää numeroa kuten etäisyyksien erotuksessa $15{,}0\,\text{cm}$.
-**Järkevyys:** Tasapainoasema on etäisyydellä $\tfrac{32{,}0\,\text{cm} + 47{,}0\,\text{cm}}{2} = 39{,}5\,\text{cm}$. Siitä on $7{,}50\,\text{cm}$ kumpaankin ääriasemaan: $$39{,}5\,\text{cm} - 7{,}50\,\text{cm} = 32{,}0\,\text{cm}$$ ja $$39{,}5\,\text{cm} + 7{,}50\,\text{cm} = 47{,}0\,\text{cm}$$, kuten mitattiin.
+**Järkevyys:** Tasapainoasema on etäisyydellä $\tfrac{32{,}0\,\text{cm} + 47{,}0\,\text{cm}}{2} = 39{,}5\,\text{cm}$. Siitä on $7{,}50\,\text{cm}$ kumpaankin ääriasemaan: $39{,}5\,\text{cm} - 7{,}50\,\text{cm} = 32{,}0\,\text{cm}$ ja $39{,}5\,\text{cm} + 7{,}50\,\text{cm} = 47{,}0\,\text{cm}$, kuten mitattiin.
 
 ## fy5-7-L2-05
 **Annettu:** kuuden peräkkäisen huipun ajat taulukossa: ensimmäinen $t_1 = 0{,}42\,\text{s}$ ja kuudes $t_6 = 3{,}47\,\text{s}$

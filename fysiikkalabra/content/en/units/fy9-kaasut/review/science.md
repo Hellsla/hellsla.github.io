@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 806a1f1affaa7986
-Round 3 delta against cc5cfb996b96c940.
+CONTENT-HASH: 3faa649403b7a6f4
+Round 2: delta against the version round 1 reviewed (fix round 1).
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B-leaning, not blocking: the work row now reads "constant pressure, volume changes → work done, W = pΔV" (was "magnitude of the work"). The Kaava (line 321) names the same formula "work done by an expanding gas / on a compressed gas", with ΔV a magnitude (line 324), so the chart agrees with the Kaava; but the 1st-law row uses W for the work done on the gas, where an expansion gives W = −pΔV (line 330). "magnitude of the work" or "work (magnitude)" kept that sign explicit; the fi chart still says "työn suuruus".
-- The aria-label still says "the magnitude of the work is pressure times the magnitude of the change of volume": same physics as the pill, only more precise than the visible label; aligning the wording is advised.
-- Round-2 items stand: the 1st-law row does not name W as work done on the gas; the key "kaasuun tehty työ" is unused.
+- (none)
 
 ## Checked
-- Diff: only the figures.json string "työn suuruus" and the matching chart label in unit.md changed; formula W = pΔV, other rows, Kaava and aria-label unchanged.
-- Chart label vs Kaava lines 321–330: consistent as a magnitude statement.
-- Hash at start and end: 806a1f1affaa7986.
+- s2 c reasonableness: the added sentence is right. Recomputed: 485.1 kW - 174.6 kW - 232.9 kW = 77.6 kW (= 16 % of the fuel power = 25 % of 310.5 kW); the row with rounded powers gives 77 kW. answers.py key `fy9-kaasut-s2-waste` computes the same quantity from unrounded values.
+- s5 "Yleisiä virheitä": "the molar mass comes out at about two thirds of the correct one" is now unambiguous and right (210 : 311 = 0.68; the amount of substance itself becomes 1.5 times too large).
+- s7 c task text: "derive in symbols ... heat transferred to the water per unit time (the heat power) and the volume flowing per second" matches the rubric and the solution (P_2 t = c rho V dT); the task stays solvable with the given data. Recomputed dT = 2.7e9 W : 2.388e8 W/K = 11.3 K.
+- s7 e: "about 21 C" now agrees with 10 C + 11 K and with the reasonableness check of part c (the old 20 C did not).
+- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.

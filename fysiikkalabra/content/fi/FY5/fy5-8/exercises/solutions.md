@@ -88,7 +88,7 @@
 **Muunnokset:** Kuvaajan arvot ovat newtoneina ja metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0064\,\text{m}^2 = 0{,}192\,\text{J}$
 **Vastaus:** $0{,}19\,\text{J}$, kaksi merkitsevää numeroa, joilla kuvaajan arvot voi lukea.
-**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $$\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
+**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
 
 ## fy5-8-L3-01
 **Annettu:** matkustajien massa $\Delta m = 300\,\text{kg}$, jousten lisäpuristuma $\Delta x = 3{,}0\,\text{cm}$, neljä samanlaista jousta; $g = 9{,}81\,\text{m/s}^2$
@@ -108,7 +108,7 @@
 **Muunnokset:** $x = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$ ja $m = 50\,\text{g} = 50 \cdot 0{,}001\,\text{kg} = 0{,}050\,\text{kg}$
 **Sijoitus:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}030\,\text{m})^2}{2\cdot 0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} = \dfrac{0{,}18\,\text{J}}{0{,}981\,\text{N}} = 0{,}1835\,\text{m}$
 **Vastaus:** $0{,}18\,\text{m}$ eli noin $18\,\text{cm}$, kaksi merkitsevää numeroa kuten puristumassa $3{,}0\,\text{cm}$ ja massassa $50\,\text{g}$.
-**Järkevyys:** Jousen energia on $0{,}090\,\text{J}$, ja $50\,\text{g}$:n lelun nostamiseen $18\,\text{cm}$ tarvitaan $$\begin{aligned} &0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot \\ &0{,}1835\,\text{m} \\ &\approx 0{,}090\,\text{J} & \end{aligned}$$. Muutaman kymmenen senttimetrin hyppy on tavallinen tällaiselle lelulle; todellisuudessa osa energiasta menee jousen ja lelun värähtelyyn ja ilmanvastukseen, joten lelu nousee vähän matalammalle.
+**Järkevyys:** Jousen energia on $0{,}090\,\text{J}$, ja $50\,\text{g}$:n lelun nostamiseen $18\,\text{cm}$ tarvitaan $0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 0{,}1835\,\text{m} \approx 0{,}090\,\text{J}$. Muutaman kymmenen senttimetrin hyppy on tavallinen tällaiselle lelulle; todellisuudessa osa energiasta menee jousen ja lelun värähtelyyn ja ilmanvastukseen, joten lelu nousee vähän matalammalle.
 
 ## fy5-8-L3-03
 **Annettu:** $m = 0{,}50\,\text{kg}$, vasemman jousen jousivakio $k_1 = 30\,\text{N/m}$, oikean $k_2 = 50\,\text{N/m}$, poikkeama $x = 4{,}0\,\text{cm}$ oikealle, rata kitkaton; $g = 9{,}81\,\text{m/s}^2$
@@ -253,7 +253,7 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0{,}025\,\text{kg}\cdot(47{,}0\,\text{m/s})^2 \\
 \eta &= \frac{27{,}61\,\text{J}}{37{,}75\,\text{J}} = 0{,}731
 \end{aligned}
 ```
-**Vastaus:** $73\,\%$ varastoituneesta energiasta muuttui nuolen liike-energiaksi, kaksi merkitsevää numeroa kuten nuolen massassa $25\,\text{g}$. Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön: jousi ja jänne liikkuvat itsekin ja pysähtyvät lopuksi. Vastaus perustuu oletukseen, että kuvaaja on suora koko vetomatkalla.
+**Vastaus:** $73\,\%$ varastoituneesta energiasta muuttui nuolen liike-energiaksi, kaksi merkitsevää numeroa kuten nuolen massassa $25\,\text{g}$. Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn ja ääneen ja lopulta jousen, jänteen ja ilman sisäenergiaan (joka siirtyy ympäristöön lämpönä): jousi ja jänne liikkuvat itsekin ja pysähtyvät lopuksi. Vastaus perustuu oletukseen, että kuvaaja on suora koko vetomatkalla.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$, kuten pitääkin, ja yli $70\,\%$:n hyötysuhde on todellisille jousipyssyille tavallinen. Nopeus tarkistetaan toisinpäin: jos kaikki $37{,}75\,\text{J}$ menisi nuolelle, sen nopeus olisi
 ```latex
 v = \sqrt{\dfrac{2\cdot 37{,}75\,\text{J}}{0{,}025\,\text{kg}}} = 55{,}0\,\text{m/s}

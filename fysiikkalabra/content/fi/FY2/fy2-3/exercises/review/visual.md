@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6a4b518eb95a91d8
-SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
+CONTENT-HASH: 633302ba5d59bc16
+SCOPE: delta added-exercise from 75aa6a48bc6fe02f base 07af77a4596f
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy2-3-L2-09 Vastaus — a), c) and d) answers sit as run-on paragraphs under 'Lisäksi:'; fine but long (c is about 120 words); optional split.
 
 ## Checked
-- fy2-3-open-exercises-1280-9: L1-09 solution end (mekaaninen energia wording, units upright) and the new L1-10 task text with graph (E (kJ), t (s), A and B labelled, grid, readable).
-- fy2-3-open-exercises-1280-10: L1-10 solution: Annettu, dfrac rows aligned at =, ratio 3,0 shown, Vastaus; nothing clipped.
-- 360 px from the packet's layout check only.
+Delta (added fy2-3-L2-09): opened fy2-3-open-exercises-L2-1280-10.png (task end, link, answer, Annettu–Sijoitus). Link has target=_blank rel=noopener and the read date in words; formulas, units, decimal commas correct; displays aligned. Other captures unchanged, not re-judged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

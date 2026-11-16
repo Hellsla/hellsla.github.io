@@ -145,7 +145,7 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin. Levyjen jälkeen se laskee $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin. Aika on $\Delta t = 0{,}40\,\text{s}$. Lasku on tasainen.
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla. Sitten verrataan aikoja.
-**Taulukon lukeminen:** Pudotus ennen levyjä on $$\begin{aligned} \Delta L_1 &= 90{,}3\,\text{dB} - 74{,}4\,\text{dB} \\ &= 15{,}9\,\text{dB} \end{aligned}$$. Levyjen jälkeen pudotus on $$\begin{aligned} \Delta L_2 &= 90{,}2\,\text{dB} - 50{,}1\,\text{dB} \\ &= 40{,}1\,\text{dB} \end{aligned}$$.
+**Taulukon lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$. Levyjen jälkeen pudotus on $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
 **Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1{,}755 \\
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
-Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $$\begin{aligned} D &= 0{,}198 + 1{,}0 + 0{,}375 \\ &= 1{,}57 \end{aligned}$$.
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
 **Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Kotelo ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$. Toinen keino on sijoittaa höyläyskone erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon. Annoksen täytyy siis olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 
@@ -260,3 +260,54 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Sijoitus:** $L_\text{korva} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6{,}350} = 75{,}6\,\text{min}$
 **Vastaus:** $76\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
 **Järkevyys:** Taso korvassa on $8\,\text{dB}$ vertailutason yläpuolella, tasojen $6\,\text{dB}$ ($120\,\text{min}$) ja $9\,\text{dB}$ ($60\,\text{min}$) välissä, joten noin $76\,\text{min}$ on järkevä. Ilman tulppia aika olisi vain $4{,}7\,\text{min}$, joten tulpat pidentävät sitä noin kuusitoistakertaiseksi.
+
+## fy5-16-L2-10
+**Annettu:** tasot $L_1 = 85\,\text{dB}$ ja $L_2 = 94\,\text{dB}$, aika $t_1 = 8\,\text{h}$; b-kohdassa tason muutos $3\,\text{dB}$ tai $10\,\text{dB}$. Aineistosta (Työterveyslaitos, *Melu*, luettu 15. marraskuuta 2026): meluasetuksen alempi toiminta-arvo $80\,\text{dB(A)}$, ylempi toiminta-arvo $85\,\text{dB(A)}$ ja raja-arvo $87\,\text{dB(A)}$. Aineisto kertoo myös, että melun energia-annos määritetään aina kahdeksan tunnin laskennalliselle työpäivälle. Laskuissa kirjoitetaan lyhyesti dB.
+**Kysytty:** a) miksi asteikko on logaritminen; b) intensiteettien suhde $\dfrac{I_2}{I_1}$, kun taso kasvaa $3\,\text{dB}$ tai $10\,\text{dB}$; c) tasojen vertailu ja aika $t_2$ tunteina tasolla $L_2$; d) arvio väitteestä
+**Periaate:** Intensiteettitaso määritellään intensiteetin logaritmin avulla (luku *Intensiteetti ja desibeliasteikko*). Siksi tasojen erotuksesta saadaan intensiteettien suhde. Intensiteetti $I$ on teho pinta-alaa kohti. Ajassa $t$ korvaan tulee siis pinta-alaa kohti energia $It$. Aineiston mukaan altistus arvioidaan energia-annoksena eli korvaan tulleen energian määränä. Kaksi altistusta ovat siis yhtä suuret, kun tulo $It$ on sama.
+**Kaava:** Tason määritelmä on $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. Erotuksessa kuulokynnyksen intensiteetti $I_0$ supistuu:
+$$\begin{aligned}
+L_2 - L_1 &= 10\,\text{dB} \cdot \lg \frac{I_2}{I_1} \\
+\frac{I_2}{I_1} &= 10^{\,(L_2 - L_1)/(10\,\text{dB})}
+\end{aligned}$$
+Sama energia-annos: $I_1 t_1 = I_2 t_2$, josta
+$$\begin{aligned}
+t_2 &= t_1 \cdot \frac{I_1}{I_2} \\
+&= \frac{t_1}{10^{\,(L_2 - L_1)/(10\,\text{dB})}}
+\end{aligned}$$
+**Muunnokset:** Ei tarvita: eksponentissa desibelit supistuvat. Aika saadaan tunteina kuten $t_1$.
+**Sijoitus:**
+Kohta b, kun taso kasvaa $3\,\text{dB}$:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,3\,\text{dB}/(10\,\text{dB})} \\
+&= 10^{\,0{,}3} \\
+&\approx 1{,}995
+\end{aligned}$$
+Kun taso kasvaa $10\,\text{dB}$, suhde on $\dfrac{I_2}{I_1} = 10^{\,1} = 10$.
+Kohta c:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,(94\,\text{dB} - 85\,\text{dB})/(10\,\text{dB})} \\
+&= 10^{\,0{,}9} \\
+&\approx 7{,}943 \\
+t_2 &= \frac{8\,\text{h}}{7{,}943} \\
+&\approx 1{,}007\,\text{h}
+\end{aligned}$$
+**Vastaus:** $t_2 \approx 1{,}0\,\text{h}$ on c-kohdan aika kahdella merkitsevällä numerolla. Tasot on annettu kokonaisina desibeleinä, joten kaksi merkitsevää numeroa riittää.
+
+a) Taso ei ole verrannollinen intensiteettiin $I$, vaan sen logaritmiin. Yhtä suuri lisäys tasossa vastaa aina yhtä suurta kerrointa intensiteetissä. Kuuloalueen intensiteetit kasvavat kuulokynnyksestä kipukynnykseen noin $10^{12}$-kertaisiksi. Logaritmisella asteikolla ne mahtuvat välille $0$–$120\,\text{dB}$.
+
+b) $3\,\text{dB}$:n lisäys noin kaksinkertaistaa intensiteetin (kerroin $2{,}0$). $10\,\text{dB}$:n lisäys kymmenkertaistaa sen.
+
+c) Tasolla $85\,\text{dB}$ työnantajan on aineiston mukaan laadittava meluntorjuntaohjelma. Kuulonsuojaimia on käytettävä. Alueet, joilla tällaista altistumista voi olla, on merkittävä.
+
+Taulukon kolme arvoa ovat kahdeksan tunnin työpäivän altistustasoja. Syy on se, että melun energia-annos määritetään aina kahdeksan tunnin työpäivälle. Jos taso $94\,\text{dB}$ kestää koko työpäivän, päivän altistustaso on $94\,\text{dB(A)}$. Se on $7\,\text{dB}$ raja-arvon $87\,\text{dB(A)}$ yläpuolella. Raja-arvo arvioidaan kuulonsuojaimen sisäpuolelta. Siksi suojainten olisi silloin vaimennettava korvaan tulevaa tasoa vähintään $7\,\text{dB}$.
+
+Intensiteetti on tasolla $94\,\text{dB}$ noin $7{,}9$-kertainen. Sama energia-annos kuin kahdeksassa tunnissa tasolla $85\,\text{dB}$ kertyy siis jo ajassa $t_2 \approx 1{,}0\,\text{h}$. Oletetaan, että työpäivän muu melu on vähäistä. Silloin tunnin altistus tasolle $94\,\text{dB}$ vastaa kahdeksan tunnin altistustasoa $85\,\text{dB(A)}$. Se on yhtä suuri kuin ylempi toiminta-arvo, joten suojaimet ovat pakolliset. Se jää kuitenkin raja-arvon $87\,\text{dB(A)}$ alapuolelle.
+
+d) Väite ei pidä paikkaansa. Logaritmisella asteikolla $3\,\text{dB}$ kaksinkertaistaa korvaan tulevan energian. Samalla se puolittaa ajan, jossa sama annos kertyy. $9\,\text{dB}$ lyhentää ajan kahdeksasta tunnista yhteen.
+
+Aineiston kolme viitearvoa mahtuvat $7\,\text{dB}$:n sisään. Silti ne erottavat toisistaan tiedottamisen, suojainten käyttöpakon ja tason, jota ei saa ylittää.
+
+Väite kuulostaa uskottavalta, koska $3\,\text{dB}$:n muutos kuulostaa korvaan pieneltä. Kuulon rasitus riippuu kuitenkin energiasta. Se ei riipu siitä, miltä ääni kuulostaa.
+
+**Järkevyys:** Luvun nyrkkisääntö antaa saman tuloksen. $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti: $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo. Se ei ole turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin. Malli ei myöskään kata iskumelua eli hyvin lyhyitä ja voimakkaita ääniä. Aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen. Tarkempi tulos ei siis olisi perusteltu.

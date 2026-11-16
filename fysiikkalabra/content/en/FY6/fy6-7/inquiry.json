@@ -29,7 +29,7 @@
         {
           "text": "About $60\\,\\text{W}$, because power is voltage times current.",
           "correct": true,
-          "feedback": "Correct. $P = UI = 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\approx 60\\,\\text{W}$ (chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a lamp uses and what it costs."
+          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a lamp uses and what it costs."
         },
         {
           "text": "About $880\\,\\text{W}$, because power is voltage divided by current.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "About $0.26\\,\\text{W}$, because the power of a lamp is the same as its current.",
-          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $P = UI = 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\approx 60\\,\\text{W}$ (chapter *Electric power and the heating of a resistor*)."
+          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*)."
         }
       ]
     },
@@ -55,12 +55,12 @@
       "choices": [
         {
           "text": "The kettle, because its power is twenty times that of the refrigerator.",
-          "feedback": "The calculations in the table disprove this: the kettle uses $2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$ in a day, the refrigerator $0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$. Power only tells how fast energy is used; the time of use matters just as much."
+          "feedback": "The calculations in the table disprove this: the kettle uses $2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$ in a day, the refrigerator $$0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$$. Power only tells how fast energy is used; the time of use matters just as much."
         },
         {
           "text": "The refrigerator, because energy is power times time and the refrigerator runs for many hours.",
           "correct": true,
-          "feedback": "The calculations support this: the refrigerator uses $0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$ and the kettle $2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$. The power of the refrigerator is one twentieth, but it runs forty times as long."
+          "feedback": "The calculations support this: the refrigerator uses $$0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$$ and the kettle $2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$. The power of the refrigerator is one twentieth, but it runs forty times as long."
         },
         {
           "text": "Both the same, because both are ordinary home appliances.",
@@ -132,7 +132,7 @@
             "feedback": "The result is in watt-hours, $2000\\,\\text{W} \\cdot 0.20\\,\\text{h} = 400\\,\\text{Wh}$. In kilowatt-hours it is $0.40\\,\\text{kWh}$."
           }
         ],
-        "solution": "**Given:** power $P = 2000\\,\\text{W}$, time of use $t = 12\\,\\text{min}$ per day\n\n**Find:** the energy in a day $E$ in kilowatt-hours\n\n**Principle:** When the kettle is on, its power is constant, so the energy is power times the total time of use. With kilowatts and hours the energy comes out directly in kilowatt-hours.\n\n**Formula:** $E = Pt$\n\n**Conversions:** $P = 2000\\,\\text{W} = 2000 \\cdot 0.001\\,\\text{kW} = 2.0\\,\\text{kW}$ and $t = 12\\,\\text{min} = \\tfrac{12}{60}\\,\\text{h} = 0.20\\,\\text{h}$\n\n**Substitution:** $E = 2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$\n\n**Answer:** $0.40\\,\\text{kWh}$, two significant figures like the time of use $12\\,\\text{min}$.\n\n**Reasonableness:** Used for an hour, the kettle would use $2.0\\,\\text{kWh}$, and $12\\,\\text{min}$ is a fifth of an hour, so $2.0\\,\\text{kWh} : 5 = 0.40\\,\\text{kWh}$. In the same time the refrigerator uses $0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$, even though its power is much smaller."
+        "solution": "**Given:** power $P = 2000\\,\\text{W}$, time of use $t = 12\\,\\text{min}$ per day\n\n**Find:** the energy in a day $E$ in kilowatt-hours\n\n**Principle:** When the kettle is on, its power is constant, so the energy is power times the total time of use. With kilowatts and hours the energy comes out directly in kilowatt-hours.\n\n**Formula:** $E = Pt$\n\n**Conversions:** $P = 2000\\,\\text{W} = 2000 \\cdot 0.001\\,\\text{kW} = 2.0\\,\\text{kW}$ and $t = 12\\,\\text{min} = \\tfrac{12}{60}\\,\\text{h} = 0.20\\,\\text{h}$\n\n**Substitution:** $E = 2.0\\,\\text{kW} \\cdot 0.20\\,\\text{h} = 0.40\\,\\text{kWh}$\n\n**Answer:** $0.40\\,\\text{kWh}$, two significant figures like the time of use $12\\,\\text{min}$.\n\n**Reasonableness:** Used for an hour, the kettle would use $2.0\\,\\text{kWh}$, and $12\\,\\text{min}$ is a fifth of an hour, so $2.0\\,\\text{kWh} : 5 = 0.40\\,\\text{kWh}$. In the same time the refrigerator uses $$0.10\\,\\text{kW} \\cdot 8.0\\,\\text{h} = 0.80\\,\\text{kWh}$$, even though its power is much smaller."
       }
     },
     {
@@ -164,7 +164,7 @@
             "feedback": "You used the whole power of the halogen lamps, $5 \\cdot 40\\,\\text{W}$. The LED lamps still use $5.0\\,\\text{W}$ each, so the power saved is $5 \\cdot 35\\,\\text{W} = 175\\,\\text{W}$."
           }
         ],
-        "solution": "**Given:** five lamps whose power drops from $40\\,\\text{W}$ to $5.0\\,\\text{W}$; burning time $3.0\\,\\text{h}$ per day, $365$ days\n\n**Find:** the yearly energy saving $\\Delta E$ in kilowatt-hours\n\n**Principle:** The lamps burn equally long before and after the replacement, so the saving is the difference of the powers times the burning time. The saving of all five lamps is five times the saving of one lamp.\n\n**Formula:** $\\Delta E = 5 \\cdot (P_1 - P_2) \\cdot t$\n\n**Conversions:** $5 \\cdot (40\\,\\text{W} - 5.0\\,\\text{W}) = 175\\,\\text{W} = 0.175\\,\\text{kW}$ and $t = 365 \\cdot 3.0\\,\\text{h} = 1095\\,\\text{h}$\n\n**Substitution:** $\\Delta E = 0.175\\,\\text{kW} \\cdot 1095\\,\\text{h} = 191.6\\,\\text{kWh}$\n\n**Answer:** $190\\,\\text{kWh}$, two significant figures like the burning time $3.0\\,\\text{h}$ and the power $5.0\\,\\text{W}$.\n\n**Reasonableness:** Estimate: $0.2\\,\\text{kW} \\cdot 1000\\,\\text{h} = 200\\,\\text{kWh}$. The other savings in the table are, for standby, $0.0030\\,\\text{kW} \\cdot 7665\\,\\text{h} \\approx 23\\,\\text{kWh}$, for the kettle $2.0\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} \\cdot 365 \\approx 122\\,\\text{kWh}$ and for the sauna $6.0\\,\\text{kW} \\cdot 78\\,\\text{h} = 468\\,\\text{kWh}$, so replacing the lamps is the second most effective way and shortening the kettle use the third."
+        "solution": "**Given:** five lamps whose power drops from $40\\,\\text{W}$ to $5.0\\,\\text{W}$; burning time $3.0\\,\\text{h}$ per day, $365$ days\n\n**Find:** the yearly energy saving $\\Delta E$ in kilowatt-hours\n\n**Principle:** The lamps burn equally long before and after the replacement, so the saving is the difference of the powers times the burning time. The saving of all five lamps is five times the saving of one lamp.\n\n**Formula:** $\\Delta E = 5 \\cdot (P_1 - P_2) \\cdot t$\n\n**Conversions:** $5 \\cdot (40\\,\\text{W} - 5.0\\,\\text{W}) = 175\\,\\text{W} = 0.175\\,\\text{kW}$ and $t = 365 \\cdot 3.0\\,\\text{h} = 1095\\,\\text{h}$\n\n**Substitution:** $\\Delta E = 0.175\\,\\text{kW} \\cdot 1095\\,\\text{h} = 191.6\\,\\text{kWh}$\n\n**Answer:** $190\\,\\text{kWh}$, two significant figures like the burning time $3.0\\,\\text{h}$ and the power $5.0\\,\\text{W}$.\n\n**Reasonableness:** Estimate: $$0.2\\,\\text{kW} \\cdot 1000\\,\\text{h} = 200\\,\\text{kWh}$$. The other savings in the table are, for standby, $$\\begin{aligned} &0.0030\\,\\text{kW} \\cdot 7665\\,\\text{h} \\\\ &\\approx 23\\,\\text{kWh} \\end{aligned}$$, for the kettle $2.0\\,\\text{kW} \\cdot \\tfrac{1}{6}\\,\\text{h} \\cdot 365 \\approx 122\\,\\text{kWh}$ and for the sauna $6.0\\,\\text{kW} \\cdot 78\\,\\text{h} = 468\\,\\text{kWh}$, so replacing the lamps is the second most effective way and shortening the kettle use the third."
       }
     },
     {
@@ -228,7 +228,7 @@
         },
         {
           "text": "There is no error in the calculation, because $\\text{W} \\cdot \\text{min}$ is the same as $\\text{kWh}$.",
-          "feedback": "A watt-minute is a much smaller unit than a kilowatt-hour: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 60\\,\\text{min} = 60\\,000\\,\\text{W} \\cdot \\text{min}$. So $30\\,000\\,\\text{W} \\cdot \\text{min}$ is only $0.50\\,\\text{kWh}$."
+          "feedback": "A watt-minute is a much smaller unit than a kilowatt-hour: $$\\begin{aligned} 1\\,\\text{kWh} &= 1000\\,\\text{W} \\cdot 60\\,\\text{min} \\\\ &= 60\\,000\\,\\text{W} \\cdot \\text{min} \\end{aligned}$$. So $30\\,000\\,\\text{W} \\cdot \\text{min}$ is only $0.50\\,\\text{kWh}$."
         }
       ]
     },
@@ -256,7 +256,7 @@
           "feedback": "You used only the price of energy. Transmission is also paid for every kilowatt-hour, so the price is $12.0\\,\\text{c/kWh} + 6.0\\,\\text{c/kWh} = 18.0\\,\\text{c/kWh}$."
         }
       ],
-      "solution": "**Given:** meter readings $15\\,362\\,\\text{kWh}$ and $15\\,589\\,\\text{kWh}$, price of energy $12.0\\,\\text{c/kWh}$, price of transmission $6.0\\,\\text{c/kWh}$, basic charges $K_\\text{base} = 9.00\\,\\text{€}$\n\n**Find:** the total of the bill for the month $K$ in euros\n\n**Principle:** The meter adds up all the electrical energy used in the apartment, so the energy of the month is the difference of the readings. Energy and transmission are paid per kilowatt-hour, and the basic charges are added regardless of consumption.\n\n**Formula:** $E = E_\\text{end} - E_\\text{start}$ and $K = aE + K_\\text{base}$, so $K = a(E_\\text{end} - E_\\text{start}) + K_\\text{base}$\n\n**Conversions:** $a = 12.0\\,\\text{c/kWh} + 6.0\\,\\text{c/kWh} = 18.0\\,\\text{c/kWh} = 0.180\\,\\text{€/kWh}$\n\n**Substitution:** $E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ and $K = 0.180\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 227\\,\\text{kWh} + 9.00\\,\\text{€} = 40.86\\,\\text{€} + 9.00\\,\\text{€} = 49.86\\,\\text{€}$\n\n**Answer:** $49.86\\,\\text{€} \\approx 50\\,\\text{€}$; the data are accurate to three significant figures like the price of energy $12.0\\,\\text{c/kWh}$.\n\n**Reasonableness:** Estimate: $230\\,\\text{kWh} \\cdot 0.2\\,\\text{€/kWh} \\approx 46\\,\\text{€}$ and the basic charges on top, about $55\\,\\text{€}$; the exact result is a little smaller, because the price is below $0.2\\,\\text{€/kWh}$. A consumption of $227\\,\\text{kWh}$ a month, that is about $7.6\\,\\text{kWh}$ a day, suits an apartment in a block of flats without electric heating."
+      "solution": "**Given:** meter readings $15\\,362\\,\\text{kWh}$ and $15\\,589\\,\\text{kWh}$, price of energy $12.0\\,\\text{c/kWh}$, price of transmission $6.0\\,\\text{c/kWh}$, basic charges $K_\\text{base} = 9.00\\,\\text{€}$\n\n**Find:** the total of the bill for the month $K$ in euros\n\n**Principle:** The meter adds up all the electrical energy used in the apartment, so the energy of the month is the difference of the readings. Energy and transmission are paid per kilowatt-hour, and the basic charges are added regardless of consumption.\n\n**Formula:** $E = E_\\text{end} - E_\\text{start}$ and $K = aE + K_\\text{base}$, so $$K = a(E_\\text{end} - E_\\text{start}) + K_\\text{base}$$\n\n**Conversions:** $a = 12.0\\,\\text{c/kWh} + 6.0\\,\\text{c/kWh} = 18.0\\,\\text{c/kWh} = 0.180\\,\\text{€/kWh}$\n\n**Substitution:** $E = 15\\,589\\,\\text{kWh} - 15\\,362\\,\\text{kWh} = 227\\,\\text{kWh}$ and $K = 0.180\\,\\tfrac{\\text{€}}{\\text{kWh}} \\cdot 227\\,\\text{kWh} + 9.00\\,\\text{€} = 40.86\\,\\text{€} + 9.00\\,\\text{€} = 49.86\\,\\text{€}$\n\n**Answer:** $49.86\\,\\text{€} \\approx 50\\,\\text{€}$; the data are accurate to three significant figures like the price of energy $12.0\\,\\text{c/kWh}$.\n\n**Reasonableness:** Estimate: $$\\begin{aligned} &230\\,\\text{kWh} \\cdot 0.2\\,\\text{€/kWh} \\\\ &\\approx 46\\,\\text{€} \\end{aligned}$$ and the basic charges on top, about $55\\,\\text{€}$; the exact result is a little smaller, because the price is below $0.2\\,\\text{€/kWh}$. A consumption of $227\\,\\text{kWh}$ a month, that is about $7.6\\,\\text{kWh}$ a day, suits an apartment in a block of flats without electric heating."
     },
     {
       "id": "harjoitukset",
@@ -274,7 +274,7 @@
         {
           "text": "Energy: a kilowatt-hour is the power of one kilowatt multiplied by a time of one hour.",
           "correct": true,
-          "feedback": "Correct. The kilowatt-hour is a unit of energy, $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3.6\\,\\text{MJ}$. An electricity bill charges for the energy used."
+          "feedback": "Correct. The kilowatt-hour is a unit of energy, $$\\begin{aligned} 1\\,\\text{kWh} &= 1000\\,\\text{W} \\cdot 3600\\,\\text{s} \\\\ &= 3.6\\,\\text{MJ} \\end{aligned}$$. An electricity bill charges for the energy used."
         },
         {
           "text": "Power: a kilowatt-hour tells how many kilowatts a device uses per hour.",

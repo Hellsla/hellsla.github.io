@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9b6f79e9e8ca9859
-SCOPE: delta added-exercise from fab8918566397611 base 81db4a6fd727
+CONTENT-HASH: 557c1c077663a50d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-3 — the label r_B = 1,80 m touches the carousel rim (its m sits on the edge); shift the label inward (optional, figure is teacher-approved, so only if redrawn).
+- [Minor] eq-chain rows in L2-03, L3-02, L3-03 wider than the 360 px card scroll inside it; known clipped formulas in docs/clipped-formulas.tsv, text untouched.
 
 ## Checked
-- Delta of the two or three added exercises (en): 1280 px open-exercises 1/10 and 1/11 (L1-10, L1-11) and L2 part 9 (L2-08 with the carousel figure).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal point consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- own Playwright render of preview/en/fy5-3.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-10, L2-08, L3-01 at 360 and 1280 px opened where noted.
+- Calculation rows re-broken: aligned at =, one step per row, nothing clipped in the opened captures.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

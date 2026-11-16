@@ -26,7 +26,7 @@
 **Conversions:** The result comes out in metres, and finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\lambda = \dfrac{0.24\,\text{m/s}}{8.0\,\text{Hz}} = 0.030\,\text{m} = 0.030 \cdot 100\,\text{cm} = 3.0\,\text{cm}$
 **Answer:** $3.0\,\text{cm}$, two significant figures like the speed and the frequency.
-**Reasonableness:** The crests of waves in a ripple tank are a few centimetres apart. Check: $$8.0\,\text{Hz} \cdot 0.030\,\text{m} = 0.24\,\text{m/s}$$, and the unit $\tfrac{\text{m/s}}{\text{1/s}} = \text{m}$.
+**Reasonableness:** The crests of waves in a ripple tank are a few centimetres apart. Check: $8.0\,\text{Hz} \cdot 0.030\,\text{m} = 0.24\,\text{m/s}$, and the unit $\tfrac{\text{m/s}}{\text{1/s}} = \text{m}$.
 
 ## fy5-11-L1-04
 **Find:** the direction of the displacement of the reflected pulse and the reason for it

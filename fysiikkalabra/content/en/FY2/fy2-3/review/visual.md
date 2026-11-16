@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8b7d7cb8f1d3b7cf
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
-Round: 2
+CONTENT-HASH: 3f1ddb4a937f5f43
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] reflow-lesson-2 — the capture is a whole-page stack that is too small to read; the changed blocks in lesson-1 and lesson-3 were judged.
 
 ## Checked
-- lesson.md: the duplicate "Their quotient is the average power over the interval." removed; paragraph reads correctly.
-- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).
+batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 75141c516061de83
+CONTENT-HASH: 35c1dcbd9cab52f9
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-9: I = Δp table renders cleanly with overlined vectors.
+None.
 
-Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
-Delta (Tiivistelmä/Summary re-checked at 390 px: renders cleanly, no overflow).
+## Checked
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-10, fi-390-11, fi-390-12 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

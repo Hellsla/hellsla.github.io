@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 040c97f3f731fe50
-SCOPE: delta reflow from cac0fd5db47fb84c base cf5f907
+CONTENT-HASH: d9ba28cfd425b32a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
-- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
+- [Minor] fy8-9-L2-08 Vastaus — jos ASCII-lainausmerkit ovat yhä ratkaisussa, vaihda ne ”…”-merkkeihin (ei muutu tässä diffissä).
 
 ## Checked
-- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
-- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
+- Delta: exercises.json task text of fy8-9-L2-08; capture fy8-9-open-exercises-L2-1280-10 (task 9-17 with table, answer box and buttons).
+- Round-1 asterisks are gone: the chapter name shows as ”Elintarvikkeiden radioaktiiviset aineet” in curly quotes; layout, table and caption unchanged and unclipped.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

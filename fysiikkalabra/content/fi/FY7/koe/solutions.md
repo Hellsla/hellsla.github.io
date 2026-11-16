@@ -118,8 +118,8 @@
 **Periaate:** Jännite $U$ antaa elektronille liike-energian, ja magneettinen voima toimii ympyräliikkeen keskeisvoimana. Yhdistämällä nämä saadaan $r^2$ jännitteen suoraksi funktioksi, jolloin suoran kulmakerroin kertoo ominaisvarauksen.
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(80\,\text{V};\ 1{,}4 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}3 \cdot 10^{-3}\,\text{m}^2)$.
 **Kaava:** energiasta $eU = \tfrac{1}{2} m_\text{e} v^2$ saadaan $v = \sqrt{\tfrac{2eU}{m_\text{e}}}$, ja magneettisesta voimasta $F_\text{m} = |q| v B \sin\alpha$ (kulma $90^\circ$) ympyräliikkeessä $evB = \tfrac{m_\text{e} v^2}{r}$, joten $r = \tfrac{m_\text{e} v}{eB}$. Neliöimällä $r^2 = \dfrac{2m_\text{e}}{eB^2}\,U$, jolloin kulmakerroin $k = \dfrac{2m_\text{e}}{eB^2}$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$.
-**Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$ ja $10^{-3}\,\text{m}^2 = 10^{-3}\,\text{m}^2$ pidetään mukana.
-**Sijoitus:** $k = \dfrac{(4{,}3 - 1{,}4) \cdot 10^{-3}\,\text{m}^2}{(240 - 80)\,\text{V}} = 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, ja $B^2 = (0{,}80 \cdot 10^{-3}\,\text{T})^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, joten $B^2 k = 6{,}4 \cdot 10^{-7}\,\text{T}^2 \cdot 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$ $= 1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $\approx 1{,}7 \cdot 10^{11}\,\text{C/kg}$
+**Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$. Kuvaajasta luetut $r^2$:n arvot ovat jo neliömetreinä, ja kerroin $10^{-3}$ pidetään laskussa mukana.
+**Sijoitus:** $k = \dfrac{(4{,}3 - 1{,}4) \cdot 10^{-3}\,\text{m}^2}{(240 - 80)\,\text{V}} = 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, ja $B^2 = (0{,}80 \cdot 10^{-3}\,\text{T})^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, joten $$\begin{aligned} B^2 k &= 6{,}4 \cdot 10^{-7}\,\text{T}^2 \\ &\cdot 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V} \\ &= 1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V} \end{aligned}$$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $\approx 1{,}7 \cdot 10^{11}\,\text{C/kg}$
 **Vastaus:** Elektronin ominaisvaraus on noin $1{,}7 \cdot 10^{11}\,\text{C/kg}$ (pienimmän neliösumman sovitus antaa $1{,}74 \cdot 10^{11}\,\text{C/kg}$).
 **Järkevyys:** Arvo on lähellä tunnettua $1{,}76 \cdot 10^{11}\,\text{C/kg}$. Yksikkö $\tfrac{1}{\text{T}^2 \cdot \text{m}^2/\text{V}} = \tfrac{\text{V}}{\text{T}^2\text{m}^2}$ on sama kuin $\text{C/kg}$. Ratasäde $\approx 6\,\text{cm}$ jännitteellä $240\,\text{V}$ on tavallinen laboratoriokokoluokka.
 
@@ -177,7 +177,7 @@
 ### d)
 **Kysytty:** miksi virran suunta ei voi olla päinvastainen ja mihin vetoteho päätyy
 **Periaate:** Energian säilyminen: sähköenergiaa ei voi syntyä tyhjästä.
-**Mallivastaus:** Jos virta kulkisi päinvastaiseen suuntaan, magneettinen voima työntäisi sauvaa eteenpäin. Sauva kiihtyisi, vuon muutos ja jännite kasvaisivat ja virta kasvaisi lisää: sauva saisi liike-energiaa ja vastus lämpöä ilman ulkoista työtä, mikä rikkoo energian säilymisen. Todellisessa tilanteessa magneettinen voima vastustaa liikettä, joten vetävä voima tekee työn ja se muuttuu sähköenergiaksi. Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, joten se on sama kuin vetoteho.
+**Mallivastaus:** Jos virta kulkisi päinvastaiseen suuntaan, magneettinen voima työntäisi sauvaa eteenpäin. Sauva kiihtyisi, vuon muutos ja jännite kasvaisivat ja virta kasvaisi lisää: sauva saisi liike-energiaa ja vastus lämpöä ilman ulkoista työtä, mikä rikkoo energian säilymisen. Todellisessa tilanteessa magneettinen voima vastustaa liikettä, joten vetävä voima tekee työn ja se muuttuu sähköenergiaksi. Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi, joka siirtyy lämpönä ympäristöön, joten se on sama kuin vetoteho.
 
 ### Yleisiä virheitä
 - Virran suunta päätellään vain muistisäännöstä ilman Lenzin lain perustelua (b).
@@ -273,19 +273,19 @@
 - Kulma lasketaan kaavalla $\sin\theta = x / L$ tangentin $\tan\theta = x/L$ asemesta (a).
 - Hilaväli lasketaan käyttäen kertalukua $k = 1$ kaikilla maksimeilla (b).
 - Kertaluvun yläraja pyöristetään ylöspäin ($7$) (c).
-- Väritasapainoa ei selitetä: sanotaan vain, että "hila hajottaa valon", mutta ei kerrota, miksi violetti on lähempänä keskimaksimia (d).
+- Värien järjestystä ei selitetä: sanotaan vain, että "hila hajottaa valon", mutta ei kerrota, miksi violetti on lähempänä keskimaksimia (d).
 
 ## fy7-k6
 
 ### a)
 **Annettu:** $P = 12\,\text{MW}$, $R = 4{,}8\,\Omega$, siirtojännite $20\,\text{kV}$ (A) tai $110\,\text{kV}$ (B)
 **Kysytty:** kaapelin häviöiden osuus tuotetusta tehosta kummassakin vaihtoehdossa
-**Periaate:** Siirrettävä teho ja siirtojännite määräävät kaapelissa kulkevan virran. Kaapelin resistanssissa virta muuttaa osan energiasta lämmöksi, ja häviöteho riippuu virran neliöstä. Siksi lasketaan virta ja häviöteho kummallekin jännitteelle.
+**Periaate:** Siirrettävä teho ja siirtojännite määräävät kaapelissa kulkevan virran. Kaapelin resistanssissa virta muuttaa osan sähköenergiasta kaapelin sisäenergiaksi, ja häviöteho riippuu virran neliöstä. Siksi lasketaan virta ja häviöteho kummallekin jännitteelle.
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$, ja häviöteho $P_\text{h} = RI^2$
 **Muunnokset:** $12\,\text{MW} = 12 \cdot 10^{6}\,\text{W}$, $20\,\text{kV} = 20 \cdot 10^{3}\,\text{V}$ ja $110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** A: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (600\,\text{A})^2 = 1{,}728 \cdot 10^{6}\,\text{W}$, osuus $\dfrac{1{,}728\,\text{MW}}{12\,\text{MW}} = 0{,}144$. B: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 109{,}1\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (109{,}1\,\text{A})^2 = 5{,}71 \cdot 10^{4}\,\text{W}$, osuus $0{,}0048$
 **Vastaus:** Vaihtoehdossa A virta on $600\,\text{A}$ ja häviöteho noin $1{,}7\,\text{MW}$ eli $14\,\%$ tehosta. Vaihtoehdossa B virta on noin $109\,\text{A}$ ja häviöteho noin $57\,\text{kW}$ eli $0{,}48\,\%$. Ero johtuu siitä, että jännite on $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviöteho virran neliön mukaan $30$ kertaa pienempi.
-**Järkevyys:** Seitsemäsosa tehosta lämmöksi on liian suuri häviö käytännön voimajohdolle; jännitehäviö $RI = 2{,}9\,\text{kV}$ on $14\,\%$ siirtojännitteestä. B:n häviö alle prosentti on tavallinen suuruusluokka.
+**Järkevyys:** Seitsemäsosan häviö tehosta on liian suuri käytännön voimajohdolle; jännitehäviö $RI = 2{,}9\,\text{kV}$ on $14\,\%$ siirtojännitteestä. B:n häviö alle prosentti on tavallinen suuruusluokka.
 
 ### b)
 **Annettu:** $U_1 = 20\,\text{kV}$, $U_2 = 110\,\text{kV}$, $N_2 = 2750$, $P = 12\,\text{MW}$
@@ -302,15 +302,15 @@
 **Kysytty:** vuosisäästö ja takaisinmaksuaika
 **Periaate:** Häviöenergia on häviöteho kerrottuna ajalla, ja sen arvo saadaan hinnalla. Takaisinmaksuaika on lisäkustannus jaettuna vuosisäästöllä.
 **Kaava:** $E = P_\text{h} t$, säästö $= (E_\text{A} - E_\text{B}) \cdot \text{hinta}$ ja takaisinmaksuaika $= \dfrac{\text{lisäkustannus}}{\text{säästö}}$
-**Muunnokset:** $1{,}728\,\text{MW} \cdot 4000\,\text{h} = 6912\,\text{MWh}$ ja $0{,}0571\,\text{MW} \cdot 4000\,\text{h} = 228{,}5\,\text{MWh}$
-**Sijoitus:** säästö $= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \cdot 50\,\text{€/MWh} = 334\,200\,\text{€}$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
+**Muunnokset:** $$\begin{aligned} &1{,}728\,\text{MW} \cdot 4000\,\text{h} \\ &= 6912\,\text{MWh} \end{aligned}$$ ja $$\begin{aligned} &0{,}0571\,\text{MW} \cdot 4000\,\text{h} \\ &= 228{,}5\,\text{MWh} \end{aligned}$$
+**Sijoitus:** säästö $$\begin{aligned} &= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€} \end{aligned}$$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.
 **Järkevyys:** Häviöenergian arvo vaihtoehdossa A on noin $346\,000\,\text{€}$ vuodessa, ja B:ssä $11\,400\,\text{€}$ vuodessa; säästö on lähes koko A:n häviön arvo, kuten pitääkin. Huomautus: jos kahden muuntajan omat häviöt ($0{,}5\,\%$ kummallakin eli yhteensä $120\,\text{kW}$, vuodessa $24\,000\,\text{€}$) otetaan huomioon, säästö on $310\,000\,\text{€}$ vuodessa ja takaisinmaksuaika noin $9{,}7\,\text{a}$.
 
 ### d)
 **Kysytty:** oletusten arviointi ja vaihtoehdon valinta
 **Periaate:** Mallin tulokset ovat yhtä luotettavia kuin sen oletukset. Valinta perustellaan luvuilla ja huomioidaan mallin rajat.
-**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin. B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin yhdeksässä vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma. Kaksi muuntajaa, joiden häviö on $0{,}5\,\%$ kummallakin, hukkaisi noin $120\,\text{kW}$, enemmän kuin B:n kaapeli ($57\,\text{kW}$); yhteensä noin $177\,\text{kW}$ on silti alle kymmenesosa A:n häviöstä $1{,}73\,\text{MW}$, joten B voittaa. Johtopäätös: valitaan B.
+**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin. B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin yhdeksässä vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma. Kaksi muuntajaa, joiden häviö on $0{,}5\,\%$ kummallakin, hukkaisi noin $120\,\text{kW}$, enemmän kuin B:n kaapeli ($57\,\text{kW}$); yhteensä noin $177\,\text{kW}$ on silti vain noin kymmenesosa A:n häviöstä $1{,}73\,\text{MW}$, joten B voittaa. Johtopäätös: valitaan B.
 
 ### Yleisiä virheitä
 - Häviöteho lasketaan kaavalla $P_\text{h} = UI$ koko jännitteellä (a).
@@ -401,7 +401,7 @@
 **Periaate:** Verrataan poikkeamaa mittauksen satunnaiseen epävarmuuteen: jos poikkeama on suurempi, syy on todennäköisesti systemaattinen.
 **Kaava:** suhteellinen poikkeama $\dfrac{b_\text{kirj} - b}{b_\text{kirj}}$ ja suhteellisten epävarmuuksien yhdistelmä $\sqrt{(\Delta T/T)^2 + (\Delta\lambda/\lambda)^2}$
 **Muunnokset:** Poikkeama prosentteina: kerrotaan $100\,\%$:lla.
-**Sijoitus:** $\dfrac{2{,}898 - 2{,}76}{2{,}898} = 0{,}048$. Satunnainen epävarmuus pienimmällä lämpötilalla on $\sqrt{(50/2200)^2 + (15/1262)^2} = 0{,}026$, eli noin $2$–$3\,\%$.
+**Sijoitus:** $\dfrac{2{,}898 - 2{,}76}{2{,}898} = 0{,}048$. Satunnainen epävarmuus pienimmällä lämpötilalla on $$\begin{aligned} &\sqrt{(50/2200)^2 + (15/1262)^2} \\ &= 0{,}026 \end{aligned}$$, eli noin $2$–$3\,\%$.
 **Vastaus:** Tulos on noin $4{,}8\,\%$ pienempi kuin kirjallisuuden arvo. Poikkeama on suurempi kuin satunnainen epävarmuus, ja kaikki yksittäiset $\lambda_\text{max} T$-tulot ovat samalla puolella kirjallisuuden arvoa, joten ero on todennäköisesti systemaattinen. Mahdollinen virhelähde on, että volframi ei ole musta kappale: sen emissiokyky pienenee aallonpituuden kasvaessa, jolloin huippu siirtyy hieman lyhyemmälle aallonpituudelle ja $b$ tulee liian pieneksi.
 **Järkevyys:** Vain muutaman prosentin poikkeama on uskottava, kun lanka ei ole täydellinen musta kappale ja lämpötila on arvioitu epäsuorasti.
 

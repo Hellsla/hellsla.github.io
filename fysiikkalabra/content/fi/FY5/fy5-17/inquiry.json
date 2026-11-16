@@ -55,12 +55,12 @@
       "choices": [
         {
           "text": "noin $10\\,\\text{cm}$",
-          "feedback": "Tulo $$\\begin{aligned} v t &= 1540\\,\\text{m/s} \\cdot 65\\,\\mu\\text{s} \\\\ &\\approx 0{,}10\\,\\text{m} \\end{aligned}$$ on koko matka, jonka pulssi kulki. Pulssi kulki kuitenkin rajapintaan ja takaisin, joten rajapinta on puolet tästä, noin $5{,}0\\,\\text{cm}$:n syvyydellä: $d = \\tfrac{vt}{2}$."
+          "feedback": "Tulo $v t = 1540\\,\\text{m/s} \\cdot 65\\,\\mu\\text{s} \\approx 0{,}10\\,\\text{m}$ on koko matka, jonka pulssi kulki. Pulssi kulki kuitenkin rajapintaan ja takaisin, joten rajapinta on puolet tästä, noin $5{,}0\\,\\text{cm}$:n syvyydellä: $d = \\tfrac{vt}{2}$."
         },
         {
           "text": "noin $5{,}0\\,\\text{cm}$",
           "correct": true,
-          "feedback": "Oikein. Pulssi kulkee rajapintaan ja takaisin, joten se etenee kaiun kulkuaikana kaksi kertaa syvyyden: $$\\begin{aligned} d &= \\tfrac{vt}{2} \\\\ &= \\tfrac{1540\\,\\text{m/s} \\cdot 65 \\cdot 10^{-6}\\,\\text{s}}{2} \\\\ &\\approx 0{,}050\\,\\text{m} \\end{aligned}$$. Kaikukäyrässä jokainen piikki muutettiin syvyydeksi samalla tavalla."
+          "feedback": "Oikein. Pulssi kulkee rajapintaan ja takaisin, joten se etenee kaiun kulkuaikana kaksi kertaa syvyyden: $d = \\tfrac{vt}{2} = \\tfrac{1540\\,\\text{m/s} \\cdot 65 \\cdot 10^{-6}\\,\\text{s}}{2} \\approx 0{,}050\\,\\text{m}$. Kaikukäyrässä jokainen piikki muutettiin syvyydeksi samalla tavalla."
         },
         {
           "text": "noin $2{,}5\\,\\text{cm}$",
@@ -254,7 +254,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Seismografiasema mittaa P- ja S-aallon saapumisaikojen eroksi $20\\,\\text{s}$, kun $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$. Opiskelija päättelee: ”S-aalto jää P-aallosta jälkeen $2{,}5\\,\\text{km}$ joka sekunti, joten $$\\begin{aligned} d &= (v_\\text{P} - v_\\text{S})\\,\\Delta t \\\\ &= 2{,}5\\,\\text{km/s} \\cdot 20\\,\\text{s} \\\\ &= 50\\,\\text{km} \\end{aligned}$$.” Missä on virhe?",
+      "prompt": "Seismografiasema mittaa P- ja S-aallon saapumisaikojen eroksi $20\\,\\text{s}$, kun $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$. Opiskelija päättelee: ”S-aalto jää P-aallosta jälkeen $2{,}5\\,\\text{km}$ joka sekunti, joten $d = (v_\\text{P} - v_\\text{S})\\,\\Delta t = 2{,}5\\,\\text{km/s} \\cdot 20\\,\\text{s} = 50\\,\\text{km}$.” Missä on virhe?",
       "choices": [
         {
           "text": "Aikaero on kulkuaikojen erotus $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, joten oikea tulos on $d = 168\\,\\text{km}$.",

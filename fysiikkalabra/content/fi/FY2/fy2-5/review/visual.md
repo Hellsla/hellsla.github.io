@@ -1,7 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4d8688e99d2ef3cb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-3 diff (git diff HEAD~1, commit a84956a90) only
-Round: 3
+CONTENT-HASH: ebe800111c50a61e
 
 ## Blocking
 - none
@@ -10,5 +8,7 @@ Round: 3
 - none
 
 ## Checked
-- inquiry.json ennuste-2 prompt: the second question now reads "Voiko lukuja verrata keskenään samana fysikaalisena suureena?". It is a neutral yes/no question that no longer gives the answer away, in natural Finnish. The LaTeX quantities are unchanged and there is no bold.
-- Earlier rounds are not re-reviewed. No captures opened (diff judged from source).
+Delta: lesson.md Kosteus-paragraph (16{,}2 MJ/kg, MAFY source; LaTeX, fluent). Opened fy2-5-fig-row-1280.png to see the layout around the unchanged figure. Teacher-approved figures not re-judged.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

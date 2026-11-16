@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 02ed5717f19b13fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 3fa8825b40be53ab
 
 ## Blocking
 - none
@@ -9,7 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Three-phase subsection: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en: "At the same voltage, current and power factor … $1.73$ times") reads correctly; display formula $P = \sqrt{3}\,U I \cos\varphi$ and symbol list unchanged.
-- Aria texts of grid and loss-graph unchanged since round 1 and consistent across lesson.md, figures.py, figures.json.
-- Hash identical at start and end of this round.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

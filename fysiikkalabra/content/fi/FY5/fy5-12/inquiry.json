@@ -317,7 +317,7 @@
      "feedback": "Oikein. Matkaero on laskettu oikein, $0{,}80\\,\\text{m} = 1 \\cdot \\lambda$. Kauempaa tuleva aalto on jäljessä täsmälleen yhden jakson, joten harja saapuu harjan kanssa yhtä aikaa ja ääni on voimakas. Heikentävään interferenssiin tarvittaisiin matkaero $0{,}40\\,\\text{m}$ tai $1{,}20\\,\\text{m}$."
     },
     {
-     "text": "Matkaero lasketaan summana, $$3{,}20\\,\\text{m} + 2{,}40\\,\\text{m} = 5{,}60\\,\\text{m}$$.",
+     "text": "Matkaero lasketaan summana, $3{,}20\\,\\text{m} + 2{,}40\\,\\text{m} = 5{,}60\\,\\text{m}$.",
      "feedback": "Matkaero on etäisyyksien erotus, koska se kertoo, kuinka paljon pidemmän matkan toinen aalto kulkee. Opiskelijan erotus $0{,}80\\,\\text{m}$ on oikein; virhe on johtopäätöksessä."
     },
     {

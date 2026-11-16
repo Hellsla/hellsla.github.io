@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 477fba2ef0ddaf08
-SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
+CONTENT-HASH: 9939aab4e79fce7e
+SCOPE: delta added-exercise from c6f2c3a890e2d599 base 96f3d46cabcf
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy8-1-L2-10 solution, Reasonableness — "as the threshold wavelength of sodium, 544 nm, in the theory" reads clumsily — "like the threshold wavelength of sodium, $544\,\text{nm}$, given in the theory".
+- [Minor] fy8-1-L2-10 solution, "Reading the graph" — a long paragraph, the closing "however, taken straight from the slider" is awkward — start with the slider reading and then the graph remark.
 
 ## Checked
-- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Captures fy8-1-open-exercises-L2-1280-14, -15, -16, -17 (task 1-20 text, answer box, whole solution: given, principle, formula, conversions, substitution rows, model answers a–d, answer, reasonableness). KaTeX clean, units upright with thin space, decimal point, no clipping. Set still reads as one. Delta: only the added exercise judged; no 390 px capture of exercises exists.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

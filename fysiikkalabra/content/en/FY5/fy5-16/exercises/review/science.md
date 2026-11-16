@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a65be9056dce17b6
-SCOPE: delta added-exercise from 5575f15b7bd4bcfd base 81db4a6fd727
+CONTENT-HASH: d25467943c300cb9
 
 ## Blocking
-(none)
 
 ## Polish
 - none.
 
 ## Checked
-- fy5-16-L1-09: lawn mower 90 dB read from the figure; equal-energy rule from 85 dB / 8 h (EU upper action value): t = 8 h / 2^(5/3) = 2.52 h → 2.5 h; with exact 10^(ΔL/10) 2.53 h, inside the tolerance; bracketing check (88 dB 4 h, 91 dB 2 h) right.
-- fy5-16-L2-09 (reworked, earplugs): rock concert 105 dB, minus 12 dB at the ear = 93 dB; t = 480 min / 2^(8/3) = 75.6 min → 76 min; without plugs 4.7 min, ratio 2^4 = 16 right. The dose is taken at the ear, as it should be.
-- "3 dB doubles the intensity" is a fair simplification (10^0.3 = 1.995), stated as an energy average and called an estimate in the answer.
-- Figure fy5-16/scale-tehtava: English labels "lawn mower 90 dB", "rock concert 105 dB", 85 and "risk of hearing damage" agree with what the solutions read.
-- Compared with the Finnish set by script: every number, answer, unit, tolerance and figure id identical; answers.py agrees.
-- Hash unchanged at start and end.
+- fy5-16-L2-10 recomputed: 10^0.3 = 1.995, 10^1 = 10; 10^0.9 = 7.943 and t₂ = 8 h/7.943 = 1.007 h → 1.0 h. Box 1.0 h, tolerance 0.03 right. The rule of thumb gives 8 h/2³ = 1 h.
+- Equal energy dose I₁t₁ = I₂t₂ is stated as the source's assessment basis; I₀ cancels in the level difference; 1 dB is a factor of 1.26 ("about a quarter").
+- Exposure levels: 94 dB for 8 h is 7 dB over 87 dB(A), assessed inside the protector; 94 dB for 1 h with the rest of the day quiet gives L_EX,8h = 84.97 ≈ 85 dB(A). All right.
+- The source facts (80/85/87 dB(A), the duties at each value, the 8-hour energy dose, impulsive noise) agree with the verified TTL page; the 3 dB rule is attributed to the chapter, not to the source.
+- The limits are stated: a calculated reference and not a safe time; impulsive noise not covered.
+- Captions: only the "(example data)" marker was removed. The numbers are identical to the Finnish (word order only).
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.

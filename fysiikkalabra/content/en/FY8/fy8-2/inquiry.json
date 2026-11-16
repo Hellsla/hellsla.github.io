@@ -312,14 +312,14 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A fluorescent dye is illuminated with a violet flashlight whose light has a wavelength of $405\\,\\text{nm}$. The dye emits green light as fluorescence, with a wavelength of $530\\,\\text{nm}$. Assume that every absorbed photon produces one emitted photon. How much energy is left in the dye as heat for every absorbed photon? Answer in electronvolts.",
+      "prompt": "A fluorescent dye is illuminated with a violet flashlight whose light has a wavelength of $405\\,\\text{nm}$. The dye emits green light as fluorescence, with a wavelength of $530\\,\\text{nm}$. Assume that every absorbed photon produces one emitted photon. How much energy is left in the dye as internal energy for every absorbed photon? Answer in electronvolts.",
       "answer": 0.722,
       "unit": "eV",
       "tolerance": 0.02,
       "hints": [
-        "Energy is conserved: the energy of the absorbed photon is divided into the energy of the emitted photon and heat. First calculate the energy of each photon.",
+        "Energy is conserved: the energy of the absorbed photon is divided into the energy of the emitted photon and the internal energy of the dye. First calculate the energy of each photon.",
         "The energy of a photon is $E = \\tfrac{hc}{\\lambda}$. Convert the wavelengths to metres and the result to electronvolts by substituting $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
-        "The energy of the violet photon is $3.062\\,\\text{eV}$ and that of the green one $2.340\\,\\text{eV}$. The heat is their difference."
+        "The energy of the violet photon is $3.062\\,\\text{eV}$ and that of the green one $2.340\\,\\text{eV}$. The energy left in the dye is their difference."
       ],
       "mistakes": [
         {
@@ -328,18 +328,18 @@
         },
         {
           "value": 3.06,
-          "feedback": "This is the whole energy of the absorbed violet photon. Part of it leaves as the green photon; only the difference $E_1 - E_2$ is left as heat."
+          "feedback": "This is the whole energy of the absorbed violet photon. Part of it leaves as the green photon; only the difference $E_1 - E_2$ is left as internal energy."
         },
         {
           "value": 2.34,
-          "feedback": "This is the energy of the emitted green photon. The heat asked for is the difference between the energies of the absorbed and the emitted photon."
+          "feedback": "This is the energy of the emitted green photon. The energy asked for is the difference between the energies of the absorbed and the emitted photon."
         },
         {
           "value": -0.722,
-          "feedback": "You calculated the difference the wrong way round. The energy of the absorbed violet photon is greater, so the energy left as heat, $E_1 - E_2$, is positive."
+          "feedback": "You calculated the difference the wrong way round. The energy of the absorbed violet photon is greater, so the energy left as internal energy, $E_1 - E_2$, is positive."
         }
       ],
-      "solution": "**Given:** wavelength of the absorbed photon $\\lambda_1 = 405\\,\\text{nm}$, wavelength of the emitted photon $\\lambda_2 = 530\\,\\text{nm}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the energy left as heat per photon, $E_\\text{heat}$, in electronvolts\n\n**Principle:** In fluorescence the molecule absorbs a violet photon and becomes excited, gives away part of the energy as heat and returns to the ground state by emitting a green photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the heat. The energy of each photon is obtained from its wavelength.\n\n**Formula:** $E_1 = E_2 + E_\\text{heat}$ and $E = \\dfrac{hc}{\\lambda}$, so $E_\\text{heat} = \\dfrac{hc}{\\lambda_1} - \\dfrac{hc}{\\lambda_2}$\n\n**Conversions:** $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ and $530\\,\\text{nm} = 530 \\cdot 10^{-9}\\,\\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Substitution:** $$\n\\begin{aligned}\nhc &= 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&= 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}\n\\end{aligned}\n$$ and $E_1 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4.9049 \\cdot 10^{-19}\\,\\text{J} = 3.0617\\,\\text{eV}$, $E_2 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{530 \\cdot 10^{-9}\\,\\text{m}} = 3.7481 \\cdot 10^{-19}\\,\\text{J} = 2.3396\\,\\text{eV}$ and $E_\\text{heat} = 3.0617\\,\\text{eV} - 2.3396\\,\\text{eV} = 0.7221\\,\\text{eV}$\n\n**Answer:** $0.722\\,\\text{eV}$, three significant figures like the wavelengths $405\\,\\text{nm}$ and $530\\,\\text{nm}$.\n\n**Reasonableness:** With the estimate $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ we get $\\tfrac{1240}{405}\\,\\text{eV} \\approx 3.1\\,\\text{eV}$ and $\\tfrac{1240}{530}\\,\\text{eV} \\approx 2.3\\,\\text{eV}$, a difference of about $0.7\\,\\text{eV}$. The result is positive, as it should be: the wavelength of the emitted photon is longer, so its energy is smaller. About a quarter of the energy of the violet photon heats the dye."
+      "solution": "**Given:** wavelength of the absorbed photon $\\lambda_1 = 405\\,\\text{nm}$, wavelength of the emitted photon $\\lambda_2 = 530\\,\\text{nm}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the energy left as internal energy per photon, $E_\\text{int}$, in electronvolts\n\n**Principle:** In fluorescence the molecule absorbs a violet photon and becomes excited, gives away part of the energy as heat and returns to the ground state by emitting a green photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the internal energy left in the dye. The energy of each photon is obtained from its wavelength.\n\n**Formula:** $E_1 = E_2 + E_\\text{int}$ and $E = \\dfrac{hc}{\\lambda}$, so $E_\\text{int} = \\dfrac{hc}{\\lambda_1} - \\dfrac{hc}{\\lambda_2}$\n\n**Conversions:** $405\\,\\text{nm} = 405 \\cdot 10^{-9}\\,\\text{m}$ and $530\\,\\text{nm} = 530 \\cdot 10^{-9}\\,\\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \\cdot 10^{-19}\\,\\tfrac{\\text{J}}{\\text{eV}}$.\n\n**Substitution:** $$\n\\begin{aligned}\nhc &= 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&= 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}\n\\end{aligned}\n$$ and $E_1 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{405 \\cdot 10^{-9}\\,\\text{m}} = 4.9049 \\cdot 10^{-19}\\,\\text{J} = 3.0617\\,\\text{eV}$, $E_2 = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{530 \\cdot 10^{-9}\\,\\text{m}} = 3.7481 \\cdot 10^{-19}\\,\\text{J} = 2.3396\\,\\text{eV}$ and $E_\\text{int} = 3.0617\\,\\text{eV} - 2.3396\\,\\text{eV} = 0.7221\\,\\text{eV}$\n\n**Answer:** $0.722\\,\\text{eV}$, three significant figures like the wavelengths $405\\,\\text{nm}$ and $530\\,\\text{nm}$.\n\n**Reasonableness:** With the estimate $hc \\approx 1240\\,\\text{eV}\\,\\text{nm}$ we get $\\tfrac{1240}{405}\\,\\text{eV} \\approx 3.1\\,\\text{eV}$ and $\\tfrac{1240}{530}\\,\\text{eV} \\approx 2.3\\,\\text{eV}$, a difference of about $0.7\\,\\text{eV}$. The result is positive, as it should be: the wavelength of the emitted photon is longer, so its energy is smaller. About a quarter of the energy of the violet photon heats the dye."
     },
     {
       "id": "harjoitukset",

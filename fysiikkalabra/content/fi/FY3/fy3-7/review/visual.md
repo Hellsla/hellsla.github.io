@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e0f5d73568bcfbf
+CONTENT-HASH: 8a46fba96fbecc22
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, Järkevyys — the new chain uses $Q$ ($\Delta m = Q/r = Pt/r$) without saying $Q = Pt = 300\,\text{kJ}$ in that sentence; the symbol is explained in stage 2, so only a small gap — add "kun $Q = Pt$" if the text is next edited.
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- delta 2026-11-13 (formula names, wording): fy3-7-example-390-1.png (stage 3: new lead-in sentence and the extra row $Q_\text{kuum} = Q_\text{h}$ above $Pt = r\,\Delta m$ and $r = Pt/\Delta m$; the three rows align at the equals sign, subscripts upright, no overflow at 390 px).
-- fy3-7-example-390-2.png (stage 5 chain starts with $r =$, one `=` per row; stage 7 new chain $\Delta m = Q/r = Pt/r = \ldots = 0{,}133\,\text{kg}$ aligned, fractions and units readable, decimal comma, units LaTeX).
-- inquiry.json changes (answer option wording, feedback on the horizontal part of the curve) read as text only: units typeset, Finnish fluent and unambiguous; no capture opened for them.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

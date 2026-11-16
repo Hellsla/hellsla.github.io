@@ -1,12 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 959b5037fa5f1543
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 0afbb0e960a7159d
+SCOPE: delta added-exercise from 14b54a6e061b7b91 base 415cbc7c6bc3
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- fy8-12-L3-06 solution is long (about 280 words); acceptable for a level 3 data task. Interaction shares are rounded estimates from NIST XCOM attenuation coefficients.
+
+- The three round-1 length polishes (c five asks, d three asks, stem length) are not addressed in this diff; still optional.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+
+- Box answer 14 with tolerance 0.04 accepts 14.48 (exact) and 14.5, so both the rounded two-figure value and the earlier value pass; answers.py comment matches the 2-significant-figure answer.
+- Solution Vastaus/Answer now states two significant figures (matches the 3,5 GHz data) and says the box also accepts 14,5.
+- Comparison ratios split into two displayed lines: clearer, same numbers (6,9e5, 6,9e9).
+- Units J s and 24 h typeset consistently in task and solution; no pedagogical change.
+- Method: delta, diff only.

@@ -29,7 +29,7 @@
         {
           "text": "$60\\,\\text{mA}$",
           "correct": true,
-          "feedback": "Oikein. Ohmin lain mukaan $I = U : R = 6{,}0\\,\\text{V} : 100\\,\\Omega = 0{,}060\\,\\text{A} = 60\\,\\text{mA}$ (luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mitä tapahtuu, kun vastuksia on kaksi."
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 6{,}0\\,\\text{V} : 100\\,\\Omega \\\\ &= 0{,}060\\,\\text{A} \\\\ &= 60\\,\\text{mA} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mitä tapahtuu, kun vastuksia on kaksi."
         },
         {
           "text": "$600\\,\\text{mA}$",
@@ -283,7 +283,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: mikä suure oli sarjaankytkennässä sama kummassakin vastuksessa ja mikä jakautui niiden kesken? Mikä suure oli rinnankytkennässä sama kummassakin haarassa, ja miten paristosta lähtevä virta riippui haaravirroista? Miten kokonaisresistanssi muuttui, kun toinen vastus kytkettiin rinnan? Mainitse lopuksi, että luvut ovat mallin arvoja, ja mitä oletuksia ne vaativat.",
-      "model": "Sarjaankytkennässä virta oli sama kummassakin vastuksessa, esimerkiksi $40{,}0\\,\\text{mA}$, kun $R_2 = 50\\,\\Omega$, ja $20{,}0\\,\\text{mA}$, kun $R_2 = 200\\,\\Omega$. Pariston jännite jakautui vastusten kesken resistanssien suhteessa: $4{,}00\\,\\text{V} + 2{,}00\\,\\text{V} = 6{,}0\\,\\text{V}$. Rinnankytkennässä kummankin haaran yli oli pariston jännite, joten haaravirta $I_1$ pysyi $60{,}0\\,\\text{mA}$:ssa, vaikka $R_2$ muuttui. Paristosta lähtevä virta oli haaravirtojen summa, esimerkiksi $60{,}0\\,\\text{mA} + 30{,}0\\,\\text{mA} = 90{,}0\\,\\text{mA}$. Kokonaisresistanssi oli aina pienempi kuin pienempi vastuksista, esimerkiksi $50{,}0\\,\\Omega$ kahdella $100\\,\\Omega$:n vastuksella. Arvot ovat mallin laskemia: paristo on ihanteellinen eikä johtimissa ole resistanssia.",
+      "model": "Sarjaankytkennässä virta oli sama kummassakin vastuksessa, esimerkiksi $40{,}0\\,\\text{mA}$, kun $R_2 = 50\\,\\Omega$, ja $20{,}0\\,\\text{mA}$, kun $R_2 = 200\\,\\Omega$. Pariston jännite jakautui vastusten kesken resistanssien suhteessa: $4{,}00\\,\\text{V} + 2{,}00\\,\\text{V} = 6{,}0\\,\\text{V}$. Rinnankytkennässä kummankin haaran yli oli pariston jännite, joten haaravirta $I_1$ pysyi $60{,}0\\,\\text{mA}$:ssa, vaikka $R_2$ muuttui. Paristosta lähtevä virta oli haaravirtojen summa, esimerkiksi $$\\begin{aligned} &60{,}0\\,\\text{mA} + 30{,}0\\,\\text{mA} \\\\ &= 90{,}0\\,\\text{mA} \\end{aligned}$$. Kokonaisresistanssi oli aina pienempi kuin pienempi vastuksista, esimerkiksi $50{,}0\\,\\Omega$ kahdella $100\\,\\Omega$:n vastuksella. Arvot ovat mallin laskemia: paristo on ihanteellinen eikä johtimissa ole resistanssia.",
       "criteria": [
         "Sanoin, että sarjaankytkennässä virta on sama ja jännite jakautuu, ja perustelin sen lukuarvoilla.",
         "Sanoin, että rinnankytkennässä jännite on sama ja paristosta lähtevä virta on haaravirtojen summa.",

@@ -314,6 +314,48 @@
       "unit": "kg",
       "tolerance": 0.05,
       "figure": "fy4-7/ep-kuvaaja"
+    },
+    {
+      "id": "fy4-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Fintraffic mittaa autojen ja muiden ajoneuvojen nopeuksia pääteillä. Mittaukset tekevät liikenteen automaattiset mittausasemat (LAM-asemat). Raportti <a href=\"https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf\" target=\"_blank\" rel=\"noopener\">Fintraffic: Ajonopeudet maanteillä 2025</a> (PDF, luettu 16. marraskuuta 2026) kokoaa kesäkauden 2025 mittaukset 268 asemalta. Taulukossa on raportin lukuja kolmelta tietyypiltä. Keskinopeus on kaikkien ajoneuvojen nopeuksien keskiarvo. Taulukossa on myös niiden ajoneuvojen osuus, jotka ylittivät nopeusrajoituksen eli ajoivat ylinopeutta, ja niiden osuus, jotka ylittivät rajoituksen yli $10\\,\\text{km/h}$:lla.\n\na) Kuvaile taulukon avulla, miten ajonopeudet jakautuvat teillä, joilla nopeusrajoitus on $80\\,\\text{km/h}$. Kuinka suuri osa ajoneuvoista ajaa enintään rajoituksen mukaista nopeutta? Kuinka suuri osa ajaa enintään $10\\,\\text{km/h}$ ylinopeutta? Kuinka suuri osa ajaa yli $10\\,\\text{km/h}$ ylinopeutta? Vertaa jakaumaa $100\\,\\text{km/h}$:n teiden jakaumaan.\n\nb) Auton massa on $1500\\,\\text{kg}$. Laske auton liike-energia nopeudella $80\\,\\text{km/h}$ ja nopeudella $92\\,\\text{km/h}$. Nopeus $92\\,\\text{km/h}$ on yli $10\\,\\text{km/h}$ ylinopeutta. Kuinka monta prosenttia suurempi liike-energia on suuremmalla nopeudella?\n\nc) Pysähtymismatka on matka, jonka auto kulkee siitä hetkestä, kun kuljettaja huomaa vaaran, siihen hetkeen, kun auto on pysähtynyt. Reaktioaika on aika, joka kuluu ennen kuin kuljettaja alkaa jarruttaa. Kuljettajan reaktioaika on $1{,}0\\,\\text{s}$. Jarrutuksessa auto hidastuu tasaisesti, ja hidastuvuus on $8{,}0\\,\\text{m/s}^2$ kummallakin nopeudella. Arvioi autojen pysähtymismatkojen ero.\n\nd) Mitä tämän aineiston perusteella voi päätellä liikenneturvallisuudesta? Nimeä myös ainakin kolme asiaa, jotka vaikuttavat turvallisuuteen mutta joista aineisto ei kerro mitään.\n\nKirjoita vastauslaatikkoon kohdan c) pysähtymismatkojen ero.",
+      "answer": 13.3,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Ajonopeudet pääteillä kesäkaudella 2025, kaikki ajoneuvot (Fintraffic: Ajonopeudet maanteillä 2025)",
+        "columns": [
+          "Tie ja nopeusrajoitus",
+          "Keskinopeus $(\\text{km/h})$",
+          "Rajoituksen ylittäneitä $(\\%)$",
+          "Yli $10\\,\\text{km/h}$ ylittäneitä $(\\%)$"
+        ],
+        "rows": [
+          [
+            "Yksiajoratainen päätie, $80\\,\\text{km/h}$",
+            "82.3",
+            "62.0",
+            "13.8"
+          ],
+          [
+            "Yksiajoratainen päätie, $100\\,\\text{km/h}$",
+            "96.3",
+            "39.8",
+            "8.1"
+          ],
+          [
+            "Moottoritie, $120\\,\\text{km/h}$",
+            "112.6",
+            "36.2",
+            "7.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 34fe4a4dc1063d55
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-3 diff (git diff HEAD~1, commit a84956a90) only
-Round: 3
+CONTENT-HASH: 220e08dbe292bd1b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- inquiry.json ennuste-2 prompt: "Voiko lukuja verrata keskenään niin kuin ne olisivat samaa suuretta?" is plain Selkeä suomi and neutral; the LaTeX is unchanged.
-- Earlier rounds are not re-reviewed. No captures opened (diff judged from source).
+- Delta (source): one sentence in "Kosteus ja polttoaineen laatu" now cites the MAFY value $16{,}2\,\text{MJ/kg}$; LaTeX, decimal comma and unit correct; fluent Finnish. Captures not re-opened.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

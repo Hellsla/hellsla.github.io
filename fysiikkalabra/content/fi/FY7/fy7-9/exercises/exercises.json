@@ -172,7 +172,7 @@
     {
       "id": "fy7-9-L2-06",
       "level": 2,
-      "text": "Valimossa teräsharkko kuumennetaan lämpötilaan $1500\\,{}^\\circ\\text{C}$. Opiskelija laski harkon mustan kappaleen säteilyn spektrin huipun aallonpituuden näin:\n\n$\\lambda_\\text{max} = \\dfrac{b}{t} = \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} = 1{,}93\\,\\mu\\text{m}$\n\na) Selitä, mikä opiskelijan ratkaisussa on virhe.\n\nb) Laske huipun aallonpituus oikein mikrometreinä.\n\nKirjoita vastauslaatikkoon b-kohdan tulos.",
+      "text": "Valimossa teräsharkko kuumennetaan lämpötilaan $1500\\,{}^\\circ\\text{C}$. Opiskelija laski harkon mustan kappaleen säteilyn spektrin huipun aallonpituuden näin:\n\n$$\\begin{aligned} \\lambda_\\text{max} &= \\dfrac{b}{t} \\\\ &= \\dfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} \\\\ &= 1{,}93\\,\\mu\\text{m} \\end{aligned}$$\n\na) Selitä, mikä opiskelijan ratkaisussa on virhe.\n\nb) Laske huipun aallonpituus oikein mikrometreinä.\n\nKirjoita vastauslaatikkoon b-kohdan tulos.",
       "kind": [
         "error"
       ],
@@ -281,6 +281,32 @@
       "unit": "µm",
       "tolerance": 0.02,
       "figure": "fy7-9/spectrum-task"
+    },
+    {
+      "id": "fy7-9-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Aineisto: <a href=\"https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel2.html\" target=\"_blank\" rel=\"noopener\">Copernicus – Sentinel-2</a> (luettu 16. marraskuuta 2026)\n\nMiten satelliitti näkee näkymätöntä valoa? Sentinel-2-satelliitit kuvaavat maanpintaa $13$ aallonpituuskaistalla eli kanavalla. Aineisto on englanninkielinen: sivun kohdassa <em>Sentinel-2 Level 3 Quarterly Mosaics</em> on taulukko <em>Spectral Bands</em>, jonka sarake <em>Center Wavelength (μm)</em> kertoo kanavan keskiaallonpituuden mikrometreinä. Valon nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Selvitä taulukosta sinisen kanavan B02, punaisen kanavan B04 ja lähi-infrapunakanavan B08 (NIR) keskiaallonpituudet. Mitkä näistä kanavista ovat näkyvän valon alueella ($0{,}38$–$0{,}75\\,\\mu\\text{m}$)?\n\nb) Laske kanavien keskiaallonpituuksia vastaavat säteilyn taajuudet.\n\nc) Terve kasvillisuus heijastaa lähi-infrapunaa voimakkaasti mutta punaista valoa heikosti, ja vesi imee lähi-infrapunan lähes kokonaan. Selitä näiden tietojen ja aineiston avulla, miksi satelliitti voi eri aallonpituusalueilla havaita kohteiden ominaisuuksia, jotka eivät erotu tavallisesta värivalokuvasta.\n\nd) Arvioi väitettä: ”Satelliitin lähi-infrapunakanavalla mitataan suoraan maanpinnan lämpötilaa samalla tavalla kuin lämpökameralla.” Käytä perusteluna Wienin siirtymälakia ($b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$) ja oleta, että maanpinnan lämpötila on $300\\,\\text{K}$.\n\nVastaa laatikkoon kohdan b) kanavan B08 taajuus terahertseinä ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$).",
+      "answer": 356.2945,
+      "unit": "THz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-11",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Aineisto: <a href=\"https://yle.fi/a/20-302064\" target=\"_blank\" rel=\"noopener\">Yle – Valheenpaljastaja: Suomalainen yritys kauppaa 5G-säteilysuojavaatteita</a> (luettu 16. marraskuuta 2026)\n\nSuojaavatko erityisvaatteet 5G-säteilyltä? Tutustu Ylen artikkeliin, jossa fysiikan professori ja Säteilyturvakeskuksen asiantuntija arvioivat hopeakankaasta tehtyjen ”säteilysuojavaatteiden” markkinointia.\n\na) Selitä, mihin fysikaaliseen ilmiöön sähkömagneettista säteilyä vaimentavan materiaalin, kuten hopeakankaan, toiminta perustuu. Miksi vaate ei artikkelin mukaan silti ole Faradayn häkki?\n\nb) Erään 5G-verkon taajuuskaistan keskitaajuus on $3{,}5\\,\\text{GHz}$. Laske säteilyn aallonpituus ja yksittäisen fotonin energia elektronivoltteina. Fotoni on säteilyn pienin energia-annos, ja sen energia on $E = hf$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J} \\cdot \\text{s}$ on Planckin vakio ja $f$ säteilyn taajuus. Fotonia käsitellään tarkemmin opintojaksossa <em>Aine, säteily ja kvantittuminen</em>. Valon nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nc) Säteily on ionisoivaa, jos yksi fotoni pystyy irrottamaan atomista tai molekyylistä elektronin. Siihen tarvitaan noin $10\\,\\text{eV}$ tai enemmän, ja röntgensäteilyn fotonien energiat ovat tuhansia elektronivoltteja. Vertaa kohdan b) fotonin energiaa näihin energioihin. Mitä vertailu kertoo 5G-säteilystä?\n\nd) Arvioi artikkelin ja kohtien a)–c) avulla, miksi materiaalin kyky vaimentaa säteilyä ei yksin osoita, että tuotteesta on terveyshyötyä.\n\nVastaa laatikkoon kohdan b) fotonin energia mikroelektronivoltteina ($1\\,\\mu\\text{eV} = 10^{-6}\\,\\text{eV}$).",
+      "answer": 14.4763,
+      "unit": "µeV",
+      "tolerance": 0.04
     }
   ],
   "level3": [

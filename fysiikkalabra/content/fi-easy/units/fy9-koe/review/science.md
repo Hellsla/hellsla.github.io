@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 850c429f67e949f3
-Delta review (hero calculator removed, Part II source-material sentence, 2026-11-14) of the version passed at d3680dc9c54e00c7.
+CONTENT-HASH: c8d1c7be46b19133
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-None.
+- (none)
 
 ## Checked
-- Hero figure: all calculator elements (body, display, 12 keys) are removed from the SVG in unit.md and from figures.py; no path or rect of the calculator is left (grep `M930,440`, `M948,452`). The aria-label and the figures.json alt text no longer mention a calculator, and no other "laskin"/"calculator" is left in the unit. This agrees with YTL Reaaliaineiden kokeiden määräykset §3 (fetched 2026-11-14): "ei saa käyttää apuvälineinä erillisiä laskimia eikä erillisiä taulukkokirjoja"; the English test-specific regulations say the same.
-- Part III bullet, new sentence (source material in most Part II questions, 4 or 5 of 7 in recent exams): checked against the Board's grading instructions. Spring 2026 (2026-03-25_FY_fi): Tuulivoimala, Hiilidioksidikapseli, Jouset, LED, Carringtonin tapaus have Aineisto, Lentokone kiitoradalla and Radioaktiiviset lähteet do not, so 5/7. Autumn 2025 (2025-09-17_FY_fi): Kuula putkessa, Maalämpö, Jalkaprässi, Aaltoja have Aineisto, the other three do not, so 4/7. "Most" and "four or five of the seven" are both right, and they agree with the Part II bullet (4 of 7, 15 p).
-- fi, en and fi-easy say the same thing.
-- Hash checked at the start and the end with `python3 scripts/units.py hash fy9-koe --lang fi-easy`.
+- inquiry.json '6. Hyötysuhde' (LED lamp, η = 35 %): the correct option is still the only correct one; the three distractors stay wrong; all four feedbacks carry out P1 correctly (rest of the energy becomes internal energy of lamp and surroundings; light + internal energy = energy taken).
+- solutions.md cycling c) and d) Periaate: resistive forces convert energy to internal energy; muscles' remainder becomes internal energy. Recomputed W = 36 198,9 J + 18 N · 1200 m = 57 798,9 J, P = 214 W: unchanged and consistent.
+- No added task (last is s4). practice.py check: OK, 4 tasks, 61 points.

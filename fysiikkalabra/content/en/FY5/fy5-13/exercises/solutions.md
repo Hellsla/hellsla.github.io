@@ -16,7 +16,7 @@
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_1 = \dfrac{340\,\text{m/s}}{2 \cdot 0.330\,\text{m}} = \dfrac{340\,\text{m/s}}{0.660\,\text{m}} = 515.2\,\text{Hz}$
 **Answer:** $515\,\text{Hz}$, three significant figures as in the length of the tube $0.330\,\text{m}$ and the speed of sound.
-**Reasonableness:** A whistle about thirty centimetres long sounds at a few hundred hertz, like the middle notes of a recorder or a flute. The wavelength is $2L = 0.660\,\text{m}$, and $$515\,\text{Hz} \cdot 0.660\,\text{m} \approx 340\,\text{m/s}$$.
+**Reasonableness:** A whistle about thirty centimetres long sounds at a few hundred hertz, like the middle notes of a recorder or a flute. The wavelength is $2L = 0.660\,\text{m}$, and $515\,\text{Hz} \cdot 0.660\,\text{m} \approx 340\,\text{m/s}$.
 
 ## fy5-13-L1-03
 **Given:** organ pipe closed at its upper end, length $L = 2.60\,\text{m}$; speed of sound in air $v = 340\,\text{m/s}$
@@ -76,7 +76,7 @@
 **Conversions:** Finally metres to centimetres: $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $L = \dfrac{3 \cdot 340\,\text{m/s}}{2 \cdot 1530\,\text{Hz}} = \dfrac{1020\,\text{m/s}}{3060\,\text{Hz}} = 0.3333\,\text{m} = 33.33\,\text{cm}$
 **Answer:** $33.3\,\text{cm}$, three significant figures as in the frequency $1530\,\text{Hz}$ and the speed of sound.
-**Reasonableness:** The fundamental frequency of the tube is $1530\,\text{Hz} : 3 = 510\,\text{Hz}$, and the check gives $\tfrac{340\,\text{m/s}}{2 \cdot 0.3333\,\text{m}} = 510\,\text{Hz}$. The wavelength of the third natural frequency is $\tfrac{2L}{3} = 0.222\,\text{m}$, and $$1530\,\text{Hz} \cdot 0.222\,\text{m} \approx 340\,\text{m/s}$$.
+**Reasonableness:** The fundamental frequency of the tube is $1530\,\text{Hz} : 3 = 510\,\text{Hz}$, and the check gives $\tfrac{340\,\text{m/s}}{2 \cdot 0.3333\,\text{m}} = 510\,\text{Hz}$. The wavelength of the third natural frequency is $\tfrac{2L}{3} = 0.222\,\text{m}$, and $1530\,\text{Hz} \cdot 0.222\,\text{m} \approx 340\,\text{m/s}$.
 
 ## fy5-13-L2-04
 **Given:** frequency of the vibrator $f = 100\,\text{Hz}$; the positions of the vibrator and the pulley are nodes; the length of the vibrating part of the rope and the number of loops are read from the figure
@@ -162,7 +162,7 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 **Conversions:** None are needed: the length is in metres and the frequency in hertz.
 **Substitution:** The ratios are $96.0\,\text{Hz}$, $95.5\,\text{Hz}$, $96.33\,\text{Hz}$, $95.75\,\text{Hz}$ and $96.2\,\text{Hz}$. Their sum is $479.78\,\text{Hz}$, so $f_{1,\text{av}} = 479.78\,\text{Hz} : 5 = 95.96\,\text{Hz}$. The speed is $v = 2 \cdot 0.640\,\text{m} \cdot 95.96\,\text{Hz} = 122.8\,\text{m/s}$
 **Answer:** $123\,\text{m/s}$, three significant figures as in the length $0.640\,\text{m}$ and the frequencies.
-**Reasonableness:** The wavelength at the fundamental frequency is $\lambda_1 = 2L = 1.28\,\text{m}$, and $$95.96\,\text{Hz} \cdot 1.28\,\text{m} = 122.8\,\text{m/s}$$. The fifth natural frequency would be $5 \cdot 95.96\,\text{Hz} = 479.8\,\text{Hz}$, which differs from the measured $481.0\,\text{Hz}$ by less than $0.3\,\%$. Small deviations are normal in real measurements.
+**Reasonableness:** The wavelength at the fundamental frequency is $\lambda_1 = 2L = 1.28\,\text{m}$, and $95.96\,\text{Hz} \cdot 1.28\,\text{m} = 122.8\,\text{m/s}$. The fifth natural frequency would be $5 \cdot 95.96\,\text{Hz} = 479.8\,\text{Hz}$, which differs from the measured $481.0\,\text{Hz}$ by less than $0.3\,\%$. Small deviations are normal in real measurements.
 
 ## fy5-13-L2-06
 **Given:** tuning fork $f = 512\,\text{Hz}$; lengths of the air column at the resonances $L_1 = 16.3\,\text{cm}$, $L_2 = 49.9\,\text{cm}$ and $L_3 = 83.3\,\text{cm}$; the water surface is a closed end

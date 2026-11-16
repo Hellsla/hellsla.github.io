@@ -285,6 +285,60 @@
       "unit": "10⁻²⁷ kg",
       "tolerance": 0.04,
       "figure": "fy7-2/r-points"
+    },
+    {
+      "id": "fy7-2-L2-10",
+      "level": 2,
+      "text": "Source material: <a href=\"https://www.ilmatieteenlaitos.fi/revontulet-ja-avaruussaa\" target=\"_blank\" rel=\"noopener\">Finnish Meteorological Institute – Revontulet ja avaruussää (Auroras and space weather, in Finnish)</a> (read 16 November 2026)\n\nWhat do the northern lights tell us about the Earth's magnetic field? The bar chart \"Magneettinen aktiivisuus kuluneen vuorokauden aikana\" (magnetic activity during the past 24 hours) on the page shows the R number, which describes how fast the Earth's magnetic field varies at a measuring station. The guide that opens from the page, <a href=\"https://www.ilmatieteenlaitos.fi/avaruussaatiedotuksen-tulkintaohje\" target=\"_blank\" rel=\"noopener\">Revontuliennusteen tulkintaohje (how to read the aurora forecast, in Finnish)</a>, tells how the R number and its two threshold values are read. The data are updated all the time, so write down the date and time of your observation. If you cannot use the chart, use the table below. It is an invented example data set of one evening at one measuring station, and we assume that the lower threshold of this station is $200$ and the upper one $400$.\n\na) Describe how the R number varies during the measuring period you chose: when did the magnetic field vary fastest, and when did the R number exceed the thresholds? According to the guide, the R number becomes the rate of change of the magnetic field in the unit $\\text{nT/s}$ when it is divided by $1350$. Calculate the rate of change that corresponds to the largest R number of the period.\n\nb) Explain how the charged particles arriving from the Sun and the Earth's magnetic field are connected with the formation of the northern lights. To support the explanation, calculate the radius of the circular path of a proton that moves at the typical speed of the solar wind, $4.0 \\cdot 10^{5}\\,\\text{m/s}$, perpendicular to the magnetic field at a place where the magnetic flux density is $50\\,\\mu\\text{T}$. The value is the magnitude of the Earth's field near the ground in Finland. The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$ and its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$. Compare the radius with the radius of the Earth, about $6370\\,\\text{km}$.\n\nc) Assess what can be concluded about the occurrence of the northern lights from the measured R numbers. Use the thresholds and the guide.\n\nd) Explain why a strong geomagnetic disturbance does not guarantee that the northern lights are seen at a given observation site. Give at least three reasons.\n\nEnter in the answer box the radius of the circular path of part b) in metres.",
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "answer": 84,
+      "unit": "m",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "R number at one measuring station (an invented example data set, not a measurement)",
+        "columns": [
+          "Time of day (h)",
+          "R number"
+        ],
+        "rows": [
+          [
+            "18",
+            "40"
+          ],
+          [
+            "19",
+            "90"
+          ],
+          [
+            "20",
+            "260"
+          ],
+          [
+            "21",
+            "540"
+          ],
+          [
+            "22",
+            "810"
+          ],
+          [
+            "23",
+            "620"
+          ],
+          [
+            "0",
+            "310"
+          ],
+          [
+            "1",
+            "120"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -357,7 +411,7 @@
     {
       "id": "fy7-2-L3-05",
       "level": 3,
-      "text": "In an example cyclotron, protons go round in a uniform magnetic field whose magnetic flux density is $1.00\\,\\text{T}$. The protons start from the centre practically at rest, and at each crossing of the gap between the D-electrodes a voltage of $60\\,\\text{kV}$ accelerates them. A proton crosses the gap twice per revolution. At the moment of extraction the protons go round a circular path whose radius is $0.20\\,\\text{m}$. The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$, its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ and the speed of light $3.00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Calculate the speed and the kinetic energy of the proton at the moment of extraction.\n\nb) How many times has the proton crossed the gap and how many revolutions has it gone round? How long does the acceleration take?\n\nc) Calculate the ratio of the speed to the speed of light and assess whether a classical treatment is justified here.\n\nGive in the answer field the acceleration time of part b) in microseconds.",
+      "text": "In an example cyclotron, protons go round in a uniform magnetic field whose magnetic flux density is $1.00\\,\\text{T}$. The protons start from the centre practically at rest, and at each crossing of the gap between the D-electrodes a voltage of $60.0\\,\\text{kV}$ accelerates them. A proton crosses the gap twice per revolution. At the moment of extraction the protons go round a circular path whose radius is $0.200\\,\\text{m}$. The mass of a proton is $1.673 \\cdot 10^{-27}\\,\\text{kg}$, its charge $1.602 \\cdot 10^{-19}\\,\\text{C}$ and the speed of light $3.00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Calculate the speed and the kinetic energy of the proton at the moment of extraction.\n\nb) How many times has the proton crossed the gap and how many revolutions has it gone round? How long does the acceleration take?\n\nc) Calculate the ratio of the speed to the speed of light and assess whether a classical treatment is justified here.\n\nGive in the answer field the acceleration time of part b) in microseconds.",
       "kind": [
         "model"
       ],

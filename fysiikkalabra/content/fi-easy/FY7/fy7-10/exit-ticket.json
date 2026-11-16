@@ -5,6 +5,6 @@
   },
   {
     "q": "Valo etenee aineessa nopeudella $2{,}25 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka suuri on aineen taitekerroin? Mikä aine se voisi olla?",
-    "a": "$n = c : v = 3{,}00 \\cdot 10^{8}\\,\\text{m/s} : 2{,}25 \\cdot 10^{8}\\,\\text{m/s} = 1{,}33$. Aine voi siis olla vettä."
+    "a": "$$\\begin{aligned} n &= c : v \\\\ &= 3{,}00 \\cdot 10^{8}\\,\\text{m/s} \\\\ &: 2{,}25 \\cdot 10^{8}\\,\\text{m/s} \\\\ &= 1{,}33 \\end{aligned}$$. Aine voi siis olla vettä."
   }
 ]

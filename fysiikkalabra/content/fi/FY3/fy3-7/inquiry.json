@@ -23,16 +23,16 @@
       "choices": [
         {
           "text": "noin $2{,}1\\,\\text{kJ}$",
-          "feedback": "Tämä on lämpömäärä yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$, joten $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
+          "feedback": "Tämä on lämpömäärä yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$, joten $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
         },
         {
           "text": "noin $210\\,\\text{kJ}$",
           "correct": true,
-          "feedback": "Oikein: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. Tätä lukua voit verrata tämän tunnin olomuodon muutoksiin."
+          "feedback": "Oikein: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$. Tätä lukua voit verrata tämän tunnin olomuodon muutoksiin."
         },
         {
           "text": "noin $419\\,\\text{kJ}$",
-          "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti, joten se kerrotaan massalla: $Q = cm\\Delta T = 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
+          "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti, joten se kerrotaan massalla: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
         }
       ],
       "optional": true
@@ -253,14 +253,14 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee, kuinka suuri lämpömäärä tarvitaan sulattamaan $0{,}20\\,\\text{kg}$ 0-asteista jäätä 0-asteiseksi vedeksi: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. Hän päättelee, että jää sulaa ilman energiaa. Missä on virhe?",
+      "prompt": "Opiskelija laskee, kuinka suuri lämpömäärä tarvitaan sulattamaan $0{,}20\\,\\text{kg}$ 0-asteista jäätä 0-asteiseksi vedeksi: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}20\\,\\text{kg} \\cdot 0\\,\\text{K} \\\\ &= 0\\,\\text{J} \\end{aligned}$$. Hän päättelee, että jää sulaa ilman energiaa. Missä on virhe?",
       "choices": [
         {
           "text": "Jään ominaislämpökapasiteetin tilalle pitäisi sijoittaa veden arvo $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
           "feedback": "Kertoimen vaihtaminen ei auta: kun $\\Delta T = 0$, tulo on yhä nolla. Virhe on itse kaavan valinnassa."
         },
         {
-          "text": "Kaava $Q = cm\\Delta T$ koskee lämpenemistä. Olomuodon muutoksessa lämpötila ei muutu, ja lämpömäärä on $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0{,}20\\,\\text{kg} \\approx 66{,}8\\,\\text{kJ}$.",
+          "text": "Kaava $Q = cm\\Delta T$ koskee lämpenemistä. Olomuodon muutoksessa lämpötila ei muutu, ja lämpömäärä on $$\\begin{aligned} Q &= sm \\\\ &= 334\\,\\text{kJ/kg} \\cdot 0{,}20\\,\\text{kg} \\\\ &\\approx 66{,}8\\,\\text{kJ} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Lämpenemiskäyrän vaakasuoralla osalla $\\Delta T = 0$, mutta energiaa siirtyy koko ajan: se muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa. Siksi sulamiseen käytetään omaa kaavaa $Q = sm$."
         },
@@ -299,7 +299,7 @@
           "feedback": "Jaoit 60:llä. Tunti on $3600\\,\\text{s}$, ei $60\\,\\text{s}$, ja teho on joulea sekunnissa."
         }
       ],
-      "solution": "**Annettu:** höyrystyvä vesi $m = 0{,}30\\,\\text{kg}$ ajassa $t = 1\\,\\text{h}$, vesi on jo $100\\,{}^\\circ\\text{C}$:ssa, ei lämpöhäviöitä; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** höyrystämiseen käytettävä teho $P$ watteina\n\n**Periaate:** Vesi on jo kiehumispisteessä, joten sitä ei tarvitse lämmittää ja kaikki energia kuluu höyrystämiseen, $Q = rm$. Kun häviöitä ei ole, energia säilyy, ja teho on energia jaettuna ajalla.\n\n**Kaava:** $P = \\dfrac{Q}{t}$ ja $Q = rm$, joten\n\n$$P = \\frac{rm}{t}$$\n\n**Muunnokset:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ ja $t = 1\\,\\text{h} = 3600\\,\\text{s}$. Näin tulos tulee yksikössä $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Sijoitus:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188{,}3\\,\\text{W}$\n\n**Vastaus:** $1{,}9\\cdot10^{2}\\,\\text{W}$ (laskimen tulos $188\\,\\text{W}$), kaksi merkitsevää numeroa kuten massassa $0{,}30\\,\\text{kg}$.\n\n**Järkevyys:** Arvio: $0{,}7\\,\\text{MJ}$ tunnissa on noin $700\\,000\\,\\text{J} / 3600\\,\\text{s} \\approx 190\\,\\text{W}$. Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho. Todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön, ja teho on pienempi kuin keittolevyn $2000\\,\\text{W}$, koska höyryä syntyy hitaasti.",
+      "solution": "**Annettu:** höyrystyvä vesi $m = 0{,}30\\,\\text{kg}$ ajassa $t = 1\\,\\text{h}$, vesi on jo $100\\,{}^\\circ\\text{C}$:ssa, ei lämpöhäviöitä; taulukosta $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Kysytty:** höyrystämiseen käytettävä teho $P$ watteina\n\n**Periaate:** Vesi on jo kiehumispisteessä, joten sitä ei tarvitse lämmittää ja kaikki energia kuluu höyrystämiseen, $Q = rm$. Kun häviöitä ei ole, energia säilyy, ja teho on energia jaettuna ajalla.\n\n**Kaava:** $P = \\dfrac{Q}{t}$ ja $Q = rm$, joten\n\n$$P = \\frac{rm}{t}$$\n\n**Muunnokset:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ ja $t = 1\\,\\text{h} = 3600\\,\\text{s}$. Näin tulos tulee yksikössä $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Sijoitus:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0{,}30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188{,}3\\,\\text{W}$\n\n**Vastaus:** $1{,}9\\cdot10^{2}\\,\\text{W}$ (laskimen tulos $188\\,\\text{W}$), kaksi merkitsevää numeroa kuten massassa $0{,}30\\,\\text{kg}$.\n\n**Järkevyys:** Arvio: $0{,}7\\,\\text{MJ}$ tunnissa on noin $$\\begin{aligned} &700\\,000\\,\\text{J} / 3600\\,\\text{s} \\\\ &\\approx 190\\,\\text{W} \\end{aligned}$$. Pari sataa wattia on tavallinen kotikäyttöisen höyrykostuttimen teho. Todellinen ottoteho on hieman suurempi, koska osa energiasta siirtyy ympäristöön, ja teho on pienempi kuin keittolevyn $2000\\,\\text{W}$, koska höyryä syntyy hitaasti.",
       "optional": true
     },
     {

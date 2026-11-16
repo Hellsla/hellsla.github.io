@@ -502,7 +502,7 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 
 <!-- vaihe -->
 
-**Substitution.** The sum of the results is $3.12\,\text{s} + 3.25\,\text{s} + 3.07\,\text{s} + 3.31\,\text{s} + 3.19\,\text{s} + 3.15\,\text{s} = 19.09\,\text{s}$. Substitute it and the other numerical values with their units:
+**Substitution.** The sum of the results is $$\begin{aligned} &3.12\,\text{s} + 3.25\,\text{s} + 3.07\,\text{s} + 3.31\,\text{s} + 3.19\,\text{s} \\ &+ 3.15\,\text{s} \\ &= 19.09\,\text{s} \end{aligned}$$. Substitute it and the other numerical values with their units:
 ```latex
 \begin{aligned}
 \bar{t} &= \frac{t_1 + t_2 + \dots + t_n}{n} \\

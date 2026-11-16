@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: fc3b190ea3328bed
-SCOPE: delta added-exercise from 2dfa5cdb22af192d base 81db4a6fd727
+CONTENT-HASH: 91a009e41daee881
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-5-L2-09: the Reasonableness uses 24.8 and the description lists Earth 9.80; fine, but state once that the field strength at the probe is read at the surface value and scaled (it is).
+- fy5-5-L1-03, L1-09: a level 1 task labelled "Extension task." is odd on the level ladder; the teacher's decision stands, but check the exercise path does not count these as core.
+- fy5-5-L2-05 solution part c: fine, but one clause saying why a larger mass does not mean a larger surface field (radius also grows) would repeat the reason in the lesson's wording.
 
 ## Checked
-- L2-09 (reworked): reading g = 24.8 m/s^2 from the figure, then r = R + h = 2R (the distance is from the centre, the planned trap), g falls to a quarter, F = mg = 5.27 kN; correct.
-- Level 2 fits (two ideas: inverse-square scaling and F = mg); the unit kN conversion is shown.
-- Solution staged with a check by dividing the surface force by 4.
+- "Extension task." opens the text of ten tasks (L1-03, L1-09, L2-02, -04, -05, -07, -09, L3-02, -04, -05) as its own paragraph, before the situation; the question stays last. Marks the field-strength material as beyond the core, as the teacher decided.
+- L2-08 feedback and model answer rewritten: "A is pulled only by B and B only by A; equal force, larger mass accelerates less" repairs the misconception (same g for all) better than the old "field smaller at A" and is physically correct.
+- L2-03 answer: reliable to two figures, third kept for comparison — correct handling of significant figures in measured data.
+- L2-03 reasonableness: 3.4 R = 21 700 km now agrees with r = 21 866 km; the "from 11.8 kN" step is staged.
+- Re-broken calculation rows (L1-02, -03, L2-02, -03): same numbers, units and order; the source holds aligned rows, so the packet's flattened diff is only a rendering of them.
+- Figure planeetat: values and description agree; the task answer (24.8) is read, not given away.
+- Caption "(example data)" removed from the L2-06 table, per the teacher.

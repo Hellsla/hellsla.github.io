@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b84b000bd30022fa
+CONTENT-HASH: 409422339b85dd02
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- Round 1, delta. Opened fy3-5-open-exercises-L2-1280-8: task 6-17 (table, answer box 50 J, solution start). Its changed Vastaus ("50 J (laskettu 50,4 J), kaksi merkitsevää numeroa, koska ...") lies below the capture and was read from the diff: LaTeX quantities, sentence fluent.
-- The "Syventävä tehtävä." prefix (L2-05) and the L1-06 "Kupin sisäenergia" fix were read from the diff only (plain words).
-- Hash same at start and end.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

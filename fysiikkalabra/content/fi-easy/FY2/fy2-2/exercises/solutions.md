@@ -47,7 +47,12 @@
 **Muunnokset:** Kumpikin energia on luettu jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 10^{9}\,\text{J} : 10^{4}\,\text{J} = 10^{9-4} = 10^{5} = 100\,000$
 **Vastaus:** Noin $100\,000$ paristoa. Tulos on suuruusluokka, koska kuvan energiat ovat suuruusluokkia.
-**Järkevyys:** Viisi kymmenkertaista väliä tarkoittaa kertomista viisi kertaa kymmenellä: $10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 = 100\,000$. Salaman energia on suuri, mutta se vapautuu hetkessä. Samaan energiaan tarvitaan valtava määrä pieniä paristoja.
+**Järkevyys:** Viisi kymmenkertaista väliä tarkoittaa kertomista viisi kertaa kymmenellä: $$
+\begin{aligned}
+&10 \cdot 10 \cdot 10 \cdot 10 \cdot 10 \\
+&= 100\,000
+\end{aligned}
+$$. Salaman energia on suuri, mutta se vapautuu hetkessä. Samaan energiaan tarvitaan valtava määrä pieniä paristoja.
 
 ## fy2-2-L2-01
 **Annettu:** suklaalevy ($100\,\text{g}$) $E_1 = 2{,}2\,\text{MJ}$ ja pähkinät $E_2 = 800\,\text{kJ}$
@@ -117,7 +122,12 @@
 **Muunnokset:** Korvataan etuliitteet arvoillaan: $370\,\text{TJ} = 370 \cdot 1000\,\text{GJ} = 370 \cdot 1000 \cdot 1000\,\text{MJ} = 3{,}7 \cdot 10^{8}\,\text{MJ}$
 **Sijoitus:** $V = 3{,}7 \cdot 10^{8}\,\text{MJ} : 32\,\text{MJ}/\textsf{l} = 1{,}16 \cdot 10^{7}\,\textsf{l}$
 **Vastaus:** Noin $1{,}2 \cdot 10^{7}\,\textsf{l}$ eli noin $12$ miljoonaa litraa bensiiniä. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa $370\,\text{TJ}$ ja $32\,\text{MJ}/\textsf{l}$. Vertailu: saman energian antaa vuorokaudessa vain noin $4{,}5\,\text{kg}$ uraani-235:tä. Se mahtuu kämmenelle. Bensiini taas täyttäisi satoja säiliöautoja.
-**Järkevyys:** Tee arvio: $400\,000\,000 : 40 = 10\,000\,000$ litraa. Kymmenisen miljoonaa litraa on siis oikea suuruusluokka. Litrat jäävät tulokseen, koska megajoulet supistuvat. Ero uraaniin on valtava. Se sopii siihen, että samasta ainemäärästä vapautuu ydinenergiaa paljon enemmän kuin palamisessa.
+**Järkevyys:** Tee arvio: $$
+\begin{aligned}
+&400\,000\,000 : 40 \\
+&= 10\,000\,000
+\end{aligned}
+$$ litraa. Kymmenisen miljoonaa litraa on siis oikea suuruusluokka. Litrat jäävät tulokseen, koska megajoulet supistuvat. Ero uraaniin on valtava. Se sopii siihen, että samasta ainemäärästä vapautuu ydinenergiaa paljon enemmän kuin palamisessa.
 
 ## fy2-2-L1-06
 **Kysytty:** mikä neljästä eri yksiköissä ilmoitetusta energiasta on suurin.
@@ -152,7 +162,12 @@
 **Muunnokset:** Megajoule muutetaan kilojouleiksi: $1\,\text{MJ} = 1\,000\,000\,\text{J} = 1\,000\,000 : 1000\,\text{kJ}$.
 **Sijoitus:** $1\,\text{MJ} = 1000\,\text{kJ}$
 **Mallivastaus:** Oikea vastaus on $1000\,\text{kJ}$. Arvo $1000\,\text{J}$ on vain $1\,\text{kJ}$. Arvo $1\,000\,000\,\text{kJ}$ on $1\,\text{GJ}$. Arvo $1000\,\text{GJ}$ on miljoona kertaa liian suuri.
-**Järkevyys:** Megajoule on suurempi yksikkö kuin kilojoule. Sama energia on siis kilojouleina suurempi luku. Tarkistus: $1000\,\text{kJ} \cdot 1000 = 1\,000\,000\,\text{J}$.
+**Järkevyys:** Megajoule on suurempi yksikkö kuin kilojoule. Sama energia on siis kilojouleina suurempi luku. Tarkistus: $$
+\begin{aligned}
+&1000\,\text{kJ} \cdot 1000 \\
+&= 1\,000\,000\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-2-L2-05
 **Annettu:** taulukon ruoat: kaurapuuro $250\,\text{g}$ ($300\,\text{kJ}$ sadassa grammassa), banaani $120\,\text{g}$ ($400\,\text{kJ}$) ja appelsiinimehu $200\,\text{g}$ ($190\,\text{kJ}$); kävelyn kulutus $220\,\text{kJ}$ kilometriä kohti
@@ -191,9 +206,19 @@
 **Periaate:** Energioita voi verrata vain yhteisessä yksikössä. Jokainen annettu yksikkö on kiinteä määrä gigajoulea. Kunkin energia saadaan, kun lukuarvo kerrotaan yksikön koolla. Suhde saadaan, kun suurin energia jaetaan pienimmällä.
 **Kaava:** $E = \text{lukuarvo} \cdot E_\text{yksikkö}$ ja $N = E_\text{suurin} : E_\text{pienin}$
 **Muunnokset:** Käytetään annettuja yhteyksiä: $1\,\text{MWh} = 3{,}6\,\text{GJ}$, $1\,\text{toe} = 42\,\text{GJ}$ ja $1\,\text{PJ} = 1\,000\,000\,\text{GJ}$.
-**Sijoitus:** Omakotitalo: $18 \cdot 3{,}6\,\text{GJ} = 65\,\text{GJ}$. Maatilan öljy: $12 \cdot 42\,\text{GJ} = 504\,\text{GJ}$. Vesivoimala: $1200 \cdot 3{,}6\,\text{GJ} = 4320\,\text{GJ}$. Kaukolämpö: $3{,}2 \cdot 1\,000\,000\,\text{GJ} = 3\,200\,000\,\text{GJ}$. Järjestys pienimmästä suurimpaan: omakotitalo, maatila, vesivoimala, kaukolämpö. Suhde on $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
+**Sijoitus:** Omakotitalo: $18 \cdot 3{,}6\,\text{GJ} = 65\,\text{GJ}$. Maatilan öljy: $12 \cdot 42\,\text{GJ} = 504\,\text{GJ}$. Vesivoimala: $1200 \cdot 3{,}6\,\text{GJ} = 4320\,\text{GJ}$. Kaukolämpö: $$
+\begin{aligned}
+&3{,}2 \cdot 1\,000\,000\,\text{GJ} \\
+&= 3\,200\,000\,\text{GJ}
+\end{aligned}
+$$. Järjestys pienimmästä suurimpaan: omakotitalo, maatila, vesivoimala, kaukolämpö. Suhde on $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
 **Vastaus:** Suurin energia on noin $49\,000$ kertaa pienin. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa. Taulukon luvut antavat harhaanjohtavan kuvan, koska yksiköt ovat eri kokoisia. Yksikkö $\text{PJ}$ on miljoona gigajoulea, $\text{toe}$ on $42\,\text{GJ}$ ja $\text{MWh}$ vain $3{,}6\,\text{GJ}$. Siksi kaukolämmön pienin lukuarvo $3{,}2$ on energialtaan suurin. Vesivoimalan lukuarvo $1200$ ei tee siitä suurinta.
-**Järkevyys:** Tee arvio: $3\,000\,000 : 60 = 50\,000$. Suhde noin $50\,000$ on siis oikea suuruusluokka. Kaupungin kaukolämpö on kymmenien tuhansien talojen vuoden lämmitys (noin $3\,200\,000\,\text{GJ} : 70\,\text{GJ} \approx 45\,000$ taloa). Energioita ei vertailla lukuarvoista. Yksiköt on muunnettava.
+**Järkevyys:** Tee arvio: $3\,000\,000 : 60 = 50\,000$. Suhde noin $50\,000$ on siis oikea suuruusluokka. Kaupungin kaukolämpö on kymmenien tuhansien talojen vuoden lämmitys (noin $$
+\begin{aligned}
+&3\,200\,000\,\text{GJ} : 70\,\text{GJ} \\
+&\approx 46\,000
+\end{aligned}
+$$ taloa). Energioita ei vertailla lukuarvoista. Yksiköt on muunnettava.
 
 ## fy2-2-L3-05
 **Annettu:** ruoan energiat $1{,}4\,\text{MJ}$, $3200\,\text{kJ}$, $650\,\text{kJ}$, $0{,}0042\,\text{GJ}$ ja $900\,\text{kJ}$; kulutus $E_\text{perus} = 10{,}2\,\text{MJ}$ päivässä; kävely $s = 5{,}0\,\text{km}$ päivässä, $250\,\text{kJ/km}$; rasvan energia $37\,\text{MJ/kg}$; aika $30$ vuorokautta
@@ -201,7 +226,13 @@
 **Periaate:** Energia säilyy. Jos ruoasta saatu energia on pienempi kuin kulutus, puuttuva energia otetaan kehon rasvavarastosta. Rasvan kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Päivän vaje kerrotaan vuorokausien määrällä. Tulo jaetaan rasvan energialla kiloa kohti.
 **Kaava:** $E_\text{kulutus} = E_\text{perus} + s \cdot E_\text{km}$, $\Delta E = E_\text{kulutus} - E_\text{ruoka}$ ja $m = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
 **Muunnokset:** Kaikki megajouleiksi: $3200\,\text{kJ} = 3{,}2\,\text{MJ}$, $650\,\text{kJ} = 0{,}65\,\text{MJ}$, $0{,}0042\,\text{GJ} = 4{,}2\,\text{MJ}$, $900\,\text{kJ} = 0{,}90\,\text{MJ}$ ja kävely $1250\,\text{kJ} = 1{,}25\,\text{MJ}$.
-**Sijoitus:** Ateriat yhteensä ovat $1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 + 0{,}90 = 10{,}35$, joten $E_\text{ruoka} = 10{,}35\,\text{MJ}$. Kulutus on $E_\text{kulutus} = 10{,}2\,\text{MJ} + 1{,}25\,\text{MJ} = 11{,}45\,\text{MJ}$. Vaje on $\Delta E = 11{,}45\,\text{MJ} - 10{,}35\,\text{MJ} = 1{,}10\,\text{MJ}$ päivässä. Kolmenkymmenen vuorokauden vaje on $30 \cdot 1{,}10\,\text{MJ} = 33\,\text{MJ}$. Siis $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0{,}89\,\text{kg}$.
+**Sijoitus:** Ateriat yhteensä ovat $$
+\begin{aligned}
+&1{,}4 + 3{,}2 + 0{,}65 + 4{,}2 \\
+&+ 0{,}90 \\
+&= 10{,}35
+\end{aligned}
+$$, joten $E_\text{ruoka} = 10{,}35\,\text{MJ}$. Kulutus on $E_\text{kulutus} = 10{,}2\,\text{MJ} + 1{,}25\,\text{MJ} = 11{,}45\,\text{MJ}$. Vaje on $\Delta E = 11{,}45\,\text{MJ} - 10{,}35\,\text{MJ} = 1{,}10\,\text{MJ}$ päivässä. Kolmenkymmenen vuorokauden vaje on $30 \cdot 1{,}10\,\text{MJ} = 33\,\text{MJ}$. Siis $m = 33\,\text{MJ} : 37\,\text{MJ/kg} = 0{,}89\,\text{kg}$.
 **Vastaus:** Rasvaa kuluu noin $0{,}89\,\text{kg}$ kuukaudessa. Rasvan kemiallinen energia ei katoa. Se muuttuu lihasten liikkeeksi ja suurimmaksi osaksi lämpöenergiaksi. Lämpö siirtyy ympäristöön. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa.
 **Järkevyys:** Vaje on vain noin $10\,\%$ päivän energiasta. Vähän alle kilon laihtuminen kuukaudessa on siis uskottava. Tee arvio: $30 \cdot 1 : 37 \approx 0{,}8$. Viiden prosentin toleranssi kattaa vajeen $1{,}10\,\text{MJ}$ pyöristyksen.
 

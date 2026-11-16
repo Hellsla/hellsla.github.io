@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6cf55c759d13b049
+CONTENT-HASH: 55470c96d0b29545
 
 ## Blocking
 None.
 
 ## Polish
-1. fy4-7-L1-09 (which expression has the unit joule): pure unit analysis with G, g, v, h; the lesson shows the unit of E_p only. It is more a level 2 reasoning task; keep it, but add a hint "kirjoita jokaisen suureen yksikkö ja sievennä".
-2. fy4-7-L3-04 and L2-05 solutions use ":" as a division sign ("2,911 : 4", "7,061 J : 7"); write fractions.
-3. fy4-7-L2-08 Järkevyys is confusing ("yhdeksänkertainen ... kasvu kahdeksankertainen"); say plainly: E_k goes from 1,0 J to 9,0 J, so the increase is 8,0 J, not 9 times 1,0 J.
-4. fy4-7-L2-08 and L1-06 both rest on the v² idea; the graph version is justified because it shows that the increase is not linear, but add a sentence in L2-08 solution that the midpoint (4,0 m/s; 4,0 J) is not halfway.
+1. exercises/solutions.md:349 (fy4-7-L2-10 a) — "jakauma" is used in the task and the solution but never opened for an S2 reader — add once: "Jakauma kertoo, kuinka suuri osa ajoneuvoista ajaa milläkin nopeudella."
+2. exercises/solutions.md:348 — "Yli puolet ajoneuvoista ylittää rajoituksen. Siksi keskinopeus … on rajoitusta suurempi." The share alone does not prove the mean — write "Tämä sopii siihen, että keskinopeus $82{,}3\,\text{km/h}$ on rajoitusta suurempi."
+3. exercises/solutions.md:370 — "kuljettajan vireys" and "raaka-aineisto" (line 339) are hard words without an explanation — "vireys eli se, kuinka virkeä tai väsynyt kuljettaja on"; "raaka-aineisto eli alkuperäiset mittaustulokset".
 
 ## Checked
-- Counts 9 + 9 + 5; levels fit (L1 one formula or concept, L2 data, graph and error analysis, L3 pendulum geometry, loss estimate, nollataso); none repeats the worked example (lumilautailija).
-- Figure tasks L2-08 and L2-09: descriptions give the grid values without the answers (mass not marked); the solutions say how the graph is read; 8,0 J and 2,0 kg follow.
-- Spot-checked numbers: 240 kJ, 196 J, 295 J, 8,5 kJ, −255 J, 12 m, 422 kJ, 54 m/s, 14,9 m/s, 126 km/h, 1,38 J, 214 J, −470 J, 0,52 kg, 0,61 J, 1,6 kJ: all correct.
-- Data tasks (L2-05, L2-07, L3-04, L3-05) have tables, full solutions with the table of results, a separate answer box for one part.
-- Error task L2-06 (depth taken as positive height) and L1-08 choices target the nollataso and sign misconceptions.
-- Solutions follow the seven steps; units in LaTeX; Finnish clear. Phone captures not opened.
+- New fy4-7-L2-10: authentic source (Fintraffic table), four parts that rise (read the table, kinetic energy, stopping distance, limits of the data), no overlap; the table is needed for a) and d) and motivates the 92 km/h of b) and c).
+- Only FY4 knowledge: kinetic energy from this chapter, uniform and uniformly decelerating motion from the earlier chapter, which the solution names.
+- Numbers: 38,0 / 48,2 / 13,8 %; 0,37 MJ and 0,49 MJ, ratio 1,3225; 53,1 m and 66,4 m, difference 13,3 m; the box answer 13 m lies inside the tolerance.
+- Solution: principle explained, s_j derived in symbols before numbers, conversions shown, every part answered, reasonableness check in two pieces; reaktiomatka, jarrutusmatka, hidastuvuus and turvavälit explained at first use.
+- Level 2 is fair: each part is one or two steps; the length comes from four parts, as the brief allows.
+- Other changes: L1-07 Järkevyys now honest (9,6 kJ against 9,4 kJ); the caption marker removed; rest of the set as passed (levels 9 + 10 + 5, mix of kinds, no repeat of the worked example).
+- Capture L2-1280-12: the task text, link and units render and wrap cleanly.
+- Hash the same at start and end.

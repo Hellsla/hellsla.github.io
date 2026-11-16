@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f44c17044fad7b3b
-SCOPE: delta added-exercise from eb78314c0c339d07 base 8f23aa7ae3bd
+CONTENT-HASH: c7522fd4d9f9ee03
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 4-17 (fy7-4/force-angle) — data points are drawn in the momentum purple; use ink/neutral markers so the FY4 colour code is not diluted (the red curve is right for force).
+- [Minor] Muunnokset blocks "l = 15 cm …", "l = 20 cm …", "l = 25 cm …" — the white box spans the full column while its neighbours shrink to their content; cosmetic.
 
 ## Checked
-- fy7-4 L2 captures 11-13 (4-17 graph and solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- The content changed during the review (hash 254a4e93… → current; solutions.md line 220 re-broken outside the parentheses): packet regenerated, captures refreshed with screenshot.py, review redone on the current hash.
+- Delta (reflow): Muunnokset l-chains, 4-3 Tarkistus, F = 1,0189 N chain (sin 74° row), 0,074 T check, Hajonta, Osoittaja 2πrmg, both 0,0294 N checks, 0,225 N : (6,0 A · 0,25 m · sin 30°) now with the bracket whole on one row.
+- Own captures of these opened solutions at 390 px read at full size; formula overflow measured at 360, 390 and 1280 px: none. Hash identical at the redo's start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

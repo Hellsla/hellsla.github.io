@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 47990c350f677b66
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 3bd50c5a493a8f0a
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] 390 px, hints — "v", "sin α₃" and "n₂" stand alone on a first row; "v = 3,00 · 10⁸ m/s : 1,49" would fit one row.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Exception wording now "Tähän on kuitenkin poikkeuksia:" / "Tähän on kuitenkin poikkeuksia." / "There are exceptions, however:", which fits both total internal reflection and Brewster; chapter titles exact.
-- Hash identical at start and end of this round.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

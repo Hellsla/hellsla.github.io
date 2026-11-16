@@ -327,6 +327,19 @@
       "answer": 428,
       "unit": "nm",
       "tolerance": 0.04
+    },
+    {
+      "id": "fy8-1-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "model"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/photoelectric\" target=\"_blank\" rel=\"noopener\">PhET – Photoelectric Effect (Valosähköinen ilmiö)</a> (luettu 16. marraskuuta 2026)\n\nSimulaatiossa valo osuu metallilevyyn. Levystä irtoavat elektronit näkyvät virtana. Valon aallonpituus ($\\text{nm}$) ja intensiteetti ($\\%$) asetetaan liukusäätimillä. Taajuutta ei aseteta. Simulaatio toimii selaimessa.\n\na) Valitse kohdemetalliksi natrium ja pidä akun jännite nollassa. Muuta aallonpituutta liukusäätimen koko alueella. Selvitä, millä aallonpituuksilla elektroneja irtoaa. Voit kokeilla myös muita metalleja.\n\nb) Etsi pisin aallonpituus $\\lambda_0$, jolla elektroneja vielä irtoaa, ja kirjaa se ylös. Muunna se rajataajuudeksi $f_0 = \\tfrac{c}{\\lambda_0}$. Laske sitten fotonin energia $hf_0$ elektronivoltteina. Käytä arvoja $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nc) Valitse aallonpituus, jolla elektroneja irtoaa. Muuta ensin intensiteettiä. Muuta sitten aallonpituutta lyhyemmäksi. Kirjaa, miten virta eli irtoavien elektronien määrä muuttuu. Kirjaa myös, miten elektronien suurin liike-energia muuttuu. Liike-energian näet säätämällä akun jännitettä, kunnes virta pysähtyy (estojännite). Sen näet myös simulaation energiakuvaajasta.\n\nd) Selitä, miksi pelkkä klassinen aaltomalli ei selitä kohtien a) ja c) havaintoja. Klassisessa aaltomallissa valon energia jakautuu tasaisesti pinnalle.\n\nVastaa laatikkoon kohdan b) fotonin energia $hf_0$ natriumille yksikössä $\\text{eV}$. Se vastaa rajataajuutta.",
+      "answer": 2.3,
+      "unit": "eV",
+      "tolerance": 0.05
     }
   ],
   "level3": [

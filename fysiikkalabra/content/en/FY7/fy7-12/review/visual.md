@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e1bf14bfdcd13d38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 72b1727e31295d76
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] prediction feedback: "(chapter *Reflection and refraction of light*))." has a doubled closing parenthesis (older text on an edited line).
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: the definition "Tämä on **kokonaisheijastuminen**." / "Tätä sanotaan **kokonaisheijastumiseksi**." / "This is **total internal reflection**." now follows "…heijastumislain mukaan." directly; the lossless-boundary and evanescent-field sentences follow it, so the antecedent is unambiguous. Added "eikä energiaa siirry toiseen aineeseen" / "and no energy passes into the second substance" reads naturally.
-- Paragraph now split at "Veden ja ilman rajapinnassa" / "At the boundary between water and air"; both parts within the limit.
-- Endoscope paragraph unchanged since round 1.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (2 rendered blocks) was captured from the built page (preview/en/fy7-12.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

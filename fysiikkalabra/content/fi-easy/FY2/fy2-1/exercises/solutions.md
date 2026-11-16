@@ -23,9 +23,15 @@
 **Kysytty:** lämpöenergiaksi muuttunut energia $E_\text{lämpö}$ kohtien A ja C välillä yksikössä $\text{J}$
 **Periaate:** Skeittari, half-pipe ja ilma muodostavat eristetyn systeemin, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi. Siksi lopussa energiaa on mekaanisena energiana ja lämpöenergiana.
 **Kuvaajan lukeminen:** Kohdassa A on vain sininen potentiaalienergian pylväs. Sen yläreuna on ruudukon viivalla $700\,\text{J}$. Liike-energiaa ei ole, koska skeittari on levossa. Kohdassa C on vain oranssi liike-energian pylväs. Sen yläreuna on viivalla $500\,\text{J}$. Potentiaalienergiaa ei ole, koska pohja on nollataso. Kohdan B pylväitä ei tarvita.
-**Kaava:** $E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{lämpö}$, joten $E_\text{lämpö} = (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})$
+**Kaava:** $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{lämpö} \end{aligned} $$, joten $$ \begin{aligned} E_\text{lämpö} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
-**Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J}) = 200\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{lämpö} &= (700\,\text{J} + 0\,\text{J}) \\
+&- (0\,\text{J} + 500\,\text{J}) \\
+&= 200\,\text{J}
+\end{aligned}
+$$
 **Vastaus:** $200\,\text{J}$, sadan joulen tarkkuudella, koska pylväiden pituudet luetaan ruudukon $100\,\text{J}$:n viivoilta.
 **Järkevyys:** Mekaaninen energia pienenee $700\,\text{J}$:stä $500\,\text{J}$:iin, kuten radalla, jolla on kitkaa, pitää. Kohdassa B mekaanista energiaa on $300\,\text{J} + 300\,\text{J} = 600\,\text{J}$. Siihen mennessä vasta $100\,\text{J}$ on muuttunut lämpöenergiaksi. Lämpöenergia kasvaa koko matkan. Tarkistus: $500\,\text{J} + 200\,\text{J} = 700\,\text{J}$.
 
@@ -72,7 +78,7 @@
 **Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
 **Sijoitus:** $E = 43{,}4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86{,}8\,\text{MJ}$
 **Vastaus:** $E \approx 87\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43{,}4\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
+**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi kuivaan puuhun, jonka lämpöarvo on MAFY-taulukon mukaan $16{,}2\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
@@ -112,15 +118,26 @@
 **Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten sijoitetaan $360\,\text{kJ} = 360 \cdot 1000\,\text{J} = 360\,000\,\text{J}$ ja $331\,\text{kJ} = 331 \cdot 1000\,\text{J} = 331\,000\,\text{J}$.
 **Sijoitus:** $E_\text{muu} = 360\,000\,\text{J} - 331\,000\,\text{J} = 29\,000\,\text{J}$
 **Vastaus:** $29\,000\,\text{J}$ eli $2{,}9 \cdot 10^{4}\,\text{J}$, kaksi merkitsevää numeroa. Tiedot on annettu kilojoulen tarkkuudella, ja erotus on $29\,\text{kJ}$.
-**Järkevyys:** Veteen menee $331\,\text{kJ} : 360\,\text{kJ} \approx 0{,}92$ eli yli $90\,\%$. Loput $29\,\text{kJ}$ on pieni osa. Näin hyvin eristetyllä keittimellä pitääkin olla. Takaisinlasku: $331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}$.
+**Järkevyys:** Veteen menee $331\,\text{kJ} : 360\,\text{kJ} \approx 0{,}92$ eli yli $90\,\%$. Loput $29\,\text{kJ}$ on pieni osa. Näin hyvin eristetyllä keittimellä pitääkin olla. Takaisinlasku: $$
+\begin{aligned}
+&331\,000\,\text{J} + 29\,000\,\text{J} \\
+&= 360\,000\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-1-L2-05
 **Annettu:** tilojen lämmitys $36{,}0\,\text{GJ}$, lämmin käyttövesi $10{,}5\,\text{GJ}$, sähkölaitteet ja valaistus $9{,}0\,\text{GJ}$, sauna $4{,}5\,\text{GJ}$
 **Kysytty:** tilojen lämmityksen osuus koko kulutuksesta prosentteina ja suurin säästökohde
 **Periaate:** Osuus kertoo, kuinka suuri osa on kokonaisuudesta. Kokonaiskulutus on kaikkien käyttökohteiden energioiden summa, koska käyttökohteet eivät mene päällekkäin.
-**Kaava:** $E_\text{yht} = E_\text{lämmitys} + E_\text{vesi} + E_\text{sähkö} + E_\text{sauna}$ ja osuus $= \dfrac{E_\text{lämmitys}}{E_\text{yht}}$
+**Kaava:** $$ \begin{aligned} E_\text{yht} &= E_\text{lämmitys} + E_\text{vesi} \\ &+ E_\text{sähkö} + E_\text{sauna} \end{aligned} $$ ja osuus $= \dfrac{E_\text{lämmitys}}{E_\text{yht}}$
 **Muunnokset:** Kaikki energiat ovat gigajouleina, joten muunnoksia ei tarvita. Osuus muutetaan prosenteiksi kertomalla sadalla.
-**Sijoitus:** Summa on $E_\text{yht} = 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} + 9{,}0\,\text{GJ} + 4{,}5\,\text{GJ} = 60{,}0\,\text{GJ}$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{,}0\,\%$
+**Sijoitus:** Summa on $$
+\begin{aligned}
+E_\text{yht} &= 36{,}0\,\text{GJ} + 10{,}5\,\text{GJ} \\
+&+ 9{,}0\,\text{GJ} + 4{,}5\,\text{GJ} \\
+&= 60{,}0\,\text{GJ}
+\end{aligned}
+$$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{,}0\,\%$
 **Vastaus:** Lämmityksen osuus on $60\,\%$ kulutuksesta. Suurin säästökohde on tilojen lämmitys, koska siinä kuluu eniten energiaa. Kymmenen prosentin säästö lämmityksessä vähentäisi kulutusta $3{,}6\,\text{GJ}$. Sama säästö saunassa vähentäisi kulutusta vain $0{,}45\,\text{GJ}$.
 **Järkevyys:** Osuus on välillä $0$–$100\,\%$. Lämmitys on suurin erä, joten yli puolet on uskottava pohjoisessa asuinrakennuksessa. Tarkistus osuuksien summalla: $60\,\% + 17{,}5\,\% = 77{,}5\,\%$ ja $15\,\% + 7{,}5\,\% = 22{,}5\,\%$, yhteensä $77{,}5\,\% + 22{,}5\,\% = 100\,\%$.
 
@@ -138,7 +155,7 @@
 **Annettu:** jokaisen lampun sähköenergia $E_\text{sähkö} = 216\,\text{kJ}$; valoksi muuttuva energia hehkulampulla $11\,\text{kJ}$, halogeenilampulla $16\,\text{kJ}$ ja LED-lampulla $54\,\text{kJ}$ (esimerkkilukuja)
 **Kysytty:** hehkulampun ja LED-lampun lämpöenergioiden erotus $\Delta E_\text{lämpö}$ yksikössä $\text{kJ}$
 **Periaate:** Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Energiaa ei synny eikä katoa, joten $E_\text{sähkö} = E_\text{valo} + E_\text{lämpö}$.
-**Kaava:** $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle ja $\Delta E_\text{lämpö} = E_\text{lämpö,hehku} - E_\text{lämpö,LED}$
+**Kaava:** $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle ja $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,hehku} \\ &- E_\text{lämpö,LED} \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat kilojouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö,hehku} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ ja $E_\text{lämpö,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, joten $\Delta E_\text{lämpö} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Vastaus:** Hehkulamppu tuottaa $43\,\text{kJ}$ enemmän lämpöenergiaa. Kaksi merkitsevää numeroa vastaa valon energian $11\,\text{kJ}$ tarkkuutta.
@@ -151,7 +168,13 @@
 **Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
 **Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
-**Sijoitus:** $E_\text{lämpö} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{lämpö} &= (700\,\text{J} + 0\,\text{J}) \\
+&- (300\,\text{J} + 300\,\text{J}) \\
+&= 100\,\text{J}
+\end{aligned}
+$$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
 **Vastaus:** $p \approx 14\,\%$, pyöristettynä kokonaisiin prosentteihin, koska energiat luetaan kuvasta sadan joulen tarkkuudella.
 **Järkevyys:** Osuus on pienempi kuin $100\,\%$ ja positiivinen, kuten kitkan kohdalla pitää. Tarkistus: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
@@ -159,7 +182,7 @@
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$
 **Kysytty:** kohtien B ja C välillä lämpöenergiaksi muuttuva energia $\Delta E_\text{lämpö}$ yksikössä $\text{J}$
 **Periaate:** Systeemin kokonaisenergia säilyy. Siksi jokaisessa kohdassa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ on yhtä suuri kuin kohdassa A. Siellä se on $900\,\text{J}$. Lämpöenergia on se osa, joka mekaaniselta energialta puuttuu.
-**Kaava:** $E_\text{lämpö} = E_\text{A} - E_\text{p} - E_\text{k}$ kussakin kohdassa, ja kohtien B ja C välillä $\Delta E_\text{lämpö} = E_\text{lämpö,C} - E_\text{lämpö,B}$
+**Kaava:** $E_\text{lämpö} = E_\text{A} - E_\text{p} - E_\text{k}$ kussakin kohdassa, ja kohtien B ja C välillä $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,C} \\ &- E_\text{lämpö,B} \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö,B} = 900\,\text{J} - 400\,\text{J} - 480\,\text{J} = 20\,\text{J}$ ja $E_\text{lämpö,C} = 900\,\text{J} - 0\,\text{J} - 750\,\text{J} = 150\,\text{J}$, joten $\Delta E_\text{lämpö} = 150\,\text{J} - 20\,\text{J} = 130\,\text{J}$
 **Vastaus:** $130\,\text{J}$, kaksi merkitsevää numeroa. Lähtötiedot on annettu kymmenen joulen tarkkuudella.
@@ -173,7 +196,12 @@
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö,1} = 5{,}00\,\text{J} - 4{,}00\,\text{J} = 1{,}00\,\text{J}$ ja $E_\text{lämpö,2} = 4{,}00\,\text{J} - 3{,}20\,\text{J} = 0{,}80\,\text{J}$, joten $\Delta E = 1{,}00\,\text{J} - 0{,}80\,\text{J} = 0{,}20\,\text{J}$
 **Vastaus:** $0{,}20\,\text{J}$, kahden desimaalin tarkkuudella kuten taulukon energiat.
-**Järkevyys:** Kummassakin pompussa lämpöenergiaksi muuttuu viidesosa pallon silloisesta energiasta ($1{,}00\,\text{J}$ on viidesosa $5{,}00\,\text{J}$:sta ja $0{,}80\,\text{J}$ viidesosa $4{,}00\,\text{J}$:sta). Toisessa pompussa pallolla on vähemmän energiaa, joten lämpöenergiaksi muuttuu vähemmän energiaa. Siksi pompuista tulee yhä matalampia, mutta lasku hidastuu. Takaisinlasku: $3{,}20\,\text{J} + 0{,}80\,\text{J} + 1{,}00\,\text{J} = 5{,}00\,\text{J}$.
+**Järkevyys:** Kummassakin pompussa lämpöenergiaksi muuttuu viidesosa pallon silloisesta energiasta ($1{,}00\,\text{J}$ on viidesosa $5{,}00\,\text{J}$:sta ja $0{,}80\,\text{J}$ viidesosa $4{,}00\,\text{J}$:sta). Toisessa pompussa pallolla on vähemmän energiaa, joten lämpöenergiaksi muuttuu vähemmän energiaa. Siksi pompuista tulee yhä matalampia, mutta lasku hidastuu. Takaisinlasku: $$
+\begin{aligned}
+&3{,}20\,\text{J} + 0{,}80\,\text{J} + 1{,}00\,\text{J} \\
+&= 5{,}00\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-1-L3-03
 **Kysytty:** a) energialajit ydinvoimalan ketjun jokaisessa vaiheessa; b) mihin noin kaksi kolmannesta ydinenergiasta menee ja miksi energia ei ole kadonnut
@@ -186,9 +214,21 @@
 **Periaate:** Kokonaiskulutus on kaikkien lähteiden energioiden summa. Osuus kertoo, kuinka suuri osa on kokonaisuudesta. Asukasta kohti saadaan jakamalla kokonaisenergia asukasluvulla. Energia säilyy. Kun fossiilista energiaa korvataan vesi- ja tuulivoimalla, samaan käyttöön tarvittava energia ei muutu. Vain energian lähde muuttuu.
 **Kaava:** $E_\text{yht} = \sum E$, osuus $= \dfrac{E_\text{fossiilinen}}{E_\text{yht}}$ ja $E_\text{asukas} = \dfrac{E_\text{yht}}{N}$; ehto c): $E_\text{fossiilinen} - E_\text{korvattu} < \dfrac{E_\text{yht}}{3}$
 **Muunnokset:** Etuliitteet: $1\,\text{PJ} = 10^{15}\,\text{J}$ ja $1\,\text{GJ} = 10^{9}\,\text{J}$, joten $1\,\text{PJ} = 10^{15} : 10^{9}\,\text{GJ} = 10^{6}\,\text{GJ}$.
-**Sijoitus:** Kokonaiskulutus on $E_\text{yht} = 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 1200\,\text{PJ}$. Fossiilisten summa on $E_\text{fossiilinen} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, joten osuus on $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0{,}392 = 39{,}2\,\%$. Gigajouleina kokonaiskulutus on $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1{,}2 \cdot 10^{9}\,\text{GJ}$, ja asukasta kohti $E_\text{asukas} = \dfrac{1{,}2 \cdot 10^{9}\,\text{GJ}}{5{,}5 \cdot 10^{6}} = 218\,\text{GJ}$. Kolmannes kokonaiskulutuksesta on $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, joten korvattavaa on $E_\text{korvattu} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
+**Sijoitus:** Kokonaiskulutus on $$
+\begin{aligned}
+E_\text{yht} &= 380\,\text{PJ} + 290\,\text{PJ} \\
+&+ 230\,\text{PJ} + 120\,\text{PJ} \\
+&+ 100\,\text{PJ} + 80\,\text{PJ} \\
+&= 1200\,\text{PJ}
+\end{aligned}
+$$. Fossiilisten summa on $E_\text{fossiilinen} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, joten osuus on $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0{,}392 = 39{,}2\,\%$. Gigajouleina kokonaiskulutus on $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1{,}2 \cdot 10^{9}\,\text{GJ}$, ja asukasta kohti $E_\text{asukas} = \dfrac{1{,}2 \cdot 10^{9}\,\text{GJ}}{5{,}5 \cdot 10^{6}} = 218\,\text{GJ}$. Kolmannes kokonaiskulutuksesta on $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, joten korvattavaa on $E_\text{korvattu} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
 **Vastaus:** a) Fossiilisten osuus on noin $39\,\%$. b) Kulutus on noin $2{,}2 \cdot 10^{2}\,\text{GJ}$ eli $220\,\text{GJ}$ asukasta kohti vuodessa (kaksi merkitsevää numeroa kuten asukasluvussa). c) Fossiilista energiaa on korvattava yli $70\,\text{PJ}$ (kaksi merkitsevää numeroa kuten tiedoissa), esimerkiksi $71\,\text{PJ}$. Silloin fossiilista energiaa jää $399\,\text{PJ}$ eli $33{,}25\,\%$, ja osuus on alle kolmanneksen. Kokonaiskulutus voi pysyä samana, koska energiaa ei synny eikä katoa. Sama käyttöön tarvittava energia tuotetaan vain toisesta lähteestä. Vesi- ja tuulivoima lisää energiaa saman verran kuin fossiilinen energia vähenee.
-**Järkevyys:** Osuus on alle $100\,\%$. Takaisinlasku: $218\,\text{GJ} \cdot 5{,}5 \cdot 10^{6} \approx 1{,}2 \cdot 10^{9}\,\text{GJ}$. Raja-arvo: jos korvataan täsmälleen $70\,\text{PJ}$, fossiilista energiaa on $400\,\text{PJ}$ eli täsmälleen kolmannes. Siksi tarvitaan vähän enemmän.
+**Järkevyys:** Osuus on alle $100\,\%$. Takaisinlasku: $$
+\begin{aligned}
+&218\,\text{GJ} \cdot 5{,}5 \cdot 10^{6} \\
+&\approx 1{,}2 \cdot 10^{9}\,\text{GJ}
+\end{aligned}
+$$. Raja-arvo: jos korvataan täsmälleen $70\,\text{PJ}$, fossiilista energiaa on $400\,\text{PJ}$ eli täsmälleen kolmannes. Siksi tarvitaan vähän enemmän.
 
 ## fy2-1-L3-05
 **Annettu:** vaiheiden tulo ja hyödyllinen energia: paneeli $5{,}00\,\text{MJ} \to 0{,}80\,\text{MJ}$, latausohjain ja akku $0{,}80\,\text{MJ} \to 0{,}64\,\text{MJ}$, akun purku ja johdot $0{,}64\,\text{MJ} \to 0{,}56\,\text{MJ}$, LED-lamppu $0{,}56\,\text{MJ} \to 0{,}14\,\text{MJ}$
@@ -196,6 +236,14 @@
 **Periaate:** Jokaisessa vaiheessa energia säilyy: $E_\text{tulo} = E_\text{ulos} + E_\text{lämpö}$. Mallissa oletetaan, että loppu energia muuttuu lämpöenergiaksi. Lämpöenergiaksi lasketaan siis se osa, joka ei jatka eteenpäin hyödyllisenä energiana. Koko ketjun lämpöenergia on vaiheiden lämpöenergioiden summa.
 **Kaava:** $E_\text{lämpö} = E_\text{tulo} - E_\text{ulos}$ kussakin vaiheessa ja $E_\text{lämpö,yht}$ on vaiheiden summa
 **Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita.
-**Sijoitus:** Paneelissa $5{,}00\,\text{MJ} - 0{,}80\,\text{MJ} = 4{,}20\,\text{MJ}$, latausohjaimessa ja akussa $0{,}80\,\text{MJ} - 0{,}64\,\text{MJ} = 0{,}16\,\text{MJ}$, akun purussa ja johdoissa $0{,}64\,\text{MJ} - 0{,}56\,\text{MJ} = 0{,}08\,\text{MJ}$ ja lampussa $0{,}56\,\text{MJ} - 0{,}14\,\text{MJ} = 0{,}42\,\text{MJ}$. Summa on $E_\text{lämpö,yht} = 4{,}20\,\text{MJ} + 0{,}16\,\text{MJ} + 0{,}08\,\text{MJ} + 0{,}42\,\text{MJ} = 4{,}86\,\text{MJ}$. Eniten syntyy paneelissa, ja sen osuus on $\dfrac{4{,}20\,\text{MJ}}{4{,}86\,\text{MJ}} = 0{,}864 = 86\,\%$.
+**Sijoitus:** Paneelissa $5{,}00\,\text{MJ} - 0{,}80\,\text{MJ} = 4{,}20\,\text{MJ}$, latausohjaimessa ja akussa $0{,}80\,\text{MJ} - 0{,}64\,\text{MJ} = 0{,}16\,\text{MJ}$, akun purussa ja johdoissa $0{,}64\,\text{MJ} - 0{,}56\,\text{MJ} = 0{,}08\,\text{MJ}$ ja lampussa $0{,}56\,\text{MJ} - 0{,}14\,\text{MJ} = 0{,}42\,\text{MJ}$. Summa on $$
+\begin{aligned}
+E_\text{lämpö,yht} &= 4{,}20\,\text{MJ} \\
+&+ 0{,}16\,\text{MJ} \\
+&+ 0{,}08\,\text{MJ} \\
+&+ 0{,}42\,\text{MJ} \\
+&= 4{,}86\,\text{MJ}
+\end{aligned}
+$$. Eniten syntyy paneelissa, ja sen osuus on $\dfrac{4{,}20\,\text{MJ}}{4{,}86\,\text{MJ}} = 0{,}864 = 86\,\%$.
 **Vastaus:** a) Lämpöenergiaksi muuttuu yhteensä $4{,}86\,\text{MJ}$ (kolme merkitsevää numeroa kuten taulukossa). b) Eniten lämpöenergiaa syntyy aurinkopaneelissa, noin $86\,\%$ kaikesta. c) Tarkistus: $0{,}14\,\text{MJ} + 4{,}86\,\text{MJ} = 5{,}00\,\text{MJ}$. Se on yhtä paljon kuin paneeliin tullut säteilyenergia. Energiaa ei ole kulunut loppuun. Se on muuttunut valoksi ja lämpöenergiaksi, joka siirtyy ympäristöön. Valo on vain $2{,}8\,\%$ alkuenergiasta, koska jokaisessa vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergiaa ei saa takaisin hyödylliseen muotoon.
 **Järkevyys:** Jokaisen vaiheen ulos-energia on pienempi kuin sen tulo-energia, esimerkiksi $0{,}80 < 5{,}00$ ja $0{,}14 < 0{,}56$. Näin pitääkin olla. Lampun valoa on $0{,}14\,\text{MJ} : 5{,}00\,\text{MJ} = 0{,}028$ eli $2{,}8\,\%$ paneeliin tulleesta. Aurinkopaneelin suuri lämpöosuus on uskottava, koska suurin osa auringonvalosta ei muutu sähköksi.

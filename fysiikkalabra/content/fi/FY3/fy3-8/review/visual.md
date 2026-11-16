@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a1ebebb8289eeabd
+CONTENT-HASH: 277d004830da58fc
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] sim-390 / sim-1280 graph — the five material lines are not named (only the thick one is the chosen material) — add one legend line or name the material beside the thick line.
-- [Minor] lesson.md Kaava — symbol list units "(m)", "(1/K)", "(K)" are plain text — write as LaTeX, e.g. $\text{m}$.
-- [Minor] lesson.md Esimerkki stage 7 — "Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee" reads as a stray cause; say "Talvesta kesään kansi pitenee lähes yhdeksän senttimetriä."
-- [Minor] fig-9 particles — the bracket d₀ / d > d₀ is easy to miss at 390 px; thicker bracket optional.
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- fig-1 hero, fig-9 (particles), fig-11 (volume), fig-13 (rod), fig-15 (scene) at 390 px
-- top-390, example-390-1 and -2, sim-390, sim-1280, theory-1280-1 and -2, open-exercises-1280-1
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

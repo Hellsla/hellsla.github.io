@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fe692166241c80f6
+CONTENT-HASH: 1bc5067b45d07383
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: Ohm's-law misconception paragraph ($R = U : I$); built page and scripts/screenshot.py fy6-3 (captures current), changed passages opened at 390 px (l-390-0): clean wrapping, KaTeX renders, no inline formula wraps, no clipping, no horizontal scroll. Diff read; the rest of the lesson unchanged.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-3-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

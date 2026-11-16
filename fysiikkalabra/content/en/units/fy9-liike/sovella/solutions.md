@@ -370,7 +370,7 @@ $$.
 **Formula:** $x = \tfrac{1}{2}\,a\,t^2$, so $a = \dfrac{2x}{t^2}$; the extreme values from the timing uncertainty are $a_\text{min} = \dfrac{2x}{(t + \Delta t)^2}$ and $a_\text{max} = \dfrac{2x}{(t - \Delta t)^2}$
 **Conversions:** The distance is in metres and the time in seconds, so no conversions are needed.
 **Substitution:** $a = \dfrac{2 \cdot 1.20\,\text{m}}{(1.6\,\text{s})^2} = \dfrac{2.40\,\text{m}}{2.56\,\text{s}^2} = 0.9375\,\text{m/s}^2$; extreme values $\dfrac{2.40\,\text{m}}{(1.8\,\text{s})^2} = 0.741\,\text{m/s}^2$ and $\dfrac{2.40\,\text{m}}{(1.4\,\text{s})^2} = 1.224\,\text{m/s}^2$
-**Answer:** $a \approx 0.94\,\text{m/s}^2$, but because of the uncertainty the result lies between $0.74$…$1.22\,\text{m/s}^2$, that is, $a \approx (0.9 \pm 0.3)\,\text{m/s}^2$. The result should be given to one or two significant figures, because the uncertainty is large.
+**Answer:** $a \approx 0.94\,\text{m/s}^2$, but because of the uncertainty the result lies between $0.74$…$1.22\,\text{m/s}^2$, that is, $a \approx (0.9 \pm 0.3)\,\text{m/s}^2$. Half of the range is $0.24\,\text{m/s}^2$, but the range is asymmetric: the upper limit is $0.29\,\text{m/s}^2$ above the best estimate, so the uncertainty is rounded up. The result should be given to one or two significant figures, because the uncertainty is large.
 **Reasonableness:** The relative uncertainty of the time is $0.2\,\text{s} : 1.6\,\text{s} \approx 13\,\%$, and because the time is squared in the formula, the relative uncertainty of the acceleration is about twice that, $25\,\%$. This matches the calculated range. An acceleration below $1\,\text{m/s}^2$ suits a gently sloping track.
 
 ### b)

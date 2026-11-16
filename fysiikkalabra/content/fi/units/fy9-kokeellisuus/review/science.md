@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2e223f8749c7ebf6
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (d8caf555a4e34ae3).
+CONTENT-HASH: f372812f3994c80a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "tulos kulmakertoimesta → kaukaiset pisteet" (points of the fitted line) as in round 1.
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed: row 7 is now "malli origon kautta, suora ei → systemaattinen virhe, b ≠ 0" (en "model through origin, line not"); the aria-label says "Malli kulkee origon kautta, mutta suora ei". This is the unit's own condition ("Jos mallin mukaan suoran pitäisi kulkea origon kautta …").
-- Start box now "mistä tunnistan menetelmän?", consistent with the aria-label's "mikä menetelmä".
-- teacher.md: "kuuden kysymyksen kartan" -> "tunnistuskaavion seitsemän rivin"; the chart has seven rows (counted).
-- Rows 1-6 unchanged and correct as in round 1.
-- Hash taken at the start and the end (2e223f8749c7ebf6).
+- solutions.md s1 a Periaate: "Lähtökitka eli täysin kehittynyt lepokitka on μ0N" is the right definition, and the conclusion drawn from it (depends on surfaces and normal force, so compare μ0) still follows.
+- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-kokeellisuus` OK; hash the same at start and end.

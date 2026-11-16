@@ -303,6 +303,19 @@
       "answer": 2083.3,
       "unit": "J/(kg·K)",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "model",
+        "concept"
+      ],
+      "text": "Source material: <a href=\"https://phet.colorado.edu/en/simulations/states-of-matter-basics\" target=\"_blank\" rel=\"noopener\">PhET – States of Matter: Basics</a> (read 16 November 2026)\n\nThe simulation shows a particle model of matter: the particles are spheres in a container, and water is shown as small molecules. Open the simulation and choose water as the substance. The buttons make the substance a solid, a liquid or a gas. The heater of the container lets you heat or cool the substance, and a thermometer shows the temperature.\n\na) Look at each of the three states. Compare the motion and the arrangement of the particles in the solid, the liquid and the gas.\n\nb) Heat the solid and watch what happens to the structure of the particles. Use the particle model to explain why the energy transferred to a substance does not necessarily raise its temperature during a change of state. Consider a pure substance that melts at constant pressure.\n\nc) The model of the simulation does not give real amounts of energy, so consider real ice. Calculate how much energy is needed to melt a $0.20\\,\\text{kg}$ block of ice at the melting point $0\\,{}^\\circ\\text{C}$ when the melt water stays at $0\\,{}^\\circ\\text{C}$. Use the value $334\\,\\text{kJ/kg}$ for the specific latent heat of fusion of ice.\n\nd) Using the simulation and part c), judge which phenomena of a change of state the simple particle model describes well and what it leaves out. Name at least two things of each kind.\n\nThe answer field takes the result of part c) in $\\text{kJ}$. Check your answers to parts a), b) and d) against the model answer.",
+      "answer": 67,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [

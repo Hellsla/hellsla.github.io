@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 769ef2b44aea4f01
+CONTENT-HASH: da84adcc45b820fa
 
 ## Blocking
 - none
@@ -8,4 +8,7 @@ CONTENT-HASH: 769ef2b44aea4f01
 - none
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- round 3, delta review (reflow): proof sheets en-fy6-4-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

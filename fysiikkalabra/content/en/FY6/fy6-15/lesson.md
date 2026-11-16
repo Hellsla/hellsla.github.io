@@ -543,7 +543,7 @@ I = \frac{P_1 + P_2 + P_3}{U}
 
 <!-- vaihe -->
 
-**Unit conversions.** $P_1 + P_2 + P_3 = 2.2\,\text{kW} + 1.0\,\text{kW} + 1.3\,\text{kW} = 4.5\,\text{kW} = 4.5 \cdot 1000\,\text{W} = 4500\,\text{W}$.
+**Unit conversions.** $$\begin{aligned} &P_1 + P_2 + P_3 \\ &= 2.2\,\text{kW} + 1.0\,\text{kW} + 1.3\,\text{kW} \\ &= 4.5\,\text{kW} \\ &= 4.5 \cdot 1000\,\text{W} \\ &= 4500\,\text{W} \end{aligned}$$.
 
 <!-- vaihe -->
 

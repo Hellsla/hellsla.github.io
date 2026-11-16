@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 9bbf8b44f12b72e0
-SCOPE: delta added-exercise from 25428d8365ff21bf base 8f23aa7ae3bd
+CONTENT-HASH: 0e56d53720367ec8
 
 ## Blocking
-- none
 
 ## Polish
-- fy7-15-L1-10 duplicates L1-03/L1-07 (I = I0 cos²θ) with the same method done worse by reading a graph; keep as graph-reading practice or move to level 2.
-- fy7-15-L1-11 is the fourth Brewster-angle task at level 1 (L1-04, 05, 08); only the MAFY lookup is new.
-- solutions.md fy7-15-L1-10 Kaava ' = I_0 \cdot I/I_0$' is a tautology; write ' = I_0 \cdot \dfrac{I}{I_0}$, missä osuus luetaan kuvaajasta'.
+- exercises/exercises.json:325 — L2-09 brings "polarisaatiosuodin" and "objektiivi" without explanation; an S2 reader on the core path meets them here for the first time — "Kameran linssin (objektiivin) edessä on polarisaatiosuodin. Se on polarisaattori, jota voi kiertää."
+- exercises/exercises.json:325 — "näyteikkuna" and "neljänneskierros" may be new words — "Opiskelija valokuvaa kaupan ikkunaa (näyteikkunaa) kadulta." and "Kun suodinta kierretään vielä neljäsosa kierroksesta ($90^\circ$), …".
+- exercises/exercises.json:359 and :98 — "Aineisto on esimerkkiaineisto." (L3-04) and "Intensiteetit ovat esimerkkiarvoja." (L1-09) remain although the sentence was removed from L2-05 and L2-06 — remove both for consistency.
+- exercises/solutions.md:189 — L2-06: the angles of the measured points have two significant figures, not three — "Vastaus: $51^\circ$ (laskettuna $50{,}8^\circ$). Vastauksessa on kaksi merkitsevää numeroa, kuten osuudessa $40\,\%$."
+- exercises/exercises.json:152 — L2-01 (pre-existing) is the worked example with other numbers — if revised, ask for the angle from a given final intensity.
 
 ## Checked
-- L1-10: share 0,67 at 35°, 268 W/m², tolerance covers the reading.
-- L1-11: n = 1,520 from the table, Brewster 56,7° correct with refraction check.
-- L2-08 (fit): E = E0 cos²θ + E_t, E0 = 360 lx, 44° correct; the background light is in the text and the description gives the line, not the angle.
-- Language checked: fi-easy. Hash 9bbf8b44f12b72e0 at start and end.
+- The packet says check_lesson.py has not been run for this language: the deterministic checks (lint, check_i18n, layout at 360 px) are still owed before publication; this review judged the texts.
+- L2-09: level 2, qualitative, no Malus or Brewster calculation, marked core, no "Syventävä tehtävä" line; same physics and the same two questions as the Finnish task, split into short sentences ("Selitä … Selitä myös …").
+- L2-09 solution keeps every step and reason of the Finnish one (principle, why the goods do not change, the quarter turn, why the reflection does not vanish), in shorter sentences.
+- L2-05 and L2-06 read naturally without the example-data sentence; data and questions complete; their solutions keep all seven parts.
+- Counts 11 / 9 / 5 = 25; ids, levels, answers, units and tolerances match the Finnish set.
+- Clearer Finnish throughout: one idea per sentence, "kulmassa $30{,}0^\circ$" in place of the genitive construction, glossary terms unchanged.
+- L1-06 distractors and feedback keep one misconception each and repair it.
+- Captures (20:30) predate L2-09 (22:14) and end at L2-08; the preview holds L2-09 as plain text with one inline formula.

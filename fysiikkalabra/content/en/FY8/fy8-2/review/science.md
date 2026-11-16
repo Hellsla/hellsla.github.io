@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 10bab4cbe48a9c70
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: b761e81118edf191
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Polish items of the previous report (greenhouse figure alternatives, sim canvas decimal commas, one red limit of visible light, lesson-answers.py comments) still apply; none is blocking.
 
 ## Checked
-- Exit ticket Q2 diff: the question is now limited to ordinary (Stokes) fluorescence, one photon in and one out, with no extra energy. E = hc/λ gives 2,76 eV (450 nm) < 3,10 eV (400 nm), so "cannot" is the one correct answer. The exception (extra energy from elsewhere, e.g. two absorbed photons) is stated correctly and matches the question's condition; nothing says shorter-wavelength emission is never possible.
+- Delta: the diff is empty and the content hash b761e81118edf191 equals the one passed in the previous report; nothing to re-judge.
+- Hash b761e81118edf191 at start and end.

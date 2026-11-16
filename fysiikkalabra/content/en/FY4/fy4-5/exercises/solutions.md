@@ -207,7 +207,7 @@ a 0
 **Conversions:** $m = 4.0\,\text{g} = 4.0 \cdot 0.001\,\text{kg} = 0.0040\,\text{kg}$
 **Substitution:** $N = 0.10\,\text{N} - 0.0040\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.10\,\text{N} - 0.03924\,\text{N} = 0.06076\,\text{N}$
 **Answer:** $0.061\,\text{N} \approx 0.06\,\text{N}$. The normal force is a difference, and in a difference the number of decimals decides: the buoyancy $0.10\,\text{N}$ is known to a hundredth of a newton.
-**Reasonableness:** The buoyancy is larger than the weight, $0.039\,\text{N}$, so without the ceiling the balloon would rise. The ceiling stops it by pushing down exactly by the excess: $0.039\,\text{N} + 0.061\,\text{N} = 0.10\,\text{N}$. Here the normal force points down, not up.
+**Reasonableness:** The buoyancy is larger than the weight, $0.039\,\text{N}$, so without the ceiling the balloon would rise. The ceiling stops it by pushing down exactly by the excess: $$\begin{aligned} &0.039\,\text{N} + 0.061\,\text{N} \\ &= 0.10\,\text{N} \end{aligned}$$. Here the normal force points down, not up.
 
 ## fy4-5-L1-06
 **Find:** which forces are drawn in the free-body diagram when a box slides on a horizontal floor and slows down because of friction.
@@ -367,7 +367,7 @@ T 880,7 ylös
 v ylös
 a ylös
 ```
-**Reading the graph:** The readings of the table are divided into phases according to the moments $2.0\,\text{s}$ and $6.0\,\text{s}$. The sum of the readings of phase 1 is $881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}$, so the mean is $880.7\,\text{N}$. In phase 2 the sum is $2354\,\text{N}$ and the mean $784.7\,\text{N}$, and in phase 3 the sum is $2069\,\text{N}$ and the mean $689.7\,\text{N}$.
+**Reading the graph:** The readings of the table are divided into phases according to the moments $2.0\,\text{s}$ and $6.0\,\text{s}$. The sum of the readings of phase 1 is $$\begin{aligned} &881\,\text{N} + 878\,\text{N} + 883\,\text{N} \\ &= 2642\,\text{N} \end{aligned}$$, so the mean is $880.7\,\text{N}$. In phase 2 the sum is $2354\,\text{N}$ and the mean $784.7\,\text{N}$, and in phase 3 the sum is $2069\,\text{N}$ and the mean $689.7\,\text{N}$.
 **Formula:** $T - mg = m a_y$, so $a_y = \dfrac{T - mg}{m}$. The greatest velocity is $v_\text{max} = a_1 \Delta t_1$, and the distances are $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ and $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, because in the third phase the velocity decreases uniformly to zero. The height is $h = h_1 + h_2 + h_3$
 **Conversions:** The forces are in newtons, the mass in kilograms and the times in seconds, so no conversions are needed. The weight is $mg = 80\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 784.8\,\text{N}$.
 **Substitution:** The accelerations:
@@ -394,7 +394,7 @@ h_3 &= \tfrac12\cdot 2.397\,\tfrac{\text{m}}{\text{s}}\cdot 2.0\,\text{s} \\
 ```
 The height is $h = 2.40\,\text{m} + 9.59\,\text{m} + 2.40\,\text{m} = 14.38\,\text{m}$.
 **Answer:** a) The free-body diagram and the equation are above. b) $a_1 \approx 1.2\,\text{m/s}^2$ up, $a_2 \approx 0$ and $a_3 \approx -1.2\,\text{m/s}^2$, that is, the acceleration is down. c) In the third phase the net force points down, so the force of the rope is smaller than the weight although the velocity points up: the load slows down. The direction of the acceleration is the direction of the net force, not the direction of the motion. d) $h \approx 14.4\,\text{m}$, which to two significant figures is $14\,\text{m}$ like the mass $80\,\text{kg}$; the more precise value $14.4\,\text{m}$ is accepted in the answer box.
-**Reasonableness:** In the uniform phase the force of the rope, $785\,\text{N}$, is equal to the weight, $785\,\text{N}$, as it should be. The changes in velocity cancel each other: in phase 3 the velocity decreases by $1.19\,\text{m/s}^2\cdot 2.0\,\text{s} = 2.38\,\text{m/s}$, that is, almost from $2.40\,\text{m/s}$ to zero, so the lift ends at rest as in the task. The height is also the product of the greatest velocity and a time: the acceleration and deceleration phases together cover the same distance as uniform velocity in $2.0\,\text{s}$, so $h = v_\text{max}\cdot 6.0\,\text{s} = 2.397\,\text{m/s}\cdot 6.0\,\text{s} = 14.4\,\text{m}$.
+**Reasonableness:** In the uniform phase the force of the rope, $785\,\text{N}$, is equal to the weight, $785\,\text{N}$, as it should be. The changes in velocity cancel each other: in phase 3 the velocity decreases by $$\begin{aligned} &1.19\,\text{m/s}^2\cdot 2.0\,\text{s} \\ &= 2.38\,\text{m/s} \end{aligned}$$, that is, almost from $2.40\,\text{m/s}$ to zero, so the lift ends at rest as in the task. The height is also the product of the greatest velocity and a time: the acceleration and deceleration phases together cover the same distance as uniform velocity in $2.0\,\text{s}$, so $h = v_\text{max}\cdot 6.0\,\text{s} = 2.397\,\text{m/s}\cdot 6.0\,\text{s} = 14.4\,\text{m}$.
 
 ## fy4-5-L1-09
 **Find:** which of the four free-body diagrams correctly shows the forces that act on a box pushed at a constant velocity on a horizontal floor.

@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The third unit of Olkiluoto alone produces an electric power of $1600\\,\\text{MW}$, and its reactor core contains about $130$ tonnes of uranium. A coal power plant would have to burn about $14\\,000$ tonnes of coal every day to produce the same electricity. The energy of a nuclear power plant comes from atomic nuclei that split in two. Every splitting releases neutrons, which can split new nuclei.",
+      "text": "The third unit of Olkiluoto alone produces an electric power of $1600\\,\\text{MW}$, and its reactor core contains about $130$ tonnes of uranium. A coal power plant would have to burn about $12\\,000$ tonnes of coal every day to produce the same electricity. The energy of a nuclear power plant comes from atomic nuclei that split in two. Every splitting releases neutrons, which can split new nuclei.",
       "question": "Where does the energy released when a nucleus splits come from, and how does a reactor keep the chain of neutrons from running out of control?"
     },
     {

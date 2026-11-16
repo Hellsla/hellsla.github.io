@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
 **Sijoitus:** $f_1 = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}330\,\text{m}} = \dfrac{340\,\text{m/s}}{0{,}660\,\text{m}} = 515{,}2\,\text{Hz}$
 **Vastaus:** $515\,\text{Hz}$, kolme merkitsevää numeroa kuten putken pituudessa $0{,}330\,\text{m}$ ja äänen nopeudessa.
-**Järkevyys:** Noin kolmenkymmenen senttimetrin pilli soi muutaman sadan hertsin taajuudella, kuten nokkahuilun tai huilun keskiääni. Aallonpituus on $2L = 0{,}660\,\text{m}$, ja $$515\,\text{Hz} \cdot 0{,}660\,\text{m} \approx 340\,\text{m/s}$$.
+**Järkevyys:** Noin kolmenkymmenen senttimetrin pilli soi muutaman sadan hertsin taajuudella, kuten nokkahuilun tai huilun keskiääni. Aallonpituus on $2L = 0{,}660\,\text{m}$, ja $515\,\text{Hz} \cdot 0{,}660\,\text{m} \approx 340\,\text{m/s}$.
 
 ## fy5-13-L1-03
 **Annettu:** yläpäästään suljettu urkupilli, pituus $L = 2{,}60\,\text{m}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$
@@ -76,7 +76,7 @@
 **Muunnokset:** Lopuksi metrit senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $L = \dfrac{3 \cdot 340\,\text{m/s}}{2 \cdot 1530\,\text{Hz}} = \dfrac{1020\,\text{m/s}}{3060\,\text{Hz}} = 0{,}3333\,\text{m} = 33{,}33\,\text{cm}$
 **Vastaus:** $33{,}3\,\text{cm}$, kolme merkitsevää numeroa kuten taajuudessa $1530\,\text{Hz}$ ja äänen nopeudessa.
-**Järkevyys:** Putken perustaajuus on $1530\,\text{Hz} : 3 = 510\,\text{Hz}$, ja tarkistus antaa $\tfrac{340\,\text{m/s}}{2 \cdot 0{,}3333\,\text{m}} = 510\,\text{Hz}$. Kolmannen ominaistaajuuden aallonpituus on $\tfrac{2L}{3} = 0{,}222\,\text{m}$, ja $$1530\,\text{Hz} \cdot 0{,}222\,\text{m} \approx 340\,\text{m/s}$$.
+**Järkevyys:** Putken perustaajuus on $1530\,\text{Hz} : 3 = 510\,\text{Hz}$, ja tarkistus antaa $\tfrac{340\,\text{m/s}}{2 \cdot 0{,}3333\,\text{m}} = 510\,\text{Hz}$. Kolmannen ominaistaajuuden aallonpituus on $\tfrac{2L}{3} = 0{,}222\,\text{m}$, ja $1530\,\text{Hz} \cdot 0{,}222\,\text{m} \approx 340\,\text{m/s}$.
 
 ## fy5-13-L2-04
 **Annettu:** täryttäjän taajuus $f = 100\,\text{Hz}$; täryttäjän ja väkipyörän kohdat ovat solmuja; kuvasta narun värähtelevän osan pituus ja silmukoiden määrä
@@ -162,7 +162,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Muunnokset:** Ei tarvita: pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:** Suhteet ovat $96{,}0\,\text{Hz}$, $95{,}5\,\text{Hz}$, $96{,}33\,\text{Hz}$, $95{,}75\,\text{Hz}$ ja $96{,}2\,\text{Hz}$. Niiden summa on $479{,}78\,\text{Hz}$, joten $f_{1,\text{ka}} = 479{,}78\,\text{Hz} : 5 = 95{,}96\,\text{Hz}$. Nopeus on $v = 2 \cdot 0{,}640\,\text{m} \cdot 95{,}96\,\text{Hz} = 122{,}8\,\text{m/s}$
 **Vastaus:** $123\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa $0{,}640\,\text{m}$ ja taajuuksissa.
-**Järkevyys:** Perustaajuuden aallonpituus on $\lambda_1 = 2L = 1{,}28\,\text{m}$, ja $$95{,}96\,\text{Hz} \cdot 1{,}28\,\text{m} = 122{,}8\,\text{m/s}$$. Viides ominaistaajuus olisi $5 \cdot 95{,}96\,\text{Hz} = 479{,}8\,\text{Hz}$, mikä poikkeaa mitatusta $481{,}0\,\text{Hz}$:stä alle $0{,}3\,\%$. Pienet poikkeamat ovat tavallisia todellisissa mittauksissa.
+**Järkevyys:** Perustaajuuden aallonpituus on $\lambda_1 = 2L = 1{,}28\,\text{m}$, ja $95{,}96\,\text{Hz} \cdot 1{,}28\,\text{m} = 122{,}8\,\text{m/s}$. Viides ominaistaajuus olisi $5 \cdot 95{,}96\,\text{Hz} = 479{,}8\,\text{Hz}$, mikä poikkeaa mitatusta $481{,}0\,\text{Hz}$:stä alle $0{,}3\,\%$. Pienet poikkeamat ovat tavallisia todellisissa mittauksissa.
 
 ## fy5-13-L2-06
 **Annettu:** äänirauta $f = 512\,\text{Hz}$; ilmapatsaan pituudet resonansseissa $L_1 = 16{,}3\,\text{cm}$, $L_2 = 49{,}9\,\text{cm}$ ja $L_3 = 83{,}3\,\text{cm}$; veden pinta on suljettu pää

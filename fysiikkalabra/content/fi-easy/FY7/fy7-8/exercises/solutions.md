@@ -9,14 +9,14 @@
 **Järkevyys:** Toisiokäämissä on $20$ kertaa vähemmän kierroksia, joten jännitteen on oltava $20$ kertaa pienempi: $230\,\text{V} : 20 = 11{,}5\,\text{V}$. Ovikellolle sopiva pieni jännite on turvallinen koskea.
 
 ## fy7-8-L1-02
-**Annettu:** ensiöjännite $U_1 = 230\,\text{V}$, toisiojännite $U_2 = 8{,}0\,\text{V}$, toisiokäämin kierrosten lukumäärä $N_2 = 40$, ideaalinen muuntaja
+**Annettu:** ensiöjännite $U_1 = 230\,\text{V}$, toisiojännite $U_2 = 8{,}00\,\text{V}$, toisiokäämin kierrosten lukumäärä $N_2 = 40$, ideaalinen muuntaja
 **Kysytty:** ensiökäämin kierrosten lukumäärä $N_1$
 **Periaate:** Ideaalisessa muuntajassa sama muuttuva magneettivuo kulkee molempien käämien läpi. Siksi jokaiseen kierrokseen indusoituu sama jännite. Käämien jännitteet suhtautuvat kuten kierrosten lukumäärät.
 **Kaava:** $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2}$, josta $N_1 = \dfrac{N_2 U_1}{U_2}$
 **Muunnokset:** Niitä ei tarvita. Jännitteiden suhteessa voltit supistuvat.
-**Sijoitus:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8{,}0\,\text{V}} = 1150$
-**Vastaus:** $1150$ kierrosta. Kierrosten lukumäärä on kokonaisluku, ja jännitteen $8{,}0\,\text{V}$ kaksi merkitsevää numeroa riittävät tähän tarkkuuteen.
-**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}0\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 \approx 1150$.
+**Sijoitus:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8{,}00\,\text{V}} = 1150$
+**Vastaus:** $1150$ kierrosta. Vastauksessa on kolme merkitsevää numeroa, kuten jännitteissä $230\,\text{V}$ ja $8{,}00\,\text{V}$.
+**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}00\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 = 1160$, mikä on lähellä tulosta $1150$.
 
 ## fy7-8-L1-03
 **Annettu:** ensiöjännite $U_1 = 20\,\text{kV}$, toisiojännite $U_2 = 400\,\text{V}$, toisiovirta $I_2 = 250\,\text{A}$, ideaalinen muuntaja
@@ -30,7 +30,7 @@
 
 ## fy7-8-L1-04
 **Annettu:** johtimien yhteinen resistanssi $R = 2{,}5\,\Omega$, virta $I = 120\,\text{A}$
-**Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{h}$ kilowatteina
+**Kysytty:** johdossa sisäenergiaksi muuttuva teho $P_\text{h}$ kilowatteina
 **Periaate:** Virta muuttaa johdon resistanssissa sähköenergiaa sisäenergiaksi. Kun johdon virta ja resistanssi tunnetaan, häviöteho saadaan suoraan lausekkeesta $P_\text{h} = R I^2$.
 **Kaava:** $P_\text{h} = R I^2$
 **Muunnokset:** Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
@@ -50,7 +50,7 @@
 
 ## fy7-8-L2-01
 **Annettu:** teho $P = 50\,\text{MW}$, siirtojännite $U = 110\,\text{kV}$, johtimien resistanssi $R = 4{,}0\,\Omega$
-**Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{h}$ kilowatteina
+**Kysytty:** johdossa sisäenergiaksi muuttuva teho $P_\text{h}$ kilowatteina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johtoa lämmittää sen virta, ja häviöteho on $P_\text{h} = R I^2$. Virta saadaan tehosta ja siirtojännitteestä, koska $P = U I$. Siirtojännite ei ole jännite johdon resistanssin yli. Siksi häviötä ei lasketa lausekkeella $U^2 : R$.
 **Kaava:** $P = U I$, josta $I = \dfrac{P}{U}$, ja $P_\text{h} = R I^2$
 **Muunnokset:** $P = 50\,\text{MW} = 50 \cdot 10^{6}\,\text{W}$ ja $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
@@ -66,7 +66,7 @@
 **Muunnokset:** Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I_1 = \dfrac{5{,}0\,\text{V} \cdot 2{,}0\,\text{A}}{230\,\text{V}} = \dfrac{10\,\text{W}}{230\,\text{V}} = 0{,}04348\,\text{A} = 43{,}48\,\text{mA}$
 **Vastaus:** $43\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $5{,}0\,\text{V}$ ja virrassa $2{,}0\,\text{A}$.
-**Järkevyys:** Jännite laskee $46$-kertaisesti, joten ensiövirran on oltava $46$ kertaa pienempi kuin latausvirta: $2{,}0\,\text{A} : 46 \approx 0{,}043\,\text{A}$. Todellinen laturi ottaa hieman enemmän, koska osa energiasta muuttuu laturissa lämmöksi.
+**Järkevyys:** Jännite laskee $46$-kertaisesti, joten ensiövirran on oltava $46$ kertaa pienempi kuin latausvirta: $2{,}0\,\text{A} : 46 \approx 0{,}043\,\text{A}$. Todellinen laturi ottaa hieman enemmän, koska osa energiasta muuttuu laturissa sisäenergiaksi.
 
 ## fy7-8-L2-03
 **Annettu:** teho $P = 100\,\text{MW}$, siirtojännite $U = 220\,\text{kV}$, johtimien resistanssi $R = 4{,}8\,\Omega$
@@ -81,13 +81,18 @@
 ## fy7-8-L2-04
 **Annettu:** kuvaajan käyrä häviötehosta $P_\text{h}$ virran $I$ funktiona
 **Kysytty:** langan resistanssi $R$ ohmeina
-**Periaate:** Langassa lämmöksi muuttuva teho on $P_\text{h} = R I^2$, joten häviöteho kasvaa virran neliön mukaan ja kuvaaja on origosta alkava paraabeli. Kun käyrältä luetaan yksi piste, resistanssi saadaan ratkaistua. Sovitettu käyrä tasoittaa yksittäisten mittausten satunnaisvirheet, joten arvo luetaan käyrältä eikä yksittäisestä pisteestä.
+**Periaate:** Langassa sisäenergiaksi muuttuva teho on $P_\text{h} = R I^2$, joten häviöteho kasvaa virran neliön mukaan ja kuvaaja on origosta alkava paraabeli. Kun käyrältä luetaan yksi piste, resistanssi saadaan ratkaistua. Sovitettu käyrä tasoittaa yksittäisten mittausten satunnaisvirheet, joten arvo luetaan käyrältä eikä yksittäisestä pisteestä.
 **Kuvaajan lukeminen:** Käyrä kulkee ruudukon pisteen ($5{,}0\,\text{A}$; $20\,\text{W}$) kautta: virralla $5{,}0\,\text{A}$ sovitetun käyrän häviöteho on $20\,\text{W}$. Mittauspiste $20{,}1\,\text{W}$ on lähellä käyrää.
 **Kaava:** $P_\text{h} = R I^2$, josta $R = \dfrac{P_\text{h}}{I^2}$
 **Muunnokset:** Niitä ei tarvita. Teho on watteina ja virta ampeereina, ja $\tfrac{\text{W}}{\text{A}^2} = \tfrac{\text{V}}{\text{A}} = \Omega$.
 **Sijoitus:** $R = \dfrac{20\,\text{W}}{(5{,}0\,\text{A})^2} = \dfrac{20\,\text{W}}{25\,\text{A}^2} = 0{,}80\,\Omega$
 **Vastaus:** $0{,}80\,\Omega$, kaksi merkitsevää numeroa kuten kuvaajalta luettu virta $5{,}0\,\text{A}$.
-**Järkevyys:** Tarkistus toisella käyrän pisteellä: virralla $2{,}5\,\text{A}$ käyrä antaa $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4\,\text{W}$ ($3{,}0\,\text{A}$) väliin. Alle ohmin resistanssi on uskottava muutaman metrin vastuslangalle.
+**Järkevyys:** Tarkistus toisella käyrän pisteellä: virralla $2{,}5\,\text{A}$ käyrä antaa $$
+\begin{aligned}
+&0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 \\
+&= 5{,}0\,\text{W}
+\end{aligned}
+$$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4\,\text{W}$ ($3{,}0\,\text{A}$) väliin. Alle ohmin resistanssi on uskottava muutaman metrin vastuslangalle.
 
 ## fy7-8-L3-01
 **Annettu:** generaattorin teho $P = 150\,\text{MW}$ ja jännite $20\,\text{kV}$, ideaalinen muuntaja nostaa jännitteen arvoon $U = 400\,\text{kV}$, johtimien resistanssi $R = 8{,}0\,\Omega$
@@ -97,7 +102,7 @@
 **Muunnokset:** $P = 150\,\text{MW} = 150 \cdot 10^{6}\,\text{W}$ ja $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$.
 **Sijoitus:** $I = \dfrac{150 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 375\,\text{A}$, $P_\text{h} = 8{,}0\,\Omega \cdot (375\,\text{A})^2 = 1{,}125 \cdot 10^{6}\,\text{W}$ ja $\dfrac{P_\text{h}}{P} = \dfrac{1{,}125 \cdot 10^{6}\,\text{W}}{150 \cdot 10^{6}\,\text{W}} = 0{,}0075 = 0{,}75\,\%$
 **Vastaus:** $0{,}75\,\%$, kaksi merkitsevää numeroa kuten resistanssissa $8{,}0\,\Omega$.
-**Järkevyys:** Ilman muuntajaa virta olisi $150\,\text{MW} : 20\,\text{kV} = 7500\,\text{A}$, ja häviö $8{,}0\,\Omega \cdot (7500\,\text{A})^2 = 450\,\text{MW}$ olisi suurempi kuin koko teho, joten siirto ei onnistuisi lainkaan. Muuntajan ansiosta häviö on alle prosentin.
+**Järkevyys:** Ilman muuntajaa virta olisi $150\,\text{MW} : 20\,\text{kV} = 7500\,\text{A}$, ja häviö $$\begin{aligned} &8{,}0\,\Omega \cdot (7500\,\text{A})^2 \\ &= 450\,\text{MW} \end{aligned}$$ olisi suurempi kuin koko teho, joten siirto ei onnistuisi lainkaan. Muuntajan ansiosta häviö on alle prosentin.
 
 ## fy7-8-L3-02
 **Annettu:** siirtojännite $U = 400\,\text{kV}$, siirrettävä teho $P = 400\,\text{MW}$, häviö enintään $1{,}0\,\%$ eli $P_\text{h} \le 0{,}010\,P$
@@ -107,7 +112,7 @@
 **Muunnokset:** $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$ ja $P = 400\,\text{MW} = 400 \cdot 10^{6}\,\text{W}$.
 **Sijoitus:** $R = \dfrac{0{,}010 \cdot (400 \cdot 10^{3}\,\text{V})^2}{400 \cdot 10^{6}\,\text{W}} = \dfrac{1{,}6 \cdot 10^{9}\,\text{V}^2}{4{,}0 \cdot 10^{8}\,\text{W}} = 4{,}0\,\Omega$
 **Vastaus:** enintään $4{,}0\,\Omega$, kaksi merkitsevää numeroa kuten osuudessa $1{,}0\,\%$.
-**Järkevyys:** Tarkistus: virta on $400\,\text{MW} : 400\,\text{kV} = 1000\,\text{A}$, ja häviö $4{,}0\,\Omega \cdot (1000\,\text{A})^2 = 4{,}0\,\text{MW}$ eli $1{,}0\,\%$ tehosta. Yksiköt: $\tfrac{\text{V}^2}{\text{W}} = \tfrac{\text{V}^2}{\text{V} \cdot \text{A}} = \Omega$.
+**Järkevyys:** Tarkistus: virta on $$\begin{aligned} &400\,\text{MW} : 400\,\text{kV} \\ &= 1000\,\text{A} \end{aligned}$$, ja häviö $$\begin{aligned} &4{,}0\,\Omega \cdot (1000\,\text{A})^2 \\ &= 4{,}0\,\text{MW} \end{aligned}$$ eli $1{,}0\,\%$ tehosta. Yksiköt: $\tfrac{\text{V}^2}{\text{W}} = \tfrac{\text{V}^2}{\text{V} \cdot \text{A}} = \Omega$.
 
 ## fy7-8-L3-03
 **Annettu:** alkuperäinen siirtojännite $U_1 = 220\,\text{kV}$, uusi siirtojännite $U_2 = 400\,\text{kV}$, resistanssi $R$ ja häviön osuus pysyvät samoina
@@ -137,7 +142,7 @@
 ## fy7-8-L1-08
 **Annettu:** ensiöteho $P_1 = 80\,\text{W}$, toisioteho $P_2 = 72\,\text{W}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
-**Periaate:** Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta tehosta tulee kuormalle. Oikeassa muuntajassa osa ensiötehosta muuttuu rautasydämessä ja käämeissä lämmöksi. Siksi $\eta < 1$.
+**Periaate:** Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta tehosta tulee kuormalle. Oikeassa muuntajassa osa ensiötehosta muuttuu rautasydämessä ja käämeissä sisäenergiaksi. Siksi $\eta < 1$.
 **Kaava:** $\eta = \dfrac{P_2}{P_1}$
 **Muunnokset:** Niitä ei tarvita. Tehot ovat samassa yksikössä, joten suhde on yksikötön. Lopuksi $1 = 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{72\,\text{W}}{80\,\text{W}} = 0{,}90 = 90\,\%$
@@ -158,12 +163,12 @@
 ## fy7-8-L2-06
 **Annettu:** $U_1 = 230\,\text{V}$ ja taulukon rivit $(I_2;\ U_2;\ I_1)$: $(0{,}20\,\text{A};\ 12{,}4\,\text{V};\ 0{,}020\,\text{A})$, $(0{,}60\,\text{A};\ 12{,}2\,\text{V};\ 0{,}042\,\text{A})$, $(1{,}00\,\text{A};\ 12{,}0\,\text{V};\ 0{,}063\,\text{A})$, $(1{,}50\,\text{A};\ 11{,}8\,\text{V};\ 0{,}089\,\text{A})$ ja $(2{,}00\,\text{A};\ 11{,}5\,\text{V};\ 0{,}114\,\text{A})$
 **Kysytty:** hyötysuhde $\eta$ prosentteina rivillä, jolla $I_2 = 2{,}00\,\text{A}$; lisäksi suurimman hyötysuhteen kuorma ja selitys
-**Periaate:** Sähköteho on jännitteen ja virran tulo, $P = U I$. Hyötysuhde on toisiotehon osuus ensiötehosta, $\eta = P_2 : P_1$. Muuntajassa osa ensiötehosta muuttuu lämmöksi. Siksi $\eta < 1$.
+**Periaate:** Sähköteho on jännitteen ja virran tulo, $P = U I$. Hyötysuhde on toisiotehon osuus ensiötehosta, $\eta = P_2 : P_1$. Muuntajassa osa ensiötehosta muuttuu sisäenergiaksi. Siksi $\eta < 1$.
 **Kaava:** $P_1 = U_1 I_1$ (oletus: virta ja jännite ovat samassa vaiheessa), $P_2 = U_2 I_2$ ja $\eta = \dfrac{P_2}{P_1}$
 **Muunnokset:** Niitä ei tarvita. Jännitteet ovat voltteina ja virrat ampeereina, joten tehot tulevat watteina.
 **Sijoitus:** Riveillä $\eta = 0{,}54$, $0{,}76$, $0{,}83$, $0{,}86$ ja $0{,}88$ (tehot $P_1 = 4{,}6$; $9{,}66$; $14{,}49$; $20{,}47$ ja $26{,}22\,\text{W}$, $P_2 = 2{,}48$; $7{,}32$; $12{,}0$; $17{,}7$ ja $23{,}0\,\text{W}$). Viimeisellä rivillä $P_1 = 230\,\text{V} \cdot 0{,}114\,\text{A} = 26{,}22\,\text{W}$, $P_2 = 11{,}5\,\text{V} \cdot 2{,}00\,\text{A} = 23{,}0\,\text{W}$ ja $\eta = \dfrac{23{,}0\,\text{W}}{26{,}22\,\text{W}} = 0{,}877 = 87{,}7\,\%$
 **Vastaus:** $87{,}7\,\%$, kolme merkitsevää numeroa kuten arvoissa $0{,}114\,\text{A}$, $11{,}5\,\text{V}$ ja $2{,}00\,\text{A}$. Hyötysuhde on suurin suurimmalla kuormalla ja pienin pienimmällä kuormalla, vain noin $54\,\%$. Syy on, että häviöteho on lähes vakio, noin $2\text{–}3\,\text{W}$ (tehojen erotus $P_1 - P_2$ on $2{,}1$; $2{,}3$; $2{,}5$; $2{,}8$ ja $3{,}2\,\text{W}$). Toisioteho taas kasvaa. Pienellä kuormalla lähes vakio häviö on suuri osa ensiötehosta. Suurella kuormalla se on pieni osa.
-**Järkevyys:** Viimeisellä rivillä häviö on $26{,}22\,\text{W} - 23{,}0\,\text{W} = 3{,}2\,\text{W}$. Se on $3{,}22\,\text{W} : 26{,}22\,\text{W} = 12{,}3\,\%$ ensiötehosta, ja $100\,\% - 12{,}3\,\% = 87{,}7\,\%$. Toisiojännite laskee, kun kuorma kasvaa ($12{,}4\,\text{V} \to 11{,}5\,\text{V}$). Se kertoo käämien resistanssin aiheuttamasta häviöstä.
+**Järkevyys:** Viimeisellä rivillä häviö on $$\begin{aligned} &26{,}22\,\text{W} - 23{,}0\,\text{W} \\ &= 3{,}2\,\text{W} \end{aligned}$$. Se on $3{,}22\,\text{W} : 26{,}22\,\text{W} = 12{,}3\,\%$ ensiötehosta, ja $100\,\% - 12{,}3\,\% = 87{,}7\,\%$. Toisiojännite laskee, kun kuorma kasvaa ($12{,}4\,\text{V} \to 11{,}5\,\text{V}$). Se kertoo käämien resistanssin aiheuttamasta häviöstä.
 
 ## fy7-8-L2-07
 **Annettu:** ensiöjännite $U_1 = 230\,\text{V}$, toisiojännite $U_2 = 2300\,\text{V}$, ensiövirta $I_1 = 2{,}0\,\text{A}$, ideaalinen muuntaja
@@ -178,27 +183,27 @@
 ## fy7-8-L3-04
 **Annettu:** vakio teho $P = 200\,\text{MW}$, matka $150\,\text{km}$, johtimien yhteinen resistanssi $0{,}040\,\Omega$ johdon kilometriä kohti, aika $t = 8760\,\text{h}$, jännitteet $U_\text{A} = 220\,\text{kV}$ ja $U_\text{B} = 400\,\text{kV}$, sähkön hinta $50\,\text{€/MWh}$
 **Kysytty:** vaihtoehdon B vuosittainen säästö häviöenergian arvossa miljoonina euroina sekä perustelu
-**Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johdon virta määräytyy siirtojännitteestä, $I = P : U$. Johtimissa lämmöksi muuttuva teho on $P_\text{h} = R I^2$. Sama teho kulkee korkeammalla jännitteellä pienemmällä virralla, joten häviö on pienempi. Teho on vakio, joten häviöenergia on häviöteho kerrottuna ajalla, $E = P_\text{h} t$. Säästö on energioiden erotus kerrottuna hinnalla.
+**Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johdon virta määräytyy siirtojännitteestä, $I = P : U$. Johtimissa sisäenergiaksi muuttuva teho on $P_\text{h} = R I^2$. Sama teho kulkee korkeammalla jännitteellä pienemmällä virralla, joten häviö on pienempi. Teho on vakio, joten häviöenergia on häviöteho kerrottuna ajalla, $E = P_\text{h} t$. Säästö on energioiden erotus kerrottuna hinnalla.
 **Kaava:** $R = 0{,}040\,\tfrac{\Omega}{\text{km}} \cdot s$, $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$, $E = P_\text{h} t$ sekä
 
 $$\text{säästö} = (E_\text{A} - E_\text{B}) \cdot \text{hinta}$$
 **Muunnokset:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_\text{A} = 220 \cdot 10^{3}\,\text{V}$ ja $U_\text{B} = 400 \cdot 10^{3}\,\text{V}$. Häviöteho muutetaan lopuksi megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$.
-**Sijoitus:** a) $R = 0{,}040\,\tfrac{\Omega}{\text{km}} \cdot 150\,\text{km} = 6{,}0\,\Omega$, $I_\text{A} = \dfrac{200 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 909{,}1\,\text{A}$ ja $I_\text{B} = \dfrac{200 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 500\,\text{A}$. b) $P_\text{h,A} = 6{,}0\,\Omega \cdot (909{,}1\,\text{A})^2 = 4{,}959\,\text{MW}$ ja $P_\text{h,B} = 6{,}0\,\Omega \cdot (500\,\text{A})^2 = 1{,}500\,\text{MW}$, joten $E_\text{A} = 4{,}959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$ ja $E_\text{B} = 1{,}500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$. c) Säästö $= (43\,440\,\text{MWh} - 13\,140\,\text{MWh}) \cdot 50\,\tfrac{\text{€}}{\text{MWh}} = 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}} = 1{,}515 \cdot 10^{6}\,\text{€}$
+**Sijoitus:** a) $R = 0{,}040\,\tfrac{\Omega}{\text{km}} \cdot 150\,\text{km} = 6{,}0\,\Omega$, $I_\text{A} = \dfrac{200 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 909{,}1\,\text{A}$ ja $I_\text{B} = \dfrac{200 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 500\,\text{A}$. b) $P_\text{h,A} = 6{,}0\,\Omega \cdot (909{,}1\,\text{A})^2 = 4{,}959\,\text{MW}$ ja $P_\text{h,B} = 6{,}0\,\Omega \cdot (500\,\text{A})^2 = 1{,}500\,\text{MW}$, joten $E_\text{A} = 4{,}959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$ ja $E_\text{B} = 1{,}500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$. c) Säästö $$\begin{aligned} &= (43\,440\,\text{MWh} - 13\,140\,\text{MWh}) \\ &\cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 1{,}515 \cdot 10^{6}\,\text{€} \end{aligned}$$
 **Vastaus:** noin $1{,}5\,\text{milj. €}$ vuodessa, kaksi merkitsevää numeroa kuten tehossa $200\,\text{MW}$. Perustelu: siirrettävä teho on sama, mutta korkeammalla jännitteellä virta on pienempi ($500\,\text{A}$ eikä $909\,\text{A}$). Häviöteho riippuu virran neliöstä. Siksi se pienenee noin kolmasosaan, vaikka resistanssi on sama. Kantaverkon korkea jännite on siksi taloudellinen.
-**Järkevyys:** Jännitteiden suhde on $400 : 220 = 1{,}82$. Häviöiden suhde on sen neliö $3{,}3$. Näin on: $4{,}959\,\text{MW} : 1{,}500\,\text{MW} = 3{,}3$. Häviö on vaihtoehdossa B $1{,}5\,\text{MW} : 200\,\text{MW} = 0{,}75\,\%$ ja vaihtoehdossa A $2{,}5\,\%$. Ne ovat kantaverkon suuruusluokkaa.
+**Järkevyys:** Jännitteiden suhde on $400 : 220 = 1{,}82$. Häviöiden suhde on sen neliö $3{,}3$. Näin on: $$\begin{aligned} &4{,}959\,\text{MW} : 1{,}500\,\text{MW} \\ &= 3{,}3 \end{aligned}$$. Häviö on vaihtoehdossa B $$\begin{aligned} &1{,}5\,\text{MW} : 200\,\text{MW} \\ &= 0{,}75\,\% \end{aligned}$$ ja vaihtoehdossa A $2{,}5\,\%$. Ne ovat kantaverkon suuruusluokkaa.
 
 ## fy7-8-L3-05
 **Annettu:** taulukon tehot $(P_\text{ulos};\ P_\text{sisään})$: $(0{,}0\,\text{kW};\ 0{,}6\,\text{kW})$, $(10{,}0\,\text{kW};\ 10{,}6\,\text{kW})$, $(20{,}0\,\text{kW};\ 20{,}7\,\text{kW})$, $(40{,}0\,\text{kW};\ 40{,}9\,\text{kW})$, $(60{,}0\,\text{kW};\ 61{,}3\,\text{kW})$ ja $(80{,}0\,\text{kW};\ 81{,}9\,\text{kW})$, malli $P_\text{h} = P_0 + a P_\text{ulos}^2$
 **Kysytty:** ulostehon $P_\text{ulos}$ arvo kilowatteina, jolla hyötysuhde on suurin
-**Periaate:** Häviöteho on sisääntulotehon ja ulostehon erotus. Ilman kuormaa muuntaja ottaa silti tehon $P_0$ (rautasydän lämpenee). Kuormitettuna käämeissä muuttuu lämmöksi lisäksi $R I^2$. Jännite on vakio, joten toisiovirta $I = P_\text{ulos} : U$ on verrannollinen ulostehoon ja $R I^2 = \dfrac{R}{U^2} P_\text{ulos}^2 = a P_\text{ulos}^2$. Hyötysuhde on suurin, kun häviön osuus ulostehosta on pienin. Tehtävän ehto (vakiohäviö ja kuormasta riippuva häviö ovat yhtä suuret) saadaan tästä etsimällä funktion huippu derivoimalla. Sitä ei johdeta tässä.
+**Periaate:** Häviöteho on sisääntulotehon ja ulostehon erotus. Ilman kuormaa muuntaja ottaa silti tehon $P_0$ (rautasydän lämpenee). Kuormitettuna käämeissä muuttuu sisäenergiaksi lisäksi $R I^2$. Jännite on vakio, joten toisiovirta $I = P_\text{ulos} : U$ on verrannollinen ulostehoon ja $R I^2 = \dfrac{R}{U^2} P_\text{ulos}^2 = a P_\text{ulos}^2$. Hyötysuhde on suurin, kun häviön osuus ulostehosta on pienin. Tehtävän ehto (vakiohäviö ja kuormasta riippuva häviö ovat yhtä suuret) saadaan tästä etsimällä funktion huippu derivoimalla. Sitä ei johdeta tässä.
 **Kaava:** $P_\text{h} = P_\text{sisään} - P_\text{ulos}$, $\eta = \dfrac{P_\text{ulos}}{P_\text{sisään}}$, $P_0 = P_\text{h}(0)$, $a = \dfrac{P_\text{h} - P_0}{P_\text{ulos}^2}$ ja ehdosta $P_0 = a P_\text{ulos}^2$ saadaan $P_\text{ulos} = \sqrt{\dfrac{P_0}{a}}$
 **Muunnokset:** Niitä ei tarvita. Kaikki tehot ovat kilowatteina, ja $a$:n yksikkö on $\text{kW}^{-1}$.
 **Sijoitus:** a) Häviötehot ovat $0{,}6$; $0{,}6$; $0{,}7$; $0{,}9$; $1{,}3$ ja $1{,}9\,\text{kW}$. Hyötysuhteet riveillä $10\text{–}80\,\text{kW}$ ovat $94{,}3$; $96{,}6$; $97{,}8$; $97{,}9$ ja $97{,}7\,\%$. b) Tyhjäkäynnillä $P_0 = 0{,}6\,\text{kW}$. Suurimmalla kuormalla on pienin suhteellinen lukuvirhe, joten $a = \dfrac{1{,}9\,\text{kW} - 0{,}6\,\text{kW}}{(80{,}0\,\text{kW})^2} = 2{,}03 \cdot 10^{-4}\,\text{kW}^{-1}$. c) $P_\text{ulos} = \sqrt{\dfrac{0{,}6\,\text{kW}}{2{,}03 \cdot 10^{-4}\,\text{kW}^{-1}}} = \sqrt{2954\,\text{kW}^2} = 54{,}35\,\text{kW}$
 **Vastaus:** noin $54\,\text{kW}$, kaksi merkitsevää numeroa, koska häviöiden erotus $1{,}9\,\text{kW} - 0{,}6\,\text{kW} = 1{,}3\,\text{kW}$ on tunnettu kahden merkitsevän numeron tarkkuudella. Riveiltä $20$–$60\,\text{kW}$ määritetty $a$ antaisi arvoja $49$–$57\,\text{kW}$, joten tulos on epätarkka.
-**Järkevyys:** Taulukossa hyötysuhde on suurin rivillä $60\,\text{kW}$ ($97{,}9\,\%$), lähellä tulosta $54\,\text{kW}$. Tuloksella mallin mukainen häviö on $0{,}6\,\text{kW} + 2{,}03 \cdot 10^{-4}\,\text{kW}^{-1} \cdot (54{,}35\,\text{kW})^2 = 1{,}2\,\text{kW}$, ja hyötysuhde on $\dfrac{54{,}35}{54{,}35 + 1{,}2} = 97{,}8\,\%$. Häviön kaksi osaa ovat tässä kumpikin $0{,}6\,\text{kW}$.
+**Järkevyys:** Taulukossa hyötysuhde on suurin rivillä $60\,\text{kW}$ ($97{,}9\,\%$), lähellä tulosta $54\,\text{kW}$. Tuloksella mallin mukainen häviö on $$\begin{aligned} &0{,}6\,\text{kW} \\ &+ 2{,}03 \cdot 10^{-4}\,\text{kW}^{-1} \\ &\cdot (54{,}35\,\text{kW})^2 \\ &= 1{,}2\,\text{kW} \end{aligned}$$, ja hyötysuhde on $\dfrac{54{,}35}{54{,}35 + 1{,}2} = 97{,}8\,\%$. Häviön kaksi osaa ovat tässä kumpikin $0{,}6\,\text{kW}$.
 
 ## fy7-8-L2-08
-**Kysytty:** tuulivoimalan kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka.
+**Kysytty:** tuulivoimalan kaapelissa sisäenergiaksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka.
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Ideaalinen muuntaja ei muuta tehoa. Siksi kaapeli siirtää tehon $3{,}0\,\text{MW}$ jännitteellä $20\,\text{kV}$. Kaapelin virta saadaan siirrettävästä tehosta ja siirtojännitteestä, $I = P : U$. Häviöteho on $P_\text{h} = RI^2$. Siirtojännite ei ole kaapelin resistanssin yli oleva jännite, joten lauseketta $U^2 : R$ ei voi käyttää.
 **Mallivastaus:** Kaapelin virta:
 
@@ -215,10 +220,10 @@ $P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
 Häviöteho on noin $11\,\text{kW}$, eli suuruusluokka on $10\,\text{kW}$. Se on vain noin $0{,}4\,\%$ siirrettävästä tehosta. Väärät vaihtoehdot syntyvät tyypillisistä virheistä. Tulo $RI = 75\,\text{V}$ on kaapelin jännitehäviö, ei teho. Se antaisi luvun $0{,}1\,\text{kW}$ suuruusluokan. Jos muuntajan unohtaa ja laskee virran jännitteellä $690\,\text{V}$, virraksi tulee noin $4\,350\,\text{A}$ ja häviötehoksi noin $9{,}5\,\text{MW}$. Se on enemmän kuin voimala tuottaa. Lauseke $U^2 : R$ siirtojännitteellä antaa $800\,\text{MW}$, eli suuruusluokka on $1000\,\text{MW}$. Se on vielä mahdottomampi. Järkevyys: muuntaja pienentää virran noin $29$-osaan ja häviöt noin $840$-osaan siitä, mitä ne olisivat jännitteellä $690\,\text{V}$.
 
 ## fy7-8-L2-09
-**Annettu:** siirrettävä teho $P = 200\,\text{MW}$ ja kuvaajan käyrä. Käyrä näyttää, kuinka suuri osa tehosta $P_\text{h} : P$ muuttuu lämmöksi, kun siirtojännite $U$ muuttuu.
+**Annettu:** siirrettävä teho $P = 200\,\text{MW}$ ja kuvaajan käyrä. Käyrä näyttää, kuinka suuri osa tehosta $P_\text{h} : P$ muuttuu sisäenergiaksi, kun siirtojännite $U$ muuttuu.
 **Kysytty:** johtimien yhteenlaskettu resistanssi $R$ ohmeina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Virta lämmittää johtoa, ja häviöteho on $P_\text{h} = R I^2$. Virran saa tehosta ja jännitteestä, $P = U I$. Luet käyrältä yhden pisteen. Osuudesta saat häviötehon, ja häviötehosta saat resistanssin.
-**Kuvaajan lukeminen:** Käyrä kulkee ruudukon pisteen ($200\,\text{kV}$; $3{,}0\,\%$) kautta. Jännitteellä $200\,\text{kV}$ lämmöksi muuttuu $3{,}0\,\%$ siirrettävästä tehosta.
+**Kuvaajan lukeminen:** Käyrä kulkee ruudukon pisteen ($200\,\text{kV}$; $3{,}0\,\%$) kautta. Jännitteellä $200\,\text{kV}$ sisäenergiaksi muuttuu $3{,}0\,\%$ siirrettävästä tehosta.
 **Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$, josta $R = \dfrac{P_\text{h}}{I^2}$, missä $P_\text{h} = 0{,}030\,P$
 **Muunnokset:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ ja $3{,}0\,\% = 0{,}030$.
 **Sijoitus:** $P_\text{h} = 0{,}030 \cdot 200 \cdot 10^{6}\,\text{W} = 6{,}0 \cdot 10^{6}\,\text{W}$
@@ -228,3 +233,41 @@ $I = \dfrac{200 \cdot 10^{6}\,\text{W}}{200 \cdot 10^{3}\,\text{V}} = 1000\,\tex
 $R = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6{,}0\,\Omega$
 **Vastaus:** $6{,}0\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu osuus $3{,}0\,\%$ on annettu kahdella.
 **Järkevyys:** Tarkista toisella pisteellä. Jos jännite puolittuu arvoon $100\,\text{kV}$, virta kaksinkertaistuu ja häviöteho nelinkertaistuu. Silloin osuus on $4 \cdot 3{,}0\,\% = 12\,\%$. Käyrä antaa juuri tämän arvon kohdassa $100\,\text{kV}$. Muutaman ohmin resistanssi sopii satojen kilometrien voimajohdolle.
+
+## fy7-8-L2-10
+**Annettu:** aineistosta ([Fingrid – Suomen sähköjärjestelmä](https://www.fingrid.fi/kantaverkko/kehittaminen/suomen-sahkojarjestelma/), luettu 16. marraskuuta 2026) kantaverkon voimajohtojen jännitetasot ja pituudet sekä jakeluverkkojen jännitetasot; tehtävästä pätöteho $P = 200\,\text{MW}$, tehokerroin $\cos\varphi = 1$, pääjännitteet $U_{110} = 110\,\text{kV}$ ja $U_{400} = 400\,\text{kV}$ sekä yhden vaihejohtimen resistanssi $R = 4{,}0\,\Omega$
+**Kysytty:** a) kantaverkon jännitetasot ja johtojen pituudet, jakeluverkkojen jännitetasot sekä suurimman ja pienimmän jännitteen suhde; b) vaihejohtimen virta $I$ kummallakin pääjännitteellä; c) häviöteho $P_\text{h}$ megawatteina kummallakin pääjännitteellä; d) tulosten vertailu, selitys ja kahden yksinkertaistuksen arviointi
+**Periaate:** Kolmivaihejohdossa on kolme vaihejohdinta. Kun johto on tasaisesti kuormitettu, sen pätöteho on $P = \sqrt{3}\,UI\cos\varphi$. Tässä $U$ on pääjännite eli vaihejohtimien välinen jännite ja $I$ on yhden vaihejohtimen virta. Teho ja tehokerroin ovat kummallakin jännitteellä samat. Siksi virran suuruus riippuu vain jännitteestä. Jokaisessa kolmesta vaihejohtimesta virta $I$ kulkee resistanssin $R$ läpi. Silloin johtimessa muuttuu sisäenergiaksi teho $RI^2$. Kolmessa johtimessa häviöteho on yhteensä $P_\text{h} = 3RI^2$. Siirtojännite ei ole johtimen resistanssin yli oleva jännite. Siksi lauseketta $U^2 : R$ ei voi käyttää.
+**Kaava:** $P = \sqrt{3}\,UI\cos\varphi$, josta $I = \dfrac{P}{\sqrt{3}\,U\cos\varphi}$. Kun virta sijoitetaan yhtälöön $P_\text{h} = 3RI^2$, saadaan
+
+$$\begin{aligned} P_\text{h} &= 3R \cdot \dfrac{P^2}{3U^2\cos^2\varphi} \\ &= \dfrac{RP^2}{U^2\cos^2\varphi} \end{aligned}$$
+
+Kun $\cos\varphi = 1$, $I = \dfrac{P}{\sqrt{3}\,U}$ ja $P_\text{h} = \dfrac{RP^2}{U^2}$
+**Muunnokset:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_{110} = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$ ja $U_{400} = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$. Häviöteho muutetaan lopuksi megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$.
+**Sijoitus:** b) Virrat:
+
+$I_{110} = \dfrac{200 \cdot 10^{6}\,\text{W}}{\sqrt{3} \cdot 110 \cdot 10^{3}\,\text{V}} = 1049{,}7\,\text{A}$
+
+$I_{400} = \dfrac{200 \cdot 10^{6}\,\text{W}}{\sqrt{3} \cdot 400 \cdot 10^{3}\,\text{V}} = 288{,}7\,\text{A}$
+
+c) Häviötehot:
+
+$$\begin{aligned} P_{\text{h},110} &= \dfrac{4{,}0\,\Omega \cdot (200 \cdot 10^{6}\,\text{W})^2}{(110 \cdot 10^{3}\,\text{V})^2} \\ &= 1{,}322 \cdot 10^{7}\,\text{W} \\ &= 13{,}22\,\text{MW} \end{aligned}$$
+
+$$\begin{aligned} P_{\text{h},400} &= \dfrac{4{,}0\,\Omega \cdot (200 \cdot 10^{6}\,\text{W})^2}{(400 \cdot 10^{3}\,\text{V})^2} \\ &= 1{,}000 \cdot 10^{6}\,\text{W} \\ &= 1{,}000\,\text{MW} \end{aligned}$$
+**Kohta a):** Aineiston mukaan Suomen kantaverkossa on (tilanne vuonna 2025) $5400\,\text{km}$ $400\,\text{kV}$:n voimajohtoja, $1000\,\text{km}$ $220\,\text{kV}$:n voimajohtoja ja $7600\,\text{km}$ $110\,\text{kV}$:n voimajohtoja. Kantaverkon voimajohtojen jännitetasot ovat siis $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Aineisto mainitsee myös $320\,\text{km}$ HVDC-kaapeleita. Ne ovat suurjännitteisiä tasasähköyhteyksiä. Tämä tehtävä ei käsittele niitä. Aineiston mukaan jakeluverkot toimivat jännitetasoilla $0{,}4$–$110\,\text{kV}$. Ne liittyvät kantaverkkoon tyypillisesti $110\,\text{kV}$:n verkon kautta. Kantaverkon suurin jännite on $400\,\text{kV} : 0{,}4\,\text{kV} = 1000$-kertainen jakeluverkkojen pienimpään jännitteeseen verrattuna. Jos sivua on päivitetty, lukemasi pituudet voivat olla erilaiset. Aineisto ei kerro, miksi kantaverkon jännitteet ovat näin suuria. Syy saadaan fysiikasta kohdissa b)–d).
+**Kohta d):** Vertailu: Kun pääjännite on $110\,\text{kV}$, virta on noin $1050\,\text{A}$. Kun pääjännite on $400\,\text{kV}$, virta on noin $289\,\text{A}$. Virtojen suhde on jännitteiden suhde käänteisenä, $400 : 110 \approx 3{,}64$. Pääjännitteellä $110\,\text{kV}$ häviöteho on noin $13\,\text{MW}$ eli $6{,}6\,\%$ siirrettävästä tehosta. Pääjännitteellä $400\,\text{kV}$ häviöteho on noin $1{,}0\,\text{MW}$ eli $0{,}50\,\%$. Häviötehojen suhde on $13{,}2$. Se on jännitteiden suhteen neliö.
+
+Selitys: Siirrettävä teho on sama, $P = \sqrt{3}\,UI$. Kun jännite on suurempi, riittää samassa suhteessa pienempi virta. Häviö syntyy johtimien resistanssissa, koska virta kulkee sen läpi. Häviöteho $P_\text{h} = 3RI^2$ riippuu virran neliöstä. Siksi häviöteho on kääntäen verrannollinen jännitteen neliöön, $P_\text{h} = RP^2 : U^2$. Kääntäen verrannollinen tarkoittaa tässä, että häviöteho pienenee, kun jännite kasvaa. Energia, joka muuttuu johtimissa sisäenergiaksi, siirtyy lämpönä ympäristöön. Se ei tule käyttäjälle asti. Tämä selittää, miksi sähkö siirretään pitkät matkat kohdan a) satojen kilovolttien jännitteillä. Muuntajat laskevat jännitteen vasta lähempänä käyttäjää.
+
+Mallissa on yksinkertaistuksia eli asioita, jotka on oletettu helpommiksi kuin ne todella ovat. Vastaukseen riittää kaksi. Ensimmäinen: resistanssi oletettiin kummallakin jännitteellä samaksi. Todellisissa eri jännitetasojen johdoissa johtimet ja johtojen pituudet ovat erilaisia. Siksi resistanssikin on eri. Suhde $13{,}2$ pätee vain, jos resistanssi on sama. Häviöteho on verrannollinen resistanssiin. Esimerkiksi kaksi kertaa pidempi johto kaksinkertaistaa häviötehon. Toinen: tehokertoimeksi oletettiin $1$. Jos tehokerroin on pienempi, sama pätöteho vaatii suuremman virran. Silloin häviöt kasvavat kummallakin jännitteellä kertoimella $1 : \cos^2\varphi$. Esimerkiksi arvolla $\cos\varphi = 0{,}90$ kerroin on noin $1{,}23$. Häviöiden suhde ei muutu.
+
+Kolmas: teho oletettiin vakioksi ja kuormitus tasaiseksi. Todellinen siirrettävä teho vaihtelee. Häviöteho riippuu tehon neliöstä, joten se vaihtelee vielä enemmän. Neljäs: mallissa on vain johtimien resistanssin häviöt. Jännitteen nostamiseen ja laskemiseen tarvitaan muuntajia, ja niissä on omat häviönsä. Suurempi jännite vaatii myös johdolta paremman eristyksen. Siksi jännitettä ei kasvateta rajatta. Pienille tehoille ja lyhyille matkoille riittää pienempi jännite, kuten aineiston jakeluverkoissa. Johtopäätös pysyy silti samana: suuri siirtojännite pienentää virtaa ja häviöitä, jotka johtuvat resistanssista. Yksinkertaistukset vaikuttavat vain lukuarvoihin.
+**Vastaus:** $13\,\text{MW}$ on häviöteho pääjännitteellä $110\,\text{kV}$ (tarkemmin $13{,}2\,\text{MW}$). Pääjännitteellä $400\,\text{kV}$ häviöteho on $1{,}0\,\text{MW}$. Virrat ovat $1050\,\text{A}$ ja $289\,\text{A}$. Häviötehoissa on kaksi merkitsevää numeroa, koska resistanssi $4{,}0\,\Omega$ on annettu kahdella. Virroissa on kolme merkitsevää numeroa kuten tehossa $200\,\text{MW}$ ja jännitteissä.
+**Järkevyys:** Tarkista toista reittiä. Samat häviötehot saadaan kohdan b) virroista tehtävän yhtälöllä $P_\text{h} = 3RI^2$:
+
+$P_{\text{h},110} = 3 \cdot 4{,}0\,\Omega \cdot (1049{,}7\,\text{A})^2 = 13{,}22\,\text{MW}$
+
+$P_{\text{h},400} = 3 \cdot 4{,}0\,\Omega \cdot (288{,}7\,\text{A})^2 = 1{,}000\,\text{MW}$
+
+Jännitteiden suhde on $400 : 110 = 3{,}64$. Sen neliö $13{,}2$ on häviötehojen suhde, kuten verrannollisuus $P_\text{h} \sim 1 : U^2$ vaatii. Yhden johtimen jännitehäviö on pääjännitteellä $110\,\text{kV}$ vain $RI = 4{,}0\,\Omega \cdot 1049{,}7\,\text{A} \approx 4{,}2\,\text{kV}$. Se on pieni siirtojännitteeseen verrattuna. Siirtojännite ei siis ole resistanssin yli oleva jännite. Kumpikin häviöteho on selvästi pienempi kuin siirrettävä teho $200\,\text{MW}$.

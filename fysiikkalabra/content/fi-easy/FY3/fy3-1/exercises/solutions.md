@@ -26,7 +26,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee suoraan newtoneina.
 **Sijoitus:** $G = 30\,\text{kg} \cdot 1{,}62\,\text{m/s}^2 = 48{,}6\,\text{N}$
 **Vastaus:** $49\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $30\,\text{kg}$.
-**Järkevyys:** Maassa laitteen paino olisi $30\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 294{,}3\,\text{N}$. Kuun $g$ on noin kuudesosa Maan arvosta, ja $\dfrac{294{,}3\,\text{N}}{6} \approx 49\,\text{N}$, joten tulos täsmää.
+**Järkevyys:** Maassa laitteen paino olisi $$\begin{aligned} &30\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 294{,}3\,\text{N} \end{aligned}$$. Kuun $g$ on noin kuudesosa Maan arvosta, ja $\dfrac{294{,}3\,\text{N}}{6} \approx 49\,\text{N}$, joten tulos täsmää.
 
 ## fy3-1-L1-04
 **Annettu:** kuvaajan mittauspisteet ruudukon risteyksissä; jousen venymä kappaleella $x = 3{,}5\,\text{cm}$
@@ -47,7 +47,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee suoraan newtoneina.
 **Sijoitus:** $G = 2{,}5\,\text{kg} \cdot 24{,}8\,\text{m/s}^2 = 62{,}0\,\text{N}$
 **Vastaus:** $62\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $2{,}5\,\text{kg}$.
-**Järkevyys:** Maassa paino olisi $2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 24{,}5\,\text{N}$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 61\,\text{N}$, joten $62\,\text{N}$ täsmää suhteen $2{,}5$ pyöristyksen tarkkuudella.
+**Järkevyys:** Maassa paino olisi $$\begin{aligned} &2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 24{,}5\,\text{N} \end{aligned}$$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 61\,\text{N}$, joten $62\,\text{N}$ täsmää suhteen $2{,}5$ pyöristyksen tarkkuudella.
 
 ## fy3-1-L2-01
 **Annettu:** voimamittarin lukema eli paino $G = 49\,\text{N}$ Maassa; taulukosta $g = 9{,}81\,\text{m/s}^2$
@@ -75,7 +75,7 @@
 **Periaate:** Massa on sama molemmissa paikoissa. Paino on kummassakin $G = m g$, ja $g$ on sen paikan arvo. Erotus saadaan vähentämällä Kuun paino Maan painosta.
 **Kaava:** $\Delta G = m g_\text{Maa} - m g_\text{Kuu}$, joten $\Delta G = m (g_\text{Maa} - g_\text{Kuu})$
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten tulos tulee newtoneina eikä muunnoksia tarvita.
-**Sijoitus:** $\Delta G = 145\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}62\,\text{m/s}^2) = 145\,\text{kg} \cdot 8{,}19\,\text{m/s}^2 = 1187{,}55\,\text{N}$
+**Sijoitus:** $$\begin{aligned} \Delta G &= 145\,\text{kg} \\ &\cdot (9{,}81\,\text{m/s}^2 - 1{,}62\,\text{m/s}^2) \\ &= 145\,\text{kg} \cdot 8{,}19\,\text{m/s}^2 \\ &= 1187{,}55\,\text{N} \end{aligned}$$
 **Vastaus:** $1190\,\text{N}$, kolme merkitsevää numeroa kuten massassa $145\,\text{kg}$.
 **Järkevyys:** Maassa paino on noin $145 \cdot 9{,}81\,\text{N} \approx 1422\,\text{N}$ ja Kuussa noin $145 \cdot 1{,}62\,\text{N} \approx 235\,\text{N}$. Erotus on $1422\,\text{N} - 235\,\text{N} \approx 1187\,\text{N}$. Kuussa paino on $\dfrac{1{,}62}{9{,}81} \approx \dfrac{1}{6}$ Maan painosta. Paino siis pienenee noin $\dfrac{5}{6}$ eli $83\,\%$.
 
@@ -107,7 +107,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten voima tulee newtoneina ja massa kilogrammoina ilman muunnoksia.
 **Sijoitus:** $m_\text{Kuu} = \dfrac{22{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}62\,\text{m/s}^2} = \dfrac{215{,}82\,\text{N}}{1{,}62\,\text{m/s}^2} = 133{,}2\,\text{kg}$
 **Vastaus:** $133\,\text{kg}$, kolme merkitsevää numeroa kuten massassa $22{,}0\,\text{kg}$.
-**Järkevyys:** Kuun $g$ on noin kuudesosa Maan arvosta, joten massan pitää olla noin $6 \cdot 22{,}0\,\text{kg} = 132\,\text{kg}$. Palautuslasku: $133{,}2\,\text{kg} \cdot 1{,}62\,\text{m/s}^2 = 215{,}8\,\text{N}$, sama kuin $22{,}0\,\text{kg}$:n paino Maassa.
+**Järkevyys:** Kuun $g$ on noin kuudesosa Maan arvosta, joten massan pitää olla noin $6 \cdot 22{,}0\,\text{kg} = 132\,\text{kg}$. Palautuslasku: $$\begin{aligned} &133{,}2\,\text{kg} \cdot 1{,}62\,\text{m/s}^2 \\ &= 215{,}8\,\text{N} \end{aligned}$$, sama kuin $22{,}0\,\text{kg}$:n paino Maassa.
 
 ## fy3-1-L3-03
 **Annettu:** mittarin lukema $L = 26\,\text{kg}$ Marsissa; taulukosta $g_\text{Mars} = 3{,}71\,\text{m/s}^2$; asteikko näyttää voiman jaettuna Maan arvolla $g_\text{Maa} = 9{,}81\,\text{m/s}^2$
@@ -137,7 +137,7 @@
 **Muunnokset:** $1\,\text{t} = 1000\,\text{kg}$, joten $m = 0{,}18\,\text{t} = 180\,\text{kg}$. Nyt massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$. Tulos tulee siis newtoneina.
 **Sijoitus:** $G = 180\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 667{,}8\,\text{N}$
 **Vastaus:** $670\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}18\,\text{t}$.
-**Järkevyys:** Maassa auton paino olisi $180\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 1766\,\text{N}$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon verrattuna. Lasketaan: $0{,}38 \cdot 1766\,\text{N} \approx 671\,\text{N}$. Siksi $670\,\text{N}$ täsmää.
+**Järkevyys:** Maassa auton paino olisi $$\begin{aligned} &180\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 1766\,\text{N} \end{aligned}$$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon verrattuna. Lasketaan: $0{,}38 \cdot 1766\,\text{N} \approx 671\,\text{N}$. Siksi $670\,\text{N}$ täsmää.
 
 ## fy3-1-L2-05
 **Annettu:** mittauspisteet $(m;\ G)$: $(0{,}10\,\text{kg};\ 0{,}99\,\text{N})$, $(0{,}20;\ 1{,}95)$, $(0{,}30;\ 2{,}96)$, $(0{,}40;\ 3{,}92)$, $(0{,}50\,\text{kg};\ 4{,}89\,\text{N})$
@@ -158,7 +158,7 @@
 **Muunnokset:** Muunnoksia ei tarvita. Newtonit supistuvat suhteessa $\dfrac{G_\text{Mars}}{G_\text{Maa}}$, ja $g$ jää yksikköön $\text{m/s}^2$.
 **Sijoitus:** $m = \dfrac{7{,}4\,\text{N}}{9{,}81\,\text{m/s}^2} = 0{,}754\,\text{kg}$, joten $g_\text{Mars} = \dfrac{2{,}8\,\text{N}}{0{,}754\,\text{kg}} = 3{,}71\,\text{m/s}^2$
 **Vastaus:** $g_\text{Mars} = 3{,}7\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten painoissa.
-**Järkevyys:** Näytteen paino Marsissa on $\dfrac{2{,}8}{7{,}4} \approx 0{,}38$-kertainen Maahan verrattuna. Lasketaan: $0{,}38 \cdot 9{,}81\,\text{m/s}^2 \approx 3{,}7\,\text{m/s}^2$. Tulos on sama kuin oppitunnin taulukon Marsin arvo $3{,}71\,\text{m/s}^2$.
+**Järkevyys:** Näytteen paino Marsissa on $\dfrac{2{,}8}{7{,}4} \approx 0{,}38$-kertainen Maahan verrattuna. Lasketaan: $$\begin{aligned} &0{,}38 \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 3{,}7\,\text{m/s}^2 \end{aligned}$$. Tulos on sama kuin oppitunnin taulukon Marsin arvo $3{,}71\,\text{m/s}^2$.
 
 ## fy3-1-L2-07
 **Annettu:** voimamittarin lukema $4{,}9\,\text{N}$ Maassa; taulukosta $g = 9{,}81\,\text{m/s}^2$
@@ -169,18 +169,18 @@
 **Muunnokset:** Muunnoksia ei tarvita: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, joten $\dfrac{\text{N}}{\text{m/s}^2}$ on kilogramma.
 **Sijoitus:** $m = \dfrac{4{,}9\,\text{N}}{9{,}81\,\text{m/s}^2} = 0{,}4995\,\text{kg}$
 **Vastaus:** $0{,}50\,\text{kg}$, kaksi merkitsevää numeroa kuten painossa $4{,}9\,\text{N}$.
-**Järkevyys:** Yhden kilogramman massan paino on noin $10\,\text{N}$. Siksi $4{,}9\,\text{N}$ vastaa noin $0{,}5\,\text{kg}$:n massaa. Palautuslasku: $0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}9\,\text{N}$. Oppilaan arvo $4{,}9\,\text{kg}$ painaisi Maassa noin $48\,\text{N}$. Se ei vastaa lukemaa.
+**Järkevyys:** Yhden kilogramman massan paino on noin $10\,\text{N}$. Siksi $4{,}9\,\text{N}$ vastaa noin $0{,}5\,\text{kg}$:n massaa. Palautuslasku: $$\begin{aligned} &0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 4{,}9\,\text{N} \end{aligned}$$. Oppilaan arvo $4{,}9\,\text{kg}$ painaisi Maassa noin $48\,\text{N}$. Se ei vastaa lukemaa.
 
 ## fy3-1-L3-04
 **Annettu:** Maassa $(m;\ x)$: $(0{,}10\,\text{kg};\ 1{,}1\,\text{cm})$, $(0{,}20;\ 2{,}1)$, $(0{,}30;\ 3{,}2)$, $(0{,}40;\ 4{,}1)$, $(0{,}50;\ 5{,}2)$, $(0{,}60\,\text{kg};\ 6{,}1\,\text{cm})$; tuntemattomalla taivaankappaleella $m_\text{X} = 0{,}50\,\text{kg}$ ja $x_\text{X} = 1{,}9\,\text{cm}$; $g_\text{Maa} = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) taivaankappaleen $g_\text{X}$; b) mikä taivaankappale on kyseessä
 **Periaate:** Jousen venymä on suoraan verrannollinen voimaan. Paino $G = m g$ on voima. Siksi $x$ on suoraan verrannollinen tuloon $m g$. Saman jousen ja saman massan venymät ovat samassa suhteessa kuin $g$-arvot. Maan mittauksista saadaan jousen kalibrointi. Sen avulla saadaan tuntemattoman paikan $g$.
-**Taulukon lukeminen:** Pisteet $(m, x)$ ovat suoralla, joka kulkee origon kautta. Siksi suhde $x/m$ on kaikissa pisteissä lähes sama ($1{,}1/0{,}10 = 11$ ja $6{,}1/0{,}60 \approx 10{,}2\,\text{cm/kg}$). Mittaushajonta tasoittuu, kun suhde lasketaan kaikista pisteistä. Venymien summa on $1{,}1 + 2{,}1 + 3{,}2 + 4{,}1 + 5{,}2 + 6{,}1 = 21{,}8\,\text{cm}$. Massojen summa on $0{,}10 + 0{,}20 + 0{,}30 + 0{,}40 + 0{,}50 + 0{,}60 = 2{,}10\,\text{kg}$.
+**Taulukon lukeminen:** Pisteet $(m, x)$ ovat suoralla, joka kulkee origon kautta. Siksi suhde $x/m$ on kaikissa pisteissä lähes sama ($1{,}1/0{,}10 = 11$ ja $6{,}1/0{,}60 \approx 10{,}2\,\text{cm/kg}$). Mittaushajonta tasoittuu, kun suhde lasketaan kaikista pisteistä. Venymien summa on $$\begin{aligned} &1{,}1 + 2{,}1 + 3{,}2 + 4{,}1 + 5{,}2 + 6{,}1 \\ &= 21{,}8\,\text{cm} \end{aligned}$$. Massojen summa on $$\begin{aligned} &0{,}10 + 0{,}20 + 0{,}30 \\ &+ 0{,}40 + 0{,}50 + 0{,}60 \\ &= 2{,}10\,\text{kg} \end{aligned}$$.
 **Kaava:** Maassa $\dfrac{x}{m} = c\, g_\text{Maa}$ ja tuntemattomalla taivaankappaleella $\dfrac{x_\text{X}}{m_\text{X}} = c\, g_\text{X}$, missä $c$ on jousen vakio. Jakamalla saadaan $g_\text{X} = g_\text{Maa} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Maa}}$
 **Muunnokset:** Muunnoksia ei tarvita. Senttimetrit ja kilogramma ovat samat kummassakin suhteessa, ja ne supistuvat. Maan suhde on $\dfrac{21{,}8\,\text{cm}}{2{,}10\,\text{kg}} = 10{,}38\,\text{cm/kg}$. Tuntemattoman paikan suhde on $\dfrac{1{,}9\,\text{cm}}{0{,}50\,\text{kg}} = 3{,}8\,\text{cm/kg}$.
 **Sijoitus:** $g_\text{X} = 9{,}81\,\text{m/s}^2 \cdot \dfrac{3{,}8\,\text{cm/kg}}{10{,}38\,\text{cm/kg}} = 9{,}81\,\text{m/s}^2 \cdot 0{,}366 = 3{,}59\,\text{m/s}^2$
 **Vastaus:** a) $g_\text{X} = 3{,}6\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten venymässä $1{,}9\,\text{cm}$. b) Taivaankappale on Mars. Kuun arvo $1{,}62\,\text{m/s}^2$ on alle puolet tuloksesta. Maan arvo $9{,}81\,\text{m/s}^2$ ja Jupiterin arvo $24{,}8\,\text{m/s}^2$ ovat moninkertaisia. Marsin arvo $3{,}71\,\text{m/s}^2$ poikkeaa tuloksesta vain noin $3\,\%$. Se on mittaushajonnan suuruusluokkaa.
-**Järkevyys:** Venymä $1{,}9\,\text{cm}$ on $0{,}50\,\text{kg}$:n punnuksella paljon pienempi kuin Maassa. Maassa sama punnus venyttäisi jousta noin $0{,}50\,\text{kg} \cdot 10{,}38\,\text{cm/kg} = 5{,}2\,\text{cm}$. Venymä on $\dfrac{1{,}9}{5{,}2} \approx 0{,}37$-kertainen. Myös $g$ on yhtä paljon pienempi: $0{,}37 \cdot 9{,}81 \approx 3{,}6\,\text{m/s}^2$.
+**Järkevyys:** Venymä $1{,}9\,\text{cm}$ on $0{,}50\,\text{kg}$:n punnuksella paljon pienempi kuin Maassa. Maassa sama punnus venyttäisi jousta noin $$\begin{aligned} &0{,}50\,\text{kg} \cdot 10{,}38\,\text{cm/kg} \\ &= 5{,}2\,\text{cm} \end{aligned}$$. Venymä on $\dfrac{1{,}9}{5{,}2} \approx 0{,}37$-kertainen. Myös $g$ on yhtä paljon pienempi: $0{,}37 \cdot 9{,}81 \approx 3{,}6\,\text{m/s}^2$.
 
 ## fy3-1-L3-05
 **Annettu:** osien massat $520\,\text{kg}$, $180\,\text{kg}$, $95\,\text{kg}$ ja $140\,\text{kg}$; jalkojen kestämä voima $F_\text{max} = 6{,}00\,\text{kN}$; $g_\text{Maa} = 9{,}81\,\text{m/s}^2$, $g_\text{Mars} = 3{,}71\,\text{m/s}^2$
@@ -192,7 +192,7 @@
 
 $$\begin{aligned} m_\text{yht} &= 520\,\text{kg} + 180\,\text{kg} \\ &\quad + 95\,\text{kg} + 140\,\text{kg} \\ &= 935\,\text{kg} \\ G_\text{Maa} &= 935\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 9172\,\text{N} \\ G_\text{Mars} &= 935\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 3469\,\text{N} \\ m_\text{max} &= \dfrac{6000\,\text{N}}{3{,}71\,\text{m/s}^2} = 1617\,\text{kg} \\ m_\text{lisä} &= 1617\,\text{kg} - 935\,\text{kg} = 682\,\text{kg} \end{aligned}$$
 **Vastaus:** a) Yhteismassa on $935\,\text{kg}$. Paino Maassa on $9{,}17\,\text{kN}$ ja Marsissa $3{,}47\,\text{kN}$. Maassa paino ylittää rajan $6{,}00\,\text{kN}$. Yksikkö ei siis voisi seistä jaloillaan Maassa, mutta Marsissa se kestää. b) Lisäkuorma voi olla enintään $682\,\text{kg}$. Marsiin voi viedä suuremman kokonaismassan ($1617\,\text{kg}$) kuin Maahan ($6000\,\text{N} : 9{,}81\,\text{m/s}^2 \approx 612\,\text{kg}$). Syy on se, että sama massa painaa Marsissa vain noin $0{,}38$-kertaisesti. Jalkoihin kohdistuu silloin pienempi voima.
-**Järkevyys:** Kun kokonaismassa on $1617\,\text{kg}$, paino Marsissa on $1617\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 6000\,\text{N}$. Se on täsmälleen jalkojen raja. Marsin sallittu kokonaismassa on $\dfrac{9{,}81}{3{,}71} \approx 2{,}64$-kertainen Maan sallittuun massaan verrattuna. Lasketaan: $2{,}64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
+**Järkevyys:** Kun kokonaismassa on $1617\,\text{kg}$, paino Marsissa on $$\begin{aligned} &1617\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \\ &= 6000\,\text{N} \end{aligned}$$. Se on täsmälleen jalkojen raja. Marsin sallittu kokonaismassa on $\dfrac{9{,}81}{3{,}71} \approx 2{,}64$-kertainen Maan sallittuun massaan verrattuna. Lasketaan: $2{,}64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
 
 ## fy3-1-L1-09
 **Kysytty:** mikä neljästä voimakuviosta esittää oikein voimamittarissa levossa riippuvaan kappaleeseen vaikuttavat voimat, kun kappaleen massa on $0{,}50\,\text{kg}$ ja mittari näyttää $4{,}9\,\text{N}$.
@@ -215,7 +215,7 @@ Koukun voima on mittarin lukema, $F = 4{,}9\,\text{N}$. Voimat ovat yhtä suuret
 **Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$. Tulos tulee siksi suoraan newtoneina.
 **Sijoitus:** $G = 85{,}0\,\text{kg} \cdot 3{,}72\,\text{m/s}^2 = 316{,}2\,\text{N}$
 **Vastaus:** $316\,\text{N}$. Vastauksessa on kolme merkitsevää numeroa, kuten massassa ja taulukon arvossa. Arvo $g_\text{Mars} = 3{,}72\,\text{m/s}^2$ on MAFY-taulukosta *Aurinkokunta*. Eri taulukoiden arvot poikkeavat hieman toisistaan. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa paino olisi $85{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 834\,\text{N}$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon nähden. Lasku $0{,}38 \cdot 834\,\text{N} \approx 317\,\text{N}$ täsmää tuloksen kanssa.
+**Järkevyys:** Maassa paino olisi $$\begin{aligned} &85{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 834\,\text{N} \end{aligned}$$. Marsin $g$ on noin $0{,}38$-kertainen Maan arvoon nähden. Lasku $0{,}38 \cdot 834\,\text{N} \approx 317\,\text{N}$ täsmää tuloksen kanssa.
 
 ## fy3-1-L2-08
 **Annettu:** kuvaajan mittauspisteet ruudukon risteyksissä; kappaleen massa $m = 12\,\text{kg}$

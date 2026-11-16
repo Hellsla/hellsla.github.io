@@ -98,7 +98,7 @@ $$, joten $e\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 470 \cdot 10^{-9}\,
 \begin{aligned}
 1240\,\text{V}\,\text{nm} : 470\,\text{nm} &\approx 2{,}6\,\text{V}
 \end{aligned}
-$$. Jännite on suurempi kuin punaisen LEDin noin $1{,}9\,\text{V}$, koska sinisen valon fotoni tarvitsee enemmän energiaa. Mitattu kynnysjännite on yleensä noin $0{,}1\,\text{V}$ tätä arviota pienempi.
+$$. Jännite on suurempi kuin punaisen LEDin noin $1{,}9\,\text{V}$, koska sinisen valon fotoni tarvitsee enemmän energiaa. Mitattu kynnysjännite on yleensä hieman tätä arviota pienempi. Tämän luvun aineistoissa ero on noin $0{,}1\,\text{V}$.
 
 ## fy8-6-L2-02
 **Annettu:** huippuaallonpituus $\lambda = 605\,\text{nm}$, kynnysjännite $U_\text{k} = 1{,}95\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -140,13 +140,13 @@ $$
 
 ## fy8-6-L2-04
 **Annettu:** sinisen fotonin aallonpituus $\lambda_1 = 450\,\text{nm}$, keltaisen fotonin aallonpituus $\lambda_2 = 560\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Kysytty:** lämmöksi jäävä energia $\Delta E$ yhtä fotonia kohti elektronivoltteina
-**Periaate:** Fluoresenssissa (luku *Spektrit paljastavat atomin energiatasot*) aine absorboi fotonin ja säteilee pienempienergisen fotonin. Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen lämmöksi.
+**Kysytty:** sisäenergiaksi jäävä energia $\Delta E$ yhtä fotonia kohti elektronivoltteina
+**Periaate:** Fluoresenssissa (luku *Spektrit paljastavat atomin energiatasot*) aine absorboi fotonin ja säteilee pienempienergisen fotonin. Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen sisäenergiaksi.
 **Kaava:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
 **Muunnokset:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; energiat jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $\dfrac{hc}{\lambda_1} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4{,}4144 \cdot 10^{-19}\,\text{J} = 2{,}7556\,\text{eV}$ ja $\dfrac{hc}{\lambda_2} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3{,}5473 \cdot 10^{-19}\,\text{J} = 2{,}2143\,\text{eV}$, joten $\Delta E = 2{,}7556\,\text{eV} - 2{,}2143\,\text{eV} = 0{,}5413\,\text{eV}$
 **Vastaus:** $0{,}541\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa.
-**Järkevyys:** Pyöreillä luvuilla $1240 : 450 - 1240 : 560 \approx 2{,}76 - 2{,}21 = 0{,}55$, eli noin $0{,}5\,\text{eV}$. Säteilty fotoni on pidempiaaltoinen kuin absorboitu, joten erotuksen on oltava positiivinen, kuten fluoresenssissa aina. Noin viidennes sinisen fotonin energiasta muuttuu lämmöksi.
+**Järkevyys:** Pyöreillä luvuilla $1240 : 450 - 1240 : 560 \approx 2{,}76 - 2{,}21 = 0{,}55$, eli noin $0{,}5\,\text{eV}$. Säteilty fotoni on pidempiaaltoinen kuin absorboitu, joten erotuksen on oltava positiivinen, kuten fluoresenssissa aina. Noin viidennes sinisen fotonin energiasta muuttuu sisäenergiaksi.
 
 ## fy8-6-L3-01
 **Annettu:** neljän LEDin huippuaallonpituudet ja kynnysjännitteet: $625\,\text{nm}$ ja $1{,}86\,\text{V}$, $590\,\text{nm}$ ja $1{,}97\,\text{V}$, $520\,\text{nm}$ ja $2{,}27\,\text{V}$, $465\,\text{nm}$ ja $2{,}55\,\text{V}$; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -283,7 +283,7 @@ eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
 &= 2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan poikkeama on $\dfrac{6{,}868 - 6{,}626}{6{,}626} \cdot 100\,\% = 3{,}65\,\%$.
-**Vastaus:** Sallan Planckin vakio poikkeaa hyväksytystä arvosta $3{,}65\,\%$ ylöspäin, kolme merkitsevää numeroa kuten jännitteissä. Muut tulokset ovat Ainolla $5{,}86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11{,}6\,\%$) ja Eerolla $6{,}33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4{,}5\,\%$). Kohta b): Ainon ja Sallan lukutavat ovat virheellisiä, koska tulos riippuu valitusta virrasta. Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta. Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on yleensä noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
+**Vastaus:** Sallan Planckin vakio poikkeaa hyväksytystä arvosta $3{,}65\,\%$ ylöspäin, kolme merkitsevää numeroa kuten jännitteissä. Muut tulokset ovat Ainolla $5{,}86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11{,}6\,\%$) ja Eerolla $6{,}33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4{,}5\,\%$). Kohta b): Ainon ja Sallan lukutavat ovat virheellisiä, koska tulos riippuu valitusta virrasta. Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta. Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
 **Järkevyys:** Eeron $h$ poikkeaa hyväksytystä arvosta silti $-4{,}5\,\%$, ja ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$ ($\tfrac{hc}{e\lambda} = 1{,}97\,\text{V}$ ja Eeron $1{,}88\,\text{V}$), joten sitä ei pidä pitää virheellisenä lukutapana. Suunta täsmää: $5{,}86 < 6{,}33 < 6{,}87$ vastaa jännitteiden järjestystä $1{,}74\,\text{V} < 1{,}88\,\text{V} < 2{,}04\,\text{V}$.
 
 ## fy8-6-L2-07

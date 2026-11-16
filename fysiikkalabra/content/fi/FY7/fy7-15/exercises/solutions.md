@@ -94,9 +94,9 @@
 **Periaate:** Ensimmäinen polarisaattori puolittaa polarisoimattoman valon. Sen jälkeen jokaiseen polarisaattoriin tulee polarisoitunutta valoa, joten kuhunkin sovelletaan Malusin lakia edellisen polarisaattorin läpäisysuunnasta mitatulla kulmalla. Keskimmäinen on $30{,}0^\circ$:n kulmassa ensimmäiseen, joten viimeiseen se on $90{,}0^\circ - 30{,}0^\circ = 60{,}0^\circ$:n kulmassa.
 **Kaava:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta_1$ ja $I_3 = I_2 \cos^2\theta_2$, josta $I_3 = \tfrac{1}{2} I_0 \cos^2\theta_1 \cos^2\theta_2$, missä $\theta_1 = 30{,}0^\circ$ ja $\theta_2 = 60{,}0^\circ$
 **Muunnokset:** Ei tarvita: intensiteetti pysyy yksikössä $\text{W/m}^2$, ja kulmat ovat asteina.
-**Sijoitus:** $I_3 = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 30{,}0^\circ \cdot \cos^2 60{,}0^\circ = 400\,\text{W/m}^2 \cdot 0{,}750 \cdot 0{,}250 = 75{,}0\,\text{W/m}^2$
+**Sijoitus:** $$\begin{aligned} I_3 &= \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 30{,}0^\circ \\ &\cdot \cos^2 60{,}0^\circ \\ &= 400\,\text{W/m}^2 \cdot 0{,}750 \cdot 0{,}250 \\ &= 75{,}0\,\text{W/m}^2 \end{aligned}$$
 **Vastaus:** $75{,}0\,\text{W/m}^2$, kolme merkitsevää numeroa kuten kulmat $30{,}0^\circ$ ja $60{,}0^\circ$.
-**Järkevyys:** Ilman keskimmäistä polarisaattoria läpi ei tulisi mitään. Keskimmäisen kalvon jälkeen valo on polarisoitunut $30^\circ$:n kulmaan, joten sillä on komponentti viimeisen kalvon läpäisysuunnassa. Suurin mahdollinen arvo kulmalla $45^\circ$ olisi $400\,\text{W/m}^2 \cdot 0{,}5 \cdot 0{,}5 = 100\,\text{W/m}^2$, ja tulos on sitä pienempi, kuten pitää.
+**Järkevyys:** Ilman keskimmäistä polarisaattoria läpi ei tulisi mitään. Keskimmäisen kalvon jälkeen valo on polarisoitunut $30^\circ$:n kulmaan, joten sillä on komponentti viimeisen kalvon läpäisysuunnassa. Suurin mahdollinen arvo kulmalla $45^\circ$ olisi $$\begin{aligned} &400\,\text{W/m}^2 \cdot 0{,}5 \cdot 0{,}5 \\ &= 100\,\text{W/m}^2 \end{aligned}$$, ja tulos on sitä pienempi, kuten pitää.
 
 ## fy7-15-L3-02
 **Annettu:** veden taitekerroin $n_1 = 1{,}33$ (valo tulee vedestä ja heijastuu veteen), ilman taitekerroin $n_2 = 1{,}00$
@@ -114,7 +114,7 @@
 **Periaate:** Lukema on näytön polarisoituneen valon osuuden ja taustavalon summa. Kulmalla $90^\circ$ näytön valoa ei pääse läpi, joten lukema $16\,\text{lx}$ on pelkkää taustavaloa. Näytön valon osuus on suurimmillaan $E_\text{max} - E_\text{t}$, ja Malusin lain mukaan se pienenee kertoimella $\cos^2\theta$. Lukema on verrannollinen intensiteettiin, joten Malusin laki koskee myös lukemaa.
 **Kaava:** $E = (E_\text{max} - E_\text{t}) \cos^2\theta + E_\text{t}$
 **Muunnokset:** Ei tarvita: lukemat ovat luksiyksikössä, ja kulma on asteina.
-**Sijoitus:** $E = (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60{,}0^\circ + 16\,\text{lx} = 404\,\text{lx} \cdot 0{,}250 + 16\,\text{lx} = 117\,\text{lx}$
+**Sijoitus:** $$\begin{aligned} E &= (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60{,}0^\circ \\ &+ 16\,\text{lx} \\ &= 404\,\text{lx} \cdot 0{,}250 + 16\,\text{lx} \\ &= 117\,\text{lx} \end{aligned}$$
 **Vastaus:** $117\,\text{lx}$, kolme merkitsevää numeroa kuten lukema $420\,\text{lx}$.
 **Järkevyys:** Ilman taustavaloa tulos olisi $420\,\text{lx} \cdot 0{,}250 = 105\,\text{lx}$. Taustavalon osuus ei muutu kalvoa kierrettäessä, joten lukeman pitää olla vähän suurempi, kuten tuloksessa. Tulos on suurimman lukeman ja taustavalon välissä, kuten pitää.
 
@@ -150,11 +150,11 @@
 
 $I_\text{A} = 600\,\text{W/m}^2 \cdot \cos^2 60{,}0^\circ$, eli $I_\text{A} = 150\,\text{W/m}^2$
 
-$I_\text{B} = \tfrac{1}{2} \cdot 400\,\text{W/m}^2 = 200\,\text{W/m}^2$
+$$\begin{aligned} I_\text{B} &= \tfrac{1}{2} \cdot 400\,\text{W/m}^2 \\ &= 200\,\text{W/m}^2 \end{aligned}$$
 
 $I_\text{C} = 320\,\text{W/m}^2 \cdot \cos^2 30{,}0^\circ$, eli $I_\text{C} = 240\,\text{W/m}^2$
 
-$I_\text{D} = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60{,}0^\circ$, eli $I_\text{D} = 100\,\text{W/m}^2$
+$$\begin{aligned} &I_\text{D} \\ &= \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60{,}0^\circ \end{aligned}$$, eli $I_\text{D} = 100\,\text{W/m}^2$
 
 Tilanteessa E ensimmäisen polarisaattorin jälkeen valo on polarisoitunut sen läpäisysuuntaan, ja toinen polarisaattori on $45{,}0^\circ$:n kulmassa siihen nähden:
 
@@ -207,7 +207,7 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 **Kuvaajan lukeminen:** Taulukon suurin lukema $114\,\text{W/m}^2$ on kulmalla $45^\circ$. Lukemat kulmilla $15^\circ$ ja $75^\circ$ ovat $32\,\text{W/m}^2$ ja $28\,\text{W/m}^2$, siis likimain yhtä suuret, ja lukemat kulmilla $0^\circ$ ja $90^\circ$ ovat lähes nollia.
 **Kaava:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta$ ja $I_3 = I_2 \cos^2(90^\circ - \theta) = I_2 \sin^2\theta$, josta $I_3 = \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta = \tfrac{1}{8} I_0 \sin^2 2\theta$. Suurin arvo saadaan, kun $\sin 2\theta = 1$ eli $\theta = 45^\circ$, ja silloin $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
 **Muunnokset:** Ei tarvita: kulmat ovat asteina ja osuus muunnetaan prosenteiksi kertomalla luvulla $100$.
-**Sijoitus:** $I_3 = \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ = 480\,\text{W/m}^2 \cdot 0{,}500 \cdot 0{,}500 = 120\,\text{W/m}^2$ ja $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0{,}125 = 12{,}5\,\%$
+**Sijoitus:** $$\begin{aligned} &I_3 \\ &= \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ \\ &= 480\,\text{W/m}^2 \cdot 0{,}500 \cdot 0{,}500 \\ &= 120\,\text{W/m}^2 \end{aligned}$$ ja $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0{,}125 = 12{,}5\,\%$
 **Vastaus:** $12{,}5\,\%$ eli $120\,\text{W/m}^2$. Tulos on tarkka, koska ihanteellisesta mallista seuraa täsmälleen $\tfrac{1}{8} = 0{,}125$. Intensiteetti on suurin kulmalla $45^\circ$. Kulmilla $15^\circ$ ja $75^\circ$ lauseke antaa saman arvon $30\,\text{W/m}^2$, koska $\sin 2\theta$ on sama kulmilla $\theta$ ja $90^\circ - \theta$.
 **Järkevyys:** Taulukon suurin lukema $114\,\text{W/m}^2$ on lähellä laskettua $120\,\text{W/m}^2$, ja kulmalla $15^\circ$ laskettu $30\,\text{W/m}^2$ vastaa taulukon lukemaa $32\,\text{W/m}^2$. Lukemat poikkeavat lasketuista muutaman $\text{W/m}^2$ molempiin suuntiin (kulmalla $60^\circ$ lukema $93\,\text{W/m}^2$ on yli lasketun $90\,\text{W/m}^2$), mikä on mittausepävarmuutta. Osuus $12{,}5\,\%$ on alle ensimmäisen polarisaattorin päästämän $50\,\%$, kuten pitää.
 **Mallivastaus (kohta c):** Ensimmäisen jälkeen valo on polarisoitunutta kohtisuoraan viimeisen läpäisysuuntaan nähden, joten viimeinen sulkisi sen. Keskimmäinen päästää läpi vain oman läpäisysuuntansa suuntaisen komponentin, joten sen jälkeen valo on polarisoitunutta sen suuntaan. Silloin valolla on komponentti myös viimeisen läpäisysuunnassa, ja osa pääsee läpi. Polarisaattori ei vain vaimenna valoa: läpi tulleen valon polarisaatiosuunta on aina polarisaattorin läpäisysuunta, ja osa valosta absorboituu.
@@ -232,7 +232,7 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 **Muunnokset:** Ei tarvita: intensiteetti pysyy yksikössä $\text{W/m}^2$, ja osuus on yksikötön luku.
 **Sijoitus:** $I = 400\,\text{W/m}^2 \cdot 0{,}67 = 268\,\text{W/m}^2$
 **Vastaus:** $270\,\text{W/m}^2$ (kuvaajalta luettuna $268\,\text{W/m}^2$), kaksi tai kolme merkitsevää numeroa lukematarkkuuden mukaan. Hyvä vastaus on $260\text{–}280\,\text{W/m}^2$.
-**Järkevyys:** Kulmalla $30^\circ$ osuus on $0{,}75$ ja kulmalla $45^\circ$ se on $0{,}50$, joten tulos $268\,\text{W/m}^2$ on välillä $300\,\text{W/m}^2$ ja $200\,\text{W/m}^2$. Tarkistus laskemalla: $400\,\text{W/m}^2 \cdot \cos^2 35^\circ = 268{,}4\,\text{W/m}^2$.
+**Järkevyys:** Kulmalla $30^\circ$ osuus on $0{,}75$ ja kulmalla $45^\circ$ se on $0{,}50$, joten tulos $268\,\text{W/m}^2$ on välillä $300\,\text{W/m}^2$ ja $200\,\text{W/m}^2$. Tarkistus laskemalla: $$\begin{aligned} &400\,\text{W/m}^2 \cdot \cos^2 35^\circ \\ &= 268{,}4\,\text{W/m}^2 \end{aligned}$$.
 
 ## fy7-15-L1-11
 **Annettu:** ilman taitekerroin $n_1 = 1{,}00$; kruunulasin taitekerroin haetaan MAFY-taulukon taulukosta *Taitekertoimia*: $n_2 = 1{,}520$
@@ -254,3 +254,8 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 **Sijoitus:** $\cos^2\theta = \dfrac{200\,\text{lx} - 15\,\text{lx}}{360\,\text{lx}} = 0{,}514$ ja $\theta = \cos^{-1}\sqrt{0{,}514} = \cos^{-1} 0{,}717 = 44{,}2^\circ$
 **Vastaus:** $44^\circ$, kaksi merkitsevää numeroa kuvaajan lukutarkkuuden mukaan. Hyvä vastaus on $43\text{–}46^\circ$.
 **Järkevyys:** Lukema $200\,\text{lx}$ on lähellä väliä, jonka keskikohta $195\,\text{lx}$ vastaa kulmaa $45^\circ$ ($\cos^2 45^\circ = 0{,}50$), joten kulman pitää olla hieman alle $45^\circ$. Tarkistus: $360\,\text{lx} \cdot \cos^2 44{,}2^\circ + 15\,\text{lx} = 360\,\text{lx} \cdot 0{,}514 + 15\,\text{lx} = 200\,\text{lx}$.
+
+## fy7-15-L2-09
+**Kysytty:** miksi polarisaatiosuotimen asento vaikuttaa ikkunalasin heijastukseen mutta ei juuri ikkunan takana oleviin tavaroihin, ja miksi heijastus kirkastuu neljänneskierroksen jälkeen
+**Periaate:** Polarisaattori päästää läpi vain läpäisysuuntansa suuntaisen värähtelyn ja absorboi sitä vastaan kohtisuoran. Eristeen, kuten lasin, pinnasta heijastunut valo on osittain polarisoitunutta pinnan suuntaisesti, koska pinnan suuntainen värähtely heijastuu voimakkaammin kuin muut. Tavaroista ikkunan läpi tuleva valo on polarisoimatonta: siinä on värähtelyä kaikissa suunnissa yhtä paljon.
+**Mallivastaus:** Heijastuksessa on enemmän lasin pinnan suuntaista värähtelyä kuin muita suuntia. Kun suotimen läpäisysuunta on kohtisuorassa tätä suuntaa vastaan, suodin absorboi suurimman osan heijastuneesta valosta, ja heijastus himmenee. Tavaroista tuleva valo on polarisoimatonta, joten suodin päästää siitä aina noin puolet läpi, asennosta riippumatta; siksi tavaroiden kirkkaus ei juuri muutu. Neljänneskierroksen ($90^\circ$) jälkeen läpäisysuunta on heijastuksen värähtelysuunnan suuntainen, ja heijastus pääsee taas läpi. Heijastus ei yleensä katoa kokonaan, koska heijastunut valo on vain osittain polarisoitunutta.

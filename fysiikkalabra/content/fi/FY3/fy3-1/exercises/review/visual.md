@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fbc2796c4aef5550
+CONTENT-HASH: e2a326955293c403
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy3-1-L1-03 Järkevyys — one sentence is cut into several pieces by display boxes ("…olisi [box] Kuun g … ja [box] joten tulos täsmää"); readable, the period sits in the box — if the sentence is touched again, keep the formula inside the sentence.
 
 ## Checked
-- Round 1, delta (oikoluvun korjaukset). Opened fy3-1-open-exercises-1280-2 (1-2, Järkevyys "venymä newtonia kohti"), -3 and -5 (1-5 Jupiter, "61 N ... täsmää suhteen 2,5 pyöristyksen tarkkuudella") and -6.
-- Fractions, thin spaces, decimal commas and answer box read well; nothing clipped. Hash same at start and end.
+- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-1 L1 captures 2 and 3 (1-2, 1-3 Järkevyys with the new display rows).
+- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

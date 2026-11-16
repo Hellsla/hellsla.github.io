@@ -5,6 +5,6 @@
   },
   {
     "q": "Sarjaankytkennässä on $9{,}0\\,\\text{V}$:n jännitelähde ja kolme vastusta. Kahden vastuksen jännitteet ovat $2{,}0\\,\\text{V}$ ja $3{,}5\\,\\text{V}$. Kuinka suuri on kolmannen vastuksen jännite?",
-    "a": "Jännitelain mukaan vastusten jännitteet ovat yhteensä lähteen jännite, joten kolmannen vastuksen jännite on $9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} - 3{,}5\\,\\text{V} = 3{,}5\\,\\text{V}$."
+    "a": "Jännitelain mukaan vastusten jännitteet ovat yhteensä lähteen jännite, joten kolmannen vastuksen jännite on $$\\begin{aligned} &9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} - 3{,}5\\,\\text{V} \\\\ &= 3{,}5\\,\\text{V} \\end{aligned}$$."
   }
 ]

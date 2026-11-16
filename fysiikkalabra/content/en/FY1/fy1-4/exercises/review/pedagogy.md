@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4d4f1e7d3a800203
+CONTENT-HASH: 9446a1ba13882d4d
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none new. The earlier polish on the L2-09 answer-box line (it applies to the table's 6-12 h rate) is not in this diff; check it is still wanted.
 
 ## Checked
-batch delta review (exercises): Reasonableness 3.1 -> 3.0 m is the honest rounding of 0.83 + 2.2 and still matches the last measurement 3.07 m; clear English.
+- 16 o'clock value: 7.2 + 1.52*10 = 22.4 degC, now consistent with the earlier report; the 0 h value (-1.9 degC) and the 8 h and 10 h values are unchanged and correct.
+- The change is one number; the staging and the validity-range reasoning of part c) are unchanged.

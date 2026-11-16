@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 34b802bc7a3c2838
-SCOPE: delta added-exercise from 11d7d1d54e3ae477 base 81db4a6fd727
+CONTENT-HASH: 3a16903792818089
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-17/a-scan figure — it is invented illustrative data and the y-axis has unlabelled ticks; a small "esimerkkiaineisto / illustrative data" note in the caption or figure would make the status visible to the student (the description already says it).
-- [Minor] fy5-17-L1-09 — the Vihje/Hint tells exactly where in MAFY to look; fine for a lookup task, no change needed.
+- [Minor] L3-02 and L3-03 chains scroll slightly at 360 px; known clipped formulas, untouched.
 
 ## Checked
-- Opened at 1280 px: open-exercises part 9 (L1-09 solution), L2 parts 11 and 12 (L2-09 with the a-scan figure, answer box and complete solution).
-- A-scan: axis title t (µs), ticks every 20 µs with gridlines every 5 µs, echoes A, B, C and the transmitted pulse labelled; C peak sits at 90 µs on the grid, so the reading is possible without the figure giving the answer; nothing clipped.
-- Maths: units upright, µs and ms in LaTeX, chains aligned at =, ±4 % in LaTeX; Finnish/English wording of the tasks clear.
+- Round 3: preview/en/fy5-17.html?ratkaisut=1 at 360 px, every solution open: paragraph scan of all 24 task cards finds none over 120 words; no overflow or KaTeX errors beyond the known clipped formulas.
+- Opened the task card 17-19 (L2-10) at 360 px: "Source material: link" first, the situation now two short paragraphs (split before "At the end of the page there is a link…"), then parts a)–d); reads cleanly, link visible, units LaTeX.
+- Solution splits (L2-07, L2-10 Part a)) read as short paragraphs in the 360 px scan.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

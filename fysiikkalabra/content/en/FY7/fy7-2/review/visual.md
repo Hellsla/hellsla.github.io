@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6b3c59a45cd6a20e
+CONTENT-HASH: e4e94f09bf8bc686
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] worked example steps 3-5 (example-390-1/2) — formulas keep $qE = qvB_1$, $m = qB_2 r / v$ while the theory now writes $|q|$; step 1 says $|q| = q$, so it reads correctly — optionally use $|q|$ in the example too.
-- [Minor] whole page (pre-existing, outside this delta) — other inline formulas still break at 390 px, e.g. `q = e = 1.602 \cdot 10^{-19}\,\text{C}` (worked example, Transfer; also at 1280 px), `v = E : B = 1.0 \cdot 10^{6}\,\text{m/s}`; templates/lesson.html glues only pieces of at most 14 characters, so a longer formula can break (teacher's rule: never) — brace each as one group `${...}$`, as done in fy7-2 L1-02, or show it as a display row.
+- [Minor] inquiry.json:362 — on a phone `B` stands alone on the first row above `= fraction`; correct and readable, the wide fraction leaves no room beside it.
+- [Minor] inquiry.json:362 (untouched) — the numerator under the root still breaks before `· 20 000 V`.
 
 ## Checked
-- Delta re-review: the diff only adds figures.json descriptions for the exercise option figures `pick-*`; the 18 existing entries are unchanged and no lesson figure uses the new keys.
-- Fresh captures (`screenshot.py fy7-2 --lang en --if-stale`, 94 captures): opened fig-18-390 / fig-12-390 / fig-7-390 / fig-10-390 (lesson diagrams, graph, spectrometer): render cleanly, labels legible, descriptions still match what is drawn, no clipping or horizontal scroll.
-- Earlier Minor items below the Polish heading still hold (pre-existing, outside this delta).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-2) and every changed formula of inquiry.json captured from preview/en/fy7-2.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. Round-1 Critical resolved: the "She writes" block of Example 2 is again three separate equations (qU, v, r), each with its own left side, identical to main; seen at 390 and 1280 px. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

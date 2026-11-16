@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9dac3d9e91ae86a3
+CONTENT-HASH: 9b7f215913602830
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- batch delta review: opened shots 1280/360 (roller coaster) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-08, fi-390-09 and fi-1280-06; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

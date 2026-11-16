@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f337c2ab9702c30f
-SCOPE: delta added-exercise from 89e1824f0f4efd16 base 89bcb63b7431
+CONTENT-HASH: 36fe25c2248a5cdf
+Round: 1
+Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- exercises/solutions.md:250 (fy3-6-L2-10 c) — "sulattaa huurretta eli ohutta jäätä altaan" is ungrammatical, and the Finnish source says "sulattaa alleen huurretta". Fix: "sulattaa alleen huurretta eli ohutta jäätä".
 
 ## Checked
-- fy3-6-L1-09: Q = c m dT = 0,896 * 0,80 * 80 = 57,3 kJ; no change of state stated (guardrail); 2 s.f. justified.
-- fy3-6-L2-09: c(copper) = 385 J/(kg K) read off c-bars; Q = 385 * 3,0 * 60 = 69,3 kJ; |dT| and released heat as positive handled correctly; accepted range 67,2-71,4 kJ = 3 % tolerance.
-- The added gloss of c (heat per 1 kg per 1 K) is correct.
-- One script recomputed every added answer from the task text with my own formulas and compared answers.py, the Finnish and the Selkea suomi exercises.json: answer, unit, tolerance and figure id identical.
-- Every number in the fi-easy task texts and solution sections equals the Finnish (only the added gloss values 1 kg / 1 K differ); the physics is unchanged, the glosses are correct.
-- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness check).
+- New fy3-6-L2-10: Q = cm|ΔT| = 4190 · 0.50 · 80 = 167 600 J, so 170 kJ, inside the 2 % tolerance. The 41 900 J comparison and the 125 700 J difference were recomputed, and the condition "olomuoto ei muutu" is stated.
+- The translation says the same physics as the Finnish set passed today: the source claims and their limits, the two effects of evaporation, the container and the conditions, and the experiment plan. The glosses (ristiriitainen, haihtuminen, vakioida, huurre) are correct.
+- A scripted comparison with the Finnish set found the same answer, unit, tolerance and kind, and identical numbers in the text and in every solution section.
+- The caption edits remove "(esimerkkiaineisto)" only.
+- Hash identical at start and end.
