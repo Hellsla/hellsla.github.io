@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6397f4498ac98552
+CONTENT-HASH: c142d570f08b90d2
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- Delta (md-paragraphs, solutions.md, three hunks). Judged from the diff and the fi fy4-15 L3 captures (1280 parts 6-7) of the same structure: paragraphs short, display block stays whole between sentences, nothing clipped. The fi-easy captures themselves were not opened.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
