@@ -251,6 +251,8 @@ Toteutetaan kohdan 11 osana U3 (opettaja 2026-11-14).
 
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
 
+Pilotti fy3-8 tehty (PR #649, yhteinen komponentti figlib `Fig(anim=True)` / `vibrate()`, site.css "Animated figures", lesson.js osa 7b); odottaa opettajan hyväksyntää (`reviews.py approve-figures fy3-8` vasta sen jälkeen). Muut luvut hyväksynnän jälkeen omina kohtinaan.
+
 Opettaja kysyi, sopisiko looppaava animaatio fy3-8:n kuvan "kylmä / lämmin, d₀ / d > d₀" tilalle. Sopii, kun se
 näyttää ilmiön, jota still-kuva ei näytä: lämpimässä hiukkaset värähtelevät laajemmin ja niiden keskimääräinen väli
 kasvaa (hiukkaset eivät kasva). Toteutus yhteisenä komponenttina, jota muutkin luvut voivat käyttää:
@@ -320,11 +322,15 @@ lang-tekstejä tai fysiikkaa.
 
 - **PR 1 (tehty, #563)** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
   vähintään 10 px) omina CI-jobeinaan.
-- **PR 2: Varattu: claude/sim-ui-pr2-pilotti-fy4-1** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+- **PR 2 (tehty, #588)** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
   varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
-- **PR 3: Varattu: claude/sim-ui-pr3-asettelu** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+- **PR 3 (tehty, #591)** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
   jäävät nykyiselleen.
-- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 4 (pilotti tehty, #648; opettaja hyväksyi 2026-11-16 "Hyväksyn" ennen/jälkeen-kuvista 390 px:llä)** tarttuva kuva
+  puhelimella, pilotit fy4-1 ja fy2-2 (`inquiry.SIM_STICK_PILOT`, `docs/audits/2026-11-16-sim-pr4-tarttuva-kuvat/`).
+- **PR 4b: yleistys** tarttuva kuva kaikille `sim-card2`-korteille omana pull requestinaan (jaettu muutos); korkeille
+  kuville raja (esimerkiksi fy7-4:n kuva on puhelimella 551 px: tarttuu vain, jos kuva vie enintään noin puolet
+  ikkunasta, tai jää pois).
 - **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
 
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
