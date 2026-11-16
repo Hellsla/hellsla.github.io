@@ -23,10 +23,10 @@
       "type": "choice",
       "title": "Kertaa: tasainen liike",
       "optional": true,
-      "prompt": "Irrotuksen jälkeen curlingkiveä kuvataan videolle muutaman sekunnin ajan. Tällä välillä kiven $(t, x)$-kuvaaja on lähes nouseva suora. Mitä se kertoo kiven nopeudesta?",
+      "prompt": "Irrotuksen jälkeen curlingkiveä kuvataan videolle muutaman sekunnin ajan. Tällä välillä kiven $(t, x)$-kuvaaja on nouseva suora. Mitä se kertoo kiven nopeudesta?",
       "choices": [
         {
-          "text": "Nopeus on lähes vakio: kivi kulkee yhtä pitkän matkan joka sekunti.",
+          "text": "Nopeus on vakio: kappale kulkee yhtä pitkän matkan joka sekunti.",
           "correct": true,
           "feedback": "Oikein. Suoran kulmakerroin on nopeus, ja suoralla se on joka kohdassa sama. Tässä luvussa selviää, mitä tämä kertoo kiveen vaikuttavista voimista."
         },

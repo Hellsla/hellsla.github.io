@@ -28,17 +28,17 @@
       "prompt": "The wind speed rises from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$. How many times larger is the kinetic energy of one cubic metre of air in the stronger wind?",
       "choices": [
         {
-          "text": "Four times larger, because kinetic energy depends on the square of the speed.",
+          "text": "Four times as large, because kinetic energy depends on the square of the speed.",
           "correct": true,
-          "feedback": "Correct. In the chapter *Kinetic energy, potential energy and mechanical energy* you learned that $E_\\text{k} = \\tfrac{1}{2}mv^2$. When $v$ doubles, $v^2$ becomes four times as large. In this chapter the same square explains part of a wind turbine's power."
+          "feedback": "Correct. In the chapter *Kinetic energy, potential energy and mechanical energy* you learned that $E_\\text{k} = \\tfrac{1}{2}mv^2$. When $v$ doubles, $v^2$ becomes four times as large. In this chapter the same square explains part of the power of a wind turbine."
         },
         {
-          "text": "Two times larger, because the speed doubles.",
-          "feedback": "Kinetic energy is not proportional to the speed but to its square: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Twice the speed gives $2^2 = 4$ times the kinetic energy."
+          "text": "Twice as large, because the speed doubles.",
+          "feedback": "Kinetic energy is not proportional to the speed but to its square: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Doubling the speed gives $2^2 = 4$ times as much kinetic energy."
         },
         {
-          "text": "Eight times larger, because the speed is cubed in the formula.",
-          "feedback": "In the formula for kinetic energy the speed is squared, $E_\\text{k} = \\tfrac{1}{2}mv^2$, so the factor is $2^2 = 4$. The cube appears only in the power of a wind turbine, when the amount of air flowing through each second comes in as well."
+          "text": "Eight times as large, because the speed is raised to the third power in the formula.",
+          "feedback": "In the formula for kinetic energy the speed is raised to the second power, $E_\\text{k} = \\tfrac{1}{2}mv^2$, so the factor is $2^2 = 4$. The third power appears only in the power of a wind turbine, where the amount of air flowing through each second also comes in."
         }
       ]
     },
