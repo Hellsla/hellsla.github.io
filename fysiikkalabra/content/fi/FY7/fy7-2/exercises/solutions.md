@@ -90,7 +90,9 @@ $$\begin{aligned} r &= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 1
 **Periaate:** Deuteroni kiertää ympyrää, koska magneettinen voima $qvB$ on kohtisuorassa nopeutta vastaan ja toimii keskeisvoimana.
 **Kaava:** $qvB = \dfrac{mv^2}{r}$, josta $v = \dfrac{qBr}{m}$
 **Muunnokset:** $r = 12\,\text{cm} = 12 \cdot 0{,}01\,\text{m} = 0{,}12\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $v = \dfrac{\begin{aligned}1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}60\,\text{T} \\ \cdot 0{,}12\,\text{m}\end{aligned}}{3{,}344 \cdot 10^{-27}\,\text{kg}} = 3{,}449 \cdot 10^{6}\,\text{m/s} = 3449\,\text{km/s}$
+**Sijoitus:** $v = \dfrac{\begin{aligned}1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}60\,\text{T} \\ \cdot 0{,}12\,\text{m}\end{aligned}}{3{,}344 \cdot 10^{-27}\,\text{kg}}$
+$= 3{,}449 \cdot 10^{6}\,\text{m/s}$
+$= 3449\,\text{km/s}$
 **Vastaus:** $3{,}4 \cdot 10^{3}\,\text{km/s}$, kaksi merkitsevää numeroa kuten säteessä $12\,\text{cm}$ ja kentässä $0{,}60\,\text{T}$.
 **Järkevyys:** Vauhti on noin $1\,\%$ valon nopeudesta, joten klassinen kaava pätee vielä. Takaisin laskettuna $r = mv : (qB) = 3{,}344 \cdot 10^{-27} \cdot 3{,}449 \cdot 10^{6} : (1{,}602 \cdot 10^{-19} \cdot 0{,}60)\,\text{m} = 0{,}12\,\text{m}$.
 

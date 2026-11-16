@@ -176,7 +176,8 @@ R &= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \\
 \end{aligned}
 $$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
 **Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ johtoon syötetystä tehosta, kaksi merkitsevää numeroa kuten tehossa ja jännitteessä.
-**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja, joten $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}$.
+**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja, joten $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW}$
+$\approx 5{,}2\,\text{MW}$.
 
 ### b)
 **Annettu:** a-kohdan tiedot ja resistanssi $R = 9{,}40\,\Omega$, siirtojännite $U = 110\,\text{kV}$

@@ -176,12 +176,8 @@ R &= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \\
 \end{aligned}
 $$, $I = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ and $P_\text{h} = 9.40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. The share is $846\,\text{kW} : 6000\,\text{kW} = 0.141 = 14.1\,\%$.
 **Answer:** $P_\text{h} \approx 850\,\text{kW}$, that is, about $14\,\%$ of the power fed into the line, two significant figures like the power and the voltage.
-**Reasonableness:** The losses of the whole electricity grid in Finland are only a few per cent in total, so a loss of $14\,\%$ in a single line is far too large. At a low voltage a large current is needed, and the loss grows as the square of the current. Only about $$
-\begin{aligned}
-&6.0\,\text{MW} - 0.85\,\text{MW} \\
-&\approx 5.2\,\text{MW}
-\end{aligned}
-$$ is left for the mine.
+**Reasonableness:** The losses of the whole electricity grid in Finland are only a few per cent in total, so a loss of $14\,\%$ in a single line is far too large. At a low voltage a large current is needed, and the loss grows as the square of the current. Only about $6.0\,\text{MW} - 0.85\,\text{MW}$
+$\approx 5.2\,\text{MW}$ is left for the mine.
 
 ### b)
 **Given:** the data of part a and the resistance $R = 9.40\,\Omega$, transmission voltage $U = 110\,\text{kV}$
