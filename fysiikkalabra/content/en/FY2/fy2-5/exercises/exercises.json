@@ -302,8 +302,8 @@
     {
       "id": "fy2-5-L3-01",
       "level": 3,
-      "text": "To heat a cottage, $120\\,\\text{MJ}$ of energy must be released from fuel. The energy can be obtained either from air-dried firewood ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) or from light heating oil ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Calculate the mass of each fuel needed and say how many kilograms more wood than oil are needed. Also explain why more wood is needed. Give the answer in kilograms.",
-      "answer": 5.2,
+      "text": "To heat a cottage, $120\\,\\text{MJ}$ of energy must be released from fuel. The energy can be obtained either from air-dried firewood ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) or from light heating oil ($40.6\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, MAFY table). Calculate the mass of each fuel needed and say how many kilograms more wood than oil are needed. Also explain why more wood is needed. Give the answer in kilograms.",
+      "answer": 5.0,
       "unit": "kg",
       "tolerance": 0.02
     },
@@ -326,7 +326,7 @@
     {
       "id": "fy2-5-L3-04",
       "level": 3,
-      "text": "The table gives example data on the useful energy needed each month to heat a detached house. The house can be heated either with a pellet boiler (heat of combustion of pellets $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $85\\,\\%$) or with light heating oil (heat of combustion $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $90\\,\\%$).\n\na) Calculate the heating energy of the year in kilowatt-hours and in megajoules.\n\nb) Calculate the mass of pellets burned in the pellet boiler in a year.\n\nc) Calculate the mass of oil used in a year and compare it with the mass of pellets. Explain why the ratio of the masses is not the same as the ratio of the heats of combustion.\n\nd) Because of poor adjustment, the efficiency of the pellet boiler drops to $70\\,\\%$. How many kilograms more pellets are then used in a year, and why?\n\nEnter the result of part b) in kilograms in the answer box.",
+      "text": "The table gives example data on the useful energy needed each month to heat a detached house. The house can be heated either with a pellet boiler (heat of combustion of pellets $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $85\\,\\%$) or with light heating oil (MAFY table; heat of combustion $40.6\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, efficiency $90\\,\\%$).\n\na) Calculate the heating energy of the year in kilowatt-hours and in megajoules.\n\nb) Calculate the mass of pellets burned in the pellet boiler in a year.\n\nc) Calculate the mass of oil used in a year and compare it with the mass of pellets. Explain why the ratio of the masses is not the same as the ratio of the heats of combustion.\n\nd) Because of poor adjustment, the efficiency of the pellet boiler drops to $70\\,\\%$. How many kilograms more pellets are then used in a year, and why?\n\nEnter the result of part b) in kilograms in the answer box.",
       "kind": [
         "data",
         "model",
