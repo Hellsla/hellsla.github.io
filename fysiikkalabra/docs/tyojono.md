@@ -326,7 +326,7 @@ lang-tekstejä tai fysiikkaa.
   jäävät nykyiselleen.
 - **PR 4 (pilotti tehty, #648; opettaja hyväksyi 2026-11-16 "Hyväksyn" ennen/jälkeen-kuvista 390 px:llä)** tarttuva kuva
   puhelimella, pilotit fy4-1 ja fy2-2 (`inquiry.SIM_STICK_PILOT`, `docs/audits/2026-11-16-sim-pr4-tarttuva-kuvat/`).
-- **PR 4b: yleistys** tarttuva kuva kaikille `sim-card2`-korteille omana pull requestinaan (jaettu muutos); korkeille
+- **PR 4b: Varattu: claude/sim-ui-pr4b-tarttuva-kaikki** yleistys: tarttuva kuva kaikille `sim-card2`-korteille omana pull requestinaan (jaettu muutos); korkeille
   kuville raja (esimerkiksi fy7-4:n kuva on puhelimella 551 px: tarttuu vain, jos kuva vie enintään noin puolet
   ikkunasta, tai jää pois).
 - **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
