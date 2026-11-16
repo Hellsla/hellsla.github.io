@@ -102,31 +102,37 @@ WIDE_LHS = 20        # visible characters: a left side up to this long shares th
 WIDE_MAX = 40        # visible characters (vis_len) a row joined for a wide screen may have: it must fit a 768 px task card (fy5-6 overflowed at 62, fy8-11 at 46)
 
 
+CONT_OP = re.compile(r"(\+|-|\\cdot(?![A-Za-z])|\\times(?![A-Za-z])|:)\s*\S")   # a row that starts with a binary operator continues the row before
+
+
 def join_wide(tex):
     """An aligned block whose chains the source split by hand (`&a \\\\ &\\quad = b`, teacher 2026-11-13, fy3-6; `&\\rho g h
     \\\\ &= 1000 \\\\ &\\quad \\cdot 9{,}81`, fy3-4): the same block with the pieces of one side joined, as long as the
-    joined row stays within WIDE_MAX, or None when nothing joins. A row starting `&\\quad` or `&\\qquad` (a continuation of
-    the row before) joins it; a row starting with a relation joins a row that is still only a left side, so `left =
-    right` is one row. Each further relation of the chain keeps its own row, and a row break with a gap (`\\\\[6pt]`)
+    joined row stays within WIDE_MAX, or None when nothing joins. A row starting `&\\quad` or `&\\qquad`, or with a binary
+    operator (`&+ b`, `&- b`, `&\\cdot b`, `&: b`; a chain broken for a phone, work queue 5d), is a continuation of the row
+    before and joins it; a row starting with a relation joins a row that is still only a left side, so `left = right` is
+    one row, but never a row that is itself a continuation (`&- 88 \\\\ &\\approx 40` read "−88 ≈ 40", work queue 5g). Each further relation of the chain keeps its own row, and a row break with a gap (`\\\\[6pt]`)
     ends the chain. The source is never changed; build.py shows this form on a wide screen and the form as written on a
     phone (.mj-wide / .mj-narrow in site.css)."""
     m = re.fullmatch(r"(\s*\\begin\{aligned\}\s*)(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
     if not m: return None
     parts = re.split(r"(\\\\(?:\[[^\]]*\])?\s*)", m.group(2))
     cells, seps = parts[0::2], parts[1::2] + [""]
-    out, out_seps, joined = [], [], False
+    out, out_seps, out_cont, joined = [], [], [], False
     for cell, sep in zip(cells, seps):
         body = cell.lstrip()[1:].strip() if cell.lstrip().startswith("&") and cell.count("&") == 1 else None
+        cont = body is not None and bool(CONT_OP.match(body))   # `&+ b`, `&- b`, `&\cdot b`, `&: b`: the row before goes on (work queue 5g)
         piece = None
         if out and body is not None and re.fullmatch(r"\\\\(?:\[[^\]]*\])?\s*", out_seps[-1]) and out_seps[-1].strip() == "\\\\":
             q = re.match(r"\\q?quad\s*(.*)", body, re.S)
             if q and q.group(1).strip(): piece = q.group(1).strip()
+            elif cont: piece = body
             elif re.match(r"(=|\\approx)\s", body):
                 prev = out[-1].lstrip()[1:]
-                if _top_relations(prev) == []: piece = body        # the row before is only a left side
+                if _top_relations(prev) == [] and not out_cont[-1]: piece = body   # the row before is only a left side, not a continuation of a side
         if piece and vis_len(out[-1]) + vis_len(piece) + 2 <= WIDE_MAX:
             out[-1] = out[-1].rstrip() + " " + piece + " "; out_seps[-1] = sep; joined = True
-        else: out.append(cell); out_seps.append(sep)
+        else: out.append(cell); out_seps.append(sep); out_cont.append(cont)
     if not joined: return None
     return m.group(1) + "".join(c + s for c, s in zip(out, out_seps)) + m.group(3)
 
@@ -304,6 +310,12 @@ if __name__ == "__main__":                                          # quick self
     c = display_chains(r"Tarkistus: $0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$ ja $0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.")
     assert c.count("eq-chain mj-wide") == 1 and c.count("eq-chain mj-narrow lead") == 1, c      # a short chain, also with \approx: one row on a wide screen
     w = chain_html([("c_\\text{v} m_\\text{v} (T_\\text{v} - T)", "= x")]); assert "mj-wide" not in w   # a short left side needs no second form
+    k = join_wide("\\begin{aligned}\n&380 - 252 \\\\\n&- 88 \\\\\n&\\approx 40\n\\end{aligned}")
+    assert k == "\\begin{aligned}\n&380 - 252 - 88 \\approx 40 \n\\end{aligned}", k                 # a side broken for a phone: one row on a wide screen (5g)
+    n = join_wide("\\begin{aligned}\nN &= a \\cdot b \\\\\n&: c \\\\\n&= d \\\\\n&: c \\\\\n&= e\n\\end{aligned}")
+    assert n == "\\begin{aligned}\nN &= a \\cdot b : c \\\\\n&= d : c \\\\\n&= e\n\\end{aligned}", n   # each = keeps its own row
+    w2 = "\\begin{aligned}\nm &= " + "x" * 30 + " \\\\\n&+ " + "y" * 30 + " \\\\\n&\\approx 2\n\\end{aligned}"
+    assert join_wide(w2) is None                                                                   # too wide to join, and the \\approx row never joins the + row
     j3 = join_wide("\\begin{aligned}\n&c_\\text{v} m_\\text{v} (T_\\text{v} - T) \\\\\n&\\quad = c_\\text{j} m_\\text{j} \\Delta T_\\text{j} + s m_\\text{j} \\\\\n&\\qquad + c_\\text{v} m_\\text{j} T\n\\end{aligned}")
     assert j3 and j3.count("\\\\") == 0, j3                                                     # the three rows of an energy balance: one equation, one row
     b = display_chains(r" $14\,\text{GWh} = {14 \cdot 10^{6}}\,\text{kWh}$ ja $5{,}0\,\text{MW} = 5{,}0 \cdot 1000\,\text{kW} = 5000\,\text{kW}$.")
