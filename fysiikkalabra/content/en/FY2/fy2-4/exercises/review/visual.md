@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 670fc879cb04003e
+CONTENT-HASH: 1b5ad2aa45a2f664
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: 670fc879cb04003e
 - none
 
 ## Checked
-- Delta md-paragraphs (solutions.md, levels 1-3 at 1280 px, every solution open). Opened en open-exercises-1280-5, -6 (4-6); open-exercises-L2-1280-6, -7 (4-14), -8 (4-14/4-15), -9 (4-15/4-16), -10 (4-17), -11 (4-18 context); open-exercises-L3-1280-6, -7, -8, -9 (4-22 Answer, 4-23 Answer and Reasonableness).
-- Split Model answer, Reasonableness, Principle, Answer and Check paragraphs read as separate paragraphs inside solution cards; formula blocks and aligned rows unaffected; no gaps or clipping.
+- Round 2 delta (en): fy2-4-L3-05 (4-23) Answer step, now one paragraph again, in content/en/FY2/fy2-4/review/shots/fy2-4-open-exercises-L3-1280-8.png (end of Reasonableness in -9): it reads 30 %, 6.9 kWh, 1.4 € and 30 % + 70 % = 100 % as LaTeX with units; no clipping, overflow or gap; Reasonableness block intact.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c336d73af5fda7f3
+CONTENT-HASH: 4a547e015d90efbb
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: c336d73af5fda7f3
 - none
 
 ## Checked
-- Delta md-paragraphs (solutions.md, levels 1-3 at 1280 px, every solution open). Opened fi-easy open-exercises-1280-5, -6 (4-6); open-exercises-L2-1280-6, -7 (4-14), -8 (4-15), -9 (4-16), -10 (4-17); open-exercises-L3-1280-5, -6 (4-22), -7, -8 (4-23).
-- Split Mallivastaus, Järkevyys, Periaate, Vastaus and Tarkistus paragraphs read as separate paragraphs inside solution cards; formula blocks and aligned rows unaffected; no gaps or clipping.
+- Round 2 delta (fi-easy): fy2-4-L3-05 (4-23) Vastaus step, now one paragraph again, in content/fi-easy/FY2/fy2-4/review/shots/fy2-4-open-exercises-L3-1280-8.png: it reads 30 %, 6,9 kWh, 1,4 € and 30 % + 70 % = 100 % as LaTeX with units; no clipping, overflow or gap; Järkevyys block intact.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 5
