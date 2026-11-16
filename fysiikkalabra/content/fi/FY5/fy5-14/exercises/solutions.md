@@ -75,7 +75,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Kaava:** $f = \dfrac{v_\text{i}}{\lambda_\text{i}}$ ja $\lambda_\text{v} = \dfrac{v_\text{v}}{f}$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja aallonpituus metreinä.
 **Sijoitus:** $f = \dfrac{340\,\text{m/s}}{0{,}850\,\text{m}} = 400\,\text{Hz}$ ja $\lambda_\text{v} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3{,}70\,\text{m}$
-**Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
+**Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Laatikkoon kelpaa $3{,}70$ tai $3{,}7$, koska ne ovat sama luku.
 **Järkevyys:** Ääni kulkee vedessä $\tfrac{1480}{340} \approx 4{,}4$ kertaa nopeammin kuin ilmassa, ja samalla taajuudella aallonpituus kasvaa samassa suhteessa: $0{,}850\,\text{m} \cdot 4{,}35 \approx 3{,}7\,\text{m}$.
 
 ## fy5-14-L2-03

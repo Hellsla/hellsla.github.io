@@ -1,18 +1,8 @@
 VERDICT: DONE
 
-Round 1, work queue 19: one new source-based task, nothing else touched.
+Round 2, exercises, same changes in fi, en and fi-easy. `answer` 0.4 unchanged.
 
-**New task:** `fy5-12-L2-10` (teacher's label FY5-A2, "Missä kaksi ääniaaltoa vahvistaa toisiaan?"), level 2, kind data + model + reasoning. Answer box: part c), smallest positive path difference of destructive interference, $\Delta s = \lambda/2 = 0{,}40\,\text{m}$ (unit m, tolerance 0.02); constructive $0{,}80\,\text{m}$ is in the solution.
-
-**Files:** `exercises.json` and `solutions.md` in fi, en and fi-easy (task appended to level2, solution appended at the end); `lessons/FY5/fy5-12/answers.py` (three lines before the print).
-
-**Tarkennukset:**
-- Link: the Finnish versions use PhET's Finnish page (`/fi/simulations/wave-interference`, text "PhET – Wave Interference (Aaltojen interferenssi)"); English keeps the teacher's link.
-- Added to the situation: which screen (the second, Interferenssi), wave type sound, start both sources with the green buttons; runs in the browser. Without it the student cannot find the right view.
-- b) got "Selitä muutos aallonpituuden avulla", so the part asks for physics, not only an observation.
-- Last paragraph names the answer-box part.
-
-**Notes:**
-- Existing `fy5-12-L2-01` has the answer $\lambda = 0{,}80\,\text{m}$ from $\Delta s = 0{,}40\,\text{m}$ (the same pair of numbers, reversed question, different geometry). The teacher's numbers were kept.
-- Lint: 0 errors; a length warning (512 words) for the new four-part solution. check_solutions ok. check_i18n: no line about fy5-12 (the one en error is fy5-16's).
-- Layout check at 360 px not run (brief: no builds outside the lesson).
+- Science, significant figures: Vastaus now says that the box accepts 0,40 or 0,4 because they are the same number (solution keeps 0,40 m, two significant figures like 0,80 m).
+- Pedagogy/science, PhET instructions: "kaiuttimen kuva" and "vihreistä painikkeista" removed. fi: "valitse aaltolajiksi ääni ja käynnistä molemmat lähteet lähteiden omista painikkeista"; fi-easy and en reworded the same way.
+- Pedagogy, part c): the task also asks for the next destructive path difference in the written answer. Kaava, Sijoitus and Vastaus now give n = 1: 3λ/2 = 1,20 m (new symbol Δs_h2, en Δs_d2).
+- Checks: build, check_layout 360/352/1280 ok, lint 0 errors, check_solutions ok, answers.py ok.
