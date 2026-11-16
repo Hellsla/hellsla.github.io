@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 799fb4d8eefe224d
+CONTENT-HASH: 972e8efd5f7c706b
 
 ## Blocking
-(none)
 
 ## Polish
-- none.
 
 ## Checked
-- Delta: fy5-4-L3-06 task text (exercises.json:367) and its solution principle (solutions.md:317) now say "maximum static friction $\mu_0 N$" instead of "greatest static friction". The new wording is the English term in docs/physics-guardrails.md (Friction, P8: maximum (fully developed) static friction). The physics, the condition and the limiting case $F = \mu_0 N$ are unchanged.
-- The remaining uses of "greatest" in the set (greatest speed, greatest tension, greatest rotation frequency) name kinematic or string limits, not the static-friction quantity, so the term is used the same way everywhere.
-- Recomputed: $\mu_0 = 8000/(1200 \cdot 9.81) = 0.680$, which matches answer 0.68. The figure kuvaaja-b (F = 1.2 kN · v²/60) still gives 8.0 kN at 20 m/s.
-- The diff changes no number, symbol, unit or tolerance. The earlier full checks (ground-frame model, no centrifugal force, significant figures, figures) still hold.
-- Hash 799fb4d8eefe224d (with --lang en) is the same at the start and at the end.
+- The hash was 972e8efd5f7c706b at the start and at the end. I judged only the diff (solutions.md, the L2-07 Reasonableness and the L3-05 Model answer on the justification).
+- L2-07: I recomputed the numbers. a = 4.32 m/s² = 0.440 g, mg = 8.34 kN, and the student's 7344 N / 8.34 kN = 0.881. No number changed.
+- L2-07: "would already require very good grip" is correct for 0.88. It agrees with line 184 (0.92, possible on dry asphalt) and line 323 (dry asphalt 0.7–0.9). The contradiction is gone.
+- L3-05: "friction does not have to supply the whole net force towards the centre" is correct. The net force is N sin α + F cos α. The wrong reference to work is gone.
+- Both sentences say the same as the Finnish version.
