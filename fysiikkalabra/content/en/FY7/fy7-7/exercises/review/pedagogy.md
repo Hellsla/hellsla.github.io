@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 20765954e1e52615
+CONTENT-HASH: bc8bf714e0733a08
 
 ## Blocking
 
 ## Polish
+(carried from round 1, recorded, not re-reviewed)
 - exercises/exercises.json:fy7-7-L1-09 (text, feedback, solution) — "effective value" where every other task says "rms value" — use "rms value" throughout.
 - exercises/solutions.md:fy7-7-L2-08 — the subscript in $e_\text{ka}$ is the Finnish "keskiarvo"; keep it only if the English chapter *Electromagnetic induction* writes it so, otherwise use that chapter's symbol.
 - exercises/solutions.md:fy7-7-L2-08 Part d) — about 190 words in one paragraph — split at "When a load, for example a bulb, is connected" (alternating voltage / energy conversion).
@@ -11,12 +12,8 @@ CONTENT-HASH: 20765954e1e52615
 - exercises/exercises.json:fy7-7-L2-08 — no fallback if the simulation cannot be opened; a one-line note ("the observations are described in the solution") would do.
 
 ## Checked
-- FY7-A4 against the assignment §1, §2, §5, §6: link with date, four parts (observe, vary speed and direction, explain with the law of induction, transfer to the generator); the simulation is needed for a) and b); no repeated question.
-- The solution marks observations as the student's own, gives dated example observations and says the needle's side may be reversed.
-- Part c)'s calculation gives the answer box a checkable number (2.0 mV) and shows the fourfold ratio that explains b).
-- Part d) covers both demands: why the voltage alternates and where the energy comes from (work against the Lenz force).
-- Levels 9 / 8 / 5 = 22; level rubric holds (L2-08 is observation plus a two-value calculation).
-- Reflowed solutions (L1-01, L2-01, L2-02, L2-04, L2-06, L2-07 text): unchanged content, followable.
-- L1-06 and L1-09 distractors each carry one named error with repairing feedback.
-- Situation first, question last; English natural.
-- Empty exercise brief in the packet and no 360 px exercise captures: scope judged from glossary and slot goals only.
+- Delta, round 2: solutions.md fy7-7-L2-04 and fy7-7-L2-06 Sijoitus/Substitution: the row now breaks before the equals sign, so "· 100 %" stays with its fraction and the result has its own row; numbers, units and order unchanged; easier to follow than before.
+- exercises.json fy7-7-L2-07: the quoted student calculation is inline again as adjacent formulas ($I = P : U$ $= 60 W : 163 V$ $= 0,37 A$) inside the quotation marks; the quote reads as one sentence, the planted error (230 V taken as a peak value) is still findable and the wrong 0,37 A unchanged; answer 0,261 A and tolerance unchanged.
+- No other task text, answer, distractor, feedback or figure changed (diff of exercises.json shows only the L2-07 chain).
+- Levels, contexts, solutions and language otherwise as passed in round 1; not re-reviewed.
+- Hash the same at the start and the end.
