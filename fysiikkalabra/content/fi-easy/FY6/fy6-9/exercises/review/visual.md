@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3b56acf60ce0f476
+CONTENT-HASH: 36c2c5b745ea76ef
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L2-06 Sijoitus — the row breaks before `· 1,5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0,5 V · 3,0 Ah`) after the continued product. Optional: put `= 0,5 V · 3,0 Ah` on its own row. It reads correctly as it is.
+- [Minor] fy6-9 solution: Kohta D) is one paragraph well over 120 words; its first sentence is stiff; split at the two instructions.
 
 ## Checked
-- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Sijoitus W = (4,2 V − 3,7 V) · 2,0 A / · 1,5 h = 0,5 V · 3,0 Ah / = 1,5 Wh, with Vastaus and Järkevyys below.
-- Aligned at `=`, unclipped, units upright with thin space; the Finnish around it is plain and clear.
-- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
+- Proof sheets fi-easy-fy6-9-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
