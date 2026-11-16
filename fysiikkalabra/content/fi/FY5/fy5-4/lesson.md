@@ -358,11 +358,15 @@ Henkilöauto, jonka massa on $1200\,\text{kg}$, ajaa vaakasuoran tien kaarteessa
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 1200\,\text{kg}$, $v = 54\,\text{km/h}$, $r = 45\,\text{m}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään tien kitkavoimaa $F_\mu$ ja pienintä lepokitkakerrointa $\mu_0$.
+**Tunnetut ja kysytty.** $m = 1200\,\text{kg}$, $v = 54\,\text{km/h}$, $r = 45\,\text{m}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään tien kitkavoimaa $F_\mu$ ja pienintä lepokitkakerrointa $\mu_0$.
 
 <!-- vaihe -->
 
-**Periaate.** Valitaan kappaleeksi auto. Siihen vaikuttavat Maa (paino $\overline{G}$) ja tie (tukivoima $\overline{N}$ ja kitka $\overline{F}_\mu$). Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima osoittaa kohti kaarteen keskipistettä ja on suuruudeltaan $m\tfrac{v^2}{r}$. Ainoa vaakasuora voima on kitka, joten se osoittaa kohti keskipistettä. Renkaat eivät liu'u sivuttain, joten kitka on lepokitkaa, enintään $\mu_0 N$. Voimakuviossa auto on takaa katsottuna ja kaarteen keskipiste oikealla, $x$-akseli kohti keskipistettä ja $y$-akseli ylös.
+**Periaate.** Valitaan kappaleeksi auto. Siihen vaikuttavat Maa (paino $\overline{G}$) ja tie (tukivoima $\overline{N}$ ja kitka $\overline{F}_\mu$). Auto on tasaisessa ympyräliikkeessä, joten Newtonin toisen lain mukaan kokonaisvoima osoittaa kohti kaarteen keskipistettä ja on suuruudeltaan $m\tfrac{v^2}{r}$.
+
+Ainoa vaakasuora voima on kitka, joten se osoittaa kohti keskipistettä. Renkaat eivät liu'u sivuttain, joten kitka on lepokitkaa, enintään $\mu_0 N$. Voimakuviossa auto on takaa katsottuna ja kaarteen keskipiste oikealla, $x$-akseli kohti keskipistettä ja $y$-akseli ylös.
 
 <svg data-fig="esimerkki" viewBox="0 0 600 360" role="img" aria-label="Auton voimakuvio takaa katsottuna, auto suorakulmiona tien päällä. Kaarteen keskipiste on oikealla. Paino G keskipisteestä alas, tien tukivoima N alapinnasta ylös yhtä pitkänä ja tien kitkavoima alapinnan oikeasta kulmasta oikealle kohti kaarteen keskipistettä, noin puolet painon pituudesta. Erillään oranssi kiihtyvyysnuoli a n oikealle. Nurkassa akselit: x oikealle kohti keskipistettä ja y ylös." style="max-width:100%;font-size:24px">
   <line x1="80" y1="208" x2="440" y2="208" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>

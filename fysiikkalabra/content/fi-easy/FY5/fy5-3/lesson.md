@@ -281,7 +281,9 @@ Pesukoneen rummun halkaisija on $46\,\text{cm}$. Linkouksessa rumpu pyörii $120
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Rummun halkaisija on $d = 46\,\text{cm}$. Pyörimistaajuus on $f = 1200\,\tfrac{1}{\text{min}}$. Kysytään sukan ratanopeutta $v$.
+**Tunnetut ja kysytty.** Rummun halkaisija on $d = 46\,\text{cm}$. Pyörimistaajuus on $f = 1200\,\tfrac{1}{\text{min}}$.
+
+Kysytään sukan ratanopeutta $v$.
 
 <!-- vaihe -->
 
