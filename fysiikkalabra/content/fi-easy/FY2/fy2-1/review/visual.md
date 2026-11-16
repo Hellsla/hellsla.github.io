@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d64245a72386bc55
+CONTENT-HASH: 62f0884522375ce2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] sim chart at 390 px — "1 000" now ends about 2 px from the axis, with no tick, and the data dot sits at the end of the label, so label and dot almost touch while "0" keeps its tick — optional: a slightly smaller tick-number size on a phone so the tick and a 4 px gap fit.
+- [Minor] Seitsemän energialajia table, Esimerkki column — the first row is a full sentence ("Hyllyn reunalla oleva pallo voi pudotessaan saada vauhtia."), the other rows are noun phrases — make them parallel, e.g. "Hyllyn reunalla oleva pallo".
+- [Minor] Same table at 390 px — the first column hyphenates the term over three lines ("Poten-/tiaali-/energia") and the potentiaalienergia and liike-energia rows are tall and narrow. Readable, nothing clipped; shortening the middle text is optional.
+- [Minor] "Mihin liittyy" cells start with a fragment ("Säteilyyn.", "Atomiytimiin.") followed by a sentence; a header such as "Mihin energia liittyy" would read more smoothly.
 
 ## Checked
-- Delta: only the chart's tick-number drawing in assets/sims/fy2/fy2-1/sim.js changed.
-- fy2-1-sim-390.png, opened whole and the chart cropped at 4x. "1 000" is complete and not clipped, and it is readable. It is no longer cut at the left edge of the canvas. The dashed gridline marks the value. The "0" tick, the t ticks, the axis titles and the surrounding layout are intact.
-- fy2-1-sim-1280.png: "1000" with its tick is unchanged, with no regression. The decimal comma and spacing follow the sim exception.
-- The rest of the page is untouched by the diff. I did not reopen the other captures.
-- Hash at start and end (--lang fi-easy): d64245a72386bc55, matching the stamp.
+- Delta: the bullet list "Seitsemän energialajia" became a table; the lämpöenergia / lämpö / lämpötila paragraph moved below it.
+- fy2-1-theory-1280-1.png: table fits the column, no overflow, columns aligned, LaTeX symbols ($E_\text{p}$, $E_\text{k}$, $E_\text{lämpö}$) render; photo with caption beside it; lämpö paragraph and $E_\text{mek}$ formula intact.
+- fy2-1-theory-1280-2.png: layout after the table survived (figures 9 and 11, Energian säilymislaki).
+- fy2-1-stage-selita-390-1.png: table at 390 px has no horizontal overflow, soft hyphens break correctly; dense but usable.
+- Content otherwise unchanged; Finnish natural, glossary terms consistent.
+- Hash at start and end (--lang fi-easy): 62f0884522375ce2.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
