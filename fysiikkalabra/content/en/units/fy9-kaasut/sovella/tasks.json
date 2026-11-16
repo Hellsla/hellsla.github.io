@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "intro": "Seven matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. The last problem is an applied source-based problem whose source opens from the link in the problem. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -32,7 +32,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$A = \\pi r^2 = \\pi \\cdot (0.100\\,\\text{m})^2 \\approx 0.0314\\,\\text{m}^2$ and $mg \\approx 17.7\\,\\text{kN}$, so $\\Delta p \\approx 562\\,\\text{kPa}$."
+              "detail": "$$\n\\begin{aligned}\nA &= \\pi r^2 \\\\\n&= \\pi \\cdot (0.100\\,\\text{m})^2 \\\\\n&\\approx 0.0314\\,\\text{m}^2\n\\end{aligned}\n$$ and $mg \\approx 17.7\\,\\text{kN}$, so $\\Delta p \\approx 562\\,\\text{kPa}$."
             },
             {
               "key": "units_precision",
@@ -65,7 +65,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$W = 1800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.20\\,\\text{m} \\approx 21.2\\,\\text{kJ}$ and $562\\,\\text{kPa} \\cdot 37.7\\,\\textsf{l} \\approx 21.2\\,\\text{kJ}$."
+              "detail": "$$\n\\begin{aligned}\nW &= 1800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\cdot 1.20\\,\\text{m} \\\\\n&\\approx 21.2\\,\\text{kJ}\n\\end{aligned}\n$$ and $562\\,\\text{kPa} \\cdot 37.7\\,\\textsf{l} \\approx 21.2\\,\\text{kJ}$."
             },
             {
               "text": "Explains that the air in the cylinder pushes the piston with the total pressure $663\\,\\text{kPa}$ and does the work $p\\,\\Delta V \\approx 25.0\\,\\text{kJ}$; the difference $3.8\\,\\text{kJ}$ goes into pushing the outside air above the piston out of the way.",
@@ -98,7 +98,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$p_1 = 1001\\,\\text{kPa}$, so $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0.377 \\approx 751\\,\\text{kPa}$, that is, about $650\\,\\text{kPa}$ on the gauge."
+              "detail": "$p_1 = 1001\\,\\text{kPa}$, so $$\n\\begin{aligned}\np_2 &= 1001\\,\\text{kPa} \\\\\n&- 663\\,\\text{kPa} \\cdot 0.377 \\\\\n&\\approx 751\\,\\text{kPa}\n\\end{aligned}\n$$, that is, about $650\\,\\text{kPa}$ on the gauge."
             },
             {
               "text": "Justifies that air flows only from a higher pressure to a lower one, so the tank must hold at least $663\\,\\text{kPa}$ throughout the lift; after a second lift the pressure would be about $501\\,\\text{kPa}$, so the second lift stops partway (at a height of about $0.4\\,\\text{m}$).",
@@ -160,7 +160,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "The density of methane $34.9\\,\\text{kg} : 52.0\\,\\text{m}^3 \\approx 0.67\\,\\text{kg/m}^3$ is smaller than that of air, because the molar mass of methane is smaller."
+              "detail": "The density of methane $$\n\\begin{aligned}\n&34.9\\,\\text{kg} : 52.0\\,\\text{m}^3 \\\\\n&\\approx 0.67\\,\\text{kg/m}^3\n\\end{aligned}\n$$ is smaller than that of air, because the molar mass of methane is smaller."
             }
           ]
         },
@@ -216,7 +216,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $\\eta_\\text{tot} = (175 + 233) : 485 \\approx 84\\,\\%$."
+              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $$\n\\begin{aligned}\n\\eta_\\text{tot} &= (175 + 233) : 485 \\\\\n&\\approx 84\\,\\%\n\\end{aligned}\n$$."
             },
             {
               "key": "conclusion",
@@ -291,7 +291,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37.7\\,\\text{ml}}{0.135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+              "detail": "$$\n\\begin{aligned}\n\\theta_0 &= -\\dfrac{V_0}{k} \\\\\n&= -\\dfrac{37.7\\,\\text{ml}}{0.135\\,\\text{ml}/{}^\\circ\\text{C}} \\\\\n&\\approx -279\\,{}^\\circ\\text{C}\n\\end{aligned}\n$$"
             },
             {
               "key": "uncertainty",
@@ -324,17 +324,17 @@
             {
               "key": "units_precision",
               "points": 2,
-              "detail": "$k = 0.135\\,\\text{ml/K} = 0.135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ and $p = 101\\,300\\,\\text{Pa}$; three significant figures."
+              "detail": "$$\n\\begin{aligned}\nk &= 0.135\\,\\text{ml/K} \\\\\n&= 0.135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}\n\\end{aligned}\n$$ and $p = 101\\,300\\,\\text{Pa}$; three significant figures."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$n \\approx 1.65 \\cdot 10^{-3}\\,\\text{mol} = 1.65\\,\\text{mmol}$"
+              "detail": "$$\n\\begin{aligned}\nn &\\approx 1.65 \\cdot 10^{-3}\\,\\text{mol} \\\\\n&= 1.65\\,\\text{mmol}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "A single measured point gives almost the same: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41.1 \\cdot 10^{-6}\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298.15\\,\\text{K}} \\approx 1.68\\,\\text{mmol}$."
+              "detail": "A single measured point gives almost the same: $$\n\\begin{aligned}\nn &= \\dfrac{pV}{RT} \\\\\n&= \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41.1 \\cdot 10^{-6}\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298.15\\,\\text{K}} \\\\\n&\\approx 1.68\\,\\text{mmol}\n\\end{aligned}\n$$."
             }
           ]
         },
@@ -423,7 +423,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0.060 = 6.0\\,\\%$ and $P_2 = 470\\,\\text{kW}$"
+              "detail": "$$\n\\begin{aligned}\n\\eta &= 30\\,\\text{kW} : 500\\,\\text{kW} \\\\\n&= 0.060 \\\\\n&= 6.0\\,\\%\n\\end{aligned}\n$$ and $P_2 = 470\\,\\text{kW}$"
             },
             {
               "text": "Explains that the temperature difference of $23\\,\\text{K}$ between the hot source and the cold environment is small compared with the temperature of the hot source, $276\\,\\text{K}$, so only a small part of the heat can turn into work.",
@@ -433,7 +433,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Energy is conserved: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$; the machine gives almost all the heat it takes to the cold."
+              "detail": "Energy is conserved: $$\n30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}\n$$; the machine gives almost all the heat it takes to the cold."
             }
           ]
         },
@@ -674,6 +674,166 @@
         "concept": "fy4-5",
         "communication": "fy4-6",
         "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s7",
+      "title": "Where does the energy of a nuclear power plant go?",
+      "source": "statistics",
+      "source_note": "TVO 2026, Olkiluoto 3: structure and technical data (https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html). Checked 16 Nov 2026. The density and specific heat capacity of the seawater are the values of pure water, and the seawater temperature of $10\\,{}^\\circ\\text{C}$ is an assumption.",
+      "skills": [
+        "fy3-15",
+        "fy3-11",
+        "fy3-6",
+        "fy3-5"
+      ],
+      "text": "Olkiluoto 3 is the largest nuclear power plant unit in Finland. In its pressurised water reactor the fissions of uranium nuclei heat water, and the water is used to make steam that turns a turbine and a generator. After the turbine the steam condenses to water in a condenser that is cooled with seawater.\n\nOpen the page of Teollisuuden Voima (TVO), [Olkiluoto 3: rakenne ja tekniset tiedot](https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html) (in Finnish: structure and technical data). The page can also be reached from TVO's Olkiluoto 3 page under “Rakenne ja tekniset tiedot”. In the table “OL3 tekniset tiedot”, read the rows *Sähköteho, netto* (net electrical power), *Reaktorin lämpöteho* (thermal power of the reactor), *Tuotehöyryn lämpötila* (steam temperature) and *Merivesivirtaus* (seawater flow). The net electrical power is the electrical power fed into the grid: the plant's own consumption has been subtracted from the power of the generator. The model answer uses the values that were in the table on 16 Nov 2026.\n\nUse these assumptions:\n\n- the plant runs at its rated power, and all the thermal power of the reactor that is not fed into the grid as electrical power is transferred as heat to the seawater in the condenser\n- the density of the seawater is $1.00 \\cdot 10^{3}\\,\\tfrac{\\text{kg}}{\\text{m}^3}$ and its specific heat capacity $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$ (the values of pure water)\n- the temperature of the seawater before the condenser is about $10\\,{}^\\circ\\text{C}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 2,
+          "text": "According to the source, how large is the thermal power of the reactor and how large is the net electrical power of the plant? Calculate the efficiency of the plant from them, and compare the result with the row *Kokonaishyötysuhde* (total efficiency) of the table.",
+          "answer": {
+            "value": 37.21,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Reads the right quantities from the source: the thermal power of the reactor $4300\\,\\text{MW}$ and the net electrical power of about $1600\\,\\text{MW}$ (values on 16 Nov 2026).",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\eta &= \\dfrac{P_\\text{s}}{P_1} = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\\\\n&\\approx 0.37 = 37\\,\\%\n\\end{aligned}\n$$ The result is the same as the table's “n. $37\\,\\%$” (n. = about)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large a heat power is transferred from the plant to the environment when the plant runs at its rated power? How much energy is transferred to the environment as heat in one day?",
+          "answer": [
+            {
+              "name": "P2",
+              "value": 2700,
+              "unit": "MW",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Q2",
+              "value": 64.8,
+              "unit": "GWh",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energy is conserved and the plant runs steadily, so $P_1 = P_\\text{s} + P_2$, that is $P_2 = P_1 - P_\\text{s}$, and $Q_2 = P_2 t$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_2 = 2700\\,\\text{MW}$ and $$\n\\begin{aligned}\nQ_2 &= 2700\\,\\text{MW} \\cdot 24\\,\\text{h} \\\\\n&= 64\\,800\\,\\text{MWh}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$Q_2 \\approx 65\\,\\text{GWh}$ or $2.3 \\cdot 10^{14}\\,\\text{J}$; two significant figures, because the electrical power is given as an approximate value to the nearest hundred megawatts."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Seawater flows through the condenser at the rate given in the row *Merivesivirtaus* of the source. Derive in symbols an expression for the change in the temperature of the seawater when the heat transferred to the water per unit time (the heat power) and the volume of water flowing per second are known. By how much does the seawater warm in the condenser? Assess whether the real warming is larger or smaller than the calculated one.",
+          "answer": {
+            "value": 11.31,
+            "unit": "K",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The mass of the water that flows in the time $t$ is $m = \\rho V$ and the heat $Q = P_2 t$ is transferred to it, so $P_2 t = c\\rho V \\Delta T$ and $\\Delta T = \\dfrac{P_2 t}{c\\rho V}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "From the source $\\dfrac{V}{t} = 57\\,\\tfrac{\\text{m}^3}{\\text{s}}$ (16 Nov 2026); $\\Delta T = \\dfrac{2.7 \\cdot 10^{9}\\,\\text{W}}{2.388 \\cdot 10^{8}\\,\\tfrac{\\text{W}}{\\text{K}}} \\approx 11.3\\,\\text{K}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Megawatts to watts and kilojoules to joules; $\\Delta T \\approx 11\\,\\text{K}$, that is $11\\,{}^\\circ\\text{C}$, two significant figures."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "It was assumed that all the heat given off is transferred to the seawater. A small part goes to the environment by other routes, so the real warming is slightly smaller: the result is an upper estimate."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The efficiency of the plant stays clearly below $100\\,\\%$. Use the working principle of a heat engine to explain why not all the heat of the reactor can be turned into electrical energy, even if the turbine and the generator worked without friction and other losses. Use the steam temperature of the source and the temperature of the seawater in your justification.",
+          "criteria": [
+            {
+              "text": "Describes the plant as a heat engine: it takes the heat $Q_1$ from the hot source, does the work $W$ in the turbine and gives the heat $Q_2$ to the colder seawater, and by the conservation of energy $W = Q_1 - Q_2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies that heat flows by itself only from hotter to colder and that the engine can do work only when part of the heat is given to a colder environment; removing friction and other losses does not remove the heat $Q_2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Uses the temperatures: steam $290\\,{}^\\circ\\text{C} \\approx 563\\,\\text{K}$ (source, 16 Nov 2026) and seawater about $283\\,\\text{K}$. The smaller the temperature difference is compared with the temperature of the hot source, the smaller the share of the heat that can turn into work; here the difference of $280\\,\\text{K}$ is only about half of the temperature $563\\,\\text{K}$.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Use the results of parts b and c to assess how the heat transferred to the sea can affect the environment near the plant. Explain also why it is difficult to make use of this heat, for example as district heat, although there is a lot of it.",
+          "criteria": [
+            {
+              "text": "Explains the effect on the environment: the heat transferred to the sea increases the internal energy of the seawater, so the water warms near the outlet, by at most about $11\\,\\text{K}$. Mentions a consequence, for example an area that stays free of ice in winter or an effect on the growth of organisms and on which species live there.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Justifies that the heat is at a low temperature: the cooling water is only about $11\\,\\text{K}$ warmer than the sea, so heat does not flow from it by itself to the clearly hotter water of a heating network. If the heat were taken out hotter, the cold temperature of the heat engine would rise and less electricity would be obtained.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "There is a lot of heat, about $65\\,\\text{GWh}$ a day, but it is poorly usable; in addition the large users of heat are far away, and in a long transfer part of the heat goes to the environment."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-11",
+        "math": "fy3-6",
+        "transfer": "fy3-15",
+        "communication": "fy3-15"
       }
     }
   ]

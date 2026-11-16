@@ -118,7 +118,7 @@
    "choices": [
     {
      "text": "Noin $83\\,\\text{dB}$, koska intensiteetti kaksinkertaistuu.",
-     "feedback": "Oikein. Intensiteetit lasketaan yhteen, ja $L_2 - L_1 = 10\\,\\text{dB} \\cdot \\lg 2 \\approx 3{,}0\\,\\text{dB}$. Kertaa tarvittaessa luvussa *Intensiteetti ja desibeliasteikko*.",
+     "feedback": "Oikein. Intensiteetit lasketaan yhteen, ja $$\n\\begin{aligned}\n&L_2 - L_1 \\\\\n&= 10\\,\\text{dB} \\cdot \\lg 2 \\\\\n&\\approx 3{,}0\\,\\text{dB}\n\\end{aligned}\n$$. Kertaa tarvittaessa luvussa *Intensiteetti ja desibeliasteikko*.",
      "correct": true
     },
     {
@@ -420,7 +420,7 @@
     },
     {
      "text": "Kuulija on heikentävän interferenssin kohdassa: matkaero on $\\tfrac{\\lambda}{2}$.",
-     "feedback": "Oikein. $\\lambda = \\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1{,}70\\,\\text{m}$ ja $\\Delta s = 4{,}25\\,\\text{m} - 3{,}40\\,\\text{m} = 0{,}85\\,\\text{m} = \\tfrac{\\lambda}{2}$. Kertaa tarvittaessa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*.",
+     "feedback": "Oikein. $\\lambda = \\tfrac{340\\,\\text{m/s}}{200\\,\\text{Hz}} = 1{,}70\\,\\text{m}$ ja $$\n\\begin{aligned}\n\\Delta s &= 4{,}25\\,\\text{m} - 3{,}40\\,\\text{m} \\\\\n&= 0{,}85\\,\\text{m} \\\\\n&= \\tfrac{\\lambda}{2}\n\\end{aligned}\n$$. Kertaa tarvittaessa luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi*.",
      "correct": true
     }
    ],
@@ -455,7 +455,7 @@
     }
    ],
    "practice": "Kertaa maanjäristysaallot ja etäisyys aikaerosta luvussa [*Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*](fy5-17.html).",
-   "solution": "**Annettu:** saapumisaikojen ero $\\Delta t = 14{,}2\\,\\text{s}$, P-aallon nopeus $v_\\text{P} = 6{,}0\\,\\text{km/s}$, S-aallon nopeus $v_\\text{S} = 3{,}5\\,\\text{km/s}$\n\n**Kysytty:** etäisyys $d$ järistyksen alkukohdasta yksikössä $\\text{km}$\n\n**Periaate:** P- ja S-aalto lähtevät samalla hetkellä ja kulkevat saman matkan tasaisilla nopeuksilla, oletettavasti samaa reittiä. Hitaampi S-aalto jää jälkeen sitä enemmän, mitä pidempi matka on, joten aikaero on kulkuaikojen erotus (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*).\n\n**Kaava:** $\\Delta t = \\dfrac{d}{v_\\text{S}} - \\dfrac{d}{v_\\text{P}} = d \\cdot \\dfrac{v_\\text{P} - v_\\text{S}}{v_\\text{P} v_\\text{S}}$, joten $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$\n\n**Muunnokset:** Nopeudet ovat yksikössä $\\text{km/s}$ ja aika sekunteina, joten etäisyys saadaan suoraan kilometreinä.\n\n**Sijoitus:** $d = \\dfrac{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}}{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} - 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}} \\cdot 14{,}2\\,\\text{s} = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 14{,}2\\,\\text{s} = 119{,}3\\,\\text{km}$\n\n**Vastaus:** $d \\approx 120\\,\\text{km}$, kaksi merkitsevää numeroa kuten nopeudet $6{,}0\\,\\text{km/s}$ ja $3{,}5\\,\\text{km/s}$.\n\n**Järkevyys:** P-aalto kulkee matkan ajassa $119{,}3\\,\\text{km} : 6{,}0\\,\\text{km/s} \\approx 19{,}9\\,\\text{s}$ ja S-aalto ajassa $119{,}3\\,\\text{km} : 3{,}5\\,\\text{km/s} \\approx 34{,}1\\,\\text{s}$; ero on $14{,}2\\,\\text{s}$, kuten mitattiin. Jokainen sekunti aikaeroa vastaa noin $8\\,\\text{km}$:ä."
+   "solution": "**Annettu:** saapumisaikojen ero $\\Delta t = 14{,}2\\,\\text{s}$, P-aallon nopeus $v_\\text{P} = 6{,}0\\,\\text{km/s}$, S-aallon nopeus $v_\\text{S} = 3{,}5\\,\\text{km/s}$\n\n**Kysytty:** etäisyys $d$ järistyksen alkukohdasta yksikössä $\\text{km}$\n\n**Periaate:** P- ja S-aalto lähtevät samalla hetkellä ja kulkevat saman matkan tasaisilla nopeuksilla, oletettavasti samaa reittiä. Hitaampi S-aalto jää jälkeen sitä enemmän, mitä pidempi matka on, joten aikaero on kulkuaikojen erotus (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*).\n\n**Kaava:** $\\Delta t = \\dfrac{d}{v_\\text{S}} - \\dfrac{d}{v_\\text{P}} = d \\cdot \\dfrac{v_\\text{P} - v_\\text{S}}{v_\\text{P} v_\\text{S}}$, joten $d = \\dfrac{v_\\text{P} v_\\text{S}}{v_\\text{P} - v_\\text{S}}\\,\\Delta t$\n\n**Muunnokset:** Nopeudet ovat yksikössä $\\text{km/s}$ ja aika sekunteina, joten etäisyys saadaan suoraan kilometreinä.\n\n**Sijoitus:** $d = \\dfrac{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}}{6{,}0\\,\\tfrac{\\text{km}}{\\text{s}} - 3{,}5\\,\\tfrac{\\text{km}}{\\text{s}}} \\cdot 14{,}2\\,\\text{s} = 8{,}4\\,\\tfrac{\\text{km}}{\\text{s}} \\cdot 14{,}2\\,\\text{s} = 119{,}3\\,\\text{km}$\n\n**Vastaus:** $d \\approx 120\\,\\text{km}$, kaksi merkitsevää numeroa kuten nopeudet $6{,}0\\,\\text{km/s}$ ja $3{,}5\\,\\text{km/s}$.\n\n**Järkevyys:** P-aalto kulkee matkan ajassa $$\n119{,}3\\,\\text{km} : 6{,}0\\,\\text{km/s} \\approx 19{,}9\\,\\text{s}\n$$ ja S-aalto ajassa $$\n119{,}3\\,\\text{km} : 3{,}5\\,\\text{km/s} \\approx 34{,}1\\,\\text{s}\n$$; ero on $14{,}2\\,\\text{s}$, kuten mitattiin. Jokainen sekunti aikaeroa vastaa noin $8\\,\\text{km}$:ä."
   },
   {
    "id": "tarkistus-3",

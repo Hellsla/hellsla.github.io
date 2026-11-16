@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a6262ad6a5a59e36
-SCOPE: delta added-exercise from 166963488269ae93 base 8f23aa7ae3bd
+CONTENT-HASH: 9dcbe1d153d30989
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy6-16/talo-ex (task 16-17) — the time axis starts at 18 h but the tick at the origin has no label (labels begin at 19), so the first hour's start is not named; add $18$ under the first tick.
-- [Minor] fy6-16/talo-ex — the line is orange, the project's acceleration colour; here it is a power graph, not a vector figure, so no conflict, just noted.
-- [Minor] fy6-16-L2-09 Vastaus — the shown answer chip says $2{,}7\,\text{€}$ while Sijoitus ends at $2{,}72\,\text{€}$; both are explained by the line on significant figures, so only a note.
+- [Minor] fy6-16-L2-03 (16-11) Vastaus — the chip shows 11 A while Sijoitus ends at 11,96 A; the line under the chip explains the rounding down, so only a note.
+- [Minor] fy6-16-L3-02 (16-19) Vastaus — the explanation starts with a bare parenthesis after the chip, "(laskettu 156 %), ..."; reads fine, optionally "Laskettu 156 %; kaksi merkitsevää numeroa ...".
 
 ## Checked
-- review/shots/fy6-16-open-exercises-L2-1280-11.png (task 16-17 (L2-09): text, figure fy6-16/talo-ex, answer chip, the start of the solution; stamp hash a6262ad6a5a59e36) and -12.png (the rest of the open solution to Järkevyys).
-- Graph: quantity and unit on both axes ($P\ (\text{kW})$, $t\ (\text{h})$), gridlines at the hours and every kW, constant steps drawn flat; the description gives the same values and does not give the cost. Chains aligned, units upright, colon for division, case ending ($4\,\text{kW}$:n). The set still reads as one.
+- review/shots/fy6-16-open-exercises-L2-1280-2, -3, -4, -5, -6, -7, -9, -10.png (16-10 to 16-16, including L2-03 and L2-05 with their answer chips, solutions and checks).
+- review/shots/fy6-16-open-exercises-L3-1280-2, -3, -5, -7.png (16-19 and 16-20, L3-04 with 1,37 · 10^3 €, L3-05).
+- Changed text read in the captures: the limit sentences ("raja-arvo pyöristetään alaspäin / ylöspäin"), 13,0 A + 11 A = 24 A, 10 400 W and 24,9 A, the 1,6 · 10^2 % and 1,37 · 10^3 € forms. Units upright with a thin space, decimal comma, \cdot, colon for division, case endings (60 %:n). Chains and rows unclipped; the set still reads as one.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

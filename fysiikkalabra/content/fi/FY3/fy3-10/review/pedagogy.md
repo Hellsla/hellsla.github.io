@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d64c69c82972df02
+CONTENT-HASH: a2e76a1a16d904ec
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
 
 ## Polish
-1. lesson.md, Kaava: n = N/N_A and n = m/M as two named rows is clearer than the old chain; the symbols N, m, M are defined right under the table and the mole-mass figure shows n = m/M. No inquiry or exercise breakage found.
-2. Optional: one sentence that the two rows are combined when N is wanted from m (N = N_A m/M), as exercises with both steps need it.
+- none
+
+## Checked
+- Delta: the Järkevyys line of the balloon task now reads 3360 kg - 2640 kg = 720 kg instead of the loose approximation 700 kg; the subtraction is exact and the claim 'kevyempää' still follows.
+- No symbol, answer, hint or activity changed; the model solution still follows the seven steps. Previous PASS stands.

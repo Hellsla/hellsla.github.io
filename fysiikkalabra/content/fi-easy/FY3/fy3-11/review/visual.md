@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 103dbcbc76a0699e
+CONTENT-HASH: b05343478c76c7ec
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
+None.
 
 ## Polish
-None new (earlier polish unchanged).
+- [Minor] inquiry.json check-c2 option 3 feedback — the new wording ("Sähkövastuksessa $1{,}0\,\text{kWh}$ sähköä kasvattaisi vastuksen sisäenergiaa täsmälleen $1{,}0\,\text{kWh}$, ja tämä energia siirtyisi lämpönä huoneeseen") reads fluently; its feedback state is not captured open (another option was selected), judged from source.
 
 ## Checked
-Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: fi-easy; no clipping in the changed places.
+- Delta: diff read (prose only: sisäenergia / lämpönä wording). open-tarkista-1280-2 (Käsitetehtävä Lämpöpumppu: kWh upright, options and feedback box readable, layout intact).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

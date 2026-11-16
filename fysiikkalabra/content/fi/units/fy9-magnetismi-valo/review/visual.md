@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 753f6c76a98443bb
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0944d5d3eb93fbe8; full on the chart, delta on the rest.
+CONTENT-HASH: 1b2d8c8c52bd975c
+Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- A: aria-label has double spaces (line-join artefacts after 'mikä', 'kertaa', 'jännite', 'suhde'); harmless to screen readers, tidy for cleanliness.
+- C s7 e): "teholla $P = RI^2$, joka kasvaa virran neliössä" → "…, joka on verrannollinen virran neliöön".
 
 ## Checked
-- Opened docs/figures/fy9-tunnistus/fy9-magnetismi-valo-fi-360.png: 9 rows (F_M … hilayhtälö); no label clipped, overlapping or cramped, white on #1a4d2e pills legible, pill style, spine, start box and spacing identical to the other units' charts, all labels LaTeX (upright names, italic symbols).
-- ARIA_KARTTA in lessons/units/fy9-magnetismi-valo/figures.py read against every row: Finnish, complete, same rows in same order, matches the chart.
-- Diff: teacher.md 'käsitekartta' -> 'tunnistuskaavio' and the figure code; remaining diff lines (unit.md text) read for wording and term consistency.
+- Hash 1b2d8c8c52bd975c at the start and the end; captures re-made for it (`screenshot.py --if-stale`: 173 captures).
+- Diff against c502cb9e26 read: only `sovella/solutions.md` s7 e), blank lines at the three places round 1 named; no word changed.
+- Opened: stage-exercises-1280-43, -45; stage-exercises-390-58, -59.
+- s7 e) Mallivastaus is now four separate paragraphs (the source's figures; the magnetic force perpendicular to the velocity; the larger energy needing a stronger field and superconductivity; the radius not calculable classically), the longest about 85 words: 4, 9, 9 and 3 lines at 1280 px, each fitting well inside one capture at 390 px. Round 1's Major is resolved.
+- Paragraph spacing is the same as elsewhere in the solution card; inline formulas ($P = RI^2$, $RI^2 = 0$, $r = \frac{mv}{qB}$, $1{,}9\,\text{K}$) inside the column at 390 px, nothing clipped.
+- Around it: Kysytty and Periaate of e), the end of d), Yleisiä virheitä, Hyväksytään myös and the rubric b)–c) kept their layout; no overflow.

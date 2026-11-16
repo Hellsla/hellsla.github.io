@@ -102,7 +102,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$F_\\text{ka} = \\dfrac{82{,}0\\,\\text{kg} \\cdot 15{,}0\\,\\text{m/s}}{1{,}6\\,\\text{s}} \\approx 769\\,\\text{N}$"
+       "detail": "$$\n\\begin{aligned}\nF_\\text{ka} &= \\dfrac{82{,}0\\,\\text{kg} \\cdot 15{,}0\\,\\text{m/s}}{1{,}6\\,\\text{s}} \\\\\n&\\approx 769\\,\\text{N}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -216,7 +216,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$v_2' = 0{,}62\\,\\text{m/s} - 0{,}05\\,\\text{m/s} = 0{,}57\\,\\text{m/s}$"
+       "detail": "$$\n\\begin{aligned}\nv_2' &= 0{,}62\\,\\text{m/s} - 0{,}05\\,\\text{m/s} \\\\\n&= 0{,}57\\,\\text{m/s}\n\\end{aligned}\n$$"
       },
       {
        "text": "Vertaa liike-energioita: jälkeen $\\approx 3{,}11\\,\\text{J}$, ennen $\\approx 3{,}65\\,\\text{J}$, eli noin $85\\,\\%$ säilyy, joten törmäys on lähes mutta ei täysin kimmoisa.",
@@ -244,7 +244,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$s = \\dfrac{(0{,}57\\,\\text{m/s})^2}{2 \\cdot 0{,}01015 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 1{,}6\\,\\text{m}$"
+       "detail": "$$\n\\begin{aligned}\ns &= \\dfrac{(0{,}57\\,\\text{m/s})^2}{2 \\cdot 0{,}01015 \\cdot 9{,}81\\,\\text{m/s}^2} \\\\\n&\\approx 1{,}6\\,\\text{m}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -503,7 +503,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "Nyt $P \\approx 0{,}90 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 120\\,\\tfrac{\\text{m}^3}{\\text{s}} \\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 9{,}0\\,\\text{m} \\approx 9{,}5\\,\\text{MW}$; korkeudella $12\\,\\text{m}$ noin $12{,}7\\,\\text{MW}$."
+       "detail": "Nyt $$\n\\begin{aligned}\nP &\\approx 0{,}90 \\cdot 1000\\,\\tfrac{\\text{kg}}{\\text{m}^3} \\cdot 120\\,\\tfrac{\\text{m}^3}{\\text{s}} \\\\\n&\\cdot 9{,}81\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot 9{,}0\\,\\text{m} \\\\\n&\\approx 9{,}5\\,\\text{MW}\n\\end{aligned}\n$$; korkeudella $12\\,\\text{m}$ noin $12{,}7\\,\\text{MW}$."
       },
       {
        "text": "Perustelee, että $12 : 9 = \\tfrac43$, joten korotus kasvattaa tehoa kolmanneksella, saman verran kuin kolmanneksen suurempi virtaama.",
@@ -572,7 +572,7 @@
      "text": "Arvioi ryhmän johtopäätös. Mistä mittausten ero todennäköisesti johtuu?",
      "criteria": [
       {
-       "text": "Toteaa, että lämmöksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää: liikemäärä ei ole energian laji.",
+       "text": "Toteaa, että sisäenergiaksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää: liikemäärä ei ole energian laji.",
        "tag": "concept",
        "points": 1
       },
@@ -726,7 +726,7 @@
       {
        "key": "equation",
        "points": 1,
-       "detail": "Energiaperiaate liikkeelle törmäyksen jälkeen: $\\tfrac12 (M + m)\\,v'^2 + (M + m)\\,g s - F s = 0$"
+       "detail": "Energiaperiaate liikkeelle törmäyksen jälkeen: $$\n\\begin{aligned}\n&\\tfrac12 (M + m)\\,v'^2 + (M + m)\\,g s \\\\\n&- F s \\\\\n&= 0\n\\end{aligned}\n$$"
       },
       {
        "text": "Ottaa huomioon, että myös järkäleen ja paalun potentiaalienergia pienenee painumisen aikana.",
@@ -736,7 +736,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$F = \\dfrac{15\\,675\\,\\text{J}}{0{,}018\\,\\text{m}} + 4600\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 916\\,\\text{kN}$"
+       "detail": "$$\n\\begin{aligned}\nF &= \\dfrac{15\\,675\\,\\text{J}}{0{,}018\\,\\text{m}} \\\\\n&+ 4600\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\approx 916\\,\\text{kN}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -764,7 +764,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\Delta T = \\dfrac{50 \\cdot 0{,}40 \\cdot 4926\\,\\text{J}}{460\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 30\\,\\text{kg}} \\approx 7{,}1\\,\\text{K}$"
+       "detail": "$$\n\\begin{aligned}\n\\Delta T &= \\dfrac{50 \\cdot 0{,}40 \\cdot 4926\\,\\text{J}}{460\\,\\tfrac{\\text{J}}{\\text{kg} \\cdot \\text{K}} \\cdot 30\\,\\text{kg}} \\\\\n&\\approx 7{,}1\\,\\text{K}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",

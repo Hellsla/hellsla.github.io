@@ -72,6 +72,13 @@ those). `carry` then writes review/carry.tsv (date, reviewer, from-hash, to-hash
 `status` counts that PASS for the new hash. CI (`verify`) re-derives every carry that is in use from git history
 and fails if the change was not what the row says. A reviewer whose last verdict was FAIL always reviews in full.
 
+Lighter science review of numbers and answers (teacher 2026-11-16, "jos pyöristyskorjaus niin ei tarvitse täyttä
+katselmointia"; tokens). A changed number, formula, symbol or unit (category "numbers") and a changed answer, unit,
+tolerance or answers.py (category "answers") ask the science reviewer for a delta, no longer a full review: it reads
+the changed lines in their context (the exercise, the step or the paragraph they stand in) and checks their
+calculations again. New content (added exercises, new text: "added-exercise", "figure", "experiment"), the simulation's
+code and a weakened test keep their modes, and a FAIL still means a full review.
+
 Added exercises (teacher 2026-11-12). When the only change to an exercise set since a reviewer's PASS is that whole
 exercises were added, or an exercise was replaced by a new one (its id removed and another added, or the same id with
 its text and its solution rewritten), the category is "added-exercise" alone and all three reviewers review a delta
@@ -139,8 +146,8 @@ RULES = {                       # category: (science, pedagogy, visual)
     "chapter-ref":    ("none",  "none", "none"),    # a reference "(luku *<title>*)" follows a chapter's new title, which is a current title (teacher 2026-10-29)   # a learning goal (inquiry.json learn) rephrased to complete "Tällä tunnilla opit", same symbols and numbers (teacher 2026-10-29)
     "section-name":   ("delta", "delta", "delta"),   # a section heading given or changed its name, key unchanged (## Kaava: Lämpömäärä)
     "wording":        ("delta", "delta", "delta"),   # prose without a number, formula, symbol or unit
-    "numbers":        ("full",  "delta", "delta"),   # a changed line carries a number, formula, symbol or unit
-    "answers":        ("full",  "delta", "none"),   # an exercise answer, unit or tolerance; answers.py code
+    "numbers":        ("delta", "delta", "delta"),   # a changed line carries a number, formula, symbol or unit; science delta (teacher 2026-11-16)
+    "answers":        ("delta", "delta", "none"),   # an exercise answer, unit or tolerance; answers.py code; science delta (teacher 2026-11-16)
     "tests-weakened": ("full",  "none", "none"),    # a simulation assertion removed or loosened
     "levels":         ("delta", "full", "delta"),    # an exercise's level or id
     "structure":      ("delta", "full", "delta"),    # headings, stages, display blocks; inquiry stage, type, reveal, sections

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b06b70d01d7351bf
-Review of the recognition chart (queue 9c) and the term change against the version passed at 31c49fc33ef52617; full on the chart, delta on the rest.
+CONTENT-HASH: 36ca403bcce0eb0a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B: the first pill F_E = kQ1Q2/r² fills its box almost edge to edge at 360 px (tight but not clipped); the symbol E means field strength in row 2 and energy in row 7 within one chart (MAFY usage, a reader may pause).
-- B: aria-labels contain double spaces at line joins (harmless to screen readers).
+- (none)
 
 ## Checked
-- Chart PNGs at 360 px (all units) and 1280 px (mittaaminen): no clipped, overlapping or cramped label; white on #1a4d2e legible; pill style and spacing identical across units; KaTeX subscripts, upright names, \overline vectors render correctly.
-- Rows checked: Coulomb, E=F_E/Q, U=Ed, QU=½mv², Q=CU, C=ε0εr A/d, E=½CU², ΣΔV=0. 
-- ARIA_KARTTA (Finnish, in figures.py and unit.md) read against every row: same rows, same results, complete, right language.
-- Diff of the remaining lines (term change, teacher.md/unit text, figure code): no regressions found.
+- Hunks solutions.md: Vastaus of the constant term $b$ (the reason for two significant figures) and Järkevyys of the ion engine (field against air's breakdown strength $3\,\text{MV/m}$). Both sentences are grammatical and unambiguous; $1{,}1 : 3 \approx 0{,}37$ fits "noin kolmasosa".
+- Captures opened: `fy9-sahkokentta-stage-exercises-390-26.png`, `-390-47.png`, `-390-48.png`, `fy9-sahkokentta-stage-exercises-1280-35.png`: answer box and note intact, the Järkevyys block wraps cleanly, units upright.
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

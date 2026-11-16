@@ -5,6 +5,6 @@
   },
   {
     "q": "Kuinka monta kilowattituntia $1500\\,\\text{W}$:n lämmitin käyttää $4{,}0$ tunnissa?",
-    "a": "$E = Pt = 1{,}5\\,\\text{kW} \\cdot 4{,}0\\,\\text{h} = 6{,}0\\,\\text{kWh}$."
+    "a": "$$\n\\begin{aligned}\nE &= Pt \\\\\n&= 1{,}5\\,\\text{kW} \\cdot 4{,}0\\,\\text{h} \\\\\n&= 6{,}0\\,\\text{kWh}\n\\end{aligned}\n$$."
   }
 ]

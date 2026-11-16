@@ -195,7 +195,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "Lengths in metres by substituting: $210\\,\\text{mm} = 210 \\cdot 0.001\\,\\text{m} = 0.210\\,\\text{m}$; mass in grams."
+              "detail": "Lengths in metres by substituting: $$\n\\begin{aligned}\n&210\\,\\text{mm} \\\\\n&= 210 \\cdot 0.001\\,\\text{m} \\\\\n&= 0.210\\,\\text{m}\n\\end{aligned}\n$$; mass in grams."
             },
             {
               "key": "calculation",
@@ -409,7 +409,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m = \\rho V$ without the mass of the measuring cylinder: $0.919\\,\\text{g/cm}^3 \\cdot 1500\\,\\text{cm}^3 \\approx 1380\\,\\text{g}$."
+              "detail": "$m = \\rho V$ without the mass of the measuring cylinder: $$\n\\begin{aligned}\n&0.919\\,\\text{g/cm}^3 \\cdot 1500\\,\\text{cm}^3 \\\\\n&\\approx 1380\\,\\text{g}\n\\end{aligned}\n$$."
             },
             {
               "key": "units_precision",
@@ -546,7 +546,7 @@
       "title": "Speed of a toy car from a video",
       "source": "example",
       "source_note": "Invented example data: the numbers are calculated from a model, and small random variation has been added to them, as in a measurement.",
-      "text": "A group filmed with a phone a toy car that moved in a straight line on a level floor. In the video analysis program the scale was set to a $1.00\\,\\text{m}$ section of a measuring tape taped to the floor, and the front of the car was marked in the frames every half second. The timing began when the car was already moving.\n\n| $t\\ (\\text{s})$ | $x\\ (\\text{m})$ |\n|---|---|\n| $0.0$ | $0.35$ |\n| $0.5$ | $0.61$ |\n| $1.0$ | $0.83$ |\n| $1.5$ | $1.32$ |\n| $2.0$ | $1.30$ |\n| $2.5$ | $1.57$ |\n| $3.0$ | $1.78$ |\n\nAn extract from the group's report:\n\n> We joined the points in the graph with a line. We removed the point $t = 1.5\\,\\text{s}$, because it did not fall on the same line as the others. We calculated the speed from the last two points: $(1.78\\,\\text{m} - 1.57\\,\\text{m}) : 0.5\\,\\text{s} = 0.42\\,\\text{m/s}$. Because the result felt small, we also fitted a line through the origin, whose slope was $0.6341\\,\\text{m/s}$. Conclusion: the speed of the toy car is $0.6341\\,\\text{m/s}$.",
+      "text": "A group filmed with a phone a toy car that moved in a straight line on a level floor. In the video analysis program the scale was set to a $1.00\\,\\text{m}$ section of a measuring tape taped to the floor, and the front of the car was marked in the frames every half second. The timing began when the car was already moving.\n\n| $t\\ (\\text{s})$ | $x\\ (\\text{m})$ |\n|---|---|\n| $0.0$ | $0.35$ |\n| $0.5$ | $0.61$ |\n| $1.0$ | $0.83$ |\n| $1.5$ | $1.32$ |\n| $2.0$ | $1.30$ |\n| $2.5$ | $1.57$ |\n| $3.0$ | $1.78$ |\n\nAn extract from the group's report:\n\n> We joined the points in the graph with a line. We removed the point $t = 1.5\\,\\text{s}$, because it did not fall on the same line as the others. We calculated the speed from the last two points: $$\n\\begin{aligned}\n&(1.78\\,\\text{m} - 1.57\\,\\text{m}) : 0.5\\,\\text{s} \\\\\n&= 0.42\\,\\text{m/s}\n\\end{aligned}\n$$. Because the result felt small, we also fitted a line through the origin, whose slope was $0.6341\\,\\text{m/s}$. Conclusion: the speed of the toy car is $0.6341\\,\\text{m/s}$.",
       "parts": [
         {
           "id": "a",
@@ -757,7 +757,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$1\\,\\text{MPa} \\cdot \\text{ml} = 10^{6}\\,\\text{Pa} \\cdot 10^{-6}\\,\\text{m}^3 = 1\\,\\text{J}$ and $T = 295.15\\,\\text{K}$."
+              "detail": "$$\n\\begin{aligned}\n&1\\,\\text{MPa} \\cdot \\text{ml} \\\\\n&= 10^{6}\\,\\text{Pa} \\cdot 10^{-6}\\,\\text{m}^3 \\\\\n&= 1\\,\\text{J}\n\\end{aligned}\n$$ and $T = 295.15\\,\\text{K}$."
             },
             {
               "key": "calculation",

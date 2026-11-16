@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 43e6c2262b5d5366
+CONTENT-HASH: 17e2a10800bbe32f
 
 ## Blocking
-None. Built preview/en/fy3-10.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
+- none
 
 ## Polish
-none.
+- [Minor] the changed balloon solution (700 → 720 kg wording) sits in a closed optional box; judged from source.
 
-(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)
+## Checked
+- Diff: one Reasonableness sentence in an optional solution ("3360 kg − 2640 kg, or 720 kg"). Opened none of the solution itself (closed in every capture); checked the source: LaTeX, thin spaces and units upright, sentence reads naturally.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

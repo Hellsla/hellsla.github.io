@@ -16,9 +16,16 @@
 **Periaate:** Kieli ja sen kireys pysyvät samoina. Siksi aallon nopeus kielessä ei muutu. Nauha on uusi solmu. Siksi perustaajuudella värähtelevä osa on puolet uudesta aallonpituudesta (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Nauhan etäisyys satulasta on koko pituuden ja värähtelevän osan erotus.
 **Kaava:** $f' = \dfrac{v}{2L'}$, joten $L' = \dfrac{v}{2f'}$, ja etäisyys satulasta on $d = L - L' = L - \dfrac{v}{2f'}$
 **Muunnokset:** Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** $L' = \dfrac{142{,}56\,\text{m/s}}{2 \cdot 123{,}5\,\tfrac{1}{\text{s}}} = 0{,}5772\,\text{m} = 577{,}2\,\text{mm}$, ja $648\,\text{mm} - 577{,}2\,\text{mm} = 70{,}8\,\text{mm}$
+**Sijoitus:** $L' = \dfrac{142{,}56\,\text{m/s}}{2 \cdot 123{,}5\,\tfrac{1}{\text{s}}} = 0{,}5772\,\text{m} = 577{,}2\,\text{mm}$, ja $$
+\begin{aligned}
+&648\,\text{mm} - 577{,}2\,\text{mm} \\
+&= 70{,}8\,\text{mm}
+\end{aligned}
+$$
 **Vastaus:** Värähtelevän osan on oltava $L' \approx 577\,\text{mm}$. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa. Nauha on noin $71\,\text{mm}$:n päässä satulasta. Etäisyys on erotus, joten se tunnetaan millimetrin tarkkuudella.
-**Järkevyys:** Taajuus kasvaa kertoimella $123{,}5 : 110{,}0 \approx 1{,}12$. Siksi pituuden on lyhennyttävä samalla kertoimella: $648\,\text{mm} : 1{,}123 \approx 577\,\text{mm}$. Kitarassa toinen nauha on noin $7\,\text{cm}$:n päässä satulasta, joten tulos sopii.
+**Järkevyys:** Taajuus kasvaa kertoimella $123{,}5 : 110{,}0 \approx 1{,}12$. Siksi pituuden on lyhennyttävä samalla kertoimella: $$
+648\,\text{mm} : 1{,}123 \approx 577\,\text{mm}
+$$. Kitarassa toinen nauha on noin $7\,\text{cm}$:n päässä satulasta, joten tulos sopii.
 
 ### c)
 **Annettu:** $6$ huojahdusta $4{,}0$ sekunnissa, vertailuääni $110{,}0\,\text{Hz}$; kiristäminen hidastaa huojuntaa
@@ -42,7 +49,13 @@
 - c-kohdassa huojuntataajuudeksi otetaan $6\,\text{Hz}$, tai annetaan molemmat vaihtoehdot ilman perustelua.
 
 ### Hyväksytään myös
-- b-kohdassa ratkaisu suhteen avulla: $L' = L \cdot \dfrac{f_1}{f'} = 648\,\text{mm} \cdot \dfrac{110{,}0}{123{,}5} \approx 577\,\text{mm}$, koska nopeus on sama.
+- b-kohdassa ratkaisu suhteen avulla: $$
+\begin{aligned}
+L' &= L \cdot \dfrac{f_1}{f'} \\
+&= 648\,\text{mm} \cdot \dfrac{110{,}0}{123{,}5} \\
+&\approx 577\,\text{mm}
+\end{aligned}
+$$, koska nopeus on sama.
 
 ## fy9-aallot-s2
 
@@ -74,7 +87,9 @@
 **Muunnokset:** Taajuus pysyy yksikössä $\text{kHz}$, koska nopeuksien suhteella ei ole yksikköä.
 **Sijoitus:** $f_\text{s} = 30{,}0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30{,}54\,\text{kHz}$ ja $f = 30{,}54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31{,}08\,\text{kHz}$
 **Vastaus:** $f \approx 31{,}1\,\text{kHz}$ eli noin $1{,}1\,\text{kHz}$ korkeampi kuin lähetetty pulssi. Vastauksessa on kolme merkitsevää numeroa kuten taajuudessa $30{,}0\,\text{kHz}$.
-**Järkevyys:** Pienillä nopeuksilla kumpikin vaihe nostaa taajuutta noin osuudella $\tfrac{v_\text{l}}{v} = \tfrac{6{,}0}{340} \approx 1{,}8\,\%$. Yhteensä nousu on noin $3{,}5\,\%$, ja $30{,}0\,\text{kHz} \cdot 1{,}035 \approx 31{,}1\,\text{kHz}$. Kuultu taajuus on suurempi kuin $f_0$, kuten lähestyessä pitää olla.
+**Järkevyys:** Pienillä nopeuksilla kumpikin vaihe nostaa taajuutta noin osuudella $\tfrac{v_\text{l}}{v} = \tfrac{6{,}0}{340} \approx 1{,}8\,\%$. Yhteensä nousu on noin $3{,}5\,\%$, ja $$
+30{,}0\,\text{kHz} \cdot 1{,}035 \approx 31{,}1\,\text{kHz}
+$$. Kuultu taajuus on suurempi kuin $f_0$, kuten lähestyessä pitää olla.
 
 ### d)
 **Kysytty:** miksi hyttystä ei voisi havaita äänellä, jonka taajuus on $3\,\text{kHz}$
@@ -277,7 +292,13 @@
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa, ja mikä on taso talojen kohdalla
 **Periaate:** Pistemäisen lähteen teho jakautuu pallon pinnalle. Siksi $I = \tfrac{P}{4\pi r^2}$. Tasojen erotus on $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$ (luku *Intensiteetti ja desibeliasteikko*).
-**Mallivastaus:** Väite on väärä. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan. Silloin taso pienenee $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, eikä se puolitu. $40\,\text{m}$:n päässä taso on noin $100\,\text{dB}$. Desibeliasteikko on logaritminen. Siksi desibelilukemaa ei voi jakaa samalla tavalla kuin intensiteettiä. Talojen kohdalla etäisyys on $20$-kertainen. Siksi intensiteetti on $\tfrac{1}{400}$-osa, ja taso on $106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \approx 106\,\text{dB} - 26\,\text{dB} = 80\,\text{dB}$. Se on yhtä kova kuin vilkkaalla kadulla. Malli on karkea arvio. Ilma ja maasto vaimentavat ääntä. Myötätuuli ja järven pinnan heijastukset voivat kuitenkin nostaa tasoa. Musiikki kuuluu taloille joka tapauksessa selvästi.
+**Mallivastaus:** Väite on väärä. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan. Silloin taso pienenee $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, eikä se puolitu. $40\,\text{m}$:n päässä taso on noin $100\,\text{dB}$. Desibeliasteikko on logaritminen. Siksi desibelilukemaa ei voi jakaa samalla tavalla kuin intensiteettiä. Talojen kohdalla etäisyys on $20$-kertainen. Siksi intensiteetti on $\tfrac{1}{400}$-osa, ja taso on $$
+\begin{aligned}
+&106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \\
+&\approx 106\,\text{dB} - 26\,\text{dB} \\
+&= 80\,\text{dB}
+\end{aligned}
+$$. Se on yhtä kova kuin vilkkaalla kadulla. Malli on karkea arvio. Ilma ja maasto vaimentavat ääntä. Myötätuuli ja järven pinnan heijastukset voivat kuitenkin nostaa tasoa. Musiikki kuuluu taloille joka tapauksessa selvästi.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja miksi aidan taakse kuuluu eniten matalia ääniä
@@ -287,10 +308,17 @@
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, sallittu altistusaika ja kuulonsuojainten vaikutus
 **Periaate:** Melun nyrkkisäännössä ylempi toiminta-arvo $85\,\text{dB}$ vastaa aikaa $8\,\text{h}$. Jokainen $3\,\text{dB}$:n nousu puolittaa sallitun ajan: $t_\text{sall} = \tfrac{t_0}{2^{\,n}}$, $n = \tfrac{L - 85\,\text{dB}}{3\,\text{dB}}$ (luku *Melu, akustiikka ja äänentoisto*). Kuulonsuojain pienentää tasoa, joka pääsee korvaan. Taso pienenee suojaimen vaimennuksen verran.
-**Mallivastaus:** Väite on väärä. Taso $100\,\text{dB}$ on $15\,\text{dB}$ eli viisi $3\,\text{dB}$:n askelta toiminta-arvon yläpuolella. Siksi sallittu aika on $8\,\text{h} : 2^5 = 8\,\text{h} : 32 = 0{,}25\,\text{h} = 15\,\text{min}$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \approx 32$-kertainen. Siksi kuulolle haitallinen annos kertyy noin $\tfrac{1}{32}$-osassa ajasta. Neljän tunnin konsertti ilman suojaimia on siis moninkertainen annos. Hyvin asetetuilla $20\,\text{dB}$:n suojaimilla taso korvalla on noin $80\,\text{dB}$. Se on alle $85\,\text{dB}$:n. Siksi neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan. Nyrkkisääntö on arvio, ei takuu. Eri ihmisten kuulo kestää melua eri tavoin.
+**Mallivastaus:** Väite on väärä. Taso $100\,\text{dB}$ on $15\,\text{dB}$ eli viisi $3\,\text{dB}$:n askelta toiminta-arvon yläpuolella. Siksi sallittu aika on $$
+\begin{aligned}
+&8\,\text{h} : 2^5 \\
+&= 8\,\text{h} : 32 \\
+&= 0{,}25\,\text{h} \\
+&= 15\,\text{min}
+\end{aligned}
+$$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \approx 32$-kertainen. Siksi kuulolle haitallinen annos kertyy noin $\tfrac{1}{32}$-osassa ajasta. Neljän tunnin konsertti ilman suojaimia on siis moninkertainen annos. Hyvin asetetuilla $20\,\text{dB}$:n suojaimilla taso korvalla on noin $80\,\text{dB}$. Se on alle $85\,\text{dB}$:n. Siksi neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan. Nyrkkisääntö on arvio, ei takuu. Eri ihmisten kuulo kestää melua eri tavoin.
 
 ### Yleisiä virheitä
-- a-kohdassa taso lasketaan kääntäen verrannolliseksi etäisyyteen. Silloin pudotus on $3\,\text{dB}$ jokaista kaksinkertaistumista kohti. Tai desibelit jaetaan samalla tavalla kuin intensiteetit.
+- a-kohdassa intensiteetti lasketaan kääntäen verrannolliseksi etäisyyteen. Silloin pudotus on $3\,\text{dB}$ jokaista kaksinkertaistumista kohti. Tai desibelit jaetaan samalla tavalla kuin intensiteetit.
 - b-kohdassa selitetään, että matalat äänet etenevät nopeammin. Ilmassa nopeus ei kuitenkaan riipu taajuudesta.
 - c-kohdassa $15\,\text{dB}$ tulkitaan $15\,\%$:n lisäykseksi, tai aika puolitetaan $15\,\text{dB}$:n välein.
 
@@ -309,7 +337,12 @@
 ### b)
 **Kysytty:** onko ryhmän johtopäätös perusteltu
 **Periaate:** Kaasussa äänen nopeus kasvaa, kun lämpötila nousee. Ilmassa nopeus kasvaa noin $0{,}6\,\text{m/s}$ jokaista celsiusastetta kohti (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Kahden arvon eroa ei voi osoittaa, jos ero on pienempi kuin epävarmuus (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Johtopäätös ei ole perusteltu. Kirjan arvo $343\,\text{m/s}$ koskee ilmaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Lämpötilassa $5\,{}^\circ\text{C}$ äänen pitäisi kulkea hitaammin, noin $343\,\text{m/s} - 0{,}6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \approx 334\,\text{m/s}$. Ryhmän tulos $(350 \pm 50)\,\text{m/s}$ kattaa sekä $334\,\text{m/s}$:n että $343\,\text{m/s}$:n. Siksi mittaus ei pysty erottamaan niitä. Mittaus ei osoita mitään eroa, eikä varsinkaan sitä eroa, jonka ryhmä väittää. Tärkein virhelähde on käsiajanotto. Reaktioaika on sekunnin kymmenesosien luokkaa, kun kello käynnistetään ja pysäytetään. Se on yhtä suuri kuin tulosten vaihtelu $0{,}14\,\text{s}$. Lisäksi viive ei välttämättä ole sama molemmissa päissä. Kaiun kulkuaika on vain noin $0{,}5\,\text{s}$. Siksi jo $0{,}02\,\text{s}$:n systemaattinen viive muuttaa tulosta $4\,\%$. Matkan $85{,}0\,\text{m}$ epävarmuus on merkityksetön. Oikea johtopäätös on tämä: nopeus oli noin $350\,\text{m/s}$, ja epävarmuus oli suuri. Kylmässä ilmassa ääni kulkee hitaammin, ei nopeammin.
+**Mallivastaus:** Johtopäätös ei ole perusteltu. Kirjan arvo $343\,\text{m/s}$ koskee ilmaa, jonka lämpötila on $20\,{}^\circ\text{C}$. Lämpötilassa $5\,{}^\circ\text{C}$ äänen pitäisi kulkea hitaammin, noin $$
+\begin{aligned}
+&343\,\text{m/s} - 0{,}6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \\
+&\approx 334\,\text{m/s}
+\end{aligned}
+$$. Ryhmän tulos $(350 \pm 50)\,\text{m/s}$ kattaa sekä $334\,\text{m/s}$:n että $343\,\text{m/s}$:n. Siksi mittaus ei pysty erottamaan niitä. Mittaus ei osoita mitään eroa, eikä varsinkaan sitä eroa, jonka ryhmä väittää. Tärkein virhelähde on käsiajanotto. Reaktioaika on sekunnin kymmenesosien luokkaa, kun kello käynnistetään ja pysäytetään. Se on yhtä suuri kuin tulosten vaihtelu $0{,}14\,\text{s}$. Lisäksi viive ei välttämättä ole sama molemmissa päissä. Kaiun kulkuaika on vain noin $0{,}5\,\text{s}$. Siksi jo $0{,}02\,\text{s}$:n systemaattinen viive muuttaa tulosta $4\,\%$. Matkan $85{,}0\,\text{m}$ epävarmuus on merkityksetön. Oikea johtopäätös on tämä: nopeus oli noin $350\,\text{m/s}$, ja epävarmuus oli suuri. Kylmässä ilmassa ääni kulkee hitaammin, ei nopeammin.
 
 ### c)
 **Kysytty:** suunnitelma mittaukselle, jolla lämpötilan vaikutus äänen nopeuteen havaitaan
@@ -340,9 +373,33 @@
 **Periaate:** Hyppääjään vaikuttavat paino ja nauhan voima. Nauhan voima on harmoninen kuten jousen voima. Kumpikin voima on konservatiivinen. Siksi mekaaninen energia säilyy koko pudotuksen ajan (luvut *Mekaanisen energian säilyminen ja energiaperiaate* ja *Jousivoima ja jousen energia*). Alimmassa kohdassa nopeus on nolla. Siksi painon potentiaalienergian muutos koko matkalta $L_0 + x$ on muuttunut nauhan potentiaalienergiaksi. Nollataso valitaan alimpaan kohtaan.
 **Kaava:** $mg(L_0 + x) = \tfrac12 kx^2$, eli $\tfrac12 kx^2 - mgx - mgL_0 = 0$. Yhtälön positiivinen ratkaisu on $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$. Syvyys sillan alapuolella on $d = L_0 + x$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $mg = 72{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 706{,}32\,\text{N}$, $(mg)^2 = (706{,}32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ ja $2kmgL_0 = 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706{,}32\,\text{N} \cdot 18{,}0\,\text{m} \approx 3\,051\,302\,\text{N}^2$. Siksi neliöjuuri on $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884{,}2\,\text{N}$ ja $x = \dfrac{706{,}32\,\text{N} + 1884{,}2\,\text{N}}{120\,\text{N/m}} = 21{,}59\,\text{m}$. Syvyys on $18{,}0\,\text{m} + 21{,}59\,\text{m} = 39{,}59\,\text{m}$
+**Sijoitus:** $mg = 72{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 706{,}32\,\text{N}$, $(mg)^2 = (706{,}32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ ja $$
+\begin{aligned}
+&2kmgL_0 \\
+&= 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706{,}32\,\text{N} \\
+&\cdot 18{,}0\,\text{m} \\
+&\approx 3\,051\,302\,\text{N}^2
+\end{aligned}
+$$. Siksi neliöjuuri on $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884{,}2\,\text{N}$ ja $$
+\begin{aligned}
+x &= \dfrac{706{,}32\,\text{N} + 1884{,}2\,\text{N}}{120\,\text{N/m}} \\
+&= 21{,}59\,\text{m}
+\end{aligned}
+$$. Syvyys on $18{,}0\,\text{m} + 21{,}59\,\text{m} = 39{,}59\,\text{m}$
 **Vastaus:** Hyppääjä putoaa noin $39{,}6\,\text{m}$ sillan alapuolelle. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Energiatase täsmää: $mg(L_0 + x) = 706{,}32\,\text{N} \cdot 39{,}59\,\text{m} \approx 27{,}96\,\text{kJ}$ ja $\tfrac12 kx^2 = \tfrac12 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot (21{,}59\,\text{m})^2 \approx 27{,}96\,\text{kJ}$. Nauha venyy enemmän kuin sen lepopituus. Se on benjinauhalle tavallista. Sillan on oltava selvästi yli $40\,\text{m}$ korkea.
+**Järkevyys:** Energiatase täsmää: $$
+\begin{aligned}
+mg(L_0 + x) &= 706{,}32\,\text{N} \\
+&\cdot 39{,}59\,\text{m} \\
+&\approx 27{,}96\,\text{kJ}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+&\tfrac12 kx^2 \\
+&= \tfrac12 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot (21{,}59\,\text{m})^2 \\
+&\approx 27{,}96\,\text{kJ}
+\end{aligned}
+$$. Nauha venyy enemmän kuin sen lepopituus. Se on benjinauhalle tavallista. Sillan on oltava selvästi yli $40\,\text{m}$ korkea.
 
 ### c)
 **Annettu:** venymä $x = 21{,}59\,\text{m}$, $k = 120\,\text{N/m}$, $m = 72{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$

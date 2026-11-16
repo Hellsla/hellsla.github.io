@@ -4,9 +4,22 @@
 **Annettu:** ala $A = 1800\,\text{m}^2$, vesikerroksen paksuus $d = 3{,}00\,\text{cm}$, veden tiheys $\rho = 1000\,\text{kg/m}^3$; vesi $15{,}0\,{}^\circ\text{C}$, valmis jää $-4{,}0\,{}^\circ\text{C}$; $c_\text{v} = 4190\,\text{J/(kg}\cdot\text{K)}$, $c_\text{j} = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$
 **Kysytty:** poistettava lämpömäärä $Q$ gigajouleina
 **Periaate:** Energia säilyy: kylmäkoneen on poistettava kaikki energia, jonka vesi luovuttaa matkalla $15{,}0\,{}^\circ\text{C}$:n vedestä $-4{,}0\,{}^\circ\text{C}$:n jääksi. Matka on kolme vaihetta. Vesi jäähtyy $0\,{}^\circ\text{C}$:seen ($Q = cm\Delta T$), jäätyy vakiolämpötilassa, jolloin se luovuttaa sulamislämmön ($Q = sm$), ja jää jäähtyy $-4{,}0\,{}^\circ\text{C}$:seen ($Q = cm\Delta T$). Vähintään-sana tarkoittaa, että halliin johtuvaa lämpöä ei lasketa mukaan.
-**Kaava:** $m = \rho A d$ ja $Q = c_\text{v} m\,\Delta T_\text{v} + s m + c_\text{j} m\,\Delta T_\text{j}$, joten $Q = \rho A d\,(c_\text{v}\,\Delta T_\text{v} + s + c_\text{j}\,\Delta T_\text{j})$
+**Kaava:** $m = \rho A d$ ja $$
+\begin{aligned}
+Q &= c_\text{v} m\,\Delta T_\text{v} + s m \\
+&+ c_\text{j} m\,\Delta T_\text{j}
+\end{aligned}
+$$, joten $Q = \rho A d\,(c_\text{v}\,\Delta T_\text{v} + s + c_\text{j}\,\Delta T_\text{j})$
 **Muunnokset:** $3{,}00\,\text{cm} = 3{,}00 \cdot 0{,}01\,\text{m} = 0{,}0300\,\text{m}$ ja $334\,\text{kJ/kg} = 334\,000\,\text{J/kg}$. Lämpötilan muutokset ovat samat kelvineinä: $\Delta T_\text{v} = 15{,}0\,\text{K}$ ja $\Delta T_\text{j} = 4{,}0\,\text{K}$. Lopuksi $1\,\text{GJ} = 10^{9}\,\text{J}$.
-**Sijoitus:** $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1800\,\text{m}^2 \cdot 0{,}0300\,\text{m} = 54\,000\,\text{kg}$ ja $Q = 54\,000\,\text{kg} \cdot (4190 \cdot 15{,}0 + 334\,000 + 2100 \cdot 4{,}0)\,\tfrac{\text{J}}{\text{kg}} = 54\,000\,\text{kg} \cdot 405\,250\,\tfrac{\text{J}}{\text{kg}} = 2{,}188 \cdot 10^{10}\,\text{J} = 21{,}9\,\text{GJ}$
+**Sijoitus:** $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1800\,\text{m}^2 \cdot 0{,}0300\,\text{m} = 54\,000\,\text{kg}$ ja $$
+\begin{aligned}
+Q &= 54\,000\,\text{kg} \cdot (4190 \cdot 15{,}0 \\
+&+ 334\,000 + 2100 \cdot 4{,}0)\,\tfrac{\text{J}}{\text{kg}} \\
+&= 54\,000\,\text{kg} \cdot 405\,250\,\tfrac{\text{J}}{\text{kg}} \\
+&= 2{,}188 \cdot 10^{10}\,\text{J} \\
+&= 21{,}9\,\text{GJ}
+\end{aligned}
+$$
 **Vastaus:** $21{,}9\,\text{GJ}$, kolme merkitsevää numeroa kuten kerroksen paksuus $3{,}00\,\text{cm}$ ja veden lämpötila $15{,}0\,{}^\circ\text{C}$. Jään jäähtymisen $4{,}0\,\text{K}$ kaksi numeroa koskee vain pientä termiä.
 **Järkevyys:** Vaiheittain $Q_\text{v} = 3{,}39\,\text{GJ}$, $Q_\text{s} = 18{,}0\,\text{GJ}$ ja $Q_\text{j} = 0{,}454\,\text{GJ}$, ja summa on sama $21{,}9\,\text{GJ}$. Pyöristetyillä luvuilla $54\,\text{t} \cdot 400\,\text{kJ/kg} \approx 22\,\text{GJ}$. Kilowattitunteina se on noin $6100\,\text{kWh}$, saman verran kuin omakotitalon sähkö noin vuodessa, mikä sopii suureen jääalaan.
 
@@ -65,7 +78,13 @@
 **Muunnokset:** Lämpötilaero on sama kelvineinä: $21\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 31\,\text{K}$. Suhdeluku muutetaan prosenteiksi kertomalla luvulla $100\,\%$.
 **Sijoitus:** $P_\text{h} = 150\,\tfrac{\text{W}}{\text{K}} \cdot 31\,\text{K} = 4650\,\text{W}$ ja osuus $= \dfrac{1667\,\text{W}}{4650\,\text{W}} = 0{,}358 = 35{,}8\,\%$
 **Vastaus:** noin $36\,\%$, kaksi merkitsevää numeroa kuten takan teho.
-**Järkevyys:** Koko tarpeen kattamiseen takassa pitäisi polttaa vuorokaudessa $4650\,\text{W} \cdot 86\,400\,\text{s} : (0{,}80 \cdot 15\,\text{MJ/kg}) \approx 33\,\text{kg}$ puuta, lähes kolme kertaa iltapesällinen. Takka on siis lisälämmitys, kuten varaavat takat yleensä ovat.
+**Järkevyys:** Koko tarpeen kattamiseen takassa pitäisi polttaa vuorokaudessa $$
+\begin{aligned}
+&4650\,\text{W} \cdot 86\,400\,\text{s} \\
+&: (0{,}80 \cdot 15\,\text{MJ/kg}) \\
+&\approx 33\,\text{kg}
+\end{aligned}
+$$ puuta, lähes kolme kertaa iltapesällinen. Takka on siis lisälämmitys, kuten varaavat takat yleensä ovat.
 
 ### d)
 **Kysytty:** miksi peltikamiinan lämmitys loppuu nopeasti ja varaavan takan ei
@@ -240,7 +259,12 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Annettu:** vesi $m_\text{v} = 0{,}200\,\text{kg}$, $T_\text{v} = 40{,}0\,{}^\circ\text{C}$; jää $m_\text{j} = 0{,}0500\,\text{kg}$; lopputila $T = 14{,}3\,{}^\circ\text{C}$; $c_\text{v} = 4190\,\text{J/(kg}\cdot\text{K)}$
 **Kysytty:** ryhmän tulos $s$ yksikössä $\text{kJ/kg}$ ja sen oletus jään alkulämpötilasta
 **Periaate:** Energia säilyy, kun muki ja ilma eivät ota lämpöä: veden luovuttama lämpö on yhtä suuri kuin jään vastaanottama. Ryhmän laskussa jää vain sulaa ($Q = sm$) ja sulamisvesi lämpenee $0\,{}^\circ\text{C}$:sta lopputilaan ($Q = cm\Delta T$). Jään lämpenemistä ei ole, joten ryhmä on olettanut jään olleen $0\,{}^\circ\text{C}$:ista (luku *Lämpötasapaino olomuodon muuttuessa*).
-**Kaava:** $c_\text{v} m_\text{v} (T_\text{v} - T) = s\,m_\text{j} + c_\text{v} m_\text{j}\,(T - 0\,{}^\circ\text{C})$, joten $s = \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T}{m_\text{j}}$
+**Kaava:** $$
+\begin{aligned}
+&c_\text{v} m_\text{v} (T_\text{v} - T) \\
+&= s\,m_\text{j} + c_\text{v} m_\text{j}\,(T - 0\,{}^\circ\text{C})
+\end{aligned}
+$$, joten $s = \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T}{m_\text{j}}$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: vesi jäähtyy $25{,}7\,\text{K}$ ja sulamisvesi lämpenee $14{,}3\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** Veden luovuttama lämpö on $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}200\,\text{kg} \cdot 25{,}7\,\text{K} = 21\,537\,\text{J}$ ja sulamisveden lämpeneminen $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}0500\,\text{kg} \cdot 14{,}3\,\text{K} = 2996\,\text{J}$. Siis $s = \dfrac{21\,537\,\text{J} - 2996\,\text{J}}{0{,}0500\,\text{kg}} = 370\,800\,\tfrac{\text{J}}{\text{kg}} = 371\,\text{kJ/kg}$.
 **Vastaus:** $371\,\text{kJ/kg}$, kolme merkitsevää numeroa kuten massat ja lämpötilat. Ryhmä on olettanut, että jää oli $0\,{}^\circ\text{C}$:ista, vaikka se otettiin pakastimesta.
@@ -250,9 +274,27 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Annettu:** a-kohdan tiedot; jään alkulämpötila $T_\text{j} = -18{,}0\,{}^\circ\text{C}$, $c_\text{j} = 2100\,\text{J/(kg}\cdot\text{K)}$
 **Kysytty:** korjattu ominaissulamislämpö $s$ ja johtopäätöksen arvio
 **Periaate:** Pakastimen jää lämpenee ensin $-18{,}0\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen, ja siihen kuluu osa veden luovuttamasta energiasta. Ryhmän laskussa tämä osa on luettu sulamislämmöksi, joten sen tulos on liian suuri. Energiataseeseen lisätään jään lämpeneminen.
-**Kaava:** $c_\text{v} m_\text{v} (T_\text{v} - T) = c_\text{j} m_\text{j} \Delta T_\text{j} + s\,m_\text{j} + c_\text{v} m_\text{j} T$, joten $s = \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{j} m_\text{j} \Delta T_\text{j} - c_\text{v} m_\text{j} T}{m_\text{j}}$
+**Kaava:** $$
+\begin{aligned}
+c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j} \\
+&+ s\,m_\text{j} \\
+&+ c_\text{v} m_\text{j} T
+\end{aligned}
+$$, joten $s = \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{j} m_\text{j} \Delta T_\text{j} - c_\text{v} m_\text{j} T}{m_\text{j}}$
 **Muunnokset:** Jään lämpeneminen $\Delta T_\text{j} = 0\,{}^\circ\text{C} - (-18{,}0\,{}^\circ\text{C}) = 18{,}0\,\text{K}$, sama kelvineinä.
-**Sijoitus:** $c_\text{j} m_\text{j} \Delta T_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}0500\,\text{kg} \cdot 18{,}0\,\text{K} = 1890\,\text{J}$ ja $s = \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0{,}0500\,\text{kg}} = 333\,000\,\tfrac{\text{J}}{\text{kg}} = 333\,\text{kJ/kg}$
+**Sijoitus:** $$
+\begin{aligned}
+c_\text{j} m_\text{j} \Delta T_\text{j} &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
+&\cdot 0{,}0500\,\text{kg} \cdot 18{,}0\,\text{K} \\
+&= 1890\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+s &= \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0{,}0500\,\text{kg}} \\
+&= 333\,000\,\tfrac{\text{J}}{\text{kg}} \\
+&= 333\,\text{kJ/kg}
+\end{aligned}
+$$
 **Vastaus:** $333\,\text{kJ/kg}$, kolme merkitsevää numeroa kuten mittaustulokset. Ryhmän johtopäätös ei pidä: korjattu tulos on taulukkoarvon $334\,\text{kJ/kg}$ mukainen, ja ero johtui virheellisestä oletuksesta, ei taulukosta. Muki ei myöskään selitä eroa. Jos muki ottaisi lämpöä, ryhmän kaava lukisi senkin jään hyväksi, ja tulos olisi tosin liian suuri, mutta erotus $1890\,\text{J}$ vaatisi mukilta noin $1890\,\text{J} : 25{,}7\,\text{K} \approx 70\,\text{J/K}$ lämpökapasiteetin. Muutaman gramman styroksimukin lämpökapasiteetti on vain muutama $\text{J/K}$, ja korjattu arvo on jo taulukon mukainen.
 **Järkevyys:** Jään lämpeneminen vie $1890\,\text{J}$ eli vain noin $9\,\%$ veden luovuttamasta lämmöstä, mutta jaettuna pienellä jäämassalla se on $38\,\text{kJ/kg}$, juuri tulosten ero $371 - 333$. Korjattu arvo poikkeaa taulukosta alle prosentin, mikä on mittausten tarkkuuden rajoissa.
 
@@ -277,7 +319,13 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Kysytty:** levyjen lämpötilan nousu $\Delta T$
 **Periaate:** Tasaisella tiellä jarrutus muuttaa auton liike-energian kitkassa jarrujen sisäenergiaksi; energia säilyy (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Ilmanvastuksen osuus lyhyessä jarrutuksessa on pieni, joten se jätetään huomiotta. Levyt pysyvät kiinteinä, joten niiden vastaanottama lämpö nostaa lämpötilaa $Q = cm\Delta T$:n mukaan.
 **Kaava:** $E_\text{k} = \tfrac{1}{2} m v^2$ ja $k\,E_\text{k} = c\,m_\text{l}\,\Delta T$, joten $\Delta T = \dfrac{k \cdot \tfrac{1}{2} m v^2}{c\,m_\text{l}}$
-**Muunnokset:** $90\,\text{km/h} = 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ ja $85\,\% = 0{,}85$.
+**Muunnokset:** $$
+\begin{aligned}
+&90\,\text{km/h} \\
+&= 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} \\
+&= 25\,\text{m/s}
+\end{aligned}
+$$ ja $85\,\% = 0{,}85$.
 **Sijoitus:** $E_\text{k} = \tfrac{1}{2} \cdot 1600\,\text{kg} \cdot (25\,\tfrac{\text{m}}{\text{s}})^2 = 500\,000\,\text{J}$ ja $\Delta T = \dfrac{0{,}85 \cdot 500\,000\,\text{J}}{450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{425\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 31{,}5\,\text{K}$
 **Vastaus:** noin $31\,\text{K}$, kaksi merkitsevää numeroa kuten levyjen massa $30\,\text{kg}$ ja nopeus $90\,\text{km/h}$.
 **Järkevyys:** Yksi pysäytys lämmittää levyjä muutamia kymmeniä asteita, mikä sopii kokemukseen: jarrulevyt ovat kovan jarrutuksen jälkeen kuumia mutta eivät hehku. Ilmanvastus pienentäisi levyihin tulevaa energiaa vähän, joten tulos on yläraja.
@@ -298,7 +346,21 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Periaate:** Energia säilyy: levyihin tullut energia joko jäi levyihin ja nosti niiden lämpötilaa ($Q = cm\Delta T$) tai siirtyi mäen aikana pois. Kuuma levy luovuttaa lämpöä ohi virtaavaan ilmaan konvektiona, säteilee ja johtaa lämpöä napaan ja vanteeseen (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*).
 **Kaava:** $Q_\text{ilma} = Q - c\,m_\text{l}\,\Delta T$ ja osuus $= \dfrac{Q_\text{ilma}}{Q}$
 **Muunnokset:** Ei tarvita: energiat ovat jouleina, ja suhdeluku muutetaan prosenteiksi kertomalla luvulla $100\,\%$.
-**Sijoitus:** $Q_\text{ilma} = 1\,805\,400\,\text{J} - 13\,500\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} = 1\,805\,400\,\text{J} - 1\,080\,000\,\text{J} = 725\,400\,\text{J}$ ja osuus $= \dfrac{725\,400\,\text{J}}{1\,805\,400\,\text{J}} = 0{,}402 = 40{,}2\,\%$
+**Sijoitus:** $$
+\begin{aligned}
+Q_\text{ilma} &= 1\,805\,400\,\text{J} \\
+&- 13\,500\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} \\
+&= 1\,805\,400\,\text{J} \\
+&- 1\,080\,000\,\text{J} \\
+&= 725\,400\,\text{J}
+\end{aligned}
+$$ ja osuus $$
+\begin{aligned}
+&= \dfrac{725\,400\,\text{J}}{1\,805\,400\,\text{J}} \\
+&= 0{,}402 \\
+&= 40{,}2\,\%
+\end{aligned}
+$$
 **Vastaus:** noin $40\,\%$, kaksi merkitsevää numeroa kuten b-kohdan tulos. Energia siirtyi pääosin konvektiona levyn ohi virtaavaan ilmaan, lisäksi lämpösäteilynä ja johtumalla navan ja vanteen kautta.
 **Järkevyys:** Mäki kestää $4000\,\text{m} : 16{,}7\,\tfrac{\text{m}}{\text{s}} = 240\,\text{s}$, ja levyihin tulee keskimäärin noin $7{,}5\,\text{kW}$. Ilmaan siirtyi keskimäärin $725\,\text{kJ} : 240\,\text{s} \approx 3\,\text{kW}$, mikä on uskottava neljälle kuumalle levylle ajoviimassa.
 
@@ -312,7 +374,7 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 - b-kohdassa koko potentiaalienergia annetaan jarruille, jolloin tulokseksi tulee noin $250\,\text{K}$.
 - b-kohdassa lasketaan mukaan liike-energia, vaikka nopeus on vakio.
 - c-kohdassa sanotaan, että energia ”kului” tai ”hävisi”, kertomatta, mihin se siirtyi.
-- d-kohdassa väitetään, että moottorijarrutuksessa energia ei muutu lämmöksi lainkaan.
+- d-kohdassa väitetään, että moottorijarrutuksessa energia ei muutu sisäenergiaksi lainkaan.
 
 ### Hyväksytään myös
 - a-kohdassa vastaus $31{,}5\,\text{K}$ tai $32\,\text{K}$, kun perusteluna on pyöristys.

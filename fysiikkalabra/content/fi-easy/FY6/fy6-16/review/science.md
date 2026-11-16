@@ -1,13 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 9e1f7c5564a24ca1
-
+CONTENT-HASH: 1938cbb208369bd3
 ## Blocking
-
 ## Polish
-
+- At the upper end of the 80–95 % efficiency range the lesson states, the socket time is 22,9 h (40 kWh : (0,95 · 1,84 kW)). "yli vuorokauden" holds at the lesson's own η = 0,85 (25,6 h, lesson-answers.py `t-socket-h`), so this is not an error. If wanted, name the 85 % in the sentence.
 ## Checked
-- Diff tarkistus-1 (inquiry.json:273): the correct option now says the supply is dimensioned for long, high-power charging and that RCD protection meeting the requirements is needed whether the charging point is indoors or outdoors — right (the installation standard requires RCD protection for every charging point, not only outdoor ones); the old implication that outdoor risk is the reason is removed.
-- Feedback: own group → cable and fuse sized for the long-lasting charging current, no other loads; RCD trips on leakage, e.g. through a damaged cable and a person to earth — right and consistent with lesson.md "Miksi latausasemalla on oma ryhmä ja vikavirtasuoja" (outdoor damage is more likely, stated as a further reason, not a condition).
-- Exactly one correct option; both distractors still wrong and their feedback right (own group does not raise the charging current; RCD responds to leakage, not overload; load management prevents main-fuse overload).
-- tarkistus-2 unchanged, recomputed: 30 kWh : 0,90 : 3,68 kW = 9,06 h.
-- Rest relies on the previous PASS. Hash identical at start and end.
+- batch delta review: lesson.md:184 round-2 change (the socket charging time with charging losses counted). Recomputed: P = 230 V · 8 A = 1,84 kW; t = 40 kWh : (0,85 · 1,84 kW) = 25,6 h > 24 h, and without losses 21,7 h. So the added condition is the one the claim needs. Also recomputed 3,68 kW and 11,04 kW, and the three-phase t = 4,03 h (η = 0,90). The sentence now agrees with the inquiry "tavat" solution, its hint, its no-losses mistake feedback (21,7 h) and the "yli vuorokauden" reasonableness line. Both times in the sentence now use the same model, losses included. Hash was the same at start and end.

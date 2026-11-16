@@ -16,7 +16,7 @@
 **Muunnokset:** Muunnoksia ei tarvita: venymä ratkeaa samassa yksikössä kuin $x_1$ (senttimetreinä), ja newtonit supistuvat suhteessa $\dfrac{F}{F_1}$.
 **Sijoitus:** $x = \dfrac{2{,}0\,\text{cm} \cdot 12\,\text{N}}{4{,}0\,\text{N}} = 6{,}0\,\text{cm}$
 **Vastaus:** $6{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Voima on $\dfrac{12}{4{,}0} = 3$-kertainen, joten venymän pitää olla $3 \cdot 2{,}0\,\text{cm} = 6{,}0\,\text{cm}$. Myös jousivakio täsmää: $\dfrac{2{,}0\,\text{cm}}{4{,}0\,\text{N}} = 0{,}50\,\tfrac{\text{cm}}{\text{N}}$ ja $0{,}50 \cdot 12 = 6{,}0$.
+**Järkevyys:** Voima on $\dfrac{12}{4{,}0} = 3$-kertainen, joten venymän pitää olla $3 \cdot 2{,}0\,\text{cm} = 6{,}0\,\text{cm}$. Myös venymä newtonia kohti täsmää: $\dfrac{2{,}0\,\text{cm}}{4{,}0\,\text{N}} = 0{,}50\,\tfrac{\text{cm}}{\text{N}}$ ja $0{,}50 \cdot 12 = 6{,}0$.
 
 ## fy3-1-L1-03
 **Annettu:** $m = 30\,\text{kg}$; taulukosta $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
@@ -47,7 +47,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee suoraan newtoneina.
 **Sijoitus:** $G = 2{,}5\,\text{kg} \cdot 24{,}8\,\text{m/s}^2 = 62{,}0\,\text{N}$
 **Vastaus:** $62\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $2{,}5\,\text{kg}$.
-**Järkevyys:** Maassa paino olisi $2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 24{,}5\,\text{N}$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 62\,\text{N}$, joten $62\,\text{N}$ täsmää.
+**Järkevyys:** Maassa paino olisi $2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 24{,}5\,\text{N}$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 61\,\text{N}$, joten $62\,\text{N}$ täsmää suhteen $2{,}5$ pyöristyksen tarkkuudella.
 
 ## fy3-1-L2-01
 **Annettu:** voimamittarin lukema eli paino $G = 49\,\text{N}$ Maassa; taulukosta $g = 9{,}81\,\text{m/s}^2$

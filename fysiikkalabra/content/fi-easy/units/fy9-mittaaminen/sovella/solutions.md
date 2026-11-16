@@ -23,7 +23,13 @@
 ### c)
 **Kysytty:** voidaanko mittauksilla osoittaa, että Liisa oli nopeampi kuin Mira
 **Periaate:** Kahden tuloksen ero on osoitettu vain silloin, kun niiden epävarmuusvälit eivät mene päällekkäin. Jos välit menevät päällekkäin, se ei todista, että tulokset ovat yhtä suuret.
-**Mallivastaus:** Miran keskiarvo on $\bar{t} = (13{,}80 + 14{,}12 + 13{,}96)\,\text{s} : 3 = 13{,}96\,\text{s}$. Epävarmuus on $(14{,}12 - 13{,}80)\,\text{s} : 2 = 0{,}16\,\text{s}$. Miran aika on siis $(13{,}96 \pm 0{,}16)\,\text{s}$ ja Liisan $(13{,}71 \pm 0{,}19)\,\text{s}$. Liisan väli on $13{,}52$–$13{,}90\,\text{s}$ ja Miran $13{,}80$–$14{,}12\,\text{s}$. Välit menevät päällekkäin. Ero $0{,}25\,\text{s}$ on samaa suuruusluokkaa kuin epävarmuudet. Näillä mittauksilla ei siis voida osoittaa, että Liisa oli nopeampi, vaikka hänen keskiarvonsa on pienempi. Tämä ei kuitenkaan tarkoita, että juoksijat ovat yhtä nopeita. Eron osoittamiseen tarvittaisiin tarkempi ajanotto, esimerkiksi maalikamera.
+**Mallivastaus:** Miran keskiarvo on $$
+\begin{aligned}
+\bar{t} &= (13{,}80 + 14{,}12 + 13{,}96)\,\text{s} \\
+&: 3 \\
+&= 13{,}96\,\text{s}
+\end{aligned}
+$$. Epävarmuus on $(14{,}12 - 13{,}80)\,\text{s} : 2 = 0{,}16\,\text{s}$. Miran aika on siis $(13{,}96 \pm 0{,}16)\,\text{s}$ ja Liisan $(13{,}71 \pm 0{,}19)\,\text{s}$. Liisan väli on $13{,}52$–$13{,}90\,\text{s}$ ja Miran $13{,}80$–$14{,}12\,\text{s}$. Välit menevät päällekkäin. Ero $0{,}25\,\text{s}$ on samaa suuruusluokkaa kuin epävarmuudet. Näillä mittauksilla ei siis voida osoittaa, että Liisa oli nopeampi, vaikka hänen keskiarvonsa on pienempi. Tämä ei kuitenkaan tarkoita, että juoksijat ovat yhtä nopeita. Eron osoittamiseen tarvittaisiin tarkempi ajanotto, esimerkiksi maalikamera.
 
 ### d)
 **Kysytty:** käsiajanoton systemaattiset virhelähteet, voiko virheen suunnan päätellä varmasti ja miksi keskiarvo ei välttämättä poista systemaattista virhettä
@@ -31,7 +37,12 @@
 **Mallivastaus:** Ajanottaja käynnistää kellon vasta, kun hän on nähnyt lipun laskevan ja reagoinut siihen. Siksi kello käynnistyy myöhässä. Viive on $\tau_\text{k}$, tavallisesti muutamia sekunnin kymmenyksiä. Myös kellon pysäyttämiseen liittyy viive $\tau_\text{p}$. Maalissa ajanottaja näkee juoksijan tulevan. Siksi tämä viive voi olla lyhyempi. Ajanottaja voi kuitenkin myös pysäyttää kellon vähän liian aikaisin tai myöhässä. Mitattu aika on $t_\text{mitattu} = t_\text{tod} + \tau_\text{p} - \tau_\text{k}$. Tässä $t_\text{tod}$ on todellinen aika. Mitattu aika on lyhyempi kuin todellinen aika, jos $\tau_\text{k} > \tau_\text{p}$. Se on pidempi, jos $\tau_\text{p} > \tau_\text{k}$. Tehtävän tiedoista viiveitä ei tiedetä. Siksi suuntaa ei voi päätellä varmasti. Todennäköisintä on, että lähdön viive on suurempi. Silloin aika on vähän liian lyhyt, ja a-kohdan nopeus on liian suuri. Kolme ajanottajaa toimii samalla tavalla. Siksi viiveiden keskimääräinen osa on kaikilla samaan suuntaan. Se on systemaattinen virhe, ja se säilyy myös keskiarvossa. Keskiarvo pienentää yleensä vain satunnaisvirheen vaikutusta eli kellojen välistä vaihtelua. Systemaattisen virheen poistaa esimerkiksi sähköinen ajanotto, joka käynnistyy itse lähtömerkistä.
 
 ### Hyväksytään myös
-- b-kohdassa nopeuden suhteellinen epävarmuus ajan ja matkan suhteellisten epävarmuuksien summana: $\tfrac{0{,}19}{13{,}71} + \tfrac{0{,}3}{100{,}0} \approx 0{,}0169$. Silloin $\Delta v \approx 0{,}0169 \cdot 7{,}294\,\text{m/s} \approx 0{,}12\,\text{m/s}$.
+- b-kohdassa nopeuden suhteellinen epävarmuus ajan ja matkan suhteellisten epävarmuuksien summana: $\tfrac{0{,}19}{13{,}71} + \tfrac{0{,}3}{100{,}0} \approx 0{,}0169$. Silloin $$
+\begin{aligned}
+\Delta v &\approx 0{,}0169 \cdot 7{,}294\,\text{m/s} \\
+&\approx 0{,}12\,\text{m/s}
+\end{aligned}
+$$.
 - b-kohdassa ajan epävarmuutena käsiajanoton tavallinen $0{,}2\,\text{s}$, kun valinta perustellaan. Myös $\Delta v \approx 0{,}1\,\text{m/s}$ ja $v = (7{,}3 \pm 0{,}1)\,\text{m/s}$ hyväksytään.
 - d-kohdassa maininta siitä, että ajanottaja voi reagoida lähtöpistoolin ääneen. Hän on $100\,\text{m}$:n päässä, joten hän käynnistäisi kellon vielä myöhemmin. Ääni kulkee tämän matkan noin $0{,}3\,\text{s}$:ssa.
 - d-kohdassa perusteltu arvio virheen suunnasta. Esimerkiksi mitattu aika on todennäköisesti lyhyempi kuin todellinen aika. Vastauksessa pitää kertoa, että päätelmä perustuu oletukseen viiveiden suuruudesta.
@@ -84,12 +95,30 @@
 Pinon korkeuden epävarmuus on suurempi kuin $0{,}5\,\text{mm}$. Syy on se, että epävarmuutta ei aiheuta vain asteikon lukeminen. Pinon reunat ovat epätasaiset. Siksi korkeus riippuu siitä, mistä kohdasta mitataan. Lisäksi pino painuu kokoon, kun viivainta painetaan sitä vasten. Asteikkoväli kertoo vain viivaimen resoluution. Se ei kerro koko mittauksen epävarmuutta.
 
 ### Hyväksytään myös
-- c-kohdassa koko pinon tiheys: $\rho = \tfrac{M}{N a b d} = \tfrac{2{,}49\,\text{kg}}{31{,}185\,\text{m}^2 \cdot 1{,}02 \cdot 10^{-4}\,\text{m}} \approx 783\,\text{kg/m}^3$. Hyväksytään myös pakkauksen merkinnällä $80\,\text{g/m}^2$ laskettu $\rho \approx 784\,\text{kg/m}^3$.
-- a-kohdassa paksuus millimetreinä ja muunnos lopuksi: $d = 51\,\text{mm} : 500 = 0{,}102\,\text{mm} = 102\,\mu\text{m}$.
+- c-kohdassa koko pinon tiheys: $$
+\begin{aligned}
+\rho &= \tfrac{M}{N a b d} \\
+&= \tfrac{2{,}49\,\text{kg}}{31{,}185\,\text{m}^2 \cdot 1{,}02 \cdot 10^{-4}\,\text{m}} \\
+&\approx 783\,\text{kg/m}^3
+\end{aligned}
+$$. Hyväksytään myös pakkauksen merkinnällä $80\,\text{g/m}^2$ laskettu $\rho \approx 784\,\text{kg/m}^3$.
+- a-kohdassa paksuus millimetreinä ja muunnos lopuksi: $$
+\begin{aligned}
+d &= 51\,\text{mm} : 500 \\
+&= 0{,}102\,\text{mm} \\
+&= 102\,\mu\text{m}
+\end{aligned}
+$$.
 
 ### Yleisiä virheitä
 - Epävarmuutta ei jaeta arkkien määrällä. Silloin arkin paksuudeksi saadaan $(102 \pm 1000)\,\mu\text{m}$.
-- Millimetrit muunnetaan mikrometreiksi väärään suuntaan: $51\,\text{mm} : 500 = 0{,}102\,\text{mm} = 0{,}000102\,\mu\text{m}$. Kun yksikkö on pienempi, lukuarvo kasvaa.
+- Millimetrit muunnetaan mikrometreiksi väärään suuntaan: $$
+\begin{aligned}
+&51\,\text{mm} : 500 \\
+&= 0{,}102\,\text{mm} \\
+&= 0{,}000102\,\mu\text{m}
+\end{aligned}
+$$. Kun yksikkö on pienempi, lukuarvo kasvaa.
 - Pinta-ala lasketaan millimetreinä, ja se muunnetaan neliömetreiksi kertoimella $1000$. Oikea kerroin on kuitenkin $1\,\text{m}^2 = 10^{6}\,\text{mm}^2$.
 - Tiheydelle annetaan kolme tai neljä merkitsevää numeroa, vaikka pinon korkeus tunnetaan vain kahden numeron tarkkuudella.
 
@@ -322,7 +351,12 @@ Pinon korkeuden epävarmuus on suurempi kuin $0{,}5\,\text{mm}$. Syy on se, ett�
 - d-kohdassa $\Delta\rho = 0{,}01$–$0{,}02\,\text{g/cm}^3$, joka on saatu silmällä piirretyistä ääriviivoista eli jyrkimmästä ja loivimmasta suorasta.
 
 ### Yleisiä virheitä
-- Tiheys lasketaan jakamalla jonkin rivin massa tilavuudella, esimerkiksi $210{,}3\,\text{g} : 100\,\text{ml} = 2{,}10\,\text{g/cm}^3$. Massassa on kuitenkin mukana mittalasi.
+- Tiheys lasketaan jakamalla jonkin rivin massa tilavuudella, esimerkiksi $$
+\begin{aligned}
+&210{,}3\,\text{g} : 100\,\text{ml} \\
+&= 2{,}10\,\text{g/cm}^3
+\end{aligned}
+$$. Massassa on kuitenkin mukana mittalasi.
 - Suora pakotetaan kulkemaan origon kautta. Silloin kulmakerroin on liian suuri, ja neste tunnistetaan väärin.
 - Rivin $60\,\text{ml}$ piste poistetaan kertomatta syytä. Tai pisteen takia pisteet yhdistetään murtoviivaksi.
 - Kulmakerroin luetaan kahdesta vierekkäisestä mittauspisteestä.
@@ -342,12 +376,24 @@ Pinon korkeuden epävarmuus on suurempi kuin $0{,}5\,\text{mm}$. Syy on se, ett�
 ### b)
 **Kysytty:** onko väite $(765 \pm 0{,}5)\,\text{g}$ oikein, ja parempi arvio jauhojen massasta
 **Periaate:** Resoluutio on pienin muutos, joka näkyy näytössä. Se ei kerro systemaattisesta virheestä. Siksi epävarmuus voi olla paljon suurempi kuin resoluutio. Jos systemaattinen virhe tunnetaan, se korjataan.
-**Mallivastaus:** Väite ei pidä paikkaansa. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$. Vaaka näyttää massasta $m$ lukeman $m_\text{lukema} = k\,m$. Tässä $k$ on punnuksilta saatu suhde $1020\,\text{g} : 1000\,\text{g} = 1{,}02$. Korjattu massa on siis $m = \dfrac{m_\text{lukema}}{k} = 765\,\text{g} : 1{,}02 = 750\,\text{g}$. Epävarmuutta lisää toistojen vaihtelu. Lisäksi korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella. Se tekee lukemassa $765\,\text{g}$ alle gramman. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
+**Mallivastaus:** Väite ei pidä paikkaansa. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$. Vaaka näyttää massasta $m$ lukeman $m_\text{lukema} = k\,m$. Tässä $k$ on punnuksilta saatu suhde $1020\,\text{g} : 1000\,\text{g} = 1{,}02$. Korjattu massa on siis $$
+\begin{aligned}
+m &= \dfrac{m_\text{lukema}}{k} \\
+&= 765\,\text{g} : 1{,}02 \\
+&= 750\,\text{g}
+\end{aligned}
+$$. Epävarmuutta lisää toistojen vaihtelu. Lisäksi korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella. Se tekee lukemassa $765\,\text{g}$ alle gramman. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
 
 ### c)
 **Kysytty:** kuvaajan muoto, mitä siitä näkee virheestä ja miksi toistaminen ei auta
 **Periaate:** Jos vaaka olisi oikea, lukema olisi sama kuin punnuksen massa. Silloin pisteet olisivat suoralla, jonka kulmakerroin on $1$ ja vakiotermi $0$. Nollakohdan virhe näkyisi vakiotermissä. Suhteellinen virhe näkyisi kulmakertoimessa.
-**Mallivastaus:** Pisteet ovat suoralla, joka kulkee origon kautta. Lukema on suoraan verrannollinen punnuksen massaan: $m_\text{lukema} \propto m_\text{punnus}$. Kulmakerroin on $k = \dfrac{\Delta m_\text{lukema}}{\Delta m_\text{punnus}}$. Se luetaan sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan: kohdista $100{,}0\,\text{g}$ ja $1000{,}0\,\text{g}$. Kaikki pisteet ovat suoralla. Siis $k = (1020{,}3\,\text{g} - 101{,}7\,\text{g}) : (1000{,}0\,\text{g} - 100{,}0\,\text{g}) \approx 1{,}02$ eikä $1$. Vakiotermi on nolla. Kun vakiotermi on nolla, nollakohta on oikein. Kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Pisteet ovat hyvin tarkasti suoralla, koska satunnainen vaihtelu, noin $1\,\text{g}$, on pieni.
+**Mallivastaus:** Pisteet ovat suoralla, joka kulkee origon kautta. Lukema on suoraan verrannollinen punnuksen massaan: $m_\text{lukema} \propto m_\text{punnus}$. Kulmakerroin on $k = \dfrac{\Delta m_\text{lukema}}{\Delta m_\text{punnus}}$. Se luetaan sovitetulta suoralta kahdesta pisteestä, jotka ovat kaukana toisistaan: kohdista $100{,}0\,\text{g}$ ja $1000{,}0\,\text{g}$. Kaikki pisteet ovat suoralla. Siis $$
+\begin{aligned}
+k &= (1020{,}3\,\text{g} - 101{,}7\,\text{g}) \\
+&: (1000{,}0\,\text{g} - 100{,}0\,\text{g}) \\
+&\approx 1{,}02
+\end{aligned}
+$$ eikä $1$. Vakiotermi on nolla. Kun vakiotermi on nolla, nollakohta on oikein. Kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Pisteet ovat hyvin tarkasti suoralla, koska satunnainen vaihtelu, noin $1\,\text{g}$, on pieni.
 
 Toistaminen pienentää satunnaisvirheen vaikutusta keskiarvossa. Syy: liian suuret ja liian pienet lukemat kumoavat osittain toisensa. Systemaattinen virhe on kuitenkin sama jokaisessa punnituksessa. Siksi keskiarvo on yhtä paljon väärin kuin yksi lukema. Virhe korjataan niin, että lukemat jaetaan kulmakertoimella $1{,}02$. Toinen tapa on kalibroida vaaka punnuksen avulla.
 
@@ -430,7 +476,18 @@ Toistaminen pienentää satunnaisvirheen vaikutusta keskiarvossa. Syy: liian suu
 
 **Mallivastaus:** Kuusi pistettä on lähellä yhtä suoraa. Siksi auto liikkui tasaisesti, ja paikka on ajan lineaarinen funktio: $x = vt + x_0$. Nopeus on suoran kulmakerroin $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. Piste $t = 1{,}5\,\text{s}$ on noin $0{,}25\,\text{m}$ suoran yläpuolella. Se on melkein samassa paikassa kuin piste $t = 2{,}0\,\text{s}$. Siksi se on todennäköisesti merkitty väärään kuvaan. Piste tarkistetaan videolta. Jos virhe löytyy, se korjataan. Toinen vaihtoehto on jättää piste pois ja kirjoittaa syy muistiin.
 
-Suoraa ei pakoteta kulkemaan origon kautta. Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(0\,\text{s};\ 0{,}36\,\text{m})$ ja $(3{,}0\,\text{s};\ 1{,}79\,\text{m})$. Nopeus on siis $v = \dfrac{1{,}79\,\text{m} - 0{,}36\,\text{m}}{3{,}0\,\text{s} - 0\,\text{s}} = 0{,}477\,\tfrac{\text{m}}{\text{s}}$. Vakiotermi $0{,}36\,\text{m}$ on auton paikka, kun ajanotto alkoi. Jyrkin ja loivin suora kulkevat kaikkien janojen kautta. Niiden kulmakertoimet ovat noin $0{,}492$ ja $0{,}464\,\text{m/s}$. Siksi $\Delta v = (0{,}492 - 0{,}464)\,\text{m/s} : 2 = 0{,}014\,\text{m/s}$.
+Suoraa ei pakoteta kulkemaan origon kautta. Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(0\,\text{s};\ 0{,}36\,\text{m})$ ja $(3{,}0\,\text{s};\ 1{,}79\,\text{m})$. Nopeus on siis $$
+\begin{aligned}
+v &= \dfrac{1{,}79\,\text{m} - 0{,}36\,\text{m}}{3{,}0\,\text{s} - 0\,\text{s}} \\
+&= 0{,}477\,\tfrac{\text{m}}{\text{s}}
+\end{aligned}
+$$. Vakiotermi $0{,}36\,\text{m}$ on auton paikka, kun ajanotto alkoi. Jyrkin ja loivin suora kulkevat kaikkien janojen kautta. Niiden kulmakertoimet ovat noin $0{,}492$ ja $0{,}464\,\text{m/s}$. Siksi $$
+\begin{aligned}
+\Delta v &= (0{,}492 - 0{,}464)\,\text{m/s} \\
+&: 2 \\
+&= 0{,}014\,\text{m/s}
+\end{aligned}
+$$.
 
 Tulos on $v = (0{,}477 \pm 0{,}014)\,\text{m/s}$. Epävarmuudessa pidetään kaksi numeroa, koska sen ensimmäinen numero on $1$. Raportin kahden pisteen arvo $0{,}42\,\text{m/s}$ sopii yhteen tuloksen kanssa vain siksi, että sen epävarmuus on suuri. Origon kautta pakotetun suoran arvo $0{,}63\,\text{m/s}$ ei sovi yhteen tuloksen kanssa.
 
@@ -457,11 +514,28 @@ Tulos on $v = (0{,}477 \pm 0{,}014)\,\text{m/s}$. Epävarmuudessa pidetään kak
 ### a)
 **Kysytty:** onko paine kääntäen verrannollinen ruiskun lukemaan $V$
 **Periaate:** Jos $p$ on kääntäen verrannollinen suureeseen $V$, tulo $pV$ on vakio. Väite testataan näin: tulo lasketaan eri riveillä. Sitten katsotaan, vaihteleeko tulo satunnaisesti vai muuttuuko se koko ajan samaan suuntaan.
-**Mallivastaus:** Ensimmäisellä rivillä $pV = 189{,}1\,\text{kPa} \cdot 12\,\text{ml} = 2269\,\text{kPa} \cdot \text{ml}$. Viimeisellä rivillä $81{,}8\,\text{kPa} \cdot 30\,\text{ml} = 2454\,\text{kPa} \cdot \text{ml}$. Välirivien tulot kasvavat tasaisesti rivi riviltä. Koko kasvu on $(2454 - 2269) : 2269 \approx 8\,\%$. Paineet on annettu kymmenesosakilopascalin tarkkuudella, ja tulo kasvaa jokaisella rivillä samaan suuntaan. Satunnaisvirhe vaihtelisi sattumanvaraisesti. Siksi tasainen $8\,\%$:n kasvu ei johdu satunnaisvirheestä. Väite ei siis päde ruiskun lukemaan $V$. Tulon kasvu viittaa siihen, että ilman todellinen tilavuus on suurempi kuin lukema. Osa ilmasta on letkussa ja anturissa. Tämän ilman osuus on suurin, kun ruiskun tilavuus on pieni.
+**Mallivastaus:** Ensimmäisellä rivillä $$
+\begin{aligned}
+pV &= 189{,}1\,\text{kPa} \cdot 12\,\text{ml} \\
+&= 2269\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$. Viimeisellä rivillä $$
+\begin{aligned}
+&81{,}8\,\text{kPa} \cdot 30\,\text{ml} \\
+&= 2454\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$. Välirivien tulot kasvavat tasaisesti rivi riviltä. Koko kasvu on $(2454 - 2269) : 2269 \approx 8\,\%$. Paineet on annettu kymmenesosakilopascalin tarkkuudella, ja tulo kasvaa jokaisella rivillä samaan suuntaan. Satunnaisvirhe vaihtelisi sattumanvaraisesti. Siksi tasainen $8\,\%$:n kasvu ei johdu satunnaisvirheestä. Väite ei siis päde ruiskun lukemaan $V$. Tulon kasvu viittaa siihen, että ilman todellinen tilavuus on suurempi kuin lukema. Osa ilmasta on letkussa ja anturissa. Tämän ilman osuus on suurin, kun ruiskun tilavuus on pieni.
 
 ### b)
 **Kysytty:** kuvaaja, jossa riippuvuus on suora, ja siihen sovitettu suora
-**Kuvaaja:** Ilman todellinen tilavuus on $V + V_0$. Kun lämpötila ja ilman määrä pysyvät samoina, Boylen lain mukaan $p(V + V_0) = C$. Siitä saadaan $V = C \cdot \tfrac{1}{p} - V_0$. Siksi vaaka-akselille valitaan $\tfrac{1}{p}$ ja pystyakselille $V$. Esimerkiksi ensimmäisellä rivillä $\tfrac{1}{p} = \tfrac{1}{189{,}1\,\text{kPa}} = \tfrac{1}{0{,}1891\,\text{MPa}} = 5{,}29\,\tfrac{1}{\text{MPa}}$. Viimeisellä rivillä arvo on $12{,}2\,\tfrac{1}{\text{MPa}}$.
+**Kuvaaja:** Ilman todellinen tilavuus on $V + V_0$. Kun lämpötila ja ilman määrä pysyvät samoina, Boylen lain mukaan $p(V + V_0) = C$. Siitä saadaan $V = C \cdot \tfrac{1}{p} - V_0$. Siksi vaaka-akselille valitaan $\tfrac{1}{p}$ ja pystyakselille $V$. Esimerkiksi ensimmäisellä rivillä $$
+\begin{aligned}
+&\tfrac{1}{p} \\
+&= \tfrac{1}{189{,}1\,\text{kPa}} \\
+&= \tfrac{1}{0{,}1891\,\text{MPa}} \\
+&= 5{,}29\,\tfrac{1}{\text{MPa}}
+\end{aligned}
+$$. Viimeisellä rivillä arvo on $12{,}2\,\tfrac{1}{\text{MPa}}$.
 
 <svg data-fig="s6-kuvaaja" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: ruiskun asteikon tilavuus V millilitroina paineen käänteisluvun 1/p funktiona yksikössä 1/MPa. Kymmenen sinistä pistettä välillä 5,3–12,2 1/MPa ovat yhdellä nousevalla suoralla. Suoraa on jatkettu katkoviivana pystyakselille. Suora leikkaa pystyakselin negatiivisella puolella kohdassa −1,8 ml. Kulmakerroin on 2,60 MPa · ml. Vaaka-akseli on piirretty kohtaan V = 0." style="max-width:100%;font-size:30px">
   <line x1="132" y1="400" x2="132" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -540,10 +614,27 @@ Tulos on $v = (0{,}477 \pm 0{,}014)\,\text{m/s}$. Epävarmuudessa pidetään kak
 **Periaate:** Suoran yhtälö on $V = C \cdot \tfrac{1}{p} - V_0$. Siksi vakiotermi on $-V_0$ ja kulmakerroin $C = p(V + V_0)$. Ideaalikaasun tilanyhtälön mukaan $p(V + V_0) = nRT$. Siksi ainemäärä saadaan kulmakertoimesta. Tilanyhtälössä lämpötila on kelvineinä.
 **Kuvaajan lukeminen:** Suora leikkaa pystyakselin kohdassa $-1{,}8\,\text{ml}$. Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(4{,}0\,\tfrac{1}{\text{MPa}};\ 8{,}6\,\text{ml})$ ja $(12{,}0\,\tfrac{1}{\text{MPa}};\ 29{,}5\,\text{ml})$.
 **Kaava:** $V_0 = -b$, $C = \dfrac{\Delta V}{\Delta (1/p)}$ ja $C = nRT$, joten $n = \dfrac{C}{RT}$
-**Muunnokset:** $1\,\text{MPa} \cdot \text{ml} = 10^{6}\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 = 1\,\text{Pa} \cdot \text{m}^3 = 1\,\text{J}$ ja $T = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$
+**Muunnokset:** $$
+\begin{aligned}
+&1\,\text{MPa} \cdot \text{ml} \\
+&= 10^{6}\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 \\
+&= 1\,\text{Pa} \cdot \text{m}^3 \\
+&= 1\,\text{J}
+\end{aligned}
+$$ ja $T = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$
 **Sijoitus:** $V_0 = 1{,}8\,\text{ml}$, $C = \dfrac{29{,}5\,\text{ml} - 8{,}6\,\text{ml}}{12{,}0\,\tfrac{1}{\text{MPa}} - 4{,}0\,\tfrac{1}{\text{MPa}}} = 2{,}61\,\text{MPa} \cdot \text{ml} = 2{,}61\,\text{J}$ ja $n = \dfrac{2{,}61\,\text{J}}{8{,}314\,\tfrac{\text{J}}{\text{mol} \cdot \text{K}} \cdot 295{,}15\,\text{K}} = 1{,}06 \cdot 10^{-3}\,\text{mol}$
 **Vastaus:** $V_0 \approx 1{,}8\,\text{ml}$ ja $n \approx 1{,}06 \cdot 10^{-3}\,\text{mol}$. Tilavuudessa on kaksi merkitsevää numeroa, koska se luetaan kuvaajasta noin $0{,}1\,\text{ml}$:n tarkkuudella. Ainemäärässä on kolme numeroa, kuten kulmakertoimessa.
-**Järkevyys:** Normaalipaineessa ja huoneenlämmössä mooli kaasua vie tilaa noin $24\,\text{l}$. Siksi noin $26\,\text{ml}$ ilmaa on noin $26\,\text{ml} : 24\,000\,\text{ml/mol} \approx 1{,}1 \cdot 10^{-3}\,\text{mol}$. Letkussa ja anturissa on muutaman millilitran ilmatila. Se on uskottava lyhyelle letkulle. Kun $V_0$ lisätään, tulo $p(V + V_0)$ on ensimmäisellä rivillä $189{,}1\,\text{kPa} \cdot 13{,}8\,\text{ml} = 2610\,\text{kPa} \cdot \text{ml}$ ja viimeisellä $81{,}8\,\text{kPa} \cdot 31{,}8\,\text{ml} = 2601\,\text{kPa} \cdot \text{ml}$. Tulo on siis melkein vakio.
+**Järkevyys:** Normaalipaineessa ja huoneenlämmössä mooli kaasua vie tilaa noin $24\,\text{l}$. Siksi noin $26\,\text{ml}$ ilmaa on noin $26\,\text{ml} : 24\,000\,\text{ml/mol} \approx 1{,}1 \cdot 10^{-3}\,\text{mol}$. Letkussa ja anturissa on muutaman millilitran ilmatila. Se on uskottava lyhyelle letkulle. Kun $V_0$ lisätään, tulo $p(V + V_0)$ on ensimmäisellä rivillä $$
+\begin{aligned}
+&189{,}1\,\text{kPa} \cdot 13{,}8\,\text{ml} \\
+&= 2610\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$ ja viimeisellä $$
+\begin{aligned}
+&81{,}8\,\text{kPa} \cdot 31{,}8\,\text{ml} \\
+&= 2601\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$. Tulo on siis melkein vakio.
 
 ### d)
 **Kysytty:** tuloksen oletukset ja niiden vaikutus
@@ -559,7 +650,12 @@ Tulos on $v = (0{,}477 \pm 0{,}014)\,\text{m/s}$. Epävarmuudessa pidetään kak
 ### Hyväksytään myös
 - b-kohdassa $(\tfrac{1}{p}, V)$-kuvaaja yksikössä $\tfrac{1}{\text{kPa}}$. Silloin kulmakerroin on $2600\,\text{kPa} \cdot \text{ml} = 2{,}60\,\text{J}$.
 - b- ja c-kohdassa laskimen tai taulukkolaskennan sovitus: $C = 2{,}603\,\text{J}$ ja $V_0 = 1{,}77\,\text{ml}$. Arvot $V_0 = 1{,}5$–$2{,}1\,\text{ml}$ ja $n = (1{,}01$–$1{,}11) \cdot 10^{-3}\,\text{mol}$ hyväksytään.
-- c-kohdassa ainemäärä yhdeltä riviltä, kun $V_0$ on lisätty: $n = \tfrac{101{,}2\,\text{kPa} \cdot 25{,}8\,\text{ml}}{RT} \approx 1{,}06 \cdot 10^{-3}\,\text{mol}$.
+- c-kohdassa ainemäärä yhdeltä riviltä, kun $V_0$ on lisätty: $$
+\begin{aligned}
+n &= \tfrac{101{,}2\,\text{kPa} \cdot 25{,}8\,\text{ml}}{RT} \\
+&\approx 1{,}06 \cdot 10^{-3}\,\text{mol}
+\end{aligned}
+$$.
 
 ### Yleisiä virheitä
 - a-kohdassa todetaan, että $pV$ on "lähes vakio". Ei katsota, mihin suuntaan tulo muuttuu rivi riviltä. Silloin systemaattinen kasvu jää huomaamatta.

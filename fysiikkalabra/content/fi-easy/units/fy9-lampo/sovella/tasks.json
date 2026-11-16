@@ -65,7 +65,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$t = 21{,}9 \\cdot 10^{9}\\,\\text{J} : 350\\,000\\,\\text{W} \\approx 62\\,500\\,\\text{s}$"
+              "detail": "$$\n\\begin{aligned}\nt &= 21{,}9 \\cdot 10^{9}\\,\\text{J} : 350\\,000\\,\\text{W} \\\\\n&\\approx 62\\,500\\,\\text{s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -146,7 +146,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$Q = 0{,}80 \\cdot 15\\,\\text{MJ/kg} \\cdot 12{,}0\\,\\text{kg} = 144\\,\\text{MJ}$; megajoulet on muunnettu jouleiksi."
+              "detail": "$$\n\\begin{aligned}\nQ &= 0{,}80 \\cdot 15\\,\\text{MJ/kg} \\\\\n&\\cdot 12{,}0\\,\\text{kg} \\\\\n&= 144\\,\\text{MJ}\n\\end{aligned}\n$$; megajoulet on muunnettu jouleiksi."
             },
             {
               "key": "units_precision",
@@ -527,7 +527,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$c_\\text{j} m_\\text{j} \\Delta T_\\text{j} = 1890\\,\\text{J}$ ja $s = (18\\,541 - 1890)\\,\\text{J} : 0{,}0500\\,\\text{kg}$"
+              "detail": "$c_\\text{j} m_\\text{j} \\Delta T_\\text{j} = 1890\\,\\text{J}$ ja $$\n\\begin{aligned}\ns &= (18\\,541 - 1890)\\,\\text{J} \\\\\n&: 0{,}0500\\,\\text{kg}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -608,7 +608,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$90\\,\\text{km/h} = 90 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} = 25\\,\\text{m/s}$ ja $E_\\text{k} = 500\\,\\text{kJ}$"
+              "detail": "$$\n\\begin{aligned}\n&90\\,\\text{km/h} \\\\\n&= 90 \\cdot \\dfrac{1000\\,\\text{m}}{3600\\,\\text{s}} \\\\\n&= 25\\,\\text{m/s}\n\\end{aligned}\n$$ ja $E_\\text{k} = 500\\,\\text{kJ}$"
             },
             {
               "key": "units_precision",

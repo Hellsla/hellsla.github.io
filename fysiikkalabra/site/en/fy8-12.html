@@ -535,8 +535,8 @@ d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2} \\
 &= 23.77\,\text{mm}
 \end{aligned}$$</p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> About $24\,\text{mm}$ of lead is needed, with two significant figures like the half-value thickness $5.5\,\text{mm}$ and the ratio $5.0\,\%$.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> Four half-value thicknesses, that is $22\,\text{mm}$, would let through $\left(\tfrac{1}{2}\right)^{4} = 6.25\,\%$ and five, that is $27.5\,\text{mm}$, about $3.1\,\%$. The target $5.0\,\%$ lies between these, and so does the thickness $24\,\text{mm}$.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the mistake</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend><span class="scenario">A student is designing a shield for a caesium-137 source. The half-value thickness of lead is $5.5\,\text{mm}$. She writes: "The first $5.5\,\text{mm}$ stops half of the radiation and the second $5.5\,\text{mm}$ the other half.</span><span class="ask">So $11\,\text{mm}$ of lead stops all gamma radiation." Where is the mistake?</span></legend><ul class="choices"><li><label><input type="radio" name="virhe" value="0" data-correct="0"><span>Lead does not attenuate gamma radiation at all, because a gamma photon is electrically neutral.</span></label><div class="feedback" data-for="0" hidden><p>A neutral photon can still interact with the electrons of lead and remove them; this is why lead attenuates it effectively. The mistake is in the effect of the second layer: $11\,\text{mm}$ lets a quarter through.</p></div></li><li><label><input type="radio" name="virhe" value="1" data-correct="1"><span>The second layer stops half of the radiation that got through the first, so $11\,\text{mm}$ lets a quarter through.</span></label><div class="feedback" data-for="1" hidden><p>Correct. Every half-value thickness halves the radiation arriving at it: $I = I_0 \left(\tfrac{1}{2}\right)^{11\,\text{mm} / 5.5\,\text{mm}} = \tfrac{1}{4} I_0$. Gamma radiation has no range, so no thickness stops it completely; a shield is dimensioned so that the fraction getting through is small enough.</p></div></li><li><label><input type="radio" name="virhe" value="2" data-correct="0"><span>The calculation should have used centimetres instead of millimetres.</span></label><div class="feedback" data-for="2" hidden><p>The unit does not matter as long as the thickness and the half-value thickness are in the same unit: <span class="mj-wide">$$
 \begin{aligned}
-11\,\text{mm} : 5.5\,\text{mm} &= 1.1\,\text{cm} \\
-&: 0.55\,\text{cm} = 2\text{.} 
+11\,\text{mm} : 5.5\,\text{mm} &= 1.1\,\text{cm} : 0.55\,\text{cm} \\
+&= 2\text{.}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -552,8 +552,8 @@ $$</span> The mistake is in the reasoning: the second layer halves only what got
 
 <p>and finally $1\,\text{m} = 10^{9}\,\text{nm}$.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-\lambda &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
-&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} = 9.8412 \cdot 10^{-8}\,\text{m} \\
+\lambda &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} \\
+&= 9.8412 \cdot 10^{-8}\,\text{m} \\
 &= 98.412\,\text{nm}
 \end{aligned}
 $$</span><span class="mj-narrow">$$

@@ -1,7 +1,7 @@
 ---
 description: Initialize a course (FY3–FY8) for the lesson pipeline — configuration check, picture and simulation folders, navigation. Creates no lessons.
 argument-hint: <FY4>
-model: fable
+model: haiku
 effort: low
 ---
 Initialize course $ARGUMENTS. This prepares the course; it writes no lesson content. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it.

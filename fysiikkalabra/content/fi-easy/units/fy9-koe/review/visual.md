@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 850c429f67e949f3
-Delta review (hero figure without calculator, Osa III sentence, 2026-11-14) of the version passed at d3680dc9c54e00c7.
+CONTENT-HASH: c8d1c7be46b19133
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-Opened /tmp/claude-0/-home-user-hellsla-github-io/9c298ed6-bc3b-52ea-b1db-4a4de46d08a1/scratchpad/shots/hero-fi-easy-390.png (and hero-fi-1280.png for the same drawing at desktop width). After the calculator removal the desk holds laptop, notebook with pencil and bottle; no odd gap, balance good, nothing clipped. The aria-label no longer names the calculator and matches the picture. Changed Osa III sentence ("Aineisto on myös useimmissa Osan II tehtävissä: viime kokeissa neljässä tai viidessä seitsemästä."): short, plain, fits the selkeä suomi register, no typography issue.
+- Hunks: inquiry.json Esimerkki 7 (correct option and three feedback texts); solutions.md Periaate of c and d.
+- Opened `fy9-koe-stage-sovella-390-7.png`: the option "Se muuttuu lampun ja ympäristön sisäenergiaksi. Energiaa ei katoa." fits its button on three lines, $35\,\%$ and $100\,\%$ in KaTeX.
+- Opened `fy9-koe-stage-exercises-390-4.png` and `-390-5.png`: both Periaate paragraphs read well, formulas and the aligned Sijoitus rows around them intact.
+- The three changed feedback texts show only after an answer is committed, so no capture holds them; judged from the source: plain prose without formulas, correct grammar ("muuttuu valoksi ja sisäenergiaksi. Niiden summa…" has a clear referent), the link text unchanged. The feedback panel itself is the shared component seen in other captures.
+- Page overflow at 390 and 1280 px: 0 px.

@@ -6,7 +6,13 @@
 **Principle:** When a coil rotates steadily in a uniform field, the flux through it varies periodically, and by the law of induction a sinusoidal voltage is induced in the coil. The voltage is at its peak when the plane of the coil is parallel to the field, because the flux then changes fastest (chapters *Electromagnetic induction* and *The generator and alternating current*). The rms value is the direct voltage that would give the same average power in a resistor; for a sinusoidal voltage it is the peak value divided by $\sqrt{2}$.
 **Formula:** $e_0 = NBA \cdot 2\pi f$ and $U = \dfrac{e_0}{\sqrt{2}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
-**Substitution:** $e_0 = 60 \cdot 0.50\,\text{T} \cdot 0.060\,\text{m}^2 \cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} = 565.5\,\text{V}$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
+**Substitution:** $$
+\begin{aligned}
+e_0 &= 60 \cdot 0.50\,\text{T} \cdot 0.060\,\text{m}^2 \\
+&\cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} \\
+&= 565.5\,\text{V}
+\end{aligned}
+$$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 **Answer:** The peak value is $e_0 \approx 570\,\text{V}$ and the rms value $U \approx 400\,\text{V}$, two significant figures like the magnetic flux density $0.50\,\text{T}$ and the area $0.060\,\text{m}^2$.
 **Reasonableness:** The units match: $\text{T} \cdot \text{m}^2 \cdot \tfrac{1}{\text{s}} = \tfrac{\text{Wb}}{\text{s}} = \text{V}$. The rms value is smaller than the peak value, as it should be, and $400\,\text{V}$ is a common industrial voltage.
 
@@ -22,12 +28,12 @@
 
 ### c)
 **Given:** line current $I_2 = 7.50\,\text{A}$ (part b), resistance $R = 6.0\,\Omega$, line voltage $U_2 = 20.0\,\text{kV}$, power $P = 150\,\text{kW}$; for comparison the voltage $U_1 = 400\,\text{V}$
-**Find:** the fraction $\tfrac{P_\text{h}}{P}$ of the power that turns into heat, and what would happen at the voltage $400\,\text{V}$
+**Find:** the fraction $\tfrac{P_\text{h}}{P}$ of the power that is converted into internal energy of the line, and what would happen at the voltage $400\,\text{V}$
 **Principle:** In the resistance of the line electrical energy turns into internal energy at the rate $RI^2$. The transmission voltage $20\,\text{kV}$ is not across the resistance of the line, so the loss is calculated from the current, which is obtained from the transmitted power (chapter *The transformer and the transmission of electrical energy*).
 **Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = RI^2$, so $P_\text{h} = \dfrac{RP^2}{U^2}$ and the fraction of the transmitted power lost is $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Conversions:** Finally the fraction as a percentage: multiply by $100\,\%$.
 **Substitution:** $P_\text{h} = 6.0\,\Omega \cdot (7.50\,\text{A})^2 = 337.5\,\text{W}$, so $\dfrac{P_\text{h}}{P} = \dfrac{337.5\,\text{W}}{150\,000\,\text{W}} = 0.00225 = 0.225\,\%$. At the voltage $400\,\text{V}$: $I = 375\,\text{A}$ and $RI^2 = 6.0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
-**Answer:** About $0.23\,\%$ of the power turns into heat in the line, two significant figures like the resistance $6.0\,\Omega$. At the voltage $400\,\text{V}$ the expression $RI^2$ would give $844\,\text{kW}$, more than five times the transmitted power. This means that the transmission would not work at all: already the voltage drop of the line $RI = 6.0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ would be larger than the whole voltage.
+**Answer:** About $0.23\,\%$ of the power is converted into internal energy in the line, two significant figures like the resistance $6.0\,\Omega$. At the voltage $400\,\text{V}$ the expression $RI^2$ would give $844\,\text{kW}$, more than five times the transmitted power. This means that the transmission would not work at all: already the voltage drop of the line $RI = 6.0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ would be larger than the whole voltage.
 **Reasonableness:** The loss is proportional to the square of the current, and the current is inversely proportional to the voltage, so a $50$ times higher voltage reduces the loss by a factor of $50^2 = 2500$: $844\,\text{kW} : 2500 \approx 340\,\text{W}$, the same result.
 
 ### d)
@@ -340,7 +346,14 @@
 ### b)
 **Find:** whether the group's conclusions are justified
 **Principle:** The small-angle assumption $\sin\theta \approx \tfrac{x}{L}$ holds only at small angles. The result is compared with the manufacturer's value using the uncertainty, and the number of maxima is limited by the condition $k\lambda < d$ (chapters *Interference and diffraction of light* and *Measuring and the reliability of a measurement*).
-**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$. If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light. The third order exists, because $3\lambda = 1.60\,\mu\text{m} < d = 1.667\,\mu\text{m}$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $x_3 = 0.800\,\text{m} \cdot \tan 73.3^\circ \approx 2.7\,\text{m}$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
+**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$. If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light. The third order exists, because $$
+\begin{aligned}
+&3\lambda \\
+&= 1.60\,\mu\text{m} \\
+&< d \\
+&= 1.667\,\mu\text{m}
+\end{aligned}
+$$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $x_3 = 0.800\,\text{m} \cdot \tan 73.3^\circ \approx 2.7\,\text{m}$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
 
 ### c)
 **Find:** how the measurement can be improved
@@ -361,7 +374,12 @@
 **Principle:** The magnetic force $qvB$ is perpendicular to the velocity, so inside an electrode the proton is in uniform circular motion, and the force is its centripetal force (chapters *Charged particle in electric and magnetic fields* and *Centripetal acceleration and the equation of motion in a circle*). In one revolution the proton travels the circumference of the circle, $2\pi r$ (chapter *Moving in a circle: period and speed*). The direction of the voltage must change every half revolution, when the proton crosses the gap, so the frequency of the voltage is the same as the frequency of revolution.
 **Formula:** $qvB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{qB}$, and $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$; the speed cancels, and $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Conversions:** The quantities are in base units; finally $1\,\text{MHz} = 10^6\,\text{Hz}$.
-**Substitution:** $T = \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.20\,\text{T}} = 5.468 \cdot 10^{-8}\,\text{s}$, so $f = \dfrac{1}{5.468 \cdot 10^{-8}\,\text{s}} = 1.829 \cdot 10^{7}\,\text{Hz} = 18.29\,\text{MHz}$
+**Substitution:** $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.20\,\text{T}} \\
+&= 5.468 \cdot 10^{-8}\,\text{s}
+\end{aligned}
+$$, so $f = \dfrac{1}{5.468 \cdot 10^{-8}\,\text{s}} = 1.829 \cdot 10^{7}\,\text{Hz} = 18.29\,\text{MHz}$
 **Answer:** The period of revolution $T = \tfrac{2\pi m}{qB}$ depends neither on the speed nor on the radius: a faster proton goes round a larger circle in the same time. The voltage must alternate at the frequency $f \approx 18.3\,\text{MHz}$, three significant figures like the magnetic flux density $1.20\,\text{T}$.
 **Reasonableness:** Units: $\tfrac{\text{kg}}{\text{C} \cdot \text{T}} = \tfrac{\text{kg}}{\text{C} \cdot \tfrac{\text{N}}{\text{A} \cdot \text{m}}} = \tfrac{\text{kg} \cdot \text{m}}{\text{N} \cdot \text{s}} = \text{s}$. The frequency is in the radio-frequency range, as for the accelerating voltages of cyclotrons.
 
@@ -393,7 +411,12 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $a_\text{n} = \dfrac{(3.914 \cdot 10^{7}\,\text{m/s})^2}{0.3406\,\text{m}} = 4.498 \cdot 10^{15}\,\text{m/s}^2$
 **Answer:** The acceleration is $a \approx 4.5 \cdot 10^{15}\,\text{m/s}^2$ and points to the centre of the path, two significant figures like the results of part b.
-**Reasonableness:** $\tfrac{qvB}{m} = \tfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 3.914 \cdot 10^{7}\,\text{m/s} \cdot 1.20\,\text{T}}{1.673 \cdot 10^{-27}\,\text{kg}} \approx 4.5 \cdot 10^{15}\,\text{m/s}^2$, the same result. The acceleration is enormous because the mass of the proton is very small and the force about $7.5 \cdot 10^{-12}\,\text{N}$.
+**Reasonableness:** $$
+\begin{aligned}
+\tfrac{qvB}{m} &= \tfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 3.914 \cdot 10^{7}\,\text{m/s} \cdot 1.20\,\text{T}}{1.673 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 4.5 \cdot 10^{15}\,\text{m/s}^2
+\end{aligned}
+$$, the same result. The acceleration is enormous because the mass of the proton is very small and the force about $7.5 \cdot 10^{-12}\,\text{N}$.
 
 ### Yleisiä virheitä
 - In part a the period of revolution is calculated separately for some speed, and it is not stated that the speed cancels.
@@ -404,3 +427,102 @@
 ### Hyväksytään myös
 - In part a calculating the frequency directly from the expression $f = \tfrac{qB}{2\pi m}$.
 - In part c the answer $n = 80$ without decimals, because the number of revolutions is a whole number.
+
+## fy9-magnetismi-valo-s7
+
+### a)
+**Given:** from the source (CERN, checked 16 Nov 2026) the circumference of the LHC $l = 26\,659\,\text{m}$ and the number of turns $N = 11\,245$ in the time $t = 1\,\text{s}$; the speed of light $c = 2.99792458 \cdot 10^8\,\text{m/s}$
+**Find:** the speed $v$ of the protons and its comparison with the speed of light
+**Principle:** After the acceleration the protons go round the ring at constant speed, so the speed is the distance travelled divided by the time taken (chapter *Moving in a circle: period and speed*). In one turn a proton travels the circumference, so in one second it travels the distance $s = Nl$.
+**Formula:** $v = \dfrac{s}{t} = \dfrac{Nl}{t}$
+**Conversions:** The quantities are in base units, so no conversions are needed.
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{11\,245 \cdot 26\,659\,\text{m}}{1\,\text{s}} \\
+&= 299\,780\,455\,\text{m/s} \\
+&\approx 2.9978 \cdot 10^{8}\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The speed of the protons is $v \approx 2.9978 \cdot 10^8\,\text{m/s}$, five significant figures like the figures of the source. Comparison: $$
+\begin{aligned}
+\dfrac{v}{c} &= \dfrac{2.9978 \cdot 10^{8}\,\text{m/s}}{2.99792458 \cdot 10^{8}\,\text{m/s}} \\
+&\approx 0.99996
+\end{aligned}
+$$ so the speed is practically the speed of light. The calculated difference, about $12\,\text{km/s}$ or $0.004\,\%$, does not however tell how far the protons fall short of the speed of light. The figures of the source are rounded to whole metres and whole turns, and this rounding alone allows the speed the interval $2.9976 \cdot 10^8\,\text{m/s}$ … $2.9980 \cdot 10^8\,\text{m/s}$, which includes the speed of light. From the source one can therefore conclude that the protons travel at the speed of light to the precision of these figures, but the real difference from it cannot be concluded. Because a proton has mass, its speed nevertheless always stays below the speed of light.
+**Reasonableness:** Light travels about $300\,000\,\text{km}$ in a second, and a circumference of about $27\,\text{km}$ fits into this distance about $\tfrac{300\,000\,\text{km}}{27\,\text{km}} \approx 11\,000$ times. The $11\,245$ turns per second of the source agree with this.
+
+### b)
+**Given:** energy of one proton $E_1 = 6.8\,\text{TeV}$ (source, checked 16 Nov 2026), $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Find:** the energy $E_1$ in joules
+**Principle:** The electronvolt is a unit of energy: it is the energy that a charge of the size of the elementary charge gains across a voltage of one volt (chapter *Potential energy and potential in an electric field*). The prefix tera (T) means the factor $10^{12}$.
+**Formula:** $E_1 = 6.8\,\text{TeV} = 6.8 \cdot 10^{12}\,\text{eV}$, and the unit $\text{eV}$ is replaced by $1.602 \cdot 10^{-19}\,\text{J}$
+**Conversions:** $1\,\text{TeV} = 10^{12}\,\text{eV}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Substitution:** $$
+\begin{aligned}
+E_1 &= 6.8 \cdot 10^{12} \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 1.0894 \cdot 10^{-6}\,\text{J}
+\end{aligned}
+$$
+**Answer:** The energy of one proton is $E_1 \approx 1.1 \cdot 10^{-6}\,\text{J}$, or about $1.1\,\mu\text{J}$, two significant figures like the energy $6.8\,\text{TeV}$.
+**Reasonableness:** On an everyday scale the energy is small: a $2\,\text{mg}$ mosquito at the speed $1\,\text{m/s}$ has the kinetic energy $\tfrac12 \cdot 2 \cdot 10^{-6}\,\text{kg} \cdot (1\,\text{m/s})^2 = 1 \cdot 10^{-6}\,\text{J}$. For a single proton it is enormous. If the speed were calculated from the classical kinetic energy $\tfrac12 mv^2$ with the proton mass $1.673 \cdot 10^{-27}\,\text{kg}$, the result would be $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 1.0894 \cdot 10^{-6}\,\text{J}}{1.673 \cdot 10^{-27}\,\text{kg}}} \\
+&\approx 3.6 \cdot 10^{10}\,\text{m/s}
+\end{aligned}
+$$ or about $120$ times the speed of light. The result is impossible and contradicts part a, so the classical expression for kinetic energy does not hold at energies this large: the energy grows although the speed stays below the speed of light.
+
+### c)
+**Given:** about $2500$ bunches in one beam and $1.6 \cdot 10^{11}$ protons in a bunch (source, checked 16 Nov 2026); energy of one proton $E_1 = 1.0894 \cdot 10^{-6}\,\text{J}$ (part b)
+**Find:** the energy $E$ stored in one proton beam
+**Principle:** The energy of the beam is the sum of the energies of its protons. All the protons have the same energy, so the sum is the number of protons $N$ times the energy of one proton. There are two beams in the ring; here the energy of one beam is calculated.
+**Formula:** $E = NE_1$, where $N$ is the number of bunches times the number of protons in a bunch
+**Conversions:** $1\,\text{MJ} = 10^6\,\text{J}$
+**Substitution:** $N = 2500 \cdot 1.6 \cdot 10^{11}$, that is, $N = 4.0 \cdot 10^{14}$, so $$
+\begin{aligned}
+E &= 4.0 \cdot 10^{14} \cdot 1.0894 \cdot 10^{-6}\,\text{J} \\
+&= 4.357 \cdot 10^{8}\,\text{J} \\
+&= 435.7\,\text{MJ}
+\end{aligned}
+$$
+**Answer:** The energy stored in one proton beam is $E \approx 4.4 \cdot 10^8\,\text{J} = 4.4 \cdot 10^2\,\text{MJ}$, two significant figures like the energy $6.8\,\text{TeV}$ and the number of protons $1.6 \cdot 10^{11}$.
+**Reasonableness:** Order of magnitude: $4 \cdot 10^{14}$ protons, each with about $10^{-6}\,\text{J}$, give $4 \cdot 10^{8}\,\text{J}$. The total mass of the protons is only $4.0 \cdot 10^{14} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \approx 6.7 \cdot 10^{-13}\,\text{kg}$, less than a nanogram, so the large energy comes from the energy of the protons and not from the amount of matter.
+
+### d)
+**Given:** mass of the car $m = 1500\,\text{kg}$ and speed $v = 100\,\text{km/h}$; energy of one beam $E = 4.357 \cdot 10^8\,\text{J}$ (part c)
+**Find:** the kinetic energy $E_\text{k}$ of the car and the ratio $\tfrac{E}{E_\text{k}}$, that is, the kinetic energy of how many cars the energy of the beam corresponds to
+**Principle:** The kinetic energy of a body in translational motion is $\tfrac12 mv^2$ (chapter *Kinetic energy, potential energy and mechanical energy*). The speed of the car is vanishingly small compared with the speed of light, so the classical expression fits the car, unlike the proton in part b.
+**Formula:** $E_\text{k} = \tfrac12 mv^2$, and the number of cars is the ratio $\dfrac{E}{E_\text{k}}$
+**Conversions:** $v = 100\,\text{km/h} = \dfrac{100 \cdot 1000\,\text{m}}{3600\,\text{s}} = 27.778\,\text{m/s}$
+**Substitution:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 1500\,\text{kg} \cdot (27.778\,\text{m/s})^2 \\
+&= 5.787 \cdot 10^{5}\,\text{J} \\
+&= 0.5787\,\text{MJ}
+\end{aligned}
+$$ and $\dfrac{E}{E_\text{k}} = \dfrac{4.357 \cdot 10^{8}\,\text{J}}{5.787 \cdot 10^{5}\,\text{J}} = 753$
+**Answer:** The kinetic energy of the car is $E_\text{k} \approx 0.579\,\text{MJ}$, three significant figures like the speed $100\,\text{km/h}$. The energy of one proton beam corresponds to the kinetic energy of about $750$ such cars, two significant figures like the energy of the beam.
+**Reasonableness:** Units: $\text{kg} \cdot \left(\tfrac{\text{m}}{\text{s}}\right)^2 = \text{N} \cdot \text{m} = \text{J}$. The kinetic energy of a car at highway speed is of the order of half a megajoule, so a beam of hundreds of megajoules corresponds to hundreds of cars. So much energy in less than a nanogram of matter explains why the beam must be steered precisely: if it hit the structures of the machine, the energy would turn into their internal energy in an instant.
+
+### e)
+**Find:** the role of the magnetic fields and of superconductivity in the operation of the LHC
+**Principle:** A charged particle moving in a magnetic field experiences a magnetic force that is perpendicular to the velocity of the particle (chapter *Charged particle in electric and magnetic fields*). A force perpendicular to the direction of motion does no work. The magnetic flux density of a coil is proportional to the current in the coil (chapter *Magnetic field of a wire and a coil*), and in a conductor of resistance $R$ electrical energy turns into internal energy at the rate $P = RI^2$ (chapter *Electric power and the heating of a resistor*).
+**Model answer:** According to the source (checked 16 Nov 2026) the $1232$ dipole magnets of the LHC bend the paths of the beams and the $392$ quadrupole magnets focus the beams, the magnets are cooled with superfluid helium to the temperature $1.9\,\text{K}$, and the protons are accelerated in accelerating cavities.
+
+The magnetic force is perpendicular to the velocity of the proton, so it changes only the direction of the velocity: in the field of the dipole magnets the path of a proton, which would otherwise go straight on, bends into an arc of a circle, and the proton stays in the ring. The field of the quadrupole magnets steers protons drifting towards the edges back towards the centre of the beam, so the beam stays narrow. Because the force is perpendicular to the direction of motion, it does no work, and the magnetic field therefore does not increase the energy of the proton. The energy comes from the electric field of the accelerating cavities, which exerts a force on the proton in the direction of its motion and does work on every turn.
+
+The larger the energy of the proton, the stronger the field needed to keep it on the same path, and a strong field needs a very large current in the coil. In an ordinary conductor electrical energy would turn into internal energy at the rate $P = RI^2$, which grows as the square of the current: the coils would heat up, and the internal energy would have to be removed continuously by cooling. At the temperature $1.9\,\text{K}$ the conductor of the coils is in the superconducting state, in which its resistance is zero. Then $RI^2 = 0$, and a large current flows in the coil with no power loss. Superconductivity thus makes the strong fields possible, and its price is cooling close to absolute zero.
+
+The radius of the path cannot be calculated from the expression $r = \tfrac{mv}{qB}$ used in this course with the mass of the proton, because the protons travel at almost the speed of light and classical mechanics does not hold for them (part b).
+
+### Yleisiä virheitä
+- In part a it is concluded that the protons travel at exactly the speed of light or faster, or the calculated difference of $12\,\text{km/s}$ is presented as a precise result although the figures of the source are rounded.
+- In part b the prefix tera is forgotten or replaced by mega, or one divides by the number $1.602 \cdot 10^{-19}$.
+- In part c the energy of only one bunch is calculated, or the energy of both beams, about $870\,\text{MJ}$, although the energy of one beam is asked for.
+- In part d the speed is not converted to the unit $\text{m/s}$, which gives a kinetic energy of $7.5\,\text{MJ}$ and only $58$ cars.
+- In part e it is said that the magnetic field accelerates the protons or gives them energy, or that a superconductor by itself produces a field without a current.
+
+### Hyväksytään myös
+- In part a a comparison with the value $c = 3.00 \cdot 10^8\,\text{m/s}$, when it is stated that the figures are not enough to distinguish the speed from the speed of light and that a proton, which has mass, stays below it.
+- In part b the answer $1.1\,\mu\text{J}$.
+- In part c a calculation with the rounded value $1.1 \cdot 10^{-6}\,\text{J}$ of part b, which gives the same result $4.4 \cdot 10^8\,\text{J}$.
+- In part d a calculation with rounded intermediate results, $\tfrac{4.4 \cdot 10^8\,\text{J}}{5.79 \cdot 10^5\,\text{J}} \approx 760$ cars.

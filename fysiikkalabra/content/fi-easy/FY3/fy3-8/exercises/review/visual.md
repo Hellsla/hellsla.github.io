@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 65f7b748b1e5d4e4
+CONTENT-HASH: 80088db3c3777a8f
 
 ## Blocking
 None.
 
 ## Polish
-none.
+None.
 
 ## Checked
-- Delta: fy3-8-L1-09 (card with closed Vihje box, open solution: open-exercises-1280-9, -10) and fy3-8-L2-09 (card with length-graph, open solution: open-exercises-L2-1280-13, -14). Layout, KaTeX chains, graph legibility (axes, units, ticks, end points marked, answer not shown), Finnish, set still reads as one.
+- Delta ("murto-osa metriä kohti" wording in 10-?, L2-04 solution): open-exercises-L2-1280-5 (10-13 graph task and solution start: axes with quantity and unit, data points distinct, layout intact).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

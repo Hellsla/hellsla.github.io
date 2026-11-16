@@ -51,7 +51,7 @@
 ## fy3-3-L1-06
 **Kysytty:** onko tiiviissä sylinterissä oleva kaasu suljettu vai avoin systeemi.
 **Periaate:** Systeemi on suljettu, jos siitä ei pääse ainetta ulos eikä sinne tule ainetta. Energiaa voi silti siirtyä rajan yli. Mäntä kuuluu systeemin rajaan. Kun mäntä liikkuu, tilavuus muuttuu. Aine ei kuitenkaan ylitä rajaa.
-**Mallivastaus:** Kaasu on suljettu systeemi, koska ainetta ei siirry sen rajan yli. Energiaa voi siirtyä ja tilavuus voi muuttua. Systeemi olisi avoin vasta, jos ainetta pääsisi ulos tai sisään, esimerkiksi jos sylinteri vuotaisi. Lämmitys ja puristus muuttavat tilanmuuttujia eli lämpötilaa, painetta ja tilavuutta. Ne eivät tee systeemistä avointa. Suljetun systeemin lämpötila ei myöskään ole vakio.
+**Mallivastaus:** Kaasu on suljettu systeemi, koska ainetta ei siirry sen rajan yli. Energiaa voi siirtyä ja tilavuus voi muuttua. Systeemi olisi avoin vasta, jos ainetta pääsisi ulos tai sisään, esimerkiksi jos sylinteri vuotaisi. Lämmitys ja puristus muuttavat tilanmuuttujia eli lämpötilaa, painetta ja tilavuutta. Ne eivät tee systeemistä avointa. Suljetun systeemin lämpötila ei myöskään välttämättä ole vakio.
 
 ## fy3-3-L1-07
 **Annettu:** $\theta = -18\,{}^\circ\text{C}$

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9d34a7e0143e622e
-Review of the recognition chart (queue 9c) and the term change against the version passed at f2ccc4940864b96a; full on the chart, delta on the rest.
+CONTENT-HASH: 6513a898b1c57a2a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
-- [C] The longest pill (F_E = kQ1Q2/r^2) nearly touches the pill's rounded ends at 360 px; a little more horizontal padding would help.
+- (none)
 
 ## Checked
-- Chart PNGs at 360 and 1280 px: 8 rows (Coulomb ... LED loop). No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
-- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
-- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
-- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).
+- Hunks: solutions.md Answer for $b \approx 22\,\text{pF}$ (the reason for two significant figures) and Reasonableness of the ion-thruster part (field compared with the dielectric strength of air, $3\,\text{MV/m}$).
+- Captures opened: `fy9-sahkokentta-stage-exercises-390-27` (answer and reasonableness of the capacitance part), `-390-49` and `-390-50` (ion thruster: substitution, answer, the changed reasonableness), `fy9-sahkokentta-stage-exercises-1280-36` (same solution at desktop width).
+- Both sentences are grammatical and clearer than before; $1.1\,\text{MV/m}$ and $3\,\text{MV/m}$ are LaTeX; the square-root row fits the 390 px card without scrolling.

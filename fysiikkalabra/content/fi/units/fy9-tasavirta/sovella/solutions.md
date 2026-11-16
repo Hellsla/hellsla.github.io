@@ -16,7 +16,12 @@
 **Periaate:** Raita on tasapaksu johdin, jonka resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan (luku *Resistanssi ja Ohmin laki*). Raidan poikkileikkaus on suorakulmio, jonka pinta-ala on leveys kertaa paksuus.
 **Kaava:** $R_1 = \rho\,\dfrac{l}{A}$, joten $A = \dfrac{\rho l}{R_1}$, ja $A = bh$, joten $h = \dfrac{A}{b} = \dfrac{\rho l}{R_1 b}$
 **Muunnokset:** $3{,}0\,\text{mm} = 3{,}0 \cdot 10^{-3}\,\text{m}$ ja lopuksi $1\,\text{m} = 10^{6}\,\mu\text{m}$
-**Sijoitus:** $A = \dfrac{3{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1{,}10\,\text{m}}{11{,}25\,\Omega} = 2{,}933 \cdot 10^{-8}\,\text{m}^2$ ja $h = \dfrac{2{,}933 \cdot 10^{-8}\,\text{m}^2}{3{,}0 \cdot 10^{-3}\,\text{m}} = 9{,}78 \cdot 10^{-6}\,\text{m} = 9{,}78\,\mu\text{m}$
+**Sijoitus:** $$
+\begin{aligned}
+A &= \dfrac{3{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1{,}10\,\text{m}}{11{,}25\,\Omega} \\
+&= 2{,}933 \cdot 10^{-8}\,\text{m}^2
+\end{aligned}
+$$ ja $h = \dfrac{2{,}933 \cdot 10^{-8}\,\text{m}^2}{3{,}0 \cdot 10^{-3}\,\text{m}} = 9{,}78 \cdot 10^{-6}\,\text{m} = 9{,}78\,\mu\text{m}$
 **Vastaus:** Raidan paksuus on $h \approx 9{,}8\,\mu\text{m}$ eli noin sadasosamillimetri, kaksi merkitsevää numeroa kuten resistiivisyys ja leveys.
 **Järkevyys:** Lasin pintaan painettu johdinraita on hyvin ohut kalvo, joten mikrometrien paksuus on uskottava. Jos raita olisi millimetrin paksuinen, sen resistanssi olisi sata kertaa pienempi, ja virta olisi liian suuri.
 
@@ -33,7 +38,12 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $R = \dfrac{11{,}25\,\Omega}{10} = 1{,}125\,\Omega$, $I = \dfrac{12{,}6\,\text{V}}{1{,}125\,\Omega + 0{,}020\,\Omega} = 11{,}00\,\text{A}$ ja $P = 1{,}125\,\Omega \cdot (11{,}00\,\text{A})^2 = 136{,}2\,\text{W}$
 **Vastaus:** Lämmittimen teho on $P \approx 136\,\text{W}$, kolme merkitsevää numeroa kuten lähdejännite $12{,}6\,\text{V}$.
-**Järkevyys:** Napajännite on $12{,}6\,\text{V} - 0{,}020\,\Omega \cdot 11{,}0\,\text{A} = 12{,}38\,\text{V}$, ja $\tfrac{(12{,}38\,\text{V})^2}{1{,}125\,\Omega} \approx 136\,\text{W}$, sama tulos. Teho on noin $84\,\%$ moottorin käydessä saadusta, koska teho on verrannollinen jännitteen neliöön ja $\left(\tfrac{12{,}38}{13{,}5}\right)^2 \approx 0{,}84$. Moottorin käydessä laturi pitää jännitteen korkeampana.
+**Järkevyys:** Napajännite on $$
+\begin{aligned}
+&12{,}6\,\text{V} - 0{,}020\,\Omega \cdot 11{,}0\,\text{A} \\
+&= 12{,}38\,\text{V}
+\end{aligned}
+$$, ja $\tfrac{(12{,}38\,\text{V})^2}{1{,}125\,\Omega} \approx 136\,\text{W}$, sama tulos. Teho on noin $84\,\%$ moottorin käydessä saadusta, koska teho on verrannollinen jännitteen neliöön ja $\left(\tfrac{12{,}38}{13{,}5}\right)^2 \approx 0{,}84$. Moottorin käydessä laturi pitää jännitteen korkeampana.
 
 ### Yleisiä virheitä
 - a-kohdassa raidan resistanssiksi lasketaan koko lämmittimen resistanssi $\tfrac{13{,}5\,\text{V}}{12{,}0\,\text{A}} = 1{,}125\,\Omega$, tai raidat oletetaan sarjaan, jolloin resistanssi jaetaan kymmenellä väärään suuntaan.
@@ -84,7 +94,12 @@
 **Muunnokset:** $436{,}8\,\text{Wh} = 0{,}4368\,\text{kWh}$ ja $15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
 **Sijoitus:** $W_\text{lat} = 42{,}0\,\text{V} \cdot 10{,}4\,\text{Ah} = 436{,}8\,\text{Wh}$, $\eta = \dfrac{374{,}4\,\text{Wh}}{436{,}8\,\text{Wh}} = 0{,}857$ ja $K = 0{,}15\,\tfrac{\text{€}}{\text{kWh}} \cdot 0{,}4368\,\text{kWh} = 0{,}066\,\text{€}$
 **Vastaus:** Hyötysuhde on $\eta \approx 86\,\%$, ja yksi täysi lataus maksaa noin $7\,\text{snt}$. Tarkkuus on kaksi merkitsevää numeroa, koska akun nimellisjännite $36\,\text{V}$ on vain kahden numeron tarkkuudella.
-**Järkevyys:** Hyötysuhde on alle $100\,\%$, koska $436{,}8\,\text{Wh} - 374{,}4\,\text{Wh} \approx 62\,\text{Wh}$ muuttuu laturin, johtojen ja akun resistanssien sisäenergiaksi; siksi laturi ja akku lämpenevät latauksessa. Noin seitsemän senttiä noin $28\,\text{km}$:n matkasta on hyvin halpaa.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$, koska $$
+\begin{aligned}
+&436{,}8\,\text{Wh} - 374{,}4\,\text{Wh} \\
+&\approx 62\,\text{Wh}
+\end{aligned}
+$$ muuttuu laturin, johtojen ja akun resistanssien sisäenergiaksi; siksi laturi ja akku lämpenevät latauksessa. Noin seitsemän senttiä noin $28\,\text{km}$:n matkasta on hyvin halpaa.
 
 ### Yleisiä virheitä
 - a-kohdassa milliampeeritunteja tai ampeeritunteja pidetään energiana, tai wattitunteja ei muuteta jouleiksi sijoittamalla.
@@ -276,7 +291,14 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $I = \dfrac{4{,}63\,\text{V}}{3{,}6\,\Omega + 0{,}733\,\Omega} = 1{,}069\,\text{A}$, $P = 3{,}6\,\Omega \cdot (1{,}069\,\text{A})^2 = 4{,}11\,\text{W}$, $EI = 4{,}63\,\text{V} \cdot 1{,}069\,\text{A} = 4{,}95\,\text{W}$ ja $\dfrac{4{,}11\,\text{W}}{4{,}95\,\text{W}} = 0{,}831$
 **Vastaus:** Lamppuun siirtyy teho $P \approx 4{,}1\,\text{W}$, mikä on noin $83\,\%$ lähdetehosta. Tarkkuus on kaksi merkitsevää numeroa kuten lampun resistanssi $3{,}6\,\Omega$.
-**Järkevyys:** Sisäiseen resistanssiin jää $0{,}733\,\Omega \cdot (1{,}069\,\text{A})^2 \approx 0{,}84\,\text{W}$, ja $4{,}11\,\text{W} + 0{,}84\,\text{W} = 4{,}95\,\text{W}$, kuten energian säilyminen vaatii. Osuus on myös $\tfrac{R}{R + R_\text{s}} = \tfrac{3{,}6}{4{,}33} \approx 0{,}83$. Virta $1{,}07\,\text{A}$ on hieman mittausalueen yläpuolella, joten malli pätee siihen todennäköisesti hyvin.
+**Järkevyys:** Sisäiseen resistanssiin jää $$
+\begin{aligned}
+&0{,}733\,\Omega \cdot (1{,}069\,\text{A})^2 \\
+&\approx 0{,}84\,\text{W}
+\end{aligned}
+$$, ja $$
+4{,}11\,\text{W} + 0{,}84\,\text{W} = 4{,}95\,\text{W}
+$$, kuten energian säilyminen vaatii. Osuus on myös $\tfrac{R}{R + R_\text{s}} = \tfrac{3{,}6}{4{,}33} \approx 0{,}83$. Virta $1{,}07\,\text{A}$ on hieman mittausalueen yläpuolella, joten malli pätee siihen todennäköisesti hyvin.
 
 ### Yleisiä virheitä
 - a-kohdassa pisteet yhdistetään murtoviivaksi, tai pystyakseli katkaistaan merkitsemättä katkaisua.
@@ -294,7 +316,13 @@
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa ja kuinka suuri teho muuttuu sisäenergiaksi $15\,\text{m}$:n jatkojohdossa
 **Periaate:** Virta ei kulu: sama varaus kulkee johtoa pitkin laitteeseen ja palaa toista johdinta pitkin (luku *Virtapiiri, sähkövirta ja jännite*). Johtimilla on resistanssi $R = \rho\,\tfrac{l}{A}$ (luku *Resistanssi ja Ohmin laki*), ja resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*).
-**Mallivastaus:** Väite on väärä. Johdossa ei kulu virtaa: laitteeseen menevä ja sieltä palaava virta on yhtä suuri. Johto lämpenee, koska sen resistanssissa muuttuu sähköenergiaa sisäenergiaksi teholla $P = RI^2$. Virta kulkee kahden johtimen kautta, joten matka on $2 \cdot 15\,\text{m} = 30\,\text{m}$, ja $R = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{30\,\text{m}}{0{,}75 \cdot 10^{-6}\,\text{m}^2} = 0{,}68\,\Omega$. Virralla $10\,\text{A}$ teho on $0{,}68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, kuin pieni lämmitin johdon sisällä. Resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan, joten ohut johto lämpenee pituusyksikköä kohti yhtä paljon, oli se lyhyt tai pitkä. Teho kasvaa virran neliönä, joten ratkaisevaa on suuri virta: ohut johto on vaarallinen suurella virralla myös lyhyenä, ja varsinkin kelalle kierrettynä, jolloin lämpö ei pääse pois. Paksumpi johto $1{,}5\,\text{mm}^2$ puolittaisi tehon $34\,\text{W}$:iin.
+**Mallivastaus:** Väite on väärä. Johdossa ei kulu virtaa: laitteeseen menevä ja sieltä palaava virta on yhtä suuri. Johto lämpenee, koska sen resistanssissa muuttuu sähköenergiaa sisäenergiaksi teholla $P = RI^2$. Virta kulkee kahden johtimen kautta, joten matka on $2 \cdot 15\,\text{m} = 30\,\text{m}$, ja $$
+\begin{aligned}
+R &= 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\
+&\cdot \tfrac{30\,\text{m}}{0{,}75 \cdot 10^{-6}\,\text{m}^2} \\
+&= 0{,}68\,\Omega
+\end{aligned}
+$$. Virralla $10\,\text{A}$ teho on $0{,}68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, kuin pieni lämmitin johdon sisällä. Resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan, joten ohut johto lämpenee pituusyksikköä kohti yhtä paljon, oli se lyhyt tai pitkä. Teho kasvaa virran neliönä, joten ratkaisevaa on suuri virta: ohut johto on vaarallinen suurella virralla myös lyhyenä, ja varsinkin kelalle kierrettynä, jolloin lämpö ei pääse pois. Paksumpi johto $1{,}5\,\text{mm}^2$ puolittaisi tehon $34\,\text{W}$:iin.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, kun samassa $10\,\text{A}$:n ryhmässä ovat $2000\,\text{W}$:n vedenkeitin ja $850\,\text{W}$:n leivänpaahdin
@@ -304,7 +332,12 @@
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri jännite on linnun jalkojen välillä
 **Periaate:** Virtaa kehon kautta ajaa kehon kahden kosketuskohdan välinen potentiaaliero eli jännite (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Johtimessa potentiaali laskee virran suuntaan $RI$:n verran, ja lyhyen johtimen palan resistanssi on $R = \rho\,\tfrac{l}{A}$ (luku *Resistanssi ja Ohmin laki*).
-**Mallivastaus:** Väite pitää paikkansa. Linnun jalkojen välinen johdon pala on $4{,}0\,\text{cm}$ pitkä, joten sen resistanssi on $2{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0{,}040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} = 2{,}7 \cdot 10^{-6}\,\Omega$, ja jalkojen välinen jännite on $2{,}7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1{,}6\,\text{mV}$. Niin pieni jännite ei aja linnun kehon läpi juuri lainkaan virtaa, vaikka koko lintu on johdon kanssa korkeassa potentiaalissa maahan nähden. Pylväs on maan potentiaalissa. Jos lintu koskettaa sitä samalla, sen kehon yli on lähes koko johdon ja maan välinen jännite, kymmeniä tai satoja kilovoltteja, ja kehon kautta kulkee vaarallinen virta. Vaarallista ei siis ole korkea potentiaali vaan suuri potentiaaliero kehon kahden kohdan välillä.
+**Mallivastaus:** Väite pitää paikkansa. Linnun jalkojen välinen johdon pala on $4{,}0\,\text{cm}$ pitkä, joten sen resistanssi on $$
+\begin{aligned}
+&2{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0{,}040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} \\
+&= 2{,}7 \cdot 10^{-6}\,\Omega
+\end{aligned}
+$$, ja jalkojen välinen jännite on $2{,}7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1{,}6\,\text{mV}$. Niin pieni jännite ei aja linnun kehon läpi juuri lainkaan virtaa, vaikka koko lintu on johdon kanssa korkeassa potentiaalissa maahan nähden. Pylväs on maan potentiaalissa. Jos lintu koskettaa sitä samalla, sen kehon yli on lähes koko johdon ja maan välinen jännite, kymmeniä tai satoja kilovoltteja, ja kehon kautta kulkee vaarallinen virta. Vaarallista ei siis ole korkea potentiaali vaan suuri potentiaaliero kehon kahden kohdan välillä.
 
 ### Yleisiä virheitä
 - a-kohdassa johdon pituudeksi otetaan $15\,\text{m}$, vaikka virta kulkee kahden johtimen kautta, tai neliömillimetrejä ei muuteta neliömetreiksi.
@@ -332,7 +365,12 @@
 ### c)
 **Kysytty:** miten mittausta parannetaan, jotta Ohmin lain voimassaolo voidaan todeta luotettavasti
 **Periaate:** Riippuvuus todetaan luotettavimmin kuvaajasta, johon on sovitettu suora monesta pisteestä (luku *Graafinen esitys ja suoran sovittaminen*). Mittarin virheraja on pienin, kun käytetään pienintä aluetta, jolle lukema mahtuu (luku *Mittaukset virtapiirissä*). Ohmin laki koskee vakiolämpötilaa, joten lämpötila on pidettävä vakiona (luku *Resistanssi ja Ohmin laki*).
-**Mallivastaus:** Mitataan vähintään kahdeksan pistettä laajalla jännitealueella, esimerkiksi $0{,}5$–$10\,\text{V}$, ja piirretään $(I, U)$-kuvaaja. Jos vastus noudattaa Ohmin lakia, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$; poikkeama suorasta näkyy kuvaajasta paremmin kuin kolmesta suhteesta. Jokainen lukema luetaan pienimmältä alueelta, jolle se mahtuu: esimerkiksi $0{,}510\,\text{V}$ alueella $2\,\text{V}$ antaa virherajan $0{,}005 \cdot 0{,}510\,\text{V} + 2 \cdot 0{,}001\,\text{V} \approx 0{,}005\,\text{V}$ eli noin $0{,}9\,\%$. Lämpötila pidetään vakiona: vastuksen teho pidetään pienenä, lukemat otetaan nopeasti, ja jännitettä sekä kasvatetaan että pienennetään, jolloin lämpenemisen vaikutus näkyisi eroina. Virtamittari pidetään sarjassa ja jännitemittari vastuksen rinnalla, ja mittarien vaikutus arvioidaan: jännitemittarin resistanssi on megaohmien luokkaa eli paljon suurempi kuin $100\,\Omega$, joten sen kautta kulkee mitättömän pieni virta. Tulos ilmoitetaan virherajoineen.
+**Mallivastaus:** Mitataan vähintään kahdeksan pistettä laajalla jännitealueella, esimerkiksi $0{,}5$–$10\,\text{V}$, ja piirretään $(I, U)$-kuvaaja. Jos vastus noudattaa Ohmin lakia, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$; poikkeama suorasta näkyy kuvaajasta paremmin kuin kolmesta suhteesta. Jokainen lukema luetaan pienimmältä alueelta, jolle se mahtuu: esimerkiksi $0{,}510\,\text{V}$ alueella $2\,\text{V}$ antaa virherajan $$
+\begin{aligned}
+&0{,}005 \cdot 0{,}510\,\text{V} + 2 \cdot 0{,}001\,\text{V} \\
+&\approx 0{,}005\,\text{V}
+\end{aligned}
+$$ eli noin $0{,}9\,\%$. Lämpötila pidetään vakiona: vastuksen teho pidetään pienenä, lukemat otetaan nopeasti, ja jännitettä sekä kasvatetaan että pienennetään, jolloin lämpenemisen vaikutus näkyisi eroina. Virtamittari pidetään sarjassa ja jännitemittari vastuksen rinnalla, ja mittarien vaikutus arvioidaan: jännitemittarin resistanssi on megaohmien luokkaa eli paljon suurempi kuin $100\,\Omega$, joten sen kautta kulkee mitättömän pieni virta. Tulos ilmoitetaan virherajoineen.
 
 ### Yleisiä virheitä
 - a-kohdassa virheraja lasketaan pelkästä prosenttiosuudesta, jolloin numeroiden osuus $n \cdot r$ unohtuu ja virheraja jää liian pieneksi.
@@ -351,7 +389,12 @@
 **Periaate:** Vastuksessa sähköenergia muuttuu sisäenergiaksi (luku *Sähköteho ja vastuksen lämpeneminen*), ja vastuksesta se siirtyy lämpönä veteen. Vastuslämmittimen hyötysuhde on käytännössä $100\,\%$, ja kun lämpöhäviöt jätetään huomiotta, kaikki sähköenergia lämmittää vettä (luku *Aineen lämpeneminen ja jäähtyminen*). Teho on vakio, joten energia on teho kertaa aika.
 **Kaava:** $Pt = Q = cm\Delta T$, joten $t = \dfrac{cm\Delta T}{P}$
 **Muunnokset:** $3{,}0\,\text{kW} = 3{,}0 \cdot 1000\,\text{W} = 3000\,\text{W}$; lämpötilan muutos $70\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 55\,{}^\circ\text{C} = 55\,\text{K}$; lopuksi $1\,\text{h} = 3600\,\text{s}$
-**Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} = 6{,}914 \cdot 10^{7}\,\text{J}$ ja $t = \dfrac{6{,}914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6{,}40\,\text{h}$
+**Sijoitus:** $$
+\begin{aligned}
+Q &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} \\
+&= 6{,}914 \cdot 10^{7}\,\text{J}
+\end{aligned}
+$$ ja $t = \dfrac{6{,}914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6{,}40\,\text{h}$
 **Vastaus:** Lämmitys kestää noin $t \approx 6{,}4\,\text{h}$, kaksi merkitsevää numeroa kuten teho $3{,}0\,\text{kW}$.
 **Järkevyys:** Veden saama energia on $\tfrac{6{,}914 \cdot 10^{7}\,\text{J}}{3{,}6 \cdot 10^{6}\,\text{J/kWh}} = 19{,}2\,\text{kWh}$, ja $3{,}0\,\text{kW} \cdot 6{,}4\,\text{h} = 19{,}2\,\text{kWh}$. Lämmitys mahtuu yön tunteihin, ja se maksaa noin $19{,}2\,\text{kWh} \cdot 0{,}14\,\tfrac{\text{€}}{\text{kWh}} \approx 2{,}7\,\text{€}$. Lämpöhäviöt pidentävät aikaa hieman.
 
@@ -381,7 +424,14 @@
 **Periaate:** Suihkuvesi on lämmitetty $15\,{}^\circ\text{C}$:sta $40\,{}^\circ\text{C}$:een, joten sen saama energia on $cm\Delta T$ (luku *Aineen lämpeneminen ja jäähtyminen*). Sama energia on tullut varaajan vastuksesta sähköenergiana, koska vastuksen hyötysuhde on käytännössä $100\,\%$; ei ole väliä, sekoitetaanko $70\,{}^\circ\text{C}$:n vettä kylmään, koska lopputulos on sama määrä $40\,{}^\circ\text{C}$:n vettä.
 **Kaava:** $E = cm\Delta T$
 **Muunnokset:** $m = 10 \cdot 8{,}0\,\text{kg} = 80\,\text{kg}$, $\Delta T = 40\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 25\,\text{K}$ ja lopuksi $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J}$
-**Sijoitus:** $E = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg} \cdot 25\,\text{K} = 8{,}38 \cdot 10^{6}\,\text{J} = \dfrac{8{,}38 \cdot 10^{6}\,\text{J}}{3{,}6 \cdot 10^{6}\,\text{J/kWh}} = 2{,}33\,\text{kWh}$
+**Sijoitus:** $$
+\begin{aligned}
+E &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg} \cdot 25\,\text{K} \\
+&= 8{,}38 \cdot 10^{6}\,\text{J} \\
+&= \dfrac{8{,}38 \cdot 10^{6}\,\text{J}}{3{,}6 \cdot 10^{6}\,\text{J/kWh}} \\
+&= 2{,}33\,\text{kWh}
+\end{aligned}
+$$
 **Vastaus:** Suihku vastaa noin $E \approx 2{,}3\,\text{kWh}$ sähköenergiaa, kaksi merkitsevää numeroa kuten vesivirta $8{,}0\,\text{l/min}$.
 **Järkevyys:** Suihku maksaa noin $2{,}33\,\text{kWh} \cdot 0{,}14\,\tfrac{\text{€}}{\text{kWh}} \approx 33\,\text{snt}$. Täysi varaaja ($19{,}2\,\text{kWh}$) riittää noin $\tfrac{19{,}2}{2{,}33} \approx 8$ tällaiseen suihkuun; samaan tulokseen päästään, kun huomataan, että suihkuveteen tarvitaan $70\,{}^\circ\text{C}$:n vettä noin $36\,\text{l}$.
 

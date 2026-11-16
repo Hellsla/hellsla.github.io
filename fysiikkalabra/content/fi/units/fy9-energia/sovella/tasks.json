@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin energian, tehon ja hyötysuhteen. Ratkaise ne kuten kokeessa: perustele mallin valinta, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin energian, tehon ja hyötysuhteen. Ratkaise ne kuten kokeessa: perustele mallin valinta, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Viimeinen tehtävä on soveltava aineistotehtävä, jonka lähde avautuu tehtävän linkistä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-energia-s1",
@@ -135,7 +135,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$E = 9{,}5\\,\\text{MJ}/\\text{kg} \\cdot 42\\,000\\,\\text{kg} = 399\\,000\\,\\text{MJ}$ ja $t = 3600\\,\\text{s}$; tonnit ja tunti muunnettu sijoittamalla."
+       "detail": "$$\n\\begin{aligned}\nE &= 9{,}5\\,\\text{MJ}/\\text{kg} \\cdot 42\\,000\\,\\text{kg} \\\\\n&= 399\\,000\\,\\text{MJ}\n\\end{aligned}\n$$ ja $t = 3600\\,\\text{s}$; tonnit ja tunti muunnettu sijoittamalla."
       },
       {
        "key": "units_precision",
@@ -200,7 +200,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$78{,}9\\,\\text{MW} + 77{,}8\\,\\text{MW} \\approx 157\\,\\text{MW}$ ja massa $m = \\dfrac{P_0\\,t}{H}$"
+       "detail": "$$\n\\begin{aligned}\n&78{,}9\\,\\text{MW} + 77{,}8\\,\\text{MW} \\\\\n&\\approx 157\\,\\text{MW}\n\\end{aligned}\n$$ ja massa $m = \\dfrac{P_0\\,t}{H}$"
       },
       {
        "key": "units_precision",
@@ -321,7 +321,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$E \\approx 93\\,\\text{kWh} + 4{,}9\\,\\text{kWh}/{}^\\circ\\text{C} \\cdot 28\\,{}^\\circ\\text{C} \\approx 230\\,\\text{kWh}$"
+       "detail": "$$\n\\begin{aligned}\nE &\\approx 93\\,\\text{kWh} \\\\\n&+ 4{,}9\\,\\text{kWh}/{}^\\circ\\text{C} \\cdot 28\\,{}^\\circ\\text{C} \\\\\n&\\approx 230\\,\\text{kWh}\n\\end{aligned}\n$$"
       },
       {
        "key": "assumptions",
@@ -342,7 +342,7 @@
        "detail": "Suoralta luetaan lämpötila, jossa $E = 12\\,\\text{kWh}$: noin $16$–$17\\,{}^\\circ\\text{C}$."
       },
       {
-       "text": "Selittää energian säilymisellä: laitteiden sähköenergia, ihmisten lämpö ja auringonsäteily muuttuvat sisällä lämmöksi, joten ne korvaavat osan lämpöhäviöistä.",
+       "text": "Selittää energian säilymisellä: laitteiden sähköenergia, ihmisten lämpö ja auringonsäteily lisäävät talon sisäenergiaa, joten ne korvaavat osan lämpöhäviöistä.",
        "tag": "concept",
        "points": 2
       },
@@ -381,7 +381,7 @@
      "text": "Arvioi ensimmäinen väite. Perustele vastauksesi laskelmalla.",
      "criteria": [
       {
-       "text": "Laskee tuulivoimaloiden vuoden energian keskitehosta: $2{,}0\\,\\text{MW} \\cdot 0{,}30 \\cdot 8760\\,\\text{h} \\approx 5{,}3\\,\\text{GWh}$, mikä on enemmän kuin $3{,}0\\,\\text{GWh}$.",
+       "text": "Laskee tuulivoimaloiden vuoden energian keskitehosta: $$\n\\begin{aligned}\n&2{,}0\\,\\text{MW} \\cdot 0{,}30 \\cdot 8760\\,\\text{h} \\\\\n&\\approx 5{,}3\\,\\text{GWh}\n\\end{aligned}\n$$, mikä on enemmän kuin $3{,}0\\,\\text{GWh}$.",
        "tag": "math",
        "points": 1
       },
@@ -432,7 +432,7 @@
      "text": "Arvioi toinen väite. Kuinka suuri on dieselvoimalan vuotuinen hiilidioksidipäästö, ja miten sitä verrataan tuulivoiman päästöihin?",
      "criteria": [
       {
-       "text": "Laskee dieselin päästön: $m = e \\cdot E = 700\\,\\text{g}/\\text{kWh} \\cdot 3{,}0 \\cdot 10^{6}\\,\\text{kWh} = 2{,}1 \\cdot 10^{9}\\,\\text{g} = 2100\\,\\text{t}$.",
+       "text": "Laskee dieselin päästön: $$\n\\begin{aligned}\nm &= e \\cdot E \\\\\n&= 700\\,\\text{g}/\\text{kWh} \\cdot 3{,}0 \\\\\n&\\cdot 10^{6}\\,\\text{kWh} \\\\\n&= 2{,}1 \\cdot 10^{9}\\,\\text{g} \\\\\n&= 2100\\,\\text{t}\n\\end{aligned}\n$$.",
        "tag": "math",
        "points": 2
       },
@@ -488,7 +488,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$Q = 4190\\,\\text{J}/(\\text{kg} \\cdot \\text{K}) \\cdot 1{,}0\\,\\text{kg} \\cdot 81\\,\\text{K} \\approx 339\\,\\text{kJ}$ ja $E = 2200\\,\\text{W} \\cdot 185\\,\\text{s} = 407\\,\\text{kJ}$"
+       "detail": "$$\n\\begin{aligned}\nQ &= 4190\\,\\text{J}/(\\text{kg} \\cdot \\text{K}) \\cdot 1{,}0\\,\\text{kg} \\\\\n&\\cdot 81\\,\\text{K} \\\\\n&\\approx 339\\,\\text{kJ}\n\\end{aligned}\n$$ ja $E = 2200\\,\\text{W} \\cdot 185\\,\\text{s} = 407\\,\\text{kJ}$"
       },
       {
        "key": "units_precision",
@@ -701,6 +701,159 @@
     "transfer": "fy2-7",
     "concept": "fy2-1",
     "communication": "fy2-7"
+   }
+  },
+  {
+   "id": "fy9-energia-s7",
+   "title": "Miksi sähköauton toimintamatka lyhenee pakkasessa?",
+   "source": "statistics",
+   "source_note": "NAF ja Motor, El Prix vinter 2026 (https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026). Tarkistettu 16.11.2026.",
+   "skills": [
+    "fy2-3",
+    "fy3-12",
+    "fy4-14",
+    "fy6-6",
+    "fy6-8",
+    "fy1-3"
+   ],
+   "text": "Norjan autoliitto NAF ja Motor-lehti ajoivat 28.1.2026 talvitestin, jossa $24$ sähköautoa lähti täydellä akulla Oslosta pohjoiseen tunturialueelle. Jokaista autoa ajettiin, kunnes se ei enää jaksanut kulkea. Avaa [testin tulossivu](https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026) ja etsi kaavio *Så langt kjørte bilene*. Sivu on norjankielinen, ja tarvitset näitä sanoja: *rekkevidde* = toimintamatka, *oppgitt* = ilmoitettu, *målt* = mitattu, *avvik* = poikkeama. Ilmoitettu toimintamatka on valmistajan WLTP-arvo, joka mitataan laboratoriossa huoneenlämmössä.\n\nAineiston mukaan (tarkistettu 16.11.2026):\n\n- Lämpötila laski reitin varrella: Oslossa oli noin $-7\\,{}^\\circ\\text{C}$ ja kylmimmässä kohdassa Folldalissa $-32\\,{}^\\circ\\text{C}$.\n- Autojen mitattu toimintamatka oli keskimäärin $38\\,\\%$ ilmoitettua lyhyempi. Vuoden 2025 talvitestissä lämpötila oli $-6\\,{}^\\circ\\text{C}$:n ja $+8\\,{}^\\circ\\text{C}$:n välillä, ja keskimääräinen poikkeama oli $18\\,\\%$.\n- Hyundai Inster pysähtyi kohdassa, jossa lämpötila oli $-16\\,{}^\\circ\\text{C}$. Lucid Air ajoi autoista pisimmälle.\n- Mitattu kulutus oli Tesla Model Y:llä $21{,}2\\,\\text{kWh}$ ja Lucid Airilla $21{,}6\\,\\text{kWh}$ sataa kilometriä kohti.\n\n| Auto | Ilmoitettu (WLTP) | Mitattu |\n|---|---|---|\n| Hyundai Inster | $360\\,\\text{km}$ | $256\\,\\text{km}$ |\n| Tesla Model Y | $629\\,\\text{km}$ | $359\\,\\text{km}$ |\n| Lucid Air | $960\\,\\text{km}$ | $520\\,\\text{km}$ |\n\nAkun sisäinen resistanssi on kylmänä suurempi kuin lämpimänä.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Valitse kolme sähköautoa lähteen kaaviosta tai käytä taulukon autoja. Laske, kuinka monta prosenttia kunkin auton mitattu toimintamatka poikkeaa ilmoitetusta, ja kerro, mitä vertailu osoittaa.",
+     "criteria": [
+      {
+       "text": "Poimii kolmen auton ilmoitetun ja mitatun toimintamatkan aineistosta ja esittää ne selkeästi, esimerkiksi taulukkona.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Ero jaetaan ilmoitetulla toimintamatkalla: $\\dfrac{s_\\text{mit} - s_\\text{ilm}}{s_\\text{ilm}}$. Taulukon autoilla tulokset ovat noin $-29\\,\\%$, $-43\\,\\%$ ja $-46\\,\\%$; muilla autoilla luvut ovat toiset."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Jokainen auto ajoi pakkasessa selvästi ilmoitettua lyhyemmän matkan, ja poikkeama vaihteli autosta toiseen noin $30\\,\\%$:sta lähes puoleen."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Sähköauton käytettävissä oleva akkuenergia on $75\\,\\text{kWh}$, ja sen toimintamatka leudolla säällä on $450\\,\\text{km}$. Laske auton keskimääräinen energiankulutus sataa kilometriä kohti. Laske myös kulutus pakkasella, kun toimintamatka on testin keskiarvon $38\\,\\%$ lyhyempi ja akusta oletetaan saatavan sama energia. Arvioi, kuinka hyvin oletus pitää paikkansa.",
+     "answer": [
+      {
+       "name": "E100",
+       "value": 16.7,
+       "unit": "kWh/100 km",
+       "tolerance": 0.03
+      },
+      {
+       "name": "E100k",
+       "value": 26.9,
+       "unit": "kWh/100 km",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energia on verrannollinen matkaan: $E_{100} = \\dfrac{E\\,s_{100}}{s}$, ja pakkasella matka on $s_\\text{k} = (1 - 0{,}38)\\,s$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$E_{100} \\approx 16{,}7\\,\\text{kWh}$, $s_\\text{k} = 279\\,\\text{km}$ ja $E_{100,\\text{k}} \\approx 26{,}9\\,\\text{kWh}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Noin $17\\,\\text{kWh}$ ja $27\\,\\text{kWh}$ sataa kilometriä kohti, kaksi merkitsevää numeroa kuten akkuenergia $75\\,\\text{kWh}$."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Kylmästä akusta saadaan vähemmän energiaa kuin lämpimästä, joten osa toimintamatkan lyhenemisestä johtuu pienemmästä energiasta eikä kulutuksen kasvusta: todellinen kulutus kasvaa vähemmän kuin malli antaa."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 4,
+     "text": "Selitä lämpöopin, sähköopin ja mekaniikan avulla, miksi sähköauton energiankulutus kilometriä kohti kasvaa pakkasella.",
+     "criteria": [
+      {
+       "text": "Lämpöoppi: lämpö siirtyy matkustamosta ja akusta ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on, joten lämpötilan ylläpito vaatii lämmitystehon. Sähköautossa se otetaan ajoakusta.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Sähköoppi: esittää ainakin toisen näistä: lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan, tai kylmän akun suurempi sisäinen resistanssi kasvattaa tehoa $P = R_\\text{s}I^2$, joka muuttuu akun sisäenergiaksi, ja pienentää napajännitettä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Mekaniikka: kylmä ilma on tiheämpää, joten ilmanvastus on suurempi, ja lumi, sohjo ja talvirenkaat kasvattavat vierimisvastusta. Tasaisella nopeudella työ $W = Fs$ vastusvoimia vastaan kasvaa jokaisella kilometrillä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Kokoaa selityksen energian säilymisellä: kaikki energia otetaan samasta akusta, joten lämmitykseen ja häviöihin kuluva energia on poissa ajamisesta ja toimintamatka lyhenee.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 2,
+     "text": "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta. Selitä aineiston avulla, miksi tästä ei voi päätellä, että se kestäisi pakkasta muita autoja huonommin.",
+     "criteria": [
+      {
+       "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen, joten pisimmälle ajanut auto ajoi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään, kun taas lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Autot eivät ajaneet samoissa olosuhteissa, joten poikkeama ei ole pelkästään auton ominaisuus eikä autoja voi asettaa paremmuusjärjestykseen prosenttien perusteella."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 2,
+     "text": "Arvioi, miksi tämän yhden talvitestin perusteella ei voi ennustaa tietyn sähköauton toimintamatkaa kaikissa talviolosuhteissa. Nimeä ainakin kolme tekijää, jotka muuttavat kulutusta. Kerro myös, miten testiä pitäisi muuttaa, jotta tulos olisi luotettavampi.",
+     "criteria": [
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Nimeää ainakin kolme tekijää, jotka vaihtelevat talvesta, reitistä ja kuljettajasta toiseen ja muuttavat kulutusta: esimerkiksi lämpötila (vuoden 2025 testissä poikkeama oli $18\\,\\%$, nyt $38\\,\\%$), tuuli, tien pinta, nopeus, reitin nousut, esilämmitys ja lämmityksen asetukset."
+      },
+      {
+       "text": "Toteaa, että jokainen auto ajettiin vain kerran, joten tulosten hajontaa ei tunneta, ja ehdottaa parannuksen: kaikille autoille samat, vakioidut olosuhteet, useita lämpötiloja ja toistot.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "transfer": "fy6-16",
+    "math": "fy2-3",
+    "concept": "fy6-8",
+    "communication": "fy2-1",
+    "experiment": "fy1-3"
    }
   }
  ]

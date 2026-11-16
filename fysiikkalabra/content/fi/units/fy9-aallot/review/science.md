@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a3e2059181de8338
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (7bbe7f3465dd6d42).
+CONTENT-HASH: 7ca3c185282b2261
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Round-1 Polish items stand as written there (C, not blocking).
+- (none)
 
 ## Checked
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
-- Hash taken at the start and the end (a3e2059181de8338).
+- sovella/solutions.md s4 Yleisiä virheitä: the mistake is now named correctly (intensity taken as inversely proportional to distance). Recomputed: I ∝ 1/r gives 10 lg 2 = 3,0 dB per doubling, the model I ∝ 1/r² gives 6,0 dB and 10 lg 400 = 26 dB, as in part a.
+- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-aallot` OK; hash the same at start and end.

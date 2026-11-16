@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6bd8953fb5e744db
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (024a3851f574b445); earlier findings kept unless named fixed.
+CONTENT-HASH: 763e0604379cdc98
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B (kept): solid volume expansion has no row; "kappale" vs "neste" is the only hint between the two expansion rows.
+- (none)
 
 ## Checked
-- Diff read: only teacher.md "kunkin rivin kohdalla" changed (round-1 Polish A fixed); chart and aria-label unchanged, so the chart PNG was not reopened.
-- The rest passes through the round-1 report.
+- sovella/solutions.md, Yleisiä virheitä, d-kohta: the mistake line now says "ei muutu sisäenergiaksi lainkaan"; compared with d's Periaate, Mallivastaus and the criterion in tasks.json, which all say sisäenergiaksi, so the mistake is now named in the model answer's own words.
+- The remaining "sulamislämmöksi" in the unit is the quantity name, not the phrase of decision P1.
+- Item 19: this unit's diff holds no added task.
