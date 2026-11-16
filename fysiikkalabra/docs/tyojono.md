@@ -299,12 +299,6 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
 
-## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
-
-FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
-1. Tehty (#639): pistemerkinnät (`exam.*`, `practice.points`, `js.mc_score`, `js.exam_total`) sitovalla välilyönnillä kaikissa kielissä.
-2. **Varattu: claude/fy7-koe-minor** FY7-kokeen Minor-korjaukset (uusi katselmointi tai kevyt kuljetus): k7 c:n Sijoitukseen yksikkö luvulle 50 (`· 50 €/MWh`) ja tulos; k4 c:ssä 2789 (ei 2788) tai 12,374 V ketjussa; k5 b:n keskiarvomurtoluku isompana (`\tfrac` tai oma rivi); k6 d:n "noin yhdeksässä vuodessa" → "noin 9–10 vuodessa"; k2 c:n rivi B²k tiukka 390 px:llä; k7 b nimeää Wienin vakion, harkitse. Pedagogiikan huomio: k3 ja k4 valittaessa ei kuvaaja- tai epävarmuusosaa, harkitse lyhyttä osaa toiseen.
-
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
