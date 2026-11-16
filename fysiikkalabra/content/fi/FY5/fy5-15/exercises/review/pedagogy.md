@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 42d45a82e2ac2a0e
-SCOPE: delta work queue 18 (sig-fig wording, L2-06 chain re-broken) from 0951554d40dc2e9f
+CONTENT-HASH: 29114098e00b3554
+SCOPE: delta round 2 (sig-fig wording, L2-06 chain re-broken) from 42d45a82e2ac2a0e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md (L2-06 Vastaus) — the 315 m is rounded up 'turvalliselle puolelle' and the box answer is 3,2·10^2 m: fine, but one clause saying that the box accepts 315 within tolerance would help.
 
 ## Checked
-- 120 dB answer: "kokonaisina desibeleinä, koska kipukynnys on annettu kahdella merkitsevällä numerolla" explains the rounding rule correctly and replaces a loose "kaksi merkitsevää numeroa".
-- L2-06 chain now splits after the first term: L_malli = 86,0 dB / − 10 dB · lg 64 / = 86,0 dB − 18,06 dB / = 67,94 dB; same numbers in the same order, readable on a phone; 18,06 and 3,96 recomputed correct.
-- 4,0 dB sig-fig justification is accurate.
-- Text only (no renders).
+- Rounding up for a limit value (315 m to 320 m, 44,6 m to 45 m) is stated with its reason.
+- 74,0 dB with +-0,1 dB giving about 2,3 % in intensity justifies two figures; correct.
+- L_malli chain broken as 86,0 dB − over a line break: readable, small oddity only.
+- No change to task texts.

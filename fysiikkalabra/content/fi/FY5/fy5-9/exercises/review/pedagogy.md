@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c6de36add8c9d166
-SCOPE: delta work queue 18 (solutions L3 pendulum: answer line and unrounded check) from 90895d9429b95817
+CONTENT-HASH: b83d89918db889fd
+SCOPE: delta round 2 (significant-figure justifications, answer split) from c6de36add8c9d166
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md (L2-05 Vastaus) — the two-figure remark on the shortest pendulum is accurate but long; one sentence would do.
 
 ## Checked
-- The pendulum solution now gives the answer for all three parts (0,549 s; 0,598 m/s with h ≈ 1,82 cm; 0,599 m/s, +0,13 %): the student sees every result they were asked.
-- Difference recomputed from unrounded 0,59883 and 0,59807: 0,127 % = 0,13 %, so the row is arithmetically true; the earlier rounded values gave the same, now consistent.
-- Significant-figure justification (three, as in 1,20 m and 10,0°) states the rule (P7) correctly.
-- Text only (no renders).
+- Sig-fig justifications now name the datum that limits the result (graph point, time difference); correct and instructive.
+- Answer of the 10-degree pendulum split into a), b), c); each value matches the calculations above it.
+- L2-06 stored 20,14 against two-figure answer: tolerance covers it (answers.py comment explains).
+- No change to tasks or levels.

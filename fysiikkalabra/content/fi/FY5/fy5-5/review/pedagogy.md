@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: b014123181afab7b
-SCOPE: delta P3 (Syventävä marking in theory and summary) from 65a4139d383a71ec
+CONTENT-HASH: 2bb981571ee01f3d
+SCOPE: delta round 2 (core goal on force, deepen goal, transfer task on force, Syventävä titles, summary) from b014123181afab7b
 
 ## Blocking
 (none)
 
 ## Polish
-1. lesson.md (Tiivistelmä, "Syventävä: gravitaatiokentän voimakkuus … kappaleen paino on G = mg") — the new Syventävä paragraph says the core needs "paino on Maan pinnalla kappaleeseen vaikuttava gravitaatiovoima", but the summary puts the weight formula G = mg under the extension label. Split: weight is core, field strength is Syventävä.
-2. lesson.md (Yleinen virhekäsitys) — the core misconception box still quotes "kentän voimakkuus ... 8,9 m/s²" at 300 km; a student skipping the extension meets the term undefined. Say "putoamiskiihtyvyys" or "painovoima" there.
-3. lesson.md (Syventävä osio line) — "ei kuulu tämän moduulin keskeisiin sisältöihin" is true but tells a student why only in teacher terms; fine, optional rewording "ei kuulu kurssin ydinsisältöön".
+1. inquiry.json:343 — the feedback of the transfer task says "pienentäisi voiman neljäsosaan, koska $g \propto \tfrac{1}{r^2}$": g is the extension's field strength and the task is now about the force. Write "$F \propto \tfrac{1}{r^2}$" (fix before merge; one symbol).
+2. inquiry.json (Tarkista 1 "Massa ja paino") — answerable by elimination, but its feedback uses "kentän voimakkuus" and the Moon value g = 1,62 m/s², which only the extension teaches. Replace with "putoamiskiihtyvyys" or mark the feedback as extension.
+3. lesson.md (Tiivistelmä, "G = mg" now core) — g is not defined in the core path; add "(g = putoamiskiihtyvyys)". The misconception box still speaks of "kentän voimakkuus" (earlier Polish 2, still open).
 
 ## Checked
-- Syventävä osio paragraph sits right after the heading, names both extension subsections and says what the core path needs: a student can skip without a gap.
-- Summary item is marked Syventävä and still reads correctly with symbols and units.
-- Known and left to the teacher (not a finding): first learning goal, Etsi virhe, transfer task and one check in inquiry.json still require field strength.
-- inquiry.json: calculation re-breaks only; not re-judged.
+- The deepen goal "laskemalla gravitaatiokentän voimakkuuden Maan ja muiden taivaankappaleiden pinnalla." completes "Voit myös syventää osaamistasi" correctly and states what the extension adds.
+- The core goal "laskemaan gravitaatiovoiman Newtonin gravitaatiolain avulla" matches the core path and the slot's goals.
+- Transfer task: voiman puoliintuminen gives h = (√2 − 1)R = 2640 km (recomputed); prompt, hints, wrong-answer feedback and solution all speak of force; the mass m cancelling is explained.
+- "Syventävä: Etsi virhe" is optional and clearly marked; a core student can skip it.
+- Summary: weight is now a core line, field strength a separate Syventävä line (earlier Polish 1 done).
+- "tämän kurssin keskeisiin sisältöihin" fixes earlier Polish 3.
+- Exit ticket: calculation as an aligned block, content unchanged, correct.

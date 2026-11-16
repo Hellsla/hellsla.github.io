@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4d4bfb5fc5e7d672
+CONTENT-HASH: 000b14e87e0db8d2
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-14/exercises/solutions.md:252 (L2-09, Kohta c) — "Erään sivuston mukaan" and "tunnetuimman salaliittoteorian mukaan" add attributions that the verified source notes do not hold: the article reports the claims, but not that they come from one site or that this theory is the best known. Write "Artikkelin mukaan väitetään…" or drop the qualifiers.
-- content/fi/FY5/fy5-14/exercises/exercises.json:174 (L2-02) — the answer is 3.7 but the solution gives 3,70 m with three significant figures, as the data has. Make the answer 3.70 so that both say the same.
 
 ## Checked
-- The hash was the same at the start and at the end.
-- I recomputed all 18 numeric answers in one script (2d/t, λ = v/f, f_n = n f₁, f_H = |f₁ − f₂|, the Doppler formulas for a moving source and a moving listener, the double shift v_v = vΔf/(2f₀ + Δf), v = 2Lf₁). All of them are within 0,7 % of my values and inside their tolerances.
-- L2-09 a–b: λ = 0,79398 m and 0,77955 m. The difference is 1,44 cm, 8 Hz is 1,82 % and the wavelength is 1,85 % longer. 8 Hz : 25 Hz ≈ 1/3 semitone (an exact semitone at 440 Hz is 24,7 Hz). Visible light is about 10¹² times 432 Hz.
-- L2-09 against the source notes: the 2 Hz discrimination, 415 Hz almost a semitone below 440 Hz, the historical range 390–460 Hz, chakras and the colour spectrum, "valon, ajan, aineen ja tietoisuuden jatke", healing and "nature's frequency", 440 Hz as brains/manipulation and the Nazi theory, 103+107+109+113 = 432 and 864 against 86 400 s, and the verdict "no scientific basis" are all in the fetched article. The box answer comes from the task's own numbers, not from the source.
-- L2-09 d: the research design (blinding, randomisation, an outcome fixed beforehand, enough subjects, replication) is sound. "The article is not a study" is stated.
-- L3-04: treating the cell first as a moving listener and then as a moving source gives f = f₀(v + v_v)/(v − v_v), the right double shift.
-- L3-05: plucking at the centre leaves out the even harmonics (a node at the centre), and the odd ones fall as about 1/n² (0,11, 0,04), as for a triangular pluck.
+- The hash was the same at the start and at the end. Round 2. `git diff 09d57eb5ac..HEAD` changes L2-09 (task c and d now ask for a classification into three groups; the solution's b–d rewritten into paragraphs and by group) and one sentence in L2-02's Vastaus. No line of answers.py changed.
+- Round-1 Polish on the attributions is fixed. "Princen linkkaaman sivuston mukaan … värispektriin ja chakroihin" and "Lukuisista viritystasojen salaliittoteorioista tunnetuin lienee natsiteoria" are now the article's own words in the verified quotations.
+- Round-1 Polish on L2-02 is handled. The stored answer stays 3.7, and the solution now says that 3,70 and 3,7 are the same number in the box. The answer and the tolerance are consistent.
+- L2-09 numbers recomputed: λ = 343/432 = 0,79398 m and 343/440 = 0,77955 m, so Δλ = 1,44 cm (+1,85 %). The beat frequency is 8 Hz, about ⅓ of a semitone. Visible light at about 5·10¹⁴ Hz is about 10¹² times 432 Hz.
+- L2-09 c–d: the three groups are sound. A calming effect is testable. "Luonnon oma taajuus" and the light, colour and chakra claims are physics claims and are wrong (sound is a mechanical pressure wave, light is electromagnetic). The number play and the Nazi theory have no measurable content. The blinded, randomised design with a predefined outcome is right. Every claim in c) is in the source notes.
+- The unchanged exercises rest on the round-1 recomputation of all 18 numeric answers (round-1 report, hash 4d4bfb5fc5e7d672), in which every answer was within 0,7 %.

@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: b014123181afab7b
+VERDICT: PASS
+CONTENT-HASH: 2bb981571ee01f3d
 
 ## Blocking
-- lesson.md:285 against inquiry.json:6 and inquiry.json:327, type A (internal consistency): the new *Syventävä osio* note says the core path needs only the law of gravitation and weight as the gravitational force. On the same page, the second goal under *Tällä tunnilla opit* promises "laskemaan … gravitaatiokentän voimakkuuden". The required transfer task *Sovella uuteen tilanteeseen* (activity 13, not optional) asks where Earth's field strength halves, h = (√2 − 1)R ≈ 2640 km, and its hints and solution work with g = γM/r². So the note's claim is false for this page, and a student who skips the extension cannot do a required task. Fix, keeping everything (P3): reword goal 2 to the force, or mark its field-strength half as extension. Reword the transfer task to the force on the probe (the force halving gives the same h), or mark that task *Syventävä*. Mark the optional *Etsi virhe* (activity 12, field at 300 km) as extension too.
 
 ## Polish
-- lesson.md:685 (Yleinen virhekäsitys): "kentän voimakkuus on vielä noin 8,9 m/s²" is the only core-path sentence that states a field strength. It could say "putoamiskiihtyvyys" or "gravitaatiovoima on vielä noin 90 % pinnan arvosta". The physics is right.
+- inquiry.json:343 (siirto, mistake 6378): the feedback now speaks of the force but reasons "koska $g \propto \tfrac{1}{r^2}$". It is true, but it leans on the extension quantity. Fix: "koska $F \propto \tfrac{1}{r^2}$".
+- inquiry.json:359 (tarkistus-1, a required check): the feedback of the correct option and of the third option explains weight by "kentän voimakkuus" and $g = \gamma \tfrac{M}{R^2}$. The question can be answered on the core path (mass does not change, weight is $G = mg$), so this is not blocking. It could say "Kuun putoamiskiihtyvyys $1{,}62\,\text{m/s}^2$".
+- lesson.md:685 (Yleinen virhekäsitys, from round 1, unchanged): "kentän voimakkuus on vielä noin $8{,}9\,\text{m/s}^2$" is still the only core-path sentence that gives a field strength. Fix: "putoamiskiihtyvyys", or "voima on noin 90 % pinnan arvosta".
 
 ## Checked
-- The hash was the same at the start and at the end. The diff, in its context, is the extension note, the *Syventävä:* label in Tiivistelmä, the approved formula names, and one inquiry.json chain re-broken into rows.
-- inquiry.json Kuu-koe solution (reflow): the numbers, signs and units are unchanged. 9,80·(6378/384 400)² = 2,70 mm/s² and 4π²r/T² = 2,724 mm/s² are both correct.
-- The note's physics is correct. LOPS FY5 lists "gravitaatiolaki ja planetaarinen liike", not field strength. On Earth's surface, weight as the gravitational force on a body is the course's model, with rotation ignored (C).
-- The Tiivistelmä line marked *Syventävä* agrees with the section it summarises.
-- Recomputed in the same script: F(Earth–Moon) = 1,99·10²⁰ N, g(300 km) = 8,93 m/s², and h for g/2 = 2642 km.
+- The hash was the same at the start and at the end. Round 2 judged only `git diff 09d57eb5ac..HEAD` of lesson.md, inquiry.json, exit-ticket.json and lesson-answers.py. Unchanged content rests on the round-1 full and delta reviews.
+- The round-1 Blocking item is fixed. learn goal 2 is now about the force only, and the field-strength skill is in `deepen`. The optional *Etsi virhe* is titled *Syventävä:*. Tiivistelmä has $G = mg$ as a core item, separate from the *Syventävä* field line. The note "Ydinpolulle riittävät …" now holds: the only other required activity that mentions the field is tarkistus-1, which can be answered without it (see Polish).
+- Transfer task: γMm/(R+h)² = ½·γMm/R² gives h = (√2 − 1)R = 2641,9 km, answer 2640 km. The check (6378/9020)² = 0,49998 is right, and the mistake values 6378 and 9020 km are right. The hints, Periaate (both masses cancel) and Järkevyys say force throughout and are correct physics. "jonka massa on $m$" makes the symbol in the hints defined.
+- lesson.md:285: "kurssin" instead of "moduulin" changes no physics.
+- exit-ticket.json: the chain was re-broken into rows with the same numbers, units and order. γ·1·1/1² = 6,7·10⁻¹¹ N.
+- lesson-answers.py: only a comment changed. The force and g halve at the same r, so the comment is correct.
