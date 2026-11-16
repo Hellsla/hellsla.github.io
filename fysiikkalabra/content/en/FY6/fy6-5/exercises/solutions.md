@@ -145,7 +145,7 @@
 **Principle:** The voltage of each resistor of the parallel branches is the voltage of the source, so Ohm's law $I = U : R$ gives the branch currents, and the branch meters can be checked with them. By Kirchhoff's current law the current of the main wire is the sum of the branch currents.
 **Formula:** $I_k = \dfrac{U}{R_k}$ and $I_0 = I_1 + I_2 + I_3$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
-**Substitution:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0.20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0.15\,\text{A}$ and $\dfrac{12\,\text{V}}{50\,\Omega} = 0.24\,\text{A}$, as the branch meters show. The sum of the branch currents is $$\begin{aligned} &0.20\,\text{A} + 0.15\,\text{A} + 0.24\,\text{A} \\ &= 0.59\,\text{A} \end{aligned}$$.
+**Substitution:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0.20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0.15\,\text{A}$ and $\dfrac{12\,\text{V}}{50\,\Omega} = 0.24\,\text{A}$, as the branch meters show. The sum of the branch currents is $$0.20\,\text{A} + 0.15\,\text{A} + 0.24\,\text{A} = 0.59\,\text{A}$$.
 **Answer:** $0.59\,\text{A}$. The wrong reading is that of the meter in the main wire, $0.50\,\text{A}$, because it is smaller than the sum of the branch currents.
 **Reasonableness:** The total resistance would be $12\,\text{V} : 0.59\,\text{A} \approx 20\,\Omega$, which is smaller than the smallest branch resistance $50\,\Omega$, as it should be in a parallel connection. With the reading $0.50\,\text{A}$ more current would leave into the branches than arrives at the point.
 
@@ -185,7 +185,7 @@ $$\begin{aligned} \frac{21 - 40\, I_2}{30} &= I_2 \\ 21 &= 70\, I_2 \\ I_2 &= 0.
 
 Then $I_1 = \dfrac{12\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}$ and $I_3 = \dfrac{9.0\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.10\,\text{A}$.
 
-The power of the sources is $12\,\text{V} \cdot 0.20\,\text{A} + 9.0\,\text{V} \cdot 0.10\,\text{A} = 2.4\,\text{W} + 0.9\,\text{W} = 3.3\,\text{W}$. The power of the resistors is $$\begin{aligned} &30\,\Omega \cdot (0.20\,\text{A})^2 + 20\,\Omega \\ &\cdot (0.30\,\text{A})^2 + 30\,\Omega \cdot (0.10\,\text{A})^2 \\ &= 1.2\,\text{W} + 1.8\,\text{W} + 0.3\,\text{W} \\ &= 3.3\,\text{W} \end{aligned}$$.
+The power of the sources is $12\,\text{V} \cdot 0.20\,\text{A} + 9.0\,\text{V} \cdot 0.10\,\text{A} = 2.4\,\text{W} + 0.9\,\text{W} = 3.3\,\text{W}$. The power of the resistors is $$\begin{aligned} &30\,\Omega \cdot (0.20\,\text{A})^2 + 20\,\Omega \cdot (0.30\,\text{A})^2 \\ &+ 30\,\Omega \cdot (0.10\,\text{A})^2 \\ &= 1.2\,\text{W} + 1.8\,\text{W} + 0.3\,\text{W} \\ &= 3.3\,\text{W} \end{aligned}$$.
 **Answer:** $I_2 = 0.30\,\text{A}$, two significant figures like the given values. The other branch currents are $I_1 = 0.20\,\text{A}$ and $I_3 = 0.10\,\text{A}$, and the power of the sources and the power of the resistors are both $3.3\,\text{W}$, so the energy balance holds.
 **Reasonableness:** The current law holds: $0.20\,\text{A} + 0.10\,\text{A} = 0.30\,\text{A}$. The voltage between the points $P$ and $Q$ is $R_2 I_2 = 6.0\,\text{V}$, and it is obtained also from the side of each source: $$12\,\text{V} - 30\,\Omega \cdot 0.20\,\text{A} = 6.0\,\text{V}$$ and $$9.0\,\text{V} - 30\,\Omega \cdot 0.10\,\text{A} = 6.0\,\text{V}$$. All the currents are positive, so each source really does produce current to the point $P$.
 

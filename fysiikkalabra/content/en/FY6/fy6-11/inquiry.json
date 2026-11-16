@@ -227,7 +227,7 @@
         "hints": [
           "Divide the force of each row by the magnitude of the charge in the same row. What do you notice?",
           "First convert the units: $1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$ and $1\\,\\text{nC} = 10^{-9}\\,\\text{C}$.",
-          "For example, the row $q = 3\\,\\text{nC}$ gives $$\\begin{aligned} E &= 150 \\cdot 10^{-6}\\,\\text{N} \\\\ &: (3 \\cdot 10^{-9}\\,\\text{C}) \\end{aligned}$$."
+          "For example, the row $q = 3\\,\\text{nC}$ gives $$E = 150 \\cdot 10^{-6}\\,\\text{N} : (3 \\cdot 10^{-9}\\,\\text{C})$$."
         ],
         "mistakes": [
           {

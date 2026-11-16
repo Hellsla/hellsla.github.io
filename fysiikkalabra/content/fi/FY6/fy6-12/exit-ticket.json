@@ -5,6 +5,6 @@
   },
   {
     "q": "Kuinka paljon on $3{,}0\\,\\text{keV}$ jouleina?",
-    "a": "$$\\begin{aligned} 3{,}0\\,\\text{keV} &= 3000 \\cdot 1{,}602 \\\\ &\\cdot 10^{-19}\\,\\text{J} \\\\ &= 4{,}8 \\cdot 10^{-16}\\,\\text{J} \\end{aligned}$$."
+    "a": "$$\\begin{aligned} &3{,}0\\,\\text{keV} \\\\ &= 3000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\\\ &= 4{,}8 \\cdot 10^{-16}\\,\\text{J} \\end{aligned}$$."
   }
 ]

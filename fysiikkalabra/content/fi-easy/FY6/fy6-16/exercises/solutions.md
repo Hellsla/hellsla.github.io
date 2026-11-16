@@ -55,7 +55,7 @@
 **Kuvaajan lukeminen:** Ensimmäisessä jaksossa teho on $P_1 = 11\,\text{kW}$ ajan $0\text{–}2{,}0\,\text{h}$, joten $t_1 = 2{,}0\,\text{h}$. Toisessa jaksossa teho on $P_2 = 5{,}5\,\text{kW}$ ajan $2{,}0\text{–}3{,}0\,\text{h}$, joten $t_2 = 1{,}0\,\text{h}$. Sen jälkeen teho on nolla.
 **Kaava:** $W_\text{verkko} = P_1 t_1 + P_2 t_2$
 **Muunnokset:** Ei tarvita. Kun teho on kilowatteina ja aika tunteina, energia tulee suoraan kilowattitunteina.
-**Sijoitus:** $$\begin{aligned} W_\text{verkko} &= 11\,\text{kW} \cdot 2{,}0\,\text{h} + 5{,}5\,\text{kW} \\ &\cdot 1{,}0\,\text{h} \\ &= 22\,\text{kWh} + 5{,}5\,\text{kWh} \\ &= 27{,}5\,\text{kWh} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} W_\text{verkko} &= 11\,\text{kW} \cdot 2{,}0\,\text{h} \\ &+ 5{,}5\,\text{kW} \cdot 1{,}0\,\text{h} \\ &= 22\,\text{kWh} + 5{,}5\,\text{kWh} \\ &= 27{,}5\,\text{kWh} \end{aligned}$$
 **Vastaus:** $28\,\text{kWh}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
 **Järkevyys:** Jos teho olisi ollut koko kolme tuntia $11\,\text{kW}$, energiaa olisi otettu $33\,\text{kWh}$. Viimeisen tunnin puolittunut teho vähentää tästä $5{,}5\,\text{kWh}$. Siis $$\begin{aligned} &33\,\text{kWh} - 5{,}5\,\text{kWh} \\ &= 27{,}5\,\text{kWh} \end{aligned}$$.
 
@@ -95,9 +95,9 @@
 **Periaate:** Akkuun menee kummallakin tavalla sama energia. Verkosta otetaan akkuun menevä energia jaettuna hyötysuhteella. Säästö syntyy siitä, että latausasemalla verkosta otetaan vähemmän energiaa. Energia maksetaan samalla hinnalla.
 **Kaava:** $W_\text{verkko} = \dfrac{W_\text{akku}}{\eta}$ ja $K = a W_\text{verkko}$, joten $\Delta K = a \left(\dfrac{W_\text{akku}}{\eta_1} - \dfrac{W_\text{akku}}{\eta_2}\right)$
 **Muunnokset:** $\eta_1 = 0{,}82$, $\eta_2 = 0{,}92$ ja $a = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
-**Sijoitus:** $$\begin{aligned} &\Delta K \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot (3658{,}5\,\text{kWh} - 3260{,}9\,\text{kWh}) \\ &= 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} \\ &= 59{,}7\,\text{€} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} \Delta K &= 0{,}15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot (3658{,}5\,\text{kWh} \\ &- 3260{,}9\,\text{kWh}) \\ &= 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} \\ &= 59{,}7\,\text{€} \end{aligned}$$
 **Vastaus:** $60\,\text{€}$. Vastauksessa on kaksi merkitsevää numeroa, kuten hyötysuhteissa $82\,\%$ ja $92\,\%$.
-**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä. Verkosta otettu energia eroaa siksi noin $10\text{–}12\,\%$ vuoden kulutuksesta ($3260\,\text{kWh}$ tai $3660\,\text{kWh}$) eli noin $400\,\text{kWh}$. Silloin $$\begin{aligned} &400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \\ &= 60\,\text{€} \end{aligned}$$. Säästö on pieni verrattuna latausaseman hintaan. Tärkeämpi syy latausasemaan on turvallisuus.
+**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä. Verkosta otettu energia eroaa siksi noin $10\text{–}12\,\%$ vuoden kulutuksesta ($3260\,\text{kWh}$ tai $3660\,\text{kWh}$) eli noin $400\,\text{kWh}$. Silloin $$400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} = 60\,\text{€}$$. Säästö on pieni verrattuna latausaseman hintaan. Tärkeämpi syy latausasemaan on turvallisuus.
 
 ## fy6-16-L3-02
 **Annettu:** virta kasvaa $I_1 = 10\,\text{A}$:sta $I_2 = 16\,\text{A}$:iin, kaapelin resistanssi $R$ pysyy samana

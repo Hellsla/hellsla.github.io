@@ -55,7 +55,7 @@
 **Kuvaajan lukeminen:** Lämmitysvaiheessa teho on $2{,}0\,\text{kW}$ välillä $0$–$0{,}25\,\text{h}$. Kesto on siis $0{,}25\,\text{h}$. Pesussa teho on $0{,}2\,\text{kW}$ välillä $0{,}25$–$1{,}25\,\text{h}$ eli $1{,}0\,\text{h}$. Linkouksessa teho on $0{,}4\,\text{kW}$ välillä $1{,}25$–$1{,}5\,\text{h}$ eli $0{,}25\,\text{h}$.
 **Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
 **Muunnokset:** Ei tarvita: tehot luetaan kilowatteina ja ajat tunteina. Siksi energia tulee kilowattitunteina.
-**Sijoitus:** $$\begin{aligned} E &= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \\ &\cdot 1{,}0\,\text{h} + 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}80\,\text{kWh} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} E &= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}80\,\text{kWh} \end{aligned}$$
 **Vastaus:** $0{,}80\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska arvot luetaan $0{,}2\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
 **Järkevyys:** Lämmitys on lyhyt, mutta se käyttää yli puolet energiasta, $0{,}50\,\text{kWh}$. Syy on sen teho, joka on kymmenkertainen pesuun verrattuna. Puolentoista tunnin ohjelma keskimäärin noin $0{,}5\,\text{kW}$:n teholla antaisi $0{,}8\,\text{kWh}$.
 
@@ -132,7 +132,7 @@
 **Muunnokset:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7{,}5\,\text{h}$; $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
 **Sijoitus:** $E = 0{,}90\,\text{kW} \cdot 7{,}5\,\text{h} = 6{,}75\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6{,}75\,\text{kWh} = 1{,}215\,\text{€}$
 **Vastaus:** $1{,}2\,\text{€}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten teho $0{,}90\,\text{kW}$ ja hinta $18\,\text{snt/kWh}$.
-**Järkevyys:** Päivässä keitin käyttää $$\begin{aligned} &0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}225\,\text{kWh} \end{aligned}$$. Se maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa summa on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
+**Järkevyys:** Päivässä keitin käyttää $$0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}225\,\text{kWh}$$. Se maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa summa on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
 
 ## fy6-7-L1-08
 **Annettu:** energia $E = 1{,}0\,\text{kWh}$, teho $P = 40\,\text{W}$
@@ -171,7 +171,7 @@ c) Säästökohteeksi sopii valaistus. Se on toiseksi suurin erä. Sen tehoa voi
 b) $335\,\text{W}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten energian erotus $56{,}3\,\text{kWh}$.
 
 c) $9{,}0\,\text{€}$.
-**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}335\,\text{kW} \cdot 168\,\text{h} \\ &= 56{,}3\,\text{kWh} \end{aligned}$$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua. Se sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $$8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$$.
+**Järkevyys:** Tarkistus: $$0{,}335\,\text{kW} \cdot 168\,\text{h} = 56{,}3\,\text{kWh}$$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua. Se sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $$8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$$.
 
 ## fy6-7-L2-07
 **Annettu:** energiamittarin lukemat $0{,}00$–$1{,}64\,\text{kWh}$ ajan $0$–$48\,\text{h}$ funktiona, $365$ vuorokautta
@@ -252,7 +252,7 @@ Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. 
 **Kuvaajan lukeminen:** Kuumennuksessa teho on $2{,}4\,\text{kW}$ välillä $0$–$0{,}5\,\text{h}$, joten kesto on $0{,}5\,\text{h}$. Kuivauksessa teho on $1{,}2\,\text{kW}$ välillä $0{,}5$–$1{,}5\,\text{h}$ eli $1{,}0\,\text{h}$. Jäähdytyksessä teho on $0{,}2\,\text{kW}$ välillä $1{,}5$–$2{,}0\,\text{h}$ eli $0{,}5\,\text{h}$.
 **Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ ja $K = aE$
 **Muunnokset:** $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
-**Sijoitus:** $$\begin{aligned} E &= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} + 1{,}2\,\text{kW} \\ &\cdot 1{,}0\,\text{h} + 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} \\ &= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} \\ &+ 0{,}10\,\text{kWh} \\ &= 2{,}5\,\text{kWh} \end{aligned}$$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
+**Sijoitus:** $$\begin{aligned} E &= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} \\ &+ 1{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} \\ &= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} \\ &+ 0{,}10\,\text{kWh} \\ &= 2{,}5\,\text{kWh} \end{aligned}$$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
 **Vastaus:** $0{,}45\,\text{€}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}4\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
 **Järkevyys:** Kahden tunnin ohjelma keskimäärin noin $1{,}25\,\text{kW}$:n teholla antaisi $2{,}5\,\text{kWh}$. Se maksaa noin $2{,}5 \cdot 18\,\text{snt} = 45\,\text{snt}$. Se on alle euron.
 

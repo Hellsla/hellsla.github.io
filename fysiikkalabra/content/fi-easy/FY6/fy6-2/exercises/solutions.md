@@ -14,7 +14,7 @@
 **Periaate:** Virheraja on prosenttiosuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Alueella $200\,\text{mA}$ viimeinen numero on milliampeerin kymmenesosa. Yksi askel on siis $0{,}1\,\text{mA}$.
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$. Lukema ja resoluutio ovat jo milliampeereina.
-**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 146{,}3\,\text{mA} + 2 \\ &\cdot 0{,}1\,\text{mA} \\ &= 1{,}463\,\text{mA} + 0{,}2\,\text{mA} \\ &= 1{,}663\,\text{mA} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 146{,}3\,\text{mA} \\ &+ 2 \cdot 0{,}1\,\text{mA} \\ &= 1{,}463\,\text{mA} + 0{,}2\,\text{mA} \\ &= 1{,}663\,\text{mA} \end{aligned}$$
 **Vastaus:** $1{,}7\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Prosentti $146\,\text{mA}$:sta on noin $1{,}5\,\text{mA}$. Numeroiden osuus $0{,}2\,\text{mA}$ on sitä pienempi, koska lukema on lähellä alueen ylärajaa. Tulos on vähän yli prosentin lukemasta.
 
@@ -64,7 +64,7 @@
 **Periaate:** Virheraja on osuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Lukema ja resoluutio on ilmoitettu eri yksiköissä. Siksi ne muutetaan samaan yksikköön ennen yhteenlaskua.
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$ ja $r = 0{,}1\,\text{mA} = 0{,}1 \cdot 0{,}001\,\text{A} = 0{,}0001\,\text{A}$
-**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 0{,}0875\,\text{A} + 2 \\ &\cdot 0{,}0001\,\text{A} \\ &= 0{,}000875\,\text{A} + 0{,}0002\,\text{A} \\ &= 0{,}001075\,\text{A} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 0{,}0875\,\text{A} \\ &+ 2 \cdot 0{,}0001\,\text{A} \\ &= 0{,}000875\,\text{A} + 0{,}0002\,\text{A} \\ &= 0{,}001075\,\text{A} \end{aligned}$$
 **Vastaus:** $0{,}0011\,\text{A}$ eli noin $1{,}1\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Näyttö näyttää $87{,}5\,\text{mA}$. Prosentti siitä on noin $0{,}9\,\text{mA}$ ja kaksi askelta on $0{,}2\,\text{mA}$. Yhteensä tulee noin $1{,}1\,\text{mA}$. Jos resoluutiota ei muuntaisi ampeereiksi, tulos olisi järjetön $0{,}2\,\text{A}$. Se on suurempi kuin itse virta.
 
@@ -74,7 +74,7 @@
 **Periaate:** Prosenttiosa on molemmilla alueilla lähes sama, koska lukema on sama. Ero syntyy numeroiden osuudesta. Suuremmalla alueella viimeinen numero on kymmenen kertaa karkeampi.
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_2 + n \cdot r_2}$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Jännitteet ovat voltteina.
-**Sijoitus:** $$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}234\,\text{V} + 2 \\ &\cdot 0{,}001\,\text{V} \\ &= 0{,}00817\,\text{V} \end{aligned}$$ ja $\Delta U_{20} = 0{,}005 \cdot 1{,}23\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02615\,\text{V}$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0{,}02615\,\text{V}}{0{,}00817\,\text{V}} = 3{,}20$
+**Sijoitus:** $$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}234\,\text{V} \\ &+ 2 \cdot 0{,}001\,\text{V} \\ &= 0{,}00817\,\text{V} \end{aligned}$$ ja $\Delta U_{20} = 0{,}005 \cdot 1{,}23\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02615\,\text{V}$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0{,}02615\,\text{V}}{0{,}00817\,\text{V}} = 3{,}20$
 **Vastaus:** $3{,}2$. Suhde lasketaan pyöristämättömistä virherajoista. Ne ovat arvioita, joten kaksi numeroa riittää. Alueen $20\,\text{V}$ virheraja on noin kolminkertainen.
 **Järkevyys:** Jos virheraja olisi pelkkiä numeroita, suhde olisi $10$. Jos se olisi pelkkä prosenttiosa, suhde olisi $1$. Tulos on näiden välissä ja lähempänä pientä päätä. Syy on se, että alueella $2\,\text{V}$ prosenttiosa $0{,}006\,\text{V}$ on suurempi kuin numeroiden osuus $0{,}002\,\text{V}$.
 
@@ -147,7 +147,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Lukemat ja resoluutiot ovat voltteina. Lopuksi tulos muutetaan millivolteiksi: $1\,\text{V} = 1000\,\text{mV}$.
 **Sijoitus:**
-$$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}847\,\text{V} + 2 \\ &\cdot 0{,}001\,\text{V} \\ &= 0{,}009235\,\text{V} + 0{,}002\,\text{V} \\ &= 0{,}011235\,\text{V} \\ &= 11{,}235\,\text{mV} \end{aligned}$$
+$$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}847\,\text{V} \\ &+ 2 \cdot 0{,}001\,\text{V} \\ &= 0{,}009235\,\text{V} + 0{,}002\,\text{V} \\ &= 0{,}011235\,\text{V} \\ &= 11{,}235\,\text{mV} \end{aligned}$$
 $\Delta U_{20} = 0{,}005 \cdot 1{,}85\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}00925\,\text{V} + 0{,}02\,\text{V} = 0{,}02925\,\text{V} = 29{,}25\,\text{mV}$
 $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}009\,\text{V} + 0{,}2\,\text{V} = 0{,}209\,\text{V} = 209\,\text{mV}$
 **Vastaus:** paras alue on $2\,\text{V}$, koska sen virheraja on pienin: $11\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska ensimmäinen numero on 1. Laskimen arvo on $11{,}235\,\text{mV}$. Alueen $20\,\text{V}$ virheraja on $29\,\text{mV}$ ja alueen $200\,\text{V}$ virheraja $209\,\text{mV}$. Jännite mahtuu alueelle $2\,\text{V}$. Pienin sopiva alue antaa siis tarkimman tuloksen.

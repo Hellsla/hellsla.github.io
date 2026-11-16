@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita, kaikki virrat ovat ampeereina.
 **Sijoitus:** $I = 0{,}20\,\text{A} + 0{,}45\,\text{A} + 0{,}85\,\text{A} = 1{,}50\,\text{A}$
 **Vastaus:** $1{,}50\,\text{A}$, sadasosa-ampeerin tarkkuudella kuten kaikki yhteenlaskettavat.
-**Järkevyys:** Akusta lähtevä virta on suurempi kuin yksikään haaravirroista, koska jokainen valaisin on oma kulkureittinsä. Pyöristetyillä luvuilla $$\begin{aligned} &0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} \\ &= 1{,}5\,\text{A} \end{aligned}$$.
+**Järkevyys:** Akusta lähtevä virta on suurempi kuin yksikään haaravirroista, koska jokainen valaisin on oma kulkureittinsä. Pyöristetyillä luvuilla $$0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} = 1{,}5\,\text{A}$$.
 
 ## fy6-4-L1-04
 **Annettu:** sarjaan kytketyt lamput, pariston jännite $U = 4{,}5\,\text{V}$, ensimmäisen lampun jännite $U_1 = 1{,}8\,\text{V}$

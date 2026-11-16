@@ -145,7 +145,7 @@
 **Periaate:** Rinnakkaisten haarojen jokaisen vastuksen jännite on lähteen jännite. Siksi Ohmin laki $I = U : R$ antaa haaravirrat, ja niillä voi tarkistaa haaramittarit. Kirchhoffin virtalain mukaan pääjohtimen virta on haaravirtojen summa.
 **Kaava:** $I_k = \dfrac{U}{R_k}$ ja $I_0 = I_1 + I_2 + I_3$
 **Muunnokset:** Ei tarvita, koska $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
-**Sijoitus:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0{,}20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0{,}15\,\text{A}$ ja $\dfrac{12\,\text{V}}{50\,\Omega} = 0{,}24\,\text{A}$. Haaramittarit näyttävät samat arvot. Haaravirtojen summa on $$\begin{aligned} &0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} \\ &= 0{,}59\,\text{A} \end{aligned}$$.
+**Sijoitus:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0{,}20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0{,}15\,\text{A}$ ja $\dfrac{12\,\text{V}}{50\,\Omega} = 0{,}24\,\text{A}$. Haaramittarit näyttävät samat arvot. Haaravirtojen summa on $$0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text{A}$$.
 **Vastaus:** $0{,}59\,\text{A}$. Väärä on pääjohtimen mittarin lukema $0{,}50\,\text{A}$, koska se on pienempi kuin haaravirtojen summa.
 **Järkevyys:** Kokonaisresistanssi olisi $12\,\text{V} : 0{,}59\,\text{A} \approx 20\,\Omega$. Se on pienempi kuin pienin haaran resistanssi $50\,\Omega$, kuten rinnankytkennässä kuuluu. Lukemalla $0{,}50\,\text{A}$ haaroihin lähtisi enemmän virtaa kuin pisteeseen tulee.
 
@@ -185,7 +185,7 @@ $$\begin{aligned} \frac{21 - 40\, I_2}{30} &= I_2 \\ 21 &= 70\, I_2 \\ I_2 &= 0{
 
 Silloin $I_1 = \dfrac{12\,\text{V} - 6{,}0\,\text{V}}{30\,\Omega} = 0{,}20\,\text{A}$ ja $I_3 = \dfrac{9{,}0\,\text{V} - 6{,}0\,\text{V}}{30\,\Omega} = 0{,}10\,\text{A}$.
 
-Lähteiden teho on $12\,\text{V} \cdot 0{,}20\,\text{A} + 9{,}0\,\text{V} \cdot 0{,}10\,\text{A} = 2{,}4\,\text{W} + 0{,}9\,\text{W} = 3{,}3\,\text{W}$. Vastusten teho on $$\begin{aligned} &30\,\Omega \cdot (0{,}20\,\text{A})^2 + 20\,\Omega \\ &\cdot (0{,}30\,\text{A})^2 + 30\,\Omega \cdot (0{,}10\,\text{A})^2 \\ &= 1{,}2\,\text{W} + 1{,}8\,\text{W} + 0{,}3\,\text{W} \\ &= 3{,}3\,\text{W} \end{aligned}$$.
+Lähteiden teho on $12\,\text{V} \cdot 0{,}20\,\text{A} + 9{,}0\,\text{V} \cdot 0{,}10\,\text{A} = 2{,}4\,\text{W} + 0{,}9\,\text{W} = 3{,}3\,\text{W}$. Vastusten teho on $$\begin{aligned} &30\,\Omega \cdot (0{,}20\,\text{A})^2 + 20\,\Omega \cdot (0{,}30\,\text{A})^2 \\ &+ 30\,\Omega \cdot (0{,}10\,\text{A})^2 \\ &= 1{,}2\,\text{W} + 1{,}8\,\text{W} + 0{,}3\,\text{W} \\ &= 3{,}3\,\text{W} \end{aligned}$$.
 **Vastaus:** $I_2 = 0{,}30\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa kuten annetuissa arvoissa. Muut haaravirrat ovat $I_1 = 0{,}20\,\text{A}$ ja $I_3 = 0{,}10\,\text{A}$. Lähteiden teho ja vastusten teho ovat molemmat $3{,}3\,\text{W}$, joten energiatase toteutuu.
 **Järkevyys:** Virtalaki toteutuu: $0{,}20\,\text{A} + 0{,}10\,\text{A} = 0{,}30\,\text{A}$. Pisteiden $P$ ja $Q$ välinen jännite on $R_2 I_2 = 6{,}0\,\text{V}$. Sama jännite saadaan myös kummankin lähteen puolelta: $$12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}$$ ja $$9{,}0\,\text{V} - 30\,\Omega \cdot 0{,}10\,\text{A} = 6{,}0\,\text{V}$$. Kaikki virrat ovat positiivisia. Kumpikin lähde siis todella tuottaa virtaa pisteeseen $P$.
 

@@ -14,7 +14,7 @@
 **Principle:** The error limit is a percentage of the reading plus two steps of the last digit. On the range $200\,\text{mA}$ the last digit is a tenth of a milliampere, so one step is $0.1\,\text{mA}$.
 **Formula:** $\Delta I = p \cdot I + n \cdot r$
 **Conversions:** $p = 1.0\,\% = 0.010$; the reading and the resolution are already in milliamperes.
-**Substitution:** $$\begin{aligned} \Delta I &= 0.010 \cdot 146.3\,\text{mA} + 2 \\ &\cdot 0.1\,\text{mA} \\ &= 1.463\,\text{mA} + 0.2\,\text{mA} \\ &= 1.663\,\text{mA} \end{aligned}$$
+**Substitution:** $$\begin{aligned} \Delta I &= 0.010 \cdot 146.3\,\text{mA} \\ &+ 2 \cdot 0.1\,\text{mA} \\ &= 1.463\,\text{mA} + 0.2\,\text{mA} \\ &= 1.663\,\text{mA} \end{aligned}$$
 **Answer:** $1.7\,\text{mA}$, two significant figures, because the first figure of the error limit is 1.
 **Reasonableness:** A percent of $146\,\text{mA}$ is about $1.5\,\text{mA}$, and the share of the digits $0.2\,\text{mA}$ is smaller, because the reading is close to the upper limit of the range. The result is a little over a percent of the reading.
 
@@ -64,7 +64,7 @@
 **Principle:** The error limit is a share of the reading plus two steps of the last digit. The reading and the resolution are given in different units, so they are converted to the same unit before adding.
 **Formula:** $\Delta I = p \cdot I + n \cdot r$
 **Conversions:** $p = 1.0\,\% = 0.010$ and $r = 0.1\,\text{mA} = 0.1 \cdot 0.001\,\text{A} = 0.0001\,\text{A}$
-**Substitution:** $$\begin{aligned} \Delta I &= 0.010 \cdot 0.0875\,\text{A} + 2 \\ &\cdot 0.0001\,\text{A} \\ &= 0.000875\,\text{A} + 0.0002\,\text{A} \\ &= 0.001075\,\text{A} \end{aligned}$$
+**Substitution:** $$\begin{aligned} \Delta I &= 0.010 \cdot 0.0875\,\text{A} \\ &+ 2 \cdot 0.0001\,\text{A} \\ &= 0.000875\,\text{A} + 0.0002\,\text{A} \\ &= 0.001075\,\text{A} \end{aligned}$$
 **Answer:** $0.0011\,\text{A}$, or about $1.1\,\text{mA}$, two significant figures, because the first figure of the error limit is 1.
 **Reasonableness:** The display shows $87.5\,\text{mA}$; a percent of it is about $0.9\,\text{mA}$ and two steps $0.2\,\text{mA}$, altogether about $1.1\,\text{mA}$. If the resolution were not converted to amperes, one would get the absurd result $0.2\,\text{A}$, which is larger than the current itself.
 
@@ -74,7 +74,7 @@
 **Principle:** The percentage part is almost the same on both ranges, because the reading is the same. The difference comes from the share of the digits: on the larger range the last digit is ten times coarser.
 **Formula:** $\Delta U = p \cdot U + n \cdot r$, so $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_2 + n \cdot r_2}$
 **Conversions:** $p = 0.5\,\% = 0.005$; the voltages are in volts.
-**Substitution:** $$\begin{aligned} \Delta U_2 &= 0.005 \cdot 1.234\,\text{V} + 2 \\ &\cdot 0.001\,\text{V} \\ &= 0.00817\,\text{V} \end{aligned}$$ and $\Delta U_{20} = 0.005 \cdot 1.23\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.02615\,\text{V}$, so $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0.02615\,\text{V}}{0.00817\,\text{V}} = 3.20$
+**Substitution:** $$\begin{aligned} \Delta U_2 &= 0.005 \cdot 1.234\,\text{V} \\ &+ 2 \cdot 0.001\,\text{V} \\ &= 0.00817\,\text{V} \end{aligned}$$ and $\Delta U_{20} = 0.005 \cdot 1.23\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.02615\,\text{V}$, so $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0.02615\,\text{V}}{0.00817\,\text{V}} = 3.20$
 **Answer:** $3.2$; the ratio is calculated from the unrounded error limits, and because they are estimates, two figures are enough: the error limit of the range $20\,\text{V}$ is about three times as large.
 **Reasonableness:** If the error limit consisted of digits only, the ratio would be $10$; if of the percentage part only, it would be $1$. The result is between these, closer to the small end, because the percentage part $0.006\,\text{V}$ on the range $2\,\text{V}$ is larger than the share of the digits $0.002\,\text{V}$.
 
@@ -147,7 +147,7 @@
 **Formula:** $\Delta U = p \cdot U + n \cdot r$
 **Conversions:** $p = 0.5\,\% = 0.005$; the readings and the resolutions are in volts. Finally the result is converted to millivolts: $1\,\text{V} = 1000\,\text{mV}$.
 **Substitution:**
-$$\begin{aligned} \Delta U_2 &= 0.005 \cdot 1.847\,\text{V} + 2 \\ &\cdot 0.001\,\text{V} \\ &= 0.009235\,\text{V} + 0.002\,\text{V} \\ &= 0.011235\,\text{V} \\ &= 11.235\,\text{mV} \end{aligned}$$
+$$\begin{aligned} \Delta U_2 &= 0.005 \cdot 1.847\,\text{V} \\ &+ 2 \cdot 0.001\,\text{V} \\ &= 0.009235\,\text{V} + 0.002\,\text{V} \\ &= 0.011235\,\text{V} \\ &= 11.235\,\text{mV} \end{aligned}$$
 $\Delta U_{20} = 0.005 \cdot 1.85\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.00925\,\text{V} + 0.02\,\text{V} = 0.02925\,\text{V} = 29.25\,\text{mV}$
 $\Delta U_{200} = 0.005 \cdot 1.8\,\text{V} + 2 \cdot 0.1\,\text{V} = 0.009\,\text{V} + 0.2\,\text{V} = 0.209\,\text{V} = 209\,\text{mV}$
 **Answer:** the best range is $2\,\text{V}$, because its error limit is the smallest: $11\,\text{mV}$, two significant figures, because the first digit is 1 (calculator value $11.235\,\text{mV}$). The error limit of the range $20\,\text{V}$ is $29\,\text{mV}$ and that of the range $200\,\text{V}$ is $209\,\text{mV}$. The voltage fits on the range $2\,\text{V}$, so the smallest suitable range gives the most accurate result.
