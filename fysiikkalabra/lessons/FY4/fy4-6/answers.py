@@ -33,7 +33,7 @@ a["fy4-6-L3-02"] = sf(3.0 ** 2 / (2 * aup), 2)                    # v² = v0² �
 muE = math.tan(r(30)) - 2.0 / (g * math.cos(r(30)))      # friction coefficient implied by a = 2,0 m/s² on Earth (0,342)
 a["fy4-6-L3-03"] = sf(gK * (math.sin(r(30)) - muE * math.cos(r(30))), 2)   # Moon: a = 2,0·g_Kuu/g = 0,33 m/s²
 # Level 1 additions
-a["fy4-6-L1-07"] = sf(0.45 * 50 * g, 2)                           # box at rest: F = mu0 N = mu0 mg = 220,7 N (the push at the limit)
+a["fy4-6-L1-07"] = math.ceil(0.45 * 50 * g / 10) * 10           # box at rest: F = mu0 N = mu0 mg = 220,7 N; an "at least" value rounds up to two figures: 230 N (P7c)
 # Level 2 additions
 fs = [0.85, 1.62, 2.50, 3.31, 4.02]; Ns = [m * g for m in (0.20, 0.40, 0.60, 0.80, 1.00)]   # friction against N = mg (data table)
 a["fy4-6-L2-05"] = sf(sum(n * f for n, f in zip(Ns, fs)) / sum(n * n for n in Ns), 2)   # slope of the line through the origin = 0,416

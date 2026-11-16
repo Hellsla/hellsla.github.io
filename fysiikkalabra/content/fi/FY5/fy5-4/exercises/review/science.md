@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 70d174f2f9293390
-SCOPE: delta added-exercise from a6b9feb8d21605fb base 8f23aa7ae3bd
+CONTENT-HASH: fc9a630e9f0fd181
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L2-09 ja L3-06 (kierros 3).
-- L2-09:n uusi piste: kuvaaja-a:n käyrä on v²/75, ja piste (15 m/s; 3,0 m/s²) on käyrällä. Siitä r = v²/a_n = 225/3,0 = 75 m, sama kuin answers.py:ssä. L1-01:ssä luvut ovat 20 m/s, 5,0 m/s² ja 80 m, joten L2-09 ei enää toista sitä.
-- Kuvaaja-b mahtuu nyt kuvaan: käyrä päättyy kohtaan 24 m/s, jossa arvo on 11,52 kN eli alle y-akselin ylärajan 12 kN. Kuvaaja-a:n suurin arvo on 11,2 alle rajan 12.
-- L3-06: 1,2·20²/60 = 8,0 kN, ja μ0 = 8000/(1200·9,81) = 0,6796 ≈ 0,68. Malli on oikea: kitka on ainoa vaakasuora voima, N = mg ja rajatapaus F = μ0N. Tehtävä kertoo nämä oletukset.
-- Lukeminen: piste 15 on numeroidulla apuviivalla. Arvo 3 on apuviivalla numeroiden 2 ja 4 välissä, ja pisteeseen on piirretty apuviivat. Kahden merkitsevän numeron vastaukset 75 m ja 0,68 pysyvät toleranssin 2 % sisällä.
-- Järkevyystarkistukset ovat oikein: 3,0/9,81 ≈ 0,3 g, ja nopeudella 10 m/s a_n = 1,33 m/s². L3-06:ssa vertailu kuivaan ja märkään asfalttiin on oikein.
-- Alt-tekstit antavat samat pisteet kuin kuvat. Säde ei näy kummassakaan kuvassa.
+- The hash was fc9a630e9f0fd181 at the start and at the end. I judged only the diff (exercises.json L3-06 text; solutions.md lines 113, 201, 285, 317).
+- The terms follow the guardrail (Friction, P8). The full name "täysin kehittynyt lepokitka eli lähtökitka" appears at the first use in solutions.md (line 113, the force diagram) and in the L3-06 task text, so a student who sees only that task meets it in full. The later uses (201, 285, 317) say "lähtökitka". No "suurin lepokitka" and no "liikekitka" is left in exercises.json or solutions.md.
+- Physics of each changed sentence. Line 113: maximum speed on a level curve, so friction is at its limit μ0N toward the centre. Line 201: just before sliding, F = μ0N, which matches its principle line 200. Line 285: banked curve at v_max, where the car tends to slide up the slope, so lähtökitka points down the slope. That is correct and matches principle line 284. Line 317: the car holds the road when the friction it needs is at most μ0N, with the limiting case F = μ0N. All four are correct.
+- The L3-06 assumption still says what the model needs: friction is the only horizontal force and its greatest value is μ0N. With this, μ0 = F/(mg) = 8000/(1200·9,81) = 0,680, so the answer 0,68 is unchanged.
+- The diff changes no numbers, symbols, figures or answers.py lines. The answers checked in the earlier rounds still hold.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a158a19c96763680
+CONTENT-HASH: ad3d0693f1748ce9
 
 ## Blocking
 - none
@@ -8,8 +8,10 @@ CONTENT-HASH: a158a19c96763680
 - none
 
 ## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (heading and Ydinajatus paragraph, myth paragraph, summary bullet): prose and inline maths only. Captures current, not re-opened.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
+- Delta (wording): one word in lesson.md, "liikekitka" -> "liukukitka" in the friction/ABS paragraph (about 95 words, within the limit). The word is the project term and fits the sentence.
+- Opened fy4-11-theory-1280-2, -3 and -4 to see that the surrounding theory layout survived (figures, display formulas, inline maths with units, decimal comma). No figure or formula changed in the diff.
+- The changed paragraph sits between theory parts 3 and 4, so it is not on a capture. I judged it from the diff and left the figures alone.
+- Wording: the new sentence is correct and fluent. Earlier sentences are untouched.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

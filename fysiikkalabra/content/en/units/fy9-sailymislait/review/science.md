@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 14b317dac8dafa44
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0775225e55ef25bc; full on the chart, delta on the rest.
+CONTENT-HASH: f5227f32d90da96e
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- (C) "no friction, only gravity" and "collision → momentum conserved" leave out "no other force does work" / "external impulse negligible"; fair at this level.
+- A: solutions.md model answer, same changed sentence: 'about half of the kinetic energy disappeared in test 2' would read better as 'was converted', since the unit elsewhere counts 'disappeared' as a mistake. The sentence itself says where the energy goes, so not blocking.
 
 ## Checked
-- Every row: $E_\text{p0} + E_\text{k0} = E_\text{p} + E_\text{k}$; work-energy principle with $W$ of the other forces; $E_\text{k} = \tfrac12mv^2$; $E_\text{p} = mgh$; $\overline{p}_\text{before} = \overline{p}_\text{after}$ (overlined vectors); elastic $\Delta E_\text{k} = 0$; $\overline{I} = \Delta\overline{p}$; $\eta = P_\text{a}/P_\text{o}$. Agree with the Formula section.
-- The aria-label matches the chart.
-- Term change: sovella/solutions.md "Kinetic" -> "Sliding friction $F_\mu = \mu N = \mu mg$", physics unchanged and correct; teacher.md wording only.
-- The en chart (docs/figures/fy9-tunnistus/fy9-sailymislait-en-360.png) and the hash, taken at the start and the end (14b317dac8dafa44).
+- solutions.md model answer, tasks.json criterion, unit.md common mistake: kinetic energy (not momentum) is converted into internal energy and sound; momentum is not a form of energy. The three places now say the same thing, and the unit.md sentence is more exact than before ('kinetic energy' instead of 'energy').
+- The rest of the model answer (rolling resistance as external impulse, -12 % and -3 %) is unchanged.
+- No ADDED TASK in this unit's en diff; `python scripts/practice.py check units/fy9-sailymislait` is OK.

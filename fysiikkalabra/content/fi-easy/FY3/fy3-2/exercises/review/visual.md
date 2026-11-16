@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 34099904c8e11006
-Mode: delta
-Round: 2
+CONTENT-HASH: 241f39cba1ade0b1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- Hash identical to the round-1 PASS and the packet diff is empty: no change to judge; round-1 captures stand.
+- Delta (solutions.md 2-5 pulkka wording, figures.json Joule words): open-exercises-1280-5 (task 2-5 solution layout, formulas, järkevyys box). Diff read: figure words now say "sisäenergia", matching the lesson's figure.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b9dce10a72d8c126
+CONTENT-HASH: 36ca403bcce0eb0a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
 - (none)
 
 ## Polish
-- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
+- (none)
 
 ## Checked
-- batch delta review 5d: reflow-*.png (3 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.
+- Hunks solutions.md: Vastaus of the constant term $b$ (the reason for two significant figures) and Järkevyys of the ion engine (field against air's breakdown strength $3\,\text{MV/m}$). Both sentences are grammatical and unambiguous; $1{,}1 : 3 \approx 0{,}37$ fits "noin kolmasosa".
+- Captures opened: `fy9-sahkokentta-stage-exercises-390-26.png`, `-390-47.png`, `-390-48.png`, `fy9-sahkokentta-stage-exercises-1280-35.png`: answer box and note intact, the Järkevyys block wraps cleanly, units upright.
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

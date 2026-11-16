@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 669fa3763072ddd0
-SCOPE: delta added-exercise from 659ad3e05eafaa51 base 8f23aa7ae3bd
+CONTENT-HASH: 799fb4d8eefe224d
 
 ## Blocking
 (none)
@@ -9,10 +8,8 @@ SCOPE: delta added-exercise from 659ad3e05eafaa51 base 8f23aa7ae3bd
 - none.
 
 ## Checked
-- fy5-4-L2-09: figure kuvaaja-a draws a_n = v²/75; marked point (15 m/s, 3.0 m/s²); r = v²/a_n = 75 m; check at 10 m/s, 1.33 m/s², right. Own script, answers.py and JSON agree (75.0).
-- fy5-4-L3-06: figure kuvaaja-b draws F = 1200 kg · v²/60 m, so at 20 m/s F = 8.0 kN exactly as marked; level road, N = mg, limiting case F = μ0 N gives μ0 = 8000/(1200 · 9.81) = 0.680. Conditions (friction the only horizontal force, greatest static friction μ0 N) stated in the task.
-- Ground-frame model: friction is the net force towards the centre, no centrifugal force; consistent with the passed set.
-- Significant figures (two, from the read values) and the reasonableness checks (0.3 g, dry vs wet asphalt) right.
-- Figures: English axis labels and descriptions give the values the solutions quote; the radius is not given away.
-- Compared with the Finnish set by script: every number, answer, unit, tolerance and figure id identical.
-- Hash unchanged at start and end.
+- Delta: fy5-4-L3-06 task text (exercises.json:367) and its solution principle (solutions.md:317) now say "maximum static friction $\mu_0 N$" instead of "greatest static friction". The new wording is the English term in docs/physics-guardrails.md (Friction, P8: maximum (fully developed) static friction). The physics, the condition and the limiting case $F = \mu_0 N$ are unchanged.
+- The remaining uses of "greatest" in the set (greatest speed, greatest tension, greatest rotation frequency) name kinematic or string limits, not the static-friction quantity, so the term is used the same way everywhere.
+- Recomputed: $\mu_0 = 8000/(1200 \cdot 9.81) = 0.680$, which matches answer 0.68. The figure kuvaaja-b (F = 1.2 kN · v²/60) still gives 8.0 kN at 20 m/s.
+- The diff changes no number, symbol, unit or tolerance. The earlier full checks (ground-frame model, no centrifugal force, significant figures, figures) still hold.
+- Hash 799fb4d8eefe224d (with --lang en) is the same at the start and at the end.

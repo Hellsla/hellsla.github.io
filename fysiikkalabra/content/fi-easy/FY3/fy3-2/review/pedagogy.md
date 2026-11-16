@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fc081966801d027b
+CONTENT-HASH: 3c6d489f9b4c8ed7
 
 ## Blocking
 - none
 
 ## Polish
-- meta.json key_concepts "energia" — same wording as fy2-1 — "Suure, joka kertoo, kuinka paljon muutosta jokin voi saada aikaan. Työ siirtää energiaa."
+- lesson.md:118 — the paragraph mixes work as energy transfer, lifting, springs, friction, power and the sauna stove (about 90 words, five ideas) — split it at "Teho kertoo" so power has its own paragraph.
+- inquiry.json pred-3 prompt — "Vertaa ennustettasi Teoriatiivistelmän malliin" — the page shows the stage as Teoria; write "Teorian malliin".
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the definition of work now uses displacement and a force component along it, and the backpack paragraph says the mechanical work of the supporting force is zero while the muscles still use energy; consistent with the worked example and the inquiry's backpack task. Rest is number+unit typesetting only. fi-easy: 'osa eli komponentti' explains the new term.
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Full review (figure change): hero (student with backpack in a corridor), carry-lift, Joule figure and sim captures at 390 px are recognisable, uncluttered and legible; labels in LaTeX.
+- Learning path: backpack hook -> retrieval (G = mg) -> three predictions the sim or the theory can test -> two controlled experiments (one variable each, F/s/t locked) -> conclusion that separates model values from Joule's measurements.
+- pred-3 (backpack) is honestly marked as not testable in the sim and settled by the theory figure; option feedback repairs each misconception without giving the answer early.
+- Joule table is labelled simulated data; the interpretation question tests W ≈ ΔU and the "heat is not a substance" misconception.
+- Worked example: seven stages, one step each, symbolic before numbers, unit conversion cm -> m, reasonableness check by average force.
+- Slot goals met (W = Fs from Joule, area under (s,F)); no FY4 content (no cos α, E_k, work-energy theorem).
+- Checks: concept (spring 1:3 area ratio, misconception distractors), calculation (rectangle plus triangle), explain with observable criteria; exit ticket tests the core idea.
+- Finnish (easy language): "osa eli komponentti" explains the new term; number+unit cases are correct.
+- Phone: sim, controls and readout fit 390 px; Käyttöohje and Mallin oletukset behind closed boxes; workload fits one lesson (optional items marked).

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 534f119cf21d1296
+CONTENT-HASH: cd1a10f1eb4be45c
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] lesson.md: 'jäähdytyksen tuottamisessa' and 'Sen verkko' (now unclear whether 'Sen' = kaukolämpö) are heavy for S2; write 'Kaukolämmöllä voi myös tehdä viilennystä ja lämpöä tehtaille. Kaukolämmön verkko ulottuu vain kaupunkiin.'
-- [Minor] The last sentence is abstract and lost the concrete summer/winter example; add 'Talvella lämpöä tarvitaan paljon, kesällä vähän.'
-- [Minor] inquiry model: 'Kaukolämpöä käytetään pääasiassa lämmitykseen ja vain lähelle' -> '... ja sitä voi siirtää vain lähelle'.
+- [Minor] lesson.md Yleinen virhekäsitys — units "(W)", "(kg/s)", "(K)" in parentheses are plain text in untouched text; consistent with the rest of the lesson, optional LaTeX.
 
 ## Checked
-batch delta review: opened fy3-15-fig-row-1280 (Sankey, unchanged, labels legible, no clipping); read the changed paragraph, misconception and inquiry model.
+- Delta: diff read (jakautuu sähköön, kaukolämpöön ja hukkalämpöön; "siirtyisi hukkalämpönä ympäristöön": correct cases, fluent). theory-1280-3 (the changed Yleinen virhekäsitys paragraph with the heat-exchanger figure and formulas: layout intact, figure beside its paragraph, labels unclipped).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

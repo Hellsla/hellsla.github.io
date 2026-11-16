@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5d46ccf73881879d
+CONTENT-HASH: c7c5f8bd95a111bf
 
 ## Blocking
-- none
 
 ## Polish
-1. Worked example: the input power is P_1, while fy3-15 and the L3-01 solution use MAFY's P_o; consider P_o for the input (and P_h for losses) here too.
+1. Worked example: as before, optional P_o for the input power (fy3-15 and the exercises use it).
 
 ## Checked
-Fix 1: the sentence after W = pΔV now says compression gives the *magnitude* of the work done on the gas (fi "puristustyön suuruuden", fi-easy same, en "magnitude"), so no sign clash with W = −pΔV in the first law. Fix 2: worked example now names P_a as the useful (output) power before using it. First-law convention rechecked across formula section, summary, inquiry prior knowledge, prediction 1 (Q = 400 J, W = −150 J → 250 J), the sign-error check (−240 J → 360 J) and exercise L2-03/L3-05: ΔU = Q + W with W done on the gas, as fy3-5; the gas's own work pΔV is labelled each time. Engine η = W/Q₁ = (Q₁ − Q₂)/Q₁, heat pump ε = Q₁/W unchanged. Diff since the failed version touches only these two sentences; no number changed (example 38,0 %/310 MW, 88,0 %/60 MW). fi, fi-easy and en say the same.
+- Delta: inquiry.json, the heat-pump choice's two distractor feedbacks ("kolminkertainen hyötysuhde", "kitka ja häviöt").
+- Resistor: "1,0 kWh sähköä kasvattaisi vastuksen sisäenergiaa täsmälleen 1,0 kWh, ja tämä energia siirtyisi lämpönä huoneeseen" — right, and now as the guardrails ask (heat is energy in transfer; a body has internal energy, a resistance heater's efficiency practically 100 %).
+- Friction: "muuttavat osan sähköstä sisäenergiaksi, joka siirtyy lämpönä ympäristöön" — right; it is still part of the 1,0 kWh, so it cannot explain the extra 2,0 kWh (ε = 3,0 → 3,0 kWh out, 2,0 kWh from outdoor air).
+- Both options stay wrong, with the reason why; the correct option and the lämpökerroin ≠ hyötysuhde point unchanged.
+- No number or symbol changed; fi-easy and en make the same change.
+- Hash c7c5f8bd95a111bf the same at start and end.

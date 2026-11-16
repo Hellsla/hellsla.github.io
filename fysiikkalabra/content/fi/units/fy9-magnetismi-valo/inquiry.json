@@ -19,7 +19,7 @@
    "stage": "herata",
    "type": "hook",
    "text": "Saaristokylän kymmenen mökkiä saa sähkönsä mantereelta $1{,}0\\,\\text{km}$:n pituista merikaapelia pitkin. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$, ja kaapelia pitkin siirretään mantereelta enintään $40\\,\\text{kW}$:n teho. Mökeissä jännite on $230\\,\\text{V}$, mutta kaapelissa siirtojännite on $20\\,\\text{kV}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei.",
-   "question": "Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä, ja kuinka suuri osa tehosta muuttuisi kaapelissa lämmöksi?"
+   "question": "Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä, ja kuinka suuri osa tehosta muuttuisi kaapelin sisäenergiaksi?"
   },
   {
    "id": "lt-1",

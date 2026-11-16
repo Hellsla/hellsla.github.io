@@ -668,12 +668,16 @@ $$</span></p>
 <li>In a chain reaction, the number of neutrons is $N_g = N_0 k^g$. A reactor is kept critical, $k = 1$, with the help of a moderator and control rods.</li>
 <li>Finland's five reactors at Loviisa and Olkiluoto produced about $39\,\%$ of the electricity in 2024. The spent fuel is to be finally disposed of in Onkalo at a depth of about $430\,\text{m}$.</li>
 </ul></div><details class="opt" data-type="reflect"><summary><span class="opt-tag">Optional</span> Return to your predictions</summary><div class="activity act-reflect" id="pohdi" data-type="reflect"><div class="reflect" data-predictions='[&quot;ennuste-1&quot;, &quot;ennuste-2&quot;]'><p class="task">Compare your predictions with the model's values in the experiments. Then return to the opening question: where does the energy released when a uranium nucleus splits come from, and why does one gram of uranium correspond to tonnes of coal?</p><ul class="my-predictions"></ul><p class="revise"><strong>Would you change your prediction?</strong> <label><input type="radio" name="pohdi-rev" value="ei"> No</label> <label><input type="radio" name="pohdi-rev" value="kylla"> Yes</label></p><textarea rows="3" aria-label="Why?" placeholder="Why?"></textarea></div></div></details></section>
-<section class="stage" id="sovella" data-stage="sovella"><h2><span class="stage-no" aria-hidden="true">5</span>Examples</h2><div class="activity act-theory" id="esimerkki" data-type="theory"><div class="example"><div class="example-task"><h3 class="example-title">Example 1: Fission of uranium-235</h3><p>A uranium-235 nucleus captures a slow neutron and splits in the reaction $$
+<section class="stage" id="sovella" data-stage="sovella"><h2><span class="stage-no" aria-hidden="true">5</span>Examples</h2><div class="activity act-theory" id="esimerkki" data-type="theory"><div class="example"><div class="example-task"><h3 class="example-title">Example 1: Fission of uranium-235</h3><p>A uranium-235 nucleus captures a slow neutron and splits in the reaction <span class="mj-wide">$$
+\begin{aligned}
+&{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}\text{.} 
+\end{aligned}
+$$</span><span class="mj-narrow">$$
 \begin{aligned}
 &{}^{1}_{0}\text{n} \\
 &+ {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}\text{.}
 \end{aligned}
-$$ The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?</p></div><div class="worked" data-steps="7"><div class="step" data-step="1"><p class="step-label">Step 1/7</p><p><strong>Given and asked.</strong> The atomic masses are $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Ba} = 140.9144033\,\text{u}$, $m_\text{Kr} = 91.9261731\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$. We are asked for the reaction energy $Q$ in megaelectronvolts.</p></div><div class="step" data-step="2"><p class="step-label">Step 2/7</p><p><strong>Principle.</strong> The mass of the products of the reaction is smaller than that of the starting materials, and the energy corresponding to the difference is released. The sum of the atomic numbers is conserved ($92 = 56 + 36$), so the electrons in the atomic masses cancel and the atomic masses can be used directly. The starting materials contain one neutron and the products three.</p></div><div class="step" data-step="3"><p class="step-label">Step 3/7</p><p><strong>Formula solved.</strong> The reaction energy follows directly from the difference in masses:</p>
+$$</span> The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?</p></div><div class="worked" data-steps="7"><div class="step" data-step="1"><p class="step-label">Step 1/7</p><p><strong>Given and asked.</strong> The atomic masses are $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Ba} = 140.9144033\,\text{u}$, $m_\text{Kr} = 91.9261731\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$. We are asked for the reaction energy $Q$ in megaelectronvolts.</p></div><div class="step" data-step="2"><p class="step-label">Step 2/7</p><p><strong>Principle.</strong> The mass of the products of the reaction is smaller than that of the starting materials, and the energy corresponding to the difference is released. The sum of the atomic numbers is conserved ($92 = 56 + 36$), so the electrons in the atomic masses cancel and the atomic masses can be used directly. The starting materials contain one neutron and the products three.</p></div><div class="step" data-step="3"><p class="step-label">Step 3/7</p><p><strong>Formula solved.</strong> The reaction energy follows directly from the difference in masses:</p>
 <p>$$\begin{aligned}
 Q &= (m_\text{initial} - m_\text{final})\,c^2 \\
 m_\text{initial} &= m_\text{n} + m_\text{U} \\
@@ -683,9 +687,9 @@ m_\text{final} &= m_\text{Ba} + m_\text{Kr} + 3m_\text{n}
 
 <p>and that of the products <span class="mj-wide">$$
 \begin{aligned}
-m_\text{final} &= 140.9144033\,\text{u} \\
-&+ 91.9261731\,\text{u} \\
-+ 3 \cdot 1.0086649\,\text{u} &= 235.8665711\,\text{u}\text{.} 
+m_\text{final} &= 140.9144033\,\text{u} + 91.9261731\,\text{u} \\
+&+ 3 \cdot 1.0086649\,\text{u} \\
+&= 235.8665711\,\text{u}\text{.}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -709,12 +713,16 @@ Q &= (m_\text{initial} - m_\text{final})\,c^2 \\
 &= 0.1860220\,\text{u} \cdot c^2 \\
 &= 0.1860220 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
 &= 173.28\,\text{MeV}
-\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> About $173\,\text{MeV}$ is released in the reaction. Three significant figures are enough: the atomic masses are very precise, but there are many ways to split, and the energy of a single reaction is not needed more precisely.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> With rounded numbers the mass difference is about $0.19\,\text{u}$, and $0.19 \cdot 900\,\text{MeV} \approx 171\,\text{MeV}$. The result is also of the same order of magnitude as the estimate from the binding energy graph: the binding energy of $236$ nucleons rises by about $0.9\,\text{MeV}$ per nucleon, that is, by about $210\,\text{MeV}$.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the error</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend>A student calculates the energy of the reaction of the example, $$
+\end{aligned}$$</span></p></div><div class="step" data-step="6"><p class="step-label">Step 6/7</p><p><strong>Result.</strong> About $173\,\text{MeV}$ is released in the reaction. Three significant figures are enough: the atomic masses are very precise, but there are many ways to split, and the energy of a single reaction is not needed more precisely.</p></div><div class="step" data-step="7"><p class="step-label">Step 7/7</p><p><strong>Reasonableness.</strong> With rounded numbers the mass difference is about $0.19\,\text{u}$, and $0.19 \cdot 900\,\text{MeV} \approx 171\,\text{MeV}$. The result is also of the same order of magnitude as the estimate from the binding energy graph: the binding energy of $236$ nucleons rises by about $0.9\,\text{MeV}$ per nucleon, that is, by about $210\,\text{MeV}$.</p></div><p class="step-controls"><button type="button" class="next-step">Show the next step</button> <button type="button" class="all-steps">Show all</button></p></div></div></div><details class="opt" data-type="choice"><summary><span class="opt-tag">Optional</span> Example 2: Find the error</summary><div class="activity act-choice" id="virhe" data-type="choice"><fieldset class="choice list"><legend>A student calculates the energy of the reaction of the example, <span class="mj-wide">$$
+\begin{aligned}
+&{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}\text{.} 
+\end{aligned}
+$$</span><span class="mj-narrow">$$
 \begin{aligned}
 &{}^{1}_{0}\text{n} \\
 &+ {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}\text{.}
 \end{aligned}
-$$ The student writes</p>
+$$</span> The student writes</p>
 <p><span class="mj-wide">$$\begin{aligned} &\Delta m = 235.0439282\,\text{u} - 140.9144033\,\text{u} \\ &\quad - 91.9261731\,\text{u} - 3 \cdot 1.0086649\,\text{u} = -0.8226429\,\text{u}  \end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned} \Delta m &= 235.0439282\,\text{u} \\ &\quad - 140.9144033\,\text{u} \\ &\quad - 91.9261731\,\text{u} \\ &\quad - 3 \cdot 1.0086649\,\text{u} \\ &= -0.8226429\,\text{u} \end{aligned}$$</span></p>
 <p>and gets the result $$
 \begin{aligned}
@@ -724,8 +732,8 @@ Q &= -0.8226429 \cdot 931.5\,\text{MeV} \\
 $$ The student concludes that fission binds energy.</p>
 <p>Where is the error?</legend><ul class="choices"><li><label><input type="radio" name="virhe" value="0" data-correct="0"><span>The mass difference should have been multiplied by $c^2$, not by $931.5\,\text{MeV}$.</span></label><div class="feedback" data-for="0" hidden><p>Multiplying by $931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2$ is exactly the conversion of the mass difference into energy when the mass is in atomic mass units. The error is in the mass difference: the neutron that hits the nucleus is missing from the starting materials.</p></div></li><li><label><input type="radio" name="virhe" value="1" data-correct="0"><span>There are two neutrons among the products, not three.</span></label><div class="feedback" data-for="1" hidden><p>There are three neutrons: the mass number is conserved, $1 + 235 = 141 + 92 + 3$. The error is in the starting materials: the mass $1.0086649\,\text{u}$ of the neutron that hits the nucleus has been forgotten.</p></div></li><li><label><input type="radio" name="virhe" value="2" data-correct="0"><span>Atomic masses must not be used, because they include the electrons too.</span></label><div class="feedback" data-for="2" hidden><p>Atomic masses are fine, because the sum of the atomic numbers is conserved: $92 = 56 + 36$, so both sides have the same number of electrons and their masses cancel. The error is that the neutron that hits the nucleus is missing from the starting materials.</p></div></li><li><label><input type="radio" name="virhe" value="3" data-correct="1"><span>The mass of the starting materials lacks the neutron that hits the nucleus.</span></label><div class="feedback" data-for="3" hidden><p>Correct. The starting materials are the uranium nucleus <em>and</em> the neutron, so <span class="mj-wide">$$
 \begin{aligned}
-m_\text{initial} &= 235.0439282\,\text{u} \\
-&+ 1.0086649\,\text{u} = 236.0525931\,\text{u}\text{.} 
+m_\text{initial} &= 235.0439282\,\text{u} + 1.0086649\,\text{u} \\
+&= 236.0525931\,\text{u}\text{.}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -784,8 +792,8 @@ $$ The result is about a fifth of the energy of the fusion of deuterium and trit
 \end{aligned}
 $$ mass of the fuel <span class="mj-wide">$$
 \begin{aligned}
-5.0301511\,\text{u} &= 5.0301511 \\
-\cdot 1.66054 \cdot 10^{-27}\,\text{kg} &= 8.3528 \cdot 10^{-27}\,\text{kg} 
+5.0301511\,\text{u} &= 5.0301511 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 8.3528 \cdot 10^{-27}\,\text{kg}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -802,22 +810,30 @@ $$</span></p></div><div class="sol-step" data-step="substitution"><p class="sol-
 &{}^{1}_{0}\text{n} \\
 &+ {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}
 \end{aligned}
-$$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, xenon-140 $139.9216458\,\text{u}$, strontium-94 $93.9153556\,\text{u}$ and neutron $1.0086649\,\text{u}$. First deduce the number of neutrons $x$.</p><p class="task ask" id="fy8-11-L2-03-q">How much energy is released in the reaction? Give the answer in megaelectronvolts.</p><form class="check" data-answer="185" data-tol="0.02" data-step="1" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Answer in MeV" aria-describedby="fy8-11-L2-03-q" placeholder="?"><span class="unit">MeV</span><button type="submit">Check</button><output aria-live="polite"></output></form><details class="answer"><summary>Answer</summary><p>$185\,\text{MeV}$</p></details><details class="solution"><summary>Show the solution</summary><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>reaction $$
+$$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, xenon-140 $139.9216458\,\text{u}$, strontium-94 $93.9153556\,\text{u}$ and neutron $1.0086649\,\text{u}$. First deduce the number of neutrons $x$.</p><p class="task ask" id="fy8-11-L2-03-q">How much energy is released in the reaction? Give the answer in megaelectronvolts.</p><form class="check" data-answer="185" data-tol="0.02" data-step="1" novalidate><input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="Answer in MeV" aria-describedby="fy8-11-L2-03-q" placeholder="?"><span class="unit">MeV</span><button type="submit">Check</button><output aria-live="polite"></output></form><details class="answer"><summary>Answer</summary><p>$185\,\text{MeV}$</p></details><details class="solution"><summary>Show the solution</summary><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>reaction <span class="mj-wide">$$
+\begin{aligned}
+&{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}\text{;} 
+\end{aligned}
+$$</span><span class="mj-narrow">$$
 \begin{aligned}
 &{}^{1}_{0}\text{n} \\
 &+ {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}\text{;}
 \end{aligned}
-$$ atomic masses $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Xe} = 139.9216458\,\text{u}$, $m_\text{Sr} = 93.9153556\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$</p></div><div class="sol-step" data-step="asked"><p class="sol-label">Asked</p><p>the number of neutrons $x$ and the reaction energy $Q$ in megaelectronvolts</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>In a nuclear reaction the mass number is conserved, so the number of neutrons follows from the sums of the mass numbers. The atomic numbers already match ($92 = 54 + 38$), so the electrons in the atomic masses cancel. The energy corresponds to the difference in masses.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; $$
+$$</span> atomic masses $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Xe} = 139.9216458\,\text{u}$, $m_\text{Sr} = 93.9153556\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$</p></div><div class="sol-step" data-step="asked"><p class="sol-label">Asked</p><p>the number of neutrons $x$ and the reaction energy $Q$ in megaelectronvolts</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>In a nuclear reaction the mass number is conserved, so the number of neutrons follows from the sums of the mass numbers. The atomic numbers already match ($92 = 54 + 38$), so the electrons in the atomic masses cancel. The energy corresponds to the difference in masses.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; <span class="mj-wide">$$
+\begin{aligned}
+Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\,c^2 
+\end{aligned}
+$$</span><span class="mj-narrow">$$
 \begin{aligned}
 Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} \\
 &- 2m_\text{n})\,c^2
 \end{aligned}
-$$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>$1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
+$$</span></p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>$1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-Q &= (236.0525931\,\text{u} \\
-&- 235.8543312\,\text{u})\,c^2 = 0.1982619\,\text{u} \cdot c^2 \\
-&= 0.1982619 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \\
-&\cdot c^2 = 184.68\,\text{MeV} 
+Q &= (236.0525931\,\text{u} - 235.8543312\,\text{u})\,c^2 \\
+&= 0.1982619\,\text{u} \cdot c^2 \\
+&= 0.1982619 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 184.68\,\text{MeV}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -884,8 +900,8 @@ $$</p></div></div></details></li><li id="fy8-11-L2-07" class="core" data-written
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-m_\text{U} &= 235.0439282 \\
-&\cdot 1.66054 \cdot 10^{-27}\,\text{kg} = 3.9030 \cdot 10^{-25}\,\text{kg} 
+m_\text{U} &= 235.0439282 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3.9030 \cdot 10^{-25}\,\text{kg}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -897,8 +913,8 @@ $$</span></p></div><div class="sol-step" data-step="substitution"><p class="sol-
 
 <p>so <span class="mj-wide">$$
 \begin{aligned}
-m &= 1.1596 \cdot 10^{25} \\
-&\cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 4.5257\,\text{kg} 
+m &= 1.1596 \cdot 10^{25} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} \\
+&= 4.5257\,\text{kg}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -946,8 +962,8 @@ $$</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-m_\text{U} &= 235.0439282 \\
-&\cdot 1.66054 \cdot 10^{-27}\,\text{kg} = 3.9030 \cdot 10^{-25}\,\text{kg}\text{;} 
+m_\text{U} &= 235.0439282 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3.9030 \cdot 10^{-25}\,\text{kg}\text{;}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -961,8 +977,8 @@ $$</span> </p>
 
 <p>b) <span class="mj-wide">$$
 \begin{aligned}
-E &= 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \\
-&\cdot 31\,536\,000\,\text{s} = 4.457 \cdot 10^{16}\,\text{J}\text{,} 
+E &= 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\text{s} \\
+&= 4.457 \cdot 10^{16}\,\text{J}\text{,}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}

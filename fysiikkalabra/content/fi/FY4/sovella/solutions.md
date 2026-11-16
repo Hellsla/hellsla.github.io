@@ -86,7 +86,7 @@
 **Kysytty:** hiihtäjän voimakuvio laskun aikana, kun ilmanvastusta ei oteta huomioon
 **Periaate:** Valitaan kappaleeksi hiihtäjä varusteineen ja etsitään, mikä on vuorovaikutuksessa sen kanssa: Maa (paino) ja rinteen lumi (tukivoima ja kitka). Ilma jätetään tehtävän mukaan pois. Hiihtäjä ei työnnä sauvoilla, joten eteenpäin vievää voimaa ei ole: liike rinnettä alas ei vaadi omaa voimaansa.
 
-<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: hiihtäjä liukuu suorana seisten lumista rinnettä alas oikealle, ja sininen nopeusnuoli v osoittaa rinnettä alas. Oikealla hiihtäjän voimakuvio, hiihtäjä suorakulmiona rinteen suuntaisesti kallistettuna: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liikekitka alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan rinnettä kohti; G y on yhtä pitkä kuin tukivoima ja G x pidempi kuin kitka. Erillään oranssi kiihtyvyysnuoli a rinnettä alas. Akselit: x rinnettä alas ja y kohtisuoraan rinteestä ulos. Rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat." style="max-width:100%;font-size:24px">
+<svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: hiihtäjä liukuu suorana seisten lumista rinnettä alas oikealle, ja sininen nopeusnuoli v osoittaa rinnettä alas. Oikealla hiihtäjän voimakuvio, hiihtäjä suorakulmiona rinteen suuntaisesti kallistettuna: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liukukitka alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan rinnettä kohti; G y on yhtä pitkä kuin tukivoima ja G x pidempi kuin kitka. Erillään oranssi kiihtyvyysnuoli a rinnettä alas. Akselit: x rinnettä alas ja y kohtisuoraan rinteestä ulos. Rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat." style="max-width:100%;font-size:24px">
   <foreignObject x="67.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
   <path d="M14,170 L286.5,269 L286.5,380 L14,380 Z" fill="#f8fbfd" stroke="#9fb8c8" stroke-width="2" stroke-linejoin="round"/>
   <path d="M61.5,185 L185.5,230.5 L197.5,227 L185.5,225 L63.5,180.5 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
@@ -156,13 +156,13 @@
 **Mallivastaus:** Hiihtäjä piirretään rinteen suuntaiseksi suorakulmioksi.
 - Paino $\overline{G}$ lähtee keskipisteestä suoraan alas, ei kohtisuoraan rinnettä vastaan.
 - Tukivoima $\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulospäin. Se on yhtä suuri kuin painon rinnettä vastaan kohtisuora komponentti, joten se on hieman painoa pienempi.
-- Liikekitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
+- Liukukitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
 
 Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka. Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska se ei ole voima. Mallikuvan katkoviivanuolet $G_x$ ja $G_y$ ovat painon komponentit rinteen suuntaan ja sitä vastaan kohtisuoraan, eivät uusia voimia: ne korvaavat yhdessä painon ja auttavat c-kohdan liikeyhtälöissä. Omaan voimakuvioon niitä ei tarvitse piirtää. Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
 
 ### c)
 **Annettu:** rinteen kaltevuuskulma $\alpha = 4{,}0^\circ$, $g = 9{,}81\,\text{m/s}^2$ ja a-kohdan kuvaaja; massa $m = 72\,\text{kg}$
-**Kysytty:** liikekitkakertoimet $\mu_\text{A}$ ja $\mu_\text{B}$
+**Kysytty:** liukukitkakertoimet $\mu_\text{A}$ ja $\mu_\text{B}$
 **Periaate:** Kuvaajat ovat suoria, joten kiihtyvyys on vakio ja se on suoran kulmakerroin. Newtonin toisen lain mukaan kiihtyvyyden aiheuttaa voimien summa, joten kiihtyvyydestä päätellään kitkavoima ja siitä kitkakerroin. Rinteessä akselit kannattaa valita rinteen suuntaisesti, koska liike on rinteen suuntaista.
 **Voimakuvio:** b-kohdan kuvio: $x$-akseli rinnettä alas ja $y$-akseli kohtisuoraan rinteestä ulos. Painon komponentit ovat $G_x = mg\sin\alpha$ rinnettä alas ja $G_y = mg\cos\alpha$ rinnettä kohti. Tukivoima on $y$-akselin suuntaan ja kitka $x$-akselia vastaan.
 ```voimakuvio
@@ -184,7 +184,7 @@ komponentit G
 ### d)
 **Kysytty:** kuinka luotettava johtopäätös "voide A liukuu paremmin" on
 **Periaate:** Johtopäätös on luotettava, jos voiteiden ero on selvästi suurempi kuin tulosten epävarmuus ja jos virhelähteet eivät voi kääntää eroa toisin päin.
-**Mallivastaus:** *Epävarmuus.* Pisteet ovat lähellä suoria, joten kulmakertoimen voi lukea noin $\pm 0{,}02\,\text{m/s}^2$:n tarkkuudella. Kitkakertoimessa se tarkoittaa $0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002$. Rinteen kulman epävarmuus, esimerkiksi $\pm 0{,}1^\circ$, muuttaa kumpaakin kerrointa noin $0{,}002$ samaan suuntaan, joten se ei muuta eroa. Voiteiden ero $0{,}045 - 0{,}030 = 0{,}015$ on monta kertaa suurempi.
+**Mallivastaus:** *Epävarmuus.* Pisteet ovat lähellä suoria, joten kulmakertoimen voi lukea noin $\pm 0{,}02\,\text{m/s}^2$:n tarkkuudella. Kitkakertoimessa se tarkoittaa $$\begin{aligned} &0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \\ &\approx 0{,}002 \end{aligned}$$. Rinteen kulman epävarmuus, esimerkiksi $\pm 0{,}1^\circ$, muuttaa kumpaakin kerrointa noin $0{,}002$ samaan suuntaan, joten se ei muuta eroa. Voiteiden ero $0{,}045 - 0{,}030 = 0{,}015$ on monta kertaa suurempi.
 
 *Ilmanvastus.* Ilmanvastus osoittaa rinnettä ylös kuten kitka, joten se pienentää kiihtyvyyttä. Kun se jätetään pois, kaikki hidastava vaikutus lasketaan kitkan ansioksi, ja kumpikin kitkakerroin saadaan todellista suuremmaksi. Ilmanvastus kasvaa nopeuden mukana, ja laskussa A hiihtäjä liikkuu nopeammin, joten voiteen A kerroin on yliarvioitu enemmän. Voiteen A todellinen etu on siis vähintään yhtä suuri kuin laskettu.
 
@@ -331,7 +331,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 ### a)
 **Annettu:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, liukumamatka $s = 4{,}2\,\text{m}$, kitkakerroin $\mu = 0{,}75$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** autojen yhteinen nopeus $v'$ heti törmäyksen jälkeen
-**Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä ja tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liikekitka on $F_\mu = \mu N = \mu mg$, ja se on ainoa vaakasuora voima. Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
+**Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä ja tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liukukitka on $F_\mu = \mu N = \mu mg$, ja se on ainoa vaakasuora voima. Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
 **Kaava:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, josta $v' = \sqrt{2\mu g s}$
 **Muunnokset:** Ei tarvita. Massat supistuvat, joten niitä ei tarvita tässä kohdassa.
 **Sijoitus:** $v' = \sqrt{2 \cdot 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}2\,\text{m}} = \sqrt{61{,}8}\,\text{m/s} = 7{,}86\,\text{m/s}$
@@ -487,7 +487,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $F_\text{ka} = \dfrac{68\,\text{kg} \cdot 7{,}86\,\text{m/s}}{0{,}12\,\text{s}} = 4455\,\text{N}$ ja $\dfrac{F_\text{ka}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6{,}7$
 **Vastaus:** $F_\text{ka} \approx 4{,}5\,\text{kN}$ eli noin $6{,}7$-kertainen kuljettajan painoon verrattuna. Kaksi merkitsevää numeroa kuten törmäyksen kestossa $0{,}12\,\text{s}$.
-**Järkevyys:** Kuljettajan keskimääräinen kiihtyvyys on $7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2$ eli lähes $7g$. Se on suuri mutta tyypillinen peräänajolle, ja voima jakautuu koko selkänojan alalle, joten vartalo kestää sen. Huippuvoima on keskimääräistä suurempi.
+**Järkevyys:** Kuljettajan keskimääräinen kiihtyvyys on $$\begin{aligned} &7{,}86\,\text{m/s} : 0{,}12\,\text{s} \\ &\approx 66\,\text{m/s}^2 \end{aligned}$$ eli lähes $7g$. Se on suuri mutta tyypillinen peräänajolle, ja voima jakautuu koko selkänojan alalle, joten vartalo kestää sen. Huippuvoima on keskimääräistä suurempi.
 
 ### d)
 **Kysytty:** miksi niskatuki ja joustava selkänoja vähentävät vammoja

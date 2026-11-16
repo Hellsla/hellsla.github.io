@@ -124,7 +124,7 @@ def kitka():
     f = Fig("fy46-kitka", 360, "Kuvaaja mittakaavassa: vaaka-akselilla laatikkoa vetävä vaakasuora voima F newtoneina nollasta 80:een, "
             "pystyakselilla lattian kitkavoima newtoneina nollasta 60:een. Laatikkoa painaa lattiaa vasten tukivoima 100 newtonia. "
             "Aluksi kitkavoima kasvaa yhtä suureksi kuin veto: suora nousee origosta pisteeseen, jossa veto ja kitka ovat 50 newtonia. "
-            "Se on lepokitkan suurin arvo, myy nolla kertaa N. Siinä laatikko lähtee liikkeelle, ja kitkavoima putoaa katkoviivaa pitkin "
+            "Se on lepokitkan suurin arvo eli lähtökitka, myy nolla kertaa N. Siinä laatikko lähtee liikkeelle, ja kitkavoima putoaa katkoviivaa pitkin "
             "35 newtoniin, myy kertaa N, ja pysyy siinä vedon kasvaessa.")
     ax = Axes(f, (92, 300), (496, 70), x=(0, 80), y=(0, 60), xticks=[20, 40, 60, 80], yticks=[10, 20, 30, 40, 50, 60],
               xlabel=r"F\ (\text{N})", ylabel=r"F_\mu\ (\text{N})")
@@ -133,7 +133,7 @@ def kitka():
     ax.line([(mu0 * N, mu * N), (80, mu * N)], COLD)
     ax.point(50, 50, HOT)
     f.tex(ax.X(3), ax.Y(30), r"\text{lepokitka}", "start", HOT)
-    f.tex(ax.X(55), ax.Y(42), r"\text{liikekitka}", "start", COLD)
+    f.tex(ax.X(55), ax.Y(42), r"\text{liukukitka}", "start", COLD)
     f.tex(ax.X(46), ax.Y(56), r"\mu_0 N", "end", HOT)
     f.tex(ax.X(68), ax.Y(29), r"\mu N", "middle", COLD)
     return f.svg()
@@ -211,7 +211,7 @@ def esimerkki():
     m, deg, mu = EX["m"], EX["deg"], EX["mu"]
     th = math.radians(deg); G = m * g; N = G * math.cos(th); Fmu = mu * N; a = g * (math.sin(th) - mu * math.cos(th))
     f = Fig("fy46-esimerkki", 420, "Laatikon voimakuvio, laatikko suorakulmiona kallistettuna 25 asteen rinteen suuntaisesti. Paino G "
-            "keskipisteestä suoraan alas. Tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin. Liikekitka alapinnan ylemmästä "
+            "keskipisteestä suoraan alas. Tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin. Liukukitka alapinnan ylemmästä "
             "kulmasta rinnettä ylös, koska laatikko liukuu alas. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja "
             "G y kohtisuoraan pintaa kohti. G x on pidempi kuin kitkavoima. Erillään ohut oranssi kiihtyvyysnuoli a rinnettä alas. "
             "Nurkassa akselit: x rinnettä alas ja y kohtisuoraan pinnasta ulos.")
@@ -296,7 +296,7 @@ def malli_veto():
     th = math.radians(deg); G = m * g; N = G * math.cos(th); Fmu = mu * N; T = G * math.sin(th) + Fmu
     f = Fig("fy46-malli-veto", 380, "Mallikuvio: laatikkoa vedetään köydellä ylös rinnettä tasaisella nopeudella, köysi rinteen suuntainen. "
             "Kuviossa on vain laatikko suorakulmiona kallistettuna rinteen suuntaisesti. Paino G keskipisteestä suoraan alas. Tukivoima N "
-            "alapinnasta kohtisuoraan pintaa vastaan ulospäin. Köyden jännitysvoima T ylemmän sivun keskeltä rinnettä ylös. Liikekitka "
+            "alapinnasta kohtisuoraan pintaa vastaan ulospäin. Köyden jännitysvoima T ylemmän sivun keskeltä rinnettä ylös. Liukukitka "
             "alapinnan alemmasta kulmasta rinnettä alas, koska laatikko liukuu ylös. Painon komponentit katkoviivoin. Erillään ohut "
             "sininen nopeusnuoli v rinnettä ylös. Nurkassa akselit: x rinnettä ylös ja y kohtisuoraan pinnasta ulos.")
     cx, cy, w, h = 280, 170, 110, 64

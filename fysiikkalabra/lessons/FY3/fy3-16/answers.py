@@ -1,6 +1,6 @@
 """Every answer in exercises.json for fy3-16, computed from the task data (python -I answers.py).
 Energy bookkeeping: Q = c m ΔT, Q = s m, Q = r m, P = U A ΔT, P = c (m/t) ΔT. Prints {id: number} as JSON on the last line."""
-import json
+import json, math
 
 c_vesi, c_jaa, c_kivi, c_neste = 4190, 2100, 800, 3500   # J/(kg·K): water, ice, sauna stones, glycol-water coolant (given in the tasks)
 s, r = 334e3, 2260e3                                      # J/kg: melting and vaporization of water
@@ -15,7 +15,7 @@ a["fy3-16-L1-05"] = c_neste * 0.50 * 8.0 / 1e3            # coolant: P = c (m/t)
 # Level 2: two steps, one conversion or one rearrangement
 UA2 = 2.0 * 0.50                                          # U A = 2,0 · 0,50 = 1,0 W/K; ΔT = 25 K
 P2 = UA2 * 25                                             # P = 25 W
-a["fy3-16-L2-01"] = P2 * 6.0 * 3600 / s                   # P t = s m -> m = 25 · 21 600 / 334 000 = 1,617 kg -> 1,6 kg
+a["fy3-16-L2-01"] = math.ceil(P2 * 6.0 * 3600 / s * 10) / 10   # P t = s m -> m = 25 · 21 600 / 334 000 = 1,617 kg; a minimum: rounded up -> 1,7 kg (oikoluku 2026-11-15, P7c)
 a["fy3-16-L2-02"] = (c_vesi * 0.25 * (100 - 20) + r * 0.25) / 1e3   # 83 800 + 565 000 = 648 800 J -> 650 kJ
 a["fy3-16-L2-03"] = 24e3 / (c_neste * 8.0)                # m/t = P / (c ΔT) = 24 000 / (3500 · 8,0) = 0,857 kg/s -> 0,86 kg/s
 a["fy3-16-L2-04"] = c_vesi * 0.33 * 22 / s * 1e3          # melted ice m = c m_j ΔT / s = 4190 · 0,33 · 22 / 334 000 = 0,0911 kg -> 91 g
@@ -29,7 +29,7 @@ UA3 = 1.5 * 0.50                                          # bag U A = 1,5 · 0,5
 E_wall = UA3 * 30 * 6.0 * 3600                            # wall energy in 6,0 h: 22,5 · 21 600 = 486 000 J
 E_drinks = c_vesi * 0.50 * 24                             # 0,50 kg drinks 24 -> 0 °C: 4190 · 0,50 · 24 = 50 280 J
 # freezer ice at -10 °C must warm to 0 °C and melt: (c_ice 10 + s) per kg = 21 000 + 334 000 = 355 000 J/kg
-a["fy3-16-L3-03"] = (E_wall + E_drinks) / (c_jaa * 10 + s)   # m = 536 280 / 355 000 = 1,511 kg -> 1,5 kg
+a["fy3-16-L3-03"] = math.ceil((E_wall + E_drinks) / (c_jaa * 10 + s) * 10) / 10   # m = 536 280 / 355 000 = 1,511 kg; "vähintään": rounded up -> 1,6 kg (oikoluku 2026-11-15, P7c)
 # Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
 a["fy3-16-L1-08"] = c_vesi * 1.5 * (100 - 20) / 2000      # kettle: P t = c m ΔT -> t = 4190 · 1,5 · 80 / 2000 W = 251,4 s -> 250 s
 Tk = [20, 112, 196, 275]                                  # data of L2-05: stone temperature at 0, 10, 20, 30 min (40 kg, 6,0 kW)

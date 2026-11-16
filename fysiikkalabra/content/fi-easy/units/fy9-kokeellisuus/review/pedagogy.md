@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5b158c0872d57a07
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8d9ddf4a4ea0b4a3); earlier findings kept unless named fixed.
+CONTENT-HASH: 3cbf8fb8c46c9eb8
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- A: teacher.md "käy läpi tunnistuskaavion seitsemän rivin ja kuvaajan vakiotermin" is ungrammatical; use "seitsemän riviä".
+- (none)
 
 ## Checked
-- teacher.md now counts seven rows, which matches the chart (fi PNG opened: seven rows); the earlier "kuuden kysymyksen kartan" is gone.
-- Header "mistä tunnistan menetelmän?" and the sign "malli origon kautta, suora ei" (b ≠ 0, aria-label "mikä viittaa systemaattiseen ...") are the fi wording; the condition is stated, not a rule of thumb.
+- sovella/solutions.md a Periaate: "Lähtökitka eli täysin kehittynyt lepokitka on μ0 N. Se riippuu siis pinnoista ja siitä, kuinka lujaa kenkä painaa lattiaa." The pronoun "Se" still points to the right quantity and the reasoning towards μ0 is intact.
+- No task added in fi-easy.

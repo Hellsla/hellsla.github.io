@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c38d31b78cf4dc01
-SCOPE: delta added-exercise from 3327555d5e0791a2 base 81db4a6fd727
+CONTENT-HASH: 83e11ade6985ea12
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- solutions.md:240 (L1-07) — the figure text says "lepokitka" while the principle line says "lähtökitka"; use "lähtökitka" in both for consistency with the renamed set.
 
 ## Checked
-- Round 2, delta: the round-1 fixes judged in their context.
-- L2-09 opening now says the points are example data from a pulled-block experiment; it no longer duplicates L2-03's wording (round-1 Polish 2 closed) and keeps the fit-a-line demand.
-- No new task, figure or level change; set mix and counts unchanged from the passed version.
-- Language and case endings in the changed text are correct.
+- Delta (liikekitka to liukukitka; lepokitkan suurin arvo to täysin kehittynyt lepokitka eli lähtökitka) matches the glossary and lesson. No "liikekitka" or "enimmäisarvo" remains in exercises.json or solutions.md.
+- MC L1 lepokitka task: stem, options and feedback are consistent with the new term. Distractor "aina yhtä suuri kuin lähtökitka" still targets the right misconception, and the feedback repairs it.
+- The muuttolaatikko comparison task (G_x - F_max) now says "lähtökitka"; the wording, the sign remark and the solution agree.
+- L1-07 now has answer 230 N, tolerance 0.05: the unrounded 220.7 N is still accepted, and the solution explains why an "at least" value rounds up, so it is pedagogically sound and not a trap.
+- The tyre-friction task caption lost "(esimerkkiaineisto)", but the task text still says the data are example data.
+- The L2 data tasks (graph fit through the origin, t-F graph) still demand reading the plot, and the changed terms do not alter the demand.
+- The diagram precedes the equations in the changed solutions, and the liukukitka direction is unchanged.
+- Case forms after number+unit in the changed lines are unchanged and correct.

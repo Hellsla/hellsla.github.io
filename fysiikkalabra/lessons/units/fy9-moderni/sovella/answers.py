@@ -98,4 +98,25 @@ out.update({f"{S}-s6-a-eta": round(100 * eta, 2), f"{S}-s6-a-n": rate, f"{S}-s6-
             f"{S}-s6-c-loss": P_loss, f"{S}-s6-d": round(coal / 1e3, -3), f"{S}-s6-d-Ee": Pe * year,
             f"{S}-s6-d-ratio": round(coal / m_U, 0)})
 
+# s7 (FY9-A3): the fusion shot of December 2022. Yle Uutiset 12.12.2022 (https://yle.fi/a/3-12684377, checked
+# 16.11.2026): 3,15 MJ released by fusion, 2,05 MJ of laser energy delivered to the fuel target. The laboratory's
+# figure for the electricity the lasers took from the grid for the shot: about 300 MJ.
+E_fus, E_las, E_grid = 3.15e6, 2.05e6, 300e6    # J
+gain = E_fus / E_las                            # the ratio of the two energies
+surplus = E_fus - E_las                         # J
+c_water, T1, T2 = 4190.0, 20.0, 100.0           # J/(kg K), deg C, deg C
+m_w = E_fus / (c_water * (T2 - T1))             # kg of water heated from 20 to 100 deg C
+share_grid = E_fus / E_grid                     # fusion energy / electricity taken from the grid
+eta_th = 1 / 3                                  # a thermal plant turns about a third into electricity
+E_el = eta_th * E_fus                           # J of electricity the fusion energy could give
+dm7 = E_fus / c ** 2                            # kg, the mass that corresponds to the released energy
+out.update({f"{S}-s7-b-ratio": round(gain, 4), f"{S}-s7-b-diff": round(surplus / 1e6, 3),
+            f"{S}-s7-b-percent": round(100 * (gain - 1), 1), f"{S}-s7-c": round(m_w, 3), f"{S}-s7-c-dT": T2 - T1,
+            f"{S}-s7-c-cdT": c_water * (T2 - T1), f"{S}-s7-c-pots": round(m_w / 3.0, 2),
+            f"{S}-s7-c-kWh": round(E_fus / 3.6e6, 3),
+            f"{S}-s7-d-share": round(100 * share_grid, 2), f"{S}-s7-d-times": round(E_grid / E_fus, 1),
+            f"{S}-s7-d-Eel": round(E_el / 1e6, 3), f"{S}-s7-d-share-el": round(100 * E_el / E_grid, 2),
+            f"{S}-s7-d-share-laser": round(100 * E_las / E_grid, 2), f"{S}-s7-b-inverse": round(E_las / E_fus, 3),
+            f"{S}-s7-e-dm": dm7, f"{S}-s7-e-dm-ng": round(dm7 * 1e12, 2)})
+
 print(json.dumps(out))

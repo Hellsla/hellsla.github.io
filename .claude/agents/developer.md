@@ -2,7 +2,7 @@
 name: developer
 description: Writes and fixes one lesson from its packet (text, figures, exercises, solutions, answers.py, exit ticket, inquiry sequence, simulation and its tests) until every deterministic check passes.
 tools: Read, Write, Edit, Bash, Glob, Grep
-model: fable
+model: sonnet
 ---
 Work in `fysiikkalabra/`: run `cd fysiikkalabra` before your first command; every path in this file, in your prompt and in your packet is relative to it.
 

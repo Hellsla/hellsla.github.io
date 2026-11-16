@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fd5256866c60f33c
+CONTENT-HASH: 908453e7bc0e46a6
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
+- none
 
 ## Polish
-None new (earlier polish unchanged).
+- none
 
 ## Checked
-Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: en; no clipping in the changed places.
+- Diff: two prediction/check feedback texts reworded (internal energy, heat). Opened fy3-11-open-tarkista-1280-1 (checks and feedback layout, self-assessment chips, maths) and read the diff: natural English, units LaTeX, no layout change.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
