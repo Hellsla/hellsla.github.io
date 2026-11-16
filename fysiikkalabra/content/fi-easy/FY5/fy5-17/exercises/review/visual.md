@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 7c46ff42f3980942
-SCOPE: delta added-exercise from 12247bcf797a5c2e base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 5a4d90ef9afdba0b
 
 ## Blocking
-(none)
+- [Major] fy5-17-L2-10 part c) — "Kumpikin aalto kulkee $100$ kilometrin matkan": the quantity's unit is outside the maths (plain unit in new text, teacher 2026-11-01) — write "$100\,\text{km}$:n matkan".
 
 ## Polish
-- [Minor] fy5-17/a-scan figure — it is invented illustrative data and the y-axis has unlabelled ticks; a small "esimerkkiaineisto / illustrative data" note in the caption or figure would make the status visible to the student (the description already says it).
-- [Minor] fy5-17-L1-09 — the Vihje/Hint tells exactly where in MAFY to look; fine for a lookup task, no change needed.
+- [Minor] fy5-17-L2-10 solution — one paragraph of 130 words (limit about 120); split.
+- [Minor] fy5-17-L2-10 — the situation paragraph is very long (about 140 words); split the table description from the magnitude explanation.
 
 ## Checked
-- Opened at 1280 px: open-exercises part 9 (L1-09 solution), L2 parts 11 and 12 (L2-09 with the a-scan figure, answer box and complete solution).
-- A-scan: axis title t (µs), ticks every 20 µs with gridlines every 5 µs, echoes A, B, C and the transmitted pulse labelled; C peak sits at 90 µs on the grid, so the reading is possible without the figure giving the answer; nothing clipped.
-- Maths: units upright, µs and ms in LaTeX, chains aligned at =, ±4 % in LaTeX; Finnish/English wording of the tasks clear.
+- Rendered preview/fi-easy/fy5-17.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
+- New task fy5-17-L2-10 rendered; the plain-unit slip found by grep.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

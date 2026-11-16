@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb6ba559dd03245
-SCOPE: delta added-exercise from a81094fffe435f50 base 81db4a6fd727
+CONTENT-HASH: aef0621091c93428
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-9/kuvaaja-k — the time tick labels (0.2 ... 1.0) sit on the t axis through the middle of the plot, so the curve runs through or touches them (0.6, 0.8) — move the labels below the lowest curve line or give them a paper-coloured halo. The figure is unchanged since it was passed; low priority.
+- [Minor] fy5-9-L2-05/-06/-07 Vastaus — several changed Vastaus blocks carry 70+ words; fine, optionally split the b) and c) parts as in L3.
 
 ## Checked
-- Delta: fy5-9-L1-09 (1280-9), fy5-9-L1-10 (1280-9, -10) and fy5-9-L2-09 (L2-1280-12) in fi-easy: Finnish text, decimal comma in graph ticks and solutions, Järkevyys blocks.
+- Rendered preview/fi-easy/fy5-9.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
+- Changed Sijoitus/Vastaus (pendulum a–c) and the revised L2-06 answer (20 N/m, two figures) read in the packet.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
