@@ -163,7 +163,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Muunnokset:** Ei tarvita: ampeeri kertaa tunti kertaa voltti on wattitunti.
 **Sijoitus:** Välien keskijännitteet ovat $4{,}035\,\text{V}$, $3{,}86\,\text{V}$, $3{,}755\,\text{V}$, $3{,}645\,\text{V}$ ja $3{,}35\,\text{V}$. Niiden summa on $18{,}645\,\text{V}$. Siis $W = 0{,}50\,\text{A} \cdot 1{,}0\,\text{h} \cdot 18{,}645\,\text{V} = 9{,}3225\,\text{Wh}$
 **Vastaus:** $9{,}3\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$ ja mittausvälissä $1{,}0\,\text{h}$.
-**Järkevyys:** Purkaus kesti viisi tuntia, joten varaus on $0{,}50\,\text{A} \cdot 5{,}0\,\text{h} = 2{,}5\,\text{Ah}$. Energian ja varauksen osamäärä $$9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}$$ on keskijännite. Se on mitattujen jännitteiden $3{,}12\,\text{V}$ ja $4{,}15\,\text{V}$ välissä. Se on lähellä litiumkennon nimellisjännitettä $3{,}7\,\text{V}$.
+**Järkevyys:** Purkaus kesti viisi tuntia, joten varaus on $0{,}50\,\text{A} \cdot 5{,}0\,\text{h} = 2{,}5\,\text{Ah}$. Energian ja varauksen osamäärä $$\begin{aligned} &9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \\ &\approx 3{,}73\,\text{V} \end{aligned}$$ on keskijännite. Se on mitattujen jännitteiden $3{,}12\,\text{V}$ ja $4{,}15\,\text{V}$ välissä. Se on lähellä litiumkennon nimellisjännitettä $3{,}7\,\text{V}$.
 
 ## fy6-9-L2-06
 **Annettu:** latausvirta $I = 2{,}0\,\text{A}$, aika $t = 1{,}5\,\text{h}$, laturin jännite $U_\text{lat} = 4{,}2\,\text{V}$, akun lähdejännite $E = 3{,}7\,\text{V}$

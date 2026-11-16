@@ -107,7 +107,7 @@
 **Muunnokset:** Ei tarvita: $\text{V} : \text{A} = \Omega$.
 **Sijoitus:** $I = \dfrac{9{,}2\,\text{W}}{230\,\text{V}} = 0{,}040\,\text{A}$, $U_1 = \dfrac{230\,\text{V}}{20} = 11{,}5\,\text{V}$ ja $R = \dfrac{11{,}5\,\text{V}}{0{,}040\,\text{A}} = 287{,}5\,\Omega$
 **Vastaus:** $2{,}9 \cdot 10^{2}\,\Omega$ eli noin $290\,\Omega$. Vastaus on annettu kahdella merkitsevällä numerolla kuten tehossa $9{,}2\,\text{W}$.
-**Järkevyys:** Yhden lampun teho on $9{,}2\,\text{W} : 20 = 0{,}46\,\text{W}$, ja $$(11{,}5\,\text{V})^2 : 287{,}5\,\Omega = 0{,}46\,\text{W}$$ antaa saman. Koko sarjan resistanssi $20 \cdot 287{,}5\,\Omega = 5750\,\Omega$ antaa virran $230\,\text{V} : 5750\,\Omega = 0{,}040\,\text{A}$.
+**Järkevyys:** Yhden lampun teho on $9{,}2\,\text{W} : 20 = 0{,}46\,\text{W}$, ja $$\begin{aligned} &(11{,}5\,\text{V})^2 : 287{,}5\,\Omega \\ &= 0{,}46\,\text{W} \end{aligned}$$ antaa saman. Koko sarjan resistanssi $20 \cdot 287{,}5\,\Omega = 5750\,\Omega$ antaa virran $230\,\text{V} : 5750\,\Omega = 0{,}040\,\text{A}$.
 
 ## fy6-6-L3-03
 **Annettu:** rinnankytkentä, jännite $U = 12\,\text{V}$, $R_1 = 6{,}0\,\Omega$, kokonaisteho $P = 36\,\text{W}$
@@ -193,7 +193,7 @@
 **Muunnokset:** $P_\text{n} = 2{,}0\,\text{kW} = 2000\,\text{W}$
 **Sijoitus:** $R_\text{L} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26{,}45\,\Omega$. Ohut johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 2{,}4\,\Omega} = 7{,}97\,\text{A}$ ja $P_\text{o} = 2{,}4\,\Omega \cdot (7{,}97\,\text{A})^2 = 152{,}5\,\text{W}$. Paksu johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 0{,}71\,\Omega} = 8{,}47\,\text{A}$ ja $P_\text{p} = 0{,}71\,\Omega \cdot (8{,}47\,\text{A})^2 = 50{,}9\,\text{W}$
 **Vastaus:** $152{,}5\,\text{W}$, pyöristettynä $1{,}5 \cdot 10^{2}\,\text{W}$ eli noin $150\,\text{W}$ ohuessa johdossa ja $51\,\text{W}$ paksussa. Vastaus on annettu kahdella merkitsevällä numerolla kuten resistanssissa $2{,}4\,\Omega$. Virta on molemmilla johdoilla lähes sama, $7{,}97\,\text{A}$ ja $8{,}47\,\text{A}$. Siksi johdon teho $RI^2$ riippuu lähinnä johdon resistanssista. Ohuen johdon resistanssi on noin $3{,}4$-kertainen ja teho noin kolminkertainen. Rullalla oleva ohut johto jäähtyy huonosti, joten se lämpenee. Kuormitettu johtokela kannattaa kelata auki. Johdon sallittua virtaa ei saa ylittää. Paksussa johdossa muuttuu vähemmän energiaa, joten se pysyy viileämpänä.
-**Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $$26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}$$. Yhdessä johdon kanssa teho on $$1681\,\text{W} + 152{,}5\,\text{W} = 1834\,\text{W}$$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
+**Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $$\begin{aligned} &26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 \\ &= 1681\,\text{W} \end{aligned}$$. Yhdessä johdon kanssa teho on $$\begin{aligned} &1681\,\text{W} + 152{,}5\,\text{W} \\ &= 1834\,\text{W} \end{aligned}$$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
 
 ## fy6-6-L2-08
 **Kysytty:** miten vastuksen $R_1$ teho muuttuu, kun sen kanssa kytketään sarjaan samanlainen vastus $R_2$ ja lähteen jännite pysyy samana.

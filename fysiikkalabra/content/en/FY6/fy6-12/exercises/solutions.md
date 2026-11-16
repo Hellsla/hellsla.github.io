@@ -16,7 +16,7 @@
 **Conversions:** $q = 3.0\,\text{nC} = 3.0 \cdot 10^{-9}\,\text{C}$ and finally $1\,\text{J} = 10^{6}\,\mu\text{J}$.
 **Substitution:** $E_\text{p} = 3.0 \cdot 10^{-9}\,\text{C} \cdot 120\,\text{V} = 3.6 \cdot 10^{-7}\,\text{J} = 0.36\,\mu\text{J}$
 **Answer:** $0.36\,\mu\text{J}$, two significant figures like the charge $3.0\,\text{nC}$.
-**Reasonableness:** The estimate $$3 \cdot 10^{-9}\,\text{C} \cdot 100\,\text{V} = 3 \cdot 10^{-7}\,\text{J}$$ is close to the result. A double charge would give a double potential energy at the same point, as can be seen from the formula.
+**Reasonableness:** The estimate $$\begin{aligned} &3 \cdot 10^{-9}\,\text{C} \cdot 100\,\text{V} \\ &= 3 \cdot 10^{-7}\,\text{J} \end{aligned}$$ is close to the result. A double charge would give a double potential energy at the same point, as can be seen from the formula.
 
 ## fy6-12-L1-03
 **Given:** kinetic energy $E_\text{k} = 5.0\,\text{keV}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
@@ -148,7 +148,7 @@
 **Reading the table:** The points rise steadily and are close to a line, but not exactly on it. The slope of the fitted line through the origin is $k = \dfrac{\sum x V}{\sum x^2}$.
 **Formula:** $E = k$ and $U = Ed$
 **Conversions:** $1\,\text{V/cm} = 1\,\text{V} : 0.01\,\text{m} = 100\,\text{V/m}$ and $d = 6.0\,\text{cm} = 0.060\,\text{m}$.
-**Substitution:** The sum $$\begin{aligned} \sum x^2 &= 1.0^2 + 2.0^2 + 3.0^2 + 4.0^2 \\ &+ 5.0^2 \\ &= 55.0\,\text{cm}^2 \end{aligned}$$ and the sum $$\begin{aligned} \sum xV &= 5.2 + 19.4 + 46.2 \\ &+ 78.4 \\ &+ 126.5 \\ &= 275.7\,\text{V}\cdot\text{cm} \end{aligned}$$. The slope is $$\begin{aligned} k &= 275.7 : 55.0 \\ &= 5.013\,\text{V/cm} \end{aligned}$$, so $E = 5.013\,\text{V/cm} = 501\,\text{V/m}$ and $U = Ed = 501\,\text{V/m} \cdot 0.060\,\text{m} = 30.1\,\text{V}$
+**Substitution:** The sum $$\begin{aligned} \sum x^2 &= 1.0^2 + 2.0^2 + 3.0^2 \\ &+ 4.0^2 + 5.0^2 \\ &= 55.0\,\text{cm}^2 \end{aligned}$$ and the sum $$\begin{aligned} \sum xV &= 5.2 + 19.4 + 46.2 \\ &+ 78.4 + 126.5 \\ &= 275.7\,\text{V}\cdot\text{cm} \end{aligned}$$. The slope is $$\begin{aligned} k &= 275.7 : 55.0 \\ &= 5.013\,\text{V/cm} \end{aligned}$$, so $E = 5.013\,\text{V/cm} = 501\,\text{V/m}$ and $U = Ed = 501\,\text{V/m} \cdot 0.060\,\text{m} = 30.1\,\text{V}$
 **Answer:** a) $E \approx 5.0 \cdot 10^{2}\,\text{V/m}$; b) $U \approx 30\,\text{V}$ ($30.1\,\text{V}$ in the box), two significant figures like the plate separation $6.0\,\text{cm}$.
 **Reasonableness:** At $5.0\,\text{cm}$ the fitted line gives $25.1\,\text{V}$, which is close to the measured $25.3\,\text{V}$, and at $6.0\,\text{cm}$ it gives $30.1\,\text{V}$. The potential of the positive plate is equal to the voltage $U$, because the zero point is at the negative plate.
 

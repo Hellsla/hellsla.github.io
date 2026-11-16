@@ -105,7 +105,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
 **Vastaus:** Vastukseen siirtyy teho $P \approx 2{,}0\,\text{W}$, ja noin $13\,\%$ pariston sähkötehosta siirtyy lämpönä pariston sisällä. Tulos on annettu kahden merkitsevän numeron tarkkuudella kuten lähtötiedot.
-**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $$E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}$$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
+**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $$\begin{aligned} &E - R_\text{s} I \\ &= 4{,}60\,\text{V} - 0{,}60\,\text{V} \end{aligned}$$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
 
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus

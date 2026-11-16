@@ -107,7 +107,7 @@
 **Conversions:** Not needed: $\text{V} : \text{A} = \Omega$.
 **Substitution:** $I = \dfrac{9.2\,\text{W}}{230\,\text{V}} = 0.040\,\text{A}$, $U_1 = \dfrac{230\,\text{V}}{20} = 11.5\,\text{V}$ and $R = \dfrac{11.5\,\text{V}}{0.040\,\text{A}} = 287.5\,\Omega$
 **Answer:** $2.9 \cdot 10^{2}\,\Omega$, that is about $290\,\Omega$, two significant figures like the power $9.2\,\text{W}$.
-**Reasonableness:** The power of one bulb is $9.2\,\text{W} : 20 = 0.46\,\text{W}$, and $$(11.5\,\text{V})^2 : 287.5\,\Omega = 0.46\,\text{W}$$ gives the same. The resistance of the whole string, $20 \cdot 287.5\,\Omega = 5750\,\Omega$, gives the current $230\,\text{V} : 5750\,\Omega = 0.040\,\text{A}$.
+**Reasonableness:** The power of one bulb is $9.2\,\text{W} : 20 = 0.46\,\text{W}$, and $$\begin{aligned} &(11.5\,\text{V})^2 : 287.5\,\Omega \\ &= 0.46\,\text{W} \end{aligned}$$ gives the same. The resistance of the whole string, $20 \cdot 287.5\,\Omega = 5750\,\Omega$, gives the current $230\,\text{V} : 5750\,\Omega = 0.040\,\text{A}$.
 
 ## fy6-6-L3-03
 **Given:** parallel connection, voltage $U = 12\,\text{V}$, $R_1 = 6.0\,\Omega$, total power $P = 36\,\text{W}$
@@ -193,7 +193,7 @@
 **Conversions:** $P_\text{n} = 2.0\,\text{kW} = 2000\,\text{W}$
 **Substitution:** $R_\text{h} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26.45\,\Omega$. Thin cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 2.4\,\Omega} = 7.97\,\text{A}$ and $P_\text{thin} = 2.4\,\Omega \cdot (7.97\,\text{A})^2 = 152.5\,\text{W}$. Thick cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 0.71\,\Omega} = 8.47\,\text{A}$ and $P_\text{thick} = 0.71\,\Omega \cdot (8.47\,\text{A})^2 = 50.9\,\text{W}$
 **Answer:** $152.5\,\text{W}$, rounded $1.5 \cdot 10^{2}\,\text{W}$ or about $150\,\text{W}$ in the thin cord and $51\,\text{W}$ in the thick one, two significant figures like the resistance $2.4\,\Omega$. The current is almost the same with both cords, $7.97\,\text{A}$ and $8.47\,\text{A}$, so the power $RI^2$ of the cord depends mainly on its resistance: the resistance of the thin cord is about $3.4$ times as large and the power about three times as large. A thin cord on a reel cools poorly, so it warms up. A loaded cord reel should be unwound, and the permitted current of the cord must not be exceeded. Less energy is transformed in the thick cord, so it stays cooler.
-**Reasonableness:** With the thin cord the power of the heater is $$26.45\,\Omega \cdot (7.97\,\text{A})^2 = 1681\,\text{W}$$, and together with the cord $$1681\,\text{W} + 152.5\,\text{W} = 1834\,\text{W}$$. This is the same as the power of the source $230\,\text{V} \cdot 7.97\,\text{A} = 1834\,\text{W}$. Because of the thin cord the heater thus gets about $1681\,\text{W}$ instead of the rated power $2000\,\text{W}$.
+**Reasonableness:** With the thin cord the power of the heater is $$\begin{aligned} &26.45\,\Omega \cdot (7.97\,\text{A})^2 \\ &= 1681\,\text{W} \end{aligned}$$, and together with the cord $$\begin{aligned} &1681\,\text{W} + 152.5\,\text{W} \\ &= 1834\,\text{W} \end{aligned}$$. This is the same as the power of the source $230\,\text{V} \cdot 7.97\,\text{A} = 1834\,\text{W}$. Because of the thin cord the heater thus gets about $1681\,\text{W}$ instead of the rated power $2000\,\text{W}$.
 
 ## fy6-6-L2-08
 **Find:** how the power of the resistor $R_1$ changes when an identical resistor $R_2$ is connected in series with it and the voltage of the source stays the same.

@@ -162,7 +162,7 @@ Only the unit of $UQ$ is a unit of energy, and it is also the formula for the en
 **Conversions:** Not needed: an ampere times an hour times a volt is a watt-hour.
 **Substitution:** The mean voltages of the intervals are $4.035\,\text{V}$, $3.86\,\text{V}$, $3.755\,\text{V}$, $3.645\,\text{V}$ and $3.35\,\text{V}$, and their sum is $18.645\,\text{V}$. So $W = 0.50\,\text{A} \cdot 1.0\,\text{h} \cdot 18.645\,\text{V} = 9.3225\,\text{Wh}$
 **Answer:** $9.3\,\text{Wh}$, two significant figures like the current $0.50\,\text{A}$ and the measurement interval $1.0\,\text{h}$.
-**Reasonableness:** The discharge lasted five hours, so the charge is $0.50\,\text{A} \cdot 5.0\,\text{h} = 2.5\,\text{Ah}$. The quotient of the energy and the charge, $$9.3225\,\text{Wh} : 2.5\,\text{Ah} \approx 3.73\,\text{V}$$, is the mean voltage, and it lies between the measured voltages $3.12\,\text{V}$ and $4.15\,\text{V}$, close to the nominal voltage $3.7\,\text{V}$ of a lithium cell.
+**Reasonableness:** The discharge lasted five hours, so the charge is $0.50\,\text{A} \cdot 5.0\,\text{h} = 2.5\,\text{Ah}$. The quotient of the energy and the charge, $$\begin{aligned} &9.3225\,\text{Wh} : 2.5\,\text{Ah} \\ &\approx 3.73\,\text{V} \end{aligned}$$, is the mean voltage, and it lies between the measured voltages $3.12\,\text{V}$ and $4.15\,\text{V}$, close to the nominal voltage $3.7\,\text{V}$ of a lithium cell.
 
 ## fy6-9-L2-06
 **Given:** charging current $I = 2.0\,\text{A}$, time $t = 1.5\,\text{h}$, voltage of the charger $U_\text{ch} = 4.2\,\text{V}$, source voltage of the battery $E = 3.7\,\text{V}$

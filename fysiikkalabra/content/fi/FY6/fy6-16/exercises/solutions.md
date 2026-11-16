@@ -95,9 +95,9 @@
 **Periaate:** Akkuun menee kummallakin tavalla sama energia, mutta verkosta otetaan akkuun menevä energia jaettuna hyötysuhteella. Säästö syntyy siitä, että latausasemalla verkosta otetaan vähemmän, ja se maksetaan samalla hinnalla.
 **Kaava:** $W_\text{verkko} = \dfrac{W_\text{akku}}{\eta}$ ja $K = a W_\text{verkko}$, joten $\Delta K = a \left(\dfrac{W_\text{akku}}{\eta_1} - \dfrac{W_\text{akku}}{\eta_2}\right)$
 **Muunnokset:** $\eta_1 = 0{,}82$, $\eta_2 = 0{,}92$ ja $a = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
-**Sijoitus:** $$\begin{aligned} \Delta K &= 0{,}15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot (3658{,}5\,\text{kWh} \\ &- 3260{,}9\,\text{kWh}) \\ &= 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} \\ &= 59{,}7\,\text{€} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} &\Delta K \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot (3658{,}5\,\text{kWh} - 3260{,}9\,\text{kWh}) \\ &= 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} \\ &= 59{,}7\,\text{€} \end{aligned}$$
 **Vastaus:** $60\,\text{€}$, kaksi merkitsevää numeroa kuten hyötysuhteissa $82\,\%$ ja $92\,\%$.
-**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä, joten verkosta otettu energia eroaa noin $10\text{–}12\,\%$ vuoden kulutuksesta ($3260\,\text{kWh}$ tai $3660\,\text{kWh}$), eli noin $400\,\text{kWh}$. $$400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} = 60\,\text{€}$$. Säästö on pieni verrattuna latausaseman hintaan; tärkeämpi syy latausasemaan on turvallisuus.
+**Järkevyys:** Hyötysuhteiden ero on kymmenen prosenttiyksikköä, joten verkosta otettu energia eroaa noin $10\text{–}12\,\%$ vuoden kulutuksesta ($3260\,\text{kWh}$ tai $3660\,\text{kWh}$), eli noin $400\,\text{kWh}$. $$\begin{aligned} &400\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \\ &= 60\,\text{€} \end{aligned}$$. Säästö on pieni verrattuna latausaseman hintaan; tärkeämpi syy latausasemaan on turvallisuus.
 
 ## fy6-16-L3-02
 **Annettu:** virta kasvaa $I_1 = 10\,\text{A}$:sta $I_2 = 16\,\text{A}$:iin, kaapelin resistanssi $R$ pysyy samana

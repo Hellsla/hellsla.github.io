@@ -95,9 +95,9 @@
 **Principle:** The same energy goes into the battery either way, but the energy taken from the grid is the energy going into the battery divided by the efficiency. The saving comes from less being taken from the grid with the charging station, and it is paid at the same price.
 **Formula:** $W_\text{grid} = \dfrac{W_\text{battery}}{\eta}$ and $K = a W_\text{grid}$, so $\Delta K = a \left(\dfrac{W_\text{battery}}{\eta_1} - \dfrac{W_\text{battery}}{\eta_2}\right)$
 **Conversions:** $\eta_1 = 0.82$, $\eta_2 = 0.92$ and $a = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
-**Substitution:** $$\begin{aligned} \Delta K &= 0.15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0.82} - \dfrac{3000\,\text{kWh}}{0.92}\right) \\ &= 0.15\,\text{€/kWh} \\ &\cdot (3658.5\,\text{kWh} \\ &- 3260.9\,\text{kWh}) \\ &= 0.15\,\text{€/kWh} \cdot 397.7\,\text{kWh} \\ &= 59.7\,\text{€} \end{aligned}$$
+**Substitution:** $$\begin{aligned} &\Delta K \\ &= 0.15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0.82} - \dfrac{3000\,\text{kWh}}{0.92}\right) \\ &= 0.15\,\text{€/kWh} \\ &\cdot (3658.5\,\text{kWh} - 3260.9\,\text{kWh}) \\ &= 0.15\,\text{€/kWh} \cdot 397.7\,\text{kWh} \\ &= 59.7\,\text{€} \end{aligned}$$
 **Answer:** $60\,\text{€}$, two significant figures like the efficiencies $82\,\%$ and $92\,\%$.
-**Reasonableness:** The difference in efficiency is ten percentage points, so the energy taken from the grid differs by about $10\text{–}12\,\%$ of the annual consumption ($3260\,\text{kWh}$ or $3660\,\text{kWh}$), that is, by about $400\,\text{kWh}$. $$400\,\text{kWh} \cdot 0.15\,\text{€/kWh} = 60\,\text{€}$$. The saving is small compared with the price of a charging station; a more important reason for a charging station is safety.
+**Reasonableness:** The difference in efficiency is ten percentage points, so the energy taken from the grid differs by about $10\text{–}12\,\%$ of the annual consumption ($3260\,\text{kWh}$ or $3660\,\text{kWh}$), that is, by about $400\,\text{kWh}$. $$\begin{aligned} &400\,\text{kWh} \cdot 0.15\,\text{€/kWh} \\ &= 60\,\text{€} \end{aligned}$$. The saving is small compared with the price of a charging station; a more important reason for a charging station is safety.
 
 ## fy6-16-L3-02
 **Given:** the current grows from $I_1 = 10\,\text{A}$ to $I_2 = 16\,\text{A}$, the resistance $R$ of the cable stays the same

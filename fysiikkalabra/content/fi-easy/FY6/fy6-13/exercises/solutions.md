@@ -195,7 +195,7 @@ $W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
 **Sijoitus:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0{,}0634\,\text{J} = 63{,}4\,\text{mJ}$
 **Vastaus:** $63\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa. Rajoittava tieto on jännite $24\,\text{V}$. Kapasitanssissa $220\,\mu\text{F}$ on kolme.
 **Mallivastaus virheestä:** Oppilaan laskema $QU = 127\,\text{mJ}$ on lähteen antama energia. Kondensaattoriin varastoituu siitä vain puolet. Latauksen aikana kondensaattorin jännite on aluksi nolla. Se kasvaa vasta vähitellen arvoon $24\,\text{V}$. Varaus ei siis siirry koko ajan täyden jännitteen yli. Toinen puoli, noin $63\,\text{mJ}$, muuttuu johtimien ja vastusten sisäenergiaksi. Se siirtyy lämpönä ympäristöön.
-**Järkevyys:** Varastoitunut energia on $$\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} = 63{,}4\,\text{mJ}$$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
+**Järkevyys:** Varastoitunut energia on $$\begin{aligned} &\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} \\ &= 63{,}4\,\text{mJ} \end{aligned}$$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Annettu:** latausvirta $I = 15\,\text{mA}$, taulukon pisteet $(t;\ U)$: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ ja $(12\,\text{s};\ 1201\,\text{V})$, iskun jännite $1{,}8\,\text{kV}$, purkautumisaika $5{,}0\,\text{ms}$

@@ -195,7 +195,7 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0.0634\,\text{J} = 63.4\,\text{mJ}$
 **Answer:** $63\,\text{mJ}$, two significant figures, because the limiting datum is the voltage $24\,\text{V}$; the capacitance $220\,\mu\text{F}$ has three.
 **Model answer on the error:** The student’s $QU = 127\,\text{mJ}$ is the energy given by the source, but only half of it is stored in the capacitor. During charging the voltage of the capacitor is at first zero and grows only gradually to $24\,\text{V}$, so the charge does not move across the full voltage all the time. The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and resistors and passes to the surroundings as heat.
-**Reasonableness:** The stored energy is $$\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} = 63.4\,\text{mJ}$$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
+**Reasonableness:** The stored energy is $$\begin{aligned} &\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} \\ &= 63.4\,\text{mJ} \end{aligned}$$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Given:** charging current $I = 15\,\text{mA}$, the points $(t;\ U)$ of the table: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ and $(12\,\text{s};\ 1201\,\text{V})$, voltage of the shock $1.8\,\text{kV}$, discharge time $5.0\,\text{ms}$

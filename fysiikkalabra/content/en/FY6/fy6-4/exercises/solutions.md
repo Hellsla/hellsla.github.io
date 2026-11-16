@@ -26,7 +26,7 @@
 **Conversions:** Not needed, all the currents are in amperes.
 **Substitution:** $I = 0.20\,\text{A} + 0.45\,\text{A} + 0.85\,\text{A} = 1.50\,\text{A}$
 **Answer:** $1.50\,\text{A}$, to the nearest hundredth of an ampere like all the terms.
-**Reasonableness:** The current leaving the battery is greater than any of the branch currents, because each lamp is a route of its own. With rounded numbers $$0.2\,\text{A} + 0.5\,\text{A} + 0.8\,\text{A} = 1.5\,\text{A}$$.
+**Reasonableness:** The current leaving the battery is greater than any of the branch currents, because each lamp is a route of its own. With rounded numbers $$\begin{aligned} &0.2\,\text{A} + 0.5\,\text{A} + 0.8\,\text{A} \\ &= 1.5\,\text{A} \end{aligned}$$.
 
 ## fy6-4-L1-04
 **Given:** lamps in series, battery voltage $U = 4.5\,\text{V}$, voltage of the first lamp $U_1 = 1.8\,\text{V}$

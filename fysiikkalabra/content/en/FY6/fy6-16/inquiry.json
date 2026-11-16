@@ -87,7 +87,7 @@
       "choices": [
         {
           "text": "Nothing, because each device is connected to its own circuit with its own fuse.",
-          "feedback": "The circuit fuses each protect the cable of their own circuit, but the currents of all the circuits pass through the same main fuses. According to the table, phase $\\text{L}_1$ carries $$13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A} \\approx 37.7\\,\\text{A}$$, which is well over $25\\,\\text{A}$."
+          "feedback": "The circuit fuses each protect the cable of their own circuit, but the currents of all the circuits pass through the same main fuses. According to the table, phase $\\text{L}_1$ carries $$\\begin{aligned} &13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A} \\\\ &\\approx 37.7\\,\\text{A} \\end{aligned}$$, which is well over $25\\,\\text{A}$."
         },
         {
           "text": "The current exceeds $25\\,\\text{A}$ in every phase, so without load management a main fuse may blow.",
@@ -219,7 +219,7 @@
       "prompt": "A student calculates how much energy is taken from the grid when $38.4\\,\\text{kWh}$ has to be stored in the battery and the efficiency of charging is $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{grid} &= \\eta W_\\text{battery} \\\\ &= 0.90 \\cdot 38.4\\,\\text{kWh} \\\\ &\\approx 34.6\\,\\text{kWh} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "You have to divide by the efficiency: $$38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$$.",
+          "text": "You have to divide by the efficiency: $$\\begin{aligned} &38.4\\,\\text{kWh} : 0.90 \\\\ &\\approx 42.7\\,\\text{kWh} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. The efficiency is $\\eta = W_\\text{battery} : W_\\text{grid}$, so $W_\\text{grid} = W_\\text{battery} : \\eta$. The error could have been noticed from the result being smaller than the energy going into the battery, although because of the losses more has to be taken from the grid."
         },

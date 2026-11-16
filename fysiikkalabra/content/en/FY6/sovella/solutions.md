@@ -105,7 +105,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $I = \dfrac{4.60\,\text{V}}{8.0\,\Omega + 1.2\,\Omega} = \dfrac{4.60\,\text{V}}{9.2\,\Omega} = 0.50\,\text{A}$, $P = 8.0\,\Omega \cdot (0.50\,\text{A})^2 = 2.0\,\text{W}$ and $P_\text{int} = 1.2\,\Omega \cdot (0.50\,\text{A})^2 = 0.30\,\text{W}$. The fraction is $\dfrac{0.30\,\text{W}}{2.0\,\text{W} + 0.30\,\text{W}} = 0.13$.
 **Answer:** The power transferred to the resistor is $P \approx 2.0\,\text{W}$, and about $13\,\%$ of the electric power of the battery is transferred as heat inside the battery. The result is given to two significant figures like the initial data.
-**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $$E - R_\text{int} I = 4.60\,\text{V} - 0.60\,\text{V}$$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$. Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
+**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $$\begin{aligned} &E - R_\text{int} I \\ &= 4.60\,\text{V} - 0.60\,\text{V} \end{aligned}$$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$. Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
 
 ### d)
 **Find:** the effect of discharging and warming on the result for the source voltage and the internal resistance, the uncertainty of $R_\text{int}$ caused by the scatter, and an improvement of the measurement

@@ -455,7 +455,7 @@ The energy of the battery of the example car is $64\,\text{kWh}$. The battery is
 
 <!-- vaihe -->
 
-**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $$38.4\,\text{kWh} : 0.90 \approx 42.7\,\text{kWh}$$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
+**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $$\begin{aligned} &38.4\,\text{kWh} : 0.90 \\ &\approx 42.7\,\text{kWh} \end{aligned}$$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
 
 <!-- vaihe -->
 

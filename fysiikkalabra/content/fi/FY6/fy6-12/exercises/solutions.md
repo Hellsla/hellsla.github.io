@@ -16,7 +16,7 @@
 **Muunnokset:** $q = 3{,}0\,\text{nC} = 3{,}0 \cdot 10^{-9}\,\text{C}$ ja lopuksi $1\,\text{J} = 10^{6}\,\mu\text{J}$.
 **Sijoitus:** $E_\text{p} = 3{,}0 \cdot 10^{-9}\,\text{C} \cdot 120\,\text{V} = 3{,}6 \cdot 10^{-7}\,\text{J} = 0{,}36\,\mu\text{J}$
 **Vastaus:** $0{,}36\,\mu\text{J}$, kaksi merkitsevää numeroa kuten varauksessa $3{,}0\,\text{nC}$.
-**Järkevyys:** Arvio $$3 \cdot 10^{-9}\,\text{C} \cdot 100\,\text{V} = 3 \cdot 10^{-7}\,\text{J}$$ on lähellä tulosta. Kaksinkertainen varaus antaisi samassa kohdassa kaksinkertaisen potentiaalienergian, kuten kaavasta näkyy.
+**Järkevyys:** Arvio $$\begin{aligned} &3 \cdot 10^{-9}\,\text{C} \cdot 100\,\text{V} \\ &= 3 \cdot 10^{-7}\,\text{J} \end{aligned}$$ on lähellä tulosta. Kaksinkertainen varaus antaisi samassa kohdassa kaksinkertaisen potentiaalienergian, kuten kaavasta näkyy.
 
 ## fy6-12-L1-03
 **Annettu:** liike-energia $E_\text{k} = 5{,}0\,\text{keV}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -148,7 +148,7 @@
 **Taulukon tulkinta:** Pisteet nousevat tasaisesti ja ovat suoran lähellä, mutta eivät tarkasti sen päällä. Origon kautta kulkevan sovitussuoran kulmakerroin on $k = \dfrac{\sum x V}{\sum x^2}$.
 **Kaava:** $E = k$ ja $U = Ed$
 **Muunnokset:** $1\,\text{V/cm} = 1\,\text{V} : 0{,}01\,\text{m} = 100\,\text{V/m}$ ja $d = 6{,}0\,\text{cm} = 0{,}060\,\text{m}$.
-**Sijoitus:** Summa $$\begin{aligned} \sum x^2 &= 1{,}0^2 + 2{,}0^2 + 3{,}0^2 + 4{,}0^2 \\ &+ 5{,}0^2 \\ &= 55{,}0\,\text{cm}^2 \end{aligned}$$ ja summa $$\begin{aligned} \sum xV &= 5{,}2 + 19{,}4 + 46{,}2 \\ &+ 78{,}4 \\ &+ 126{,}5 \\ &= 275{,}7\,\text{V}\cdot\text{cm} \end{aligned}$$. Kulmakerroin on $$\begin{aligned} k &= 275{,}7 : 55{,}0 \\ &= 5{,}013\,\text{V/cm} \end{aligned}$$, joten $E = 5{,}013\,\text{V/cm} = 501\,\text{V/m}$ ja $U = Ed = 501\,\text{V/m} \cdot 0{,}060\,\text{m} = 30{,}1\,\text{V}$
+**Sijoitus:** Summa $$\begin{aligned} \sum x^2 &= 1{,}0^2 + 2{,}0^2 + 3{,}0^2 \\ &+ 4{,}0^2 + 5{,}0^2 \\ &= 55{,}0\,\text{cm}^2 \end{aligned}$$ ja summa $$\begin{aligned} \sum xV &= 5{,}2 + 19{,}4 + 46{,}2 \\ &+ 78{,}4 + 126{,}5 \\ &= 275{,}7\,\text{V}\cdot\text{cm} \end{aligned}$$. Kulmakerroin on $$\begin{aligned} k &= 275{,}7 : 55{,}0 \\ &= 5{,}013\,\text{V/cm} \end{aligned}$$, joten $E = 5{,}013\,\text{V/cm} = 501\,\text{V/m}$ ja $U = Ed = 501\,\text{V/m} \cdot 0{,}060\,\text{m} = 30{,}1\,\text{V}$
 **Vastaus:** a) $E \approx 5{,}0 \cdot 10^{2}\,\text{V/m}$; b) $U \approx 30\,\text{V}$ (laatikkoon $30{,}1\,\text{V}$), kaksi merkitsevää numeroa kuten levyjen välissä $6{,}0\,\text{cm}$.
 **Järkevyys:** Sovitussuora antaa kohdassa $5{,}0\,\text{cm}$ arvon $25{,}1\,\text{V}$, mikä on lähellä mitattua $25{,}3\,\text{V}$, ja kohdassa $6{,}0\,\text{cm}$ arvon $30{,}1\,\text{V}$. Positiivisen levyn potentiaali on sama kuin jännite $U$, koska nollakohta on negatiivisella levyllä.
 

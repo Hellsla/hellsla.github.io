@@ -303,9 +303,9 @@
       "prompt": "The source voltage of a car battery is $12.4\\,\\text{V}$ and its internal resistance is $0.050\\,\\Omega$. The battery is charged with a charger whose voltage is $14.0\\,\\text{V}$, and the resistance of the charger and wires is $0.35\\,\\Omega$. A student calculates the charging current like this:\n\n$$I = \\frac{14.0\\,\\text{V}}{0.35\\,\\Omega + 0.050\\,\\Omega} = 35\\,\\text{A}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The current is driven by the difference between the voltage of the charger and the source voltage of the battery: $$\\begin{aligned} I &= (14.0\\,\\text{V} - 12.4\\,\\text{V}) : 0.40\\,\\Omega \\\\ &= 4.0\\,\\text{A} \\end{aligned}$$.",
+          "text": "The current is driven by the difference between the voltage of the charger and the source voltage of the battery: $$\\begin{aligned} I &= (14.0\\,\\text{V} - 12.4\\,\\text{V}) \\\\ &: 0.40\\,\\Omega \\\\ &= 4.0\\,\\text{A} \\end{aligned}$$.",
           "correct": true,
-          "feedback": "Correct. The current passes through the battery from the positive terminal to the negative terminal, so the potential also drops by the source voltage in the battery. The voltage law gives $$14.0\\,\\text{V} - 0.40\\,\\Omega \\cdot I - 12.4\\,\\text{V} = 0$$. The student's current of $35\\,\\text{A}$ would flow only if the source voltage of the battery were zero."
+          "feedback": "Correct. The current passes through the battery from the positive terminal to the negative terminal, so the potential also drops by the source voltage in the battery. The voltage law gives $$\\begin{aligned} &14.0\\,\\text{V} - 0.40\\,\\Omega \\cdot I - 12.4\\,\\text{V} \\\\ &= 0 \\end{aligned}$$. The student's current of $35\\,\\text{A}$ would flow only if the source voltage of the battery were zero."
         },
         {
           "text": "The resistances must be combined with the formula for a parallel connection, because the battery and the charger are in parallel with each other.",

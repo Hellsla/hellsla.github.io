@@ -46,7 +46,7 @@
 **Muunnokset:** $\lvert q_1 \rvert = 2{,}0\,\mu\text{C} = 2{,}0 \cdot 10^{-6}\,\text{C}$ ja $\lvert q_2 \rvert = 4{,}0 \cdot 10^{-6}\,\text{C}$; etäisyys on jo metreinä.
 **Sijoitus:** $$\begin{aligned} F &= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{2{,}0 \cdot 10^{-6}\,\text{C} \cdot 4{,}0 \cdot 10^{-6}\,\text{C}}{(0{,}50\,\text{m})^2} \\ &= 0{,}2876\,\text{N} \end{aligned}$$
 **Vastaus:** $0{,}29\,\text{N}$, kaksi merkitsevää numeroa kuten varauksissa ja etäisyydessä; varaukset vetävät toisiaan puoleensa.
-**Järkevyys:** Arvio: $$10^{10} \cdot 8 \cdot 10^{-12} : 0{,}25 \approx 0{,}3\,\text{N}$$. Mikrocoulombit ovat tuhat kertaa suurempia kuin nanocoulombit, joten voima on paljon suurempi kuin kokeiden millinewtonit, vaikka etäisyys on pidempi.
+**Järkevyys:** Arvio: $$\begin{aligned} &10^{10} \cdot 8 \cdot 10^{-12} : 0{,}25 \\ &\approx 0{,}3\,\text{N} \end{aligned}$$. Mikrocoulombit ovat tuhat kertaa suurempia kuin nanocoulombit, joten voima on paljon suurempi kuin kokeiden millinewtonit, vaikka etäisyys on pidempi.
 
 ## fy6-10-L2-01
 **Annettu:** varaukset $q_1 = q_2 = +30\,\text{nC}$, voima $F = 2{,}0\,\text{mN}$; $$k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
@@ -147,7 +147,7 @@
 **Muunnokset:** Voimat newtoneina: $F = 13{,}6\,\text{mN} = 13{,}6 \cdot 10^{-3}\,\text{N}$ jne., ja etäisyydet metreinä: $r = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ jne.; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $q = \sqrt{\dfrac{5{,}50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2}{8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = \sqrt{6{,}12 \cdot 10^{-16}\,\text{C}^2} = 2{,}47 \cdot 10^{-8}\,\text{C} = 24{,}7\,\text{nC}$
 **Vastaus:** $25\,\text{nC}$, kaksi merkitsevää numeroa kuten mittauksissa; kuvaajasta luettu arvo voi poiketa hieman hajonnan vuoksi.
-**Järkevyys:** Tulo $F r^2$ on vakio, jos $F \propto r^{-2}$. Rivien arvot ovat välillä $$5{,}4 \cdot 10^{-6}\ldots 5{,}8 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$$, eli ne poikkeavat toisistaan noin $7\,\%$, mikä sopii mittaushajontaan. Jokaisesta rivistä erikseen laskettu varaus on välillä $24{,}6\ldots 25{,}5\,\text{nC}$.
+**Järkevyys:** Tulo $F r^2$ on vakio, jos $F \propto r^{-2}$. Rivien arvot ovat välillä $$\begin{aligned} &5{,}4 \cdot 10^{-6}\ldots 5{,}8 \cdot 10^{-6}\,\text{N} \\ &\cdot \text{m}^2 \end{aligned}$$, eli ne poikkeavat toisistaan noin $7\,\%$, mikä sopii mittaushajontaan. Jokaisesta rivistä erikseen laskettu varaus on välillä $24{,}6\ldots 25{,}5\,\text{nC}$.
 
 ## fy6-10-L2-06
 **Annettu:** parin A varaukset $20\,\text{nC}$ ja $20\,\text{nC}$; parin B varaukset $20\,\text{nC}$ ja $q_\text{B}$; voimat taulukossa viidellä etäisyydellä; $$k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
@@ -237,4 +237,4 @@ Varausten tulo kaksinkertaistuu, mikä kaksinkertaistaa voiman, ja etäisyyden n
 **Muunnokset:** Etäisyydet ovat samassa yksikössä ja vain niiden suhde tarvitaan, joten muunnoksia ei tarvita; varaus saadaan nanocoulombeina.
 **Sijoitus:** $q_\text{B} = 20\,\text{nC} \cdot \left(\dfrac{6{,}0\,\text{cm}}{3{,}0\,\text{cm}}\right)^2 = 20\,\text{nC} \cdot 4{,}0 = 80\,\text{nC}$
 **Vastaus:** $80\,\text{nC}$, kaksi merkitsevää numeroa kuten parin A varauksessa. Etäisyys on kaksinkertainen, joten varausten tulon täytyy olla nelinkertainen, jotta voima pysyy samana.
-**Järkevyys:** Tarkistus Coulombin laista: $$\begin{aligned} F_\text{A} &= 8{,}988 \cdot 10^{9} \cdot (20 \cdot 10^{-9})^2 \\ &: 0{,}030^2\,\text{N} \\ &= 4{,}0\,\text{mN} \end{aligned}$$ ja $$\begin{aligned} F_\text{B} &= 8{,}988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \\ &\cdot 80 \cdot 10^{-9} : 0{,}060^2\,\text{N} \\ &= 4{,}0\,\text{mN} \end{aligned}$$, siis samat luvut kuin kuvaajasta. Parin B käyrä on parin A käyrän yläpuolella, kuten pitääkin, koska $q_\text{B} > 20\,\text{nC}$.
+**Järkevyys:** Tarkistus Coulombin laista: $$\begin{aligned} F_\text{A} &= 8{,}988 \cdot 10^{9} \\ &\cdot (20 \cdot 10^{-9})^2 : 0{,}030^2\,\text{N} \\ &= 4{,}0\,\text{mN} \end{aligned}$$ ja $$\begin{aligned} F_\text{B} &= 8{,}988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \\ &\cdot 80 \cdot 10^{-9} : 0{,}060^2\,\text{N} \\ &= 4{,}0\,\text{mN} \end{aligned}$$, siis samat luvut kuin kuvaajasta. Parin B käyrä on parin A käyrän yläpuolella, kuten pitääkin, koska $q_\text{B} > 20\,\text{nC}$.

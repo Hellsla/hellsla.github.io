@@ -87,7 +87,7 @@
       "choices": [
         {
           "text": "Ei mitään, koska jokainen laite on kytketty omaan ryhmäänsä ja omalle sulakkeelleen.",
-          "feedback": "Ryhmäsulakkeet suojaavat kukin oman ryhmänsä johtoa. Kaikkien ryhmien virrat kulkevat kuitenkin samojen pääsulakkeiden kautta. Taulukon mukaan vaiheessa $\\text{L}_1$ kulkee $$13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A} \\approx 37{,}7\\,\\text{A}$$. Se on paljon yli $25\\,\\text{A}$."
+          "feedback": "Ryhmäsulakkeet suojaavat kukin oman ryhmänsä johtoa. Kaikkien ryhmien virrat kulkevat kuitenkin samojen pääsulakkeiden kautta. Taulukon mukaan vaiheessa $\\text{L}_1$ kulkee $$\\begin{aligned} &13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A} \\\\ &\\approx 37{,}7\\,\\text{A} \\end{aligned}$$. Se on paljon yli $25\\,\\text{A}$."
         },
         {
           "text": "Virta ylittää $25\\,\\text{A}$ jokaisessa vaiheessa, joten pääsulake voi palaa, jos kuormanhallintaa ei ole.",
@@ -219,7 +219,7 @@
       "prompt": "Opiskelija laskee, kuinka paljon energiaa verkosta otetaan. Akkuun pitää varastoida $38{,}4\\,\\text{kWh}$, ja latauksen hyötysuhde on $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{verkko} &= \\eta W_\\text{akku} \\\\ &= 0{,}90 \\cdot 38{,}4\\,\\text{kWh} \\\\ &\\approx 34{,}6\\,\\text{kWh} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Hyötysuhteella pitää jakaa: $$38{,}4\\,\\text{kWh} : 0{,}90 \\approx 42{,}7\\,\\text{kWh}$$.",
+          "text": "Hyötysuhteella pitää jakaa: $$\\begin{aligned} &38{,}4\\,\\text{kWh} : 0{,}90 \\\\ &\\approx 42{,}7\\,\\text{kWh} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Hyötysuhde on $\\eta = W_\\text{akku} : W_\\text{verkko}$, joten $W_\\text{verkko} = W_\\text{akku} : \\eta$. Virheen olisi voinut huomata siitä, että tulos oli pienempi kuin akkuun menevä energia. Häviöiden vuoksi verkosta pitää kuitenkin ottaa enemmän."
         },

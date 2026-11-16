@@ -132,7 +132,7 @@
 **Conversions:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7.5\,\text{h}$; $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
 **Substitution:** $E = 0.90\,\text{kW} \cdot 7.5\,\text{h} = 6.75\,\text{kWh}$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6.75\,\text{kWh} = 1.215\,\text{€}$
 **Answer:** $1.2\,\text{€}$, two significant figures like the power $0.90\,\text{kW}$ and the price $18\,\text{c/kWh}$.
-**Reasonableness:** In a day the coffee maker uses $$0.90\,\text{kW} \cdot 0.25\,\text{h} = 0.225\,\text{kWh}$$, which costs about $4\,\text{c}$. In thirty days this is about $30 \cdot 4\,\text{c} = 120\,\text{c} \approx 1.2\,\text{€}$.
+**Reasonableness:** In a day the coffee maker uses $$\begin{aligned} &0.90\,\text{kW} \cdot 0.25\,\text{h} \\ &= 0.225\,\text{kWh} \end{aligned}$$, which costs about $4\,\text{c}$. In thirty days this is about $30 \cdot 4\,\text{c} = 120\,\text{c} \approx 1.2\,\text{€}$.
 
 ## fy6-7-L1-08
 **Given:** energy $E = 1.0\,\text{kWh}$, power $P = 40\,\text{W}$
@@ -171,7 +171,7 @@ c) Lighting is a suitable target for saving, because it is the second largest it
 b) $335\,\text{W}$, three significant figures like the difference of the energies $56.3\,\text{kWh}$.
 
 c) $9.0\,\text{€}$.
-**Reasonableness:** Check: $$0.335\,\text{kW} \cdot 168\,\text{h} = 56.3\,\text{kWh}$$. The average power corresponds to about three $100\,\text{W}$ lamps burning all the time, which suits a home where heating is not electric. A price of about $9\,\text{€}$ a week is about $$8\,\text{kWh} \cdot 0.16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$$.
+**Reasonableness:** Check: $$\begin{aligned} &0.335\,\text{kW} \cdot 168\,\text{h} \\ &= 56.3\,\text{kWh} \end{aligned}$$. The average power corresponds to about three $100\,\text{W}$ lamps burning all the time, which suits a home where heating is not electric. A price of about $9\,\text{€}$ a week is about $$\begin{aligned} &8\,\text{kWh} \cdot 0.16\,\text{€/kWh} \cdot 7 \\ &\approx 9\,\text{€} \end{aligned}$$.
 
 ## fy6-7-L2-07
 **Given:** energy meter readings $0.00$–$1.64\,\text{kWh}$ as a function of time $0$–$48\,\text{h}$, $365$ days

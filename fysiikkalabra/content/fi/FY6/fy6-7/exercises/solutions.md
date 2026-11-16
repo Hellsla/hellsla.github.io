@@ -132,7 +132,7 @@
 **Muunnokset:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7{,}5\,\text{h}$; $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
 **Sijoitus:** $E = 0{,}90\,\text{kW} \cdot 7{,}5\,\text{h} = 6{,}75\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6{,}75\,\text{kWh} = 1{,}215\,\text{€}$
 **Vastaus:** $1{,}2\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $0{,}90\,\text{kW}$ ja hinnassa $18\,\text{snt/kWh}$.
-**Järkevyys:** Päivässä keitin käyttää $$0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}225\,\text{kWh}$$, mikä maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa tämä on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
+**Järkevyys:** Päivässä keitin käyttää $$\begin{aligned} &0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}225\,\text{kWh} \end{aligned}$$, mikä maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa tämä on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
 
 ## fy6-7-L1-08
 **Annettu:** energia $E = 1{,}0\,\text{kWh}$, teho $P = 40\,\text{W}$
@@ -171,7 +171,7 @@ c) Säästökohteeksi sopii valaistus, koska se on toiseksi suurin erä ja sen t
 b) $335\,\text{W}$, kolme merkitsevää numeroa kuten energian erotuksessa $56{,}3\,\text{kWh}$.
 
 c) $9{,}0\,\text{€}$.
-**Järkevyys:** Tarkistus: $$0{,}335\,\text{kW} \cdot 168\,\text{h} = 56{,}3\,\text{kWh}$$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua, mikä sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $$8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$$.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}335\,\text{kW} \cdot 168\,\text{h} \\ &= 56{,}3\,\text{kWh} \end{aligned}$$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua, mikä sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $$\begin{aligned} &8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \\ &\approx 9\,\text{€} \end{aligned}$$.
 
 ## fy6-7-L2-07
 **Annettu:** energiamittarin lukemat $0{,}00$–$1{,}64\,\text{kWh}$ ajan $0$–$48\,\text{h}$ funktiona, $365$ vuorokautta

@@ -46,7 +46,7 @@
 **Conversions:** $\lvert q_1 \rvert = 2.0\,\mu\text{C} = 2.0 \cdot 10^{-6}\,\text{C}$ and $\lvert q_2 \rvert = 4.0 \cdot 10^{-6}\,\text{C}$; the distance is already in metres.
 **Substitution:** $$\begin{aligned} F &= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{2.0 \cdot 10^{-6}\,\text{C} \cdot 4.0 \cdot 10^{-6}\,\text{C}}{(0.50\,\text{m})^2} \\ &= 0.2876\,\text{N} \end{aligned}$$
 **Answer:** $0.29\,\text{N}$, two significant figures like the charges and the distance; the charges attract each other.
-**Reasonableness:** Estimate: $$10^{10} \cdot 8 \cdot 10^{-12} : 0.25 \approx 0.3\,\text{N}$$. Microcoulombs are a thousand times larger than nanocoulombs, so the force is much larger than the millinewtons of the experiments, although the distance is longer.
+**Reasonableness:** Estimate: $$\begin{aligned} &10^{10} \cdot 8 \cdot 10^{-12} : 0.25 \\ &\approx 0.3\,\text{N} \end{aligned}$$. Microcoulombs are a thousand times larger than nanocoulombs, so the force is much larger than the millinewtons of the experiments, although the distance is longer.
 
 ## fy6-10-L2-01
 **Given:** charges $q_1 = q_2 = +30\,\text{nC}$, force $F = 2.0\,\text{mN}$; $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
@@ -147,7 +147,7 @@
 **Conversions:** Forces in newtons: $F = 13.6\,\text{mN} = 13.6 \cdot 10^{-3}\,\text{N}$ etc., and distances in metres: $r = 2.0\,\text{cm} = 0.020\,\text{m}$ etc.; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $q = \sqrt{\dfrac{5.50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2}{8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = \sqrt{6.12 \cdot 10^{-16}\,\text{C}^2} = 2.47 \cdot 10^{-8}\,\text{C} = 24.7\,\text{nC}$
 **Answer:** $25\,\text{nC}$, two significant figures like the measurements; a value read from the graph can differ slightly because of the scatter.
-**Reasonableness:** The product $F r^2$ is constant if $F \propto r^{-2}$. The values of the rows are between $$5.4 \cdot 10^{-6}\ldots 5.8 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$$, that is, they differ from each other by about $7\,\%$, which fits the measurement scatter. The charge calculated separately from each row is between $24.6\ldots 25.5\,\text{nC}$.
+**Reasonableness:** The product $F r^2$ is constant if $F \propto r^{-2}$. The values of the rows are between $$\begin{aligned} &5.4 \cdot 10^{-6}\ldots 5.8 \cdot 10^{-6}\,\text{N} \\ &\cdot \text{m}^2 \end{aligned}$$, that is, they differ from each other by about $7\,\%$, which fits the measurement scatter. The charge calculated separately from each row is between $24.6\ldots 25.5\,\text{nC}$.
 
 ## fy6-10-L2-06
 **Given:** the charges of pair A $20\,\text{nC}$ and $20\,\text{nC}$; the charges of pair B $20\,\text{nC}$ and $q_\text{B}$; the forces in the table at five distances; $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
@@ -237,4 +237,4 @@ The product of the charges doubles, which doubles the force, and the square of t
 **Conversions:** The distances are in the same unit and only their ratio is needed, so no conversions are needed; the charge comes out in nanocoulombs.
 **Substitution:** $q_\text{B} = 20\,\text{nC} \cdot \left(\dfrac{6.0\,\text{cm}}{3.0\,\text{cm}}\right)^2 = 20\,\text{nC} \cdot 4.0 = 80\,\text{nC}$
 **Answer:** $80\,\text{nC}$, two significant figures like the charge of pair A. The distance is twice as large, so the product of the charges must be four times as large for the force to stay the same.
-**Reasonableness:** Check with Coulomb's law: $$\begin{aligned} F_\text{A} &= 8.988 \cdot 10^{9} \cdot (20 \cdot 10^{-9})^2 \\ &: 0.030^2\,\text{N} \\ &= 4.0\,\text{mN} \end{aligned}$$ and $$\begin{aligned} F_\text{B} &= 8.988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \\ &\cdot 80 \cdot 10^{-9} : 0.060^2\,\text{N} \\ &= 4.0\,\text{mN} \end{aligned}$$, the same numbers as in the graph. The curve of pair B is above the curve of pair A, as it should be, because $q_\text{B} > 20\,\text{nC}$.
+**Reasonableness:** Check with Coulomb's law: $$\begin{aligned} F_\text{A} &= 8.988 \cdot 10^{9} \\ &\cdot (20 \cdot 10^{-9})^2 : 0.030^2\,\text{N} \\ &= 4.0\,\text{mN} \end{aligned}$$ and $$\begin{aligned} F_\text{B} &= 8.988 \cdot 10^{9} \cdot 20 \cdot 10^{-9} \\ &\cdot 80 \cdot 10^{-9} : 0.060^2\,\text{N} \\ &= 4.0\,\text{mN} \end{aligned}$$, the same numbers as in the graph. The curve of pair B is above the curve of pair A, as it should be, because $q_\text{B} > 20\,\text{nC}$.

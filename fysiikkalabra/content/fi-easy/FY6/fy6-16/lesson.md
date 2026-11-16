@@ -457,7 +457,7 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 
 <!-- vaihe -->
 
-**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $$38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
+**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $$\begin{aligned} &38{,}4\,\text{kWh} : 0{,}90 \\ &\approx 42{,}7\,\text{kWh} \end{aligned}$$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
 
 <!-- vaihe -->
 
