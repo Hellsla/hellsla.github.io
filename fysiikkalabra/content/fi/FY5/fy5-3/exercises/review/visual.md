@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f379aaf2fc31bb49
-SCOPE: delta added-exercise from 32e78172ab301d83 base 81db4a6fd727
+CONTENT-HASH: 0ac25a5213e086eb
+SCOPE: delta wording in fy5-3-L3-01 Periaate and L1-10 Järkevyys, caption marker removed.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-3 — the label r_B = 1,80 m touches the carousel rim (its m sits on the edge); shift the label inward (optional, figure is teacher-approved, so only if redrawn).
+- [Minor] fy5-3-L2-08 Sijoitus at 360 px (untouched) — "\Delta v = 2\pi \cdot 0{,}3333 \tfrac1s \cdot (1{,}80\,\text{m} - 0{,}60\,\text{m})" is cut at "0,60 m" (288/272 px); break the row before the last `\cdot`. Fits at 390 and wider.
+- [Minor] L3-01 Periaate — "samalla yhteisestä keskipisteestä lähtevällä suoralla" is correct but heavy; "samalla keskipisteestä lähtevällä suoralla" is enough.
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises 1/10 and 1/11 (L1-10, L1-11) and L2 part 9 (L2-08 with the carousel figure).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Own captures, solutions open, 360 and 1280 px: fy5-3-L3-01 (new Periaate, fraction rows aligned, answer 7,7 m/s), fy5-3-L1-10 (via scan; "hölkkävauhtia" Järkevyys), fy5-3-L2-08 at 360 px (the clipping above). No page overflow.
+- for science: "hölkkävauhtia" for $2{,}3\,\text{m/s}$ — confirm the comparison.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

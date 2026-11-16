@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 65a4139d383a71ec
+CONTENT-HASH: b014123181afab7b
+SCOPE: delta formula-names, reflow, wording from the passed version; the changed lines are the "Syventävä osio." paragraph and the summary item.
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json kuukoe, feedback for $0{,}00272$ — "Lukusi on oikea kiihtyvyys yksikössä …, tai etäisyys …" reads as one claim at first — "Lukusi on joko oikea kiihtyvyys yksikössä $\text{m/s}^2$, tai etäisyys on jäänyt kilometreiksi."
+- [Minor] exit ticket answer (page at 360 px) — a calculation chain scrolls sideways ($F = \gamma \ldots \cdot 5{,}0 \cdot 10^{\ldots}$ cut at the card edge), not at 390 px; untouched text — break the row before the second `\cdot`.
+- [Minor] Syventävä osio. — "tämän moduulin keskeisiin sisältöihin" speaks of the course's design to the student; "tämän kurssin" would be the student's own word.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: both rewritten kuukoe mistake feedbacks rendered (injected into the task card as the page would show them) at 390 and 1280: $\text{m/s}^2$, $r = 3{,}844 \cdot 10^{8}\,\text{m}$, $\text{mm/s}^2$ all LaTeX, none wraps; captures fy5-5-fi-390-fb1/fb2.png, -1280-fb1/fb2.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Own captures of the built page: the Syventävä paragraph under "Gravitaatiokentän voimakkuus" at 390 and 1280 px (bold lead-in, concept-card term underlined, italic *Kenttä eri taivaankappaleilla*, reads in the column, no layout change beside the figure); the Tiivistelmä at 390 px with "Syventävä: …" item (formula, unit upright, wraps cleanly).
+- fy5-5-example-390-1.png: worked example chains wrap in aligned rows, nothing clipped. Page width 390 and 1280, no horizontal overflow.
+- The exercise solutions on the same page: see the exercise report.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
