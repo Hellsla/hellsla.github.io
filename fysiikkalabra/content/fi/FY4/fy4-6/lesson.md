@@ -136,12 +136,12 @@
 ### Paino
 Kappaleen **paino** $\overline{G}$ on voima, jolla Maa vetää kappaletta. Se osoittaa aina suoraan alas, myös rinteellä, ja voimakuviossa se piirretään kappaleen keskipisteestä. Painon suuruus on massan ja putoamiskiihtyvyyden tulo $mg$. Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea sen liiketilaa on muuttaa, ja se on sama kaikkialla. Paino taas riippuu paikasta: Kuun pinnalla $g = 1{,}62\,\text{m/s}^2$, joten $60\,\text{kg}$:n ihmisen paino on siellä noin $97\,\text{N}$, kun se Maassa on noin $590\,\text{N}$.
 
-### Lepokitka ja liikekitka
+### Lepokitka ja liukukitka
 Kun kaksi pintaa koskettaa toisiaan, ne vastustavat liukumista toistensa suhteen. Tämä pinnan suuntainen voima on **kitka** $\overline{F}_\mu$. Pinnat eivät ole täysin sileitä: pienet epätasaisuudet tarttuvat toisiinsa, ja pintojen hiukkasten välillä on vetovoimia. Mitä lujemmin pinnat painuvat toisiaan vasten eli mitä suurempi tukivoima $N$ on, sitä suurempi kitka voi olla.
 
-Kun laatikkoa vedetään lattialla heikosti, se ei liiku. Silloin siihen vaikuttaa **lepokitka**, joka on yhtä suuri kuin veto ja vastakkaissuuntainen, joten kokonaisvoima on nolla. Lepokitka ei siis ole vakio, vaan se mukautuu tilanteeseen. Sillä on kuitenkin yläraja. Kun veto ylittää sen, laatikko lähtee liukumaan, ja kitka vaihtuu **liikekitkaksi**. Liikekitka on yleensä pienempi kuin lepokitkan suurin arvo, ja tavallisilla nopeuksilla se on likimain vakio.
+Kun laatikkoa vedetään lattialla heikosti, se ei liiku. Silloin siihen vaikuttaa **lepokitka**, joka on yhtä suuri kuin veto ja vastakkaissuuntainen, joten kokonaisvoima on nolla. Lepokitka ei siis ole vakio, vaan se mukautuu tilanteeseen. Sillä on kuitenkin yläraja. Kun veto ylittää sen, laatikko lähtee liukumaan, ja kitka vaihtuu **liukukitkaksi**. Liukukitka on yleensä pienempi kuin lepokitkan suurin arvo, täysin kehittynyt lepokitka eli lähtökitka, ja tavallisilla nopeuksilla se on likimain vakio.
 
-<svg data-fig="kitka" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: vaaka-akselilla laatikkoa vetävä vaakasuora voima F newtoneina nollasta 80:een, pystyakselilla lattian kitkavoima newtoneina nollasta 60:een. Laatikkoa painaa lattiaa vasten tukivoima 100 newtonia. Aluksi kitkavoima kasvaa yhtä suureksi kuin veto: suora nousee origosta pisteeseen, jossa veto ja kitka ovat 50 newtonia. Se on lepokitkan suurin arvo, myy nolla kertaa N. Siinä laatikko lähtee liikkeelle, ja kitkavoima putoaa katkoviivaa pitkin 35 newtoniin, myy kertaa N, ja pysyy siinä vedon kasvaessa." style="max-width:100%;font-size:24px">
+<svg data-fig="kitka" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: vaaka-akselilla laatikkoa vetävä vaakasuora voima F newtoneina nollasta 80:een, pystyakselilla lattian kitkavoima newtoneina nollasta 60:een. Laatikkoa painaa lattiaa vasten tukivoima 100 newtonia. Aluksi kitkavoima kasvaa yhtä suureksi kuin veto: suora nousee origosta pisteeseen, jossa veto ja kitka ovat 50 newtonia. Se on lepokitkan suurin arvo eli lähtökitka, myy nolla kertaa N. Siinä laatikko lähtee liikkeelle, ja kitkavoima putoaa katkoviivaa pitkin 35 newtoniin, myy kertaa N, ja pysyy siinä vedon kasvaessa." style="max-width:100%;font-size:24px">
   <line x1="193" y1="300" x2="193" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="294" y1="300" x2="294" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="395" y1="300" x2="395" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -184,12 +184,12 @@ Kun laatikkoa vedetään lattialla heikosti, se ei liiku. Silloin siihen vaikutt
   <polyline points="344.5,166 496,166" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="344.5" cy="108.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="107" y="170.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{lepokitka}$</div></foreignObject>
-  <foreignObject x="370" y="124.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{liikekitka}$</div></foreignObject>
+  <foreignObject x="370" y="124.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{liukukitka}$</div></foreignObject>
   <foreignObject x="279.5" y="71" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\mu_0 N$</div></foreignObject>
   <foreignObject x="419" y="174.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\mu N$</div></foreignObject>
 </svg>
 
-Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $50\,\text{N}$:iin asti, ja siinä laatikko lähtee liikkeelle. Liukuvaan laatikkoon vaikuttaa $35\,\text{N}$:n liikekitka, vaikka vetoa lisättäisiin. Siksi raskas kaappi on vaikeinta saada liikkeelle, ja liikkeellä se kulkee kevyemmin.
+Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $50\,\text{N}$:iin asti, ja siinä laatikko lähtee liikkeelle. Liukuvaan laatikkoon vaikuttaa $35\,\text{N}$:n liukukitka, vaikka vetoa lisättäisiin. Siksi raskas kaappi on vaikeinta saada liikkeelle, ja liikkeellä se kulkee kevyemmin.
 
 ### Kalteva taso
 Kaltevalla tasolla eli rinteellä paino osoittaa yhä suoraan alas, mutta pinta on vinossa. Tukivoima on kohtisuorassa pintaa vastaan, ja kitka on pinnan suuntainen. Laskua varten paino jaetaan kahteen **komponenttiin**: rinteen suuntainen komponentti pyrkii viemään kappaletta rinnettä alas, ja pintaa vastaan kohtisuora komponentti painaa kappaletta pintaa vasten. Komponentit eivät ole uusia voimia. Ne korvaavat painon laskussa, ja voimakuviossa ne piirretään katkoviivoin.
@@ -242,7 +242,7 @@ Kaltevalla tasolla eli rinteellä paino osoittaa yhä suoraan alas, mutta pinta 
   <foreignObject x="440" y="208" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
 </svg>
 
-Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä pienempi kohtisuora komponentti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima pienenee kohtisuoran komponentin mukana ja sen mukana lepokitkan yläraja. Siksi laatikko lähtee jyrkässä rinteessä liukumaan: rinnettä alas vievä komponentti kasvaa suuremmaksi kuin suurin lepokitka, jonka pinta pystyy aiheuttamaan.
+Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä pienempi kohtisuora komponentti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima pienenee kohtisuoran komponentin mukana ja sen mukana lepokitkan yläraja. Siksi laatikko lähtee jyrkässä rinteessä liukumaan: rinnettä alas vievä komponentti kasvaa suuremmaksi kuin lähtökitka, jonka pinta pystyy aiheuttamaan.
 
 ### Kitka ei aina vastusta liikettä
 Kitka vastustaa pintojen liukumista **toistensa suhteen**, ei välttämättä kappaleen liikettä. Kun avolava-auto lähtee kiihtyen liikkeelle, lavalla oleva laatikko kiihtyy mukana. Kun ilmanvastus jätetään huomiotta, ainoa vaakasuora voima laatikkoon on lavan kitka, joten sen täytyy osoittaa eteenpäin, liikkeen suuntaan: lava pyrkii liukumaan eteenpäin laatikon alta, ja lepokitka estää sen. Samoin kävellessä jalka työntää maata taaksepäin, ja maan lepokitka työntää jalkaa eteenpäin. Peilijäällä, jossa kitkaa on hyvin vähän, liikkeelle lähteminen on siksi vaikeaa.
@@ -305,15 +305,15 @@ kappaleeseen vaikuttava painovoima Maan pinnalla :: G = mg
 ```
 missä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys, Maan pinnalla $9{,}81\,\text{m/s}^2$.
 
-Liikekitka on verrannollinen tukivoimaan:
+Liukukitka on verrannollinen tukivoimaan:
 ```kaavat
 liukukitka :: F_\mu = \mu N
 ```
-missä $F_\mu$ on liikekitkan suuruus (N), $\mu$ **liikekitkakerroin** (ei yksikköä) ja $N$ tukivoiman suuruus (N). Lepokitka on enintään tukivoiman ja **lepokitkakertoimen** $\mu_0$ tulo:
+missä $F_\mu$ on liukukitkan suuruus (N), $\mu$ **liukukitkakerroin** (ei yksikköä) ja $N$ tukivoiman suuruus (N). Lepokitka on enintään tukivoiman ja **lepokitkakertoimen** $\mu_0$ tulo:
 ```latex
 F_{\mu 0} \le \mu_0 N
 ```
-missä $F_{\mu 0}$ on lepokitkan suuruus (N). Suurimmillaan lepokitka on juuri ennen kuin kappale lähtee liukumaan. Tämä täysin kehittynyt lepokitka on **lähtökitka**:
+missä $F_{\mu 0}$ on lepokitkan suuruus (N). Suurimmillaan lepokitka on juuri ennen kuin kappale lähtee liukumaan. Tätä lepokitkan suurinta arvoa sanotaan **täysin kehittyneeksi lepokitkaksi eli lähtökitkaksi**:
 ```kaavat
 lähtökitka, eli täysin kehittynyt lepokitka :: F_{\mu 0} = \mu_0 N
 ```
@@ -383,10 +383,10 @@ Jos pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappa
 ### Kitkakertoimen määrittäminen
 Kuvioissa ja simulaatiossa levossa olevaan kappaleeseen vaikuttavaa lepokitkaa merkitään $\overline{F}_\mu$; sen suuruus on $F_{\mu 0} \le \mu_0 N$, ja liukuessa $F_\mu = \mu N$.
 
-Lepokitkakerroin saadaan kokeesta, jossa lautaa kallistetaan hitaasti, kunnes kappale lähtee liukumaan. Tällä rajakulmalla $\alpha_0$ lepokitka on suurimmillaan, joten $\mu_0 = \tan\alpha_0$. Liikekitkakerroin saadaan esimerkiksi vetämällä kappaletta vaakasuoralla pöydällä jousivaa'alla vaakasuoraan ja tasaisella nopeudella. Silloin veto on yhtä suuri kuin liikekitka ja tukivoima yhtä suuri kuin paino, joten $\mu = F : mg$. Kun mittaus toistetaan eri massoilla, kitkakerroin on $(N, F_\mu)$-kuvaajaan sovitetun origon kautta kulkevan suoran kulmakerroin.
+Lepokitkakerroin saadaan kokeesta, jossa lautaa kallistetaan hitaasti, kunnes kappale lähtee liukumaan. Tällä rajakulmalla $\alpha_0$ lepokitka on suurimmillaan, joten $\mu_0 = \tan\alpha_0$. Liukukitkakerroin saadaan esimerkiksi vetämällä kappaletta vaakasuoralla pöydällä jousivaa'alla vaakasuoraan ja tasaisella nopeudella. Silloin veto on yhtä suuri kuin liukukitka ja tukivoima yhtä suuri kuin paino, joten $\mu = F : mg$. Kun mittaus toistetaan eri massoilla, kitkakerroin on $(N, F_\mu)$-kuvaajaan sovitetun origon kautta kulkevan suoran kulmakerroin.
 
 ## Esimerkki
-Muuttolaatikko, jonka massa on $18\,\text{kg}$, liukuu lastaussiltaa alas. Silta on $25^\circ$:n kulmassa vaakatasoon nähden, ja laatikon ja sillan välinen liikekitkakerroin on $0{,}30$. Kuinka suuri on laatikon kiihtyvyys, ja kuinka suuri on kitkavoima? Ilmanvastus jätetään huomiotta.
+Muuttolaatikko, jonka massa on $18\,\text{kg}$, liukuu lastaussiltaa alas. Silta on $25^\circ$:n kulmassa vaakatasoon nähden, ja laatikon ja sillan välinen liukukitkakerroin on $0{,}30$. Kuinka suuri on laatikon kiihtyvyys, ja kuinka suuri on kitkavoima? Ilmanvastus jätetään huomiotta.
 
 <!-- vaihe -->
 
@@ -394,13 +394,13 @@ Muuttolaatikko, jonka massa on $18\,\text{kg}$, liukuu lastaussiltaa alas. Silta
 
 <!-- vaihe -->
 
-**Periaate.** Valitaan kappaleeksi laatikko. Siihen vaikuttavat Maa (paino) ja silta (tukivoima ja liikekitka). Laatikko liukuu alas, joten liikekitka osoittaa rinnettä ylös. Newtonin toinen laki kirjoitetaan rinteen suuntaan, jossa laatikko kiihtyy, ja kohtisuoraan pintaa vastaan, jossa se ei kiihdy: $a_y = 0$.
+**Periaate.** Valitaan kappaleeksi laatikko. Siihen vaikuttavat Maa (paino) ja silta (tukivoima ja liukukitka). Laatikko liukuu alas, joten liukukitka osoittaa rinnettä ylös. Newtonin toinen laki kirjoitetaan rinteen suuntaan, jossa laatikko kiihtyy, ja kohtisuoraan pintaa vastaan, jossa se ei kiihdy: $a_y = 0$.
 
 <!-- vaihe -->
 
 **Voimakuvio.** Laatikko piirretään suorakulmiona rinteen suuntaisesti, ja voimat lähtevät vaikutuskohdistaan. Akselit valitaan niin, että $x$ osoittaa rinnettä alas eli kiihtyvyyden suuntaan ja $y$ kohtisuoraan pinnasta ulos. Paino jaetaan komponentteihin $G_x = mg\sin\alpha$ ja $G_y = mg\cos\alpha$, jotka on piirretty katkoviivalla.
 
-<svg data-fig="esimerkki" viewBox="0 0 600 420" role="img" aria-label="Laatikon voimakuvio, laatikko suorakulmiona kallistettuna 25 asteen rinteen suuntaisesti. Paino G keskipisteestä suoraan alas. Tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin. Liikekitka alapinnan ylemmästä kulmasta rinnettä ylös, koska laatikko liukuu alas. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan pintaa kohti. G x on pidempi kuin kitkavoima. Erillään ohut oranssi kiihtyvyysnuoli a rinnettä alas. Nurkassa akselit: x rinnettä alas ja y kohtisuoraan pinnasta ulos." style="max-width:100%;font-size:24px">
+<svg data-fig="esimerkki" viewBox="0 0 600 420" role="img" aria-label="Laatikon voimakuvio, laatikko suorakulmiona kallistettuna 25 asteen rinteen suuntaisesti. Paino G keskipisteestä suoraan alas. Tukivoima N alapinnasta kohtisuoraan pintaa vastaan ulospäin. Liukukitka alapinnan ylemmästä kulmasta rinnettä ylös, koska laatikko liukuu alas. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y kohtisuoraan pintaa kohti. G x on pidempi kuin kitkavoima. Erillään ohut oranssi kiihtyvyysnuoli a rinnettä alas. Nurkassa akselit: x rinnettä alas ja y kohtisuoraan pinnasta ulos." style="max-width:100%;font-size:24px">
   <rect x="235" y="132" width="130" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-25 300 170)"/>
   <line x1="300" y1="170" x2="300" y2="321" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M300,338 L292,320 L308,320 Z" fill="#c92a2a" stroke-linejoin="round"/>
@@ -476,6 +476,6 @@ Moni ajattelee, että kitkavoima on aina $\mu_0 N$ tai $\mu N$ ja aina liikettä
 ## Tiivistelmä
 - Painon suuruus on $G = mg$, ja paino osoittaa aina suoraan alas. Massa on sama kaikkialla, mutta paino riippuu putoamiskiihtyvyydestä.
 - Kitka on pinnan suuntainen ja vastustaa pintojen liukumista toistensa suhteen, ei aina kappaleen liikettä.
-- Lepokitka mukautuu tilanteeseen: $F_{\mu 0} \le \mu_0 N$. Liukuvaan kappaleeseen vaikuttaa liikekitka $F_\mu = \mu N$, ja yleensä $\mu < \mu_0$.
+- Lepokitka mukautuu tilanteeseen: $F_{\mu 0} \le \mu_0 N$. Liukuvaan kappaleeseen vaikuttaa liukukitka $F_\mu = \mu N$, ja yleensä $\mu < \mu_0$.
 - Rinteellä paino jaetaan komponentteihin $G_x = mg\sin\alpha$ ja $G_y = mg\cos\alpha$, ja tukivoima on $N = mg\cos\alpha$, kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa. Komponentit piirretään katkoviivoin, eivätkä ne ole uusia voimia.
 - Lepokitkakerroin saadaan rajakulmasta, jolla kappale lähtee liukumaan: $\mu_0 = \tan\alpha_0$.

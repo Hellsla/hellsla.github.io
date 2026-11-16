@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 70d174f2f9293390
-SCOPE: delta added-exercise from a6b9feb8d21605fb base 8f23aa7ae3bd
+CONTENT-HASH: fc9a630e9f0fd181
 
 ## Blocking
 (none)
 
 ## Polish
-1. exercises.json (L3-06) — the task is two steps (read F, μ0 = F/mg); at level 3 it is light. Acceptable because it joins the graph with the friction model; a prompt to compare with the dry/wet asphalt value would raise it.
+1. exercises.json L3-06 text — "kuinka suuri lepokitkakertoimen $\mu_0$ on vähintään oltava" is ungrammatical (genitive) — "kuinka suuri lepokitkakerroin $\mu_0$ on vähintään oltava".
+2. exercises.json L3-06 / solutions.md — "täysin kehittynyt lepokitka eli lähtökitka" is heavy for a 17-year-old; "suurin lepokitka eli lähtökitka" is closer to the lesson wording and is clear without it being introduced elsewhere. Also the term appears only in some solutions while other tasks still say "suurin lepokitka"; pick one.
 
 ## Checked
-- L2-09: r = v²/a_n = 225/3,0 = 75 m recomputed; graph reading of a point is new for level 2 (L2-05/06 use tables/other quantities); no repeat of L1-01.
-- L3-06: F = 8,0 kN, μ0 = 8000/(1200·9,81) = 0,68 correct; the vertical balance N = mg is stated; no repeat of L3-01 (given r and μ).
-- Both figures give every needed value, no radius written; descriptions equivalent.
-- Solutions complete and ordered; text only (no renders).
+- Diff is wording only: "Auton massa on ..., ja se ajaa" fixes the run-on; no numbers or symbols changed.
+- "Lähtökitka" is the standard Finnish name for maximum static friction, so it is a correct term, and "eli" ties it to lepokitka so the student can follow it.
+- L3-06 still reads situation first, question last, and the answer box sentence is intact.
+- Solutions' voimakuvio descriptions still match the drawn figures (lengths unchanged).
+- Earlier checks (L2-09, L3-06 numbers 75 m and 0,68, figures equal to descriptions, solution order) remain valid.

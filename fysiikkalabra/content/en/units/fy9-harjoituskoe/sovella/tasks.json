@@ -243,7 +243,7 @@
           "text": "The driver suggests loading more tools into the box so that it would be heavier and stay in place better. Assess the suggestion on the basis of physics.",
           "criteria": [
             {
-              "text": "The maximum static friction $\\mu_0 mg$ increases with the mass, but the force $ma$ needed to slow the box down increases in the same proportion.",
+              "text": "The maximum (fully developed) static friction $\\mu_0 mg$ increases with the mass, but the force $ma$ needed to slow the box down increases in the same proportion.",
               "tag": "concept",
               "points": 2
             },
@@ -475,7 +475,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "How much power is converted into heat in the extension cord?",
+          "text": "How much power is converted into internal energy in the extension cord?",
           "answer": {
             "value": 114.0,
             "unit": "W",
@@ -502,7 +502,7 @@
           "id": "d",
           "kind": "calc",
           "points": 3,
-          "text": "How large would the power converted into heat be if the cross-sectional area of the conductors of the cord were $2.5\\,\\text{mm}^2$?",
+          "text": "How large would the power converted into internal energy be if the cross-sectional area of the conductors of the cord were $2.5\\,\\text{mm}^2$?",
           "answer": {
             "value": 70.4,
             "unit": "W",

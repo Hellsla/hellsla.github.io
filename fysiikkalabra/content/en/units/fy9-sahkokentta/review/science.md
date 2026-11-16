@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9d34a7e0143e622e
-Review of the recognition chart (queue 9c) and the term change against the version passed at f2ccc4940864b96a; full on the chart, delta on the rest.
+CONTENT-HASH: 6513a898b1c57a2a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Row 4 "a charge accelerated by a voltage → $QU = \tfrac12mv^2$": correct with the unit's signed $W = QU_{AB}$ and a start from rest, but the unit's derivation (round 3 sign convention) writes $\tfrac12mv^2 = |Q|U$ "starts from rest". Writing $|Q|U$ and "from rest" would keep the electron case from giving a negative energy.
+- C: in d) the direct reason for giving 22 pF is the decimal-place rule of subtraction (93 pF is known to 1 pF); the new sentence is true but more general.
 
 ## Checked
-- Every row: $F_E = kQ_1Q_2/r^2$; $E = F_E/Q$; $U = Ed$; $Q = CU$; $C = \varepsilon_0\varepsilon_\text{r}A/d$; $E = \tfrac12CU^2$; LED loop by Kirchhoff's second law $\Sigma\Delta V = 0$ (unit line 461). Agree with the Formula section.
-- The aria-label matches the chart.
-- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
-- The en chart (docs/figures/fy9-tunnistus/fy9-sahkokentta-en-360.png) and the hash, taken at the start and the end (9d34a7e0143e622e).
+- solutions.md d): b = 93 pF - 353.8 pF mm * 0.20 /mm = 22.2 pF recomputed; the new reason (a difference has a larger relative uncertainty than its terms) is correct physics and replaces the inaccurate 'almost equal numbers' (93 and 70.8).
+- Ion engine reasonableness: 1.1 MV/m divided by 3 MV/m = 0.37, 'about a third' holds and corrects the earlier 'close to breakdown'; recomputed v = 40.2 km/s, mass ratio Xe/electron 2.39e5, square root 489.
+- No ADDED TASK in this unit's en diff; `python scripts/practice.py check units/fy9-sahkokentta` is OK.

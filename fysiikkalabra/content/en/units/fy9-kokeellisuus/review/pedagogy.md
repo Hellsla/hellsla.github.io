@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d2859f8e1938c8d4
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (95262ce9df1aca45); earlier findings kept unless named fixed.
+CONTENT-HASH: 16bc88cc7274b327
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none new; round-1 findings stand)
+- (none)
 
 ## Checked
-- teacher.md now reads "goes through the seven rows of the recognition chart"; the chart has seven rows (fi 360 px PNG opened), so the round-1 "six questions" mismatch is gone.
-- Header "how do I tell the method?" and the sign "model through origin, line not" are in the translation table; the English aria-label has the same b-not-zero sentence as the fi one. The unit's own heading "A plan answers six questions" is another section and stays true.
-- The rest passes through the round-1 report.
+- solutions.md s1 a) Principle: "The maximum (fully developed) static friction is mu_0 N" follows correctly from the preceding sentence about grip and leads into the argument for comparing mu_0. One hunk, no added task.

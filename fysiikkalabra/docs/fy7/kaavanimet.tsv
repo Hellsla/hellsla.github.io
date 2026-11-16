@@ -91,7 +91,7 @@ fy7-7	427	= 6{,}786\,\text{V}	= 6.786\,\text{V}
 fy7-7	427	U = \frac{6{,}786\,\text{V}}{\sqrt{2}}	U = \frac{6.786\,\text{V}}{\sqrt{2}}					
 fy7-7	427	= 4{,}798\,\text{V}	= 4.798\,\text{V}					
 fy7-8	206	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	MAFY: N₁/N₂ = U₁/U₂ ≈ I₂/I₁; tunnin muoto = (ideaalimuuntaja), järjestys eri
-fy7-8	213	P = U I	P = U I	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	Joulen lain muodot P_h = RI² = RP²/U² eivät ole MAFY:ssa
+fy7-8	213	P = U I	P = U I					nimetön tässä luvussa (opettaja 2026-11-15, P6); Joulen lain muodot P_h = RI² = RP²/U² eivät ole MAFY:ssa
 fy7-8	213	P_\text{h} = R I^2 = \frac{R P^2}{U^2}	P_\text{h} = R I^2 = \frac{R P^2}{U^2}					
 fy7-8	283	P = \sqrt{3}\,U I \cos\varphi	P = \sqrt{3}\,U I \cos\varphi					
 fy7-8	302	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}					

@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c18ad46dd233f9b1
+CONTENT-HASH: 51160e871e00687e
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-16 lesson (fi). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] lesson.md, Kitkan työ -kohta — "liukukitkakerroin" and "kitkakerroin" alternate (e.g. "sama kitkakerroin koko matkalla"); acceptable, but one form per paragraph would read more evenly.
+
+## Checked
+- Delta (wording: liikekitka -> liukukitka in lesson.md, inquiry.json and exit-ticket.json; new hook sentence; extended summary bullet; figure aria-labels).
+- Opened contact-1.png, fy4-16-example-390-1.png (worked example, stages 1-3, with the "esimerkki" figure) and fy4-16-fig-9-390.png (the "kolme" figure).
+- Contact sheet 1 also shows the opening picture, the lift graph and the "kitkatyo" figure; they are unchanged and the layout is intact.
+- grep found no remaining "liikekitka" in lesson, inquiry, exit ticket or exercises sources.
+- Not opened separately: the other captures, since the diff changes no drawing, only text and aria-label wording.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

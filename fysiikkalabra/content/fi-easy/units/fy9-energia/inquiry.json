@@ -29,17 +29,17 @@
       "prompt": "Pulkka laskee mäen alas. Lopuksi se pysähtyy tasaiselle lumelle. Mitä pulkan potentiaalienergialle on lopulta tapahtunut?",
       "choices": [
         {
-          "text": "Se on muuttunut lumen, jalasten ja ilman lämpöenergiaksi.",
-          "feedback": "Oikein. Kitka ja ilmanvastus muuttavat mekaanista energiaa lämpöenergiaksi. Kokonaisenergia säilyy eli pysyy samana. Kertaa tarvittaessa luvussa *Energialajit ja energian säilyminen*.",
+          "text": "Se on muuttunut lumen, jalasten ja ilman sisäenergiaksi.",
+          "feedback": "Oikein. Kitka ja ilmanvastus muuttavat mekaanista energiaa sisäenergiaksi. Kokonaisenergia säilyy eli pysyy samana. Kertaa tarvittaessa luvussa *Energialajit ja energian säilyminen*.",
           "correct": true
         },
         {
           "text": "Se on kulunut loppuun, koska pulkka ei enää liiku.",
-          "feedback": "Energia ei kulu loppuun eikä katoa. Kitka on muuttanut liike-energian lämpöenergiaksi. Lämpöenergia hajaantuu eli leviää lumeen ja ilmaan. Kertaa luvussa *Energialajit ja energian säilyminen*."
+          "feedback": "Energia ei kulu loppuun eikä katoa. Kitka on muuttanut liike-energian sisäenergiaksi. Sisäenergia hajaantuu eli leviää lumeen ja ilmaan. Kertaa luvussa *Energialajit ja energian säilyminen*."
         },
         {
           "text": "Se on pulkassa yhä potentiaalienergiana.",
-          "feedback": "Pulkka on nyt alempana kuin lähtiessä. Siksi sen potentiaalienergia on pienempi. Ero on muuttunut ensin liike-energiaksi ja sitten lämpöenergiaksi. Kertaa luvussa *Energialajit ja energian säilyminen*."
+          "feedback": "Pulkka on nyt alempana kuin lähtiessä. Siksi sen potentiaalienergia on pienempi. Ero on muuttunut ensin liike-energiaksi ja sitten sisäenergiaksi. Kertaa luvussa *Energialajit ja energian säilyminen*."
         }
       ]
     },
@@ -403,7 +403,7 @@
       "mistakes": [
         {
           "value": 6.278,
-          "feedback": "Tämä on hyötyteho, joka käytetään nostamiseen. Moottori ottaa enemmän tehoa, koska osa tehosta muuttuu lämmöksi: $P_\\text{o} = P_\\text{a} : \\eta$."
+          "feedback": "Tämä on hyötyteho, joka käytetään nostamiseen. Moottori ottaa enemmän tehoa, koska osa energiasta muuttuu sisäenergiaksi: $P_\\text{o} = P_\\text{a} : \\eta$."
         },
         {
           "value": 4.709,
@@ -462,7 +462,7 @@
       "mistakes": [
         {
           "value": 54,
-          "feedback": "Tämä on akkuun tuleva energia kilojouleina. Verkosta otetaan enemmän, koska latauksessa osa energiasta muuttuu lämmöksi. Jaa siis hyötysuhteella."
+          "feedback": "Tämä on akkuun tuleva energia kilojouleina. Verkosta otetaan enemmän, koska latauksessa osa energiasta muuttuu sisäenergiaksi. Jaa siis hyötysuhteella."
         },
         {
           "value": 43.2,
@@ -474,7 +474,7 @@
         }
       ],
       "practice": "Kertaa wattitunnin muunnos luvussa [*Teho*](fy2-3.html) ja otettu energia luvussa [*Hyötysuhde*](fy2-4.html).",
-      "solution": "**Annettu:** akkuun tuleva energia $W_\\text{a} = 15\\,\\text{Wh}$, hyötysuhde $\\eta = 80\\,\\%$\n\n**Kysytty:** verkosta otettu energia $W_\\text{o}$ kilojouleina\n\n**Periaate:** Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta varastoituu akkuun. Energia säilyy. Loput energiasta muuttuu laturissa ja akussa lämmöksi. Siksi verkosta otetaan enemmän energiaa kuin akkuun mahtuu.\n\n**Kaava:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$, joten $W_\\text{o} = \\dfrac{W_\\text{a}}{\\eta}$\n\n**Muunnokset:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ ja $80\\,\\% = 0{,}80$. Lopuksi $1\\,\\text{J} = 0{,}001\\,\\text{kJ}$.\n\n**Sijoitus:** $W_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0{,}80} = 67\\,500\\,\\text{J} = 67{,}5\\,\\text{kJ}$\n\n**Vastaus:** $68\\,\\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $15\\,\\text{Wh}$ ja hyötysuhteessa $80\\,\\%$.\n\n**Järkevyys:** Otettu energia on neljäsosan suurempi kuin akkuun tuleva energia: $1 : 0{,}80 = 1{,}25$. Lämmöksi muuttuu $67{,}5\\,\\text{kJ} - 54\\,\\text{kJ} = 13{,}5\\,\\text{kJ}$. Sen huomaa siitä, että laturi lämpenee. Määrä on pieni: alle $0{,}02\\,\\text{kWh}$."
+      "solution": "**Annettu:** akkuun tuleva energia $W_\\text{a} = 15\\,\\text{Wh}$, hyötysuhde $\\eta = 80\\,\\%$\n\n**Kysytty:** verkosta otettu energia $W_\\text{o}$ kilojouleina\n\n**Periaate:** Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta varastoituu akkuun. Energia säilyy. Loput energiasta muuttuu laturissa ja akussa sisäenergiaksi. Siksi verkosta otetaan enemmän energiaa kuin akkuun mahtuu.\n\n**Kaava:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$, joten $W_\\text{o} = \\dfrac{W_\\text{a}}{\\eta}$\n\n**Muunnokset:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ ja $80\\,\\% = 0{,}80$. Lopuksi $1\\,\\text{J} = 0{,}001\\,\\text{kJ}$.\n\n**Sijoitus:** $W_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0{,}80} = 67\\,500\\,\\text{J} = 67{,}5\\,\\text{kJ}$\n\n**Vastaus:** $68\\,\\text{kJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $15\\,\\text{Wh}$ ja hyötysuhteessa $80\\,\\%$.\n\n**Järkevyys:** Otettu energia on neljäsosan suurempi kuin akkuun tuleva energia: $1 : 0{,}80 = 1{,}25$. Sisäenergiaksi muuttuu $67{,}5\\,\\text{kJ} - 54\\,\\text{kJ} = 13{,}5\\,\\text{kJ}$. Sen huomaa siitä, että laturi lämpenee. Määrä on pieni: alle $0{,}02\\,\\text{kWh}$."
     },
     {
       "id": "tarkistus-3",

@@ -572,7 +572,7 @@
           "text": "Arvioi ryhmän johtopäätös. Mistä mittausten ero todennäköisesti johtuu?",
           "criteria": [
             {
-              "text": "Toteaa, että lämmöksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää. Liikemäärä ei ole energian laji.",
+              "text": "Toteaa, että sisäenergiaksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää. Liikemäärä ei ole energian laji.",
               "tag": "concept",
               "points": 1
             },

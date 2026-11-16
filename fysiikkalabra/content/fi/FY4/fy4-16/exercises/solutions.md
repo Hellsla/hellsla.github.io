@@ -53,7 +53,7 @@ v alas
 **Annettu:** alkunopeus $v_1 = 6{,}0\,\text{m/s}$, loppunopeus $v_2 = 0$, $\mu = 0{,}080$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukumismatka $s$ yksikössä $\text{m}$
 **Periaate:** Kysytään matkaa, jolla liike-energia kuluu, joten käytetään energiaperiaatetta. Korkeus ei muutu, ja kitka on ainoa työtä tekevä voima: sen negatiivinen työ muuttaa liike-energian sisäenergiaksi. Kitkavoima saadaan voimakuviosta.
-**Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, lumen tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liikekitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N - mg = 0$, joten $F_\mu = \mu mg$.
+**Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, lumen tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liukukitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N - mg = 0$, joten $F_\mu = \mu mg$.
 ```voimakuvio
 pinta 0
 G 100
@@ -70,8 +70,8 @@ a vasen
 ## fy4-16-L1-05
 **Annettu:** $\mu = 0{,}15$, nopeus on vakio, ilmanvastus jätetään huomiotta
 **Kysytty:** rinteen kaltevuuskulma $\alpha$ asteina
-**Periaate:** Nopeus on vakio, joten Newtonin toisen lain mukaan kokonaisvoima on nolla sekä rinteen suunnassa että sitä vastaan kohtisuorassa. Painon rinteen suuntainen komponentti ja liikekitka kumoavat toisensa.
-**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos ja liikekitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin.
+**Periaate:** Nopeus on vakio, joten Newtonin toisen lain mukaan kokonaisvoima on nolla sekä rinteen suunnassa että sitä vastaan kohtisuorassa. Painon rinteen suuntainen komponentti ja liukukitka kumoavat toisensa.
+**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos ja liukukitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin.
 ```voimakuvio
 pinta -8,53
 G 100
@@ -106,9 +106,9 @@ a ylös
 
 ## fy4-16-L2-02
 **Annettu:** $L = 18{,}0\,\text{m}$, $\alpha = 12{,}0^\circ$, $v_1 = 0$, $v_2 = 5{,}10\,\text{m/s}$; $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** liikekitkakerroin $\mu$ (yksikötön)
-**Periaate:** Nopeus tunnetaan rinteen alussa ja lopussa, joten käytetään energiaperiaatetta. Paino tekee työtä potentiaalienergian kautta, tukivoima ei tee työtä, ja liikekitka tekee negatiivisen työn koko rinteen matkalla. Kitkavoima saadaan voimakuviosta.
-**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos ja liikekitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. $y$-suunnassa $N = mg\cos\alpha$, joten $F_\mu = \mu mg\cos\alpha$.
+**Kysytty:** liukukitkakerroin $\mu$ (yksikötön)
+**Periaate:** Nopeus tunnetaan rinteen alussa ja lopussa, joten käytetään energiaperiaatetta. Paino tekee työtä potentiaalienergian kautta, tukivoima ei tee työtä, ja liukukitka tekee negatiivisen työn koko rinteen matkalla. Kitkavoima saadaan voimakuviosta.
+**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos ja liukukitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. $y$-suunnassa $N = mg\cos\alpha$, joten $F_\mu = \mu mg\cos\alpha$.
 ```voimakuvio
 pinta -12
 G 100
@@ -162,7 +162,7 @@ v ylös
 **Annettu:** korkeusero $h = 4{,}50\,\text{m}$, $\mu = 0{,}120$ koko matkalla, rinteen osat $25^\circ$ ja $10^\circ$, $v_1 = 0$ ja lopussa $v_2 = 0$
 **Kysytty:** vaakasuora matka $x$ huipusta pysähtymiskohtaan yksikössä $\text{m}$
 **Periaate:** Pulkka on alussa ja lopussa levossa, joten energiaperiaatteen mukaan kitkan negatiivinen työ on yhtä suuri kuin potentiaalienergian väheneminen. Suoralla pinnalla kitkan työ on $-\mu mg$ kertaa vaakasuora matka, koska rinteessä $N = mg\cos\alpha$ ja $L\cos\alpha$ on rinteen vaakasuora pituus. Siksi rinteen osien kulmia ei tarvita.
-**Voimakuvio:** Kummallakin rinteen osalla pulkka suorakulmiona rinteen suuntaisesti: paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ kohtisuoraan rinteestä ulos, $N = mg\cos\alpha$, ja liikekitka $\overline{F}_\mu$ rinnettä ylös. Tasaisella $N = mg$ ja kitka taaksepäin. Tukivoima ei tee työtä missään kohdassa.
+**Voimakuvio:** Kummallakin rinteen osalla pulkka suorakulmiona rinteen suuntaisesti: paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ kohtisuoraan rinteestä ulos, $N = mg\cos\alpha$, ja liukukitka $\overline{F}_\mu$ rinnettä ylös. Tasaisella $N = mg$ ja kitka taaksepäin. Tukivoima ei tee työtä missään kohdassa.
 ```voimakuvio
 pinta -25
 G 100
@@ -230,9 +230,9 @@ v alas
 
 ## fy4-16-L1-08
 **Annettu:** $m = 20{,}0\,\text{kg}$, $\alpha = 30{,}0\,{}^\circ$, $\mu = 0{,}200$, pulkka liukuu rinnettä alas; oppilaan tulos $39{,}2\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** oppilaan virhe ja oikea liikekitkavoima $F_\mu$ yksikössä $\text{N}$
-**Periaate:** Liikekitka on $F_\mu = \mu N$, ja tukivoima $N$ saadaan voimakuviosta rinteen suuntaa vastaan kohtisuorassa. Pulkka ei kiihdy tähän suuntaan, joten tukivoima kumoaa vain painon rinnettä vastaan kohtisuoran komponentin. Oppilas oletti, että tukivoima kumoaa koko painon, mikä pätee vain vaakasuoralla pinnalla.
-**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos, painoa lyhyempänä, ja liikekitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin.
+**Kysytty:** oppilaan virhe ja oikea liukukitkavoima $F_\mu$ yksikössä $\text{N}$
+**Periaate:** Liukukitka on $F_\mu = \mu N$, ja tukivoima $N$ saadaan voimakuviosta rinteen suuntaa vastaan kohtisuorassa. Pulkka ei kiihdy tähän suuntaan, joten tukivoima kumoaa vain painon rinnettä vastaan kohtisuoran komponentin. Oppilas oletti, että tukivoima kumoaa koko painon, mikä pätee vain vaakasuoralla pinnalla.
+**Voimakuvio:** Pulkka suorakulmiona rinteen suuntaisesti, $x$ rinnettä alas ja $y$ kohtisuoraan rinteestä ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan rinteestä ulos, painoa lyhyempänä, ja liukukitka $\overline{F}_\mu$ alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin.
 ```voimakuvio
 pinta -30
 G 196,2
@@ -268,10 +268,10 @@ a ylös
 
 ## fy4-16-L2-06
 **Annettu:** taulukosta paikat $x$ hetkillä $t = 0$, $1{,}0\,\text{s}$, $4{,}0\,\text{s}$ ja $5{,}0\,\text{s}$; vaakasuora pinta, ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** liikekitkakerroin $\mu$ (yksikötön)
+**Kysytty:** liukukitkakerroin $\mu$ (yksikötön)
 **Periaate:** Aikavälin keskinopeus on siirtymä jaettuna ajalla. Tasaisesti hidastuvassa liikkeessä se on yhtä suuri kuin nopeus välin keskellä, joten kahden välin keskinopeuksista saadaan hidastuvuus. Vaakasuoralla pinnalla kitka on ainoa vaakasuora voima, joten Newtonin toinen laki antaa kitkakertoimen.
 **Kuvaajan lukeminen:** Ensimmäisellä sekunnilla pulkka kulkee $3{,}62\,\text{m} - 0 = 3{,}62\,\text{m}$, joten keskinopeus on $3{,}62\,\text{m/s}$ ja se on nopeus hetkellä $t = 0{,}5\,\text{s}$. Viimeisellä sekunnilla pulkka kulkee $10{,}03\,\text{m} - 9{,}57\,\text{m} = 0{,}46\,\text{m}$, joten keskinopeus on $0{,}46\,\text{m/s}$ hetkellä $t = 4{,}5\,\text{s}$.
-**Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liikekitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N = mg$ ja vaakasuunnassa, kun positiivinen suunta on liikkeen suunta, $-\mu mg = ma$.
+**Voimakuvio:** Pulkka suorakulmiona. Paino $\overline{G}$ keskipisteestä alas, tukivoima $\overline{N}$ alapinnasta ylös yhtä pitkänä ja liukukitka $\overline{F}_\mu$ alapinnan takakulmasta taaksepäin. Eteenpäin osoittavaa voimaa ei ole. Pystysuunnassa $N = mg$ ja vaakasuunnassa, kun positiivinen suunta on liikkeen suunta, $-\mu mg = ma$.
 ```voimakuvio
 pinta 0
 G 100
@@ -287,9 +287,9 @@ a vasen
 
 ## fy4-16-L2-07
 **Annettu:** viisi kulmaa $17{,}5\,{}^\circ$, $18{,}0\,{}^\circ$, $18{,}5\,{}^\circ$, $17{,}0\,{}^\circ$ ja $18{,}0\,{}^\circ$; tönäisty laatikko liukuu tasaisella nopeudella
-**Kysytty:** a) liikekitkakerroin $\mu$ kulmien keskiarvosta; b) kertoimen vaihteluväli ja vaihtelu keskiarvon ympärillä
-**Periaate:** Laatikko tönäistään liikkeelle, koska kulma, jossa levossa oleva laatikko lähtee liukumaan, riippuisi lepokitkasta. Kun tönäisty laatikko liukuu tasaisella nopeudella, kokonaisvoima on nolla. Painon rinteen suuntainen komponentti kumoaa liikekitkan, ja kitka on $\mu mg\cos\alpha$, joten $\tan\alpha = \mu$. Mittauksissa on satunnaisvaihtelua, joten kulmaksi otetaan keskiarvo, ja vaihtelua kuvaa mittausten ääriarvojen väli.
-**Voimakuvio:** Laatikko suorakulmiona laudan suuntaisesti, $x$ lautaa alas ja $y$ kohtisuoraan laudasta ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan laudasta ulos ja liikekitka $\overline{F}_\mu$ lautaa ylös. Voimat kumoavat toisensa rinteen suunnassa ja sitä vastaan kohtisuorassa.
+**Kysytty:** a) liukukitkakerroin $\mu$ kulmien keskiarvosta; b) kertoimen vaihteluväli ja vaihtelu keskiarvon ympärillä
+**Periaate:** Laatikko tönäistään liikkeelle, koska kulma, jossa levossa oleva laatikko lähtee liukumaan, riippuisi lepokitkasta. Kun tönäisty laatikko liukuu tasaisella nopeudella, kokonaisvoima on nolla. Painon rinteen suuntainen komponentti kumoaa liukukitkan, ja kitka on $\mu mg\cos\alpha$, joten $\tan\alpha = \mu$. Mittauksissa on satunnaisvaihtelua, joten kulmaksi otetaan keskiarvo, ja vaihtelua kuvaa mittausten ääriarvojen väli.
+**Voimakuvio:** Laatikko suorakulmiona laudan suuntaisesti, $x$ lautaa alas ja $y$ kohtisuoraan laudasta ulos. Paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ alapinnasta kohtisuoraan laudasta ulos ja liukukitka $\overline{F}_\mu$ lautaa ylös. Voimat kumoavat toisensa rinteen suunnassa ja sitä vastaan kohtisuorassa.
 ```voimakuvio
 pinta -17,8
 G 100
@@ -309,7 +309,7 @@ komponentit G
 **Annettu:** rinne $\alpha = 14{,}0\,{}^\circ$, $\mu_1 = 0{,}060$; tasainen osa $\mu_2 = 0{,}150$; aita $25{,}0\,\text{m}$ rinteen juuresta ja pulkan on pysähdyttävä vähintään $5{,}0\,\text{m}$ sitä ennen, joten tasaisen osan pituus $d = 25{,}0\,\text{m} - 5{,}0\,\text{m} = 20{,}0\,\text{m}$; $v_1 = 0$ ja lopussa $v_2 = 0$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** b) rinteen suurin pituus $L$ yksikössä $\text{m}$; c) nopeus $v$ rinteen juurella
 **Periaate:** Pulkka on alussa ja lopussa levossa, joten käytetään energiaperiaatetta koko matkalle. Potentiaalienergian väheneminen kuluu kitkan tekemään negatiiviseen työhön, ensin rinteessä ja sitten tasaisella. Tukivoima ei tee työtä. Rinteessä kitkavoima saadaan voimakuviosta, ja sen työ on $-\mu_1 mg\cos\alpha\cdot L$. Pidempi rinne antaisi enemmän vauhtia, joten pulkka pysähtyy aidan viereen juuri suurimmalla sallitulla pituudella.
-**Voimakuvio:** Rinteessä pulkka suorakulmiona rinteen suuntaisesti: paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ kohtisuoraan rinteestä ulos, $N = mg\cos\alpha$, ja liikekitka $\overline{F}_\mu$ rinnettä ylös. Tasaisella paino alas, tukivoima ylös yhtä pitkänä ja kitka taaksepäin, ja kitka on siellä suurempi, koska $\mu_2 > \mu_1$. Nopeutta ei piirretä voimaksi.
+**Voimakuvio:** Rinteessä pulkka suorakulmiona rinteen suuntaisesti: paino $\overline{G}$ keskipisteestä suoraan alas, tukivoima $\overline{N}$ kohtisuoraan rinteestä ulos, $N = mg\cos\alpha$, ja liukukitka $\overline{F}_\mu$ rinnettä ylös. Tasaisella paino alas, tukivoima ylös yhtä pitkänä ja kitka taaksepäin, ja kitka on siellä suurempi, koska $\mu_2 > \mu_1$. Nopeutta ei piirretä voimaksi.
 ```voimakuvio
 pinta -14
 G 100
@@ -364,7 +364,7 @@ $40{,}2\,\text{m} - 39{,}5\,\text{m} = 0{,}7\,\text{m}$
 
 Ne ovat pienempiä kuin $2\Delta x = 2{,}0\,\text{m}$, joten epävarmuusvälit menevät päällekkäin, ja raskaampi pulkka kulki korkeudelta $2{,}00\,\text{m}$ pidemmälle mutta korkeudelta $4{,}00\,\text{m}$ lyhyemmälle. Aineisto ei siis osoita, että raskaampi pulkka kulkisi kauemmas. Se ei kuitenkaan todista, ettei massa vaikuta lainkaan, koska alle $2\,\text{m}$:n vaikutus hukkuisi epävarmuuteen. Tulos sopii malliin $x = \tfrac{h}{\mu}$, jossa massa supistuu pois.
 
-Matka $80\,\text{m}$ korkeudelta $8{,}00\,\text{m}$ olisi mittausalueen ulkopuolelle jatkettu arvio, joka olettaa saman kitkakertoimen koko matkalle, joten se ei ole varma tulos. Tulos on järkevä: suhde $h : x \approx 0{,}10$ on joka rivillä lähes sama ja sopii lumen ja pulkan liikekitkakertoimeksi.
+Matka $80\,\text{m}$ korkeudelta $8{,}00\,\text{m}$ olisi mittausalueen ulkopuolelle jatkettu arvio, joka olettaa saman kitkakertoimen koko matkalle, joten se ei ole varma tulos. Tulos on järkevä: suhde $h : x \approx 0{,}10$ on joka rivillä lähes sama ja sopii lumen ja pulkan liukukitkakertoimeksi.
 
 ## fy4-16-L2-09
 **Annettu:** $m = 60{,}0\,\text{kg}$; kuvaajasta tukivoima hidastusvaiheessa $N = 550\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$

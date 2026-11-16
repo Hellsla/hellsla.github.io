@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 02ed5717f19b13fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 29511f4151251bcf
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] lesson.md "Siirtojohdon tehohäviö" (and "Siirtohäviö ja suurjännite") — the sim note now says "sisäenergiaksi muuttuva teho", but the text beside it still says "johdossa lämmöksi muuttuva teho" and "Lämmöksi muuttuva teho on verrannollinen…". The wording differs between sim and text; align when the P1 correction reaches this chapter's text.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Three-phase subsection: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en: "At the same voltage, current and power factor … $1.73$ times") reads correctly; display formula $P = \sqrt{3}\,U I \cos\varphi$ and symbol list unchanged.
-- Aria texts of grid and loss-graph unchanged since round 1 and consistent across lesson.md, figures.py, figures.json.
-- Hash identical at start and end of this round.
+- Delta: sim.js note change (lab-1280, the sim panel): "Vihreä palkki on perille tuleva teho. Oranssi palkki on johdossa sisäenergiaksi muuttuva teho." fits on one line, no clipping, legend colours match the bars.
+- Delta: lesson.md formula block (theory-1280-2): P = UI and P_h = RI² = RP²/U² now render as two rows (the kaavat fence became a latex aligned block); KaTeX fine, no overflow, the "=" signs are aligned. The unnamed block is correct, as the formula is not in MAFY.
+- Surroundings (theory-1280-3, -4): graph, three-phase formula, summary and the chapter layout intact.
+- Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

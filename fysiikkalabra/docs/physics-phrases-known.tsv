@@ -1,0 +1,75 @@
+folder	file	rule	sentence (physics_phrases.py; work queue 18 deletes a row when it corrects the sentence)
+FY4/sovella	solutions.md	heat-into	Matka on kuitenkin pitkä, joten energiasta muuttuu lämmöksi yli puolet: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
+FY4/sovella	solutions.md	heat-into	Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
+FY5/fy5-12	exercises/solutions.md	heat-into	Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.
+FY5/fy5-8	exercises/solutions.md	heat-into	Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön: jousi ja jänne liikkuvat its
+FY6/fy6-10	exercises/exercises.json	heat-into	Varaus ei muutu lämmöksi eikä häviä.
+FY6/fy6-10	exercises/solutions.md	heat-into	Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
+FY6/sovella	solutions.md	heat-into	- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
+FY7/fy7-8	exercises/exercises.json	heat-into	Ilman kuormaa muuntaja ottaa silti tehon, joka muuttuu rautasydämessä lämmöksi.
+FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?
+FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?
+FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi?
+FY7/fy7-8	exercises/exercises.json	heat-into	Kuvaajassa on lämmöksi muuttuvan tehon osuus siirretystä tehosta siirtojännitteen funktiona.
+FY7/fy7-8	exercises/exercises.json	heat-into	Mikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka?
+FY7/fy7-8	exercises/exercises.json	heat-into	Opiskelijat rakensivat siirtojohdon pienoismallin vastuslangasta ja mittasivat, kuinka suuri teho langassa muuttuu lämmöksi eri virroilla.
+FY7/fy7-8	exercises/exercises.json	heat-into	Voimalaitos siirtää tehon johtoa pitkin, ja johdossa muuttuu lämmöksi teho $840\,\text{kW}$.
+FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L1-04 **Annettu:** johtimien yhteinen resistanssi $R = 2{,}5\,\Omega$, virta $I = 120\,\text{A}$ **Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{
+FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-01 **Annettu:** teho $P = 50\,\text{MW}$, siirtojännite $U = 110\,\text{kV}$, johtimien resistanssi $R = 4{,}0\,\Omega$ **Kysytty:** johdossa lämmök
+FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-04 **Annettu:** kuvaajan käyrä häviötehosta $P_\text{h}$ virran $I$ funktiona **Kysytty:** langan resistanssi $R$ ohmeina **Periaate:** Langassa läm
+FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-08 **Kysytty:** tuulivoimalan kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka.
+FY7/fy7-8	exercises/solutions.md	heat-into	Ilman kuormaa muuntaja ottaa silti tehon $P_0$ (rautasydämen lämpeneminen), ja kuormitettuna käämeissä muuttuu lämmöksi lisäksi $R I^2$.
+FY7/fy7-8	exercises/solutions.md	heat-into	Johdon virta määräytyy siirtojännitteestä, $I = P : U$, ja johtimissa lämmöksi muuttuva teho on $P_\text{h} = R I^2$.
+FY7/fy7-8	exercises/solutions.md	heat-into	Muuntajassa osa ensiötehosta muuttuu lämmöksi, joten $\eta < 1$.
+FY7/fy7-8	exercises/solutions.md	heat-into	Todellinen laturi ottaa hieman enemmän, koska osa energiasta muuttuu laturissa lämmöksi.
+FY7/fy7-8	exercises/solutions.md	heat-into	Todellisessa muuntajassa osa ensiötehosta muuttuu rautasydämessä ja käämeissä lämmöksi, joten $\eta < 1$.
+FY7/fy7-8	exit-ticket.json	heat-into	Miten johdossa lämmöksi muuttuva teho muuttuu?
+FY7/fy7-8	inquiry.json	heat-into	**Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{h}$ kilowatteina
+FY7/fy7-8	inquiry.json	heat-into	Johdon virta saadaan tehosta ja siirtojännitteestä, $I = P : U$, ja johdossa lämmöksi muuttuva teho on
+FY7/fy7-8	inquiry.json	heat-into	Johto muuttuu sitä punaisemmaksi, mitä suurempi osa tehosta muuttuu siinä lämmöksi.
+FY7/fy7-8	inquiry.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi?
+FY7/fy7-8	inquiry.json	heat-into	Miten johdossa lämmöksi muuttuva häviöteho muuttuu?
+FY7/fy7-8	inquiry.json	heat-into	Valitse siirtojännite, teho ja johdon pituus ja seuraa, kuinka suuri osa tehosta muuttuu johdossa lämmöksi.
+FY7/fy7-8	lesson.md	heat-into	Johdon virta ja johdossa lämmöksi muuttuva teho ovat ```latex \begin{aligned} &P = U I \\ &P_\text{h} = R I^2 = \frac{R P^2}{U^2} \end{aligned} ``` missä $P$ on
+FY7/fy7-8	lesson.md	heat-into	Lämmöksi muuttuva teho on verrannollinen virran neliöön, joten virta kannattaa pitää pienenä.
+FY7/koe	solutions.md	heat-into	Kaapelin resistanssissa virta muuttaa osan energiasta lämmöksi, ja häviöteho riippuu virran neliöstä.
+FY7/koe	solutions.md	heat-into	Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, joten se on sama kuin vetoteho.
+FY7/koe	tasks.json	heat-into	Toteaa, että sähköteho $eI = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, ja tämä on sama kuin vetoteho.
+FY7/koe	tasks.json	heat-into	Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu lämmöksi kaapelissa kummassakin vaihtoehdossa.
+FY7/sovella	solutions.md	heat-into	Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
+FY7/sovella	tasks.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\,\text{kV}$:n johtoa?
+FY7/sovella	tasks.json	heat-into	Osa tästä tehosta muuttuu siirtojohdossa lämmöksi, joten kaivoksen vastaanottama teho riippuu siirtohäviöstä.
+FY8/fy8-14	lesson.md	heat-into	Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodissa lämmöksi, ja vain pieni osa säteilee röntgenfotoneina.
+FY8/fy8-2	exercises/exercises.json	heat-into	Oletetaan, ettei energiaa siirry lämmöksi.
+FY8/fy8-2	exercises/exercises.json	heat-into	Oletetaan, että jokaista absorboitua fotonia kohti väriaine lähettää yhden fluoresenssifotonin ja että energia, joka ei lähde fotonina, muuttuu lämmöksi.
+FY8/fy8-2	exercises/exercises.json	heat-into	b) Missä väriaineessa lämmöksi muuttuva osuus on suurin, ja kuinka monta prosenttia absorboidun fotonin energiasta se on?
+FY8/fy8-2	exercises/exercises.json	heat-into	d) Neljäs väriaine D absorboi aallonpituuden $400\,\text{nm}$ valoa, ja jokaista absorboitua fotonia kohti $0{,}50\,\text{eV}$ muuttuu lämmöksi.
+FY8/fy8-2	exercises/solutions.md	heat-into	## fy8-2-L3-03 **Annettu:** absorboidun UV-fotonin aallonpituus $\lambda_\text{UV} = 365\,\text{nm}$, ensimmäisen lähetetyn fotonin energia $E_1 = 1{,}20\,\text
+FY8/fy8-2	exercises/solutions.md	heat-into	## fy8-2-L3-05 **Annettu:** absorboitu valo $\lambda_\text{abs}$ ja fluoresenssivalo $\lambda_\text{fl}$: A $365\,\text{nm}$ ja $450\,\text{nm}$, B $405\,\text{
+FY8/fy8-2	exercises/solutions.md	heat-into	Energia säilyy, joten absorboidun fotonin energia on lähetetyn fotonin energia ja lämmöksi muuttuva energia $Q$ yhteensä.
+FY8/fy8-2	exit-ticket.json	heat-into	Tavallisessa fluoresenssissa energiaa ei tule muualta, ja osa absorboidun fotonin energiasta muuttuu lämmöksi, joten lähetetyn fotonin energia on pienempi ja aa
+FY8/fy8-2	inquiry.json	heat-into	**Kysytty:** lämmöksi jäävä energia $E_\text{lämpö}$ yhtä fotonia kohti elektronivoltteina
+FY8/fy8-2	inquiry.json	heat-into	Absorboidun violetin fotonin energia on suurempi, joten lämmöksi jäävä energia $E_1 - E_2$ on positiivinen.
+FY8/fy8-2	inquiry.json	heat-into	Energia säilyy: absorboidun fotonin energia jakautuu lähetetyn fotonin energiaan ja lämpöön.
+FY8/fy8-2	inquiry.json	heat-into	Kuinka paljon energiaa jää väriaineeseen lämmöksi jokaista absorboitua fotonia kohti?
+FY8/fy8-2	inquiry.json	heat-into	Lämmöksi jää niiden erotus.
+FY8/fy8-2	inquiry.json	heat-into	Siitä osa lähtee vihreänä fotonina; lämmöksi jää vain erotus $E_1 - E_2$.
+FY8/fy8-2	lesson.md	heat-into	- Fluoresenssissa aine absorboi lyhytaaltoista valoa ja lähettää pidempiaaltoista, koska osa energiasta muuttuu lämmöksi.
+FY8/fy8-6	exercises/exercises.json	heat-into	Kuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti?
+FY8/fy8-6	exercises/solutions.md	heat-into	## fy8-6-L2-04 **Annettu:** sinisen fotonin aallonpituus $\lambda_1 = 450\,\text{nm}$, keltaisen fotonin aallonpituus $\lambda_2 = 560\,\text{nm}$, $h = 6{,}626
+FY8/fy8-6	exercises/solutions.md	heat-into	Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen lämmöksi.
+FY8/fy8-6	exercises/solutions.md	heat-into	Noin viidennes sinisen fotonin energiasta muuttuu lämmöksi.
+FY8/fy8-6	inquiry.json	heat-into	Ylimääräinen energia muuttuu LEDissä lämmöksi, ja väri pysyy punaisena.
+FY8/fy8-6	lesson.md	heat-into	Ylimääräinen energia muuttuu LEDissä lämmöksi.
+FY8/fy8-7	exercises/exercises.json	heat-into	Oleta, että kaikki pumppausvalo absorboituu aineeseen ja että se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu lämmöksi.
+FY8/fy8-7	exercises/solutions.md	heat-into	## fy8-7-L2-01 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 808\,\text{nm}$, laservalon aallonpituus $\lambda_\text{L} = 1064\,\text{nm}$; yksi p
+FY8/fy8-7	exercises/solutions.md	heat-into	Pumppausfotonin ja laserfotonin energioiden erotus jää aineeseen lämmöksi, vaikka jokainen pumppausfotoni tuottaisi laserfotonin.
+FY8/fy8-7	inquiry.json	heat-into	**Periaate:** Energia säilyy: pumppausvalon teho jakautuu säteeseen ja lämpöön.
+FY8/fy8-7	inquiry.json	heat-into	Jokainen pumppausfotoni voi tuottaa enintään yhden laserfotonin, ja energiaero jää kuituun lämmöksi.
+FY8/sovella	solutions.md	heat-into	### c) **Kysytty:** miksi polttoaineeksi valitaan plutonium-238 ja mikä on säteilyturvallisuuden kannalta tärkeää **Periaate:** Polttoaineelta vaaditaan kolmea 
+FY8/sovella	solutions.md	heat-into	*Sammuminen.* Fissioiden energia muuttui lämmöksi, ja malmi kuumeni niin, että vesi kiehui pois.
+FY8/sovella	solutions.md	heat-into	Plutonium-238:n alfahiukkaset taas pysähtyvät jo polttoaineeseen, jolloin niiden energia muuttuu lämmöksi siellä, missä sitä tarvitaan.
+FY8/sovella	tasks.json	heat-into	Hajoamisen energia muuttuu generaattorissa lämmöksi, ja lämpösähköparit muuttavat osan lämmöstä sähköksi.
+FY8/sovella	tasks.json	heat-into	Koboltti-60: läpitunkeva gammasäteily vaatisi raskaan suojan ja vaurioittaisi elektroniikkaa, kun taas alfahiukkaset pysähtyvät jo polttoaineeseen ja niiden ene
+FY8/sovella	tasks.json	heat-into	Oletetaan, että hajoamisen koko energia muuttuu generaattorissa lämmöksi.
+units/fy9-lampo	sovella/solutions.md	heat-into	### d) **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi **Periaate:** Energia säilyy: kuumentimen

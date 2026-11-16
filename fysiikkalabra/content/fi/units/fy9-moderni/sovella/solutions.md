@@ -389,6 +389,72 @@ $$ ja $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 
 ### Yleisiä virheitä
 - a-kohdassa hyötysuhde lasketaan väärin päin, $\tfrac{4300}{1600}$, tai megaelektronivoltteja ei muunneta jouleiksi.
-- b-kohdassa massaksi otetaan $\Delta m$, eli väitetään, että koko polttoaine muuttuu energiaksi, tai $\Delta m$ lasketaan sähköenergiasta lämpöenergian sijaan.
+- b-kohdassa massaksi otetaan $\Delta m$, eli väitetään, että koko polttoaine muuttuu energiaksi, tai $\Delta m$ lasketaan sähkötehosta lämpötehon sijaan.
 - c-kohdassa merivedelle siirtyväksi tehoksi otetaan koko lämpöteho $4300\,\text{MW}$ tai sähköteho $1600\,\text{MW}$.
 - d-kohdassa hyötysuhteella kerrotaan eikä jaeta, jolloin hiiltä tulee $6{,}25$-kertaisesti liian vähän, tai kilogrammat jätetään muuntamatta tonneiksi.
+
+## fy9-moderni-s7
+
+### a)
+**Kysytty:** miten fuusioreaktio saatiin aikaan ja mitä aineiston kaksi energiaa tarkoittavat
+**Periaate:** Fuusiossa kevyet ytimet yhdistyvät raskaammaksi ytimeksi, ja energiaa vapautuu. Ytimet ovat positiivisesti varattuja ja hylkivät toisiaan, joten ne pääsevät yhdistymään vain hyvin kuumassa ja tiheässä aineessa (luku *Fissio, fuusio ja ydinvoima*).
+**Mallivastaus:** Aineiston mukaan (Yle Uutiset 12.12.2022, tarkistettu 16.11.2026) koe tehtiin Lawrence Livermoren kansallisessa laboratoriossa Kaliforniassa. Suurten laserien säteet kohdistettiin yhteen pisteeseen, jossa polttoaine oli. Laserien tuoma energia kuumensi polttoaineen niin, että sen ytimet yhdistyivät raskaammiksi ytimiksi: syntyi heliumia, ja energiaa vapautui. Energioista $3{,}15\,\text{MJ}$ on fuusioreaktiossa vapautunut energia. $2{,}05\,\text{MJ}$ on energia, joka kokeessa käytettiin reaktion käynnistämiseen, eli laserien polttoaineeseen tuoma energia. Artikkelin korjausmerkinnän mukaan siinä ei ole mukana laserien toimintaan kulunutta energiaa.
+
+### b)
+**Annettu:** fuusiossa vapautunut energia $E_\text{f} = 3{,}15\,\text{MJ}$, laserien polttoaineeseen tuoma energia $E_\text{l} = 2{,}05\,\text{MJ}$ (aineisto, tarkistettu 16.11.2026)
+**Kysytty:** energioiden suhde $\tfrac{E_\text{f}}{E_\text{l}}$ ja erotus $\Delta E$ sekä niiden tulkinta
+**Periaate:** Suhde kertoo, kuinka moninkertainen vapautunut energia on tuotuun energiaan verrattuna. Erotus kertoo, kuinka paljon enemmän energiaa polttoaineesta vapautui kuin siihen tuotiin. Molemmat koskevat samaa systeemiä, polttoainetta.
+**Kaava:** $\dfrac{E_\text{f}}{E_\text{l}}$ ja $\Delta E = E_\text{f} - E_\text{l}$
+**Muunnokset:** Ei tarvita, koska molemmat energiat ovat megajouleina.
+**Sijoitus:** $\dfrac{E_\text{f}}{E_\text{l}} = \dfrac{3{,}15\,\text{MJ}}{2{,}05\,\text{MJ}} = 1{,}537$ ja $\Delta E = 3{,}15\,\text{MJ} - 2{,}05\,\text{MJ} = 1{,}10\,\text{MJ}$
+**Vastaus:** Energioiden suhde on noin $1{,}54$ ja erotus $1{,}10\,\text{MJ}$, kolme merkitsevää numeroa kuten aineiston energioissa. Fuusiossa vapautui siis noin puolitoistakertainen energia, $1{,}10\,\text{MJ}$ enemmän kuin laserit toivat polttoaineeseen. Suhde on suurempi kuin $1$, ja juuri se oli kokeen uusi tulos.
+**Järkevyys:** Erotus $1{,}10\,\text{MJ}$ on noin $54\,\%$ energiasta $2{,}05\,\text{MJ}$, mikä vastaa suhdetta $1{,}54$. Suhteella ei ole yksikköä, koska megajoulet supistuvat.
+
+### c)
+**Annettu:** lämpömäärä $Q = 3{,}15\,\text{MJ}$, alkulämpötila $20\,{}^\circ\text{C}$, loppulämpötila $100\,{}^\circ\text{C}$, veden ominaislämpökapasiteetti $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Kysytty:** veden massa $m$ ja se, pitääkö artikkelin vertailu paikkansa
+**Periaate:** Kun vesi lämpenee eikä sen olomuoto muutu, sen vastaanottama lämpömäärä on $Q = c_\text{v}m\Delta T$ (luku *Aineen lämpeneminen ja jäähtyminen*). Oletetaan, että koko energia siirtyy veteen. Kiehauttaminen tarkoittaa veden lämmittämistä kiehumispisteeseen, joten höyrystymistä ei lasketa mukaan.
+**Kaava:** $Q = c_\text{v}m\Delta T$, joten $m = \dfrac{Q}{c_\text{v}\Delta T}$
+**Muunnokset:** $3{,}15\,\text{MJ} = 3{,}15 \cdot 10^{6}\,\text{J}$, $4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C} = 80\,\text{K}$
+**Sijoitus:** $$
+\begin{aligned}
+m &= \dfrac{3{,}15 \cdot 10^{6}\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{K}} \\
+&= \dfrac{3{,}15 \cdot 10^{6}\,\text{J}}{335\,200\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 9{,}397\,\text{kg}
+\end{aligned}
+$$
+**Vastaus:** Energia lämmittää kiehumispisteeseen noin $9{,}4\,\text{kg}$ eli noin $9{,}4$ litraa vettä. Vastaus annetaan kahdella merkitsevällä numerolla, koska lämpötilaero $80\,\text{K}$ tunnetaan kahden merkitsevän numeron tarkkuudella. Artikkelin vertailu pitää paikkansa: määrä on muutama kattilallinen, esimerkiksi kolme kolmen litran kattilallista.
+**Järkevyys:** Yhden litran lämmittämiseen tarvitaan $335\,200\,\text{J} \approx 0{,}34\,\text{MJ}$, joten $3{,}15\,\text{MJ}$ riittää noin yhdeksään litraan. Kokeen energia on arjen mittakaavassa pieni, vaikka tulos oli tieteellisesti merkittävä.
+
+### d)
+**Kysytty:** miksi tulos ei osoita, että koko koelaitteisto tuotti enemmän energiaa kuin kulutti, ja kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella
+**Periaate:** Energiatase riippuu siitä, miten systeemi rajataan (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*). Laitteen hyötysuhde on hyödyksi saadun energian ja laitteen ottaman energian suhde (luku *Hyötysuhde*). Lämpövoimala muuttaa sähköksi vain osan lämpönä saamastaan energiasta (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).
+**Mallivastaus:** Vertailu $3{,}15\,\text{MJ} > 2{,}05\,\text{MJ}$ koskee vain polttoainetta: siitä vapautui enemmän energiaa kuin laserit siihen toivat. Aineiston mukaan luvussa $2{,}05\,\text{MJ}$ ei ole mukana laserien toimintaan kulunutta energiaa. Kun systeemiksi rajataan koko koelaitteisto, sen ottama energia on verkosta otettu sähköenergia $E_\text{v} \approx 300\,\text{MJ}$. Silloin $$
+\begin{aligned}
+\dfrac{E_\text{f}}{E_\text{v}} &= \dfrac{3{,}15\,\text{MJ}}{300\,\text{MJ}} \\
+&= 0{,}0105 \approx 1\,\%
+\end{aligned}
+$$ Fuusiossa vapautui siis vain noin sadasosa energiasta, jonka laitteisto otti verkosta. Polttoaineeseen päätyi laserien ottamasta energiasta vain $\dfrac{2{,}05\,\text{MJ}}{300\,\text{MJ}} \approx 0{,}7\,\%$. Loppu kasvatti laitteiston ja ympäristön sisäenergiaa. Lisäksi vapautunutta energiaa ei muutettu sähköksi. Jos se otettaisiin talteen lämpönä ja lämpövoimala muuttaisi siitä kolmasosan sähköksi, sähköä saataisiin noin $\tfrac{1}{3} \cdot 3{,}15\,\text{MJ} = 1{,}05\,\text{MJ}$. Se on noin $0{,}35\,\%$ eli alle puoli prosenttia verkosta otetusta energiasta. Koko laitteisto kulutti siis noin sata kertaa enemmän energiaa kuin fuusiossa vapautui. Voimalassa fuusiosta saadun sähköenergian pitäisi olla selvästi suurempi kuin laitteiston ottama sähköenergia, ja laukauksia pitäisi toistaa jatkuvasti.
+
+### e)
+**Kysytty:** mitä keksityssä otsikossa pitäisi täsmentää ja miksi tulos ei riko energian säilymistä
+**Periaate:** Energia säilyy: sitä ei synny tyhjästä eikä häviä (luku *Energialajit ja energian säilyminen*). Ydinreaktiossa vapautuva energia vastaa massan pienenemistä, $E = \Delta m c^2$ (luvut *Massavaje ja ytimen sidosenergia* ja *Fissio, fuusio ja ydinvoima*). Väitettä arvioitaessa tarkistetaan, mitä systeemiä ja mitä energioita se koskee.
+**Mallivastaus:** Otsikossa on kolme täsmennettävää asiaa. Ensinnäkin kyseessä ei ole voimala vaan yksittäinen laboratoriokoe. Sähköä ei tuotettu lainkaan, ja aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä. Toiseksi ”enemmän kuin kuluttaa” pätee vain polttoaineen energiataseeseen: polttoaineesta vapautui $3{,}15\,\text{MJ}$, kun laserit toivat siihen $2{,}05\,\text{MJ}$. Koko laitteisto kulutti moninkertaisesti enemmän energiaa kuin fuusiossa vapautui (d-kohta). Kolmanneksi sana ”jo” antaa ymmärtää, että tuotanto olisi jatkuvaa, vaikka kyse oli yhdestä laukauksesta. Artikkelin oma korjausmerkintä on esimerkki samasta täsmennyksestä: otsikkoa ja tekstiä muutettiin 13.12.2022, jotta lukija ei luulisi laserien energian olevan mukana luvussa $2{,}05\,\text{MJ}$. Täsmällisempi otsikko olisi esimerkiksi ”Fuusiokokeessa polttoaineesta vapautui ensi kertaa enemmän energiaa kuin laserit siihen toivat”. Tulos ei riko energian säilymistä. Ylimääräinen $1{,}10\,\text{MJ}$ ei synny tyhjästä: fuusiossa syntyvät ytimet ovat lujemmin sidottuja kuin lähtöytimet, joten reaktiotuotteiden massa on pienempi kuin lähtöaineiden. Vapautunut energia vastaa massan pienenemistä $$
+\begin{aligned}
+\Delta m &= \dfrac{E_\text{f}}{c^2} \\
+&= \dfrac{3{,}15 \cdot 10^{6}\,\text{J}}{(2{,}998 \cdot 10^{8}\,\text{m/s})^2} \\
+&\approx 3{,}5 \cdot 10^{-11}\,\text{kg}
+\end{aligned}
+$$ Se on noin $35$ nanogrammaa.
+
+### Yleisiä virheitä
+- a-kohdassa energiat luetellaan, mutta ei kerrota, kumpi vapautui fuusiossa ja kumpi tuotiin polttoaineeseen.
+- b-kohdassa suhde lasketaan toisin päin, $\tfrac{2{,}05}{3{,}15} \approx 0{,}651$, ja se tulkitaan silti niin, että energiaa vapautui $0{,}65$-kertaisesti.
+- c-kohdassa megajouleja tai kilojouleja ei muunneta jouleiksi, tai lämpötilan muutokseksi otetaan $100\,\text{K}$ tai $373\,\text{K}$.
+- d-kohdassa todetaan vain, että laserit kuluttavat energiaa, mutta ei verrata vapautunutta energiaa verkosta otettuun energiaan.
+- e-kohdassa väitetään, että fuusio ”luo” energiaa, tai otsikko hylätään kokonaan vääränä kertomatta, mikä kokeen tuloksessa pitää paikkansa.
+
+### Hyväksytään myös
+- b-kohdassa suhde toisin päin, $\tfrac{E_\text{l}}{E_\text{f}} \approx 0{,}651$, kun se on tulkittu oikein: polttoaineeseen tuotu energia oli noin $65\,\%$ vapautuneesta.
+- c-kohdassa lämpötilan muutos suoraan celsiusasteina, $\Delta T = 80\,{}^\circ\text{C}$, koska lämpötilaero on sama kelvineinä ja celsiusasteina.
+- c-kohdassa vastaus kolmella merkitsevällä numerolla, $9{,}40\,\text{kg}$, kun lämpötilat on tulkittu tarkoiksi arvoiksi.

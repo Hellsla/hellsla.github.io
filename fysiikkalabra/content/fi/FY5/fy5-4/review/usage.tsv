@@ -1,0 +1,26 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	443532	32	5058	381575	56867	65082	15	46	20		0.2691	transcript	89f82cdeeca1
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	369615	18	3236	321031	45330	52471	9	27	11		0.2099	transcript	493dee64205b
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	481983	28	3911	426425	51619	58801	13	82	18		0.2535	transcript	50ebc5ff0a77
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	417721	20	2403	371348	43950	50993	10	24	13		0.2082	transcript	69d199dcf9ff
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	212866	12	2387	147114	63353	69686	5	22	5		0.2117	transcript	abd3a58929d0
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	164065	8	2540	115297	46220	52778	4	31	5		0.3050	transcript	a4a6134ecf3b
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	166954	14	1809	115671	49460	55841	6	31	7		0.3067	transcript	d17c96b6c86d
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	209822	16	2206	162567	45033	52599	7	17	11		0.1672	transcript	f2b5d92d2852
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	59332	6	1631	38408	19287	25516	3	13	3		0.0722	transcript	4e66dbf9631a
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	full	2	803412	20	7795	685127	110470	117294	9	95	9		0.8454	transcript	115af5d0068d
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	95619	12	1075	58736	35796	41949	5	11	6		0.1120	transcript	7b33c04ad245
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	291542	12	7035	218124	66371	73206	6	59	6		0.2799	transcript	c16ab0cb6939
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	226181	14	3579	158285	64303	70810	6	33	6		0.2282	transcript	6f8661242439
+2026-11-15T21:06Z	fy5-4	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	393938	18	2580	330427	60913	68278	8	23	12		0.2442	transcript	7421e35caf1b
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	full	1	746489	18	10290	618073	118108	124964	8	122	8		0.9200	transcript	937dfa1286b6
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	267753	14	2690	208357	56692	63318	6	38	6		0.3790	transcript	c3f0b635edaf
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	95945	10	1809	77618	16508	22725	5	16	5		0.0749	transcript	7c0677e8c687
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	full	1	1245815	26	10468	1115004	120317	127069	12	128	12		1.0340	transcript	c3a62d13544b
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	178122	14	3673	143351	31084	37681	7	30	7		0.1431	transcript	f235d1b68d4d
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	196569	14	2530	137044	56981	63550	6	39	6		0.3630	transcript	a4dad1e8a670
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	2	185442	12	3220	142370	39840	46197	6	29	6		0.1603	transcript	3be8730eda92
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	full	2	1566996	44	13452	1448992	104508	111492	21	193	21		1.0816	transcript	8d465c07c9c5
+2026-11-15T21:06Z	fy5-4	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	59136	6	1528	38694	18908	25684	3	12	4		0.0703	transcript	eb9f079727dd
+2026-11-15T21:06Z	fy5-4	FY5	science-reviewer	review	claude-opus-5-5	medium	full	2	632658	18	6951	525290	100399	107539	9	81	10		0.7461	transcript	69d9ab2b611f
+2026-11-15T21:06Z	fy5-4	FY5	orchestrator	orchestrate	claude-opus-5-5		session/7	1	17818902	91	22960	17705924	89927	100031	296	3826	372		4.7202	transcript	853f325a1467
