@@ -273,3 +273,33 @@ The engines do the same work, but that does not make the efficiency the same: th
 **Substitution:** $\Delta s = \dfrac{0.0030\,\text{m}^3}{0.0050\,\text{m}^2} = 0.60\,\text{m}$
 **Answer:** $\Delta s \approx 0.60\,\text{m}$, two significant figures, as in the volumes read and the area.
 **Reasonableness:** At the start the length of the gas column is $$\begin{aligned} &0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.20\,\text{m} \end{aligned}$$ and at the end $$\begin{aligned} &0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.80\,\text{m} \end{aligned}$$. The difference is $0.60\,\text{m}$, as calculated.
+
+## fy3-11-L2-10
+**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$. From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
+**Find:** a) what the coefficient of performance means and how it differs from an efficiency, b) the heat $Q_1$ transferred to the room and the heat $Q_2$ taken from the surroundings in kilowatt-hours ($Q_2$ for the answer field), c) the effect of the temperatures on the coefficient of performance, d) an assessment of the claim
+**Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump. The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
+**Formula:** $Q_1 = Q_2 + W$ and $\varepsilon = \dfrac{Q_1}{W}$, from which $Q_1 = \varepsilon W$ and $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
+**Conversions:** The electrical energy is given and the heats are asked for in kilowatt-hours, so no conversions are needed. The coefficient of performance has no unit.
+**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$. An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$. The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$. A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings. Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$. The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
+
+b) The heat transferred to the room:
+```latex
+\begin{aligned}
+Q_1 &= \varepsilon W \\
+&= 4.0 \cdot 2.5\,\text{kWh} \\
+&= 10\,\text{kWh}
+\end{aligned}
+```
+The heat taken from the surroundings:
+```latex
+\begin{aligned}
+Q_2 &= (\varepsilon - 1)\,W \\
+&= (4.0 - 1) \cdot 2.5\,\text{kWh} \\
+&= 7.5\,\text{kWh}
+\end{aligned}
+```
+c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is. When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases. In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost. In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+
+d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room. The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room. The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings. The only true part of the claim is that $Q_1 > W$.
+**Answer:** b) $Q_1 = 10\,\text{kWh}$ and $Q_2 = 7.5\,\text{kWh}$, two significant figures, as in the initial values $4.0$ and $2.5\,\text{kWh}$. The answer field takes $7.5\,\text{kWh}$. a) The coefficient of performance is the ratio of the heat given out to the room to the electrical energy, not an energy-conversion efficiency. c) The coefficient of performance decreases when the temperature difference grows. d) The claim is wrong, because the energy balance holds when the heat taken from the surroundings is counted.
+**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$. An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions. According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$. The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.
