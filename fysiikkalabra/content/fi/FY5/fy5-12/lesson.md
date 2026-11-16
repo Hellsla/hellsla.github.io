@@ -253,7 +253,9 @@ Kaksi kaiutinta on kytketty samaan äänigeneraattoriin, joten ne soittavat sama
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Taajuus $f = 680\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, etäisyydet $s_1 = 4{,}25\,\text{m}$ ja $s_2 = 3{,}00\,\text{m}$. Kysytään, onko interferenssi kuulijan kohdalla vahvistava vai heikentävä.
+**Tunnetut ja kysytty.** Taajuus $f = 680\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, etäisyydet $s_1 = 4{,}25\,\text{m}$ ja $s_2 = 3{,}00\,\text{m}$.
+
+Kysytään, onko interferenssi kuulijan kohdalla vahvistava vai heikentävä.
 
 <!-- vaihe -->
 

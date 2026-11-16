@@ -123,12 +123,16 @@
 ## fy5-10-L1-06
 **Kysytty:** mikä väite pitkittäisestä aallosta on oikein, kun jousen päätä työnnetään edestakaisin jousen suunnassa.
 **Periaate:** Aallon tyyppi määräytyy sen mukaan, miten väliaineen kohdat värähtelevät etenemissuuntaan nähden. Poikittaisessa aallossa värähtely on kohtisuoraan etenemissuuntaa vastaan, pitkittäisessä etenemissuunnan suuntaista. Aalto ei kuljeta ainetta mukanaan, vaan kohdat värähtelevät tasapainoasemansa ympärillä.
-**Mallivastaus:** Kun jousen päätä työnnetään edestakaisin jousen suunnassa, jousen kierteet liikkuvat etenemissuunnan suuntaisesti: ne painuvat yhteen ja erkanevat, ja jouseen syntyy eteneviä tihentymiä ja harvennuksia. Oikea väite on siis se, että jousen kohdat värähtelevät etenemissuunnan suuntaisesti. Väite sivuttaisesta värähtelystä kuvaa poikittaista aaltoa. Väite, että kohdat kulkevat mukana vastaanottajalle, on väärä, koska kohdat palaavat paikalleen ja vain häiriö ja energia etenevät. Harjat ja aallonpohjat kuuluvat poikittaiseen aaltoon; pitkittäisessä aallossa on tihentymiä ja harvennuksia. Väite, että kohdat pysyvät paikallaan, on väärä, koska pitkittäisessä aallossa jousen kohdat liikkuvat edestakaisin jousen suuntaisesti tasapainoasemiensa ympärillä. Ääni ilmassa on pitkittäinen aalto.
+**Mallivastaus:** Kun jousen päätä työnnetään edestakaisin jousen suunnassa, jousen kierteet liikkuvat etenemissuunnan suuntaisesti: ne painuvat yhteen ja erkanevat, ja jouseen syntyy eteneviä tihentymiä ja harvennuksia. Oikea väite on siis se, että jousen kohdat värähtelevät etenemissuunnan suuntaisesti. Väite sivuttaisesta värähtelystä kuvaa poikittaista aaltoa.
+
+Väite, että kohdat kulkevat mukana vastaanottajalle, on väärä, koska kohdat palaavat paikalleen ja vain häiriö ja energia etenevät. Harjat ja aallonpohjat kuuluvat poikittaiseen aaltoon; pitkittäisessä aallossa on tihentymiä ja harvennuksia. Väite, että kohdat pysyvät paikallaan, on väärä, koska pitkittäisessä aallossa jousen kohdat liikkuvat edestakaisin jousen suuntaisesti tasapainoasemiensa ympärillä. Ääni ilmassa on pitkittäinen aalto.
 
 ## fy5-10-L1-07
 **Kysytty:** mitä aallolle tapahtuu, kun narun heilutustaajuus kaksinkertaistetaan ja naru sekä sen jännitys pysyvät samoina.
 **Periaate:** Aallon nopeus määräytyy narun ominaisuuksista, sen jännityksestä ja massasta pituusyksikköä kohti, ei lähteen taajuudesta. Taajuus määräytyy lähteestä. Aaltoliikkeen perusyhtälöstä $v = f\lambda$ seuraa $\lambda = v/f$.
-**Mallivastaus:** Naru ja jännitys eivät muutu, joten aallon nopeus pysyy samana. Kun taajuus kaksinkertaistuu, aallonpituus $\lambda = v/f$ puolittuu. Käsi lähettää nyt kaksi kertaa niin monta harjaa samassa ajassa, mutta harjat etenevät silti yhtä pitkän matkan, joten ne mahtuvat lähemmäs toisiaan. Väite nopeuden kaksinkertaistumisesta on yleinen virhekäsitys, koska tiheämpi heilutus ei vie aaltoa nopeammin eteenpäin. Väite aallonpituuden pysymisestä samana unohtaa, että aallonpituus riippuu nopeuden lisäksi taajuudesta, ja väite aallonpituuden kasvusta on perusyhtälön vastainen.
+**Mallivastaus:** Naru ja jännitys eivät muutu, joten aallon nopeus pysyy samana. Kun taajuus kaksinkertaistuu, aallonpituus $\lambda = v/f$ puolittuu. Käsi lähettää nyt kaksi kertaa niin monta harjaa samassa ajassa, mutta harjat etenevät silti yhtä pitkän matkan, joten ne mahtuvat lähemmäs toisiaan.
+
+Väite nopeuden kaksinkertaistumisesta on yleinen virhekäsitys, koska tiheämpi heilutus ei vie aaltoa nopeammin eteenpäin. Väite aallonpituuden pysymisestä samana unohtaa, että aallonpituus riippuu nopeuden lisäksi taajuudesta, ja väite aallonpituuden kasvusta on perusyhtälön vastainen.
 
 ## fy5-10-L1-08
 **Annettu:** salaman ja jyrinän aikaero $t = 4{,}0\,\text{s}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$
