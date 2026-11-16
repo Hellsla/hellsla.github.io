@@ -4,7 +4,7 @@
 **Periaate:** Satelliittiin vaikuttaa vain Maan gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Satelliitin massa supistuu pois.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Muunnokset:** $r = 7196\,\text{km} = 7{,}196 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}196 \cdot 10^{6}\,\text{m}}} = 7441\,\text{m/s} = 7{,}441\,\text{km/s}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}196 \cdot 10^{6}\,\text{m}}} = 7441\,\text{m/s} = 7{,}441\,\text{km/s}$
 **Vastaus:** $7{,}44\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$.
 **Järkevyys:** NOAA-20 kiertää noin $825\,\text{km}$:n korkeudella eli ylempänä kuin ISS, jonka nopeus on noin $7{,}66\,\text{km/s}$. Kauempana kiertävä satelliitti on hitaampi, joten hieman pienempi nopeus on odotettu.
 
@@ -24,7 +24,7 @@
 **Periaate:** Satelliittiin vaikuttaa vain gravitaatiovoima, joten se on kokonaisvoima. Newtonin toisen lain mukaan $\gamma \tfrac{Mm}{r^2} = m a_\text{n}$, joten normaalikiihtyvyys on sama kuin gravitaatiovoiman antama kiihtyvyys sillä etäisyydellä.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = m a_\text{n}$, josta $a_\text{n} = \dfrac{\gamma M}{r^2}$
 **Muunnokset:** $r = 42\,164\,\text{km} = 4{,}2164 \cdot 10^{7}\,\text{m}$
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $a_\text{n} = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(4{,}2164 \cdot 10^{7}\,\text{m})^2} = 0{,}2241\,\text{m/s}^2$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $a_\text{n} = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(4{,}2164 \cdot 10^{7}\,\text{m})^2} = 0{,}2241\,\text{m/s}^2$
 **Vastaus:** $0{,}224\,\text{m/s}^2$, kolme merkitsevää numeroa kuten Maan massassa.
 **Järkevyys:** Satelliitti on noin $6{,}6$ kertaa kauempana Maan keskipisteestä kuin maanpinta, joten kiihtyvyys on noin $\tfrac{9{,}81\,\text{m/s}^2}{6{,}6^2} \approx 0{,}23\,\text{m/s}^2$. Yksikkö: $\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \tfrac{\text{kg}}{\text{m}^2} = \tfrac{\text{N}}{\text{kg}} = \text{m/s}^2$.
 
@@ -44,7 +44,7 @@
 **Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima; keskuskappaleena on nyt Kuu.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Muunnokset:** $r = 1847\,\text{km} = 1{,}847 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 7{,}35 \cdot 10^{22}\,\text{kg} \\ &= 4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}847 \cdot 10^{6}\,\text{m}}} = 1630\,\text{m/s} = 1{,}630\,\text{km/s}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7{,}35 \cdot 10^{22}\,\text{kg} \\ &= 4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}847 \cdot 10^{6}\,\text{m}}} = 1630\,\text{m/s} = 1{,}630\,\text{km/s}$
 **Vastaus:** $1{,}63\,\text{km/s}$, kolme merkitsevää numeroa kuten Kuun massassa $7{,}35 \cdot 10^{22}\,\text{kg}$.
 **Järkevyys:** Kuun massa on noin $\tfrac{1}{81}$ Maan massasta ja radan säde noin $0{,}27$ kertaa ISS:n radan säde, joten nopeus on noin $7{,}7\,\text{km/s} \cdot \sqrt{\tfrac{1}{81 \cdot 0{,}27}} \approx 1{,}6\,\text{km/s}$.
 
@@ -54,7 +54,7 @@
 **Periaate:** Gravitaatiovoima on satelliitin ainoa voima ja siis ympyräliikkeen kokonaisvoima. Yhtälöstä ratkaistaan ensin radan säde $r$, joka mitataan Maan keskipisteestä, ja korkeus on $h = r - R$.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $r = \dfrac{\gamma M}{v^2}$ ja $h = r - R$
 **Muunnokset:** $v = 5{,}00\,\text{km/s} = 5000\,\text{m/s}$, $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $r = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1{,}5938 \cdot 10^{7}\,\text{m}$, joten $h = 1{,}5938 \cdot 10^{7}\,\text{m} - 6{,}371 \cdot 10^{6}\,\text{m} = 9{,}567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $r = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1{,}5938 \cdot 10^{7}\,\text{m}$, joten $h = 1{,}5938 \cdot 10^{7}\,\text{m} - 6{,}371 \cdot 10^{6}\,\text{m} = 9{,}567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
 **Vastaus:** $9{,}57 \cdot 10^{3}\,\text{km}$ eli noin $9570\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa $5{,}00\,\text{km/s}$.
 **Järkevyys:** Nopeus $5{,}00\,\text{km/s}$ on ISS:n $7{,}66\,\text{km/s}$ ja GPS-satelliitin $3{,}87\,\text{km/s}$ välissä, ja niin on myös radan säde $15\,900\,\text{km}$ ($6790\,\text{km}$ ja $26\,560\,\text{km}$). Tarkistus: $\sqrt{\tfrac{\gamma M}{r}} = \sqrt{\tfrac{3{,}984 \cdot 10^{14}}{1{,}594 \cdot 10^{7}}}\,\text{m/s} \approx 5000\,\text{m/s}$.
 
@@ -64,7 +64,7 @@
 **Periaate:** Luotaimeen vaikuttaa vain Marsin gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima. Radan säde mitataan Marsin keskipisteestä: $r = R + h$.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{R + h}}$
 **Muunnokset:** $r = 3390\,\text{km} + 400\,\text{km} = 3790\,\text{km} = 3{,}790 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 6{,}42 \cdot 10^{23}\,\text{kg} \\ &= 4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{3{,}790 \cdot 10^{6}\,\text{m}}} = 3362\,\text{m/s} = 3{,}362\,\text{km/s}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 6{,}42 \cdot 10^{23}\,\text{kg} \\ &= 4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{3{,}790 \cdot 10^{6}\,\text{m}}} = 3362\,\text{m/s} = 3{,}362\,\text{km/s}$
 **Vastaus:** $3{,}36\,\text{km/s}$, kolme merkitsevää numeroa kuten Marsin massassa $6{,}42 \cdot 10^{23}\,\text{kg}$.
 **Järkevyys:** Samalla korkeudella Maan ympäri nopeus on noin $7{,}7\,\text{km/s}$. Marsin massa on vain noin kymmenesosa Maan massasta ja säde noin puolet, joten nopeuden pitää olla selvästi pienempi: $7{,}7\,\text{km/s} \cdot \sqrt{0{,}107 \cdot \tfrac{6771}{3790}} \approx 3{,}4\,\text{km/s}$.
 
@@ -84,7 +84,7 @@
 **Periaate:** Painottomuus ei tarkoita, että gravitaatio puuttuisi: astronauttiin vaikuttaa Maan gravitaatiovoima, joka lasketaan gravitaatiolaista etäisyydellä $r = R + h$ Maan keskipisteestä. Leijuminen johtuu vapaasta putoamisesta, ei voiman puuttumisesta.
 **Kaava:** $F = \gamma \dfrac{M m}{r^2}$, missä $r = R + h$
 **Muunnokset:** $r = 6371\,\text{km} + 410\,\text{km} = 6781\,\text{km} = 6{,}781 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $F = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 75\,\text{kg}}{(6{,}781 \cdot 10^{6}\,\text{m})^2} = 649{,}9\,\text{N}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $F = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 75\,\text{kg}}{(6{,}781 \cdot 10^{6}\,\text{m})^2} = 649{,}9\,\text{N}$
 **Vastaus:** $650\,\text{N}$ eli $6{,}5 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $75\,\text{kg}$.
 **Järkevyys:** Maanpinnalla sama astronautti painaa $75\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 736\,\text{N}$. Asemalla voima on noin $88\,\%$ tästä, koska etäisyys keskipisteestä on vain noin $6\,\%$ suurempi: $\left(\tfrac{6371}{6781}\right)^2 \approx 0{,}88$.
 
@@ -94,7 +94,7 @@
 **Periaate:** Jotta satelliitti pysyy saman pinnan kohdan yläpuolella, sen kiertoajan on oltava Marsin pyörähdysaika ja sen on kierrettävä päiväntasaajan yläpuolella samaan suuntaan kuin Mars pyörii. Gravitaatiovoima on satelliitin ympyräliikkeen kokonaisvoima, ja nopeus on $v = \tfrac{2\pi r}{T}$.
 **Kaava:** $\dfrac{\gamma M}{r} = v^2 = \dfrac{4\pi^2 r^2}{T^2}$, josta $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$ ja $h = r - R$
 **Muunnokset:** $T = 24 \cdot 3600\,\text{s} + 37 \cdot 60\,\text{s} = 88\,620\,\text{s}$, $R = 3390\,\text{km} = 3{,}390 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** $$\begin{aligned} &\gamma M T^2 \\ &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 6{,}42 \cdot 10^{23}\,\text{kg} \cdot (88\,620\,\text{s})^2 \\ &= 3{,}3650 \cdot 10^{23}\,\text{m}^3 & \end{aligned}$$, joten $r = \sqrt[3]{\dfrac{3{,}3650 \cdot 10^{23}\,\text{m}^3}{4\pi^2}} = \sqrt[3]{8{,}524 \cdot 10^{21}\,\text{m}^3} = 2{,}0427 \cdot 10^{7}\,\text{m}$, joten $h = 2{,}0427 \cdot 10^{7}\,\text{m} - 3{,}390 \cdot 10^{6}\,\text{m} = 1{,}7037 \cdot 10^{7}\,\text{m} = 17\,037\,\text{km}$
+**Sijoitus:** $\gamma M T^2$ $= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ $\cdot 6{,}42 \cdot 10^{23}\,\text{kg} \cdot (88\,620\,\text{s})^2$ $= 3{,}3650 \cdot 10^{23}\,\text{m}^3$, joten $r = \sqrt[3]{\dfrac{3{,}3650 \cdot 10^{23}\,\text{m}^3}{4\pi^2}} = \sqrt[3]{8{,}524 \cdot 10^{21}\,\text{m}^3} = 2{,}0427 \cdot 10^{7}\,\text{m}$, joten $h = 2{,}0427 \cdot 10^{7}\,\text{m} - 3{,}390 \cdot 10^{6}\,\text{m} = 1{,}7037 \cdot 10^{7}\,\text{m} = 17\,037\,\text{km}$
 **Vastaus:** noin $1{,}70 \cdot 10^{4}\,\text{km}$ eli $17\,000\,\text{km}$, kolme merkitsevää numeroa kuten Marsin massassa $6{,}42 \cdot 10^{23}\,\text{kg}$.
 **Järkevyys:** Maan geostationaarinen rata on noin $35\,800\,\text{km}$:n korkeudella. Marsin pyörähdysaika on lähes sama kuin Maan, mutta massa vain noin kymmenesosa, joten sama kiertoaika saavutetaan pienemmällä säteellä: $r \propto \sqrt[3]{M}$ antaa $$\begin{aligned} &42\,164\,\text{km} \cdot \sqrt[3]{0{,}107} \\ &\approx 20\,000\,\text{km} \end{aligned}$$, mikä vastaa saatua kiertoradan sädettä $r = 20\,400\,\text{km}$.
 
@@ -114,7 +114,7 @@
 **Periaate:** Ihminen kiertää Maan pyöriessä ympyrää, jonka säde on $R$. Hän on painoton, kun maa ei paina häntä eli tukivoima on nolla: silloin gravitaatiovoima yksin riittää juuri ympyräliikkeen kokonaisvoimaksi, kuten ympyräradalla kiertävällä satelliitilla.
 **Kaava:** $\gamma \dfrac{Mm}{R^2} = \dfrac{mv^2}{R}$ ja $v = \dfrac{2\pi R}{T}$, joten $\dfrac{\gamma M}{R} = \dfrac{4\pi^2 R^2}{T^2}$ ja $T = 2\pi\sqrt{\dfrac{R^3}{\gamma M}}$
 **Muunnokset:** $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $T = 2\pi\sqrt{\dfrac{(6{,}371 \cdot 10^{6}\,\text{m})^3}{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5062\,\text{s} = 5062 : 60\,\text{min} = 84{,}36\,\text{min}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $T = 2\pi\sqrt{\dfrac{(6{,}371 \cdot 10^{6}\,\text{m})^3}{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5062\,\text{s} = 5062 : 60\,\text{min} = 84{,}36\,\text{min}$
 **Vastaus:** noin $84{,}4\,\text{min}$, kolme merkitsevää numeroa kuten Maan massassa.
 **Järkevyys:** Tämä on maanpinnan tasolla kiertävän satelliitin kiertoaika, ja ISS kiertää vain vähän ylempänä $92{,}8\,\text{min}$:ssa, joten tulos on oikeaa suuruusluokkaa ja hieman lyhyempi kuten pitää. Todellinen pyörähdysaika, noin $24\,\text{h}$, on noin $17$ kertaa pidempi, joten painottomuudesta ollaan kaukana.
 
@@ -129,7 +129,7 @@
 **Periaate:** Ioon vaikuttaa vain Jupiterin gravitaatiovoima, joten se on ympyräliikkeen kokonaisvoima. Keskuskappaleena on nyt Jupiter.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Muunnokset:** $r = 4{,}22 \cdot 10^{5}\,\text{km} = 4{,}22 \cdot 10^{8}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 1{,}90 \cdot 10^{27}\,\text{kg} \\ &= 1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $v = \sqrt{\dfrac{1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{4{,}22 \cdot 10^{8}\,\text{m}}} = 17\,335\,\text{m/s} = 17{,}335\,\text{km/s}$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1{,}90 \cdot 10^{27}\,\text{kg} \\ &= 1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{4{,}22 \cdot 10^{8}\,\text{m}}} = 17\,335\,\text{m/s} = 17{,}335\,\text{km/s}$
 **Vastaus:** $17{,}3\,\text{km/s}$, kolme merkitsevää numeroa kuten massassa $1{,}90 \cdot 10^{27}\,\text{kg}$.
 **Järkevyys:** Jupiterin massa on noin $318$ kertaa Maan massa ja Ion rata on noin $62$ kertaa niin suuri kuin ISS:n rata ($4{,}22 \cdot 10^{8} : 6{,}79 \cdot 10^{6}$). Nopeus on noin $$7{,}66\,\text{km/s} \cdot \sqrt{\tfrac{318}{62}} \approx 17\,\text{km/s}$$.
 
@@ -217,7 +217,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Kuvaajan lukeminen:** Kuvan vasemman puolen alle on merkitty Maan radan etäisyydet: pienin $147{,}1\,\text{milj. km}$ ja suurin $152{,}1\,\text{milj. km}$. Rata ja sen päälle piirretty katkoviivaympyrä eivät eroa toisistaan, joten ympyrämalli sopii.
 **Kaava:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ ja $a = \dfrac{\gamma M}{r^2}$
 **Muunnokset:** $r = \dfrac{147{,}1 + 152{,}1}{2}\,\text{milj. km} = 149{,}6\,\text{milj. km} = 1{,}496 \cdot 10^{11}\,\text{m}$; lopuksi $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 1{,}99 \cdot 10^{30}\,\text{kg} \\ &= 1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $a = \dfrac{1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1{,}496 \cdot 10^{11}\,\text{m})^2} = 5{,}934 \cdot 10^{-3}\,\text{m/s}^2 = 5{,}934\,\text{mm/s}^2$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1{,}99 \cdot 10^{30}\,\text{kg} \\ &= 1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $a = \dfrac{1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1{,}496 \cdot 10^{11}\,\text{m})^2} = 5{,}934 \cdot 10^{-3}\,\text{m/s}^2 = 5{,}934\,\text{mm/s}^2$
 **Vastaus:** $5{,}93\,\text{mm/s}^2$, kolme merkitsevää numeroa kuten Auringon massassa.
 **Järkevyys:** Kiihtyvyys on $\dfrac{v^2}{r} = \dfrac{(29{,}8 \cdot 10^{3}\,\text{m/s})^2}{1{,}496 \cdot 10^{11}\,\text{m}} \approx 5{,}9 \cdot 10^{-3}\,\text{m/s}^2$, sama kuin yllä. Se on alle tuhannesosa Maan putoamiskiihtyvyydestä $9{,}81\,\text{m/s}^2$, ja Aurinko on hyvin kaukana.
 
@@ -227,7 +227,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Periaate:** Kuun gravitaatiovoima massaltaan $m$ olevaan luotaimeen on $F = \gamma \tfrac{Mm}{r^2}$, ja sen aiheuttama kiihtyvyys on $g = \tfrac{F}{m}$; luotaimen massa $m$ supistuu pois.
 **Kaava:** $g = \dfrac{\gamma M}{r^2}$
 **Muunnokset:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1{,}840 \cdot 10^{6}\,\text{m}$
-**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\cdot 7{,}346 \cdot 10^{22}\,\text{kg} \\ &= 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2 & \end{aligned}$$, joten $g = \dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1{,}840 \cdot 10^{6}\,\text{m})^2} = 1{,}448\,\text{m/s}^2$
+**Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7{,}346 \cdot 10^{22}\,\text{kg} \\ &= 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $g = \dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1{,}840 \cdot 10^{6}\,\text{m})^2} = 1{,}448\,\text{m/s}^2$
 **Vastaus:** $1{,}45\,\text{m/s}^2$, kolme merkitsevää numeroa: säteessä $1840\,\text{km}$ ja massassa $7{,}346 \cdot 10^{22}\,\text{kg}$ on neljä, mutta eri taulukoiden arvot poikkeavat hieman, joten neljäs numero ei olisi luotettava. Arvo on MAFY-taulukosta (Aurinkokunta, Kuu), ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kuun pinnalla (säde $1737\,\text{km}$) kiihtyvyys on $1{,}62\,\text{m/s}^2$. Rata on hieman kauempana keskipisteestä, ja suhde $\left(\tfrac{1737}{1840}\right)^2 = 0{,}891$ antaa $$1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2$$, eli sama pyöristyksen tarkkuudella.
 

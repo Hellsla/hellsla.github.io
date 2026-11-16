@@ -254,7 +254,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A seismograph station measures the difference in the arrival times of the P wave and the S wave to be $20\\,\\text{s}$, when $v_\\text{P} = 6.0\\,\\text{km/s}$ and $v_\\text{S} = 3.5\\,\\text{km/s}$. A student reasons: “The S wave falls behind the P wave by $2.5\\,\\text{km}$ every second, so $$\\begin{aligned} d &= (v_\\text{P} - v_\\text{S})\\,\\Delta t \\\\ &= 2.5\\,\\text{km/s} \\cdot 20\\,\\text{s} \\\\ &= 50\\,\\text{km} \\end{aligned}$$.” Where is the error?",
+      "prompt": "A seismograph station measures the difference in the arrival times of the P wave and the S wave to be $20\\,\\text{s}$, when $v_\\text{P} = 6.0\\,\\text{km/s}$ and $v_\\text{S} = 3.5\\,\\text{km/s}$. A student reasons: “The S wave falls behind the P wave by $2.5\\,\\text{km}$ every second, so $d = (v_\\text{P} - v_\\text{S})\\,\\Delta t$ $= 2.5\\,\\text{km/s} \\cdot 20\\,\\text{s}$ $= 50\\,\\text{km}$.” Where is the error?",
       "choices": [
         {
           "text": "The time difference is the difference of the travel times $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, so the correct result is $d = 168\\,\\text{km}$.",

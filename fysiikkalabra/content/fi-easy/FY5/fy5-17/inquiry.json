@@ -254,7 +254,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Seismografiasema mittaa P-aallon ja S-aallon saapumisaikojen eroksi $20\\,\\text{s}$, kun $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$. Opiskelija päättelee: ”S-aalto jää P-aallosta jälkeen $2{,}5\\,\\text{km}$ joka sekunti, joten $$\\begin{aligned} d &= (v_\\text{P} - v_\\text{S})\\,\\Delta t \\\\ &= 2{,}5\\,\\text{km/s} \\cdot 20\\,\\text{s} \\\\ &= 50\\,\\text{km} \\end{aligned}$$.” Missä on virhe?",
+      "prompt": "Seismografiasema mittaa P-aallon ja S-aallon saapumisaikojen eroksi $20\\,\\text{s}$, kun $v_\\text{P} = 6{,}0\\,\\text{km/s}$ ja $v_\\text{S} = 3{,}5\\,\\text{km/s}$. Opiskelija päättelee: ”S-aalto jää P-aallosta jälkeen $2{,}5\\,\\text{km}$ joka sekunti, joten $d = (v_\\text{P} - v_\\text{S})\\,\\Delta t$ $= 2{,}5\\,\\text{km/s} \\cdot 20\\,\\text{s}$ $= 50\\,\\text{km}$.” Missä on virhe?",
       "choices": [
         {
           "text": "Aikaero on kulkuaikojen erotus $\\Delta t = \\tfrac{d}{v_\\text{S}} - \\tfrac{d}{v_\\text{P}}$, joten oikea tulos on $d = 168\\,\\text{km}$.",

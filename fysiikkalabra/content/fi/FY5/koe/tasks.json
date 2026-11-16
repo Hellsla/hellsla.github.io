@@ -254,7 +254,7 @@
       {
        "key": "equation",
        "points": 2,
-       "detail": "Momenttiehto tuen B suhteen: $$\\begin{aligned} F_\\text{A} \\cdot 1{,}2\\,\\text{m} &= G \\cdot 0{,}8\\,\\text{m} \\\\ &+ F_\\text{h} \\cdot 2{,}8\\,\\text{m} \\end{aligned}$$, missä laudan paino vaikuttaa sen keskeltä."
+       "detail": "Momenttiehto tuen B suhteen: $$\\begin{aligned} F_\\text{A} \\cdot 1{,}2\\,\\text{m} &= G \\cdot 0{,}8\\,\\text{m} \\\\ &\\quad + F_\\text{h} \\cdot 2{,}8\\,\\text{m} \\end{aligned}$$, missä laudan paino vaikuttaa sen keskeltä."
       },
       {
        "key": "fbd_equations",
