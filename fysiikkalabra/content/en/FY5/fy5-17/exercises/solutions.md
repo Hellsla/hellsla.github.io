@@ -179,14 +179,18 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 ## fy5-17-L2-07
 **Find:** what the error is in the student’s solution
 **Principle:** Each wave covers the same distance $d$ at a constant speed, and the difference in arrival times is the difference of the travel times of the S wave and the P wave: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. The product $v_\text{P}\,\Delta t$ alone would be the distance the P wave would cover in the time $\Delta t$, and that is not the distance of the earthquake.
-**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins. The correct result is $$
+**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins.
+
+The correct result is $$
 \begin{aligned}
 d &= \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{6.0\,\text{km/s} - 3.5\,\text{km/s}} \\
 &\cdot 16.0\,\text{s} \\
 &= 134.4\,\text{km} \\
 &\approx 134\,\text{km}
 \end{aligned}
-$$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134.4\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$. Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
+$$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134.4\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$.
+
+Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
 
 ## fy5-17-L3-04
 **Given:** stations A$(0, 0)$, B$(120, 0)$ and C$(60, 90)$ in kilometres; $\Delta t_\text{A} = 10.0\,\text{s}$, $\Delta t_\text{B} = 7.5\,\text{s}$, $\Delta t_\text{C} = 5.9\,\text{s}$; $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$
@@ -236,7 +240,13 @@ $$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s}
 **Given:** the time, place, depth and magnitude of the earthquake chosen from the source material (part a); $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$ and the distance $d = 100\,\text{km}$ (part c)
 **Find:** a) the location and strength of the chosen earthquake, b) the differences between the P wave and the S wave, c) the difference in arrival times $\Delta t$ in seconds, d) the principle of locating
 **Principle:** The P wave and the S wave leave the earthquake at the same moment and travel the same distance to the station but at different speeds. At a constant speed the travel time is the distance divided by the speed, so the slower S wave falls further behind the P wave the longer the distance is. That is why the difference in arrival times tells the length of the distance.
-**Part a):** From the source material we read the date, municipality, coordinates, depth and magnitude of the chosen earthquake. The location is described with the municipality and the coordinates and the strength with the magnitude. Example, material read on 15 November 2026: earthquake number $149$ in the subpage’s table for the year 2026 occurred on 10 November 2026 at 01:34 UTC in Orivesi, in the region of Pirkanmaa. The coordinates in the table are $61.754{}^\circ$ north latitude and $24.361{}^\circ$ east longitude, that is, about $61.8{}^\circ\,\text{N}$ and $24.4{}^\circ\,\text{E}$. The earthquake began at a depth of about $18\,\text{km}$ ($18.3\,\text{km}$ in the table). Its magnitude was $1.0$. According to the institute’s Finnish page, earthquakes in Finland are weak, with magnitudes $0\text{–}4$, so this earthquake belongs to the weaker end even among the earthquakes of Finland. Seismometers recorded it, but the material does not say whether people noticed it. The heading of the 2026 table has an asterisk: results that are not yet in the Northern European earthquake catalogue (FENCAT) are preliminary analysis results, so the values may still be refined. Another earthquake or a later reading gives different values.
+**Part a):** From the source material we read the date, municipality, coordinates, depth and magnitude of the chosen earthquake. The location is described with the municipality and the coordinates and the strength with the magnitude.
+
+Example, material read on 15 November 2026: earthquake number $149$ in the subpage’s table for the year 2026 occurred on 10 November 2026 at 01:34 UTC in Orivesi, in the region of Pirkanmaa. The coordinates in the table are $61.754{}^\circ$ north latitude and $24.361{}^\circ$ east longitude, that is, about $61.8{}^\circ\,\text{N}$ and $24.4{}^\circ\,\text{E}$. The earthquake began at a depth of about $18\,\text{km}$ ($18.3\,\text{km}$ in the table). Its magnitude was $1.0$.
+
+According to the institute’s Finnish page, earthquakes in Finland are weak, with magnitudes $0\text{–}4$, so this earthquake belongs to the weaker end even among the earthquakes of Finland. Seismometers recorded it, but the material does not say whether people noticed it.
+
+The heading of the 2026 table has an asterisk: results that are not yet in the Northern European earthquake catalogue (FENCAT) are preliminary analysis results, so the values may still be refined. Another earthquake or a later reading gives different values.
 **Part b):** The P wave is a longitudinal wave: the material oscillates in the direction in which the wave travels, and compressions and rarefactions move along with the wave. The S wave is a transverse wave: the material oscillates perpendicular to the direction of travel. The P wave is faster, so it arrives at the station first and the S wave after it. The P wave travels both in a solid and in a liquid. The S wave travels only in a solid, because in a liquid neighbouring layers slide past each other and no force restores them.
 **Formula:** Part c): in uniform motion $v = \dfrac{d}{t}$, so the travel times are $t_\text{P} = \dfrac{d}{v_\text{P}}$ and $t_\text{S} = \dfrac{d}{v_\text{S}}$. The difference in arrival times is the difference of the travel times: $\Delta t = t_\text{S} - t_\text{P} = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$
 **Conversions:** The distance is in kilometres and the speeds in km/s, so the kilometres cancel and the time comes out directly in seconds. No conversions are needed.
