@@ -28,13 +28,15 @@ tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 k
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
-Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
-layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
-tehdään yksin ja yhdistetään ennen muita.
-Löydös (2026-11-15, #590): `check_lesson.py` layout-tarkistus (360 px, ratkaisu auki) ei havainnut fy8-1-L2-08:n
-sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, yksikkö Hz leikkautui; ulkoasukatselmoija
-löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
-kaikilla kielillä 360 ja 390 px:llä.
+Varattu: claude/ci-reproducibility
+
+Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
+samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
+(360, 390, 768, 1280 px) itse, kun Docker on käytettävissä; layout-virhe nimeää tehtävän, ratkaisun vaiheen ja elementin;
+`ci_scope.py` ei laske sivua muuttuneeksi, jos sen ainoa ero on `?v=`-tunnisteet.
+Jäljellä osa B (koordinaattorin luvalla, kun FY4:n, FY5:n ja FY7:n kaava-PR:t ovat mainissa): `docs/clipped-formulas.tsv`
+ja `docs/physics-phrases-known.tsv` kurssikohtaisiksi tiedostoiksi (esim. `docs/clipped-formulas/FY4.tsv`), jotta kaksi
+kurssi-PR:ää ei koske samaan tiedostoon. Jaettu muutos: tehdään yksin.
 
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
