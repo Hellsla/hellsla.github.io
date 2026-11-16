@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 77a3559ba8d13a7a
-SCOPE: delta added-exercise from 272247cd523312bd base 81db4a6fd727
+CONTENT-HASH: 4364693aa2edd197
+SCOPE: delta added-exercises fy1-7-L2-09 and fy1-7-L2-10 (work queue 19, English of the Finnish tasks that passed science)
 
 ## Blocking
 - none
@@ -9,9 +9,12 @@ SCOPE: delta added-exercise from 272247cd523312bd base 81db4a6fd727
 - none
 
 ## Checked
-- Added task fy1-7-L1-09 only; hash recomputed at start and end.
-- Table value: copper 8.96·10^3 kg/m^3; correct.
-- m = ρV solved from ρ = m/V before substitution; 50 cm^3 = 5.0·10^-5 m^3 right.
-- Independent recompute 0.448 kg = answers.py; the shown 0.45 kg is 0.45 % above it, within 4 %.
-- Two significant figures from V = 50 cm^3; reasonableness against water (50 g, ×9) is real.
-- en numbers identical to the Finnish original.
+- Hash (--exercises --lang en) 4364693aa2edd197 at start and end.
+- L2-09 recompute: ρ = 6m/(πd³) with 5.97e24 kg, 12 756 km → 5493 kg/m³ = answers.py = exercises.json; tolerance 0.02. Saturn 619 kg/m³.
+- Differences: Earth 0.38 % below NASA 5514, Saturn 9.8 % below 687 ("about 10 %"). Flattening explains both: (r_eq/r_vol)³ = 1.0033 for the Earth, 1.109 for Saturn, so "mostly from this flattening" is right.
+- NASA table values (mass, equatorial diameter, density of all eight planets) correct; group ranges, Jupiter ~4× less dense than Earth, Saturn ~0.42 of Neptune ("about half"), Mercury denser than Mars all check; claim in d) correctly refuted.
+- L2-10: example readings consistent with ρ = 2.70 kg/l (m/2.7 rounded to 0.01 l gives exactly the table's volumes; 25 kg → 9.26 l). Fit through origin 2699.7 kg/m³ = answers.py; answer 2700, tolerance 0.02.
+- Ratios 2.698–2.703 equal to three figures; fourth-figure scatter correctly attributed to rounding of the volume reading.
+- l → m³ conversion right; m = ρV through the origin justified physically (one substance); prediction 25.0 kg checked.
+- Part d) (glass at aluminium's density in the sim, uncertainty, hollow objects and mixtures) is right; water-level remark (floating vs sinking block) correct.
+- Readings labelled as example readings of the simulation; nothing invented presented as measured.

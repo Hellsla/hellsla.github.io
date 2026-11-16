@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 02a8e105c56f8695
-SCOPE: delta added-exercise from d5ef6e898d999fd5 base 81db4a6fd727
+CONTENT-HASH: c608f2d0b5a85f56
+SCOPE: delta added-exercise fy1-3-L2-09 (work queue 19, English of the Finnish task that passed science); one re-spaced formula in fy1-3-L1-09
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- content/en/FY1/fy1-3/exercises/solutions.md (fy1-3-L2-09, Model answer c) — "and next four experiments at Gran Sasso" reads oddly — "and later four experiments at Gran Sasso".
 
 ## Checked
-- Added task fy1-3-L1-09 only; hash recomputed at start and end.
-- Table value: water at 20 °C 0.998206 g/cm^3; correct.
-- Mean 5.050/5 = 1.010 g/cm^3; deviation (1.010 − 0.998206)/0.998206 = 1.1815 %; answers.py 1.18 agrees; the shown 1.2 % is 1.6 % from it, inside the 4 % tolerance.
-- Rounding to two figures justified by the two-figure difference 0.012 g/cm^3.
-- Half the range Δx = 0.005 g/cm^3 named an error estimate, as the passed set's solutions do; the conclusion says the systematic error is only probable (guardrail: todennäköisesti), and the remark is not graded.
-- All five results above the table value backs the systematic-error reading.
-- en numbers identical to the Finnish original.
+- Hash (--exercises --lang en) c608f2d0b5a85f56 at start and end.
+- Independent recompute: t = s/c = 7.30e5 m / 2.998e8 m/s = 2.435 ms; Δt/t = 2.464e-5 = 0.002464 % = answers.py = exercises.json; unit %, tolerance 0.03 covers 0.0025 %.
+- c·Δt = 17.99 m ≈ 18 m, about 90 times the 20 cm distance uncertainty ("almost a hundred"); t/Δt ≈ 40 600 matches "about 40 000".
+- Source facts (730 km, 20 cm, better than 10 ns, over 15 000 events, ~60 ns early, GPS oscillator and fibre connector, ICARUS and the four Gran Sasso experiments) match the Finnish version.
+- Error classified as systematic with the right reason; random error reduced by repetition, systematic not: consistent with the guardrails.
+- Part d) treats an outlying result as checked, not dismissed; consistent with the outlier guardrail.
+- Two significant figures justified by the 60 ns datum; reasonableness check real.
+- fy1-3-L1-09 change is whitespace in a formula only; numbers unchanged.
