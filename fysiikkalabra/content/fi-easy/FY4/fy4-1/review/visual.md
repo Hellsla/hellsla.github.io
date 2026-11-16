@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 35ac95aea1e384bf
+CONTENT-HASH: e53dcd34c0df4aa5
 
 ## Blocking
 
 ## Polish
+- [Minor] inquiry.json Kertaa-kysymys: vastausvaihtoehdon palaute viittaa 'sovelluksen lukemaan'; sovellus mainitaan vain Pohdinnan alussa, kysymyksessä puhutaan matkamittarista. Lisää kysymykseen 'Sovellus näyttää lopuksi $0\,\text{m}$' tai muotoile palaute: 'Käytit paikan muutosta $0\,\text{m}$.'
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+batch delta review: diff read (Kertaa-kysymys / kuvaus text, lukuyksiköt LaTeXina, päätteet, selkeä suomi); sim, figure row captures not re-opened as the diff does not change them. Plain quantities none found in the diff.

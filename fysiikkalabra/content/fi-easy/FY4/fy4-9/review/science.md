@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 755352f98e325e18
+CONTENT-HASH: 89c67b32e341a590
+
 ## Blocking
 
 ## Polish
+- None.
 
 ## Checked
-- Summary now $\overline{I} = \Delta\overline{p}$, the same as the formula table; no $\Delta\overline{p} = \overline{I}$ left in the chapter.
-- Formula table: $\overline{p} = m\overline{v}$, $\overline{I} = \overline{F}\,\Delta t$ (constant force), $\overline{I} = \Delta\overline{p}$ ($\overline{I}$ the impulse of the net force), units N·s and kg·m/s; inquiry $-2{,}00$ and $-4{,}00\,\text{N·s}$ and the $2{,}0\,\text{N·s}$ example unchanged; languages agree.
+batch delta review: Recomputed 1200 N / 60 kg = 20 m/s², Δv = 20·0,30 = 6,0 m/s; distractors 20 (acceleration) and 360 (F·Δt without mass) with correct feedback; net force 'keskimäärin' and direction stated; one correct option.

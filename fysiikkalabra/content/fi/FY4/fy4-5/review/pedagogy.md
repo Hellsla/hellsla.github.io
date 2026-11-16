@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ca8eb5a47ef424c1
-
+CONTENT-HASH: 5668acd76ff5e6e7
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Kevyt delta-katselmointi (opettaja 2026-11-07): diff origin/main -muutokset arvioitu ja niiden johdonmukaisuus tavoitteiden, yhteenvedon ja ratkaisujen kanssa.
-- Kiihtyvyys 2,96 m/s² ja tukivoima 71,8 N: luvut täsmäävät (118 = 71,8 + 45,9) ja tarkkuusperustelu on seurattavissa. Vanhoja arvoja (3,0; 72; 46) ei jäänyt tehtäviin, inquiryyn eikä muihin kohtiin.
-- Kokonaisluvut tehtävätiedoissa tulkitaan tarkoiksi (opettajan sääntö); teksti sanoo tämän käyttöpaikalla. Muutos ei paljasta vastausta ennen toimintaa eikä vaikuta palautteeseen, ennusteisiin tai kokeisiin.
-- Muu sisältö ennallaan (aiemmin hyväksytty). ESCALATE-tarvetta ei ole.
+batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.

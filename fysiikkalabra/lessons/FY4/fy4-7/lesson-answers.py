@@ -8,11 +8,11 @@ a = {}
 # Hook: a skateboarder rolls up a ramp, friction and air resistance small: h = v² / (2g)
 a["hook-h3"] = 3.0 ** 2 / (2 * g)                     # 0,459 m
 a["hook-h6"] = 6.0 ** 2 / (2 * g)                     # 1,83 m, four times
-# Retrieval: ball thrown up at 10 m/s: t = v/g, h = v t − ½ g t² = v²/(2g)
-a["pr-h"] = 10 ** 2 / (2 * g)                         # 5,1 m
-a["pr-noHalf"] = 10 ** 2 / g                          # mistake 10 m
-a["pr-time"] = 10 / g                                 # mistake: the time 1,0 s
-a["pr-noSquare"] = 10 / (2 * g)                       # mistake: v instead of v², 0,51 m
+# Retrieval: skateboarder leaves the halfpipe lip straight up at 3,0 m/s: t = v/g, h = v t − ½ g t² = v²/(2g)
+a["pr-h"] = 3.0 ** 2 / (2 * g)                        # 0,46 m (= hook-h3)
+a["pr-noHalf"] = 3.0 ** 2 / g                         # mistake 0,92 m
+a["pr-time"] = 3.0 / g                                # mistake: the time 0,31 s
+a["pr-noSquare"] = 3.0 / (2 * g)                      # mistake: v instead of v², 0,15 m
 
 
 # Simulation model: cart up a ramp at angle α, friction coefficient μ (0 or 0,10); up a = g(sin α + μ cos α),

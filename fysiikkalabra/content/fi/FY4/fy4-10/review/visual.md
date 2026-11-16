@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0173b7e5ffc8a051
+CONTENT-HASH: 5d18f1d6857e0da4
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- none
 
 ## Checked
-- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-12, fi-390-13, fi-390-14, fi-390-15, fi-390-16 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.

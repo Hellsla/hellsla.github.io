@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 685033f1f7ab9b40
-
+CONTENT-HASH: e53dcd34c0df4aa5
 ## Blocking
-None.
 
 ## Polish
-1. lesson.md Kaava: v_k is now named keskinopeus; the text still says 'keskinopeus' in prose, consistent. No change needed beyond keeping v_k (not v_ka) in fy4-3 only where an arithmetic mean is meant.
+- Option feedback refers to "sovelluksen lukemaa 0 m", but the prompt names only a matkamittari; say what the app shows in the prompt or reword the feedback.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+batch delta review: changed retrieval prompts, option feedback and answers are clear, consistent with the lesson and correct in numbers; selkeä suomi, terms explained, no answer disclosed before acting.

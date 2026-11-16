@@ -25,24 +25,24 @@
       "type": "choice",
       "title": "Kertaa: energiaperiaate",
       "optional": true,
-      "prompt": "Laatikko liukuu vaakasuoralla lattialla ja pysähtyy. Alussa sen liike-energia on $40\\,\\text{J}$. Kukaan ei työnnä eikä vedä laatikkoa. Mitä laatikon mekaaniselle energialle (liike-energian ja potentiaalienergian summalle) tapahtuu liukumisen aikana?",
+      "prompt": "Pulkka liukuu mäen juurella vaakasuoralla lumella ja pysähtyy. Alussa pulkan liike-energia on $40\\,\\text{J}$. Kukaan ei työnnä eikä vedä sitä. Mitä pulkan mekaaniselle energialle tapahtuu liukumisen aikana?",
       "choices": [
         {
           "text": "Se pienenee $40\\,\\text{J}$, koska kitka tekee negatiivista työtä.",
           "correct": true,
-          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit tämän: mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W$. Korkeus ei muutu. Siksi koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee pulkan liukumisen."
+          "feedback": "Oikein. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* opit, että mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, $\\Delta E_\\text{mek} = W$. Korkeus ei muutu. Siksi koko liike-energia $40\\,\\text{J}$ muuttuu sisäenergiaksi. Tässä luvussa sama periaate ratkaisee, kuinka kauas pulkat liukuvat."
         },
         {
-          "text": "Se ei muutu, koska energia ei häviä mihinkään.",
-          "feedback": "Kokonaisenergia säilyy, mutta mekaaninen energia ei säily. Kitka muuttaa sen laatikon ja lattian sisäenergiaksi. Mekaaninen energia säilyy vain, jos muut voimat kuin paino eivät tee työtä."
+          "text": "Se säilyy, koska energia ei häviä mihinkään.",
+          "feedback": "Kokonaisenergia säilyy, mutta mekaaninen energia ei säily. Kitka muuttaa sen pulkan ja lumen sisäenergiaksi. Mekaaninen energia säilyy vain, kun muut voimat kuin paino eivät tee työtä."
         },
         {
-          "text": "Se pienenee, koska tukivoima tekee negatiivisen työn ja pysäyttää laatikon.",
-          "feedback": "Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Laatikon pysäyttää kitka. Kitka osoittaa liikettä vastaan ja tekee negatiivisen työn."
+          "text": "Se pienenee, koska tukivoima tekee negatiivisen työn ja pysäyttää pulkan.",
+          "feedback": "Tukivoima on kohtisuorassa liikettä vastaan. Siksi se ei tee työtä. Pulkan pysäyttää kitka. Kitka osoittaa liikettä vastaan ja tekee negatiivisen työn."
         },
         {
-          "text": "Se muuttuu potentiaalienergiaksi, koska laatikko pysähtyy.",
-          "feedback": "Potentiaalienergia muuttuu vain, kun korkeus muuttuu. Laatikko liukuu vaakasuoralla lattialla. Liike-energia ei siis muutu potentiaalienergiaksi. Kitka muuttaa sen sisäenergiaksi."
+          "text": "Se muuttuu potentiaalienergiaksi, koska pulkka pysähtyy.",
+          "feedback": "Potentiaalienergia muuttuu vain, kun korkeus muuttuu. Pulkka liukuu vaakasuoralla lumella. Siksi liike-energia ei muutu potentiaalienergiaksi. Kitkan vuoksi se muuttuu sisäenergiaksi."
         }
       ]
     },

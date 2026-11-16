@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 40ff0db14ae9aea3
+CONTENT-HASH: f786547d739cd035
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] At 1280 px the photo is left-aligned and unfloated (no text wrap, empty space to its right) because of the site layout rule; by design. Caption is correct and clear.
+- [Minor] inquiry.json retrieval feedback — where a display `aligned` block sits mid-sentence and is followed by punctuation (fy4-7, 9, 10) the full stop/comma lands on its own line after the block; consider ending the sentence before the block.
 
 ## Checked
-batch delta review: opened en/fy4-14 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+batch delta review: diff is retrieval-question text/numbers in inquiry.json; opened the Pohdinta captures of fy4-1 and fy4-7 and the Ennusta capture and contact sheet of fy4-9 (maths, units, layout at 390 and 1280 px fine, no clipping); figures unchanged; sources of the other lessons' diffs read (units in LaTeX, decimal point, English fluent).

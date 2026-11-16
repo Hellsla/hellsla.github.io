@@ -20,4 +20,8 @@ a["inq-example-v"] = (120 - 20) / (40 - 0)           # example: v = 100 m / 40 s
 a["inq-example-x60"] = 20 + a["inq-example-v"] * 60  # x(60 s) = 20 m + 2,5 m/s · 60 s = 170 m
 a["inq-roundtrip-path"] = 2 * 4 * 2                  # tapaus 4, cart E: 4 s at 2 m/s out and 4 s back = 16 m, Δx = 0
 
+# Retrieval (Pohdinta): the cyclist's average speed, s/t = 4,0 km over 16 min of riding
+a["pr-keskivauhti"] = 4.0 / (16 / 60)                # 15 km/h
+a["pr-oneway"] = 2.0 / (16 / 60)                     # mistake: way there only, 7,5 km/h
+a["pr-perminute"] = 4.0 / 16                         # mistake: km/min read as km/h, 0,25
 print(json.dumps(a))

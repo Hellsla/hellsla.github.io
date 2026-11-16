@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 46894824552c9f59
+CONTENT-HASH: 35b940b761644836
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-14.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+batch delta review: diff read (figures.json kuvaukset, Kertaa-kysymys); opened fy4-14 fig-13-390 and fig-row-1280, layout intact, descriptions match figures. Other lessons: text diffs only, captures not opened.

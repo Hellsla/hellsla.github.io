@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fc9b1b1556f8049c
+CONTENT-HASH: a9ee96794bb3dda2
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json (tile fy4-16 #18, 390 px) — the row is broken inside a short bracket (`(9,81 / − 1,20) m/s²`) — break before `\cdot` instead so the bracket stays whole.
-- [Minor] inquiry.json (tile #0) — `10,4 + 49,6 = 16,5 / + 43,5` splits a two-term sum at 390 px — keep `= 16,5 + 43,5` on one row.
-- [Minor] inquiry.json:266 and :282 — the two restored inline formulas (`mgh = … · 125 m`, `|ΔE_mek| = …`) stay over-wide on a phone as on main — keep on the clipped-formula list; break before the operator when redone.
+
 
 ## Checked
-- delta round 2: opened fi-easy-390-02, fi-easy-390-03, fi-easy-390-04, fi-easy-1280-01, fi-easy-1280-02, fi-easy-1280-03 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.
+batch delta review: diff read (Kertaa-kysymys / kuvaus text, lukuyksiköt LaTeXina, päätteet, selkeä suomi); sim, figure row captures not re-opened as the diff does not change them. Plain quantities none found in the diff.

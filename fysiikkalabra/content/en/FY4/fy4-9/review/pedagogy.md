@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 027e7ffb30f8599b
+CONTENT-HASH: bf68596d32fdd81a
 
 ## Blocking
-None. Re-review: Tiivistelmä now uses I = Δp, matching the formula section.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-Diff of the Tiivistelmä fix; chapter symbols consistent in fi, fi-easy, en.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

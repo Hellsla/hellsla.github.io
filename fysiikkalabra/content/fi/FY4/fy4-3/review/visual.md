@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: dba9078774345c56
+CONTENT-HASH: 2a9a5f89c9dc5ab5
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-3-example-390-2 Tulos and Järkevyys): clean wrapping, formulas intact, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.

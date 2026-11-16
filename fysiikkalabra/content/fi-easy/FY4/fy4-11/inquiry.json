@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Kertaa: impulssi",
       "optional": true,
-      "prompt": "Pesäpallon sieppari ottaa kopin kahdella tavalla. Kerran hän pitää hanskan jäykästi paikallaan. Toisella kerralla hän vetää kättään pallon mukana taaksepäin. Kummallakin kerralla pallon nopeus muuttuu samasta arvosta nollaan. Mitä käden vetäminen taaksepäin muuttaa?",
+      "prompt": "Kolarissa matkustajan nopeus muuttuu samasta arvosta nollaan. Näin käy, oli hänellä turvavyö tai ei. Ilman vyötä hän pysähtyy, kun hän iskeytyy kojelautaan. Vyön kanssa venyvä vyö pysäyttää hänet. Mitä venyvä vyö muuttaa?",
       "choices": [
         {
           "text": "Pysähtymisaika pitenee, joten keskimääräinen voima pienenee.",
           "correct": true,
-          "feedback": "Oikein. Luvussa *Liikemäärä ja impulssi* opit, että liikemäärän muutos on impulssi $\\overline{F}\\,\\Delta t$. Muutos on sama kummallakin kerralla. Siksi pidempi aika tarkoittaa pienempää voimaa. Turvavyö ja turvatyyny toimivat samalla tavalla."
+          "feedback": "Oikein. Luvussa *Liikemäärä ja impulssi* opit, että liikemäärän muutos on impulssi $\\overline{F}\\,\\Delta t$. Muutos on sama kummallakin kerralla. Siksi pidempi aika tarkoittaa pienempää voimaa. Tässä luvussa sama idea selittää turvavyön ja turvatyynyn."
         },
         {
-          "text": "Pallon liikemäärän muutos pienenee. Siksi myös impulssi pienenee.",
-          "feedback": "Pallo pysähtyy kummallakin kerralla samasta nopeudesta. Siksi liikemäärän muutos ja impulssi ovat samat. Käden liike muuttaa vain aikaa, jossa muutos tapahtuu. Siksi voima muuttuu."
+          "text": "Matkustajan liikemäärän muutos pienenee, joten myös impulssi pienenee.",
+          "feedback": "Matkustaja pysähtyy samasta nopeudesta kummallakin kerralla. Siksi liikemäärän muutos ja impulssi ovat samat. Vyö muuttaa vain aikaa, jossa muutos tapahtuu. Siksi voima muuttuu."
         },
         {
-          "text": "Voima kasvaa, koska käsi vaikuttaa palloon pidemmän aikaa.",
-          "feedback": "Impulssi $F\\,\\Delta t$ on sama kummallakin kerralla. Jos aika $\\Delta t$ kasvaa, voiman $F$ täytyy pienentyä. Vain silloin tulo pysyy samana."
+          "text": "Voima kasvaa, koska vyö vaikuttaa matkustajaan pidempään.",
+          "feedback": "Impulssi $F\\,\\Delta t$ on sama kummallakin kerralla. Jos aika $\\Delta t$ kasvaa, voiman $F$ täytyy pienentyä. Silloin tulo pysyy samana."
         }
       ]
     },
