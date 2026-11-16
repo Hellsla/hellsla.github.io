@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 799fb4d8eefe224d
-
+CONTENT-HASH: 972e8efd5f7c706b
 ## Blocking
-(none)
 
 ## Polish
-- fy5-4-L3-06: earlier note stands (reading plus mu_0 = F/(mg) is close to one step; a second idea would justify level 3).
 
 ## Checked
-- L3-06 text and solution: "greatest static friction" changed to "maximum static friction" in both; consistent, no change in numbers, symbols or answer (0.68).
-- The change does not touch the figure, data or solution steps, so the earlier checks hold.
+- L2-07 Reasonableness (0.88 needs very good grip) no longer contradicts the file; L3-05 model answer now says friction need not supply the whole net force towards the centre: precise and correct.
+- No number or task level changed; no answer disclosed earlier, learning path unaffected.
