@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 39da8dac762307ce
+CONTENT-HASH: cfc0ccfe7d260c04
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-- Economical review (teacher 2026-11-16): only the changed line judged, from the packet diff and source; no capture opened (text-only change, previous pass relied on for the rest).
-- Järkevyys row: "\approx 20{,}5\,\text{m/s}^2" decimal comma, LaTeX, thin-space unit, now matches the 20{,}5 in the same sentence.
+- Delta: the Järkevyys/Reasonableness step of the parachute exercise (16-20), fi L3 open-solutions capture (fy4-16-open-exercises-L3-1280-5): the formula stands on its own display row between the sentence halves, not clipped, comma and unit intact, consistent with the neighbouring display blocks. At 1280 px the two aligned rows fit on one row; the 360/390 px layout check passes (no phone capture opened). Numbers, signs and units unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
