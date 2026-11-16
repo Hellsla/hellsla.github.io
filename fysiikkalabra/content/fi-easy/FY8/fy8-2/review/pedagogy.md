@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ed163738668209c7
+CONTENT-HASH: 9860abfa76373e51
 
 ## Blocking
 - none
 
 ## Polish
-- inquiry.json solution, Periaate — check that 'lämpönä/lämmön' remnants are tied to the new word sisäenergia ('lämpönä eli sisäenergiana'); S2 reader may see two terms.
+- none
 
 ## Checked
-- Diff is the term change heat/lämpö to internal energy/sisäenergia in exit ticket, summary bullet, task prompt, hints, feedback and solution; physics and answer 0.722 eV unchanged; feedback still repairs the misconceptions. fi-easy stays plain.
+- Diff is hint 3 and the 3,06 eV feedback: "Lämmöksi jää" to "Sisäenergiaksi jää"; consistent with the task; numbers and answer unchanged; plain language kept.

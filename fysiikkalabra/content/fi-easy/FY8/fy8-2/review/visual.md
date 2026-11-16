@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ed163738668209c7
+CONTENT-HASH: 9860abfa76373e51
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md Fluoresenssi (r. 129) vs summary and task — the body says "lämpönä ... molekyylin värähtelyihin", the summary and the transfer task now say "sisäenergiaksi" without linking the two for an S2 reader. Fix: at the first use, "muuttuu sisäenergiaksi eli molekyylin värähtelyn energiaksi".
-- [Minor] transfer task solution, Periaate — still "lämpönä" and "lämmön summa" beside $E_\text{sis}$; use "sisäenergian summa".
 
 ## Checked
-- Delta: lämpö -> sisäenergia in summary bullet, exit ticket, transfer task (prompt, hints, feedback, solution). Opened fig-14 (390 px, unchanged, label "lämpöä") and the sovella stage capture; layout survived. Changed text read from source.
+- Delta: one wording change in inquiry.json, the "Sovella uuteen tilanteeseen" task (hint 3 and the 3,06 eV mistake feedback now say "Sisäenergiaksi jää ..." instead of "Lämmöksi jää ...").
+- No capture shows that task's hints at the current hash, so the sentence is judged from source. I opened fy8-2-stage-sovella-390-2 to confirm the surrounding layout.
+- The sentence is fluent Finnish and matches the task's prompt and hint 1 (sisäenergia). The formula $E_1 - E_2$ and the units are LaTeX. No figure, typography or layout change.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
