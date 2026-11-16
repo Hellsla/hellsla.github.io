@@ -232,7 +232,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Käämissä on $200$ kierrosta, ja sen poikkipinta-ala on $6{,}0\\,\\text{cm}^2$. Käämin akselin suuntainen kenttä kasvaa tasaisesti nollasta arvoon $0{,}30\\,\\text{T}$ ajassa $0{,}050\\,\\text{s}$. Opiskelija laskee\n\n$$\\begin{aligned} A &= 6{,}0\\,\\text{cm}^2 \\\\ &= 0{,}060\\,\\text{m}^2 |e| \\\\ &= \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2}{0{,}050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Käämissä on $200$ kierrosta, ja sen poikkipinta-ala on $6{,}0\\,\\text{cm}^2$. Käämin akselin suuntainen kenttä kasvaa tasaisesti nollasta arvoon $0{,}30\\,\\text{T}$ ajassa $0{,}050\\,\\text{s}$. Opiskelija laskee\n\n$$\\begin{aligned} &A = 6{,}0\\,\\text{cm}^2 = 0{,}060\\,\\text{m}^2 \\\\ &|e| = \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2}{0{,}050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Pinta-alan muunnos on väärin: $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$, joten oikea tulos on $0{,}72\\,\\text{V}$.",

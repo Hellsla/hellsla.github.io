@@ -314,7 +314,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee, kuinka suurta ympyrää protoni kiertää. Protoni kiihdytetään levosta jännitteellä $2{,}0\\,\\text{kV}$, ja sitten se lentää kohtisuoraan magneettikenttään $0{,}10\\,\\text{T}$. Opiskelija kirjoittaa\n\n$$\\begin{aligned} qU &= mv^2 v \\\\ &= \\sqrt{\\frac{qU}{m}} \\\\ &= 4{,}38 \\cdot 10^{5}\\,\\text{m/s} r \\\\ &= \\frac{mv}{qB} \\\\ &= 4{,}57\\,\\text{cm} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Opiskelija laskee, kuinka suurta ympyrää protoni kiertää. Protoni kiihdytetään levosta jännitteellä $2{,}0\\,\\text{kV}$, ja sitten se lentää kohtisuoraan magneettikenttään $0{,}10\\,\\text{T}$. Opiskelija kirjoittaa\n\n$$\\begin{aligned} qU &= mv^2 \\\\ v &= \\sqrt{\\frac{qU}{m}} = 4{,}38 \\cdot 10^{5}\\,\\text{m/s} \\\\ r &= \\frac{mv}{qB} = 4{,}57\\,\\text{cm} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Liike-energia on $\\tfrac{1}{2}mv^2$. Oikea vauhti on siis $6{,}19 \\cdot 10^{5}\\,\\text{m/s}$ ja säde $6{,}46\\,\\text{cm}$.",

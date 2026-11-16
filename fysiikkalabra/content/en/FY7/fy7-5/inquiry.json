@@ -232,7 +232,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A coil has $200$ turns and a cross-sectional area of $6.0\\,\\text{cm}^2$. The field along the axis of the coil grows steadily from zero to $0.30\\,\\text{T}$ in $0.050\\,\\text{s}$. A student calculates\n\n$$\\begin{aligned} A &= 6.0\\,\\text{cm}^2 \\\\ &= 0.060\\,\\text{m}^2 |e| \\\\ &= \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0.30\\,\\text{T} \\cdot 0.060\\,\\text{m}^2}{0.050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A coil has $200$ turns and a cross-sectional area of $6.0\\,\\text{cm}^2$. The field along the axis of the coil grows steadily from zero to $0.30\\,\\text{T}$ in $0.050\\,\\text{s}$. A student calculates\n\n$$\\begin{aligned} &A = 6.0\\,\\text{cm}^2 = 0.060\\,\\text{m}^2 \\\\ &|e| = \\frac{N \\Delta B \\cdot A}{\\Delta t} \\\\ &= \\frac{200 \\cdot 0.30\\,\\text{T} \\cdot 0.060\\,\\text{m}^2}{0.050\\,\\text{s}} \\\\ &= 72\\,\\text{V} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The conversion of the area is wrong: $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$, so the correct result is $0.72\\,\\text{V}$.",
