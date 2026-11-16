@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 838b54016eb02f9d
+CONTENT-HASH: 2623602cde9da6c2
 
 ## Blocking
 
@@ -23,3 +23,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Checked (delta 2026-11-16)
+
+- Text/typography diff read in context: thin spaces; safety paragraph in Suunnittele now points to the page-start Turvallisuus box (rendered from investigation.json, which still holds all items: empty oven, no metal, pot holder, boiling water); teacher.md keeps the full text; nothing a student needs was lost. No blocking finding.

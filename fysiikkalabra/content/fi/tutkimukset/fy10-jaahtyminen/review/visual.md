@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f5fc935917630cee
+CONTENT-HASH: e443be27d6efa8e8
 
 ## Blocking
 (none)
@@ -11,13 +11,9 @@ CONTENT-HASH: f5fc935917630cee
 - [Minor] `$1\ \text{dl}$` uses `\ ` where the house form is `\,` (thin space) — change to `1\,\text{dl}` (also check other units).
 - [Minor] fig-2/4/6/8-390 captures are blank 1-px files (lazy-loaded figures); the figures themselves were judged from the contact sheet and page captures — fix the capture script, not the page.
 
-## Checked
-- contact-1, contact-2 (all captures triaged, including the 390 px page strips and the figure thumbnails)
-- top-1280 (opening, hero illustration at readable size)
-- page-1280-3 (set-up text, Tutkimustehtävä, Ennusta, Tutkimuskysymyksestä lists) and page-1280-5 (theory formulas, ln graph, Ohjattu)
-- fig-3-390 (model graph T(t)); linear graph, set-up diagram and hero via contact sheet #17, #19, #21, #23 and page captures
-- No horizontal overflow or clipping seen in the 390 px strips; all labels are LaTeX; the figures use the palette consistently.
-- Not opened separately: the open-ennusta-1280 capture (small, only the prediction box); the checks results in the packet were not repeated.
+## Checked (delta 2026-11-16)
+- Changed: `\,` in units, in table headers and in teacher.md. Opened page-390-7 (1 dl, 60 degC and 10 s render with thin spaces; the earlier Polish on `\ ` is resolved).
+- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

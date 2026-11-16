@@ -320,7 +320,7 @@ Määritä aallonpituus useasta resonanssikohdasta, ei yhdestä, ja laske siitä
 3. Miksi monen resonanssikohdan käyttäminen parantaa tulosta verrattuna kahteen vierekkäiseen kohtaan?
 
 ::: tuki O OO
-**Kaksi tapaa käsitellä tulokset.** Kirjoita resonanssin ehto kahdelle peräkkäiselle resonanssille ja vähennä yhtälöt toisistaan: mitä tapahtuu siirtymälle $e$? Sen jälkeen voit käyttää jompaakumpaa tapaa:
+**Kaksi tapaa käsitellä tuloksia.** Kirjoita resonanssin ehto kahdelle peräkkäiselle resonanssille ja vähennä yhtälöt toisistaan: mitä tapahtuu siirtymälle $e$? Sen jälkeen voit käyttää jompaakumpaa tapaa:
 
 - **Erotus kauimmaisista kohdista.** Kun olet löytänyt $N$ resonanssikohtaa, ensimmäisen ja viimeisen välissä on $N - 1$ puolikasta aallonpituutta:
 
@@ -363,7 +363,7 @@ Mitä suoran vakiotermi kertoo? Vihje: sijoita resonanssin ehtoon $n = 0$. Kuvaa
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita äänen nopeus muodossa lukuarvo ± epävarmuus yksikköineen, esimerkiksi $v = (\ldots \pm \ldots)\ \text{m/s}$, ja perustele, miten arvioit epävarmuuden $\Delta v$.
+Ilmoita äänen nopeus muodossa lukuarvo $\pm$ epävarmuus yksikköineen, esimerkiksi $v = (\ldots \pm \ldots)\,\text{m/s}$, ja perustele, miten arvioit epävarmuuden $\Delta v$.
 
 ::: tuki O OO
 **Resonanssikohdan epävarmuus.** Kun olet etsinyt saman kohdan useamman kerran, esimerkiksi pidentäen ja lyhentäen, voit arvioida sen epävarmuuden lukemien vaihteluvälin puolikkaana. Jos se on pienempi kuin asteikon lukemisen tarkkuus, käytä lukemisen tarkkuutta.
@@ -395,7 +395,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa saamaasi äänen nope
 **Tunnettu arvo.** Kuivassa ilmassa äänen nopeus riippuu lämpötilasta likimain yhtälön
 
 ```latex
-v = 331{,}3\ \text{m/s}\cdot\sqrt{\frac{T}{273{,}15\ \text{K}}}
+v = 331{,}3\,\text{m/s}\cdot\sqrt{\frac{T}{273{,}15\,\text{K}}}
 ```
 
 mukaan, missä $T$ on ilman lämpötila kelvineinä: $T = \left(\dfrac{\theta}{{}^\circ\text{C}} + 273{,}15\right)\ \text{K}$, missä $\theta$ on celsiuslämpötila. Ilman kosteus suurentaa äänen nopeutta hieman.
@@ -408,7 +408,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** seisova aalto putkessa, resonanssin ehto ja yhtälö $v = f\lambda$.
 - **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, mistä mihin pituus mitattiin ja miten tunnistit resonanssin.
 - **Mittaustulokset:** jokainen resonanssikohdan lukema omassa sarakkeessaan, keskiarvot niiden oikealla puolella sekä taajuus ja lämpötila.
-- **Tulos:** äänen nopeus muodossa lukuarvo ± epävarmuus yksikköineen oikein pyöristettynä ja vertailu tunnettuun arvoon lähteineen.
+- **Tulos:** äänen nopeus muodossa lukuarvo $\pm$ epävarmuus yksikköineen oikein pyöristettynä ja vertailu tunnettuun arvoon lähteineen.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta sekä perustelu sille, miksi käytit useaa resonanssikohtaa.
 
 ## Laajennus: riippuuko äänen nopeus taajuudesta?

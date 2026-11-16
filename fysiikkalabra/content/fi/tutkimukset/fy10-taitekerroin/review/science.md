@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 839931e071dca5c3
+CONTENT-HASH: 7e8a14b874716819
 
 ## Blocking
 None.
@@ -7,15 +7,6 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-10-31)
-- `topic` "aallot" fits the physics area.
-- Guides incl. taulukkolaskenta fit the computed sine columns and fit.
-- Report bullets renamed to the template's section names (Koejärjestely ja menetelmä); content unchanged.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-- `guides`: tvt-kuvaaja dropped; the remaining guides still cover the fit and its slope uncertainty.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 2026-11-16)
+- Earlier passes (2026-10-31) stand; only the diff against origin/main was judged, each changed line in context.
+- Removed the duplicate "Kirjaa ennusteesi ennen kuin luet tätä osaa": the Ennusta section just above already asks the student to record the prediction first; theory unchanged.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 652b3fa9ec294706
+CONTENT-HASH: 0b9d6df17a7cb3e9
 
 ## Blocking
 
@@ -9,6 +9,8 @@ None.
 
 None.
 
-## Checked (delta 2026-11-13)
+## Checked (delta 2026-11-16)
 
-Diff read: y = mx + b, m and b are LaTeX; the output "m = 4.05, b = 0.02" keeps decimal points on purpose and the sentence says the program writes points and the report must use commas, then shows the converted equation. Helps rather than confuses.
+- Steps 1 and 5: Finnish quotes in the caption examples; no meaning change.
+- Step 4: conditional 'Jos keksityillä esimerkkiarvoilla ... kirjoita' reworded into two sentences ('Esimerkiksi keksityssä aineistossa ... Kirjoita yhtälö silloin ...'); the instruction (write the equation with quantities, units and decimal commas) is now clearer, not ambiguous.
+- Step 8: one long sentence split in two (copy table values; attach data as CSV); both tasks still clear.

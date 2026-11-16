@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2382ba3d6f25e77c
+CONTENT-HASH: daea67607c8150ac
 
 ## Blocking
 (none)
@@ -11,10 +11,8 @@ CONTENT-HASH: 2382ba3d6f25e77c
 - [Minor] Mittaa, text after the signal figure — one 50-word paragraph explains why the onset beats the peak but sits after the figure, apart from the sentence about reading the time — acceptable; keep it adjacent.
 - [Minor] hero (fig 1) — the thermometer floats beside the wall without a mount, and the wavefront arcs are very faint at 390 px — thicken the arcs slightly.
 
-## Checked
-- top-390, fig-1-390 (hero), fig-3-390 (set-up), fig-5-390 (signal), fig-7-390 (model graph); fig-2/4/6/8/9 are 28 px empty captures (no content).
-- contact-1 (390 px page overview), page-1280-3 and page-1280-5 (prediction, theory, formula, table, signal figure, task lists at laptop width).
-- Not opened individually: page-390-N slices beyond contact-1, 1280 slices 1, 2, 4, 6–9, open-ennusta-1280 (contact sheet showed no clipping or overflow there).
+## Checked (delta 2026-11-16, redone)
+- Changed: units `\,`, Mittaa table headers 'mittaus 1/2/3', `0\,{}^\circ\text{C}` (earlier KaTeX parse error fixed). Opened page-390-9 (Johtopäätökset box: $v_0 \approx 331\,\text{m/s}$, $T_0 = 273{,}15\,\text{K}$, $0\,^\circ\text{C}$ render with thin spaces, no red error), page-390-6 (table headers), page-390-10 and -11. Pixel scan of all 22 page captures: no red error text. Figure findings above are the redraw queue, not Blocking.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

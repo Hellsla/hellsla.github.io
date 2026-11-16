@@ -1,23 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 99fba7d73147c1cf
+CONTENT-HASH: bdd5130b947d2f62
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json check-3 model answer — "Lopulta pallon mekaaninen energia on kokonaan muuttunut lämpöenergiaksi" leaves out sound and vibration, which the data item excludes explicitly; add "(ääni ja värähtely jätetään huomiotta)" or "lähes kokonaan".
-- inquiry.json check-2 — an incandescent lamp's non-visible output is largely infrared radiation; the solution says part leaves as thermal radiation, the task says "loppu muuttuu lämpöenergiaksi". Acceptable at this level (C), could say "lämpöenergiaksi ja infrapunasäteilyksi".
-- sim model — friction is a constant force mu m g along the track (normal force not varied on the curve); stated in sim-spec and in the model box ("yhtä paljon per liukumetri"), a fair simplification (C).
+- lesson.md photo caption: "veden potentiaalienergia muuttuu turbiinissa liike-energiaksi" skips a step. The water first gains kinetic energy as it falls, and the turbine then takes that energy as rotational kinetic energy. This is acceptable at this level (C). For a more exact wording: "muuttuu veden liike-energiaksi, turbiini ja generaattori muuttavat sen sähköenergiaksi".
+- lesson.md hero SVG: the arcs end at a ball-centre height of y = 420, but the floor line is at y = 440 and the ball's radius is 32, so the ball would overlap the floor where it hits it. The ball resting at the end is also partly below the floor line. This is drawing only, for the visual reviewer.
 
 ## Checked
-- Example: 840 J - 720 J = 120 J, unit conversion, rounding to tens, "alle viidesosa" (14 %) all correct.
-- Figure "sailyminen" caption: 800 + 0 + 0, 300+450+50, 0+700+100 all sum to 800 J.
-- Recomputed the sim independently (own RK4, 0,5 ms): no friction t=1/2/3 s gives Ep/Ek 63/918, 862/119, 424/557 J; mu=0,04 gives mech 469 J at 8 s (Eth 512) and 143 J at 16 s (Eth 838); matches inquiry.json model answer and feedback. m g h0 = 981 J.
-- Pred-1 and pred-2: exactly one correct option, every distractor wrong, feedback physics correct.
-- Exp-1 and exp-2 setups lock friction and h0, vary t; simState has Ep, Ek, Eth, Ekok.
-- Data item 0,60-0,31 = 0,29 J; per-bounce 0,12/0,10/0,07 correct; cyclist 335 kJ; bulb 2380 J; exit ticket 3,8 kJ.
-- Heat vs thermal energy wording matches guardrails (net transfer, body has thermal energy).
-- Scope: no E_k/E_p formulas in the lesson text; consistent with FY2 scope.
-- Summary, goals, options, exit ticket and sim boxes agree.
-- Delta: the opening question now reads "Miksi pomppiva pallo pysähtyy lopulta lattialle?"; the clause that gave away the answer is gone, no physics claim changed.
-- Delta 2 (option rebalancing, pred-2, exp-1, virhe): correct options still right, same one correct; distractors still wrong for the reason their feedback gives; feedback matches.
+- Hero figure: the bounce heights above the contact level are 370, 240, 150, 90, 50 and 24 px. Each bounce is about 0,5–0,65 of the one before, a roughly constant fraction, which fits a restitution model. The arc widths follow sqrt(h): 270, 210, 160, 120 and 84 px against the predicted 217, 166, 124 and 89. The ghost balls sit at the arc apexes (control points recomputed). The heat marks are at every impact point and nowhere else. The figure does not say it is to scale, and it leaves no wrong picture.
+- Energy-forms table: the definitions match the glossary and the earlier text. The lämpöenergia row and the paragraph after it keep "riippuu aineen määrästä, ei sama kuin lämpötila" and the net-transfer wording for lämpö (as the guardrails require). Every example belongs to its form. E_mek = E_p + E_k is unchanged. Nothing physical was lost in the move from list to table.
+- Hydropower photo: the image matches its alt text. The caption's energy chain (potential energy, then kinetic, then electrical) is correct.
+- sim.js diff: only the y-axis tick labels are placed differently, and the tick mark is skipped when the label is narrow. It uses p.textSize/textWidth only, with no change to the model, simState, adapter or controls. The 390 px capture shows the "1 000" label and the gridline correctly.
+- inquiry.json exercises text: only the sentence about levels was removed. No physics changed.
+- Content hash bdd5130b947d2f62 at the start and the end.

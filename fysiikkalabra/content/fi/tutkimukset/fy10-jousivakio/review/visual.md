@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8f2df44039f25f3e
+CONTENT-HASH: ae3715dbf7697f9f
 
 ## Blocking
 (none)
@@ -11,11 +11,9 @@ CONTENT-HASH: 8f2df44039f25f3e
 - [Minor] figs 5 and 8 — the model graphs have no axis units or tick labels. This is acceptable for a schematic model, but "kaaviokuva, ei mittakaavassa" in the caption or alt text would say so.
 - [Minor] text — straight quotes "kuvaajasta 1 nähdään…" should be Finnish ”…”; "Jousivaa'an" should have a typographic apostrophe.
 
-## Checked
-- contact-1; top-390; page-390-7 (maths in boxes, the long box, the fraction in the text); top-1280.
-- fig-1-390 (hero), fig-3-390 (setup: force and weight in red, distinct from the black dimension lines, l0, l and x consistent), fig-5-390 (model graph), fig-8-390 (T²(m) graph with the constant term).
-- page-1280-3 (Ennusta, theory, setup figure at width), -5 (table, graph steps), -6 (uncertainty, report, extension, display formula); open-ennusta-1280.
-- Not separately opened: 1280 parts 1, 2, 4, 7, 8 and 390 parts 1–6 and 8–11, seen only in contact-1. The fig-2/4/6/7/9 captures are 28 px or smaller and are not figures.
+## Checked (delta 2026-11-16)
+- Changed: the 'Miksi juuri nämä akselit?' paragraph split in three. Opened page-1280-5 and page-390-7 (three short paragraphs read well in the box, the 1/k fraction is fine, nothing overflows at 390 px; earlier Polish on its length resolved). Straight quotes in Johtopäätökset (page-390-8) remain, Minor.
+- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

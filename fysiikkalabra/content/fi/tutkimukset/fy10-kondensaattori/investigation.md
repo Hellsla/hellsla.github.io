@@ -206,7 +206,7 @@ Sähköopin kurssin FY6 luvut eivät ole vielä tällä sivustolla, joten täss�
 Q = Cu
 ```
 
-missä $C$ on kondensaattorin **kapasitanssi**. Sen yksikkö on faradi, $1\ \text{F} = 1\ \tfrac{\text{C}}{\text{V}}$. Koulun kondensaattoreiden kapasitanssit ilmoitetaan yleensä mikrofaradeina, $1\ \mu\text{F} = 10^{-6}\ \text{F}$. **Elektrolyyttikondensaattorilla** on suuri kapasitanssi pieneen kokoon nähden, mutta sillä on napaisuus: sen plusnapa on kytkettävä korkeampaan potentiaaliin kuin miinusnapa. Kondensaattorin kylkeen on merkitty kapasitanssi, suurin sallittu jännite ja yleensä miinusnavan puoli.
+missä $C$ on kondensaattorin **kapasitanssi**. Sen yksikkö on faradi, $1\,\text{F} = 1\,\tfrac{\text{C}}{\text{V}}$. Koulun kondensaattoreiden kapasitanssit ilmoitetaan yleensä mikrofaradeina, $1\,\mu\text{F} = 10^{-6}\,\text{F}$. **Elektrolyyttikondensaattorilla** on suuri kapasitanssi pieneen kokoon nähden, mutta sillä on napaisuus: sen plusnapa on kytkettävä korkeampaan potentiaaliin kuin miinusnapa. Kondensaattorin kylkeen on merkitty kapasitanssi, suurin sallittu jännite ja yleensä miinusnavan puoli.
 
 **Vastuksen** läpi kulkeva sähkövirta noudattaa Ohmin lakia $I = \dfrac{u}{R}$, missä $u$ on vastuksen yli oleva jännite ja $R$ sen resistanssi.
 
@@ -410,7 +410,7 @@ Mallin sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita kapasitanssi muodossa $C = (C \pm \Delta C)\ \mu\text{F}$ ja perustele, miten arvioit epävarmuuden. Kapasitanssi on kahden suureen osamäärä, joten sen suhteellinen epävarmuus on aikavakion ja resistanssin suhteellisten epävarmuuksien summa:
+Ilmoita kapasitanssi muodossa $C = (C \pm \Delta C)\,\mu\text{F}$ ja perustele, miten arvioit epävarmuuden. Kapasitanssi on kahden suureen osamäärä, joten sen suhteellinen epävarmuus on aikavakion ja resistanssin suhteellisten epävarmuuksien summa:
 
 ```latex
 \frac{\Delta C}{C} = \frac{\Delta \tau}{\tau} + \frac{\Delta R}{R}
@@ -448,7 +448,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria (osa 2):** yhtälöt $Q = Cu$ ja $I = \dfrac{u}{R}$, aikavakio $\tau = RC$ ja mallin oletukset.
 - **Koejärjestely ja menetelmä (osa 3):** kytkentäkaavio ja työturvallisuus: miten varmistit napaisuuden, jännitteen rajan ja kondensaattorin purkamisen.
 - **Tulosten käsittely ja graafinen analyysi (osa 5):** jännitteen kuvaaja ajan funktiona, sovitettu malli ja perustelu sille, miten aikavakio saadaan mallista.
-- **Tulos (osa 6):** $C = (C \pm \Delta C)\ \mu\text{F}$ oikein pyöristettynä, kaikki eri resistansseilla saadut arvot näkyvissä.
+- **Tulos (osa 6):** $C = (C \pm \Delta C)\,\mu\text{F}$ oikein pyöristettynä, kaikki eri resistansseilla saadut arvot näkyvissä.
 - **Luotettavuus ja mittausepävarmuus (osa 8):** vertailu merkittyyn arvoon ja konkreettiset epävarmuuden lähteet vaikutuksen suuntineen.
 
 ## Laajennus: kapasitanssi aikavakion ja resistanssin kuvaajasta

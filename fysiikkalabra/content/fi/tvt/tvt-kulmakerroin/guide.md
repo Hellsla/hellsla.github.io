@@ -48,7 +48,11 @@ Kulmakertoimesta saat tutkittavan suureen esimerkiksi tutkimuksissa *Jousivakion
   <foreignObject x="168" y="114.5" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = \dfrac{\Delta y}{\Delta x}$</div></foreignObject>
 </svg>
 
-3. **Lue kertoimet sovituksen tulosruudusta.** Kun olet sovittanut suoran valinnoilla **Käyrän sovitus** ja **Lineaarinen** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]), tulosruudussa ovat kulmakerroin ja vakiotermi. Graphical Analysis kirjoittaa suoran muotoon y = mx + b: ohjelman m on kulmakerroin $k$ ja b vakiotermi $b$. Ohjelma käyttää desimaalipistettä. Kuvan esimerkkiarvoista m: 1.671 g/cm3 kirjoitetaan raporttiin $k = 1{,}671\,\text{g/cm}^3$. Kertoimet näkyvät yksiköineen, kun sarakkeille on annettu yksiköt; jos yksiköitä ei näy, asetus voi olla tulosruudun rattaan kuvakkeen takana (englanninkielisessä versiossa **Show units in linear fit parameters**). Tarkista silti itse, että kulmakertoimen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä.
+3. **Lue kertoimet sovituksen tulosruudusta.** Kun olet sovittanut suoran valinnoilla **Käyrän sovitus** ja **Lineaarinen** ([[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]), tulosruudussa ovat kulmakerroin ja vakiotermi.
+
+    Graphical Analysis kirjoittaa suoran muotoon `y = mx + b`: ohjelman m on kulmakerroin $k$ ja b vakiotermi $b$. Ohjelma käyttää desimaalipistettä. Alla olevan tulosruudun esimerkkiarvo `m: 1.671 g/cm3` kirjoitetaan raporttiin $k = 1{,}671\,\text{g/cm}^3$.
+
+    Kertoimet näkyvät yksiköineen, kun sarakkeille on annettu yksiköt; jos yksiköitä ei näy, asetus voi olla tulosruudun rattaan kuvakkeen takana (englanninkielisessä versiossa **Show units in linear fit parameters**). Tarkista silti itse, että kulmakertoimen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä.
 
     <figure class="shot"><img src="pics/tvt/ga-tulosruutu.png" alt="Suoran sovituksen tulosruutu, jonka otsikko on LINEAARINEN. Siinä lukee x alue 0 - 50 cm3, y = mx + b, m: 1.671 g/cm3, b: -1.619 g, r: 0.9961 ja RMSE: 3.078. Oikeassa alakulmassa on rattaan kuvake." width="288" height="280" loading="lazy"><figcaption>Kuvakaappaus: Graphical Analysis (suomenkielinen käyttöliittymä); esimerkkiarvoja.</figcaption></figure>
 
@@ -61,7 +65,7 @@ Kulmakertoimesta saat tutkittavan suureen esimerkiksi tutkimuksissa *Jousivakion
     - Jousivoiman laki $F = kx$: kulmakerroin on suoraan jousivakio.
     - Heilurin malli $T^2 = \tfrac{4\pi^2}{g} \cdot l$: kulmakerroin on $k = \tfrac{4\pi^2}{g}$, joten putoamiskiihtyvyys on $g = \tfrac{4\pi^2}{k}$.
 
-    Esimerkiksi jos keksityn esimerkkiaineiston suoran kulmakerroin on $k = 4{,}05\,\text{s}^2/\text{m}$, putoamiskiihtyvyys on $g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}75\,\text{m/s}^2$. Yksikkö tarkistaa laskun: $1 : (\text{s}^2/\text{m}) = \text{m/s}^2$.
+    Keksityssä esimerkkiaineistossa suoran kulmakerroin on $k = 4{,}05\,\text{s}^2/\text{m}$, joten putoamiskiihtyvyys on $g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}75\,\text{m/s}^2$. Yksikkö tarkistaa laskun: $1 : (\text{s}^2/\text{m}) = \text{m/s}^2$.
 
 7. **Tulkitse vakiotermi.** Mieti mallin avulla, mikä pystyakselin suureen arvon pitäisi olla, kun vaaka-akselin suure on nolla. Nollasta selvästi poikkeavalla vakiotermillä on yleensä jokin näistä syistä:
 

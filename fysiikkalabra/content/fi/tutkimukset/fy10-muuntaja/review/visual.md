@@ -1,8 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 871f41d0d8e2c77c
+CONTENT-HASH: d58d45b9716a4b7f
 
 ## Blocking
-(none)
 
 ## Polish
 - [Minor] Osa A table at 390 px (page-390-10) — header cells set at about 13 px, rows are empty and cramped — consider a vertical table as in Osa B, or a larger header font.
@@ -10,10 +9,10 @@ CONTENT-HASH: 871f41d0d8e2c77c
 - [Minor] Teoriaa lyhyesti — `1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W}` uses a normal space; the rule is a thin space `\,`. Also the straight quotes around "määrää" — use Finnish quotes ”määrää”.
 - [Minor] hero — the leads are tangled, with many crossing arcs; the phenomenon reads, but fewer wires would be calmer (taste, not a request).
 
-## Checked
-- contact-1; fig-1-390 (hero), fig-3-390 (setup), fig-5-390 (model graph); the figure captures 2, 4 and 6 are 28 px stubs, so no figure is missing.
-- page-1280-1, -4, -6 (opening, theory, model graph, display formula); page-390-10 (tables, Mittaa).
-- Not opened one by one: the remaining page parts and the open-ennusta capture (seen at contact-sheet size only). The layout and a11y checks are in the packet.
+## Checked (delta 2026-11-16)
+- Changes: Finnish quotes ”määrää”, ”kuvaajasta 1 nähdään …” and `1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}`. Opened page-1280-4: quotes and the unit chain render correctly.
+- Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-6 (”määrää” quotes, split Induktio/Sähköteho paragraphs, 1 V · 1 A = 1 W): fine, no overflow.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

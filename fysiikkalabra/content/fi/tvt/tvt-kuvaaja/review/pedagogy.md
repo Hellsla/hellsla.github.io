@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d3a3ce0a11145862
+CONTENT-HASH: 999e1646e6ee0566
 
 ## Blocking
 
@@ -9,6 +9,7 @@ None.
 
 None.
 
-## Checked (delta 2026-11-13)
+## Checked (delta 2026-11-16)
 
-Diff read: units V (cm³) and m (g) set as LaTeX in the one sentence of step 1; meaning and order unchanged, house rule met.
+- Good/bad figure intro now says 'alla olevan kuvan huonoa ja hyvää kuvaajaa'; the figure follows directly and the upper/lower references (ylempi, alempi) still match it.
+- Step 7 caption example now uses Finnish quotes; no meaning change.

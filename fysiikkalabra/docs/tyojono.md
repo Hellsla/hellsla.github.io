@@ -16,6 +16,12 @@ kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valm
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
+Varattu: claude/fy10-minor-sisalto (vain sisältöosa: tutkimusten ja TVT-ohjeiden omat Minor-löydökset ja fy10-induktion kenttäviivat; jaetut komponentit eivät kuulu siihen).
+
+Sisältöosa (PR #645): tekstin ja LaTeXin Minorit korjataan. Kuviin ei kosketa (opettaja 16.11: "älä tee näille kuville mitään, piirrän ne uudelleen ChatGPT:llä"); jokainen kuvalöydös, myös fy10-induktion kenttäviivat, on PR #645:n avoimissa kohdissa opettajan piirtämistä varten.
+
+Ehdotus yhteiseksi kuvasäännöksi (koordinaattori 16.11; opettajan päätettäväksi): toistuvat kuvalöydökset kirjataan yhtenä sääntönä, ei kuva kerrallaan: (1) nimikkeet luettavia 390 px:ssä (vähintään noin 12 px, ei vaaleanharmaata ohutta tekstiä); (2) mallikuvaajan akseleilla suure ja yksikkö, tai kuvaus sanoo, että kuva on kaavio ilman mittakaavaa; (3) kaaviokuvan aria-label tai kuvateksti sanoo sen kaaviokuvaksi ("ei mittakaavassa", "havainnollistava, ei mitattu"); (4) malli- tai luonnoskuvaaja merkitsee itsensä malliksi kuvan sisällä. Jaettu osa (taulukoiden otsakkeet ja tyhjät rivit 390 px:ssä, listojen numerointi, laskurivit listoissa, apulinkit, tyhjät 28×28 px:n kaappaukset) kuuluu erään 1.
+
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
@@ -265,23 +271,6 @@ E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase), sitten johdettu kaava, sie
 sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkella (sisältömuutos, katselmoinnit
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
-
-## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
-
-fy2-1:n "Seitsemän energialajia" on luettelo pitkiä kohtia; opettaja: "tässäkin toimisi taulukko" (CLAUDE.md: "A table
-when the content is a table"). Taulukko, esim. sarakkeet Energialaji (ja tunnus) | Mihin liittyy | Esimerkki;
-käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämmön ja lämpöenergian erosta ei mahdu soluun:
-se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
-`reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
-
-## 8i-b. Taulukon solujen yhdyssanat tavutetaan liitoksesta (koordinaattori 2026-11-16)
-
-Varattu: claude/tablefit-yhdyssanat
-
-`scripts/tablefit.py` tavutti taulukon solut pelkällä tavusäännöllä (`hyphenate_fi`), joka katkaisee vokaalialkuisen
-yhdyssanan väärin: "Lämpöe-nergia", "Ydine-nergia" (8i:n energialajitaulukko, site/:ssa jo valmiiksi monella sivulla).
-Korjaus: `_cell()` käyttää korttiotsikoiden `hyphenate_card`-funktiota (liitokset energia, aalto, aika, …), testi
-`test_chapter_nav.py`:ssä. Jaettu muutos: ajetaan yksin, kohdan 5 (#640) jälkeen ja ennen 8i:tä (#642).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
