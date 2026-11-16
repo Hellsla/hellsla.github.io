@@ -75,7 +75,7 @@
 **Periaate:** Jousen potentiaalienergia riippuu venymästä lepopituudesta, ei venymän muutoksesta. Energian kasvu on loppuenergian ja alkuenergian erotus. Kuvaajassa se on kahden kolmion pinta-alojen erotus.
 **Kaava:** $\Delta E_\text{p} = \tfrac{1}{2}kx_2^2 - \tfrac{1}{2}kx_1^2 = \tfrac{1}{2}k\left(x_2^2 - x_1^2\right)$
 **Muunnokset:** $x_1 = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$ ja $x_2 = 9{,}0\,\text{cm} = 0{,}090\,\text{m}$
-**Sijoitus:** $$\begin{aligned} &\Delta E_\text{p} \\ &= \tfrac{1}{2}\cdot \\ &150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,}090\,\text{m})^2 - (0{,}030\,\text{m})^2\right) \\ &= 75\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0072\,\text{m}^2 \\ &= 0{,}54\,\text{J} \end{aligned}$$
+**Sijoitus:** $\Delta E_\text{p} = \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,}090\,\text{m})^2 - (0{,}030\,\text{m})^2\right) = 75\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0072\,\text{m}^2 = 0{,}54\,\text{J}$
 **Vastaus:** $0{,}54\,\text{J}$, kaksi merkitsevää numeroa kuten venymissä.
 **Järkevyys:** Alussa energia on $0{,}0675\,\text{J}$ ja lopussa $0{,}6075\,\text{J}$. Loppuenergia on yhdeksänkertainen, koska venymä kolminkertaistui. Jos laskisi $\tfrac{1}{2}k(\Delta x)^2$, tulos olisi vain $0{,}27\,\text{J}$. Se on liian vähän, koska viimeiset senttimetrit venytetään jo suurella voimalla.
 
@@ -88,7 +88,7 @@
 **Muunnokset:** Kuvaajan arvot ovat newtoneina ja metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0064\,\text{m}^2 = 0{,}192\,\text{J}$
 **Vastaus:** $0{,}19\,\text{J}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska kuvaajasta arvot voi lukea kahden numeron tarkkuudella.
-**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
+**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $$\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
 
 ## fy5-8-L3-01
 **Annettu:** matkustajien massa $\Delta m = 300\,\text{kg}$, jousten lisäpuristuma $\Delta x = 3{,}0\,\text{cm}$, neljä samanlaista jousta; $g = 9{,}81\,\text{m/s}^2$
@@ -108,7 +108,7 @@
 **Muunnokset:** $x = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$ ja $m = 50\,\text{g} = 50 \cdot 0{,}001\,\text{kg} = 0{,}050\,\text{kg}$
 **Sijoitus:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}030\,\text{m})^2}{2\cdot 0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} = \dfrac{0{,}18\,\text{J}}{0{,}981\,\text{N}} = 0{,}1835\,\text{m}$
 **Vastaus:** $0{,}18\,\text{m}$ eli noin $18\,\text{cm}$, kaksi merkitsevää numeroa kuten puristumassa $3{,}0\,\text{cm}$ ja massassa $50\,\text{g}$.
-**Järkevyys:** Jousen energia on $0{,}090\,\text{J}$. Kun $50\,\text{g}$:n lelu nostetaan $18\,\text{cm}$, tarvitaan $$\begin{aligned} &0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot \\ &0{,}1835\,\text{m} \\ &\approx 0{,}090\,\text{J} \end{aligned}$$. Energiat ovat samat. Tällainen lelu hyppää tavallisesti muutamia kymmeniä senttimetrejä. Todellisuudessa osa energiasta menee jousen ja lelun värähtelyyn ja ilmanvastukseen. Siksi lelu nousee vähän matalammalle.
+**Järkevyys:** Jousen energia on $0{,}090\,\text{J}$. Kun $50\,\text{g}$:n lelu nostetaan $18\,\text{cm}$, tarvitaan $$\begin{aligned} &0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot \\ &0{,}1835\,\text{m} \\ &\approx 0{,}090\,\text{J} & \end{aligned}$$. Energiat ovat samat. Tällainen lelu hyppää tavallisesti muutamia kymmeniä senttimetrejä. Todellisuudessa osa energiasta menee jousen ja lelun värähtelyyn ja ilmanvastukseen. Siksi lelu nousee vähän matalammalle.
 
 ## fy5-8-L3-03
 **Annettu:** $m = 0{,}50\,\text{kg}$, vasemman jousen jousivakio $k_1 = 30\,\text{N/m}$, oikean $k_2 = 50\,\text{N/m}$, poikkeama $x = 4{,}0\,\text{cm}$ oikealle, rata kitkaton; $g = 9{,}81\,\text{m/s}^2$

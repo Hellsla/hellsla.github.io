@@ -158,7 +158,7 @@
 **Principle:** The button is in uniform circular motion, and the horizontal light casts on the wall its height above the level of the axis. The height of a point in circular motion oscillates sinusoidally: the amplitude is the radius of the circle and the frequency is the rotation frequency. The light comes from far away and is parallel, so the shadow is as large as the height of the button above the level of the axis. The time is counted from the pass through the middle going up, so the sine model is used.
 **Formula:** $x = A \sin(2\pi f t)$, where $A = r$, that is, $x = r \sin(2\pi f t)$
 **Conversions:** $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0.75\,\text{Hz}$
-**Substitution:** $$\begin{aligned} x &= 15\,\text{cm} \\ &\cdot \sin(2\pi \cdot 0.75\,\text{Hz} \cdot 0.20\,\text{s}) \\ &= 15\,\text{cm} \cdot \sin 0.9425 \\ &= 15\,\text{cm} \cdot 0.8090 \\ &= 12.14\,\text{cm} \end{aligned}$$
+**Substitution:** $x = 15\,\text{cm} \cdot \sin(2\pi \cdot 0.75\,\text{Hz} \cdot 0.20\,\text{s}) = 15\,\text{cm} \cdot \sin 0.9425 = 15\,\text{cm} \cdot 0.8090 = 12.14\,\text{cm}$
 **Answer:** $12\,\text{cm}$ above the middle, two significant figures as in the distance $15\,\text{cm}$ and the rate $45\,\tfrac{1}{\text{min}}$.
 **Reasonableness:** The period is $\tfrac{1}{0.75\,\text{Hz}} = 1.33\,\text{s}$, so the shadow is at its highest at $\tfrac{T}{4} = 0.33\,\text{s}$. At $0.20\,\text{s}$ it is still rising, so the displacement must be a little less than $15\,\text{cm}$, like $12\,\text{cm}$. The disc has turned $0.15$ of a revolution, that is, $54^\circ$, and $\sin 54^\circ = 0.81$.
 

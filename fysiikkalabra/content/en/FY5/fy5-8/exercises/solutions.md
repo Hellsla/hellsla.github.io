@@ -75,7 +75,7 @@
 **Principle:** The elastic potential energy depends on the extension from the rest length, not on the change in the extension. The increase is the difference between the energies of the final and initial states. In the graph it is the difference between the areas of two triangles.
 **Formula:** $\Delta E_\text{p} = \tfrac{1}{2}kx_2^2 - \tfrac{1}{2}kx_1^2 = \tfrac{1}{2}k\left(x_2^2 - x_1^2\right)$
 **Conversions:** $x_1 = 3.0\,\text{cm} = 0.030\,\text{m}$ and $x_2 = 9.0\,\text{cm} = 0.090\,\text{m}$
-**Substitution:** $$\begin{aligned} &\Delta E_\text{p} \\ &= \tfrac{1}{2}\cdot \\ &150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0.090\,\text{m})^2 - (0.030\,\text{m})^2\right) \\ &= 75\,\tfrac{\text{N}}{\text{m}}\cdot 0.0072\,\text{m}^2 \\ &= 0.54\,\text{J} \end{aligned}$$
+**Substitution:** $\Delta E_\text{p} = \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0.090\,\text{m})^2 - (0.030\,\text{m})^2\right) = 75\,\tfrac{\text{N}}{\text{m}}\cdot 0.0072\,\text{m}^2 = 0.54\,\text{J}$
 **Answer:** $0.54\,\text{J}$, two significant figures like the extensions.
 **Reasonableness:** At the start the energy is $0.0675\,\text{J}$ and at the end $0.6075\,\text{J}$, nine times as much, because the extension became three times as large. If $\tfrac{1}{2}k(\Delta x)^2$ had been calculated, the result would be only $0.27\,\text{J}$, which is too little: the last centimetres are stretched with an already large force.
 
@@ -88,7 +88,7 @@
 **Conversions:** The values of the graph are in newtons and metres, so no conversions are needed.
 **Substitution:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0.080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0.0064\,\text{m}^2 = 0.192\,\text{J}$
 **Answer:** $0.19\,\text{J}$, two significant figures, to which the values of the graph can be read.
-**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
+**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $$\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
 
 ## fy5-8-L3-01
 **Given:** mass of the passengers $\Delta m = 300\,\text{kg}$, extra compression of the springs $\Delta x = 3.0\,\text{cm}$, four identical springs; $g = 9.81\,\text{m/s}^2$
@@ -108,7 +108,7 @@
 **Conversions:** $x = 3.0\,\text{cm} = 0.030\,\text{m}$ and $m = 50\,\text{g} = 50 \cdot 0.001\,\text{kg} = 0.050\,\text{kg}$
 **Substitution:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0.030\,\text{m})^2}{2\cdot 0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{0.18\,\text{J}}{0.981\,\text{N}} = 0.1835\,\text{m}$
 **Answer:** $0.18\,\text{m}$ or about $18\,\text{cm}$, two significant figures like the compression $3.0\,\text{cm}$ and the mass $50\,\text{g}$.
-**Reasonableness:** The energy of the spring is $0.090\,\text{J}$, and lifting a $50\,\text{g}$ toy $18\,\text{cm}$ needs $$\begin{aligned} &0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot \\ &0.1835\,\text{m} \\ &\approx 0.090\,\text{J} \end{aligned}$$. A jump of a few tens of centimetres is typical for such a toy; in reality some of the energy goes into the oscillation of the spring and the toy and into air resistance, so the toy rises a little less.
+**Reasonableness:** The energy of the spring is $0.090\,\text{J}$, and lifting a $50\,\text{g}$ toy $18\,\text{cm}$ needs $$\begin{aligned} &0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot \\ &0.1835\,\text{m} \\ &\approx 0.090\,\text{J} & \end{aligned}$$. A jump of a few tens of centimetres is typical for such a toy; in reality some of the energy goes into the oscillation of the spring and the toy and into air resistance, so the toy rises a little less.
 
 ## fy5-8-L3-03
 **Given:** $m = 0.50\,\text{kg}$, spring constant of the left spring $k_1 = 30\,\text{N/m}$, of the right $k_2 = 50\,\text{N/m}$, displacement $x = 4.0\,\text{cm}$ to the right, frictionless track; $g = 9.81\,\text{m/s}^2$

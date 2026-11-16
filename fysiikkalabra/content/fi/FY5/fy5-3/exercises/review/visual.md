@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: f379aaf2fc31bb49
-SCOPE: delta added-exercise from 32e78172ab301d83 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 9a61a2b67bdaf12c
 
 ## Blocking
-(none)
+- [Major] exercises/solutions.md line 201 (Järkevyys, two formulas), 390 and 1280 px — the result is cut inside the number: "2π · 42,16 · 10⁶ m = 2,649" and under it "· 10⁸ m," (same for "3075 m/s · 86 160 s = 2,649 / · 10⁸ m.") — the first row reads as the result 2,649; a value in powers of ten must stay whole — break before the equals sign: `&2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} \\ &= 2{,}649 \cdot 10^{8}\,\text{m}` and `&3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2{,}649 \cdot 10^{8}\,\text{m}` (both fit one row on a wide screen).
+- [Major] solutions.md line 304 (Sijoitus), wide form (≥ 700 px) — "Δv = 2π·" then "0,3333 1/s · (1,80 m − 0,60 m) = 2,513 m/s": the "=" is outside the column and the second row reads as a false equation — mark the continuation `\\ &\quad 0{,}3333\,\tfrac{1}{\text{s}}\cdot(…)` so join_wide joins it to "Δv = 2π ·", or fix `mathlayout.join_wide` (shared) so a relation row never joins a continuation row.
 
 ## Polish
-- [Minor] fy5-3 — the label r_B = 1,80 m touches the carousel rim (its m sits on the edge); shift the label inward (optional, figure is teacher-approved, so only if redrawn).
+- [Minor] line 304 at 390 px — the first row is only "Δv = 2π·"; the continuation starts in the equals column, an indent (`&\quad`) would show it continues.
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises 1/10 and 1/11 (L1-10, L1-11) and L2 part 9 (L2-08 with the carousel figure).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- own captures of preview/fy5-3.html at 390 and 1280 px, every details and feedback opened, one tile per block holding a display formula (/tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/v/fy5-3-*.png); the standard set has no opened solutions at 390 px: fy5-3-ex-390-2, -390-3, fy5-3-ex-1280-1, -1280-2.
+- Delta: lines 144, 163 (×2), 201 (×2), 245, 304. Lines 144, 163 and 245 read well at both widths; nothing clipped at 360/390 px; punctuation inside the last row.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations – (not in delta) · typography 2 · Finnish 5 · accessibility 4

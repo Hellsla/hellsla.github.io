@@ -198,7 +198,7 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m}}{86\,160\,\tex
 \end{aligned}
 ```
 **Vastaus:** a) Ratanopeudet ovat $7{,}59\,\text{km/s}$, $3{,}87\,\text{km/s}$ ja geostationaariselle satelliitille $3{,}07\,\text{km/s}$. Vastauksissa on kolme merkitsevää numeroa, kuten taulukon arvoissa. b) Kauempana oleva satelliitti on hitaampi. Radan säde kasvaa taulukossa ylhäältä alas, mutta ratanopeus pienenee. Vastauslaatikkoon tulee $3{,}07\,\text{km/s}$.
-**Järkevyys:** Geostationaarisen satelliitin kierrosaika $1436\,\text{min} = 23{,}9\,\text{h}$ on lähes vuorokausi. Näin pitääkin olla, kun satelliitti pysyy paikallaan taivaalla Maan pyörimisen mukana. Kehä on $$\begin{aligned} 2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} &= 2{,}649 \\ &\cdot 10^{8}\,\text{m} \end{aligned}$$. Tarkistus: $$\begin{aligned} 3075\,\text{m/s} \cdot 86\,160\,\text{s} &= 2{,}649 \\ &\cdot 10^{8}\,\text{m} \end{aligned}$$. Kauempana kehä on pidempi, mutta kierrosaika kasvaa vielä enemmän. Matalan radan kierros on noin $15$ kertaa lyhyempi kuin geostationaarisen. Kehä on vain noin $6$ kertaa lyhyempi.
+**Järkevyys:** Geostationaarisen satelliitin kierrosaika $1436\,\text{min} = 23{,}9\,\text{h}$ on lähes vuorokausi. Näin pitääkin olla, kun satelliitti pysyy paikallaan taivaalla Maan pyörimisen mukana. Kehä on $$\begin{aligned} &2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} \\ &= 2{,}649 \cdot 10^{8}\,\text{m} \end{aligned}$$. Tarkistus: $$\begin{aligned} &3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2{,}649 \cdot 10^{8}\,\text{m} \end{aligned}$$. Kauempana kehä on pidempi, mutta kierrosaika kasvaa vielä enemmän. Matalan radan kierros on noin $15$ kertaa lyhyempi kuin geostationaarisen. Kehä on vain noin $6$ kertaa lyhyempi.
 
 ## fy5-3-L2-07
 **Annettu:** renkaan halkaisija $d = 64\,\text{cm}$, pyörimistaajuus $f = 8{,}0\,\tfrac{1}{\text{s}}$; oppilaan tulos $32\,\text{m/s}$
@@ -301,6 +301,6 @@ t &= \frac{5378\,\text{m}}{1{,}2\,\text{m/s}} \\
 **Kuvaajan lukeminen:** Mittanuolet näyttävät $r_\text{A} = 0{,}60\,\text{m}$ ja $r_\text{B} = 1{,}80\,\text{m}$, kumpikin mitattuna keskipisteestä.
 **Kaava:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
 **Muunnokset:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0{,}3333\,\tfrac{1}{\text{s}}$
-**Sijoitus:** $$\begin{aligned} \Delta v &= 2\pi\cdot \\ &0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}60\,\text{m}) \\ &= 2{,}513\,\text{m/s} \end{aligned}$$
+**Sijoitus:** $$\begin{aligned} &\Delta v \\ &= 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}60\,\text{m}) \\ &= 2{,}513\,\text{m/s} \end{aligned}$$
 **Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten pyörimistaajuudessa $20\,\tfrac{1}{\text{min}}$.
 **Järkevyys:** Erikseen $v_\text{B} = 3{,}77\,\text{m/s}$ ja $v_\text{A} = 1{,}26\,\text{m/s}$, ja erotus on $2{,}51\,\text{m/s}$. Piste $B$ on kolme kertaa kauempana keskipisteestä, joten sen ratanopeus on kolminkertainen.

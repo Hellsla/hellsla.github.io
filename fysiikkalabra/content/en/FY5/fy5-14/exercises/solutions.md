@@ -147,7 +147,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the horn at rest $f_0 = 392\,\text{Hz}$, four measured frequencies $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ and $430\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$
 **Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, approaches a listener at rest, so the Doppler formula for a moving source with a minus sign applies. The measurements vary slightly, so we use their mean $f_\text{mean}$. The speed of the source is solved from the formula.
-**Processing the data:** The sum of the four frequencies in the table is $431 + 429 + 432 + 430 = 1722$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
+**Processing the data:** The sum of the four frequencies in the table is $$431 + 429 + 432 + 430 = 1722$$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
 **Formula:** $f_\text{mean} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, so $v - v_\text{L} = \dfrac{f_0 v}{f_\text{mean}}$ and $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{mean}}\right)$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
 **Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430.5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0.08943 = 30.41\,\text{m/s}$
@@ -183,7 +183,7 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30.0)\
 **Processing the data:** The greatest change in the table is $\Delta f = 2.47\,\text{kHz}$ at the moment $t = 0.20\,\text{s}$.
 **Formula:** $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$, so $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{b}}{v - v_\text{b}}$ and $v_\text{b} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Conversions:** $\Delta f = 2.47\,\text{kHz} = 2470\,\text{Hz}$ and $f_0 = 4.00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Substitution:** The denominator is $$\begin{aligned} 2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\ &+ 2470\,\text{Hz} \\ &= 8\,002\,470\,\text{Hz} \end{aligned}$$.
+**Substitution:** The denominator is $$\begin{aligned} 2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\ &+ 2470\,\text{Hz} \\ &= 8\,002\,470\,\text{Hz} & \end{aligned}$$.
 $\begin{aligned} v_\text{b} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0.4753\,\text{m/s} \end{aligned}$
 **Answer:** $0.475\,\text{m/s}$, three significant figures like the change in frequency.
 **Reasonableness:** The speed is much smaller than the speed of sound, so $v_\text{b} \approx \tfrac{v \, \Delta f}{2 f_0} = 0.4755\,\text{m/s}$, which differs from the result by less than $0.1\,\%$. The result for one shift would be $\tfrac{v \, \Delta f}{f_0} \approx 0.95\,\text{m/s}$, double. A peak speed of less than a metre per second is plausible in a blood vessel.
