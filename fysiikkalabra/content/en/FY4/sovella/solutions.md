@@ -256,7 +256,7 @@ komponentit G
 
 **Model answer:** The acceleration decreases more and more steeply as the speed increases, so a straight line does not fit the points; a curve does. The friction force does not depend on the speed, but air resistance grows with the speed, so the decrease in the acceleration is caused by air resistance. At a very low speed air resistance is almost zero. When the curve is extended to the speed $v = 0$, it gives the acceleration without air resistance: $a_0 \approx 0.45\,\text{m/s}^2$.
 
-Substituting $a_0$ into the equation of part c: $\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0.684 - 0.45)\,\text{m/s}^2}{9.786\,\text{m/s}^2} \approx 0.024$.
+Substituting $a_0$ into the equation of part c: $$\begin{aligned} &\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} \\ &= \dfrac{(0.684 - 0.45)\,\text{m/s}^2}{9.786\,\text{m/s}^2} \\ &\approx 0.024 \end{aligned}$$.
 
 The value $0.030$ of part c is therefore about $0.006$ too large, an error of about a fifth of the value of part c, because there the slowing effect of air resistance was counted as friction. This is a systematic error: it always changes the result in the same direction, and repeating the runs does not remove it. The error is about three times the uncertainty of reading the slope, $0.002$, but smaller than the difference between the waxes, $0.015$. In the slower run B air resistance has a smaller effect, so wax A glides better also after the correction.
 
@@ -323,7 +323,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 - In part d it is only stated that "the heavy one goes faster" or "the mass does not matter", without comparing either claim with the resisting forces.
 
 ### Hyväksytään myös
-- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
+- In parts b and c the rounded resisting force $F_\text{res} = 29\,\text{N}$ may be used: then $$\begin{aligned} &F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} \\ &= 5220\,\text{J} \end{aligned}$$, and the speed of part c is again $13.6\,\text{m/s} \approx 14\,\text{m/s}$. In part c, $13.6\,\text{m/s}$ and $14\,\text{m/s}$ are accepted.
 - In part d the conclusion may be based on the estimate of part c, $14\,\text{m/s}$, or on the reference value of the frictionless model, $17.2\,\text{m/s}$. Either justified choice earns the point for the conclusion.
 
 ## fy4-s3
@@ -473,7 +473,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Formula:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Formula:** $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Conversions:** For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7.86\,\text{m/s}}{1700\,\text{kg}} = 13.6\,\text{m/s}$ and $13.6 \cdot 3.6\,\text{km/h} = 49\,\text{km/h}$
 **Answer:** $v_\text{B} \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the sliding distance $4.2\,\text{m}$ and the coefficient of friction $0.75$ are known to two figures. The account is not true: according to the model, the speed of car B just before the collision was about $49\,\text{km/h}$, about $9\,\text{km/h}$ over the limit.

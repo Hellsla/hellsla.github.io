@@ -29,7 +29,7 @@ a alas
 ```
 **Formula:** $mg - T = ma$, so $T = m(g - a)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $T = 0.60\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 2.0\,\text{m/s}^2) = 0.60\,\text{kg} \cdot 7.81\,\text{m/s}^2 = 4.686\,\text{N}$
+**Substitution:** $$\begin{aligned} &T \\ &= 0.60\,\text{kg} \cdot (9.81\,\text{m/s}^2 \\ &- 2.0\,\text{m/s}^2) \\ &= 0.60\,\text{kg} \cdot 7.81\,\text{m/s}^2 \\ &= 4.686\,\text{N} \end{aligned}$$
 **Answer:** $4.7\,\text{N}$, two significant figures like the mass $0.60\,\text{kg}$ and the acceleration $2.0\,\text{m/s}^2$.
 **Reasonableness:** The weight of the mass is $0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 5.9\,\text{N}$, and $4.7\,\text{N}$ is smaller than that, because the mass accelerates downward. The difference $1.2\,\text{N}$ is $ma = 0.60\,\text{kg} \cdot 2.0\,\text{m/s}^2$.
 
@@ -113,9 +113,9 @@ a ylös
 ```
 **Formula:** $T_1 - T_2 - m_1 g = m_1 a$ and $T_2 - m_2 g = m_2 a$, so adding gives $T_1 = (m_1 + m_2)(g + a)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $T_1 = (50\,\text{kg} + 30\,\text{kg}) \cdot (9.81\,\text{m/s}^2 + 1.2\,\text{m/s}^2) = 80\,\text{kg} \cdot 11.01\,\text{m/s}^2 = 880.8\,\text{N}$
+**Substitution:** $$\begin{aligned} &T_1 \\ &= (50\,\text{kg} + 30\,\text{kg}) \\ &\cdot (9.81\,\text{m/s}^2 \\ &+ 1.2\,\text{m/s}^2) \\ &= 80\,\text{kg} \cdot 11.01\,\text{m/s}^2 \\ &= 880.8\,\text{N} \end{aligned}$$
 **Answer:** $880\,\text{N}$, that is $8.8 \cdot 10^{2}\,\text{N}$, two significant figures like the acceleration $1.2\,\text{m/s}^2$ and the mass $30\,\text{kg}$.
-**Reasonableness:** The combined weight of the crates is $80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 785\,\text{N}$, and lifting with acceleration needs more. The excess $96\,\text{N}$ is $(m_1 + m_2)\,a = 80\,\text{kg} \cdot 1.2\,\text{m/s}^2$. The force in the lower rope is $T_2 = m_2 (g + a) \approx 330\,\text{N}$, smaller than $T_1$, because it carries only the lower crate.
+**Reasonableness:** The combined weight of the crates is $80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 785\,\text{N}$, and lifting with acceleration needs more. The excess $96\,\text{N}$ is $$\begin{aligned} &(m_1 + m_2)\,a \\ &= 80\,\text{kg} \cdot 1.2\,\text{m/s}^2 \end{aligned}$$. The force in the lower rope is $T_2 = m_2 (g + a) \approx 330\,\text{N}$, smaller than $T_1$, because it carries only the lower crate.
 
 ## fy4-13-L2-02
 **Given:** $m_1 = 0.50\,\text{kg}$ and $m_2 = 1.0\,\text{kg}$ at the ends of the string, $g = 9.81\,\text{m/s}^2$; the string is light, the pulley is light and frictionless, air resistance is neglected
@@ -198,7 +198,7 @@ a alas
 ```
 **Formula:** $T - m_1 g = m_1 a$ and $m_2 g - T = m_2 a$, so $T = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$. From the equilibrium of the wheel, $F_\text{axle} - 2T = 0$, so $F_\text{axle} = 2T$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $T = \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} + 1200\,\text{kg}} \cdot 9.81\,\text{m/s}^2 = 960\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 9418\,\text{N}$ and $F_\text{axle} = 2 \cdot 9418\,\text{N} = 18\,835\,\text{N}$
+**Substitution:** $$\begin{aligned} &T \\ &= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} + 1200\,\text{kg}} \\ &\cdot 9.81\,\text{m/s}^2 \\ &= 960\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 9418\,\text{N} \end{aligned}$$ and $F_\text{axle} = 2 \cdot 9418\,\text{N} = 18\,835\,\text{N}$
 **Answer:** $19000\,\text{N}$, that is $19\,\text{kN}$, two significant figures, because the masses are given to the nearest hundred kilograms.
 **Reasonableness:** The weights are $m_1 g \approx 7850\,\text{N}$ and $m_2 g \approx 11\,770\,\text{N}$, and $T = 9418\,\text{N}$ lies between them. The force on the axle, $18\,835\,\text{N}$, is smaller than the sum of the weights, $19\,620\,\text{N}$, because the counterweight accelerates downward.
 
@@ -306,7 +306,7 @@ a alas
 ```
 **Formula:** Cart: $T = m_1 a$. Hanging mass: $m_2 g - T = m_2 a$, so the check is $T = m_2\,(g - a)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $T = 1.20\,\text{kg} \cdot 2.84\,\text{m/s}^2 = 3.408\,\text{N}$. Check: $T = 0.50\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 2.84\,\text{m/s}^2) = 0.50\,\text{kg} \cdot 6.97\,\text{m/s}^2 = 3.485\,\text{N}$
+**Substitution:** $T = 1.20\,\text{kg} \cdot 2.84\,\text{m/s}^2 = 3.408\,\text{N}$. Check: $$\begin{aligned} &T \\ &= 0.50\,\text{kg} \cdot (9.81\,\text{m/s}^2 \\ &- 2.84\,\text{m/s}^2) \\ &= 0.50\,\text{kg} \cdot 6.97\,\text{m/s}^2 \\ &= 3.485\,\text{N} \end{aligned}$$
 **Answer:** $3.4\,\text{N}$, two significant figures, because the two equations give $3.41\,\text{N}$ and $3.49\,\text{N}$, which differ by about $2\,\%$, so only the first two figures are reliable.
 **Reasonableness:** The two ways give $3.4\,\text{N}$ and $3.5\,\text{N}$, so they differ by about $2\,\%$, which fits the precision of the measurement. By theory, $a = \dfrac{0.50 \cdot 9.81}{1.70}\,\text{m/s}^2 = 2.89\,\text{m/s}^2$, so the measured $2.84\,\text{m/s}^2$ is slightly smaller. The tension is smaller than the weight of the hanging mass $4.9\,\text{N}$, as it should be.
 
@@ -330,7 +330,7 @@ a alas
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{kg} + 0.50\,\text{kg}} = \dfrac{4.905\,\text{N}}{2.5\,\text{kg}} = 1.962\,\text{m/s}^2$
 **Answer:** $2.0\,\text{m/s}^2$, two significant figures like the data $2.0\,\text{kg}$ and $0.50\,\text{kg}$. The student's result was too large, because the student divided only by the mass of the cart.
-**Reasonableness:** The tension $T = m_1 a = 2.0\,\text{kg} \cdot 1.962\,\text{m/s}^2 = 3.92\,\text{N}$ is smaller than the weight of the hanging mass $4.9\,\text{N}$, and the difference $0.98\,\text{N}$ is $m_2 a = 0.50\,\text{kg} \cdot 1.962\,\text{m/s}^2$. With the student's value $a = 2.45\,\text{m/s}^2$ we would have $T = m_1 a = 4.9\,\text{N}$ and $m_2 g - T \approx 0$, but the equation of motion of the hanging mass would require $m_2 a = 1.2\,\text{N}$, so the value is wrong.
+**Reasonableness:** The tension $T = m_1 a = 2.0\,\text{kg} \cdot 1.962\,\text{m/s}^2 = 3.92\,\text{N}$ is smaller than the weight of the hanging mass $4.9\,\text{N}$, and the difference $0.98\,\text{N}$ is $$\begin{aligned} &m_2 a \\ &= 0.50\,\text{kg} \cdot 1.962\,\text{m/s}^2 \end{aligned}$$. With the student's value $a = 2.45\,\text{m/s}^2$ we would have $T = m_1 a = 4.9\,\text{N}$ and $m_2 g - T \approx 0$, but the equation of motion of the hanging mass would require $m_2 a = 1.2\,\text{N}$, so the value is wrong.
 
 ## fy4-13-L3-04
 **Given:** masses of the cars $m_1 = 24\,\text{t}$, $m_2 = 18\,\text{t}$ and $m_3 = 12\,\text{t}$; from the table the speed $v = 0$ at $t = 0$ and $v = 10.02\,\text{m/s}$ at $t = 20.0\,\text{s}$ (example data); greatest permitted force of the coupling $20\,\text{kN}$; resistive forces are neglected
@@ -366,7 +366,7 @@ a oikea
 **Substitution:** b) $K_{12} = 30\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 15\,000\,\text{N} = 15\,\text{kN}$
 c) The new order is $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, and behind the coupling between cars 1 and 2 are $18\,\text{t}$ and $24\,\text{t}$, altogether $42\,\text{t}$. Then $K_{12}' = 42\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 21\,000\,\text{N} = 21\,\text{kN}$
 **Answer:** a) $a = 0.50\,\text{m/s}^2$. b) $15\,\text{kN}$, two significant figures like the data $18\,\text{t}$ and $12\,\text{t}$ (this goes into the answer box). c) $21\,\text{kN}$, so a coupling with a limit of $20\,\text{kN}$ does not hold in the new order. Reason: the force of the coupling accelerates all the cars behind it, and the heaviest car is now behind the coupling.
-**Reasonableness:** In the original order the couplings are $K_{12} = 15\,\text{kN}$ and $K_{23} = 12\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 6.0\,\text{kN}$, and the force of the locomotive on car 1 is $54\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 27\,\text{kN}$. The force decreases from the locomotive backward, because each coupling accelerates less and less mass, and the equation of car 2 checks: $15\,\text{kN} - 6.0\,\text{kN} = 9.0\,\text{kN} = 18\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2$.
+**Reasonableness:** In the original order the couplings are $K_{12} = 15\,\text{kN}$ and $K_{23} = 12\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 6.0\,\text{kN}$, and the force of the locomotive on car 1 is $$\begin{aligned} &54\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 \\ &= 27\,\text{kN} \end{aligned}$$. The force decreases from the locomotive backward, because each coupling accelerates less and less mass, and the equation of car 2 checks: $$\begin{aligned} &15\,\text{kN} - 6.0\,\text{kN} \\ &= 9.0\,\text{kN} \\ &= 18\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2 \end{aligned}$$.
 
 ## fy4-13-L3-05
 **Given:** distance $s = 0.80\,\text{m}$ from rest; from the table $m_2 = 0.100$; $0.200$; $0.300$ and $0.400\,\text{kg}$ and times $t = 1.29$; $0.96$; $0.80$ and $0.73\,\text{s}$ (example data); $g = 9.81\,\text{m/s}^2$; friction is neglected, the string and the pulley are light

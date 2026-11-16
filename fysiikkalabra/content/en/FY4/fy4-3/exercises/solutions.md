@@ -281,7 +281,7 @@ a 0
 **Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
 $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 **Answer:** a) $450\,\text{N}$ and b) $480\,\text{N}$ forwards, two significant figures like the given forces. c) The force of the horse on the cart and the force of the cart on the horse are equally large and oppositely directed, but they act on different objects, so they do not cancel each other. The motion of the cart is decided only by the forces acting on the cart, and the motion of the horse only by the forces acting on the horse. The horse gets going because the road pushes its hooves forwards with a force that is larger than the force of the cart on the horse.
-**Reasonableness:** The force of the road $480\,\text{N}$ is as large as the sum of all the resistances $410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
+**Reasonableness:** The force of the road $480\,\text{N}$ is as large as the sum of all the resistances $$\begin{aligned} &410\,\text{N} + 40\,\text{N} + 30\,\text{N} \\ &= 480\,\text{N} \end{aligned}$$, so the whole system moves at constant velocity. The friction between the road and the hooves points forwards, because it opposes the hoof slipping backwards.
 
 ## fy4-3-L3-05
 **Given:** from the table the velocity and the force of the rope; at $t = 4.0\,\text{s}$, $5.0\,\text{s}$ and $6.0\,\text{s}$ the velocities are $0.70$; $0.71$ and $0.70\,\text{m/s}$ and the forces $3.4$; $3.5$ and $3.3\,\text{N}$; at the start $F = 5.1\,\text{N}$ and $v = 0$ (example data)

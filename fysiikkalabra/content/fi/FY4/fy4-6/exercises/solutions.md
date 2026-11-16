@@ -13,7 +13,7 @@ a 0
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyys yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $G = 160\,\text{kg}\cdot 1{,}62\,\text{m/s}^2 = 259{,}2\,\text{N}$
 **Vastaus:** $259\,\text{N}$, kolme merkitsevää numeroa kuten putoamiskiihtyvyydessä $1{,}62\,\text{m/s}^2$.
-**Järkevyys:** Maassa paino olisi $160\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1570\,\text{N}$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, ja $1570\,\text{N} : 6 \approx 260\,\text{N}$, sama tulos.
+**Järkevyys:** Maassa paino olisi $$\begin{aligned} &160\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 1570\,\text{N} \end{aligned}$$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, ja $1570\,\text{N} : 6 \approx 260\,\text{N}$, sama tulos.
 
 ## fy4-6-L1-02
 **Annettu:** $m = 30\,\text{kg}$, $\mu = 0{,}12$, pulkka liukuu vaakasuoralla lumella; $g = 9{,}81\,\text{m/s}^2$
@@ -164,7 +164,7 @@ komponentit G
 ```
 **Kaava:** $y$: $N - mg\cos\alpha = 0$, joten lähtökitka on $F_\text{max} = \mu_0 mg\cos\alpha$, ja sitä verrataan komponenttiin $G_x = mg\sin\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 8{,}1\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &F_\text{max} \\ &= 0{,}60\cdot 10\,\text{kg}\cdot \\ &9{,}81\,\text{m/s}^2\cdot\cos 35^\circ \\ &= 48{,}2\,\text{N} \end{aligned}$$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 8{,}1\,\text{N}$
 **Vastaus:** komponentti ylittää lähtökitkan $56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}60$. Lähtökitka $48\,\text{N}$ on pienempi kuin komponentti $56\,\text{N}$, joten laatikko ei pysy paikallaan vaan lähtee liukumaan. Erotus on positiivinen, joten kitka ei riitä.
 **Järkevyys:** Saman päätelmän antaa kulma: $\tan 35^\circ = 0{,}70$ on suurempi kuin $\mu_0 = 0{,}60$, joten lankku on jyrkempi kuin rajakulma $\tan^{-1} 0{,}60 \approx 31^\circ$.
 
@@ -204,7 +204,7 @@ komponentit G
 ```
 **Kaava:** $y$: $N = mg\cos\alpha$ ja $x$: $mg\sin\alpha + \mu mg\cos\alpha = ma$, joten $a = g(\sin\alpha + \mu\cos\alpha)$. Liikeyhtälöstä $v^2 = v_0^2 - 2as$ ja ehdosta $v = 0$ saadaan $s = \dfrac{v_0^2}{2a}$, missä $a = g(\sin\alpha + \mu\cos\alpha)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $a = 9{,}81\,\text{m/s}^2\cdot(\sin 20^\circ + 0{,}25\cdot\cos 20^\circ) = 5{,}660\,\text{m/s}^2$ ja $s = \dfrac{(3{,}0\,\text{m/s})^2}{2\cdot 5{,}660\,\text{m/s}^2} = 0{,}795\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &a \\ &= 9{,}81\,\text{m/s}^2\cdot(\sin 20^\circ \\ &+ 0{,}25\cdot\cos 20^\circ) \\ &= 5{,}660\,\text{m/s}^2 \end{aligned}$$ ja $s = \dfrac{(3{,}0\,\text{m/s})^2}{2\cdot 5{,}660\,\text{m/s}^2} = 0{,}795\,\text{m}$
 **Vastaus:** $0{,}80\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$ ja kitkakertoimessa $0{,}25$.
 **Järkevyys:** Ilman kitkaa hidastuvuus olisi $g\sin 20^\circ \approx 3{,}4\,\text{m/s}^2$ ja matka noin $1{,}3\,\text{m}$; kitka lyhentää matkaa. Pysähdyttyään kiekko jää rinteelle vain, jos lepokitkakerroin on vähintään $\tan 20^\circ \approx 0{,}36$; muuten se lähtee liukumaan takaisin alas.
 
@@ -224,7 +224,7 @@ komponentit G
 ```
 **Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$ ja $\mu = \tan\alpha - \dfrac{a_\text{Maa}}{g\cos\alpha}$. Koska sulkulauseke on sama molemmissa paikoissa, $a_\text{Kuu} = a_\text{Maa}\cdot\dfrac{g_\text{Kuu}}{g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.
-**Sijoitus:** $\mu = \tan 30^\circ - \dfrac{2{,}0\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 30^\circ} = 0{,}577 - 0{,}235 = 0{,}342$, ja $a_\text{Kuu} = 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}342\cdot\cos 30^\circ) = 0{,}330\,\text{m/s}^2$. Suoraan suhteesta: $2{,}0\,\text{m/s}^2\cdot\dfrac{1{,}62}{9{,}81} = 0{,}330\,\text{m/s}^2$
+**Sijoitus:** $\mu = \tan 30^\circ - \dfrac{2{,}0\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 30^\circ} = 0{,}577 - 0{,}235 = 0{,}342$, ja $$\begin{aligned} &a_\text{Kuu} \\ &= 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0{,}342\cdot\cos 30^\circ) \\ &= 0{,}330\,\text{m/s}^2 \end{aligned}$$. Suoraan suhteesta: $2{,}0\,\text{m/s}^2\cdot\dfrac{1{,}62}{9{,}81} = 0{,}330\,\text{m/s}^2$
 **Vastaus:** $0{,}33\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten Maan kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
 **Järkevyys:** Sekä paino että kitka ovat Kuussa noin kuudesosan Maan arvosta, joten myös kiihtyvyys on noin kuudesosa. Laatikko liukuu Kuussakin, koska ehto $\tan\alpha > \mu$ ei riipu putoamiskiihtyvyydestä.
 
@@ -286,7 +286,7 @@ akselit 0
 **Periaate:** Laudan kallistuessa painon rinteen suuntainen komponentti $G_x = mg\sin\alpha$ kasvaa, ja lepokitka kasvaa sen mukana. Palikka lähtee liukumaan, kun komponentti ylittää lähtökitkan $\mu_0 N$. Kohtisuorassa suunnassa palikka ei kiihdy, joten $N = mg\cos\alpha$. Rajakulmalla $\alpha_0$ pätee $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. Massa supistuu, ja jakamalla puolittain saadaan $\mu_0 = \tan\alpha_0$.
 **Kaava:** $\mu_0 = \tan\alpha_0$, missä $\alpha_0$ on mittausten keskiarvo
 **Muunnokset:** Kulmat ovat asteina, joten muunnoksia ei tarvita. Laskimen on oltava asteiden tilassa.
-**Sijoitus:** Kulmien summa on $24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ$, joten keskiarvo on $\alpha_{0,\text{ka}} = 127^\circ : 5 = 25{,}4^\circ$ ja $\mu_0 = \tan 25{,}4^\circ = 0{,}4748$
+**Sijoitus:** Kulmien summa on $$\begin{aligned} &24^\circ + 26^\circ \\ &+ 25^\circ + 27^\circ + 25^\circ \\ &= 127^\circ \end{aligned}$$, joten keskiarvo on $\alpha_{0,\text{ka}} = 127^\circ : 5 = 25{,}4^\circ$ ja $\mu_0 = \tan 25{,}4^\circ = 0{,}4748$
 **Vastaus:** $0{,}47$, kaksi merkitsevää numeroa kuten kulmien keskiarvon tarkkuus antaa.
 **Järkevyys:** Yksittäisistä kulmista saadaan $\tan 24^\circ = 0{,}45$ ja $\tan 27^\circ = 0{,}51$, joten keskiarvo $0{,}47$ on niiden välissä. Kokeessa ei tarvita palikan massaa, koska se supistuu. Tulos on puun ja puun väliselle lepokitkakertoimelle tavallista suuruusluokkaa.
 
@@ -337,7 +337,7 @@ komponentit G
 ```
 **Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$. Matka on $s = \tfrac{1}{2}at^2$, koska alkunopeus on nolla
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita, ja massa supistuu.
-**Sijoitus:** $a = 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}35\cdot\cos 30^\circ) = 1{,}931\,\text{m/s}^2$ ja
+**Sijoitus:** $$\begin{aligned} &a \\ &= 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0{,}35\cdot\cos 30^\circ) \\ &= 1{,}931\,\text{m/s}^2 \end{aligned}$$ ja
 ```latex
 \begin{aligned}
 s &= \tfrac{1}{2} \cdot 1{,}931\,\text{m/s}^2 \cdot (3{,}0\,\text{s})^2 \\
@@ -372,7 +372,7 @@ Laatikko D on levossa rinteellä, joten rinteen suunnassa lepokitka kumoaa paino
 
 $F_{\mu\text{D}} = m_\text{D} g \sin\alpha$
 
-$F_{\mu\text{D}} = 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \sin 30^\circ$
+$$\begin{aligned} &F_{\mu\text{D}} \\ &= 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot \sin 30^\circ \end{aligned}$$
 
 $F_{\mu\text{D}} \approx 123\,\text{N}$
 
