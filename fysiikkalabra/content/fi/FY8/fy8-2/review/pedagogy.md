@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7346d9cf9e68d361
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 56da6ca04d5f10a6
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- inquiry.json (Sovella uuteen tilanteeseen, solution, Periaate) — still says "luovuttaa osan energiasta lämpönä" and "lähetetyn fotonin energian ja lämmön summa" while the symbol and question are now sisäenergia ($E_\text{sis}$); one line linking them ("lämpönä eli sisäenergiana") would keep the step followable.
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff is a term change lämpö → sisäenergia in exit ticket answer, summary bullet, task prompt, hints, feedback, solution; physics and answer 0,722 eV unchanged; the question still answerable from the lesson.
+- Task feedback still repairs the misconception (whole photon energy / emitted energy / reversed difference).
