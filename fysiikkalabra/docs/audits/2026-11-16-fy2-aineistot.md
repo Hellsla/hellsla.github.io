@@ -70,3 +70,9 @@ Ydinvoima koko ajan noin $2590\,\text{MW}$, vesivoima $1520$ → $1920$ → $178
 
 Päästöt lasketaan luvun *Energiantuotanto, ympäristö ja ilmastonmuutos* päästökertoimella (glossary.json:
 päästökerroin; lähteen sana "päästöintensiteetti" / "carbon intensity" mainitaan lähteen nimenä).
+
+## CI-korjaukset (16.11.2026)
+- 360 px: fy2-7-L2-10:n "$262\,\text{MW} - 210\,\text{MW} = 52\,\text{MW}$" ja fy2-8-L2-11:n vientiketju "+2142 → +1124 → −152 MW"
+  olivat yhtenä inline-kaavana 5–9 px liian leveitä CI:n Chromiumissa (paikallinen 356 px meni läpi; CI on noin 9 px tiukempi).
+  Pilkottu lyhyemmiksi kaavoiksi kaikilla kielillä.
+- check_i18n: fi-easy-ratkaisuista (fy2-3 L2-09, fy2-7 L2-10, fy2-8 L2-11) puuttui suomenkielisen kaavoja; lisätty.
