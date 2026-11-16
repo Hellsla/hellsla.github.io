@@ -87,7 +87,12 @@
 **Conversions:** $l = 5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$
 **Substitution:** $|e| = 20 \cdot 0.30\,\text{T} \cdot 0.050\,\text{m} \cdot 0.25\,\text{m/s} = 0.075\,\text{V} = 75\,\text{mV}$
 **Answer:** $75\,\text{mV}$, two significant figures like the given values.
-**Reasonableness:** Check using the whole entry: the flux grows from zero to $BA = 0.30\,\text{T} \cdot (0.050\,\text{m})^2 = 7.5 \cdot 10^{-4}\,\text{Wb}$ in the time $0.050\,\text{m} : 0.25\,\text{m/s} = 0.20\,\text{s}$, so $|e| = 20 \cdot 7.5 \cdot 10^{-4}\,\text{Wb} : 0.20\,\text{s} = 0.075\,\text{V}$.
+**Reasonableness:** Check using the whole entry: the flux grows from zero to $BA = 0.30\,\text{T} \cdot (0.050\,\text{m})^2 = 7.5 \cdot 10^{-4}\,\text{Wb}$ in the time $$
+\begin{aligned}
+&0.050\,\text{m} : 0.25\,\text{m/s} \\
+&= 0.20\,\text{s}
+\end{aligned}
+$$, so $|e| = 20 \cdot 7.5 \cdot 10^{-4}\,\text{Wb} : 0.20\,\text{s} = 0.075\,\text{V}$.
 
 ## fy7-5-L3-01
 **Given:** speed of the train $v = 200\,\text{km/h}$, length of the axle from rail to rail $l = 1524\,\text{mm}$, vertical component of the Earth's magnetic field $B_\text{v} = 50\,\mu\text{T}$
@@ -95,7 +100,14 @@
 **Principle:** The axle is a metal rod that moves horizontally, perpendicular to itself. The magnetic force on the electrons is perpendicular to the velocity and the field; a component along the axle arises only from the vertical component of the field, because the horizontal component is either parallel to the velocity or gives a vertical force. The voltage is therefore given by $e = vB_\text{v}l$.
 **Formula:** $e = vB_\text{v}l$
 **Conversions:** $v = 200\,\text{km/h} = 200 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 55.56\,\text{m/s}$, $l = 1524\,\text{mm} = 1524 \cdot 0.001\,\text{m} = 1.524\,\text{m}$ and $B_\text{v} = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T}$
-**Substitution:** $e = 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1.524\,\text{m} = 4.233 \cdot 10^{-3}\,\text{V} = 4.2\,\text{mV}$
+**Substitution:** $$
+\begin{aligned}
+e &= 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \\
+&\cdot 1.524\,\text{m} \\
+&= 4.233 \cdot 10^{-3}\,\text{V} \\
+&= 4.2\,\text{mV}
+\end{aligned}
+$$
 **Answer:** $4.2\,\text{mV}$, two significant figures like the field $50\,\mu\text{T}$.
 **Reasonableness:** The Earth's field is about one ten-thousandth of the field of a laboratory magnet, so despite the high speed the voltage stays in the millivolt range. At a cyclist's speed of $20\,\text{km/h}$ the voltage would be a tenth of this, about $0.4\,\text{mV}$.
 
@@ -239,4 +251,9 @@ If the number of turns is forgotten, the voltages of situations A and B come out
 **Conversions:** $|\Delta\Phi| = 8.0\,\text{mWb} = 8.0 \cdot 10^{-3}\,\text{Wb}$
 **Substitution:** $|e_\text{ka}| = 200 \cdot \dfrac{8.0 \cdot 10^{-3}\,\text{Wb}}{0.40\,\text{s}} = 200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$
 **Answer:** $4.0\,\text{V}$, two significant figures like the fluxes $5.0\,\text{mWb}$ and $-3.0\,\text{mWb}$ read from the graph.
-**Reasonableness:** Using only the final value $3.0\,\text{mWb}$ would give $200 \cdot 3.0 \cdot 10^{-3}\,\text{Wb} : 0.40\,\text{s} = 1.5\,\text{V}$, which is too small: the flux changes through zero, so the change is larger than either value alone. The slope of the graph, $-8.0\,\text{mWb} : 0.40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$, gives the same result: $200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$.
+**Reasonableness:** Using only the final value $3.0\,\text{mWb}$ would give $200 \cdot 3.0 \cdot 10^{-3}\,\text{Wb} : 0.40\,\text{s} = 1.5\,\text{V}$, which is too small: the flux changes through zero, so the change is larger than either value alone. The slope of the graph, $$
+\begin{aligned}
+&-8.0\,\text{mWb} : 0.40\,\text{s} \\
+&= -20\,\tfrac{\text{mWb}}{\text{s}}
+\end{aligned}
+$$, gives the same result: $200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$.

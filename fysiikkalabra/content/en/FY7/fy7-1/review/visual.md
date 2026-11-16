@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f3f619028352a996
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 0ca71bec6cd6380a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, misconception — "because the Earth's northern magnetic pole is called the magnetic north pole" is circular — e.g. "Many people conclude from the name *magnetic north pole* that the north pole of a magnet lies in the north and attracts the north end of the needle."
+- [Minor] inquiry.json, optional "Revise: the sum of vectors" (3 feedbacks) — the chain is correctly broken (root over two rows, "= 50 N" under it, full stop inside the block). The feedback is closed in every provided en capture, so I judged it from a 390 px capture of the Finnish page of the same structure; consider adding the opened state to the captures.
+
+## Outside this change (queue 5d, not blocking here)
+- [Major] en/fy7-1 rows in docs/clipped-formulas.tsv (the (14 µT)^2 + (18 µT)^2 root chains and the (12 µT)^2 + (-5.0 µT)^2 + ... chain) stay clipped on a phone.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Bar-magnet model vs geomagnetic naming: Why-question, theory, new naming paragraph, misconception, summary, inquiry check-1 feedbacks; terms consistent (sauvamagneettimalli / magneettinen pohjoisnapa).
-- No paragraph changed in this round in en exceeds about 120 words
+- stage-herata-390 (optional Revise box, closed), open-ennusta-1280; Finnish 390 px capture of the opened feedback (rows aligned, nothing clipped, punctuation sensible).
+- figures.json: only figure words added (two graph descriptions, "east", "down"); no drawing changed.
 - Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c282aa48e9d21cc9
-SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
+CONTENT-HASH: bacf22c53f8f6715
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] 2-18 (fy7-2/r-points) — the top point (2,0; about 21 cm) lies just above the last gridline (20) — extend the y axis to 25 for room.
+- [Minor] 2-11 Sijoitus — the numerator is split by hand into two rows (second row "·0,12 m" set apart from the first) although it fits at 1280 px; readable, but a fraction with a broken numerator is the least tidy form. Optional: keep as is.
+- [Minor] 2-17 (voimakuvio) G block lacks its result row, unlike the F_m block above; result stands on its own line, so legible.
 
 ## Checked
-- Delta: added 2-9 (fy7-2-L1-09) and 2-18 (fy7-2-L2-09) with solutions: open-exercises-1280 parts 9-10, open-exercises-L2-1280 parts 11-12 (graph and solution read at full size).
-- The earlier Major (exercise id shown to the student) is gone: Järkevyys now says "Tehtävän 2-2". The rest of the set not re-reviewed.
+- fy7-2-open-exercises-L2-1280-2 (2-11 deuteron v), L2-1280-11 (2-17 F_m and G rows), L2-1280-12 (neighbour 2-18).
+- Delta (reflow only): changed solutions read in fy7-2-open-exercises captures at 1280 px; the 390 px layout was judged from the source rows (short aligned rows, nothing wider than the 1280 px rows). Layout survived: no overflow, units upright, signs and numbers unchanged. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

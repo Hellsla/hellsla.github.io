@@ -1,13 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: f428ce1e18c69703
-SCOPE: delta numbers from cf9ed883d9acab26 base 619f34a
-
+CONTENT-HASH: 6f158dcc37c616a5
 ## Blocking
-- none
-
 ## Polish
-- none
-
 ## Checked
-- L2-09 Reasonableness: task 2-2 radius 7.6 mm x 3.75 = 28 mm matches 2.8 cm; no lesson id shown to the student.
-- Language checked: en. Hash f428ce1e18c69703 at start; unchanged at end.
+- Delta: L3-05 data given as 60.0 kV and 0.200 m (three significant figures, as the field 1.00 T and the answer's three), mirrored in Given, Conversions, Substitution and Reasonableness of the solution. The values, the 32 crossings, 16 revolutions and 1.05 µs are unchanged, and the "three significant figures like the field and the radius" justification is now true.
+- Language checked: en. Hash 6f158dcc37c616a5 at start and end.

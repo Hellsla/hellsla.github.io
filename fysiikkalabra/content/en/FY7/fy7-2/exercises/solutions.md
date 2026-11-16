@@ -90,7 +90,9 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 **Principle:** The deuteron goes round a circle because the magnetic force $qvB$ is perpendicular to the velocity and acts as the centripetal force.
 **Formula:** $qvB = \dfrac{mv^2}{r}$, so $v = \dfrac{qBr}{m}$
 **Conversions:** $r = 12\,\text{cm} = 12 \cdot 0.01\,\text{m} = 0.12\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $v = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.60\,\text{T} \cdot 0.12\,\text{m}}{3.344 \cdot 10^{-27}\,\text{kg}} = 3.449 \cdot 10^{6}\,\text{m/s} = 3449\,\text{km/s}$
+**Substitution:** $v = \dfrac{\begin{aligned}1.602 \cdot 10^{-19}\,\text{C} \cdot 0.60\,\text{T} \\ \cdot 0.12\,\text{m}\end{aligned}}{3.344 \cdot 10^{-27}\,\text{kg}}$
+$= 3.449 \cdot 10^{6}\,\text{m/s}$
+$= 3449\,\text{km/s}$
 **Answer:** $3.4 \cdot 10^{3}\,\text{km/s}$, two significant figures like the radius $12\,\text{cm}$ and the field $0.60\,\text{T}$.
 **Reasonableness:** The speed is about $1\,\%$ of the speed of light, so the classical formula still holds. Calculating back, $r = mv : (qB) = 3.344 \cdot 10^{-27} \cdot 3.449 \cdot 10^{6} : (1.602 \cdot 10^{-19} \cdot 0.60)\,\text{m} = 0.12\,\text{m}$.
 
@@ -183,14 +185,14 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 **Reasonableness:** Lithium-7 ($7\,\text{u}$) would give the slope $0.118\,\text{cm}^2/\text{V} \cdot 7 : 22.8 = 0.036\,\text{cm}^2/\text{V}$ and potassium-39 ($39\,\text{u}$) the value $0.202\,\text{cm}^2/\text{V}$, each clearly different from the measurement. For sodium-23 the formula $r^2 = 2mU : (qB^2)$ gives at the voltage $U = 400\,\text{V}$ the radius $r = 6.9\,\text{cm}$, which agrees with the measured value $6.8\,\text{cm}$. The speed at this voltage is about $6 \cdot 10^{4}\,\text{m/s}$, so the classical treatment is valid.
 
 ## fy7-2-L3-05
-**Given:** $B = 1.00\,\text{T}$, accelerating voltage of a gap crossing $U = 60\,\text{kV}$, two crossings per revolution, extraction radius $r = 0.20\,\text{m}$, $m = 1.673 \cdot 10^{-27}\,\text{kg}$, $q = 1.602 \cdot 10^{-19}\,\text{C}$, $c = 3.00 \cdot 10^{8}\,\text{m/s}$; the proton starts practically from rest
+**Given:** $B = 1.00\,\text{T}$, accelerating voltage of a gap crossing $U = 60.0\,\text{kV}$, two crossings per revolution, extraction radius $r = 0.200\,\text{m}$, $m = 1.673 \cdot 10^{-27}\,\text{kg}$, $q = 1.602 \cdot 10^{-19}\,\text{C}$, $c = 3.00 \cdot 10^{8}\,\text{m/s}$; the proton starts practically from rest
 **Find:** a) the speed and the kinetic energy at the moment of extraction, b) the number of gap crossings and revolutions and the acceleration time $t$ in microseconds, c) the ratio of the speed to the speed of light and an assessment of the classical treatment
 **Principle:** The magnetic field does not change the speed but bends the path, so the speed follows from the extraction radius by the formula $r = mv : (qB)$. All the kinetic energy is given by the electric field: each gap crossing gives the energy $qU$. The period $T = 2\pi m : (qB)$ depends neither on the speed nor on the radius, so the acceleration time is the number of revolutions times $T$.
 **Formula:** $v = \dfrac{qBr}{m}$, $E_\text{k} = \tfrac{1}{2}mv^2$, the number of gap crossings $n = \dfrac{E_\text{k}}{qU}$, the number of revolutions $\dfrac{n}{2}$, $T = \dfrac{2\pi m}{qB}$ and $t = \dfrac{n}{2}\,T$
-**Conversions:** $U = 60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6.0 \cdot 10^{4}\,\text{V}$; finally $1\,\mu\text{s} = 10^{-6}\,\text{s}$.
-**Substitution:** a) $v = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T} \cdot 0.20\,\text{m}}{1.673 \cdot 10^{-27}\,\text{kg}} = 1.92 \cdot 10^{7}\,\text{m/s}$ and $E_\text{k} = \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \cdot (1.92 \cdot 10^{7}\,\text{m/s})^2 = 3.07 \cdot 10^{-13}\,\text{J}$. b) In one crossing the energy increases by $qU = 1.602 \cdot 10^{-19}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} = 9.61 \cdot 10^{-15}\,\text{J}$, so $n = \dfrac{3.07 \cdot 10^{-13}\,\text{J}}{9.61 \cdot 10^{-15}\,\text{J}} = 31.9 \approx 32$ crossings, that is $16$ revolutions. The period is $T = \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T}} = 6.56 \cdot 10^{-8}\,\text{s}$, so $t = 16 \cdot 6.56 \cdot 10^{-8}\,\text{s} = 1.05 \cdot 10^{-6}\,\text{s} = 1.05\,\mu\text{s}$. c) $\dfrac{v}{c} = \dfrac{1.92 \cdot 10^{7}\,\text{m/s}}{3.00 \cdot 10^{8}\,\text{m/s}} = 0.064$
+**Conversions:** $U = 60.0\,\text{kV} = 60.0 \cdot 1000\,\text{V} = 6.00 \cdot 10^{4}\,\text{V}$; finally $1\,\mu\text{s} = 10^{-6}\,\text{s}$.
+**Substitution:** a) $v = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T} \cdot 0.200\,\text{m}}{1.673 \cdot 10^{-27}\,\text{kg}} = 1.92 \cdot 10^{7}\,\text{m/s}$ and $E_\text{k} = \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \cdot (1.92 \cdot 10^{7}\,\text{m/s})^2 = 3.07 \cdot 10^{-13}\,\text{J}$. b) In one crossing the energy increases by $qU = 1.602 \cdot 10^{-19}\,\text{C} \cdot 6.00 \cdot 10^{4}\,\text{V} = 9.61 \cdot 10^{-15}\,\text{J}$, so $n = \dfrac{3.07 \cdot 10^{-13}\,\text{J}}{9.61 \cdot 10^{-15}\,\text{J}} = 31.9 \approx 32$ crossings, that is $16$ revolutions. The period is $T = \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.00\,\text{T}} = 6.56 \cdot 10^{-8}\,\text{s}$, so $t = 16 \cdot 6.56 \cdot 10^{-8}\,\text{s} = 1.05 \cdot 10^{-6}\,\text{s} = 1.05\,\mu\text{s}$. c) $\dfrac{v}{c} = \dfrac{1.92 \cdot 10^{7}\,\text{m/s}}{3.00 \cdot 10^{8}\,\text{m/s}} = 0.064$
 **Answer:** a) $1.92 \cdot 10^{7}\,\text{m/s}$ and $3.07 \cdot 10^{-13}\,\text{J}$ (about $1.9\,\text{MeV}$). b) About $32$ crossings and $16$ revolutions; the acceleration takes $1.05\,\mu\text{s}$, three significant figures like the field and the radius. c) The speed is about $6\,\%$ of the speed of light, so the relativistic correction to the kinetic energy is of the order of $\tfrac{3}{4}(v : c)^2 \approx 0.3\,\%$. The classical treatment is valid here; at greater energies the period would begin to grow, and the switching rate of the accelerating voltage would not stay constant.
-**Reasonableness:** The period at the extraction radius: $\dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 0.20\,\text{m}}{1.92 \cdot 10^{7}\,\text{m/s}} = 6.56 \cdot 10^{-8}\,\text{s}$, the same as with the formula $T = 2\pi m : (qB)$. Checking the energy: $32 \cdot 9.61 \cdot 10^{-15}\,\text{J} = 3.08 \cdot 10^{-13}\,\text{J}$, the same as $E_\text{k}$.
+**Reasonableness:** The period at the extraction radius: $\dfrac{2\pi r}{v} = \dfrac{2\pi \cdot 0.200\,\text{m}}{1.92 \cdot 10^{7}\,\text{m/s}} = 6.56 \cdot 10^{-8}\,\text{s}$, the same as with the formula $T = 2\pi m : (qB)$. Checking the energy: $32 \cdot 9.61 \cdot 10^{-15}\,\text{J} = 3.08 \cdot 10^{-13}\,\text{J}$, the same as $E_\text{k}$.
 
 ## fy7-2-L2-08
 **Find:** which of the four force diagrams correctly shows the forces acting on an electron that moves upwards in a magnetic field pointing out of the page.
@@ -207,7 +209,12 @@ F_\text{m} &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 3.0 \cdot 10^{6}\,\tfrac{\tex
 
 $G = mg$
 
-$G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+$$
+\begin{aligned}
+G &= 9.109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot 9.81\,\text{m/s}^2
+\end{aligned}
+$$
 
 $G \approx 8.9 \cdot 10^{-30}\,\text{N}$
 

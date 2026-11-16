@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b1a099f5521137fb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 859eba00409d803c
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — "ja silloin merkitään lyhyesti $e$" → "Silloin sitä merkitään lyhyesti $e$:llä."
+- [Minor] inquiry.json, Vihje 3 and the e-solution — "e = 4,0 m/s · 0,25 T / · 0,50 m" is broken by a hand-made aligned block also at 1280 px, where it fits on one row — fix: leave the chain whole and let mathlayout break it on a phone.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Hash identical at start and end of this round.
+- Delta: Esimerkit/Tehtävät hints and Sijoitus/Järkevyys rows of the built page at 390 and 1280 px; aligned rows, equals signs in one column, units intact, nothing clipped.
+- Reworded Pohdinta text about Faraday and "webereiksi" fix: fluent, one idea per sentence.
+- Hash identical at start and end.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

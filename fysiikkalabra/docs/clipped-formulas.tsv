@@ -63,7 +63,6 @@ FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm
 FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
 FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
@@ -1081,7 +1080,6 @@ fi-easy/FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{
 fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
 fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}
 fi-easy/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
-fi-easy/FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 fi-easy/FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 fi-easy/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 fi-easy/FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
@@ -3064,7 +3062,6 @@ fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
 fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
 fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
 fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
-fy7-1	15\,\mu\text{T} \cdot \tan 53{,}13^\circ = 20\,\mu\text{T}
 fy7-1	= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
@@ -3095,7 +3092,6 @@ fy7-13	1{,}667\,\mu\text{m} \cdot \sin 20{,}64^\circ = 0{,}588\,\mu\text{m}
 fy7-13	1{,}679\,\mu\text{m} \cdot 0{,}3168 = 0{,}532\,\mu\text{m}
 fy7-13	2{,}00\,\mu\text{m} \cdot \sin 18{,}97^\circ = 0{,}650\,\mu\text{m}
 fy7-13	3333\,\text{nm} \cdot \sin 11{,}24^\circ = 650\,\text{nm}
-fy7-13	= 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,
 fy7-13	= 1{,}20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2{,
 fy7-13	= 2 \cdot 589 \cdot 10^{-9}\,\text{m} : (2{,}00 \cdot 10^{-6}\,\text{m
 fy7-13	= 532 \cdot 10^{-9}\,\text{m} : (1{,}667 \cdot 10^{-6}\,\text{m})

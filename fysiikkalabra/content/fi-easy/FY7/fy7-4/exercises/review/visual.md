@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4b0cc38bf955e1fc
-SCOPE: delta added-exercise from ebb42c79b13ea8b7 base 8f23aa7ae3bd
+CONTENT-HASH: 33e452fa72f8750d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-4/force-angle — data points are momentum purple on a force-red curve; use a neutral ink point colour if the palette allows.
+- none
 
 ## Checked
-- Added exercises L2-09 (fi-easy, FY7 fy7-4): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-4.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Delta: Järkevyys of the 0,094 N task rendered at 390 and 1280 px: the chain "0,050 N : 0,3420 = 0,146 N," in its own block, comma inside the formula, sentence continues "ja 0,094 N jää sen alle"; readable, nothing clipped.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

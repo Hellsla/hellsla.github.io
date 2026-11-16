@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0e04e6b96fbac7d1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: d04ac46d1a998ca2
 
 ## Blocking
 - none
 
+## Outside this change (queue 5d, not blocking here)
+- [Major, outside this change] en/fy7-5 rows in docs/clipped-formulas.tsv (e.g. 200 · 3.0 · 10^-3 Wb : 0.40 s = 1.5 V, 150 · 3.6 · 10^-4 Wb : 0.12 s, e = vBl = ...) are known clipped.
+
 ## Polish
-- [Minor] lesson.md — the "The quotient $\Delta\Phi : \Delta t$" paragraph is about 131 words; optionally break before "In the graph below".
+- [Minor] open-tarkista-1280-2/3, calculation task "a moving rod" — the substitution is broken after the second factor even at 1280 px where it would fit (e = 4.0 m/s · 0.25 T / · 0.50 m = 0.50 V). A hand break forces this at every width; harmless.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Round-1 blocker fixed: the steady/uneven-change sentences are now their own paragraph; the formula-explanation paragraph is back under the limit.
-- Hash identical at start and end of this round.
+- open-tarkista-1280-2 and -3: hint 3 and the solution's Substitution block, punctuation inside the block, "so" followed by the formula.
+- 390 px: not re-captured for the opened solution; the hand-broken block is narrower than the 390 px column (checked on the exercise rows).
+- Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

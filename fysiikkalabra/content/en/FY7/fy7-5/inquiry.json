@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday made a similar observation in his laboratory: a magnet beside a coil produced no current, but a moving magnet did.",
+      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday investigated in his laboratory whether a magnet produces a current in a coil: a magnet beside a coil produced no current.",
       "question": "What decides whether a voltage appears in the coil in the situation of the magnet and the coil, and what does the size of the voltage depend on?"
     },
     {
@@ -320,7 +320,7 @@
       "hints": [
         "What acts on the electrons of the rod when the rod moves in the field, and where do the electrons move to?",
         "The voltage between the ends of the rod is $e = vBl$ when the velocity, the rod and the field are mutually perpendicular.",
-        "$l = 50\\,\\text{cm} = 0.50\\,\\text{m}$, so $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m}$."
+        "$l = 50\\,\\text{cm} = 0.50\\,\\text{m}$, so $$\n\\begin{aligned}\ne &= 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\\\\n&\\cdot 0.50\\,\\text{m}\n\\end{aligned}\n$$."
       ],
       "mistakes": [
         {
@@ -332,7 +332,7 @@
           "feedback": "The length of the rod is missing. The voltage arises along the whole length of the rod: the electric field $E = vB$ inside the rod is multiplied by the length of the rod, $e = vBl$."
         }
       ],
-      "solution": "**Given:** length of the rod $l = 50\\,\\text{cm}$, speed $v = 4.0\\,\\text{m/s}$, magnetic flux density $B = 0.25\\,\\text{T}$; the velocity, the rod and the field are mutually perpendicular\n\n**Find:** induced voltage $e$ between the ends of the rod in volts\n\n**Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The electric field that appears grows until the electric force $eE$ cancels the magnetic force, that is, $E = vB$. The field is uniform, so the voltage between the ends is $El$.\n\n**Formula:** $e = vBl$\n\n**Conversions:** $l = 50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$\n\n**Substitution:** $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m} = 0.50\\,\\text{V}$\n\n**Answer:** $0.50\\,\\text{V}$, two significant figures like the given values.\n\n**Reasonableness:** The units fit: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. The voltage is under a volt, as is to be expected for a laboratory-sized device; the same voltage follows from Faraday's law, since the area swept by the rod grows every second by $0.50\\,\\text{m} \\cdot 4.0\\,\\text{m} = 2.0\\,\\text{m}^2$, and $0.25\\,\\text{T} \\cdot 2.0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0.50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
+      "solution": "**Given:** length of the rod $l = 50\\,\\text{cm}$, speed $v = 4.0\\,\\text{m/s}$, magnetic flux density $B = 0.25\\,\\text{T}$; the velocity, the rod and the field are mutually perpendicular\n\n**Find:** induced voltage $e$ between the ends of the rod in volts\n\n**Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The electric field that appears grows until the electric force $eE$ cancels the magnetic force, that is, $E = vB$. The field is uniform, so the voltage between the ends is $El$.\n\n**Formula:** $e = vBl$\n\n**Conversions:** $l = 50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$\n\n**Substitution:** $$\n\\begin{aligned}\ne &= 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\\\\n&\\cdot 0.50\\,\\text{m} \\\\\n&= 0.50\\,\\text{V}\n\\end{aligned}\n$$\n\n**Answer:** $0.50\\,\\text{V}$, two significant figures like the given values.\n\n**Reasonableness:** The units fit: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. The voltage is under a volt, as is to be expected for a laboratory-sized device; the same voltage follows from Faraday's law, since the area swept by the rod grows every second by $0.50\\,\\text{m} \\cdot 4.0\\,\\text{m} = 2.0\\,\\text{m}^2$, and $0.25\\,\\text{T} \\cdot 2.0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0.50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
     },
     {
       "id": "tarkistus-3",

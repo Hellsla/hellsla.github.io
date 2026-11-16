@@ -4,39 +4,6 @@ FY5/fy5-8	exercises/solutions.md	heat-into	Loput noin $27\,\%$ eli noin $10\,\te
 FY6/fy6-10	exercises/exercises.json	heat-into	Varaus ei muutu lämmöksi eikä häviä.
 FY6/fy6-10	exercises/solutions.md	heat-into	Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
 FY6/sovella	solutions.md	heat-into	- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
-FY7/fy7-8	exercises/exercises.json	heat-into	Ilman kuormaa muuntaja ottaa silti tehon, joka muuttuu rautasydämessä lämmöksi.
-FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?
-FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka monta prosenttia tehosta muuttuu johdossa lämmöksi?
-FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi?
-FY7/fy7-8	exercises/exercises.json	heat-into	Kuvaajassa on lämmöksi muuttuvan tehon osuus siirretystä tehosta siirtojännitteen funktiona.
-FY7/fy7-8	exercises/exercises.json	heat-into	Mikä on kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka?
-FY7/fy7-8	exercises/exercises.json	heat-into	Opiskelijat rakensivat siirtojohdon pienoismallin vastuslangasta ja mittasivat, kuinka suuri teho langassa muuttuu lämmöksi eri virroilla.
-FY7/fy7-8	exercises/exercises.json	heat-into	Voimalaitos siirtää tehon johtoa pitkin, ja johdossa muuttuu lämmöksi teho $840\,\text{kW}$.
-FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L1-04 **Annettu:** johtimien yhteinen resistanssi $R = 2{,}5\,\Omega$, virta $I = 120\,\text{A}$ **Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{
-FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-01 **Annettu:** teho $P = 50\,\text{MW}$, siirtojännite $U = 110\,\text{kV}$, johtimien resistanssi $R = 4{,}0\,\Omega$ **Kysytty:** johdossa lämmök
-FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-04 **Annettu:** kuvaajan käyrä häviötehosta $P_\text{h}$ virran $I$ funktiona **Kysytty:** langan resistanssi $R$ ohmeina **Periaate:** Langassa läm
-FY7/fy7-8	exercises/solutions.md	heat-into	## fy7-8-L2-08 **Kysytty:** tuulivoimalan kaapelissa lämmöksi muuttuvan häviötehon $P_\text{h}$ suuruusluokka.
-FY7/fy7-8	exercises/solutions.md	heat-into	Ilman kuormaa muuntaja ottaa silti tehon $P_0$ (rautasydämen lämpeneminen), ja kuormitettuna käämeissä muuttuu lämmöksi lisäksi $R I^2$.
-FY7/fy7-8	exercises/solutions.md	heat-into	Johdon virta määräytyy siirtojännitteestä, $I = P : U$, ja johtimissa lämmöksi muuttuva teho on $P_\text{h} = R I^2$.
-FY7/fy7-8	exercises/solutions.md	heat-into	Muuntajassa osa ensiötehosta muuttuu lämmöksi, joten $\eta < 1$.
-FY7/fy7-8	exercises/solutions.md	heat-into	Todellinen laturi ottaa hieman enemmän, koska osa energiasta muuttuu laturissa lämmöksi.
-FY7/fy7-8	exercises/solutions.md	heat-into	Todellisessa muuntajassa osa ensiötehosta muuttuu rautasydämessä ja käämeissä lämmöksi, joten $\eta < 1$.
-FY7/fy7-8	exit-ticket.json	heat-into	Miten johdossa lämmöksi muuttuva teho muuttuu?
-FY7/fy7-8	inquiry.json	heat-into	**Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{h}$ kilowatteina
-FY7/fy7-8	inquiry.json	heat-into	Johdon virta saadaan tehosta ja siirtojännitteestä, $I = P : U$, ja johdossa lämmöksi muuttuva teho on
-FY7/fy7-8	inquiry.json	heat-into	Johto muuttuu sitä punaisemmaksi, mitä suurempi osa tehosta muuttuu siinä lämmöksi.
-FY7/fy7-8	inquiry.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi?
-FY7/fy7-8	inquiry.json	heat-into	Miten johdossa lämmöksi muuttuva häviöteho muuttuu?
-FY7/fy7-8	inquiry.json	heat-into	Valitse siirtojännite, teho ja johdon pituus ja seuraa, kuinka suuri osa tehosta muuttuu johdossa lämmöksi.
-FY7/fy7-8	lesson.md	heat-into	Johdon virta ja johdossa lämmöksi muuttuva teho ovat ```latex \begin{aligned} &P = U I \\ &P_\text{h} = R I^2 = \frac{R P^2}{U^2} \end{aligned} ``` missä $P$ on
-FY7/fy7-8	lesson.md	heat-into	Lämmöksi muuttuva teho on verrannollinen virran neliöön, joten virta kannattaa pitää pienenä.
-FY7/koe	solutions.md	heat-into	Kaapelin resistanssissa virta muuttaa osan energiasta lämmöksi, ja häviöteho riippuu virran neliöstä.
-FY7/koe	solutions.md	heat-into	Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, joten se on sama kuin vetoteho.
-FY7/koe	tasks.json	heat-into	Toteaa, että sähköteho $eI = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, ja tämä on sama kuin vetoteho.
-FY7/koe	tasks.json	heat-into	Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu lämmöksi kaapelissa kummassakin vaihtoehdossa.
-FY7/sovella	solutions.md	heat-into	Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
-FY7/sovella	tasks.json	heat-into	Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\,\text{kV}$:n johtoa?
-FY7/sovella	tasks.json	heat-into	Osa tästä tehosta muuttuu siirtojohdossa lämmöksi, joten kaivoksen vastaanottama teho riippuu siirtohäviöstä.
 FY8/fy8-14	lesson.md	heat-into	Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodissa lämmöksi, ja vain pieni osa säteilee röntgenfotoneina.
 FY8/fy8-2	exercises/exercises.json	heat-into	Oletetaan, ettei energiaa siirry lämmöksi.
 FY8/fy8-2	exercises/exercises.json	heat-into	Oletetaan, että jokaista absorboitua fotonia kohti väriaine lähettää yhden fluoresenssifotonin ja että energia, joka ei lähde fotonina, muuttuu lämmöksi.

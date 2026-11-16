@@ -131,7 +131,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 ### d)
 **Kysytty:** jarruttaako dynamo pyörää valon ollessa päällä ja pois päältä
 **Periaate:** Kun käämi on suljetussa virtapiirissä, muuttuva vuo synnyttää siihen induktiovirran. Lenzin lain mukaan induktiovirran magneettikenttä vastustaa muutosta, joka sen synnyttää. Energian säilymisen mukaan valon säteilemän energian on tultava jostakin. Muuttuva magneettikenttä synnyttää myös johtaviin metalliosiin pyörrevirtoja.
-**Mallivastaus:** *Valo päällä.* Käämissä kulkee induktiovirta, jonka magneettikenttä vastustaa vuon muutosta. Se vetää lähestyvää magneettinapaa poispäin ja loittonevaa takaisin. Pyörivään magneettirenkaaseen kohdistuu siis jarruttava magneettinen voima, vaikka mikään ei kosketa toisiaan. Sama seuraa energian säilymisestä. Valo säteilee energiaa, ja se tulee pyöräilijän tekemästä työstä. Jos jarruttavaa voimaa ei olisi, valo saisi energiaa tyhjästä. Väitteen ensimmäinen osa pitää paikkansa.
+**Mallivastaus:** *Valo päällä.* Käämissä kulkee induktiovirta, jonka magneettikenttä vastustaa vuon muutosta. Se työntää lähestyvää magneettinapaa poispäin ja vetää loittonevaa takaisin. Pyörivään magneettirenkaaseen kohdistuu siis jarruttava magneettinen voima, vaikka mikään ei kosketa toisiaan. Sama seuraa energian säilymisestä. Valo säteilee energiaa, ja se tulee pyöräilijän tekemästä työstä. Jos jarruttavaa voimaa ei olisi, valo saisi energiaa tyhjästä. Väitteen ensimmäinen osa pitää paikkansa.
 
 *Valo pois päältä.* Piiri on auki, joten käämissä ei kulje virtaa eikä käämi jarruta. Magneettirenkaan muuttuva kenttä synnyttää kuitenkin pyörrevirtoja dynamon metalliosiin, esimerkiksi käämin rautasydämeen ja metalliseen napaan. Pyörrevirrat lämmittävät metallia ja jarruttavat pyörimistä Lenzin lain mukaisesti. Lisäksi rautasydämen magnetoituminen vaihtaa suuntaa jatkuvasti, mikä vie hieman energiaa.
 
@@ -165,12 +165,19 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 ### a)
 **Annettu:** sähköaseman johtoon syöttämä teho $P = 6{,}0\,\text{MW}$, siirtojännite $U = 20\,\text{kV}$, johdon pituus $25\,\text{km}$, kaksi johdinta, poikkipinta-ala $A = 150\,\text{mm}^2$ ja resistiivisyys $\rho = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m}$
 **Kysytty:** johdon häviöteho $P_\text{h}$ ja sen osuus johtoon syötetystä tehosta
-**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on siis $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
+**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on siis $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa sisäenergiaksi muuttuva teho on resistanssin ja virran neliön tulo.
 **Kaava:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$
 **Muunnokset:** $l = 2 \cdot 25\,\text{km} = 5{,}0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6{,}0 \cdot 10^{6}\,\text{W}$ ja $U = 20 \cdot 10^{3}\,\text{V}$
-**Sijoitus:** $R = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9{,}40\,\Omega$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
+**Sijoitus:** $$
+\begin{aligned}
+R &= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \\
+&\cdot \dfrac{5{,}0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} \\
+&= 9{,}40\,\Omega
+\end{aligned}
+$$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
 **Vastaus:** $P_\text{h} \approx 850\,\text{kW}$ eli noin $14\,\%$ johtoon syötetystä tehosta. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa ja jännitteessä.
-**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja. Siksi $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}$.
+**Järkevyys:** Sähköverkon häviöt ovat Suomessa yhteensä vain muutamia prosentteja. Siksi $14\,\%$:n häviö yhdessä johdossa on aivan liian suuri. Pienellä jännitteellä tarvitaan suuri virta, ja häviö kasvaa virran neliönä. Kaivokselle jää vain noin $6{,}0\,\text{MW} - 0{,}85\,\text{MW}$
+$\approx 5{,}2\,\text{MW}$.
 
 ### b)
 **Annettu:** a-kohdan tiedot ja resistanssi $R = 9{,}40\,\Omega$, siirtojännite $U = 110\,\text{kV}$
@@ -197,7 +204,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 **Periaate:** Häviöteho on $P_\text{h} = RI^2$. Kun jännite on $20\,\text{kV}$, virta on aina $300\,\text{A}$. Häviötä voi siis pienentää vain pienentämällä resistanssia. Resistanssi on kääntäen verrannollinen poikkipinta-alaan. Johtimien massa on suoraan verrannollinen niiden tilavuuteen.
 **Mallivastaus:** *Tarvittava paksuus.* Häviön pitää olla sama kuin $110\,\text{kV}$:n johdossa. Resistanssin on siis oltava $846\,\text{kW} : 28{,}0\,\text{kW} \approx 30$ kertaa pienempi. Poikkipinta-alan on silloin oltava $30{,}25 \cdot 150\,\text{mm}^2 \approx 4500\,\text{mm}^2$. Umpinaisen pyöreän johtimen halkaisija olisi $2\sqrt{4{,}5 \cdot 10^{-3}\,\text{m}^2 : \pi} \approx 7{,}6\,\text{cm}$.
 
-*Alumiinin määrä.* Nykyisten johtimien massa on $2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot 10^{-6}\,\text{m}^2 \approx 20\,\text{t}$. Paksujen johtimien massa olisi $30$-kertainen, noin $610\,\text{t}$. Pylväiden pitäisi kantaa tämä kaikki. Alumiini maksaisi moninkertaisesti muuntajan hinnan.
+*Alumiinin määrä.* Nykyisten johtimien massa on $2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot 10^{-6}\,\text{m}^2 \approx 20\,\text{t}$. Paksujen johtimien massa olisi $30$-kertainen, noin $610\,\text{t}$. Pylväiden pitäisi kantaa tämä kaikki.
 
 *Miksi jännite kannattaa nostaa.* Jännitteen nostaminen pienentää virtaa samassa suhteessa, ja häviö riippuu virran neliöstä. $5{,}5$-kertainen jännite pienentää häviön noin $30$:nteen osaan. Paksumpi johdin pienentää häviötä vain samassa suhteessa kuin poikkipinta-ala kasvaa. Saman tuloksen saamiseksi johdinta on siis paksunnettava $30$-kertaisesti.
 
@@ -209,7 +216,14 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 **Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Johtimissa kulkee siis yhtä suuri virta vastakkaisiin suuntiin. Kumpikin johdin on pitkä suora johdin. Johtimet ovat paljon pidempiä kuin niiden etäisyys. Siksi toisen johtimen kohdalla oleva magneettikenttä saadaan suoran johtimen kentän kaavasta. Kenttä on kohtisuorassa toista johdinta vastaan, joten siihen kohdistuu voima $F = IlB$. Oikean käden säännön mukaan vastakkaissuuntaiset virrat hylkivät toisiaan. Vaihtovirralla virrat vaihtavat suuntaa yhtä aikaa. Ne ovat siis aina vastakkaissuuntaiset, ja johtimet hylkivät toisiaan koko ajan. Johtimen metrin paino saadaan sen massasta, joka on tiheyden ja tilavuuden tulo.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$ ja $F = IlB$, joten $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. Painoa varten $\dfrac{G}{l} = \rho_\text{Al} A g$.
 **Muunnokset:** $I_\text{k} = 8{,}0\,\text{kA} = 8{,}0 \cdot 10^{3}\,\text{A}$ ja $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$
-**Sijoitus:** Normaalikäytössä $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 4{,}0 \cdot 10^{-5}\,\text{T}$ ja $\dfrac{F}{l} = 300\,\text{A} \cdot 4{,}0 \cdot 10^{-5}\,\text{T} = 0{,}012\,\text{N/m}$. Oikosulussa $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8{,}0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 1{,}067 \cdot 10^{-3}\,\text{T}$ ja $\dfrac{F}{l} = 8{,}0 \cdot 10^{3}\,\text{A} \cdot 1{,}067 \cdot 10^{-3}\,\text{T} = 8{,}53\,\text{N/m}$. Johtimen paino metriä kohti on $\dfrac{G}{l} = 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m}^2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 3{,}97\,\text{N/m}$.
+**Sijoitus:** Normaalikäytössä $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 4{,}0 \cdot 10^{-5}\,\text{T}$ ja $\dfrac{F}{l} = 300\,\text{A} \cdot 4{,}0 \cdot 10^{-5}\,\text{T} = 0{,}012\,\text{N/m}$. Oikosulussa $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8{,}0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 1{,}067 \cdot 10^{-3}\,\text{T}$ ja $\dfrac{F}{l} = 8{,}0 \cdot 10^{3}\,\text{A} \cdot 1{,}067 \cdot 10^{-3}\,\text{T} = 8{,}53\,\text{N/m}$. Johtimen paino metriä kohti on $$
+\begin{aligned}
+\dfrac{G}{l} &= 2700\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\cdot 150 \cdot 10^{-6}\,\text{m}^2 \\
+&\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 3{,}97\,\text{N/m}
+\end{aligned}
+$$.
 **Vastaus:** Johtimet hylkivät toisiaan. Voima on normaalikäytössä noin $0{,}012\,\text{N}$ ja oikosulussa noin $8{,}5\,\text{N}$ johtimen jokaista metriä kohti. Vastauksessa on kaksi merkitsevää numeroa, kuten etäisyydessä ja oikosulkuvirrassa. Normaalikäytössä voimalla ei ole merkitystä. Oikosulussa voima on noin kaksinkertainen johtimen painoon nähden.
 **Järkevyys:** Normaalikäytössä voima on vain noin $0{,}3\,\%$ johtimen painosta, joka on noin $4{,}0\,\text{N}$ metriä kohti. Oikosulussa virta on noin $27$-kertainen, ja voima kasvaa virran neliönä. Voima on siis noin $710$-kertainen: $8{,}53 : 3{,}97 \approx 2{,}1$ kertaa johtimen paino. Pylväiden välillä roikkuvat johtimet heilahtavat silloin erilleen. Ne voivat heilahtaa takaisin ja lyödä yhteen. Siksi johtimien väli mitoitetaan oikosulun mukaan, ja oikosulku katkaistaan sekunnin murto-osassa. Näin suuri virta on mahdollinen vain lähellä sähköasemaa, koska siellä johdon resistanssi vikapaikkaan asti on pieni.
 
@@ -435,7 +449,17 @@ Esimerkiksi toisen kertaluvun punaiselle viivalle $k\lambda = 2 \cdot 656{,}28\,
 ### d)
 **Kysytty:** onko päätelmä natriumista perusteltu ja miten mittausta voisi parantaa
 **Periaate:** Kaksi vaihtoehtoa voi erottaa mittauksella vain, jos niiden ero on suurempi kuin mittauksen epävarmuus. Kulman epävarmuus siirtyy aallonpituuteen hilan yhtälön kautta.
-**Mallivastaus:** *Epävarmuus.* Kulman lukematarkkuus on $0{,}1^\circ$. Lasketaan aallonpituudet kulmista $20{,}6^\circ$ ja $20{,}8^\circ$: $1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}$ ja $1667\,\text{nm} \cdot \sin 20{,}8^\circ \approx 592{,}0\,\text{nm}$. Aallonpituuden epävarmuus on siis noin $\pm 3\,\text{nm}$, eli $\lambda = (589 \pm 3)\,\text{nm}$. Myös hilavakiossa on pieni epävarmuus, joka vain kasvattaa tätä.
+**Mallivastaus:** *Epävarmuus.* Kulman lukematarkkuus on $0{,}1^\circ$. Lasketaan aallonpituudet kulmista $20{,}6^\circ$ ja $20{,}8^\circ$: $$
+\begin{aligned}
+&1667\,\text{nm} \cdot \sin 20{,}6^\circ \\
+&\approx 586{,}5\,\text{nm}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+&1667\,\text{nm} \cdot \sin 20{,}8^\circ \\
+&\approx 592{,}0\,\text{nm}
+\end{aligned}
+$$. Aallonpituuden epävarmuus on siis noin $\pm 3\,\text{nm}$, eli $\lambda = (589 \pm 3)\,\text{nm}$. Myös hilavakiossa on pieni epävarmuus, joka vain kasvattaa tätä.
 
 *Päätelmän arviointi.* Heliumin viiva $587{,}56\,\text{nm}$ ja natriumin viivat $588{,}99\,\text{nm}$ ja $589{,}59\,\text{nm}$ ovat kaikki välillä $586$–$592\,\text{nm}$. Heliumin ja natriumin ero, noin $1{,}4\,\text{nm}$, on epävarmuutta pienempi. Kulmina ero on vain $20{,}64^\circ$ ja $20{,}70^\circ$ eli noin $0{,}05^\circ$. Se on alle goniometrin lukematarkkuuden. Mittaus ei siis erota natriumia heliumista, eikä ryhmän päätelmä ole perusteltu tällä mittauksella. Lampussa voi olla natriumia, mutta se ei seuraa tästä mittauksesta.
 

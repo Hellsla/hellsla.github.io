@@ -364,7 +364,7 @@ Kuituyhteyden pituus on $80\,\text{km}$, ja kuidun vaimennuskerroin on $0{,}20\,
 ## Yleinen virhekäsitys
 Moni ajattelee, että langaton laturi lähettää energiaa radioaaltojen tapaan kauas huoneeseen. Silloin puhelimen voisi ladata mistä tahansa laturin läheltä. Laturin magneettikenttä kuitenkin heikkenee jyrkästi jo muutamien senttimetrien matkalla. Energiaa siirtyy vain silloin, kun vastaanotinkäämi on kentässä aivan lähettimen vieressä.
 
-Toinen yleinen virhe on luulla, että induktioliesi kuumentaa lasilevyä ja lasi lämmittää kattilan. Lämpö syntyy kattilan pohjassa pyörrevirtojen vuoksi. Lasi lämpenee vain kuumasta kattilasta.
+Toinen yleinen virhe on luulla, että induktioliesi kuumentaa lasilevyä ja lasi lämmittää kattilan. Pyörrevirrat muuttavat sähköenergiaa kattilan pohjan sisäenergiaksi. Lasi lämpenee vain siksi, että kuumasta kattilasta siirtyy siihen lämpöä.
 
 Kolmas virhe koskee desibelejä. Kun vaimennus desibeleinä kaksinkertaistuu, teho ei puolitu. Tehojen suhde korotetaan toiseen potenssiin. Esimerkiksi $20\,\text{dB}$ jättää tehosta $1\,\%$, ei $5\,\%$.
 
