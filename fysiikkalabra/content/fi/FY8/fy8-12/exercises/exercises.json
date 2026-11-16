@@ -312,6 +312,19 @@
           "feedback": "GM-putken pulssi on joka tapauksessa saman kokoinen, koska elektronivyöry ei riipu säteilylajista. Putki laskee tapahtumat mutta ei erota säteilylajeja."
         }
       ]
+    },
+    {
+      "id": "fy8-12-L2-08",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://english.autoriteitnvs.nl/latest/news/2021/12/16/do-you-have-a-quantum-pendant-anti%2D5g-pendant-or-a-negative-ion-jewellery-item-or-sleep-mask-if-so-store-it-away-safely\" target=\"_blank\" rel=\"noopener\">ANVS (Alankomaiden ydinturvallisuus- ja säteilysuojeluviranomainen): uutinen 16. joulukuuta 2021 ”Do you have a ’Quantum Pendant’ anti-5G pendant or a ’negative ion’ jewellery item or sleep mask?”</a> (luettu 16. marraskuuta 2026)\n\nAlankomaiden viranomainen tiedotti kymmenestä koruna tai unimaskina myydystä tuotteesta, esimerkiksi ”Quantum Pendant” -riipuksesta, joka oli nimetty 5G-vastaiseksi, sekä ”negative ion” -rannekoruista, kaulakoruista ja unimaskista. Kansanterveys- ja ympäristöinstituutti RIVM tutki tuotteet ja totesi, että ne sisältävät radioaktiivisia aineita ja lähettävät jatkuvasti ionisoivaa säteilyä. Mitattu säteilytaso oli matala ja terveyshaitan riski pieni, mutta tuotteen pitäminen yhtäjaksoisesti pitkään (vuosi, 24 tuntia vuorokaudessa) voisi altistaa ihon säteilylle yli Alankomaiden tiukan ihoaltistuksen rajan. Tuotteiden myynti on kielletty, ja omistajia kehotetaan lopettamaan tuotteen käyttö, säilyttämään se suljettuna kaapissa eikä heittämään sitä talousjätteisiin.\n\na) Päättele tuotteiden nimistä, mitä ne väittivät tekevän, ja kerro, mitä viranomainen havaitsi tuotteista. Erota nimistä päätelty väite viranomaisen havainnosta.\n\nb) Matkapuhelinverkon 5G-signaali on radioaaltoa. Oletetaan, että sen taajuus on $3{,}5\\,\\text{GHz}$. Laske yhden radioaaltofotonin energia $E = hf$ elektronivoltteina ja vertaa sitä atomista elektronin irrottamiseen tarvittavaan energiaan, joka on suuruusluokkaa $10\\,\\text{eV}$, sekä radioaktiivisen aineen gammafotonin energiaan, joka on suuruusluokkaa $10^5$–$10^6\\,\\text{eV}$. Selitä, miksi toinen säteily ionisoi ja toinen ei, vaikka radioaaltojen intensiteetti olisi kuinka suuri.\n\nc) Kuvaile, miten tuotteen ihoon kohdistuvaa säteilyaltistusta voitaisiin mitata. Mainitse mittarityyppi ja mittausetäisyys, miten tausta otetaan huomioon, mitä mitattavasta pulssi- tai annosnopeudesta tarvitaan ja miten säteilylaji tunnistettaisiin.\n\nd) Mitä näyttöä tarvittaisiin tuotteen väitetyistä terveysvaikutuksista? Selitä lisäksi, miksi riipus ei voi suojata 5G-säteilyltä, ja luokittele väite fysikaalisesti vääräksi väitteeksi tai todelliseksi vaikutukseksi.\n\nVastaa laatikkoon kohdan b) fotonin energia mikroelektronivoltteina ($1\\,\\mu\\text{eV} = 10^{-6}\\,\\text{eV}$).",
+      "kind": [
+        "data",
+        "model",
+        "concept"
+      ],
+      "answer": 14.5,
+      "unit": "µeV",
+      "tolerance": 0.04
     }
   ],
   "level3": [

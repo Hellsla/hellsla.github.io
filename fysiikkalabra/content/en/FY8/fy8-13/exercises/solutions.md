@@ -273,3 +273,22 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Flights accumulate about $1.9\,\text{mSv}$ in a year, so the order of magnitude is about $2\,\text{mSv}$. The wrong options come from common mistakes: the dose of one flight is only $27\,\mu\text{Sv}$, that is about $0.03\,\text{mSv}$, the dose of one month is about $160\,\mu\text{Sv}$, that is about $0.2\,\text{mSv}$, dividing the microsieverts by a million gives about $0.002\,\text{mSv}$, and leaving the unit unconverted gives about $2000\,\text{mSv}$. Reasonableness: $2\,\text{mSv}$ is about a third of the average annual dose of a Finn, $5.9\,\text{mSv}$, so the dose of a person who flies a lot grows clearly but stays in the same order of magnitude. A dose of $2000\,\text{mSv}$ would be hundreds of times the average, which is not possible from flights alone.
+
+## fy8-13-L2-09
+**Given:** your own reading from the reports. According to the figures in the reports, the average annual effective dose is $5.9\,\text{mSv}$. An example reading of 16 November 2026: indoor radon $4\,\text{mSv}$, other natural radiation $1.1\,\text{mSv}$ and medical use $0.76\,\text{mSv}$. In part c) the dose rate is $\dot{H} = 0.10\,\mu\text{Sv/h}$ and the time $t = 8760\,\text{h}$, which is the exact number of hours in a year.
+**Asked:** a) the average annual dose and the three largest sources, b) the share of radon as a percentage, c) the annual dose $H$ from the dose rate in millisieverts, d) a comparison and an explanation
+**Principle:** The parts of the effective dose are added together, so a share is the dose of one source divided by the total dose. At a constant dose rate the dose is the dose rate times the time, $H = \dot{H} t$. The assumption of a constant dose rate only suits an estimate: the meter does not show all of the dose.
+**Model answer on part a):** You choose which sources you write down. In the example the largest source is indoor radon $4\,\text{mSv}$, the second is other natural radiation (ground and building materials, food and cosmic radiation) $1.1\,\text{mSv}$ and the third is medical use $0.76\,\text{mSv}$. According to the report, radon is about two thirds of the total dose.
+**Formula:** $\text{share} = \dfrac{H_\text{radon}}{H_\text{total}} \cdot 100\,\%$ and $H = \dot{H} t$
+**Conversions:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$, so $876\,\mu\text{Sv} = 876 : 1000\,\text{mSv} = 0.876\,\text{mSv}$.
+**Substitution:** b) $\text{share} = \dfrac{4\,\text{mSv}}{5.9\,\text{mSv}} \cdot 100\,\% = 67.8\,\%$; c) $$
+\begin{aligned}
+H &= \dot{H} t \\
+&= 0.10\,\mu\text{Sv/h} \cdot 8760\,\text{h} \\
+&= 876\,\mu\text{Sv} \\
+&= 0.876\,\text{mSv}
+\end{aligned}
+$$
+**Model answer on part d):** The dose-rate estimate $0.88\,\text{mSv}$ is only about $15\,\%$ of $5.9\,\text{mSv}$, so $5.9\,\text{mSv} - 0.88\,\text{mSv} = 5.0\,\text{mSv}$ is left unexplained. A radiation meter measures external radiation, such as gamma radiation from the ground and building materials and cosmic radiation. According to the report these are on average $0.45\,\text{mSv}$ and $0.33\,\text{mSv}$, together $0.78\,\text{mSv}$, which is of the same order of magnitude as our estimate. Most of the dose comes from elsewhere: radon is inhaled, and its decay products, which emit alpha radiation, irradiate the lungs from inside, so an external dose-rate meter does not see it. The body's own radioactive substances, such as potassium-40, and medical use also give dose. In addition, people spend much of their time indoors, where the dose rate differs from the outdoor value, and the dose rate varies from place to place.
+**Answer:** $0.88\,\text{mSv}$, two significant figures like the dose rate $0.10\,\mu\text{Sv/h}$. The hours $8760\,\text{h}$ are the exact number of hours in a year. The share in part b) is $68\,\%$.
+**Reasonableness:** A rough estimate: $0.10\,\mu\text{Sv/h}$ is $1\,\mu\text{Sv}$ in ten hours, and about $9000\,\text{h}$ gives about $900\,\mu\text{Sv}$, which is about $0.9\,\text{mSv}$. The result is smaller than the total dose $5.9\,\text{mSv}$, as it should be, because it covers only some of the sources.

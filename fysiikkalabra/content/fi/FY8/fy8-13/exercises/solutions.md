@@ -273,3 +273,22 @@ $$\begin{aligned}
 \end{aligned}$$
 
 Lennoista kertyy vuodessa noin $1{,}9\,\text{mSv}$, joten suuruusluokka on noin $2\,\text{mSv}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: yhden lennon annos on vain $27\,\mu\text{Sv}$ eli noin $0{,}03\,\text{mSv}$, yhden kuukauden annos noin $160\,\mu\text{Sv}$ eli noin $0{,}2\,\text{mSv}$, mikrosievertien jakaminen miljoonalla antaa noin $0{,}002\,\text{mSv}$ ja yksikön muuntamatta jättäminen noin $2000\,\text{mSv}$. Järkevyys: $2\,\text{mSv}$ on noin kolmasosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, joten paljon lentävän ihmisen annos kasvaa selvästi mutta jää samaan suuruusluokkaan. Annos $2000\,\text{mSv}$ olisi satoja kertoja keskimääräistä suurempi, mikä ei ole mahdollista pelkistä lennoista.
+
+## fy8-13-L2-09
+**Annettu:** oma lukema raporteista. Raporttien lukujen mukaan keskimääräinen efektiivinen vuosiannos on $5{,}9\,\text{mSv}$. Esimerkkilukema 16. marraskuuta 2026: sisäilman radon $4\,\text{mSv}$, muu luonnon säteily $1{,}1\,\text{mSv}$ ja lääketieteellinen käyttö $0{,}76\,\text{mSv}$. Kohdassa c) annosnopeus $\dot{H} = 0{,}10\,\mu\text{Sv/h}$ ja aika $t = 8760\,\text{h}$, jonka vuoden tuntimäärä antaa tarkasti.
+**Kysytty:** a) keskimääräinen vuosiannos ja kolme suurinta lähdettä, b) radonin osuus prosentteina, c) annosnopeudesta kertyvä vuosiannos $H$ millisieverteinä, d) vertailu ja selitys
+**Periaate:** Efektiivisen annoksen osat lasketaan yhteen, joten osuus on lähteen annos jaettuna kokonaisannoksella. Vakioannosnopeudella annos on annosnopeus kertaa aika, $H = \dot{H} t$. Oletus vakiosta annosnopeudesta sopii vain arviolle: mittari ei kerro kaikkea annosta.
+**Mallivastaus a):** Valitset itse, mitkä lähteet kirjaat. Esimerkissä suurin lähde on sisäilman radon $4\,\text{mSv}$, toiseksi suurin muu luonnon säteily (maaperä ja rakennusaineet, ruoka ja kosminen säteily) $1{,}1\,\text{mSv}$ ja kolmas lääketieteellinen käyttö $0{,}76\,\text{mSv}$. Raportin mukaan radonin osuus on noin kaksi kolmasosaa kokonaisannoksesta.
+**Kaava:** $\text{osuus} = \dfrac{H_\text{radon}}{H_\text{yht}} \cdot 100\,\%$ ja $H = \dot{H} t$
+**Muunnokset:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$, joten $876\,\mu\text{Sv} = 876 : 1000\,\text{mSv} = 0{,}876\,\text{mSv}$.
+**Sijoitus:** b) $\text{osuus} = \dfrac{4\,\text{mSv}}{5{,}9\,\text{mSv}} \cdot 100\,\% = 67{,}8\,\%$; c) $$
+\begin{aligned}
+H &= \dot{H} t \\
+&= 0{,}10\,\mu\text{Sv/h} \cdot 8760\,\text{h} \\
+&= 876\,\mu\text{Sv} \\
+&= 0{,}876\,\text{mSv}
+\end{aligned}
+$$
+**Mallivastaus d):** Annosnopeuden arvio $0{,}88\,\text{mSv}$ on vain noin $15\,\%$ annoksesta $5{,}9\,\text{mSv}$, joten $5{,}9\,\text{mSv} - 0{,}88\,\text{mSv} = 5{,}0\,\text{mSv}$ jää selittämättä. Säteilymittari mittaa ulkoista säteilyä, kuten gammasäteilyä maaperästä ja rakennusaineista sekä kosmista säteilyä. Raportin mukaan nämä ovat keskimäärin $0{,}45\,\text{mSv}$ ja $0{,}33\,\text{mSv}$ eli yhteensä $0{,}78\,\text{mSv}$, mikä on samaa suuruusluokkaa kuin arviomme. Suurin osa annoksesta tulee muualta: radonia hengitetään, ja sen alfasäteilyä lähettävät hajoamistuotteet säteilyttävät keuhkoja sisältä käsin, joten ulkoinen annosnopeusmittari ei näe sitä. Lisäksi kehon omat radioaktiiviset aineet, kuten kalium-40, ja lääketieteellinen käyttö antavat annosta. Oma lisänsä tulee siitä, että ihmiset viettävät suuren osan ajasta sisällä, jossa annosnopeus poikkeaa ulkoilman arvosta, ja annosnopeus vaihtelee paikasta toiseen.
+**Vastaus:** $0{,}88\,\text{mSv}$, kaksi merkitsevää numeroa kuten annosnopeudessa $0{,}10\,\mu\text{Sv/h}$. Tunnit $8760\,\text{h}$ ovat tarkka vuoden tuntimäärä. Kohdan b) osuus on $68\,\%$.
+**Järkevyys:** Arvio karkeasti: $0{,}10\,\mu\text{Sv/h}$ on $1\,\mu\text{Sv}$ kymmenessä tunnissa, ja noin $9000\,\text{h}$ antaa noin $900\,\mu\text{Sv}$ eli noin $0{,}9\,\text{mSv}$. Tulos on pienempi kuin kokonaisannos $5{,}9\,\text{mSv}$, kuten pitääkin, koska se kattaa vain osan lähteistä.
