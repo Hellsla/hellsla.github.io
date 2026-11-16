@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 16bb16e0f37b499a
-SCOPE: delta round 2 (L2-10 natural quakes, magnitude, km per second) from 7b8809a307253ebd
 
 ## Blocking
 (none)

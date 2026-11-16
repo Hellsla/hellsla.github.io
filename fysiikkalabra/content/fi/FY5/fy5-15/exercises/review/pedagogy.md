@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 29114098e00b3554
-SCOPE: delta round 2 (sig-fig wording, L2-06 chain re-broken) from 42d45a82e2ac2a0e
 
 ## Blocking
 (none)

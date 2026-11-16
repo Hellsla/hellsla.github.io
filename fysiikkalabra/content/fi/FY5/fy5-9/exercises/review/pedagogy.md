@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: b83d89918db889fd
-SCOPE: delta round 2 (significant-figure justifications, answer split) from c6de36add8c9d166
 
 ## Blocking
 (none)

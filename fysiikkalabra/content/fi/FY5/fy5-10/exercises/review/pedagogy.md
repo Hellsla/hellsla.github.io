@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 98bb58d9bd7e5e29
-SCOPE: delta work queue 18 (C = v²/F rows corrected, caption marker) from 78caa538200d885a
 
 ## Blocking
 (none)

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 7cc36b31da39ce67
-SCOPE: delta round 2 (L2-09 row names in em, deviation percentages) from fcb321d5570d6cec
 
 ## Blocking
 (none)

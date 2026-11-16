@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 632e5672772dd3f3
-SCOPE: delta round 2 (L2-10 c, 8-hour day) from 21a7e8ebe0232319
 
 ## Blocking
 (none)

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: bada72c8a05e8dc1
-SCOPE: delta round 2 (two wording lines, re-broken row) from 0ac25a5213e086eb
 
 ## Blocking
 (none)

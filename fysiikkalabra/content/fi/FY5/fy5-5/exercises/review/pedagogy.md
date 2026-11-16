@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 95dcb8b70d26daad
-SCOPE: delta round 2 (feedback wording, re-broken calculation rows) from b6940bfa43676459
 
 ## Blocking
 (none)

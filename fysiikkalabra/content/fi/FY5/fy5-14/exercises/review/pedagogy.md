@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4d4bfb5fc5e7d672
-SCOPE: delta round 2 (L2-09 c and d, solution paragraphs split) from 000b14e87e0db8d2
+CONTENT-HASH: 000b14e87e0db8d2
 
 ## Blocking
 (none)

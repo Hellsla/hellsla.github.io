@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 75cc6de28fa950e1
-SCOPE: delta round 2 (L2-10 part c, PhET wording) from 2ced2c581f51c659
 
 ## Blocking
 (none)

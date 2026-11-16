@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 98bb58d9bd7e5e29
-SCOPE: delta numbers in fy5-10-L3-04 aligned block (C_1 to C_4), caption marker removed.
 
 ## Blocking
 (none)

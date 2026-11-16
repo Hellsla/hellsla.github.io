@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 2bb981571ee01f3d
-SCOPE: delta round 2 (core goal on force, deepen goal, transfer task on force, Syventävä titles, summary) from b014123181afab7b
 
 ## Blocking
 (none)
