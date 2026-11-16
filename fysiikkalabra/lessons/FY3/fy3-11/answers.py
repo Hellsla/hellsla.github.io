@@ -54,4 +54,8 @@ a["fy3-11-L3-05"] = (Q_vastus - W_ilma) / 1000     # ΔU = Q − pΔV = 740 J = 
 a["fy3-11-L1-09"] = 101325 * 2.0e-3                  # MAFY 1 atm = 101 325 Pa: W_k = pΔV = 101 325 Pa · 0,0020 m³ = 202,65 J -> 2,0 · 10² J
 # Added exercises (teacher 2026-11-12: MAFY table task, figure task)
 a["fy3-11-L2-09"] = (4.0 - 1.0) * 1e-3 / 50e-4          # fy3-11/pv-isobaari: V₁ = 1,0 l, V₂ = 4,0 l; A = 50 cm² = 50·10⁻⁴ m²: Δs = ΔV/A = 3,0·10⁻³ m³ / 5,0·10⁻³ m² = 0,60 m
+# Data task with a source link (teacher 2026-11-16, FY3-A3: Motiva, heat pump COP)
+Q1_cop = 4.0 * 2.5                                 # L2-10 b): heat to the room Q₁ = εW = 4,0 · 2,5 kWh = 10 kWh
+a["fy3-11-L2-10"] = (4.0 - 1) * 2.5                # heat from the surroundings Q₂ = Q₁ − W = (ε − 1)W = 3,0 · 2,5 kWh = 7,5 kWh
+assert abs(a["fy3-11-L2-10"] + 2.5 - Q1_cop) < 1e-9   # energy balance Q₂ + W = Q₁; share from the surroundings Q₂/Q₁ = 75 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

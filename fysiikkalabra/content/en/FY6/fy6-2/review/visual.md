@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ca8401bb91b5326f
+CONTENT-HASH: 43d30485b3d42167
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: no diff; opened fy6-2-fig-row-1280, layout intact, figures legible.
+- round 3, delta review (reflow): proof sheets en-fy6-2-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

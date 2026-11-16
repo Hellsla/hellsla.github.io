@@ -26,16 +26,16 @@
       "choices": [
         {
           "text": "about $2.1\\,\\text{kJ}$",
-          "feedback": "This is the quantity of heat for warming by one kelvin. The temperature change is $\\Delta T = 100\\,\\text{K}$, so $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$."
+          "feedback": "This is the quantity of heat for warming by one kelvin. The temperature change is $\\Delta T = 100\\,\\text{K}$, so $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
         },
         {
           "text": "about $210\\,\\text{kJ}$",
           "correct": true,
-          "feedback": "Correct: $Q = cm\\Delta T = 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\approx 210\\,\\text{kJ}$. You can compare this figure with the changes of state in this lesson."
+          "feedback": "Correct: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$. You can compare this figure with the changes of state in this lesson."
         },
         {
           "text": "about $419\\,\\text{kJ}$",
-          "feedback": "The mass was left out. The specific heat capacity gives the quantity of heat per *kilogram*, so it is multiplied by the mass: $Q = cm\\Delta T = 4190 \\cdot 0.50 \\cdot 100\\,\\text{J} \\approx 210\\,\\text{kJ}$."
+          "feedback": "The mass was left out. The specific heat capacity gives the quantity of heat per *kilogram*, so it is multiplied by the mass: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190 \\cdot 0.50 \\cdot 100\\,\\text{J} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
         }
       ],
       "optional": true
@@ -256,14 +256,14 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates the quantity of heat needed to melt $0.20\\,\\text{kg}$ of ice at zero degrees into water at zero degrees: $Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0.20\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$. The student concludes that ice melts without energy. Where is the error?",
+      "prompt": "A student calculates the quantity of heat needed to melt $0.20\\,\\text{kg}$ of ice at zero degrees into water at zero degrees: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.20\\,\\text{kg} \\cdot 0\\,\\text{K} \\\\ &= 0\\,\\text{J} \\end{aligned}$$. The student concludes that ice melts without energy. Where is the error?",
       "choices": [
         {
           "text": "The value for water, $4190\\,\\text{J/(kg}\\cdot\\text{K)}$, should be used in place of the specific heat capacity of ice.",
           "feedback": "Changing the coefficient does not help: when $\\Delta T = 0$, the product is still zero. The error is in the choice of formula itself."
         },
         {
-          "text": "The formula $Q = cm\\Delta T$ applies to warming. In a change of state the temperature does not change, and the quantity of heat is $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0.20\\,\\text{kg} \\approx 66.8\\,\\text{kJ}$.",
+          "text": "The formula $Q = cm\\Delta T$ applies to warming. In a change of state the temperature does not change, and the quantity of heat is $$\\begin{aligned} Q &= sm \\\\ &= 334\\,\\text{kJ/kg} \\cdot 0.20\\,\\text{kg} \\\\ &\\approx 66.8\\,\\text{kJ} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. On the horizontal part of a heating curve $\\Delta T = 0$, but energy is transferred all the time: it changes the interactions between the particles and increases the interaction energy between them. That is why melting has its own formula, $Q = sm$."
         },
@@ -302,7 +302,7 @@
           "feedback": "You divided by 60. An hour is $3600\\,\\text{s}$, not $60\\,\\text{s}$, and power is joules per second."
         }
       ],
-      "solution": "**Given:** water vaporising $m = 0.30\\,\\text{kg}$ in a time $t = 1\\,\\text{h}$, the water is already at $100\\,{}^\\circ\\text{C}$, no heat losses; from the table $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** the power $P$ used for vaporising, in watts\n\n**Principle:** The water is already at the boiling point, so it does not need to be warmed and all the energy is used for vaporisation, $Q = rm$. With no losses, energy is conserved, and power is energy divided by time.\n\n**Formula:** $P = \\dfrac{Q}{t}$ and $Q = rm$, so\n\n$$P = \\frac{rm}{t}$$\n\n**Conversions:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ and $t = 1\\,\\text{h} = 3600\\,\\text{s}$. This way the result comes out in the unit $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Substitution:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0.30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188.3\\,\\text{W}$\n\n**Answer:** $1.9\\cdot10^{2}\\,\\text{W}$ (calculator result $188\\,\\text{W}$), two significant figures like the mass $0.30\\,\\text{kg}$.\n\n**Reasonableness:** Estimate: $0.7\\,\\text{MJ}$ in an hour is about $700\\,000\\,\\text{J} / 3600\\,\\text{s} \\approx 190\\,\\text{W}$. A couple of hundred watts is a typical power for a household steam humidifier. The actual input power is slightly greater, because some of the energy passes to the surroundings, and the power is smaller than that of a $2000\\,\\text{W}$ hotplate, because the steam is produced slowly.",
+      "solution": "**Given:** water vaporising $m = 0.30\\,\\text{kg}$ in a time $t = 1\\,\\text{h}$, the water is already at $100\\,{}^\\circ\\text{C}$, no heat losses; from the table $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}}$\n\n**Find:** the power $P$ used for vaporising, in watts\n\n**Principle:** The water is already at the boiling point, so it does not need to be warmed and all the energy is used for vaporisation, $Q = rm$. With no losses, energy is conserved, and power is energy divided by time.\n\n**Formula:** $P = \\dfrac{Q}{t}$ and $Q = rm$, so\n\n$$P = \\frac{rm}{t}$$\n\n**Conversions:** $r = 2260\\,\\tfrac{\\text{kJ}}{\\text{kg}} = 2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}}$ and $t = 1\\,\\text{h} = 3600\\,\\text{s}$. This way the result comes out in the unit $\\tfrac{\\text{J}}{\\text{s}} = \\text{W}$.\n\n**Substitution:** $P = \\dfrac{2\\,260\\,000\\,\\tfrac{\\text{J}}{\\text{kg}} \\cdot 0.30\\,\\text{kg}}{3600\\,\\text{s}} = \\dfrac{678\\,000\\,\\text{J}}{3600\\,\\text{s}} = 188.3\\,\\text{W}$\n\n**Answer:** $1.9\\cdot10^{2}\\,\\text{W}$ (calculator result $188\\,\\text{W}$), two significant figures like the mass $0.30\\,\\text{kg}$.\n\n**Reasonableness:** Estimate: $0.7\\,\\text{MJ}$ in an hour is about $$\\begin{aligned} &700\\,000\\,\\text{J} / 3600\\,\\text{s} \\\\ &\\approx 190\\,\\text{W} \\end{aligned}$$. A couple of hundred watts is a typical power for a household steam humidifier. The actual input power is slightly greater, because some of the energy passes to the surroundings, and the power is smaller than that of a $2000\\,\\text{W}$ hotplate, because the steam is produced slowly.",
       "optional": true
     },
     {

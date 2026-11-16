@@ -330,6 +330,19 @@
       "answer": 0.6,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.motiva.fi/wp-content/uploads/sites/2/2026/01/Saatojen-ja-kayttotapojen-vaikutus-energiakulutukseen-–-Omakotitalot.pdf\" target=\"_blank\" rel=\"noopener\">Motiva – Säätöjen ja käyttötapojen vaikutus energiankulutukseen – Omakotitalot (PDF)</a> (luettu 16. marraskuuta 2026)\n\nMotivan aineisto kertoo, miten omakotitalon lämmityksen säädöt vaikuttavat energiankulutukseen. Lue aineistosta luvut Ilmalämpöpumppu ja Ilma-vesilämpöpumppu. Lue myös sanastosta kohdat Lämpökerroin ja COP. Sanaston mukaan lämpökerroin $3{,}0$ tarkoittaa, että ”hyötysuhde on $300$ prosenttia”. Aineiston COP on sama suure kuin tämän luvun lämpökerroin $\\varepsilon$.\n\na) Selitä aineiston avulla, mitä lämpöpumpun lämpökerroin tarkoittaa. Miten se eroaa tavallisen sähkölämmittimen hyötysuhteesta? Miksi sanaston ilmaus ”hyötysuhde on $300$ prosenttia” on fysiikassa epätarkka?\n\nb) Lämpöpumpun lämpökerroin on $4{,}0$. Pumppu kuluttaa $2{,}5\\,\\text{kWh}$ sähköenergiaa. Laske huoneeseen siirtyvä lämpö $Q_1$ ja ympäristöstä otettu lämpö $Q_2$.\n\nc) Selitä aineiston avulla, miten ulkolämpötila vaikuttaa lämpöpumpun lämpökertoimeen. Selitä myös, miten lämmitykseen tarvittava lämpötila (sisäilman tai lämmitysveden lämpötila) vaikuttaa siihen. Mitä tästä seuraa kovalla pakkasella?\n\nd) Arvioi väitettä: ”Lämpöpumppu rikkoo energian säilymislakia, koska se tuottaa enemmän lämpöenergiaa kuin kuluttaa sähköenergiaa.” Käytä perustelussa kohdan b) energiataseita. Energiatase tarkoittaa, että vertaat laitteen ottamaa ja luovuttamaa energiaa.\n\nVastauskenttään tulee kohdan b) ympäristöstä otettu lämpö $Q_2$ kilowattitunteina.",
+      "kind": [
+        "data",
+        "error",
+        "concept"
+      ],
+      "answer": 7.5,
+      "unit": "kWh",
+      "tolerance": 0.02
     }
   ],
   "level3": [

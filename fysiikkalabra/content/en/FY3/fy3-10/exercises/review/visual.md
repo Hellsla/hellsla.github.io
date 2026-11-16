@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1d1d07f24a542ddf
+CONTENT-HASH: 5016f9e61a55760f
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Diff: significant-figure justifications and 1.7 / 7.5 m³ in three solutions. Opened fy3-10-open-exercises-1280-9 (neighbouring solution, units and fractions fine); changed lines read from the diff.
+- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
+- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

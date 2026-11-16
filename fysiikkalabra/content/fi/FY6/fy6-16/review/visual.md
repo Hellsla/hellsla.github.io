@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 65aaf46702ef907a
+CONTENT-HASH: e95f532dd07ca078
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md Ydinajatus — the "kun latauksen häviöt otetaan huomioon," clause is followed by an elided "kestää" for the station, so the sentence reads a little stacked; optionally split as fi-easy does.
+- none
 
 ## Checked
-- Delta review, round 2: only the Ydinajatus socket-charging sentence changed. Opened review/shots/fy6-16-theory-1280-1.png (shows the sentence in the "Yksi vaihe vai kolme" paragraph, KaTeX numbers/units intact, no clipping, layout beside the photo unchanged). Layout around it survived.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-16-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

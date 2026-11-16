@@ -627,7 +627,7 @@ Kaavassa $m$ on hiukkasen massa ($\text{kg}$), $v$ on sen nopeus ($\text{m/s}$) 
 ```latex
 1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}
 ```
-koska $1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Siis $1\,\text{keV} = 1000\,\text{eV}$.
+koska $$1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1{,}602 \cdot 10^{-19}\,\text{J}$$. Siis $1\,\text{keV} = 1000\,\text{eV}$.
 
 ## Esimerkki
 Revontulielektroni lähtee lähes levosta ja kulkee kohti suurempaa potentiaalia $3{,}0\,\text{kV}$:n potentiaalieron läpi. Kuinka suuri on elektronin liike-energia elektronivoltteina ja jouleina? Kuinka suuri on sen nopeus? Elektronin varaus on $-e$, missä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, ja massa on $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$. Muut voimat kuin sähköinen voima jätetään huomiotta.

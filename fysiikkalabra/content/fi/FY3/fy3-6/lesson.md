@@ -311,14 +311,14 @@ Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että s
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-Kuuma vesi on vasemmalla puolella kuten yleisessä yhtälössä. Viimeisen ryhmän ensimmäisellä rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa. Sama tulos saadaan painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
+Kuuma vesi on vasemmalla puolella kuten yleisessä yhtälössä. Viimeisen ryhmän ensimmäisellä rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa. Sama tulos saadaan painotetulla keskiarvolla: $$\begin{aligned} &T \\ &= (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) \\ &: 4{,}0\,\text{kg} \\ &= 35\,{}^\circ\text{C} \end{aligned}$$.
 
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273: lämpötilan muutos on sama kummallakin asteikolla.
 
 ## Tiivistelmä
 - Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$. Ominaislämpökapasiteetti $c$ riippuu aineesta, ja vedellä se on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - Lämpökapasiteetti $C = cm$ kertoo, kuinka monta joulea koko kappaleen lämmittäminen yhdellä kelvinillä vaatii.
-- Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama: $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$. Tasapainolämpötila $T$ ratkaistaan keräämällä $T$:n termit samalle puolelle; se on lämpökapasiteeteilla painotettu keskiarvo eikä yleensä alkulämpötilojen tavallinen keskiarvo.
+- Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama: $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$. Tasapainolämpötila $T$ ratkaistaan keräämällä $T$:n termit samalle puolelle; se on lämpökapasiteeteilla painotettu keskiarvo eikä yleensä alkulämpötilojen tavallinen keskiarvo.
 - Kalorimetrisellä mittauksella määritetään tuntemattoman aineen ominaislämpökapasiteetti veden avulla.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: saunan kiuas. Kuumille kiville heitetään kauhalla vettä, ja kivistä nousee löylyhöyryä. Taustalla on puiset lauteet." style="max-width:100%;font-size:24px">

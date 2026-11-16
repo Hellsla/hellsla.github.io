@@ -47,4 +47,10 @@ a["fy3-7-L3-04"] = P_stear * (30.9 - 3.2) * 60 / 1e3     # solidifying 3,2 -> 30
 a["fy3-7-L3-05"] = c_vesi * 0.300 * (65.0 - 20.0) / (r + c_vesi * (100 - 65.0)) * 1e3   # steam: c M (T − T0) = m_h (r + c (100 − T)) -> 56 565 J / 2 406 650 J/kg = 23,5 g
 a["fy3-7-L1-09"] = 840 * 0.0050                              # ethanol 5,0 g evaporates: r = 840 kJ/kg (MAFY), Q = r m = 4,2 kJ
 a["fy3-7-L2-09"] = (20e3) / (0.60 * (0 - (-16)))             # figure fy3-7/melting-curve: ice warms (0 kJ; −16 °C) to (20 kJ; 0 °C): c = Q/(m ΔT) = 20 000 J/(0,60 kg · 16 K) = 2083 J/(kg·K)
+# Level 2 data task FY3-A5 (PhET States of Matter: Basics): the task gives s = 334 kJ/kg (teacher 2026-11-16), mass 0,20 kg at 0 °C
+s_A5, m_A5 = 334, 0.20                                      # kJ/kg as the task states it; kg
+Q_A5 = s_A5 * m_A5                                          # Q = s m = 334 kJ/kg · 0,20 kg = 66,8 kJ -> 67 kJ (2 sf from 0,20 kg)
+dT_A5 = Q_A5 * 1e3 / (c_vesi * m_A5)                        # check: the same 66 800 J would warm the melt water by Q/(c m) = 79,7 K -> about 80 K
+assert round(dT_A5) == 80 and abs(a["fy3-7-L1-01"] / Q_A5 - 1.20 / m_A5) < 1e-9   # one sixth of L1-01's 400,8 kJ, as the masses 0,20 kg : 1,20 kg
+a["fy3-7-L2-10"] = Q_A5
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

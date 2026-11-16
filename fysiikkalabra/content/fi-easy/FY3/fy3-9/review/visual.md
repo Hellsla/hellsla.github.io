@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e9f9fa81916b9e73
+CONTENT-HASH: 0d0cf69b55446afd
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- delta: open-ennusta-1280-1 (Prediction 1 and 2: ml, kPa, N, degrees all typeset, upright, thin space, no line break inside a quantity), open-exit-1280 (exit ticket question and answer chain). Source of inquiry.json, exit-ticket.json and lesson.md scanned: no plain number with unit remains outside aria-labels.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

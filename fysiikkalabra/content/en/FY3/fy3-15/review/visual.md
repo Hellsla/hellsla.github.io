@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8ca245f89f4d92ad
+CONTENT-HASH: 9d6ae5c44634a68a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] theory-1280-3 — "(W)", "(K)", "(kg/s)" after the symbols are plain units in untouched text.
+- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
 
 ## Checked
-- Diff: one wording change (waste heat transferred to the surroundings). Opened fy3-15-theory-1280-3 (Sankey bars, condenser figure, misconception paragraph with the new sentence): reads well, figures intact.
+- Delta round 2: rendered preview (en) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

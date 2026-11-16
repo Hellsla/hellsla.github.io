@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cc89ae13bd1a69f2
+CONTENT-HASH: 277850c13281f33e
 
 ## Blocking
 - none
@@ -8,4 +8,10 @@ CONTENT-HASH: cc89ae13bd1a69f2
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-13.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
+- Rendered preview page myself with all details open: card viewed at 360, 390 and 1280 px (all three finished after the first report).
+- Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
+- Hash re-checked at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

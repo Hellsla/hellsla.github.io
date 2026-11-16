@@ -284,7 +284,7 @@ The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperat
 
 <!-- vaihe -->
 
-**Unit conversions.** The change in temperature is the same in degrees Celsius and in kelvins, so $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. The lengths are in metres, so $\Delta l$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
+**Unit conversions.** The change in temperature is the same in degrees Celsius and in kelvins, so $$\begin{aligned} &\Delta T \\ &= 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) \\ &= 60\,\text{K} \end{aligned}$$. The lengths are in metres, so $\Delta l$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 

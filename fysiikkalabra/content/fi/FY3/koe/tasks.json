@@ -938,7 +938,7 @@
       {
        "key": "equation",
        "points": 1,
-       "detail": "$P = (U_1A_1 + U_2A_2 + U_3A_3)\\,\\Delta T$, kun $\\Delta T = 20\\,\\text{K}$."
+       "detail": "$$\\begin{aligned} &P \\\\ &= (U_1A_1 + U_2A_2 + U_3A_3)\\,\\Delta T \\end{aligned}$$, kun $\\Delta T = 20\\,\\text{K}$."
       },
       {
        "key": "calculation",
@@ -1080,7 +1080,7 @@
      ],
      "criteria": [
       {
-       "text": "Lämpöpumppu tarvitsee $\\tfrac{1}{3{,}0}\\,\\text{MWh}$ sähköä, ja sen tuottamiseen kuluu polttoainetta $\\tfrac{0{,}333\\,\\text{MWh}}{0{,}40} \\approx 0{,}83\\,\\text{MWh} = 3000\\,\\text{MJ}$; öljykattila tarvitsee $\\tfrac{1{,}0\\,\\text{MWh}}{0{,}90} \\approx 1{,}1\\,\\text{MWh} = 4000\\,\\text{MJ}$.",
+       "text": "Lämpöpumppu tarvitsee $\\tfrac{1}{3{,}0}\\,\\text{MWh}$ sähköä, ja sen tuottamiseen kuluu polttoainetta $$\\begin{aligned} \\tfrac{0{,}333\\,\\text{MWh}}{0{,}40} &\\approx 0{,}83\\,\\text{MWh} \\\\ &= 3000\\,\\text{MJ} \\end{aligned}$$; öljykattila tarvitsee $\\tfrac{1{,}0\\,\\text{MWh}}{0{,}90} \\approx 1{,}1\\,\\text{MWh} = 4000\\,\\text{MJ}$.",
        "tag": "transfer",
        "points": 1
       },

@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0725c3201eb7ad5e
+CONTENT-HASH: 9c608f6808629688
 
 ## Blocking
 
 ## Polish
-- solutions.md:180 — L2-07 Kuvaajan lukeminen: "Se kulkee pisteen (48 h; 1,64 kWh) kohdalle" is true of the fitted line only to about 0,1 % (my least-squares slope through the origin gives 1,639 kWh there). You could write "kulkee lähes pisteen kautta", so it is not read as joining raw points.
-- solutions.md:245 — L1-10: the sentence "Vastaus kelpaa, kun se on noin ±4 % sisällä" is about the checker, not the physics. You could drop it.
+- solutions.md:260 (fy6-7-L2-09) — "tilavuusluokka 15–17,9 ft³" is a filter value that the task does not give and nobody re-checked. It is harmless, but it can be dropped, since the task only says "suodattimet Type ja Capacity".
+- solutions.md (fy6-7-L2-09, Kohta d) — "Jääkaapin kompressori ei käy koko ajan" fits these models. An inverter compressor runs most of the time at reduced speed, so "yleensä" or "tavallinen kompressori" would keep the claim exact without changing the point (C, not blocking).
 
 ## Checked
-- Hash 0725c3201eb7ad5e at the start and at the end.
-- I recomputed all 20 numeric answers in one script with my own formulas (E = Pt, E = UIt, P = U²/R, K = aE + K_perus, meter differences, payback H/(aΔE), least-squares fit through the origin). All agree with answers.py and exercises.json. My fit gives 299,1 kWh for L2-07 against the key's 299,3 kWh, inside its 5 % tolerance.
-- The round-1 blocking items are fixed. L2-02 (:69) now reads $4{,}8 \cdot 10^{2}\,\text{kJ}$. L2-05 (:154, :156) reads $7{,}3 \cdot 10^{2}\,\text{kWh}$ and names the limiting data correctly: 90 W, 60 W and the times; 110 W, 800 W and 1200 W have more figures. L2-07 (:184, :186) reads $3{,}0 \cdot 10^{2}\,\text{kWh}$.
-- P7 (a): 230 V is treated as three figures (L1-03 5,22 A, L3-03 4,99 kWh).
-- P7 (b): no other final answer with two figures is written with a trailing zero. 40 W, 60 W and 20 snt-type data count as two figures; 350 kWh, 320 kWh and 489 € count as three.
-- P7 (c): no maximum or minimum is rounded in this set.
-- Every tolerance lets an answer rounded to the data's figures pass (worst case L1-10: 11 MJ against 10,8 MJ is 1,9 % inside 4 %).
-- Figures: washer gives 0,80 kWh and dryer 2,5 kWh, so 0,45 €. Both have the stated grid steps, and their descriptions match the drawn data without giving the energy.
-- L1-06 and L1-09 each have exactly one correct option. Each distractor's number comes from the error its feedback names (÷3600, minutes as hours, W as kW, W·min).
-- L3-04: the saving is 6,0 kWh · 15,5 snt/kWh = 0,93 €, and the mean price is 14,08 snt/kWh. L3-05: payback 12,96 a and a 77 € gain. The waste-heat point is right physics.
-- Scope (power, kWh, the bill) and notation (E, P, t, a, K_perus) match the brief.
+- One independent script recomputed all 22 numeric answers and compared them with exercises.json: all are inside tolerance. L2-07 as a least-squares fit gives 299,1 kWh, inside 5 % of 299,3.
+- L2-09 data matches the pair read on 15 Nov 2026: LG LT18S1100* 344 kWh/a and LT18S1200* 440 kWh/a, both Top Freezer, 17,5 ft³. The task says it is a standardised test result, not a home measurement.
+- L2-09 a) 96 kWh, 440/344 = 1,279 → 28 %. b) P_ka = E/t: 39,27 W and 50,23 W with t = 8760 h, solved symbolically first. c) K = naE: 688 € and 880 €, difference 192 €. The rounding to 690/880/190 € is justified by 0,20 €/kWh.
+- L2-09 d): the duty-cycle mechanism (thermostat, compressor power above the mean, P_ka ≈ kP_käy) is correct. The 100 W figure is marked as a general order of magnitude, not as source data. k ≈ 0,39 is consistent.
+- 1 ft³ ≈ 28,3 l is correct (28,32 l), so 17,5 ft³ ≈ 495 l. The answer 39,269 W with tolerance 0,02 suits three significant figures.
+- Nothing in the solution is attributed to the source beyond the table values and the field names (Type, Capacity, Annual Energy Use).
+- Reflowed chains (L2-08 and the rest): same numbers, signs and units in the same order.
+- The notation matches the brief (E = Pt, K = aE, kWh, snt → €). Everything is within FY6 scope (household energy).
+- Hash read at start and end: unchanged.

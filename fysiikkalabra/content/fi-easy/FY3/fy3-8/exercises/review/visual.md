@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 80088db3c3777a8f
+CONTENT-HASH: 1e3321925072288a
+Mode: delta
+Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] fy3-8 10-15 task text still starts with the word "Esimerkkiaineisto:" (captions lost it; text left as is) — decide whether to drop it too.
 
 ## Checked
-- Delta ("murto-osa metriä kohti" wording in 10-?, L2-04 solution): open-exercises-L2-1280-5 (10-13 graph task and solution start: axes with quantity and unit, data points distinct, layout intact).
+- fy3-8-open-exercises-L2-1280-8, -16 (Muunnokset/Sijoitus aligned rows, trailing punctuation).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

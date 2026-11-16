@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 35a61f460a2d50f3
-Mode: delta, round 1 (added exercises fy3-4-L1-10, fy3-4-L2-08; shown as 5-10 and 5-18)
+CONTENT-HASH: 8cc60cc521025723
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] 5-18 figure — lines A and B differ by colour (blue, brown) and carry direct letter labels, so they are told apart without colour; good. Both lines start at one shared point at 0 m, so the common air pressure reads clearly.
-- [Minor] 5-18 solution, Conversions — two stacked display blocks with "and" and "so" between them are choppy on a phone; one chain would read better.
-- [Minor] 5-10 and 5-18 — "(mafytaulukot.fi)" and the table name are plain text; a link would help.
+- [Minor] 5-4 Reasonableness: `0.0025 m²/4` uses a slash for a division in text; the house rule is a colon (`:`).
 
 ## Checked
-- Opened at readable size: 5-10 (L1 shot 9: task, closed-state hint box, answer, solution start), 5-18 (L2 shots 10 and 11: two-liquids graph with p (kPa) and h (m) axes, markers on the lines, labels A and B; full solution with the slope, units and the 1529 to 1.5 times 10 cubed rounding).
-- Units LaTeX with thin spaces, fractions aligned, answer boxed, no overflow or clipping.
-- Other tasks unchanged, not repeated.
+- 390 px chain montage opened (two sheets, all chains), fy3-4-open-exercises-1280-4 (5-4 pressure of the stove): display rows aligned, no lone punctuation.
+- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

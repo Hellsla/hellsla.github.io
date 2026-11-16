@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 375f52ec2c4da761
+CONTENT-HASH: 5bcf6530a4b67503
 
 ## Blocking
 - none
@@ -8,4 +8,10 @@ CONTENT-HASH: 375f52ec2c4da761
 - none
 
 ## Checked
-- batch delta review: opened fy3-13-1280-0.png and fy3-13-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+- Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
+- Rendered preview page myself with all details open: 360, 390 and 1280 px.
+- Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
+- Hash re-checked at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

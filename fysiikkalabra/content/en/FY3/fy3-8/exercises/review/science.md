@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cd25322f12bff34e
-SCOPE: delta added-exercise from c8fd8fdeae438699 base 5453544b2abc
+CONTENT-HASH: e280ca9270616f82
+Round: 1
+Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-1. lessons/FY3/fy3-8/answers.py:166 — the docstring still writes ΔL, L₀ (carried over). Rename to Δl, l₀.
-2. exercises.json fy3-8-L1-09 — a tolerance of $4\,\%$ is tight if a table gives steel as $11\ldots13 \cdot 10^{-6}\,\text{1/K}$. Check the MAFY row and widen the tolerance if it gives a range.
 
 ## Checked
-- The round-3 blockers are fixed. L1-09 and L2-09 now write $\Delta l$ and $l_0$ in the task text and the solutions (exercises.json:305, solutions.md L1-09 and L2-09), the same as the rest of the set and the figure's axis $\Delta l$. Neither file has any $\Delta L$ or $L_0$ left.
-- L1-09: $\Delta l = \alpha l_0 \Delta T = 12 \cdot 10^{-6} \cdot 25 \cdot 50\,\text{m} = 15\,\text{mm}$, the same as answers.py. The linear model holds for a solid over $50\,\text{K}$, with two significant figures.
-- L2-09: $k = 3.0/50 = 0.060\,\text{mm/K}$ and $T = 20 + 2.0/0.060 = 53.3\,{}^\circ\text{C}$, the same as answers.py. The $3\,\%$ tolerance is the stated range $51.7\ldots54.9\,{}^\circ\text{C}$.
-- The figure's end points, (20 °C; 0 mm) and (70 °C; 3.0 mm), lie on grid intersections, and the description gives the same values without the answer.
-- Both solutions are complete: the seven parts are there, the unknown is solved in symbols first, and the reasonableness checks are real checks.
-- The hash was the same at the start and at the end.
+- New fy3-8-L2-10 (NASA Sea Level, the working address without the final "l"): Δh = γh₀ΔT = 2.0·10⁻⁴ · 1000 m · 0.30 K = 0.060 m = 60 mm. The key is 60 mm with a 3 % tolerance. The symbolic derivation, with A cancelling from ΔV = AΔh = γAh₀ΔT, is right.
+- Part a) is a dated example. Start of 1993 to mid-October 2026 is 33.79 a, and 115.8 mm / 33.8 a = 3.43 mm/a, about 3.4 mm/a. With 91 mm the rate is 2.7 mm/a, and ±4.0 mm gives about ±0.12 mm/a. These agree with the source facts, and the solution says that the student states which values and dates were used.
+- The reasonableness check uses one third of 115.8 mm, which is 38.6 mm, about 39 mm, the same order as 60 mm. This is right.
+- The limits in d) are right: two thirds of the rise is land ice, warming is uneven, γ depends on temperature, salinity and pressure (smaller in cold water), there is no prediction of the future, and the land is rising in Finland. Model answer b) has particle spacing growing and the particles not growing.
+- A scripted comparison with the Finnish set (passed today) found identical answer, unit, tolerance and kind, and the same numbers in the text and in every solution section.
+- Captions: only "(example data)" removed.
+- Hash identical at start and end.

@@ -247,7 +247,7 @@
     {
       "id": "fy6-14-L2-07",
       "level": 2,
-      "text": "A student is dimensioning the series resistor of a blue LED. The voltage of the battery is $9.0\\,\\text{V}$, the voltage of the LED is $3.2\\,\\text{V}$, and the desired current is $15\\,\\text{mA}$.\n\nThe student's solution: “The voltage of the battery is across the resistor, so $R = U : I = 9.0\\,\\text{V} : 0.015\\,\\text{A} = 600\\,\\Omega$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the series resistor correctly. Give the result of part b in ohms.",
+      "text": "A student is dimensioning the series resistor of a blue LED. The voltage of the battery is $9.0\\,\\text{V}$, the voltage of the LED is $3.2\\,\\text{V}$, and the desired current is $15\\,\\text{mA}$.\n\nThe student's solution: “The voltage of the battery is across the resistor, so $$\\begin{aligned} R &= U : I \\\\ &= 9.0\\,\\text{V} : 0.015\\,\\text{A} \\\\ &= 600\\,\\Omega \\end{aligned}$$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the series resistor correctly. Give the result of part b in ohms.",
       "kind": [
         "error"
       ],

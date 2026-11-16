@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8b49d2e85f94831f
+CONTENT-HASH: fc516aec97261574
 
 ## Blocking
 - none
@@ -8,9 +8,7 @@ CONTENT-HASH: 8b49d2e85f94831f
 - none
 
 ## Checked
-- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/en/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Reasonableness "91 µN : 3.0 nC ≈ 3.0·10⁴ N/C", plus its fraction Substitution) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8.794·10¹⁴ m/s² · 0.010 m) = 4.19·10⁶ m/s).
-- The root sign spans the whole radicand, `=` rows aligned, nothing clipped, units upright with thin space, decimal point correct.
-- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
+- round 3, delta review (reflow): proof sheets en-fy6-11-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

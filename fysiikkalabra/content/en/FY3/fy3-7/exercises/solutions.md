@@ -105,7 +105,7 @@ From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass 
 **Given:** juice (the $c$ of water) $m_1 = 0.35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; ice $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the final temperature $T$ when all the ice has melted
 **Principle:** Energy is conserved when no heat passes to the glass or the air: the quantity of heat the juice gives out equals the quantity used to melt the ice and warm the meltwater. The ice melts completely if the juice has enough energy: cooling to $0\,{}^\circ\text{C}$ it would give out $36\,662.5\,\text{J}$, but melting needs only $20\,040\,\text{J}$.
-**Formula:** $cm_1(T_1 - T) = sm_2 + cm_2(T - T_0)$, from which $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
+**Formula:** $$\begin{aligned} &cm_1(T_1 - T) \\ &= sm_2 + cm_2(T - T_0) \end{aligned}$$, from which $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
 **Conversions:** $m_2 = 60\,\text{g} = 0.060\,\text{kg}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Since $T_0 = 0\,{}^\circ\text{C}$, the term $cm_2T_0$ is zero, and the temperatures can be substituted in degrees Celsius because the formula contains temperature differences.
 **Substitution:** The numerator is $4190 \cdot 0.35 \cdot 25 - 334\,000 \cdot 0.060 = 36\,662.5 - 20\,040 = 16\,622.5$ and the denominator is $4190 \cdot 0.41 = 1717.9$, so
 
@@ -118,7 +118,7 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Given:** water $m = 0.25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, warms to $T_2 = 100\,{}^\circ\text{C}$ and vaporises completely; stones $m_\text{s} = 30\,\text{kg}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the drop in temperature $\Delta T$ of the stones, in kelvins
 **Principle:** Energy is conserved: all the energy the water needs comes from the stones. The water first needs $cm(T_2 - T_1)$ to warm up and then $rm$ to vaporise, during which the temperature does not change. The quantity of heat the stones give out is $c_\text{s}m_\text{s}\Delta T$.
-**Formula:** $c_\text{s}m_\text{s}\Delta T = cm(T_2 - T_1) + rm$, from which $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{s}m_\text{s}}$
+**Formula:** $$c_\text{s}m_\text{s}\Delta T = cm(T_2 - T_1) + rm$$, from which $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{s}m_\text{s}}$
 **Conversions:** $T_2 - T_1 = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ and $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.25\,\text{kg} = 565\,000\,\text{J}$, so $\Delta T = \dfrac{648\,800\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{648\,800\,\text{J}}{24\,000\,\tfrac{\text{J}}{\text{K}}} = 27.03\,\text{K}$
 **Answer:** $27\,\text{K}$, two significant figures like the mass $0.25\,\text{kg}$.
@@ -132,7 +132,7 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Conversions:** $t = 10.0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0.196\,\text{kg}$ and $\Delta m_2 = 0.0900\,\text{kg}$. Finally $1\,\text{MJ} = 10^6\,\text{J}$.
 **Substitution:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0.196\,\text{kg} - 0.0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0.106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2.264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Answer:** $2.26\,\tfrac{\text{MJ}}{\text{kg}}$, three significant figures: the difference $196\,\text{g} - 90.0\,\text{g} = 106\,\text{g}$ is accurate to the nearest gram and has three figures.
-**Reasonableness:** The energy passing to the air, $P_\text{loss}t$, is the same in both measurements and cancels in the difference. The individual measurements would give $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0.196\,\text{kg}} \approx 2.45\,\tfrac{\text{MJ}}{\text{kg}}$ and $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0.0900\,\text{kg}} \approx 2.67\,\tfrac{\text{MJ}}{\text{kg}}$, both too large, because the energy passing to the air would also be counted as vaporisation. The loss power is $800\,\text{W} - 2.264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.196\,\text{kg}}{600\,\text{s}} \approx 60\,\text{W}$, and the result agrees with the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$.
+**Reasonableness:** The energy passing to the air, $P_\text{loss}t$, is the same in both measurements and cancels in the difference. The individual measurements would give $\dfrac{800\,\text{W} \cdot 600\,\text{s}}{0.196\,\text{kg}} \approx 2.45\,\tfrac{\text{MJ}}{\text{kg}}$ and $\dfrac{400\,\text{W} \cdot 600\,\text{s}}{0.0900\,\text{kg}} \approx 2.67\,\tfrac{\text{MJ}}{\text{kg}}$, both too large, because the energy passing to the air would also be counted as vaporisation. The loss power is $$\begin{aligned} &800\,\text{W} \\ &- 2.264 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.196\,\text{kg}}{600\,\text{s}} \\ &\approx 60\,\text{W} \end{aligned}$$, and the result agrees with the table value $2.26\,\tfrac{\text{MJ}}{\text{kg}}$.
 
 ## fy3-7-L1-06
 **Find:** what happens to the temperature of the mixture of melting ice and meltwater while there is still ice left.
@@ -142,7 +142,7 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 ## fy3-7-L1-07
 **Find:** why the evaporation of sweat cools the skin.
 **Principle:** The vaporisation of a liquid needs energy, $Q = rm$. Evaporating sweat takes this energy from its surroundings, here from the skin, so the skin loses energy and its temperature falls.
-**Model answer:** The evaporating water molecules take energy with them from the skin, so the skin loses energy and cools. Vaporisation absorbs energy and does not give it out, so the claim that sweat would warm the skin is wrong. Sweat is as warm as the skin, so it does not cool the skin because of a temperature difference. Evaporation does not use up the oxygen of the skin either. The quantity of energy is large: the evaporation of one gram needs $r m = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.001\,\text{kg} = 2.26\,\text{kJ}$.
+**Model answer:** The evaporating water molecules take energy with them from the skin, so the skin loses energy and cools. Vaporisation absorbs energy and does not give it out, so the claim that sweat would warm the skin is wrong. Sweat is as warm as the skin, so it does not cool the skin because of a temperature difference. Evaporation does not use up the oxygen of the skin either. The quantity of energy is large: the evaporation of one gram needs $$\begin{aligned} r m &= 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.001\,\text{kg} \\ &= 2.26\,\text{kJ} \end{aligned}$$.
 
 ## fy3-7-L1-08
 **Given:** energy used for vaporisation $Q = 1.36\,\text{MJ}$; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -171,7 +171,7 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0.250\,\text{kg}} \\
 \end{aligned}$$
 
 **Answer:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. The time is read only to about a second, so $\pm 5\,\%$ is accepted, and three significant figures are given to match the mass and the power. If the plateau is read directly as the rows $20\,\text{s}$ and $150\,\text{s}$, the time is $130\,\text{s}$ and the result $312\,\tfrac{\text{kJ}}{\text{kg}}$, too small, because melting started before the row $20\,\text{s}$ and ended only after the row $150\,\text{s}$.
-**Reasonableness:** The result matches the known specific latent heat of fusion of ice, $334\,\tfrac{\text{kJ}}{\text{kg}}$. Heating the ice from $-20\,{}^\circ\text{C}$ took about $18\,\text{s}$, that is, $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Check: $c m \Delta T = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.250\,\text{kg} \cdot 20\,\text{K} = 10\,500\,\text{J}$, so the measurement and the calculation agree. Melting took about $83\,\text{kJ}$, about eight times more energy than warming the ice.
+**Reasonableness:** The result matches the known specific latent heat of fusion of ice, $334\,\tfrac{\text{kJ}}{\text{kg}}$. Heating the ice from $-20\,{}^\circ\text{C}$ took about $18\,\text{s}$, that is, $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Check: $$\begin{aligned} c m \Delta T &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ &\cdot 0.250\,\text{kg} \cdot 20\,\text{K} \\ &= 10\,500\,\text{J} \end{aligned}$$, so the measurement and the calculation agree. Melting took about $83\,\text{kJ}$, about eight times more energy than warming the ice.
 
 ## fy3-7-L2-06
 **Given:** power $P = 3.0\,\text{kW}$, time $t = 5.0\,\text{min}$, all the energy of the hob goes into the water; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -221,9 +221,9 @@ $$\begin{aligned}
 
 Solidification begins at about $3.2\,\text{min}$: the plateau is reached along the cooling line of the liquid, about $0.8\,\text{K} : 3.27\,\tfrac{\text{K}}{\text{min}} = 0.24\,\text{min}$ after the row $3\,\text{min}$.
 
-Solidification ends at about $30.9\,\text{min}$: the rows of the solid, $32\,\text{min}$ and $34\,\text{min}$, give a cooling rate of $(65.0\,\text{K} - 57.4\,\text{K}) : 2\,\text{min} = 3.8\,\tfrac{\text{K}}{\text{min}}$, so from the plateau temperature $69.2\,{}^\circ\text{C}$ to the temperature $65.0\,{}^\circ\text{C}$ of the row $32\,\text{min}$ takes $4.2\,\text{K} : 3.8\,\tfrac{\text{K}}{\text{min}} = 1.1\,\text{min}$.
+Solidification ends at about $30.9\,\text{min}$: the rows of the solid, $32\,\text{min}$ and $34\,\text{min}$, give a cooling rate of $$\begin{aligned} &(65.0\,\text{K} - 57.4\,\text{K}) : 2\,\text{min} \\ &= 3.8\,\tfrac{\text{K}}{\text{min}} \end{aligned}$$, so from the plateau temperature $69.2\,{}^\circ\text{C}$ to the temperature $65.0\,{}^\circ\text{C}$ of the row $32\,\text{min}$ takes $4.2\,\text{K} : 3.8\,\tfrac{\text{K}}{\text{min}} = 1.1\,\text{min}$.
 
-The duration of solidification is about $30.9\,\text{min} - 3.2\,\text{min} = 27.7\,\text{min}$.
+The duration of solidification is about $$\begin{aligned} &30.9\,\text{min} - 3.2\,\text{min} \\ &= 27.7\,\text{min} \end{aligned}$$.
 **Formula:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{sol}$ and $Q = sm$, from which $s = \dfrac{Q}{m}$
 **Conversions:** The change in temperature is the same in degrees Celsius and in kelvins. $\Delta t = 3\,\text{min} = 180\,\text{s}$ and $\Delta t_\text{sol} = 27.7\,\text{min} = 1662\,\text{s}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:**
@@ -251,9 +251,9 @@ s &= \dfrac{19\,910\,\text{J}}{0.100\,\text{kg}} \\
 **Given:** milk $M = 0.300\,\text{kg}$, $T_0 = 20.0\,{}^\circ\text{C}$, final temperature $T = 65.0\,{}^\circ\text{C}$; steam at $100\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** a) the mass $m_\text{s}$ of steam that condenses, in grams; b) for comparison: the mass of water at $100\,{}^\circ\text{C}$ needed
 **Principle:** Energy is conserved when there are no losses: the energy absorbed by the milk equals the energy given out by the steam. The steam gives out energy in two stages: as it condenses into water at $100\,{}^\circ\text{C}$ ($Q = rm_\text{s}$) and then as the condensed water cools from $100\,{}^\circ\text{C}$ to the final temperature ($Q = cm_\text{s}\Delta T$).
-**Formula:** $c M (T - T_0) = r m_\text{s} + c\, m_\text{s}(100\,{}^\circ\text{C} - T)$, from which $m_\text{s} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. In the comparison, water alone at $100\,{}^\circ\text{C}$ gives out energy only as it cools: $c M (T - T_0) = c\, m_\text{w}(100\,{}^\circ\text{C} - T)$, from which $m_\text{w} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Formula:** $$\begin{aligned} &c M (T - T_0) \\ &= r m_\text{s} + c\, m_\text{s}(100\,{}^\circ\text{C} - T) \end{aligned}$$, from which $m_\text{s} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. In the comparison, water alone at $100\,{}^\circ\text{C}$ gives out energy only as it cools: $$\begin{aligned} &c M (T - T_0) \\ &= c\, m_\text{w}(100\,{}^\circ\text{C} - T) \end{aligned}$$, from which $m_\text{w} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
 **Conversions:** The temperature differences are the same in degrees Celsius and in kelvins: $T - T_0 = 45.0\,\text{K}$ and $100\,{}^\circ\text{C} - T = 35.0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kg} = 1000\,\text{g}$.
-**Substitution:** The numerator is $4190 \cdot 0.300 \cdot 45.0\,\text{J} = 56\,565\,\text{J}$ and the denominator is $2\,260\,000 + 4190 \cdot 35.0 = 2\,406\,650\,\tfrac{\text{J}}{\text{kg}}$, so
+**Substitution:** The numerator is $$\begin{aligned} &4190 \cdot 0.300 \cdot 45.0\,\text{J} \\ &= 56\,565\,\text{J} \end{aligned}$$ and the denominator is $$\begin{aligned} &2\,260\,000 + 4190 \cdot 35.0 \\ &= 2\,406\,650\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$, so
 
 $$\begin{aligned}
 m_\text{s} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}} \\
@@ -286,3 +286,30 @@ $$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
 **Substitution:** $c = \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures, like the datum $0.60\,\text{kg}$. The heat is read from a grid intersection, so $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.
 **Reasonableness:** The result is about half the value for water, $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is the familiar ratio for ice and water. Check: $2083 \cdot 0.60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.
+
+## fy3-7-L2-10
+**Given:** from the source (the PhET simulation) the motion and arrangement of the particles in the solid, the liquid and the gas, and how the structure changes on heating; from the task the mass of the ice $m = 0.20\,\text{kg}$, the ice at the melting point $0\,{}^\circ\text{C}$ and the specific latent heat of fusion given in the task, $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** a) a comparison of the motion and arrangement of the particles in the three states; b) why the temperature does not rise during a change of state; c) the energy $Q$ needed for melting, in kilojoules; d) what the simple particle model describes well and what it does not
+**Principle:** In the particle model, temperature describes the mean kinetic energy of the particles’ thermal motion, and the interactions between the particles carry interaction energy. When a pure substance melts at constant pressure, its temperature stays at the melting point, so there is no temperature change and the heat needed is $Q = sm$.
+**Model answer a):** In the solid the particles are close together in a regular arrangement and vibrate in place. In the liquid the particles are still close together, but they move past one another and there is no lasting arrangement. In the gas the particles are far apart, move fast and freely, and fill the whole container. So the order decreases and the motion becomes freer in the order solid, liquid, gas.
+**Model answer b):** During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. In the simulation this shows as the regular structure of the solid breaking up on heating. The mean kinetic energy of the particles does not increase during this time, so the temperature stays at the melting point until all of the substance has melted. The chemical bonds inside the molecules do not break. The word “necessarily” is in place: before and after the change of state the same energy increases the kinetic energy of the particles and the temperature rises, and the temperature stays constant only for a pure substance at constant pressure.
+**Formula:** $Q = sm$, and the asked $Q$ is already solved.
+**Conversions:** None needed: the mass is in kilograms and $s$ in kilojoules per kilogram, so the result comes in kilojoules. For the check, $66.8\,\text{kJ} = 66\,800\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+Q &= 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.20\,\text{kg} \\
+&= 66.8\,\text{kJ}
+\end{aligned}$$
+
+**Answer:** c) $67\,\text{kJ}$, two significant figures like the mass $0.20\,\text{kg}$.
+**Model answer d):** The model describes well what differs in kind between the states: the arrangement, motion and spacing of the particles, the fact that a gas fills the whole container, and the fact that heating makes the motion stronger and breaks up the structure. The model leaves out the amounts: it gives no energy in joules and no value for the specific latent heat of fusion, so the value $334\,\tfrac{\text{kJ}}{\text{kg}}$ of part c) is measured from real ice, not read from the simulation. The model has only a small number of particles in a flat picture and a simple attraction between them, whereas a real block of ice has an enormous number of particles in three dimensions. For the same reason the model does not explain the special features of water, such as ice being less dense than water. So the model suits explaining the phenomenon but not predicting numerical values.
+**Reasonableness:** The same energy would raise the temperature of the melted $0.20\,\text{kg}$ of water ($c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$) by
+
+$$\begin{aligned}
+\Delta T &= \dfrac{Q}{cm} \\
+&= \dfrac{66\,800\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg}} \\
+&\approx 80\,\text{K}
+\end{aligned}$$
+
+This agrees with the chapter’s statement that melting ice takes as much energy as heating the same water from $0\,{}^\circ\text{C}$ to $80\,{}^\circ\text{C}$. The result is also one sixth of the energy $401\,\text{kJ}$ of the $1.20\,\text{kg}$ of ice in the chapter’s basic exercise, as the ratio of the masses requires.

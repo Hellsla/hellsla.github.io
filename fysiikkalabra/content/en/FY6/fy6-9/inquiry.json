@@ -303,9 +303,9 @@
       "prompt": "The source voltage of a car battery is $12.4\\,\\text{V}$ and its internal resistance is $0.050\\,\\Omega$. The battery is charged with a charger whose voltage is $14.0\\,\\text{V}$, and the resistance of the charger and wires is $0.35\\,\\Omega$. A student calculates the charging current like this:\n\n$$I = \\frac{14.0\\,\\text{V}}{0.35\\,\\Omega + 0.050\\,\\Omega} = 35\\,\\text{A}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The current is driven by the difference between the voltage of the charger and the source voltage of the battery: $I = (14.0\\,\\text{V} - 12.4\\,\\text{V}) : 0.40\\,\\Omega = 4.0\\,\\text{A}$.",
+          "text": "The current is driven by the difference between the voltage of the charger and the source voltage of the battery: $$\\begin{aligned} I &= (14.0\\,\\text{V} - 12.4\\,\\text{V}) \\\\ &: 0.40\\,\\Omega \\\\ &= 4.0\\,\\text{A} \\end{aligned}$$.",
           "correct": true,
-          "feedback": "Correct. The current passes through the battery from the positive terminal to the negative terminal, so the potential also drops by the source voltage in the battery. The voltage law gives $14.0\\,\\text{V} - 0.40\\,\\Omega \\cdot I - 12.4\\,\\text{V} = 0$. The student's current of $35\\,\\text{A}$ would flow only if the source voltage of the battery were zero."
+          "feedback": "Correct. The current passes through the battery from the positive terminal to the negative terminal, so the potential also drops by the source voltage in the battery. The voltage law gives $$\\begin{aligned} &14.0\\,\\text{V} - 0.40\\,\\Omega \\cdot I - 12.4\\,\\text{V} \\\\ &= 0 \\end{aligned}$$. The student's current of $35\\,\\text{A}$ would flow only if the source voltage of the battery were zero."
         },
         {
           "text": "The resistances must be combined with the formula for a parallel connection, because the battery and the charger are in parallel with each other.",
@@ -391,7 +391,7 @@
       "hints": [
         "What rises and drops of potential are there in the loop when the current passes through the battery from the positive terminal to the negative terminal?",
         "Voltage law: $U_\\text{ch} - RI - R_\\text{s} I - E = 0$.",
-        "$I = (14.4\\,\\text{V} - 12.6\\,\\text{V}) : (0.25\\,\\Omega + 0.050\\,\\Omega)$."
+        "$$\\begin{aligned} I &= (14.4\\,\\text{V} - 12.6\\,\\text{V}) \\\\ &: (0.25\\,\\Omega + 0.050\\,\\Omega) \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -403,7 +403,7 @@
           "feedback": "You left out the internal resistance of the battery. The current passes through both the charger and wires and the internal resistance of the battery: $0.25\\,\\Omega + 0.050\\,\\Omega = 0.30\\,\\Omega$."
         }
       ],
-      "solution": "**Given:** $E = 12.6\\,\\text{V}$, $R_\\text{s} = 0.050\\,\\Omega$, $U_\\text{ch} = 14.4\\,\\text{V}$, $R = 0.25\\,\\Omega$\n\n**Find:** the charging current $I$ in amperes\n\n**Principle:** The circuit has one loop, so by the voltage law the voltage of the charger equals the sum of the potential drops. The current passes through the battery from the positive terminal to the negative terminal, so the potential drops in the battery both in the internal resistance and by the source voltage.\n\n**Formula:** $U_\\text{ch} - RI - R_\\text{s} I - E = 0$, from which $I = \\dfrac{U_\\text{ch} - E}{R + R_\\text{s}}$\n\n**Conversions:** Not needed: the voltages are in volts and the resistances in ohms, and $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Substitution:** $I = \\dfrac{14.4\\,\\text{V} - 12.6\\,\\text{V}}{0.25\\,\\Omega + 0.050\\,\\Omega} = \\dfrac{1.8\\,\\text{V}}{0.30\\,\\Omega} = 6.0\\,\\text{A}$\n\n**Answer:** $6.0\\,\\text{A}$, two significant figures like the voltage difference $1.8\\,\\text{V}$ and the resistance $0.25\\,\\Omega$.\n\n**Reasonableness:** The terminal voltage is $12.6\\,\\text{V} + 0.050\\,\\Omega \\cdot 6.0\\,\\text{A} = 12.9\\,\\text{V}$, and from the charger side $14.4\\,\\text{V} - 0.25\\,\\Omega \\cdot 6.0\\,\\text{A} = 12.9\\,\\text{V}$. The results agree, and the terminal voltage lies between the source voltage and the voltage of the charger."
+      "solution": "**Given:** $E = 12.6\\,\\text{V}$, $R_\\text{s} = 0.050\\,\\Omega$, $U_\\text{ch} = 14.4\\,\\text{V}$, $R = 0.25\\,\\Omega$\n\n**Find:** the charging current $I$ in amperes\n\n**Principle:** The circuit has one loop, so by the voltage law the voltage of the charger equals the sum of the potential drops. The current passes through the battery from the positive terminal to the negative terminal, so the potential drops in the battery both in the internal resistance and by the source voltage.\n\n**Formula:** $U_\\text{ch} - RI - R_\\text{s} I - E = 0$, from which $I = \\dfrac{U_\\text{ch} - E}{R + R_\\text{s}}$\n\n**Conversions:** Not needed: the voltages are in volts and the resistances in ohms, and $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Substitution:** $I = \\dfrac{14.4\\,\\text{V} - 12.6\\,\\text{V}}{0.25\\,\\Omega + 0.050\\,\\Omega} = \\dfrac{1.8\\,\\text{V}}{0.30\\,\\Omega} = 6.0\\,\\text{A}$\n\n**Answer:** $6.0\\,\\text{A}$, two significant figures like the voltage difference $1.8\\,\\text{V}$ and the resistance $0.25\\,\\Omega$.\n\n**Reasonableness:** The terminal voltage is $$\\begin{aligned} &12.6\\,\\text{V} + 0.050\\,\\Omega \\cdot 6.0\\,\\text{A} \\\\ &= 12.9\\,\\text{V} \\end{aligned}$$, and from the charger side $$\\begin{aligned} &14.4\\,\\text{V} - 0.25\\,\\Omega \\cdot 6.0\\,\\text{A} \\\\ &= 12.9\\,\\text{V} \\end{aligned}$$. The results agree, and the terminal voltage lies between the source voltage and the voltage of the charger."
     },
     {
       "id": "tarkistus-3",

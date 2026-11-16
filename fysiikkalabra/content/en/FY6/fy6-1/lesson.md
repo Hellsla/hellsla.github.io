@@ -436,7 +436,7 @@ Q &= I t \\
 
 <!-- vaihe -->
 
-**Reasonableness.** Every second a quarter of a coulomb passes through the lamp, and in $720\,\text{s}$ a quarter of the number $720$ is $180$. In electrons the charge is $180\,\text{C} : (1.602 \cdot 10^{-19}\,\text{C}) \approx 1.1 \cdot 10^{21}$ electrons, an enormous number, but there are many more of them in the wire.
+**Reasonableness.** Every second a quarter of a coulomb passes through the lamp, and in $720\,\text{s}$ a quarter of the number $720$ is $180$. In electrons the charge is $$180\,\text{C} : (1.602 \cdot 10^{-19}\,\text{C}) \approx 1.1 \cdot 10^{21}$$ electrons, an enormous number, but there are many more of them in the wire.
 
 ## Common misconception
 Many think that a lamp uses up electric current, so that after the lamp less current would flow in the wire than before the lamp. This is not so: the same charge that enters the lamp leaves it and returns to the battery, so the current is equal on both sides of the lamp. The lamp changes the electrical energy carried by the charge into light and internal energy of the filament. Another misconception is that the electrons leave the battery and travel all the way to the lamp before the lamp lights. But the wire is already full of free electrons, and they start to move everywhere in the circuit at the same time.

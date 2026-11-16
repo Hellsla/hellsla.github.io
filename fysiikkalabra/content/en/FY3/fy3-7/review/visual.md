@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d7fea6532513f83e
+CONTENT-HASH: b4f7fc97759e1bee
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- delta, en: worked example captures fy3-7-example-390-1 and -2 at readable size. Step 3: the new sentence with $Q_\text{h}$ and $Q_\text{v}$ reads well, and the display now starts with $Q_\text{h} = Q_\text{v}$ with the equals signs aligned in one column. Step 7: the new chain $\Delta m = Q/r = Pt/r = \ldots$ is set as aligned rows that start with the quantity, and the surrounding sentence continues cleanly. Nothing is clipped and there is no overflow at 390 px.
-- inquiry.json changes (the pred-2 option wording and the interaction-energy feedback) are plain text with no new units. Read in source only: they are prose, with $\Delta T = 0$, $Q = sm$ and $\approx 6.8$ already typeset.
-- Figures are untouched by the diff and were not re-judged.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.

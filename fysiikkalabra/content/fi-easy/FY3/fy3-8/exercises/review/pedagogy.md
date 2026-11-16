@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 80088db3c3777a8f
+CONTENT-HASH: 1e3321925072288a
+SCOPE: delta added-exercise from c8098ef2208d19ac base b2eac257e05e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- a) depends on a live page (91 vs 115.8 mm); the solution handles this well. Optional: tell the student which of the two values to prefer.
 
 ## Checked
-- Delta 2026-11-15: reasonableness line of the beam task reads "Millimetrin murto-osa metriä kohti"; 3,0 mm over 5,00 m is 0,6 mm per metre, so it is correct and clearer than the old phrase.
-- Rest of the solution (alpha = 12 · 10^-6 1/K, compare aluminium 5,75 mm and copper 4,25 mm) unchanged.
+- fy3-8-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).
