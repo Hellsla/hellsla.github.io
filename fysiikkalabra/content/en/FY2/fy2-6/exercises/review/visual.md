@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 09d8c42a8dbfd842
+CONTENT-HASH: e48a6ccc4ae0efce
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] fy2-6-L3-04 answer step — one long paragraph (about 110 words, a), b) and c) run together); it reads its number, as before the paragraph work. Splitting would be nicer but may wait.
 
 ## Checked
-- en open-exercises-1280-{6, 7, 9} (level 1: tasks 6-6, 6-7, 6-9 model answers split into paragraphs).
-- en open-exercises-L2-1280-{6, 7, 8, 9, 10} (6-15 Answer split around the display, 6-16, 6-17 Answer and Reasonableness).
-- en open-exercises-L3-1280-{3, 5, 6, 7, 8, 9} (6-21 to 6-23: answer c), Reasonableness, Principle and Answer paragraphs).
-- Paragraph spacing even, punctuation after display maths intact, no clipping or overflow.
+- Delta round 2, only the answer steps of fy2-6-L2-06 and fy2-6-L3-04 changed (solutions.md).
+- Captures opened (content/en/FY2/fy2-6/review/shots/, 1280 open-exercises): en: L2-7, L3-6 (the L2-06 answer continues past L2-7's bottom edge; its first paragraph and the L3-04 answer read as one paragraph each).
+- L2-06 (6-16): the answer step is one paragraph beginning with the verdict and the number (29 %, 33 %); the check box 33 % and Annettu → Sijoitus layout intact.
+- L3-04 (6-22): the answer step is one paragraph starting "a) 490 GWh ja 32 %"; numbers, units in LaTeX, Järkevyys block intact; no clipping.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
