@@ -1,19 +1,28 @@
-VERDICT: FAIL
-CONTENT-HASH: 728e3c7733d30aee
+VERDICT: PASS
+CONTENT-HASH: ecd7c7f1f550da9a
 
 ## Blocking
-1. **B (assessment), fy8-s5 d, criterion 4** ("Kertoo, mihin Onkalon turvallisuus perustuu: kuparikapseli, bentoniittisavi ja syvä kallio…", 1 p of 4). The task asks only how Oklo shows whether plutonium stayed in place and to evaluate the claim; nothing in the task text gives or asks for Onkalo's barriers. A complete, correct evaluation loses a point. Either add the question to the task ("Mihin Onkalon turvallisuus perustuu?") or replace the criterion with one the task asks.
-2. **B (assessment), fy8-s4 a, criterion 4** requires the mediator ("…jonka välittäjähiukkanen on $W^-$-bosoni"). The task asks only "mikä vuorovaikutus aiheuttaa sen". Make the criterion "heikko vuorovaikutus" (W⁻ as an optional addition), or ask for the mediator in the task.
+None.
 
 ## Polish
-- fy8-s2 c, criterion 4: "kestävänä keraamina kapseleissa" is not in the task data; accept "polttoaine ei saa päästä pölynä ympäristöön / kapselien on kestettävä onnettomuus" in the criterion's wording.
-- fy8-s3 a, conclusion criterion: "todennäköisin syy" is not asked ("Mitä kuvaajasta voi päätellä?"); the model answer rightly says "esimerkiksi". Word the criterion the same way.
-- fy8-s3 d: $r \approx 36\,\text{cm}$ is an extrapolation past the measured range ($2$–$20\,\text{cm}$); say so in one clause (guardrail "Fits").
-- Rounding reason missing in the answers of fy8-s1 b ($\approx 1200$ from "noin $5\,\text{keV}$"), s1 d, s2 d ($1790\,\text{W}$ from $14\,\text{a}$: three figures are generous) and s3 d.
+- fy8-s3 b: the model answer now reads the intercept from the line's points $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ and $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$, but the figure circles only $(20{,}0;\ 12{,}0)$ and the intercept. Marking $(2{,}0;\ 1{,}86)$ too would make the reading visible (graph_read).
+- fy8-s3 d: $r \approx 36\,\text{cm}$ lies outside the measured range $2$–$20\,\text{cm}$. One clause saying the model is extrapolated there would help (guardrail "Fits"; carried over from round 1).
+- fy8-s5 d, criteria 3 and 4 overlap: both reward saying that one natural example does not prove the other site safe. Criterion 4 now asks only what the task asks ("Arvioi väitettä"), with the barriers as examples, so it is no longer blocking.
 
 ## Checked
-- Own script recomputed every number from the task text; all agree with tasks.json, solutions.md and answers.py (s1 296 nm, 1193, 1107 nm; s2 5,594 MeV, 3,52 kg, 83 %, 1791 W, 98,5 W, 0,566 mSv; s3 d = 1,31 cm by least squares, 36,2 cm, 0,23 µSv/h; s4 7,16, 136 s, 271 s; s5 3,67 %, 3,49 a, 83 000), alternative-method numbers included.
-- Criteria sum to each part's points (15, 20, 17, 16, 16).
-- Models and stated assumptions in all five tasks: correct; no A findings.
-- Source values plausible; s3 data declared generated. Scope inside FY8, no de Broglie.
-- Figures: levels to scale; s3 graphs match the data and the solution's read points.
+- Hash taken at the start and the end: ecd7c7f1f550da9a both times.
+- Round-1 blocking items fixed. fy8-s4 a criterion 4 now asks only for the weak interaction. fy8-s5 d criterion 4 now asks for a justified evaluation, so it no longer needs the Onkalo barriers that the task never gave.
+- fy8-s3 b new intercept chain: $k = 10{,}14/18 = 0{,}5633 \cdot 10^{-2}\,\sqrt{\text{min}}/\text{cm}$, $r = 2{,}0 - 1{,}86/0{,}5633 = -1{,}30\,\text{cm}$, and $K = 1/k^2 = 3{,}15 \cdot 10^{4}\,\text{cm}^2/\text{min}$, as the solution says. The two points are on the least-squares line (answers.py gives 1,861 and 11,98) and inside the measured range. d-part: $37{,}5 - 1{,}3 = 36{,}2\,\text{cm}$ and $0{,}23\,\mu\text{Sv/h}$.
+- One script of my own recomputed every number from the task text, and all agree:
+  - s1: $2{,}22$ and $1{,}97\,\text{eV}$, $296\,\text{nm}$, $1193$, $1107\,\text{nm}$, $0{,}83\,\text{eV}$
+  - s2: $0{,}006005\,\text{u}$, $5{,}594\,\text{MeV}$, $3{,}52\,\text{kg}$, $83\,\%$, $1791\,\text{W}$, $98{,}5\,\text{W}$, $0{,}16$, $5 \cdot 10^{7}$, $0{,}566\,\text{mSv}$
+  - s3: c-part $14\,\%$, $2\,\%$, $6\,\%$
+  - s4: $0{,}782\,\text{MeV}$, $7{,}16$, $0{,}8575$, $135\,\text{s}$, $0{,}735$, $270\,\text{s}$
+  - s5: $3{,}67\,\%$, $1 : 26$, $3{,}49\,\text{a}$, $4{,}7 \cdot 10^{17}\,\text{J}$, $5{,}8\,\text{t}$, $83\,000$
+  - the alternative-method values too ($0{,}56\,\text{mSv}$, $0{,}27\,\mu\text{Sv/h}$, $0{,}038$)
+- The reflowed calculation chains carry the same numbers, signs and units in the same order.
+- Each part's criteria add up to its points: totals 15, 20, 17, 16 and 16.
+- Rubric criteria ask only what the tasks give and ask.
+- Models and stated conditions are correct throughout: atomic masses with the electrons cancelling, $A = \lambda N$, constant activity over one year, the effective dose chain, $1/(r+d)^2$, decay of free neutrons only, $Y = 2N_n/(N_n+N_p)$, the moderator feedback.
+- Scope stays inside FY8; no de Broglie. Generated data in s3 is declared as such.
+- The levels figure is to scale.

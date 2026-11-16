@@ -1,21 +1,28 @@
 VERDICT: PASS
-CONTENT-HASH: 5416b79b37190477
+CONTENT-HASH: 74a741769156fbc5
 
 ## Blocking
 None.
 
 ## Polish
-- k3-c Sijoitus: $0{,}217 \cdot 15 = 3{,}255$ is written $3{,}25$, and the factor $0{,}0386$ belongs to $3{,}255$ ($e^{-3{,}25} = 0{,}0388$). The result $31$ holds either way.
-- k7-d Vastaus: "annos on yksittäisen vuoden luonnon säteilyn kokoluokkaa". $5{,}9\,\text{mSv}$ includes medical dose; "keskimääräisen vuosiannoksen kokoluokkaa" is exact.
-- k5-b Vastaus: "absorboi fotoneja vain, kun fotonin energia on vähintään $10{,}2\,\text{eV}$" reads as a threshold; the Periaate says it exactly (the energy of a level pair).
+- k4-d rubric, criterion 1: the comparison is written "$7{,}07$ vs. $1{,}11$ ja $2{,}83\,\text{MeV}$". Since the task text no longer gives the helium-4 value, a student who carries a wrong a) value into d) should still get these 2 p, as the intro promises. Adding "(tai a-kohdan oma arvo)" would make that explicit.
+- k3-c Sijoitus (from round 1, unchanged): the text writes $0{,}217 \cdot 15 = 3{,}25$, but the product is $3{,}255$. The factor $0{,}0386$ belongs to $3{,}255$ ($e^{-3{,}25} = 0{,}0388$). The result $31$ holds either way.
+- k4-c Muunnokset: the aligned row "$= 5{,}030151$" leaves out the unit, and the next row "$\cdot\,1{,}6605 \cdot 10^{-27}\,\text{kg}$" multiplies it. This is correct, but "$5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg/u} \cdot \text{u}$" or "$\ldots\,\text{u} \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg/u}$" would carry the unit through.
 
 ## Checked
-Hash was 5416b79b37190477 at the start and the end. Full review; my own script recomputed every number from the task data, and all agree with answers.py and the solutions. The three sentences changed since the last passed version (k3-c $0{,}04 \cdot 800 = 32$; k6-b "$\ln R$ riippuu paksuudesta lineaarisesti", no longer "suoraan verrannollinen"; k7-c wording) are correct.
-- **Osa 1.** b: figure points $0{,}37/0{,}78/1{,}20/1{,}61\,\text{V}$, $f_0 = 5{,}60 \cdot 10^{14}\,\text{Hz}$, $W = 3{,}71 \cdot 10^{-19}\,\text{J} = 2{,}32\,\text{eV}$. d $5{,}4$; e $2{,}74\,\text{V}$; g $20\,\text{h}$ (linear $7{,}75$); h $5 \cdot 10^{7}$; i $20$ and $1\,\text{mSv}$. Each of a–j has exactly one correct option; every distractor is wrong and its explanation right (j: d→u by the weak interaction).
-- **k2.** $f = 4{,}80$–$6{,}97 \cdot 10^{14}\,\text{Hz}$; least squares $h = 6{,}81 \cdot 10^{-34}\,\text{J s}$, intercept $-0{,}11\,\text{V}$; graph reading $6{,}76$. A slope scan over all five bars gives $h$ from $6{,}18$ to $7{,}37 \cdot 10^{-34}$, so $\Delta h = 0{,}60 \cdot 10^{-34}$; both stated extreme lines stay inside every bar. Model deficits $0{,}02$–$0{,}07\,\text{V}$, as part d says.
-- **k3.** Fit $\lambda = 0{,}218\,\text{min}^{-1}$, $T_{1/2} = 3{,}18\,\text{min}$, $N(15) = 30{,}5$; solution $0{,}217$ and $31$. $\sqrt{803}/803 = 3{,}5\,\%$; residuals at most $16$.
-- **k4.** $E_\text{s}(\text{He}) = 28{,}30\,\text{MeV}$, $7{,}07$ per nucleon; D $1{,}11$, T $2{,}83$; $Q = 17{,}59\,\text{MeV}$ (also from binding energies); $3{,}37 \cdot 10^{14}\,\text{J/kg}$, ratio $1{,}1 \cdot 10^{7}$.
-- **k5.** $656{,}5$ and $121{,}6\,\text{nm}$; $6{,}20 - 3{,}4 = 2{,}8\,\text{eV}$; limit $365\,\text{nm}$.
-- **k6.** Net $7{,}9\,\text{s}^{-1}$; $\mu = 0{,}114\,\text{mm}^{-1}$; $d_{1/2} = 6{,}1\,\text{mm}$; $d = 31{,}4\,\text{mm}$; $\sqrt{950}/790 = 3{,}9\,\%$ ($3{,}4$ and $3{,}7\,\%$ for the accepted variant); without background $0{,}110$. Narrow-beam and extrapolation limits are stated.
-- **k7.** $0{,}321$; $1540\,\text{MBq}$; $511\,\text{keV}$, $2{,}43\,\text{pm}$; $5{,}32\,\text{mSv}$ ($90\,\%$); C-11 $0{,}0022$ and $2{,}7\,\text{TBq}$.
-- **Rubrics and scope.** Criteria ask only what each part gives and asks; point sums match; alternative methods accepted. Example data are marked as such. No de Broglie, no Schrödinger.
+The hash was 74a741769156fbc5 at the start and at the end. This was a delta review against the version I passed in round 1 (word diff of tasks.json, solutions.md and answers.py).
+- **k4 d.** The task now gives only D $1{,}11$ and T $2{,}83\,\text{MeV}$ per nucleon and refers to the helium-4 value from part a. Both stated values are right ($1{,}112$ and $2{,}827\,\text{MeV}$ from the atomic masses), and part a is now not given away. The model answer and the rubric still compare per-nucleon binding energies. That holds here because the nucleon number is conserved and the free neutron has no binding energy: in total, $28{,}3 > 2{,}22 + 8{,}48\,\text{MeV}$. The Coulomb-barrier reasoning is unchanged and correct.
+- **Intro.** "$1\,\text{u} = 931{,}5\,\text{MeV}/c^2$ eli $1\,\text{u} = 1{,}6605 \cdot 10^{-27}\,\text{kg}$" is correct.
+- **k4-c rubric detail.** "$17{,}59\,\text{MeV}$ eli $2{,}818 \cdot 10^{-12}\,\text{J}$" is correct.
+- **solutions.md reflow.** Every chain that was joined or re-broken into aligned rows has the same numbers, signs, units and order as before: k1-b, k2-b/c, k3-c, k4-a/b/c, k5-a/b/c, k6-a/d, k7-a/b/c/d. The aligned blocks are mathematically valid: each continuation row is "$\cdot$", "$-$", "$=$" or "$\approx$" of the line before. The typo fix (Valosähköisessä) is wording only.
+- **Recomputed in my own script.**
+  - k1-b: $W = 3{,}71 \cdot 10^{-19}\,\text{J} = 2{,}32\,\text{eV}$.
+  - k2: $h = 6{,}76$, $7{,}37$ and $6{,}18 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+  - k3-c: $30{,}9 \approx 31$.
+  - k4: $E_\text{s} = 28{,}30\,\text{MeV}$, $7{,}07\,\text{MeV}$ per nucleon, $Q = 17{,}59\,\text{MeV}$, $3{,}37 \cdot 10^{14}\,\text{J/kg}$, ratio $1{,}1 \cdot 10^{7}$.
+  - k5: $656{,}5\,\text{nm}$, $121{,}6\,\text{nm}$, $2{,}80\,\text{eV}$.
+  - k6-d: $31{,}4\,\text{mm}$.
+  - k7: $0{,}321$, $1540\,\text{MBq}$, $511\,\text{keV}$, $2{,}43\,\text{pm}$, $5{,}32\,\text{mSv}$.
+
+  All agree with answers.py and the solutions.
+- **Rubric sums.** Unchanged, and practice.py check is OK.
