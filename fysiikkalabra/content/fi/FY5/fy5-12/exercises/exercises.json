@@ -293,6 +293,19 @@
       "answer": 0.5,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-12-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "model",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/fi/simulations/wave-interference\" target=\"_blank\" rel=\"noopener\">PhET – Wave Interference (Aaltojen interferenssi)</a>\n\nMissä kaksi ääniaaltoa vahvistaa toisiaan? Tutki simulaatiolla kahden samanvaiheisen aaltolähteen synnyttämää interferenssiä. Simulaatio toimii selaimessa ilman asennusta. Avaa sen toinen näkymä (Interferenssi), valitse aaltolajiksi ääni ja käynnistä molemmat lähteet lähteiden omista painikkeista.\n\na) Kuvaile, millaisiin kohtiin muodostuu vahvistavan ja heikentävän interferenssin alueita.\n\nb) Muuta aaltolähteiden taajuutta ja tutki, miten interferenssikuvio muuttuu. Selitä muutos aallonpituuden avulla.\n\nc) Kahden samanvaiheisen äänilähteen aallonpituus on $0{,}80\\,\\text{m}$. Laske pienimmät positiiviset matkaerot, joilla syntyy vahvistava ja heikentävä interferenssi. Kirjoita vastaukseen myös seuraava heikentävän interferenssin matkaero.\n\nd) Selitä, miksi kahdesta kaiuttimesta kuuluva ääni voi olla eri kohdissa huonetta voimakkuudeltaan erilainen. Miksi todellinen äänikenttä on simulaation ideaalista mallia monimutkaisempi?\n\nVastaa laatikkoon kohdan c) pienin positiivinen matkaero, jolla interferenssi on heikentävä, metreinä.",
+      "answer": 0.4,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

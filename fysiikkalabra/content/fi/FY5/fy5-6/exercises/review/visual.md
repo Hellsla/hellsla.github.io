@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 63025e53f5a57e21
-SCOPE: delta added-exercise from 1ae57cce87a7a6fc base 81db4a6fd727
+CONTENT-HASH: 7cc36b31da39ce67
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
-- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
+- [Minor] fy5-6-L2-09 Kuvaajan lukeminen table at 360 px: unit header "a³ ((10⁸ km)³)" still touches the value ("…)0,194"); add a thin space.
+- [Minor] fy5-6-L2-09 Sijoitus at 1280 px: the first row breaks before "·" and the next "=" lands on the fraction's line, so the chain reads cramped; 360 px is clean. Break after "365,2 d" explicitly.
+- [Minor] fy5-6-L2-09 Vastaus: "0,2 %:n" reads clumsily; "noin 0,2 prosentin tarkkuudella".
 
 ## Checked
-- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
-- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
-- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
-- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
+- Own 360 px (6 tiles) and 1280 px render of fy5-6-L2-09 with solution open (preview ?ratkaisut=1#exercises, levels opened): task text now shows italic "Distance from Sun", "Orbital Period", "Moon", no asterisks; a)–d), Annettu table, Kaava, Muunnokset, Sijoitus, Vastaus box, kohta c) and d) now separate paragraphs, Järkevyys. Page width 360/1280, no overflow. Other changed solution lines (L1-11 chip, sig-fig sentences, kN) are text-only and read well.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

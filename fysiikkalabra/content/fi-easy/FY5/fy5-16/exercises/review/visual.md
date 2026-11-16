@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 45d97ca78bde885a
-SCOPE: delta added-exercise from d2b1980c7da012c4 base 81db4a6fd727
+CONTENT-HASH: a138b3319b58764e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy5-16-L2-10 c) — the part packs five sentences/questions; a short sub-list (i, ii, iii) would help S2 readers.
 
 ## Checked
-- Delta: fy5-16-L1-09 (1280-7, -8) and fy5-16-L2-09 (L2-1280-12) in fi-easy: figure labels in Finnish (kipukynnys, rock-konsertti, ruohonleikkuri, keskustelu, kuiskaus, kuulovaurion vaara), solutions with decimal comma.
+- Rendered preview/fi-easy/fy5-16.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
+- New task fy5-16-L2-10 and its solution read and rendered.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

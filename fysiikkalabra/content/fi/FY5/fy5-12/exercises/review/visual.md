@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 21165e7fa5250d9b
-SCOPE: delta added-exercise from 37891267a0068020 base 81db4a6fd727
+CONTENT-HASH: 75cc6de28fa950e1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-12 — heading Kuvaajan lukeminen / Reading the graph is used for a grid diagram, while fy5-15 says Reading the figure; use one wording (optional).
+- [Minor] fy5-12-L2-10 Annettu still starts with a lowercase fragment "aineistosta (PhET-simulaatio …)"; a full sentence would match the other solutions.
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12 (L2-09 with the loudspeaker grid figure, solution) and L3 part 9 (L3-06).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Own 1280 px and 360 px render of fy5-12-L2-10 with solution open: new task text (c) "Kirjoita vastaukseen myös seuraava heikentävän interferenssin matkaero", the Kaava row with Δs_h2 = 3/2 λ, the Sijoitus rows (Δs_v, Δs_h, Δs_h2 aligned at =, 1,20 m), Vastaus with the "0,40 tai 0,4" sentence, kohta d) paragraph. No clipping.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -43,4 +43,10 @@ a["fy5-17-L3-05"] = sum(s_ / math.sqrt(g * h_) for s_, h_ in _seg) / 60   # 3427
 # Added: MAFY lookup (water 0 °C, 1402,4 m/s) and A-scan figure task (echoes B 50 µs, C 90 µs)
 a["fy5-17-L1-09"] = 1402.4 * 0.020 / 2                  # echo sounder under ice, 20 ms: d = 14,024 m -> 14,0 m
 a["fy5-17-L2-09"] = 1540 * 90e-6 / 2 * 100    # depth of the bone boundary C from the skin: echo at 90 µs -> 6,93 cm
+# Added: source task on the Institute of Seismology's earthquake pages (teacher's FY5-A4), part c)
+_tS, _tP = 100 / 3.5, 100 / 6.0                         # 100 km at vS = 3,5 and vP = 6,0 km/s: 28,571 s and 16,667 s
+a["fy5-17-L2-10"] = _tS - _tP                           # Δt = 11,905 s -> 12 s (two figures, the speeds)
+_km_per_s = 100 / (_tS - _tP)                           # part d): 8,4 km of distance per second of Δt
+assert abs(_km_per_s - 8.4) < 1e-9 and round(2 / _km_per_s, 2) == 0.24   # 2 km of distance <-> 0,24 s of Δt
+assert round(6.0 * 3.5 / (6.0 - 3.5) * 16.0, 1) == 134.4 and round(134.4 / 6.0, 1) == 22.4 and round(134.4 / 3.5, 1) == 38.4   # L2-07 solution: 134,4 km, 22,4 s, 38,4 s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fc9a630e9f0fd181
+CONTENT-HASH: 7ae124fdf02b5df7
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions.md, Voimakuvio of tasks 4-12/4-17 — the same sentence first spells out "täysin kehittynyt lepokitka eli lähtökitka" and later only "lähtökitka"; fine since the term is introduced once, but 4-17 and the tilted-road task could repeat the full form on first use if read apart.
+- [Minor] fy5-4 L2-07 — "vaatisi kitkan, joka … ja se vaatisi jo erittäin hyvän pidon" repeats "vaatisi"; e.g. "ja se edellyttäisi jo erittäin hyvää pitoa".
+- [Minor] fy5-4 L3-05 — "antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" echoes the previous clause word for word; "kitkan ei tarvitse tuottaa koko voimaa yksin" reads lighter. Optional.
 
 ## Checked
-- Delta: exercises.json L3-06 (task 4-23) and solutions.md term changes (täysin kehittynyt lepokitka eli lähtökitka / lähtökitka).
-- fy5-4-open-exercises-L3-1280-10 and -11 (task 4-23 text, graph kuvaaja-b, full open solution): new sentence "täysin kehittynyt lepokitka eli lähtökitka on μ0N" reads fluently, LaTeX units and decimal comma intact, graph and aligned chains unchanged, no clipping or layout change.
-- Solution text of the changed Periaate and Voimakuvio lines read in solutions.md; wording only, figure drawings untouched.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed Järkevyys and Mallivastaus sentences read correctly.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

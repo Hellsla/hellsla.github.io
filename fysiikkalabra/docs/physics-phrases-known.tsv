@@ -1,6 +1,5 @@
 folder	file	rule	sentence (physics_phrases.py; work queue 18 deletes a row when it corrects the sentence)
 FY5/fy5-12	exercises/solutions.md	heat-into	Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.
-FY5/fy5-8	exercises/solutions.md	heat-into	Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön: jousi ja jänne liikkuvat its
 FY6/fy6-10	exercises/exercises.json	heat-into	Varaus ei muutu lämmöksi eikä häviä.
 FY6/fy6-10	exercises/solutions.md	heat-into	Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
 FY6/sovella	solutions.md	heat-into	- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.

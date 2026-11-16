@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9b6f79e9e8ca9859
-SCOPE: delta added-exercise from fab8918566397611 base 81db4a6fd727
+CONTENT-HASH: 557c1c077663a50d
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-3-L1-11 solution: T = 3.15e7 s gives 29.92 km/s, not the 29.89 shown (T = 3.1536e7 s). Write T = 3.154e7 s or say "about 29.9".
-- fy5-3-L1-11: "three significant figures like the data" is loose (365 d); say "like the table value".
+- solutions.md (L1-10 reasonableness) — 11 m in 5 s is 2.3 m/s, a brisk walk to an easy jog; "a jogging pace" is acceptable, "a fast walk or slow jog" would be exact.
 
 ## Checked
-- L1-10 and L2-08: figure supplies r (1.80 m; 0.60 m and 1.80 m), needed to answer; description carries the same values and no speeds; A is an unused distractor in L1-10 only.
-- Arithmetic: 2.262 m/s; 2.513 m/s (frequency converted min to s) correct.
-- L1-11: authentic MAFY lookup with hint to the right section; the unit conversion (days to s) is a fair level 1 step; reasonableness check sound.
-- Progression: L1-10 (read r, period), L2-08 (two radii, frequency, difference) rise; not a repeat of L1-01..09.
-- Solutions staged, principle explained.
+- Diff is wording only plus a re-broken calculation row; no number, symbol or unit changed.
+- Runner solution: "on the same straight line through the centre" is a clearer, correct reason than "same radius" (the two runners are at different radii); the proportionality conclusion follows.
+- L2-08 re-broken substitution: same numbers, signs, units in order; each row readable at 360 px width as a chain (f in 1/s, r difference, result 2.513 m/s).
+- Reasonableness lines in both tasks still compare with a real situation (carousel).
+- The marker removal in the captions leaves the figure captions plain and understandable.
+- Figure karuselli unchanged: needed for r, description matches, gives no speeds.

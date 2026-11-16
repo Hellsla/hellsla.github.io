@@ -203,10 +203,10 @@ v_4 &= \frac{12.0\,\text{m}}{0.410\,\text{s}} = 29.3\,\text{m/s}
 When the tension doubles, the speed grows by the factors $\tfrac{15.0}{10.4} = 1.44$, $\tfrac{21.1}{15.0} = 1.41$ and $\tfrac{29.3}{21.1} = 1.39$, that is, about $\sqrt{2} = 1.41$. So the speed is not directly proportional to the tension, but $v^2$ is. We calculate the ratios $C = v^2/F$:
 ```latex
 \begin{aligned}
-C_1 &= \frac{(10.4)^2}{5.0} = 21.8 \\
+C_1 &= \frac{(10.4)^2}{5.0} = 21.6 \\
 C_2 &= \frac{(15.0)^2}{10.0} = 22.5 \\
-C_3 &= \frac{(21.1)^2}{20.0} = 22.2 \\
-C_4 &= \frac{(29.3)^2}{40.0} = 21.4
+C_3 &= \frac{(21.1)^2}{20.0} = 22.3 \\
+C_4 &= \frac{(29.3)^2}{40.0} = 21.5
 \end{aligned}
 ```
 The ratios are approximately equal. Their sum is $87.9$, so the mean is $C = \tfrac{87.9}{4} = 22.0\,\tfrac{\text{m}^2}{\text{s}^2\,\text{N}}$. At a tension of $30\,\text{N}$ the speed and the wavelength are

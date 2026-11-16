@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 43ce35828e573b26
-SCOPE: delta added-exercise from 0712046380ca6300 base 81db4a6fd727
+CONTENT-HASH: 95dcb8b70d26daad
 
 ## Blocking
-(none)
+(none) The round-1 Major is fixed: the Sijoitus chains of L1-02, L1-03, L1-04, L2-02, L2-03, L3-03 and the Järkevyys chains now sit in aligned rows; scan of every .eq-chain with all details open at 360, 390 and 1280 px: none scrolls, page width = viewport (only the known find-the-error formula of the lesson overflows).
 
 ## Polish
-- [Minor] fy5-5-L1-09 Järkevyys — the figure gives Earth $9{,}80\,\text{m/s}^2$ but the check uses $9{,}81\,\text{m/s}^2$; one sentence ("kuvan arvo $9{,}80$ eroaa tästä vähän") or the figure's value would remove the small mismatch.
-- [Minor] fy5-5-L1-09 Vastaus — "($320\,\text{N}$)" starts a paragraph line on its own after the boxed answer; reads like a stray fragment, fold it into the sentence.
+- [Minor] L2-02 Sijoitus — the chain is correct but long (10 rows at 360 px); acceptable.
+- [Minor] Gravitaatiolaki-chains: the \cdot continuation row is indented with \quad; fine, only note the fraction font is small at 360 px.
 
 ## Checked
-- fy5-5-open-exercises-1280-9 (task 5-9 solution) and L2-1280-12, -13, -14 (task 5-18, figure `fy5-5/planeetat`, solution open), 664 px wide. Delta only: L1-09 and L2-09.
-- Figure: four surfaces Kuu, Mars, Maa, Jupiter, orange acceleration arrows (colour fits the convention), LaTeX values with units above each, `\overline{g}` label; every needed value is readable, the answer is not given. Task text keeps the situation first and the question as its own sentence.
-- Solutions: all in the seven-part order; units upright, `\cdot`, decimal comma, chains as aligned rows, fractions legible; no plain quantity.
+- Own captures at 360 px of solutions L1-02, L1-04, L2-02, L2-03, L3-03 (opened and read); scan at 360/390/1280 of all .eq-chain; changed Järkevyys (L2-03 21 700 km, L3-01 F_0 row) legible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

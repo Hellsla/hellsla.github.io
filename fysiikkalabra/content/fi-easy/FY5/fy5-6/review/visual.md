@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9138422ae14414ac
+CONTENT-HASH: 1444dbbbca3e33fa
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07): I captured and opened the changed passages at 390 px from the rebuilt preview: the Painottomuus definition (the bold block plus "Gravitaatio ei siis puutu."), the new paragraph on real satellites (drag, the Moon and Sun, oblateness, ISS reboosts) and the Tiivistelmä bullet. I also opened the Painottomuus paragraph at 1280 px beside its two free-body figures, and the row stays balanced. The bold covers only the definition. The new paragraph is 41 words of clear S2 Finnish. Nothing is clipped, and a scan found no inline formula that wraps or scrolls.
+- Rendered preview/fi-easy/fy5-6.html?ratkaisut=1 at 360 and 1280 px (DOM checks: red KaTeX, clipped or off-screen formulas, overflow, asterisks, plain quantities): clean.
+- Delta is approved figures plus calculation chains re-broken into rows (inquiry.json); no clipped row at 360 px; figures not re-judged (teacher-approved).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c767d5b1c30c2641
-SCOPE: delta added-exercise from 26062dd6590a92c6 base 81db4a6fd727
+CONTENT-HASH: 6b38c22268050a92
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- L1-10: MAFY look-up (iron 5120 m/s), v = f lambda, kHz to Hz shown, sanity check against air.
-- L2-08: snapshot graph, lambda read from crests (1,5 m); the figure does not mark lambda, so the student must act; the unused amplitude is named as extra.
-- Distinguishes snapshot (x) from time graph, which the set already trains elsewhere.
-- Solutions staged; Finnish clear.
+- Corrected ratios C = v²/F: 21,6; 22,5; 22,3; 21,5 (recomputed); sum 87,9 and mean 22,0 follow, and the later v and λ are unchanged.
+- Caption markers removed; nothing else changed.
+- The solution still shows speeds, factors near √2, the ratios and the final λ = 5,1 m step by step.

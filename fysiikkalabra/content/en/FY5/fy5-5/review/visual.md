@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fa4b921e0f83747b
+CONTENT-HASH: 259dd438b58d9b7c
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json kuukoe, feedback for $0.00272$ — "Your number is either the correct acceleration in $\text{m/s}^2$, or the distance was left in kilometres." reads more clearly.
+- [Minor] exit-ticket answers 1 and 2 use `\tfrac` inside display `aligned` (the rows' fractions render small at 610 px); `\dfrac` would read better in display maths.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: both rewritten kuukoe mistake feedbacks rendered (injected into the task card as the page would show them) at 390 and 1280: $\text{m/s}^2$, $r = 3{,}844 \cdot 10^{8}\,\text{m}$, $\text{mm/s}^2$ all LaTeX, none wraps; captures fy5-5-en-390-fb1/fb2.png, -1280-fb1/fb2.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Opened fy5-5-intro-1280 (new "You can also go further" block with the extension goal, bullet faint but legible, "In this lesson, you will learn to" form kept) and fy5-5-open-exit-1280 (re-broken answer rows aligned at =, nothing clipped).
+- Diff read for the Extension labels ("Extension section.", "Extension: Find the error", summary bullet): clear, consistent English; units LaTeX.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 77ea855d8210779a
+CONTENT-HASH: 652ff21dcc7142f6
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy5-4 L2-07 — "Oppilaan tulos vaatisi … Se vaatisi jo" repeats "vaatisi" in consecutive sentences; "Se edellyttäisi jo erittäin hyvää pitoa".
+- [Minor] fy5-4 L3-05 — "antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" repeats the previous sentence; optional.
 
 ## Checked
-- Captures made with screenshot.py (they landed in content/fi-easy/FY5/fy5-4/review/shots/).
-- Opened L3-1280-1 (4-18: Voimakuvio now reads "Täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo)", figure intact), L3-1280-10 (4-23 task text; the caption marker is gone, layout intact) and L3-1280-11/-12 (4-23 solution: Periaate with "lähtökitka", graph reading, Sijoitus, Vastaus, Järkevyys).
-- The $\overline{F}_\mu$ vector and the formulas render without red source; no clipping; the term is used consistently with the glossary.
-- Did not open the other changed Voimakuvio paragraphs (the L3-05 force-diagram text) as separate captures; the identical edit pattern was seen in 4-18.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed sentences read correctly in short-sentence style.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

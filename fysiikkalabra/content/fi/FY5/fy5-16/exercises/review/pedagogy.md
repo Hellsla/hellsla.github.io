@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dacf6bcb0f4a71eb
-SCOPE: delta added-exercise from 9b2ee0bf44613b3e base 81db4a6fd727
+CONTENT-HASH: 632e5672772dd3f3
 
 ## Blocking
 (none)
 
 ## Polish
-1. exercises.json (L1-09) — n = 5/3 needs 2^(5/3) at level 1, where L1-01 has an integer step; pick a level giving n = 2 (91 dB) or accept it. The method otherwise repeats L1-01; the new part is reading the level from the scale.
-2. The figure marks 85 dB only as the start of the red area; the task relies on the term ylempi toiminta-arvo; fine.
+- solutions.md (L2-10 Vastaus c) — "Jos työpäivän muu melu on vähäistä" is a good caveat; add that the box answer (1,0 h) is the time for equal energy, not a safe exposure time (already said in Järkevyys, so optional).
 
 ## Checked
-- L2-09 reworked: 105 − 12 = 93 dB, n = 8/3, 480/6,350 = 75,6 min recomputed, correct; now two connected steps (attenuation as in L1-04 plus dose), so it rises above L1-09.
-- L1-09: 8/2^(5/3) = 2,52 h correct.
-- Figure gives 90 and 105 dB exactly, no answer; text only (no renders).
+- c) no longer names the method; the 8-hour reference makes the limit comparison well-defined (94 dB(A) for 8 h is 7 dB over 87; 1 h gives 84,97 = 85 dB(A), below 87).
+- The Vastaus is split by part, answer box value first; readable.
+- Recomputed 10^0,9 = 7,94 and t = 1,0 h.
+- Table terms (toiminta-arvo, raja-arvo) used as in the source.

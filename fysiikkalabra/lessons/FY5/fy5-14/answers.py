@@ -40,4 +40,14 @@ a["fy5-14-L1-10"] = 7 * 200
 # L2-08 is multiple choice (answer in words): beat 4 Hz from the figure, wax lowers f_x and beats speed up -> f_x = 523 - 4 = 519 Hz
 L2_08_beat = 1 / 0.25
 L2_08_correct = 523 - L2_08_beat
+# L2-09 (teacher's FY5-A3, Yle article on 440 vs 432 Hz): λ = v/f with v = 343 m/s; the box takes λ at 432 Hz
+L2_09_lam432 = 343 / 432                                  # 0,79398 m -> 0,794 m
+L2_09_lam440 = 343 / 440                                  # 0,77955 m -> 0,780 m
+L2_09_dlam_cm = (L2_09_lam432 - L2_09_lam440) * 100       # 1,443 cm -> 1,4 cm (432 Hz has the longer wave)
+L2_09_df = 440 - 432                                      # 8 Hz, also the beat frequency of the two tones together
+L2_09_df_pct = L2_09_df / 440 * 100                       # 1,818 % -> 1,8 % lower than 440 Hz
+L2_09_dlam_pct = (L2_09_lam432 / L2_09_lam440 - 1) * 100  # 1,852 % -> 1,9 % longer than at 440 Hz
+L2_09_semitone_share = L2_09_df / (440 - 415)             # 8 Hz : 25 Hz = 0,32, about a third of a semitone (article: 415 Hz)
+L2_09_check = 0.794 * 432                                 # 343,0 m/s back from the rounded wavelength
+a["fy5-14-L2-09"] = L2_09_lam432
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

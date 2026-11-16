@@ -661,7 +661,6 @@ en/fy5-2	m_\text{p} g\,(x_2 - x_\text{p}) - m_\text{pt} g\,(x - x_2) = 0
 en/fy5-3	0.2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 en/fy5-3	2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} = 2.649 \cdot 10^{8}\,\text{m}
 en/fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2.649 \cdot 10^{8}\,\text{m
-en/fy5-3	= 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\t
 en/fy5-3	v = 2\pi \cdot 0.35\,\text{m} \cdot 3.0\,\tfrac{1}{\text{s}} = 6.6\,\t
 en/fy5-3	v_1 = 2\pi \cdot 1.2\,\text{m} \cdot 0.267\,\tfrac{1}{\text{s}} \appro
 en/fy5-3	v_2 = 2\pi \cdot 2.4\,\text{m} \cdot 0.133\,\tfrac{1}{\text{s}} \appro
@@ -670,7 +669,6 @@ en/fy5-4	= 80\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 + \dfrac{(8.0\,\text{m/s}
 en/fy5-4	N = 0.17\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.7\,\text{N}
 en/fy5-4	T = m\dfrac{v^2}{r} = 0.17\,\text{kg}\cdot\dfrac{(1.5\,\text{m/s})^2}{
 en/fy5-5	= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \
-en/fy5-5	= \dfrac{1.99 \cdot 10^{30}\,\text{kg}}{7.35 \cdot 10^{22}\,\text{kg}}
 en/fy5-5	g = \gamma \tfrac{M}{r^2} = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot
 en/fy5-6	1.588 \cdot 10^{30}\,\text{kg} : 1.99 \cdot 10^{30}\,\text{kg} \approx
 en/fy5-6	42\,164\,\text{km} \cdot \sqrt[3]{0.107} \approx 20\,000\,\text{km}
@@ -1711,7 +1709,6 @@ fi-easy/fy5-3	0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 fi-easy/fy5-3	0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}
 fi-easy/fy5-3	2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} = 2{,}649 \cdot 10^{8}\,\tex
 fi-easy/fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2{,}649 \cdot 10^{8}\,\text
-fi-easy/fy5-3	= 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}
 fi-easy/fy5-3	v = 2\pi \cdot 0{,}35\,\text{m} \cdot 3{,}0\,\tfrac{1}{\text{s}} = 6{,
 fi-easy/fy5-3	v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \a
 fi-easy/fy5-3	v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \a
@@ -1719,13 +1716,7 @@ fi-easy/fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\te
 fi-easy/fy5-4	= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{
 fi-easy/fy5-4	N = 0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N
 fi-easy/fy5-4	T = m\dfrac{v^2}{r} = 0{,}17\,\text{kg}\cdot\dfrac{(1{,}5\,\text{m/s})
-fi-easy/fy5-5	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}
-fi-easy/fy5-5	16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2
-fi-easy/fy5-5	850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}
 fi-easy/fy5-5	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
-fi-easy/fy5-5	= 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2
-fi-easy/fy5-5	= 9{,}80\,\text{m/s}^2 \cdot \left(\tfrac{6378}{384\,400}\right)^2
-fi-easy/fy5-5	= \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{
 fi-easy/fy5-5	g = \gamma \tfrac{M}{r^2} = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cd
 fi-easy/fy5-6	1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2
 fi-easy/fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
@@ -2788,7 +2779,6 @@ fy5-3	0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}
 fy5-3	0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}
 fy5-3	2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} = 2{,}649 \cdot 10^{8}\,\tex
 fy5-3	3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2{,}649 \cdot 10^{8}\,\text
-fy5-3	= 2\pi\cdot 0{,}3333\,\tfrac{1}{\text{s}}\cdot(1{,}80\,\text{m} - 0{,}
 fy5-3	v = 2\pi \cdot 0{,}35\,\text{m} \cdot 3{,}0\,\tfrac{1}{\text{s}} = 6{,
 fy5-3	v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \a
 fy5-3	v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \a
@@ -2796,13 +2786,7 @@ fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\text{m
 fy5-4	= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{
 fy5-4	N = 0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N
 fy5-4	T = m\dfrac{v^2}{r} = 0{,}17\,\text{kg}\cdot\dfrac{(1{,}5\,\text{m/s})
-fy5-5	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}
-fy5-5	16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2
-fy5-5	850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}
 fy5-5	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
-fy5-5	= 8{,}87\,\text{m/s}^2 \cdot 3{,}6627 \cdot 10^{13}\,\text{m}^2
-fy5-5	= 9{,}80\,\text{m/s}^2 \cdot \left(\tfrac{6378}{384\,400}\right)^2
-fy5-5	= \dfrac{1{,}99 \cdot 10^{30}\,\text{kg}}{7{,}35 \cdot 10^{22}\,\text{
 fy5-5	g = \gamma \tfrac{M}{r^2} = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cd
 fy5-6	1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2
 fy5-6	26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9
