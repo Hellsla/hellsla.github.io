@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6e3fb1b8a584919f
+CONTENT-HASH: 689c71af3cad3c07
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 6e3fb1b8a584919f
 (none)
 
 ## Checked
-- Delta: changed solutions (h in eV s, 4,3·10^2 nm answer, Pika-arvio). Captures opened (open-exercises-L2 parts, 1280 px): formulas render, no clipping or red KaTeX, text reads naturally.
+- Delta (round 3): fy8-1-L2-06 solution, "Kuvaajan lukeminen" (captures fy8-1-open-exercises-L2-1280-8 and -9): "Kumpikin on siis likimain $h = 4{,}14 \cdot 10^{-15}\,\text{eV}\,\text{s}$." Renders cleanly, unit upright with thin space, decimal comma, slope rows above aligned, no clipping; Kaava, Sijoitus and Vastaus below intact; plain, clear sentences.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
