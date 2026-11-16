@@ -198,7 +198,12 @@
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels in the angle.
 **Substitution:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1.333 = 53.13^\circ$
 **Answer:** The total field is $25\,\mu\text{T}$ and the needle turns $53^\circ$ from north towards east, two significant figures like the fields read from the figure.
-**Reasonableness:** The field of the magnet is greater than the Earth's field, so the angle must be more than $45^\circ$ but less than $90^\circ$. The ratio $15 : 20 : 25$ is the right triangle $3 : 4 : 5$, whose angle is about $53^\circ$. Check: $15\,\mu\text{T} \cdot \tan 53.13^\circ = 20\,\mu\text{T}$.
+**Reasonableness:** The field of the magnet is greater than the Earth's field, so the angle must be more than $45^\circ$ but less than $90^\circ$. The ratio $15 : 20 : 25$ is the right triangle $3 : 4 : 5$, whose angle is about $53^\circ$. Check: $$
+\begin{aligned}
+&15\,\mu\text{T} \cdot \tan 53.13^\circ \\
+&= 20\,\mu\text{T}
+\end{aligned}
+$$.
 
 ## fy7-1-L2-09
 **Given:** figure: the Earth's field seen from the side, grid squares $5\,\mu\text{T}$, horizontal axis towards the north and vertical axis down, arrow $\overline{B}$ starts at the ground

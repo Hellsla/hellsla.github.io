@@ -198,7 +198,12 @@
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina, ja yksikkö supistuu kulman laskussa.
 **Sijoitus:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1{,}333 = 53{,}13^\circ$
 **Vastaus:** Kokonaiskenttä on $25\,\mu\text{T}$ ja neula kääntyy $53^\circ$ pohjoisesta itään, kaksi merkitsevää numeroa kuten kuvasta luetuissa kentissä.
-**Järkevyys:** Magneetin kenttä on suurempi kuin Maan kenttä, joten kulman pitää olla yli $45^\circ$ mutta alle $90^\circ$. Kenttien suhde $15 : 20 : 25$ on suorakulmainen kolmio $3 : 4 : 5$, jonka kulma on noin $53^\circ$. Tarkistus: $15\,\mu\text{T} \cdot \tan 53{,}13^\circ = 20\,\mu\text{T}$.
+**Järkevyys:** Magneetin kenttä on suurempi kuin Maan kenttä, joten kulman pitää olla yli $45^\circ$ mutta alle $90^\circ$. Kenttien suhde $15 : 20 : 25$ on suorakulmainen kolmio $3 : 4 : 5$, jonka kulma on noin $53^\circ$. Tarkistus: $$
+\begin{aligned}
+&15\,\mu\text{T} \cdot \tan 53{,}13^\circ \\
+&= 20\,\mu\text{T}
+\end{aligned}
+$$.
 
 ## fy7-1-L2-09
 **Annettu:** kuva: Maan kenttä sivulta nähtynä, ruudukon ruutu $5\,\mu\text{T}$, vaaka-akseli pohjoiseen ja pystyakseli alas, nuoli $\overline{B}$ alkaa maanpinnalta
