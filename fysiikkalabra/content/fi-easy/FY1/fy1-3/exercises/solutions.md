@@ -122,7 +122,9 @@
 ## fy1-3-L1-06
 **Kysytty:** mikä tilanteista on systemaattinen virhe.
 **Periaate:** Systemaattinen virhe on joka mittauksessa suunnaltaan ja suuruudeltaan lähes sama, esimerkiksi mittarin väärä nollakohta. Satunnaisvirhe vaihtelee sattumanvaraisesti kumpaan suuntaan tahansa. Karkea virhe on yksittäinen erehdys, joka näkyy muista poikkeavana tuloksena.
-**Mallivastaus:** Systemaattinen virhe on lämpömittarin väärä nollakohta. Jäävedessä mittari näyttää joka kerralla noin $1{,}5\,{}^\circ\text{C}$ liikaa, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät poista virhettä. Vertailu tunnettuun arvoon (jäävesi on $0\,{}^\circ\text{C}$) paljastaa sen, ja lukemat korjataan vähentämällä virhe. Kellon vaihteleva pysäytyshetki ja vaihteleva katselusuunta ovat satunnaisvirheitä, joita keskiarvo pienentää. Väärin kirjattu luku $34{,}2\,\text{s}$ on karkea virhe, joka tarkistetaan ja korjataan.
+**Mallivastaus:** Systemaattinen virhe on lämpömittarin väärä nollakohta. Jäävedessä mittari näyttää joka kerralla noin $1{,}5\,{}^\circ\text{C}$ liikaa, joten kaikki lukemat siirtyvät samaan suuntaan. Toistaminen ja keskiarvo eivät poista virhettä. Vertailu tunnettuun arvoon (jäävesi on $0\,{}^\circ\text{C}$) paljastaa sen, ja lukemat korjataan vähentämällä virhe. Kellon vaihteleva pysäytyshetki ja vaihteleva katselusuunta ovat satunnaisvirheitä, joita keskiarvo pienentää.
+
+Väärin kirjattu luku $34{,}2\,\text{s}$ on karkea virhe, joka tarkistetaan ja korjataan.
 
 ## fy1-3-L1-07
 **Annettu:** $x_1 = 5{,}41\,\text{cm}$, $x_2 = 5{,}47\,\text{cm}$, $x_3 = 5{,}39\,\text{cm}$, $x_4 = 5{,}44\,\text{cm}$, $x_5 = 5{,}43\,\text{cm}$; $n = 5$
@@ -152,7 +154,9 @@
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Summa on $145{,}61\,\text{s}$, joten $\bar{t}_{10} = \dfrac{145{,}61\,\text{s}}{8} = 18{,}20125\,\text{s}$ ja $\Delta t_{10} = \dfrac{18{,}35\,\text{s} - 18{,}05\,\text{s}}{2} = 0{,}15\,\text{s}$. Siis $\bar{T} = \dfrac{18{,}20125\,\text{s}}{10} = 1{,}820125\,\text{s}$ ja $\Delta T = \dfrac{0{,}15\,\text{s}}{10} = 0{,}015\,\text{s}$.
 **Vastaus:** Virhearvio $0{,}015\,\text{s}$ on kahden numeron luku, koska ensimmäinen numero on 1. Tulos pyöristetään siksi tuhannesosiin: $T = 1{,}820\,\text{s} \pm 0{,}015\,\text{s}$.
-**Järkevyys:** Tavallinen levysoittimen nopeus on $33{,}33$ kierrosta minuutissa, jolloin yksi kierros kestää $60\,\text{s} : 33{,}33 = 1{,}800\,\text{s}$. Mitattu $1{,}820\,\text{s} \pm 0{,}015\,\text{s}$ on suuruusluokaltaan oikea, mutta $1{,}800\,\text{s}$ jää juuri sen välin ulkopuolelle. Levysoitin voi siis pyöriä hieman hitaasti, tai ajanotossa voi olla pieni systemaattinen virhe. Kymmenen kierroksen mittaus pienentää reaktioajan suhteellista osuutta: virhearvio $0{,}15\,\text{s}$ on vain noin $0{,}8\,\%$ ajasta $18{,}2\,\text{s}$.
+**Järkevyys:** Tavallinen levysoittimen nopeus on $33{,}33$ kierrosta minuutissa, jolloin yksi kierros kestää $60\,\text{s} : 33{,}33 = 1{,}800\,\text{s}$. Mitattu $1{,}820\,\text{s} \pm 0{,}015\,\text{s}$ on suuruusluokaltaan oikea, mutta $1{,}800\,\text{s}$ jää juuri sen välin ulkopuolelle. Levysoitin voi siis pyöriä hieman hitaasti, tai ajanotossa voi olla pieni systemaattinen virhe.
+
+Kymmenen kierroksen mittaus pienentää reaktioajan suhteellista osuutta: virhearvio $0{,}15\,\text{s}$ on vain noin $0{,}8\,\%$ ajasta $18{,}2\,\text{s}$.
 
 ## fy1-3-L2-06
 **Annettu:** tunnettu tilavuus $V_\text{oikea} = 50{,}0\,\text{ml}$; ryhmän A tulokset $50{,}9\,\text{ml}$, $51{,}1\,\text{ml}$, $50{,}8\,\text{ml}$, $51{,}0\,\text{ml}$, $50{,}9\,\text{ml}$ ja ryhmän B tulokset $49{,}4\,\text{ml}$, $50{,}5\,\text{ml}$, $49{,}8\,\text{ml}$, $50{,}3\,\text{ml}$, $50{,}1\,\text{ml}$
@@ -182,7 +186,9 @@
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, missä $n = 7$ jäljelle jäävää tulosta
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Tulosten summa on $$\begin{aligned} &2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} \\ &+ 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s} \\ &= 16{,}87\,\text{s} \end{aligned}$$, joten $\bar{t} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
-**Vastaus:** Tuloksen saa jättää pois, koska päiväkirjan merkintä antaa syyn ja poisjättö kirjataan. Keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Vaihteluvälin puolikas on $(2{,}44\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulos pysyisi aineistossa. Keskiarvo olisi silloin $19{,}84\,\text{s} : 8 = 2{,}48\,\text{s}$ ja vaihteluvälin puolikas $(2{,}97\,\text{s} - 2{,}38\,\text{s}) : 2 \approx 0{,}3\,\text{s}$, kymmenkertainen. Tulos ilmoitettaisiin tällä epävarmuudella, $t = 2{,}5\,\text{s} \pm 0{,}3\,\text{s}$, poikkeama mainittaisiin ja mittaus kannattaisi toistaa.
+**Vastaus:** Tuloksen saa jättää pois, koska päiväkirjan merkintä antaa syyn ja poisjättö kirjataan. Keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Vaihteluvälin puolikas on $(2{,}44\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulos pysyisi aineistossa. Keskiarvo olisi silloin $19{,}84\,\text{s} : 8 = 2{,}48\,\text{s}$ ja vaihteluvälin puolikas $(2{,}97\,\text{s} - 2{,}38\,\text{s}) : 2 \approx 0{,}3\,\text{s}$, kymmenkertainen.
+
+Tulos ilmoitettaisiin tällä epävarmuudella, $t = 2{,}5\,\text{s} \pm 0{,}3\,\text{s}$, poikkeama mainittaisiin ja mittaus kannattaisi toistaa.
 **Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo siirtyy $0{,}07\,\text{s}$ eli yli kaksi kertaa vaihteluvälin puolikkaan $0{,}03\,\text{s}$ verran. Poisjättö perustuu kirjattuun syyhyn eikä poikkeaman suuruuteen $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$. Päiväkirjan merkinnän perusteella tulos on karkea virhe.
 
 ## fy1-3-L3-05
@@ -192,14 +198,20 @@
 **Kaava:** rako on tulosten eron ja epävarmuuksien summan erotus: $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
 **Muunnokset:** Ei tarvita. Kaikki arvot ovat yksikössä $\text{g/cm}^3$.
 **Sijoitus:** $$\begin{aligned} E &= |2{,}74\,\text{g/cm}^3 - 2{,}60\,\text{g/cm}^3| \\ &- (0{,}05\,\text{g/cm}^3 + 0{,}05\,\text{g/cm}^3) \\ &= 0{,}14\,\text{g/cm}^3 - 0{,}10\,\text{g/cm}^3 \\ &= 0{,}04\,\text{g/cm}^3 \end{aligned}$$
-**Vastaus:** $0{,}04\,\text{g/cm}^3$, kaksi desimaalia kuten tuloksissa. Oppilaan virhe on arvioida sopusointua prosenttierolla. Välit $2{,}69$–$2{,}79\,\text{g/cm}^3$ ja $2{,}55$–$2{,}65\,\text{g/cm}^3$ eivät mene päällekkäin, vaan niiden väliin jää $0{,}04\,\text{g/cm}^3$. Koska annetut epävarmuusvälit eivät mene päällekkäin, mittaustulokset eivät ole sopusoinnussa näiden epävarmuusarvioiden perusteella. Epävarmuusarviot eivät kuitenkaan ole varmoja rajoja. Pelkkä välien erillisyys ei ratkaise, onko ero tilastollisesti merkitsevä. Eron syytä kannattaa etsiä esimerkiksi systemaattisesta virheestä. Ero ei silti todista kummankaan tuloksen vääräksi.
+**Vastaus:** $0{,}04\,\text{g/cm}^3$, kaksi desimaalia kuten tuloksissa. Oppilaan virhe on arvioida sopusointua prosenttierolla. Välit $2{,}69$–$2{,}79\,\text{g/cm}^3$ ja $2{,}55$–$2{,}65\,\text{g/cm}^3$ eivät mene päällekkäin, vaan niiden väliin jää $0{,}04\,\text{g/cm}^3$. Koska annetut epävarmuusvälit eivät mene päällekkäin, mittaustulokset eivät ole sopusoinnussa näiden epävarmuusarvioiden perusteella. Epävarmuusarviot eivät kuitenkaan ole varmoja rajoja.
+
+Pelkkä välien erillisyys ei ratkaise, onko ero tilastollisesti merkitsevä. Eron syytä kannattaa etsiä esimerkiksi systemaattisesta virheestä. Ero ei silti todista kummankaan tuloksen vääräksi.
 **Järkevyys:** Epävarmuudet ovat noin $2\,\%$ tuloksista, joten $5\,\%$ ero on yli kaksinkertainen niihin verrattuna. Jos B olisi $2{,}66\,\text{g/cm}^3$, välit osuisivat päällekkäin, vaikka tulokset eroavat vielä $0{,}08\,\text{g/cm}^3$.
 
 ## fy1-3-L2-08
 **Annettu:** kevyt kuula: $14{,}3\,\text{s}$, $14{,}1\,\text{s}$, $14{,}4\,\text{s}$, $14{,}2\,\text{s}$, $14{,}5\,\text{s}$. Raskas kuula: $14{,}4\,\text{s}$, $14{,}2\,\text{s}$, $14{,}5\,\text{s}$, $14{,}3\,\text{s}$, $14{,}4\,\text{s}$. Käsin otetun ajan epävarmuus on $\Delta t = 0{,}2\,\text{s}$ jokaiselle tulokselle.
 **Kysytty:** minkä päätelmän aineisto tukee, kun keskiarvojen eroa verrataan epävarmuuteen $\Delta t$
 **Periaate:** Kahden keskiarvon eroa verrataan epävarmuuteen. Jos ero on pienempi kuin epävarmuus, mittaus ei osoita eroa. Se ei kuitenkaan todista, että suureet ovat yhtä suuret. Tulosta ei myöskään saa ilmoittaa tarkemmin kuin epävarmuus sallii.
-**Mallivastaus:** Laskimen antamat keskiarvot ovat $\bar{t}_\text{kevyt} = \dfrac{71{,}5\,\text{s}}{5} = 14{,}30\,\text{s}$ ja $\bar{t}_\text{raskas} = \dfrac{71{,}8\,\text{s}}{5} = 14{,}36\,\text{s}$. Ero on siis $14{,}36\,\text{s} - 14{,}30\,\text{s} = 0{,}06\,\text{s}$. Tämä on kolmasosa epävarmuudesta $0{,}2\,\text{s}$. Se on myös pienempi kuin kummankin sarjan vaihteluvälin puolikas ($0{,}2\,\text{s}$ ja $0{,}15\,\text{s}$). Siksi ero voi olla pelkkää satunnaisvaihtelua. Oikea päätelmä on, että aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan. Väite ”raskas heilahtaa hitaammin” ylittää aineiston, koska se pitää epävarmuuden sisällä olevaa eroa todellisena. Väite ”massa ei vaikuta” menee liian pitkälle, koska mittaus ei kykene erottamaan edes pientä todellista eroa. Kymmenen heilahduksen aika $14{,}300\,\text{s}$ on liian tarkka. Epävarmuus $0{,}2\,\text{s}$ sallii vain kymmenesosasekunnin tarkkuuden, esimerkiksi kymmenen heilahduksen aika $14{,}3\,\text{s} \pm 0{,}2\,\text{s}$ (yhden heilahduksen aika on noin $1{,}43\,\text{s} \pm 0{,}02\,\text{s}$). Eron havaitsemiseksi tarvittaisiin tarkempi ajanotto, esimerkiksi valokenno, tai pitempi mitattu aika.
+**Mallivastaus:** Laskimen antamat keskiarvot ovat $\bar{t}_\text{kevyt} = \dfrac{71{,}5\,\text{s}}{5} = 14{,}30\,\text{s}$ ja $\bar{t}_\text{raskas} = \dfrac{71{,}8\,\text{s}}{5} = 14{,}36\,\text{s}$. Ero on siis $14{,}36\,\text{s} - 14{,}30\,\text{s} = 0{,}06\,\text{s}$. Tämä on kolmasosa epävarmuudesta $0{,}2\,\text{s}$. Se on myös pienempi kuin kummankin sarjan vaihteluvälin puolikas ($0{,}2\,\text{s}$ ja $0{,}15\,\text{s}$). Siksi ero voi olla pelkkää satunnaisvaihtelua. Oikea päätelmä on, että aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan.
+
+Väite ”raskas heilahtaa hitaammin” ylittää aineiston, koska se pitää epävarmuuden sisällä olevaa eroa todellisena. Väite ”massa ei vaikuta” menee liian pitkälle, koska mittaus ei kykene erottamaan edes pientä todellista eroa. Kymmenen heilahduksen aika $14{,}300\,\text{s}$ on liian tarkka.
+
+Epävarmuus $0{,}2\,\text{s}$ sallii vain kymmenesosasekunnin tarkkuuden, esimerkiksi kymmenen heilahduksen aika $14{,}3\,\text{s} \pm 0{,}2\,\text{s}$ (yhden heilahduksen aika on noin $1{,}43\,\text{s} \pm 0{,}02\,\text{s}$). Eron havaitsemiseksi tarvittaisiin tarkempi ajanotto, esimerkiksi valokenno, tai pitempi mitattu aika.
 
 ## fy1-3-L1-09
 **Annettu:** mittaukset $1{,}004$; $1{,}012$; $1{,}008$; $1{,}014$; $1{,}012$ (yksikössä $\text{g/cm}^3$); taulukosta (MAFY-taulukko, veden tiheys eri lämpötiloissa) $\rho_\text{taulukko} = 0{,}998206\,\text{g/cm}^3$ lämpötilassa $20\,{}^\circ\text{C}$
@@ -220,7 +232,9 @@ Lisäksi: virhearvio on $$\begin{aligned} \Delta x &= \tfrac{1{,}014 - 1{,}004}{
 
 **Periaate:** Nopeus saadaan mittaamalla matka ja kulkuaika. Jos neutriinot saapuvat aikaisemmin kuin valo ehtisi, niiden nopeus olisi suurempi kuin $c$. Poikkeaman merkitys arvioidaan suhteuttamalla se koko kulkuaikaan ja mittausten epävarmuuksiin.
 
-**Mallivastaus a):** Tutkijat mittasivat neutriinojen kulkuajan CERNistä Gran Sasson laboratorioon. Matka mitattiin $20\,\text{cm}$:n epävarmuudella ja aika alle $10\,\text{ns}$:n tarkkuudella GPS-järjestelmien ja atomikellojen avulla. Neutriinot näyttivät saapuvan noin $60\,\text{ns}$ aikaisemmin kuin valo olisi ehtinyt. Tulos oli yllättävä, koska Einsteinin suhteellisuusteorian mukaan mikään ei kulje valoa nopeammin, eikä lukuisissa aiemmissa kokeissa ollut löytynyt poikkeamia teoriasta.
+**Mallivastaus a):** Tutkijat mittasivat neutriinojen kulkuajan CERNistä Gran Sasson laboratorioon. Matka mitattiin $20\,\text{cm}$:n epävarmuudella ja aika alle $10\,\text{ns}$:n tarkkuudella GPS-järjestelmien ja atomikellojen avulla. Neutriinot näyttivät saapuvan noin $60\,\text{ns}$ aikaisemmin kuin valo olisi ehtinyt.
+
+Tulos oli yllättävä, koska Einsteinin suhteellisuusteorian mukaan mikään ei kulje valoa nopeammin, eikä lukuisissa aiemmissa kokeissa ollut löytynyt poikkeamia teoriasta.
 
 **Kaava:** Tasaisessa liikkeessä $s = ct$, joten $t = \dfrac{s}{c}$; suhteellinen poikkeama $\dfrac{\Delta t}{t}$ ja valon kulkema matka $\Delta s = c\,\Delta t$
 
@@ -250,13 +264,19 @@ $$\begin{aligned}
 &\approx 18\,\text{m}
 \end{aligned}$$
 
-**Mallivastaus b):** Valolta kuluu matkaan noin $2{,}4\,\text{ms}$, ja poikkeama on siitä vain noin $0{,}0025\,\%$ eli noin $25$ miljoonasosaa. CERNin tiedote pyöristää saman tuloksen muotoon ”$20$ miljoonasosaa”. Poikkeama vastaa $18\,\text{m}$:n matkaa, mikä on lähes sata kertaa matkan epävarmuus $20\,\text{cm}$. Matkan mittaus ei siis voinut selittää tulosta, joten virhettä kannatti etsiä ajan mittauksesta.
+**Mallivastaus b):** Valolta kuluu matkaan noin $2{,}4\,\text{ms}$, ja poikkeama on siitä vain noin $0{,}0025\,\%$ eli noin $25$ miljoonasosaa. CERNin tiedote pyöristää saman tuloksen muotoon ”$20$ miljoonasosaa”. Poikkeama vastaa $18\,\text{m}$:n matkaa, mikä on lähes sata kertaa matkan epävarmuus $20\,\text{cm}$.
 
-**Mallivastaus c):** Tutkijat löysivät mittausjärjestelmästä kaksi mahdollista virhelähdettä: GPS-synkronoinnin oskillaattorin ja valokuituliittimen, joka tuo GPS-signaalin kokeen pääkelloon. Myöhemmin alkuperäinen tulos selittyi viallisella osalla kokeen valokuituun perustuvassa ajoitusjärjestelmässä. Riippumaton ICARUS-koe mittasi neutriinojen kulkuajan sopivaksi valon nopeuteen, ja seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen.
+Matkan mittaus ei siis voinut selittää tulosta, joten virhettä kannatti etsiä ajan mittauksesta.
+
+**Mallivastaus c):** Tutkijat löysivät mittausjärjestelmästä kaksi mahdollista virhelähdettä: GPS-synkronoinnin oskillaattorin ja valokuituliittimen, joka tuo GPS-signaalin kokeen pääkelloon. Myöhemmin alkuperäinen tulos selittyi viallisella osalla kokeen valokuituun perustuvassa ajoitusjärjestelmässä.
+
+Riippumaton ICARUS-koe mittasi neutriinojen kulkuajan sopivaksi valon nopeuteen, ja seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen.
 
 Virhe oli systemaattinen. Viallinen ajoitusjärjestelmä siirsi jokaista mittausta samaan suuntaan. Siksi tulos pysyi samana, vaikka havaittuja neutriinoja oli yli $15\,000$. Satunnaisvirhe pienenee, kun mittauksia on paljon, mutta systemaattinen virhe ei pienene toistamalla mittausta samalla laitteistolla. Siksi tarvittiin riippumattomia mittauksia eri laitteistoilla.
 
-**Mallivastaus d):** Suhteellisuusteoriaa on testattu lukuisissa kokeissa, eikä poikkeamia ole löytynyt. Kun yksi mittaus on ristiriidassa niiden kaikkien kanssa, todennäköisempää on, että mittauksessa on huomaamaton systemaattinen virhe, kuin että kaikki aiemmat tulokset olisivat vääriä. Arkinen esimerkki: jos lämpömittari näyttää kiehuvan veden lämpötilaksi normaalipaineessa $80\,{}^\circ\text{C}$, epäilemme ensin mittaria emmekä veden kiehumispistettä. Poikkeava tulos voi kuitenkin olla merkki uudesta fysiikasta, joten sitä ei hylätä vaan se tarkistetaan. Teoria muuttuisi vasta, jos riippumattomat kokeet toistaisivat tuloksen. OPERA toimi oikein, kun se julkaisi tuloksen muiden arvioitavaksi.
+**Mallivastaus d):** Suhteellisuusteoriaa on testattu lukuisissa kokeissa, eikä poikkeamia ole löytynyt. Kun yksi mittaus on ristiriidassa niiden kaikkien kanssa, todennäköisempää on, että mittauksessa on huomaamaton systemaattinen virhe, kuin että kaikki aiemmat tulokset olisivat vääriä. Arkinen esimerkki: jos lämpömittari näyttää kiehuvan veden lämpötilaksi normaalipaineessa $80\,{}^\circ\text{C}$, epäilemme ensin mittaria emmekä veden kiehumispistettä.
+
+Poikkeava tulos voi kuitenkin olla merkki uudesta fysiikasta, joten sitä ei hylätä vaan se tarkistetaan. Teoria muuttuisi vasta, jos riippumattomat kokeet toistaisivat tuloksen. OPERA toimi oikein, kun se julkaisi tuloksen muiden arvioitavaksi.
 
 **Vastaus:** Suhteellinen poikkeama on $\dfrac{\Delta t}{t} \approx 0{,}0025\,\%$ eli $2{,}5\cdot10^{-5}$ (laskettu arvo $0{,}00246\,\%$), kaksi merkitsevää numeroa, koska poikkeama $60\,\text{ns}$ on annettu kahden numeron tarkkuudella.
 

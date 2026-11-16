@@ -364,7 +364,15 @@ Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018 etäisyydellä $s_0 =
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$ ja $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$. Aikaväli 5. marraskuuta 2018 – 5. marraskuuta 2026 on 8 vuotta, joissa on karkauspäivät 2020 ja 2024: $8 \cdot 365 + 2 = 2922$ vuorokautta. Kysytään etäisyyttä $s$ Auringosta.
+**Tunnetut ja kysytty.**
+
+- $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018),
+- $v = 15{,}341\,\text{km/s}$ ja
+- $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$.
+
+Aikaväli 5. marraskuuta 2018 – 5. marraskuuta 2026 on 8 vuotta, joissa on karkauspäivät 2020 ja 2024: $8 \cdot 365 + 2 = 2922$ vuorokautta.
+
+Kysytään etäisyyttä $s$ Auringosta.
 
 <!-- vaihe -->
 
@@ -400,7 +408,13 @@ s &= s_0 + v t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. Sama malli antaa 15. helmikuuta 2026 etäisyydeksi Auringosta $142{,}6\,\text{AU}$. NASA/JPL:n Voyager-tilannesivu ilmoitti helmikuussa 2026 luotaimen etäisyydeksi Maasta $143{,}05\,\text{AU}$. Maa kiertää Aurinkoa, joten luotaimen etäisyys Maasta poikkeaa sen etäisyydestä Auringosta vuoden mittaan jopa noin $1\,\text{AU}$. Ero $0{,}5\,\text{AU}$ on tätä pienempi: malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella, ja tarkemmin tämä vertailu ei mallia testaa. Se on alle prosentti etäisyydestä, joten vakionopeusmalli sopii muutaman vuoden ennusteisiin.
+**Järkevyys.** Nopeus $15\,\text{km/s}$ vie vuodessa noin $15\,\text{km/s} \cdot 3{,}16 \cdot 10^{7}\,\text{s} \approx 4{,}7 \cdot 10^{8}\,\text{km} \approx 3{,}2\,\text{AU}$, joten 8 vuodessa luotain etenee noin $26\,\text{AU}$ ja $119{,}0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$.
+
+Sama malli antaa 15. helmikuuta 2026 etäisyydeksi Auringosta $142{,}6\,\text{AU}$. NASA/JPL:n Voyager-tilannesivu ilmoitti helmikuussa 2026 luotaimen etäisyydeksi Maasta $143{,}05\,\text{AU}$.
+
+Maa kiertää Aurinkoa, joten luotaimen etäisyys Maasta poikkeaa sen etäisyydestä Auringosta vuoden mittaan jopa noin $1\,\text{AU}$.
+
+Ero $0{,}5\,\text{AU}$ on tätä pienempi: malli ja havainto täsmäävät noin $1\,\text{AU}$:n tarkkuudella, ja tarkemmin tämä vertailu ei mallia testaa. Se on alle prosentti etäisyydestä, joten vakionopeusmalli sopii muutaman vuoden ennusteisiin.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että tasaisessa liikkeessä paikka kaksinkertaistuu, kun aika kaksinkertaistuu. Näin käy vain, jos liike alkaa nollakohdasta. Kun kärry on alussa kohdassa $s_0 = 6\,\text{m}$ ja etenee nopeudella $2{,}0\,\text{m/s}$, se on hetkellä $2{,}0\,\text{s}$ paikassa $10\,\text{m}$ ja hetkellä $4{,}0\,\text{s}$ paikassa $14\,\text{m}$, ei $20\,\text{m}$:ssä. Matka sen sijaan kaksinkertaistuu: $4{,}0\,\text{m}$ muuttuu $8{,}0\,\text{m}$:ksi. Toinen virhe on laskea nopeus paikan ja ajan osamääränä $s : t$ eikä paikan muutoksen ja aikavälin osamääränä: nopeus on $\Delta s : \Delta t$, ei $s : t$, kun $s_0 \neq 0$.

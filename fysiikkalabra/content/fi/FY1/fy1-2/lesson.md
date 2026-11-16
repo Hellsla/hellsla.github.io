@@ -536,7 +536,13 @@ Neptunuksen etäisyys Auringosta on keskimäärin $30{,}1\,\text{AU}$. Kuinka mo
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Etäisyys $s = 30{,}1\,\text{AU}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$ ja valon nopeus $c = 2{,}998\cdot10^{5}\,\text{km/s}$. Kysytään etäisyyttä $s$ kilometreinä ja kulkuaikaa $t$ tunteina.
+**Tunnetut ja kysytty.**
+
+- Etäisyys $s = 30{,}1\,\text{AU}$,
+- $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$ ja
+- valon nopeus $c = 2{,}998\cdot10^{5}\,\text{km/s}$.
+
+Kysytään etäisyyttä $s$ kilometreinä ja kulkuaikaa $t$ tunteina.
 
 <!-- vaihe -->
 

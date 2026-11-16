@@ -536,7 +536,13 @@ Neptune's mean distance from the Sun is $30.1\,\text{AU}$. How many kilometres i
 
 <!-- vaihe -->
 
-**Given and unknown.** The distance is $s = 30.1\,\text{AU}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$ and the speed of light is $c = 2.998\cdot10^{5}\,\text{km/s}$. We want the distance $s$ in kilometres and the travel time $t$ in hours.
+**Given and unknown.**
+
+- The distance is $s = 30.1\,\text{AU}$,
+- $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$ and
+- the speed of light is $c = 2.998\cdot10^{5}\,\text{km/s}$.
+
+We want the distance $s$ in kilometres and the travel time $t$ in hours.
 
 <!-- vaihe -->
 

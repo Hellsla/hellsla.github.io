@@ -72,7 +72,11 @@
 **Given:** mass of the object $m = 89.0\,\text{g}$; a figure of the measuring cylinder before and after the object is lowered in
 **Find:** the density $\rho$ of the substance of the object in $\text{kg/m}^3$
 **Principle:** A submerged object displaces its own volume of water, so the volume of the object is the difference of the water readings. Density is mass per unit of volume.
-**Reading the graph:** The numbers on the scale are at $20\,\text{ml}$ intervals, the long marks are at $10\,\text{ml}$ intervals and the small marks at $2\,\text{ml}$ intervals. Before the object is lowered in, the water reaches the mark $V_1 = 40\,\text{ml}$. After that, the water reaches the long mark halfway between the numbers $40$ and $60$, $V_2 = 50\,\text{ml}$. An answer is accepted if it deviates by at most $3\,\%$.
+**Reading the graph:** The numbers on the scale are at $20\,\text{ml}$ intervals, the long marks are at $10\,\text{ml}$ intervals and the small marks at $2\,\text{ml}$ intervals. Before the object is lowered in, the water reaches the mark $V_1 = 40\,\text{ml}$.
+
+After that, the water reaches the long mark halfway between the numbers $40$ and $60$, $V_2 = 50\,\text{ml}$.
+
+An answer is accepted if it deviates by at most $3\,\%$.
 **Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
 **Conversions:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 10 \cdot 10^{-6}\,\text{m}^3 = 1.0 \cdot 10^{-5}\,\text{m}^3$ and $89.0\,\text{g} = 89.0 \cdot 10^{-3}\,\text{kg} = 0.0890\,\text{kg}$.
 **Substitution:** $\rho = \dfrac{0.0890\,\text{kg}}{1.0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -131,7 +135,11 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L1-07
 **Find:** what happens when cooking oil is poured into water, when the density of the oil is $920\,\text{kg/m}^3$ and that of water is $1000\,\text{kg/m}^3$.
 **Principle:** Density tells how much mass there is per unit of volume. A liquid with a smaller density is lighter in the same volume, and it settles on top of a liquid with a greater density.
-**Model answer:** The density of the oil, $920\,\text{kg/m}^3$, is smaller than the density of water, $1000\,\text{kg/m}^3$, so the oil stays on top of the water as a layer of its own. The same is shown by the fact that the density of the oil is $0.92$ times the density of water: a cubic metre of oil has a mass of $920\,\text{kg}$ and a cubic metre of water $1000\,\text{kg}$. The oil does not mix with the water, so the density decides which liquid is on top; the thickness or the amount of the liquid does not matter.
+**Model answer:** The density of the oil, $920\,\text{kg/m}^3$, is smaller than the density of water, $1000\,\text{kg/m}^3$, so the oil stays on top of the water as a layer of its own.
+
+The same is shown by the fact that the density of the oil is $0.92$ times the density of water: a cubic metre of oil has a mass of $920\,\text{kg}$ and a cubic metre of water $1000\,\text{kg}$.
+
+The oil does not mix with the water, so the density decides which liquid is on top; the thickness or the amount of the liquid does not matter.
 
 ## fy1-7-L1-08
 **Given:** volume of the lead sinker $V = 5.00\,\text{cm}^3$ and density of lead $\rho = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -146,7 +154,9 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 ## fy1-7-L2-05
 **Given:** the measurement points $(V;\ m)$ in the table: $(10.0\,\text{cm}^3;\ 27.3\,\text{g})$, $(20.0\,\text{cm}^3;\ 53.5\,\text{g})$, $(30.0\,\text{cm}^3;\ 81.6\,\text{g})$, $(40.0\,\text{cm}^3;\ 107.9\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135.4\,\text{g})$
 **Find:** the density $\rho$ of the substance in $\text{g/cm}^3$ and the name of the substance
-**Principle:** The mass of a given substance is directly proportional to volume, $m = \rho V$, so the points lie, within the measurement uncertainty, on a straight line through the origin, and the slope of the line is the density. The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
+**Principle:** The mass of a given substance is directly proportional to volume, $m = \rho V$, so the points lie, within the measurement uncertainty, on a straight line through the origin, and the slope of the line is the density.
+
+The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 0\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135\,\text{g})$. The points are read from the line and chosen far apart.
 **Formula:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
 **Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, like the requested unit $\text{g/cm}^3$.
@@ -162,7 +172,11 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Formula:** $\rho = \dfrac{\Delta m_\text{tot}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ and $m_0 = m_1 - \rho V_1$
 **Conversions:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Substitution:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0.92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ and $m_0 = 85\,\text{g}$ (where the line crosses the vertical axis)
-**Answer:** the density of the liquid is $9.2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye. The mass of the empty measuring cylinder is about $85\,\text{g}$. The line does not pass through the origin, because the balance also shows the mass of the empty measuring cylinder: when there is no liquid, $V = 0$, the balance still shows $m_0$.
+**Answer:** the density of the liquid is $9.2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye.
+
+The mass of the empty measuring cylinder is about $85\,\text{g}$.
+
+The line does not pass through the origin, because the balance also shows the mass of the empty measuring cylinder: when there is no liquid, $V = 0$, the balance still shows $m_0$.
 **Reasonableness:** The density $920\,\tfrac{\text{kg}}{\text{m}^3}$ is the same as the density of cooking oil or ice in the table, so the liquid may be cooking oil. Check at the point $V = 60\,\text{cm}^3$: $85\,\text{g}\,{+}\,0.92 \cdot 60\,\text{g} = 140\,\text{g}$, measured $140.5\,\text{g}$.
 
 ## fy1-7-L2-07
@@ -172,7 +186,9 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
 **Conversions:** $V = 72\,\text{ml} - 60\,\text{ml} = 12\,\text{ml} = 12\,\text{cm}^3$, because $1\,\text{ml} = 1\,\text{cm}^3$.
 **Substitution:** $\rho = \dfrac{107\,\text{g}}{12\,\text{cm}^3} = 8.92\,\tfrac{\text{g}}{\text{cm}^3}$
-**Answer:** The student divided the mass by the reading $72\,\text{ml}$ after the object was lowered in, not by the difference of the readings, so the volume was six times too large and the density too small. The correct density is $8.9\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the volume $12\,\text{ml}$ is a two-figure number. In the table the density of copper is $8.96\,\tfrac{\text{g}}{\text{cm}^3}$, so the object may be copper, not plastic.
+**Answer:** The student divided the mass by the reading $72\,\text{ml}$ after the object was lowered in, not by the difference of the readings, so the volume was six times too large and the density too small. The correct density is $8.9\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the volume $12\,\text{ml}$ is a two-figure number.
+
+In the table the density of copper is $8.96\,\tfrac{\text{g}}{\text{cm}^3}$, so the object may be copper, not plastic.
 **Reasonableness:** The result $8.9\,\tfrac{\text{g}}{\text{cm}^3}$ is over eight times the density of water, which fits a metal. The difference of the readings is smaller than either reading, so the difference has relatively more uncertainty: if the error of each reading is $1\,\text{ml}$, the volume is $12 \pm 2\,\text{ml}$ and the density can be about $7.6\text{–}10.7\,\tfrac{\text{g}}{\text{cm}^3}$.
 
 ## fy1-7-L3-04
@@ -182,7 +198,13 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Formula:** $V' = V_2 - V_1$, $V = V' - V_\text{b}$, $\rho = \dfrac{m}{V}$ and $\rho' = \dfrac{m}{V'}$; the percentage error is $\dfrac{\rho' - \rho}{\rho} \cdot 100\,\%$
 **Conversions:** $1\,\text{ml} = 1\,\text{cm}^3$, so $V' = 12.0\,\text{cm}^3$ and $V_\text{b} = 2.0\,\text{cm}^3$.
 **Substitution:** $V' = 62.0\,\text{ml} - 50.0\,\text{ml} = 12.0\,\text{ml}$ and $V = 12.0\,\text{cm}^3 - 2.0\,\text{cm}^3 = 10.0\,\text{cm}^3$. The true density is $\rho = \dfrac{113\,\text{g}}{10.0\,\text{cm}^3} = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$ and the student’s result is $\rho' = \dfrac{113\,\text{g}}{12.0\,\text{cm}^3} = 9.42\,\tfrac{\text{g}}{\text{cm}^3}$. The error is $\dfrac{9.42 - 11.3}{11.3} \cdot 100\,\% = -16.7\,\%$.
-**Answer:** The true density is $11.3\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures, because the mass and the readings are given to three figures. The student’s result $9.42\,\tfrac{\text{g}}{\text{cm}^3}$ is about $17\,\%$ too small, because the measured volume was too large. The true density matches lead ($11.3\,\tfrac{\text{g}}{\text{cm}^3}$), but the erroneous result is closer to copper ($8.96\,\tfrac{\text{g}}{\text{cm}^3}$), so the bubble can lead to the wrong metal. The bubble can be removed by tapping the object, and it can be noticed by looking at the cylinder from the side.
+**Answer:** The true density is $11.3\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures, because the mass and the readings are given to three figures.
+
+The student’s result $9.42\,\tfrac{\text{g}}{\text{cm}^3}$ is about $17\,\%$ too small, because the measured volume was too large.
+
+The true density matches lead ($11.3\,\tfrac{\text{g}}{\text{cm}^3}$), but the erroneous result is closer to copper ($8.96\,\tfrac{\text{g}}{\text{cm}^3}$), so the bubble can lead to the wrong metal.
+
+The bubble can be removed by tapping the object, and it can be noticed by looking at the cylinder from the side.
 **Reasonableness:** The mass is correct and the volume too large, so the density has to come out too small, and it did: $9.42 < 11.3$. Check: $0.83 \cdot 11.3 \approx 9.4$.
 
 ## fy1-7-L3-05
@@ -193,14 +215,24 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Conversions:** Not needed: the masses are in grams, the volumes in cubic centimetres and the densities in $\text{g/cm}^3$.
 **Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
 **Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures. The volume $100\,\text{cm}^3$ and the mass $520\,\text{g}$ are exact values, so they do not limit the precision. The volume of aluminium is $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39.9\,\text{cm}^3 \\ &= 60.1\,\text{cm}^3 \end{aligned}$$.
-**Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$. The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$. There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great. Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.
+**Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$.
+
+The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$.
+
+There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great.
+
+Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
 **Given:** object A: $m_\text{A} = 135\,\text{g}$, $V_\text{A} = 50\,\text{cm}^3$; object B: $m_\text{B} = 0.36\,\text{kg}$, $V_\text{B} = 0.40\,\text{dm}^3$; object C: $m_\text{C} = 4.5\,\text{kg}$, $V_\text{C} = 500\,\text{cm}^3$; object D: $m_\text{D} = 120\,\text{g}$, $V_\text{D} = 100\,\text{ml}$
 
 **Find:** the order of the objects by density $\rho$ from smallest to largest
 
-**Principle:** Density is mass per volume, $\rho = \dfrac{m}{V}$, so objects can be compared only when all of them are in the same unit. The heaviest object is not necessarily the densest, because density also depends on the volume. Let us convert everything to $\text{g/cm}^3$ and calculate the density of each. The order is found by calculation; the substances do not need to be guessed.
+**Principle:** Density is mass per volume, $\rho = \dfrac{m}{V}$, so objects can be compared only when all of them are in the same unit.
+
+The heaviest object is not necessarily the densest, because density also depends on the volume.
+
+Let us convert everything to $\text{g/cm}^3$ and calculate the density of each. The order is found by calculation; the substances do not need to be guessed.
 
 **Model answer:** Conversions:
 
@@ -258,7 +290,13 @@ Object B would float in water and the others would sink. The order by mass would
 
 **Reading the graph:** The diameter $d$ in kilometres goes on the horizontal axis and the mean density $\rho$ in $\text{kg/m}^3$ on the vertical axis. The points are not joined, because they are different planets, not successive measurements of one quantity.
 
-**Model answer b):** The points fall into two groups. The small rocky planets ($d < 13\,000\,\text{km}$) are dense, $\rho \approx 3900$–$5500\,\text{kg/m}^3$. The giant planets ($d > 49\,000\,\text{km}$) are much less dense, $\rho \approx 690$–$1640\,\text{kg/m}^3$. The graph has no single rising or falling curve on which the points lie. Even within the groups the order does not follow size: Mercury is the smallest planet but almost as dense as the Earth, and the smallest giant, Neptune, is the densest giant.
+**Model answer b):** The points fall into two groups. The small rocky planets ($d < 13\,000\,\text{km}$) are dense, $\rho \approx 3900$–$5500\,\text{kg/m}^3$.
+
+The giant planets ($d > 49\,000\,\text{km}$) are much less dense, $\rho \approx 690$–$1640\,\text{kg/m}^3$.
+
+The graph has no single rising or falling curve on which the points lie.
+
+Even within the groups the order does not follow size: Mercury is the smallest planet but almost as dense as the Earth, and the smallest giant, Neptune, is the densest giant.
 
 **Formula:** $V = \dfrac{\pi d^3}{6}$, so $\rho = \dfrac{m}{V} = \dfrac{6m}{\pi d^3}$
 
@@ -280,9 +318,31 @@ $$\begin{aligned}
 &\approx 619\,\text{kg/m}^3
 \end{aligned}$$
 
-**Model answer c):** The Earth's calculated mean density differs from NASA's value $5514\,\text{kg/m}^3$ by only about $0.4\,\%$. Saturn's calculated value is about $10\,\%$ smaller than NASA's $687\,\text{kg/m}^3$. The difference comes from the model, not from a mistake in the calculation. Saturn turns once about its axis in about $11$ hours, and a fast-spinning ball of gas is flattened: from pole to pole it is clearly narrower than across the equator. A sphere calculated from the equatorial diameter is therefore too large, and when the volume is too large, the calculated density is too small. NASA divides the mass by the planet's true volume. The Earth is also slightly flattened by its rotation, but much less than Saturn, because it spins more slowly. The Earth's small difference comes mostly from this flattening.
+**Model answer c):** The Earth's calculated mean density differs from NASA's value $5514\,\text{kg/m}^3$ by only about $0.4\,\%$.
 
-**Model answer d):** The claim is wrong. The four largest planets are the least dense in the data, and the largest planet, Jupiter, is about four times less dense than the Earth. The claim fails within the groups too: Saturn is larger than Neptune but has only about half its density, and small Mercury is denser than the larger Mars. Density depends above all on what the planet is made of. The rocky planets are rock and metal, the giants mostly light substances such as hydrogen and helium. Size does not tell us the density. Data on eight planets would also not be enough for a general law, even if it showed some trend.
+Saturn's calculated value is about $10\,\%$ smaller than NASA's $687\,\text{kg/m}^3$.
+
+The difference comes from the model, not from a mistake in the calculation.
+
+Saturn turns once about its axis in about $11$ hours, and a fast-spinning ball of gas is flattened: from pole to pole it is clearly narrower than across the equator.
+
+A sphere calculated from the equatorial diameter is therefore too large, and when the volume is too large, the calculated density is too small.
+
+NASA divides the mass by the planet's true volume.
+
+The Earth is also slightly flattened by its rotation, but much less than Saturn, because it spins more slowly. The Earth's small difference comes mostly from this flattening.
+
+**Model answer d):** The claim is wrong.
+
+The four largest planets are the least dense in the data, and the largest planet, Jupiter, is about four times less dense than the Earth.
+
+The claim fails within the groups too: Saturn is larger than Neptune but has only about half its density, and small Mercury is denser than the larger Mars.
+
+Density depends above all on what the planet is made of. The rocky planets are rock and metal, the giants mostly light substances such as hydrogen and helium.
+
+Size does not tell us the density.
+
+Data on eight planets would also not be enough for a general law, even if it showed some trend.
 
 **Answer:** The Earth's mean density is $\rho_\text{Earth} \approx 5.49\cdot10^{3}\,\text{kg/m}^3$, three significant figures like the mass $5.97\cdot10^{24}\,\text{kg}$. Saturn's mean density is $619\,\text{kg/m}^3$.
 
@@ -305,9 +365,17 @@ A check point not used for the model: at the volume $V_\text{pred} = 9.26\,\text
 
 **Principle:** For objects of one substance the mass is directly proportional to the volume, $m = \rho V$. The points of the mass–volume graph then lie on a line through the origin whose slope is the density of the substance.
 
-**Model answer a):** The mass is read in the field Mass of the control panel and the volume in the field Volume. The water level reading of the pool is not used, because a floating block is not entirely under water, and then the rise of the water level is not the block's volume. Aluminium sinks, so for it the rise of the water level would equal the volume of the block.
+**Model answer a):** The mass is read in the field Mass of the control panel and the volume in the field Volume.
 
-**Reading the graph:** The volume $V$ in litres goes on the horizontal axis and the mass $m$ in kilograms on the vertical axis, both axes starting from zero. The points lie on a line through the origin. The slope is read from two points of the line far apart, for example the origin and the point $(7.41\,\textsf{l};\ 20.00\,\text{kg})$, or it is given by a fit: $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$.
+The water level reading of the pool is not used, because a floating block is not entirely under water, and then the rise of the water level is not the block's volume.
+
+Aluminium sinks, so for it the rise of the water level would equal the volume of the block.
+
+**Reading the graph:** The volume $V$ in litres goes on the horizontal axis and the mass $m$ in kilograms on the vertical axis, both axes starting from zero.
+
+The points lie on a line through the origin.
+
+The slope is read from two points of the line far apart, for example the origin and the point $(7.41\,\textsf{l};\ 20.00\,\text{kg})$, or it is given by a fit: $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$.
 
 **Model answer b):** The model is $m = kV$ with $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$. The slope is the density of aluminium, $\rho = k$. The ratios $\dfrac{m}{V}$ are the same on every row to three figures, so the density does not depend on the size of the block. The small variation in the fourth figure comes from rounding the volume reading to $0.01\,\textsf{l}$.
 
@@ -331,7 +399,15 @@ m_\text{pred} &= \rho V_\text{pred} \\
 
 **Model answer c):** The simulation showed the mass $25.00\,\text{kg}$, so the prediction was right to three significant figures. The model works outside the measured range too, because the ratio of mass to volume is a constant characteristic of the substance.
 
-**Model answer d):** No. On the scale of the density meter glass (Glass) is at the same place as aluminium, $2.70\,\tfrac{\text{kg}}{\textsf{l}}$, so these two substances have the same density in the simulation. Density tells which substances are possible, but not always unambiguously which substance it is. In a real measurement the density also has an uncertainty, and several substances may fit inside it. A hollow object or a mixture of two substances can also have the same mean density as some pure substance. A reliable identification needs other properties, such as colour, transparency, hardness or electrical conductivity.
+**Model answer d):** No. On the scale of the density meter glass (Glass) is at the same place as aluminium, $2.70\,\tfrac{\text{kg}}{\textsf{l}}$, so these two substances have the same density in the simulation.
+
+Density tells which substances are possible, but not always unambiguously which substance it is.
+
+In a real measurement the density also has an uncertainty, and several substances may fit inside it.
+
+A hollow object or a mixture of two substances can also have the same mean density as some pure substance.
+
+A reliable identification needs other properties, such as colour, transparency, hardness or electrical conductivity.
 
 **Answer:** The density of aluminium is $\rho \approx 2.70\cdot10^{3}\,\text{kg/m}^3$, three significant figures like the volume readings.
 

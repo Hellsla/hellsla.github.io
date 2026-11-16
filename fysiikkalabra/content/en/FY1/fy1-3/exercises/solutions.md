@@ -16,13 +16,19 @@
 **Conversions:** Both lengths are in centimetres, so no conversions are needed.
 **Substitution:** $x - x_\text{true} = 20.3\,\text{cm} - 20.0\,\text{cm} = +0.3\,\text{cm}$
 **Answer:** $+0.3\,\text{cm}$, that is, the result is too large. The difference is known only to one decimal place, because both lengths are given with one decimal place.
-**Reasonableness:** The result $20.3\,\text{cm}$ is larger than the true value $20.0\,\text{cm}$, so the error must be positive. Relative to the length the error is $\dfrac{0.3\,\text{cm}}{20.0\,\text{cm}} \approx 1.5\,\%$, which is a large error for a tape measure (a tape is usually accurate to about a millimetre), so the cause is probably systematic, for example a worn start of the tape or a wrong zero.
+**Reasonableness:** The result $20.3\,\text{cm}$ is larger than the true value $20.0\,\text{cm}$, so the error must be positive.
+
+Relative to the length the error is $\dfrac{0.3\,\text{cm}}{20.0\,\text{cm}} \approx 1.5\,\%$, which is a large error for a tape measure (a tape is usually accurate to about a millimetre), so the cause is probably systematic, for example a worn start of the tape or a wrong zero.
 
 ## fy1-3-L1-03
 **Given:** the five results of the figure on the time axis; the smallest result $t_\text{min} = 12.2\,\text{s}$ and the largest $t_\text{max} = 12.9\,\text{s}$
 **Find:** half of the range $\Delta t$ in the unit $\text{s}$
-**Principle:** The scatter of the results tells the size of the random error. The simplest estimate is half of the range, that is, half of the difference between the largest and the smallest result, because a single result can deviate from the middle in either direction. Only the two extremes determine the range, so the other points are not needed.
-**Reading the graph:** The vertical lines of the axis are $0.1\,\text{s}$ apart and the numbers $0.2\,\text{s}$ apart. The leftmost point is on the line $12.2\,\text{s}$, so $t_\text{min} = 12.2\,\text{s}$. The rightmost point is on the line that is one interval to the right of the number $12.8$, so $t_\text{max} = 12.9\,\text{s}$. The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
+**Principle:** The scatter of the results tells the size of the random error. The simplest estimate is half of the range, that is, half of the difference between the largest and the smallest result, because a single result can deviate from the middle in either direction.
+
+Only the two extremes determine the range, so the other points are not needed.
+**Reading the graph:** The vertical lines of the axis are $0.1\,\text{s}$ apart and the numbers $0.2\,\text{s}$ apart. The leftmost point is on the line $12.2\,\text{s}$, so $t_\text{min} = 12.2\,\text{s}$. The rightmost point is on the line that is one interval to the right of the number $12.8$, so $t_\text{max} = 12.9\,\text{s}$.
+
+The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
 **Formula:** $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
 **Conversions:** All times are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t = \dfrac{12.9\,\text{s} - 12.2\,\text{s}}{2} = \dfrac{0.7\,\text{s}}{2} = 0.35\,\text{s}$
@@ -42,12 +48,16 @@
 ## fy1-3-L1-05
 **Given:** the smallest scale division $d = 1.0\,\text{mm}$
 **Find:** the uncertainty of the reading $\Delta x$ in the unit $\text{mm}$
-**Principle:** A reading is taken from the scale according to the nearest scale mark. In a simple situation the uncertainty of the reading is estimated as half of a scale division; the total uncertainty can be larger if, for example, the edge of the object is unclear or the scale is viewed from the side.
+**Principle:** A reading is taken from the scale according to the nearest scale mark.
+
+In a simple situation the uncertainty of the reading is estimated as half of a scale division; the total uncertainty can be larger if, for example, the edge of the object is unclear or the scale is viewed from the side.
 **Formula:** $\Delta x = \dfrac{d}{2}$
 **Conversions:** The scale division is already in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$
 **Answer:** $0.5\,\text{mm}$; the error estimate is a rough estimate, so it is stated with one significant figure.
-**Reasonableness:** If $23.0\,\text{mm}$ is read from a ruler, on the basis of the reading the length is estimated to be between $22.5\,\text{mm}$ and $23.5\,\text{mm}$, and this interval is one scale division, that is, $1.0\,\text{mm}$ wide. So the uncertainty of the reading is smaller than a scale division, but the total uncertainty of the measurement can be larger than this.
+**Reasonableness:** If $23.0\,\text{mm}$ is read from a ruler, on the basis of the reading the length is estimated to be between $22.5\,\text{mm}$ and $23.5\,\text{mm}$, and this interval is one scale division, that is, $1.0\,\text{mm}$ wide.
+
+So the uncertainty of the reading is smaller than a scale division, but the total uncertainty of the measurement can be larger than this.
 
 ## fy1-3-L2-01
 **Given:** $t = 1.84\,\text{s}$, $1.91\,\text{s}$, $1.78\,\text{s}$, $1.88\,\text{s}$, $1.96\,\text{s}$ and $1.82\,\text{s}$; $n = 6$, $t_\text{min} = 1.78\,\text{s}$, $t_\text{max} = 1.96\,\text{s}$
@@ -62,7 +72,9 @@
 ## fy1-3-L2-02
 **Given:** the length of the rod $L_0 = 1.000\,\text{m}$ and the readings of the tape $L_1 = 1.012\,\text{m}$, $L_2 = 1.009\,\text{m}$, $L_3 = 1.011\,\text{m}$
 **Find:** the average error of the tape $\Delta L_\text{sys}$ in the unit $\text{mm}$
-**Principle:** The rod is the same length all the time, and the worn start of the tape adds the same amount to every reading: this is a systematic error. The readings vary slightly because of random error, so the error is estimated as the difference between the mean of the readings and the true value.
+**Principle:** The rod is the same length all the time, and the worn start of the tape adds the same amount to every reading: this is a systematic error.
+
+The readings vary slightly because of random error, so the error is estimated as the difference between the mean of the readings and the true value.
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ and $\Delta L_\text{sys} = \bar{L} - L_0$
 **Conversions:** The result comes out in metres. Since $1\,\text{m} = 1000\,\text{mm}$, $1000\,\text{mm}$ is written in place of the metre.
 **Substitution:** The sum is $$\begin{aligned} &1.012\,\text{m} + 1.009\,\text{m} \\ &+ 1.011\,\text{m} \\ &= 3.032\,\text{m} \end{aligned}$$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m}$, that is, $\Delta L_\text{sys} = 0.01067 \cdot 1000\,\text{mm} = 10.67\,\text{mm}$
@@ -97,7 +109,9 @@
 **Conversions:** Both delays are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t_\text{sys} = 0.12\,\text{s} - 0.18\,\text{s} = -0.06\,\text{s}$
 **Answer:** $-0.06\,\text{s}$, two decimal places like the delays. The minus sign tells that the reading is too short.
-**Reasonableness:** The starting delay is larger than the stopping delay, so the reading comes out short, and the sign is negative. The delays cancel each other for the most part: the error is only a third of the starting delay. If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
+**Reasonableness:** The starting delay is larger than the stopping delay, so the reading comes out short, and the sign is negative. The delays cancel each other for the most part: the error is only a third of the starting delay.
+
+If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
 
 ## fy1-3-L3-02
 **Given:** the number of sheets $n = 250$, the smallest scale division $d = 1.0\,\text{mm}$
@@ -117,12 +131,18 @@
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** The sum is $$\begin{aligned} &8.04\,\text{cm} + 8.07\,\text{cm} + 8.05\,\text{cm} \\ &+ 8.09\,\text{cm} + 8.05\,\text{cm} \\ &= 40.30\,\text{cm} \end{aligned}$$, so $\bar{x} = \dfrac{40.30\,\text{cm}}{5} = 8.06\,\text{cm}$ and $\Delta x_\text{sys} = 8.06\,\text{cm} - 8.00\,\text{cm} = 0.06\,\text{cm}$
 **Answer:** $0.06\,\text{cm}$, one significant figure; the difference is to two decimal places.
-**Reasonableness:** The estimate of random error $\dfrac{8.09\,\text{cm} - 8.04\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about half of the systematic error. Still, all the readings are above the true value, so they contain a systematic error, for example a wrong zero of the callipers or dirt between their jaws. Its size $0.6\,\text{mm}$ is plausible for vernier callipers. If $0.06\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
+**Reasonableness:** The estimate of random error $\dfrac{8.09\,\text{cm} - 8.04\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about half of the systematic error. Still, all the readings are above the true value, so they contain a systematic error, for example a wrong zero of the callipers or dirt between their jaws. Its size $0.6\,\text{mm}$ is plausible for vernier callipers.
+
+If $0.06\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
 
 ## fy1-3-L1-06
 **Find:** which of the situations is a systematic error.
 **Principle:** A systematic error is almost the same in direction and size in every measurement, for example a wrong zero point of an instrument. A random error varies at random in either direction, and a gross error is a single mistake that shows up as a result differing from the others.
-**Model answer:** The systematic error is the wrong zero point of the thermometer: in ice water the thermometer reads about $1.5\,{}^\circ\text{C}$ too high every time, so all readings shift in the same direction. Repeating and averaging do not remove it, but comparison with a known value (ice water is $0\,{}^\circ\text{C}$) reveals it, and the readings are corrected by subtracting the error. The varying moment of stopping the clock and the varying viewing direction are random errors, which the mean reduces. The wrongly recorded number $34.2\,\text{s}$ is a gross error, which is checked and corrected.
+**Model answer:** The systematic error is the wrong zero point of the thermometer: in ice water the thermometer reads about $1.5\,{}^\circ\text{C}$ too high every time, so all readings shift in the same direction.
+
+Repeating and averaging do not remove it, but comparison with a known value (ice water is $0\,{}^\circ\text{C}$) reveals it, and the readings are corrected by subtracting the error. The varying moment of stopping the clock and the varying viewing direction are random errors, which the mean reduces.
+
+The wrongly recorded number $34.2\,\text{s}$ is a gross error, which is checked and corrected.
 
 ## fy1-3-L1-07
 **Given:** $x_1 = 5.41\,\text{cm}$, $x_2 = 5.47\,\text{cm}$, $x_3 = 5.39\,\text{cm}$, $x_4 = 5.44\,\text{cm}$, $x_5 = 5.43\,\text{cm}$; $n = 5$
@@ -137,7 +157,9 @@
 ## fy1-3-L1-08
 **Given:** the smallest scale division of the ruler $d_\text{r} = 1.0\,\text{mm}$, the smallest step of the calliper display $d_\text{c} = 0.01\,\text{mm}$
 **Find:** how many times smaller the uncertainty of the calliper reading $\Delta x_\text{c}$ is than that of the ruler $\Delta x_\text{r}$
-**Principle:** The uncertainty of each reading is estimated as half of the smallest reading interval: when reading a scale, the reading is placed between the marks, and a digital display rounds the reading to the nearest step. A smaller reading interval means a smaller reading uncertainty, so the calliper is the more precise instrument. This is an estimate of the reading; the total uncertainty of a measurement can also be affected by the instrument and the method.
+**Principle:** The uncertainty of each reading is estimated as half of the smallest reading interval: when reading a scale, the reading is placed between the marks, and a digital display rounds the reading to the nearest step.
+
+A smaller reading interval means a smaller reading uncertainty, so the calliper is the more precise instrument. This is an estimate of the reading; the total uncertainty of a measurement can also be affected by the instrument and the method.
 **Formula:** $\Delta x = \dfrac{d}{2}$ for both instruments, and the comparison is the ratio $\Delta x_\text{r} : \Delta x_\text{c}$
 **Conversions:** Both intervals are in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x_\text{r} = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$ and $\Delta x_\text{c} = \dfrac{0.01\,\text{mm}}{2} = 0.005\,\text{mm}$, so $0.5\,\text{mm} : 0.005\,\text{mm} = 100$
@@ -147,12 +169,16 @@
 ## fy1-3-L2-05
 **Given:** the eight times $t_{10}$ (10 revolutions) of the table: $18.12\,\text{s}$, $18.31\,\text{s}$, $18.05\,\text{s}$, $18.27\,\text{s}$, $18.19\,\text{s}$, $18.35\,\text{s}$, $18.10\,\text{s}$ and $18.22\,\text{s}$; $n = 8$
 **Find:** the mean time of one revolution $\bar{T}$ and its error estimate $\Delta T$ in the unit $\text{s}$
-**Principle:** A time taken by hand has a random error, so the result is the mean and the error estimate is half of the range. The time of one revolution is obtained from the time of ten revolutions by dividing both the mean and the error estimate by the exact number $10$.
+**Principle:** A time taken by hand has a random error, so the result is the mean and the error estimate is half of the range.
+
+The time of one revolution is obtained from the time of ten revolutions by dividing both the mean and the error estimate by the exact number $10$.
 **Formula:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ and $\Delta T = \dfrac{\Delta t_{10}}{10}$
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum is $145.61\,\text{s}$, so $\bar{t}_{10} = \dfrac{145.61\,\text{s}}{8} = 18.20125\,\text{s}$ and $\Delta t_{10} = \dfrac{18.35\,\text{s} - 18.05\,\text{s}}{2} = 0.15\,\text{s}$. Thus $\bar{T} = \dfrac{18.20125\,\text{s}}{10} = 1.820125\,\text{s}$ and $\Delta T = \dfrac{0.15\,\text{s}}{10} = 0.015\,\text{s}$.
 **Answer:** The error estimate $0.015\,\text{s}$ is a two-figure number because the first figure is 1, so the result is rounded to thousandths: $T = 1.820\,\text{s} \pm 0.015\,\text{s}$.
-**Reasonableness:** The usual speed of a turntable is $33.33$ revolutions per minute, so one revolution takes $60\,\text{s} : 33.33 = 1.800\,\text{s}$. The measured $1.820\,\text{s} \pm 0.015\,\text{s}$ has the right order of magnitude, but $1.800\,\text{s}$ falls just outside that interval; the turntable may therefore be turning slightly slowly, or the timing may have a small systematic error. Timing ten revolutions reduces the relative share of the reaction time: the error estimate $0.15\,\text{s}$ is only about $0.8\,\%$ of the time $18.2\,\text{s}$.
+**Reasonableness:** The usual speed of a turntable is $33.33$ revolutions per minute, so one revolution takes $60\,\text{s} : 33.33 = 1.800\,\text{s}$. The measured $1.820\,\text{s} \pm 0.015\,\text{s}$ has the right order of magnitude, but $1.800\,\text{s}$ falls just outside that interval; the turntable may therefore be turning slightly slowly, or the timing may have a small systematic error.
+
+Timing ten revolutions reduces the relative share of the reaction time: the error estimate $0.15\,\text{s}$ is only about $0.8\,\%$ of the time $18.2\,\text{s}$.
 
 ## fy1-3-L2-06
 **Given:** known volume $V_\text{true} = 50.0\,\text{ml}$; the results of group A $50.9\,\text{ml}$, $51.1\,\text{ml}$, $50.8\,\text{ml}$, $51.0\,\text{ml}$, $50.9\,\text{ml}$ and the results of group B $49.4\,\text{ml}$, $50.5\,\text{ml}$, $49.8\,\text{ml}$, $50.3\,\text{ml}$, $50.1\,\text{ml}$
@@ -161,7 +187,9 @@
 **Formula:** $\bar{V} = \dfrac{V_1 + \dots + V_5}{n}$, $\;\Delta V = \dfrac{V_\text{max} - V_\text{min}}{2}$ and deviation $\bar{V}_\text{A} - V_\text{true}$
 **Conversions:** Not needed: all volumes are in millilitres.
 **Substitution:** $\bar{V}_\text{A} = \dfrac{254.7\,\text{ml}}{5} = 50.94\,\text{ml}$, so the deviation is $50.94\,\text{ml} - 50.0\,\text{ml} = 0.94\,\text{ml}$. In addition $\Delta V_\text{A} = \dfrac{51.1\,\text{ml} - 50.8\,\text{ml}}{2} = 0.15\,\text{ml}$ and $\Delta V_\text{B} = \dfrac{50.5\,\text{ml} - 49.4\,\text{ml}}{2} = 0.55\,\text{ml}$; $\bar{V}_\text{B} = 50.02\,\text{ml}$.
-**Answer:** $+0.94\,\text{ml}$. The readings are three-figure numbers, and since the error estimate $\Delta V_\text{A} = 0.15\,\text{ml}$ is to hundredths, the deviation is also given in hundredths. Series A is more repeatable ($0.15\,\text{ml} < 0.55\,\text{ml}$), but all its results are over $50\,\text{ml}$, so it has a systematic error. The mean of series B is closer to the true value, although its scatter is larger.
+**Answer:** $+0.94\,\text{ml}$. The readings are three-figure numbers, and since the error estimate $\Delta V_\text{A} = 0.15\,\text{ml}$ is to hundredths, the deviation is also given in hundredths. Series A is more repeatable ($0.15\,\text{ml} < 0.55\,\text{ml}$), but all its results are over $50\,\text{ml}$, so it has a systematic error.
+
+The mean of series B is closer to the true value, although its scatter is larger.
 **Reasonableness:** All of A's results are on the same side of the true value, and the deviation $0.94\,\text{ml}$ is a multiple of the scatter $\Delta V_\text{A} = 0.15\,\text{ml}$, so the deviation is probably not random. Good repeatability therefore does not guarantee a correct result.
 
 ## fy1-3-L2-07
@@ -178,28 +206,46 @@
 ## fy1-3-L3-04
 **Given:** the eight times of the table; the sixth result $2.97\,\text{s}$ differs from the others, and the laboratory notebook has a note at it that the clock was stopped late
 **Find:** may the result be left out, the mean $\bar{t}$ in $\text{s}$, and what would be done if no reason had been recorded
-**Principle:** A clearly deviating result is checked, but it is not removed merely because it deviates. It may be left out only if the reason for the gross error is found and the omission is justified and recorded. Here the notebook note gives the reason: the clock was stopped late. If no reason is found, the result stays in the data and the deviation is described in the uncertainty.
+**Principle:** A clearly deviating result is checked, but it is not removed merely because it deviates. It may be left out only if the reason for the gross error is found and the omission is justified and recorded. Here the notebook note gives the reason: the clock was stopped late.
+
+If no reason is found, the result stays in the data and the deviation is described in the uncertainty.
 **Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, where $n = 7$ remaining results
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum of the results is $$\begin{aligned} &2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} \\ &+ 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} \\ &= 16.87\,\text{s} \end{aligned}$$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
-**Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$. If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 \approx 0.3\,\text{s}$, ten times as large. The result would be given with this uncertainty, $t = 2.5\,\text{s} \pm 0.3\,\text{s}$, the deviation would be mentioned, and it would be worth repeating the measurement.
+**Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$.
+
+If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 \approx 0.3\,\text{s}$, ten times as large. The result would be given with this uncertainty, $t = 2.5\,\text{s} \pm 0.3\,\text{s}$, the deviation would be mentioned, and it would be worth repeating the measurement.
 **Reasonableness:** With the deviating result the mean shifts by $0.07\,\text{s}$, which is over twice the half-range $0.03\,\text{s}$. The omission is based on the recorded reason and not on the size of the deviation $2.97\,\text{s} - 2.41\,\text{s} = 0.56\,\text{s}$: on the basis of the notebook note the result is a gross error.
 
 ## fy1-3-L3-05
 **Given:** $\rho_\text{A} = 2.74\,\text{g/cm}^3$, $\Delta\rho_\text{A} = 0.05\,\text{g/cm}^3$; $\rho_\text{B} = 2.60\,\text{g/cm}^3$, $\Delta\rho_\text{B} = 0.05\,\text{g/cm}^3$; the student's conclusion: the difference is about $5\,\%$, so the results are consistent
 **Find:** the error in the student's reasoning, whether the results are consistent, and the gap $E$ between the uncertainty intervals in $\text{g/cm}^3$
-**Principle:** Here the consistency of two results is judged in a simplified way with the intervals of the stated uncertainty estimates, not with the percentage by which the results differ. If the intervals $\rho \pm \Delta\rho$ overlap, a difference cannot be shown; if they do not, the difference is greater than the stated uncertainties explain. The uncertainties are estimates, not certain limits.
+**Principle:** Here the consistency of two results is judged in a simplified way with the intervals of the stated uncertainty estimates, not with the percentage by which the results differ.
+
+If the intervals $\rho \pm \Delta\rho$ overlap, a difference cannot be shown; if they do not, the difference is greater than the stated uncertainties explain. The uncertainties are estimates, not certain limits.
 **Formula:** the gap is the difference between the difference of the results and the sum of the uncertainties: $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
 **Conversions:** Not needed: all values are in $\text{g/cm}^3$.
 **Substitution:** $$\begin{aligned} E &= |2.74\,\text{g/cm}^3 - 2.60\,\text{g/cm}^3| \\ &- (0.05\,\text{g/cm}^3 + 0.05\,\text{g/cm}^3) \\ &= 0.14\,\text{g/cm}^3 - 0.10\,\text{g/cm}^3 \\ &= 0.04\,\text{g/cm}^3 \end{aligned}$$
-**Answer:** $0.04\,\text{g/cm}^3$, two decimal places like the results. The student's error is to judge consistency by the percentage difference: the intervals $2.69$–$2.79\,\text{g/cm}^3$ and $2.55$–$2.65\,\text{g/cm}^3$ do not overlap, and a gap of $0.04\,\text{g/cm}^3$ is left between them. Because the given uncertainty intervals do not overlap, the results are not consistent according to these stated uncertainty estimates. The uncertainty estimates are not certain limits, however, and the separation of the intervals alone does not decide whether the difference is statistically significant. The cause of the difference is worth looking for, for example in a systematic error. The difference still does not prove either result wrong.
+**Answer:** $0.04\,\text{g/cm}^3$, two decimal places like the results. The student's error is to judge consistency by the percentage difference: the intervals $2.69$–$2.79\,\text{g/cm}^3$ and $2.55$–$2.65\,\text{g/cm}^3$ do not overlap, and a gap of $0.04\,\text{g/cm}^3$ is left between them.
+
+Because the given uncertainty intervals do not overlap, the results are not consistent according to these stated uncertainty estimates. The uncertainty estimates are not certain limits, however, and the separation of the intervals alone does not decide whether the difference is statistically significant.
+
+The cause of the difference is worth looking for, for example in a systematic error. The difference still does not prove either result wrong.
 **Reasonableness:** The uncertainties are about $2\,\%$ of the results, so the $5\,\%$ difference is over twice as large as they are. If B were $2.66\,\text{g/cm}^3$, the intervals would overlap although the results would still differ by $0.08\,\text{g/cm}^3$.
 
 ## fy1-3-L2-08
 **Given:** light ball: $14.3\,\text{s}$, $14.1\,\text{s}$, $14.4\,\text{s}$, $14.2\,\text{s}$, $14.5\,\text{s}$; heavy ball: $14.4\,\text{s}$, $14.2\,\text{s}$, $14.5\,\text{s}$, $14.3\,\text{s}$, $14.4\,\text{s}$; uncertainty of the hand-timed measurement $\Delta t = 0.2\,\text{s}$ for each result
 **Find:** which conclusion the data support when the difference of the averages is compared with the uncertainty $\Delta t$
 **Principle:** The difference of two averages is compared with the uncertainty. If the difference is smaller than the uncertainty, a difference cannot be shown by the measurement; this does not, however, prove that the quantities are equal. A result must also not be given more precisely than the uncertainty allows.
-**Model answer:** The averages given by the calculator are $\bar{t}_\text{light} = \dfrac{71.5\,\text{s}}{5} = 14.30\,\text{s}$ and $\bar{t}_\text{heavy} = \dfrac{71.8\,\text{s}}{5} = 14.36\,\text{s}$, so the difference is $14.36\,\text{s} - 14.30\,\text{s} = 0.06\,\text{s}$. This is a third of the uncertainty $0.2\,\text{s}$ and smaller than half the range of either series ($0.2\,\text{s}$ and $0.15\,\text{s}$), so the difference can be mere random variation. The correct conclusion is that the data do not show that the mass of the ball affects the swing time. The claim "the heavy ball swings more slowly" goes beyond the data, because it treats a difference within the uncertainty as real. The claim "mass has no effect" goes too far, because the measurement cannot tell apart even a small real difference. The time of ten swings $14.300\,\text{s}$ is over-precise, because the uncertainty $0.2\,\text{s}$ allows only a tenth of a second, for example a time of ten swings of $14.3\,\text{s} \pm 0.2\,\text{s}$ (the time of one swing is about $1.43\,\text{s} \pm 0.02\,\text{s}$). To detect a difference, more accurate timing would be needed, for example a light gate, or a longer measured time.
+**Model answer:** The averages given by the calculator are $\bar{t}_\text{light} = \dfrac{71.5\,\text{s}}{5} = 14.30\,\text{s}$ and $\bar{t}_\text{heavy} = \dfrac{71.8\,\text{s}}{5} = 14.36\,\text{s}$, so the difference is $14.36\,\text{s} - 14.30\,\text{s} = 0.06\,\text{s}$. This is a third of the uncertainty $0.2\,\text{s}$ and smaller than half the range of either series ($0.2\,\text{s}$ and $0.15\,\text{s}$), so the difference can be mere random variation.
+
+The correct conclusion is that the data do not show that the mass of the ball affects the swing time. The claim "the heavy ball swings more slowly" goes beyond the data, because it treats a difference within the uncertainty as real.
+
+The claim "mass has no effect" goes too far, because the measurement cannot tell apart even a small real difference.
+
+The time of ten swings $14.300\,\text{s}$ is over-precise, because the uncertainty $0.2\,\text{s}$ allows only a tenth of a second, for example a time of ten swings of $14.3\,\text{s} \pm 0.2\,\text{s}$ (the time of one swing is about $1.43\,\text{s} \pm 0.02\,\text{s}$).
+
+To detect a difference, more accurate timing would be needed, for example a light gate, or a longer measured time.
 
 ## fy1-3-L1-09
 **Given:** measurements $1.004$; $1.012$; $1.008$; $1.014$; $1.012$ (in $\text{g/cm}^3$); from the table (MAFY table, density of water at different temperatures) $\rho_\text{table} = 0.998206\,\text{g/cm}^3$ at $20\,{}^\circ\text{C}$
@@ -214,13 +260,17 @@ Additionally: the error estimate is $$\begin{aligned} \Delta x &= \tfrac{1.014 -
 **Reasonableness:** All measurements are above the table value and the deviation is over one percent, but the density of water is about $1\,\text{g/cm}^3$, so the mean is of the right size and the deviation is small.
 
 ## fy1-3-L2-09
-**Given:** CERN's press release of 23 September 2011 and its updates: a distance of about $730\,\text{km}$ between the source and the detector, measured with an uncertainty of $20\,\text{cm}$; the neutrinos' time of flight measured to better than $10\,\text{ns}$; over $15\,000$ neutrino events. The speed of light in a vacuum $c = 2.998\cdot10^{8}\,\text{m/s}$ and the deviation $\Delta t = 60\,\text{ns}$.
+**Given:** CERN's press release of 23 September 2011 and its updates: a distance of about $730\,\text{km}$ between the source and the detector, measured with an uncertainty of $20\,\text{cm}$; the neutrinos' time of flight measured to better than $10\,\text{ns}$; over $15\,000$ neutrino events.
+
+The speed of light in a vacuum $c = 2.998\cdot10^{8}\,\text{m/s}$ and the deviation $\Delta t = 60\,\text{ns}$.
 
 **Find:** a) the measurement and its accuracy, why the result was surprising; b) the light travel time $t$, the relative deviation $\dfrac{\Delta t}{t}$ as a percentage and the distance $\Delta s$ light travels in the time $\Delta t$; c) what was found later and the kind of error; d) why one deviating result does not overturn a theory
 
 **Principle:** A speed is found by measuring a distance and a travel time. If the neutrinos arrive sooner than light could, their speed would be greater than $c$. The size of the deviation is judged by comparing it with the whole travel time and with the uncertainties of the measurements.
 
-**Model answer a):** The researchers measured the time the neutrinos took from CERN to the Gran Sasso laboratory. The distance was measured with an uncertainty of $20\,\text{cm}$ and the time to better than $10\,\text{ns}$, with GPS systems and atomic clocks. The neutrinos seemed to arrive about $60\,\text{ns}$ sooner than light could have. The result was surprising because by Einstein's theory of relativity nothing travels faster than light, and many earlier experiments had found no deviation from the theory.
+**Model answer a):** The researchers measured the time the neutrinos took from CERN to the Gran Sasso laboratory. The distance was measured with an uncertainty of $20\,\text{cm}$ and the time to better than $10\,\text{ns}$, with GPS systems and atomic clocks.
+
+The neutrinos seemed to arrive about $60\,\text{ns}$ sooner than light could have. The result was surprising because by Einstein's theory of relativity nothing travels faster than light, and many earlier experiments had found no deviation from the theory.
 
 **Formula:** In uniform motion $s = ct$, so $t = \dfrac{s}{c}$; the relative deviation $\dfrac{\Delta t}{t}$ and the distance light travels $\Delta s = c\,\Delta t$
 
@@ -250,13 +300,25 @@ $$\begin{aligned}
 &\approx 18\,\text{m}
 \end{aligned}$$
 
-**Model answer b):** Light takes about $2.4\,\text{ms}$ for the distance, and the deviation is only about $0.0025\,\%$ of it, about $25$ parts per million. CERN's press release rounds the same result to “$20$ parts per million”. The deviation corresponds to $18\,\text{m}$ of distance, almost a hundred times the distance uncertainty $20\,\text{cm}$. The distance measurement could not explain the result, so the error was worth looking for in the timing.
+**Model answer b):** Light takes about $2.4\,\text{ms}$ for the distance, and the deviation is only about $0.0025\,\%$ of it, about $25$ parts per million. CERN's press release rounds the same result to “$20$ parts per million”.
 
-**Model answer c):** The researchers found two possible sources of error in the measuring system: the oscillator of the GPS synchronization and the optical fibre connector that brings the GPS signal to the experiment's master clock. Later the original result was attributed to a faulty element of the experiment's fibre optic timing system. The independent ICARUS experiment measured a neutrino time of flight consistent with the speed of light, and next four experiments at Gran Sasso (Borexino, ICARUS, LVD and OPERA) all measured a time of flight consistent with the speed of light.
+The deviation corresponds to $18\,\text{m}$ of distance, almost a hundred times the distance uncertainty $20\,\text{cm}$. The distance measurement could not explain the result, so the error was worth looking for in the timing.
 
-The error was systematic. The faulty timing system shifted every measurement in the same direction, so the result stayed the same although more than $15\,000$ neutrinos were observed. A random error shrinks when there are many measurements, but a systematic error does not shrink when the measurement is repeated with the same equipment. That is why independent measurements with different equipment were needed.
+**Model answer c):** The researchers found two possible sources of error in the measuring system: the oscillator of the GPS synchronization and the optical fibre connector that brings the GPS signal to the experiment's master clock.
 
-**Model answer d):** The theory of relativity has been tested in many experiments, and no deviations have been found. When one measurement contradicts all of them, it is more likely that the measurement has an unnoticed systematic error than that all the earlier results are wrong. An everyday example: if a thermometer shows boiling water at normal pressure to be at $80\,{}^\circ\text{C}$, we first suspect the thermometer, not the boiling point of water. A deviating result can still be a sign of new physics, so it is not dismissed but checked. The theory would change only if independent experiments repeated the result. OPERA acted correctly when it published its result for others to examine.
+Later the original result was attributed to a faulty element of the experiment's fibre optic timing system.
+
+The independent ICARUS experiment measured a neutrino time of flight consistent with the speed of light, and next four experiments at Gran Sasso (Borexino, ICARUS, LVD and OPERA) all measured a time of flight consistent with the speed of light.
+
+The error was systematic. The faulty timing system shifted every measurement in the same direction, so the result stayed the same although more than $15\,000$ neutrinos were observed.
+
+A random error shrinks when there are many measurements, but a systematic error does not shrink when the measurement is repeated with the same equipment. That is why independent measurements with different equipment were needed.
+
+**Model answer d):** The theory of relativity has been tested in many experiments, and no deviations have been found. When one measurement contradicts all of them, it is more likely that the measurement has an unnoticed systematic error than that all the earlier results are wrong.
+
+An everyday example: if a thermometer shows boiling water at normal pressure to be at $80\,{}^\circ\text{C}$, we first suspect the thermometer, not the boiling point of water. A deviating result can still be a sign of new physics, so it is not dismissed but checked.
+
+The theory would change only if independent experiments repeated the result. OPERA acted correctly when it published its result for others to examine.
 
 **Answer:** The relative deviation is $\dfrac{\Delta t}{t} \approx 0.0025\,\%$, or $2.5\cdot10^{-5}$ (calculated value $0.00246\,\%$), two significant figures, because the deviation $60\,\text{ns}$ is given to two figures.
 
