@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1eceddd9c27ef416
+CONTENT-HASH: 0d4d9d3c45daf76b
+SCOPE: delta added-exercise from 59276c46695c8bf1 base f08a2494a45d
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md (L1-10 Answer line) — the reason for three significant figures (the mean distance is not the exact path) is physical, while the lesson's rule is "as few significant figures as the least precise datum", and both data have four. A student may see a conflict. Fix, optional: add "(the lesson's rule would allow four, but the mean distance is only an approximation)".
+- solutions.md fy1-2-L2-08 b) — the solution fixes the 25 µg drift as BIPM's figure, but the student reads the page and may find another value or wording; say "if your reading differs, use it: the comparison is the ratio of your figure to 1 mg".
+- exercises.json fy1-2-L2-08 — four parts plus a web read is heavy for level 2; acceptable as an aineistotehtävä, but part d could be marked as short.
 
 ## Checked
-- exercises.json fy1-2-L1-10: answer 1.28 s equals 3.844e8 / 2.998e8 = 1.2822 rounded to three significant figures; unit s unchanged.
-- Tolerance 0.04 (about 3 %) still sits inside the stated 4 % and accepts both 1.28 and the earlier 1.282.
-- solutions.md L1-10: substitution shows 1.282 s, then 1.28 s; the km to m conversion is explained before it; the answer line and the 4 % note agree with the JSON.
-- The reasonableness check (a little over a second) agrees with 1.28 s.
-- answers.py: round(384400e3/2.998e8, 2) gives 1.28, consistent with exercises.json.
-- The task text is unchanged: situation, lookup, hint, question last. The rest of the set is unchanged since the earlier pass.
-- The packet contained no SCOPE line, so none is written.
+- 1 mg / 1 kg = 1e-6 = 0.0001 %; 1000 µg / 25 µg = 40; conversions shown.
+- Principle explained, units converted before substitution, reasonableness check present.
+- Fits level 2 (source reading, conversion, interpretation); does not repeat L2-05 or L2-06; adds a source/concept kind to the mix.
+- Question last, answer-box instruction clear; the unit prefixes of the lesson are practised.

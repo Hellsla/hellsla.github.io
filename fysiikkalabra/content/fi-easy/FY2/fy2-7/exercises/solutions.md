@@ -314,5 +314,24 @@ $$ vastaa summaa $42{,}09\,\text{MWh}$.
 **Kaava:** $E_\text{häviö} = p \cdot E_\text{lähtö}$ ja $\Delta E = E_\text{häviö,kl} - E_\text{häviö,s}$
 **Muunnokset:** $9\,\% = 0{,}09$ ja $4\,\% = 0{,}04$.
 **Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$. Siis $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
-**Vastaus:** $\Delta E \approx 12{,}5\,\text{MWh}$, kolme merkitsevää numeroa kuten lähtevässä energiassa $250\,\text{MWh}$.
+**Vastaus:** $\Delta E \approx 13\,\text{MWh}$ (laskettu $12{,}5\,\text{MWh}$). Vastauksessa on kaksi merkitsevää numeroa, koska kuvan prosenttiluvut $9\,\%$ ja $4\,\%$ on pyöristetty täysiin prosentteihin.
 **Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$. Luvusta $250\,\text{MWh}$ osuus $5\,\%$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.
+## fy2-7-L2-10
+**Annettu:** taulukosta (Fingrid, luettu 16. marraskuuta 2026 klo 10:48) kulutusteho $P_\text{k} = 11\,603\,\text{MW}$, tuotantoteho $P_\text{t} = 11\,341\,\text{MW}$, nettotuonti $210\,\text{MW}$ (taulukossa $-210\,\text{MW}$, koska tuonti on negatiivinen), tuulivoima $5571\,\text{MW}$ ja ydinvoima $2594\,\text{MW}$. Aika $\Delta t = 1\,\text{h}$ on tehtävän antama ja tarkka.
+**Kysytty:** a) kulutuksen, tuotannon ja tuonnin vertailu; b) kulutettu energia $E$ yksikössä $\text{GWh}$; c) miksi tuotanto ei ole joka hetki yhtä suuri kuin kulutus; d) tuulivoiman ja ydinvoiman osuudet ja miksi yksi hetki ei kerro vuoden rakennetta
+**Periaate:** Teho kertoo, kuinka paljon energiaa siirtyy sekunnissa tai tunnissa: teho on energia jaettuna ajalla, $P = \Delta E : \Delta t$. Kun teho pysyy samana, energia on teho kerrottuna ajalla: $E = P\,\Delta t$. Taulukon teho on yhden hetken luku. Oletetaan, että se pysyy samana yhden tunnin. Osuus on osa jaettuna kokonaisuudella.
+**Kaava:** $E = P\,\Delta t$, joten $E = P_\text{k}\,\Delta t$. Kohdassa a) erotus on $\Delta P = P_\text{k} - P_\text{t}$. Kohdassa d) osuus on $p = P_\text{lähde} : P_\text{t}$.
+**Muunnokset:** $1\,\text{MW} \cdot 1\,\text{h} = 1\,\text{MWh}$ ja $1000\,\text{MWh} = 1\,\text{GWh}$.
+**Sijoitus:** b)
+
+$$\begin{aligned} E &= 11\,603\,\text{MW} \cdot 1\,\text{h} \\ &= 11\,603\,\text{MWh} \\ &= 11{,}603\,\text{GWh} \end{aligned}$$
+
+a) $\Delta P = 11\,603\,\text{MW} - 11\,341\,\text{MW} = 262\,\text{MW}$. Nettotuonti on $210\,\text{MW}$. d) Tuulivoima: $p = 5571\,\text{MW} : 11\,341\,\text{MW} = 0{,}491$. Ydinvoima: $p = 2594\,\text{MW} : 11\,341\,\text{MW} = 0{,}229$.
+**Vastaus:** b) $E \approx 11{,}6\,\text{GWh}$, kolme merkitsevää numeroa. Aika $1\,\text{h}$ on tarkka. Mittausten pieni epätarkkuus näkyy kohdan a) erona $52\,\text{MW}$ eli noin $0{,}45\,\%$ kulutuksesta. Siksi useampaan numeroon ei kannata luottaa.
+
+Lisäksi: a) Kulutus on $262\,\text{MW}$ eli noin $2{,}3\,\%$ suurempi kuin tuotanto. Puute katettiin tuonnilla $210\,\text{MW}$. Luvut eivät täsmää aivan: erotus $262\,\text{MW} - 210\,\text{MW}$ on $52\,\text{MW}$. Se on vain noin $0{,}45\,\%$ kulutuksesta. Syy on reaaliaikaisten mittausten pieni epätarkkuus.
+
+c) Suomen sähköverkko on yhdistetty naapurimaiden verkkoihin. Jos Suomessa tuotetaan vähemmän kuin kulutetaan, erotus tuodaan ulkomailta. Taulukossa se on $210\,\text{MW}$. Jos tuotantoa on enemmän kuin kulutusta, ylimääräinen sähkö viedään ulkomaille. Fingridin saman päivän näkymässä klo 1:00 tuulivoimaa oli $7639\,\text{MW}$, tuotanto oli $12\,791\,\text{MW}$ ja kulutus $10\,647\,\text{MW}$, joten nettovienti oli $2142\,\text{MW}$. Myös sähkövarastot ja tuotannon säätö tasoittavat eroja.
+
+d) Tuulivoiman osuus oli noin $49\,\%$ ja ydinvoiman noin $23\,\%$ tuotannosta. Tuulivoiman määrä riippuu säästä. Samana päivänä se oli klo 1:00 $7639\,\text{MW}$ ja klo 10:00 $5885\,\text{MW}$. Osuudet muuttuvat tunnista toiseen ja vuodenajan mukaan. Yhden hetken osuus ei siksi ole vuoden keskiarvo. Vuoden rakenteen näkee vasta, kun lasketaan tuotettu energia koko vuodelta. Yksi hetki kertoo vain tehon sillä hetkellä.
+**Järkevyys:** Tulos on $11\,603\,\text{MWh}$. Koska $1\,\text{GWh} = 1000\,\text{MWh}$, yksikkömuunnos on oikein. Kulutusteho on noin $7{,}3$ kertaa Olkiluoto 3:n teho, sillä $11\,603 : 1600 = 7{,}25$. Se on uskottava suuruusluokka koko maan kulutukselle. Osuuksien $0{,}491$ ja $0{,}229$ summa on alle $1$, kuten pitää, koska on myös muita tuotantomuotoja. Malli olettaa, että teho pysyy tunnin samana. Kulutus kuitenkin muuttuu koko ajan, joten tulos on arvio.

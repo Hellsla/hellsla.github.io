@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e96fb55b4604ec47
-
-Round: 2
+CONTENT-HASH: 5d123ece9cf19afa
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json fy2-2-L1-11 — still near L1-05 (same figure); the target could be the flash (1 GJ in kJ) for a prefix step. Optional.
+- none
 
 ## Checked
-- L1-11 new text "Asteikolla jokainen pieni väli on kymmenkertainen edelliseen, ja siihen on merkitty kolme energiaa" is correct Finnish, still situation first and the question last; the figure and its description give the needed point (two small steps right of 1 kJ), no answer disclosed.
-- solutions.md L1-10 "Joulet ovat pieniä": typo fixed, reads correctly; numbers unchanged.
-- Hash identical at start and end (e96fb55b4604ec47).
+- Delta review: the reasonableness check now gives 3 200 000 GJ : 70 GJ ≈ 46 000 houses; 45 714 rounds to 46 000, so the figure is right and the point (a city's district heating equals tens of thousands of houses) is intact.
+- Answer, unit and tolerance unchanged.

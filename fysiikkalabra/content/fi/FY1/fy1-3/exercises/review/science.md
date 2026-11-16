@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6d3c28b642ef74e0
-SCOPE: delta added-exercise from 8ce9535a28c5573f base 81db4a6fd727
+CONTENT-HASH: f08e184ae3cb1022
 
 ## Blocking
 - none
@@ -9,9 +8,20 @@ SCOPE: delta added-exercise from 8ce9535a28c5573f base 81db4a6fd727
 - none
 
 ## Checked
-- fy1-3-L1-09 only (delta, added exercise; round 2). The hash was the same at the start and the end.
-- I recomputed it myself: x̄ = 5,050/5 = 1,010 g/cm³. (1,010 − 0,998206)/0,998206 · 100 % = 1,1815 %. The answers.py value and the key 1.18 are right.
-- Round 1 Polish applied: the two significant figures are now explained by the difference 0,012 g/cm³, which has two figures. The reason is correct, since the subtraction leaves two figures.
-- The shown 1,2 % is 1,7 % from the key, inside the tolerance of 0,04.
-- MAFY water density at 20 °C (0,998206 g/cm³) and the hint's table are right.
-- The half-range Δx = 0,005 g/cm³ gives the interval 1,005…1,015, which excludes the table value. The text concludes "todennäköisesti systemaattinen virhe", worded as the guardrails ask. The sign of the deviation (positive) is right.
+- This review covers fy1-3-L2-09 only (a new exercise, judged in full). The other diff line in L1-09 is a spacing change only, with the same numbers. The hash was f08e184ae3cb1022 at the start and at the end.
+- I recomputed it myself:
+  - t = s/c = 7,30·10⁵ m / 2,998·10⁸ m/s = 2,4350·10⁻³ s.
+  - Δt/t = 6,0·10⁻⁸ s / 2,435·10⁻³ s = 2,464·10⁻⁵ = 0,002464 %.
+  - cΔt = 17,99 m ≈ 18 m.
+  - 18 m / 0,20 m ≈ 90, which the text calls "lähes sata".
+  - t/Δt ≈ 40 600.
+- answers.py gives 0.0024641, which matches the key 0.002464. The tolerance of 0,03 accepts the two-figure answer 0,0025 % (1,5 % off). Two significant figures, from 60 ns, is the right count.
+- I checked the CERN page (fetched 2026-11-16). It has the 730 km distance with a 20 cm uncertainty, a time of flight better than 10 ns using GPS and atomic clocks, and over 15 000 events. It gives "20 parts per million" (the solution's 25 ppm is computed from 60 ns, and it says how the two relate). It also has:
+  - the two possible effects found later: the GPS synchronisation oscillator and the optical fibre connector to the master clock;
+  - ICARUS's result consistent with c (16 March 2012);
+  - Borexino, ICARUS, LVD and OPERA all consistent with c, and the "faulty element of the experiment's fibre optic timing system".
+  The model answers a) and c) match the page.
+- The systematic vs random reasoning follows the guardrails. Repeating reduces random error, not systematic error, and independent apparatus is needed.
+- d): the anomalous result is checked and not discarded, and the theory would change only after independent replication. The thermometer example (80 °C at normal pressure) is sound.
+- The light time is computed "tyhjiössä", as the task states. The neutrino's path through rock does not affect the comparison (C).
+- The scope (measurement, error types, s = ct) is FY1.

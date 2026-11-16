@@ -78,7 +78,7 @@ $$ vuodessa. Se on noin $95\,\%$ vähemmän kuin kivihiilellä ($3{,}1 \cdot 10^
 
 *Huippu.* Tyynenä pakkasiltana biomassavoimala ($40\,\text{MW}$), vesivoima ($20\,\text{MW}$) ja tuulivoimalat (alle $0{,}05 \cdot 90\,\text{MW} \approx 4{,}5\,\text{MW}$) antavat yhteensä noin $65\,\text{MW}$. Loput noin $15\,\text{MW}$ ostetaan verkosta, tai osa kulutuksesta, kuten sähkölämmitys, siirretään muutamaksi tunniksi myöhemmäksi.
 
-*Muut perusteet.* Yhdistelmä ei ole yhden polttoaineen tai yhden sään varassa: tuulivoimalla ei ole polttoainetta, ja vesi- ja biomassavoiman tehoa voi säätää. Tuulivoimalat vievät maata ja muuttavat maisemaa. Biomassavoimala tarvitsee haketta, mutta vain noin kuudesosan siitä, mitä se tarvitsisi täydellä käyttöasteella.
+*Muut perusteet.* Yhdistelmä ei ole yhden polttoaineen tai yhden sään varassa: tuulivoimalla ei ole polttoainetta, ja vesi- ja biomassavoiman tehoa voi säätää. Tuulivoimalat vievät maata ja muuttavat maisemaa. Biomassavoimala tarvitsee haketta, mutta vain noin kuudesosan siitä, mitä se tarvitsisi taulukon tyypillisellä käyttöasteella $0{,}70$.
 
 *Vahvin vastaperuste* on, että biomassavoimala seisoo suuren osan vuodesta, joten sen rakentaminen on kallista tuotettua energiaa kohti, ja biomassan polton hiilidioksidi sitoutuu takaisin vasta vuosikymmenten kuluessa, joten todellinen päästö voi olla laskentaoletuksen $230\,\text{g/kWh}$ mukaista suurempi. Vastaan, että juuri säädettävyyden takia voimalaa tarvitaan: ilman sitä huippuiltana tarvittaisiin verkosta yli $50\,\text{MW}$, ja koko maan kulutus on silloin suurimmillaan. Biomassan osuus energiasta on vain noin $11\,\%$.
 

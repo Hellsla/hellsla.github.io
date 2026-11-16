@@ -266,3 +266,30 @@ $$. When the time is halved and the energy stays the same, the power doubles. Th
 **Substitution:** $P_\text{A} = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\text{W}$ and $P_\text{B} = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$, so $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{1500\,\text{W}}{500\,\text{W}} = 3.0$
 **Answer:** The power of device A is $3.0$ times the power of device B.
 **Reasonableness:** The ratio is greater than one because A rises more steeply. At $80\,\text{s}$ A has converted $120\,\text{kJ}$ and B $40\,\text{kJ}$, and $120 : 40 = 3$, the same ratio.
+## fy2-3-L2-09
+**Given:** power $P = 2.0\,\text{kW}$ and time $\Delta t = 4\,\text{h}$ (the time is set by the task and exact), market price $h = -5.0\,\text{snt/kWh}$ and comparison price $+15\,\text{snt/kWh}$. From the article (Yle, 16.8.2023, accessed 16.11.2026): the price can fall below zero if there is more production than consumption; the sales margin of Vaasan sähkö, for example, is $0.41\,\text{snt/kWh}$, and Vaasan sähkö treats a negative hourly price as zero.
+**Find:** a) when the price can be negative; b) the energy $E$ and the cost $C$ in $\text{snt}$; c) the comparison with the price $+15\,\text{snt/kWh}$ and why a negative price is not free electricity; d) the effect of storage and of timing consumption
+**Principle:** An appliance at a steady power uses the energy $E = P\,\Delta t$, and the cost is the energy times the price per unit of energy, $C = h E$. The price is given per kilowatt-hour, so the energy is calculated in kilowatt-hours.
+**Formula:** $E = P\,\Delta t$ and $C = h E$, so $C = h\,P\,\Delta t$.
+**Conversions:** No unit needs changing: $\text{kW} \cdot \text{h} = \text{kWh}$ and the price is in $\text{snt/kWh}$. In euros $100\,\text{snt} = 1\,€$.
+**Substitution:** b)
+
+$$\begin{aligned} E &= 2.0\,\text{kW} \cdot 4\,\text{h} \\ &= 8.0\,\text{kWh} \end{aligned}$$
+
+$$\begin{aligned} C &= -5.0\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= -40\,\text{snt} \end{aligned}$$
+
+c) At the price $+15\,\text{snt/kWh}$:
+
+$$\begin{aligned} C &= 15\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= 120\,\text{snt} \end{aligned}$$
+
+For Vaasan sähkö the energy part is zero, and the sales margin is:
+
+$$\begin{aligned} C_\text{väl} &= 0.41\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= 3.28\,\text{snt} \end{aligned}$$
+**Answer:** b) $E = 8.0\,\text{kWh}$ and $C = -40\,\text{snt} = -0.40\,€$, two significant figures as in the power $2.0\,\text{kW}$ and the price $-5.0\,\text{snt/kWh}$; four hours is exact. The minus sign means that the bill gets a credit.
+
+In addition: a) According to the article the exchange price can fall below zero when more electricity is produced than consumed, for example when a lot of electricity is on offer and consumption is small. Then the producer has to pay for the electricity to be taken from the grid.
+
+c) The cost $-40\,\text{snt}$ is a credit, whereas at $+15\,\text{snt/kWh}$ one would pay $120\,\text{snt} = 1.20\,€$; the difference is $160\,\text{snt}$. Still, a negative market price does not make electricity free. The consumer buys electricity from a seller, and the seller charges a sales margin: according to the article, for example, $0.41\,\text{snt/kWh}$ at Vaasan sähkö, $0.25\,\text{snt/kWh}$ at Oomi and $0.50\,\text{snt/kWh}$ at Vattenfall. Some sellers credit a negative hour, but Vaasan sähkö counts it as zero, so the consumer pays about $3.3\,\text{snt}$ for $8.0\,\text{kWh}$ and gets no credit. In addition the market price is only a part of the bill: the regional price on Fingrid's page is without taxes and electricity transmission costs, and the consumer pays for those too. The article is from 2023, so current contracts may differ; here it serves as a source for the principle of price formation.
+
+d) Storage moves energy in time: a storage is charged when there is more electricity than needed and the price is low or negative, and discharged when electricity is needed. Timing consumption (for example charging an electric car or a hot water heater in a cheap hour) also raises consumption when there is too much production and lowers it during a shortage. Both even out the difference between production and consumption. There are limits: not all the energy put into a storage comes back, because part of it becomes internal energy in the storage and in transfer, which is transferred to the surroundings as heat; storages have a limited capacity; and timing pays only if the contract follows the hourly price.
+**Reasonableness:** An estimate with round numbers: $2\,\text{kW} \cdot 4\,\text{h} = 8\,\text{kWh}$ and $8 \cdot (-5) = -40$. The sign is right, because the price is negative and the energy positive. The price $-5.0\,\text{snt/kWh}$ is small compared with $+15\,\text{snt/kWh}$, so the credit of $40\,\text{snt}$ is only a third of the cost of $120\,\text{snt}$ at the ordinary price. The unit is right: $\text{kWh} \cdot \text{snt/kWh} = \text{snt}$. The model assumes a steady power for all four hours and the same market price in every hour, but the real hourly price varies.

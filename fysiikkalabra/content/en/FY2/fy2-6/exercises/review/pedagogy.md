@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ff05584a8eb5bd9a
-SCOPE: delta added-exercise from ce4d78b324133976 base c7f5e91173b0
+CONTENT-HASH: a72da2feb382aa9f
 Mode: delta
-Round: 2
 
 ## Blocking
 (none)
 
 ## Polish
-- fy2-6-L2-08 solutions.md Reasonableness — 'By the chapter's model ... a third of its rated power' relies on the lesson stating this capacity-factor model; confirm the lesson teaches it. Optional.
+- fy2-6-L3-02 solutions.md Reasonableness — "4.7 : 1.7 approx 2.8" now differs from the answer 2.7 because of rounding the TWh values (exact 4.73 : 1.73 = 2.73). Give the energies with three figures (4.73 and 1.73 TWh) so the check gives 2.7.
 
 ## Checked
-- L1-10: new wording makes 2.0 MW the rate of release by burning (my round-1 polish adopted); 2.0 MW x 3600 s / 10 MJ/kg = 720 kg unchanged; solution Principle matches.
-- L2-08 check: 3 x 2.30 = 6.9 GW, 6.9 GW / 5 MW = about 1380, so about 1400 turbines, thousands: arithmetic right and a better sanity check than before.
+- Delta: one number, 2.7 -> 2.8 in the check line; 0.90 x 600 x 8760 = 4.73 TWh and 0.33 x 600 x 8760 = 1.73 TWh: the answer 2.7 is right, the check is only a rounding artefact, not misleading enough to block.

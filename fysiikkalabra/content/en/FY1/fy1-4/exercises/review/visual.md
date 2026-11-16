@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b8ddc0021c0bd74e
+CONTENT-HASH: 9446a1ba13882d4d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-4 solutions 03 — the display block sits mid-sentence after the bold lead-in; reads correctly, optional to end the sentence before it.
-- [Minor] carried from round 1, not re-opened: captures 05-08, the sans-serif litre symbol `l` reads as `|`; capture 13, inline fractions nearly touch the line below.
+- [Minor] fy1-4-L2-09 text — "at one-hour intervals" asks for the real data, but the invented table (and the solution) is at two-hour intervals; say "at one- or two-hour intervals" or match the table.
+- [Minor] fy1-4-L2-09 data table (capture L2-1280-12) — the caption wraps to four lines in a narrow card and the 13 rows are tall; a wider caption or tighter rows would shorten it. Check that the set's other data tables look the same (consistency).
+- [Minor] Model answer a) — "a thin curve may be drawn through them" sits beside the rule that points are not joined; fine as a stated exception, optionally "a smooth curve, not a broken line".
 
 ## Checked
-- delta review 5d reflow, round 3: only the one re-broken solution formula changed (`git diff HEAD~1`, numbers, units and words unchanged).
-- opened the 360 px capture 03 (en) at readable resolution: two rows inside the formula card, both left-aligned, break before the equals sign and outside numbers and units, decimal separator and thin space before the unit correct, nothing clipped or scrolling; the sentence's comma sits after the block and the clause continues naturally below it.
-- not re-opened this round: the other captures of this set (unchanged since round 1).
+- Opened L2-1280 captures 12, 13, 14 (task 4-18 with its data table, answer row, whole solution open); delta, only the added exercise judged.
+- KaTeX renders; units upright with thin space, degree-Celsius per hour correct, fractions and the aligned substitution block read well, minus sign in -1.9 correct, answer and reasonableness blocks present; no clipping.
+- Not re-opened: other exercises (unchanged); 360 px captures not separately opened, the 1280 captures show no overflow.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 5 · English 4 · accessibility 4

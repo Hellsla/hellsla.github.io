@@ -235,3 +235,104 @@ Object B would float in water and the others would sink. The order by mass would
 **Substitution:** $m = 8.96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5.0 \cdot 10^{-5}\,\text{m}^3 = 0.448\,\text{kg}$
 **Answer:** $0.45\,\text{kg}$ (more precisely $0.448\,\text{kg}$), two significant figures as in the volume $50\,\text{cm}^3$. The answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** Copper is about $9$ times as dense as water, and $50\,\text{cm}^3$ of water has a mass of $50\,\text{g}$. So the copper has a mass of about $9 \cdot 50\,\text{g} = 450\,\text{g} = 0.45\,\text{kg}$.
+
+## fy1-7-L2-09
+**Given:** the rows *Mass* ($10^{24}\,\text{kg}$), *Diameter* ($\text{km}$, measured at the equator) and *Density* ($\text{kg/m}^3$) of NASA's *Planetary Fact Sheet*, read 16 November 2026. Volume of a sphere $V = \dfrac{\pi d^3}{6}$.
+
+| Planet | $m\,(10^{24}\,\text{kg})$ | $d\,(\text{km})$ | $\rho\,(\text{kg/m}^3)$ |
+|---|---|---|---|
+| Mercury | $0.330$ | $4879$ | $5429$ |
+| Venus | $4.87$ | $12\,104$ | $5243$ |
+| Earth | $5.97$ | $12\,756$ | $5514$ |
+| Mars | $0.642$ | $6792$ | $3934$ |
+| Jupiter | $1898$ | $142\,984$ | $1326$ |
+| Saturn | $568$ | $120\,536$ | $687$ |
+| Uranus | $86.8$ | $51\,118$ | $1270$ |
+| Neptune | $102$ | $49\,528$ | $1638$ |
+
+**Find:** a) a table of four planets; b) the graph $\rho(d)$ and its relationship; c) the mean density $\rho = \dfrac{m}{V}$ of the Earth and Saturn and the comparison with NASA's values; d) an evaluation of the claim
+
+**Principle:** The mean density is the mass of the whole planet divided by its volume. When the planet is taken to be a sphere, its volume follows from its diameter. The graph shows whether density depends on size. The claim is about every planet, so a single clear exception refutes it as a general rule.
+
+**Model answer a):** For example the Earth, Mars, Saturn and Neptune: their rows are in the table above. Any other choice is as good, as long as it includes the Earth and Saturn.
+
+**Reading the graph:** The diameter $d$ in kilometres goes on the horizontal axis and the mean density $\rho$ in $\text{kg/m}^3$ on the vertical axis. The points are not joined, because they are different planets, not successive measurements of one quantity.
+
+**Model answer b):** The points fall into two groups. The small rocky planets ($d < 13\,000\,\text{km}$) are dense, $\rho \approx 3900$–$5500\,\text{kg/m}^3$. The giant planets ($d > 49\,000\,\text{km}$) are much less dense, $\rho \approx 690$–$1640\,\text{kg/m}^3$. The graph has no single rising or falling curve on which the points lie. Even within the groups the order does not follow size: Mercury is the smallest planet but almost as dense as the Earth, and the smallest giant, Neptune, is the densest giant.
+
+**Formula:** $V = \dfrac{\pi d^3}{6}$, so $\rho = \dfrac{m}{V} = \dfrac{6m}{\pi d^3}$
+
+**Conversions:** The diameter into metres and the mass into kilograms: for the Earth $d = 12\,756\,\text{km} = 1.2756\cdot10^{7}\,\text{m}$ and $m = 5.97\cdot10^{24}\,\text{kg}$, for Saturn $d = 120\,536\,\text{km} = 1.20536\cdot10^{8}\,\text{m}$ and $m = 568\cdot10^{24}\,\text{kg} = 5.68\cdot10^{26}\,\text{kg}$.
+
+**Substitution:** The Earth:
+
+$$\begin{aligned}
+\rho_\text{Earth} &= \dfrac{6m}{\pi d^3} \\
+&= \dfrac{6 \cdot 5.97\cdot10^{24}\,\text{kg}}{\pi \cdot (1.2756\cdot10^{7}\,\text{m})^3} \\
+&\approx 5.49\cdot10^{3}\,\text{kg/m}^3
+\end{aligned}$$
+
+Saturn:
+
+$$\begin{aligned}
+\rho_\text{Saturn} &= \dfrac{6m}{\pi d^3} \\
+&= \dfrac{6 \cdot 5.68\cdot10^{26}\,\text{kg}}{\pi \cdot (1.20536\cdot10^{8}\,\text{m})^3} \\
+&\approx 619\,\text{kg/m}^3
+\end{aligned}$$
+
+**Model answer c):** The Earth's calculated mean density differs from NASA's value $5514\,\text{kg/m}^3$ by only about $0.4\,\%$. Saturn's calculated value is about $10\,\%$ smaller than NASA's $687\,\text{kg/m}^3$. The difference comes from the model, not from a mistake in the calculation. Saturn turns once about its axis in about $11$ hours, and a fast-spinning ball of gas is flattened: from pole to pole it is clearly narrower than across the equator. A sphere calculated from the equatorial diameter is therefore too large, and when the volume is too large, the calculated density is too small. NASA divides the mass by the planet's true volume. The Earth is also slightly flattened by its rotation, but much less than Saturn, because it spins more slowly. The Earth's small difference comes mostly from this flattening.
+
+**Model answer d):** The claim is wrong. The four largest planets are the least dense in the data, and the largest planet, Jupiter, is about four times less dense than the Earth. The claim fails within the groups too: Saturn is larger than Neptune but has only about half its density, and small Mercury is denser than the larger Mars. Density depends above all on what the planet is made of. The rocky planets are rock and metal, the giants mostly light substances such as hydrogen and helium. Size does not tell us the density. Data on eight planets would also not be enough for a general law, even if it showed some trend.
+
+**Answer:** The Earth's mean density is $\rho_\text{Earth} \approx 5.49\cdot10^{3}\,\text{kg/m}^3$, three significant figures like the mass $5.97\cdot10^{24}\,\text{kg}$. Saturn's mean density is $619\,\text{kg/m}^3$.
+
+**Reasonableness:** The Earth's mean density is greater than that of surface rock, about $3000\,\text{kg/m}^3$, because inside the Earth there is a dense iron core. Saturn's mean density is less than that of water, $1000\,\text{kg/m}^3$, which fits a planet made mostly of hydrogen and helium.
+
+## fy1-7-L2-10
+**Given:** masses and volumes of the aluminium block read in the simulation. Example measurement on 16 November 2026; your own numbers depend on the masses you chose.
+
+| $m\,(\text{kg})$ | $V\,(\textsf{l})$ | $\dfrac{m}{V}\,\left(\tfrac{\text{kg}}{\textsf{l}}\right)$ |
+|---|---|---|
+| $4.00$ | $1.48$ | $2.70$ |
+| $8.00$ | $2.96$ | $2.70$ |
+| $12.00$ | $4.44$ | $2.70$ |
+| $16.00$ | $5.93$ | $2.70$ |
+| $20.00$ | $7.41$ | $2.70$ |
+
+A check point not used for the model: at the volume $V_\text{pred} = 9.26\,\textsf{l}$ the simulation showed the mass $25.00\,\text{kg}$.
+
+**Find:** a) the table of measurements and the graph $m(V)$; b) the model and the density $\rho$ of aluminium in $\text{kg/m}^3$; c) the prediction $m_\text{pred}$ and its check; d) whether a material can be identified from its density alone
+
+**Principle:** For objects of one substance the mass is directly proportional to the volume, $m = \rho V$. The points of the mass–volume graph then lie on a line through the origin whose slope is the density of the substance.
+
+**Model answer a):** The mass is read in the field Mass of the control panel and the volume in the field Volume. The water level reading of the pool is not used, because a floating block is not entirely under water, and then the rise of the water level is not the block's volume. Aluminium sinks, so for it the rise of the water level would equal the volume of the block.
+
+**Reading the graph:** The volume $V$ in litres goes on the horizontal axis and the mass $m$ in kilograms on the vertical axis, both axes starting from zero. The points lie on a line through the origin. The slope is read from two points of the line far apart, for example the origin and the point $(7.41\,\textsf{l};\ 20.00\,\text{kg})$, or it is given by a fit: $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$.
+
+**Model answer b):** The model is $m = kV$ with $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$. The slope is the density of aluminium, $\rho = k$. The ratios $\dfrac{m}{V}$ are the same on every row to three figures, so the density does not depend on the size of the block. The small variation in the fourth figure comes from rounding the volume reading to $0.01\,\textsf{l}$.
+
+**Formula:** $\rho = \dfrac{m}{V}$, or $m = \rho V$; the prediction $m_\text{pred} = \rho V_\text{pred}$
+
+**Conversions:** $1\,\textsf{l} = 1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$, so
+
+$$\begin{aligned}
+\rho &= 2.70\,\dfrac{\text{kg}}{\textsf{l}} \\
+&= \dfrac{2.70\,\text{kg}}{10^{-3}\,\text{m}^3} \\
+&= 2.70\cdot10^{3}\,\dfrac{\text{kg}}{\text{m}^3}
+\end{aligned}$$
+
+**Substitution:** The prediction of part c):
+
+$$\begin{aligned}
+m_\text{pred} &= \rho V_\text{pred} \\
+&= 2.70\,\dfrac{\text{kg}}{\textsf{l}} \cdot 9.26\,\textsf{l} \\
+&\approx 25.0\,\text{kg}
+\end{aligned}$$
+
+**Model answer c):** The simulation showed the mass $25.00\,\text{kg}$, so the prediction was right to three significant figures. The model works outside the measured range too, because the ratio of mass to volume is a constant characteristic of the substance.
+
+**Model answer d):** No. On the scale of the density meter glass (Glass) is at the same place as aluminium, $2.70\,\tfrac{\text{kg}}{\textsf{l}}$, so these two substances have the same density in the simulation. Density tells which substances are possible, but not always unambiguously which substance it is. In a real measurement the density also has an uncertainty, and several substances may fit inside it. A hollow object or a mixture of two substances can also have the same mean density as some pure substance. A reliable identification needs other properties, such as colour, transparency, hardness or electrical conductivity.
+
+**Answer:** The density of aluminium is $\rho \approx 2.70\cdot10^{3}\,\text{kg/m}^3$, three significant figures like the volume readings.
+
+**Reasonableness:** Aluminium is about $2.7$ times as dense as water, and the aluminium block sinks in the simulation's pool. The result equals the value $2700\,\text{kg/m}^3$ in the density table of the chapter.

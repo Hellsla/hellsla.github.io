@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eb49af87d3a81c59
-SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
+CONTENT-HASH: 09e49c1d1adb4b79
 
 ## Blocking
 (none)
@@ -9,8 +8,6 @@ SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
 (none)
 
 ## Checked
-- L1-09: E = Hm = 47 x 2.0 = 94 MJ, m = eE = 55 g/MJ x 94 MJ = 5.17 kg; ~2.6 kg CO2 per kg gas plausible (CH4 gives 2.75); carbon as CO2 source right. Emission factor's source not reported (teacher 2026-11-12).
-- L2-09: fy2-8/emissions coal 820, gas 490 g CO2-eq/kWh (IPCC AR5); (820 - 490) x 20 000 kWh = 6.6 t; 16.4 t and 9.8 t check, 40 % right.
-- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
-- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
-- No scope breach, no guardrail break (A or B) found.
+- Delta: L2-11 c) export values now listed "+2142 MW, +1124 MW and −152 MW" instead of an arrow chain; same values, signs (export +) and order as the table and as the Finnish (fi line 319).
+- Rest of the paragraph unchanged (4.2 and 1.6 g/kWh per 1000 MW, ratio 2.7; hydro +400/−140 MW).
+- Hash identical at start and end.

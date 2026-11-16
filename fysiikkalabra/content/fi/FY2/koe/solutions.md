@@ -28,7 +28,7 @@
 **Perustelu:** Häviöteho on $0{,}025 \cdot 500\,\text{MW} = 12{,}5\,\text{MW}$. Vaihtoehto $487{,}5\,\text{MW}$ on perille tuleva teho, ei häviö.
 
 ### j)
-**Perustelu:** Kasvihuonekaasut, kuten hiilidioksidi ja metaani, päästävät näkyvän valon lähes esteettä läpi, mutta ne imevät Maan pinnan lähettämää lämpösäteilyä ja hidastavat sen pääsyä avaruuteen. Ilman luonnollista kasvihuoneilmiötä Maan pinta olisi noin $-18\,{}^\circ\text{C}$ eli nykyistä paljon kylmempi. Otsonikato on eri ilmiö.
+**Perustelu:** Kasvihuonekaasut, kuten hiilidioksidi ja metaani, päästävät näkyvän valon lähes esteettä läpi, mutta ne imevät Maan pinnan lähettämää lämpösäteilyä ja hidastavat sen pääsyä avaruuteen. Maan yksinkertaisesta säteilytasapainomallista saadaan efektiiviseksi säteilylämpötilaksi noin $-18\,{}^\circ\text{C}$, mutta maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$. Ero johtuu luonnollisesta kasvihuoneilmiöstä. Otsonikato on eri ilmiö.
 
 ### Yleisiä virheitä
 - Kohdassa b ajatellaan, että energia häviää, kun liike loppuu.
