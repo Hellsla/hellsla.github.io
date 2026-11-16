@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a72da2feb382aa9f
-SCOPE: delta numbers from e70ffa37157788e4 base 6ecef1197865
+CONTENT-HASH: 09d8c42a8dbfd842
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta review. Changed line is the single ratio $4.7 : 1.7 \approx 2.8$ in 6-L3-02; judged from the source and the fy2-6-open-exercises-L3-1280-4.png context (display boxes in this exercise render cleanly). I did not locate the exact changed line in a capture.
-- Hash at start and end: a72da2feb382aa9f.
+- en open-exercises-1280-{6, 7, 9} (level 1: tasks 6-6, 6-7, 6-9 model answers split into paragraphs).
+- en open-exercises-L2-1280-{6, 7, 8, 9, 10} (6-15 Answer split around the display, 6-16, 6-17 Answer and Reasonableness).
+- en open-exercises-L3-1280-{3, 5, 6, 7, 8, 9} (6-21 to 6-23: answer c), Reasonableness, Principle and Answer paragraphs).
+- Paragraph spacing even, punctuation after display maths intact, no clipping or overflow.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
