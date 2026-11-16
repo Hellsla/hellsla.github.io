@@ -290,6 +290,19 @@
       "answer": 1.0,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-08",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.bipm.org/en/si-base-units/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – The kilogram</a> ja <a href=\"https://www.bipm.org/en/history-si/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – Kilogrammen historia (History of the SI: kilogram)</a> (luettu 16. marraskuuta 2026)\n\nMiksi kilogramman määritelmä muutettiin? Kansainvälinen paino- ja mittatoimisto BIPM kertoo ensimmäisellä sivulla kilogramman nykyisen määritelmän ja toisella sivulla, miten kilogramma määriteltiin ennen.\n\na) Vertaile kilogramman vanhaa ja nykyistä määritelmää. Miksi kappaleeseen perustuvasta määritelmästä luovuttiin?\n\nb) Oletetaan, että yhden kilogramman vertailukappaleen massa muuttuu yhden milligramman. Laske massan suhteellinen muutos prosentteina. Vertaa tulosta siihen, kuinka paljon BIPM:n mukaan kansallisten vertailukappaleiden massat olivat eronneet kansainvälisen vertailukappaleen massasta.\n\nc) Selitä, miksi luonnonvakioon perustuva määritelmä on kansainvälisen mittaamisen kannalta hyödyllinen.\n\nd) Arvioi, tarkoittaako täsmällisesti määritelty mittayksikkö sitä, että kaikki tällä yksiköllä tehdyt mittaukset olisivat virheettömiä.\n\nVastauskenttään tulee kohdan b) yhden milligramman muutos prosentteina.",
+      "kind": [
+        "data",
+        "concept",
+        "reasoning"
+      ],
+      "answer": 0.0001,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [

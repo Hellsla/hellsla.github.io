@@ -336,6 +336,80 @@
           "feedback": "The error is on line 3: the change in time is $8.0\\,\\text{min}$, not $12.0\\,\\text{min}$. So the correct slope is $12.0\\,\\textsf{l} : 8.0\\,\\text{min} = 1.5\\,\\tfrac{\\textsf{l}}{\\text{min}}$. The result of line 4, $1.0\\,\\tfrac{\\textsf{l}}{\\text{min}}$, is too small, so the calculation has an error."
         }
       ]
+    },
+    {
+      "id": "fy1-4-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://www.ilmatieteenlaitos.fi/havaintojen-lataus\" target=\"_blank\" rel=\"noopener\">Finnish Meteorological Institute – Download observations</a> (read 16 November 2026)\n\nHow does the air temperature change during a day? On the Finnish Meteorological Institute's page, find the air temperature of one Finnish weather station for one day at one-hour intervals. Record the station and the date of your data. If you cannot download observations, use the table below. It is an invented example that resembles a clear day in May inland.\n\na) Plot the temperature as a function of time. Name the axes and mark the units.\n\nb) Choose from the graph a time interval in which the temperature changes roughly evenly. Find the mean rate of change of the temperature in this interval.\n\nc) Make a linear model for the chosen interval. Compare the temperatures given by the model with the measurements inside the interval and outside it.\n\nd) Explain why your model cannot be used to forecast the temperature of the following day.\n\nEnter in the answer box the mean rate of change of the temperature in the table between 6 and 12 o'clock in ${}^\\circ\\text{C/h}$.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 1.517,
+      "unit": "°C/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Air temperature during one day (invented example)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "8.1"
+          ],
+          [
+            "2",
+            "6.9"
+          ],
+          [
+            "4",
+            "6.0"
+          ],
+          [
+            "6",
+            "7.2"
+          ],
+          [
+            "8",
+            "10.4"
+          ],
+          [
+            "10",
+            "13.5"
+          ],
+          [
+            "12",
+            "16.3"
+          ],
+          [
+            "14",
+            "17.8"
+          ],
+          [
+            "16",
+            "18.1"
+          ],
+          [
+            "18",
+            "16.4"
+          ],
+          [
+            "20",
+            "13.2"
+          ],
+          [
+            "22",
+            "10.6"
+          ],
+          [
+            "24",
+            "9.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

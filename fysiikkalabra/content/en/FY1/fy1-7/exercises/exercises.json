@@ -285,6 +285,37 @@
       "answer": "Object B ($0.90\\,\\text{g/cm}^3$), object D ($1.2\\,\\text{g/cm}^3$), object A ($2.7\\,\\text{g/cm}^3$), object C ($9.0\\,\\text{g/cm}^3$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/\" target=\"_blank\" rel=\"noopener\">NASA – Planetary Fact Sheet</a> (read 16 November 2026)\n\nCan you tell a planet's density from its size? NASA's table gives, among other things, the mass of each planet of the Solar System (Mass, in $10^{24}\\,\\text{kg}$), its diameter (Diameter, $\\text{km}$) and its mean density (Density, $\\text{kg/m}^3$). The page's <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/planetfact_notes.html\" target=\"_blank\" rel=\"noopener\">Notes on the Fact Sheets</a> say that the diameter is measured at the equator. The volume of a sphere is $V = \\dfrac{\\pi d^3}{6}$, where $d$ is the diameter of the sphere.\n\na) Choose four planets, one of them the Earth and one Saturn. Collect their masses, diameters and mean densities in a table.\n\nb) Plot the mean density of all eight planets as a function of the diameter. Describe the relationship the graph shows.\n\nc) Calculate the mean density of the Earth and of Saturn from their mass and diameter. Compare the results with NASA's mean densities. Why is Saturn's difference much larger than the Earth's?\n\nd) A student claims: “The larger a planet is, the greater its density.” Evaluate the claim with the data.\n\nEnter in the answer box the Earth's mean density from part c) in $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 5493,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "Part c): Saturn turns once about its axis in about $11$ hours (the row Rotation Period). Think about the shape of a fast-spinning ball of gas and what it does to a volume calculated from the equatorial diameter."
+      ]
+    },
+    {
+      "id": "fy1-7-L2-10",
+      "level": 2,
+      "text": "Source material: <a href=\"https://phet.colorado.edu/en/simulations/density\" target=\"_blank\" rel=\"noopener\">PhET – Density</a> (read 16 November 2026)\n\nCan a material be identified by its density? Use the simulation to study objects of one material in different sizes. Open the Intro screen and choose aluminium (Aluminum) as the material of the block. Collapse the density meter (Density) at the top with its minus button, so that you find the density yourself.\n\na) Change the block's mass with the slider (Mass) and read the block's mass and volume (Volume) in the control panel for at least five different masses. Record the results in a table and plot the mass as a function of the volume.\n\nb) Fit a straight line to the points and write the model as an equation. Use the model to find the density of aluminium in $\\text{kg/m}^3$.\n\nc) Set the volume to a value you did not measure, for example about $9\\,\\textsf{l}$. Predict the block's mass with your model and check the prediction in the simulation.\n\nd) Open the density meter again and look at the materials marked on its scale. Can the material of an unknown object be identified unambiguously from its density alone? Evaluate.\n\nEnter in the answer box the density of aluminium from part b) in $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 2700,
+      "unit": "kg/m³",
+      "tolerance": 0.02
     }
   ],
   "level3": [

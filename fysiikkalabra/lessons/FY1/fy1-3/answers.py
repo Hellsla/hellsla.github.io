@@ -51,4 +51,7 @@ cart = [2.41, 2.38, 2.44, 2.40, 2.43, 2.39, 2.42]                  # data of L3-
 a["fy1-3-L3-04"] = round(mean(cart), 2)                            # 2,41 s (with the outlier 19,84 s / 8 = 2,48 s)
 a["fy1-3-L3-05"] = round((2.74 - 2.60) - (0.05 + 0.05), 2)         # difference 0,14 g/cm³ − 0,10 g/cm³ = 0,04 g/cm³ (intervals 2,69…2,79 and 2,55…2,65 do not overlap)
 a["fy1-3-L1-09"] = round((mean([1.004, 1.012, 1.008, 1.014, 1.012]) - 0.998206) / 0.998206 * 100, 2)   # MAFY table: water 20 °C 0,998206 g/cm³; mean 1,010 -> deviation 1,18 %
+# FY1-A3 (work queue 19): CERN OPERA, s = 730 km, dt = 60 ns
+_t = 730e3 / 2.998e8                              # t = s/c = 2,435e-3 s
+a["fy1-3-L2-09"] = 60e-9 / _t * 100               # dt/t = 2,46e-5 = 0,00246 % -> 0,0025 %; c·dt = 18 m
 print(json.dumps(a))

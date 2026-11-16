@@ -321,6 +321,19 @@
           "feedback": "An over-precise claim. An average must not have more significant figures than the uncertainty allows (the averages given by the calculator, $14.30\\,\\text{s}$ and $14.36\\,\\text{s}$, are treated as exact in the comparison, but the result is given rounded): the uncertainty of the results is $0.2\\,\\text{s}$, so the result can only be given to a tenth of a second. Repetition reduces random error but does not make the result accurate to a thousandth of a second."
         }
       ]
+    },
+    {
+      "id": "fy1-3-L2-09",
+      "level": 2,
+      "text": "Source material: <a href=\"https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/\" target=\"_blank\" rel=\"noopener\">CERN – OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso</a> (read 16 November 2026)\n\nDid neutrinos travel faster than light? In 2011 the OPERA experiment reported measurements by which neutrinos sent from CERN to Gran Sasso in Italy seemed to travel faster than light. CERN's page has the original press release and, above it, the later updates.\n\na) What did the researchers measure, and how accurately did they state the distance and the time? Why was the result surprising?\n\nb) Calculate how long light takes to travel $730\\,\\text{km}$ in a vacuum. How large is a deviation of $60\\,\\text{ns}$ relative to the travel time, as a percentage? How far does light travel in $60\\,\\text{ns}$?\n\nc) What was later found in the measuring system, and what did the other experiments measure? Was the error in the original result a random error or a systematic error? Justify.\n\nd) Explain with an example why a single deviating measurement is not enough to overturn a widely tested physical theory.\n\nEnter in the answer box the relative deviation of part b) as a percentage.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.002464,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

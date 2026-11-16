@@ -203,3 +203,41 @@
 **Substitution:** $t = \dfrac{3.844\cdot10^{8}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.282\,\text{s} \approx 1.28\,\text{s}$
 **Answer:** $t \approx 1.28\,\text{s}$ to three significant figures. The Moon's distance in the MAFY table (Aurinkokunta) is a mean value, centre to centre, and the signal path is not exactly that, so three significant figures are enough. An answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Light travels about $3\cdot10^{8}\,\text{m}$ in a second and the distance to the Moon is about $4\cdot10^{8}\,\text{m}$, so the travel time is a little over a second. The result agrees.
+
+## fy1-2-L2-08
+**Given:** BIPM's pages: from 1889 the kilogram was the mass of the international prototype, an object made of platinum-iridium; since the decision of 2018 it is defined by the fixed numerical value of the Planck constant $h$. In the verification of 1989–1991 the median difference between the national prototypes and the international one was about $25\,\mu\text{g}$. In part b) the change $\Delta m = 1\,\text{mg}$ and the mass $m = 1\,\text{kg}$.
+
+**Find:** a) a comparison of the definitions and the reason for the change; b) the relative change $\dfrac{\Delta m}{m}$ as a percentage and a comparison with the observed difference; c) the benefit of a definition based on a constant of nature; d) whether a measurement is free of error
+
+**Principle:** The definition of a unit says what one kilogram is. A relative change is the change divided by the original value, and it can be calculated only when both are in the same unit.
+
+**Model answer a):** The old kilogram was the mass of one object: a platinum-iridium cylinder kept at BIPM near Paris. National copies were made of it too. In the new definition the Planck constant has been given an exact numerical value, $h = 6.626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, and the kilogram follows from it together with the definitions of the metre and the second. The definition based on an object was given up because the comparisons showed the masses of the national copies drifting away from the mass of the international prototype. No one could know which object was changing, since by definition the international prototype always had a mass of exactly $1\,\text{kg}$.
+
+**Formula:** the relative change $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
+
+**Conversions:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ and $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2.5\cdot10^{-8}\,\text{kg}$
+
+**Substitution:** A change of one milligram:
+
+$$\begin{aligned}
+\dfrac{\Delta m}{m} &= \dfrac{10^{-6}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 10^{-4}\,\% \\
+&= 0.0001\,\%
+\end{aligned}$$
+
+The observed difference:
+
+$$\begin{aligned}
+\dfrac{\Delta m_\text{BIPM}}{m} &= \dfrac{2.5\cdot10^{-8}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 2.5\cdot10^{-6}\,\%
+\end{aligned}$$
+
+**Model answer b):** A change of one milligram is $0.0001\,\%$, one millionth of the mass. It is $40$ times larger than the observed difference of the prototypes, $25\,\mu\text{g}$, which is only $2.5\cdot10^{-6}\,\%$. Such small differences do not show in everyday measurements, but in the most precise measurements they matter, and they grow the longer the objects keep changing.
+
+**Model answer c):** A constant of nature is the same everywhere and at all times. It cannot wear, get dirty, be damaged or be lost like an object. When the kilogram is based on the Planck constant, any well enough equipped laboratory can realize the kilogram itself, without comparing its weights with one object kept in France. According to BIPM, the new definition assures the long-term stability of the unit of mass and is of more use to modern science.
+
+**Model answer d):** No. The definition says exactly what one kilogram is, but every measurement still has an uncertainty. A balance can be read only to a limited resolution, it has been calibrated only to some accuracy, and the measurement is affected by, for example, the temperature, air currents and the choices of the person measuring. A precise definition ensures that different countries measure the same quantity in the same unit. How accurate a measurement is still depends on the instrument and the method. That is why a result is written with only the digits the measurement justifies.
+
+**Answer:** A change of one milligram is $0.0001\,\%$, or $10^{-4}\,\%$, of the mass. The result has one significant figure, because the change $1\,\text{mg}$ is given to one figure.
+
+**Reasonableness:** A kilogram has a million milligrams, so one milligram is one millionth. A per cent is one hundredth, so one millionth is $\dfrac{100}{1\,000\,000}\,\% = 0.0001\,\%$.
