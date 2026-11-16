@@ -270,6 +270,15 @@ käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämm�
 se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
 `reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
 
+## 8i-b. Taulukon solujen yhdyssanat tavutetaan liitoksesta (koordinaattori 2026-11-16)
+
+Varattu: claude/tablefit-yhdyssanat
+
+`scripts/tablefit.py` tavutti taulukon solut pelkällä tavusäännöllä (`hyphenate_fi`), joka katkaisee vokaalialkuisen
+yhdyssanan väärin: "Lämpöe-nergia", "Ydine-nergia" (8i:n energialajitaulukko, site/:ssa jo valmiiksi monella sivulla).
+Korjaus: `_cell()` käyttää korttiotsikoiden `hyphenate_card`-funktiota (liitokset energia, aalto, aika, …), testi
+`test_chapter_nav.py`:ssä. Jaettu muutos: ajetaan yksin, kohdan 5 (#640) jälkeen ja ennen 8i:tä (#642).
+
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
@@ -304,12 +313,6 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
-
-## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
-
-FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
-1. Tehty (#639): pistemerkinnät (`exam.*`, `practice.points`, `js.mc_score`, `js.exam_total`) sitovalla välilyönnillä kaikissa kielissä.
-2. FY7-kokeen Minor-korjaukset (uusi katselmointi tai kevyt kuljetus): k7 c:n Sijoitukseen yksikkö luvulle 50 (`· 50 €/MWh`) ja tulos; k4 c:ssä 2789 (ei 2788) tai 12,374 V ketjussa; k5 b:n keskiarvomurtoluku isompana (`\tfrac` tai oma rivi); k6 d:n "noin yhdeksässä vuodessa" → "noin 9–10 vuodessa"; k2 c:n rivi B²k tiukka 390 px:llä; k7 b nimeää Wienin vakion, harkitse. Pedagogiikan huomio: k3 ja k4 valittaessa ei kuvaaja- tai epävarmuusosaa, harkitse lyhyttä osaa toiseen.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
