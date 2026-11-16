@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9ff2b23aaedfa400
+CONTENT-HASH: 48f32a459da5ae07
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- solutions.md (plate separation task) — three figures for 15,0 µJ rest on 500 V and 120 pF; the task's own digits decide whether this is right, and the convention differs from 1000 µF (counted as 1,0 · 10^-3 F, two figures) in another task. Fix: one sentence in the course notes on how trailing zeros are read.
+- fy6-13-L2-09: the answer box tests only b), which does not need the simulation; the simulation work (a, c) is unassessed by the box. Acceptable because the solution states what to observe.
+- a) asks for two data series plus a description: workload is on the upper side for level 2; fine for a lesson hour.
+- Solution a) uses an example calculation (0,44 pF) clearly marked as not a simulation reading: good.
 
 ## Checked
-- Scientific notation (3,6 · 10^2 µJ, 3,2 · 10^2 V, 1,4 · 10^2 mJ, 3,7 · 10^2 µJ) matches the arithmetic and the stated figure count.
-- 144 mJ to 1,4 · 10^2 mJ eli 0,14 J: the calculator value is shown, the check line still works.
-- 63 mJ: the limiting datum (24 V) is named; correct.
-- Caption marker removal is a content-free change.
+New task against section 6: simulation is the right tool (Q-U proportionality, C vs d), c) asks formula and check, d) compares with a battery from an earlier chapter; 72 mJ, 4x, 0,29 J, 9,6e5 ratio verified; Finnish terms explained; set mix unchanged.

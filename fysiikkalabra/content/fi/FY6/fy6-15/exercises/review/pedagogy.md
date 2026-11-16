@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 88b30325b9aedc30
-SCOPE: delta added-exercise from c650c557cc001a60 base 8f23aa7ae3bd
+CONTENT-HASH: 46bbe628c686170c
 
 ## Blocking
+(none)
 
 ## Polish
-- solutions.md fy6-15-L2-08, Järkevyys: "sulake ei välttämättä laukea heti" states a fuse behaviour the brief does not teach; drop the clause.
-- L2-08 overlaps L2-06 and L2-01 (group load against a fuse); the new part is reading a step graph. Accepted; add no further group-load task at level 2.
+- fy6-15-L2-09 — part c names both dangers, which makes the first question of a ('mitä vaaroja se nimeää') partly redundant; the electric-shock explanation (live plug pins) goes a little beyond the chapter's physics.
+- Part c's 19.5 A answer depends on the panel socket sitting between fuse and loads; the task says so only in the solution. State the assumption in the task.
+- Tukes page not opened; a depends on the student reading it.
 
 ## Checked
-- Earlier polish taken: the task now ends with the safety question (does the current exceed the fuse rating), answer box the current.
-- Figure ex-kuorma: step graph; the description lists all five steps, no current and no fuse limit.
-- 4000 W : 230 V = 17,39 A; key 17,3913 with 3 % tolerance accepts 17 A; 230 · 16 = 3680 W check is sound.
-- Level 2 fits: maximum from a step graph, then I = P : U; the solution explains why the current peaks at the highest power.
-- Situation first, question last; Finnish and "$16\,\text{A}$:n" correct.
+- New task: critical-reading item with real engineering sense; 4 parts rising: interpret, P = UI, fuse and heating argument, evaluate consumer claim (d answered by title and situation).
+- Distinguishes safe versus allowed in d; CE note is accurate.
+- Solution clear; answer 3.48 A matches.
+- Set 9 level-2 tasks, mix and order intact.
