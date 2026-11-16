@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 88b30325b9aedc30
-SCOPE: delta added-exercise from c650c557cc001a60 base 8f23aa7ae3bd
+CONTENT-HASH: 46bbe628c686170c
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-15/exercises/solutions.md (fy6-15-L2-08, Vastaus) — "kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa" names a value that does not enter the calculation; the limiting data are the graph reading 4000 W (on a 1000 W gridline) and U = 230 V.
+- exercises.json (fy6-15-L2-09 a) — the task still asks "mitä vaaroja se nimeää", which only the notice itself can answer. The solution handles this ("Aineisto nimeää vaarat; fysiikan perusteella niitä on ainakin kaksi"), so it is not blocking.
 
 ## Checked
-- Hash 88b30325b9aedc30 at start and end; delta round 2: only fy6-15-L2-08 judged.
-- Round-1 blocking item resolved: the task and the figure's alt text now say "esimerkkiaineisto", not "mitattu aineisto".
-- Figure generator: steps 1000 / 3000 / 4000 / 2000 / 3500 W at 0–4 / 4–10 / 10–16 / 16–24 / 24–30 min, as the alt text and the solution's reading; maximum 4000 W on a gridline; no current or fuse limit drawn.
-- Physics: the group's loads are in parallel at 230 V, so I = P : U (power factor about 1 as in the brief, C).
-- Recomputed: I = 4000 W : 230 V = 17,39 A; answers.py agrees; tolerance 3 % covers the rounded 17 A (2,2 % off).
-- Fuse statement right: P_max = 230 V · 16 A = 3680 W; only the 4000 W step exceeds it; "ei välttämättä laukea heti" agrees with the lesson's slow-overload remark.
-- Solution complete: principle and reason, graph reading, formula before numbers, units, real check against 3680 W. Scope: FY6 sähköturvallisuus (sulake).
+- Round-1 Blocking 1 is fixed. The claim that Tukes has not investigated conformity is gone, and d) now rests on the task's own premise (an online shop sells the panels) and on the title "Älä käytä pistorasiaan kytkettävää aurinkopaneelia".
+- Round-1 Blocking 2 is fixed. The "Tukes pyytää, ettei niitä osteta… myydään suomalaisissa ja ulkomaisissa verkkokaupoissa" sentence is removed. The task now says "Oletetaan, että eräs verkkokauppa myy…", and nothing beyond the title is attributed to the notice.
+- c) now names the two hazards in the task itself (shock from live plug pins, overheating of the group cable), so the physics explanation does not depend on unverified content. It is unchanged and correct: 16 A + 3,48 A ≈ 19,5 A in part of the cable, and (19,478/16)² ≈ 1,48 times the RI² heating.
+- d): "being on sale proves neither safety nor permission" and "CE marking is the maker's declaration" are correct general facts, not attributed to the source.
+- b) I = P/U = 3,478 A; answers.py and exercises.json agree (tolerance 0,02). The power-factor-one and effective-value conditions are stated.
+- The caption changes (provenance badge removed) leave L2-05, L2-06, L3-04 and L3-05 still saying "esimerkkiaineisto" in their task text, so whether the data is measured or invented is still stated.
+- Reflowed chains in the older tasks: same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

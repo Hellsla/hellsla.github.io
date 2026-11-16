@@ -303,9 +303,9 @@
       "prompt": "Auton akun lähdejännite on $12{,}4\\,\\text{V}$ ja sisäinen resistanssi $0{,}050\\,\\Omega$. Akkua ladataan laturilla, jonka jännite on $14{,}0\\,\\text{V}$. Laturin ja johtojen resistanssi on $0{,}35\\,\\Omega$. Opiskelija laskee latausvirran näin:\n\n$$I = \\frac{14{,}0\\,\\text{V}}{0{,}35\\,\\Omega + 0{,}050\\,\\Omega} = 35\\,\\text{A}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Virtaa ajaa laturin jännitteen ja akun lähdejännitteen erotus: $I = (14{,}0\\,\\text{V} - 12{,}4\\,\\text{V}) : 0{,}40\\,\\Omega = 4{,}0\\,\\text{A}$.",
+          "text": "Virtaa ajaa laturin jännitteen ja akun lähdejännitteen erotus: $$\\begin{aligned} I &= (14{,}0\\,\\text{V} - 12{,}4\\,\\text{V}) \\\\ &: 0{,}40\\,\\Omega \\\\ &= 4{,}0\\,\\text{A} \\end{aligned}$$.",
           "correct": true,
-          "feedback": "Oikein. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa myös lähdejännitteen verran. Jännitelaki antaa $14{,}0\\,\\text{V} - 0{,}40\\,\\Omega \\cdot I - 12{,}4\\,\\text{V} = 0$. Opiskelijan virta $35\\,\\text{A}$ kulkisi vain, jos akun lähdejännite olisi nolla."
+          "feedback": "Oikein. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa myös lähdejännitteen verran. Jännitelaki antaa $$\\begin{aligned} &14{,}0\\,\\text{V} - 0{,}40\\,\\Omega \\cdot I - 12{,}4\\,\\text{V} \\\\ &= 0 \\end{aligned}$$. Opiskelijan virta $35\\,\\text{A}$ kulkisi vain, jos akun lähdejännite olisi nolla."
         },
         {
           "text": "Resistanssit pitää yhdistää rinnankytkennän kaavalla, koska akku ja laturi ovat rinnakkain toistensa kanssa.",
@@ -391,7 +391,7 @@
       "hints": [
         "Mitkä potentiaalin nousut ja laskut silmukassa on, kun virta kulkee akun läpi plusnavalta miinusnavalle?",
         "Jännitelaki: $U_\\text{lat} - RI - R_\\text{s} I - E = 0$.",
-        "$I = (14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}) : (0{,}25\\,\\Omega + 0{,}050\\,\\Omega)$."
+        "$$\\begin{aligned} I &= (14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}) \\\\ &: (0{,}25\\,\\Omega + 0{,}050\\,\\Omega) \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -403,7 +403,7 @@
           "feedback": "Jätit akun sisäisen resistanssin pois. Virta kulkee sekä laturin ja johtojen että akun sisäisen resistanssin läpi: $0{,}25\\,\\Omega + 0{,}050\\,\\Omega = 0{,}30\\,\\Omega$."
         }
       ],
-      "solution": "**Annettu:** $E = 12{,}6\\,\\text{V}$, $R_\\text{s} = 0{,}050\\,\\Omega$, $U_\\text{lat} = 14{,}4\\,\\text{V}$, $R = 0{,}25\\,\\Omega$\n\n**Kysytty:** latausvirta $I$ ampeereina\n\n**Periaate:** Piirissä on yksi silmukka. Jännitelain mukaan laturin jännite on yhtä suuri kuin potentiaalin laskujen summa. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa sekä sisäisessä resistanssissa että lähdejännitteen verran.\n\n**Kaava:** $U_\\text{lat} - RI - R_\\text{s} I - E = 0$, josta $I = \\dfrac{U_\\text{lat} - E}{R + R_\\text{s}}$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssit ohmeina, ja $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Sijoitus:** $I = \\dfrac{14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}}{0{,}25\\,\\Omega + 0{,}050\\,\\Omega} = \\dfrac{1{,}8\\,\\text{V}}{0{,}30\\,\\Omega} = 6{,}0\\,\\text{A}$\n\n**Vastaus:** $6{,}0\\,\\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $1{,}8\\,\\text{V}$ ja resistanssissa $0{,}25\\,\\Omega$.\n\n**Järkevyys:** Napajännite on $12{,}6\\,\\text{V} + 0{,}050\\,\\Omega \\cdot 6{,}0\\,\\text{A} = 12{,}9\\,\\text{V}$. Laturin puolelta laskettuna $14{,}4\\,\\text{V} - 0{,}25\\,\\Omega \\cdot 6{,}0\\,\\text{A} = 12{,}9\\,\\text{V}$. Tulokset täsmäävät, ja napajännite on lähdejännitteen ja laturin jännitteen välissä."
+      "solution": "**Annettu:** $E = 12{,}6\\,\\text{V}$, $R_\\text{s} = 0{,}050\\,\\Omega$, $U_\\text{lat} = 14{,}4\\,\\text{V}$, $R = 0{,}25\\,\\Omega$\n\n**Kysytty:** latausvirta $I$ ampeereina\n\n**Periaate:** Piirissä on yksi silmukka. Jännitelain mukaan laturin jännite on yhtä suuri kuin potentiaalin laskujen summa. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa sekä sisäisessä resistanssissa että lähdejännitteen verran.\n\n**Kaava:** $U_\\text{lat} - RI - R_\\text{s} I - E = 0$, josta $I = \\dfrac{U_\\text{lat} - E}{R + R_\\text{s}}$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssit ohmeina, ja $1\\,\\text{V} : 1\\,\\Omega = 1\\,\\text{A}$.\n\n**Sijoitus:** $I = \\dfrac{14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}}{0{,}25\\,\\Omega + 0{,}050\\,\\Omega} = \\dfrac{1{,}8\\,\\text{V}}{0{,}30\\,\\Omega} = 6{,}0\\,\\text{A}$\n\n**Vastaus:** $6{,}0\\,\\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $1{,}8\\,\\text{V}$ ja resistanssissa $0{,}25\\,\\Omega$.\n\n**Järkevyys:** Napajännite on $$\\begin{aligned} &12{,}6\\,\\text{V} + 0{,}050\\,\\Omega \\cdot 6{,}0\\,\\text{A} \\\\ &= 12{,}9\\,\\text{V} \\end{aligned}$$. Laturin puolelta laskettuna $$\\begin{aligned} &14{,}4\\,\\text{V} - 0{,}25\\,\\Omega \\cdot 6{,}0\\,\\text{A} \\\\ &= 12{,}9\\,\\text{V} \\end{aligned}$$. Tulokset täsmäävät, ja napajännite on lähdejännitteen ja laturin jännitteen välissä."
     },
     {
       "id": "tarkistus-3",

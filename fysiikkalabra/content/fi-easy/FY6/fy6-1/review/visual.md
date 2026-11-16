@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: be926496cafebd38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 5f86d834758d04f3
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
 
 ## Polish
-- lesson.md 'Kytkentämuutos eli piirin muutos' is clumsy; 'Kytkimen aiheuttama muutos' reads naturally (also in exercises/inquiry).
+- none
 
 ## Checked
-- Word-level diff since origin/main of the fi-easy fy6-1 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+- All 1 proof sheet(s) of fi-easy-fy6-1-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

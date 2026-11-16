@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 594c0a10b6dc6ac4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 66118f62baa891be
 
 ## Blocking
 - none
@@ -9,4 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Word-level diff since origin/main of the en sovella sovella files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items. Multi-answer E (6,86 J) and share (46,2 %) list is well-formed; task text and solution both free of discharge instructions; 0,30 A = 300 V / 1,0 kOhm.
+- round 3, delta review (reflow): proof sheets en-sovella-item-1 and -2 (17 formulas), every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

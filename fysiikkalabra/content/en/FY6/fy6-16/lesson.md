@@ -172,7 +172,7 @@
 ## Key idea
 
 ### Battery, power and charging time
-The battery of an electric car is a large lithium-ion battery (chapter *Batteries and the charging circuit*). This chapter uses an example car whose battery has a nominal voltage of $400\,\text{V}$ and a capacity of $160\,\text{Ah}$. The energy of the battery is then $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$, and it is enough for about $350\,\text{km}$ of driving when the car uses $18\,\text{kWh}$ per hundred kilometres. So the battery holds as much energy as a $6\,\text{kW}$ sauna heater uses in over ten hours.
+The battery of an electric car is a large lithium-ion battery (chapter *Batteries and the charging circuit*). This chapter uses an example car whose battery has a nominal voltage of $400\,\text{V}$ and a capacity of $160\,\text{Ah}$. The energy of the battery is then $$\begin{aligned} W &= UQ \\ &= 400\,\text{V} \cdot 160\,\text{Ah} \\ &= 64\,\text{kWh} \end{aligned}$$, and it is enough for about $350\,\text{km}$ of driving when the car uses $18\,\text{kWh}$ per hundred kilometres. So the battery holds as much energy as a $6\,\text{kW}$ sauna heater uses in over ten hours.
 
 The charging time depends on how much energy has to be transferred to the battery and at what power this is done. In charging, part of the energy taken from the grid does not end up in the battery but turns into internal energy of the charger of the car, the cables and the battery, which is transferred to the surroundings as heat. The efficiency of home charging is typically about $80\text{–}95\,\%$, and it is always below $100\,\%$. More energy therefore has to be taken from the grid than is stored in the battery.
 
@@ -455,7 +455,7 @@ The energy of the battery of the example car is $64\,\text{kWh}$. The battery is
 
 <!-- vaihe -->
 
-**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $38.4\,\text{kWh} : 0.90 \approx 42.7\,\text{kWh}$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
+**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $$\begin{aligned} &38.4\,\text{kWh} : 0.90 \\ &\approx 42.7\,\text{kWh} \end{aligned}$$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
 
 <!-- vaihe -->
 

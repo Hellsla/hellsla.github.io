@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 53551bd2dbb38249
-SCOPE: delta added-exercise from 950adae5af06a27a base 8f23aa7ae3bd
+CONTENT-HASH: 323ed597788dc61f
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy6-3 all languages: the data-table caption wraps in a narrow, cramped table box; widen the table or keep the caption on one line.
+- [Minor] fy6-3 solution: the Kaava stage mixes parts b) and c) in one paragraph; give each part's formula its own line. 'Kohta b)' also appears twice (Sijoitus and as its own stage).
 
 ## Checked
-- fy6-3-L1-10 (task 3-10) in open-exercises-1280 parts 9 and 10: task text, open hint, answer row with unit, solution (unit conversion chain, fraction in Sijoitus, Vastaus, Järkevyys). Maths renders cleanly, nothing clipped; the set reads as one.
+- Proof sheets fi-easy-fy6-3-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; capture open-exercises-L2 of fy6-3 opened.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

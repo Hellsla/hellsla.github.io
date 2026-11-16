@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e33869d56c5af25b
+CONTENT-HASH: 0c22cc1c61598201
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-4-theory-1280-1/2: the photo runs across the Kokonaisresistanssi heading and its caption ends near the next subsection. The photo is a dark night scene and the series/parallel point is made only by the caption. Acceptable.
+- none
 
 ## Checked
-batch delta review: opened fy6-4-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- All 1 proof sheet(s) of fi-easy-fy6-4-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

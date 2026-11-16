@@ -31,7 +31,7 @@
         {
           "text": "$0.20\\,\\text{A}$",
           "correct": true,
-          "feedback": "Correct. By Ohm's law $I = U : R = 6.0\\,\\text{V} : 30\\,\\Omega = 0.20\\,\\text{A}$ (chapter *Resistance and Ohm's law*). Today Ohm's law is combined with power."
+          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 6.0\\,\\text{V} : 30\\,\\Omega \\\\ &= 0.20\\,\\text{A} \\end{aligned}$$ (chapter *Resistance and Ohm's law*). Today Ohm's law is combined with power."
         },
         {
           "text": "$180\\,\\text{A}$",

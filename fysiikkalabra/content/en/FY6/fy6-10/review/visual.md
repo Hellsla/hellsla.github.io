@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4e7c178af2d7ca44
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 7a1db7c054f0ee27
 
 ## Blocking
 - none
 
 ## Polish
-- 'Outside a spherically symmetric charged body ... the distance of such spheres' — body then spheres; write 'of such bodies' or say 'spheres' in both.
+- none
 
 ## Checked
-- Word-level diff since origin/main of the en fy6-10 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+- round 3, delta review (reflow): proof sheets en-fy6-10-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

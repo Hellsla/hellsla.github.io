@@ -5,6 +5,6 @@
   },
   {
     "q": "A series connection has a $9.0\\,\\text{V}$ voltage source and three resistors. The voltages of two resistors are $2.0\\,\\text{V}$ and $3.5\\,\\text{V}$. How large is the voltage of the third resistor?",
-    "a": "By the voltage law the voltages of the resistors are together the voltage of the source, so the voltage of the third resistor is $9.0\\,\\text{V} - 2.0\\,\\text{V} - 3.5\\,\\text{V} = 3.5\\,\\text{V}$."
+    "a": "By the voltage law the voltages of the resistors are together the voltage of the source, so the voltage of the third resistor is $$\\begin{aligned} &9.0\\,\\text{V} - 2.0\\,\\text{V} - 3.5\\,\\text{V} \\\\ &= 3.5\\,\\text{V} \\end{aligned}$$."
   }
 ]

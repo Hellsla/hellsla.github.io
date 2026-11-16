@@ -34,6 +34,9 @@ a["fy6-9-L2-07"] = 1 / k                                  # R_kok = 1 : k = 0,40
 # figure fy6-9/ex-current2: 2,0 A for 0-1,0 h, 1,5 A for 1,0-3,0 h, 0,5 A for 3,0-4,0 h; nominal voltage 11,1 V
 Q_28 = 2.0 * 1.0 + 1.5 * (3.0 - 1.0) + 0.5 * (4.0 - 3.0)   # 2,0 Ah + 3,0 Ah + 0,5 Ah = 5,5 Ah
 a["fy6-9-L2-08"] = 11.1 * Q_28                            # W = U Q = 11,1 V · 5,5 Ah = 61,05 Wh
+W_29 = 36 * 14                                            # source task (Tukes): e-bike battery W = U Q = 36 V · 14 Ah = 504 Wh
+W_29_J = W_29 * 3600                                      # 504 · 3600 J = 1 814 400 J = 1,8 MJ
+a["fy6-9-L2-09"] = W_29 / 120                             # t = W : P = 504 Wh : 120 W = 4,2 h, losses ignored (check: 14 Ah : (120 W : 36 V) = 4,2 h; 504 Wh : 1000 W = 0,504 h)
 # Level 3: reasoning, two ideas
 W_car = 0.5 * 12 * 60                                     # car battery 12 V, 60 Ah, only half usable: 360 Wh
 W_sc = 36 * 7.8                                           # e-scooter battery 36 V, 7,8 Ah: 280,8 Wh

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f2d06e99ef2be864
+CONTENT-HASH: bf6889e7af52c433
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
@@ -8,8 +9,7 @@ CONTENT-HASH: f2d06e99ef2be864
 - none
 
 ## Checked
-- Delta, round 1 (proofreading fixes 2026-11-15; changed file solutions.md).
-- open-exercises-L3-1280-4, -5, -6 (task 1-21): rewritten Vastaus explains the significant figures in short sentences; rows aligned, units upright, nothing clipped, Järkevyys intact.
+- All 1 proof sheet(s) of fi-easy-fy6-1-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

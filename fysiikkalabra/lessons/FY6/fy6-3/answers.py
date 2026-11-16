@@ -39,4 +39,10 @@ Rt = [1.00 / i for i in (0.500, 0.442, 0.398, 0.362)]                # iron wire
 a["fy6-3-L3-05"] = (Rt[-1] / Rt[0] - 1) * 100                        # increase 20 -> 80 °C: 2,762 / 2,000 - 1 = 38,1 %
 # MAFY table task (docs/mafy-arvot.tsv): copper resistivity 1,678·10⁻⁸ Ω·m from the table "Resistiivisyyksiä"
 a["fy6-3-L1-10"] = 1.678e-8 * 40 / 1.5e-6              # R = ρ l / A = 1,678·10⁻⁸ · 40 / 1,5·10⁻⁶ = 0,4475 Ω -> 0,45 Ω
+# Source-material task (PhET Circuit Construction Kit: DC, teacher 2026-11-16): example table of an ideal resistor, graph I(U)
+U8 = [3.0, 6.0, 9.0, 12.0, 15.0]; I8 = [0.075, 0.150, 0.225, 0.300, 0.375]   # V, A (example data, not read from the simulation)
+a["fy6-3-L2-08"] = (U8[-1] - 0) / (I8[-1] - 0)        # slope of I(U) is 1 / R: R = ΔU / ΔI = 15,0 V / 0,375 A = 40,0 Ω
+assert all(abs(u / i - 40.0) < 1e-9 for u, i in zip(U8, I8))                 # every point U : I = 40 Ω (3,0 : 0,075; 9,0 : 0,225)
+P8 = [u * i for u, i in zip(U8, I8)]                   # P = U I: 0,225; 0,90; 2,025; 3,60; 5,625 W
+assert abs(P8[1] - 0.90) < 1e-9 and abs(P8[3] - 3.60) < 1e-9 and abs(P8[3] / P8[1] - 4.0) < 1e-9   # 6,0 V: 0,90 W; 12,0 V: 3,60 W; ratio 4,0
 print(json.dumps({k_: round(v, 6) for k_, v in a.items()}))

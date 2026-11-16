@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 67126466d560ebe7
+CONTENT-HASH: 409c6c988de07c40
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] inquiry.json koe-2 (proof formula 2) — the second row begins with the division colon `: (3 \cdot 10^{-9}\,\text{C})`; legible and breaks between whole quantities, but a row beginning with an operator is slightly unusual — optional: keep as is.
 
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new fy6-11/pick-* descriptions and, in en, the label mapping "s": "e" belong to exercise force-diagram options; the lesson itself has no figure label "s" and no F_s or F_e (it uses only \overline{F} = q\overline{E}), so the mapping cannot reach it and no en text/figure mismatch exists.
-- Re-ran screenshot.py for this hash and opened the captures of the lesson's theory pages at 1280 px (figures, labels, units, captions): all labels render, nothing clipped, no overflow, no figure label changed.
-- No lesson figure shows F_s or F_e, so the en label mapping "s" to "e" has no effect on the lesson's figures.
+- Delta round 4: proof sheet review-batch/proof/en-fy6-11-lesson-1.png opened, all 7 formulas looked at (simulaatio calc, koe-2, koe-3, koe-3 solution, virhe feedback x2, siirto): every one fits its box at 352 px, rows break at relations or between whole quantities, never between a number and its power of ten, units upright with thin space, relation signs aligned.
+- The one change since the last PASS (the 2000 V feedback formula back to inline) is the accepted known clipped formula listed in docs/clipped-formulas.tsv; not a finding.
+- check_layout.py passes at 352–1920 px per the prompt; page captures not re-opened (nothing else changed).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish n/a · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

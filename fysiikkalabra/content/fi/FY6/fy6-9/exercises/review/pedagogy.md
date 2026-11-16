@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cf9236e40e5a36de
+CONTENT-HASH: 7a6a4a96cc364108
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- solutions.md capacity task — "neljä merkitsevää numeroa kuten kapasiteetissa $3000\,\text{mAh}$" reads the trailing zeros of $3000\,\text{mAh}$ as significant, while the old text and the task treat it as a two-figure capacity. A student cannot tell; consider "kapasiteetti $3000\,\text{mAh}$ on annettu kolmen tai neljän numeron tarkkuudella, joten tulos $1{,}08 \cdot 10^{4}\,\text{C}$".
-- Series-resistance task: $0{,}2\,\Omega$ with the explanation of the difference term is a good fix; keep.
+- fy6-9-L2-09 — only part d needs the Tukes page; a to c are textbook calculations with given values. Matches the commission but the source is thin; could ask for the Tukes advice to be quoted in the answer.
+- Part d depends on what the page says; the solution offers examples and accepts any two, so marking is flexible but unverified against the page (page not opened).
 
 ## Checked
-- $0{,}47\,\text{kWh}$ added and the two-figure form $4{,}7 \cdot 10^{2}\,\text{Wh}$ unambiguous.
-- The loss task now states both the figure count and the one-decimal precision of the difference; arithmetic correct.
-- Finnish correct.
+- New task: 4 parts, energy in Wh and J, minimum charging time, why real time is longer, physics of two charging rules.
+- Level 2 and chapter scope (W = UQ, P = Wt, internal resistance) fit; no overlap with L3 tasks on charging.
+- Solution has the diagram-free calculation first, reasoning in c and d is concrete.
+- Set intact.

@@ -59,7 +59,7 @@
         },
         {
           "text": "All three in series, because then the current passes through every resistor.",
-          "feedback": "In a series connection the resistances add up: $100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$. That is the largest of the connections, not the smallest."
+          "feedback": "In a series connection the resistances add up: $$100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$$. That is the largest of the connections, not the smallest."
         },
         {
           "text": "Two in parallel and the third in series with them, because the connection has both ways.",

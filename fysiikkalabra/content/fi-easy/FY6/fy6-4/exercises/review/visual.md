@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: edc1028be1632df7
-SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
+CONTENT-HASH: 3ede518f7c2e3a61
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
@@ -9,7 +9,7 @@ SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
 - none
 
 ## Checked
-- fy6-4-L2-09 in open-exercises-L2-1280 parts 12 and 13: task text, figure task-parallel (battery 9,0 V, R1 and R2 in parallel with junction dots, labels legible, no currents shown), solution with fractions and aligned Sijoitus rows, Vastaus, Järkevyys. Nothing clipped; the set reads as one.
+- All 1 proof sheet(s) of fi-easy-fy6-4-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

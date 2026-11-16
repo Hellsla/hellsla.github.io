@@ -212,7 +212,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$U_\\text{L} = 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} = 10{,}0\\,\\text{V}$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
+              "detail": "$$\\begin{aligned} U_\\text{L} &= 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} \\\\ &= 10{,}0\\,\\text{V} \\end{aligned}$$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
             },
             {
               "key": "reasonableness",
@@ -355,7 +355,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$qU = 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} = 3{,}6 \\cdot 10^{-8}\\,\\text{J}$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+              "detail": "$$\\begin{aligned} qU &= 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} \\\\ &= 3{,}6 \\cdot 10^{-8}\\,\\text{J} \\end{aligned}$$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
             },
             {
               "key": "units_precision",
@@ -411,7 +411,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $$\\begin{aligned} F &= 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\\\ &\\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2} \\end{aligned}$$."
             },
             {
               "key": "units_precision",
@@ -501,7 +501,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7{,}99\\,\\text{J}$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
@@ -529,7 +529,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0{,}0264\\,\\text{C}$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
+              "detail": "$$\\begin{aligned} \\Delta Q &= 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} \\\\ &= 0{,}0264\\,\\text{C} \\end{aligned}$$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
             },
             {
               "key": "reasonableness",
