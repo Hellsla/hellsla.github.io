@@ -1,19 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 40b05f162c9c2e30
+VERDICT: FAIL
+CONTENT-HASH: 8549ac0f21453008
 
 ## Blocking
-None.
+- [Major] inquiry.json:282 (tile fy4-16 #3) and :266 (tile #2) — rows broken after a multiplication dot (`9{,}81\,\text{m/s}^2\cdot \\ &125\,\text{m}`); at 1280 px the page shows the row `125 m = 95 647,5 J` under `|ΔE_mek| = 78,0 kg · 9,81 m/s²·`, i.e. a row that reads as metres equal to joules, and at 390 px `125 m` stands flush left as if a new line began — break before the operator: `&= 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\quad\cdot 125\,\text{m} \\ &= 95\,647{,}5\,\text{J}` in both places (no row may end in `\cdot`).
 
 ## Polish
-- [Minor] example figure (fy4-16-example-390-1) — the acceleration arrow and label $\overline{a}$ in the situation picture sit small and pale near the dashed divider; at 390 px they are legible but faint — enlarge slightly if the figure is redrawn.
-- [Minor] Tiivistelmä last bullet — "Työ on positiivista, kun hissi nousee, ja negatiivista, kun hissi laskeutuu" is fine in language; for science: confirm the sign claim is meant for the floor force on the person at constant and varying speed alike.
+- [Minor] inquiry.json:156 and :329 — needless breaks inside short groups (`16,5 / + 43,5`, `(9,81 / − 1,20) m/s²`); keep each group on one row.
 
 ## Checked
-- Delta covers the liukukitka rename, the Pohdinta hook rewording, the Tiivistelmä lift sentence, the exit ticket and the aria-label changes.
-- Opened at 390 px: fig-9 (three situations), fig-11 (scale diagram), example-390-1 (stages 1–3 with the sled figure), stage-herata-390 (Pohdinta).
-- Opened at 1280 px: theory-1280-3 (Yleinen virhekäsitys and Tiivistelmä).
-- Figures nothing clipped. $\overline{F}_\mu$ and units render in KaTeX. liukukitka is used consistently in the text I opened. No leftover liikekitka seen.
-- Not opened: the other contact sheets, the simulation and the exercise captures, which this diff does not touch.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

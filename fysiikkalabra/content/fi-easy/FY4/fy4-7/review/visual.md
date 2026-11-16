@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: fd6d2c933a0de638
+CONTENT-HASH: bc55b15a5f41c6d5
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, after the $E_\text{mek}$ formula — "Siksi myös… Kerro siksi" repeats "siksi" — "Kerro laskussa aina, mikä nollataso on."
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-7.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
