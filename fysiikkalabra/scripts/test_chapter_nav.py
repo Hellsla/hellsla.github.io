@@ -58,6 +58,9 @@ _card = '<li><div class="ch-box"><span class="l-num">1</span><a href="a.html">Li
 _out = tablefit.cards(_card, True)
 check("card title: only the very long word gets soft hyphens, a formula and the link are left alone", _out.replace(tablefit.SHY, "") == _card and _out.count(tablefit.SHY) == 6 and "määrittäminen $F" in _out, _out.replace(tablefit.SHY, "-"))
 check("card title: a second pass changes nothing, another language is left alone", tablefit.cards(_out, True) == _out and tablefit.cards(_card, False) == _card)
+# a table cell's long word breaks at a compound's joint too (fy2-1's energy table, work queue 8i-b; tablefit._cell)
+_cell = tablefit.fit("<td><strong>Lämpöenergia</strong> $E_\\text{lämpö}$</td><td>Ydinenergia</td>", True).replace(tablefit.SHY, "-")
+check("table cell: the joint of the compound Lämpöenergia, Ydinenergia", "Läm-pö-ener-gia</strong> $E_\\text{lämpö}$" in _cell and "Ydin-ener-gia" in _cell, _cell)
 if (root / "FY10.html").is_file():
     check("FY10: the long card titles of the built page carry soft hyphens", "Liu\u00adku\u00adkit\u00adka\u00adker\u00adtoi\u00admen" in (root / "FY10.html").read_text())
 check("pages were checked", pages > 0)
