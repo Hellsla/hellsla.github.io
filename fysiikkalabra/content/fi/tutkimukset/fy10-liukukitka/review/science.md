@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 98c93b3fc838a251
+CONTENT-HASH: 43e1c4e36cbb8f96
 
 ## Blocking
 None.
@@ -7,5 +7,9 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-11-13)
-- Tilt sentence in the *Miksi juuri nämä akselit?* box (investigation.md) and in teacher.md now reads "mitattu kitkakerroin muuttuu noin $0{,}02$ jokaista kallistusastetta ($1^\circ$) kohti". With $a = \mu g\cos\theta \pm g\sin\theta$ the measured coefficient $a/g$ is $\mu\cos\theta \pm \sin\theta$, which differs from $\mu$ by about $\sin 1^\circ = \tan 1^\circ \approx 0{,}0175 \approx 0{,}02$ per degree, so the figure and its unit (per one degree) are right in both places; the sign flips with the direction of motion as the text says. The line still passes through the origin (only the slope changes), so the claim that the error is invisible in the graph holds. Both texts say the same. Nothing else changed.
+## Checked (delta 2026-11-15)
+- Every changed sentence read in context. investigation.json `why` (fy4-6), the *Teoriaa lyhyesti* paragraph, the force-diagram aria-label in investigation.md and figures.py (they match): "liukukitka $F_\mu = \mu N$" fits the situation. The brake slides on the track, so this is sliding (kinetic) friction. The force opposes the motion, and the vehicle decelerates with $a = \mu g$ on a level track. That agrees with the P8 terms in docs/physics-guardrails.md (Friction).
+- Two later edits remove the doubled terms the rename left. Line 48 now reads "...jarrun ja radan välinen liukukitkakerroin epävarmuuksineen". Line 83 now reads "missä $\mu$ on liukukitkakerroin." Both remove only a repeated name, and the physics is unchanged. $\mu$ is still defined once, as dimensionless, with the model's assumption (the brake carries the whole weight) still stated.
+- No "liikekitka" or "liikekitkakerroin" is left in investigation.json, investigation.md, teacher.md or figures.py. teacher.md uses only "kitkavoima" and "kitkakerroin", which stay consistent with the new terms.
+- The investigation never brings in static friction ("lepokitka" or "lähtökitka"). That is right: the cart slides from the first moment of measurement. So nothing had to be named "täysin kehittynyt lepokitka eli lähtökitka", and nothing contradicts that term.
+- The content hash is `43e1c4e36cbb8f96`, checked again at the end.

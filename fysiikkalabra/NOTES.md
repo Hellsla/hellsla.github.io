@@ -59,9 +59,28 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   significant figures, and a student rounding to them stays inside the relative `tolerance` (0,02 as a rule; `77 K`
   has two figures, so −196 °C needs 0,03 or a whole-number task). A coefficient with a power of ten counts its
   mantissa: `9,0 · 10⁻⁶ 1/K`, not `9 · 10⁻⁶`.
-- An integer datum ending in zeros is exact unless the task says otherwise (teacher 2026-11-07, "Sovitaan että 10 min tarkka"):
-  `10 min`, `400 cm³`, `4200 m` do not limit the answer's significant figures; the measured data do, and a
-  justification never says "kaksi numeroa kuten 10 min". FY1 *Suureet, yksiköt ja SI-järjestelmä* states it to the student.
+- A round number's trailing zeros may or may not be significant, and the context decides (teacher 2026-11-07
+  "Sovitaan että 10 min tarkka" and 2026-11-16 "asiayhteydestä ajattelisin että 10 min on tarkka"). A time span,
+  count or volume the task sets (`10 min`, `400 cm³`, `4200 m`) is an exact value and does not limit the answer's
+  significant figures; the measured data do, and a justification never says "kaksi numeroa kuten 10 min". FY1
+  *Suureet, yksiköt ja SI-järjestelmä* states it to the student.
+- Significant figures (teacher 2026-11-15, P7): (a) 230 V is a value with three significant figures; (b) a measured
+  or rated value's trailing zeros are significant unless the task says otherwise (480 kW has three, so a
+  justification never says "kaksi ensimmäistä numeroa varmoja"); an exact value of the rule above (10 min) does not
+  limit the answer; (c) a
+  limit value is rounded to the safe side: an "enintään" value down (10,5 kW → 10 kW, 12,4 A → 12 A), a "vähintään"
+  value up (1,511 kg → 1,6 kg with two figures).
+- Values (teacher 2026-11-15, P8, P9): a constant or material value is the MAFY table's whenever MAFY has one;
+  otherwise give the value and its source behind a link. Small differences are no contradiction and stay (P9): ice
+  334 kJ/kg (MAFY 333), water 4190 J/(kg·K) (MAFY 4,182 kJ/(kg·K)), sound in air 340 or 343 m/s (MAFY 343,4), Mars
+  3,71 m/s² (MAFY 3,72), Am-241 432 a (433), C-14 5700 a (5730). The MAFY rule applies to clear contradictions
+  (light fuel oil 43 ↔ 40,6 MJ/kg, coal 29 ↔ 24 MJ/kg) and to new content.
+- Friction terms (teacher 2026-11-15, P8; `glossary.json`): **liukukitka** and **liukukitkakerroin** (en sliding
+  friction, coefficient of sliding friction), never liikekitka; a body at rest has **lepokitka**, whose greatest
+  value, just before the body starts to slide, is **täysin kehittynyt lepokitka eli lähtökitka** (en maximum (fully
+  developed) static friction), with the coefficient **lepokitkakerroin**. Name it so where it is introduced as a
+  quantity, then "lähtökitka"; never "suurin lepokitka" or "maksimilepokitka" as a term. "Lepokitka on enintään
+  $\mu_0 N$" stays.
 - Compute every exercise answer in `answers.py` and every number of the lesson text and the inquiry in
   `lesson-answers.py` (one commented line per step, each prints `{id: value}`; 2026-10-28: the exercises are a part of
   their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
@@ -364,7 +383,10 @@ Exam questions are studied for patterns only (§7); every task is original, with
 - `scripts/physics_phrases.py` warns (lint) about known wrong claims taught as fact and `test_physics_phrases.py`
   (CI) keeps the corrected ones from coming back; `scripts/concepts.py <concept>` gathers a concept's passages from
   every chapter for a cross-chapter review (README "Physics consistency"). A new recurring error: add a line to the
-  guardrails, and a rule with right and wrong example sentences when it can be matched with high precision.
+  guardrails, and a rule with right and wrong example sentences when it can be matched with high precision. A rule
+  that finds sentences already in the texts lists them in `docs/physics-phrases-known.tsv` (folder, file, rule,
+  sentence), which CI lets pass until their correction deletes the row; any other hit fails (2026-11-15: heat-into,
+  P1; liikekitka, P8).
 
 ## 11. Figures in tasks and assessment (teacher's brief 2026-10-28, "kuvat löydettäviksi ja tehtäviin")
 - **Find before you draw.** `docs/figures/catalog.json` lists every figure of every course (built by `python

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Soveltava tunti: moduulin työkaluja käytetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta. Kysymys ratkaisee, käytetäänkö liikeyhtälöä vai energiaperiaatetta. Hississä vaaka mittaa tukivoimaa $N = m(g + a)$. Rajanopeudella ilmanvastuksen työ on $-mgh$. Suoralla rinteellä liikekitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
+  "contribution": "Soveltava tunti: moduulin työkaluja käytetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta. Kysymys ratkaisee, käytetäänkö liikeyhtälöä vai energiaperiaatetta. Hississä vaaka mittaa tukivoimaa $N = m(g + a)$. Rajanopeudella ilmanvastuksen työ on $-mgh$. Suoralla rinteellä liukukitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
   "learn": [
     "valitsemaan voimakuvion avulla, käytätkö liikeyhtälöä vai energiaperiaatetta.",
     "piirtämään voimakuvion ja laskemaan tukivoiman tai kiihtyvyyden, kun hissi kiihtyy.",
@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Kokonaisvoima osoittaa samaan suuntaan kuin kiihtyvyys, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
-    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liikekitka on $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
+    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liukukitka on $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
     "Mekaanisen energian muutos on muiden voimien kuin painon tekemä työ (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
   ],
   "activities": [
@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Kun hissi lähtee ylös, vaa'an lukema kasvaa hetkeksi. Kun hissi pysähtyy, lukema pienenee. Ikkunasta näkyy laskuvarjohyppääjä. Hän laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia. Toinen laskee jyrkkää ja lyhyttä rinnettä, toinen loivaa ja pitkää. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle. Kun pysähtymiskohdat mitataan, kumpikin on kuitenkin yhtä kaukana mäen huipusta.",
+      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Ryhmä seuraa vaa'an lukemaa, kun hissi lähtee ylös, kulkee ja pysähtyy. Ikkunasta näkyy laskuvarjohyppääjä. Hän laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia. Toinen laskee jyrkkää ja lyhyttä rinnettä, toinen loivaa ja pitkää. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle. Kun pysähtymiskohdat mitataan, kumpikin on kuitenkin yhtä kaukana mäen huipusta.",
       "question": "Kaikissa kolmessa tilanteessa vaikuttavat tutut voimat. Milloin tilanne kannattaa ratkaista voimilla ja milloin energialla? Miksi pulkat pysähtyvät yhtä kauas huipusta?"
     },
     {
@@ -145,7 +145,7 @@
       "type": "interpret",
       "title": "Kolme yhtä korkeaa mäkeä",
       "source": "model",
-      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä. Mäkien korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta. Liikekitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella. Ilmanvastus jätetään huomiotta, eikä rinteen juuren mutkassa menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma ja $x_1$ rinteen vaakasuora pituus. Nopeus $v$ on pulkan nopeus rinteen juurella. Matka $x_2$ on matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
+      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä. Mäkien korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta. Liukukitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella. Ilmanvastus jätetään huomiotta, eikä rinteen juuren mutkassa menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma ja $x_1$ rinteen vaakasuora pituus. Nopeus $v$ on pulkan nopeus rinteen juurella. Matka $x_2$ on matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
       "question": {
         "type": "choice",
         "prompt": "Laske jokaiselta riviltä $x_1 + x_2$. Se on pulkan koko vaakasuora matka huipulta pysähtymiskohtaan. Mitä taulukko osoittaa?",
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös",
-      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi, mutta pysähtyy silti lähes yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
+      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi, mutta pysähtyy silti yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
       "criteria": [
         "Vastaus kertoo, että vaaka mittaa tukivoimaa. Lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas. Tasaisella nopeudella lukema on sama kuin levossa.",
         "Vastaus käyttää kuvaajan lukuja, esimerkiksi $650\\,\\text{N}$ lähdössä ja noin $589\\,\\text{N}$ tasaisella nopeudella.",
