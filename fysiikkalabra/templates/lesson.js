@@ -668,7 +668,7 @@
       const vb = el.viewBox && el.viewBox.baseVal;
       w0 = vb && vb.width ? vb.width : r.width; h0 = vb && vb.height ? vb.height : r.height;
       cap = Math.min(1200, Math.max(720, r.width * 1.6));
-      node.removeAttribute('width'); node.removeAttribute('height'); node.classList.remove('zoomable');
+      node.removeAttribute('width'); node.removeAttribute('height'); node.classList.remove('zoomable', 'is-playing');   // an animated figure opens as its still (part 7b)
     }
     const fig = el.closest('figure'), fc = fig && fig.querySelector(':scope > figcaption');
     if (fc) zcap.innerHTML = fc.innerHTML;
@@ -705,6 +705,32 @@
     const el = e.target.closest && e.target.closest('svg.zoomable, img.zoomable');
     if (!el || !zoomable(el) || e.defaultPrevented || (window.getSelection && String(window.getSelection()).length)) return;
     openZoom(el, el.parentElement.querySelector(':scope > .zoom-btn'));
+  });
+
+  // 7b. Animated figures (work queue 8f, pilot fy3-8; figlib Fig(anim=True), site.css "Animated figures"). The figure
+  // is drawn as its still and moves by CSS only while it is marked .is-playing: while some of it is on screen and the
+  // reader has not paused it with the button under it (▶ / ❚❚, WCAG 2.2.2), never under prefers-reduced-motion (the
+  // button is hidden then, the still stays). No script loop: the browser runs the CSS animation. Without JavaScript,
+  // in print and in the enlarged view the still.
+  const RM = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false, addEventListener() {} };
+  document.querySelectorAll('main svg.fig-anim').forEach((svg) => {
+    let paused = false, seen = false;
+    const ctl = document.createElement('div'); ctl.className = 'fa-ctl';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'fa-play';
+    b.innerHTML = '<span class="fa-ico" aria-hidden="true"></span><span class="fa-txt"></span>';
+    ctl.append(b);
+    svg.parentElement.append(ctl);   // inside the figure's own box (.fig), under the drawing, also where the figure stands beside its text
+    const sync = () => {
+      const play = !paused && seen && !RM.matches;
+      svg.classList.toggle('is-playing', play);
+      b.querySelector('.fa-ico').textContent = paused ? '▶' : '❚❚';
+      b.querySelector('.fa-txt').textContent = msg(paused ? 'anim_play' : 'anim_pause');
+    };
+    b.addEventListener('click', () => { paused = !paused; sync(); });
+    if ('IntersectionObserver' in window) new IntersectionObserver((es) => { es.forEach((e) => { seen = e.isIntersecting; }); sync(); }).observe(svg);
+    else seen = true;
+    if (RM.addEventListener) RM.addEventListener('change', sync);
+    sync();
   });
 
   // 8. Try first (teacher 2026-11-03, "opiskelija yrittää ensin itse, ja ratkaisu avautuu vasta sen jälkeen"). A numeric

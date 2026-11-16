@@ -1219,6 +1219,18 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
   #sim.sim-expanded #sim-root .controls>label{flex-basis:100%}
 }
 @media print{.zoom-btn,.sim-expand,dialog.zoom-dlg{display:none!important}}
+/* Animated figures (work queue 8f, pilot fy3-8; figlib Fig(anim=True), vibrate()). The drawing is the still; a group
+   .fa-vib moves only while lesson.js part 7b has marked its figure .is-playing: on screen, not paused with the button
+   under it (WCAG 2.2.2), never under prefers-reduced-motion, in print or in a PDF book (print_book.py prints). A cycle
+   starts and ends where the group is drawn, so starting and pausing never jump; paused shows the still again. */
+@keyframes fa-vib{0%,50%,100%{transform:none;animation-timing-function:ease-out}25%{transform:translateX(var(--fa-a));animation-timing-function:ease-in}75%{transform:translateX(calc(-1 * var(--fa-a)));animation-timing-function:ease-in}}
+svg.fig-anim.is-playing .fa-vib{animation:fa-vib var(--fa-t,2s) var(--fa-d,0s) infinite}
+.fa-ctl{display:flex;justify-content:center;margin:.35rem 0 0}
+.fa-play{display:inline-flex;align-items:center;gap:.45rem;min-height:40px;padding:.3rem .9rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--accent-deep);font:inherit;font-size:15px;cursor:pointer}
+.fa-play:hover{border-color:var(--accent)}.fa-play:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.fa-play .fa-ico{display:inline-block;width:1.3em;text-align:center;font-size:1em;line-height:1}
+@media (prefers-reduced-motion:reduce){svg.fig-anim .fa-vib{animation:none!important}.fa-ctl{display:none}}
+@media print{svg.fig-anim .fa-vib{animation:none!important}.fa-ctl{display:none!important}}
 /* Read aloud (readaloud.js, teacher 2026-11-03): Kuuntele / Tauko at the right end of the stage bar, its menu (speed,
    voice) and its note floating under the bar, and where the reading is: the block tinted, the sentence and the word
    highlighted (CSS Custom Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
