@@ -290,3 +290,34 @@ Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};
 **Sijoitus:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373{,}15\,\text{K}}{300\,\text{K}} = 149{,}26\,\text{kPa}$
 **Vastaus:** $p_2 \approx 149\,\text{kPa}$, kolme merkitsevää numeroa kuten luetussa paineessa $120\,\text{kPa}$. Kuvaajan lukeminen on arvio, joten vastaus hyväksytään $\pm 2\,\%$ tarkkuudella.
 **Järkevyys:** Lämpötila kasvaa noin $24\,\%$ ($373 : 300 \approx 1{,}24$). Paine kasvaa yhtä paljon: $120\,\text{kPa} \cdot 1{,}24 \approx 149\,\text{kPa}$. Tulos on suurempi kuin kuvaajan viimeinen paine $140\,\text{kPa}$. Niin pitää olla, koska $100\,{}^\circ\text{C}$ on kuumempi kuin $350\,\text{K}$.
+
+## fy3-9-L2-10
+**Annettu:** simulaatiosta itse mitatut lämpötilan ja paineen arvoparit $(T,\,p)$. Tilavuus ja hiukkasten määrä pysyvät samoina. Omat lukusi riippuvat siitä, kuinka monta hiukkasta pumppasit. Siksi tässä on ratkaisutapa ja esimerkkimittaus 16. marraskuuta 2026 (100 painavaa hiukkasta, yksi painelukema jokaisessa lämpötilassa): $T = 197$; $254$; $300$; $352$; $405$; $454$; $511\,\text{K}$ ja $p = 824$; $994$; $1170$; $1363$; $1581$; $1766$; $2024\,\text{kPa}$. Tarkistuspiste, jota ei käytetä mallin tekemiseen: $T_\text{enn} = 601\,\text{K}$. Siinä simulaatio näytti paineen $2346\,\text{kPa}$. Kohdan c) suhteessa $T_1 = 300\,\text{K}$ ja $T_2 = 450\,\text{K}$.
+**Kysytty:** a) mittaussarja ja painelukeman epävarmuus; b) $(T,\,p)$-kuvaaja ja suureiden välinen riippuvuus; c) ennuste $p_\text{enn}$, sen tarkistus ja painesuhde $p_2/p_1$; d) selitys hiukkasmallilla
+**Periaate:** Säiliön tilavuus ja hiukkasten määrä pysyvät samoina. Tämä on isokoorinen tilanmuutos. Silloin harvan kaasun paine on suoraan verrannollinen kelvinlämpötilaan, eli suhde $p/T$ on vakio. Mittaus testaa tämän. Jos malli sopii, pisteet ovat mittausepävarmuuden rajoissa suoralla, joka kulkee origon kautta.
+**Mallivastaus a):** Simulaatiosta otetaan lämpötila kelvineinä ja paine kilopascaleina. Asetus ”pidä vakiona: tilavuus (V)” lukitsee säiliön seinämän. Hiukkasten määrä pysyy samana, kun pumppuun ei kosketa. Vain lämpötilaa muutetaan. Siksi paineen muutos johtuu lämpötilasta. Painemittarin lukema heilahtelee muutaman prosentin, vaikka lämpötila pysyy samana. Esimerkkimittauksessa heilahtelu oli noin $\pm 30\,\text{kPa}$ paineissa $1000\,\text{kPa}$–$2000\,\text{kPa}$. Tämä on arvio yhden painelukeman epävarmuudesta. Usean lukeman keskimmäinen on luotettavampi kuin yksi lukema.
+**Kuvaajan lukeminen:** Vaaka-akselille tulee $T$ kelvineinä ja pystyakselille $p$ kilopascaleina. Molemmat akselit alkavat nollasta. Silloin näet, kulkeeko suoran jatke origon kautta. Sovita suora niin, että pisteitä jää yhtä paljon sen kummallekin puolelle. Lue kulmakerroin kahdesta suoran pisteestä, jotka ovat kaukana toisistaan. Älä käytä kahta vierekkäistä mittauspistettä. Kulmakertoimen saa myös taulukkolaskennan tai laskimen sovituksesta. Esimerkkimittauksessa origon kautta kulkevan suoran sovitus antaa kulmakertoimen $k = 3{,}924\,\tfrac{\text{kPa}}{\text{K}}$.
+**Mallivastaus b):** Pisteet ovat nousevalla suoralla. Suoran jatke kulkee mittausepävarmuuden rajoissa origon kautta. Esimerkkimittauksessa vapaasti sovitetun suoran kulmakerroin on $3{,}84\,\tfrac{\text{kPa}}{\text{K}}$ ja vakiotermi $32\,\text{kPa}$. Vakiotermi on yhtä suuri kuin painelukeman heilahtelu ja pieni mitattuihin paineisiin verrattuna. Siksi aineisto sopii suoraan, joka kulkee origon kautta. Paine on siis suoraan verrannollinen kelvinlämpötilaan: $p = kT$, missä $k \approx 3{,}92\,\tfrac{\text{kPa}}{\text{K}}$.
+Saman näkee suhteista $p/T$. Ne ovat riveittäin $4{,}18$; $3{,}91$; $3{,}90$; $3{,}87$; $3{,}90$; $3{,}89$; $3{,}96\,\tfrac{\text{kPa}}{\text{K}}$. Luvut ovat lähes samat. Eniten poikkeaa ensimmäinen piste. Se on $51\,\text{kPa}$ suoran yläpuolella. Muut pisteet ovat enintään $19\,\text{kPa}$:n päässä suorasta. Ensimmäinen piste on yksi lukema heilahtelevasta mittarista. Selvästi poikkeava mittaustulos tarkistetaan ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista. Vakio $k$ riippuu hiukkasten määrästä ja tilavuudesta. Oma arvosi voi siksi olla toinen, mutta riippuvuuden muoto on sama.
+**Kaava:** $p = kT$, joten ennuste on $p_\text{enn} = kT_\text{enn}$ ja painesuhde $\dfrac{p_2}{p_1} = \dfrac{kT_2}{kT_1} = \dfrac{T_2}{T_1}$
+**Muunnokset:** Ei tarvita. Lämpötilat ovat jo kelvineinä ja paineet kilopascaleina. Celsiusasteilla suhdetta ei voi laskea.
+**Sijoitus:** Kohdan c) ennuste esimerkkimittauksen mallilla:
+
+$$\begin{aligned}
+p_\text{enn} &= kT_\text{enn} \\
+&= 3{,}924\,\tfrac{\text{kPa}}{\text{K}} \cdot 601\,\text{K} \\
+&\approx 2358\,\text{kPa}
+\end{aligned}$$
+
+Simulaatio näytti tässä lämpötilassa paineen $2346\,\text{kPa}$. Ero on $12\,\text{kPa}$ eli noin $0{,}5\,\%$. Se on pienempi kuin painelukeman heilahtelu $\pm 30\,\text{kPa}$. Ennuste ja tarkistus sopivat siis yhteen mittausepävarmuuden rajoissa. Malli toimii myös $90\,\text{K}$ mitatun alueen yläpuolella. Painesuhde:
+
+$$\begin{aligned}
+\dfrac{p_2}{p_1} &= \dfrac{T_2}{T_1} \\
+&= \dfrac{450\,\text{K}}{300\,\text{K}} \\
+&= 1{,}50
+\end{aligned}$$
+
+**Mallivastaus d):** Kaasun paine syntyy, kun hiukkaset törmäävät säiliön seinämiin. Ideaalikaasussa lämpötila mittaa hiukkasten etenemisliikkeen keskimääräistä liike-energiaa. Lämpimämmässä kaasussa hiukkaset liikkuvat siksi keskimäärin nopeammin. Nopeammat hiukkaset törmäävät seinämiin tiheämmin ja voimakkaammin. Tilavuus ja hiukkasten määrä pysyvät samoina. Hiukkasia on siis tilavuusyksikössä yhtä paljon kuin ennen. Koko paineen muutos johtuu siitä, että hiukkaset liikkuvat nopeammin. Siksi paine kasvaa, kun lämpötila nousee. Paine pienenee kohti nollaa, kun kelvinlämpötila lähestyy nollaa.
+Mallin rajat: simulaation kaasu on ideaalikaasu. Siksi suora jatkuu samana kaikissa lämpötiloissa. Todelliselle kaasulle tulos pätee, kun kaasu on harvaa ja kaukana tiivistymisestä. Todellinen kaasu tiivistyy nesteeksi ennen kuin $0\,\text{K}$ saavutetaan.
+**Vastaus:** Paine kasvaa $1{,}50$-kertaiseksi, kolme merkitsevää numeroa kuten lämpötiloissa. Oma vakiosi $k$ ja ennusteesi voivat poiketa esimerkistä. Suhde on silti sama jokaisella mallilla $p = kT$, koska $k$ supistuu pois.
+**Järkevyys:** Kelvinlämpötila kasvaa $50\,\%$. Suoraan verrannollinen paine kasvaa silloin myös $50\,\%$. Esimerkkimittauksen malli antaa paineet $1177\,\text{kPa}$ ja $1766\,\text{kPa}$. Niiden suhde on $1{,}50$. Mitatuista riveistä $300\,\text{K}$ ja $454\,\text{K}$ saadaan lähes sama suhde: $1766 : 1170 \approx 1{,}51$.
