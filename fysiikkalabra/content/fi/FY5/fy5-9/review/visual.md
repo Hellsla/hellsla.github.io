@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cdd54d9affd422eb
+CONTENT-HASH: 4d6a0f1f831068ec
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] inquiry.json:586 (Järkevyys, untouched text, 390 px) — the range `60–90 kg` breaks before the dash (`60` | `–90 kg`); write it as one formula, `$60\text{–}90\,\text{kg}$`, when the passage is next edited.
+(none)
 
 ## Checked
-- Delta, round 2: the choice feedback (inquiry.json:32) and the astronaut Sijoitus (inquiry.json:586). Opened fy5-9-inq-feedback-390.png, -1280.png (feedback box revealed), fy5-9-inq-astronautti-sij-390.png, -1280.png, fy5-9-inq-astronautti-0-390.png.
-- Feedback: `kx = 40 N/m · 0,050 m = 2,0 N,` in two aligned rows, comma inside, sentence continues.
-- Astronaut: at 390 px the fraction row, then `− 10,0 kg` on its own row (a row starting with a sign, whole quantity), then two `=` rows in one column; at 1280 px the minus term rejoins the fraction row. No clipping.
-- Not re-judged: the formula names in lesson.md (teacher-approved, not in this branch's diff).
-- Own Playwright captures from preview/ (?ratkaisut=1, every details box open) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-7/; measured there: page scrollWidth equals the viewport, no formula past its box.
+- Delta, round 3: inquiry.json:586 (Sijoitus of the astronaut task), continuation row now `&\quad - 10{,}0 kg`; inquiry.json:32 (feedback) unchanged since round 2, looked at again.
+- Opened fy5-9-sij-astronautti-0-390.png: `m_a = 1200 N/m · (1,66 s)² / 4π²` | indented `− 10,0 kg` | `= 83,76 kg − 10,0 kg` | `= 73,76 kg`; the continuation sits under the fraction, the equals signs in one column, no third column; the T box above and the Vastaus box below intact.
+- Opened fy5-9-sij-astronautti-0-1280.png: the continuation is joined to the first row (`… / 4π² − 10,0 kg`), three aligned rows.
+- Opened fy5-9-fb-harmoninen-0-390.png and -1280.png (feedback revealed): `kx = 40 N/m · 0,050 m` | `= 2,0 N,` with the comma inside, the sentence goes on with "ja miinusmerkki kertoo". Nothing clipped.
+- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

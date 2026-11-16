@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 46f0b0574e127fe9
+CONTENT-HASH: 7d7aa3dedf60aa60
+ROUND: 3
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json 266 (choice option "Logaritmia ei ole purettu") — the lifted formula sits centred in its box inside the option, while the solution boxes on the page are left-aligned; a shared-style matter, not this lesson's.
-- [Minor] inquiry.json 308, 390 px — the continuation row starts with a small "· lg" before the fraction; readable, the dot is easy to miss (same remark as fy5-14).
-- [Minor] inquiry.json 266, 1280 px — the two-row form (I = 10^6,5 · I0 | ≈ 3,2 · 10^−6 W/m²) is kept on a wide screen where one row would fit (known join_wide matter).
+- [Minor] inquiry.json 266 (choice option "Logaritmia ei ole purettu") — the formula is centred in its box inside the option, the solution boxes are left-aligned; a shared-style matter (carried).
+- [Minor] inquiry.json 266, 1280 px — the two-row form is kept on a wide screen where one row would fit (known join_wide matter, carried).
 
 ## Checked
-- Delta: inquiry.json 266 (option text) and 308 (transfer task's Sijoitus, L − L1 chain with the trailing "&").
-- Own captures from preview/fy5-15.html?ratkaisut=1, details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-13/: fy5-15-390-I065-0.png, fy5-15-390-lg125-1.png, fy5-15-1280-I065-0.png, fy5-15-1280-lg125-0.png (sheets sheet-fy5-15-390-1.png, sheet-fy5-15-1280-1.png).
-- 390 px: L − L1 in four rows, relations in one column, the fraction with its powers of ten and W/m² whole, right edge 281 of 344 px. 1280 px: "L − L1 = 10 dB · lg fraction" on one row, the two "=" rows under it, not joined onto the continuation. Mantissa and power of ten stay together everywhere; no page overflow.
+- Delta, round 3: inquiry.json 308 (transfer task, Sijoitus): the continuation row is now `&\quad \cdot \lg …` and the trailing `&` is gone.
+- Own captures from preview/fy5-15.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-15-390-lgfrac-1.png, fy5-15-1280-lgfrac-0.png.
+- 390 px: four rows; "L − L1 = 10 dB", then "· lg fraction" indented under the right-hand side, then the two "=" rows in one column. The indent makes the leading dot read as a continuation (round 2's remark is met); the fraction keeps 1,25 · 10^−4 W/m² and 1,0 · 10^−4 W/m² whole; right edge 281 of 344 px.
+- 1280 px: join_wide gives "L − L1 = 10 dB · lg fraction" on one row and the two "=" rows aligned under it; no third column, no stray term.
+- scrollWidth equals the viewport at both widths; nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

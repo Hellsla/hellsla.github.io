@@ -1,17 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: aa7adb34d1c7df4e
+VERDICT: PASS
+CONTENT-HASH: 59e59519f65d4041
+ROUND: 3
 
 ## Blocking
-- [Major] exercises/exercises.json 256 (error-finding task, "Opiskelijan ratkaisu:"; captures fy5-17-390-ex96km-0.png, fy5-17-1280-ex96km-0.png) — after the lifted block d = v_P Δt = 6,0 km/s · 16,0 s = 96 km the sentence's full stop stands alone on its own line under the box, at 390 and 1280 px — a stray mark in the task text the student reads first; in every other lifted formula of this set the full stop is drawn inside the formula — remove the "." after the closing $$ (a display block after "Opiskelijan ratkaisu:" needs none), or make the shared punctuation rule take a full stop that is followed by a paragraph break.
 
 ## Polish
-- [Minor] solutions.md 198 and 200, 390 px — "Tarkistetaan etäisyys asemalle A:" box "ja asemalle B:" box: four boxes in one Järkevyys paragraph make it choppy on a phone; acceptable, a two-row list would read more calmly.
+- [Minor] exercises.json 256 — at the joins of the inline pieces the equals sign has its space on one side only ("Δt= 6,0 km/s", "16,0 s= 96 km"); a leading `{}` in the pieces that begin with "=" evens it (known).
+- [Minor] solutions.md 198 and 200, 390 px — four boxes in one Järkevyys paragraph read choppily on a phone (carried).
 - [Minor] fy5-17-L2-10 task text part c): "100 kilometrin" still written out (carried).
 
 ## Checked
-- Delta: exercises.json 256; solutions.md 90, 109, 121, 131, 141, 163, 168, 196, 198, 200, 212, 223, 234.
-- Own captures from preview/fy5-17.html?ratkaisut=1, details open, 390 (dpr 2) and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-13/ (fy5-17-<width>-<name>.png): ex96km-0, S336-0, dB200-0, bat686-0, us632-1/-0 (with us616), T1010-0 (with sqrt198), t3t2-0, d387-0, x120-0, C1324-0 (with C499), t158-0 (with A840, B630), v123-0, k28m-1, k139-2/-1; sheets sheet-fy5-17-390-1…4.png, sheet-fy5-17-1280-1…3.png.
-- Apart from the stray full stop: every row starts with a relation, "2,0 · 10^2 km" and "90 · 10^−6 s" stay whole, the roots keep their unit, one-row forms on the wide screen, nothing clipped (widest 294 of 347 px at 390 px), no page overflow.
+- Delta, round 3: exercises.json 256 (error-finding task, "Opiskelijan ratkaisu:"), now three consecutive inline formulas; solutions.md unchanged since round 2, spot-checked.
+- Own captures from preview/fy5-17.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-17-390-ex96b-0.png, fy5-17-1280-ex96b-0.png, fy5-17-390-S336-0.png, fy5-17-390-k139-2.png, fy5-17-1280-S336-0.png, fy5-17-1280-k139-1.png (the last four in sheet-390-spot.png, sheet-1280-spot.png).
+- Round 2's blocking item is gone: "Opiskelijan ratkaisu: d = vP Δt" | "= 6,0 km/s · 16,0 s = 96 km." at 390 px, one line at 1280 px; the full stop follows "km" directly, no stray mark, the break before a relation.
+- Solutions: S-wave time on one row in its box, "1540 m/s · 90 · 10^−6 s" | "= 13,9 cm," with the power of ten whole; one-row forms at 1280 px.
+- scrollWidth equals the viewport at both widths; nothing clipped.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
