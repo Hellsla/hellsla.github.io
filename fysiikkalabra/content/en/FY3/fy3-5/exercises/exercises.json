@@ -243,7 +243,7 @@
       "id": "fy3-5-L2-06",
       "level": 2,
       "core": true,
-      "text": "A student solved a problem and got the result $\\Delta U = 40\\,\\text{J}$. The problem: the air in the cylinder of a bicycle pump is compressed, so that the piston does $30\\,\\text{J}$ of work on the air, and at the same time a quantity of heat of $10\\,\\text{J}$ is transferred from the air through the walls of the cylinder to the surroundings. The student's solution: “Work is done on the air, so $W = +30\\,\\text{J}$. The quantity of heat is $10\\,\\text{J}$, so $Q = 10\\,\\text{J}$. So $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= 10\\,\\text{J} + 30\\,\\text{J} \\\\ &= 40\\,\\text{J} \\end{aligned}$$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the change in the internal energy of the air correctly.\n\nThe answer box takes the result of part b) with its sign.",
+      "text": "A student solved a problem and got the result $\\Delta U = 40\\,\\text{J}$. The problem: the air in the cylinder of a bicycle pump is compressed, so that the piston does $30\\,\\text{J}$ of work on the air, and at the same time a quantity of heat of $10\\,\\text{J}$ is transferred from the air through the walls of the cylinder to the surroundings. The student's solution: “Work is done on the air, so $W = +30\\,\\text{J}$. The quantity of heat is $10\\,\\text{J}$, so $Q = 10\\,\\text{J}$. So $\\Delta U = Q + W = 10\\,\\text{J} + 30\\,\\text{J} = 40\\,\\text{J}$.”\n\na) What is the error in the student's solution?\n\nb) Calculate the change in the internal energy of the air correctly.\n\nThe answer box takes the result of part b) with its sign.",
       "kind": [
         "error"
       ],

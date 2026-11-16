@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 924b8f8dcd64211f
+CONTENT-HASH: a0377d8b4efecd63
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] inquiry.json check-2 / activity 4 — the changed "jouleina" wording sits in a numeric task; the page captures show the task intact, nothing else to change.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta: diff read (single wording change "ovat joulejaan" → "ovat jouleina"). open-tarkista-1280-2 (Käsitetehtävä and Laskutehtävä: layout, formulas, units intact; figure unchanged, teacher-approved).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

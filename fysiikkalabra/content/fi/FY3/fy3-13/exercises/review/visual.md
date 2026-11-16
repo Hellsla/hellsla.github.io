@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7bec1da5aa5477b3
+CONTENT-HASH: 02c5d58adaf5116a
 
 ## Blocking
-
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-- Round 2, delta. Opened fy3-13-open-exercises-L2-1280-13, -14, -15 (13-? tasks 4-18 and 4-19: both graphs, whole solutions) in this language where captured; the new text says the horizontal axis does not reach zero pressure, which the graph confirms (axis ends near -150 °C); 4-19 may keep drawing by eye since -73 °C lies inside the axis. Fractions, aligned rows and answer boxes fine.
-- Hash at start and end the same.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 17 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

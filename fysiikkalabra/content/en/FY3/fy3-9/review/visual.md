@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d8a19b348ef5b4a9
+CONTENT-HASH: 4859a9320684e2e4
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- delta: open-ennusta-1280-1 (Prediction 1 and 2: ml, kPa, N, degrees all typeset, upright, thin space, no line break inside a quantity), open-exit-1280 (exit ticket question and answer chain). Source of inquiry.json, exit-ticket.json and lesson.md scanned: no plain number with unit remains outside aria-labels.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.

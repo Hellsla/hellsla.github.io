@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cd1a10f1eb4be45c
+CONTENT-HASH: e85cee056b40ed1a
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] lesson.md Yleinen virhekäsitys — units "(W)", "(kg/s)", "(K)" in parentheses are plain text in untouched text; consistent with the rest of the lesson, optional LaTeX.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta: diff read (jakautuu sähköön, kaukolämpöön ja hukkalämpöön; "siirtyisi hukkalämpönä ympäristöön": correct cases, fluent). theory-1280-3 (the changed Yleinen virhekäsitys paragraph with the heat-exchanger figure and formulas: layout intact, figure beside its paragraph, labels unclipped).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

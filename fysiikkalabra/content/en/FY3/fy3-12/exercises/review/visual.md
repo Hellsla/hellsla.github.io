@@ -1,15 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: e958149d90cd81ad
+VERDICT: FAIL
+CONTENT-HASH: 0db84c5b62470dbd
 
 ## Blocking
+- [Major] fy3-12-L2-06 (task text, 390 and 1280 px) — the display formula of the student's solution (P = UAΔT, three rows) is followed by `.”`, which stands alone on the next row, left of an empty line — the very defect of the reflow rule (punctuation alone after a display formula) and it looks like a stray mark — move the closing into the formula (`= 9.6\,\text{W}\,.”` inside the aligned block) or set the student's chain inline: `$P = UA\Delta T = 1.0 \cdot 1.6 \cdot 6\,\text{W} = 9.6\,\text{W}$.”`.
 
 ## Polish
-- [Minor] fy3-12-L1-05 / L2-09 — "the arrow between the Sun and the Earth that points up and to the left" is clumsy; "the pale arrow pointing up and left away from the Earth" matches the figure.
+None.
 
 ## Checked
-- Round 3, delta. Opened fy3-12-open-exercises-1280-5 (15-5): "Reading the graph" now quotes "heat radiation", which is the label shown on the English figure; no "lämpösäteily" remains in solutions.md.
-- Round 2 captures of 15-18 (L2-1280-12) unchanged by this fix; figure, answer box and solution layout fine.
-- Hash at start and end the same.
+- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
+- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

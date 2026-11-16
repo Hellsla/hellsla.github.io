@@ -332,7 +332,8 @@ en/fy2-8	= 414\,\text{ppm} + 2.2\,\text{ppm/a} \cdot 20\,\text{a}
 en/fy2-8	m = 820\,\text{g/kWh} \cdot 2.0\,\text{kWh} = 1640
 en/fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 en/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2.80 \cdot 10^3\,\text{m}^3}{8.31\,
-en/fy3-14	= \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i
+en/fy3-12	P = UA\Delta T = 1.0 \cdot 1.6 \cdot 6\,\text{W} = 9.6\,\text{W}
+en/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 en/fy4-1	0.49\,\text{m} + 0.61\,\text{m/s} \cdot 2.0\,\text{s} = 1.71\,\text{m}
 en/fy4-1	14\,\text{m} + (-1.5\,\text{m/s}) \cdot 6.0\,\text{s} = 5.0\,\text{m}
 en/fy4-1	18\,\text{m} + (-3.0\,\text{m/s}) \cdot 5.0\,\text{s} = 3.0\,\text{m}
@@ -1163,9 +1164,9 @@ fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf
 fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fi-easy/fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 fi-easy/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
-fi-easy/fy3-14	= \dfrac{4190 \cdot 0{,}300 \cdot 30 - 36\,704{,}4}{1676}\,{}^\circ\te
-fi-easy/fy3-14	= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j
+fi-easy/fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
 fi-easy/fy3-4	3230\,\text{N} / 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}
+fi-easy/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 fi-easy/fy4-1	14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\te
 fi-easy/fy4-1	18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\te
 fi-easy/fy4-1	1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\te
@@ -2086,9 +2087,9 @@ fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l}
 fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
-fy3-14	= \dfrac{4190 \cdot 0{,}300 \cdot 30 - 36\,704{,}4}{1676}\,{}^\circ\te
-fy3-14	= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j
+fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
 fy3-4	3230\,\text{N} / 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}
+fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 fy4-1	14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\te
 fy4-1	18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\te
 fy4-1	1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\te
@@ -2834,9 +2835,6 @@ fi-easy/fy1-7	\rho_\text{B} = 360\,\text{g} : 400\,\text{cm}^3 = 0{,}90\,\tfrac{
 FY2-koe	= 42{,}7\,\text{kWh} \cdot 0{,}12\,\tfrac{€}{\text{kWh}} \approx 5{,}1
 FY2-sovella	0{,}90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \approx 473\,\text{GWh
 FY2-sovella	5{,}0\,\text{MW} \cdot 8760\,\text{h} = 43{,}8\,\text{GWh}
-FY3-koe	58{,}0\,\text{mm} + 2{,}0\,\text{mm} = 60{,}0\,\text{mm}
-FY3-koe	Q_1 = 2{,}09 \cdot 0{,}50 \cdot 8{,}0\,\text{kJ} \approx 8\,\text{kJ}
-FY3-koe	Q_3 = 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \approx 78\,\text{kJ}
 FY4-koe	\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} = 6{,}0\,\t
 FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
 FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
