@@ -305,6 +305,18 @@
           "feedback": "Aika puolittuu vain yhden kerran. Teho on kääntäen verrannollinen aikaan, ei ajan neliöön. Ajan puolittuminen kaksinkertaistaa tehon. Se ei nelinkertaista tehoa."
         }
       ]
+    },
+    {
+      "id": "fy2-3-L2-09",
+      "level": 2,
+      "text": "Yle kertoi artikkelissa <a href=\"https://yle.fi/a/74-20045312\" target=\"_blank\" rel=\"noopener\">Yle: Vaasan sähkö ei hyvitä miinukselle painuvaa pörssisähkön hintaa asiakkailleen</a> (julkaistu 16. elokuuta 2023, luettu 16. marraskuuta 2026), miksi pörssisähkön hinta voi olla miinuksella ja miten sähkönmyyjät kohtelevat tällaisia tunteja. Artikkeli on yli kolme vuotta vanha, joten sen yksityiskohdat voivat olla vanhentuneet. Hinnan syntymisen periaate ei kuitenkaan ole vanhentunut. Artikkelin mukaan välityspalkkio eli myyjän oma lisämaksu on esimerkiksi Vaasan sähköllä $0{,}41\\,\\text{snt/kWh}$. Vaasan sähkö laskee negatiivisen tuntihinnan nollaksi.\n\na) Selitä artikkelin avulla, milloin sähkön markkinahinta voi olla negatiivinen.\n\nb) Sähkölaite käyttää tasaisesti tehoa $2{,}0\\,\\text{kW}$ neljä tuntia. Laske kulutettu sähköenergia. Laske myös kustannus, kun markkinahinta on $-5{,}0\\,\\text{snt/kWh}$. Negatiivinen kustannus tarkoittaa hyvitystä. Anna kustannus sentteinä.\n\nc) Vertaa kohdan b) tulosta tilanteeseen, jossa markkinahinta on $+15\\,\\text{snt/kWh}$. Selitä, miksi negatiivinen markkinahinta ei välttämättä tarkoita kuluttajalle ilmaista sähköä. Voit käyttää artikkelin välityspalkkiota. Voit käyttää myös sitä, että Fingridin sivulla <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (luettu 16. marraskuuta 2026) aluehinta on ilman veroja ja sähkön siirtokustannuksia.\n\nd) Arvioi, miten sähkön varastointi ja kulutuksen ajoittaminen voivat auttaa sähköjärjestelmää.\n\nVastauskenttään tulee kohdan b) kustannus.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -40,
+      "unit": "snt",
+      "tolerance": 0.02
     }
   ],
   "level3": [

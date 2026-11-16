@@ -317,3 +317,22 @@ $$ vastaa summaa $42{,}09\,\text{MWh}$.
 **Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$, joten $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
 **Vastaus:** $\Delta E \approx 13\,\text{MWh}$ (laskettu $12{,}5\,\text{MWh}$), kaksi merkitsevää numeroa, koska kuvan prosenttiluvut $9\,\%$ ja $4\,\%$ on pyöristetty täysiin prosentteihin.
 **Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$, ja $5\,\%$ luvusta $250\,\text{MWh}$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.
+## fy2-7-L2-10
+**Annettu:** taulukosta (Fingrid, luettu 16. marraskuuta 2026 klo 10:48) kulutusteho $P_\text{k} = 11\,603\,\text{MW}$, tuotantoteho $P_\text{t} = 11\,341\,\text{MW}$, nettotuonti $210\,\text{MW}$ (taulukon arvo on $-210\,\text{MW}$, koska tuonti on negatiivinen), tuulivoima $5571\,\text{MW}$ ja ydinvoima $2594\,\text{MW}$; aikaväli $\Delta t = 1\,\text{h}$ on tehtävän asettama ja tarkka.
+**Kysytty:** a) kulutuksen, tuotannon ja tuonnin vertailu; b) kulutetun energian $E$ yksikössä $\text{GWh}$; c) miksi tuotanto ei vastaa kulutusta joka hetki; d) tuulivoiman ja ydinvoiman osuudet ja miksi hetki ei kerro vuoden rakennetta
+**Periaate:** Teho on energia jaettuna ajalla, $P = \Delta E : \Delta t$, joten tasaisella teholla $E = P\,\Delta t$. Taulukon kulutusteho on yhden hetken lukema; kun oletetaan sen pysyvän samana tunnin ajan, tasaisen tehon kaava pätee. Osuudet ovat osan ja kokonaisuuden suhde.
+**Kaava:** $E = P\,\Delta t$, joten $E = P_\text{k}\,\Delta t$. Kohdassa a) erotus $\Delta P = P_\text{k} - P_\text{t}$ ja kohdassa d) osuus $p = P_\text{lähde} : P_\text{t}$.
+**Muunnokset:** $1\,\text{MW} \cdot 1\,\text{h} = 1\,\text{MWh}$ ja $1000\,\text{MWh} = 1\,\text{GWh}$.
+**Sijoitus:** b)
+
+$$\begin{aligned} E &= 11\,603\,\text{MW} \cdot 1\,\text{h} \\ &= 11\,603\,\text{MWh} \\ &= 11{,}603\,\text{GWh} \end{aligned}$$
+
+a) $\Delta P = 11\,603\,\text{MW} - 11\,341\,\text{MW} = 262\,\text{MW}$ ja nettotuonti on $210\,\text{MW}$. d) Tuulivoima $p = 5571\,\text{MW} : 11\,341\,\text{MW} = 0{,}491$ ja ydinvoima $p = 2594\,\text{MW} : 11\,341\,\text{MW} = 0{,}229$.
+**Vastaus:** b) $E \approx 11{,}6\,\text{GWh}$, kolme merkitsevää numeroa. Aika $1\,\text{h}$ on tarkka, mutta reaaliaikaisten mittausten pieni epätarkkuus näkyy kohdan a) erona $52\,\text{MW}$ eli noin $0{,}45\,\%$ kulutuksesta, joten useampaan numeroon luotettaminen ei ole perusteltua.
+
+Lisäksi: a) Kulutus on $262\,\text{MW}$ eli noin $2{,}3\,\%$ tuotantoa suurempi, ja puute katettiin nettotuonnilla $210\,\text{MW}$. Luvut eivät täsmää aivan: $262\,\text{MW} - 210\,\text{MW} = 52\,\text{MW}$, joka on vain noin $0{,}45\,\%$ kulutuksesta. Ero johtuu reaaliaikaisten mittausten pienistä eroista, eikä sitä tarvitse selittää muulla.
+
+c) Sähköverkko on yhdistetty naapurimaiden verkkoihin. Kun Suomessa tuotetaan vähemmän kuin kulutetaan, erotus tuodaan ulkomailta, kuten taulukossa ($210\,\text{MW}$). Kun tuotantoa on kulutusta enemmän, ylimääräinen sähkö viedään. Fingridin saman päivän näkymässä tuulivoimaa oli klo 1:00 $7639\,\text{MW}$, tuotanto $12\,791\,\text{MW}$ ja kulutus $10\,647\,\text{MW}$, joten tuotantoa oli kulutusta enemmän ja nettovienti oli $2142\,\text{MW}$. Lisäksi sähkövarastot ja tuotannon säätö tasapainottavat hetkittäisiä eroja; summassa tuotannon, tuonnin ja viennin on pysyttävä tasapainossa kulutuksen kanssa.
+
+d) Tuulivoiman osuus oli noin $49\,\%$ ja ydinvoiman noin $23\,\%$ tuotannosta. Tuulivoiman määrä riippuu säästä: samana päivänä se oli klo 1:00 $7639\,\text{MW}$ ja klo 10:00 $5885\,\text{MW}$. Yhden hetken osuudet muuttuvat tunneittain ja vuodenajoittain, joten ne eivät kerro keskiarvoa. Vuoden rakenteeseen tarvitaan tuotanto koko vuodelta (esimerkiksi tilastosta, jossa energia on laskettu vuoden yli); yksi hetki antaa vain tehon sillä hetkellä.
+**Järkevyys:** Tulos on $11\,603\,\text{MWh}$, ja $1\,\text{GWh} = 1000\,\text{MWh}$, joten yksikkömuunnos on oikein. Kulutusteho on noin $7{,}3$ kertaa Olkiluoto 3:n teho, sillä $11\,603 : 1600 = 7{,}25$, mikä on uskottava suuruusluokka koko maan kulutukselle. Osuuksien $0{,}491$ ja $0{,}229$ summa on alle $1$, kuten pitää, koska muita tuotantomuotoja on lisäksi. Malli olettaa, että teho pysyy tunnin ajan samana, mutta kulutus muuttuu koko ajan, joten tulos on arvio.

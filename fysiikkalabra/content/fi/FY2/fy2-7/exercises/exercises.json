@@ -302,6 +302,71 @@
       "answer": 12.5,
       "unit": "MWh",
       "tolerance": 0.05
+    },
+    {
+      "id": "fy2-7-L2-10",
+      "level": 2,
+      "text": "Fingridin sivu <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (luettu 16. marraskuuta 2026) näyttää Suomen sähköjärjestelmän tilan reaaliajassa. Taulukossa ovat sivun lukemat 16. marraskuuta 2026 klo 10:48. Taulukon luvuilla tehtävä toimii, vaikka sivun lukemat ovat sillä välin muuttuneet; voit silti katsoa myös sivun nykyistä näkymää ja verrata sitä taulukkoon. Sivulla tuonti on negatiivinen ja vienti positiivinen. Tuotantomuotojen summa ei täsmää tarkasti kokonaistuotantoon, koska reaaliaikaisissa mittauksissa on pieniä eroja.\n\na) Vertaa kulutusta ja tuotantoa. Kuinka suuri osa kulutuksesta tuotiin ulkomailta eli mikä on nettotuonti? Täsmäävätkö kulutus, tuotanto ja tuonti toisiinsa?\n\nb) Laske, kuinka paljon sähköenergiaa Suomessa kuluisi yhden tunnin aikana, jos kulutusteho pysyisi taulukon tasolla. Anna vastaus gigawattitunteina.\n\nc) Selitä, miksi Suomen sähköntuotannon ei tarvitse joka hetki vastata täsmälleen Suomen kulutusta.\n\nd) Laske tuulivoiman ja ydinvoiman osuudet kokonaistuotannosta. Selitä, miksi yksittäisen hetken lukemista ei voi päätellä Suomen sähköntuotannon vuosittaista rakennetta.\n\nVastauskenttään tulee kohdan b) energia.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 11.6,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Fingrid: Sähköjärjestelmän tila, luettu 16.11.2026 klo 10.48",
+        "columns": [
+          "Suure",
+          "Teho $P\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "kulutus",
+            "11603"
+          ],
+          [
+            "tuotanto yhteensä",
+            "11341"
+          ],
+          [
+            "tuonti − / vienti + (netto)",
+            "-210"
+          ],
+          [
+            "ydinvoima",
+            "2594"
+          ],
+          [
+            "tuulivoima",
+            "5571"
+          ],
+          [
+            "vesivoima",
+            "1823"
+          ],
+          [
+            "yhteistuotanto (teollisuus)",
+            "853"
+          ],
+          [
+            "yhteistuotanto (kaukolämpö)",
+            "329"
+          ],
+          [
+            "aurinkovoima",
+            "56"
+          ],
+          [
+            "muu tuotanto",
+            "73"
+          ],
+          [
+            "sähkövarastot",
+            "71"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
