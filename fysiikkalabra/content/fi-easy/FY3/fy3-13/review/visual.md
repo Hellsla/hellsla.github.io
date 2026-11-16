@@ -9,7 +9,7 @@ CONTENT-HASH: 277850c13281f33e
 
 ## Checked
 - Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
-- Rendered preview page myself with all details open: 360 px (card) and 390 px (page overflow check) only; the 1280 px capture was not finished, the card structure is identical to fi.
+- Rendered preview page myself with all details open: card viewed at 360, 390 and 1280 px (all three finished after the first report).
 - Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
 - Hash re-checked at the end: unchanged.
 
