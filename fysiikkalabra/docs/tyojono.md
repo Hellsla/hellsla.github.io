@@ -73,11 +73,11 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
-Varattu: claude/fy7-clipped-aineisto (FY7)
-
 FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksittäistä `\dfrac`- tai `\sqrt`-kaavaa ja 12 sulkeiden, lainausmerkkien tai sijapäätteen sisällä olevaa kaavaa, jotka jäävät tekstin sisään).
 
 FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
+
+FY7 tehty (PR #633, kohdan 19 FY7:n kanssa): luvut 1–16 ja esimerkkikoe kolmella kielellä; ROWS_REMOVED riviä pois listalta; ROWS_LEFT jää (Sovella-sarjan 45 riviä: sarja palautettiin mainin muotoon, koska sen juurikaava `\sqrt{\dfrac{…}{…}}` ei jakaudu riveiksi ilman sisältömuutosta; fy7-2:n leveä `\dfrac`; sekä ne en- ja fi-easy-tehtäväsarjojen rivit, joiden sivulla näkyy yhä vanhempi katselmoitu versio, koska niiden tiedekatselmointi oli vanhentunut jo mainissa: en fy7-4, fy7-6, fy7-10, fy7-12, fy7-16, fi-easy fy7-6, fy7-12). Uudet huomiot: tehtävätekstissä (`p.task`) display-kaavan perässä oleva välimerkki ei siirry kaavaan, joten lainauksen tai sulkeiden sisäinen ketju jaetaan relaation kohdalta peräkkäisiksi tekstin sisäisiksi kaavoiksi (`$a = b$ $= c$`, reflow); jo mainissa `aligned`-muotoisia monen yhtälön lohkoja ei saa yhdistää.
 
 FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe kolmella kielellä); 53 jää (47 vanhaa inline-kaavaa, jotka CI löysi 360 px:llä, ja kahden tehtävätekstin opiskelijan laskun 6 riviä, koska tehtävätekstissä välimerkki jäisi display-kaavan jälkeen yksin).
 
@@ -479,8 +479,6 @@ FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 ain
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
-Varattu: claude/fy7-clipped-aineisto (FY7)
-
 Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
 luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
@@ -491,6 +489,7 @@ ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 om
 FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2-10, fy5-14-L2-09, fy5-17-L2-10, fy5-16-L2-10.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
+FY7 tehty: FY7-A1…A5 (PR #633, kohdan 5d FY7:n kanssa): fy7-8-L2-10 (A1), fy7-9-L2-10 (A2), fy7-9-L2-11 (A3), fy7-7-L2-08 (A4), fy7-2-L2-10 (A5). Lähteet tarkistettu 16.11.; A5:n avaruussäädiagrammi piirretään JavaScriptillä eikä sen arvoja voinut lukea, joten tehtävässä on merkitty esimerkkitaulukko; A1:n aineisto ei kerro, miksi jännitteet ovat korkeita, joten a) kysyy vain sen, mitä sivulla on.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
