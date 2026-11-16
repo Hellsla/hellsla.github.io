@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2615e4af46870a85
+CONTENT-HASH: c85d130d8268574e
 
 ## Blocking
-none
+(none)
 
 ## Polish
-1. L1-10 (figure: mean of two readings, formula, mm/s² conversion) is at the top of level 1; acceptable.
-2. L2-08 compares circular-orbit speeds for a comet that does not move on a circle; the solution says so, a student could still read 7,7 as a real ratio.
+- fy5-6-L2-09 c): "Tutki kuvaajan avulla, miten havaintoaineisto tukee lakia" is vague for an S2 reader; add "Katso, ovatko pisteet samalla suoralla ja kulkeeko suora origon kautta" (a question, not the answer).
+- fy5-6-L2-09 d): say "Laske ensin, kuinka moninkertainen Marsin etäisyys on Maahan verrattuna" only if the teacher wants more scaffolding; as it stands the ratio step is left to the student.
+- The task is long; it is marked "Syventävä tehtävä.", so acceptable.
 
 ## Checked
-- L1-11 now one formula: r given from the Moon centre, mass from MAFY, g = γM/r² = 1,448 m/s² recomputed; level 1, no overlap with L2-02 (which needs R + h) or L1-05 (speed).
-- Solution follows all seven steps with a sanity check against the surface value 1,62 m/s².
-- L1-10 a = 5,93 mm/s² and L2-08 √(5250/88) = 7,72 recomputed; figure radat gives all values, no answer.
-- Set mix and progression still fit.
+- "Syventävä tehtävä." present; Kepler's law is stated in the task and derived from the circular-orbit model in the solution.
+- The task names the NASA rows in English (Distance from Sun, Orbital Period), their units, and that the Moon column is not used: an S2 reader can find the data. "Isoakselin puolikas" is explained.
+- Recomputed: T²/a³ 0,0399 to 0,0398; Mars 687,1 d; 227,9 gives 686,7 d; Uranus/Saturn/Neptune deviations 0,3/1,3/2,5 %. Solution is staged, the graph reading explained.
+- Set has 11/9/5 tasks at levels 1/2/3, above the minimum; the new task does not repeat the example.
+- Figure fy5-6/radat description gives the data without the answer.
