@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7682f24e4c0a7761
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: ed163738668209c7
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- inquiry.json solution, Periaate — check that 'lämpönä/lämmön' remnants are tied to the new word sisäenergia ('lämpönä eli sisäenergiana'); S2 reader may see two terms.
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff is the term change heat/lämpö to internal energy/sisäenergia in exit ticket, summary bullet, task prompt, hints, feedback and solution; physics and answer 0.722 eV unchanged; feedback still repairs the misconceptions. fi-easy stays plain.

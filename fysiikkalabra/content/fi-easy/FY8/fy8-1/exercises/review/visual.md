@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 190d09c51524ea92
-SCOPE: delta reflow from b64ca3b0224e105d base 56362aafa0
+CONTENT-HASH: 6e3fb1b8a584919f
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Opened fy8-1 open-exercises-1280-1 (1280 px): solution blocks align at =, nothing clipped. The changed row in solutions.md judged from source.
-- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.
+- Delta: changed solutions (h in eV s, 4,3·10^2 nm answer, Pika-arvio). Captures opened (open-exercises-L2 parts, 1280 px): formulas render, no clipping or red KaTeX, text reads naturally.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

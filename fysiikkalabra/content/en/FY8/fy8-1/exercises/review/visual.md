@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 477fba2ef0ddaf08
-SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
+CONTENT-HASH: 780edf82d85f8891
 
 ## Blocking
 (none)
@@ -9,7 +8,7 @@ SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
 (none)
 
 ## Checked
-- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Delta: changed solutions (h in eV s, 4.3·10^2 nm answer, significant figures). Captures opened (open-exercises-L2 parts, 1280 px): formulas render, no clipping or red KaTeX, text reads naturally.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
