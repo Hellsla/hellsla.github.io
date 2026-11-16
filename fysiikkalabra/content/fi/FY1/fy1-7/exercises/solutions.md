@@ -54,7 +54,7 @@
 **Periaate:** Harkko on kauttaaltaan kultaa, joten massa on tiheys kertaa tilavuus. Särmiön tilavuus on kolmen mitan tulo.
 **Kaava:** $V = a\,b\,c$ ja $m = \rho V = \rho\,a\,b\,c$
 **Muunnokset:** Tiheys on yksikössä $\text{kg/m}^3$, joten mitat muunnetaan metreiksi: $10{,}0\,\text{cm} = 10{,}0 \cdot 0{,}01\,\text{m} = 0{,}100\,\text{m}$, $5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$ ja $2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$.
-**Sijoitus:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}100\,\text{m} \cdot 0{,}050\,\text{m} \cdot 0{,}020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}0 \cdot 10^{-4}\,\text{m}^3 = 1{,}93\,\text{kg}$
+**Sijoitus:** $$\begin{aligned} m &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}100\,\text{m} \\ &\cdot 0{,}050\,\text{m} \cdot 0{,}020\,\text{m} \\ &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}0 \cdot 10^{-4}\,\text{m}^3 \\ &= 1{,}93\,\text{kg} \end{aligned}$$
 **Vastaus:** $1{,}9\,\text{kg}$, kaksi merkitsevää numeroa, koska mitat $5{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$, ja saman tilavuuden veden massa olisi $100\,\text{g}$. Kulta on noin 19 kertaa niin tiheää kuin vesi, joten $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
 
@@ -191,7 +191,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Kaava:** Tilavuuksille $V_\text{Cu} + V_\text{Al} = V$ ja massoille $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Sijoittamalla $V_\text{Al} = V - V_\text{Cu}$ toiseen yhtälöön ratkeaa $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
 **Muunnokset:** Ei tarvita: massat ovat grammoina, tilavuudet kuutiosenttimetreinä ja tiheydet yksikössä $\text{g/cm}^3$.
 **Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
-**Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmella numerolla. Tilavuus $100\,\text{cm}^3$ ja massa $520\,\text{g}$ ovat tarkkoja arvoja, joten ne eivät rajoita tarkkuutta. Alumiinia on $V_\text{Al} = 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 = 60{,}1\,\text{cm}^3$.
+**Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmella numerolla. Tilavuus $100\,\text{cm}^3$ ja massa $520\,\text{g}$ ovat tarkkoja arvoja, joten ne eivät rajoita tarkkuutta. Alumiinia on $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 \\ &= 60{,}1\,\text{cm}^3 \end{aligned}$$.
 **Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$. Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$. Alumiinia on enemmän tilavuuden mukaan ($60{,}1\,\text{cm}^3$), mutta kuparia on enemmän massan mukaan: kuparin massa on noin $357{,}5\,\text{g}$ ja alumiinin noin $162{,}3\,\text{g}$, koska kuparin tiheys on moninkertainen. Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
@@ -203,9 +203,9 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 
 **Mallivastaus:** Muunnokset:
 
-$0{,}36\,\text{kg} = 0{,}36 \cdot 1000\,\text{g} = 360\,\text{g}$
+$$\begin{aligned} 0{,}36\,\text{kg} &= 0{,}36 \cdot 1000\,\text{g} \\ &= 360\,\text{g} \end{aligned}$$
 
-$0{,}40\,\text{dm}^3 = 0{,}40 \cdot 1000\,\text{cm}^3 = 400\,\text{cm}^3$
+$$\begin{aligned} &0{,}40\,\text{dm}^3 \\ &= 0{,}40 \cdot 1000\,\text{cm}^3 \\ &= 400\,\text{cm}^3 \end{aligned}$$
 
 $4{,}5\,\text{kg} = 4{,}5 \cdot 1000\,\text{g} = 4500\,\text{g}$
 
@@ -215,9 +215,9 @@ Tiheydet:
 
 $\rho_\text{A} = 135\,\text{g} : 50\,\text{cm}^3 = 2{,}7\,\tfrac{\text{g}}{\text{cm}^3}$
 
-$\rho_\text{B} = 360\,\text{g} : 400\,\text{cm}^3 = 0{,}90\,\tfrac{\text{g}}{\text{cm}^3}$
+$$\begin{aligned} \rho_\text{B} &= 360\,\text{g} : 400\,\text{cm}^3 \\ &= 0{,}90\,\tfrac{\text{g}}{\text{cm}^3} \end{aligned}$$
 
-$\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9{,}0\,\tfrac{\text{g}}{\text{cm}^3}$
+$$\begin{aligned} \rho_\text{C} &= 4500\,\text{g} : 500\,\text{cm}^3 \\ &= 9{,}0\,\tfrac{\text{g}}{\text{cm}^3} \end{aligned}$$
 
 $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1{,}2\,\tfrac{\text{g}}{\text{cm}^3}$
 

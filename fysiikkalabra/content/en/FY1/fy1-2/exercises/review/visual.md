@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1eceddd9c27ef416
+CONTENT-HASH: 59276c46695c8bf1
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy1-2-L1-10 Answer — the line under the boxed answer still opens with a fragment ("To three significant figures.") — write "The answer is given to three significant figures."
+- none
 
 ## Checked
-- fy1-2-open-exercises-1280-9 (task 2-10 with hint open: text, $t = \tfrac{s}{c}$, answer box "t ≈ 1.28 s", Given/Asked start)
-- fy1-2-open-exercises-1280-10 (solution: Principle, Formula, Conversions, Substitution rows aligned at "=" with 1.282 s then ≈ 1.28 s, boxed Answer 1.28 s, three-significant-figure justification, Reasonableness)
-- Diff read for exercises.json and solutions.md; significant figures agree across the answer line, substitution row, boxed answer and the task's answer box; layout survived.
+delta review 5d reflow, round 1: opened the 360 px captures 01, 05, 08-15 (10-14 on a fresh rebuild) (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences. Captures 10-14 were cut by the sticky bar, so I rebuilt the page and viewed the sum and mean (774.5 g) and 4.498e9 blocks directly; all fit.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 4

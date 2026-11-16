@@ -24,7 +24,7 @@
 **Find:** the diameter $d$ in kilometres, in the unit $\text{km}$
 **Principle:** A kilometre is a thousand metres, $1\,\text{km} = 10^{3}\,\text{m}$. Write the length in a form that has the factor $10^{3}\,\text{m}$, and replace it with the unit $\text{km}$.
 **Formula:** $10^{3}\,\text{m} = 1\,\text{km}$
-**Conversions:** $10^{7} = 10^{4}\cdot10^{3}$, so $1.27\cdot10^{7}\,\text{m} = 1.27\cdot10^{4}\cdot10^{3}\,\text{m}$.
+**Conversions:** $10^{7} = 10^{4}\cdot10^{3}$, so $$\begin{aligned} &1.27\cdot10^{7}\,\text{m} \\ &= 1.27\cdot10^{4}\cdot10^{3}\,\text{m} \end{aligned}$$.
 **Substitution:** $d = 1.27\cdot10^{4}\cdot10^{3}\,\text{m} = 1.27\cdot10^{4}\,\text{km} = 12\,700\,\text{km}$
 **Answer:** $12\,700\,\text{km}$, that is $1.27\cdot10^{4}\,\text{km}$, three significant figures like the given diameter.
 **Reasonableness:** The circumference of Earth is about $40\,000\,\text{km}$, and the diameter is the circumference divided by $\pi \approx 3.14$, so about $12\,700\,\text{km}$. The result agrees.
@@ -65,9 +65,9 @@
 **Principle:** Light travels at a constant speed, so the time is the distance divided by the speed. The time is first found in seconds and then converted to years.
 **Formula:** $s = c\,t$, so $t = \dfrac{s}{c}$
 **Conversions:** One year is $3.156\cdot10^{7}\,\text{s}$, so the number of years is found by dividing the seconds by the seconds in one year: how many times a year fits in the time.
-**Substitution:** $t = \dfrac{4.0\cdot10^{16}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.334\cdot10^{8}\,\text{s}$ and in years $1.334\cdot10^{8}\,\text{s} : 3.156\cdot10^{7}\,\text{s} = 4.23$, so $t = 4.23\,\text{a}$
+**Substitution:** $t = \dfrac{4.0\cdot10^{16}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.334\cdot10^{8}\,\text{s}$ and in years $$\begin{aligned} &1.334\cdot10^{8}\,\text{s} : 3.156\cdot10^{7}\,\text{s} \\ &= 4.23 \end{aligned}$$, so $t = 4.23\,\text{a}$
 **Answer:** $4.2\,\text{a}$, two significant figures like the distance $4.0\cdot10^{16}\,\text{m}$ ($4.23$ also fits in the field).
-**Reasonableness:** One light-year is $9.46\cdot10^{15}\,\text{m}$ and the distance is about $4$ light-years ($4.0\cdot10^{16} : 9.46\cdot10^{15} \approx 4.2$), so the time is about $4$ years. The result agrees.
+**Reasonableness:** One light-year is $9.46\cdot10^{15}\,\text{m}$ and the distance is about $4$ light-years ($4.0\cdot10^{16} : 9.46\cdot10^{15}$ $\approx 4.2$), so the time is about $4$ years. The result agrees.
 
 ## fy1-1-L2-03
 **Given:** circumference $s = 4.0\cdot10^{7}\,\text{m}$ and the height of one person $h = 1.7\,\text{m}$
@@ -107,7 +107,7 @@
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** From the Planck length to the proton $-15 - (-35) = 20$ steps and from the proton to a person $0 - (-15) = 15$ steps
 **Answer:** The larger difference is $20$ orders of magnitude, between the Planck length and the proton; the number is an integer, because the orders of magnitude are whole powers of ten.
-**Reasonableness:** The exact ratio from the Planck length to the proton is $1.7\cdot10^{-15} : 1.6\cdot10^{-35} \approx 1.1\cdot10^{20}$ and from the proton to a person $1.7 : 1.7\cdot10^{-15} = 1.0\cdot10^{15}$. The first is larger, as the numbers of steps also show.
+**Reasonableness:** The exact ratio from the Planck length to the proton is $$\begin{aligned} &1.7\cdot10^{-15} : 1.6\cdot10^{-35} \\ &\approx 1.1\cdot10^{20} \end{aligned}$$ and from the proton to a person $$\begin{aligned} &1.7 : 1.7\cdot10^{-15} \\ &= 1.0\cdot10^{15} \end{aligned}$$. The first is larger, as the numbers of steps also show.
 
 ## fy1-1-L3-03
 **Given:** the size of a virus $d_\text{v} = 1.0\cdot10^{-7}\,\text{m}$ is $5.0\,\text{cm}$ in the picture; the size of a red blood cell $d_\text{c} = 7.5\cdot10^{-6}\,\text{m}$
@@ -151,7 +151,7 @@
 **Formula:** $r_\text{model,J} = r_\text{model,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptune}}$
 **Conversions:** $r_\text{model,N} = 2.0\,\text{m} = 2.0\cdot100\,\text{cm} = 200\,\text{cm}$. The astronomical units cancel from the ratio.
 **Substitution:** $r_\text{model,J} = 200\,\text{cm}\cdot\dfrac{5.20\,\text{AU}}{30.1\,\text{AU}} = 200\,\text{cm}\cdot0.1727 = 34.6\,\text{cm}$
-**Answer:** $35\,\text{cm}$, two significant figures like the length $2.0\,\text{m}$ of the model ($34.6$ also fits in the field). The planet closest to the point $1.0\,\text{m}$ is Uranus: the point $100\,\text{cm}$ corresponds to the real distance $100\,\text{cm} : 200\,\text{cm}\cdot30.1\,\text{AU} = 15.05\,\text{AU}$, which is closer to the value of Uranus, $19.2\,\text{AU}$ (difference $4.15\,\text{AU}$), than to the value of Saturn, $9.58\,\text{AU}$ (difference $5.47\,\text{AU}$).
+**Answer:** $35\,\text{cm}$, two significant figures like the length $2.0\,\text{m}$ of the model ($34.6$ also fits in the field). The planet closest to the point $1.0\,\text{m}$ is Uranus: the point $100\,\text{cm}$ corresponds to the real distance $$\begin{aligned} &100\,\text{cm} : 200\,\text{cm} \\ &\cdot30.1\,\text{AU} \\ &= 15.05\,\text{AU} \end{aligned}$$, which is closer to the value of Uranus, $19.2\,\text{AU}$ (difference $4.15\,\text{AU}$), than to the value of Saturn, $9.58\,\text{AU}$ (difference $5.47\,\text{AU}$).
 **Reasonableness:** Jupiter is about $5\,\text{AU}$ away and Neptune about $30\,\text{AU}$, so Jupiter is about a sixth of the distance of Neptune. A sixth of $200\,\text{cm}$ is about $33\,\text{cm}$, and the result $34.6\,\text{cm}$ is close to it. The Earth would be only about $6.6\,\text{cm}$ from the Sun in the model.
 
 ## fy1-1-L2-06
@@ -162,7 +162,7 @@
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** Human $1.7 < 3$, so $10^{0}\,\text{m}$. Earth $1.27 < 3$, so $10^{7}\,\text{m}$. Sun $1.39 < 3$, so $10^{9}\,\text{m}$. Milky Way $9.46 > 3$, so $10^{20+1} = 10^{21}\,\text{m}$. Thus $\text{steps} = 21 - 0 = 21$.
 **Answer:** $21$, that is, there are $21$ orders of magnitude between a human and the Milky Way; the number is an integer because the orders of magnitude are whole powers of ten. The order of magnitude of the Milky Way is $10^{21}\,\text{m}$ because the factor $9.46$ is closer to $10$ than to $1$: $9.46\cdot10^{20}\,\text{m}$ is closer to $10^{21}\,\text{m}$ than to $10^{20}\,\text{m}$.
-**Reasonableness:** The Milky Way is about $10^{21}\,\text{m}$ and a human about $1\,\text{m}$, so the ratio is $9.46\cdot10^{20}\,\text{m} : 1.7\,\text{m} \approx 5.6\cdot10^{20}$, that is, about $10^{21}$. This fits 21 steps.
+**Reasonableness:** The Milky Way is about $10^{21}\,\text{m}$ and a human about $1\,\text{m}$, so the ratio is $$\begin{aligned} &9.46\cdot10^{20}\,\text{m} : 1.7\,\text{m} \\ &\approx 5.6\cdot10^{20} \end{aligned}$$, that is, about $10^{21}$. This fits 21 steps.
 
 ## fy1-1-L2-07
 **Given:** the points of the table $(N;\ h)$: $(50;\ 5.0\,\text{mm})$, $(100;\ 10.5\,\text{mm})$, $(150;\ 15.0\,\text{mm})$, $(200;\ 20.5\,\text{mm})$, $(250;\ 25.5\,\text{mm})$ and $(300;\ 30.5\,\text{mm})$; the ruler is read to half a millimetre
@@ -184,7 +184,7 @@
 **Conversions:** $h = 5.0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0.833\,\text{mm} = 8.33\cdot10^{-4}\,\text{m}$ and $r = 2.0\,\text{mm} : 2 = 1.0\cdot10^{-3}\,\text{m}$.
 **Substitution:** $V_\text{rain} = 8.33\cdot10^{-4}\,\text{m}\cdot6.0\cdot10^{3}\,\text{m}^2 = 5.0\,\text{m}^3$ and $V_\text{drop} = \dfrac{4}{3}\pi\left(1.0\cdot10^{-3}\,\text{m}\right)^{3} = 4.19\cdot10^{-9}\,\text{m}^3$, so $N = \dfrac{5.0\,\text{m}^3}{4.19\cdot10^{-9}\,\text{m}^3} = 1.19\cdot10^{9}$
 **Answer:** about $1.2$ billion drops, two significant figures like the measured given values ($1.19$ fits in the field). The duration $10\,\text{min}$ is an exact, chosen time span, so it does not limit the precision. If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$. If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
-**Reasonableness:** Every square metre gets $1.19\cdot10^{9} : 6.0\cdot10^{3} \approx 2\cdot10^{5}$ drops, that is about $20$ drops per square centimetre in ten minutes, which is a reasonable number. The order of magnitude $10^{9}$ does not change even if a single assumption is off by twenty per cent or so.
+**Reasonableness:** Every square metre gets $$\begin{aligned} &1.19\cdot10^{9} : 6.0\cdot10^{3} \\ &\approx 2\cdot10^{5} \end{aligned}$$ drops, that is about $20$ drops per square centimetre in ten minutes, which is a reasonable number. The order of magnitude $10^{9}$ does not change even if a single assumption is off by twenty per cent or so.
 
 ## fy1-1-L3-05
 **Given:** $d_0 = 119.0\,\text{AU}$, $v = 15.341\,\text{km/s}$, $t = 7.25\,\text{a}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ and the observation $143.05\,\text{AU}$ from the Earth (JPL, February 2026)
@@ -201,7 +201,7 @@
 **Given:** distance of the Moon $3.84\cdot10^{8}\,\text{m}$, diameter of the Moon $3.47\cdot10^{6}\,\text{m}$, diameter of the Sun $1.39\cdot10^{9}\,\text{m}$; in an eclipse the Sun and the Moon look equally large.
 **Find:** the distance of the Earth from the Sun $d_\text{A}$, chosen from four options that differ in order of magnitude.
 **Principle:** An object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. In the eclipse assumed in the task the Sun and the Moon look approximately equally large, so the ratio of the distances is approximately the same as the ratio of the diameters.
-**Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $d_\text{A}\approx400\cdot3.84\cdot10^{8}\,\text{m}\approx1.5\cdot10^{11}\,\text{m}$. This is the correct answer. The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
+**Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $$\begin{aligned} d_\text{A}&\approx400\cdot3.84\cdot10^{8}\,\text{m} \\ &\approx1.5\cdot10^{11}\,\text{m} \end{aligned}$$. This is the correct answer. The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
 **Reasonableness:** Light travels the distance $1.5\cdot10^{11}\,\text{m} : 3.0\cdot10^{8}\,\text{m/s} = 5.0\cdot10^{2}\,\text{s}$, that is about $8\,\text{min}$, which is the well-known travel time of sunlight.
 
 ## fy1-1-L1-10

@@ -280,7 +280,7 @@
         {
           "text": "Hän kertoi vain yhdellä tuhannella. Neliökilometri on $(1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$, joten oikea tulos on $2{,}5\\cdot10^{6}\\,\\text{m}^2$.",
           "correct": true,
-          "feedback": "Oikein. Yksikkö on neliö, joten sijoitetaan koko neliö: $1\\,\\text{km}^2 = (1000\\,\\text{m})^2 = 10^{6}\\,\\text{m}^2$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
+          "feedback": "Oikein. Yksikkö on neliö, joten sijoitetaan koko neliö: $$\\begin{aligned} 1\\,\\text{km}^2 &= (1000\\,\\text{m})^2 \\\\ &= 10^{6}\\,\\text{m}^2 \\end{aligned}$$. Tuloksen olisi voinut huomata vääräksi arvioimalla: neliökilometri on kilometrin pituisen ja kilometrin levyisen neliön ala, ja siihen mahtuu miljoona metrin neliötä."
         },
         {
           "text": "Hänen olisi pitänyt jakaa tuhannella, koska metri on pienempi kuin kilometri.",
@@ -292,7 +292,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä, koska yksi kilometri on tuhat metriä.",
-          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten $1\\,\\text{km}^2 = 1000\\,\\text{m}\\cdot1000\\,\\text{m} = 10^{6}\\,\\text{m}^2$."
+          "feedback": "Kilometri on tuhat metriä, mutta neliökilometri ei ole tuhat neliömetriä. Pinta-ala on kahden pituuden tulo, joten $$\\begin{aligned} 1\\,\\text{km}^2 &= 1000\\,\\text{m}\\cdot1000\\,\\text{m} \\\\ &= 10^{6}\\,\\text{m}^2 \\end{aligned}$$."
         }
       ],
       "optional": true
@@ -336,7 +336,7 @@
       "hints": [
         "Nopeus kertoo matkan sekunnissa. Kuinka monta sekuntia vuodessa on, ja mitä yksikköä matka on, kun nopeus on $\\text{km/s}$?",
         "Matka vuodessa on $s = vt$, missä $t = 3{,}156\\cdot10^{7}\\,\\text{s}$. Laske sitten, montako AU:ta matkaan mahtuu, kun $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.",
-        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km}$."
+        "$s = 15{,}341\\,\\text{km/s}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $$\\begin{aligned} &4{,}842\\cdot10^{8}\\,\\text{km} \\\\ &: 1{,}496\\cdot10^{8}\\,\\text{km} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -348,7 +348,7 @@
           "feedback": "Käytit AU:n pituutena $1{,}496\\cdot10^{5}\\,\\text{km}$. AU on $1{,}496\\cdot10^{8}\\,\\text{km}$, tuhat kertaa pidempi, joten lukuarvo on tuhannesosa siitä."
         }
       ],
-      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** vuodessa kuljettu matka $s$ astronomisina yksikköinä eli etääntymisnopeus yksikössä $\\text{AU/a}$\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Lopuksi lasketaan, montako AU:ta matkaan mahtuu: $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $4{,}842\\cdot10^{8}\\,\\text{km} : 1{,}496\\cdot10^{8}\\,\\text{km} = 3{,}236$, joten $s = 3{,}236\\,\\text{AU}$ vuodessa\n\n**Vastaus:** Luotain etääntyy $3{,}236\\,\\text{AU}$ vuodessa eli $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
+      "solution": "**Annettu:** nopeus $v = 15{,}341\\,\\text{km/s}$, aika $t = 1\\,\\text{a} = 3{,}156\\cdot10^{7}\\,\\text{s}$, $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$\n\n**Kysytty:** vuodessa kuljettu matka $s$ astronomisina yksikköinä eli etääntymisnopeus yksikössä $\\text{AU/a}$\n\n**Periaate:** Luotain etenee oletuksen mukaan vakionopeudella, joten annettu kaava $s = vt$ antaa vuodessa kuljetun matkan kilometreinä. Se muunnetaan lopuksi astronomisiksi yksiköiksi.\n\n**Kaava:** $s = vt$\n\n**Muunnokset:** Aika on jo sekunteina, joten $\\text{s}$ supistuu pois. Lopuksi lasketaan, montako AU:ta matkaan mahtuu: $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$.\n\n**Sijoitus:** $s = 15{,}341\\,\\dfrac{\\text{km}}{\\text{s}}\\cdot3{,}156\\cdot10^{7}\\,\\text{s} = 4{,}842\\cdot10^{8}\\,\\text{km}$. AU:ita on $$\\begin{aligned} &4{,}842\\cdot10^{8}\\,\\text{km} \\\\ &: 1{,}496\\cdot10^{8}\\,\\text{km} \\\\ &= 3{,}236 \\end{aligned}$$, joten $s = 3{,}236\\,\\text{AU}$ vuodessa\n\n**Vastaus:** Luotain etääntyy $3{,}236\\,\\text{AU}$ vuodessa eli $3{,}236\\,\\text{AU/a}$, neljä merkitsevää numeroa, koska vuoden pituus $3{,}156\\cdot10^{7}\\,\\text{s}$ ja AU $1{,}496\\cdot10^{8}\\,\\text{km}$ on annettu neljällä.\n\n**Järkevyys:** Vuodessa on noin $3\\cdot10^{7}$ sekuntia ja nopeus on noin $15\\,\\text{km/s}$, joten matka on noin $4{,}5\\cdot10^{8}\\,\\text{km}$. Se on noin kolme AU:ta, ja mallin taulukossa etäisyys kasvoi neljässä vuodessa noin $13\\,\\text{AU}$, eli noin $3{,}2\\,\\text{AU}$ vuodessa."
     },
     {
       "id": "harjoitukset",
@@ -440,7 +440,7 @@
       "type": "explain",
       "title": "4. Selitä ja siirrä",
       "prompt": "Selitä omin sanoin, miksi tähtitieteessä etäisyyksiä ilmoitetaan astronomisina yksikköinä tai valon kulkuaikana kilometrien sijaan. Mitä tarvitaan, jotta voi siirtyä yksiköstä toiseen?",
-      "model": "Kilometreinä tähtitieteelliset etäisyydet olisivat valtavia lukuja: Neptunus on Auringosta noin $4{,}5\\cdot10^{9}\\,\\text{km}$:n ja Voyager 2 yli $2\\cdot10^{10}\\,\\text{km}$:n päässä. Astronominen yksikkö $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä, joten Neptunuksen etäisyyttä $30{,}1\\,\\text{AU}$ on helppo verrata Maan etäisyyteen: Neptunus on noin 30 kertaa niin kaukana Auringosta kuin Maa. Valon kulkuaika kertoo, kuinka kauan viesti on matkalla: Voyager 2:lle noin 20 tuntia. Yksiköstä toiseen siirrytään kirjoittamalla yksikön paikalle sen arvo, esimerkiksi $30{,}1\\,\\text{AU} = 30{,}1\\cdot1{,}496\\cdot10^{8}\\,\\text{km}$; valon kulkuaikaan siirrytään jakamalla matka valon nopeudella, $t = s : c$. Suure pysyy samana, vain lukuarvo muuttuu.",
+      "model": "Kilometreinä tähtitieteelliset etäisyydet olisivat valtavia lukuja: Neptunus on Auringosta noin $4{,}5\\cdot10^{9}\\,\\text{km}$:n ja Voyager 2 yli $2\\cdot10^{10}\\,\\text{km}$:n päässä. Astronominen yksikkö $1\\,\\text{AU} = 1{,}496\\cdot10^{8}\\,\\text{km}$ vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä, joten Neptunuksen etäisyyttä $30{,}1\\,\\text{AU}$ on helppo verrata Maan etäisyyteen: Neptunus on noin 30 kertaa niin kaukana Auringosta kuin Maa. Valon kulkuaika kertoo, kuinka kauan viesti on matkalla: Voyager 2:lle noin 20 tuntia. Yksiköstä toiseen siirrytään kirjoittamalla yksikön paikalle sen arvo, esimerkiksi $$\\begin{aligned} &30{,}1\\,\\text{AU} \\\\ &= 30{,}1\\cdot1{,}496\\cdot10^{8}\\,\\text{km} \\end{aligned}$$; valon kulkuaikaan siirrytään jakamalla matka valon nopeudella, $t = s : c$. Suure pysyy samana, vain lukuarvo muuttuu.",
       "criteria": [
         "Sanon, että kilometreinä luvut olisivat hyvin suuria ja hankalia.",
         "Mainitsen, että AU vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä ja antaa vertailukohdan.",

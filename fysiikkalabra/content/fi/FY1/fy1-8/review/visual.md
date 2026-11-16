@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0f5b4ea186d4db80
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 4d88e9553ba8c9dd
 
 ## Blocking
 - none
@@ -9,4 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Text diff only (no figure change): wording, feedback, $g\,t$ and units notation read; no layout effect.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-8 captures at 360 px (captures 01); no clipping, equals signs aligned, rows break outside numbers and units.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

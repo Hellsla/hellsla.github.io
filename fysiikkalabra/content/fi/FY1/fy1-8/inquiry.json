@@ -192,7 +192,7 @@
       "prompt": "Oppilas suunnittelee kokeen, jossa auton nopeus on $0{,}60\\,\\text{m/s}$ ja ajan epävarmuus $0{,}2\\,\\text{s}$. Suhteellisen epävarmuuden raja on $5\\,\\%$. Hän laskee lyhimmän matkan:\n\n$$\\begin{aligned} s_\\text{min} &= \\frac{v\\,\\Delta t}{\\varepsilon_\\text{max}} \\\\ &= \\frac{0{,}60\\,\\text{m/s} \\cdot 0{,}2\\,\\text{s}}{5} \\\\ &= 0{,}024\\,\\text{m} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Prosenttia ei muutettu desimaaliluvuksi: $5\\,\\% = 0{,}050$, joten oikea matka on $0{,}60\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}2\\,\\text{s} : 0{,}050 = 2{,}4\\,\\text{m}$.",
+          "text": "Prosenttia ei muutettu desimaaliluvuksi: $5\\,\\% = 0{,}050$, joten oikea matka on $$\\begin{aligned} &0{,}60\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}2\\,\\text{s} : 0{,}050 \\\\ &= 2{,}4\\,\\text{m} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Suhteellinen epävarmuus $\\varepsilon$ on osamäärä, joten $5\\,\\%$ on sijoitettava lukuna $0{,}050$. Virheen olisi voinut huomata järkevyystarkistuksella: käsikellolla ei voi mitata parin senttimetrin matkaa, kun aikaa on alle sekunti."
         },
