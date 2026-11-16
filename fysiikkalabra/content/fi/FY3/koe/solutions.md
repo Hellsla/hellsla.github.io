@@ -193,7 +193,7 @@ $W = 521{,}7\,\text{N} \cdot 0{,}0512\,\text{m} \approx 26{,}7\,\text{J}$
 **Annettu:** $m = 1{,}20\,\text{kg}$, $\theta_1 = -8{,}0\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, $c_\text{j} = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $s = 333\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** lumen ja veden saama energia $Q$
 **Periaate:** Lumi lämpenee ensin sulamispisteeseen $0\,{}^\circ\text{C}$, sulaa sitten vakiolämpötilassa ja lopuksi vesi lämpenee kiehumispisteeseen. Kunkin vaiheen lämpömäärät lasketaan yhteen.
-**Kaava:** $Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$
+**Kaava:** $$Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$$
 **Muunnokset:** $\Delta T_1 = 8{,}0\,\text{K}$ ja $\Delta T_2 = 100\,\text{K}$
 **Sijoitus:** $Q_1 = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 1{,}20\,\text{kg} \cdot 8{,}0\,\text{K} \approx 20\,\text{kJ}$
 
