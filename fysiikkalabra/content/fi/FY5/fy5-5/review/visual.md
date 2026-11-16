@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b014123181afab7b
-SCOPE: delta formula-names, reflow, wording from the passed version; the changed lines are the "Syventävä osio." paragraph and the summary item.
+CONTENT-HASH: 2bb981571ee01f3d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exit ticket answer (page at 360 px) — a calculation chain scrolls sideways ($F = \gamma \ldots \cdot 5{,}0 \cdot 10^{\ldots}$ cut at the card edge), not at 390 px; untouched text — break the row before the second `\cdot`.
-- [Minor] Syventävä osio. — "tämän moduulin keskeisiin sisältöihin" speaks of the course's design to the student; "tämän kurssin" would be the student's own word.
+- [Minor] Transfer task feedback (6378 km option): 'pienentäisi voiman neljäsosaan, koska $g \propto \tfrac{1}{r^2}$' now speaks of force but keeps g; write $F \propto \tfrac{1}{r^2}$.
+- [Minor] 'Voit myös syventää osaamistasi' bullet marker is pale at 360 px; the project's list style, low contrast.
+- [Minor] Known, not part of the change: find-the-error prompt formula overflows at 360 px (499 px edge), docs/clipped-formulas.tsv.
+- [Minor] Exit-ticket answer 1: the \tfrac fractions in the aligned rows are small at 360 px but legible.
 
 ## Checked
-- Own captures of the built page: the Syventävä paragraph under "Gravitaatiokentän voimakkuus" at 390 and 1280 px (bold lead-in, concept-card term underlined, italic *Kenttä eri taivaankappaleilla*, reads in the column, no layout change beside the figure); the Tiivistelmä at 390 px with "Syventävä: …" item (formula, unit upright, wraps cleanly).
-- fy5-5-example-390-1.png: worked example chains wrap in aligned rows, nothing clipped. Page width 390 and 1280, no horizontal overflow.
-- The exercise solutions on the same page: see the exercise report.
+- Own captures at 360 px (all details open): exit ticket (re-broken chain, aligned, answer text apart), 'Tällä tunnilla opit' with the new extension goal (reads naturally), summary/transfer sections; overflow scan of the lesson at 360/390/1280. Other edits (note wording, find-the-error title 'Syventävä:', summary items) read from the diff.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: ec56a40218450984
+VERDICT: PASS
+CONTENT-HASH: 3ed60c1ab5ec6119
 
 ## Blocking
-- [Major] inquiry.json, GPS example solution, Järkevyys — the re-broken ratio sits as a display block inside parentheses: "kuin ISS (", a boxed two-row block, then "), ja sen nopeus…". The sentence is torn apart, the parentheses are orphaned on separate lines at 360 px and 1280 px, and the one-row ratio is split in two for nothing — recompose the source so the chain is not inside brackets: "…kuin ISS: $26\,560\,\text{km} : 6790\,\text{km} \approx 3{,}9$. Sen nopeus on noin puolet…" (or give the ratio its own paragraph) and let mathlayout break it.
+(none)
 
 ## Polish
-- (none)
+(none; round-1 Major verified fixed)
 
 ## Checked
-- Own 360 px and 1280 px renders with every box open: the Järkevyys paragraph of the GPS solution (the only re-broken chain in inquiry.json; no horizontal overflow, page scrollWidth 360/1280). lesson.md change is teacher-approved figures only; not re-judged.
+- Delta (chains re-broken, figures approved). Own renders of preview/fy5-6.html?ratkaisut=1#sovella at 360 px and 1280 px, GPS example Järkevyys opened: the ratio is now two adjacent inline formulas, "(26 560 km : 6790 km ≈ 3,9)", sentence whole, no display block inside the parentheses, no clipping, units upright, decimal comma.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

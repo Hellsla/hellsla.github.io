@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c6de36add8c9d166
-SCOPE: delta solutions.md fy5-5-style fix in fy5-9-L3-05 (Vastaus a–c, Sijoitus decimals).
+CONTENT-HASH: b83d89918db889fd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-05 Vastaus — three answers and the interpretation in one paragraph; acceptable, a line break before c) would help the phone.
+- [Minor] sovella section (not part of this change): one chain scrolls 3 px at 360 px (274 vs 271).
+- [Minor] L3-05 Järkevyys: an inline '(' ends a line before '0,5988 m/s > 0,5981 m/s)'; a non-breaking join would read better.
 
 ## Checked
-- Own captures of fy5-9-L3-05 with the solution open at 360 and 1280 px (fy5-9-L3-05-360.png, -1280.png): Vastaus with a), b), c), justification of three significant figures; no clipped chain, units upright, decimal comma, `\dfrac` legible, no page overflow.
-- Scan of all `.eq-chain` of the exercises at 360 and 1280: none clipped.
+- L3-05 solution open at 360 px (Vastaus now a), b), c) as separate lines, clear); scans at 360/390/1280 of all .eq-chain; changed Vastaus wordings (L2-05..07) read.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
