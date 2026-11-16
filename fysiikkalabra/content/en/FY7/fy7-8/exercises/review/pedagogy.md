@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 3c82ce2ff300ff5d
+CONTENT-HASH: 28f469e13603292f
 
 ## Blocking
-(none) L1-05 re-judged: lesson.md section "The real transmission grid is three-phase" teaches $P=\sqrt3\,UI\cos\varphi$, line voltage and the power factor, and says the two-wire model applies unless the task says otherwise; L1-05 says so. Earlier blocker withdrawn.
 
 ## Polish
-- exercises.json fy7-8-L3-05 — three parts (losses and efficiencies, model constants, optimum) with a condition "P0 = aP²" the solution admits is not derived; $a$ is determined from one row only, so the "determine from the table" is thin. Ask for $a$ from two rows or check consistency, and trim part a) to the rows needed.
-- exercises.json fy7-8-L3-04 — good authentic task, but three computing parts plus a written justification: heavy for one exercise; the final "justify" is the only reasoning and could carry the weight.
-- exercises.json fy7-8-L1-07 — "power loss now" with 840 kW: the solution should show the $1/U^2$ reasoning via $I=P:U$, not only "four times smaller".
-- exercises.json fy7-8-L1-08 — tagged concept but is a one-step division; efficiency formula is given in the text, so the concept is not tested.
-- exercises.json fy7-8-L1-05 — the answer 554.2563 shows odd precision; a Level 1 task on a topic taught in a late side section is fine but keep the answer to 3 s.f. (554 MW) in the key.
-- packet — "Exercise brief" is empty; only the three-phase section of the lesson was checked.
+- exercises/exercises.json:fy7-8-L2-08 — "the power loss $P_\text{h}$ that turns into heat in the cable" against the house rule (energy becomes internal energy) and the wording of every other task here — "the power $P_\text{h}$ that becomes internal energy in the cable".
+- exercises/exercises.json:fy7-8-L2-10 a) — three look-ups (levels, kilometres, distribution levels) before any physics; the kilometres are used nowhere later — drop them or ask "which level has the most line, and why might that be?".
+- exercises/exercises.json:fy7-8-L2-10 b)–d) — answerable without the source; d) could ask the student to connect the result to the page's voltage levels (the solution already does).
+- exercises/solutions.md:fy7-8-L2-10 Part a) and the simplifications — paragraphs of about 150 words; four simplifications where two are asked — put "two are enough" first and give each simplification its own short paragraph.
+- exercises/solutions.md:fy7-8-L2-10 Formula — opens with the two given equations and combines them, good; say in one sentence why the 3 and the (√3)² cancel.
 
 ## Checked
-- Levels: 8/9/5 tasks, above the minimum 5/4/3; bank plan covered (DC concept, loss when voltage doubles, school-transformer data, loss graph, Level 3 grid and transformer-heating tasks).
-- Recomputed: L2-01 (826 kW), L2-03 (0.99 %), L2-04 (0.8 Ω), L2-05 (N1≈486), L2-06 (87.7 %), L2-09 (6.0 Ω), L3-01..04 correct; L3-05 optimum 54 kW consistent.
-- L2-07 error task: wrong claim ("transformer does not change current") is a real misconception; the solution repairs it with energy conservation.
-- L2-08 multiple-choice: distractors map to real mistakes (RI as power, forgetting the transformer, U²/R); solution names each.
-- L2-04 and L2-09 figures: the curve passes through an exact grid point, no R marked, descriptions give the same data; the answer is not given away.
-- Task wording: situation first, question last, everyday contexts (doorbell, garden light, phone charger, wind farm).
-- Solutions staged with Given/Find/Principle/Formula/Substitution/Reasonableness.
-- Phone captures not opened.
+- FY7-A1 against the assignment §1, §2, §5, §6: link with date, the teacher's four parts and equations kept; the solution states that the page gives no reason for the high voltages and that the physics of b)–d) supplies it (an honest correction of the assignment's a).
+- Solution: symbols first, both currents and losses, ratio 13.2 = (400 : 110)², check with 3RI², voltage drop 4.2 kV shows why U² : R is wrong.
+- Three-phase P = √3 UI cos φ is given in the task and already used in L1-05, so no untaught trap.
+- Simplifications are judged for their effect on the result, as the task asks.
+- Levels 8 / 10 / 5 = 23; L2-10 fits level 2 (two steps, given formulas, source data).
+- Reflowed and older solutions: principle explained, two-wire model named wherever used.
+- Choice tasks L1-06 and L2-08: one misconception per distractor, feedback names it.
+- Situation first, question last; English natural; "(the page is in Finnish)" warns the reader.
+- Empty exercise brief in the packet and no 360 px exercise captures: scope judged from glossary, slot goals and L1-05.
