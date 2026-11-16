@@ -479,7 +479,9 @@ A student measures the rolling time of a ball on a ramp with a hand stopwatch si
 
 <!-- vaihe -->
 
-**Given and find.** The number of measurements is $n = 6$, and the smallest result is $t_\text{min} = 3.07\,\text{s}$ and the largest $t_\text{max} = 3.31\,\text{s}$. The mean $\bar{t}$, the error estimate $\Delta t$ and the relative uncertainty $\varepsilon$ are asked for.
+**Given and find.** The number of measurements is $n = 6$, and the smallest result is $t_\text{min} = 3.07\,\text{s}$ and the largest $t_\text{max} = 3.31\,\text{s}$.
+
+The mean $\bar{t}$, the error estimate $\Delta t$ and the relative uncertainty $\varepsilon$ are asked for.
 
 <!-- vaihe -->
 

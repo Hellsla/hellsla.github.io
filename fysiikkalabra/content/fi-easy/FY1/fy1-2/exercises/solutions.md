@@ -72,7 +72,9 @@
 ## fy1-2-L1-09
 **Kysytty:** mikä annetuista lausekkeista voi olla nopeus.
 **Periaate:** Nopeus kertoo, kuinka pitkä matka kuljetaan aikayksikössä. Siksi sen yksikkö on pituusyksikkö jaettuna aikayksiköllä. Lausekkeen yksikkö saadaan sijoittamalla yksiköt lausekkeeseen samalla tavalla kuin suureet: yksiköt kerrotaan ja jaetaan samoin kuin lukuarvot.
-**Mallivastaus:** Lauseke $\dfrac{12\,\text{km}}{3{,}0\,\text{h}}$ on matka jaettuna ajalla. Sen yksikkö on $\text{km/h}$, joten se voi olla nopeus. Tulon yksikkö on $\text{km}\cdot\text{h}$, joten se ei ole pituus jaettuna ajalla. Käänteisen lausekkeen yksikkö on $\text{h/km}$ eli aika matkaa kohti, joten sekään ei ole nopeus. Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$. Se on kiihtyvyyden tyyppinen yksikkö. Vastaus ratkeaa siis pelkistä yksiköistä, eikä lukuarvoja tarvitse laskea.
+**Mallivastaus:** Lauseke $\dfrac{12\,\text{km}}{3{,}0\,\text{h}}$ on matka jaettuna ajalla. Sen yksikkö on $\text{km/h}$, joten se voi olla nopeus. Tulon yksikkö on $\text{km}\cdot\text{h}$, joten se ei ole pituus jaettuna ajalla. Käänteisen lausekkeen yksikkö on $\text{h/km}$ eli aika matkaa kohti, joten sekään ei ole nopeus.
+
+Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$. Se on kiihtyvyyden tyyppinen yksikkö. Vastaus ratkeaa siis pelkistä yksiköistä, eikä lukuarvoja tarvitse laskea.
 
 ## fy1-2-L2-01
 **Annettu:** kellotaajuus $f = 3{,}2\,\text{GHz}$, aika $t = 5{,}0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ ja $1\,\text{Hz} = 1/\text{s}$
@@ -211,7 +213,11 @@
 
 **Periaate:** Yksikön määritelmä kertoo, mitä yksi kilogramma on. Suhteellinen muutos on muutos jaettuna alkuperäisellä arvolla, ja se voidaan laskea vasta, kun molemmat ovat samassa yksikössä.
 
-**Mallivastaus a):** Vanha kilogramma oli yhden esineen massa: Pariisin lähellä BIPM:ssä säilytettävän platina-iridiumkappaleen. Sitä varten valmistettiin myös kansallisia kopioita. Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, ja kilogramma seuraa siitä yhdessä metrin ja sekunnin määritelmien kanssa. Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui. Määritelmän mukaan kansainvälisen kappaleen massa oli nimittäin aina tasan $1\,\text{kg}$.
+**Mallivastaus a):** Vanha kilogramma oli yhden esineen massa: Pariisin lähellä BIPM:ssä säilytettävän platina-iridiumkappaleen. Sitä varten valmistettiin myös kansallisia kopioita.
+
+Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, ja kilogramma seuraa siitä yhdessä metrin ja sekunnin määritelmien kanssa.
+
+Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui. Määritelmän mukaan kansainvälisen kappaleen massa oli nimittäin aina tasan $1\,\text{kg}$.
 
 **Kaava:** suhteellinen muutos $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
 
@@ -236,7 +242,9 @@ $$\begin{aligned}
 
 **Mallivastaus c):** Luonnonvakio on sama kaikkialla ja aina. Se ei voi kulua, likaantua, vahingoittua tai kadota kuten esine. Kun kilogramma perustuu Planckin vakioon, mikä tahansa riittävän hyvin varustettu laboratorio voi toteuttaa kilogramman itse, eikä sen tarvitse verrata punnuksiaan yhteen Ranskassa säilytettävään kappaleeseen. BIPM:n mukaan uusi määritelmä takaa massan yksikön pitkäaikaisen pysyvyyden ja on modernin tieteen kannalta hyödyllisempi.
 
-**Mallivastaus d):** Ei tarkoita. Määritelmä kertoo, mitä yksi kilogramma tarkalleen on, mutta jokaisessa mittauksessa on silti epävarmuutta. Vaa'an lukemaa voi lukea vain tietyllä tarkkuudella. Vaaka on kalibroitu eli tarkistettu vain tietyllä tarkkuudella. Mittaukseen vaikuttavat myös esimerkiksi lämpötila, ilmavirtaukset ja mittaajan tekemät valinnat. Täsmällinen määritelmä takaa, että eri maissa mitataan samaa suuretta samalla yksiköllä. Mittauksen tarkkuus riippuu kuitenkin mittalaitteesta ja mittaustavasta. Siksi tulokseen merkitään vain ne numerot, jotka mittaus oikeuttaa.
+**Mallivastaus d):** Ei tarkoita. Määritelmä kertoo, mitä yksi kilogramma tarkalleen on, mutta jokaisessa mittauksessa on silti epävarmuutta. Vaa'an lukemaa voi lukea vain tietyllä tarkkuudella. Vaaka on kalibroitu eli tarkistettu vain tietyllä tarkkuudella. Mittaukseen vaikuttavat myös esimerkiksi lämpötila, ilmavirtaukset ja mittaajan tekemät valinnat.
+
+Täsmällinen määritelmä takaa, että eri maissa mitataan samaa suuretta samalla yksiköllä. Mittauksen tarkkuus riippuu kuitenkin mittalaitteesta ja mittaustavasta. Siksi tulokseen merkitään vain ne numerot, jotka mittaus oikeuttaa.
 
 **Vastaus:** Yhden milligramman muutos on $0{,}0001\,\%$ eli $10^{-4}\,\%$ massasta. Tulos on yhden merkitsevän numeron tarkkuudella, koska muutos $1\,\text{mg}$ on annettu yhdellä numerolla.
 
