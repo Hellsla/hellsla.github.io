@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 16c8b891104d7a49
-SCOPE: delta added-exercise from 0b8adf1d8e82e8e4 base 81db4a6fd727
+CONTENT-HASH: c06a00dcc4be71b7
 
 ## Blocking
 
 ## Polish
+- none.
 
 ## Checked
-- The hash was the same at the start and the end. Round 6: I checked the round-5 fixes. The diff changes only L1-11's unit and hint and L1-10's reasonableness check.
-- exercises.json:136 (L1-11): the unit is now "m/s²", which matches the task. g = γM/r² = 1.448 m/s² → 1.45, as in answers.py and the Finnish version.
-- The L1-11 hint is now singular, because only the Moon's mass is looked up (VERIFIED value 7.346·10²² kg). The 4 % tolerance fits.
-- L1-10: "less than a thousandth" is right, because 5.93·10⁻³/9.81 = 6.0·10⁻⁴. The answer 5.93 mm/s² is unchanged.
-- The answer, unit and tolerance of every exercise equal the Finnish set's. The numbers in the solutions of L1-10, L1-11 and L2-08 are the same as in the Finnish version.
+- fy5-6-L2-09 recomputed from the verified NASA values (57.9/88.0 … 778.5/4331): a³ 0.194–471.8, T² 0.00774–18.76, T²/a³ 0.0399–0.0398 (spread 0.35 %); Mercury–Mars and Jupiter within 0.2 % of the Earth. Uranus −0.33 %, Saturn −1.26 % and Neptune −2.46 % match the stated 0.3, 1.3 and 2.5 %.
+- fy5-6-L2-09 part d: T_Mars = 365.2 d·(228.0/149.6)^1.5 = 687.12 d → 687.1 d (box 687.1 d, tolerance 0.02 right); 0.02 % from 687.0 d; with 227.9 the result is 686.67 d. Slope (100; 4.0)–(400; 15.9) gives 0.040. k = 2.97·10⁻¹⁹ s²/m³ gives M = 1.99·10³⁰ kg.
+- Physics: T² = 4π²r³/(γM) is derived from the chapter's circular-orbit model, and its conditions are stated (planet mass negligible, other planets ignored). Kepler III for ellipses is right with a in place of r. Marked "Extension task." as in the Finnish.
+- The changed sig-fig reasons (L2-01 9.57·10³ km, Δv 1.13 m/s with altitudes taken as exact, Jupiter 1.90·10²⁷ kg, satellite B, 3.87/15.5 kN, star 1.59·10³⁰ kg, Moon probe 1.45 m/s²) are right and say the same as the Finnish.
+- Script comparison of fi and en: every number is identical (word order only).
+- Hash unchanged at start and end.

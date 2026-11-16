@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 34b802bc7a3c2838
-SCOPE: delta added-exercise from 11d7d1d54e3ae477 base 81db4a6fd727
+CONTENT-HASH: 8f16389ec9a01707
 
 ## Blocking
 
 ## Polish
-- solutions.md (L2-09, Answer) — the reason "as in the speed 1540 m/s" for the rounding does not name the limiting datum. That is the time read from the figure, 90 µs, which can be read to about ±1 µs (about 1 %). — Justify the three figures by the reading precision.
-- exercises.json (L2-09 and L1-01) — the calculation is almost the same: L1-01 gives the echo at 91.0 µs (7.01 cm), and L2-09 reads 90 µs from the figure (6.93 cm). L2-09 adds the graph reading, so it is not a repeat.
+- content/en/FY5/fy5-17/exercises/exercises.json (fy5-17-L2-10 text): the English adaptation links the English institute page and says "At the end of the page there is a link to the Finnish subpage". Only the Finnish main page was verified (sources.md), so the English page's content and link are unverified. The Finnish subpage is linked directly, so the task still works — verify the English page or say "the Finnish page ends with a link".
 
 ## Checked
-- The hash was the same at the start and the end. Round 5: I reviewed the changed exercise L2-09.
-- L2-09: d = vt/2 = 1540·90·10⁻⁶/2 m = 6.93 cm, as in answers.py and the Finnish version. Readings of 89 µs and 91 µs give 6.85 cm and 7.01 cm, so a reading within ±1 µs stays inside the 2 % tolerance.
-- The figure, its description and the solution all put echo C at 90 µs. The figure gives no depths, so it does not give the answer away.
-- Repetition: the inquiry check on this figure asks for the B–C layer (3.08 cm), and L2-05 uses a table. No other task asks for the depth of the bone surface.
-- The answer, unit and tolerance of every exercise are the same as in the Finnish set. The numbers in the English solutions of L1-09 (14.0 m) and L2-09 are the same as the Finnish ones.
+- fy5-17-L2-10 recomputed: t_S = 100/3.5 = 28.571 s, t_P = 16.667 s, Δt = 11.905 s → 12 s; 8.4 km per second of Δt; 2 km ↔ 0.24 s. Box 11.905 s, tolerance 0.03 right.
+- Physics: P is longitudinal and faster; S is transverse and travels in solids only (no restoring shear force in a liquid); the S–P distance d = v_Pv_S/(v_P − v_S)·Δt. Three stations are needed for the circles; the constant-speed model gives only an estimate. All right.
+- The source facts agree with the verified page: Orivesi row 149 on 10.11.2026 at 01:34 UTC, 61.754°N 24.361°E, depth 18.3 km, M 1.0; M 0–4; over 40 stations; 0.2–2 km uncertainty; preliminary values (FENCAT); natural events only.
+- fy5-17-L2-07: 6.0·3.5/2.5·16.0 = 134.4 km, 22.4 s and 38.4 s recomputed; the units are now in the chain.
+- Captions: only the "(example data)" marker was removed. The numbers are identical to the Finnish (word order only).
+- Hash unchanged at start and end.
