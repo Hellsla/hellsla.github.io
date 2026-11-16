@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4e5acc292c0b357e
+CONTENT-HASH: 2e8e96c4e2a2afb7
 
 ## Blocking
 
 ## Polish
-- [Minor] fy2-7 reflow-lesson-1: the paragraph ends with a lone "ja" before a display formula; it reads awkwardly at 390 px. Fold the "ja" into the formula row or the next sentence.
+(none)
 
 ## Checked
-batch delta review: opened the reflow captures (rows legible, no clipping, equals signs aligned, punctuation inside the last row) and the changed figure captures where the diff touches figures; no problem blocking publication.
+Delta (list of knowns in worked example stage 1). Opened fy2-7-example-390-1 and -2 (fi): bullets render, formulas intact, question paragraph last, no clipping.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
