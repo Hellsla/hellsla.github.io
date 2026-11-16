@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cfaeebda841855e9
+CONTENT-HASH: 2623602cde9da6c2
 
 ## Blocking
 
@@ -10,13 +10,9 @@ CONTENT-HASH: cfaeebda841855e9
 - [Minor] Käsittele tulokset item 1 — result notation "$c = (c \pm \Delta c)$" uses c for both the value and the symbol; use $c = (\bar{c} \pm \Delta c)$ or a named result value. (for science: confirm notation convention.)
 - [Minor] Suunnittele — the Turvallisuus paragraph (about 110 words) repeats the equipment safety list almost word for word; fine for safety, but one line pointing back to the list would cut the repetition.
 
-## Checked
-- top-390, top-1280 (opening, hero illustration, title, question box)
-- contact-1 (all 390 px page parts triaged)
-- fig-1-390 (hero), fig-3-390 (standing wave), fig-5-390 (spots), fig-7-390 (model graph)
-- page-1280-3 (Tutkimustehtävä, Ennusta, Teoria start), page-1280-5 (Suunnittele, spots figure in the Ohjattu box)
-- open-ennusta-1280
-- Not opened one by one: page-1280-1, 2, 4, 6–10 and the single 390 page parts beyond the contact sheet; layout and a11y results were taken from the packet.
+## Checked (delta 2026-11-16)
+- Changes: thin spaces in Hz, m/s and c; the shortened Suunnittele safety paragraph (now refers to the Turvallisuus list). Opened page-1280-1, -2 (Turvallisuus list), -4 (Hz), -5 (new Turvallisuus paragraph, reads well) and -8.
+- Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2382ba3d6f25e77c
+CONTENT-HASH: 85386c40a3dc2ce8
 
 ## Blocking
 (none)
@@ -11,10 +11,9 @@ CONTENT-HASH: 2382ba3d6f25e77c
 - [Minor] Mittaa, text after the signal figure — one 50-word paragraph explains why the onset beats the peak but sits after the figure, apart from the sentence about reading the time — acceptable; keep it adjacent.
 - [Minor] hero (fig 1) — the thermometer floats beside the wall without a mount, and the wavefront arcs are very faint at 390 px — thicken the arcs slightly.
 
-## Checked
-- top-390, fig-1-390 (hero), fig-3-390 (set-up), fig-5-390 (signal), fig-7-390 (model graph); fig-2/4/6/8/9 are 28 px empty captures (no content).
-- contact-1 (390 px page overview), page-1280-3 and page-1280-5 (prediction, theory, formula, table, signal figure, task lists at laptop width).
-- Not opened individually: page-390-N slices beyond contact-1, 1280 slices 1, 2, 4, 6–9, open-ennusta-1280 (contact sheet showed no clipping or overflow there).
+## Checked (delta 2026-11-16)
+- Changed: units `\,`, Mittaa table headers now 'mittaus 1/2/3'. Opened page-390-6 (table renders as clean rows, thin space visible, headers readable; earlier Polish on cramped headers and `\ ` units is resolved). Left: figure polish unchanged.
+- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

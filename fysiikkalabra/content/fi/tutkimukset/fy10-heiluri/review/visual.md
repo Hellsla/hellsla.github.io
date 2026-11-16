@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eb0f47c4ce9fd5ca
+CONTENT-HASH: 809988e0276d0515
 
 ## Blocking
 (none)
@@ -11,12 +11,9 @@ CONTENT-HASH: eb0f47c4ce9fd5ca
 - [Minor] model figure (fig 6) — schematic, but the aria-label does not say that no scale is given and the axes carry no unit in the label (`T^2` with `(\text{s}^2)`, `l` with `(\text{m})`). Add the units at the arrow ends, in line with NOTES §3 Graphs (the figure is teacher-approved, so this is optional).
 - [Minor] setup figure (fig 3) — the "ripustuskohta" leader line ends at the clamp but crosses the thread's start; shorten it slightly.
 
-## Checked
-- fig-1-390 (hero): calm flat style, pendulum in the middle, no text, reads well at 390 px.
-- fig-3-390 (set-up): θ, l (to the ball's centre), dashed vertical and rest ball are clear. The labels are LaTeX and legible.
-- fig-6-390 (T² against l): straight line through the origin, Δl and Δ(T²) dashed, slope label legible. The axis units are missing (see Polish).
-- top-1280, page-390-6/8/10, page-1280-3/5, open-ennusta-1280: no clipping or overflow; the table fits at 390 px; the display fractions in the uncertainty box wrap sensibly; reading width is good.
-- Not opened separately: the empty 28×28 and 44×71 capture stubs (fig-2/4/5/7/8, which are not figures but the page's own widgets) and the remaining page strips.
+## Checked (delta 2026-11-16)
+- Changed: units `\,`, table headers 'mittaus 1/2/3', colon before the tarkistusmittaus list. Opened page-390-7 (table, thin spaces, headers render cleanly; earlier Polish on units and headers resolved). Straight quotes in 'Vihje ajanottoon' ("nolla", "kymmenen") remain, Minor.
+- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
