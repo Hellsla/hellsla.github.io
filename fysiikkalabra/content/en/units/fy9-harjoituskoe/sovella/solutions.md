@@ -130,7 +130,7 @@ $$
 
 ### d)
 **Find:** whether increasing the mass of the box helps to keep the box in place
-**Principle:** The maximum static friction is $\mu_0 N = \mu_0 mg$, and the force $ma$ is needed to slow the box down. Both are proportional to the mass.
+**Principle:** The maximum (fully developed) static friction is $\mu_0 N = \mu_0 mg$, and the force $ma$ is needed to slow the box down. Both are proportional to the mass.
 **Model answer:** A heavier box presses on the bed harder, so the maximum possible static friction $\mu_0 mg$ increases. But a heavier box also needs a greater force $ma$ to slow it down, and this increases in the same proportion. The mass cancels from the condition $ma \le \mu_0 mg$, so the greatest allowed deceleration $a_\text{max} = \mu_0 g$ does not depend on the mass. The suggestion therefore does not help. Methods that work are tying the box to the bed with straps, or increasing the coefficient of friction, for example with a rubber non-slip mat under the box.
 
 ### Yleisiä virheitä
@@ -229,7 +229,7 @@ $$
 
 ### c)
 **Given:** $R_\text{j} = 0.560\,\Omega$, $I = 14.27\,\text{A}$ (parts a and b)
-**Find:** the power $P_\text{j}$ converted into heat in the cord
+**Find:** the power $P_\text{j}$ converted into internal energy of the cord
 **Principle:** The current through the resistance of the cord converts electrical energy into internal energy of the conductor. The power of the cord follows from its own resistance and the current through it.
 **Formula:** $P_\text{j} = U_\text{j} I$ and $U_\text{j} = R_\text{j} I$ (Ohm's law), so $P_\text{j} = R_\text{j} I^2$
 **Conversions:** None needed.

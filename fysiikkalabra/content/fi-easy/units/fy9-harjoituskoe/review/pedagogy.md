@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 060191698eb68ae9
-Delta review (extra-answers rule, 2026-11-14) of the version passed at 889350cdbeb1cd52.
+CONTENT-HASH: b20798f10602ca62
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- Instruction is correct and unambiguous: with extra answers, count only the allowed number, the lowest-scoring ones. A student may find it harsh; one clause saying why (so the extra answer cannot only help) would be nice, not needed. fi-easy: 'ne joiden pistesumma on pienin' could be 'ne, joista saat vähiten pisteitä'.
+- A: sovella/tasks.json c and d, "Kuinka suuri teho muuttuu jatkojohdossa sisäenergiaksi?": a power does not turn into energy; clearer would be "Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?" (the old wording had the same looseness, so not blocking).
+- C: solutions.md d: Periaate says "Lähtökitka eli täysin kehittynyt lepokitka", the Mallivastaus beside it still "suurin mahdollinen lepokitka"; understandable, but one term would be tidier.
 
 ## Checked
-- Rule now matches the real exam and is repeated as the practice rule in the next sentence; 'the page does not add up the points for you' prevents hunting for a calculator.
-- Reads fine on phone: one short paragraph under the table. Reading level: short sentences, no new terms.
-- Rest of the page unchanged and not re-judged.
+- solutions.md d Periaate and tasks.json criterion (lähtökitka): sentences grammatical, criterion still observable and worth its 2 points, no answer revealed.
+- solutions.md c Kysytty and the two task texts (sisäenergiaksi): consistent with the Periaate line; recomputed 0,560 Ω · (14,27 A)² = 114,0 W, matches the answer.
+- Searched the unit for remaining "lämmöksi": none. s7 exists already on origin/main; not part of this diff.

@@ -163,7 +163,7 @@ def ketju():
             "häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy "
             "leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, "
             "hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia "
-            "polttoainetehosta. Häviöt muuttuvat hukkalämmöksi.", width=420, size=20)
+            "polttoainetehosta. Häviöt siirtyvät hukkalämpönä ympäristöön.", width=420, size=20)
     s = 0.36                                  # px per MW: 500 MW = 180 px
     top, x0, xend = 56, 8, 368
     bounds = (98, 198, 298)

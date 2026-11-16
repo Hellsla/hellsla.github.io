@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0d8e1f5459c529
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (67d7b7f5a224ebfb); earlier findings kept unless named fixed.
+CONTENT-HASH: 0b2eec764f9785fd
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none new; round-1 findings stand)
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed: teacher.md now "rivi kerrallaan: värähtelijät, aallot, ääni"; the nine rows run oscillators, waves, sound, so the sentence is true. Diff read in full: nothing else changed (chart, aria-label untouched).
+- sovella/solutions.md, common mistakes: "intensiteetti" replaces "taso"; recomputed: I proportional to 1/r gives 10 lg 2 = 3 dB per doubling, so the corrected sentence is right and reads clearly.
+- No s7 task was added to this unit in fi-easy (tasks.json unchanged); nothing to review for item 19.

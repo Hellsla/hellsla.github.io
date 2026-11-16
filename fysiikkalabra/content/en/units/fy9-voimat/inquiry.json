@@ -137,7 +137,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Diagnostic 6: static friction",
-      "prompt": "A cupboard is pushed horizontally with a force of $40\\,\\text{N}$, but it does not move. The largest possible value of static friction is $\\mu_0 N = 90\\,\\text{N}$. How large is the friction force on the cupboard?",
+      "prompt": "A cupboard is pushed horizontally with a force of $40\\,\\text{N}$, but it does not move. The maximum (fully developed) static friction is $\\mu_0 N = 90\\,\\text{N}$. How large is the friction force on the cupboard?",
       "choices": [
         {
           "text": "$90\\,\\text{N}$, because static friction is $\\mu_0 N$.",

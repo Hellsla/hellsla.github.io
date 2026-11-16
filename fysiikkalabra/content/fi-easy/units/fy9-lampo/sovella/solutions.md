@@ -374,7 +374,7 @@ $$
 - b-kohdassa koko potentiaalienergia annetaan jarruille. Silloin tulokseksi tulee noin $250\,\text{K}$.
 - b-kohdassa lasketaan mukaan liike-energia, vaikka nopeus on vakio.
 - c-kohdassa sanotaan, että energia ”kului” tai ”hävisi”. Vastaus ei kerro, mihin energia siirtyi.
-- d-kohdassa väitetään, että moottorijarrutuksessa energia ei muutu lämmöksi lainkaan.
+- d-kohdassa väitetään, että moottorijarrutuksessa energia ei muutu sisäenergiaksi lainkaan.
 
 ### Hyväksytään myös
 - a-kohdassa vastaus $31{,}5\,\text{K}$ tai $32\,\text{K}$, kun perusteluna on pyöristys.

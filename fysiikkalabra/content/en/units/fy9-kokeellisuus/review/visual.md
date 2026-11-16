@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4d23f6126e29099b
+CONTENT-HASH: 16bc88cc7274b327
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-- None.
+- (none)
 
 ## Polish
-- None. Every lifted formula is fully visible at 360 px, relations aligned in one column, operators lead continuation rows, no lone symbol or unit, and the surrounding sentences read naturally.
+- (none)
 
 ## Checked
-- batch delta review 5d: opened all 1 sheet(s) (reflow-1.png) at 360 px.
+- Hunk: solutions.md a) Principle, "The maximum (fully developed) static friction is $\mu_0 N$": the term of the teacher's P8 decision, grammatical, same term as in fy9-voimat and fy9-harjoituskoe.
+- Capture opened: `fy9-kokeellisuus-stage-exercises-390-2` (Principle block and the start of the model answer: wraps cleanly, $\mu_0 N$ rendered).

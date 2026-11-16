@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0a325fe3bad4c4ff
-Delta review (hero figure without calculator, Part II source-material sentence, 2026-11-14) of the version passed at 33fcccd3aae0531c.
+CONTENT-HASH: d5c67a8d91360d3c
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- The 'four or five of seven' figure will age; 'recent exams' already signals that. Nothing to change now.
+- (none)
 
 ## Checked
-- Hero figure: removing the calculator fits the exam rules (no separate calculators) and the alt text matches the drawing (no calculator mentioned).
-- New sentence: placed under the Part III bullet, corrects the impression that source material is only Part III, correct and not confusing; it does not change what the student must do.
-- Rest of the page unchanged and not re-judged.
+- inquiry.json testi-6 (Hyötysuhde): read the prompt and all four options with feedback. The correct option "Se muuttuu lampun ja ympäristön sisäenergiaksi; energiaa ei katoa." is still the same length class as the distractors and no more of a give-away than before; the three distractor feedbacks still repair their own misconception (häviää / varastoituu / palaa verkkoon) and read naturally; the correct feedback's "loput lämmittää lamppua ja huonetta" ties sisäenergia to the everyday observation.
+- sovella/solutions.md, two Periaate sentences (vastusvoimat → sisäenergiaksi; lihaksissa sisäenergiaksi): clear, consistent with the unit; formulas and numbers untouched.
+- Item 19: this unit's diff holds no added task.

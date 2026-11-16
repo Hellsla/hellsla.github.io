@@ -288,7 +288,7 @@ In an isolated system, which no energy enters or leaves, the total energy stays 
 E_\text{initial} = E_\text{final}
 ```
 
-where each side is the sum of all forms of energy, thermal energy included. Power is the energy transformed or transferred per unit time:
+where each side is the sum of all forms of energy, internal energy included. Power is the energy transformed or transferred per unit time:
 
 ```kaavat
 power :: P = \frac{\Delta E}{\Delta t}
@@ -310,7 +310,7 @@ where $\eta$ is the efficiency, $W_\text{a}$ and $P_\text{a}$ the useful energy 
 
 An energy chain has successive stages, and the useful power given by each stage is the power taken in by the next. The example plant in the figure has three stages with the efficiencies $\eta_1$, $\eta_2$ and $\eta_3$. Of the fuel power of $500\,\text{MW}$, $198\,\text{MW}$ becomes electricity, so the efficiency of the whole plant is $\eta = \tfrac{198\,\text{MW}}{500\,\text{MW}} \approx 0.40$. The widths of the bands are to scale, and the outgoing bands are together as wide as the incoming one.
 
-<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="A to-scale energy flow diagram of a condensing power plant. From the left comes the fuel power of 500 MW as a wide grey band. In the first stage, the boiler, the efficiency is 0.90: an orange loss band of 50 MW turns down from the band, and 450 MW remains. In the second stage, the steam cycle, the efficiency is 0.45: a wide loss band of 248 MW turns down, and 203 MW remains. In the third stage, the generator and the transformer, the efficiency is 0.98 and the loss only 4 MW. A green band of electricity leaves to the right, 198 MW, that is, about 40 per cent of the fuel power. The losses become waste heat." style="max-width:100%;font-size:20px">
+<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="A to-scale energy flow diagram of a condensing power plant. From the left comes the fuel power of 500 MW as a wide grey band. In the first stage, the boiler, the efficiency is 0.90: an orange loss band of 50 MW turns down from the band, and 450 MW remains. In the second stage, the steam cycle, the efficiency is 0.45: a wide loss band of 248 MW turns down, and 203 MW remains. In the third stage, the generator and the transformer, the efficiency is 0.98 and the loss only 4 MW. A green band of electricity leaves to the right, 198 MW, that is, about 40 per cent of the fuel power. The losses are transferred to the surroundings as waste heat." style="max-width:100%;font-size:20px">
   <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M8,56 L298,56 L298,129 L198,129 L198,218 L98,218 L98,236 L8,236 Z" fill="url(#fy9en-in)" stroke-linejoin="round"/>
   <path d="M298,56 L368,56 L368,46 L408,91.5 L368,137.5 L368,127.5 L298,127.5 Z" fill="url(#fy9en-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
@@ -348,7 +348,7 @@ An energy chain has three successive stages with the efficiencies $\eta_1$, $\et
 ---
 By the definition of efficiency the efficiency of the whole chain is $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, where $P_\text{o}$ is the power taken in by the first stage and $P_\text{a}$ the useful power given by the last stage. Denote the powers given by the stages $P_1$, $P_2$ and $P_3 = P_\text{a}$. The efficiency gives the power given by each stage from the power it takes in, and the power a stage takes in is the power given by the stage before it:
 
-$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+$$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\ P_2 &= \eta_2 P_1 \\ P_3 &= \eta_3 P_2 \end{aligned}$$
 
 Substitute the powers one after another:
 
@@ -378,7 +378,7 @@ where $Q$ is the heat released (J), $H$ the heat of combustion ($\text{MJ/kg}$) 
 - **Efficiencies added or subtracted.** In a chain they are multiplied, so the efficiency of the whole chain is smaller than that of the weakest stage.
 - **The wrong denominator.** The loss percentage and the efficiency are always calculated from the energy taken in, not from the energy given.
 - **Minutes as hours.** $30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0.50\,\text{h}$; the product of power and time is in kilowatt-hours only when the time is in hours.
-- **Losses “disappear”.** Losses are energy that has been transformed into a useless form, usually heat.
+- **Losses “disappear”.** Losses are energy that has been transformed into a useless form, usually internal energy, which is transferred to the surroundings as heat.
 - **The overall efficiency of combined heat and power compared with an electrical efficiency.** Electricity and district heat are not equally valuable, so the numbers tell different things.
 
 ## Review if needed {Kertaa}

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c814f1d41df955a8
+CONTENT-HASH: 1ba6c1be5bf94f0c
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-- none
+- (none)
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-batch delta review 5d round 2: reflow-1.png reflow-2.png  (360 px, everything open); lifted formulas fully visible, relations aligned, no bracket, quote or case ending left around a lifted formula, no lone punctuation, operators stay with their terms.
+- Hunk: solutions.md, Common mistakes, part d ("the energy does not turn into internal energy at all"): matches the model answer of part d, which says the energy turns into internal energy of the engine.
+- Captures opened: `fy9-lampo-stage-exercises-390-44` (part d Principle and model answer, for consistency of the term) and `-390-45` (the changed list item, then Also accepted and the rubric: layout intact).
