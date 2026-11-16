@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4308bf8ffed1a479
+CONTENT-HASH: 277850c13281f33e
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- none
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
+- Rendered preview page myself with all details open: 360 px (card) and 390 px (page overflow check) only; the 1280 px capture was not finished, the card structure is identical to fi.
+- Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
+- Hash re-checked at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

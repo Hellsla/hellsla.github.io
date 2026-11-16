@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 730a1f2a311f6ea9
+CONTENT-HASH: 993c31a99be16483
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+- Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
+- Rendered preview page myself with all details open: 360, 390 and 1280 px.
+- Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
+- Hash re-checked at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
