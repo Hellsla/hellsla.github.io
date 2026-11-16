@@ -490,7 +490,7 @@ Nopeus on kolmannessa potenssissa, koska nopeampi tuuli tuo roottorin läpi sek�
 
 ## Yleisiä virheitä {Virheet}
 
-- **Liike-energia ja liikemäärä sekaisin.** Törmäyksessä liikemäärä säilyy, liike-energia vain kimmoisassa törmäyksessä. Liikemäärä ei muutu lämmöksi: lämmöksi muuttuu energiaa.
+- **Liike-energia ja liikemäärä sekaisin.** Törmäyksessä liikemäärä säilyy, liike-energia vain kimmoisassa törmäyksessä. Liikemäärä ei muutu sisäenergiaksi: sisäenergiaksi muuttuu liike-energiaa.
 - **Etumerkit unohtuvat.** Kimpoava pallo muuttaa liikemääräänsä enemmän kuin pysähtyvä: samalla nopeudella kimpoavalle pallolle $\Delta p = -mv - mv = -2mv$.
 - **Kitka katoaa energiaperiaatteesta.** Kitkan työ on negatiivinen, ja se muuttaa mekaanista energiaa sisäenergiaksi; se ei synnytä eikä hävitä energiaa.
 - **Kilometrit tunnissa sijoitetaan suoraan.** $72\,\text{km/h} = 72 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$, ennen kuin nopeus korotetaan toiseen.

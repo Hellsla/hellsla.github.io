@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin magnetismin, induktion ja valon. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin magnetismin, induktion ja valon. Viimeinen tehtävä on soveltava aineistotehtävä, jonka aineisto on tehtävän linkin takana. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-magnetismi-valo-s1",
@@ -107,7 +107,7 @@
      "id": "c",
      "kind": "calc",
      "points": 4,
-     "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa lämmöksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
+     "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa sisäenergiaksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
      "answer": {
       "value": 0.225,
       "unit": "%",
@@ -826,6 +826,173 @@
    "links": {
     "concept": "fy7-2",
     "math": "fy5-4"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s7",
+   "title": "Kuinka paljon energiaa hiukkaskiihdyttimessä on?",
+   "source": "statistics",
+   "source_note": "CERN, The Large Hadron Collider (https://home.cern/science/accelerators/large-hadron-collider). Tarkistettu 16.11.2026. Sivu on englanninkielinen; luvut ovat sen kohdasta Facts and figures.",
+   "skills": [
+    "fy5-3",
+    "fy6-12",
+    "fy4-7",
+    "fy7-2",
+    "fy7-3",
+    "fy6-6"
+   ],
+   "text": "Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC (Large Hadron Collider) on maailman suurin hiukkaskiihdytin. Sen renkaan muotoisessa tunnelissa kaksi protonisuihkua kiertää vastakkaisiin suuntiin lähes täydellisessä tyhjiössä, ja suihkut törmäytetään toisiinsa mittausasemilla. Protonit kulkevat suihkussa tiiviinä ryhminä, joita kutsutaan kimpuiksi.\n\nAvaa CERNin englanninkielinen sivu [The Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider) ja etsi sen kohta *Facts and figures*. Tarvitset sivun tietoja a- ja e-kohdassa.\n\nAineiston mukaan (tarkistettu 16.11.2026):\n\n- yhden protonin energia on $6{,}8\\,\\text{TeV}$\n- yhdessä protonisuihkussa on noin $2500$ kimppua, ja jokaisessa kimpussa on kiihdytyksen alussa $1{,}6 \\cdot 10^{11}$ protonia\n\nLisäksi tiedetään: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja valon nopeus tyhjiössä $c = 2{,}99792458 \\cdot 10^8\\,\\text{m/s}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Lue aineistosta LHC:n kehän pituus ja se, kuinka monta kierrosta protonit kiertävät sekunnissa. Laske näistä protonien vauhti ja vertaa sitä valon nopeuteen. Mitä vertailusta voi päätellä ja mitä ei? Ota huomioon, millä tarkkuudella aineiston luvut on annettu.",
+     "answer": {
+      "value": 2.9978,
+      "unit": "· 10⁸ m/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Lukee aineistosta kehän pituuden $26\\,659\\,\\text{m}$ ja kierrosten määrän $11\\,245$ sekunnissa (tarkistettu 16.11.2026) ja tunnistaa, että protonit kulkevat sekunnissa kehän pituuden näin monta kertaa.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\dfrac{s}{t} = \\dfrac{Nl}{t}$: $$\n\\begin{aligned}\nv &= \\dfrac{11\\,245 \\cdot 26\\,659\\,\\text{m}}{1\\,\\text{s}} \\\\\n&\\approx 2{,}9978 \\cdot 10^8\\,\\text{m/s}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "$\\dfrac{v}{c} \\approx 0{,}99996$: protonit kulkevat käytännössä valon nopeudella. Ero on pienempi kuin aineiston pyöristettyjen lukujen tarkkuus, joten sen suuruutta ei voi päätellä; massallisen protonin vauhti jää kuitenkin alle valon nopeuden."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 2,
+     "text": "Muunna yhden protonin energia $6{,}8\\,\\text{TeV}$ jouleiksi.",
+     "answer": {
+      "value": 1.089,
+      "unit": "· 10⁻⁶ J",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$1\\,\\text{TeV} = 10^{12}\\,\\text{eV}$, joten $$\n\\begin{aligned}\nE_1 &= 6{,}8 \\cdot 10^{12} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\\\\n&\\approx 1{,}089 \\cdot 10^{-6}\\,\\text{J}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E_1 \\approx 1{,}1 \\cdot 10^{-6}\\,\\text{J}$ kahdella merkitsevällä numerolla kuten $6{,}8\\,\\text{TeV}$"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri energia on varastoitunut yhteen protonisuihkuun?",
+     "answer": {
+      "value": 435.7,
+      "unit": "MJ",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Suihkun energia on protonien energioiden summa: $E = NE_1$, missä $N = 2500 \\cdot 1{,}6 \\cdot 10^{11}$ eli $N = 4{,}0 \\cdot 10^{14}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nE &= 4{,}0 \\cdot 10^{14} \\cdot 1{,}0894 \\cdot 10^{-6}\\,\\text{J} \\\\\n&\\approx 4{,}357 \\cdot 10^8\\,\\text{J}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E \\approx 4{,}4 \\cdot 10^8\\,\\text{J} = 4{,}4 \\cdot 10^2\\,\\text{MJ}$ kahdella merkitsevällä numerolla kuten $6{,}8\\,\\text{TeV}$ ja $1{,}6 \\cdot 10^{11}$"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Henkilöauton massa on $1500\\,\\text{kg}$ ja nopeus $100\\,\\text{km/h}$. Laske auton liike-energia. Kuinka monen tällaisen auton liike-energiaa yhden protonisuihkun energia vastaa?",
+     "answer": [
+      {
+       "name": "Ek",
+       "value": 0.5787,
+       "unit": "MJ",
+       "tolerance": 0.02
+      },
+      {
+       "name": "n",
+       "value": 753.0,
+       "unit": "",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = \\tfrac12 mv^2$ ja $$\n\\begin{aligned}\n100\\,\\text{km/h} &= \\dfrac{100 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\\\\n&\\approx 27{,}778\\,\\text{m/s}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= \\tfrac12 \\cdot 1500\\,\\text{kg} \\cdot (27{,}778\\,\\text{m/s})^2 \\\\\n&\\approx 5{,}787 \\cdot 10^5\\,\\text{J} \\\\\n&\\approx 0{,}579\\,\\text{MJ}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4{,}357 \\cdot 10^8\\,\\text{J}}{5{,}787 \\cdot 10^5\\,\\text{J}} \\approx 753$: yhden suihkun energia vastaa noin $750$ auton liike-energiaa."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "LHC:ssä on tuhansia suprajohtavia sähkömagneetteja. Selvitä aineistosta, mikä tehtävä magneeteilla on, mihin lämpötilaan ne jäähdytetään ja mikä kiihdyttää protonit. Selitä näiden tietojen ja fysiikan avulla, miksi magneettikenttä ei lisää protonien energiaa ja miksi magneettien käämit ovat suprajohtavia.",
+     "criteria": [
+      {
+       "text": "Selittää magneettien tehtävän aineiston avulla: magneettinen voima on kohtisuorassa protonin nopeutta vastaan, joten se kaartaa radan ympyrän kaareksi (dipolimagneetit) ja pitää suihkun koossa (kvadrupolimagneetit).",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee, että nopeutta vastaan kohtisuora voima ei tee työtä, joten magneettikenttä ei muuta protonin energiaa; energia tulee kiihdytysonteloiden sähkökentästä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee, että vahva kenttä vaatii hyvin suuren virran ja että tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Suprajohteessa resistanssia ei ole, joten suuri virta kulkee ilman häviötehoa; siksi käämit jäähdytetään aineiston mukaan lämpötilaan $1{,}9\\,\\text{K}$."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "transfer": "fy5-3",
+    "math": "fy4-7",
+    "concept": "fy7-2",
+    "communication": "fy7-3"
    }
   }
  ]

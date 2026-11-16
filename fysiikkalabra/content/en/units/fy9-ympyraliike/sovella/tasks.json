@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style problems bring together the equilibrium, circular motion and gravitation of the lesson. Solve them as in the exam: draw a free-body diagram, justify which condition you use and why it holds, solve for the unknown quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Seven matriculation-exam-style problems bring together the equilibrium, circular motion and gravitation of the lesson. Solve them as in the exam: draw a free-body diagram, justify which condition you use and why it holds, solve for the unknown quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. The last problem is an applied source-based task whose source opens from the link in the task.",
   "tasks": [
     {
       "id": "fy9-ympyraliike-s1",
@@ -813,6 +813,157 @@
         "math": "fy4-8",
         "transfer": "fy5-4",
         "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s7",
+      "title": "How does the International Space Station stay in its orbit?",
+      "source": "statistics",
+      "source_note": "NASA, International Space Station (https://www.nasa.gov/reference/international-space-station/). Checked 16 Nov 2026.",
+      "skills": [
+        "fy5-3",
+        "fy5-4",
+        "fy5-6",
+        "fy6-7"
+      ],
+      "text": "On the International Space Station (ISS) the astronauts float, and the station gets its electricity from solar arrays. Open NASA's page [International Space Station](https://www.nasa.gov/reference/international-space-station/) and find in it the altitude of the station and the electrical energy that its solar arrays generate in a year. You need them in parts a and d.\n\nModel the orbit of the station as a circle with these data:\n\n- height of the orbit above the surface $400\\,\\text{km}$\n- period $92\\,\\text{min}$\n- radius of the Earth $6371\\,\\text{km}$\n- free-fall acceleration at the surface $g = 9.81\\,\\text{m/s}^2$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "At what altitude does the station orbit the Earth according to the source? Does the height $400\\,\\text{km}$ of the model fit the source? Calculate the orbital speed of the station with the model.",
+          "answer": {
+            "value": 7.707,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Reads from the source that the station orbits at an altitude of $370$–$460\\,\\text{km}$ (checked 16 Nov 2026) and notes that the $400\\,\\text{km}$ of the model lies in this range.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\dfrac{2\\pi r}{T}$, where $r = R + h$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = 6771\\,\\text{km}$ and $T = 5520\\,\\text{s}$; $$\n\\begin{aligned}\nv &= \\dfrac{2\\pi \\cdot 6.771 \\cdot 10^{6}\\,\\text{m}}{5520\\,\\text{s}} \\\\\n&\\approx 7707\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7.7\\,\\text{km/s}$ to two significant figures like the period $92\\,\\text{min}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the centripetal acceleration of the station. What percentage is it of the free-fall acceleration at the surface of the Earth?",
+          "answer": {
+            "value": 8.773,
+            "unit": "m/s^2",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_\\text{n} = \\dfrac{v^2}{r} = \\dfrac{4\\pi^2 r}{T^2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\na_\\text{n} &= \\dfrac{4\\pi^2 \\cdot 6.771 \\cdot 10^{6}\\,\\text{m}}{(5520\\,\\text{s})^2} \\\\\n&\\approx 8.77\\,\\text{m/s}^2\n\\end{aligned}\n$$"
+            },
+            {
+              "text": "States the result $a_\\text{n} \\approx 8.8\\,\\text{m/s}^2$ and compares: $\\tfrac{a_\\text{n}}{g} \\approx 0.89$, so the centripetal acceleration is about $89\\,\\%$ of the free-fall acceleration at the surface.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "An astronaut floats inside the station without touching the walls or the floor. Which force gives them the centripetal acceleration of part b? Explain with the equation of motion why they are weightless although the gravitation of the Earth acts on them.",
+          "criteria": [
+            {
+              "text": "States that the astronaut moves along the same orbit at the same speed as the station and that the gravitational force of the Earth is the only force on them: it points to the centre of the orbit and gives the centripetal acceleration, $G = ma_\\text{n}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains weightlessness with the equation of motion: if the floor supported the astronaut, then $G - N = ma_\\text{n}$. Because gravitation alone gives the astronaut and the station the same acceleration, $N = 0$: they fall freely together, and nothing presses on the astronaut.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Weightlessness means that there is no normal force, not that there is no gravitation: by part b gravitation is almost as strong in the orbit as at the surface."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much electrical energy can the solar arrays of the station generate in a year according to the source? Calculate the mean electrical power that corresponds to it.",
+          "answer": {
+            "value": 83.9,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Reads from the source that the solar arrays can generate $735\\,000\\,\\text{kWh}$ of electrical energy in a year (checked 16 Nov 2026).",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = \\dfrac{E}{t}$ and $t = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$; $$\n\\begin{aligned}\nP &= \\dfrac{735\\,000\\,\\text{kWh}}{8760\\,\\text{h}} \\\\\n&\\approx 83.9\\,\\text{kW}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 84\\,\\text{kW}$; the unit is $\\tfrac{\\text{kWh}}{\\text{h}} = \\text{kW}$, and two significant figures are enough, because the value in the source is rounded"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Explain with the orbit and the period of the station why the station needs batteries besides the solar arrays. Why does the mean power of part d alone not tell whether there is enough electricity at every moment?",
+          "criteria": [
+            {
+              "text": "Explains that the station passes through the shadow of the Earth about every $92\\,\\text{min}$, on almost every orbit. In the shadow the arrays generate no electricity, but the equipment needs it all the time.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The batteries are charged in sunlight and feed the equipment in the shadow. The mean power hides the variation: the output is zero in the shadow and above the mean in sunlight."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-6",
+        "math": "fy5-4",
+        "transfer": "fy5-6",
+        "communication": "fy6-7"
       }
     }
   ]

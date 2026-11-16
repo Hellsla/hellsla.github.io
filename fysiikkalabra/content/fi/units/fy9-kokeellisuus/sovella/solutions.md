@@ -2,7 +2,7 @@
 
 ### a)
 **Kysytty:** koesuunnitelma kahden kengän pidon vertailuun: mitattavat suureet ja välineet, mittaustapa, vakioitavat asiat ja mittausten määrä
-**Periaate:** Pito tarkoittaa lepokitkaa, joka estää kenkää lähtemästä liukumaan. Lepokitkan suurin arvo on $\mu_0 N$, joten se riippuu sekä pinnoista että siitä, kuinka lujaa kenkä painaa lattiaa. Kengät painavat eri paljon, joten vertailuun sopii lepokitkakerroin $\mu_0$, joka kuvaa vain pintoja. Reilussa kokeessa muuttuu vain kenkä.
+**Periaate:** Pito tarkoittaa lepokitkaa, joka estää kenkää lähtemästä liukumaan. Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N$, joten se riippuu sekä pinnoista että siitä, kuinka lujaa kenkä painaa lattiaa. Kengät painavat eri paljon, joten vertailuun sopii lepokitkakerroin $\mu_0$, joka kuvaa vain pintoja. Reilussa kokeessa muuttuu vain kenkä.
 **Mallivastaus:** *Mitattava suure.* Vertaan kenkien lepokitkakertoimia lattialautaa vasten. Kerroin ei riipu kengän painosta, joten eri painoiset kengät voi verrata.
 
 *Mittaus (kallistusmenetelmä).* Asetan kengän laudalle ja painan sen sisään saman punnuksen, esimerkiksi $1\,\text{kg}$, jotta pohja painuu lautaa vasten kuten pelissä. Nostan laudan toista päätä hitaasti ja tasaisesti, kunnes kenkä lähtee liukumaan, ja luen kaltevuusmittarilla laudan kulman $\alpha_0$ juuri sillä hetkellä. Jos kulma kasvaa niin suureksi, ettei mittaus onnistu, käytän vetomenetelmää: lauta vaakasuoraan, kenkää vedetään jousivaa'alla vaakasuoraan, ja luen suurimman lukeman juuri ennen liikkeelle lähtöä. Silloin kengän ja punnuksen massa punnitaan keittiövaa'alla.

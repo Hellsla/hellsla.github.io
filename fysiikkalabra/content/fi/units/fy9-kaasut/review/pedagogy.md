@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9723f5bee22920e2
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (9d91dfe6c6c1bab9); earlier findings kept unless named fixed.
+CONTENT-HASH: 84089ae446eb257f
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B (kept): the signs "syvyys nesteessä" and "syvyys ja ilmanpaine" are close; the second could say "avoin pinta, ilmanpaine mukaan".
+- A (carried from round 1), s7 d repeats the idea of s2 c; a cross-reference in the solution would turn it into revision.
+- C (carried), `tasks.json` intro: "Ratkaise ne kuten kokeessa" follows the sentence about the last task, so "ne" points the wrong way.
 
 ## Checked
-- Changed row read: "paine vakio, tilavuus muuttuu -> työn suuruus, W = pΔV". The sign now carries the condition, so it is no longer a rule of thumb for any expansion; the aria-label says the same ("työn suuruus on paine kertaa tilavuuden muutoksen suuruus").
-- teacher.md "jokaiselle riville" (round-1 Polish A fixed) and the tyre sentence unchanged.
-- 360 px PNG opened: nine rows, no clipped label.
-- The rest passes through the round-1 report.
+- `solutions.md` s2 c, added sentence: 485,1 − 174,6 − 232,9 = 77,6 kW and 485 − 175 − 233 = 77 kW, both recomputed; 77,6/485,1 = 16 %. The sentence explains the difference between the displayed row and the unrounded value without confusing the 16 % conclusion.
+- `solutions.md` s5 common mistake: with 311 kPa the amount of substance is 1,48 times too large, so the molar mass is 210/311 = 0,68 of the right one. "moolimassaksi tulee noin kaksi kolmasosaa oikeasta" now names the quantity; the old "tulos" was ambiguous.
+- `solutions.md` s7 e: "noin 21 °C" now agrees with c (10 °C + 11 K, line 573).
+- `tasks.json` s7 c part text: the formula name is no longer given in the prompt, which suits an application task. "veteen aikayksikössä siirtyvä lämpö eli lämpöteho" and "sekunnissa virtaavan veden tilavuus" give a student what the derivation needs; the equation criterion and the solution (Q = cmΔT, m = ρV, Q = P₂t) still match the instruction "Johda symbolein". The situation is first, the three questions follow in the order of the criteria.
+- `answers.py`: only an added check value; no content effect.

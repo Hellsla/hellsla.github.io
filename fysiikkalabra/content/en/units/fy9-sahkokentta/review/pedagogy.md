@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9d34a7e0143e622e
-Review of the recognition chart (queue 9c) and the term change against the version passed at f2ccc4940864b96a; full on the chart, delta on the rest.
+CONTENT-HASH: 6513a898b1c57a2a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- A: the old chart covered the solar-cell efficiency eta = P/(GA), the body current I = U/R and Q = ne; the unit's 'components and safety' part and its tasks (defibrillator, LED, spark safety) now have only the LED row. Add rows for the cell and for current through the body.
-- B: "a charge in a field -> E = F/Q" is the definition; a vector F = qE row would match the unit's Ydinajatus.
-- B: row 'LED needs a series resistor -> Sigma DeltaV = 0' is right but the student must still apply Ohm's law; fine.
+- (none)
 
 ## Checked
-Rows: Coulomb, E = F/Q, U = Ed, QU = mv^2/2, Q = CU, plate capacitor, capacitor energy, LED loop. Signs concrete. teacher.md updated and true. aria matches.
+- solutions.md d) Answer: 93 pF - 70.8 pF = 22.2 pF; the new reason for two significant figures is correct and clearer than "almost equal numbers" (93 and 71 are not almost equal).
+- Ion engine Reasonableness: 1.1 MV/m : 3 MV/m = 0.37, "about a third" holds; "dielectric strength" is defined in unit.md and used with 3 MV/m elsewhere in the task set, so the term is known to the student.

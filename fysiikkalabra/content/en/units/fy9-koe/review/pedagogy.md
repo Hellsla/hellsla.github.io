@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0cef3711c2dec557
-Delta review (hero figure without calculator, Part II source-material sentence, 2026-11-14) of the version passed at 33038199a3b55af5.
+CONTENT-HASH: aeaefa09d8b665ad
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- The 'four or five of seven' figure will age; 'recent exams' already signals that. Nothing to change now.
+- (none)
 
 ## Checked
-- Hero figure: removing the calculator fits the exam rules (no separate calculators) and the alt text matches the drawing (no calculator mentioned).
-- New sentence: placed under the Part III bullet, corrects the impression that source material is only Part III, correct and not confusing; it does not change what the student must do.
-- Rest of the page unchanged and not re-judged.
+- inquiry.json efficiency check: the correct option and three feedbacks now say internal energy; the wrong options stay wrong; each feedback still repairs its own misconception (disappears, stored, flows back) and the correct option is not given away by wording more than before.
+- solutions.md c) and d) Principle sentences: read well, physics correct (resistive forces -> internal energy; rest of food energy -> internal energy in the muscles).
+- Grep for remaining "becomes heat / into heat": none.

@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d2859f8e1938c8d4
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (95262ce9df1aca45).
+CONTENT-HASH: 16bc88cc7274b327
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "tulos kulmakertoimesta → kaukaiset pisteet" (points of the fitted line) as in round 1.
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed: row 7 is now "malli origon kautta, suora ei → systemaattinen virhe, b ≠ 0" (en "model through origin, line not"); the aria-label says "Malli kulkee origon kautta, mutta suora ei". This is the unit's own condition ("Jos mallin mukaan suoran pitäisi kulkea origon kautta …").
-- Start box now "mistä tunnistan menetelmän?", consistent with the aria-label's "mikä menetelmä".
-- teacher.md: "kuuden kysymyksen kartan" -> "tunnistuskaavion seitsemän rivin"; the chart has seven rows (counted).
-- Rows 1-6 unchanged and correct as in round 1.
-- Hash taken at the start and the end (d2859f8e1938c8d4).
+- solutions.md s1 a) principle: 'maximum (fully developed) static friction is mu0*N' is correct and agrees with the model answer (comparison by the coefficient of static friction, independent of the shoe's weight).
+- No ADDED TASK in this unit's en diff; `python scripts/practice.py check units/fy9-kokeellisuus` is OK.

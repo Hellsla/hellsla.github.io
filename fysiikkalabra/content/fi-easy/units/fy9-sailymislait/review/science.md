@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3ca7bc5c5466ca22
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (3d8ac69f058acd26).
+CONTENT-HASH: dccc950751fa014f
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Round-1 Polish items stand as written there (C, not blocking).
+- (none)
 
 ## Checked
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
-- Hash taken at the start and the end (3ca7bc5c5466ca22).
+- solutions.md b) model answer, tasks.json criterion and unit.md Yleisiä virheitä: kinetic energy becomes internal energy and sound in an inelastic collision; momentum is not a form of energy and cannot become internal energy. The three places now say the same thing; unit.md's new 'sisäenergiaksi muuttuu liike-energiaa' is more precise than before and agrees with the next bullets.
+- Numbers around the hunk (−12 %, −3 %, 0,01 m/s²) untouched.
+- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.
