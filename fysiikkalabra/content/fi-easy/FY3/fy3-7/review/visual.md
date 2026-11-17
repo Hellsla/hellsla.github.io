@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8299e9bd9efe899a
-Mode: delta
-Round: 1
+CONTENT-HASH: c60138a802ac7672
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] Worked example stage 7 (fy3-7-example-390-2.png) is a long paragraph (about 60 words) before the Δm block; could be split at "Siksi oletus", optional.
+- [Minor] Pohdinta card, feedback — Q = cmΔT chain and t = Q/P (fraction) in two boxes read well; the second box could use \dfrac consistency with display style, but it already does.
 
 ## Checked
-- Diff: paragraph breaks in lesson.md, words unchanged. No 360 px captures exist; phone judged at 390 px.
-- 390 px: fy3-7-example-390-2.png (stages 4-7: fractions in r and Δm chains aligned, result, check and follow-up separated; nothing clipped), fy3-7-stage-sovella-390-2.png (same example in Esimerkit; includes the closed optional Esimerkki 2 and 3 boxes).
-- 1280 px: fy3-7-open-tarkista-1280-1.png (Vastaus open, Q = sm and Q = rm in maths, feedback box legible), fy3-7-open-exercises-1280-3.png (task 8-3 solution rows, Järkevyys with two blocks).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: Pohdinta card (Kertaa: lämpömäärä ja teho) with feedback open at 390 px and 1280 px, plus stage-herata-390; chains aligned at "=", "$4190\,\text{J/(kg}\cdot\text{K)}$" unit and "$10\,\text{K}$" correct, nothing clipped, feedback stays inside the card. Captures made by me from preview/fi-easy.

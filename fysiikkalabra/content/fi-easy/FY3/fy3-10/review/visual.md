@@ -1,18 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: de8b39c51532ea8e
+VERDICT: FAIL
+CONTENT-HASH: c09510655da596f8
 
 ## Blocking
-- none
+- [Major] content/fi-easy/FY3/fy3-10/inquiry.json, Pohdinta "Kertaa: Boylen laki" (prompt, correct feedback, wrong feedback) — the litre is written `\text{l}`, which renders as "3,01", "2,01" and in the fraction "100 kPa · 3,01 / 2,01": the unit reads as the digit 1, so the volumes look like 3,01 and 2,01 (seen at 390 px and 1280 px) — an ambiguous number in new text (NOTES §1: `\text{l}` is a lint error, the litre is `\textsf{l}`) — change every `\\text{l}` in these three strings to `\\textsf{l}` (fy3-11 already does).
 
 ## Polish
-- none
+- [Minor] wrong-answer feedback — "$3{,}0/2{,}0 = 1{,}5$" is a division with a slash in a sentence; house rule is a colon: "$3{,}0 : 2{,}0 = 1{,}5$".
 
 ## Checked
-- Delta (md-paragraphs; the question "Kysytään ainemäärää $n$ ja massaa $m$." is now its own paragraph in stage 1; words unchanged). No 360 px captures exist; judged at 390 px.
-- 390 px: fy3-10-example-390-1.png (stages 1-4: knowns, question, aligned chains, unit-conversion list) and fy3-10-example-390-2.png (stages 5-7: result paragraph, Järkevyys). No clipping or overflow; units LaTeX.
-- 390 px: fy3-10-stage-tarkista-390-1.png (cards intact).
-- 1280 px: fy3-10-open-exercises-1280-7.png (solution open: all blocks in order, answer box, Järkevyys), fy3-10-open-exercises-L2-1280-5.png (graph task: Kuvaajan lukeminen paragraphs readable, chains aligned), fy3-10-open-tarkista-1280-1.png (answer and feedback open).
-- Layout survived the splits.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: Pohdinta card (Kertaa: Boylen laki) with feedback open at 390 px and 1280 px (correct and wrong answer), plus stage-herata-390. Captures made by me from preview/fi-easy. Layout, fraction chain and card are otherwise clean.

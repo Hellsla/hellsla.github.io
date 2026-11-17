@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e18b3c3f784d0280
-Mode: delta
-Round: 1
+CONTENT-HASH: 279004589efb99eb
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] Worked example stage 7 (fy3-6-example-390-2.png) holds the check, the lossless comparison and the heat capacity as three short paragraphs; readable, no change needed beyond optionally a subheading.
+- [Minor] Pohdinta card — the option "Hiekan sisäenergia pysyy samana, koska energia säilyy." and the feedback are clear; the reference "(luku *Sisäenergia, lämpömäärä ja energian säilyminen*)" is italic and wraps over four lines on a phone, fine but long.
 
 ## Checked
-- Diff: paragraph breaks in lesson.md, words unchanged. No 360 px captures exist; phone judged at 390 px.
-- 390 px: fy3-6-example-390-2.png (stages 4-7: substitution rows with fractions aligned, result and check split into paragraphs, nothing clipped), fy3-6-stage-sovella-390-2.png (same example in Esimerkit stage, identical layout).
-- 1280 px: fy3-6-open-tarkista-1280-1.png (Vastaus open, chain rows aligned, units LaTeX), fy3-6-open-exercises-1280-3.png (solution with Annettu to Järkevyys rows, ΔT conversion block).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: Pohdinta card (Kertaa: lämpö ja sisäenergia) with feedback open at 390 px (correct answer, "$\Delta U = Q$" in option and feedback render) and stage-herata-390. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened (same shared card as the 1280 px captures opened for fy3-1, 3, 7, 12); nothing clipped at 390 px.

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6151e400c8a3f90f
+CONTENT-HASH: a523b76de38bbdd8
 
 ## Blocking
 
 ## Polish
+- [Minor] Recap card, correct feedback — "20 °C" for a temperature change is acceptable here, though "$20\,\text{K}$" would match later chapters. For science: not blocking.
 
 ## Checked
-Delta (solutions.md paragraph breaks only). Opened:
-- review/shots/contact-6.png (exercises 3-4 to 3-14, solutions open): the model answers of 3-6 and 3-9 and the Reading the graph block of 3-13 (extrapolation paragraph) read in clear short paragraphs; no overflow.
-- review/shots/fy3-3-example-390-1.png (extrapolation example, table and the graph with dashed extrapolation, 390 px): data points versus dashed line distinct, text and axes legible.
-- review/shots/fy3-3-open-exercises-1280-3.png (opened solution 3-3, start of 3-4): negative values and the degree-Celsius units set correctly; the split reasonableness paragraphs are fine.
+batch delta review: opened my own captures of the Pohdinta recap card with feedback open, wrong option at 390 px and correct option at 1280 px (display chain \Delta T = 14 °C − (−6 °C) = 20 °C aligned at "=", no clipping, card grows downward); the shipped captures had no feedback-open state. Hash unchanged at the end.
