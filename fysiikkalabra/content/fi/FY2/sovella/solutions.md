@@ -74,13 +74,19 @@ m &= 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} \\
 &+ 9{,}2 \cdot 10^{3}\,\text{t} \\
 &\approx 1{,}4 \cdot 10^{4}\,\text{t}
 \end{aligned}
-$$ vuodessa. Se on noin $95\,\%$ vähemmän kuin kivihiilellä ($3{,}1 \cdot 10^{5}\,\text{t}$) ja selvästi vähemmän kuin pelkällä maakaasulla ($1{,}9 \cdot 10^{5}\,\text{t}$). Pelkkä tuulivoima ($4{,}2 \cdot 10^{3}\,\text{t}$) olisi vähäpäästöisempi, mutta se ei kata huippua.
+$$ vuodessa.
+
+Se on noin $95\,\%$ vähemmän kuin kivihiilellä ($3{,}1 \cdot 10^{5}\,\text{t}$) ja selvästi vähemmän kuin pelkällä maakaasulla ($1{,}9 \cdot 10^{5}\,\text{t}$). Pelkkä tuulivoima ($4{,}2 \cdot 10^{3}\,\text{t}$) olisi vähäpäästöisempi, mutta se ei kata huippua.
 
 *Huippu.* Tyynenä pakkasiltana biomassavoimala ($40\,\text{MW}$), vesivoima ($20\,\text{MW}$) ja tuulivoimalat (alle $0{,}05 \cdot 90\,\text{MW} \approx 4{,}5\,\text{MW}$) antavat yhteensä noin $65\,\text{MW}$. Loput noin $15\,\text{MW}$ ostetaan verkosta, tai osa kulutuksesta, kuten sähkölämmitys, siirretään muutamaksi tunniksi myöhemmäksi.
 
 *Muut perusteet.* Yhdistelmä ei ole yhden polttoaineen tai yhden sään varassa: tuulivoimalla ei ole polttoainetta, ja vesi- ja biomassavoiman tehoa voi säätää. Tuulivoimalat vievät maata ja muuttavat maisemaa. Biomassavoimala tarvitsee haketta, mutta vain noin kuudesosan siitä, mitä se tarvitsisi taulukon tyypillisellä käyttöasteella $0{,}70$.
 
-*Vahvin vastaperuste* on, että biomassavoimala seisoo suuren osan vuodesta, joten sen rakentaminen on kallista tuotettua energiaa kohti, ja biomassan polton hiilidioksidi sitoutuu takaisin vasta vuosikymmenten kuluessa, joten todellinen päästö voi olla laskentaoletuksen $230\,\text{g/kWh}$ mukaista suurempi. Vastaan, että juuri säädettävyyden takia voimalaa tarvitaan: ilman sitä huippuiltana tarvittaisiin verkosta yli $50\,\text{MW}$, ja koko maan kulutus on silloin suurimmillaan. Biomassan osuus energiasta on vain noin $11\,\%$.
+*Vahvin vastaperuste* on, että biomassavoimala seisoo suuren osan vuodesta, joten sen rakentaminen on kallista tuotettua energiaa kohti, ja biomassan polton hiilidioksidi sitoutuu takaisin vasta vuosikymmenten kuluessa, joten todellinen päästö voi olla laskentaoletuksen $230\,\text{g/kWh}$ mukaista suurempi.
+
+Vastaan, että juuri säädettävyyden takia voimalaa tarvitaan: ilman sitä huippuiltana tarvittaisiin verkosta yli $50\,\text{MW}$, ja koko maan kulutus on silloin suurimmillaan.
+
+Biomassan osuus energiasta on vain noin $11\,\%$.
 
 *Oletukset.* Oletin, että käyttöasteet ovat joka vuosi samat. Tuulisuus ja sademäärä vaihtelevat, joten huonona vuonna biomassavoimala käy enemmän ja päästö kasvaa. Oletin myös, että kulutus pysyy $380\,\text{GWh}$:ssa. Jos lämmitys ja liikenne sähköistyvät, kulutus kasvaa ja tuulivoimaloita tarvitaan lisää. Hinta ja sähköverkon vahvistaminen jäivät laskematta, vaikka ne voivat ratkaista päätöksen.
 
@@ -127,21 +133,33 @@ Lähde 2 on energiayhtiön verkkosivu, jolla yhtiö esittelee tuulipuistojaan. S
 **Periaate:** Julkaisuaika ja aineiston ajanjakso ovat eri asioita: uusi julkaisu voi käyttää vanhaa aineistoa. Tuotantotavat ja niiden laitteet muuttuvat, joten eri vuosien luvut voivat erota jo siksi. Lukuja voi verrata vain, kun ne ovat samaa suuretta ja samassa yksikössä. Päästökertoimen yksiköt muunnetaan toisikseen, kun sekä massan että energian etuliitteet muunnetaan.
 **Mallivastaus:** *Rakenne.* Kummastakin lähteestä julkaisuvuosi ja aineiston vuodet, luku suureineen ja yksiköineen ja tarvittaessa muunnos samaan yksikköön.
 
-*Esimerkki.* Lähde 1 on julkaistu vuonna 2014, ja se kokoaa sitä ennen julkaistuja tutkimuksia. Lähde 2 on päivitetty viime vuonna, mutta se ei kerro, miltä vuodelta luku on. Lähde 1 ilmoittaa maatuulivoiman elinkaaren kasvihuonekaasupäästöjen mediaaniksi $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina. Suure on siis kaikkien kasvihuonekaasujen yhteisvaikutus muunnettuna hiilidioksidin määräksi. Lähde 2 sanoo, että tuulivoima tuottaa sähköä ilman hiilidioksidipäästöjä, eli sen luku on $0\,\tfrac{\text{g}}{\text{kWh}}$, ja se koskee vain hiilidioksidia. Jos toinen lähde ilmoittaisi päästön yksikössä $\tfrac{\text{t}}{\text{GWh}}$, muunnos olisi $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, eli luku pysyy samana.
+*Esimerkki.* Lähde 1 on julkaistu vuonna 2014, ja se kokoaa sitä ennen julkaistuja tutkimuksia. Lähde 2 on päivitetty viime vuonna, mutta se ei kerro, miltä vuodelta luku on.
+
+Lähde 1 ilmoittaa maatuulivoiman elinkaaren kasvihuonekaasupäästöjen mediaaniksi $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina. Suure on siis kaikkien kasvihuonekaasujen yhteisvaikutus muunnettuna hiilidioksidin määräksi. Lähde 2 sanoo, että tuulivoima tuottaa sähköä ilman hiilidioksidipäästöjä, eli sen luku on $0\,\tfrac{\text{g}}{\text{kWh}}$, ja se koskee vain hiilidioksidia.
+
+Jos toinen lähde ilmoittaisi päästön yksikössä $\tfrac{\text{t}}{\text{GWh}}$, muunnos olisi $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, eli luku pysyy samana.
 
 ### c)
 **Kysytty:** kummankin lähteen tarkasteluraja, oletukset ja epävarmuus
 **Periaate:** Tarkasteluraja kertoo, mitä luku sisältää. Sähkö on vain osa kaikesta energiasta, sillä energiaa käytetään myös lämmitykseen, liikenteeseen ja teollisuuteen. Käytönaikaiset päästöt syntyvät, kun voimala tuottaa energiaa. Elinkaaren päästöihin lasketaan lisäksi voimalan rakentaminen, polttoaineen hankinta, huolto ja purkaminen. Siksi tuotantotapa, jolla ei ole käytönaikaisia päästöjä, voi silti aiheuttaa elinkaaren päästöjä. Oletukset, kuten laitostyyppi, alue ja käyttöaste, muuttavat lukua, ja epävarmuus näkyy vaihteluvälinä.
 **Mallivastaus:** *Rakenne.* Kummastakin lähteestä: sähkö vai kokonaisenergia, käytönaikainen vai elinkaaren päästö (tai muun kysymyksen vastaava rajaus), tärkeimmät oletukset ja epävarmuus. Jos lähde ei kerro jotakin, se todetaan.
 
-*Esimerkki.* Molemmat lähteet koskevat sähköä. Lähde 1 laskee elinkaaren päästöt, eli siinä ovat mukana voimaloiden valmistus, rakentaminen ja purkaminen. Lähde 2 tarkoittaa käytönaikaisia päästöjä: pyörivä tuulivoimala ei polta mitään. Lähde 1 olettaa tutkimuksistaan saadut käyttöasteet ja voimaloiden käyttöiät, ja tulos riippuu niistä: pidempi käyttöikä jakaa rakentamisen päästöt suuremmalle energiamäärälle. Lähde 1 ilmoittaa mediaanin lisäksi tutkimusten vaihteluvälin, maatuulivoimalle $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$, joten sen epävarmuus näkyy. Lähde 2 ei kerro epävarmuutta, mutta käytönaikainen päästö on nolla jo määritelmän mukaan.
+*Esimerkki.* Molemmat lähteet koskevat sähköä. Lähde 1 laskee elinkaaren päästöt, eli siinä ovat mukana voimaloiden valmistus, rakentaminen ja purkaminen. Lähde 2 tarkoittaa käytönaikaisia päästöjä: pyörivä tuulivoimala ei polta mitään.
+
+Lähde 1 olettaa tutkimuksistaan saadut käyttöasteet ja voimaloiden käyttöiät, ja tulos riippuu niistä: pidempi käyttöikä jakaa rakentamisen päästöt suuremmalle energiamäärälle.
+
+Lähde 1 ilmoittaa mediaanin lisäksi tutkimusten vaihteluvälin, maatuulivoimalle $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$, joten sen epävarmuus näkyy. Lähde 2 ei kerro epävarmuutta, mutta käytönaikainen päästö on nolla jo määritelmän mukaan.
 
 ### d)
 **Kysytty:** lähteiden vertailukelpoisuus ja perusteltu johtopäätös
 **Periaate:** Luvut ovat vertailukelpoisia, kun ne ovat samaa suuretta samassa yksikössä, samalta ajanjaksolta tai ainakin ajanjaksolta, jolla asia ei ole ehtinyt muuttua, ja samalla tarkastelurajalla ja samoilla keskeisillä oletuksilla. Jos jokin näistä eroaa, ero voi selittää lukujen eron. Johtopäätös erottaa sen, mitä lähteet sanovat, siitä, mitä niistä voi päätellä.
 **Mallivastaus:** *Rakenne.* Vertailukelpoisuus kohta kohdalta, lukujen eron selitys ja johtopäätös, joka vastaa kysymykseen tai perustelee, miksi lähteet eivät riitä siihen.
 
-*Esimerkki.* Luvut ovat samassa yksikössä, ja molemmat koskevat sähköä. Suure on lähes sama: lähde 1 laskee kaikki kasvihuonekaasut hiilidioksidiekvivalenttina ja lähde 2 vain hiilidioksidin. Luvut eivät silti ole suoraan vertailukelpoisia, koska tarkasteluraja on eri: lähde 1 antaa elinkaaren päästön ja lähde 2 käytönaikaisen. Ero $11\,\tfrac{\text{g}}{\text{kWh}}$ ja $0\,\tfrac{\text{g}}{\text{kWh}}$ selittyy tällä, eikä kumpikaan lähde ole väärässä. Johtopäätökseni on, että tuulivoimalla ei ole käytönaikaisia hiilidioksidipäästöjä ja että sen elinkaaren kasvihuonekaasupäästö on lähteen 1 mukaan noin $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina. Tuotantotapoja vertaillessa käytän elinkaaren päästöjä, koska niissä kaikki tuotantotavat lasketaan samalla rajauksella. Väite, että tuulivoima on päästötöntä, pitää paikkansa vain käytön aikana.
+*Esimerkki.* Luvut ovat samassa yksikössä, ja molemmat koskevat sähköä. Suure on lähes sama: lähde 1 laskee kaikki kasvihuonekaasut hiilidioksidiekvivalenttina ja lähde 2 vain hiilidioksidin. Luvut eivät silti ole suoraan vertailukelpoisia, koska tarkasteluraja on eri: lähde 1 antaa elinkaaren päästön ja lähde 2 käytönaikaisen. Ero $11\,\tfrac{\text{g}}{\text{kWh}}$ ja $0\,\tfrac{\text{g}}{\text{kWh}}$ selittyy tällä, eikä kumpikaan lähde ole väärässä.
+
+Johtopäätökseni on, että tuulivoimalla ei ole käytönaikaisia hiilidioksidipäästöjä ja että sen elinkaaren kasvihuonekaasupäästö on lähteen 1 mukaan noin $11\,\tfrac{\text{g}}{\text{kWh}}$ hiilidioksidiekvivalenttina.
+
+Tuotantotapoja vertaillessa käytän elinkaaren päästöjä, koska niissä kaikki tuotantotavat lasketaan samalla rajauksella. Väite, että tuulivoima on päästötöntä, pitää paikkansa vain käytön aikana.
 
 Toinen yhtä hyvä johtopäätös olisi esimerkiksi tämä: lähteet eivät ole vertailukelpoisia, koska lähde 2 ei kerro rajaustaan eikä vuottaan, ja vastaukseen tarvitaan lähde, joka ilmoittaa elinkaaren päästön samalla rajauksella kuin lähde 1.
 

@@ -74,13 +74,19 @@ m &= 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} \\
 &+ 9.2 \cdot 10^{3}\,\text{t} \\
 &\approx 1.4 \cdot 10^{4}\,\text{t}
 \end{aligned}
-$$ per year. That is about $95\,\%$ less than with coal ($3.1 \cdot 10^{5}\,\text{t}$) and clearly less than with natural gas alone ($1.9 \cdot 10^{5}\,\text{t}$). Wind power alone ($4.2 \cdot 10^{3}\,\text{t}$) would have lower emissions, but it does not cover the peak.
+$$ per year.
+
+That is about $95\,\%$ less than with coal ($3.1 \cdot 10^{5}\,\text{t}$) and clearly less than with natural gas alone ($1.9 \cdot 10^{5}\,\text{t}$). Wind power alone ($4.2 \cdot 10^{3}\,\text{t}$) would have lower emissions, but it does not cover the peak.
 
 *Peak.* On a calm, frosty evening the biomass plant ($40\,\text{MW}$), hydropower ($20\,\text{MW}$) and the wind turbines (below $0.05 \cdot 90\,\text{MW} \approx 4.5\,\text{MW}$) give about $65\,\text{MW}$ in total. The remaining $15\,\text{MW}$ or so is bought from the grid, or part of the consumption, such as electric heating, is shifted a few hours later.
 
 *Other arguments.* The combination does not depend on a single fuel or a single kind of weather: wind power has no fuel, and the power of hydropower and biomass can be adjusted. The wind turbines take up land and change the landscape. The biomass plant needs wood chips, but only about a sixth of what it would need at the table's typical capacity factor, $0.70$.
 
-*The strongest counterargument* is that the biomass plant stands idle for much of the year, so building it is expensive per unit of energy produced, and the carbon dioxide from burning biomass is bound back only over decades, so the real emission can be larger than the assumed $230\,\text{g/kWh}$. My answer is that the plant is needed precisely because of its controllability: without it, more than $50\,\text{MW}$ would be needed from the grid on the peak evening, when the consumption of the whole country is at its highest. The share of biomass in the energy is only about $11\,\%$.
+*The strongest counterargument* is that the biomass plant stands idle for much of the year, so building it is expensive per unit of energy produced, and the carbon dioxide from burning biomass is bound back only over decades, so the real emission can be larger than the assumed $230\,\text{g/kWh}$.
+
+My answer is that the plant is needed precisely because of its controllability: without it, more than $50\,\text{MW}$ would be needed from the grid on the peak evening, when the consumption of the whole country is at its highest.
+
+The share of biomass in the energy is only about $11\,\%$.
 
 *Assumptions.* I assumed that the capacity factors are the same every year. Windiness and rainfall vary, so in a bad year the biomass plant runs more and the emission grows. I also assumed that consumption stays at $380\,\text{GWh}$. If heating and transport are electrified, consumption grows and more wind turbines are needed. The price and the reinforcement of the electricity grid were left uncalculated, although they may decide the matter.
 
@@ -127,21 +133,35 @@ Source 2 is the web page of an energy company on which the company presents its 
 **Principle:** The time of publication and the period of the data are different things: a new publication can use old data. Production methods and their equipment change, so figures from different years can differ for that reason alone. Figures can be compared only when they are the same quantity and in the same unit. The units of an emission factor are converted into each other by converting both the mass prefix and the energy prefix.
 **Model answer:** *Structure.* For each source the year of publication and the years of the data, the figure with its quantity and unit and, if needed, the conversion to the same unit.
 
-*Example.* Source 1 was published in 2014, and it collects studies published before that. Source 2 was updated last year, but it does not say which year the figure is from. Source 1 gives the median of the life-cycle greenhouse gas emissions of onshore wind power as $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent. The quantity is thus the combined effect of all greenhouse gases converted into an amount of carbon dioxide. Source 2 says that wind power produces electricity without carbon dioxide emissions, so its figure is $0\,\tfrac{\text{g}}{\text{kWh}}$, and it concerns carbon dioxide only. If one source gave the emission in the unit $\tfrac{\text{t}}{\text{GWh}}$, the conversion would be $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, so the number stays the same.
+*Example.* Source 1 was published in 2014, and it collects studies published before that. Source 2 was updated last year, but it does not say which year the figure is from.
+
+Source 1 gives the median of the life-cycle greenhouse gas emissions of onshore wind power as $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent. The quantity is thus the combined effect of all greenhouse gases converted into an amount of carbon dioxide. Source 2 says that wind power produces electricity without carbon dioxide emissions, so its figure is $0\,\tfrac{\text{g}}{\text{kWh}}$, and it concerns carbon dioxide only.
+
+If one source gave the emission in the unit $\tfrac{\text{t}}{\text{GWh}}$, the conversion would be $11\,\tfrac{\text{g}}{\text{kWh}} = \tfrac{11 \cdot 10^{-6}\,\text{t}}{10^{-6}\,\text{GWh}} = 11\,\tfrac{\text{t}}{\text{GWh}}$, so the number stays the same.
 
 ### c)
 **Find:** the system boundary, assumptions and uncertainty of each source
 **Principle:** The system boundary tells what the figure includes. Electricity is only part of all energy, because energy is also used for heating, transport and industry. Operational emissions are produced when the power plant produces energy. Life-cycle emissions also include the construction of the plant, the supply of fuel, maintenance and decommissioning. Therefore a production method that has no operational emissions can still cause life-cycle emissions. Assumptions such as the plant type, the region and the capacity factor change the figure, and the uncertainty shows as a range.
 **Model answer:** *Structure.* For each source: electricity or total energy, operational or life-cycle emission (or the corresponding boundary for another question), the most important assumptions and the uncertainty. If the source does not tell something, this is stated.
 
-*Example.* Both sources concern electricity. Source 1 calculates life-cycle emissions, so the manufacture, construction and decommissioning of the plants are included. Source 2 means operational emissions: a rotating wind turbine burns nothing. Source 1 assumes the capacity factors and plant lifetimes obtained from its studies, and the result depends on them: a longer lifetime spreads the construction emissions over a larger amount of energy. Besides the median, source 1 gives the range of the studies, $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$ for onshore wind power, so its uncertainty is visible. Source 2 does not give the uncertainty, but the operational emission is zero by definition.
+*Example.* Both sources concern electricity. Source 1 calculates life-cycle emissions, so the manufacture, construction and decommissioning of the plants are included. Source 2 means operational emissions: a rotating wind turbine burns nothing.
+
+Source 1 assumes the capacity factors and plant lifetimes obtained from its studies, and the result depends on them: a longer lifetime spreads the construction emissions over a larger amount of energy.
+
+Besides the median, source 1 gives the range of the studies, $7\text{–}56\,\tfrac{\text{g}}{\text{kWh}}$ for onshore wind power, so its uncertainty is visible. Source 2 does not give the uncertainty, but the operational emission is zero by definition.
 
 ### d)
 **Find:** the comparability of the sources and a justified conclusion
 **Principle:** Figures are comparable when they are the same quantity in the same unit, from the same period or at least from a period in which the matter has not had time to change, and with the same system boundary and the same key assumptions. If one of these differs, the difference can explain the difference between the figures. The conclusion distinguishes what the sources say from what can be inferred from them.
 **Model answer:** *Structure.* Comparability item by item, an explanation of the difference between the figures and a conclusion that answers the question or justifies why the sources are not enough for it.
 
-*Example.* The figures are in the same unit, and both concern electricity. The quantity is almost the same: source 1 counts all greenhouse gases in carbon dioxide equivalent and source 2 only carbon dioxide. The figures are still not directly comparable, because the system boundary is different: source 1 gives the life-cycle emission and source 2 the operational emission. The difference between $11\,\tfrac{\text{g}}{\text{kWh}}$ and $0\,\tfrac{\text{g}}{\text{kWh}}$ is explained by this, and neither source is wrong. My conclusion is that wind power has no operational carbon dioxide emissions and that its life-cycle greenhouse gas emission is about $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent according to source 1. When comparing production methods I use life-cycle emissions, because in them all production methods are calculated with the same boundary. The claim that wind power is emission-free holds only for the time of operation.
+*Example.* The figures are in the same unit, and both concern electricity. The quantity is almost the same: source 1 counts all greenhouse gases in carbon dioxide equivalent and source 2 only carbon dioxide.
+
+The figures are still not directly comparable, because the system boundary is different: source 1 gives the life-cycle emission and source 2 the operational emission. The difference between $11\,\tfrac{\text{g}}{\text{kWh}}$ and $0\,\tfrac{\text{g}}{\text{kWh}}$ is explained by this, and neither source is wrong.
+
+My conclusion is that wind power has no operational carbon dioxide emissions and that its life-cycle greenhouse gas emission is about $11\,\tfrac{\text{g}}{\text{kWh}}$ in carbon dioxide equivalent according to source 1.
+
+When comparing production methods I use life-cycle emissions, because in them all production methods are calculated with the same boundary. The claim that wind power is emission-free holds only for the time of operation.
 
 Another equally good conclusion would be, for example, this: the sources are not comparable, because source 2 states neither its boundary nor its year, and an answer requires a source that gives the life-cycle emission with the same boundary as source 1.
 
