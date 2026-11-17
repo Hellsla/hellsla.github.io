@@ -1,19 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: ee80f33d60f803a1
-SCOPE: delta added-exercise from d816d0480c5ff911 base e238aa983a09
+VERDICT: FAIL
+CONTENT-HASH: eacff728d2981da8
 
 ## Blocking
 
+- solutions.md fy8-13-L2-10 Järkevyys (Finnish: lähempänä 10 cm:ä) — claims 12 cm lies "closer to 15 cm", but 12 is closer to 10 cm (2 vs 3 cm); a student checking the result is misled — fix: "12 cm lies between 10 cm (20 µSv/h) and 15 cm (10 µSv/h), so the result must lie between 10 and 20 µSv/h; 15 µSv/h fits (the curve is convex, so the value is a little above the straight-line midpoint)" (translate in this language's own words).
+
 ## Polish
-- exercises.json fy8-13-L2-09 — a) and b) overlap L2-05 (annual dose by source from a table, share of radon); say in a) that the student reads the report's own numbers, or leave b) out and keep the new idea (rate times time versus the average).
-- exercises.json — the boxed answer c) needs no data from the reports; it is fine, but add to d) "Käytä kohdan a) lukua."
-- exercises.json text — "Tässä tehtävässä verrataan koko annosta annokseen, jonka pelkkä säteilymittarin näyttämä annosnopeus antaisi." is long; write "Verrataan koko annosta mittarin annosnopeudesta laskettuun annokseen."
-- solutions.md d) — the figures 0,45 and 0,33 mSv should be marked as the solver's reading of the report, like the others.
+
+- fy8-13-L3-06 text — "annosnopeus ... työpisteen etäisyydellä lähteestä" is ambiguous (reads as if the graph depended on distance); say "työpiste on kiinteällä etäisyydellä lähteestä" / the same in this language.
+- fy8-13-L3-06 a) and b) are level-2 steps (read, t = H/Ḣ); the level-3 demand is c) and d). Accept, or ask for c) without the hint of the 25 cm edge: the curve ends exactly at the answer, 25 cm.
+- fy8-13-L2-10 overlaps L3-05 (concrete thickness graph/table) and L2-04 (shield); acceptable as the only exponential read-off with a fractional d/d_1/2.
 
 ## Checked
-- Level 2 is right: a reading, a percentage, a rate-times-time step with unit conversion, and a reasoning part; not a repeat of L2-08 (flight crew) which is a pure calculation.
-- Arithmetic: 0,10 µSv/h · 8760 h = 876 µSv = 0,88 mSv; 4/5,9 = 67,8 %; tolerance 2 % fine.
-- d) is a real concept (external dose rate meter does not see inhaled radon); the solution names what the meter sees, giving a closing quantitative comparison (0,78 mSv).
-- Student-chosen values handled: "Annettu" gives example reading; solution steps shown.
-- Selkeä suomi: short sentences, "annosnopeus" explained.
-- Method: delta text in packet.
+
+- L2-10: figure gives 80 µSv/h at 0 and 40 at 5 cm on the 1 cm grid; figure description does not state the half-value layer; answer 15 (15,16) within tolerance 0,04.
+- L2-10 c) check against the graph is a real verification step; level 2 fits.
+- L3-06: 20 cm gives 5 µSv/h on a gridline, 25 cm gives 2,5; answers 4,0 h and 25 cm consistent.
+- L3-06 d) asks for an assumption and its effect; the model answer is observable and correct (scatter, constant rate).
+- Solutions staged: given, principle, formula, conversions, substitution, answer, check.
+- Method: delta, added exercises only.

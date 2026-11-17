@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 75be1fcbd4cc4475
+CONTENT-HASH: a632bdf9634c4105
+SCOPE: delta added-exercise from 75be1fcbd4cc4475 base 5b3ca4f81c77
 
 ## Blocking
 - none
@@ -8,8 +9,8 @@ CONTENT-HASH: 75be1fcbd4cc4475
 - none
 
 ## Checked
-- Delta (round 3): only the Mallivastaus d) line of fy8-13-L2-09 (inline chain split into two adjacent formulas) in solutions.md. Opened the 1280 px level-2 open-solution captures (parts 11-13, en) around 13-17, the 0,88 mSv chain at the end.
-- The two formulas read as one continuous line with a normal space, same weight and spacing as neighbouring maths, equals sign intact, numbers, signs and units unchanged; surrounding layout (Vastaus, Järkevyys boxes) survived. 360 px clipping: the packet's layout 360 px check is ok; no 360 px capture of this line exists, so wrapping is taken from that check.
+- en captures open-exercises-L2-1280-14, L3-1280-10, L3-1280-11 (L2-10 figure and solution, L3-06 solution); text of both tasks read in the packet. Decimal point, units upright, aligned chains, fluent English, figure axes and units clear.
+- Only fy8-13-L2-10 and fy8-13-L3-06 judged (delta); the 360 px layout check is taken from the packet's deterministic checks, no 360 px capture of these tasks was opened.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
