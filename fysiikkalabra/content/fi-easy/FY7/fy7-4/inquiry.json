@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: suoran johtimen magneettikenttä",
-      "prompt": "Kaiuttimen kaapelin yhdessä pitkässä suorassa johtimessa kulkee virta $0{,}50\\,\\text{A}$. Johtimen magneettivuon tiheys eli kentän voimakkuus on $1{,}0\\,\\text{cm}$:n päässä $10\\,\\mu\\text{T}$. Kuinka suuri se on $2{,}0\\,\\text{cm}$:n päässä?",
+      "prompt": "Pitkässä suorassa johtimessa kulkee virta $0{,}50\\,\\text{A}$. Johtimen magneettivuon tiheys eli kentän voimakkuus on $1{,}0\\,\\text{cm}$:n päässä $10\\,\\mu\\text{T}$. Kuinka suuri se on $2{,}0\\,\\text{cm}$:n päässä?",
       "choices": [
         {
           "text": "$5{,}0\\,\\mu\\text{T}$ eli puolet, koska $B = \\mu_0 I : (2\\pi r)$ on kääntäen verrannollinen etäisyyteen.",

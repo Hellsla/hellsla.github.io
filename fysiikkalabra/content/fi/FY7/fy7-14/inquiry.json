@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: interferenssi",
-      "prompt": "Saippuakalvolle osuu punaista valoa ($\\lambda = 650\\,\\text{nm}$). Kaksi aaltoa kulkee kalvossa eri reittejä ja saapuu samaan kohtaan silmässä. Ne lähtevät samassa vaiheessa, vaihe muuttuu vain kuljetun matkan vuoksi ja matkaero on $975\\,\\text{nm}$. Mitä kohdassa havaitaan?",
+      "prompt": "Saippuakalvon värit syntyvät siitä, että aallot vahvistavat tai kumoavat toisensa. Kaksi saman punaisen laserin valon aaltoa ($\\lambda = 650\\,\\text{nm}$) lähtee samassa vaiheessa ja kulkee ilmassa eri reittejä. Reittien matkaero on $975\\,\\text{nm}$. Mitä havaitaan kohdassa, jossa aallot kohtaavat?",
       "choices": [
         {
           "text": "Heikentävä interferenssi: matkaero on puolitoista aallonpituutta.",

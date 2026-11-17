@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Revise: a compass without a current",
       "optional": true,
-      "prompt": "When there is no current in the copper wire, the compass needle points north. In which direction does the north end of the needle turn, and why?",
+      "prompt": "When there is no current in the copper wire, a compass lies next to the wire. In which direction does the north end of the compass needle point, and why?",
       "choices": [
         {
           "text": "Along the field line, that is, in the direction in which the Earth's magnetic field points at the compass.",

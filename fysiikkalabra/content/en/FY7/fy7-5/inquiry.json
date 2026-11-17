@@ -28,14 +28,14 @@
         {
           "text": "The force is $F = |q|vB \\approx 1.6 \\cdot 10^{-13}\\,\\text{N}$, and it is perpendicular to both the velocity and the field.",
           "correct": true,
-          "feedback": "Correct. A magnetic field acts on a moving charge with the force $F = |q|vB$, perpendicular to the velocity and the field (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod, but the electrons of a rod at rest do not."
+          "feedback": "Correct. A magnetic field acts on a moving charge with the force $F = |q|vB$, perpendicular to the velocity and the field (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod."
         },
         {
           "text": "A force along the field, because the electron in a field is like a compass needle.",
           "feedback": "A compass needle is a magnetic dipole, but on a moving electron the force is perpendicular to the field, not along it: $F = |q|vB$ (chapter *Charged particle in electric and magnetic fields*)."
         },
         {
-          "text": "A force $F = |q|v \\approx 3.2 \\cdot 10^{-13}\\,\\text{N}$, because the size of the field does not matter.",
+          "text": "A force of $3.2 \\cdot 10^{-13}\\,\\text{N}$, because the size of the field does not matter.",
           "feedback": "The size of the field is part of it: $F = |q|vB = 1.6 \\cdot 10^{-19}\\,\\text{C} \\cdot 2.0 \\cdot 10^{6}\\,\\text{m/s} \\cdot 0.50\\,\\text{T} \\approx 1.6 \\cdot 10^{-13}\\,\\text{N}$ (chapter *Charged particle in electric and magnetic fields*)."
         }
       ],

@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: interference",
-      "prompt": "Laser light passes through two neighbouring places in the film, and the waves leaving them are in the same phase and have the same frequency. Point P on the wall is $1.5$ wavelengths farther from one place than from the other. What is seen at point P?",
+      "prompt": "Laser light passes through two neighbouring slits in the foil, and the waves leaving the slits are in the same phase and have the same frequency. Point P on the wall is $1.5$ wavelengths farther from one slit than from the other. What is seen at point P?",
       "choices": [
         {
           "text": "The waves reinforce each other, because the path difference is larger than one wavelength.",

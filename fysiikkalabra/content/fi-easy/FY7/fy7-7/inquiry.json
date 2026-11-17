@@ -33,12 +33,12 @@
           "feedback": "Oikein. Pyörimistaajuus kertoo, montako kierrosta tehdään sekunnissa: $f = 1 : T = 1 : 5{,}0\\,\\text{s} = 0{,}20\\,\\text{Hz}$. Tässä luvussa tutkitaan, miten pyöriminen tuottaa vaihtojännitteen."
         },
         {
-          "text": "$5{,}0\\,\\text{Hz}$, koska taajuus on sama luku kuin kiertoaika.",
-          "feedback": "Taajuus ja kiertoaika eivät ole sama luku. Ne ovat toistensa käänteislukuja: $f = 1 : T$. Kun kierros kestää $5{,}0\\,\\text{s}$, kierroksia on sekunnissa vain $1 : 5{,}0 = 0{,}20$."
+          "text": "$5{,}0\\,\\text{Hz}$, koska taajuus on sama luku kuin jaksonaika.",
+          "feedback": "Taajuus ja jaksonaika eivät ole sama luku. Ne ovat toistensa käänteislukuja: $f = 1 : T$. Kun kierros kestää $5{,}0\\,\\text{s}$, kierroksia on sekunnissa vain $1 : 5{,}0 = 0{,}20$."
         },
         {
-          "text": "$2{,}0\\,\\text{Hz}$, koska taajuus on kiertoajan käänteisluku ja $1 : 5{,}0 = 2{,}0$.",
-          "feedback": "Käänteisluku on oikea ajatus, mutta lasku on väärin: $1 : 5{,}0 = 0{,}20$, ei $2{,}0$. Tarkista järkevyys: kierros kestää monta sekuntia, joten kierroksia sekunnissa on selvästi alle yksi."
+          "text": "$12\\,\\text{Hz}$, koska taajuus on kierrosten määrä minuutissa: $60 : 5{,}0 = 12$.",
+          "feedback": "Hertsi tarkoittaa kierroksia sekunnissa, ei minuutissa. Luku $12$ on kierrosten määrä minuutissa. Yhdessä sekunnissa roottori tekee $1 : 5{,}0 = 0{,}20$ kierrosta, joten $f = 0{,}20\\,\\text{Hz}$."
         }
       ]
     },

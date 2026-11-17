@@ -42,4 +42,4 @@ a["check-e-cm"] = 4.0 * 0.25 * 50                    # mistake, l in cm: 50 V
 a["check-e-nol"] = 4.0 * 0.25                        # mistake, no l: 1,0 V
 # Exit ticket 1: square loop, side 0,20 m, B = 0,50 T perpendicular
 a["exit-Phi"] = 0.50 * 0.20 ** 2                     # 0,020 Wb = 20 mWb
-print(json.dumps({k: round(v, 6) for k, v in a.items()}))
+print(json.dumps({k: (float(f"{v:.3e}") if k.startswith("kertaus-F") else round(v, 6)) for k, v in a.items()}))

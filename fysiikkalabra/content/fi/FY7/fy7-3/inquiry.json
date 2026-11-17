@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Kertaa: kompassi ilman virtaa",
       "optional": true,
-      "prompt": "Kun kuparijohtimessa ei kulje virtaa, kompassin neula osoittaa pohjoiseen. Mihin suuntaan neulan pohjoispää kääntyy ja miksi?",
+      "prompt": "Kun kuparijohtimessa ei kulje virtaa, kompassi on johtimen vieressä. Mihin suuntaan kompassin neulan pohjoispää osoittaa ja miksi?",
       "choices": [
         {
           "text": "Kenttäviivan suuntaan eli siihen suuntaan, johon Maan magneettikenttä osoittaa kompassin kohdalla.",

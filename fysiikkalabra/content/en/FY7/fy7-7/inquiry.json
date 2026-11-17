@@ -37,8 +37,8 @@
           "feedback": "Frequency and period are not the same number but reciprocals, $f = 1 : T$. When a turn takes $5.0\\,\\text{s}$, there are only $1 : 5.0 = 0.20$ turns per second."
         },
         {
-          "text": "$2.0\\,\\text{Hz}$, because frequency is the reciprocal of the period and $1 : 5.0 = 2.0$.",
-          "feedback": "The reciprocal is the right idea, but the calculation is wrong: $1 : 5.0 = 0.20$, not $2.0$. Reasonableness check: a turn takes several seconds, so there is clearly less than one turn per second."
+          "text": "$12\\,\\text{Hz}$, because $60 : 5.0 = 12$ turns per minute is the frequency.",
+          "feedback": "A frequency in hertz means turns per second, not turns per minute. $12$ is the number of turns in a minute. In one second the rotor makes $1 : 5.0 = 0.20$ turns, so $f = 0.20\\,\\text{Hz}$."
         }
       ]
     },
