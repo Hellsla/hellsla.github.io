@@ -188,7 +188,7 @@
       "unit": "Wh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Litiumkennon napajännite purkauksessa, esimerkkiaineisto",
+        "caption": "Litiumkennon napajännite purkauksessa",
         "columns": [
           "$t\\,(\\text{h})$",
           "$U\\,(\\text{V})$"
@@ -246,7 +246,7 @@
       "unit": "Ω",
       "tolerance": 0.05,
       "data": {
-        "caption": "Latausvirta laturin jännitteen funktiona, esimerkkiaineisto",
+        "caption": "Latausvirta laturin jännitteen funktiona",
         "columns": [
           "$U_\\text{lat}\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -335,7 +335,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Litiumkennon purkaus kahdella virralla, esimerkkiaineisto",
+        "caption": "Litiumkennon purkaus kahdella virralla",
         "columns": [
           "$I\\,(\\text{A})$",
           "$t\\,(\\text{h})$",
@@ -367,7 +367,7 @@
       "unit": "h",
       "tolerance": 0.02,
       "data": {
-        "caption": "Autoakun lähdejännite varaustason funktiona, esimerkkiaineisto",
+        "caption": "Autoakun lähdejännite varaustason funktiona",
         "columns": [
           "Varaustaso $(\\%)$",
           "$E\\,(\\text{V})$"

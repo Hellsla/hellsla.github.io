@@ -159,7 +159,7 @@
       "unit": "A",
       "tolerance": 0.02,
       "data": {
-        "caption": "Virtamittarien lukemat, esimerkkiaineisto",
+        "caption": "Virtamittarien lukemat",
         "columns": [
           "Mittari",
           "$I\\,(\\text{A})$"
@@ -196,7 +196,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Potentiaali piirin kohdissa, esimerkkiaineisto",
+        "caption": "Potentiaali piirin kohdissa",
         "columns": [
           "Kohta",
           "$V\\,(\\text{V})$"
@@ -338,7 +338,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pisteen $P$ potentiaali eri kuormilla, esimerkkiaineisto",
+        "caption": "Pisteen $P$ potentiaali eri kuormilla",
         "columns": [
           "$R_\\text{k}\\,(\\Omega)$",
           "$V_P\\,(\\text{V})$"

@@ -299,7 +299,7 @@
       "unit": "m",
       "tolerance": 0.02,
       "data": {
-        "caption": "R-luku yhdellä mittausasemalla (keksitty esimerkkiaineisto, ei mittaustulos)",
+        "caption": "R-luku yhdellä mittausasemalla",
         "columns": [
           "Kellonaika (h)",
           "R-luku"
