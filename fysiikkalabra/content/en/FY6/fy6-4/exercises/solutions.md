@@ -94,7 +94,9 @@
 **Principle:** The parallel resistors $R_2$ and $R_3$ are replaced with one resistor $R_{23}$, which is in series with $R_1$. The current leaving the battery passes through $R_1$ and through the whole parallel part.
 
 The voltage of the parallel part is the same across both branches, so the current of $R_3$ is obtained from it by Ohm's law.
-**Reading the figure:** From the figure we read the values $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ and $R_3 = 120\,\Omega$. The resistors $R_2$ and $R_3$ are between the same two branching points, that is, in parallel, and the whole current leaving the battery passes through $R_1$ and then through the parallel part, so $R_1$ and the parallel part are one after the other, that is, in series.
+**Reading the figure:** From the figure we read the values $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ and $R_3 = 120\,\Omega$.
+
+The resistors $R_2$ and $R_3$ are between the same two branching points, that is, in parallel, and the whole current leaving the battery passes through $R_1$ and then through the parallel part, so $R_1$ and the parallel part are one after the other, that is, in series.
 **Formula:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $I = \dfrac{U}{R_1 + R_{23}}$, $U_{23} = R_{23} I$, so $I_3 = \dfrac{U_{23}}{R_3}$
 **Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $R_{23} = \dfrac{60\,\Omega \cdot 120\,\Omega}{180\,\Omega} = 40\,\Omega$, $I = \dfrac{12\,\text{V}}{40\,\Omega + 40\,\Omega} = 0.15\,\text{A}$, $U_{23} = 40\,\Omega \cdot 0.15\,\text{A} = 6.0\,\text{V}$ and $I_3 = \dfrac{6.0\,\text{V}}{120\,\Omega} = 0.050\,\text{A} = 50\,\text{mA}$

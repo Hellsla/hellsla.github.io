@@ -124,7 +124,9 @@ This energy becomes internal energy of the battery, which is transferred to the 
 ## fy6-9-L1-06
 **Find:** why the energies of batteries cannot be compared on the basis of ampere-hours alone
 **Principle:** An ampere-hour is a unit of charge, $1\,\text{Ah} = 3600\,\text{C}$. The energy of a battery is voltage times charge, $W = UQ$, so the energy depends on the nominal voltage of the battery as well as on the capacity.
-**Model answer:** Energy depends on the voltage as well as on the charge, and the voltages of the batteries can be different. For example, a battery with a capacity of $2.0\,\text{Ah}$ and a nominal voltage of $3.7\,\text{V}$ contains an energy of $7.4\,\text{Wh}$, but a battery with a capacity of $1.0\,\text{Ah}$ and a nominal voltage of $12\,\text{V}$ contains an energy of $12\,\text{Wh}$.
+**Model answer:** Energy depends on the voltage as well as on the charge, and the voltages of the batteries can be different.
+
+For example, a battery with a capacity of $2.0\,\text{Ah}$ and a nominal voltage of $3.7\,\text{V}$ contains an energy of $7.4\,\text{Wh}$, but a battery with a capacity of $1.0\,\text{Ah}$ and a nominal voltage of $12\,\text{V}$ contains an energy of $12\,\text{Wh}$.
 
 So the battery with the smaller capacity has more energy. An ampere-hour is neither a unit of time nor a unit of energy, and other reasons, such as mass or temperature, do not explain the difference.
 

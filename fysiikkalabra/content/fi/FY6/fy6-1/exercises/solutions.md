@@ -112,17 +112,39 @@
 ## fy6-1-L3-03
 **Kysytty:** pyörän valon kytkentäkaavio, jossa on kaksi paristoa peräkkäin, kytkin, lamppu ja ampeerimittari samassa silmukassa, sekä sovittu virran suunta
 **Periaate:** Kytkentäkaavio näyttää, mitkä komponentit on kytketty toisiinsa ja missä järjestyksessä virta kulkee niiden läpi. Paristo piirretään pitkällä ohuella viivalla (plusnapa) ja lyhyellä paksulla viivalla (miinusnapa), lamppu ympyränä, jossa on risti, ja ampeerimittari ympyränä, jossa on A. Ampeerimittari mittaa sen läpi kulkevaa virtaa, joten se kytketään samaan silmukkaan lampun kanssa. Virta kulkee ulkoisessa piirissä plusnavasta miinusnapaan.
-**Mallivastaus:** Piirsin yhden suorakulmion muotoisen silmukan. Sen vasempaan reunaan tulevat kaksi paristokennoa peräkkäin niin, että ylemmän kennon miinusnapa on kiinni alemman kennon plusnavassa ja ylemmän kennon plusnapa on ylöspäin. Yläreunaan piirsin suljetun kytkimen (vipu kosketuksissa) ja lampun, oikeaan reunaan ampeerimittarin. Johtimet ovat suoria vaaka- ja pystyviivoja, ja kaikki komponentit ovat samassa silmukassa, joten sama virta kulkee jokaisen läpi. Virran nuoli osoittaa plusnavasta yläreunaa pitkin kytkimen ja lampun kautta ampeerimittariin ja sieltä alareunaa pitkin miinusnapaan. Komponenttien järjestys silmukassa voi olla toinenkin, koska virta on sama silmukan joka kohdassa.
+**Mallivastaus:** Piirsin yhden suorakulmion muotoisen silmukan.
+
+Sen vasempaan reunaan tulevat kaksi paristokennoa peräkkäin niin, että ylemmän kennon miinusnapa on kiinni alemman kennon plusnavassa ja ylemmän kennon plusnapa on ylöspäin.
+
+Yläreunaan piirsin suljetun kytkimen (vipu kosketuksissa) ja lampun, oikeaan reunaan ampeerimittarin.
+
+Johtimet ovat suoria vaaka- ja pystyviivoja, ja kaikki komponentit ovat samassa silmukassa, joten sama virta kulkee jokaisen läpi.
+
+Virran nuoli osoittaa plusnavasta yläreunaa pitkin kytkimen ja lampun kautta ampeerimittariin ja sieltä alareunaa pitkin miinusnapaan.
+
+Komponenttien järjestys silmukassa voi olla toinenkin, koska virta on sama silmukan joka kohdassa.
 
 ## fy6-1-L1-06
 **Kysytty:** mikä väite sovitusta virran suunnasta ja elektronien liikkeestä on oikein
 **Periaate:** Virran suunta sovittiin ennen kuin elektronit tunnettiin: ulkoisessa piirissä virta kulkee plusnavasta miinusnapaan. Elektronin varaus on negatiivinen, joten elektronit liikkuvat piirissä vastakkaiseen suuntaan, miinusnavasta plusnapaan. Virta ei kulu lampussa, koska varaus kiertää suljetussa piirissä, ja elektronit liikkuvat hitaasti kaikkialla piirissä yhtä aikaa.
-**Mallivastaus:** Oikea väite on se, jonka mukaan sovittu virran suunta on plusnavasta miinusnapaan ja elektronit liikkuvat vastakkaiseen suuntaan. Väite, jonka mukaan elektronit liikkuvat samaan suuntaan kuin sovittu virta, on väärin, koska elektronin varaus on negatiivinen. Väite, jonka mukaan virta kuluu lampussa loppuun, on väärin, koska sama varaus palaa lampusta paristoon ja virta on lampun molemmin puolin yhtä suuri. Väite, jonka mukaan lamppu syttyy vasta elektronien saavuttua perille valon nopeudella, on väärin, koska johto on valmiiksi täynnä vapaita elektroneja, jotka liikkuvat kaikkialla yhtä aikaa, eivätkä ne kulje valon nopeudella.
+**Mallivastaus:** Oikea väite on se, jonka mukaan sovittu virran suunta on plusnavasta miinusnapaan ja elektronit liikkuvat vastakkaiseen suuntaan.
+
+Väite, jonka mukaan elektronit liikkuvat samaan suuntaan kuin sovittu virta, on väärin, koska elektronin varaus on negatiivinen.
+
+Väite, jonka mukaan virta kuluu lampussa loppuun, on väärin, koska sama varaus palaa lampusta paristoon ja virta on lampun molemmin puolin yhtä suuri.
+
+Väite, jonka mukaan lamppu syttyy vasta elektronien saavuttua perille valon nopeudella, on väärin, koska johto on valmiiksi täynnä vapaita elektroneja, jotka liikkuvat kaikkialla yhtä aikaa, eivätkä ne kulje valon nopeudella.
 
 ## fy6-1-L1-07
 **Kysytty:** mitä tapahtuu piirissä, jossa kytkin on avoin
 **Periaate:** Sähkövirta kulkee vain suljetussa virtapiirissä, jossa varaus pääsee kiertämään paristosta lamppuun ja takaisin. Avoin kytkin katkaisee silmukan, joten varaus ei liiku missään kohdassa piiriä ja virta on nolla joka kohdassa.
-**Mallivastaus:** Lamppu ei pala, koska silmukka ei ole suljettu: varaus ei pääse kiertämään, joten virta ei kulje missään, ei myöskään pariston ja kytkimen välisessä johdossa. Väite, jonka mukaan virta kulkee kytkimeen asti, on väärin, koska virta on nolla koko katkaistussa piirissä. Väite, jonka mukaan lamppu palaa himmeästi, on väärin, koska energiaa siirtyy lamppuun vain, kun varaus kulkee sen läpi. Väite, jonka mukaan elektronit liikkuvat kytkimen raon yli, on väärin, koska ilmarako on eriste.
+**Mallivastaus:** Lamppu ei pala, koska silmukka ei ole suljettu: varaus ei pääse kiertämään, joten virta ei kulje missään, ei myöskään pariston ja kytkimen välisessä johdossa.
+
+Väite, jonka mukaan virta kulkee kytkimeen asti, on väärin, koska virta on nolla koko katkaistussa piirissä.
+
+Väite, jonka mukaan lamppu palaa himmeästi, on väärin, koska energiaa siirtyy lamppuun vain, kun varaus kulkee sen läpi.
+
+Väite, jonka mukaan elektronit liikkuvat kytkimen raon yli, on väärin, koska ilmarako on eriste.
 
 ## fy6-1-L1-08
 **Annettu:** virta $I = 0{,}25\,\text{A}$, aika $t = 1{,}0\,\text{min}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -147,12 +169,40 @@
 ## fy6-1-L2-06
 **Kysytty:** a) palaako lamppu piirissä A ja mikä on oppilaan päättelyn virhe; b) palaako lamppu piirissä B ja minne virta kulkee; c) kuinka piiri A korjataan
 **Periaate:** Sähkövirta kulkee vain suljetussa virtapiirissä, jossa varaus kiertää paristosta komponentin läpi takaisin paristoon. Virta ei kulu lampussa, vaan sama virta tulee lamppuun ja lähtee siitä. Paksu johto päästää virran kulkemaan paljon helpommin kuin lampun hehkulanka, joten lähes koko virta kulkee johdon kautta.
-**Mallivastaus:** a) Lamppu ei pala piirissä A. Silmukka ei ole suljettu, koska lampun toinen kanta ja pariston miinusnapa eivät ole yhteydessä, joten varaus ei pääse kiertämään eikä virta kulje missään. Oppilaan virhe on ajatella, että virta kuluu lampussa loppuun: virta ei kulu, vaan varaus kiertää ja palaa paristoon, ja siksi paluujohto tarvitaan. b) Lamppu ei pala piirissä B. Lamppu on ohitettu paksulla johdolla, ja varaus kulkee silmukan suljettuna pitävän johdon kautta lampun ohi. Lampun läpi ei kulje virtaa, joten siihen ei siirry energiaa. Johto yhdistää lampun kannat, joten se ohittaa lampun; tämä on oikosulku, jota ei saa tehdä todellisella paristolla, koska paristo ja johto voivat lämmetä. c) Piiri A korjataan yhdistämällä lampun toinen kanta johdolla pariston miinusnapaan, jolloin syntyy suljettu silmukka ja virta kulkee lampun läpi.
+**Mallivastaus:** a) Lamppu ei pala piirissä A.
+
+Silmukka ei ole suljettu, koska lampun toinen kanta ja pariston miinusnapa eivät ole yhteydessä, joten varaus ei pääse kiertämään eikä virta kulje missään.
+
+Oppilaan virhe on ajatella, että virta kuluu lampussa loppuun: virta ei kulu, vaan varaus kiertää ja palaa paristoon, ja siksi paluujohto tarvitaan.
+
+b) Lamppu ei pala piirissä B.
+
+Lamppu on ohitettu paksulla johdolla, ja varaus kulkee silmukan suljettuna pitävän johdon kautta lampun ohi.
+
+Lampun läpi ei kulje virtaa, joten siihen ei siirry energiaa.
+
+Johto yhdistää lampun kannat, joten se ohittaa lampun; tämä on oikosulku, jota ei saa tehdä todellisella paristolla, koska paristo ja johto voivat lämmetä.
+
+c) Piiri A korjataan yhdistämällä lampun toinen kanta johdolla pariston miinusnapaan, jolloin syntyy suljettu silmukka ja virta kulkee lampun läpi.
 
 ## fy6-1-L2-07
 **Kysytty:** a) miten ampeerimittari kytketään ja mittaus tehdään; b) virtojen keskiarvot ennen lamppua ja lampun jälkeen; c) tukevatko mittaukset sitä, että virta kuluu lampussa
 **Periaate:** Ampeerimittari mittaa virran, joka kulkee sen läpi, joten se kytketään virtapiirin silmukkaan sarjaan, jolloin koko mitattava virta kulkee sen kautta. Jos virta kuluisi lampussa, mittarin pitäisi näyttää lampun jälkeen selvästi pienempää lukemaa kuin ennen lamppua. Mittaustulokset eivät ole täsmälleen samat, koska lukemaan liittyy epävarmuus, ja pienet erot suuntaan ja toiseen kuuluvat tähän.
-**Mallivastaus:** a) Ampeerimittari kytketään silmukkaan sarjaan: piiri avataan mitattavasta kohdasta ja mittari liitetään avoimeen kohtaan, niin että koko virta kulkee sen läpi. Ensin mittari on lampun ja pariston plusnavan välissä, ennen lamppua. Sitten mittari siirretään lampun ja pariston miinusnavan väliin, jolloin se mittaa virran lampun jälkeen. b) Ennen lamppua summa on $$\begin{aligned} &0{,}32\,\text{A} + 0{,}30\,\text{A} + 0{,}33\,\text{A} \\ &+ 0{,}29\,\text{A} + 0{,}31\,\text{A} \\ &= 1{,}55\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}55\,\text{A} : 5 = 0{,}310\,\text{A}$. Lampun jälkeen summa on $$\begin{aligned} &0{,}31\,\text{A} + 0{,}30\,\text{A} + 0{,}32\,\text{A} \\ &+ 0{,}30\,\text{A} + 0{,}30\,\text{A} \\ &= 1{,}53\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}53\,\text{A} : 5 = 0{,}306\,\text{A}$. c) Keskiarvojen ero on $0{,}004\,\text{A}$, mikä on pienempi kuin mittarin resoluutio eli pienin näyttöaskel $0{,}01\,\text{A}$. Lisäksi erot ovat mittauksittain kumpaankin suuntaan eivätkä ylitä yhtä näyttöaskelta $0{,}01\,\text{A}$, joten ne selittyvät lukeman epävarmuudella. Mittaukset eivät siis tue sitä, että virta kuluu lampussa: virta on molemmin puolin lamppua yhtä suuri mittauksen tarkkuudella.
+**Mallivastaus:** a) Ampeerimittari kytketään silmukkaan sarjaan: piiri avataan mitattavasta kohdasta ja mittari liitetään avoimeen kohtaan, niin että koko virta kulkee sen läpi.
+
+Ensin mittari on lampun ja pariston plusnavan välissä, ennen lamppua.
+
+Sitten mittari siirretään lampun ja pariston miinusnavan väliin, jolloin se mittaa virran lampun jälkeen.
+
+b) Ennen lamppua summa on $$\begin{aligned} &0{,}32\,\text{A} + 0{,}30\,\text{A} + 0{,}33\,\text{A} \\ &+ 0{,}29\,\text{A} + 0{,}31\,\text{A} \\ &= 1{,}55\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}55\,\text{A} : 5 = 0{,}310\,\text{A}$.
+
+Lampun jälkeen summa on $$\begin{aligned} &0{,}31\,\text{A} + 0{,}30\,\text{A} + 0{,}32\,\text{A} \\ &+ 0{,}30\,\text{A} + 0{,}30\,\text{A} \\ &= 1{,}53\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}53\,\text{A} : 5 = 0{,}306\,\text{A}$.
+
+c) Keskiarvojen ero on $0{,}004\,\text{A}$, mikä on pienempi kuin mittarin resoluutio eli pienin näyttöaskel $0{,}01\,\text{A}$.
+
+Lisäksi erot ovat mittauksittain kumpaankin suuntaan eivätkä ylitä yhtä näyttöaskelta $0{,}01\,\text{A}$, joten ne selittyvät lukeman epävarmuudella.
+
+Mittaukset eivät siis tue sitä, että virta kuluu lampussa: virta on molemmin puolin lamppua yhtä suuri mittauksen tarkkuudella.
 
 ## fy6-1-L3-04
 **Annettu:** tunneittain $U$ ja $I$ taulukosta: $4{,}0\,\text{V}$ ja $0{,}80\,\text{A}$; $3{,}8\,\text{V}$ ja $0{,}75\,\text{A}$; $3{,}7\,\text{V}$ ja $0{,}70\,\text{A}$; $3{,}6\,\text{V}$ ja $0{,}60\,\text{A}$; $3{,}4\,\text{V}$ ja $0{,}50\,\text{A}$; jokainen väli $t = 1{,}0\,\text{h}$

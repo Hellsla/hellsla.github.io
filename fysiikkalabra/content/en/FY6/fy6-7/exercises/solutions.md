@@ -257,7 +257,9 @@ $$\begin{aligned}
 &\phantom{E} = 0.060\,\text{kWh}
 \end{aligned}$$
 
-The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour. The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$.
+The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour.
+
+The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$.
 
 Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and three minutes is only $\tfrac{1}{20}$ of an hour.
 

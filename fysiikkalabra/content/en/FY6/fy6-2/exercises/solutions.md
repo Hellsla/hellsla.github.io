@@ -56,7 +56,9 @@
 **Conversions:** $p = 2.0\,\% = 0.020$; all currents are in amperes.
 **Substitution:** $\Delta I = 0.020 \cdot 0.35\,\text{A} + 3 \cdot 0.01\,\text{A} = 0.007\,\text{A} + 0.03\,\text{A} = 0.037\,\text{A}$, so $\dfrac{\Delta I}{I} = \dfrac{0.037\,\text{A}}{0.35\,\text{A}} = 0.106 = 10.6\,\%$
 **Answer:** about $11\,\%$, two significant figures, because the first digit is 1.
-**Reasonableness:** Three steps, that is $0.03\,\text{A}$, are already almost a tenth of the reading $0.35\,\text{A}$, and the percentage part adds a little. The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\,\text{A}$ is the smallest suitable range here; the error limit is still almost $11\,\%$, because the reading is small compared with the range, and a more accurate range for large currents would help.
+**Reasonableness:** Three steps, that is $0.03\,\text{A}$, are already almost a tenth of the reading $0.35\,\text{A}$, and the percentage part adds a little.
+
+The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\,\text{A}$ is the smallest suitable range here; the error limit is still almost $11\,\%$, because the reading is small compared with the range, and a more accurate range for large currents would help.
 
 ## fy6-2-L2-02
 **Given:** reading $I = 0.0875\,\text{A}$ on the range $200\,\text{mA}$, resolution $r = 0.1\,\text{mA}$, error limit $\pm(1.0\,\% + 2\ \text{digits})$

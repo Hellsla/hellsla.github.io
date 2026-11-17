@@ -2,7 +2,13 @@
 
 ### a)
 **Find:** a graph so that, according to the model of the battery, a straight line fits the points
-**Graph:** The battery is modelled as an ideal voltage source with source voltage $E$ and an internal resistance $R_\text{int}$ in series with it. When a current $I$ flows through the battery, the voltage across the internal resistance is $R_\text{int} I$ and the terminal voltage is $U = E - R_\text{int} I$. This is the equation of a straight line: when the current $I$ is on the horizontal axis and the terminal voltage $U$ on the vertical axis, the line meets the vertical axis at $E$ and its slope is $-R_\text{int}$. So the measurements are plotted as they are.
+**Graph:** The battery is modelled as an ideal voltage source with source voltage $E$ and an internal resistance $R_\text{int}$ in series with it.
+
+When a current $I$ flows through the battery, the voltage across the internal resistance is $R_\text{int} I$ and the terminal voltage is $U = E - R_\text{int} I$.
+
+This is the equation of a straight line: when the current $I$ is on the horizontal axis and the terminal voltage $U$ on the vertical axis, the line meets the vertical axis at $E$ and its slope is $-R_\text{int}$.
+
+So the measurements are plotted as they are.
 
 | $I\ (\text{A})$ | $U\ (\text{V})$ |
 |---|---|
@@ -15,7 +21,15 @@
 
 The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decrease of the points can be seen, and the start is marked in the figure.
 
-<svg data-fig="fy6-s1-graph" viewBox="0 0 600 380" role="img" aria-label="Graph: terminal voltage U of the battery in volts as a function of the current I in amperes. Six black points at currents 0.10–0.60 A; the voltage falls from 4.48 V to 3.89 V. A straight line has been fitted to the points, passing between the points, and it has been extended as a dashed line to the vertical axis at 4.60 V. The points (0.10 A; 4.48 V) and (0.60 A; 3.88 V) are marked on the line, with a slope triangle between them in which the change in current is 0.50 A and the change in voltage is −0.60 V. The scale of the vertical axis starts at 3.6 V." style="max-width:100%;font-size:24px">
+<svg data-fig="fy6-s1-graph" viewBox="0 0 600 380" role="img" aria-label="Graph: terminal voltage U of the battery in volts as a function of the current I in amperes.
+
+Six black points at currents 0.10–0.60 A; the voltage falls from 4.48 V to 3.89 V.
+
+A straight line has been fitted to the points, passing between the points, and it has been extended as a dashed line to the vertical axis at 4.60 V.
+
+The points (0.10 A; 4.48 V) and (0.60 A; 3.88 V) are marked on the line, with a slope triangle between them in which the change in current is 0.50 A and the change in voltage is −0.60 V.
+
+The scale of the vertical axis starts at 3.6 V." style="max-width:100%;font-size:24px">
   <line x1="146.5" y1="320" x2="146.5" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197" y1="320" x2="197" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="247.5" y1="320" x2="247.5" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -84,7 +98,11 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
   <foreignObject x="112" y="72" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E = 4.60\,\text{V}$</div></foreignObject>
 </svg>
 
-**Model answer:** The six points lie almost on the same straight line, so the model $U = E - R_\text{int} I$ describes the behaviour of the battery well in the measured range: the terminal voltage decreases steadily as the current increases. The line has been fitted between the points, and the points have not been joined into a broken line. The line has been extended as a dashed line to the vertical axis so that the point $I = 0$, the source voltage, can be seen.
+**Model answer:** The six points lie almost on the same straight line, so the model $U = E - R_\text{int} I$ describes the behaviour of the battery well in the measured range: the terminal voltage decreases steadily as the current increases.
+
+The line has been fitted between the points, and the points have not been joined into a broken line.
+
+The line has been extended as a dashed line to the vertical axis so that the point $I = 0$, the source voltage, can be seen.
 
 ### b)
 **Given:** the line of part a, from which the points $(0.10\,\text{A};\ 4.48\,\text{V})$ and $(0.60\,\text{A};\ 3.88\,\text{V})$ are read
@@ -100,17 +118,29 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 ### c)
 **Given:** $E = 4.60\,\text{V}$, $R_\text{int} = 1.2\,\Omega$ and the external resistor $R = 8.0\,\Omega$
 **Find:** the power $P$ transferred to the resistor and the fraction of the whole electric power of the battery that is transferred as heat in the internal resistance of the battery
-**Principle:** In the circuit the battery, the internal resistance and the resistor are in series, so the same current flows through all of them. According to the loop rule the source voltage is divided between the internal resistance and the resistor: $E - R_\text{int} I - R I = 0$. Of the electric power, heat is produced both in the resistor and inside the battery, and the whole power of the battery is the sum of these, $E I$.
+**Principle:** In the circuit the battery, the internal resistance and the resistor are in series, so the same current flows through all of them.
+
+According to the loop rule the source voltage is divided between the internal resistance and the resistor: $E - R_\text{int} I - R I = 0$.
+
+Of the electric power, heat is produced both in the resistor and inside the battery, and the whole power of the battery is the sum of these, $E I$.
 **Formula:** $I = \dfrac{E}{R + R_\text{int}}$, $P = R I^2$, $P_\text{int} = R_\text{int} I^2$ and the fraction $\dfrac{P_\text{int}}{P + P_\text{int}} = \dfrac{R_\text{int}}{R + R_\text{int}}$
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $I = \dfrac{4.60\,\text{V}}{8.0\,\Omega + 1.2\,\Omega} = \dfrac{4.60\,\text{V}}{9.2\,\Omega} = 0.50\,\text{A}$, $P = 8.0\,\Omega \cdot (0.50\,\text{A})^2 = 2.0\,\text{W}$ and $P_\text{int} = 1.2\,\Omega \cdot (0.50\,\text{A})^2 = 0.30\,\text{W}$. The fraction is $\dfrac{0.30\,\text{W}}{2.0\,\text{W} + 0.30\,\text{W}} = 0.13$.
 **Answer:** The power transferred to the resistor is $P \approx 2.0\,\text{W}$, and about $13\,\%$ of the electric power of the battery is transferred as heat inside the battery. The result is given to two significant figures like the initial data.
-**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $$\begin{aligned} &E - R_\text{int} I \\ &= 4.60\,\text{V} - 0.60\,\text{V} \end{aligned}$$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$. Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
+**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $$\begin{aligned} &E - R_\text{int} I \\ &= 4.60\,\text{V} - 0.60\,\text{V} \end{aligned}$$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$.
+
+Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
 
 ### d)
 **Find:** the effect of discharging and warming on the result for the source voltage and the internal resistance, the uncertainty of $R_\text{int}$ caused by the scatter, and an improvement of the measurement
 **Principle:** The model $U = E - R_\text{int} I$ assumes that $E$ and $R_\text{int}$ stay constant throughout the measurement. If the battery discharges or warms up, they change during the measurement, and the line of the graph describes a kind of average. The scatter tells about random errors, that is, how much the fitted line could turn.
-**Model answer:** *Systematic error.* The current was increased all the time in the same direction, and for each reading the circuit was connected for about a minute. The discharging of the battery lowers the voltage over time, so the voltages measured later, that is, those corresponding to the largest currents, are too small. Since time and current increase together, the effect of time is mixed with the slope: the line falls too steeply and $R_\text{int}$ comes out too large. Warming also changes $R_\text{int}$ during the measurement (usually it makes it smaller), so the direction of its effect is uncertain. The effect on the source voltage is small, because the smallest current was measured first with a fresh battery.
+**Model answer:** *Systematic error.* The current was increased all the time in the same direction, and for each reading the circuit was connected for about a minute.
+
+The discharging of the battery lowers the voltage over time, so the voltages measured later, that is, those corresponding to the largest currents, are too small.
+
+Since time and current increase together, the effect of time is mixed with the slope: the line falls too steeply and $R_\text{int}$ comes out too large.
+
+Warming also changes $R_\text{int}$ during the measurement (usually it makes it smaller), so the direction of its effect is uncertain. The effect on the source voltage is small, because the smallest current was measured first with a fresh battery.
 
 *The size of the drift.* The new measurement at a current of $0.10\,\text{A}$ gave $4.45\,\text{V}$, that is $0.03\,\text{V}$ less than at the beginning of the series. At worst the last point is therefore about $0.03\,\text{V}$ too low, and the slope is too large by at most $\dfrac{0.03\,\text{V}}{0.50\,\text{A}} = 0.06\,\Omega$.
 
@@ -137,7 +167,11 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 ### a)
 **Given:** source voltage $E = 12.0\,\text{V}$, resistance of the cable $R_\text{c} = 0.80\,\Omega$, lamp A $12\,\text{V},\ 24\,\text{W}$ and lamp B $12\,\text{V},\ 12\,\text{W}$
 **Find:** the current $I$ from the battery bank when both lamps are lit
-**Principle:** A lamp is treated as a constant resistance whose value is obtained from the rated values: at the rated voltage the power is $P = \dfrac{U^2}{R}$. Lamps A and B are in parallel, so they have the same voltage, and the cable is in series with them, so the whole current flows through the cable. Then the total resistance is the sum of the resistance of the cable and the equivalent resistance of the parallel connection.
+**Principle:** A lamp is treated as a constant resistance whose value is obtained from the rated values: at the rated voltage the power is $P = \dfrac{U^2}{R}$.
+
+Lamps A and B are in parallel, so they have the same voltage, and the cable is in series with them, so the whole current flows through the cable.
+
+Then the total resistance is the sum of the resistance of the cable and the equivalent resistance of the parallel connection.
 **Formula:** $R_\text{A} = \dfrac{U_\text{n}^2}{P_\text{A}}$, $R_\text{B} = \dfrac{U_\text{n}^2}{P_\text{B}}$, $\dfrac{1}{R_\text{par}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}}$, $R = R_\text{c} + R_\text{par}$ and $I = \dfrac{E}{R}$
 **Conversions:** Not needed: $1\,\text{V}^2/\text{W} = 1\,\Omega$.
 **Substitution:** $R_\text{A} = \dfrac{(12\,\text{V})^2}{24\,\text{W}} = 6.0\,\Omega$ and $R_\text{B} = \dfrac{(12\,\text{V})^2}{12\,\text{W}} = 12\,\Omega$. Parallel connection: $\dfrac{1}{R_\text{par}} = \dfrac{1}{6.0\,\Omega} + \dfrac{1}{12\,\Omega} = \dfrac{3}{12\,\Omega}$, so $R_\text{par} = 4.0\,\Omega$. The total resistance is $R = 0.80\,\Omega + 4.0\,\Omega = 4.8\,\Omega$ and the current $I = \dfrac{12.0\,\text{V}}{4.8\,\Omega} = 2.5\,\text{A}$.
@@ -152,7 +186,9 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Conversions:** Not needed.
 **Substitution:** $$\begin{aligned} U_\text{L} &= 12.0\,\text{V} - 0.80\,\Omega \cdot 2.5\,\text{A} \\ &= 12.0\,\text{V} - 2.0\,\text{V} \\ &= 10.0\,\text{V} \end{aligned}$$ and $P_\text{A} = \dfrac{(10.0\,\text{V})^2}{6.0\,\Omega} = 16.7\,\text{W}$
 **Answer:** $P_\text{A} \approx 17\,\text{W}$, about $70\,\%$ of the rated $24\,\text{W}$, two significant figures as in the initial data ($0.80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
-**Reasonableness:** The lamp shines dimmer than at the rated voltage, because its voltage is only $10.0\,\text{V}$. Check: the power of lamp B is $\dfrac{(10.0\,\text{V})^2}{12\,\Omega} = 8.3\,\text{W}$ and the heat transferred to the cable is $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$. The sum $$\begin{aligned} &16.7\,\text{W} + 8.3\,\text{W} + 5.0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ is equal to the power of the battery bank, $12.0\,\text{V} \cdot 2.5\,\text{A} = 30\,\text{W}$.
+**Reasonableness:** The lamp shines dimmer than at the rated voltage, because its voltage is only $10.0\,\text{V}$. Check: the power of lamp B is $\dfrac{(10.0\,\text{V})^2}{12\,\Omega} = 8.3\,\text{W}$ and the heat transferred to the cable is $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$.
+
+The sum $$\begin{aligned} &16.7\,\text{W} + 8.3\,\text{W} + 5.0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ is equal to the power of the battery bank, $12.0\,\text{V} \cdot 2.5\,\text{A} = 30\,\text{W}$.
 
 ### c)
 **Find:** how the brightness of lamp A, the current from the battery bank and the warming of the cable change when lamp B is removed from the circuit, and a check of the power of lamp A by calculation
@@ -172,8 +208,16 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Formula:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{par}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ and $I = \dfrac{E}{R_\text{c} + R_\text{par}}$
 **Conversions:** Not needed.
 **Substitution:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4.0\,\Omega$ and $\dfrac{1}{R_\text{par}} = \dfrac{1}{6.0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4.0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2.0\,\Omega}$, so $R_\text{par} = 2.0\,\Omega$. The current is $I = \dfrac{12.0\,\text{V}}{0.80\,\Omega + 2.0\,\Omega} = \dfrac{12.0\,\text{V}}{2.8\,\Omega} = 4.3\,\text{A}$.
-**Answer:** $I \approx 4.3\,\text{A}$. The current exceeds both the rated current of the fuse, $3.15\,\text{A}$, and the permitted current of the cable, $4.0\,\text{A}$, so the fuse will probably blow if the overcurrent continues and break the circuit (the actual operating time depends on the type of the fuse, so this is a simplification). The voltage of the lamps is $R_\text{par} I = 2.0\,\Omega \cdot 4.3\,\text{A} \approx 8.6\,\text{V}$, so they shine dimmer than before. The fuse is chosen to protect the weakest part of the circuit, the cable: its rated current is lower than the permitted current of the cable, so that the cable does not warm up dangerously before the circuit is broken.
-**Reasonableness:** The third lamp reduces the resistance of the parallel connection from $4.0\,\Omega$ to $2.0\,\Omega$, so the current must increase from $2.5\,\text{A}$. Without a fuse, $0.80\,\Omega \cdot (4.3\,\text{A})^2 \approx 15\,\text{W}$ would be transferred to the cable as heat, almost three times the earlier $5.0\,\text{W}$. The resistances of the lamps were calculated from the rated values, so the result is an estimate.
+**Answer:** $I \approx 4.3\,\text{A}$.
+
+The current exceeds both the rated current of the fuse, $3.15\,\text{A}$, and the permitted current of the cable, $4.0\,\text{A}$, so the fuse will probably blow if the overcurrent continues and break the circuit (the actual operating time depends on the type of the fuse, so this is a simplification).
+
+The voltage of the lamps is $R_\text{par} I = 2.0\,\Omega \cdot 4.3\,\text{A} \approx 8.6\,\text{V}$, so they shine dimmer than before.
+
+The fuse is chosen to protect the weakest part of the circuit, the cable: its rated current is lower than the permitted current of the cable, so that the cable does not warm up dangerously before the circuit is broken.
+**Reasonableness:** The third lamp reduces the resistance of the parallel connection from $4.0\,\Omega$ to $2.0\,\Omega$, so the current must increase from $2.5\,\text{A}$. Without a fuse, $0.80\,\Omega \cdot (4.3\,\text{A})^2 \approx 15\,\text{W}$ would be transferred to the cable as heat, almost three times the earlier $5.0\,\text{W}$.
+
+The resistances of the lamps were calculated from the rated values, so the result is an estimate.
 
 ### Hyväksytään myös
 - Part a may be calculated from the rated currents of the lamps $I = \dfrac{P}{U}$ and the resistances $R = \dfrac{U}{I}$, as long as the results are the same: $2.0\,\text{A}$ and $1.0\,\text{A}$, $6.0\,\Omega$ and $12\,\Omega$.
@@ -192,7 +236,11 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 ### a)
 **Given:** potential difference $U = 60\,\text{kV} = 6.0 \cdot 10^{4}\,\text{V}$, distance $d = 20\,\text{cm}$, charge $q = 6.0 \cdot 10^{-13}\,\text{C}$ and mass $m = 4.0 \cdot 10^{-10}\,\text{kg}$
 **Find:** the electric force $F$ acting on the droplet, the significance of the weight and the possibility of sparking
-**Principle:** Between the plates there is a uniform electric field whose strength is the potential difference divided by the distance. A force in the direction of the field acts on the positively charged droplet, so the droplet moves towards the lower potential, that is, the grounded workpiece. The significance of the weight is assessed by comparing it with the electric force, and sparking by comparing the strength of the field with the dielectric strength of air.
+**Principle:** Between the plates there is a uniform electric field whose strength is the potential difference divided by the distance.
+
+A force in the direction of the field acts on the positively charged droplet, so the droplet moves towards the lower potential, that is, the grounded workpiece.
+
+The significance of the weight is assessed by comparing it with the electric force, and sparking by comparing the strength of the field with the dielectric strength of air.
 **Formula:** $E = \dfrac{U}{d}$ and $F = qE$
 **Conversions:** $20\,\text{cm} = 0.20\,\text{m}$ and $60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6.0 \cdot 10^{4}\,\text{V}$.
 **Substitution:** $E = \dfrac{6.0 \cdot 10^{4}\,\text{V}}{0.20\,\text{m}} = 3.0 \cdot 10^{5}\,\text{V/m}$ and $F = 6.0 \cdot 10^{-13}\,\text{C} \cdot 3.0 \cdot 10^{5}\,\text{V/m} = 1.8 \cdot 10^{-7}\,\text{N}$
@@ -202,16 +250,24 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 ### b)
 **Given:** $q = 6.0 \cdot 10^{-13}\,\text{C}$, $U = 6.0 \cdot 10^{4}\,\text{V}$, $m = 4.0 \cdot 10^{-10}\,\text{kg}$ and the droplet leaves from rest
 **Find:** the speed $v$ of the droplet when it hits the workpiece, when air resistance is not taken into account
-**Principle:** The work done by the electric field on the droplet is the charge times the potential difference, $W = qU$, and it increases the kinetic energy of the droplet. Weight and air resistance are left out, so there are no other forces. In this way it is enough to know the potential difference, and the strength of the field or the acceleration is not needed.
+**Principle:** The work done by the electric field on the droplet is the charge times the potential difference, $W = qU$, and it increases the kinetic energy of the droplet.
+
+Weight and air resistance are left out, so there are no other forces. In this way it is enough to know the potential difference, and the strength of the field or the acceleration is not needed.
 **Formula:** $q U = \dfrac{1}{2} m v^2$, so $v = \sqrt{\dfrac{2 q U}{m}}$
 **Conversions:** Not needed, all quantities are in base units; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Substitution:** $$\begin{aligned} qU &= 6.0 \cdot 10^{-13}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} \\ &= 3.6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ and $v = \sqrt{\dfrac{2 \cdot 3.6 \cdot 10^{-8}\,\text{J}}{4.0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13.4\,\text{m/s}$
 **Answer:** $v \approx 13\,\text{m/s}$, two significant figures as in the initial data.
-**Reasonableness:** The acceleration is $\dfrac{F}{m} = \dfrac{1.8 \cdot 10^{-7}\,\text{N}}{4.0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, so over a distance of $0.20\,\text{m}$ the speed would be $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0.20\,\text{m}} \\ &= 13.4\,\text{m/s} \end{aligned}$$, which confirms the result. The work done by the weight over the whole distance would be only $7.8 \cdot 10^{-10}\,\text{J}$, about $2\,\%$ of the work done by the electric field.
+**Reasonableness:** The acceleration is $\dfrac{F}{m} = \dfrac{1.8 \cdot 10^{-7}\,\text{N}}{4.0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, so over a distance of $0.20\,\text{m}$ the speed would be $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0.20\,\text{m}} \\ &= 13.4\,\text{m/s} \end{aligned}$$, which confirms the result.
+
+The work done by the weight over the whole distance would be only $7.8 \cdot 10^{-10}\,\text{J}$, about $2\,\%$ of the work done by the electric field.
 
 ### c)
 **Find:** why the measured impact speed $5.0\,\text{m/s}$ is much smaller than the result of part b and where the work done by the electric field goes
-**Principle:** The model of part b left out air resistance. Air resistance acts against the direction of motion of the droplet, and the work it does is negative. When the speed of the droplet increases, air resistance increases, and the droplet moves at a speed at which air resistance and the electric force are approximately equal. According to the conservation of energy, the work done by the electric field is not lost but goes elsewhere.
+**Principle:** The model of part b left out air resistance. Air resistance acts against the direction of motion of the droplet, and the work it does is negative.
+
+When the speed of the droplet increases, air resistance increases, and the droplet moves at a speed at which air resistance and the electric force are approximately equal.
+
+According to the conservation of energy, the work done by the electric field is not lost but goes elsewhere.
 **Model answer:** *Explanation.* The speed $13\,\text{m/s}$ of part b would be possible only in a vacuum. In air, air resistance limits the speed to a much smaller value, so the result of part b is the greatest possible speed of the droplet, an upper limit.
 
 *Calculation.* The actual kinetic energy of the droplet is $$\begin{aligned} \dfrac{1}{2} m v^2 &= \dfrac{1}{2} \cdot 4.0 \cdot 10^{-10}\,\text{kg} \\ &\cdot (5.0\,\text{m/s})^2 \\ &= 5.0 \cdot 10^{-9}\,\text{J} \end{aligned}$$. The work done by the electric field is $3.6 \cdot 10^{-8}\,\text{J}$, so only $\dfrac{5.0 \cdot 10^{-9}\,\text{J}}{3.6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$ ends up as kinetic energy.
@@ -228,7 +284,11 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Conversions:** $1.0\,\text{mm} = 1.0 \cdot 10^{-3}\,\text{m}$
 **Substitution:** $$\begin{aligned} F &= 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6.0 \cdot 10^{-13}\,\text{C})^2}{(1.0 \cdot 10^{-3}\,\text{m})^2} \\ &= 8.988 \cdot 10^{9} \cdot \dfrac{3.6 \cdot 10^{-25}}{1.0 \cdot 10^{-6}}\,\text{N} \\ &= 3.2 \cdot 10^{-9}\,\text{N} \end{aligned}$$
 **Answer:** $F \approx 3.2 \cdot 10^{-9}\,\text{N}$, repulsive, two significant figures as in the initial data.
-**Reasonableness:** The force is about $1.8\,\%$ of the force of the field, $1.8 \cdot 10^{-7}\,\text{N}$, but $0.8$ times the weight of the droplet, $3.9 \cdot 10^{-9}\,\text{N}$. The repulsive force is therefore small compared with the force of the electric field, so the droplets still move towards the workpiece, but the repulsion spreads the cloud of droplets sideways. This is part of the reason why the spray widens after the nozzle.
+**Reasonableness:** The force is about $1.8\,\%$ of the force of the field, $1.8 \cdot 10^{-7}\,\text{N}$, but $0.8$ times the weight of the droplet, $3.9 \cdot 10^{-9}\,\text{N}$.
+
+The repulsive force is therefore small compared with the force of the electric field, so the droplets still move towards the workpiece, but the repulsion spreads the cloud of droplets sideways.
+
+This is part of the reason why the spray widens after the nozzle.
 
 ### Hyväksytään myös
 - In part a the strength of the field may be given in the unit $\text{kV/m}$: $300\,\text{kV/m}$.
@@ -275,14 +335,20 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 
 ### d)
 **Find:** why the capacitor can be dangerous after the battery is removed, how large a current would by calculation flow through the body, and why servicing belongs to a professional
-**Principle:** The plates of a capacitor carry the charges $+Q$ and $-Q$, and the energy is stored in the electric field between the plates. The voltage does not disappear when the battery that charges it is removed. The danger depends on the stored energy and the voltage, not on the battery. The size of the current through the body is obtained from the voltage and the resistance.
+**Principle:** The plates of a capacitor carry the charges $+Q$ and $-Q$, and the energy is stored in the electric field between the plates. The voltage does not disappear when the battery that charges it is removed.
+
+The danger depends on the stored energy and the voltage, not on the battery. The size of the current through the body is obtained from the voltage and the resistance.
 **Model answer:** *Danger.* After the battery is removed, the capacitor is still at $300\,\text{V}$ and holds about $15\,\text{J}$. The device does not get its voltage from the small battery but from the capacitor, which can discharge through the body of the repairer.
 
-*Current.* Let us calculate an idealised estimate in an imagined contact situation. If the resistance of the body is $1.0\,\text{k}\Omega$, the initial current would be $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1.0 \cdot 10^{3}\,\Omega} = 0.30\,\text{A}$. This is many times the few tens of milliamperes that can already be dangerous. The current decreases as the capacitor discharges, but the initial current is enough for a dangerous electric shock.
+*Current.* Let us calculate an idealised estimate in an imagined contact situation. If the resistance of the body is $1.0\,\text{k}\Omega$, the initial current would be $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1.0 \cdot 10^{3}\,\Omega} = 0.30\,\text{A}$. This is many times the few tens of milliamperes that can already be dangerous.
+
+The current decreases as the capacitor discharges, but the initial current is enough for a dangerous electric shock.
 
 *Servicing belongs to a professional.* Safe servicing requires that the stored energy of the capacitor is removed in a controlled way and the absence of voltage is reliably verified before the internal parts of the device are touched. This requires familiarity with the device and the right equipment and procedures, so servicing must not be attempted without appropriate qualifications.
 
-*Conclusion.* The device must not be opened right away. The danger comes from the energy and voltage stored in the capacitor, not from the size of the battery. The calculated current is an idealised order-of-magnitude estimate and not a description of a real electric shock: the resistance of the body varies, for example with the moisture of the skin, and the current decreases as the capacitor discharges.
+*Conclusion.* The device must not be opened right away. The danger comes from the energy and voltage stored in the capacitor, not from the size of the battery.
+
+The calculated current is an idealised order-of-magnitude estimate and not a description of a real electric shock: the resistance of the body varies, for example with the moisture of the skin, and the current decreases as the capacitor discharges.
 
 ### Hyväksytään myös
 - In part a the energy may also be calculated with the formula $E = \dfrac{1}{2} Q U$, where $Q = C U = 0.099\,\text{C}$.

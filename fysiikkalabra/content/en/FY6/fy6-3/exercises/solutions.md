@@ -248,7 +248,9 @@ Measuring arrangement: the ammeter is connected in series with the wire and the 
 
 The resistances are $R_{20} = 1.00\,\text{V} : 0.500\,\text{A} = 2.000\,\Omega$, $R_{40} = 2.262\,\Omega$, $R_{60} = 2.513\,\Omega$ and $R_{80} = 1.00\,\text{V} : 0.362\,\text{A} = 2.762\,\Omega$, so the increase is $\dfrac{2.762\,\Omega - 2.000\,\Omega}{2.000\,\Omega} \cdot 100\,\% = 38.1\,\%$.
 
-Sources of error: (1) the wire also heats up from the current itself, so its temperature may be higher than that of the water; the current is switched on only for the moment of measurement and the voltage is kept small. (2) The wire has not had time to settle to the temperature of the water, or the thermometer is not at the wire; at each temperature we wait until the reading of the thermometer no longer changes, and stir the water.
+Sources of error: (1) the wire also heats up from the current itself, so its temperature may be higher than that of the water; the current is switched on only for the moment of measurement and the voltage is kept small.
+
+(2) The wire has not had time to settle to the temperature of the water, or the thermometer is not at the wire; at each temperature we wait until the reading of the thermometer no longer changes, and stir the water.
 **Answer:** The resistance has increased by about $38\,\%$ (calculated $38.1\,\%$), two significant figures, because the increase is the difference of two almost equal resistances relative to the value $R_{20}$. The result supports the conclusion that the resistance of a metal wire increases as the temperature rises.
 **Reasonableness:** The current decreases as the temperature rises ($0.500\,\text{A} \to 0.362\,\text{A}$) and the voltage is constant, so the resistance must increase: $0.500\,\text{A} : 0.362\,\text{A} = 1.38$.
 
