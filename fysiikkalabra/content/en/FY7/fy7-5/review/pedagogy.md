@@ -1,14 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1513035b0b2a06a9
-
+CONTENT-HASH: 942d55118f8c060b
 ## Blocking
-
-(none)
-
 ## Polish
-
-none.
-
 ## Checked
-
-batch delta review (round 2): The retrieval (force on an electron in the hub dynamo field) belongs to the dynamo and retrieves the Lorentz force; Ennusta 1 (coil in a field) is not disclosed. The feedback now does not reveal that a rod at rest has no effect.
+batch delta review (round 3): Pohdinta retrieval option 1 now gives only the value and the perpendicularity, so the formula no longer sits in the correct choice and appears only in feedback; the wrong option's feedback chain is split into short rows, first row symbolic, units kept, same numbers; still consistent with the task and its other feedback.

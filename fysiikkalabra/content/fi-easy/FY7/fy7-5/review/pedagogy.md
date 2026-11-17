@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d81546d145d9486f
+CONTENT-HASH: fa506db425667c03
 ## Blocking
-- None.
 ## Polish
-- None.
 ## Checked
-batch delta review: Feedback trim and 'Voima' option wording are clear; retrieval (F=|q|vB) still prepares the rod-in-field phenomenon, no Ennuste answer disclosed.
+batch delta review (round 3): Pohdinta retrieval option 1 now gives only the value and the perpendicularity, so the formula no longer sits in the correct choice and appears only in feedback; the wrong option's feedback chain is split into short rows, first row symbolic, units kept, same numbers; still consistent with the task and its other feedback.
