@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 16561c99ab4ddafa
+CONTENT-HASH: e550e957002f8c9e
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 16561c99ab4ddafa
 - none
 
 ## Checked
-batch delta review: opened fy1-7-example-390-1 (stages 1-6); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.
+- batch delta review (en, fy1-7): changed unit-conversion recap task read in full ($6.4\cdot10^{-5}\,\text{m}^3$, aligned chain, English); layout judged from the herata-390 pattern (en fy1-1/fy1-6 opened); figures unchanged.

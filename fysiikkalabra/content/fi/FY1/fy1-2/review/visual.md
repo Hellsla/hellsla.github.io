@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e57f5f06a69c3b30
+CONTENT-HASH: 833965bdf6c81a22
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: e57f5f06a69c3b30
 - none
 
 ## Checked
-- Opened fy1-2-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.
+- batch delta review: opened fy1-2-stage-herata-390 (Pohdinta with the changed Kertaa item closed box); feedback text read in the diff; no clipping, math renders.

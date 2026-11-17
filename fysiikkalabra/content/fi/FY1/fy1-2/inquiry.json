@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: kymmenpotenssit",
-      "prompt": "Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* koot vaihtelivat kymmenpotenssi kerrallaan. Kuinka moninkertainen on pituus $10^{9}\\,\\text{m}$ pituuteen $10^{6}\\,\\text{m}$ verrattuna?",
+      "prompt": "Voyager 2:n etäisyys Auringosta on suuruusluokkaa $10^{13}\\,\\text{m}$. Mikä on etäisyyden suuruusluokka kilometreinä, kun $1\\,\\text{km} = 10^{3}\\,\\text{m}$?",
       "choices": [
         {
-          "text": "Kolminkertainen, koska eksponentti kasvaa kolmella.",
-          "feedback": "Eksponentin kasvu kolmella ei tarkoita kolminkertaista: jokainen eksponentin askel kertoo luvun kymmenellä. Suhde on $10^{9} : 10^{6} = 10^{9-6} = 10^{3}$."
+          "text": "$10^{16}\\,\\text{km}$",
+          "feedback": "Eksponentit lasketaan yhteen vain kertolaskussa. Kilometri on metriä suurempi yksikkö, joten lukuarvo pienenee: $10^{13} : 10^{3} = 10^{10}$."
         },
         {
-          "text": "Tuhatkertainen.",
-          "correct": true,
-          "feedback": "Oikein. Potenssien jakolaskussa eksponentit vähennetään: $10^{9} : 10^{6} = 10^{3} = 1000$. Tämä sama laskutapa on etuliitteiden takana: $1\\,\\text{km} = 10^{3}\\,\\text{m}$."
+          "text": "$10^{10}\\,\\text{km}$",
+          "feedback": "Oikein. Potenssien jakolaskussa eksponentit vähennetään: $10^{13} : 10^{3} = 10^{13-3} = 10^{10}$. Sama laskutapa on etuliitteiden takana: $1\\,\\text{km} = 10^{3}\\,\\text{m}$.",
+          "correct": true
         },
         {
-          "text": "Kolmetuhatkertainen.",
-          "feedback": "Eksponenttien erotus on 3, mutta kolme ei ole kerroin vaan kymmenen eksponentti: kerroin on $10^{3} = 1000$, ei $3\\cdot1000$."
+          "text": "$10^{13}\\,\\text{km}$",
+          "feedback": "Yksikön vaihto muuttaa lukuarvoa: kilometri on tuhat kertaa metriä suurempi, joten saman matkan lukuarvo on tuhat kertaa pienempi eikä sama."
         },
         {
-          "text": "Miljoonakertainen.",
-          "feedback": "Miljoona on $10^{6}$, eli pienemmän pituuden lukuarvo metreinä, ei pituuksien suhde. Suhteessa eksponentit vähennetään: $10^{9-6} = 10^{3}$, ei $10^{6}$."
+          "text": "$10^{4}\\,\\text{km}$, koska $13 : 3 \\approx 4$",
+          "feedback": "Eksponentteja ei jaeta vaan vähennetään: jakaminen luvulla $10^{3}$ pienentää eksponenttia kolmella, $13 - 3 = 10$."
         }
       ],
       "optional": true

@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8d3fea90beacd643
+CONTENT-HASH: 833965bdf6c81a22
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- fy1-2/lesson.md (Yksikkömuunnokset, 390 px) — earlier note stands: the display line "1 AU = 149 597 870,7 km ≈ 1,496 · 10^8 km" is clipped on a phone; not part of this diff.
+- inquiry.json kertaus — correct-option feedback "Potenssien jakolaskussa eksponentit vähennetään: $10^{13}:10^{3}=10^{13-3}$" teaches exactly the step Ennusta 2 tests ($10^{9}$ vs $10^{7}$, ratio $10^{2}$). It is gated on commitment and the old item was more revealing (same "eksponentti kasvaa kolmella" distractor), but consider "eksponentit vähennetään" without the written-out rule, or accept as prerequisite retrieval.
+- The item gives Voyager's distance ($10^{10}\,\text{km}$); Ennusta 1 does not need it, so no answer is disclosed. Fine.
 
 ## Checked
-- "Koko tai etäisyys" fits the table: the rows with an AU, valovuosi or galaxy distance are distances, the atom and nucleus rows are sizes.
-- Only the heading changed; no value, unit or row altered; the 390 px stacked-card layout is unaffected.
-- The introduction line and following sentence still read naturally.
+batch delta review: prompt context (Voyager, m to km) is authentic and clear; answer correct; all four distractors are real errors (adding exponents, unchanged value, dividing exponents) with repairing feedback; Ennusta answers (about a day; 3300 s) are not stated.

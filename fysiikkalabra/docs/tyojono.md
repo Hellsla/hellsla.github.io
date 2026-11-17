@@ -67,8 +67,8 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
-lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678); tila: `python scripts/exercise_bank.py FY8`.
-Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-11…fy8-16 ja FY9.
+lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682); tila: `python scripts/exercise_bank.py FY8`.
+Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-12…fy8-16 ja FY9.
 Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä
 versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
@@ -101,9 +101,9 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
-Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`).
-FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; claude/fy2-lapikaynti, PR #676).
-Jäljellä FY1, FY3, FY6–FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
+Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`).
+FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; PR #676).
+Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit), FY3, FY6 (0f-PR #675), FY7, FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
 ## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
@@ -111,7 +111,7 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
-`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2, fy8-11), fi, fi-easy, en:
+`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)

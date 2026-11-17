@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4182b91f542a99eb
+CONTENT-HASH: aea6f326f3889386
 
 ## Blocking
-- none
 
 ## Polish
-1. lesson.md, Kaava section, first sentence: the prose defines plain acceleration as Δv/Δt while the row is named average acceleration (keskikiihtyvyys); one word ("keskikiihtyvyys" / "average acceleration") in that sentence would match the row. Not blocking: the constant-acceleration condition for Δv = aΔt is stated.
+- The 0,93 m/s distractor: t/s has the unit s/m, not m/s; the feedback could say so as the 1,8 option does for m·s.
 
 ## Checked
-a = Δv/Δt and Δv = aΔt correct and MAFY's; from rest Δv = v, Δt = t gives v = gt; symbols a, Δv, Δt defined with units; agrees with the slope Δv/Δt in the graph text, inquiry solutions and feedback; fi, fi-easy, en say the same; no number changed (diff); answers.py and lesson-answers.py output identical to 3ec8cc24.
+batch delta review: Moon hammer 1,4 m in 1,3 s agrees with g = 1,62 m/s² (t = √(2h/g) = 1,31 s); v = s/t = 1,08 → 1,1 m/s, recomputed; mistakes s·t = 1,82, t/s = 0,93, s+t = 2,7 match their feedback; average-speed caveat for changing speed stated; lesson-answers.py prints 1,0769.
