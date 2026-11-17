@@ -13,4 +13,6 @@ a["inq-check2"] = (108 / 3.6) / g                    # 108 km/h = 30,0 m/s; t = 
 a["inq-example"] = g * 1.5                           # worked example: v = g t = 9,81 · 1,5 = 14,715 m/s -> 15 m/s
 a["inq-example-kmh"] = g * 1.5 * 3.6                 # 14,715 m/s · 3,6 = 52,97 km/h -> 53 km/h
 a["exit-ratio"] = g / 1.62                          # exit ticket: v ∝ g at the same t, ratio 9,81 / 1,62 = 6,056 -> 6,06 (three figures)
+# kertaus: the hammer falls 1,4 m in 1,3 s on the Moon; mean speed v = s / t
+a["kertaus-v"] = 1.4 / 1.3                          # 1,077 m/s -> 1,1 m/s (mistakes: s t = 1,82, t / s = 0,93, s + t = 2,7)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Revise: powers of ten",
-      "prompt": "In the chapter *Physics as a science and the scales of the universe*, sizes varied one power of ten at a time. How many times greater is the length $10^{9}\\,\\text{m}$ than the length $10^{6}\\,\\text{m}$?",
+      "prompt": "The distance of Voyager 2 from the Sun is of the order of $10^{13}\\,\\text{m}$. What is the order of magnitude of the distance in kilometres, when $1\\,\\text{km} = 10^{3}\\,\\text{m}$?",
       "choices": [
         {
-          "text": "Three times greater, because the exponent grows by three.",
-          "feedback": "An exponent growing by three does not mean three times greater: every step of the exponent multiplies the number by ten. The ratio is $10^{9} : 10^{6} = 10^{9-6} = 10^{3}$."
+          "text": "$10^{16}\\,\\text{km}$",
+          "feedback": "Exponents are added only in multiplication. A kilometre is a larger unit than a metre, so the numerical value gets smaller: $10^{13} : 10^{3} = 10^{10}$."
         },
         {
-          "text": "A thousand times greater.",
-          "correct": true,
-          "feedback": "Correct. When powers are divided, the exponents are subtracted: $10^{9} : 10^{6} = 10^{3} = 1000$. This same way of calculating is behind the prefixes: $1\\,\\text{km} = 10^{3}\\,\\text{m}$."
+          "text": "$10^{10}\\,\\text{km}$",
+          "feedback": "Correct. When powers are divided, the exponents are subtracted: $10^{13} : 10^{3} = 10^{13-3} = 10^{10}$. This same way of calculating is behind the prefixes: $1\\,\\text{km} = 10^{3}\\,\\text{m}$.",
+          "correct": true
         },
         {
-          "text": "Three thousand times greater.",
-          "feedback": "The difference of the exponents is 3, but three is not the factor, it is the exponent of ten: the factor is $10^{3} = 1000$, not $3\\cdot1000$."
+          "text": "$10^{13}\\,\\text{km}$",
+          "feedback": "Changing the unit changes the numerical value: a kilometre is a thousand times larger than a metre, so the numerical value of the same distance is a thousand times smaller, not the same."
         },
         {
-          "text": "A million times greater.",
-          "feedback": "A million is $10^{6}$, the numerical value of the shorter length in metres, not the ratio of the lengths. In the ratio the exponents are subtracted: $10^{9-6} = 10^{3}$, not $10^{6}$."
+          "text": "$10^{4}\\,\\text{km}$, because $13 : 3 \\approx 4$",
+          "feedback": "Exponents are not divided but subtracted: dividing by $10^{3}$ lowers the exponent by three, $13 - 3 = 10$."
         }
       ],
       "optional": true

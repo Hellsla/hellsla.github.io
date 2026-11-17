@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 44b8f51fc02451ff
+CONTENT-HASH: db3c0de40d1f1fa7
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The Voyager 2 context primes Ennuste 1 but gives no travel time or ratio; no Ennusta answer disclosed. Distractors (add, no change, divide exponents) are real misconceptions with repairing feedback.
 
 ## Checked
-- "Size or distance" is a more accurate heading: the table mixes sizes (nucleus, atom) with distances (astronomical units, light years), so the heading fits every row.
-- Column names still parallel the other headings (Structure, Unit, Value of the unit); the lead-in sentence and following example read unchanged.
-- No number, unit or symbol changed; nothing else touched.
+batch delta review: Kertaa task vs Ennusta tasks (no disclosure), distractor feedback.

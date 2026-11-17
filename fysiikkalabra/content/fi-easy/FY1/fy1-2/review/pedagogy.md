@@ -1,17 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 14d7fe4a096ab481
+CONTENT-HASH: 4e8a63f52d7e0aa7
 
 ## Blocking
 
-(none)
 
 ## Polish
-
-- (none)
+- The Voyager 2 context primes Ennuste 1 but gives no travel time or ratio; no Ennusta answer disclosed. Distractors (add, no change, divide exponents) are real misconceptions with repairing feedback.
 
 ## Checked
-
-- Diff only: column heading "Koko" → "Koko tai etäisyys".
-- It fits the rows: Atomiydin, Atomi, Punasolu, Maa are sizes; "Planeettojen radat" and "Tähtien väliset matkat" are distances, so the old heading was misleading.
-- Numbers, units and LaTeX in the table unchanged; no other text touched.
-- Hash unchanged at start and end.
+batch delta review: Kertaa task vs Ennusta tasks (no disclosure), distractor feedback.

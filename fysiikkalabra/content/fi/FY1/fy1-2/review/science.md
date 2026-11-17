@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8d3fea90beacd643
+CONTENT-HASH: 833965bdf6c81a22
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Diff (lesson.md:481): the column heading "Koko" → "Koko tai etäisyys". This fixes my earlier Polish point: the rows "Planeettojen radat" (about 10¹² m) and "Tähtien välimatkat" (10¹⁶ m and more) are distances, and the other four rows are sizes. Every value and unit equation in the table is unchanged and still right.
-- The heading agrees with the paragraph after it, which gives the sizes of the H atom (0,11 nm) and the proton (1,7 fm) and says that AU and the light-year are defined in metres.
-- No other line differs from the version I passed (3b2542ea34316c42), apart from teacher-approved figures.
-- The hash was the same at the start and at the end.
+- batch delta review: Voyager 2 at about 143 AU = $2{,}1\cdot10^{13}\,\text{m}$, so order of magnitude $10^{13}\,\text{m}$ is right. Recomputed $10^{13} : 10^{3} = 10^{10}$ km. Exactly one option is correct. The distractor feedback is right: exponents add only when multiplying, the numerical value falls when the unit gets larger, exponents are subtracted, not divided. Approved figures, md-paragraphs and reflow not judged. Hash the same at the start and the end.
