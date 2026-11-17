@@ -175,6 +175,41 @@ def levels():
     return f.svg()
 
 
+def levels_n4():
+    f = Fig("fy85-levels-n4", 410, "Vetyatomin energiatasot mittakaavassa kuorilta n = 1, 2, 3 ja 4 ja niiden orbitaalit laatikoina. "
+            "Energia-akselin arvot ovat 0, −0,850 eV, −1,51 eV, −3,40 eV ja −13,6 eV. Kuorella n = 4 on alikuoret 4s, 4p, 4d ja 4f, "
+            "kuorella n = 3 alikuoret 3s, 3p ja 3d, kuorella n = 2 alikuoret 2s ja 2p ja kuorella n = 1 alikuori 1s. Ylimpänä "
+            "katkoviiva E = 0. Nuoli näyttää elektronin siirtymän 4s-orbitaalilta 2p-orbitaalille, ja siirtymässä syntyy fotoni.")
+    Y = lambda E: 40 + (-E) / 13.6 * 340
+    ax = 104
+    f.arrow(ax, Y(-13.6) + 14, ax, 18, INK, 2.5, 13)
+    f.tex(ax + 14, 22, r"E\ (\text{eV})", "start", w=90)
+    f.line(ax, Y(0), 590, Y(0), MUTED, 1.5, "6 5")
+    for E, lab, dy in ((0, "0", -12), (-0.85, r"-0{,}850", 2), (-1.511, r"-1{,}51", 14), (-3.40, r"-3{,}40", 0), (-13.6, r"-13{,}6", 0)):
+        f.line(ax - 6, Y(E), ax, Y(E), INK, 2)
+        f.tex(ax - 10, Y(E) + dy, lab, "end", w=80)
+    bw, gap = 16, 3
+    xs = {"s": 150, "p": 230, "d": 322, "f": 454}
+    cnt = {"s": 1, "p": 3, "d": 5, "f": 7}
+    boxes = {}
+    for nq, E in ((1, -13.6), (2, -3.40), (3, -1.511), (4, -0.85)):
+        y = Y(E)
+        for sub in "spdf"[:nq]:
+            if sub == "f" and nq < 4:
+                continue
+            x = xs[sub]
+            f.tex(x - 4, y + {4: -9, 3: 9}.get(nq, 0), r"\text{" + f"{nq}{sub}" + "}", "end", w=34)
+            for j in range(cnt[sub]):
+                bx = x + j * (bw + gap)
+                f.rect(bx, y - 6, bw, 12, WHITE, INK, 2, 2)
+                boxes[(nq, sub, j)] = (bx + bw / 2, y)
+    xa, ya = boxes[(4, "s", 0)]; xb, yb = boxes[(2, "p", 0)]
+    f.arrow(xa + 4, ya + 8, xb - 4, yb - 9, INK, 2.5, 11)
+    wavy(f, xb + 10, yb + 14, 540, 262, HOT, waves=5, amp=7)
+    f.tex(470, 196, "hf", "start", HOT, w=50)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: an open chemistry book on a desk, one page with a planet-like orbit picture,
     the other with an electron cloud and the lobes of a p orbital; a desk lamp lights it."""
@@ -230,11 +265,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "string": string_modes, "nodes": orbital_nodes, "cloud": cloud_panels, "levels": levels}
+FIGURES = {"hero": hero, "string": string_modes, "nodes": orbital_nodes, "cloud": cloud_panels, "levels": levels, "levels-n4": levels_n4}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "string": "safe: three standing waves of a string with 0, 1 and 2 nodes",
     "nodes": "safe: cross-sections of 1s, 2s and 2p with their nodes",
     "cloud": "reveals: 90 % of the hits lie inside the 1s boundary of radius 0,14 nm",
+    "levels-n4": "safe: levels n = 1-4 with energies and orbital boxes, an arrow 4s -> 2p, no wavelength",
     "levels": "reveals: the 3d -> 2p photon is 656 nm; orbitals per shell 1, 4, 9",
 }
