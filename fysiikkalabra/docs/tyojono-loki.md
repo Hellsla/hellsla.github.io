@@ -658,3 +658,8 @@ SCOPE-rivi ja kielen raportissa suomenkielisen lähteen hash hylätään ennen h
 (N, kg, min, MeV, vrk) pysyvät tiukkoina, jotta yksikön muutos (vrk → s) näkyy yhä; luvut, operaattorit ja symbolit tiukkoina. (b) Uuden tehtävän oma `"id"`/`"level"`-rivi
 ei ole tason tai id:n muutos (`_only_added_ids`): jos kaikki vanhat tehtävät ovat samoilla id:illä, tasoilla ja järjestyksessä, `levels`-luokka poistuu.
 Olemassa olevan tehtävän tason tai id:n muutos antaa yhä FULL:n. Testit `test_reviews.py` "8p"; `reviews.py verify` koko historialle ilman virheitä.
+
+## §6 fy8-11 (PR #682, 2026-11-17)
+Kuvatehtävät fy8-11-L2-09 (`fy8-11/sidosenergia-luku`) ja fy8-11-L3-06 (`fy8-9/aktiivisuus`), fi/en/fi-easy; ei taulukkotehtävää (FY8:ssa luvuissa 1, 4, 7, 10, 13, 16); 8l-b: `caption`-kentissä ei merkintää. Opit: en-tiede ei kulkenut carryllä, koska
+`translation_differs` vertaa alaindeksin ulkopuolista `\text{}`-sanaa (`\text{lämpöarvo}` / `\text{heating value}`, L3-05) ja `added-exercise` antoi pedagogiikalle full-katselmoinnin joka kielellä; molemmat siirrettiin erilliseen jaettuun korjaukseen (8p).
+Kulutus: agenttien kontekstien summa noin 480 k (katto 250 k ylittyi, koordinaattori salli jatkon).

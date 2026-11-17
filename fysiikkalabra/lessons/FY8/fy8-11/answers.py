@@ -44,4 +44,9 @@ ln_A0 = my - slope * mt                                                        #
 a["fy8-11-L3-04"] = (ln_A0 - math.log(100)) / -slope                           # time to 100 TBq/t: 249,7 a (T_1/2 = 30,3 a)
 P_el, eta, E_th = 507e6, 0.33, 507e6 / 0.33 * 0.92 * 365 * 24 * 3600           # Loviisa unit: P_th = 1536 MW, 92 % of 365 d: 4,457e16 J
 a["fy8-11-L3-05"] = E_th / Q_f * m["U-235"] * U_KG                              # fissions 1,391e27 x 3,903e-25 kg = 543,0 kg U-235 per year (stored 540: two significant figures)
+# Added figure tasks (values read from the figures)
+eps_200, eps_100 = 7.9, 8.7                                                    # E_B/A read from fy8-11/sidosenergia-luku at A = 200 and A = 100 (0,1 MeV grid)
+a["fy8-11-L2-09"] = 200 * (eps_100 - eps_200)                                  # Q = A (eps_100 - eps_200) = 160 MeV
+A0_h, T_h = 720, 5.0                                                           # fy8-9/aktiivisuus: 720 kBq, half of it (360 kBq) at 5,0 h
+a["fy8-11-L3-06"] = T_h * math.log2(1000)                                      # 0,1 % of A0: t = T log2(1000) = 49,83 h -> 50 h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
