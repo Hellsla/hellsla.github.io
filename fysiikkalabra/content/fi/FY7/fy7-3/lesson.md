@@ -370,7 +370,9 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 600$, käämin pituus $l = 15{,}0\,\text{cm}$, virta $I = 2{,}50\,\text{A}$ ja vakio $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä ja sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 600$, käämin pituus $l = 15{,}0\,\text{cm}$, virta $I = 2{,}50\,\text{A}$ ja vakio $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$.
+
+Kysytään magneettivuon tiheyttä $B$ käämin keskellä ja sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 

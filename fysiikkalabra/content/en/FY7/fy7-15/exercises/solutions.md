@@ -165,7 +165,9 @@ $$\begin{aligned}
 
 From the smallest intensity to the largest, the order is D, E, A, B, C.
 
-If the factor $\cos\theta$ were taken without the square, the intensity of situation A would be $300\,\text{W/m}^2$ and the order would change. If the halving of unpolarised light were forgotten, situation B would be $400\,\text{W/m}^2$ and the largest. In situation E the second polariser is crossed with the polarisation direction of the incoming light, but light still gets through, because the polariser in between turns the polarisation direction.
+If the factor $\cos\theta$ were taken without the square, the intensity of situation A would be $300\,\text{W/m}^2$ and the order would change. If the halving of unpolarised light were forgotten, situation B would be $400\,\text{W/m}^2$ and the largest.
+
+In situation E the second polariser is crossed with the polarisation direction of the incoming light, but light still gets through, because the polariser in between turns the polarisation direction.
 
 ## fy7-15-L2-05
 **Given:** the measured points $(\theta;\ E)$ of the table at ten angles, of which the largest reading is $322\,\text{lx}$ at $0^\circ$ and the smallest $7\,\text{lx}$ at $90^\circ$

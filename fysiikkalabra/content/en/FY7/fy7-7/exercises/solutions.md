@@ -50,8 +50,12 @@
 
 ## fy7-7-L1-06
 **Find:** which statement about the voltage $230\,\text{V}$ of the socket is correct.
-**Principle:** An alternating voltage is given as an rms value: the rms value is the direct voltage that would produce the same average power in a resistor. The peak value of a sinusoidal voltage is $\sqrt{2}$ times the rms value, so it is larger than the rms value. The average value of the voltage over a period is zero, so it is not a suitable measure of the size of the voltage.
-**Model answer:** The number $230\,\text{V}$ is the rms value: it produces the same power as a direct voltage, and the peak value is larger, about $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$. The claim that the number is the peak value is wrong, because meters show the rms value. The claim about the average value is wrong, because the average is zero. The claim that the peak value is smaller than the rms value is wrong, because the peak value is larger than the rms value.
+**Principle:** An alternating voltage is given as an rms value: the rms value is the direct voltage that would produce the same average power in a resistor. The peak value of a sinusoidal voltage is $\sqrt{2}$ times the rms value, so it is larger than the rms value.
+
+The average value of the voltage over a period is zero, so it is not a suitable measure of the size of the voltage.
+**Model answer:** The number $230\,\text{V}$ is the rms value: it produces the same power as a direct voltage, and the peak value is larger, about $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$. The claim that the number is the peak value is wrong, because meters show the rms value.
+
+The claim about the average value is wrong, because the average is zero. The claim that the peak value is smaller than the rms value is wrong, because the peak value is larger than the rms value.
 
 ## fy7-7-L1-07
 **Given:** rotation rate $3000$ revolutions per minute
@@ -118,7 +122,9 @@
 **Given:** the $14$ data points of the table, where the voltage $e$ is given as a function of time $t$; the voltage is sinusoidal
 **Find:** a) the period $T$ and the frequency $f$, b) the peak value $e_0$, c) the rms value $U$ in volts
 **Principle:** The period of a sinusoidal voltage is the time after which the voltage has the same value and is going in the same direction. The peak value is the greatest value of the absolute value of the voltage, and the rms value is the peak value divided by $\sqrt{2}$.
-**Reading the graph:** In the table the voltage is zero and rising at the time $0\,\text{ms}$ (value $0.1\,\text{V}$) and again at the time $24\,\text{ms}$ (value $0.0\,\text{V}$), so $T = 24\,\text{ms}$. The voltage is zero also at the time $12\,\text{ms}$ (value $-0.1\,\text{V}$), that is, at half a period. The greatest voltage is $8.4\,\text{V}$ at the time $6\,\text{ms}$ and the smallest $-8.4\,\text{V}$ at the time $18\,\text{ms}$, so $e_0 = 8.4\,\text{V}$.
+**Reading the graph:** In the table the voltage is zero and rising at the time $0\,\text{ms}$ (value $0.1\,\text{V}$) and again at the time $24\,\text{ms}$ (value $0.0\,\text{V}$), so $T = 24\,\text{ms}$.
+
+The voltage is zero also at the time $12\,\text{ms}$ (value $-0.1\,\text{V}$), that is, at half a period. The greatest voltage is $8.4\,\text{V}$ at the time $6\,\text{ms}$ and the smallest $-8.4\,\text{V}$ at the time $18\,\text{ms}$, so $e_0 = 8.4\,\text{V}$.
 **Formula:** $f = \dfrac{1}{T}$ and $U = \dfrac{e_0}{\sqrt{2}}$
 **Conversions:** $T = 24\,\text{ms} = 24 \cdot 0.001\,\text{s} = 0.024\,\text{s}$
 **Substitution:** $f = \dfrac{1}{0.024\,\text{s}} = 41.7\,\text{Hz}$ and $U = \dfrac{8.4\,\text{V}}{\sqrt{2}} = 5.94\,\text{V}$
@@ -132,28 +138,40 @@
 **Formula:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ and deviation $$\begin{aligned} &= \dfrac{|e_{0,\text{predicted}} - e_{0,\text{measured}}|}{e_{0,\text{predicted}}} \\ &\cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed: the ratio $f_2 : f_1$ is a number.
 **Substitution:** a) $e_{0,\text{predicted}} = 4.1\,\text{V} \cdot \dfrac{10.0\,\text{Hz}}{5.0\,\text{Hz}} = 8.2\,\text{V}$. b) Deviation $$\begin{aligned} &= \dfrac{|8.2\,\text{V} - 8.0\,\text{V}|}{8.2\,\text{V}} \cdot 100\,\% \\ &= 2.44\,\% \end{aligned}$$
-**Answer:** The deviation is $2.4\,\%$. c) The frequency of the voltage is the same as the rotation frequency, so it also doubles: the period is halved from $200\,\text{ms}$ to $100\,\text{ms}$. The uncertainty of reading each peak value is $\pm 0.1\,\text{V}$. The prediction $2 \cdot 4.1\,\text{V}$ doubles the uncertainty of the reading ($\pm 0.2\,\text{V}$), and the uncertainty of the measured value $\pm 0.1\,\text{V}$ is added to it, so the total uncertainty is about $\pm 0.3\,\text{V}$. The difference $0.2\,\text{V}$ is smaller than this, so the measurement does not differ from the prediction by more than the reading accuracy allows: a difference from proportionality cannot be shown, and the measurement agrees with the prediction.
+**Answer:** The deviation is $2.4\,\%$. c) The frequency of the voltage is the same as the rotation frequency, so it also doubles: the period is halved from $200\,\text{ms}$ to $100\,\text{ms}$.
+
+The uncertainty of reading each peak value is $\pm 0.1\,\text{V}$. The prediction $2 \cdot 4.1\,\text{V}$ doubles the uncertainty of the reading ($\pm 0.2\,\text{V}$), and the uncertainty of the measured value $\pm 0.1\,\text{V}$ is added to it, so the total uncertainty is about $\pm 0.3\,\text{V}$.
+
+The difference $0.2\,\text{V}$ is smaller than this, so the measurement does not differ from the prediction by more than the reading accuracy allows: a difference from proportionality cannot be shown, and the measurement agrees with the prediction.
 **Reasonableness:** At double the frequency the peak value is almost double: $8.0 : 4.1 = 1.95$. If the peak value had depended on the frequency in some other way, for example quadratically, the result would have been about $16\,\text{V}$.
 
 ## fy7-7-L2-07
 **Given:** power of the bulb $P = 60\,\text{W}$, mains voltage $230\,\text{V}$; in the student’s solution $230\,\text{V}$ has been interpreted as a peak value and the current obtained is $0.37\,\text{A}$
 **Find:** a) the student’s error, b) the rms value $I$ of the current of the bulb in amperes
-**Principle:** The mains voltage $230\,\text{V}$ is already an rms value, because an alternating voltage is given as an rms value. An incandescent lamp is a resistive load, so the average power is calculated from rms values as with direct current, $P = UI$, so the rms value of the current is obtained directly from the power and the rms voltage. Nothing needs to be calculated with the peak value.
+**Principle:** The mains voltage $230\,\text{V}$ is already an rms value, because an alternating voltage is given as an rms value. An incandescent lamp is a resistive load, so the average power is calculated from rms values as with direct current, $P = UI$, so the rms value of the current is obtained directly from the power and the rms voltage.
+
+Nothing needs to be calculated with the peak value.
 **Formula:** $P = UI$, so $I = \dfrac{P}{U}$
 **Conversions:** Not needed.
 **Substitution:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0.2609\,\text{A}$
-**Answer:** a) The student took the mains voltage to be a peak value and divided it by $\sqrt{2}$, although the voltage of the socket is already an rms value. The rms voltage is therefore $230\,\text{V}$, not $163\,\text{V}$, and with a voltage that is too small the current came out too large. b) The rms value of the current is $0.26\,\text{A}$, two significant figures like the power $60\,\text{W}$.
+**Answer:** a) The student took the mains voltage to be a peak value and divided it by $\sqrt{2}$, although the voltage of the socket is already an rms value. The rms voltage is therefore $230\,\text{V}$, not $163\,\text{V}$, and with a voltage that is too small the current came out too large.
+
+b) The rms value of the current is $0.26\,\text{A}$, two significant figures like the power $60\,\text{W}$.
 **Reasonableness:** Check: $230\,\text{V} \cdot 0.26\,\text{A} \approx 60\,\text{W}$. The student’s result $0.37\,\text{A}$ would have given a power of $230\,\text{V} \cdot 0.37\,\text{A} = 85\,\text{W}$, which is not $60\,\text{W}$.
 
 ## fy7-7-L3-01
 **Given:** peak value of the voltage $e_0 = 20.0\,\text{V}$, at the moment $t = 0$ the plane of the coil is perpendicular to the field, the coil turns $30^\circ$ from this position
 **Find:** the instantaneous value $e$ of the voltage in volts
-**Principle:** When the plane of the coil is perpendicular to the field, the flux is at its greatest and does not change for a moment, so the voltage is zero. From then on the voltage grows like a sine, $e = e_0 \sin\theta$, where $\theta$ is the angle through which the coil has turned from this position. The voltage is at its peak value at the angle $90^\circ$, when the plane of the coil is parallel to the field.
+**Principle:** When the plane of the coil is perpendicular to the field, the flux is at its greatest and does not change for a moment, so the voltage is zero. From then on the voltage grows like a sine, $e = e_0 \sin\theta$, where $\theta$ is the angle through which the coil has turned from this position.
+
+The voltage is at its peak value at the angle $90^\circ$, when the plane of the coil is parallel to the field.
 **Formula:** $e = e_0 \sin\theta$
 **Conversions:** Not needed.
 **Substitution:** $e = 20.0\,\text{V} \cdot \sin 30^\circ = 20.0\,\text{V} \cdot 0.5 = 10.0\,\text{V}$
 **Answer:** $10.0\,\text{V}$, three significant figures like the peak value $20.0\,\text{V}$.
-**Reasonableness:** The angle $30^\circ$ is a third of the way from the position of zero voltage to the position of peak voltage, but the voltage is already half the peak value, because the sine curve rises most steeply at the start. A $17.3\,\text{V}$ calculated with the cosine would be wrong: it would give the greatest voltage in the position where the flux does not change.
+**Reasonableness:** The angle $30^\circ$ is a third of the way from the position of zero voltage to the position of peak voltage, but the voltage is already half the peak value, because the sine curve rises most steeply at the start.
+
+A $17.3\,\text{V}$ calculated with the cosine would be wrong: it would give the greatest voltage in the position where the flux does not change.
 
 ## fy7-7-L3-02
 **Given:** peak value of the generator's voltage $U_0 = 40\,\text{V}$, resistance $R = 40\,\Omega$, resistance of the generator negligible
@@ -168,7 +186,9 @@
 ## fy7-7-L3-03
 **Given:** rms voltage $U_1 = 690\,\text{V}$ at a rotation rate of $15$ revolutions per minute, new rotation rate $9.0$ revolutions per minute, magnets and coils the same
 **Find:** the new rms voltage $U_2$ in volts
-**Principle:** The peak voltage of a generator is $e_0 = NBA \cdot 2\pi f$. When $N$, $B$ and $A$ stay the same, the peak voltage, and with it the rms value $U = e_0 : \sqrt{2}$, are directly proportional to the rotation frequency. In a direct-drive turbine the generator rotates at the same rate as the rotor, so the frequency is proportional to the revolutions per minute of the rotor.
+**Principle:** The peak voltage of a generator is $e_0 = NBA \cdot 2\pi f$. When $N$, $B$ and $A$ stay the same, the peak voltage, and with it the rms value $U = e_0 : \sqrt{2}$, are directly proportional to the rotation frequency.
+
+In a direct-drive turbine the generator rotates at the same rate as the rotor, so the frequency is proportional to the revolutions per minute of the rotor.
 **Formula:** $\dfrac{U_2}{U_1} = \dfrac{f_2}{f_1}$, so $U_2 = U_1 \cdot \dfrac{f_2}{f_1}$
 **Conversions:** Not needed: in the ratio the revolutions per minute cancel, so they need not be converted to hertz.
 **Substitution:** $U_2 = 690\,\text{V} \cdot \dfrac{9.0}{15} = 690\,\text{V} \cdot 0.60 = 414\,\text{V}$
@@ -178,11 +198,15 @@
 ## fy7-7-L3-04
 **Given:** number of turns of the bottle dynamo $N = 240$, area $A = 6.0\,\text{cm}^2$, the six data points $(f, e_0)$ of the table
 **Find:** a) the slope $k$ of the line $e_0 = kf + c$, b) the magnetic flux density $B$ and an explanation of why the line passes through the origin, c) the peak value at the frequency $22\,\text{Hz}$ and the significance of the constant term
-**Principle:** The peak value $e_0 = NBA \cdot 2\pi f$ is a linear function of the rotation frequency, with slope $k = NBA \cdot 2\pi$. A line is fitted to the data points with the linear fit of a calculator (or by eye), and $B$ is solved from the slope. A coil that is not rotating gives zero voltage, so the line should pass through the origin. The roller of a bottle dynamo rotates against the tyre, and the frequency $f$ is the rotation frequency of the roller and the coil.
+**Principle:** The peak value $e_0 = NBA \cdot 2\pi f$ is a linear function of the rotation frequency, with slope $k = NBA \cdot 2\pi$. A line is fitted to the data points with the linear fit of a calculator (or by eye), and $B$ is solved from the slope.
+
+A coil that is not rotating gives zero voltage, so the line should pass through the origin. The roller of a bottle dynamo rotates against the tyre, and the frequency $f$ is the rotation frequency of the roller and the coil.
 **Formula:** $k = NBA \cdot 2\pi$, so $B = \dfrac{k}{NA \cdot 2\pi}$
 **Conversions:** $A = 6.0\,\text{cm}^2 = 6.0 \cdot 0.0001\,\text{m}^2 = 6.0 \cdot 10^{-4}\,\text{m}^2$
 **Substitution:** a) Check with the two extreme points: $k \approx \dfrac{(9.1 - 1.4)\,\text{V}}{(30 - 5)\,\text{Hz}} = 0.308\,\tfrac{\text{V}}{\text{Hz}}$. The fit of the calculator gives $k = 0.308\,\tfrac{\text{V}}{\text{Hz}} = 0.308\,\text{V}\cdot\text{s}$ and $c = -0.107\,\text{V}$. b) $B = \dfrac{0.308\,\text{V}\cdot\text{s}}{240 \cdot 6.0 \cdot 10^{-4}\,\text{m}^2 \cdot 2\pi} = \dfrac{0.308\,\text{V}\cdot\text{s}}{0.9048\,\text{m}^2} = 0.3404\,\text{T}$. c) $e_0 = 0.308\,\tfrac{\text{V}}{\text{Hz}} \cdot 22\,\text{Hz} - 0.107\,\text{V} = 6.67\,\text{V}$; without the constant term the result would be $6.78\,\text{V}$.
-**Answer:** b) $B \approx 0.34\,\text{T}$, two significant figures like the area of the coil. In the formula $e_0$ is directly proportional to the frequency, so the voltage should be zero when $f = 0$. The constant term $c = -0.11\,\text{V}$ is small and is probably due to measurement error, such as the zero point of the oscilloscope or the reading accuracy ($\pm 0.1\,\text{V}$). c) $e_0 \approx 6.7\,\text{V}$. The constant term changes the prediction by only $1.6\,\%$, so it does not matter.
+**Answer:** b) $B \approx 0.34\,\text{T}$, two significant figures like the area of the coil. In the formula $e_0$ is directly proportional to the frequency, so the voltage should be zero when $f = 0$. The constant term $c = -0.11\,\text{V}$ is small and is probably due to measurement error, such as the zero point of the oscilloscope or the reading accuracy ($\pm 0.1\,\text{V}$).
+
+c) $e_0 \approx 6.7\,\text{V}$. The constant term changes the prediction by only $1.6\,\%$, so it does not matter.
 **Reasonableness:** The field of a permanent magnet is typically a few tenths of a tesla, so $0.34\,\text{T}$ is believable. Check: at the frequency $30\,\text{Hz}$ the line gives the value $9.13\,\text{V}$, which matches the measured $9.1\,\text{V}$.
 
 ## fy7-7-L3-05
@@ -192,7 +216,9 @@
 **Formula:** $e_0 = NBA \cdot 2\pi f$, $U = \dfrac{e_0}{\sqrt{2}}$, $P = \dfrac{U^2}{R}$ and $p_{\max} = \dfrac{e_0^2}{R}$
 **Conversions:** Not needed: the quantities are in SI units.
 **Substitution:** a) $NBA = 120 \cdot 0.20\,\text{T} \cdot 0.0050\,\text{m}^2 = 0.12\,\text{Wb}$. At the frequency $f_1$: $e_{0,1} = 0.12\,\text{Wb} \cdot 2\pi \cdot 25\,\text{Hz} = 18.85\,\text{V}$ and $U_1 = \dfrac{18.85\,\text{V}}{\sqrt{2}} = 13.33\,\text{V}$. At the frequency $f_2$: $e_{0,2} = 0.12\,\text{Wb} \cdot 2\pi \cdot 40\,\text{Hz} = 30.16\,\text{V}$ and $U_2 = \dfrac{30.16\,\text{V}}{\sqrt{2}} = 21.33\,\text{V}$. b) $P_1 = \dfrac{(13.33\,\text{V})^2}{8.0\,\Omega} = 22.2\,\text{W}$ and $P_2 = \dfrac{(21.33\,\text{V})^2}{8.0\,\Omega} = 56.8\,\text{W}$. The greatest instantaneous power is $p_{\max} = \dfrac{(30.16\,\text{V})^2}{8.0\,\Omega} = 113.7\,\text{W}$.
-**Answer:** b) The average power is $P_2 \approx 57\,\text{W}$ at the rotation frequency $40\,\text{Hz}$, two significant figures like the values of the coil and the resistor. At the rotation frequency $25\,\text{Hz}$ the power is $22\,\text{W}$, and the greatest instantaneous power is $1.1 \cdot 10^{2}\,\text{W}$. c) The peak voltage is proportional to the frequency, and the power is proportional to the square of the voltage, so the power is proportional to the square of the frequency: $1.6^2 = 2.56$. The power therefore grows $2.56$-fold, not $1.6$-fold.
+**Answer:** b) The average power is $P_2 \approx 57\,\text{W}$ at the rotation frequency $40\,\text{Hz}$, two significant figures like the values of the coil and the resistor. At the rotation frequency $25\,\text{Hz}$ the power is $22\,\text{W}$, and the greatest instantaneous power is $1.1 \cdot 10^{2}\,\text{W}$.
+
+c) The peak voltage is proportional to the frequency, and the power is proportional to the square of the voltage, so the power is proportional to the square of the frequency: $1.6^2 = 2.56$. The power therefore grows $2.56$-fold, not $1.6$-fold.
 **Reasonableness:** Check: $P_2 : P_1 = 56.8\,\text{W} : 22.2\,\text{W} = 2.56$, which matches $1.6^2$. The average power $56.8\,\text{W}$ is half of the peak power $113.7\,\text{W}$, as it should be for a sinusoidal voltage. Units: $\tfrac{\text{V}^2}{\Omega} = \text{W}$.
 
 ## fy7-7-L1-09
@@ -210,20 +236,44 @@ $T = \dfrac{1}{40\,\text{Hz}}$
 
 $T = 0.025\,\text{s} = 25\,\text{ms}$
 
-The curve of graph B goes between $-7.1\,\text{V}$ and $7.1\,\text{V}$, and it is zero and increasing at the times $0$, $25\,\text{ms}$, $50\,\text{ms}$ and so on: between $0$ and $100\,\text{ms}$ it has four full periods. The period of graph C is correct, but its peak value is only $5.0\,\text{V}$: the effective value has been drawn as the peak value, which is a common mistake in this topic. The peak value of graph D is correct, but its period is $40\,\text{ms}$: the numerical value of the frequency has been read as the period in milliseconds. Graph A has both mistakes.
+The curve of graph B goes between $-7.1\,\text{V}$ and $7.1\,\text{V}$, and it is zero and increasing at the times $0$, $25\,\text{ms}$, $50\,\text{ms}$ and so on: between $0$ and $100\,\text{ms}$ it has four full periods.
+
+The period of graph C is correct, but its peak value is only $5.0\,\text{V}$: the effective value has been drawn as the peak value, which is a common mistake in this topic.
+
+The peak value of graph D is correct, but its period is $40\,\text{ms}$: the numerical value of the frequency has been read as the period in milliseconds. Graph A has both mistakes.
 
 **Reading the graph:** The peak value is read from the height of the highest point of the curve, and the period from the distance between two successive zeros where the curve goes in the same direction. Reasonableness: a frequency of $40\,\text{Hz}$ means $40$ periods per second, that is $4$ periods in $100\,\text{ms}$.
 
 ## fy7-7-L2-08
 **Given:** the simulation ([PhET – Faraday's Law](https://phet.colorado.edu/en/simulations/faradays-law)) with a bar magnet, a coil, a bulb and a voltmeter without numerical values; in the example of part c) the number of turns $N = 4$, the change of the flux through one turn $\Delta\Phi = 0.25\,\text{mWb}$ and the durations of the push $\Delta t_1 = 2.0\,\text{s}$ and $\Delta t_2 = 0.50\,\text{s}$
 **Find:** a) when a voltage is induced in the coil; b) the effect of the speed and the direction of motion; c) the explanation of the observations and the magnitude of the average voltage $|e_\text{ka}|$ in millivolts for both durations; d) how the alternating voltage arises and how energy is converted in a generator
-**Principle:** By the law of induction, a voltage is produced in a coil only when the magnetic flux through the coil changes (chapter *Electromagnetic induction*). The magnitude of the voltage depends on the rate of change of the flux and on the number of turns, not on the size of the flux. The meter of the simulation shows only the direction and the deflection of the needle, so the observations are qualitative and the numbers of part c) are assumptions of the task. In the example the change of the flux is the same both times, so only the time taken by the change differs.
+**Principle:** By the law of induction, a voltage is produced in a coil only when the magnetic flux through the coil changes (chapter *Electromagnetic induction*). The magnitude of the voltage depends on the rate of change of the flux and on the number of turns, not on the size of the flux.
+
+The meter of the simulation shows only the direction and the deflection of the needle, so the observations are qualitative and the numbers of part c) are assumptions of the task.
+
+In the example the change of the flux is the same both times, so only the time taken by the change differs.
 **Formula:** $e_\text{ka} = -N\dfrac{\Delta\Phi}{\Delta t}$, so the magnitude is $|e_\text{ka}| = \dfrac{N \cdot |\Delta\Phi|}{\Delta t}$
 **Conversions:** $\Delta\Phi = 0.25\,\text{mWb} = 0.25 \cdot 0.001\,\text{Wb} = 0.00025\,\text{Wb}$. The result is converted into millivolts: $1\,\text{V} = 1000\,\text{mV}$.
 **Substitution:** Slow push: $|e_\text{ka}| = \dfrac{4 \cdot 0.00025\,\text{Wb}}{2.0\,\text{s}} = 0.00050\,\text{V} = 0.50\,\text{mV}$. Fast push: $|e_\text{ka}| = \dfrac{4 \cdot 0.00025\,\text{Wb}}{0.50\,\text{s}} = 0.0020\,\text{V} = 2.0\,\text{mV}$
-**Part a):** The observations are the student's own. Example observations from the simulation on 16 November 2026: when the magnet is at rest, the needle is at zero and the bulb is dark. This is so both far from the coil and inside the coil. The needle deflects and the bulb lights only when the magnet moves relative to the coil. A voltage is therefore induced when the magnet moves, not because the magnet is near.
-**Part b):** Example observations: in slow motion the needle deflects a little and the bulb glows dimly. In fast motion the deflection is large and the bulb is bright. When the magnet is brought towards the coil, the needle turns to one side, and when it is taken away, the needle turns to the opposite side. The bulb lights in both cases. Which side the needle turns to depends on the orientation of the magnet, so in your own experiment the sides may be the other way round.
-**Part c):** The field of the magnet is strongest near the magnet. When the magnet approaches the coil, the flux through the coil increases, and when the magnet moves away, the flux decreases. The flux of a magnet at rest may be large, but it does not change: $\Delta\Phi = 0$, so the voltage is zero. In fast motion the same change of flux takes place in a shorter time, so the rate of change $\Delta\Phi : \Delta t$ and the voltage are larger. In the example the time shortens to a quarter and the voltage becomes four times as large. When the flux increases, $\Delta\Phi$ is positive, and when it decreases, negative, so by the law of induction the sign of the voltage changes when the direction of motion changes.
-**Part d):** In a generator a coil rotates in a magnetic field, so the flux through the coil, $\Phi = BA\cos(2\pi f t)$, changes all the time although the field stays the same. The flux increases and decreases in turn, as it does in the simulation when the magnet is moved back and forth. The sign of the voltage therefore changes periodically, and an alternating voltage $e = e_0 \sin(2\pi f t)$ is produced. Faster rotation changes the flux faster and increases the peak value $e_0 = NBA \cdot 2\pi f$, as the fast motion of the magnet did in the simulation. When a load, for example a bulb, is connected to the generator, an induced current flows in the coil. The magnetic field exerts a force on the current-carrying coil, and by Lenz's law this force opposes the rotation. Whatever turns the coil, for example a turbine, has to do work against this force. This mechanical work is converted into electrical energy, which the current transfers to the load. Without a load the voltage is produced, but no current flows and no electrical energy is transferred.
+**Part a):** The observations are the student's own. Example observations from the simulation on 16 November 2026: when the magnet is at rest, the needle is at zero and the bulb is dark.
+
+This is so both far from the coil and inside the coil. The needle deflects and the bulb lights only when the magnet moves relative to the coil. A voltage is therefore induced when the magnet moves, not because the magnet is near.
+**Part b):** Example observations: in slow motion the needle deflects a little and the bulb glows dimly. In fast motion the deflection is large and the bulb is bright. When the magnet is brought towards the coil, the needle turns to one side, and when it is taken away, the needle turns to the opposite side.
+
+The bulb lights in both cases. Which side the needle turns to depends on the orientation of the magnet, so in your own experiment the sides may be the other way round.
+**Part c):** The field of the magnet is strongest near the magnet. When the magnet approaches the coil, the flux through the coil increases, and when the magnet moves away, the flux decreases. The flux of a magnet at rest may be large, but it does not change: $\Delta\Phi = 0$, so the voltage is zero.
+
+In fast motion the same change of flux takes place in a shorter time, so the rate of change $\Delta\Phi : \Delta t$ and the voltage are larger. In the example the time shortens to a quarter and the voltage becomes four times as large.
+
+When the flux increases, $\Delta\Phi$ is positive, and when it decreases, negative, so by the law of induction the sign of the voltage changes when the direction of motion changes.
+**Part d):** In a generator a coil rotates in a magnetic field, so the flux through the coil, $\Phi = BA\cos(2\pi f t)$, changes all the time although the field stays the same. The flux increases and decreases in turn, as it does in the simulation when the magnet is moved back and forth.
+
+The sign of the voltage therefore changes periodically, and an alternating voltage $e = e_0 \sin(2\pi f t)$ is produced. Faster rotation changes the flux faster and increases the peak value $e_0 = NBA \cdot 2\pi f$, as the fast motion of the magnet did in the simulation.
+
+When a load, for example a bulb, is connected to the generator, an induced current flows in the coil. The magnetic field exerts a force on the current-carrying coil, and by Lenz's law this force opposes the rotation.
+
+Whatever turns the coil, for example a turbine, has to do work against this force. This mechanical work is converted into electrical energy, which the current transfers to the load. Without a load the voltage is produced, but no current flows and no electrical energy is transferred.
 **Answer:** $2.0\,\text{mV}$ in the fast push and $0.50\,\text{mV}$ in the slow one. The results have two significant figures like the change of the flux $0.25\,\text{mWb}$ and the times; the number of turns is an exact value.
-**Reasonableness:** The units agree: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. The ratio of the voltages is $2.0\,\text{mV} : 0.50\,\text{mV} = 4$, the same as the ratio of the times $2.0\,\text{s} : 0.50\,\text{s} = 4$, as inverse proportionality requires. Millivolts are a plausible order of magnitude for a coil of four turns. A generator's coil has hundreds of turns and its flux changes tens of times per second, so its voltage is volts or more.
+**Reasonableness:** The units agree: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. The ratio of the voltages is $2.0\,\text{mV} : 0.50\,\text{mV} = 4$, the same as the ratio of the times $2.0\,\text{s} : 0.50\,\text{s} = 4$, as inverse proportionality requires.
+
+Millivolts are a plausible order of magnitude for a coil of four turns. A generator's coil has hundreds of turns and its flux changes tens of times per second, so its voltage is volts or more.

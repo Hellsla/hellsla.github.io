@@ -192,7 +192,11 @@ $$\begin{aligned}
 
 The ratio is $$\begin{aligned} x_2 : x_1 &= 19.9\,\text{cm} : 13.0\,\text{cm} \\ &\approx 1.5 \end{aligned}$$. The distance therefore grows to about $1.5$ times the original, from $13.0\,\text{cm}$ to about $19.9\,\text{cm}$.
 
-For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance. Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it. The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
+For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance.
+
+Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it.
+
+The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
 
 ## fy7-13-L3-04
 **Given:** slit separation $d = 0.250\,\text{mm}$, screen distance $L = 2.00\,\text{m}$, intensity table

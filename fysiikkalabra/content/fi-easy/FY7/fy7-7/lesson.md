@@ -415,7 +415,9 @@ Opetuskäytössä olevan generaattorin käämissä on $250$ kierrosta. Suorakulm
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 250$. Käämin sivut ovat $4{,}0\,\text{cm}$ ja $5{,}0\,\text{cm}$. Magneettivuon tiheys on $B = 0{,}18\,\text{T}$ ja pyörimistaajuus $f = 12\,\text{Hz}$. Kysytään jännitteen tehollista arvoa $U$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 250$. Käämin sivut ovat $4{,}0\,\text{cm}$ ja $5{,}0\,\text{cm}$. Magneettivuon tiheys on $B = 0{,}18\,\text{T}$ ja pyörimistaajuus $f = 12\,\text{Hz}$.
+
+Kysytään jännitteen tehollista arvoa $U$.
 
 <!-- vaihe -->
 

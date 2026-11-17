@@ -85,7 +85,9 @@ $$\begin{aligned}
 
 At the first dark ring the thickness of the film is $d = \dfrac{\lambda}{2n}$. For example, when $\lambda = 589\,\text{nm}$ and $n = 1.33$, the thickness is $589\,\text{nm} : 2.66 \approx 221\,\text{nm}$.
 
-The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is the thickness of the first bright ring. The expression $\lambda : n$ forgets that the light travels through the film back and forth. The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\lambda : 2$ wrongly assumes that the wavelength becomes longer in the film. Light slows down in the film, so the wavelength becomes shorter.
+The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is the thickness of the first bright ring. The expression $\lambda : n$ forgets that the light travels through the film back and forth.
+
+The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\lambda : 2$ wrongly assumes that the wavelength becomes longer in the film. Light slows down in the film, so the wavelength becomes shorter.
 
 ## fy7-14-L2-01
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 240\,\text{nm}$, air on both sides, visible light $400$–$700\,\text{nm}$

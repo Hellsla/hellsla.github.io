@@ -196,7 +196,9 @@ $$\begin{aligned}
 
 The round-trip time is about $12\,\text{ms}$, that is of the order of ten milliseconds. Check: every kilometre delays the signal by about $4.9\,\mu\text{s}$, and $2400 \cdot 4.9\,\mu\text{s} \approx 11.8\,\text{ms}$.
 
-The wrong orders of magnitude come from unit errors. If the length is substituted as the number of kilometres, the result is a thousand times too small, about $12\,\mu\text{s}$. If $1200\,\text{km}$ is written as $1.2 \cdot 10^5\,\text{m}$, the result is ten times too small. If the speed is taken as $300\,000$, that is the speed in kilometres per second, and the length in metres, the result is a thousand times too large, about $12\,\text{s}$.
+The wrong orders of magnitude come from unit errors. If the length is substituted as the number of kilometres, the result is a thousand times too small, about $12\,\mu\text{s}$. If $1200\,\text{km}$ is written as $1.2 \cdot 10^5\,\text{m}$, the result is ten times too small.
+
+If the speed is taken as $300\,000$, that is the speed in kilometres per second, and the length in metres, the result is a thousand times too large, about $12\,\text{s}$.
 
 ## fy7-16-L3-04
 **Given:** $N = 15$, $f = 130\,\text{kHz}$, $d$ and $e_0$ of the table, the charging limit $e_0 = 1.0\,\text{V}$, new frequency $f' = 100\,\text{kHz}$ and the same flux
