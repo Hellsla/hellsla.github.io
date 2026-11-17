@@ -325,6 +325,19 @@
       "answer": 14,
       "unit": "µeV",
       "tolerance": 0.04
+    },
+    {
+      "id": "fy8-12-L2-09",
+      "level": 2,
+      "text": "Kuvassa näkyy gammasäteilyn nettopulssitaajuus tuntemattoman aineen levyjen takana. Nettopulssitaajuus tarkoittaa pulssitaajuutta, josta taustasäteily on vähennetty. Vaaka-akselilla on levyjen yhteispaksuus $d$. Lue kuvaajasta puoliintumispaksuus $d_{1/2}$, eli paksuus, joka puolittaa pulssitaajuuden. Laske sen avulla nettopulssitaajuus, kun levyjä on yhteensä $30\\,\\text{mm}$. Anna vastaus pulsseina minuutissa.",
+      "figure": "fy8-12/tuntematon",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 141.4,
+      "unit": "1/min",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -526,6 +539,20 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-12-L3-07",
+      "level": 3,
+      "text": "Kuvassa näkyy gammasäteilyn nettopulssitaajuus tuntemattoman aineen levyjen takana. Nettopulssitaajuus tarkoittaa pulssitaajuutta, josta taustasäteily on vähennetty. Vaaka-akselilla on levyjen yhteispaksuus $d$. Työpaikan ohjeen mukaan suojan takana nettopulssitaajuus saa olla enintään $\\tfrac{1}{50}$ siitä, mikä se on ilman suojaa. Lue kuvaajasta puoliintumispaksuus $d_{1/2}$ ja laske sen avulla, kuinka paksu levykerros tarvitaan. Riittääkö kuvaajan suurin paksuus $48\\,\\text{mm}$? Anna paksuus millimetreinä.",
+      "figure": "fy8-12/tuntematon",
+      "kind": [
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "answer": 68,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ]
 }

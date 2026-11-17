@@ -265,3 +265,30 @@ $$, as measured. Justification of part d): a GM tube detects only a small fracti
 - name the most likely interaction in all four situations and justify it with the shares in the table
 - explain that the probability of photoelectric absorption grows strongly with the atomic number and that the energy of X-ray photons is in the range where lead almost always absorbs them
 - justify the threshold $1.022\,\text{MeV}$ of pair production with conservation of energy and calculate the kinetic energy $4.0\,\text{MeV}$.
+
+## fy8-12-L2-09
+**Given:** graph: net count rate $R$ with no plates $R_0 = 800\,\text{pulses/min}$; plate thickness $d = 30\,\text{mm}$
+**Asked:** the net count rate $R$ behind the thickness $d$, in pulses per minute
+**Principle:** Gamma radiation is attenuated exponentially: each half-value thickness of material halves the net count rate. The graph shows the net count rate, so the background is already subtracted and the attenuation law applies as it is.
+**Reading the graph:** The graph starts at $800\,\text{pulses/min}$ at $d = 0$. Half of it, $400\,\text{pulses/min}$, is reached at $d = 12\,\text{mm}$, so $d_{1/2} = 12\,\text{mm}$. Check: at $24\,\text{mm}$ the curve is at $200\,\text{pulses/min}$, a quarter of the start.
+**Formula:** $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; the asked quantity is already alone on the left, so no rearranging is needed.
+**Conversions:** None needed: $d$ and $d_{1/2}$ are both in millimetres, so their quotient is a pure number.
+The number of half-value thicknesses is $\dfrac{30\,\text{mm}}{12\,\text{mm}} = 2{,}5$.
+
+**Substitution:** $R = 800\,\text{pulses/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulses/min} \cdot 0{,}17678 = 141{,}42\,\text{pulses/min}$
+**Answer:** $140\,\text{pulses/min}$ ($141{,}4$ is accepted too), two significant figures like the half-value thickness $12\,\text{mm}$ read off the graph.
+**Reasonableness:** At $24\,\text{mm}$ there are two half-value thicknesses and $200\,\text{pulses/min}$, at $36\,\text{mm}$ three and $100\,\text{pulses/min}$. $30\,\text{mm}$ lies halfway between, so $140\,\text{pulses/min}$ is between $200$ and $100$.
+
+## fy8-12-L3-07
+**Given:** graph: net count rate without a shield $R_0 = 800\,\text{pulses/min}$; allowed net count rate behind the shield $R = \tfrac{R_0}{50} = 16\,\text{pulses/min}$; the graph's thickness range ends at $48\,\text{mm}$
+**Asked:** the thickness $d$ of the plate layer in millimetres, and a conclusion on whether $48\,\text{mm}$ is enough
+**Principle:** Gamma attenuation follows $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ because every layer of equal thickness lets through the same fraction. The graph does not reach $16\,\text{pulses/min}$, so the thickness must be calculated from the law, not read.
+**Reading the graph:** The start is $800\,\text{pulses/min}$. Half, $400\,\text{pulses/min}$, is reached at $d = 12\,\text{mm}$, so $d_{1/2} = 12\,\text{mm}$. The last point, $d = 48\,\text{mm}$, is at about $50\,\text{pulses/min}$, above the allowed $16\,\text{pulses/min}$.
+**Formula:** $\tfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; take the logarithm of both sides: $\ln \tfrac{R_0}{R} = \tfrac{d}{d_{1/2}} \ln 2$, so $d = d_{1/2} \cdot \dfrac{\ln \tfrac{R_0}{R}}{\ln 2}$
+**Conversions:** None needed: the thickness is already in millimetres and $\tfrac{R_0}{R} = 50$ is a pure number.
+**Substitution:**
+$d = 12\,\text{mm} \cdot \dfrac{\ln 50}{\ln 2}$
+$d = 12\,\text{mm} \cdot \dfrac{3{,}9120}{0{,}69315}$
+$d = 12\,\text{mm} \cdot 5{,}6439 = 67{,}73\,\text{mm}$
+**Answer:** $68\,\text{mm}$. The limit is "at most", so the thickness is rounded up to the safe side ($67{,}73 \to 68$); two significant figures like the value $12\,\text{mm}$ read off. Conclusion: the graph's greatest thickness $48\,\text{mm}$ is not enough, because behind it the rate is $R = 50\,\text{pulses/min}$ (four halvings), above the allowed $16\,\text{pulses/min}$. At least $68\,\text{mm}$ of plates is needed.
+**Reasonableness:** Five half-value thicknesses ($60\,\text{mm}$) give the fraction $\tfrac{1}{32}$ and six ($72\,\text{mm}$) give $\tfrac{1}{64}$. The fraction $\tfrac{1}{50}$ lies between them, so the thickness must be between $60\,\text{mm}$ and $72\,\text{mm}$; $68\,\text{mm}$ fits.
