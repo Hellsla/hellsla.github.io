@@ -272,15 +272,14 @@ järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
 
-Varattu: claude/fy4-lapikaynti (FY4: Sovella, esimerkkikoe, 8l-b ja kurssin muut sisältökohdat, 0f)
-
 FY4 tehty (claude/fy4-kappalejako, #654): fy4-1…fy4-16 esimerkit ja ratkaisut kolmella kielellä; tiede ja pedagogiikka
 carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksistaan. Lintin 8c-varoituksia jää fi 16, en 34,
 fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
 järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-kaavaa, pitkät Annettu-rivit). Ulkoasun Polish-huomiot
 (vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
-ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
-esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
+ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella (fi, en,
+fi-easy) ja esimerkkikoe tehty (claude/fy4-lapikaynti, 0f): tiede ja pedagogiikka carry, ulkoasu delta PASS; en- ja
+fi-easy-Sovella arvioitiin diffistä fi-kaappausten kanssa (screenshot.py ei kaappaa käännettyä Sovellaa), koe diffistä.
 
 FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
 (`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
@@ -384,7 +383,7 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
-Varattu: claude/fy4-pohdinta-kertaus (FY4)
+FY4 tehty (#647): kaikkien lukujen kertaustehtävät kolmella kielellä.
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
 paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
@@ -416,7 +415,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 **Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
 (seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
 "example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
-(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+(fi, fi-easy, en). FY4 (fy4-2) tehty (claude/fy4-lapikaynti, kaikki
+katselmoinnit carry). **Jäljellä FY5 ja FY8** (fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
 kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
 `caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
 
