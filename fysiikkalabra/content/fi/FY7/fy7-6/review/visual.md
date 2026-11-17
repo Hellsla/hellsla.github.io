@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7c611d086c165667
+CONTENT-HASH: 68e759202638abad
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (eddy-current figure, energy bars, worked example, Pohdinta); paragraph split only, layout intact.
+batch delta, round 1: fy7-6-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

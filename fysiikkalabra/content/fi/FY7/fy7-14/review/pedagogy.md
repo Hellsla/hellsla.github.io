@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8fa069fd7d032030
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 5604a79006b73b70
 ## Blocking
-- none
 
 ## Polish
-- [Minor] The new sentence repeats 'lisämatka 2d' stated two sentences earlier; it could start 'Geometrinen lisämatka 2d vastaa siis optista matkaeroa 2nd ...' to avoid the repeat.
-
+- The first sentence 'värit syntyvät siitä, että aallot vahvistavat tai kumoavat toisensa' answers the Pohdinta question (where colours come from) before the student has thought; drop it and keep the laser setting. The task is now a laser in air, one step from the film, acceptable as prior knowledge.
 ## Checked
-- Diff: geometric extra path 2d vs optical path difference 2nd (bold term), 'optinen' added in the formula intro and summary; very thin soap film reflects very little and looks dark/almost black in reflected light.
-- The new term is defined where it is used and the summary matches.
-- Round 2: exit-ticket model answer now 'heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta', matching the lesson and summary.
-- Language checked: fi. Hash 8fa069fd7d032030 at start and end.
+batch delta review (round 2): retrieval is a path-difference check, 975/650 = 1,5 destructive; Ennuste 1 and 2 not disclosed.

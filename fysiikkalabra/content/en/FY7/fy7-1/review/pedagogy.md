@@ -1,16 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f3f619028352a996
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 6538f9f58df678d2
 ## Blocking
-- none
-
+(none)
 ## Polish
 - none
-
 ## Checked
-- Diff: Why-question 'yleensä likimain kohti pohjoista', Earth's-field paragraph + new paragraph on bar-magnet vs geomagnetic naming, misconception, summary, inquiry check-1.
-- The two naming systems are introduced once, with the reason (field vs location) and why the needle points only roughly north; misconception and summary use the same wording, so the model statement helps rather than confuses.
-- check-1: the stem now asks for the pole of the bar-magnet model; exactly one correct option (Etelänapa); the correct feedback adds the geomagnetic name; the three distractor feedbacks still repair their own misconception (like poles, rotation, both poles).
-- Task form: situation first, question last.
-- Language checked: en. Hash f3f619028352a996 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. The orienteer task keeps the vector-sum prior (perpendicular legs, Pythagoras) and fits the compass/map opening; no Ennusta answer (field vs distance, side of a magnet) is touched.

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 629dab689ddd9d59
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: f878166e52440ab7
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- none
+
+none.
 
 ## Checked
-- Diff: fringe spacing depends on geometry (slits, screen), not only wavelength, fringes can be mm-cm apart; laser safety paragraph (low-power teaching laser, teacher's instructions, no beam or reflected beam into eyes, check reflections first).
-- The old claim 'details are very small' was a motivation trap; the new text sets up the double-slit geometry that follows.
-- Round 2: en paragraph split only.
-- Language checked: en. Hash 629dab689ddd9d59 at start and end.
+
+batch delta review (round 2): The retrieval now says slits in the foil, so it matches the laser and grating phenomenon; it retrieves path difference and interference. Ennusta (600 lines/mm) not disclosed.

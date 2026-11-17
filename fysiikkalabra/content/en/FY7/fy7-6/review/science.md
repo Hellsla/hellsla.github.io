@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 56ec9ba1af892522
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 19ba641822752b02
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- None.
 
 ## Checked
-- Formula section: $e_\text{ka} = -N\,\Delta\Phi/\Delta t$ named as the average induced voltage over $\Delta t$, steady change → constant $e$; consistent with the fy7-5 statement. Minus sign/Lenz sentence unchanged and right. fi, en, fi-easy agree. Hash identical at start and end.
+batch delta review: magnet held at rest in the tube inside a coil: flux constant, e = 0; both distractors' feedback right; one correct option; Ennusta (fall times in plastic, Al, Cu, slit tube) not revealed.

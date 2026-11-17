@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 4696d3cd76b16bc6
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- None.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi. Hash f3eacd571505584e at start and end.
+batch delta review (round 2): retrieval (compass beside a wire, Maan kenttä) belongs to the compass hook, retrieves the prior knowledge, reveals no Ennusta answer.

@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b72feb4f29c1d660
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: ba9e52f4328dcfb2
 ## Blocking
-- none
-
+- None.
 ## Polish
-- none
-
+- None.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash b72feb4f29c1d660 at start and end.
+batch delta review: Prompt no longer names the speaker cable; still a clean r-dependence retrieval of the straight-conductor field. Retrieval-free of Ennuste answers.

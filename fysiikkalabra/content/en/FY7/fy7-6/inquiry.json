@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: when does an induced voltage appear?",
-      "prompt": "The ends of a coil are connected to a voltmeter. A bar magnet is pushed into the coil and then left at rest inside it. What does the meter show when the magnet is at rest inside the coil?",
+      "prompt": "A coil is wound around a copper tube, and its ends are connected to a voltmeter. A strong magnet is stopped inside the tube at the coil and held at rest. What does the meter show when the magnet is at rest?",
       "choices": [
         {
           "text": "Zero, because the magnetic flux through the coil does not change when the magnet is at rest.",

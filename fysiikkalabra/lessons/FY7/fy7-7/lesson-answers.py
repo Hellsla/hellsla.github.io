@@ -33,8 +33,6 @@ a["sim-e0-max"] = 1000 * 0.30 * A * 2 * math.pi * 5.0       # largest e0 in the 
 # e_turn = 2 · B l v sin θ = 2 B l π f b sin θ = BA · 2πf sin θ  (identity, no number)
 # Kaava: mean power of a resistor, p = U0 I0 sin² -> mean U0 I0 / 2 = (U0/√2)(I0/√2)
 a["sin2-mean"] = sum(math.sin(2 * math.pi * k / 1000) ** 2 for k in range(1000)) / 1000   # 0,5
-# Kertaus (retrieval): flux constant -> e = 0
-a["kertaus-e"] = 0.0
 # siirto: small wind turbine, N = 120, A = 0,015 m², B = 0,40 T, 300 r/min
 f_s = 300 / 60                                        # 5,0 Hz
 a["siirto-e0"] = 120 * 0.40 * 0.015 * 2 * math.pi * f_s    # 22,62 V
@@ -53,4 +51,7 @@ a["wind-mean-MW-per-turbine"] = 8358 / 1835           # 4,55 MW
 a["wind-mean-GW"] = 19.8e12 / (366 * 24) / 1e9        # 2,254 GW mean power over 2024 (8784 h)
 a["wind-rotor-f"] = 12 / 60                           # a rotor at 12 r/min turns 0,20 times a second
 a["wind-gear"] = 1500 / 12                            # gearbox 12 r/min -> 1500 r/min: ratio 125
+# Retrieval: rotor one turn in 5,0 s: f = 1/T = 0,20 Hz (mistake: turns per minute 60 / 5,0 = 12)
+a["kertaus-f"] = 1 / 5.0
+a["kertaus-f-min"] = 60 / 5.0
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

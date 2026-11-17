@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 86e619410c1e58c7
+CONTENT-HASH: fb3b370ff079bc9a
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (fibre figure, diamond vs glass, critical-angle graph, fibre scene, worked example, Pohdinta); paragraph split only.
+- Delta round 3: opened fy7-12-stage-herata-390 (Pohdinta with the closed Kertaa: taittuminen box); layout intact. The only change is 19,8 -> 19,7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with {,} and ^\circ.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

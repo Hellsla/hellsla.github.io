@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 833989d18d957f24
+CONTENT-HASH: 3edac70d4f72de3b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-1 and fig-row-1280 opened (hero, sim at 390, magnet-splitting figure beside its paragraph, domain figure); paragraph split only, layout intact, nothing clipped.
+batch delta, round 1: fy7-1-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

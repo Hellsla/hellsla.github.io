@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9ae6860d27e03aeb
+CONTENT-HASH: 3d77db712e00ae54
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:132 — the "· 1,00 m" row is short and flush left at 390 px (earlier note stands).
+- [Minor] none new; earlier solution-wrapping notes stand.
 
 ## Checked
-- Delta, round 1. Capture fi-easy fy7-6-open-exercises-L2-1280-7 (lesson folder review/shots) full size: Järkevyys and Mallivastaus split into short paragraphs, fractions with N·s/m whole, nothing clipped.
+- Delta, round 2. Opened open-exercises-1280-2, -4 and -5 (fi-easy): task 6-6 with the reworded option, its feedback, the Vastaus box and the model answer; neighbours 6-2/6-3/6-5 for layout. fi-easy: "yrittää pitää" is plain and S2-friendly. Wording only; option fits two lines, nothing clipped, layout survived.
 - Hash identical at start and end.
 
 ## Scores

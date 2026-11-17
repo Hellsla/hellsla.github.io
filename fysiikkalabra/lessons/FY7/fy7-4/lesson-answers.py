@@ -46,4 +46,8 @@ a["virhe-cos"] = 5.0 * 0.20 * 0.30 * math.cos(math.radians(30))    # 0,26 N (the
 # Exit ticket 1: I = 2,0 A, l = 0,30 m, B = 0,50 T, α = 90°
 a["exit-F"] = 2.0 * 0.30 * 0.50                     # 0,30 N
 # misconception text: copper is not magnetic, but the force on a copper wire with 6,0 A is the same 0,024 N as above
+# Pohdinta retrieval task: straight wire 0,50 A, B = mu0 I / (2 pi r) at 1,0 cm and 2,0 cm (in µT)
+a["kertaus-B1"] = 4e-7 * math.pi * 0.50 / (2 * math.pi * 0.010) * 1e6    # 10 µT
+a["kertaus-B2"] = 4e-7 * math.pi * 0.50 / (2 * math.pi * 0.020) * 1e6    # 5,0 µT
+a["kertaus-nelio"] = a["kertaus-B1"] / 4                                  # mistake: 2,5 µT
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

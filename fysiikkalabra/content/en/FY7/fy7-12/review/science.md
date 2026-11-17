@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e1bf14bfdcd13d38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: d7c32b096b14dea4
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fig "water" aria-label (lessons/FY7/fy7-12/figures.py, figures.json, lesson.md): "ilmaan ei pääse valoa, vaan koko säde heijastuu" could echo the new wording (ei etenevää taittunutta sädettä); not wrong in the ideal model.
 
 ## Checked
-- TIR: no propagating refracted ray, ideal lossless boundary reflects all incident power, evanescent field near boundary in one sentence: correct. Critical angle water-air 48.8 deg (arcsin 1/1.333) unchanged. Endoscope: traditional fibrescope (illumination bundle + coherent image bundle) vs video endoscope with chip-on-tip camera, fibres for illumination only: correct. Languages match. (language checked: en.)
-- Round 2: definition "Tämä on kokonaisheijastuminen" now follows the law-of-reflection sentence; "eikä energiaa siirry toiseen aineeseen" for an ideal boundary is correct (evanescent field carries no time-averaged power across); fi, en, fi-easy match.
+- Delta, round 3: retrieval (air n = 1.00 into glass n = 1.48 at 30°) recomputed with my own script: sin α2 = 0.5 / 1.48 = 0.3378, α2 = 19.745° -> 19.7°; lesson-answers.py kertaus-alpha2 prints 19.745198, the same.
+- All three feedbacks of the retrieval item now say 19.7°; no 19.8° left in inquiry.json or lesson.md.
+- Toward the normal is still the one correct option; both distractors' feedback is still right.
+- The 41.7° in lesson.md is the separate water -> air case at 30° (asin(1.33 · 0.5) = 41.68°), correct and unchanged.
+- Hash the same at start and end.

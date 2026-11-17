@@ -23,20 +23,20 @@
       "type": "choice",
       "title": "Revise: the sum of vectors",
       "optional": true,
-      "prompt": "A boat is acted on by a force of $30\\,\\text{N}$ towards the east and a force of $40\\,\\text{N}$ towards the north. What is the sum of the forces?",
+      "prompt": "An orienteer follows the compass first $300\\,\\text{m}$ north and then $400\\,\\text{m}$ east. How far is she from the starting point?",
       "choices": [
         {
-          "text": "$50\\,\\text{N}$, because perpendicular forces are the legs of a right-angled triangle.",
+          "text": "$500\\,\\text{m}$, because perpendicular displacements are the legs of a right-angled triangle.",
           "correct": true,
-          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$. Magnetic fields are added together in this chapter in the same way."
+          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$. Magnetic fields are added together in this chapter in the same way."
         },
         {
-          "text": "$70\\,\\text{N}$, because the magnitudes of the forces are added.",
-          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
+          "text": "$700\\,\\text{m}$, because the distances are added together.",
+          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular displacements are the legs of a right-angled triangle, so the distance from the start is $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$."
         },
         {
-          "text": "$10\\,\\text{N}$, because the smaller force is subtracted from the greater.",
-          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
+          "text": "$100\\,\\text{m}$, because the shorter distance is subtracted from the longer.",
+          "feedback": "A difference would come from displacements in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$."
         }
       ]
     },

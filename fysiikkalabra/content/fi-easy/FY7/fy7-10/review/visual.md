@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5ec91b9177f3d3ec
+CONTENT-HASH: 4ab8d81c4b330af0
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] none
+(none)
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+- Delta round 2: fy7-10-stage-herata-390.png opened at readable resolution (Pohdinta text, open question, closed Valinnainen retrieval card). Changed retrieval task (reflection law on a calm lake) is now tied to the phenomenon; the card title and sentences read naturally, no clipping or overflow at 390 px. Maths in the diff is inline LaTeX with units, aligned display chains unchanged in form.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
