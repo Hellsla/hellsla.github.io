@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c131f9dde568eeea
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
+CONTENT-HASH: b0e429f289d10003
 
 ## Blocking
-- none
 
 ## Polish
-- Sim model: "Häviöitä on se osa energiasta, joka ei päädy laitteen hyötyyn." reads a little awkwardly (partitive with "se osa"); "Häviöt ovat se osa energiasta, joka ei päädy laitteen hyötyyn." is plainer.
 
 ## Checked
-- git diff origin/main...HEAD of fy2-4 inquiry.json (fi-easy); hash verified.
-- Sim model paragraph: short sentences, everyday words ("hyötyyn", "enimmäkseen lämmöksi", "osa tulevasta valosta myös heijastuu pois"); same substance as fi without "määriteltyyn" or "säteilyenergia", which suits fi-easy (NOTES §12).
-- Experiment-1 model: "häviöitä, enimmäkseen lämpöä" consistent with the sim model.
+batch delta review: the retrieval is now the 60 W incandescent lamp of the opening; answers 1800, 90 (sum), 2,0 (P:t), 0,50 (t:P) match answers.py and each distractor names its error. It computes E, not efficiency, so it does not give away the Ennusta predictions. Knowns lists and split Tulos paragraphs follow the one-thing-per-paragraph rule. The paragraph splits in the worked example keep the same words and numbers.

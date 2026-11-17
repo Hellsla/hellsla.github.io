@@ -24,20 +24,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: teho ja energia",
-      "prompt": "Laitteen teho on $2\\,\\text{kW}$ ja se on päällä $3\\,\\text{h}$. Kuinka paljon energiaa laite kuluttaa?",
+      "prompt": "Pakkasaamuna Suomen sähkönkulutus pysyy kolme tuntia $12\\,\\text{GW}$:ssa. Kuinka paljon energiaa tänä aikana kuluu?",
       "choices": [
         {
-          "text": "$6\\,\\text{kWh}$",
+          "text": "$36\\,\\text{GWh}$",
           "correct": true,
-          "feedback": "Oikein. Energia on teho kerrottuna ajalla, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (luku *Teho*). Tänään samalla laskutavalla lasketaan, kuinka paljon sähköä voimala tuottaa."
+          "feedback": "Oikein. Energia on teho kerrottuna ajalla, $12\\,\\text{GW} \\cdot 3\\,\\text{h} = 36\\,\\text{GWh}$ (luku *Teho*). Tänään samalla laskutavalla lasketaan, kuinka paljon sähköä voimala tuottaa."
         },
         {
-          "text": "$0{,}67\\,\\text{kWh}$",
-          "feedback": "Tässä teho on jaettu ajalla. Energia lasketaan kertomalla: $E = P t$. Yksikkö kWh on kilowatin ja tunnin tulo (luku *Teho*)."
+          "text": "$4{,}0\\,\\text{GWh}$",
+          "feedback": "Tässä teho on jaettu ajalla. Energia lasketaan kertomalla: $E = P t$. Yksikkö GWh on gigawatin ja tunnin tulo (luku *Teho*)."
         },
         {
-          "text": "$6\\,\\text{kW}$",
-          "feedback": "Luku on oikein, mutta yksikkö ei ole. Teho mitataan kilowatteina ja energia kilowattitunteina: $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$."
+          "text": "$36\\,\\text{GW}$",
+          "feedback": "Luku on oikein, mutta yksikkö ei ole. Teho mitataan gigawatteina ja energia gigawattitunteina: $12\\,\\text{GW} \\cdot 3\\,\\text{h} = 36\\,\\text{GWh}$."
         }
       ],
       "optional": true

@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 880d63a3182b22a9
+CONTENT-HASH: a20e0bf2a6486d4c
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-Delta (md-paragraphs): opened fi fy2-8-example-390-1.png (stage 1 now a two-item list plus the question line: bullets aligned, spacing even, formulas intact, order unchanged) and the rest of the example page for layout. Hash re-run at the end: 880d63a3182b22a9.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: opened fy2-8-stage-herata-390 (Pohdinta intact, retrieval task in its closed optional box); the reworded coal-plant options read naturally, `\text{C} + \text{O}_2 \rightarrow \text{CO}_2` unchanged.

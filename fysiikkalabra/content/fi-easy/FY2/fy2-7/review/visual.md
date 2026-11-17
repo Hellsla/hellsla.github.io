@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bd1486ec667e684a
+CONTENT-HASH: 18d3ea7dbe6b16e4
 
 ## Blocking
 
 ## Polish
-(none)
 
 ## Checked
-Delta (list of knowns). Opened fi-easy fy2-7-example-390-1 and -2: bullet wraps cleanly, layout intact.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: retrieval prompt gained a district-heating context sentence; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.

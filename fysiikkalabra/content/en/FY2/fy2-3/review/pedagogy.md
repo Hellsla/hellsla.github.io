@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8b7d7cb8f1d3b7cf
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
-
+CONTENT-HASH: 8bdbae88002e5802
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
-- lesson.md: duplicated average-power sentence removed; the following sentence still states it.
+batch delta review: The kettle and hallway lamp retrieval matches the opening (fast vs long) and the lamp of the prediction. It gives no hint of the 1800 W / 10 W time comparison; it only recalls joules and conservation. Bullet and split-paragraph stages in the example read well.

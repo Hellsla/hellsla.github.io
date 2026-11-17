@@ -23,19 +23,19 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review: energy and the joule",
-      "prompt": "A lamp transforms electrical energy into light and heat. Which statement is correct (chapter *Energy transformations and the joule*)?",
+      "prompt": "A kettle and the hallway lamp both take electrical energy. Which statement is correct (chapter *Energy transformations and the joule*)?",
       "choices": [
         {
-          "text": "Electrical energy disappears when the lamp is on, so there is less energy at the end than at the start.",
-          "feedback": "Energy does not disappear. In the chapter *Forms of energy and conservation of energy* we agreed that energy only changes into another form: in a lamp electrical energy changes into light and heat."
+          "text": "Electrical energy disappears when a device is on, so there is less energy at the end than at the start.",
+          "feedback": "Energy does not disappear. In the chapter *Forms of energy and conservation of energy* we agreed that energy only changes into another form: in a kettle electrical energy changes into thermal energy of the water, and in a lamp into light and heat."
         },
         {
-          "text": "In the lamp electrical energy is transformed into other forms of energy, which are measured in joules.",
+          "text": "In the devices electrical energy is transformed into other forms of energy, which are measured in joules.",
           "correct": true,
-          "feedback": "Correct. The unit of energy is the joule (J), and the total energy is conserved: electrical energy is transformed into light and heat. Today we add time: how fast this transformation happens."
+          "feedback": "Correct. The unit of energy is the joule (J), and the total energy is conserved: in the kettle electrical energy is transformed into thermal energy of the water, and in the lamp into light and heat. Today we add time: how fast this transformation happens."
         },
         {
-          "text": "The joule is the rate at which the lamp transforms electrical energy into light and heat.",
+          "text": "The joule is the rate at which a device transforms electrical energy into other forms of energy.",
           "feedback": "The joule is a unit of energy, not of rate. The rate is given by a new quantity, power, whose unit is joule per second."
         }
       ],

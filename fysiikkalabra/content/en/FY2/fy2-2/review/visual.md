@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: dcbfd49a879c6cf5
+CONTENT-HASH: f280a71c44e26ce3
 
 ## Blocking
 
 ## Polish
-- [Minor] reflow capture — none worth a change.
 
 ## Checked
-batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.
+batch delta review: diff is inquiry.json review-task wording only (figures and layout unchanged); opened the 1280 px theory-figure captures of fy2-4 and fy2-6 to confirm the layout survived; changed text is natural English.

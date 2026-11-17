@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6df87ff7c2b3f884
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
-
+CONTENT-HASH: e9f67be7d56c2657
 ## Blocking
-- none
 
 ## Polish
-- none
+- Coal and CO2 appear in the retrieval's correct answer, and Prediction 2 asks which source has the largest emissions; it does not give the ranking, but a student may anchor on coal. Consider a petrol or wood-burning example, or accept it consciously.
 
 ## Checked
-- git diff origin/main...HEAD of fy2-8 inquiry.json (en) and lang/en.json taso_nyt; hash verified.
-- "early-2020s amount" used consistently in the select, values, intro, model ("in the early 2020s", "This temperature", "early-2020s situation") and feedback; matches fi in substance.
-- The remaining "at the present amount" (absorption sentence) is generic and does not clash with the label.
+batch delta review: The coal-plant retrieval links to the energy-production and climate opening and the CO2 feedback is accurate and repairs the 'matter turns into energy' misconception.

@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: power and energy",
-      "prompt": "A device takes a power of $40\\,\\text{W}$ from the electricity grid and is switched on for $30\\,\\text{s}$. How much energy does the device take?",
+      "prompt": "An incandescent bulb takes a power of $60\\,\\text{W}$ from the electricity grid and is switched on for $30\\,\\text{s}$. How much energy does the bulb take?",
       "choices": [
         {
-          "text": "$70\\,\\text{J}$",
+          "text": "$90\\,\\text{J}$",
           "feedback": "You added the power and the time. Power and time are different quantities and cannot be added. Energy is power multiplied by time, $E = P \\cdot t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$1200\\,\\text{J}$",
+          "text": "$1800\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. Power tells how fast energy is transferred, so at constant power energy is power multiplied by time: $40\\,\\text{W} \\cdot 30\\,\\text{s} = 1200\\,\\text{J}$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
+          "feedback": "Correct. Power tells how fast energy is transferred, so at constant power energy is power multiplied by time: $60\\,\\text{W} \\cdot 30\\,\\text{s} = 1800\\,\\text{J}$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$1.3\\,\\text{J}$",
-          "feedback": "You divided the power by the time ($40 : 30$). Then the unit would be $\\text{W} : \\text{s}$, not joule, so the result is not energy. Power is already energy divided by time, so energy is found by multiplying power by time (chapter *Power: $P = \\Delta E/\\Delta t$*)."
+          "text": "$2.0\\,\\text{J}$",
+          "feedback": "You divided the power by the time ($60 : 30$). Then the unit would be $\\text{W} : \\text{s}$, not joule, so the result is not energy. Power is already energy divided by time, so energy is found by multiplying power by time (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$0.75\\,\\text{J}$",
-          "feedback": "You divided the time by the power ($30 : 40$). A watt is a joule per second, so energy is found by multiplying power by time: $E = P \\cdot t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
+          "text": "$0.50\\,\\text{J}$",
+          "feedback": "You divided the time by the power ($30 : 60$). A watt is a joule per second, so energy is found by multiplying power by time: $E = P \\cdot t$ (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         }
       ]
     },

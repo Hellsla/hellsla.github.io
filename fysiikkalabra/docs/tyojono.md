@@ -88,8 +88,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana; FY2 Sovella/koe → 0c:n jälkeen tai 0f-PR:ssä). Jäljellä
-järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10, ja FY2:n Sovella ja esimerkkikoe. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana). Jäljellä
+järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 
@@ -111,7 +111,8 @@ kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`).
-Jäljellä FY1–FY3, FY6–FY8. Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
+FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; claude/fy2-lapikaynti, PR #676).
+Jäljellä FY1, FY3, FY6–FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
 ## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)

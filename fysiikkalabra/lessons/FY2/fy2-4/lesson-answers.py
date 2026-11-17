@@ -17,7 +17,7 @@ a["ex-Eo"] = Eo
 a["ex-Ea"] = Ea
 a["ex-Eh"] = Eo - Ea                                       # 36 000 J = 36 kJ
 # Inquiry: retrieval, experiments (model values of the simulation), transfer and checks
-a["inq-kertaus"] = 40 * 30                                 # E = P t = 40 W · 30 s = 1200 J
+a["inq-kertaus"] = 60 * 30                                 # retrieval (hehkulamppu 60 W, 30 s): E = P t = 1800 J
 a["inq-koe1-Eo-10s"] = 60000 * 10                         # engine locked at P_o = 60 kW, t = 10 s: E_o = 600 000 J
 a["inq-koe1-Ea-10s"] = 0.25 * 60000 * 10                  # E_a = 150 000 J
 a["inq-koe1-Eh-10s"] = 60000 * 10 - 0.25 * 60000 * 10     # E_h = 450 000 J
