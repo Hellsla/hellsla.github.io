@@ -1,6 +1,9 @@
 """Which pages a pull request's browser checks must test (teacher 2026-11-01: "testaa vain muuttuneet sivut").
 
   python scripts/ci_scope.py [<base-ref>]      prints "full", or the page ids to test (space separated; empty: none)
+  python scripts/ci_scope.py [<base-ref>] --built <base site dir> <head site dir>
+                                               the same, from two renders of the site instead of the committed site/ diff
+                                               (work queue 0g PR 1: a shadow run in CI's plan job; nothing uses it yet)
 
 The three slow CI steps (test_sims.py, the per-lesson inquiry tests and check_layout.py at eight widths; together
 about 1 h 30 min of a full run) open pages in a browser. On a pull request they test only the pages the change can
@@ -68,9 +71,11 @@ def page_of(course, lid):
     return f"{course}-{lid}" if lid in ("sovella", "koe") else lid
 
 
-def scope(base):
-    """("full", reason) or ("pages", {page id: [why, ...]})."""
+def scope(base, built=None):
+    """("full", reason) or ("pages", {page id: [why, ...]}).
+    built = (base_site_dir, head_site_dir): the two renders replace the committed site/ diff (work queue 0g, PR 1 shadow run)."""
     names = git("diff", "--name-only", "--relative", f"{base}...HEAD").split()
+    if built: names = [n for n in names if not n.startswith("site/")] + built_names(*built)
     # the workflow first: it lies outside fysiikkalabra/, so a pull request that changes nothing else has no name above,
     # and returning "no page" for it skipped every browser check of a change to how they are run (2026-11-11)
     wf = git("diff", "--name-only", f"{base}...HEAD", "--", f"{git('rev-parse', '--show-toplevel').strip()}/.github/").split()
@@ -108,7 +113,7 @@ def scope(base):
     if shared:                                          # the sample, and the pages the change names by their own sources
         for q in SMOKE: add(q, f"smoke sample ({shared[0]})")
     else:
-        only_v = version_only(base, [n for why in rendered.values() for n in why if n.endswith(".html")])
+        only_v = set() if built else version_only(base, [n for why in rendered.values() for n in why if n.endswith(".html")])
         for q, why in rendered.items():
             why = [n for n in why if n not in only_v]
             if why: pages.setdefault(q, []).extend(why)
@@ -116,6 +121,21 @@ def scope(base):
 
 
 VER = re.compile(r"\?v=[0-9a-f]*")
+
+
+def built_names(base_dir, head_dir):
+    """The site/ paths (as `site/<path>`) that differ between two renders of the site, as the committed site/ diff names
+    them (work queue 0g): added, removed or changed files; a page that differs only in its ?v= cache tokens is equal."""
+    base_dir, head_dir = pathlib.Path(base_dir), pathlib.Path(head_dir)
+    files = lambda d: {p.relative_to(d).as_posix() for p in d.rglob("*") if p.is_file()}
+    a, b, out = files(base_dir), files(head_dir), []
+    for rel in sorted(a | b):
+        if rel in a and rel in b:
+            x, y = (base_dir / rel).read_bytes(), (head_dir / rel).read_bytes()
+            if x == y: continue
+            if rel.endswith(".html") and VER.sub("", x.decode("utf-8", "replace")) == VER.sub("", y.decode("utf-8", "replace")): continue
+        out.append(f"site/{rel}")
+    return out
 
 
 def version_only(base, names):
@@ -138,7 +158,11 @@ def version_only(base, names):
 
 
 if __name__ == "__main__":
-    kind, what = scope(sys.argv[1] if len(sys.argv) > 1 else "origin/main")
+    argv = sys.argv[1:]
+    built = None
+    if "--built" in argv:                              # --built <base site dir> <head site dir>: scope from two renders, not the committed site/ diff
+        i = argv.index("--built"); built = (argv[i + 1], argv[i + 2]); del argv[i:i + 3]
+    kind, what = scope(argv[0] if argv else "origin/main", built)
     if kind == "full":
         print("full"); print(f"full run: {what}", file=sys.stderr)
     else:

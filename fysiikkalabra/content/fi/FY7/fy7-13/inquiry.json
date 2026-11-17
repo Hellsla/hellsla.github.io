@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: interferenssi",
-      "prompt": "Kaksi samassa vaiheessa värähtelevää, saman taajuuden lähdettä lähettää aaltoja. Pisteeseen P on toisesta lähteestä $1{,}5$ aallonpituutta pidempi matka kuin toisesta. Mitä pisteessä P tapahtuu?",
+      "prompt": "Laserin valo kulkee kalvon kahden viereisen raon kautta, ja raoista lähtevät aallot ovat samassa vaiheessa ja niillä on sama taajuus. Seinän pisteeseen P on toisesta raosta $1{,}5$ aallonpituutta pidempi matka kuin toisesta. Mitä pisteessä P näkyy?",
       "choices": [
         {
           "text": "Aallot vahvistavat toisiaan, koska matkaero on suurempi kuin yksi aallonpituus.",

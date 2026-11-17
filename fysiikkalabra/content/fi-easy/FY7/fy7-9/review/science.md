@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2d6d0ce8c8a7d663
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8ec4e32680f975fa
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Classical-radiation hedge (accelerating charge radiates in classical EM; atomic/nuclear emission -> quantum physics) is correct and appears in theory and summary; non-ionising UV damage (sunburn, photokeratitis/cornea) correct; fi, en, fi-easy say the same. (language checked: fi-easy.)
+batch delta review: recomputed f = c/λ: 4,3e14 Hz for 700 nm and 7,5e14 Hz for 400 nm; violet is the one correct option and every piece of feedback is right; Ennusta (Wien shift, 300 K infrared) not revealed; lesson-answers.py matches.

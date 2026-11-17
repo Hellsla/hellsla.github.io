@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: a274d360a4620cf5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 54bcd8e2aa81ada5
 ## Blocking
-- none
-
+(none)
 ## Polish
 - none
-
 ## Checked
-- Diff: 'klassisen sähkömagnetismin mukaan' for radiation from accelerated charges, one sentence that atoms and nuclei are treated in quantum physics, non-ionising UV can damage skin and eyes; summary 'klassisen mallin mukaan'.
-- The model statement sets the limit without a jump; the UV sentence corrects a likely misconception (only ionising radiation is harmful).
-- Round 2: en paragraph split only.
-- Language checked: en. Hash a274d360a4620cf5 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Red 700 nm vs violet 400 nm in glowing iron retrieves f = c/λ; Ennusta (peak shift with T, stone at 300 K) not revealed.

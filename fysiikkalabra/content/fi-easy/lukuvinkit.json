@@ -1,0 +1,34 @@
+{
+  "_note": "Selkosuomi: Lukuvinkit-sivun tekstit; nimet, tekijät, linkit, kurssit ja lainamerkinnät tulevat content/fi/lukuvinkit.json:sta samassa järjestyksessä (scripts/reading_tips.py).",
+  "title": "Kirjavinkit",
+  "subtitle": "Fysiikkaa oppikirjan ulkopuolelta",
+  "description": "Kaksikymmentä kirjaa fysiikasta oppikirjan ulkopuolelta: kokeita, arjen ilmiöitä, fysiikan historiaa ja suuria kysymyksiä. Helpot kirjat ovat alussa, vaikeat lopussa.",
+  "intro": [
+    "Fysiikka ei ole vain kaavoja ja laskuja. Se on myös tarinoita, yllättäviä kysymyksiä ja kokeita. Fysiikassa yritetään ymmärtää maailmaa.",
+    "Näistä kirjoista löydät uusia tapoja katsoa tuttuja ilmiöitä. Löydät myös fysiikkaa, jota oppitunneilla ei ehditä käsitellä. Kirjaa ei tarvitse lukea alusta loppuun. Voit aloittaa yhdestä kiinnostavasta luvusta."
+  ],
+  "list_lead": "Jos fysiikka kiinnostaa, lue näitä kirjoja. Helpot kirjat ovat listan alussa. Vaikeat kirjat ovat lopussa. Mukana on kokeita, arjen ilmiöitä, fysiikan historiaa ja outoja kysymyksiä.",
+  "loan_note": "Kirjat, joissa on merkintä ”Lainattavissa Laurilta”, ovat omassa hyllyssäni. Voit kysyä niitä lainaan!",
+  "books": [
+    {"language": "suomi tai englanti", "level": "helppo", "text": "Mitä tapahtuisi, jos kaikki ihmiset hyppäisivät yhtä aikaa? Hassuista kysymyksistä tulee yllättävän vakavaa fysiikkaa ja hauskoja laskuja."},
+    {"language": "englanti", "level": "helppo", "text": "Lisää hassuja kysymyksiä ja tieteellisiä vastauksia. Voisiko ilmakehän viilentää avaamalla kaikki pakastimet yhtä aikaa? Kirja näyttää, että fysiikalla voi tutkia melkein mitä tahansa."},
+    {"language": "suomi", "level": "helppo", "text": "Nobel-palkitun fyysikon hauskoja ja välillä yllättäviä muistoja. Kirja kertoo uteliaisuudesta, kokeilemisesta ja siitä, miten tutkija ajattelee."},
+    {"language": "suomi", "level": "helppo", "text": "Kirjassa on 200 pientä koetta luonnontieteestä ja tekniikasta. Se näyttää, että kiinnostavaa tiedettä voi tehdä yksinkertaisilla välineillä. Hyvä apu, kun etsit ideoita omiin kokeisiin."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Miksi paahtoleipä putoaa voipuoli alaspäin? Kirjassa on yli sata kekseliästä kokeilua. Niissä käytetään tavallisia koti-esineitä, ja voit tutkia ilmiöitä itse."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Tieteenhistoriallinen klassikko: Mitä tapahtuisi, jos valon nopeus olisi yhtä pieni kuin auton nopeus? Seikkailut selittävät suhteellisuusteorian ja kvanttifysiikan outoja ilmiöitä. Kirja on vanha, joten kaikki tiedot eivät vastaa nykyistä tietoa."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Lyhyt kirja, joka saa ajattelemaan. Siinä käydään läpi modernin fysiikan suuret ideat: suhteellisuusteoria, kvanttifysiikka ja maailmankaikkeus."},
+    {"language": "englanti", "level": "helppo tai keskivaikea", "text": "Voisiko Hämähäkkimies oikeasti heilua seittinsä varassa? Kuinka nopeasti Flash voisi juosta? Kirja tutkii supersankarien voimia oikean fysiikan avulla."},
+    {"language": "englanti", "level": "helppo tai keskivaikea", "text": "Miksi popcorn poksahtaa? Miksi kahvi jättää kuivuessaan renkaan? Arjen ilmiöt kertovat fysiikan suurista periaatteista."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Miksi fyysikko olettaa lehmän palloksi? Kirja näyttää, miten fyysikko ajattelee. Monimutkaisista ilmiöistä tehdään helpompia malleja. Kirjasta ymmärrät, miksi fysiikassa tehdään oletuksia ja arvioita."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Kuvitettu kirja Stephen Hawkingin elämästä ja tutkimuksesta. Mustat aukot, suhteellisuusteoria ja maailmankaikkeuden suuret kysymykset selitetään tekstillä ja piirroksilla. Se on kevyempi tapa tutustua Hawkingin ajatuksiin kuin hänen omat kirjansa."},
+    {"language": "suomi", "level": "helppo tai keskivaikea", "text": "Tarinoita ihmisistä, jotka ovat muuttaneet fysiikkaa: Pascalista Higgsiin. Hyvä kirja, jos haluat tietää, miten käsitykset fysiikasta ovat muuttuneet."},
+    {"language": "suomi", "level": "keskivaikea", "text": "Voisiko matkustaa menneisyyteen? Entä tulevaisuuteen? Kirja tutkii aikaa ja aikamatkailua fysiikan kannalta."},
+    {"language": "englanti", "level": "keskivaikea", "text": "Kymmenen tärkeää koetta tieteen historiasta. Kirja näyttää, että yksinkertaisesta mutta fiksusti suunnitellusta kokeesta voi syntyä suuri keksintö."},
+    {"language": "englanti", "level": "keskivaikea", "text": "Kokoelma outoja, hauskoja ja joskus vaarallisen näköisiä fysiikan ilmiöitä. Kirja saa kysymään ja etsimään selityksiä."},
+    {"language": "suomi", "level": "keskivaikea", "text": "Suurin osa maailmankaikkeuden aineesta on näkymätöntä. Mistä tiedämme, että se on olemassa? Mitä se voisi olla?"},
+    {"language": "suomi", "level": "keskivaikea", "text": "Miten maapallon koko saatiin selville? Miten voi mitata matkan tähteen, jonne ei voi matkustaa? Kirja kertoo, miten ihmiset ovat satojen vuosien aikana oppineet mittaamaan yhä suurempaa maailmankaikkeutta."},
+    {"language": "suomi", "level": "keskivaikea tai vaikea", "text": "Tieteenhistoriallinen klassikko: Mistä maailmankaikkeus tuli? Mitä mustat aukot ovat? Onko ajalla alku tai loppu? Kirja on tunnettu kosmologian klassikko, mutta se on vanha, joten kaikki tiedot eivät vastaa nykyistä tietoa."},
+    {"language": "suomi", "level": "vaikea", "text": "Voiko jokin olla mahdoton ennustaa, vaikka se noudattaa tarkkoja luonnonlakeja? Kaaosteoria näyttää, miksi pieni ero alussa voi johtaa suureen muutokseen. Kirja saa ajattelemaan ennustamista, sattumaa ja luonnonlakeja uudella tavalla."},
+    {"language": "englanti", "level": "vaikea", "text": "Tieteenhistoriallinen klassikko: Kvanttifysiikan vallankumous 1900-luvun alussa yhden ajan fyysikon kertomana. Kirjassa ovat Planck, Bohr, Heisenberg, Schrödinger ja muut teorian tekijät. Kirja on vanha, joten kaikki tiedot eivät vastaa nykyistä tietoa."}
+  ]
+}

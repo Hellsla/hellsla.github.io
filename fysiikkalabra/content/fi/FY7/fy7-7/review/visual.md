@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 47a824a2518c53b3
+CONTENT-HASH: e2b33b531329430e
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] fy7-8 Pohdinta, wrong option "460 V" feedback: the chain row "325 V : sqrt2 ≈ 230 V" has no quantity at its start; the text above names it, so acceptable.
 
 ## Checked
-- batch delta review: contact-2 opened (generator loop figure, power graph p(t) with mean, cyclist scene); teacher-approved figures legible, no clipping.
+- Rendered the Pohdinta retrieval task ("Kertaa") at 360 px, opened and answered every option, so each feedback block showed (own captures; stage-herata-390 also opened). Chains are aligned rows, nothing clipped, no horizontal overflow (scrollWidth 360).
+- Delta: only the retrieval feedback/option text changed; no figures touched.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

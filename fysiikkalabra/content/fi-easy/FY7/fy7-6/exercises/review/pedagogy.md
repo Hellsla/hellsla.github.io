@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 50e828664421391d
-SCOPE: delta added-exercise from b366c16fb04b0dad base 8f23aa7ae3bd
+CONTENT-HASH: 3d77db712e00ae54
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-6-L3-06 is only a little harder than L2-09 (same graph, one more step); it is acceptable as level 3 because it joins the force balance and the graph, but the third question of the set that reads F(v) from this figure is enough.
+- none new (earlier L3-06 polish stands as before).
 
 ## Checked
-- L2-09: P = Fv with F = 0,40 N at 0,25 m/s gives 100 mW; the solution derives P = Fv from work per time; check at half speed.
-- L3-06: terminal speed from mg = kv, k = 1,6 N·s/m from two points, v = 0,28 m/s correct; figure description gives no power or terminal speed.
-- Both questions last or near last; units, conversions and sig figs explained.
-- Language checked: fi-easy. Hash 50e828664421391d at start and end.
+- L1-06: "yrittää pitää vuon ennallaan" is plain Finnish and states Lenz's law as a tendency; answer and option text match, and the feedback stays consistent.
+- Reading level suits the easy version.
+- solutions.md changed in presentation only.
+- Language checked: fi-easy. Hash 3d77db712e00ae54 at start and end.

@@ -236,7 +236,45 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "rontgen": rontgen, "pet": pet, "sadehoito": sadehoito, "mittari": mittari, "kontrasti": kontrasti}
+def kontrasti_points():
+    """Task variant of kontrasti: the same two curves on a reading grid, with no half-value layers marked."""
+    dt, db = LA.DT, LA.DB
+    f = Fig("fy814-kontrasti-points", 380, "Kuvaaja mittakaavassa: läpi päässeen röntgensäteilyn osuus I per I nolla kerroksen "
+            "paksuuden d funktiona, paksuus nollasta 8 senttimetriin, ruudukon väli 0,5 senttimetriä ja 0,05, joka toinen "
+            "pystyviiva ja joka toinen vaakaviiva tummempi; fotonien energia noin 60 kiloelektronivolttia. Kaksi laskevaa "
+            "käyrää alkaa arvosta 1: pehmytkudoksen käyrä laskee loivasti ja luun käyrä paljon jyrkemmin.")
+    xt = [k * 0.5 for k in range(1, 17)]
+    yt = [round(0.05 * k, 2) for k in range(1, 21)]
+    ax = Axes(f, (100, 312), (470, 58), x=(0, 8), y=(0, 1.05), xticks=xt, yticks=yt, xlabel=r"d\ (\text{cm})", ylabel=r"I : I_0",
+              xfmt=lambda v: fi(v) if v == int(v) else "", yfmt=lambda v: fi(v, 1) if abs(v * 5 - round(v * 5)) < 1e-9 else "")
+    for v in range(1, 9): f.line(ax.X(v), ax.Y(0), ax.X(v), ax.Y(1.05), RULE, 1.5)       # darker every 1 cm
+    for v in (0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0): f.line(ax.X(0), ax.Y(v), ax.X(8), ax.Y(v), RULE, 1.5)   # and every 0,1
+    ax.curve(lambda d: 0.5 ** (d / dt), 0, 8, HOT, 3)
+    ax.curve(lambda d: 0.5 ** (d / db), 0, 8, GRAIN, 3)
+    ax.point(0, 1, INK)
+    f.tex(ax.X(8) + 4, ax.Y(0.46), r"\text{pehmytkudos}", "end", HOT, bg=True)
+    f.tex(ax.X(0.9), ax.Y(0.2), r"\text{luu}", "start", GRAIN, bg=True)
+    return f.svg()
+
+
+def fdg():
+    """Task figure: activity of an FDG syringe (F-18, half-life 110 min) from 480 MBq, 0–360 min, on a reading grid."""
+    A0, T = 480, 110
+    f = Fig("fy814-fdg", 380, "Kuvaaja mittakaavassa: FDG-ruiskun aktiivisuus megabecquereleina ajan funktiona, aika nollasta "
+            "360 minuuttiin, ruudukon väli 20 minuuttia ja 20 megabecquereliä, joka kolmas pystyviiva ja joka viides "
+            "vaakaviiva tummempi. Aktiivisuus on alussa 480 ja käyrä laskee yhä loivemmin.")
+    xt = list(range(20, 361, 20)); yt = list(range(20, 501, 20))
+    ax = Axes(f, (100, 312), (470, 58), x=(0, 360), y=(0, 500), xticks=xt, yticks=yt, xlabel=r"t\ (\text{min})",
+              ylabel=r"A\ (\text{MBq})", xfmt=lambda v: fi(v) if v % 60 == 0 else "", yfmt=lambda v: fi(v) if v % 100 == 0 else "")
+    for v in range(60, 361, 60): f.line(ax.X(v), ax.Y(0), ax.X(v), ax.Y(500), RULE, 1.5)
+    for v in range(100, 501, 100): f.line(ax.X(0), ax.Y(v), ax.X(360), ax.Y(v), RULE, 1.5)
+    ax.curve(lambda t: A0 * 0.5 ** (t / T), 0, 360, HEAT, 3)
+    ax.point(0, A0, HEAT)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "rontgen": rontgen, "pet": pet, "sadehoito": sadehoito, "mittari": mittari, "kontrasti": kontrasti,
+           "kontrasti-points": kontrasti_points, "fdg": fdg}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
@@ -245,4 +283,6 @@ REUSE = {
     "sadehoito": "reveals: five beams crossing at the tumour: 5 · 0,40 Gy = 2,0 Gy there, 0,40 Gy in healthy tissue on one beam",
     "mittari": "reveals: a beta thickness gauge: thicker paper lets less radiation through to the detector",
     "kontrasti": "reveals: I/I0 at about 60 keV halving every 3,4 cm in soft tissue and every 1,1 cm in bone",
+    "kontrasti-points": "safe: I/I0 curves of soft tissue and bone, 0–8 cm on a 0,5 cm / 0,05 grid; the half-value layers are to be read off",
+    "fdg": "safe: activity of an FDG syringe from 480 MBq, 0–360 min on a 20 min / 20 MBq grid; the half-life is to be read off",
 }

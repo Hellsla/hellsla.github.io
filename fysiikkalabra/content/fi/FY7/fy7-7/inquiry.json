@@ -24,21 +24,21 @@
       "stage": "herata",
       "type": "choice",
       "optional": true,
-      "title": "Kertaa: milloin jännite syntyy?",
-      "prompt": "Käämi on paikallaan voimakkaan magneetin edessä, ja sen läpi kulkee suuri magneettivuo, joka ei muutu. Kuinka suuri induktiojännite käämiin syntyy?",
+      "title": "Kertaa: taajuus ja jaksonaika",
+      "prompt": "Tuulivoimalan roottori kääntyy kerran $5{,}0\\,\\text{s}$:ssa. Mikä on roottorin pyörimistaajuus?",
       "choices": [
         {
-          "text": "Ei lainkaan, koska jännite syntyy vain vuon muuttuessa: $e = -N\\,\\Delta\\Phi : \\Delta t$.",
+          "text": "$0{,}20\\,\\text{Hz}$, koska taajuus on jaksonaikaa vastaava käänteisluku: $f = 1 : T$.",
           "correct": true,
-          "feedback": "Oikein. Induktiojännite riippuu vuon muutosnopeudesta, ei vuon suuruudesta (luku *Sähkömagneettinen induktio*). Tänään vuon muutos saadaan aikaan pyörittämällä käämiä."
+          "feedback": "Oikein. Pyörimistaajuus kertoo kierrosten määrän sekunnissa: $$\n\\begin{aligned}\n&f \\\\\n&= 1 : T \\\\\n&= 1 : 5{,}0\\,\\text{s} \\\\\n&= 0{,}20\\,\\text{Hz}\n\\end{aligned}\n$$. Tänään tutkitaan, miten pyöriminen saa aikaan vaihtojännitteen."
         },
         {
-          "text": "Suuri, koska vuo on suuri ja jännite on verrannollinen vuohon.",
-          "feedback": "Induktiolain $e = -N\\,\\Delta\\Phi : \\Delta t$ mukaan jännite riippuu siitä, kuinka nopeasti vuo muuttuu. Muuttumaton vuo, kuinka suuri tahansa, ei synnytä jännitettä (luku *Sähkömagneettinen induktio*)."
+          "text": "$5{,}0\\,\\text{Hz}$, koska taajuus on sama luku kuin jaksonaika.",
+          "feedback": "Taajuus ja jaksonaika ovat toistensa käänteislukuja, $f = 1 : T$, ei samoja lukuja. Kun kierros kestää $5{,}0\\,\\text{s}$, kierroksia on sekunnissa vain $1 : 5{,}0 = 0{,}20$."
         },
         {
-          "text": "Se riippuu vain kierrosten lukumäärästä $N$, ei vuosta.",
-          "feedback": "Kierrosten lukumäärä kertoo, kuinka moneen kierrokseen jännite syntyy, mutta jos vuo ei muutu, jokaisen kierroksen jännite on nolla: $e = -N\\,\\Delta\\Phi : \\Delta t = 0$ (luku *Sähkömagneettinen induktio*)."
+          "text": "$12\\,\\text{Hz}$, koska taajuus on kierrosten määrä minuutissa: $60 : 5{,}0 = 12$.",
+          "feedback": "Hertsi tarkoittaa kierroksia sekunnissa, ei minuutissa. Luku $12$ on kierrosten määrä minuutissa. Yhdessä sekunnissa roottori tekee $1 : 5{,}0 = 0{,}20$ kierrosta, joten $f = 0{,}20\\,\\text{Hz}$."
         }
       ]
     },

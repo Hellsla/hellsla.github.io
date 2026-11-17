@@ -248,6 +248,32 @@
       "answer": 26,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-14/kontrasti-points",
+      "text": "Kuvassa on röntgensäteen intensiteetin suhde $I : I_0$ pehmytkudoksen ja luun paksuuden $d$ funktiona. Suhde kertoo, kuinka suuri osuus säteilystä pääsee läpi. Fotonien energia on noin $60\\,\\text{keV}$. Kuvaajan lukutarkkuus on noin $0{,}02$ ja $0{,}1\\,\\text{cm}$. Luun voi laskussa korvata pehmytkudoskerroksella, joka päästää läpi yhtä suuren osuuden säteilystä.\n\na) Lue kuvaajasta, kuinka suuri osuus säteilystä pääsee läpi $5{,}0\\,\\text{cm}$ paksusta pehmytkudoskerroksesta.\n\nb) Lue kuvaajasta pehmytkudoksen ja luun puoliintumispaksuudet. Puoliintumispaksuus on paksuus, joka puolittaa läpi pääsevän osuuden.\n\nc) Laske, kuinka paksu luukerros päästää läpi saman osuuden kuin $5{,}0\\,\\text{cm}$ pehmytkudosta. Tarkista tulos kuvaajasta.\n\nVastauslaatikkoon tulee c-kohdan tulos.",
+      "answer": 1.6,
+      "unit": "cm",
+      "tolerance": 0.06
+    },
+    {
+      "id": "fy8-14-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-14/fdg",
+      "text": "Kuvassa on FDG-ruiskun aktiivisuus $A$ ajan $t$ funktiona (esimerkkiaineisto). Aktiivisuus kertoo, kuinka monta ydintä hajoaa sekunnissa. Merkkiaineen fluori-$18$ hajoaa. Oleta, että aktiivisuus pienenee vain radioaktiivisen hajoamisen takia. Kuvaajan lukutarkkuus on noin $5\\,\\text{MBq}$ ja $5\\,\\text{min}$. Ruiskua ei enää käytetä potilaalle, kun sen aktiivisuus on pudonnut arvoon $60\\,\\text{MBq}$.\n\na) Lue kuvaajasta aktiivisuus hetkellä $t = 0$. Lue myös puoliintumisaika $T_{1/2}$. Se on aika, jossa aktiivisuus puolittuu.\n\nb) Laske, kuinka monta minuuttia kuluu siihen, että aktiivisuus on $60\\,\\text{MBq}$.\n\nc) Tarkista tulos lukemalla aika suoraan kuvaajasta.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "answer": 330,
+      "unit": "min",
+      "tolerance": 0.04
     }
   ],
   "level3": [

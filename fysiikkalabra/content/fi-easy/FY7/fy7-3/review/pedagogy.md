@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 647388c3ad9838b2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 31b7193e4d111c8b
 ## Blocking
-- none
-
+- None.
 ## Polish
-- none
-
+- None.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 647388c3ad9838b2 at start and end.
+batch delta review: Retrieval (kompassi, ei virtaa) belongs to the magnetic-field phenomenon, retrieves compass/Earth's field, discloses no Ennuste answer; new wording is clear.

@@ -226,6 +226,13 @@ tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastauslu
 fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
 
+FY7 PR 2 (claude/fy7-lapikaynti-2): 8j tehty fy7-1, 3–10, 12–14 (muut liittyivät jo; `docs/audits/2026-11-17-8j-FY7.md`), vanhentuneet
+tehtäväkatselmoinnit (fy7-4, 5, 6, 10, 12, 16 kolmella kielellä, en fy7-6 ja fy7-16 science full), en fy7-16:n kuvan kuvauksen
+käännös ja fy7-6:n L1-06:n Lenzin lain muotoilu ("pyrkii pitämään"). Opit: kierros 1 löysi kaksi lukua, joissa uusi tehtävä oli
+väärin (fy7-12:n vanha 41,7° palautteessa, fy7-14:n kalvofysiikka) ja yhden, jossa tehtävä paljasti Ennusta 1:n (fy7-8,
+fi-easy pedagogiikka); kuolleen pyöristyksen (19,745° → 19,7°) löysi vasta pedagogiikka. Kertaustehtävän uusi tilanne kannattaa
+tarkistaa koko luvun Ennusta-tehtäviä vasten jo kehittäjälle annettavassa paketissa.
+
 FY7 tehty (claude/fy7-lapikaynti, 0f-PR #681): fy7-1…fy7-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy)
 ja esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`), ulkoasu delta PASS. Opit: round.py --batch tarkistuksineen kestää
 noin 15 min per luku (layout), joten FY7:ssä ajettiin --skip-checks ja layout jätettiin CI:lle; tehtäväsarjojen visual-raportit
@@ -690,5 +697,11 @@ Opit: pedagogiikka hylkäsi L3-07:n rajan 1/20 (sama lasku kuin luvun esimerkiss
 ## §6 fy8-13 (PR #688, 2026-11-17)
 Kuvatehtävät fy8-13-L2-10 ja fy8-13-L3-06 (molemmat `fy8-13/vaimennus`), fi/en/fi-easy. Taulukkotehtävä (luku 13 kuuluu lukuihin 4/7/10/13/16) jäi pois: `docs/mafy-arvot.tsv`:ssä ei ole luvulle VERIFIED-riviä, eikä säteilyannoksen taulukkoa löytynyt mafytaulukot.fi:stä; lisää rivi, kun taulukon URL on tiedossa. Opit: (1) en- ja fi-easy-tiede ei siirry carryllä, koska `translation_differs` löytää vanhoista tehtävistä eron (en fy8-13-L2-03: alaindeksi `ka`/`avg`; fi-easy L2-09: ylimääräinen `$\text{mSv}$`-kaava tekstissä). (2) Järkevyys-rivin kuperuusperustelu meni väärin kahdesti (kupera käyrä on jänteen alapuolella); kirjoita "suora interpolointi antaa X, kupera käyrä on sen alapuolella". (3) Tiedekatselmoinnin Polish: L2-10:n d½ 5,0 cm vs. luvun noin 4 cm (Cs-137); fi-easy: "suora interpolointi", "kupera", "janan" vaikeita. Kulutus ylitti katon (konteksteja yht. noin 795 k, 168 % vertailusta; kolme kierrosta).
 
+## §6 fy8-14 (PR #692, 2026-11-17)
+Kuvatehtävät fy8-14-L2-08 (`fy8-14/kontrasti-points`, vastaavan luukerroksen paksuus) ja fy8-14-L2-09 (`fy8-14/fdg`, FDG-ruiskun aktiivisuus), fi/en/fi-easy. Taulukkotehtävä jäi pois: `docs/mafy-arvot.tsv`:ssä ei ole FY8-riviä. Opit: (1) en-tiede ei siirtynyt carryllä: `translation_differs` löytää eron vanhasta valintatehtävästä fy8-14-L1-06 (`answer` on kielikohtainen vastausteksti); tarkista tarkistuksen käsittely, sitten carry. (2) Polish, ei korjattu: L2-08:n toleranssi 0,06 ja L2-09:n 0,04 liian tiukat luvun lukutarkkuuteen nähden (ehdotus 0,08–0,09 ja 0,05–0,06); L2-08:n lause "luun voi korvata pehmytkudoskerroksella" kääntää osan c suunnan; L2-09:n merkitsevät numerot ja halkeamisreitti 480→240→120→60 ratkaisuun; `(esimerkkiaineisto)` vain L2-09:ssä; kuvissa tiheämpi akselien merkintä, luu-merkintä ja y-akselin 0.
+
 ## §5h mathlayout: join_wide ja with_punct (PR #691, 2026-11-17)
 `join_wide` ei liittänyt relaatiorivejä jatkoriviin jo mainissa (5g); jäljellä oli `&/`- ja `&\div`-rivi, jota ei tunnistettu jatkoriviksi (fy3-10: `/ (…) ≈ 0,083` liitettiin leveällä näytöllä). `CONT_OP` sai `/` ja `\div`. `with_punct` jättää loppu-`&`:n ja `\\`:n viimeiseksi, välimerkki viimeisen lausekkeen perään. Testit `test_mathlayout.py` (5h). `site/`: vain fy3-10 fi/en/fi-easy muuttui; check_layout 1280 ja 360 px ok; `reviews.py verify` ok, yksikään raportti ei vanhentunut (renderöinti ei kuulu hashiin).
+
+## §0i Kirjavinkit: kuusi uutta kirjaa (opettaja 2026-11-17)
+`content/fi/lukuvinkit.json` 14 → 20 kirjaa (Ehrlich, Press, Krauss, Ferguson, McEvoy–Zarate, Ruelle); järjestys helpoimmasta vaativimpaan; uusi `content/fi-easy/lukuvinkit.json` (selkoversio); en päivitetty. Tieteenhistoriallinen merkintä kirjan tekstissä (Tompkins, Ajan lyhyt historia, Thirty Years), ei uutta avainta. Lainamerkinnät ennallaan, uudet `false`. Uusien kirjojen linkit ovat Finnan hakulinkkejä (`Search/Results?lookfor=…&type=Title`), koska Finnan tietuetunnuksia ei voitu tarkistaa (pilviympäristön verkko esti `finna.fi`); opettaja korvaa ne tietuelinkeillä tarkistettuaan.

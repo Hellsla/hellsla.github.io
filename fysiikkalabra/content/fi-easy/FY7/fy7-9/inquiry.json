@@ -23,21 +23,21 @@
       "id": "kertaus-aalto",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: aallon taajuus ja aallonpituus",
-      "prompt": "Aallon taajuus kaksinkertaistuu, ja aallon nopeus pysyy samana. Miten aallonpituus muuttuu?",
+      "title": "Kertaa: aallonpituus ja taajuus hehkuvassa raudassa",
+      "prompt": "Hehkuvan raudan punaisen valon aallonpituus on $700\\,\\text{nm}$. Violetin valon aallonpituus on $400\\,\\text{nm}$. Molempien nopeus on $c = 3{,}00 \\cdot 10^{8}\\,\\text{m/s}$. Kumpi valo on taajuudeltaan suurempi?",
       "choices": [
         {
-          "text": "Se puolittuu.",
+          "text": "Violetti, koska sen aallonpituus on lyhyempi.",
           "correct": true,
-          "feedback": "Oikein. Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, joten $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituus $\\lambda$ puolittuu. Sama pätee valoon, jonka nopeus on $c$."
+          "feedback": "Oikein. Aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran, joten $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Nopeus on sama, joten lyhyempi aallonpituus tarkoittaa suurempaa taajuutta. Taajuus on $f = c : \\lambda$. Violetilla se on $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ ja punaisella $4{,}3 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Se kaksinkertaistuu.",
-          "feedback": "Kun taajuus kasvaa, jaksonaika lyhenee. Silloin aalto ehtii edetä lyhyemmän matkan yhden jakson aikana. Koska $v = f\\lambda$ ja $v$ pysyy samana, kaksinkertainen taajuus puolittaa aallonpituuden (luku *Aaltojen synty ja eteneminen*)."
+          "text": "Punainen, koska sen aallonpituus on pidempi.",
+          "feedback": "Pidempi aallonpituus tarkoittaa pienempää taajuutta. Nopeus on sama ja $v = f\\lambda$, joten $f = c : \\lambda$. Punaisella taajuus on $4{,}3 \\cdot 10^{14}\\,\\text{Hz}$ ja violetilla $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ (luku *Aaltojen synty ja eteneminen*)."
         },
         {
-          "text": "Se pysyy samana.",
-          "feedback": "Aallonpituus, taajuus ja nopeus liittyvät toisiinsa: $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*). Nopeus $v$ pysyy samana ja taajuus $f$ kaksinkertaistuu. Silloin aallonpituuden $\\lambda$ täytyy puolittua."
+          "text": "Niillä on sama taajuus, koska niiden nopeus on sama.",
+          "feedback": "Sama nopeus ei tarkoita samaa taajuutta. Koska $v = f\\lambda$, taajuus on $f = c : \\lambda$. Eri aallonpituuksilla taajuudet ovat erilaiset: punaisella $4{,}3 \\cdot 10^{14}\\,\\text{Hz}$ ja violetilla $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ (luku *Aaltojen synty ja eteneminen*)."
         }
       ],
       "optional": true

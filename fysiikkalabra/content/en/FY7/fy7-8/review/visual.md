@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 52a7875c4df574ef
+CONTENT-HASH: c7b50ebcfc2a22c7
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (4 rendered blocks) was captured from the built page (preview/en/fy7-8.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.
+- Delta round 3: fy7-8-stage-herata-390.png (Pohdinta) and my own 360 px capture of the retrieval task with all feedback opened: calculation rows aligned at the equals signs, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

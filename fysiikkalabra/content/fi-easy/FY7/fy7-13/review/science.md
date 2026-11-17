@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f9f01cda79f0e568
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: a1d131e9dc3b5e30
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Fringe spacing depends on geometry as well as wavelength (dy = lambda L : d; e.g. d = 0.1 mm, L = 2 m gives about 13 mm, so mm-cm spacing is right); laser safety paragraph (low-power teaching laser, no direct or reflected beams to eyes, check reflection directions) correct. Languages match. (language checked: fi-easy.)
+batch delta review: kohta -> rako in the retrieval prompt; 1,5 λ gives destructive interference, one correct option, feedback right.

@@ -47,4 +47,7 @@ a["check-inv"] = 5.0 * 230 / 12                 # mistake inverted ratio: 95,8 A
 # Exit ticket: N1 = 500, N2 = 25, U1 = 230 V
 a["exit-U2"] = 230 * 25 / 500                   # 11,5 V
 a["exit-third"] = (1 / 3) ** 2                  # current to a third: loss to a ninth
+# kertaus: peak value 325 V -> effective value U0 / sqrt(2) = 229,8 V -> 230 V; mistake U0 sqrt(2) = 459,6 V -> 460 V
+a["kertaus-Ueff"] = 325 / 2 ** 0.5
+a["kertaus-Ueff-wrong"] = 325 * 2 ** 0.5
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
