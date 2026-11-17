@@ -1,0 +1,8 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-17T02:19Z	fy8-6	FY8	science-reviewer	review	claude-opus-5-5	medium	delta	1	218157	14	5308	155906	56929	63779	6	57	6		0.4220	transcript	a413af01d8c6
+2026-11-17T02:19Z	fy8-6	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	435436	26	4946	368348	62116	62955	12	43	16		0.2785	transcript	25a99a9321bc
+2026-11-17T02:19Z	fy8-6	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	448474	24	5762	375020	67668	76505	11	46	21		0.3018	transcript	7e51affe46b2
+2026-11-17T02:19Z	fy8-6	FY8	developer	develop	claude-sonnet-5-5	medium	added	1	1685825	42	17742	1571907	96134	97566	21	525	22		0.7322	transcript	79f7e6488945
+2026-11-17T02:19Z	fy8-6	FY8	science-reviewer	review	claude-opus-5-5	medium	delta	1	268356	10	4113	197181	67052	67822	5	46	6		0.4570	transcript	48a3bdeb1617
+2026-11-17T02:19Z	fy8-6	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	126727	12	2866	88874	34975	35730	6	25	6		0.1339	transcript	db3ccefbc1fb
+2026-11-17T02:19Z	fy8-6	FY8	orchestrator	orchestrate	claude-opus-5-5		session	1	3797324	76	9777	3685198	102273	135990	32	959	29		1.7511	transcript	521f057562fd
