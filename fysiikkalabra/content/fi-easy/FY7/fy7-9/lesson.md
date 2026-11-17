@@ -424,7 +424,9 @@ Oletetaan, että Aurinko säteilee kuin musta kappale. Sen spektrin huippu on aa
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tunnetaan spektrin huipun aallonpituus $\lambda_\text{max} = 502\,\text{nm}$ ja Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$. Kysytään Auringon pintalämpötilaa $T$ kelvineinä.
+**Tunnetut ja kysytty.** Tunnetaan spektrin huipun aallonpituus $\lambda_\text{max} = 502\,\text{nm}$ ja Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$.
+
+Kysytään Auringon pintalämpötilaa $T$ kelvineinä.
 
 <!-- vaihe -->
 

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ddadbf06f1b09490
+CONTENT-HASH: 441e18e302d12686
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
-- Delta: the 5 re-broken blocks (10-12 Järkevyys, 10-L2 sum of n, Periaate n₁ sin α₁ chain, x chain, 26,0 mm check) at 390 and 1280 px, full size. Rows begin with a relation or a + between whole quantities, equals signs in one column, sentence punctuation inside the last row; wide form on one row. Rest not re-reviewed.
+- Delta (md-paragraphs only; three splits as in the fi version). I opened no fi-easy fy7-10 capture; the judgement rests on the identical structure in the fi fy7-10 capture (fy7-10-open-exercises-L2-1280-9) and the fi-easy fy7-9, fy7-11 and fy7-12 captures I did open: new paragraphs are separate blocks inside the solution card, boxes intact, no overflow.
+- Wording unchanged by the diff, plain Finnish.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

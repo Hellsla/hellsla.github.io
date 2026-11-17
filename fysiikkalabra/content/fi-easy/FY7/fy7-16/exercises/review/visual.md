@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: df62d128267c1f99
+CONTENT-HASH: ae56f8bdbdb30518
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
-- Delta: the 6 re-broken blocks (e_0 three times, ΔE, 211 dB check, interpolation of d) at 390 and 1280 px, full size. No break between a number and its power of ten or unit; fraction row of d fits the phone. Rest not re-reviewed.
+- Delta (md-paragraphs): solutions.md of fy7-16 (fi-easy) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

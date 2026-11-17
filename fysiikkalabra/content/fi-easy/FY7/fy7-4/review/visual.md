@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: bd8611e1cfd5ec3c
+CONTENT-HASH: f002197307b59da4
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] 390 px, Laskutehtävä Vihje 3 and the "Oikein" feedback of Koe 2 — the rows "= 4,0 A · 0,50 m · 0,20 T · sin 30°." and "F = 5,0 A · 0,20 m · 0,30 T · 0,5" are fitted flush against the box edge (readable, nothing cut) — a break before the last factor would give them room.
-- [Minor] 1280 px, Vihje 3 — an empty band under the formula box.
+- [Minor] none
 
 ## Checked
-- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.
+batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: afede84f73ce93f5
+CONTENT-HASH: 221482ffdfe8409c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Ohut kalvo paragraph: range $100$-$1000\,\text{nm}$ should read $100\ldots1000\,\text{nm}$ with the unit once.
 
 ## Checked
-- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.
+batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.

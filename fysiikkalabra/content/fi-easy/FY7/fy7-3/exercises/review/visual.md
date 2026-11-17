@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bc72886906999c14
+CONTENT-HASH: 2d66a1c9ff349bc8
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md:214 and :218 — at 390 px B₁ and B₂ stand alone on the first row with "= 4π·10⁻⁷ …" under them, while the neighbouring results (B₁ ≈ …) are inline; correct and readable, only uneven.
+- none
 
 ## Checked
-- Delta (reflow): solutions.md:29, 137, 194, 214, 218, 233 rendered from preview/fi-easy/fy7-3.html, every solution open, at 390 and 1280 px (own captures of all eight re-broken steps). Rows start with "=", "≈" or ":" between whole quantities; no number is separated from its power of ten or unit; punctuation inside the block; at 1280 px the ":" rows are joined to one line.
-- Overflow scan of every display formula, eq-chain and table at 360, 390 and 1280 px: none; no red KaTeX.
+- Delta (md-paragraphs): the diff of solutions.md (fi-easy, fy7-3) read word by word: only paragraphs cut in two, words unchanged.
+- Judged from the same solutions layout and identical diff (fi fy7-3 captures); fi-easy captures not opened. Captures opened at 1280 px, solutions open; paragraph breaks sit between whole thoughts, formula boxes, Vastaus and Järkevyys blocks intact, no clipping or overflow.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

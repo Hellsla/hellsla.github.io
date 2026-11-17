@@ -79,8 +79,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana). Jäljellä
-järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681). Jäljellä
+järjestyksessä FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 
@@ -113,6 +113,14 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
+
+## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
+Varattu: claude/reviews-translation-units
+Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
+(en `$\text{avg}$`) ja fi-easyn pelkkä yksikkökaava `$\text{mSv}$` (fi: sana "millisieverteinä") lasketaan eri kaavoiksi.
+Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final…), (b) pelkkä `\text{sana}`-kaava ei lisää kaavamäärää
+vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
+Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
