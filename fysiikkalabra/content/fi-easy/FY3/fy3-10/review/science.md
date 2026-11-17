@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c09510655da596f8
-
+CONTENT-HASH: 1e3401a595c10da7
 ## Blocking
 
 ## Polish
-- A latex helium balloon squeezed by hand to $150\,\text{kPa}$ (50 % overpressure) is not realistic, and the rubber's own tension is ignored. "Pallo" could be a sealed bottle or a syringe, or the volume change could be smaller. The physics of the given data is right.
 
 ## Checked
-batch delta review: new herata retrieval choice (Boyle, 3,0 l → 2,0 l at 100 kPa). Recomputed: p₂ = 150 kPa (correct), 67 kPa is inverted, 100 kPa means no change and 200 kPa assumes halving. Each feedback is right, the constant temperature and amount are stated, and there is one correct option. It does not reveal the Ennuste (p ∝ N at constant T, V): the retrieval keeps N fixed and the feedback only says the chapter explains the same thing with particles. lesson-answers.py agrees. lesson.md changes are presentation and teacher-approved figures.
+batch delta review: the retrieval choice "Kertaa: Boylen laki" now uses helium in a piston cylinder instead of a hand-squeezed balloon. This is a better model: the volume is set by the piston and the prompt still states that temperature and amount of gas stay constant, so Boyle's law $p_1V_1 = p_2V_2$ holds as stated (B condition present). Recomputed $p_2 = p_1V_1/V_2 = 100\,\text{kPa} \cdot 3{,}0/2{,}0 = 150\,\text{kPa}$; correct option and both feedbacks agree; the 200 kPa distractor's feedback (ratio 1,5, not 2) is right. Litre now typeset as `\textsf{l}`, ratio written $3{,}0 : 2{,}0$: typography only. Exactly one correct option.

@@ -1,10 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 5639040cc31fd4c3
+VERDICT: PASS
+CONTENT-HASH: 719473bcd792b302
 
 ## Blocking
-- **A (magnitudes), `inquiry.json` `kertaus`.** "Pallo puristetaan käsissä niin, että sen tilavuus on $2{,}0\,\text{l}$" leads to 150 kPa. That is an overpressure of about 50 kPa inside a latex party balloon squeezed by hand. Hands cannot apply that pressure over a balloon. The free rubber would also have to hold it: T = pr/2 ≈ 50 kPa · 0,09 m / 2 ≈ 2 kN/m, and a party balloon bursts far below that. The arithmetic is right, but the situation teaches a wrong picture of how much squeezing a balloon raises its pressure. The fix is to keep Boyle's numbers in a rigid container that fits the hook, for example helium from the bottle in a sealed syringe, 3,0 → 2,0 (ml or dm³). Another fix is to keep the balloon with a small change of volume. Keep "lämpötila ja kaasun määrä eivät muutu".
 
 ## Polish
+- The prompt "$3{,}0\,\textsf{l} 100\,\text{kPa}$:n paineessa" puts two quantities in one math span with no word between them. It reads better as "$3{,}0\,\textsf{l}$ heliumia $100\,\text{kPa}$:n paineessa" or with "ja".
+- The comment in lesson-answers.py still says "helium balloon ... squeezed", but the task now uses a piston cylinder. Update the comment so it matches the task.
 
 ## Checked
-batch delta review: the arithmetic of the new retrieval choice `kertaus` is recomputed: p₂ = p₁V₁/V₂ = 150 kPa, the only correct option. The distractors are wrong and their feedback right: 67 kPa is the inverted ratio, 100 kPa assumes no change, and 200 kPa assumes the volume halves. The choice does not reveal Ennuste (N doubled at constant T and V). lesson-answers.py agrees with my own values. The lesson.md changes are approved figures and paragraph breaks only.
+batch delta review: the Kertaa Boyle choice was rewritten as a piston cylinder, and it now holds 150 kPa realistically. The prompt states that temperature and the amount of gas stay constant, which is the condition Boyle's law needs. I recomputed p₂ = p₁V₁/V₂ = 100 · 3,0/2,0 = 150 kPa. Exactly one option is correct (150 kPa). Each distractor's feedback names its real error: 67 kPa is the inverted ratio (100 · 2,0/3,0 = 66,7), 100 kPa assumes pressure stays constant, and 200 kPa treats the volume as halved instead of using the ratio 1,5. The lesson-answers.py values kertaus-p2 = 150 and kertaus-kaanteinen = 66,67 agree with my recomputation. The lesson.md change is presentation only.
