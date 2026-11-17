@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c60138a802ac7672
+CONTENT-HASH: f3ffac398fc7e7d2
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta card, feedback — Q = cmΔT chain and t = Q/P (fraction) in two boxes read well; the second box could use \dfrac consistency with display style, but it already does.
+- [Minor] pr-lampo feedback: "Oikein:" and "Aika saadaan tehosta:" each introduce a display block; reads well, no change needed. Optional: end "Aika saadaan tehosta" with a full stop after the display (the block already ends in "≈ 21 s.").
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa: lämpömäärä ja teho) with feedback open at 390 px and 1280 px, plus stage-herata-390; chains aligned at "=", "$4190\,\text{J/(kg}\cdot\text{K)}$" unit and "$10\,\text{K}$" correct, nothing clipped, feedback stays inside the card. Captures made by me from preview/fi-easy.
+- batch delta review (round 2): own captures of the pr-lampo card (the changed feedback, correct choice committed, all feedbacks open) at 390 px (c2-fy3-7-390.png) and 1280 px (c2-fy3-7-1280.png) in the scratchpad. The linking phrase "Aika saadaan tehosta:" sits between the two aligned blocks; both blocks align at "=", the chain wraps after the operator at 390 px, units are LaTeX with thin spaces, nothing clipped. The sticky "Pohdinta" bar over the card in the 390 px capture is a capture artifact. Figures are untouched by the diff and were not reopened.
