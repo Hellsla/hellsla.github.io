@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: c7aab98dd0f35052
+VERDICT: PASS
+CONTENT-HASH: 0c7cf181c6be5ae9
 
 ## Blocking
-- Pohdinta `kertaus` gives away Prediction 2. It asks the perpendicular component of a pull at $30^\circ$ to the handle, on the same spanner, and answers $F\sin30^\circ$, half the force. Prediction 2 asks what a $30^\circ$ pull does to the moment, and its answer is 'halved'. Change the angle and the force (for example $50\,\text{N}$ at $40^\circ$), or ask for the component without the turning context.
 
 ## Polish
-None.
+- None blocking; keep the kertaus on weight only, with no hint of the arm or turning effect.
 
 ## Checked
-batch delta review (queue 8j): kertaus same phenomenon as hook (long wrench) but pre-solves pred-2; the other changes (numbers, reflow) read clearly.
+batch delta review (round 2): round-1 finding resolved: kertaus asks weight G = mg on the wrench, no trigonometry or arm; Ennusta 1 and 2 not given away; distractors (m, m/g) are real misconceptions.

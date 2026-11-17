@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1fc44c75a918efaa
+CONTENT-HASH: 1bc36482a9ab0633
 
 ## Blocking
-(none)
 
 ## Polish
-- Kertaus (flipperin nuppi, kolmas laki) on saman ilmiön kautta ja erillinen ennuste-1:stä (jousen voiman suunta); ei paljasta vastauksia.
+- Kertaus feedback 'Tässä luvussa tämä ero on tärkeä' (this distinction) is still vague; name it (the hand's force on the knob vs the knob's on the hand).
 
 ## Checked
-batch delta review (queue 8j): kertaus choice against the hook phenomenon and the Ennusta answers, feedback, answers.py numbers.
+batch delta review (round 2): round-1 finding resolved: kertaus asks only the magnitude (Newton 3), no direction, so Ennusta 1 (direction of the compressed spring's force) is not given away; four options with own feedback.

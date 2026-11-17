@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 64c93d72afaf7873
+VERDICT: PASS
+CONTENT-HASH: b7a89bc8b349b3a7
 
 ## Blocking
-- Kertaus feedback gives away Ennusta 2: 'Keskitangon vieressä Eetu kulkee samassa ajassa paljon lyhyemmän matkan' states that the child at the centre goes a shorter path in the same time, and the task uses the same Aino (2,0 m) and Eetu. Remove the Eetu sentence and the 'mitä tämä merkitsee nopeuksille' teaser, and use a different radius so the Ennusta pair is not pre-computed.
 
 ## Polish
-- Kertaus is otherwise on the hook's carousel and a real prior skill (2 pi r).
+- The photo caption (edge travels farther than near the axle) states Ennusta 2's answer in the lesson text; fine if the text follows the inquiry, otherwise cut that clause.
 
 ## Checked
-batch delta review: kertaus on the carousel; discloses Ennusta 2; numbers and answers in the diff consistent with answers.py and solutions (not recomputed).
+batch delta review (round 2): round-1 finding resolved: Eetu sentence and teaser gone, radius 1,5 m differs from Ennusta 2 (1,0/2,0 m), feedback says nothing of time or speed; circumference is a real prior skill (pi r, diameter distractors).

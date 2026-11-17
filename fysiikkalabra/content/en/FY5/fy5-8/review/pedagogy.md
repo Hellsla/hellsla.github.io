@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: e19609b31095853b
+VERDICT: PASS
+CONTENT-HASH: a135970976a541c6
 
 ## Blocking
-- Pohdinta `kertaus` gives away Prediction 1. The pinball plunger is pulled back and the answer is that the knob pulls the hand 'forwards', towards the rest position. Prediction 1 asks the same about a compressed trolley spring: the direction of the spring force. The feedback states the direction. Ask something Prediction 1 does not need, for example only whether the force on the hand is smaller than, equal to or larger than the $5.0\,\text{N}$ (Newton's third law, magnitude), or which body each force acts on, with no direction toward equilibrium.
 
 ## Polish
-None.
+- Kertaus feedback 'Tässä luvussa tämä ero on tärkeä' (this distinction) is still vague; name it (the hand's force on the knob vs the knob's on the hand).
 
 ## Checked
-batch delta review (queue 8j): kertaus on the pinball plunger like the hook, but pre-solves pred-1; the other changes (numbers, reflow) read clearly.
+batch delta review (round 2): round-1 finding resolved: kertaus asks only the magnitude (Newton 3), no direction, so Ennusta 1 (direction of the compressed spring's force) is not given away; four options with own feedback.

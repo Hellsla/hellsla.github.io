@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: b429d51623efdb2c
+VERDICT: PASS
+CONTENT-HASH: ef590b3be059e98f
 
 ## Blocking
-- Oikean vastauksen palaute sanoo: 'Eetu on keskitangon vieressä. Hän kulkee samassa ajassa paljon lyhyemmän matkan.' Kertaus käyttää samaa Ainoa ($r = 2{,}0\,\text{m}$) ja Eetua kuin ennuste-2, joten se antaa ennusteen vastauksen (Aino kulkee samassa ajassa pidemmän matkan, eli nopeampi) ennen ennustusta. Poista Eetua koskeva kaksi lausetta ja vaihda esim. säteeksi eri arvo kuin ennusteessa.
 
 ## Polish
-- Display-kaava ja sen perässä oleva piste ('$$...$$. Tässä ...') jättää irralliseen riviin yksinäisen pisteen; poista piste tai siirrä se kaavan sisään.
+- The photo caption (edge travels farther than near the axle) states Ennusta 2's answer in the lesson text; fine if the text follows the inquiry, otherwise cut that clause.
 
 ## Checked
-batch delta review (queue 8j): kertaus choice against the hook phenomenon and the Ennusta answers, feedback, answers.py numbers.
+batch delta review (round 2): round-1 finding resolved: Eetu sentence and teaser gone, radius 1,5 m differs from Ennusta 2 (1,0/2,0 m), feedback says nothing of time or speed; circumference is a real prior skill (pi r, diameter distractors).
