@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 91a1941d77b81148
-Mode: delta (coal heating value 24 -> 29 MJ/kg in L3-05 and in the reasonableness check of the fusion task)
+CONTENT-HASH: d47b4a3baee11581
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- exercises.json fy8-11-L2-09 — kohdassa b) pyydetään myös vertailua uraani-235:n 200 MeV:iin, mutta vastauslaatikko tarkistaa vain luvun; vertailu näkyy vasta ratkaisussa (Järkevyys) — lisää ratkaisuun yksi lause, jossa vertailun johtopäätös sanotaan ("tulos on samaa suuruusluokkaa kuin uraanin fissiossa"), tai kysy vertailu omana kohtanaan.
+- exercises.json fy8-11-L2-09 — "Oletetaan, että kuvaaja kuvaa myös näitä ytimiä" on oikea varaus, mutta tehtävä ei kerro, että A = 200 on keinotekoinen esimerkki (raskas ydin, ei uraani); ratkaisun "Järkevyys" kattaa tämän, ei tehtävä. Riittää nykyisellään.
+- solutions.md fy8-11-L3-06 — log2-ratkaisu (5,0 h · 9,966) voi olla tason 3 oppilaalle uusi; "2^10 = 1024 ≈ 1000" on Järkevyys-kohdassa, mutta se on myös helpoin tie. Nosta se kaavan viereen vaihtoehtoisena reittinä ("puolita kymmenen kertaa").
+- exercises.json fy8-11-L3-06 — tehtävä ei kerro kuvan aikaväliä (20 h); ekstrapolointi 50 h:iin on silti selvä, koska teksti sanoo sen. Valinnainen: mainitse "kuvassa on ensimmäiset 20 tuntia".
 
 ## Checked
-- fy8-11-L3-05: the heating value in the task text, in Annettu, in Muunnokset and in the substitution of part c) is the same $29\,\tfrac{\text{MJ}}{\text{kg}}$; the result $1{,}54 \cdot 10^{6}\,\text{t}$, the "noin $1{,}5$ miljoonaa tonnia" and the ratio "noin $2{,}8$ miljoonaa kertaa" follow from the shown numbers, so a student can follow part c) step by step.
-- The answer box (part b, 540 kg), the level (3: several linked steps, modelling assumptions) and the task's structure (situation, data, questions last) are untouched.
-- Fusion task's Järkevyys: $2{,}9 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$ still supports "noin $10^{7}$-kertaisesti"; the check reads as before.
-- No old value (24 MJ/kg, 1,86, 1,9 or 3,4 million) remains in exercises.json or solutions.md.
-- Finnish and notation of the changed lines: decimal comma, numbers with units in LaTeX, correct cases.
-- Hash unchanged at the end of the review.
+- L2-09 on taso 2 (graafin luku + perustelu), ei toista mallitehtävää; kuvaaja antaa tarvittavat arvot (A = 100 ja 200, ruudukko 0,1 MeV), eikä kuvaus anna vastausta.
+- L2-09 lukemat 7,9 ja 8,7 MeV ovat uskottavia; toleranssi 15 % (136–184 MeV) kattaa ruudukon lukuvirheen.
+- L2-09 ratkaisu etenee: luku, kaava Q = A(ε100 − ε200), sijoitus, epävarmuus, järkevyys uraaniin verraten.
+- L3-06 yhdistää fy8-9:n hajoamislain ja fission jätteen (Onkalo); tilanne ensin, kysymys viimeisenä virkkeenä, esimerkkiarvot sanottu.
+- L3-06 puoliintumisaika luettavissa (360 kBq kohdassa 5,0 h, tarkistus 10 h:ssa); toleranssi 5 % hyväksyy lukuvirheen 49–51 h.
+- L3-06 ratkaisu seurattavissa, ekstrapolointi perusteltu; kuvan kuvaus antaa saman tiedon ilman vastausta.
+- Suomen kieli ja termit (puoliintumisaika, aktiivisuus, sidosenergia) kunnossa; yksiköt ja sijamuodot oikein.
+- Hash alussa ja lopussa sama; kuvakaappauksia ei avattu, 360 px -asettelun tarkistus vihreä paketin mukaan.
