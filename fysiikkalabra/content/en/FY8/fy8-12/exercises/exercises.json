@@ -325,6 +325,19 @@
       "answer": 14,
       "unit": "µeV",
       "tolerance": 0.04
+    },
+    {
+      "id": "fy8-12-L2-09",
+      "level": 2,
+      "text": "The figure shows the net count rate of gamma radiation behind plates of an unknown material as a function of the total plate thickness $d$. Read the half-value thickness $d_{1/2}$ of the material off the graph and use it to calculate the net count rate when the plates are $30\\,\\text{mm}$ thick in total. Give the answer in pulses per minute.",
+      "figure": "fy8-12/tuntematon",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 141.4,
+      "unit": "pulssia/min",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -526,6 +539,20 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-12-L3-07",
+      "level": 3,
+      "text": "The figure shows the net count rate of gamma radiation behind plates of an unknown material as a function of the total plate thickness $d$. A workplace rule says that the net count rate caused by the source behind the shield may be at most $\\tfrac{1}{20}$ of the rate without a shield. Read the half-value thickness $d_{1/2}$ off the graph and use it to calculate how thick a layer of plates is needed. Is the greatest thickness of the graph, $48\\,\\text{mm}$, enough? Give the thickness in millimetres.",
+      "figure": "fy8-12/tuntematon",
+      "kind": [
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "answer": 52,
+      "unit": "mm",
+      "tolerance": 0.02
     }
   ]
 }

@@ -273,3 +273,25 @@ $$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vai
 - nimeän kaikissa neljässä tilanteessa todennäköisimmän vuorovaikutuksen ja perustelen sen taulukon osuuksilla
 - selitän, että valosähköisen absorption todennäköisyys kasvaa voimakkaasti järjestysluvun mukana ja että röntgenfotonien energia on alueella, jolla lyijy absorboi ne lähes aina
 - perustelen parinmuodostuksen kynnyksen $1{,}022\,\text{MeV}$ energian säilymisellä ja lasken liike-energian $4{,}0\,\text{MeV}$.
+
+## fy8-12-L2-09
+**Annettu:** kuvaaja: nettopulssitaajuus $R$ levyjen takana, kun levyjä ei ole, $R_0 = 800\,\text{pulssia/min}$; levyjen paksuus $d = 30\,\text{mm}$
+**Kysytty:** nettopulssitaajuus $R$ paksuuden $d$ takana pulsseina minuutissa
+**Periaate:** Gammasäteily vaimenee eksponentiaalisesti: jokainen puoliintumispaksuuden verran ainetta puolittaa nettopulssitaajuuden. Kuvaaja kuvaa nettopulssitaajuutta, joten taustasäteily on jo vähennetty ja vaimenemislaki pätee sellaisenaan.
+**Kuvaajan lukeminen:** Kuvaajan alkupiste on $800\,\text{pulssia/min}$ kohdassa $d = 0$. Puolet siitä, $400\,\text{pulssia/min}$, saavutetaan kohdassa $d = 12\,\text{mm}$, joten $d_{1/2} = 12\,\text{mm}$. Tarkistus: kohdassa $24\,\text{mm}$ käyrä on arvossa $200\,\text{pulssia/min}$, siis neljännes alkuarvosta.
+**Kaava:** $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; kysytty suure on jo yksin vasemmalla, joten kaavaa ei tarvitse ratkaista uudelleen.
+**Muunnokset:** Ei tarvita: $d$ ja $d_{1/2}$ ovat molemmat millimetreinä, joten niiden osamäärä on paljas luku.
+**Sijoitus:** $R = 800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{30\,\text{mm}/12\,\text{mm}} = 800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulssia/min} \cdot 0{,}17678 = 141{,}42\,\text{pulssia/min}$
+**Vastaus:** $140\,\text{pulssia/min}$ ($141{,}4$ käy myös), kaksi merkitsevää numeroa kuten luetussa puoliintumispaksuudessa $12\,\text{mm}$.
+**Järkevyys:** Paksuudessa $24\,\text{mm}$ on kaksi puoliintumispaksuutta ja pulssitaajuus $200\,\text{pulssia/min}$, paksuudessa $36\,\text{mm}$ kolme ja $100\,\text{pulssia/min}$. Paksuus $30\,\text{mm}$ on näiden puolivälissä, joten tulos $140\,\text{pulssia/min}$ on arvojen $200$ ja $100$ välissä.
+
+## fy8-12-L3-07
+**Annettu:** kuvaaja: nettopulssitaajuus ilman suojaa $R_0 = 800\,\text{pulssia/min}$; sallittu nettopulssitaajuus suojan takana $R = \tfrac{R_0}{20} = 40\,\text{pulssia/min}$; kuvaajan paksuusalue päättyy arvoon $48\,\text{mm}$
+**Kysytty:** levykerroksen paksuus $d$ millimetreinä ja päätelmä, riittääkö $48\,\text{mm}$
+**Periaate:** Gammasäteilyn vaimeneminen noudattaa lakia $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, koska jokainen yhtä paksu kerros päästää läpi saman osuuden. Kuvaaja ei yllä vaadittuun arvoon $40\,\text{pulssia/min}$, joten paksuus on laskettava laista, ei luettava.
+**Kuvaajan lukeminen:** Alkupiste on $800\,\text{pulssia/min}$. Puolet, $400\,\text{pulssia/min}$, saavutetaan kohdassa $d = 12\,\text{mm}$, joten $d_{1/2} = 12\,\text{mm}$. Kuvaajan viimeinen kohta $d = 48\,\text{mm}$ on arvossa noin $50\,\text{pulssia/min}$, joka on yli sallitun arvon $40\,\text{pulssia/min}$.
+**Kaava:** $\tfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; logaritmi molemmin puolin: $\ln \tfrac{R_0}{R} = \tfrac{d}{d_{1/2}} \ln 2$, josta $d = d_{1/2} \cdot \dfrac{\ln \tfrac{R_0}{R}}{\ln 2}$
+**Muunnokset:** Ei tarvita: paksuus on jo millimetreinä ja osamäärä $\tfrac{R_0}{R} = 20$ on paljas luku.
+**Sijoitus:** $d = 12\,\text{mm} \cdot \dfrac{\ln 20}{\ln 2} = 12\,\text{mm} \cdot \dfrac{2{,}9957}{0{,}69315} = 12\,\text{mm} \cdot 4{,}3219 = 51{,}86\,\text{mm}$
+**Vastaus:** $52\,\text{mm}$. Raja on "enintään", joten paksuus pyöristetään turvallisen puolen vuoksi ylöspäin; kaksi merkitsevää numeroa kuten luetussa arvossa $12\,\text{mm}$. Päätelmä: kuvaajan suurin paksuus $48\,\text{mm}$ ei riitä, koska sen takana pulssitaajuus on $800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{4} = 50\,\text{pulssia/min}$, yli sallitun. Tarvitaan vähintään $52\,\text{mm}$ levyjä.
+**Järkevyys:** Neljä puoliintumispaksuutta ($48\,\text{mm}$) antaa osuuden $\tfrac{1}{16}$ ja viisi ($60\,\text{mm}$) osuuden $\tfrac{1}{32}$. Osuus $\tfrac{1}{20}$ on näiden välissä, joten paksuuden on oltava välillä $48\,\text{mm}$ ja $60\,\text{mm}$; tulos $52\,\text{mm}$ sopii siihen.
