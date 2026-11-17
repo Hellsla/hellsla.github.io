@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 88cc39fef4d4cd2a
-SCOPE: delta added-exercise from d3a203d5ab60251f base e238aa983a09
+CONTENT-HASH: 9867eda1ac6b16d0
+SCOPE: delta added-exercise from 0dd97b80b772b1e9 base 5b3ca4f81c77
 
 ## Blocking
 
-(none)
-
 ## Polish
-
-- fy8-13-L2-09 b) and c) — b) repeats L2-05 (share of a source from a dose table) and c) repeats L2-08 (rate times hours); the new part is d). Drop b) and let a) feed d) directly.
-- fy8-13-L2-09 d) — the model answer cites 0,45 and 0,33 mSv that the student may not have read in a); ask in a) for the external sources too, or soften the answer.
-- fy8-13-L2-09 box — the box (c) does not need the reports; consider boxing the share of radon that rate-measurement cannot see (needs a), or accept.
 
 ## Checked
 
-- Both links answer 200; two sources, 5,9 mSv total and radon about two thirds match the solution's example reading.
-- 0,10 µSv/h x 8760 h = 0,876 mSv; unit conversion shown; sanity check present.
-- d) asks why an external dose-rate meter misses radon, a real and prepared misconception (internal vs external).
-- Fits level 2, four parts.
-- Method: delta, added exercise only.
+- L2-10 Järkevyys line (only change): 12 cm lies closer to 10 cm (20) than to 15 cm (10); linear interpolation 20 - 10·2/5 = 16.
+- Convex decreasing curve lies below the chord, so the value is slightly under 16; 80·0,5^2,4 = 15,16, answer 15 is consistent.
+- The earlier line said "above the midpoint 15", which was weak; the new reasoning is correct and teaches the check.
+- Nothing else changed; earlier PASS on L2-10 and L3-06 holds.
+- Method: delta, the changed line in context.
