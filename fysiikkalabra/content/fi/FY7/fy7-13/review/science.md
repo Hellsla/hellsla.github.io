@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f00a3423b60b35d4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 0c93728f3baf1a43
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- "kalvon kahden viereisen kohdan kautta" is vague; "kalvon kahden kapean raon kautta" says what the source is.
 
 ## Checked
-- Fringe spacing depends on geometry as well as wavelength (dy = lambda L : d; e.g. d = 0.1 mm, L = 2 m gives about 13 mm, so mm-cm spacing is right); laser safety paragraph (low-power teaching laser, no direct or reflected beams to eyes, check reflection directions) correct. Languages match. (language checked: fi.)
+batch delta review: only the prompt changed; 1,5 lambda with sources in phase -> destructive is the one correct option, feedback unchanged and right; Ennusta (denser grating, colour) not revealed.

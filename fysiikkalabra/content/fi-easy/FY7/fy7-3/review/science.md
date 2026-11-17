@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 647388c3ad9838b2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 21e9f8f58ab66d6a
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The prompt already says the needle points north, so the task mostly answers itself; asking why it points north would test more.
 
 ## Checked
-- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.
+batch delta review: retrieval choice (Earth's field sets the needle when there is no current; copper is not magnetic; about 50 µT; the dipole aligns with the field, the perpendicular force is for a moving charge): one correct option and the feedback is right; does not reveal Ennusta (solenoid stretched, solenoid end); new B(r) figure description is consistent with 200/100/50 µT.

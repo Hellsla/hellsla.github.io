@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: ae5fdc4921d613b8
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The prompt already states the needle points north, so the question is really "why"; consider "Miksi neula osoittaa pohjoiseen?".
+- "Kupari ei ole magneettista ainetta": "ei ole ferromagneettinen aine" (as fy7-6 says) is the precise form (C, not blocking).
 
 ## Checked
-- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.
+batch delta review: new retrieval (compass beside a currentless copper wire): one correct option (along Earth's field), distractor feedback right, Earth's field ~50 µT fine; Ennusta (stretched coil, coil end) not revealed.

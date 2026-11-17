@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9156a50e302c58c1
+CONTENT-HASH: ec8ad306b173c291
 
 ## Blocking
 
+
 ## Polish
-- content/fi/FY7/fy7-5/inquiry.json:18 (hook) — C. "Magneetti käämin vieressä ei tuottanut virtaa" means a magnet at rest, and lesson.md says "paikallaan oleva magneetti käämin vieressä ei saa aikaan mitään". A student could still read it as "a magnet never gives a current", but the dynamo sentences before it, where the lamp lights only while the wheel turns, prevent that. No change is needed. If a word is wanted, "paikallaan oleva" names the condition without giving the answer away.
+- Distractor "F = |q|v ≈ 3,2e-13 N": its feedback could add that |q|v does not even have the unit N.
 
 ## Checked
-- The hash is the same at the start and the end.
-- Delta: only the hook text changed. It no longer says "liikkuva magneetti tuotti". No number, symbol, question, option or feedback changed, so the earlier recomputation still stands.
-- Physics of the new sentence: a stationary magnet beside a coil induces no current (ΔΦ = 0). That is correct and agrees with the Ydinajatus and the Faraday figure.
-- History: in 1831 Faraday studied whether magnetism can produce a current. This is accurate.
-- The hook question still asks what decides whether a voltage appears. The answer (a change of flux) is now left to the student, and nothing later in the lesson relied on the removed clause.
-- The earlier Polish item on lamp brightness at speed still applies (C) and is unchanged.
+batch delta review: F = |q|vB = 1,602e-19·2,0e6·0,50 = 1,6e-13 N recomputed, direction perpendicular to v and B right; exactly one correct option; lesson-answers.py agrees; Ennusta (coil wholly in field, double speed) not revealed.

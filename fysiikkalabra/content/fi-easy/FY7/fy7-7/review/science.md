@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42a602adbf0f36c8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 48b0ef9563664fcd
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson-answers.py still holds the old `kertaus-e = 0.0` line for the removed task; remove it.
 
 ## Checked
-- $P = UI$ from rms values now limited to a purely resistive load (current and voltage in phase); general case depends on the power factor — correct. Inquiry feedbacks ("resistiivisen kuorman teho", "vastuksen keskimääräinen teho") and summary match. New sentence: with $\Phi = BA\cos(2\pi ft)$, $e = -N\,\mathrm{d}\Phi/\mathrm{d}t = NBA\,2\pi f\sin(2\pi ft)$ is instantaneous, greatest in magnitude when $\Phi = 0$ and zero when $\Phi$ is extreme — verified. fi, en, fi-easy agree. Hash identical at start and end.
+batch delta review: f = 1/T = 1/5,0 s = 0,20 Hz, consistent with the hook and with wind-rotor-f; the 5,0 Hz and 2,0 Hz distractors are wrong and their feedback is right; one correct option; Ennusta (coil position at the voltage maximum, doubled frequency) not revealed.

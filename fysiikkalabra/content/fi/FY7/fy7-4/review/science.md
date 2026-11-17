@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c2d11b5d1dc9750b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8153c4d8afd7e776
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-- Diff is only $\mu_0 = $ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ in the force-between-wires formula text and one inquiry line (word-level diff: nothing else). Consistent with the following sentence that the ampere was defined by this force until 2019. fi, en, fi-easy identical in substance. Hash identical at start and end.
+batch delta review: B = mu0 I/(2 pi r) with 0,50 A: 10 µT at 1,0 cm, 5,0 µT at 2,0 cm recomputed; the given 10 µT is consistent with the current; one correct option; distractors 2,5 µT and 10 µT with right feedback; Ennusta (current balance, angle) not revealed.

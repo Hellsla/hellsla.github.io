@@ -1,13 +1,10 @@
-VERDICT: PASS
-CONTENT-HASH: f6d4777566df2cb3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 1e62b986a2ea19df
 
 ## Blocking
-- none
+- A (consistency/number): the third option "Se ei taitu, koska 30° on pieni tulokulma." keeps the old water-to-air value in its feedback, "taitekulma on noin $41{,}7^\circ$". From air into glass with n = 1,48 the angle is $19{,}8^\circ$. Replace 41,7° with 19,8°.
 
 ## Polish
-- [Minor] fig "water" aria-label (lessons/FY7/fy7-12/figures.py, figures.json, lesson.md): "ilmaan ei pääse valoa, vaan koko säde heijastuu" could echo the new wording (ei etenevää taittunutta sädettä); not wrong in the ideal model.
 
 ## Checked
-- TIR: no propagating refracted ray, ideal lossless boundary reflects all incident power, evanescent field near boundary in one sentence: correct. Critical angle water-air 48.8 deg (arcsin 1/1.333) unchanged. Endoscope: traditional fibrescope (illumination bundle + coherent image bundle) vs video endoscope with chip-on-tip camera, fibres for illumination only: correct. Languages match. (language checked: fi-easy.)
-- Round 2: definition "Tämä on kokonaisheijastuminen" now follows the law-of-reflection sentence; "eikä energiaa siirry toiseen aineeseen" for an ideal boundary is correct (evanescent field carries no time-averaged power across); fi, en, fi-easy match.
+batch delta review: recomputed asin(sin 30°/1,48) = 19,75°, so 19,8° toward the normal is right in the correct option and the first distractor; one correct option; Ennusta (critical angle, air or cladding) not revealed; lesson-answers.py matches.

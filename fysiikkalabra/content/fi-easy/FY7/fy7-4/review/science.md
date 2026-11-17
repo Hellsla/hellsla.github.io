@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b72feb4f29c1d660
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 4479c9b92810f528
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- "Kaiuttimen kaapelin yhdessä johtimessa": in a real two-wire cable the return current mostly cancels the field; the task means one conductor alone, which is acceptable here.
 
 ## Checked
-- Diff is only $\mu_0 = $ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ in the force-between-wires formula text and one inquiry line (word-level diff: nothing else). Consistent with the following sentence that the ampere was defined by this force until 2019. fi, en, fi-easy identical in substance. Hash identical at start and end.
+batch delta review: recomputed B = µ0I/(2πr) = 10 µT at 1,0 cm and 5,0 µT at 2,0 cm for 0,50 A; 2,5 µT (1/r²) and 10 µT are wrong and the feedback says why; one correct option; Ennusta (current balance, angle) not revealed; lesson-answers.py matches.
