@@ -1,404 +1,404 @@
 {
-  "level1": [
+ "level1": [
+  {
+   "id": "fy8-11-L1-01",
+   "level": 1,
+   "text": "Fuusioreaktorissa tritiumia voidaan tuottaa litiumista. Reaktio on ${}^{6}_{3}\\text{Li} + {}^{1}_{0}\\text{n} \\rightarrow {}^{4}_{2}\\text{He} + {}^{3}_{1}\\text{H}$. Atomimassat ovat: litium-6 $6{,}0151229\\,\\text{u}$, neutroni $1{,}0086649\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja tritium $3{,}0160493\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+   "answer": 4.78,
+   "unit": "MeV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L1-02",
+   "level": 1,
+   "text": "Erään uraani-235:n fissioreaktion tuotteiden yhteenlaskettu massa on $0{,}1915\\,\\text{u}$ pienempi kuin lähtöaineiden massa. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+   "answer": 178,
+   "unit": "MeV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L1-03",
+   "level": 1,
+   "text": "Ketjureaktion sukupolvessa $0$ on $1000$ neutronia, ja kasvukerroin on $k = 0{,}90$. Kuinka monta neutronia ketjussa on keskimäärin sukupolvessa $10$?",
+   "answer": 349,
+   "unit": "",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L1-04",
+   "level": 1,
+   "core": true,
+   "text": "Kahden deuteriumytimen fuusiossa syntyy helium-3-ydin ja neutroni: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, helium-3 $3{,}0160293\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+   "answer": 3.27,
+   "unit": "MeV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L1-05",
+   "level": 1,
+   "text": "Neutronin massa on $1{,}0086649\\,\\text{u}$. Kuinka suurta energiaa neutronin massa vastaa? Anna vastaus megaelektronivoltteina.",
+   "answer": 939.6,
+   "unit": "MeV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L1-06",
+   "level": 1,
+   "core": true,
+   "text": "Ydinreaktorissa polttoainesauvojen välissä on hidastinta, esimerkiksi vettä. Mikä on hidastimen tehtävä?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy8-11-L1-01",
-      "level": 1,
-      "text": "Fuusioreaktorissa tritiumia voidaan tuottaa litiumista. Reaktio on ${}^{6}_{3}\\text{Li} + {}^{1}_{0}\\text{n} \\rightarrow {}^{4}_{2}\\text{He} + {}^{3}_{1}\\text{H}$. Atomimassat ovat: litium-6 $6{,}0151229\\,\\text{u}$, neutroni $1{,}0086649\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja tritium $3{,}0160493\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
-      "answer": 4.78,
-      "unit": "MeV",
-      "tolerance": 0.02
+     "text": "Se imee neutroneja itseensä, jolloin kasvukerroin pysyy lähellä lukua yksi eikä ketjureaktio pääse kiihtymään hallitsemattomasti.",
+     "feedback": "Tämä on säätösauvojen tehtävä. Säätösauvat sisältävät ainetta, joka sitoo neutroneja. Niillä säädetään kasvukerrointa. Hidastin ei poista neutroneja. Se pienentää niiden nopeutta."
     },
     {
-      "id": "fy8-11-L1-02",
-      "level": 1,
-      "text": "Erään uraani-235:n fissioreaktion tuotteiden yhteenlaskettu massa on $0{,}1915\\,\\text{u}$ pienempi kuin lähtöaineiden massa. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
-      "answer": 178,
-      "unit": "MeV",
-      "tolerance": 0.02
+     "text": "Se siirtää fissioissa vapautuneen lämmön turbiinille, koska vesi johtaa lämpöä paremmin kuin uraanipolttoaine itse.",
+     "feedback": "Lämmön siirtäminen on jäähdytteen tehtävä. Vesi voi toimia reaktorissa sekä jäähdytteenä että hidastimena. Hidastimen oma tehtävä liittyy neutroneihin, ei lämmönsiirtoon."
     },
     {
-      "id": "fy8-11-L1-03",
-      "level": 1,
-      "text": "Ketjureaktion sukupolvessa $0$ on $1000$ neutronia, ja kasvukerroin on $k = 0{,}90$. Kuinka monta neutronia ketjussa on keskimäärin sukupolvessa $10$?",
-      "answer": 349,
-      "unit": "",
-      "tolerance": 0.02
+     "text": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
+     "correct": true,
+     "feedback": "Oikein. Fissiossa syntyvät neutronit ovat hyvin nopeita. Uraani-235-ydin kaappaa hitaan neutronin helpommin kuin nopean. Hidastin törmäyttää neutronit kevyisiin ytimiin ja pienentää niiden nopeutta. Silloin ketjureaktio jatkuu."
     },
     {
-      "id": "fy8-11-L1-04",
-      "level": 1,
-      "core": true,
-      "text": "Kahden deuteriumytimen fuusiossa syntyy helium-3-ydin ja neutroni: ${}^{2}_{1}\\text{H} + {}^{2}_{1}\\text{H} \\rightarrow {}^{3}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, helium-3 $3{,}0160293\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
-      "answer": 3.27,
-      "unit": "MeV",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy8-11-L1-05",
-      "level": 1,
-      "text": "Neutronin massa on $1{,}0086649\\,\\text{u}$. Kuinka suurta energiaa neutronin massa vastaa? Anna vastaus megaelektronivoltteina.",
-      "answer": 939.6,
-      "unit": "MeV",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy8-11-L1-06",
-      "level": 1,
-      "core": true,
-      "text": "Ydinreaktorissa polttoainesauvojen välissä on hidastinta, esimerkiksi vettä. Mikä on hidastimen tehtävä?",
-      "kind": [
-        "concept"
-      ],
-      "answer": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Se imee neutroneja itseensä, jolloin kasvukerroin pysyy lähellä lukua yksi eikä ketjureaktio pääse kiihtymään hallitsemattomasti.",
-          "feedback": "Tämä on säätösauvojen tehtävä. Säätösauvat sisältävät ainetta, joka sitoo neutroneja. Niillä säädetään kasvukerrointa. Hidastin ei poista neutroneja. Se pienentää niiden nopeutta."
-        },
-        {
-          "text": "Se siirtää fissioissa vapautuneen lämmön turbiinille, koska vesi johtaa lämpöä paremmin kuin uraanipolttoaine itse.",
-          "feedback": "Lämmön siirtäminen on jäähdytteen tehtävä. Vesi voi toimia reaktorissa sekä jäähdytteenä että hidastimena. Hidastimen oma tehtävä liittyy neutroneihin, ei lämmönsiirtoon."
-        },
-        {
-          "text": "Se hidastaa nopeat neutronit, koska hitaat neutronit aiheuttavat uraani-235:n fissioita todennäköisemmin kuin nopeat.",
-          "correct": true,
-          "feedback": "Oikein. Fissiossa syntyvät neutronit ovat hyvin nopeita. Uraani-235-ydin kaappaa hitaan neutronin helpommin kuin nopean. Hidastin törmäyttää neutronit kevyisiin ytimiin ja pienentää niiden nopeutta. Silloin ketjureaktio jatkuu."
-        },
-        {
-          "text": "Se lisää neutronien määrää, koska hidastuessaan jokainen neutroni jakautuu useammaksi pienemmäksi neutroniksi eri suuntiin.",
-          "feedback": "Neutroni ei jakaudu osiin hidastuessaan. Se menettää liike-energiaa törmäyksissä. Neutronien määrä kasvaa vain fissioissa. Jokaisessa fissiossa vapautuu kaksi tai kolme uutta neutronia."
-        }
-      ]
-    },
-    {
-      "id": "fy8-11-L1-07",
-      "level": 1,
-      "text": "Auringon ytimessä vety fuusioituu heliumiksi noin $15 \\cdot 10^{6}\\,\\text{K}$:n lämpötilassa. Miksi fuusio vaatii näin korkean lämpötilan?",
-      "kind": [
-        "concept"
-      ],
-      "answer": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Kuumassa ytimien massa pienenee, ja tämä massan pieneneminen on se energia, jonka fuusio tarvitsee käynnistyäkseen.",
-          "feedback": "Lämpötila ei pienennä ytimien massaa. Fuusiossa massa pienenee vasta reaktiossa. Massaeroa vastaava energia vapautuu. Sitä ei tarvita käynnistykseen."
-        },
-        {
-          "text": "Korkea lämpötila tekee ytimistä radioaktiivisia, ja vasta radioaktiiviset ytimet voivat yhtyä toisiinsa ydinvoimien vaikutuksesta.",
-          "feedback": "Fuusioituvat ytimet, kuten vety ja deuterium, ovat vakaita. Ne eivät muutu radioaktiivisiksi lämmetessään. Lämpötila vaikuttaa ytimien nopeuteen, ei niiden vakauteen."
-        },
-        {
-          "text": "Ytimet yhtyvät vain nesteessä, ja korkea lämpötila tarvitaan siihen, että aine pysyy nestemäisenä koko reaktion ajan.",
-          "feedback": "Näin kuumassa aine on plasmaa, ei nestettä. Syy ei ole aineen olomuoto. Syy on se, että ytimien välinen sähköinen hylkiminen täytyy voittaa suurella liike-energialla."
-        },
-        {
-          "text": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
-          "correct": true,
-          "feedback": "Oikein. Atomiytimillä on positiivinen varaus, joten ne hylkivät toisiaan. Vasta kun ytimet ovat hyvin lähellä toisiaan, lyhyen kantaman ydinvoimat voittavat hylkimisen. Korkeassa lämpötilassa ytimillä on tarpeeksi liike-energiaa lähestymiseen."
-        }
-      ]
-    },
-    {
-      "id": "fy8-11-L1-08",
-      "level": 1,
-      "text": "Yhdessä uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$ energiaa. Kuinka paljon tämä on jouleina? Käytä muuntokerrointa $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus yksikössä $10^{-11}\\,\\text{J}$.",
-      "answer": 3.2,
-      "unit": "10⁻¹¹ J",
-      "tolerance": 0.02
+     "text": "Se lisää neutronien määrää, koska hidastuessaan jokainen neutroni jakautuu useammaksi pienemmäksi neutroniksi eri suuntiin.",
+     "feedback": "Neutroni ei jakaudu osiin hidastuessaan. Se menettää liike-energiaa törmäyksissä. Neutronien määrä kasvaa vain fissioissa. Jokaisessa fissiossa vapautuu kaksi tai kolme uutta neutronia."
     }
-  ],
-  "level2": [
+   ]
+  },
+  {
+   "id": "fy8-11-L1-07",
+   "level": 1,
+   "text": "Auringon ytimessä vety fuusioituu heliumiksi noin $15 \\cdot 10^{6}\\,\\text{K}$:n lämpötilassa. Miksi fuusio vaatii näin korkean lämpötilan?",
+   "kind": [
+    "concept"
+   ],
+   "answer": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy8-11-L2-01",
-      "level": 2,
-      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Reaktori vapauttaa energiaa, ja siksi sen polttoaineen massa pienenee. Kuinka paljon massa pienenee vuodessa ($365\\,\\text{d}$)? Oleta, että reaktori toimii koko vuoden täydellä teholla. Anna vastaus kilogrammoina.",
-      "answer": 1.51,
-      "unit": "kg",
-      "tolerance": 0.02
+     "text": "Kuumassa ytimien massa pienenee, ja tämä massan pieneneminen on se energia, jonka fuusio tarvitsee käynnistyäkseen.",
+     "feedback": "Lämpötila ei pienennä ytimien massaa. Fuusiossa massa pienenee vasta reaktiossa. Massaeroa vastaava energia vapautuu. Sitä ei tarvita käynnistykseen."
     },
     {
-      "id": "fy8-11-L2-02",
-      "level": 2,
-      "text": "Deuteriumin ja tritiumin fuusiossa ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$ atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, tritium $3{,}0160493\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa vapautuu, kun yksi kilogramma deuterium–tritium-seosta fuusioituu? Käytä $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Anna vastaus yksikössä $10^{14}\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
-      "answer": 3.37,
-      "unit": "10¹⁴ J/kg",
-      "tolerance": 0.02
+     "text": "Korkea lämpötila tekee ytimistä radioaktiivisia, ja vasta radioaktiiviset ytimet voivat yhtyä toisiinsa ydinvoimien vaikutuksesta.",
+     "feedback": "Fuusioituvat ytimet, kuten vety ja deuterium, ovat vakaita. Ne eivät muutu radioaktiivisiksi lämmetessään. Lämpötila vaikuttaa ytimien nopeuteen, ei niiden vakauteen."
     },
     {
-      "id": "fy8-11-L2-03",
-      "level": 2,
-      "text": "Uraani-235 voi jakautua myös reaktiossa $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$. Atomimassat ovat: uraani-235 $235{,}0439282\\,\\text{u}$, ksenon-140 $139{,}9216458\\,\\text{u}$, strontium-94 $93{,}9153556\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Päättele ensin neutronien määrä $x$. Laske sitten, kuinka paljon energiaa reaktiossa vapautuu. Anna vastaus megaelektronivoltteina.",
-      "answer": 185,
-      "unit": "MeV",
-      "tolerance": 0.02
+     "text": "Ytimet yhtyvät vain nesteessä, ja korkea lämpötila tarvitaan siihen, että aine pysyy nestemäisenä koko reaktion ajan.",
+     "feedback": "Näin kuumassa aine on plasmaa, ei nestettä. Syy ei ole aineen olomuoto. Syy on se, että ytimien välinen sähköinen hylkiminen täytyy voittaa suurella liike-energialla."
     },
     {
-      "id": "fy8-11-L2-04",
-      "level": 2,
-      "text": "Koejärjestelyssä ketjun neutronimäärä kasvaa $40$ sukupolvessa luvusta $1000$ lukuun $5000$. Kasvukerroin $k$ pysyy koko ajan samana. Kuinka monta prosenttia neutronien määrä kasvaa sukupolvesta seuraavaan?",
-      "answer": 4.11,
-      "unit": "%",
-      "tolerance": 0.02
-    },
-    {
-      "id": "fy8-11-L2-05",
-      "level": 2,
-      "core": true,
-      "text": "Reaktorin käynnistyskokeessa mitattiin neutronien määrä ketjussa viidessä peräkkäisessä sukupolvessa (taulukko, esimerkkiaineisto). Oleta, että kasvukerroin $k$ pysyy koko ajan samana.\n\na) Määritä kasvukerroin $k$ taulukon ensimmäisen ja viimeisen arvon avulla. Onko reaktori alikriittinen, kriittinen vai ylikriittinen?\n\nb) Kuinka monta neutronia ketjussa olisi sukupolvessa $50$, jos kasvukerroin pysyisi samana?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
-      "kind": [
-        "data",
-        "reasoning"
-      ],
-      "answer": 1860,
-      "unit": "",
-      "tolerance": 0.03,
-      "data": {
-        "caption": "Neutronien määrä ketjussa, esimerkkiaineisto",
-        "columns": [
-          "Sukupolvi $g$",
-          "Neutroneja $N_g$"
-        ],
-        "rows": [
-          [
-            "0",
-            "1000"
-          ],
-          [
-            "1",
-            "1013"
-          ],
-          [
-            "2",
-            "1022"
-          ],
-          [
-            "3",
-            "1038"
-          ],
-          [
-            "4",
-            "1049"
-          ],
-          [
-            "5",
-            "1064"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy8-11-L2-06",
-      "level": 2,
-      "text": "Taulukossa ovat Suomen ydinvoimalareaktoreiden nettosähkötehot pyöristettyinä (TVO:n ja Fortumin verkkosivut, tilanne 2024).\n\na) Laske reaktoreiden yhteenlaskettu nettosähköteho.\n\nb) Reaktorit tuottavat vuodessa ($365\\,\\text{d}$) energiaa $90\\,\\%$ siitä, mitä ne tuottaisivat käydessään koko vuoden nimellisteholla (kapasiteettikerroin $0{,}90$, oletus). Kuinka paljon sähköenergiaa se on? Anna vastaus terawattitunteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
-      "kind": [
-        "data"
-      ],
-      "answer": 34.6,
-      "unit": "TWh",
-      "tolerance": 0.02,
-      "data": {
-        "caption": "Suomen ydinvoimalareaktorit, nettosähköteho (MW) (TVO:n ja Fortumin verkkosivut, tilanne 2024)",
-        "columns": [
-          "Voimala",
-          "Reaktori",
-          "$P\\,(\\text{MW})$"
-        ],
-        "rows": [
-          [
-            "Olkiluoto",
-            "OL1",
-            "890"
-          ],
-          [
-            "Olkiluoto",
-            "OL2",
-            "890"
-          ],
-          [
-            "Olkiluoto",
-            "OL3",
-            "1600"
-          ],
-          [
-            "Loviisa",
-            "LO1",
-            "507"
-          ],
-          [
-            "Loviisa",
-            "LO2",
-            "507"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy8-11-L2-07",
-      "level": 2,
-      "core": true,
-      "text": "Oppilas kirjoittaa: ”Uraani-235-ydin kaappaa neutronin ja jakautuu. Ennen reaktiota nukleoneja on $236$ ja reaktion jälkeen $236$, joten tuotteiden massa on sama kuin lähtöaineiden massa. Siksi fissiossa ei vapaudu energiaa.” Fissio kuitenkin vapauttaa energiaa. Mikä oppilaan päättelyssä on virhe?",
-      "kind": [
-        "error",
-        "concept"
-      ],
-      "answer": "Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja, joten massa pienenee ja massaero vapautuu energiana.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja, joten massa pienenee ja massaero vapautuu energiana.",
-          "correct": true,
-          "feedback": "Oikein. Nukleonien lukumäärä säilyy, mutta massa ei riipu pelkästään lukumäärästä. Tuotteissa sidosenergia nukleonia kohti on suurempi, joten niiden kokonaismassa on pienempi. Massaeroa vastaava energia vapautuu."
-        },
-        {
-          "text": "Nukleonien määrä ei säily fissiossa, koska osa nukleoneista muuttuu energiaksi ja katoaa, joten tuotteissa on vähemmän nukleoneja.",
-          "feedback": "Nukleonien määrä säilyy. Ennen reaktiota ja sen jälkeen niitä on $236$, kun vapautuneet neutronit lasketaan mukaan. Mikään nukleoni ei muutu energiaksi. Massa pienenee siksi, että sidosenergia kasvaa."
-        },
-        {
-          "text": "Massa ja energia ovat toisistaan erillisiä, joten energiaa voi vapautua ilman, että kokonaismassa muuttuu lainkaan reaktiossa.",
-          "feedback": "Massa ja energia eivät ole erillisiä. Massan ja energian ekvivalenssin mukaan vapautuva energia vastaa massan pienenemistä, $Q = \\Delta m\\,c^2$. Ilman massaeroa energiaa ei vapautuisi."
-        },
-        {
-          "text": "Tuotteiden nukleonit ovat löyhemmin sidottuja kuin lähtöaineiden, joten tuotteiden massa on suurempi ja energia vapautuu massan kasvaessa.",
-          "feedback": "Tilanne on päinvastainen. Tuotteissa sidosenergia nukleonia kohti on suurempi, ei pienempi. Tiukemmin sidottujen nukleonien kokonaismassa on pienempi. Pienenevä massa vapauttaa energiaa."
-        }
-      ]
-    },
-    {
-      "id": "fy8-11-L2-08",
-      "level": 2,
-      "kind": [
-        "concept",
-        "reasoning"
-      ],
-      "text": "Ajatellaan reaktiota, jossa hiili-12-ydin jakautuu kolmeksi helium-4-ytimeksi: ${}^{12}_{6}\\text{C} \\rightarrow 3\\,{}^{4}_{2}\\text{He}$. Hiili-12:n sidosenergia nukleonia kohti on $7{,}680\\,\\text{MeV}$. Helium-4:n sidosenergia nukleonia kohti on $7{,}074\\,\\text{MeV}$.\n\nVapautuuko tässä jakautumisessa energiaa?",
-      "answer": "Reaktio vaatii energiaa.",
-      "unit": "",
-      "tolerance": 0.02,
-      "choices": [
-        {
-          "text": "Reaktiossa vapautuu energiaa.",
-          "feedback": "Jakautuminen ei aina vapauta energiaa. Vertaa sidosenergiaa nukleonia kohti ennen reaktiota ja sen jälkeen."
-        },
-        {
-          "text": "Reaktio vaatii energiaa.",
-          "correct": true,
-          "feedback": "Oikein: jakautuminen vaatii noin $7{,}3\\,\\text{MeV}$ energiaa. Käänteinen reaktio vapauttaa saman energian. Siinä kolme helium-4-ydintä yhtyy hiili-12:ksi eli fuusioituu."
-        },
-        {
-          "text": "Energiaa ei vapaudu eikä kulu.",
-          "feedback": "Nukleonien määrä säilyy, mutta massa ei säily. Energiaa vapautuu tai kuluu, kun sidosenergia nukleonia kohti muuttuu. Tässä se muuttuu arvosta $7{,}680\\,\\text{MeV}$ arvoon $7{,}074\\,\\text{MeV}$."
-        }
-      ],
-      "reason_prompt": "Mikä perustelu selittää vastauksesi?",
-      "reasons": [
-        {
-          "text": "Kun ydin jakautuu osiin, sen sidosenergia vapautuu syntyvien ytimien liike-energiaksi.",
-          "feedback": "Sidosenergia ei ole ytimeen varastoitunutta energiaa. Se vapautui, kun ydin muodostui. Sama energia tarvitaan, kun ydin hajotetaan osiin."
-        },
-        {
-          "text": "Ytimen jakautuminen vaatii aina energiaa, koska vahva vuorovaikutus sitoo nukleonit yhteen.",
-          "feedback": "Jakautuminen ei vaadi aina energiaa: uraani-235:n fissio vapauttaa noin $200\\,\\text{MeV}$. Ratkaisevaa on, kasvaako vai pieneneekö sidosenergia nukleonia kohti."
-        },
-        {
-          "text": "Tuotteissa nukleonit ovat löyhemmin sidottuja, joten sidosenergia on yhteensä pienempi.",
-          "correct": true,
-          "feedback": "Oikein: $12$ nukleonin sidosenergia pienenee arvosta $92{,}16\\,\\text{MeV}$ arvoon $84{,}89\\,\\text{MeV}$. Erotus on siis tuotava reaktioon."
-        },
-        {
-          "text": "Nukleonien määrä on molemmin puolin $12$, joten mikään osa ytimistä ei muutu energiaksi.",
-          "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny siitä, että nukleonit katoavat. Se syntyy sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
-        }
-      ]
+     "text": "Ytimet hylkivät toisiaan sähköisesti, joten ne tarvitsevat suuren liike-energian päästäkseen toisiaan lähelle.",
+     "correct": true,
+     "feedback": "Oikein. Atomiytimillä on positiivinen varaus, joten ne hylkivät toisiaan. Vasta kun ytimet ovat hyvin lähellä toisiaan, lyhyen kantaman ydinvoimat voittavat hylkimisen. Korkeassa lämpötilassa ytimillä on tarpeeksi liike-energiaa lähestymiseen."
     }
-  ],
-  "level3": [
+   ]
+  },
+  {
+   "id": "fy8-11-L1-08",
+   "level": 1,
+   "text": "Yhdessä uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$ energiaa. Kuinka paljon tämä on jouleina? Käytä muuntokerrointa $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Anna vastaus yksikössä $10^{-11}\\,\\text{J}$.",
+   "answer": 3.2,
+   "unit": "10⁻¹¹ J",
+   "tolerance": 0.02
+  }
+ ],
+ "level2": [
+  {
+   "id": "fy8-11-L2-01",
+   "level": 2,
+   "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Reaktori vapauttaa energiaa, ja siksi sen polttoaineen massa pienenee. Kuinka paljon massa pienenee vuodessa ($365\\,\\text{d}$)? Oleta, että reaktori toimii koko vuoden täydellä teholla. Anna vastaus kilogrammoina.",
+   "answer": 1.51,
+   "unit": "kg",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L2-02",
+   "level": 2,
+   "text": "Deuteriumin ja tritiumin fuusiossa ${}^{2}_{1}\\text{H} + {}^{3}_{1}\\text{H} \\rightarrow {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$ atomimassat ovat: deuterium $2{,}0141018\\,\\text{u}$, tritium $3{,}0160493\\,\\text{u}$, helium-4 $4{,}0026033\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Kuinka paljon energiaa vapautuu, kun yksi kilogramma deuterium–tritium-seosta fuusioituu? Käytä $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Anna vastaus yksikössä $10^{14}\\,\\tfrac{\\text{J}}{\\text{kg}}$.",
+   "answer": 3.37,
+   "unit": "10¹⁴ J/kg",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L2-03",
+   "level": 2,
+   "text": "Uraani-235 voi jakautua myös reaktiossa $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$. Atomimassat ovat: uraani-235 $235{,}0439282\\,\\text{u}$, ksenon-140 $139{,}9216458\\,\\text{u}$, strontium-94 $93{,}9153556\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Päättele ensin neutronien määrä $x$. Laske sitten, kuinka paljon energiaa reaktiossa vapautuu. Anna vastaus megaelektronivoltteina.",
+   "answer": 185,
+   "unit": "MeV",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L2-04",
+   "level": 2,
+   "text": "Koejärjestelyssä ketjun neutronimäärä kasvaa $40$ sukupolvessa luvusta $1000$ lukuun $5000$. Kasvukerroin $k$ pysyy koko ajan samana. Kuinka monta prosenttia neutronien määrä kasvaa sukupolvesta seuraavaan?",
+   "answer": 4.11,
+   "unit": "%",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L2-05",
+   "level": 2,
+   "core": true,
+   "text": "Reaktorin käynnistyskokeessa mitattiin neutronien määrä ketjussa viidessä peräkkäisessä sukupolvessa (taulukko, esimerkkiaineisto). Oleta, että kasvukerroin $k$ pysyy koko ajan samana.\n\na) Määritä kasvukerroin $k$ taulukon ensimmäisen ja viimeisen arvon avulla. Onko reaktori alikriittinen, kriittinen vai ylikriittinen?\n\nb) Kuinka monta neutronia ketjussa olisi sukupolvessa $50$, jos kasvukerroin pysyisi samana?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "kind": [
+    "data",
+    "reasoning"
+   ],
+   "answer": 1860,
+   "unit": "",
+   "tolerance": 0.03,
+   "data": {
+    "caption": "Neutronien määrä ketjussa",
+    "columns": [
+     "Sukupolvi $g$",
+     "Neutroneja $N_g$"
+    ],
+    "rows": [
+     [
+      "0",
+      "1000"
+     ],
+     [
+      "1",
+      "1013"
+     ],
+     [
+      "2",
+      "1022"
+     ],
+     [
+      "3",
+      "1038"
+     ],
+     [
+      "4",
+      "1049"
+     ],
+     [
+      "5",
+      "1064"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy8-11-L2-06",
+   "level": 2,
+   "text": "Taulukossa ovat Suomen ydinvoimalareaktoreiden nettosähkötehot pyöristettyinä (TVO:n ja Fortumin verkkosivut, tilanne 2024).\n\na) Laske reaktoreiden yhteenlaskettu nettosähköteho.\n\nb) Reaktorit tuottavat vuodessa ($365\\,\\text{d}$) energiaa $90\\,\\%$ siitä, mitä ne tuottaisivat käydessään koko vuoden nimellisteholla (kapasiteettikerroin $0{,}90$, oletus). Kuinka paljon sähköenergiaa se on? Anna vastaus terawattitunteina.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "kind": [
+    "data"
+   ],
+   "answer": 34.6,
+   "unit": "TWh",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Suomen ydinvoimalareaktorit, nettosähköteho (MW) (TVO:n ja Fortumin verkkosivut, tilanne 2024)",
+    "columns": [
+     "Voimala",
+     "Reaktori",
+     "$P\\,(\\text{MW})$"
+    ],
+    "rows": [
+     [
+      "Olkiluoto",
+      "OL1",
+      "890"
+     ],
+     [
+      "Olkiluoto",
+      "OL2",
+      "890"
+     ],
+     [
+      "Olkiluoto",
+      "OL3",
+      "1600"
+     ],
+     [
+      "Loviisa",
+      "LO1",
+      "507"
+     ],
+     [
+      "Loviisa",
+      "LO2",
+      "507"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy8-11-L2-07",
+   "level": 2,
+   "core": true,
+   "text": "Oppilas kirjoittaa: ”Uraani-235-ydin kaappaa neutronin ja jakautuu. Ennen reaktiota nukleoneja on $236$ ja reaktion jälkeen $236$, joten tuotteiden massa on sama kuin lähtöaineiden massa. Siksi fissiossa ei vapaudu energiaa.” Fissio kuitenkin vapauttaa energiaa. Mikä oppilaan päättelyssä on virhe?",
+   "kind": [
+    "error",
+    "concept"
+   ],
+   "answer": "Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja, joten massa pienenee ja massaero vapautuu energiana.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
     {
-      "id": "fy8-11-L3-01",
-      "level": 3,
-      "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kussakin uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$. Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Oleta, että koko lämpöteho syntyy uraani-235:n fissioista. Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuorokaudessa?",
-      "answer": 4.5,
-      "unit": "kg",
-      "tolerance": 0.02
+     "text": "Nukleonien määrä säilyy, mutta tuotteiden nukleonit ovat tiukemmin sidottuja, joten massa pienenee ja massaero vapautuu energiana.",
+     "correct": true,
+     "feedback": "Oikein. Nukleonien lukumäärä säilyy, mutta massa ei riipu pelkästään lukumäärästä. Tuotteissa sidosenergia nukleonia kohti on suurempi, joten niiden kokonaismassa on pienempi. Massaeroa vastaava energia vapautuu."
     },
     {
-      "id": "fy8-11-L3-02",
-      "level": 3,
-      "text": "Auringon säteilyteho on $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Energia syntyy Auringon ytimessä fuusiossa. Kokonaisreaktiossa neljästä vetyytimestä syntyy yksi helium-4-ydin.\n\nVapautuva energia saadaan neljän vetyatomin ja yhden heliumatomin massojen erotuksesta. Vetyatomin massa on $1{,}0078250\\,\\text{u}$ ja helium-4-atomin massa $4{,}0026033\\,\\text{u}$.\n\nKuinka monta heliumydintä Auringossa syntyy sekunnissa? Oleta, että kaikki vapautuva energia päätyy säteilytehoksi. Anna vastaus yksikössä $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
-      "answer": 8.94,
-      "unit": "10³⁷ 1/s",
-      "tolerance": 0.02
+     "text": "Nukleonien määrä ei säily fissiossa, koska osa nukleoneista muuttuu energiaksi ja katoaa, joten tuotteissa on vähemmän nukleoneja.",
+     "feedback": "Nukleonien määrä säilyy. Ennen reaktiota ja sen jälkeen niitä on $236$, kun vapautuneet neutronit lasketaan mukaan. Mikään nukleoni ei muutu energiaksi. Massa pienenee siksi, että sidosenergia kasvaa."
     },
     {
-      "id": "fy8-11-L3-03",
-      "level": 3,
-      "text": "Käytetyssä ydinpolttoaineessa on plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$. Kuinka kauan kestää, ennen kuin sen aktiivisuus on pienentynyt tuhannesosaan alkuperäisestä? Anna vastaus yksikössä $10^{5}\\,\\text{a}$.",
-      "answer": 2.4,
-      "unit": "10⁵ a",
-      "tolerance": 0.02
+     "text": "Massa ja energia ovat toisistaan erillisiä, joten energiaa voi vapautua ilman, että kokonaismassa muuttuu lainkaan reaktiossa.",
+     "feedback": "Massa ja energia eivät ole erillisiä. Massan ja energian ekvivalenssin mukaan vapautuva energia vastaa massan pienenemistä, $Q = \\Delta m\\,c^2$. Ilman massaeroa energiaa ei vapautuisi."
     },
     {
-      "id": "fy8-11-L3-04",
-      "level": 3,
-      "text": "Reaktorista poistetun käytetyn ydinpolttoaineen aktiivisuus mitattiin jäähdytysaltaassa viiden vuosikymmenen ajan (taulukko, esimerkkiaineisto, aktiivisuus tonnia polttoainetta kohti). Aika $t$ lasketaan noin $10$ vuotta poiston jälkeen, kun lyhytikäiset fissiotuotteet ovat jo hajonneet. Tällöin aktiivisuuden määräävät pääasiassa cesium-137 ja strontium-90.\n\na) Piirrä aktiivisuuden luonnollinen logaritmi $\\ln A$ ajan funktiona. Sovita pisteisiin suora ja määritä sen avulla aktiivisuuden puoliintumisaika.\n\nb) Kuinka monta vuotta kuluu, kunnes fissiotuotteiden aktiivisuus on laskenut arvoon $100\\,\\tfrac{\\text{TBq}}{\\text{t}}$ (esimerkkiarvo), jos aktiivisuus noudattaa koko ajan samaa hajoamislakia?\n\nc) Perustele, miksi todellinen aktiivisuus ei noudata tätä lakia enää satojen vuosien kuluttua. Perustele myös, miksi Onkaloon loppusijoitettu polttoaine on eristettävä tuhansia vuosia. Käytä esimerkkinä plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$.\n\nVastauslaatikkoon tulee kohdan b) tulos vuosina.",
-      "kind": [
-        "data",
-        "graph",
-        "model",
-        "reasoning"
-      ],
-      "answer": 250,
-      "unit": "a",
-      "tolerance": 0.05,
-      "data": {
-        "caption": "Käytetyn polttoaineen aktiivisuus, esimerkkiaineisto",
-        "columns": [
-          "$t\\,(\\text{a})$",
-          "$A\\,(\\tfrac{\\text{TBq}}{\\text{t}})$"
-        ],
-        "rows": [
-          [
-            "0",
-            "30000"
-          ],
-          [
-            "10",
-            "23900"
-          ],
-          [
-            "20",
-            "19250"
-          ],
-          [
-            "30",
-            "15050"
-          ],
-          [
-            "40",
-            "11950"
-          ],
-          [
-            "50",
-            "9650"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "fy8-11-L3-05",
-      "level": 3,
-      "text": "Loviisan voimalan yhden reaktorin nettosähköteho on $507\\,\\text{MW}$ (Fortum, 2024).\n\nOleta, että voimalan hyötysuhde on $0{,}33$. Silloin sähköteho on $33\\,\\%$ reaktorin lämpötehosta. Oleta myös, että reaktori toimii $92\\,\\%$ vuodesta ($365\\,\\text{d}$) täydellä teholla. Oleta lisäksi, että kaikki lämpöteho syntyy uraani-235:n fissioista, joissa kussakin vapautuu $200\\,\\text{MeV}$.\n\nUraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske reaktorin lämpöteho ja se teho, joka siirtyy voimalasta jäähdytysveteen.\n\nb) Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuodessa?\n\nc) Kuinka monta tonnia kivihiiltä pitäisi polttaa saman lämpöenergian tuottamiseksi, kun kivihiilen lämpöarvo on $29\\,\\tfrac{\\text{MJ}}{\\text{kg}}$? Mitä vertailu kertoo ydinreaktioiden ja palamisen energioista?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
-      "kind": [
-        "model",
-        "reasoning"
-      ],
-      "answer": 540,
-      "unit": "kg",
-      "tolerance": 0.02
+     "text": "Tuotteiden nukleonit ovat löyhemmin sidottuja kuin lähtöaineiden, joten tuotteiden massa on suurempi ja energia vapautuu massan kasvaessa.",
+     "feedback": "Tilanne on päinvastainen. Tuotteissa sidosenergia nukleonia kohti on suurempi, ei pienempi. Tiukemmin sidottujen nukleonien kokonaismassa on pienempi. Pienenevä massa vapauttaa energiaa."
     }
-  ]
+   ]
+  },
+  {
+   "id": "fy8-11-L2-08",
+   "level": 2,
+   "kind": [
+    "concept",
+    "reasoning"
+   ],
+   "text": "Ajatellaan reaktiota, jossa hiili-12-ydin jakautuu kolmeksi helium-4-ytimeksi: ${}^{12}_{6}\\text{C} \\rightarrow 3\\,{}^{4}_{2}\\text{He}$. Hiili-12:n sidosenergia nukleonia kohti on $7{,}680\\,\\text{MeV}$. Helium-4:n sidosenergia nukleonia kohti on $7{,}074\\,\\text{MeV}$.\n\nVapautuuko tässä jakautumisessa energiaa?",
+   "answer": "Reaktio vaatii energiaa.",
+   "unit": "",
+   "tolerance": 0.02,
+   "choices": [
+    {
+     "text": "Reaktiossa vapautuu energiaa.",
+     "feedback": "Jakautuminen ei aina vapauta energiaa. Vertaa sidosenergiaa nukleonia kohti ennen reaktiota ja sen jälkeen."
+    },
+    {
+     "text": "Reaktio vaatii energiaa.",
+     "correct": true,
+     "feedback": "Oikein: jakautuminen vaatii noin $7{,}3\\,\\text{MeV}$ energiaa. Käänteinen reaktio vapauttaa saman energian. Siinä kolme helium-4-ydintä yhtyy hiili-12:ksi eli fuusioituu."
+    },
+    {
+     "text": "Energiaa ei vapaudu eikä kulu.",
+     "feedback": "Nukleonien määrä säilyy, mutta massa ei säily. Energiaa vapautuu tai kuluu, kun sidosenergia nukleonia kohti muuttuu. Tässä se muuttuu arvosta $7{,}680\\,\\text{MeV}$ arvoon $7{,}074\\,\\text{MeV}$."
+    }
+   ],
+   "reason_prompt": "Mikä perustelu selittää vastauksesi?",
+   "reasons": [
+    {
+     "text": "Kun ydin jakautuu osiin, sen sidosenergia vapautuu syntyvien ytimien liike-energiaksi.",
+     "feedback": "Sidosenergia ei ole ytimeen varastoitunutta energiaa. Se vapautui, kun ydin muodostui. Sama energia tarvitaan, kun ydin hajotetaan osiin."
+    },
+    {
+     "text": "Ytimen jakautuminen vaatii aina energiaa, koska vahva vuorovaikutus sitoo nukleonit yhteen.",
+     "feedback": "Jakautuminen ei vaadi aina energiaa: uraani-235:n fissio vapauttaa noin $200\\,\\text{MeV}$. Ratkaisevaa on, kasvaako vai pieneneekö sidosenergia nukleonia kohti."
+    },
+    {
+     "text": "Tuotteissa nukleonit ovat löyhemmin sidottuja, joten sidosenergia on yhteensä pienempi.",
+     "correct": true,
+     "feedback": "Oikein: $12$ nukleonin sidosenergia pienenee arvosta $92{,}16\\,\\text{MeV}$ arvoon $84{,}89\\,\\text{MeV}$. Erotus on siis tuotava reaktioon."
+    },
+    {
+     "text": "Nukleonien määrä on molemmin puolin $12$, joten mikään osa ytimistä ei muutu energiaksi.",
+     "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny siitä, että nukleonit katoavat. Se syntyy sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
+    }
+   ]
+  }
+ ],
+ "level3": [
+  {
+   "id": "fy8-11-L3-01",
+   "level": 3,
+   "text": "Olkiluoto 3:n reaktorin lämpöteho on $4300\\,\\text{MW}$. Kussakin uraani-235:n fissiossa vapautuu keskimäärin $200\\,\\text{MeV}$. Uraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$. Oleta, että koko lämpöteho syntyy uraani-235:n fissioista. Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuorokaudessa?",
+   "answer": 4.5,
+   "unit": "kg",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-02",
+   "level": 3,
+   "text": "Auringon säteilyteho on $3{,}83 \\cdot 10^{26}\\,\\text{W}$. Energia syntyy Auringon ytimessä fuusiossa. Kokonaisreaktiossa neljästä vetyytimestä syntyy yksi helium-4-ydin.\n\nVapautuva energia saadaan neljän vetyatomin ja yhden heliumatomin massojen erotuksesta. Vetyatomin massa on $1{,}0078250\\,\\text{u}$ ja helium-4-atomin massa $4{,}0026033\\,\\text{u}$.\n\nKuinka monta heliumydintä Auringossa syntyy sekunnissa? Oleta, että kaikki vapautuva energia päätyy säteilytehoksi. Anna vastaus yksikössä $10^{37}\\,\\tfrac{1}{\\text{s}}$.",
+   "answer": 8.94,
+   "unit": "10³⁷ 1/s",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-03",
+   "level": 3,
+   "text": "Käytetyssä ydinpolttoaineessa on plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$. Kuinka kauan kestää, ennen kuin sen aktiivisuus on pienentynyt tuhannesosaan alkuperäisestä? Anna vastaus yksikössä $10^{5}\\,\\text{a}$.",
+   "answer": 2.4,
+   "unit": "10⁵ a",
+   "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-04",
+   "level": 3,
+   "text": "Reaktorista poistetun käytetyn ydinpolttoaineen aktiivisuus mitattiin jäähdytysaltaassa viiden vuosikymmenen ajan (taulukko, esimerkkiaineisto, aktiivisuus tonnia polttoainetta kohti). Aika $t$ lasketaan noin $10$ vuotta poiston jälkeen, kun lyhytikäiset fissiotuotteet ovat jo hajonneet. Tällöin aktiivisuuden määräävät pääasiassa cesium-137 ja strontium-90.\n\na) Piirrä aktiivisuuden luonnollinen logaritmi $\\ln A$ ajan funktiona. Sovita pisteisiin suora ja määritä sen avulla aktiivisuuden puoliintumisaika.\n\nb) Kuinka monta vuotta kuluu, kunnes fissiotuotteiden aktiivisuus on laskenut arvoon $100\\,\\tfrac{\\text{TBq}}{\\text{t}}$ (esimerkkiarvo), jos aktiivisuus noudattaa koko ajan samaa hajoamislakia?\n\nc) Perustele, miksi todellinen aktiivisuus ei noudata tätä lakia enää satojen vuosien kuluttua. Perustele myös, miksi Onkaloon loppusijoitettu polttoaine on eristettävä tuhansia vuosia. Käytä esimerkkinä plutonium-239:ää, jonka puoliintumisaika on $24\\,100\\,\\text{a}$.\n\nVastauslaatikkoon tulee kohdan b) tulos vuosina.",
+   "kind": [
+    "data",
+    "graph",
+    "model",
+    "reasoning"
+   ],
+   "answer": 250,
+   "unit": "a",
+   "tolerance": 0.05,
+   "data": {
+    "caption": "Käytetyn polttoaineen aktiivisuus",
+    "columns": [
+     "$t\\,(\\text{a})$",
+     "$A\\,(\\tfrac{\\text{TBq}}{\\text{t}})$"
+    ],
+    "rows": [
+     [
+      "0",
+      "30000"
+     ],
+     [
+      "10",
+      "23900"
+     ],
+     [
+      "20",
+      "19250"
+     ],
+     [
+      "30",
+      "15050"
+     ],
+     [
+      "40",
+      "11950"
+     ],
+     [
+      "50",
+      "9650"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy8-11-L3-05",
+   "level": 3,
+   "text": "Loviisan voimalan yhden reaktorin nettosähköteho on $507\\,\\text{MW}$ (Fortum, 2024).\n\nOleta, että voimalan hyötysuhde on $0{,}33$. Silloin sähköteho on $33\\,\\%$ reaktorin lämpötehosta. Oleta myös, että reaktori toimii $92\\,\\%$ vuodesta ($365\\,\\text{d}$) täydellä teholla. Oleta lisäksi, että kaikki lämpöteho syntyy uraani-235:n fissioista, joissa kussakin vapautuu $200\\,\\text{MeV}$.\n\nUraani-235:n atomimassa on $235{,}0439282\\,\\text{u}$, $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Laske reaktorin lämpöteho ja se teho, joka siirtyy voimalasta jäähdytysveteen.\n\nb) Kuinka monta kilogrammaa uraani-235:tä fissioituu reaktorissa vuodessa?\n\nc) Kuinka monta tonnia kivihiiltä pitäisi polttaa saman lämpöenergian tuottamiseksi, kun kivihiilen lämpöarvo on $29\\,\\tfrac{\\text{MJ}}{\\text{kg}}$? Mitä vertailu kertoo ydinreaktioiden ja palamisen energioista?\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+   "kind": [
+    "model",
+    "reasoning"
+   ],
+   "answer": 540,
+   "unit": "kg",
+   "tolerance": 0.02
+  }
+ ]
 }
