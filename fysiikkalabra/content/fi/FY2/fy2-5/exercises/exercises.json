@@ -155,7 +155,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: polttopuun tehollinen lämpöarvo kosteuden mukaan",
+        "caption": "Polttopuun tehollinen lämpöarvo kosteuden mukaan",
         "columns": [
           "Kosteus $(\\%)$",
           "$H\\,(\\text{MJ/kg})$"
@@ -336,7 +336,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: talon lämmitykseen tarvittava hyötyenergia kuukausittain",
+        "caption": "Talon lämmitykseen tarvittava hyötyenergia kuukausittain",
         "columns": [
           "Kuukausi",
           "$E\\,(\\text{kWh})$"
@@ -406,7 +406,7 @@
       "unit": "kg",
       "tolerance": 0.01,
       "data": {
-        "caption": "Esimerkkiaineisto: kolme kattilavaihtoehtoa",
+        "caption": "Kolme kattilavaihtoehtoa",
         "columns": [
           "Kattila",
           "$H\\,(\\text{MJ/kg})$",

@@ -165,7 +165,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: magneettivuo yhden kierroksen läpi",
+        "caption": "Magneettivuo yhden kierroksen läpi",
         "columns": [
           "$t\\,(\\text{s})$",
           "$\\Phi\\,(\\text{mWb})$"
@@ -215,7 +215,7 @@
       "unit": "T",
       "tolerance": 0.04,
       "data": {
-        "caption": "Esimerkkiaineisto: jännite ja vauhti",
+        "caption": "Jännite ja vauhti",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$e\\,(\\text{mV})$"
@@ -328,7 +328,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Esimerkkiaineisto: tangon jännite ajan funktiona",
+        "caption": "Tangon jännite ajan funktiona",
         "columns": [
           "$t\\,(\\text{s})$",
           "$e\\,(\\text{mV})$"
@@ -374,7 +374,7 @@
       "unit": "mWb",
       "tolerance": 0.05,
       "data": {
-        "caption": "Esimerkkiaineisto: käämin jännite",
+        "caption": "Käämin jännite",
         "columns": [
           "$t\\,(\\text{ms})$",
           "$e\\,(\\text{V})$"
