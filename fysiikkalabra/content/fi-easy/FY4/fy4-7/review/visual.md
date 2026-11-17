@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ce8184e7c6b1574a
+CONTENT-HASH: 2f11fca3210eb0d4
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json: palautteen $$…$$-kaava jää virkkeen keskelle ja piste erilleen omalle rivilleen; harkitse pistettä kaavan sisään tai kaavan jälkeen uutta virkettä.
+(none)
 
 ## Checked
-batch delta review: diff read (Kertaa-kysymys / kuvaus text, lukuyksiköt LaTeXina, päätteet, selkeä suomi); sim, figure row captures not re-opened as the diff does not change them. Plain quantities none found in the diff.
+- batch delta review: opened example-390 captures (fi-easy, fy4-7); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4bbddaf2fec46c63
+CONTENT-HASH: c7cda6e3d342094f
 
 ## Blocking
 None.
@@ -8,4 +8,7 @@ None.
 None.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-06, fi-390-07 and fi-1280-04, fi-1280-05; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Delta (md-paragraphs): opened shots/sol-fy4-5-L1-06-390.png and sol-fy4-5-L1-08-390.png in full. L1-06: Mallivastaus splits into "three forces, weight and normal force equal, friction slows" and "no motion force, velocity not a force, normal force stays", two separate things. L1-08: the answer, the general "N is not always G" with the horizontal/downward cases, and the zero-normal-force limit each get a paragraph. Spacing even, nothing clipped, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d274051f9856b0c2
+CONTENT-HASH: e211602d06fc6fec
 
 ## Blocking
 None.
@@ -8,4 +8,9 @@ None.
 None.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-12, fi-390-13, fi-390-14, fi-390-15, fi-390-16 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Opened (this language's own captures, 1280 px, all solutions open) fy4-10-open-exercises-L2-1280-16 (elasticity solution, 13 lines of aligned rows between short intro sentences); also read every inserted break in the diff.
+- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
+- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

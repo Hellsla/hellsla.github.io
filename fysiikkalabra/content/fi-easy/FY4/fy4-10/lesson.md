@@ -339,7 +339,9 @@ Ratapihalla tavaravaunu A, jonka massa on $32\,000\,\text{kg}$, liikkuu nopeudel
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m_\text{A} = 32\,000\,\text{kg}$, $v_\text{A} = 1{,}5\,\text{m/s}$, $m_\text{B} = 18\,000\,\text{kg}$ ja $v_\text{B} = 0{,}50\,\text{m/s}$. Kysytään vaunujen yhteistä nopeutta $v'$ heti sen jälkeen, kun ne ovat kytkeytyneet.
+**Tunnetut ja kysytty.** $m_\text{A} = 32\,000\,\text{kg}$, $v_\text{A} = 1{,}5\,\text{m/s}$, $m_\text{B} = 18\,000\,\text{kg}$ ja $v_\text{B} = 0{,}50\,\text{m/s}$.
+
+Kysytään vaunujen yhteistä nopeutta $v'$ heti sen jälkeen, kun ne ovat kytkeytyneet.
 
 <!-- vaihe -->
 

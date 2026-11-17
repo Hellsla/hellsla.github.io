@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5d18f1d6857e0da4
+CONTENT-HASH: 3b4b3569bfb23b28
 
 ## Blocking
+(none)
 
 ## Polish
-- none
+- [Minor] worked example stage 7 (Järkevyys) is still one long paragraph at 390 px; the energy comparison could start its own paragraph.
 
 ## Checked
-batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.
+- batch delta review: opened example-390 captures (fi, fy4-10); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

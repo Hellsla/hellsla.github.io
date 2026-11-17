@@ -136,7 +136,9 @@
 ## fy4-7-L1-08
 **Kysytty:** ämpärin liike-energian ja potentiaalienergian etumerkit, kun ämpäri on nollatason alapuolella ja liikkuu
 **Periaate:** Liike-energia $E_\text{k} = \tfrac{1}{2}\,mv^2$ sisältää nopeuden neliön. Siksi se ei ole koskaan negatiivinen, eikä liikkeen suunta vaikuta siihen. Potentiaalienergia $E_\text{p} = m g h$ lasketaan korkeudesta nollatasosta. Nollatason alapuolella $h < 0$.
-**Mallivastaus:** Liike-energia on positiivinen ja potentiaalienergia negatiivinen. Ämpäri liikkuu, joten $E_\text{k} > 0$. Se on nollatason alapuolella, joten $E_\text{p} = m g h < 0$. Väite, että molemmat ovat negatiivisia, on väärä. Alaspäin liikkuminen ei tee liike-energiasta negatiivista. Väite, että molemmat ovat positiivisia, on väärä. Nollatason alapuolella potentiaalienergia on negatiivinen. Väite, että liike-energia on negatiivinen ja potentiaalienergia positiivinen, on väärä. Siinä etumerkit ovat väärin päin: kaavassa $h$ on korkeus nollatasosta, ei syvyys.
+**Mallivastaus:** Liike-energia on positiivinen ja potentiaalienergia negatiivinen. Ämpäri liikkuu, joten $E_\text{k} > 0$. Se on nollatason alapuolella, joten $E_\text{p} = m g h < 0$. Väite, että molemmat ovat negatiivisia, on väärä. Alaspäin liikkuminen ei tee liike-energiasta negatiivista. Väite, että molemmat ovat positiivisia, on väärä.
+
+Nollatason alapuolella potentiaalienergia on negatiivinen. Väite, että liike-energia on negatiivinen ja potentiaalienergia positiivinen, on väärä. Siinä etumerkit ovat väärin päin: kaavassa $h$ on korkeus nollatasosta, ei syvyys.
 
 ## fy4-7-L2-05
 **Annettu:** massa $m = 0{,}057\,\text{kg}$, taulukon seitsemän mittausta $(t, h, v)$ hetkillä $0{,}0\,\text{s}$, $0{,}1\,\text{s}$, $\ldots$, $0{,}6\,\text{s}$; nollataso on lattia; $g = 9{,}81\,\text{m/s}^2$
@@ -310,7 +312,11 @@ $G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot
 
 $\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
 
-Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia kirjoitettuna toisin. Kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois eli kumoutuu, ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$. Lausekkeen $\tfrac{1}{2}\,m v$ yksikkö on $\text{kg}\cdot\text{m/s}$: siinä nopeus on ensimmäisessä potenssissa, vaikka liike-energia on verrannollinen nopeuden neliöön. Lauseke $\dfrac{v^2}{2g}$ on korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan. Oikein on $E_\text{p} = mgh = Gh$.
+Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia kirjoitettuna toisin. Kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois eli kumoutuu, ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$.
+
+Lausekkeen $\tfrac{1}{2}\,m v$ yksikkö on $\text{kg}\cdot\text{m/s}$: siinä nopeus on ensimmäisessä potenssissa, vaikka liike-energia on verrannollinen nopeuden neliöön. Lauseke $\dfrac{v^2}{2g}$ on korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan.
+
+Oikein on $E_\text{p} = mgh = Gh$.
 
 ## fy4-7-L2-08
 **Annettu:** kuvaajasta luetut pisteet: nopeudella $v_1 = 2{,}0\,\text{m/s}$ liike-energia on $E_{\text{k},1} = 1{,}0\,\text{J}$. Nopeudella $v_2 = 6{,}0\,\text{m/s}$ se on $E_{\text{k},2} = 9{,}0\,\text{J}$
@@ -335,7 +341,9 @@ Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia kirjo
 **Järkevyys:** Toinen luettu piste on korkeudella $1{,}0\,\text{m}$, ja siinä energia on noin $20\,\text{J}$. Se antaa $m = \dfrac{20\,\text{J}}{9{,}81\,\text{m/s}^2 \cdot 1{,}0\,\text{m}} \approx 2{,}0\,\text{kg}$. Suoran kulmakerroin $\dfrac{39\,\text{J}}{2{,}0\,\text{m}} \approx 19{,}5\,\text{N}$ on laatikon paino.
 
 ## fy4-7-L2-10
-**Annettu:** taulukon luvut kesäkaudelta 2025: kolmen tietyypin keskinopeus, rajoituksen ylittäneiden osuus ja yli $10\,\text{km/h}$ ylittäneiden osuus. Auton massa on $m = 1500\,\text{kg}$. Nopeudet ovat $v_1 = 80\,\text{km/h}$ ja $v_2 = 92\,\text{km/h}$. Reaktioaika on $t_\text{r} = 1{,}0\,\text{s}$. Hidastuvuus on $8{,}0\,\text{m/s}^2$. Hidastuvuus kertoo, kuinka paljon nopeus pienenee sekunnissa, joten jarrutuksen kiihtyvyys on $a = -8{,}0\,\text{m/s}^2$.
+**Annettu:** taulukon luvut kesäkaudelta 2025: kolmen tietyypin keskinopeus, rajoituksen ylittäneiden osuus ja yli $10\,\text{km/h}$ ylittäneiden osuus. Auton massa on $m = 1500\,\text{kg}$. Nopeudet ovat $v_1 = 80\,\text{km/h}$ ja $v_2 = 92\,\text{km/h}$. Reaktioaika on $t_\text{r} = 1{,}0\,\text{s}$. Hidastuvuus on $8{,}0\,\text{m/s}^2$.
+
+Hidastuvuus kertoo, kuinka paljon nopeus pienenee sekunnissa, joten jarrutuksen kiihtyvyys on $a = -8{,}0\,\text{m/s}^2$.
 Lähteestä otetut tiedot: taulukon luvut ovat raportista <a href="https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf" rel="noopener">Fintraffic: Ajonopeudet maanteillä 2025</a> (luettu 16. marraskuuta 2026). Raportin mukaan kunkin tietyypin luku on sen mittausasemien keskiarvo. Ylinopeus tarkoittaa, että ajoneuvo ylittää tien nopeusrajoituksen. Tiet, joilla nopeusrajoitus vaihtuu, on jätetty pois. Mittausasemien raaka-aineisto on avattu Fintrafficin sivulla <a href="https://www.fintraffic.fi/fi/fintraffic/digitraffic-ja-avoin-data" rel="noopener">Digitraffic ja avoin data</a>.
 **Kysytty:** a) ajonopeuksien jakauma $80\,\text{km/h}$:n teillä ja vertailu $100\,\text{km/h}$:n teihin, b) liike-energiat $E_\text{k,1}$ ja $E_\text{k,2}$ sekä niiden ero prosentteina, c) pysähtymismatkojen ero $\Delta s$ metreinä, d) päätelmät liikenneturvallisuudesta ja asiat, joista aineisto ei kerro
 **Periaate:** Liike-energia riippuu massasta ja nopeuden neliöstä. Pysähtymismatkassa on kaksi osaa. Reaktioajan auto liikkuu tasaisesti, koska kuljettaja ei vielä jarruta. Tämä osa on reaktiomatka. Sen jälkeen auto jarruttaa. Liike on tasaisesti hidastuvaa, koska hidastuvuus oletetaan vakioksi. Tämä osa on jarrutusmatka. Siksi käytetään tasaisen liikkeen ja tasaisesti kiihtyvän liikkeen yhtälöitä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Jarrutuksessa kiihtyvyys on negatiivinen.
@@ -345,7 +353,9 @@ Pysähtymismatka on $s = s_\text{r} + s_\text{j}$, ja kysytty ero on $\Delta s =
 **Muunnokset:** Nopeudet muunnetaan yksikköön $\text{m/s}$:
 $$\begin{aligned} v_1 &= 80 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 22{,}22\ldots\,\text{m/s} \end{aligned}$$
 $$\begin{aligned} v_2 &= 92 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 25{,}55\ldots\,\text{m/s} \end{aligned}$$
-**Sijoitus:** Kohta a): $80\,\text{km/h}$:n teillä enintään rajoituksen mukaista nopeutta ajaa $100\,\% - 62{,}0\,\% = 38{,}0\,\%$ ajoneuvoista. Enintään $10\,\text{km/h}$ ylinopeutta ajaa $62{,}0\,\% - 13{,}8\,\% = 48{,}2\,\%$. Yli $10\,\text{km/h}$ ylinopeutta ajaa $13{,}8\,\%$ eli noin joka seitsemäs ajoneuvo. Suurin ryhmä, lähes puolet ajoneuvoista, ajaa siis enintään $10\,\text{km/h}$ yli rajoituksen. Yli puolet ajoneuvoista ylittää rajoituksen. Siksi keskinopeus $82{,}3\,\text{km/h}$ on rajoitusta suurempi.
+**Sijoitus:** Kohta a): $80\,\text{km/h}$:n teillä enintään rajoituksen mukaista nopeutta ajaa $100\,\% - 62{,}0\,\% = 38{,}0\,\%$ ajoneuvoista. Enintään $10\,\text{km/h}$ ylinopeutta ajaa $62{,}0\,\% - 13{,}8\,\% = 48{,}2\,\%$. Yli $10\,\text{km/h}$ ylinopeutta ajaa $13{,}8\,\%$ eli noin joka seitsemäs ajoneuvo.
+
+Suurin ryhmä, lähes puolet ajoneuvoista, ajaa siis enintään $10\,\text{km/h}$ yli rajoituksen. Yli puolet ajoneuvoista ylittää rajoituksen. Siksi keskinopeus $82{,}3\,\text{km/h}$ on rajoitusta suurempi.
 $100\,\text{km/h}$:n teillä samat osuudet ovat $100\,\% - 39{,}8\,\% = 60{,}2\,\%$, $39{,}8\,\% - 8{,}1\,\% = 31{,}7\,\%$ ja $8{,}1\,\%$. Keskinopeus $96{,}3\,\text{km/h}$ on rajoitusta pienempi. Jakauma on siis rajoitukseen verrattuna alempana. Taulukossa on vain keskiarvo ja kaksi osuutta. Jakauman tarkkaa muotoa näiden rajojen välillä siitä ei voi lukea.
 Kohta b):
 $$\begin{aligned} E_\text{k,1} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (22{,}22\ldots\,\text{m/s})^2 \\ &\approx 370\,370\,\text{J} \\ &\approx 0{,}37\,\text{MJ} \end{aligned}$$

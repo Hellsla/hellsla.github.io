@@ -231,7 +231,9 @@ komponentit G
 ## fy4-6-L1-06
 **Kysytty:** lattian laatikkoon kohdistaman kitkavoiman suuruus, kun laatikko pysyy paikallaan
 **Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan vaakasuuntaisten voimien summa on nolla. Lepokitka mukautuu tilanteeseen: se on yhtä suuri kuin työntö ja vastakkaissuuntainen, kunhan työntö ei ylitä lähtökitkaa.
-**Mallivastaus:** Kitkavoiman suuruus on $20\,\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön. Lähtökitka $60\,\text{N}$ on vain yläraja, ja työntö $20\,\text{N}$ jää sen alle. Väite, jonka mukaan kitka olisi aina lähtökitkan suuruinen, on väärä, koska lepokitka on vain niin suuri kuin tilanne vaatii. Väite, jonka mukaan kitkaa ei olisi lainkaan, on väärä, koska juuri kitka estää laatikkoa liikkumasta. Väite, jonka mukaan kitka olisi lähtökitkan ja työnnön erotus, on väärä, koska levossa kitka ja työntö ovat yhtä suuret.
+**Mallivastaus:** Kitkavoiman suuruus on $20\,\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön. Lähtökitka $60\,\text{N}$ on vain yläraja, ja työntö $20\,\text{N}$ jää sen alle. Väite, jonka mukaan kitka olisi aina lähtökitkan suuruinen, on väärä, koska lepokitka on vain niin suuri kuin tilanne vaatii.
+
+Väite, jonka mukaan kitkaa ei olisi lainkaan, on väärä, koska juuri kitka estää laatikkoa liikkumasta. Väite, jonka mukaan kitka olisi lähtökitkan ja työnnön erotus, on väärä, koska levossa kitka ja työntö ovat yhtä suuret.
 
 ## fy4-6-L1-07
 **Annettu:** $m = 50\,\text{kg}$, $\mu_0 = 0{,}45$, laatikko on levossa vaakasuoralla lattialla; $g = 9{,}81\,\text{m/s}^2$
@@ -256,7 +258,9 @@ akselit 0
 ## fy4-6-L1-08
 **Kysytty:** tukivoiman suuruuden $N$ suhde painon suuruuteen $G$ kaltevalla tasolla levossa olevalle kappaleelle
 **Periaate:** Valitaan $y$-akseli kohtisuoraan pintaa vastaan. Siinä suunnassa kappale ei kiihdy, joten voimien summa on nolla. Pintaa vastaan kohtisuorassa vaikuttavat vain tukivoima ja painon komponentti $G_y = mg\cos\alpha$, ja kitka on pinnan suuntainen. Paino osoittaa suoraan alas, ja se jaetaan komponentteihin rinteen suuntaan ja sitä vastaan kohtisuoraan.
-**Mallivastaus:** Tukivoima on painoa pienempi: $N = mg\cos\alpha < G$. Tukivoima kumoaa vain painon pintaa vastaan kohtisuoran komponentin, ja rinteen suuntaisen komponentin kumoaa kitka. Kulmalla $30^\circ$ saadaan $N = G\cos 30^\circ \approx 0{,}87\,G$. Väite, jonka mukaan tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee vain vaakasuoralla pinnalla. Väite $N > G$ on väärä, koska kitka ei paina kappaletta pintaa vasten. Väite $N = 0$ on väärä, koska painon komponentti $G_y$ painaa kappaletta pintaa vasten.
+**Mallivastaus:** Tukivoima on painoa pienempi: $N = mg\cos\alpha < G$. Tukivoima kumoaa vain painon pintaa vastaan kohtisuoran komponentin, ja rinteen suuntaisen komponentin kumoaa kitka. Kulmalla $30^\circ$ saadaan $N = G\cos 30^\circ \approx 0{,}87\,G$.
+
+Väite, jonka mukaan tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee vain vaakasuoralla pinnalla. Väite $N > G$ on väärä, koska kitka ei paina kappaletta pintaa vasten. Väite $N = 0$ on väärä, koska painon komponentti $G_y$ painaa kappaletta pintaa vasten.
 
 ## fy4-6-L2-05
 **Annettu:** esimerkkiaineiston viisi mittausta $(m, F)$: $(0{,}20\,\text{kg};\,0{,}85\,\text{N})$, $(0{,}40\,\text{kg};\,1{,}62\,\text{N})$, $(0{,}60\,\text{kg};\,2{,}50\,\text{N})$, $(0{,}80\,\text{kg};\,3{,}31\,\text{N})$ ja $(1{,}00\,\text{kg};\,4{,}02\,\text{N})$; palikkaa vedetään vaakasuoraan tasaisella nopeudella; $g = 9{,}81\,\text{m/s}^2$

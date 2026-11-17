@@ -32,7 +32,9 @@
 **Given:** $m = 12\,\text{kg}$, pulling force $F = 38\,\text{N}$ horizontally, friction force $F_\mu = 20\,\text{N}$
 **Find:** the acceleration $a$ of the box in $\text{m/s}^2$
 **Principle:** By Newton's second law the acceleration is determined by the net force, not by the pulling force alone. In the vertical direction the box does not accelerate, so the vertical forces cancel and the net force is horizontal.
-**Free-body diagram:** The box as a rectangle, the positive direction the direction of the pull. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the floor points up from the bottom surface, equally long. The pulling force $\overline{F}$ points forward and the friction force $\overline{F}_\mu$ from the floor points backward from the back corner of the bottom surface, shorter than the pulling force.
+**Free-body diagram:** The box as a rectangle, the positive direction the direction of the pull. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the floor points up from the bottom surface, equally long.
+
+The pulling force $\overline{F}$ points forward and the friction force $\overline{F}_\mu$ from the floor points backward from the back corner of the bottom surface, shorter than the pulling force.
 ```voimakuvio
 pinta 0
 G 117,72
@@ -156,7 +158,9 @@ a alas
 **Given:** $m = 30\,\text{kg}$, initial velocity $v_0 = 4.0\,\text{m/s}$, final velocity $v = 0$, friction force $F_\mu = 18\,\text{N}$
 **Find:** the time $\Delta t$ in $\text{s}$ after which the sled stops
 **Principle:** The sled is neither pulled nor pushed, so the only horizontal force is the friction, which points against the motion. The friction is constant, so by Newton's second law the deceleration is constant, and the stopping time follows from the change in velocity.
-**Free-body diagram:** The sled and the child as a rectangle, the positive direction the direction of motion. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the snow points up from the bottom surface, equally long. The friction force $\overline{F}_\mu$ from the snow points backward from the back corner of the bottom surface. There is no force pushing forward.
+**Free-body diagram:** The sled and the child as a rectangle, the positive direction the direction of motion. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the snow points up from the bottom surface, equally long.
+
+The friction force $\overline{F}_\mu$ from the snow points backward from the back corner of the bottom surface. There is no force pushing forward.
 ```voimakuvio
 pinta 0
 G 294,3
@@ -173,7 +177,11 @@ a vasen
 ## fy4-4-L1-06
 **Find:** in which direction the net force $\Sigma\overline{F}$ acting on the elevator points when the elevator rises and slows down
 **Principle:** By Newton's second law $\Sigma\overline{F} = m\overline{a}$, so the net force always points in the direction of the acceleration. The direction of the acceleration is the direction of the change of velocity: when the speed decreases, the acceleration points against the velocity.
-**Model answer:** The correct statement is the one saying that the net force points down, because the speed decreases and the acceleration points down. The elevator is still moving upward, but its speed decreases, so the acceleration and the net force point down. The force of the rope is then smaller than the weight. The statement that the direction of the velocity decides the direction of the net force confuses velocity and acceleration. The statement about a zero net force would hold only in a steady rise. The statement that the force of the rope is always greater than the weight holds only when the rise begins.
+**Model answer:** The correct statement is the one saying that the net force points down, because the speed decreases and the acceleration points down. The elevator is still moving upward, but its speed decreases, so the acceleration and the net force point down.
+
+The force of the rope is then smaller than the weight. The statement that the direction of the velocity decides the direction of the net force confuses velocity and acceleration. The statement about a zero net force would hold only in a steady rise.
+
+The statement that the force of the rope is always greater than the weight holds only when the rise begins.
 
 ## fy4-4-L1-07
 **Given:** $m = 170\,\text{g}$, $a = 400\,\text{m/s}^2$
@@ -209,7 +217,9 @@ a vasen
 ## fy4-4-L2-06
 **Given:** the pulling force is constant, the points $(m, a)$ of the table, for example $m = 0.20\,\text{kg}$ and $a = 6.1\,\text{m/s}^2$; friction is ignored
 **Find:** the magnitude of the pulling force $F$ in $\text{N}$
-**Principle:** With a constant force $a = F \cdot \dfrac{1}{m}$, so the acceleration is proportional to the reciprocal of the mass $\dfrac{1}{m}$. With the reciprocal, the curve $(m, a)$ becomes a straight line, and the slope of the line is the force $F$. The line passes through the origin, because with a very large mass the acceleration would be almost zero. The condition for the slope and the straight line to make sense is that only the mass changes: the pulling force, the surface and the friction must stay the same.
+**Principle:** With a constant force $a = F \cdot \dfrac{1}{m}$, so the acceleration is proportional to the reciprocal of the mass $\dfrac{1}{m}$. With the reciprocal, the curve $(m, a)$ becomes a straight line, and the slope of the line is the force $F$.
+
+The line passes through the origin, because with a very large mass the acceleration would be almost zero. The condition for the slope and the straight line to make sense is that only the mass changes: the pulling force, the surface and the friction must stay the same.
 **Reading the graph:** The reciprocals are $5.0$, $3.3$, $2.5$, $2.0$ and $1.7\,\tfrac{1}{\text{kg}}$. The points $(1/m, a)$ lie on a straight line, and from the line we read the points $(0, 0)$ and $(5.0\,\tfrac{1}{\text{kg}}, 6.0\,\text{m/s}^2)$.
 **Formula:** $a = F \cdot \dfrac{1}{m}$, so the slope $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
 **Conversions:** The quantities are in SI units, and $\text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$, so no conversions are needed.
@@ -220,7 +230,9 @@ a vasen
 ## fy4-4-L2-07
 **Given:** $m = 820\,\text{kg}$, magnitude of the acceleration $a = 1.20\,\text{m/s}^2$, the element moves down and slows down; $g = 9.81\,\text{m/s}^2$
 **Find:** the tension $T$ in the rope in $\text{N}$ and the error in the student's solution
-**Principle:** By Newton's second law $\Sigma\overline{F} = m\overline{a}$ the net force points in the direction of the acceleration, not the direction of the velocity. The element moves down but slows down, so its speed decreases and the acceleration points up. The student chose the direction of motion, that is, down, as the direction of the acceleration. The rope must pull upward harder than the weight so that the net force points up.
+**Principle:** By Newton's second law $\Sigma\overline{F} = m\overline{a}$ the net force points in the direction of the acceleration, not the direction of the velocity. The element moves down but slows down, so its speed decreases and the acceleration points up.
+
+The student chose the direction of motion, that is, down, as the direction of the acceleration. The rope must pull upward harder than the weight so that the net force points up.
 **Free-body diagram:** The concrete element as a rectangle, the positive direction up. The tension $\overline{T}$ of the rope points up from the top surface and the weight $\overline{G}$ points down from the centre. The arrow $\overline{T}$ is longer than $\overline{G}$. The velocity points down and the acceleration up.
 ```voimakuvio
 T 9028 ylös
@@ -237,7 +249,9 @@ v alas
 ## fy4-4-L3-04
 **Given:** the points $(F, a)$ of the table for $F = 2.0 \ldots 6.0\,\text{N}$; the mass is constant, the friction force is constant
 **Find:** the magnitude of the friction force $F_\mu$ in $\text{N}$ (and also the mass $m$ of the cart)
-**Principle:** On the moving cart the pulling force acts in the direction of motion and friction against it, so by Newton's second law $F - F_\mu = ma$, that is, $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. The graph is a straight line whose slope is $\dfrac{1}{m}$. The line does not pass through the origin, because part of the pulling force is used to overcome friction: the acceleration is zero when $F = F_\mu$, so the line crosses the $F$-axis at the value of the friction force.
+**Principle:** On the moving cart the pulling force acts in the direction of motion and friction against it, so by Newton's second law $F - F_\mu = ma$, that is, $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. The graph is a straight line whose slope is $\dfrac{1}{m}$.
+
+The line does not pass through the origin, because part of the pulling force is used to overcome friction: the acceleration is zero when $F = F_\mu$, so the line crosses the $F$-axis at the value of the friction force.
 **Reading the graph:** A straight line is fitted between the points. From the line we read two points far from each other: $(2.0\,\text{N}, 0.41\,\text{m/s}^2)$ and $(6.0\,\text{N}, 2.40\,\text{m/s}^2)$. The slope is calculated from them, and the crossing point on the $F$-axis is obtained from the first point with the slope.
 **Formula:** $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$, and at the crossing point $a = 0$, so $F_\mu = F_1 - \dfrac{a_1}{k}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
@@ -248,7 +262,9 @@ v alas
 ## fy4-4-L3-05
 **Given:** $m = 70\,\text{kg}$, phase 1: $0 \ldots 3.0\,\text{s}$, $a_1 = 1.0\,\text{m/s}^2$; phase 2: $3.0 \ldots 9.0\,\text{s}$, $a_2 = 0$; phase 3: $9.0 \ldots 13.0\,\text{s}$, uniform slowing down to a stop; initial velocity $0$; $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest velocity $v_{\max}$, the acceleration $a_3$ and the normal force $N$ from the floor in phase 3
-**Principle:** In uniformly accelerated motion the change of velocity is $\Delta v = a\Delta t$. The elevator accelerates only in phase 1, so the greatest velocity is at the end of phase 1 and it is kept in phase 2. In phase 3 the elevator slows down to a stop. The forces on the person are from the Earth (weight) and from the floor (normal force), and by Newton's second law their sum is $ma$.
+**Principle:** In uniformly accelerated motion the change of velocity is $\Delta v = a\Delta t$. The elevator accelerates only in phase 1, so the greatest velocity is at the end of phase 1 and it is kept in phase 2. In phase 3 the elevator slows down to a stop.
+
+The forces on the person are from the Earth (weight) and from the floor (normal force), and by Newton's second law their sum is $ma$.
 **Free-body diagram:** The person as a rectangle, the positive direction up. The weight $\overline{G}$ points down from the centre and the normal force $\overline{N}$ from the floor points up from the bottom surface. The arrow $\overline{N}$ is shorter than $\overline{G}$, because the acceleration points down. The velocity points up.
 ```voimakuvio
 pinta 0
@@ -265,7 +281,9 @@ v ylös
 
 ## fy4-4-L2-08
 **Find:** whether there is an error in the student's calculation and on which line, when the acceleration $a$ of a horizontally pushed shopping trolley is calculated.
-**Principle:** By Newton's second law $\Sigma F = ma$, so the acceleration is the net force divided by the mass. First the positive direction is chosen and the net force is written with its signs: the pushing force in the direction of motion and the friction force against it. On a horizontal floor the weight and the normal force cancel each other, so the weight does not oppose the motion; the acceleration is reduced by the mass. The calculation can be checked line by line: the expression for the net force, its value, the weight and the acceleration.
+**Principle:** By Newton's second law $\Sigma F = ma$, so the acceleration is the net force divided by the mass. First the positive direction is chosen and the net force is written with its signs: the pushing force in the direction of motion and the friction force against it.
+
+On a horizontal floor the weight and the normal force cancel each other, so the weight does not oppose the motion; the acceleration is reduced by the mass. The calculation can be checked line by line: the expression for the net force, its value, the weight and the acceleration.
 **Model answer:** Line 1: $\Sigma F = F - F_\mu$ is correct, because friction points against the pushing force.
 
 Line 2: $45\,\text{N} - 9.0\,\text{N} = 36\,\text{N}$ is correct.

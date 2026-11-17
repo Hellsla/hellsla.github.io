@@ -360,7 +360,9 @@ Lumilautailija, jonka massa varusteineen on $68\,\text{kg}$, laskee rinnettä. K
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa $m = 68\,\text{kg}$, nopeus $v = 12\,\text{m/s}$, korkeus nollatason yläpuolella $h = 25\,\text{m}$ ja putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$. Kysytään mekaanista energiaa $E_\text{mek}$.
+**Tunnetut ja kysytty.** Massa $m = 68\,\text{kg}$, nopeus $v = 12\,\text{m/s}$, korkeus nollatason yläpuolella $h = 25\,\text{m}$ ja putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään mekaanista energiaa $E_\text{mek}$.
 
 <!-- vaihe -->
 

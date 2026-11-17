@@ -419,7 +419,9 @@ Lapsi laskee pulkalla mäen alas. Lapsen ja pulkan yhteinen massa on $32\,\text{
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 32\,\text{kg}$, korkeusero $h = 5{,}0\,\text{m}$, alkunopeus $v_1 = 0$, loppunopeus $v_2 = 7{,}6\,\text{m/s}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kitkan ja ilmanvastuksen yhdessä tekemää työtä $W$.
+**Tunnetut ja kysytty.** $m = 32\,\text{kg}$, korkeusero $h = 5{,}0\,\text{m}$, alkunopeus $v_1 = 0$, loppunopeus $v_2 = 7{,}6\,\text{m/s}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kitkan ja ilmanvastuksen yhdessä tekemää työtä $W$.
 
 <!-- vaihe -->
 

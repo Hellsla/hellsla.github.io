@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 98bb3d4af340cc2c
+CONTENT-HASH: 214c50736ef04e72
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json Kertaa prompt: "vyön kanssa venyvä vyö pysäyttää hänet" is clumsy; write "Vyön kanssa hänet pysäyttää venyvä vyö."
+(none)
 
 ## Checked
-batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.
+- batch delta review: opened example-390 captures (fi, fy4-11); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

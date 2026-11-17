@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a8208ee29810fc13
+CONTENT-HASH: f5dde3278f405011
 
 ## Blocking
+None.
 
 ## Polish
+- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-3-L2-07-390.png, sol-fy4-3-L2-08-390.png, sol-fy4-3-L3-03-390.png.
+- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

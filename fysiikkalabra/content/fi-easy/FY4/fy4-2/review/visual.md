@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: eee552233cd72c1e
+CONTENT-HASH: 72209fc6ab49bcdc
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: diff read (Kertaa-kysymys / kuvaus text, lukuyksiköt LaTeXina, päätteet, selkeä suomi); sim, figure row captures not re-opened as the diff does not change them. Plain quantities none found in the diff.
+- batch delta review: opened example-390 captures (fi-easy, fy4-2); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

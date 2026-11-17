@@ -172,7 +172,11 @@ komponentit G
 **Given:** $m = 50\,\text{kg}$, the acceleration of the truck and the box $a = 3.5\,\text{m/s}^2$ forward, the road is horizontal; $g = 9.81\,\text{m/s}^2$
 **Find:** the smallest value of the coefficient of static friction $\mu_0$ (no unit)
 **Principle:** If the box does not slide, it accelerates along with the truck. The only horizontal force on the box is the static friction of the bed, so by Newton's second law it must be $ma$ and point forward, in the direction of motion. Static friction can be at most $\mu_0 N$.
-**Free-body diagram:** The box as a rectangle, $x$ forward and $y$ up. The weight $\overline{G}$ from the center down, the normal force $\overline{N}$ of the bed from the lower surface up and equally long, the static friction $\overline{F}_\mu$ from the front corner of the lower surface forward. The acceleration is drawn separately as a thin orange arrow, not as a force.
+**Free-body diagram:** The box as a rectangle, $x$ forward and $y$ up.
+
+The weight $\overline{G}$ from the center down, the normal force $\overline{N}$ of the bed from the lower surface up and equally long, the static friction $\overline{F}_\mu$ from the front corner of the lower surface forward.
+
+The acceleration is drawn separately as a thin orange arrow, not as a force.
 ```voimakuvio
 pinta 0
 G 490,5
@@ -191,7 +195,9 @@ akselit 0
 **Given:** the angle of the slope $\alpha = 20^\circ$, the initial velocity $v_0 = 3.0\,\text{m/s}$ up the slope, $\mu = 0.25$, the final velocity $v = 0$; $g = 9.81\,\text{m/s}^2$
 **Find:** the sliding distance $s$ in $\text{m}$
 **Principle:** When sliding up, both the component of the weight along the slope and the sliding friction point down the slope, so the puck decelerates uniformly. The acceleration is obtained from Newton's second law, and the distance from the equation of uniformly accelerated motion $v^2 = v_0^2 - 2as$, where $a$ is the magnitude of the deceleration.
-**Free-body diagram:** The puck as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the sliding friction $\overline{F}_\mu$ down the slope, because the puck slides up. The velocity is up the slope, but it is not a force.
+**Free-body diagram:** The puck as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward.
+
+The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the sliding friction $\overline{F}_\mu$ down the slope, because the puck slides up. The velocity is up the slope, but it is not a force.
 ```voimakuvio
 pinta -20
 G 9,81
@@ -211,7 +217,9 @@ komponentit G
 ## fy4-6-L3-03
 **Given:** on Earth $\alpha = 30^\circ$ and $a_\text{Earth} = 2.0\,\text{m/s}^2$ down the slope, on the Moon the same slope and surface, $g = 9.81\,\text{m/s}^2$ and $g_\text{Moon} = 1.62\,\text{m/s}^2$; there is no air drag
 **Find:** the acceleration on the Moon $a_\text{Moon}$ in $\text{m/s}^2$
-**Principle:** The box slides, so sliding friction $\mu N$ acts on it up the slope. The coefficient of friction is not given, but it is a property of the surface and the same on Earth and on the Moon. The acceleration on Earth gives $\mu$, and on the Moon the same law gives the new acceleration. In the perpendicular direction the box does not accelerate.
+**Principle:** The box slides, so sliding friction $\mu N$ acts on it up the slope. The coefficient of friction is not given, but it is a property of the surface and the same on Earth and on the Moon.
+
+The acceleration on Earth gives $\mu$, and on the Moon the same law gives the new acceleration. In the perpendicular direction the box does not accelerate.
 **Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and the sliding friction $\overline{F}_\mu$ up the slope.
 ```voimakuvio
 pinta -30
@@ -231,7 +239,13 @@ komponentit G
 ## fy4-6-L1-06
 **Find:** the magnitude of the friction force exerted by the floor on the box while the box stays in place
 **Principle:** The box is at rest, so by Newton's second law the sum of the horizontal forces is zero. Static friction adapts to the situation: it is equal in magnitude to the push and opposite in direction, as long as the push does not exceed the maximum static friction.
-**Model answer:** The magnitude of the friction force is $20\,\text{N}$, because the box is at rest and the friction cancels the push. The maximum value $60\,\text{N}$ is only an upper limit, and the push $20\,\text{N}$ stays below it. The claim that the friction is always equal to the maximum value is wrong, because static friction is only as large as the situation requires. The claim that there is no friction at all is wrong, because it is exactly the friction that keeps the box from moving. The claim that the friction is the difference between the maximum value and the push is wrong, because at rest the friction and the push are equal.
+**Model answer:** The magnitude of the friction force is $20\,\text{N}$, because the box is at rest and the friction cancels the push. The maximum value $60\,\text{N}$ is only an upper limit, and the push $20\,\text{N}$ stays below it.
+
+The claim that the friction is always equal to the maximum value is wrong, because static friction is only as large as the situation requires.
+
+The claim that there is no friction at all is wrong, because it is exactly the friction that keeps the box from moving.
+
+The claim that the friction is the difference between the maximum value and the push is wrong, because at rest the friction and the push are equal.
 
 ## fy4-6-L1-07
 **Given:** $m = 50\,\text{kg}$, $\mu_0 = 0.45$, the box is at rest on a horizontal floor; $g = 9.81\,\text{m/s}^2$
@@ -255,14 +269,22 @@ akselit 0
 
 ## fy4-6-L1-08
 **Find:** the ratio of the magnitude of the normal force $N$ to the magnitude of the weight $G$ for a body at rest on an inclined plane
-**Principle:** Choose the $y$-axis perpendicular to the surface. In that direction the body does not accelerate, so the sum of the forces is zero. Perpendicular to the surface only the normal force and the component of the weight $G_y = mg\cos\alpha$ act, and friction is parallel to the surface. The weight points straight down, and it is divided into components along the slope and perpendicular to it.
-**Model answer:** The normal force is smaller than the weight: $N = mg\cos\alpha < G$. The normal force cancels only the component of the weight perpendicular to the surface, and the component along the slope is cancelled by friction. At the angle $30^\circ$ we get $N = G\cos 30^\circ \approx 0.87\,G$. The claim that the normal force and the weight are always opposite and equal holds only on a horizontal surface. The claim $N > G$ is wrong, because friction does not press the body against the surface. The claim $N = 0$ is wrong, because the component of the weight $G_y$ presses the body against the surface.
+**Principle:** Choose the $y$-axis perpendicular to the surface. In that direction the body does not accelerate, so the sum of the forces is zero.
+
+Perpendicular to the surface only the normal force and the component of the weight $G_y = mg\cos\alpha$ act, and friction is parallel to the surface. The weight points straight down, and it is divided into components along the slope and perpendicular to it.
+**Model answer:** The normal force is smaller than the weight: $N = mg\cos\alpha < G$. The normal force cancels only the component of the weight perpendicular to the surface, and the component along the slope is cancelled by friction.
+
+At the angle $30^\circ$ we get $N = G\cos 30^\circ \approx 0.87\,G$. The claim that the normal force and the weight are always opposite and equal holds only on a horizontal surface.
+
+The claim $N > G$ is wrong, because friction does not press the body against the surface. The claim $N = 0$ is wrong, because the component of the weight $G_y$ presses the body against the surface.
 
 ## fy4-6-L2-05
 **Given:** the five measurements $(m, F)$ of the example data: $(0.20\,\text{kg};\,0.85\,\text{N})$, $(0.40\,\text{kg};\,1.62\,\text{N})$, $(0.60\,\text{kg};\,2.50\,\text{N})$, $(0.80\,\text{kg};\,3.31\,\text{N})$ and $(1.00\,\text{kg};\,4.02\,\text{N})$; the block is pulled horizontally at a constant velocity; $g = 9.81\,\text{m/s}^2$
 **Find:** the coefficient of sliding friction $\mu$ (no unit)
 **Principle:** At a constant velocity the sum of the forces is zero, so the pull is equal to the sliding friction, $F = F_\mu$. On a horizontal table the normal force is equal to the weight, $N = mg$. Because $F_\mu = \mu N$, the $(N, F_\mu)$ graph is a straight line through the origin whose slope is $\mu$.
-**Reading the graph:** First calculate the normal forces: $N = mg$ gives the values $1.96\,\text{N}$, $3.92\,\text{N}$, $5.89\,\text{N}$, $7.85\,\text{N}$ and $9.81\,\text{N}$. Draw the points $(N, F_\mu)$ and fit to them a straight line through the origin that passes as close as possible to all the points. Read a distant point from the line: at the normal force $N = 9.81\,\text{N}$ the value of the line is about $F_\mu = 4.1\,\text{N}$.
+**Reading the graph:** First calculate the normal forces: $N = mg$ gives the values $1.96\,\text{N}$, $3.92\,\text{N}$, $5.89\,\text{N}$, $7.85\,\text{N}$ and $9.81\,\text{N}$. Draw the points $(N, F_\mu)$ and fit to them a straight line through the origin that passes as close as possible to all the points.
+
+Read a distant point from the line: at the normal force $N = 9.81\,\text{N}$ the value of the line is about $F_\mu = 4.1\,\text{N}$.
 **Formula:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, when $\Delta F_\mu$ and $\Delta N$ are read from the fitted line
 **Conversions:** Both axes are in newtons, so the units cancel. The masses are in kilograms, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{4.1\,\text{N} - 0\,\text{N}}{9.81\,\text{N} - 0\,\text{N}} = 0.418$
@@ -272,7 +294,9 @@ akselit 0
 ## fy4-6-L2-06
 **Given:** $m = 0.75\,\text{kg}$, the pulling force $F$ of the example data as a function of time $t$; the greatest reading $3.3\,\text{N}$ at the moment $t = 2.5\,\text{s}$, the readings during uniform motion $2.2\,\text{N}$, $2.1\,\text{N}$ and $2.2\,\text{N}$ at the moments $3.5\,\text{s}$–$4.5\,\text{s}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the coefficient of sliding friction $\mu$ (no unit) and the coefficient of static friction $\mu_0$
-**Principle:** Before the block starts to move, the pull increases and the static friction increases with it. When the pull exceeds the maximum static friction $\mu_0 N$, the block starts to move, and the peak of the graph is this maximum value. At a constant velocity the sum of the forces is zero, so the pull is equal to the sliding friction $\mu N$. On a horizontal table $N = mg$.
+**Principle:** Before the block starts to move, the pull increases and the static friction increases with it. When the pull exceeds the maximum static friction $\mu_0 N$, the block starts to move, and the peak of the graph is this maximum value.
+
+At a constant velocity the sum of the forces is zero, so the pull is equal to the sliding friction $\mu N$. On a horizontal table $N = mg$.
 **Reading the graph:** The pull increases linearly up to the moment $t = 2.5\,\text{s}$, where the peak of the graph is $3.3\,\text{N}$. After the peak the pull drops and stays almost constant, about $2.2\,\text{N}$, while the block moves at a constant velocity. The sum of the constant-pull readings is $2.2\,\text{N} + 2.1\,\text{N} + 2.2\,\text{N} = 6.5\,\text{N}$, so their mean is $6.5\,\text{N} : 3 = 2.17\,\text{N}$.
 **Formula:** $N = mg$, $\mu_0 = \dfrac{F_{\text{peak}}}{N}$ and $\mu = \dfrac{F_{\text{steady}}}{N}$
 **Conversions:** The mass is in kilograms and the forces in newtons, so no conversions are needed.
@@ -283,7 +307,9 @@ akselit 0
 ## fy4-6-L2-07
 **Given:** the five angles of the example data: $24^\circ$, $26^\circ$, $25^\circ$, $27^\circ$ and $25^\circ$
 **Find:** the coefficient of static friction $\mu_0$ (no unit)
-**Principle:** As the board tilts, the component of the weight along the slope $G_x = mg\sin\alpha$ increases, and the static friction increases with it. The block starts to slide when the component exceeds the maximum static friction $\mu_0 N$. In the perpendicular direction the block does not accelerate, so $N = mg\cos\alpha$. At the limiting angle $\alpha_0$, $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. The mass cancels, and dividing both sides gives $\mu_0 = \tan\alpha_0$.
+**Principle:** As the board tilts, the component of the weight along the slope $G_x = mg\sin\alpha$ increases, and the static friction increases with it. The block starts to slide when the component exceeds the maximum static friction $\mu_0 N$.
+
+In the perpendicular direction the block does not accelerate, so $N = mg\cos\alpha$. At the limiting angle $\alpha_0$, $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. The mass cancels, and dividing both sides gives $\mu_0 = \tan\alpha_0$.
 **Formula:** $\mu_0 = \tan\alpha_0$, where $\alpha_0$ is the mean of the measurements
 **Conversions:** The angles are in degrees, so no conversions are needed. The calculator must be in degree mode.
 **Substitution:** The sum of the angles is $$\begin{aligned} &24^\circ + 26^\circ \\ &+ 25^\circ + 27^\circ + 25^\circ \\ &= 127^\circ \end{aligned}$$, so the mean is $\alpha_{0,\text{mean}} = 127^\circ : 5 = 25.4^\circ$ and $\mu_0 = \tan 25.4^\circ = 0.4748$
@@ -293,8 +319,14 @@ akselit 0
 ## fy4-6-L3-04
 **Given:** the initial velocity $v_0 = 80\,\text{km/h}$, the final velocity $v = 0$, constant acceleration, the wheels lock; the coefficients of sliding friction of the example data: dry asphalt $\mu = 0.75$, wet asphalt $\mu = 0.45$; in part c) a wet downhill slope $\alpha = 6.0^\circ$; $g = 9.81\,\text{m/s}^2$
 **Find:** the braking distance $s$ in $\text{m}$, in parts a) dry horizontal, b) wet horizontal and c) wet downhill
-**Principle:** The locked wheels slide on the road, so sliding friction $\mu N$ acts on the car against the motion. By Newton's second law the friction gives the deceleration, and the distance is obtained from the equation of uniformly accelerated motion $v^2 = v_0^2 - 2as$, where $a$ is the magnitude of the deceleration. In the perpendicular direction the car does not accelerate, so $N = mg\cos\alpha$.
-**Free-body diagram:** The car of part c) as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the road, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the road, outward, and the sliding friction $\overline{F}_\mu$ up the slope. The velocity is down the slope, but the deceleration is up the slope.
+**Principle:** The locked wheels slide on the road, so sliding friction $\mu N$ acts on the car against the motion.
+
+By Newton's second law the friction gives the deceleration, and the distance is obtained from the equation of uniformly accelerated motion $v^2 = v_0^2 - 2as$, where $a$ is the magnitude of the deceleration.
+
+In the perpendicular direction the car does not accelerate, so $N = mg\cos\alpha$.
+**Free-body diagram:** The car of part c) as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the road, outward.
+
+The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the road, outward, and the sliding friction $\overline{F}_\mu$ up the slope. The velocity is down the slope, but the deceleration is up the slope.
 ```voimakuvio
 pinta -6
 G 9,81
@@ -319,12 +351,18 @@ s_c &= \frac{493.8\,\text{m}^2/\text{s}^2}{2 \cdot 3.365\,\text{m/s}^2} = 73.4\,
 \end{aligned}
 ```
 **Answer:** a) $34\,\text{m}$, b) $56\,\text{m}$ and c) $73\,\text{m}$ (calculated $73.4\,\text{m}$). The result of part c) is rounded to two significant figures like the coefficient of friction $0.45$ and the angle $6.0^\circ$. The mass of the car is not needed, because it cancels: both the friction and the component of the weight are proportional to the mass, so the deceleration does not depend on it.
-**Reasonableness:** On the wet road the distance is $55.9 : 33.6 = 1.66$ times that on the dry road, and the same ratio follows from the coefficients of friction $0.75 : 0.45 = 1.67$. Downhill the distance is longer than on the horizontal wet road, $73\,\text{m} > 56\,\text{m}$, because the component of the weight down the slope reduces the deceleration. The deceleration $3.365\,\text{m/s}^2$ is still positive, because $\mu = 0.45 > \tan 6.0^\circ = 0.11$.
+**Reasonableness:** On the wet road the distance is $55.9 : 33.6 = 1.66$ times that on the dry road, and the same ratio follows from the coefficients of friction $0.75 : 0.45 = 1.67$.
+
+Downhill the distance is longer than on the horizontal wet road, $73\,\text{m} > 56\,\text{m}$, because the component of the weight down the slope reduces the deceleration. The deceleration $3.365\,\text{m/s}^2$ is still positive, because $\mu = 0.45 > \tan 6.0^\circ = 0.11$.
 
 ## fy4-6-L3-05
 **Given:** $m = 20\,\text{kg}$, $\alpha = 30^\circ$, $\mu = 0.35$, the box starts from rest, $t = 3.0\,\text{s}$; in the student's solution $N = mg$ and the result $1.5\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
 **Find:** the student's error, the correct acceleration $a$ and the distance $s$ in the time $3.0\,\text{s}$ in $\text{m}$
-**Principle:** The student used the whole weight as the normal force, $N = mg$. On a slope only the weight and the normal force act perpendicular to the surface, and the box does not accelerate in that direction, so $N = mg\cos\alpha$, which is smaller than the weight. The student's friction $\mu mg$ is therefore too large and the acceleration too small. The correct acceleration is obtained from Newton's second law along the slope, and the distance from the equation of uniformly accelerated motion with the initial velocity zero.
+**Principle:** The student used the whole weight as the normal force, $N = mg$.
+
+On a slope only the weight and the normal force act perpendicular to the surface, and the box does not accelerate in that direction, so $N = mg\cos\alpha$, which is smaller than the weight.
+
+The student's friction $\mu mg$ is therefore too large and the acceleration too small. The correct acceleration is obtained from Newton's second law along the slope, and the distance from the equation of uniformly accelerated motion with the initial velocity zero.
 **Free-body diagram:** The box as a rectangle along the slope, $x$ down the slope and $y$ perpendicular to the surface, outward. The weight $\overline{G}$ straight down and its components dashed, the normal force $\overline{N}$ perpendicular to the surface, outward, and shorter than the weight, the sliding friction $\overline{F}_\mu$ up the slope. The acceleration is drawn separately down the slope.
 ```voimakuvio
 pinta -30
@@ -352,7 +390,11 @@ s &= \tfrac{1}{2} \cdot 1.931\,\text{m/s}^2 \cdot (3.0\,\text{s})^2 \\
 
 **Find:** the order of the boxes by the magnitude of the friction force acting on them, from the smallest to the largest
 
-**Principle:** Sliding friction $F_\mu = \mu N$ acts on a sliding box, and on a horizontal floor $N = mg$, because only the weight and the normal force act in the vertical direction. Static friction acts on a box at rest, and it is exactly as large as the balance requires, at most $\mu_0 N$. So the friction of a box at rest is obtained from the equation of motion $\Sigma F_x = 0$, not from the coefficient of static friction.
+**Principle:** Sliding friction $F_\mu = \mu N$ acts on a sliding box, and on a horizontal floor $N = mg$, because only the weight and the normal force act in the vertical direction.
+
+Static friction acts on a box at rest, and it is exactly as large as the balance requires, at most $\mu_0 N$.
+
+So the friction of a box at rest is obtained from the equation of motion $\Sigma F_x = 0$, not from the coefficient of static friction.
 
 **Model answer:** The sliding boxes:
 
@@ -378,7 +420,9 @@ $F_{\mu\text{D}} \approx 123\,\text{N}$
 
 The upper limit is $\mu_0 m_\text{D} g \cos\alpha \approx 149\,\text{N}$, so the box really stays in place.
 
-By the friction force, from the smallest to the largest, the order is B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1.2 \cdot 10^2\,\text{N}$). If the friction of box B were wrongly calculated as $\mu_0 N$, it would be the largest. The order by mass or by coefficient of friction would also be different, because friction depends both on the normal force and on whether the box slides.
+By the friction force, from the smallest to the largest, the order is B ($30\,\text{N}$), C ($44\,\text{N}$), A ($59\,\text{N}$), D ($1.2 \cdot 10^2\,\text{N}$). If the friction of box B were wrongly calculated as $\mu_0 N$, it would be the largest.
+
+The order by mass or by coefficient of friction would also be different, because friction depends both on the normal force and on whether the box slides.
 
 ## fy4-6-L1-09
 **Given:** $m = 45\,\text{kg}$, the sled moves at a constant velocity on horizontal ice; from the table (MAFY table, *Kitkakertoimia*, steel–ice) the coefficient of sliding friction $\mu = 0.014$; $g = 9.81\,\text{m/s}^2$

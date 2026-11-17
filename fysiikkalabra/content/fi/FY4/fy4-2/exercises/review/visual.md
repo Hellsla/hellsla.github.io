@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5e71c2281827700a
+CONTENT-HASH: cbc4391c5e4dfad2
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] exercises.json task text, capture fi-390-03 #4 and #13 — the punctuation after the lifted student calculation is not drawn into the formula's last row: "`. Syvyys on`" and "`, kun suunta ylöspäin on positiivinen.`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… .` / `, \end{aligned}$$`). No new review round needed.
+- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-02, fi-390-03, fi-390-04 and fi-1280-02; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-2-L2-07-390.png, sol-fy4-2-L2-08-390.png.
+- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

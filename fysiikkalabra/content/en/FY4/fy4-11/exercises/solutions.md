@@ -51,12 +51,20 @@
 ## fy4-11-L1-06
 **Find:** which statement about the stopping distance is correct when the reaction time becomes longer but the speed and the deceleration stay the same.
 **Principle:** The stopping distance is the reaction distance plus the braking distance. During the reaction time the car moves at a constant speed, so $s_\text{r} = v_0\,t_\text{r}$. The braking distance $s_\text{b} = \dfrac{v_0^2}{2a}$ starts only after the reaction time and depends only on the speed and the deceleration.
-**Model answer:** Only the reaction distance becomes longer. It grows from $20\,\text{m/s} \cdot 1.0\,\text{s} = 20\,\text{m}$ to $20\,\text{m/s} \cdot 2.0\,\text{s} = 40\,\text{m}$, because the car travels at a constant speed for a longer time before braking starts. The braking distance stays the same, because the speed and the deceleration do not change and the reaction time does not appear in its formula. So the stopping distance does not stay the same: it becomes longer by the increase in the reaction distance, $20\,\text{m}$. The claim that the reaction distance stays the same is wrong, because the distance depends on time, and the claim that the braking distance also becomes longer is wrong, because the car is not braking during the reaction time.
+**Model answer:** Only the reaction distance becomes longer. It grows from $20\,\text{m/s} \cdot 1.0\,\text{s} = 20\,\text{m}$ to $20\,\text{m/s} \cdot 2.0\,\text{s} = 40\,\text{m}$, because the car travels at a constant speed for a longer time before braking starts.
+
+The braking distance stays the same, because the speed and the deceleration do not change and the reaction time does not appear in its formula. So the stopping distance does not stay the same: it becomes longer by the increase in the reaction distance, $20\,\text{m}$.
+
+The claim that the reaction distance stays the same is wrong, because the distance depends on time, and the claim that the braking distance also becomes longer is wrong, because the car is not braking during the reaction time.
 
 ## fy4-11-L1-07
 **Find:** why a seat belt reduces the average force on the passenger.
 **Principle:** By the impulse–momentum principle, the impulse of the force acting on the passenger equals the change in their momentum, $F_\text{avg}\,\Delta t = m\,\Delta v$. When the passenger stops, the momentum changes from $m\,v$ to zero.
-**Model answer:** The change in the passenger's momentum is the same with and without a belt, because they stop in both cases. So the belt does not reduce the change in momentum or the impulse. The belt lengthens the time $\Delta t$ in which the change takes place, because it lets the passenger slow down more gently and over a longer time. When $m\,\Delta v$ is constant, a longer time means a smaller average force $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$. The belt does not slow the passenger before the collision and does not take part of their momentum: the passenger moves with the car until the car stops.
+**Model answer:** The change in the passenger's momentum is the same with and without a belt, because they stop in both cases. So the belt does not reduce the change in momentum or the impulse.
+
+The belt lengthens the time $\Delta t$ in which the change takes place, because it lets the passenger slow down more gently and over a longer time. When $m\,\Delta v$ is constant, a longer time means a smaller average force $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$.
+
+The belt does not slow the passenger before the collision and does not take part of their momentum: the passenger moves with the car until the car stops.
 
 ## fy4-11-L1-08
 **Given:** coefficient of friction $\mu = 0.75$, horizontal road, full grip; $g = 9.81\,\text{m/s}^2$
@@ -123,7 +131,9 @@ a &= \frac{1}{2 \cdot 0.0637\,\text{s}^2/\text{m}} \\
 \end{aligned}
 ```
 **Answer:** $7.9\,\text{m/s}^2$, two significant figures, because the braking distances are measured to two or three figures and reading the line is approximate.
-**Reasonableness:** The result is close to the value for dry asphalt, $9.0\,\text{m/s}^2$, but a little smaller. A check with one point: at $20.0\,\text{m/s}$ we get $\dfrac{(20.0\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 25.5\,\text{m}$, and the measured value is $25.9\,\text{m}$. When the speed doubles from $10$ to $20\,\text{m/s}$, the distance grows from $6.5\,\text{m}$ to $25.9\,\text{m}$, that is, about four times, as the quadratic dependence predicts.
+**Reasonableness:** The result is close to the value for dry asphalt, $9.0\,\text{m/s}^2$, but a little smaller. A check with one point: at $20.0\,\text{m/s}$ we get $\dfrac{(20.0\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 25.5\,\text{m}$, and the measured value is $25.9\,\text{m}$.
+
+When the speed doubles from $10$ to $20\,\text{m/s}$, the distance grows from $6.5\,\text{m}$ to $25.9\,\text{m}$, that is, about four times, as the quadratic dependence predicts.
 
 ## fy4-11-L2-06
 **Given:** $m = 75.0\,\text{kg}$, the speed of the dummy changes from $v_0$ to zero; $\Delta t = 0.050$; $0.080$; $0.100$; $0.150$ and $0.200\,\text{s}$ and $F_\text{avg} = 24.8$; $15.9$; $12.6$; $8.3$ and $6.3\,\text{kN}$
@@ -162,7 +172,9 @@ s_2 &= 12.0\,\text{m} \cdot 1.8^2 \\
 
 ## fy4-11-L2-08
 **Find:** how the average force $F_\text{avg}$ on the dummy changes when the collision speed increases from $25\,\text{km/h}$ to $50\,\text{km/h}$ and the stopping time from $0.030\,\text{s}$ to $0.12\,\text{s}$
-**Principle:** The dummy stops, so the magnitude of the change in its velocity $\Delta v$ is the collision speed. By the impulse–momentum principle $F_\text{avg}\,\Delta t = m\,\Delta v$, so the average force is proportional to the change in velocity and inversely proportional to the stopping time. The dummy is the same, so the mass $m$ does not change and is not needed in the comparison.
+**Principle:** The dummy stops, so the magnitude of the change in its velocity $\Delta v$ is the collision speed. By the impulse–momentum principle $F_\text{avg}\,\Delta t = m\,\Delta v$, so the average force is proportional to the change in velocity and inversely proportional to the stopping time.
+
+The dummy is the same, so the mass $m$ does not change and is not needed in the comparison.
 **Model answer:** The average force is
 
 $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
@@ -173,12 +185,16 @@ The stopping time becomes four times as long, because $0.12\,\text{s} : 0.030\,\
 
 So the force changes by the factor $2 : 4 = 0.50$: in test B the force is half of the force in test A, that is, the force is halved.
 
-Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 25 : 3.6\,\text{m/s} \approx 6.94\,\text{m/s}$, so $F_\text{avg} \approx 17\,\text{kN}$. In test B $\Delta v \approx 13.9\,\text{m/s}$, so $F_\text{avg} \approx 8.7\,\text{kN}$, half of the force in test A. In these example tests the stopping time becomes longer by more than the change in momentum grows. In the same car, double the speed doubles the average force if the stopping time stays the same. The braking distance depends on the square of the speed, but the average force in a collision depends directly on the speed.
+Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 25 : 3.6\,\text{m/s} \approx 6.94\,\text{m/s}$, so $F_\text{avg} \approx 17\,\text{kN}$. In test B $\Delta v \approx 13.9\,\text{m/s}$, so $F_\text{avg} \approx 8.7\,\text{kN}$, half of the force in test A. In these example tests the stopping time becomes longer by more than the change in momentum grows.
+
+In the same car, double the speed doubles the average force if the stopping time stays the same. The braking distance depends on the square of the speed, but the average force in a collision depends directly on the speed.
 
 ## fy4-11-L3-01
 **Given:** limit $30\,\text{km/h}$, actual speed $v_0 = 40\,\text{km/h}$, reaction time $t_\text{r} = 1.0\,\text{s}$, deceleration $a = 9.0\,\text{m/s}^2$; the child is at a distance $d$ equal to the stopping distance from $30\,\text{km/h}$
 **Find:** the speed of the car $v$ at the child in $\text{km/h}$
-**Principle:** First the distance $d$ is calculated from the formula for the stopping distance. At $40\,\text{km/h}$ the car travels the reaction distance at constant speed and brakes for the rest of the distance. If the speed at the child is $v$, stopping would still need the distance $\tfrac{v^2}{2a}$, so the whole braking distance is the distance braked up to the child plus this.
+**Principle:** First the distance $d$ is calculated from the formula for the stopping distance. At $40\,\text{km/h}$ the car travels the reaction distance at constant speed and brakes for the rest of the distance.
+
+If the speed at the child is $v$, stopping would still need the distance $\tfrac{v^2}{2a}$, so the whole braking distance is the distance braked up to the child plus this.
 **Formula:** $d = u\,t_\text{r} + \dfrac{u^2}{2a}$, where $u = 30\,\text{km/h}$, and $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$, so $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Conversions:** $u = 30\,\text{km/h} \approx 8.333\,\text{m/s}$ and $v_0 = 40\,\text{km/h} \approx 11.11\,\text{m/s}$; the answer is finally multiplied by $3.6$.
 **Substitution:** $$\begin{aligned} &d = 8.333\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(8.333\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 8.333\,\text{m} + 3.858\,\text{m} \\ &= 12.19\,\text{m} \end{aligned}$$; $d - v_0\,t_\text{r} = 12.19\,\text{m} - 11.11\,\text{m} = 1.080\,\text{m}$; $$\begin{aligned} &v^2 = (11.11\,\text{m/s})^2 \\ &- 2 \cdot 9.0\,\text{m/s}^2 \cdot 1.080\,\text{m} \\ &= 104.0\,\text{m}^2/\text{s}^2 \end{aligned}$$, so $v = \sqrt{104.0}\,\text{m/s} = 10.20\,\text{m/s} = 36.7\,\text{km/h}$
@@ -198,7 +214,9 @@ Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 2
 ## fy4-11-L3-03
 **Given:** speed of both cars $v_0 = 80\,\text{km/h}$, deceleration of the car in front $a_1 = 9.0\,\text{m/s}^2$, deceleration of the car behind $a_2 = 6.0\,\text{m/s}^2$ and reaction time $t_\text{r} = 1.0\,\text{s}$
 **Find:** the smallest gap $d$ in $\text{m}$
-**Principle:** The car in front starts to brake at once and stops after its braking distance. The car behind first travels the reaction distance and then a longer braking distance, because its deceleration is smaller. The car in front is all the time moving more slowly than the car behind, so the gap shrinks until the car behind stops. There is no collision if the gap is at least the difference between the distances the cars travel.
+**Principle:** The car in front starts to brake at once and stops after its braking distance. The car behind first travels the reaction distance and then a longer braking distance, because its deceleration is smaller.
+
+The car in front is all the time moving more slowly than the car behind, so the gap shrinks until the car behind stops. There is no collision if the gap is at least the difference between the distances the cars travel.
 **Formula:** $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, so $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
 **Conversions:** $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 22.22\,\text{m/s}$
 **Substitution:** $$\begin{aligned} &d = 22.22\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 6.0\,\text{m/s}^2} \\ &- \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 22.22\,\text{m} + 41.15\,\text{m} \\ &- 27.43\,\text{m} \\ &= 35.94\,\text{m} \end{aligned}$$
@@ -209,7 +227,9 @@ Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 2
 **Given:** detection distance of the obstacle $d = 55\,\text{m}$, limit $80\,\text{km/h}$; from the table $v = 30$; $50$; $70$ and $90\,\text{km/h}$ and $s_\text{stop} = 17.0$; $35.5$; $60.0$ and $92.0\,\text{m}$; reaction time and deceleration constant, road horizontal
 **Find:** a) $t_\text{r}$ and $a$; b) the greatest speed $v_\text{max}$ in $\text{km/h}$ at which the car can stop within the distance $d$; c) the stopping distance at $80\,\text{km/h}$ and a conclusion about the limit
 **Principle:** The stopping distance is $s_\text{stop} = v\,t_\text{r} + \dfrac{v^2}{2a}$. Dividing by the speed gives $\dfrac{s_\text{stop}}{v} = t_\text{r} + \dfrac{1}{2a}\,v$. The graph $\left(v, \tfrac{s_\text{stop}}{v}\right)$ is therefore a straight line whose constant term is the reaction time and whose slope is $\tfrac{1}{2a}$. The greatest speed is solved from the requirement $s_\text{stop} = d$.
-**Reading the graph:** The speeds are $8.33$; $13.89$; $19.44$ and $25.0\,\text{m/s}$, and the ratios $\tfrac{s_\text{stop}}{v}$ are $2.04$; $2.56$; $3.09$ and $3.68\,\text{s}$. The points lie almost on a straight line. The points $(10\,\text{m/s};\ 2.19\,\text{s})$ and $(25\,\text{m/s};\ 3.66\,\text{s})$ are read from the fitted line. The slope is $\dfrac{(3.66 - 2.19)\,\text{s}}{(25 - 10)\,\text{m/s}} = 0.098\,\text{s}^2/\text{m}$, and the intercept of the line on the vertical axis is $2.19\,\text{s} - 0.098\,\text{s}^2/\text{m} \cdot 10\,\text{m/s} = 1.21\,\text{s}$.
+**Reading the graph:** The speeds are $8.33$; $13.89$; $19.44$ and $25.0\,\text{m/s}$, and the ratios $\tfrac{s_\text{stop}}{v}$ are $2.04$; $2.56$; $3.09$ and $3.68\,\text{s}$. The points lie almost on a straight line. The points $(10\,\text{m/s};\ 2.19\,\text{s})$ and $(25\,\text{m/s};\ 3.66\,\text{s})$ are read from the fitted line.
+
+The slope is $\dfrac{(3.66 - 2.19)\,\text{s}}{(25 - 10)\,\text{m/s}} = 0.098\,\text{s}^2/\text{m}$, and the intercept of the line on the vertical axis is $2.19\,\text{s} - 0.098\,\text{s}^2/\text{m} \cdot 10\,\text{m/s} = 1.21\,\text{s}$.
 **Formula:** $t_\text{r}$ = intercept, $a = \dfrac{1}{2 \cdot \text{slope}}$ and $v\,t_\text{r} + \dfrac{v^2}{2a} = d$, so $\dfrac{1}{2a}\,v^2 + t_\text{r}\,v - d = 0$ and the positive solution is $v = -a\,t_\text{r} + \sqrt{(a\,t_\text{r})^2 + 2a\,d}$
 **Conversions:** $1\,\text{km/h} = \tfrac{1}{3.6}\,\text{m/s}$ and $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** a) The reaction time is $t_\text{r} = 1.2\,\text{s}$ and the deceleration is $a = \dfrac{1}{2 \cdot 0.098\,\text{s}^2/\text{m}} = 5.1\,\text{m/s}^2$. b) First the product $a\,t_\text{r} = 5.1\,\text{m/s}^2 \cdot 1.2\,\text{s} = 6.12\,\text{m/s}$ is calculated, and then
@@ -239,7 +259,9 @@ s_\text{stop} &= 22.22\,\text{m/s} \cdot 1.2\,\text{s} \\
 ## fy4-11-L3-05
 **Given:** $m = 80.0\,\text{kg}$, $v_0 = 15.0\,\text{m/s}$ ($54\,\text{km/h}$), speeds $15.0$; $13.4$; $10.1$; $5.6$; $2.2$; $0.7$ and $0.0\,\text{m/s}$ at the times $0$; $20$; $40$; $60$; $80$; $100$ and $120\,\text{ms}$
 **Find:** a) the stopping distance $s$; b) the average force $F_\text{avg}$; c) the greatest force $F_\text{max}$ in $\text{kN}$; d) why the belt and the airbag reduce the force
-**Principle:** The distance is the area under the $(t,v)$ graph, and over each $20\,\text{ms}$ interval it is the average speed times the time. The force follows from the impulse–momentum principle $F\,\Delta t = m\,\Delta v$. The whole stopping gives the average force, and a single $20\,\text{ms}$ interval gives the force over that interval. The greatest force is the force in the interval where the speed changes the most.
+**Principle:** The distance is the area under the $(t,v)$ graph, and over each $20\,\text{ms}$ interval it is the average speed times the time. The force follows from the impulse–momentum principle $F\,\Delta t = m\,\Delta v$. The whole stopping gives the average force, and a single $20\,\text{ms}$ interval gives the force over that interval.
+
+The greatest force is the force in the interval where the speed changes the most.
 **Reading the graph:** The changes in speed over the intervals are $1.6$; $3.3$; $4.5$; $3.4$; $1.5$ and $0.7\,\text{m/s}$. The speed changes the most in the interval $40$–$60\,\text{ms}$, where it decreases by $4.5\,\text{m/s}$. The stopping time of the dummy is $120\,\text{ms}$, because the speed is then zero.
 **Formula:** $s = \sum \tfrac{v_\text{start} + v_\text{end}}{2}\,\Delta t$, $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$ and in each interval $F = \dfrac{m\,\Delta v_\text{interval}}{\Delta t_\text{interval}}$
 **Conversions:** $20\,\text{ms} = 0.020\,\text{s}$ and $120\,\text{ms} = 0.120\,\text{s}$.
@@ -267,7 +289,9 @@ F_\text{max} &= \frac{80.0\,\text{kg} \cdot 4.5\,\text{m/s}}{0.020\,\text{s}} \\
 ```
 d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ regardless of whether the dummy is protected by a belt and an airbag. If the dummy stopped in $0.010\,\text{s}$, the average force would be $F_\text{avg} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0.010\,\text{s}} = 120\,000\,\text{N}$, that is, $120\,\text{kN}$.
 **Answer:** c) The greatest force is $18\,\text{kN}$, two significant figures like the change in speed $4.5\,\text{m/s}$; the mass $80.0\,\text{kg}$ has more figures, so it does not limit the precision. In addition, a) the stopping distance is $0.79\,\text{m}$ and b) the average force is $10\,\text{kN}$. d) The belt and the airbag lengthen the stopping time to about $0.12\,\text{s}$, whereas on hitting a rigid surface the time would be about $0.010\,\text{s}$ and the average force would be $120\,\text{kN}$, that is, $12$ times as large. The change in momentum and the impulse are the same, so a longer time means a smaller force, $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$. The belt keeps the dummy with the car and lets it slow down together with the car, and the airbag spreads the force over a large area; they work together, not instead of each other. The force varies during the collision, so the greatest force $18\,\text{kN}$ is greater than the average.
-**Reasonableness:** The weight of the dummy is $$\begin{aligned} &80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 785\,\text{N} \end{aligned}$$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average. The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
+**Reasonableness:** The weight of the dummy is $$\begin{aligned} &80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 785\,\text{N} \end{aligned}$$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average.
+
+The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
 
 ## fy4-11-L1-09
 **Given:** $v_0 = 80\,\text{km/h}$, finally $v = 0$; coefficient of sliding friction between rubber and asphalt from the MAFY table (table *Kitkakertoimia*, rubber–asphalt, sliding friction): the range $0.5$–$0.8$, the greatest value $\mu = 0.8$ is used; $g = 9.81\,\text{m/s}^2$
@@ -302,11 +326,23 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 **Reasonableness:** Test A: $17.5\,\text{kN}$ is about $25$ times the weight of the dummy, $70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 690\,\text{N}$, test B: $7.0\,\text{kN}$ about $10$ times. The ratio of the forces $17.5/7.0 = 2.5$ equals the inverse ratio of the times $0.150/0.060 = 2.5$, as it should: the same change of momentum, a longer time, a smaller force.
 
 ## fy4-11-L2-10
-**Given:** This is an example solution whose data were read on 16 November 2026. If the calculator's values have changed, use the values you read yourself with the same method. From the source (Liikenneturva: Pysähtymismatka, section *Lisätietoa*) are taken the reaction time $t_\text{r} = 1\,\text{s}$ and the mean deceleration on a dry road surface $a = 9\,\text{m/s}^2$ and on an icy one $a_\text{ice} = 1.5\,\text{m/s}^2$. According to the source the distances are rounded to the nearest metre. From the task: the distance to the obstacle $d = 50\,\text{m}$; $g = 9.81\,\text{m/s}^2$.
+**Given:** This is an example solution whose data were read on 16 November 2026. If the calculator's values have changed, use the values you read yourself with the same method.
+
+From the source (Liikenneturva: Pysähtymismatka, section *Lisätietoa*) are taken the reaction time $t_\text{r} = 1\,\text{s}$ and the mean deceleration on a dry road surface $a = 9\,\text{m/s}^2$ and on an icy one $a_\text{ice} = 1.5\,\text{m/s}^2$. According to the source the distances are rounded to the nearest metre.
+
+From the task: the distance to the obstacle $d = 50\,\text{m}$; $g = 9.81\,\text{m/s}^2$.
 **Find:** a) the table and the shape of the graph; b) the braking distances $s_\text{b}$ and the reason why $s_\text{b}$ is not directly proportional to the speed $v_0$; c) whether the car can stop, and the collision speed $v$ in $\text{km/h}$; d) the stopping distances $s_\text{stop}$ on a dry and an icy road and an explanation of the difference with forces; e) an evaluation of the claim
-**Principle:** During the reaction time the car moves at the constant speed $v_0$. The calculator uses one mean deceleration for the braking, so the braking is modelled as uniformly decelerating motion: the speed decreases along a straight line on the $(t,v)$ graph, and the distance is the area under the graph. In part d the deceleration is explained with Newton's second law, because on a horizontal road the only horizontal force on the braking car is the friction between the tyres and the road.
-**Reading the graph:** a) The calculator's values on a dry road surface (reaction distance, braking distance, stopping distance): at $40\,\text{km/h}$ $11\,\text{m}$, $7\,\text{m}$ and $18\,\text{m}$; at $60\,\text{km/h}$ $17\,\text{m}$, $15\,\text{m}$ and $32\,\text{m}$; at $80\,\text{km/h}$ $22\,\text{m}$, $27\,\text{m}$ and $50\,\text{m}$; at $100\,\text{km/h}$ $28\,\text{m}$, $43\,\text{m}$ and $71\,\text{m}$. The points $(40;\ 7)$, $(60;\ 15)$, $(80;\ 27)$ and $(100;\ 43)$ of the graph are not on one straight line. Through them runs a curve that bends upwards, a parabola that starts from the origin: the greater the speed, the more steeply the braking distance grows.
-**Formula:** The braking time follows from the definition of the deceleration $a = \dfrac{v_0}{t_\text{b}}$, so $t_\text{b} = \dfrac{v_0}{a}$. The braking distance is the area of the triangle $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$. The reaction distance is $s_\text{r} = v_0\,t_\text{r}$ and the stopping distance $s_\text{stop} = s_\text{r} + s_\text{b}$. If the car cannot stop, the distance $s = d - s_\text{r}$ is left for braking. Stopping from the speed $v$ would still need the distance $\dfrac{v^2}{2a}$, so $\dfrac{v_0^2}{2a} = s + \dfrac{v^2}{2a}$, that is, $v^2 = v_0^2 - 2as$. In part d Newton's second law $\Sigma F = ma$ gives $\mu mg = ma$, so $\mu = \dfrac{a}{g}$. The collision speed is $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
+**Principle:** During the reaction time the car moves at the constant speed $v_0$.
+
+The calculator uses one mean deceleration for the braking, so the braking is modelled as uniformly decelerating motion: the speed decreases along a straight line on the $(t,v)$ graph, and the distance is the area under the graph.
+
+In part d the deceleration is explained with Newton's second law, because on a horizontal road the only horizontal force on the braking car is the friction between the tyres and the road.
+**Reading the graph:** a) The calculator's values on a dry road surface (reaction distance, braking distance, stopping distance): at $40\,\text{km/h}$ $11\,\text{m}$, $7\,\text{m}$ and $18\,\text{m}$; at $60\,\text{km/h}$ $17\,\text{m}$, $15\,\text{m}$ and $32\,\text{m}$; at $80\,\text{km/h}$ $22\,\text{m}$, $27\,\text{m}$ and $50\,\text{m}$; at $100\,\text{km/h}$ $28\,\text{m}$, $43\,\text{m}$ and $71\,\text{m}$.
+
+The points $(40;\ 7)$, $(60;\ 15)$, $(80;\ 27)$ and $(100;\ 43)$ of the graph are not on one straight line. Through them runs a curve that bends upwards, a parabola that starts from the origin: the greater the speed, the more steeply the braking distance grows.
+**Formula:** The braking time follows from the definition of the deceleration $a = \dfrac{v_0}{t_\text{b}}$, so $t_\text{b} = \dfrac{v_0}{a}$. The braking distance is the area of the triangle $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$. The reaction distance is $s_\text{r} = v_0\,t_\text{r}$ and the stopping distance $s_\text{stop} = s_\text{r} + s_\text{b}$.
+
+If the car cannot stop, the distance $s = d - s_\text{r}$ is left for braking. Stopping from the speed $v$ would still need the distance $\dfrac{v^2}{2a}$, so $\dfrac{v_0^2}{2a} = s + \dfrac{v^2}{2a}$, that is, $v^2 = v_0^2 - 2as$. In part d Newton's second law $\Sigma F = ma$ gives $\mu mg = ma$, so $\mu = \dfrac{a}{g}$. The collision speed is $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Conversions:** $40\,\text{km/h} = \dfrac{40 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 11.11\,\text{m/s}$. In the same way $60\,\text{km/h} \approx 16.67\,\text{m/s}$, $80\,\text{km/h} \approx 22.22\,\text{m/s}$ and $100\,\text{km/h} \approx 27.78\,\text{m/s}$. The calculations use the unrounded values. Finally $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** b) At $40\,\text{km/h}$ the braking distance is
 ```latex
@@ -315,7 +351,9 @@ s_\text{b} &= \frac{(11.11\,\text{m/s})^2}{2 \cdot 9\,\text{m/s}^2} \\
 &= 6.86\,\text{m}
 \end{aligned}
 ```
-In the same way the other speeds give $15.43\,\text{m}$, $27.43\,\text{m}$ and $42.87\,\text{m}$. Rounded to the nearest metre the results are $7\,\text{m}$, $15\,\text{m}$, $27\,\text{m}$ and $43\,\text{m}$, the same as in the calculator. In the formula the speed is squared. When the speed doubles from $40\,\text{km/h}$ to $80\,\text{km/h}$, the braking distance grows from $6.86\,\text{m}$ to $27.43\,\text{m}$, that is, fourfold. In direct proportionality it would only double.
+In the same way the other speeds give $15.43\,\text{m}$, $27.43\,\text{m}$ and $42.87\,\text{m}$. Rounded to the nearest metre the results are $7\,\text{m}$, $15\,\text{m}$, $27\,\text{m}$ and $43\,\text{m}$, the same as in the calculator. In the formula the speed is squared.
+
+When the speed doubles from $40\,\text{km/h}$ to $80\,\text{km/h}$, the braking distance grows from $6.86\,\text{m}$ to $27.43\,\text{m}$, that is, fourfold. In direct proportionality it would only double.
 c) At $80\,\text{km/h}$ the reaction distance is $s_\text{r} = 22.22\,\text{m/s} \cdot 1\,\text{s} = 22.22\,\text{m}$ and the stopping distance
 ```latex
 \begin{aligned}
@@ -348,7 +386,19 @@ In addition: a) The table and the shape of the graph are under Reading the graph
 
 b) The calculated braking distances are, when rounded, the same as the calculator's values, and the braking distance is proportional to the square of the speed, not to the speed.
 
-d) The stopping distance is about $50\,\text{m}$ on the dry road and about $187\,\text{m}$ on the icy road, as in the calculator. The reaction distance is the same, but the braking distance is sixfold, because the deceleration is one sixth ($9 : 1.5 = 6$). In the vertical direction the weight and the normal force cancel each other. The only horizontal force is the friction between the tyres and the road, so $\mu mg = ma$ and $a = \mu g$. The mass cancels. On ice the coefficient of friction is about $0.15$ and on a dry road about $0.92$, so on ice the friction and the deceleration are much smaller.
+d) The stopping distance is about $50\,\text{m}$ on the dry road and about $187\,\text{m}$ on the icy road, as in the calculator. The reaction distance is the same, but the braking distance is sixfold, because the deceleration is one sixth ($9 : 1.5 = 6$).
 
-e) The claim is wrong. ABS keeps the wheels from locking, so the car can be steered and the friction stays close to its greatest value. However, ABS cannot make the coefficient of friction greater than the tyres and the road allow. Even with the greatest deceleration the braking distance $s_\text{b} = \tfrac{v_0^2}{2a}$ grows with the square of the speed. In the calculator an increase of the speed from $80\,\text{km/h}$ to $100\,\text{km/h}$, that is, $25\,\%$, lengthens the braking distance from $27\,\text{m}$ to $43\,\text{m}$. In the model the factor is $1.25^2 \approx 1.56$, an increase of $56\,\%$. The reaction distance grows too.
-**Reasonableness:** A check for part c: stopping from $19.28\,\text{m/s}$ would still need the distance $\dfrac{(19.28\,\text{m/s})^2}{2 \cdot 9\,\text{m/s}^2} = 20.65\,\text{m}$, and the sum $22.22\,\text{m} + 20.65\,\text{m}$ is $42.87\,\text{m}$, the whole braking distance from $100\,\text{km/h}$, as it should be. With the calculator's rounded reaction distance $28\,\text{m}$ the result is $69.8\,\text{km/h}$, almost the same. The coefficient of friction $0.92$ is the same as the chapter's value for dry asphalt. Limits of the model: the deceleration is assumed constant, the reaction time is the same $1\,\text{s}$ for everyone and the distances are rounded to a metre. Real values vary with the vehicle, the tyres and the driver.
+In the vertical direction the weight and the normal force cancel each other. The only horizontal force is the friction between the tyres and the road, so $\mu mg = ma$ and $a = \mu g$. The mass cancels.
+
+On ice the coefficient of friction is about $0.15$ and on a dry road about $0.92$, so on ice the friction and the deceleration are much smaller.
+
+e) The claim is wrong. ABS keeps the wheels from locking, so the car can be steered and the friction stays close to its greatest value. However, ABS cannot make the coefficient of friction greater than the tyres and the road allow.
+
+Even with the greatest deceleration the braking distance $s_\text{b} = \tfrac{v_0^2}{2a}$ grows with the square of the speed. In the calculator an increase of the speed from $80\,\text{km/h}$ to $100\,\text{km/h}$, that is, $25\,\%$, lengthens the braking distance from $27\,\text{m}$ to $43\,\text{m}$.
+
+In the model the factor is $1.25^2 \approx 1.56$, an increase of $56\,\%$. The reaction distance grows too.
+**Reasonableness:** A check for part c: stopping from $19.28\,\text{m/s}$ would still need the distance $\dfrac{(19.28\,\text{m/s})^2}{2 \cdot 9\,\text{m/s}^2} = 20.65\,\text{m}$, and the sum $22.22\,\text{m} + 20.65\,\text{m}$ is $42.87\,\text{m}$, the whole braking distance from $100\,\text{km/h}$, as it should be. With the calculator's rounded reaction distance $28\,\text{m}$ the result is $69.8\,\text{km/h}$, almost the same.
+
+The coefficient of friction $0.92$ is the same as the chapter's value for dry asphalt. Limits of the model: the deceleration is assumed constant, the reaction time is the same $1\,\text{s}$ for everyone and the distances are rounded to a metre.
+
+Real values vary with the vehicle, the tyres and the driver.

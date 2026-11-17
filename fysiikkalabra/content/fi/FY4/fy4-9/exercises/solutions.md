@@ -122,7 +122,9 @@
 ## fy4-9-L1-06
 **Kysytty:** kärryn liikemäärän $\overline{p}$ etumerkki ja suunta, kun kärry liikkuu vasemmalle ja positiivinen suunta on oikealle
 **Periaate:** Liikemäärä $\overline{p} = m\overline{v}$ on vektori, jolla on nopeuden suunta, koska massa on aina positiivinen. Yhdessä ulottuvuudessa suunta ilmaistaan etumerkillä: positiiviseen suuntaan osoittava liikemäärä on positiivinen ja vastakkaiseen suuntaan osoittava negatiivinen.
-**Mallivastaus:** Oikea väite on se, jonka mukaan liikemäärä on negatiivinen, koska sen suunta on nopeuden suunta eli valittua suuntaa vastaan. Kärry liikkuu vasemmalle eli positiivista suuntaa vastaan, joten $v < 0$ ja $p = mv < 0$. Väite positiivisesta liikemäärästä unohtaa, että nopeuden etumerkki siirtyy tuloon: massa on positiivinen, mutta nopeus ei. Väite, jonka mukaan liikemäärä osoittaa aina valittuun positiiviseen suuntaan, on väärä, koska suunta seuraa nopeutta eikä suunnan valintaa. Väite nollasta on väärä, koska liikemäärä on nolla vain, kun nopeus on nolla; liikkeen vaakasuoruus ei vaikuta siihen.
+**Mallivastaus:** Oikea väite on se, jonka mukaan liikemäärä on negatiivinen, koska sen suunta on nopeuden suunta eli valittua suuntaa vastaan. Kärry liikkuu vasemmalle eli positiivista suuntaa vastaan, joten $v < 0$ ja $p = mv < 0$. Väite positiivisesta liikemäärästä unohtaa, että nopeuden etumerkki siirtyy tuloon: massa on positiivinen, mutta nopeus ei.
+
+Väite, jonka mukaan liikemäärä osoittaa aina valittuun positiiviseen suuntaan, on väärä, koska suunta seuraa nopeutta eikä suunnan valintaa. Väite nollasta on väärä, koska liikemäärä on nolla vain, kun nopeus on nolla; liikkeen vaakasuoruus ei vaikuta siihen.
 
 ## fy4-9-L1-07
 **Annettu:** kiven massa $m = 20\,\text{kg}$, alkunopeus $v_0 = 0$, työntövoiman impulssi $I = 36\,\text{N}\cdot\text{s}$; jään kitka jätetään huomiotta
@@ -162,7 +164,9 @@
 **Muunnokset:** $6{,}0\,\text{ms} = 0{,}0060\,\text{s}$ ja $80\,\text{ms} = 0{,}080\,\text{s}$; liikemäärän muutoksen suuruus on $mv_0 = 0{,}50\,\text{kg} \cdot 0{,}80\,\text{m/s} = 0{,}40\,\text{kg}\cdot\text{m/s}$
 **Sijoitus:** a) $F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}0060\,\text{s}} = 67\,\text{N}$ ja b) $F_\text{ka} = \dfrac{0{,}40\,\text{kg}\cdot\text{m/s}}{0{,}080\,\text{s}} = 5{,}0\,\text{N}$
 **Vastaus:** b) $5{,}0\,\text{N}$; a-kohdassa metallipuskurin voima on $67\,\text{N}$. Tulokset ovat kahden merkitsevän numeron tarkkuudella kuten massa ja nopeus.
-**Järkevyys:** Aika on $80 : 6{,}0 \approx 13$ kertaa pidempi, joten voima on noin $13$ kertaa pienempi: $67\,\text{N} : 5{,}0\,\text{N} \approx 13$. Selitys c): impulssiperiaatteen mukaan kokonaisvoiman impulssi $F_\text{ka}\,\Delta t$ on yhtä suuri kuin liikemäärän muutos, ja se on kaikissa mittauksissa sama. Kun pehmeä puskuri pidentää pysähtymisaikaa $\Delta t$, tulon pitää pysyä samana, ja keskimääräinen voima pienenee. Turvatyyny toimii samalla tavalla: se ei vähennä liikemäärän muutosta vaan pidentää pysähtymistä.
+**Järkevyys:** Aika on $80 : 6{,}0 \approx 13$ kertaa pidempi, joten voima on noin $13$ kertaa pienempi: $67\,\text{N} : 5{,}0\,\text{N} \approx 13$. Selitys c): impulssiperiaatteen mukaan kokonaisvoiman impulssi $F_\text{ka}\,\Delta t$ on yhtä suuri kuin liikemäärän muutos, ja se on kaikissa mittauksissa sama. Kun pehmeä puskuri pidentää pysähtymisaikaa $\Delta t$, tulon pitää pysyä samana, ja keskimääräinen voima pienenee.
+
+Turvatyyny toimii samalla tavalla: se ei vähennä liikemäärän muutosta vaan pidentää pysähtymistä.
 
 ## fy4-9-L2-07
 **Annettu:** kärryn massa $m = 0{,}50\,\text{kg}$, tulonopeus $1{,}50\,\text{m/s}$ kohti päätyä; voima $F$ ajan funktiona taulukossa (esimerkkiaineisto); kitka ja ilmanvastus jätetään huomiotta
@@ -224,8 +228,14 @@ Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\t
 
 ## fy4-9-L2-09
 **Kysytty:** a) miksi henkilövaaka ei sovellu massan määrittämiseen avaruusasemalla, b) videon massanmittausmenetelmä ja sen toimintaperiaate, c) oma menetelmä massan $m$ määrittämiseksi painottomuudessa ja yhtälö, josta massa ratkeaa, d) oman menetelmän virhelähteet ja niiden vaikutuksen pienentäminen
-**Periaate:** Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea kappaleen liikettä on muuttaa. Hitaus ei riipu siitä, onko kappale tuettu vai vapaassa pudotuksessa. Siksi massa voidaan määrittää tunnetun voiman ja mitatun liikkeen muutoksen avulla. Newtonin toinen laki $\Sigma\overline{F} = m\overline{a}$ ja impulssiperiaate $\overline{I} = \Delta\overline{p}$ sopivat, kun työntävä voima on ainoa merkittävä voima liikkeen suunnassa: silloin se on kokonaisvoima. Lähteestä (NASA, luettu 16. marraskuuta 2026) on otettu nämä tiedot: laite on SLAMMD, se kohdistaa laitteen varteen kiinnittyneeseen astronauttiin tunnetun voiman, ja massa lasketaan syntyvästä kiihtyvyydestä Newtonin toisen lain avulla. Muu on fysiikan päättelyä.
-**Mallivastaus:** a) Henkilövaaka ei mittaa massaa vaan tukivoimaa, jolla vaaka työntää ihmistä. Maan pinnalla levossa tukivoima on yhtä suuri kuin paino $mg$, ja vaaka näyttää siitä lasketun massan. Avaruusasema ja astronautti ovat molemmat vapaassa pudotuksessa Maan ympäri samalla kiihtyvyydellä. Astronautti ei siksi paina vaakaa, eikä vaaka tue häntä: lukema on nolla. Massa ei silti ole muuttunut, ja painovoima vaikuttaa astronauttiin yhä, sillä juuri se pitää aseman ja astronautin kiertoradalla. Massa on siis mitattava hitauden kautta.
+**Periaate:** Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea kappaleen liikettä on muuttaa. Hitaus ei riipu siitä, onko kappale tuettu vai vapaassa pudotuksessa. Siksi massa voidaan määrittää tunnetun voiman ja mitatun liikkeen muutoksen avulla.
+
+Newtonin toinen laki $\Sigma\overline{F} = m\overline{a}$ ja impulssiperiaate $\overline{I} = \Delta\overline{p}$ sopivat, kun työntävä voima on ainoa merkittävä voima liikkeen suunnassa: silloin se on kokonaisvoima.
+
+Lähteestä (NASA, luettu 16. marraskuuta 2026) on otettu nämä tiedot: laite on SLAMMD, se kohdistaa laitteen varteen kiinnittyneeseen astronauttiin tunnetun voiman, ja massa lasketaan syntyvästä kiihtyvyydestä Newtonin toisen lain avulla. Muu on fysiikan päättelyä.
+**Mallivastaus:** a) Henkilövaaka ei mittaa massaa vaan tukivoimaa, jolla vaaka työntää ihmistä. Maan pinnalla levossa tukivoima on yhtä suuri kuin paino $mg$, ja vaaka näyttää siitä lasketun massan. Avaruusasema ja astronautti ovat molemmat vapaassa pudotuksessa Maan ympäri samalla kiihtyvyydellä.
+
+Astronautti ei siksi paina vaakaa, eikä vaaka tue häntä: lukema on nolla. Massa ei silti ole muuttunut, ja painovoima vaikuttaa astronauttiin yhä, sillä juuri se pitää aseman ja astronautin kiertoradalla. Massa on siis mitattava hitauden kautta.
 
 b) NASAn kuvauksen mukaan SLAMMD kohdistaa laitteen varteen kiinnittyneeseen astronauttiin tunnetun voiman $F$, ja laite mittaa syntyvän liikkeen. Vertaa kuvausta siihen, mitä näit videolla. Muut voimat liikkeen suunnassa ovat pieniä, joten tämä voima on kokonaisvoima. Newtonin toisesta laista $\Sigma F = ma$ saadaan
 
@@ -257,7 +267,9 @@ ja tuntemattoman kappaleen massa on
 
 $$\begin{aligned} m_2 &= \dfrac{4{,}0\,\text{kg}\cdot\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
-d) Esimerkkimenetelmän virhelähteitä ovat nämä: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Toistot ja keskiarvo pienentävät satunnaisvirheen vaikutusta. Systemaattista virhettä pienennetään kalibroimalla laite tunnetuilla massoilla. Lisäksi kappale pidetään jäykkänä ja kiinni varressa, työnnöstä tehdään pidempi ja aika mitataan anturilla eikä sekuntikellolla.
+d) Esimerkkimenetelmän virhelähteitä ovat nämä: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa.
+
+Toistot ja keskiarvo pienentävät satunnaisvirheen vaikutusta. Systemaattista virhettä pienennetään kalibroimalla laite tunnetuilla massoilla. Lisäksi kappale pidetään jäykkänä ja kiinni varressa, työnnöstä tehdään pidempi ja aika mitataan anturilla eikä sekuntikellolla.
 
 Massa on yhtälössä $m = \dfrac{F\,\Delta t}{\Delta v}$ tulo ja osamäärä. Siksi suhteellinen virhe suureessa $F$, $\Delta t$ tai $\Delta v$ aiheuttaa likimain yhtä suuren suhteellisen virheen massaan. Jos nopeuden muutokseksi luetaan $0{,}130\,\text{m/s}$, joka on $4\,\%$ liian suuri, massaksi tulee $77\,\text{kg}$ eli noin $4\,\%$ liian pieni.
 

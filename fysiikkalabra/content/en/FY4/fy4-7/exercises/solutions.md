@@ -101,7 +101,9 @@
 ## fy4-7-L3-02
 **Given:** mass $m = 0.500\,\text{kg}$, length of the string $L = 1.20\,\text{m}$, angle of the string to the vertical $\alpha = 40^\circ$, $g = 9.81\,\text{m/s}^2$; the zero level is the lowest point of the bob
 **Find:** the potential energy $E_\text{p}$ of the bob in joules
-**Principle:** For potential energy we need the height of the bob above its lowest point. The bob moves along a circular arc whose radius is the length of the string. Measured from the point of suspension, the bob is at its lowest a distance $L$ below it, and when pulled aside a distance $L\cos\alpha$ below it, so the height is the difference of these.
+**Principle:** For potential energy we need the height of the bob above its lowest point. The bob moves along a circular arc whose radius is the length of the string.
+
+Measured from the point of suspension, the bob is at its lowest a distance $L$ below it, and when pulled aside a distance $L\cos\alpha$ below it, so the height is the difference of these.
 **Formula:** $h = L - L\cos\alpha = L\,(1 - \cos\alpha)$ and $E_\text{p} = m g h$, so $E_\text{p} = m g L\,(1 - \cos\alpha)$
 **Conversions:** All quantities are in SI units, so no conversions are needed. The calculator must be in degrees.
 **Substitution:** $h = 1.20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1.20\,\text{m} \cdot 0.2340 \approx 0.2808\,\text{m}$, so $$\begin{aligned} &E_\text{p} \\ &= 0.500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 0.2808\,\text{m} \\ &\approx 1.377\,\text{J} \end{aligned}$$
@@ -111,7 +113,9 @@
 ## fy4-7-L3-03
 **Given:** mass $m = 55.0\,\text{kg}$, speed at the foot of the ramp $v = 7.00\,\text{m/s}$, height at the highest point $h = 2.10\,\text{m}$, where the speed is zero, $g = 9.81\,\text{m/s}^2$; the zero level is the foot of the ramp
 **Find:** the mechanical energy that changed into other energy, in joules
-**Principle:** Without friction and air resistance the mechanical energy would stay the same. Friction and air resistance are not conservative, and they change part of the mechanical energy into internal energy. The amount changed is the decrease in mechanical energy from the foot to the highest point. At the foot there is only kinetic energy ($h = 0$), at the highest point only potential energy ($v = 0$).
+**Principle:** Without friction and air resistance the mechanical energy would stay the same. Friction and air resistance are not conservative, and they change part of the mechanical energy into internal energy.
+
+The amount changed is the decrease in mechanical energy from the foot to the highest point. At the foot there is only kinetic energy ($h = 0$), at the highest point only potential energy ($v = 0$).
 **Formula:** $E_\text{other} = E_\text{mech,1} - E_\text{mech,2}$, where $E_\text{mech,1} = \tfrac{1}{2}\,mv^2$ and $E_\text{mech,2} = m g h$. So $E_\text{other} = \tfrac{1}{2}\,mv^2 - m g h$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55.0\,\text{kg} \cdot (7.00\,\text{m/s})^2 = 1347.5\,\text{J}$ and $$\begin{aligned} &m g h \\ &= 55.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 2.10\,\text{m} \\ &\approx 1133.1\,\text{J} \end{aligned}$$, so $E_\text{other} = 1347.5\,\text{J} - 1133.1\,\text{J} \approx 214\,\text{J}$
@@ -121,7 +125,11 @@
 ## fy4-7-L1-06
 **Find:** how the kinetic energy of the car changes when the speed doubles and the mass stays the same
 **Principle:** Kinetic energy $E_\text{k} = \tfrac{1}{2}\,mv^2$ depends on the square of the speed. When the speed becomes twice as great, the square grows by the factor $2^2 = 4$, and the mass stays the same.
-**Model answer:** The kinetic energy becomes four times as great, because $\tfrac{1}{2}\,m(2v)^2 = 4 \cdot \tfrac{1}{2}\,mv^2$. The statement about doubling is wrong, because kinetic energy is not proportional to the speed but to its square. The statement about becoming eight times as great is wrong, because in the formula the speed is raised to the second power, not the third. The statement that it stays the same is wrong, because kinetic energy depends on the speed as well as the mass.
+**Model answer:** The kinetic energy becomes four times as great, because $\tfrac{1}{2}\,m(2v)^2 = 4 \cdot \tfrac{1}{2}\,mv^2$. The statement about doubling is wrong, because kinetic energy is not proportional to the speed but to its square.
+
+The statement about becoming eight times as great is wrong, because in the formula the speed is raised to the second power, not the third.
+
+The statement that it stays the same is wrong, because kinetic energy depends on the speed as well as the mass.
 
 ## fy4-7-L1-07
 **Given:** mass $m = 80\,\text{kg}$, change in potential energy $\Delta E_\text{p} = 9.4\,\text{kJ}$, $g = 9.81\,\text{m/s}^2$
@@ -136,7 +144,11 @@
 ## fy4-7-L1-08
 **Find:** the signs of the kinetic energy and the potential energy of the bucket when the bucket is below the zero level and moving
 **Principle:** Kinetic energy $E_\text{k} = \tfrac{1}{2}\,mv^2$ contains the square of the speed, so it is never negative and does not depend on the direction of motion. Potential energy $E_\text{p} = m g h$ is calculated from the height above the zero level, and below the zero level $h < 0$.
-**Model answer:** The kinetic energy is positive and the potential energy is negative. The bucket is moving, so $E_\text{k} > 0$, and it is below the zero level, so $E_\text{p} = m g h < 0$. The statement that both are negative is wrong, because downward motion does not make kinetic energy negative. The statement that both are positive is wrong, because below the zero level the potential energy is negative. The statement that the kinetic energy is negative and the potential energy positive is wrong, because it turns the signs the wrong way round: in the formula $h$ is the height from the zero level, not the depth.
+**Model answer:** The kinetic energy is positive and the potential energy is negative. The bucket is moving, so $E_\text{k} > 0$, and it is below the zero level, so $E_\text{p} = m g h < 0$.
+
+The statement that both are negative is wrong, because downward motion does not make kinetic energy negative. The statement that both are positive is wrong, because below the zero level the potential energy is negative.
+
+The statement that the kinetic energy is negative and the potential energy positive is wrong, because it turns the signs the wrong way round: in the formula $h$ is the height from the zero level, not the depth.
 
 ## fy4-7-L2-05
 **Given:** mass $m = 0.057\,\text{kg}$, seven measurements $(t, h, v)$ of the table at the moments $0.0\,\text{s}$, $0.1\,\text{s}$, $\ldots$, $0.6\,\text{s}$; the zero level is the floor; $g = 9.81\,\text{m/s}^2$
@@ -207,7 +219,9 @@ E_\text{mech} &= 560\,\text{J} - 1030\,\text{J} \\
 ## fy4-7-L3-04
 **Given:** mass $m = 0.058\,\text{kg}$, highest points $1.50\,\text{m}$, $1.09\,\text{m}$, $0.80\,\text{m}$, $0.57\,\text{m}$ and $0.42\,\text{m}$ above the floor; at the highest point $v = 0$; $g = 9.81\,\text{m/s}^2$
 **Find:** the mechanical energy at the highest points, the average percentage, the energy $\Delta E$ changed in the first four bounces in joules, and why the results do not depend on the zero level
-**Principle:** At the highest point the speed is zero, so the mechanical energy is only potential energy, $E_\text{mech} = E_\text{p} = m g h$. If mechanical energy were conserved, the ball would always return to the same height. The height decreases, so part of the mechanical energy changes into other energy: in the collision the ball and the floor warm up slightly, the ball vibrates and sound is produced. The amount changed is the decrease in mechanical energy.
+**Principle:** At the highest point the speed is zero, so the mechanical energy is only potential energy, $E_\text{mech} = E_\text{p} = m g h$. If mechanical energy were conserved, the ball would always return to the same height.
+
+The height decreases, so part of the mechanical energy changes into other energy: in the collision the ball and the floor warm up slightly, the ball vibrates and sound is produced. The amount changed is the decrease in mechanical energy.
 **Formula:** $E_\text{mech} = m g h$. The energy changed is $\Delta E = E_\text{mech,0} - E_\text{mech,4} = m g\,(h_0 - h_4)$. The share in one bounce is obtained from the ratio of the heights, because $E_\text{mech}$ is proportional to the height.
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** Part a): $m g = 0.058\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.569\,\text{N}$, and $E_n = m g h_n$:
@@ -250,7 +264,11 @@ The change is the same as with the floor as the zero level, because $m g\,(h_4' 
 ## fy4-7-L3-05
 **Given:** mass $m = 48\,\text{kg}$, measuring points $(h, v)$: $(18.0\,\text{m};\,1.5\,\text{m/s})$, $(14.0\,\text{m};\,8.3\,\text{m/s})$, $(10.0\,\text{m};\,11.5\,\text{m/s})$, $(6.0\,\text{m};\,14.0\,\text{m/s})$ and $(2.0\,\text{m};\,15.8\,\text{m/s})$; the zero level is the bottom of the slope; $g = 9.81\,\text{m/s}^2$
 **Find:** the mechanical energy $E_\text{mech}$ at points 1–5, the energy $\Delta E$ changed into other energy between points 1 and 5 in kilojoules, and why the result does not depend on the zero level
-**Principle:** At each point the mechanical energy is the sum of the kinetic energy and the potential energy. Without friction and air resistance it would stay the same, so its decrease tells how much energy has changed into other energy, that is, internal energy, because of friction and air resistance. The height is the vertical distance from the zero level, not the distance along the slope.
+**Principle:** At each point the mechanical energy is the sum of the kinetic energy and the potential energy.
+
+Without friction and air resistance it would stay the same, so its decrease tells how much energy has changed into other energy, that is, internal energy, because of friction and air resistance.
+
+The height is the vertical distance from the zero level, not the distance along the slope.
 **Formula:** $E_\text{mech} = \tfrac{1}{2}\,mv^2 + m g h$ and $\Delta E = E_\text{mech,1} - E_\text{mech,5}$
 **Conversions:** All quantities are in SI units, so the energies come in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** Part a), taking point 1 as an example, where $m g = 48\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 470.9\,\text{N}$:
@@ -310,7 +328,11 @@ $G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot
 
 $\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
 
-Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic energy written in another way: when $G = mg$ is substituted for the weight, $g$ cancels and the kinetic energy $E_\text{k} = \tfrac12 m v^2$ remains. The unit of the expression $\tfrac{1}{2}\,m v$ is $\text{kg}\cdot\text{m/s}$: the speed is to the first power in it, although kinetic energy is proportional to the square of the speed. The expression $\dfrac{v^2}{2g}$ is the height to which a frictionless object rises from the speed $v$. In the expression $G g h$ the weight has been written in place of the mass, so $g$ appears twice; the correct form is $E_\text{p} = mgh = Gh$.
+Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic energy written in another way: when $G = mg$ is substituted for the weight, $g$ cancels and the kinetic energy $E_\text{k} = \tfrac12 m v^2$ remains.
+
+The unit of the expression $\tfrac{1}{2}\,m v$ is $\text{kg}\cdot\text{m/s}$: the speed is to the first power in it, although kinetic energy is proportional to the square of the speed. The expression $\dfrac{v^2}{2g}$ is the height to which a frictionless object rises from the speed $v$.
+
+In the expression $G g h$ the weight has been written in place of the mass, so $g$ appears twice; the correct form is $E_\text{p} = mgh = Gh$.
 
 ## fy4-7-L2-08
 **Given:** points read from the graph: at the speed $v_1 = 2.0\,\text{m/s}$ the kinetic energy is $E_{\text{k},1} = 1.0\,\text{J}$ and at the speed $v_2 = 6.0\,\text{m/s}$ it is $E_{\text{k},2} = 9.0\,\text{J}$
@@ -335,17 +357,25 @@ Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic ener
 **Reasonableness:** Another point read from the graph, about $20\,\text{J}$ at the height $1.0\,\text{m}$, gives $m = \dfrac{20\,\text{J}}{9.81\,\text{m/s}^2 \cdot 1.0\,\text{m}} \approx 2.0\,\text{kg}$. The slope of the line, $\dfrac{39\,\text{J}}{2.0\,\text{m}} \approx 19.5\,\text{N}$, is the weight of the crate.
 
 ## fy4-7-L2-10
-**Given:** the figures of the table for the summer season 2025: the mean speed, the share that exceeded the limit and the share that exceeded it by more than $10\,\text{km/h}$ for three types of road. The mass of the car is $m = 1500\,\text{kg}$, the speeds are $v_1 = 80\,\text{km/h}$ and $v_2 = 92\,\text{km/h}$, the reaction time is $t_\text{r} = 1.0\,\text{s}$ and the deceleration $8.0\,\text{m/s}^2$, so the acceleration in braking is $a = -8.0\,\text{m/s}^2$.
+**Given:** the figures of the table for the summer season 2025: the mean speed, the share that exceeded the limit and the share that exceeded it by more than $10\,\text{km/h}$ for three types of road.
+
+The mass of the car is $m = 1500\,\text{kg}$, the speeds are $v_1 = 80\,\text{km/h}$ and $v_2 = 92\,\text{km/h}$, the reaction time is $t_\text{r} = 1.0\,\text{s}$ and the deceleration $8.0\,\text{m/s}^2$, so the acceleration in braking is $a = -8.0\,\text{m/s}^2$.
 Facts taken from the source: the figures of the table are from the report <a href="https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf" rel="noopener">Fintraffic: Ajonopeudet maanteillä 2025</a> (in Finnish, read 16 November 2026). According to the report, the figure of each type of road is the mean over its measuring stations, speeding means exceeding the speed limit of the road, and stretches of road with variable speed limits are left out. The raw data of the measuring stations is opened on Fintraffic's page <a href="https://www.fintraffic.fi/fi/fintraffic/digitraffic-ja-avoin-data" rel="noopener">Digitraffic ja avoin data</a>.
 **Find:** a) the distribution of driving speeds on the $80\,\text{km/h}$ roads and a comparison with the $100\,\text{km/h}$ roads, b) the kinetic energies $E_\text{k,1}$ and $E_\text{k,2}$ and their difference in per cent, c) the difference $\Delta s$ between the stopping distances in metres, d) conclusions about road safety and the factors the data says nothing about
-**Principle:** Kinetic energy depends on the mass and on the square of the speed. The stopping distance is the sum of two motions. During the reaction time the car moves uniformly, because the driver is not yet braking. After that the motion is uniformly decelerated, because the deceleration is assumed constant. So the equations of uniform motion and of uniformly accelerated motion are used (chapter *Acceleration and uniformly accelerated motion*), and in braking the acceleration is negative.
+**Principle:** Kinetic energy depends on the mass and on the square of the speed. The stopping distance is the sum of two motions. During the reaction time the car moves uniformly, because the driver is not yet braking.
+
+After that the motion is uniformly decelerated, because the deceleration is assumed constant. So the equations of uniform motion and of uniformly accelerated motion are used (chapter *Acceleration and uniformly accelerated motion*), and in braking the acceleration is negative.
 **Formula:** The kinetic energy is $E_\text{k} = \tfrac{1}{2}\,m v^2$. The reaction distance is $s_\text{r} = v_0\,t_\text{r}$. At the end of the braking the velocity is zero, $v_0 + a\,t_\text{b} = 0$, so the braking time is $t_\text{b} = -\dfrac{v_0}{a}$. The braking distance is then
 $$\begin{aligned} s_\text{b} &= v_0\,t_\text{b} + \tfrac{1}{2}\,a\,t_\text{b}^2 \\ &= -\dfrac{v_0^2}{a} + \dfrac{v_0^2}{2a} \\ &= -\dfrac{v_0^2}{2a} \end{aligned}$$
 The stopping distance is $s = s_\text{r} + s_\text{b}$, and the difference asked for is $\Delta s = s_2 - s_1$
 **Conversions:** The speeds are converted to $\text{m/s}$:
 $$\begin{aligned} v_1 &= 80 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 22.22\ldots\,\text{m/s} \end{aligned}$$
 $$\begin{aligned} v_2 &= 92 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 25.55\ldots\,\text{m/s} \end{aligned}$$
-**Substitution:** Part a): on the $80\,\text{km/h}$ roads $100\,\% - 62.0\,\% = 38.0\,\%$ of the vehicles drive at the limit or below it. $62.0\,\% - 13.8\,\% = 48.2\,\%$ exceed the limit by at most $10\,\text{km/h}$, and $13.8\,\%$, about one vehicle in seven, exceed it by more than $10\,\text{km/h}$. So the largest group, almost half of the vehicles, drives at most $10\,\text{km/h}$ over the limit. More than half of the vehicles exceed the limit, and that is why the mean speed $82.3\,\text{km/h}$ is above the limit.
+**Substitution:** Part a): on the $80\,\text{km/h}$ roads $100\,\% - 62.0\,\% = 38.0\,\%$ of the vehicles drive at the limit or below it.
+
+$62.0\,\% - 13.8\,\% = 48.2\,\%$ exceed the limit by at most $10\,\text{km/h}$, and $13.8\,\%$, about one vehicle in seven, exceed it by more than $10\,\text{km/h}$. So the largest group, almost half of the vehicles, drives at most $10\,\text{km/h}$ over the limit.
+
+More than half of the vehicles exceed the limit, and that is why the mean speed $82.3\,\text{km/h}$ is above the limit.
 On the $100\,\text{km/h}$ roads the corresponding shares are $100\,\% - 39.8\,\% = 60.2\,\%$, $39.8\,\% - 8.1\,\% = 31.7\,\%$ and $8.1\,\%$. The mean speed $96.3\,\text{km/h}$ is below the limit, so the distribution lies lower relative to the limit. The table gives only the mean and two shares, so the exact shape of the distribution between these boundaries cannot be read from it.
 Part b):
 $$\begin{aligned} E_\text{k,1} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (22.22\ldots\,\text{m/s})^2 \\ &\approx 370\,370\,\text{J} \\ &\approx 0.37\,\text{MJ} \end{aligned}$$

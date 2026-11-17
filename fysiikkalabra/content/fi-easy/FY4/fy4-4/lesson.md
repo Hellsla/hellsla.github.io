@@ -532,7 +532,9 @@ Rakennusnosturi nostaa betonielementtiä, jonka massa on $480\,\text{kg}$. Köyd
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 480\,\text{kg}$, $T = 5{,}20\,\text{kN}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
+**Tunnetut ja kysytty.** $m = 480\,\text{kg}$, $T = 5{,}20\,\text{kN}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
 
 <!-- vaihe -->
 
@@ -603,7 +605,9 @@ Rakennusnosturi nostaa betonielementtiä, jonka massa on $480\,\text{kg}$. Köyd
 
 <!-- vaihe -->
 
-**Järkevyys.** Köyden voima on vain noin kymmenen prosenttia suurempi kuin paino $4{,}71\,\text{kN}$. Siksi kiihtyvyyden pitää olla noin kymmenesosa putoamiskiihtyvyydestä: $0{,}1\cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$. Jos painon unohtaisi, tulos olisi $5200\,\text{N} : 480\,\text{kg} \approx 10{,}8\,\text{m/s}^2$. Se olisi väärin. Elementtiin vaikuttaa köyden voiman lisäksi paino alaspäin, ja kiihtyvyys riippuu näiden voimien summasta. Ajatellaan esimerkiksi elementtiä, joka nousee tasaisella nopeudella. Silloin köysi vetää sitä painon suuruisella voimalla, ja voimat kumoavat toisensa. Painon unohtava lasku antaisi silti kiihtyvyydeksi noin $9{,}8\,\text{m/s}^2$.
+**Järkevyys.** Köyden voima on vain noin kymmenen prosenttia suurempi kuin paino $4{,}71\,\text{kN}$. Siksi kiihtyvyyden pitää olla noin kymmenesosa putoamiskiihtyvyydestä: $0{,}1\cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$. Jos painon unohtaisi, tulos olisi $5200\,\text{N} : 480\,\text{kg} \approx 10{,}8\,\text{m/s}^2$. Se olisi väärin. Elementtiin vaikuttaa köyden voiman lisäksi paino alaspäin, ja kiihtyvyys riippuu näiden voimien summasta.
+
+Ajatellaan esimerkiksi elementtiä, joka nousee tasaisella nopeudella. Silloin köysi vetää sitä painon suuruisella voimalla, ja voimat kumoavat toisensa. Painon unohtava lasku antaisi silti kiihtyvyydeksi noin $9{,}8\,\text{m/s}^2$.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että liikkeen suuntaan vaikuttaa aina voima ja että kokonaisvoima osoittaa liikkeen suuntaan. Kokonaisvoima osoittaa kuitenkin kiihtyvyyden suuntaan. Kun ilmanvastus jätetään huomiotta, ylöspäin heitetty pallo nousee, vaikka siihen vaikuttaa vain alaspäin osoittava paino. Siksi pallo hidastuu. Kun liike hidastuu, kokonaisvoima osoittaa nopeutta vastaan. Toinen virhe on ajatella, että vakiovoima pitää nopeuden vakiona. Kun kokonaisvoima on vakio eikä nolla, nopeus muuttuu tasaisesti. Kolmas virhe on sekoittaa massa ja paino. Vaakasuoralla radalla paino ei vastusta liikettä, koska tukivoima kumoaa sen. Kiihtyvyyttä pienentää massa.
