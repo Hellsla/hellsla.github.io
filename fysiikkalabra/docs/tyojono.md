@@ -99,8 +99,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut), FY4, FY5, FY6 (Sovella ja koe mukana, paitsi FY2 ja FY5 Sovella/koe → 0c:n jälkeen tai 0f-PR:ssä). Jäljellä
-järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10, ja FY2:n ja FY5:n Sovella ja esimerkkikoe. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana; FY2 Sovella/koe → 0c:n jälkeen tai 0f-PR:ssä). Jäljellä
+järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10, ja FY2:n Sovella ja esimerkkikoe. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 
@@ -121,7 +121,7 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
-Tehty: FY4 (#647), FY5 paitsi fy5-7, fy5-11, fy5-17 (`docs/audits/2026-11-17-8j-FY5.md`; 8m on yhdistetty, joten luokittelija ei enää estä).
+Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`).
 Jäljellä FY1–FY3, FY6–FY8. Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
@@ -130,7 +130,7 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
-`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. Jäljellä FY5 (fy5-11, fy5-14) ja FY8 (fy8-2, fy8-11), fi, fi-easy, en:
+`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2, fy8-11), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)

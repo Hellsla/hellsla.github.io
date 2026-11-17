@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: aceda48ee4025c52
+CONTENT-HASH: 4592c00990b0c5e0
 
 ## Blocking
 
 ## Polish
+- [Minor] Opened feedback of the changed Kertaa task is not in a capture; its LaTeX is well-formed (\tfrac, thin spaces, decimal commas).
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- batch delta review: stage-herata-390 (changed Kertaa task, Pohdinta text and the curve mention match the new question); text diff read.

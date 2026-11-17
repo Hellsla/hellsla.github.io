@@ -77,4 +77,6 @@ a["check3-T"] = 2 * pi / 7.85                            # 0,8004 s
 a["check3-f"] = 7.85 / (2 * pi)                          # 1,249 Hz
 # Exit ticket: x = 3,0 cm · sin(2πt / 0,50 s)
 a["exit-f"] = 1 / 0.50                                   # 2,0 Hz
+# kertaus: the weight returns to its lowest point every 0,50 s: 1/T repetitions per second
+a["kertaus-f"] = 1 / 0.50                                 # 2,0 1/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

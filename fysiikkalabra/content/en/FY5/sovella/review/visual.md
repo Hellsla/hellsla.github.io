@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: fb49a928a36a94e8
+CONTENT-HASH: cc5d56c6b2fe7c00
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md:19 (fy5-s1 b, **Substitution**; captures en-390-470880Nm-1, en-1280-470880Nm-1) — the sum is three consecutive inline formulas and wraps before the second at both widths, so a line begins "−470 880 Nm= 1 012 020 Nm": the minus is set as a sign (no space after it) and "=" has no space before it — readable in context, the known join spacing — begin the pieces with `{}-` and `{}=` so KaTeX sets binary and relation spacing.
-- [Minor] task-card rubric formulas (tasks.json details) are centred in their box while the solution's display formulas are left-aligned — shared style, not from this change.
+- [Minor] solutions.md, "Hyväksytään myös" (en), part d bullet — the paragraph split leaves "The point for the result requires…" outside the bullet list, so it reads as a free paragraph, not a continuation of the bullet — indent the continuation by two spaces, or rejoin it to the bullet.
+- [Minor] solutions.md, Graph a (Io) — the display `$$…$$` still sits mid-sentence before ", so $v^2 = …$"; it renders fine (fi capture), but the sentence is now the start of a new paragraph and reads better if the example is its own line — optional.
+- [Minor] tasks.json — the English page is not captured by screenshot.py; the fi captures were the visual reference, so the English wording of the split steps is judged from the source.
 
 ## Checked
-- ROUND 3. Re-break review of the diff against origin/main (solutions.md 11 formulas, tasks.json 3); the page outside the changed formulas was not re-judged (passed on main). The standard captures are stale and were not regenerated: per the round brief I made my own of the current preview page.
-- Own captures of preview/en/FY5-sovella.html with ?ratkaisut=1 and every details box open, 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-sk/: en-{390,1280}-470880Nm-0 and -1, -882_9kNm_470_9-0, -2000kg_9_81-0, -600kNm_412-0 (three formulas), -600000Nm_9_81-0, -421_8-1, -160000km-0 and -1, -0_028s_2_1_984-0, -k_mgx-0, -0_265kg_19_9-0, -mgrmax_mpgrp-1, -335_8-1.
-- Read on the sheets sheet-en-390-a, sheet-en-390-b, s58-en-1280-a, s58-en-1280-b, each larger than device size.
-- Round 2 item is fixed: no third column; the sentence comma or full stop sits directly after the last quantity of the block at both widths.
-- Every row starts with a relation or a whole quantity; no break inside a quantity; equals signs in one column in the labelled chains; units upright, thin spaces, decimal mark intact, colon division kept.
-- Measured in the same run: no display formula wider than its box, no page overflow at 390 or 1280 px.
-- Wide screen: one-relation blocks join to one row; labelled chains keep their rows. Not a finding.
-- Hash the same at the start and the end.
+- Diff 2dc38e00^ of en solutions.md and tasks.json (all split points read as one idea per paragraph, the question last in the three tasks).
+- fi captures (the reference): contact-2.png; FY5-sovella-page-390-16.png (Jupiter a, the Io display chain and the table) and FY5-sovella-page-390-8.png (crane d, operator's explanation split, \overline{a}_\text{n}).
+- The split paragraphs are intact at 390 px; no display maths is cut, clipped or overflowing, and the spacing between the new paragraphs is even.
+- Not opened: the 1280 px captures and the other stages (the diff does not touch them).
 
 ## Scores
-illustrations 4 (not re-judged) · typography 4 · Finnish 4 (not re-judged) · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

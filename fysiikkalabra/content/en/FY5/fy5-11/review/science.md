@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 146da54b10752e46
+CONTENT-HASH: d1ccad1ab3b8e737
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the diffraction figure: half-width 0.35λ gives slit width 0.7λ, consistent with the label b < λ and the alt text; inline SVG barrier rectangles (y 44–181, 199–336) match yc ± 0.35·26 px.
+batch delta review: new recap (harbour waves $v = 5.0\,\text{m/s}$, $f = 0.25\,\text{Hz}$) recomputed: $\lambda = v/f = 20\,\text{m}$ (correct option), $vf = 1.25 \to$ "about 1.3 m" with unit m/s² correctly diagnosed, $f/v = 0.050$ with unit 1/m correctly diagnosed; exactly one correct option; magnitudes realistic for sea swell (period 4 s); recap now belongs to the Pohdinta harbour phenomenon; worked-example stages 1–2 only split into paragraphs, wording and angles unchanged; lesson-answers.py runs and matches.

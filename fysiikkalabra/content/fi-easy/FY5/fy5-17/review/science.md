@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6d9e753be2010433
+CONTENT-HASH: 49f335afacf8dda4
 
 ## Blocking
 
 ## Polish
+- `v_air` in lesson-answers.py may now be unused by the kertaus; harmless.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed Δd = 1540 m/s · 40 µs / 2 = 3.08 cm; answer 3.1 cm with tolerance 0.03 accepts 3.08 (and the one-last-digit check accepts 3.0–3.2, within the ±2 µs reading uncertainty of Δt); the new two-significant-figure reason (5 µs grid, ~1 µs reading) holds; mistakes 6.16 and 6.93 still distinct.
+batch delta review: new kertaus choice recomputed with $v = 1540\,\text{m/s}$ (soft tissue, the lesson's own value) and $f = 2{,}5\,\text{MHz}$: $\lambda = 6{,}16\cdot10^{-4}\,\text{m} \approx 0{,}62\,\text{mm}$; distractors $vf = 3{,}85\cdot10^{9} \approx 3{,}9\cdot10^{9}$ and $f/v = 1623 \approx 1{,}6\cdot10^{3}$ match their feedback (multiplied; divided the wrong way, unit $1/\text{m}$); exactly one correct option; the claim that wavelength limits resolvable detail is the lesson's model; split knowns/question paragraph in the earthquake example changes no number. Hash unchanged at start and end.

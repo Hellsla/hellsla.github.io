@@ -97,7 +97,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "The operator turns the jib with the load of part a steadily so that one revolution would take $90\\,\\text{s}$. The load hangs on a $15\\,\\text{m}$ cable, and the cable tilts slightly from the vertical so that the load is farther from the axis of the tower than the trolley. The operator explains: \"Centrifugal force throws the load outwards.\" Draw the free-body diagram of the load while the jib turns steadily and evaluate the operator's explanation.",
+          "text": "The operator turns the jib with the load of part a steadily so that one revolution would take $90\\,\\text{s}$. The load hangs on a $15\\,\\text{m}$ cable, and the cable tilts slightly from the vertical so that the load is farther from the axis of the tower than the trolley.\n\nThe operator explains: \"Centrifugal force throws the load outwards.\"\n\nDraw the free-body diagram of the load while the jib turns steadily and evaluate the operator's explanation.",
           "criteria": [
             {
               "key": "fbd_forces",
@@ -232,7 +232,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "Jupiter rotates once about its axis in $9.93\\,\\text{h}$. Jupiter is not a solid body, and its cloud belts rotate at slightly different rates. Assume that the equatorial cloud formation in question goes round the axis of Jupiter with exactly this period of $9.93\\,\\text{h}$. A probe is to move in a circular orbit above the equator so that it stays above this cloud formation all the time. How far from the centre of Jupiter is the orbit of the probe?",
+          "text": "Jupiter rotates once about its axis in $9.93\\,\\text{h}$. Jupiter is not a solid body, and its cloud belts rotate at slightly different rates.\n\nAssume that the equatorial cloud formation in question goes round the axis of Jupiter with exactly this period of $9.93\\,\\text{h}$. A probe is to move in a circular orbit above the equator so that it stays above this cloud formation all the time.\n\nHow far from the centre of Jupiter is the orbit of the probe?",
           "answer": {
             "value": 160000,
             "unit": "km",
@@ -520,7 +520,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "In front of the pipes, at a distance of $4.0\\,\\text{m}$, a sound level meter measured a sound level of $88\\,\\text{dB}$ while the organ was playing at full power. The organist sits $2.0\\,\\text{m}$ from the pipes and practises three hours a day. Assume that the organ radiates sound uniformly in all directions from a single point in a free sound field, so that the sound level can be treated as an intensity level, and that it sounds equally loud throughout the practice. Estimate in how long a time the organist receives the same energy dose as in eight hours at the upper action value for noise at work, $85\\,\\text{dB}$. Does the dose of the three-hour practice stay below this reference dose?",
+          "text": "In front of the pipes, at a distance of $4.0\\,\\text{m}$, a sound level meter measured a sound level of $88\\,\\text{dB}$ while the organ was playing at full power. The organist sits $2.0\\,\\text{m}$ from the pipes and practises three hours a day.\n\nAssume that the organ radiates sound uniformly in all directions from a single point in a free sound field, so that the sound level can be treated as an intensity level, and that it sounds equally loud throughout the practice.\n\nEstimate in how long a time the organist receives the same energy dose as in eight hours at the upper action value for noise at work, $85\\,\\text{dB}$. Does the dose of the three-hour practice stay below this reference dose?",
           "answer": {
             "value": 1.0,
             "unit": "h",

@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: a0a9a188acdab68e
-
+CONTENT-HASH: 29bb37a1d7b561d7
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
+- None.
 ## Checked
-new descriptions read as natural English with a decimal point; they describe amplitude, period and number of oscillations in the same order for every option so the options compare easily; photo alt text and caption fit the displacement section; nothing else changed.
+batch delta review: the recap is now tied to the sensor-curve phenomenon, asks 1/T in a new context with misconception-based distractors and repairing feedback; it gives nothing away for Prediction 1 (amplitude) or 2 (period change); matches answers.py.

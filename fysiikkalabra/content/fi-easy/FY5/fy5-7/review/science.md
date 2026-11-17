@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6cdd4bfd4ae18092
+CONTENT-HASH: 4592c00990b0c5e0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The correct option says "$2{,}0$ kertaa" and its feedback "$2{,}0\,\tfrac{1}{\text{s}}$"; both are right (repetitions per second). One sentence linking "kertaa sekunnissa" to the unit $\tfrac{1}{\text{s}}$ would make the jump clearer.
 
 ## Checked
-figures.json was empty and now holds 12 identity entries, all exactly equal to their Finnish keys (none differs), so the lesson figures are unchanged; text recomputed (T = 0,60 s, sin 2,618 = 0,500, x = 2,0 cm); pick-* descriptions match figures.py; swing caption says the swing returns to the same point after an equally long time, an acceptable simplification at this level.
+batch delta review: the kertaus choice now sits in the hook's own situation (the weight's curve, period $0{,}50\,\text{s}$); recomputed $f = 1/T = 2{,}0\,\tfrac{1}{\text{s}}$ (lesson-answers.py `kertaus-f` 2,0); exactly one correct option, and the feedback for "0,50 kertaa" (confusing the period with the frequency) and "ei voi laskea" (periodic motion uses the same quantities as rotation) says why each is wrong; the worked example's split knowns/question paragraph changes no number. Hash unchanged at start and end.
