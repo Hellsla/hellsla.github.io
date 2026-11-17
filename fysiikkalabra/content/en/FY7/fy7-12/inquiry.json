@@ -28,15 +28,15 @@
         {
           "text": "Towards the normal: the angle of refraction is smaller than $30^\\circ$.",
           "correct": true,
-          "feedback": "Correct. The law of refraction gives $$\\begin{aligned} &1.00 \\cdot \\sin 30^\\circ \\\\ &= 1.48 \\cdot \\sin\\alpha_2 \\end{aligned}$$, so $\\alpha_2 \\approx 19.8^\\circ$ (chapter *Reflection and refraction of light*). Today we find out how light travels inside the fibre."
+          "feedback": "Correct. The law of refraction gives $$\\begin{aligned} &1.00 \\cdot \\sin 30^\\circ \\\\ &= 1.48 \\cdot \\sin\\alpha_2 \\end{aligned}$$, so $\\alpha_2 \\approx 19.7^\\circ$ (chapter *Reflection and refraction of light*). Today we find out how light travels inside the fibre."
         },
         {
           "text": "Away from the normal: the angle of refraction is larger than $30^\\circ$.",
-          "feedback": "Light refracts away from the normal when it goes from a substance with a larger refractive index into one with a smaller refractive index, for example from water into air. When it goes from air into glass, $\\sin\\alpha_2 = \\sin 30^\\circ : 1.48$, so the angle of refraction is about $19.8^\\circ$."
+          "feedback": "Light refracts away from the normal when it goes from a substance with a larger refractive index into one with a smaller refractive index, for example from water into air. When it goes from air into glass, $\\sin\\alpha_2 = \\sin 30^\\circ : 1.48$, so the angle of refraction is about $19.7^\\circ$."
         },
         {
           "text": "It does not refract, because $30^\\circ$ is a small angle of incidence.",
-          "feedback": "A ray always refracts when it meets obliquely a boundary with different refractive indices on its two sides. Only a ray that arrives perpendicularly carries straight on. The law of refraction gives an angle of refraction of about $19.8^\\circ$."
+          "feedback": "A ray always refracts when it meets obliquely a boundary with different refractive indices on its two sides. Only a ray that arrives perpendicularly carries straight on. The law of refraction gives an angle of refraction of about $19.7^\\circ$."
         }
       ],
       "optional": true

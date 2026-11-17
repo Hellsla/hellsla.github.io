@@ -28,15 +28,15 @@
         {
           "text": "Normaalia kohti: taitekulma on pienempi kuin $30^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. Taittumislaista $$\\begin{aligned} &1{,}00 \\cdot \\sin 30^\\circ \\\\ &= 1{,}48 \\cdot \\sin\\alpha_2 \\end{aligned}$$, joten $\\alpha_2 \\approx 19{,}8^\\circ$ (luku *Valon heijastuminen ja taittuminen*). Tänään selvitetään, miten valo etenee kuidun sisällä."
+          "feedback": "Oikein. Taittumislaista $$\\begin{aligned} &1{,}00 \\cdot \\sin 30^\\circ \\\\ &= 1{,}48 \\cdot \\sin\\alpha_2 \\end{aligned}$$, joten $\\alpha_2 \\approx 19{,}7^\\circ$ (luku *Valon heijastuminen ja taittuminen*). Tänään selvitetään, miten valo etenee kuidun sisällä."
         },
         {
           "text": "Normaalista poispäin: taitekulma on suurempi kuin $30^\\circ$.",
-          "feedback": "Normaalista poispäin valo taittuu, kun se tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen, esimerkiksi vedestä ilmaan. Ilmasta lasiin tullessa $\\sin\\alpha_2 = \\sin 30^\\circ : 1{,}48$, joten taitekulma on noin $19{,}8^\\circ$."
+          "feedback": "Normaalista poispäin valo taittuu, kun se tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen, esimerkiksi vedestä ilmaan. Ilmasta lasiin tullessa $\\sin\\alpha_2 = \\sin 30^\\circ : 1{,}48$, joten taitekulma on noin $19{,}7^\\circ$."
         },
         {
           "text": "Se ei taitu, koska $30^\\circ$ on pieni tulokulma.",
-          "feedback": "Säde taittuu aina, kun se tulee vinosti rajapintaan, jonka eri puolilla taitekertoimet ovat erilaiset. Vain kohtisuoraan tuleva säde jatkaa suoraan. Taittumislaista taitekulma on noin $19{,}8^\\circ$."
+          "feedback": "Säde taittuu aina, kun se tulee vinosti rajapintaan, jonka eri puolilla taitekertoimet ovat erilaiset. Vain kohtisuoraan tuleva säde jatkaa suoraan. Taittumislaista taitekulma on noin $19{,}7^\\circ$."
         }
       ],
       "optional": true

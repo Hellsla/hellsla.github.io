@@ -47,5 +47,5 @@ a["check-comp"] = 90 - a["check-ar"]                # mistake: the complement 20
 # exit ticket: glass n = 1,60 against air
 a["exit-ar"] = degrees(asin(1 / 1.60))              # 38,7°
 # kertaus: laser from air (n = 1,00) into the fibre's glass end (n = 1,48) at 30°: sin α2 = sin 30° / 1,48
-a["kertaus-alpha2"] = degrees(asin(sin(radians(30)) / 1.48))   # 19,75° -> 19,8° (toward the normal)
+a["kertaus-alpha2"] = degrees(asin(sin(radians(30)) / 1.48))   # 19,745° -> 19,7° (toward the normal)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

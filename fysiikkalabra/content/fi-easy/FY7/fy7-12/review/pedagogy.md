@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 14d0a1a2f2136aed
+CONTENT-HASH: f1f9856c52feb3eb
 ## Blocking
-- None.
+
 ## Polish
-- None.
+
 ## Checked
-batch delta review: Retrieval (Snell, 30 deg into n=1,48 glass) retrieves refraction needed for critical angle, reveals no Ennuste; corrected feedback angle 19,8 deg matches the task.
+delta review (round 3): 19,8 to 19,7 degrees (19,745 rounds to 19,7) in the retrieval task and its three feedbacks; consistent, no pedagogy effect, earlier Polish resolved.
