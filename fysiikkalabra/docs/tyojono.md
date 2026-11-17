@@ -304,7 +304,9 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
-Varattu: claude/fy5-pohdinta-kertaus (FY5). FY4 tehty (#647).
+FY4 tehty (#647). Tila 2026-11-17: FY5 tehty (#661) paitsi **fy5-7, fy5-11 ja fy5-17** (avoimia; `docs/audits/2026-11-17-8j-FY5.md`): niiden korjaus
+on kirjoitettu, mutta difflib-kohdistus → FULL (muuttumaton `"correct": true` -rivi luokitellaan `experiment`-muutokseksi),
+tarvitsee luokittelijan korjauksen tai opettajan budjettiluvan. Muut kurssit (FY1–FY3, FY6–FY8) vielä tekemättä.
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
 paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
