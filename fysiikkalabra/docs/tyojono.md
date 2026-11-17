@@ -49,11 +49,6 @@ tyhjät 28×28 px:n kaappaukset; ajetaan yksin), Minor-erä ja yhteinen kuvasä�
 mallikuvaajan akseleilla suure ja yksikkö, kaaviokuvan kuvateksti sanoo sen kaaviokuvaksi, malliksi merkitty luonnoskuvaaja).
 Kuviin ei kosketa: opettaja piirtää ne itse.
 
-## 4b. Kuuntele ja katso fysiikkaa (opettaja 2026-11-17)
-Varattu: claude/podcastit-dokumentit. Suomen- ja englanninkieliset podcast- ja dokumenttisuositukset (FY01–FY08-suodatus,
-tyyppi- ja lyhyt/pitkä-suodatus, kieliversioiden väliset linkit), mallina Kirjavinkit (`scripts/reading_tips.py`). Jaettu
-muutos (`scripts/`, `templates/`, `site.css`, `lang/`, yläpalkki): yhdistetään yksin. Vain linkit, jotka on tarkistettu.
-
 ## 5b. Leikkautuva kaava: avoimet päätökset (opettaja päättää)
 Tarkistus ja `reflow`-carry tehty (#594). Auki: (1) lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt
 kyllä), ja korjataanko vanha lista jaetulla komponentilla vai sivu kerrallaan; (2) tehdäänkö täysi CI-pohjainen lista
