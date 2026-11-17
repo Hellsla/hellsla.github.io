@@ -1,8 +1,8 @@
-# Uudelleen piirretyt kuvat FY1–FY8 ja FY10
+# Uudelleen piirretyt kuvat FY1–FY8, FY10 ja FY14
 
 Opettajan 15.–17.11.2026 hyväksymät kuvat, jotka Codex piirsi uudelleen Ruukkilabran alkuperäisistä kuvista.
 Tämä kansio on vain kuvien säilytystä ja lataamista varten. **Haaraa ei yhdistetä `main`iin**: zipit ovat yhteensä
-noin 520 Mt ja jäisivät repositorion historiaan pysyvästi.
+noin 570 Mt ja jäisivät repositorion historiaan pysyvästi.
 
 | Paketti | Kuvia | Niistä kaavioita merkintöineen |
 |---|---|---|
@@ -15,6 +15,7 @@ noin 520 Mt ja jäisivät repositorion historiaan pysyvästi.
 | `FY7-hyvaksytyt-kuvat.zip` | 89 | 61 |
 | `FY8-hyvaksytyt-kuvat.zip` | 55 | 39 |
 | `FY10-hyvaksytyt-kuvat.zip` | 62 | 39 |
+| `FY14-hyvaksytyt-kuvat.zip` | 43 | 15 |
 
 Jokaisessa zipissä:
 
