@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1f08aa54d4fd854e
+CONTENT-HASH: 35b9f271a1adea5f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises/solutions.md:7 — tight spacing at the joins of the inline pieces (`F= 6.674 …`, `N= 0.4015 µN`): known, collected in the pull request.
-- [Minor] exercises/solutions.md:7 — the step is now running text while the other substitutions of the set are boxed display blocks; a display block in the house form would match them when the file is next edited.
+- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
+- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
 
 ## Checked
-- Round 3b delta: the fix of my round 3 Blocking item (task 5-1, Substitution). Own Playwright captures of the rebuilt preview/en/fy5-5.html?ratkaisut=1, every details box open, at 390 and 1280 px and double resolution: /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3b/fy5-5-ex-step-390-0.png, fy5-5-ex-step-1280-0.png (opened as fy5-5-ex-step-both.png).
-- The step is one calculation again, in one size and with no separate box: at 1280 px on one line; at 390 px on three lines, the `·` ends the first line, the fraction with `= 4.015 · 10⁻⁷ N` is the second and `= 0.4015 µN` the third. No line starts with a bare dot, nothing clipped, same numbers and units in the same order.
-- The built step is a single paragraph of inline formulas (no eq-chain row ending in `\cdot` left on the page).
-- The rest of the set was opened in round 3 (sheet-fy5-5-ex-390-0.png, sheet-fy5-5-ex-1280-0.png) and is unchanged.
+- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-5/review/shots/ (current for this hash): exercises 1280 parts L1-1, L1-6, L2-5 (5-1 solution split reasonableness, 5-6 model answer paragraphs, 5-13 formula boxes).
+- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
+- Hash re-run at the end: 35b9f271a1adea5f (unchanged).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

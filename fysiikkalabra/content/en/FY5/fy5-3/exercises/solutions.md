@@ -241,9 +241,7 @@ v &= 2\pi \cdot 0.32\,\text{m} \cdot 8.0\,\tfrac{1}{\text{s}} \\
 **Find:** the speeds of the launch sites, the difference $\Delta v$ between the speeds from Kourou and Plesetsk in $\text{m/s}$, and the speed from Kourou as a percentage of the speed in low orbit
 **Principle:** The Earth rotates as a rigid body, so every place goes round the axis of the Earth in uniform circular motion with the period $T$.
 
-The path of a place is a circle of latitude whose radius is $r = R\cos\varphi$:
-
-the radius $R$ drawn from the centre of the Earth to the place makes the angle $\varphi$ with the plane of the equator, and the distance of the place from the axis is the part of this radius in the direction of the equator, $R\cos\varphi$.
+The path of a place is a circle of latitude whose radius is $r = R\cos\varphi$: the radius $R$ drawn from the centre of the Earth to the place makes the angle $\varphi$ with the plane of the equator, and the distance of the place from the axis is the part of this radius in the direction of the equator, $R\cos\varphi$.
 
 A rocket launched eastwards gets the speed of the place as its initial speed.
 **Formula:** $r = R\cos\varphi$, $\quad v = \dfrac{2\pi r}{T}$

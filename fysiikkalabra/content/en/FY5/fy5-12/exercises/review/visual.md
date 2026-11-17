@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 299136c0bb4aa0fe
+CONTENT-HASH: d8c2179865c6c1c0
 
 ## Blocking
 (none)
@@ -8,9 +8,10 @@ CONTENT-HASH: 299136c0bb4aa0fe
 (none)
 
 ## Checked
-- Delta, round 3 (English): solutions.md:157, the sum of the maxima now an `aligned` block.
-- Opened fy5-12-ex-sum-0-390.png and fy5-12-ex-sum-0-1280.png: at 390 px `7.9 mm + 8.1 mm + 7.8 mm` | `= 23.8 mm,` (the result row indented under the sum), at 1280 px joined into one row; comma inside, `so their average is` and the next block follow; nothing clipped, no stray column.
-- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
+- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
+- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-12 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
+- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

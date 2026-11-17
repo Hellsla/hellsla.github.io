@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 46a0fec8cdaade4c
+CONTENT-HASH: 1c1990d17d51a610
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md:7 (L1-01 Sijoitus) — the calculation runs as text on the page background, while the same calculation in L1-02, L1-04 and L2-08 is an aligned block in a formula box; at 390 px its first row ends with "·" and the fraction starts the next row. Whole and readable; an aligned block would match the neighbours when the file is next edited.
-- [Minor] solutions.md:7 — at the joins of the inline pieces the space before "=" is narrower than after it ("F= 6,674", "N= 0,4015 µN"); known.
+(none)
 
 ## Checked
-- Round 3b, delta: the one re-set chain, solutions.md:7, now five consecutive inline formulas starting with "F" alone.
-- Own captures from preview/fy5-5.html?ratkaisut=1 (rebuilt after the edit), levels and solutions opened, at double scale, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-5-ex-L1-01-r3b-390-0.png, fy5-5-ex-L1-01-r3b-1280-0.png.
-- Round 3's blocking item is fixed: no piece is lifted into a box of its own; the equation reads as one. 1280 px: one line, "F = 6,674 · 10⁻¹¹ N·m²/kg² · [fraction] = 4,015 · 10⁻⁷ N = 0,4015 µN". 390 px: three rows, breaking after "·" and before the last "=", mantissa and power together, the fraction whole.
-- Units upright, decimal commas, µ upright; nothing clipped.
+- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
+- Captures (review/shots): fy5-5-open-exercises-1280-6 (L1-06 split), fy5-5-open-exercises-L3-1280-5 (L3-04, the 'Kohta c' split), fy5-5-open-exercises-L2-1280-12 (L2-08 asteroids split).
+- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
+- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

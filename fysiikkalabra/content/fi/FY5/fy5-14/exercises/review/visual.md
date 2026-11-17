@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a7b51bd2e5875ff2
-ROUND: 3
+CONTENT-HASH: 28de104fed84539e
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md 150 — the boxed sum "431 + 429 + 432 + 430 = 1722" is parted from its unit word: the next line opens "hertsiä, joten keskiarvo on…"; put the unit in the formula (431 Hz + … = 1722 Hz) (carried).
-- [Minor] fy5-14-L2-09 Vastaus: "0,794 m taajuudella 432 Hz ja 0,780 m taajuudella 440 Hz" still elliptical (carried).
+- [Minor] solutions.md fy5-14-L3-05 Vastaus — the c) answer is cut into two paragraphs mid-part; acceptable, optionally start the second with "Sillan lähellä" under its own c) lead.
 
 ## Checked
-- Delta, round 3: the packet's diff is empty and the hash is the one passed in round 2.
-- Own captures from preview/fy5-14.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-14-390-sum1722-0.png, fy5-14-390-1400Hz-1.png, fy5-14-1280-sum1722-0.png, fy5-14-1280-1400Hz-0.png (opened in sheet-390-spot.png, sheet-1280-spot.png).
-- 390 px: the sum on one row in its box; the 1400 Hz check on two rows, the second starting with "="; comma inside the formula. 1280 px: both on one row. Nothing clipped, no page overflow.
+- fy5-14 open-exercises-L3-1280-6 (L3-05 task and solution top, 1280 px) opened; the split Periaate, Mallivastaus and Vastaus paragraphs (L1-05, L1-06, L2-07 Doppler) were checked from the diff and the layout pattern seen in fy5-13/16/17 captures, not each in its own capture.
+- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
