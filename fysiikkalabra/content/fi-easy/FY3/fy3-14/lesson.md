@@ -231,11 +231,17 @@ Kalorimetrissä on $0{,}250\,\text{kg}$ vettä. Veden lämpötila on $24{,}0\,{}
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}250\,\text{kg}$, $T_\text{v} = 24{,}0\,{}^\circ\text{C}$. Jää: $m_\text{j} = 0{,}050\,\text{kg}$, $T_\text{j} = -8{,}0\,{}^\circ\text{C}$. Taulukosta saadaan $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$. Kysytään, sulaako kaikki jää. Kysytään myös lopputilan lämpötilaa $T$.
+**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}250\,\text{kg}$, $T_\text{v} = 24{,}0\,{}^\circ\text{C}$. Jää: $m_\text{j} = 0{,}050\,\text{kg}$, $T_\text{j} = -8{,}0\,{}^\circ\text{C}$. Taulukosta saadaan $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$.
+
+Kysytään, sulaako kaikki jää.
+
+Kysytään myös lopputilan lämpötilaa $T$.
 
 <!-- vaihe -->
 
-**Periaate.** Energia säilyy. Kalorimetri ei ota lämpöä, eikä lämpöä karkaa ympäristöön. Siksi veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin $0\,{}^\circ\text{C}$:seen. Sitten se sulaa vakiolämpötilassa. Lopuksi sulamisvesi lämpenee lopputilan lämpötilaan. Siksi on ensin tarkistettava, riittääkö veden luovuttama lämpö kaiken jään lämmittämiseen ja sulattamiseen. Jos riittää, jää sulaa kokonaan. Silloin lopputilan lämpötila ei ole alle $0\,{}^\circ\text{C}$:n.
+**Periaate.** Energia säilyy. Kalorimetri ei ota lämpöä, eikä lämpöä karkaa ympäristöön. Siksi veden luovuttama lämpömäärä on yhtä suuri kuin jään vastaanottama. Jää lämpenee ensin $0\,{}^\circ\text{C}$:seen. Sitten se sulaa vakiolämpötilassa.
+
+Lopuksi sulamisvesi lämpenee lopputilan lämpötilaan. Siksi on ensin tarkistettava, riittääkö veden luovuttama lämpö kaiken jään lämmittämiseen ja sulattamiseen. Jos riittää, jää sulaa kokonaan. Silloin lopputilan lämpötila ei ole alle $0\,{}^\circ\text{C}$:n.
 
 <!-- vaihe -->
 

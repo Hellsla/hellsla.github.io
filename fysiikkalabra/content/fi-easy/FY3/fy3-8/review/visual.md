@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cd9b243866124293
+CONTENT-HASH: f77b4aca49130118
+Mode: delta
+Round: 1
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] Worked example stage 6 (fy3-8-example-390-2) — "86,4 mm → 87 mm" breaks across lines at the arrow on 390 px; keep the rounding in one non-wrapping group or write "pyöristyy ylöspäin arvoon 87 mm".
-- [Minor] Stage 6 paragraph is now long (rounding, significant figures, limiting factors); consider splitting the rounding remark and the significant-figure remark into two paragraphs.
-- [Minor] fig-9 particles: the vibration is animated (fig-anim, class fa-vib); the capture is a still, so pause control and reduced-motion behaviour were not judged here (for the shared component).
+- [Minor] Worked example stage 6 "Tulos" (fy3-8-example-390-2.png) is about 90 words, near the 120-word limit; splitting the rounding reasoning from the result would ease reading, optional.
 
 ## Checked
-- Delta review. Opened fy3-8-fig-9-390 (particles figure with the fa-vib wrappers added): layout, colours (blue cold, red warm), LaTeX labels d0 and d > d0, caption all intact, nothing clipped, no change to geometry or arrows.
-- Opened fy3-8-example-390-2 (stage 5 substitution rows and stages 6-7): new rounding sentences render with upright units, decimal comma, aligned equals signs; no overflow.
-- Rounding convention (an "at least" value rounded up, 86,4 to 87) matches the project rule.
+- Diff: paragraph breaks in lesson.md, words unchanged. No 360 px captures exist; phone judged at 390 px.
+- 390 px: fy3-8-example-390-2.png (stages 5-7: Δl chain aligned, rough estimate in its own block, paragraphs separated, nothing clipped), fy3-8-stage-sovella-390-2.png (same example in Esimerkit, identical).
+- 1280 px: fy3-8-open-tarkista-1280-1.png (Vastaus open with the Δl chain, units upright), fy3-8-open-exercises-1280-3.png (task 10-3 solution: Annettu to Kaava and Muunnokset rows, closed boxes below).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

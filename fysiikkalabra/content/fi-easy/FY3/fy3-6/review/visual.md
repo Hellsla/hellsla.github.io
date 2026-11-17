@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 97bab66f5441e66d
+CONTENT-HASH: e18b3c3f784d0280
+Mode: delta
+Round: 1
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] Worked example stage 7 (fy3-6-example-390-2.png) holds the check, the lossless comparison and the heat capacity as three short paragraphs; readable, no change needed beyond optionally a subheading.
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Diff: paragraph breaks in lesson.md, words unchanged. No 360 px captures exist; phone judged at 390 px.
+- 390 px: fy3-6-example-390-2.png (stages 4-7: substitution rows with fractions aligned, result and check split into paragraphs, nothing clipped), fy3-6-stage-sovella-390-2.png (same example in Esimerkit stage, identical layout).
+- 1280 px: fy3-6-open-tarkista-1280-1.png (Vastaus open, chain rows aligned, units LaTeX), fy3-6-open-exercises-1280-3.png (solution with Annettu to Järkevyys rows, ΔT conversion block).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

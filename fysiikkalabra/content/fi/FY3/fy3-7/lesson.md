@@ -228,7 +228,13 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetr
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Teho $P = 1000\,\text{W}$, aika $t = 300\,\text{s}$ ja höyrystynyt massa eli vaa'an lukeman muutos $\Delta m = 128\,\text{g}$. Vesi on kiehuvaa eli $100\,{}^\circ\text{C}$:ssa. Kysytään ominaishöyrystymislämpöä $r$. Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
+**Tunnetut ja kysytty.** Teho $P = 1000\,\text{W}$, aika $t = 300\,\text{s}$ ja höyrystynyt massa eli vaa'an lukeman muutos $\Delta m = 128\,\text{g}$.
+
+Vesi on kiehuvaa eli $100\,{}^\circ\text{C}$:ssa.
+
+Kysytään ominaishöyrystymislämpöä $r$.
+
+Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
 
 <!-- vaihe -->
 

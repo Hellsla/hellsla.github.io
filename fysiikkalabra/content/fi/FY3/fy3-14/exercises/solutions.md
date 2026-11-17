@@ -134,7 +134,9 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 ## fy3-14-L1-06
 **Kysytty:** lasin sisällön lämpötila, kun lämpötasapaino on saavutettu ja jäätä on yhä jäljellä
 **Periaate:** Eristetyssä lasissa lämpötasapainossa ei siirry lämpöä. Jään sulamisen aikana lämpötila ei muutu, vaan siirtyvä lämpö kuluu jään hiukkasten keskinäisten vuorovaikutusten muuttamiseen. Niin kauan kuin jäätä ja vettä on yhtä aikaa, lämpötila on jään sulamislämpötila $0\,{}^\circ\text{C}$.
-**Mallivastaus:** Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\,{}^\circ\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa: jäätä ja vettä voi olla tasapainossa yhtä aikaa vain siinä lämpötilassa. Selitys ei ole se, että lämpötila olisi alkulämpötilojen keskiarvo, koska osa lämmöstä on kulunut sulamiseen. Lämpötila ei myöskään ole yli $0\,{}^\circ\text{C}$, koska silloin jää sulaisi edelleen, eikä sen alapuolella, koska silloin vesi alkaisi jäätyä.
+**Mallivastaus:** Puhtaan veden ja jään seoksen lämpötila on normaalipaineessa noin $0\,{}^\circ\text{C}$, kun molempia olomuotoja on tasapainossa. Tämä on veden sulamis- ja jähmettymislämpötila normaalipaineessa: jäätä ja vettä voi olla tasapainossa yhtä aikaa vain siinä lämpötilassa.
+
+Selitys ei ole se, että lämpötila olisi alkulämpötilojen keskiarvo, koska osa lämmöstä on kulunut sulamiseen. Lämpötila ei myöskään ole yli $0\,{}^\circ\text{C}$, koska silloin jää sulaisi edelleen, eikä sen alapuolella, koska silloin vesi alkaisi jäätyä.
 
 ## fy3-14-L1-07
 **Annettu:** vesi, $m = 0{,}20\,\text{kg}$, $T_\text{alku} = 25\,{}^\circ\text{C}$, $T_\text{loppu} = 0\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -159,7 +161,9 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 **Kaava:** $P t = s m$, josta $s = \dfrac{P t}{m} = \dfrac{P}{k}$, missä $k = \dfrac{m}{t}$ on kulmakerroin
 **Muunnokset:** $k = 0{,}4433\,\tfrac{\text{g}}{\text{s}} = 0{,}4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}$. Lopuksi $1\,\tfrac{\text{J}}{\text{kg}} = 10^{-3}\,\tfrac{\text{kJ}}{\text{kg}}$.
 **Sijoitus:** $s = \dfrac{150\,\text{W}}{0{,}4433 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}}} = 338\,400\,\tfrac{\text{J}}{\text{kg}} = 338\,\tfrac{\text{kJ}}{\text{kg}}$
-**Vastaus:** $338\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten luetussa massassa $133\,\text{g}$. b) Tulos on noin $1\,\%$ taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$ suurempi, mikä on kuvaajan lukutarkkuuden rajoissa. Eron syy voi olla se, että osa lämmittimen energiasta meni suppilon ja ympäristön lämmittämiseen eikä jään sulattamiseen: sulanutta massaa kertyi silloin vähemmän kuin lasku olettaa, joten laskettu $s$ on liian suuri. Huoneen lämpö, joka sulattaa jäätä lisää, vaikuttaisi toisin päin ja pienentäisi tulosta, joten nämä tekijät osin kumoavat toisensa.
+**Vastaus:** $338\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten luetussa massassa $133\,\text{g}$. b) Tulos on noin $1\,\%$ taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$ suurempi, mikä on kuvaajan lukutarkkuuden rajoissa. Eron syy voi olla se, että osa lämmittimen energiasta meni suppilon ja ympäristön lämmittämiseen eikä jään sulattamiseen: sulanutta massaa kertyi silloin vähemmän kuin lasku olettaa, joten laskettu $s$ on liian suuri.
+
+Huoneen lämpö, joka sulattaa jäätä lisää, vaikuttaisi toisin päin ja pienentäisi tulosta, joten nämä tekijät osin kumoavat toisensa.
 **Järkevyys:** Tulos on lähellä taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$. Tarkistus: $150\,\text{W}$ sulattaa minuutissa $150\,\tfrac{\text{J}}{\text{s}} \cdot 60\,\text{s} : 334\,000\,\tfrac{\text{J}}{\text{kg}} = 0{,}0269\,\text{kg} = 26{,}9\,\text{g}$, ja taulukon rivillä $t = 60\,\text{s}$ massa on $26{,}9\,\text{g}$.
 
 ## fy3-14-L2-06
@@ -175,7 +179,9 @@ $$\begin{aligned} T &= \dfrac{4190\,\text{J} + 33\,400\,\text{J} - 42\,000\,\tex
 ## fy3-14-L2-07
 **Kysytty:** mikä seikka selittää sen, että laskettu sulamislämpö $300\,\tfrac{\text{kJ}}{\text{kg}}$ jäi taulukkoarvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$ pienemmäksi
 **Periaate:** Laskussa veden luovuttama lämpö jaetaan jään massalla: $s = \dfrac{Q}{m}$. Jos todellinen sulanut massa on pienempi kuin laskussa käytetty $0{,}050\,\text{kg}$, laskettu $s$ jää liian pieneksi. Virhe, joka kasvattaisi veden luovuttamaa lämpöä, kasvattaisi myös tulosta.
-**Mallivastaus:** Jään pintaan oli tarttunut sulaa vettä, joten punnitusta massasta osa oli jo vettä eikä se tarvinnut sulamislämpöä. Lasku olettaa, että koko punnittu massa suli, joten jakajana on liian suuri massa ja tulos jää liian pieneksi. Jää, joka olisi ollut kylmempää kuin $0\,{}^\circ\text{C}$, vaatisi lisälämpöä ja kasvattaisi tulosta. Jos lopputilan lämpötila luettaisiin liian matalaksi, veden lämpötilan muutos näyttäisi suuremmalta ja tulos kasvaisi. Ominaislämpökapasiteettien ero on mukana laskussa eikä aiheuta virhettä.
+**Mallivastaus:** Jään pintaan oli tarttunut sulaa vettä, joten punnitusta massasta osa oli jo vettä eikä se tarvinnut sulamislämpöä. Lasku olettaa, että koko punnittu massa suli, joten jakajana on liian suuri massa ja tulos jää liian pieneksi.
+
+Jää, joka olisi ollut kylmempää kuin $0\,{}^\circ\text{C}$, vaatisi lisälämpöä ja kasvattaisi tulosta. Jos lopputilan lämpötila luettaisiin liian matalaksi, veden lämpötilan muutos näyttäisi suuremmalta ja tulos kasvaisi. Ominaislämpökapasiteettien ero on mukana laskussa eikä aiheuta virhettä.
 
 ## fy3-14-L2-08
 **Annettu:** vesi $m_\text{v} = 0{,}25\,\text{kg}$, $T_\text{v} = 18\,{}^\circ\text{C}$; jää $m_\text{j} = 0{,}080\,\text{kg}$, $T_\text{j} = 0\,{}^\circ\text{C}$; $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -197,7 +203,9 @@ $Q_\text{j} = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}080\,\text{kg}$
 
 $Q_\text{j} = 26\,720\,\text{J} \approx 27\,\text{kJ}$
 
-Väitteet 1, 3 ja 4 ovat tosia. Koska $Q_\text{v} < Q_\text{j}$, kaikki jää ei sula. Sulaneen jään massa on $m_\text{s} = \dfrac{Q_\text{v}}{s}$, eli $m_\text{s} = 0{,}056\,\text{kg}$, ja jäätä jää noin $24\,\text{g}$. Astiassa on jäätä ja vettä yhtä aikaa, joten lämpötila on $0\,{}^\circ\text{C}$. Väite 2 on epätosi: massojen vertailu ei ratkaise sulamista vaan lämpömäärien vertailu. Väite 5 on epätosi: keskiarvo $\tfrac{18 + 0}{2}\,{}^\circ\text{C} = 9\,{}^\circ\text{C}$ unohtaisi sulamislämmön, ja lopputilan lämpötila on $0\,{}^\circ\text{C}$.
+Väitteet 1, 3 ja 4 ovat tosia. Koska $Q_\text{v} < Q_\text{j}$, kaikki jää ei sula. Sulaneen jään massa on $m_\text{s} = \dfrac{Q_\text{v}}{s}$, eli $m_\text{s} = 0{,}056\,\text{kg}$, ja jäätä jää noin $24\,\text{g}$.
+
+Astiassa on jäätä ja vettä yhtä aikaa, joten lämpötila on $0\,{}^\circ\text{C}$. Väite 2 on epätosi: massojen vertailu ei ratkaise sulamista vaan lämpömäärien vertailu. Väite 5 on epätosi: keskiarvo $\tfrac{18 + 0}{2}\,{}^\circ\text{C} = 9\,{}^\circ\text{C}$ unohtaisi sulamislämmön, ja lopputilan lämpötila on $0\,{}^\circ\text{C}$.
 
 ## fy3-14-L3-04
 **Annettu:** vesi $m_\text{v} = 0{,}200\,\text{kg}$, $T_\text{v} = 30{,}0\,{}^\circ\text{C}$; jää $m_\text{j} = 0{,}0500\,\text{kg}$; mittaus 1: $T_\text{j} = 0{,}0\,{}^\circ\text{C}$, $T = 8{,}2\,{}^\circ\text{C}$; mittaus 2: $T_\text{j} = -18{,}0\,{}^\circ\text{C}$, $T = 6{,}2\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -222,19 +230,34 @@ c) Jään lämpeneminen on $c_\text{j} m_\text{j} \Delta T_\text{j} = 2100 \cdot
 $$\begin{aligned} s_2' &= \dfrac{4190 \cdot 4{,}45\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{18\,645{,}5\,\text{J} - 1890\,\text{J}}{0{,}0500\,\text{kg}} \\ &= \dfrac{16\,755{,}5\,\text{J}}{0{,}0500\,\text{kg}} \\ &= 335\,100\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$
 
 
-**Vastaus:** a) Alkuperäiset tulokset ovat mittaukselle 1 noin $331\,\tfrac{\text{kJ}}{\text{kg}}$ ja mittaukselle 2 noin $373\,\tfrac{\text{kJ}}{\text{kg}}$; jälkimmäinen poikkeaa taulukkoarvosta noin $12\,\%$ ylöspäin. b) Syy on se, että pakastimesta otetun jään lämmittäminen $0\,{}^\circ\text{C}$:seen vei osan veden luovuttamasta lämmöstä, mutta lasku katsoi sen sulamisen lämmöksi, joten $s$ tuli liian suureksi. c) Korjattu sulamislämpö on $335\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten massoissa ja lämpötiloissa; se poikkeaa taulukkoarvosta alle $1\,\%$.
+**Vastaus:** a) Alkuperäiset tulokset ovat mittaukselle 1 noin $331\,\tfrac{\text{kJ}}{\text{kg}}$ ja mittaukselle 2 noin $373\,\tfrac{\text{kJ}}{\text{kg}}$; jälkimmäinen poikkeaa taulukkoarvosta noin $12\,\%$ ylöspäin.
+
+b) Syy on se, että pakastimesta otetun jään lämmittäminen $0\,{}^\circ\text{C}$:seen vei osan veden luovuttamasta lämmöstä, mutta lasku katsoi sen sulamisen lämmöksi, joten $s$ tuli liian suureksi.
+
+c) Korjattu sulamislämpö on $335\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa kuten massoissa ja lämpötiloissa; se poikkeaa taulukkoarvosta alle $1\,\%$.
+
 **Järkevyys:** Korjaus on suuruusluokaltaan oikea: jään lämmittäminen vaatii $1890\,\text{J}$ ja sulattaminen $$\begin{aligned} &0{,}0500 \cdot 334\,000\,\text{J} \\ &= 16\,700\,\text{J} \end{aligned}$$, joten lämmitys on noin $11\,\%$ sulatuksen lämmöstä, ja virhe $373 - 335 = 38\,\tfrac{\text{kJ}}{\text{kg}}$ on sen verran. Korjattu tulos on lähellä mittauksen 1 tulosta ($331\,\tfrac{\text{kJ}}{\text{kg}}$), ja molemmat ovat lähellä taulukkoarvoa, kuten pitääkin, kun sama aine mitataan kahdesti.
 
 ## fy3-14-L3-05
 **Annettu:** vesi $m_\text{v} = 0{,}300\,\text{kg}$, jää $m_\text{j} = 0{,}100\,\text{kg}$, jään lämpötila $T_\text{j}$ tuntematon; taulukon rivit $(T_\text{v};\ T)$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** a) rivit, joilla jäätä jää jäljelle, b) jään alkulämpötila $T_\text{j}$, c) pienin veden alkulämpötila $T_\text{v,min}$, jolla kaikki jää sulaa, celsiusasteina
-**Periaate:** Niin kauan kuin astiassa on jäätä ja vettä yhtä aikaa, lopputilan lämpötila on $0\,{}^\circ\text{C}$. Siksi rivit, joilla $T = 0{,}0\,{}^\circ\text{C}$, ovat rivejä, joilla jäätä jäi. Kun lopputilan lämpötila on yli $0\,{}^\circ\text{C}$, kaikki jää on sulanut, ja silloin energia säilyy: veden luovuttama lämpö kuluu jään lämmittämiseen, sulattamiseen ja sulamisveden lämmittämiseen. Rajalla $T_\text{v,min}$ veden luovuttama lämpö $c_\text{v} m_\text{v} (T_\text{v,min} - 0\,{}^\circ\text{C})$ on juuri yhtä suuri kuin jään tarvitsema $Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j}$. Taulukon riveiltä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $T_\text{v} = 20\,{}^\circ\text{C}$ lopputilan lämpötila on $0{,}0\,{}^\circ\text{C}$, joten niillä jäätä jäi. Riveillä $30$, $40$ ja $60\,{}^\circ\text{C}$ lämpötila on yli $0\,{}^\circ\text{C}$, joten niillä kaikki jää suli.
+**Periaate:** Niin kauan kuin astiassa on jäätä ja vettä yhtä aikaa, lopputilan lämpötila on $0\,{}^\circ\text{C}$. Siksi rivit, joilla $T = 0{,}0\,{}^\circ\text{C}$, ovat rivejä, joilla jäätä jäi. Kun lopputilan lämpötila on yli $0\,{}^\circ\text{C}$, kaikki jää on sulanut, ja silloin energia säilyy: veden luovuttama lämpö kuluu jään lämmittämiseen, sulattamiseen ja sulamisveden lämmittämiseen.
+
+Rajalla $T_\text{v,min}$ veden luovuttama lämpö $c_\text{v} m_\text{v} (T_\text{v,min} - 0\,{}^\circ\text{C})$ on juuri yhtä suuri kuin jään tarvitsema $Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j}$. Taulukon riveiltä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $T_\text{v} = 20\,{}^\circ\text{C}$ lopputilan lämpötila on $0{,}0\,{}^\circ\text{C}$, joten niillä jäätä jäi. Riveillä $30$, $40$ ja $60\,{}^\circ\text{C}$ lämpötila on yli $0\,{}^\circ\text{C}$, joten niillä kaikki jää suli.
+
 **Kaava:** Rivillä, jolla kaikki jää sulaa, on $$\begin{aligned} &c_\text{v} m_\text{v} \Delta T_\text{v} \\ &= Q_\text{j} + c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \end{aligned}$$, josta $$\begin{aligned} Q_\text{j} &= c_\text{v} m_\text{v} \Delta T_\text{v} \\ &- c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \end{aligned}$$ ja $\Delta T_\text{j} = \dfrac{Q_\text{j} - s m_\text{j}}{c_\text{j} m_\text{j}}$, $T_\text{j} = 0\,{}^\circ\text{C} - \Delta T_\text{j}$. Raja on $\Delta T_\text{v,min} = \dfrac{Q_\text{j}}{c_\text{v} m_\text{v}}$ ja $T_\text{v,min} = 0\,{}^\circ\text{C} + \Delta T_\text{v,min}$.
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä, ja veden jäähtyminen $0\,{}^\circ\text{C}$:seen on $\Delta T_\text{v} = T_\text{v} - 0\,{}^\circ\text{C}$, lukuarvoltaan sama kelvineinä. Sulamislämpö $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** b) $$\begin{aligned} Q_\text{j} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 40\,\text{K} \\ &- 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}400\,\text{kg} \cdot 8{,}1\,\text{K} \\ &= 50\,280\,\text{J} - 13\,575{,}6\,\text{J} \\ &= 36\,704{,}4\,\text{J} \end{aligned}$$. Sulattamiseen kuluu $s m_\text{j} = 334\,000 \cdot 0{,}100\,\text{J} = 33\,400\,\text{J}$, joten $\Delta T_\text{j} = \dfrac{36\,704{,}4\,\text{J} - 33\,400\,\text{J}}{2100 \cdot 0{,}100\,\tfrac{\text{J}}{\text{K}}} = 15{,}7\,\text{K}$ eli $T_\text{j} = -15{,}7\,{}^\circ\text{C}$.
 
 c) $\Delta T_\text{v,min} = \dfrac{36\,704{,}4\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg}} = \dfrac{36\,704{,}4\,\text{J}}{1257\,\tfrac{\text{J}}{\text{K}}} = 29{,}2\,\text{K}$, joten $T_\text{v,min} = 0\,{}^\circ\text{C} + 29{,}2\,\text{K} = 29{,}2\,{}^\circ\text{C}$
-**Vastaus:** a) Jäätä jäi riveillä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $20\,{}^\circ\text{C}$, koska $T = 0{,}0\,{}^\circ\text{C}$ (rajatapaus, jossa kaikki jää juuri suli, tuottaisi saman lukeman, mutta kohta c) näyttää, että nämä rivit ovat alle rajan $29\,{}^\circ\text{C}$). b) Jään lämpötila oli noin $-16\,{}^\circ\text{C}$. c) Pienin veden alkulämpötila on $29\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska mitattu $T = 8{,}1\,{}^\circ\text{C}$ ja massat ovat kahdella tai kolmella numerolla. Taulukko on sopusoinnussa: $20\,{}^\circ\text{C} < 29\,{}^\circ\text{C}$ jäätä jää, ja $30\,{}^\circ\text{C} > 29\,{}^\circ\text{C}$ kaikki jää sulaa pienellä ylijäämällä ($T = 0{,}6\,{}^\circ\text{C}$).
+**Vastaus:** a) Jäätä jäi riveillä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $20\,{}^\circ\text{C}$, koska $T = 0{,}0\,{}^\circ\text{C}$ (rajatapaus, jossa kaikki jää juuri suli, tuottaisi saman lukeman, mutta kohta c) näyttää, että nämä rivit ovat alle rajan $29\,{}^\circ\text{C}$).
+
+b) Jään lämpötila oli noin $-16\,{}^\circ\text{C}$.
+
+c) Pienin veden alkulämpötila on $29\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska mitattu $T = 8{,}1\,{}^\circ\text{C}$ ja massat ovat kahdella tai kolmella numerolla.
+
+Taulukko on sopusoinnussa: $20\,{}^\circ\text{C} < 29\,{}^\circ\text{C}$ jäätä jää, ja $30\,{}^\circ\text{C} > 29\,{}^\circ\text{C}$ kaikki jää sulaa pienellä ylijäämällä ($T = 0{,}6\,{}^\circ\text{C}$).
+
 **Järkevyys:** Tarkistus riviltä $30\,{}^\circ\text{C}$: $$T = \dfrac{\begin{aligned}4190 \cdot 0{,}300 \cdot 30 \\ - 36\,704{,}4\end{aligned}}{1676}\,{}^\circ\text{C}$$ $$\begin{aligned} &= \dfrac{37\,710 - 36\,704{,}4}{1676}\,{}^\circ\text{C} \\ &= 0{,}60\,{}^\circ\text{C} \end{aligned}$$, mikä on taulukon arvo. Rivi $60\,{}^\circ\text{C}$ antaa saman $Q_\text{j}$:n: $$\begin{aligned} &4190 \cdot 0{,}300 \cdot 60 \\ &- 4190 \cdot 0{,}400 \cdot 23{,}1 \\ &= 75\,420 - 38\,715{,}6 \\ &= 36\,704{,}4\,\text{J} \end{aligned}$$. Jään tarvitsema lämpö on lähes kokonaan sulamista ($33\,400\,\text{J}$), koska jään lämmitys vie vain $3300\,\text{J}$.
 
 ## fy3-14-L1-09

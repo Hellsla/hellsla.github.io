@@ -429,7 +429,9 @@ At the airport, a bag of crisps contains $0.80\,\textsf{l}$ of air at a pressure
 
 <!-- vaihe -->
 
-**Given and find.** We know $p_1 = 101\,\text{kPa}$, $V_1 = 0.80\,\textsf{l}$ and $p_2 = 78\,\text{kPa}$. The temperature is the same. We want the final volume $V_2$ in litres.
+**Given and find.** We know $p_1 = 101\,\text{kPa}$, $V_1 = 0.80\,\textsf{l}$ and $p_2 = 78\,\text{kPa}$. The temperature is the same.
+
+We want the final volume $V_2$ in litres.
 
 <!-- vaihe -->
 

@@ -228,7 +228,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The area of a window is 1.5 m² and its U-value is $1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Where is the error?",
+      "prompt": "The area of a window is $1.5\\,\\text{m}^2$ and its U-value is $1.0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $20\\,{}^\\circ\\text{C}$ indoors and $-10\\,{}^\\circ\\text{C}$ outdoors. A student calculates: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ and $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1.5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Where is the error?",
       "choices": [
         {
           "text": "The temperatures should be converted to kelvins before subtracting.",
@@ -255,7 +255,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "The total area of the walls, door, top and bottom of a refrigerator is 4.0 m², and their mean U-value is $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $5\\,{}^\\circ\\text{C}$ in the refrigerator and $21\\,{}^\\circ\\text{C}$ in the kitchen. Heat is conducted through the walls into the refrigerator, and for the temperature of the refrigerator to stay constant, its machinery must move the same energy back to the kitchen. How much heat is conducted into the refrigerator in one day? Assume that the door is not opened. Give the answer in kilowatt-hours.",
+      "prompt": "The total area of the walls, door, top and bottom of a refrigerator is $4.0\\,\\text{m}^2$, and their mean U-value is $0.30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. It is $5\\,{}^\\circ\\text{C}$ in the refrigerator and $21\\,{}^\\circ\\text{C}$ in the kitchen. Heat is conducted through the walls into the refrigerator, and for the temperature of the refrigerator to stay constant, its machinery must move the same energy back to the kitchen. How much heat is conducted into the refrigerator in one day? Assume that the door is not opened. Give the answer in kilowatt-hours.",
       "answer": 0.461,
       "unit": "kWh",
       "tolerance": 0.02,

@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 66d5ebc227c0907c
+CONTENT-HASH: dbc5cb0acfed7220
 
 ## Blocking
 
 ## Polish
-- [Minor] fig-9 (particles) — the cold row's arrows are blue and the warm row's red (fits the palette's temperature colours, but blue is also the velocity colour); the labels and arrow lengths carry the meaning — optionally say in the aria-label that the arrows only show the size of the vibration.
 
 ## Checked
-- Delta: the particles figure now animated (`fa-vib`, 6 px cold, 18 px warm) and the Result stage with the "at least 87 mm" rounding.
-- Opened `fy3-8-fig-9-390.png`: still frame intact, labels d₀ and d > d₀, brackets, equal-size particles and the "gaps exaggerated" caption readable, nothing clipped.
-- Opened `fy3-8-example-390-2.png`: Result and Reasonableness stages, "86 mm → at least 87 mm" and units render correctly as KaTeX, aligned chain, short paragraphs.
-- Opened `fy3-8-theory-1280-1.png`: the figure sits beside its paragraph with a visible Pause the animation control.
-- Other captures not opened (delta; the diff does not touch them).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-6.png (exercises 10-6 to 10-14, solutions open): the split model answers of 10-7 and 10-8, the water-density answer (10-9 and 10-10 parts) and the graph of 10-13 are readable; no horizontal overflow.
+- review/shots/fy3-8-example-390-1.png (steel bridge expansion example, stages 1-4 at 390 px): unchanged, the 1/K fractions and chains are legible.
+- review/shots/fy3-8-open-exercises-1280-3.png (opened solution 10-2 and the start of 10-3): the 10^-6 exponents, units 1/K and the reasonableness block render correctly.

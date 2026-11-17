@@ -205,7 +205,9 @@ $G = 0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$
 
 $G = 4{,}905\,\text{N} \approx 4{,}9\,\text{N}$
 
-Koukun voima on mittarin lukema, $F = 4{,}9\,\text{N}$. Voimat ovat yhtä suuret. Samassa mittakaavassa nuolet $G$ ja $F$ ovat siis yhtä pitkät: $G$ alaspäin keskipisteestä ja $F$ ylöspäin yläpinnasta. Kuviosta A puuttuu mittarin voima $F$, vaikka mittari vetää kappaletta. Kuviossa C nuoli $F$ on kaksi kertaa niin pitkä kuin $G$. Se vastaisi noin $9{,}8\,\text{N}$:n lukemaa. Kuviossa D on lisäksi voima $F_\text{k}$. Se on kappaleen voima mittariin, joten se vaikuttaa mittariin eikä kappaleeseen.
+Koukun voima on mittarin lukema, $F = 4{,}9\,\text{N}$. Voimat ovat yhtä suuret. Samassa mittakaavassa nuolet $G$ ja $F$ ovat siis yhtä pitkät: $G$ alaspäin keskipisteestä ja $F$ ylöspäin yläpinnasta.
+
+Kuviosta A puuttuu mittarin voima $F$, vaikka mittari vetää kappaletta. Kuviossa C nuoli $F$ on kaksi kertaa niin pitkä kuin $G$. Se vastaisi noin $9{,}8\,\text{N}$:n lukemaa. Kuviossa D on lisäksi voima $F_\text{k}$. Se on kappaleen voima mittariin, joten se vaikuttaa mittariin eikä kappaleeseen.
 
 ## fy3-1-L1-10
 **Annettu:** $m = 85{,}0\,\text{kg}$. Taulukosta (MAFY-taulukko *Aurinkokunta*, Mars, putoamiskiihtyvyys pinnalla) $g_\text{Mars} = 3{,}72\,\text{m/s}^2$.

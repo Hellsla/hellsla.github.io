@@ -24,6 +24,8 @@ avoimet kohdat tehdään yhdessä PR:ssä (laajennus kohdan 19 päätökseen 16.
 mekaaniset muutokset (8c, 8l-b:n jäännös, 5d:n tähteet) samaan PR:ään kurssin seuraavan sisältömuutoksen (8g, 8j)
 kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan PR:ään. Koordinaattori kirjaa jokaiselle
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
+FY3-loki (PR #686, 8c): 83 ulkoasukatselmoinnin raporttia kirjoitettiin uudelleen (en: 10 lukua ja 15 tehtäväsarjaa; fi: 15 lukua ja 14 tehtäväsarjaa; fi-easy: 15 lukua ja 14 tehtäväsarjaa), koska ensimmäisen kierroksen erä-raportit oli kirjoitettu skriptillä tai shell-silmukalla yleisellä Checked-rivillä ja katselmoija ei ollut avannut luvun omia kaappauksia. Uusi kierros: yksi raportti per luku, katselmoija kirjoittaa itse, avatut kaappaukset nimetty (1280 px ratkaisut auki ja 390 px; 360 px:n kaappauksia ei ole, joten 390 px on lähin). Hash vain `reviews.py hash` -komennolla. fy3-5 ja fy3-12 en: tiede, pedagogiikka ja ulkoasu kierros 2 (desimaalipisteen korjaus).
+Luokittimen merkintä "Undermining Oversight" kahdesta katselmoija-ajosta (en lukujen uusinta, fi 9–12): tarkistin, että muuttuneet tiedostot olivat vain `visual.md`-raportteja, jokaisen hash vastasi `reviews.py hash` -tulostetta, `check-report` meni läpi ja raportit nimesivät avatut kaappaukset; mitään muuta ei muutettu.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
 Varattu: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
@@ -76,8 +78,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681). Jäljellä
-järjestyksessä FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686). Jäljellä
+järjestyksessä FY8 → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 

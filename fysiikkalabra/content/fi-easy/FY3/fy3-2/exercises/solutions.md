@@ -124,7 +124,11 @@
 ## fy3-2-L1-06
 **Kysytty:** miksi kantava voima ei tee työtä, kun reppua kannetaan vaakasuoraan
 **Periaate:** Voiman tekemä työ $W = F s$ vaatii, että voima on liikkeen suuntainen. Reppua kannatteleva voima osoittaa ylös. Reppu liikkuu kuitenkin sivulle. Voima on siis kohtisuorassa liikettä vastaan.
-**Mallivastaus:** Voima osoittaa ylös, mutta liike on sivulle. Voima ei ole liikkeen suuntainen, joten se ei tee työtä. Tasainen vauhti ei selitä asiaa. Liikkeen suuntainen voima tekee työn myös tasaisessa liikkeessä, esimerkiksi pulkkaa vetävä voima. Voiman suuruus ei selitä asiaa. Hitaassa nostossa painon suuruinen voima tekee työn $W = G h$. Työ ei myöskään rajoitu nostamiseen. Mopoa työntävä vaakasuora voima tekee työn.
+**Mallivastaus:** Voima osoittaa ylös, mutta liike on sivulle. Voima ei ole liikkeen suuntainen, joten se ei tee työtä.
+
+Tasainen vauhti ei selitä asiaa. Liikkeen suuntainen voima tekee työn myös tasaisessa liikkeessä, esimerkiksi pulkkaa vetävä voima.
+
+Voiman suuruus ei selitä asiaa. Hitaassa nostossa painon suuruinen voima tekee työn $W = G h$. Työ ei myöskään rajoitu nostamiseen. Mopoa työntävä vaakasuora voima tekee työn.
 
 ## fy3-2-L1-07
 **Annettu:** voima $F = 1{,}2\,\text{kN}$ (liikkeen suuntainen), teho $P = 1{,}8\,\text{kW}$, vauhti tasainen
@@ -139,7 +143,11 @@
 ## fy3-2-L1-08
 **Kysytty:** kumpi nosturi on tehokkaampi ja miksi
 **Periaate:** Kuorma ja nostokorkeus ovat samat. Siksi nostotyö $W = m g h$ on kummallakin nosturilla sama. Teho on työ aikayksikköä kohti, $P = \dfrac{W}{t}$. Sama työ lyhyemmässä ajassa tarkoittaa siis suurempaa tehoa.
-**Mallivastaus:** Nosturin A teho on suurempi, koska työ on sama mutta se tehdään lyhyemmässä ajassa. Kummankaan nostotyö ei ole suurempi, koska työ riippuu vain kuormasta ja korkeudesta. Nostoon kuluva aika ei vaikuta siihen. Teho ei myöskään ole sama, koska teho kertoo, kuinka nopeasti työ tehdään. Nosturin A nosto kestää vain puolet nosturin B ajasta, joten sen teho on kaksinkertainen. Luku $500\,\text{kg}$ ja korkeus eivät vaikuta vertailuun, koska nostotyö on molemmilla sama.
+**Mallivastaus:** Nosturin A teho on suurempi, koska työ on sama mutta se tehdään lyhyemmässä ajassa.
+
+Kummankaan nostotyö ei ole suurempi, koska työ riippuu vain kuormasta ja korkeudesta. Nostoon kuluva aika ei vaikuta siihen.
+
+Teho ei myöskään ole sama, koska teho kertoo, kuinka nopeasti työ tehdään. Nosturin A nosto kestää vain puolet nosturin B ajasta, joten sen teho on kaksinkertainen. Luku $500\,\text{kg}$ ja korkeus eivät vaikuta vertailuun, koska nostotyö on molemmilla sama.
 
 ## fy3-2-L2-05
 **Annettu:** taulukosta voima $F$ kohdissa $s = 0{,}0\,\text{m}$, $1{,}0\,\text{m}$, $2{,}0\,\text{m}$, $3{,}0\,\text{m}$ ja $4{,}0\,\text{m}$: $18{,}0\,\text{N}$, $17{,}2\,\text{N}$, $15{,}1\,\text{N}$, $11{,}0\,\text{N}$ ja $6{,}0\,\text{N}$; voima on liikkeen suuntainen
@@ -183,7 +191,13 @@ $$\begin{aligned} G &= 40\,\text{kg} \cdot 9{,}81\,\dfrac{\text{m}}{\text{s}^2} 
 **Annettu:** taulukosta $(s, F)$: $(2{,}0\,\text{cm};\ 1{,}9\,\text{N})$, $(4{,}0\,\text{cm};\ 4{,}2\,\text{N})$, $(6{,}0\,\text{cm};\ 5{,}8\,\text{N})$, $(8{,}0\,\text{cm};\ 8{,}1\,\text{N})$, $(10{,}0\,\text{cm};\ 10{,}0\,\text{N})$; venymä $s_\text{max} = 10{,}0\,\text{cm}$; nostettava massa $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) voiman ja venymän riippuvuus, b) venyttämiseen tehty työ $W$, c) nostokorkeus $h$ senttimetreinä
 **Periaate:** Voima muuttuu venymän mukana, joten työ on $(s,F)$-kuvaajan pinta-ala. Jos voima on verrannollinen venymään, kuvaaja on suora, joka kulkee origon kautta. Silloin pinta-ala on kolmio. Energia säilyy ilman häviöitä. Jousen venyttämiseen tehdyllä työllä voi nostaa kappaleen hitaasti. Silloin nostotyö $m g h$ on yhtä suuri kuin $W$.
-**Kuvaajan lukeminen:** Voima kasvaa venymän mukana niin, että osamäärä $\tfrac{F}{s}$ on kaikissa pisteissä noin $1{,}0\,\text{N/cm}$. Esimerkiksi $\tfrac{1{,}9}{2{,}0} = 0{,}95$ ja $\tfrac{10{,}0}{10{,}0} = 1{,}0$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksessa on epävarmuutta. Siksi pisteiden lomaan sovitetaan suora, joka kulkee origon kautta. Origo kuuluu suoralle, koska venymä on mitattu vapaasta pituudesta. Suoralla kohdassa $s = 10{,}0\,\text{cm}$ voima on $F = 10{,}0\,\text{N}$. Voima kasvaa nollasta tasaisesti. Kuvaaja on siis suora, joka kulkee origon kautta, ja sen alle jää kolmio. Siksi työ on kolmion pinta-ala. Kolmion kanta on $s$ ja korkeus on $F$.
+**Kuvaajan lukeminen:** Voima kasvaa venymän mukana niin, että osamäärä $\tfrac{F}{s}$ on kaikissa pisteissä noin $1{,}0\,\text{N/cm}$. Esimerkiksi $\tfrac{1{,}9}{2{,}0} = 0{,}95$ ja $\tfrac{10{,}0}{10{,}0} = 1{,}0$.
+
+Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksessa on epävarmuutta. Siksi pisteiden lomaan sovitetaan suora, joka kulkee origon kautta. Origo kuuluu suoralle, koska venymä on mitattu vapaasta pituudesta.
+
+Suoralla kohdassa $s = 10{,}0\,\text{cm}$ voima on $F = 10{,}0\,\text{N}$.
+
+Voima kasvaa nollasta tasaisesti. Kuvaaja on siis suora, joka kulkee origon kautta, ja sen alle jää kolmio. Siksi työ on kolmion pinta-ala. Kolmion kanta on $s$ ja korkeus on $F$.
 **Kaava:** $W = \tfrac{1}{2} F s$ ja $W = m g h$, joten $h = \dfrac{W}{m g}$
 **Muunnokset:** $10{,}0\,\text{cm} = 0{,}100\,\text{m}$, jotta työ tulee jouleina. Lopuksi $h$ muunnetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:**
@@ -196,7 +210,11 @@ $$\begin{aligned} W &= 0{,}5 \cdot 10{,}0\,\text{N} \cdot 0{,}100\,\text{m} \\ &
 **Annettu:** massa $m = 450\,\text{kg}$, taulukosta $(t, h)$: $(2{,}0\,\text{s};\ 1{,}6\,\text{m})$, $(4{,}0\,\text{s};\ 3{,}3\,\text{m})$, $(6{,}0\,\text{s};\ 4{,}9\,\text{m})$, $(8{,}0\,\text{s};\ 6{,}5\,\text{m})$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) kuorman nopeus $v$, b) miksi nostovoima on yhtä suuri kuin paino, c) moottorin teho $P$ kilowatteina, d) työn vertailu taulukon viimeiseen pisteeseen
 **Periaate:** Jos korkeus kasvaa tasaisesti ajan mukana, kuorma nousee vakionopeudella. Tasaisella nopeudella nostovoima $F$ on yhtä suuri kuin paino $G = m g$. Teho on voiman ja nopeuden tulo, $P = F v$.
-**Kuvaajan lukeminen:** Aikaväleillä $2{,}0\,\text{s}$ korkeus kasvaa $1{,}6\,\text{m}$, $1{,}7\,\text{m}$, $1{,}6\,\text{m}$ ja $1{,}6\,\text{m}$. Se kasvaa siis lähes saman verran joka kerta, joten nopeus on likimain vakio. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksessa on epävarmuutta. Siksi nopeus luetaan sovitetun suoran kulmakertoimesta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä. Origon kautta kulkeva suora sopii pisteiden lomaan, koska aika ja korkeus lasketaan nostoliikkeen alusta. Suoralta luetaan $h = 6{,}52\,\text{m}$ kohdassa $t = 8{,}0\,\text{s}$. Kulmakerroin on siis $v = 6{,}52\,\text{m} / 8{,}0\,\text{s} = 0{,}815\,\text{m/s}$.
+**Kuvaajan lukeminen:** Aikaväleillä $2{,}0\,\text{s}$ korkeus kasvaa $1{,}6\,\text{m}$, $1{,}7\,\text{m}$, $1{,}6\,\text{m}$ ja $1{,}6\,\text{m}$. Se kasvaa siis lähes saman verran joka kerta, joten nopeus on likimain vakio.
+
+Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksessa on epävarmuutta. Siksi nopeus luetaan sovitetun suoran kulmakertoimesta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä. Origon kautta kulkeva suora sopii pisteiden lomaan, koska aika ja korkeus lasketaan nostoliikkeen alusta.
+
+Suoralta luetaan $h = 6{,}52\,\text{m}$ kohdassa $t = 8{,}0\,\text{s}$. Kulmakerroin on siis $v = 6{,}52\,\text{m} / 8{,}0\,\text{s} = 0{,}815\,\text{m/s}$.
 **Kaava:** $F = G = m g$ ja $P = F v$, joten $P = m g v$; vertailussa $W = P t$ ja $W = m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:**

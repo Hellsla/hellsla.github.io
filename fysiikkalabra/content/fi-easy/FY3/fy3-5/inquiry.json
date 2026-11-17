@@ -294,7 +294,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Tulimännässä on suljettu sylinteri, jonka pohjalla on taulaa. Mäntä painetaan kämmenellä nopeasti alas. Puristuva ilma kuumenee niin, että taula syttyy. Kämmen työntää mäntää keskimäärin 75 N:n voimalla 8,0 cm:n matkan. Puristuksen aikana ilmasta ehtii siirtyä seiniin lämpömäärä $0{,}60\\,\\text{J}$. Kuinka paljon ilman sisäenergia kasvaa? Oleta, että koko kämmenen työ tehdään ilmaan (kitka jätetään pois). Vastaa jouleina.",
+      "prompt": "Tulimännässä on suljettu sylinteri, jonka pohjalla on taulaa. Mäntä painetaan kämmenellä nopeasti alas. Puristuva ilma kuumenee niin, että taula syttyy. Kämmen työntää mäntää keskimäärin $75\\,\\text{N}$:n voimalla $8{,}0\\,\\text{cm}$:n matkan. Puristuksen aikana ilmasta ehtii siirtyä seiniin lämpömäärä $0{,}60\\,\\text{J}$. Kuinka paljon ilman sisäenergia kasvaa? Oleta, että koko kämmenen työ tehdään ilmaan (kitka jätetään pois). Vastaa jouleina.",
       "answer": 5.4,
       "unit": "J",
       "tolerance": 0.02,

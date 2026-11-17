@@ -94,9 +94,12 @@
 **Periaate:** Pituuden muutos on $\Delta l = \alpha l_0 \Delta T$. Se on suoraan verrannollinen alkupituuteen $l_0$ ja lämpötilan muutokseen $\Delta T$. Sauvat ovat samaa terästä, joten kerroin $\alpha$ on sama ja supistuu suhteesta pois.
 **Mallivastaus:** Verrataan muutoksia suhteena:
 $\dfrac{\Delta l_\text{B}}{\Delta l_\text{A}} = \dfrac{\alpha l_\text{B} \Delta T_\text{B}}{\alpha l_\text{A} \Delta T_\text{A}}$
+
 Alkupituuksien suhde on $l_\text{B} : l_\text{A} = 2{,}0\,\text{m} : 4{,}0\,\text{m} = 0{,}5$.
 Lämpötilan muutosten suhde on $\Delta T_\text{B} : \Delta T_\text{A} = 30\,\text{K} : 10\,\text{K} = 3$.
+
 Siis $\Delta l_\text{B} : \Delta l_\text{A} = 0{,}5 \cdot 3 = 1{,}5$, eli pituuden muutos kasvaa $1{,}5$-kertaiseksi.
+
 Arvio: jos kerroin on noin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, sauva A pitenee noin $0{,}5\,\text{mm}$ ja sauva B noin $0{,}7\,\text{mm}$. Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti, vaikka sen alkupituus on vain puolet. Kolminkertainen muutos saataisiin vain, jos sauvat olisivat yhtä pitkiä.
 
 ## fy3-8-L3-01
@@ -159,17 +162,41 @@ $$\begin{aligned} \Delta l &= 23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2{,}0\
 **Muunnokset:** Tilavuudet ovat samassa yksikössä, joten $\Delta V$ ja $V_0$ supistuvat samassa yksikössä. Lämpötilan muutos on $\Delta T = 10\,{}^\circ\text{C} - 4\,{}^\circ\text{C} = 6\,\text{K}$, sama kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Sijoitus:** $\Delta V = 1{,}00030\,\text{dm}^3 - 1{,}00003\,\text{dm}^3 = 0{,}00027\,\text{dm}^3$, ja
 $\gamma = \dfrac{0{,}00027\,\text{dm}^3}{1{,}00003\,\text{dm}^3 \cdot 6\,\text{K}} = 0{,}000045\,\tfrac{1}{\text{K}} = 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
-**Vastaus:** b) $\gamma \approx 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, kaksi merkitsevää numeroa, koska tilavuuden muutos $0{,}00027\,\text{dm}^3$ tunnetaan kahdella numerolla. Kohta a): pienin tilavuus on lämpötilassa $4\,{}^\circ\text{C}$, joten tiheys on siinä suurin. Mallivastaus c): veden $\gamma$ ei ole vakio, vaan se kasvaa lämpötilan mukana ja on lähellä $4\,{}^\circ\text{C}$:ta nolla. Siksi taulukon arvoa $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ei voi käyttää tällä välillä. Toisin kuin useimmat nesteet, vesi kutistuu lämmetessään välillä $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$. Talvella järven pintavesi jäähtyy, tihenee ja vajoaa, kunnes koko vesi on noin $4\,{}^\circ\text{C}$:ssa. Sen jälkeen kylmempi vesi on kevyempää ja jää pintaan, joten pohjan vesi pysyy noin $4\,{}^\circ\text{C}$:ssa ja järvi jäätyy pinnalta.
+**Vastaus:** b) $\gamma \approx 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, kaksi merkitsevää numeroa, koska tilavuuden muutos $0{,}00027\,\text{dm}^3$ tunnetaan kahdella numerolla.
+
+Kohta a): pienin tilavuus on lämpötilassa $4\,{}^\circ\text{C}$, joten tiheys on siinä suurin.
+
+Mallivastaus c): veden $\gamma$ ei ole vakio, vaan se kasvaa lämpötilan mukana ja on lähellä $4\,{}^\circ\text{C}$:ta nolla. Siksi taulukon arvoa $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ei voi käyttää tällä välillä.
+
+Toisin kuin useimmat nesteet, vesi kutistuu lämmetessään välillä $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$.
+
+Talvella järven pintavesi jäähtyy, tihenee ja vajoaa, kunnes koko vesi on noin $4\,{}^\circ\text{C}$:ssa. Sen jälkeen kylmempi vesi on kevyempää ja jää pintaan, joten pohjan vesi pysyy noin $4\,{}^\circ\text{C}$:ssa ja järvi jäätyy pinnalta.
+
 **Järkevyys:** Kerroin $45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on selvästi pienempi kuin kohdan c) vertailuarvo, noin viidesosa siitä, koska $\gamma$ kasvaa lämpötilan mukana. Välillä $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ tilavuus pienenee, joten kerroin on siellä negatiivinen.
+
 ## fy3-8-L2-06
+
 **Annettu:** metallisauva, $l_0 = 0{,}800\,\text{m}$ lämpötilassa $20\,{}^\circ\text{C}$; ensimmäinen piste $(20\,{}^\circ\text{C};\ 0{,}00\,\text{mm})$ ja viimeinen piste $(80\,{}^\circ\text{C};\ 1{,}10\,\text{mm})$; taulukosta $\alpha_\text{teräs} = 12$, $\alpha_\text{alumiini} = 23$, $\alpha_\text{kupari} = 17$ (yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$)
+
 **Kysytty:** a) $\alpha$ yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$; b) sauvan aine ja miksi pisteet eivät ole täsmälleen suoralla
+
 **Periaate:** Sauva pitenee verrannollisesti lämpötilan muutokseen ja alkupituuteen, ja kerroin $\alpha$ on aineelle ominainen. Suora pisteiden läpi kertoo muutoksen jokaista kelviniä kohti, ja sama ominaisuus antaa kertoimen.
+
 **Taulukon lukeminen:** Ensimmäisestä pisteestä viimeiseen lämpötila muuttuu $\Delta T = 80\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 60\,\text{K}$ ja pituus $\Delta l = 1{,}10\,\text{mm}$.
+
 **Kaava:** $\Delta l = \alpha l_0 \Delta T$, josta $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
+
 **Muunnokset:** $\Delta l = 1{,}10\,\text{mm} = 0{,}00110\,\text{m}$, jotta yksiköt supistuvat. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$.
+
 **Sijoitus:** $\alpha = \dfrac{0{,}00110\,\text{m}}{0{,}800\,\text{m} \cdot 60\,\text{K}} = \dfrac{0{,}00110}{48}\,\tfrac{1}{\text{K}} = 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
-**Vastaus:** a) $\alpha \approx 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, kolme merkitsevää numeroa, koska pituuden muutos $1{,}10\,\text{mm}$ on annettu kolmella numerolla. Mallivastaus b): kerroin on lähimpänä alumiinin arvoa $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, joten sauva on alumiinia. Teräksen arvo $12$ ja kuparin $17$ ovat selvästi kauempana. Mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi: jokaisella lukemalla on mittausepävarmuus ja sauva ei lämpene täysin tasaisesti. Siksi askelten $0{,}17\ldots 0{,}20\,\text{mm}$ vaihtelu on odotettua, ja kaikkien pisteiden kautta sovitettu suora antaa saman kulmakertoimen kuin päätepisteet, $\alpha \approx 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
+
+**Vastaus:** a) $\alpha \approx 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, kolme merkitsevää numeroa, koska pituuden muutos $1{,}10\,\text{mm}$ on annettu kolmella numerolla.
+
+Mallivastaus b): kerroin on lähimpänä alumiinin arvoa $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, joten sauva on alumiinia. Teräksen arvo $12$ ja kuparin $17$ ovat selvästi kauempana.
+
+Mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi: jokaisella lukemalla on mittausepävarmuus ja sauva ei lämpene täysin tasaisesti.
+
+Siksi askelten $0{,}17\ldots 0{,}20\,\text{mm}$ vaihtelu on odotettua, ja kaikkien pisteiden kautta sovitettu suora antaa saman kulmakertoimen kuin päätepisteet, $\alpha \approx 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
 **Järkevyys:** Alumiinisauvan odotettu pituuden muutos koko välillä on $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 0{,}800\,\text{m} \cdot 60\,\text{K} = 1{,}10\,\text{mm}$, mikä vastaa mitattua. Teräkselle tulisi $0{,}58\,\text{mm}$ ja kuparille $0{,}82\,\text{mm}$, jotka poikkeavat mitatusta selvästi enemmän kuin mittakellon tarkkuus $0{,}01\,\text{mm}$.
 
 ## fy3-8-L2-07
@@ -180,7 +207,11 @@ $\gamma = \dfrac{0{,}00027\,\text{dm}^3}{1{,}00003\,\text{dm}^3 \cdot 6\,\text{K
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. Pituuden muutos $10\,\text{mm} = 0{,}010\,\text{m}$, jotta $l_0$ tulee metreinä.
 **Sijoitus:** a) $\Delta l = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 1{,}00\,\text{m} \cdot 80\,\text{K} = 0{,}00096\,\text{m} = 0{,}96\,\text{mm}$. c) Vaadittu muutos on $\Delta l = \dfrac{0{,}5\,\text{mm}}{0{,}050} = 10\,\text{mm} = 0{,}010\,\text{m}$, joten
 $l_0 = \dfrac{0{,}010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = 10{,}4\,\text{m}$
-**Vastaus:** c) $l_0 \approx 10{,}4\,\text{m}$, kolme merkitsevää numeroa laskettuna; lukematarkkuus $0{,}5\,\text{mm}$ on yhden numeron arvo, joten käytännössä pituus on noin $10\,\text{m}$. Mallivastaus b): kohdan a) muutos $0{,}96\,\text{mm}$ on vain noin kaksi kertaa mittanauhan lukematarkkuus $0{,}5\,\text{mm}$, joten mittausepävarmuus voisi olla yli puolet tuloksesta ($52\,\%$) eikä kerrointa $\alpha$ saataisi luotettavasti. Pieni muutos mitataan välineellä, joka lukee sadasosamillimetrin, kuten mittakellolla, jonka mittatappi on putken päätä vasten. Myös pidempi putki tai suurempi lämpötilan muutos pienentäisi suhteellista epävarmuutta.
+**Vastaus:** c) $l_0 \approx 10{,}4\,\text{m}$, kolme merkitsevää numeroa laskettuna; lukematarkkuus $0{,}5\,\text{mm}$ on yhden numeron arvo, joten käytännössä pituus on noin $10\,\text{m}$.
+
+Mallivastaus b): kohdan a) muutos $0{,}96\,\text{mm}$ on vain noin kaksi kertaa mittanauhan lukematarkkuus $0{,}5\,\text{mm}$, joten mittausepävarmuus voisi olla yli puolet tuloksesta ($52\,\%$) eikä kerrointa $\alpha$ saataisi luotettavasti.
+
+Pieni muutos mitataan välineellä, joka lukee sadasosamillimetrin, kuten mittakellolla, jonka mittatappi on putken päätä vasten. Myös pidempi putki tai suurempi lämpötilan muutos pienentäisi suhteellista epävarmuutta.
 **Järkevyys:** Tarkistus: $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 10{,}4\,\text{m} \cdot 80\,\text{K} = 10\,\text{mm}$, ja siitä $5{,}0\,\%$ on $0{,}5\,\text{mm}$. Kymmenen metrin höyryputki on epäkäytännöllinen koulun laboratoriossa, joten mittakello on järkevämpi ratkaisu kuin pidempi putki. Mittakellon lukematarkkuus $0{,}01\,\text{mm}$ olisi vain $1\,\%$ muutoksesta $0{,}96\,\text{mm}$.
 
 ## fy3-8-L3-04
@@ -193,7 +224,13 @@ $l_0 = \dfrac{0{,}010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\
 **Sijoitus:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 44\,\text{K} = 0{,}0132\,\text{m} = 13{,}2\,\text{mm}$
 b) Talven muutos on $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 40\,\text{K} = 0{,}0120\,\text{m} = 12{,}0\,\text{mm}$, joten $g_\text{max} = 30\,\text{mm} - 12{,}0\,\text{mm} = 18\,\text{mm}$.
-**Vastaus:** a) $g_\text{min} = 13{,}2\,\text{mm}$, käytännössä $13\,\text{mm}$, ja b) $g_\text{max} = 18\,\text{mm}$. Kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on kahden numeron arvo, joten tulokset kelpaavat kahteen numeroon pyöristettyinä. Mallivastaus c): rako $15\,\text{mm}$ on välillä $13{,}2\,\text{mm} \ldots 18\,\text{mm}$, joten se kelpaa asennettaessa lämpötilassa $8\,{}^\circ\text{C}$: kesällä rakoa jää $15\,\text{mm} - 13{,}2\,\text{mm} = 1{,}8\,\text{mm}$ ja talvella se on $$\begin{aligned} &15\,\text{mm} + 12{,}0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$. Jos kiskot asennettaisiin pakkasella $-32\,{}^\circ\text{C}$ samalla raolla, kisko lämpenisi kesään $\Delta T = 84\,\text{K}$ ja pidentyisi $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 84\,\text{K} \\ &= 25{,}2\,\text{mm} \end{aligned}$$. Se on enemmän kuin rako $15\,\text{mm}$, joten rako sulkeutuisi ja kiskot puristuisivat vastakkain. Asennusrako riippuu siis asennuslämpötilasta.
+**Vastaus:** a) $g_\text{min} = 13{,}2\,\text{mm}$, käytännössä $13\,\text{mm}$, ja b) $g_\text{max} = 18\,\text{mm}$. Kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on kahden numeron arvo, joten tulokset kelpaavat kahteen numeroon pyöristettyinä.
+
+Mallivastaus c): rako $15\,\text{mm}$ on välillä $13{,}2\,\text{mm} \ldots 18\,\text{mm}$, joten se kelpaa asennettaessa lämpötilassa $8\,{}^\circ\text{C}$: kesällä rakoa jää $15\,\text{mm} - 13{,}2\,\text{mm} = 1{,}8\,\text{mm}$ ja talvella se on $$\begin{aligned} &15\,\text{mm} + 12{,}0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$.
+
+Jos kiskot asennettaisiin pakkasella $-32\,{}^\circ\text{C}$ samalla raolla, kisko lämpenisi kesään $\Delta T = 84\,\text{K}$ ja pidentyisi $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 84\,\text{K} \\ &= 25{,}2\,\text{mm} \end{aligned}$$.
+
+Se on enemmän kuin rako $15\,\text{mm}$, joten rako sulkeutuisi ja kiskot puristuisivat vastakkain. Asennusrako riippuu siis asennuslämpötilasta.
 **Järkevyys:** Koko vuoden muutos on $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 84\,\text{K} \\ &= 25{,}2\,\text{mm} \end{aligned}$$, ja se on summa $13{,}2\,\text{mm} + 12{,}0\,\text{mm}$, joten välin leveys $$\begin{aligned} &g_\text{max} - g_\text{min} \\ &= 18\,\text{mm} - 13{,}2\,\text{mm} \\ &= 4{,}8\,\text{mm} \\ &= 30\,\text{mm} - 25{,}2\,\text{mm} \end{aligned}$$ täsmää. Käytännössä rako valitaan välin keskeltä, noin $15\,\text{mm}$, ja pitkät kiskot hitsataan nykyään yhteen ilman rakoa.
 
 ## fy3-8-L3-05
@@ -204,7 +241,15 @@ b) Talven muutos on $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m
 **Muunnokset:** $V_0 = 1{,}00\,\text{cm}^3 = 1000\,\text{mm}^3$, jotta tilavuudet ja kapillaarin ala ovat samassa yksikössä, ja $$\begin{aligned} \Delta T &= 30\,{}^\circ\text{C} - 10\,{}^\circ\text{C} \\ &= 20\,\text{K} \end{aligned}$$. Kapillaarin ala on $A = \pi \cdot (0{,}30\,\text{mm})^2 = 0{,}283\,\text{mm}^2$.
 **Sijoitus:** $$\begin{aligned} \Delta V_\text{etanoli} &= 1{,}1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 22{,}0\,\text{mm}^3 \end{aligned}$$ ja $$\begin{aligned} \Delta V_\text{pallo} &= 3 \cdot 9{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 0{,}54\,\text{mm}^3 \end{aligned}$$. Siis
 $h = \dfrac{22{,}0\,\text{mm}^3 - 0{,}54\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 75{,}9\,\text{mm}$
-**Vastaus:** a) $h \approx 75{,}9\,\text{mm}$, kolme merkitsevää numeroa laskettuna; kertoimet $1{,}1 \cdot 10^{-3}$ ja $9{,}0 \cdot 10^{-6}$ ovat 2–3 numeron arvoja, joten käytännössä nousu on noin $76\,\text{mm}$. Mallivastaus b): ilman pallon laajenemista nousu olisi $\dfrac{22{,}0\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 77{,}8\,\text{mm}$, eli $\dfrac{77{,}8\,\text{mm} - 75{,}9\,\text{mm}}{75{,}9\,\text{mm}} = 2{,}5\,\%$ suurempi. Pallon laajeneminen on siis pieni mutta ei mitätön korjaus. Mallivastaus c): vedellä $\gamma = 0{,}21 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ tilavuuden kasvu olisi $4{,}2\,\text{mm}^3$, josta pallon osuus $0{,}54\,\text{mm}^3$ jättää $3{,}66\,\text{mm}^3$ eli nousuksi vain $12{,}9\,\text{mm}$. Se on alle viidesosa etanolin noususta, joten asteikko olisi tiheä ja lukemisen epätarkkuus suuri. Lisäksi vesi kutistuu välillä $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ ja jäätyy, joten pylväs ei toimisi kylmässä oikein.
+**Vastaus:** a) $h \approx 75{,}9\,\text{mm}$, kolme merkitsevää numeroa laskettuna; kertoimet $1{,}1 \cdot 10^{-3}$ ja $9{,}0 \cdot 10^{-6}$ ovat 2–3 numeron arvoja, joten käytännössä nousu on noin $76\,\text{mm}$.
+
+Mallivastaus b): ilman pallon laajenemista nousu olisi $\dfrac{22{,}0\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 77{,}8\,\text{mm}$, eli $\dfrac{77{,}8\,\text{mm} - 75{,}9\,\text{mm}}{75{,}9\,\text{mm}} = 2{,}5\,\%$ suurempi.
+
+Pallon laajeneminen on siis pieni mutta ei mitätön korjaus.
+
+Mallivastaus c): vedellä $\gamma = 0{,}21 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ tilavuuden kasvu olisi $4{,}2\,\text{mm}^3$, josta pallon osuus $0{,}54\,\text{mm}^3$ jättää $3{,}66\,\text{mm}^3$ eli nousuksi vain $12{,}9\,\text{mm}$. Se on alle viidesosa etanolin noususta, joten asteikko olisi tiheä ja lukemisen epätarkkuus suuri.
+
+Lisäksi vesi kutistuu välillä $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ ja jäätyy, joten pylväs ei toimisi kylmässä oikein.
 **Järkevyys:** Asteikon tiheys on $\dfrac{75{,}9\,\text{mm}}{20\,\text{K}} = 3{,}8\,\tfrac{\text{mm}}{\text{K}}$, joten yhden asteen lukeminen onnistuu, ja pylvään pituus $76\,\text{mm}$ mahtuu tavalliseen lämpömittariin. Etanolin suhteellinen tilavuuden kasvu on $1{,}1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \cdot 20\,\text{K} = 2{,}2\,\%$, ja pallon vain $0{,}054\,\%$, joten pallon vaikutus on pieni kuten tulos osoittaa.
 
 ## fy3-8-L1-09
@@ -237,7 +282,21 @@ $h = \dfrac{22{,}0\,\text{mm}^3 - 0{,}54\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 7
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 0{,}30\,\text{K}$. Korkeus on metreinä, joten $\Delta h$ tulee metreinä; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** a) $$\begin{aligned} v &= \dfrac{\Delta h_\text{meri}}{\Delta t} \\ &= \dfrac{115{,}8\,\text{mm}}{33{,}8\,\text{a}} \\ &= 3{,}43\,\tfrac{\text{mm}}{\text{a}} \end{aligned}$$ c) $$\begin{aligned} \Delta h &= \gamma h_0 \Delta T \\ &= 2{,}0 \cdot 10^{-4}\,\tfrac{1}{\text{K}} \cdot 1000\,\text{m} \\ &\cdot 0{,}30\,\text{K} \\ &= 0{,}060\,\text{m} \\ &= 60\,\text{mm} \end{aligned}$$
 **Vastaus:** c) $\Delta h = 60\,\text{mm}$ eli $6{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}30\,{}^\circ\text{C}$ ja $2{,}0 \cdot 10^{-4}\,\tfrac{1}{\text{K}}$. a) Tällä päivätyllä aineistolla $v \approx 3{,}4\,\tfrac{\text{mm}}{\text{a}}$. Toisena päivänä luetuilla arvoilla tulos voi poiketa tästä hieman: oikea vastaus on omista lukemista oikein laskettu nopeus, kun lukupäivä ja luetut arvot on kerrottu.
-**Mallivastaus a):** Merenpinta on noussut koko mittausjakson ajan: vuoden 1993 alusta lokakuuhun 2026 noin $116\,\text{mm}$ eli keskimäärin noin $3{,}4\,\text{mm}$ vuodessa. Käyrä ei nouse tasaisesti, vaan siinä näkyy joka vuosi nousu ja lasku. Lähteen mukaan aineistossa on mukana merenpinnan vuodenaikaisvaihtelu. Kahdesta päätepisteestä laskettu nopeus ei kerro tätä vaihtelua eikä sitä, onko nousu nopeutunut jakson aikana. Sivun tekstissä nousuksi mainitaan noin $91\,\text{mm}$, mutta viimeisimmän mittauksen ruudussa on $115{,}8\,\text{mm}$. Arvolla $91\,\text{mm}$ nopeudeksi tulisi $2{,}7\,\tfrac{\text{mm}}{\text{a}}$, joten vastauksessa on kerrottava, mitä arvoja ja ajankohtia käytettiin.
+**Mallivastaus a):** Merenpinta on noussut koko mittausjakson ajan: vuoden 1993 alusta lokakuuhun 2026 noin $116\,\text{mm}$ eli keskimäärin noin $3{,}4\,\text{mm}$ vuodessa.
+
+Käyrä ei nouse tasaisesti, vaan siinä näkyy joka vuosi nousu ja lasku. Lähteen mukaan aineistossa on mukana merenpinnan vuodenaikaisvaihtelu. Kahdesta päätepisteestä laskettu nopeus ei kerro tätä vaihtelua eikä sitä, onko nousu nopeutunut jakson aikana.
+
+Sivun tekstissä nousuksi mainitaan noin $91\,\text{mm}$, mutta viimeisimmän mittauksen ruudussa on $115{,}8\,\text{mm}$. Arvolla $91\,\text{mm}$ nopeudeksi tulisi $2{,}7\,\tfrac{\text{mm}}{\text{a}}$, joten vastauksessa on kerrottava, mitä arvoja ja ajankohtia käytettiin.
+
 **Mallivastaus b):** Kun merivesi lämpenee, sen hiukkasten lämpöliike voimistuu ja hiukkasten keskimääräinen etäisyys kasvaa. Hiukkaset itse eivät suurene. Sama vesimäärä vie siksi suuremman tilavuuden: $\Delta V = \gamma V_0 \Delta T$. Merialtaan pohja ja reunat eivät väisty, joten lisätilavuus mahtuu vain ylöspäin. Merenpinta nousee, vaikka veden massa ei muutu.
-**Mallivastaus d):** Malli kuvaa vain yhden syyn. Lähteen mukaan noin kaksi kolmasosaa noususta johtuu jäätiköiden ja mannerjäätiköiden sulamisvedestä, joka lisää meren vesimäärää, ja lämpölaajenemisen osuus on noin kolmasosa. Meri ei myöskään lämpene tasaisesti: pintakerros lämpenee enemmän kuin syvä vesi, ja lämpeneminen vaihtelee paikasta toiseen. Kerroin $\gamma$ ei ole vakio, vaan se riippuu veden lämpötilasta, suolaisuudesta ja paineesta: kylmässä vedessä se on pienempi kuin lämpimässä. Malli ei kerro, kuinka paljon meri tulevaisuudessa lämpenee tai kuinka paljon jäätä sulaa, joten sillä ei voi ennustaa nousua. Lisäksi paikallinen merenpinta voi poiketa maailman keskiarvosta: esimerkiksi Suomen rannikolla maa kohoaa.
-**Järkevyys:** Suhteellinen muutos on $\gamma \Delta T = 6{,}0 \cdot 10^{-5}$ eli $0{,}0060\,\%$. Se on hyvin pieni, mutta kilometrin korkuisessa patsaassa se on jo senttimetrejä. Lähteen mukaan lämpölaajenemisen osuus mitatusta noususta on kolmasosa: $$\begin{aligned} \Delta h_\text{lämpö} &= \tfrac{1}{3} \cdot 115{,}8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$. Mallin tulos $60\,\text{mm}$ on samaa suuruusluokkaa, joten malli antaa uskottavan suuruusluokan, vaikka se ei kuvaa todellista merta tarkasti. Kohdassa a) viimeisimmän mittauksen epävarmuus $\pm 4{,}0\,\text{mm}$ vastaa nopeudessa noin $\pm 0{,}12\,\tfrac{\text{mm}}{\text{a}}$, joten kaksi merkitsevää numeroa riittää.
+
+**Mallivastaus d):** Malli kuvaa vain yhden syyn. Lähteen mukaan noin kaksi kolmasosaa noususta johtuu jäätiköiden ja mannerjäätiköiden sulamisvedestä, joka lisää meren vesimäärää, ja lämpölaajenemisen osuus on noin kolmasosa.
+
+Meri ei myöskään lämpene tasaisesti: pintakerros lämpenee enemmän kuin syvä vesi, ja lämpeneminen vaihtelee paikasta toiseen. Kerroin $\gamma$ ei ole vakio, vaan se riippuu veden lämpötilasta, suolaisuudesta ja paineesta: kylmässä vedessä se on pienempi kuin lämpimässä.
+
+Malli ei kerro, kuinka paljon meri tulevaisuudessa lämpenee tai kuinka paljon jäätä sulaa, joten sillä ei voi ennustaa nousua. Lisäksi paikallinen merenpinta voi poiketa maailman keskiarvosta: esimerkiksi Suomen rannikolla maa kohoaa.
+**Järkevyys:** Suhteellinen muutos on $\gamma \Delta T = 6{,}0 \cdot 10^{-5}$ eli $0{,}0060\,\%$. Se on hyvin pieni, mutta kilometrin korkuisessa patsaassa se on jo senttimetrejä.
+
+Lähteen mukaan lämpölaajenemisen osuus mitatusta noususta on kolmasosa: $$\begin{aligned} \Delta h_\text{lämpö} &= \tfrac{1}{3} \cdot 115{,}8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$. Mallin tulos $60\,\text{mm}$ on samaa suuruusluokkaa, joten malli antaa uskottavan suuruusluokan, vaikka se ei kuvaa todellista merta tarkasti.
+
+Kohdassa a) viimeisimmän mittauksen epävarmuus $\pm 4{,}0\,\text{mm}$ vastaa nopeudessa noin $\pm 0{,}12\,\tfrac{\text{mm}}{\text{a}}$, joten kaksi merkitsevää numeroa riittää.

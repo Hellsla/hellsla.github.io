@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f734cab4b65864ae
+CONTENT-HASH: 0e8acbbecaa2529d
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: f734cab4b65864ae
 (none)
 
 ## Checked
-- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 15 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
-- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Round 1, delta (md-paragraphs): solutions.md only, paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
+- 1280 px with solutions open: fy3-10-open-exercises-1280-1.png (12-1: Muunnokset, Sijoitus, Vastaus, Järkevyys, units LaTeX with thin space); fy3-10-open-exercises-L2-1280-1.png (12-10: Muunnokset box and following paragraph, Sijoitus split into two displays, aligned at "="); fy3-10-open-tarkista-1280-1.png (model answers inside cards).
+- 390 px: fy3-10-stage-exercises-390.png (level cards, no overflow); fy3-10-example-390-1.png (paragraph structure of stages).
 - Hash same at start and end.
 
 ## Scores

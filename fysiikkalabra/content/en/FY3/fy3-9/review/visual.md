@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4859a9320684e2e4
+CONTENT-HASH: c9df1db22f9c4cba
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-7.png (exercises 11-11 to 11-18, solutions open): the new breaks in the Reading the graph block of 11-12 and the reasonableness notes of 11-11 and 11-13 are clear; the graph options of 11-17 are intact; no clipping.
+- review/shots/fy3-9-example-390-1.png (crisp packet Boyle example, stages 1-5 at 390 px): unchanged, the aligned chain wraps correctly.
+- review/shots/fy3-9-open-exercises-1280-3.png (opened solution 11-3 with its (V, p) graph): data points distinct, axes with units, solution blocks and the dotted pV reading readable.

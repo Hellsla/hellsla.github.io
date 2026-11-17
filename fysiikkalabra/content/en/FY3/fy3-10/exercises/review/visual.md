@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5016f9e61a55760f
+CONTENT-HASH: be81f9a0385f3ec2
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] open-exercises-L2-1280-4 — the Answer block's justification (all the data have three digits, the fuel ignites) is one dense paragraph of four sentences; consider a break before "The fuel ignites".
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
+- 1280 px with solutions open: fy3-10-open-exercises-L2-1280-4.png (Given, Find, Principle, Formula, Conversions, Substitution, Answer as separate paragraphs; equals signs aligned, nothing clipped); fy3-10-open-tarkista-1280-2.png (feedback, hints open, formulas readable).
+- 390 px: fy3-10-stage-tarkista-390-2.png (task cards, no overflow); fy3-10-stage-sovella-390-2.png (worked-example stage 5, formula rows fit, paragraph breaks clear).
 - Hash run at start and end: unchanged.
 
 ## Scores

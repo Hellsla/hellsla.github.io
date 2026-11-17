@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 409422339b85dd02
+CONTENT-HASH: 163423994261eaf3
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
+(none)
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (shots/ has 1280 px only); layout check at 360 px is clean per the packet.
+- 1280 px with solutions open: ../review/shots/fy3-5-open-exercises-1280-1.png (6-1) and fy3-5-open-exercises-L3-1280-1.png (6-19: Periaate cut into paragraphs, Kaava, Sijoitus box, answer box, Järkevyys block).
+- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes with equals signs aligned, nothing clipped, surrounding layout intact.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1bd40b6aab18a0cb
+CONTENT-HASH: 04d69d93df57f5dd
 Mode: delta
 Round: 1
 
@@ -7,11 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] none beyond the Checked scope.
+None.
 
 ## Checked
-- fy3-7-open-exercises-L3-1280-6, L2-1280-14 (jähmettymis displays, aligned rows, new source task context).
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; judged at 390 px in the lesson captures and at 1280 px.
+- 1280 px with solutions open: fy3-7-open-exercises-1280-3.png (task 8-3 solution: Muunnokset paragraph, Sijoitus rows, Vastaus, Järkevyys blocks; no overflow), fy3-7-open-tarkista-1280-1.png (open Vastaus and feedback).
+- 390 px: fy3-7-example-390-2.png, fy3-7-stage-sovella-390-2.png (shared solution layout holds, no clipping).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

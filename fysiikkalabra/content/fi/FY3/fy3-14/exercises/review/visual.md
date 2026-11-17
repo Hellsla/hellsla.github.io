@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6a8a99a105f4fd86
+CONTENT-HASH: 46f47205766eba0c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-04 Kaava / L3-05 Järkevyys: the two numerator rows are centred/right-aligned against each other (second row starts with a minus); readable, left-aligning the rows would be tidier.
-- [Minor] L3-05 Järkevyys: the chain T = ... = ... is split into two display boxes; one aligned block would read as one equation.
+(none)
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Opened L3-04 (Kaava, Sijoitus, Järkevyys) and L3-05 (Sijoitus, Vastaus, Järkevyys) at 360 px (fi) and 1280 px (en, fi-easy): the two-row-numerator fractions fit, equals signs aligned, nothing clipped.
-- Hash unchanged at the end.
+- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
+- 1280 px with solutions open: fy3-14-open-exercises-1280-1.png (level 1, 9-1: paragraph breaks between answer, reasoning and Järkevyys inside the card, display aligned at "=", no clipping), fy3-14-open-exercises-L2-1280-1.png (level 2, 9-10: Kaava and Sijoitus paragraphs with displays, punctuation after display stays on its row, units thin-spaced).
+- 390 px: fy3-14-example-390-1.png and fy3-14-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
+- Language: split paragraphs read as one idea each.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

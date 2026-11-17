@@ -104,6 +104,7 @@
 **Kysytty:** kaksi b–d-kohtien oletusta ja niiden vaikutuksen suunta
 **Periaate:** Oletus on hyvä, jos sen virhe on pieni verrattuna lukemisen epävarmuuteen. Jokaisen oletuksen kohdalla mietitään, saisiko vesi todellisuudessa enemmän vai vähemmän energiaa kuin laskettiin.
 **Mallivastaus:** Mitkä tahansa kaksi perusteltuna:
+
 - *Laatikon ja lasin lämpeneminen on jätetty pois.* Osa auringosta saadusta energiasta lämmittää myös laatikkoa, joten keräimen todellinen teho on hieman laskettua suurempi.
 - *Alussa ei oletettu häviöitä.* Häviöt alkavat heti, kun vesi lämpenee ilmaa lämpimämmäksi. Jos kulmakerroin luetaan ensimmäisten pisteiden kautta kulkevasta suorasta eikä alun tangentista, se on liian pieni, ja teho saadaan hieman liian pieneksi.
 - *Mittarin lukema $800\,\text{W/m}^2$ oletettiin koko tunnin samaksi.* Jos pilvi tai auringon korkeuden muutos pienensi säteilyä mittauksen aikana, osa lämpenemisen hidastumisesta johtuu siitä eikä häviöistä, ja d-kohdan häviö on liian suuri.
@@ -119,9 +120,12 @@
 ### a)
 **Annettu:** venttiili pitää ylipaineen $80\,\text{kPa}$, ulkoilman paine $101\,\text{kPa}$ ja taulukon kiehumislämpötilat
 **Kysytty:** veden lämpötila $T$, kun venttiili päästää höyryä ulos
-**Periaate:** Vesi kiehuu siinä lämpötilassa, joka vastaa veden pinnalla vaikuttavaa kokonaispainetta. Kun venttiili päästää höyryä ulos, kattilan kokonaispaine on ulkoilman paine ja venttiilin ylipaine yhteensä. Ilma on jo poistunut, joten kannen alla on vain vesihöyryä ja koko paine on höyryn painetta. Taulukossa on kiehumislämpötila vain $5\,{}^\circ\text{C}$:n välein, joten väliin jäävä arvo interpoloidaan kahden lähimmän rivin välistä olettaen, että lämpötila muuttuu niiden välillä tasaisesti.
+**Periaate:** Vesi kiehuu siinä lämpötilassa, joka vastaa veden pinnalla vaikuttavaa kokonaispainetta. Kun venttiili päästää höyryä ulos, kattilan kokonaispaine on ulkoilman paine ja venttiilin ylipaine yhteensä. Ilma on jo poistunut, joten kannen alla on vain vesihöyryä ja koko paine on höyryn painetta.
+
+Taulukossa on kiehumislämpötila vain $5\,{}^\circ\text{C}$:n välein, joten väliin jäävä arvo interpoloidaan kahden lähimmän rivin välistä olettaen, että lämpötila muuttuu niiden välillä tasaisesti.
 **Kaava:** $p = p_0 + \Delta p$ ja $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
 **Muunnokset:** Ei tarvita, kaikki paineet ovat kilopascaleina.
+
 **Sijoitus:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, joka on rivien $169{,}2\,\text{kPa}$ ja $198{,}7\,\text{kPa}$ välissä. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11{,}8\,\text{kPa}}{29{,}5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2{,}0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
 **Vastaus:** $T \approx 117\,{}^\circ\text{C}$ asteen tarkkuudella: venttiilin ylipaine on annettu kahden numeron tarkkuudella, ja taulukon arvojen välillä käyrä kaartuu hieman.
 **Järkevyys:** Lämpötila on taulukon $115\,{}^\circ\text{C}$:n ja $120\,{}^\circ\text{C}$:n välissä ja lähempänä $115\,{}^\circ\text{C}$:ta, kuten paineen paikka niiden välissä. Jos ylipaine $80\,\text{kPa}$ olisi luettu taulukosta sellaisenaan, kiehumislämpötilaksi olisi saatu alle $95\,{}^\circ\text{C}$, mikä on mahdotonta kattilalle, jonka paine on ulkoilmaa suurempi.
@@ -129,7 +133,9 @@
 ### b)
 **Kysytty:** miksi kiehumislämpötila on korkeampi ja miksi ruoka kypsyy nopeammin
 **Periaate:** Taulukko näyttää, että veden kiehumislämpötila kasvaa paineen kasvaessa. Sama tieto on faasikaavion höyrystymiskäyrässä, mutta vastaukseen riittää taulukko.
-**Mallivastaus:** Kiehuessaan vesi höyrystyy kuplina koko nesteen sisällä. Höyrykupla pysyy olemassa vain, jos sen sisällä olevan höyryn paine on yhtä suuri kuin ympäröivän nesteen paine, johon pinnan paine vaikuttaa. Höyryn paine kasvaa lämpötilan noustessa, koska nopeammat hiukkaset irtoavat nesteestä useammin ja törmäävät kuplan seinään voimakkaammin. Mitä suurempi pinnan paine, sitä korkeampi lämpötilan on oltava, ennen kuin kuplia voi syntyä. Painekattilassa paine on noin $1{,}8$-kertainen ulkoilman paineeseen verrattuna, joten vesi kiehuu vasta noin $117\,{}^\circ\text{C}$:ssa.
+**Mallivastaus:** Kiehuessaan vesi höyrystyy kuplina koko nesteen sisällä. Höyrykupla pysyy olemassa vain, jos sen sisällä olevan höyryn paine on yhtä suuri kuin ympäröivän nesteen paine, johon pinnan paine vaikuttaa. Höyryn paine kasvaa lämpötilan noustessa, koska nopeammat hiukkaset irtoavat nesteestä useammin ja törmäävät kuplan seinään voimakkaammin. Mitä suurempi pinnan paine, sitä korkeampi lämpötilan on oltava, ennen kuin kuplia voi syntyä.
+
+Painekattilassa paine on noin $1{,}8$-kertainen ulkoilman paineeseen verrattuna, joten vesi kiehuu vasta noin $117\,{}^\circ\text{C}$:ssa.
 Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{}^\circ\text{C}$ kuumempaa kuin avoimessa kattilassa, lämpötilaero ruoan pintaan on suurempi. Silloin lämpö johtuu ruoan sisään nopeammin, ja korkeammassa lämpötilassa myös kypsymisen muutokset tapahtuvat nopeammin.
 
 ### c)
@@ -198,11 +204,10 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Kysytty:** kaksi oletusta, niiden vaikutuksen suunta ja tuloksen käyttö
 **Periaate:** Lasku on malli. Jokaisen oletuksen kohdalla mietitään, kuluuko ilmaa todellisuudessa enemmän vai vähemmän kuin mallissa.
 **Mallivastaus:** Mitkä tahansa kaksi perusteltuna:
+
 - *Kulutus on tasainen.* Rasitus, kylmä vesi ja jännitys lisäävät hengitystä, joten todellinen aika on usein lyhyempi.
 - *Koko aika vietetään $15{,}0\,\text{m}$:n syvyydessä.* Laskeutumisen ja nousun aikana paine on pienempi ja ilmaa kuluu vähemmän, joten tältä osin aika on pidempi.
-- *Lämpötila pysyy samana.* Säiliön ilma on veden lämpöistä, mutta kulutus $20\,\text{l/min}$ mitataan keuhkoissa ruumiinlämpöisenä. Lämmetessään sama ilmamäärä vie noin $10\,\%$ enemmän tilaa, joten yhteen minuuttiin kuluu vähemmän säiliön ilmaa ja aika on noin $10\,\%$ pidempi.
-
-Lisähuomio: hyvin suuressa paineessa ilma ei ole enää tarkasti ideaalikaasua, ja säiliössä on hieman vähemmän ilmaa kuin malli antaa. Tätä ei lukiossa vaadita.
+- *Lämpötila pysyy samana.* Säiliön ilma on veden lämpöistä, mutta kulutus $20\,\text{l/min}$ mitataan keuhkoissa ruumiinlämpöisenä. Lämmetessään sama ilmamäärä vie noin $10\,\%$ enemmän tilaa, joten yhteen minuuttiin kuluu vähemmän säiliön ilmaa ja aika on noin $10\,\%$ pidempi. Lisähuomio: hyvin suuressa paineessa ilma ei ole enää tarkasti ideaalikaasua, ja säiliössä on hieman vähemmän ilmaa kuin malli antaa. Tätä ei lukiossa vaadita.
 Laskettu aika on suuntaa antava arvio eikä takuu. Sukellus suunnitellaan niin, että ilmaa jää varaa, ja nousu aloitetaan mittarin lukeman eikä kellon perusteella.
 
 ### Yleisiä virheitä

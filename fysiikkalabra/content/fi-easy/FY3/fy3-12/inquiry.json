@@ -228,7 +228,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Ikkunan pinta-ala on 1,5 m² ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $20\\,{}^\\circ\\text{C}$ ja ulkona $-10\\,{}^\\circ\\text{C}$. Opiskelija laskee: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ ja $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Missä on virhe?",
+      "prompt": "Ikkunan pinta-ala on $1{,}5\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Sisällä on $20\\,{}^\\circ\\text{C}$ ja ulkona $-10\\,{}^\\circ\\text{C}$. Opiskelija laskee: $\\Delta T = 20\\,\\text{K} - 10\\,\\text{K} = 10\\,\\text{K}$ ja $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 1{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\text{K}} \\cdot 1{,}5\\,\\text{m}^2 \\cdot 10\\,\\text{K} \\\\ &= 15\\,\\text{W} \\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
           "text": "Lämpötilat pitäisi muuttaa kelvineiksi ennen vähennyslaskua.",
@@ -255,7 +255,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Jääkaapin seinien, oven, katon ja pohjan yhteinen pinta-ala on 4,0 m². Niiden keskimääräinen U-arvo on $0{,}30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Jääkaapissa on $5\\,{}^\\circ\\text{C}$ ja keittiössä $21\\,{}^\\circ\\text{C}$. Lämpöä johtuu seinien läpi jääkaappiin. Jääkaapin lämpötila pysyy vakiona vain, jos koneisto siirtää saman energian takaisin keittiöön. Kuinka paljon lämpöä johtuu jääkaappiin vuorokaudessa? Oletetaan, että ovea ei avata. Vastaa kilowattitunteina.",
+      "prompt": "Jääkaapin seinien, oven, katon ja pohjan yhteinen pinta-ala on $4{,}0\\,\\text{m}^2$. Niiden keskimääräinen U-arvo on $0{,}30\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$. Jääkaapissa on $5\\,{}^\\circ\\text{C}$ ja keittiössä $21\\,{}^\\circ\\text{C}$. Lämpöä johtuu seinien läpi jääkaappiin. Jääkaapin lämpötila pysyy vakiona vain, jos koneisto siirtää saman energian takaisin keittiöön. Kuinka paljon lämpöä johtuu jääkaappiin vuorokaudessa? Oletetaan, että ovea ei avata. Vastaa kilowattitunteina.",
       "answer": 0.461,
       "unit": "kWh",
       "tolerance": 0.02,

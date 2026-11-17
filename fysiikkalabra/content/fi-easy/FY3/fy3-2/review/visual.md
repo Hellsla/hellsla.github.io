@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 28f2d7de0e91fa4e
+CONTENT-HASH: 72d585166987e3fd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] fy3-2-example-390-1.png stage 2 — "(s, F) -kuvaajan" wraps with the hyphen on the next line at 390 px — keep "-kuvaajan" attached (non-breaking) if the shared component allows.
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Delta (md-paragraphs, teacher-figure; words unchanged). No 360 px captures exist; 390 px used.
+- 390 px: fy3-2-example-390-1.png (graph figure, stages 1-4: knowns, remark, question split cleanly); fy3-2-example-390-2.png (stages 5-7, aligned rows, Järkevyys check, nothing clipped).
+- 1280 px with solutions open: fy3-2-open-tarkista-1280-1.png (checks and feedback); fy3-2-open-exercises-1280-3.png (full solution with Muunnokset, Järkevyys); fy3-2-open-exercises-L2-1280-4.png (Kuvaajan lukeminen paragraph, two-row substitution).
+- Judged: logical order, units and decimal commas in LaTeX, no overflow.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -282,7 +282,9 @@ The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperat
 
 <!-- vaihe -->
 
-**Given and find.** The length of the deck is $l_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ for steel (given in the problem), the lowest temperature is $-30\,{}^\circ\text{C}$ and the highest $+30\,{}^\circ\text{C}$. The question is the change $\Delta l$ in the length of the deck over the whole year.
+**Given and find.** The length of the deck is $l_0 = 120\,\text{m}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ for steel (given in the problem), the lowest temperature is $-30\,{}^\circ\text{C}$ and the highest $+30\,{}^\circ\text{C}$.
+
+The question is the change $\Delta l$ in the length of the deck over the whole year.
 
 <!-- vaihe -->
 
