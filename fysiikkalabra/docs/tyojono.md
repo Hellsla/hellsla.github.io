@@ -385,6 +385,8 @@ FY4 tehty (#647). Tila 2026-11-17: FY5 tehty (#661) paitsi **fy5-7, fy5-11 ja fy
 on kirjoitettu, mutta difflib-kohdistus → FULL (muuttumaton `"correct": true` -rivi luokitellaan `experiment`-muutokseksi),
 tarvitsee luokittelijan korjauksen tai opettajan budjettiluvan. Muut kurssit (FY1–FY3, FY6–FY8) vielä tekemättä.
 
+Varattu: claude/fy6-lapikaynti (0f, FY6: 8j; 8c ja 8l-b on jo tehty; 8g ja tyypin D simulaatiot eivät kuulu tähän PR:ään).
+
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
 paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
 20 s). Opettaja: "tämä ei tunnu loogiselta, tuo monivalinta ei liity tuohon pohdintaan." Sääntö (CLAUDE.md, FY3/FY1
