@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7cab5660f3e700ab
+CONTENT-HASH: 8669f3323c2d6fda
 Mode: delta
 Round: 1
 
@@ -7,11 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] 1-13 Järkevyys — a short sentence is split into three fragments by two display fractions ("Kuussa paino on / 1/6 / Maan painosta") — keep the fraction inline or move it after the sentence.
+- [Minor] fy3-1-L3-05 Vastaus — a) and b) now run on in one paragraph (L3-1280-7), dense for an S2 reader — acceptable, or start b) on its own line.
 
 ## Checked
-- fy3-1-open-exercises-1280-2, -3, -4, L2-1280-3 (1-2, 1-3, 1-4, 1-13 Järkevyys lifted displays; trailing punctuation sits inside the display).
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- review/shots (current for this hash): fy3-1-open-exercises-1280-10 (L1-09 split paragraphs, 1-10 solution), L3-1280-5 (data task), L3-1280-7 (L3-05 merged Vastaus row, Järkevyys).
+- Diff: solutions.md paragraphs cut/joined, words unchanged. Judged: logical paragraph order, displays aligned at =, units and decimal commas in LaTeX, nothing clipped, no overflow.
+- Other exercise captures not opened (same shared component).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

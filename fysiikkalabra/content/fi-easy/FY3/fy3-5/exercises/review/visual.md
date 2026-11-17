@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7f0a6c75997f050d
+CONTENT-HASH: fc2b72b86cfc839f
+Mode: delta
+Round: 1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
+- [Minor] The changed Kohta a)/b)/c) Vastaus paragraphs of fy3-5-L3-05 were not located in a capture; judged from the shared component in neighbouring captures.
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
-- Hash unchanged at the end.
+- review/shots (current for this hash): fy3-5-open-exercises-L3-1280-5 (L3 task: Kuvaajan lukeminen, Kaava, Sijoitus), 1280-10 (L1-09 solution, Vastaus and Järkevyys).
+- Diff: paragraphs cut, words unchanged. Judged: reading order, aligned rows, units in LaTeX, nothing clipped, layout survived.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

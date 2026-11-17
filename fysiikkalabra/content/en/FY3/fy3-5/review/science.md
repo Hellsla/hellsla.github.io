@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d8275b9fad97e6b7
+CONTENT-HASH: d535fe0102400b0f
 
 ## Blocking
 
 ## Polish
-- inquiry.json, fire-piston prompt: the newly wrapped distance is written `$8{,}0\,\text{cm}$`, with a decimal comma. The English text uses decimal points everywhere else, including `0.60 J` in the same sentence. The value is unchanged, but it should read `8.0`.
 
 ## Checked
-batch delta review: I recomputed the fire piston, W = Fs = 75 N · 0.080 m = 6.0 J and ΔU = W + Q = 6.0 J − 0.60 J = 5.4 J, which matches the answer. The furnace photo caption is right: heating raises the metal's internal energy, and the caption says nothing about heat being stored in the metal. The worked-example knowns and the question are now in separate paragraphs, with no change to the physics. The learn goals changed form only. The hash was the same at the start and the end.
+batch delta review: the only change is a decimal separator in the fire-piston numeric task ($8{,}0$ to $8.0\,\text{cm}$, English convention). Recomputed: $W = Fs = 75\,\text{N}\cdot 0.080\,\text{m} = 6.0\,\text{J}$, $\Delta U = W - Q = 6.0\,\text{J} - 0.60\,\text{J} = 5.4\,\text{J}$, matches `answer` 5.4 J; the stated assumptions (all work done on the air, no friction, no change in the air's bulk kinetic or potential energy) still make $\Delta U = Q + W$ apply. No other number, unit or claim changed; no `{,}` remains in the English inquiry.
