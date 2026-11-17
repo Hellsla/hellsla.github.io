@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2c77a36231f34ae1
+CONTENT-HASH: 73cf0206222a30b4
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 2c77a36231f34ae1
 - none
 
 ## Checked
-- batch delta review (en, fy1-1): changed recap task ($10^{-15}$, $1.7\cdot10^{-15}\,\text{m}$, fractions, English) read in full; captures opened: stage-herata-390 (recap closed, nothing clipped); figures unchanged.
+batch delta review: opened fy1-1-example-390-1 (stages 1-5); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.

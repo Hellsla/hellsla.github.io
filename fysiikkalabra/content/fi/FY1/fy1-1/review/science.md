@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d9be50babe458854
+CONTENT-HASH: 10dada60177789aa
 
 ## Blocking
 - none
 
 ## Polish
-- inquiry.json Kertaa yläkoulusta, option "$0{,}15$": the feedback "Eksponentti $-15$ ei ole luku $15$ eikä sen desimaaliesitys" is hard to follow; maybe "Luku $0{,}15$ ei liity eksponenttiin: $10^{-15}$ on paljon pienempi, ja eksponentti kertoo, monennessako desimaalissa ykkönen on."
+- none
 
 ## Checked
-- batch delta review: the retrieval item now uses the proton ($1{,}7\cdot10^{-15}\,\text{m}$, the same value and meaning as lesson.md lines 46 and 410). Recomputed: in $10^{-15}$ the 1 is the 15th decimal, so there are 14 zeros after the comma. Exactly one option is correct, and each distractor's feedback says why it is wrong (negative sign, 15 zeros = $10^{-16}$). Approved figures and md-paragraphs not judged. Hash the same at the start and the end.
+- batch delta review: the reworded opening of "Kohdetyyppejä, ei portaita" now names nebulae, neutron stars and black holes as object types found inside galaxies among the stars. That matches the scope note ("object types, not levels") and the paragraphs after it, and it is a fair FY1 simplification (C). No number or symbol changed, and the teacher-approved figures are not judged. The hash was the same at the start and the end.

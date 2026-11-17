@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2c77a36231f34ae1
+CONTENT-HASH: edd1918d89b51a14
 
 ## Blocking
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-batch delta review: 10⁻¹⁵ = 1/10¹⁵ has fourteen zeros then a one (recomputed); exactly one correct option; −10¹⁵, 0,15 and "fifteen zeros" (= 10⁻¹⁶) wrong with correct feedback; proton size 1,7·10⁻¹⁵ m is a fair diameter order.
+- batch delta review: "Nebulae, neutron stars and black holes are types of objects found inside galaxies, among the stars" is right at this level (C). It matches the Finnish version and the scope note, and no number or symbol changed. The hash was the same at the start and the end.

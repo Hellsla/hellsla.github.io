@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9d298d25c9c6f60e
+CONTENT-HASH: 5b2315184f4eeef6
 
 ## Blocking
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-batch delta review: 10⁻¹⁵ = 1/10¹⁵ has fourteen zeros then a one (recomputed); exactly one correct option; −10¹⁵, 0,15 and "fifteen zeros" (= 10⁻¹⁶) wrong with correct feedback; proton size 1,7·10⁻¹⁵ m is a fair diameter order.
+- batch delta review: the new sentences ("Sumut, neutronitähdet ja mustat aukot ovat kohteiden tyyppejä. Niitä on galaksien sisällä tähtien joukossa.") say what the Finnish main version says, and they are right at this level (C). No number or symbol changed. The hash was the same at the start and the end.

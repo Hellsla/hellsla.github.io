@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d9be50babe458854
+CONTENT-HASH: 8e706a99fd1c8ce5
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Stage 1: the bullet with $d_\text{atomi}$ wraps so the formula drops to its own line; readable, may stay.
 
 ## Checked
-- batch delta review: opened fy1-1-stage-herata-390 (Pohdinta with the changed Kertaa item closed box); feedback text read in the diff; no clipping, math renders.
+- Opened fy1-1-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.

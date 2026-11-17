@@ -24,24 +24,24 @@
       "type": "choice",
       "optional": true,
       "title": "Review from lower secondary school",
-      "prompt": "The size of a proton is about $1.7\\cdot10^{-15}\\,\\text{m}$. What does the number $10^{-15}$ mean?",
+      "prompt": "What number is $10^{-3}$?",
       "choices": [
         {
-          "text": "$-10^{15}$, a large negative number",
-          "feedback": "A negative exponent does not make the number negative. It means division: $10^{-15} = \\dfrac{1}{10^{15}}$, which is a small positive number."
+          "text": "$-1000$",
+          "feedback": "A negative exponent does not make the number negative. It means division: $10^{-3} = \\dfrac{1}{10^{3}} = \\dfrac{1}{1000}$."
         },
         {
-          "text": "$\\dfrac{1}{10^{15}}$: after the decimal point there are fourteen zeros and then a one",
-          "feedback": "Correct: $10^{-15} = \\dfrac{1}{10^{15}}$. The one is in the fifteenth decimal place, so there are fourteen zeros before it. In the same way $10^{-3} = 0.001$, and these steps are the basis of powers of ten.",
+          "text": "$0.001$",
+          "feedback": "Correct: $10^{-3} = \\dfrac{1}{1000} = 0.001$. The exponent $-3$ moves the decimal point three places to the left, and these steps are the basis of powers of ten.",
           "correct": true
         },
         {
-          "text": "$0.15$",
-          "feedback": "The exponent $-15$ is not the number $15$ or its decimal form. It tells in which decimal place the one is."
+          "text": "$0.0001$",
+          "feedback": "This has one zero too many: $0.0001 = 10^{-4}$. In $10^{-3}$ there are three decimal places after the point, and the last of them is the one: $0.001$."
         },
         {
-          "text": "After the decimal point there are fifteen zeros and then a one",
-          "feedback": "This has one zero too many: it would be $10^{-16}$. In $10^{-15}$ the one is in the fifteenth decimal place, so there are fourteen zeros."
+          "text": "$0.03$",
+          "feedback": "This is $3\\cdot10^{-2}$, not $10^{-3}$. The exponent tells in which decimal place the one is; it does not multiply the number by three."
         }
       ]
     },
