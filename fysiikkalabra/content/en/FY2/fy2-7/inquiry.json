@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Recap: efficiency",
       "optional": true,
-      "prompt": "A pump takes $8.0\\,\\text{kWh}$ of electrical energy, and $6.0\\,\\text{kWh}$ of it turns into useful energy. What is the efficiency of the pump?",
+      "prompt": "A district heating pump moves hot water over kilometres. It takes $8.0\\,\\text{kWh}$ of electrical energy, and $6.0\\,\\text{kWh}$ of it turns into useful energy. What is the efficiency of the pump?",
       "choices": [
         {
           "text": "$0.75$, because the useful energy is divided by the energy used: $6.0 : 8.0$.",

@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 926d2ac39577cda9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: f280a71c44e26ce3
 ## Blocking
-- none
 
 ## Polish
-- none
+- Feedback of the correct option could name the opening bicycle again; optional.
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md worked example 'Tulos': the new sentence states the teacher's integer-is-exact rule (110 kJ exact, 0,45 MJ sets two significant figures). Clear, and it models the reasoning the student is expected to use; FY2 level fine.
+batch delta review: The retrieval now uses the cyclist from the opening hook (braking, where the energy goes). It does not touch the petrol/food or Sun predictions.

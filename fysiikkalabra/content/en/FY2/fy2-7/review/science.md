@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 584132dd2c786c0c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 13eeea90f2e8d0e5
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
-- lesson.md, inquiry.json, exit-ticket.json: loss mechanism stated as electrical energy -> internal energy of conductors -> transferred as heat to surroundings; district heating: energy passes as heat from the hot water through pipes and insulation. Consistent with guardrail "heat is energy in transfer" in every changed sentence (theory, misconception box, summary, prediction options and feedback, exit ticket); correct option and distractor feedback still right. "Energy can be moved in many ways; this chapter treats two" is correct. No numbers changed.
-- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
+batch delta review: recap prompt adds a district-heating context only; 6.0:8.0 = 0.75 still the one correct option, distractor feedback unchanged and right; worked example knowns split into a list, numbers unchanged (245 MWh x 0.91 = 223 MWh, loss 22 MWh recomputed).

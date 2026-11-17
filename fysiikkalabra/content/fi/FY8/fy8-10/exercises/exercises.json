@@ -113,6 +113,21 @@
           "feedback": "Massavajetta vastaa sidosenergia, joten suurin sidosenergia nukleonia kohti tarkoittaa suurinta massavajetta nukleonia kohti, ei pienintä. Ytimen massa ei myöskään kerro sidoksesta, koska raskaammilla ytimillä on enemmän nukleoneja."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L1-09",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "Deuteroni on raskaan vedyn ydin, jossa on yksi protoni ja yksi neutroni. Hae protonin, neutronin ja deuteronin lepomassat MAFY-taulukosta (mafytaulukot.fi). Taulukon massat ovat ytimien ja hiukkasten massoja, joten elektroneja ei tarvitse huomioida. Käytä muuntoa $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$. Kuinka suuri on deuteronin sidosenergia? Anna vastaus megaelektronivoltteina.",
+      "answer": 2.225,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvot löytyvät MAFY-taulukon taulukosta *Hiukkasten ominaisuuksia*."
+      ]
     }
   ],
   "level2": [
@@ -293,6 +308,19 @@
           "feedback": "Tässä koko atomin massa on muutettu energiaksi, $196{,}97 \\cdot 931{,}5\\,\\text{MeV}$, eli noin $183\\,000\\,\\text{MeV}$. Sidosenergia ei ole ytimen koko energia: se vastaa vain massavajetta eli sitä, kuinka paljon atomi on osiaan kevyempi."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-10/kayra-points",
+      "text": "Kuvassa on 32 ytimen sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ massaluvun $A$ funktiona. Kuvaajan lukutarkkuus on noin $0{,}1\\,\\text{MeV}$.\n\na) Lue kuvaajasta sidosenergia nukleonia kohti ytimille, joiden massaluku on $120$ ja $238$.\n\nb) Laske massaluvun $120$ ytimen kokonaissidosenergia $E_\\text{B}$. Vastauslaatikkoon tulee b-kohdan tulos megaelektronivoltteina.\n\nc) Kumman ytimen kokonaissidosenergia on suurempi ja kumpi on tiiviimmin sidottu? Perustele lyhyesti.",
+      "answer": 1020,
+      "unit": "MeV",
+      "tolerance": 0.05
     }
   ],
   "level3": [
@@ -372,6 +400,20 @@
       "answer": 4.9,
       "unit": "10²⁰ kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-06",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-10/kayra-points",
+      "text": "Uraani-235-ydin ${}^{235}\\text{U}$ halkeaa kahdeksi kevyemmäksi ytimeksi. Yksinkertaistetaan: syntyvien ytimien massaluvut ovat $118$ ja $117$, vapaita neutroneja ei huomioida, ja kummankin syntyvän ytimen sidosenergia nukleonia kohti luetaan kuvaajasta kohdasta $A = 120$. Kuvassa on 32 ytimen sidosenergia nukleonia kohti $\\tfrac{E_\\text{B}}{A}$ massaluvun $A$ funktiona, ja kuvaajan lukutarkkuus on noin $0{,}1\\,\\text{MeV}$.\n\na) Lue kuvaajasta sidosenergia nukleonia kohti uraani-235:lle ja syntyville ytimille.\n\nb) Arvioi halkeamisessa vapautuva energia $Q$ ytimien sidosenergioiden erotuksena. Vastauslaatikkoon tulee b-kohdan tulos megaelektronivoltteina.\n\nc) Selitä kuvaajan avulla, miksi halkeamisessa vapautuu energiaa. Miksi sama arvio antaisi rauta-56-ytimen halkeamiselle kahdeksi samanlaiseksi ytimeksi negatiivisen tuloksen?",
+      "answer": 211.5,
+      "unit": "MeV",
+      "tolerance": 0.15
     }
   ]
 }

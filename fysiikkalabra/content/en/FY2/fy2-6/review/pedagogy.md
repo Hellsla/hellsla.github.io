@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3a567565910709a1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: f18834b72c71945e
 ## Blocking
-- none
 
 ## Polish
-- none
+- 12 GW for three hours is a sound scale, but a one-clause mention of 'many plants must supply this' would tie it to the hook more tightly.
 
 ## Checked
-- git diff origin/main...HEAD of the unit's files (en); pedagogy of the changed passages in context only; FY2 text level.
-- lesson.md: 8760 h for an ordinary 365-day year, 8784 h for a leap year, and the stated convention for the chapter's examples; 1598 kW = 1,598 MW (the old '1,598·1000 kW' was confusing). Both are clearer for the student.
+batch delta review: The 12 GW consumption retrieval fits the grid-with-many-plants opening, and its feedback leads to power plants. It does not reveal which source produced most in 2024.

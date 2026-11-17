@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: teho ja energia",
-      "prompt": "Laite ottaa sähköverkosta tehon $40\\,\\text{W}$. Laite on päällä $30\\,\\text{s}$. Kuinka paljon energiaa laite ottaa?",
+      "prompt": "Hehkulamppu ottaa sähköverkosta tehon $60\\,\\text{W}$. Lamppu palaa $30\\,\\text{s}$. Kuinka paljon energiaa lamppu ottaa?",
       "choices": [
         {
-          "text": "$70\\,\\text{J}$",
+          "text": "$90\\,\\text{J}$",
           "feedback": "Laskit tehon ja ajan yhteen. Teho ja aika ovat eri suureita, joten niitä ei voi laskea yhteen. Energia on teho kerrottuna ajalla, $E = P \\cdot t$ (luku *Teho: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$1200\\,\\text{J}$",
+          "text": "$1800\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein. Teho kertoo, kuinka nopeasti energia siirtyy. Tasaisella teholla energia on siis teho kerrottuna ajalla: $40\\,\\text{W} \\cdot 30\\,\\text{s} = 1200\\,\\text{J}$ (luku *Teho: $P = \\Delta E/\\Delta t$*)."
+          "feedback": "Oikein. Teho kertoo, kuinka nopeasti energia siirtyy. Tasaisella teholla energia on siis teho kerrottuna ajalla: $60\\,\\text{W} \\cdot 30\\,\\text{s} = 1800\\,\\text{J}$ (luku *Teho: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$1{,}3\\,\\text{J}$",
-          "feedback": "Jaoit tehon ajalla ($40 : 30$). Silloin yksikkö olisi $\\text{W} : \\text{s}$, ei joule. Tulos ei siis ole energiaa. Teho on jo energia jaettuna ajalla. Siksi energia saadaan kertomalla teho ajalla (luku *Teho: $P = \\Delta E/\\Delta t$*)."
+          "text": "$2{,}0\\,\\text{J}$",
+          "feedback": "Jaoit tehon ajalla ($60 : 30$). Silloin yksikkö olisi $\\text{W} : \\text{s}$, ei joule. Tulos ei siis ole energiaa. Teho on jo energia jaettuna ajalla. Siksi energia saadaan kertomalla teho ajalla (luku *Teho: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$0{,}75\\,\\text{J}$",
-          "feedback": "Jaoit ajan teholla ($30 : 40$). Watti on joule sekunnissa. Siksi energia saadaan kertomalla teho ajalla: $E = P \\cdot t$ (luku *Teho: $P = \\Delta E/\\Delta t$*)."
+          "text": "$0{,}50\\,\\text{J}$",
+          "feedback": "Jaoit ajan teholla ($30 : 60$). Watti on joule sekunnissa. Siksi energia saadaan kertomalla teho ajalla: $E = P \\cdot t$ (luku *Teho: $P = \\Delta E/\\Delta t$*)."
         }
       ]
     },

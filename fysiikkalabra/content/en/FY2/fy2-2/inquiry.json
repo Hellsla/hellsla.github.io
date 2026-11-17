@@ -25,11 +25,11 @@
       "type": "choice",
       "title": "Review: conservation of energy",
       "optional": true,
-      "prompt": "A car brakes and stops. Which description of its kinetic energy is correct (chapter *Forms of energy and conservation of energy*)?",
+      "prompt": "A cyclist brakes and stops. Which description of the cyclist's kinetic energy is correct (chapter *Forms of energy and conservation of energy*)?",
       "choices": [
         {
-          "text": "The kinetic energy disappears, because the car is no longer moving and so has no energy.",
-          "feedback": "Energy does not disappear. When the car stops, its kinetic energy turns into other energy, and there is as much energy in total as before braking."
+          "text": "The kinetic energy disappears, because the cyclist is no longer moving and so has no energy.",
+          "feedback": "Energy does not disappear. When the cyclist stops, the kinetic energy turns into other energy, and there is as much energy in total as before braking."
         },
         {
           "text": "The kinetic energy turns mostly into thermal energy, and the total amount of energy is conserved.",

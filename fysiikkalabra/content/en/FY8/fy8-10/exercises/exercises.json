@@ -113,6 +113,21 @@
           "feedback": "The mass defect corresponds to the binding energy, so the greatest binding energy per nucleon means the greatest mass defect per nucleon, not the smallest. The mass of a nucleus also does not tell about the binding, because heavier nuclei have more nucleons."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L1-09",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "The deuteron is the nucleus of heavy hydrogen, with one proton and one neutron. Look up the rest masses of the proton, the neutron and the deuteron in the MAFY table (mafytaulukot.fi). The table masses are those of the nucleus and the particles, so the electrons need not be considered. Use the conversion $1\\,\\text{u} = 931.5\\,\\tfrac{\\text{MeV}}{c^2}$. What is the binding energy of the deuteron? Give the answer in megaelectronvolts.",
+      "answer": 2.225,
+      "unit": "MeV",
+      "tolerance": 0.02,
+      "hints": [
+        "The values are in the MAFY table *Hiukkasten ominaisuuksia* (properties of particles)."
+      ]
     }
   ],
   "level2": [
@@ -293,6 +308,19 @@
           "feedback": "Here the mass of the whole atom has been turned into energy, $196.97 \\cdot 931.5\\,\\text{MeV}$, that is, about $183\\,000\\,\\text{MeV}$. The binding energy is not the whole energy of the nucleus: it corresponds only to the mass defect, that is, to how much lighter the atom is than its parts."
         }
       ]
+    },
+    {
+      "id": "fy8-10-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-10/kayra-points",
+      "text": "The figure shows the binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ of 32 nuclei as a function of the mass number $A$. The graph can be read to about $0.1\\,\\text{MeV}$.\n\na) Read from the graph the binding energy per nucleon of nuclei with mass numbers $120$ and $238$.\n\nb) Calculate the total binding energy $E_\\text{B}$ of the nucleus with mass number $120$. The answer box takes the result of part b) in megaelectronvolts.\n\nc) Which nucleus has the greater total binding energy, and which is more tightly bound? Justify briefly.",
+      "answer": 1020,
+      "unit": "MeV",
+      "tolerance": 0.05
     }
   ],
   "level3": [
@@ -372,6 +400,20 @@
       "answer": 4.9,
       "unit": "10²⁰ kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-10-L3-06",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-10/kayra-points",
+      "text": "A uranium-235 nucleus ${}^{235}\\text{U}$ splits into two lighter nuclei. Simplify: the new nuclei have mass numbers $118$ and $117$, free neutrons are ignored, and the binding energy per nucleon of both new nuclei is read from the graph at $A = 120$. The figure shows the binding energy per nucleon $\\tfrac{E_\\text{B}}{A}$ of 32 nuclei as a function of the mass number $A$, and the graph can be read to about $0.1\\,\\text{MeV}$.\n\na) Read from the graph the binding energy per nucleon of uranium-235 and of the new nuclei.\n\nb) Estimate the energy $Q$ released in the fission as the difference of the binding energies of the nuclei. The answer box takes the result of part b) in megaelectronvolts.\n\nc) Use the graph to explain why energy is released in the fission. Why would the same estimate give a negative result for splitting an iron-56 nucleus into two equal nuclei?",
+      "answer": 211.5,
+      "unit": "MeV",
+      "tolerance": 0.15
     }
   ]
 }

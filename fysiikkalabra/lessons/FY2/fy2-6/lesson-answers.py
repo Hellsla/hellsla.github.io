@@ -6,6 +6,7 @@ a = {}
 a["esim-Pka_kW"] = 14e6 / h_year                # example: 14 GWh = 14·10^6 kWh : 8760 h = 1598 kW -> 1,6 MW
 a["esim-osuus"] = 14e6 / h_year / 5000          # 1598 kW : 5000 kW = 0,32
 a["esim-nimellisenergia_GWh"] = 5000 * h_year / 1e6   # check: 5000 kW · 8760 h = 43,8 GWh
+a["inq-kertaus"] = 12 * 3                        # retrieval: 12 GW · 3 h = 36 GWh
 a["tuuli-keskiteho_GW"] = 20.2e9 / h_year / 1e6 # wind 2024: 20,2·10^9 kWh : 8760 h = 2,306 GW -> 2,3 GW
 a["data-fi-muut_TWh"] = 79.9 - (31 + 20.2 + 14.1 + 9.5 + 3.4 + 0.9)   # other sources: total minus the listed ones = 0,8 TWh
 a["maailma-keskiteho_GW"] = 3.0e4 * 1e3 / h_year   # world ~3·10^4 TWh/yr = 3·10^7 GWh : 8760 h = 3425 GW

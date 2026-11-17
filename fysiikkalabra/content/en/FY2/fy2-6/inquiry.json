@@ -24,20 +24,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: power and energy",
-      "prompt": "A device has a power of $2\\,\\text{kW}$ and it is switched on for $3\\,\\text{h}$. How much energy does it use?",
+      "prompt": "On a frosty morning the electricity consumption of Finland stays at $12\\,\\text{GW}$ for three hours. How much energy is used in that time?",
       "choices": [
         {
-          "text": "$6\\,\\text{kWh}$",
+          "text": "$36\\,\\text{GWh}$",
           "correct": true,
-          "feedback": "Correct. Energy is power multiplied by time, $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$ (chapter *Power: $P = \\Delta E/\\Delta t$*). Today the same method tells you how much electricity a power plant produces."
+          "feedback": "Correct. Energy is power multiplied by time, $12\\,\\text{GW} \\cdot 3\\,\\text{h} = 36\\,\\text{GWh}$ (chapter *Power: $P = \\Delta E/\\Delta t$*). Today the same method tells you how much electricity a power plant produces."
         },
         {
-          "text": "$0.67\\,\\text{kWh}$",
-          "feedback": "Here the power was divided by time. Energy is found by multiplying: $E = P t$, and the unit kWh is the product of a kilowatt and an hour (chapter *Power: $P = \\Delta E/\\Delta t$*)."
+          "text": "$4.0\\,\\text{GWh}$",
+          "feedback": "Here the power was divided by time. Energy is found by multiplying: $E = P t$, and the unit GWh is the product of a gigawatt and an hour (chapter *Power: $P = \\Delta E/\\Delta t$*)."
         },
         {
-          "text": "$6\\,\\text{kW}$",
-          "feedback": "The number is right but the unit is not. Power is measured in kilowatts, energy in kilowatt-hours: $2\\,\\text{kW} \\cdot 3\\,\\text{h} = 6\\,\\text{kWh}$."
+          "text": "$36\\,\\text{GW}$",
+          "feedback": "The number is right but the unit is not. Power is measured in gigawatts, energy in gigawatt-hours: $12\\,\\text{GW} \\cdot 3\\,\\text{h} = 36\\,\\text{GWh}$."
         }
       ],
       "optional": true

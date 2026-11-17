@@ -25,11 +25,11 @@
       "type": "choice",
       "title": "Kertaa: energian säilyminen",
       "optional": true,
-      "prompt": "Auto jarruttaa ja pysähtyy. Mikä kuvaus sen liike-energiasta on oikea (luku *Energialajit ja energian säilyminen*)?",
+      "prompt": "Pyöräilijä jarruttaa ja pysähtyy. Mikä kuvaus hänen liike-energiastaan on oikea (luku *Energialajit ja energian säilyminen*)?",
       "choices": [
         {
-          "text": "Liike-energia häviää, koska auto ei enää liiku eikä sillä siksi ole energiaa.",
-          "feedback": "Energia ei häviä. Kun auto pysähtyy, sen liike-energia muuttuu muuksi energiaksi, ja energiaa on yhteensä yhtä paljon kuin ennen jarrutusta."
+          "text": "Liike-energia häviää, koska pyöräilijä ei enää liiku eikä hänellä siksi ole energiaa.",
+          "feedback": "Energia ei häviä. Kun pyöräilijä pysähtyy, hänen liike-energiansa muuttuu muuksi energiaksi, ja energiaa on yhteensä yhtä paljon kuin ennen jarrutusta."
         },
         {
           "text": "Liike-energia muuttuu pääosin lämpöenergiaksi, ja energian kokonaismäärä säilyy.",

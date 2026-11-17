@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 39a737c8fb70f7e1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: ac3a2d181dd00dac
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi-easy), judged in context; round-1 findings for this unit.
-- lesson.md: duplicated keskiteho sentence removed; the next sentence still says it. S2 text stays short and connected.
+batch delta review: the retrieval now uses the opening kettle and hallway lamp; it says nothing of time or power, so it does not give away the Ennusta answer (how long the lamp must burn). Feedback repairs the misconception (energy does not vanish; joule is not a rate). Knowns lists and split Tulos paragraphs follow the one-thing-per-paragraph rule. The paragraph splits in the worked example keep the same words and numbers.

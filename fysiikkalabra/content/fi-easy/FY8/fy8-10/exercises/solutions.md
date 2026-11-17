@@ -389,3 +389,78 @@ $$. Miljardissa vuodessa kuluu $$
 $$, joten osuus on $\dfrac{4{,}9 \cdot 10^{29}\,\text{kg}}{1{,}4 \cdot 10^{31}\,\text{kg}} = 0{,}035 = 3{,}5\,\%$.
 **Vastaus:** $4{,}9 \cdot 10^{20}\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska tehossa $1{,}0 \cdot 10^{28}\,\text{W}$ on kaksi. Massa pienenee vuodessa $3{,}5 \cdot 10^{18}\,\text{kg}$. Vain $0{,}71\,\%$ vetyatomien massasta muuttuu energiaksi.
 **Järkevyys:** Tähden teho on noin $26$ Aurinkoa ($3{,}83 \cdot 10^{26}\,\text{W}$). Aurinko muuttaa heliumiksi noin $6 \cdot 10^{11}\,\text{kg}$ vetyä sekunnissa eli noin $1{,}9 \cdot 10^{19}\,\text{kg}$ vuodessa. Kun tämä kerrotaan luvulla $26$, saadaan noin $5 \cdot 10^{20}\,\text{kg}$. Se täsmää tulokseen. Oletetaan, että kaikki vety on käytettävissä. Todellisuudessa vain tähden ydin fuusioituu, joten osuus ytimen vedystä on suurempi. Miljardissa vuodessa kuluu vain $3{,}5\,\%$ vetyvarastosta. Teho ei siis muutu paljon vedyn vähenemisen vuoksi, ja vakiotehon oletus on tällä aikavälillä kohtuullinen. Massan väheneminen säteilyn vuoksi, $3{,}5 \cdot 10^{18}\,\text{kg}$, on vain $1{,}8 \cdot 10^{-13}$ tähden massasta.
+
+## fy8-10-L1-09
+**Annettu:** MAFY-taulukosta (*Hiukkasten ominaisuuksia*) $m_\text{p} = 1{,}007\,276\,466\,621\,\text{u}$, $m_\text{n} = 1{,}008\,664\,915\,95\,\text{u}$ ja $m_\text{d} = 2{,}013\,553\,2001\,\text{u}$; $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$
+**Kysytty:** deuteronin sidosenergia $E_\text{B}$ megaelektronivoltteina
+**Periaate:** Deuteroni on kevyempi kuin erillinen protoni ja neutroni. Massojen erotus on massavaje $\Delta m$, ja sitä vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Taulukon massat ovat hiukkasten ja ytimen massoja, eivät atomimassoja. Siksi elektroneja ei lasketa mukaan. Vetyatomin massaa ei saa käyttää protonin massan tilalla, koska vetyatomissa on myös elektroni.
+**Kaava:** $\Delta m = m_\text{p} + m_\text{n} - m_\text{d}$ ja $E_\text{B} = \Delta m\,c^2$
+**Muunnokset:** Massaa ei muunneta kilogrammoiksi: massavajeen yksikön paikalle sijoitetaan $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, jolloin $c^2$ supistuu.
+**Sijoitus:** Ensin massavaje:
+$$
+\begin{aligned}
+&\Delta m = m_\text{p} + m_\text{n} - m_\text{d} \\
+&= 1{,}007276467\,\text{u} \\
+&\quad + 1{,}008664916\,\text{u} \\
+&\quad - 2{,}013553200\,\text{u} \\
+&= 0{,}002388182\,\text{u}
+\end{aligned}
+$$
+Sitten energia:
+$$
+\begin{aligned}
+&E_\text{B} = \Delta m\,c^2 \\
+&= 0{,}002388182 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 2{,}2246\,\text{MeV}
+\end{aligned}
+$$
+**Vastaus:** $E_\text{B} \approx 2{,}225\,\text{MeV}$, neljä merkitsevää numeroa kuten muuntoluvussa $931{,}5\,\tfrac{\text{MeV}}{c^2}$. Massavaje on pieni erotus kahdesta lähes yhtä suuresta luvusta. Taulukon arvoissa on kymmenen numeroa, joten erotukseen jää tarpeeksi numeroita.
+**Järkevyys:** Pyöristetyillä luvuilla $0{,}0024 \cdot 930\,\text{MeV}$ on noin $2{,}2\,\text{MeV}$. Sidosenergia nukleonia kohti on $2{,}22\,\text{MeV} : 2 = 1{,}11\,\text{MeV}$, kuten deuteriumin piste kuvaajassa, ja se on paljon pienempi kuin raskaampien ytimien noin $8\,\text{MeV}$. Tulos on positiivinen, koska deuteroni on kevyempi kuin sen osat.
+
+## fy8-10-L2-09
+**Annettu:** kuvaaja, jossa 32 ytimen sidosenergia nukleonia kohti $\tfrac{E_\text{B}}{A}$ massaluvun $A$ funktiona; massaluvut $120$ ja $238$
+**Kysytty:** a) $\tfrac{E_\text{B}}{A}$ kummallakin ytimellä; b) kokonaissidosenergia $E_\text{B}$ massaluvun $120$ ytimelle megaelektronivoltteina; c) kumman kokonaissidosenergia on suurempi ja kumpi on tiiviimmin sidottu
+**Periaate:** Kuvaajan pystyakseli kertoo sidosenergian yhtä nukleonia kohti. Ytimessä on $A$ nukleonia. Siksi kokonaissidosenergia on $E_\text{B} = A \cdot \tfrac{E_\text{B}}{A}$. Tiiviimmin sidottu on se ydin, jonka $\tfrac{E_\text{B}}{A}$ on suurempi.
+**Kuvaajan lukeminen:** Vaaka-akselilla $A = 120$ on ruudukkoviivojen $100$ ja $150$ välissä, kaksi viidesosaa matkaa $100$:sta. Siinä kohdassa piste on ruudukkoviivan $8\,\text{MeV}$ yläpuolella, neljänneksen matkaa $8\,\text{MeV}$:stä $10\,\text{MeV}$:iin, eli lukema on $\tfrac{E_\text{B}}{A} \approx 8{,}5\,\text{MeV}$. Kohdassa $A = 238$ piste on ruudukkoviivan $8\,\text{MeV}$ alapuolella, viidenneksen matkaa $8\,\text{MeV}$:stä $6\,\text{MeV}$:iin, eli lukema on $\tfrac{E_\text{B}}{A} \approx 7{,}6\,\text{MeV}$.
+**Kaava:** $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$
+**Muunnokset:** Ei muunnoksia: lukema on jo yksikössä $\text{MeV}$ nukleonia kohti ja tulos tulee megaelektronivoltteina.
+**Sijoitus:** Kysytty ydin $A = 120$:
+$$
+\begin{aligned}
+&E_\text{B} = A \cdot \dfrac{E_\text{B}}{A} \\
+&= 120 \cdot 8{,}5\,\text{MeV} \\
+&= 1020\,\text{MeV}
+\end{aligned}
+$$
+Vertailua varten ydin $A = 238$: $E_\text{B} = 238 \cdot 7{,}6\,\text{MeV} = 1809\,\text{MeV}$.
+**Vastaus:** b) $E_\text{B} \approx 1{,}0 \cdot 10^{3}\,\text{MeV}$ (laskettu $1020\,\text{MeV}$), kaksi merkitsevää numeroa kuten luetussa arvossa $8{,}5\,\text{MeV}$. Vastaus hyväksytään noin $\pm 5\,\%$ tarkkuudella, koska lukema on $\pm 0{,}1\,\text{MeV}$.
+**Mallivastaus c):** Massaluvun $238$ ytimellä kokonaissidosenergia ($\approx 1{,}8 \cdot 10^{3}\,\text{MeV}$) on suurempi, koska siinä on lähes kaksi kertaa niin monta nukleonia. Tiiviimmin sidottu on kuitenkin massaluvun $120$ ydin, koska sen sidosenergia nukleonia kohti on suurempi ($8{,}5\,\text{MeV}$ vastaan $7{,}6\,\text{MeV}$).
+**Järkevyys:** Pikalasku $120 \cdot 8{,}5 \approx 100 \cdot 8 + 20 \cdot 8{,}5 \approx 1000\,\text{MeV}$ täsmää. Sidosenergia $1020\,\text{MeV}$ on sata kertaa suurempi kuin deuteronin $2{,}2\,\text{MeV}$, mikä sopii sataan kertaan suurempaan nukleonimäärään. Jos lukisi sidosenergian nukleonia kohti sellaisenaan ($8{,}5\,\text{MeV}$), unohtuisi kertoa nukleonien määrällä.
+
+## fy8-10-L3-06
+**Annettu:** uraani-235-ydin halkeaa ytimiksi, joiden massaluvut ovat $118$ ja $117$; vapaita neutroneja ei huomioida; kuvaaja, jossa 32 ytimen $\tfrac{E_\text{B}}{A}$ massaluvun $A$ funktiona
+**Kysytty:** a) $\tfrac{E_\text{B}}{A}$ uraanille ja syntyville ytimille; b) vapautuva energia $Q$ megaelektronivoltteina; c) miksi energiaa vapautuu ja miksi rauta-56:n halkeamisen tulos olisi negatiivinen
+**Periaate:** Ydinreaktiossa vapautuu energiaa, kun syntyvien ytimien kokonaissidosenergia on suurempi kuin alkuperäisen ytimen. Silloin sidosenergia kasvaa, ja ero vapautuu. Massaluku säilyy ($117 + 118 = 235$), joten nukleoneja on yhtä monta ennen halkeamista ja sen jälkeen. Siksi $Q = E_\text{B,loppu} - E_\text{B,alku}$.
+**Kuvaajan lukeminen:** Kohdassa $A = 235$ piste on ruudukkoviivan $8\,\text{MeV}$ alapuolella, viidenneksen matkaa $8\,\text{MeV}$:stä $6\,\text{MeV}$:iin: $\tfrac{E_\text{B}}{A} \approx 7{,}6\,\text{MeV}$. Kohdassa $A = 120$ piste on ruudukkoviivan $8\,\text{MeV}$ yläpuolella, neljänneksen matkaa $8\,\text{MeV}$:stä $10\,\text{MeV}$:iin: $\tfrac{E_\text{B}}{A} \approx 8{,}5\,\text{MeV}$. Lukematarkkuus on $\pm 0{,}1\,\text{MeV}$.
+**Kaava:** $Q = E_\text{B,loppu} - E_\text{B,alku}$, missä $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$
+**Muunnokset:** Ei muunnoksia: lukemat ovat yksikössä $\text{MeV}$ nukleonia kohti.
+**Sijoitus:** Ensin kokonaissidosenergiat:
+$$
+\begin{aligned}
+&E_\text{B,alku} = 235 \cdot 7{,}6\,\text{MeV} \\
+&= 1786\,\text{MeV} \\[6pt]
+&E_\text{B,loppu} = (118 + 117) \cdot 8{,}5\,\text{MeV} \\
+&= 1997{,}5\,\text{MeV}
+\end{aligned}
+$$
+Sitten vapautuva energia:
+$$
+\begin{aligned}
+&Q = E_\text{B,loppu} - E_\text{B,alku} \\
+&= 1997{,}5\,\text{MeV} - 1786\,\text{MeV} \\
+&= 211{,}5\,\text{MeV}
+\end{aligned}
+$$
+**Vastaus:** b) $Q \approx 2{,}1 \cdot 10^{2}\,\text{MeV}$ (laskettu $211{,}5\,\text{MeV}$), kaksi merkitsevää numeroa, koska erotus $8{,}5 - 7{,}6 = 0{,}9\,\text{MeV}$ nukleonia kohti on kuvaajalta luettu. Vastaus hyväksytään noin $\pm 15\,\%$ tarkkuudella, koska erotukseen vaikuttaa kummankin lukeman $\pm 0{,}1\,\text{MeV}$ virhe.
+**Mallivastaus c):** Raskaan uraaniytimen sidosenergia nukleonia kohti ($7{,}6\,\text{MeV}$) on pienempi kuin keskiraskaiden ytimien ($8{,}5\,\text{MeV}$), koska kuvaaja laskee huipun jälkeen. Halkeamisessa nukleonit siirtyvät tiiviimmin sidottuihin ytimiin, kokonaissidosenergia kasvaa noin $0{,}9\,\text{MeV}$ jokaista $235$ nukleonia kohti, ja ero vapautuu liike-energiaksi ja säteilyksi. Rauta-56:n ($A = 56$) $\tfrac{E_\text{B}}{A}$ on lähellä kuvaajan huippua, noin $8{,}8\,\text{MeV}$. Kahdella ytimellä, joiden $A = 28$, se on vain noin $8{,}4\,\text{MeV}$, joten $Q \approx 56 \cdot (8{,}4 - 8{,}8)\,\text{MeV}$, noin $-22\,\text{MeV}$: sidosenergia pienenisi, joten halkeaminen vaatisi energiaa.
+**Järkevyys:** Arvio on uraanin fission tunnettua suuruusluokkaa, noin $200\,\text{MeV}$ yhtä ydintä kohti. Energia nukleonia kohti on $0{,}9\,\text{MeV}$, ja $0{,}9 : 931{,}5 \approx 0{,}1\,\%$ nukleonin massaenergiasta, kuten ydinreaktioissa tavallisesti. Tulos on positiivinen, koska sidosenergia kasvaa.
