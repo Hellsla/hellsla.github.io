@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d7d3f8aa241866e9
+CONTENT-HASH: 2f87f01cc86392ef
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] L3-05 Sijoitus — the chain-length inline formulas set as separate boxes (R40 loose between boxes) split the sentence "Resistanssit ovat …" into fragments; existing shared layout behaviour, not for this change.
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05: Sijoitus paragraph joined, break now before "(1)"; "Virhelähteet:" leads straight into the list).
+- Opened fy6-3-open-exercises-L3-1280-7 (and -8, the card's end) at 1280 px: spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

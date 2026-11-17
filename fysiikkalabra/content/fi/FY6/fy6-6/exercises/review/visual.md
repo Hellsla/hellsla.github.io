@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 0dcef1d9fec44e87
+VERDICT: PASS
+CONTENT-HASH: 12827abc4d334240
 
 ## Blocking
-- [Major] solutions.md fy6-6-L3-04 Vastaus — the new break leaves "Se ylittää sallitun tehon 750 W" as its own paragraph after the paragraph about significant figures ("…kuten sarjakytkennän tehossa 420 W."), so "Se" now points at 420 W or the rounding instead of 822 W — a paragraph starts mid-thought and misleads — fix: write "Teho 22\,\text{W}$ ylittää sallitun tehon…" (or keep the sig-fig sentence and this one in one paragraph).
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta (md-paragraphs). Opened L3 capture 5 at 1280 px (fy6-6-L3-04 Periaate, Kaava, Vastaus start): layout fine; read the diff of every other split (lamp table, wire heating): they read naturally.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L2-06 Järkevyys, L2-07 and L3-04 Vastaus, L3-05 Vastaus); "Se ylittää …" is back in the paragraph above, as intended.
+- Opened fy6-6-open-exercises-L3-1280-6 and -7 at 1280 px: paragraph breaks fall at sentence boundaries, spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

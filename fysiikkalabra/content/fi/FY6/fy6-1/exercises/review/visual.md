@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe67314a394d905
+CONTENT-HASH: 90b7189d78510f1a
 
 ## Blocking
 (none)
@@ -8,8 +8,8 @@ CONTENT-HASH: 8fe67314a394d905
 (none)
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
+- Delta (md-paragraphs, round 2): diff of solutions.md; breaks now sit before the part labels a), b), c) in L2-06 and L2-07 (the mid-part breaks are gone).
+- Opened fy6-1-open-exercises-L2-1280-8 and -9 (L2-07 and the next task, open solutions) and L3-1280-5, -6 at 1280 px: paragraph spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px layout check is green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

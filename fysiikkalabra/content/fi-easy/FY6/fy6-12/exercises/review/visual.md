@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 527ade9cdef3685f
+CONTENT-HASH: ca525836c3ba4fad
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
@@ -8,7 +9,7 @@ CONTENT-HASH: 527ade9cdef3685f
 - none
 
 ## Checked
-- Delta (md-paragraphs only, solutions.md): opened solution captures at 1280 px (open-exercises) for the changed tasks; paragraph breaks fall between ideas, spacing in the solution card is even, nothing clipped, formulas intact. Sample only, as the orchestrator asked; 390 px captures not opened.
+- Diff text only: breaks before b) and c) in the electron-energy task; no new problem.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

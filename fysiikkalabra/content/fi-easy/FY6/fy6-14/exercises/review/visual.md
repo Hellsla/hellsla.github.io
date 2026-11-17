@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4c46f6619202b032
+CONTENT-HASH: 2bb19658ebccad91
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 14-LED järkevyys: the split paragraph begins "Siksi LEDin jännite voidaan pitää vakiona" — fine, but could stay joined to the previous sentence.
+- none
 
 ## Checked
-- Delta (md-paragraphs only): opened exercises L2-8, L2-9, L3-3, L3-5, L3-6, L3-7 (solar a)–c) and LED a)–c) solutions). Samples at 1280 px; breaks are not width-dependent. Paragraph breaks fall at thought boundaries, no orphan one-word paragraph, solution-card spacing even, nothing clipped.
+- Diff text only: breaks before b), c) in the solar and LED tasks; round-1 Minor resolved (a)/b)/c) now at paragraph starts).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

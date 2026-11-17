@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e589ae8241a41bf5
+CONTENT-HASH: 1f8c74036f192058
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: e589ae8241a41bf5
 - none new
 
 ## Checked
-- Delta (solutions.md paragraph breaks only). Opened 1280 px captures: open-exercises-1280-6 (L1-06), L2-1280-8 (the "Varaus ei pyri" model answer), L3-1280-7 and -8 (energy-distribution task, Sijoitus a-c with display maths between paragraphs, Vastaus, Järkevyys).
-- Each break is one thought, nothing starts mid-thought, no one-word paragraph, spacing in the solution card even, nothing clipped.
+- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-7 (energy-distribution task, merged b) paragraph with display chain; the card spacing even, nothing clipped).
+- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

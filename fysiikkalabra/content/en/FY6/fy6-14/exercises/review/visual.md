@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 98ce434a7fab81bf
+CONTENT-HASH: f9910725a21270e0
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] No new Minors; breaks fall at sentence boundaries.
+- none
 
 ## Checked
-- Delta (md-paragraphs only, solutions.md). Opened a level-2 1280 px open-solutions capture (open-exercises-L2-1280-8) of this set and judged the added breaks from it and the diff; short one-sentence paragraphs read as separate thoughts, none orphaned or mid-thought.
-- Spacing inside the solution card consistent; nothing clipped; formulas intact. No 390 px exercise captures exist; layout is the shared card.
+- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
+- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

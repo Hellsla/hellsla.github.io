@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 64405096848dbb35
+CONTENT-HASH: f357a9805844a06e
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md, diagram-choice task Principle and the Millikan Substitution — two places where a paragraph follows without a blank line (the "Both forces point down ..." line and "d) The particles are charged ..."), so the gap is missing; add a blank line.
-- [Minor] Deflection task Substitution (fy6-11-L3-04/05 sample) — a break leaves "b)" at the end of the previous paragraph ("... can be ignored. b)") and its calculation as a block; break before "b)".
+- none
 
 ## Checked
-- Delta: solutions.md paragraph breaks only. Opened fy6-11-open-exercises-L3-1280-8 (Substitution of the deflection task with a)–e) and the t, y blocks), plus the diff for every task.
-- Breaks read naturally, no orphaned one-word paragraph, spacing inside the card even, nothing clipped, formulas and units unchanged.
-- 390 px captures not opened separately.
+- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
+- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

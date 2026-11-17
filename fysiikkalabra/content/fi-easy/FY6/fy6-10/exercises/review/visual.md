@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 961a904de3ca1551
+CONTENT-HASH: ecc4756db8f07712
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy6-10-L2-05 — 'Se on pienimmän neliösumman sovitus…' opens on 'Se' after a paragraph about the slope: begin 'Kulmakerroin on pienimmän…'.
+- none
 
 ## Checked
-- Delta (md-paragraphs only, solutions.md): opened solution captures at 1280 px (open-exercises) for the changed tasks; paragraph breaks fall between ideas, spacing in the solution card is even, nothing clipped, formulas intact. Sample only, as the orchestrator asked; 390 px captures not opened.
+- Diff text only (L3-0x: break before c)); no new problem. Round-1 Minor pronoun item not in this diff.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4
