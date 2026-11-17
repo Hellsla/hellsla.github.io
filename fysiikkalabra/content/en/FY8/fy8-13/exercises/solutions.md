@@ -310,7 +310,7 @@ $$
 \end{aligned}
 $$
 **Answer:** b) $15\,\mu\text{Sv/h}$, two significant figures like the starting value $80\,\mu\text{Sv/h}$ and the half-value thickness $5.0\,\text{cm}$. In part c) the value read from the graph is about $15\,\mu\text{Sv/h}$, so the results agree.
-**Reasonableness:** At the thickness $10\,\text{cm}$ the dose rate is $20\,\mu\text{Sv/h}$ and at $15\,\text{cm}$ it is $10\,\mu\text{Sv/h}$. The thickness $12\,\text{cm}$ lies between them, closer to $15\,\text{cm}$, so the result $15\,\mu\text{Sv/h}$ is reasonable.
+**Reasonableness:** At the thickness $10\,\text{cm}$ the dose rate is $20\,\mu\text{Sv/h}$ and at $15\,\text{cm}$ it is $10\,\mu\text{Sv/h}$. The thickness $12\,\text{cm}$ lies between them, so the result must be between $10\ldots20\,\mu\text{Sv/h}$; the curve is convex, so the value is slightly above the midpoint ($15\,\mu\text{Sv/h}$), and the result $15\,\mu\text{Sv/h}$ is reasonable.
 
 ## fy8-13-L3-06
 **Given:** graph: dose rate behind a concrete wall as a function of thickness, thickness of the wall $d = 20\,\text{cm}$, dose limit $H = 20\,\mu\text{Sv}$, length of the shift $8\,\text{h}$

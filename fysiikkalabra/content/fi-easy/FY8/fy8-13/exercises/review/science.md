@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee80f33d60f803a1
+CONTENT-HASH: eacff728d2981da8
 
 ## Blocking
 
 ## Polish
+- lessons/FY8/fy8-13/answers.py:43 — the comment says "15,14 µSv/h", but the value is 15,157 (the solution says 15,16) — change the comment to 15,16.
+- exercises/solutions.md:315 (L3-06 c) — reading $2{,}5\,\mu\text{Sv/h}$ at the graph's edge is near the reading accuracy of $1\,\mu\text{Sv/h}$. The five-half-value-layer route ($80 : 2^5$) is sturdier and is already in Järkevyys. It could also be named in "Kuvaajan lukeminen".
 
 ## Checked
-- Diff: the new exercise fy8-13-L2-09 and its answers.py line, plus "(esimerkkiaineisto)" removed from four table captions (work queue 8l). No data value changed, and each of those tasks' texts still calls its data esimerkkiaineisto, so no invented data is presented as measured.
-- Recomputed L2-09 c): H = Ḣt = 0,10 µSv/h · 8760 h = 876 µSv = 0,876 mSv → 0,88 mSv; answers.py gives 0,876 ✓. Relative tolerance 0,02 accepts 0,862–0,898 ✓. Two significant figures follow from 0,10 µSv/h; the 8760 h is exact ✓.
-- b): 4/5,9 = 67,8 % → 68 % ✓. d): 0,88/5,9 = 15 % ✓, 5,9 − 0,88 = 5,0 mSv ✓, external 0,45 + cosmic 0,33 = 0,78 mSv ✓.
-- Source facts against the verified list: 5,9 mSv, radon 4 mSv ("kaksi kolmasosaa"), other natural 1,1 mSv, medical 0,76 mSv, external 0,45 and cosmic 0,33 mSv, all ✓. Nothing else is attributed to the reports.
-- Physics of d): the meter sees external radiation; radon's alpha-emitting decay products irradiate the lungs from inside; K-40 and medical doses are internal or separate; dose rates differ between indoors, outdoors and places — right mechanisms.
-- Consistent with L2-05 (example data based on the same 5,9 mSv; medical rounded to 0,8 there).
-- Hash ee80f33d60f803a1 at the start and the end.
+- The hash eacff728d2981da8 was the same at the start and the end. I judged the diff: new L2-10 and L3-06, their solutions and two answers.py lines.
+- The figure is drawn from H0 = 80,0 µSv/h and d½ = 5,0 cm, so the readings in the solutions match the curve.
+- I recomputed L2-10: $80 \cdot 0{,}5^{2{,}4} = 15{,}157\,\mu\text{Sv/h}$, which rounds to 15. A tolerance of 0,04 accepts 14,55–15,76.
+- I recomputed L3-06: $5{,}0\,\mu\text{Sv/h}$ and $4{,}0\,\text{h}$. In c), $2{,}5\,\mu\text{Sv/h}$ gives exactly $25\,\text{cm}$. "Vähintään" is the correct boundary, because at 25 cm the dose equals the limit.
+- The added explanations are physically right: annosnopeus as the dose per hour, $d_{1/2}$ as the thickness that halves the rate, and "siroaa eli kimpoaa", a fair simplification at this level (C).
+- The numbers, the assumptions (half-value law, constant rate, scattering ignored), the significant figures and the d) model answer are the same as in the fi version.

@@ -40,6 +40,6 @@ Hd5 = 240 * (1.0 / 2.0) ** 2 * 0.5 ** (10 / 4.0)       # 240 µSv/h at 1,0 m, 2,
 a["fy8-13-L3-05"] = 25 / Hd5                           # t = 25 µSv : 10,61 µSv/h = 2,357 h -> 2,4 h
 a["fy8-13-L2-09"] = 0.10 * 8760 / 1000             # aineisto STUK-A263 (2020): 0,10 µSv/h · 8760 h = 876 µSv = 0,876 mSv -> 0,88 mSv; radon 4 / 5,9 = 67,8 %
 # Figure tasks on fy8-13/vaimennus (80 µSv/h at d = 0, d½ = 5,0 cm read from the graph)
-a["fy8-13-L2-10"] = 80.0 * 0.5 ** (12 / 5.0)           # behind 12 cm: 80 · 0,5^2,4 = 15,14 µSv/h -> 15 µSv/h
+a["fy8-13-L2-10"] = 80.0 * 0.5 ** (12 / 5.0)           # behind 12 cm: 80 · 0,5^2,4 = 15,16 µSv/h -> 15 µSv/h
 a["fy8-13-L3-06"] = 20 / (80.0 * 0.5 ** (20 / 5.0))    # 20 cm: 80/16 = 5,0 µSv/h; 20 µSv : 5,0 µSv/h = 4,0 h (8 h needs 2,5 µSv/h = 5 d½ = 25 cm)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

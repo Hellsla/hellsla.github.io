@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5b4cdf65b9dd2961
-Mode: delta (added aineisto task fy8-13-L2-09, caption badges removed)
+CONTENT-HASH: a632bdf9634c4105
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises/solutions.md:278 — "$8760\,\text{h}$, which is the exact number of hours in a year" holds for a common year (a leap year has 8784 h) — write "the task's year of $8760\,\text{h}$ is exact".
+- lessons/FY8/fy8-13/answers.py:43 — the comment says "15,14 µSv/h", but the value is 15.157 (the solution says 15.16) — change the comment to 15,16.
+- exercises/exercises.json (fy8-13-L2-10) — the graph's $d_{1/2} = 5.0\,\text{cm}$ differs from the lesson's Cs-137 value for concrete (about 4 cm). This is physically fine for an unnamed source. A short note that the source's gamma rays are more energetic than Cs-137's would stop students seeing a contradiction.
+- exercises/solutions.md:315 (L3-06 c) — reading $2.5\,\mu\text{Sv/h}$ at the right edge is near the stated reading accuracy of 1 µSv/h. The five-half-value-layer route ($80 : 2^5$) is sturdier and is already in Reasonableness. It could also be named under "Reading the graph".
 
 ## Checked
-- Recomputed: H = 0.10 µSv/h · 8760 h = 876 µSv = 0.876 mSv → 0.88 mSv; answers.py 0.876; relative tolerance 0.02 (0.862–0.898) fits; two figures from 0.10 µSv/h justified.
-- Radon share 4/5.9 = 67.8 % → 68 %; 0.876/5.9 = 14.8 % ("about 15 %"); 5.9 − 0.88 = 5.0 mSv correct.
-- Source facts (5.9 mSv total, radon 4 mSv and "two thirds", other natural 1.1 mSv, medical 0.76 mSv, external terrestrial 0.45 and cosmic 0.33 mSv) match the verified list; 0.45 + 0.33 = 0.78 mSv correct.
-- Part a) lets the student choose the sources and gives a dated example, as required for a reading-dependent part.
-- Part d) mechanism right: radon progeny's alpha radiation irradiates the lungs from inside and is not seen by an external meter; internal K-40 and medical doses are the solution's own reasoning, not attributed.
-- Principle H = Ḣt with the constant-rate condition stated; symbolic before substitution.
-- Caption changes "(example data)" removed: no number changed; the task texts still say the data are example data (L2-05 names STUK-A263 as basis).
-- Hash 5b4cdf65b9dd2961 at start and end.
+- The hash a632bdf9634c4105 was the same at the start and the end. The packet's lesson brief is empty, but the diff can be judged from the fi brief and the figure code. I judged the diff: new L2-10 and L3-06, their solutions and two answers.py lines.
+- The figure is drawn from H0 = 80.0 µSv/h and d½ = 5.0 cm, so the readings (40 at 5 cm, 20 at 10 cm, 5 at 20 cm, 2.5 at 25 cm) match the curve.
+- I recomputed L2-10: $80 \cdot 0.5^{2.4} = 15.157\,\mu\text{Sv/h}$, which rounds to 15. A tolerance of 0.04 accepts 14.55–15.76. Two significant figures are justified.
+- I recomputed L3-06: $\dot{H} = 5.0\,\mu\text{Sv/h}$ and $t = 4.0\,\text{h}$, which matches answers.py. In c), $\dot{H}_\text{max} = 2.5\,\mu\text{Sv/h}$ gives exactly 25 cm. "At least 25 cm" is the correct boundary, because the dose there equals the limit.
+- The task states the conditions of the model (the half-value law, a constant rate, scattering ignored), and the solutions use the same ones. The scattering margin in d) is physically right.
+- The numbers, symbols and units are the same as in the fi version. The solutions solve symbolically before substituting.
