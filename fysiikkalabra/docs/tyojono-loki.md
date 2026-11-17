@@ -695,3 +695,6 @@ Kuvatehtävät fy8-14-L2-08 (`fy8-14/kontrasti-points`, vastaavan luukerroksen p
 
 ## §5h mathlayout: join_wide ja with_punct (PR #691, 2026-11-17)
 `join_wide` ei liittänyt relaatiorivejä jatkoriviin jo mainissa (5g); jäljellä oli `&/`- ja `&\div`-rivi, jota ei tunnistettu jatkoriviksi (fy3-10: `/ (…) ≈ 0,083` liitettiin leveällä näytöllä). `CONT_OP` sai `/` ja `\div`. `with_punct` jättää loppu-`&`:n ja `\\`:n viimeiseksi, välimerkki viimeisen lausekkeen perään. Testit `test_mathlayout.py` (5h). `site/`: vain fy3-10 fi/en/fi-easy muuttui; check_layout 1280 ja 360 px ok; `reviews.py verify` ok, yksikään raportti ei vanhentunut (renderöinti ei kuulu hashiin).
+
+## §0i Kirjavinkit: kuusi uutta kirjaa (opettaja 2026-11-17)
+`content/fi/lukuvinkit.json` 14 → 20 kirjaa (Ehrlich, Press, Krauss, Ferguson, McEvoy–Zarate, Ruelle); järjestys helpoimmasta vaativimpaan; uusi `content/fi-easy/lukuvinkit.json` (selkoversio); en päivitetty. Tieteenhistoriallinen merkintä kirjan tekstissä (Tompkins, Ajan lyhyt historia, Thirty Years), ei uutta avainta. Lainamerkinnät ennallaan, uudet `false`. Uusien kirjojen linkit ovat Finnan hakulinkkejä (`Search/Results?lookfor=…&type=Title`), koska Finnan tietuetunnuksia ei voitu tarkistaa (pilviympäristön verkko esti `finna.fi`); opettaja korvaa ne tietuelinkeillä tarkistettuaan.
