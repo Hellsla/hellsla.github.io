@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f447cdfb0ba35ecd
+CONTENT-HASH: e1dc2c62317a56e9
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- inquiry.json kertaus — the title "Kertaa: suoraan verrannollisuus" no longer matches the item (now a volume unit conversion; the slot skill, proportionality, is retrieved nowhere in Pohdinta). Fix: retitle "Kertaa: tilavuus ja yksikkömuunnos", or keep a proportionality item.
+- The prompt says "kuutioiden sivun pituus" then "kuution tilavuus": "Kierrätyspisteen kuutioiden särmä on $4{,}0\,\text{cm}$. Mikä on yhden kuution tilavuus kuutiometreinä?" (särmä is the term the exercises use).
 
 ## Checked
-batch delta review: the single feedback change ("noin 2,7 kertaa niin tiheää kuin vesi") fixes an awkward genitive form and states the comparison base (water); the feedback still repairs the misconception with an order-of-magnitude estimate (250 cm3 of water = 250 g); consistent with the solution text.
+batch delta review: Pohdinta item uses the hook's cubes, gives no mass or density, so no Ennusta answer (162 g; steeper iron line) is disclosed; $V=6{,}4\cdot10^{-5}\,\text{m}^3$ correct; distractors (cm³ value, area factor, length factor) are real misconceptions with repairing feedback citing the earlier chapter; lesson-answers.py matches.

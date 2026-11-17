@@ -23,7 +23,7 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: direct proportionality",
+      "title": "Review: unit conversion",
       "optional": true,
       "prompt": "The side of the cubes at the recycling point is measured with a ruler as $4.0\\,\\text{cm}$. What is the volume of a cube in cubic metres?",
       "choices": [
@@ -37,7 +37,7 @@
           "feedback": "This is the numerical value of the volume in cubic centimetres, $(4.0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. The unit has not been converted: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (chapter *Quantities, units and the SI system*)."
         },
         {
-          "text": "$6.4\\cdot10^{-4}\\,\\text{m}^3$",
+          "text": "$6.4\\cdot10^{-3}\\,\\text{m}^3$",
           "feedback": "You used the conversion for area, $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. In a volume the length is raised to the third power, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
         },
         {

@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: suoran kulmakerroin",
-      "prompt": "Voyager 2 -luotaimen etäisyys Auringosta mitataan monta kertaa vuosien aikana. Mittauspisteet (aika, etäisyys) ovat $(t, s)$-koordinaatistossa suoralla. Mitä suoran kulmakerroin kertoo luotaimesta?",
+      "prompt": "Voyager 2 -luotaimen radiosignaalin kulkuaika Maahan mitataan eri etäisyyksillä. Mittauspisteet (etäisyys, kulkuaika) asettuvat $(s, t)$-koordinaatistossa suoralle. Mitä suoran kulmakerroin kertoo?",
       "choices": [
         {
-          "text": "Luotaimen etäisyyden Auringosta hetkellä $t = 0$.",
-          "feedback": "Se on kohta, jossa suora leikkaa $s$-akselin. Se on vakiotermi, ei kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Kulmakerroin kertoo suoran jyrkkyyden: kuinka monta yksikköä $s$ muuttuu, kun $t$ kasvaa yhdellä."
+          "text": "Kulkuajan, kun etäisyys on nolla.",
+          "feedback": "Se on kohta, jossa suora leikkaa $t$-akselin, ei kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Kulmakerroin kertoo suoran jyrkkyyden: kuinka monta yksikköä $t$ muuttuu, kun $s$ kasvaa yhdellä."
         },
         {
-          "text": "Kuinka paljon luotaimen etäisyys muuttuu aikayksikköä kohti.",
-          "feedback": "Oikein. Kulmakerroin on $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*). Liikkeessä se on nopeus, ja sitä sovellat tänään.",
+          "text": "Kuinka paljon kulkuaika kasvaa etäisyyden yhtä yksikköä kohti.",
+          "feedback": "Oikein. Kulmakerroin on $\\Delta t : \\Delta s$ (luku *Graafinen esitys ja suoran sovittaminen*). Tässä se on aika, joka kuluu yhtä etäisyyden yksikköä kohti. Tänään sovellat samaa ajatusta liikkeeseen.",
           "correct": true
         },
         {
-          "text": "Kuinka pitkä matka luotaimella on vielä edessään.",
-          "feedback": "Suora jatkuu molempiin suuntiin, joten sen pituudella ei ole merkitystä. Kulmakerroin on kahden muutoksen suhde, $\\Delta s : \\Delta t$ (luku *Graafinen esitys ja suoran sovittaminen*)."
+          "text": "Kuinka pitkä suora on.",
+          "feedback": "Suoran pituudella ei ole merkitystä, koska suora jatkuu molempiin suuntiin. Kulmakerroin on kahden muutoksen suhde, $\\Delta t : \\Delta s$ (luku *Graafinen esitys ja suoran sovittaminen*)."
         }
       ],
       "optional": true

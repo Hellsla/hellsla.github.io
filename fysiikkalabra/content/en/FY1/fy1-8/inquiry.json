@@ -24,23 +24,23 @@
       "type": "choice",
       "optional": true,
       "title": "Review: repeats and uncertainty",
-      "prompt": "A group drives a toy car over a distance of $1.00\\,\\text{m}$ five times and gets the times $2.4\\,\\text{s}$, $2.6\\,\\text{s}$, $2.3\\,\\text{s}$, $2.5\\,\\text{s}$ and $2.4\\,\\text{s}$. What is the most sensible way to report the time?",
+      "prompt": "A student measures a walking time five times and gets $4.7\\,\\text{s}$, $4.9\\,\\text{s}$, $4.6\\,\\text{s}$, $4.8\\,\\text{s}$ and $4.7\\,\\text{s}$. What is the most sensible way to report the result?",
       "choices": [
         {
-          "text": "$2.6\\,\\text{s}$, because the largest reading is the surest.",
+          "text": "$4.9\\,\\text{s}$, because the largest reading is the surest.",
           "feedback": "A single extreme value is just one measurement among the others. When a measurement is repeated, the mean is a better estimate than the largest or smallest reading (chapter *Measuring and the reliability of a measurement*)."
         },
         {
-          "text": "$2.44\\,\\text{s}$ without uncertainty, because the calculator gives two decimals.",
+          "text": "$4.74\\,\\text{s}$ without uncertainty, because the calculator gives two decimals.",
           "feedback": "Without the uncertainty the reader does not know how much the result can vary: the readings already vary by a tenth of a second. A result is given together with its uncertainty and with the precision that matches it (chapter *Measuring and the reliability of a measurement*)."
         },
         {
-          "text": "$2.44\\,\\text{s} \\pm 0.15\\,\\text{s}$: the mean, and as a simple estimate of the uncertainty half of the range, given with two figures because its first digit is 1.",
-          "feedback": "Correct. The mean is $12.2\\,\\text{s} : 5 = 2.44\\,\\text{s}$ and half of the range is $(2.6\\,\\text{s} - 2.3\\,\\text{s}) : 2 = 0.15\\,\\text{s}$. The first digit of the uncertainty is 1, so it is given with two figures and the mean to the same decimal place. Today you plan an experiment so that this uncertainty is small compared with the measurement.",
-          "correct": true
+          "text": "$4.74\\,\\text{s} \\pm 0.15\\,\\text{s}$: the mean, and as a simple estimate of the uncertainty half of the range, given with two figures because its first digit is 1.",
+          "correct": true,
+          "feedback": "Correct. The mean is $23.7\\,\\text{s} : 5 = 4.74\\,\\text{s}$ and half of the range is $(4.9\\,\\text{s} - 4.6\\,\\text{s}) : 2 = 0.15\\,\\text{s}$. The first digit of the uncertainty is 1, so it is given with two figures and the mean to the same decimal place. Today you plan an experiment so that this uncertainty is small compared with the measurement."
         },
         {
-          "text": "$2.4\\,\\text{s}$ without uncertainty, because the mean already tells everything.",
+          "text": "$4.7\\,\\text{s}$ without uncertainty, because the mean already tells everything.",
           "feedback": "The mean gives the result, but not how much it can vary. Without an uncertainty no one else can judge whether the result fits a prediction or another measurement (chapter *Measuring and the reliability of a measurement*)."
         }
       ]

@@ -23,7 +23,7 @@
    "id": "kertaus",
    "stage": "herata",
    "type": "choice",
-   "title": "Kertaa: suoraan verrannollisuus",
+   "title": "Kertaa: yksikön muunnos",
    "optional": true,
    "prompt": "Kierrätyspisteen kuutioiden sivun pituus on viivoittimella mitattuna $4{,}0\\,\\text{cm}$. Mikä on kuution tilavuus kuutiometreinä?",
    "choices": [
@@ -37,7 +37,7 @@
      "feedback": "Tämä on tilavuuden lukuarvo kuutiosenttimetreinä, $(4{,}0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. Yksikköä ei ole muunnettu: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (luku *Suureet, yksiköt ja SI-järjestelmä*)."
     },
     {
-     "text": "$6{,}4\\cdot10^{-4}\\,\\text{m}^3$",
+     "text": "$6{,}4\\cdot10^{-3}\\,\\text{m}^3$",
      "feedback": "Käytit pinta-alan muunnosta $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. Tilavuudessa pituus on kolmannessa potenssissa, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
     },
     {

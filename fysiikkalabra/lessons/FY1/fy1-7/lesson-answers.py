@@ -4,5 +4,5 @@ import json
 
 a = {}
 # kertaus: cube side 4,0 cm; V = a³ = (4,0·10⁻² m)³
-a["kertaus-V"] = (4.0e-2) ** 3                       # 6,4·10⁻⁵ m³ (mistakes: 64, 0,64 and 6,4·10⁻⁴)
+a["kertaus-V"] = (4.0e-2) ** 3                       # 6,4·10⁻⁵ m³ (mistakes: 64, 0,64 and 6,4·10⁻³)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
