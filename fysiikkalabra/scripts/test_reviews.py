@@ -768,6 +768,14 @@ expect("8q: a unit written as a formula in one text and as a word in the other i
 expect("8q: a lone unit formula beside the unit's name in words (fy8-13 L2-09: millisieverteinä)", rv._tr_text("Anna tulos millisieverteinä.", "Tulos on millisieverteinä ($\\text{mSv}$).", []) and not rv._tr_text("Anna tulos millisieverteinä.", "Tulos on ($\\text{Sv}$).", []))
 expect("8q: a lone label formula without a known pair or another unit still differs", not rv._tr_text("$\\text{ka}$", "$\\text{foo}$", []) and not rv._tr_text("Yksikkö mSv.", "Yksikkö $\\text{Sv}$.", []) and not rv._tr_text("$\\text{mSv}$", "$\\text{Sv}$", []) and not rv._tr_text("$\\text{kg}$", "$\\text{g}$", []))
 expect("8q: a unit with a number still stays strict (kg → g, mSv → Sv, the number or symbol changes)", not rv._tr_text("$m = 4\\,\\text{kg}$", "$m = 4\\,\\text{g}$", []) and not rv._tr_text("$4\\,\\text{mSv}$", "$4\\,\\text{Sv}$", []) and not rv._tr_text("$H_\\text{ka}=5$", "$H_\\text{avg}=6$", []) and not rv._tr_text("$H_\\text{ka}=5$", "$c_\\text{avg}=5$", []))
+def _ch(ans, a, b, ca=True, n=None): return {"kind": ["concept"], "answer": ans, "unit": "", "tolerance": 0.02, "choices": [{"text": a, **({"correct": True} if ca else {})}, {"text": b, **({} if ca else {"correct": True})}]}
+_cf = _ch("Positroni annihiloituu.", "Positroni annihiloituu.", "Se kasvaa.")
+_ce = _ch("The positron annihilates.", "The positron annihilates.", "It grows.")
+_td = lambda x, y: rv._tr_data(rv._choice_answer(x), rv._choice_answer(y), [])
+expect("8r: a translated choice answer (the correct option's text) is no difference (fy8-14 L1-06)", _td(_cf, _ce))
+expect("8r: another correct option differs", not _td(_cf, _ch("It grows.", "The positron annihilates.", "It grows.", ca=False)))
+expect("8r: a numeric answer that differs still differs", not _td({"answer": 4.2, "unit": "m"}, {"answer": 4.3, "unit": "m"}))
+expect("8r: an answer naming no option is compared as before", not _td({**_cf, "answer": "Muu"}, {**_ce, "answer": "Other"}))
 t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
 shutil.copytree(FI, EN, ignore=shutil.ignore_patterns("review"))
 XE = EN / "exercises"; _ej = XE / "exercises.json"; _ex = json.loads(_ej.read_text())
