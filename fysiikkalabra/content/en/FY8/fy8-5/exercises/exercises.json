@@ -282,7 +282,7 @@
       ],
       "figure": "fy8-5/nodes",
       "answer": 10,
-      "unit": "kpl",
+      "unit": "electrons",
       "tolerance": 0.02
     },
     {

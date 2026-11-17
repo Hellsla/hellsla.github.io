@@ -185,11 +185,11 @@ def levels_n4():
     f.arrow(ax, Y(-13.6) + 14, ax, 18, INK, 2.5, 13)
     f.tex(ax + 14, 22, r"E\ (\text{eV})", "start", w=90)
     f.line(ax, Y(0), 590, Y(0), MUTED, 1.5, "6 5")
-    for E, lab, dy in ((0, "0", -4), (-0.85, r"-0{,}850", -7), (-1.511, r"-1{,}51", 6), (-3.40, r"-3{,}40", 0), (-13.6, r"-13{,}6", 0)):
+    for E, lab, dy in ((0, "0", -12), (-0.85, r"-0{,}850", 6), (-1.511, r"-1{,}51", 12), (-3.40, r"-3{,}40", 0), (-13.6, r"-13{,}6", 0)):
         f.line(ax - 6, Y(E), ax, Y(E), INK, 2)
         f.tex(ax - 10, Y(E) + dy, lab, "end", w=80)
     bw, gap = 16, 3
-    xs = {"s": 150, "p": 204, "d": 296, "f": 428}
+    xs = {"s": 150, "p": 230, "d": 322, "f": 454}
     cnt = {"s": 1, "p": 3, "d": 5, "f": 7}
     boxes = {}
     for nq, E in ((1, -13.6), (2, -3.40), (3, -1.511), (4, -0.85)):
@@ -198,13 +198,13 @@ def levels_n4():
             if sub == "f" and nq < 4:
                 continue
             x = xs[sub]
-            f.tex(x - 4, y, r"\text{" + f"{nq}{sub}" + "}", "end", w=34)
+            f.tex(x - 4, y + {4: -9, 3: 9}.get(nq, 0), r"\text{" + f"{nq}{sub}" + "}", "end", w=34)
             for j in range(cnt[sub]):
                 bx = x + j * (bw + gap)
                 f.rect(bx, y - 6, bw, 12, WHITE, INK, 2, 2)
                 boxes[(nq, sub, j)] = (bx + bw / 2, y)
-    xa, ya = boxes[(4, "s", 0)]; xb, yb = boxes[(2, "p", 1)]
-    f.arrow(xa + 4, ya + 8, xb - 2, yb - 9, INK, 2.5, 11)
+    xa, ya = boxes[(4, "s", 0)]; xb, yb = boxes[(2, "p", 0)]
+    f.arrow(xa + 4, ya + 8, xb - 4, yb - 9, INK, 2.5, 11)
     wavy(f, xb + 10, yb + 14, 540, 262, HOT, waves=5, amp=7)
     f.tex(470, 196, "hf", "start", HOT, w=50)
     return f.svg()
