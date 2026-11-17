@@ -290,3 +290,60 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8427 \cdot 10^{-13}\,\text{J}} = 1.0780 \cdot 10^{-12}\,\text{m} = 1.0780\,\text{pm}$
 **Answer:** $1.08\,\text{pm}$, three significant figures. The levels are $351.2$, $820.5$ and $1501.4\,\text{keV}$ above the ground state, and the energy of the missing line is $1150.2\,\text{keV}$.
 **Reasonableness:** The missing energy $1150.2\,\text{keV}$ is smaller than the greatest line $1501.4\,\text{keV}$ and greater than the line $820.5\,\text{keV}$. So the wavelength is longer than the $0.83\,\text{pm}$ of the greatest line and shorter than the wavelength $1.51\,\text{pm}$ of the line $820.5\,\text{keV}$. The result $1.08\,\text{pm}$ is between these.
+
+## fy8-8-L2-09
+**Given:** the two strong peaks of the Co-60 gamma spectrum (figure) and the weak extra peak $826.1\,\text{keV}$, a transition from level X to the lowest excited level
+**Find:** the energy $E_\text{X}$ of level X above the ground state
+**Principle:** The energy of a gamma photon is the difference between two energy levels of the nucleus. The photon that takes the nucleus to the ground state gives directly the energy of the level it leaves. When the energy of the lowest excited level is known, a higher level is obtained by adding the energy of the transition photon to it.
+**Reading the graph:** The horizontal axis is the photon energy, and the peaks are at $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$. The photon of lower energy is emitted first and the photon of higher energy takes the nucleus to the ground state, so the energy of the lowest excited level is the energy of the higher peak, $E_1 = 1332.5\,\text{keV}$. The lower peak is the transition from a higher level to this level.
+**Formula:** $E_\gamma = E_\text{upper} - E_\text{lower}$, so $E_\text{X} = E_1 + E_\gamma$
+**Conversions:** None needed, because all energies are in kiloelectronvolts.
+**Substitution:** $E_\text{X} = E_1 + E_\gamma = 1332.5\,\text{keV} + 826.1\,\text{keV} = 2158.6\,\text{keV}$. In the level diagram the ground state is at the bottom, above it is the level $1332.5\,\text{keV}$ and at the top level X, $2158.6\,\text{keV}$. The arrows are X $\to$ lowest excited level ($826.1\,\text{keV}$) and lowest excited level $\to$ ground state ($1332.5\,\text{keV}$).
+**Answer:** $2159\,\text{keV}$ or $2.159\,\text{MeV}$ above the ground state, four significant figures as in the given energies.
+**Reasonableness:** Level X is above the lowest excited level, as it should be. It is also below the top level from which the strong peaks start: $$
+\begin{aligned}
+1332.5\,\text{keV} \\
+&+ 1173.2\,\text{keV} \\
+&= 2505.7\,\text{keV}
+\end{aligned}
+$$ is greater than $2158.6\,\text{keV}$.
+
+## fy8-8-L3-06
+**Given:** the two strong peaks of the Co-60 gamma spectrum (figure) and the weak peaks $826.1\,\text{keV}$ (B $\to$ A) and $347.1\,\text{keV}$ (C $\to$ B); $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Find:** the energies of levels A, B and C, the energy $E_\text{C}$ of the photon of a direct transition C $\to$ ground state and its wavelength $\lambda$ in picometres
+**Principle:** The energy of a gamma photon is the energy difference of two levels. A higher level is obtained by adding the energy of the transition photon to the lower level, and the levels have to explain all the observed peaks. The wavelength of a photon is obtained from its energy with $\lambda = hc/E$.
+**Reading the graph:** The figure has two peaks, $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$. The figure does not show which of them is the transition A $\to$ ground state.
+**Formula:** $E_\text{A} = E_{\text{A} \to 0}$, $E_\text{B} = E_\text{A} + E_{\text{B} \to \text{A}}$, $E_\text{C} = E_\text{B} + E_{\text{C} \to \text{B}}$ and $\lambda = \dfrac{hc}{E_\text{C}}$
+**Conversions:** $E_\text{C} = 2505.7\,\text{keV} = 2505.7 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.0141 \cdot 10^{-13}\,\text{J}$ and finally $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Substitution:** a) Try A $\to$ ground state as the peak $1332.5\,\text{keV}$. Then $$
+\begin{aligned}
+E_\text{A} &= 1332.5\,\text{keV} \\
+E_\text{B} &= 1332.5\,\text{keV} + 826.1\,\text{keV} \\
+&= 2158.6\,\text{keV} \\
+E_\text{C} &= 2158.6\,\text{keV} + 347.1\,\text{keV} \\
+&= 2505.7\,\text{keV}
+\end{aligned}
+$$ Check: the transition C $\to$ A is $$
+\begin{aligned}
+2505.7\,\text{keV} \\
+&- 1332.5\,\text{keV} \\
+&= 1173.2\,\text{keV}
+\end{aligned}
+$$, which is the other strong peak. All four peaks are explained. If A $\to$ ground state were $1173.2\,\text{keV}$, then $E_\text{C} = 1173.2 + 826.1 + 347.1 = 2346.4\,\text{keV}$ and the transition C $\to$ A would be $1173.2\,\text{keV}$, not $1332.5\,\text{keV}$. The peak $1332.5\,\text{keV}$ would remain unexplained, so this option is not valid. The level diagram has the ground state $0$, A $1332.5\,\text{keV}$, B $2158.6\,\text{keV}$ and C $2505.7\,\text{keV}$; the arrows are C $\to$ B ($347.1\,\text{keV}$), B $\to$ A ($826.1\,\text{keV}$), C $\to$ A ($1173.2\,\text{keV}$) and A $\to$ ground state ($1332.5\,\text{keV}$).
+b) The photon of the direct transition has the energy of level C: $E_\text{C} = 2505.7\,\text{keV}$.
+c) $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\lambda &= \dfrac{hc}{E_\text{C}} \\
+&= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.0141 \cdot 10^{-13}\,\text{J}} \\
+&= 4.9487 \cdot 10^{-13}\,\text{m} \\
+&= 0.49487\,\text{pm}
+\end{aligned}
+$$
+**Answer:** $0.495\,\text{pm}$, three significant figures as in the given constants. The levels are $1332.5$, $2158.6$ and $2505.7\,\text{keV}$ above the ground state, and the energy of the direct transition is $2505.7\,\text{keV}$.
+**Reasonableness:** The energy of the direct transition is greater than either strong peak ($1332.5\,\text{keV}$ and $1173.2\,\text{keV}$), so the wavelength has to be shorter than theirs, $0.93\,\text{pm}$ and $1.06\,\text{pm}$. The result $0.495\,\text{pm}$ is shorter. Also $347.1 + 826.1 = 1173.2$, so the two routes from level C to level A give the same energy.
