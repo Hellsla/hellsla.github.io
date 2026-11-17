@@ -114,6 +114,14 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2, fy8-11), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
+## 8p. `reviews.py`: kaavan sisäiset sanat ja uusi tehtävä (koordinaattori 2026-11-17, fy8-11:n raportista #682)
+Varattu: claude/reviews-8p
+Jaettu (`scripts/reviews.py`, `test_reviews.py`): yksin, yhdistetään ensin. (a) `translation_differs`/`_tr_text`: kaavan sisäinen `\text{}`-sana on käännetty
+(fy8-11 L3-05 `\text{lämpöarvo}` / `\text{heating value}`), mutta `SCRIPT_WORD` normalisoi vain ala- ja yläindeksien sanat: normalisoi kaikki
+kaavan `\text{}`-sanat paikanpitäjäksi, luvut, operaattorit ja symbolit tiukkoina. (b) Pelkkä uusi tehtävä (uusi id, muut ennallaan) saa pedagogiikalta
+FULL-katselmoinnin ("an exercise level or id changed") `added-exercise`-deltan sijaan; olemassa olevan tehtävän tason tai id:n muutos pysyy FULL.
+Testit `test_reviews.py`: positiivinen ja negatiivinen tapaus kummallekin; `reviews.py verify` koko historialle.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
 **PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
