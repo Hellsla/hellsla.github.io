@@ -22,7 +22,11 @@
 **Perustelu:** Ryhmän A väli on $1{,}39$–$1{,}45\,\text{s}$ ja ryhmän B väli $1{,}43$–$1{,}51\,\text{s}$. Välit ovat osittain päällekkäin, joten tulokset voivat kumpikin olla oikeita: ne sopivat yhteen. Pienempi epävarmuus ei tee tuloksesta oikeaa, eikä kahden tuloksen erilaisuus yksin osoita ristiriitaa.
 
 ### h)
-**Perustelu:** $(t, s)$-kuvaajan jyrkkyys kertoo vauhdin. Välillä $0$–$4\,\text{s}$ kävelijä kulkee $6\,\text{m}$ eli vauhti on $1{,}5\,\text{m/s}$, välillä $4$–$7\,\text{s}$ paikka ei muutu eli kävelijä on levossa, ja välillä $7$–$9\,\text{s}$ hän palaa $4\,\text{m}$ eli vauhti on $2{,}0\,\text{m/s}$. Vauhti on siis suurin lopussa. Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\text{m}$ välillä $4$–$7\,\text{s}$ on paikka eikä nopeus.
+**Perustelu:** $(t, s)$-kuvaajan jyrkkyys kertoo vauhdin.
+
+Välillä $0$–$4\,\text{s}$ kävelijä kulkee $6\,\text{m}$ eli vauhti on $1{,}5\,\text{m/s}$, välillä $4$–$7\,\text{s}$ paikka ei muutu eli kävelijä on levossa, ja välillä $7$–$9\,\text{s}$ hän palaa $4\,\text{m}$ eli vauhti on $2{,}0\,\text{m/s}$. Vauhti on siis suurin lopussa.
+
+Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\text{m}$ välillä $4$–$7\,\text{s}$ on paikka eikä nopeus.
 
 ### i)
 **Perustelu:** Ilman ilmanvastusta kaikki kappaleet putoavat samalla kiihtyvyydellä $g$ massasta riippumatta, joten molempien nopeus on $$\begin{aligned} v &= gt \\ &= 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \\ &\approx 4{,}9\,\text{m/s} \end{aligned}$$. Ajatus, että raskas kappale putoaa nopeammin, on yleinen virhekäsitys.
@@ -199,7 +203,11 @@
 ### c)
 **Kysytty:** kohtaamispaikan epävarmuus ja syy sen suuruuteen
 **Periaate:** Lasketaan kohtaamispaikka Elinan nopeuden ääriarvoilla $3{,}0\,\text{m/s}$ ja $3{,}4\,\text{m/s}$ samalla tavalla kuin b-kohdassa.
-**Mallivastaus:** Kun $v_\text{E} = 3{,}0\,\text{m/s}$, Elinalla on $900\,\text{m}$:n etumatka ja ero kuroutuu umpeen nopeudella $3{,}0\,\text{m/s}$: aikaa kuluu $300\,\text{s}$, ja paikka on $6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s} = 1{,}8\,\text{km}$. Kun $v_\text{E} = 3{,}4\,\text{m/s}$, etumatka on $1020\,\text{m}$ ja erotusnopeus $2{,}6\,\text{m/s}$: aikaa kuluu noin $390\,\text{s}$, ja paikka on noin $2{,}4\,\text{km}$. Kohtaamispaikka on siis $s \approx (2{,}1 \pm 0{,}3)\,\text{km}$.
+**Mallivastaus:** Kun $v_\text{E} = 3{,}0\,\text{m/s}$, Elinalla on $900\,\text{m}$:n etumatka ja ero kuroutuu umpeen nopeudella $3{,}0\,\text{m/s}$: aikaa kuluu $300\,\text{s}$, ja paikka on $6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s} = 1{,}8\,\text{km}$.
+
+Kun $v_\text{E} = 3{,}4\,\text{m/s}$, etumatka on $1020\,\text{m}$ ja erotusnopeus $2{,}6\,\text{m/s}$: aikaa kuluu noin $390\,\text{s}$, ja paikka on noin $2{,}4\,\text{km}$.
+
+Kohtaamispaikka on siis $s \approx (2{,}1 \pm 0{,}3)\,\text{km}$.
 Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$, mutta kohtaamispaikan $\tfrac{0{,}3}{2{,}1} \approx 14\,\%$, eli yli kaksinkertainen. Syy on se, että Elinan nopeus vaikuttaa kohtaamiseen kahdella tavalla samaan suuntaan: suurempi nopeus pidentää hänen etumatkaansa (noin $6\,\%$) ja samalla pienentää erotusnopeutta $v_\text{A} - v_\text{E}$, jolla Aaro kuroo etumatkaa umpeen (noin $7\,\%$). Kun molemmat vaikutukset kasvattavat saavuttamiseen kuluvaa aikaa, niiden suhteelliset epävarmuudet summautuvat: $6\,\% + 7\,\% \approx 13\,\%$. Kohtaamispaikka $s = v_\text{A}(t - t_0)$ on suoraan verrannollinen tähän aikaan, joten sen suhteellinen epävarmuus on yhtä suuri, pyöristetyistä ääriarvoista laskettuna noin $14\,\%$.
 
 ### Yleisiä virheitä
@@ -362,7 +370,11 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 ### c)
 **Kysytty:** miksi suodattimen kuvaaja on erilainen
 **Periaate:** Malli $v = gt$ pätee vain, kun ilmanvastus on merkityksetön. Ilmanvastus vaikuttaa eniten kevyeen ja leveään kappaleeseen: sen nopeuden kasvu hidastuu eniten.
-**Mallivastaus:** Ero johtuu ilmanvastuksesta. Suodatin on kevyt ja leveä, joten ilmanvastus on sille suuri verrattuna sen painoon, kun taas pallolle se on pieni. Alussa nopeus on pieni, ilmanvastus on pieni, ja molemmat kiihtyvät lähes samoin: ensimmäiset pisteet ovat lähes samat. Nopeuden kasvaessa ilmanvastus kasvaa, joten suodattimen nopeuden kasvu hidastuu. Lopulta sen nopeus pysyy lähes vakiona, noin $1{,}5\,\text{m/s}$. Siksi malli $v = gt$ ei kuvaa suodattimen liikettä.
+**Mallivastaus:** Ero johtuu ilmanvastuksesta. Suodatin on kevyt ja leveä, joten ilmanvastus on sille suuri verrattuna sen painoon, kun taas pallolle se on pieni.
+
+Alussa nopeus on pieni, ilmanvastus on pieni, ja molemmat kiihtyvät lähes samoin: ensimmäiset pisteet ovat lähes samat.
+
+Nopeuden kasvaessa ilmanvastus kasvaa, joten suodattimen nopeuden kasvu hidastuu. Lopulta sen nopeus pysyy lähes vakiona, noin $1{,}5\,\text{m/s}$. Siksi malli $v = gt$ ei kuvaa suodattimen liikettä.
 
 ### d)
 **Annettu:** $g = 9{,}7\,\text{m/s}^2$ (b-kohta) ja $t = 1{,}2\,\text{s}$
@@ -385,7 +397,11 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 ### a)
 **Kysytty:** suunnitelma yhden arkin paksuuden määrittämiseksi
 **Periaate:** Kun mitattava suure on paljon pienempi kuin mittarin lukematarkkuus, mitataan monen samanlaisen kappaleen yhteinen suure ja jaetaan kappaleiden määrällä.
-**Mallivastaus:** Viivoittimen lukematarkkuus on noin $1\,\text{mm}$, ja yksi arkki on paljon ohuempi, joten yhden arkin paksuutta ei voi mitata suoraan. Siksi mitataan arkkipinon paksuus ja jaetaan se arkkien määrällä. Silloin lukeman epävarmuus jakautuu kaikille arkeille ja suhteellinen epävarmuus pienenee. Pino puristetaan joka kerta samalla tavalla tasaiseksi, esimerkiksi painamalla sen päälle kirja, jotta arkkien väliin jäävä ilma ei muuta tulosta. Mitataan useita eri arkkimääriä, piirretään $(N, d)$-kuvaaja ja määritetään yhden arkin paksuus suoran kulmakertoimesta: poikkeava mittaus näkyy kuvaajassa heti.
+**Mallivastaus:** Viivoittimen lukematarkkuus on noin $1\,\text{mm}$, ja yksi arkki on paljon ohuempi, joten yhden arkin paksuutta ei voi mitata suoraan. Siksi mitataan arkkipinon paksuus ja jaetaan se arkkien määrällä. Silloin lukeman epävarmuus jakautuu kaikille arkeille ja suhteellinen epävarmuus pienenee.
+
+Pino puristetaan joka kerta samalla tavalla tasaiseksi, esimerkiksi painamalla sen päälle kirja, jotta arkkien väliin jäävä ilma ei muuta tulosta.
+
+Mitataan useita eri arkkimääriä, piirretään $(N, d)$-kuvaaja ja määritetään yhden arkin paksuus suoran kulmakertoimesta: poikkeava mittaus näkyy kuvaajassa heti.
 
 ### b)
 **Kysytty:** $(N, d)$-kuvaaja ja siihen sovitettu suora

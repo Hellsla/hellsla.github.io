@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 644770942be79440
+CONTENT-HASH: 1f5c7e385a38fbc3
 
 ## Blocking
 - none
@@ -8,8 +8,9 @@ CONTENT-HASH: 644770942be79440
 - none
 
 ## Checked
-- delta 8c (md-paragraphs): paragraph breaks inside Reasonableness (L3-01), Principle and Model answer (L1-06), Answer (L1-07), Reading the graph and Model answer (L2 stack task), Model answer on the measurement (Voyager).
-- opened contact sheets 7 and 8 (captures 73-96) and at full size open-exercises-1280-6 (L1-06) and L2-1280-9 (stack task): each break renders as a separate paragraph inside the same labelled block, spacing even, labels not detached, equals signs and units unchanged, nothing clipped. No figures in the delta.
+- Delta 8c (md-paragraphs), changed: Milky Way Answer (L2), rain-drops Answer (L3), eclipse Model answer (L1-9).
+- Opened contact-7.png, contact-8.png and at full size fy1-1-open-exercises-L2-1280-7.png, fy1-1-open-exercises-1280-10.png, fy1-1-open-exercises-L3-1280-5.png: each break is a separate paragraph inside the same labelled block, even spacing, labels not detached, $...$ and display chains intact, nothing clipped. No figures in the delta.
+- Not opened: the 390 px captures (no layout risk from plain paragraphs).
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5
