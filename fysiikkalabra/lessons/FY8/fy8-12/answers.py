@@ -40,4 +40,7 @@ T = 0.5 ** (8.0 / 5.5)                              # lead wall 8,0 mm, d½ 5,5 
 a["fy8-12-L3-05"] = R / (T * 0.015) / 1000          # A = R / (T eta) = 2997 Bq -> 3,0 kBq
 a["fy8-12-L3-06"] = 5.0 - 2 * 0.511                # pair production by a 5,0 MeV photon: kinetic energy 3,978 MeV -> 4,0 MeV
 a["fy8-12-L2-08"] = h * 3.5e9 / e * 1e6            # 5G photon, f = 3,5 GHz: E = hf = 2,319e-24 J = 1,4476e-5 eV = 14,48 µeV -> 14 µeV (two figures)
+# Figure tasks on fy8-12/tuntematon (800 pulses/min at d = 0, d½ = 12 mm read off the graph)
+a["fy8-12-L2-09"] = 800 * 0.5 ** (30 / 12.0)         # net rate behind 30 mm: 141,4 pulses/min -> 140 (two figures, d½ = 12 mm)
+a["fy8-12-L3-07"] = 12.0 * math.log(50) / LN2  # rate down to 800/50 = 16: d = 12 mm · log2(50) = 67,73 mm -> 68 mm (safe side up, two figures)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

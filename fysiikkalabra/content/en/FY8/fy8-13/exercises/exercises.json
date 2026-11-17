@@ -249,6 +249,19 @@
       "answer": 0.88,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-10",
+      "level": 2,
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "The figure shows the dose rate $\\dot{H}$ of a gamma source behind a concrete wall as a function of the thickness $d$ of the wall. The reading accuracy of the graph is about $1\\,\\mu\\text{Sv/h}$ and $0.5\\,\\text{cm}$. Assume that the attenuation by concrete follows the law of half-value thickness.\n\na) Read from the graph the dose rate without concrete and the half-value thickness $d_{1/2}$ of concrete.\n\nb) Calculate the dose rate when the thickness of the wall is $12\\,\\text{cm}$.\n\nc) Check the result by reading the dose rate directly from the graph at $d = 12\\,\\text{cm}$.\n\nThe answer box takes the result of part b).",
+      "answer": 15,
+      "unit": "µSv/h",
+      "tolerance": 0.04
     }
   ],
   "level3": [
@@ -350,6 +363,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-13-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "The concrete wall of a room with a radiation source is $20\\,\\text{cm}$ thick, and the workstation is right behind the wall. The figure shows the dose rate $\\dot{H}$ behind a concrete wall as a function of the thickness $d$ of the wall, when the distance from the source is the same as at the workstation. The worker's dose during a shift may be at most $20\\,\\mu\\text{Sv}$ (example value). Assume that the dose rate stays constant throughout the shift and that scattering and other radiation sources are ignored.\n\na) Read the dose rate at the workstation from the graph.\n\nb) Calculate how long the worker may stay at the workstation during a shift. Give the answer in hours.\n\nc) The shift lasts $8\\,\\text{h}$. Deduce from the graph how thick the wall must be at least so that the dose limit is not exceeded.\n\nd) Name one assumption of the model and tell why the wall should therefore be made thicker than the value of part c).\n\nThe answer box takes the result of part b).",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ]
 }
