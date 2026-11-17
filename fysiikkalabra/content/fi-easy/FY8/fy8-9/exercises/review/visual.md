@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a4254015fd08611c
-SCOPE: delta added-exercise from 2492493ba54a8626 base 415cbc7c6bc3
+CONTENT-HASH: add603ad0d41dab0
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy8-9-L2-08 Vastaus — task and Annettu call 30 a "tarkka arvo", yet Vastaus gives two figures because it is "noin 30 a"; state one reason (for pedagogy: precision of the answer box).
-- [Minor] fy8-9-L2-08 task — the data table stands after "Vastaa laatikkoon…" and just before the answer box; place it before parts a)–d).
-- [Minor] Vastaus — straight quotes "noin 30 a" and the line starts "On jäljellä"; use ”…” and "Jäljellä on".
+- [Minor] fy8-9-L2-09 — the task gives the two read values (380 and 58) in the text, so the graph is only a check; acceptable, but the figure's grid lets a student read them independently. No change needed.
+- [Minor] fy8-9-L2-10 — y-axis labels every 200 kBq against a 50 kBq grid and x-axis labels every 4 h against a 1 h grid: reading 360 kBq and 5,0 h works from the grid, optional label every 100 kBq.
 
 ## Checked
-- fy8-9-open-exercises-L2-1280-10 (end of 9-16, task 9-17 text, table start), -11 (table end, answer box, Annettu to Sijoitus), -12 (Kohta a) to Järkevyys), captures regenerated for the current hash.
-- Round 1 defect fixed: no literal asterisks, the chapter name is in quotation marks. Maths, units, the exponent chain and layout are clean.
+- Delta (fi-easy): captures fy8-9-open-exercises-L2-1280-12/13/14/15 (tasks 9-18 and 9-19 with figures, answer boxes, every solution open) and fy8-9-fig-28-390 (activity graph at 390 px).
+- Both figures: axes with quantity and unit in LaTeX, points distinct (no fit drawn in Pa-234m, curve only for the activity graph), nothing clipped or overlapping; figure does not give the answer away.
+- Solutions: staged blocks, aligned equals signs, fractions, units upright with thin space, decimal separator right for the language, no horizontal overflow; set reads as one with the neighbouring tasks.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
