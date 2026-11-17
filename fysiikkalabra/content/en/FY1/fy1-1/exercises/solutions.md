@@ -171,7 +171,9 @@ The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not 
 **Formula:** $\text{steps} = n_\text{Milky Way} - n_\text{human}$, where $n$ is the exponent of the order of magnitude
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** Human $1.7 < 3$, so $10^{0}\,\text{m}$. Earth $1.27 < 3$, so $10^{7}\,\text{m}$. Sun $1.39 < 3$, so $10^{9}\,\text{m}$. Milky Way $9.46 > 3$, so $10^{20+1} = 10^{21}\,\text{m}$. Thus $\text{steps} = 21 - 0 = 21$.
-**Answer:** $21$, that is, there are $21$ orders of magnitude between a human and the Milky Way; the number is an integer because the orders of magnitude are whole powers of ten. The order of magnitude of the Milky Way is $10^{21}\,\text{m}$ because the factor $9.46$ is closer to $10$ than to $1$: $9.46\cdot10^{20}\,\text{m}$ is closer to $10^{21}\,\text{m}$ than to $10^{20}\,\text{m}$.
+**Answer:** $21$, that is, there are $21$ orders of magnitude between a human and the Milky Way; the number is an integer because the orders of magnitude are whole powers of ten.
+
+The order of magnitude of the Milky Way is $10^{21}\,\text{m}$ because the factor $9.46$ is closer to $10$ than to $1$: $9.46\cdot10^{20}\,\text{m}$ is closer to $10^{21}\,\text{m}$ than to $10^{20}\,\text{m}$.
 **Reasonableness:** The Milky Way is about $10^{21}\,\text{m}$ and a human about $1\,\text{m}$, so the ratio is $$\begin{aligned} &9.46\cdot10^{20}\,\text{m} : 1.7\,\text{m} \\ &\approx 5.6\cdot10^{20} \end{aligned}$$, that is, about $10^{21}$. This fits 21 steps.
 
 ## fy1-1-L2-07
@@ -201,7 +203,11 @@ The total uncertainty of the measurement is also affected by other sources of er
 **Formula:** $V_\text{rain} = h\,A$, $V_\text{drop} = \dfrac{4}{3}\pi r^{3}$ and $N = \dfrac{V_\text{rain}}{V_\text{drop}}$
 **Conversions:** $h = 5.0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0.833\,\text{mm} = 8.33\cdot10^{-4}\,\text{m}$ and $r = 2.0\,\text{mm} : 2 = 1.0\cdot10^{-3}\,\text{m}$.
 **Substitution:** $V_\text{rain} = 8.33\cdot10^{-4}\,\text{m}\cdot6.0\cdot10^{3}\,\text{m}^2 = 5.0\,\text{m}^3$ and $V_\text{drop} = \dfrac{4}{3}\pi\left(1.0\cdot10^{-3}\,\text{m}\right)^{3} = 4.19\cdot10^{-9}\,\text{m}^3$, so $N = \dfrac{5.0\,\text{m}^3}{4.19\cdot10^{-9}\,\text{m}^3} = 1.19\cdot10^{9}$
-**Answer:** about $1.2$ billion drops, two significant figures like the measured given values ($1.19$ fits in the field). The duration $10\,\text{min}$ is an exact, chosen time span, so it does not limit the precision. If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$. If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
+**Answer:** about $1.2$ billion drops, two significant figures like the measured given values ($1.19$ fits in the field).
+
+The duration $10\,\text{min}$ is an exact, chosen time span, so it does not limit the precision. If the intensity of the rain, the duration or the area is $20\,\%$ too large, $N$ increases by $20\,\%$.
+
+If the diameter of the drop is $20\,\%$ too large, the volume of the drop increases by the factor $1.2^{3} = 1.73$ and $N$ decreases by about $42\,\%$. The size of the drop matters most because the volume depends on the third power of the diameter.
 **Reasonableness:** Every square metre gets $$\begin{aligned} &1.19\cdot10^{9} : 6.0\cdot10^{3} \\ &\approx 2\cdot10^{5} \end{aligned}$$ drops, that is about $20$ drops per square centimetre in ten minutes, which is a reasonable number. The order of magnitude $10^{9}$ does not change even if a single assumption is off by twenty per cent or so.
 
 ## fy1-1-L3-05
@@ -221,7 +227,9 @@ So the model and the observation agree as closely as the comparison allows, and 
 **Given:** distance of the Moon $3.84\cdot10^{8}\,\text{m}$, diameter of the Moon $3.47\cdot10^{6}\,\text{m}$, diameter of the Sun $1.39\cdot10^{9}\,\text{m}$; in an eclipse the Sun and the Moon look equally large.
 **Find:** the distance of the Earth from the Sun $d_\text{A}$, chosen from four options that differ in order of magnitude.
 **Principle:** An object looks equally large when its distance is as many times the distance of the Moon as its diameter is times the diameter of the Moon. In the eclipse assumed in the task the Sun and the Moon look approximately equally large, so the ratio of the distances is approximately the same as the ratio of the diameters.
-**Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $$\begin{aligned} d_\text{A}&\approx400\cdot3.84\cdot10^{8}\,\text{m} \\ &\approx1.5\cdot10^{11}\,\text{m} \end{aligned}$$. This is the correct answer. The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
+**Model answer:** The ratio of the diameters is $\dfrac{1.39\cdot10^{9}\,\text{m}}{3.47\cdot10^{6}\,\text{m}}\approx400$, so $$\begin{aligned} d_\text{A}&\approx400\cdot3.84\cdot10^{8}\,\text{m} \\ &\approx1.5\cdot10^{11}\,\text{m} \end{aligned}$$. This is the correct answer.
+
+The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon, so the Sun would be closer than the Moon. The value $1.5\cdot10^{9}\,\text{m}$ is only about $4$ times the distance of the Moon, and the value $1.5\cdot10^{13}\,\text{m}$ about $39\,000$ times; neither matches the factor $400$.
 **Reasonableness:** Light travels the distance $1.5\cdot10^{11}\,\text{m} : 3.0\cdot10^{8}\,\text{m/s} = 5.0\cdot10^{2}\,\text{s}$, that is about $8\,\text{min}$, which is the well-known travel time of sunlight.
 
 ## fy1-1-L1-10
