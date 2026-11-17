@@ -34,15 +34,15 @@
         },
         {
           "text": "$2.5\\,\\text{W}$",
-          "feedback": "You divided the voltage by the current. That gives the resistance, $5.0\\,\\text{V} : 2.0\\,\\text{A} = 2.5\\,\\Omega$, not the power. Power is voltage times current: $P = UI = 10\\,\\text{W}$."
+          "feedback": "You divided the voltage by the current. That gives the resistance, $5.0\\,\\text{V} : 2.0\\,\\text{A} = 2.5\\,\\Omega$, not the power. Power is voltage times current: $P = UI$, so $P = 10\\,\\text{W}$."
         },
         {
           "text": "$7.0\\,\\text{W}$",
-          "feedback": "Voltage and current are different quantities and cannot be added. Power is their product: $P = UI = 5.0\\,\\text{V} \\cdot 2.0\\,\\text{A} = 10\\,\\text{W}$."
+          "feedback": "Voltage and current are different quantities and cannot be added. Power is their product: $P = UI$, so $P = 10\\,\\text{W}$."
         },
         {
           "text": "$0.40\\,\\text{W}$",
-          "feedback": "You divided the current by the voltage. Power is voltage times current: $P = UI = 5.0\\,\\text{V} \\cdot 2.0\\,\\text{A} = 10\\,\\text{W}$."
+          "feedback": "You divided the current by the voltage. Power is voltage times current: $P = UI$, so $P = 10\\,\\text{W}$."
         }
       ]
     },

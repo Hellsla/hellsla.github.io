@@ -42,7 +42,7 @@
         },
         {
           "text": "$43\\,\\text{A}$",
-          "feedback": "Power and voltage are different quantities, so they cannot be subtracted. The current is $I = P : U = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4.6\\,\\text{A}$."
+          "feedback": "Power and voltage are different quantities, so they cannot be subtracted. The current is $I = P : U$, so $I = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4.6\\,\\text{A}$."
         }
       ]
     },

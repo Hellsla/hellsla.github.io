@@ -35,7 +35,7 @@
         },
         {
           "text": "$0.20\\,\\text{A}$",
-          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 230\\,\\text{V} : 46\\,\\Omega = 5.0\\,\\text{A}$."
+          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 230\\,\\text{V} : 46\\,\\Omega$, that is $I = 5.0\\,\\text{A}$."
         },
         {
           "text": "$11\\,\\text{kA}$",
@@ -43,7 +43,7 @@
         },
         {
           "text": "$184\\,\\text{A}$",
-          "feedback": "Voltage and resistance are different quantities, so they cannot be subtracted. The current is $I = U : R = 230\\,\\text{V} : 46\\,\\Omega = 5.0\\,\\text{A}$."
+          "feedback": "Voltage and resistance are different quantities, so they cannot be subtracted. The current is $I = U : R$, so $I = 5.0\\,\\text{A}$."
         }
       ]
     },

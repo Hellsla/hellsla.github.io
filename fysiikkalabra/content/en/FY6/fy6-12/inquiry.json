@@ -34,7 +34,7 @@
         },
         {
           "text": "$4.0 \\cdot 10^{-15}\\,\\text{J}$",
-          "feedback": "You divided the force by the distance. Work is force times distance, $W = Fs = 2.0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0.50\\,\\text{m} = 1.0 \\cdot 10^{-15}\\,\\text{J}$: a shorter distance means less work."
+          "feedback": "You divided the force by the distance. Work is force times distance, $W = Fs$, so $W = 1.0 \\cdot 10^{-15}\\,\\text{J}$: a shorter distance means less work."
         },
         {
           "text": "$2.0 \\cdot 10^{-15}\\,\\text{J}$",

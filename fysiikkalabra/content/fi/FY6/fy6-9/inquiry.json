@@ -34,15 +34,15 @@
         },
         {
           "text": "$2{,}5\\,\\text{W}$",
-          "feedback": "Jaoit jännitteen virralla. Se antaa resistanssin, $5{,}0\\,\\text{V} : 2{,}0\\,\\text{A} = 2{,}5\\,\\Omega$, ei tehoa. Teho on jännite kertaa virta: $P = UI = 10\\,\\text{W}$."
+          "feedback": "Jaoit jännitteen virralla. Se antaa resistanssin, $5{,}0\\,\\text{V} : 2{,}0\\,\\text{A} = 2{,}5\\,\\Omega$, ei tehoa. Teho on jännite kertaa virta: $P = UI$, joten $P = 10\\,\\text{W}$."
         },
         {
           "text": "$7{,}0\\,\\text{W}$",
-          "feedback": "Jännite ja virta ovat eri suureita, joten niitä ei voi laskea yhteen. Teho on niiden tulo: $P = UI = 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 10\\,\\text{W}$."
+          "feedback": "Jännite ja virta ovat eri suureita, joten niitä ei voi laskea yhteen. Teho on niiden tulo: $P = UI$, joten $P = 10\\,\\text{W}$."
         },
         {
           "text": "$0{,}40\\,\\text{W}$",
-          "feedback": "Jaoit virran jännitteellä. Teho on jännite kertaa virta: $P = UI = 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 10\\,\\text{W}$."
+          "feedback": "Jaoit virran jännitteellä. Teho on jännite kertaa virta: $P = UI$, joten $P = 10\\,\\text{W}$."
         }
       ]
     },

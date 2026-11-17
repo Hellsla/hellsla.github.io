@@ -35,7 +35,7 @@
         },
         {
           "text": "$0{,}20\\,\\text{A}$",
-          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 230\\,\\text{V} : 46\\,\\Omega = 5{,}0\\,\\text{A}$."
+          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 230\\,\\text{V} : 46\\,\\Omega$, eli $I = 5{,}0\\,\\text{A}$."
         },
         {
           "text": "$11\\,\\text{kA}$",
@@ -43,7 +43,7 @@
         },
         {
           "text": "$184\\,\\text{A}$",
-          "feedback": "Jännite ja resistanssi ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = U : R = 230\\,\\text{V} : 46\\,\\Omega = 5{,}0\\,\\text{A}$."
+          "feedback": "Jännite ja resistanssi ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = U : R$, joten $I = 5{,}0\\,\\text{A}$."
         }
       ]
     },

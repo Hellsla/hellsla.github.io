@@ -34,11 +34,11 @@
         },
         {
           "text": "$4.0\\,\\text{kJ}$",
-          "feedback": "You forgot to convert the time to seconds. $1.0\\,\\text{ms} = 0.0010\\,\\text{s}$, so $E = Pt = 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} = 4.0\\,\\text{J}$."
+          "feedback": "You forgot to convert the time to seconds. $1.0\\,\\text{ms} = 0.0010\\,\\text{s}$, so $E = Pt$, that is $E = 4.0\\,\\text{J}$."
         },
         {
           "text": "$4.0\\,\\text{mJ}$",
-          "feedback": "The power is $4.0\\,\\text{kW} = 4000\\,\\text{W}$, not $4.0\\,\\text{W}$. Then $E = Pt = 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} = 4.0\\,\\text{J}$."
+          "feedback": "The power is $4.0\\,\\text{kW} = 4000\\,\\text{W}$, not $4.0\\,\\text{W}$. Then $E = Pt$, so $E = 4.0\\,\\text{J}$."
         }
       ]
     },

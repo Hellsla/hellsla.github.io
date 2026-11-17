@@ -42,7 +42,7 @@
         },
         {
           "text": "$43\\,\\text{A}$",
-          "feedback": "Teho ja jännite ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = P : U = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4{,}6\\,\\text{A}$."
+          "feedback": "Teho ja jännite ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = P : U$, joten $I = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4{,}6\\,\\text{A}$."
         }
       ]
     },

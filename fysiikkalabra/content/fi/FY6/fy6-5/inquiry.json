@@ -34,7 +34,7 @@
         },
         {
           "text": "$2{,}0\\,\\text{A}$",
-          "feedback": "Jaoit $4{,}0\\,\\text{V}$ luvulla $2{,}0$ ja unohdit, että k tarkoittaa tuhatta. Koska $2{,}0\\,\\text{k}\\Omega = 2000\\,\\Omega$, virta on $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega = 2{,}0\\,\\text{mA}$."
+          "feedback": "Jaoit $4{,}0\\,\\text{V}$ luvulla $2{,}0$ ja unohdit, että k tarkoittaa tuhatta. Koska $2{,}0\\,\\text{k}\\Omega = 2000\\,\\Omega$, virta on $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega$, joten $I = 2{,}0\\,\\text{mA}$."
         },
         {
           "text": "$8{,}0\\,\\text{kA}$",
@@ -42,7 +42,7 @@
         },
         {
           "text": "$500\\,\\text{A}$",
-          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega = 2{,}0\\,\\text{mA}$."
+          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega$, eli $I = 2{,}0\\,\\text{mA}$."
         }
       ]
     },

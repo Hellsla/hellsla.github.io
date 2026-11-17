@@ -34,7 +34,7 @@
         },
         {
           "text": "$2.0\\,\\text{A}$",
-          "feedback": "You divided $4.0\\,\\text{V}$ by $2.0$ and forgot that the prefix k means a thousand. $2.0\\,\\text{k}\\Omega = 2000\\,\\Omega$, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega = 2.0\\,\\text{mA}$."
+          "feedback": "You divided $4.0\\,\\text{V}$ by $2.0$ and forgot that the prefix k means a thousand. $2.0\\,\\text{k}\\Omega = 2000\\,\\Omega$, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega$, that is $I = 2.0\\,\\text{mA}$."
         },
         {
           "text": "$8.0\\,\\text{kA}$",
@@ -42,7 +42,7 @@
         },
         {
           "text": "$500\\,\\text{A}$",
-          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega = 2.0\\,\\text{mA}$."
+          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega$, that is $I = 2.0\\,\\text{mA}$."
         }
       ]
     },

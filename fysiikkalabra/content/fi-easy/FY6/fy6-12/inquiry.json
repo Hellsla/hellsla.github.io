@@ -34,7 +34,7 @@
         },
         {
           "text": "$4{,}0 \\cdot 10^{-15}\\,\\text{J}$",
-          "feedback": "Jaoit voiman matkalla. Työ on voima kertaa matka, $W = Fs = 2{,}0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0{,}50\\,\\text{m} = 1{,}0 \\cdot 10^{-15}\\,\\text{J}$: lyhyempi matka tarkoittaa pienempää työtä."
+          "feedback": "Jaoit voiman matkalla. Työ on voima kertaa matka, $W = Fs$, joten $W = 1{,}0 \\cdot 10^{-15}\\,\\text{J}$: lyhyempi matka tarkoittaa pienempää työtä."
         },
         {
           "text": "$2{,}0 \\cdot 10^{-15}\\,\\text{J}$",

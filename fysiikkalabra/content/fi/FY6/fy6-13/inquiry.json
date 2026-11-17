@@ -34,11 +34,11 @@
         },
         {
           "text": "$4{,}0\\,\\text{kJ}$",
-          "feedback": "Unohdit muuttaa ajan sekunneiksi. $1{,}0\\,\\text{ms} = 0{,}0010\\,\\text{s}$, joten $E = Pt = 4000\\,\\text{W} \\cdot 0{,}0010\\,\\text{s} = 4{,}0\\,\\text{J}$."
+          "feedback": "Unohdit muuttaa ajan sekunneiksi. $1{,}0\\,\\text{ms} = 0{,}0010\\,\\text{s}$, joten $E = Pt$, eli $E = 4{,}0\\,\\text{J}$."
         },
         {
           "text": "$4{,}0\\,\\text{mJ}$",
-          "feedback": "Teho on $4{,}0\\,\\text{kW} = 4000\\,\\text{W}$, ei $4{,}0\\,\\text{W}$. Silloin $E = Pt = 4000\\,\\text{W} \\cdot 0{,}0010\\,\\text{s} = 4{,}0\\,\\text{J}$."
+          "feedback": "Teho on $4{,}0\\,\\text{kW} = 4000\\,\\text{W}$, ei $4{,}0\\,\\text{W}$. Silloin $E = Pt$, joten $E = 4{,}0\\,\\text{J}$."
         }
       ]
     },
