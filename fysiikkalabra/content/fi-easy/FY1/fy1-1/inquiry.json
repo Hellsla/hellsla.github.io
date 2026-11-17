@@ -31,13 +31,13 @@
           "feedback": "Negatiivinen eksponentti ei tee luvusta negatiivista. Se tarkoittaa jakolaskua: $10^{-15} = \\dfrac{1}{10^{15}}$. Se on pieni positiivinen luku."
         },
         {
-          "text": "$0{,}15$",
-          "feedback": "Eksponentti $-15$ ei ole luku $15$. Se kertoo, monennessako desimaalissa ykkönen on."
-        },
-        {
           "text": "$\\dfrac{1}{10^{15}}$: pilkun jälkeen on neljätoista nollaa ja sitten ykkönen",
           "feedback": "Oikein: $10^{-15} = \\dfrac{1}{10^{15}}$. Ykkönen on viidennessätoista desimaalissa. Sitä ennen on neljätoista nollaa. Samalla tavalla $10^{-3} = 0{,}001$. Nämä askeleet ovat kymmenpotenssien perusta.",
           "correct": true
+        },
+        {
+          "text": "$0{,}15$",
+          "feedback": "Eksponentti $-15$ ei ole luku $15$. Se kertoo, monennessako desimaalissa ykkönen on."
         },
         {
           "text": "Pilkun jälkeen on viisitoista nollaa ja sitten ykkönen",

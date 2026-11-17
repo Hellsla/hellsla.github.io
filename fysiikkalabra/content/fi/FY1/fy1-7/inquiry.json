@@ -28,13 +28,13 @@
    "prompt": "Kierrätyspisteen kuutioiden sivun pituus on viivoittimella mitattuna $4{,}0\\,\\text{cm}$. Mikä on kuution tilavuus kuutiometreinä?",
    "choices": [
     {
-     "text": "$64\\,\\text{m}^3$",
-     "feedback": "Tämä on tilavuuden lukuarvo kuutiosenttimetreinä, $(4{,}0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. Yksikköä ei ole muunnettu: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (luku *Suureet, yksiköt ja SI-järjestelmä*)."
+     "text": "$6{,}4\\cdot10^{-5}\\,\\text{m}^3$",
+     "correct": true,
+     "feedback": "Oikein: $$\\begin{aligned} V &= a^{3} \\\\ &= (4{,}0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6{,}4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. Pituus muunnetaan ensin metreiksi, ja tilavuudessa se on kolmannessa potenssissa, joten myös kymmenpotenssi: $(10^{-2})^{3} = 10^{-6}$ (luku *Suureet, yksiköt ja SI-järjestelmä*)."
     },
     {
-     "text": "$6{,}4\\cdot10^{-5}\\,\\text{m}^3$",
-     "feedback": "Oikein: $$\\begin{aligned} V &= a^{3} \\\\ &= (4{,}0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6{,}4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. Pituus muunnetaan ensin metreiksi, ja tilavuudessa se on kolmannessa potenssissa, joten myös kymmenpotenssi: $(10^{-2})^{3} = 10^{-6}$ (luku *Suureet, yksiköt ja SI-järjestelmä*).",
-     "correct": true
+     "text": "$64\\,\\text{m}^3$",
+     "feedback": "Tämä on tilavuuden lukuarvo kuutiosenttimetreinä, $(4{,}0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. Yksikköä ei ole muunnettu: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (luku *Suureet, yksiköt ja SI-järjestelmä*)."
     },
     {
      "text": "$6{,}4\\cdot10^{-4}\\,\\text{m}^3$",

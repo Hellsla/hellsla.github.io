@@ -28,13 +28,13 @@
       "prompt": "The side of the cubes at the recycling point is measured with a ruler as $4.0\\,\\text{cm}$. What is the volume of a cube in cubic metres?",
       "choices": [
         {
-          "text": "$64\\,\\text{m}^3$",
-          "feedback": "This is the numerical value of the volume in cubic centimetres, $(4.0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. The unit has not been converted: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (chapter *Quantities, units and the SI system*)."
+          "text": "$6.4\\cdot10^{-5}\\,\\text{m}^3$",
+          "correct": true,
+          "feedback": "Correct: $$\\begin{aligned} V &= a^{3} \\\\ &= (4.0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6.4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. The length is converted to metres first, and in a volume it is raised to the third power, so the power of ten is too: $(10^{-2})^{3} = 10^{-6}$ (chapter *Quantities, units and the SI system*)."
         },
         {
-          "text": "$6.4\\cdot10^{-5}\\,\\text{m}^3$",
-          "feedback": "Correct: $$\\begin{aligned} V &= a^{3} \\\\ &= (4.0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6.4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. The length is converted to metres first, and in a volume it is raised to the third power, so the power of ten is too: $(10^{-2})^{3} = 10^{-6}$ (chapter *Quantities, units and the SI system*).",
-          "correct": true
+          "text": "$64\\,\\text{m}^3$",
+          "feedback": "This is the numerical value of the volume in cubic centimetres, $(4.0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. The unit has not been converted: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (chapter *Quantities, units and the SI system*)."
         },
         {
           "text": "$6.4\\cdot10^{-4}\\,\\text{m}^3$",

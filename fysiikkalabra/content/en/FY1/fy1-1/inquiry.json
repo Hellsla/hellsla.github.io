@@ -31,13 +31,13 @@
           "feedback": "A negative exponent does not make the number negative. It means division: $10^{-15} = \\dfrac{1}{10^{15}}$, which is a small positive number."
         },
         {
-          "text": "$0.15$",
-          "feedback": "The exponent $-15$ is not the number $15$ or its decimal form. It tells in which decimal place the one is."
-        },
-        {
           "text": "$\\dfrac{1}{10^{15}}$: after the decimal point there are fourteen zeros and then a one",
           "feedback": "Correct: $10^{-15} = \\dfrac{1}{10^{15}}$. The one is in the fifteenth decimal place, so there are fourteen zeros before it. In the same way $10^{-3} = 0.001$, and these steps are the basis of powers of ten.",
           "correct": true
+        },
+        {
+          "text": "$0.15$",
+          "feedback": "The exponent $-15$ is not the number $15$ or its decimal form. It tells in which decimal place the one is."
         },
         {
           "text": "After the decimal point there are fifteen zeros and then a one",
