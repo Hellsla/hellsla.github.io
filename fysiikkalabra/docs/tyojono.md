@@ -8,6 +8,85 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien yleensä enintään kolme rinnakkain; kun opettaja sanoo työn kiireelliseksi, ei ylärajaa (opettaja 2026-11-15).
 
+## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
+
+Tehdään seuraavaksi, ennen uusia kurssikohtaisia läpikäyntejä. Mittaus 10.–17.11. (git-historia): 89 yhdistettyä
+PR:ää, 140 mainin yhdistystä haaroihin ja noin 110 `site/`-uudelleenrakennusta; `site/` on 246 Mt ja 1282 tiedostoa.
+Kulutuslokin (`review/usage.tsv`) otoksessa orkestroija on kallein rivi (yksi istunto: Opus, 296 vuoroa, 17,8 M
+tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osat 0a–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
+`.claude/`, `CLAUDE.md`, `.github/workflows/`): ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja
+yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR:nsä ja raportoi PR:ssä, mitä se säästi
+(vuorot, tokenit, yhdistykset tai katselmoinnit ennen ja jälkeen). Avoimet jaetut PR:t #665 (5g) ja #666 (8m)
+yhdistetään ensin.
+
+### 0a. Katselmointikierroksen ajo yhdellä komennolla
+`/lesson`, `/exercises` ja `/quality-audit` ajavat nyt ketjun `check_lesson.py` → `screenshot.py --if-stale` →
+`reviews.py scope` → `reviews.py carry` → `review_packet.py` komento kerrallaan, ja jokainen komento on orkestroijan
+vuoro koko kontekstilla. Yksi skripti (esim. `python scripts/round.py <id>[,<id>…] [--exercises] [--lang]`) ajaa
+ketjun ja tulostaa lyhyen yhteenvedon: tarkistusten tulos (vain epäonnistuneet rivit), kunkin roolin scope, kirjatut
+carryt ja pakettien polut. Erälle (`--batch`) sama. Komentotiedostot (`.claude/commands/`) lyhennetään käyttämään sitä.
+Samalla selvitetään, miksi orkestrointi on ajettu Opuksella, vaikka `lesson.md` määrää Sonnetin (komennon `model:` ei
+ilmeisesti vaikuta pilvi-istunnon malliin), ja kirjataan työntekijäistunnon malli koordinaattorin käynnistysohjeeseen.
+Ei muuta katselmointisääntöjä. Testi: skriptin yhteenveto vastaa erikseen ajettujen komentojen tuloksia.
+
+### 0b. Ohjetiedostot lyhyiksi
+`fysiikkalabra/CLAUDE.md` latautuu jokaiseen istuntoon ja agenttiin, ja suuri osa siitä on päivättyä päätöshistoriaa
+(käyttöliittymän vaiheet, Design audit, ääneenluvun toteutus). `tyojono.md` on yli 630 riviä (noin 33 k tokenia), ja
+suuri osa on "tehty"-merkintöjä, opittua ja kirjattuja päätöksiä.
+- `CLAUDE.md`: jäljelle voimassa olevat säännöt lyhyesti; toteutuksen kuvaus ja historia `docs/`-tiedostoihin
+  (esim. `docs/decisions/`), joihin säännöstä viitataan. Yhtään sääntöä ei poisteta eikä muuteta: PR:ssä taulukko
+  "sääntö → uusi paikka", jotta opettaja näkee, ettei mitään kadonnut.
+- `tyojono.md`: vain avoimet kohdat. Valmiit kohdat, kurssien "tehty"-rivit ja opit `docs/tyojono-loki.md`:hen,
+  kirjatut päätökset `docs/decisions/`:iin tai `NOTES.md`:hen. Tavoite alle 200 riviä.
+Ajetaan yksin (kaikki ketjut muokkaavat jonoa): koordinaattori sopii hetken, jolloin muut PR:t ovat yhdistetty tai
+yhdistävät mainin heti perään.
+
+### 0c. Yksi yleinen esitystapaluokka `reviews.py`:hin
+`reflow`, `md-paragraphs` ja `caption-label` on tehty kukin erikseen, ja jokainen on jättänyt tähteitä: kohteet
+(Sovella, koe, yksikkö, tutkimus, TVT-ohje) tulivat mukaan vasta jälkikäteen (5f, 8c-1), ja kahden luokan yhdistelmä
+samalla rivillä luokittuu lukumuutokseksi (FY5 fy5-12, fy5-2; FY4 fy4-14; FY3 fy3-5). Korjaus: yksi normalisoitu
+vertailu (samat sanat, luvut, merkit, yksiköt ja kaavat samassa järjestyksessä; rivijako, kappalejako, listamerkit,
+`aligned`-rakenne ja LaTeXille näkymättömät välilyönnit eivät merkitse), joka koskee samalla tavalla lukua,
+tehtäväsarjaa ja jokaista kohdetyyppiä ja sallii luokkien yhdistelmät. Säännöt ennallaan: tiede ja pedagogiikka carry,
+ulkoasu delta; `verify` johtaa rivit uudelleen. Testit `test_reviews.py`:hin jokaisesta yllä nimetystä tähteestä. Sen
+jälkeen kurssien 5d- ja 8c-tähteet (Sovella, kokeet, yhdistelmärivit) voi tehdä ilman täysiä katselmointeja. #666:n
+jälkeen; ennen kuin 8c jatkuu FY7:ään.
+
+### 0d. CI:n selain pilvi-istuntoihin
+Usea kurssi-PR jätti rivejä, jotka "vain CI:n Chromium leikkaa" (FY4, FY7, FY2), ja ne löytyivät vasta CI-kierroksella.
+Pilvi-istunnossa Docker on asennettu, mutta sen palvelu ei ole käynnissä (tarkistettu 2026-11-17), joten
+`ci_env.py run` ja `check_lesson.py`:n layout-tarkistus putoavat istunnon omaan Chromiumiin. Selvitä ja korjaa: joko
+Docker-palvelu käyntiin ympäristön setup-skriptissä, tai `requirements-ci.txt`:n Playwright-versio, sen Chromium ja
+CI-kuvan fontit asennetaan setup-skriptissä ja `ci_env.py` tunnistaa ne samaksi selaimeksi. Hyväksymisehto: fy2-3
+360 px:llä antaa istunnossa saman määrän leikkautuvia kaavoja kuin CI (13, ei 3; `docs/QUALITY.md` aukko 2).
+Ympäristön muutos on opettajan hyväksyttävä.
+
+### 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali
+Opettajan päätös 2026-11-17 (hyväksytty jonoon; sääntöteksti hyväksytään yhdistämällä PR). Kun muutos on esitystapaluokkaa
+(0c) ja `check_i18n.py` toteaa saman rakenteen kaikilla kielillä, ulkoasukatselmoija katsoo vain suomenkielisen sivun;
+en ja fi-easy saavat ulkoasun PASS:n carryna, jos `check_layout.py` menee niillä läpi kaikilla leveyksillä avatuin
+ratkaisuin. Muu muutos (sanat, käännös, kuvat) katselmoidaan kieli kerrallaan kuten ennen. `reviews.py` RULES, `verify`,
+`test_reviews.py`, `docs/QUALITY.md` ja komentotiedostot samassa PR:ssä. 0c:n jälkeen.
+
+### 0f. Yksi läpikäynti per kurssi (työtapa, ei koodia)
+Sama kurssi on käyty läpi erikseen kohdissa 5d, 8c, 8l-b, 18 ja 19, ja 8g ja 8j ovat tulossa; jokainen läpikäynti tuo
+omat ulkoasukatselmointinsa kolmella kielellä, `site/`-rakennuksensa ja mainin yhdistyksensä. Tästä eteenpäin kurssin
+avoimet kohdat tehdään yhdessä PR:ssä (laajennus kohdan 19 päätökseen 16.11. "jos saat yhdisteltyä PR niin tee"):
+mekaaniset muutokset (8c, 8l-b:n jäännös, 5d:n tähteet) samaan PR:ään kurssin seuraavan sisältömuutoksen (8g, 8j)
+kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan PR:ään. Koordinaattori kirjaa jokaiselle
+kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
+
+### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
+Jokainen yhdistetty PR vanhentaa kaikkien avoimien PR:ien `site/`-kopion, joten jokainen haara yhdistää mainin ja
+rakentaa `site/`:n uudelleen keskimäärin 1,6 kertaa (juuren `CLAUDE.md` sääntö 4). Tavoite: sisältö-PR ei sisällä
+`site/`-muutoksia; CI rakentaa sivuston ja `ruukkilabra-deploy.yml` julkaisee rakennetun version mainin ajon jälkeen.
+Ensin pelkkä suunnitelma (`docs/audits/`), ei koodia: (1) miten `ci_scope.py` päättelee muuttuneet sivut ilman
+committoitua `site/`-diffiä (kahden rakennuksen vertailu tai lähteistä); (2) miten "committoitu `site/` vastaa tuoretta
+rakennusta" -tarkistus korvataan; (3) miten opettaja näkee PR:n vaikutuksen sivuihin ennen yhdistämistä (esikatselu
+CI:n artefaktina tai `reviews.py impact`); (4) säilyykö `site/` repossa CI:n kirjoittamana vai poistuuko se kokonaan;
+(5) julkaisun palautus virhetilanteessa; (6) siirtymä avoimille PR:ille. Julkaisusääntö ei muutu: sivulle pääsee vain
+katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus omina PR:inään vasta hyväksynnän jälkeen.
+
 ## 3. Kaavat taulukkokirjan muotoon: valmis
 
 FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583); FY7:n neljä `\\[Npt]`-kaavaa nimettiin kohdassa 3b (#589; nimet tarkistettu MAFY:n raakadatasta, koordinaattori 15.11: `curl https://mafytaulukot.fi/data/latestversion` antaa sivujen id:t ja versiot, sisältö `https://mafytaulukot.fi/<id>/fi/<versio>/theory.html`). FY10:ssä ja FY14:ssä ei ole nimettäviä
