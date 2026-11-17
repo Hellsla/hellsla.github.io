@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmalta tunnilta",
-      "prompt": "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Kattilan veteen siirtyy liedeltä joka minuutti lämpönä $600\\,\\text{J}$. Vedestä siirtyy joka minuutti lämpönä ympäristöön $600\\,\\text{J}$. Työtä ei tehdä. Mitä veden sisäenergialle ja lämpötilalle tapahtuu?",
+      "prompt": "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Talviyönä maan pinnan kerros luovuttaa ympäristöön lämpönä $4{,}0\\,\\text{kJ}$ ja saa samalla ympäristöstä lämpönä $1{,}0\\,\\text{kJ}$. Työtä ei tehdä. Mitä kerroksen sisäenergialle ja lämpötilalle tapahtuu?",
       "choices": [
         {
-          "text": "Sisäenergia kasvaa, koska veteen tulee koko ajan lämpöä.",
-          "feedback": "Sisäenergiaa muuttaa vain nettosiirto. Veteen tulee $600\\,\\text{J}$ ja siitä lähtee $600\\,\\text{J}$ minuutissa. Siis $Q = 600\\,\\text{J} - 600\\,\\text{J} = 0$ ja $\\Delta U = 0$."
+          "text": "Sisäenergia pysyy samana, koska energia säilyy, ja lämpötila pysyy samana.",
+          "feedback": "Energia säilyy, mutta kerros luovuttaa enemmän kuin saa. Siksi sen oma sisäenergia pienenee. Pois siirtynyt energia on lämpönä ympäristössä: $\\Delta U = Q + W$ antaa $-3{,}0\\,\\text{kJ}$."
         },
         {
-          "text": "Sisäenergia ja lämpötila pysyvät vakioina.",
+          "text": "Sisäenergia pienenee $3{,}0\\,\\text{kJ}$ ja lämpötila laskee.",
           "correct": true,
-          "feedback": "Oikein. Minuutissa $Q = +600\\,\\text{J} - 600\\,\\text{J} = 0$ ja $W = 0$, joten $\\Delta U = Q + W = 0$. Kun tuleva ja lähtevä energia ovat yhtä suuret, lämpötila ei muutu."
+          "feedback": "Oikein: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= (1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ}) + 0 \\\\ &= -3{,}0\\,\\text{kJ} \\end{aligned}$$. Energiaa siirtyy nettona pois, joten sisäenergia pienenee ja lämpötila laskee."
         },
         {
-          "text": "Sisäenergia pienenee, koska vedestä lähtee koko ajan lämpöä.",
-          "feedback": "Lähtevä lämpö pienentäisi sisäenergiaa vain, jos sitä ei korvattaisi. Tässä veteen tulee yhtä paljon kuin lähtee, joten $\\Delta U = 0$."
+          "text": "Sisäenergia pienenee $4{,}0\\,\\text{kJ}$ ja lämpötila laskee.",
+          "feedback": "Otit huomioon vain luovutetun lämmön. Kerros saa myös $1{,}0\\,\\text{kJ}$ lämpönä. Nettomuutos on $Q = 1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ} = -3{,}0\\,\\text{kJ}$."
         },
         {
-          "text": "Sitä ei voi päätellä ilman veden lämpötilaa.",
-          "feedback": "Ensimmäinen pääsääntö riittää: $\\Delta U = Q + W$. Tässä $Q = 0$ ja $W = 0$ joka minuutti. Lämpötilaa ei tarvita sen päättelemiseen, muuttuuko sisäenergia."
+          "text": "Sisäenergia kasvaa $3{,}0\\,\\text{kJ}$ ja lämpötila nousee.",
+          "feedback": "Merkki meni väärin. Luovutettu lämpö on negatiivinen ($-4{,}0\\,\\text{kJ}$) ja saatu positiivinen ($+1{,}0\\,\\text{kJ}$). Siksi $\\Delta U = -3{,}0\\,\\text{kJ}$: sisäenergia pienenee."
         }
       ],
       "optional": true

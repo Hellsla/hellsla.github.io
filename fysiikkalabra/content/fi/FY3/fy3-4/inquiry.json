@@ -19,24 +19,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: veden paino",
-      "prompt": "Kuutiometri vettä (tiheys $1000\\,\\text{kg/m}^3$) on massaltaan $1000\\,\\text{kg}$. Kuinka suuri on tämän vesimäärän paino $G = mg$?",
+      "prompt": "Sukeltajan yläpuolella on vesipatsas, jonka massa on $3000\\,\\text{kg}$. Kuinka suuri on tämän vesipatsaan paino $G = mg$?",
       "choices": [
         {
-          "text": "$1000\\,\\text{N}$",
-          "feedback": "Massa ja paino menivät sekaisin. Paino on voima, ja se saadaan kertomalla massa putoamiskiihtyvyydellä: $$\\begin{aligned} G &= mg \\\\ &= 1000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 9810\\,\\text{N} \\end{aligned}$$."
+          "text": "$3000\\,\\text{N}$",
+          "feedback": "Massa ja paino menivät sekaisin. Paino on voima, ja se saadaan kertomalla massa putoamiskiihtyvyydellä: $$\\begin{aligned} G &= mg \\\\ &= 3000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 29\\,430\\,\\text{N} \\end{aligned}$$."
         },
         {
-          "text": "noin $9{,}8\\,\\text{kN}$",
+          "text": "noin $29\\,\\text{kN}$",
           "correct": true,
-          "feedback": "Oikein: $$\\begin{aligned} G &= mg \\\\ &= 1000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 9810\\,\\text{N} \\\\ &\\approx 9{,}8\\,\\text{kN} \\end{aligned}$$. Tätä vesipatsaan painoa tarvitset tällä tunnilla."
+          "feedback": "Oikein: $$\\begin{aligned} G &= mg \\\\ &= 3000\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 29\\,430\\,\\text{N} \\\\ &\\approx 29\\,\\text{kN} \\end{aligned}$$. Tätä vesipatsaan painoa tarvitset tällä tunnilla."
         },
         {
-          "text": "$102\\,\\text{N}$",
-          "feedback": "Jaoit massan putoamiskiihtyvyydellä. Paino on massa *kertaa* $g$: jokainen kilogramma painaa Maan pinnalla $9{,}81\\,\\text{N}$, joten $1000\\,\\text{kg}$ painaa $9810\\,\\text{N}$."
+          "text": "$306\\,\\text{N}$",
+          "feedback": "Jaoit massan putoamiskiihtyvyydellä. Paino on massa *kertaa* $g$: jokainen kilogramma painaa Maan pinnalla $9{,}81\\,\\text{N}$, joten $3000\\,\\text{kg}$ painaa $29\\,430\\,\\text{N}$."
         },
         {
-          "text": "$1000\\,\\text{kg}$",
-          "feedback": "Kilogramma on massan yksikkö. Paino on voima, ja voiman yksikkö on newton: $G = mg = 9810\\,\\text{N}$."
+          "text": "$3000\\,\\text{kg}$",
+          "feedback": "Kilogramma on massan yksikkö. Paino on voima, ja voiman yksikkö on newton: $G = mg \\approx 29\\,\\text{kN}$."
         }
       ],
       "optional": true

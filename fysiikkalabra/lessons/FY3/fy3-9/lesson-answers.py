@@ -9,5 +9,8 @@ a["inq-c2-suhde"] = T2 / T1                               # 1,0999 -> about 10 %
 a["inq-c2-prosentti"] = (T2 / T1 - 1) * 100               # 9,99 %
 a["inq-c2-celsius-suhde"] = 35 / 7                        # mistake: ratio of the Celsius values = 5
 a["inq-c2-28"] = (T2 - T1) / T1 * 100                     # mistake 28 % from 28 degrees: the true relative change is 9,99 %
+# kertaus: bag side 0,020 m², air pressure 101 kPa
+a["kertaus-F"] = 101e3 * 0.020                       # 2020 N -> 2,0 kN (mistakes: 2,0 N, 5,1 MN = p / A)
+a["kertaus-jako"] = 101e3 / 0.020
 
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

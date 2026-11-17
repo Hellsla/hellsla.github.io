@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa FY1:stä: suoraan verrannollisuus",
-      "prompt": "Pyöräilijä ajaa tasaisella nopeudella. Hän kulkee $2{,}0\\,\\text{km}$ 6,0 minuutissa. Kuinka pitkän matkan hän ajaa samalla nopeudella 18 minuutissa?",
+      "prompt": "Voimamittarin jousi venyy sitä enemmän, mitä suurempi voima siihen vaikuttaa. Venymä on suoraan verrannollinen voimaan. Jousi venyy $1{,}5\\,\\text{cm}$, kun siihen ripustetaan kappale, jonka paino on $2{,}0\\,\\text{N}$. Kuinka paljon jousi venyy, kun kappaleen paino on $6{,}0\\,\\text{N}$?",
       "choices": [
         {
-          "text": "$6{,}0\\,\\text{km}$",
+          "text": "$4{,}5\\,\\text{cm}$",
           "correct": true,
-          "feedback": "Oikein. Tasaisessa liikkeessä matka on suoraan verrannollinen aikaan, $s = vt$. Aika on kolminkertainen, joten matkakin on kolminkertainen: $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$. Samaa päättelyä tarvitset tällä tunnilla jousen ja painon kanssa."
+          "feedback": "Oikein. Voima kolminkertaistuu, joten venymä kolminkertaistuu: $3 \\cdot 1{,}5\\,\\text{cm} = 4{,}5\\,\\text{cm}$. Tarvitset samaa päättelyä tällä tunnilla."
         },
         {
-          "text": "$14\\,\\text{km}$",
-          "feedback": "Lisäsit aikojen erotuksen ($12\\,\\text{min}$) matkaan. Suoraan verrannollisuudessa suureet muuttuvat samassa *suhteessa*, eivät saman verran. Aika kolminkertaistuu, joten matkakin kolminkertaistuu: $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$."
+          "text": "$5{,}5\\,\\text{cm}$",
+          "feedback": "Lisäsit voimien erotuksen ($4{,}0\\,\\text{N}$) venymään. Suoraan verrannollisuudessa suureet kasvavat samalla *kertoimella*, eivät saman verran. Voima kasvaa kolminkertaiseksi, joten venymäkin: $3 \\cdot 1{,}5\\,\\text{cm} = 4{,}5\\,\\text{cm}$."
         },
         {
-          "text": "$18\\,\\text{km}$",
-          "feedback": "Matka kilometreinä ei ole sama luku kuin aika minuutteina. Nopeus on $2{,}0\\,\\text{km} / 6{,}0\\,\\text{min}$ eli kolmannes kilometriä minuutissa. Matka 18 minuutissa on $6{,}0\\,\\text{km}$."
+          "text": "$6{,}0\\,\\text{cm}$",
+          "feedback": "Senttimetrit ja newtonit ovat eri yksiköitä, eivätkä luvut ole samat. Kahden newtonin voima venyttää jousta $1{,}5\\,\\text{cm}$, joten kuuden newtonin voima venyttää kolme kertaa niin paljon, $4{,}5\\,\\text{cm}$."
         },
         {
-          "text": "$4{,}0\\,\\text{km}$",
-          "feedback": "Aika kasvaa 6 minuutista 18 minuuttiin eli kolminkertaiseksi, ei kaksinkertaiseksi. Kerro matka samalla luvulla: $3 \\cdot 2{,}0\\,\\text{km} = 6{,}0\\,\\text{km}$."
+          "text": "$3{,}0\\,\\text{cm}$",
+          "feedback": "Voima kasvaa $2{,}0\\,\\text{N}$:sta $6{,}0\\,\\text{N}$:iin. Se on kolminkertainen, ei kaksinkertainen. Kerro venymä samalla luvulla: $3 \\cdot 1{,}5\\,\\text{cm} = 4{,}5\\,\\text{cm}$."
         }
       ],
       "optional": true
