@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 27dac7eaead3d0ba
+CONTENT-HASH: f0cdda3e8ad87fe1
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 27dac7eaead3d0ba
 - none
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened all 1 proof sheet(s) fi-fy6-5-exercises-* and every numbered formula; all `fits`, breaks sensible.
+- Delta (md-paragraphs, queue 8c). Opened L3 captures 4, 5, 7, 8 at 1280 px: the Periaate stages of 5-20 and the divider task break into one thing per paragraph, spacing inside the card even, nothing clipped. Not opened: a 390 px capture of exercises (none listed). Deterministic 'layout 360 px' FAIL in the packet is outside this delta's scope.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 5

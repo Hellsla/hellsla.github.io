@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 40b5d357b5bd6fcd
+CONTENT-HASH: ea6cb3f18aea8156
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md 16-14 Answer: the first paragraph ends with the run-on label "a)" and "First error:" opens the next paragraph, so the break falls mid-label; start the paragraph at "a) First error:".
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-16-exercises-1-2, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta (md-paragraphs only, solutions.md). Opened a level-2 1280 px open-solutions capture (open-exercises-L2-1280-8) of this set and judged the added breaks from it and the diff; short one-sentence paragraphs read as separate thoughts, none orphaned or mid-thought.
+- Spacing inside the solution card consistent; nothing clipped; formulas intact. No 390 px exercise captures exist; layout is the shared card.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

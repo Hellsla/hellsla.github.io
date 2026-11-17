@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3172c295e60ab82c
+CONTENT-HASH: 98ce434a7fab81bf
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] No new Minors; breaks fall at sentence boundaries.
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-14-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta (md-paragraphs only, solutions.md). Opened a level-2 1280 px open-solutions capture (open-exercises-L2-1280-8) of this set and judged the added breaks from it and the diff; short one-sentence paragraphs read as separate thoughts, none orphaned or mid-thought.
+- Spacing inside the solution card consistent; nothing clipped; formulas intact. No 390 px exercise captures exist; layout is the shared card.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

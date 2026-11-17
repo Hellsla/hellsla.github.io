@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9b386c8f277354d7
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 85ed96b2edbabea2
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md fy6-11-L3-05 — 'Se saavuttaa poikkeaman…' opens on 'Se' (the droplet) after a paragraph about voltage: write 'Pisara saavuttaa…'. Part labels c) and d) also start mid-paragraph; acceptable.
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-11-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- Delta (md-paragraphs only, solutions.md): opened solution captures at 1280 px (open-exercises) for the changed tasks; paragraph breaks fall between ideas, spacing in the solution card is even, nothing clipped, formulas intact. Sample only, as the orchestrator asked; 390 px captures not opened.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

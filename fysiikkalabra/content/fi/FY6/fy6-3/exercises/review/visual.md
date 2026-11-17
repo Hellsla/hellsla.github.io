@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2eb18a63c0e1ad44
+CONTENT-HASH: d7d3f8aa241866e9
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy6-3 all languages: the data-table caption wraps in a narrow, cramped table box; widen the table or keep the caption on one line.
-- [Minor] fy6-3 solution: the Kaava stage mixes parts b) and c) in one paragraph; give each part's formula its own line. 'Kohta b)' also appears twice (Sijoitus and as its own stage).
+(none)
 
 ## Checked
-- Proof sheets fi-fy6-3-exercises-* (all, every numbered formula); captures open-exercises-L2 of the new task with solutions open (source link, table or sub-questions, solution stages, units), opened for fi.
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
+- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

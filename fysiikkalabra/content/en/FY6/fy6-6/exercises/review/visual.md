@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b0eb3163d2e7d5dd
+CONTENT-HASH: b3743d67cdede78a
 
 ## Blocking
 - none
@@ -8,7 +8,9 @@ CONTENT-HASH: b0eb3163d2e7d5dd
 - none
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-6-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- delta (md-paragraphs, solutions.md only): read every inserted paragraph break in the diff; each splits at a sentence boundary, one thing per paragraph, none starts mid-thought, no one-word or orphan paragraph.
+- Opened at 1280 px: fy6-6-open-exercises-L2-1280-4; paragraph spacing inside the solution card is even, nothing clipped or overflowing.
+- Words, numbers, signs and units unchanged in the diff.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

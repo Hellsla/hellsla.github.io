@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 48f32a459da5ae07
+CONTENT-HASH: 9b63646b9d282535
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] No Minors beyond the shared ones.
+- [Minor] solutions.md 13 kohta d) — "Esimerkkejä ovat puhelin, sähköpyörä ja sähköauto." stands as a one-line paragraph apart from "Akku sopii käyttöön, jossa energiaa tarvitaan paljon ja pitkään." — join it to that sentence.
+- [Minor] Same task, "Se on kapasitanssi." and "Sitä mahtuu…" open paragraphs with a pronoun for the previous paragraph's last sentence — move the break one sentence earlier/later if convenient.
 
 ## Checked
-- Proof sheets fi-easy-fy6-13-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs only): opened exercises-L2-1280-12, -13, -14, L3-1280-3, -4, -7, -8, L1-1280-10, -11 (paragraph breaks, solution-card spacing, no clipping). Samples at 1280 px; breaks are not width-dependent.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
