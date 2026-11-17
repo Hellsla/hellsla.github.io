@@ -131,6 +131,16 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 2. `verify` johtaa reflow-rivit uudelleen eikä hyväksy reflow-riviä ulkoasukatselmoinnille.
 3. Testi (`test_reviews.py` 8n): yksikön kaava nostettuna `aligned`-muotoon siirtää tieteen ja pedagogiikan, ei ulkoasua;
    muuttunut luku, merkki tai sana ei siirrä mitään.
+
+## 5g. Käännöstarkistus osaksi check_lesson.py:tä (opettaja 2026-11-17)
+
+Varattu: claude/check-lesson-i18n
+
+fy8-6:ssa (#659) käännösvirhe löytyi vasta CI:ssä ja kulutus nousi noin 528 k:hon (katto 250 k). `check_lesson.py <id>`
+ajaa myös `check_i18n.py`:n luvun omille sivuille (jokainen kieli, jolla luku on käännetty), samassa yhteenvedossa, ja
+kaatuu, jos tarkistus epäonnistuu. Testi, CLAUDE.md:n tarkistuslista ja `/lesson`- ja `/exercises`-komentojen vaiheet.
+Jaettu muutos (`scripts/`, `.claude/`): yhdistetään yksin, #658:n ja #652:n jälkeen.
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
