@@ -424,6 +424,18 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
 
+## 8m. Monivalinnan vaihtoehdot verrataan avaimittain katselmoinnin laajuudessa (koordinaattori 2026-11-17)
+
+Varattu: claude/reviews-json-avaimittain (jaettu: scripts/reviews.py, test_reviews.py; yhdistetään yksin)
+
+`reviews.py scope` vertasi exercises.json- ja inquiry.json-tiedostot riveittäin (difflib). Kun monivalinnan
+vaihtoehdot kirjoitettiin uudelleen, muuttumaton rivi kuten `"correct": true` kohdistui toiseen kohtaan ja näkyi
+poistettuna ja lisättynä, joten muutos sai luokan `experiment` ja tiede- ja pedagogiikkakatselmoinnista tuli FULL
+(8j FY5, PR #661: fy5-7, fy5-11 ja fy5-17 palautettiin, koska täydet katselmoinnit olisivat maksaneet noin 1 M tokenia).
+Korjaus: JSON verrataan avaimittain (polku id:n tai indeksin mukaan), joten muuttumaton avain–arvo-pari ei ole muutos.
+Pelkkä vaihtoehdon tekstin muutos on `wording` tai `numbers` (delta); muuttunut `correct`, alkutila tai vastaus on
+edelleen `experiment` (täysi katselmointi), samoin lisätty tai poistettu vaihtoehto, jolla on `correct`.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla

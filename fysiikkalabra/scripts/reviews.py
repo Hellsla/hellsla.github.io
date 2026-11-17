@@ -734,6 +734,48 @@ def _chapter_refs_renamed(old, new):
     return all(m.group(2) in titles or m.group(2).replace("\\\\", "\\") in titles for m in CHAPTER_REF.finditer(new))
 
 
+def _json_leaves(v, path=(), key=None, out=None):
+    """{path: line} of a JSON value, one line per scalar (or list of scalars) as `_view` would print it ("correct": true).
+    An object in a list is found by its "id" when every item of the list has a unique one (their order is then a leaf of
+    its own, "id": [...], so a reordering is still a change), otherwise by its index."""
+    out = {} if out is None else out
+    if isinstance(v, dict) and v:
+        for k, x in v.items(): _json_leaves(x, path + (k,), k, out)
+    elif isinstance(v, list) and v and all(isinstance(x, dict) for x in v):
+        ids = [x.get("id") for x in v]
+        keyed = all(isinstance(i, str) for i in ids) and len(set(ids)) == len(ids)
+        if keyed: out[path + ("#order",)] = f'"id": {json.dumps(ids, ensure_ascii=False)}'
+        for i, x in enumerate(v): _json_leaves(x, path + ((f"id={ids[i]}",) if keyed else (i,)), key, out)
+    else:
+        out[path] = (f'{json.dumps(key, ensure_ascii=False)}: ' if isinstance(key, str) else "") + json.dumps(v, ensure_ascii=False)
+    return out
+
+
+KEYED_JSON = ("exercises.json", "inquiry.json")
+
+
+def keyed_diff(a, b):
+    """The +/- lines of two JSON texts compared key by key (work queue 8m, coordinator 2026-11-17): a key whose value is
+    the same in both is no change, wherever difflib would align its line, so options rewritten around an unchanged
+    `"correct": true` change only their texts. Each changed key is its own block; None when either is not JSON."""
+    try: la, lb = _json_leaves(json.loads(a)), _json_leaves(json.loads(b))
+    except (TypeError, json.JSONDecodeError): return None
+    out = []
+    for p in list(la) + [p for p in lb if p not in la]:
+        x, y = la.get(p), lb.get(p)
+        if x == y: continue
+        out += ([f"-{x}"] if x is not None else []) + ([f"+{y}"] if y is not None else []) + [" "]
+    return out
+
+
+def _class_diff(rel, a, b):
+    """The diff `classify` sorts: key by key for an exercise set's or an inquiry's JSON, else line by line."""
+    if rel.endswith(KEYED_JSON) and a and b:
+        d = keyed_diff(a, b)
+        if d is not None: return d
+    return list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), lineterm="", n=2))
+
+
 def classify(path, diff_lines, lid):
     """Categories of one file's unified diff (its +/- lines)."""
     if path.startswith(("figure:", "a/figure:", "b/figure:")): return {"figure"}   # a referenced figure's drawing code
@@ -1757,9 +1799,9 @@ def changes(folder, base, part="lesson", split=False, new=None):
         moved = relocated(ra, rb) if rel.endswith("inquiry.json") and ra and rb else None
         if moved is not None:                          # the moved text is "relocated"; whatever else changed is classified as usual
             cats.add("relocated"); a2 = _view(moved, rel, False)
-            cats |= classify(rel, list(difflib.unified_diff(a2.splitlines(), b.splitlines(), lineterm="", n=2)), folder.name) if a2 != b else set()
-        elif goals is not None: cats |= classify(rel, list(difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=2)), folder.name)
-        else: cats |= classify(rel, lines, folder.name)
+            cats |= classify(rel, _class_diff(rel, a2, b), folder.name) if a2 != b else set()
+        elif goals is not None: cats |= classify(rel, _class_diff(rel, a, b), folder.name)
+        else: cats |= classify(rel, _class_diff(rel, a, b) if a and b else lines, folder.name)
         n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---")))
         diff += lines
     if part == "exercises" and not split and diff and added_exercises(folder, old, new): cats = {"added-exercise"}   # the diff stays whole, for the packet
