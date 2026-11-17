@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 56f61bb434bbcc6b
+CONTENT-HASH: 599e18e38085bad0
+SCOPE: delta added-exercise from 56f61bb434bbcc6b base 5b3ca4f81c77
 
 ## Blocking
 (none)
 
 ## Polish
-- content/fi/FY8/fy8-5/exercises/solutions.md:223 (unchanged line beside the diff) — "kuten kuvun lukumäärän mukaan pitääkin" should be plural — "kuten kupujen lukumäärän mukaan pitääkin".
-- content/fi/FY8/fy8-5/exercises/solutions.md:101 — "(UVA)"; the chapter *Valosähköinen ilmiö ja fotoni* writes "UV-A" — use one spelling in the module: "ultraviolettialueella (UV-A)".
+- solutions.md, fy8-5-L2-09 Järkevyys/Reasonableness — the 656 nm and 1,89 eV of the 3 to 2 line are quoted without a calculation; a student cannot check them from the task. Add 13,6 (1/4 - 1/9) = 1,89 eV or drop the comparison.
+- fy8-5-L2-09 repeats the L2-01 / L3-04 method (photon energy from level difference, then wavelength); it earns its place through the figure reading and the degeneracy part c), but keep it out of the core set.
+- fy8-5-L2-08 solution: part c) has no own labelled line; the result sits under Vastaus/Answer only. Add "c) 10 elektronia" after b) so a), b), c) match the task.
+
 
 ## Checked
-- solutions.md:101 Järkevyys: "juuri näkyvän alueen alapuolella, lähellä ultraviolettia" → "juuri näkyvän alueen ulkopuolella, ultraviolettialueella (UVA)". The old wording was ambiguous ("alapuolella" in wavelength or in energy?) and said "near ultraviolet" of a wavelength, $365\,\text{nm}$, that is ultraviolet. The new sentence agrees with the answer and with the next sentence (longer-wavelength visible light does not ionise from $n = 2$).
-- The check still reasons from the photon energy $3{,}4\,\text{eV}$ compared with violet light, so a student can follow why the result is plausible.
-- solutions.md:222 (fy8-5-L3-01 c): "kuvuja" → "kupuja" is the correct plural partitive (kupu : kuvun : kupuja) and matches "kupua" in the figure description.
-- No number, symbol or step changed in either hunk; exercises.json only re-broken chains.
-- Figure `fy8-5/string` and its description untouched; the task still needs it and it does not give the frequencies away.
-- Method: text diff in context; captures not needed for wording corrections.
+- L2-08: level 2 fits (read three nodes from the figure, explain a node, count orbitals); the figure is needed for a) and for the 2p count, and the task text states "one of three 2p" so the count has no hidden trap.
+- L2-08 b) asks the node misconception (electron "passes through" the node) and the solution rebuts the path picture; not a repeat of L2-06 (string nodes) or L2-07 (boundary as wall).
+- L2-09: arithmetic checked (2,55 eV, 4,085e-19 J, hc 1,9865e-25, 486 nm); 4s to 2p and 4d to 2p both obey Delta l = 1, so part c) is physically sound.
+- L2-09 c) asks for a justification from "depends only on n", which the lesson formula supports; the figure and its description give the energies without the wavelength.
+- Situation first, question last, answer box named in its own sentence; constants and conversion given; unit nm/kpl matches the answer.
+- Solutions follow the step order (Annettu to Järkevyys), principle explained, nothing skipped; Finnish case forms correct.
+- Whole set: L2 now 9 tasks (kinds graph, data, error, concept, model); progression and mix are fine; level 2 is heavier than the plan's 4 but within the stated minimum.
+- Method: text from the packet; captures not opened (figure descriptions suffice, layout tests green).
