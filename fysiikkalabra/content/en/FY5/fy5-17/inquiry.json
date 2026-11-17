@@ -24,19 +24,19 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review: wavelength",
-      "prompt": "A bat sends out a call with a frequency of $40\\,\\text{kHz}$. Sound travels in air at a speed of $343\\,\\text{m/s}$. What is the wavelength of the call?",
+      "prompt": "The probe sends ultrasound with a frequency of $2.5\\,\\text{MHz}$ into the body. Sound travels in soft tissue at a speed of $1540\\,\\text{m/s}$. What is the wavelength of the ultrasound in the tissue?",
       "choices": [
         {
-          "text": "about $8.6\\,\\text{mm}$",
+          "text": "about $0.62\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0.0086\\,\\text{m}$ (chapter *How waves form and travel*). The wavelength is of the same order of magnitude as the size of an insect, and this explains why bats use ultrasound."
+          "feedback": "Correct. From the equation $v = f\\lambda$ we get $$\\begin{aligned} \\lambda &= \\frac{v}{f} \\\\ &= \\frac{1540\\,\\text{m/s}}{2.5 \\cdot 10^{6}\\,\\text{Hz}} \\\\ &\\approx 0.00062\\,\\text{m} \\end{aligned}$$ (chapter *How waves form and travel*). The wavelength is less than a millimetre. Today we see how the wavelength limits how small details show in the image."
         },
         {
-          "text": "about $1.4 \\cdot 10^{7}\\,\\text{m}$",
+          "text": "about $3.9 \\cdot 10^{9}\\,\\text{m}$",
           "feedback": "You multiplied the speed by the frequency. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency, $\\lambda = \\tfrac{v}{f}$. A high frequency means a short wavelength, not a long one (chapter *How waves form and travel*)."
         },
         {
-          "text": "about $117\\,\\text{m}$",
+          "text": "about $1.6 \\cdot 10^{3}\\,\\text{m}$",
           "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. The wavelength is $\\lambda = \\tfrac{v}{f}$: the speed divided by the frequency (chapter *How waves form and travel*)."
         }
       ]

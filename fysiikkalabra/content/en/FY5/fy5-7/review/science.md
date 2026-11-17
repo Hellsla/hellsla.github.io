@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a0a9a188acdab68e
+CONTENT-HASH: 29bb37a1d7b561d7
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The recap now uses the same numbers as the exit ticket ($T = 0.50\,\text{s}$, $f = 2.0\,\text{Hz}$); a different period would keep the exit ticket from repeating the recap. Not a physics issue.
 
 ## Checked
-full read of lesson text: f = 1/T, x = A sin(2 pi t/T), 2A between extremes, T = t_n/n, 3T = 3.6 s gives T = 1.2 s; worked example recomputed (T = 0.60 s, sin 2.618 = 0.500, x = 2.0 cm up; degrees give 0.046 and 0.18 cm); sine model stated for undamped small-angle cases; new pick-* descriptions match figures.py (A, T, first peak at T/4, crossings every T/2, count of oscillations in 2 s: 3 cm/0.50 s four, 1.5 cm four, 3 cm/1.0 s two, 3 cm/2.0 s one) and decimal points are English; swing photo caption correct (nearly equal intervals).
+batch delta review: new Pohdinta recap (weight returning to its lowest point every 0.50 s) recomputed: $1/T = 2.0\,\tfrac{1}{\text{s}}$, matches `kertaus-f`; exactly one correct option; both distractors' feedback says why they are wrong ($0.50\,\text{s}$ is the period, not a count per second; any repeating motion has a period and frequency); $f = 1/T$ consistent with the circular-motion chapter it cites; lesson-answers.py runs.

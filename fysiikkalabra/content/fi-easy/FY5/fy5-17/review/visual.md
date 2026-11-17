@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fd76165924d0d941
+CONTENT-HASH: 49f335afacf8dda4
 
 ## Blocking
 
 ## Polish
+- [Minor] The correct-feedback display aligned block is not in a capture; check it fits at 360 px (check_layout opens it).
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- batch delta review: stage-herata-390 (changed Kertaa task: MHz, 1540 m/s, powers of ten render correctly, options legible); diff read.

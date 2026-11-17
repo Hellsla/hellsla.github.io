@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cbd21990aa1f60e2
+CONTENT-HASH: 55eaaa9897e5d699
 
 ## Blocking
 
 ## Polish
+- [Minor] Option 'Noin 1,3 m' is capitalised while the other two are bare values; make all three consistent (e.g. all without 'Noin' or all lower-case 'noin').
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- batch delta review: stage-herata-390 (changed Kertaa task: units upright with thin space, options legible, harbour context matches Pohdinta); diff read.

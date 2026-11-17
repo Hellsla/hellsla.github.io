@@ -157,7 +157,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "The delay of the echo measured by the app at different distances, example data",
+        "caption": "The delay of the echo measured by the app at different distances",
         "columns": [
           "$d\\,(\\text{m})$",
           "$t\\,(\\text{s})$"
@@ -194,7 +194,7 @@
       "unit": "times",
       "tolerance": 0.02,
       "data": {
-        "caption": "The wave behind the gap at different gap widths, example data",
+        "caption": "The wave behind the gap at different gap widths",
         "columns": [
           "$b\\,(\\text{cm})$",
           "The wave behind the gap"
@@ -325,7 +325,7 @@
       "unit": "°",
       "tolerance": 0.02,
       "data": {
-        "caption": "The delay of the echo from the bottom, example data",
+        "caption": "The delay of the echo from the bottom",
         "columns": [
           "$x\\,(\\text{m})$",
           "$t\\,(\\text{ms})$"
@@ -371,7 +371,7 @@
       "unit": "times",
       "tolerance": 0.02,
       "data": {
-        "caption": "The frequencies of the broadcasts, example data",
+        "caption": "The frequencies of the broadcasts",
         "columns": [
           "Broadcast",
           "$f$"

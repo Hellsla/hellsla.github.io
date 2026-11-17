@@ -24,19 +24,19 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: aallonpituus",
-      "prompt": "Lepakko lähettää äännähdyksen, jonka taajuus on $40\\,\\text{kHz}$. Ääni etenee ilmassa nopeudella $343\\,\\text{m/s}$. Mikä on äännähdyksen aallonpituus?",
+      "prompt": "Anturi lähettää kehoon ultraääntä, jonka taajuus on $2{,}5\\,\\text{MHz}$. Ääni etenee pehmytkudoksessa nopeudella $1540\\,\\text{m/s}$. Mikä on ultraäänen aallonpituus kudoksessa?",
       "choices": [
         {
-          "text": "noin $8{,}6\\,\\text{mm}$",
+          "text": "noin $0{,}62\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{343\\,\\text{m/s}}{40\\,000\\,\\text{Hz}} \\approx 0{,}0086\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Aallonpituus on samaa suuruusluokkaa kuin hyönteisen koko, ja tämä selittää, miksi lepakot käyttävät ultraääntä."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $$\\begin{aligned} \\lambda &= \\frac{v}{f} \\\\ &= \\frac{1540\\,\\text{m/s}}{2{,}5 \\cdot 10^{6}\\,\\text{Hz}} \\\\ &\\approx 0{,}00062\\,\\text{m} \\end{aligned}$$ (luku *Aaltojen synty ja eteneminen*). Aallonpituus on alle millimetrin. Tänään nähdään, miten aallonpituus rajaa sitä, kuinka pieniä yksityiskohtia kuvassa erottuu."
         },
         {
-          "text": "noin $1{,}4 \\cdot 10^{7}\\,\\text{m}$",
+          "text": "noin $3{,}9 \\cdot 10^{9}\\,\\text{m}$",
           "feedback": "Kerroit nopeuden taajuudella. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella, $\\lambda = \\tfrac{v}{f}$. Suuri taajuus tarkoittaa lyhyttä aallonpituutta, ei pitkää (luku *Aaltojen synty ja eteneminen*)."
         },
         {
-          "text": "noin $117\\,\\text{m}$",
+          "text": "noin $1{,}6 \\cdot 10^{3}\\,\\text{m}$",
           "feedback": "Jaoit taajuuden nopeudella, ja tuloksen yksikkö on silloin $1/\\text{m}$, ei metri. Aallonpituus on $\\lambda = \\tfrac{v}{f}$: nopeus jaettuna taajuudella (luku *Aaltojen synty ja eteneminen*)."
         }
       ]

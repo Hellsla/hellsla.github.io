@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ab7261e635c0a9cd
+CONTENT-HASH: 483576fe55c9f08f
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md:19 (fy5-s1 b, **Sijoitus**; captures easy-390-470880Nm-1, easy-1280-470880Nm-1) — the sum is three consecutive inline formulas and wraps before the second at both widths, so a line begins "−470 880 Nm= 1 012 020 Nm": the minus is set as a sign (no space after it) and "=" has no space before it — readable in context, the known join spacing — begin the pieces with `{}-` and `{}=` so KaTeX sets binary and relation spacing.
-- [Minor] task-card rubric formulas (tasks.json details) are centred in their box while the solution's display formulas are left-aligned — shared style, not from this change.
+- [Minor] solutions.md c-kohdan "Leikkauskohdasta saadaan lisämassa $$…$$. Se on noin kolmasosa…" and the Io velocity "Esimerkiksi Iolle $$…$$. Siitä saadaan…" — display maths inside a sentence followed by ". Capital" reads as a new sentence after a loose formula; the build moves the full stop into the maths and the fi page reads well, so this is only a style note — optionally write "…$$, mikä on noin kolmasosa jousen massasta."
+- [Minor] fi-easy split paragraphs: some new paragraphs are two or three short sentences ("Kallistuminen siirtää kuormaa vain senttejä. Ympyrän säteenä voi siis käyttää…"). They are fine as steps, but they do not all follow the Periaate/Kaava/Sijoitus labels; acceptable for the simpler language.
 
 ## Checked
-- ROUND 3. Re-break review of the diff against origin/main (solutions.md 11 formulas, tasks.json 3); the page outside the changed formulas was not re-judged (passed on main). The standard captures are stale and were not regenerated: per the round brief I made my own of the current preview page.
-- Own captures of preview/fi-easy/FY5-sovella.html with ?ratkaisut=1 and every details box open, 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-sk/: easy-{390,1280}-470880Nm-0 and -1, -882_9kNm_470_9-0, -2000kg_9_81-0, -600kNm_412-0 (three formulas), -600000Nm_9_81-0, -421_8-1, -160000km-0 and -1, -0_028s_2_1_984-0, -k_mgx-0, -0_265kg_19_9-0, -mgrmax_mpgrp-1, -335_8-1.
-- Read on the sheets sheet-easy-390-a, sheet-easy-390-b, s58-easy-1280-a, s58-easy-1280-b, each larger than device size.
-- Round 2 item is fixed: no third column; the sentence comma or full stop sits directly after the last quantity of the block at both widths.
-- Every row starts with a relation or a whole quantity; no break inside a quantity; equals signs in one column in the labelled chains; units upright, thin spaces, decimal mark intact, colon division kept.
-- Measured in the same run: no display formula wider than its box, no page overflow at 390 or 1280 px.
-- Wide screen: one-relation blocks join to one row; labelled chains keep their rows. Not a finding.
-- Hash the same at the start and the end.
+- Source diff `git diff 2dc38e00^ -- content/fi-easy/FY5/sovella` (solutions.md paragraph splits, three tasks.json text splits with `\n\n`).
+- Freshly built site/FY5-sovella.html (fi), read as HTML structure only: split paragraphs become separate `<p>`; display maths, aligned chains and the `\text{,}` / `\text{.}` punctuation handling are intact. I opened no screenshot; no screenshot or image was opened for this delta. This is a text-only paragraph split, with no figure, table or maths change, so no capture was needed for judgement.
+- Every split sits at a sentence boundary; no inline maths or unit is cut; LaTeX units and the decimal comma are unchanged. No plain-text quantity was added.
+- The set's figures were not in the diff and were not re-reviewed.
+- The fi-easy page (site/fi-easy/FY5-sovella.html) does not exist, as expected for a draft set.
+- Hash at start and end: 483576fe55c9f08f.
 
 ## Scores
-illustrations 4 (not re-judged) · typography 4 · Finnish 4 (not re-judged) · accessibility 4
+illustrations 4 (not in the diff) · typography 4 · Finnish 4 · accessibility 4

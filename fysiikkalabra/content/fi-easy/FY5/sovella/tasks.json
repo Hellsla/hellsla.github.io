@@ -97,7 +97,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Kuljettaja kääntää puomia a-kohdan kuorman kanssa tasaisesti. Yksi kierros kestäisi $90\\,\\text{s}$. Kuorma roikkuu $15\\,\\text{m}$:n vaijerissa. Vaijeri kallistuu hieman pystysuorasta, ja kuorma on vaunua kauempana tornin akselista. Kuljettaja selittää: ”Keskipakoisvoima heittää kuorman ulospäin.” Piirrä kuorman voimakuvio puomin kääntyessä tasaisesti ja arvioi kuljettajan selitystä.",
+          "text": "Kuljettaja kääntää puomia a-kohdan kuorman kanssa tasaisesti. Yksi kierros kestäisi $90\\,\\text{s}$. Kuorma roikkuu $15\\,\\text{m}$:n vaijerissa. Vaijeri kallistuu hieman pystysuorasta, ja kuorma on vaunua kauempana tornin akselista.\n\nKuljettaja selittää: ”Keskipakoisvoima heittää kuorman ulospäin.”\n\nPiirrä kuorman voimakuvio puomin kääntyessä tasaisesti ja arvioi kuljettajan selitystä.",
           "criteria": [
             {
               "key": "fbd_forces",
@@ -232,7 +232,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "Jupiter pyörähtää akselinsa ympäri kerran $9{,}93\\,\\text{h}$:ssa. Jupiter ei ole kiinteä kappale. Sen pilvivyöhykkeet kiertävät hieman eri tahdissa. Oletetaan, että tarkasteltava päiväntasaajan pilvimuodostelma kiertää Jupiterin akselin ympäri juuri tällä $9{,}93\\,\\text{h}$:n jaksolla. Luotain halutaan kiertämään päiväntasaajan yläpuolella ympyrärataa niin, että se pysyy koko ajan tämän pilvimuodostelman yläpuolella. Kuinka kaukana Jupiterin keskipisteestä luotaimen rata on?",
+          "text": "Jupiter pyörähtää akselinsa ympäri kerran $9{,}93\\,\\text{h}$:ssa. Jupiter ei ole kiinteä kappale. Sen pilvivyöhykkeet kiertävät hieman eri tahdissa.\n\nOletetaan, että tarkasteltava päiväntasaajan pilvimuodostelma kiertää Jupiterin akselin ympäri juuri tällä $9{,}93\\,\\text{h}$:n jaksolla. Luotain halutaan kiertämään päiväntasaajan yläpuolella ympyrärataa niin, että se pysyy koko ajan tämän pilvimuodostelman yläpuolella.\n\nKuinka kaukana Jupiterin keskipisteestä luotaimen rata on?",
           "answer": {
             "value": 160000,
             "unit": "km",
@@ -520,7 +520,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "Pillien edessä $4{,}0\\,\\text{m}$:n etäisyydellä mitattiin urkujen soidessa täysillä melumittarilla äänitasoksi $88\\,\\text{dB}$. Urkuri istuu $2{,}0\\,\\text{m}$:n päässä pilleistä ja harjoittelee kolme tuntia päivässä. Oleta, että urut säteilevät äänen tasaisesti joka suuntaan yhdestä pisteestä. Oleta myös, että ääni etenee vapaasti ilman heijastuksia. Silloin äänitasoa voi käsitellä intensiteettitasona. Urut soivat koko harjoituksen ajan yhtä voimakkaasti. Arvioi, kuinka pitkässä ajassa urkurille kertyy sama energia-annos kuin kahdeksassa tunnissa työmelun ylemmän toiminta-arvon $85\\,\\text{dB}$ tasolla. Jääkö kolmen tunnin harjoituksen annos tätä vertailuannosta pienemmäksi?",
+          "text": "Pillien edessä $4{,}0\\,\\text{m}$:n etäisyydellä mitattiin urkujen soidessa täysillä melumittarilla äänitasoksi $88\\,\\text{dB}$. Urkuri istuu $2{,}0\\,\\text{m}$:n päässä pilleistä ja harjoittelee kolme tuntia päivässä.\n\nOleta, että urut säteilevät äänen tasaisesti joka suuntaan yhdestä pisteestä. Oleta myös, että ääni etenee vapaasti ilman heijastuksia. Silloin äänitasoa voi käsitellä intensiteettitasona. Urut soivat koko harjoituksen ajan yhtä voimakkaasti.\n\nArvioi, kuinka pitkässä ajassa urkurille kertyy sama energia-annos kuin kahdeksassa tunnissa työmelun ylemmän toiminta-arvon $85\\,\\text{dB}$ tasolla. Jääkö kolmen tunnin harjoituksen annos tätä vertailuannosta pienemmäksi?",
           "answer": {
             "value": 1.0,
             "unit": "h",
