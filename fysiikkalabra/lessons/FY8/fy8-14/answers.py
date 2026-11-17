@@ -32,4 +32,9 @@ A_inj = A_scan / 0.5 ** (60 / 110)                        # F-18 T½ 110 min, 60
 a["fy8-14-L3-04"] = 0.019 * A_inj + 6.0                   # 4,16 mSv + 6,0 mSv CT = 10,16 mSv -> 10 mSv
 d_half = 20.0 * math.log(2) / math.log(1006 / 221)        # L3-05: calibration end points: d½ = 9,147 mm (ratios 0,685 0,679 0,699 0,676)
 a["fy8-14-L3-05"] = d_half * math.log2(1006 / 402)        # R = 402 1/s: 9,147 mm · 1,3236 = 12,11 mm -> 12 mm
+# Figure tasks (kuvatehtävät; figures fy8-14/kontrasti-points and fy8-14/fdg, same data as figures.py)
+I_tissue = 0.5 ** (5.0 / 3.4)                             # L2-08: 5,0 cm soft tissue, d½ 3,4 cm: I/I0 = 0,3608 (read from the graph about 0,36)
+a["fy8-14-L2-08"] = 1.1 * math.log2(1 / I_tissue)         # bone d½ 1,1 cm: d = 1,1 cm · 1,4706 = 1,618 cm -> 1,6 cm
+T_f18, A_fdg0 = 110.0, 480.0                              # L2-09: FDG syringe from 480 MBq, d½ read from the graph 110 min
+a["fy8-14-L2-09"] = T_f18 * math.log2(A_fdg0 / 60.0)      # down to 60 MBq: 3 half-lives = 330 min (graph check: 480 -> 60 at 330 min)
 print(json.dumps({k: float(f"{v:.6g}") for k, v in a.items()}))

@@ -228,3 +228,48 @@ Koska $\dfrac{1}{\left(\tfrac{1}{2}\right)^{n}} = 2^{n}$, saadaan
 $$A_0 = A \cdot 2^{t/T_{1/2}}$$
 
 Oikea lauseke on siis $A_0 = A \cdot 2^{t/T_{1/2}}$. Tarkistus: fluori-$18$:n puoliintumisaika on noin $110\,\text{min}$. Esimerkiksi kuljetuksessa, joka kestää $330\,\text{min}$, aktiivisuus puolittuu kolmesti, ja lähtiessä tarvitaan $2^{3} = 8$ kertaa aktiivisuus $A$. Tasaisen muutoksen lauseke antaisi vain $\tfrac{2 \cdot 330}{110} = 6$ kertaa $A$. Väärät lausekkeet: $A \cdot \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ on pienempi kuin $A$, joten siinä hajoamislakia on käytetty väärään suuntaan. Lausekkeessa $A \cdot 2^{T_{1/2}/t}$ eksponentti on käännetty, ja se pienenisi kuljetusajan kasvaessa. Lauseke $A \cdot \tfrac{2t}{T_{1/2}}$ olettaa aktiivisuuden muuttuvan tasaisesti, ja ajalla $t = 0$ se antaisi nollan.
+
+## fy8-14-L2-08
+**Annettu:** kuvaaja: läpi päässyt osuus $I : I_0$ pehmytkudoksessa ja luussa paksuuden funktiona (noin $60\,\text{keV}$), pehmytkudoksen paksuus $d_\text{kudos} = 5{,}0\,\text{cm}$
+**Kysytty:** a) läpi päässyt osuus $I : I_0$ paksuudella $5{,}0\,\text{cm}$, b) puoliintumispaksuudet $d_{1/2}^\text{kudos}$ ja $d_{1/2}^\text{luu}$, c) luukerroksen paksuus $d_\text{luu}$ senttimetreinä
+**Periaate:** Kerros päästää läpi osuuden $\left(\tfrac{1}{2}\right)^{n}$, missä $n$ on paksuus puoliintumispaksuuksina. Kaksi kerrosta päästää läpi yhtä suuren osuuden, kun niiden $n$ on sama.
+**Kuvaajan lukeminen:** Kohdassa $d = 5{,}0\,\text{cm}$ pehmytkudoksen käyrä on arvon $0{,}35$ ja $0{,}40$ välissä, noin $0{,}36$. Pehmytkudoksen käyrä on arvossa $0{,}5$ eli puolessa alkuarvosta kohdassa $d = 3{,}4\,\text{cm}$, joten $d_{1/2}^\text{kudos} = 3{,}4\,\text{cm}$. Luun käyrä on arvossa $0{,}5$ kohdassa $d = 1{,}1\,\text{cm}$, joten $d_{1/2}^\text{luu} = 1{,}1\,\text{cm}$.
+**Kaava:** Vaaditaan, että osuudet ovat yhtä suuret: $\left(\tfrac{1}{2}\right)^{n_\text{luu}} = \left(\tfrac{1}{2}\right)^{n_\text{kudos}}$, joten $n_\text{luu} = n_\text{kudos}$ eli $d_\text{luu} : d_{1/2}^\text{luu} = d_\text{kudos} : d_{1/2}^\text{kudos}$. Ratkaistaan
+
+$$d_\text{luu} = d_\text{kudos} \cdot \frac{d_{1/2}^\text{luu}}{d_{1/2}^\text{kudos}}$$
+
+**Muunnokset:** Ei tarvita: kaikki paksuudet ovat senttimetreinä.
+**Sijoitus:**
+$$
+\begin{aligned}
+&d_\text{luu} = d_\text{kudos} \cdot \frac{d_{1/2}^\text{luu}}{d_{1/2}^\text{kudos}} \\
+&= 5{,}0\,\text{cm} \cdot \frac{1{,}1\,\text{cm}}{3{,}4\,\text{cm}} \\
+&= 5{,}0\,\text{cm} \cdot 0{,}3235 \\
+&= 1{,}618\,\text{cm}
+\end{aligned}
+$$
+**Vastaus:** c) $d_\text{luu} = 1{,}6\,\text{cm}$, kaksi merkitsevää numeroa kuten paksuudessa $5{,}0\,\text{cm}$ ja puoliintumispaksuuksissa. Kuvaajasta: luun käyrä on arvossa $0{,}36$ kohdassa $d \approx 1{,}6\,\text{cm}$, joten tulokset täsmäävät.
+**Järkevyys:** Luu vaimentaa noin kolme kertaa enemmän kuin pehmytkudos ($3{,}4 : 1{,}1 = 3{,}1$), joten luukerroksen pitää olla noin kolmasosa pehmytkudoskerroksen paksuudesta: $5{,}0\,\text{cm} : 3{,}1 = 1{,}6\,\text{cm}$.
+
+## fy8-14-L2-09
+**Annettu:** kuvaaja: FDG-ruiskun aktiivisuus ajan funktiona, raja-aktiivisuus $A = 60\,\text{MBq}$
+**Kysytty:** a) alkuaktiivisuus $A_0$ ja puoliintumisaika $T_{1/2}$, b) aika $t$ minuutteina, jolloin aktiivisuus on $60\,\text{MBq}$, c) tarkistus kuvaajasta
+**Periaate:** Radioaktiivisen aineen aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa, joten kuvaaja on käyrä, joka laskee yhä loivemmin. Oletuksen mukaan aktiivisuus pienenee vain hajoamisen takia, joten hajoamislaki pätee.
+**Kuvaajan lukeminen:** Hetkellä $t = 0$ käyrä alkaa arvosta $A_0 = 480\,\text{MBq}$. Puolet alkuarvosta, $240\,\text{MBq}$, saavutetaan kohdassa $t = 110\,\text{min}$ (ruudukon viivojen $100\,\text{min}$ ja $120\,\text{min}$ välissä), joten $T_{1/2} = 110\,\text{min}$.
+**Kaava:** Hajoamislaki $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. Kun jaetaan alkuaktiivisuudella ja otetaan kaksikantainen logaritmi, saadaan $\dfrac{t}{T_{1/2}} = \log_2 \dfrac{A_0}{A}$, joten
+
+$$t = T_{1/2} \cdot \log_2 \frac{A_0}{A}$$
+
+**Muunnokset:** Ei tarvita: puoliintumisaika on minuutteina ja aktiivisuudet megabecquereleinä, joten suhde $A_0 : A$ on luku.
+**Sijoitus:**
+$$
+\begin{aligned}
+&t = T_{1/2} \cdot \log_2 \frac{A_0}{A} \\
+&= 110\,\text{min} \cdot \log_2 \frac{480\,\text{MBq}}{60\,\text{MBq}} \\
+&= 110\,\text{min} \cdot \log_2 8 \\
+&= 110\,\text{min} \cdot 3 \\
+&= 330\,\text{min}
+\end{aligned}
+$$
+**Vastaus:** b) $t = 330\,\text{min}$ eli $5{,}5\,\text{h}$, kolme merkitsevää numeroa kuten luetussa puoliintumisajassa. Kohdassa c) käyrä on kohdassa $t = 330\,\text{min}$ arvossa $60\,\text{MBq}$ (kolme puoliintumisaikaa: $480 \to 240 \to 120 \to 60$), joten tulokset täsmäävät.
+**Järkevyys:** Aktiivisuus pienenee suhteeseen $60 : 480 = 1 : 8 = \left(\tfrac{1}{2}\right)^3$, joten tarvitaan kolme puoliintumisaikaa. Aika $330\,\text{min}$ on kolme kertaa $110\,\text{min}$.
