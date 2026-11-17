@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b429d51623efdb2c
+CONTENT-HASH: ef590b3be059e98f
 
 ## Blocking
+- None.
 
 ## Polish
-None.
+- None.
 
 ## Checked
-Batch delta review: the kertaus choice (the carousel, Aino at r = 2,0 m) recomputed: 2πr = 12,57 m ≈ 13 m correct; πr = 6,3 m and d = 4,0 m wrong, with correct feedback; Eetu is in the hook, so the feedback's reference holds; the new photo's caption (same revolution time everywhere, longer path at the rim) is correct; lesson-answers.py agrees; the paragraph split changes no physics.
+batch delta review (fi-easy, round 2): The kertaus choice now uses a smaller roundabout, r = 1,5 m. Recomputed: 2 pi r = 9,42 m -> 'noin 9,4 m' (two figures as the data); pi r = 4,71 m -> 4,7 m; diameter 3,0 m. Exactly one correct option; each distractor's feedback says why it is wrong (half a revolution; the diameter is the straight chord, the circumference is pi times it). It no longer gives Aino's 2,0 m path, so Ennuste 2 (speed ratio 2) is not answered in advance. lesson-answers.py kertaus-s/-pir/-d match.

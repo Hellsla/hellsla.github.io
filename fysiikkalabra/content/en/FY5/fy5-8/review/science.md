@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e19609b31095853b
+CONTENT-HASH: a135970976a541c6
 
 ## Blocking
-- none
+- None.
 
 ## Polish
-- none
+- None.
 
 ## Checked
-batch delta review: kertaus now the hook's pinball plunger: hand pulls knob back with 5.0 N, held still; third-law partner, knob on hand, 5.0 N forwards, correct; 'no force', 'backwards', 'smaller' distractors wrong and their feedback keeps the knob/hand pair apart from the forces balancing on the knob.
+batch delta review (en, round 2): The kertaus choice now asks only the magnitude of the knob's force on the hand. By Newton's third law it is 5,0 N regardless of rest or the spring; exactly one option correct. Distractors: none (knob at rest), smaller and larger because of the spring: all really wrong, and their feedback correctly says the interaction forces are equal in magnitude (the rest only makes the forces on the knob cancel). Removing the direction no longer pre-answers Ennuste 1 (direction of the spring force). The correct option's feedback keeps 'equal and opposite', consistent with fy4 Newton's laws chapter. No numbers in lesson-answers.py for this item.

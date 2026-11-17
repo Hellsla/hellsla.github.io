@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9c40ee80afac4457
+CONTENT-HASH: fcd2f4b3d829db74
 
 ## Blocking
-- none
+- None.
 
 ## Polish
-- none
+- None.
 
 ## Checked
-batch delta review: kertaus on the hook's roundabout, Aino at r = 2.0 m: 2 pi r = 12.57 -> 'about 13 m' (2 s.f.), pi r = 6.3 m and diameter 4.0 m distractors correctly explained; lesson-answers match; new photo caption (same period, longer path at the edge) and the teacher-approved figure text (A 0.60 m, B 1.80 m, edge 2.00 m) consistent.
+batch delta review (en, round 2): The kertaus choice now uses a smaller roundabout, r = 1,5 m. Recomputed: 2 pi r = 9,42 m -> 'noin 9,4 m' (two figures as the data); pi r = 4,71 m -> 4,7 m; diameter 3,0 m. Exactly one correct option; each distractor's feedback says why it is wrong (half a revolution; the diameter is the straight chord, the circumference is pi times it). It no longer gives Aino's 2,0 m path, so Ennuste 2 (speed ratio 2) is not answered in advance. lesson-answers.py kertaus-s/-pir/-d match.

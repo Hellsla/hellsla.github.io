@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1fc44c75a918efaa
+CONTENT-HASH: 1bc36482a9ab0633
 
 ## Blocking
+- None.
 
 ## Polish
-None.
+- None.
 
 ## Checked
-Batch delta review: the kertaus choice (pinball plunger, the hand pulls the knob back with 5,0 N, held still): by the third law the knob pulls the hand forward with 5,0 N, the single correct option; the 'no force', 'backward' and 'smaller' distractors are wrong and the feedback says why (a compressed plunger spring is right); the worked example's paragraph split changes no physics.
+batch delta review (fi-easy, round 2): The kertaus choice now asks only the magnitude of the knob's force on the hand. By Newton's third law it is 5,0 N regardless of rest or the spring; exactly one option correct. Distractors: none (knob at rest), smaller and larger because of the spring: all really wrong, and their feedback correctly says the interaction forces are equal in magnitude (the rest only makes the forces on the knob cancel). Removing the direction no longer pre-answers Ennuste 1 (direction of the spring force). The correct option's feedback keeps 'equal and opposite', consistent with fy4 Newton's laws chapter. No numbers in lesson-answers.py for this item.

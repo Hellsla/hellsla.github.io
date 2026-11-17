@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 64c93d72afaf7873
+CONTENT-HASH: b7a89bc8b349b3a7
 
 ## Blocking
+- None.
 
 ## Polish
-- Same mid-sentence $$…$$ block in the correct feedback as fy5-1 (typography).
+- None.
 
 ## Checked
-batch delta review: Kertaus: s = 2πr = 2π·2,0 m = 12,57 ≈ 13 m (two figures as in 2,0 m); distractors πr = 6,28 m and diameter 4,0 m wrong, feedback correct; one correct option; consistent with the hook (Aino at the rim, Eetu at the pole). Added photo caption (same rotation time everywhere, longer path at the rim) is correct. lesson-answers.py agrees.
+batch delta review (fi, round 2): The kertaus choice now uses a smaller roundabout, r = 1,5 m. Recomputed: 2 pi r = 9,42 m -> 'noin 9,4 m' (two figures as the data); pi r = 4,71 m -> 4,7 m; diameter 3,0 m. Exactly one correct option; each distractor's feedback says why it is wrong (half a revolution; the diameter is the straight chord, the circumference is pi times it). It no longer gives Aino's 2,0 m path, so Ennuste 2 (speed ratio 2) is not answered in advance. lesson-answers.py kertaus-s/-pir/-d match.
