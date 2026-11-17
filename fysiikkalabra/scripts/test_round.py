@@ -21,6 +21,21 @@ res, _ = rnd.parse_carry(["science: full review needed", "pedagogy: delta review
                           "fy0-1: draft (science=stale, pedagogy=stale, visual=PASS)"])
 check(res == {"science": ("full", False), "pedagogy": ("delta", False), "visual": ("none", False)}, "parse_carry: stale reviews are needed with their mode")
 
+# 3. preflight (work queue 0d): missing packages are named with the install command, a shallow clone is deepened
+import unittest.mock as mock
+with mock.patch.object(rnd, "missing_packages", return_value=(["markdown"], [])), mock.patch.object(rnd, "shallow", return_value=False):
+    check(rnd.preflight() == 1, "preflight: a missing package stops the round")
+calls = []
+def fake_run(args, **kw):
+    calls.append(args); return subprocess.CompletedProcess(args, 0, "", "")
+states = iter([True, False])
+with mock.patch.object(rnd, "missing_packages", return_value=([], [])), mock.patch.object(rnd, "shallow", side_effect=lambda: next(states)), mock.patch.object(rnd.subprocess, "run", fake_run):
+    check(rnd.preflight() == 0 and calls == [["git", "fetch", "--unshallow", "origin"]], "preflight: a shallow clone is deepened with git fetch --unshallow")
+with mock.patch.object(rnd, "missing_packages", return_value=([], [])), mock.patch.object(rnd, "shallow", return_value=True), mock.patch.object(rnd.subprocess, "run", fake_run):
+    check(rnd.preflight() == 1, "preflight: a failed unshallow stops the round")
+with mock.patch.object(rnd, "missing_packages", return_value=([], [])), mock.patch.object(rnd, "shallow", return_value=False):
+    check(rnd.preflight() == 0, "preflight: nothing to do in a complete clone")
+
 lid = "fy8-8"
 for lang in rnd.languages(lid, []):
     for part in ("lesson", "exercises"):
