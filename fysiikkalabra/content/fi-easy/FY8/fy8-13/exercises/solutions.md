@@ -310,7 +310,7 @@ $$
 \end{aligned}
 $$
 **Vastaus:** b) $15\,\mu\text{Sv/h}$, kaksi merkitsevää numeroa kuten lähtöarvossa $80\,\mu\text{Sv/h}$ ja puoliintumispaksuudessa $5{,}0\,\text{cm}$. Kohdassa c) kuvaajasta luettu arvo on noin $15\,\mu\text{Sv/h}$, joten tulokset täsmäävät.
-**Järkevyys:** Paksuudella $10\,\text{cm}$ annosnopeus on $20\,\mu\text{Sv/h}$ ja paksuudella $15\,\text{cm}$ se on $10\,\mu\text{Sv/h}$. Paksuus $12\,\text{cm}$ on näiden välissä, joten tuloksen pitää olla välillä $10\ldots20\,\mu\text{Sv/h}$; kuvaaja on kupera, joten arvo on hieman välin keskikohdan ($15\,\mu\text{Sv/h}$) yläpuolella, ja tulos $15\,\mu\text{Sv/h}$ on järkevä.
+**Järkevyys:** Paksuudella $10\,\text{cm}$ annosnopeus on $20\,\mu\text{Sv/h}$ ja paksuudella $15\,\text{cm}$ se on $10\,\mu\text{Sv/h}$. Paksuus $12\,\text{cm}$ on näiden välissä lähempänä $10\,\text{cm}$:ä, joten suora interpolointi antaisi noin $16\,\mu\text{Sv/h}$. Kuvaaja on kupera ja kulkee janan alapuolella, joten arvo on hieman pienempi, ja tulos $15\,\mu\text{Sv/h}$ on järkevä.
 
 ## fy8-13-L3-06
 **Annettu:** kuvaaja: annosnopeus betoniseinän takana paksuuden funktiona, seinän paksuus $d = 20\,\text{cm}$, annosrajoite $H = 20\,\mu\text{Sv}$, vuoron pituus $8\,\text{h}$
