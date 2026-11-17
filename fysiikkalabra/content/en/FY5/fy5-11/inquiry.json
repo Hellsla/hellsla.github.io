@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review: wavelength and frequency",
-      "prompt": "The waves coming in from the open sea travel at a speed of $5.0\\,\\text{m/s}$, and wave crests hit the breakwater at a frequency of $0.25\\,\\text{Hz}$. What is the wavelength of the waves?",
+      "prompt": "The wave maker of a ripple tank makes waves at a frequency of $10\\,\\text{Hz}$, and the waves travel at a speed of $0.20\\,\\text{m/s}$. The frequency of the wave maker is doubled, and the speed of the waves stays the same. What happens to the wavelength?",
       "choices": [
         {
-          "text": "$20\\,\\text{m}$",
+          "text": "The wavelength is halved.",
           "correct": true,
-          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{5.0\\,\\text{m/s}}{0.25\\,\\text{Hz}} = 20\\,\\text{m}$ (chapter *How waves form and travel*). You need the wavelength today, when the size of a wave is compared with the width of the gap."
+          "feedback": "Correct. When $v = f\\lambda$ and the speed stays the same, $\\lambda = \\tfrac{v}{f}$ is halved when $f$ doubles: from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *How waves form and travel*). You need the wavelength today, when the size of a wave is compared with the width of a slit."
         },
         {
-          "text": "About $1.3\\,\\text{m}$",
-          "feedback": "You multiplied the speed by the frequency. The unit of the product is $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{1}{\\text{s}} = \\tfrac{\\text{m}}{\\text{s}^2}$, not metres. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency: $\\lambda = \\tfrac{v}{f} = 20\\,\\text{m}$ (chapter *How waves form and travel*)."
+          "text": "The wavelength doubles.",
+          "feedback": "The frequency tells how many crests leave per second. When crests leave twice as often at the same speed, they are closer to each other: $\\lambda = \\tfrac{v}{f}$ decreases from $2.0\\,\\text{cm}$ to $1.0\\,\\text{cm}$ (chapter *How waves form and travel*)."
         },
         {
-          "text": "$0.050\\,\\text{m}$",
-          "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. The wavelength is $\\lambda = \\tfrac{v}{f}$: the speed divided by the frequency, $20\\,\\text{m}$."
+          "text": "The wavelength stays the same, because the speed of the wave does not change.",
+          "feedback": "The speed does not change, but the equation $v = f\\lambda$ has two other quantities. If $f$ doubles and $v$ stays the same, $\\lambda$ must be halved: $\\lambda = \\tfrac{0.20\\,\\text{m/s}}{20\\,\\text{Hz}} = 1.0\\,\\text{cm}$."
         }
       ]
     },

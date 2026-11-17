@@ -24,20 +24,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: ympyrän kehän pituus",
-      "prompt": "Karuselli pyörii tasaisesti, ja Aino seisoo sen reunalla $2{,}0\\,\\text{m}$:n päässä keskipisteestä. Kuinka pitkän matkan Aino kulkee yhden kierroksen aikana?",
+      "prompt": "Leikkikentän pienemmän karusellin säde on $1{,}5\\,\\text{m}$. Kuinka pitkän matkan sen reunalla seisova lapsi kulkee yhden kierroksen aikana?",
       "choices": [
         {
-          "text": "Noin $13\\,\\text{m}$, koska ympyrän kehän pituus on $2\\pi r$.",
+          "text": "Noin $9{,}4\\,\\text{m}$, koska ympyrän kehän pituus on $2\\pi r$.",
           "correct": true,
-          "feedback": "Oikein. Yhdellä kierroksella Aino kiertää kerran ympyrän kehän: $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 2{,}0\\,\\text{m} \\\\ &\\approx 13\\,\\text{m} \\end{aligned}$$. Keskitangon vieressä Eetu kulkee samassa ajassa paljon lyhyemmän matkan. Tänään selvitetään, mitä tämä merkitsee heidän nopeuksilleen."
+          "feedback": "Oikein. Yhdellä kierroksella lapsi kiertää kerran ympyrän kehän, joten $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 1{,}5\\,\\text{m} \\\\ &\\approx 9{,}4\\,\\text{m} \\end{aligned}$$"
         },
         {
-          "text": "Noin $6{,}3\\,\\text{m}$, koska ympyrän kehän pituus on $\\pi r$.",
-          "feedback": "Matka $\\pi r$ on vasta puolet kehästä eli puolen kierroksen matka. Koko kierroksella Aino kulkee $s = 2\\pi r \\approx 13\\,\\text{m}$."
+          "text": "Noin $4{,}7\\,\\text{m}$, koska ympyrän kehän pituus on $\\pi r$.",
+          "feedback": "Matka $\\pi r$ on vasta puolet kehästä eli puolen kierroksen matka. Koko kierroksella lapsi kulkee $s = 2\\pi r \\approx 9{,}4\\,\\text{m}$."
         },
         {
-          "text": "$4{,}0\\,\\text{m}$, koska kierroksella kuljetaan ympyrän halkaisijan verran.",
-          "feedback": "$4{,}0\\,\\text{m}$ on ympyrän halkaisija $2r$, suora matka reunalta keskipisteen kautta vastakkaiselle reunalle. Aino kulkee kehää pitkin, ja kehä on $\\pi$ kertaa halkaisija: $s = 2\\pi r \\approx 13\\,\\text{m}$."
+          "text": "$3{,}0\\,\\text{m}$, koska kierroksella kuljetaan ympyrän halkaisijan verran.",
+          "feedback": "$3{,}0\\,\\text{m}$ on ympyrän halkaisija $2r$, suora matka reunalta keskipisteen kautta vastakkaiselle reunalle. Lapsi kulkee kehää pitkin, ja kehä on $\\pi$ kertaa halkaisija: $s = 2\\pi r \\approx 9{,}4\\,\\text{m}$."
         }
       ],
       "optional": true

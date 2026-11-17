@@ -24,20 +24,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: the circumference of a circle",
-      "prompt": "The roundabout turns steadily, and Aino stands at its edge, $2.0\\,\\text{m}$ from the centre. How far does Aino travel during one revolution?",
+      "prompt": "The smaller roundabout of the playground has a radius of $1.5\\,\\text{m}$. How far does a child standing at its edge travel during one revolution?",
       "choices": [
         {
-          "text": "About $13\\,\\text{m}$, because the circumference of a circle is $2\\pi r$.",
+          "text": "About $9.4\\,\\text{m}$, because the circumference of a circle is $2\\pi r$.",
           "correct": true,
-          "feedback": "Correct. In one revolution Aino goes once round the circumference: $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 2.0\\,\\text{m} \\\\ &\\approx 13\\,\\text{m} \\end{aligned}$$. Next to the centre pole Eetu travels a much shorter distance in the same time. Today we find out what this means for their speeds."
+          "feedback": "Correct. In one revolution the child goes once round the circumference, so $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 1.5\\,\\text{m} \\\\ &\\approx 9.4\\,\\text{m} \\end{aligned}$$"
         },
         {
-          "text": "About $6.3\\,\\text{m}$, because the circumference of a circle is $\\pi r$.",
-          "feedback": "The distance $\\pi r$ is only half the circumference, the distance of half a revolution. In a whole revolution Aino travels $s = 2\\pi r \\approx 13\\,\\text{m}$."
+          "text": "About $4.7\\,\\text{m}$, because the circumference of a circle is $\\pi r$.",
+          "feedback": "The distance $\\pi r$ is only half the circumference, the distance of half a revolution. In a whole revolution the child travels $s = 2\\pi r \\approx 9.4\\,\\text{m}$."
         },
         {
-          "text": "$4.0\\,\\text{m}$, because a revolution covers the diameter of the circle.",
-          "feedback": "$4.0\\,\\text{m}$ is the diameter of the circle, $2r$, the straight distance from the edge through the centre to the opposite edge. Aino travels along the circumference, which is $\\pi$ times the diameter: $s = 2\\pi r \\approx 13\\,\\text{m}$."
+          "text": "$3.0\\,\\text{m}$, because a revolution covers the diameter of the circle.",
+          "feedback": "$3.0\\,\\text{m}$ is the diameter of the circle, $2r$, the straight distance from the edge through the centre to the opposite edge. The child travels along the circumference, which is $\\pi$ times the diameter: $s = 2\\pi r \\approx 9.4\\,\\text{m}$."
         }
       ],
       "optional": true

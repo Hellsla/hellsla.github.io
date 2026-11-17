@@ -22,22 +22,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the component of an oblique force",
+      "title": "Review: weight",
       "optional": true,
-      "prompt": "Your friend pulls the handle of the long wrench with a force of $120\\,\\text{N}$ at an angle of $30^\\circ$ to the direction of the handle. How large is the component of the force perpendicular to the handle?",
+      "prompt": "When the nut will not open, you press the end of the horizontal spanner handle down with all your weight. Your mass is $60\\,\\text{kg}$. How large is your weight?",
       "choices": [
         {
-          "text": "$60\\,\\text{N}$, because the perpendicular component is $F\\sin 30^\\circ$.",
+          "text": "About $590\\,\\text{N}$, because $G = mg$.",
           "correct": true,
-          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $$\\begin{aligned} F\\sin 30^\\circ &= 120\\,\\text{N}\\cdot 0.5 \\\\ &= 60\\,\\text{N} \\end{aligned}$$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
+          "feedback": "Correct. The weight is $G = mg = 60\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 590\\,\\text{N}$ (chapter *Weight, friction and the inclined plane*). This chapter finds out what a force does when it turns a body."
         },
         {
-          "text": "$104\\,\\text{N}$, because the perpendicular component is $F\\cos 30^\\circ$.",
-          "feedback": "Cosine gives the side adjacent to the angle, that is the component along the handle, $F\\cos 30^\\circ \\approx 104\\,\\text{N}$. The component perpendicular to the handle is the side opposite the angle, $F\\sin 30^\\circ = 60\\,\\text{N}$."
+          "text": "$60\\,\\text{N}$, because the weight is equal to the mass.",
+          "feedback": "Mass and weight are different quantities. The mass $60\\,\\text{kg}$ tells the amount of matter, and the weight is the force with which the Earth pulls you: $G = mg \\approx 590\\,\\text{N}$ (chapter *Weight, friction and the inclined plane*)."
         },
         {
-          "text": "$120\\,\\text{N}$, because the component is as large as the force.",
-          "feedback": "A component is a leg of a right-angled triangle, and the hypotenuse is the force itself. A leg is always shorter: the component perpendicular to the handle is $F\\sin 30^\\circ = 60\\,\\text{N}$."
+          "text": "About $6.1\\,\\text{N}$, because $G = \\tfrac{m}{g}$.",
+          "feedback": "You divided the mass by the acceleration of free fall. The weight is the product of the mass and the acceleration of free fall: $G = mg \\approx 590\\,\\text{N}$."
         }
       ]
     },

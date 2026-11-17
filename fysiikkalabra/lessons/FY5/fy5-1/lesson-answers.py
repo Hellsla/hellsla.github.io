@@ -23,9 +23,9 @@ a["exp1-mistake-ratio"] = 150 / 0.20              # mistake F/d = 750
 for al in (15, 30, 45, 60, 90, 120, 135, 150):
     a[f"exp2-r-{al}"] = 0.40 * s(al)               # r = d sin α: 0,20 m at 30° and 150°, 0,40 m at 90°
     a[f"exp2-M-{al}"] = 200 * 0.40 * s(al)         # M = 80 Nm at 90°, 69 Nm at 60°, 57 Nm at 45°, 40 Nm at 30°
-# kertaus: the friend's 120 N pull at 30° to the handle, component perpendicular to the handle
-a["kertaus-Fy"] = 120 * s(30)                     # 60 N (mistake F cos α = 104 N)
-a["kertaus-Fx"] = 120 * c(30)
+# kertaus: your weight on the wrench handle, m = 60 kg: G = mg
+a["kertaus-G"] = 60 * 9.81                        # 588,6 N -> "noin 590 N"
+a["kertaus-G-div"] = 60 / 9.81                    # mistake m/g: 6,1
 # virhe: 50 N at 30° to a 0,40 m handle; the student wrote M = F d
 a["virhe-wrong"] = 50 * 0.40                      # 20 Nm (the error)
 a["virhe-right"] = 50 * 0.40 * s(30)              # 10 Nm

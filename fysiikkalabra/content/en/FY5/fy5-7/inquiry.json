@@ -22,21 +22,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: period and frequency",
-      "prompt": "The curve on the screen shows that the weight returns to its lowest point every $0.50\\,\\text{s}$. How many times per second is the weight at its lowest point?",
+      "title": "Recap: period and rotation frequency",
+      "prompt": "A carousel makes one revolution in $4.0\\,\\text{s}$. What is its rotation frequency?",
       "choices": [
         {
-          "text": "$2.0$ times, because one repetition lasts half a second.",
+          "text": "$0.25\\,\\tfrac{1}{\\text{s}}$, because a quarter of a revolution is completed in a second.",
           "correct": true,
-          "feedback": "Correct. In one second there are $\\tfrac{1}{0.50\\,\\text{s}} = 2.0\\,\\tfrac{1}{\\text{s}}$ repetitions. The same idea came up in circular motion: the rotation frequency is the reciprocal of the period, $f = \\tfrac{1}{T}$ (chapter *Moving in a circle: period and speed*). Today the same quantities describe back-and-forth motion."
+          "feedback": "Correct. The rotation frequency is the reciprocal of the period, $f = \\tfrac{1}{T} = \\tfrac{1}{4.0\\,\\text{s}} = 0.25\\,\\tfrac{1}{\\text{s}}$ (chapter *Moving in a circle: period and speed*). Today the same quantities describe back-and-forth motion."
         },
         {
-          "text": "$0.50$ times, because one repetition lasts $0.50\\,\\text{s}$.",
-          "feedback": "$0.50\\,\\text{s}$ is the duration of one repetition, like the period of a revolution in circular motion. The number of repetitions per second is its reciprocal, like the rotation frequency $f = \\tfrac{1}{T}$: $\\tfrac{1}{0.50\\,\\text{s}} = 2.0\\,\\tfrac{1}{\\text{s}}$."
+          "text": "$4.0\\,\\tfrac{1}{\\text{s}}$, because one revolution lasts four seconds.",
+          "feedback": "Four seconds is the duration of one revolution, that is, the period. The rotation frequency tells the number of revolutions per second: one revolution in four seconds means $\\tfrac{1}{4.0}$ of a revolution in a second, that is, $0.25\\,\\tfrac{1}{\\text{s}}$."
         },
         {
-          "text": "It cannot be calculated, because the weight does not go round a circle.",
-          "feedback": "A repeating motion is described with the same quantities as rotation: the duration of one repetition and the number of repetitions per second. When the weight returns to its lowest point every $0.50\\,\\text{s}$, it is there $2.0$ times per second."
+          "text": "$0.25\\,\\text{s}$, because the frequency is time divided by revolutions.",
+          "feedback": "The number $0.25$ is right, but the unit is not: the rotation frequency is the number of revolutions per unit time, so its unit is $\\tfrac{1}{\\text{s}}$, not the second."
         }
       ],
       "optional": true

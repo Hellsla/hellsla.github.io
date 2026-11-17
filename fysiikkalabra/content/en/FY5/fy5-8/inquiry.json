@@ -26,24 +26,24 @@
       "type": "choice",
       "title": "Recap: Newton's third law",
       "optional": true,
-      "prompt": "The player pulls the knob of the pinball plunger backwards with a force of $5.0\\,\\text{N}$ and holds it still. With what force and in which direction does the knob pull the player's hand?",
+      "prompt": "The player pulls the knob of the pinball plunger backwards with a force of $5.0\\,\\text{N}$ and holds it still. With what force does the knob pull the player's hand?",
       "choices": [
         {
-          "text": "With a force of $5.0\\,\\text{N}$ forwards.",
+          "text": "With a force of $5.0\\,\\text{N}$.",
           "correct": true,
           "feedback": "Correct. As you learned in the chapter *Interaction and force: Newton's first and third laws*, two objects exert forces of equal magnitude and opposite direction on each other. The force of the hand acts on the knob, the force of the knob on the hand. In this chapter that distinction is important."
         },
         {
           "text": "With no force, because the knob is at rest.",
-          "feedback": "The forces on the knob at rest cancel each other, but the knob still acts on the hand. By Newton's third law the knob pulls the hand with a force of equal magnitude, $5.0\\,\\text{N}$, in the opposite direction, that is forwards."
+          "feedback": "The forces on the knob at rest cancel each other, but the knob still acts on the hand. By Newton's third law the knob pulls the hand with a force as large as the hand pulls the knob, $5.0\\,\\text{N}$."
         },
         {
-          "text": "With a force of $5.0\\,\\text{N}$ backwards.",
-          "feedback": "The forces of an interaction have opposite directions. The hand pulls the knob backwards, so the knob pulls the hand forwards with a force of the same magnitude, $5.0\\,\\text{N}$."
+          "text": "With a force smaller than $5.0\\,\\text{N}$, because the spring is compressed.",
+          "feedback": "Compressing the spring does not reduce the reaction force. By Newton's third law the forces of an interaction are always equal in magnitude: the knob pulls the hand with a force of $5.0\\,\\text{N}$."
         },
         {
-          "text": "With a smaller force forwards, because the spring is compressed.",
-          "feedback": "Compressing the spring does not reduce the reaction force. By Newton's third law the forces are always equal in magnitude: the knob pulls the hand forwards with a force of $5.0\\,\\text{N}$."
+          "text": "With a force larger than $5.0\\,\\text{N}$, because the spring has been compressed.",
+          "feedback": "Compressing the spring does not increase the reaction force. In the interaction of the knob and the hand the forces are always equal in magnitude (chapter *Interaction and force: Newton's first and third laws*): the knob pulls the hand with a force of $5.0\\,\\text{N}$."
         }
       ]
     },

@@ -9,10 +9,10 @@ v_tissue, v_air, v_water, v_eye = 1540.0, 343.0, 1480.0, 1550.0     # m/s; v_eye
 vP, vS = 6.0, 3.5                                                      # km/s, upper crust (IASP91: 5,8 and 3,36)
 a = {}
 
-# Kertaus (luku Aaltojen synty ja eteneminen): the probe's 2,5 MHz in soft tissue, λ = v / f
-a["kertaus-lambda-mm"] = v_tissue / 2.5e6 * 1e3        # 0,616 mm
-a["kertaus-vf"] = v_tissue * 2.5e6                     # wrong option v·f = 3,85e9 m
-a["kertaus-fv"] = 2.5e6 / v_tissue                     # wrong option f/v = 1623
+# Kertaus (luku Mekaaninen aaltoliike): bat call 40 kHz in air, λ = v / f
+a["kertaus-lambda-mm"] = v_air / 40e3 * 1e3            # 8,575 mm
+a["kertaus-vf"] = v_air * 40e3                         # wrong option v·f = 1,372e7 m
+a["kertaus-fv"] = 40e3 / v_air                         # wrong option f/v = 116,6
 
 # Ennuste 1: echo after 65 µs, v = 1540 m/s
 a["ennuste1-d-cm"] = v_tissue * 65e-6 / 2 * 100        # 5,005 cm
