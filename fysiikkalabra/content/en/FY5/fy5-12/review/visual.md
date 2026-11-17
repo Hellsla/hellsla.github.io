@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 822094cb88b38ee4
+CONTENT-HASH: b4af553a938dc662
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: opened fy5-12-fig-row-1280.png (superposition figure unchanged, teacher-approved) and read the diff (learning goal now ends "(optional)"; it still completes "In this lesson, you will learn to").
+batch delta review: worked example steps 1-2 at 390 px (example-390-1); figures are teacher-approved (layout only); paragraph splits read naturally, formulas and units unchanged and rendered in KaTeX, nothing clipped.
