@@ -332,6 +332,13 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 
 ## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
 
+**Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
+(seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
+"example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
+(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
+`caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
+
 Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
 "…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan

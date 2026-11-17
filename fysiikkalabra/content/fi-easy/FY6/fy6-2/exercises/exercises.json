@@ -158,7 +158,7 @@
       "unit": "mV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: sama jännite kolmella mittausalueella",
+        "caption": "Sama jännite kolmella mittausalueella",
         "columns": [
           "$\\text{Alue}\\,(\\text{V})$",
           "$U\\,(\\text{V})$",
@@ -226,7 +226,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: akun jännite viidessä mittauksessa",
+        "caption": "Akun jännite viidessä mittauksessa",
         "columns": [
           "$\\text{Mittaus}$",
           "$U\\,(\\text{V})$"
