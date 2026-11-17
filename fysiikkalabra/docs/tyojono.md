@@ -18,6 +18,7 @@ Osat 0c–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerra
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
 
 ### 0c. Yksi yleinen esitystapaluokka `reviews.py`:hin
+Varattu: claude/esitystapaluokka-0c
 `reflow`, `md-paragraphs` ja `caption-label` on tehty kukin erikseen, ja jokainen on jättänyt tähteitä: kohteet
 (Sovella, koe, yksikkö, tutkimus, TVT-ohje) tulivat mukaan vasta jälkikäteen (5f, 8c-1), ja kahden luokan yhdistelmä
 samalla rivillä luokittuu lukumuutokseksi (FY5 fy5-12, fy5-2; FY4 fy4-14; FY3 fy3-5). Korjaus: yksi normalisoitu
