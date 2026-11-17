@@ -32,23 +32,11 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
-## 5. CI:n toistettavuus (2026-11-13)
-
-Varattu: claude/ci-reproducibility
-
-Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
-samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
-(360, 390, 768, 1280 px) itse, kun Docker on käytettävissä; layout-virhe nimeää tehtävän, ratkaisun vaiheen ja elementin;
-`ci_scope.py` ei laske sivua muuttuneeksi, jos sen ainoa ero on `?v=`-tunnisteet.
-Jäljellä osa B (koordinaattorin luvalla, kun FY4:n, FY5:n ja FY7:n kaava-PR:t ovat mainissa): `docs/clipped-formulas.tsv`
-ja `docs/physics-phrases-known.tsv` kurssikohtaisiksi tiedostoiksi (esim. `docs/clipped-formulas/FY4.tsv`), jotta kaksi
-kurssi-PR:ää ei koske samaan tiedostoon. Jaettu muutos: tehdään yksin.
-
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
 Tehty: `check_layout.py` havaitsee leikkautuvan kaavan (360 ja 390 px, avattu ratkaisu, kolme kieltä), `reviews.py` tuntee
 kategorian `reflow` (science ja pedagogy none, visual delta), kehittäjäohjeessa on rivi. Mainissa jo olevat leikkautuvat
-kaavat ovat `docs/clipped-formulas.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
+kaavat ovat `docs/clipped-formulas/<kurssi>.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
 1. lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt kyllä), ja korjataanko vanha lista jaetulla
    komponentilla vai sivu kerrallaan;
 2. tehdäänkö täysi CI-pohjainen lista (koko sivuston ajo, noin 20 ydintuntia): lista on tehty paikallisella Chromiumilla, ja
@@ -81,6 +69,8 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
+FY5 tehty (PR #638): 332 riviä pois listalta (luvut, tehtävät, Sovella ja Esimerkkikoe kolmella kielellä); 16 jää. Viisi kaavaa kolmella kielellä, joiden sulkeiden, murtoluvun tai kymmenpotenssitulon sisältö on yksinään ruutua leveämpi, eikä riviä katkaista suureen tai sulkeiden sisältä: fy5-1 $\Sigma M = g\,(\ldots)$, fy5-4 $1200\,\text{kg}\cdot\left(\ldots\right)$, fy5-6 $\gamma M = 6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}\ldots$, fy5-8 $\tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left(\ldots\right)$ ja kokeen $F = 6{,}674 \cdot 10^{-11} \cdot \dfrac{\ldots}{\ldots}$ (vain fi). Lisäksi fy5-12:n Tutki-summa $3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}$: luvun tiedekatselmointi on vanhemmasta versiosta, ja reviews.py luokittelee rivityksen yhdessä välillä tehtyjen muutosten kanssa lukumuutokseksi. Opittua: kertomerkin kohdalta katkaistaan vain kokonaisten suureiden välistä, ja jatkorivin (&− tai &·) jälkeisen relaatiorivin loppuun tulee &, koska mathlayout.join_wide liittäisi sen muuten jatkoriviin leveällä näytöllä (= kesken riviä); jaettu korjaus join_wideen on ehdotettu koordinaattorille.
+
 FY4 tehty (PR #637): 584 riviä pois listalta; 89 jää (17 lyhyttä muuttamatonta kaavaa, jotka leikkautuvat vain CI:n selaimessa 4–6 px (fy4-4, fy4-8, fy4-9, fy4-13, fy4-16; listalta poistetaan vain rivi, jonka kaava ei enää ole tekstin sisällä), liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat (fy4-6, fy4-8, fy4-10, fy4-11, fy4-15), paljaiden kertoimien tulot, joita ei saa katkaista (fy4-15), välilyönnittömät `\cdot`-ketjut, joissa rivi voisi katketa vain kertomerkin jälkeen ja katko sen edellä muuttaisi `chain_view`n (fy4-6, fy4-16; ulkoasukatselmointi hylkäsi kertomerkkiin päättyvän rivin), sulkeissa olevat kaavat (fy4-8, fy4-10:n `p_\text{kok}`), lainattu opiskelijan lasku (fy4-7, fy4-9) sekä fy4-14:n kaksi inquiry-kaavaa: niiden rivitys osui riveille, joita aiemmat siirrot koskivat, ja olisi vaatinut tiede- ja pedagogiikkakatselmoinnin). Rivijako mitattiin selaimessa (KaTeX) ja on kaikilla kielillä sama.
 
 FY6 tehty (PR #627): 565 riviä pois listalta; 29 jää (sulkeiden tai lainausmerkkien sisällä olevat kaavat, liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat ja fy6-2:n taulukon mittarin tarkkuusmerkinnät). Rivi alkaa vain relaatiosta, plus- tai miinusmerkistä tai kokonaisten suureiden välistä.
@@ -95,7 +85,7 @@ FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe ko
 
 FY3 tehty (PR #628): 876 riviä pois listalta; 23 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku, fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin, sekä fy3-15:n kertausvalinnan palautteen kaava: `test_inquiry.py` vertaa palautteen alkua lähteeseen eikä tunnista näyttökaavaan siirtyvää välimerkkiä).
 
-Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
+Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas/`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
 näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
 - Tekstin sisällä oleva pitkä kaava nostetaan omaksi kaavarivikseen, ja pitkä ketju jaetaan `aligned`-ympäristöön
@@ -145,7 +135,7 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
 FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
-Varattu: claude/exercises-fy8-2 (FY8 erä 2, fy8-2)
+Varattu: claude/exercises-fy8-6 (fy8-6)
 Havainto (koordinaattori 2026-11-15, fy8-2): kahdessa erässä peräkkäin ulkoasu on hylännyt ratkaisujen kaavaketjut,
 jotka eivät katkea 360 px:llä (`check_layout.py` ei havainnut niitä). Seuraavien erien kehittäjän pitää jakaa pitkät
 sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta, yksikkö- ja vertailuketjut omille riveilleen)
@@ -190,11 +180,36 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
+FY1 tehty: fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä (#650); Sovella (fi, en, fi-easy), esimerkkikoe ja en
+fy1-1:n harjoitusten kolme askelta (claude/fy1-kappalejako-2, 8c-1:n #657 jälkeen). Jäljellä FY1:ssä vain numeroitu lista
+Sovellan mallivastauksessa "Mitkä tahansa neljä seuraavista", jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
+
+Opettaja 2026-11-16: laajennetaan myös FY9:ään ja FY10:een. Järjestys FY1 → FY2 → FY4 → FY5 → FY6 → FY7 → FY8 →
+FY3 loput → FY9 → FY10.
+
 Pilotti fy3-13 tehty (#643; koordinaattorin välittämänä opettaja hyväksyi 2026-11-16 sekä pilotin, "huomattavasti
 parempi luettavuus", että uuden katselmointiluokan `md-paragraphs`: kappalejako ja listamerkit, sanat samat ja samassa
 järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES.md §3:ssa ("Paragraphs in stages and
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
+
+FY4 tehty (claude/fy4-kappalejako, #654): fy4-1…fy4-16 esimerkit ja ratkaisut kolmella kielellä; tiede ja pedagogiikka
+carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksistaan. Lintin 8c-varoituksia jää fi 16, en 34,
+fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
+järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-kaavaa, pitkät Annettu-rivit). Ulkoasun Polish-huomiot
+(vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
+ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
+esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
+
+FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
+(`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
+tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastausluku on b)-kohdassa (fy5-2 L2-06,
+fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
+esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
+
+FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
+esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
+kappalejako vaatisi täydet tiede- ja pedagogiikkakatselmoinnit; ensin jaetun tiedoston muutos `reviews.py`:hin.
 
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
@@ -205,6 +220,18 @@ kappale yli ~60 sanaa tai useita virkkeitä eri asioista), sitten korjataan kurs
 --fix`, 116 lukua, joissa "Tunnetut ja kysytty"); sisältömuutos, joten katselmoinnit scope-säännön mukaan
 (typografia/kappalejako: odotettavasti visual delta, muut carry). Ensin pilotti yhdellä luvulla (fy3-13) opettajan
 nähtäväksi.
+
+### 8c-1. md-paragraphs myös Sovellaan, kokeisiin, yksiköihin ja tutkimuksiin (jaettu, koordinaattori 2026-11-16)
+
+FY1:n työssä (#650) kaksi aukkoa `reviews.py`:ssä. (1) `carry-item` ei tuntenut luokkaa `md-paragraphs`: Sovellan,
+esimerkkikokeen, yksikön, tutkimuksen tai TVT-ohjeen kappalejako kantoi vain väärällä nimellä "reflow" (sen näkymä
+yhdistää välilyönnit), ja `- `-listamerkit eivät kantaneet lainkaan. (2) Kun sama rivi oli aiemmin reflow'ttu
+(inline-kaava aligned-lohkoksi) ja nyt jaetaan kappaleisiin, `_md_paragraphs` näki kaavan sisällä yhden välilyönnin eron
+(`d_\text{A} \approx` / `d_\text{A}\approx`) eikä luokitellut muutosta (en fy1-1:n harjoitukset). Korjaus: `para_view`
+(listamerkit pois, välilyönnit yhdeksi) `item_view`n vaihtoehdoksi, `carry-item` ja `verify` tuntevat `md-paragraphs`-
+rivit, ja `_md_paragraphs` jättää pois kaavan sisäiset välilyönnit, joita LaTeX ei näe (ei kahden kirjaimen välistä).
+Testit `test_reviews.py`:ssä. Säännöt ennallaan: tiede ja pedagogiikka carry, ulkoasu delta. Sen jälkeen FY1:n Sovella,
+esimerkkikoe ja en fy1-1:n harjoitusten kolme askelta.
 
 ## 8d. Käsitekorttien pitkät otsikot katkeavat keskeltä sanaa (opettaja 2026-11-13)
 
@@ -276,6 +303,8 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
+Varattu: claude/fy4-pohdinta-kertaus (FY4)
+
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
 paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
 20 s). Opettaja: "tämä ei tunnu loogiselta, tuo monivalinta ei liity tuohon pohdintaan." Sääntö (CLAUDE.md, FY3/FY1
@@ -302,6 +331,13 @@ Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
 ## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
+
+**Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
+(seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
+"example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
+(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
+`caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
 
 Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
 "…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n
@@ -483,12 +519,12 @@ FY1 tehty: claude/fy1-oikoluku (PR #614).
 FY5 tehty: claude/fy5-oikoluku-aineisto (PR #624); samassa PR:ssä kohdan 19 aineistotehtävät FY5-A1…A5.
 FY8 tehty: claude/fy8-oikoluku (PR #621); samalla kokeen ja Sovellan leikkautuvat kaavat (5d).
 Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
-`docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
+`docs/physics-phrases-known/<kurssi>.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
-FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known.tsv`:n rivit (FY5, FY6, FY9).
+FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known/`:n rivit (FY5, FY6, FY9).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 

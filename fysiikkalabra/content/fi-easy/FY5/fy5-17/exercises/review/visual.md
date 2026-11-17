@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5a4d90ef9afdba0b
+CONTENT-HASH: 4868ac02cc3a2aac
+ROUND: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-17-L2-10 part c) — "$100$ kilometrin matkan" leaves the unit word outside the maths; it is the teacher's verbatim wording and identical in the Finnish task, so it can only change in all three languages together.
-- [Minor] fy5-17-L2-10 solution — one paragraph of 130 words (limit about 120); split.
-- [Minor] fy5-17-L2-10 — the situation paragraph is long (about 140 words); split the table description from the magnitude explanation.
+(none) The delta only splits long solution paragraphs into shorter ones; the words, formulas and units are unchanged, and the split points fall at natural boundaries.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-17.html?ratkaisut=1 at 360 and 1280 px with every solution open: no red KaTeX, no clipped formula, no overflow, no asterisks.
-- New task fy5-17-L2-10 (Aineisto: link first, a-d) and its solution read in the packet and rendered. Hash rechecked: unchanged.
-- Verdict revised after the coordinator's facts: the plain-unit finding is rated Minor.
+- Delta (solutions.md only: paragraph splits). Captures opened in content/fi-easy/FY5/fy5-17/review/shots/: fy5-17-open-exercises-L2-1280-15 (the last L2 solution, split paragraphs after the Kohta lines).
+- Paragraphs now read as separate blocks with normal spacing, display chains stay on one row with thin-spaced units and decimal comma, nothing clipped, no overflow, no KaTeX error visible.
+- Not every changed paragraph was opened individually; they use the same shared solution component, so the sampled captures stand for them.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

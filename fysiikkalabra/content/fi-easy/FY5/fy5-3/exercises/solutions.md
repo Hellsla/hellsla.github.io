@@ -121,7 +121,9 @@
 ## fy5-3-L1-06
 **Kysytty:** mihin suuntaan tasaisessa ympyräliikkeessä olevan kappaleen nopeus osoittaa.
 **Periaate:** Nopeus osoittaa aina samaan suuntaan kuin kappale liikkuu. Ympyräradalla liikkeen suunta on joka hetki radan tangentin suunta. Se on kohtisuorassa sädettä vastaan. Kappale kiertää rataa, joten tangentin suunta kääntyy koko ajan. Siksi nopeus muuttuu, vaikka vauhti pysyy samana.
-**Mallivastaus:** Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan. Nopeus ei osoita kohti keskipistettä. Kappale pysyy samalla etäisyydellä keskipisteestä, joten se ei liiku sitä kohti. Nopeus ei osoita myöskään poispäin keskipisteestä, koska mikään voima ei työnnä kappaletta ulospäin. Kun naru katkeaa, kappale jatkaa tangentin suuntaan. Nopeuden suunta ei pysy samana. Se kääntyy yhden kierroksen aikana kokonaisen kierroksen, vaikka vauhti on vakio.
+**Mallivastaus:** Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan. Nopeus ei osoita kohti keskipistettä. Kappale pysyy samalla etäisyydellä keskipisteestä, joten se ei liiku sitä kohti.
+
+Nopeus ei osoita myöskään poispäin keskipisteestä, koska mikään voima ei työnnä kappaletta ulospäin. Kun naru katkeaa, kappale jatkaa tangentin suuntaan. Nopeuden suunta ei pysy samana. Se kääntyy yhden kierroksen aikana kokonaisen kierroksen, vaikka vauhti on vakio.
 
 ## fy5-3-L1-07
 **Annettu:** pyörimistaajuus $f = 3000\,\tfrac{1}{\text{min}}$
@@ -141,7 +143,7 @@
 **Muunnokset:** $r = 12\,\text{cm} = 12 \cdot 10\,\text{mm} = 120\,\text{mm}$ ja $T = 1{,}0\,\text{h} = 60 \cdot 60\,\text{s} = 3600\,\text{s}$
 **Sijoitus:** $v = \dfrac{2\pi \cdot 120\,\text{mm}}{3600\,\text{s}} = \dfrac{754{,}0\,\text{mm}}{3600\,\text{s}} = 0{,}2094\,\text{mm/s}$
 **Vastaus:** $0{,}21\,\text{mm/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten säteessä $12\,\text{cm}$ ja kierrosajassa $1{,}0\,\text{h}$.
-**Järkevyys:** Kärki kulkee tunnissa kehän, noin $754\,\text{mm}$. Vauhdilla $0{,}21\,\text{mm/s}$ tunnissa kuljettu matka on $0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}$. Se on sama kuin kehä. Viisari liikkuu niin hitaasti, ettei sen liikettä huomaa silmällä.
+**Järkevyys:** Kärki kulkee tunnissa kehän, noin $754\,\text{mm}$. Vauhdilla $0{,}21\,\text{mm/s}$ tunnissa kuljettu matka on $$\begin{aligned} &0{,}2094\,\text{mm/s} \cdot 3600\,\text{s} \\ &= 754\,\text{mm} \end{aligned}$$. Se on sama kuin kehä. Viisari liikkuu niin hitaasti, ettei sen liikettä huomaa silmällä.
 
 ## fy5-3-L1-09
 **Kysytty:** miten lapsen ratanopeus $v$ muuttuu, kun säde kasvaa $1{,}2\,\text{m}$:stä $2{,}4\,\text{m}$:iin ja pyörimistaajuus pienenee $16\,\tfrac{1}{\text{min}}$:sta $8{,}0\,\tfrac{1}{\text{min}}$:iin.
@@ -160,7 +162,7 @@ $\dfrac{v_2}{v_1} = \dfrac{2\pi r_2 f_2}{2\pi r_1 f_1}$
 
 $\dfrac{v_2}{v_1} = 2{,}0 \cdot 0{,}50$, eli $\dfrac{v_2}{v_1} = 1{,}0$
 
-Ratanopeus pysyy samana. Tarkistus: alussa $f_1 = \tfrac{16}{60\,\text{s}} \approx 0{,}267\,\tfrac{1}{\text{s}}$ ja $v_1 = 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \approx 2{,}0\,\text{m/s}$. Lopussa $f_2 = \tfrac{8{,}0}{60\,\text{s}} \approx 0{,}133\,\tfrac{1}{\text{s}}$ ja $v_2 = 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \approx 2{,}0\,\text{m/s}$. Pelkkä säteen kasvu kaksinkertaistaisi ratanopeuden. Pelkkä hidastuminen puolittaisi sen. Kierrosaika kaksinkertaistuu, mutta ratanopeus on verrannollinen pyörimistaajuuteen eikä kierrosaikaan.
+Ratanopeus pysyy samana. Tarkistus: alussa $f_1 = \tfrac{16}{60\,\text{s}} \approx 0{,}267\,\tfrac{1}{\text{s}}$ ja $$\begin{aligned} v_1 &= 2\pi \cdot 1{,}2\,\text{m} \cdot 0{,}267\,\tfrac{1}{\text{s}} \\ &\approx 2{,}0\,\text{m/s} \end{aligned}$$. Lopussa $f_2 = \tfrac{8{,}0}{60\,\text{s}} \approx 0{,}133\,\tfrac{1}{\text{s}}$ ja $$\begin{aligned} v_2 &= 2\pi \cdot 2{,}4\,\text{m} \cdot 0{,}133\,\tfrac{1}{\text{s}} \\ &\approx 2{,}0\,\text{m/s} \end{aligned}$$. Pelkkä säteen kasvu kaksinkertaistaisi ratanopeuden. Pelkkä hidastuminen puolittaisi sen. Kierrosaika kaksinkertaistuu, mutta ratanopeus on verrannollinen pyörimistaajuuteen eikä kierrosaikaan.
 
 ## fy5-3-L2-05
 **Annettu:** kymmenen kierroksen ajat $t_{10}$: $41{,}2\,\text{s}$, $40{,}6\,\text{s}$, $41{,}8\,\text{s}$, $40{,}9\,\text{s}$ ja $41{,}5\,\text{s}$; istuimen etäisyys akselista $r = 2{,}1\,\text{m}$
@@ -198,7 +200,7 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m}}{86\,160\,\tex
 \end{aligned}
 ```
 **Vastaus:** a) Ratanopeudet ovat $7{,}59\,\text{km/s}$, $3{,}87\,\text{km/s}$ ja geostationaariselle satelliitille $3{,}07\,\text{km/s}$. Vastauksissa on kolme merkitsevää numeroa, kuten taulukon arvoissa. b) Kauempana oleva satelliitti on hitaampi. Radan säde kasvaa taulukossa ylhäältä alas, mutta ratanopeus pienenee. Vastauslaatikkoon tulee $3{,}07\,\text{km/s}$.
-**Järkevyys:** Geostationaarisen satelliitin kierrosaika $1436\,\text{min} = 23{,}9\,\text{h}$ on lähes vuorokausi. Näin pitääkin olla, kun satelliitti pysyy paikallaan taivaalla Maan pyörimisen mukana. Kehä on $2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} = 2{,}649 \cdot 10^{8}\,\text{m}$. Tarkistus: $3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2{,}649 \cdot 10^{8}\,\text{m}$. Kauempana kehä on pidempi, mutta kierrosaika kasvaa vielä enemmän. Matalan radan kierros on noin $15$ kertaa lyhyempi kuin geostationaarisen. Kehä on vain noin $6$ kertaa lyhyempi.
+**Järkevyys:** Geostationaarisen satelliitin kierrosaika $1436\,\text{min} = 23{,}9\,\text{h}$ on lähes vuorokausi. Näin pitääkin olla, kun satelliitti pysyy paikallaan taivaalla Maan pyörimisen mukana. Kehä on $$\begin{aligned} &2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m} \\ &= 2{,}649 \cdot 10^{8}\,\text{m} \end{aligned}$$. Tarkistus: $$\begin{aligned} &3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2{,}649 \cdot 10^{8}\,\text{m} \end{aligned}$$. Kauempana kehä on pidempi, mutta kierrosaika kasvaa vielä enemmän. Matalan radan kierros on noin $15$ kertaa lyhyempi kuin geostationaarisen. Kehä on vain noin $6$ kertaa lyhyempi.
 
 ## fy5-3-L2-07
 **Annettu:** renkaan halkaisija $d = 64\,\text{cm}$, pyörimistaajuus $f = 8{,}0\,\tfrac{1}{\text{s}}$; oppilaan tulos $32\,\text{m/s}$
@@ -241,8 +243,10 @@ Erotus ja osuus matalan radan vauhdista:
 \frac{462{,}7\,\text{m/s}}{7700\,\text{m/s}} &= 0{,}060 = 6{,}0\,\%
 \end{aligned}
 ```
-**Vastaus:** a) Ratanopeudet ovat $463\,\text{m/s}$, $408\,\text{m/s}$ ja $213\,\text{m/s}$. b) Kourou antaa $250\,\text{m/s}$ suuremman vauhdin kuin Plesetsk. Vastauksessa on kaksi merkitsevää numeroa, koska leveysaste $5{,}2\,{}^\circ$ on annettu kahdella numerolla. c) Kourousta saatava vauhti on noin $6{,}0\,\%$ matalan radan vauhdista. Paikkojen ratanopeudet eroavat, koska kaikki tekevät kierroksen samassa ajassa $T$. Lähempänä napaa oleva paikka kiertää kuitenkin pienempää leveysympyrää. Silloin se kulkee kierroksella lyhyemmän matkan. Vastauslaatikkoon tulee $250\,\text{m/s}$.
-**Järkevyys:** Päiväntasaajalla ratanopeus on $\dfrac{2\pi \cdot 6{,}371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464{,}6\,\text{m/s}$. Kourou on lähellä sitä, $462{,}7\,\text{m/s}$. Plesetskin ratanopeus on $\cos 62{,}7\,{}^\circ = 0{,}459$-kertainen päiväntasaajaan verrattuna: $0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}$. Navalla säde on nolla ja ratanopeus on nolla. Ratanopeus siis pienenee, kun leveysaste kasvaa. Pyörimisestä saatava lisävauhti on vain pieni osa matalan radan vauhdista.
+**Vastaus:** a) Ratanopeudet ovat $463\,\text{m/s}$, $408\,\text{m/s}$ ja $213\,\text{m/s}$. b) Kourou antaa $250\,\text{m/s}$ suuremman vauhdin kuin Plesetsk. Vastauksessa on kaksi merkitsevää numeroa, koska leveysaste $5{,}2\,{}^\circ$ on annettu kahdella numerolla. c) Kourousta saatava vauhti on noin $6{,}0\,\%$ matalan radan vauhdista.
+
+Paikkojen ratanopeudet eroavat, koska kaikki tekevät kierroksen samassa ajassa $T$. Lähempänä napaa oleva paikka kiertää kuitenkin pienempää leveysympyrää. Silloin se kulkee kierroksella lyhyemmän matkan. Vastauslaatikkoon tulee $250\,\text{m/s}$.
+**Järkevyys:** Päiväntasaajalla ratanopeus on $\dfrac{2\pi \cdot 6{,}371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464{,}6\,\text{m/s}$. Kourou on lähellä sitä, $462{,}7\,\text{m/s}$. Plesetskin ratanopeus on $\cos 62{,}7\,{}^\circ = 0{,}459$-kertainen päiväntasaajaan verrattuna: $$0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}$$. Navalla säde on nolla ja ratanopeus on nolla. Ratanopeus siis pienenee, kun leveysaste kasvaa. Pyörimisestä saatava lisävauhti on vain pieni osa matalan radan vauhdista.
 
 ## fy5-3-L3-05
 **Annettu:** ratanopeus $v = 1{,}2\,\text{m/s}$, uran alku $r_1 = 25\,\text{mm}$, uran loppu $r_2 = 58\,\text{mm}$, uran kierrosten väli $1{,}6\,\mu\text{m}$
@@ -270,7 +274,9 @@ t &= \frac{5378\,\text{m}}{1{,}2\,\text{m/s}} \\
 &= 4482\,\text{s} = 74{,}7\,\text{min}
 \end{aligned}
 ```
-**Vastaus:** a) Pyörimistaajuus on uran alussa noin $460\,\tfrac{1}{\text{min}}$ ja lopussa noin $200\,\tfrac{1}{\text{min}}$. b) Uran kierroksia on noin $2{,}1 \cdot 10^{4}$, uran pituus on noin $5{,}4\,\text{km}$ ja soittoaika on noin $75\,\text{min}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kierrosten välissä $1{,}6\,\mu\text{m}$. c) Laser kulkee uraa vakioratanopeudella, ja ulompana ura kiertää suuremman ympyrän. Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienentyä säteen kasvaessa. Vastauslaatikkoon tulee soittoaika $75\,\text{min}$.
+**Vastaus:** a) Pyörimistaajuus on uran alussa noin $460\,\tfrac{1}{\text{min}}$ ja lopussa noin $200\,\tfrac{1}{\text{min}}$. b) Uran kierroksia on noin $2{,}1 \cdot 10^{4}$, uran pituus on noin $5{,}4\,\text{km}$ ja soittoaika on noin $75\,\text{min}$.
+
+Vastauksessa on kaksi merkitsevää numeroa, kuten kierrosten välissä $1{,}6\,\mu\text{m}$. c) Laser kulkee uraa vakioratanopeudella, ja ulompana ura kiertää suuremman ympyrän. Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienentyä säteen kasvaessa. Vastauslaatikkoon tulee soittoaika $75\,\text{min}$.
 **Järkevyys:** Soittoaika $75\,\text{min}$ sopii tavalliselle CD-levylle. Sen soittoaika on noin $74$–$80\,\text{min}$. Pyörimistaajuus pienenee suhteessa $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, ja $458 \cdot \dfrac{25}{58} = 197$. Se on sama kuin laskettu loppu. Kierroksia on $20\,625$ ja soittoaika on $74{,}7\,\text{min}$. Keskimääräinen pyörimistaajuus on siis $\dfrac{20\,625}{74{,}7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$. Se on alun $458\,\tfrac{1}{\text{min}}$ ja lopun $198\,\tfrac{1}{\text{min}}$ välissä.
 
 ## fy5-3-L1-10

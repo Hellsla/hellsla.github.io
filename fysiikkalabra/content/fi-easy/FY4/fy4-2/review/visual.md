@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 891b0c531fcd521c
+CONTENT-HASH: 72209fc6ab49bcdc
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- batch delta review: opened example-390 captures (fi-easy, fy4-2); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

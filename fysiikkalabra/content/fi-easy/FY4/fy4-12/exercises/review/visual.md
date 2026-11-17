@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 73cf8a45f3b2d4e5
+CONTENT-HASH: 7716d4414dfe12ab
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] solutions.md:102 (tile fy4-12 #15) — the leading sign in `&-8{,}0\,\text{m}` is set with binary spacing; write `&{-}8{,}0`.
+None.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- Opened (this language's own captures, 1280 px, all solutions open) fy4-12-open-exercises-L3-1280-7 (overtaking task); also read every inserted break in the diff.
+- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
+- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

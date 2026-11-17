@@ -329,7 +329,11 @@ Massiivisen rautapalkin pituus on $1{,}20\,\text{m}$. Sen poikkileikkaus on neli
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Pituus on $L = 1{,}20\,\text{m}$ ja poikkileikkauksen sivu $a = 4{,}0\,\text{cm}$. Taulukosta saadaan raudan tiheys $\rho = 7870\,\text{kg/m}^3$. Kysytään palkin massaa $m$.
+**Tunnetut ja kysytty.** Pituus on $L = 1{,}20\,\text{m}$ ja poikkileikkauksen sivu $a = 4{,}0\,\text{cm}$.
+
+Taulukosta saadaan raudan tiheys $\rho = 7870\,\text{kg/m}^3$.
+
+Kysytään palkin massaa $m$.
 
 <!-- vaihe -->
 

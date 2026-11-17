@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bada72c8a05e8dc1
+CONTENT-HASH: f30aa7ced08c859a
 
 ## Blocking
 (none)
@@ -8,7 +8,9 @@ CONTENT-HASH: bada72c8a05e8dc1
 (none)
 
 ## Checked
-- L3-04 solution open at 360 px (re-broken Sijoitus aligned, legible, no clipping); scan of all .eq-chain at 360/390/1280 with details open: no overflow. Wording changes read in the diff.
+- Own capture w3-390-1.png (a Vastaus block in the geostationary-satellite exercise): card layout and maths survive at 390 px. It is not the changed Vastaus at line 244 (search phrase matched another block).
+- Changed blocks (Mallivastaus line 122, Vastaus lines 244 and 275) judged from the diff: same word-for-word paragraph cut, same card spacing as fy5-1/2.
+- scrollWidth 390 and 1280.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

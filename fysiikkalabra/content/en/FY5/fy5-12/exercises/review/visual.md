@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b8fc622146b746b9
-SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
+CONTENT-HASH: d8c2179865c6c1c0
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-10 Substitution rows are separate blocks, not one column of equals signs.
-- [Minor] other chains scroll slightly at 360 px; known/untouched.
+(none)
 
 ## Checked
-- Round 2: re-rendered preview/en/fy5-12.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-10 Part d), 2 paragraphs) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
+- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
+- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-12 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
+- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

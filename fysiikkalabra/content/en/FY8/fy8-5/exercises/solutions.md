@@ -259,3 +259,63 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 $$. In part c) $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.3642 \cdot 10^{-19}\,\text{J}} = 5.905 \cdot 10^{-7}\,\text{m} = 590.5\,\text{nm}$ and in part d) $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8.2343 \cdot 10^{-19}\,\text{J}} = 2.412 \cdot 10^{-7}\,\text{m} = 241.2\,\text{nm}$.
 **Answer:** a) The atom has $11$ electrons, and the configuration is $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: the shells $n = 1$ and $n = 2$ fill up ($2 + 8 = 10$ electrons), and the eleventh electron is in the next lowest orbital, $3\text{s}$, so there is only one electron in the outermost shell. b) The valence electron is in the shell $n = 2$ in lithium, in the shell $n = 3$ in sodium and in the shell $n = 4$ in potassium. The higher the shell, the farther from the nucleus it is, and between it and the nucleus there are more and more full shells whose electrons repel it. The charge of the nucleus grows according to the numbers $3$, $11$ and $19$, but the ionisation energy still decreases from $5.39\,\text{eV}$ and $5.14\,\text{eV}$ to $4.34\,\text{eV}$, so the effect of the growth of the shell is greater than that of the charge of the nucleus. The formula $\tfrac{13.6\,\text{eV}}{n^2}$ of the hydrogen atom would give similarly decreasing values $3.40\,\text{eV}$, $1.51\,\text{eV}$ and $0.85\,\text{eV}$; for the alkali metals the values are greater, because the electrons of the inner shells do not completely screen the charge of the nucleus, so a greater charge than in hydrogen acts on the valence electron. c) The wavelength of the photon is $590\,\text{nm}$, three significant figures like the number $2.10\,\text{eV}$. d) A photon with a wavelength of at most $241\,\text{nm}$ is suitable for ionisation. The energy of the photon, $2.10\,\text{eV}$, is smaller than $E_\text{i} = 5.14\,\text{eV}$, so the photon of part c) is not enough to release the electron; it only moves the electron to the state $3\text{p}$.
 **Reasonableness:** The wavelength $590\,\text{nm}$ is in the region of visible light, at yellow light, and a sodium lamp glows yellow. The energies are consistent: an ionising photon needs the energy $5.14\,\text{eV}$, which is $\tfrac{5.14}{2.10} = 2.45$ times the energy of the exciting photon, and the wavelength is correspondingly $\tfrac{590.5\,\text{nm}}{241.2\,\text{nm}} = 2.45$ times as long. The ionisation limit $241\,\text{nm}$ is ultraviolet, as it should be.
+
+## fy8-5-L2-08
+**Given:** the figure shows the orbitals $1\text{s}$, $2\text{s}$ and $2\text{p}$; the $2\text{p}$ orbital in the figure is one of three $2\text{p}$ orbitals; at most $2$ electrons per orbital
+**Asked:** a) the nodes of the orbitals, b) why the electron is not found at a node, c) the greatest number of electrons $N_\text{max}$ in the subshells $1\text{s}$, $2\text{s}$ and $2\text{p}$
+**Principle:** An orbital is the probability distribution given by the electron's wave function. At a node the wave is zero, so the probability of finding the electron there is zero. The greatest number of electrons in a subshell is the number of orbitals times two, because an orbital holds at most two electrons (Pauli exclusion principle).
+**Reading the graph:** In the figure $1\text{s}$ is a sphere with no node. The orbital $2\text{s}$ has a nodal sphere inside the sphere. The orbital $2\text{p}$ has two lobes and a nodal plane through the nucleus between them. The figure shows only one of the three orbitals of the $2\text{p}$ subshell, but the task says there are $3$ of them. So there are $1$ ($1\text{s}$), $1$ ($2\text{s}$) and $3$ ($2\text{p}$) orbitals.
+**Formula:** $N_\text{max} = 2 N_\text{orb}$, where $N_\text{orb}$ is the number of orbitals, for the subshells $1\text{s}$, $2\text{s}$ and $2\text{p}$ together
+**Conversions:** None are needed, because a count is asked.
+**Substitution:** The orbitals total $1 + 1 + 3 = 5$.
+At most $N_\text{max} = 2 \cdot 5 = 10$ electrons fit.
+**Answer:** $10$ electrons; the result is an exact integer.
+
+a) The orbital $1\text{s}$ has no node, the orbital $2\text{s}$ has a nodal sphere and the orbital $2\text{p}$ has a nodal plane.
+
+b) At a node the wave is zero, so the probability of finding the electron there is zero. On both sides of the node the wave is not zero, so the electron can be on either side without ever being found at the node. This does not mean that the electron travels through the node along a path: the wave is a state that has no path.
+**Reasonableness:** The result $10$ equals the greatest number of the shell $n = 2$, $2 \cdot 2^2 = 8$, plus that of the shell $n = 1$, $2 \cdot 1^2 = 2$, so $8 + 2 = 10$. The $10$ electrons of neon fill exactly these subshells, $1\text{s}^2\,2\text{s}^2\,2\text{p}^6$.
+
+## fy8-5-L2-09
+**Given:** energies from the figure $E_4 = -0.850\,\text{eV}$ ($4\text{s}$) and $E_2 = -3.40\,\text{eV}$ ($2\text{p}$); $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Asked:** a) the energy of the photon $E_\text{f}$ in eV, b) the wavelength $\lambda$, c) the number of orbitals in the shell $n = 4$ and a justification that the wavelength is the same
+**Principle:** Energy is conserved: the energy of the atom decreases by the difference between the energies of the states, and the same energy leaves as a photon, whose energy is $E_\text{f} = \tfrac{hc}{\lambda}$. In the hydrogen atom the energy of a state depends only on the principal quantum number.
+**Reading the graph:** In the figure the box of the $4\text{s}$ orbital is at $-0.850\,\text{eV}$ on the energy axis and the boxes of the $2\text{p}$ orbitals at $-3.40\,\text{eV}$. The arrow starts from the upper level and ends at the lower one, so the photon is born in the transition $E_4 \to E_2$. On the shell $n = 4$ the figure shows the subshells $4\text{s}$, $4\text{p}$, $4\text{d}$ and $4\text{f}$ with $1$, $3$, $5$ and $7$ boxes.
+**Formula:** $E_\text{f} = E_4 - E_2$ and $E_\text{f} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Conversions:** The energy is converted to joules: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
+**Substitution:** Part a): $$
+\begin{aligned}
+E_\text{f} &= E_4 - E_2 \\
+&= -0.850\,\text{eV} - (-3.40\,\text{eV}) \\
+&= 2.55\,\text{eV}
+\end{aligned}
+$$
+Conversion to joules: $$
+\begin{aligned}
+E_\text{f} &= 2.55 \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 4.085 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
+Part b): $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+and $$
+\begin{aligned}
+\lambda &= \frac{hc}{E_\text{f}} \\
+&= \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.085 \cdot 10^{-19}\,\text{J}} \\
+&= 4.863 \cdot 10^{-7}\,\text{m} \\
+&= 486\,\text{nm}
+\end{aligned}
+$$
+**Answer:** $486\,\text{nm}$, three significant figures like the energies $-0.850\,\text{eV}$ and $-3.40\,\text{eV}$.
+
+a) The energy of the photon is $E_\text{f} = 2.55\,\text{eV}$.
+
+b) The wavelength is $\lambda = 486\,\text{nm}$.
+
+c) The number of orbitals in the shell $n = 4$ is $1 + 3 + 5 + 7 = 16 = 4^2$. In the hydrogen atom the energy of a state depends only on the principal quantum number, so all $16$ orbitals have the same energy $-0.850\,\text{eV}$. The transition $4\text{d} \to 2\text{p}$ starts at the same energy and ends at the same energy as $4\text{s} \to 2\text{p}$, so the energy difference $2.55\,\text{eV}$ and the wavelength $486\,\text{nm}$ are the same.
+**Reasonableness:** The wavelength $486\,\text{nm}$ is in the visible range, blue-green light, and it is the second line of hydrogen's Balmer series. It is shorter than the $656\,\text{nm}$ of the transition $3 \to 2$, because the energy difference $2.55\,\text{eV}$ is greater than $1.89\,\text{eV}$.

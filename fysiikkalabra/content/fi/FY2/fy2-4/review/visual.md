@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2af4e94933738418
+CONTENT-HASH: 32e60d1d00526625
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy2-4 reflow-lesson-1: formulas in the narrow boxes are set smaller than the surrounding text; this comes from the shared component, not the lesson.
+- none
 
 ## Checked
-batch delta review: opened the reflow captures (rows legible, no clipping, equals signs aligned, punctuation inside the last row) and the changed figure captures where the diff touches figures; no problem blocking publication.
+- Delta md-paragraphs (lesson.md, example stages 1 and 6). Opened fy2-4-example-390-1.png and fy2-4-example-390-2.png: the knowns are now a three-item bullet list (formulas intact, commas and "ja" read correctly), "Kysytään" on its own line; the result line and the significant-figures sentence are separate paragraphs; spacing consistent with the other stages, nothing clipped.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

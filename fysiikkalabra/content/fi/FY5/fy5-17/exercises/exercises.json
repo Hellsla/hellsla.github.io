@@ -253,7 +253,7 @@
     {
       "id": "fy5-17-L2-07",
       "level": 2,
-      "text": "Opiskelija ratkaisee tehtävän: ”Seismografiasemalla S-aalto saapui $16{,}0\\,\\text{s}$ P-aallon jälkeen. P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$. Kuinka kaukana järistys tapahtui?”\n\nOpiskelijan ratkaisu: $d = v_\\text{P}\\,\\Delta t = 6{,}0\\,\\text{km/s} \\cdot 16{,}0\\,\\text{s} = 96\\,\\text{km}$.\n\nTulos on väärä. Mikä virhe ratkaisussa on?",
+      "text": "Opiskelija ratkaisee tehtävän: ”Seismografiasemalla S-aalto saapui $16{,}0\\,\\text{s}$ P-aallon jälkeen. P-aallon nopeus on $6{,}0\\,\\text{km/s}$ ja S-aallon $3{,}5\\,\\text{km/s}$. Kuinka kaukana järistys tapahtui?”\n\nOpiskelijan ratkaisu: $d = v_\\text{P}\\,\\Delta t$ $= 6{,}0\\,\\text{km/s} \\cdot 16{,}0\\,\\text{s}$ $= 96\\,\\text{km}$.\n\nTulos on väärä. Mikä virhe ratkaisussa on?",
       "kind": [
         "error",
         "concept"

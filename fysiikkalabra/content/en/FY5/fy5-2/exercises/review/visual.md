@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 24819334321b131a
-Mode: delta (new task fy5-2-L2-08), Round: 1
+CONTENT-HASH: 81b2ec0b88311f39
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Own 390 px render of preview/en/fy5-2.html after the page scripts ran, task fy5-2-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, no figure or table in the task, choice feedback, full worked solution; units, decimal marks and case endings render correctly.
-- Task text and solution read as English; language matches the reviewed Finnish set.
+- Delta (Principle, Model answer and Reasonableness split into paragraphs). Opened fy5-2 open-exercises-1280-1, -5, -6, -7: each split reads as short paragraphs inside the solution card, order and spacing consistent, formulas unchanged, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

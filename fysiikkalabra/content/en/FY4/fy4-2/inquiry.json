@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review from the chapter Position, velocity and uniform motion as graphs",
-      "prompt": "The $(t,x)$ graph of a cart is a straight line through the points $(0\\,\\text{s};\\, 2.0\\,\\text{m})$ and $(4.0\\,\\text{s};\\, 14\\,\\text{m})$. What is the cart's velocity?",
+      "prompt": "Measured from the video, the stone falls $1.2\\,\\text{m}$ during the first $0.50\\,\\text{s}$. How large is the stone's average velocity during this interval?",
       "choices": [
         {
-          "text": "$3.0\\,\\text{m/s}$",
+          "text": "$2.4\\,\\text{m/s}$",
           "correct": true,
-          "feedback": "Correct: the velocity is the slope of the line, $v = \\dfrac{14\\,\\text{m} - 2.0\\,\\text{m}}{4.0\\,\\text{s} - 0\\,\\text{s}} = 3.0\\,\\text{m/s}$. In this chapter the same idea carries over to velocity: acceleration is the slope of the $(t,v)$ graph."
+          "feedback": "Correct: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{1.2\\,\\text{m}}{0.50\\,\\text{s}} = 2.4\\,\\text{m/s}$ downwards. Over the whole first second the average velocity is already about $5\\,\\text{m/s}$, so the velocity grows. In this chapter the change in velocity is described by the acceleration, the slope of the $(t,v)$ graph."
         },
         {
-          "text": "$3.5\\,\\text{m/s}$",
-          "feedback": "You divided the final position by the time: $\\dfrac{14\\,\\text{m}}{4.0\\,\\text{s}}$. The cart does not start from the origin but from the position $2.0\\,\\text{m}$, so the velocity is calculated from the change in position $\\Delta x = 14\\,\\text{m} - 2.0\\,\\text{m}$."
+          "text": "$0.60\\,\\text{m/s}$",
+          "feedback": "You multiplied the change in position by the time: $1.2\\,\\text{m} \\cdot 0.50\\,\\text{s}$. The unit of the product would be $\\text{m}\\cdot\\text{s}$, not $\\text{m/s}$. Average velocity is the change in position divided by the time: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$."
         },
         {
-          "text": "$12\\,\\text{m/s}$",
-          "feedback": "The number $12\\,\\text{m}$ is the change in position $\\Delta x$, not a velocity. You get the velocity by dividing the change in position by the time it took, $4.0\\,\\text{s}$."
+          "text": "$1.2\\,\\text{m/s}$",
+          "feedback": "The number $1.2\\,\\text{m}$ is the change in position, not a velocity. The stone falls it in $0.50\\,\\text{s}$, so the velocity is the change in position divided by that time."
         },
         {
-          "text": "$0.33\\,\\text{m/s}$",
-          "feedback": "You divided the change in time by the change in position. Velocity is the change in position divided by the change in time: $v = \\dfrac{\\Delta x}{\\Delta t}$."
+          "text": "$0.42\\,\\text{m/s}$",
+          "feedback": "You divided the time by the change in position. The unit of the result is $\\text{s/m}$, not $\\text{m/s}$. Average velocity is the change in position divided by the change in time: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$."
         }
       ]
     },

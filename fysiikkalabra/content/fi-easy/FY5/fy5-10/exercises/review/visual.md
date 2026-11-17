@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6b38c22268050a92
+CONTENT-HASH: 73ba5f0f571657b0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] solutions.md: the second paragraph starts mid-argument ("Väite ..."); acceptable, each paragraph is one idea.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-10.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- Changed: aligned C-rows (fraction style \frac inside aligned; display so acceptable).
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-10 --lang fi-easy; opened fy5-10-open-exercises-1280-7 (split Mallivastaus in the open card).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

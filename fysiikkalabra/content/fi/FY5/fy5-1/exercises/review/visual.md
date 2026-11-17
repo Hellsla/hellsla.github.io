@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 682917e1074659db
-SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
+CONTENT-HASH: 483dc3f4f331ce02
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-1-L1-09 solution — the four unit checks are bare lines with colons; could be one short sentence each (carried over from the previous round).
+- [Minor] solutions.md L3-04 Sijoitus (about line 199) — only "vaihteella 2" is set as display maths while vaihde 1 and 3 stay inline, so the three parallel results look unequal; cosmetic (also in the previous report).
 
 ## Checked
-- fy5-1-open-exercises-1280-9 and -10 (task 1-10 with the figure `fy5-1/ruutu`, answer, full solution open at 664 px width). Delta only: L1-10.
-- Figure: grid, bar O to P, horizontal red \overline{F} at P, dashed line of action, 0,10 m scale bar; labels LaTeX, nothing clipped; it gives all values the task needs and does not draw the arm or give the answer.
-- Solution: principle, reading of the figure, formula, conversion, substitution, answer, check in order; units upright with thin spaces, decimal commas, `\cdot`; the chains wrap as aligned rows. The situation precedes the question as its own sentence.
+- Own captures (preview/fy5-1.html?ratkaisut=1, details opened, 390 px): w1-390-0.png (L1 door, Mallivastaus split), w1-390-1.png (L2 crank, Periaate split).
+- Each split is a proper paragraph inside the card, no gap or clipping; units, decimal commas and \cdot intact; words unchanged.
+- scrollWidth 390 and 1280, no horizontal overflow.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

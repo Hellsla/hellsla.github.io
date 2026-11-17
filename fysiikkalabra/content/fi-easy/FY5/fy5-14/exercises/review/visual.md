@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4f57cbe8a8fe14f8
+CONTENT-HASH: a1fcadfbf51b2c8e
+ROUND: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-14-L2-09 — 'lukumystiikka tai salaliittoteoria' is heavy for S2; consider a short explanation.
+(none) The delta only splits long solution paragraphs into shorter ones; the words, formulas and units are unchanged, and the split points fall at natural boundaries.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-14.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- New task fy5-14-L2-09 and the changed solutions read; no asterisks, no clipping.
+- Delta (solutions.md only: paragraph splits). Captures opened in content/fi-easy/FY5/fy5-14/review/shots/: fy5-14-open-exercises-L3-1280-6 (the L3 data task with its Vastaus; same shared solution component as the changed paragraphs elsewhere).
+- Paragraphs now read as separate blocks with normal spacing, display chains stay on one row with thin-spaced units and decimal comma, nothing clipped, no overflow, no KaTeX error visible.
+- Not every changed paragraph was opened individually; they use the same shared solution component, so the sampled captures stand for them.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

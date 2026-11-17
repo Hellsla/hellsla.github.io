@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: adeda9714a4d18e4
+CONTENT-HASH: 0e3f32db70eec092
+ROUND: 1
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-5 solutions — the stray \quad before the continued \cdot leaves a visible gap at the start of continuation rows; harmless.
-- [Minor] fy5-5-L3 solutions — Vastaus of gamma task is a long block (about 100 words); could split b) into its own paragraph.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-5.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text. Also 390 px.
-- Opened screenshots at 390 px of solutions L2-02 (Venus mass chain, aligned rows, = in one column) and L2-03 (h; Sijoitus split into three short formula blocks with 'Osoittaja on / joten / ja'), plus the earlier \quad rows: no clipping, Finnish clear.
+- Delta: solutions.md only; the diff splits long Mallivastaus/Vastaus paragraphs into two, same words and order, no formula changed.
+- Opened lesson-folder capture fy5-5-open-exercises-1280-6.png (L1-06 split into two paragraphs, rendered) at 1280 px: split paragraphs render as separate blocks inside the solution card, spacing normal, no clipping, no gap, maths intact.
+- Hash matched the stamp of the captures (exercises 0e3f32db70eec092); run again at the end: 0e3f32db70eec092.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

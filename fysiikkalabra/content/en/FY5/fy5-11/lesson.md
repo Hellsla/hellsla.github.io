@@ -1163,11 +1163,15 @@ Sea waves approach a straight breakwater so that the wavefronts make an angle of
 
 <!-- vaihe -->
 
-**Given and find.** The angle between the wavefront and the wall is $\varphi = 50^\circ$. We are asked for the angle of incidence $\alpha$, the angle of reflection $\beta$, and the angle $\gamma$ between the reflected ray and the surface of the wall.
+**Given and find.** The angle between the wavefront and the wall is $\varphi = 50^\circ$.
+
+We are asked for the angle of incidence $\alpha$, the angle of reflection $\beta$, and the angle $\gamma$ between the reflected ray and the surface of the wall.
 
 <!-- vaihe -->
 
-**Principle.** A ray is perpendicular to the wavefront and the normal is perpendicular to the wall. When both lines are turned through $90^\circ$, the angle between them does not change, so the angle between the ray and the normal is the same as the angle between the front and the wall. By the law of reflection the angle of reflection is equal to the angle of incidence when both are measured from the normal.
+**Principle.** A ray is perpendicular to the wavefront and the normal is perpendicular to the wall. When both lines are turned through $90^\circ$, the angle between them does not change, so the angle between the ray and the normal is the same as the angle between the front and the wall.
+
+By the law of reflection the angle of reflection is equal to the angle of incidence when both are measured from the normal.
 
 <!-- vaihe -->
 

@@ -4,7 +4,7 @@
 **Periaate:** Kaikki kappaleet vetävät toisiaan Newtonin gravitaatiolain mukaisesti. Opiskelijat käsitellään pistemäisinä, eli koko massan ajatellaan olevan yhdessä pisteessä, painopisteessä. Silloin etäisyys mitataan painopisteiden välillä. Sama voima vaikuttaa kumpaankin.
 **Kaava:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Muunnokset:** Massat ja etäisyys ovat SI-yksiköissä. Lopuksi $1\,\mu\text{N} = 10^{-6}\,\text{N}$.
-**Sijoitus:** $F = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0{,}80\,\text{m})^2} = 4{,}015 \cdot 10^{-7}\,\text{N} = 0{,}4015\,\mu\text{N}$
+**Sijoitus:** $F$ $= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $\dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0{,}80\,\text{m})^2}$ $= 4{,}015 \cdot 10^{-7}\,\text{N}$ $= 0{,}4015\,\mu\text{N}$
 **Vastaus:** $0{,}40\,\mu\text{N}$, kaksi merkitsevää numeroa kuten massoissa ja etäisyydessä $0{,}80\,\text{m}$.
 **Järkevyys:** Voima vastaa noin $0{,}04\,\text{mg}$:n massaisen hiukkasen painoa, joten sitä ei arjessa huomaa. Suuruusluokka on sama kuin luvun esimerkissä, jossa kahden ihmisen välinen voima metrin etäisyydellä oli noin $0{,}28\,\mu\text{N}$. Tässä etäisyys on pienempi, joten voima on hieman suurempi.
 
@@ -187,7 +187,9 @@ $$\begin{aligned}
 ## fy5-5-L1-06
 **Kysytty:** kuinka suurella voimalla Kuu vetää Maata, kun Maa vetää Kuuta gravitaatiovoimalla.
 **Periaate:** Gravitaatio on kahden kappaleen välinen vuorovaikutus. Newtonin kolmannen lain mukaan vuorovaikutuksen osapuolet vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla. Newtonin gravitaatiolain mukaan voiman suuruus on $F = \gamma \tfrac{m_1 m_2}{r^2}$. Siinä on mukana kummankin kappaleen massa.
-**Mallivastaus:** Kuu vetää Maata täsmälleen yhtä suurella voimalla kuin Maa vetää Kuuta. Voimat ovat saman vuorovaikutuksen vastavoimia. Gravitaatiolaissa massat ovat tulossa $m_1 m_2$, ja tulo on sama kummallekin kappaleelle. Siksi myös voima on sama. Massojen ero ei näy voimassa vaan kiihtyvyydessä. Kuun kiihtyvyys on noin $81$-kertainen Maan kiihtyvyyteen verrattuna. Sama voima vaikuttaa nimittäin kappaleeseen, joka on noin $81$ kertaa kevyempi (Maan massa on $81$ Kuun massaa). Liike ei vaikuta voimaan. Pienikin kappale vetää suurta.
+**Mallivastaus:** Kuu vetää Maata täsmälleen yhtä suurella voimalla kuin Maa vetää Kuuta. Voimat ovat saman vuorovaikutuksen vastavoimia. Gravitaatiolaissa massat ovat tulossa $m_1 m_2$, ja tulo on sama kummallekin kappaleelle. Siksi myös voima on sama. Massojen ero ei näy voimassa vaan kiihtyvyydessä.
+
+Kuun kiihtyvyys on noin $81$-kertainen Maan kiihtyvyyteen verrattuna. Sama voima vaikuttaa nimittäin kappaleeseen, joka on noin $81$ kertaa kevyempi (Maan massa on $81$ Kuun massaa). Liike ei vaikuta voimaan. Pienikin kappale vetää suurta.
 
 ## fy5-5-L1-07
 **Kysytty:** mikä on gravitaatiovoima, kun toisen kappaleen massa ja kappaleiden etäisyys kaksinkertaistuvat.
@@ -197,7 +199,9 @@ $$\begin{aligned}
 ## fy5-5-L1-08
 **Kysytty:** mikä virhe opiskelijan laskussa on, kun hän käyttää etäisyytenä $r = 400\,\text{km}$ ja saa liian suuren voiman.
 **Periaate:** Newtonin gravitaatiolaissa $r$ on kappaleiden keskipisteiden välinen etäisyys. Pallon muotoinen Maa vetää ulkopuolista kappaletta kuin sen koko massa olisi keskipisteessä. Siksi $r$ mitataan Maan keskipisteestä, ei pinnalta.
-**Mallivastaus:** Opiskelija käyttää korkeutta pinnasta. Etäisyys pitää kuitenkin mitata Maan keskipisteestä satelliittiin. Oikea etäisyys on Maan säde plus korkeus, noin $6378\,\text{km} + 400\,\text{km} \approx 6800\,\text{km}$. Opiskelijan etäisyys on noin $17$ kertaa liian pieni. Siksi voima on noin $17^2 \approx 290$ kertaa liian suuri. Tämä sopii tehtävän tietoon, että tulos on moninkertainen. Gravitaatiolaki pätee avaruudessa, voimaa ei jaeta kahtia eikä etäisyyttä anneta Maan säteinä. Nämä eivät siis ole virheitä.
+**Mallivastaus:** Opiskelija käyttää korkeutta pinnasta. Etäisyys pitää kuitenkin mitata Maan keskipisteestä satelliittiin. Oikea etäisyys on Maan säde plus korkeus, noin $6378\,\text{km} + 400\,\text{km} \approx 6800\,\text{km}$. Opiskelijan etäisyys on noin $17$ kertaa liian pieni.
+
+Siksi voima on noin $17^2 \approx 290$ kertaa liian suuri. Tämä sopii tehtävän tietoon, että tulos on moninkertainen. Gravitaatiolaki pätee avaruudessa, voimaa ei jaeta kahtia eikä etäisyyttä anneta Maan säteinä. Nämä eivät siis ole virheitä.
 
 ## fy5-5-L2-05
 **Annettu:** kolme planeettaa taulukossa (NASA Planetary Fact Sheet): Saturnus $M = 568 \cdot 10^{24}\,\text{kg}$, $R = 58\,232\,\text{km}$; Uranus $M = 86{,}8 \cdot 10^{24}\,\text{kg}$, $R = 25\,362\,\text{km}$; Neptunus $M = 102 \cdot 10^{24}\,\text{kg}$, $R = 24\,622\,\text{km}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -245,7 +249,9 @@ Kohta b:
 \end{aligned}
 ```
 Arvojen summa on $26{,}88 \cdot 10^{-11}$, joten keskiarvo on $\gamma_\text{ka} = \tfrac{26{,}88}{4} \cdot 10^{-11} = 6{,}72 \cdot 10^{-11}$ (yksikkö $\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$).
-**Vastaus:** $\gamma_\text{ka} \approx 6{,}72 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Etäisyyksissä ja useimmissa voimissa on kaksi merkitsevää numeroa. Siksi tulos on luotettava kahden numeron tarkkuudella: $6{,}7 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Kolmas numero on mukana vain vertailua varten. Tunnettu arvo $6{,}674 \cdot 10^{-11}$ eroaa tuloksesta noin $0{,}7\,\%$. Kohta b: koska $F = \gamma M m \cdot \tfrac{1}{r^2}$, kuvaajan $F$ suhteessa $\tfrac{1}{r^2}$ pitäisi olla suora, joka kulkee origon kautta. Sen kulmakerroin on $\gamma M m \approx 2{,}0 \cdot 10^{-12}\,\text{N}\cdot\text{m}^2$. Kuvaaja $(r, F)$ taas on laskeva käyrä, ei suora.
+**Vastaus:** $\gamma_\text{ka} \approx 6{,}72 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Etäisyyksissä ja useimmissa voimissa on kaksi merkitsevää numeroa. Siksi tulos on luotettava kahden numeron tarkkuudella: $6{,}7 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Kolmas numero on mukana vain vertailua varten. Tunnettu arvo $6{,}674 \cdot 10^{-11}$ eroaa tuloksesta noin $0{,}7\,\%$.
+
+Kohta b: koska $F = \gamma M m \cdot \tfrac{1}{r^2}$, kuvaajan $F$ suhteessa $\tfrac{1}{r^2}$ pitäisi olla suora, joka kulkee origon kautta. Sen kulmakerroin on $\gamma M m \approx 2{,}0 \cdot 10^{-12}\,\text{N}\cdot\text{m}^2$. Kuvaaja $(r, F)$ taas on laskeva käyrä, ei suora.
 **Järkevyys:** Yksittäiset arvot ovat välillä $6{,}61 \cdot 10^{-11}$ ja $6{,}88 \cdot 10^{-11}$. Ne ovat enintään noin $2{,}5\,\%$ keskiarvosta. Se on pieni satunnainen vaihtelu kokeessa, jossa voimat ovat nanonewtonien luokkaa. Keskiarvo on lähellä tunnettua arvoa, joten mittaus tukee gravitaatiolakia. Tarkistus: $F$ pienenee, kun $r$ kasvaa $4{,}0\,\text{cm}$:sta $8{,}0\,\text{cm}$:iin. Arvo $1{,}29\,\text{nN}$ on noin nelinkertainen arvoon $0{,}31\,\text{nN}$ verrattuna, kuten pitääkin.
 
 ## fy5-5-L2-07
@@ -291,7 +297,9 @@ Kohta b: tilavuus on $V = \tfrac{4}{3}\pi\,(6{,}371 \cdot 10^{6}\,\text{m})^3 = 
 &= 5508\,\tfrac{\text{kg}}{\text{m}^3}
 \end{aligned}
 ```
-**Vastaus:** Maan keskitiheys on $5510\,\text{kg/m}^3$. Vastauksessa on kolme merkitsevää numeroa, kuten kentän voimakkuudessa ja säteessä. Maan massa on $5{,}97 \cdot 10^{24}\,\text{kg}$. Kohta c: kivilajien tiheydet ovat välillä $2400$–$3000\,\text{kg/m}^3$. Jos Maa koostuisi kokonaan niistä, sen keskitiheys olisi enintään $3000\,\text{kg/m}^3$. Todellinen keskitiheys on lähes kaksinkertainen: $\tfrac{5510}{3000} \approx 1{,}8$ ja $\tfrac{5510}{2700} \approx 2{,}0$. Maa ei siis voi koostua pelkästään tällaisista kivilajeista. Kuori on kevyttä. Siksi sisäosien täytyy olla paljon tiheämpää ainetta kuin kuoren, esimerkiksi metallista rautaa.
+**Vastaus:** Maan keskitiheys on $5510\,\text{kg/m}^3$. Vastauksessa on kolme merkitsevää numeroa, kuten kentän voimakkuudessa ja säteessä. Maan massa on $5{,}97 \cdot 10^{24}\,\text{kg}$. Kohta c: kivilajien tiheydet ovat välillä $2400$–$3000\,\text{kg/m}^3$. Jos Maa koostuisi kokonaan niistä, sen keskitiheys olisi enintään $3000\,\text{kg/m}^3$.
+
+Todellinen keskitiheys on lähes kaksinkertainen: $\tfrac{5510}{3000} \approx 1{,}8$ ja $\tfrac{5510}{2700} \approx 2{,}0$. Maa ei siis voi koostua pelkästään tällaisista kivilajeista. Kuori on kevyttä. Siksi sisäosien täytyy olla paljon tiheämpää ainetta kuin kuoren, esimerkiksi metallista rautaa.
 **Järkevyys:** Tulos on noin $5{,}5$-kertainen veden tiheyteen $1000\,\text{kg/m}^3$ verrattuna. Se vastaa Cavendishin omaa tulosta, noin $5450\,\text{kg/m}^3$ (ero noin $1\,\%$). Tulo on $\gamma M \approx 3{,}98 \cdot 10^{14}\,\text{m}^3/\text{s}^2$.
 
 ## fy5-5-L3-05
@@ -322,7 +330,9 @@ N_\text{b} &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}5397)\,\tfrac{\text{m}}{\tex
 &= 574{,}8\,\text{N}
 \end{aligned}
 ```
-**Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$. Jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$. Navalla lukema olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$). Siksi $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, joten $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
+**Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$. Jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$. Navalla lukema olisi $mg = 608\,\text{N}$.
+
+Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$). Siksi $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, joten $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
 **Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi:
 
 $$\begin{aligned}
@@ -352,7 +362,9 @@ $$\begin{aligned}
 &\phantom{a_{\text{B}}} \approx 2{,}1 \cdot 10^{-5}\,\text{m/s}^2
 \end{aligned}$$
 
-Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä. Asteroideja ei vedä sama kappale: A:ta vetää vain B ja B:tä vain A. Voima on kumpaankin yhtä suuri, ja A:n suurempi massa saa sen kiihtymään vähemmän. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.
+Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}}}{m_{\text{B}}} = 4$, eli asteroidin B kiihtyvyys on neljä kertaa A:n kiihtyvyys. Perustelu: voimat ovat yhtä suuret, ja sama voima kiihdyttää kevyempää kappaletta enemmän. Raskaampi asteroidi ei vedä kevyempää voimakkaammin. Myöskään sääntö ”kaikki kappaleet putoavat samalla kiihtyvyydellä” ei päde tässä.
+
+Asteroideja ei vedä sama kappale: A:ta vetää vain B ja B:tä vain A. Voima on kumpaankin yhtä suuri, ja A:n suurempi massa saa sen kiihtymään vähemmän. Etäisyys on molemmille sama, joten se ei vaikuta kiihtyvyyksien suhteeseen.
 
 ## fy5-5-L1-09
 **Annettu:** massa $m = 85\,\text{kg}$; Marsin kentän voimakkuus luetaan kuvasta

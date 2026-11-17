@@ -122,7 +122,11 @@
 ## fy1-1-L1-06
 **Kysytty:** mikä erottaa fysikaalisen mallin pelkästä havainnosta.
 **Periaate:** Havainto kertoo, mitä yksittäisessä tilanteessa tapahtui. Malli on yksinkertaistettu kuvaus ilmiöstä. Mallista voi päätellä ennusteita myös tilanteisiin, joita ei ole vielä tutkittu. Fysiikka nojaa kokeisiin, joten ennuste testataan mittauksella. Mallin luotettavuus on varmistettu niissä oloissa, joissa mallia on testattu. Uusissa oloissa täytyy arvioida, kuinka luotettava ennuste on.
-**Mallivastaus:** Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella. Malli on yksinkertaistettu kuvaus, ja koe tai mittaus ratkaisee, kestääkö se. Kiven ja höyhenen putoaminen on havainto. Malli, jossa ilmanvastus jätetään pois, ennustaa kappaleiden putoamisen. Se pätee vain, kun ilmanvastus on pieni. Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. Jos huolellinen mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan.
+**Mallivastaus:** Mallista voi päätellä ennusteen uuteen tilanteeseen, ja ennusteen voi testata mittauksella. Malli on yksinkertaistettu kuvaus, ja koe tai mittaus ratkaisee, kestääkö se.
+
+Kiven ja höyhenen putoaminen on havainto. Malli, jossa ilmanvastus jätetään pois, ennustaa kappaleiden putoamisen. Se pätee vain, kun ilmanvastus on pieni.
+
+Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. Jos huolellinen mittaus poikkeaa ennusteesta, mallia korjataan tai sen voimassaolo rajataan.
 
 ## fy1-1-L1-07
 **Annettu:** etäisyys $s = 3{,}84\cdot10^{8}\,\text{m}$ ja valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$
@@ -173,7 +177,11 @@
 **Muunnokset:** Ei tarvita. Korkeus on jo millimetreinä, ja arkkien määrä on pelkkä luku.
 **Sijoitus:** $d = \dfrac{30{,}6\,\text{mm}}{300} = 0{,}102\,\text{mm}$
 **Vastaus:** $0{,}10\,\text{mm}$, kaksi merkitsevää numeroa. Suora sovitetaan silmämääräisesti, ja pinon korkeudessa on muitakin virhelähteitä kuin viivaimen lukeminen. Silmämääräinen sovitus vaihtelee, joten noin $0{,}097\text{–}0{,}107\,\text{mm}$ on hyvä vastaus.
-**Mallivastaus pinon eduista:** Yhden arkin paksuus on noin $0{,}1\,\text{mm}$. Se on paljon pienempi kuin viivaimen asteikkoväli $1\,\text{mm}$, joten yksittäisestä arkista ei saisi mitään luettua. Kun mittalaitteen asteikolta luetaan arvo, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä lukuvälistä. Tässä se on noin $0{,}25\,\text{mm}$. Pinon korkeus $30{,}6\,\text{mm}$ on siihen nähden suuri, ja lukemisen osuus jakautuu $300$ arkille: $0{,}25\,\text{mm} : 300 \approx 0{,}001\,\text{mm}$ yhtä arkkia kohti. Tämä on vain lukeman osuus. Mittauksen kokonaisepävarmuuteen vaikuttavat myös muut virhelähteet, kuten käsin painettu pino ja pisteiden hajonta noin $\pm0{,}3\,\text{mm}$. Kokonaisepävarmuus on siksi suurempi, ja vastaus annetaan kahdella merkitsevällä numerolla.
+**Mallivastaus pinon eduista:** Yhden arkin paksuus on noin $0{,}1\,\text{mm}$. Se on paljon pienempi kuin viivaimen asteikkoväli $1\,\text{mm}$, joten yksittäisestä arkista ei saisi mitään luettua.
+
+Kun mittalaitteen asteikolta luetaan arvo, lukeman epävarmuutta voidaan yksinkertaisessa tilanteessa arvioida esimerkiksi puoleksi pienimmästä lukuvälistä. Tässä se on noin $0{,}25\,\text{mm}$. Pinon korkeus $30{,}6\,\text{mm}$ on siihen nähden suuri, ja lukemisen osuus jakautuu $300$ arkille: $0{,}25\,\text{mm} : 300 \approx 0{,}001\,\text{mm}$ yhtä arkkia kohti. Tämä on vain lukeman osuus.
+
+Mittauksen kokonaisepävarmuuteen vaikuttavat myös muut virhelähteet, kuten käsin painettu pino ja pisteiden hajonta noin $\pm0{,}3\,\text{mm}$. Kokonaisepävarmuus on siksi suurempi, ja vastaus annetaan kahdella merkitsevällä numerolla.
 **Järkevyys:** Kopiopaperin arkki on tuttuun tapaan noin $0{,}1\,\text{mm}$ paksu. Nippu, jossa on $500$ arkkia, on $500\cdot0{,}10\,\text{mm} = 50\,\text{mm}$ eli noin viiden sentin paksuinen.
 
 ## fy1-1-L3-04
@@ -183,7 +191,9 @@
 **Kaava:** $V_\text{sade} = h\,A$, $V_\text{pisara} = \dfrac{4}{3}\pi r^{3}$ ja $N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
 **Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
 **Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \dfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
-**Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten mitatuissa lähtötiedoissa (kenttään sopii $1{,}19$). Kesto $10\,\text{min}$ on tarkka, valittu aika. Se ei rajoita tarkkuutta. Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\%$. Jos pisaran halkaisija on $20\,\%$ liian suuri, pisaran tilavuus kasvaa tekijällä $1{,}2^{3} = 1{,}73$ ja $N$ pienenee noin $42\,\%$. Pisaran koko vaikuttaa eniten, koska tilavuus on halkaisijan kolmannessa potenssissa.
+**Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten mitatuissa lähtötiedoissa (kenttään sopii $1{,}19$). Kesto $10\,\text{min}$ on tarkka, valittu aika. Se ei rajoita tarkkuutta.
+
+Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\%$. Jos pisaran halkaisija on $20\,\%$ liian suuri, pisaran tilavuus kasvaa tekijällä $1{,}2^{3} = 1{,}73$ ja $N$ pienenee noin $42\,\%$. Pisaran koko vaikuttaa eniten, koska tilavuus on halkaisijan kolmannessa potenssissa.
 **Järkevyys:** Jokaiselle neliömetrille tulee $$\begin{aligned} &1{,}19\cdot10^{9} : 6{,}0\cdot10^{3} \\ &\approx 2\cdot10^{5} \end{aligned}$$ pisaraa. Se on noin $20$ pisaraa neliösenttimetrille kymmenessä minuutissa, mikä on kohtuullinen määrä. Suuruusluokka $10^{9}$ ei muutu, vaikka yksittäinen oletus heittäisi parikymmentä prosenttia.
 
 ## fy1-1-L3-05
@@ -194,7 +204,9 @@
 **Muunnokset:** $t = 7{,}25\,\text{a} = 7{,}25\cdot3{,}156\cdot10^{7}\,\text{s} = 2{,}288\cdot10^{8}\,\text{s}$.
 **Sijoitus:** $s = 15{,}341\,\text{km/s}\cdot2{,}288\cdot10^{8}\,\text{s} = 3{,}510\cdot10^{9}\,\text{km} = \dfrac{3{,}510\cdot10^{9}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 23{,}46\,\text{AU}$ ja $d = 119{,}0\,\text{AU} + 23{,}46\,\text{AU} = 142{,}46\,\text{AU}$
 **Vastaus:** $142{,}5\,\text{AU}$, yksi desimaali kuten alkuetäisyydessä $119{,}0\,\text{AU}$, joka on summan epätarkin luku. Oppilas kertoi nopeuden $\text{km/s}$ vuosilla eikä sekunneilla, joten tulos ei ollut matka. Lisäksi hän laski yhteen kilometrejä ja tähtitieteellisiä yksiköitä. Malli ei ollut väärä.
-**Mallivastaus mittauksesta:** Ennuste $142{,}5\,\text{AU}$ on etäisyys Auringosta. Havainto $143{,}05\,\text{AU}$ on etäisyys Maasta. Ero on noin $0{,}6\,\text{AU}$. Se on alle noin $1\,\text{AU}$, jonka verran nämä etäisyydet voivat erota, koska Maa kiertää Aurinkoa. Malli ja havainto sopivat siis yhteen niin tarkasti kuin vertailu sallii, ja havainto tukee mallia. Se ei kuitenkaan todista mallia kaikkiin tilanteisiin. Nopeus voi muuttua hitaasti, ja malli pätee vain lähellä tarkasteltua väliä.
+**Mallivastaus mittauksesta:** Ennuste $142{,}5\,\text{AU}$ on etäisyys Auringosta. Havainto $143{,}05\,\text{AU}$ on etäisyys Maasta. Ero on noin $0{,}6\,\text{AU}$. Se on alle noin $1\,\text{AU}$, jonka verran nämä etäisyydet voivat erota, koska Maa kiertää Aurinkoa.
+
+Malli ja havainto sopivat siis yhteen niin tarkasti kuin vertailu sallii, ja havainto tukee mallia. Se ei kuitenkaan todista mallia kaikkiin tilanteisiin. Nopeus voi muuttua hitaasti, ja malli pätee vain lähellä tarkasteltua väliä.
 **Järkevyys:** Vuodessa Voyager kulkee $15{,}341\,\text{km/s}\cdot3{,}156\cdot10^{7}\,\text{s} = 4{,}84\cdot10^{8}\,\text{km} = 3{,}2\,\text{AU}$. Seitsemässä ja neljänneksessä vuodessa matka on noin $23\,\text{AU}$. Tulos täsmää.
 
 ## fy1-1-L1-09

@@ -271,7 +271,11 @@ a 0
 ## fy4-14-L2-07
 **Kysytty:** mikä väite hyppääjään vaikuttavasta kokonaisvoimasta on oikea taulukon aineiston perusteella.
 **Periaate:** Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei liikkeen suuntaan. Kiihtyvyys on nopeuden muutos jaettuna ajalla, joten se luetaan taulukosta nopeuden muutoksesta.
-**Mallivastaus:** Taulukossa nopeus alaspäin pienenee ensimmäisen sekunnin aikana arvosta $52{,}0\,\text{m/s}$ arvoon $24{,}5\,\text{m/s}$, eli noin $27{,}5\,\text{m/s}$ sekunnissa. Hyppääjä liikkuu alas mutta hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat ylös. Ilmanvastus on silloin painoa suurempi. Lopussa nopeus on lähes vakio, $7{,}3\,\text{m/s}$ ja $7{,}2\,\text{m/s}$, joten kiihtyvyys ja kokonaisvoima ovat lähes nolla ja ilmanvastus on painon suuruinen. Väite, että kokonaisvoima osoittaa alas, koska liike on alas, sekoittaa voiman ja nopeuden suunnan. Väite, että kokonaisvoima olisi nolla koko ajan, on ristiriidassa muuttuvan nopeuden kanssa.
+**Mallivastaus:** Taulukossa nopeus alaspäin pienenee ensimmäisen sekunnin aikana arvosta $52{,}0\,\text{m/s}$ arvoon $24{,}5\,\text{m/s}$, eli noin $27{,}5\,\text{m/s}$ sekunnissa. Hyppääjä liikkuu alas mutta hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat ylös. Ilmanvastus on silloin painoa suurempi.
+
+Lopussa nopeus on lähes vakio, $7{,}3\,\text{m/s}$ ja $7{,}2\,\text{m/s}$, joten kiihtyvyys ja kokonaisvoima ovat lähes nolla ja ilmanvastus on painon suuruinen.
+
+Väite, että kokonaisvoima osoittaa alas, koska liike on alas, sekoittaa voiman ja nopeuden suunnan. Väite, että kokonaisvoima olisi nolla koko ajan, on ristiriidassa muuttuvan nopeuden kanssa.
 
 ## fy4-14-L3-04
 **Annettu:** $m = 82{,}0\,\text{kg}$; taulukosta $v_1 = 33{,}0\,\text{m/s}$ hetkellä $t_1 = 0{,}5\,\text{s}$ ja $v_2 = 15{,}5\,\text{m/s}$ hetkellä $t_2 = 1{,}5\,\text{s}$; lopussa $v \approx 5{,}6\,\text{m/s}$; $g = 9{,}81\,\text{m/s}^2$; positiivinen suunta alas
@@ -336,4 +340,10 @@ v alas
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** a) $a = \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10{,}0\,\text{s} - 6{,}0\,\text{s}} = 1{,}50\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 1{,}50\,\text{m/s}^2) \\ &= 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 \\ &= 623{,}25\,\text{N} \end{aligned}$$. b) Paino $G = mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, joten $\dfrac{F_\text{v}}{G} = \dfrac{623{,}25\,\text{N}}{735{,}75\,\text{N}} = 0{,}847$
 **Vastaus:** a) $F_\text{v} \approx 623\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $75{,}0\,\text{kg}$. b) Ilmanvastus on noin $85\,\%$ painosta. Kuvaajan pisteet tasaantuvat lähelle arvoa $48\,\text{m/s}$: viimeisellä kahden sekunnin välillä nopeus kasvaa enää $0{,}9\,\text{m/s}$. Kun nopeus ei enää muutu, kiihtyvyys on nolla, joten kokonaisvoima on nolla ja ilmanvastus on yhtä suuri kuin paino, noin $736\,\text{N}$.
-**Järkevyys:** Paino on noin $736\,\text{N}$, ja ilmanvastus $623\,\text{N}$ on sitä pienempi, kuten pitää, kun hyppääjä vielä kiihtyy alas. Kiihtyvyys $1{,}5\,\text{m/s}^2$ on selvästi pienempi kuin $g$, mutta ei vielä nolla, joten ilmanvastus on painoa hieman pienempi. Alussa nopeus on nolla ja ilmanvastus nolla, ja siksi alun kulmakerroin on lähes $g$. Rajanopeus $48\,\text{m/s}$ on pienempi kuin noin $53\,\text{m/s}$, jonka luvun kuvaajan malli antaisi samalle massalle, koska tämä hyppääjä putoaa leveämmässä asennossa (suurempi poikkipinta-ala, esimerkiksi väljä puku) kuin kuvaajan hyppääjät.
+**Järkevyys:** Paino on noin $736\,\text{N}$, ja ilmanvastus $623\,\text{N}$ on sitä pienempi, kuten pitää, kun hyppääjä vielä kiihtyy alas.
+
+Kiihtyvyys $1{,}5\,\text{m/s}^2$ on selvästi pienempi kuin $g$, mutta ei vielä nolla, joten ilmanvastus on painoa hieman pienempi.
+
+Alussa nopeus on nolla ja ilmanvastus nolla, ja siksi alun kulmakerroin on lähes $g$.
+
+Rajanopeus $48\,\text{m/s}$ on pienempi kuin noin $53\,\text{m/s}$, jonka luvun kuvaajan malli antaisi samalle massalle, koska tämä hyppääjä putoaa leveämmässä asennossa (suurempi poikkipinta-ala, esimerkiksi väljä puku) kuin kuvaajan hyppääjät.

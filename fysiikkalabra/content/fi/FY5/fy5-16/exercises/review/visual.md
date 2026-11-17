@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 632e5672772dd3f3
+CONTENT-HASH: eb7c96ab7fd1972b
+ROUND: 1
 
 ## Blocking
-(none; round-1 Major verified fixed)
 
 ## Polish
-- [Minor] fy5-16-L2-10 Sijoitus: the inline display "Kun taso kasvaa 10 dB, suhde on I₂/I₁ = 10¹ = 10" sits tight between the b) block and "Kohta c:"; a little spacing or a block.
-- [Minor] Task text part c) is still long (three questions); optional split.
+
 
 ## Checked
-- Own 360 px render of fy5-16-L2-10 with solution open (tiles for Sijoitus, Vastaus, Järkevyys): Vastaus now has the answer box "t₂ ≈ 1,0 h" plus a one-line sig-fig note, and a), b), c), d) as separate short paragraphs (longest about 85 words). Rows aligned, units upright, no clipping.
+- fy5-16 open-exercises-L3-1280-6 (task 16-24 with solution start, 1280 px) and L2-1280-13 (Kaava/Sijoitus blocks, 1280 px) opened; the split paragraphs in the Vastaus/Mallivastaus/Järkevyys blocks (L2-04, L3-02, L2-07) were judged from the diff and the same panel pattern.
+- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

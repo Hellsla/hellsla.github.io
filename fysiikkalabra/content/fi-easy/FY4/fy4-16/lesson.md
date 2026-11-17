@@ -301,7 +301,9 @@ Lapsi ja pulkka ovat yhteensä $32{,}0\,\text{kg}$. He lähtevät levosta suoran
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 32{,}0\,\text{kg}$, $L = 25{,}0\,\text{m}$, $\alpha = 20{,}0^\circ$, $\mu = 0{,}200$, alkunopeus $v_1 = 0$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään nopeutta $v_2$ rinteen juurella.
+**Tunnetut ja kysytty.** $m = 32{,}0\,\text{kg}$, $L = 25{,}0\,\text{m}$, $\alpha = 20{,}0^\circ$, $\mu = 0{,}200$, alkunopeus $v_1 = 0$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään nopeutta $v_2$ rinteen juurella.
 
 <!-- vaihe -->
 

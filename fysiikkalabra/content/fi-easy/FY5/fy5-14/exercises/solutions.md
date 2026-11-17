@@ -111,7 +111,9 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 ## fy5-14-L3-02
 **Annettu:** viritysääni $f_0 = 440\,\text{Hz}$, huojuntataajuus ennen kiristämistä $f_\text{H} = 4\,\text{Hz}$ ja kiristämisen jälkeen $6\,\text{Hz}$
 **Kysytty:** kielen taajuus $f$ ennen kiristämistä
-**Periaate:** Huojuntataajuus on taajuuksien erotuksen itseisarvo. Pelkästä huojunnasta kielen taajuus voi siis olla joko $440\,\text{Hz} - 4\,\text{Hz}$ tai $440\,\text{Hz} + 4\,\text{Hz}$. Kiristäminen kasvattaa aallon nopeutta kielessä. Siksi se nostaa kielen taajuutta. Huojunta nopeutui eli erotus kasvoi. Nouseva taajuus siis loittoni viritysäänestä, ja kieli oli jo valmiiksi viritysääntä korkeammalla. Jos kieli olisi ollut $436\,\text{Hz}$, kiristäminen olisi vienyt sitä kohti $440\,\text{Hz}$:ä. Silloin huojunta olisi hidastunut.
+**Periaate:** Huojuntataajuus on taajuuksien erotuksen itseisarvo. Pelkästä huojunnasta kielen taajuus voi siis olla joko $440\,\text{Hz} - 4\,\text{Hz}$ tai $440\,\text{Hz} + 4\,\text{Hz}$. Kiristäminen kasvattaa aallon nopeutta kielessä. Siksi se nostaa kielen taajuutta. Huojunta nopeutui eli erotus kasvoi. Nouseva taajuus siis loittoni viritysäänestä, ja kieli oli jo valmiiksi viritysääntä korkeammalla.
+
+Jos kieli olisi ollut $436\,\text{Hz}$, kiristäminen olisi vienyt sitä kohti $440\,\text{Hz}$:ä. Silloin huojunta olisi hidastunut.
 **Kaava:** $f_\text{H} = |f - f_0|$, ja kun $f > f_0$, $f = f_0 + f_\text{H}$
 **Muunnokset:** Ei tarvita. Kaikki taajuudet ovat hertseinä.
 **Sijoitus:** $f = 440\,\text{Hz} + 4\,\text{Hz} = 444\,\text{Hz}$
@@ -121,7 +123,9 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 ## fy5-14-L3-03
 **Kysytty:** sävelen perustaajuus, spektristä puuttuvat harmonisen sarjan jäsenet ja niiden merkitys klarinetin ilmapatsaalle
 **Periaate:** Soittimen spektrin piikit ovat ilmapatsaan ominaistaajuuksilla. Perustaajuus on alin ominaistaajuus. Molemmista päistä avoimessa putkessa ominaistaajuudet ovat kaikki perustaajuuden monikerrat $n f_1$. Toisesta päästä suljetussa putkessa niitä ovat vain parittomat monikerrat. Suljetussa päässä on nimittäin aina solmu ja avoimessa päässä kupu (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
-**Mallivastaus:** Alin piikki on $147\,\text{Hz}$, ja muut ovat sen kerrannaisia: $441\,\text{Hz} = 3 \cdot 147\,\text{Hz}$, $735\,\text{Hz} = 5 \cdot 147\,\text{Hz}$ ja $1029\,\text{Hz} = 7 \cdot 147\,\text{Hz}$. Perustaajuus on siis $147\,\text{Hz}$. Harmonisen sarjan parilliset jäsenet $294\,\text{Hz}$, $588\,\text{Hz}$ ja $882\,\text{Hz}$ puuttuvat lähes kokonaan. Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuuksia. Klarinetin ilmapatsas värähtelee siis kuin putki, jonka toinen pää on suljettu. Suukappaleen pää, jossa ruoko on, toimii suljettuna päänä, jossa on ilman liikkeen solmu. Kellon pää toimii avoimena päänä, jossa on kupu. Puuttuvat yläsävelet antavat klarinetille sen tumman sointivärin.
+**Mallivastaus:** Alin piikki on $147\,\text{Hz}$, ja muut ovat sen kerrannaisia: $441\,\text{Hz} = 3 \cdot 147\,\text{Hz}$, $735\,\text{Hz} = 5 \cdot 147\,\text{Hz}$ ja $1029\,\text{Hz} = 7 \cdot 147\,\text{Hz}$. Perustaajuus on siis $147\,\text{Hz}$. Harmonisen sarjan parilliset jäsenet $294\,\text{Hz}$, $588\,\text{Hz}$ ja $882\,\text{Hz}$ puuttuvat lähes kokonaan. Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuuksia.
+
+Klarinetin ilmapatsas värähtelee siis kuin putki, jonka toinen pää on suljettu. Suukappaleen pää, jossa ruoko on, toimii suljettuna päänä, jossa on ilman liikkeen solmu. Kellon pää toimii avoimena päänä, jossa on kupu. Puuttuvat yläsävelet antavat klarinetille sen tumman sointivärin.
 
 ## fy5-14-L1-06
 **Kysytty:** mikä korkeammasta äänestä on pakostakin totta
@@ -147,7 +151,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
-**Aineiston käsittely:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä. Keskiarvo on siis $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
+**Aineiston käsittely:** Taulukon neljän taajuuden summa on $$431 + 429 + 432 + 430 = 1722$$ hertsiä. Keskiarvo on siis $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
 **Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, josta $v - v_\text{L} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
 **Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
 **Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
@@ -179,7 +183,9 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 ## fy5-14-L3-04
 **Annettu:** anturin taajuus $f_0 = 4{,}00\,\text{MHz} = 4{,}00 \cdot 10^6\,\text{Hz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$, taajuuden muutokset $\Delta f$ taulukossa, veri virtaa suoraan kohti anturia
 **Kysytty:** veren suurin mitattu virtausnopeus $v_\text{v}$
-**Periaate:** Anturi on paikallaan, ja punasolu liikkuu kohti sitä nopeudella $v_\text{v}$. Punasolu on ensin liikkuva kuulija, joka lähestyy lähdettä. Se kuulee taajuuden $f_1 = f_0 \cdot \tfrac{v + v_\text{v}}{v}$. Solu heijastaa saman taajuuden takaisin. Silloin se on liikkuva lähde, joka lähestyy paikallaan olevaa anturia. Anturi vastaanottaa taajuuden $f = f_1 \cdot \tfrac{v}{v - v_\text{v}}$. Doppler-siirtymä tulee siis kahdesti, ja siksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
+**Periaate:** Anturi on paikallaan, ja punasolu liikkuu kohti sitä nopeudella $v_\text{v}$. Punasolu on ensin liikkuva kuulija, joka lähestyy lähdettä. Se kuulee taajuuden $f_1 = f_0 \cdot \tfrac{v + v_\text{v}}{v}$. Solu heijastaa saman taajuuden takaisin. Silloin se on liikkuva lähde, joka lähestyy paikallaan olevaa anturia. Anturi vastaanottaa taajuuden $f = f_1 \cdot \tfrac{v}{v - v_\text{v}}$.
+
+Doppler-siirtymä tulee siis kahdesti, ja siksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
 **Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
 **Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
@@ -203,7 +209,9 @@ $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 **Muunnokset:** Ei tarvita. Pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:**
 $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,}8\,\text{m/s} \end{aligned}$
-**Vastaus:** a) $196\,\text{Hz}$. Keskeltä näpäytettäessä puuttuvat parilliset harmoniset $392\,\text{Hz}$, $784\,\text{Hz}$ ja $1176\,\text{Hz}$. b) $255\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa ja taajuudessa. c) Parillisilla harmonisilla on kielen keskellä solmu. Solmukohta ei lähde värähtelemään, joten ne puuttuvat. Parittomilla on keskellä kupu, joten ne syntyvät. Keskeltä näpätty ääni on lähes puhdas perussävel ja pehmeä. Sillan lähellä kaikki harmoniset syntyvät. Esimerkiksi kolmannen amplitudi on $0{,}30$ ja kuudennen $0{,}09$. Runsaat yläsävelet tekevät äänestä kirkkaan. Korkeus on sama, koska perustaajuus on molemmissa $196\,\text{Hz}$.
+**Vastaus:** a) $196\,\text{Hz}$. Keskeltä näpäytettäessä puuttuvat parilliset harmoniset $392\,\text{Hz}$, $784\,\text{Hz}$ ja $1176\,\text{Hz}$. b) $255\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa ja taajuudessa. c) Parillisilla harmonisilla on kielen keskellä solmu. Solmukohta ei lähde värähtelemään, joten ne puuttuvat. Parittomilla on keskellä kupu, joten ne syntyvät. Keskeltä näpätty ääni on lähes puhdas perussävel ja pehmeä. Sillan lähellä kaikki harmoniset syntyvät.
+
+Esimerkiksi kolmannen amplitudi on $0{,}30$ ja kuudennen $0{,}09$. Runsaat yläsävelet tekevät äänestä kirkkaan. Korkeus on sama, koska perustaajuus on molemmissa $196\,\text{Hz}$.
 **Järkevyys:** Aallonpituus on $\lambda_1 = 2 \cdot 0{,}650\,\text{m} = 1{,}30\,\text{m}$, ja $1{,}30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$. Se on tavallinen suuruus kitaran kielelle. Taajuus $196\,\text{Hz}$ on sävel G3 eli kitaran kolmas kieli. Keskeltä näpäytettäessä parittomien amplitudit pienenevät suunnilleen kuten $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0{,}11$ ja $\tfrac{1}{25} = 0{,}04$, kuten taulukossa.
 
 ## fy5-14-L1-10
@@ -215,7 +223,7 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Muunnokset:** Niitä ei tarvita. Taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Vastaus:** $1400\,\text{Hz}$ eli $1{,}40 \cdot 10^{3}\,\text{Hz}$, kolme merkitsevää numeroa kuten luetussa perustaajuudessa $200\,\text{Hz}$.
-**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$. Piikkien väli on $200\,\text{Hz}$.
+**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $$\begin{aligned} &1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} \\ &= 1400\,\text{Hz} \end{aligned}$$. Piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa. Toinen äänirauta on $523\,\text{Hz}$. Vaha laskee tuntemattoman ääniraudan taajuutta, ja huojunta nopeutuu.
@@ -270,7 +278,9 @@ Väite fysiikasta on fysikaalisesti virheellinen. Ääni on väliaineen mekaanin
 
 Vaikutus kuulijaan on mahdollinen, mutta sitä ei ole osoitettu. Musiikki voi rauhoittaa kuulijaa. Siitä ei kuitenkaan seuraa, että juuri viritystaso vaikuttaa. Se pitäisi näyttää mittauksilla.
 
-Lukumystiikka on päätelmä, joka menee liian pitkälle. Lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä. Kohdan b) mukaan lukuarvo riippuu siitä, mikä yksikkö on valittu. Natsiteoria ei ole fysikaalinen väite lainkaan. Se on salaliittoteoria, jolle ei ole esitetty mitattavaa näyttöä. Siksi se kuuluu samaan ryhmään kuin lukumystiikka. Lisäksi viritystaso on artikkelin mukaan sopimus. Se on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$.
+Lukumystiikka on päätelmä, joka menee liian pitkälle. Lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä. Kohdan b) mukaan lukuarvo riippuu siitä, mikä yksikkö on valittu. Natsiteoria ei ole fysikaalinen väite lainkaan. Se on salaliittoteoria, jolle ei ole esitetty mitattavaa näyttöä. Siksi se kuuluu samaan ryhmään kuin lukumystiikka. Lisäksi viritystaso on artikkelin mukaan sopimus.
+
+Se on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$.
 
 Luotettavassa tutkimuksessa sama kappale soitetaan samalla voimakkuudella kummallakin viritystasolla. Kuulijat arvotaan ryhmiin. Kuulija ja mittaaja eivät tiedä, kumpaa viritystä kuunnellaan. Mitattava suure päätetään etukäteen. Se voi olla esimerkiksi syke, verenpaine tai stressikyselyn pistemäärä.
 

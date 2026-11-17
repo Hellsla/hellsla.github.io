@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b12c411f043ca675
-SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
+CONTENT-HASH: e83c7e5329f485e6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-11 — in the L2-10 task the wall is two small grey stubs labelled seinä; legible, but a stub is easy to read as a box (optional).
+(none)
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12, 13 (L2-09 and L2-10 with the ripple-tank grid figure, solutions open).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Delta (solutions.md: five solutions cut into paragraphs, words unchanged: L1-07, L2-06, L3-01, L3-04, L3-05).
+- Opened fy5-11-open-exercises-1280-6 (11-7 Mallivastaus), L2-1280-7 (11-14 Järkevyys now in three paragraphs inside the same tinted box), L2-1280-6, L2-1280-8 and L3-1280-7 (11-21 c) Perustelut split before the visible-light sentence).
+- Paragraph breaks fall at meaningful boundaries, panels keep their frame, formulas and units intact, no clipping or gaps.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

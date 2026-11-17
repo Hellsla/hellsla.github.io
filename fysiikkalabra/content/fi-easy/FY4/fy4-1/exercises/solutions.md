@@ -131,7 +131,9 @@ $$\begin{aligned} x &= 0 + 1{,}5\,\text{m/s} \cdot 33{,}33\ldots\,\text{s} \\ &=
 ## fy4-1-L1-06
 **Kysytty:** mitä laskeva suora $(t, x)$-kuvaajassa kertoo liikkeestä.
 **Periaate:** $(t, x)$-kuvaajan suoran kulmakerroin (suoran jyrkkyys) on nopeus $v = \dfrac{\Delta x}{\Delta t}$. Kun suora laskee, paikka pienenee ajan kuluessa. Silloin kulmakerroin ja nopeus ovat negatiivisia. Kuvaaja näyttää paikan ajan funktiona. Se ei näytä radan muotoa.
-**Mallivastaus:** Paikka pienenee ajan kuluessa, joten nopeus on negatiivinen ja kappale liikkuu negatiiviseen suuntaan. Vaihtoehto, jossa kappale liikkuu alamäkeä, sekoittaa kuvaajan ja radan kuvan. Kappale voi liikkua vaakasuoralla radalla, vaikka kuvaaja laskee. Pysähtynyt kappale on paikallaan, ja silloin kuvaaja on vaakasuora. Suora, jonka kulmakerroin ei muutu, kuvaa vakionopeutta. Se ei kuvaa hidastuvaa liikettä. Aika kasvaa aina oikealle mentäessä, joten mikään kappale ei kulje ajassa taaksepäin.
+**Mallivastaus:** Paikka pienenee ajan kuluessa, joten nopeus on negatiivinen ja kappale liikkuu negatiiviseen suuntaan. Vaihtoehto, jossa kappale liikkuu alamäkeä, sekoittaa kuvaajan ja radan kuvan. Kappale voi liikkua vaakasuoralla radalla, vaikka kuvaaja laskee. Pysähtynyt kappale on paikallaan, ja silloin kuvaaja on vaakasuora. Suora, jonka kulmakerroin ei muutu, kuvaa vakionopeutta.
+
+Se ei kuvaa hidastuvaa liikettä. Aika kasvaa aina oikealle mentäessä, joten mikään kappale ei kulje ajassa taaksepäin.
 **Kuvaajan lukeminen:** Laskevassa suorassa $x$ on pienempi, kun $t$ on suurempi. Siksi $\Delta x < 0$ ja $\Delta t > 0$. Silloin $\dfrac{\Delta x}{\Delta t} < 0$.
 
 ## fy4-1-L1-07
@@ -204,7 +206,11 @@ Todellinen alkupaikka on $1{,}25 \cdot 0{,}31\,\text{m} = 0{,}39\,\text{m}$. Ehd
 
 $$\begin{aligned} t &= \dfrac{6{,}0\,\text{m} - 0{,}39\,\text{m}}{0{,}80\,\text{m/s}} \\ &= 7{,}0\,\text{s} \end{aligned}$$
 **Vastaus:** todellinen nopeus on $0{,}80\,\text{m/s}$, kaksi merkitsevää numeroa kuten mittanauhan arvoissa. Ohjelman antama $0{,}64\,\text{m/s}$ on $20\,\%$ liian pieni. Kärry on todellisessa paikassa $6{,}0\,\text{m}$ noin $7{,}0\,\text{s}$ kuluttua.
-**Järkevyys:** Mittanauha näytti lyhyemmältä kuin se on. Siksi kaikki ohjelman pituudet ovat liian pieniä, ja korjauskertoimen pitää olla suurempi kuin yksi. Näin on, koska $1{,}25$ on suurempi kuin yksi. Tarkistus laskemalla takaisin: $0{,}80\,\text{m/s} \cdot 5{,}0\,\text{s} = 4{,}0\,\text{m}$ on kärryn todellinen siirtymä. Ohjelman siirtymä $3{,}2\,\text{m}$ on $0{,}8$-kertainen siihen nähden. Ennuste $7{,}0\,\text{s}$ on kaukana mittausvälin päästä. Mittaus päättyy hetkeen $5{,}0\,\text{s}$, joten ennuste ulottuu noin $40\,\%$ mittausaikaa pidemmälle. Ennuste on luotettava vain, jos rata on tasainen, kärry jatkaa vakionopeudella eikä rata pääty ennen $6{,}0\,\text{m}$:ä. Mittakaavavirhe on systemaattinen: se vääristää jokaista mittausta samaan suuntaan samalla kertoimella. Siksi mittausten toistaminen ei poista sitä keskiarvossa. Satunnaisvirhe taas hajottaa pisteitä suoran molemmille puolille, ja se pienenee toistamalla. Virhe korjataan vain kalibroimalla mittakaava tunnetulla pituudella samalta etäisyydeltä kuin kärryn rata.
+**Järkevyys:** Mittanauha näytti lyhyemmältä kuin se on. Siksi kaikki ohjelman pituudet ovat liian pieniä, ja korjauskertoimen pitää olla suurempi kuin yksi. Näin on, koska $1{,}25$ on suurempi kuin yksi. Tarkistus laskemalla takaisin: $0{,}80\,\text{m/s} \cdot 5{,}0\,\text{s} = 4{,}0\,\text{m}$ on kärryn todellinen siirtymä. Ohjelman siirtymä $3{,}2\,\text{m}$ on $0{,}8$-kertainen siihen nähden.
+
+Ennuste $7{,}0\,\text{s}$ on kaukana mittausvälin päästä. Mittaus päättyy hetkeen $5{,}0\,\text{s}$, joten ennuste ulottuu noin $40\,\%$ mittausaikaa pidemmälle. Ennuste on luotettava vain, jos rata on tasainen, kärry jatkaa vakionopeudella eikä rata pääty ennen $6{,}0\,\text{m}$:ä. Mittakaavavirhe on systemaattinen: se vääristää jokaista mittausta samaan suuntaan samalla kertoimella.
+
+Siksi mittausten toistaminen ei poista sitä keskiarvossa. Satunnaisvirhe taas hajottaa pisteitä suoran molemmille puolille, ja se pienenee toistamalla. Virhe korjataan vain kalibroimalla mittakaava tunnetulla pituudella samalta etäisyydeltä kuin kärryn rata.
 
 ## fy4-1-L3-05
 **Annettu:** rekan pisteet $(t;\, x)$ hetkillä $0\ldots40\,\text{s}$, esim. $(0\,\text{s};\, 205\,\text{m})$ ja $(40\,\text{s};\, 598\,\text{m})$; poliisiauto: $x = 0$ hetkellä $t_0 = 8{,}0\,\text{s}$, nopeus $v_\text{P} = 16\,\text{m/s}$
@@ -221,7 +227,9 @@ $$\begin{aligned} t &= \dfrac{203\,\text{m} + 16\,\text{m/s} \cdot 8{,}0\,\text{
 
 $$\begin{aligned} x &= 203\,\text{m} + 9{,}9\,\text{m/s} \cdot 54\,\text{s} \\ &= 7{,}4 \cdot 10^2\,\text{m} \end{aligned}$$
 **Vastaus:** $7{,}4 \cdot 10^2\,\text{m}$ eli noin $740\,\text{m}$, kaksi merkitsevää numeroa. Nopeuksien erotus $16 - 9{,}9 = 6{,}1\,\text{m/s}$ rajoittaa tarkkuutta.
-**Järkevyys:** Poliisiauton paikka hetkellä $54\,\text{s}$ on $16\,\text{m/s} \cdot (54\,\text{s} - 8{,}0\,\text{s}) = 7{,}4 \cdot 10^2\,\text{m}$. Se on sama kuin rekan paikka, joten ratkaisu täsmää. Poliisiauto on rekkaa nopeampi, joten saavuttaminen on mahdollista. Ennuste on epävarma, koska aineisto päättyy hetkeen $40\,\text{s}$. Saavuttaminen tapahtuu hetkellä $54\,\text{s}$, eli $14\,\text{s}$ aineiston ulkopuolella. Ennuste olettaa, että rekka ajaa koko ajan samalla nopeudella samaa suoraa tietä. Aineisto ei todista sitä. Pieni virhe rekan nopeudessa kasvaa ennusteessa, koska nopeuksien erotus on pieni. Jos rekan nopeus olisi $0{,}2\,\text{m/s}$ suurempi, aika olisi noin $3\,\%$ pidempi.
+**Järkevyys:** Poliisiauton paikka hetkellä $54\,\text{s}$ on $16\,\text{m/s} \cdot (54\,\text{s} - 8{,}0\,\text{s}) = 7{,}4 \cdot 10^2\,\text{m}$. Se on sama kuin rekan paikka, joten ratkaisu täsmää. Poliisiauto on rekkaa nopeampi, joten saavuttaminen on mahdollista. Ennuste on epävarma, koska aineisto päättyy hetkeen $40\,\text{s}$. Saavuttaminen tapahtuu hetkellä $54\,\text{s}$, eli $14\,\text{s}$ aineiston ulkopuolella.
+
+Ennuste olettaa, että rekka ajaa koko ajan samalla nopeudella samaa suoraa tietä. Aineisto ei todista sitä. Pieni virhe rekan nopeudessa kasvaa ennusteessa, koska nopeuksien erotus on pieni. Jos rekan nopeus olisi $0{,}2\,\text{m/s}$ suurempi, aika olisi noin $3\,\%$ pidempi.
 
 ## fy4-1-L1-09
 **Kysytty:** mikä neljästä kuvaajasta esittää leluauton paikan $x$ ajan $t$ funktiona, kun auto on hetkellä $t = 0$ paikassa $x_0 = 6{,}0\,\text{m}$ ja sen nopeus on koko ajan $v = -1{,}0\,\text{m/s}$.
@@ -234,7 +242,9 @@ $x = 6{,}0\,\text{m} + (-1{,}0\,\text{m/s}) \cdot 4{,}0\,\text{s}$
 
 $x = 2{,}0\,\text{m}$
 
-Kuvaaja C kulkee pisteiden $(0\,\text{s};\ 6{,}0\,\text{m})$ ja $(4{,}0\,\text{s};\ 2{,}0\,\text{m})$ kautta. Sen kulmakerroin on $\dfrac{2{,}0\,\text{m} - 6{,}0\,\text{m}}{4{,}0\,\text{s}}$, eli $-1{,}0\,\text{m/s}$. Kuvaaja A nousee paikasta $6\,\text{m}$ paikkaan $10\,\text{m}$. Siinä nopeuden miinusmerkki on jätetty huomiotta, vaikka etumerkki kertoo liikkeen suunnan. Kuvaajan B kulmakerroin on oikea, mutta se alkaa origosta, joten alkupaikka on unohtunut. Kuvaaja D on vaakasuora suora kohdassa $-1\,\text{m}$. Siinä nopeuden arvo on piirretty paikaksi, ikään kuin kuvaaja olisi $(t, v)$-kuvaaja. Tarkistus: auto liikkuu $4{,}0\,\text{s}$ ajan $1{,}0\,\text{m}$ sekunnissa negatiiviseen suuntaan. Siksi se siirtyy $4{,}0\,\text{m}$ alkupaikasta kohti origoa.
+Kuvaaja C kulkee pisteiden $(0\,\text{s};\ 6{,}0\,\text{m})$ ja $(4{,}0\,\text{s};\ 2{,}0\,\text{m})$ kautta. Sen kulmakerroin on $\dfrac{2{,}0\,\text{m} - 6{,}0\,\text{m}}{4{,}0\,\text{s}}$, eli $-1{,}0\,\text{m/s}$. Kuvaaja A nousee paikasta $6\,\text{m}$ paikkaan $10\,\text{m}$. Siinä nopeuden miinusmerkki on jätetty huomiotta, vaikka etumerkki kertoo liikkeen suunnan. Kuvaajan B kulmakerroin on oikea, mutta se alkaa origosta, joten alkupaikka on unohtunut.
+
+Kuvaaja D on vaakasuora suora kohdassa $-1\,\text{m}$. Siinä nopeuden arvo on piirretty paikaksi, ikään kuin kuvaaja olisi $(t, v)$-kuvaaja. Tarkistus: auto liikkuu $4{,}0\,\text{s}$ ajan $1{,}0\,\text{m}$ sekunnissa negatiiviseen suuntaan. Siksi se siirtyy $4{,}0\,\text{m}$ alkupaikasta kohti origoa.
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan paikka hetkillä $0$ ja $4{,}0\,\text{s}$. Kuvaajat B ja C laskevat yhtä jyrkästi, joten ne erottaa vasta alkupaikka: kuvaaja B alkaa kohdasta $0\,\text{m}$ ja kuvaaja C kohdasta $6{,}0\,\text{m}$.
 
 ## fy4-1-L2-08

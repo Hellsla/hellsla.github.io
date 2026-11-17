@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b0a7aa3252fd14ee
+CONTENT-HASH: f558c5d8ee4abfd9
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- [Minor] worked example stage 7: the sentence runs on after the display ("ja 6,36 m/s · 9,44 s ≈ 60 m, eli …"); consider a lead-in such as fi-easy's "Lasketaan matka:" so no sentence is cut around the equation.
 
 ## Checked
-- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-02, fi-390-03, fi-390-04 and fi-1280-02; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- batch delta review: opened example-390 captures (fi, fy4-2); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

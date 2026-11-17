@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0173b7e5ffc8a051
+CONTENT-HASH: 3b4b3569bfb23b28
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- [Minor] worked example stage 7 (Järkevyys) is still one long paragraph at 390 px; the energy comparison could start its own paragraph.
 
 ## Checked
-- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-12, fi-390-13, fi-390-14, fi-390-15, fi-390-16 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- batch delta review: opened example-390 captures (fi, fy4-10); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

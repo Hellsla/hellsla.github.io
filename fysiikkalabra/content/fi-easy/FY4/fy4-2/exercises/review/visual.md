@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 39ffe49287bcd1f8
+CONTENT-HASH: 60dfc37706068897
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] exercises.json (tiles fy4-2 #4, #13) — the full stop / comma after the lifted formula starts the next line (". Syvyys on", ", kun suunta…"); put it inside the formula's last row.
-- [Minor] solutions.md — some rows start with a lone `·` factor (tiles #5, #6, #15); readable, but a break at + or = is cleaner.
+- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-2-L2-07-390.png, sol-fy4-2-L2-08-390.png.
+- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

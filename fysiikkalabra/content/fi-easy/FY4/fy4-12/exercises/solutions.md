@@ -73,7 +73,9 @@
 **Annettu:** kärry A: $x_{0\text{A}} = 6{,}0\,\text{m}$, $v_\text{A} = 3{,}0\,\text{m/s}$; kärry B: $x_{0\text{B}} = 42\,\text{m}$, $v_\text{B} = -1{,}0\,\text{m/s}$; molemmat liikkuvat tasaisesti
 **Kysytty:** kohtaamishetki $t$ yksikössä $\text{s}$, sekä kuvaajien hahmottelu ja perustelu
 **Periaate:** Tasaisessa liikkeessä $x = x_0 + v\,t$, joten $(t,x)$-kuvaaja on suora. Lähtöpaikka on suoran alkupiste ja nopeus on sen kulmakerroin (jyrkkyys). Kärryt kohtaavat, kun ne ovat samassa paikassa samalla hetkellä eli kun suorat leikkaavat.
-**Kuvaajan lukeminen:** Hahmotelma tehdään näin. Piirrä aika vaaka-akselille ja paikka pystyakselille. A:n suora alkaa kohdasta $6{,}0\,\text{m}$ ja nousee $3{,}0\,\text{m}$ joka sekunti. B:n suora alkaa ylempää, kohdasta $42\,\text{m}$. Se laskee $1{,}0\,\text{m}$ joka sekunti, koska nopeus on negatiivinen. Nouseva viiva alkaa alempaa ja laskeva ylempää. Siksi ne kulkevat toisiaan kohti ja leikkaavat. Leikkauspiste kertoo hetken ja paikan, jossa kärryt ovat samassa kohdassa.
+**Kuvaajan lukeminen:** Hahmotelma tehdään näin. Piirrä aika vaaka-akselille ja paikka pystyakselille. A:n suora alkaa kohdasta $6{,}0\,\text{m}$ ja nousee $3{,}0\,\text{m}$ joka sekunti. B:n suora alkaa ylempää, kohdasta $42\,\text{m}$. Se laskee $1{,}0\,\text{m}$ joka sekunti, koska nopeus on negatiivinen. Nouseva viiva alkaa alempaa ja laskeva ylempää.
+
+Siksi ne kulkevat toisiaan kohti ja leikkaavat. Leikkauspiste kertoo hetken ja paikan, jossa kärryt ovat samassa kohdassa.
 **Kaava:** $x_\text{A} = x_\text{B}$, eli $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$. Ratkaistaan $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $t = \dfrac{42\,\text{m} - 6{,}0\,\text{m}}{3{,}0\,\text{m/s} - (-1{,}0\,\text{m/s})} = \dfrac{36\,\text{m}}{4{,}0\,\text{m/s}} = 9{,}0\,\text{s}$
@@ -124,7 +126,9 @@
 ## fy4-12-L1-06
 **Kysytty:** mitä $(t,v)$-kuvaajien leikkauspiste kertoo.
 **Periaate:** $(t,v)$-kuvaajan piste kertoo kappaleen nopeuden hetkellä $t$. Kun kaksi kuvaajaa leikkaa, kummallakin kappaleella on silloin sama nopeus. Paikan määrää koko aiempi liike, eli nopeuskuvaajan alle jäävä pinta-ala. Yksi nopeuden arvo ei riitä.
-**Mallivastaus:** Autojen nopeudet ovat hetkellä $4{,}0\,\text{s}$ yhtä suuret, mutta paikat voivat olla eri. Kohtaamista ei voi lukea tästä kuvaajasta. Siihen tarvitaan $(t,x)$-kuvaaja tai paikkafunktioiden vertailu. Väite, että autot ovat samassa paikassa, sekoittaa nopeuden ja paikan. Väite samasta matkasta ei päde, koska matka on pinta-ala eikä yksi arvo. Väite samoista kiihtyvyyksistä ei päde, koska kiihtyvyys on kulmakerroin. Leikkaavilla viivoilla kulmakertoimet ovat erilaiset.
+**Mallivastaus:** Autojen nopeudet ovat hetkellä $4{,}0\,\text{s}$ yhtä suuret, mutta paikat voivat olla eri. Kohtaamista ei voi lukea tästä kuvaajasta. Siihen tarvitaan $(t,x)$-kuvaaja tai paikkafunktioiden vertailu. Väite, että autot ovat samassa paikassa, sekoittaa nopeuden ja paikan. Väite samasta matkasta ei päde, koska matka on pinta-ala eikä yksi arvo.
+
+Väite samoista kiihtyvyyksistä ei päde, koska kiihtyvyys on kulmakerroin. Leikkaavilla viivoilla kulmakertoimet ovat erilaiset.
 **Kuvaajan lukeminen:** Vaaka-akselilla on aika ja pystyakselilla nopeus. Leikkauspisteen pystykoordinaatti on kummankin auton yhteinen nopeus. Vaakakoordinaatti on hetki $4{,}0\,\text{s}$.
 
 ## fy4-12-L1-07
@@ -207,7 +211,9 @@ Kuvaajassa 2 leikkaus on hetkellä $8{,}0\,\text{s}$. Siinä sekoitetaan sama no
 ## fy4-12-L3-04
 **Annettu:** molemmat $v_0 = 20\,\text{m/s}$; kuorma-auton pituus $L_\text{k} = 12\,\text{m}$, henkilöauton pituus $L_\text{h} = 5{,}0\,\text{m}$, alkuväli (etupää – takapää) $10\,\text{m}$; henkilöauton kiihtyvyys $a = 1{,}5\,\text{m/s}^2$; vastaantulevan nopeus $v_\text{v} = 20\,\text{m/s}$; nopeusrajoitus $80\,\text{km/h}$
 **Kysytty:** ohituksen kesto $t$ ja matka $s_\text{h}$; pienin etäisyys $d$ yksikössä $\text{m}$; loppunopeus rajoitukseen verrattuna
-**Periaate:** Tässä on kolme ajatusta. Ensimmäinen: autojen liikkeet kuvataan suhteessa toisiinsa. Kuorma-auto kulkee tasaisesti nopeudella $20\,\text{m/s}$. Henkilöauto aloittaa samasta nopeudesta, joten ero syntyy vain kiihtyvyydestä. Etenemisen ero on $\tfrac12\,a\,t^2$. Toinen: ohitus on valmis, kun etenemisen ero on yhtä suuri kuin etupään ja takapään väli. Se on kuorma-auton pituus ja henkilöauton pituus yhteensä. Kolmas: autot eivät ehdi kohdata, jos henkilöauton ja vastaantulevan kulkemat matkat ovat yhteensä enintään $d$.
+**Periaate:** Tässä on kolme ajatusta. Ensimmäinen: autojen liikkeet kuvataan suhteessa toisiinsa. Kuorma-auto kulkee tasaisesti nopeudella $20\,\text{m/s}$. Henkilöauto aloittaa samasta nopeudesta, joten ero syntyy vain kiihtyvyydestä. Etenemisen ero on $\tfrac12\,a\,t^2$. Toinen: ohitus on valmis, kun etenemisen ero on yhtä suuri kuin etupään ja takapään väli.
+
+Se on kuorma-auton pituus ja henkilöauton pituus yhteensä. Kolmas: autot eivät ehdi kohdata, jos henkilöauton ja vastaantulevan kulkemat matkat ovat yhteensä enintään $d$.
 **Kaava:** Tarvittava suhteellinen matka on $s_\text{rel} = 10\,\text{m} + L_\text{k} + L_\text{h}$ ja $\tfrac12\,a\,t^2 = s_\text{rel}$, joten $t = \sqrt{\dfrac{2\,s_\text{rel}}{a}}$. Henkilöauton matka on $s_\text{h} = v_0\,t + \tfrac12\,a\,t^2$, vastaantulevan matka on $s_\text{v} = v_\text{v}\,t$ ja $d_\text{min} = s_\text{h} + s_\text{v}$. Loppunopeus on $v = v_0 + a\,t$.
 **Muunnokset:** $80\,\text{km/h} = 80 : 3{,}6\,\text{m/s} = 22{,}2\,\text{m/s}$. Muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $s_\text{rel} = 10\,\text{m} + 12\,\text{m} + 5{,}0\,\text{m} = 27\,\text{m}$. Siis $t = \sqrt{\dfrac{2 \cdot 27\,\text{m}}{1{,}5\,\text{m/s}^2}} = \sqrt{36\,\text{s}^2} = 6{,}0\,\text{s}$.

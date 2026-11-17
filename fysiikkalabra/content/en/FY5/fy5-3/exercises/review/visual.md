@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 557c1c077663a50d
+CONTENT-HASH: 41a2bdbdc3e4fe81
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] eq-chain rows in L2-03, L3-02, L3-03 wider than the 360 px card scroll inside it; known clipped formulas in docs/clipped-formulas.tsv, text untouched.
+(none) The round-1 Minor is resolved: the Kourou Principle paragraph is rejoined into one paragraph ("...is r = R cos φ: the radius R drawn from the centre ..."); a colon before a lowercase word is correct.
 
 ## Checked
-- own Playwright render of preview/en/fy5-3.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-10, L2-08, L3-01 at 360 and 1280 px opened where noted.
-- Calculation rows re-broken: aligned at =, one step per row, nothing clipped in the opened captures.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Delta: the single changed paragraph in solutions.md (fy5-3 L3 Kourou Principle). Opened review/shots/fy5-3-open-exercises-L3-1280-5.png.
+- The rejoined paragraph renders cleanly in KaTeX (r = R cos φ, φ, R): spacing fine, no overflow or clipping; the surrounding Given, Find, Principle, Formula, Conversions and Substitution blocks keep their layout.
+- Hash matched the packet (41a2bdbdc3e4fe81), so the captures are current. Other captures not opened; the diff is one paragraph.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

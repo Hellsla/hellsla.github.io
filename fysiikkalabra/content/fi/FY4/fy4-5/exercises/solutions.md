@@ -213,7 +213,9 @@ a 0
 ## fy4-5-L1-06
 **Kysytty:** mitkä voimat piirretään voimakuvioon, kun laatikko liukuu vaakasuoralla lattialla ja hidastuu kitkan vaikutuksesta.
 **Periaate:** Voimakuvioon piirretään vain valittuun kappaleeseen vaikuttavat voimat, ja jokaisella voimalla on aiheuttaja: Maa, pinta, naru tai työntäjä. Nopeus ja kiihtyvyys eivät ole voimia. Newtonin toisen lain mukaan kappale voi liikkua ilman liikkeen suuntaista voimaa.
-**Mallivastaus:** Laatikkoon vaikuttavat kolme voimaa. Maa vetää laatikkoa alas (paino), lattia tukee sitä ylös (tukivoima) ja lattia vastustaa liukumista vasemmalle (kitka). Paino ja tukivoima ovat yhtä pitkät, koska laatikko ei liiku pystysuunnassa, ja kitka on ainoa vaakasuora voima, joten se hidastaa laatikkoa. Oikealle osoittavaa liikevoimaa ei ole, koska ei ole mitään kappaletta, joka sitä aiheuttaisi. Nopeutta ei piirretä voimaksi, vaan tarvittaessa erikseen voimakuvion viereen. Tukivoimaa ei saa jättää pois, vaikka se kumoaa painon.
+**Mallivastaus:** Laatikkoon vaikuttavat kolme voimaa. Maa vetää laatikkoa alas (paino), lattia tukee sitä ylös (tukivoima) ja lattia vastustaa liukumista vasemmalle (kitka). Paino ja tukivoima ovat yhtä pitkät, koska laatikko ei liiku pystysuunnassa, ja kitka on ainoa vaakasuora voima, joten se hidastaa laatikkoa.
+
+Oikealle osoittavaa liikevoimaa ei ole, koska ei ole mitään kappaletta, joka sitä aiheuttaisi. Nopeutta ei piirretä voimaksi, vaan tarvittaessa erikseen voimakuvion viereen. Tukivoimaa ei saa jättää pois, vaikka se kumoaa painon.
 
 ## fy4-5-L1-07
 **Annettu:** työntövoimat $F_1 = 120\,\text{N}$ ja $F_2 = 85\,\text{N}$ samaan suuntaan, kitkavoima $F_\mu = 150\,\text{N}$ vastakkaiseen suuntaan; paino ja tukivoima kumoavat toisensa
@@ -239,7 +241,11 @@ akselit 0
 ## fy4-5-L1-08
 **Kysytty:** miten lattian tukivoima $N$ suhtautuu laatikon painoon $G$, kun laatikkoa vedetään narulla vinosti ylöspäin eikä se liiku.
 **Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan voimien summa on nolla myös pystysuunnassa. Pystysuunnassa on kolme voimaa: paino alas sekä tukivoima ja narun jännitysvoiman pystykomponentti ylös.
-**Mallivastaus:** Pystysuunnan yhtälö on $N + T\sin\alpha - G = 0$, joten $N = G - T\sin\alpha$. Narun pystykomponentti kannattelee osan painosta, ja lattian tarvitsee tukea vain loppuosa, joten tukivoima on painoa pienempi. Tukivoima ei siis ole aina yhtä suuri kuin paino: se on juuri niin suuri, kuin pystysuunnan tasapaino vaatii. Jos naru vetäisi vaakasuoraan, tukivoima olisi painon suuruinen, ja jos naru vetäisi laatikkoa vinosti alaspäin, tukivoima olisi painoa suurempi. Tukivoima olisi nolla vasta, kun narun pystykomponentti olisi yhtä suuri kuin koko paino, ja silloin laatikko olisi irtoamaisillaan lattiasta.
+**Mallivastaus:** Pystysuunnan yhtälö on $N + T\sin\alpha - G = 0$, joten $N = G - T\sin\alpha$. Narun pystykomponentti kannattelee osan painosta, ja lattian tarvitsee tukea vain loppuosa, joten tukivoima on painoa pienempi.
+
+Tukivoima ei siis ole aina yhtä suuri kuin paino: se on juuri niin suuri, kuin pystysuunnan tasapaino vaatii. Jos naru vetäisi vaakasuoraan, tukivoima olisi painon suuruinen, ja jos naru vetäisi laatikkoa vinosti alaspäin, tukivoima olisi painoa suurempi.
+
+Tukivoima olisi nolla vasta, kun narun pystykomponentti olisi yhtä suuri kuin koko paino, ja silloin laatikko olisi irtoamaisillaan lattiasta.
 
 ## fy4-5-L2-05
 **Annettu:** rengas on paikallaan; mittaukset $(F_\text{A}, F_\text{C}, F_\text{B})$: $(3{,}0;\ 2{,}5;\ 3{,}9)\,\text{N}$, $(4{,}5;\ 3{,}8;\ 5{,}9)\,\text{N}$ ja $(6{,}0;\ 5{,}1;\ 7{,}9)\,\text{N}$

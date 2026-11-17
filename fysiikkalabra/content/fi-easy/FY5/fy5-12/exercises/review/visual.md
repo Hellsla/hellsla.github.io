@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0f05dc9f0c7301b7
+CONTENT-HASH: a4672729cf8566b5
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-12-L2-10 — the task text opens with a long situation paragraph (about 90 words) before a)–d); acceptable, but the PhET set-up steps could be a short list.
+- [Minor] solutions.md L1-02, L2-03, L3-02: a new paragraph begins with a bare "Se" ("Se saapuu harja harjan kanssa", "Se lähestyy arvoa d") whose antecedent sits in the paragraph above; name the subject ("Vahvistava piste ...", "Matkaero lähestyy ...").
 
 ## Checked
-- Rendered preview/fi-easy/fy5-12.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- New task fy5-12-L2-10 (Aineisto: link first, a–d, Vastaa laatikkoon) and its solution read in the packet and rendered.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-12 --lang fi-easy; opened fy5-12-open-exercises-L2-1280-3 (an open solution next to split ones; the others split alike).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

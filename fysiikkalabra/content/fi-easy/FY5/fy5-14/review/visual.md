@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 97fc50d03cb5078c
+CONTENT-HASH: c698db14b5bd1614
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Diff read for fi-easy fy5-14 (one sentence in the solution); layout unaffected by a same-length phrase swap. No capture needed beyond the diff.
-- Delta: one wording change in the transfer task's solution (Reasonableness): 'huojuvan' -> 'korkeuden vaihtelevan' / 'the pitch vary'. Text only; no layout, figure or formula touched. Wording is natural and unambiguous; plain-language ('pitch') matches the unit's glossary use.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.

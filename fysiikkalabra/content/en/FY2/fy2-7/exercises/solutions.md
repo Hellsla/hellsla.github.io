@@ -19,7 +19,12 @@ $$, so the energy is conserved. The arriving energy is smaller than the sent ene
 **Given:** energy sent into the district heating network $E_\text{sent} = 360\,\text{MWh}$; the share of the loss is read from the figure
 **Find:** the loss $E_\text{loss}$ in megawatt-hours
 **Principle:** Energy does not disappear. The part of the sent energy that does not arrive is transferred as heat to the surroundings on the way, that is, it is transmission loss. The share of the loss is taken of the sent energy, so the loss is the share times the sent energy.
-**Reading the graph:** The lower energy flow in the figure is the district heating network. At its branch that curves downward it says $9\,\%$ (loss), and at the branch that continues to the end it says $91\,\%$ (arrives); together they are the $100\,\%$ of the sent flow. So the share of the loss is $9\,\% = 0.09$. The upper flow is the electricity grid and is not needed.
+**Reading the graph:** The lower energy flow in the figure is the district heating network.
+
+At its branch that curves downward it says $9\,\%$ (loss), and at the branch that continues to the end it says $91\,\%$ (arrives); together they are the $100\,\%$ of the sent flow. So the share of the loss is $9\,\% = 0.09$.
+
+The upper flow is the electricity grid and is not needed.
+
 **Formula:** $E_\text{loss} = 0.09 \cdot E_\text{sent}$
 **Conversions:** Percentage to decimal number: $9\,\% = 9 \cdot 0.01 = 0.09$. The energy stays in megawatt-hours.
 **Substitution:** $E_\text{loss} = 0.09 \cdot 360\,\text{MWh} = 32.4\,\text{MWh}$
@@ -134,7 +139,9 @@ Electricity grid: $E_\text{loss} = 0.040 \cdot 1000\,\text{MWh}$, so $E_\text{lo
 
 District heating network: $E_\text{loss} = 0.090 \cdot 300\,\text{MWh}$, so $E_\text{loss} = 27\,\text{MWh}$
 
-The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double. The lost energy is transferred as heat to the surroundings: in the electricity grid it has first been converted into internal energy in the wires, in the district heating network it passes from the hot water through the pipes. Energy does not disappear.
+The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double.
+
+The lost energy is transferred as heat to the surroundings: in the electricity grid it has first been converted into internal energy in the wires, in the district heating network it passes from the hot water through the pipes. Energy does not disappear.
 
 ## fy2-7-L3-01
 **Given:** energy needed at the destination $E_\text{arrived} = 600\,\text{MWh}$; loss before $9.0\,\%$ and after $6.0\,\%$ of the sent energy
@@ -184,7 +191,9 @@ $$ and $1350 : 20 \approx 68$, so the result is of the right size. So the small 
 ## fy2-7-L1-06
 **Find:** why electrical energy is transmitted at a high voltage in the national grid.
 **Principle:** In the transmission of electricity, the loss occurs when current heats the conductors. The power of electricity depends on the voltage and the current, so the higher the voltage, the smaller the current that is enough for the same power. A smaller current heats the conductors less.
-**Model answer:** At a high voltage, a smaller current is enough for the same power, so the conductors heat up less and the loss becomes smaller. Voltage does not add energy, and the loss still does not disappear completely: about $4\,\%$ of the sent energy is still lost in the grid. The cause of the loss is not the speed of electricity but the heating of the conductor as current flows.
+**Model answer:** At a high voltage, a smaller current is enough for the same power, so the conductors heat up less and the loss becomes smaller.
+
+Voltage does not add energy, and the loss still does not disappear completely: about $4\,\%$ of the sent energy is still lost in the grid. The cause of the loss is not the speed of electricity but the heating of the conductor as current flows.
 
 ## fy2-7-L1-07
 **Given:** sent energy $E_\text{sent} = 250\,\text{MWh}$ and arrived energy $E_\text{arrived} = 238\,\text{MWh}$
@@ -220,7 +229,10 @@ $$.
 **Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$ and $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
 **Conversions:** The quotient is converted into a percentage by multiplying by one hundred. The energies are in the same unit, megawatt-hours.
 **Substitution:** The sum of the sent energies is $2650\,\text{MWh}$ and that of the arrived energies $2395\,\text{MWh}$. So $E_\text{loss} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ and $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0.0962 = 9.62\,\%$
-**Answer:** $9.62\,\%$, three significant figures, because the energies are given with three digits (example data set). The monthly share of the loss is $9.1\,\%$ in January, $8.9\,\%$ in February, $9.8\,\%$ in March and $11\,\%$ in April, so it is greatest in April. Explanation: the need for heat decreases in spring, but the loss decreases ($75 \to 49\,\text{MWh}$) much less than the energy fed in ($820 \to 430\,\text{MWh}$), because the pipes are hot and the ground is cold in spring too, so the loss is a greater share of a smaller energy.
+**Answer:** $9.62\,\%$, three significant figures, because the energies are given with three digits (example data set). The monthly share of the loss is $9.1\,\%$ in January, $8.9\,\%$ in February, $9.8\,\%$ in March and $11\,\%$ in April, so it is greatest in April.
+
+Explanation: the need for heat decreases in spring, but the loss decreases ($75 \to 49\,\text{MWh}$) much less than the energy fed in ($820 \to 430\,\text{MWh}$), because the pipes are hot and the ground is cold in spring too, so the loss is a greater share of a smaller energy.
+
 **Reasonableness:** The monthly shares are between $8.9\,\%$ and $11\,\%$, so the $9.62\,\%$ of the whole period lies between them. Also $$
 \begin{aligned}
 &2395\,\text{MWh} + 255\,\text{MWh} \\
@@ -235,13 +247,22 @@ $$.
 **Formula:** The loss power becomes $k$ times smaller when the voltage doubles: $k = \dfrac{P_\text{loss,previous}}{P_\text{loss,next}}$, and the estimate is $P_\text{loss,320} = \dfrac{P_\text{loss,160}}{k}$
 **Conversions:** Not needed: the voltages are in kilovolts and the powers in megawatts. The voltage $320\,\text{kV}$ is double the voltage $160\,\text{kV}$.
 **Substitution:** $k = \dfrac{16\,\text{MW}}{4.0\,\text{MW}} = \dfrac{4.0\,\text{MW}}{1.0\,\text{MW}} = \dfrac{1.0\,\text{MW}}{0.25\,\text{MW}} = 4.0$, so $P_\text{loss,320} = \dfrac{0.25\,\text{MW}}{4.0} = 0.0625\,\text{MW}$
-**Answer:** about $0.063\,\text{MW}$, two significant figures as in the table value $0.25\,\text{MW}$. When the voltage is doubled, the loss power becomes one quarter. Justification: at a higher voltage the same power is transmitted with a smaller current, and a smaller current heats the conductors less. When the voltage doubles, the current halves, and the loss decreases faster than the current: a current half as great gives a quarter of the loss.
+**Answer:** about $0.063\,\text{MW}$, two significant figures as in the table value $0.25\,\text{MW}$. When the voltage is doubled, the loss power becomes one quarter.
+
+Justification: at a higher voltage the same power is transmitted with a smaller current, and a smaller current heats the conductors less.
+
+When the voltage doubles, the current halves, and the loss decreases faster than the current: a current half as great gives a quarter of the loss.
+
 **Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $16\,\text{MW} : 0.0625\,\text{MW} = 256$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
 
 ## fy2-7-L2-07
 **Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.
 **Principle:** The transmission loss occurs when current heats the conductors: part of the electrical energy is converted into internal energy of the conductors, which is transferred as heat to the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
-**Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent. The loss is not the disappearance of energy: electrical energy is converted into internal energy of the conductor, which is transferred as heat to the surroundings. About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
+**Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent.
+
+The loss is not the disappearance of energy: electrical energy is converted into internal energy of the conductor, which is transferred as heat to the surroundings.
+
+About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
 
 ## fy2-7-L3-04
 **Given:** from the table, the loss powers: external walls $2.4\,\text{kW}$, upper floor $1.5\,\text{kW}$, windows $1.8\,\text{kW}$; reductions $50\,\%$, $60\,\%$ and $40\,\%$; loss of the district heating network $9.0\,\%$ of the sent energy; time $t = 5000\,\text{h}$
@@ -260,7 +281,14 @@ $$. C: $$
 &= 4500\,\text{kWh}
 \end{aligned}
 $$. A saves the most, and $\Delta E_\text{plant} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
-**Answer:** $6.6\,\text{MWh}$, two significant figures as in the loss power $2.4\,\text{kW}$. Choice: insulating the external walls, because the loss power of the walls is the greatest and its reduction of $50\,\%$ is large, so the saving of $6000\,\text{kWh}$ beats improvements B ($3600\,\text{kWh}$) and C ($4500\,\text{kWh}$). The saving of the plant is greater than the saving of the house, because the heat that the house needs passes through the network: when the house needs $6.0\,\text{MWh}$ less, the plant also saves the part that would be lost on the way. The improvement should be aimed at the greatest loss, and in reality the price and the effect on living also influence the decision.
+**Answer:** $6.6\,\text{MWh}$, two significant figures as in the loss power $2.4\,\text{kW}$.
+
+Choice: insulating the external walls, because the loss power of the walls is the greatest and its reduction of $50\,\%$ is large, so the saving of $6000\,\text{kWh}$ beats improvements B ($3600\,\text{kWh}$) and C ($4500\,\text{kWh}$).
+
+The saving of the plant is greater than the saving of the house, because the heat that the house needs passes through the network: when the house needs $6.0\,\text{MWh}$ less, the plant also saves the part that would be lost on the way.
+
+The improvement should be aimed at the greatest loss, and in reality the price and the effect on living also influence the decision.
+
 **Reasonableness:** The part of the saving that is the loss of the network is $$
 \begin{aligned}
 &6.593\,\text{MWh} - 6.0\,\text{MWh} \\
@@ -271,7 +299,10 @@ $$, and $0.593\,\text{MWh} : 6.593\,\text{MWh} = 0.090 = 9.0\,\%$, as the loss o
 ## fy2-7-L3-05
 **Given:** from the table, the durations of the periods $7$, $5$, $7$ and $5\,\text{h}$, the fed-in powers $18$, $42$, $50$ and $66\,\text{MW}$, and the loss shares $1.5\,\%$, $3.5\,\%$, $4.2\,\%$ and $5.5\,\%$
 **Find:** the share $p$ of the energy fed in that is lost during the day, as a percentage; the comparison and the justification
-**Principle:** The power is steady during each period, so the energy fed in during a period is power times time. The loss is the loss share of the period times the energy fed in during the period. The share for the whole day is obtained from the sums, not from the average of the percentages of the periods, because different amounts of energy are fed in during the periods.
+**Principle:** The power is steady during each period, so the energy fed in during a period is power times time. The loss is the loss share of the period times the energy fed in during the period.
+
+The share for the whole day is obtained from the sums, not from the average of the percentages of the periods, because different amounts of energy are fed in during the periods.
+
 **Formula:** $E_\text{sent} = P_\text{sent}\, t$, $E_\text{loss} = p_i\, E_\text{sent}$ for period $i$, and for the whole day $p = \dfrac{E_\text{loss,total}}{E_\text{sent,total}}$
 **Conversions:** The loss shares are converted into decimal numbers, for example $1.5\,\% = 1.5 : 100 = 0.015$. A megawatt times an hour is directly a megawatt-hour.
 **Substitution:** The energies fed in during the periods (hours · megawatts = megawatt-hours) and the losses (share · energy, in megawatt-hours) are
@@ -288,7 +319,12 @@ H_4 &= 0.055 \cdot 330 = 18.15\,\text{MWh}
 \end{aligned}
 ```
 The sum of the energies fed in is $1016\,\text{MWh}$ and the sum of the losses $42.09\,\text{MWh}$. So $p = \dfrac{42.09\,\text{MWh}}{1016\,\text{MWh}} = 0.0414 = 4.1\,\%$
-**Answer:** $4.1\,\%$, two significant figures as in the loss shares (example data set). The result is close to the loss of about $4\,\%$ in the Finnish electricity grid (Finnish Energy, 2024), that is, of the same order of magnitude. The lost energy is greatest in the period 19–24, when $18.15\,\text{MWh}$ is lost, about $43\,\%$ of the loss of the whole day. A greater power requires a greater current, and the loss grows faster than the current (a doubled current gives about a fourfold loss), so the loss grows faster than the power fed in, and its share increases.
+**Answer:** $4.1\,\%$, two significant figures as in the loss shares (example data set). The result is close to the loss of about $4\,\%$ in the Finnish electricity grid (Finnish Energy, 2024), that is, of the same order of magnitude.
+
+The lost energy is greatest in the period 19–24, when $18.15\,\text{MWh}$ is lost, about $43\,\%$ of the loss of the whole day.
+
+A greater power requires a greater current, and the loss grows faster than the current (a doubled current gives about a fourfold loss), so the loss grows faster than the power fed in, and its share increases.
+
 **Reasonableness:** The ordinary average of the loss shares of the periods would be $3.7\,\%$, which is too small, because a lot of energy is fed in during the evening and the share is then the greatest. The result $4.1\,\%$ lies between the shares $1.5\,\%$ and $5.5\,\%$, and $$
 \begin{aligned}
 &0.041 \cdot 1016\,\text{MWh} \\
@@ -329,9 +365,21 @@ $$\begin{aligned} E &= 11\,603\,\text{MW} \cdot 1\,\text{h} \\ &= 11\,603\,\text
 a) $\Delta P = 11\,603\,\text{MW} - 11\,341\,\text{MW} = 262\,\text{MW}$ and the net import is $210\,\text{MW}$. d) Wind power $p = 5571\,\text{MW} : 11\,341\,\text{MW} = 0.491$ and nuclear power $p = 2594\,\text{MW} : 11\,341\,\text{MW} = 0.229$.
 **Answer:** b) $E \approx 11.6\,\text{GWh}$, three significant figures. The time $1\,\text{h}$ is exact, but the small inaccuracy of real-time measurements shows in the difference of $52\,\text{MW}$ in part a), about $0.45\,\%$ of the consumption, so relying on more figures is not justified.
 
-In addition: a) The consumption is $262\,\text{MW}$, about $2.3\,\%$ more than the production, and the shortfall was covered by the net import of $210\,\text{MW}$. The numbers do not match quite exactly: the difference $262\,\text{MW} - 210\,\text{MW}$ is $52\,\text{MW}$, which is only about $0.45\,\%$ of the consumption. The difference comes from small differences between real-time measurements and needs no other explanation.
+In addition: a) The consumption is $262\,\text{MW}$, about $2.3\,\%$ more than the production, and the shortfall was covered by the net import of $210\,\text{MW}$.
 
-c) The Finnish grid is connected to the grids of the neighbouring countries. When Finland produces less than it consumes, the difference is imported, as in the table ($210\,\text{MW}$). When there is more production than consumption, the surplus is exported. In Fingrid's view of the same day, wind power at 1.00 was $7639\,\text{MW}$, production $12\,791\,\text{MW}$ and consumption $10\,647\,\text{MW}$, so there was more production than consumption and the net export was $2142\,\text{MW}$. Electricity storage and the adjustment of production also balance momentary differences.
+The numbers do not match quite exactly: the difference $262\,\text{MW} - 210\,\text{MW}$ is $52\,\text{MW}$, which is only about $0.45\,\%$ of the consumption. The difference comes from small differences between real-time measurements and needs no other explanation.
 
-d) Wind power was about $49\,\%$ and nuclear power about $23\,\%$ of the production. The amount of wind power depends on the weather: on the same day it was $7639\,\text{MW}$ at 1.00 and $5885\,\text{MW}$ at 10.00. The shares of one moment change from hour to hour and with the season, so they are not an average. The annual structure needs the production of the whole year (for example statistics where the energy has been added up over the year); one moment gives only the power at that moment.
-**Reasonableness:** The result is $11\,603\,\text{MWh}$, and $1\,\text{GWh} = 1000\,\text{MWh}$, so the conversion is right. The consumption power is about $7.3$ times the power of Olkiluoto 3, since $11\,603 : 1600 = 7.25$, a believable order of magnitude for the consumption of a whole country. The shares $0.491$ and $0.229$ add up to less than $1$, as they should, because there are other sources too. The model assumes that the power stays the same for an hour, but consumption changes all the time, so the result is an estimate.
+c) The Finnish grid is connected to the grids of the neighbouring countries. When Finland produces less than it consumes, the difference is imported, as in the table ($210\,\text{MW}$). When there is more production than consumption, the surplus is exported.
+
+In Fingrid's view of the same day, wind power at 1.00 was $7639\,\text{MW}$, production $12\,791\,\text{MW}$ and consumption $10\,647\,\text{MW}$, so there was more production than consumption and the net export was $2142\,\text{MW}$. Electricity storage and the adjustment of production also balance momentary differences.
+
+d) Wind power was about $49\,\%$ and nuclear power about $23\,\%$ of the production. The amount of wind power depends on the weather: on the same day it was $7639\,\text{MW}$ at 1.00 and $5885\,\text{MW}$ at 10.00.
+
+The shares of one moment change from hour to hour and with the season, so they are not an average.
+
+The annual structure needs the production of the whole year (for example statistics where the energy has been added up over the year); one moment gives only the power at that moment.
+
+**Reasonableness:** The result is $11\,603\,\text{MWh}$, and $1\,\text{GWh} = 1000\,\text{MWh}$, so the conversion is right. The consumption power is about $7.3$ times the power of Olkiluoto 3, since $11\,603 : 1600 = 7.25$, a believable order of magnitude for the consumption of a whole country.
+
+The shares $0.491$ and $0.229$ add up to less than $1$, as they should, because there are other sources too. The model assumes that the power stays the same for an hour, but consumption changes all the time, so the result is an estimate.
+

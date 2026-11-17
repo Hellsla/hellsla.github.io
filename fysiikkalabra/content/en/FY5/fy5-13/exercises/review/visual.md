@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c171c990ac869bc0
-SCOPE: delta added-exercise from bd646f704080b1bf base 81db4a6fd727
+CONTENT-HASH: 514563bbc45f9e15
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-13/kuvio-tehtava — the ruler's tick label 1.20 collides with the pulley's support plank at the right end, and the labels sit on the ruler ticks — nudge the 1.20 label left or below the ruler; the figure was passed before, low priority.
 
 ## Checked
-- Delta: fy5-13-L1-09 (open-exercises-1280-10) and fy5-13-L2-09 (L2-1280-11, -12): figure fy5-13/kuvio-tehtava (rope, vibrator, pulley, ruler labelled in metres, x (m) axis in English), solutions, Reasonableness blocks.
+- Own reading of review/shots in content/en/FY5/fy5-13/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

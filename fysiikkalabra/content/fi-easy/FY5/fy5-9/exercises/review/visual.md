@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1cfae8fb7e6374c1
+CONTENT-HASH: f33b3b571c66f73a
 
 ## Blocking
 
 ## Polish
-- [Minor] fy5-9-L3-05 Vastaus/Answer — the a), b), c) parts run together in one paragraph; readable at 360 px, but a full stop before each letter is the only separator. Accepted trade-off for answers_shown.py; optional: bold the letters.
+- [Minor] solutions.md Järkevyys: the split is clean; a wrapped line ends in "(" before the inequality in a narrow column; no fix needed.
 
 ## Checked
-- Delta round 1: rendered the solution open at 360 px (?ratkaisut=1), the one-paragraph answer row; scrollWidth 360, no overflow, no clipped formulas, units upright with thin spaces, decimal handling unchanged.
-- Judged the changed paragraph only; no word changed.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-9 --lang fi-easy; opened fy5-9-open-exercises-L3-1280-8 and -9 (the split Järkevyys block, formulas, final box).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

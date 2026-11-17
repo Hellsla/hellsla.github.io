@@ -31,7 +31,7 @@ stage "#teoria"), the open box, the solution step and the element ("at #fy8-1-L2
 "Substitution" > div.eq-chain"); a page wider than the window names the deepest element past its edge. For CI's
 verdict run it in CI's browser image: python scripts/ci_env.py run python scripts/check_layout.py <id> --width 360.
 Exit status 1 on any finding."""
-import os, sys, pathlib
+import os, re, sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
@@ -43,9 +43,37 @@ only = set(args)   # none: every page; CI on a pull request passes the pages scr
 OUT = pathlib.Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 CLIPPED = "clipped or scrolling, not fully shown: "
-KNOWN = pathlib.Path(__import__("os").environ.get("CLIPPED_KNOWN") or ROOT / "docs" / "clipped-formulas.tsv")   # page <TAB> formula: what the pages already had when the check was added (2026-11-15); never added to by hand
-known = {tuple(l.rstrip("\n").split("\t", 1)) for l in KNOWN.read_text().splitlines() if l and not l.startswith("#")} if KNOWN.is_file() else set()
-write_known = "--write-known" in sys.argv   # add what this run finds to docs/clipped-formulas.tsv (once, from a full run at 360 and 390 px)
+# page <TAB> formula: what the pages already had when the check was added (2026-11-15); never added to by hand. One file per
+# course, docs/clipped-formulas/<group>.tsv (work queue 5, 2026-11-16: two courses' pull requests never touch the same
+# file); CLIPPED_KNOWN names another folder or a single file (a test).
+KNOWN = pathlib.Path(os.environ.get("CLIPPED_KNOWN") or ROOT / "docs" / "clipped-formulas")
+KNOWN_HEAD = ("# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).\n"
+              "# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed\n"
+              "# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.\n")
+
+
+def group(key):
+    """The file a page's rows live in: its course (fy4-3, en/fy4-3, FY4-sovella, FY4-koe -> FY4), else the first part of
+    its id (tvt-kulmakerroin -> tvt)."""
+    page = key.split("/")[-1]
+    m = re.match(r"(?i)fy(\d+)\b", page)
+    return f"FY{m.group(1)}" if m else page.split("-")[0]
+
+
+def read_known(path):
+    files = [path] if path.is_file() else sorted(path.glob("*.tsv")) if path.is_dir() else []
+    out = set()
+    for f in files:
+        for l in f.read_text().splitlines():
+            if not l or l.startswith("#"): continue
+            row = tuple(l.split("\t", 1))
+            if path.is_dir() and group(row[0]) != f.stem: sys.exit(f"{f}: the row of {row[0]} belongs in {group(row[0])}.tsv")
+            out.add(row)
+    return out
+
+
+known = read_known(KNOWN)
+write_known = "--write-known" in sys.argv   # add what this run finds to docs/clipped-formulas/ (once, from a full run at 360 and 390 px)
 found_known = set()
 
 JS = """() => {
@@ -268,11 +296,11 @@ with sync_playwright() as pw:
             for f in uniq:
                 print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" + (f"\n{'':26}at {f['at']}" if f.get('at') else ""))
         else:
-            print(f"OK   {tag}" + (f" ({len(was)} known clipped formulas, docs/clipped-formulas.tsv)" if was else ""))
+            print(f"OK   {tag}" + (f" ({len(was)} known clipped formulas, docs/clipped-formulas/{group(key)}.tsv)" if was else ""))
     b.close()
 if write_known:
-    rows = sorted(known | found_known)
-    KNOWN.write_text("# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).\n"
-                     "# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed\n"
-                     "# (fix the formula and delete its row); written by `check_layout.py --write-known`, never by hand.\n" + "".join(f"{p}\t{t}\n" for p, t in rows))
+    by = {}
+    for p, t in known | found_known: by.setdefault(group(p), []).append((p, t))
+    KNOWN.mkdir(parents=True, exist_ok=True)
+    for g, rows in by.items(): (KNOWN / f"{g}.tsv").write_text(KNOWN_HEAD + "".join(f"{p}\t{t}\n" for p, t in sorted(rows)))
 sys.exit(1 if bad and not write_known else 0)

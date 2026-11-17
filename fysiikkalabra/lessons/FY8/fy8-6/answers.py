@@ -23,6 +23,8 @@ ku = sum((x - 2.10) * (y - sum(v for _, v in UI) / 5) for x, y in UI) / sum((x -
 a["fy8-6-L2-05"] = 2.10 - (sum(v for _, v in UI) / 5) / ku  # U_k = U_mean − I_mean/k = 1,857 V -> 1,86 V (hc/(eλ) at 650 nm = 1,908 V)
 a["fy8-6-L2-06"] = (e * 2.04 * 630e-9 / c - 6.626e-34) / 6.626e-34 * 100   # Salla (2,04 V, 10 mA): h = 6,868e-34 J s, +3,645 % -> 3,65 % (Aino 5,858e-34, Eero 6,329e-34)
 a["fy8-6-L2-07"] = h * c / e * (1 / 620e-9 - 1 / 640e-9)   # half-maximum points 620 nm and 640 nm: 2,0000 − 1,9375 = 0,0625 eV -> 0,0625 eV
+a["fy8-6-L2-09"] = c / 5.8e14 * 1e9      # fitted line through (4,6; 1,80) and (7,0; 2,80): U_k = 2,30 V at f = 5,8e14 Hz, λ = c/f = 516,9 nm -> 517 nm
+a["fy8-6-L2-10"] = h * 7.0e14 / e - 2.80                   # f = 7,0e14 Hz: hf/e = 2,895 V, line gives 2,80 V, difference 0,0953 V -> 0,095 V
 # Level 3: reasoning or an unfamiliar context
 L3 = [(625, 1.86), (590, 1.97), (520, 2.27), (465, 2.55)]  # four LEDs: λ (nm), U_k (V)
 pts = [(c / (lam * 1e-9), U) for lam, U in L3]

@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 674824e6d1854147
+CONTENT-HASH: 1dc912bba179c3c5
+ROUND: 1
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: solutions of L2-03 ($66{,}7\,\text{ms}$; reworded: exact count $900$ per minute, usual three significant figures) and L3-04 ($79{,}1\,\%$ with $4{,}96\,\text{s}$, $2{,}77\,\text{s}$) opened with ?ratkaisut=1; units LaTeX, decimal comma, no wrap at 390; captures fy5-7-fi-easy-390/1280-sol-a.png, -sol-b.png. Built preview, own Playwright captures under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; no inline formula wraps at 390 px.
+- Delta: solutions.md only; the diff splits long Mallivastaus/Vastaus paragraphs into two, same words and order, no formula changed.
+- Opened lesson-folder capture fy5-7-open-exercises-1280-3.png (neighbouring solution blocks) at 1280 px: split paragraphs render as separate blocks inside the solution card, spacing normal, no clipping, no gap, maths intact.
+- Hash matched the stamp of the captures (exercises 1dc912bba179c3c5); run again at the end: 1dc912bba179c3c5.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

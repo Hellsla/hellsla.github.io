@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 46894824552c9f59
+CONTENT-HASH: 802cc2cf1aae0244
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-14.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- batch delta review: opened example-390 captures (fi-easy, fy4-14); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

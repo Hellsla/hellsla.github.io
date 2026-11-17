@@ -1163,7 +1163,9 @@ Meren aallot saapuvat suoraa aallonmurtajaa kohti. Aaltorintamat muodostavat mur
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Aaltorintaman ja seinän välinen kulma on $\varphi = 50^\circ$. Kysytään tulokulmaa $\alpha$, heijastuskulmaa $\beta$ ja heijastuneen säteen ja seinän pinnan välistä kulmaa $\gamma$.
+**Tunnetut ja kysytty.** Aaltorintaman ja seinän välinen kulma on $\varphi = 50^\circ$.
+
+Kysytään tulokulmaa $\alpha$, heijastuskulmaa $\beta$ ja heijastuneen säteen ja seinän pinnan välistä kulmaa $\gamma$.
 
 <!-- vaihe -->
 

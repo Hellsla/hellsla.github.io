@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9fb56f569a24221e
+CONTENT-HASH: 01d24220fed87317
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-06 solution has a 151-word paragraph (untouched; split it when next edited).
-- [Minor] L2-03 eq-chain 460 px against 272 px scrolls at 360 px; known/untouched.
+(none)
 
 ## Checked
-- own Playwright render of preview/en/fy5-10.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L3-04 at 360 and 1280 px opened where noted. Opened 10-3-04 at 360 and 1280.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
+- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-10 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
+- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

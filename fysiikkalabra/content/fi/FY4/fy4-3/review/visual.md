@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: dba9078774345c56
+CONTENT-HASH: bd8ba31f4718185a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-3-example-390-2 Tulos and Järkevyys): clean wrapping, formulas intact, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: opened example-390 captures (fi, fy4-3); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

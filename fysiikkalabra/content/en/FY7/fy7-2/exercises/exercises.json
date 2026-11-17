@@ -299,7 +299,7 @@
       "unit": "m",
       "tolerance": 0.02,
       "data": {
-        "caption": "R number at one measuring station (an invented example data set, not a measurement)",
+        "caption": "R number at one measuring station",
         "columns": [
           "Time of day (h)",
           "R number"

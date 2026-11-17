@@ -63,7 +63,7 @@ akselit 0
 ```
 **Kaava:** $y$: $N - mg = m\dfrac{v^2}{r}$, joten $N = m\left(g + \dfrac{v^2}{r}\right)$
 **Muunnokset:** Suureet ovat SI-yksiköissä; tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** $N = 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{m/s})^2}{16\,\text{m}}\right) = 80\,\text{kg}\cdot 13{,}81\,\text{m/s}^2 = 1104{,}8\,\text{N} = 1{,}1048\,\text{kN}$
+**Sijoitus:** $$\begin{aligned} &N \\ &= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{m/s})^2}{16\,\text{m}}\right) \\ &= 80\,\text{kg}\cdot 13{,}81\,\text{m/s}^2 \\ &= 1104{,}8\,\text{N} \\ &= 1{,}1048\,\text{kN} \end{aligned}$$
 **Vastaus:** $1{,}1\,\text{kN}$ ylöspäin, kaksi merkitsevää numeroa kuten nopeudessa $8{,}0\,\text{m/s}$ ja säteessä $16\,\text{m}$.
 **Järkevyys:** Paino on $80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 785\,\text{N}$, ja tukivoima on siitä noin $1{,}4$-kertainen, koska $\tfrac{v^2}{r} = 4{,}0\,\text{m/s}^2$ on noin $0{,}4$ kertaa $g$. Pyöräilijä tuntee painuvansa satulaa vasten. Nyppylän huipulla samalla nopeudella tukivoima olisi vastaavasti painoa pienempi.
 
@@ -166,7 +166,9 @@ akselit 0
 ## fy5-4-L1-06
 **Kysytty:** mikä selittää matkustajan painautumisen ovea vasten kaarteessa.
 **Periaate:** Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu, joten kiihtyvyys ja kokonaisvoima osoittavat kohti kaarteen keskipistettä. Voima tarvitaan, jotta matkustaja kääntyy auton mukana. Ulospäin osoittavaa voimaa ei tarvita eikä sellaista ole.
-**Mallivastaus:** Matkustajan keho pyrkii jatkamaan suoraan, kun auto kääntyy. Ovi painaa matkustajaa sisäänpäin ja pakottaa hänet kaarteeseen, ja tämä voima tuntuu painautumisena ulospäin ovea vasten. Väite keskipakoisvoimasta on väärä, koska mikään kappale ei vedä matkustajaa ulospäin. Väite, ettei sivuttaista voimaa ole, on väärä, koska nopeuden suunta muuttuu vauhdin pysyessä samana. Kitka istuimen ja matkustajan välillä vastustaa liukumista ulospäin, joten se osoittaa sisäänpäin.
+**Mallivastaus:** Matkustajan keho pyrkii jatkamaan suoraan, kun auto kääntyy. Ovi painaa matkustajaa sisäänpäin ja pakottaa hänet kaarteeseen, ja tämä voima tuntuu painautumisena ulospäin ovea vasten. Väite keskipakoisvoimasta on väärä, koska mikään kappale ei vedä matkustajaa ulospäin.
+
+Väite, ettei sivuttaista voimaa ole, on väärä, koska nopeuden suunta muuttuu vauhdin pysyessä samana. Kitka istuimen ja matkustajan välillä vastustaa liukumista ulospäin, joten se osoittaa sisäänpäin.
 
 ## fy5-4-L1-07
 **Kysytty:** mihin suuntaan tasaisesti kaarteessa ajavan pyöräilijän kiihtyvyys osoittaa.
@@ -187,7 +189,9 @@ akselit 0
 **Annettu:** säde $r = 0{,}80\,\text{m}$; taulukosta $(v, F)$-parit väliltä $v = 3{,}0\ldots 7{,}0\,\text{m/s}$ ja $F = 0{,}28\ldots 1{,}53\,\text{N}$; esimerkkiaineisto
 **Kysytty:** tulpan massa $m$ yksikössä $\text{g}$
 **Periaate:** Tulppa on tasaisessa ympyräliikkeessä sileällä vaakasuoralla pöydällä. Paino ja pöydän tukivoima kumoavat toisensa, joten vaakasuora naru antaa ainoan keskipisteeseen osoittavan voiman. Newtonin toisen lain mukaan $F = m\tfrac{v^2}{r}$, joten $F$ on suoraan verrannollinen suureeseen $v^2$ ja kulmakerroin on $\tfrac{m}{r}$. Suora kulkee origon kautta, koska levossa ($v = 0$) naru ei vedä.
-**Kuvaajan lukeminen:** Lasketaan $v^2$ jokaiselle riville: $9{,}0$, $16$, $25$, $36$ ja $49\,\text{m}^2/\text{s}^2$. Pisteet $(v^2, F)$ asettuvat suoran lähelle eivätkä aivan sen päälle, koska mittauksissa on pientä hajontaa. Suora piirrettiin silmämääräisesti origon kautta pisteiden lomaan, ja se sattuu kulkemaan pisteen $(49\,\text{m}^2/\text{s}^2,\ 1{,}53\,\text{N})$ kautta. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä: origosta ja tästä pisteestä. Tarkistus: suureiden $F/v^2$ keskiarvo on $0{,}0312\,\text{kg/m}$, ja pienimmän neliösumman sovitus antaa saman massan $25{,}0\,\text{g}$.
+**Kuvaajan lukeminen:** Lasketaan $v^2$ jokaiselle riville: $9{,}0$, $16$, $25$, $36$ ja $49\,\text{m}^2/\text{s}^2$. Pisteet $(v^2, F)$ asettuvat suoran lähelle eivätkä aivan sen päälle, koska mittauksissa on pientä hajontaa. Suora piirrettiin silmämääräisesti origon kautta pisteiden lomaan, ja se sattuu kulkemaan pisteen $(49\,\text{m}^2/\text{s}^2,\ 1{,}53\,\text{N})$ kautta.
+
+Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä: origosta ja tästä pisteestä. Tarkistus: suureiden $F/v^2$ keskiarvo on $0{,}0312\,\text{kg/m}$, ja pienimmän neliösumman sovitus antaa saman massan $25{,}0\,\text{g}$.
 **Kaava:** $k = \dfrac{\Delta F}{\Delta(v^2)}$ ja $k = \dfrac{m}{r}$, joten $m = k\,r$
 **Muunnokset:** $1\,\text{kg} = 1000\,\text{g}$, joten $m$ muutetaan lopuksi grammoiksi.
 **Sijoitus:** $k = \dfrac{1{,}53\,\text{N} - 0\,\text{N}}{49\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0{,}03122\,\text{kg/m}$ ja $m = 0{,}03122\,\tfrac{\text{kg}}{\text{m}}\cdot 0{,}80\,\text{m} = 0{,}02498\,\text{kg} = 24{,}98\,\text{g}$
@@ -276,7 +280,9 @@ akselit 0
 b) $N_2 = 60{,}0\,\text{kg}\cdot(14{,}1 - 9{,}81)\,\text{m/s}^2 = 60{,}0\,\text{kg}\cdot 4{,}29\,\text{m/s}^2 = 257{,}4\,\text{N}$ ja $N_1 = 60{,}0\,\text{kg}\cdot(9{,}81 + 53{,}2)\,\text{m/s}^2 = 3780{,}6\,\text{N}$. Painoa $mg = 588{,}6\,\text{N}$ verrataan: $\tfrac{N_1}{mg} = \tfrac{3780{,}6}{588{,}6} = 6{,}42$.
 c) $v_\text{min} = \sqrt{9{,}81\,\text{m/s}^2\cdot 13{,}90\,\text{m}} = \sqrt{136{,}4\,\text{m}^2/\text{s}^2} = 11{,}7\,\text{m/s}$
 **Vastaus:** Tukivoima ylhäällä on noin $260\,\text{N}$ (kaksi merkitsevää numeroa, koska erotus $14{,}1 - 9{,}81$ on tarkka vain noin kahden numeron tarkkuudella). Alhaalla tukivoima on $3{,}8\,\text{kN}$ eli noin $6{,}4$-kertainen painoon verrattuna, ja silmukan säde on noin $13{,}9\,\text{m}$. Pienin nopeus ylhäällä on $11{,}7\,\text{m/s}$.
-**Järkevyys:** Taulukon nopeus ylhäällä $14{,}0\,\text{m/s}$ on suurempi kuin $11{,}7\,\text{m/s}$, ja mitattu kiihtyvyys $14{,}1\,\text{m/s}^2$ on suurempi kuin $g$, joten tukivoima on positiivinen: matkustaja pysyy kosketuksessa vaunuun ja tuntee itsensä ylhäällä kevyeksi, vain noin $0{,}44$-kertaiseksi painoonsa verrattuna ($257{,}4 : 588{,}6$). Alhaalla hän painuu istuinta vasten, mikä sopii kokemukseen vuoristoradasta. Säteen kaksi arvoa ovat lähellä toisiaan ($13{,}91\,\text{m}$ ja $13{,}90\,\text{m}$), joten aineisto sopii ympyrärataan. Energiatarkistus (ilman kitkaa): $v_1^2 - v_2^2 = 543{,}8\,\text{m}^2/\text{s}^2$ ja $4\,g\,r = 545{,}6\,\text{m}^2/\text{s}^2$, joten aineisto on energian säilymisen mukainen ja alhaalla tukivoima on yli $6\,mg$, kuten kitkattomassa silmukassa kuuluukin.
+**Järkevyys:** Taulukon nopeus ylhäällä $14{,}0\,\text{m/s}$ on suurempi kuin $11{,}7\,\text{m/s}$, ja mitattu kiihtyvyys $14{,}1\,\text{m/s}^2$ on suurempi kuin $g$, joten tukivoima on positiivinen: matkustaja pysyy kosketuksessa vaunuun ja tuntee itsensä ylhäällä kevyeksi, vain noin $0{,}44$-kertaiseksi painoonsa verrattuna ($257{,}4 : 588{,}6$).
+
+Alhaalla hän painuu istuinta vasten, mikä sopii kokemukseen vuoristoradasta. Säteen kaksi arvoa ovat lähellä toisiaan ($13{,}91\,\text{m}$ ja $13{,}90\,\text{m}$), joten aineisto sopii ympyrärataan. Energiatarkistus (ilman kitkaa): $v_1^2 - v_2^2 = 543{,}8\,\text{m}^2/\text{s}^2$ ja $4\,g\,r = 545{,}6\,\text{m}^2/\text{s}^2$, joten aineisto on energian säilymisen mukainen ja alhaalla tukivoima on yli $6\,mg$, kuten kitkattomassa silmukassa kuuluukin.
 
 ## fy5-4-L3-05
 **Annettu:** säde $r = 130\,\text{m}$, kallistuskulma $\alpha = 8{,}0\,{}^\circ$ (tie laskee kohti sisäreunaa), lepokitkakerroin $\mu_0 = 0{,}40$; $g = 9{,}81\,\text{m/s}^2$; ilmanvastus ja vierimisvastus jätetään huomiotta

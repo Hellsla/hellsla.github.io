@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 652ff21dcc7142f6
+CONTENT-HASH: bfa4773eb0c378c0
+ROUND: 1
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy5-4 L2-07 — "Oppilaan tulos vaatisi … Se vaatisi jo" repeats "vaatisi" in consecutive sentences; "Se edellyttäisi jo erittäin hyvää pitoa".
-- [Minor] fy5-4 L3-05 — "antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" repeats the previous sentence; optional.
+- [Minor] fy5-4 L2-5 (Muunnokset) — comma before "ja pituus $L$ supistuu" is superfluous in Finnish.
 
 ## Checked
-- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed sentences read correctly in short-sentence style.
-- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
-- Judged the language and typography of the changed sentences only.
+- Delta (md-paragraphs): solutions.md only, paragraph splits. Opened open-exercises-L2-1280-5 and L3-1280-8.
+- Layout survived at 1280 px with all solutions open: each split paragraph is its own block inside the solution panel, labels (Annettu, Periaate, Vastaus) and calculation rows unchanged, no clipping or overlap, units upright with thin space, decimal comma consistent.
+- Wording unchanged by the splits; each paragraph holds one idea.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 000b14e87e0db8d2
+CONTENT-HASH: 28de104fed84539e
+ROUND: 1
 
 ## Blocking
-(none; round-1 Major verified fixed)
 
 ## Polish
-- [Minor] fy5-14-L2-09 Vastaus: "0,794 m taajuudella 432 Hz ja 0,780 m taajuudella 440 Hz" is still slightly elliptical; "Taajuutta 432 Hz vastaa 0,794 m ja taajuutta 440 Hz vastaa 0,780 m."
-- [Minor] Kohta c) numeric claims (103 + 107 + …) could be a short list.
+- [Minor] solutions.md fy5-14-L3-05 Vastaus — the c) answer is cut into two paragraphs mid-part; acceptable, optionally start the second with "Sillan lähellä" under its own c) lead.
 
 ## Checked
-- Own 360 px and 1280 px render of fy5-14-L2-09 with solution open: kohta b) now four short paragraphs (muutos / kuulo / fysiikka / yksikkö), kohta c) three labelled paragraphs, kohta d) four paragraphs; none above about 90 words. No clipping, units upright. Unchanged ambulance task (14-20) seen below it.
+- fy5-14 open-exercises-L3-1280-6 (L3-05 task and solution top, 1280 px) opened; the split Periaate, Mallivastaus and Vastaus paragraphs (L1-05, L1-06, L2-07 Doppler) were checked from the diff and the layout pattern seen in fy5-13/16/17 captures, not each in its own capture.
+- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

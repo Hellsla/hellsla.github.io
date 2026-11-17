@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 20a78595ec6b401c
+CONTENT-HASH: 591568f1fd584ac5
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: diff is chapter-title and chapter-reference renames only (no figures, maths or numbers touched); opened top-390 (and contact context) for titles that wrap at 390 px; renamed title and cross-references read consistently across FY5.
+batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.

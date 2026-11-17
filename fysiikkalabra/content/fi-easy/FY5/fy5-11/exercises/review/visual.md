@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 83a8df2e955ed4ab
-SCOPE: delta added-exercise from 2d1c8a6a30bbcd6d base 81db4a6fd727
+CONTENT-HASH: ffe41b7b59ad6312
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-11 — in the L2-10 task the wall is two small grey stubs labelled seinä; legible, but a stub is easy to read as a box (optional).
+- [Minor] solutions.md L3-05 c): the new paragraph starts "Niiden diffraktio", with the antecedent (FM, digi-tv) at the end of the previous one; "FM- ja digi-tv-aaltojen diffraktio on heikkoa" would read alone.
 
 ## Checked
-- Delta of the two or three added exercises (fi-easy): 1280 px open-exercises L2 parts 11, 12, 13 (L2-09 and L2-10 with the ripple-tank grid figure, solutions open).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-11 --lang fi-easy; opened fy5-11-open-exercises-L3-1280-7 (split Perustelut, Järkevyys box).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

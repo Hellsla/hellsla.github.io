@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f6576f6541aa2545
+CONTENT-HASH: 1955e4987003f3bb
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] Kapea pystykuva seisoo 1280 px:llä vasemmalla palstalla ja jättää oikealle tyhjää; ei vaikuta käyttöön.
+(none)
 
 ## Checked
-- batch delta review: opened shots 1280/360 (parachute test) at 360 and 1280 px; photo loads, no clipping or overflow, credit line present, alt and caption natural Finnish, no plain number+unit.
+- batch delta review: opened example-390 captures (fi, fy4-14); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e287073fd52a77e6
+CONTENT-HASH: ec0ed11f20549bca
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json (tile fy4-16 #18, 390 px) — the row is broken inside a short bracket (`(9,81 / − 1,20) m/s²`) — break before `\cdot` instead so the bracket stays whole.
-- [Minor] inquiry.json (tile #0) — `10,4 + 49,6 = 16,5 / + 43,5` splits a two-term sum at 390 px — keep `= 16,5 + 43,5` on one row.
-- [Minor] inquiry.json:266 and :282 — the two restored inline formulas (`mgh = … · 125 m`, `|ΔE_mek| = …`) stay over-wide on a phone as on main — keep on the clipped-formula list; break before the operator when redone.
+- [Minor] worked example stage 8: last paragraph is dense and breaks as "x-/suunnassa" before a display; a paragraph break before "Sama tulos saadaan liikeyhtälöllä" would read better.
 
 ## Checked
-- delta round 2: opened fi-390-02, fi-390-03, fi-390-04, fi-1280-01, fi-1280-02, fi-1280-03 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.
+- batch delta review: opened example-390 captures (fi, fy4-16); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

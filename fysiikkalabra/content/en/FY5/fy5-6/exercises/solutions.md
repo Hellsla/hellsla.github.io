@@ -4,7 +4,7 @@
 **Principle:** Only the gravitational force of the Earth acts on the satellite, so it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. The mass of the satellite cancels.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, from which $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Conversions:** $r = 7196\,\text{km} = 7.196 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7.196 \cdot 10^{6}\,\text{m}}} = 7441\,\text{m/s} = 7.441\,\text{km/s}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5.97 \cdot 10^{24}\,\text{kg} \\ &= 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $v = \sqrt{\dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7.196 \cdot 10^{6}\,\text{m}}} = 7441\,\text{m/s} = 7.441\,\text{km/s}$
 **Answer:** $7.44\,\text{km/s}$, three significant figures as in the mass of the Earth $5.97 \cdot 10^{24}\,\text{kg}$.
 **Reasonableness:** NOAA-20 orbits at an altitude of about $825\,\text{km}$, that is, higher than the ISS, whose speed is about $7.66\,\text{km/s}$. A satellite orbiting farther away is slower, so a slightly lower speed is expected.
 
@@ -24,7 +24,7 @@
 **Principle:** Only the gravitational force acts on the satellite, so it is the net force. According to Newton's second law $\gamma \tfrac{Mm}{r^2} = m a_\text{n}$, so the centripetal acceleration is the same as the acceleration due to the gravitational force at that distance.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = m a_\text{n}$, from which $a_\text{n} = \dfrac{\gamma M}{r^2}$
 **Conversions:** $r = 42\,164\,\text{km} = 4.2164 \cdot 10^{7}\,\text{m}$
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, so $a_\text{n} = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(4.2164 \cdot 10^{7}\,\text{m})^2} = 0.2241\,\text{m/s}^2$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5.97 \cdot 10^{24}\,\text{kg} \\ &= 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $a_\text{n} = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(4.2164 \cdot 10^{7}\,\text{m})^2} = 0.2241\,\text{m/s}^2$
 **Answer:** $0.224\,\text{m/s}^2$, three significant figures as in the mass of the Earth.
 **Reasonableness:** The satellite is about $6.6$ times farther from the centre of the Earth than the surface, so the acceleration is about $\tfrac{9.81\,\text{m/s}^2}{6.6^2} \approx 0.23\,\text{m/s}^2$. Unit: $\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \tfrac{\text{kg}}{\text{m}^2} = \tfrac{\text{N}}{\text{kg}} = \text{m/s}^2$.
 
@@ -44,7 +44,7 @@
 **Principle:** Only the gravitational force of the Moon acts on the probe, so it is the net force of the circular motion; the central body is now the Moon.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, from which $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Conversions:** $r = 1847\,\text{km} = 1.847 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.35 \cdot 10^{22}\,\text{kg} = 4.905 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{4.905 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1.847 \cdot 10^{6}\,\text{m}}} = 1630\,\text{m/s} = 1.630\,\text{km/s}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7.35 \cdot 10^{22}\,\text{kg} \\ &= 4.905 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $v = \sqrt{\dfrac{4.905 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1.847 \cdot 10^{6}\,\text{m}}} = 1630\,\text{m/s} = 1.630\,\text{km/s}$
 **Answer:** $1.63\,\text{km/s}$, three significant figures as in the mass of the Moon $7.35 \cdot 10^{22}\,\text{kg}$.
 **Reasonableness:** The mass of the Moon is about $\tfrac{1}{81}$ of the mass of the Earth and the orbital radius about $0.27$ times the orbital radius of the ISS, so the speed is about $7.7\,\text{km/s} \cdot \sqrt{\tfrac{1}{81 \cdot 0.27}} \approx 1.6\,\text{km/s}$.
 
@@ -54,7 +54,7 @@
 **Principle:** The gravitational force is the only force on the satellite and therefore the net force of the circular motion. From the equation we first solve the orbital radius $r$, which is measured from the centre of the Earth, and the altitude is $h = r - R$.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, from which $r = \dfrac{\gamma M}{v^2}$ and $h = r - R$
 **Conversions:** $v = 5.00\,\text{km/s} = 5000\,\text{m/s}$, $R = 6371\,\text{km} = 6.371 \cdot 10^{6}\,\text{m}$
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, so $r = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1.5938 \cdot 10^{7}\,\text{m}$, so $h = 1.5938 \cdot 10^{7}\,\text{m} - 6.371 \cdot 10^{6}\,\text{m} = 9.567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5.97 \cdot 10^{24}\,\text{kg} \\ &= 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $r = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1.5938 \cdot 10^{7}\,\text{m}$, so $h = 1.5938 \cdot 10^{7}\,\text{m} - 6.371 \cdot 10^{6}\,\text{m} = 9.567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
 **Answer:** $9.57 \cdot 10^{3}\,\text{km}$, that is, about $9570\,\text{km}$, three significant figures as in the speed $5.00\,\text{km/s}$.
 **Reasonableness:** The speed $5.00\,\text{km/s}$ lies between the $7.66\,\text{km/s}$ of the ISS and the $3.87\,\text{km/s}$ of a GPS satellite, and so does the orbital radius $15\,900\,\text{km}$ ($6790\,\text{km}$ and $26\,560\,\text{km}$). Check: $\sqrt{\tfrac{\gamma M}{r}} = \sqrt{\tfrac{3.984 \cdot 10^{14}}{1.594 \cdot 10^{7}}}\,\text{m/s} \approx 5000\,\text{m/s}$.
 
@@ -64,7 +64,7 @@
 **Principle:** Only the gravitational force of Mars acts on the probe, so it is the net force of the circular motion. The orbital radius is measured from the centre of Mars: $r = R + h$.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, from which $v = \sqrt{\dfrac{\gamma M}{R + h}}$
 **Conversions:** $r = 3390\,\text{km} + 400\,\text{km} = 3790\,\text{km} = 3.790 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 6.42 \cdot 10^{23}\,\text{kg} = 4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{3.790 \cdot 10^{6}\,\text{m}}} = 3362\,\text{m/s} = 3.362\,\text{km/s}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 6.42 \cdot 10^{23}\,\text{kg} \\ &= 4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $v = \sqrt{\dfrac{4.285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{3.790 \cdot 10^{6}\,\text{m}}} = 3362\,\text{m/s} = 3.362\,\text{km/s}$
 **Answer:** $3.36\,\text{km/s}$, three significant figures as in the mass of Mars $6.42 \cdot 10^{23}\,\text{kg}$.
 **Reasonableness:** At the same altitude around the Earth the speed is about $7.7\,\text{km/s}$. The mass of Mars is only about a tenth of the mass of the Earth and its radius about a half, so the speed must be clearly lower: $7.7\,\text{km/s} \cdot \sqrt{0.107 \cdot \tfrac{6771}{3790}} \approx 3.4\,\text{km/s}$.
 
@@ -84,7 +84,7 @@
 **Principle:** Weightlessness does not mean that gravity is absent: the gravitational force of the Earth acts on the astronaut, and it is calculated from the law of gravitation at the distance $r = R + h$ from the centre of the Earth. The floating is due to free fall, not to the absence of a force.
 **Formula:** $F = \gamma \dfrac{M m}{r^2}$, where $r = R + h$
 **Conversions:** $r = 6371\,\text{km} + 410\,\text{km} = 6781\,\text{km} = 6.781 \cdot 10^{6}\,\text{m}$
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, so $F = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 75\,\text{kg}}{(6.781 \cdot 10^{6}\,\text{m})^2} = 649.9\,\text{N}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5.97 \cdot 10^{24}\,\text{kg} \\ &= 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $F = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 75\,\text{kg}}{(6.781 \cdot 10^{6}\,\text{m})^2} = 649.9\,\text{N}$
 **Answer:** $650\,\text{N}$, that is, $6.5 \cdot 10^{2}\,\text{N}$, two significant figures as in the mass $75\,\text{kg}$.
 **Reasonableness:** At the surface of the Earth the same astronaut weighs $75\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 736\,\text{N}$. On the station the force is about $88\,\%$ of this, because the distance from the centre is only about $6\,\%$ greater: $\left(\tfrac{6371}{6781}\right)^2 \approx 0.88$.
 
@@ -94,9 +94,11 @@
 **Principle:** For the satellite to stay above the same point of the surface, its orbital period must be the rotation period of Mars, and it must orbit above the equator in the same direction as Mars rotates. The gravitational force is the net force of the circular motion of the satellite, and the speed is $v = \tfrac{2\pi r}{T}$.
 **Formula:** $\dfrac{\gamma M}{r} = v^2 = \dfrac{4\pi^2 r^2}{T^2}$, from which $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$ and $h = r - R$
 **Conversions:** $T = 24 \cdot 3600\,\text{s} + 37 \cdot 60\,\text{s} = 88\,620\,\text{s}$, $R = 3390\,\text{km} = 3.390 \cdot 10^{6}\,\text{m}$
-**Substitution:** $\gamma M T^2 = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 6.42 \cdot 10^{23}\,\text{kg} \cdot (88\,620\,\text{s})^2 = 3.3650 \cdot 10^{23}\,\text{m}^3$, so $r = \sqrt[3]{\dfrac{3.3650 \cdot 10^{23}\,\text{m}^3}{4\pi^2}} = \sqrt[3]{8.524 \cdot 10^{21}\,\text{m}^3} = 2.0427 \cdot 10^{7}\,\text{m}$, so $h = 2.0427 \cdot 10^{7}\,\text{m} - 3.390 \cdot 10^{6}\,\text{m} = 1.7037 \cdot 10^{7}\,\text{m} = 17\,037\,\text{km}$
+**Substitution:** $\gamma M T^2$ $= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $6.42 \cdot 10^{23}\,\text{kg} \cdot (88\,620\,\text{s})^2$ $= 3.3650 \cdot 10^{23}\,\text{m}^3$, so $r = \sqrt[3]{\dfrac{3.3650 \cdot 10^{23}\,\text{m}^3}{4\pi^2}} = \sqrt[3]{8.524 \cdot 10^{21}\,\text{m}^3} = 2.0427 \cdot 10^{7}\,\text{m}$, so $h = 2.0427 \cdot 10^{7}\,\text{m} - 3.390 \cdot 10^{6}\,\text{m} = 1.7037 \cdot 10^{7}\,\text{m} = 17\,037\,\text{km}$
 **Answer:** about $1.70 \cdot 10^{4}\,\text{km}$, that is, $17\,000\,\text{km}$, three significant figures as in the mass of Mars $6.42 \cdot 10^{23}\,\text{kg}$.
-**Reasonableness:** The geostationary orbit of the Earth is at an altitude of about $35\,800\,\text{km}$. The rotation period of Mars is almost the same as that of the Earth, but its mass is only about a tenth, so the same orbital period is reached at a smaller radius: $r \propto \sqrt[3]{M}$ gives $42\,164\,\text{km} \cdot \sqrt[3]{0.107} \approx 20\,000\,\text{km}$, which agrees with the orbital radius obtained, $r = 20\,400\,\text{km}$.
+**Reasonableness:** The geostationary orbit of the Earth is at an altitude of about $35\,800\,\text{km}$.
+
+The rotation period of Mars is almost the same as that of the Earth, but its mass is only about a tenth, so the same orbital period is reached at a smaller radius: $r \propto \sqrt[3]{M}$ gives $$\begin{aligned} &42\,164\,\text{km} \cdot \sqrt[3]{0.107} \\ &\approx 20\,000\,\text{km} \end{aligned}$$, which agrees with the orbital radius obtained, $r = 20\,400\,\text{km}$.
 
 ## fy5-6-L3-02
 **Given:** altitude before $h_1 = 400\,\text{km}$ and after $h_2 = 398\,\text{km}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -105,23 +107,37 @@
 **Formula:** $v = \sqrt{\dfrac{\gamma M}{r}}$, so $\Delta v = \sqrt{\dfrac{\gamma M}{R + h_2}} - \sqrt{\dfrac{\gamma M}{R + h_1}}$
 **Conversions:** $r_1 = 6771\,\text{km} = 6.771 \cdot 10^{6}\,\text{m}$, $r_2 = 6769\,\text{km} = 6.769 \cdot 10^{6}\,\text{m}$, and $\gamma M = 3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. The two speeds are almost equal and their difference is only about one metre per second, so intermediate results are not rounded before the subtraction: the speeds are calculated to two decimal places and only then subtracted.
 **Substitution:** $v_1 = \sqrt{\dfrac{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6.771 \cdot 10^{6}\,\text{m}}} = 7671.03\,\text{m/s}$, $v_2 = \sqrt{\dfrac{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6.769 \cdot 10^{6}\,\text{m}}} = 7672.17\,\text{m/s}$, so $\Delta v = 7672.17\,\text{m/s} - 7671.03\,\text{m/s} = 1.13\,\text{m/s}$
-**Answer:** The orbital speed increases by about $1.13\,\text{m/s}$. Three significant figures as in the mass of the Earth $5.97 \cdot 10^{24}\,\text{kg}$: the altitudes are here treated as exact values of the model, because the task gives no measurement uncertainty for them. The difference $2\,\text{km}$ of altitudes measured to the nearest kilometre would have only one significant figure, and the result would be about $1\,\text{m/s}$.
+**Answer:** The orbital speed increases by about $1.13\,\text{m/s}$. Three significant figures as in the mass of the Earth $5.97 \cdot 10^{24}\,\text{kg}$: the altitudes are here treated as exact values of the model, because the task gives no measurement uncertainty for them.
+
+The difference $2\,\text{km}$ of altitudes measured to the nearest kilometre would have only one significant figure, and the result would be about $1\,\text{m/s}$.
 **Reasonableness:** The radius decreases by only $2\,\text{km}$, about $0.03\,\%$, so the change in speed is small: $1.13\,\text{m/s}$ is about $0.015\,\%$ of the speed $7671\,\text{m/s}$, which fits such a small change in radius. The sign is positive, although the air brakes the station: the orbit descends, and lower down gravity requires a greater speed.
 
 ## fy5-6-L3-03
 **Given:** mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; the Earth is assumed to be a sphere
 **Find:** the rotation period $T$ at which a person standing at the equator would be weightless, in minutes
-**Principle:** As the Earth rotates, the person goes round a circle of radius $R$. The person is weightless when the ground does not press on them, that is, the support force is zero: then the gravitational force alone is exactly enough to be the net force of the circular motion, as for a satellite in a circular orbit.
+**Principle:** As the Earth rotates, the person goes round a circle of radius $R$.
+
+The person is weightless when the ground does not press on them, that is, the support force is zero: then the gravitational force alone is exactly enough to be the net force of the circular motion, as for a satellite in a circular orbit.
 **Formula:** $\gamma \dfrac{Mm}{R^2} = \dfrac{mv^2}{R}$ and $v = \dfrac{2\pi R}{T}$, so $\dfrac{\gamma M}{R} = \dfrac{4\pi^2 R^2}{T^2}$ and $T = 2\pi\sqrt{\dfrac{R^3}{\gamma M}}$
 **Conversions:** $R = 6371\,\text{km} = 6.371 \cdot 10^{6}\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, so $T = 2\pi\sqrt{\dfrac{(6.371 \cdot 10^{6}\,\text{m})^3}{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5062\,\text{s} = 5062 : 60\,\text{min} = 84.36\,\text{min}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5.97 \cdot 10^{24}\,\text{kg} \\ &= 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $T = 2\pi\sqrt{\dfrac{(6.371 \cdot 10^{6}\,\text{m})^3}{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5062\,\text{s} = 5062 : 60\,\text{min} = 84.36\,\text{min}$
 **Answer:** about $84.4\,\text{min}$, three significant figures as in the mass of the Earth.
-**Reasonableness:** This is the orbital period of a satellite orbiting at the surface level, and the ISS orbits only a little higher, with a period of $92.8\,\text{min}$, so the result is of the right order of magnitude and slightly shorter, as it should be. The real rotation period, about $24\,\text{h}$, is about $17$ times longer, so we are far from weightlessness.
+**Reasonableness:** This is the orbital period of a satellite orbiting at the surface level, and the ISS orbits only a little higher, with a period of $92.8\,\text{min}$, so the result is of the right order of magnitude and slightly shorter, as it should be.
+
+The real rotation period, about $24\,\text{h}$, is about $17$ times longer, so we are far from weightlessness.
 
 ## fy5-6-L1-06
 **Find:** why the astronaut floats on the space station although the gravity of the Earth acts on him or her.
-**Principle:** At the altitude of the station the distance from the centre of the Earth is about $6\,\%$ greater than at the surface, so the gravitational force is still about $88\,\%$ of its value at the surface. The station and the astronaut move under gravity alone with the same acceleration, that is, they are in free fall. Weightlessness means the absence of a normal force, not the absence of gravity.
-**Model answer:** The astronaut and the station are in free fall with the same acceleration, so the station does not push the astronaut with a normal force. He or she floats inside the station although the gravitational force acts on him or her. The option saying that gravity is almost absent at that altitude is wrong, because the force is still about $88\,\%$ of its value at the surface. The centrifugal force is not a force acting on the astronaut in an inertial frame, so it is not needed in the explanation: gravity is the only force and it is the net force of the circular motion, so the forces do not cancel each other. The option saying that speed removes the effect of gravity is wrong: a high sideways speed does not cancel gravity, but makes the station keep falling past the Earth.
+**Principle:** At the altitude of the station the distance from the centre of the Earth is about $6\,\%$ greater than at the surface, so the gravitational force is still about $88\,\%$ of its value at the surface.
+
+The station and the astronaut move under gravity alone with the same acceleration, that is, they are in free fall. Weightlessness means the absence of a normal force, not the absence of gravity.
+**Model answer:** The astronaut and the station are in free fall with the same acceleration, so the station does not push the astronaut with a normal force. He or she floats inside the station although the gravitational force acts on him or her.
+
+The option saying that gravity is almost absent at that altitude is wrong, because the force is still about $88\,\%$ of its value at the surface.
+
+The centrifugal force is not a force acting on the astronaut in an inertial frame, so it is not needed in the explanation: gravity is the only force and it is the net force of the circular motion, so the forces do not cancel each other.
+
+The option saying that speed removes the effect of gravity is wrong: a high sideways speed does not cancel gravity, but makes the station keep falling past the Earth.
 
 ## fy5-6-L1-07
 **Given:** orbital radius $r = 4.22 \cdot 10^{5}\,\text{km}$, mass of Jupiter $M = 1.90 \cdot 10^{27}\,\text{kg}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -129,9 +145,9 @@
 **Principle:** Only the gravitational force of Jupiter acts on Io, so it is the net force of the circular motion. The central body is now Jupiter.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, from which $v = \sqrt{\dfrac{\gamma M}{r}}$
 **Conversions:** $r = 4.22 \cdot 10^{5}\,\text{km} = 4.22 \cdot 10^{8}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1.90 \cdot 10^{27}\,\text{kg} = 1.268 \cdot 10^{17}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{1.268 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{4.22 \cdot 10^{8}\,\text{m}}} = 17\,335\,\text{m/s} = 17.335\,\text{km/s}$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1.90 \cdot 10^{27}\,\text{kg} \\ &= 1.268 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $v = \sqrt{\dfrac{1.268 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{4.22 \cdot 10^{8}\,\text{m}}} = 17\,335\,\text{m/s} = 17.335\,\text{km/s}$
 **Answer:** $17.3\,\text{km/s}$, three significant figures as in the mass $1.90 \cdot 10^{27}\,\text{kg}$.
-**Reasonableness:** The mass of Jupiter is about $318$ times the mass of the Earth and the orbit of Io is about $62$ times as large as the orbit of the ISS ($4.22 \cdot 10^{8} : 6.79 \cdot 10^{6}$). The speed is about $7.66\,\text{km/s} \cdot \sqrt{\tfrac{318}{62}} \approx 17\,\text{km/s}$.
+**Reasonableness:** The mass of Jupiter is about $318$ times the mass of the Earth and the orbit of Io is about $62$ times as large as the orbit of the ISS ($4.22 \cdot 10^{8} : 6.79 \cdot 10^{6}$). The speed is about $$7.66\,\text{km/s} \cdot \sqrt{\tfrac{318}{62}} \approx 17\,\text{km/s}$$.
 
 ## fy5-6-L1-08
 **Given:** orbital radius $r = 1.496 \cdot 10^{8}\,\text{km}$, orbital period $T = 365.25\,\text{d}$
@@ -146,7 +162,9 @@
 ## fy5-6-L2-05
 **Given:** $r$ and $T$ for four moons from the table, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** the mass of Jupiter $M$ in the unit $10^{27}\,\text{kg}$
-**Principle:** The only force on a moon is the gravitational force of Jupiter, which is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ and $v = \tfrac{2\pi r}{T}$. This is the formula $v = \sqrt{\tfrac{\gamma M}{r}}$ of the lesson combined with $v = \tfrac{2\pi r}{T}$, and it follows that the ratio $\tfrac{r^3}{T^2}$ is the same for all moons, because it depends only on the mass of the central body. Small differences in the measurements are evened out by the mean.
+**Principle:** The only force on a moon is the gravitational force of Jupiter, which is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ and $v = \tfrac{2\pi r}{T}$.
+
+This is the formula $v = \sqrt{\tfrac{\gamma M}{r}}$ of the lesson combined with $v = \tfrac{2\pi r}{T}$, and it follows that the ratio $\tfrac{r^3}{T^2}$ is the same for all moons, because it depends only on the mass of the central body. Small differences in the measurements are evened out by the mean.
 **Formula:** $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$, from which $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$ and $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
 **Conversions:** $r$ in metres: $421.7 \cdot 10^{3}\,\text{km} = 4.217 \cdot 10^{8}\,\text{m}$, $6.711 \cdot 10^{8}\,\text{m}$, $1.070 \cdot 10^{9}\,\text{m}$ and $1.883 \cdot 10^{9}\,\text{m}$. $T$ in seconds: $1.769 \cdot 86\,400\,\text{s} = 152\,842\,\text{s}$, $3.551 \cdot 86\,400\,\text{s} = 306\,806\,\text{s}$, $7.155 \cdot 86\,400\,\text{s} = 618\,192\,\text{s}$ and $16.69 \cdot 86\,400\,\text{s} = 1\,442\,016\,\text{s}$.
 **Substitution:** The ratios are $3.2102 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ for Io, $3.2110 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ for Europa, $3.2056 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ for Ganymede and $3.2108 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ for Callisto. They differ from each other by less than $0.2\,\%$. The sum is $1.2837 \cdot 10^{16}\,\text{m}^3/\text{s}^2$, so the mean is $3.2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2$. Then $4\pi^2 \cdot 3.2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2 = 1.2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2$, so $M = \dfrac{1.2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{6.674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1.898 \cdot 10^{27}\,\text{kg}$
@@ -166,11 +184,15 @@
 ## fy5-6-L2-07
 **Given:** masses $m_1 = 500\,\text{kg}$ and $m_2 = 2000\,\text{kg}$, altitude $h = 800\,\text{km}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** a) the gravitational forces $F_1$ and $F_2$, b) the orbital speed $v$ of the heavier satellite in kilometres per second, c) the error in the student's reasoning
-**Principle:** Only the gravitational force of the Earth acts on a satellite, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. A greater force really does act on the heavier satellite, but its mass is also greater, so the force $\tfrac{mv^2}{r}$ it needs grows in the same proportion. The mass cancels, and the orbital speed depends only on the orbital radius and the mass of the Earth.
+**Principle:** Only the gravitational force of the Earth acts on a satellite, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$.
+
+A greater force really does act on the heavier satellite, but its mass is also greater, so the force $\tfrac{mv^2}{r}$ it needs grows in the same proportion. The mass cancels, and the orbital speed depends only on the orbital radius and the mass of the Earth.
 **Formula:** a) $F = \gamma \dfrac{Mm}{r^2}$, b) $v = \sqrt{\dfrac{\gamma M}{r}}$, where $r = R + h$
 **Conversions:** $r = 6371\,\text{km} + 800\,\text{km} = 7171\,\text{km} = 7.171 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $\gamma M = 3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $F_1 = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 500\,\text{kg}}{(7.171 \cdot 10^{6}\,\text{m})^2} = 3874\,\text{N}$ and $F_2 = \dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 2000\,\text{kg}}{(7.171 \cdot 10^{6}\,\text{m})^2} = 15\,496\,\text{N}$. b) $v = \sqrt{\dfrac{3.984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7.171 \cdot 10^{6}\,\text{m}}} = 7454\,\text{m/s} = 7.454\,\text{km/s}$
-**Answer:** the orbital speed of the heavier satellite is $7.45\,\text{km/s}$, three significant figures as in the mass of the Earth. The forces are $3.87\,\text{kN}$ and $15.5\,\text{kN}$, so the force is four times as great on the heavier satellite. The error: the student takes into account only the increase in the force but not that the mass to be accelerated also becomes four times as great. The orbital speed of the lighter satellite is the same $7.45\,\text{km/s}$.
+**Answer:** the orbital speed of the heavier satellite is $7.45\,\text{km/s}$, three significant figures as in the mass of the Earth. The forces are $3.87\,\text{kN}$ and $15.5\,\text{kN}$, so the force is four times as great on the heavier satellite.
+
+The error: the student takes into account only the increase in the force but not that the mass to be accelerated also becomes four times as great. The orbital speed of the lighter satellite is the same $7.45\,\text{km/s}$.
 **Reasonableness:** The force and the circular motion agree: $\tfrac{m v^2}{r} = \tfrac{2000\,\text{kg} \cdot (7454\,\text{m/s})^2}{7.171 \cdot 10^{6}\,\text{m}} = 15\,496\,\text{N}$, the same as $F_2$. The ISS orbits at an altitude of $400\,\text{km}$ at the speed $7.66\,\text{km/s}$, and at an altitude of $800\,\text{km}$ the speed must indeed be slightly lower.
 
 ## fy5-6-L3-04
@@ -180,21 +202,29 @@
 **Formula:** $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$, from which $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
 **Conversions:** $r$ in metres: $6.0 \cdot 10^{9}\,\text{m}$, $1.05 \cdot 10^{10}\,\text{m}$, $1.70 \cdot 10^{10}\,\text{m}$ and $2.70 \cdot 10^{10}\,\text{m}$. $T$ in seconds: $3.29 \cdot 86\,400\,\text{s} = 284\,256\,\text{s}$, $7.57 \cdot 86\,400\,\text{s} = 654\,048\,\text{s}$, $7.82 \cdot 86\,400\,\text{s} = 675\,648\,\text{s}$ and $31.4 \cdot 86\,400\,\text{s} = 2.713 \cdot 10^{6}\,\text{s}$.
 **Substitution:** a) The ratios $\tfrac{r^3}{T^2}$ are b: $2.67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, c: $2.71 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, d: $1.08 \cdot 10^{19}\,\text{m}^3/\text{s}^2$ and e: $2.67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$. The ratio of planet d is about four times those of the others. b) The sum of the three other ratios is $8.054 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, so the mean is $2.685 \cdot 10^{18}\,\text{m}^3/\text{s}^2$ and $4\pi^2 \cdot 2.685 \cdot 10^{18}\,\text{m}^3/\text{s}^2 = 1.0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, so $M = \dfrac{1.0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{6.674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1.588 \cdot 10^{30}\,\text{kg}$. c) $T_\text{d} = \sqrt{\dfrac{r^3}{2.685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = \sqrt{\dfrac{4.913 \cdot 10^{30}\,\text{m}^3}{2.685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = 1.353 \cdot 10^{6}\,\text{s} = 15.7\,\text{d}$
-**Answer:** the mass of the star is $1.59 \cdot 10^{30}\,\text{kg}$, three significant figures as in the orbital periods and the radii $10.5 \cdot 10^{9}\,\text{m}$ and $27.0 \cdot 10^{9}\,\text{m}$. The radius $6.0 \cdot 10^{9}\,\text{m}$ has only two significant figures, so the ratio of planet b is less certain, but it agrees with the ratios of planets c and e, whose mean alone gives the same result $1.59 \cdot 10^{30}\,\text{kg}$.
+**Answer:** the mass of the star is $1.59 \cdot 10^{30}\,\text{kg}$, three significant figures as in the orbital periods and the radii $10.5 \cdot 10^{9}\,\text{m}$ and $27.0 \cdot 10^{9}\,\text{m}$.
 
-Justification: the ratios of three planets differ from each other by less than $2\,\%$, but the ratio of planet d is about four times as great, so its orbital period does not fit the model. The comparison is the justification: when the radius grows by about $60\,\%$ from planet c to planet d, the orbital period grows by only about $3\,\%$, although it should more than double.
+The radius $6.0 \cdot 10^{9}\,\text{m}$ has only two significant figures, so the ratio of planet b is less certain, but it agrees with the ratios of planets c and e, whose mean alone gives the same result $1.59 \cdot 10^{30}\,\text{kg}$.
+
+Justification: the ratios of three planets differ from each other by less than $2\,\%$, but the ratio of planet d is about four times as great, so its orbital period does not fit the model.
+
+The comparison is the justification: when the radius grows by about $60\,\%$ from planet c to planet d, the orbital period grows by only about $3\,\%$, although it should more than double.
 
 Leaving it out is justified because the deviation is clear and has a logical explanation; the value must be checked by measuring again, not rejected merely because it deviates.
 
 The correct orbital period is about $15.7\,\text{d}$, and the listed $7.82\,\text{d}$ is roughly half of it, because in the ratio $\tfrac{r^3}{T^2}$ the orbital period is squared and a fourfold ratio corresponds to half the orbital period.
 
 Explanation: for each revolution two dimmings of brightness have been interpreted as transits (for example also the moment when the planet passes behind the star), or the transits of two different planets have been mixed up, so that the observed interval is half of the real orbital period.
-**Reasonableness:** The mass of the star is $1.588 \cdot 10^{30}\,\text{kg} : 1.99 \cdot 10^{30}\,\text{kg} \approx 0.80$ solar masses, which is of the order of magnitude of an ordinary star. The corrected orbital period of planet d fits its position in the orbit: it lies between those of planets c ($7.57\,\text{d}$) and e ($31.4\,\text{d}$), just as the orbital radius $17.0 \cdot 10^{9}\,\text{m}$ lies between the radii $10.5 \cdot 10^{9}\,\text{m}$ and $27.0 \cdot 10^{9}\,\text{m}$.
+**Reasonableness:** The mass of the star is $$\begin{aligned} &1.588 \cdot 10^{30}\,\text{kg} : 1.99 \cdot 10^{30}\,\text{kg} \\ &\approx 0.80 \end{aligned}$$ solar masses, which is of the order of magnitude of an ordinary star.
+
+The corrected orbital period of planet d fits its position in the orbit: it lies between those of planets c ($7.57\,\text{d}$) and e ($31.4\,\text{d}$), just as the orbital radius $17.0 \cdot 10^{9}\,\text{m}$ lies between the radii $10.5 \cdot 10^{9}\,\text{m}$ and $27.0 \cdot 10^{9}\,\text{m}$.
 
 ## fy5-6-L3-05
 **Given:** altitudes $h_\text{A} = 400\,\text{km}$ and $h_\text{B} = 1000\,\text{km}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; air resistance and the effect of the masses of the satellites are assumed to be negligible
 **Find:** a) the orbital periods $T_\text{A}$ and $T_\text{B}$, b) the time $t$ until the satellites are next on the same straight line, in hours, c) why the masses are not needed
-**Principle:** The only force on each satellite is the gravitational force of the Earth, which is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ and $v = \tfrac{2\pi r}{T}$, which gives the orbital period. The mass $m$ cancels, so the masses are not needed (part c). The lower satellite A moves faster and has made one revolution more than B when the satellites are on the same straight line on the same side again for the first time.
+**Principle:** The only force on each satellite is the gravitational force of the Earth, which is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ and $v = \tfrac{2\pi r}{T}$, which gives the orbital period. The mass $m$ cancels, so the masses are not needed (part c).
+
+The lower satellite A moves faster and has made one revolution more than B when the satellites are on the same straight line on the same side again for the first time.
 **Formula:** a) $T = 2\pi\sqrt{\dfrac{r^3}{\gamma M}}$, where $r = R + h$. b) In the time $t$ satellite A makes $\tfrac{t}{T_\text{A}}$ and B $\tfrac{t}{T_\text{B}}$ revolutions, and A has made one revolution more: $\dfrac{t}{T_\text{A}} - \dfrac{t}{T_\text{B}} = 1$, from which $t = \dfrac{T_\text{A} T_\text{B}}{T_\text{B} - T_\text{A}}$
 **Conversions:** $r_\text{A} = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6.771 \cdot 10^{6}\,\text{m}$ and $r_\text{B} = 6371\,\text{km} + 1000\,\text{km} = 7371\,\text{km} = 7.371 \cdot 10^{6}\,\text{m}$; finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $\gamma M = 3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $T_\text{A} = 2\pi\sqrt{\dfrac{(6.771 \cdot 10^{6}\,\text{m})^3}{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5546.0\,\text{s} = 92.4\,\text{min}$ and $T_\text{B} = 2\pi\sqrt{\dfrac{(7.371 \cdot 10^{6}\,\text{m})^3}{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 6299.3\,\text{s} = 105.0\,\text{min}$. b) $t = \dfrac{5546.0\,\text{s} \cdot 6299.3\,\text{s}}{6299.3\,\text{s} - 5546.0\,\text{s}} = 46\,379\,\text{s} = 46\,379 : 3600\,\text{h} = 12.88\,\text{h}$
@@ -216,7 +246,9 @@ $$\begin{aligned}
 &\phantom{T} \approx 2.76 \cdot 10^{4}\,\text{s}
 \end{aligned}$$
 
-Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7.7\,\text{h}$. The orbital period is thus about $7.7\,\text{h}$, a few hours. The other options come from typical errors: forgetting the square root gives about $0.0036\,\text{h}$, leaving the radius in kilometres under the square root about $0.24\,\text{h}$, and dividing seconds by $60$ about $460\,\text{h}$. The result is reasonable: the orbital speed $2.1\,\text{km/s}$ is smaller than that of a satellite orbiting near the Earth, because the mass of Mars is about a tenth of the mass of the Earth.
+Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7.7\,\text{h}$. The orbital period is thus about $7.7\,\text{h}$, a few hours. The other options come from typical errors: forgetting the square root gives about $0.0036\,\text{h}$, leaving the radius in kilometres under the square root about $0.24\,\text{h}$, and dividing seconds by $60$ about $460\,\text{h}$.
+
+The result is reasonable: the orbital speed $2.1\,\text{km/s}$ is smaller than that of a satellite orbiting near the Earth, because the mass of Mars is about a tenth of the mass of the Earth.
 
 ## fy5-6-L1-10
 **Given:** from the figure the Earth's orbit: smallest distance from the Sun $147.1\,\text{million km}$ and largest $152.1\,\text{million km}$; mass of the Sun $M = 1.99 \cdot 10^{30}\,\text{kg}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -225,7 +257,7 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Reading the graph:** Under the left side of the figure are the distances of the Earth's orbit: smallest $147.1\,\text{million km}$ and largest $152.1\,\text{million km}$. The orbit and the dashed circle drawn over it cannot be told apart, so the circular model fits.
 **Formula:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ and $a = \dfrac{\gamma M}{r^2}$
 **Conversions:** $r = \dfrac{147.1 + 152.1}{2}\,\text{million km} = 149.6\,\text{million km} = 1.496 \cdot 10^{11}\,\text{m}$; finally $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1.99 \cdot 10^{30}\,\text{kg} = 1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, so $a = \dfrac{1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1.496 \cdot 10^{11}\,\text{m})^2} = 5.934 \cdot 10^{-3}\,\text{m/s}^2 = 5.934\,\text{mm/s}^2$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1.99 \cdot 10^{30}\,\text{kg} \\ &= 1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $a = \dfrac{1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1.496 \cdot 10^{11}\,\text{m})^2} = 5.934 \cdot 10^{-3}\,\text{m/s}^2 = 5.934\,\text{mm/s}^2$
 **Answer:** $5.93\,\text{mm/s}^2$, three significant figures like the mass of the Sun.
 **Reasonableness:** The acceleration is $\dfrac{v^2}{r} = \dfrac{(29.8 \cdot 10^{3}\,\text{m/s})^2}{1.496 \cdot 10^{11}\,\text{m}} \approx 5.9 \cdot 10^{-3}\,\text{m/s}^2$, the same as above. It is less than a thousandth of the free-fall acceleration $9.81\,\text{m/s}^2$ of the Earth, and the Sun is very far away.
 
@@ -235,9 +267,9 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Principle:** The gravitational force of the Moon on a probe of mass $m$ is $F = \gamma \tfrac{Mm}{r^2}$, and the acceleration it causes is $g = \tfrac{F}{m}$; the mass $m$ of the probe cancels.
 **Formula:** $g = \dfrac{\gamma M}{r^2}$
 **Conversions:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1.840 \cdot 10^{6}\,\text{m}$
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $g = \dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1.840 \cdot 10^{6}\,\text{m})^2} = 1.448\,\text{m/s}^2$
+**Substitution:** $$\begin{aligned} \gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7.346 \cdot 10^{22}\,\text{kg} \\ &= 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, so $g = \dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1.840 \cdot 10^{6}\,\text{m})^2} = 1.448\,\text{m/s}^2$
 **Answer:** $1.45\,\text{m/s}^2$, three significant figures: the radius $1840\,\text{km}$ and the mass $7.346 \cdot 10^{22}\,\text{kg}$ have four, but values in different tables differ slightly, so a fourth figure would not be reliable. The value is from the MAFY table (Solar System, Moon), and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** On the surface of the Moon (radius $1737\,\text{km}$) the acceleration is $1.62\,\text{m/s}^2$. The orbit is a little farther from the centre, and the ratio $\left(\tfrac{1737}{1840}\right)^2 = 0.891$ gives $1.62\,\text{m/s}^2 \cdot 0.891 = 1.44\,\text{m/s}^2$, the same within rounding.
+**Reasonableness:** On the surface of the Moon (radius $1737\,\text{km}$) the acceleration is $1.62\,\text{m/s}^2$. The orbit is a little farther from the centre, and the ratio $\left(\tfrac{1737}{1840}\right)^2 = 0.891$ gives $$1.62\,\text{m/s}^2 \cdot 0.891 = 1.44\,\text{m/s}^2$$, the same within rounding.
 
 ## fy5-6-L2-08
 **Given:** from the figure the orbit of Halley's comet: smallest distance from the Sun $r_1 = 88\,\text{million km}$ and largest $r_2 = 5250\,\text{million km}$
@@ -247,11 +279,15 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Formula:** $\dfrac{v_1}{v_2} = \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} = \sqrt{\dfrac{r_2}{r_1}}$
 **Conversions:** None needed, because the distances are in the same unit and the ratio has no unit.
 **Substitution:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{million km}}{88\,\text{million km}}} = \sqrt{59.66} = 7.724$
-**Answer:** about $7.7$ times, two significant figures because the distance $88\,\text{million km}$ has only two (the unrounded value is $7.724$). The largest distance is about $60$ times the smallest, and because of the square root the speed is only about $7.7$ times as great. According to the figure the comet's real orbit is a very elongated ellipse, so the circular model does not describe it; the task only compares the speeds of the model.
+**Answer:** about $7.7$ times, two significant figures because the distance $88\,\text{million km}$ has only two (the unrounded value is $7.724$). The largest distance is about $60$ times the smallest, and because of the square root the speed is only about $7.7$ times as great.
+
+According to the figure the comet's real orbit is a very elongated ellipse, so the circular model does not describe it; the task only compares the speeds of the model.
 **Reasonableness:** Since $7.7^2 \approx 59$, the result fits the ratio of the distances, $59.7$. The speed is greater nearer the Sun, as $v \propto \tfrac{1}{\sqrt{r}}$ says it should be.
 
 ## fy5-6-L2-09
-**Given:** the rows *Distance from Sun* (the mean distance from the Sun, which is the semi-major axis $a$ of the orbit, unit $10^{6}\,\text{km}$) and *Orbital Period* (the orbital period $T$ in days) of NASA's *Planetary Fact Sheet*. Part a), an example, material read on 15 November 2026. Another choice of planets or a later reading gives slightly different numbers, but the method is the same.
+**Given:** the rows *Distance from Sun* (the mean distance from the Sun, which is the semi-major axis $a$ of the orbit, unit $10^{6}\,\text{km}$) and *Orbital Period* (the orbital period $T$ in days) of NASA's *Planetary Fact Sheet*.
+
+Part a), an example, material read on 15 November 2026. Another choice of planets or a later reading gives slightly different numbers, but the method is the same.
 
 | Planet | $a\,(10^{6}\,\text{km})$ | $T\,(\text{d})$ |
 |---|---|---|
@@ -262,7 +298,9 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 | Jupiter | $778.5$ | $4331$ |
 
 **Find:** a) a table of $a$ and $T$ for five planets, b) the graph of the points $(a^3, T^2)$, c) how the data support Kepler's third law, d) the orbital period of Mars $T_\text{Mars}$ in days from the Earth's orbital data and a comparison with NASA's value
-**Principle:** In practice only the Sun's gravitational force acts on a planet, and it is the net force of the circular motion. It follows from the circular-orbit model of this chapter that $T^2$ is directly proportional to $r^3$ and that the constant of proportionality depends only on the mass of the Sun $M$, not on the planet. So the model predicts Kepler's third law when the orbital radius $r$ is the semi-major axis $a$: the points $(a^3, T^2)$ lie on one straight line. The line passes through the origin because the equation has no constant term.
+**Principle:** In practice only the Sun's gravitational force acts on a planet, and it is the net force of the circular motion. It follows from the circular-orbit model of this chapter that $T^2$ is directly proportional to $r^3$ and that the constant of proportionality depends only on the mass of the Sun $M$, not on the planet.
+
+So the model predicts Kepler's third law when the orbital radius $r$ is the semi-major axis $a$: the points $(a^3, T^2)$ lie on one straight line. The line passes through the origin because the equation has no constant term.
 **Reading the graph:** Part b): $a^3$ and $T^2$ are calculated for each planet, and the points are plotted with $a^3$ on the horizontal axis and $T^2$ on the vertical axis.
 
 | Planet | $a^3\,\left((10^{8}\,\text{km})^3\right)$ | $T^2\,\left((10^{3}\,\text{d})^2\right)$ | $\dfrac{T^2}{a^3}$ |
@@ -273,7 +311,9 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 | Mars | $11.85$ | $0.4720$ | $0.0398$ |
 | Jupiter | $471.8$ | $18.76$ | $0.0398$ |
 
-Part c): the points lie on one straight line through the origin. Jupiter's point is far away and the other four are near the origin, so it is worth plotting the inner planets in a graph of their own as well. The slope is read from two points far apart on the fitted line, for example $(100;\ 4.0)$ and $(400;\ 15.9)$: $k = \dfrac{15.9 - 4.0}{400 - 100} \approx 0.040$ in the units of the table. The same shows in the ratios $\tfrac{T^2}{a^3}$, which differ from each other by less than $0.4\,\%$.
+Part c): the points lie on one straight line through the origin. Jupiter's point is far away and the other four are near the origin, so it is worth plotting the inner planets in a graph of their own as well.
+
+The slope is read from two points far apart on the fitted line, for example $(100;\ 4.0)$ and $(400;\ 15.9)$: $k = \dfrac{15.9 - 4.0}{400 - 100} \approx 0.040$ in the units of the table. The same shows in the ratios $\tfrac{T^2}{a^3}$, which differ from each other by less than $0.4\,\%$.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$ and $v = \dfrac{2\pi r}{T}$, so $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$ and $T^2 = \dfrac{4\pi^2}{\gamma M} r^3$. Part d): the constant is the same for the Earth and Mars, so $\dfrac{T_\text{Mars}^2}{T_\text{Earth}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Earth}^3}$, from which $T_\text{Mars} = T_\text{Earth}\left(\dfrac{a_\text{Mars}}{a_\text{Earth}}\right)^{3/2}$
 **Conversions:** For the graph $a$ is converted to the unit $10^{8}\,\text{km}$ and $T$ to the unit $10^{3}\,\text{d}$, for example for the Earth $$
 \begin{aligned}
@@ -292,11 +332,17 @@ T_\text{Mars} &= 365.2\,\text{d} \\
 $$
 **Answer:** $687.1\,\text{d}$, four significant figures as in the data $365.2\,\text{d}$, $228.0 \cdot 10^{6}\,\text{km}$ and $149.6 \cdot 10^{6}\,\text{km}$.
 
-Part c): the data support the law, because the points of the five planets lie on one straight line through the origin although $a^3$ grows more than $2000$-fold from Mercury to Jupiter. Five planets still do not prove the law in general. With NASA's values the ratio $\tfrac{T^2}{a^3}$ stays the same to within about $0.2\,\%$ from Mercury to Mars and for Jupiter, and in the table of five planets the ratios differ from each other by less than $0.4\,\%$. The outermost planets deviate more: the ratio of Uranus is about $0.3\,\%$, that of Saturn about $1.3\,\%$ and that of Neptune about $2.5\,\%$ below the value of the Earth.
+Part c): the data support the law, because the points of the five planets lie on one straight line through the origin although $a^3$ grows more than $2000$-fold from Mercury to Jupiter. Five planets still do not prove the law in general.
+
+With NASA's values the ratio $\tfrac{T^2}{a^3}$ stays the same to within about $0.2\,\%$ from Mercury to Mars and for Jupiter, and in the table of five planets the ratios differ from each other by less than $0.4\,\%$.
+
+The outermost planets deviate more: the ratio of Uranus is about $0.3\,\%$, that of Saturn about $1.3\,\%$ and that of Neptune about $2.5\,\%$ below the value of the Earth.
 
 Part d): NASA's value is $687.0\,\text{d}$, so the difference is $0.1\,\text{d}$, about $0.02\,\%$.
 
 The difference is explained by rounding: the values of the table have four significant figures, and a change in just the last digit of Mars's distance to $227.9 \cdot 10^{6}\,\text{km}$ would change the result to $686.7\,\text{d}$.
 
 In addition, the law in this form assumes that the mass of the planet is negligible beside the mass of the Sun and that the other planets have no effect. The elongation of the orbit is not a reason: Kepler's third law also holds for an elliptical orbit when the semi-major axis takes the place of the radius.
-**Reasonableness:** Mars is about $1.5$ times as far from the Sun as the Earth, and its orbital period $687.1\,\text{d} : 365.2\,\text{d} \approx 1.9$ years is the known length of the Martian year. The slope fits the model too. In SI units $k = 0.0398 \cdot \dfrac{(8.64 \cdot 10^{7}\,\text{s})^2}{(10^{11}\,\text{m})^3} = 2.97 \cdot 10^{-19}\,\text{s}^2/\text{m}^3$. The mass of the Sun comes out as $M = \dfrac{4\pi^2}{\gamma k} = 1.99 \cdot 10^{30}\,\text{kg}$. It is the table value of the mass of the Sun.
+**Reasonableness:** Mars is about $1.5$ times as far from the Sun as the Earth, and its orbital period $687.1\,\text{d} : 365.2\,\text{d} \approx 1.9$ years is the known length of the Martian year.
+
+The slope fits the model too. In SI units $k = 0.0398 \cdot \dfrac{(8.64 \cdot 10^{7}\,\text{s})^2}{(10^{11}\,\text{m})^3} = 2.97 \cdot 10^{-19}\,\text{s}^2/\text{m}^3$. The mass of the Sun comes out as $M = \dfrac{4\pi^2}{\gamma k} = 1.99 \cdot 10^{30}\,\text{kg}$. It is the table value of the mass of the Sun.

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3f1ddb4a937f5f43
+CONTENT-HASH: 795f2f9ca4e62da4
 
 ## Blocking
 
 ## Polish
-- [Minor] reflow-lesson-2 — the capture is a whole-page stack that is too small to read; the changed blocks in lesson-1 and lesson-3 were judged.
 
 ## Checked
-batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.
+- Delta (md-paragraphs): worked example stage 1 knowns as a list, stage 6 result split. Opened fy2-3-example-390-1 and -2 (en captures): list reads cleanly, paragraphs separated, nothing clipped.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

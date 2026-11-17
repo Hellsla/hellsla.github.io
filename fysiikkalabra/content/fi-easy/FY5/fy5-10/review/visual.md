@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 450033aa73590cf0
+CONTENT-HASH: 8df1f23f0d688674
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: theory, Periaate step, "Nopeuden voi muuttaa vain …", sim model note, Koe 3 title, result text, rubric line, exercise feedback/solutions with the new "jännitys ja massa pituusyksikköä kohti" wording; units LaTeX, no inline formula wraps at 390; captures fy5-10-fi-easy-390/1280-teoria, -periaate, -vain, -model, -koe3, -tulos, -rubric.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.

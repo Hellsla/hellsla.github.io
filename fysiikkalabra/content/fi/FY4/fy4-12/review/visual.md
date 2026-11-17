@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d30432fe1fa5d86b
+CONTENT-HASH: 63c7c171d48c1400
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- [Minor] worked example stages 3 and 7: a sentence continues after a display equation ("antaa yllä olevan juuren.", "ja pyöräilijän …"); acceptable, but a full sentence after the display would read cleaner.
 
 ## Checked
-- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-17, fi-390-18, fi-390-19 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- batch delta review: opened example-390 captures (fi, fy4-12); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

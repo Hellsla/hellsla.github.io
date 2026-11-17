@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 469d45abefa175d7
+CONTENT-HASH: 4bfcc3b87a7f9a7a
+ROUND: 1
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy5-3-L1-10 Järkevyys — "hölkkävauhtia" is a fine S2 word but the speed 2,3 m/s is brisk-walk to jog; fine, optional: keep one comparison only.
+- [Minor] fy5-3 L2 (3-14 answer) — "$4{,}5\cdot10^3\,\frac{1}{\text{min}}$" is a stacked small fraction in running text; write $\text{min}^{-1}$ or "kierrosta minuutissa" only.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-3.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- Changed solutions (L1-10, L1-11 aligned Sijoitus rows, L1-08 Periaate/Järkevyys) read in the packet; rows show no clipping.
+- Delta (md-paragraphs): solutions.md only, paragraph splits. Opened open-exercises-L2-1280-4 and L3-1280-5.
+- Layout survived at 1280 px with all solutions open: each split paragraph is its own block inside the solution panel, labels (Annettu, Periaate, Vastaus) and calculation rows unchanged, no clipping or overlap, units upright with thin space, decimal comma consistent.
+- Wording unchanged by the splits; each paragraph holds one idea.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

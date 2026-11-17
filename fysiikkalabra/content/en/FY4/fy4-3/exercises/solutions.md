@@ -34,7 +34,11 @@ a 0
 **Given:** force of the skater on the board $F_{\text{SB}} = 90\,\text{N}$ towards the board
 **Find:** the force of the board on the skater $F_{\text{BS}}$ in $\text{N}$
 **Principle:** Newton's third law: the skater and the board interact, so the board acts on the skater with an equally large but oppositely directed force. The law holds regardless of whether either of them moves.
-**Force diagram:** Choose the skater as the object and draw the skater as a rectangle; the positive direction is away from the board. The skater's weight acts down, the normal force of the ice up and the force of the board $\overline{F}_{\text{BS}}$ away from the board, ending at the skater's side. The skater's own force on the board $\overline{F}_{\text{SB}}$ acts on the board, so it does not belong in the skater's diagram but is the reaction force of the force asked for.
+**Force diagram:** Choose the skater as the object and draw the skater as a rectangle; the positive direction is away from the board.
+
+The skater's weight acts down, the normal force of the ice up and the force of the board $\overline{F}_{\text{BS}}$ away from the board, ending at the skater's side.
+
+The skater's own force on the board $\overline{F}_{\text{SB}}$ acts on the board, so it does not belong in the skater's diagram but is the reaction force of the force asked for.
 ```voimakuvio
 pinta 0
 G 590
@@ -73,7 +77,9 @@ a 0
 **Given:** mass of the book $m = 0.65\,\text{kg}$, the force of the Earth on the book is the weight of the book; $g = 9.81\,\text{m/s}^2$
 **Find:** the force of the book on the Earth $F$ in $\text{N}$
 **Principle:** The Earth and the book pull each other. By Newton's third law the book pulls the Earth with an equally large force as the Earth pulls the book, but in the opposite direction, that is, upwards. The force of the Earth on the book is the weight $G = mg$.
-**Force diagram:** Choose the book as the object and draw it as a rectangle; the positive direction is up. The weight $\overline{G}$ acts down from the centre and the normal force of the table $\overline{N}$ up from the bottom surface. The weight is the force of the Earth on the book, and its reaction force is the force $\overline{F}$ of the book on the Earth, which acts on the Earth and does not belong in the diagram of the book.
+**Force diagram:** Choose the book as the object and draw it as a rectangle; the positive direction is up. The weight $\overline{G}$ acts down from the centre and the normal force of the table $\overline{N}$ up from the bottom surface.
+
+The weight is the force of the Earth on the book, and its reaction force is the force $\overline{F}$ of the book on the Earth, which acts on the Earth and does not belong in the diagram of the book.
 ```voimakuvio
 pinta 0
 G 6,3765
@@ -84,12 +90,16 @@ a 0
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F = 0.65\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 6.3765\,\text{N}$
 **Answer:** $6.4\,\text{N}$ upwards towards the book, two significant figures like the mass $0.65\,\text{kg}$.
-**Reasonableness:** The weight of a kilogram is about $10\,\text{N}$, so the weight of a book of $0.65\,\text{kg}$ is about $6\,\text{N}$. The Earth does not noticeably move because of this force, since its mass is enormous. The normal force of the table is not the reaction force of the weight, but belongs to the interaction between the book and the table.
+**Reasonableness:** The weight of a kilogram is about $10\,\text{N}$, so the weight of a book of $0.65\,\text{kg}$ is about $6\,\text{N}$. The Earth does not noticeably move because of this force, since its mass is enormous.
+
+The normal force of the table is not the reaction force of the weight, but belongs to the interaction between the book and the table.
 
 ## fy4-3-L2-01
 **Given:** weight of the lower book $G_1 = 8.0\,\text{N}$, weight of the upper book $G_2 = 5.0\,\text{N}$, the books are at rest
 **Find:** the force of the lower book on the table $F$ in $\text{N}$
-**Principle:** The upper book is at rest, so the lower book supports it with a force $G_2$ (first law), and by the third law the upper book presses the lower one down with an equally large force. The lower book is also at rest, so the normal force of the table on it is as large as the downward forces together. Finally, the lower book presses the table with a force as large as the normal force (third law).
+**Principle:** The upper book is at rest, so the lower book supports it with a force $G_2$ (first law), and by the third law the upper book presses the lower one down with an equally large force.
+
+The lower book is also at rest, so the normal force of the table on it is as large as the downward forces together. Finally, the lower book presses the table with a force as large as the normal force (third law).
 **Force diagram:** The lower book as a rectangle, positive direction up. The weight $\overline{G}_1$ down from the centre, the force of the upper book $\overline{F}_2$ down from the top surface and the normal force of the table $\overline{N}$ up from the bottom surface.
 ```voimakuvio
 pinta 0
@@ -107,7 +117,9 @@ a 0
 ## fy4-3-L2-02
 **Given:** force of the swimmer on the water $F_{\text{SW}} = 65\,\text{N}$ backwards, weight of the swimmer $720\,\text{N}$ and an equally large buoyancy of the water, the swimmer swims straight in the horizontal direction at constant velocity
 **Find:** the drag of the water on the swimmer $F_\text{d}$ in $\text{N}$
-**Principle:** By the third law the water pushes the swimmer forwards with an equally large force $F_{\text{WS}} = 65\,\text{N}$; this force moves the swimmer forwards. The swimmer moves at constant velocity, so by the first law the sum of the horizontal forces is zero. The weight and the buoyancy are vertical and do not affect the horizontal equilibrium, so they are not needed: the drag of the water backwards is as large as the push of the water forwards.
+**Principle:** By the third law the water pushes the swimmer forwards with an equally large force $F_{\text{WS}} = 65\,\text{N}$; this force moves the swimmer forwards. The swimmer moves at constant velocity, so by the first law the sum of the horizontal forces is zero.
+
+The weight and the buoyancy are vertical and do not affect the horizontal equilibrium, so they are not needed: the drag of the water backwards is as large as the push of the water forwards.
 **Force diagram:** The swimmer as a rectangle, positive direction forwards. The push of the water $\overline{F}_{\text{WS}}$ forwards and the drag of the water $\overline{F}_\text{d}$ backwards. In the vertical direction the buoyancy and the weight cancel each other.
 ```voimakuvio
 G 720
@@ -177,7 +189,9 @@ v alas
 ## fy4-3-L3-02
 **Given:** weight of each magnet $G = 0.30\,\text{N}$, the upper magnet floats at rest, friction and the force of the stick are ignored
 **Find:** the normal force of the table on the lower magnet $N$ in $\text{N}$
-**Principle:** The upper magnet is at rest, so the repulsion of the lower magnet on it points up and is as large as its weight (first law). By the third law the upper magnet repels the lower one downwards with an equally large force, although the magnets do not touch each other. The lower magnet is at rest, so the normal force of the table cancels its weight and this force.
+**Principle:** The upper magnet is at rest, so the repulsion of the lower magnet on it points up and is as large as its weight (first law).
+
+By the third law the upper magnet repels the lower one downwards with an equally large force, although the magnets do not touch each other. The lower magnet is at rest, so the normal force of the table cancels its weight and this force.
 **Force diagram:** The lower magnet as a rectangle, positive direction up. The weight $\overline{G}$ down from the centre, the force of the upper magnet $\overline{F}_\text{m}$ down from the top surface and the normal force of the table $\overline{N}$ up from the bottom surface.
 ```voimakuvio
 pinta 0
@@ -195,7 +209,11 @@ a 0
 ## fy4-3-L3-03
 **Given:** weight of the apple $G_\text{a} = 1.5\,\text{N}$, weight of the lower scale $G_\text{s} = 0.40\,\text{N}$, everything is at rest
 **Find:** the reading of the upper scale, that is, the force $F$ with which the lower scale pulls the hook of the upper one, in $\text{N}$
-**Principle:** The apple is at rest, so the hook of the lower scale pulls it up with a force of $1.5\,\text{N}$ (first law), and by the third law the apple pulls the hook down with an equally large force. The lower scale is at rest, so the hook of the upper scale must pull it up by the force of the apple plus the weight of the scale itself. By the third law the lower scale pulls the upper one down with an equally large force, and this is what the upper scale shows.
+**Principle:** The apple is at rest, so the hook of the lower scale pulls it up with a force of $1.5\,\text{N}$ (first law), and by the third law the apple pulls the hook down with an equally large force.
+
+The lower scale is at rest, so the hook of the upper scale must pull it up by the force of the apple plus the weight of the scale itself.
+
+By the third law the lower scale pulls the upper one down with an equally large force, and this is what the upper scale shows.
 **Force diagram:** The lower scale as a rectangle, positive direction up. The force of the hook of the upper scale $\overline{F}$ up from the top surface, the weight $\overline{G}_\text{s}$ down from the centre and the force of the apple $\overline{F}_\text{a}$ down from the bottom surface.
 ```voimakuvio
 F 1,9 ylös
@@ -212,17 +230,25 @@ a 0
 ## fy4-3-L1-06
 **Find:** which statement about the forces acting on the puck is correct when the puck slides at constant velocity and there is no friction or air resistance.
 **Principle:** By Newton’s first law the velocity of an object stays the same if and only if the net force is zero. A force is needed to change the velocity, not to maintain it.
-**Model answer:** The speed and direction of the puck stay the same, so the net force is zero. In the vertical direction the weight and the normal force of the ice cancel each other, and in the horizontal direction no force acts, because friction and air resistance are missing. A forward-pushing force is not needed and there is none: the force of the hit ended when the stick left the puck. If the net force pointed in the direction of motion, the puck would speed up, and if backwards, it would slow down.
+**Model answer:** The speed and direction of the puck stay the same, so the net force is zero. In the vertical direction the weight and the normal force of the ice cancel each other, and in the horizontal direction no force acts, because friction and air resistance are missing.
+
+A forward-pushing force is not needed and there is none: the force of the hit ended when the stick left the puck. If the net force pointed in the direction of motion, the puck would speed up, and if backwards, it would slow down.
 
 ## fy4-3-L1-07
 **Find:** which force is the reaction force of the normal force that the table exerts on the book.
 **Principle:** By Newton’s third law, in an interaction each party acts on the other with an equally large and oppositely directed force. The reaction force therefore acts on a different object than the original force and is of the same kind.
-**Model answer:** The normal force is the force of the table on the book, so its reaction force is the force of the book on the table: the book presses the table down. The weight of the book is not the reaction force, because it acts on the same object as the normal force; they are equally large because the book is at rest (first law). The pull of the Earth on the book is the weight of the book and belongs to the interaction between the Earth and the book. The weight of the table on the floor belongs to the interaction between the table and the floor.
+**Model answer:** The normal force is the force of the table on the book, so its reaction force is the force of the book on the table: the book presses the table down.
+
+The weight of the book is not the reaction force, because it acts on the same object as the normal force; they are equally large because the book is at rest (first law).
+
+The pull of the Earth on the book is the weight of the book and belongs to the interaction between the Earth and the book. The weight of the table on the floor belongs to the interaction between the table and the floor.
 
 ## fy4-3-L1-08
 **Given:** force of the child on the rope $F = 38\,\text{N}$, the sled moves at constant velocity, the weight of the rope is ignored
 **Find:** the force of the rope on the child $F_\text{RC}$ in $\text{N}$
-**Principle:** By Newton’s third law the child and the rope interact, so the rope pulls the child with an equally large but oppositely directed force as the child pulls the rope. The law holds even though the sled moves at constant velocity. Choose the child as the object. The force of the rope $\overline{F}_\text{RC}$ points from the child towards the sled, that is, against the child, and the child’s own force on the rope acts on the rope and does not belong in the child’s diagram.
+**Principle:** By Newton’s third law the child and the rope interact, so the rope pulls the child with an equally large but oppositely directed force as the child pulls the rope. The law holds even though the sled moves at constant velocity. Choose the child as the object.
+
+The force of the rope $\overline{F}_\text{RC}$ points from the child towards the sled, that is, against the child, and the child’s own force on the rope acts on the rope and does not belong in the child’s diagram.
 **Formula:** $\overline{F}_\text{RC} = -\overline{F}_\text{CR}$, so in magnitudes $F_\text{RC} = F_\text{CR}$
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_\text{RC} = F_\text{CR} = 38\,\text{N}$
@@ -232,7 +258,9 @@ a 0
 ## fy4-3-L2-05
 **Given:** the rope is at rest; from the table the largest reading of sensor A is $F_\text{A} = 4.8\,\text{N}$ at $t = 1.0\,\text{s}$, when sensor B shows $4.8\,\text{N}$
 **Find:** the force of the wall on the rope $F_\text{W}$ in $\text{N}$ at the moment when $F_\text{A}$ is largest
-**Principle:** The rope is at rest, so by the first law the sum of the forces acting on it is zero: the force of the wall on the rope is as large as the force of the student on the rope. By the third law the rope pulls sensor A and the wall with forces as large as they pull the rope, so the readings of the sensors are equally large at every moment.
+**Principle:** The rope is at rest, so by the first law the sum of the forces acting on it is zero: the force of the wall on the rope is as large as the force of the student on the rope.
+
+By the third law the rope pulls sensor A and the wall with forces as large as they pull the rope, so the readings of the sensors are equally large at every moment.
 **Reading the graph:** From the table we read the row where $F_\text{A}$ is largest: $t = 1.0\,\text{s}$, $F_\text{A} = 4.8\,\text{N}$. On the same row $F_\text{B} = 4.8\,\text{N}$. On the other rows the readings differ by at most $0.1\,\text{N}$, which is random variation of the measurement, not a physical difference.
 **Formula:** $F_\text{W} - F_\text{A} = 0$, so $F_\text{W} = F_\text{A}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
@@ -255,12 +283,18 @@ $s = 0.500\,\text{m/s}\cdot 6.0\,\text{s} = 3.0\,\text{m}$.
 ## fy4-3-L2-07
 **Find:** what the error in the student’s reasoning is.
 **Principle:** The force and the reaction force of Newton’s third law are equally large and oppositely directed, but they act on different objects. The motion of an object is decided only by the sum of the forces acting on that object itself.
-**Model answer:** The student considers two forces, the force of the fist on the wall and the force of the wall on the fist, but they act on different objects. The force of the fist on the wall acts on the wall, so it does not cancel anything acting on the fist. The force of the wall acts on the fist, and it is against the motion of the fist, so the fist slows down and stops. The forces are nevertheless equally large even though the wall does not move, and they appear at the same time. No force is needed to maintain motion.
+**Model answer:** The student considers two forces, the force of the fist on the wall and the force of the wall on the fist, but they act on different objects.
+
+The force of the fist on the wall acts on the wall, so it does not cancel anything acting on the fist. The force of the wall acts on the fist, and it is against the motion of the fist, so the fist slows down and stops.
+
+The forces are nevertheless equally large even though the wall does not move, and they appear at the same time. No force is needed to maintain motion.
 
 ## fy4-3-L3-04
 **Given:** rolling resistance on the cart $F_\text{r} = 410\,\text{N}$, air resistance on the cart $F_\text{k} = 40\,\text{N}$, air resistance on the horse $F_\text{h} = 30\,\text{N}$, the velocity is constant and straight forwards, example data
 **Find:** a) the force of the rope on the cart $T$; b) the force of the road on the hooves of the horse $F_\text{t}$ in $\text{N}$; c) why the forces do not cancel each other
-**Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope. By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
+**Principle:** Both the cart and the horse move at constant velocity, so the net force on each is zero (first law). The cart gives the force of the rope.
+
+By the third law the cart pulls the horse backwards with a force $T$ as large as the rope pulls the cart forwards, and this is used in the equilibrium of the horse. The force of the road on the hooves is an external force that carries the pair forwards.
 **Force diagram:** For the cart draw: the force of the rope $\overline{T}$ forwards, the rolling resistance and the air resistance backwards. For the horse: the force of the road $\overline{F}_\text{t}$ forwards, the force of the rope $\overline{T}$ and the air resistance backwards. The forces on the horse and on the cart are in different diagrams.
 ```voimakuvio
 pinta 0
@@ -286,7 +320,9 @@ $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 ## fy4-3-L3-05
 **Given:** from the table the velocity and the force of the rope; at $t = 4.0\,\text{s}$, $5.0\,\text{s}$ and $6.0\,\text{s}$ the velocities are $0.70$; $0.71$ and $0.70\,\text{m/s}$ and the forces $3.4$; $3.5$ and $3.3\,\text{N}$; at the start $F = 5.1\,\text{N}$ and $v = 0$ (example data)
 **Find:** a) when the net force is zero; b) the force of friction $F_\text{f}$ in $\text{N}$; c) why $F > F_\text{f}$ at the start
-**Principle:** When the velocity of the cart is constant, by the first law the net force is zero, so the force of the rope and the friction are equally large. If the velocity changes, the net force is not zero. By the third law the cart pulls the rope with a force as large as the rope pulls the cart. The student is pulled by the rope, not by the cart.
+**Principle:** When the velocity of the cart is constant, by the first law the net force is zero, so the force of the rope and the friction are equally large. If the velocity changes, the net force is not zero.
+
+By the third law the cart pulls the rope with a force as large as the rope pulls the cart. The student is pulled by the rope, not by the cart.
 **Reading the graph:** The velocity increases from $t = 0$ from $0$ to $0.69\,\text{m/s}$ and then, from $t = 4.0\,\text{s}$ on, stays almost the same, about $0.70\,\text{m/s}$. The net force is zero from $t = 4.0\,\text{s}$ on. The sensor readings at these three moments are $3.4\,\text{N}$, $3.5\,\text{N}$ and $3.3\,\text{N}$.
 **Formula:** $F_\text{f} = F_\text{av}$ and $F_\text{av} = \dfrac{\Sigma F}{n}$
 **Conversions:** The forces are in newtons and the velocity in $\text{m/s}$, so no conversions are needed.
@@ -298,7 +334,15 @@ $F_\text{f} = \dfrac{10.2\,\text{N}}{3} = 3.40\,\text{N}$.
 ## fy4-3-L2-08
 **Find:** how large the force of the car on the truck $F_{\text{CT}}$ is compared with the force of the truck on the car $F_{\text{TC}}$ during the collision, and why. In the subscripts T is the truck and C the car.
 **Principle:** A force describes an interaction between two objects. In the collision the vehicles touch each other, so there is one interaction whose two forces act on different objects. By Newton's third law $\overline{F}_{\text{TC}} = -\overline{F}_{\text{CT}}$, so the forces are equally large and opposite in direction, regardless of the masses of the vehicles or of which one was moving.
-**Model answer:** The forces are equally large, $F_{\text{CT}} = F_{\text{TC}}$, because they are the force and the reaction force of the same interaction. The truck pushes the car backwards in the direction of the reversing, and the car pushes the truck with a force as large in the opposite direction during the whole collision. The masses $12\,\text{t}$ and $1.2\,\text{t}$ do not change this: the answer $F_{\text{CT}} = \tfrac{1}{10}\,F_{\text{TC}}$ treats a force as a property of an object that grows with the mass. The answer $F_{\text{CT}} = 0$ assumes that only a moving object can push, although a force arises from contact and does not require motion. The reason "the forces cancel each other" is wrong, even though the forces are equally large: $\overline{F}_{\text{TC}}$ acts on the car and $\overline{F}_{\text{CT}}$ on the truck, and forces that act on different objects are not added together. The change in the motion of the car is decided only by the forces that act on the car. Check: if the force of the car were smaller, the interaction would have two sides of different size, which contradicts the third law.
+**Model answer:** The forces are equally large, $F_{\text{CT}} = F_{\text{TC}}$, because they are the force and the reaction force of the same interaction.
+
+The truck pushes the car backwards in the direction of the reversing, and the car pushes the truck with a force as large in the opposite direction during the whole collision.
+
+The masses $12\,\text{t}$ and $1.2\,\text{t}$ do not change this: the answer $F_{\text{CT}} = \tfrac{1}{10}\,F_{\text{TC}}$ treats a force as a property of an object that grows with the mass. The answer $F_{\text{CT}} = 0$ assumes that only a moving object can push, although a force arises from contact and does not require motion.
+
+The reason "the forces cancel each other" is wrong, even though the forces are equally large: $\overline{F}_{\text{TC}}$ acts on the car and $\overline{F}_{\text{CT}}$ on the truck, and forces that act on different objects are not added together.
+
+The change in the motion of the car is decided only by the forces that act on the car. Check: if the force of the car were smaller, the interaction would have two sides of different size, which contradicts the third law.
 
 ## fy4-3-L1-09
 **Given:** from the graph at $t = 0.10\,\text{s}$ the reading of the force on cart B is about $+4.0\,\text{N}$ and the reading of the force on cart A about $-4.0\,\text{N}$

@@ -259,7 +259,12 @@ Esimerkkiperhe käyttää sähköä $4800\,\text{kWh}$ vuodessa. Sähkö tuoteta
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $E = 4800\,\text{kWh}$ ja $e = 490\,\text{g/kWh}$. Kysytään päästöä $m$ tonneina.
+**Tunnetut ja kysytty.**
+
+- $E = 4800\,\text{kWh}$ ja
+- $e = 490\,\text{g/kWh}$.
+
+Kysytään päästöä $m$ tonneina.
 
 <!-- vaihe -->
 

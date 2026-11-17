@@ -36,12 +36,20 @@
 **Conversions:** Not needed.
 **Substitution:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Answer:** $83\,\text{dB}$, in whole decibels like the given values.
-**Reasonableness:** The action values are compared with the exposure without protectors: $106\,\text{dB}$ exceeds both action values, so protectors must be used. The $83\,\text{dB}$ at the ear stays below the exposure limit value $87\,\text{dB(A)}$, and the reference dose is not reached during the working day if the protectors are well fitted and worn all the time. Staying below the reference dose still does not guarantee safe hearing. Without protectors the reference time would be about $4\,\text{min}$.
+**Reasonableness:** The action values are compared with the exposure without protectors: $106\,\text{dB}$ exceeds both action values, so protectors must be used.
+
+The $83\,\text{dB}$ at the ear stays below the exposure limit value $87\,\text{dB(A)}$, and the reference dose is not reached during the working day if the protectors are well fitted and worn all the time. Staying below the reference dose still does not guarantee safe hearing.
+
+Without protectors the reference time would be about $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Find:** whether each measure belongs to the source, the path or the ear
 **Principle:** At the source the sound produced is reduced, along the path the travel of sound from the source to the listener is blocked or dampened, and at the ear the sound reaching the ear is reduced.
-**Model answer:** a) A noise barrier stops the direct sound between the road and the homes, so it is a measure along the path. b) A casing encloses the sound right around the machine, so it controls noise at the source. c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do not make the machine quieter, but they absorb the reflections through which the sound travels to the worker, so they are a measure along the path.
+**Model answer:** a) A noise barrier stops the direct sound between the road and the homes, so it is a measure along the path.
+
+b) A casing encloses the sound right around the machine, so it controls noise at the source.
+
+c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do not make the machine quieter, but they absorb the reflections through which the sound travels to the worker, so they are a measure along the path.
 
 ## fy5-16-L2-01
 **Given:** two identical machines, each $L_1 = 85\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
@@ -76,7 +84,9 @@
 ## fy5-16-L2-04
 **Given:** the level falls from $L_1 = 92\,\text{dB}$ to $L_2 = 62\,\text{dB}$ in a time $\Delta t = 0.45\,\text{s}$; the fall is steady
 **Find:** the reverberation time $T$, that is, the time in which the level falls by $60\,\text{dB}$
-**Principle:** When the level falls steadily, it falls by the same number of decibels every second. The reverberation time follows from the rate of fall: a fall of $60\,\text{dB}$ takes as many times longer as the measured fall is smaller. The measurement is often done this way, because the background noise of the room hides the full drop of $60\,\text{dB}$.
+**Principle:** When the level falls steadily, it falls by the same number of decibels every second. The reverberation time follows from the rate of fall: a fall of $60\,\text{dB}$ takes as many times longer as the measured fall is smaller.
+
+The measurement is often done this way, because the background noise of the room hides the full drop of $60\,\text{dB}$.
 **Formula:** $T = \dfrac{60\,\text{dB}}{L_1 - L_2} \cdot \Delta t$
 **Conversions:** Not needed.
 **Substitution:** $T = \dfrac{60\,\text{dB}}{92\,\text{dB} - 62\,\text{dB}} \cdot 0.45\,\text{s} = 2 \cdot 0.45\,\text{s} = 0.90\,\text{s}$
@@ -94,7 +104,11 @@ $85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
 
 $79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
 
-All the differences are close to the expected $6.0\,\text{dB}$, and the largest deviation, $1\,\text{dB}$, is smaller than the uncertainty of the difference, $2\,\text{dB}$. So even the smaller drop in the last interval does not show that the sound is damped more slowly farther away. The level does not halve: half of $91\,\text{dB}$ would be about $46\,\text{dB}$, while $85\,\text{dB}$ was measured. At the distance $4.0\,\text{m}$ the reading is $85\,\text{dB}$, but because of the uncertainty the real level can be $84$–$86\,\text{dB}$, so the upper action value may be exceeded. Nor is the action value a safety limit, so the measurement does not show working for $8\,\text{h}$ to be safe.
+All the differences are close to the expected $6.0\,\text{dB}$, and the largest deviation, $1\,\text{dB}$, is smaller than the uncertainty of the difference, $2\,\text{dB}$. So even the smaller drop in the last interval does not show that the sound is damped more slowly farther away.
+
+The level does not halve: half of $91\,\text{dB}$ would be about $46\,\text{dB}$, while $85\,\text{dB}$ was measured. At the distance $4.0\,\text{m}$ the reading is $85\,\text{dB}$, but because of the uncertainty the real level can be $84$–$86\,\text{dB}$, so the upper action value may be exceeded.
+
+Nor is the action value a safety limit, so the measurement does not show working for $8\,\text{h}$ to be safe.
 
 ## fy5-16-L3-01
 **Given:** $t_1 = 4.0\,\text{h}$ at a level $L_1 = 88\,\text{dB}$, $t_2 = 4.0\,\text{h}$ at a level $L_2 = 82\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
@@ -119,12 +133,18 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 ## fy5-16-L3-03
 **Find:** why anti-noise dampens a low hum better than speech
 **Principle:** Anti-noise cancels noise by destructive interference only if it is in the opposite phase at the ear. The wavelength $\lambda = \dfrac{v}{f}$ and the period $T = \dfrac{1}{f}$ tell how precisely the timing and the position must match.
-**Model answer:** The wavelength of the hum is $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3.4\,\text{m}$ and its period $10\,\text{ms}$. The whole ear canal and the inside of the cup are small compared with the wavelength, and the electronics have time to form the opposite signal, so the anti-noise stays in the opposite phase at the ear. The wavelengths of speech are $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ and $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, and the period is at most $1\,\text{ms}$. Even a small timing error or a difference in position of a few centimetres shifts the phase a lot, and then the waves no longer cancel each other. In addition, speech varies quickly, whereas a hum is steady. High sounds are dampened mainly by the cups of the headphones.
+**Model answer:** The wavelength of the hum is $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3.4\,\text{m}$ and its period $10\,\text{ms}$. The whole ear canal and the inside of the cup are small compared with the wavelength, and the electronics have time to form the opposite signal, so the anti-noise stays in the opposite phase at the ear.
+
+The wavelengths of speech are $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ and $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, and the period is at most $1\,\text{ms}$. Even a small timing error or a difference in position of a few centimetres shifts the phase a lot, and then the waves no longer cancel each other.
+
+In addition, speech varies quickly, whereas a hum is steady. High sounds are dampened mainly by the cups of the headphones.
 
 ## fy5-16-L1-06
 **Find:** which measure shortens the reverberation time of the classroom
 **Principle:** The reverberation time is the time in which the level falls by $60\,\text{dB}$ after the source has stopped. Hard surfaces reflect sound and keep it in the room, whereas soft and porous surfaces dampen the reflections, so the level falls faster.
-**Model answer:** The reverberation time is shortened by fitting porous damping panels in the ceiling, which absorb part of the sound hitting them. Glossy tiles and glass surfaces are hard surfaces that reflect sound back into the room and would lengthen the time. Lowering the loudness of the sound does not help, because the reverberation time is measured as a drop of $60\,\text{dB}$ and does not depend on the initial level.
+**Model answer:** The reverberation time is shortened by fitting porous damping panels in the ceiling, which absorb part of the sound hitting them. Glossy tiles and glass surfaces are hard surfaces that reflect sound back into the room and would lengthen the time.
+
+Lowering the loudness of the sound does not help, because the reverberation time is measured as a drop of $60\,\text{dB}$ and does not depend on the initial level.
 
 ## fy5-16-L1-07
 **Given:** outdoor level $L_\text{out} = 68\,\text{dB}$, indoor level $L_\text{in} = 41\,\text{dB}$
@@ -139,13 +159,15 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 ## fy5-16-L1-08
 **Find:** how a loudspeaker produces sound from an electrical signal
 **Principle:** In a loudspeaker the signal is an alternating current that flows in a coil in the field of a magnet. The magnetic field exerts an alternating force on the current, so the coil and the cone attached to it vibrate, and the cone produces a sound wave in the air.
-**Model answer:** The alternating current in the coil and the magnet make the cone vibrate in time with the signal, and the cone pushes the air back and forth. Sound that moves a diaphragm and induces a voltage is the operation of a microphone, not of a loudspeaker. In a loudspeaker the magnet stays in place, and the production of sound is not based on the heating of the air.
+**Model answer:** The alternating current in the coil and the magnet make the cone vibrate in time with the signal, and the cone pushes the air back and forth. Sound that moves a diaphragm and induces a voltage is the operation of a microphone, not of a loudspeaker.
+
+In a loudspeaker the magnet stays in place, and the production of sound is not based on the heating of the air.
 
 ## fy5-16-L2-05
 **Given:** before the panels the level falls from $90.3\,\text{dB}$ to $74.4\,\text{dB}$ and after the panels from $90.2\,\text{dB}$ to $50.1\,\text{dB}$ in a time $\Delta t = 0.40\,\text{s}$; the fall is steady
 **Find:** the shortening of the reverberation time as a percentage
 **Principle:** When the level falls steadily, the reverberation time is the time in which the fall is $60\,\text{dB}$. It is calculated for both measurements from the measured drop and time, and the times are compared.
-**Reading the table:** The drop before the panels is $\Delta L_1 = 90.3\,\text{dB} - 74.4\,\text{dB} = 15.9\,\text{dB}$ and after the panels $\Delta L_2 = 90.2\,\text{dB} - 50.1\,\text{dB} = 40.1\,\text{dB}$.
+**Reading the table:** The drop before the panels is $$\begin{aligned} \Delta L_1 &= 90.3\,\text{dB} - 74.4\,\text{dB} \\ &= 15.9\,\text{dB} \end{aligned}$$ and after the panels $$\begin{aligned} \Delta L_2 &= 90.2\,\text{dB} - 50.1\,\text{dB} \\ &= 40.1\,\text{dB} \end{aligned}$$.
 **Formula:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ and shortening $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Conversions:** Not needed.
 **Substitution:**
@@ -195,7 +217,9 @@ t_\text{ref} &= \frac{8\,\text{h}}{2^{\,8}} \\
 &\approx 1.9\,\text{min}
 \end{aligned}$$
 **Answer:** a) The student calculated the number of steps $n = 8$ correctly but divided the time by $8$. Every step halves the remaining time, so the time is divided by two eight times, that is, altogether by $256$. b) The reference time is about $1.9\,\text{min}$, just under two minutes.
-**Reasonableness:** The student's result of $1.0\,\text{h}$, that is $60\,\text{min}$, is $32$ times the correct one. In the student's way every additional step would shorten the time less and less, although the energy grows in the same ratio at every step. Check by halving: three halvings take the time $8\,\text{h} \to 1\,\text{h}$, and five more take it $60\,\text{min} \to 1.875\,\text{min}$, eight halvings in all.
+**Reasonableness:** The student's result of $1.0\,\text{h}$, that is $60\,\text{min}$, is $32$ times the correct one. In the student's way every additional step would shorten the time less and less, although the energy grows in the same ratio at every step.
+
+Check by halving: three halvings take the time $8\,\text{h} \to 1\,\text{h}$, and five more take it $60\,\text{min} \to 1.875\,\text{min}$, eight halvings in all.
 
 ## fy5-16-L3-04
 **Given:** sawing $L_1 = 97\,\text{dB}$, $t_1 = 1.0\,\text{h}$; planing $L_2 = 91\,\text{dB}$, $t_2 = 2.0\,\text{h}$; assembly $L_3 = 85\,\text{dB}$, $t_3 = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
@@ -216,7 +240,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1.755 \\
 &= 5.26\,\text{dB}
 \end{aligned}$$
-Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $D = 0.198 + 1.0 + 0.375 = 1.57$.
+Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $$\begin{aligned} D &= 0.198 + 1.0 + 0.375 \\ &= 1.57 \end{aligned}$$.
 **Answer:** a) about $340\,\%$. b) at least $5.3\,\text{dB}$. c) It is not enough alone, because the dose is still about $160\,\%$ of the reference dose. In addition to the enclosure, for example hearing protectors with an attenuation of at least $\dfrac{3\,\text{dB} \cdot \lg 1.57}{\lg 2} = 2.0\,\text{dB}$ are needed, or the planer could be placed away from the workstation.
 **Reasonableness:** Sawing and planing are above the action value, so the dose must be over $100\,\%$. Ordinary protectors attenuate $20$–$30\,\text{dB}$, so $5.3\,\text{dB}$ is easily met.
 
@@ -236,7 +260,11 @@ t_\text{ref} &= \frac{8\,\text{h}}{2^{\,2.33}} \\
 &= 1.59\,\text{h}
 \end{aligned}$$
 Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $190\,\%$. At a distance of $16\,\text{m}$ the level is $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ and with the earplugs in the ears $86\,\text{dB}$. Then $n = \dfrac{1}{3}$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^{1/3}} = 6.35\,\text{h}$ and the dose is $\dfrac{3.0\,\text{h}}{6.35\,\text{h}} = 0.47$, that is, $47\,\%$.
-**Answer:** a) $100\,\text{dB}$. b) $1.6\,\text{h}$, two significant figures as in the attenuation and the duration. c) Standing still at a distance of $8.0\,\text{m}$ the dose is $190\,\%$ of the reference dose. If the listener keeps the earplugs in also at a distance of $16\,\text{m}$, the dose falls to about $47\,\%$, below the reference dose. That does not guarantee safe hearing, but it reduces the strain clearly.
+**Answer:** a) $100\,\text{dB}$. b) $1.6\,\text{h}$, two significant figures as in the attenuation and the duration.
+
+c) Standing still at a distance of $8.0\,\text{m}$ the dose is $190\,\%$ of the reference dose. If the listener keeps the earplugs in also at a distance of $16\,\text{m}$, the dose falls to about $47\,\%$, below the reference dose.
+
+That does not guarantee safe hearing, but it reduces the strain clearly.
 **Reasonableness:** Without the earplugs the reference time would be only $8\,\text{h} : 2^5 = 0.25\,\text{h}$, so the attenuation of $8\,\text{dB}$ lengthens it about sixfold, and $1.59\,\text{h} : 0.25\,\text{h} = 6.3 \approx 2^{8/3} = 6.35$.
 
 ## fy5-16-L1-09
@@ -266,7 +294,9 @@ Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $19
 
 From the source (Työterveyslaitos, *Melu*, read on 15 November 2026): the lower action value $80\,\text{dB(A)}$, the upper action value $85\,\text{dB(A)}$ and the limit value $87\,\text{dB(A)}$ of the noise regulation, and the statement that the energy dose of noise is always determined for a calculated working day of eight hours. In the calculations the unit is written briefly as dB.
 **Find:** a) why the scale is logarithmic; b) the ratio of the intensities $\dfrac{I_2}{I_1}$ when the level rises by $3\,\text{dB}$ or $10\,\text{dB}$; c) a comparison of the levels and the time $t_2$ in hours at the level $L_2$; d) an evaluation of the claim
-**Principle:** The intensity level is defined with the logarithm of the intensity (chapter *Intensity and the decibel scale*), so the difference of two levels gives the ratio of the intensities. The intensity $I$ is power per area, so in a time $t$ the ear receives the energy $It$ per area. According to the source the exposure is assessed as an energy dose, so two exposures are equal when the product $It$ is the same.
+**Principle:** The intensity level is defined with the logarithm of the intensity (chapter *Intensity and the decibel scale*), so the difference of two levels gives the ratio of the intensities. The intensity $I$ is power per area, so in a time $t$ the ear receives the energy $It$ per area.
+
+According to the source the exposure is assessed as an energy dose, so two exposures are equal when the product $It$ is the same.
 **Formula:** The definition of the level is $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. In the difference the intensity of the threshold of hearing $I_0$ cancels:
 $$\begin{aligned}
 L_2 - L_1 &= 10\,\text{dB} \cdot \lg \frac{I_2}{I_1} \\
@@ -296,15 +326,21 @@ t_2 &= \frac{8\,\text{h}}{7.943} \\
 \end{aligned}$$
 **Answer:** $t_2 \approx 1.0\,\text{h}$ is the time of part c) with two significant figures, because the levels are given in whole decibels.
 
-a) The level is not proportional to the intensity $I$ but to its logarithm: an equal increase of the level always corresponds to an equal factor in the intensity. That is why the intensities of the range of hearing, which grow by a factor of about $10^{12}$ from the threshold of hearing to the threshold of pain, fit in the range $0$–$120\,\text{dB}$.
+a) The level is not proportional to the intensity $I$ but to its logarithm: an equal increase of the level always corresponds to an equal factor in the intensity.
+
+That is why the intensities of the range of hearing, which grow by a factor of about $10^{12}$ from the threshold of hearing to the threshold of pain, fit in the range $0$–$120\,\text{dB}$.
 
 b) An increase of $3\,\text{dB}$ about doubles the intensity (a factor of $2.0$), and an increase of $10\,\text{dB}$ makes it tenfold.
 
 c) At the level $85\,\text{dB}$ the employer must, according to the source, draw up a noise-control programme, hearing protectors must be used and the areas where such exposure can occur must be marked.
 
-The three values of the table are exposure levels of an eight-hour working day, because the energy dose of noise is always determined for a working day of eight hours. If the level $94\,\text{dB}$ lasts the whole working day, the daily exposure level is $94\,\text{dB(A)}$, that is $7\,\text{dB}$ above the limit value $87\,\text{dB(A)}$. The limit value is assessed inside the hearing protector, so the protectors would then have to reduce the level reaching the ear by at least $7\,\text{dB}$.
+The three values of the table are exposure levels of an eight-hour working day, because the energy dose of noise is always determined for a working day of eight hours.
 
-At the level $94\,\text{dB}$ the intensity is about $7.9$ times as large, so the same energy dose as in eight hours at $85\,\text{dB}$ accumulates in only $t_2 \approx 1.0\,\text{h}$. If the rest of the working day is quiet, one hour at $94\,\text{dB}$ therefore corresponds to an eight-hour exposure level of $85\,\text{dB(A)}$. That equals the upper action value, so protectors are compulsory, but it stays below the limit value $87\,\text{dB(A)}$.
+If the level $94\,\text{dB}$ lasts the whole working day, the daily exposure level is $94\,\text{dB(A)}$, that is $7\,\text{dB}$ above the limit value $87\,\text{dB(A)}$. The limit value is assessed inside the hearing protector, so the protectors would then have to reduce the level reaching the ear by at least $7\,\text{dB}$.
+
+At the level $94\,\text{dB}$ the intensity is about $7.9$ times as large, so the same energy dose as in eight hours at $85\,\text{dB}$ accumulates in only $t_2 \approx 1.0\,\text{h}$. If the rest of the working day is quiet, one hour at $94\,\text{dB}$ therefore corresponds to an eight-hour exposure level of $85\,\text{dB(A)}$.
+
+That equals the upper action value, so protectors are compulsory, but it stays below the limit value $87\,\text{dB(A)}$.
 
 d) The claim does not hold. On a logarithmic scale $3\,\text{dB}$ doubles the energy that reaches the ear and halves the time in which the same dose accumulates, and $9\,\text{dB}$ shortens the time from eight hours to one.
 
@@ -314,4 +350,6 @@ The claim sounds plausible because a change of $3\,\text{dB}$ sounds small to th
 
 **Reasonableness:** The rule of thumb of the chapter gives the same: $9\,\text{dB}$ is three steps of $3\,\text{dB}$, so the time is halved three times, $8\,\text{h} : 2^3 = 1\,\text{h}$. The small difference from the result $1.007\,\text{h}$ arises because $3\,\text{dB}$ corresponds to the factor $1.995$ and not exactly two.
 
-Limits of the model: the time $1.0\,\text{h}$ is a calculated reference value and not a safe time, because people's hearing withstands noise differently. The model does not cover impulsive noise either: according to the source, in impulsive noise even a single loud enough noise peak can be dangerous to hearing. An error of only $1\,\text{dB}$ in a level changes the intensity by about a quarter, so a more precise result would not be justified.
+Limits of the model: the time $1.0\,\text{h}$ is a calculated reference value and not a safe time, because people's hearing withstands noise differently. The model does not cover impulsive noise either: according to the source, in impulsive noise even a single loud enough noise peak can be dangerous to hearing.
+
+An error of only $1\,\text{dB}$ in a level changes the intensity by about a quarter, so a more precise result would not be justified.

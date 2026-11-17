@@ -136,7 +136,11 @@
 ## fy1-8-L1-09
 **Kysytty:** mitkä viidestä väitteestä tutkimussuunnitelmasta ovat tosia.
 **Periaate:** Reilussa kokeessa muutetaan yhtä muuttujaa, mitataan toista ja pidetään muut vakioina. Mittaus toistetaan, jotta hajonta näkyy. Ero voidaan osoittaa vain, jos se ylittää epävarmuuden. Tulos, joka kumoaa hypoteesin, on silti tulos.
-**Mallivastaus:** 1 tosi: massa on muutettava muuttuja ja kulkuaika mitattava muuttuja. 2 epätosi: rampin kulma pitää vakioida, muuten ei tiedetä, kumpi muutos vaikutti aikaan. 3 epätosi: kellon näyttämä ei kerro käsin tehdyn ajanoton epävarmuutta $0{,}2\,\text{s}$. Yhdestä ajosta ei näe hajontaa, joten ajo toistetaan. 4 tosi: alle $0{,}2\,\text{s}$:n ero voi johtua pelkästä ajanotosta, joten eroa ei voi osoittaa. Tämä ei kuitenkaan todista, ettei vaikutusta ole. 5 epätosi: hypoteesin kumoutuminen on tutkimustulos. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään.
+**Mallivastaus:** 1 tosi: massa on muutettava muuttuja ja kulkuaika mitattava muuttuja. 2 epätosi: rampin kulma pitää vakioida, muuten ei tiedetä, kumpi muutos vaikutti aikaan.
+
+3 epätosi: kellon näyttämä ei kerro käsin tehdyn ajanoton epävarmuutta $0{,}2\,\text{s}$. Yhdestä ajosta ei näe hajontaa, joten ajo toistetaan. 4 tosi: alle $0{,}2\,\text{s}$:n ero voi johtua pelkästä ajanotosta, joten eroa ei voi osoittaa. Tämä ei kuitenkaan todista, ettei vaikutusta ole.
+
+5 epätosi: hypoteesin kumoutuminen on tutkimustulos. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään.
 
 ## fy1-8-L2-05
 **Annettu:** kevyen pallon ajat $3{,}12\,\text{s}$, $3{,}08\,\text{s}$, $3{,}16\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}14\,\text{s}$; raskaan pallon ajat $3{,}06\,\text{s}$, $3{,}12\,\text{s}$, $3{,}04\,\text{s}$, $3{,}10\,\text{s}$ ja $3{,}08\,\text{s}$
@@ -171,7 +175,11 @@
 **Kaava:** erotus $d = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{d}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $d = 3{,}12\,\text{s} - 3{,}08\,\text{s} = 0{,}04\,\text{s}$, joten $k = \dfrac{0{,}15\,\text{s}}{0{,}04\,\text{s}} = 3{,}75 \approx 3{,}8$. Välit ovat $3{,}08$–$3{,}16\,\text{s}$ ja $3{,}04$–$3{,}12\,\text{s}$. Ne menevät päällekkäin välillä $3{,}08$–$3{,}12\,\text{s}$.
-**Vastaus:** noin $3{,}8$ kertaa. Aineisto ei tue väitettä ”hypoteesi oli oikein”. Erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, ja välit menevät päällekkäin. Pelkkä pienempi keskiarvo ei riitä. Väite ”virheitä oli vähän” ei myöskään pidä: käsiajanoton epävarmuus on moninkertainen eroon nähden. Väite ”koe onnistui hyvin” on liian vahva, koska koe ei pystynyt osoittamaan eroa. Parempia lauseita: ”Keskiarvojen erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, joten aineisto ei osoita pallojen kulkuaikojen eroa. Tämä ei kuitenkaan todista, ettei massalla ole vaikutusta.” ja ”Käsiajanoton epävarmuus $0{,}15\,\text{s}$ on noin $3{,}8$-kertainen erotukseen nähden, joten jatkossa kannattaa käyttää valokennoa ja lisätä toistoja.”
+**Vastaus:** noin $3{,}8$ kertaa. Aineisto ei tue väitettä ”hypoteesi oli oikein”. Erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, ja välit menevät päällekkäin. Pelkkä pienempi keskiarvo ei riitä.
+
+Väite ”virheitä oli vähän” ei myöskään pidä: käsiajanoton epävarmuus on moninkertainen eroon nähden. Väite ”koe onnistui hyvin” on liian vahva, koska koe ei pystynyt osoittamaan eroa.
+
+Parempia lauseita: ”Keskiarvojen erotus $0{,}04\,\text{s}$ on yhtä suuri kuin epävarmuus $0{,}04\,\text{s}$, joten aineisto ei osoita pallojen kulkuaikojen eroa. Tämä ei kuitenkaan todista, ettei massalla ole vaikutusta.” ja ”Käsiajanoton epävarmuus $0{,}15\,\text{s}$ on noin $3{,}8$-kertainen erotukseen nähden, joten jatkossa kannattaa käyttää valokennoa ja lisätä toistoja.”
 **Järkevyys:** Käsikellon epävarmuus on moninkertainen mitattuun eroon nähden. Siksi pieni ero ($0{,}04\,\text{s}$, noin $1{,}3\,\%$ ajasta) ei erotu luotettavasti mittausvirheestä. Johtopäätös ”eroa ei voi osoittaa” on siksi sopivan varovainen. Poikkeavaa mittausta ei poistettu, eikä hypoteesia julistettu varmaksi.
 
 ## fy1-8-L3-05
@@ -181,7 +189,11 @@
 **Kaava:** $r = \dfrac{T_\text{alku} - T_3}{t_3 - t_\text{alku}}$, $\;\varepsilon = \dfrac{\Delta T_\text{lasku}}{T_\text{lasku}} \le \varepsilon_\text{max}$, josta $T_\text{lasku} \ge \dfrac{\Delta T_\text{lasku}}{\varepsilon_\text{max}}$ ja $t = \dfrac{T_\text{lasku}}{r}$
 **Muunnokset:** Prosentti on sadasosa: $5{,}0\,\% = 0{,}050$. Lämpötilan lasku on sama kelvineinä ja celsiusasteina, joten $\text{K}$ sopii yksiköksi.
 **Sijoitus:** $r = \dfrac{80{,}0\,{}^\circ\text{C} - 74{,}0\,{}^\circ\text{C}}{3{,}0\,\text{min}} = \dfrac{6{,}0\,\text{K}}{3{,}0\,\text{min}} = 2{,}0\,\text{K/min}$. Sitten $T_\text{lasku} \ge \dfrac{1{,}0\,\text{K}}{0{,}050} = 20\,\text{K}$, joten $t = \dfrac{20\,\text{K}}{2{,}0\,\text{K/min}} = 10\,\text{min}$.
-**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten aikavälissä $3{,}0\,\text{min}$ ja epävarmuudessa $1{,}0\,\text{K}$. Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä se, onko astiassa kansi. Käyrät piirretään samaan kuvaajaan. Niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) ja otetaan epävarmuus huomioon.
+**Vastaus:** vähintään $10\,\text{min}$, kaksi merkitsevää numeroa kuten aikavälissä $3{,}0\,\text{min}$ ja epävarmuudessa $1{,}0\,\text{K}$.
+
+Vakioitavia suureita: vesimäärä (muuten lämpökapasiteetti ja pinta-ala muuttuvat), veden alkulämpötila (jäähtymisnopeus riippuu lämpötilaerosta huoneeseen) ja ympäristö eli huoneen lämpötila ja ilmavirta sekä se, onko astiassa kansi.
+
+Käyrät piirretään samaan kuvaajaan. Niitä verrataan alun kulmakertoimilla (laskunopeus samalla lämpötilan laskulla $T_\text{lasku}$, esimerkiksi ensimmäisen $20\,\text{K}$ laskun aikana) ja otetaan epävarmuus huomioon.
 **Järkevyys:** Lämpötilan laskun pitää olla $20\,\text{K}$. Se on 20 kertaa epävarmuus $1{,}0\,\text{K}$, joten suhteellinen epävarmuus on $\tfrac{1}{20} = 5\,\%$. Todellisuudessa jäähtyminen hidastuu (vrt. aiempi jäähtymistehtävä), ja hitaimmin jäähtyvässä astiassa lasku on pienempi. Siksi $10\,\text{min}$ on alaraja: jakso kannattaa suunnitella pidemmäksi ja tarkistaa esikokeella.
 
 ## fy1-8-L1-10

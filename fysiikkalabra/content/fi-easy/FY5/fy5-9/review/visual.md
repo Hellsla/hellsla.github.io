@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 46c2c34f09efa7c0
+CONTENT-HASH: 289e8f1f604f3c64
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: pendulum force diagram (heiluri): the dashed path arc now ends exactly at the bob (α = 35°, symmetric), no clash with labels, legible at 390; captures fy5-9-fi-easy-390-heiluri.png, -1280-heiluri.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.

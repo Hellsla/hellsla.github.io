@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e549dd1ca91e5059
+CONTENT-HASH: 3f96de94214df0f1
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] exercises/solutions.md (tiles fy4-6 #4–#6, 390 px) — chains break inside the bracket (`(sin 30° / − 0,35 · cos 30°)`) with the continuation flush left under the relation — indent the continuation row with `\quad`.
-- [Minor] exercises/solutions.md, `F_max` row — restored inline as on main, still over-wide on a phone — keep on the clipped-formula list; break before the operator when redone.
+- [Minor] shots/sol-fy4-6-L1-06-390.png — the capture ends mid-sentence in the last paragraph of Mallivastaus (screenshot cut, 332x1766); re-capture so the end of the card can be seen.
 
 ## Checked
-- delta round 2: opened fi-easy-390-01, fi-easy-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.
+- Delta (md-paragraphs): opened shots/sol-fy4-6-L1-06-390.png (whole, plus its tail cropped) and sol-fy4-6-L1-08-390.png. L1-06: the answer (kitka 20 N) and the rebuttal of the wrong claims are separate paragraphs, one thing each, spacing even, nothing clipped in the visible part. L1-08: the model answer and the paragraph rejecting "N = G aina", "N > G" and "N = 0" are separate, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

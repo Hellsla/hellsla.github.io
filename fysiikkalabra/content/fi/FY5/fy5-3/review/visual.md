@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1539d16a536bbc85
+CONTENT-HASH: 46bf53bfeef2eeeb
+
 ## Blocking
-(none)
 
 ## Polish
-- Ei huomautettavaa kuvasta; yksittäinen väli kappaleen ja seuraavan kuvion välillä 1280 px:ssä on kapea ja sopiva.
 
 ## Checked
-batch delta review: opened captures at 360 and 1280 px; photo loads, floats right beside the text at 1280 px and fills the column at 360 px, no clipping or horizontal overflow; alt text and caption natural Finnish, factual, consistent with the image and neighbouring paragraph; credit line present under the caption; numbers with units in LaTeX.
+batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.

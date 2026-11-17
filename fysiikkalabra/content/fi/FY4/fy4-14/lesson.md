@@ -384,7 +384,9 @@ Laskuvarjohyppääjä, jonka massa varusteineen on $85{,}0\,\text{kg}$, avaa var
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 85{,}0\,\text{kg}$, $F_\text{v} = 2{,}40\,\text{kN}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
+**Tunnetut ja kysytty.** $m = 85{,}0\,\text{kg}$, $F_\text{v} = 2{,}40\,\text{kN}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
 
 <!-- vaihe -->
 

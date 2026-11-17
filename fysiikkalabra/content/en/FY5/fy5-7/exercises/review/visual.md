@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 428b1dee26536b75
+CONTENT-HASH: cb9de47dbd238fbc
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
+- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: solutions of L2-03 ($66.7\,\text{ms}$; reworded: exact count $900$ per minute, usual three significant figures) and L3-04 ($79.1\,\%$ with $4.96\,\text{s}$, $2.77\,\text{s}$) opened with ?ratkaisut=1; units LaTeX, decimal comma, no wrap at 390; captures fy5-7-en-390/1280-sol-a.png, -sol-b.png. Built preview, own Playwright captures under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; no inline formula wraps at 390 px.
+- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-7/review/shots/ (current for this hash): exercises 1280 parts L2-8 (pendulum answer/part b split), L3-7 (sine fit), L1-3 (amplitude graph task).
+- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
+- Hash re-run at the end: cb9de47dbd238fbc (unchanged).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3dbd4a28b1f97ddd
-
+CONTENT-HASH: 6bcc38cd66cd1680
 ## Blocking
-None.
 
 ## Polish
-1. lesson.md Kaava: v_k is now named keskinopeus; the text still says 'keskinopeus' in prose, consistent. No change needed beyond keeping v_k (not v_ka) in fy4-3 only where an arithmetic mean is meant.
+- Kertaus-kysymys 'sovelluksen lukemaa 0 m' viittaa sovellukseen, jota kysymys ei mainitse (vain johdannossa); lisää 'seurantasovellus' kysymykseen tai sano 'loppupaikkaa'.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.

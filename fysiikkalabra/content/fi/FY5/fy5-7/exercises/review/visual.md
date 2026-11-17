@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 956c9e21ce98c12e
+CONTENT-HASH: 6db55fe375ed7769
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: solutions of L2-03 ($66{,}7\,\text{ms}$; reworded: exact count $900$ per minute, usual three significant figures) and L3-04 ($79{,}1\,\%$ with $4{,}96\,\text{s}$, $2{,}77\,\text{s}$) opened with ?ratkaisut=1; units LaTeX, decimal comma, no wrap at 390; captures fy5-7-fi-390/1280-sol-a.png, -sol-b.png. Built preview, own Playwright captures under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; no inline formula wraps at 390 px.
+- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
+- Captures: fy5-7-open-exercises-L3-1280-2 and -3 (L3-01 split, 7-18 solution and next task); the other splits are the same kind of paragraph break, not opened individually.
+- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
+- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

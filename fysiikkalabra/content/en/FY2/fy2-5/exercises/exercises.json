@@ -155,7 +155,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Example data: effective heat of combustion of firewood by moisture content",
+        "caption": "Effective heat of combustion of firewood by moisture content",
         "columns": [
           "Moisture content $(\\%)$",
           "$H\\,(\\text{MJ/kg})$"
@@ -336,7 +336,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Example data: useful energy needed to heat the house each month",
+        "caption": "Useful energy needed to heat the house each month",
         "columns": [
           "Month",
           "$E\\,(\\text{kWh})$"
@@ -406,7 +406,7 @@
       "unit": "kg",
       "tolerance": 0.01,
       "data": {
-        "caption": "Example data: three boiler options",
+        "caption": "Three boiler options",
         "columns": [
           "Boiler",
           "$H\\,(\\text{MJ/kg})$",

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ab789090f76dd85a
+CONTENT-HASH: cac80791f4c74b53
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L1-06 solution has a 130-word paragraph (untouched).
-- [Minor] L3-04 chain scrolls slightly at 360 px; known.
 
 ## Checked
-- Round 2: re-rendered preview/en/fy5-15.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L3-04 Reasonableness, 2 paragraphs) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
+- Own reading of review/shots in content/en/FY5/fy5-15/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

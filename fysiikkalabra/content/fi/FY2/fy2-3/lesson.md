@@ -214,7 +214,13 @@ Television teho on $80\,\text{W}$, ja se on päällä $4{,}0\,\text{h}$ vuorokau
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Teho $P = 80\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa $30\,\text{vrk}$ ajan ja hinta $20\,\text{snt/kWh}$. Kysytään kuukauden sähkön hintaa.
+**Tunnetut ja kysytty.**
+
+- Teho $P = 80\,\text{W}$,
+- käyttöaika $4{,}0\,\text{h}$ vuorokaudessa $30\,\text{vrk}$ ajan ja
+- hinta $20\,\text{snt/kWh}$.
+
+Kysytään kuukauden sähkön hintaa.
 
 <!-- vaihe -->
 
@@ -252,7 +258,9 @@ E &= P\,t \\
 
 <!-- vaihe -->
 
-**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa. Tulos on annettu kahdella merkitsevällä numerolla, koska teho ja päivittäinen käyttöaika ovat annetut kahdella numerolla.
+**Tulos.** Television katsominen maksaa noin $1{,}9\,\text{€}$ kuukaudessa.
+
+Tulos on annettu kahdella merkitsevällä numerolla, koska teho ja päivittäinen käyttöaika ovat annetut kahdella numerolla.
 
 <!-- vaihe -->
 

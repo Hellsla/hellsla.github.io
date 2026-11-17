@@ -71,7 +71,9 @@
 ## fy4-8-L2-03
 **Given:** $m = 250\,\text{kg}$, lifting height $h = 18.0\,\text{m}$, speed constant, $g = 9.81\,\text{m/s}^2$
 **Find:** the work $W$ done by the rope in $\text{kJ}$
-**Principle:** The weight and the tension force of the rope act on the load. The rope is a force other than the weight, so we use the work–energy principle. The speed is constant, so the kinetic energy does not change, and the work of the rope increases only the potential energy. The zero level is chosen at the starting height of the load.
+**Principle:** The weight and the tension force of the rope act on the load. The rope is a force other than the weight, so we use the work–energy principle.
+
+The speed is constant, so the kinetic energy does not change, and the work of the rope increases only the potential energy. The zero level is chosen at the starting height of the load.
 **Formula:** $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, and $E_{\text{k}0} = E_\text{k}$ and $E_{\text{p}0} = 0$, so $W = mgh$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 250\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 18.0\,\text{m} = 44\,145\,\text{J} = 44.1\,\text{kJ}$
@@ -91,7 +93,9 @@
 ## fy4-8-L3-01
 **Given:** $m = 80\,\text{kg}$, speed at the top of the hill $v_1 = 4.0\,\text{m/s}$ and at the bottom $v_2 = 13.0\,\text{m/s}$, height $h = 12.0\,\text{m}$, length of the road $s = 150\,\text{m}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the average resistive force $F_\text{res}$ in $\text{N}$
-**Principle:** The weight, the normal force of the road, and air resistance and rolling resistance act on the cyclist. The normal force does no work. The resistive forces are forces other than the weight, so the work–energy principle gives their work. The resistive force points against the motion all the way, so its work is $-F_\text{res} s$. The zero level is chosen at the bottom of the hill.
+**Principle:** The weight, the normal force of the road, and air resistance and rolling resistance act on the cyclist. The normal force does no work. The resistive forces are forces other than the weight, so the work–energy principle gives their work.
+
+The resistive force points against the motion all the way, so its work is $-F_\text{res} s$. The zero level is chosen at the bottom of the hill.
 **Formula:** $$\begin{aligned} &\tfrac{1}{2} mv_1^2 + mgh - F_\text{res} s \\ &= \tfrac{1}{2} mv_2^2 \end{aligned}$$, so $F_\text{res} = \dfrac{\tfrac{m}{2}(v_1^2 - v_2^2) + mgh}{s}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** First $$\begin{aligned} &\tfrac{m}{2}(v_1^2 - v_2^2) \\ &= \tfrac12 \cdot 80\,\text{kg} \\ &\cdot (16 - 169)\,\text{m}^2/\text{s}^2 \\ &= -6120\,\text{J} \end{aligned}$$ and $$\begin{aligned} &mgh \\ &= 80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 12.0\,\text{m} \\ &= 9417.6\,\text{J} \end{aligned}$$, so $F_\text{res} = \dfrac{-6120\,\text{J} + 9417.6\,\text{J}}{150\,\text{m}} = \dfrac{3297.6\,\text{J}}{150\,\text{m}} = 21.98\,\text{N}$
@@ -101,12 +105,16 @@
 ## fy4-8-L3-02
 **Given:** $m = 500\,\text{kg}$, height of the first top $h_1 = 35.0\,\text{m}$, speed there $v_1 = 2.0\,\text{m/s}$, track distance $s = 120\,\text{m}$, resistive force $F_\text{res} = 150\,\text{N}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest height $h_2$ of the next hill in $\text{m}$
-**Principle:** The weight, the normal force of the track and the resistive force act on the car. The normal force does no work, and the resistive force does the work $-F_\text{res} s$, so we use the work–energy principle. The car reaches the highest possible hill when its speed at the top is just zero. The zero level is chosen at the ground.
+**Principle:** The weight, the normal force of the track and the resistive force act on the car. The normal force does no work, and the resistive force does the work $-F_\text{res} s$, so we use the work–energy principle.
+
+The car reaches the highest possible hill when its speed at the top is just zero. The zero level is chosen at the ground.
 **Formula:** $$\begin{aligned} &\tfrac{1}{2} mv_1^2 + mgh_1 - F_\text{res} s \\ &= mgh_2 \end{aligned}$$, so $h_2 = h_1 + \dfrac{v_1^2}{2 \cdot g} - \dfrac{F_\text{res} s}{mg}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\dfrac{v_1^2}{2g} = \dfrac{(2.0\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = 0.204\,\text{m}$ and $\dfrac{F_\text{res} s}{mg} = \dfrac{150\,\text{N} \cdot 120\,\text{m}}{500\,\text{kg} \cdot 9.81\,\text{m/s}^2} = 3.670\,\text{m}$, so $h_2 = (35.0 + 0.204 - 3.670)\,\text{m} = 31.53\,\text{m}$
 **Answer:** at most $31.5\,\text{m}$, three significant figures like the height $35.0\,\text{m}$.
-**Reasonableness:** The resistive force takes $150\,\text{N} \cdot 120\,\text{m} = 18\,\text{kJ}$, which corresponds to a height of about $3.7\,\text{m}$ for a $500\,\text{kg}$ car, and the small initial speed adds only $0.2\,\text{m}$. So the hill is a little lower than the previous one, as in roller coasters. In reality the hill is made even lower so that the car goes over the top at speed.
+**Reasonableness:** The resistive force takes $150\,\text{N} \cdot 120\,\text{m} = 18\,\text{kJ}$, which corresponds to a height of about $3.7\,\text{m}$ for a $500\,\text{kg}$ car, and the small initial speed adds only $0.2\,\text{m}$. So the hill is a little lower than the previous one, as in roller coasters.
+
+In reality the hill is made even lower so that the car goes over the top at speed.
 
 ## fy4-8-L3-03
 **Given:** height $h = 20.0\,\text{m}$, initial speed $v_1 = 12.0\,\text{m/s}$ at an angle of $35^\circ$ to the horizontal, $g = 9.81\,\text{m/s}^2$; air resistance is ignored
@@ -121,8 +129,14 @@
 
 ## fy4-8-L1-06
 **Find:** how the speeds of the children at the bottom of the slide compare with each other
-**Principle:** The weight and the normal force of the slide act on each child. The normal force is perpendicular to the motion and does no work, and friction and air resistance are ignored, so the mechanical energy is conserved. The work done by the weight, that is the change in potential energy, depends only on the height difference, not on the shape or the length of the track.
-**Model answer:** Both children start from rest at the same height and have the same mass, so the initial potential energy $mgh$ is the same. At the bottom it has turned entirely into kinetic energy, $mgh = \tfrac{1}{2} mv^2$, so $v = \sqrt{2gh}$ is the same for both. On the steep slide the acceleration is greater but the distance is shorter, and on the gentle slide the acceleration is smaller but the distance is longer; these balance each other, and the speeds at the bottom are equal. Only the time taken is different.
+**Principle:** The weight and the normal force of the slide act on each child. The normal force is perpendicular to the motion and does no work, and friction and air resistance are ignored, so the mechanical energy is conserved.
+
+The work done by the weight, that is the change in potential energy, depends only on the height difference, not on the shape or the length of the track.
+**Model answer:** Both children start from rest at the same height and have the same mass, so the initial potential energy $mgh$ is the same.
+
+At the bottom it has turned entirely into kinetic energy, $mgh = \tfrac{1}{2} mv^2$, so $v = \sqrt{2gh}$ is the same for both.
+
+On the steep slide the acceleration is greater but the distance is shorter, and on the gentle slide the acceleration is smaller but the distance is longer; these balance each other, and the speeds at the bottom are equal. Only the time taken is different.
 
 ## fy4-8-L1-07
 **Given:** $m = 58.0\,\text{kg}$, initial speed $v_1 = 7.50\,\text{m/s}$, final speed $v_2 = 4.50\,\text{m/s}$
@@ -136,19 +150,31 @@
 
 ## fy4-8-L1-08
 **Find:** what is wrong in the student's solution
-**Principle:** The work done by a force is $W = F s$, where $s$ is the distance travelled in the direction of the force. The frictional force points against the motion all the way, so the work of friction is $-F_\mu s$, where $s$ is the distance along the plank. The height difference belongs to the work of the weight, that is the change in potential energy, not to the work of friction.
-**Model answer:** The student has multiplied the frictional force by the height difference between the ends of the plank, although the work of friction needs the distance the box travels along the plank. The frictional force acts along the whole length of the plank, so the correct work is $W = -8.0\,\text{N} \cdot 5.0\,\text{m} = -40\,\text{J}$. The sign $-$ was correct, because friction opposes the motion; only the distance was wrong. The student's result $-12\,\text{J}$ is too small.
+**Principle:** The work done by a force is $W = F s$, where $s$ is the distance travelled in the direction of the force.
+
+The frictional force points against the motion all the way, so the work of friction is $-F_\mu s$, where $s$ is the distance along the plank.
+
+The height difference belongs to the work of the weight, that is the change in potential energy, not to the work of friction.
+**Model answer:** The student has multiplied the frictional force by the height difference between the ends of the plank, although the work of friction needs the distance the box travels along the plank.
+
+The frictional force acts along the whole length of the plank, so the correct work is $W = -8.0\,\text{N} \cdot 5.0\,\text{m} = -40\,\text{J}$. The sign $-$ was correct, because friction opposes the motion; only the distance was wrong. The student's result $-12\,\text{J}$ is too small.
 
 ## fy4-8-L2-05
 **Given:** the height $h$ of the bob from the lowest point and the speed $v$ at the lowest point in six measurements of the table; initial speed $0$; friction and air resistance are ignored
 **Find:** the acceleration of free fall $g$ in $\text{m/s}^2$
-**Principle:** The weight and the tension of the string act on the bob. The tension is perpendicular to the motion and does no work, so the mechanical energy is conserved. The zero level is the lowest point: at the top the bob has only potential energy, at the bottom only kinetic energy. The mass cancels, so the mass of the bob is not needed.
+**Principle:** The weight and the tension of the string act on the bob. The tension is perpendicular to the motion and does no work, so the mechanical energy is conserved.
+
+The zero level is the lowest point: at the top the bob has only potential energy, at the bottom only kinetic energy. The mass cancels, so the mass of the bob is not needed.
 **Reading the graph:** The squares are $v^2 = 1.00;\ 1.90;\ 2.99;\ 3.84;\ 4.97;\ 5.81\,\text{m}^2/\text{s}^2$. The points $(h, v^2)$ lie close to a straight line. The line passes through the origin, so its slope is obtained from one point read from the line: the line passes between the points through the point $(0.30\,\text{m};\ 5.86\,\text{m}^2/\text{s}^2)$, so the slope is $k = 5.86\,\text{m}^2/\text{s}^2 : 0.30\,\text{m} = 19.5\,\text{m/s}^2$.
 **Formula:** $mgh = \tfrac{1}{2} mv^2$, so $v^2 = 2g \cdot h$. The slope of the line is $k = 2g$, so $g = \dfrac{k}{2}$.
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $g = \dfrac{19.5\,\text{m/s}^2}{2} = 9.77\,\text{m/s}^2$
 **Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures like the heights $h$ (for example $0.10\,\text{m}$). The more precise value read from the graph is $9.77\,\text{m/s}^2$.
-**Reasonableness:** The result differs from the known value $9.81\,\text{m/s}^2$ by less than one percent, which is within the measurement error. A single measurement gives the same order of magnitude: $h = 0.30\,\text{m}$ and $v = 2.41\,\text{m/s}$ give $g = v^2 : (2h) = 9.68\,\text{m/s}^2$. c) The line must pass through the origin, because when $h = 0$ the bob is at rest at the lowest point and has no kinetic energy, so $v = 0$ and $v^2 = 0$. The equation $v^2 = 2gh$ is a proportionality with no constant term.
+**Reasonableness:** The result differs from the known value $9.81\,\text{m/s}^2$ by less than one percent, which is within the measurement error.
+
+A single measurement gives the same order of magnitude: $h = 0.30\,\text{m}$ and $v = 2.41\,\text{m/s}$ give $g = v^2 : (2h) = 9.68\,\text{m/s}^2$. c) The line must pass through the origin, because when $h = 0$ the bob is at rest at the lowest point and has no kinetic energy, so $v = 0$ and $v^2 = 0$.
+
+The equation $v^2 = 2gh$ is a proportionality with no constant term.
 
 ## fy4-8-L2-06
 **Given:** $m = 420\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; at points A, B, C, D the track distance $s = 0;\ 55;\ 120;\ 170\,\text{m}$, the height $h = 18.0;\ 6.0;\ 12.0;\ 3.0\,\text{m}$ and the speed $v = 1.5;\ 14.6;\ 7.9;\ 14.2\,\text{m/s}$
@@ -156,7 +182,11 @@
 **Principle:** The mechanical energy is $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ with the ground as the zero level. The normal force does no work, so the change in the mechanical energy of the car is the work of the resistive forces, $W = E_\text{mech} - E_{\text{mech}0}$. The resistive force points against the motion all the way, so its average over a section is $F = -W : \Delta s$.
 **Formula:** $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ and $W = E_{\text{mech,D}} - E_{\text{mech,A}}$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
-**Substitution:** a) At A it is $\tfrac12 \cdot 420 \cdot 1.5^2\,\text{J} + 420 \cdot 9.81 \cdot 18.0\,\text{J} = 0.47\,\text{kJ} + 74.16\,\text{kJ} = 74.6\,\text{kJ}$. In the same way the kinetic energies at B, C and D are $44.8;\ 13.1;\ 42.3\,\text{kJ}$ and the potential energies $24.7;\ 49.4;\ 12.4\,\text{kJ}$, so $E_\text{mech} = 69.5;\ 62.5;\ 54.7\,\text{kJ}$. b) $W = 54.7\,\text{kJ} - 74.6\,\text{kJ} = -19.9\,\text{kJ}$. c) Between A and B the energy decreases by $5.15\,\text{kJ}$ over $55\,\text{m}$, so $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$. Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 107\,\text{N}$. Between C and D it decreases by $7.84\,\text{kJ}$ over $50\,\text{m}$, so $F = 157\,\text{N}$.
+**Substitution:** a) At A it is $\tfrac12 \cdot 420 \cdot 1.5^2\,\text{J} + 420 \cdot 9.81 \cdot 18.0\,\text{J} = 0.47\,\text{kJ} + 74.16\,\text{kJ} = 74.6\,\text{kJ}$.
+
+In the same way the kinetic energies at B, C and D are $44.8;\ 13.1;\ 42.3\,\text{kJ}$ and the potential energies $24.7;\ 49.4;\ 12.4\,\text{kJ}$, so $E_\text{mech} = 69.5;\ 62.5;\ 54.7\,\text{kJ}$. b) $W = 54.7\,\text{kJ} - 74.6\,\text{kJ} = -19.9\,\text{kJ}$. c) Between A and B the energy decreases by $5.15\,\text{kJ}$ over $55\,\text{m}$, so $F = 5150\,\text{J} : 55\,\text{m} = 94\,\text{N}$.
+
+Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 107\,\text{N}$. Between C and D it decreases by $7.84\,\text{kJ}$ over $50\,\text{m}$, so $F = 157\,\text{N}$.
 **Answer:** b) $W \approx -19.9\,\text{kJ}$, three significant figures like the heights and speeds. c) The average resistive force is greatest between points C and D, about $1.6 \cdot 10^2\,\text{N}$.
 **Reasonableness:** The mechanical energy decreases in every section, as it should, and altogether about $27\,\%$ of the initial energy turned into internal energy. The average resistive force over the whole track is $19\,900\,\text{J} : 170\,\text{m} \approx 117\,\text{N}$, which lies between the averages of the three sections, $94\,\text{N}$, $107\,\text{N}$ and $157\,\text{N}$, as it should.
 
@@ -174,7 +204,11 @@
 ## fy4-8-L3-04
 **Given:** $m = 70\,\text{kg}$, height difference $h = 6.0\,\text{m}$, length of the slope $L = 45\,\text{m}$, initial speed $0$ and speed $0$ after stopping; horizontal stopping distance $s = 29.4;\ 31.2;\ 28.7;\ 30.5;\ 29.9;\ 30.7\,\text{m}$, $g = 9.81\,\text{m/s}^2$; the frictional force $F$ is constant, air resistance is ignored
 **Find:** a) the mean stopping distance $s_\text{mean}$; b) the average frictional force $F$ in $\text{N}$; c) the speed $v$ at the bottom of the slope
-**Principle:** The weight, the normal force of the snow and friction act on the snowboarder. The normal force does no work, so friction is the only other force and we use the work–energy principle. Friction opposes the motion all the time, so its work is $-F$ times the whole distance travelled, $L + s_\text{mean}$. The zero level is the bottom of the slope. At the start and at the end the speed is zero, so all of the initial potential energy $mgh$ turns into internal energy.
+**Principle:** The weight, the normal force of the snow and friction act on the snowboarder. The normal force does no work, so friction is the only other force and we use the work–energy principle.
+
+Friction opposes the motion all the time, so its work is $-F$ times the whole distance travelled, $L + s_\text{mean}$. The zero level is the bottom of the slope.
+
+At the start and at the end the speed is zero, so all of the initial potential energy $mgh$ turns into internal energy.
 **Formula:** a) $s_\text{mean} = \dfrac{\text{sum}}{6}$. b) $mgh - F\left(L + s_\text{mean}\right) = 0$, so $F = \dfrac{mgh}{L + s_\text{mean}}$. c) On the slope $mgh - F L = \tfrac{1}{2} mv^2$, so $v = \sqrt{\dfrac{2\left(mgh - F L\right)}{m}}$.
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** a) The sum of the stopping distances is $180.4\,\text{m}$, so $s_\text{mean} = 180.4\,\text{m} : 6 = 30.07\,\text{m}$. b) $$\begin{aligned} &mgh \\ &= 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 6.0\,\text{m} \\ &= 4120\,\text{J} \end{aligned}$$ and $L + s_\text{mean} = 45\,\text{m} + 30.07\,\text{m} = 75.07\,\text{m}$, so $F = 4120\,\text{J} : 75.07\,\text{m} = 54.9\,\text{N}$. c) The work of friction on the slope is $F L = 54.9\,\text{N} \cdot 45\,\text{m} = 2470\,\text{J}$, so $\tfrac{1}{2} mv^2 = 4120\,\text{J} - 2470\,\text{J} = 1650\,\text{J}$ and $v = \sqrt{2 \cdot 1650\,\text{J} : 70\,\text{kg}} = 6.87\,\text{m/s}$.
@@ -184,7 +218,9 @@
 ## fy4-8-L3-05
 **Given:** $m = 0.057\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; heights at the top $h_0 = 1.20\,\text{m}$ and after the bounces $h_1 = 0.77;\ h_2 = 0.49;\ h_3 = 0.32;\ h_4 = 0.20\,\text{m}$; air resistance is ignored
 **Find:** a) the mechanical energy of the ball at the top points and the share conserved in each bounce; b) the mean of the shares in percent; c) the mechanical energy turned into internal energy in the first bounce, and a justification about the conservation of energy
-**Principle:** At the top the ball is momentarily at rest, so the kinetic energy is zero and $E_\text{mech} = mgh$ (the floor as the zero level). During the flight only the weight acts, so the mechanical energy is conserved, and the changes happen in the bounces. The mass and $g$ cancel from the share, so the share is the ratio of the heights, $\dfrac{E_{n+1}}{E_n} = \dfrac{h_{n+1}}{h_n}$.
+**Principle:** At the top the ball is momentarily at rest, so the kinetic energy is zero and $E_\text{mech} = mgh$ (the floor as the zero level).
+
+During the flight only the weight acts, so the mechanical energy is conserved, and the changes happen in the bounces. The mass and $g$ cancel from the share, so the share is the ratio of the heights, $\dfrac{E_{n+1}}{E_n} = \dfrac{h_{n+1}}{h_n}$.
 **Formula:** $E_n = mgh_n$, the share $r_n = \dfrac{h_{n+1}}{h_n}$, and the energy change in the first bounce $\Delta E = E_0 - E_1 = mg\left(h_0 - h_1\right)$
 **Conversions:** The quantities are in SI units. The share is changed to percent by multiplying by one hundred.
 **Substitution:** a) The energies are $E_0 = 0.057 \cdot 9.81 \cdot 1.20\,\text{J} = 0.671\,\text{J}$, $E_1 = 0.431\,\text{J}$, $E_2 = 0.274\,\text{J}$, $E_3 = 0.179\,\text{J}$ and $E_4 = 0.112\,\text{J}$. The shares are $r_0 = 0.77 : 1.20 = 0.642$, $r_1 = 0.636$, $r_2 = 0.653$ and $r_3 = 0.625$. b) The sum of the shares is $2.556$, so the mean is $2.556 : 4 = 0.639 = 63.9\,\%$. c) $$\begin{aligned} &\Delta E \\ &= 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot (1.20 - 0.77)\,\text{m} \\ &= 0.240\,\text{J} \end{aligned}$$.
@@ -241,10 +277,22 @@ The car would stop only at the starting height of $20\,\text{m}$.
 **Reasonableness:** The mechanical energy decreased by $15\,\text{J}$, the difference between the bars $40\,\text{J}$ and $25\,\text{J}$, and $2.5\,\text{N} \cdot 6.0\,\text{m} = 15\,\text{J}$. The work of friction is negative, because friction opposes the motion.
 
 ## fy4-8-L2-10
-**Given:** the mass of the car $m = 1500\,\text{kg}$ and the speeds $30\,\text{km/h}$, $50\,\text{km/h}$ and $90\,\text{km/h}$. Two facts are taken from the source (Liikenneturva: Turvallinen ajonopeus, read 16 November 2026). The first: the collision energy quadruples when the collision speed doubles. The second: when a car hits a fixed obstacle at $v = 50\,\text{km/h}$, the collision force acting on a person of mass $m_\text{p} = 80\,\text{kg}$ ”is $3\,000\,\text{kg}$”. The number is interpreted as a mass $m_F = 3000\,\text{kg}$ whose weight is the force $F$. The acceleration of free fall is $g = 9.81\,\text{m/s}^2$.
+**Given:** the mass of the car $m = 1500\,\text{kg}$ and the speeds $30\,\text{km/h}$, $50\,\text{km/h}$ and $90\,\text{km/h}$. Two facts are taken from the source (Liikenneturva: Turvallinen ajonopeus, read 16 November 2026). The first: the collision energy quadruples when the collision speed doubles.
+
+The second: when a car hits a fixed obstacle at $v = 50\,\text{km/h}$, the collision force acting on a person of mass $m_\text{p} = 80\,\text{kg}$ ”is $3\,000\,\text{kg}$”. The number is interpreted as a mass $m_F = 3000\,\text{kg}$ whose weight is the force $F$.
+
+The acceleration of free fall is $g = 9.81\,\text{m/s}^2$.
 **Find:** a) the kinetic energy $E_\text{k}$ of the car at the three speeds; b) a justification of the source's claim and the ratio of the kinetic energies; c) where the kinetic energy of the car goes or what it turns into; d) the stopping distance $s$ of the person in $\text{m}$; e) why the kinetic energy alone does not predict the injuries
-**Principle:** A moving body has the kinetic energy $E_\text{k} = \tfrac{1}{2} mv^2$. In a collision the stopping force points against the motion and does negative work. The motion is horizontal, so the weight and the normal force do no work and the stopping force is the net force. That is why the work–energy principle $E_{\text{k}0} + W = E_\text{k}$ is used: the work of the net force equals the change in kinetic energy. In part d the force is assumed to be constant, so its work is $W = -F s$.
-**Formula:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) When the speed is $2v$, the kinetic energy is $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$, that is $4E_\text{k}$. In the same way at the speed $3v$ it is $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$, that is $9E_\text{k}$. d) The force is equal to the weight, $F = m_F g$. At the start $E_{\text{k}0} = \tfrac{1}{2} m_\text{p} v^2$ and at the end the person is at rest, $E_\text{k} = 0$, so the work–energy principle is $\tfrac{1}{2} m_\text{p} v^2 - F s = 0$. From this $s = \dfrac{m_\text{p} v^2}{2F}$.
+**Principle:** A moving body has the kinetic energy $E_\text{k} = \tfrac{1}{2} mv^2$. In a collision the stopping force points against the motion and does negative work.
+
+The motion is horizontal, so the weight and the normal force do no work and the stopping force is the net force.
+
+That is why the work–energy principle $E_{\text{k}0} + W = E_\text{k}$ is used: the work of the net force equals the change in kinetic energy. In part d the force is assumed to be constant, so its work is $W = -F s$.
+**Formula:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) When the speed is $2v$, the kinetic energy is $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$, that is $4E_\text{k}$.
+
+In the same way at the speed $3v$ it is $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$, that is $9E_\text{k}$. d) The force is equal to the weight, $F = m_F g$.
+
+At the start $E_{\text{k}0} = \tfrac{1}{2} m_\text{p} v^2$ and at the end the person is at rest, $E_\text{k} = 0$, so the work–energy principle is $\tfrac{1}{2} m_\text{p} v^2 - F s = 0$. From this $s = \dfrac{m_\text{p} v^2}{2F}$.
 **Conversions:** $30\,\text{km/h} = 30 : 3.6\,\text{m/s} = 8.333\,\text{m/s}$, $50\,\text{km/h} = 50 : 3.6\,\text{m/s} = 13.889\,\text{m/s}$ and $90\,\text{km/h} = 90 : 3.6\,\text{m/s} = 25.0\,\text{m/s}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** a) At $30\,\text{km/h}$:
 
@@ -277,7 +325,27 @@ In addition: a) The kinetic energy $E_\text{k}$ of the car is about $52.1\,\text
 
 b) The claim is correct, because kinetic energy is proportional to the square of the speed: twice the speed gives $2^2 = 4$ times the energy, and this holds for every mass. At $90\,\text{km/h}$ the kinetic energy is $9$ times that at $30\,\text{km/h}$.
 
-c) The force of the obstacle does negative work on the car, and by the work–energy principle the kinetic energy of the car decreases to zero. The energy does not vanish. Most of it goes into the permanent deformation of the structures of the car (and of the obstacle) and turns into their internal energy: the parts warm up, and this energy is then gradually transferred to the surroundings as heat. A small part goes into sound and into the kinetic energy of parts that come loose.
+c) The force of the obstacle does negative work on the car, and by the work–energy principle the kinetic energy of the car decreases to zero. The energy does not vanish.
 
-e) The kinetic energy fixes only the work needed to stop the person, that is the product $F s$. The same energy can be taken away over a long distance with a small force or over a short distance with a large force. If a person with a kinetic energy of $7716\,\text{J}$ stops over $1.0\,\text{m}$ (the front of the car crumples, the seat belt and the airbag give), the mean force is about $7.7\,\text{kN}$. If the distance is $0.05\,\text{m}$ (a hard surface, no seat belt), the force is about $150\,\text{kN}$, twenty times as large. The injuries depend on the force and on how it is spread over the body and in time, on what the body hits, on the direction of the collision and on the person, for example on age. A pedestrian is not protected by the structures of a car: according to the source, the probability of a pedestrian dying grows steeply when the collision speed is over $60\,\text{km/h}$. So the kinetic energy tells how much energy must be taken away, but not how it is taken away.
-**Reasonableness:** A quarter of a metre is of the same order as the give of a seat belt and the crumpling of the front of a car together, so the result is believable. The force is $3000\,\text{kg} : 80\,\text{kg} = 37.5$ times the person's own weight, so the deceleration is $a = F : m_\text{p} = 368\,\text{m/s}^2$, about $37.5\,g$. The equations of motion give the same distance: $v^2 : (2a) = 0.262\,\text{m}$. The source's value for $100\,\text{km/h}$ is $12\,000\,\text{kg}$, exactly four times as large. It matches a model in which the stopping distance is the same $0.262\,\text{m}$: the energy quadruples, so the force quadruples too. Limit of the model: the real force is not constant, so $29\,\text{kN}$ is a mean value and the largest momentary force is greater.
+Most of it goes into the permanent deformation of the structures of the car (and of the obstacle) and turns into their internal energy: the parts warm up, and this energy is then gradually transferred to the surroundings as heat.
+
+A small part goes into sound and into the kinetic energy of parts that come loose.
+
+e) The kinetic energy fixes only the work needed to stop the person, that is the product $F s$. The same energy can be taken away over a long distance with a small force or over a short distance with a large force.
+
+If a person with a kinetic energy of $7716\,\text{J}$ stops over $1.0\,\text{m}$ (the front of the car crumples, the seat belt and the airbag give), the mean force is about $7.7\,\text{kN}$.
+
+If the distance is $0.05\,\text{m}$ (a hard surface, no seat belt), the force is about $150\,\text{kN}$, twenty times as large.
+
+The injuries depend on the force and on how it is spread over the body and in time, on what the body hits, on the direction of the collision and on the person, for example on age.
+
+A pedestrian is not protected by the structures of a car: according to the source, the probability of a pedestrian dying grows steeply when the collision speed is over $60\,\text{km/h}$.
+
+So the kinetic energy tells how much energy must be taken away, but not how it is taken away.
+**Reasonableness:** A quarter of a metre is of the same order as the give of a seat belt and the crumpling of the front of a car together, so the result is believable.
+
+The force is $3000\,\text{kg} : 80\,\text{kg} = 37.5$ times the person's own weight, so the deceleration is $a = F : m_\text{p} = 368\,\text{m/s}^2$, about $37.5\,g$. The equations of motion give the same distance: $v^2 : (2a) = 0.262\,\text{m}$.
+
+The source's value for $100\,\text{km/h}$ is $12\,000\,\text{kg}$, exactly four times as large. It matches a model in which the stopping distance is the same $0.262\,\text{m}$: the energy quadruples, so the force quadruples too.
+
+Limit of the model: the real force is not constant, so $29\,\text{kN}$ is a mean value and the largest momentary force is greater.

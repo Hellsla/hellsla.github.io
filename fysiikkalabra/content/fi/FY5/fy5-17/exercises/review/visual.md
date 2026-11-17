@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 16bb16e0f37b499a
+CONTENT-HASH: 239ab2f4ce53b77f
+ROUND: 1
 
 ## Blocking
-(none; round-1 Major verified fixed)
 
 ## Polish
-- [Minor] fy5-17-L2-10 Kohta a) is one paragraph of about 126 words (just over the 120-word guide); could split at "Vuoden 2026 taulukon otsikossa on tähti".
-- [Minor] Task text part c): "kulkee 100 kilometrin matkan" still writes the unit out; use $100\,\text{km}$.
-- [Minor] Vastaus: "100 km / 11,905 s" uses a slash; the colon form used elsewhere would match.
+
 
 ## Checked
-- Own 360 px (tiles for task, Annettu, kohta a)–d), Järkevyys) and 1280 px render of fy5-17-L2-10 with solution open: kohta d) now four short paragraphs (formula, one station, model limits, accuracy); Vastaus box "Δt ≈ 12 s" with one-line sig-fig note. Fractions legible, no clipping, no overflow.
+- fy5-17 open-exercises-L3-1280-6 (solution Sijoitus/Vastaus/Järkevyys, 1280 px) and L2-1280-14 (the split Kohta a)/b) paragraphs, Kaava, Sijoitus, Vastaus, 1280 px): Kohta b) now reads as two clean paragraphs under its lead, the formulas and the boxed answer are untouched, no overflow.
+- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

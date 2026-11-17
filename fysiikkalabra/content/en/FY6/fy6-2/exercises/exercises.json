@@ -158,7 +158,7 @@
       "unit": "mV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: the same voltage on three measuring ranges",
+        "caption": "The same voltage on three measuring ranges",
         "columns": [
           "$\\text{Range}\\,(\\text{V})$",
           "$U\\,(\\text{V})$",
@@ -226,7 +226,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: the voltage of a battery in five measurements",
+        "caption": "The voltage of a battery in five measurements",
         "columns": [
           "$\\text{Measurement}$",
           "$U\\,(\\text{V})$"

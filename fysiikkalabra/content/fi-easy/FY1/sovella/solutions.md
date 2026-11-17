@@ -60,7 +60,13 @@
   <foreignObject x="232.5" y="296" width="270" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet hetkestä $0{,}4\,\text{s}$ alkaen ovat samalla suoralla. Siksi niihin sovitetaan suora: pallo vierii lattialla tasaisesti. Hetkellä $0{,}4\,\text{s}$ pallo on rampin alapäässä (noin $16\,\text{cm}$). Silloin pallolla on jo sama nopeus kuin lattialla. Kaksi ensimmäistä pistettä ovat rampilta. Rampilla vauhti vasta kasvaa. Siksi nämä pisteet jäävät suoran yläpuolelle, eivätkä ne kuulu sovitukseen. Pisteitä ei yhdistetä murtoviivaksi, koska jokaisessa mittauksessa on pieni virhe.
+**Mallivastaus:** Pisteet hetkestä $0{,}4\,\text{s}$ alkaen ovat samalla suoralla. Siksi niihin sovitetaan suora: pallo vierii lattialla tasaisesti.
+
+Hetkellä $0{,}4\,\text{s}$ pallo on rampin alapäässä (noin $16\,\text{cm}$). Silloin pallolla on jo sama nopeus kuin lattialla.
+
+Kaksi ensimmäistä pistettä ovat rampilta. Rampilla vauhti vasta kasvaa. Siksi nämä pisteet jäävät suoran yläpuolelle, eivätkä ne kuulu sovitukseen.
+
+Pisteitä ei yhdistetä murtoviivaksi, koska jokaisessa mittauksessa on pieni virhe.
 
 ### b)
 **Annettu:** a-kohdan kuvaaja ja lattialla otetut pisteet $t = 0{,}4\text{–}2{,}0\,\text{s}$
@@ -76,12 +82,22 @@
 ### c)
 **Kysytty:** paikan todellinen tarkkuus ja nopeuden perusteltu tarkkuus
 **Periaate:** Näytön numerot eivät kerro mittauksen tarkkuutta. Videolla paikan epävarmuutta voi arvioida kuvapisteen koosta. Pallon reunan paikka voi heittää kuvapisteen tai kaksi.
-**Mallivastaus:** Yksi kuvapiste vastaa $2{,}5\,\text{mm}$:ä. Siksi pallon paikka tunnetaan noin $\Delta s \approx 3\,\text{mm}$:n tarkkuudella. Sovellus laskee pallon keskipisteen sen reunan kuvapisteistä. Se voi antaa paikan kuvapisteen osina, mutta liikkuvan pallon reuna on hieman sumea. Sovelluksen näyttämä $0{,}1\,\text{mm}$:n numero syntyy laskennasta, kun kuvapisteet muunnetaan millimetreiksi. Se ei kerro mitään mittauksen tarkkuudesta: jo millimetrien numero on epävarma. Sama näkyy pisteiden sironnassa: lattialla pisteet poikkeavat sovitetusta suorasta enintään noin $2\,\text{mm}$ eli alle kuvapisteen. Nopeus määritettiin $1{,}12\,\text{m}$:n matkasta. Matkan epävarmuus on muutama millimetri eli alle prosentti. Siksi nopeus ilmoitetaan muodossa $v = 0{,}80\,\text{m/s}$. Pienimmän neliösumman sovitus antaa $0{,}799\,\text{m/s}$. Kolmas merkitsevä numero on vielä perusteltavissa, mutta neljäs ei ole.
+**Mallivastaus:** Yksi kuvapiste vastaa $2{,}5\,\text{mm}$:ä. Siksi pallon paikka tunnetaan noin $\Delta s \approx 3\,\text{mm}$:n tarkkuudella. Sovellus laskee pallon keskipisteen sen reunan kuvapisteistä. Se voi antaa paikan kuvapisteen osina, mutta liikkuvan pallon reuna on hieman sumea.
+
+Sovelluksen näyttämä $0{,}1\,\text{mm}$:n numero syntyy laskennasta, kun kuvapisteet muunnetaan millimetreiksi. Se ei kerro mitään mittauksen tarkkuudesta: jo millimetrien numero on epävarma.
+
+Sama näkyy pisteiden sironnassa: lattialla pisteet poikkeavat sovitetusta suorasta enintään noin $2\,\text{mm}$ eli alle kuvapisteen.
+
+Nopeus määritettiin $1{,}12\,\text{m}$:n matkasta. Matkan epävarmuus on muutama millimetri eli alle prosentti. Siksi nopeus ilmoitetaan muodossa $v = 0{,}80\,\text{m/s}$. Pienimmän neliösumman sovitus antaa $0{,}799\,\text{m/s}$. Kolmas merkitsevä numero on vielä perusteltavissa, mutta neljäs ei ole.
 
 ### d)
 **Kysytty:** arvio ekstrapoloinnista (suoran jatkamisesta mittausvälin ulkopuolelle) ja selitys suoran vakiotermille
 **Periaate:** Malli on testattu vain sillä välillä, jolla mitattiin. Sovitetun suoran vakiotermi on suoran ja $s$-akselin leikkauskohta.
-**Mallivastaus:** Päätelmä ei ole luotettava. Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta. Päätelmä jatkaa suoraa $8\,\text{s}$ mittausten ulkopuolelle. Se on viisi kertaa niin pitkä aika kuin mittausväli. Todellisuudessa vierimisvastus hidastaa palloa vähitellen. Lisäksi $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Tasaisen liikkeen mallia voi siis käyttää pidemmälle ajalle vasta, kun se on testattu pidemmällä mittauksella.
+**Mallivastaus:** Päätelmä ei ole luotettava.
+
+Suora on testattu vain välillä $0{,}4\text{–}2{,}0\,\text{s}$ eli $1{,}6\,\text{s}$:n ajalta. Päätelmä jatkaa suoraa $8\,\text{s}$ mittausten ulkopuolelle. Se on viisi kertaa niin pitkä aika kuin mittausväli.
+
+Todellisuudessa vierimisvastus hidastaa palloa vähitellen. Lisäksi $7{,}8\,\text{m}$:n matkalla pallo luultavasti osuu seinään tai huonekaluun. Tasaisen liikkeen mallia voi siis käyttää pidemmälle ajalle vasta, kun se on testattu pidemmällä mittauksella.
 Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon paikka hetkellä $0\,\text{s}$, sillä pallo lähti kohdasta $s = 0$. Rampilla pallo kulki aluksi hitaammin kuin lattialla. Jos pallo olisi liikkunut koko ajan lattianopeudella $0{,}80\,\text{m/s}$, se olisi ehtinyt pidemmälle. Siksi lattialiikettä kuvaava suora on siirtynyt alaspäin. Se leikkaa $s$-akselin origon alapuolella.
 
 ### Yleisiä virheitä

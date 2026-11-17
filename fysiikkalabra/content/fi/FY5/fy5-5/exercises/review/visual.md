@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 95dcb8b70d26daad
+CONTENT-HASH: 1c1990d17d51a610
 
 ## Blocking
-(none) The round-1 Major is fixed: the Sijoitus chains of L1-02, L1-03, L1-04, L2-02, L2-03, L3-03 and the Järkevyys chains now sit in aligned rows; scan of every .eq-chain with all details open at 360, 390 and 1280 px: none scrolls, page width = viewport (only the known find-the-error formula of the lesson overflows).
+(none)
 
 ## Polish
-- [Minor] L2-02 Sijoitus — the chain is correct but long (10 rows at 360 px); acceptable.
-- [Minor] Gravitaatiolaki-chains: the \cdot continuation row is indented with \quad; fine, only note the fraction font is small at 360 px.
+(none)
 
 ## Checked
-- Own captures at 360 px of solutions L1-02, L1-04, L2-02, L2-03, L3-03 (opened and read); scan at 360/390/1280 of all .eq-chain; changed Järkevyys (L2-03 21 700 km, L3-01 F_0 row) legible.
+- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
+- Captures (review/shots): fy5-5-open-exercises-1280-6 (L1-06 split), fy5-5-open-exercises-L3-1280-5 (L3-04, the 'Kohta c' split), fy5-5-open-exercises-L2-1280-12 (L2-08 asteroids split).
+- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
+- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

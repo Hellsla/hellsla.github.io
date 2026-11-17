@@ -22,23 +22,23 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: friction and net force",
+      "title": "Recap: net force and slowing down",
       "fbd": "identify",
       "optional": true,
-      "prompt": "A box slides to the right on a horizontal floor and slows down. Nobody pushes or pulls it. In which direction does the net force acting on the box point?",
+      "prompt": "The parachute has just opened. The skydiver is still moving downwards, but the velocity is decreasing. In which direction does the net force on the skydiver point?",
       "choices": [
         {
-          "text": "To the left, because friction opposes sliding.",
+          "text": "Upwards, because the downward velocity is decreasing.",
           "correct": true,
-          "feedback": "Correct. In the chapter *Weight, friction and the inclined plane* you learned that sliding friction points against the sliding. It is the only horizontal force, so the net force and the acceleration point to the left, and the box slows down. In this chapter air does the same: it opposes the motion."
+          "feedback": "Correct. In the chapter *Newton's second law* you learned that the net force and the acceleration point in the same direction. The skydiver slows down, so the acceleration points against the motion, that is, upwards. In this chapter you find out which force is then larger than the weight."
         },
         {
-          "text": "To the right, in the direction of motion, because the box is still moving to the right.",
-          "feedback": "Motion does not cause a force. Nothing pushes the box, so there is no force pointing to the right. The box slows down, so the acceleration and the net force point to the left, against the motion."
+          "text": "Downwards, in the direction of motion, because the skydiver is still moving downwards.",
+          "feedback": "Motion does not cause a force, and the net force does not always point in the direction of motion. If the net force pointed downwards, the downward velocity would grow. The velocity decreases, so the net force points upwards, against the motion."
         },
         {
-          "text": "The net force is zero, because the box is moving.",
-          "feedback": "If the net force were zero, the speed of the box would not change. The box slows down, so the net force is not zero: friction points to the left."
+          "text": "The net force is zero, because the skydiver is still moving.",
+          "feedback": "If the net force were zero, the skydiver's velocity would not change. The velocity decreases, so the net force is not zero but points upwards."
         }
       ]
     },

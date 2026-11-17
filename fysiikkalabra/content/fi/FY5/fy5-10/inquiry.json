@@ -330,7 +330,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Narun päätä heilutetaan tasaisesti. Anturi mittaa narun yhden kohdan poikkeamaa, ja opiskelija saa siitä kuvaajan, jonka vaaka-akselilla on aika $t$ sekunteina. Kuvaajan peräkkäisten huippujen väli on $0{,}50$. Opiskelija päättelee: ”Aallonpituus on $0{,}50\\,\\text{m}$. Koska taajuus on $2{,}0\\,\\text{Hz}$, nopeus on $v = f\\lambda = 2{,}0\\,\\text{Hz} \\cdot 0{,}50\\,\\text{m} = 1{,}0\\,\\text{m/s}$.” Missä on virhe?",
+      "prompt": "Narun päätä heilutetaan tasaisesti. Anturi mittaa narun yhden kohdan poikkeamaa, ja opiskelija saa siitä kuvaajan, jonka vaaka-akselilla on aika $t$ sekunteina. Kuvaajan peräkkäisten huippujen väli on $0{,}50$. Opiskelija päättelee: ”Aallonpituus on $0{,}50\\,\\text{m}$. Koska taajuus on $2{,}0\\,\\text{Hz}$, nopeus on $v = f\\lambda$ $= 2{,}0\\,\\text{Hz} \\cdot 0{,}50\\,\\text{m}$ $= 1{,}0\\,\\text{m/s}$.” Missä on virhe?",
       "choices": [
         {
           "text": "Huippujen väli on tässä jaksonaika $0{,}50\\,\\text{s}$, joten kuvaajasta ei saa aallonpituutta.",

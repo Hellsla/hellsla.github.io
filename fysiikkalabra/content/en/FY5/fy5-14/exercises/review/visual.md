@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8bde674d3810f5d8
+CONTENT-HASH: 1c382f450cb2acc7
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L3-05 solution has a 121-word paragraph; a split would be tidier.
-- [Minor] L2-09 (14-19) source line adds "(in Finnish)" after the link, fine; the Finnish source title should stay as the link text.
 
 ## Checked
-- own Playwright render of preview/en/fy5-14.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-04, L1-10, L2-02, L2-08, L2-09 (new) at 360 and 1280 px opened where noted. Opened 14-19 at 360 and 1280.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Own reading of review/shots in content/en/FY5/fy5-14/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

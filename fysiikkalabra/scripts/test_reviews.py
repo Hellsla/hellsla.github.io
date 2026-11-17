@@ -468,6 +468,13 @@ expect("... nor a heading", not rv._md_paragraphs(["## A B"], ["## A", "B"]))
 expect("... across a stage marker both sides have", rv._md_paragraphs(["A B.", "", "<!-- vaihe -->", "", "C D."], ["A", "", "B.", "", "<!-- vaihe -->", "", "C D."]))
 expect("... but not a stage marker moved", not rv._md_paragraphs(["A B.", "<!-- vaihe -->", "C D."], ["A", "<!-- vaihe -->", "B. C D."]))
 expect("an md-paragraphs change needs only the visual reviewer", rv.RULES["md-paragraphs"] == ("none", "none", "delta"))
+expect("... also when the stage was re-broken too: a chain lifted into an aligned block reads with a space more inside the formula",
+       rv._md_paragraphs(["**M:** so $d_\\text{A}\\approx400$. This is it. The value $1{,}5$."], ["**M:** so $d_\\text{A} \\approx400$. This is it.", "", "The value $1{,}5$."]))
+expect("... but a space that ends a control word is not left out", not rv._md_paragraphs(["A $a\\cdot x$ b. C"], ["A $a\\cdotx$ b.", "", "C"]))
+expect("para_view: a paragraph cut into paragraphs and a list reads as it did", rv.para_view("A $x$ b c.\nD", "s.md") == rv.para_view("A $x$\n\n- b\n- c.\n\nD", "s.md"))
+expect("... and not when a word changes", rv.para_view("A b c.", "s.md") != rv.para_view("A\n\n- b\n- d.", "s.md"))
+expect("... in JSON a \\n- is a list item, and a LaTeX \\nu stays", rv.para_view(json.dumps({"s": "A.\n\n- b\n- c \\nu"}), "t.json") == rv.para_view(json.dumps({"s": "A. b c \\nu"}), "t.json")
+       != rv.para_view(json.dumps({"s": "A. b c u"}), "t.json"))
 _lo = r"    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));"
 expect("a LaTeX label moved in a sim's own label() helper is a label nudge", rv._js_label_pair(_lo, _lo.replace("ts(36)", "ts(39)")))
 expect("... but not its size", not rv._js_label_pair(_lo, _lo.replace("ts(12)", "ts(14)")))
@@ -671,15 +678,47 @@ expect("... a label added to a caption, or a word changed beside it, is not the 
 out = cap(E0.replace("(esimerkkiaineisto)", "(luonnos)"))
 expect("... another parenthesis in its place is a changed caption, not none", "science: none" not in out, out)
 cap(E0.replace(LAB + '"', '"')); code, out = run(t, "reviews.py", "carry", LESSON, "--exercises")
-expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"(esimerkkiaineisto)\" taken out of table captions, nothing else (teacher 2026-11-15))") for l in out.splitlines()) == 3, out)
+expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"esimerkkiaineisto\" taken out of table captions, nothing else (teacher 2026-11-15, 2026-11-16))") for l in out.splitlines()) == 3, out)
 code, out = run(t, "reviews.py", "verify")
 expect("verify re-derives the caption-label carry in CI", code == 0 and "ERROR" not in out, out[-400:])
 cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
 code, out = run(t, "reviews.py", "verify")
 expect("... and the carry no longer holds once the same file also changed a caption word", "exercises: draft" in out, out[-400:])
+expect("... the new forms are the category line for line too", rv.caption_removed(_cj("Kärryn nopeus, esimerkkiaineisto"), _cj("Kärryn nopeus")) == _cj("Kärryn nopeus") and rv.caption_removed(_cj("Esimerkkiaineisto: sama jännite"), _cj("Sama jännite")) == _cj("Sama jännite") and rv.caption_removed(_cj("Example data: three boiler options"), _cj("Three boiler options")) == _cj("Three boiler options"))
+expect("... but not with a changed letter beside it, or a lower-case start kept", rv.caption_removed(_cj("Esimerkkiaineisto: sama jännite"), _cj("sama jännite")) == _cj("Esimerkkiaineisto: sama jännite") and rv.caption_removed(_cj("Kärryn nopeus, esimerkkiaineisto"), _cj("Kärryn vauhti")) == _cj("Kärryn nopeus, esimerkkiaineisto"))
+# 8l-b. the same without parentheses (teacher 2026-11-16): "…, esimerkkiaineisto" and "Esimerkkiaineisto: …"
+t = project(); E = t / "content/fi/FY3" / LESSON / "exercises" / "exercises.json"; _n = iter(range(99))
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', lambda m: m.group(1) + (m.group(2) + ", esimerkkiaineisto" if next(_n) % 2 else "Esimerkkiaineisto: " + m.group(2)[:1].lower() + m.group(2)[1:]) + m.group(3), E.read_text()))
+init_git(t)
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews")
+E1 = E.read_text()
+expect("the passed set has both forms", ', esimerkkiaineisto"' in E1 and '"Esimerkkiaineisto: ' in E1, E1[:300])
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', lambda m: m.group(1) + rv.caption_label_free(m.group(2)) + m.group(3), E1))
+out = run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+expect("both forms taken out: none for all three, category caption-label", out.count(": none") == 3 and "caption-label" in out, out)
+code, out = run(t, "reviews.py", "carry", LESSON, "--exercises"); code, out = run(t, "reviews.py", "verify")
+expect("... and verify re-derives that carry", code == 0 and "ERROR" not in out, out[-400:])
+E.write_text(E1.replace("Esimerkkiaineisto: l", "l", 1))
+out = run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+expect("... a marker taken out without its capital letter is a changed caption (not none)", "science: none" not in out, out)
 expect("the marker is a caption's alone: a text mention is no caption", rv.caption_free(json.dumps({"text": "Taulukko (esimerkkiaineisto)."})) == json.dumps({"text": "Taulukko (esimerkkiaineisto)."}, indent=1))
 for old, new in (("Taulukko (esimerkkiaineisto)", "Taulukko"), ("Table (example data)", "Table"), ("Table (example data set)", "Table"),
-                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B")):
+                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B"),
+                 # without parentheses too (teacher 2026-11-16, work queue 8l-b): fi, fi-easy and en
+                 ("Kärryn nopeus, esimerkkiaineisto", "Kärryn nopeus"), ("Velocity of the cart, example data", "Velocity of the cart"),
+                 ("Pisteen $P$ potentiaali eri kuormilla, esimerkkiaineisto", "Pisteen $P$ potentiaali eri kuormilla"),
+                 ("Esimerkkiaineisto: sama jännite kolmella mittausalueella", "Sama jännite kolmella mittausalueella"),
+                 ("Esimerkkiaineisto: öljypisaroiden leijumisjännitteet", "Öljypisaroiden leijumisjännitteet"),
+                 ("Example data: three boiler options", "Three boiler options"),
+                 ("Lasien taitekertoimet (tyypillisiä arvoja, esimerkkiaineisto)", "Lasien taitekertoimet (tyypillisiä arvoja)"),
+                 ("Refractive indices of the glasses (typical values, example data)", "Refractive indices of the glasses (typical values)"),
+                 ("Ilman lämpötila vuorokauden aikana (keksitty esimerkkiaineisto)", "Ilman lämpötila vuorokauden aikana"),
+                 ("R-luku yhdellä mittausasemalla (keksitty esimerkkiaineisto, ei mittaustulos)", "R-luku yhdellä mittausasemalla"),
+                 ("R number at one measuring station (an invented example data set, not a measurement)", "R number at one measuring station"),
+                 # a word of its own is no marker: it stays
+                 ("Esimerkkiaineiston keruu", "Esimerkkiaineiston keruu"), ("Esimerkkiaineisto ja malli", "Esimerkkiaineisto ja malli"),
+                 ("Mittaus, esimerkkiaineisto ja malli", "Mittaus, esimerkkiaineisto ja malli"), ("Example data sets compared", "Example data sets compared")):
     expect(f"caption_free: {old!r} → {new!r}", json.loads(rv.caption_free(json.dumps({"data": [{"caption": old}]})))["data"][0]["caption"] == new)
 expect("caption-label: nobody needs to look", rv.RULES["caption-label"] == ("none", "none", "none"))
 # an item (koe, sovella, unit): its view leaves the marker out, so a carry-item over a pure marker removal is accepted
@@ -692,6 +731,17 @@ import practice as _pr
 _fk, _fl = None, None
 expect("item_view: a sovella set's tasks.json with and without the marker has one view; another caption has another",
        rv.item_view("sovella", "FY3", "fi", _Src(_T)) == rv.item_view("sovella", "FY3", "fi", _Src(_T2)) != rv.item_view("sovella", "FY3", "fi", _Src(_T3)))
+# an item's solutions.md cut into paragraphs or a list (work queue 8c): one view with `paragraphs`, and only with it
+class _SrcMd:
+    def __init__(self, md): self.md = md
+    def read(self, rel, binary=False): return self.md if rel.endswith("solutions.md") else _T2 if rel.endswith("tasks.json") else None
+_M1 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kaksi numeroa. Koska $a$ ja $b$ tunnetaan.\n"
+_M2 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kaksi numeroa.\n\n- Koska $a$ ja\n- $b$ tunnetaan.\n"
+_M3 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kolme numeroa.\n\nKoska $a$ ja $b$ tunnetaan.\n"
+_iv = lambda md, **kw: rv.item_view("sovella", "FY3", "fi", _SrcMd(md), **kw)
+expect("item_view: a solution step cut into paragraphs and a list has the view it had with paragraphs=True", _iv(_M1, paragraphs=True) == _iv(_M2, paragraphs=True))
+expect("... not without it, and not when a word changes", _iv(_M1) != _iv(_M2) and _iv(_M1, paragraphs=True) != _iv(_M3, paragraphs=True))
+expect("... a list is no re-broken chain: the reflow view alone tells them apart", _iv(_M1, reflow=True) != _iv(_M2, reflow=True))
 # 9. a translated exercise set (teacher 2026-11-12): numerically equivalent to the Finnish set, whose science PASS is
 # current → the science review carries over; pedagogy and visual review the language; anything numeric differs → as before
 _p = []
@@ -789,6 +839,27 @@ rows = (U / "review/carry.tsv").read_text().splitlines()
 (U / "review/visual.md").write_text((U / "review/visual.md").read_text().replace(uh(), rows[-1].split("\t")[2]))   # the visual PASS of the version before the re-break
 code, out = run(t, "reviews.py", "verify")
 expect("... and verify rejects a visual carry row over a reflow", code == 1 and "does not carry the visual review" in out, out[-600:])
+# a unit's text cut into paragraphs and a list, word for word the same (work queue 8c): science and pedagogy carry over
+# (md-paragraphs), the visual reviewer looks; a changed word with it carries nothing
+git(t, "checkout", "-q", "HEAD", "--", "content"); (U / "review/carry.tsv").unlink(missing_ok=True)
+for n in ("science", "pedagogy", "visual"): ureport(n)
+git(t, "add", "."); git(t, "commit", "-qm", "unit reviewed again")
+src4 = um.read_text()
+PA = ", joten nopeus on pieni."   # after the aligned chain the re-break test left
+def usplit(new_text):
+    um.write_text(src4.replace(PA, new_text, 1)); (U / "review/carry.tsv").unlink(missing_ok=True)
+    return run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+expect("... (the chain is there to cut after)", PA in src4)
+out = usplit(",\n\n- joten nopeus\n- on pieni.")
+expect("a unit's text cut into paragraphs and a list: science and pedagogy carried over (md-paragraphs), visual needed",
+       "science: carried over" in out and "pedagogy: carried over" in out and "visual: texts cut into paragraphs or lists: delta review needed" in out
+       and "md-paragraphs" in (U / "review/carry.tsv").read_text() and "reflow" not in (U / "review/carry.tsv").read_text(), out)
+ureport("visual"); git(t, "add", "."); git(t, "commit", "-qm", "paragraphs carried, visual passed")
+code, out = run(t, "reviews.py", "verify")
+expect("... verify re-derives the unit's md-paragraphs carry", not re.search(rf"ERROR \S*{UNIT}", out), out[-600:])
+git(t, "checkout", "-q", "HEAD~1", "--", "content")
+out = usplit(",\n\n- joten nopeus\n- on melko pieni.")
+expect("... but a changed word with the paragraph breaks carries nothing", "science: carried over" not in out and "review needed" in out, out)
 
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))

@@ -36,7 +36,9 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 106\,\text{dB} - 23\,\text{dB} = 83\,\text{dB}$
 **Vastaus:** $83\,\text{dB}$, kokonaisina desibeleinä kuten lähtötiedot.
-**Järkevyys:** Toiminta-arvoihin verrataan altistusta ilman suojaimia. Taso $106\,\text{dB}$ ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva $83\,\text{dB}$ jää altistuksen raja-arvon $87\,\text{dB(A)}$ alle. Koska $83\,\text{dB}$ on alle $85\,\text{dB}$, vertailuannos ei täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan. Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
+**Järkevyys:** Toiminta-arvoihin verrataan altistusta ilman suojaimia. Taso $106\,\text{dB}$ ylittää kummankin toiminta-arvon, joten suojaimia on käytettävä. Korvalle tuleva $83\,\text{dB}$ jää altistuksen raja-arvon $87\,\text{dB(A)}$ alle. Koska $83\,\text{dB}$ on alle $85\,\text{dB}$, vertailuannos ei täyty työpäivän aikana, jos suojaimet ovat hyvin paikallaan ja niitä pidetään koko ajan.
+
+Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman suojaimia vertailuaika olisi noin $4\,\text{min}$.
 
 ## fy5-16-L1-05
 **Kysytty:** kuuluuko kukin keino lähteeseen, kulkutiehen vai korvaan
@@ -94,7 +96,9 @@ $85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
 
 $79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
 
-Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi viimeisen välin pienempikään lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$. Epävarmuuden vuoksi todellinen taso voi kuitenkin olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä. Toiminta-arvo ei myöskään ole turvallisuusraja. Mittaus ei siis osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
+Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi viimeisen välin pienempikään lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$.
+
+Epävarmuuden vuoksi todellinen taso voi kuitenkin olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä. Toiminta-arvo ei myöskään ole turvallisuusraja. Mittaus ei siis osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
 
 ## fy5-16-L3-01
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
@@ -119,7 +123,9 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 ## fy5-16-L3-03
 **Kysytty:** miksi vastamelu vaimentaa matalaa huminaa paremmin kuin puhetta
 **Periaate:** Vastamelu kumoaa melun heikentävällä interferenssillä vain, jos se on korvan kohdalla vastakkaisessa vaiheessa. Aallonpituus $\lambda = \dfrac{v}{f}$ ja jaksonaika $T = \dfrac{1}{f}$ kertovat, kuinka tarkasti ajoituksen ja paikan on osuttava.
-**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna. Elektroniikalla on aikaa muodostaa vastakkainen signaali. Vastamelu pysyy siis korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$. Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon. Silloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, mutta humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
+**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna. Elektroniikalla on aikaa muodostaa vastakkainen signaali. Vastamelu pysyy siis korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$.
+
+Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon. Silloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, mutta humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
 
 ## fy5-16-L1-06
 **Kysytty:** mikä toimenpide lyhentää luokan jälkikaiunta-aikaa
@@ -145,7 +151,7 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin. Levyjen jälkeen se laskee $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin. Aika on $\Delta t = 0{,}40\,\text{s}$. Lasku on tasainen.
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla. Sitten verrataan aikoja.
-**Taulukon lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$. Levyjen jälkeen pudotus on $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
+**Taulukon lukeminen:** Pudotus ennen levyjä on $$\begin{aligned} \Delta L_1 &= 90{,}3\,\text{dB} - 74{,}4\,\text{dB} \\ &= 15{,}9\,\text{dB} \end{aligned}$$. Levyjen jälkeen pudotus on $$\begin{aligned} \Delta L_2 &= 90{,}2\,\text{dB} - 50{,}1\,\text{dB} \\ &= 40{,}1\,\text{dB} \end{aligned}$$.
 **Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
@@ -216,7 +222,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1{,}755 \\
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
-Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $$\begin{aligned} D &= 0{,}198 + 1{,}0 + 0{,}375 \\ &= 1{,}57 \end{aligned}$$.
 **Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Kotelo ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$. Toinen keino on sijoittaa höyläyskone erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon. Annoksen täytyy siis olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 
@@ -310,4 +316,6 @@ Aineiston kolme viitearvoa mahtuvat $7\,\text{dB}$:n sisään. Silti ne erottava
 
 Väite kuulostaa uskottavalta, koska $3\,\text{dB}$:n muutos kuulostaa korvaan pieneltä. Kuulon rasitus riippuu kuitenkin energiasta. Se ei riipu siitä, miltä ääni kuulostaa.
 
-**Järkevyys:** Luvun nyrkkisääntö antaa saman tuloksen. $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti: $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo. Se ei ole turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin. Malli ei myöskään kata iskumelua eli hyvin lyhyitä ja voimakkaita ääniä. Aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen. Tarkempi tulos ei siis olisi perusteltu.
+**Järkevyys:** Luvun nyrkkisääntö antaa saman tuloksen. $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti: $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo. Se ei ole turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin.
+
+Malli ei myöskään kata iskumelua eli hyvin lyhyitä ja voimakkaita ääniä. Aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen. Tarkempi tulos ei siis olisi perusteltu.

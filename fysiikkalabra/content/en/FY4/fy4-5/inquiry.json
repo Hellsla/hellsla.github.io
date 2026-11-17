@@ -22,23 +22,23 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: a sliding puck",
+      "title": "Review: a sliding sledge",
       "optional": true,
       "fbd": "identify",
-      "prompt": "An ice hockey puck has been hit, and it is now sliding alone on the ice toward the goal. Which forces act on the puck during the slide, when air drag is ignored?",
+      "prompt": "A child lets go of the rope, and the sledge slides on by itself for a moment on level ice. Which forces act on the sledge while it slides, when air resistance is neglected?",
       "choices": [
         {
-          "text": "The weight, the normal force from the ice and a small friction force from the ice.",
+          "text": "Its weight, the normal force of the ice and a small friction force from the ice.",
           "correct": true,
-          "feedback": "Correct. Only objects that touch the puck or pull on it act on it: the Earth and the ice. The stick is no longer touching the puck, so its force ended when the hit ended. In the chapter *Interaction and force: Newton's first and third laws* you learn that motion continues without a force pulling forward."
+          "feedback": "Correct. Only the bodies that touch the sledge or pull on it act on it: the Earth and the ice. The child no longer pulls the rope, so the rope's force ended when the child let go. In the chapter *Interaction and force: Newton's first and third laws* you learned that motion continues without a force pulling it forwards."
         },
         {
-          "text": "The weight, the normal force from the ice, friction and a forward force from the hit.",
-          "feedback": "The force of the hit acted only while the stick was touching the puck. No object acts forward on the sliding puck. The puck moves because it has a velocity, not because something pushes it."
+          "text": "Its weight, the normal force of the ice, friction and a forward force of the rope.",
+          "feedback": "The rope's force acted only while the child pulled the rope. No body acts forwards on the sliding sledge. The sledge moves because it has a velocity, not because something pulls it."
         },
         {
-          "text": "Only the weight and a forward force, because the ice does not act on a sliding puck.",
-          "feedback": "The puck does not sink through the ice, so the ice supports it: the normal force is as large as the weight. There is no forward force, because no object pushes the puck during the slide."
+          "text": "Only its weight and a forward force, because the ice does not act on a sliding sledge.",
+          "feedback": "The sledge does not sink through the ice, so the ice supports it: on level ice the normal force equals the weight. There is no forward force, because no body pulls or pushes the sledge while it slides."
         }
       ]
     },

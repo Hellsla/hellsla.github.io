@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: b9d83d98e4369409
-
+CONTENT-HASH: 7f39f4ee4541f539
 ## Blocking
-None. Re-review: Tiivistelmä now uses a_k, a = a_k, matching the formula section.
 
 ## Polish
-None.
 
 ## Checked
-Diff of the Tiivistelmä fix; chapter symbols consistent in fi, fi-easy, en.
+batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.

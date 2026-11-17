@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a138b3319b58764e
+CONTENT-HASH: 6b7870fb5fa8ff3c
+ROUND: 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-16-L2-10 c) — the part packs five sentences/questions; a short sub-list (i, ii, iii) would help S2 readers.
+(none) The delta only splits long solution paragraphs into shorter ones; the words, formulas and units are unchanged, and the split points fall at natural boundaries.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-16.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- New task fy5-16-L2-10 and its solution read and rendered.
+- Delta (solutions.md only: paragraph splits). Captures opened in content/fi-easy/FY5/fy5-16/review/shots/: fy5-16-open-exercises-L3-1280-7 (Sijoitus, Vastaus, Järkevyys block).
+- Paragraphs now read as separate blocks with normal spacing, display chains stay on one row with thin-spaced units and decimal comma, nothing clipped, no overflow, no KaTeX error visible.
+- Not every changed paragraph was opened individually; they use the same shared solution component, so the sampled captures stand for them.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

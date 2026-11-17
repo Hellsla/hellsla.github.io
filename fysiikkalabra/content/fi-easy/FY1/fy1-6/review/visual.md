@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6398da0834f9b0e0
+CONTENT-HASH: 690a34729e9b22e0
 
 ## Blocking
 - none
@@ -8,7 +8,4 @@ CONTENT-HASH: 6398da0834f9b0e0
 - none
 
 ## Checked
-- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-02, 07, solutions 03-06); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.

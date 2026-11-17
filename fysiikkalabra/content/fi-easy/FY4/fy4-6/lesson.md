@@ -411,7 +411,9 @@ Muuttolaatikon massa on $18\,\text{kg}$. Laatikko liukuu lastaussiltaa alas. Sil
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 18\,\text{kg}$, $\alpha = 25^\circ$, $\mu = 0{,}30$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kiihtyvyyttä $a$ ja kitkavoimaa $F_\mu$.
+**Tunnetut ja kysytty.** $m = 18\,\text{kg}$, $\alpha = 25^\circ$, $\mu = 0{,}30$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kiihtyvyyttä $a$ ja kitkavoimaa $F_\mu$.
 
 <!-- vaihe -->
 

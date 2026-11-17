@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d25467943c300cb9
+CONTENT-HASH: 0eb7af3ccdb98b57
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L2-10 one solution paragraph of 123 words; split when convenient.
-- [Minor] L2-05/L2-06 data tables scroll at 360 px (existing).
+- [Minor] fy5-16 L2 solution with "and shortening = fraction" — an inline display-sized fraction in running text sits slightly loose in the line — acceptable; optionally lift it into the formula row.
 
 ## Checked
-- Round 2: re-rendered preview/en/fy5-16.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-10 Given and Reasonableness) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
+- Own reading of review/shots in content/en/FY5/fy5-16/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

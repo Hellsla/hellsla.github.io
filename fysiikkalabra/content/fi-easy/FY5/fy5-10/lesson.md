@@ -365,7 +365,9 @@ Pitkä naru on vedetty kireälle pihan poikki. Narun päätä heilautetaan kerra
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Pulssin kulkema matka on $s = 6{,}0\,\text{m}$ ja siihen kulunut aika on $t = 2{,}5\,\text{s}$. Jaksollisen aallon taajuus on $f = 3{,}0\,\text{Hz}$. Kysytään aallonpituutta $\lambda$.
+**Tunnetut ja kysytty.** Pulssin kulkema matka on $s = 6{,}0\,\text{m}$ ja siihen kulunut aika on $t = 2{,}5\,\text{s}$. Jaksollisen aallon taajuus on $f = 3{,}0\,\text{Hz}$.
+
+Kysytään aallonpituutta $\lambda$.
 
 <!-- vaihe -->
 

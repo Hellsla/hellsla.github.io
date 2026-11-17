@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7cc36b31da39ce67
+CONTENT-HASH: 85c0512b54a20440
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-6-L2-09 Kuvaajan lukeminen table at 360 px: unit header "a³ ((10⁸ km)³)" still touches the value ("…)0,194"); add a thin space.
-- [Minor] fy5-6-L2-09 Sijoitus at 1280 px: the first row breaks before "·" and the next "=" lands on the fraction's line, so the chain reads cramped; 360 px is clean. Break after "365,2 d" explicitly.
-- [Minor] fy5-6-L2-09 Vastaus: "0,2 %:n" reads clumsily; "noin 0,2 prosentin tarkkuudella".
+(none)
 
 ## Checked
-- Own 360 px (6 tiles) and 1280 px render of fy5-6-L2-09 with solution open (preview ?ratkaisut=1#exercises, levels opened): task text now shows italic "Distance from Sun", "Orbital Period", "Moon", no asterisks; a)–d), Annettu table, Kaava, Muunnokset, Sijoitus, Vastaus box, kohta c) and d) now separate paragraphs, Järkevyys. Page width 360/1280, no overflow. Other changed solution lines (L1-11 chip, sig-fig sentences, kN) are text-only and read well.
+- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
+- Captures: fy5-6-open-exercises-1280-7 (L1-06, centrifugal-force paragraph), fy5-6-open-exercises-L3-1280-5 (L3-04, planet table task and its solution start).
+- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
+- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

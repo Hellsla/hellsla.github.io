@@ -88,7 +88,7 @@
 **Muunnokset:** Kuvaajan arvot ovat newtoneina ja metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0064\,\text{m}^2 = 0{,}192\,\text{J}$
 **Vastaus:** $0{,}19\,\text{J}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska kuvaajasta arvot voi lukea kahden numeron tarkkuudella.
-**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
+**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $$\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
 
 ## fy5-8-L3-01
 **Annettu:** matkustajien massa $\Delta m = 300\,\text{kg}$, jousten lisäpuristuma $\Delta x = 3{,}0\,\text{cm}$, neljä samanlaista jousta; $g = 9{,}81\,\text{m/s}^2$
@@ -138,7 +138,9 @@ akselit 0
 ## fy5-8-L1-07
 **Kysytty:** miten jousen potentiaalienergia muuttuu, kun venymä kaksinkertaistetaan.
 **Periaate:** Jousen potentiaalienergia on $(x, F_\text{v})$-kuvaajan kolmion pinta-ala: $E_\text{p} = \tfrac{1}{2}kx^2$. Kaavassa venymä on toisessa potenssissa. Siksi energia on verrannollinen venymän neliöön.
-**Mallivastaus:** Energia nelinkertaistuu, koska se on verrannollinen venymän toiseen potenssiin: $\tfrac{1}{2}k(2x)^2 = 4\cdot\tfrac{1}{2}kx^2$. Kuvaajassa kolmion kanta ja korkeus kaksinkertaistuvat. Siksi sen pinta-ala kasvaa nelinkertaiseksi. Voima kaksinkertaistuu, mutta jousta venytetään myös kaksi kertaa pidemmälle. Siksi energia kasvaa enemmän kuin voima. Energia ei pysy samana, koska kaava riippuu venymästä. Se ei myöskään kasva vain neliöjuuren verran, koska venymä on potenssissa kaksi eikä puoli.
+**Mallivastaus:** Energia nelinkertaistuu, koska se on verrannollinen venymän toiseen potenssiin: $\tfrac{1}{2}k(2x)^2 = 4\cdot\tfrac{1}{2}kx^2$. Kuvaajassa kolmion kanta ja korkeus kaksinkertaistuvat. Siksi sen pinta-ala kasvaa nelinkertaiseksi. Voima kaksinkertaistuu, mutta jousta venytetään myös kaksi kertaa pidemmälle.
+
+Siksi energia kasvaa enemmän kuin voima. Energia ei pysy samana, koska kaava riippuu venymästä. Se ei myöskään kasva vain neliöjuuren verran, koska venymä on potenssissa kaksi eikä puoli.
 
 ## fy5-8-L1-08
 **Annettu:** kuvaajan jousen B suora (katkoviiva), $F_\text{v}$ venymän $x$ funktiona
@@ -158,11 +160,15 @@ k_\text{B} = \dfrac{1{,}0\,\text{N}}{0{,}04\,\text{m}} = 25\,\text{N/m}
 **Annettu:** punnusten massat $m = 100\,\text{g} \ldots 500\,\text{g}$ ja venymät $x = 4{,}1\,\text{cm} \ldots 22{,}0\,\text{cm}$ taulukosta; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) lineaarisen alueen mittauspisteet, b) jousivakio $k$ yksikössä $\text{N/m}$
 **Periaate:** Levossa riippuva punnus vetää jousta voimalla $F_\text{v} = mg$. Kun jousi noudattaa harmonista voimaa, $(x, F_\text{v})$-pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on jousivakio. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksessa on epävarmuutta. Siksi kulmakerroin luetaan sovitetusta suorasta, ei kahdesta mittauspisteestä.
-**Kuvaajan lukeminen:** Voimat ovat $F_\text{v} = 0{,}98\,\text{N};\ 1{,}96\,\text{N};\ 2{,}94\,\text{N};\ 3{,}92\,\text{N};\ 4{,}91\,\text{N}$. Osamäärä $\tfrac{F_\text{v}}{x}$ on neljässä ensimmäisessä pisteessä noin $24\,\text{N/m}$ ($23{,}9\ldots 24{,}8\,\text{N/m}$). Pisteessä $500\,\text{g}$ se on vain
+**Kuvaajan lukeminen:** Voimat ovat $F_\text{v} = 0{,}98\,\text{N};\ 1{,}96\,\text{N};\ 2{,}94\,\text{N};\ 3{,}92\,\text{N};\ 4{,}91\,\text{N}$.
+
+Osamäärä $\tfrac{F_\text{v}}{x}$ on neljässä ensimmäisessä pisteessä noin $24\,\text{N/m}$ ($23{,}9\ldots 24{,}8\,\text{N/m}$). Pisteessä $500\,\text{g}$ se on vain
 ```latex
 \dfrac{4{,}91\,\text{N}}{0{,}220\,\text{m}} = 22{,}3\,\text{N/m}
 ```
-Piste jää suoran alapuolelle, koska jousta on venytetty yli lineaarisen alueen. Piste jätetään pois sovituksesta, mutta sitä ei poisteta mittauksesta. Neljään ensimmäiseen pisteeseen sovitettu suora, joka kulkee origon kautta, antaa kulmakertoimen $24{,}4\,\text{N/m}$. Sovituksen voi tehdä käsin tai laskimella. Suora kulkee esimerkiksi pisteiden $(0{,}050\,\text{m};\ 1{,}22\,\text{N})$ ja $(0{,}100\,\text{m};\ 2{,}44\,\text{N})$ kautta.
+Piste jää suoran alapuolelle, koska jousta on venytetty yli lineaarisen alueen. Piste jätetään pois sovituksesta, mutta sitä ei poisteta mittauksesta.
+
+Neljään ensimmäiseen pisteeseen sovitettu suora, joka kulkee origon kautta, antaa kulmakertoimen $24{,}4\,\text{N/m}$. Sovituksen voi tehdä käsin tai laskimella. Suora kulkee esimerkiksi pisteiden $(0{,}050\,\text{m};\ 1{,}22\,\text{N})$ ja $(0{,}100\,\text{m};\ 2{,}44\,\text{N})$ kautta.
 **Kaava:** $k = \dfrac{\Delta F_\text{v}}{\Delta x}$
 **Muunnokset:** $F_\text{v} = mg$, esimerkiksi $300\,\text{g} = 0{,}300\,\text{kg}$. Venymä $x = 12{,}1\,\text{cm} = 0{,}121\,\text{m}$.
 **Sijoitus:** $k = \dfrac{2{,}44\,\text{N} - 1{,}22\,\text{N}}{0{,}100\,\text{m} - 0{,}050\,\text{m}} = \dfrac{1{,}22\,\text{N}}{0{,}050\,\text{m}} = 24{,}4\,\text{N/m}$
@@ -276,4 +282,6 @@ $k = \dfrac{2{,}50\,\text{N}}{0{,}100\,\text{m}}$
 
 $k = 25\,\text{N/m}$
 
-Perusteltu johtopäätös on siis, että jousivakio on noin $25\,\text{N/m}$. Syy on se, että jokaisen rivin suhde poikkeaa siitä vähemmän kuin mittausepävarmuus sallii. Jousivakio ei kasva venymän mukana: voima kasvaa selvästi enemmän kuin lukeman epävarmuus, mutta suhde pysyy samana. Venymän $4{,}0\,\text{cm}$ kohdalla suhde on suurin. Sen eroa $0{,}5\,\text{N/m}$ pitää verrata suhteen epävarmuuteen $1{,}3\,\text{N/m}$, ei voiman epävarmuuteen $0{,}05\,\text{N}$. Ero mahtuu epävarmuuteen, joten aineisto ei osoita jousen olevan siinä jäykempi. Arvo $0{,}25$ on kulmakerroin yksikössä $\text{N/cm}$, ei $\text{N/m}$.
+Perusteltu johtopäätös on siis, että jousivakio on noin $25\,\text{N/m}$. Syy on se, että jokaisen rivin suhde poikkeaa siitä vähemmän kuin mittausepävarmuus sallii. Jousivakio ei kasva venymän mukana: voima kasvaa selvästi enemmän kuin lukeman epävarmuus, mutta suhde pysyy samana.
+
+Venymän $4{,}0\,\text{cm}$ kohdalla suhde on suurin. Sen eroa $0{,}5\,\text{N/m}$ pitää verrata suhteen epävarmuuteen $1{,}3\,\text{N/m}$, ei voiman epävarmuuteen $0{,}05\,\text{N}$. Ero mahtuu epävarmuuteen, joten aineisto ei osoita jousen olevan siinä jäykempi. Arvo $0{,}25$ on kulmakerroin yksikössä $\text{N/cm}$, ei $\text{N/m}$.

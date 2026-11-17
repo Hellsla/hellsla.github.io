@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1779ad3ba492da52
-Mode: delta (new task fy5-2-L2-08), Round: 1
+CONTENT-HASH: 4ddeaf5f378a5465
+ROUND: 1
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- None.
 
 ## Checked
-- Own 390 px render of preview/fi-easy/fy5-2.html after the page scripts ran, task fy5-2-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, no figure or table in the task, choice feedback, full worked solution; units, decimal marks and case endings render correctly.
-- Task text and solution read as Selkeä suomi; language matches the reviewed Finnish set.
+- Delta (md-paragraphs): solutions.md only, paragraph splits. Opened open-exercises-1280-1 (2-1 split), 1280-6 (2-6 split), L3-1280-3.
+- Layout survived at 1280 px with all solutions open: each split paragraph is its own block inside the solution panel, labels (Annettu, Periaate, Vastaus) and calculation rows unchanged, no clipping or overlap, units upright with thin space, decimal comma consistent.
+- Wording unchanged by the splits; each paragraph holds one idea.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

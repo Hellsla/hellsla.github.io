@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d53a1ac4e99ef2e0
+CONTENT-HASH: 24081e95536aebac
 
 ## Blocking
-(none; the round 1 Major is resolved: the Rivi 3 feedback is now two short formulas plus the sum, all fully visible at 390 px, no scroll box left)
+(none)
 
 ## Polish
-- [Minor] fy5-2-L2-08 — options appear in order Rivi 4, 2, 1, 3, so the row-by-row check is read out of order; fixed order (Rivi 1-4, then "Laskussa ei ole virhettä") would read better if the shuffle allows.
+- [Minor] solutions.md, ladder Periaate (about line 215) — now four short paragraphs, one a single sentence ("Seinä on sileä…"); slightly choppy, optional.
 
 ## Checked
-- Round 2 delta, rebuilt with build.py fy5-2, rendered at 390 px after the page scripts ran: all five choices with feedback, and the solution open. Document scrollWidth 390; no clipped element and no .kx-wide scroll box in any state.
-- Rivi 3 feedback: "160 N·1,5 m = 240 Nm ja 40 N·1,0 m = 40 Nm, yhteensä 280 Nm" wraps over three lines, every value readable. Rivi 4 feedback (purkin paino jätetään summasta pois) reads fluently, quantities in LaTeX, and does not give away the correct row.
+- Own captures (390 and 1280 px, details opened): w2-390-4.png (Vastaus a/b split), w2-390-6.png (ladder Periaate split), w2-1280-0.png (rod Periaate).
+- Paragraph spacing consistent, Vastaus stays set apart, maths unchanged; "b)" starting its own paragraph is clearer.
+- scrollWidth 390 and 1280.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -329,7 +329,11 @@ A solid iron beam is $1.20\,\text{m}$ long, and its cross-section is a square wi
 
 <!-- vaihe -->
 
-**Given and find.** The length is $L = 1.20\,\text{m}$ and the side of the cross-section is $a = 4.0\,\text{cm}$. From the table, the density of iron is $\rho = 7870\,\text{kg/m}^3$. We are asked for the mass $m$ of the beam.
+**Given and find.** The length is $L = 1.20\,\text{m}$ and the side of the cross-section is $a = 4.0\,\text{cm}$.
+
+From the table, the density of iron is $\rho = 7870\,\text{kg/m}^3$.
+
+We are asked for the mass $m$ of the beam.
 
 <!-- vaihe -->
 

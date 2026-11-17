@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7ae124fdf02b5df7
+CONTENT-HASH: e9dac3fa96d21dfd
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-4 L2-07 — "vaatisi kitkan, joka … ja se vaatisi jo erittäin hyvän pidon" repeats "vaatisi"; e.g. "ja se edellyttäisi jo erittäin hyvää pitoa".
-- [Minor] fy5-4 L3-05 — "antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" echoes the previous clause word for word; "kitkan ei tarvitse tuottaa koko voimaa yksin" reads lighter. Optional.
+(none)
 
 ## Checked
-- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); changed Järkevyys and Mallivastaus sentences read correctly.
-- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
-- Judged the language and typography of the changed sentences only.
+- Own capture w4-390-1.png (Kuvaajan lukeminen, to its start at 390 px): KaTeX renders, nothing clipped.
+- Second half of that block, Mallivastaus (line 167) and Järkevyys (line 281) not opened as captures; judged from the diff and the same card layout seen in the other sets.
+- scrollWidth 390 and 1280.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

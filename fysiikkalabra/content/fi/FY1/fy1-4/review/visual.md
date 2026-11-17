@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c09b0e392c0c5fd6
+CONTENT-HASH: 6c0403aa3ed115df
 
 ## Blocking
 - none
@@ -8,7 +8,4 @@ CONTENT-HASH: c09b0e392c0c5fd6
 - none
 
 ## Checked
-delta 5d reflow, round 1: opened contact sheet of all fi/fy1-4 captures at 360 px (captures 01,02); no clipping, equals signs aligned, rows break outside numbers and units.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+- Opened fy1-4-example-390-1 and -3 (stage 1 new Kysytään paragraph, stage 7); paragraphs read cleanly, nothing clipped.

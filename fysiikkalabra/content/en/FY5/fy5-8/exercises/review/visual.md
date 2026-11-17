@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2394483ffa588457
+CONTENT-HASH: c20e086d07c18edd
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-8 Answer — "vibration and sound, and finally the internal energy … (which is transferred …)" is long; split after "sound". Also figures.json adds an English alt text for the model diagram: reads fine, not re-inspected visually.
+- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
+- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
 
 ## Checked
-- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); Answer row wraps cleanly with the parenthesis; the new alt-text translation was read as text.
-- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
-- Judged the language and typography of the changed sentences only.
+- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-8/review/shots/ (current for this hash): exercises 1280 parts L2-8 (spring constant answer), L3-5 (rubber band), L3-9 (crossbow reasonableness).
+- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
+- Hash re-run at the end: c20e086d07c18edd (unchanged).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

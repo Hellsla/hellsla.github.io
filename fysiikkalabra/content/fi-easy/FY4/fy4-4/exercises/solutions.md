@@ -173,7 +173,9 @@ a vasen
 ## fy4-4-L1-06
 **Kysytty:** mihin suuntaan hissiin vaikuttava kokonaisvoima $\Sigma\overline{F}$ osoittaa, kun hissi nousee ja hidastuu
 **Periaate:** Newtonin toisen lain mukaan $\Sigma\overline{F} = m\overline{a}$. Kokonaisvoima osoittaa siis aina kiihtyvyyden suuntaan. Kiihtyvyyden suunta on nopeuden muutoksen suunta: kun nopeus pienenee, kiihtyvyys osoittaa nopeutta vastaan.
-**Mallivastaus:** Oikea väite on se, jonka mukaan kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas. Hissi liikkuu yhä ylöspäin, mutta sen nopeus pienenee. Siksi kiihtyvyys ja kokonaisvoima osoittavat alas. Köyden voima on silloin pienempi kuin paino. Väite, jonka mukaan nopeuden suunta ratkaisee kokonaisvoiman suunnan, sekoittaa nopeuden ja kiihtyvyyden. Väite nollasta kokonaisvoimasta pätisi vain tasaisessa nousussa. Väite, jonka mukaan köyden voima on aina painoa suurempi, pätee vain nousun alussa.
+**Mallivastaus:** Oikea väite on se, jonka mukaan kokonaisvoima osoittaa alas, koska nopeus pienenee ja kiihtyvyys osoittaa alas. Hissi liikkuu yhä ylöspäin, mutta sen nopeus pienenee. Siksi kiihtyvyys ja kokonaisvoima osoittavat alas. Köyden voima on silloin pienempi kuin paino. Väite, jonka mukaan nopeuden suunta ratkaisee kokonaisvoiman suunnan, sekoittaa nopeuden ja kiihtyvyyden.
+
+Väite nollasta kokonaisvoimasta pätisi vain tasaisessa nousussa. Väite, jonka mukaan köyden voima on aina painoa suurempi, pätee vain nousun alussa.
 
 ## fy4-4-L1-07
 **Annettu:** $m = 170\,\text{g}$, $a = 400\,\text{m/s}^2$

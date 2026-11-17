@@ -518,7 +518,9 @@ Tennispallo, jonka massa on $58\,\text{g}$, lentää vaakasuoraan nopeudella $25
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 58\,\text{g}$, tulonopeus $25\,\text{m/s}$, lähtönopeus $35\,\text{m/s}$ vastakkaiseen suuntaan ja kosketusaika $\Delta t = 4{,}0\,\text{ms}$. Kysytään mailan keskimääräistä voimaa $F_\text{ka}$.
+**Tunnetut ja kysytty.** $m = 58\,\text{g}$, tulonopeus $25\,\text{m/s}$, lähtönopeus $35\,\text{m/s}$ vastakkaiseen suuntaan ja kosketusaika $\Delta t = 4{,}0\,\text{ms}$.
+
+Kysytään mailan keskimääräistä voimaa $F_\text{ka}$.
 
 <!-- vaihe -->
 

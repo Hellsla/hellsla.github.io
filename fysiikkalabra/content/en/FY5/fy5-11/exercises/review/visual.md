@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3401498419e442f3
-SCOPE: delta added-exercise from b75218b13b7a7480 base 81db4a6fd727
+CONTENT-HASH: f881637ba53c5cef
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-11 — in the L2-10 task the wall is two small grey stubs labelled seinä; legible, but a stub is easy to read as a box (optional).
-- [Minor] fy5-11 — English figure labels (wall, direction of the waves, 1 square = ..., decimal point) match the solutions' wording; the figure descriptions in the figure catalogue are Finnish, so the English alt text should be confirmed (for the page, not a finding).
+- [Minor] 11-11 Formula row: the comma after `d_1 = vt_1/2` stands alone before the next display row; put d_1 and d_2 in the same aligned block or drop the comma.
 
 ## Checked
-- Delta of the two or three added exercises (en): 1280 px open-exercises L2 parts 11, 12, 13 (L2-09 and L2-10 with the ripple-tank grid figure, solutions open).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal point consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
+- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-11 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
+- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e29d9c5cb47aab9c
+CONTENT-HASH: 2676fb8058596a48
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: rewritten Vastaus of the ultrasound task (answer 3,1 cm, reading accuracy $5\,\mu\text{s}$ / $1\,\mu\text{s}$ in LaTeX, glued case endings), no wrap at 390; captures fy5-17-fi-390-sol.png, -1280-sol.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.

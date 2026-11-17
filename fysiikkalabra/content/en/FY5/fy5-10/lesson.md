@@ -365,11 +365,15 @@ A long rope is stretched taut across a yard. When the end of the rope is flicked
 
 <!-- vaihe -->
 
-**Given and find.** The distance travelled by the pulse is $s = 6.0\,\text{m}$ and the time taken is $t = 2.5\,\text{s}$; the frequency of the periodic wave is $f = 3.0\,\text{Hz}$. We are asked for the wavelength $\lambda$.
+**Given and find.** The distance travelled by the pulse is $s = 6.0\,\text{m}$ and the time taken is $t = 2.5\,\text{s}$; the frequency of the periodic wave is $f = 3.0\,\text{Hz}$.
+
+We are asked for the wavelength $\lambda$.
 
 <!-- vaihe -->
 
-**Principle.** The speed of a wave depends on the properties of the medium, here the tension of the rope and its mass per unit length, not on whether a pulse or a periodic wave is made in the rope. So the periodic wave travels at the same speed $v$ as the pulse, and the pulse travels steadily, so $v = \tfrac{s}{t}$. The wavelength then follows from the fundamental equation $v = f\lambda$.
+**Principle.** The speed of a wave depends on the properties of the medium, here the tension of the rope and its mass per unit length, not on whether a pulse or a periodic wave is made in the rope.
+
+So the periodic wave travels at the same speed $v$ as the pulse, and the pulse travels steadily, so $v = \tfrac{s}{t}$. The wavelength then follows from the fundamental equation $v = f\lambda$.
 
 <!-- vaihe -->
 

@@ -621,7 +621,9 @@ Oppilaat tutkivat leluauton liikettä. Esikokeessa auton nopeus on noin $0{,}42\
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Nopeus $v = 0{,}42\,\text{m/s}$, ajan epävarmuus $\Delta t = 0{,}2\,\text{s}$ ja suurin sallittu suhteellinen epävarmuus $\varepsilon_\text{max} = 5{,}0\,\% = 0{,}050$. Kysytään lyhintä matkaa $s_\text{min}$.
+**Tunnetut ja kysytty.** Nopeus $v = 0{,}42\,\text{m/s}$, ajan epävarmuus $\Delta t = 0{,}2\,\text{s}$ ja suurin sallittu suhteellinen epävarmuus $\varepsilon_\text{max} = 5{,}0\,\% = 0{,}050$.
+
+Kysytään lyhintä matkaa $s_\text{min}$.
 
 <!-- vaihe -->
 

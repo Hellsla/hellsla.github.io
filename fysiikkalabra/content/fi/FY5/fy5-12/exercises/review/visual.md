@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 75cc6de28fa950e1
+CONTENT-HASH: e19a3af2ccfa376b
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-12-L2-10 Annettu still starts with a lowercase fragment "aineistosta (PhET-simulaatio …)"; a full sentence would match the other solutions.
+- [Minor] fy5-12-L1-03 Mallivastaus (capture 1280-3) — parts a)–d) run inline in one paragraph and a line ends with "b)" alone; unchanged by this diff — a list of four short rows would read better (optional, next edit of the task).
 
 ## Checked
-- Own 1280 px and 360 px render of fy5-12-L2-10 with solution open: new task text (c) "Kirjoita vastaukseen myös seuraava heikentävän interferenssin matkaero", the Kaava row with Δs_h2 = 3/2 λ, the Sijoitus rows (Δs_v, Δs_h, Δs_h2 aligned at =, 1,20 m), Vastaus with the "0,40 tai 0,4" sentence, kohta d) paragraph. No clipping.
+- Delta (solutions.md: nine solutions cut into paragraphs, words unchanged).
+- Opened fy5-12-open-exercises-1280-3 (12-3 Mallivastaus, the new break before "Matkaeron suuruus ei yksin ratkaise"), L2-1280-14 (kohta d) of the simulation task, now two paragraphs) and L3-1280-8 (12-25 b) Mallivastaus split before "Toinen kohta"): panels intact, formulas and units upright, no gaps or clipping.
+- The other breaks (L2-01, L2-05, L3-03 Periaate; L2-07 c) have the same structure and shared component.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

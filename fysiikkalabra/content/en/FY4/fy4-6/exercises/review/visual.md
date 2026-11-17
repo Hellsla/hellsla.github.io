@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5f154e60a7a79437
+CONTENT-HASH: 3dae5cfb83ff3d6b
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] exercises/solutions.md (tiles fy4-6 #4–#6, 390 px) — chains break inside the bracket (`(sin 30° / − 0,35 · cos 30°)`) with the continuation flush left under the relation — indent the continuation row with `\quad`.
-- [Minor] exercises/solutions.md, `F_max` row — restored inline as on main, still over-wide on a phone — keep on the clipped-formula list; break before the operator when redone.
+None.
 
 ## Checked
-- delta round 2: opened en-390-01, en-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.
+- Delta (md-paragraphs): opened shots/sol-fy4-6-L1-06-390.png in full and the closing parts (where the model-answer and reasonableness breaks sit; earlier parts of each tall capture not opened) of sol-fy4-6-L1-08, L2-05, L2-06, L2-07, L2-08, L3-01, L3-02, L3-03, L3-04 and L3-05 (-390.png, cropped to 1800 px parts). L1-06: the answer and each rejected claim get their own paragraph; L1-08 likewise; the Reasonableness paragraphs (L2-06, L3-01, L3-03, L3-05) split between the check and the follow-up remark. Spacing even, nothing clipped, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 5

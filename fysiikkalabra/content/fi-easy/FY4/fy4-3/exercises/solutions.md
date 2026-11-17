@@ -195,7 +195,9 @@ a 0
 ## fy4-3-L3-03
 **Annettu:** omenan paino $G_\text{o} = 1{,}5\,\text{N}$, alemman vaa'an paino $G_\text{v} = 0{,}40\,\text{N}$, kaikki on paikallaan
 **Kysytty:** ylemmän vaa'an lukema eli voima $F$, jolla alempi vaaka vetää ylemmän koukkua, yksikössä $\text{N}$
-**Periaate:** Omena on levossa, joten alemman vaa'an koukku vetää sitä ylös $1{,}5\,\text{N}$:n voimalla (ensimmäinen laki). Kolmannen lain mukaan omena vetää koukkua alas yhtä suurella voimalla. Alempi vaaka on levossa, joten ylemmän vaa'an koukun on vedettävä sitä ylös omenan voiman ja vaa'an oman painon verran. Kolmannen lain mukaan alempi vaaka vetää ylempää alas yhtä suurella voimalla. Tämän voiman ylempi vaaka näyttää.
+**Periaate:** Omena on levossa, joten alemman vaa'an koukku vetää sitä ylös $1{,}5\,\text{N}$:n voimalla (ensimmäinen laki). Kolmannen lain mukaan omena vetää koukkua alas yhtä suurella voimalla. Alempi vaaka on levossa, joten ylemmän vaa'an koukun on vedettävä sitä ylös omenan voiman ja vaa'an oman painon verran.
+
+Kolmannen lain mukaan alempi vaaka vetää ylempää alas yhtä suurella voimalla. Tämän voiman ylempi vaaka näyttää.
 **Voimakuvio:** Alempi vaaka piirretään suorakulmiona. Positiivinen suunta on ylös. Ylemmän vaa'an koukun voima $\overline{F}$ alkaa yläpinnasta ja osoittaa ylös. Paino $\overline{G}_\text{v}$ alkaa keskipisteestä ja osoittaa alas. Omenan voima $\overline{F}_\text{o}$ alkaa alapinnasta ja osoittaa alas.
 ```voimakuvio
 F 1,9 ylös
@@ -255,7 +257,9 @@ $s = 0{,}500\,\text{m/s}\cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$.
 ## fy4-3-L2-07
 **Kysytty:** mikä virhe oppilaan päättelyssä on.
 **Periaate:** Newtonin kolmannen lain voima ja vastavoima ovat yhtä suuret ja vastakkaissuuntaiset, mutta ne vaikuttavat eri kappaleisiin. Kappaleen liikkeen ratkaisee vain siihen itseensä vaikuttavien voimien summa.
-**Mallivastaus:** Oppilas ottaa huomioon kaksi voimaa, nyrkin voiman seinään ja seinän voiman nyrkkiin. Ne vaikuttavat kuitenkin eri kappaleisiin. Nyrkin voima seinään vaikuttaa seinään, joten se ei kumoa mitään nyrkkiin vaikuttavaa. Nyrkkiin vaikuttaa seinän voima, ja se on nyrkin liikettä vastaan. Siksi nyrkki hidastuu ja pysähtyy. Voimat ovat silti yhtä suuret, vaikka seinä ei liiku, ja ne syntyvät yhtä aikaa. Liikkeen ylläpitämiseen ei tarvita voimaa.
+**Mallivastaus:** Oppilas ottaa huomioon kaksi voimaa, nyrkin voiman seinään ja seinän voiman nyrkkiin. Ne vaikuttavat kuitenkin eri kappaleisiin. Nyrkin voima seinään vaikuttaa seinään, joten se ei kumoa mitään nyrkkiin vaikuttavaa. Nyrkkiin vaikuttaa seinän voima, ja se on nyrkin liikettä vastaan. Siksi nyrkki hidastuu ja pysähtyy.
+
+Voimat ovat silti yhtä suuret, vaikka seinä ei liiku, ja ne syntyvät yhtä aikaa. Liikkeen ylläpitämiseen ei tarvita voimaa.
 
 ## fy4-3-L3-04
 **Annettu:** kärryn vierimisvastus $F_\text{r} = 410\,\text{N}$, ilmanvastus kärryyn $F_\text{k} = 40\,\text{N}$, ilmanvastus hevoseen $F_\text{h} = 30\,\text{N}$, nopeus on vakio ja suoraan eteenpäin, esimerkkiaineisto
@@ -298,7 +302,11 @@ $F_\text{k} = \dfrac{10{,}2\,\text{N}}{3} = 3{,}40\,\text{N}$.
 ## fy4-3-L2-08
 **Kysytty:** kuinka suuri on henkilöauton voima kuorma-autoon $F_{\text{HK}}$ verrattuna kuorma-auton voimaan henkilöautoon $F_{\text{KH}}$ törmäyksen aikana, ja miksi. Merkinnöissä K on kuorma-auto ja H henkilöauto.
 **Periaate:** Voima kuvaa kahden kappaleen vuorovaikutusta. Törmäyksessä autot koskettavat toisiaan, joten kyse on yhdestä vuorovaikutuksesta. Sen kaksi voimaa vaikuttavat eri kappaleisiin. Newtonin kolmannen lain mukaan $\overline{F}_{\text{KH}} = -\overline{F}_{\text{HK}}$. Voimat ovat siis yhtä suuret ja vastakkaissuuntaiset autojen massoista riippumatta. Sillä ei ole väliä, kumpi auto liikkui.
-**Mallivastaus:** Voimat ovat yhtä suuret, $F_{\text{HK}} = F_{\text{KH}}$, koska ne ovat saman vuorovaikutuksen voima ja vastavoima. Kuorma-auto työntää henkilöautoa taaksepäin peruutuksen suuntaan. Henkilöauto työntää kuorma-autoa yhtä suurella voimalla vastakkaiseen suuntaan koko törmäyksen ajan. Massat $12\,\text{t}$ ja $1{,}2\,\text{t}$ eivät muuta tätä. Vastaus $F_{\text{HK}} = \tfrac{1}{10}\,F_{\text{KH}}$ pitää voimaa kappaleen ominaisuutena, joka kasvaa massan mukana. Vastaus $F_{\text{HK}} = 0$ olettaa, että vain liikkuva kappale voi työntää. Voima kuitenkin syntyy kosketuksesta, eikä se vaadi liikettä. Perustelu ”voimat kumoavat toisensa” on väärä, vaikka voimat ovatkin yhtä suuret. Voima $\overline{F}_{\text{KH}}$ vaikuttaa henkilöautoon ja voima $\overline{F}_{\text{HK}}$ kuorma-autoon. Eri kappaleisiin vaikuttavia voimia ei lasketa yhteen. Henkilöauton liikkeen muutoksen ratkaisevat vain henkilöautoon vaikuttavat voimat. Tarkistus: jos henkilöauton voima olisi pienempi, vuorovaikutuksella olisi kaksi eri suuruista puolta. Se on ristiriidassa kolmannen lain kanssa.
+**Mallivastaus:** Voimat ovat yhtä suuret, $F_{\text{HK}} = F_{\text{KH}}$, koska ne ovat saman vuorovaikutuksen voima ja vastavoima. Kuorma-auto työntää henkilöautoa taaksepäin peruutuksen suuntaan. Henkilöauto työntää kuorma-autoa yhtä suurella voimalla vastakkaiseen suuntaan koko törmäyksen ajan. Massat $12\,\text{t}$ ja $1{,}2\,\text{t}$ eivät muuta tätä. Vastaus $F_{\text{HK}} = \tfrac{1}{10}\,F_{\text{KH}}$ pitää voimaa kappaleen ominaisuutena, joka kasvaa massan mukana.
+
+Vastaus $F_{\text{HK}} = 0$ olettaa, että vain liikkuva kappale voi työntää. Voima kuitenkin syntyy kosketuksesta, eikä se vaadi liikettä. Perustelu ”voimat kumoavat toisensa” on väärä, vaikka voimat ovatkin yhtä suuret. Voima $\overline{F}_{\text{KH}}$ vaikuttaa henkilöautoon ja voima $\overline{F}_{\text{HK}}$ kuorma-autoon. Eri kappaleisiin vaikuttavia voimia ei lasketa yhteen.
+
+Henkilöauton liikkeen muutoksen ratkaisevat vain henkilöautoon vaikuttavat voimat. Tarkistus: jos henkilöauton voima olisi pienempi, vuorovaikutuksella olisi kaksi eri suuruista puolta. Se on ristiriidassa kolmannen lain kanssa.
 
 ## fy4-3-L1-09
 **Annettu:** kuvaajasta hetkellä $t = 0{,}10\,\text{s}$ kärryyn B kohdistuvan voiman lukema on noin $+4{,}0\,\text{N}$ ja kärryyn A kohdistuvan voiman lukema noin $-4{,}0\,\text{N}$

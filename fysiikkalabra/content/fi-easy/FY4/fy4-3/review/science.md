@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2f28bfa475b316df
-
-Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
+CONTENT-HASH: 684c7b9edf3e473d
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The question mixes kappale (option text) and kivi (prompt and other options); harmless.
 
 ## Checked
-- lesson.md:602 Tulos: 48 kN exact, so 96 kN = 2·48 kN exact, no rounding: follows the teacher's rule and matches fy4-1:475, fy4-4:602, fy4-5; earlier Blocking item resolved
-- lesson.md:606 Järkevyys: vector sum of thrust and air resistance zero at every constant velocity; air resistance grows with speed, so a greater speed needs a greater thrust: correct causality
-- 850 km/h correctly unused
+batch delta review: Curling-stone retrieval: the task states the (t,x) graph is a rising straight line over a few seconds, so constant velocity is the one correct reading; distractor feedback (curving graph for rising speed, horizontal line at rest) correct; figure and formula-name changes are teacher-approved.

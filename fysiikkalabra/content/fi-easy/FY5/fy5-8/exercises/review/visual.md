@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 332b2727d76ee4da
+CONTENT-HASH: 0cac72ac69c52cc1
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] fy5-8 Vastaus — "värähtelyyn ja ääneen ja lopulta … sisäenergiaan" has a double "ja" and "lopulta" before "pysähtyvät lopuksi"; e.g. "värähtelyyn ja ääneen sekä lopulta …". Also the known old clipping formulas are not part of this change.
 
 ## Checked
-- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); Vastaus row wraps cleanly; the figures.json change is an alt-text key identical to its value (not rendered text) and was not judged.
-- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
-- Judged the language and typography of the changed sentences only.
+- Delta: solutions.md only; the diff splits long Mallivastaus/Vastaus paragraphs into two, same words and order, no formula changed.
+- Opened lesson-folder capture fy5-8-open-exercises-L2-1280-3.png (neighbouring solution blocks) at 1280 px: split paragraphs render as separate blocks inside the solution card, spacing normal, no clipping, no gap, maths intact.
+- Hash matched the stamp of the captures (exercises 0cac72ac69c52cc1); run again at the end: 0cac72ac69c52cc1.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
