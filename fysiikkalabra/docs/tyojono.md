@@ -319,6 +319,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 
 ## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
 
+Varattu: claude/caption-label-ilman-sulkeita (jaettu luokka ja otsikot muilta kuin FY4, FY5 ja FY8).
+
 Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
 "…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
