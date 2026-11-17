@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4cb2f271025ee493
+CONTENT-HASH: a5c6089260b9a4af
 SCOPE: delta added-exercise from 75be1fcbd4cc4475 base 5b3ca4f81c77
 
 ## Blocking
@@ -9,8 +9,8 @@ SCOPE: delta added-exercise from 75be1fcbd4cc4475 base 5b3ca4f81c77
 - none
 
 ## Checked
-- en captures open-exercises-L2-1280-15 (L2-10 solution, changed Reasonableness block) and L3-1280-9 (L3-06 task with its figure, reworded sentence). Reworded sentence and the new Reasonableness block read fluently; maths set cleanly.
-- Shared figure fy8-13/vaimennus: axes, units, grid, curve and value ticks readable. Only L2-10 and L3-06 judged (delta); 360 px taken from the packet's checks, no 360 px capture opened.
+- en capture open-exercises-L2-1280-15 (L2-10, changed Järkevyys/Reasonableness block): units upright, $16\,\mu\text{Sv/h}$ and $15\,\mu\text{Sv/h}$ set cleanly, no clipping; the sentence on interpolation and the convex curve reads clearly in en.
+- No 360 px capture exists in the packet's inventory; 360 px taken from the passing layout check (short prose, no display maths). Rest of the set unchanged since the round-2 PASS.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
