@@ -41,6 +41,7 @@
 $$. Siksi $40$ puistoa tuottaa noin $385\,\text{GWh}$ vuodessa. Talvella siitä tulee taulukon mukaan vain $4\,\%$ eli noin $15\,\text{GWh}$. Se vastaa keskitehoa $\dfrac{15\,400\,\text{MWh}}{2160\,\text{h}} \approx 7\,\text{MW}$. Tammikuun illalla on pimeää, joten teho huipun aikaan on nolla. Aurinkosähkö tuotetaan pääosin kesällä. Silloin kulutus on pienimmillään.
 
 Tyynenä pakkasiltana tehoa voisivat tuottaa
+
 - *maakaasuvoimala* ($50\,\text{MW}$): tehoa voi nostaa nopeasti, mutta kaasu on tuontipolttoainetta. Päästökerroin on uusista vaihtoehdoista suurin.
 - *biomassavoimala* ($40\,\text{MW}$): tehoa voi säätää, mutta voimala käynnistyy hitaammin. Polttoainetta on kuljetettava ja varastoitava.
 - *vesivoimaosuus* ($20\,\text{MW}$): tehoa voi säätää nopeasti, mutta vuoden energia riippuu sateista. Siksi vettä ei voi käyttää rajattomasti.
@@ -92,6 +93,7 @@ Biomassan osuus energiasta on vain noin $11\,\%$.
 
 ### Hyväksytään myös
 Mikä tahansa tuotantotapa tai yhdistelmä saa täydet pisteet, kun nämä täyttyvät. Suositus kattaa vuoden energian. Suositus kattaa talven huipun tai arvioi puuttuvan tehon ja sen hoitamisen. Päästö on laskettu oikein. Rajoitukset on käsitelty. Vastaperuste ja oletukset on esitetty. Esimerkiksi:
+
 - *Pieni ydinvoimala.* Se tuottaa $$ \begin{aligned} &0{,}90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \\ &\approx 473\,\text{GWh} \end{aligned} $$ vuodessa. Se on enemmän kuin kaupunki tarvitsee. Koko kulutuksen päästö olisi vain $$ \begin{aligned} &12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \\ &\approx 4{,}6 \cdot 10^{3}\,\text{t} \end{aligned} $$. Perustelussa on käsiteltävä kolme asiaa. Voimalaa ei vielä ole saatavilla, ja rakentaminen kestää yli kymmenen vuotta (mitä kaupunki tekee sillä välin). Huipusta puuttuu $20\,\text{MW}$. Käytetty polttoaine on loppusijoitettava.
 - *Tuulivoima ja maakaasuvoimala varavoimana.* Kun kaasuvoimala käy vain tyynillä jaksoilla, päästö jää pieneksi. Perustelussa arvioidaan, kuinka suuri osa energiasta tuotetaan kaasulla. Sen päästö lasketaan.
 - *Kaksi biomassavoimalaa.* Ne kattavat huipun $80\,\text{MW}$. Ne kattavat vuoden energian käyttöasteella $\dfrac{380\,000\,\text{MWh}}{80\,\text{MW} \cdot 8760\,\text{h}} \approx 0{,}54$. Päästö $$ \begin{aligned} &230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \\ &\approx 8{,}7 \cdot 10^{4}\,\text{t} \end{aligned} $$ on noin $72\,\%$ pienempi kuin kivihiilellä. Perustelussa käsitellään hakkeen saatavuus, kuljetukset ja hiilen hidas sitoutuminen. Siinä todetaan myös, että kerroin $230\,\text{g/kWh}$ on laskennan oletus ja metsähakkeen todellinen kerroin voi olla toinen.
@@ -100,6 +102,7 @@ Mikä tahansa tuotantotapa tai yhdistelmä saa täydet pisteet, kun nämä täyt
 Pisteitä ei anneta valitusta tuotantotavasta. Pisteet annetaan siitä, miten valinta on perusteltu.
 
 ### Yleisiä virheitä
+
 - a-kohdassa energia lasketaan nimellisteholla ilman käyttöastetta: $$ 5{,}0\,\text{MW} \cdot 8760\,\text{h} = 43{,}8\,\text{GWh} $$. Silloin voimaloita näyttää tarvittavan vain $9$.
 - a-kohdassa $27{,}1$ pyöristetään alaspäin $27$:ään. Silloin sähköä jää puuttumaan.
 - b-kohdassa gigawattitunteja ei muunneta kilowattitunneiksi. Toinen virhe on, että grammat jäävät muuntamatta tonneiksi.
@@ -164,12 +167,14 @@ Kun vertailen tuotantotapoja, käytän elinkaaren päästöjä. Niissä kaikki t
 Toinen yhtä hyvä johtopäätös olisi esimerkiksi tämä. Lähteet eivät ole vertailukelpoisia. Syy on se, että lähde 2 ei kerro rajaustaan eikä vuottaan. Vastaukseen tarvitaan lähde, joka ilmoittaa elinkaaren päästön samalla rajauksella kuin lähde 1.
 
 ### Hyväksytään myös
+
 - Mikä tahansa energiantuotannon kysymys, johon vastataan luvulla. Lähteiksi käyvät mitkä tahansa kaksi julkaisua, joilla on eri julkaisija. Pisteet tulevat arvioinnista. Ne eivät tule lähteiden valinnasta.
 - Perusteltu johtopäätös, että lukuja ei voi verrata. Syy voi olla esimerkiksi se, että toinen luku koskee sähköä ja toinen kaikkea energiaa. Syy voi olla myös se, että aineistot ovat eri vuosikymmeniltä. Silloin d-kohdassa kerrotaan, millainen lähde tarvittaisiin vertailuun.
 - Johtopäätös, että lähteet ovat vertailukelpoisia ja tukevat toisiaan. Johtopäätös on perusteltu kohta kohdalta.
 - Eri johtopäätökset samoista lähteistä. Johtopäätökset on perusteltu lähteiden tiedoilla. Ne eivät väitä enempää kuin lähteet tukevat.
 
 ### Yleisiä virheitä
+
 - Lähteenä on hakukoneen tulossivu, tekoälyn vastaus tai sivuston etusivu, josta lukua ei löydy. Lähdemerkinnästä puuttuu julkaisija, vuosi tai lukupäivä.
 - Lähteillä on sama julkaisija. Esimerkiksi lähteet ovat saman yhtiön kaksi sivua. Toinen esimerkki on uutinen, joka vain toistaa toisen lähteen luvun.
 - Lähde hylätään vain julkaisijan takia, esimerkiksi koska se on yrityksen sivu. Sen luku voi kuitenkin pitää paikkansa omalla rajauksellaan.

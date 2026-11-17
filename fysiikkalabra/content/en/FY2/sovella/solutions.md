@@ -41,6 +41,7 @@
 $$, so $40$ parks produce about $385\,\text{GWh}$ per year. In winter, according to the table, only $4\,\%$ of that comes, about $15\,\text{GWh}$, which corresponds to an average power of $\dfrac{15\,400\,\text{MWh}}{2160\,\text{h}} \approx 7\,\text{MW}$. An evening in January is dark, so the power at the peak is zero. Solar electricity is mostly produced in summer, when consumption is at its lowest.
 
 On a calm, frosty evening power could be produced by
+
 - *a natural gas plant* ($50\,\text{MW}$): the power can be raised quickly, but gas is an imported fuel and its emission factor is the highest of the new alternatives
 - *a biomass plant* ($40\,\text{MW}$): controllable, but slower to start, and the fuel has to be transported and stored
 - *a share of hydropower* ($20\,\text{MW}$): the power can be adjusted quickly, but the energy of a year depends on rainfall, so the water cannot be used without limit
@@ -92,6 +93,7 @@ The share of biomass in the energy is only about $11\,\%$.
 
 ### Hyväksytään myös
 Any production method or combination receives full points when the recommendation covers the annual energy and either covers the winter peak or estimates the missing power and how it is handled, the emission has been calculated correctly, the limitations have been discussed, and a counterargument and assumptions have been presented. For example:
+
 - *A small nuclear plant.* It produces $$ \begin{aligned} &0.90 \cdot 60\,\text{MW} \cdot 8760\,\text{h} \\ &\approx 473\,\text{GWh} \end{aligned} $$ per year, which is more than the city needs, and the emission for the whole consumption would be only $$ \begin{aligned} &12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \\ &\approx 4.6 \cdot 10^{3}\,\text{t} \end{aligned} $$. The reasoning must discuss that the plant is not yet available and that construction takes more than ten years (what the city does in the meantime), that $20\,\text{MW}$ is missing from the peak, and that spent fuel must be disposed of permanently.
 - *Wind power with a natural gas plant as reserve power.* When the gas plant runs only during calm spells, the emission stays small. The reasoning estimates what share of the energy is produced with gas and calculates its emission.
 - *Two biomass plants.* They cover the peak of $80\,\text{MW}$ and the annual energy at a capacity factor of $\dfrac{380\,000\,\text{MWh}}{80\,\text{MW} \cdot 8760\,\text{h}} \approx 0.54$. The emission $$ \begin{aligned} &230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \\ &\approx 8.7 \cdot 10^{4}\,\text{t} \end{aligned} $$ is about $72\,\%$ lower than with coal. The reasoning discusses the availability of wood chips, transport and the slow binding of carbon, and that the factor $230\,\text{g/kWh}$ is an accounting assumption from which the real factor of forest wood chips can differ.
@@ -100,6 +102,7 @@ Any production method or combination receives full points when the recommendatio
 Points are given not for the production method chosen but for how the choice is justified.
 
 ### Yleisiä virheitä
+
 - In part a the energy is calculated with the rated power without the capacity factor: $$ 5.0\,\text{MW} \cdot 8760\,\text{h} = 43.8\,\text{GWh} $$, so it seems that only $9$ turbines are needed.
 - In part a $27.1$ is rounded down to $27$, so some electricity is left missing.
 - In part b gigawatt-hours are not converted to kilowatt-hours, or grams are not converted to tonnes.
@@ -166,12 +169,14 @@ When comparing production methods I use life-cycle emissions, because in them al
 Another equally good conclusion would be, for example, this: the sources are not comparable, because source 2 states neither its boundary nor its year, and an answer requires a source that gives the life-cycle emission with the same boundary as source 1.
 
 ### Hyväksytään myös
+
 - Any energy production question that is answered with a number, and any two publications with different publishers. The points come from the assessment, not from the choice of sources.
 - A justified conclusion that the figures are not comparable, for example because one concerns electricity and the other all energy, or because the data are from different decades. In that case part d tells what kind of source would be needed for a comparison.
 - A conclusion that the sources are comparable and support each other, when it has been justified item by item.
 - Different conclusions from the same sources, when they have been justified with the information in the sources and do not claim more than the sources support.
 
 ### Yleisiä virheitä
+
 - The source is a search engine results page, an AI answer or the front page of a website on which the figure cannot be found. The reference lacks the publisher, the year or the date of reading.
 - The sources have the same publisher, for example two pages of the same company, or a news item that only repeats the figure of the other source.
 - A source is rejected on the basis of its publisher alone, for example because it is a company page, even though its figure may be correct within its own boundary.
