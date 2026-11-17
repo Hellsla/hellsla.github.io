@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 337e48e6aa0cc5a4
+CONTENT-HASH: b845352d0b689a84
 
 ## Blocking
-- none
 
 ## Polish
-- exercises/solutions.md:3,24,55,65,115,151,162,194,195,210 — still "läpi johtuva lämpöteho"; the lesson now says "siirtyvä" — align at the next exercises pass (exercises are reviewed apart, so not blocking here).
+- Kertaus (nettolämpö -3,0 kJ) valmistelee ajatusta nettovirrasta, jota Ennusta 2:n Bea-vaihtoehto käyttää; se ei kerro vastausta, mutta älä lisää vihjeitä ilmakehästä.
+- Kerroksen "saa ympäristöstä lämpönä" voisi nimetä (ilmakehän vastasäteily), jotta ilmiö ja kertaus kohtaavat.
 
 ## Checked
-Delta: "johtuva" → "siirtyvä" in the formula heading sentence and the summary. Better: P = UAΔT covers the whole component (wall, window, roof), and "johtuminen" is a glossary term for one of three transfer modes. The new term matches the U-arvo glossary definition ("siirtyy") and avoids the mix-up between johtuminen and lämmönsiirtyminen. Grammar is correct ("läpi siirtyvä lämpöteho"). Activities, staging and feedback unchanged.
+batch delta review: kertaus (talviyön maankerros, ΔU = Q + W) kuuluu pakkasyö/pilvi-ilmiöön ja kysyy esitietoa; ei paljasta kasvihuoneilmiön Ennusta-vastauksia; distraktorit (säilyminen, vain luovutettu, merkki) ovat aitoja; lukuarvot ja yksiköt LaTeXina, tehtävien pienet muutokset johdonmukaisia.

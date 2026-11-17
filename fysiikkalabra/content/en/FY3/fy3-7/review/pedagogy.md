@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d7fea6532513f83e
-
+CONTENT-HASH: 8be3549cec667f27
 ## Blocking
-- none
-
 ## Polish
-- none
-
+- The correct option's feedback runs two equations together: "= 16 760 J t = Q/P ...". Add a separator (two lines, or "so") so the student can follow it.
+- The recap teaches t = Q/P with a hotplate. Ennusta 1 (heater power doubled, so the boiling time halves) uses exactly that relation, so the recap partly hands over its reasoning. The recap still fits the phenomenon (a pot on a hotplate) and does not name boiling or a change of state; accept, or give the recap an energy (not a power) question.
+- Wrong option "0,048 s" is a real P/Q slip; its feedback is good.
 ## Checked
-- delta review round 2 (inquiry.json line 92): the wrong option now says the ratio of boiling time to melting time grows with mass. This is a precise claim, and its feedback (565/83.5 and 1130/167, both about 6.8) refutes it from the experiment data. The misconception it targets (proportional growth read as a growing ratio) is clearer than before.
-- inquiry.json line 268: the feedback now says energy changes the interactions and raises the interaction energy, not "breaks the bonds". This fits the micro model of the slot and still repairs the "Q = cm dT applies" misconception.
-- lesson.md worked example: the stage "Rearranged formula" now defines Q_h and Q_v and writes Q_h = Q_v before Pt = r dm. The step is better staged, with the principle named and nothing skipped.
-- lesson.md Reasonableness: dm = Q/r = Pt/r is written out before the numbers, so the student can follow the check. The numbers are unchanged.
-- Sequence, demand, workload and layout are unchanged; the stage still holds one step, and the extra equation line is short, so there is no phone-fit concern.
+batch delta review: herata recap (Q = cmΔT and P = Q/t) fits the hotplate phenomenon and is clear; Ennusta 1-4 answers (temperature at 100 °C, ratio of times, explanation) are not stated; no change to tasks or solutions.

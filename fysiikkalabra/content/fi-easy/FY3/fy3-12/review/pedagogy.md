@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a131b7dcac8bf7a1
+CONTENT-HASH: 6ca6d2b611456194
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- The prompt starts "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* ..."; that is allowed, but a plain "Aiemmalla tunnilla" sentence is shorter for S2 readers.
 
 ## Checked
-batch delta review: johtuva -> siirtyvä is correct (U-arvo covers conduction, convection and radiation) and consistent in Kaava and Tiivistelmä.
+batch delta review, round 1: the retrieval (ground layer on a winter night gives 4,0 kJ, receives 1,0 kJ, ΔU = Q + W) is the hook's own night-time cooling and tests the prior energy balance. The options (equal, 4,0 kJ, sign error) are real slips. It stays a net-balance exercise and does not mention greenhouse gases or back-radiation, so Ennuste 1 and 2 and the open question are not disclosed. Earlier "siirtyvä" change still reads right.

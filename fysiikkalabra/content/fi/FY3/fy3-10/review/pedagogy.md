@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a2e76a1a16d904ec
+CONTENT-HASH: 5639040cc31fd4c3
 
 ## Blocking
 
 ## Polish
-- none
+- Ilmiö vertaa heliumia ja ilmaa (hiukkasten määrä ja massa), kertaus puristaa heliumpalloa (Boyle): tilanne sama pallo, mutta ajatus eri. Hyväksyttävä, koska Boylen laki on edellisen luvun esitieto.
+- Kertaus kertoo jo "lämpötila ja kaasun määrä eivät muutu"; Ennusta kysyy hiukkasten lisäämistä, joten vastaus ei paljastu.
 
 ## Checked
-- Delta: the Järkevyys line of the balloon task now reads 3360 kg - 2640 kg = 720 kg instead of the loose approximation 700 kg; the subtraction is exact and the claim 'kevyempää' still follows.
-- No symbol, answer, hint or activity changed; the model solution still follows the seven steps. Previous PASS stands.
+batch delta review: kertaus sopii palloilmiöön ja kysyy esitietoa Boylen laista; 150 kPa ja distraktorit (väärinpäin, ei muutu, suhde 2) ovat oikeita, palaute korjaa; ei paljasta Ennusta-vastauksia.

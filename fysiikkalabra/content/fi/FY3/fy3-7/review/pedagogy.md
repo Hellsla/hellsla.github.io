@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e0f5d73568bcfbf
+CONTENT-HASH: fe407bc96fdd5ecd
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Oikean vaihtoehdon palautteessa $16\,760\,\text{J}$ ja $t = Q/P$ ovat peräkkäin ilman erotinta ("... J t = ..."); lisää "ja" tai rivinvaihto.
+- Kertaus kysyy veden lämmittämistä, ilmiö jään lämmitystä; tehon ja lämpömäärän yhteys ($Q = Pt$) on kuitenkin juuri se, jota ilmiön kuvaajan lukeminen tarvitsee. Hyväksyttävä.
 
 ## Checked
-- delta review, round 2: both earlier polish items are done: "Kuumentimen luovuttama lämpömäärä" now matches the subscript Q_kuum and the rest of the example. The Järkevyys step now shows Δm = Q/r = Pt/r, so the 300 kJ is traced to Pt.
-- Inquiry prediction option now reads "kiehumisen ja sulamisen kestojen suhde kasvaa, kun massa kasvaa". The ratio is named, so the option is unambiguous. Its feedback (565/83,5 ≈ 6,8 and 1130/167 ≈ 6,8) refutes it with the student's own data and explains why (both durations are proportional to mass).
-- The check feedback on Q = sm now says the energy changes the particles' mutual interactions and raises their interaction energy. This agrees with the glossary's micro model and the slot's "mikromalli" goal. It repairs the misconception "ΔT = 0 means no energy goes in" without disclosing anything early.
-- No other lesson text, figure, simulation or exercise changed. The rest stands as approved.
+batch delta review: kertaus (800 W, 0,40 kg, 10 K, ~21 s) sopii samaan kattila-ja-levy-tilanteeseen eikä paljasta Ennusta-vastauksia (lämpötilan pysyminen, kestojen suhde); kolme distraktoria ovat aitoja virheitä.

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 22d5a045d608c2a4
+CONTENT-HASH: c09510655da596f8
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- The Ennuste ("100 to 200 particles, same V and T") is close to the open question about comparing gas amounts, but the retrieval does not touch particle number, so nothing is disclosed. Keep it that way.
 
 ## Checked
-- Delta 2026-11-15: balloon solution's reasonableness line now says "eli $720\,\text{kg}$" instead of "noin 700 kg"; 3360 − 2640 = 720, so the line now agrees with its own numbers.
-- The rest of the solution (n = pV/RT, m = nM, 2,64 · 10^3 kg, unit conversions, buoyancy-style check) is unchanged and still follows step by step.
+batch delta review, round 1: the retrieval uses the hook's helium balloon squeezed from 3,0 l to 2,0 l (Boyle's law, 150 kPa) and tests the prior law the lesson builds on; the distractors (67 kPa, 100 kPa, 200 kPa) are inverse, no-change and doubling slips. It gives no hint of how n enters pV = nRT, so the Ennuste and the open question stay open.
