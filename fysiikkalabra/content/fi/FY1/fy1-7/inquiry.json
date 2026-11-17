@@ -25,24 +25,24 @@
    "type": "choice",
    "title": "Kertaa: suoraan verrannollisuus",
    "optional": true,
-   "prompt": "Kokeessa mitataan suureet $x$ ja $y$. Mittauspisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle. Mitä tämä kertoo suureiden riippuvuudesta?",
+   "prompt": "Kierrätyspisteen kuutioiden sivun pituus on viivoittimella mitattuna $4{,}0\\,\\text{cm}$. Mikä on kuution tilavuus kuutiometreinä?",
    "choices": [
     {
-     "text": "Suure $y$ on suoraan verrannollinen suureeseen $x$: suhde $y : x$ on vakio, ja se on suoran kulmakerroin.",
-     "correct": true,
-     "feedback": "Oikein. Origon kautta kulkeva suora on mallia $y = kx$, joten suhde $y : x = k$ pysyy samana ja kaksinkertainen $x$ antaa kaksinkertaisen $y$:n (luku *Graafinen esitys ja suoran sovittaminen*). Tänään $y$ on massa, $x$ tilavuus ja $k$ tiheys."
+     "text": "$64\\,\\text{m}^3$",
+     "feedback": "Tämä on tilavuuden lukuarvo kuutiosenttimetreinä, $(4{,}0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. Yksikköä ei ole muunnettu: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (luku *Suureet, yksiköt ja SI-järjestelmä*)."
     },
     {
-     "text": "Suureet $x$ ja $y$ ovat yhtä suuret.",
-     "feedback": "Kulmakerroin voi olla mikä tahansa luku, ei vain 1. Suoran $y = kx$ pisteissä $y$ on $k$-kertainen $x$:ään verrattuna (luku *Graafinen esitys ja suoran sovittaminen*)."
+     "text": "$6{,}4\\cdot10^{-5}\\,\\text{m}^3$",
+     "feedback": "Oikein: $$\\begin{aligned} V &= a^{3} \\\\ &= (4{,}0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6{,}4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. Pituus muunnetaan ensin metreiksi, ja tilavuudessa se on kolmannessa potenssissa, joten myös kymmenpotenssi: $(10^{-2})^{3} = 10^{-6}$ (luku *Suureet, yksiköt ja SI-järjestelmä*).",
+     "correct": true
     },
     {
-     "text": "Suure $y$ kasvaa aina saman verran, kun $x$ kasvaa, mutta $y$ voi olla alussa nollasta poikkeava.",
-     "feedback": "Tämä kuvaa suoraa $y = kx + b$, jossa vakiotermi $b$ on suoran ja pystyakselin leikkauskohta. Kun suora kulkee origon kautta, $b = 0$, ja silloin $y$ on myös nolla, kun $x$ on nolla."
+     "text": "$6{,}4\\cdot10^{-4}\\,\\text{m}^3$",
+     "feedback": "Käytit pinta-alan muunnosta $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. Tilavuudessa pituus on kolmannessa potenssissa, joten $1\\,\\text{cm}^3 = (10^{-2})^{3}\\,\\text{m}^3 = 10^{-6}\\,\\text{m}^3$."
     },
     {
-     "text": "Suureet eivät riipu toisistaan.",
-     "feedback": "Jos suureet eivät riippuisi toisistaan, pisteet asettuisivat vaakasuoralle suoralle tai hajalleen. Suora, jonka kulmakerroin ei ole nolla, kertoo selvästä riippuvuudesta."
+     "text": "$0{,}64\\,\\text{m}^3$",
+     "feedback": "Muunsit tilavuuden kuin pituuden, kertomalla vain luvulla $10^{-2}$. Tilavuudessa pituus on kolmannessa potenssissa, joten $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
     }
    ]
   },

@@ -24,24 +24,24 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa yläkoulusta",
-      "prompt": "Mikä luku on $10^{-3}$?",
+      "prompt": "Protonin koko on noin $1{,}7\\cdot10^{-15}\\,\\text{m}$. Mitä luku $10^{-15}$ tarkoittaa?",
       "choices": [
         {
-          "text": "$-1000$",
-          "feedback": "Negatiivinen eksponentti ei tee luvusta negatiivista. Se tarkoittaa jakolaskua: $10^{-3} = \\dfrac{1}{10^{3}} = \\dfrac{1}{1000}$."
+          "text": "$-10^{15}$, eli suuri negatiivinen luku",
+          "feedback": "Negatiivinen eksponentti ei tee luvusta negatiivista. Se tarkoittaa jakolaskua: $10^{-15} = \\dfrac{1}{10^{15}}$. Se on pieni positiivinen luku."
         },
         {
-          "text": "$0{,}001$",
-          "feedback": "Oikein: $10^{-3} = \\dfrac{1}{1000} = 0{,}001$. Eksponentti $-3$ siirtää desimaalipilkkua kolme paikkaa vasemmalle. Nämä askeleet ovat kymmenpotenssien perusta.",
+          "text": "$0{,}15$",
+          "feedback": "Eksponentti $-15$ ei ole luku $15$. Se kertoo, monennessako desimaalissa ykkönen on."
+        },
+        {
+          "text": "$\\dfrac{1}{10^{15}}$: pilkun jälkeen on neljätoista nollaa ja sitten ykkönen",
+          "feedback": "Oikein: $10^{-15} = \\dfrac{1}{10^{15}}$. Ykkönen on viidennessätoista desimaalissa. Sitä ennen on neljätoista nollaa. Samalla tavalla $10^{-3} = 0{,}001$. Nämä askeleet ovat kymmenpotenssien perusta.",
           "correct": true
         },
         {
-          "text": "$0{,}0001$",
-          "feedback": "Tässä on yksi nolla liikaa: $0{,}0001 = 10^{-4}$. Luvussa $10^{-3}$ on pilkun jälkeen kolme desimaalia. Viimeinen niistä on ykkönen: $0{,}001$."
-        },
-        {
-          "text": "$0{,}03$",
-          "feedback": "Tämä on $3\\cdot10^{-2}$, ei $10^{-3}$. Eksponentti kertoo, monennessako desimaalissa ykkönen on. Se ei kerro lukua kolmella."
+          "text": "Pilkun jälkeen on viisitoista nollaa ja sitten ykkönen",
+          "feedback": "Tässä on yksi nolla liikaa: se olisi $10^{-16}$. Luvussa $10^{-15}$ ykkönen on viidennessätoista desimaalissa, joten nollia on neljätoista."
         }
       ]
     },

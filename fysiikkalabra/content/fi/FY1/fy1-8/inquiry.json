@@ -24,23 +24,23 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: toistot ja epävarmuus",
-      "prompt": "Oppilas mittaa kävelyajan viisi kertaa ja saa tulokset $4{,}7\\,\\text{s}$, $4{,}9\\,\\text{s}$, $4{,}6\\,\\text{s}$, $4{,}8\\,\\text{s}$ ja $4{,}7\\,\\text{s}$. Mikä on mittaustuloksen järkevin ilmoitus?",
+      "prompt": "Ryhmä ajaa leluauton $1{,}00\\,\\text{m}$:n matkan viisi kertaa ja saa ajoiksi $2{,}4\\,\\text{s}$, $2{,}6\\,\\text{s}$, $2{,}3\\,\\text{s}$, $2{,}5\\,\\text{s}$ ja $2{,}4\\,\\text{s}$. Mikä on ajan järkevin ilmoitus?",
       "choices": [
         {
-          "text": "$4{,}9\\,\\text{s}$, koska suurin lukema on varmin.",
+          "text": "$2{,}6\\,\\text{s}$, koska suurin lukema on varmin.",
           "feedback": "Yksittäinen ääriarvo on vain yksi mittaus muiden joukossa. Kun mittaus toistetaan, keskiarvo on parempi arvio kuin suurin tai pienin lukema (luku *Mittaaminen ja mittauksen luotettavuus*)."
         },
         {
-          "text": "$4{,}74\\,\\text{s}$ ilman epävarmuutta, koska laskin antaa kaksi desimaalia.",
+          "text": "$2{,}44\\,\\text{s}$ ilman epävarmuutta, koska laskin antaa kaksi desimaalia.",
           "feedback": "Ilman epävarmuutta lukija ei tiedä, kuinka paljon tulos voi heittää: lukemat vaihtelevat jo kymmenesosasekunnin tarkkuudella. Tulos ilmoitetaan epävarmuuden kanssa ja sen mukaisella tarkkuudella (luku *Mittaaminen ja mittauksen luotettavuus*)."
         },
         {
-          "text": "$4{,}74\\,\\text{s} \\pm 0{,}15\\,\\text{s}$: keskiarvo ja epävarmuuden yksinkertaisena arviona puolet vaihteluvälistä, kahdella numerolla, koska ensimmäinen numero on 1.",
-          "correct": true,
-          "feedback": "Oikein. Keskiarvo on $23{,}7\\,\\text{s} : 5 = 4{,}74\\,\\text{s}$ ja puolet vaihteluvälistä on $(4{,}9\\,\\text{s} - 4{,}6\\,\\text{s}) : 2 = 0{,}15\\,\\text{s}$. Epävarmuuden ensimmäinen numero on 1, joten se ilmoitetaan kahdella numerolla ja keskiarvo samaan desimaaliin. Tänään suunnitellaan koe niin, että tämä epävarmuus on mittaukseen nähden pieni."
+          "text": "$2{,}44\\,\\text{s} \\pm 0{,}15\\,\\text{s}$: keskiarvo ja epävarmuuden yksinkertaisena arviona puolet vaihteluvälistä, kahdella numerolla, koska ensimmäinen numero on 1.",
+          "feedback": "Oikein. Keskiarvo on $12{,}2\\,\\text{s} : 5 = 2{,}44\\,\\text{s}$ ja puolet vaihteluvälistä on $(2{,}6\\,\\text{s} - 2{,}3\\,\\text{s}) : 2 = 0{,}15\\,\\text{s}$. Epävarmuuden ensimmäinen numero on 1, joten se ilmoitetaan kahdella numerolla ja keskiarvo samaan desimaaliin. Tänään suunnitellaan koe niin, että tämä epävarmuus on mittaukseen nähden pieni.",
+          "correct": true
         },
         {
-          "text": "$4{,}7\\,\\text{s}$ ilman epävarmuutta, koska keskiarvo kertoo jo kaiken.",
+          "text": "$2{,}4\\,\\text{s}$ ilman epävarmuutta, koska keskiarvo kertoo jo kaiken.",
           "feedback": "Keskiarvo kertoo tuloksen, mutta ei sitä, kuinka paljon se voi heittää. Ilman epävarmuutta toinen ei voi arvioida, sopiiko tulos ennusteeseen tai toiseen mittaukseen (luku *Mittaaminen ja mittauksen luotettavuus*)."
         }
       ]
