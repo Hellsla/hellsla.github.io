@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 78c95cdf7cd99da3
+CONTENT-HASH: a4672729cf8566b5
 
 ## Blocking
 
 ## Polish
-
+- [Minor] solutions.md L1-02, L2-03, L3-02: a new paragraph begins with a bare "Se" ("Se saapuu harja harjan kanssa", "Se lähestyy arvoa d") whose antecedent sits in the paragraph above; name the subject ("Vahvistava piste ...", "Matkaero lähestyy ...").
 
 ## Checked
-- Delta review, round 3: solutions.md line 157 (Sijoitus b): the sum `7,9 mm + 8,1 mm + 7,8 mm = 23,8 mm.` as an aligned display block.
-- Opened sheet-390-c.png (fy5-12-ex-390-0.png): the sum on one row, `= 23,8 mm.` indented on the next; nothing clipped.
-- Opened sheet-1280-c.png (fy5-12-ex-1280-0.png): joined to one row; `Niiden keskiarvo on` continues below.
-- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-12.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
-- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
-- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-12 --lang fi-easy; opened fy5-12-open-exercises-L2-1280-3 (an open solution next to split ones; the others split alike).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

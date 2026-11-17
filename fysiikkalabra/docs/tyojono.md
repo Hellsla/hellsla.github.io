@@ -202,6 +202,12 @@ järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-
 ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
 
+FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
+(`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
+tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastausluku on b)-kohdassa (fy5-2 L2-06,
+fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
+esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
+
 FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
 esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
 kappalejako vaatisi täydet tiede- ja pedagogiikkakatselmoinnit; ensin jaetun tiedoston muutos `reviews.py`:hin.

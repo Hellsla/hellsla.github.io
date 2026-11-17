@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 17d4c856490dca65
+CONTENT-HASH: 41a2bdbdc3e4fe81
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises/solutions.md:163 — `v_1 = … ≈ 2.0 m/s` and `v_2 = …` keep two rows at 1280 px although one row fits — optional.
+(none) The round-1 Minor is resolved: the Kourou Principle paragraph is rejoined into one paragraph ("...is r = R cos φ: the radius R drawn from the centre ..."); a colon before a lowercase word is correct.
 
 ## Checked
-- Round 3 delta (re-broken calculations only). Own Playwright captures of preview/en/fy5-3.html?ratkaisut=1, every details box open, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3/: sheet-fy5-3-ex-390-0.png, sheet-fy5-3-ex-1280-0.png (opened as combo-fy5-3-0.png).
-- Every formula the branch changed in exercises/solutions.md was located on the page and opened in the sheets; page scrollWidth equals the viewport with the boxes open, no KaTeX error, no script error.
-- Six lifted formulas (clock hand, carousel speeds, satellite circumference, Plesetsk speed): powers of ten stay with their mantissa, breaks only before = or ≈, punctuation on the last row, nothing clipped.
+- Delta: the single changed paragraph in solutions.md (fy5-3 L3 Kourou Principle). Opened review/shots/fy5-3-open-exercises-L3-1280-5.png.
+- The rejoined paragraph renders cleanly in KaTeX (r = R cos φ, φ, R): spacing fine, no overflow or clipping; the surrounding Given, Find, Principle, Formula, Conversions and Substitution blocks keep their layout.
+- Hash matched the packet (41a2bdbdc3e4fe81), so the captures are current. Other captures not opened; the diff is one paragraph.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c2cc523403eb7f6b
-ROUND: 3 (delta, work queue 5d: calculations re-broken; en)
+CONTENT-HASH: faede9cf4f142612
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-07 task text — at the joins of the student's chain the space before `=` is missing (`16.0 s= 96 km`); known join spacing.
-- [Minor] L3-04 Reasonableness at 390 px — two short two-row boxes (station A, station B) one after the other make the paragraph tall; one row each would fit 360 px (`√(72.9² + 41.8²) km = 84.0 km`).
 
 ## Checked
-- sheet-17-390-a/-b.png, sheet-17-1280-a/-b.png holding fy5-17-{390,1280}-5…24.png: L1-09, L2-04, L2-05 (both), L2-07 task text and its answer and solution, L2-08 `d_B`, L2-09, L3-01, L3-02 (both depths), L3-03 (both), L3-04 Formula, Substitution and Reasonableness, L3-05.
-- Square roots keep their bar over the whole radicand with the unit outside; `·`, colon division and `μs` intact; punctuation inside the boxes; two-row blocks join to one row at 1280 px.
-- Own Playwright captures of preview/en (`?ratkaisut=1`, every details box opened) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-13/; page scan at both widths: no horizontal overflow, no formula past the viewport, no KaTeX error.
+- Own reading of review/shots in content/en/FY5/fy5-17/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 5

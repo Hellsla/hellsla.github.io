@@ -323,7 +323,9 @@ Jousen päässä on $0{,}400\,\text{kg}$:n kappale. Se värähtelee kitkattomall
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa $m = 0{,}400\,\text{kg}$ ja kymmenen jakson aika $t = 8{,}00\,\text{s}$. Kysytään jousivakiota $k$.
+**Tunnetut ja kysytty.** Massa $m = 0{,}400\,\text{kg}$ ja kymmenen jakson aika $t = 8{,}00\,\text{s}$.
+
+Kysytään jousivakiota $k$.
 
 <!-- vaihe -->
 

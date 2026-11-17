@@ -472,7 +472,9 @@ Jousen varassa värähtelevä punnus käy ylimmillään $4{,}0\,\text{cm}$ tasap
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Amplitudi on $A = 4{,}0\,\text{cm}$ (suurin poikkeama tasapainoasemasta). Värähdysten määrä on $n = 5$, ja niiden kesto on $t_n = 3{,}0\,\text{s}$. Hetki on $t = 0{,}25\,\text{s}$. Kysytään poikkeamaa $x$ hetkellä $t$.
+**Tunnetut ja kysytty.** Amplitudi on $A = 4{,}0\,\text{cm}$ (suurin poikkeama tasapainoasemasta). Värähdysten määrä on $n = 5$, ja niiden kesto on $t_n = 3{,}0\,\text{s}$. Hetki on $t = 0{,}25\,\text{s}$.
+
+Kysytään poikkeamaa $x$ hetkellä $t$.
 
 <!-- vaihe -->
 

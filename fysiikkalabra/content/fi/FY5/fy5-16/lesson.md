@@ -393,7 +393,9 @@ Rumpali harjoittelee bändin kanssa $2{,}0\,\text{h}$ päivässä, ja melutaso h
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Melutaso $L = 100\,\text{dB}$, altistusaika $t = 2{,}0\,\text{h}$, vertailuannos eli taso $L_0 = 85\,\text{dB}$ ajan $t_0 = 8\,\text{h}$. Kysytään kuulonsuojainten vähimmäisvaimennusta $\Delta L$.
+**Tunnetut ja kysytty.** Melutaso $L = 100\,\text{dB}$, altistusaika $t = 2{,}0\,\text{h}$, vertailuannos eli taso $L_0 = 85\,\text{dB}$ ajan $t_0 = 8\,\text{h}$.
+
+Kysytään kuulonsuojainten vähimmäisvaimennusta $\Delta L$.
 
 <!-- vaihe -->
 

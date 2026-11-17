@@ -456,7 +456,9 @@ Kaksi kantajaa kantaa vaakasuorassa tasa-aineista hirttä. Hirren pituus on $4{,
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Hirsi: $L = 4{,}00\,\text{m}$, $m = 60{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$. Painopiste on keskellä, $2{,}00\,\text{m}$:n päässä A:sta. B on $3{,}00\,\text{m}$:n päässä A:sta. Kysytään kantajien voimia $N_\text{A}$ ja $N_\text{B}$.
+**Tunnetut ja kysytty.** Hirsi: $L = 4{,}00\,\text{m}$, $m = 60{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$. Painopiste on keskellä, $2{,}00\,\text{m}$:n päässä A:sta. B on $3{,}00\,\text{m}$:n päässä A:sta.
+
+Kysytään kantajien voimia $N_\text{A}$ ja $N_\text{B}$.
 
 <!-- vaihe -->
 

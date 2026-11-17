@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6e310d3c67ce7ebf
+CONTENT-HASH: 6db55fe375ed7769
 
 ## Blocking
 (none)
@@ -8,9 +8,10 @@ CONTENT-HASH: 6e310d3c67ce7ebf
 (none)
 
 ## Checked
-- Delta, round 3: no content change since round 2 (packet diff empty, hash unchanged). Looked again at solutions.md:30 and :111.
-- Opened fy5-7-ex-L1-huippu-0-390.png, fy5-7-ex-aariasema-0-390.png, fy5-7-ex-aariasema-0-1280.png and sheet-ex-1280.png (huippu at 1280): each lifted formula on one row in its box, the comma inside the formula, the sentence continues naturally ("ja amplitudi on puolet siitä", "ja", "kuten mitattiin"). Nothing clipped.
-- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
+- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
+- Captures: fy5-7-open-exercises-L3-1280-2 and -3 (L3-01 split, 7-18 solution and next task); the other splits are the same kind of paragraph break, not opened individually.
+- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
+- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

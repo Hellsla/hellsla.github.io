@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 98bb58d9bd7e5e29
+CONTENT-HASH: 92cc3bcd172eb381
 
 ## Blocking
 (none)
@@ -8,9 +8,8 @@ CONTENT-HASH: 98bb58d9bd7e5e29
 (none)
 
 ## Checked
-- No content change: the packet's diff is empty and the hash is the one already passed.
-- Looked again all the same: fy5-10-ex-L3-04-390.png and fy5-10-ex-L3-04-1280.png (solution open): the v_1…v_4 and C_1…C_4 blocks in one column, the average and the `v`, `λ` chains aligned, nothing clipped at either width.
-- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
+- Delta (solutions.md: Mallivastaus of fy5-10-L1-06 and L1-07 cut into two paragraphs, words unchanged).
+- Opened fy5-10-open-exercises-1280-6 and -7 (tasks 10-6, 10-7 with the model answers open): the break reads naturally, the paragraphs stay inside the same Mallivastaus panel, formulas ($\lambda = v/f$) intact, no gaps, nothing clipped.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

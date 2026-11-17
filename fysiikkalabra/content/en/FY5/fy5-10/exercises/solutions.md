@@ -92,7 +92,9 @@
 ## fy5-10-L3-01
 **Given:** a crest at $x_1 = 0.60\,\text{m}$ and $\Delta t = 0.15\,\text{s}$ later at $x_2 = 1.05\,\text{m}$; the crest has not travelled one wavelength; distance between crests $\lambda = 1.20\,\text{m}$
 **Find:** the frequency of the shaking $f$
-**Principle:** A crest is a part of the wave, so it travels at the speed of the wave, $v = \tfrac{\Delta x}{\Delta t}$. Since the crest has travelled less than a wavelength, the photographs show the same crest and not already the next one. The displacement of the crest is not a displacement of the matter of the rope: the points of the rope only move up and down, and the crest is always at the point that is at its highest position at that moment. The frequency follows from the fundamental equation.
+**Principle:** A crest is a part of the wave, so it travels at the speed of the wave, $v = \tfrac{\Delta x}{\Delta t}$. Since the crest has travelled less than a wavelength, the photographs show the same crest and not already the next one.
+
+The displacement of the crest is not a displacement of the matter of the rope: the points of the rope only move up and down, and the crest is always at the point that is at its highest position at that moment. The frequency follows from the fundamental equation.
 **Formula:** $v = \dfrac{x_2 - x_1}{\Delta t}$ and $v = f\lambda$, so $f = \dfrac{x_2 - x_1}{\lambda\,\Delta t}$
 **Conversions:** Not needed: all lengths are in metres and the time in seconds.
 **Substitution:** $v = \dfrac{1.05\,\text{m} - 0.60\,\text{m}}{0.15\,\text{s}} = \dfrac{0.45\,\text{m}}{0.15\,\text{s}} = 3.0\,\text{m/s}$ and $f = \dfrac{3.0\,\text{m/s}}{1.20\,\text{m}} = 2.5\,\text{Hz}$
@@ -102,7 +104,9 @@
 ## fy5-10-L3-02
 **Given:** time difference $\Delta t = 0.50\,\text{s}$, speed of sound in steel $v_\text{s} = 5100\,\text{m/s}$ and in air $v_\text{a} = 340\,\text{m/s}$
 **Find:** the length of the rail $d$
-**Principle:** The blow of the hammer produces sound both in the rail and in the air. The speed of a wave depends on the medium, so the two sounds travel the same distance $d$ at different speeds and arrive at different times: the sound that travelled in the steel first. Each travels at a steady speed, so the travel time is $\tfrac{d}{v}$, and the time difference is the difference of the travel times.
+**Principle:** The blow of the hammer produces sound both in the rail and in the air. The speed of a wave depends on the medium, so the two sounds travel the same distance $d$ at different speeds and arrive at different times: the sound that travelled in the steel first.
+
+Each travels at a steady speed, so the travel time is $\tfrac{d}{v}$, and the time difference is the difference of the travel times.
 **Formula:** $\Delta t = \dfrac{d}{v_\text{a}} - \dfrac{d}{v_\text{s}}$, so $d = \dfrac{\Delta t}{\dfrac{1}{v_\text{a}} - \dfrac{1}{v_\text{s}}}$
 **Conversions:** Not needed: the speeds are in metres per second and the time in seconds.
 **Substitution:** $d = \dfrac{0.50\,\text{s}}{\dfrac{1}{340\,\text{m/s}} - \dfrac{1}{5100\,\text{m/s}}} = \dfrac{0.50\,\text{s}}{0.002\,745\,\text{s/m}} = 182.1\,\text{m}$
@@ -113,7 +117,9 @@
 ## fy5-10-L3-03
 **Given:** delay relative to the neighbour $\Delta t = 0.050\,\text{s}$, distance between seats $\Delta x = 0.55\,\text{m}$, length of the row $s = 440\,\text{m}$
 **Find:** the time $t$ in which the wave goes once round the stand
-**Principle:** The wave in a stadium stand is a model of wave motion: every spectator repeats the movement of the neighbour after a small delay, so the standing up, the disturbance, travels along the row although the spectators stay in their places and only stand up and sit down. The disturbance travels one seat spacing in the time $\Delta t$, so its speed is constant and the time of one round is the distance divided by the speed.
+**Principle:** The wave in a stadium stand is a model of wave motion: every spectator repeats the movement of the neighbour after a small delay, so the standing up, the disturbance, travels along the row although the spectators stay in their places and only stand up and sit down.
+
+The disturbance travels one seat spacing in the time $\Delta t$, so its speed is constant and the time of one round is the distance divided by the speed.
 **Formula:** $v = \dfrac{\Delta x}{\Delta t}$ and $s = vt$, so $t = \dfrac{s}{v} = \dfrac{s\,\Delta t}{\Delta x}$
 **Conversions:** Not needed: the lengths are in metres and the time in seconds.
 **Substitution:** $v = \dfrac{0.55\,\text{m}}{0.050\,\text{s}} = 11\,\text{m/s}$ and $t = \dfrac{440\,\text{m}}{11\,\text{m/s}} = 40\,\text{s}$
@@ -122,13 +128,21 @@
 
 ## fy5-10-L1-06
 **Find:** which statement about a longitudinal wave is correct when the end of a spring is pushed back and forth in the direction of the spring.
-**Principle:** The type of a wave is determined by how the points of the medium vibrate relative to the direction of propagation. In a transverse wave the vibration is perpendicular to the direction of propagation, in a longitudinal wave it is in the direction of propagation. A wave does not carry matter with it, but the points vibrate around their equilibrium positions.
-**Model answer:** When the end of the spring is pushed back and forth in the direction of the spring, the coils of the spring move in the direction of propagation: they are pressed together and move apart, and travelling compressions and rarefactions form in the spring. The correct statement is therefore that the points of the spring vibrate in the direction of propagation. The statement about sideways vibration describes a transverse wave. The statement that the points travel along to the receiver is wrong, because the points return to their places and only the disturbance and energy travel. Crests and troughs belong to a transverse wave; in a longitudinal wave there are compressions and rarefactions. The statement that the points stay in place is wrong, because in a longitudinal wave the points of the spring move back and forth along the spring around their equilibrium positions. Sound in air is a longitudinal wave.
+**Principle:** The type of a wave is determined by how the points of the medium vibrate relative to the direction of propagation. In a transverse wave the vibration is perpendicular to the direction of propagation, in a longitudinal wave it is in the direction of propagation.
+
+A wave does not carry matter with it, but the points vibrate around their equilibrium positions.
+**Model answer:** When the end of the spring is pushed back and forth in the direction of the spring, the coils of the spring move in the direction of propagation: they are pressed together and move apart, and travelling compressions and rarefactions form in the spring.
+
+The correct statement is therefore that the points of the spring vibrate in the direction of propagation. The statement about sideways vibration describes a transverse wave. The statement that the points travel along to the receiver is wrong, because the points return to their places and only the disturbance and energy travel.
+
+Crests and troughs belong to a transverse wave; in a longitudinal wave there are compressions and rarefactions. The statement that the points stay in place is wrong, because in a longitudinal wave the points of the spring move back and forth along the spring around their equilibrium positions. Sound in air is a longitudinal wave.
 
 ## fy5-10-L1-07
 **Find:** what happens to the wave when the shaking frequency of the rope is doubled and the rope and its tension stay the same.
 **Principle:** The speed of a wave is determined by the properties of the rope, its tension and its mass per unit length, not by the frequency of the source. The frequency is determined by the source. From the fundamental equation of wave motion $v = f\lambda$ it follows that $\lambda = v/f$.
-**Model answer:** The rope and the tension do not change, so the speed of the wave stays the same. When the frequency doubles, the wavelength $\lambda = v/f$ halves. The hand now sends twice as many crests in the same time, but the crests still travel the same distance, so they fit closer together. The statement that the speed doubles is a common misconception, because shaking more often does not drive the wave forward faster. The statement that the wavelength stays the same forgets that the wavelength depends on the frequency as well as on the speed, and the statement that the wavelength grows contradicts the fundamental equation.
+**Model answer:** The rope and the tension do not change, so the speed of the wave stays the same. When the frequency doubles, the wavelength $\lambda = v/f$ halves. The hand now sends twice as many crests in the same time, but the crests still travel the same distance, so they fit closer together.
+
+The statement that the speed doubles is a common misconception, because shaking more often does not drive the wave forward faster. The statement that the wavelength stays the same forgets that the wavelength depends on the frequency as well as on the speed, and the statement that the wavelength grows contradicts the fundamental equation.
 
 ## fy5-10-L1-08
 **Given:** the time difference between the lightning and the thunder $t = 4.0\,\text{s}$, speed of sound in air $v = 343\,\text{m/s}$
@@ -143,7 +157,9 @@
 ## fy5-10-L2-05
 **Given:** the points of the table $(t;\ x)$: $(0.00\,\text{s};\ 0.10\,\text{m})$, $(0.20\,\text{s};\ 0.62\,\text{m})$, $(0.40\,\text{s};\ 1.13\,\text{m})$, $(0.60\,\text{s};\ 1.66\,\text{m})$, $(0.80\,\text{s};\ 2.17\,\text{m})$ and $(1.00\,\text{s};\ 2.70\,\text{m})$
 **Find:** the speed of the pulse $v$ as the slope of the line
-**Principle:** The pulse travels in the medium at a steady speed, so the points of the $(t, x)$ graph lie on a straight line, and the slope of the line is the speed of the pulse. At the start the pulse was already slightly past the zero mark, so the line does not pass through the origin, and the speed must not be calculated with the quotient $x/t$. The speed is obtained from the change in position divided by the change in time.
+**Principle:** The pulse travels in the medium at a steady speed, so the points of the $(t, x)$ graph lie on a straight line, and the slope of the line is the speed of the pulse.
+
+At the start the pulse was already slightly past the zero mark, so the line does not pass through the origin, and the speed must not be calculated with the quotient $x/t$. The speed is obtained from the change in position divided by the change in time.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0.00\,\text{s};\ 0.10\,\text{m})$ and $(1.00\,\text{s};\ 2.70\,\text{m})$, and they are read from the line far apart from each other.
 **Formula:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
 **Conversions:** Not needed: the position is in metres and the time in seconds.
@@ -182,13 +198,17 @@ v &= \frac{1.50\,\text{m}}{4.4 \cdot 10^{-3}\,\text{s}} \\
 &= 341\,\text{m/s}
 \end{aligned}
 ```
-**Answer:** $3.4 \cdot 10^{2}\,\text{m/s}$, two significant figures, because the time difference $\Delta t = 4.4\,\text{ms}$ is given with two figures. The slope is better than the quotient of a single row, because a possible constant error of the meter cancels in the difference $\Delta t$ and because the slope uses the whole measuring range: an error of $0.1\,\text{ms}$ is only about $2\,\%$ of the difference $4.4\,\text{ms}$.
+**Answer:** $3.4 \cdot 10^{2}\,\text{m/s}$, two significant figures, because the time difference $\Delta t = 4.4\,\text{ms}$ is given with two figures.
+
+The slope is better than the quotient of a single row, because a possible constant error of the meter cancels in the difference $\Delta t$ and because the slope uses the whole measuring range: an error of $0.1\,\text{ms}$ is only about $2\,\%$ of the difference $4.4\,\text{ms}$.
 **Reasonableness:** The quotients $d/\Delta t$ of the rows are about $333\,\text{m/s}$, $345\,\text{m/s}$, $341\,\text{m/s}$ and $339\,\text{m/s}$, and the slope is among them. The result $3.4 \cdot 10^{2}\,\text{m/s}$ is close to the speed of sound in room air, $343\,\text{m/s}$.
 
 ## fy5-10-L3-04
 **Given:** length of the rope $L = 12.0\,\text{m}$, points of the tension $F$ and the travel time of the pulse $t$: $(5.0\,\text{N};\ 1.15\,\text{s})$, $(10.0\,\text{N};\ 0.800\,\text{s})$, $(20.0\,\text{N};\ 0.570\,\text{s})$ and $(40.0\,\text{N};\ 0.410\,\text{s})$, frequency $f = 5.0\,\text{Hz}$ and tension $F = 30\,\text{N}$ when shaking
 **Find:** the wavelength $\lambda$ at a tension of $30\,\text{N}$ and a justification why the wavelength would change in a thicker rope
-**Principle:** The pulse travels in the rope at a steady speed, so $v = L/t$. Once the speeds are calculated, we investigate how they depend on the tension: if $v$ were directly proportional to the tension, doubling the tension would double the speed. If instead the ratio $C = v^2/F$ is constant, the speed depends on the tension in another way. The model gives the speed at a tension of $30\,\text{N}$, and the wavelength comes from the fundamental equation. The speed is determined by the rope and the tension, the frequency by the source.
+**Principle:** The pulse travels in the rope at a steady speed, so $v = L/t$. Once the speeds are calculated, we investigate how they depend on the tension: if $v$ were directly proportional to the tension, doubling the tension would double the speed.
+
+If instead the ratio $C = v^2/F$ is constant, the speed depends on the tension in another way. The model gives the speed at a tension of $30\,\text{N}$, and the wavelength comes from the fundamental equation. The speed is determined by the rope and the tension, the frequency by the source.
 **Formula:** $v = \dfrac{L}{t}$, $\quad v^2 = CF$ and $\lambda = \dfrac{v}{f}$
 **Conversions:** Not needed: the length is in metres and the time in seconds.
 **Substitution:** The speeds are $v = \tfrac{12.0\,\text{m}}{t}$:
@@ -200,6 +220,7 @@ v_3 &= \frac{12.0\,\text{m}}{0.570\,\text{s}} = 21.1\,\text{m/s} \\
 v_4 &= \frac{12.0\,\text{m}}{0.410\,\text{s}} = 29.3\,\text{m/s}
 \end{aligned}
 ```
+
 When the tension doubles, the speed grows by the factors $\tfrac{15.0}{10.4} = 1.44$, $\tfrac{21.1}{15.0} = 1.41$ and $\tfrac{29.3}{21.1} = 1.39$, that is, about $\sqrt{2} = 1.41$. So the speed is not directly proportional to the tension, but $v^2$ is. We calculate the ratios $C = v^2/F$:
 ```latex
 \begin{aligned}
@@ -209,6 +230,7 @@ C_3 &= \frac{(21.1)^2}{20.0} = 22.3 \\
 C_4 &= \frac{(29.3)^2}{40.0} = 21.5
 \end{aligned}
 ```
+
 The ratios are approximately equal. Their sum is $87.9$, so the mean is $C = \tfrac{87.9}{4} = 22.0\,\tfrac{\text{m}^2}{\text{s}^2\,\text{N}}$. At a tension of $30\,\text{N}$ the speed and the wavelength are
 ```latex
 \begin{aligned}
@@ -218,13 +240,17 @@ v &= \sqrt{CF} \\
 &= \frac{25.7\,\text{m/s}}{5.0\,\text{Hz}} = 5.1\,\text{m}
 \end{aligned}
 ```
-**Answer:** $5.1\,\text{m}$, two significant figures like the frequency $5.0\,\text{Hz}$ and the tension $30\,\text{N}$. On the basis of the data the speed grows as the tension grows but not directly proportionally: $v^2$ is proportional to the tension. Replacing the rope with a thicker one changes the medium: usually the same tension makes a heavier rope move more slowly, so the speed decreases. The frequency stays the same, because it is determined by the shaking hand, so the wavelength $\lambda = v/f$ becomes shorter.
+**Answer:** $5.1\,\text{m}$, two significant figures like the frequency $5.0\,\text{Hz}$ and the tension $30\,\text{N}$. On the basis of the data the speed grows as the tension grows but not directly proportionally: $v^2$ is proportional to the tension.
+
+Replacing the rope with a thicker one changes the medium: usually the same tension makes a heavier rope move more slowly, so the speed decreases. The frequency stays the same, because it is determined by the shaking hand, so the wavelength $\lambda = v/f$ becomes shorter.
 **Reasonableness:** The tension $30\,\text{N}$ is between the values $20\,\text{N}$ and $40\,\text{N}$ of the data, so the speed must be between their speeds $21.1\,\text{m/s}$ and $29.3\,\text{m/s}$, and $25.7\,\text{m/s}$ is. The wavelength must be between $\tfrac{21.1}{5.0} = 4.2\,\text{m}$ and $\tfrac{29.3}{5.0} = 5.9\,\text{m}$, and $5.1\,\text{m}$ is.
 
 ## fy5-10-L3-05
 **Given:** frequency $f = 5.0\,\text{Hz}$, thin part: length $L_1 = 10.0\,\text{m}$ and wavelength $\lambda_1 = 0.80\,\text{m}$, thick part: length $L_2 = 6.0\,\text{m}$ and wavelength $\lambda_2 = 0.50\,\text{m}$
 **Find:** the travel time $t$ of the pulse along the whole rope and a justification why the frequency is the same in both parts but the wavelength is not
-**Principle:** The speed of a wave is determined by the medium, so it is different in the different parts. In both parts it follows from the fundamental equation $v = f\lambda$ when the frequency is the same. The pulse travels at a steady speed in each part, so the travel time in a part is $t = L/v$, and the total time is the sum of the times of the parts. Reflection is ignored.
+**Principle:** The speed of a wave is determined by the medium, so it is different in the different parts. In both parts it follows from the fundamental equation $v = f\lambda$ when the frequency is the same.
+
+The pulse travels at a steady speed in each part, so the travel time in a part is $t = L/v$, and the total time is the sum of the times of the parts. Reflection is ignored.
 **Formula:** $v = f\lambda$, $\quad t_1 = \dfrac{L_1}{v_1}$, $\quad t_2 = \dfrac{L_2}{v_2}$ and $t = t_1 + t_2$
 **Conversions:** Not needed: $\text{Hz} \cdot \text{m} = \text{m/s}$ and the lengths are in metres.
 **Substitution:** The speeds and times are
@@ -237,12 +263,16 @@ t_2 &= \frac{6.0\,\text{m}}{2.5\,\text{m/s}} = 2.4\,\text{s}
 \end{aligned}
 ```
 The total time is $t = 2.5\,\text{s} + 2.4\,\text{s} = 4.9\,\text{s}$.
-**Answer:** $4.9\,\text{s}$, two significant figures like the initial values. The frequency is the same in both parts, because it is determined by the hand shaking the end of the rope: the joint vibrates in step with the rope before it, and it cannot send crests onward at a different rate from the one at which it receives them. The speed is determined by the medium, so it is different in the thick part, and that is why the wavelength $\lambda = v/f$ is shorter there.
+**Answer:** $4.9\,\text{s}$, two significant figures like the initial values. The frequency is the same in both parts, because it is determined by the hand shaking the end of the rope: the joint vibrates in step with the rope before it, and it cannot send crests onward at a different rate from the one at which it receives them.
+
+The speed is determined by the medium, so it is different in the thick part, and that is why the wavelength $\lambda = v/f$ is shorter there.
 **Reasonableness:** The length of the whole rope is $10.0\,\text{m} + 6.0\,\text{m} = 16.0\,\text{m}$, so the mean speed is $\tfrac{16.0\,\text{m}}{4.9\,\text{s}} = 3.3\,\text{m/s}$. It is between the speeds of the parts, $2.5\,\text{m/s}$ and $4.0\,\text{m/s}$, as it should be.
 
 ## fy5-10-L1-09
 **Find:** which of the five statements about a wave travelling along a taut rope and a ribbon tied to the rope are true.
-**Principle:** The frequency is the number of oscillations per second, and in a photograph the distance between successive crests is the wavelength $\lambda$. The speed of the wave is obtained from the basic equation $v = f\lambda$. The speed depends on the properties of the rope, its tension and its mass per unit length, and the frequency on the source, that is, on the shaking hand. A wave carries energy but not matter.
+**Principle:** The frequency is the number of oscillations per second, and in a photograph the distance between successive crests is the wavelength $\lambda$. The speed of the wave is obtained from the basic equation $v = f\lambda$.
+
+The speed depends on the properties of the rope, its tension and its mass per unit length, and the frequency on the source, that is, on the shaking hand. A wave carries energy but not matter.
 **Model answer:** The frequency and the period are
 
 $f = \dfrac{12}{8.0\,\text{s}} = 1.5\,\text{Hz}$

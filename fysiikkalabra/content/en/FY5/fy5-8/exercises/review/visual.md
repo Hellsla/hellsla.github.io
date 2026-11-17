@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0bfa8f0974d6d2eb
+CONTENT-HASH: c20e086d07c18edd
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
+- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
 
 ## Checked
-- Delta, round 3 (English): solutions.md:91, the triangle-area check lifted into a display formula.
-- Opened fy5-8-ex-tri-0-390.png: `½ · 4.8 N · 0.080 m = 0.19 J.` on one row in its box, full stop inside, the sentence before (`… = 4.8 N, and`) and after reads on; nothing clipped. fy5-8-ex-tri-0-1280.png measured in the run (formula inside its box), not opened.
-- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
+- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-8/review/shots/ (current for this hash): exercises 1280 parts L2-8 (spring constant answer), L3-5 (rubber band), L3-9 (crossbow reasonableness).
+- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
+- Hash re-run at the end: c20e086d07c18edd (unchanged).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

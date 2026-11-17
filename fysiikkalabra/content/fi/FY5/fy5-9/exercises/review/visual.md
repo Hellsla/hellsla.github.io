@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 837b4e21b5dfd674
+CONTENT-HASH: c31c9ae0e22076bb
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md L3-05 Järkevyys, capture L3-1280-9 — the line breaks right after the opening parenthesis "(" before "0,5988 m/s > 0,5981 m/s" — keep the parenthesis with its content (a non-breaking join) in the shared component, not per task.
+- [Minor] solutions.md L3-05, new sentence "Sama suuruusluokka näkyy oppitunnin taulukossa ... 0,2 %" — adds a claim, more than a paragraph cut — for science: check that the lesson table's 10° deviation really is 0,2 %.
 
 ## Checked
-- Delta, round 3: no content change since round 2 (hash unchanged). Looked again at solutions.md:162 (Järkevyys).
-- Opened fy5-9-ex-takaisin-0-390.png and sheet-ex-1280.png (takaisin at 1280): `2π√(0,300 : 20,14) s = 0,767 s,` on one row in its box, the root covers the whole quotient, the unit upright, the comma inside; the sentence continues "joten kymmenen jakson aika olisi". Nothing clipped.
-- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
+- Delta (solutions.md, L3-05 Järkevyys cut into two paragraphs). The diff's "L2-08" heading is only context; the task is fy5-9-L3-05.
+- Opened fy5-9-open-exercises-L3-1280-8 and -9 (Muunnokset, Sijoitus, Vastaus, Järkevyys split in two paragraphs with the same box): the paragraph break reads well, formulas intact, units upright, nothing clipped.
+- Opened L3-1280-5, -6 and L2-1280-8, -9, -11, -12 for the surrounding layout: no gaps, no overflow.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
