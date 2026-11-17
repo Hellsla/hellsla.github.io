@@ -13,16 +13,9 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0e (ulkoasun delta vain suomeksi, kun muutos on kielineutraali; sääntöteksti odottaa opettajan hyväksyntää, PR draft; loki §0e), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
 Osat 0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
-
-### 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali
-Opettajan päätös 2026-11-17 (hyväksytty jonoon; sääntöteksti hyväksytään yhdistämällä PR). Kun muutos on esitystapaluokkaa
-(0c) ja `check_i18n.py` toteaa saman rakenteen kaikilla kielillä, ulkoasukatselmoija katsoo vain suomenkielisen sivun;
-en ja fi-easy saavat ulkoasun PASS:n carryna, jos `check_layout.py` menee niillä läpi kaikilla leveyksillä avatuin
-ratkaisuin. Muu muutos (sanat, käännös, kuvat) katselmoidaan kieli kerrallaan kuten ennen. `reviews.py` RULES, `verify`,
-`test_reviews.py`, `docs/QUALITY.md` ja komentotiedostot samassa PR:ssä. 0c:n jälkeen.
 
 ### 0f. Yksi läpikäynti per kurssi (työtapa, ei koodia)
 Sama kurssi on käyty läpi erikseen kohdissa 5d, 8c, 8l-b, 18 ja 19, ja 8g ja 8j ovat tulossa; jokainen läpikäynti tuo

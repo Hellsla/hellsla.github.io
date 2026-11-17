@@ -652,3 +652,15 @@ caption-label mielivaltaisen yhdistelmän myös samalla rivillä (ennen: lukumuu
 `translation_differs`: kaavat monijoukkona (kaavan paikka lauseessa ei ole tiedettä; en L3-05, fi-easy L2-01), luvut ja
 kaavat yhä tiukasti. Uusi `report_problems` / `reviews.py check-report <id> [--lang] [--exercises]` (myös `verify`): vapaamuotoinen
 SCOPE-rivi ja kielen raportissa suomenkielisen lähteen hash hylätään ennen hyväksymistä. Testit `test_reviews.py` "0c".
+
+## [loki] 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali (2026-11-17, draft-PR, sääntöteksti odottaa opettajan hyväksyntää)
+`reviews.py`: luokka `fi-layout` (ei RULES-luokka, kuten `translation-of-passed`). Kielineutraali = muutos on vain esitystapaluokkaa
+(`LAYOUT_CATS`: reflow, md-paragraphs/paragraphs, caption-label, mikä tahansa yhdistelmä) JA käännöksen `layout_skeleton` (rivi kerrallaan:
+listakohta vai ei, kaavojen määrä, `$$`- ja aligned-lohkojen määrä, jokaisessa tekstitiedostossa) on sama kuin suomenkielisen tekstin
+(`source_layout_differs`). Silloin käännöksen ulkoasukatselmoija on `none` (carry-rivi, `from` = käännöksen oma läpäisty hash), kun suomenkielisellä
+osalla on aito ulkoasun PASS nykyiselle hashille (`source_visual_ok`; baseline-rivi ei kelpaa). `status` laskee carryn vain niin kauan kuin suomalainen PASS
+on voimassa; `verify` johtaa ehdot uudelleen. Ei kielineutraalia: sana, luku, merkki, yksikkö, kaava, kuva, otsikko-/label-teksti muuttuu; kappale
+jaettu eri kohdasta kuin suomeksi; käännöksen oma ulkoasun FAIL. Ei kata kohteita (`carry-item`). Testit `test_reviews.py` "0e".
+Säästöarvio (FY6 #662, 24 ulkoasusarjaa, kolme kieltä): ennen 72 ulkoasukatselmointia (fi, en, fi-easy), nyt 24 suomeksi + 48 carryä. Mitattu keskiarvo
+(`usage.tsv`, 94 ulkoasun delta-katselmointia): 538 k tokenia ja 0,30 $ per katselmointi, joten 48 katselmointia ≈ 26 M tokenia ≈ 14 $ ja 48 vuoroa. Ylärajaa:
+säästö toteutuu vain käännöksille, joiden kappalejako vastaa suomea; muut katselmoidaan kuten ennen.

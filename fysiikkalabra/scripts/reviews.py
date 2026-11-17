@@ -93,6 +93,16 @@ whole set; its PASS names what it covered on line 3 (`SCOPE: delta added-exercis
 `verify` re-derives that claim from git history (`verify_scopes`). Content still on the visual baseline gets its
 first visual review in full as before.
 
+Layout of a translation (work queue 0e; the rule text awaits the teacher's approval). A change is *language-neutral* when
+it is only a presentation class (`format_categories`: reflow, md-paragraphs/paragraphs, caption-label) and the translation
+keeps the Finnish text's skeleton (`layout_skeleton`: per line a list item or not, the number of formulas, `$$` and aligned
+blocks, in every text file). Then the visual reviewer looks at the Finnish page only: when the Finnish part has a genuine visual
+PASS for its current hash (`source_visual_ok`; a baseline row is none) and `source_layout_differs` is None, `scope` gives the
+translation's visual reviewer mode `none`, categories "<classes>,fi-layout", and `carry` writes the row (from the translation's
+own passed hash). `status` counts it only while the Finnish PASS is current; `verify` re-derives it. A changed word,
+number, formula, figure or picture, a differently cut paragraph and a translation whose own visual verdict is FAIL are not
+language-neutral: that language is reviewed as before. Not covered: items (`carry-item`).
+
 Translated exercise sets (teacher 2026-11-12). The physics, numbers, answers, units and tolerances of an exercise set are
 the same in every language, so the science review of a translation (content/en/, content/fi-easy/; `--exercises --lang`)
 carries over from the Finnish set's: `scope` gives the science reviewer mode `none`, category "translation-of-passed",
@@ -195,6 +205,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "figure-words-added": "the translation's figures.json only gained entries for a new figure (every existing entry unchanged)",
        "reflow": "a calculation chain re-broken into rows, its numbers, signs and units unchanged and in the same order",
        "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged",
+       "fi-layout": "a presentation change (reflow, paragraphs, caption label) in a translation cut exactly as the Finnish text, whose visual PASS is current (work queue 0e)",
        "translation-of-passed": "a translation of the Finnish exercise set, its numbers, answers and formulas the same: the Finnish set's science PASS for its current hash carries over (teacher 2026-11-12)"}
 # Not a RULES category: "translation-of-passed" is never found by `changes`; `scope` grants it to the science reviewer of a
 # translated exercise set alone (module docstring, "Translated exercise sets"); pedagogy and visual review each language.
@@ -427,6 +438,8 @@ def status(folder, part="lesson"):
         else: reports[name] = "stale"
         if name == "science" and part == "exercises" and reports[name] in ("missing", "stale") and translation_row(folder, h):
             reports[name] = "PASS"; carry[name] = TRANSLATED    # the Finnish set's science PASS (teacher 2026-11-12)
+    if FI_LAYOUT in carry.get(VISUAL, "").split(",") and not source_visual_ok(folder, part):
+        reports[VISUAL] = "stale"; carry.pop(VISUAL)   # the Finnish layout it follows is no longer a visual PASS (0e)
     base = False
     if reports[VISUAL] != "PASS":
         base, cats = _visual_baseline(folder, h, part)
@@ -1675,6 +1688,49 @@ def layout_marks(text):
     return (len(MATH_SPAN.findall(text)), text.count("$$"), text.count("begin{aligned}"))
 
 
+LAYOUT_CATS = frozenset({"reflow", "md-paragraphs", "paragraphs", "caption-label"})   # the language-neutral classes of format_categories (work queue 0c)
+FI_LAYOUT = "fi-layout"     # not a RULES category: `scope` grants it to a translation's visual reviewer alone (module docstring, "Layout of a translation")
+
+
+def layout_skeleton(text, rel=""):
+    """What a text's presentation is made of, whatever its words: per line (calculation chains merged, a JSON string's \\n read as
+    a line break, blank lines left out) whether it is a `- ` list item, how many formulas it holds and how many `$$` and aligned
+    blocks. Two texts in two languages with the same skeleton are cut into the same paragraphs, rows and list items."""
+    if rel.endswith(".json"): text = re.sub(r"(?<!\\)\\n", "\n", text)
+    return [(bool(re.match(r"\s*- ", l)), len(MATH_SPAN.findall(l)), l.count("$$"), l.count("begin{aligned}"))
+            for l in chain_view(text, "", False).split("\n") if l.strip()]
+
+
+def _source_part(folder, part):
+    """The Finnish folder of a translated lesson when it has this part, else None."""
+    if courses.lang_of(folder) == i18n.SOURCE: return None
+    src = courses.translation(folder, i18n.SOURCE)
+    return src if (courses.exercise_dir(src) / "exercises.json" if part == "exercises" else src / "lesson.md").is_file() else None
+
+
+def source_visual_ok(folder, part="lesson"):
+    """True when the Finnish source of this translated part has a genuine visual PASS (its own or carried; a visual baseline
+    row is no review) for its current hash: the layout the translation follows has been looked at."""
+    src = _source_part(folder, part)
+    return bool(src) and status(src, part)["reports"][VISUAL] == "PASS"
+
+
+def source_layout_differs(folder, part="lesson"):
+    """None when the translated part (`folder`, content/<lang>/) has, in every text file, the layout skeleton of the Finnish one
+    (layout_skeleton: the same paragraphs, list items, formulas per line, display and aligned blocks), so a presentation
+    change made to both is the same change; otherwise why not, in a few words (work queue 0e, "Layout of a translation")."""
+    src = _source_part(folder, part)
+    if not src: return "no Finnish source"
+    wt = WorkTree()
+    for n in PARTS[part]:
+        if not n.endswith((".md", ".json")): continue
+        a, b = wt.read(courses.lesson_rel(src, n)), wt.read(courses.lesson_rel(folder, n))
+        if a is None and b is None: continue
+        if a is None or b is None: return f"{n} exists in one language only"
+        if layout_skeleton(a, n) != layout_skeleton(b, n): return f"{n}: cut into other paragraphs, rows or formulas than the Finnish one"
+    return None
+
+
 def _unnamed(a, b, ok):
     """`b` with each ```kaavat block whose names are all approved (`ok`) put back as `a`'s block of the same formulas
     (a passed version's ```latex or ```kaavat block), so what else changed is classified as usual; None when a name
@@ -1929,6 +1985,10 @@ def scope(folder, part="lesson"):
         i = REVIEWS.index(name)
         mode = max((RULES[c][i] for c in cats), key=MODES.index, default="delta")
         frm = rep[1]
+        if name == VISUAL and mode != "none" and cats and cats <= LAYOUT_CATS and (report(folder, name, part) or ())[:1] == ("PASS",) and source_visual_ok(folder, part) and source_layout_differs(folder, part) is None:
+            # a translation's presentation-only change, cut exactly as the Finnish text whose visual PASS is current: the
+            # Finnish layout review stands for it (work queue 0e); check_layout.py still runs on the page in CI
+            out[name] = {"mode": "none", "base": base, "from": rep[1], "why": WHY[FI_LAYOUT], "diff": diff, "categories": sorted(cats) + [FI_LAYOUT]}; continue
         if mode == "full" and part == "exercises":
             # an exercise added in this round and passed, then fixed: measured from that PASS it is a surviving exercise
             # that changed (full); measured from an earlier version the same reviewer passed it may still be only added
@@ -1993,6 +2053,11 @@ def verify_carries(folder, part="lesson"):
         if split and hash_at(c["base"], folder, "all") != c["from"]: errs.append(f"{what}: carry of {name}: commit {c['base']} does not hold hash {c['from']}"); continue
         cats, _, _ = changes(folder, c["base"], part, split)
         i = REVIEWS.index(name)
+        if FI_LAYOUT in c["categories"].split(","):     # a translation's layout carry (0e): re-derive each condition
+            if name != VISUAL: errs.append(f"{what}: carry of {name} names {FI_LAYOUT}, which only the visual reviewer has")
+            elif not cats or not cats <= LAYOUT_CATS: errs.append(f"{what}: {FI_LAYOUT} carry covers more than presentation changes: {', '.join(sorted(cats)) or 'nothing'}")
+            elif source_visual_ok(folder, part) and (why := source_layout_differs(folder, part)): errs.append(f"{what}: {FI_LAYOUT} carry: the translation is not cut as the Finnish text ({why})")
+            continue                                   # a Finnish source without a current visual PASS: status counts nothing, nothing to re-derive
         bad = [x for x in cats if RULES[x][i] != "none"]
         if bad: errs.append(f"{what}: carry of {name} covers changes it must review: {', '.join(WHY[x] for x in bad)}")
     return errs
