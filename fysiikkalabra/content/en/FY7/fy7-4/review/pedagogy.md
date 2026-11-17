@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 3fdc6d94a88f1134
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 0dbc6895eb261250
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+- 'Single long straight wire of a loudspeaker cable': a cable carries two opposite currents, so say 'one wire of the cable'. Otherwise B ~ 1/r is retrieved with numbers (10 to 5,0 µT correct); Ennusta (balance, angle) not revealed.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: en. Hash 3fdc6d94a88f1134 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. 

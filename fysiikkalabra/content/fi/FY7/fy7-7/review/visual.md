@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 47a824a2518c53b3
+CONTENT-HASH: 5a30bb80c9d64eab
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (generator loop figure, power graph p(t) with mean, cyclist scene); teacher-approved figures legible, no clipping.
+batch delta, round 1: fy7-7-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

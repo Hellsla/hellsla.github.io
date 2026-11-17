@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c31b0e2dcf823b64
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 811810bf0a6cb0f2
 ## Blocking
-- none
-
+(none)
 ## Polish
-- [Minor] The new sentence repeats the 'extra distance 2d' stated two sentences earlier; merge into one sentence linking 2d to the optical path difference 2nd.
-
+- none
 ## Checked
-- Diff: geometric extra path 2d vs optical path difference 2nd (bold term), 'optinen' added in the formula intro and summary; very thin soap film reflects very little and looks dark/almost black in reflected light.
-- The new term is defined where it is used and the summary matches.
-- Round 2: exit-ticket model answer now 'heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta', matching the lesson and summary.
-- Language checked: en. Hash c31b0e2dcf823b64 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Soap film wording with 'phase changes only because of distance' is clear and prevents the inversion confusion; Ennusta 1 (black thin film) not revealed.

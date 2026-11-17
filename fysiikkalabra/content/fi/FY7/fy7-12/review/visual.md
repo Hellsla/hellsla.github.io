@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 86e619410c1e58c7
+CONTENT-HASH: f4cbf47027780357
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (fibre figure, diamond vs glass, critical-angle graph, fibre scene, worked example, Pohdinta); paragraph split only.
+batch delta, round 1: fy7-12-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

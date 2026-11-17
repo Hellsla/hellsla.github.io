@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8cee327037e93db6
+CONTENT-HASH: ec8ad306b173c291
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (flux figures, Phi and emf graphs, moving rod, worked example, Pohdinta, Ennusta); nothing clipped, formulas readable.
+batch delta, round 1: fy7-5-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

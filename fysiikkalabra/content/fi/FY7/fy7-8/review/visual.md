@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 61a5dea8877e2a1f
+CONTENT-HASH: fe9489d3adf48114
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (loss-percentage graph, worked example, Pohdinta, Ennusta, sim at 390); paragraph split only, layout intact.
+batch delta, round 1: fy7-8-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

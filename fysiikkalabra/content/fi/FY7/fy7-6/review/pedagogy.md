@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e2cb78db43525510
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 68e759202638abad
 ## Blocking
-- none
 
 ## Polish
-- none
+- Nothing further.
 
 ## Checked
-- Diff: the recalled induction law now e_ka (average over dt) with one sentence 'kun vuo muuttuu tasaisesti, jännite on vakio, merkitään e'. Consistent with Sähkömagneettinen induktio; no other change.
-- Language checked: fi. Hash e2cb78db43525510 at start and end.
+batch delta review: Copper tube plus coil with a resting magnet is within the phenomenon; retrieval (no change of flux, no voltage) does not give the fall-time Ennusta answers. (SCOPE: Pohdinta retrieval task rewrite; delta only)

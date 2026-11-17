@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c2d11b5d1dc9750b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 8153c4d8afd7e776
 ## Blocking
-- none
 
 ## Polish
-- none
+- The current 0,50 A is not used; either drop it or let it sit in the context only.
 
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi. Hash c2d11b5d1dc9750b at start and end.
+batch delta review: Speaker-cable wire fits the chapter; 1/r retrieval kept, numbers check (10 -> 5,0 uT); no Ennusta revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)

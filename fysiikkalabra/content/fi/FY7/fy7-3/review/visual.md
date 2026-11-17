@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f14ff387e23fcdee
+CONTENT-HASH: ae5fdc4921d613b8
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (solenoid, electromagnet, B(r) graph with units, coil figure, worked example); figures legible, formulas set correctly.
+batch delta, round 1: fy7-3-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

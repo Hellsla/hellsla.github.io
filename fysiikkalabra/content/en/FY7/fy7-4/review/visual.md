@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8a3e939048d17360
+CONTENT-HASH: 0dbc6895eb261250
 
 ## Blocking
 
 ## Polish
+- [Minor] The changed retrieval task is collapsed in the capture; its opened text was judged from the diff (units and formulas in LaTeX, no plain quantities).
 
 ## Checked
-- batch delta review: first theory figure beside its paragraph at 1280 px (force on wire, right-hand rule, colours per convention); paragraph split only.
+- batch delta review: opened fy7-4-stage-herata-390.png (Pohdinta with the changed optional task title) and read the diff of the task prompt, choices and feedback; typography, wording and layout fine.

@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 629dab689ddd9d59
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: c468408378d09c4e
 ## Blocking
-- none
-
+(none)
 ## Polish
 - none
-
 ## Checked
-- Diff: fringe spacing depends on geometry (slits, screen), not only wavelength, fringes can be mm-cm apart; laser safety paragraph (low-power teaching laser, teacher's instructions, no beam or reflected beam into eyes, check reflections first).
-- The old claim 'details are very small' was a motivation trap; the new text sets up the double-slit geometry that follows.
-- Round 2: en paragraph split only.
-- Language checked: en. Hash 629dab689ddd9d59 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Two places in the film with equal phase: 1,5 λ gives destructive, retrieved; Ennusta (denser grating, colour) not revealed.

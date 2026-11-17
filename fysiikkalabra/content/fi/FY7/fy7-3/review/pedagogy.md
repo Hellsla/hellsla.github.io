@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: ae5fdc4921d613b8
 ## Blocking
-- none
 
 ## Polish
-- none
+- Prompt states 'osoittaa pohjoiseen' and then asks where it turns: the question is nearly answered by its own premise. Drop 'pohjoiseen' from the prompt.
 
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi. Hash f3eacd571505584e at start and end.
+batch delta review: Compass without current is the baseline the chapter's phenomenon needs; no Ennusta (coil length, coil end) is revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)

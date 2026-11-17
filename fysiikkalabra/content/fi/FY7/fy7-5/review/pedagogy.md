@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9156a50e302c58c1
-
+CONTENT-HASH: ec8ad306b173c291
 ## Blocking
-(none)
 
 ## Polish
-- inquiry.json hook — the earlier polish is done: the hook now ends at "magneetti käämin vieressä ei tuottanut virtaa" and no longer says that movement produces a current. The question still works without it.
+- Third distractor '|q|v = 3,2e-13 N' has the wrong unit (C m/s); a student can dismiss it on units, not on the misconception. Fine but weak.
 
 ## Checked
-- Delta: the hook gives the dynamo phenomenon and Faraday's null result; whether motion matters is left to Ennusta 1 and the simulation. The other polish items from round 1 are outside this diff and remain optional.
+batch delta review: Moving electron in a dynamo magnet belongs to the induction phenomenon and retrieves F = qvB; no Ennusta revealed (rest/no-change is not given away). (SCOPE: Pohdinta retrieval task rewrite; delta only)

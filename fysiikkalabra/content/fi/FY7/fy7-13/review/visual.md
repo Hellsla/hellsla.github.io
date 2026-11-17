@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 955e157e195a6cf4
+CONTENT-HASH: 0c93728f3baf1a43
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (double slit, intensity graph, grating, geometry diagrams, CD scene); teacher-approved figures legible, nothing clipped.
+batch delta, round 1: fy7-13-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.
