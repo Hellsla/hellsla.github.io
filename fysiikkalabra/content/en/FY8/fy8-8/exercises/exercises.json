@@ -286,6 +286,19 @@
           "feedback": "Check the atomic numbers of each line: add up the subscripts on both sides of the arrow."
         }
       ]
+    },
+    {
+      "id": "fy8-8-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-8/spectrum",
+      "text": "The figure shows a gamma spectrum of a cobalt-60 source (schematic). After the beta minus decay the nickel-60 nucleus emits two gamma photons one after the other, and the spectrum has two strong peaks. The photon of lower energy is emitted first, and the photon of higher energy takes the nucleus to the ground state.\n\nA long measurement also found a weak peak at $826.1\\,\\text{keV}$ in the spectrum (example data). Its photon is emitted when the nucleus moves from an unknown level X to the lowest excited level. Level X is above the lowest excited level.\n\na) Read the energies of the peaks from the figure and deduce the energy of the lowest excited level above the ground state.\n\nb) Calculate the energy of level X above the ground state and draw a level diagram with the ground state, the lowest excited level, level X and the transitions.\n\nThe result of part b) is entered in the answer field.",
+      "answer": 2158.6,
+      "unit": "keV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -409,6 +422,41 @@
           [
             "5",
             "1501.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L3-06",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "figure": "fy8-8/spectrum",
+      "text": "The figure shows a gamma spectrum of a cobalt-60 source (schematic), and the table gives two weak extra peaks (example data). After the beta minus decay the nickel-60 nucleus is on the top excited level C. Below it there are two other excited levels: the lowest level A and level B between them.\n\nThe strong peaks are the transitions C → A and A → ground state, but the figure does not show which is which. The weak peak $826.1\\,\\text{keV}$ is the transition B → A and the weak peak $347.1\\,\\text{keV}$ is the transition C → B.\n\na) Deduce the energies of levels A, B and C above the ground state. Justify which of the strong peaks is the transition A → ground state, and draw a level diagram with the transitions.\n\nb) Calculate the energy of the photon the nucleus would emit in moving directly from level C to the ground state.\n\nc) Calculate the wavelength of this photon in picometres ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).\n\nThe result of part c) is entered in the answer field.",
+      "answer": 0.495,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "The weak extra peaks",
+        "columns": [
+          "Peak",
+          "Transition",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "Weak 1",
+            "B → A",
+            "826.1"
+          ],
+          [
+            "Weak 2",
+            "C → B",
+            "347.1"
           ]
         ]
       }

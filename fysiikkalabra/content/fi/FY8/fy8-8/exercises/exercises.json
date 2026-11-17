@@ -286,6 +286,19 @@
           "feedback": "Tarkista jokaisesta rivistä varausluvut: laske alaindeksien summa nuolen kummallakin puolella."
         }
       ]
+    },
+    {
+      "id": "fy8-8-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-8/spectrum",
+      "text": "Kuvassa on koboltti-60-lähteen gammaspektri (kaavamainen). Beeta miinus -hajoamisen jälkeen nikkeli-60-ydin lähettää peräkkäin kaksi gammafotonia, ja spektrissä on kaksi vahvaa piikkiä. Pienempienergiainen fotoni lähtee ensin, ja suurempienergiainen vie ytimen perustilaan.\n\nPitkässä mittauksessa spektristä löytyi lisäksi heikko piikki energialla $826{,}1\\,\\text{keV}$ (esimerkkiaineisto). Sen fotoni lähtee, kun ydin siirtyy tuntemattomalta tasolta X alimmalle viritystasolle. Taso X on alinta viritystasoa ylempänä.\n\na) Lue piikkien energiat kuvasta ja päättele ytimen alimman viritystason energia perustilan yläpuolella.\n\nb) Laske tason X energia perustilan yläpuolella ja piirrä tasokaavio, jossa ovat perustila, alin viritystaso, taso X ja siirtymät.\n\nB-kohdan tulos kirjoitetaan vastauskenttään.",
+      "answer": 2158.6,
+      "unit": "keV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -409,6 +422,41 @@
           [
             "5",
             "1501.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy8-8-L3-06",
+      "level": 3,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "figure": "fy8-8/spectrum",
+      "text": "Kuvassa on koboltti-60-lähteen gammaspektri (kaavamainen), ja taulukossa on kaksi heikkoa lisäpiikkiä (esimerkkiaineisto). Beeta miinus -hajoamisen jälkeen nikkeli-60-ydin on ylimmällä viritystasolla C. Sen alapuolella on kaksi muuta viritystasoa: alin taso A ja taso B niiden välissä.\n\nVahvat piikit ovat siirtymät C → A ja A → perustila, mutta kuvasta ei näe, kumpi on kumpi. Heikko piikki $826{,}1\\,\\text{keV}$ on siirtymä B → A ja heikko piikki $347{,}1\\,\\text{keV}$ on siirtymä C → B.\n\na) Päättele tasojen A, B ja C energiat perustilan yläpuolella. Perustele, kumpi vahvoista piikeistä on siirtymä A → perustila, ja piirrä tasokaavio siirtymineen.\n\nb) Laske energia, jolla ydin lähettäisi fotonin siirtyessään suoraan tasolta C perustilaan.\n\nc) Laske tämän fotonin aallonpituus pikometreinä ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nC-kohdan tulos kirjoitetaan vastauskenttään.",
+      "answer": 0.495,
+      "unit": "pm",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Heikot lisäpiikit",
+        "columns": [
+          "Piikki",
+          "Siirtymä",
+          "$E_\\gamma\\,(\\text{keV})$"
+        ],
+        "rows": [
+          [
+            "Heikko 1",
+            "B → A",
+            "826.1"
+          ],
+          [
+            "Heikko 2",
+            "C → B",
+            "347.1"
           ]
         ]
       }
