@@ -9,4 +9,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: mcr.microsoft.com/playwright/python:v1.65.0-noble
-fy6-3: reviewed (science=PASS (carried over: formula-names,reflow), pedagogy=PASS (carried over: formula-names,reflow), visual=PASS); exercises: draft (science=PASS (carried over: md-paragraphs,typography), pedagogy=PASS (carried over: md-paragraphs,typography), visual=stale)
+fy6-3: reviewed (science=PASS (carried over: formula-names,reflow), pedagogy=PASS (carried over: formula-names,reflow), visual=PASS); exercises: reviewed (science=PASS (carried over: md-paragraphs,typography), pedagogy=PASS (carried over: md-paragraphs,typography), visual=PASS)
