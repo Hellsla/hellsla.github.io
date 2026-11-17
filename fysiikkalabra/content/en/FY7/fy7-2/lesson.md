@@ -417,11 +417,15 @@ In the velocity selector of a mass spectrometer the electric field strength is $
 
 <!-- vaihe -->
 
-**Given and find.** In the selector $E = 6.00 \cdot 10^{4}\,\text{V/m}$ and $B_1 = 0.200\,\text{T}$, in the bending field $B_2 = 0.500\,\text{T}$, the distance of the point of impact from the slit is $d = 24.9\,\text{cm}$ and the charge of the ion is $q = 1.602 \cdot 10^{-19}\,\text{C}$, which is positive, so $|q| = q$. We are asked for the mass $m$ of the ion.
+**Given and find.** In the selector $E = 6.00 \cdot 10^{4}\,\text{V/m}$ and $B_1 = 0.200\,\text{T}$, in the bending field $B_2 = 0.500\,\text{T}$, the distance of the point of impact from the slit is $d = 24.9\,\text{cm}$ and the charge of the ion is $q = 1.602 \cdot 10^{-19}\,\text{C}$, which is positive, so $|q| = q$.
+
+We are asked for the mass $m$ of the ion.
 
 <!-- vaihe -->
 
-**Principle.** On the ions that passed straight through the selector the electric and magnetic forces were equal, so their speed is $v = E : B_1$. In the bending field the magnetic force is perpendicular to the velocity and acts as the centripetal force, so the ion travels along a semicircle. The distance of the point of impact from the slit is the diameter of the path, $d = 2r$.
+**Principle.** On the ions that passed straight through the selector the electric and magnetic forces were equal, so their speed is $v = E : B_1$.
+
+In the bending field the magnetic force is perpendicular to the velocity and acts as the centripetal force, so the ion travels along a semicircle. The distance of the point of impact from the slit is the diameter of the path, $d = 2r$.
 
 <!-- vaihe -->
 
@@ -460,7 +464,9 @@ In atomic mass units $m = 3.324 \cdot 10^{-26}\,\text{kg} : (1.661 \cdot 10^{-27
 
 <!-- vaihe -->
 
-**Reasonableness.** According to tables the mass of a neon-20 atom is $19.99\,\text{u}$, so the ions are neon-20; compared with the mass of a proton the ion is about $20$ times heavier, as it should be. Neon also has the isotope neon-22: its ions would land $27.4\,\text{cm}$ from the slit, or about $2.5\,\text{cm}$ farther, because at the same speed the radius grows with the mass. The speed $3.00 \cdot 10^{5}\,\text{m/s}$ is about $0.1\,\%$ of the speed of light, so the formula $r = mv : (|q|B)$ holds well.
+**Reasonableness.** According to tables the mass of a neon-20 atom is $19.99\,\text{u}$, so the ions are neon-20; compared with the mass of a proton the ion is about $20$ times heavier, as it should be.
+
+Neon also has the isotope neon-22: its ions would land $27.4\,\text{cm}$ from the slit, or about $2.5\,\text{cm}$ farther, because at the same speed the radius grows with the mass. The speed $3.00 \cdot 10^{5}\,\text{m/s}$ is about $0.1\,\%$ of the speed of light, so the formula $r = mv : (|q|B)$ holds well.
 
 ## Common misconception
 Many people think that a magnetic field pulls a charged particle in the direction of the field or towards a pole, as a magnet pulls an iron nail, and that the field accelerates the particle. The magnetic force, however, is always perpendicular to both the velocity and the field. That is why it does no work and does not change the speed of the particle: it only turns the direction of the motion. The speed of a particle can be increased only by an electric field, and that is why accelerators contain both electric fields and magnets.

@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: the uniform field",
+      "title": "Review: work",
       "optional": true,
-      "prompt": "There is a uniform electric field between two parallel plates. A proton is first close to the positive plate and then halfway between the plates. What happens to the electric force on it?",
+      "prompt": "A force of $2.0 \\cdot 10^{-15}\\,\\text{N}$ acts on an electron in the direction of its motion. The electron moves $0.50\\,\\text{m}$ in the direction of the force. How much work does the force do?",
       "choices": [
         {
-          "text": "The force is equal in size and in the same direction at both places.",
+          "text": "$1.0 \\cdot 10^{-15}\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. In a uniform field the field strength is the same at every point, so the force $F = qE$ is the same everywhere between the plates (chapter *Uniform electric field*). That is why the field does work in a similar way to the weight near the surface of the Earth."
+          "feedback": "Correct. The work of a constant force along the direction of motion is $$\\begin{aligned} W &= Fs \\\\ &= 2.0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0.50\\,\\text{m} \\\\ &= 1.0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$ (chapter *Work and energy*). Today we ask how a potential difference gives an electron kinetic energy."
         },
         {
-          "text": "The force is greater near the positive plate, because the proton is closer to the charge that repels it.",
-          "feedback": "Between the plates the field is uniform: all the charges of the plates together produce the same field strength at every point. So the force $F = qE$ is the same near a plate and in the middle (chapter *Uniform electric field*)."
+          "text": "$4.0 \\cdot 10^{-15}\\,\\text{J}$",
+          "feedback": "You divided the force by the distance. Work is force times distance, $W = Fs$, so $W = 1.0 \\cdot 10^{-15}\\,\\text{J}$: a shorter distance means less work."
         },
         {
-          "text": "The force is zero halfway, because the effects of the plates cancel each other there.",
-          "feedback": "The plates do not cancel each other's effect: the positive plate repels the proton and the negative plate attracts it, so both effects point in the same direction. The field and the force are the same everywhere between the plates (chapter *Uniform electric field*)."
+          "text": "$2.0 \\cdot 10^{-15}\\,\\text{J}$",
+          "feedback": "The work depends on the distance as well as on the force. $W = Fs$, and the electron moves only $0.50\\,\\text{m}$, so $W = 1.0 \\cdot 10^{-15}\\,\\text{J}$."
         }
       ]
     },

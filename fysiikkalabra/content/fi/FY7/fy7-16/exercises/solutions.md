@@ -121,7 +121,9 @@
 ## fy7-16-L1-06
 **Kysytty:** miksi induktiolieden lasilevy ei lämpene itsestään, vaikka kelan magneettikenttä kulkee sen läpi
 **Periaate:** Induktioliedessä kela synnyttää vaihtuvan magneettikentän, ja vaihtuva vuo indusoi johtavaan kappaleeseen pyörrevirtoja. Pyörrevirrat muuttavat sähköenergiaa sisäenergiaksi resistanssissa teholla $RI^2$. Lämpeneminen vaatii siis sen, että kappaleessa voi kulkea sähkövirta.
-**Mallivastaus:** Lasi ei johda sähköä, joten siihen ei synny pyörrevirtoja, jotka muuttaisivat sähköenergiaa sisäenergiaksi. Vaihtoehto, jonka mukaan lasi estää magneettikentän kulun, on väärä, koska kenttä kulkee lasin läpi ja lämmittää kattilan pohjaa. Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, koska lämpeneminen riippuu virrasta eikä sulamislämpötilasta. Vaihtoehto, jonka mukaan pyörrevirrat kumoavat toisensa Lenzin lain mukaan, on väärä, koska Lenzin laki kertoo virran suunnan eikä poista virtaa.
+**Mallivastaus:** Lasi ei johda sähköä, joten siihen ei synny pyörrevirtoja, jotka muuttaisivat sähköenergiaa sisäenergiaksi. Vaihtoehto, jonka mukaan lasi estää magneettikentän kulun, on väärä, koska kenttä kulkee lasin läpi ja lämmittää kattilan pohjaa.
+
+Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, koska lämpeneminen riippuu virrasta eikä sulamislämpötilasta. Vaihtoehto, jonka mukaan pyörrevirrat kumoavat toisensa Lenzin lain mukaan, on väärä, koska Lenzin laki kertoo virran suunnan eikä poista virtaa.
 
 ## fy7-16-L1-07
 **Annettu:** teho alussa $P_0 = 4{,}0\,\text{mW}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, pituus $L = 45\,\text{km}$
@@ -206,7 +208,9 @@ Väärät suuruusluokat syntyvät yksikkövirheistä. Jos pituus sijoitetaan kil
 **Muunnokset:** $f = 1{,}30 \cdot 10^{5}\,\text{Hz}$, $f' = 1{,}00 \cdot 10^{5}\,\text{Hz}$ ja $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
 **Sijoitus:** a) Nimittäjä on $15 \cdot 2\pi \cdot 1{,}30 \cdot 10^{5}\,\text{Hz} = 1{,}225 \cdot 10^{7}\,\text{Hz}$, joten vuot ovat $0{,}377;\ 0{,}221;\ 0{,}124;\ 0{,}0677;\ 0{,}0384\,\mu\text{Wb}$ etäisyyksillä $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
 b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5}\,\text{Hz}} = 0{,}1061\,\mu\text{Wb}$ on vuoarvojen $0{,}1241\,\mu\text{Wb}$ ($12\,\text{mm}$) ja $0{,}0677\,\mu\text{Wb}$ ($16\,\text{mm}$) välissä: $$\begin{aligned} d &= 12\,\text{mm} \\ &+ 4\,\text{mm} \cdot \dfrac{0{,}1241 - 0{,}1061}{0{,}1241 - 0{,}0677} \\ &= 13{,}28\,\text{mm} \end{aligned}$$
-**Vastaus:** $13\,\text{mm}$, kaksi merkitsevää numeroa; interpolointi on arvio, koska vuo ei pienene lineaarisesti. c) Sama vuo vaihtelee taajuudella $100\,\text{kHz}$ hitaammin kuin taajuudella $130\,\text{kHz}$, joten indusoituva jännite on pienempi. Raja $1{,}0\,\text{V}$ ylittyy vain suuremmalla vuolla eli lähempänä laturia. Etäisyyden saisi takaisin lisäämällä vastaanotinkäämin kierroksia, koska jännite on suoraan verrannollinen kierrosten lukumäärään.
+**Vastaus:** $13\,\text{mm}$, kaksi merkitsevää numeroa; interpolointi on arvio, koska vuo ei pienene lineaarisesti.
+
+c) Sama vuo vaihtelee taajuudella $100\,\text{kHz}$ hitaammin kuin taajuudella $130\,\text{kHz}$, joten indusoituva jännite on pienempi. Raja $1{,}0\,\text{V}$ ylittyy vain suuremmalla vuolla eli lähempänä laturia. Etäisyyden saisi takaisin lisäämällä vastaanotinkäämin kierroksia, koska jännite on suoraan verrannollinen kierrosten lukumäärään.
 **Järkevyys:** Raja-arvo $0{,}1061\,\mu\text{Wb}$ on pienempi kuin vuo etäisyydellä $12\,\text{mm}$ mutta suurempi kuin etäisyydellä $16\,\text{mm}$, joten $13{,}3\,\text{mm}$ on näiden välissä. Taajuudella $130\,\text{kHz}$ raja-arvo olisi $0{,}0816\,\mu\text{Wb}$ ja etäisyys noin $15{,}0\,\text{mm}$, joten taajuuden lasku lyhentää toimintaetäisyyttä, kuten c-kohdassa. Kierrosten lisäys $15$:stä $20$:een kasvattaisi jännitettä kertoimella $1{,}33$ ja korvaisi taajuuden laskun kertoimella $1{,}30$.
 
 ## fy7-16-L3-05
@@ -217,7 +221,11 @@ b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5
 **Muunnokset:** $f = 3{,}0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3{,}0 \cdot 10^{-3}\,\text{T}$, $r = 0{,}090\,\text{m}$ ja $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** a) $\Phi_0 = 3{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}090\,\text{m})^2 = 7{,}63 \cdot 10^{-5}\,\text{Wb}$ ja $$\begin{aligned} e_0 &= 2\pi \cdot 3{,}0 \cdot 10^{4}\,\text{Hz} \\ &\cdot 7{,}63 \cdot 10^{-5}\,\text{Wb} \\ &= 14{,}39\,\text{V} \end{aligned}$$. Tehot $P = \dfrac{(14{,}39\,\text{V})^2}{2R}$ ovat kattilalle A $2{,}59\,\text{kW}$, B $2{,}07\,\text{kW}$ ja C $1{,}29\,\text{kW}$.
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42{,}43\,\text{kHz}$
-**Vastaus:** $42\,\text{kHz}$, kaksi merkitsevää numeroa kuten lähtötiedot. Kattilan C resistanssi on kaksinkertainen, joten sen teho on puolet; taajuuden nosto kasvattaa vuon muutosnopeutta ja jännitettä, ja teho kasvaa taajuuden neliössä. c) Pyörrevirran oma magneettikenttä jätettiin huomiotta: Lenzin lain mukaan se vastustaa vuon muutosta, joten todellinen virta ja teho ovat mallin antamaa pienemmät. Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa suuren osan vuosta, joten malli ei päde niille; teräksen ferromagnetismi taas lisää lämpenemistä.
+**Vastaus:** $42\,\text{kHz}$, kaksi merkitsevää numeroa kuten lähtötiedot. Kattilan C resistanssi on kaksinkertainen, joten sen teho on puolet; taajuuden nosto kasvattaa vuon muutosnopeutta ja jännitettä, ja teho kasvaa taajuuden neliössä.
+
+c) Pyörrevirran oma magneettikenttä jätettiin huomiotta: Lenzin lain mukaan se vastustaa vuon muutosta, joten todellinen virta ja teho ovat mallin antamaa pienemmät.
+
+Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa suuren osan vuosta, joten malli ei päde niille; teräksen ferromagnetismi taas lisää lämpenemistä.
 **Järkevyys:** Tehojen suhde $2{,}59\,\text{kW} : 1{,}29\,\text{kW} = 2{,}0$ vastaa resistanssien suhdetta $0{,}080 : 0{,}040 = 2{,}0$. Taajuuden nosto kertoimella $\sqrt{2} = 1{,}414$ kasvattaa tehon kertoimella $1{,}414^2 = 2{,}0$, joten kattilan C teho taajuudella $42{,}4\,\text{kHz}$ on $1{,}29\,\text{kW} \cdot 2{,}0 = 2{,}59\,\text{kW}$.
 
 ## fy7-16-L2-09

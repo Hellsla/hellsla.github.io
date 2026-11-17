@@ -226,6 +226,13 @@ tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastauslu
 fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
 
+FY7 tehty (claude/fy7-lapikaynti, 0f-PR #681): fy7-1…fy7-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy)
+ja esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`), ulkoasu delta PASS. Opit: round.py --batch tarkistuksineen kestää
+noin 15 min per luku (layout), joten FY7:ssä ajettiin --skip-checks ja layout jätettiin CI:lle; tehtäväsarjojen visual-raportit
+leimattiin ensin suomen hashilla en- ja fi-easy-kielelle (verify ERROR), ja ne katselmoitiin uudelleen oman kielen hashilla
+(raporttia ei korjata käsin). 8j (FY7) ja vanhentuneet tehtäväkatselmoinnit (fy7-4, 5, 6, 10, 12, 16; en fy7-6 ja fy7-16
+science full; en fy7-16 tehtävä 16-17:n kuvan aria-label on suomeksi) jäivät PR 2:een; 8g jäi ottamatta (budjetti).
+
 FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
 esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
 kappalejako vaatisi täydet tiede- ja pedagogiikkakatselmoinnit; ensin jaetun tiedoston muutos `reviews.py`:hin.
@@ -664,3 +671,21 @@ jaettu eri kohdasta kuin suomeksi; käännöksen oma ulkoasun FAIL. Ei kata koht
 Säästöarvio (FY6 #662, 24 ulkoasusarjaa, kolme kieltä): ennen 72 ulkoasukatselmointia (fi, en, fi-easy), nyt 24 suomeksi + 48 carryä. Mitattu keskiarvo
 (`usage.tsv`, 94 ulkoasun delta-katselmointia): 538 k tokenia ja 0,30 $ per katselmointi, joten 48 katselmointia ≈ 26 M tokenia ≈ 14 $ ja 48 vuoroa. Ylärajaa:
 säästö toteutuu vain käännöksille, joiden kappalejako vastaa suomea; muut katselmoidaan kuten ennen.
+
+## 8p. `reviews.py`: kaavan sanat ja uusi tehtävä (2026-11-17, PR #684)
+(a) `_tr_text`: kaavan kaikki `\text{}`/`\mathrm{}`-sanat (yli 3 merkkiä) normalisoidaan paikanpitäjäksi (`FORMULA_WORD`); enintään 3 merkin sanat
+(N, kg, min, MeV, vrk) pysyvät tiukkoina, jotta yksikön muutos (vrk → s) näkyy yhä; luvut, operaattorit ja symbolit tiukkoina. (b) Uuden tehtävän oma `"id"`/`"level"`-rivi
+ei ole tason tai id:n muutos (`_only_added_ids`): jos kaikki vanhat tehtävät ovat samoilla id:illä, tasoilla ja järjestyksessä, `levels`-luokka poistuu.
+Olemassa olevan tehtävän tason tai id:n muutos antaa yhä FULL:n. Testit `test_reviews.py` "8p"; `reviews.py verify` koko historialle ilman virheitä.
+
+## §6 fy8-11 (PR #682, 2026-11-17)
+Kuvatehtävät fy8-11-L2-09 (`fy8-11/sidosenergia-luku`) ja fy8-11-L3-06 (`fy8-9/aktiivisuus`), fi/en/fi-easy; ei taulukkotehtävää (FY8:ssa luvuissa 1, 4, 7, 10, 13, 16); 8l-b: `caption`-kentissä ei merkintää. Opit: en-tiede ei kulkenut carryllä, koska
+`translation_differs` vertaa alaindeksin ulkopuolista `\text{}`-sanaa (`\text{lämpöarvo}` / `\text{heating value}`, L3-05) ja `added-exercise` antoi pedagogiikalle full-katselmoinnin joka kielellä; molemmat siirrettiin erilliseen jaettuun korjaukseen (8p).
+Kulutus: agenttien kontekstien summa noin 480 k (katto 250 k ylittyi, koordinaattori salli jatkon).
+
+## §6 fy8-12 (PR #685, 2026-11-17)
+Kuvatehtävät fy8-12-L2-09 (lue d½ ja nettopulssitaajuus, 30 mm) ja fy8-12-L3-07 (paksuus, jolla taajuus on 1/50 alkuarvosta), molemmat kuvalla `fy8-12/tuntematon`, fi/en/fi-easy; ei taulukkotehtävää (FY8:ssa luvuissa 1, 4, 7, 10, 13, 16); 8l-b: ei merkintöjä.
+Opit: pedagogiikka hylkäsi L3-07:n rajan 1/20 (sama lasku kuin luvun esimerkissä) → 1/50; `unit` on kielineutraali kenttä (`check_i18n.py`), joten L2-09:n yksikkö on `1/min` kaikilla kielillä, ei käännetty `pulses/min`; 360 px:n leikkautumiset korjattiin jakamalla sijoitusketju riveiksi.
+
+## §6 fy8-13 (PR #688, 2026-11-17)
+Kuvatehtävät fy8-13-L2-10 ja fy8-13-L3-06 (molemmat `fy8-13/vaimennus`), fi/en/fi-easy. Taulukkotehtävä (luku 13 kuuluu lukuihin 4/7/10/13/16) jäi pois: `docs/mafy-arvot.tsv`:ssä ei ole luvulle VERIFIED-riviä, eikä säteilyannoksen taulukkoa löytynyt mafytaulukot.fi:stä; lisää rivi, kun taulukon URL on tiedossa. Opit: (1) en- ja fi-easy-tiede ei siirry carryllä, koska `translation_differs` löytää vanhoista tehtävistä eron (en fy8-13-L2-03: alaindeksi `ka`/`avg`; fi-easy L2-09: ylimääräinen `$\text{mSv}$`-kaava tekstissä). (2) Järkevyys-rivin kuperuusperustelu meni väärin kahdesti (kupera käyrä on jänteen alapuolella); kirjoita "suora interpolointi antaa X, kupera käyrä on sen alapuolella". (3) Tiedekatselmoinnin Polish: L2-10:n d½ 5,0 cm vs. luvun noin 4 cm (Cs-137); fi-easy: "suora interpolointi", "kupera", "janan" vaikeita. Kulutus ylitti katon (konteksteja yht. noin 795 k, 168 % vertailusta; kolme kierrosta).

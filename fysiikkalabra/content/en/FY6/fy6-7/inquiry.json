@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Review: electric power",
       "optional": true,
-      "prompt": "The filament lamp of a desk lamp is connected to the $230\\,\\text{V}$ mains, and a current of $0.26\\,\\text{A}$ flows through it. What is the power of the lamp?",
+      "prompt": "A television is connected to the $230\\,\\text{V}$ mains, and a current of $0.43\\,\\text{A}$ flows through it. What is the power of the television?",
       "choices": [
         {
-          "text": "About $60\\,\\text{W}$, because power is voltage times current.",
+          "text": "About $99\\,\\text{W}$, because power is voltage times current.",
           "correct": true,
-          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a lamp uses and what it costs."
+          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a device uses and what it costs."
         },
         {
-          "text": "About $880\\,\\text{W}$, because power is voltage divided by current.",
-          "feedback": "Voltage divided by current is resistance, not power: $230\\,\\text{V} : 0.26\\,\\text{A} \\approx 880\\,\\Omega$. Power is voltage times current, $P = UI \\approx 60\\,\\text{W}$ (chapter *Electric power and the heating of a resistor*)."
+          "text": "About $530\\,\\text{W}$, because power is voltage divided by current.",
+          "feedback": "Voltage divided by current is resistance, not power: $230\\,\\text{V} : 0.43\\,\\text{A} \\approx 530\\,\\Omega$. Power is voltage times current, $P = UI \\approx 99\\,\\text{W}$ (chapter *Electric power and the heating of a resistor*)."
         },
         {
-          "text": "About $0.26\\,\\text{W}$, because the power of a lamp is the same as its current.",
-          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*)."
+          "text": "About $0.43\\,\\text{W}$, because the power of a device is the same as its current.",
+          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*)."
         }
       ]
     },

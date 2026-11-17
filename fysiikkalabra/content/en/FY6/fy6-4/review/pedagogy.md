@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d4fbd719c4387262
+CONTENT-HASH: e250902d768e474a
 
 ## Blocking
 
-
 ## Polish
-
+- The photo caption raises the question of one broken lamp; the paragraph before it answers it for parallel, so the photo works as an illustration rather than a prompt. Acceptable as it is.
 
 ## Checked
-- Structure identical to the Finnish (342 lines, all stages and activities present); learning goals complete; natural textbook English.
-- Sim legend is a short 13-word sentence: "Dot speed shows the current; its direction is from positive terminal to negative."
-- Re-review after the internal-energy concept fix: lesson, inquiry (feedback, howto) and the lang key sims.fy6-4.samavirta match the Finnish; terms and numbers unchanged; the sim shows the translated label.
+batch delta review: Christmas-lights photo after the parallel paragraph (alt text and caption clear, link to the lesson topic), Recall Ohm task reworded around one lamp with constant resistance (same numbers, clear), chapter title fix in prior list; new figure caption translation consistent.

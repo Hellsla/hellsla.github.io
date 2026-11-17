@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 177a7d99989cf3ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 71a4050c4166d92a
 ## Blocking
-- none
 
 ## Polish
 
-
 ## Checked
-- P = UI introduced as a model for in-phase current and voltage / power factor about 1; the 8,7 A kettle example follows without a jump. Real AC dependence on phase difference mentioned in one sentence, appropriate for the level.
+batch delta review: television P=UI retrieval; Finnish clear, feedback names each error, links to the lesson's topic; split Tunnetut ja kysytty paragraphs consistent.

@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Kertaa: virta ja jännite",
       "optional": true,
-      "prompt": "Mikä seuraavista kuvaa oikein sähkövirtaa ja jännitettä?",
+      "prompt": "Työpöydän piirissä paristo, lamppu ja vastus ovat peräkkäin. Lamppu palaa. Mikä seuraavista kuvaa oikein piirin sähkövirtaa ja jännitettä?",
       "choices": [
         {
           "text": "Virta on varauksen virtaus johtimen poikkileikkauksen läpi, ja jännite on kahden pisteen välinen suure.",

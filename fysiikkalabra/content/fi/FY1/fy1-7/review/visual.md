@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ae298387c5a48982
+CONTENT-HASH: b0951191567d27b3
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json, last choice feedback — "Muunsit tilavuuden kuin pituuden" is clumsy — "Muunsit tilavuuden samoin kuin pituuden, kertomalla vain luvulla $10^{-2}$."
 
 ## Checked
-- Opened fy1-7-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.
+- batch delta review (fi, round 2, fy1-7): changed unit-conversion recap task read in full (units, $\cdot10^{-5}$, aligned chain, decimal comma); captures opened: stage-herata-390 (recap box closed, nothing clipped); figures unchanged.

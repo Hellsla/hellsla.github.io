@@ -571,7 +571,9 @@ Syventävä esimerkki. Polarisoimattoman valon intensiteetti on $840\,\text{W/m}
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Polarisoimattoman valon intensiteetti on $I_0 = 840\,\text{W/m}^2$. Läpäisysuuntien välinen kulma on $\theta = 35^\circ$. Kysytään intensiteettiä $I_2$ toisen polarisaattorin jälkeen.
+**Tunnetut ja kysytty.** Polarisoimattoman valon intensiteetti on $I_0 = 840\,\text{W/m}^2$. Läpäisysuuntien välinen kulma on $\theta = 35^\circ$.
+
+Kysytään intensiteettiä $I_2$ toisen polarisaattorin jälkeen.
 
 <!-- vaihe -->
 

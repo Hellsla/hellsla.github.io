@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c66f27034b63f0f5
+CONTENT-HASH: 25620b211e5bd87b
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the single change is virhe-arvio to virhearvio (one word, correct compound) in the formula paragraph, the stage Tulos and the inquiry solution; consistent, no other effect.
+batch delta review: the retrieval prompt in "Kertaa: virta ja jännite" now names the bench circuit (battery, lamp and resistor in series, lamp lit), which ties the prior-knowledge question to the phenomenon, is clear Finnish and gives no answer away; the choices and feedback still fit; paragraph changes are presentation only.

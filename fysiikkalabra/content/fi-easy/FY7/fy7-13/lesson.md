@@ -992,7 +992,9 @@ Punaisen laserosoittimen säde osuu kohtisuoraan hilaan, jossa on $300$ viivaa m
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Viivatiheys on $N = 300$ viivaa millimetrillä, varjostimen etäisyys on $L = 2{,}00\,\text{m}$ ja maksimien $\pm 1$ välinen etäisyys on $79{,}2\,\text{cm}$. Siksi ensimmäinen maksimi on etäisyydellä $x = 39{,}6\,\text{cm}$ keskimaksimista. Kertaluku on $k = 1$. Kysytään aallonpituutta $\lambda$.
+**Tunnetut ja kysytty.** Viivatiheys on $N = 300$ viivaa millimetrillä, varjostimen etäisyys on $L = 2{,}00\,\text{m}$ ja maksimien $\pm 1$ välinen etäisyys on $79{,}2\,\text{cm}$. Siksi ensimmäinen maksimi on etäisyydellä $x = 39{,}6\,\text{cm}$ keskimaksimista. Kertaluku on $k = 1$.
+
+Kysytään aallonpituutta $\lambda$.
 
 <!-- vaihe -->
 

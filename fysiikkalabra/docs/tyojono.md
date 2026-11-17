@@ -26,6 +26,7 @@ kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan P
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
+Varattu: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
 Jokainen yhdistetty PR vanhentaa kaikkien avoimien PR:ien `site/`-kopion, joten jokainen haara yhdistää mainin ja
 rakentaa `site/`:n uudelleen keskimäärin 1,6 kertaa (juuren `CLAUDE.md` sääntö 4). Tavoite: sisältö-PR ei sisällä
 `site/`-muutoksia; CI rakentaa sivuston ja `ruukkilabra-deploy.yml` julkaisee rakennetun version mainin ajon jälkeen.
@@ -35,6 +36,9 @@ rakennusta" -tarkistus korvataan; (3) miten opettaja näkee PR:n vaikutuksen siv
 CI:n artefaktina tai `reviews.py impact`); (4) säilyykö `site/` repossa CI:n kirjoittamana vai poistuuko se kokonaan;
 (5) julkaisun palautus virhetilanteessa; (6) siirtymä avoimille PR:ille. Julkaisusääntö ei muutu: sivulle pääsee vain
 katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus omina PR:inään vasta hyväksynnän jälkeen.
+
+### 0h. Generoidut tiedostot CI:lle (opettaja 2026-11-17, 0g:n jälkeen)
+`docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Jäljellä, opettajan päätettävä: erä 1
@@ -60,8 +64,8 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
-lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678); tila: `python scripts/exercise_bank.py FY8`.
-Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-11…fy8-16 ja FY9.
+lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682), fy8-12 (#685), fy8-13 (#688; ei taulukkotehtävää: ei VERIFIED-riviä, MAFY-taulukkoa ei löytynyt); tila: `python scripts/exercise_bank.py FY8`.
+Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-14…fy8-16 ja FY9.
 Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä
 versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
@@ -72,8 +76,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana). Jäljellä
-järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681). Jäljellä
+järjestyksessä FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 
@@ -94,9 +98,9 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
-Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`).
-FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; claude/fy2-lapikaynti, PR #676).
-Jäljellä FY1, FY3, FY6–FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
+Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`), FY6 (0f-PR #675: fy6-2…14; `docs/audits/2026-11-17-8j-FY6.md`).
+FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; PR #676).
+Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit), FY3, FY7, FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
 ## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
@@ -104,8 +108,16 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
-`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2, fy8-11), fi, fi-easy, en:
+`caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
+
+## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
+Varattu: claude/reviews-translation-units
+Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
+(en `$\text{avg}$`) ja fi-easyn pelkkä yksikkökaava `$\text{mSv}$` (fi: sana "millisieverteinä") lasketaan eri kaavoiksi.
+Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final…), (b) pelkkä `\text{sana}`-kaava ei lisää kaavamäärää
+vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
+Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä

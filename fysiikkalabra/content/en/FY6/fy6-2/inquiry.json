@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Review: current and voltage",
       "optional": true,
-      "prompt": "Which of the following describes electric current and voltage correctly?",
+      "prompt": "In the circuit on the lab bench, a battery, a lamp and a resistor are in a row, and the lamp is lit. Which of the following describes the current and the voltage in the circuit correctly?",
       "choices": [
         {
           "text": "Current is a flow of charge through the cross-section of a conductor, and voltage is a quantity between two points.",

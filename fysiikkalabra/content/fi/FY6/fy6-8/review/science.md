@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 82660ddf9fbdfd9d
+CONTENT-HASH: 62bd0fd864d5e28c
 
 ## Blocking
 
 ## Polish
+- none.
 
 ## Checked
-batch delta review: fy6-8 (fi), lesson.md line 304, reversed-battery sentence. Physics: with one of n series cells reversed, E = (sum of the others) − E_rev = E_all − 2·E_rev, so "smaller by twice the reversed battery's source voltage" is right (now true for unequal cells too, as round 1 asked); agrees with solutions.md (E1+E1−E1 = 1.5 V vs 4.5 V, I = 0.316 A vs 0.95 A, factor 3) and the exercise text; internal resistance still added; no choice, number or symbol changed; hash identical at start and end.
+batch delta review: kertaus I = P/U = 55 W : 12 V = 4,58 A ≈ 4,6 A (660 multiplied, 0,22 inverted, 43 subtracted); checked the file's text (the chain is a display block, not "P = UI I" as the packet diff shows); forward link to internal resistance correct; worked-example split only.

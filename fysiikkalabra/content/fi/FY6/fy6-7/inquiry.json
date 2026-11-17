@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Kertaa: sähköteho",
       "optional": true,
-      "prompt": "Pöytävalaisimen hehkulamppu on kytketty $230\\,\\text{V}$:n verkkoon, ja sen läpi kulkee virta $0{,}26\\,\\text{A}$. Kuinka suuri on lampun teho?",
+      "prompt": "Televisio on kytketty $230\\,\\text{V}$:n verkkoon, ja sen läpi kulkee virta $0{,}43\\,\\text{A}$. Kuinka suuri on television teho?",
       "choices": [
         {
-          "text": "Noin $60\\,\\text{W}$, koska teho on jännite kertaa virta.",
+          "text": "Noin $99\\,\\text{W}$, koska teho on jännite kertaa virta.",
           "correct": true,
-          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, kuinka paljon energiaa tällainen lamppu käyttää ja mitä se maksaa."
+          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, kuinka paljon energiaa tällainen laite käyttää ja mitä se maksaa."
         },
         {
-          "text": "Noin $880\\,\\text{W}$, koska teho on jännite jaettuna virralla.",
-          "feedback": "Jännite jaettuna virralla on resistanssi, ei teho: $230\\,\\text{V} : 0{,}26\\,\\text{A} \\approx 880\\,\\Omega$. Teho on jännite kertaa virta, $P = UI \\approx 60\\,\\text{W}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "text": "Noin $530\\,\\text{W}$, koska teho on jännite jaettuna virralla.",
+          "feedback": "Jännite jaettuna virralla on resistanssi, ei teho: $230\\,\\text{V} : 0{,}43\\,\\text{A} \\approx 530\\,\\Omega$. Teho on jännite kertaa virta, $P = UI \\approx 99\\,\\text{W}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         },
         {
-          "text": "Noin $0{,}26\\,\\text{W}$, koska lampun teho on sama kuin sen virta.",
-          "feedback": "Virta ja teho ovat eri suureita, eikä niillä ole samaa lukuarvoa. Sama virta tuottaa sitä suuremman tehon, mitä suurempi jännite on: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}26\\,\\text{A} \\\\ &\\approx 60\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "text": "Noin $0{,}43\\,\\text{W}$, koska laitteen teho on sama kuin sen virta.",
+          "feedback": "Virta ja teho ovat eri suureita, eikä niillä ole samaa lukuarvoa. Sama virta tuottaa sitä suuremman tehon, mitä suurempi jännite on: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         }
       ]
     },

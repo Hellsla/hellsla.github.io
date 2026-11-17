@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f8c07e8ba0e19ff7
+CONTENT-HASH: ec86a73cd1b31a70
 
 ## Blocking
 
 ## Polish
-- solutions.md:70 (L2-01) — the solution's answer is "1.5 kg, two significant figures", the stored answer 1.51; same in solutions.md:136 (L2-04): "about 4.1 %" against stored 4.11. Both are inside the tolerance; give one value in both places.
-- exercises.json:151 (L2-05) — "five successive generations", but the table has six rows (generations 0–5); say "generations 0–5".
-- exercises.json:347 (L3-04 c) — "isolated for thousands of years" understates what the solutions of L3-03 and L3-04 show (a thousandth only after about 240 000 a); write "hundreds of thousands of years".
-- The packet says check_lesson.py had not been run: stored answers were compared with answers.py's output by hand (all 17 agree).
+- solutions.md:303 (L2-09): the solution says the curve at $A = 100$ "is on the grid line 8.7 MeV". The plotted curve (`semf(100)`) is at 8.684 MeV, just under the line, and at $A = 200$ it is at 7.916 MeV. The readings 8.7 and 7.9 are right to the 0.1 MeV grid. Write "at about 8.7 MeV" so that a student who reads 8.6 or 8.7 is not told the curve sits exactly on a line.
+- L2-09: reading from the curve itself gives $Q = 200(8.684 - 7.916)\,\text{MeV} = 154\,\text{MeV}$. Readings one grid step apart give 140–180 MeV. The stored value 160 with a 15 % tolerance (136–184) covers this, and the solution already gives an uncertainty of $\pm 20\,\text{MeV}$. No change is needed.
 
 ## Checked
-- All 17 numeric answers recomputed with own formulas; every stored value within its tolerance (largest difference 0.57 %, L3-01).
-- Reaction energies: Li-6 + n 4.783 MeV, D + D 3.269 MeV, D–T 17.59 MeV and 3.374e14 J/kg, Xe/Sr fission x = 2 and 184.68 MeV, 4 H to He-4 26.73 MeV; electron bookkeeping with atomic masses right in each.
-- L2-08: Q = 12 (7.074 - 7.680) MeV = -7.27 MeV, agrees with the atomic masses (7.27 MeV); exactly one correct option and one correct reason.
-- L3-04: own least-squares fit gives lambda = 0.02285 1/a, A0 = 30 060 TBq/t, T = 30.3 a, t = 249.7 a; two-point method 251 a, inside the 5 % tolerance; ln A values right; extrapolation range stated; Pu-239 factor 0.993.
-- L3-05: 1536 MW, 1029 MW, 4.457e16 J, 543.0 kg, 1.54e6 t coal, ratio 2.8e6; assumptions stated in the task.
-- L2-05: k = 1.01248, 1859.6; k rounded to 1.012 gives 1816, inside the 3 % tolerance.
-- L2-06: 4394 MW, 34.64 TWh; L2-01 1.509 kg; L3-01 4.526 kg; L3-02 8.944e37 1/s (assumption on radiated power stated); L3-03 240 175 a.
-- Multiple choice L1-06, L1-07, L2-07: one correct option each, distractors wrong, feedback physics right.
-- Solutions: symbolic form before substitution, conversions right, reasonableness checks recomputed.
-- Scope: inside FY8 central contents and the scope notes (931.5 MeV/c^2, decay law).
+- Hash at start and end: ec86a73cd1b31a70.
+- All 19 stored answers compared with the output of answers.py. Each is within its tolerance; the largest difference is 0.57 % (L3-01). The two new entries are L2-09 (160 vs 160.0) and L3-06 (50 vs 49.83).
+- L2-09 physics: nucleon number is conserved, and the energy released is the increase in total binding energy, $Q = A(\varepsilon_{100} - \varepsilon_{200})$. Solved symbolically before substitution. The sign and magnitude are right, and the task says the graph should be assumed to describe the hypothetical nuclei.
+- L2-09 reasonableness check, recomputed from the curve: from $A = 236$ to $A = 118$ the increase is $8.560 - 7.638 = 0.92\,\text{MeV}$, and $\times 236 \approx 217\,\text{MeV}$. "About 0.9 MeV, ≈210 MeV" is right, and so is "a lighter nucleus releases a little less".
+- L2-09 figure: the y range 7.0–9.0 on a 0.1 MeV grid and vertical lines every 10 give every reading the task needs. The description gives the grid without giving the answer away.
+- L3-06 figure (fy8-9/aktiivisuus): $A_0 = 720$ kBq (point marked), $T = 5.0$ h, so 360 kBq at 5 h and 180 kBq at 10 h, as the solution's check says. At 20 h the activity is $720/16 = 45$ kBq, which is right.
+- L3-06: $t = T\log_2(A_0/A) = 5.0\,\text{h}\cdot 9.966 = 49.83\,\text{h}$, which rounds to 50 h with two significant figures (justified by the half-life read as 5.0 h). The extrapolation beyond the figure is stated in the task and justified in the solution, as the guardrail on fits requires. The 0.1 % safety threshold is stated as an assumption, and the values are labelled as example values.
+- L3-06 comparison with Pu-239: $24\,100\,\text{a}\cdot 9.966 = 240\,000\,\text{a}$, which matches L3-03.
+- answers.py: the new lines compute the same model from the readings the task asks for, and the units (MeV, h) and tolerances fit the reading precision.
+- The removal of "example data" from the L2-05 and L3-04 captions changes no number.
+- Scope: binding energy per nucleon and the decay law are within the FY8 central contents and scope notes.
