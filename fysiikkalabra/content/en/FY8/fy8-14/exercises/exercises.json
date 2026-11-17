@@ -248,6 +248,32 @@
       "answer": 26,
       "unit": "mm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-14-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-14/kontrasti-points",
+      "text": "The figure shows the ratio $I : I_0$ of an X-ray beam's intensity as a function of the thickness $d$ of soft tissue and bone, when the photon energy is about $60\\,\\text{keV}$. The reading accuracy of the graph is about $0.02$ and $0.1\\,\\text{cm}$. In a calculation, bone can be replaced by a layer of soft tissue that lets through the same share of the radiation.\n\na) Read from the graph what share of the radiation passes through a $5.0\\,\\text{cm}$ layer of soft tissue.\n\nb) Read from the graph the half-value thicknesses of soft tissue and bone.\n\nc) Calculate how thick a layer of bone lets through the same share as $5.0\\,\\text{cm}$ of soft tissue. Check the result from the graph.\n\nThe answer box takes the result of part c).",
+      "answer": 1.6,
+      "unit": "cm",
+      "tolerance": 0.06
+    },
+    {
+      "id": "fy8-14-L2-09",
+      "level": 2,
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-14/fdg",
+      "text": "The figure shows the activity $A$ of an FDG syringe as a function of time $t$ (example data). The fluorine-$18$ of the tracer decays, and it is assumed that the activity decreases only because of radioactive decay. The reading accuracy of the graph is about $5\\,\\text{MBq}$ and $5\\,\\text{min}$. The syringe is no longer used for a patient once its activity has dropped to $60\\,\\text{MBq}$.\n\na) Read from the graph the activity at $t = 0$ and the half-life $T_{1/2}$.\n\nb) Calculate how many minutes pass until the activity is $60\\,\\text{MBq}$.\n\nc) Check the result by reading the time directly from the graph.\n\nThe answer box takes the result of part b).",
+      "answer": 330,
+      "unit": "min",
+      "tolerance": 0.04
     }
   ],
   "level3": [
