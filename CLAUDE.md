@@ -11,6 +11,10 @@ and the map of checks `fysiikkalabra/docs/QUALITY.md`.
 - **Worker**: one session per queue item, one branch, one pull request. It starts from a short prompt that names the
   queue item and the command (`/lesson`, `/exercises`, `/practice`, `/exam`, `/figure-fixes`, `/quality-audit`,
   `/new-course`). It ends when its pull request is merged; a new item gets a new session.
+  The coordinator starts it with `create_session` `model: "claude-sonnet-5-5"` (work queue 0a, 2026-11-17): a session
+  runs on the model it was created with, which otherwise is the coordinator's own (Opus), and a command's `model:`
+  frontmatter does not change it (fy8-5…fy8-8: the orchestration ran on Opus, about 194 k per chapter). Opus or Fable
+  orchestration only on the teacher's word; the agents' models stay as `.claude/commands/lesson.md` routes them.
 - **Teacher**: approves figures and content and merges. Nothing else publishes.
 
 ## Rules

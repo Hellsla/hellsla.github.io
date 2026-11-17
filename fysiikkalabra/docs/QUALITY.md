@@ -7,7 +7,7 @@ A map, not new rules (teacher 2026-11-13). The rules are in `CLAUDE.md` (this fo
 ## The gates, in the order a change meets them
 | Gate | Who | Covers | Does not cover |
 |---|---|---|---|
-| 1. Deterministic checks | `python scripts/check_lesson.py <id>` (developer, before any review) | lint, complete solutions, notation, LaTeX, answers, build, simulation and inquiry tests, layout at 360, 390, 768 and 1280 px (CI's browser image when Docker is available) | anything a script cannot judge |
+| 1. Deterministic checks | `python scripts/check_lesson.py <id>` (developer, before any review; the orchestrator runs it inside `python scripts/round.py <id>`, which also regenerates the catalog, assessment and coverage files, carries, captures and packets) | lint, complete solutions, notation, LaTeX, answers, build, simulation and inquiry tests, layout at 360, 390, 768 and 1280 px (CI's browser image when Docker is available) | anything a script cannot judge |
 | 2. Science review | science-reviewer (Opus) | physics and mathematics; the only judge of scientific correctness | readability, layout |
 | 3. Pedagogy review | pedagogy-reviewer | whether a 16–19-year-old can learn from it, on a phone and a laptop | physics |
 | 4. Visual and editorial review | visual-editorial-reviewer, from the captures | figures, graphs, mathematical typography, Finnish, presentation | physics (sent to the science reviewer) |
