@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6e6209f27ed720e0
+CONTENT-HASH: 27682d54f101350e
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md:303 (Common misconception) — the wrong 9.0 V result 0.30 A equals the true total current, so the student may think it is right; add that the branches would then draw more than the junction supplies (0.30 A + 0.15 A = 0.45 A > 0.30 A) or the original sentence about it.
-- lesson.md:303 — the worked example just above uses the 12 V circuit with the 30 ohm branch called I_3, while here the 30 ohm branch is I_2 (as in the theory figure). Open with 'In the circuit of the first figure' so the change of circuit is explicit.
-
+- The bird example assumes 4,0 V across the bird's body, which a bird on one wire never has (the wire gives no voltage difference); the 'Suppose' helps, but a hint that this is a hypothetical would stop a wrong take-away.
+- The 2,0 kΩ body resistance is far below a real dry body's; harmless for the arithmetic.
 ## Checked
-- batch delta review: the paragraph now uses the 9.0 V theory-figure circuit (R1 3.0 V, branch 6.0 V, I2 0.20 A, I3 0.10 A), which matches the figure labels and no longer depends on the worked example that comes later in the page; the numbers close with Kirchhoff's current law.
+batch delta review: new retrieval task and feedback (Ohm's law with a bird (k prefix, multiply, invert)); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.

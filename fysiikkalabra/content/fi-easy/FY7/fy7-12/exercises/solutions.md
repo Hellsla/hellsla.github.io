@@ -167,7 +167,9 @@
 ## fy7-12-L2-07
 **Annettu:** ilman taitekerroin $n_1 = 1{,}00$, lasin taitekerroin $n_2 = 1{,}50$, tulokulma $\alpha_1 = 70^\circ$
 **Kysytty:** a) virhe opiskelijan päättelyssä, b) taitekulma $\alpha_2$ lasissa asteina
-**Periaate:** a) Rajakulma on olemassa vain, kun valo tulee suuremman taitekertoimen aineesta pienempään. Tässä valo tulee ilmasta lasiin eli pienemmästä suurempaan. Rajakulmaa ei siis ole, eikä kokonaisheijastumista tapahdu. Opiskelija käänsi taitekertoimien suhteen väärin päin. Jos kaava $\sin\alpha_\text{r} = n_2 : n_1$ kirjoitetaan oikein tähän tilanteeseen, sen arvo olisi $1{,}50 : 1{,}00 = 1{,}50$. Sini ei voi olla yli $1$. b) Valo taittuu normaalia kohti, ja taitekulma saadaan taittumislaista.
+**Periaate:** a) Rajakulma on olemassa vain, kun valo tulee suuremman taitekertoimen aineesta pienempään. Tässä valo tulee ilmasta lasiin eli pienemmästä suurempaan. Rajakulmaa ei siis ole, eikä kokonaisheijastumista tapahdu. Opiskelija käänsi taitekertoimien suhteen väärin päin. Jos kaava $\sin\alpha_\text{r} = n_2 : n_1$ kirjoitetaan oikein tähän tilanteeseen, sen arvo olisi $1{,}50 : 1{,}00 = 1{,}50$. Sini ei voi olla yli $1$.
+
+b) Valo taittuu normaalia kohti, ja taitekulma saadaan taittumislaista.
 **Kaava:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, josta $\alpha_2 = \sin^{-1}\dfrac{n_1 \sin\alpha_1}{n_2}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
 **Sijoitus:** $\alpha_2 = \sin^{-1}\dfrac{1{,}00 \cdot \sin 70^\circ}{1{,}50} = \sin^{-1}\dfrac{0{,}9397}{1{,}50} = \sin^{-1} 0{,}6265 = 38{,}79^\circ$
@@ -181,18 +183,24 @@
 **Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$ ja $n_0 \sin\theta_\text{max} = n_1 \sin\varphi_\text{max}$, josta $\theta_\text{max} = \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) = \sin^{-1}\sqrt{n_1^2 - n_2^2}$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
 **Sijoitus:** Kuidulle B $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}47}{1{,}50} = 78{,}52^\circ$, $\varphi_\text{max} = 90^\circ - 78{,}52^\circ = 11{,}48^\circ$ ja $\sin\theta_\text{max} = 1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985$, joten $\theta_\text{max} = 17{,}37^\circ$. Kuiduille A ja C lyhyemmällä kaavalla: $\theta_\text{max} = \sin^{-1}\sqrt{1{,}48^2 - 1{,}46^2} = \sin^{-1} 0{,}2425 = 14{,}03^\circ$ ja $\theta_\text{max} = \sin^{-1}\sqrt{1{,}46^2 - 1{,}45^2} = \sin^{-1} 0{,}1706 = 9{,}82^\circ$. Viiveluvut ovat A: $\dfrac{1{,}48}{1{,}46} - 1 = 0{,}0137$, B: $\dfrac{1{,}50}{1{,}47} - 1 = 0{,}0204$ ja C: $\dfrac{1{,}46}{1{,}45} - 1 = 0{,}0069$.
-**Vastaus:** kuidun B vastaanottokulma on $17{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Taitekertoimien erotus $n_1 - n_2 = 0{,}03$ on yhden merkitsevän numeron luku, joten tulos on herkkä taitekertoimien pyöristykselle. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$. Kuidulla B taitekertoimien ero on suurin. Siksi sekä vastaanottokulma että viiveluku ($2{,}0\,\%$) ovat suurimmat: kuitu ottaa vastaan eniten valoa, mutta pulssi leviää eniten. Kuidulla C molemmat ovat pienimmät.
+**Vastaus:** kuidun B vastaanottokulma on $17{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Taitekertoimien erotus $n_1 - n_2 = 0{,}03$ on yhden merkitsevän numeron luku, joten tulos on herkkä taitekertoimien pyöristykselle. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$.
+
+Kuidulla B taitekertoimien ero on suurin. Siksi sekä vastaanottokulma että viiveluku ($2{,}0\,\%$) ovat suurimmat: kuitu ottaa vastaan eniten valoa, mutta pulssi leviää eniten. Kuidulla C molemmat ovat pienimmät.
 **Järkevyys:** Tarkistus kuidulle B: kun säde on ytimessä kulmassa $11{,}48^\circ$ akseliin nähden, se osuu rajapintaan kulmassa $78{,}52^\circ$ eli juuri rajakulmassa. Lisäksi $1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985 = 1{,}00 \cdot \sin 17{,}37^\circ$. Vastaanottokulmat ovat pieniä, koska taitekertoimet ovat lähes yhtä suuret. Kuidulla B viive on $2{,}0\,\%$ ja kuidulla C vain $0{,}69\,\%$, eli noin kolmasosa.
 
 ## fy7-12-L3-05
 **Annettu:** ytimen halkaisija $2a = 1{,}0\,\text{mm}$ eli ytimen säde $a = 0{,}50\,\text{mm}$, ytimen taitekerroin $n_1 = 1{,}49$, kuoren taitekerroin $n_2 = 1{,}40$; taulukon teho taivutussäteen $R$ funktiona ($5{,}0\,\text{mm}$: $31\,\%$, $10{,}0\,\text{mm}$: $62\,\%$, $15{,}0\,\text{mm}$: $88\,\%$, $20{,}0\,\text{mm}$: $96\,\%$, $30{,}0\,\text{mm}$: $98\,\%$, $50{,}0\,\text{mm}$: $99\,\%$)
 **Kysytty:** pienin taivutussäde $R_\text{min}$ millimetreinä, jolla vaarallisinkin säde vielä kokonaisheijastuu
-**Periaate:** Mutkaan tuleva akselin suuntainen säde jatkaa suoraan ja osuu ulkoreunan rajapintaan. Mitataan etäisyydet mutkan keskipisteestä $\text{O}$. Ulkoreunan säde on $R + a$. Sisäreunan vierestä kulkevan säteen etäisyys keskipisteestä on $R - a$. Säde on kohtisuorassa mutkan alkukohdan sädettä vastaan. Siksi keskipisteestä säteen reitille piirretty kohtisuora on pituudeltaan $R - a$. Suorakulmaisessa kolmiossa hypotenuusa on ulkoreunan säde $R + a$. Tulokulman $\alpha$ sini on $\sin\alpha = (R - a) : (R + a)$. Tämä on pienin kaikista tulokulmista, koska muiden säteiden reitit ovat kauempana keskipisteestä. Sisäreunan vierestä kulkeva säde vuotaa siis ulos ensimmäisenä. Kokonaisheijastukseen vaaditaan $\alpha \ge \alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$.
+**Periaate:** Mutkaan tuleva akselin suuntainen säde jatkaa suoraan ja osuu ulkoreunan rajapintaan. Mitataan etäisyydet mutkan keskipisteestä $\text{O}$. Ulkoreunan säde on $R + a$. Sisäreunan vierestä kulkevan säteen etäisyys keskipisteestä on $R - a$. Säde on kohtisuorassa mutkan alkukohdan sädettä vastaan. Siksi keskipisteestä säteen reitille piirretty kohtisuora on pituudeltaan $R - a$.
+
+Suorakulmaisessa kolmiossa hypotenuusa on ulkoreunan säde $R + a$. Tulokulman $\alpha$ sini on $\sin\alpha = (R - a) : (R + a)$. Tämä on pienin kaikista tulokulmista, koska muiden säteiden reitit ovat kauempana keskipisteestä. Sisäreunan vierestä kulkeva säde vuotaa siis ulos ensimmäisenä. Kokonaisheijastukseen vaaditaan $\alpha \ge \alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$.
 **Kaava:** raja-arvolla $\dfrac{R - a}{R + a} = \dfrac{n_2}{n_1}$, josta $n_1 (R - a) = n_2 (R + a)$ ja $R_\text{min} = a\,\dfrac{n_1 + n_2}{n_1 - n_2}$
 **Muunnokset:** Ei tarvita: $R_\text{min}$ saadaan samassa yksikössä kuin $a$, millimetreinä.
 **Sijoitus:** $R_\text{min} = 0{,}50\,\text{mm} \cdot \dfrac{1{,}49 + 1{,}40}{1{,}49 - 1{,}40} = 0{,}50\,\text{mm} \cdot \dfrac{2{,}89}{0{,}09} = 0{,}50\,\text{mm} \cdot 32{,}11 = 16{,}06\,\text{mm}$
 **Vastaus:** $16\,\text{mm}$ ($16{,}1\,\text{mm}$). Tarkkuutta rajoittaa taitekertoimien erotus $n_1 - n_2 = 0{,}09$. Jyrkemmässä mutkassa osa valosta vuotaa kuoreen.
-**Järkevyys:** Tarkistus: kun $R = 16{,}06\,\text{mm}$, suhde $(R - a) : (R + a)$ on $15{,}56 : 16{,}56 = 0{,}9396$. Myös $1{,}40 : 1{,}49 = 0{,}9396$, joten tulokulma on juuri rajakulma $\sin^{-1} 0{,}9396 = 70{,}0^\circ$. Taulukko sopii tulokseen: säteillä $20{,}0\,\text{mm}$ ja suuremmilla teho on vähintään $96\,\%$, mutta säteillä $15{,}0\,\text{mm}$ ja $5{,}0\,\text{mm}$ se on vain $88\,\%$ ja $31\,\%$. Teho ei putoa nollaan täsmälleen kohdassa $R_\text{min}$. Sen alapuolella vuotaa ensin vain ohut osa valosta, joka kulkee sisäreunan vierestä. Vuotava osuus kasvaa vähitellen, kun säde pienenee. Vinosti kulkevat säteet vuotavat jo hieman suuremmilla säteillä.
+**Järkevyys:** Tarkistus: kun $R = 16{,}06\,\text{mm}$, suhde $(R - a) : (R + a)$ on $15{,}56 : 16{,}56 = 0{,}9396$. Myös $1{,}40 : 1{,}49 = 0{,}9396$, joten tulokulma on juuri rajakulma $\sin^{-1} 0{,}9396 = 70{,}0^\circ$. Taulukko sopii tulokseen: säteillä $20{,}0\,\text{mm}$ ja suuremmilla teho on vähintään $96\,\%$, mutta säteillä $15{,}0\,\text{mm}$ ja $5{,}0\,\text{mm}$ se on vain $88\,\%$ ja $31\,\%$.
+
+Teho ei putoa nollaan täsmälleen kohdassa $R_\text{min}$. Sen alapuolella vuotaa ensin vain ohut osa valosta, joka kulkee sisäreunan vierestä. Vuotava osuus kasvaa vähitellen, kun säde pienenee. Vinosti kulkevat säteet vuotavat jo hieman suuremmilla säteillä.
 
 ## fy7-12-L2-08
 **Kysytty:** mitä akvaarion pohjalta tulevalle lasersäteelle tapahtuu vedenpinnassa ja miksi.
@@ -211,7 +219,9 @@ $\alpha_\text{r} = 48{,}75^\circ \approx 48{,}8^\circ$
 
 Tulokulma $50{,}0^\circ$ on suurempi kuin rajakulma $48{,}8^\circ$. Taittumislaista tulisi $\sin\alpha_2 = 1{,}33 \cdot \sin 50{,}0^\circ$, eli $\sin\alpha_2 = 1{,}02 > 1$. Taittunutta sädettä ei siis ole. Säde kokonaisheijastuu: kaikki valo heijastuu vedenpinnasta takaisin veteen heijastuskulmassa $50{,}0^\circ$.
 
-Perustelu on siis, että tulokulma $50{,}0^\circ$ on suurempi kuin veden ja ilman rajakulma $48{,}8^\circ$. Jos kulmaa $40{,}0^\circ$ pitää tulokulmana, on mitannut kulman pinnasta. Silloin päätyy väärin osittaiseen taittumiseen ilmaan. Jos taitekertoimet vaihtavat paikkaa, rajakulman siniksi tulee $1{,}33$, ja näyttää siltä, ettei rajakulmaa ole. Väite taittumisesta normaalista poispäin on tosi, mutta se ei kerro, onko tulokulma suurempi kuin rajakulma. Valo kulkisi pitkin vedenpintaa vain, jos tulokulma olisi täsmälleen rajakulma.
+Perustelu on siis, että tulokulma $50{,}0^\circ$ on suurempi kuin veden ja ilman rajakulma $48{,}8^\circ$. Jos kulmaa $40{,}0^\circ$ pitää tulokulmana, on mitannut kulman pinnasta. Silloin päätyy väärin osittaiseen taittumiseen ilmaan.
+
+Jos taitekertoimet vaihtavat paikkaa, rajakulman siniksi tulee $1{,}33$, ja näyttää siltä, ettei rajakulmaa ole. Väite taittumisesta normaalista poispäin on tosi, mutta se ei kerro, onko tulokulma suurempi kuin rajakulma. Valo kulkisi pitkin vedenpintaa vain, jos tulokulma olisi täsmälleen rajakulma.
 
 ## fy7-12-L1-09
 **Annettu:** safiirin taitekerroin $n_1 = 1{,}77$, ilman taitekerroin $n_2 = 1{,}00$, kuvaaja rajakulmasta taitekertoimen mukaan

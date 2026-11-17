@@ -21,8 +21,8 @@ a["ex-cost"] = 0.18 * 0.80 * t_ex                             # 0,18 EUR/kWh · 
 a["ex-check-day"] = 0.80 * 6.25                               # 5,0 kWh a day
 
 # --- retrieval: lamp on 230 V takes 0,26 A ---
-a["kertaus-P"] = 230 * 0.26                                   # 59,8 W, about 60 W
-a["kertaus-wrong"] = 230 / 0.26                               # 885 W (divided): wrong option
+a["kertaus-P"] = 230 * 0.43                                   # 98,9 W, about 99 W (television)
+a["kertaus-wrong"] = 230 / 0.43                               # 535 W (divided): wrong option, about 530
 
 # --- prediction 1 and the device table (one day) ---
 devices = {"kettle": (2000, 12 / 60), "fridge": (100, 8.0), "tv": (100, 3.0), "led": (40, 5.0), "charger": (5, 2.0)}

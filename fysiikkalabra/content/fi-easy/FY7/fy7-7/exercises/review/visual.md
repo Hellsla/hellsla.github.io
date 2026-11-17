@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f6e65494f2f5a858
+CONTENT-HASH: 71e5e54c112e7994
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:132 — "· 100 %" stands alone on a second row at the left edge, also at 1280 px; the fraction and "· 100 %" fit one row on a phone, as line 134 shows. Drop the row break.
-- [Minor] solutions.md:113, :132, :134 — the block starts with a bare "=" under the word osuus/poikkeama; put the word in the formula as its left side (carried from round 1).
-- [Minor] exercises.json:271 (fy7-7-L2-07) — the continuation formulas start with a bare relation, so the gap before "=" is narrower than after it ("U= 60 W"). `{}=` evens it.
-- [Minor] exercises.json fy7-7-L2-08 — "Vastaa laatikkoon kohdan c) …" → "Kirjoita laatikkoon kohdan c) …" (carried from round 1).
+- [Minor] Carried over from my earlier report (unchanged text): earlier row-break polish items stay as recorded.
 
 ## Checked
-- Delta since round 1: exercises.json:271 only. The quoted chain I = P : U = 60 W : 163 V / = 0,37 A.” is inline, split at its relations; it wraps before "= 0,37 A" at 360, 390 and 1280 px, the closing quotation mark stays with the result, nothing clipped.
-- Own captures of the rebuilt preview (preview/fi-easy, ?ratkaisut=1, everything open): contact sheets of every aligned block of the set at 390 and 1280 px; the task text at 360 px after real clicks.
-- Overflow scan of every formula at 360/390/1280 px: none. No red KaTeX. Hash identical at start and end.
+- Delta, round 1: solutions.md only cut into paragraphs, words unchanged.
+- Captures opened (content/fi-easy/FY7/fy7-7/review/shots): fy7-7-open-exercises-L2-1280-12 (Kohta a)-d) and Vastaus; paragraphs short and clear, formulas intact, nothing clipped; the cuts help S2 readers).
+- Layout checks at 360/768/1280 green in the packet.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations n/a · typography 4 · Finnish 5 · accessibility 5

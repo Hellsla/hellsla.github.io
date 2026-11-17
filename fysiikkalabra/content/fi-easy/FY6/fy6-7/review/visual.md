@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: deca35fa0f41273e
+CONTENT-HASH: cc76053817aad1ee
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the only change is the stage-1 paragraph break (knowns, then "Kysytään ..." as its own paragraph); read the diff and opened the fy6-10 and fy6-16 example-390 captures (the same stage pattern, current for this hash): the break reads naturally, no one-word orphan, spacing even, nothing clipped.
+- batch delta review: the diff is the Kertaa retrieval task (inquiry.json); opened stage-herata-390 and rendered the opened Kertaa box at 390 px (question, options, wrong- and correct-answer feedback with the aligned chain): KaTeX, units, case endings and layout fine, nothing clipped. Hash rechecked after the 11:59 spacing fix "$$ (luku".

@@ -459,7 +459,9 @@ Saippuakuplan seinämän paksuus on eräässä kohdassa $380\,\text{nm}$, ja sai
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kalvon paksuus on $d = 380\,\text{nm}$ ja taitekerroin $n = 1{,}33$. Kalvon molemmin puolin on ilmaa. Kysytään ne aallonpituudet $\lambda$ välillä $400$–$700\,\text{nm}$, joilla interferenssi on vahvistava.
+**Tunnetut ja kysytty.** Kalvon paksuus on $d = 380\,\text{nm}$ ja taitekerroin $n = 1{,}33$. Kalvon molemmin puolin on ilmaa.
+
+Kysytään ne aallonpituudet $\lambda$ välillä $400$–$700\,\text{nm}$, joilla interferenssi on vahvistava.
 
 <!-- vaihe -->
 

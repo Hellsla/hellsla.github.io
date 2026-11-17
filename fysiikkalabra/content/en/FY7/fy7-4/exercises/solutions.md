@@ -50,7 +50,9 @@
 
 ## fy7-4-L1-06
 **Find:** the direction of the force that the magnetic field exerts on the current-carrying wire when the field points north and the current flows east.
-**Principle:** The force $\overline{F}$ is perpendicular to both the current and the magnetic field $\overline{B}$, and its direction is obtained with the right-hand rule: the thumb points in the direction of the current, the fingers in the direction of the field and the palm in the direction of the force. The directions of the current and the field are perpendicular to each other, so the force is greatest and its direction is the third direction, perpendicular to both.
+**Principle:** The force $\overline{F}$ is perpendicular to both the current and the magnetic field $\overline{B}$, and its direction is obtained with the right-hand rule: the thumb points in the direction of the current, the fingers in the direction of the field and the palm in the direction of the force.
+
+The directions of the current and the field are perpendicular to each other, so the force is greatest and its direction is the third direction, perpendicular to both.
 **Model answer:** The force points upwards. When the thumb points east and the fingers north, the palm points up. The force is not in the direction of the field or of the current, and it is not an attraction downwards like weight: it is perpendicular to both. If the current or the field were reversed, the force would point downwards.
 
 ## fy7-4-L1-07
@@ -92,7 +94,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Given:** length of the wire in the field $l = 4.0\,\text{cm}$, wire perpendicular to the field; in the graph the change $\Delta m$ of the balance reading as a function of the current $I$; $g = 9.81\,\text{m/s}^2$
 **Find:** magnetic flux density $B$ in teslas
 **Principle:** The field exerts on the wire a force $F = I l B$, and by Newton's third law the wire exerts an equal and opposite force on the magnet. The reading of the balance therefore changes: the change $\Delta m$ corresponds to a force $F = \Delta m \cdot g$. The line passes through the origin, because without current there is no force.
-**Reading the graph:** The data points deviate slightly from the line because of measurement uncertainty, so we use the line fitted to the points, which smooths out the deviations. The line passes through the origin and the grid point ($5.0\,\text{A}$; $1.50\,\text{g}$). We therefore read the current $I = 5.0\,\text{A}$ and the corresponding change $\Delta m = 1.50\,\text{g}$ from the line, not from a single data point: the last data point, $1.47\,\text{g}$, is slightly below the line.
+**Reading the graph:** The data points deviate slightly from the line because of measurement uncertainty, so we use the line fitted to the points, which smooths out the deviations. The line passes through the origin and the grid point ($5.0\,\text{A}$; $1.50\,\text{g}$).
+
+We therefore read the current $I = 5.0\,\text{A}$ and the corresponding change $\Delta m = 1.50\,\text{g}$ from the line, not from a single data point: the last data point, $1.47\,\text{g}$, is slightly below the line.
 **Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
 **Conversions:** $\Delta m = 1.50\,\text{g} = 1.50 \cdot 0.001\,\text{kg} = 0.00150\,\text{kg}$ and $l = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$
 **Substitution:** $B = \dfrac{0.00150\,\text{kg} \cdot 9.81\,\text{m/s}^2}{5.0\,\text{A} \cdot 0.040\,\text{m}} = \dfrac{0.014715\,\text{N}}{0.20\,\text{A}\cdot\text{m}} = 0.0736\,\text{T}$
@@ -112,7 +116,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L2-04
 **Given:** distance between the rails, that is the part of the rod in the path of the current, $l = 8.0\,\text{cm}$, $B = 0.30\,\text{T}$ vertical, $I = 15\,\text{A}$, mass of the rod $m = 20\,\text{g}$, no friction
 **Find:** acceleration $a$ of the rod in the unit $\text{m/s}^2$
-**Principle:** The current flows through the rod from one rail to the other, so the $l = 8.0\,\text{cm}$ part of the rod is a current-carrying wire perpendicular to the vertical field. The force $F = I l B$ is horizontal and along the rails. The weight and the normal force of the rails cancel each other and there is no friction, so by Newton's second law $F = m a$.
+**Principle:** The current flows through the rod from one rail to the other, so the $l = 8.0\,\text{cm}$ part of the rod is a current-carrying wire perpendicular to the vertical field.
+
+The force $F = I l B$ is horizontal and along the rails. The weight and the normal force of the rails cancel each other and there is no friction, so by Newton's second law $F = m a$.
 **Formula:** $I l B = m a$, so $a = \dfrac{I l B}{m}$
 **Conversions:** $l = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$ and $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$
 **Substitution:** $a = \dfrac{15\,\text{A} \cdot 0.080\,\text{m} \cdot 0.30\,\text{T}}{0.020\,\text{kg}} = \dfrac{0.36\,\text{N}}{0.020\,\text{kg}} = 18\,\text{m/s}^2$
@@ -132,7 +138,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L2-06
 **Given:** length of the horizontal part of the wire $6.0\,\text{cm}$, length in the field $l = 2.5\,\text{cm}$, current $I = 3.0\,\text{A}$, change in the reading $\Delta m = 0.31\,\text{g}$, $g = 9.81\,\text{m/s}^2$
 **Find:** a) the student's error; b) magnetic flux density $B$ in teslas
-**Principle:** In the formula $F = I l B$ the length $l$ is only the length of the part of the wire that is in the field, because the field exerts a force only on that part. The student used the length of the whole wire, $6.0\,\text{cm}$, although only $2.5\,\text{cm}$ is in the field. The divisor was therefore too large and $B$ too small.
+**Principle:** In the formula $F = I l B$ the length $l$ is only the length of the part of the wire that is in the field, because the field exerts a force only on that part.
+
+The student used the length of the whole wire, $6.0\,\text{cm}$, although only $2.5\,\text{cm}$ is in the field. The divisor was therefore too large and $B$ too small.
 **Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
 **Conversions:** $\Delta m = 0.31\,\text{g} = 0.31 \cdot 10^{-3}\,\text{kg}$ and $l = 2.5\,\text{cm} = 0.025\,\text{m}$
 **Substitution:** $B = \dfrac{0.31 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{3.0\,\text{A} \cdot 0.025\,\text{m}} = \dfrac{3.041 \cdot 10^{-3}\,\text{N}}{0.075\,\text{A}\cdot\text{m}} = 0.04055\,\text{T}$
@@ -142,18 +150,24 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L2-07
 **Given:** the points of the table $(I;\ F)$: $(0.20\,\text{A};\ 1.18\,\text{N})$, $(0.40\,\text{A};\ 2.27\,\text{N})$, $(0.60\,\text{A};\ 3.52\,\text{N})$, $(0.80\,\text{A};\ 4.58\,\text{N})$ and $(1.00\,\text{A};\ 5.83\,\text{N})$; $B = 1.1\,\text{T}$, field perpendicular to the wire
 **Find:** total length $l$ of the wire in the coil in metres
-**Principle:** In a radial field every part of the wire is perpendicular to the field, so the force is $F = I l B$ and $l$ is the length of the whole wire. When $B$ and $l$ do not change, $F$ is directly proportional to the current $I$. The line passes through the origin, because without current there is no force on the coil.
+**Principle:** In a radial field every part of the wire is perpendicular to the field, so the force is $F = I l B$ and $l$ is the length of the whole wire.
+
+When $B$ and $l$ do not change, $F$ is directly proportional to the current $I$. The line passes through the origin, because without current there is no force on the coil.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin and the point $(1.00\,\text{A};\ 5.8\,\text{N})$. The slope is read from the line, not from two adjacent data points.
 **Formula:** The slope of the line is $k = \dfrac{F}{I} = B l$, so $l = \dfrac{k}{B}$
 **Conversions:** None needed: $\text{N}/\text{A} = \text{T}\cdot\text{m}$, so $k : B$ is in metres.
 **Substitution:** $k = \dfrac{5.8\,\text{N} - 0\,\text{N}}{1.00\,\text{A} - 0\,\text{A}} = 5.8\,\dfrac{\text{N}}{\text{A}}$ and $l = \dfrac{5.8\,\text{N/A}}{1.1\,\text{T}} = 5.27\,\text{m}$
 **Answer:** $5.3\,\text{m}$, two significant figures like the field $1.1\,\text{T}$. Because the fit is done by eye, an answer of $5.1\text{–}5.5\,\text{m}$ is good.
-**Reasonableness:** The wire of the coil is wound into many turns: if the radius of the coil is the same as in the example of the chapter, $1.3\,\text{cm}$, the length of one turn is $2\pi \cdot 0.013\,\text{m} = 0.082\,\text{m}$, so $5.3\,\text{m}$ corresponds to about $65$ turns, which is close to the number of turns of the loudspeaker coil in the chapter, $60$. For example, with a current of $1.0\,\text{A}$ the force is $5.8\,\text{N}$, which is many times the weight of the cone.
+**Reasonableness:** The wire of the coil is wound into many turns: if the radius of the coil is the same as in the example of the chapter, $1.3\,\text{cm}$, the length of one turn is $2\pi \cdot 0.013\,\text{m} = 0.082\,\text{m}$, so $5.3\,\text{m}$ corresponds to about $65$ turns, which is close to the number of turns of the loudspeaker coil in the chapter, $60$.
+
+For example, with a current of $1.0\,\text{A}$ the force is $5.8\,\text{N}$, which is many times the weight of the cone.
 
 ## fy7-4-L3-01
 **Given:** mass of the rod $m = 12\,\text{g}$, length in the field $l = 20\,\text{cm}$, $B = 0.25\,\text{T}$, rod perpendicular to the horizontal field; $g = 9.81\,\text{m/s}^2$
 **Find:** current $I$ at which the wires go slack
-**Principle:** The wires are slack when their tension is zero. Then only the weight, downwards, and the magnetic force act on the rod. The rod is at rest, so by Newton's first law the forces must cancel: the magnetic force must point upwards and equal the weight. The field is horizontal and the rod is perpendicular to it, so the force $I l B$ is vertical; the direction of the current is chosen so that the force points upwards.
+**Principle:** The wires are slack when their tension is zero. Then only the weight, downwards, and the magnetic force act on the rod. The rod is at rest, so by Newton's first law the forces must cancel: the magnetic force must point upwards and equal the weight.
+
+The field is horizontal and the rod is perpendicular to it, so the force $I l B$ is vertical; the direction of the current is chosen so that the force points upwards.
 **Formula:** $I l B = m g$, so $I = \dfrac{m g}{l B}$
 **Conversions:** $m = 12\,\text{g} = 12 \cdot 0.001\,\text{kg} = 0.012\,\text{kg}$ and $$\begin{aligned} l &= 20\,\text{cm} \\ &= 20 \cdot 0.01\,\text{m} \\ &= 0.20\,\text{m} \end{aligned}$$
 **Substitution:** $I = \dfrac{0.012\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.20\,\text{m} \cdot 0.25\,\text{T}} = \dfrac{0.11772\,\text{N}}{0.050\,\text{T}\cdot\text{m}} = 2.354\,\text{A}$
@@ -173,7 +187,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L3-03
 **Given:** length of the wire $l = 1.0\,\text{m}$, mass $m = 2.7\,\text{g}$, wire horizontal and east–west by the compass; the Earth's field $B = 53\,\mu\text{T}$ towards magnetic north and downwards at $74^\circ$ to the horizontal; $g = 9.81\,\text{m/s}^2$
 **Find:** current $I$ in kiloamperes
-**Principle:** Split the field into a horizontal and a vertical component. The wire runs east–west by the compass, so it is perpendicular to the horizontal component, which points to magnetic north, and also perpendicular to the vertical component. The vertical component exerts on the wire a horizontal force, which does not support the wire. The horizontal component $B_\text{horizontal} = B \cos 74^\circ$ points to magnetic north, and by the right-hand rule a current flowing east experiences from it a vertical force upwards. The wire stays in place when this force equals the weight.
+**Principle:** Split the field into a horizontal and a vertical component. The wire runs east–west by the compass, so it is perpendicular to the horizontal component, which points to magnetic north, and also perpendicular to the vertical component.
+
+The vertical component exerts on the wire a horizontal force, which does not support the wire. The horizontal component $B_\text{horizontal} = B \cos 74^\circ$ points to magnetic north, and by the right-hand rule a current flowing east experiences from it a vertical force upwards. The wire stays in place when this force equals the weight.
 **Formula:** $I l B \cos 74^\circ = m g$, so $I = \dfrac{m g}{l B \cos 74^\circ}$
 **Conversions:** $m = 2.7\,\text{g} = 2.7 \cdot 0.001\,\text{kg} = 0.0027\,\text{kg}$ and $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$. Finally $1\,\text{kA} = 1000\,\text{A}$.
 **Substitution:** $I = \dfrac{0.0027\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.0\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \cos 74^\circ} = \dfrac{0.026487\,\text{N}}{1.4609 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1813\,\text{A} = 1.813\,\text{kA}$
@@ -183,7 +199,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L3-04
 **Given:** distance between the rails (length of the rod in the field) $l = 12\,\text{cm}$, mass of the rod $m = 45\,\text{g}$, vertical field, sliding friction constant; the points of the table $(I;\ a)$: $(4.0\,\text{A};\ 1.8\,\text{m/s}^2)$, $(6.0\,\text{A};\ 3.6\,\text{m/s}^2)$, $(8.0\,\text{A};\ 5.6\,\text{m/s}^2)$, $(10.0\,\text{A};\ 7.3\,\text{m/s}^2)$ and $(12.0\,\text{A};\ 9.3\,\text{m/s}^2)$; $g = 9.81\,\text{m/s}^2$
 **Find:** magnetic flux density $B$ in teslas (and in addition the coefficient of sliding friction $\mu$)
-**Principle:** The field is vertical, so the magnetic force $I l B$ is horizontal. The weight and the normal force cancel each other, so the normal force is $m g$ and the sliding friction $\mu m g$ opposes the motion. By Newton's second law $m a = I l B - \mu m g$, that is, $a = kI + b$: the acceleration is a linear function of the current. Friction makes the constant term negative, so the line does not pass through the origin: the acceleration of the moving rod is positive only when $I l B > \mu m g$.
+**Principle:** The field is vertical, so the magnetic force $I l B$ is horizontal. The weight and the normal force cancel each other, so the normal force is $m g$ and the sliding friction $\mu m g$ opposes the motion.
+
+By Newton's second law $m a = I l B - \mu m g$, that is, $a = kI + b$: the acceleration is a linear function of the current. Friction makes the constant term negative, so the line does not pass through the origin: the acceleration of the moving rod is positive only when $I l B > \mu m g$.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(4.0\,\text{A};\ 1.78\,\text{m/s}^2)$ and $(12.0\,\text{A};\ 9.26\,\text{m/s}^2)$, and it crosses the vertical axis at $-1.96\,\text{m/s}^2$. The points are read from the line and chosen far apart from each other.
 **Formula:** $a = \dfrac{l B}{m} \cdot I - \mu g$, so the slope is $k = \dfrac{l B}{m}$, from which $B = \dfrac{k m}{l}$, and the constant term is $b = -\mu g$, from which $\mu = -\dfrac{b}{g}$
 **Conversions:** $m = 45\,\text{g} = 0.045\,\text{kg}$ and $l = 12\,\text{cm} = 0.12\,\text{m}$
@@ -194,19 +212,35 @@ $$, and $0.094\,\text{N}$ stays below it.
 ## fy7-4-L3-05
 **Given:** length of the upper wire $l = 0.50\,\text{m}$, mass $m = 3.0\,\text{g}$, distance between the wires $r = 1.0\,\text{cm}$, the same current $I$ in both; $g = 9.81\,\text{m/s}^2$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** a) the directions of the currents and the current $I$ in amperes; b) whether the floating is stable in the vertical direction
-**Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other. Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
+**Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other.
+
+Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
 **Formula:** $I l B_1 = m g$, that is, $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, so $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
 **Conversions:** $m = 3.0\,\text{g} = 0.0030\,\text{kg}$ and $r = 1.0\,\text{cm} = 0.010\,\text{m}$
 **Substitution:** The denominator is $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0.50\,\text{m} = 6.283 \cdot 10^{-7}\,\text{Vs/A}$. The numerator is $$\begin{aligned} 2\pi r m g &= 2\pi \cdot 0.010\,\text{m} \\ &\cdot 0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 1.849 \cdot 10^{-3}\,\text{N}\cdot\text{m} \end{aligned}$$. So $I = \sqrt{\dfrac{1.849 \cdot 10^{-3}}{6.283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54.25\,\text{A}$
-**Answer:** a) The currents flow in opposite directions, and $I = 54\,\text{A}$, two significant figures like the mass and the distance. b) The floating is stable in the vertical direction: if the upper wire rises, the distance $r$ increases and the force $F \propto 1 : r$ drops below the weight, so the weight pulls the wire back; if it sinks, the distance decreases, the force grows above the weight and pushes the wire back up. Sideways the arrangement is not stable: a wire displaced sideways could turn or tip over, so the result applies only to the vertical direction.
-**Reasonableness:** The field at the upper wire is $B_1 = 1.085 \cdot 10^{-3}\,\text{T}$ and the force is $$\begin{aligned} &54.25\,\text{A} \cdot 0.50\,\text{m} \\ &\cdot 1.085 \cdot 10^{-3}\,\text{T} \\ &= 0.0294\,\text{N} \end{aligned}$$, which equals the weight $$\begin{aligned} &0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 0.0294\,\text{N} \end{aligned}$$. A current of over $50\,\text{A}$ heats a thin wire, so it is switched on only for a short time.
+**Answer:** a) The currents flow in opposite directions, and $I = 54\,\text{A}$, two significant figures like the mass and the distance.
+
+b) The floating is stable in the vertical direction: if the upper wire rises, the distance $r$ increases and the force $F \propto 1 : r$ drops below the weight, so the weight pulls the wire back; if it sinks, the distance decreases, the force grows above the weight and pushes the wire back up.
+
+Sideways the arrangement is not stable: a wire displaced sideways could turn or tip over, so the result applies only to the vertical direction.
+**Reasonableness:** The field at the upper wire is $B_1 = 1.085 \cdot 10^{-3}\,\text{T}$ and the force is $$\begin{aligned} &54.25\,\text{A} \cdot 0.50\,\text{m} \\ &\cdot 1.085 \cdot 10^{-3}\,\text{T} \\ &= 0.0294\,\text{N} \end{aligned}$$, which equals the weight $$\begin{aligned} &0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 0.0294\,\text{N} \end{aligned}$$.
+
+A current of over $50\,\text{A}$ heats a thin wire, so it is switched on only for a short time.
 
 ## fy7-4-L2-08
 **Find:** in which direction a copper wire hanging between the poles of a horseshoe magnet swings when the field points from left to right and the current in the wire flows downwards, and which reason explains it.
-**Principle:** A magnetic field exerts on a current-carrying wire a force that is perpendicular to both the current and the field. The direction is given by the right-hand rule: the thumb in the direction of the current, the other fingers in the direction of the field, and the palm pushes in the direction of the force. The direction of the current is the direction of motion of a positive charge, so the rule is not reversed because of the electrons. Copper is not ferromagnetic, so the magnet does not move a wire with no current.
-**Model answer:** The wire swings towards the viewer. The thumb points down in the direction of the current and the other fingers to the right in the direction of the field. Then the palm of the right hand faces the viewer, so the force points towards the viewer. The force is perpendicular to both the vertical wire and the horizontal field, so the wire does not move towards either pole.
+**Principle:** A magnetic field exerts on a current-carrying wire a force that is perpendicular to both the current and the field. The direction is given by the right-hand rule: the thumb in the direction of the current, the other fingers in the direction of the field, and the palm pushes in the direction of the force.
 
-Reason: the force is perpendicular to the current and to the field, and the right-hand rule gives its direction. The idea that the wire would move along the field lines towards the south pole is a misconception in which a current-carrying wire is thought of like a piece of iron. It is true that copper is not ferromagnetic, but that only explains why a wire with no current is not pulled. The electrons do move upwards, but their negative charge turns the force back, so the result is the same as applying the rule directly to the direction of the current. If the direction of the current is reversed, the wire swings away from the viewer.
+The direction of the current is the direction of motion of a positive charge, so the rule is not reversed because of the electrons. Copper is not ferromagnetic, so the magnet does not move a wire with no current.
+**Model answer:** The wire swings towards the viewer. The thumb points down in the direction of the current and the other fingers to the right in the direction of the field.
+
+Then the palm of the right hand faces the viewer, so the force points towards the viewer. The force is perpendicular to both the vertical wire and the horizontal field, so the wire does not move towards either pole.
+
+Reason: the force is perpendicular to the current and to the field, and the right-hand rule gives its direction. The idea that the wire would move along the field lines towards the south pole is a misconception in which a current-carrying wire is thought of like a piece of iron.
+
+It is true that copper is not ferromagnetic, but that only explains why a wire with no current is not pulled.
+
+The electrons do move upwards, but their negative charge turns the force back, so the result is the same as applying the rule directly to the direction of the current. If the direction of the current is reversed, the wire swings away from the viewer.
 
 ## fy7-4-L2-09
 **Given:** current $I = 6.0\,\text{A}$, length of the wire in the field $l = 25\,\text{cm}$; in the graph the force $F$ as a function of the angle $\alpha$ between the wire and the field

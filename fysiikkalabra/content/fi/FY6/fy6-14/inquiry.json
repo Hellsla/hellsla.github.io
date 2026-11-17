@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Kertaa: Ohmin laki",
       "optional": true,
-      "prompt": "Vastuksen jännite on $3{,}0\\,\\text{V}$, ja sen läpi kulkee $15\\,\\text{mA}$:n virta. Mikä on vastuksen resistanssi?",
+      "prompt": "LEDin etuvastuksen jännite on $3{,}0\\,\\text{V}$, ja sen läpi kulkee $15\\,\\text{mA}$:n virta. Mikä on etuvastuksen resistanssi?",
       "choices": [
         {
           "text": "$200\\,\\Omega$",

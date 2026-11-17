@@ -432,7 +432,9 @@ Valkoisen valon kapea kimppu tulee ilmasta kruunulasilevyn pintaan tulokulmassa 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tulokulma on $\alpha_1 = 60{,}0^\circ$. Taulukosta saadaan punaisen valon taitekerroin $n_\text{p} = 1{,}5143$ ja violetin valon taitekerroin $n_\text{v} = 1{,}5302$. Kysytään taitekulmat $\alpha_\text{p}$ ja $\alpha_\text{v}$ sekä niiden erotus $\Delta\alpha = \alpha_\text{p} - \alpha_\text{v}$.
+**Tunnetut ja kysytty.** Tulokulma on $\alpha_1 = 60{,}0^\circ$. Taulukosta saadaan punaisen valon taitekerroin $n_\text{p} = 1{,}5143$ ja violetin valon taitekerroin $n_\text{v} = 1{,}5302$.
+
+Kysytään taitekulmat $\alpha_\text{p}$ ja $\alpha_\text{v}$ sekä niiden erotus $\Delta\alpha = \alpha_\text{p} - \alpha_\text{v}$.
 
 <!-- vaihe -->
 

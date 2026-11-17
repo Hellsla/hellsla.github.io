@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8a1254cb5510ecf5
+CONTENT-HASH: 2e74a1075115f399
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the single change is virhe-arvio to virhearvio (one word, correct compound) in the formula paragraph, the stage Tulos and the inquiry solution; consistent, no other effect.
+batch delta review: Kertaa-tehtävän uusi johdanto (työpöydän piiri, lamppu palaa) sitoo kysymyksen Pohdinnan tilanteeseen ja on selkeää suomea; kappalejaot eivät muuta sanoja.

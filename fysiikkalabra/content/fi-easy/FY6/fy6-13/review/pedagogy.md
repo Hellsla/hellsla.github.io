@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 66175cc0749d903c
+CONTENT-HASH: 1b55a0cbecb49587
 
 ## Blocking
+none
 
 ## Polish
-- The packet shows no diff for this lesson; the readout label change ("ideal-model values at this voltage, as if no breakdown occurred") was not in my diff, so its wording is not judged here.
+- Space missing before `(luku` in the correct feedback.
 
 ## Checked
-batch delta review: packet diff empty; nothing changed in the text to judge.
+batch delta review: retrieval E=Pt 4,0 J; ms and kW slips are real distractors, feedback repairs.

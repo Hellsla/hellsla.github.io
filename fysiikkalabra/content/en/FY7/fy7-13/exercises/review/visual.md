@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4fd262dbfa71e157
+CONTENT-HASH: 4facf87790a6ef4e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md:163 — the block after “and error” still starts with a bare `=` (recorded in round 1).
-- [Minor] exercises.json (fy7-13-L2-06 quotation) — the split pieces that begin with `=` lack the relation space on their left (`0.337= 562 nm`).
-- [Minor] at 1280 px the two-row blocks with a left side (`d = 1 · 10⁻³ m : 300` / `= 3.333 · 10⁻⁶ m,`) stay two rows while the checks without one are joined; consistent with the Conversions steps, harmless.
+- [Minor] exercises.json L2-09 (13-17) feedback — "grating constant d" while the task texts say "grating spacing" — use "grating spacing" throughout.
+- [Minor] fy7-13/setup-q (13-18) — the 20 cm ticks carry labels only; a light minor tick at 10 cm would make the 70 cm reading easier (the solution already allows ±1 cm).
 
 ## Checked
-- Delta (queue 5d reflow), round 2. The packet's inventory has no phone capture of the opened solutions, so own captures were made from preview/en/fy7-13.html (rebuilt with build.py) with every solution open at 360, 390 and 1280 px; the 390 and 1280 px sheets of every solution step and task text the diff touches were read at full size (S-Efy7-13-390-*.png, S-Efy7-13-1280-*.png in the session scratchpad).
-- Measured at all three widths over the whole exercise section: no formula wider than its card or scrolling in its box (so nothing of docs/clipped-formulas.tsv clips on this page in these captures), no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line.
-- Source against main: the same tokens in the same order outside any new exercise; every new row starts with a relation, a sign or between whole quantities; the older aligned blocks are unchanged.
-- 390 px (both sheets) and 1280 px (both sheets): L1-02, L1-04, L2-01, L2-03, L2-04, L2-06 (conversions, substitution, the quotation inline again and closed with `.”` on its text line), L2-08 model answer, L1-09, L2-09 (`x₁ = L tan θ₁` / `= 1.20 m` / `· tan(sin⁻¹ …)` / `= 31.2 cm,`).
-- Hash identical at the end.
+- contact-7, contact-8 (all exercise captures #73–#96 at triage).
+- open-exercises-L2-1280-12 and -13: setup-q (geometry to scale, spot positions match the solution's 70 cm and 31 cm, L dimension line spans grating to screen, LaTeX labels) and the opening of spectrum-q (red edges and violet edges at true positions, scale legible).
+- Solution layout at 1280 px (given / asked / principle / formula / conversions / substitution / answer / reasonableness): aligned rows, fractions, units upright with thin space, \cdot, colon for division.
+- Text of every task in the packet: fluent English, consistent terms, data tables with LaTeX headers.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · English 4 · accessibility 4

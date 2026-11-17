@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 777c0cc7243a90cb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: a6a36ad2b2846b2c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- none.
 
 ## Checked
-- Coulombin laki: exact for point charges; outside a spherically symmetric charge the field equals that of a point charge at the centre (shell theorem), so centre-to-centre distance; nearby conducting spheres redistribute surface charge and the point-charge model is no longer exact. All correct; consistent with koe k6-e solution and rubric.
+batch delta review: qualitative kertaus: like charges repel, one correct option; the cited chapter Virtapiiri, sähkövirta ja jännite states the rule (checked fy6-1 lesson.md); insulator-charging feedback correct; the removed numeric line in lesson-answers.py leaves no orphan.

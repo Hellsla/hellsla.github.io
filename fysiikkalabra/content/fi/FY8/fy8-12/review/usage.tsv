@@ -14,3 +14,15 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-11-13T14:19Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	full	1	1073363	34	14816	957052	101461	107654	16	189	18		0.9952	transcript	8a0e4afdce7f
 2026-11-13T14:19Z	fy8-12	FY8	developer	develop	claude-sonnet-5-5	medium	fix	1	217508	18	5253	182081	30156	31049	9	282	10		0.1644	transcript	6b6014ea5f5b
 2026-11-13T14:19Z	fy8-12	FY8	orchestrator	orchestrate	claude-opus-5-5		session	2	67011684	525	107850	66257743	645566	457934	236	22558	226		20.5752	transcript	9023dd604d98
+2026-11-17T15:59Z	fy8-12	FY8	developer	develop	claude-sonnet-5-5	medium		3	129070	12	3946	97400	27712	28382	6	358	6		0.1282	transcript	e76cd34368bb
+2026-11-17T15:59Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	2	655400	28	6505	581478	67389	68343	13	51	20		0.3499	transcript	ebbe0fd4febb
+2026-11-17T15:59Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	3	122947	18	2320	94386	26223	17869	8	717	8		0.1077	transcript	83251bb9eacf
+2026-11-17T15:59Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	141893	8	3269	93768	44848	45583	4	28	5		0.1636	transcript	16edf187bd75
+2026-11-17T15:59Z	fy8-12	FY8	developer	develop	claude-sonnet-5-5	medium	add	1	1007654	34	16007	917260	74353	75150	17	413	17		0.5295	transcript	b2f7d189214f
+2026-11-17T15:59Z	fy8-12	FY8	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	466674	24	4067	397392	65191	65818	11	39	17		0.2832	transcript	90ebc31018ad
+2026-11-17T15:59Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	delta	1	264173	12	2986	208195	52980	54269	6	39	7		0.3663	transcript	40a959506975
+2026-11-17T15:59Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	delta	3	723955	34	6667	614057	103197	63758	15	772	16		0.7723	transcript	ddc40337a3d2
+2026-11-17T15:59Z	fy8-12	FY8	science-reviewer	review	claude-opus-5-5	medium	delta	2	154039	8	2987	101877	49167	49883	4	35	6		0.3260	transcript	3dd8f6649ddc
+2026-11-17T15:59Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	3	95830	10	1849	70129	23842	24387	5	17	5		0.0921	transcript	90cfdf2fb1d1
+2026-11-17T15:59Z	fy8-12	FY8	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	152304	8	2790	99414	50092	50858	4	21	5		0.1730	transcript	53ae71176ced
+2026-11-17T15:59Z	fy8-12	FY8	orchestrator	orchestrate	claude-sonnet-5-5		session	3	12306996	188	26066	12109107	171635	193568	79	8092	71		3.3694	transcript	527c56b0e4d2

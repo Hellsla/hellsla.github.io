@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: Ohm's law",
-      "prompt": "A resistor whose resistance is $100\\,\\Omega$ is connected to a $6.0\\,\\text{V}$ battery. How large is the current through the resistor?",
+      "prompt": "A single lamp from a string of lights is connected alone to a $6.0\\,\\text{V}$ battery. The resistance of the lamp is $100\\,\\Omega$ and is assumed to stay constant. How large is the current through the lamp?",
       "choices": [
         {
           "text": "$60\\,\\text{mA}$",

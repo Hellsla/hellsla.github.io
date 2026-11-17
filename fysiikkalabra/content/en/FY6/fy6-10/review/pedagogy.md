@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4e7c178af2d7ca44
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: c8b77a5c450492a1
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- The new figure description (curves A and B) gives no force values; if a task needs values read off, a reader without the figure lacks the data.
+- Retrieval is now qualitative with three options; fine, but its 'Circuit, electric current and voltage' reference is a stretch for charge repulsion.
 ## Checked
-- Diff since origin/main for fy6-10 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
+batch delta review: new retrieval task and feedback (qualitative retrieval and new figure description); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.

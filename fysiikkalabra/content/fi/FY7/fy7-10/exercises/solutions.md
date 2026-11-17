@@ -122,7 +122,9 @@
 ## fy7-10-L1-06
 **Kysytty:** miten ilmasta lasiin vinosti tuleva valonsäde käyttäytyy rajapinnassa ja miksi
 **Periaate:** Lasin taitekerroin on suurempi kuin ilman, joten valon nopeus on lasissa pienempi kuin ilmassa. Kun nopeus muuttuu, aaltorintamat kääntyvät rajapinnassa ja säde taittuu taittumislain $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ mukaan. Optisesti tiheämpään aineeseen siirtyessä taitekulma on tulokulmaa pienempi.
-**Mallivastaus:** Säde taittuu kohti normaalia, koska valo etenee lasissa hitaammin kuin ilmassa. Vaihtoehto, jonka mukaan säde taittuu poispäin normaalista, olettaa valon nopeutuvan lasissa, mutta lasin taitekerroin on suurempi kuin $1$, joten valo hidastuu. Vaihtoehto, jonka mukaan säde jatkaa samaan suuntaan, perustuu oikeaan väitteeseen taajuuden pysymisestä samana, mutta suunnan määrää nopeuden muutos eikä taajuus. Vaihtoehdossa, jonka mukaan taajuus kasvaa, suunta on oikea mutta syy väärä, sillä taajuus ei muutu rajapinnassa.
+**Mallivastaus:** Säde taittuu kohti normaalia, koska valo etenee lasissa hitaammin kuin ilmassa. Vaihtoehto, jonka mukaan säde taittuu poispäin normaalista, olettaa valon nopeutuvan lasissa, mutta lasin taitekerroin on suurempi kuin $1$, joten valo hidastuu.
+
+Vaihtoehto, jonka mukaan säde jatkaa samaan suuntaan, perustuu oikeaan väitteeseen taajuuden pysymisestä samana, mutta suunnan määrää nopeuden muutos eikä taajuus. Vaihtoehdossa, jonka mukaan taajuus kasvaa, suunta on oikea mutta syy väärä, sillä taajuus ei muutu rajapinnassa.
 
 ## fy7-10-L1-07
 **Annettu:** aallonpituus ilmassa $\lambda_0 = 633\,\text{nm}$, lasin taitekerroin $n = 1{,}52$, ilman taitekerroin $1{,}00$, taajuus $f$ ei muutu rajapinnassa
@@ -178,12 +180,16 @@
 ## fy7-10-L3-04
 **Annettu:** esineen syvyys $d = 60{,}0\,\text{cm}$, katselukulmat $\alpha_2 = 10{,}0^\circ;\ 20{,}0^\circ;\ 30{,}0^\circ;\ 40{,}0^\circ$ ja näennäiset syvyydet $h' = 44{,}9;\ 43{,}8;\ 42{,}0;\ 39{,}6\,\text{cm}$, ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** veden taitekerroin $n$ (yksikötön) neljän rivin keskiarvona; lisäksi perustelu näennäiselle syvyydelle
-**Periaate:** Esineestä pinnan pisteeseen kulkeva säde ja silmään tuleva säde kohtaavat pinnan samassa pisteessä. Sen vaakaetäisyys esineen kohdalta on $x = d\tan\alpha_1$ vedessä ja $x = h'\tan\alpha_2$ näennäisen paikan kautta. Kun nämä merkitään yhtä suuriksi, saadaan $\alpha_1$. Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella, joten näennäisen paikan kautta piirretty jatke lähtee samasta pystysuorasta kuin esine. Sen jälkeen taitekerroin saadaan taittumislaista veden ja ilman rajapinnassa.
+**Periaate:** Esineestä pinnan pisteeseen kulkeva säde ja silmään tuleva säde kohtaavat pinnan samassa pisteessä. Sen vaakaetäisyys esineen kohdalta on $x = d\tan\alpha_1$ vedessä ja $x = h'\tan\alpha_2$ näennäisen paikan kautta. Kun nämä merkitään yhtä suuriksi, saadaan $\alpha_1$.
+
+Oletetaan, että esine näyttää olevan suoraan todellisen paikkansa yläpuolella, joten näennäisen paikan kautta piirretty jatke lähtee samasta pystysuorasta kuin esine. Sen jälkeen taitekerroin saadaan taittumislaista veden ja ilman rajapinnassa.
 **Taulukon lukeminen:** Taulukon rivit luetaan pareina $(\alpha_2,\ h')$. Jokaisesta rivistä lasketaan oma $\alpha_1$ ja oma $n$, ja lopuksi niistä lasketaan keskiarvo, koska mittaukset hajoavat hieman.
 **Kaava:** $d\tan\alpha_1 = h'\tan\alpha_2$, josta $\tan\alpha_1 = \dfrac{h'\tan\alpha_2}{d}$; taittumislaista $n \sin\alpha_1 = n_2 \sin\alpha_2$ seuraa $n = \dfrac{n_2 \sin\alpha_2}{\sin\alpha_1}$ ja keskiarvo $n_\text{ka} = \dfrac{n_{10} + n_{20} + n_{30} + n_{40}}{4}$
 **Muunnokset:** Ei tarvita: $h'$ ja $d$ ovat senttimetreinä, joten niiden suhde on yksikötön.
 **Sijoitus:** Rivillä $10{,}0^\circ$: $\tan\alpha_1 = \dfrac{44{,}9 \cdot \tan 10{,}0^\circ}{60{,}0} = 0{,}1320$, $\alpha_1 = 7{,}517^\circ$, $n = \dfrac{\sin 10{,}0^\circ}{\sin 7{,}517^\circ} = 1{,}3274$. Rivillä $20{,}0^\circ$: $\alpha_1 = 14{,}880^\circ$, $n = 1{,}3319$. Rivillä $30{,}0^\circ$: $\alpha_1 = 22{,}006^\circ$, $n = 1{,}3344$. Rivillä $40{,}0^\circ$: $\alpha_1 = 28{,}978^\circ$, $n = 1{,}3268$. Summa on $$\begin{aligned} &1{,}3274 + 1{,}3319 + 1{,}3344 \\ &+ 1{,}3268 \\ &= 5{,}3205 \end{aligned}$$, joten $n_\text{ka} = \dfrac{5{,}3205}{4} = 1{,}3301$
-**Vastaus:** $n \approx 1{,}33$, kolme merkitsevää numeroa kuten syvyydessä ja taulukon arvoissa. Perustelu: valo taittuu vedestä ilmaan normaalista poispäin, joten silmään tuleva säde on loivempi kuin säde vedessä, ja sen jatke leikkaa esineen kautta kulkevan pystysuoran todellista syvyyttä ylempänä, jolloin $h' < d$. Katselukulman kasvaessa säteiden ero kasvaa, koska taittuminen on sitä voimakkaampaa mitä vinompi säde on, ja siksi $h'$ pienenee aineiston mukaan arvosta $44{,}9\,\text{cm}$ arvoon $39{,}6\,\text{cm}$.
+**Vastaus:** $n \approx 1{,}33$, kolme merkitsevää numeroa kuten syvyydessä ja taulukon arvoissa. Perustelu: valo taittuu vedestä ilmaan normaalista poispäin, joten silmään tuleva säde on loivempi kuin säde vedessä, ja sen jatke leikkaa esineen kautta kulkevan pystysuoran todellista syvyyttä ylempänä, jolloin $h' < d$.
+
+Katselukulman kasvaessa säteiden ero kasvaa, koska taittuminen on sitä voimakkaampaa mitä vinompi säde on, ja siksi $h'$ pienenee aineiston mukaan arvosta $44{,}9\,\text{cm}$ arvoon $39{,}6\,\text{cm}$.
 **Järkevyys:** Tulos vastaa taulukon veden taitekerrointa $1{,}33$. Pienellä kulmalla näennäinen syvyys lähestyy arvoa $d : n = 60{,}0\,\text{cm} : 1{,}33 = 45{,}1\,\text{cm}$, ja pienimmän kulman $10{,}0^\circ$ lukema $44{,}9\,\text{cm}$ on lähellä tätä. Jokaisella rivillä $h' < 60{,}0\,\text{cm}$.
 
 ## fy7-10-L3-05
