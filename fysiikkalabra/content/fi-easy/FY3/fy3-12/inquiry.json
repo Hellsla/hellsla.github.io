@@ -32,11 +32,11 @@
         {
           "text": "Sisäenergia pienenee $3{,}0\\,\\text{kJ}$ ja lämpötila laskee.",
           "correct": true,
-          "feedback": "Oikein: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= (1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ}) + 0 \\\\ &= -3{,}0\\,\\text{kJ} \\end{aligned}$$. Energiaa siirtyy nettona pois, joten sisäenergia pienenee ja lämpötila laskee."
+          "feedback": "Oikein: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= 1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ} + 0 \\\\ &= -3{,}0\\,\\text{kJ} \\end{aligned}$$. Energiaa siirtyy nettona pois, joten sisäenergia pienenee ja lämpötila laskee."
         },
         {
           "text": "Sisäenergia pienenee $4{,}0\\,\\text{kJ}$ ja lämpötila laskee.",
-          "feedback": "Otit huomioon vain luovutetun lämmön. Kerros saa myös $1{,}0\\,\\text{kJ}$ lämpönä. Nettomuutos on $Q = 1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ} = -3{,}0\\,\\text{kJ}$."
+          "feedback": "Otit huomioon vain luovutetun lämmön. Kerros saa myös $1{,}0\\,\\text{kJ}$ lämpönä. Nettomuutos on $$\\begin{aligned} Q &= 1{,}0\\,\\text{kJ} - 4{,}0\\,\\text{kJ} \\\\ &= -3{,}0\\,\\text{kJ} \\end{aligned}$$."
         },
         {
           "text": "Sisäenergia kasvaa $3{,}0\\,\\text{kJ}$ ja lämpötila nousee.",

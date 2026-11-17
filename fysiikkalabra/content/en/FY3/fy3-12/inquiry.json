@@ -32,11 +32,11 @@
         {
           "text": "The internal energy decreases by $3.0\\,\\text{kJ}$ and the temperature falls.",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= (1.0\\,\\text{kJ} - 4.0\\,\\text{kJ}) + 0 \\\\ &= -3.0\\,\\text{kJ} \\end{aligned}$$. Net energy leaves the layer, so its internal energy decreases and its temperature falls."
+          "feedback": "Correct: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= 1.0\\,\\text{kJ} - 4.0\\,\\text{kJ} + 0 \\\\ &= -3.0\\,\\text{kJ} \\end{aligned}$$. Net energy leaves the layer, so its internal energy decreases and its temperature falls."
         },
         {
           "text": "The internal energy decreases by $4.0\\,\\text{kJ}$ and the temperature falls.",
-          "feedback": "You took into account only the heat given away. The layer also receives $1.0\\,\\text{kJ}$ of heat, so the net change is $Q = 1.0\\,\\text{kJ} - 4.0\\,\\text{kJ} = -3.0\\,\\text{kJ}$."
+          "feedback": "You took into account only the heat given away. The layer also receives $1.0\\,\\text{kJ}$ of heat, so the net change is $$\\begin{aligned} Q &= 1.0\\,\\text{kJ} - 4.0\\,\\text{kJ} \\\\ &= -3.0\\,\\text{kJ} \\end{aligned}$$."
         },
         {
           "text": "The internal energy increases by $3.0\\,\\text{kJ}$ and the temperature rises.",

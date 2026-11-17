@@ -28,11 +28,11 @@
         {
           "text": "$9{,}0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\cdot 0{,}10\\,\\text{m} \\\\ &= 9{,}0\\,\\text{J} \\end{aligned}$$. Voima ja liike ovat samansuuntaiset, joten työ on voiman ja matkan tulo."
+          "feedback": "Oikein: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\\\ &\\cdot 0{,}10\\,\\text{m} \\\\ &= 9{,}0\\,\\text{J} \\end{aligned}$$. Voima ja liike ovat samansuuntaiset, joten työ on voiman ja matkan tulo."
         },
         {
           "text": "$90\\,\\text{J}$",
-          "feedback": "Tämä on voiman lukuarvo, ei työ. Työ saadaan kertomalla voima matkalla: $W = Fs = 90\\,\\text{N} \\cdot 0{,}10\\,\\text{m} = 9{,}0\\,\\text{J}$."
+          "feedback": "Tämä on voiman lukuarvo, ei työ. Työ saadaan kertomalla voima matkalla: $W = Fs = 9{,}0\\,\\text{J}$."
         },
         {
           "text": "$90{,}1\\,\\text{J}$",

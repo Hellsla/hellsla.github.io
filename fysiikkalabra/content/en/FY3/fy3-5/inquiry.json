@@ -31,11 +31,11 @@
         {
           "text": "$9.0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\cdot 0.10\\,\\text{m} \\\\ &= 9.0\\,\\text{J} \\end{aligned}$$. The force and the motion are in the same direction, so the work is the product of the force and the distance."
+          "feedback": "Correct: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\\\ &\\cdot 0.10\\,\\text{m} \\\\ &= 9.0\\,\\text{J} \\end{aligned}$$. The force and the motion are in the same direction, so the work is the product of the force and the distance."
         },
         {
           "text": "$90\\,\\text{J}$",
-          "feedback": "This is the numerical value of the force, not the work. Work is obtained by multiplying the force by the distance: $W = Fs = 90\\,\\text{N} \\cdot 0.10\\,\\text{m} = 9.0\\,\\text{J}$."
+          "feedback": "This is the numerical value of the force, not the work. Work is obtained by multiplying the force by the distance: $W = Fs = 9.0\\,\\text{J}$."
         },
         {
           "text": "$90.1\\,\\text{J}$",
