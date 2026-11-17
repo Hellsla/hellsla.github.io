@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3fdc6d94a88f1134
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 0dbc6895eb261250
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The English prompt, options and feedback use decimal commas ($0{,}50$, $1{,}0$, $5{,}0$, $2{,}5$) where the rest of the English lesson uses points.
 
 ## Checked
-- Diff is only $\mu_0 = $ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ in the force-between-wires formula text and one inquiry line (word-level diff: nothing else). Consistent with the following sentence that the ampere was defined by this force until 2019. fi, en, fi-easy identical in substance. Hash identical at start and end.
+batch delta review: B = mu0 I/(2 pi r): 0.50 A gives 10 µT at 1.0 cm and 5.0 µT at 2.0 cm (recomputed), 2.5 µT square-law distractor feedback right; one correct option; current-balance Ennusta not revealed.

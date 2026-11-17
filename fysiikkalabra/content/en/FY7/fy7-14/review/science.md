@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c31b0e2dcf823b64
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 811810bf0a6cb0f2
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The stated condition (phase changes only by the distance travelled) does not hold for light reflected from a soap film, where the upper-surface reflection inverts. It is stated, so the task is right, but "in transmitted light" or "ignore the reflections for now" would leave no conflict with the lesson's model. 975 nm reads as an optical path difference; say so.
 
 ## Checked
-- Geometric extra path 2d vs optical path difference 2nd, compared with the vacuum/air wavelength: correct (550 : 1.33 = 413.5 nm). Very thin soap film: reflections in antiphase, ideally very little reflected light, looks dark/almost black in reflected light: correct; formula section and summary now say optical path difference. Languages match. (language checked: en.)
-- Round 2: exit ticket now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta", consistent with theory and summary (previous polish resolved).
+batch delta review: 975/650 = 1.5, destructive; distractor feedback right; one correct option; the thin-film Ennusta (20 nm film black, MgF2 coating) not revealed: the stated no-inversion condition steers away from it rather than to it.

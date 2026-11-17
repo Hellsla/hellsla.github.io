@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e070b14b313b08c9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 26b3b9c9bd4094f5
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- "About 50 µT" is the total Earth field; the needle on the table follows its horizontal component (C, acceptable).
 
 ## Checked
-- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.
+batch delta review: compass with no current: Earth's field steers the needle; copper non-magnetic; dipole aligns along, not across, the field; one correct option; Ennusta (coil length, coil end) not revealed.

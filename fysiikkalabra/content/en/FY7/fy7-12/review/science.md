@@ -1,13 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: e1bf14bfdcd13d38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 056b620559581d4c
 
 ## Blocking
-- none
+- **A.** `inquiry.json` Pohdinta retrieval, third option ("It does not refract..."): the feedback still ends "The law of refraction gives an angle of refraction of about $41.7^\circ$", left from the old water-to-air task. For air into glass ($n = 1.48$) at $30^\circ$ it is $19.8^\circ$ (recomputed 19.75 deg, as `kertaus-alpha2`). Write $19.8^\circ$ and say it is towards the normal.
 
 ## Polish
-- [Minor] fig "water" aria-label (lessons/FY7/fy7-12/figures.py, figures.json, lesson.md): "ilmaan ei pääse valoa, vaan koko säde heijastuu" could echo the new wording (ei etenevää taittunutta sädettä); not wrong in the ideal model.
+- None.
 
 ## Checked
-- TIR: no propagating refracted ray, ideal lossless boundary reflects all incident power, evanescent field near boundary in one sentence: correct. Critical angle water-air 48.8 deg (arcsin 1/1.333) unchanged. Endoscope: traditional fibrescope (illumination bundle + coherent image bundle) vs video endoscope with chip-on-tip camera, fibres for illumination only: correct. Languages match. (language checked: en.)
-- Round 2: definition "Tämä on kokonaisheijastuminen" now follows the law-of-reflection sentence; "eikä energiaa siirry toiseen aineeseen" for an ideal boundary is correct (evanescent field carries no time-averaged power across); fi, en, fi-easy match.
+batch delta review: air to glass n = 1.48 at 30 deg: alpha2 = 19.8 deg recomputed; correct option and the away-from-normal distractor right; third distractor feedback wrong (Blocking); Ennusta (leak above an angle, air vs cladding) not revealed.
