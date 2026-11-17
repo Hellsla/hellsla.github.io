@@ -56,3 +56,4 @@ teacher's approval of a figure, of a plan, or of a material content change: the 
 - Layout is checked by `check_lesson.py` (360, 390, 768, 1280 px) and again by CI (eight widths): the local check is the quick filter,
   CI the gate. Do not skip the local one to save time; a CI round costs more.
 - `reviews.py verify` in CI re-derives every carry; a carry written by hand fails there, so never write one.
+- `reviews.py check-report <id> [--lang L] [--exercises]` (and `verify`) rejects a report with a free-form `SCOPE:` line or, in a translation, the Finnish source's hash; run it before accepting a reviewer's report (work queue 0c).

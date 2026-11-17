@@ -642,3 +642,13 @@ vihkojen jälkeen (Vihkot-sivu).
 Opettaja 2026-11-15: vihkot vasta kohtien 17 ja 18 jälkeen, koska oikolukua ei kannata tehdä vihkon jälkeen.
 
 ## [loki] Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
+
+## [loki] 0c. Yksi yleinen esitystapaluokka `reviews.py`:hin (2026-11-17, #677)
+`format_view`/`format_categories` (`reviews.py`): yksi normalisoitu vertailu (laskuketjut yhteen muotoon, kappalejako ja
+`- `-merkit pois, esimerkkiaineisto-merkintä pois alkuperäisestä), joka antaa luokkien reflow, md-paragraphs/paragraphs ja
+caption-label mielivaltaisen yhdistelmän myös samalla rivillä (ennen: lukumuutos, FY5 fy5-12, fy5-2; FY4 fy4-14; FY3 fy3-5).
+`changes` käyttää sitä kaikille .md- ja .json-tiedostoille (luku, tehtäväsarja, yksikkö, Sovella, koe, tutkimus, TVT-ohje);
+`item_view` järjestää merkit ensin, ketjut sitten. Säännöt (RULES) ennallaan: tiede ja pedagogiikka carry, ulkoasu delta.
+`translation_differs`: kaavat monijoukkona (kaavan paikka lauseessa ei ole tiedettä; en L3-05, fi-easy L2-01), luvut ja
+kaavat yhä tiukasti. Uusi `report_problems` / `reviews.py check-report <id> [--lang] [--exercises]` (myös `verify`): vapaamuotoinen
+SCOPE-rivi ja kielen raportissa suomenkielisen lähteen hash hylätään ennen hyväksymistä. Testit `test_reviews.py` "0c".
