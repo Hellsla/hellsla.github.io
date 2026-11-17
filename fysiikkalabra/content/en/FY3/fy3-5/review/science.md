@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 477e546a5705e822
+CONTENT-HASH: d8275b9fad97e6b7
 
 ## Blocking
-(none left; see Fixed)
-
-## Fixed
-- (none needed)
 
 ## Polish
-- none
+- inquiry.json, fire-piston prompt: the newly wrapped distance is written `$8{,}0\,\text{cm}$`, with a decimal comma. The English text uses decimal points everywhere else, including `0.60 J` in the same sentence. The value is unchanged, but it should read `8.0`.
 
 ## Checked
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): compared lesson.md, inquiry.json, exit-ticket.json, figures.json, simulation labels (lang file sims.fy3-5 keys) with content/fi/FY3/fy3-5. Physics, signs (Q, W, dU), numbers, units and chapter titles match the Finnish; button names match the sim labels. Figure texts each translate their own key.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (incl. check-c2 item), exit-ticket.json, figures.json (incl. the piston-force figure text) against the new Finnish.
+batch delta review: I recomputed the fire piston, W = Fs = 75 N · 0.080 m = 6.0 J and ΔU = W + Q = 6.0 J − 0.60 J = 5.4 J, which matches the answer. The furnace photo caption is right: heating raises the metal's internal energy, and the caption says nothing about heat being stored in the metal. The worked-example knowns and the question are now in separate paragraphs, with no change to the physics. The learn goals changed form only. The hash was the same at the start and the end.

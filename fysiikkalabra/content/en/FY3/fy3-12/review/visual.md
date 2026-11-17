@@ -1,9 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: a5405010b5520a2b
+VERDICT: FAIL
+CONTENT-HASH: db131c2d781a107a
 
 ## Blocking
+- [Major] lesson.md worked example (example-390-1) and inquiry.json lines 231, 258 — the newly set quantities $20{,}0\,\text{m}^2$, $1{,}5\,\text{m}^2$, $4{,}0\,\text{m}^2$ render with a decimal comma in the English version, while the same example shows $20.0\,\text{m}^2$, $0.17$, $1.0$ with a point (mixed notation within one sentence) — English uses the decimal point — write $20.0\,\text{m}^2$, $1.5\,\text{m}^2$, $4.0\,\text{m}^2$.
 
 ## Polish
+- [Minor] fy3-12-fig-7-390 — the word "insulation" crosses the right edge of the wall layer — move the label right or shorten (teacher-approved figure, so only with new approval).
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+batch delta review: example-390-1, contact-1, fig-1/3/5/7/9 captures, fig-row-1280; diff of exit ticket (plain quantity now maths, fine) and paragraph splits in the example read.
