@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 844ef976147dad75
+CONTENT-HASH: d74f1bab5e2d2fa5
+SCOPE: delta added-exercise from 844ef976147dad75 base 5b3ca4f81c77
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-12-L2-08 solution (Annettu, Mallivastaus a) ja d)) — suorat lainausmerkit "anti-5G", "Quantum Pendant", "negative ion" renderöityvät suorina — käytä ”…”, kuten tehtävätekstissä.
+- [Minor] fy8-12-L3-07 solution (Vastaus) — suorat lainausmerkit "enintään" — käytä ”enintään”, kuten L2-08:n tehtävätekstissä.
 
 ## Checked
-- Delta: fy8-12-L2-08, captures fy8-12-open-exercises-L2-1280-11, -12, -13 (Annettu to Järkevyys).
-- Round-1 Major fixed: both comparisons are now their own display rows with the sentence intact ("…suhde fotonin energiaan on [rivi]"); $\text{J}\,\text{s}$ and $24\,\text{h}$ now correct.
-- Chain rows aligned, µeV upright, decimal comma right, no clipping; Finnish fluent, claim and observation separated.
+- Delta: L2-09 (captures L2-1280-13, -14) and L3-07 (L3-1280-11, -12, -13), solutions fully open.
+- Figure fy8-12/tuntematon as shown in both tasks: axes with units, ticks every 6 mm, 800 start point marked, curve distinct, answer not given away; description matches.
+- Chains aligned, mm and pulssia/min upright, decimal comma right, $\tfrac{1}{50}$ legible; Finnish fluent; set reads as one.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
