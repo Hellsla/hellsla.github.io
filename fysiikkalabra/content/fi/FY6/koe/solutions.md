@@ -1,34 +1,114 @@
 ## fy6-k1
 
 ### a)
-**Perustelu:** Silmukassa on vain yksi reitti, joten jokaisen johtimen poikkileikkauksen läpi kulkee sekunnissa yhtä suuri varaus: virta on sama ennen lamppua ja sen jälkeen, ja mittari $\text{A}_2$ näyttää $0{,}30\,\text{A}$. Lampussa sähköenergia muuttuu valoksi ja sisäenergiaksi, mutta varaus ei häviä mihinkään. Vastaukset $0\,\text{A}$ ja noin $0{,}15\,\text{A}$ syntyvät käsityksestä, että lamppu kuluttaa virran kokonaan tai osittain. Virta ei voi myöskään kasvaa, koska lamppu ei tuota varausta.
+**Perustelu:** Silmukassa on vain yksi reitti, joten jokaisen johtimen poikkileikkauksen läpi kulkee sekunnissa yhtä suuri varaus: virta on sama ennen lamppua ja sen jälkeen, ja mittari $\text{A}_2$ näyttää $0{,}30\,\text{A}$.
+
+Lampussa sähköenergia muuttuu valoksi ja sisäenergiaksi, mutta varaus ei häviä mihinkään.
+
+Vastaukset $0\,\text{A}$ ja noin $0{,}15\,\text{A}$ syntyvät käsityksestä, että lamppu kuluttaa virran kokonaan tai osittain.
+
+Virta ei voi myöskään kasvaa, koska lamppu ei tuota varausta.
 
 ### b)
-**Perustelu:** Virtamittarin resistanssi on hyvin pieni. Kun se kytketään lampun rinnalle, lähes koko virta kulkee mittarin kautta: lampun jännite on lähes nolla, ja lamppu sammuu. Piirin virtaa rajoittavat enää pariston sisäinen resistanssi ja johdot, joten virta on suuri, ja mittarin sulake voi palaa. Mittari näyttää lampun virran oikein vain lampun kanssa sarjaan kytkettynä. Vaihtoehto, jossa mittari näyttää nollaa eikä lamppu muutu, kuvaa rinnalle kytkettyä jännitemittaria, jonka resistanssi on suuri.
+**Perustelu:** Virtamittarin resistanssi on hyvin pieni.
+
+Kun se kytketään lampun rinnalle, lähes koko virta kulkee mittarin kautta: lampun jännite on lähes nolla, ja lamppu sammuu.
+
+Piirin virtaa rajoittavat enää pariston sisäinen resistanssi ja johdot, joten virta on suuri, ja mittarin sulake voi palaa.
+
+Mittari näyttää lampun virran oikein vain lampun kanssa sarjaan kytkettynä.
+
+Vaihtoehto, jossa mittari näyttää nollaa eikä lamppu muutu, kuvaa rinnalle kytkettyä jännitemittaria, jonka resistanssi on suuri.
 
 ### c)
-**Perustelu:** Kytkennässä I resistanssit lasketaan yhteen: $R + R = 2R$. Kytkennässä II $\tfrac{1}{R_\text{k}} = \tfrac{1}{R} + \tfrac{1}{R}$, joten $R_\text{k} = \tfrac{R}{2}$. Kytkennässä III rinnakkaisen ryhmän resistanssi $\tfrac{R}{2}$ on sarjassa vastuksen $R$ kanssa, joten $R_\text{k} = 1{,}5R$. Järjestys on siis II ($0{,}5R$), III ($1{,}5R$), I ($2R$). Järjestys II, I, III syntyy, jos kokonaisresistanssin luullaan kasvavan aina vastusten määrän mukana: rinnakkainen haara on kuitenkin uusi reitti virralle, joten se pienentää kokonaisresistanssia.
+**Perustelu:** Kytkennässä I resistanssit lasketaan yhteen: $R + R = 2R$.
+
+Kytkennässä II $\tfrac{1}{R_\text{k}} = \tfrac{1}{R} + \tfrac{1}{R}$, joten $R_\text{k} = \tfrac{R}{2}$.
+
+Kytkennässä III rinnakkaisen ryhmän resistanssi $\tfrac{R}{2}$ on sarjassa vastuksen $R$ kanssa, joten $R_\text{k} = 1{,}5R$.
+
+Järjestys on siis II ($0{,}5R$), III ($1{,}5R$), I ($2R$).
+
+Järjestys II, I, III syntyy, jos kokonaisresistanssin luullaan kasvavan aina vastusten määrän mukana: rinnakkainen haara on kuitenkin uusi reitti virralle, joten se pienentää kokonaisresistanssia.
 
 ### d)
-**Perustelu:** Kun kytkin on auki, $L_1$ ja $L_2$ ovat sarjassa, kokonaisresistanssi on $2R$ ja kummankin virta on $\tfrac{U}{2R}$. Kun kytkin suljetaan, $L_2$ ja $L_3$ ovat rinnan, ja niiden yhteinen resistanssi on $\tfrac{R}{2}$. Kokonaisresistanssi pienenee arvoon $1{,}5R$, joten lampun $L_1$ virta kasvaa arvoon $\tfrac{2U}{3R}$ ja $L_1$ kirkastuu. Lampun $L_1$ jännite kasvaa arvoon $\tfrac{2}{3}U$, joten rinnakkaisille lampuille jää vain $\tfrac{1}{3}U$ entisen $\tfrac{1}{2}U$:n sijaan, ja $L_2$ himmenee. Vaihtoehto, jossa $L_1$ ei muutu, olettaa, että paristo antaa aina saman virran; pariston jännite pysyy samana, mutta virta riippuu kytkennän resistanssista.
+**Perustelu:** Kun kytkin on auki, $L_1$ ja $L_2$ ovat sarjassa, kokonaisresistanssi on $2R$ ja kummankin virta on $\tfrac{U}{2R}$.
+
+Kun kytkin suljetaan, $L_2$ ja $L_3$ ovat rinnan, ja niiden yhteinen resistanssi on $\tfrac{R}{2}$.
+
+Kokonaisresistanssi pienenee arvoon $1{,}5R$, joten lampun $L_1$ virta kasvaa arvoon $\tfrac{2U}{3R}$ ja $L_1$ kirkastuu.
+
+Lampun $L_1$ jännite kasvaa arvoon $\tfrac{2}{3}U$, joten rinnakkaisille lampuille jää vain $\tfrac{1}{3}U$ entisen $\tfrac{1}{2}U$:n sijaan, ja $L_2$ himmenee.
+
+Vaihtoehto, jossa $L_1$ ei muutu, olettaa, että paristo antaa aina saman virran; pariston jännite pysyy samana, mutta virta riippuu kytkennän resistanssista.
 
 ### e)
-**Perustelu:** Energia on teho kertaa aika. Keitin: $2{,}0\,\text{kW} \cdot 0{,}050\,\text{h} = 0{,}10\,\text{kWh}$, koska $3{,}0\,\text{min} = 0{,}050\,\text{h}$. Lamppu: $$\begin{aligned} &0{,}0080\,\text{kW} \cdot 5{,}0\,\text{h} \\ &= 0{,}040\,\text{kWh} \end{aligned}$$. Keitin käyttää siis $0{,}10 : 0{,}040 = 2{,}5$ kertaa niin paljon energiaa. Luku $250$ on tehojen suhde, josta aika puuttuu, ja $6{,}0\,\text{kWh}$ syntyy, kun minuutteja ei muunneta tunneiksi. Lamppu on päällä kauemmin, mutta sen teho on niin pieni, että energiaa kuluu vähemmän.
+**Perustelu:** Energia on teho kertaa aika.
+
+Keitin: $2{,}0\,\text{kW} \cdot 0{,}050\,\text{h} = 0{,}10\,\text{kWh}$, koska $3{,}0\,\text{min} = 0{,}050\,\text{h}$.
+
+Lamppu: $$\begin{aligned} &0{,}0080\,\text{kW} \cdot 5{,}0\,\text{h} \\ &= 0{,}040\,\text{kWh} \end{aligned}$$.
+
+Keitin käyttää siis $0{,}10 : 0{,}040 = 2{,}5$ kertaa niin paljon energiaa.
+
+Luku $250$ on tehojen suhde, josta aika puuttuu, ja $6{,}0\,\text{kWh}$ syntyy, kun minuutteja ei muunneta tunneiksi.
+
+Lamppu on päällä kauemmin, mutta sen teho on niin pieni, että energiaa kuluu vähemmän.
 
 ### f)
-**Perustelu:** Napajännite on lähdejännitteen suuruinen, kun virta on nolla, joten $E = 1{,}60\,\text{V}$. Napajännite pienenee virran kasvaessa sisäisen resistanssin jännitehäviön verran, joten $$\begin{aligned} R_\text{s} &= -\tfrac{\Delta U}{\Delta I} \\ &= \tfrac{1{,}60\,\text{V} - 1{,}20\,\text{V}}{1{,}0\,\text{A}} \\ &= 0{,}40\,\Omega \end{aligned}$$. Arvo $1{,}2\,\Omega$ on loppupisteen $U : I$ eli kuormituksen resistanssi, ei sisäinen resistanssi. $1{,}20\,\text{V}$ on napajännite virralla $1{,}0\,\text{A}$. Kuvaaja päättyy siihen, mihin mittaukset päättyvät; oikosulkuvirta saadaan jatkamalla suoraa vaaka-akselille, $I_\text{k} = \tfrac{E}{R_\text{s}} = 4{,}0\,\text{A}$.
+**Perustelu:** Napajännite on lähdejännitteen suuruinen, kun virta on nolla, joten $E = 1{,}60\,\text{V}$.
+
+Napajännite pienenee virran kasvaessa sisäisen resistanssin jännitehäviön verran, joten $$\begin{aligned} R_\text{s} &= -\tfrac{\Delta U}{\Delta I} \\ &= \tfrac{1{,}60\,\text{V} - 1{,}20\,\text{V}}{1{,}0\,\text{A}} \\ &= 0{,}40\,\Omega \end{aligned}$$.
+
+Arvo $1{,}2\,\Omega$ on loppupisteen $U : I$ eli kuormituksen resistanssi, ei sisäinen resistanssi.
+
+$1{,}20\,\text{V}$ on napajännite virralla $1{,}0\,\text{A}$.
+
+Kuvaaja päättyy siihen, mihin mittaukset päättyvät; oikosulkuvirta saadaan jatkamalla suoraa vaaka-akselille, $I_\text{k} = \tfrac{E}{R_\text{s}} = 4{,}0\,\text{A}$.
 
 ### g)
-**Perustelu:** Voimat $F_\text{A}$ ja $F_\text{B}$ ovat saman vuorovaikutuksen voima ja vastavoima, joten ne ovat aina yhtä suuret, vaikka varaukset ovat erisuuret. Myös Coulombin laki $F = k\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ antaa molemmille saman arvon, koska siinä on varausten tulo. Voima on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys pienentää kumpaakin voimaa $2^2 = 4$ kertaa eli neljäsosaan. Puolittuminen syntyisi, jos voima olisi kääntäen verrannollinen etäisyyteen eikä sen neliöön. Suurempi varaus ei kohdista pienempään suurempaa voimaa kuin pienempi suurempaan.
+**Perustelu:** Voimat $F_\text{A}$ ja $F_\text{B}$ ovat saman vuorovaikutuksen voima ja vastavoima, joten ne ovat aina yhtä suuret, vaikka varaukset ovat erisuuret.
+
+Myös Coulombin laki $F = k\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ antaa molemmille saman arvon, koska siinä on varausten tulo.
+
+Voima on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys pienentää kumpaakin voimaa $2^2 = 4$ kertaa eli neljäsosaan.
+
+Puolittuminen syntyisi, jos voima olisi kääntäen verrannollinen etäisyyteen eikä sen neliöön.
+
+Suurempi varaus ei kohdista pienempään suurempaa voimaa kuin pienempi suurempaan.
 
 ### h)
-**Perustelu:** Homogeenisen kentän voimakkuus on $E = \tfrac{U}{d}$, joten kaksinkertainen etäisyys samalla jännitteellä puolittaa kentän. Kentän tekemä työ on kuitenkin $W = eU$, koska voima $eE$ puolittuu ja matka $d$ kaksinkertaistuu: $eE \cdot d = eU$. Elektroni saa saman liike-energian ja siis saman loppunopeuden. Vaihtoehto, jossa nopeus puolittuu, olettaa nopeuden riippuvan vain voimasta eikä matkasta, ja vaihtoehto, jossa kenttä pysyy samana, olettaa kentän riippuvan vain jännitteestä.
+**Perustelu:** Homogeenisen kentän voimakkuus on $E = \tfrac{U}{d}$, joten kaksinkertainen etäisyys samalla jännitteellä puolittaa kentän.
+
+Kentän tekemä työ on kuitenkin $W = eU$, koska voima $eE$ puolittuu ja matka $d$ kaksinkertaistuu: $eE \cdot d = eU$.
+
+Elektroni saa saman liike-energian ja siis saman loppunopeuden.
+
+Vaihtoehto, jossa nopeus puolittuu, olettaa nopeuden riippuvan vain voimasta eikä matkasta, ja vaihtoehto, jossa kenttä pysyy samana, olettaa kentän riippuvan vain jännitteestä.
 
 ### i)
-**Perustelu:** Latauksen alussa kondensaattori on varaamaton ja sen jännite on nolla, joten koko pariston jännite on vastuksen yli ja virta on suurimmillaan. Kun levyille kertyy varausta, kondensaattorin jännite kasvaa, vastuksen jännite pienenee ja virta pienenee. Virta lähestyy nollaa, kun kondensaattorin jännite lähestyy pariston jännitettä. Tätä esittää kuvaaja C. Kuvaaja B on kondensaattorin jännitteen tai varauksen kuvaaja, ei virran. Vakiovirta (A) tai kasvava virta (D) ei pienenisi, vaikka kondensaattorin jännite kasvaa.
+**Perustelu:** Latauksen alussa kondensaattori on varaamaton ja sen jännite on nolla, joten koko pariston jännite on vastuksen yli ja virta on suurimmillaan.
+
+Kun levyille kertyy varausta, kondensaattorin jännite kasvaa, vastuksen jännite pienenee ja virta pienenee.
+
+Virta lähestyy nollaa, kun kondensaattorin jännite lähestyy pariston jännitettä.
+
+Tätä esittää kuvaaja C.
+
+Kuvaaja B on kondensaattorin jännitteen tai varauksen kuvaaja, ei virran.
+
+Vakiovirta (A) tai kasvava virta (D) ei pienenisi, vaikka kondensaattorin jännite kasvaa.
 
 ### j)
-**Perustelu:** Rinnan kytkettyjen laitteiden virrat lasketaan yhteen, joten ryhmän virta on $I = \tfrac{P_1 + P_2 + \dots}{U}$. Sulakkeen nimellisvirta vastaa yhteistä tehoa $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$. Vedenkeitin ja leivänpaahdin ottavat yhteensä $3100\,\text{W}$ eli noin $13{,}5\,\text{A}$, mikä ylittää $10\,\text{A}$:n. Kolmen laitteen yhdistelmät, $2150\,\text{W}$ eli noin $9{,}3\,\text{A}$ ja $2100\,\text{W}$ eli noin $9{,}1\,\text{A}$, jäävät rajan alle, ja imuri ja televisio ottavat vain noin $7{,}6\,\text{A}$. Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
+**Perustelu:** Rinnan kytkettyjen laitteiden virrat lasketaan yhteen, joten ryhmän virta on $I = \tfrac{P_1 + P_2 + \dots}{U}$.
+
+Sulakkeen nimellisvirta vastaa yhteistä tehoa $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$.
+
+Vedenkeitin ja leivänpaahdin ottavat yhteensä $3100\,\text{W}$ eli noin $13{,}5\,\text{A}$, mikä ylittää $10\,\text{A}$:n.
+
+Kolmen laitteen yhdistelmät, $2150\,\text{W}$ eli noin $9{,}3\,\text{A}$ ja $2100\,\text{W}$ eli noin $9{,}1\,\text{A}$, jäävät rajan alle, ja imuri ja televisio ottavat vain noin $7{,}6\,\text{A}$.
+
+Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
 
 ### Yleisiä virheitä
 - Kohdassa a lampun luullaan kuluttavan virtaa, vaikka se muuttaa sähköenergiaa muiksi energiamuodoiksi.
@@ -204,7 +284,17 @@
 ### d)
 **Kysytty:** LEDien jännitteen vaihtelun vaikutus virtaan kummassakin kytkennässä ja perusteltu suositus
 **Periaate:** Vastuksen jännite on se osa lähteen jännitteestä, jota LEDit eivät ota, ja virta on vastuksen jännite jaettuna sen resistanssilla. LEDin virta kasvaa jyrkästi sen jännitteen mukana, joten virran rajoittaa vastus.
-**Mallivastaus:** Kytkennässä 2 kahden LEDin jännite on yhteensä $3{,}8\text{–}4{,}2\,\text{V}$, joten vastukselle jää $0{,}8\text{–}1{,}2\,\text{V}$ ja virta on $12\text{–}18\,\text{mA}$, koska $\tfrac{0{,}8\,\text{V}}{68\,\Omega} \approx 12\,\text{mA}$ ja $\tfrac{1{,}2\,\text{V}}{68\,\Omega} \approx 18\,\text{mA}$. Virta voi siis poiketa noin $20\,\%$ suunnitellusta. Kytkennässä 1 vastukselle jää $2{,}9\text{–}3{,}1\,\text{V}$, joten virta on noin $13{,}2\text{–}14{,}1\,\text{mA}$, eli se poikkeaa vain noin $3\,\%$. Mitä pienempi osa lähteen jännitteestä jää vastukselle, sitä enemmän LEDin jännitteen pieni muutos muuttaa virtaa. Suosittelen merkkivaloon kytkentää 1: virta ja kirkkaus pysyvät tasaisina, ja $136\,\text{mW}$ on USB-liitännälle pieni teho. Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on perusteltu, kun virran vaihtelu hyväksytään.
+**Mallivastaus:** Kytkennässä 2 kahden LEDin jännite on yhteensä $3{,}8\text{–}4{,}2\,\text{V}$, joten vastukselle jää $0{,}8\text{–}1{,}2\,\text{V}$ ja virta on $12\text{–}18\,\text{mA}$, koska $\tfrac{0{,}8\,\text{V}}{68\,\Omega} \approx 12\,\text{mA}$ ja $\tfrac{1{,}2\,\text{V}}{68\,\Omega} \approx 18\,\text{mA}$.
+
+Virta voi siis poiketa noin $20\,\%$ suunnitellusta.
+
+Kytkennässä 1 vastukselle jää $2{,}9\text{–}3{,}1\,\text{V}$, joten virta on noin $13{,}2\text{–}14{,}1\,\text{mA}$, eli se poikkeaa vain noin $3\,\%$.
+
+Mitä pienempi osa lähteen jännitteestä jää vastukselle, sitä enemmän LEDin jännitteen pieni muutos muuttaa virtaa.
+
+Suosittelen merkkivaloon kytkentää 1: virta ja kirkkaus pysyvät tasaisina, ja $136\,\text{mW}$ on USB-liitännälle pieni teho.
+
+Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on perusteltu, kun virran vaihtelu hyväksytään.
 
 ### Yleisiä virheitä
 - Etuvastus lasketaan koko lähteen jännitteestä, $5{,}0\,\text{V} : 0{,}015\,\text{A} \approx 333\,\Omega$.
@@ -425,12 +515,30 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 ### d)
 **Kysytty:** etäisyyden epävarmuuden ja vaa'an resoluution vaikutus voimaan lyhimmällä ja pisimmällä etäisyydellä sekä luotettavimmat mittaukset
 **Periaate:** Malli $F \propto \tfrac{1}{r^2}$: kun etäisyys muuttuu suhteellisesti vähän, voima muuttuu suhteellisesti kaksi kertaa niin paljon. Vaa'an resoluution vaikutus on resoluutio jaettuna lukemalla.
-**Mallivastaus:** Etäisyyden suhteellinen epävarmuus on $3{,}0\,\text{cm}$:ssä $\tfrac{0{,}1\,\text{cm}}{3{,}0\,\text{cm}} \approx 3{,}3\,\%$, joten mallin voima voi muuttua noin $2 \cdot 3{,}3\,\% \approx 7\,\%$. Etäisyydellä $12\,\text{cm}$ vaikutus on vain $2 \cdot \tfrac{0{,}1}{12} \approx 2\,\%$. Vaa'an resoluutio $0{,}001\,\text{g}$ on lukemasta $0{,}558\,\text{g}$ alle $0{,}2\,\%$, mutta lukemasta $0{,}041\,\text{g}$ noin $2{,}4\,\%$. Kun vaikutukset lasketaan yhteen, epävarmuus on $3{,}0\,\text{cm}$:ssä noin $7\,\%$, $4{,}0\,\text{cm}$:ssä noin $5\,\%$ ja välillä $5\text{–}12\,\text{cm}$ noin $4\,\%$: lyhyillä etäisyyksillä sitä kasvattaa etäisyyden mittaus ja pitkillä vaa'an resoluutio. Luotettavimpia ovat siis etäisyydet $5\text{–}12\,\text{cm}$.
+**Mallivastaus:** Etäisyyden suhteellinen epävarmuus on $3{,}0\,\text{cm}$:ssä $\tfrac{0{,}1\,\text{cm}}{3{,}0\,\text{cm}} \approx 3{,}3\,\%$, joten mallin voima voi muuttua noin $2 \cdot 3{,}3\,\% \approx 7\,\%$.
+
+Etäisyydellä $12\,\text{cm}$ vaikutus on vain $2 \cdot \tfrac{0{,}1}{12} \approx 2\,\%$.
+
+Vaa'an resoluutio $0{,}001\,\text{g}$ on lukemasta $0{,}558\,\text{g}$ alle $0{,}2\,\%$, mutta lukemasta $0{,}041\,\text{g}$ noin $2{,}4\,\%$.
+
+Kun vaikutukset lasketaan yhteen, epävarmuus on $3{,}0\,\text{cm}$:ssä noin $7\,\%$, $4{,}0\,\text{cm}$:ssä noin $5\,\%$ ja välillä $5\text{–}12\,\text{cm}$ noin $4\,\%$: lyhyillä etäisyyksillä sitä kasvattaa etäisyyden mittaus ja pitkillä vaa'an resoluutio.
+
+Luotettavimpia ovat siis etäisyydet $5\text{–}12\,\text{cm}$.
 
 ### e)
 **Kysytty:** lyhimmän etäisyyden ero mallista prosentteina, voiko se johtua epävarmuudesta, fysikaalinen selitys ja Coulombin lain käyttöehto
 **Periaate:** Coulombin laki pätee täsmällisesti pistevarauksille, ja pallosymmetrisesti varattu pallo vaikuttaa ulkopuolelleen kuin keskipisteeseen sijoitettu pistevaraus. Johteessa varaukset pääsevät liikkumaan, ja toisen varatun kappaleen voima siirtää niitä.
-**Mallivastaus:** Suoran mukaan voima etäisyydellä $3{,}0\,\text{cm}$ olisi $5{,}6 \cdot 10^{-6} \cdot 1111\,\text{N} \approx 6{,}2\,\text{mN}$, mutta mitattu on $5{,}5\,\text{mN}$, noin $12\,\%$ pienempi. Ero on suurempi kuin etäisyyden epävarmuuden vaikutus, noin $7\,\%$, ja se on samansuuntainen myös $4{,}0\,\text{cm}$:n mittauksessa, joten se on todellinen ilmiö. Pallot ovat johteita: samanmerkkiset varaukset hylkivät toisiaan, joten kummankin pallon varaus siirtyy pallon kauimmaiselle puolelle. Varausten keskimääräinen etäisyys on silloin suurempi kuin keskipisteiden etäisyys $r$, ja voima on pienempi kuin Coulombin lain ennuste. Vaikutus on sitä suurempi, mitä lähempänä pallot ovat toisiaan, kun pallon säde on $1{,}0\,\text{cm}$. Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa pallon säde, tämän mittauksen mukaan noin $r \ge 5\,\text{cm}$.
+**Mallivastaus:** Suoran mukaan voima etäisyydellä $3{,}0\,\text{cm}$ olisi $5{,}6 \cdot 10^{-6} \cdot 1111\,\text{N} \approx 6{,}2\,\text{mN}$, mutta mitattu on $5{,}5\,\text{mN}$, noin $12\,\%$ pienempi.
+
+Ero on suurempi kuin etäisyyden epävarmuuden vaikutus, noin $7\,\%$, ja se on samansuuntainen myös $4{,}0\,\text{cm}$:n mittauksessa, joten se on todellinen ilmiö.
+
+Pallot ovat johteita: samanmerkkiset varaukset hylkivät toisiaan, joten kummankin pallon varaus siirtyy pallon kauimmaiselle puolelle.
+
+Varausten keskimääräinen etäisyys on silloin suurempi kuin keskipisteiden etäisyys $r$, ja voima on pienempi kuin Coulombin lain ennuste.
+
+Vaikutus on sitä suurempi, mitä lähempänä pallot ovat toisiaan, kun pallon säde on $1{,}0\,\text{cm}$.
+
+Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa pallon säde, tämän mittauksen mukaan noin $r \ge 5\,\text{cm}$.
 
 ### Yleisiä virheitä
 - Vaa'an lukema grammoina tulkitaan suoraan voimaksi ilman kerrointa $g$ ja muuntamista kilogrammoiksi.
@@ -484,9 +592,23 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kaava:** $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Muunnokset:** $8{,}0\,\text{m}\Omega = 0{,}0080\,\Omega$
 **Sijoitus:** $I_\text{k} = \dfrac{51{,}2\,\text{V}}{0{,}0080\,\Omega} = 6400\,\text{A}$
-**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Sisäenergiaksi muuttuu satoja kilowatteja, enimmäkseen kennojen sisäisessä resistanssissa. Kiloampeerien virralla myös jakoavaimen ja liitosten pieneen resistanssiin muuttuu kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
+**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta.
 
-Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä. Akuston jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, mutta raja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea. Sähköiskun riski riippuu muun muassa kosketusolosuhteista, kuten ihon kosteudesta, ja virtatiestä kehon läpi. Lisäksi akustoon on varastoitunut noin $10\,\text{kWh}$ energiaa, ja jo yksi oikosulkeva työkalu tai koru voi vapauttaa sen valokaarena ja lämpönä. Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauksia ja osaamista, ja akustoon liittyvissä töissä noudatetaan valmistajan ohjeita ja sähköturvallisuusmenettelyjä.
+Sisäenergiaksi muuttuu satoja kilowatteja, enimmäkseen kennojen sisäisessä resistanssissa.
+
+Kiloampeerien virralla myös jakoavaimen ja liitosten pieneen resistanssiin muuttuu kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri.
+
+Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
+
+Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä.
+
+Akuston jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, mutta raja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea.
+
+Sähköiskun riski riippuu muun muassa kosketusolosuhteista, kuten ihon kosteudesta, ja virtatiestä kehon läpi.
+
+Lisäksi akustoon on varastoitunut noin $10\,\text{kWh}$ energiaa, ja jo yksi oikosulkeva työkalu tai koru voi vapauttaa sen valokaarena ja lämpönä.
+
+Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauksia ja osaamista, ja akustoon liittyvissä töissä noudatetaan valmistajan ohjeita ja sähköturvallisuusmenettelyjä.
 **Järkevyys:** Arvio on yläraja, koska jakoavaimen ja liitoskohtien resistanssi pienentää virtaa. Jos mukana olisi kaapelin $4{,}0\,\text{m}\Omega$, virta olisi silti noin $4\,\text{kA}$.
 
 ### e)
@@ -496,8 +618,24 @@ Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä. Akuston jä
 **Kaava:** $I = \dfrac{P}{U}$, $R_\text{s} = \dfrac{4R_1}{4} = R_1$, $P_\text{k} = R_\text{k} I^2$ ja $P_\text{s} = R_\text{s} I^2$
 **Muunnokset:** $4{,}0\,\text{m}\Omega = 0{,}0040\,\Omega$ ja $0{,}50\,\text{m}\Omega = 0{,}00050\,\Omega$
 **Sijoitus:** $I = \dfrac{5000\,\text{W}}{12{,}8\,\text{V}} \approx 391\,\text{A}$, $P_\text{k} = 0{,}0040\,\Omega \cdot (391\,\text{A})^2 \approx 610\,\text{W}$ ja $P_\text{s} = 0{,}00050\,\Omega \cdot (391\,\text{A})^2 \approx 76\,\text{W}$
-**Vastaus:** Kun akuston jännite on $12{,}8\,\text{V}$, siitä otetaan noin $390\,\text{A}$, nelinkertainen virta, joka ylittää kaapelin sulakkeen $125\,\text{A}$ moninkertaisesti. Kaapelin lämpöteho kasvaa $16$-kertaiseksi, noin $610\,\text{W}$:iin, koska se on verrannollinen virran neliöön. Akuston oma lämpöteho pysyy samana, noin $76\,\text{W}$, koska rinnankytkentä pienentää sisäisen resistanssin $16$-osaan. Häviöt ovat yhteensä noin $14\,\%$ siirrettävästä tehosta, kun $51{,}2\,\text{V}$:n akustolla ne olivat noin $2\,\%$. Akusto, jonka jännite on $51{,}2\,\text{V}$, on siis parempi: samalla teholla virta on pienempi, häviöt ovat pienemmät ja kaapeli voi olla ohuempi. Jännitteen nostamista rajoittaa turvallisuus: yli $120\,\text{V}$:n tasajännitteen kosketus voi ajaa kehon läpi vaarallisen virran, joten suurjänniteakusto tarvitsee paremman eristyksen ja suojauksen.
-**Järkevyys:** Nimellisjännitteen käyttö aliarvioi virran: resistansseissa jännite pienenee jo noin $1{,}8\,\text{V}$ eli $14\,\%$. Kun ratkaistaan $P = (E - RI)\,I$, missä $R = 4{,}5\,\text{m}\Omega$, virraksi saadaan noin $470\,\text{A}$ ja kaapelin lämpötehoksi noin $870\,\text{W}$, joten johtopäätös vain vahvistuu. Saman kaapelin häviöiden pitäminen ennallaan vaatisi $16$ kertaa pienemmän resistanssin eli $16$ kertaa suuremman poikkipinta-alan, mikä ei ole käytännöllistä. Siksi tehoa siirretään suurella jännitteellä myös sähköverkossa.
+**Vastaus:** Kun akuston jännite on $12{,}8\,\text{V}$, siitä otetaan noin $390\,\text{A}$, nelinkertainen virta, joka ylittää kaapelin sulakkeen $125\,\text{A}$ moninkertaisesti.
+
+Kaapelin lämpöteho kasvaa $16$-kertaiseksi, noin $610\,\text{W}$:iin, koska se on verrannollinen virran neliöön.
+
+Akuston oma lämpöteho pysyy samana, noin $76\,\text{W}$, koska rinnankytkentä pienentää sisäisen resistanssin $16$-osaan.
+
+Häviöt ovat yhteensä noin $14\,\%$ siirrettävästä tehosta, kun $51{,}2\,\text{V}$:n akustolla ne olivat noin $2\,\%$.
+
+Akusto, jonka jännite on $51{,}2\,\text{V}$, on siis parempi: samalla teholla virta on pienempi, häviöt ovat pienemmät ja kaapeli voi olla ohuempi.
+
+Jännitteen nostamista rajoittaa turvallisuus: yli $120\,\text{V}$:n tasajännitteen kosketus voi ajaa kehon läpi vaarallisen virran, joten suurjänniteakusto tarvitsee paremman eristyksen ja suojauksen.
+**Järkevyys:** Nimellisjännitteen käyttö aliarvioi virran: resistansseissa jännite pienenee jo noin $1{,}8\,\text{V}$ eli $14\,\%$.
+
+Kun ratkaistaan $P = (E - RI)\,I$, missä $R = 4{,}5\,\text{m}\Omega$, virraksi saadaan noin $470\,\text{A}$ ja kaapelin lämpötehoksi noin $870\,\text{W}$, joten johtopäätös vain vahvistuu.
+
+Saman kaapelin häviöiden pitäminen ennallaan vaatisi $16$ kertaa pienemmän resistanssin eli $16$ kertaa suuremman poikkipinta-alan, mikä ei ole käytännöllistä.
+
+Siksi tehoa siirretään suurella jännitteellä myös sähköverkossa.
 
 ### Yleisiä virheitä
 - Sarjaan kytkettyjen kennojen kapasiteetit lasketaan yhteen, jolloin energia on $16$ kertaa liian suuri.

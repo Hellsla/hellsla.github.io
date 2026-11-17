@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c72e68f290224b84
+CONTENT-HASH: 780f2e62011fe6f0
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] proof sheet 3 #25: the break leaves `· m²,` on its own row, splitting the unit N·m; keep `N · m²` together.
+(none)
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened all 4 proof sheet(s) fi-fy6-10-exercises-* and every numbered formula; all `fits`, breaks sensible.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05 Vastaus: "Pallojen etäisyys …" joined, break now before the part label c)).
+- Opened fy6-10-open-exercises-L3-1280-8 at 1280 px: the open solution reads cleanly, spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

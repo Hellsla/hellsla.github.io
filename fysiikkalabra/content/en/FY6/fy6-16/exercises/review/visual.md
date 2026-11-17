@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 40b5d357b5bd6fcd
+CONTENT-HASH: 67b7360bddcf5fd7
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md, the cable-current task Answer (untouched by the diff): the paragraph ends with the run-on label "a)" ("...rounded down. a) The current of the house..."); break before "a)".
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-16-exercises-1-2, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
+- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

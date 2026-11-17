@@ -528,7 +528,9 @@ Keittiön pistorasiaryhmä on suojattu $16\,\text{A}$:n sulakkeella. Aamulla pä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $P_1 = 2{,}2\,\text{kW}$, $P_2 = 1{,}0\,\text{kW}$, $P_3 = 1{,}3\,\text{kW}$, $U = 230\,\text{V}$, sulakkeen nimellisvirta $I_\text{s} = 16\,\text{A}$. Kysytään ryhmäjohdon virtaa $I$ ja sitä, onko $I > I_\text{s}$.
+**Tunnetut ja kysytty.** $P_1 = 2{,}2\,\text{kW}$, $P_2 = 1{,}0\,\text{kW}$, $P_3 = 1{,}3\,\text{kW}$, $U = 230\,\text{V}$, sulakkeen nimellisvirta $I_\text{s} = 16\,\text{A}$.
+
+Kysytään ryhmäjohdon virtaa $I$ ja sitä, onko $I > I_\text{s}$.
 
 <!-- vaihe -->
 

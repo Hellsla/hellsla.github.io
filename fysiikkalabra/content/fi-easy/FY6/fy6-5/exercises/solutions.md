@@ -127,7 +127,9 @@
 ## fy6-5-L1-07
 **Kysytty:** mitä tapahtuu potentiaaleille, jännitteille ja virralle, kun nollakohdaksi valitaan toinen kohta.
 **Periaate:** Potentiaali on kohdan jännite valittuun nollakohtaan nähden. Jännite on kahden kohdan potentiaalien erotus $U_{AB} = V_A - V_B$. Kun kaikki potentiaalit mitataan uudesta nollakohdasta, jokainen muuttuu saman verran. Erotuksessa muutos kumoutuu. Virran määräävät lähde ja vastukset, ei nollakohdan valinta.
-**Mallivastaus:** Kaikkien kohtien potentiaalit muuttuvat saman verran. Kun nollakohdaksi valitaan plusnapa, plusnavan potentiaali on $0$. Miinusnavan potentiaali on silloin negatiivinen, ja sen suuruus on lähteen jännite. Kohtien väliset jännitteet pysyvät samoina. Myös vastusten jännitteet pysyvät samoina, koska ne ovat potentiaalien erotuksia. Vastusten virta ei muutu, koska nollakohta on vain valinta laskemista varten. Se ei muuta piirin toimintaa. Muuttumattomia eivät siis ole potentiaalit vaan jännitteet ja virrat.
+**Mallivastaus:** Kaikkien kohtien potentiaalit muuttuvat saman verran. Kun nollakohdaksi valitaan plusnapa, plusnavan potentiaali on $0$. Miinusnavan potentiaali on silloin negatiivinen, ja sen suuruus on lähteen jännite. Kohtien väliset jännitteet pysyvät samoina. Myös vastusten jännitteet pysyvät samoina, koska ne ovat potentiaalien erotuksia.
+
+Vastusten virta ei muutu, koska nollakohta on vain valinta laskemista varten. Se ei muuta piirin toimintaa. Muuttumattomia eivät siis ole potentiaalit vaan jännitteet ja virrat.
 
 ## fy6-5-L1-08
 **Annettu:** $V_A = 9{,}0\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 90\,\Omega$, $I = 0{,}040\,\text{A}$
@@ -172,7 +174,9 @@
 ## fy6-5-L3-04
 **Annettu:** $U_1 = 12\,\text{V}$, $U_2 = 9{,}0\,\text{V}$, $R_1 = 30\,\Omega$, $R_2 = 20\,\Omega$, $R_3 = 30\,\Omega$. Virrat $I_1$ ja $I_3$ kulkevat pisteeseen $P$ ja virta $I_2$ pisteestä $P$.
 **Kysytty:** haaravirrat ja erityisesti virta $I_2$ ampeereina sekä energiataseen tarkistus
-**Periaate:** Haarautumispisteessä $P$ virtalaki antaa $I_1 + I_3 = I_2$. Vasen silmukka (lähde $U_1$, vastukset $R_1$ ja $R_2$) ja oikea silmukka (lähde $U_2$, vastukset $R_3$ ja $R_2$) kierretään virran suuntaan. Jännitelain mukaan potentiaalin muutosten summa on kummassakin silmukassa nolla. Kolme yhtälöä riittää kolmelle tuntemattomalle virralle. Energiataseessa lähteiden tuottama teho muuttuu kokonaan vastusten sisäenergiaksi. Ideaalisissa lähteissä ja johtimissa ei häviä energiaa.
+**Periaate:** Haarautumispisteessä $P$ virtalaki antaa $I_1 + I_3 = I_2$. Vasen silmukka (lähde $U_1$, vastukset $R_1$ ja $R_2$) ja oikea silmukka (lähde $U_2$, vastukset $R_3$ ja $R_2$) kierretään virran suuntaan. Jännitelain mukaan potentiaalin muutosten summa on kummassakin silmukassa nolla. Kolme yhtälöä riittää kolmelle tuntemattomalle virralle.
+
+Energiataseessa lähteiden tuottama teho muuttuu kokonaan vastusten sisäenergiaksi. Ideaalisissa lähteissä ja johtimissa ei häviä energiaa.
 **Kaava:** $I_1 + I_3 = I_2$, $U_1 - R_1 I_1 - R_2 I_2 = 0$ ja $U_2 - R_3 I_3 - R_2 I_2 = 0$. Silmukkayhtälöistä saadaan $I_1 = \dfrac{U_1 - R_2 I_2}{R_1}$ ja $I_3 = \dfrac{U_2 - R_2 I_2}{R_3}$. Teho: $P = UI$ lähteessä ja $P = RI^2$ vastuksessa.
 **Muunnokset:** Ei tarvita, koska kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** Silmukkayhtälöistä (yksiköt $\text{V}$, $\Omega$ ja $\text{A}$ jätetty pois):
@@ -192,7 +196,9 @@ Lähteiden teho on $12\,\text{V} \cdot 0{,}20\,\text{A} + 9{,}0\,\text{V} \cdot 
 ## fy6-5-L3-05
 **Annettu:** $U = 12\,\text{V}$, $R_1 = 100\,\Omega$, $R_2 = 100\,\Omega$. Kuorma $R_\text{k}$ on rinnan vastuksen $R_2$ kanssa. Miinusnapa on nollakohta. Lisäksi taulukon mittaukset.
 **Kysytty:** kuorman resistanssi $R_\text{k}$ ohmeina, kun $V_P = 5{,}0\,\text{V}$. Lisäksi selitys kuormittamattomalle ja kuormitetulle jakajalle sekä tulos kuormalla $100\,\Omega$.
-**Periaate:** Ilman kuormaa vastukset $R_1$ ja $R_2$ ovat sarjassa. Pisteen $P$ potentiaali on silloin vastuksen $R_2$ jännite. Kun kuorma kytketään, virtalain mukaan vastuksen $R_1$ virta jakautuu vastuksen $R_2$ ja kuorman kesken. Ne ovat rinnan, joten niillä on sama jännite $V_P$. Kuorma pienentää haaran resistanssia, ja kokonaisvirta kasvaa. Silloin vastuksen $R_1$ jännite kasvaa, ja jännitelain mukaan $V_P = U - R_1 I$ pienenee. Kysytty resistanssi saadaan kääntämällä jakajan kaava. Ensin lasketaan haaran resistanssi $R_\text{p}$ ja sen jälkeen kuorma.
+**Periaate:** Ilman kuormaa vastukset $R_1$ ja $R_2$ ovat sarjassa. Pisteen $P$ potentiaali on silloin vastuksen $R_2$ jännite. Kun kuorma kytketään, virtalain mukaan vastuksen $R_1$ virta jakautuu vastuksen $R_2$ ja kuorman kesken. Ne ovat rinnan, joten niillä on sama jännite $V_P$.
+
+Kuorma pienentää haaran resistanssia, ja kokonaisvirta kasvaa. Silloin vastuksen $R_1$ jännite kasvaa, ja jännitelain mukaan $V_P = U - R_1 I$ pienenee. Kysytty resistanssi saadaan kääntämällä jakajan kaava. Ensin lasketaan haaran resistanssi $R_\text{p}$ ja sen jälkeen kuorma.
 **Kaava:** Kuormittamaton: $V_P = \dfrac{R_2}{R_1 + R_2}\, U$. Kuormitettu: $\dfrac{1}{R_\text{p}} = \dfrac{1}{R_2} + \dfrac{1}{R_\text{k}}$ ja $V_P = \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U$. Kun $V_P$ tunnetaan, $R_\text{p} = \dfrac{R_1 V_P}{U - V_P}$ ja $R_\text{k} = \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}}$ (ratkaistu rinnankytkennän kaavasta).
 **Muunnokset:** Ei tarvita, koska kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** a) Ilman kuormaa vastukset $R_1$ ja $R_2$ ovat sarjassa. Virta on silloin kaikkialla sama, ja jännitelain mukaan lähteen jännite jakautuu niiden kesken. Koska $R_1 = R_2$, pisteen $P$ potentiaali on puolet lähteen jännitteestä: $V_P = \dfrac{100\,\Omega}{200\,\Omega} \cdot 12\,\text{V} = 6{,}00\,\text{V}$. Kun kuorma kytketään, virtalain mukaan vastuksen $R_1$ virta jakautuu vastuksen $R_2$ ja kuorman kesken. Virta kasvaa, vastuksen $R_1$ jännite kasvaa ja $V_P = U - R_1 I$ pienenee.
@@ -223,4 +229,6 @@ $$\begin{aligned}
 &I_3 = \frac{3{,}0\,\text{V}}{60\,\Omega} = 0{,}050\,\text{A}
 \end{aligned}$$
 
-Vastuksen $R_3$ kautta kulkee virta $0{,}050\,\text{A}$. Virtalaki toteutuu: haarojen virtojen summa on $0{,}15\,\text{A} + 0{,}10\,\text{A} + 0{,}050\,\text{A}$, eli $0{,}30\,\text{A}$. Perustelu: haaroilla on sama jännite. Siksi haaran virta on kääntäen verrannollinen sen resistanssiin eli pienenee, kun resistanssi kasvaa. Suurimman resistanssin haaraan kulkee pienin virta. Virta ei jakaudu tasan. Jännite ei myöskään jakaudu rinnakkaisille haaroille kuten sarjakytkennässä. Väite, että haaroista palaa yhteensä $0{,}30\,\text{A}$, on tosi. Se ei kuitenkaan kerro, miten virta jakautuu.
+Vastuksen $R_3$ kautta kulkee virta $0{,}050\,\text{A}$. Virtalaki toteutuu: haarojen virtojen summa on $0{,}15\,\text{A} + 0{,}10\,\text{A} + 0{,}050\,\text{A}$, eli $0{,}30\,\text{A}$. Perustelu: haaroilla on sama jännite. Siksi haaran virta on kääntäen verrannollinen sen resistanssiin eli pienenee, kun resistanssi kasvaa. Suurimman resistanssin haaraan kulkee pienin virta.
+
+Virta ei jakaudu tasan. Jännite ei myöskään jakaudu rinnakkaisille haaroille kuten sarjakytkennässä. Väite, että haaroista palaa yhteensä $0{,}30\,\text{A}$, on tosi. Se ei kuitenkaan kerro, miten virta jakautuu.

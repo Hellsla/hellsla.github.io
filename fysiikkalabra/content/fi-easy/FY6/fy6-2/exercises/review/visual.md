@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8901ef7af333f1fa
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: ca59d28bdd534f44
+Mode: delta (md-paragraphs, work queue 8c)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md (2-21 and the 4,8 % task) — a paragraph opens with a pronoun whose antecedent is in the paragraph above ("Se ei kerro mittarin vaikutusta piiriin.") and the last paragraph of the 118 Ω task is a one-sentence orphan ("Mittarin resistanssi on suuri…"); move the break one sentence earlier or later.
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-2-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- fy6-2-open-exercises-L3-1280-3 (the 2-20 solution card, spacing normal, nothing clipped); fy6-2-open-exercises-L2-1280-12 (context only). Remaining paragraph breaks judged from the diff text.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

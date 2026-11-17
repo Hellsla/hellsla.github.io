@@ -2,7 +2,13 @@
 
 ### a)
 **Kysytty:** kuvaaja, jonka pisteisiin pariston mallin mukaan sopii suora
-**Kuvaaja:** Paristo mallinnetaan ideaaliseksi jännitelähteeksi, jonka lähdejännite on $E$, ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi $R_\text{s}$. Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$, ja napajännite on $U = E - R_\text{s} I$. Tämä on suoran yhtälö: kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$ ja sen kulmakerroin on $-R_\text{s}$. Mittaukset viedään siis kuvaajaan sellaisinaan.
+**Kuvaaja:** Paristo mallinnetaan ideaaliseksi jännitelähteeksi, jonka lähdejännite on $E$, ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi $R_\text{s}$.
+
+Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$, ja napajännite on $U = E - R_\text{s} I$.
+
+Tämä on suoran yhtälö: kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$ ja sen kulmakerroin on $-R_\text{s}$.
+
+Mittaukset viedään siis kuvaajaan sellaisinaan.
 
 | $I\ (\text{A})$ | $U\ (\text{V})$ |
 |---|---|
@@ -110,7 +116,15 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus
 **Periaate:** Malli $U = E - R_\text{s} I$ olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina koko mittauksen ajan. Jos paristo purkautuu tai lämpenee, ne muuttuvat mittauksen aikana, ja kuvaajan suora kuvaa jonkinlaista keskiarvoa. Hajonta kertoo satunnaisista virheistä eli siitä, kuinka paljon sovitettu suora voisi kääntyä.
-**Mallivastaus:** *Systemaattinen virhe.* Virtaa kasvatettiin koko ajan samaan suuntaan, ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin. Pariston purkautuminen laskee jännitettä ajan myötä, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä. Koska aika ja virta kasvavat yhtä aikaa, ajan vaikutus sekoittuu kulmakertoimeen: suora laskee liian jyrkästi ja $R_\text{s}$ tulee liian suureksi. Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen vaikutuksen suunta on epävarma. Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
+**Mallivastaus:** *Systemaattinen virhe.* Virtaa kasvatettiin koko ajan samaan suuntaan, ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin.
+
+Pariston purkautuminen laskee jännitettä ajan myötä, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä.
+
+Koska aika ja virta kasvavat yhtä aikaa, ajan vaikutus sekoittuu kulmakertoimeen: suora laskee liian jyrkästi ja $R_\text{s}$ tulee liian suureksi.
+
+Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen vaikutuksen suunta on epävarma.
+
+Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
 *Ajautuman suuruus.* Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
@@ -172,7 +186,13 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{r}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ ja $I = \dfrac{E}{R_\text{k} + R_\text{r}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4{,}0\,\Omega$ ja $\dfrac{1}{R_\text{r}} = \dfrac{1}{6{,}0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4{,}0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2{,}0\,\Omega}$, joten $R_\text{r} = 2{,}0\,\Omega$. Virta on $I = \dfrac{12{,}0\,\text{V}}{0{,}80\,\Omega + 2{,}0\,\Omega} = \dfrac{12{,}0\,\text{V}}{2{,}8\,\Omega} = 4{,}3\,\text{A}$.
-**Vastaus:** $I \approx 4{,}3\,\text{A}$. Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin (todellinen toiminta-aika riippuu sulakkeen tyypistä, joten tämä on yksinkertaistus). Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \approx 8{,}6\,\text{V}$, joten ne palavat himmeämmin kuin aiemmin. Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
+**Vastaus:** $I \approx 4{,}3\,\text{A}$.
+
+Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin (todellinen toiminta-aika riippuu sulakkeen tyypistä, joten tämä on yksinkertaistus).
+
+Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \approx 8{,}6\,\text{V}$, joten ne palavat himmeämmin kuin aiemmin.
+
+Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
 **Järkevyys:** Kolmas lamppu pienentää rinnankytkennän resistanssin $4{,}0\,\Omega$:sta $2{,}0\,\Omega$:iin, joten virran täytyy kasvaa $2{,}5\,\text{A}$:sta. Jos sulaketta ei olisi, kaapeliin siirtyisi lämpönä $0{,}80\,\Omega \cdot (4{,}3\,\text{A})^2 \approx 15\,\text{W}$, melkein kolminkertainen teho aiempaan $5{,}0\,\text{W}$:iin verrattuna. Lamppujen resistanssit on laskettu nimellisarvoista, joten tulos on arvio.
 
 ### Hyväksytään myös

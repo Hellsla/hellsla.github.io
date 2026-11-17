@@ -534,7 +534,9 @@ Pieni öljypisara, jonka massa on $4{,}9 \cdot 10^{-15}\,\text{kg}$, leijuu paik
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa $m = 4{,}9 \cdot 10^{-15}\,\text{kg}$, levyjen etäisyys $d = 6{,}0\,\text{mm}$, jännite $U = 600\,\text{V}$, putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$ ja alkeisvaraus $e$. Kysytään pisaran varauksen suuruutta $q$ ja alkeisvarausten lukumäärää $n$.
+**Tunnetut ja kysytty.** Massa $m = 4{,}9 \cdot 10^{-15}\,\text{kg}$, levyjen etäisyys $d = 6{,}0\,\text{mm}$, jännite $U = 600\,\text{V}$, putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$ ja alkeisvaraus $e$.
+
+Kysytään pisaran varauksen suuruutta $q$ ja alkeisvarausten lukumäärää $n$.
 
 <!-- vaihe -->
 

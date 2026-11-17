@@ -122,7 +122,13 @@
 ## fy6-8-L1-06
 **Kysytty:** milloin pariston napajännite on yhtä suuri kuin sen lähdejännite.
 **Periaate:** Napajännite on $U = E - R_\text{s} I$, missä $R_\text{s} I$ on jännitehäviö pariston sisäisessä resistanssissa. Napajännite on lähdejännite vain, kun tämä jännitehäviö on nolla, eli kun paristosta ei oteta virtaa.
-**Mallivastaus:** Napajännite on yhtä suuri kuin lähdejännite, kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä. Jos virta on suuri, jännitehäviö on suuri ja navoille jää lähdejännitettä pienempi jännite; suurimmillaan virta on oikosulussa, jolloin napajännite on nolla. Kun kuormitusvastus on yhtä suuri kuin sisäinen resistanssi, napajännite on vain puolet lähdejännitteestä. Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännite on pariston ominaisuus, mutta napajännite riippuu otettavasta virrasta.
+**Mallivastaus:** Napajännite on yhtä suuri kuin lähdejännite, kun paristosta ei oteta virtaa, koska silloin sisäisessä resistanssissa ei synny jännitehäviötä.
+
+Jos virta on suuri, jännitehäviö on suuri ja navoille jää lähdejännitettä pienempi jännite; suurimmillaan virta on oikosulussa, jolloin napajännite on nolla.
+
+Kun kuormitusvastus on yhtä suuri kuin sisäinen resistanssi, napajännite on vain puolet lähdejännitteestä.
+
+Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännite on pariston ominaisuus, mutta napajännite riippuu otettavasta virrasta.
 
 ## fy6-8-L1-07
 **Kysytty:** mitä pariston oikosulussa tapahtuu.
@@ -158,13 +164,25 @@
 **Kaava:** $E_\text{A} - R_\text{A} I = E_\text{B} - R_\text{B} I$, josta $I = \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}}$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1{,}60\,\text{V} - 1{,}49\,\text{V}}{0{,}50\,\Omega - 0{,}22\,\Omega} = \dfrac{0{,}11\,\text{V}}{0{,}28\,\Omega} = 0{,}39\,\text{A}$
-**Vastaus:** a) noin $0{,}40\,\text{A}$; graafinen lukema ja laskenta antavat arvon väliltä $0{,}35\text{–}0{,}45\,\text{A}$, koska suorien sovitus vaihtelee. b) Suurella virralla parempi on paristo B, koska sen sisäinen resistanssi $0{,}22\,\Omega$ on pienempi kuin pariston A $0{,}50\,\Omega$, joten sen napajännite pienenee virran kasvaessa loivemmin. Pariston A lähdejännite on suurempi, joten pienellä virralla alle $0{,}4\,\text{A}$ paristo A antaa korkeamman napajännitteen. Virralla $1{,}00\,\text{A}$ napajännite on paristolla A $1{,}10\,\text{V}$ ja paristolla B $1{,}27\,\text{V}$.
+**Vastaus:** a) noin $0{,}40\,\text{A}$; graafinen lukema ja laskenta antavat arvon väliltä $0{,}35\text{–}0{,}45\,\text{A}$, koska suorien sovitus vaihtelee.
+
+b) Suurella virralla parempi on paristo B, koska sen sisäinen resistanssi $0{,}22\,\Omega$ on pienempi kuin pariston A $0{,}50\,\Omega$, joten sen napajännite pienenee virran kasvaessa loivemmin. Pariston A lähdejännite on suurempi, joten pienellä virralla alle $0{,}4\,\text{A}$ paristo A antaa korkeamman napajännitteen. Virralla $1{,}00\,\text{A}$ napajännite on paristolla A $1{,}10\,\text{V}$ ja paristolla B $1{,}27\,\text{V}$.
 **Järkevyys:** Virralla $0{,}40\,\text{A}$ pariston A napajännite on $$\begin{aligned} &1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$ ja pariston B $$\begin{aligned} &1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$, ja tämä on taulukon rivien $0{,}30\,\text{A}$ ja $0{,}50\,\text{A}$ välissä, kuten pitää. Oikosulkuvirta on paristolla B $1{,}49\,\text{V} : 0{,}22\,\Omega \approx 6{,}8\,\text{A}$ ja paristolla A $1{,}60\,\text{V} : 0{,}50\,\Omega = 3{,}2\,\text{A}$, joten B pystyy antamaan suuremman virran.
 
 ## fy6-8-L2-07
 **Kysytty:** mikä väite oppilaan päätelmästä, että sisäinen resistanssi on nolla, on oikein.
 **Periaate:** Napajännite on $U = E - R_\text{s} I$. Kun jännitemittari on kytketty ilman kuormaa, sen läpi kulkee häviävän pieni virta, joten $I \approx 0$ ja jännitehäviö sisäisessä resistanssissa on nolla. Silloin $U = E$ riippumatta siitä, kuinka suuri sisäinen resistanssi on.
-**Mallivastaus:** Oppilaan päätelmä on virheellinen. Ilman kuormaa mitattu jännite $1{,}58\,\text{V}$ on pariston lähdejännite, koska virta on nolla eikä sisäisessä resistanssissa synny jännitehäviötä. Sama jännite näkyisi, vaikka sisäinen resistanssi olisi suuri, joten yksi virraton mittaus ei kerro siitä mitään. Jännitemittarin virta on hyvin pieni, joten mittari ei itse pienennä jännitettä. Sisäinen resistanssi ei myöskään ole ääretön, vaikka virta on nolla, koska se on pariston vakio-ominaisuus. Sisäinen resistanssi saadaan mittaamalla napajännite ja virta kuormitettuna, mieluiten usealla kuormalla, ja laskemalla $R_\text{s} = (E - U) : I$ tai kuvaajan kulmakertoimesta.
+**Mallivastaus:** Oppilaan päätelmä on virheellinen.
+
+Ilman kuormaa mitattu jännite $1{,}58\,\text{V}$ on pariston lähdejännite, koska virta on nolla eikä sisäisessä resistanssissa synny jännitehäviötä.
+
+Sama jännite näkyisi, vaikka sisäinen resistanssi olisi suuri, joten yksi virraton mittaus ei kerro siitä mitään.
+
+Jännitemittarin virta on hyvin pieni, joten mittari ei itse pienennä jännitettä.
+
+Sisäinen resistanssi ei myöskään ole ääretön, vaikka virta on nolla, koska se on pariston vakio-ominaisuus.
+
+Sisäinen resistanssi saadaan mittaamalla napajännite ja virta kuormitettuna, mieluiten usealla kuormalla, ja laskemalla $R_\text{s} = (E - U) : I$ tai kuvaajan kulmakertoimesta.
 
 ## fy6-8-L3-04
 **Annettu:** taulukon mittauspisteet virroilla $0{,}10\,\text{A}$ … $0{,}50\,\text{A}$: uuden pariston napajännite pienenee arvosta $1{,}56\,\text{V}$ arvoon $1{,}46\,\text{V}$ ja ikääntyneen arvosta $1{,}41\,\text{V}$ arvoon $0{,}97\,\text{V}$ (esimerkkiaineisto); kuormitusvastus $R = 2{,}0\,\Omega$
@@ -182,10 +200,16 @@ $P = RI^2 = \dfrac{E^2 R}{(R + R_\text{s})^2}$
 **Sijoitus:** a) Uusi: $R_\text{s} = \dfrac{0{,}10\,\text{V}}{0{,}40\,\text{A}} = 0{,}25\,\Omega$ ja $E = 1{,}56\,\text{V} + 0{,}25\,\Omega \cdot 0{,}10\,\text{A} = 1{,}58\,\text{V}$. Ikääntynyt: $R_\text{s} = \dfrac{1{,}41\,\text{V} - 0{,}97\,\text{V}}{0{,}40\,\text{A}} = 1{,}10\,\Omega$ ja $E = 1{,}41\,\text{V} + 1{,}10\,\Omega \cdot 0{,}10\,\text{A} = 1{,}52\,\text{V}$.
 b) Ikääntynyt: $I = \dfrac{1{,}52\,\text{V}}{2{,}0\,\Omega + 1{,}10\,\Omega} = 0{,}490\,\text{A}$, kehitetty teho $EI = 1{,}52\,\text{V} \cdot 0{,}490\,\text{A} = 0{,}745\,\text{W}$ ja paristoon jäävä teho $R_\text{s} I^2 = 1{,}10\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W}$. Osuus on $\dfrac{0{,}264\,\text{W}}{0{,}745\,\text{W}} = \dfrac{1{,}10\,\Omega}{3{,}10\,\Omega} = 0{,}355$. Uusi paristo: $\dfrac{0{,}25\,\Omega}{2{,}0\,\Omega + 0{,}25\,\Omega} = 0{,}11$.
 c) Ikääntyneelle ($E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}10\,\Omega$): $R = 0{,}55\,\Omega$: $P = \dfrac{(1{,}52\,\text{V})^2 \cdot 0{,}55\,\Omega}{(1{,}65\,\Omega)^2} = 0{,}47\,\text{W}$; $R = 1{,}1\,\Omega$: $P = \dfrac{(1{,}52\,\text{V})^2 \cdot 1{,}1\,\Omega}{(2{,}2\,\Omega)^2} = 0{,}53\,\text{W}$; $R = 2{,}2\,\Omega$: $P = 0{,}47\,\text{W}$; $R = 4{,}4\,\Omega$: $P = 0{,}34\,\text{W}$. Osuus, joka muuttuu pariston sisäenergiaksi: $R = 1{,}1\,\Omega$: $\dfrac{1{,}10\,\Omega}{2{,}2\,\Omega} = 0{,}50$.
-**Vastaus:** Vastauslaatikkoon $35\,\%$. a) Uusi paristo: $E = 1{,}58\,\text{V}$, $R_\text{s} = 0{,}25\,\Omega$; ikääntynyt paristo: $E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}1\,\Omega$.
+**Vastaus:** Vastauslaatikkoon $35\,\%$.
+
+a) Uusi paristo: $E = 1{,}58\,\text{V}$, $R_\text{s} = 0{,}25\,\Omega$; ikääntynyt paristo: $E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}1\,\Omega$.
 b) Vastauslaatikkoon: noin $35\,\%$ ikääntyneen pariston kehittämästä tehosta muuttuu pariston sisäenergiaksi, kaksi merkitsevää numeroa kuten kuorman $2{,}0\,\Omega$ tarkkuus. Uudella paristolla osuus on vain noin $11\,\%$, koska sen sisäinen resistanssi $0{,}25\,\Omega$ on paljon pienempi.
 c) Teho on suurin, noin $0{,}53\,\text{W}$, kuormalla $1{,}1\,\Omega$, joka on yhtä suuri kuin sisäinen resistanssi. Silloin puolet kehitetystä tehosta muuttuu pariston sisäenergiaksi.
-**Järkevyys:** Tehot täsmäävät: $0{,}264\,\text{W} + 2{,}0\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W} + 0{,}481\,\text{W} = 0{,}745\,\text{W}$, kuten kehitetty teho. Ikääntyneen pariston lähdejännite on vain hieman pienempi kuin uuden, mutta sisäinen resistanssi on yli nelinkertainen, ja siksi se lämpenee paljon enemmän ja antaa kuormalle vähemmän tehoa. Tehon maksimi on loiva, kuten arvot $0{,}47\,\text{W}$, $0{,}53\,\text{W}$ ja $0{,}47\,\text{W}$ näyttävät, mutta suurimmallakin teholla puolet energiasta menee hukkaan, joten laitteissa kuorma valitaan yleensä suuremmaksi kuin $R_\text{s}$.
+**Järkevyys:** Tehot täsmäävät: $0{,}264\,\text{W} + 2{,}0\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W} + 0{,}481\,\text{W} = 0{,}745\,\text{W}$, kuten kehitetty teho.
+
+Ikääntyneen pariston lähdejännite on vain hieman pienempi kuin uuden, mutta sisäinen resistanssi on yli nelinkertainen, ja siksi se lämpenee paljon enemmän ja antaa kuormalle vähemmän tehoa.
+
+Tehon maksimi on loiva, kuten arvot $0{,}47\,\text{W}$, $0{,}53\,\text{W}$ ja $0{,}47\,\text{W}$ näyttävät, mutta suurimmallakin teholla puolet energiasta menee hukkaan, joten laitteissa kuorma valitaan yleensä suuremmaksi kuin $R_\text{s}$.
 
 ## fy6-8-L3-05
 **Annettu:** taulukon mittauspisteet $(I;\ U)$ virroilla $0{,}50\,\text{A}$ … $3{,}00\,\text{A}$: jännite pienenee arvosta $5{,}56\,\text{V}$ arvoon $2{,}79\,\text{V}$ (esimerkkiaineisto); johtimien yhteenlaskettu resistanssi $R_\text{j} = 0{,}30\,\Omega$; oppilaan kulmakerroin $1{,}1\,\Omega$ ja oikosulkuvirta $5{,}6\,\text{A}$
@@ -199,7 +223,9 @@ c) Teho on suurin, noin $0{,}53\,\text{W}$, kuormalla $1{,}1\,\Omega$, joka on y
 $E = 5{,}56\,\text{V} + 1{,}10\,\Omega \cdot 0{,}50\,\text{A} = 6{,}11\,\text{V}$
 b) $R_\text{s} = 1{,}10\,\Omega - 0{,}30\,\Omega = 0{,}80\,\Omega$.
 c) $I_\text{k} = \dfrac{6{,}11\,\text{V}}{0{,}80\,\Omega} = 7{,}64\,\text{A}$
-**Vastaus:** Vastauslaatikkoon: c) $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten johtimien resistanssissa $0{,}30\,\Omega$. Mittaus olisi pitänyt tehdä kytkemällä jännitemittari suoraan paristoryhmän napoihin, jolloin johtimien jännitehäviö ei sisälly mitattuun jännitteeseen.
+**Vastaus:** Vastauslaatikkoon: c) $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten johtimien resistanssissa $0{,}30\,\Omega$.
+
+Mittaus olisi pitänyt tehdä kytkemällä jännitemittari suoraan paristoryhmän napoihin, jolloin johtimien jännitehäviö ei sisälly mitattuun jännitteeseen.
 Muut kohdat: a) paristoryhmän lähdejännite on $E \approx 6{,}11\,\text{V}$. b) Oppilaan sisäinen resistanssi on liian suuri, koska kulmakerroin sisältää johtimien resistanssin; paristoryhmän sisäinen resistanssi on $0{,}80\,\Omega$. Oppilaan oikosulkuvirta $5{,}6\,\text{A}$ on liian pieni, koska hän jakoi lähdejännitteen liian suurella resistanssilla.
 **Järkevyys:** Mallin mukaan virralla $2{,}00\,\text{A}$ paristoryhmän napajännite on $$\begin{aligned} &6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} \\ &= 4{,}51\,\text{V} \end{aligned}$$ ja johtimien jälkeen $$\begin{aligned} &4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} \\ &= 3{,}91\,\text{V} \end{aligned}$$, mikä on taulukon neljäs arvo. Oikea oikosulkuvirta on suurempi kuin oppilaan, koska paristoryhmän sisäinen resistanssi on pienempi kuin hänen saamansa $1{,}1\,\Omega$. Jos navat yhdistettäisiin johtimilla, virta olisi pienempi, $6{,}11\,\text{V} : 1{,}10\,\Omega \approx 5{,}6\,\text{A}$ eli oppilaan luku, mutta se on virta johtimien kanssa, ei paristoryhmän oikosulkuvirta.
 

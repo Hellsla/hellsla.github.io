@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a7371b05089e9246
+CONTENT-HASH: 90b7189d78510f1a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened all 1 proof sheet(s) fi-fy6-1-exercises-* and every numbered formula; all `fits`, breaks sensible.
+- Delta (md-paragraphs, round 2): diff of solutions.md; breaks now sit before the part labels a), b), c) in L2-06 and L2-07 (the mid-part breaks are gone).
+- Opened fy6-1-open-exercises-L2-1280-8 and -9 (L2-07 and the next task, open solutions) and L3-1280-5, -6 at 1280 px: paragraph spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px layout check is green.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

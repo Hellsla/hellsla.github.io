@@ -374,7 +374,9 @@ Uuden AA-pariston napoihin kytketään pelkkä jännitemittari, ja se näyttää
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Ilman virtaa mitattu jännite on $1{,}58\,\text{V}$. Kuormitettuna mitattu napajännite on $U = 1{,}45\,\text{V}$, ja kuormitusvastus on $R = 4{,}0\,\Omega$. Kysytään sisäistä resistanssia $R_\text{s}$ ja oikosulkuvirtaa $I_\text{k}$.
+**Tunnetut ja kysytty.** Ilman virtaa mitattu jännite on $1{,}58\,\text{V}$. Kuormitettuna mitattu napajännite on $U = 1{,}45\,\text{V}$, ja kuormitusvastus on $R = 4{,}0\,\Omega$.
+
+Kysytään sisäistä resistanssia $R_\text{s}$ ja oikosulkuvirtaa $I_\text{k}$.
 
 <!-- vaihe -->
 

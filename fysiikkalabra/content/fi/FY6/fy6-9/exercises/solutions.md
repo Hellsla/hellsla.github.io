@@ -123,7 +123,13 @@
 ## fy6-9-L1-06
 **Kysytty:** miksi akkujen energioita ei voi vertailla pelkkien ampeerituntien perusteella
 **Periaate:** Ampeeritunti on varauksen yksikkö, $1\,\text{Ah} = 3600\,\text{C}$. Akun energia on jännite kertaa varaus, $W = UQ$, joten energiaan vaikuttaa kapasiteetin lisäksi akun nimellisjännite.
-**Mallivastaus:** Energia riippuu varauksen lisäksi jännitteestä, ja akkujen jännitteet voivat olla erisuuret. Esimerkiksi akku, jonka kapasiteetti on $2{,}0\,\text{Ah}$ ja nimellisjännite $3{,}7\,\text{V}$, sisältää energiaa $7{,}4\,\text{Wh}$, mutta akku, jonka kapasiteetti on $1{,}0\,\text{Ah}$ ja nimellisjännite $12\,\text{V}$, sisältää energiaa $12\,\text{Wh}$. Pienemmän kapasiteetin akussa on siis enemmän energiaa. Ampeeritunnit eivät ole ajan eivätkä energian yksikkö, ja muut perustelut, kuten massa tai lämpötila, eivät selitä eroa.
+**Mallivastaus:** Energia riippuu varauksen lisäksi jännitteestä, ja akkujen jännitteet voivat olla erisuuret.
+
+Esimerkiksi akku, jonka kapasiteetti on $2{,}0\,\text{Ah}$ ja nimellisjännite $3{,}7\,\text{V}$, sisältää energiaa $7{,}4\,\text{Wh}$, mutta akku, jonka kapasiteetti on $1{,}0\,\text{Ah}$ ja nimellisjännite $12\,\text{V}$, sisältää energiaa $12\,\text{Wh}$.
+
+Pienemmän kapasiteetin akussa on siis enemmän energiaa.
+
+Ampeeritunnit eivät ole ajan eivätkä energian yksikkö, ja muut perustelut, kuten massa tai lämpötila, eivät selitä eroa.
 
 ## fy6-9-L1-07
 **Kysytty:** virran suunta akun sisällä latauksen aikana
@@ -204,8 +210,44 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Kaava:** $W = UQ$ ja $W = Pt$, josta $t = \dfrac{W}{P} = \dfrac{UQ}{P}$
 **Muunnokset:** $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ ja $1\,\text{Wh} = 1\,\text{W} \cdot 3600\,\text{s} = 3600\,\text{J}$. Aika saadaan suoraan tunteina, koska $1\,\text{Wh} : 1\,\text{W} = 1\,\text{h}$.
 **Sijoitus:** a) $W = 36\,\text{V} \cdot 14\,\text{Ah} = 504\,\text{Wh}$ ja jouleina $W = 504 \cdot 3600\,\text{J} = 1{,}8144 \cdot 10^{6}\,\text{J} \approx 1{,}8\,\text{MJ}$. b) $t = \dfrac{504\,\text{Wh}}{120\,\text{W}} = 4{,}2\,\text{h}$
-**Kohta c):** Kohdan b) aika on alaraja kahdesta syystä. Teho $120\,\text{W}$ on akkuun menevä teho. Ensimmäinen syy on akun sisäinen resistanssi. Latausvirta $I$ kulkee akun sisäisen resistanssin $R_\text{s}$ läpi, ja siinä energiaa muuttuu sisäenergiaksi teholla $R_\text{s} I^2$. Akkuun varastoituu kemiallisena energiana vain lähdejännitteen osuus $EI$, joten akkuun menevästä tehosta vain osa varastoituu. Samalla teholla varastoituminen vie pidemmän ajan. Toinen syy on se, että latausteho ei pysy vakiona. Kun akku täyttyy, sen lähdejännite $E$ kasvaa ja erotus $U_\text{lat} - E$ pienenee, joten latausvirta $I = \dfrac{U_\text{lat} - E}{R + R_\text{s}}$ pienenee. Litiumioniakun laturi rajoittaa lisäksi jännitteensä akulle sopivaan arvoon ja pienentää virtaa latauksen lopussa. Loppuosa varauksesta siirtyy siis pienemmällä teholla kuin $120\,\text{W}$. Erillinen huomautus: pistorasiasta otettu energia on vielä suurempi, koska myös laturissa muuttuu osa energiasta sisäenergiaksi.
-**Kohta d):** Kaksi ohjetta ovat opiskelijan omat, ja hän valitsee ne lukemastaan aineistosta. Alla on esimerkkeinä kaksi tyypillistä litiumioniakkujen latausohjetta; tarkista sanamuoto aineistosta. Kummallekin annettu syy on ratkaisun oma fysiikan perustelu, ei aineiston perustelu. Mitkä tahansa kaksi aineiston latausohjetta kelpaavat, kun kummallekin annetaan fysikaalinen syy. Akkujen latausohjeissa neuvotaan tyypillisesti esimerkiksi, että akku ladataan vain sen omalla tai laitteelle varmasti sopivalla laturilla. Fysiikan perusteella latausvirta on $I = \dfrac{U_\text{lat} - E}{R + R_\text{s}}$, ja akun sisäinen resistanssi on pieni, joten jo vähän liian suuri laturin jännite tekee virrasta suuren. Sisäisessä resistanssissa energiaa muuttuu sisäenergiaksi teholla $R_\text{s} I^2$: kaksinkertainen virta lämmittää akkua nelinkertaisella teholla. Sopiva laturi rajoittaa jännitteen ja virran akulle mitoitettuihin arvoihin ja lopettaa latauksen, kun akku on täynnä. Sopimaton laturi voi ladata liian suurella virralla tai jatkaa täyden akun lataamista, jolloin akku kuumenee ja voi vaurioitua.
+**Kohta c):** Kohdan b) aika on alaraja kahdesta syystä.
+
+Teho $120\,\text{W}$ on akkuun menevä teho.
+
+Ensimmäinen syy on akun sisäinen resistanssi.
+
+Latausvirta $I$ kulkee akun sisäisen resistanssin $R_\text{s}$ läpi, ja siinä energiaa muuttuu sisäenergiaksi teholla $R_\text{s} I^2$.
+
+Akkuun varastoituu kemiallisena energiana vain lähdejännitteen osuus $EI$, joten akkuun menevästä tehosta vain osa varastoituu.
+
+Samalla teholla varastoituminen vie pidemmän ajan.
+
+Toinen syy on se, että latausteho ei pysy vakiona.
+
+Kun akku täyttyy, sen lähdejännite $E$ kasvaa ja erotus $U_\text{lat} - E$ pienenee, joten latausvirta $I = \dfrac{U_\text{lat} - E}{R + R_\text{s}}$ pienenee.
+
+Litiumioniakun laturi rajoittaa lisäksi jännitteensä akulle sopivaan arvoon ja pienentää virtaa latauksen lopussa.
+
+Loppuosa varauksesta siirtyy siis pienemmällä teholla kuin $120\,\text{W}$.
+
+Erillinen huomautus: pistorasiasta otettu energia on vielä suurempi, koska myös laturissa muuttuu osa energiasta sisäenergiaksi.
+**Kohta d):** Kaksi ohjetta ovat opiskelijan omat, ja hän valitsee ne lukemastaan aineistosta.
+
+Alla on esimerkkeinä kaksi tyypillistä litiumioniakkujen latausohjetta; tarkista sanamuoto aineistosta.
+
+Kummallekin annettu syy on ratkaisun oma fysiikan perustelu, ei aineiston perustelu.
+
+Mitkä tahansa kaksi aineiston latausohjetta kelpaavat, kun kummallekin annetaan fysikaalinen syy.
+
+Akkujen latausohjeissa neuvotaan tyypillisesti esimerkiksi, että akku ladataan vain sen omalla tai laitteelle varmasti sopivalla laturilla.
+
+Fysiikan perusteella latausvirta on $I = \dfrac{U_\text{lat} - E}{R + R_\text{s}}$, ja akun sisäinen resistanssi on pieni, joten jo vähän liian suuri laturin jännite tekee virrasta suuren.
+
+Sisäisessä resistanssissa energiaa muuttuu sisäenergiaksi teholla $R_\text{s} I^2$: kaksinkertainen virta lämmittää akkua nelinkertaisella teholla.
+
+Sopiva laturi rajoittaa jännitteen ja virran akulle mitoitettuihin arvoihin ja lopettaa latauksen, kun akku on täynnä.
+
+Sopimaton laturi voi ladata liian suurella virralla tai jatkaa täyden akun lataamista, jolloin akku kuumenee ja voi vaurioitua.
 Toinen tyypillinen ohje on, että akkua ladataan paikalla ollessa ja palamattomalla alustalla. Fysiikan perusteella täydessä akussa on kohdan a) mukaan noin $1{,}8\,\text{MJ}$ energiaa. Jos kenno on vaurioitunut ja sen sisälle syntyy oikosulku, virta kulkee hyvin pienen resistanssin läpi ja varastoitunut energia muuttuu nopeasti sisäenergiaksi. Akku kuumenee voimakkaasti ja voi syttyä. Paikalla oleva ihminen huomaa kuumenemisen ajoissa ja voi irrottaa laturin, jos se onnistuu turvallisesti. Palamaton alusta ei syty kuumenevasta akusta. Kolmantena esimerkkinä: kylmää akkua ei tyypillisesti ladata; tämän syytä ei tässä väitetä aineiston syyksi, ja se jää tämän luvun fysiikan ulkopuolelle.
 **Vastaus:** $4{,}2\,\text{h}$ on lyhin latausaika. Akun energia on $504\,\text{Wh} \approx 0{,}50\,\text{kWh}$ eli $1{,}8\,\text{MJ}$. Tuloksissa on kaksi merkitsevää numeroa kuten jännitteessä $36\,\text{V}$ ja kapasiteetissa $14\,\text{Ah}$.
 **Järkevyys:** Sama aika saadaan toista reittiä: latausvirta olisi $I = 120\,\text{W} : 36\,\text{V} \approx 3{,}33\,\text{A}$, ja $t = 14\,\text{Ah} : 3{,}33\,\text{A} \approx 4{,}2\,\text{h}$. Energia $504\,\text{Wh}$ riittäisi $1000\,\text{W}$:n vedenkeittimelle noin puoleksi tunniksi, koska $504\,\text{Wh} : 1000\,\text{W} \approx 0{,}50\,\text{h}$. Sähköpyörän akku ladataan tavallisesti muutamassa tunnissa, joten suuruusluokka on oikea.
@@ -217,7 +259,13 @@ Toinen tyypillinen ohje on, että akkua ladataan paikalla ollessa ja palamattoma
 **Kaava:** $Q = It$ ja $W = U_\text{ka} Q$ sekä $\eta = \dfrac{W}{W_\text{lat}}$ ja $R_\text{s} = \dfrac{U_{1,\text{ka}} - U_{2,\text{ka}}}{I_2 - I_1}$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ ja $1\,\text{V} : 1\,\text{A} = 1\,\Omega$. Lopuksi $0{,}7745 = 77{,}45\,\%$.
 **Sijoitus:** a) $Q_1 = 0{,}50\,\text{A} \cdot 5{,}2\,\text{h} = 2{,}6\,\text{Ah}$ ja $W_1 = 3{,}70\,\text{V} \cdot 2{,}6\,\text{Ah} = 9{,}62\,\text{Wh}$ sekä $Q_2 = 2{,}0\,\text{A} \cdot 1{,}2\,\text{h} = 2{,}4\,\text{Ah}$ ja $W_2 = 3{,}55\,\text{V} \cdot 2{,}4\,\text{Ah} = 8{,}52\,\text{Wh}$. b) $\eta = \dfrac{8{,}52\,\text{Wh}}{11{,}0\,\text{Wh}} = 0{,}7745$. c) $R_\text{s} = \dfrac{3{,}70\,\text{V} - 3{,}55\,\text{V}}{2{,}0\,\text{A} - 0{,}50\,\text{A}} = \dfrac{0{,}15\,\text{V}}{1{,}5\,\text{A}} = 0{,}10\,\Omega$
-**Vastaus:** $77\,\%$ (tarkemmin $77{,}45\,\%$), kaksi merkitsevää numeroa kuten purkauksen kestossa $1{,}2\,\text{h}$. Selitys: suurella virralla jännitehäviö $R_\text{s} I$ on suurempi, joten napajännite laskee rajaan $3{,}00\,\text{V}$ aiemmin ja osa kapasiteetista jää käyttämättä, $2{,}4\,\text{Ah}$ eikä $2{,}6\,\text{Ah}$. Sisäisessä resistanssissa muuttuu sisäenergiaksi teho $R_\text{s} I^2$, ja nelinkertaisella virralla se on $16$-kertainen. Pikalatauksessa virta on suuri, joten pieni $R_\text{s}$ pitää häviöt ja akun lämpenemisen pieninä.
+**Vastaus:** $77\,\%$ (tarkemmin $77{,}45\,\%$), kaksi merkitsevää numeroa kuten purkauksen kestossa $1{,}2\,\text{h}$.
+
+Selitys: suurella virralla jännitehäviö $R_\text{s} I$ on suurempi, joten napajännite laskee rajaan $3{,}00\,\text{V}$ aiemmin ja osa kapasiteetista jää käyttämättä, $2{,}4\,\text{Ah}$ eikä $2{,}6\,\text{Ah}$.
+
+Sisäisessä resistanssissa muuttuu sisäenergiaksi teho $R_\text{s} I^2$, ja nelinkertaisella virralla se on $16$-kertainen.
+
+Pikalatauksessa virta on suuri, joten pieni $R_\text{s}$ pitää häviöt ja akun lämpenemisen pieninä.
 **Järkevyys:** Lähdejännite on molemmilla virroilla sama: $$\begin{aligned} &3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} \\ &= 3{,}75\,\text{V} \end{aligned}$$ ja $$\begin{aligned} &3{,}55\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A} \\ &= 3{,}75\,\text{V} \end{aligned}$$, kuten oletus vaatii. Pienellä virralla hyötysuhde on $$9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%$$, mikä on suurempi kuin suurella virralla ja pysyy alle $100\,\%$.
 
 ## fy6-9-L3-05

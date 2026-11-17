@@ -127,7 +127,13 @@
 ## fy6-3-L1-07
 **Kysytty:** miten kahden saman metallin ja saman paksuisen langan resistiivisyys ja resistanssi eroavat, kun toinen on kaksi kertaa pidempi.
 **Periaate:** Resistiivisyys $\rho$ on aineen ominaisuus ja riippuu aineesta ja lämpötilasta, ei langan mitoista. Resistanssi $R = \rho l : A$ riippuu myös pituudesta $l$ ja poikkipinta-alasta $A$. Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin.
-**Mallivastaus:** Resistiivisyys on sama, mutta pidemmän langan resistanssi on suurempi pituuden takia: se on kaksinkertainen, koska poikkipinta-ala ja aine ovat samat ja pituus on kaksinkertainen. Pidemmän langan resistiivisyys ei ole suurempi, koska se ei riipu mitoista. Resistanssi ei myöskään ole sama, koska se riippuu pituudesta. Pidempi lanka ei myöskään tarjoa virralle enemmän tilaa: virran kulkutilaa kuvaa poikkipinta-ala, ja se on molemmilla langoilla sama.
+**Mallivastaus:** Resistiivisyys on sama, mutta pidemmän langan resistanssi on suurempi pituuden takia: se on kaksinkertainen, koska poikkipinta-ala ja aine ovat samat ja pituus on kaksinkertainen.
+
+Pidemmän langan resistiivisyys ei ole suurempi, koska se ei riipu mitoista.
+
+Resistanssi ei myöskään ole sama, koska se riippuu pituudesta.
+
+Pidempi lanka ei myöskään tarjoa virralle enemmän tilaa: virran kulkutilaa kuvaa poikkipinta-ala, ja se on molemmilla langoilla sama.
 
 ## fy6-3-L1-08
 **Annettu:** alussa $U = 4{,}5\,\text{V}$ ja $I_1 = 0{,}60\,\text{A}$; uusi lanka on samaa kuparia, yhtä paksu ja kaksi kertaa pidempi; jännite ja lämpötila pysyvät samoina
@@ -173,7 +179,15 @@
 ## fy6-3-L3-04
 **Annettu:** komponenttien A, B ja C virrat jännitteillä $0{,}5\,\text{V}$–$3{,}0\,\text{V}$ taulukossa (milliampeereina); komponentit ovat vastus, hehkulamppu ja diodi
 **Kysytty:** komponenttien tunnistus resistanssin muutoksen perusteella ja diodin resistanssi $R$ työpisteessä $U = 1{,}5\,\text{V}$ ohmeina
-**Periaate:** Resistanssi on joka pisteessä $R = U : I$. Vastuksella se pysyy lämpötilan ollessa vakio samana, eli ominaiskäyrä on suora. Hehkulampun resistanssi kasvaa jännitteen mukana, koska suurempi virta kuumentaa lankaa ja kuuman metallin resistanssi on suurempi. Diodi ei noudata Ohmin lakia: pienellä jännitteellä sen läpi ei kulje juuri virtaa, ja resistanssi on suuri, mutta kun virta lähtee kasvamaan, diodin resistanssi pienenee jännitteen kasvaessa. Tunnistus tehdään vertaamalla resistansseja jännitteen funktiona, ja työpisteessä resistanssi on pisteen $U : I$, ei käyrän jyrkkyys.
+**Periaate:** Resistanssi on joka pisteessä $R = U : I$.
+
+Vastuksella se pysyy lämpötilan ollessa vakio samana, eli ominaiskäyrä on suora.
+
+Hehkulampun resistanssi kasvaa jännitteen mukana, koska suurempi virta kuumentaa lankaa ja kuuman metallin resistanssi on suurempi.
+
+Diodi ei noudata Ohmin lakia: pienellä jännitteellä sen läpi ei kulje juuri virtaa, ja resistanssi on suuri, mutta kun virta lähtee kasvamaan, diodin resistanssi pienenee jännitteen kasvaessa.
+
+Tunnistus tehdään vertaamalla resistansseja jännitteen funktiona, ja työpisteessä resistanssi on pisteen $U : I$, ei käyrän jyrkkyys.
 **Kaava:** $R = \dfrac{U}{I}$
 **Muunnokset:** Virrat milliampeereista ampeereiksi: $1\,\text{mA} = 10^{-3}\,\text{A}$, esimerkiksi $20{,}0\,\text{mA} = 0{,}0200\,\text{A}$.
 **Sijoitus:** Komponentti A: $R = 0{,}5\,\text{V} : 6{,}6\,\text{mA} = 76\,\Omega$, $1{,}0\,\text{V} : 13{,}5\,\text{mA} = 74\,\Omega$, $1{,}5\,\text{V} : 20{,}0\,\text{mA} = 75\,\Omega$, $2{,}0\,\text{V} : 26{,}6\,\text{mA} = 75\,\Omega$ ja $3{,}0\,\text{V} : 40{,}2\,\text{mA} = 75\,\Omega$. Komponentti B: $16\,\Omega$, $22\,\Omega$, $26\,\Omega$, $30\,\Omega$ ja $37\,\Omega$. Komponentti C: $1{,}0\,\text{V} : 0{,}1\,\text{mA} = 10\,\text{k}\Omega$, $1{,}5\,\text{V} : 2{,}5\,\text{mA} = 600\,\Omega$, $2{,}0\,\text{V} : 21\,\text{mA} = 95\,\Omega$ ja $3{,}0\,\text{V} : 98\,\text{mA} = 31\,\Omega$ (jännitteellä $0{,}5\,\text{V}$ virta on nolla, joten resistanssia ei lasketa). Diodin resistanssi työpisteessä on $R = \dfrac{1{,}5\,\text{V}}{2{,}5 \cdot 10^{-3}\,\text{A}} = 600\,\Omega$, ja hehkulampun resistanssi samassa pisteessä on $\dfrac{1{,}5\,\text{V}}{57 \cdot 10^{-3}\,\text{A}} = 26\,\Omega$
@@ -186,7 +200,11 @@
 **Periaate:** Resistanssi saadaan jokaisessa lämpötilassa suhteena $R = U : I$. Kun jännite pidetään samana, virran pieneneminen kertoo resistanssin kasvusta. Kokeessa muutetaan vain yhtä tekijää, lämpötilaa, ja muut tekijät pidetään vakioina, jotta tulos voidaan liittää lämpötilaan. Prosenttikasvu on $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$.
 **Kaava:** $R = \dfrac{U}{I}$ ja kasvu $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, lämpötilan muutosta ei tarvitse muuntaa.
-**Sijoitus:** Muuttujat: riippumaton muuttuja on veden eli langan lämpötila $T$, riippuva muuttuja on langan resistanssi $R$ (mitataan virrasta ja jännitteestä), ja vakioitavat tekijät ovat langan aine, pituus ja paksuus sekä jännite $1{,}00\,\text{V}$. Mittausjärjestely: virtamittari kytketään sarjaan langan kanssa ja jännitemittari rinnan langan kanssa, jotta mittarit mittaavat langan virtaa ja jännitettä; lanka on lakattu, jotta vesi ei johda virtaa sen ohi, ja lämpömittari on langan vieressä. Resistanssit ovat $R_{20} = 1{,}00\,\text{V} : 0{,}500\,\text{A} = 2{,}000\,\Omega$, $R_{40} = 2{,}262\,\Omega$, $R_{60} = 2{,}513\,\Omega$ ja $R_{80} = 1{,}00\,\text{V} : 0{,}362\,\text{A} = 2{,}762\,\Omega$, joten kasvu on $\dfrac{2{,}762\,\Omega - 2{,}000\,\Omega}{2{,}000\,\Omega} \cdot 100\,\% = 38{,}1\,\%$. Virhelähteet: (1) lanka lämpenee myös virrasta itsestään, joten sen lämpötila voi olla korkeampi kuin veden; virta kytketään vain mittaushetkeksi ja jännite pidetään pienenä. (2) Lanka ei ole ehtinyt tasaantua veden lämpötilaan, tai lämpömittari ei ole langan kohdalla; jokaisessa lämpötilassa odotetaan, kunnes lämpömittarin lukema ei enää muutu, ja sekoitetaan vettä.
+**Sijoitus:** Muuttujat: riippumaton muuttuja on veden eli langan lämpötila $T$, riippuva muuttuja on langan resistanssi $R$ (mitataan virrasta ja jännitteestä), ja vakioitavat tekijät ovat langan aine, pituus ja paksuus sekä jännite $1{,}00\,\text{V}$. Mittausjärjestely: virtamittari kytketään sarjaan langan kanssa ja jännitemittari rinnan langan kanssa, jotta mittarit mittaavat langan virtaa ja jännitettä; lanka on lakattu, jotta vesi ei johda virtaa sen ohi, ja lämpömittari on langan vieressä. Resistanssit ovat $R_{20} = 1{,}00\,\text{V} : 0{,}500\,\text{A} = 2{,}000\,\Omega$, $R_{40} = 2{,}262\,\Omega$, $R_{60} = 2{,}513\,\Omega$ ja $R_{80} = 1{,}00\,\text{V} : 0{,}362\,\text{A} = 2{,}762\,\Omega$, joten kasvu on $\dfrac{2{,}762\,\Omega - 2{,}000\,\Omega}{2{,}000\,\Omega} \cdot 100\,\% = 38{,}1\,\%$. Virhelähteet:
+
+(1) lanka lämpenee myös virrasta itsestään, joten sen lämpötila voi olla korkeampi kuin veden; virta kytketään vain mittaushetkeksi ja jännite pidetään pienenä.
+
+(2) Lanka ei ole ehtinyt tasaantua veden lämpötilaan, tai lämpömittari ei ole langan kohdalla; jokaisessa lämpötilassa odotetaan, kunnes lämpömittarin lukema ei enää muutu, ja sekoitetaan vettä.
 **Vastaus:** Resistanssi on kasvanut noin $38\,\%$ (laskettu $38{,}1\,\%$), kaksi merkitsevää numeroa, koska kasvu on kahden lähes yhtä suuren resistanssin erotus suhteessa arvoon $R_{20}$. Tulos tukee päätelmää, että metallilangan resistanssi kasvaa lämpötilan noustessa.
 **Järkevyys:** Virta pienenee, kun lämpötila nousee ($0{,}500\,\text{A} \to 0{,}362\,\text{A}$), ja jännite on vakio, joten resistanssin on kasvettava: $0{,}500\,\text{A} : 0{,}362\,\text{A} = 1{,}38$. Resistanssi kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä suunnilleen saman verran ($0{,}262\,\Omega$, $0{,}251\,\Omega$ ja $0{,}249\,\Omega$), eli kasvu on lähes tasaista. Mittaus on yhdellä langalla, joten tulos kuvaa tämän esimerkkiaineiston lankaa eikä ole rautalangan tarkka ominaisuus.
 
@@ -201,7 +219,13 @@ $U = 2{,}0 \cdot 10^{3}\,\Omega \cdot 4{,}0 \cdot 10^{-3}\,\text{A}$
 
 $U = 8{,}0\,\text{V}$
 
-Kuvaajan C suora kulkee origon ja pisteen $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$ kautta, ja myös pisteessä $(2{,}0\,\text{mA};\ 4{,}0\,\text{V})$ suhde on $U : I = 2{,}0\,\text{k}\Omega$. Kuvaajan A käyrä kulkee samassa pisteessä $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$, mutta pisteessä $(2{,}0\,\text{mA};\ 2{,}0\,\text{V})$ suhde on vain $1{,}0\,\text{k}\Omega$: resistanssi kasvaa jännitteen mukana, joten komponentti ei noudata Ohmin lakia. Kuvaajassa B virralla $4{,}0\,\text{mA}$ jännite on $2{,}0\,\text{V}$, joten resistanssi olisi $0{,}50\,\text{k}\Omega$: siinä kulmakertoimeksi on otettu $I : U$. Kuvaajassa D jännite on vakio $2{,}0\,\text{V}$, joten suhde $U : I$ muuttuu koko ajan: siinä resistanssin lukuarvo on piirretty jännitteeksi.
+Kuvaajan C suora kulkee origon ja pisteen $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$ kautta, ja myös pisteessä $(2{,}0\,\text{mA};\ 4{,}0\,\text{V})$ suhde on $U : I = 2{,}0\,\text{k}\Omega$.
+
+Kuvaajan A käyrä kulkee samassa pisteessä $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$, mutta pisteessä $(2{,}0\,\text{mA};\ 2{,}0\,\text{V})$ suhde on vain $1{,}0\,\text{k}\Omega$: resistanssi kasvaa jännitteen mukana, joten komponentti ei noudata Ohmin lakia.
+
+Kuvaajassa B virralla $4{,}0\,\text{mA}$ jännite on $2{,}0\,\text{V}$, joten resistanssi olisi $0{,}50\,\text{k}\Omega$: siinä kulmakertoimeksi on otettu $I : U$.
+
+Kuvaajassa D jännite on vakio $2{,}0\,\text{V}$, joten suhde $U : I$ muuttuu koko ajan: siinä resistanssin lukuarvo on piirretty jännitteeksi.
 
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan jännite kahdella virralla, esimerkiksi $2{,}0\,\text{mA}$ ja $4{,}0\,\text{mA}$, ja lasketaan suhde $U : I$. Vain kuvaajassa C suhde on molemmissa pisteissä $2{,}0\,\text{k}\Omega$.
 
@@ -216,15 +240,39 @@ Kuvaajan C suora kulkee origon ja pisteen $(4{,}0\,\text{mA};\ 8{,}0\,\text{V})$
 **Järkevyys:** Yksiköt: $\Omega\cdot\text{m} \cdot \text{m} : \text{m}^2 = \Omega$. Yksi metri tätä lankaa on $0{,}0112\,\Omega$, ja $40 \cdot 0{,}0112\,\Omega = 0{,}45\,\Omega$. Paksumpi johto, jonka poikkipinta-ala on $2{,}5\,\text{mm}^2$, antaisi pienemmän resistanssin, mikä on järkevää.
 
 ## fy6-3-L2-08
-**Annettu:** aineistosta (PhET-simulaatio *Circuit Construction Kit: DC*): itse rakennettu virtapiiri, jossa on paristo ja vastus, virtamittari sarjassa vastuksen kanssa ja jännitemittari vastuksen napojen välillä. Taulukon esimerkkimittaus: jännitteet $3{,}0\,\text{V}$, $6{,}0\,\text{V}$, $9{,}0\,\text{V}$, $12{,}0\,\text{V}$ ja $15{,}0\,\text{V}$ sekä virrat $0{,}075\,\text{A}$, $0{,}150\,\text{A}$, $0{,}225\,\text{A}$, $0{,}300\,\text{A}$ ja $0{,}375\,\text{A}$. Omat lukemasi ovat erilaiset, jos vastuksesi resistanssi on eri. Ratkaisutapa on sama, ja se näytetään tässä taulukon esimerkkimittauksella, joka ei ole ainoa oikea tulos.
+**Annettu:** aineistosta (PhET-simulaatio *Circuit Construction Kit: DC*): itse rakennettu virtapiiri, jossa on paristo ja vastus, virtamittari sarjassa vastuksen kanssa ja jännitemittari vastuksen napojen välillä.
+
+Taulukon esimerkkimittaus: jännitteet $3{,}0\,\text{V}$, $6{,}0\,\text{V}$, $9{,}0\,\text{V}$, $12{,}0\,\text{V}$ ja $15{,}0\,\text{V}$ sekä virrat $0{,}075\,\text{A}$, $0{,}150\,\text{A}$, $0{,}225\,\text{A}$, $0{,}300\,\text{A}$ ja $0{,}375\,\text{A}$.
+
+Omat lukemasi ovat erilaiset, jos vastuksesi resistanssi on eri.
+
+Ratkaisutapa on sama, ja se näytetään tässä taulukon esimerkkimittauksella, joka ei ole ainoa oikea tulos.
 **Kysytty:** a) mittaussarja vähintään viidellä jännitteellä; b) virran kuvaaja jännitteen funktiona, vastuksen resistanssi $R$ ohmeina ja se, noudattaako vastus Ohmin lakia; c) vastuksen sähköteho $P$ watteina kahdella jännitteellä; d) miksi hehkulampun virran ja jännitteen riippuvuus poikkeaa ideaalisen vastuksen mallista
 **Periaate:** Vastus noudattaa Ohmin lakia, jos sen läpi kulkeva virta on suoraan verrannollinen sen jännitteeseen. Silloin suhde $U : I$ eli resistanssi on kaikilla jännitteillä sama, ja mittauspisteet ovat origon kautta kulkevalla suoralla. Suora kulkee origon kautta, koska ilman jännitettä vastuksen läpi ei kulje virtaa. Simulaation vastus on ideaalinen malli, jonka resistanssi on vakio, joten Ohmin lain ehto täyttyy.
 **Kohta a):** Pariston jännitettä muutetaan mittausten välillä, ja vastus pidetään samana. Jokaisella jännitteellä luetaan jännitemittarista vastuksen jännite $U$ ja virtamittarista virta $I$, ja lukemat kirjataan taulukkoon. Jännite luetaan mittarista eikä pariston merkinnästä, koska resistanssiin tarvitaan juuri vastuksen napojen välinen jännite. Jännitteet valitaan laajalta väliltä ja tasaisin välein, jolloin kuvaajan muoto näkyy selvästi. Taulukon esimerkkimittaus on tällainen sarja.
-**Kuvaajan lukeminen:** Jännite $U$ on vaaka-akselilla ja virta $I$ pystyakselilla. Taulukon viisi pistettä asettuvat samalle suoralle, joka kulkee origon kautta. Suoralta luetaan piste kaukaa origosta, jolloin lukuvirheen osuus on pieni: kun $U = 15{,}0\,\text{V}$, suora on kohdassa $I = 0{,}375\,\text{A}$. Tämän kuvaajan kulmakerroin on $\dfrac{\Delta I}{\Delta U}$ eli resistanssin käänteisluku $\dfrac{1}{R}$. Luvun ominaiskäyrässä akselit ovat toisin päin (virta vaaka-akselilla), ja silloin kulmakerroin on suoraan $R$.
+**Kuvaajan lukeminen:** Jännite $U$ on vaaka-akselilla ja virta $I$ pystyakselilla.
+
+Taulukon viisi pistettä asettuvat samalle suoralle, joka kulkee origon kautta.
+
+Suoralta luetaan piste kaukaa origosta, jolloin lukuvirheen osuus on pieni: kun $U = 15{,}0\,\text{V}$, suora on kohdassa $I = 0{,}375\,\text{A}$.
+
+Tämän kuvaajan kulmakerroin on $\dfrac{\Delta I}{\Delta U}$ eli resistanssin käänteisluku $\dfrac{1}{R}$.
+
+Luvun ominaiskäyrässä akselit ovat toisin päin (virta vaaka-akselilla), ja silloin kulmakerroin on suoraan $R$.
 **Kaava:** Kohta b): resistanssin määritelmästä $R = \dfrac{U}{I}$ saadaan $I = \dfrac{1}{R} \cdot U$, joten suoran kulmakerroin on $\dfrac{\Delta I}{\Delta U} = \dfrac{1}{R}$ ja $R = \dfrac{\Delta U}{\Delta I}$. Kohta c): $P = UI$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, joten resistanssi saadaan ohmeina ($1\,\Omega = 1\,\text{V/A}$) ja teho watteina ($1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$).
 **Sijoitus:** Kohta b): $R = \dfrac{15{,}0\,\text{V} - 0\,\text{V}}{0{,}375\,\text{A} - 0\,\text{A}} = 40{,}0\,\Omega$. Kohta c): jännitteellä $6{,}0\,\text{V}$ teho on $P_1 = U_1 I_1 = 6{,}0\,\text{V} \cdot 0{,}150\,\text{A} = 0{,}90\,\text{W}$ ja jännitteellä $12{,}0\,\text{V}$ teho on $P_2 = U_2 I_2 = 12{,}0\,\text{V} \cdot 0{,}300\,\text{A} = 3{,}60\,\text{W}$
 **Kohta b):** Pisteet ovat origon kautta kulkevalla suoralla, eli virta on suoraan verrannollinen jännitteeseen ja resistanssi on vakio. Vastus noudattaa siis Ohmin lakia. Omassa simulaatiomittauksessa johtopäätös on sama, vaikka resistanssin arvo on toinen. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, jolloin suora sovitetaan pisteiden joukon keskelle.
-**Kohta d):** Hehkulampun volframilanka kuumenee sitä enemmän, mitä suurempi virta sen läpi kulkee. Metallin resistiivisyys kasvaa lämpötilan noustessa, joten kuuman langan resistanssi on suurempi kuin kylmän. Kun jännite kasvaa, virta kasvaa siksi hitaammin kuin suoraan verrannollisesti, ja kuvaaja kaartuu suoran alapuolelle. Ohmin laki edellyttää, että johtimen lämpötila pysyy samana, eikä tämä ehto toteudu hehkulampussa. Ideaalisen vastuksen mallissa resistanssi on vakio, joten malli ei kuvaa lamppua. Jokaisessa pisteessä lampun resistanssi on silti suhde $U : I$.
+**Kohta d):** Hehkulampun volframilanka kuumenee sitä enemmän, mitä suurempi virta sen läpi kulkee.
+
+Metallin resistiivisyys kasvaa lämpötilan noustessa, joten kuuman langan resistanssi on suurempi kuin kylmän.
+
+Kun jännite kasvaa, virta kasvaa siksi hitaammin kuin suoraan verrannollisesti, ja kuvaaja kaartuu suoran alapuolelle.
+
+Ohmin laki edellyttää, että johtimen lämpötila pysyy samana, eikä tämä ehto toteudu hehkulampussa.
+
+Ideaalisen vastuksen mallissa resistanssi on vakio, joten malli ei kuvaa lamppua.
+
+Jokaisessa pisteessä lampun resistanssi on silti suhde $U : I$.
 **Vastaus:** $40{,}0\,\Omega$ on taulukon vastuksen resistanssi, kolme merkitsevää numeroa kuten luetuissa arvoissa $15{,}0\,\text{V}$ ja $0{,}375\,\text{A}$. Vastus noudattaa Ohmin lakia. Tehot ovat $0{,}90\,\text{W}$ jännitteellä $6{,}0\,\text{V}$ ja $3{,}60\,\text{W}$ jännitteellä $12{,}0\,\text{V}$.
 **Järkevyys:** Suhde $U : I$ on sama myös muissa pisteissä: $3{,}0\,\text{V} : 0{,}075\,\text{A} = 40\,\Omega$ ja $9{,}0\,\text{V} : 0{,}225\,\text{A} = 40\,\Omega$. Kun jännite kaksinkertaistuu arvosta $6{,}0\,\text{V}$ arvoon $12{,}0\,\text{V}$, myös virta kaksinkertaistuu, joten teho nelinkertaistuu: $3{,}60\,\text{W} : 0{,}90\,\text{W} = 4{,}0$. Yksiköt menevät oikein: $\text{V} : \text{A} = \Omega$.

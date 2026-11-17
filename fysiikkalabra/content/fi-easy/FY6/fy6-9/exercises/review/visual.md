@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36c2c5b745ea76ef
+CONTENT-HASH: e41da43196589eba
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-9 solution: Kohta D) is one paragraph well over 120 words; its first sentence is stiff; split at the two instructions.
+- [Minor] solutions.md fy6-9-L2 (task 9-18) Kohta d) — the paragraph 'Toinen tyypillinen ohje…' follows 'Silloin akku kuumenee…' with no blank line in the source, so it renders with tight spacing as if a line break; add the blank line. Also 'Hän voi irrottaa laturin…' and 'Se voi myös jatkaa…' open on a pronoun whose referent is in the previous paragraph (mid-thought): move the break one sentence earlier or name the subject.
 
 ## Checked
-- Proof sheets fi-easy-fy6-9-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs only, solutions.md): opened solution captures at 1280 px (open-exercises) for the changed tasks; paragraph breaks fall between ideas, spacing in the solution card is even, nothing clipped, formulas intact. Sample only, as the orchestrator asked; 390 px captures not opened.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
