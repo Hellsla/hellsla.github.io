@@ -36,4 +36,8 @@ xs = [1 / 4 - 1 / round(n) ** 2 for n in n_lines]         # horizontal axis 1/4 
 mx, my = sum(xs) / 4, sum(Ef) / 4
 a["fy8-5-L3-04"] = sum((x - mx) * (y - my) for x, y in zip(xs, Ef)) / sum((x - mx) ** 2 for x in xs)   # least-squares slope 13,62 eV (answer 13,6)
 a["fy8-5-L3-05"] = h * c / (2.10 * e) * 1e9               # Na 3s -> 3p, 2,10 eV = 3,3642e-19 J: lambda = 590,5 nm (ionisation limit 5,14 eV: 241,2 nm)
+# Figure tasks (2026-11-17): L2-08 reads fy8-5/nodes, L2-09 reads fy8-5/levels-n4
+a["fy8-5-L2-08"] = 2 * 1 + 2 * 1 + 2 * 3                  # figure shows 1s, 2s, 2p: orbitals 1 + 1 + 3, two electrons each = 10
+dE9 = (-0.850 - (-3.40)) * e                              # read E_4 = -0,850 eV, E_2 = -3,40 eV: 2,55 eV = 4,0851e-19 J
+a["fy8-5-L2-09"] = h * c / dE9 * 1e9                      # lambda = hc / dE = 486,3 nm
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
