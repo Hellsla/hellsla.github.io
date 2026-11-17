@@ -389,3 +389,78 @@ $$ of hydrogen, and in a billion years $$
 $$ is used up, so the share is $\dfrac{4.9 \cdot 10^{29}\,\text{kg}}{1.4 \cdot 10^{31}\,\text{kg}} = 0.035 = 3.5\,\%$.
 **Answer:** $4.9 \cdot 10^{20}\,\text{kg}$, two significant figures like the power $1.0 \cdot 10^{28}\,\text{W}$. The mass decreases by $3.5 \cdot 10^{18}\,\text{kg}$ in a year, and only $0.71\,\%$ of the mass of the hydrogen atoms turns into energy.
 **Reasonableness:** The power of the star is about $26$ Suns ($3.83 \cdot 10^{26}\,\text{W}$), and the Sun turns about $6 \cdot 10^{11}\,\text{kg}$ of hydrogen into helium per second, that is, about $1.9 \cdot 10^{19}\,\text{kg}$ per year; multiplying this by $26$ gives about $5 \cdot 10^{20}\,\text{kg}$, which agrees with the result. We assume that all the hydrogen is available (in reality only the core fuses, so the share of the hydrogen of the core is greater). In a billion years only $3.5\,\%$ of the supply is used up, so the power does not change much because of the decrease in hydrogen, and the assumption of constant power is reasonable over this time span. The decrease in mass because of radiation, $3.5 \cdot 10^{18}\,\text{kg}$, is only $1.8 \cdot 10^{-13}$ of the mass of the star.
+
+## fy8-10-L1-09
+**Given:** from the MAFY table (*Hiukkasten ominaisuuksia*) $m_\text{p} = 1.007\,276\,466\,621\,\text{u}$, $m_\text{n} = 1.008\,664\,915\,95\,\text{u}$ and $m_\text{d} = 2.013\,553\,2001\,\text{u}$; $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$
+**Asked:** the binding energy $E_\text{B}$ of the deuteron in megaelectronvolts
+**Principle:** The deuteron is lighter than a separate proton and neutron, and the mass defect corresponds to the binding energy $E_\text{B} = \Delta m\,c^2$. The table masses are those of the particles and the nucleus, not atomic masses, so no electrons are counted and the mass of a hydrogen atom must not be used in place of the proton.
+**Formula:** $\Delta m = m_\text{p} + m_\text{n} - m_\text{d}$ and $E_\text{B} = \Delta m\,c^2$
+**Unit conversions:** The mass is not converted to kilograms: $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit of the mass defect, so $c^2$ cancels.
+**Substitution:** First the mass defect:
+$$
+\begin{aligned}
+&\Delta m = m_\text{p} + m_\text{n} - m_\text{d} \\
+&= 1.007276467\,\text{u} \\
+&\quad + 1.008664916\,\text{u} \\
+&\quad - 2.013553200\,\text{u} \\
+&= 0.002388182\,\text{u}
+\end{aligned}
+$$
+Then the energy:
+$$
+\begin{aligned}
+&E_\text{B} = \Delta m\,c^2 \\
+&= 0.002388182 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 2.2246\,\text{MeV}
+\end{aligned}
+$$
+**Answer:** $E_\text{B} \approx 2.225\,\text{MeV}$, four significant figures as in the conversion $931.5\,\tfrac{\text{MeV}}{c^2}$. The mass defect is a small difference of nearly equal numbers, but the table values have ten figures, so the difference keeps enough of them.
+**Reasonableness:** With rounded numbers $0.0024 \cdot 930\,\text{MeV}$ is about $2.2\,\text{MeV}$. The binding energy per nucleon is $2.22\,\text{MeV} : 2 = 1.11\,\text{MeV}$, like the deuterium point in the graph, and much smaller than the about $8\,\text{MeV}$ of heavier nuclei. The result is positive because the deuteron is lighter than its parts.
+
+## fy8-10-L2-09
+**Given:** a graph of the binding energy per nucleon $\tfrac{E_\text{B}}{A}$ of 32 nuclei as a function of the mass number $A$; mass numbers $120$ and $238$
+**Asked:** a) $\tfrac{E_\text{B}}{A}$ of both nuclei; b) the total binding energy $E_\text{B}$ of the nucleus with mass number $120$ in megaelectronvolts; c) which has the greater total binding energy and which is more tightly bound
+**Principle:** The vertical axis of the graph is the binding energy per nucleon. A nucleus has $A$ nucleons, so the total binding energy is $E_\text{B} = A \cdot \tfrac{E_\text{B}}{A}$. The more tightly bound nucleus is the one with the greater $\tfrac{E_\text{B}}{A}$.
+**Reading the graph:** On the horizontal axis $A = 120$ is between the grid lines $100$ and $150$, two fifths of the way from $100$. There the point is above the grid line $8\,\text{MeV}$, a quarter of the way from $8\,\text{MeV}$ to $10\,\text{MeV}$, so the reading is $\tfrac{E_\text{B}}{A} \approx 8.5\,\text{MeV}$. At $A = 238$ the point is below the grid line $8\,\text{MeV}$, a fifth of the way from $8\,\text{MeV}$ to $6\,\text{MeV}$, so the reading is $\tfrac{E_\text{B}}{A} \approx 7.6\,\text{MeV}$.
+**Formula:** $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$
+**Unit conversions:** None: the reading is already in $\text{MeV}$ per nucleon and the result comes in megaelectronvolts.
+**Substitution:** The asked nucleus $A = 120$:
+$$
+\begin{aligned}
+&E_\text{B} = A \cdot \dfrac{E_\text{B}}{A} \\
+&= 120 \cdot 8.5\,\text{MeV} \\
+&= 1020\,\text{MeV}
+\end{aligned}
+$$
+For comparison, the nucleus $A = 238$: $E_\text{B} = 238 \cdot 7.6\,\text{MeV} = 1809\,\text{MeV}$.
+**Answer:** b) $E_\text{B} \approx 1.0 \cdot 10^{3}\,\text{MeV}$ (calculated $1020\,\text{MeV}$), two significant figures as in the value $8.5\,\text{MeV}$ read from the graph. The answer is accepted to about $\pm 5\,\%$, because the reading is $\pm 0.1\,\text{MeV}$.
+**Model answer c):** The nucleus with mass number $238$ has the greater total binding energy ($\approx 1.8 \cdot 10^{3}\,\text{MeV}$), because it has almost twice as many nucleons. The nucleus with mass number $120$ is more tightly bound, because its binding energy per nucleon is greater ($8.5\,\text{MeV}$ against $7.6\,\text{MeV}$).
+**Reasonableness:** The quick estimate $120 \cdot 8.5 \approx 100 \cdot 8 + 20 \cdot 8.5 \approx 1000\,\text{MeV}$ agrees. The binding energy $1020\,\text{MeV}$ is about a hundred times that of the deuteron, $2.2\,\text{MeV}$, which fits a hundred times as many nucleons. Giving the value per nucleon, $8.5\,\text{MeV}$, as the answer would mean forgetting to multiply by the number of nucleons.
+
+## fy8-10-L3-06
+**Given:** a uranium-235 nucleus splits into nuclei with mass numbers $118$ and $117$; free neutrons are ignored; a graph of $\tfrac{E_\text{B}}{A}$ of 32 nuclei as a function of the mass number $A$
+**Asked:** a) $\tfrac{E_\text{B}}{A}$ of uranium and of the new nuclei; b) the released energy $Q$ in megaelectronvolts; c) why energy is released and why splitting iron-56 would give a negative result
+**Principle:** A nuclear reaction releases energy when the total binding energy of the nuclei formed is greater than that of the original: the binding energy increases and the difference is released. The mass number is conserved ($117 + 118 = 235$), so the number of nucleons is the same before and after, and $Q = E_\text{B,after} - E_\text{B,before}$.
+**Reading the graph:** At $A = 235$ the point is below the grid line $8\,\text{MeV}$, a fifth of the way from $8\,\text{MeV}$ to $6\,\text{MeV}$: $\tfrac{E_\text{B}}{A} \approx 7.6\,\text{MeV}$. At $A = 120$ the point is above the grid line $8\,\text{MeV}$, a quarter of the way from $8\,\text{MeV}$ to $10\,\text{MeV}$: $\tfrac{E_\text{B}}{A} \approx 8.5\,\text{MeV}$. The reading accuracy is $\pm 0.1\,\text{MeV}$.
+**Formula:** $Q = E_\text{B,after} - E_\text{B,before}$, where $E_\text{B} = A \cdot \dfrac{E_\text{B}}{A}$
+**Unit conversions:** None: the readings are in $\text{MeV}$ per nucleon.
+**Substitution:** First the total binding energies:
+$$
+\begin{aligned}
+&E_\text{B,before} = 235 \cdot 7.6\,\text{MeV} \\
+&= 1786\,\text{MeV} \\[6pt]
+&E_\text{B,after} = (118 + 117) \cdot 8.5\,\text{MeV} \\
+&= 1997.5\,\text{MeV}
+\end{aligned}
+$$
+Then the released energy:
+$$
+\begin{aligned}
+&Q = E_\text{B,after} - E_\text{B,before} \\
+&= 1997.5\,\text{MeV} - 1786\,\text{MeV} \\
+&= 211.5\,\text{MeV}
+\end{aligned}
+$$
+**Answer:** b) $Q \approx 2.1 \cdot 10^{2}\,\text{MeV}$ (calculated $211.5\,\text{MeV}$), two significant figures, because the difference $8.5 - 7.6 = 0.9\,\text{MeV}$ per nucleon is read from the graph. The answer is accepted to about $\pm 15\,\%$, because the error of $\pm 0.1\,\text{MeV}$ in each reading affects the difference.
+**Model answer c):** The binding energy per nucleon of the heavy uranium nucleus ($7.6\,\text{MeV}$) is smaller than that of medium-heavy nuclei ($8.5\,\text{MeV}$), because the graph falls after the peak. In the fission the nucleons move into more tightly bound nuclei, the total binding energy increases by about $0.9\,\text{MeV}$ for each of the $235$ nucleons, and the difference is released as kinetic energy and radiation. Iron-56 ($A = 56$) has $\tfrac{E_\text{B}}{A}$ close to the peak of the graph, about $8.8\,\text{MeV}$. For two nuclei with $A = 28$ it is only about $8.4\,\text{MeV}$, so $Q \approx 56 \cdot (8.4 - 8.8)\,\text{MeV}$, about $-22\,\text{MeV}$: the binding energy would decrease, so the splitting would require energy.
+**Reasonableness:** The estimate is of the known order of magnitude of uranium fission, about $200\,\text{MeV}$ per nucleus. The energy per nucleon is $0.9\,\text{MeV}$, and $0.9 : 931.5 \approx 0.1\,\%$ of the mass energy of a nucleon, as is usual in nuclear reactions. The result is positive because the binding energy increases.
