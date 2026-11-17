@@ -292,3 +292,48 @@ $$
 **Model answer on part d):** The dose-rate estimate $0.88\,\text{mSv}$ is only about $15\,\%$ of $5.9\,\text{mSv}$, so $5.9\,\text{mSv} - 0.88\,\text{mSv}$ $= 5.0\,\text{mSv}$ is left unexplained. A radiation meter measures external radiation, such as gamma radiation from the ground and building materials and cosmic radiation. According to the report these are on average $0.45\,\text{mSv}$ and $0.33\,\text{mSv}$, together $0.78\,\text{mSv}$, which is of the same order of magnitude as our estimate. Most of the dose comes from elsewhere: radon is inhaled, and its decay products, which emit alpha radiation, irradiate the lungs from inside, so an external dose-rate meter does not see it. The body's own radioactive substances, such as potassium-40, and medical use also give dose. In addition, people spend much of their time indoors, where the dose rate differs from the outdoor value, and the dose rate varies from place to place.
 **Answer:** $0.88\,\text{mSv}$, two significant figures like the dose rate $0.10\,\mu\text{Sv/h}$. The hours $8760\,\text{h}$ are the exact number of hours in a year. The share in part b) is $68\,\%$.
 **Reasonableness:** A rough estimate: $0.10\,\mu\text{Sv/h}$ is $1\,\mu\text{Sv}$ in ten hours, and about $9000\,\text{h}$ gives about $900\,\mu\text{Sv}$, which is about $0.9\,\text{mSv}$. The result is smaller than the total dose $5.9\,\text{mSv}$, as it should be, because it covers only some of the sources.
+
+## fy8-13-L2-10
+**Given:** graph: dose rate behind a concrete wall as a function of thickness, thickness of the wall $d = 12\,\text{cm}$
+**Asked:** a) the dose rate $\dot{H}_0$ without concrete and the half-value thickness $d_{1/2}$, b) the dose rate $\dot{H}$ at the thickness $12\,\text{cm}$ in $\mu\text{Sv/h}$, c) a check from the graph
+**Principle:** Concrete halves the dose rate of gamma radiation at every half-value thickness, so the graph is exponential. The thickness $12\,\text{cm}$ is not a multiple of the half-value thickness, but the exponent $d/d_{1/2}$ of the law may also be a fraction.
+**Reading the graph:** At the thickness $d = 0$ the curve starts from $\dot{H}_0 = 80\,\mu\text{Sv/h}$. The dose rate $40\,\mu\text{Sv/h}$, half of the starting value, is reached at $d = 5.0\,\text{cm}$, so $d_{1/2} = 5.0\,\text{cm}$. This checks out: at $10\,\text{cm}$ the reading is $20\,\mu\text{Sv/h}$, a quarter of the starting value.
+**Formula:** $\dot{H} = \dot{H}_0 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$
+**Unit conversions:** None needed: the thicknesses are in centimetres and the ratio $d/d_{1/2}$ is a number.
+**Substitution:**
+$$
+\begin{aligned}
+&\dot{H} = 80\,\mu\text{Sv/h} \cdot \left(\dfrac{1}{2}\right)^{12\,\text{cm}/5.0\,\text{cm}} \\
+&= 80\,\mu\text{Sv/h} \cdot 0.5^{2.4} \\
+&= 80\,\mu\text{Sv/h} \cdot 0.1895 \\
+&= 15.16\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Answer:** b) $15\,\mu\text{Sv/h}$, two significant figures like the starting value $80\,\mu\text{Sv/h}$ and the half-value thickness $5.0\,\text{cm}$. In part c) the value read from the graph is about $15\,\mu\text{Sv/h}$, so the results agree.
+**Reasonableness:** At the thickness $10\,\text{cm}$ the dose rate is $20\,\mu\text{Sv/h}$ and at $15\,\text{cm}$ it is $10\,\mu\text{Sv/h}$. The thickness $12\,\text{cm}$ lies between them, closer to $10\,\text{cm}$, so straight interpolation would give about $16\,\mu\text{Sv/h}$. The curve is convex and runs below the straight line, so the value is slightly smaller, and the result $15\,\mu\text{Sv/h}$ is reasonable.
+
+## fy8-13-L3-06
+**Given:** graph: dose rate behind a concrete wall as a function of thickness, thickness of the wall $d = 20\,\text{cm}$, dose limit $H = 20\,\mu\text{Sv}$, length of the shift $8\,\text{h}$
+**Asked:** a) the dose rate $\dot{H}$ at the workstation, b) the longest working time $t$ in hours, c) the smallest thickness $d$ of the wall for a shift of $8\,\text{h}$, d) one assumption of the model and its effect on the thickness of the wall
+**Principle:** The dose rate is assumed constant, so the dose accumulates evenly: $H = \dot{H} t$. The permitted time is the dose limit divided by the dose rate. The smallest thickness of the wall follows from the requirement that the dose rate may not exceed $\dot{H}_\text{max} = H/t$.
+**Reading the graph:** At $d = 20\,\text{cm}$ the curve is on the grid line $5\,\mu\text{Sv/h}$, so $\dot{H} = 5.0\,\mu\text{Sv/h}$. In part c) the permitted dose rate is $20\,\mu\text{Sv} : 8.0\,\text{h} = 2.5\,\mu\text{Sv/h}$. The curve reaches $2.5\,\mu\text{Sv/h}$ at the right edge of the graph, at $d = 25\,\text{cm}$.
+**Formula:** $H = \dot{H} t$, so $t = \dfrac{H}{\dot{H}}$ and $\dot{H}_\text{max} = \dfrac{H}{t}$
+**Unit conversions:** None needed: the dose is in microsieverts, the dose rate in microsieverts per hour and the time in hours.
+**Substitution:**
+$$
+\begin{aligned}
+&t = \dfrac{H}{\dot{H}} \\
+&= \dfrac{20\,\mu\text{Sv}}{5.0\,\mu\text{Sv/h}} \\
+&= 4.0\,\text{h}
+\end{aligned}
+$$
+Part c):
+$$
+\begin{aligned}
+&\dot{H}_\text{max} = \dfrac{20\,\mu\text{Sv}}{8.0\,\text{h}} \\
+&= 2.5\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Answer:** b) $4.0\,\text{h}$, two significant figures like the dose limit $20\,\mu\text{Sv}$ and the dose rate read from the graph, $5.0\,\mu\text{Sv/h}$. In part c) the wall must be at least $25\,\text{cm}$ thick.
+**Model answer on part d):** The model assumes that the dose rate is constant and that only the radiation coming directly through the wall is counted. In reality gamma radiation scatters in the wall and from the surfaces of the room, and the scattered radiation increases the dose rate at the workstation. The reading accuracy of the graph is also limited. The wall should therefore be made thicker than the $25\,\text{cm}$ of part c), so that there is a margin to the dose limit.
+**Reasonableness:** The thickness $20\,\text{cm}$ is four half-value thicknesses ($4 \cdot 5.0\,\text{cm}$), so the dose rate is $80 : 2^4 = 5.0\,\mu\text{Sv/h}$. The time $4.0\,\text{h}$ times the dose rate $5.0\,\mu\text{Sv/h}$ gives $20\,\mu\text{Sv}$. At $25\,\text{cm}$, five half-value thicknesses, the dose rate is $80 : 2^5 = 2.5\,\mu\text{Sv/h}$, and $8.0\,\text{h}$ gives $20\,\mu\text{Sv}$.

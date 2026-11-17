@@ -292,3 +292,48 @@ $$
 **Mallivastaus d):** Annosnopeuden arvio $0{,}88\,\text{mSv}$ on vain noin $15\,\%$ annoksesta $5{,}9\,\text{mSv}$, joten $5{,}9\,\text{mSv} - 0{,}88\,\text{mSv}$ $= 5{,}0\,\text{mSv}$ jää selittämättä. Säteilymittari mittaa ulkoista säteilyä, kuten gammasäteilyä maaperästä ja rakennusaineista sekä kosmista säteilyä. Raportin mukaan nämä ovat keskimäärin $0{,}45\,\text{mSv}$ ja $0{,}33\,\text{mSv}$ eli yhteensä $0{,}78\,\text{mSv}$, mikä on samaa suuruusluokkaa kuin arviomme. Suurin osa annoksesta tulee muualta: radonia hengitetään, ja sen alfasäteilyä lähettävät hajoamistuotteet säteilyttävät keuhkoja sisältä käsin, joten ulkoinen annosnopeusmittari ei näe sitä. Lisäksi kehon omat radioaktiiviset aineet, kuten kalium-40, ja lääketieteellinen käyttö antavat annosta. Oma lisänsä tulee siitä, että ihmiset viettävät suuren osan ajasta sisällä, jossa annosnopeus poikkeaa ulkoilman arvosta, ja annosnopeus vaihtelee paikasta toiseen.
 **Vastaus:** $0{,}88\,\text{mSv}$, kaksi merkitsevää numeroa kuten annosnopeudessa $0{,}10\,\mu\text{Sv/h}$. Tunnit $8760\,\text{h}$ ovat tarkka vuoden tuntimäärä. Kohdan b) osuus on $68\,\%$.
 **Järkevyys:** Arvio karkeasti: $0{,}10\,\mu\text{Sv/h}$ on $1\,\mu\text{Sv}$ kymmenessä tunnissa, ja noin $9000\,\text{h}$ antaa noin $900\,\mu\text{Sv}$ eli noin $0{,}9\,\text{mSv}$. Tulos on pienempi kuin kokonaisannos $5{,}9\,\text{mSv}$, kuten pitääkin, koska se kattaa vain osan lähteistä.
+
+## fy8-13-L2-10
+**Annettu:** kuvaaja: annosnopeus betoniseinän takana paksuuden funktiona, seinän paksuus $d = 12\,\text{cm}$
+**Kysytty:** a) annosnopeus $\dot{H}_0$ ilman betonia ja puoliintumispaksuus $d_{1/2}$, b) annosnopeus $\dot{H}$ paksuudella $12\,\text{cm}$ yksikössä $\mu\text{Sv/h}$, c) tarkistus kuvaajasta
+**Periaate:** Betoni puolittaa gammasäteilyn annosnopeuden jokaisella puoliintumispaksuudella. Siksi kuvaaja on eksponentiaalinen: paksuus $12\,\text{cm}$ ei ole puoliintumispaksuuden monikerta, mutta lain eksponentti $d/d_{1/2}$ saa myös murtolukuarvoja.
+**Kuvaajan lukeminen:** Paksuudella $d = 0$ käyrä alkaa kohdasta $\dot{H}_0 = 80\,\mu\text{Sv/h}$. Annosnopeus $40\,\mu\text{Sv/h}$ eli puolet alkuarvosta saavutetaan kohdassa $d = 5{,}0\,\text{cm}$, joten $d_{1/2} = 5{,}0\,\text{cm}$. Tämä tarkistuu: kohdassa $10\,\text{cm}$ lukema on $20\,\mu\text{Sv/h}$, neljäsosa alkuarvosta.
+**Kaava:** $\dot{H} = \dot{H}_0 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$
+**Muunnokset:** Ei tarvita: paksuudet ovat senttimetreinä ja suhde $d/d_{1/2}$ on luku.
+**Sijoitus:**
+$$
+\begin{aligned}
+&\dot{H} = 80\,\mu\text{Sv/h} \cdot \left(\dfrac{1}{2}\right)^{12\,\text{cm}/5{,}0\,\text{cm}} \\
+&= 80\,\mu\text{Sv/h} \cdot 0{,}5^{2{,}4} \\
+&= 80\,\mu\text{Sv/h} \cdot 0{,}1895 \\
+&= 15{,}16\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Vastaus:** b) $15\,\mu\text{Sv/h}$, kaksi merkitsevää numeroa kuten lähtöarvossa $80\,\mu\text{Sv/h}$ ja puoliintumispaksuudessa $5{,}0\,\text{cm}$. Kohdassa c) kuvaajasta luettu arvo on noin $15\,\mu\text{Sv/h}$, joten tulokset täsmäävät.
+**Järkevyys:** Paksuudella $10\,\text{cm}$ annosnopeus on $20\,\mu\text{Sv/h}$ ja paksuudella $15\,\text{cm}$ se on $10\,\mu\text{Sv/h}$. Paksuus $12\,\text{cm}$ on näiden välissä lähempänä $10\,\text{cm}$:ä, joten suora interpolointi antaisi noin $16\,\mu\text{Sv/h}$. Kuvaaja on kupera ja kulkee janan alapuolella, joten arvo on hieman pienempi, ja tulos $15\,\mu\text{Sv/h}$ on järkevä.
+
+## fy8-13-L3-06
+**Annettu:** kuvaaja: annosnopeus betoniseinän takana paksuuden funktiona, seinän paksuus $d = 20\,\text{cm}$, annosrajoite $H = 20\,\mu\text{Sv}$, vuoron pituus $8\,\text{h}$
+**Kysytty:** a) annosnopeus $\dot{H}$ työpisteessä, b) suurin työaika $t$ tunteina, c) seinän vähimmäispaksuus $d$ vuoron pituudella $8\,\text{h}$, d) yksi mallin oletus ja sen vaikutus seinän paksuuteen
+**Periaate:** Annosnopeus on oletuksen mukaan vakio, joten annos kertyy tasaisesti: $H = \dot{H} t$. Sallittu aika on annosrajoite jaettuna annosnopeudella. Seinän vähimmäispaksuus saadaan siitä, että annosnopeus ei saa ylittää arvoa $\dot{H}_\text{max} = H/t$.
+**Kuvaajan lukeminen:** Kohdassa $d = 20\,\text{cm}$ käyrä on ruudukkoviivalla $5\,\mu\text{Sv/h}$, eli $\dot{H} = 5{,}0\,\mu\text{Sv/h}$. Kohdassa c) sallittu annosnopeus on $20\,\mu\text{Sv} : 8{,}0\,\text{h} = 2{,}5\,\mu\text{Sv/h}$. Käyrä saavuttaa arvon $2{,}5\,\mu\text{Sv/h}$ kuvaajan oikeassa reunassa kohdassa $d = 25\,\text{cm}$.
+**Kaava:** $H = \dot{H} t$, joten $t = \dfrac{H}{\dot{H}}$ ja $\dot{H}_\text{max} = \dfrac{H}{t}$
+**Muunnokset:** Ei tarvita: annos on mikrosieverteinä, annosnopeus mikrosieverteinä tunnissa ja aika tunteina.
+**Sijoitus:**
+$$
+\begin{aligned}
+&t = \dfrac{H}{\dot{H}} \\
+&= \dfrac{20\,\mu\text{Sv}}{5{,}0\,\mu\text{Sv/h}} \\
+&= 4{,}0\,\text{h}
+\end{aligned}
+$$
+Kohta c):
+$$
+\begin{aligned}
+&\dot{H}_\text{max} = \dfrac{20\,\mu\text{Sv}}{8{,}0\,\text{h}} \\
+&= 2{,}5\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Vastaus:** b) $4{,}0\,\text{h}$, kaksi merkitsevää numeroa kuten annosrajoitteessa $20\,\mu\text{Sv}$ ja luetussa annosnopeudessa $5{,}0\,\mu\text{Sv/h}$. Kohdassa c) seinän paksuuden täytyy olla vähintään $25\,\text{cm}$.
+**Mallivastaus kohtaan d):** Malli olettaa, että annosnopeus on vakio ja että vain suoraan seinän läpi tuleva säteily lasketaan. Todellisuudessa gammasäteily siroaa seinässä ja huoneen pinnoissa, ja sironnut säteily lisää annosnopeutta työpisteessä. Myös kuvaajan lukutarkkuus on rajallinen. Siksi seinä kannattaa tehdä kohdan c) arvoa $25\,\text{cm}$ paksummaksi, jotta annosrajoitteeseen jää varaa.
+**Järkevyys:** Paksuus $20\,\text{cm}$ on neljä puoliintumispaksuutta ($4 \cdot 5{,}0\,\text{cm}$), joten annosnopeus on $80 : 2^4 = 5{,}0\,\mu\text{Sv/h}$. Aika $4{,}0\,\text{h}$ kerrottuna annosnopeudella $5{,}0\,\mu\text{Sv/h}$ on $20\,\mu\text{Sv}$. Paksuudella $25\,\text{cm}$ eli viidellä puoliintumispaksuudella annosnopeus on $80 : 2^5 = 2{,}5\,\mu\text{Sv/h}$, ja $8{,}0\,\text{h}$ antaa $20\,\mu\text{Sv}$.
