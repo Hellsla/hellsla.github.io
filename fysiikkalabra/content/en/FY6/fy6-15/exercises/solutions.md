@@ -38,7 +38,9 @@
 **Answer:** $4.6\,\text{mA}$, two significant figures like the resistance $50\,\text{k}\Omega$.
 **Reasonableness:** The current is clearly felt, because it is almost ten times the threshold of perception $0.5\,\text{mA}$, but it stays below the let-go threshold $10\,\text{mA}$.
 
-With wet hands the resistance can be a tenth or less, and then the current is ten times as large. The result holds only with undamaged, dry shoes and a dry floor, when the person does not touch anything earthed at the same time, such as a tap; otherwise the current bypasses the shoes. Shoes must not be regarded as protection.
+With wet hands the resistance can be a tenth or less, and then the current is ten times as large.
+
+The result holds only with undamaged, dry shoes and a dry floor, when the person does not touch anything earthed at the same time, such as a tap; otherwise the current bypasses the shoes. Shoes must not be regarded as protection.
 
 ## fy6-15-L1-05
 **Given:** resistance of the conductors $R = 0.20\,\Omega$, current $I = 16\,\text{A}$
@@ -137,7 +139,9 @@ Assumption: the voltage drop in the cord is so small that the current of the hea
 **Conversions:** $U = 90\,\text{kV} = 90 \cdot 1000\,\text{V} = 90\,000\,\text{V}$; $E_\text{max} = 3.0\,\text{MV/m} = 3.0 \cdot 1\,000\,000\,\text{V/m}$; $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $d = \dfrac{90\,000\,\text{V}}{3\,000\,000\,\text{V/m}} = 0.030\,\text{m} = 3.0\,\text{cm}$
 **Answer:** $3.0\,\text{cm}$, two significant figures like the dielectric strength $3.0\,\text{MV/m}$.
-**Reasonableness:** One megavolt per metre is one kilovolt per millimetre, so air withstands about $3\,\text{kV}$ per millimetre, and $90\,\text{kV}$ requires $30\,\text{mm}$. Real safety distances are metres, because near a thin conductor the field is much stronger than a uniform one, moisture and dirt weaken the air and overvoltages can occur in the grid; the calculated gap is only a lower limit from the calculation.
+**Reasonableness:** One megavolt per metre is one kilovolt per millimetre, so air withstands about $3\,\text{kV}$ per millimetre, and $90\,\text{kV}$ requires $30\,\text{mm}$.
+
+Real safety distances are metres, because near a thin conductor the field is much stronger than a uniform one, moisture and dirt weaken the air and overvoltages can occur in the grid; the calculated gap is only a lower limit from the calculation.
 
 ## fy6-15-L2-04
 **Given:** resistance of the current path $R = 1.5\,\text{k}\Omega$, greatest allowed current $I = 10\,\text{mA}$
@@ -186,7 +190,11 @@ The small current flowing through a person is cut off by the residual current de
 **Formula:** $U = RI$, so $I = \dfrac{U}{R}$
 **Conversions:** $R = 2.00\,\text{k}\Omega = 2.00 \cdot 1000\,\Omega = 2000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $I = \dfrac{230\,\text{V}}{2000\,\Omega} = 0.115\,\text{A} = 115\,\text{mA}$
-**Answer:** $115\,\text{mA}$, three significant figures like the voltage and the resistance. The student's error is thinking that the fuse would protect a person: the fuse does not notice the current through the body, because its rated current $16\,\text{A}$ is many times the current through the body. A fuse protects a person only together with protective earthing. The current through the body is cut off by the residual current device.
+**Answer:** $115\,\text{mA}$, three significant figures like the voltage and the resistance.
+
+The student's error is thinking that the fuse would protect a person: the fuse does not notice the current through the body, because its rated current $16\,\text{A}$ is many times the current through the body. A fuse protects a person only together with protective earthing.
+
+The current through the body is cut off by the residual current device.
 **Reasonableness:** The current of the fuse $16\,\text{A}$ is $16\,\text{A} : 0.115\,\text{A} \approx 139$ times the current through the body, so the fuse does not trip.
 
 The current $115\,\text{mA}$ is over twice the limit for the danger of ventricular fibrillation, $50\,\text{mA}$, and also many times the tripping current of the residual current device, $30\,\text{mA}$, so the residual current device would trip.

@@ -211,7 +211,9 @@ The current is not the greatest when the voltage or the charge is the greatest, 
 ## fy6-13-L2-07
 **Given:** capacitance $C = 220\,\mu\text{F}$, voltage of the source $U = 24\,\text{V}$, the student’s result $QU = 127\,\text{mJ}$
 **Find:** a) the error in the student’s reasoning, b) the stored energy $W$ in millijoules
-**Principle:** The source moves the charge $Q$ from one plate to the other across its whole voltage $U$, and so gives the energy $QU$. In charging, the voltage of the capacitor grows from zero to $U$, so the charge moves on average across the voltage $\tfrac{U}{2}$, and only half of the energy given by the source is stored in the capacitor.
+**Principle:** The source moves the charge $Q$ from one plate to the other across its whole voltage $U$, and so gives the energy $QU$.
+
+In charging, the voltage of the capacitor grows from zero to $U$, so the charge moves on average across the voltage $\tfrac{U}{2}$, and only half of the energy given by the source is stored in the capacitor.
 **Formula:** $W = \tfrac{1}{2} C U^2$
 **Conversions:** $C = 220\,\mu\text{F} = 220 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0.0634\,\text{J} = 63.4\,\text{mJ}$

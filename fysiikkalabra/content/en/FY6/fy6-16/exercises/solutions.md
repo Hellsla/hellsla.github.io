@@ -170,7 +170,9 @@ For example, a station of $11\,\text{kW}$ transfers $11\,\text{kWh}$ in an hour.
 
 b) The power of the station may be at most $10.4\,\text{kW}$ during the peak.
 
-c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $$17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$$. In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited.
+c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $$17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$$.
+
+In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited.
 
 In reality, peaks within the hour may require load management.
 **Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,400\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together about $24.9\,\text{A}$, just under the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
