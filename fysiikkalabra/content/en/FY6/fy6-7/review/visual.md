@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b3a77faddbd34275
+CONTENT-HASH: ea181c76ebfe8c83
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] inquiry.json review feedback — a display `aligned` block is followed directly by "(chapter ...)" with no space in the source; check on the page that the parenthesis sits on its own line cleanly (earlier text had a space).
+- none
 
 ## Checked
-batch delta review: the diff changes only the review question (inquiry.json) and answer constants, no figure or layout; quantities are inline LaTeX with units and `\cdot`, divisions with a colon, English fluent; theory-figure captures unaffected by the diff.
+- Delta round 2: the diff is a space added after the display formula before "(chapter ...)" in the Kertaa feedback (plus "we get" in fy6-8).
+- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (preview/en); the spacing renders well, with no stray indent, clipping or overflow. This lesson shares the same one-character change.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
