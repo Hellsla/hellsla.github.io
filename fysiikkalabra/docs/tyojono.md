@@ -18,6 +18,7 @@ Osat 0d–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerra
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
 
 ### 0d. CI:n selain pilvi-istuntoihin
+Varattu: claude/ci-selain-0d
 Usea kurssi-PR jätti rivejä, jotka "vain CI:n Chromium leikkaa" (FY4, FY7, FY2), ja ne löytyivät vasta CI-kierroksella.
 Pilvi-istunnossa Docker on asennettu, mutta sen palvelu ei ole käynnissä (tarkistettu 2026-11-17), joten
 `ci_env.py run` ja `check_lesson.py`:n layout-tarkistus putoavat istunnon omaan Chromiumiin. Selvitä ja korjaa: joko
