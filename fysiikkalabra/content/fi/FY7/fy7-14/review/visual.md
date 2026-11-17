@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 219fc5368723815f
+CONTENT-HASH: 5604a79006b73b70
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (thin-film wave figure, soap wedge, anti-reflection graph, soap bubble scene); teacher-approved figures legible.
+- batch delta review (round 2): opened fy7-14-stage-herata-390 (Pohdinta with Kertaa: interferenssi); the reworded task has LaTeX quantities, fluent Finnish, layout intact.

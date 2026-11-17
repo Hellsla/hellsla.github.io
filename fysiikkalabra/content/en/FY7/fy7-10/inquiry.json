@@ -22,21 +22,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the law of reflection",
-      "prompt": "A wave hits a flat wall so that the angle between its direction of travel and the normal of the wall is $30^\\circ$. In which direction does the reflected wave travel?",
+      "title": "Review: the law of reflection on a lake",
+      "prompt": "A calm lake mirrors the trees on the shore. Light from a tree hits the water surface so that the angle between its direction of travel and the normal of the surface is $30^\\circ$. In which direction does the light reflected from the surface travel?",
       "choices": [
         {
           "text": "On the other side of the normal, at an angle of $30^\\circ$ from the normal.",
           "correct": true,
-          "feedback": "Correct. The angle of reflection is equal to the angle of incidence when both are measured from the normal (chapter *A wave meets an obstacle or a gap*). Today the same law holds for light."
+          "feedback": "Correct. The angle of reflection is equal to the angle of incidence when both are measured from the normal (chapter *A wave meets an obstacle or a gap*). The same law holds for waves and for light."
         },
         {
           "text": "On the other side of the normal, at an angle of $60^\\circ$ from the normal.",
-          "feedback": "The angle $60^\\circ$ is the angle between the incident wave and the surface of the wall. The law of reflection concerns angles measured from the normal: the angle of reflection is $30^\\circ$ (chapter *A wave meets an obstacle or a gap*)."
+          "feedback": "The angle $60^\\circ$ is the angle between the incident light and the water surface. The law of reflection concerns angles measured from the normal: the angle of reflection is $30^\\circ$ (chapter *A wave meets an obstacle or a gap*)."
         },
         {
-          "text": "Back along the same path, because the wall stops the wave.",
-          "feedback": "A wave returns along the same path only when it arrives perpendicular to the wall. A wave arriving obliquely is reflected to the other side of the normal at an equal angle (chapter *A wave meets an obstacle or a gap*)."
+          "text": "Back along the same path, because the surface stops the light.",
+          "feedback": "Light returns along the same path only when it arrives perpendicular to the surface. Light arriving obliquely is reflected to the other side of the normal at an equal angle (chapter *A wave meets an obstacle or a gap*)."
         }
       ],
       "optional": true

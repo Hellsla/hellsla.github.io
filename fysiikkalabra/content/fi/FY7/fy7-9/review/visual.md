@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c0a1804019290f1e
+CONTENT-HASH: 9e67b6ab8a650b06
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (EM spectrum figure, blackbody graph with units and labelled curves, worked example, Pohdinta, Ennusta); paragraph split only.
+batch delta, round 1: fy7-9-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

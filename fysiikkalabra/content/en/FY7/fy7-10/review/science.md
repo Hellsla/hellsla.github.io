@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8b9f6b26b4a7e733
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1eafe94d0d7fb8f5
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- None.
 
 ## Checked
-- "Usually part reflected, part transmitted" with the two exceptions: TIR (no propagating refracted ray) and Brewster angle (one polarisation, p, not reflected) is physically correct; summary hedged with yleensä/usually; 4 % and 2 % normal-incidence values unchanged and right; chapter references by title; all three languages match. (language checked: en.)
-- Round 2: "Tähän on kuitenkin poikkeuksia" / "There are exceptions, however" introduces TIR and Brewster: physics unchanged and correct (en paragraph split only).
+batch delta review: law of reflection on a lake surface: 30 deg on the other side of the normal; 60 deg and back-along-path distractors refuted correctly; one correct option; refraction Ennusta (40 deg, 30 to 60 deg) not revealed.

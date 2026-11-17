@@ -22,21 +22,21 @@
       "id": "kertaus-induktio",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: induktio",
-      "prompt": "Käämin läpi kulkee magneettivuo. Missä tilanteessa käämiin indusoituu jännite?",
+      "title": "Kertaa: tehollinen jännite",
+      "prompt": "Pistorasian jännitteen huippuarvo on $325\\,\\text{V}$. Myös voimalaitoksen generaattori tuottaa vaihtojännitettä. Kuinka suuri on pistorasian jännitteen tehollinen arvo?",
       "choices": [
         {
-          "text": "Kun käämin läpi kulkeva magneettivuo muuttuu.",
+          "text": "$230\\,\\text{V}$, koska tehollinen arvo on huippuarvo jaettuna luvulla $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Oikein. Induktiolain mukaan jännite on verrannollinen vuon muutosnopeuteen, $e = -N \\Delta\\Phi : \\Delta t$ (luku *Sähkömagneettinen induktio*). Tänään tähän perustuu muuntaja."
+          "feedback": "Oikein. Tehollinen arvo on tasajännite, joka lämmittää vastusta yhtä paljon kuin vaihtojännite: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*). Tänään muuntaja toimii tehollisilla arvoilla."
         },
         {
-          "text": "Aina, kun käämin läpi kulkee voimakas magneettivuo.",
-          "feedback": "Suurikaan vakiovuo ei indusoi jännitettä. Jännite syntyy vain, kun vuo muuttuu: $e = -N \\Delta\\Phi : \\Delta t$ (luku *Sähkömagneettinen induktio*)."
+          "text": "$325\\,\\text{V}$, koska tehollinen arvo on sama kuin huippuarvo.",
+          "feedback": "Huippuarvo saavutetaan vain hetken jokaisella jaksolla. Tehollinen arvo on pienempi: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*)."
         },
         {
-          "text": "Vain silloin, kun käämi on kytketty paristoon.",
-          "feedback": "Induktiossa käämi ei tarvitse jännitelähdettä: jännite syntyy, kun käämin läpi kulkeva magneettivuo muuttuu (luku *Sähkömagneettinen induktio*)."
+          "text": "$460\\,\\text{V}$, koska tehollinen arvo on huippuarvo kerrottuna luvulla $\\sqrt{2}$.",
+          "feedback": "Tehollinen arvo ei voi olla huippuarvoa suurempi. Se on huippuarvo jaettuna luvulla $\\sqrt{2}$: $$\n\\begin{aligned}\n&325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*)."
         }
       ],
       "optional": true

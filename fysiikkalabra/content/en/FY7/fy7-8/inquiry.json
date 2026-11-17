@@ -22,21 +22,21 @@
       "id": "kertaus-induktio",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: induction",
-      "prompt": "A magnetic flux passes through a coil. In which situation is a voltage induced in the coil?",
+      "title": "Revise: effective voltage",
+      "prompt": "The peak value of the voltage in a wall socket is $325\\,\\text{V}$. A power-plant generator also produces an alternating voltage. What is the effective value of the socket voltage?",
       "choices": [
         {
-          "text": "When the magnetic flux through the coil changes.",
+          "text": "$230\\,\\text{V}$, because the effective value is the peak value divided by $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Correct. According to the law of induction, the voltage is proportional to the rate of change of the flux, $e = -N \\Delta\\Phi : \\Delta t$ (chapter *Electromagnetic induction*). Today the transformer is based on this."
+          "feedback": "Correct. The effective value is the constant voltage that heats a resistor as much as the alternating voltage: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*). Today the transformer works with effective values."
         },
         {
-          "text": "Whenever a strong magnetic flux passes through the coil.",
-          "feedback": "Even a large constant flux does not induce a voltage. A voltage is produced only when the flux changes: $e = -N \\Delta\\Phi : \\Delta t$ (chapter *Electromagnetic induction*)."
+          "text": "$325\\,\\text{V}$, because the effective value is the same as the peak value.",
+          "feedback": "The peak value is reached only for an instant in each cycle. The effective value is lower: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*)."
         },
         {
-          "text": "Only when the coil is connected to a battery.",
-          "feedback": "In induction the coil does not need a voltage source: a voltage is produced when the magnetic flux through the coil changes (chapter *Electromagnetic induction*)."
+          "text": "$460\\,\\text{V}$, because the effective value is the peak value multiplied by $\\sqrt{2}$.",
+          "feedback": "The effective value cannot be larger than the peak value. It is the peak value divided by $\\sqrt{2}$: $$\n\\begin{aligned}\n&325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*)."
         }
       ],
       "optional": true

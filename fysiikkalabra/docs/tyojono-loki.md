@@ -226,6 +226,13 @@ tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastauslu
 fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
 
+FY7 PR 2 (claude/fy7-lapikaynti-2): 8j tehty fy7-1, 3–10, 12–14 (muut liittyivät jo; `docs/audits/2026-11-17-8j-FY7.md`), vanhentuneet
+tehtäväkatselmoinnit (fy7-4, 5, 6, 10, 12, 16 kolmella kielellä, en fy7-6 ja fy7-16 science full), en fy7-16:n kuvan kuvauksen
+käännös ja fy7-6:n L1-06:n Lenzin lain muotoilu ("pyrkii pitämään"). Opit: kierros 1 löysi kaksi lukua, joissa uusi tehtävä oli
+väärin (fy7-12:n vanha 41,7° palautteessa, fy7-14:n kalvofysiikka) ja yhden, jossa tehtävä paljasti Ennusta 1:n (fy7-8,
+fi-easy pedagogiikka); kuolleen pyöristyksen (19,745° → 19,7°) löysi vasta pedagogiikka. Kertaustehtävän uusi tilanne kannattaa
+tarkistaa koko luvun Ennusta-tehtäviä vasten jo kehittäjälle annettavassa paketissa.
+
 FY7 tehty (claude/fy7-lapikaynti, 0f-PR #681): fy7-1…fy7-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy)
 ja esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`), ulkoasu delta PASS. Opit: round.py --batch tarkistuksineen kestää
 noin 15 min per luku (layout), joten FY7:ssä ajettiin --skip-checks ja layout jätettiin CI:lle; tehtäväsarjojen visual-raportit

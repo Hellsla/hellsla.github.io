@@ -23,8 +23,9 @@ for vv in (0.20, 0.30):                              # koe-1: e ∝ v, Δt ∝ 1
 a["sim-e-dt"] = a["sim-e-in"] * a["sim-t-in"]        # e·Δt = −20 mV·s = −N ΔΦ = −10 · 2,0 mWb
 for NN in (1, 5, 20):                                # koe-2: e ∝ N
     a[f"sim-e-in-N{NN}"] = -NN * Bs * l * v * 1e3    # −2,0 / −10 / −40 mV
-# Retrieval: an electron at rest in a magnetic field, F = q v B = 0
-a["kertaus-F"] = 1.602e-19 * 0 * 0.5
+# Retrieval (dynamo field 0,50 T, electron v = 2,0e6 m/s perpendicular): F = q v B = 1,6e-13 N; mistake without B: q v = 3,2e-13 N
+a["kertaus-F"] = 1.602e-19 * 2.0e6 * 0.50
+a["kertaus-F-noB"] = 1.602e-19 * 2.0e6
 # virhe: N = 200, A = 6,0 cm², B 0 -> 0,30 T in 0,050 s
 a["virhe-wrong"] = 200 * 0.30 * 0.060 / 0.050        # the student's area 0,060 m²: 72 V
 a["virhe-right"] = 200 * 0.30 * 6.0e-4 / 0.050       # A = 6,0 · 0,0001 m²: 0,72 V
@@ -41,4 +42,4 @@ a["check-e-cm"] = 4.0 * 0.25 * 50                    # mistake, l in cm: 50 V
 a["check-e-nol"] = 4.0 * 0.25                        # mistake, no l: 1,0 V
 # Exit ticket 1: square loop, side 0,20 m, B = 0,50 T perpendicular
 a["exit-Phi"] = 0.50 * 0.20 ** 2                     # 0,020 Wb = 20 mWb
-print(json.dumps({k: round(v, 6) for k, v in a.items()}))
+print(json.dumps({k: (float(f"{v:.3e}") if k.startswith("kertaus-F") else round(v, 6)) for k, v in a.items()}))

@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6821ce58a46d27ce
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: e613916eb837e804
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Formula section: $e_\text{ka} = -N\,\Delta\Phi/\Delta t$ named as the average induced voltage over $\Delta t$, steady change → constant $e$; consistent with the fy7-5 statement. Minus sign/Lenz sentence unchanged and right. fi, en, fi-easy agree. Hash identical at start and end.
+batch delta review: the changed prompt (magnet held at rest in the coil around the copper pipe) keeps zero emf as the one correct answer, and the unchanged feedback still fits; does not reveal Ennusta (fall times in the pipes, slit pipe).

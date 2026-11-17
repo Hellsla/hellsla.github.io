@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 4696d3cd76b16bc6
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Pohdinta retrieval: the new prompt places the compass beside the wire with no current; the correct option (needle along the local Earth field line) is the only right one, and the three distractors' feedback (copper not magnetic; Earth field about $50\,\mu\text{T}$; perpendicularity belongs to the force on a moving charge) is correct.
 
 ## Checked
-- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.
+batch delta review: compass retrieval prompt and its four options and feedback; no Ennusta answer revealed.

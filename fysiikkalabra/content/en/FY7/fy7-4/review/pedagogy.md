@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3fdc6d94a88f1134
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8141de503a9575b7
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- none
+
+the task could name the loudspeaker cable again to stay in the phenomenon.
 
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: en. Hash 3fdc6d94a88f1134 at start and end.
+
+batch delta review (round 2): The retrieval (field of a straight wire at 2 r) retrieves exactly what the force explanation needs and reveals nothing of the current-balance prediction. It now has no loudspeaker context.

@@ -48,7 +48,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "The flux decreases, so the field of the induced current keeps the flux unchanged and the ring attracts the magnet.",
+      "answer": "The flux decreases, so the field of the induced current tries to keep the flux unchanged and the ring attracts the magnet.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -61,7 +61,7 @@
           "feedback": "When the magnet moves away, the flux through the ring decreases rather than increases. The flux increases only when the magnet approaches the ring; then the ring really does repel the magnet."
         },
         {
-          "text": "The flux decreases, so the field of the induced current keeps the flux unchanged and the ring attracts the magnet.",
+          "text": "The flux decreases, so the field of the induced current tries to keep the flux unchanged and the ring attracts the magnet.",
           "correct": true,
           "feedback": "Correct: the decrease in flux is opposed, so the field of the induced current at the centre of the ring points in the same direction as the field of the magnet. A south pole appears on the side of the ring facing the magnet; it attracts the north pole and opposes the magnet moving away."
         },

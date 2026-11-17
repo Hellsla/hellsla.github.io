@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: milloin induktiojännite syntyy?",
-      "prompt": "Käämin päät on kytketty jännitemittariin. Sauvamagneetti työnnetään käämin sisään ja jätetään sitten paikalleen käämin sisälle. Mitä mittari näyttää, kun magneetti on levossa käämin sisällä?",
+      "prompt": "Kupariputken ympärille on kiedottu käämi, jonka päät on kytketty jännitemittariin. Voimakas magneetti pysäytetään putken sisään käämin kohdalle ja pidetään paikallaan. Mitä mittari näyttää, kun magneetti on levossa?",
       "choices": [
         {
           "text": "Nollaa, koska käämin läpi kulkeva magneettivuo ei muutu, kun magneetti on levossa.",
