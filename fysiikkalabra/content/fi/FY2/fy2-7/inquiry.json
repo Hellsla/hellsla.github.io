@@ -25,7 +25,7 @@
    "type": "choice",
    "title": "Kertaa: hyötysuhde",
    "optional": true,
-   "prompt": "Pumppu ottaa sähköenergiaa $8{,}0\\,\\text{kWh}$, ja siitä $6{,}0\\,\\text{kWh}$ muuttuu hyödylliseksi energiaksi. Kuinka suuri on pumpun hyötysuhde?",
+   "prompt": "Kaukolämpöverkon pumppu pumppaa kuumaa vettä kilometrien matkan. Se ottaa sähköenergiaa $8{,}0\\,\\text{kWh}$, ja siitä $6{,}0\\,\\text{kWh}$ muuttuu hyödylliseksi energiaksi. Kuinka suuri on pumpun hyötysuhde?",
    "choices": [
     {
      "text": "$0{,}75$, koska hyödyksi saatu energia jaetaan käytetyllä: $6{,}0 : 8{,}0$.",

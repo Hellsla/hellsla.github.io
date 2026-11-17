@@ -23,19 +23,19 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: energia ja joule",
-      "prompt": "Lamppu muuntaa sähköenergiaa valoksi ja lämmöksi. Mikä väite on oikea (luku *Energian muuntuminen ja yksikkö joule*)?",
+      "prompt": "Vedenkeitin ja eteisen lamppu ottavat molemmat sähköenergiaa. Mikä väite on oikea (luku *Energian muuntuminen ja yksikkö joule*)?",
       "choices": [
         {
-          "text": "Sähköenergia katoaa, kun lamppu palaa, joten energiaa on lopuksi vähemmän kuin alussa.",
-          "feedback": "Energia ei katoa. Luvussa *Energialajit ja energian säilyminen* sovittiin, että energia vain muuntuu toiseen muotoon. Lampussa sähköenergia muuttuu valoksi ja lämmöksi."
+          "text": "Sähköenergia katoaa, kun laite on päällä, joten energiaa on lopuksi vähemmän kuin alussa.",
+          "feedback": "Energia ei katoa. Luvussa *Energialajit ja energian säilyminen* sovittiin, että energia vain muuntuu toiseen muotoon. Keittimessä sähköenergia muuttuu veden lämpöenergiaksi ja lampussa valoksi ja lämmöksi."
         },
         {
-          "text": "Lampussa sähköenergia muuntuu toisiksi energialajeiksi, joita mitataan jouleina.",
+          "text": "Laitteissa sähköenergia muuntuu toisiksi energialajeiksi, joita mitataan jouleina.",
           "correct": true,
-          "feedback": "Oikein. Energian yksikkö on joule (J), ja kokonaisenergia säilyy: sähköenergia muuntuu valoksi ja lämmöksi. Tänään lisätään mukaan aika. Kysytään, kuinka nopeasti tämä muuntuminen tapahtuu."
+          "feedback": "Oikein. Energian yksikkö on joule (J), ja kokonaisenergia säilyy: keittimessä sähköenergia muuntuu veden lämpöenergiaksi ja lampussa valoksi ja lämmöksi. Tänään lisätään mukaan aika. Kysytään, kuinka nopeasti tämä muuntuminen tapahtuu."
         },
         {
-          "text": "Joule on se nopeus, jolla lamppu muuntaa sähköenergiaa valoksi ja lämmöksi.",
+          "text": "Joule on se nopeus, jolla laite muuntaa sähköenergiaa toisiksi energialajeiksi.",
           "feedback": "Joule on energian yksikkö, ei nopeuden. Nopeudesta kertoo uusi suure, teho. Sen yksikkö on joule sekunnissa."
         }
       ],
