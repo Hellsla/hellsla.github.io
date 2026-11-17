@@ -16,7 +16,7 @@ Kulutuslokin (`review/usage.tsv`) otoksessa orkestroija on kallein rivi (yksi is
 tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osat 0a–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
 `.claude/`, `CLAUDE.md`, `.github/workflows/`): ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja
 yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR:nsä ja raportoi PR:ssä, mitä se säästi
-(vuorot, tokenit, yhdistykset tai katselmoinnit ennen ja jälkeen). Avoimet jaetut PR:t #665 (5g) ja #666 (8o; ensin nimellä 8m, joka oli jo käytössä)
+(vuorot, tokenit, yhdistykset tai katselmoinnit ennen ja jälkeen). Avoimet jaetut PR:t #665 (5g) ja #666 (8o)
 yhdistetään ensin.
 
 ### 0a. Katselmointikierroksen ajo yhdellä komennolla
@@ -433,23 +433,6 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
-
-## 8o. Monivalinnan vaihtoehdot verrataan avaimittain katselmoinnin laajuudessa (koordinaattori 2026-11-17)
-
-Varattu: claude/reviews-json-avaimittain-2 (jatko; jaettu: scripts/reviews.py, test_reviews.py; yhdistetään yksin)
-
-**Tila 2026-11-17:** #666 yhdisti avainvertailun (kohta oli silloin nimellä 8m, joka oli jo käytössä kohdalle #618).
-Jatko (koordinaattori 2026-11-17, FY5-työntekijä #671): fy5-11 ja fy5-17 saivat yhä FULL-katselmoinnin, koska samalla
-vertailuvälillä oli aiempi reflow. `changes` korvasi silloin JSON-näkymän `chain_view`-tekstillä, jota `keyed_diff` ei
-voi jäsentää, joten vertailu palasi rivitasolle. Korjaus: reflow-näkymä tehdään JSON-puun merkkijonoarvoille.
-
-`reviews.py scope` vertasi exercises.json- ja inquiry.json-tiedostot riveittäin (difflib). Kun monivalinnan
-vaihtoehdot kirjoitettiin uudelleen, muuttumaton rivi kuten `"correct": true` kohdistui toiseen kohtaan ja näkyi
-poistettuna ja lisättynä, joten muutos sai luokan `experiment` ja tiede- ja pedagogiikkakatselmoinnista tuli FULL
-(8j FY5, PR #661: fy5-7, fy5-11 ja fy5-17 palautettiin, koska täydet katselmoinnit olisivat maksaneet noin 1 M tokenia).
-Korjaus: JSON verrataan avaimittain (polku id:n tai indeksin mukaan), joten muuttumaton avain–arvo-pari ei ole muutos.
-Pelkkä vaihtoehdon tekstin muutos on `wording` tai `numbers` (delta); muuttunut `correct`, alkutila tai vastaus on
-edelleen `experiment` (täysi katselmointi), samoin lisätty tai poistettu vaihtoehto, jolla on `correct`.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 

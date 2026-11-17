@@ -861,7 +861,7 @@ git(t, "checkout", "-q", "HEAD~1", "--", "content")
 out = usplit(",\n\n- joten nopeus\n- on melko pieni.")
 expect("... but a changed word with the paragraph breaks carries nothing", "science: carried over" not in out and "review needed" in out, out)
 
-# 8m. options rewritten around an unchanged "correct": true (work queue 8m, coordinator 2026-11-17; 8j FY5, #661): the
+# 8o. options rewritten around an unchanged "correct": true (work queue 8o, coordinator 2026-11-17; 8j FY5, #661): the
 # JSON of an inquiry or an exercise set is compared key by key, so an unchanged key-value pair is no change; a changed
 # "correct", a numeric answer or a new correct option is still "experiment" (full science and pedagogy reviews)
 # the other activities make the file as long as a real inquiry: over 200 lines difflib's autojunk takes the frequent lines
@@ -879,24 +879,57 @@ _N = [{"text": "Aallonpituus on pitkä.", "correct": True, "feedback": "Oikein, 
 _A, _B = _inq("Aaltokone tekee aaltoja. Mitä aallonpituudelle tapahtuu?", _O), _inq("Avomereltä tulevat aallot osuvat aallonmurtajaan. Millainen on aallonpituus?", _N)
 _cl = lambda a, b, rel="content/fi/FY5/fy5-11/inquiry.json": rv.classify(rel, rv._class_diff(rel, a, b), "fy5-11")
 _ln = lambda a, b, rel="content/fi/FY5/fy5-11/inquiry.json": rv.classify(rel, list(rv.difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=2)), "fy5-11")
-expect("8m: the line diff took the unchanged \"correct\": true for a changed experiment (the bug)", "experiment" in _ln(_A, _B), str(_ln(_A, _B)))
-expect("8m: compared key by key, options and prompt rewritten with \"correct\" where it was are wording alone (delta reviews)", _cl(_A, _B) == {"wording"}, str(_cl(_A, _B)))
+expect("8o: the line diff took the unchanged \"correct\": true for a changed experiment (the bug)", "experiment" in _ln(_A, _B), str(_ln(_A, _B)))
+expect("8o: compared key by key, options and prompt rewritten with \"correct\" where it was are wording alone (delta reviews)", _cl(_A, _B) == {"wording"}, str(_cl(_A, _B)))
 _sc = lambda cats: {r: max((rv.RULES[c][i] for c in cats), key=("none", "delta", "full").index) for i, r in enumerate(("science", "pedagogy", "visual"))}
 expect("... and so no reviewer is full", "full" not in _sc(_cl(_A, _B)).values(), str(_sc(_cl(_A, _B))))
 _N2 = [dict(o) for o in _N]; del _N2[0]["correct"]; _N2[1]["correct"] = True
-expect("8m: \"correct\" moved to another option is still experiment (full science and pedagogy)",
+expect("8o: \"correct\" moved to another option is still experiment (full science and pedagogy)",
        "experiment" in _cl(_A, _inq("Avomereltä tulevat aallot osuvat aallonmurtajaan. Millainen on aallonpituus?", _N2)) and _sc({"experiment"})["science"] == "full")
 expect("... even when every text stays as it was", _cl(_inq("Q?", _O), _inq("Q?", [dict(_O[0], correct=False), dict(_O[1], correct=True), _O[2]])) == {"experiment"})
-expect("8m: a new option that is correct is experiment", "experiment" in _cl(_inq("Q?", _O), _inq("Q?", _O + [{"text": "Uusi.", "correct": True}])))
-expect("8m: a changed numeric answer of an inquiry task is experiment", _cl(_inq("Q?", _O, answer=0.25), _inq("Q?", _O, answer=0.5)) == {"experiment"})
+expect("8o: a new option that is correct is experiment", "experiment" in _cl(_inq("Q?", _O), _inq("Q?", _O + [{"text": "Uusi.", "correct": True}])))
+expect("8o: a changed numeric answer of an inquiry task is experiment", _cl(_inq("Q?", _O, answer=0.25), _inq("Q?", _O, answer=0.5)) == {"experiment"})
 _num = _cl(_inq("Q?", _O), _inq("Q?", [dict(_O[0], text="Aallonpituus on $20\\,\\text{m}$."), _O[1], _O[2]]))
-expect("8m: a number in an option's text is numbers (science delta), as on a line of its own, never experiment", "numbers" in _num and "experiment" not in _num, str(_num))
+expect("8o: a number in an option's text is numbers (science delta), as on a line of its own, never experiment", "numbers" in _num and "experiment" not in _num, str(_num))
 _two = lambda ids: rv._view(json.dumps({"activities": [{"id": i, "stage": "tutki", "type": "choice", "prompt": "P " + i} for i in ids]}), "x/inquiry.json", False)
-expect("8m: activities found by their id; their order is still a structure change", _cl(_two(["a", "b"]), _two(["b", "a"])) == {"structure"}, str(_cl(_two(["a", "b"]), _two(["b", "a"]))))
-expect("8m: an exercise's answer stays answers when the texts around it are rewritten",
+expect("8o: activities found by their id; their order is still a structure change", _cl(_two(["a", "b"]), _two(["b", "a"])) == {"structure"}, str(_cl(_two(["a", "b"]), _two(["b", "a"]))))
+expect("8o: an exercise's answer stays answers when the texts around it are rewritten",
        _cl(json.dumps({"level1": [{"id": "e1", "text": "Vanha.", "answer": 2.0}]}, indent=1), json.dumps({"level1": [{"id": "e1", "text": "Uusi.", "answer": 3.0}]}, indent=1),
            "content/fi/FY5/fy5-11/exercises/exercises.json") == {"wording", "answers"})
-expect("8m: a file that is not JSON falls back to the line diff", rv._class_diff("x/inquiry.json", "{", "{]") == list(rv.difflib.unified_diff(["{"], ["{]"], lineterm="", n=2)))
+expect("8o: a file that is not JSON falls back to the line diff", rv._class_diff("x/inquiry.json", "{", "{]") == list(rv.difflib.unified_diff(["{"], ["{]"], lineterm="", n=2)))
+
+# 8o. the same, when the change also re-breaks a calculation chain in the JSON (work queue 8o; fy5-11 and fy5-17 in #671):
+# the reflow view is made of the JSON's string values, so the file is still compared key by key and an unchanged
+# "correct": true is no change; a moved "correct" with the re-break is still experiment
+t = project(); init_git(t); IQ = t / "content/fi/FY3" / LESSON / "inquiry.json"
+for n in ("science", "pedagogy", "visual"): report(t, n)
+git(t, "add", "."); git(t, "commit", "-qm", "lesson reviewed")
+_IQ0 = json.loads(IQ.read_text())
+def _rebreak_and_rewrite(move_correct=False):
+    d = json.loads(json.dumps(_IQ0)); acts = {a["id"]: a for a in d["activities"]}
+    hint = next(x for a in d["activities"] for x in a.get("hints", []) if isinstance(x, str) and " = \\dfrac{100}" in x)
+    h_i = [a for a in d["activities"] if hint in a.get("hints", [])][0]; h_i["hints"][h_i["hints"].index(hint)] = hint.replace(" = \\dfrac{100}", "$\n$= \\dfrac{100}", 1)
+    ch = acts["pr-pumppu"]["choices"]
+    for i, c in enumerate(ch): c["text"] = f"Uusi vaihtoehto {'ABCD'[i]} renkaan ilmasta."; c["feedback"] = f"Uusi palaute {'ABCD'[i]} ilman määrästä."
+    if move_correct: ch[0].pop("correct"); ch[1]["correct"] = True
+    IQ.write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    return run(t, "reviews.py", "scope", LESSON)[1]
+expect("8o: (the fixture has the chain to re-break and the option set)", any(" = \\dfrac{100}" in x for a in _IQ0["activities"] for x in a.get("hints", []) if isinstance(x, str)))
+out = _rebreak_and_rewrite()
+expect("8o: a chain re-broken and options rewritten around an unchanged \"correct\" in one inquiry.json: reflow and wording, no experiment",
+       "reflow" in out and "wording" in out and "experiment" not in out and "science: full" not in out and "pedagogy: full" not in out, out)
+out = _rebreak_and_rewrite(move_correct=True)
+expect("8o: ... and with \"correct\" moved to another option, experiment and full science and pedagogy reviews",
+       "experiment" in out and "science: full" in out and "pedagogy: full" in out, out)
+_pr = lambda items: json.dumps({"prior": items, "vary": ["m"]}, ensure_ascii=False, indent=1)
+_t = next(iter(rv.chapter_titles()))
+expect("8o: a list of strings is one line per item, so a chapter reference renamed in one item is chapter-ref, as on its own line",
+       _cl(_pr(["Teho kertoo energiasta (luku *Vanha nimi*)", "Toinen"]), _pr([f"Teho kertoo energiasta (luku *{_t}*)", "Toinen"])) == {"chapter-ref"},
+       str(_cl(_pr(["Teho kertoo energiasta (luku *Vanha nimi*)", "Toinen"]), _pr([f"Teho kertoo energiasta (luku *{_t}*)", "Toinen"]))))
+expect("8o: ... and an item of a list under an experiment key (vary) is still experiment",
+       _cl(json.dumps({"vary": ["m", "v"]}, indent=1), json.dumps({"vary": ["m", "h"]}, indent=1)) == {"experiment"})
+expect("8o: a JSON view of the string values keeps non-strings and keys", rv._json_strings('{"a": ["x", 1, true], "b": {"c": "y"}}', str.upper) == json.dumps({"a": ["X", 1, True], "b": {"c": "Y"}}, indent=1)
+       and rv._json_strings("{", str.upper) is None)
 
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
