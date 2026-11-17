@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ea81f796dbd5b51b
+CONTENT-HASH: 98e8b3ffefd4cb5c
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy6-8 Sijoitus of the battery-comparison task — the split puts "Ikääntynyt: …" in its own paragraph away from "a) Uusi: …"; harmless but the pair reads better together.
+(none)
 
 ## Checked
-- Delta (md-paragraphs). Opened L3 captures 4 and 7 at 1280 px (the Mallivastaus and Järkevyys splits visible in 7): readable, even spacing, nothing clipped; diff of the other splits read.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L2-07 Vastaus b joined; L3-04 Sijoitus, "Ikääntynyt:" back in the paragraph above, part labels a), b), c) start their own paragraphs).
+- Opened fy6-8-open-exercises-L2-1280-7, -8 and L3-1280-5, -6 at 1280 px: spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

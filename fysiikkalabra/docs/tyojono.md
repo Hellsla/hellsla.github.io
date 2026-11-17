@@ -180,8 +180,6 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
-Varattu: claude/fy6-kappalejako (FY6: fy6-1…fy6-16, Sovella ja esimerkkikoe).
-
 FY1 tehty: fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä (#650); Sovella (fi, en, fi-easy), esimerkkikoe ja en
 fy1-1:n harjoitusten kolme askelta (claude/fy1-kappalejako-2, 8c-1:n #657 jälkeen). Jäljellä FY1:ssä vain numeroitu lista
 Sovellan mallivastauksessa "Mitkä tahansa neljä seuraavista", jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
@@ -202,6 +200,14 @@ järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-
 (vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
 ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
+
+FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
+esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
+(kierros 2 niille 24 tehtäväsarjalle, joissa kierros 1 löysi katkoja kesken osien). Sääntö, jonka kierros 1 opetti: kun
+askeleessa on osamerkit a), b) … tai (1), (2), katko tulee osamerkin eteen, ei osan keskelle. Yhdeksi kappaleeksi jäivät
+askeleet, joiden vastausluvut ovat myöhemmissä osissa (answers_shown), ja muutama virkerajaton kohta. Polish (vain kirjattu):
+uusi kappale alkaa joskus pronominilla ("Se …"), jonka viittauskohde on edellisessä kappaleessa (fi-easy fy6-9…fy6-11,
+fy6-13, fy6-15; korjaus vaatisi sanamuodon muutoksen); en fy6-16:n kaapelivirtatehtävän Answer päättyy osamerkkiin "a)".
 
 FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
 (`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi

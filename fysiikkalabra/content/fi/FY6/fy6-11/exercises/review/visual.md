@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7868cd5835e9aea3
+CONTENT-HASH: bb084e9586f15f33
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions L3-04 Sijoitus: the one-line paragraph "Kohdan c kirjallisuusarvo tukee valintaa." stands between the b) and c) lines and reads slightly detached; it would sit better after the ratios  : n$ it refers to (word order change, so a content edit).
+(none)
 
 ## Checked
-- Delta (solutions.md paragraph breaks only). Opened 1280 px captures: open-exercises-1280-6 (L1-06), L2-1280-12 (figure-choice solution), L3-1280-6 (Millikan a-d), L3-1280-7, -8, -9 (ink-jet task, parts a-e, Vastaus, Järkevyys).
-- Breaks are one thought each, no one-word paragraphs, display maths with trailing punctuation sits right, no clipping, spacing in the card even.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L2-07, L3-04, L3-05: part labels b), c), e) now start paragraphs; sentences inside a part run together); exercises.json caption marker removal is outside my judgement.
+- Opened fy6-11-open-exercises-L3-1280-6, -8 and -9 at 1280 px: spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

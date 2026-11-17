@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 09c51a8f15eac251
+CONTENT-HASH: 780f2e62011fe6f0
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none new
+(none)
 
 ## Checked
-- Delta (solutions.md paragraph breaks only). Opened 1280 px captures: open-exercises-1280-6 (L1-06 model answer), L2-1280-5 and -6 (Kuvaajan lukeminen), L3-1280-4, -5 (L3-04 Periaate), L3-1280-7, -8 (pendulum Periaate and Vastaus).
-- Every new break is one thought, nothing starts mid-thought, no orphaned one-word paragraph, spacing inside the solution card even, nothing clipped.
+- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05 Vastaus: "Pallojen etäisyys …" joined, break now before the part label c)).
+- Opened fy6-10-open-exercises-L3-1280-8 at 1280 px: the open solution reads cleanly, spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
