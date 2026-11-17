@@ -170,7 +170,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: force on a test charge at different plate distances",
+        "caption": "Force on a test charge at different plate distances",
         "columns": [
           "$d\\,(\\text{cm})$",
           "$F\\,(\\mu\\text{N})$"
@@ -228,7 +228,7 @@
       "unit": "V/m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: force on a test charge along a line parallel to the plates",
+        "caption": "Force on a test charge along a line parallel to the plates",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F\\,(\\mu\\text{N})$"
@@ -336,7 +336,7 @@
       "unit": "C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: hovering voltages of oil droplets",
+        "caption": "Hovering voltages of oil droplets",
         "columns": [
           "$\\text{Droplet}$",
           "$m\\,(10^{-15}\\,\\text{kg})$",

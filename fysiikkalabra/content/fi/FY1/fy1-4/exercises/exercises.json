@@ -350,7 +350,7 @@
       "unit": "°C/h",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ilman lämpötila vuorokauden aikana (keksitty esimerkkiaineisto)",
+        "caption": "Ilman lämpötila vuorokauden aikana",
         "columns": [
           "$t\\,(\\text{h})$",
           "$T\\,({}^\\circ\\text{C})$"

@@ -183,7 +183,7 @@
       "unit": "°",
       "tolerance": 0.05,
       "data": {
-        "caption": "Lasien taitekertoimet (tyypillisiä arvoja, esimerkkiaineisto)",
+        "caption": "Lasien taitekertoimet (tyypillisiä arvoja)",
         "columns": [
           "Lasi",
           "$n_\\text{p}\\,(656\\,\\text{nm})$",
