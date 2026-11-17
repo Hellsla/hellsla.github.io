@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8cc60cc521025723
+CONTENT-HASH: 6e46a118823eff8e
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 5-4 Reasonableness: `0.0025 m²/4` uses a slash for a division in text; the house rule is a colon (`:`).
+- none new (earlier Polish items unchanged by this paragraph-splitting delta)
 
 ## Checked
-- 390 px chain montage opened (two sheets, all chains), fy3-4-open-exercises-1280-4 (5-4 pressure of the stove): display rows aligned, no lone punctuation.
-- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
+- Delta (md-paragraphs: solution paragraphs cut, words unchanged). Captures current for this hash (stamp). Opened at 1280 px: no capture of the exact changed paragraph opened; the set shares the same solution component, verified in sets 1, 5, 6, 7. Split paragraphs render as separate readable blocks inside Principle, Answer and Reasonableness; display chains, answer boxes and the Reasonableness card are intact, no gaps, clipping or overflow. Checked the diff: no words, numbers or units changed. The 390 px chain rendering was not re-captured; the diff does not touch chains.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

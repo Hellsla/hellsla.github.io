@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5b6c48d8f9d9c56c
+CONTENT-HASH: 5794e4f908fc2530
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 5b6c48d8f9d9c56c
 - none
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-5.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- batch delta review: contact sheet, opening, simulation 390 and the changed theory figures/paragraph layout opened; figures legible at 390 px, formulas rendered, nothing clipped, paragraph splits keep figures beside their text.

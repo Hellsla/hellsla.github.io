@@ -222,7 +222,7 @@ where $P$ is the thermal power (W), $U$ is the U-value of the building part (W/(
 
 
 ## Worked example
-The walls of a detached house have an area of $120\,\text{m}^2$ and a U-value of $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, and the windows have an area of $20{,}0\,\text{m}^2$ and a U-value of $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$. It is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
+The walls of a detached house have an area of $120\,\text{m}^2$ and a U-value of $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, and the windows have an area of $20.0\,\text{m}^2$ and a U-value of $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$. It is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
 
 <!-- vaihe -->
 

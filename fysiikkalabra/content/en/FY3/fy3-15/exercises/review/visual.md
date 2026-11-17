@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dbe8bd90ec39ffa3
+CONTENT-HASH: 312ac1feb6f82c78
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] pre-existing, outside the delta: L2-05 data table row header overprints the values at 390 px (shared table component, unchanged by this work, recorded for the work queue; not made worse by the delta).
+- [Minor] solutions.md — none worth listing; the split paragraphs read as separate steps and each ends with its own punctuation.
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
-- Hash unchanged at the end.
+- Delta (md-paragraphs: solutions.md only, paragraphs cut into shorter paragraphs, words unchanged). Diff of solutions.md read; contact sheets and the packet capture fy3-15-open-exercises-L2-1280-1 (14-10 solution, split Reasonableness) opened at 1280 px (the page's own captures, with every solution open).
+- The split paragraphs sit inside the solution card with even spacing, labels (Given, Principle, Reasonableness, ...) intact; display formulas keep equals signs in one column, no clipping, no overflow, no lone punctuation, no empty gaps; the layout survived the change.
+- Figures and the lesson page unchanged and outside this exercise-set delta; no new text, no new figures.
+- Hash run at start and at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

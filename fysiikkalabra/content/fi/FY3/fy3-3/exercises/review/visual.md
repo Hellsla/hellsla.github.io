@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fb52a24fb4f6c71f
+CONTENT-HASH: 05f819a64c89fa68
 
 ## Blocking
 (none)
@@ -8,8 +8,8 @@ CONTENT-HASH: fb52a24fb4f6c71f
 (none)
 
 ## Checked
-- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-3 L2 capture 3 (L2-02 Järkevyys display row, 3-13 graph and Annettu).
-- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Round 1, delta (solutions.md only, md-paragraphs: text cut into paragraphs, words unchanged). Opened at 1280 px: fy3-3 L3 capture 5 (L3-05 Annettu/Periaate/Kaava/Sijoitus rows).
+- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes, equals signs aligned, closing punctuation inside the boxes, nothing clipped, surrounding layout intact. No 390 px exercise captures exist; the 360 px layout check is clean (packet).
 - Hash unchanged at the end.
 
 ## Scores

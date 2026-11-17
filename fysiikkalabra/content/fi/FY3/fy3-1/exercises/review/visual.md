@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e2a326955293c403
+CONTENT-HASH: e315e7f681957255
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-1-L1-03 Järkevyys — one sentence is cut into several pieces by display boxes ("…olisi [box] Kuun g … ja [box] joten tulos täsmää"); readable, the period sits in the box — if the sentence is touched again, keep the formula inside the sentence.
+(none)
 
 ## Checked
-- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-1 L1 captures 2 and 3 (1-2, 1-3 Järkevyys with the new display rows).
-- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Round 1, delta (solutions.md only, md-paragraphs: text cut into paragraphs, words unchanged). Opened at 1280 px: fy3-1 L3-05 (open-exercises-L3-1280-5: Kaava/Muunnokset/Sijoitus split into short paragraphs with boxed rows) and L1 captures 9 and 10 (model answer paragraphs, 1-10 Järkevyys).
+- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes, equals signs aligned, closing punctuation inside the boxes, nothing clipped, surrounding layout intact. No 390 px exercise captures exist; the 360 px layout check is clean (packet).
 - Hash unchanged at the end.
 
 ## Scores

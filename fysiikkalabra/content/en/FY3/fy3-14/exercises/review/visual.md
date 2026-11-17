@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3b2aa1884cd1cbf4
+CONTENT-HASH: cf0f987eb42ff6fc
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] L3-04 Kaava / L3-05 Järkevyys: the two numerator rows are centred/right-aligned against each other (second row starts with a minus); readable, left-aligning the rows would be tidier.
-- [Minor] L3-05 Järkevyys: the chain T = ... = ... is split into two display boxes; one aligned block would read as one equation.
+- [Minor] solutions.md — none worth listing; the split paragraphs read as separate steps and each ends with its own punctuation.
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Opened L3-04 (Kaava, Sijoitus, Järkevyys) and L3-05 (Sijoitus, Vastaus, Järkevyys) at 360 px (fi) and 1280 px (en, fi-easy): the two-row-numerator fractions fit, equals signs aligned, nothing clipped.
-- Hash unchanged at the end.
+- Delta (md-paragraphs: solutions.md only, paragraphs cut into shorter paragraphs, words unchanged). Diff of solutions.md read; contact sheets and the packet capture fy3-14-open-exercises-L2-1280-10 (model answer and solution paragraphs after a split) opened at 1280 px (the page's own captures, with every solution open).
+- The split paragraphs sit inside the solution card with even spacing, labels (Given, Principle, Reasonableness, ...) intact; display formulas keep equals signs in one column, no clipping, no overflow, no lone punctuation, no empty gaps; the layout survived the change.
+- Figures and the lesson page unchanged and outside this exercise-set delta; no new text, no new figures.
+- Hash run at start and at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

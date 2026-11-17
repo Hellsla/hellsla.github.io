@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a809fb317bf5eeb9
+CONTENT-HASH: f589aef727fde30b
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: a809fb317bf5eeb9
 (none)
 
 ## Checked
-- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 20 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
-- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut in two or three, words in the same order. Read the added paragraphs in the diff for language and punctuation.
+- Opened the 1280 px open-solution captures of fy3-15 (several parts of levels 1-3 chosen where split paragraphs and displays sit, e.g. fy3-9 L1 parts 3 and 6, L2-14; fy3-15 part 5; fy3-11 L3-4; fy3-14 L3-3; fy3-10 L3-5; fy3-12 L2-9; fy3-16 L3-5): new paragraph breaks sit between answer, reasoning and Jarkevyys blocks inside the card, formula rows aligned at "=", punctuation after a display stays on the last row, no clipping, no number or unit broken, units LaTeX with thin space, decimal commas right.
+- Language: split paragraphs read as one idea each, no mechanical phrasing. No figures changed.
 - Hash same at start and end.
 
 ## Scores

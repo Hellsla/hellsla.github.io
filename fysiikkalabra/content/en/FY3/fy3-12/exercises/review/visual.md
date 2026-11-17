@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 72730a1a2c9928de
+CONTENT-HASH: 0aa776c33031e473
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
+- [Minor] solutions.md — none worth listing; the split paragraphs read as separate steps and each ends with its own punctuation.
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
-- Hash unchanged at the end.
+- Delta (md-paragraphs: solutions.md only, paragraphs cut into shorter paragraphs, words unchanged). Diff of solutions.md read; contact sheets and the packet capture fy3-12-open-exercises-L2-1280-10 (U-value solution: Principle and Reading the graph split, Formula, Conversions) opened at 1280 px (the page's own captures, with every solution open).
+- The split paragraphs sit inside the solution card with even spacing, labels (Given, Principle, Reasonableness, ...) intact; display formulas keep equals signs in one column, no clipping, no overflow, no lone punctuation, no empty gaps; the layout survived the change.
+- Figures and the lesson page unchanged and outside this exercise-set delta; no new text, no new figures.
+- Hash run at start and at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
