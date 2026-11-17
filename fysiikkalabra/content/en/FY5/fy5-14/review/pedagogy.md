@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d8a83364b77920c3
+CONTENT-HASH: 3a3366d0ae510376
 
 ## Blocking
 None.
@@ -8,4 +8,4 @@ None.
 None.
 
 ## Checked
-Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.
+batch delta review (queue 8j): kertaus (stationary siren, wavelength) matches the ambulance hook; the Doppler predictions are not given away; the other changes (numbers, reflow) read clearly.

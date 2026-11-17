@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e85d23c8af85e2db
+CONTENT-HASH: 5d5e20dae0dcc9cd
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- kertaus answer 'net force towards the centre' is the core of the hook's answer (what keeps the ISS in orbit). It is prior knowledge from fy5-4, but the feedback could avoid naming gravity as the centre-directed force, so that Prediction 3 (floating) still has something to argue about.
 
 ## Checked
-light delta review (teacher 2026-11-07), after fixes: bold definition ("means that nothing supports the body: only gravity acts on it, and it falls freely together with its surroundings") and summary are natural English and agree with the inquiry, exit ticket and exercises; earlier Polish resolved.
+batch delta review (queue 8j): kertaus same ISS phenomenon; predictions 1-3 not directly given; the other changes (numbers, reflow) read clearly.

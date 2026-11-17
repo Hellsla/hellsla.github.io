@@ -89,8 +89,10 @@ a["tark2"] = 1.20 / 3.50e-3                                 # 342,9 m/s
 a["tark2-m-ms"] = 1.20 / 3.50                               # mistake: ms not converted, 0,343
 a["tark2-m-double"] = 2 * 1.20 / 3.50e-3                    # mistake: doubled distance as for an echo, 686 m/s
 
-# Retrieval: string f1 = 110 Hz, eigenfrequencies 220, 330, 440 Hz
-for k in (2, 3, 4): a[f"kertaus-f{k}"] = 110 * k
+# Retrieval: the siren at rest, 700 Hz in air at V: λ = v/f
+a["kertaus-lambda"] = V / 700                                # 0,486 m -> "noin 0,49 m"
+a["kertaus-fv"] = 700 / V                                    # mistake f/v: 2,06 -> "noin 2,1"
+a["kertaus-vf"] = V * 700                                    # mistake v·f: 238 000
 
 # Exit ticket: 440 Hz and 437 Hz: f_h = 3 Hz, heard pitch 438,5 Hz
 a["exit-fh"] = abs(440 - 437)

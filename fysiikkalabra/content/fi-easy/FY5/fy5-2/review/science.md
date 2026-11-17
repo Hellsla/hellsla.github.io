@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 11f0ae4441e1ac86
+CONTENT-HASH: 568a8f092ff12e3f
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The distractor "noin 63 Nm" (F/r) has the unit N/m, not Nm. Its feedback could say that as well as "tulo, ei osamäärä". It is a wrong option and stays wrong, so this is not blocking.
+- The `\quad` inserted mid-chain in the diving-board solution leaves a visible gap inside one product. Typography only.
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages of the batch packet's diff (= git diff origin/main) judged in context, not a full review; tukipinta defined as the region bounded by the contact points; tipping vs sliding distinguished; tipping criterion via the weight's moment about the lower edge correct.
+Batch delta review: the kertaus choice (the paint can 0,80 m out on the plank's overhang, 50 N) recomputed: M = 40 Nm correct; 62,5 → "noin 63" and 50 Nm wrong, with correct feedback (zero moment at the edge is right); the weight is vertical and the plank horizontal, so the lever arm is the distance; lesson-answers.py agrees; the solution's numbers are unchanged.

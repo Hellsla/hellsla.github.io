@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Recall: the moment of a force",
       "optional": true,
-      "prompt": "A door is pushed at the handle with a force of $20\\,\\text{N}$ perpendicular to the door. The handle is $0.80\\,\\text{m}$ from the hinges. What is the moment of the force about the hinges?",
+      "prompt": "The weight of the paint can is $50\\,\\text{N}$. The can stands on the overhang of the horizontal plank, $0.80\\,\\text{m}$ from the edge of the trestle the plank rests on. What is the moment of the can's weight about the edge of the trestle?",
       "choices": [
         {
-          "text": "$16\\,\\text{Nm}$, because the moment is the force times the lever arm.",
+          "text": "$40\\,\\text{Nm}$, because the moment is the force times the lever arm.",
           "correct": true,
-          "feedback": "Correct. $$\\begin{aligned} M &= Fr \\\\ &= 20\\,\\text{N} \\cdot 0.80\\,\\text{m} \\\\ &= 16\\,\\text{Nm} \\end{aligned}$$, because the force is perpendicular to the door and the lever arm is the distance from the hinges (chapter *Moment: the turning effect of a force*). Today we calculate moments for a body that does not rotate at all."
+          "feedback": "Correct. $$\\begin{aligned} M &= Fr \\\\ &= 50\\,\\text{N} \\cdot 0.80\\,\\text{m} \\\\ &= 40\\,\\text{Nm} \\end{aligned}$$, because the weight is vertical and the plank horizontal, so the lever arm is the distance of the can from the edge of the trestle (chapter *Moment: the turning effect of a force*). Today we find out when the moments keep the plank in place and when it tips over."
         },
         {
-          "text": "$25\\,\\text{Nm}$, because the force is divided by the distance from the hinges.",
-          "feedback": "The moment is the product of the force and the lever arm, not a quotient: $M = Fr$. Farther from the hinges the same force turns the door more, so the moment grows as the distance grows. The correct value is $16\\,\\text{Nm}$."
+          "text": "about $63\\,\\text{Nm}$, because the force is divided by the distance from the edge of the trestle.",
+          "feedback": "The moment is the product of the force and the lever arm, not a quotient: $M = Fr$. Farther from the edge of the trestle the same weight turns the plank more, so the moment grows as the distance grows. The correct value is $40\\,\\text{Nm}$."
         },
         {
-          "text": "$20\\,\\text{Nm}$, because the moment is equal to the force.",
-          "feedback": "The moment also depends on how far from the axis of rotation the force acts. The same $20\\,\\text{N}$ force right next to the hinge hardly turns the door at all. The moment is $M = Fr = 16\\,\\text{Nm}$ (chapter *Moment: the turning effect of a force*)."
+          "text": "$50\\,\\text{Nm}$, because the moment is equal to the force.",
+          "feedback": "The moment also depends on how far from the axis of rotation the force acts. The same can right above the edge of the trestle does not turn the plank at all. The moment is $M = Fr = 40\\,\\text{Nm}$ (chapter *Moment: the turning effect of a force*)."
         }
       ]
     },

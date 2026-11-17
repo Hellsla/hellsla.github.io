@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 289e8f1f604f3c64
+CONTENT-HASH: 071864d330d212a5
 
 ## Blocking
 
 ## Polish
+- [Minor] Kertaa title is "harmoninen voima" but the task now asks about net force of a hanging toy; consider a title like "jousen voima ja kokonaisvoima".
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- batch delta review: opened the Pohdinta capture and a fresh 390 px render of the opened Kertaa choice (wrong answer feedback and correct answer feedback); maths, LaTeX units and wrapping render cleanly.

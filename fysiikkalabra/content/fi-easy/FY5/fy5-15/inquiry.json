@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Kertaa: äänen ominaisuudet",
       "optional": true,
-      "prompt": "Kitaran kieli soi ensin hiljaa ja sitten kovaa samalla sävelellä. Mikä äänessä muuttuu?",
+      "prompt": "Konserttilavan kaiutin soittaa samaa säveltä. Ensin se soi hiljaa ja sitten kovaa. Mikä äänessä muuttuu?",
       "choices": [
         {
           "text": "Ääniaallon amplitudi eli ilman painevaihtelun suuruus kasvaa.",

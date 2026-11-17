@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9f7e6d68a7307a29
+CONTENT-HASH: 6fd865c43f88554e
 
 ## Blocking
+(none)
 
 ## Polish
+- Kertaus (toy bird on a spring, restoring force direction) is a bounce on a spring like the hook, and the teaser 'Tänään selvitetään...' is fine; no Ennusta answer disclosed.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the redrawn dashed path of the pendulum figure, which now ends at the extreme position the figure shows; no text changed.
+batch delta review: kertaus same phenomenon family as hook; Ennusta 1/2 not disclosed; numbers and answers in the diff consistent with answers.py and solutions (not recomputed).

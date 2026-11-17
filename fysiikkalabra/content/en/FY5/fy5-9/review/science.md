@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2355a3e085de0f9e
+CONTENT-HASH: 6f05942d807ec312
 
 ## Blocking
+- none
 
 ## Polish
+- Correct-option feedback: "a horizontal spring always pulls a body towards the equilibrium position": a compressed spring pushes; "acts on" would be exact (C-level, not blocking).
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the pendulum force diagram path arc in figures.py and the inline SVG: the arc now spans ±α = ±35° and its end (362, 228.5) coincides with the bob centre (361.9, 228.4) at the extreme position; forces unchanged.
+batch delta review: kertaus now the hook's spring-toy bird released below equilibrium: net force upwards (spring force exceeds weight below equilibrium), true whether the bird hangs or stands on the spring; downwards and zero options wrong with right feedback; removed kertaus numbers from lesson-answers.py match the now numberless task; worked-example paragraph split keeps 0.795 s, 1.25 Hz.
