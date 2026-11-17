@@ -30,7 +30,7 @@
         {
           "text": "$4{,}0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein. Energia on teho kertaa aika: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0{,}0010\\,\\text{s} \\\\ &= 4{,}0\\,\\text{J} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, mihin salamaa varten tarvittava energia varastoidaan."
+          "feedback": "Oikein. Energia on teho kertaa aika: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0{,}0010\\,\\text{s} \\\\ &= 4{,}0\\,\\text{J} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, mihin salamaa varten tarvittava energia varastoidaan."
         },
         {
           "text": "$4{,}0\\,\\text{kJ}$",

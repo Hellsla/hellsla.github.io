@@ -30,7 +30,7 @@
         {
           "text": "$1{,}0 \\cdot 10^{-15}\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein. Vakiovoiman työ liikkeen suunnassa on $$\\begin{aligned} W &= Fs \\\\ &= 2{,}0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0{,}50\\,\\text{m} \\\\ &= 1{,}0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$(luku *Työ ja energia*). Tänään selvitetään, miten potentiaaliero antaa elektronille liike-energiaa."
+          "feedback": "Oikein. Vakiovoiman työ liikkeen suunnassa on $$\\begin{aligned} W &= Fs \\\\ &= 2{,}0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0{,}50\\,\\text{m} \\\\ &= 1{,}0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$ (luku *Työ ja energia*). Tänään selvitetään, miten potentiaaliero antaa elektronille liike-energiaa."
         },
         {
           "text": "$4{,}0 \\cdot 10^{-15}\\,\\text{J}$",

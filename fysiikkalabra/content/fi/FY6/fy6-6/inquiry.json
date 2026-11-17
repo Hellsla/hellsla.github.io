@@ -31,7 +31,7 @@
         {
           "text": "$5{,}0\\,\\text{A}$",
           "correct": true,
-          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 230\\,\\text{V} : 46\\,\\Omega \\\\ &= 5{,}0\\,\\text{A} \\end{aligned}$$(luku *Resistanssi ja Ohmin laki*). Tänään Ohmin laki yhdistetään tehoon."
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 230\\,\\text{V} : 46\\,\\Omega \\\\ &= 5{,}0\\,\\text{A} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään Ohmin laki yhdistetään tehoon."
         },
         {
           "text": "$0{,}20\\,\\text{A}$",

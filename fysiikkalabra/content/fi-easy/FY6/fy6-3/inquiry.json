@@ -28,7 +28,7 @@
         {
           "text": "$40\\,\\text{C}$",
           "correct": true,
-          "feedback": "Oikein. Virta kertoo, kuinka paljon varausta kulkee sekunnissa. Siksi $Q = It$: $$\\begin{aligned} Q &= 4{,}0\\,\\text{A}\\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$(luku *Virtapiiri, sähkövirta ja jännite*). Tänään selvitetään, mikä ratkaisee, kuinka suuren virran jännite saa aikaan komponentissa."
+          "feedback": "Oikein. Virta kertoo, kuinka paljon varausta kulkee sekunnissa. Siksi $Q = It$: $$\\begin{aligned} Q &= 4{,}0\\,\\text{A}\\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$ (luku *Virtapiiri, sähkövirta ja jännite*). Tänään selvitetään, mikä ratkaisee, kuinka suuren virran jännite saa aikaan komponentissa."
         },
         {
           "text": "$2{,}5\\,\\text{C}$",

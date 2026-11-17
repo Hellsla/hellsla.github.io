@@ -30,7 +30,7 @@
         {
           "text": "Noin $4{,}6\\,\\text{A}$",
           "correct": true,
-          "feedback": "Oikein. Kaavasta $P = UI$ $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4{,}6\\,\\text{A} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, miksi akusta otettu suuri virta voi himmentää akkuun kytkettyjä lamppuja."
+          "feedback": "Oikein. Kaavasta $P = UI$ saadaan $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4{,}6\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, miksi akusta otettu suuri virta voi himmentää akkuun kytkettyjä lamppuja."
         },
         {
           "text": "Noin $660\\,\\text{A}$",

@@ -30,7 +30,7 @@
         {
           "text": "About $4.6\\,\\text{A}$",
           "correct": true,
-          "feedback": "Correct. From $P = UI$ $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4.6\\,\\text{A} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*). Today we find out why a large current drawn from the battery can dim lamps connected to it."
+          "feedback": "Correct. From $P = UI$ we get $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4.6\\,\\text{A} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we find out why a large current drawn from the battery can dim lamps connected to it."
         },
         {
           "text": "About $660\\,\\text{A}$",

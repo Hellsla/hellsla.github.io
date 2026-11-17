@@ -30,7 +30,7 @@
         {
           "text": "$4.0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. Energy is power times time: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} \\\\ &= 4.0\\,\\text{J} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*). Today we find out where the energy for a flash is stored."
+          "feedback": "Correct. Energy is power times time: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} \\\\ &= 4.0\\,\\text{J} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we find out where the energy for a flash is stored."
         },
         {
           "text": "$4.0\\,\\text{kJ}$",

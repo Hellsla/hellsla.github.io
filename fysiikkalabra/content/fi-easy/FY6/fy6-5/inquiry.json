@@ -30,7 +30,7 @@
         {
           "text": "$2{,}0\\,\\text{mA}$",
           "correct": true,
-          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 4{,}0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0{,}0020\\,\\text{A} \\\\ &= 2{,}0\\,\\text{mA} \\end{aligned}$$(luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mikä ratkaisee, kulkeeko kappaleen läpi virtaa, kun se koskettaa virtapiiriä."
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 4{,}0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0{,}0020\\,\\text{A} \\\\ &= 2{,}0\\,\\text{mA} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mikä ratkaisee, kulkeeko kappaleen läpi virtaa, kun se koskettaa virtapiiriä."
         },
         {
           "text": "$2{,}0\\,\\text{A}$",

@@ -30,7 +30,7 @@
         {
           "text": "$10\\,\\text{W}$",
           "correct": true,
-          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 5.0\\,\\text{V} \\cdot 2.0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*). Today we look at what changes between the charger and the battery while charging."
+          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 5.0\\,\\text{V} \\cdot 2.0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we look at what changes between the charger and the battery while charging."
         },
         {
           "text": "$2.5\\,\\text{W}$",

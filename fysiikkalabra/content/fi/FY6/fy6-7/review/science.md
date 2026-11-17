@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 177a7d99989cf3ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 7139db41569d0974
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson-answers.py: the comment above kertaus still reads "lamp on 230 V takes 0,26 A"; now a television at 0,43 A.
 
 ## Checked
-- Laitteen virta verkossa: P = UI stated as a model for in-phase current and voltage (resistive loads) or power factor ≈ 1, with active power (pätöteho) depending on the phase difference in general. Correct condition (B fixed).
-- Unchanged example 2000 W : 230 V = 8,70 A recomputed.
+batch delta review: kertaus P = UI = 98,9 W ≈ 99 W; 230 V : 0,43 A = 535 Ω ≈ 530 Ω (two figures, correct) named as resistance in the feedback; 0,43 W distractor; P = UI for a TV is a fair C simplification at this level; one correct option.

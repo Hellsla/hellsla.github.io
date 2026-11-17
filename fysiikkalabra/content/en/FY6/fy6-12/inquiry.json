@@ -30,7 +30,7 @@
         {
           "text": "$1.0 \\cdot 10^{-15}\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. The work of a constant force along the direction of motion is $$\\begin{aligned} W &= Fs \\\\ &= 2.0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0.50\\,\\text{m} \\\\ &= 1.0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$(chapter *Work and energy*). Today we ask how a potential difference gives an electron kinetic energy."
+          "feedback": "Correct. The work of a constant force along the direction of motion is $$\\begin{aligned} W &= Fs \\\\ &= 2.0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0.50\\,\\text{m} \\\\ &= 1.0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$ (chapter *Work and energy*). Today we ask how a potential difference gives an electron kinetic energy."
         },
         {
           "text": "$4.0 \\cdot 10^{-15}\\,\\text{J}$",

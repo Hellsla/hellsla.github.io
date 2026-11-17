@@ -29,7 +29,7 @@
         {
           "text": "Noin $99\\,\\text{W}$, koska teho on jännite kertaa virta.",
           "correct": true,
-          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, kuinka paljon energiaa tällainen laite käyttää ja mitä se maksaa."
+          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, kuinka paljon energiaa tällainen laite käyttää ja mitä se maksaa."
         },
         {
           "text": "Noin $530\\,\\text{W}$, koska teho on jännite jaettuna virralla.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "Noin $0{,}43\\,\\text{W}$, koska laitteen teho on sama kuin sen virta.",
-          "feedback": "Virta ja teho ovat eri suureita, eikä niillä ole samaa lukuarvoa. Sama virta tuottaa sitä suuremman tehon, mitä suurempi jännite on: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "feedback": "Virta ja teho ovat eri suureita, eikä niillä ole samaa lukuarvoa. Sama virta tuottaa sitä suuremman tehon, mitä suurempi jännite on: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0{,}43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         }
       ]
     },

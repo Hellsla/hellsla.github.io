@@ -29,7 +29,7 @@
         {
           "text": "About $99\\,\\text{W}$, because power is voltage times current.",
           "correct": true,
-          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a device uses and what it costs."
+          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we calculate how much energy such a device uses and what it costs."
         },
         {
           "text": "About $530\\,\\text{W}$, because power is voltage divided by current.",
@@ -37,7 +37,7 @@
         },
         {
           "text": "About $0.43\\,\\text{W}$, because the power of a device is the same as its current.",
-          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*)."
+          "feedback": "Current and power are different quantities and do not have the same numerical value. The same current gives a greater power the greater the voltage is: $$\\begin{aligned} P &= UI \\\\ &= 230\\,\\text{V} \\cdot 0.43\\,\\text{A} \\\\ &\\approx 99\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*)."
         }
       ]
     },

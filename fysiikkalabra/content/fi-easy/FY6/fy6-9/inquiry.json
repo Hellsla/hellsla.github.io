@@ -30,7 +30,7 @@
         {
           "text": "$10\\,\\text{W}$",
           "correct": true,
-          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään katsotaan, mikä laturin ja akun välillä muuttuu latauksen aikana."
+          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään katsotaan, mikä laturin ja akun välillä muuttuu latauksen aikana."
         },
         {
           "text": "$2{,}5\\,\\text{W}$",

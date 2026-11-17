@@ -30,7 +30,7 @@
         {
           "text": "$2.0\\,\\text{mA}$",
           "correct": true,
-          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 4.0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0.0020\\,\\text{A} \\\\ &= 2.0\\,\\text{mA} \\end{aligned}$$(chapter *Resistance and Ohm's law*). Today we ask what decides whether any current passes through a body touching a circuit."
+          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 4.0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0.0020\\,\\text{A} \\\\ &= 2.0\\,\\text{mA} \\end{aligned}$$ (chapter *Resistance and Ohm's law*). Today we ask what decides whether any current passes through a body touching a circuit."
         },
         {
           "text": "$2.0\\,\\text{A}$",
