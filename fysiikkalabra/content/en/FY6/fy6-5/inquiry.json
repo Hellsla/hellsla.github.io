@@ -23,22 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: parallel connection",
+      "title": "Review: Ohm's law",
       "optional": true,
-      "prompt": "Two different bulbs are connected in parallel to the same battery. Which of the following is always true?",
+      "prompt": "A small bird sits on a bare wire. Suppose the voltage across the bird's body were $4.0\\,\\text{V}$ and the resistance of its body is $2.0\\,\\text{k}\\Omega$. How large a current would flow through the bird?",
       "choices": [
         {
-          "text": "The voltage across both bulbs is the same.",
+          "text": "$2.0\\,\\text{mA}$",
           "correct": true,
-          "feedback": "Correct. In a parallel connection each branch is connected to the same two points, so the voltage across every branch is the same (chapter *Resistors in series and in parallel*). Today we see why this is so and how the current divides among the branches."
+          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 4.0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0.0020\\,\\text{A} \\\\ &= 2.0\\,\\text{mA} \\end{aligned}$$(chapter *Resistance and Ohm's law*). Today we ask what decides whether any current passes through a body touching a circuit."
         },
         {
-          "text": "The same current flows through both bulbs.",
-          "feedback": "The same current passes through components connected in series. In a parallel connection the current divides among the branches, and the currents of different bulbs are different. What they share is the voltage (chapter *Resistors in series and in parallel*)."
+          "text": "$2.0\\,\\text{A}$",
+          "feedback": "You divided $4.0\\,\\text{V}$ by $2.0$ and forgot that the prefix k means a thousand. $2.0\\,\\text{k}\\Omega = 2000\\,\\Omega$, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega = 2.0\\,\\text{mA}$."
         },
         {
-          "text": "The voltage of the battery is divided equally between the bulbs.",
-          "feedback": "Voltage is shared among components in a series connection. Bulbs connected in parallel are each directly between the terminals of the battery, so the voltage across each is the whole voltage of the battery (chapter *Resistors in series and in parallel*)."
+          "text": "$8.0\\,\\text{kA}$",
+          "feedback": "You multiplied the voltage by the resistance. Ohm's law is $U = RI$, so the current is the voltage divided by the resistance: $4.0\\,\\text{V} : 2000\\,\\Omega = 2.0\\,\\text{mA}$."
+        },
+        {
+          "text": "$500\\,\\text{A}$",
+          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 4.0\\,\\text{V} : 2000\\,\\Omega = 2.0\\,\\text{mA}$."
         }
       ]
     },

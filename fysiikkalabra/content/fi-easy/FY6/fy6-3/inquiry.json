@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: mittarien kytkentä",
-      "prompt": "Haluat mitata yhtä aikaa lampun jännitteen ja lampun läpi kulkevan virran. Miten mittarit kytketään?",
+      "title": "Kertaa: sähkövirta ja varaus",
+      "prompt": "Paahtimen lämmityslangassa kulkee virta $4{,}0\\,\\text{A}$. Kuinka suuri varaus kulkee langan poikkileikkauksen läpi $10\\,\\text{s}$:ssa?",
       "choices": [
         {
-          "text": "Virtamittari sarjaan lampun kanssa ja jännitemittari rinnan lampun kanssa.",
+          "text": "$40\\,\\text{C}$",
           "correct": true,
-          "feedback": "Oikein. Virtamittarin läpi pitää kulkea sama virta kuin lampun läpi. Siksi se on samassa virtapiirin haarassa lampun kanssa. Jännitemittari mittaa kahden pisteen välistä jännitettä. Siksi se kytketään lampun napoihin (luku *Mittaukset virtapiirissä*)."
+          "feedback": "Oikein. Virta kertoo, kuinka paljon varausta kulkee sekunnissa. Siksi $$\\begin{aligned} Q &= It \\\\ &= 4{,}0\\,\\text{A} \\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$(luku *Virtapiiri, sähkövirta ja jännite*). Tänään selvitetään, mikä ratkaisee, kuinka suuren virran jännite saa aikaan komponentissa."
         },
         {
-          "text": "Molemmat mittarit sarjaan lampun kanssa, jotta virta kulkee kaikkien läpi.",
-          "feedback": "Jännitemittarin resistanssi on hyvin suuri. Sarjaan kytkettynä se melkein katkaisee virran, ja lamppu sammuu. Jännitemittari kytketään rinnan sen komponentin kanssa, jonka jännite mitataan (luku *Mittaukset virtapiirissä*)."
+          "text": "$2{,}5\\,\\text{C}$",
+          "feedback": "Jaoit ajan virralla. Varaus on virta kertaa aika: $Q = It = 4{,}0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$. Joka sekunti kulkee $4{,}0\\,\\text{C}$, joten pidempi aika tuo enemmän varausta."
         },
         {
-          "text": "Virtamittari rinnan lampun kanssa ja jännitemittari sarjaan lampun kanssa.",
-          "feedback": "Mittarit ovat vaihtaneet paikkaa. Virtamittarin resistanssi on hyvin pieni. Rinnan kytkettynä lähes kaikki virta kulkisi mittarin kautta lampun ohi. Virtamittari kuuluu sarjaan ja jännitemittari rinnan."
+          "text": "$0{,}40\\,\\text{C}$",
+          "feedback": "Jaoit virran ajalla. Virta on varaus jaettuna ajalla, $I = Q : t$. Siksi varaus on $Q = It = 4{,}0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         },
         {
-          "text": "Molemmat mittarit rinnan lampun kanssa, koska ne mittaavat lamppua.",
-          "feedback": "Rinnan kytketty virtamittari ohittaisi lampun, koska sen resistanssi on hyvin pieni. Virran mittaamiseksi virran pitää kulkea mittarin läpi. Siksi virtamittari kytketään sarjaan."
+          "text": "$14\\,\\text{C}$",
+          "feedback": "Virta ja aika ovat eri suureita. Niitä ei voi laskea yhteen. Varaus on niiden tulo: $Q = It = 4{,}0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         }
       ],
       "optional": true

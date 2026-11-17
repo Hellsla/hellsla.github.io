@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Review: Ohm's law",
       "optional": true,
-      "prompt": "The voltage of a resistor is $3.0\\,\\text{V}$, and a current of $15\\,\\text{mA}$ flows through it. What is the resistance of the resistor?",
+      "prompt": "The voltage across the series resistor of an LED is $3.0\\,\\text{V}$, and a current of $15\\,\\text{mA}$ flows through it. What is the resistance of the series resistor?",
       "choices": [
         {
           "text": "$200\\,\\Omega$",

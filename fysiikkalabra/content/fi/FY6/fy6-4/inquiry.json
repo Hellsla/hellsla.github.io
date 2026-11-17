@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: Ohmin laki",
-      "prompt": "Vastus, jonka resistanssi on $100\\,\\Omega$, kytketään $6{,}0\\,\\text{V}$:n paristoon. Kuinka suuri virta vastuksen läpi kulkee?",
+      "prompt": "Valosarjan yksi lamppu kytketään yksin $6{,}0\\,\\text{V}$:n paristoon. Lampun resistanssi on $100\\,\\Omega$, ja sen oletetaan pysyvän vakiona. Kuinka suuri virta lampun läpi kulkee?",
       "choices": [
         {
           "text": "$60\\,\\text{mA}$",

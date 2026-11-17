@@ -23,26 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: jännitelaki",
+      "title": "Kertaa: sähköteho",
       "optional": true,
-      "prompt": "Ideaalinen jännitelähde, jonka jännite on $9{,}0\\,\\text{V}$, ja kaksi vastusta on kytketty sarjaan. Ensimmäisen vastuksen jännite on $3{,}0\\,\\text{V}$. Kuinka suuri on toisen vastuksen jännite?",
+      "prompt": "Auton ajovalon teho on $55\\,\\text{W}$, ja se on kytketty $12\\,\\text{V}$:n akkuun. Kuinka suuri virta valon läpi kulkee?",
       "choices": [
         {
-          "text": "$6{,}0\\,\\text{V}$",
+          "text": "Noin $4{,}6\\,\\text{A}$",
           "correct": true,
-          "feedback": "Oikein. Kun silmukka kierretään, potentiaali nousee lähteessä yhtä paljon kuin se laskee vastuksissa: $9{,}0\\,\\text{V} = 3{,}0\\,\\text{V} + 6{,}0\\,\\text{V}$ (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Tänään samaan silmukkaan tulee yksi vastus lisää: pariston oma sisäinen resistanssi."
+          "feedback": "Oikein. Kaavasta $P = UI$ $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4{,}6\\,\\text{A} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, miksi akusta otettu suuri virta voi himmentää akkuun kytkettyjä lamppuja."
         },
         {
-          "text": "$9{,}0\\,\\text{V}$",
-          "feedback": "Lähteen koko jännite olisi toisen vastuksen yli vain, jos se olisi silmukan ainoa vastus. Jännitelain mukaan lähteen $9{,}0\\,\\text{V}$ jakautuu vastusten kesken. Toiselle jää $9{,}0\\,\\text{V} - 3{,}0\\,\\text{V} = 6{,}0\\,\\text{V}$."
+          "text": "Noin $660\\,\\text{A}$",
+          "feedback": "Kerroit tehon ja jännitteen. Teho on jännite kertaa virta, $P = UI$, joten virta on teho jaettuna jännitteellä: $55\\,\\text{W} : 12\\,\\text{V} \\approx 4{,}6\\,\\text{A}$."
         },
         {
-          "text": "$12\\,\\text{V}$",
-          "feedback": "Vastusten jännitteet eivät lisäänny lähteen jännitteeseen. Ne ovat yhteensä yhtä suuret kuin lähteen jännite. Toisen vastuksen jännite on siis $9{,}0\\,\\text{V} - 3{,}0\\,\\text{V} = 6{,}0\\,\\text{V}$."
+          "text": "Noin $0{,}22\\,\\text{A}$",
+          "feedback": "Jaoit jännitteen teholla. Kaavasta $P = UI$ virta on $I = P : U$, ei $U : P$: $55\\,\\text{W} : 12\\,\\text{V} \\approx 4{,}6\\,\\text{A}$."
         },
         {
-          "text": "$3{,}0\\,\\text{V}$",
-          "feedback": "Sarjaan kytketyissä vastuksissa on sama virta, ei sama jännite. Jännitelain mukaan vastusten jännitteet ovat yhteensä $9{,}0\\,\\text{V}$. Toisen vastuksen jännite on siis $6{,}0\\,\\text{V}$."
+          "text": "$43\\,\\text{A}$",
+          "feedback": "Teho ja jännite ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = P : U = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4{,}6\\,\\text{A}$."
         }
       ]
     },

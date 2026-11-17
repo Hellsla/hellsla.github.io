@@ -23,22 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: napajännite",
+      "title": "Kertaa: sähköteho",
       "optional": true,
-      "prompt": "Paristosta otetaan virtaa. Pariston lähdejännite on $E$ ja sisäinen resistanssi $R_\\text{s}$. Mikä pitää paikkansa pariston napajännitteestä $U$?",
+      "prompt": "Puhelimen laturin antama jännite on $5{,}0\\,\\text{V}$ ja virta $2{,}0\\,\\text{A}$. Kuinka suuri on laturin teho?",
       "choices": [
         {
-          "text": "$U$ on pienempi kuin $E$, koska osa lähdejännitteestä jää pariston sisäiseen resistanssiin.",
+          "text": "$10\\,\\text{W}$",
           "correct": true,
-          "feedback": "Oikein. Kun paristosta otetaan virtaa $I$, napajännite on $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*). Tänään virta kulkee akun läpi toiseen suuntaan. Katsotaan, mitä napajännitteelle silloin tapahtuu."
+          "feedback": "Oikein. $$\\begin{aligned} P &= UI \\\\ &= 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$(luku *Sähköteho ja vastuksen lämpeneminen*). Tänään katsotaan, mikä laturin ja akun välillä muuttuu latauksen aikana."
         },
         {
-          "text": "$U$ on yhtä suuri kuin $E$, koska lähdejännite on pariston oma ominaisuus.",
-          "feedback": "Napajännite on yhtä suuri kuin lähdejännite vain, kun virtaa ei kulje. Kun virtaa otetaan, sisäisen resistanssin jännite $R_\\text{s} I$ pienentää napajännitettä: $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*)."
+          "text": "$2{,}5\\,\\text{W}$",
+          "feedback": "Jaoit jännitteen virralla. Se antaa resistanssin, $5{,}0\\,\\text{V} : 2{,}0\\,\\text{A} = 2{,}5\\,\\Omega$, ei tehoa. Teho on jännite kertaa virta: $P = UI = 10\\,\\text{W}$."
         },
         {
-          "text": "$U$ on suurempi kuin $E$, koska virta kasvattaa pariston napojen välistä jännitettä.",
-          "feedback": "Purkautuessa käy päinvastoin. Virta kulkee sisäisen resistanssin läpi, ja napajännite on pienempi: $U = E - R_\\text{s} I$ (luku *Lähdejännite ja sisäinen resistanssi*)."
+          "text": "$7{,}0\\,\\text{W}$",
+          "feedback": "Jännite ja virta ovat eri suureita, joten niitä ei voi laskea yhteen. Teho on niiden tulo: $P = UI = 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 10\\,\\text{W}$."
+        },
+        {
+          "text": "$0{,}40\\,\\text{W}$",
+          "feedback": "Jaoit virran jännitteellä. Teho on jännite kertaa virta: $P = UI = 5{,}0\\,\\text{V} \\cdot 2{,}0\\,\\text{A} = 10\\,\\text{W}$."
         }
       ]
     },

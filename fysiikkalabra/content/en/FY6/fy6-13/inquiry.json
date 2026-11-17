@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the field between plates",
+      "title": "Review: power and energy",
       "optional": true,
-      "prompt": "The voltage between two parallel metal plates is $300\\,\\text{V}$, and the distance between the plates is $2.0\\,\\text{mm}$. How strong is the electric field between the plates?",
+      "prompt": "The power of a camera flash is $4.0\\,\\text{kW}$, and the flash lasts $1.0\\,\\text{ms}$. How much energy is released in the flash?",
       "choices": [
         {
-          "text": "$150\\,\\text{kV/m}$",
+          "text": "$4.0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct. The strength of a uniform field is $$\\begin{aligned} E &= \\tfrac{U}{d} \\\\ &= 300\\,\\text{V} : 0.0020\\,\\text{m} \\\\ &= 150\\,000\\,\\text{V/m} \\end{aligned}$$ (chapter *Uniform electric field*). Today a capacitor is made from plates like these."
+          "feedback": "Correct. Energy is power times time: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} \\\\ &= 4.0\\,\\text{J} \\end{aligned}$$(chapter *Electric power and the heating of a resistor*). Today we find out where the energy for a flash is stored."
         },
         {
-          "text": "$150\\,\\text{V/m}$",
-          "feedback": "You divided the voltage by the distance in millimetres. The unit of the field is $\\text{V/m}$, so the distance is converted to metres: $2.0\\,\\text{mm} = 0.0020\\,\\text{m}$, and $$\\begin{aligned} E &= 300\\,\\text{V} : 0.0020\\,\\text{m} \\\\ &= 150\\,\\text{kV/m} \\end{aligned}$$."
+          "text": "$4.0\\,\\text{kJ}$",
+          "feedback": "You forgot to convert the time to seconds. $1.0\\,\\text{ms} = 0.0010\\,\\text{s}$, so $E = Pt = 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} = 4.0\\,\\text{J}$."
         },
         {
-          "text": "$0.60\\,\\text{V/m}$",
-          "feedback": "You multiplied the voltage by the distance. The field is the voltage per unit of distance, $E = \\tfrac{U}{d}$: the closer the plates are, the stronger the field at the same voltage. The correct value is $150\\,\\text{kV/m}$."
+          "text": "$4.0\\,\\text{mJ}$",
+          "feedback": "The power is $4.0\\,\\text{kW} = 4000\\,\\text{W}$, not $4.0\\,\\text{W}$. Then $E = Pt = 4000\\,\\text{W} \\cdot 0.0010\\,\\text{s} = 4.0\\,\\text{J}$."
         }
       ]
     },

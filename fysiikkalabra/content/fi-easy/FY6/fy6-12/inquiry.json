@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: homogeeninen kenttä",
+      "title": "Kertaa: työ",
       "optional": true,
-      "prompt": "Kahden yhdensuuntaisen levyn välissä on homogeeninen sähkökenttä. Protoni on ensin lähellä positiivista levyä ja sitten levyjen puolivälissä. Mitä protoniin vaikuttavalle sähköiselle voimalle tapahtuu?",
+      "prompt": "Revontulielektroniin vaikuttaa sähköinen voima $2{,}0 \\cdot 10^{-15}\\,\\text{N}$ elektronin liikkeen suuntaan. Elektroni liikkuu voiman suuntaan matkan $0{,}50\\,\\text{m}$. Kuinka suuren työn voima tekee?",
       "choices": [
         {
-          "text": "Voima on yhtä suuri ja samansuuntainen kummassakin kohdassa.",
+          "text": "$1{,}0 \\cdot 10^{-15}\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein. Homogeenisessa kentässä kentänvoimakkuus on joka kohdassa sama, joten voima $F = qE$ on sama kaikkialla levyjen välissä (luku *Homogeeninen sähkökenttä*). Siksi kenttä tekee työtä samalla tavalla kuin paino maan pinnan lähellä."
+          "feedback": "Oikein. Vakiovoiman työ liikkeen suunnassa on $$\\begin{aligned} W &= Fs \\\\ &= 2{,}0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0{,}50\\,\\text{m} \\\\ &= 1{,}0 \\cdot 10^{-15}\\,\\text{J} \\end{aligned}$$(luku *Työ ja energia*). Tänään selvitetään, miten potentiaaliero antaa elektronille liike-energiaa."
         },
         {
-          "text": "Voima on suurempi lähellä positiivista levyä, koska protoni on lähempänä sitä hylkivää varausta.",
-          "feedback": "Levyjen välissä kenttä on homogeeninen. Levyjen kaikki varaukset yhdessä tuottavat saman kentänvoimakkuuden joka kohtaan. Voima $F = qE$ on siis sama lähellä levyä ja keskellä (luku *Homogeeninen sähkökenttä*)."
+          "text": "$4{,}0 \\cdot 10^{-15}\\,\\text{J}$",
+          "feedback": "Jaoit voiman matkalla. Työ on voima kertaa matka, $W = Fs = 2{,}0 \\cdot 10^{-15}\\,\\text{N} \\cdot 0{,}50\\,\\text{m} = 1{,}0 \\cdot 10^{-15}\\,\\text{J}$: lyhyempi matka tarkoittaa pienempää työtä."
         },
         {
-          "text": "Voima on puolivälissä nolla, koska levyjen vaikutukset kumoavat siellä toisensa.",
-          "feedback": "Levyt eivät kumoa toistensa vaikutusta, eli ne eivät poista sitä. Positiivinen levy hylkii protonia ja negatiivinen vetää sitä, joten molemmat vaikutukset osoittavat samaan suuntaan. Kenttä ja voima ovat samat kaikkialla levyjen välissä (luku *Homogeeninen sähkökenttä*)."
+          "text": "$2{,}0 \\cdot 10^{-15}\\,\\text{J}$",
+          "feedback": "Työ riippuu voiman lisäksi matkasta. $W = Fs$, ja elektroni liikkuu vain $0{,}50\\,\\text{m}$, joten $W = 1{,}0 \\cdot 10^{-15}\\,\\text{J}$."
         }
       ]
     },

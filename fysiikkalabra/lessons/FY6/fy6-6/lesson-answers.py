@@ -81,6 +81,9 @@ a["t1-R100"] = 230 ** 2 / 100                                 # 529 ohm
 # --- exit ticket ---
 a["exit-1"] = 1150 / 230                                      # 5,0 A
 a["exit-2"] = 2 ** 2                                          # four times the power
-# --- retrieval: Ohm 6,0 V over 30 ohm ---
-a["kertaus"] = 6.0 / 30                                       # 0,20 A
+# --- retrieval: toaster wire, Ohm 230 V over 46 ohm ---
+a["kertaus"] = 230 / 46                                       # 5,0 A
+a["kertaus-inv"] = 46 / 230                                   # 0,20 A
+a["kertaus-mult"] = 230 * 46                                  # 10 580 = 11 kA
+a["kertaus-sub"] = 230 - 46                                   # 184
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

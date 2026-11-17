@@ -26,20 +26,24 @@
       "type": "choice",
       "title": "Recap: Ohm's law",
       "optional": true,
-      "prompt": "A resistor has a resistance of $30\\,\\Omega$ and a voltage of $6.0\\,\\text{V}$ across it. How large is the current through the resistor?",
+      "prompt": "The resistance of the heating wire of a toaster is $46\\,\\Omega$, and the voltage across it is $230\\,\\text{V}$. How large is the current through the wire?",
       "choices": [
         {
-          "text": "$0.20\\,\\text{A}$",
-          "correct": true,
-          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 6.0\\,\\text{V} : 30\\,\\Omega \\\\ &= 0.20\\,\\text{A} \\end{aligned}$$ (chapter *Resistance and Ohm's law*). Today Ohm's law is combined with power."
-        },
-        {
-          "text": "$180\\,\\text{A}$",
-          "feedback": "You multiplied the voltage by the resistance. Ohm's law is $U = RI$, so the current is the voltage divided by the resistance: $6.0\\,\\text{V} : 30\\,\\Omega = 0.20\\,\\text{A}$ (chapter *Resistance and Ohm's law*)."
-        },
-        {
           "text": "$5.0\\,\\text{A}$",
-          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 6.0\\,\\text{V} : 30\\,\\Omega = 0.20\\,\\text{A}$ (chapter *Resistance and Ohm's law*)."
+          "correct": true,
+          "feedback": "Correct. By Ohm's law $$\\begin{aligned} I &= U : R \\\\ &= 230\\,\\text{V} : 46\\,\\Omega \\\\ &= 5.0\\,\\text{A} \\end{aligned}$$(chapter *Resistance and Ohm's law*). Today Ohm's law is combined with power."
+        },
+        {
+          "text": "$0.20\\,\\text{A}$",
+          "feedback": "You divided the resistance by the voltage. The current is $I = U : R$: a larger resistance gives a smaller current, so $I = 230\\,\\text{V} : 46\\,\\Omega = 5.0\\,\\text{A}$."
+        },
+        {
+          "text": "$11\\,\\text{kA}$",
+          "feedback": "You multiplied the voltage by the resistance. Ohm's law is $U = RI$, so the current is the voltage divided by the resistance: $230\\,\\text{V} : 46\\,\\Omega = 5.0\\,\\text{A}$."
+        },
+        {
+          "text": "$184\\,\\text{A}$",
+          "feedback": "Voltage and resistance are different quantities, so they cannot be subtracted. The current is $I = U : R = 230\\,\\text{V} : 46\\,\\Omega = 5.0\\,\\text{A}$."
         }
       ]
     },
