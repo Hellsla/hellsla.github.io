@@ -13,21 +13,11 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 Tehdään seuraavaksi, ennen uusia kurssikohtaisia läpikäyntejä. Mittaus 10.–17.11. (git-historia): 89 yhdistettyä
 PR:ää, 140 mainin yhdistystä haaroihin ja noin 110 `site/`-uudelleenrakennusta; `site/` on 246 Mt ja 1282 tiedostoa.
 Kulutuslokin (`review/usage.tsv`) otoksessa orkestroija on kallein rivi (yksi istunto: Opus, 296 vuoroa, 17,8 M
-tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osat 0a–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
+tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osa 0a on tehty (`scripts/round.py`, PR #670). Osat 0b–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
 `.claude/`, `CLAUDE.md`, `.github/workflows/`): ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja
 yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR:nsä ja raportoi PR:ssä, mitä se säästi
 (vuorot, tokenit, yhdistykset tai katselmoinnit ennen ja jälkeen). Avoimet jaetut PR:t #665 (5g) ja #666 (8m)
 yhdistetään ensin.
-
-### 0a. Katselmointikierroksen ajo yhdellä komennolla
-`/lesson`, `/exercises` ja `/quality-audit` ajavat nyt ketjun `check_lesson.py` → `screenshot.py --if-stale` →
-`reviews.py scope` → `reviews.py carry` → `review_packet.py` komento kerrallaan, ja jokainen komento on orkestroijan
-vuoro koko kontekstilla. Yksi skripti (esim. `python scripts/round.py <id>[,<id>…] [--exercises] [--lang]`) ajaa
-ketjun ja tulostaa lyhyen yhteenvedon: tarkistusten tulos (vain epäonnistuneet rivit), kunkin roolin scope, kirjatut
-carryt ja pakettien polut. Erälle (`--batch`) sama. Komentotiedostot (`.claude/commands/`) lyhennetään käyttämään sitä.
-Samalla selvitetään, miksi orkestrointi on ajettu Opuksella, vaikka `lesson.md` määrää Sonnetin (komennon `model:` ei
-ilmeisesti vaikuta pilvi-istunnon malliin), ja kirjataan työntekijäistunnon malli koordinaattorin käynnistysohjeeseen.
-Ei muuta katselmointisääntöjä. Testi: skriptin yhteenveto vastaa erikseen ajettujen komentojen tuloksia.
 
 ### 0b. Ohjetiedostot lyhyiksi
 `fysiikkalabra/CLAUDE.md` latautuu jokaiseen istuntoon ja agenttiin, ja suuri osa siitä on päivättyä päätöshistoriaa
