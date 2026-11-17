@@ -1,0 +1,112 @@
+FY8 – UUDELLEENPIIRRON RAPORTTI
+
+Piirretty: 55 kuvaa (16 kuvitusta ja 39 kaaviota).
+Ohitettu 1-kuvitukset- ja 2-kaaviot-kansioista: 26 kuvaa.
+Pysyvästi epäonnistunut: 0 kuvaa.
+
+MENETELMÄ
+Kaikki uudelleenpiirrot tehtiin sisäisellä kuvageneraattorilla. Alkuperäinen kuva oli ensimmäinen syöte ja käyttäjän hyväksymä tyylinayte.png toinen syöte. Tyylinäyte itse on ensimmäisen kuvituksen hyväksytty uudelleenpiirros. API-avainta tai varapiirtoskriptiä ei käytetty.
+Käsittelyjärjestys: FY8; LUETTELO.tsv:n rivijärjestys, ensin 1-kuvitukset ja sitten 2-kaaviot.
+Aiemmalla kierroksella tallennetut kuvat säilytettiin ja työtä jatkettiin puuttuvista kuvista.
+Lopulliset PNG:t vietiin alkuperäisiin pikselimittoihin ImageMagickilla, jotta kuvasuhde on täsmälleen alkuperäinen. Tämä oli pelkkä koon vienti, ei kuvien uudelleenpiirto.
+3-kuvaajat-alkuiset kansiot ja niitä koskevat TSV-rivit jätettiin käyttäjän ohjeen mukaisesti käsittelemättä. Niiden lähdetiedostoja ei ollut toimitetussa ZIP:ssä.
+
+TARKISTUKSET
+Kaikki 55 odotettua PNG-tiedostoa ovat mukana ja avautuvat.
+Lopullisten PNG-tiedostojen leveys ja korkeus vastaavat täsmälleen alkuperäisiä.
+Puoliintumisen ydinruudukoiden oranssien pisteiden määrät tarkistettiin kuvista: 100, 52 ja 28 sekä alkuperäisessä että uudessa kuvassa.
+Tekstintunnistustarkistuksen osumat arvioitiin kuvien kanssa: osumat olivat ympyröitä, pisteitä, käyriä tai muita kuvioita. Varsinaista tekstiä ei havaittu.
+Kuvia tarkastettiin visuaalisesti. Kuvageneraattorin kaikkien viivojen värejä ja kaikkia mittasuhteita ei ole todettu pikselintarkasti samoiksi kuin alkuperäisessä; tätä tiukkaa vaatimusta ei voida merkitä varmennetuksi.
+
+UUDELLEENYRITYKSET JA KORJAUKSET
+FY8_luku-09_fy8-9__hero.png: ensimmäinen generointi hylättiin palvelun turvatarkistuksessa; koulufysiikan lääketieteellinen konteksti täsmennettiin ja uudelleenyritys onnistui.
+FY8_luku-02_fy8-2__greenhouse.png: ensimmäisen version sininen tausta korjattiin valkoiseksi uudella generoinnilla.
+FY8_luku-05_fy8-5__nodes.png: ensimmäisen version tummat orbitaalirajat korjattiin sinisiksi uudella generoinnilla. Yksi korjausyritys keskeytyi, myöhempi onnistui.
+
+PIIRRETYT TIEDOSTOT
+1-kuvitukset/FY8_luku-01_fy8-1__hero.png -> FY8_luku-01_fy8-1__hero-uusi.png
+1-kuvitukset/FY8_luku-02_fy8-2__hero.png -> FY8_luku-02_fy8-2__hero-uusi.png
+1-kuvitukset/FY8_luku-03_fy8-3__hero.png -> FY8_luku-03_fy8-3__hero-uusi.png
+1-kuvitukset/FY8_luku-04_fy8-4__hero.png -> FY8_luku-04_fy8-4__hero-uusi.png
+1-kuvitukset/FY8_luku-05_fy8-5__hero.png -> FY8_luku-05_fy8-5__hero-uusi.png
+1-kuvitukset/FY8_luku-06_fy8-6__hero.png -> FY8_luku-06_fy8-6__hero-uusi.png
+1-kuvitukset/FY8_luku-07_fy8-7__hero.png -> FY8_luku-07_fy8-7__hero-uusi.png
+1-kuvitukset/FY8_luku-08_fy8-8__hero.png -> FY8_luku-08_fy8-8__hero-uusi.png
+1-kuvitukset/FY8_luku-09_fy8-9__hero.png -> FY8_luku-09_fy8-9__hero-uusi.png
+1-kuvitukset/FY8_luku-10_fy8-10__hero.png -> FY8_luku-10_fy8-10__hero-uusi.png
+1-kuvitukset/FY8_luku-11_fy8-11__hero.png -> FY8_luku-11_fy8-11__hero-uusi.png
+1-kuvitukset/FY8_luku-12_fy8-12__hero.png -> FY8_luku-12_fy8-12__hero-uusi.png
+1-kuvitukset/FY8_luku-13_fy8-13__hero.png -> FY8_luku-13_fy8-13__hero-uusi.png
+1-kuvitukset/FY8_luku-14_fy8-14__hero.png -> FY8_luku-14_fy8-14__hero-uusi.png
+1-kuvitukset/FY8_luku-15_fy8-15__hero.png -> FY8_luku-15_fy8-15__hero-uusi.png
+1-kuvitukset/FY8_luku-16_fy8-16__hero.png -> FY8_luku-16_fy8-16__hero-uusi.png
+2-kaaviot/FY8_luku-01_fy8-1__energia.png -> FY8_luku-01_fy8-1__energia-uusi.png
+2-kaaviot/FY8_luku-01_fy8-1__ilmio.png -> FY8_luku-01_fy8-1__ilmio-uusi.png
+2-kaaviot/FY8_luku-02_fy8-2__fluorescence.png -> FY8_luku-02_fy8-2__fluorescence-uusi.png
+2-kaaviot/FY8_luku-02_fy8-2__greenhouse.png -> FY8_luku-02_fy8-2__greenhouse-uusi.png
+2-kaaviot/FY8_luku-02_fy8-2__levels.png -> FY8_luku-02_fy8-2__levels-uusi.png
+2-kaaviot/FY8_luku-03_fy8-3__absorption.png -> FY8_luku-03_fy8-3__absorption-uusi.png
+2-kaaviot/FY8_luku-03_fy8-3__bohr.png -> FY8_luku-03_fy8-3__bohr-uusi.png
+2-kaaviot/FY8_luku-04_fy8-4__compton.png -> FY8_luku-04_fy8-4__compton-uusi.png
+2-kaaviot/FY8_luku-05_fy8-5__nodes.png -> FY8_luku-05_fy8-5__nodes-uusi.png
+2-kaaviot/FY8_luku-05_fy8-5__string.png -> FY8_luku-05_fy8-5__string-uusi.png
+2-kaaviot/FY8_luku-07_fy8-7__cavity.png -> FY8_luku-07_fy8-7__cavity-uusi.png
+2-kaaviot/FY8_luku-07_fy8-7__inversion.png -> FY8_luku-07_fy8-7__inversion-uusi.png
+2-kaaviot/FY8_luku-07_fy8-7__processes.png -> FY8_luku-07_fy8-7__processes-uusi.png
+2-kaaviot/FY8_luku-08_fy8-8__decays.png -> FY8_luku-08_fy8-8__decays-uusi.png
+2-kaaviot/FY8_luku-08_fy8-8__isotopes.png -> FY8_luku-08_fy8-8__isotopes-uusi.png
+2-kaaviot/FY8_luku-08_fy8-8__levels.png -> FY8_luku-08_fy8-8__levels-uusi.png
+2-kaaviot/FY8_luku-09_fy8-9__ydin.png -> FY8_luku-09_fy8-9__ydin-uusi.png
+2-kaaviot/FY8_luku-10_fy8-10__energia.png -> FY8_luku-10_fy8-10__energia-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__fissio.png -> FY8_luku-11_fy8-11__fissio-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__fuusio.png -> FY8_luku-11_fy8-11__fuusio-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__ketju.png -> FY8_luku-11_fy8-11__ketju-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__massat.png -> FY8_luku-11_fy8-11__massat-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__onkalo.png -> FY8_luku-11_fy8-11__onkalo-uusi.png
+2-kaaviot/FY8_luku-11_fy8-11__reaktori.png -> FY8_luku-11_fy8-11__reaktori-uusi.png
+2-kaaviot/FY8_luku-12_fy8-12__gm.png -> FY8_luku-12_fy8-12__gm-uusi.png
+2-kaaviot/FY8_luku-12_fy8-12__jaljet.png -> FY8_luku-12_fy8-12__jaljet-uusi.png
+2-kaaviot/FY8_luku-12_fy8-12__lapaisy.png -> FY8_luku-12_fy8-12__lapaisy-uusi.png
+2-kaaviot/FY8_luku-13_fy8-13__etaisyys.png -> FY8_luku-13_fy8-13__etaisyys-uusi.png
+2-kaaviot/FY8_luku-13_fy8-13__painotus.png -> FY8_luku-13_fy8-13__painotus-uusi.png
+2-kaaviot/FY8_luku-14_fy8-14__mittari.png -> FY8_luku-14_fy8-14__mittari-uusi.png
+2-kaaviot/FY8_luku-14_fy8-14__pet.png -> FY8_luku-14_fy8-14__pet-uusi.png
+2-kaaviot/FY8_luku-14_fy8-14__rontgen.png -> FY8_luku-14_fy8-14__rontgen-uusi.png
+2-kaaviot/FY8_luku-14_fy8-14__sadehoito.png -> FY8_luku-14_fy8-14__sadehoito-uusi.png
+2-kaaviot/FY8_luku-15_fy8-15__annihilaatio.png -> FY8_luku-15_fy8-15__annihilaatio-uusi.png
+2-kaaviot/FY8_luku-15_fy8-15__beeta.png -> FY8_luku-15_fy8-15__beeta-uusi.png
+2-kaaviot/FY8_luku-15_fy8-15__hadronit.png -> FY8_luku-15_fy8-15__hadronit-uusi.png
+2-kaaviot/FY8_luku-15_fy8-15__skaalat.png -> FY8_luku-15_fy8-15__skaalat-uusi.png
+2-kaaviot/FY8_luku-15_fy8-15__valittaja.png -> FY8_luku-15_fy8-15__valittaja-uusi.png
+2-kaaviot/FY8_luku-16_fy8-16__laajeneminen.png -> FY8_luku-16_fy8-16__laajeneminen-uusi.png
+
+OHITETUT TIEDOSTOT JA SYY
+2-kaaviot/FY8_luku-02_fy8-2__lamp-spectrum.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetty spektri.
+2-kaaviot/FY8_luku-02_fy8-2__pick-emissio.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetty spektri.
+2-kaaviot/FY8_luku-02_fy8-2__pick-kaista.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetty spektri.
+2-kaaviot/FY8_luku-02_fy8-2__pick-kaksi.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetty spektri.
+2-kaaviot/FY8_luku-02_fy8-2__pick-kolme.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetty spektri.
+2-kaaviot/FY8_luku-02_fy8-2__spectra.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetyt spektrit.
+2-kaaviot/FY8_luku-03_fy8-3__levels.png — Kuvaaja: pystysuora energia-akseli.
+2-kaaviot/FY8_luku-03_fy8-3__levels-task.png — Kuvaaja: energia-akseli ja koordinaatiston ruudukko.
+2-kaaviot/FY8_luku-03_fy8-3__spectrum.png — Kuvaaja: aallonpituusakseli.
+2-kaaviot/FY8_luku-04_fy8-4__buildup.png — Kuvaaja: mittauspisteet ja piirretty intensiteettikäyrä.
+2-kaaviot/FY8_luku-04_fy8-4__patterns.png — Kuvaaja: koordinaattiakselit ja piirretyt jakaumakäyrät.
+2-kaaviot/FY8_luku-05_fy8-5__cloud.png — Kuvaaja: mittakaavaan piirretyt mittauspisteet.
+2-kaaviot/FY8_luku-05_fy8-5__levels.png — Kuvaaja: pystysuora energia-akseli.
+2-kaaviot/FY8_luku-06_fy8-6__vyot.png — Kuvaaja: pystysuora energia-akseli.
+2-kaaviot/FY8_luku-07_fy8-7__qdots.png — Taulukko: pääosin tekstiä ja lukuarvoja riveittäin.
+2-kaaviot/FY8_luku-07_fy8-7__tunnel.png — Kuvaaja: elektronin havaitsemistodennäköisyyden käyrä.
+2-kaaviot/FY8_luku-08_fy8-8__shifts.png — Kuvaaja: neutroniluvun ja järjestysluvun koordinaattiakselit.
+2-kaaviot/FY8_luku-10_fy8-10__massat.png — Kuvaaja: mittakaavaan piirretyt massapylväät.
+2-kaaviot/FY8_luku-10_fy8-10__reaktio.png — Kuvaaja: mittakaavaan piirretyt massapylväät.
+2-kaaviot/FY8_luku-12_fy8-12__energia.png — Kuvaaja: logaritminen energia-akseli.
+2-kaaviot/FY8_luku-13_fy8-13__lahteet.png — Kuvaaja: mittakaavaan piirretyt vaakapylväät.
+2-kaaviot/FY8_luku-15_fy8-15__taulukko.png — Taulukko: Standardimallin hiukkasten tekstit ja lukuarvot laatikoissa.
+2-kaaviot/FY8_luku-16_fy8-16__aikajana.png — Taulukko / aikajana: pääosin tekstiä ja vuosilukuja riveittäin.
+2-kaaviot/FY8_luku-16_fy8-16__koostumus.png — Kuvaaja: mittakaavaan piirretty osuuspalkki.
+2-kaaviot/FY8_luku-16_fy8-16__spektri.png — Kuvaaja: aallonpituusakseli ja mittakaavassa esitetyt spektrit.
+2-kaaviot/FY8_fy8-sovella__fy8-s1-levels.png — Kuvaaja: pystysuora energia-akseli.
+
+EPÄONNISTUNEET TIEDOSTOT
+Ei pysyvästi epäonnistuneita tiedostoja.
