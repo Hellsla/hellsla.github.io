@@ -147,7 +147,7 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
 FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
-Varattu: claude/exercises-fy8-4 (fy8-4)
+Varattu: claude/exercises-fy8-5 (fy8-5)
 Havainto (koordinaattori 2026-11-15, fy8-2): kahdessa erässä peräkkäin ulkoasu on hylännyt ratkaisujen kaavaketjut,
 jotka eivät katkea 360 px:llä (`check_layout.py` ei havainnut niitä). Seuraavien erien kehittäjän pitää jakaa pitkät
 sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta, yksikkö- ja vertailuketjut omille riveilleen)
