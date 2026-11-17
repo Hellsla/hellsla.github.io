@@ -115,6 +115,14 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
+## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
+Varattu: claude/reviews-translation-units
+Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
+(en `$\text{avg}$`) ja fi-easyn pelkkä yksikkökaava `$\text{mSv}$` (fi: sana "millisieverteinä") lasketaan eri kaavoiksi.
+Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final…), (b) pelkkä `\text{sana}`-kaava ei lisää kaavamäärää
+vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
+Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
 **PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
