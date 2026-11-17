@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 883da37d124339dd
+CONTENT-HASH: 6d921e617ea8865f
 SCOPE: delta added-exercise from 586285323faf3a8f base 5b3ca4f81c77
 
 ## Blocking
@@ -17,4 +17,4 @@ SCOPE: delta added-exercise from 586285323faf3a8f base 5b3ca4f81c77
 - L2-09 answer 141,4 = 800*2^-2,5; solution has all seven parts, graph read with a check point (24 mm, 200).
 - Situation first, question last; the figure description gives 800 at 0 and the range, not d1/2 or the answers.
 - Set mix: L2 now 9 and L3 7 exercises, kinds graph/data/reasoning/model fit the plan (d1/2 from a graph).
-- Method: delta, added exercises only; hash unchanged at start and end.
+- Round 3 delta: only L2-09 unit pulssia/min -> 1/min; language-neutral, consistent with the other count-rate exercises, answer and solution unchanged. Hash unchanged at start and end.
