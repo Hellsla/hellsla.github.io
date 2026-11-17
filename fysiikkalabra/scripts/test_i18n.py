@@ -71,6 +71,13 @@ en_md = (en_dir / "lesson.md").read_text()
 expect("figures.py --lang en writes the figures with the language's decimal sign", code == 0 and "{,}" not in "".join(re.findall(r"<svg\b.*?</svg>", en_md, re.S)) and (fi_dir / "lesson.md").read_text() == (SRC / "content/fi/FY3" / LESSON / "lesson.md").read_text(), out)
 code, out = run("check_i18n.py")
 expect("translated lesson, course titles and figure texts: complete", code == 0 and "en: 0 error(s)" in out, out)
+OTHER = next(f.name for f in sorted((T / "content/fi/FY3").iterdir()) if (f / "meta.json").is_file() and f.name != LESSON)
+code, out = run("check_i18n.py", "--lesson", LESSON)
+expect("check_i18n.py --lesson: the lesson's translation passes (check_lesson.py's step; teacher 2026-11-17)", code == 0 and f"{LESSON}: en 0 error(s)" in out, out)
+code, out = run("check_i18n.py", "--lesson", OTHER)
+expect("check_i18n.py --lesson: a lesson with no translation is not an error", code == 0 and "no translation yet" in out, out)
+expect("check_lesson.py runs check_i18n.py --lesson as its step i18n",
+       '("i18n", [PY, SCRIPTS / "check_i18n.py", "--lesson", lid])' in (T / "scripts/check_lesson.py").read_text())
 
 ex = json.loads((en_dir / "exercises/exercises.json").read_text()); ex["level1"][0]["answer"] += 1; (en_dir / "exercises/exercises.json").write_text(json.dumps(ex, ensure_ascii=False))
 code, out = run("check_i18n.py")
@@ -80,6 +87,10 @@ md = (en_dir / "lesson.md").read_text(); m = re.search(r"(?<!\$)\$([^$\n]+?)\$(?
 (en_dir / "lesson.md").write_text(md.replace(m.group(0), m.group(0)[:-1] + "+1$", 1))
 code, out = run("check_i18n.py")
 expect("a translation that changes a formula is an error", code == 1 and "lesson.md: formulas differ" in out, out)
+code, out = run("check_i18n.py", "--lesson", LESSON)
+expect("check_i18n.py --lesson fails on the lesson's own changed formula", code == 1 and f"en/FY3/{LESSON}/lesson.md: formulas differ" in out, out)
+code, out = run("check_i18n.py", "--lesson", OTHER)
+expect("check_i18n.py --lesson checks only that lesson's pages", code == 0 and "ERROR" not in out, out)
 (en_dir / "lesson.md").write_text(md)
 import check_i18n
 expect("a chapter reference's title is a name, not a formula of the text",

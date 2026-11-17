@@ -22,6 +22,11 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 - `main` was red after #528 (`test_writepad.py`, en/fy1-1 at 360 px), green again after #534.
 
 ## Order
+0. Making the update work itself cheaper (queue 0, teacher 2026-11-17: next, before new course-by-course passes): one
+   command for a review round (0a), short instruction files (0b), one general presentation-only review category (0c),
+   CI's browser in cloud sessions (0d), visual delta in Finnish only for language-neutral changes (0e), one pass per
+   course (0f, a working rule, in force at once), `site/` out of content pull requests (0g: a plan first, stops for
+   the teacher's approval). 0a–0e and 0g change shared files: alone, one at a time, merged before content.
 1. ~~`main` green (en/fy1-1 editor at 360 px)~~: done (#534, 2026-11-13; the failure did not recur, the test now names an overflowing element if it does).
 2. ~~Exercise reviews FY1, fy4-8, FY5, FY6, FY7~~: done (#537, #555, #540, #556, #557; 2026-11-14).
 3. Formulas in the data-book (taulukkokirja) form: FY5–FY8, FY10, FY14 (FY5 started 2026-11-14).

@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e73b4e5e83dd72e3
-Mode: full (round 1)
+CONTENT-HASH: 7ff4568c0902edd0
+SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
 
 ## Blocking
-- none
 
 ## Polish
-- exercises/exercises.json:319 — L3-02 asks for green photons per second but its unit is "photons" (L1-07 uses "1/s" for the same quantity) — set the unit to "1/s".
-- exercises/exercises.json:337 — L3-04 c) "the thermal power turning into heat in the medium per second" doubles power/heat/per second, and solutions.md:258 says "the rest of the energy is heat" while the task says "turns into internal energy" — e.g. "the rate at which the internal energy of the medium grows (the heating power)" and the same words in Given.
-- exercises/solutions.md:269 — L3-04 c) laser photon energy shown as 1.8566e-19 J; from the task's constants it is 1.8565e-19 J (the difference 1.788e-20 J and 1.44 W are right).
-- exercises/solutions.md:121 — L2-03 cites "the table of quantum dots: 3.0 nm emits 530 nm", while the table of L2-05 gives 529 nm for 3.0 nm — name which table is meant (the lesson's) or use one value.
+- exercises/exercises.json (fy8-7-L2-08 text) — "the number of photons per second emitted by one laser as a function of wavelength" reads as if one laser's wavelength varied; the figure is a grid with one point — e.g. "The figure shows a laser as a point: its wavelength on the horizontal axis and the number of photons it emits per second on the vertical axis." The same applies to L3-06 for two lasers.
 
 ## Checked
-- All 17 numeric answers recomputed from the task texts with own formulas in one script: each agrees with exercises.json and answers.py within 0.9 % (tolerances 2–6 %); a student rounding to the data's figures stays inside every tolerance.
-- L2-05 and L2-06 tables: five gaps 2.551/2.344/2.164/2.063/2.010 eV, steps 0.207 and 0.053 eV, fluxes 2.039/1.571/1.636/1.973e16 1/s, order A, D, C, B, ratio 1.298.
-- L3-05: least-squares fit of the five points above threshold gives slope 0.398, intercept -9.86 mW, threshold 24.8 mW, 0.524 photons per pump photon; four-level explanation of the threshold (gain against losses) is correct.
-- L3-04: 9.826e19 and 8.080e19 1/s, 82.2 %, 5.0 W, quantum-defect part 1.44 W (29 %), 0.8222 x 0.912 = 0.750; "unavoidable" is justified by the photon energies.
-- Choice tasks L1-06, L1-08, L2-07: exactly one correct option, each distractor wrong and its feedback right; L1-09 truth values 1 F, 2 T, 3 F, 4 F, 5 T correct, 650 nm = 1.91 eV.
-- Solutions: symbolic form before substitution, conversions, rounding reason and a real reasonableness check in every numeric one; graph references (3.27e15, 2.04e15, 2.7e15 1/s per mW) recomputed.
-- The packet's exercise brief was empty, so notation was judged against the set itself and the course scope, not the lesson text.
+- L1-10: N/t = Pλ/(hc) with MAFY h = 6.62607015e-34 J s: 6.7455e15 1/s; answer 6.7e15 is 0.7 % off, inside ±2 %; with h = 6.626e-34 the same to 4 figures. Two figures from 2.0 mW justified; check 3.0e-19 J per photon and comparison with L1-07 (1.3e16 1/s) right.
+- L2-08: figure point at (520 nm, 3.927e15 1/s), generated from 1.5 mW; read 3.9e15 gives 1.490 mW, readings 3.85–3.95e15 give 1.47–1.51 mW, inside ±3 %. Photon 3.8201e-19 J = 2.38 eV (green); 1.0 mW would give 2.62e15 1/s; reasonableness check is a real one.
+- L3-06: points X (450 nm, 6.796e15) and Y (800 nm, 4.027e15), generated from 3.0 and 1.0 mW; exact ratio 3.000, read values give 3.022; reading ±0.1 on both axes gives 2.91–3.15, so ±4 % is tight but fair for two well-placed points. hc cancels; photon energies 4.41e-19 and 2.48e-19 J right.
+- Figure grids and descriptions give every value needed; neither prints a power or the answer.
+- answers.py lines for the three exercises compute the right physics (P = (N/t)hc/λ) and match exercises.json; units 1/s, mW, dimensionless correct.
+- Solutions: symbolic form before substitution, conversions, rounding reason and reasonableness in each; within FY8 scope (E = hf, photon flux).
+- Hash 7ff4568c0902edd0 at start and end.

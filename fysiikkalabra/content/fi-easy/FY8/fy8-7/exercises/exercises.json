@@ -148,6 +148,21 @@
           "feedback": "Tosi: akselin suuntainen fotoni kulkee peilien välissä aineen läpi monta kertaa ja monistuu matkalla. Sivulle lähtevät fotonit poistuvat aineesta ennen kuin ehtivät monistua."
         }
       ]
+    },
+    {
+      "id": "fy8-7-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "Punainen laserosoitin lähettää valoa, jonka aallonpituus on $670\\,\\text{nm}$. Osoittimen teho on $2{,}0\\,\\text{mW}$. Hae Planckin vakio MAFY-taulukosta (mafytaulukot.fi). Valon nopeus on $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Kuinka monta fotonia osoitin lähettää sekunnissa?",
+      "answer": 6700000000000000.0,
+      "unit": "1/s",
+      "tolerance": 0.02,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Luonnonvakiot*."
+      ]
     }
   ],
   "level2": [
@@ -300,6 +315,19 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-7-L2-08",
+      "level": 2,
+      "text": "Kuvassa näkyy, kuinka monta fotonia laser lähettää sekunnissa, kun aallonpituus muuttuu. Piste kuvaa laseria, jonka tehoa ei tiedetä. Lue kuvasta pisteen aallonpituus ja fotonien määrä sekunnissa. Laske sitten laserin teho milliwatteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "figure": "fy8-7/rate-task",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 1.5,
+      "unit": "mW",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -389,6 +417,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-7-L3-06",
+      "level": 3,
+      "text": "Kuvassa näkyy kahden laserin, X:n ja Y:n, fotonien määrä sekunnissa aallonpituuden mukaan. Lue kuvasta kummankin pisteen aallonpituus ja fotonien määrä sekunnissa. Laske, kuinka monta kertaa suurempi laserin X teho on kuin laserin Y teho ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "figure": "fy8-7/rate-task2",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 3.0,
+      "unit": "",
+      "tolerance": 0.04
     }
   ]
 }
