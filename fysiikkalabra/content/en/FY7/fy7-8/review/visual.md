@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d4ea3449c3adfd79
+CONTENT-HASH: be7561f2690be5e0
 
 ## Blocking
 
 ## Polish
-- [Minor] The changed retrieval task is collapsed in the capture; its opened text was judged from the diff (units and formulas in LaTeX, no plain quantities).
 
 ## Checked
-- batch delta review: opened fy7-8-stage-herata-390.png (Pohdinta with the changed optional task title) and read the diff of the task prompt, choices and feedback; typography, wording and layout fine.
+- batch delta review: opened fy7-8-stage-herata-390.png (Pohdinta with the new optional "Revise: effective voltage" task, collapsed in the capture); layout intact; new text read from the diff (units in LaTeX, \sqrt{2}, colon division, \approx); no figures changed; the opened card itself was not captured.

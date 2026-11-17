@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0820f8734e66e4da
+CONTENT-HASH: 69ec76d620d5da18
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-7-stage-herata-390 (Pohdinta; changed retrieval title "Kertaa: taajuus ja jaksonaika" visible, box closed, layout intact). Task body judged from the diff: f = 1 : T chain, units in LaTeX, decimal commas.

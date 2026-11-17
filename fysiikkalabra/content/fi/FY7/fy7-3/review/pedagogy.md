@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ae5fdc4921d613b8
+CONTENT-HASH: 4696d3cd76b16bc6
 ## Blocking
 
 ## Polish
-- Prompt states 'osoittaa pohjoiseen' and then asks where it turns: the question is nearly answered by its own premise. Drop 'pohjoiseen' from the prompt.
-
+- None.
 ## Checked
-batch delta review: Compass without current is the baseline the chapter's phenomenon needs; no Ennusta (coil length, coil end) is revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2): retrieval (compass beside a wire, Maan kenttä) belongs to the compass hook, retrieves the prior knowledge, reveals no Ennusta answer.

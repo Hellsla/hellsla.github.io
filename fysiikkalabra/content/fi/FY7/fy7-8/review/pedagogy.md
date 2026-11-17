@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: fe9489d3adf48114
+CONTENT-HASH: b24d75111073ed71
 ## Blocking
 
 ## Polish
-- The correct answer (flux changes) is also the key to Ennusta 1 (battery, 0 V) and the distractor 'paristoon' touches it; acceptable as it is the prior-chapter rule, but the battery distractor could be swapped.
-
+- Prompt sentence 'Myös voimalaitoksen generaattori tuottaa vaihtojännitettä' is a thin link to the grid hook; could say the grid carries alternating voltage.
 ## Checked
-batch delta review: Power-plant generator wording suits the transmission chapter; retrieval unchanged otherwise. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2): effective value retrieval fits the grid phenomenon and is needed for transformer calculations; Ennuste 1 and 2 not disclosed; feedback repairs the 325 V and U0*sqrt2 errors.

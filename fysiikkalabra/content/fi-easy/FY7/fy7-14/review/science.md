@@ -1,10 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 432ce3c17b9a951d
+VERDICT: PASS
+CONTENT-HASH: ec48e7cd49143106
 
 ## Blocking
-- A (model): the retrieval task is set on a soap film ("Saippuakalvolle osuu punaista valoa … saapuu samaan kohtaan silmässä") and states "Vaihe muuttuu vain matkan takia". For two waves reflected from a soap film in air this is false: the lesson's own model says wave 1 is inverted at the top surface (1,00 → 1,33). The correct answer and its feedback ("Tänään sama ajatus sovelletaan kalvon kahdesta pinnasta heijastuneisiin aaltoihin") then teach that path difference alone decides. That leads the student toward "kirkkaalta" in Ennuste 1 (a very thin film looks black because of the inversion). Fix: keep the soap-film context but make the two waves not reflections from the film's two surfaces (for example two parts of the same red beam meeting on the screen), or drop the soap film from the prompt; then say in the feedback that today reflection adds an inversion.
 
 ## Polish
+- The correct option's feedback could add that on a film one reflection also inverts the wave, but only after Ennuste 1; as is, "sama ajatus" leaves no wrong picture (C).
 
 ## Checked
-batch delta review: 975/650 = 1,5, so destructive interference is the one correct option under the stated assumption, and the distractors' feedback is right; the context conflicts with the lesson model (see Blocking).
+batch delta review: round-1 finding fixed: the two waves now travel different routes in air, so path difference alone decides (975/650 = 1,5, destructive) and no film reflection is implied; the soap-film sentence is only motivation; the feedback does not reveal Ennuste 1's inversion answer; one correct option; distractor feedback right.

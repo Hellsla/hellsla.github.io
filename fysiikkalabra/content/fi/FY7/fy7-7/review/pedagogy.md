@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 5a30bb80c9d64eab
+CONTENT-HASH: 4ffbf41ced309f84
 ## Blocking
 
 ## Polish
-- Third distractor (2,0 Hz) is an arithmetic slip rather than a misconception; text mixes 'jaksonaika', 'kiertoaika'. Pick one term.
-
+- None.
 ## Checked
-batch delta review: Wind-turbine rotor frequency ties to the generator and retrieves f = 1/T; no Ennusta revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2): f=1/T retrieval in the wind-turbine rotor belongs to the hook; new minutes-vs-seconds distractor is a real misconception; Ennuste 2 not disclosed.

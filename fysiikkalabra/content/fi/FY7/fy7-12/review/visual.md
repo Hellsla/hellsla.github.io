@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f4cbf47027780357
+CONTENT-HASH: 4a1385424308d9f5
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta, round 1: fy7-12-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.
+- batch delta review (round 2): opened fy7-12-stage-herata-390 (Pohdinta with Kertaa: taittuminen); the changed feedback number is LaTeX with a degree sign, layout intact.

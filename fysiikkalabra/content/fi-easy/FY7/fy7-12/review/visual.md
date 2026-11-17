@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5f363b5920802f41
+CONTENT-HASH: 14d0a1a2f2136aed
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-12-stage-herata-390 (Pohdinta; changed retrieval task in the closed box, layout intact). Task body judged from the diff: aligned refraction formula, angles with ^\circ, decimal commas, natural Finnish.

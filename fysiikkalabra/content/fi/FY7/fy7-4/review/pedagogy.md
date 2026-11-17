@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8153c4d8afd7e776
+CONTENT-HASH: 5de74d227b4171df
 ## Blocking
 
 ## Polish
-- The current 0,50 A is not used; either drop it or let it sit in the context only.
-
+- The retrieval lost its speaker-cable setting and is now a bare 1/r calculation; a link to the hook's wire in a magnet's field would tie it to the phenomenon again.
 ## Checked
-batch delta review: Speaker-cable wire fits the chapter; 1/r retrieval kept, numbers check (10 -> 5,0 uT); no Ennusta revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2): retrieval retrieves B~1/r needed for the wire-force model; no Ennusta answer disclosed; distractors are real misconceptions.

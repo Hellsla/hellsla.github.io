@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0c93728f3baf1a43
+CONTENT-HASH: da34ad33d42e2236
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta, round 1: fy7-13-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.
+- batch delta review (round 2): opened fy7-13-stage-herata-390 (Pohdinta with Kertaa: interferenssi); the reworded task (raot) reads naturally, layout intact.

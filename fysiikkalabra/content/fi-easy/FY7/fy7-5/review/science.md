@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8d5ac7aa4a212757
+CONTENT-HASH: d81546d145d9486f
 
 ## Blocking
 
 ## Polish
-- lesson-answers.py prints `round(v, 6)`, so kertaus-F (1,6e-13 N) and kertaus-F-noB come out as 0.0; print them in units of 1e-13 N.
-- The "|q|v" distractor's feedback could also say that |q|v does not have the unit of force.
 
 ## Checked
-batch delta review: recomputed F = |q|vB = 1,602e-19 · 2,0e6 · 0,50 = 1,6e-13 N, perpendicular to v and B; the two distractors are wrong and their feedback is right; one correct option; Ennusta (loop fully inside the field, doubled speed) not revealed.
+batch delta review: feedback trimmed; distractor no longer writes F = |q|v (wrong unit) as a force; recomputed |q|vB = 1,6e-13 N and |q|v = 3,2e-13 (lesson-answers 1,602e-13 / 3,204e-13); one correct option; Ennusta not revealed.

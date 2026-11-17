@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f002197307b59da4
+CONTENT-HASH: ba9e52f4328dcfb2
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-4-stage-herata-390 (Pohdinta; changed retrieval task in the closed box, layout intact). Task body judged from the diff: numbers with units and \dfrac chain in LaTeX, decimal commas, natural Finnish.

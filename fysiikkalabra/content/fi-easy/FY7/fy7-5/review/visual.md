@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d69dce5944c18962
+CONTENT-HASH: d81546d145d9486f
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-5-stage-herata-390 (Pohdinta; changed retrieval task title visible, box closed, layout intact). Task body judged from the diff: powers of ten with \cdot, units in LaTeX, natural Finnish.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9f31e6f6cfefc30d
+CONTENT-HASH: a1d131e9dc3b5e30
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the reworded prompt (two neighbouring points of the grating film, in phase, path difference 1,5λ) keeps destructive interference as the one correct option and the unchanged feedback is right; Ennusta (denser grating, colour) not revealed.
+batch delta review: kohta -> rako in the retrieval prompt; 1,5 λ gives destructive interference, one correct option, feedback right.

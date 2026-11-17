@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ec8ad306b173c291
+CONTENT-HASH: a17f7616f3c4b8dd
 ## Blocking
 
 ## Polish
-- Third distractor '|q|v = 3,2e-13 N' has the wrong unit (C m/s); a student can dismiss it on units, not on the misconception. Fine but weak.
-
+- Retrieval of F=qvB is tied to the dynamo only by its prompt; fine as the prior step of motional emf. Feedback no longer pre-announces the rod.
 ## Checked
-batch delta review: Moving electron in a dynamo magnet belongs to the induction phenomenon and retrieves F = qvB; no Ennusta revealed (rest/no-change is not given away). (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2): F=qvB retrieval, numbers correct (1,6e-13; wrong option 2qv-without-B = 3,2e-13); no Ennusta answer disclosed.

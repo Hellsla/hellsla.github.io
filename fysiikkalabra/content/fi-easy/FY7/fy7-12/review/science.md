@@ -1,10 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 1e62b986a2ea19df
+VERDICT: PASS
+CONTENT-HASH: 14d0a1a2f2136aed
 
 ## Blocking
-- A (consistency/number): the third option "Se ei taitu, koska 30° on pieni tulokulma." keeps the old water-to-air value in its feedback, "taitekulma on noin $41{,}7^\circ$". From air into glass with n = 1,48 the angle is $19{,}8^\circ$. Replace 41,7° with 19,8°.
 
 ## Polish
 
 ## Checked
-batch delta review: recomputed asin(sin 30°/1,48) = 19,75°, so 19,8° toward the normal is right in the correct option and the first distractor; one correct option; Ennusta (critical angle, air or cladding) not revealed; lesson-answers.py matches.
+batch delta review: round-1 finding fixed: all three feedbacks now give 19,8° (asin(sin 30°/1,48) = 19,75°, lesson-answers match); toward the normal is the one correct option; distractor feedback right; Ennuste 1 (14°/15°: 80,59°/79,93° vs 80,57°) and Ennuste 2 (70,25° vs 42,51°/80,57°) rechecked and not revealed.

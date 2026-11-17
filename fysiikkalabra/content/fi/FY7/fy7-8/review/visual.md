@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: fe9489d3adf48114
+CONTENT-HASH: b24d75111073ed71
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta, round 1: fy7-8-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.
+- batch delta review (round 2): opened fy7-8-stage-herata-390 (Pohdinta with the new Kertaa: tehollinen jännite task); new task text uses LaTeX quantities, colon division and case endings, layout intact.

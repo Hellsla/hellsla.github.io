@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: efdf1846d978d198
+CONTENT-HASH: 1513035b0b2a06a9
 
 ## Blocking
 
 ## Polish
-- [Minor] The changed retrieval task is collapsed in the capture; its opened text was judged from the diff (units and formulas in LaTeX, no plain quantities).
 
 ## Checked
-- batch delta review: opened fy7-5-stage-herata-390.png (Pohdinta with the changed optional task title) and read the diff of the task prompt, choices and feedback; typography, wording and layout fine.
+- batch delta review: opened fy7-5-stage-herata-390.png (Pohdinta with the changed optional retrieval task, collapsed in the capture); layout intact; changed option and feedback read from the diff (number with unit in LaTeX, \cdot, no plain quantities); no figures changed; the opened card itself was not captured.

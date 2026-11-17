@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a7bd01372641e3fc
-SCOPE: delta added-exercise from 8b13af556f7aa21c base 8f23aa7ae3bd
+CONTENT-HASH: 448eb73bf6862c33
+SCOPE: delta wording L1-06 (round 2)
 
 ## Blocking
 
 ## Polish
-- solutions.md:197 (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k holds only for a magnet of the same strength and size; add "yhtä voimakas" so it does not read as a general mass rule.
+- solutions.md:219 (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k still holds only for a magnet of the same strength and size (round-1 item, not yet changed) — add "yhtä voimakas".
 
 ## Checked
-- Delta: L2-09 and L3-06 added; hash identical at start and end.
-- brake-task: line F = 1,6 N·s/m · v, points within ±0,003 N. L2-09: P = Fv = 0,40 · 0,25 = 0,100 W = 100 mW; P = Fv as the rate of work into internal energy at constant speed is right.
-- L3-06: terminal speed from ΣF = 0, mg = kv: 0,4415 N / 1,6 = 0,276 m/s → 0,28 m/s; weight 0,44 N lies on the drawn line range (to 0,48 N). Air resistance negligible at this speed (fair simplification).
-- Both solutions complete, symbolic first, conversions shown.
+- L1-06 answer and correct option now "pyrkii pitämään vuon ennallaan": right; the induced field opposes the decrease but does not keep the flux constant. Answer and correct choice match word for word.
+- L1-06 feedbacks and solutions.md:47 use the same wording, so the option, feedback and solution agree.
+- Physics of the option unchanged: flux decreases, field at the ring centre along the magnet's field, S pole facing the N pole, attraction. Exactly one correct option; the three distractors are wrong and their feedback says why.
+- solutions.md change is md-paragraphs/reflow only: no number, sign or unit changed.
+- Hash identical at start and end.
