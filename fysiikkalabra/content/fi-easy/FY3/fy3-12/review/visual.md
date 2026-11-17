@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6ca6d2b611456194
+CONTENT-HASH: 3a93fa847b4b0c80
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta card, prompt — "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\Delta U = Q + W$" is fine; the long five-line task could put the situation and question in separate paragraphs (the page does break it before the question).
+- [Minor] pr-tasapaino feedback 1: "Pois siirtynyt energia siirtyy lämpönä ympäristöön" repeats "siirty-". Optional: "Pois lähtenyt energia siirtyy lämpönä ympäristöön ja kasvattaa sen sisäenergiaa."
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa aiemmalta tunnilta, $\Delta U = Q + W$ task) with feedback open at 390 px and 1280 px, plus stage-herata-390; $4{,}0\,\text{kJ}$, $1{,}0\,\text{kJ}$, $-3{,}0\,\text{kJ}$ and the aligned chain render correctly, nothing clipped, feedback stays in the card. Captures made by me from preview/fi-easy.
+- batch delta review (round 2): own captures of the pr-tasapaino card (reworded prompt "Työtä ei tehdä, eikä olomuoto muutu", the reworded first feedback, correct choice committed, all feedbacks open) at 390 px (c2-fy3-12-390.png) and 1280 px (c2-fy3-12-1280.png) in the scratchpad. The prompt reads as situation then question, the formula $\Delta U = Q + W = -3{,}0\,\text{kJ}$ is inline and unbroken, units are LaTeX, and nothing is clipped. The sticky "Pohdinta" bar in the 390 px capture is a capture artifact. Figures untouched by the diff, not reopened.
