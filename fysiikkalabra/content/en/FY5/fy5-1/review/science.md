@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c998d824abede1c9
+CONTENT-HASH: c7aab98dd0f35052
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- "Your friend pulls the handle of the long wrench": the hook calls the tool a spanner; one word in both would read as the same tool (wording only).
 
 ## Checked
-batch delta review: chapter titles renamed in the title, meta and every chapter reference; every reference names the current title of the right chapter (no stale old title left in content/en/FY5); opening illustration restyled (no text or numbers in the SVG changed); no formula, number, option or feedback physics changed; every changed choice keeps its single correct option.
+batch delta review: kertaus rewritten to the friend's 120 N pull at 30 deg to the handle; recomputed F sin30 = 60 N (correct), F cos30 = 103.9 -> 104 N, 120 N distractors, all wrong with right feedback; lesson-answers.py kertaus-Fy/Fx match; reflowed hint and solutions (barrier 135 Nm, steering wheel 1.9 Nm) unchanged in numbers.

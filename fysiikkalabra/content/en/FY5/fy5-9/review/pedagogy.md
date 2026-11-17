@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2355a3e085de0f9e
+CONTENT-HASH: 6f05942d807ec312
 
 ## Blocking
+None.
 
 ## Polish
+- The hook shows swings and the spring bird, so the kertaus (the bird) fits. Its answer (force towards equilibrium) is only used by the later model, so nothing is given away.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the redrawn dashed path of the pendulum figure, which now ends at the extreme position the figure shows; no text changed.
+batch delta review (queue 8j): kertaus same phenomenon (spring toy); ennuste-1/2 on amplitude and mass not given away; the other changes (numbers, reflow) read clearly.

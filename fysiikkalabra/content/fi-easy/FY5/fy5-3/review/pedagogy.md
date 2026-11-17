@@ -1,9 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: bbf844f09f395efa
+VERDICT: FAIL
+CONTENT-HASH: b429d51623efdb2c
+
 ## Blocking
+- Oikean vastauksen palaute sanoo: 'Eetu on keskitangon vieressä. Hän kulkee samassa ajassa paljon lyhyemmän matkan.' Kertaus käyttää samaa Ainoa ($r = 2{,}0\,\text{m}$) ja Eetua kuin ennuste-2, joten se antaa ennusteen vastauksen (Aino kulkee samassa ajassa pidemmän matkan, eli nopeampi) ennen ennustusta. Poista Eetua koskeva kaksi lausetta ja vaihda esim. säteeksi eri arvo kuin ennusteessa.
 
 ## Polish
-- Otsikossa on *jaksonaika*, mutta teksti ja käsitelista käyttävät vain sanaa *kierrosaika*. Selitykseen voisi lisätä "kierrosaika eli jaksonaika", jotta S2-lukija yhdistää otsikon ja käsitteen.
-- *ratanopeus*: "Nopeus osoittaa radan suuntaan" on epätarkka; "ympyrän tangentin suuntaan" tai "radan kulkusuuntaan" olisi selvempi.
+- Display-kaava ja sen perässä oleva piste ('$$...$$. Tässä ...') jättää irralliseen riviin yksinäisen pisteen; poista piste tai siirrä se kaavan sisään.
+
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+batch delta review (queue 8j): kertaus choice against the hook phenomenon and the Ennusta answers, feedback, answers.py numbers.

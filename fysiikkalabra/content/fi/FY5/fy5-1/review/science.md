@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 20a78595ec6b401c
+CONTENT-HASH: 97b3eafa2e10150c
 
 ## Blocking
 
 ## Polish
+- The correct option's feedback puts a display block ($$…$$) mid-sentence followed by a lone period; an inline formula would read better (typography, not physics).
 
 ## Checked
-- batch delta review: the diff only renames this and neighbouring FY5 chapters (title, meta.json, `luku *...*` references in lesson.md and inquiry.json); every renamed reference names the chapter that holds the cited content, and no formula, number, option, `correct` flag or feedback physics changed. Opening illustration redrawn: its alt text and capture show the situation correctly (no labels or numbers in the lesson's other figures changed). Every choice still has exactly one correct option.
+batch delta review: Kertaus prompt recomputed: perpendicular component F sin 30° = 60 N; distractors F cos 30° = 103,9 ≈ 104 N and 120 N, each feedback correct; exactly one correct option. Matches lesson-answers.py (kertaus-Fy 60, kertaus-Fx 103,9). Reflowed hint/solution chains keep the same numbers (135,3 Nm; 1,9 Nm).
