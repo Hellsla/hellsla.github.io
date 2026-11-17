@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 20a78595ec6b401c
+CONTENT-HASH: cc715e180866f1a8
 
 ## Blocking
 
 ## Polish
-
+- None blocking; keep the kertaus on weight only, with no hint of the arm or turning effect.
 
 ## Checked
-batch delta review: title and chapter-reference renames only; every *chapter* reference in lesson.md, inquiry.json, exercises and solutions of FY5 resolves to a current lesson title; new titles are clear and consistent with neighbouring lessons.
+batch delta review (round 2): round-1 finding resolved: kertaus asks weight G = mg on the wrench, no trigonometry or arm; Ennusta 1 and 2 not given away; distractors (m, m/g) are real misconceptions.

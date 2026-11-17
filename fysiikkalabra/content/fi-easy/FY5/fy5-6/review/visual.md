@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 35de75a6f033d338
+CONTENT-HASH: 0f54b390406f4b04
 
 ## Blocking
 
 ## Polish
+- [Minor] none.
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- batch delta review: opened the Pohdinta capture; the change is wording only (prompt and feedback text), no maths or layout change; read the diff, no new render opened.

@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Kertaa: nopeus ympyräliikkeessä",
       "optional": true,
-      "prompt": "Kappale kiertää ympyrärataa niin, että sen ratanopeus pysyy koko ajan samana. Mikä väite sen nopeudesta $\\overline{v}$ pitää paikkansa?",
+      "prompt": "Auto ajaa ympyränkaaren muotoista kaarretta niin, että sen nopeusmittari näyttää koko ajan samaa lukemaa. Mikä väite auton nopeudesta $\\overline{v}$ pitää paikkansa?",
       "choices": [
         {
           "text": "Nopeuden suuruus pysyy samana, mutta sen suunta muuttuu.",
           "correct": true,
-          "feedback": "Oikein. Kuten luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, nopeus on aina radan tangentin suuntainen, joten sen suunta kääntyy kappaleen kiertäessä. Tässä luvussa selvitetään, mitä suunnan muutos merkitsee kiihtyvyydelle ja voimille."
+          "feedback": "Oikein. Kuten luvussa *Ympyrärata: jaksonaika ja ratanopeus* opit, nopeus on aina radan tangentin suuntainen, joten sen suunta kääntyy auton ajaessa kaarretta. Tässä luvussa selvitetään, mitä suunnan muutos merkitsee kiihtyvyydelle ja voimille."
         },
         {
-          "text": "Nopeus pysyy kokonaan samana, koska kappaleen vauhti ei muutu.",
-          "feedback": "Vauhti eli nopeuden suuruus pysyy samana, mutta nopeus on vektori, jolla on myös suunta. Ympyräradalla suunta on aina radan tangentin suuntainen, joten se muuttuu koko ajan."
+          "text": "Nopeus pysyy kokonaan samana, koska auton vauhti ei muutu.",
+          "feedback": "Vauhti eli nopeuden suuruus pysyy samana, mutta nopeus on vektori, jolla on myös suunta. Kaarteessa suunta on aina radan tangentin suuntainen, joten se muuttuu koko ajan."
         },
         {
           "text": "Nopeus osoittaa koko ajan suoraan kohti radan keskipistettä.",
-          "feedback": "Nopeus on radan tangentin suuntainen eli kohtisuorassa sädettä vastaan. Jos nopeus osoittaisi keskipisteeseen, kappale liikkuisi kohti keskipistettä eikä ympyrää pitkin."
+          "feedback": "Nopeus on radan tangentin suuntainen eli kohtisuorassa sädettä vastaan. Jos nopeus osoittaisi keskipisteeseen, auto liikkuisi kohti keskipistettä eikä kaarretta pitkin."
         }
       ]
     },

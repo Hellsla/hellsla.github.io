@@ -17,9 +17,6 @@ def T_spring(m, k): return 2 * pi * math.sqrt(m / k)
 def T_pend(l, deg): return 2 * pi * math.sqrt(l / g) / agm(1, math.cos(math.radians(deg) / 2))
 
 
-# Kertaus (luku Harmoninen voima ...): k = 40 N/m, x = 0,050 m: F = kx = 2,0 N towards the equilibrium
-a["kertaus-F"] = 40 * 0.050
-a["kertaus-F-cm"] = 40 * 5                                # mistake: x in centimetres, 200
 # Koe 1: spring, m = 0,50 kg, k = 20 N/m, amplitude A varied
 for A in (0.05, 0.10, 0.20):
     a[f"koe1-T-{A}"] = T_spring(0.50, 20)                 # 0,9935 s for every amplitude

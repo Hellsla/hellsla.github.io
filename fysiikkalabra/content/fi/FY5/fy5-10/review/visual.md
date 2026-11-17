@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f67db8add4b3de82
+CONTENT-HASH: 970d92e06364aff1
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] fy5-10 kertaus — last feedback gives "$2{,}0$" without unit; add \,\text{Hz}.
 
 ## Checked
-batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.
+- batch delta review: Pohdinta stage capture (herata-390) and the retrieval box rendered at 390 px in the preview build with the wrong and right feedback opened; typography, Finnish and layout of the rewritten kertaus judged.

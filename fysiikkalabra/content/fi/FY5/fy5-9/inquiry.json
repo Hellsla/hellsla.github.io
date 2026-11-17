@@ -24,24 +24,20 @@
       "type": "choice",
       "title": "Kertaa: harmoninen voima",
       "optional": true,
-      "prompt": "Kitkattomalla alustalla oleva kappale on kiinnitetty jouseen, jonka jousivakio on $40\\,\\text{N/m}$. Kappale vedetään $5{,}0\\,\\text{cm}$ tasapainoasemasta oikealle ja pidetään paikallaan. Mihin suuntaan jousen voima kappaleeseen osoittaa, ja kuinka suuri se on?",
+      "prompt": "Lapsi vetää jousilelun linnun vähän tasapainoaseman alapuolelle ja pitää sitä paikallaan. Mihin suuntaan linnuun vaikuttava kokonaisvoima osoittaa heti, kun lapsi päästää irti?",
       "choices": [
         {
-          "text": "Vasemmalle, kohti tasapainoasemaa, $2{,}0\\,\\text{N}$.",
+          "text": "Ylöspäin, kohti tasapainoasemaa.",
           "correct": true,
-          "feedback": "Oikein. Harmoninen voima on $F = -kx$: sen suuruus on $$\\begin{aligned} kx &= 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} \\\\ &= 2{,}0\\,\\text{N} \\end{aligned}$$, ja miinusmerkki kertoo, että se osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
+          "feedback": "Oikein. Tasapainoasemassa jousen voima ja linnun paino kumoavat toisensa. Alempana jousen ylöspäin osoittava voima on suurempi, joten kokonaisvoima osoittaa ylöspäin, poikkeamaa vastaan. Samoin vaakasuora jousi vetää kappaletta aina kohti tasapainoasemaa: harmoninen voima on $F = -kx$ (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
         },
         {
-          "text": "Oikealle, poikkeaman suuntaan, $2{,}0\\,\\text{N}$.",
-          "feedback": "Suuruus on oikein, mutta venytetty jousi vetää kappaletta takaisin eikä työnnä sitä kauemmas. Jousen voima osoittaa aina kohti tasapainoasemaa, siksi kaavassa $F = -kx$ on miinusmerkki."
+          "text": "Alaspäin, poikkeaman suuntaan.",
+          "feedback": "Jousi ei vie lintua kauemmas tasapainoasemasta vaan takaisin sitä kohti. Alempana jousen ylöspäin osoittava voima on suurempi kuin linnun paino, joten kokonaisvoima osoittaa ylöspäin. Siksi kaavassa $F = -kx$ on miinusmerkki."
         },
         {
-          "text": "Vasemmalle, $200\\,\\text{N}$.",
-          "feedback": "Suunta on oikein, mutta poikkeama on sijoitettu senttimetreinä. Jousivakion yksikkö on $\\text{N/m}$, joten poikkeama on muutettava metreiksi: $5{,}0\\,\\text{cm} = 0{,}050\\,\\text{m}$, ja voima on $2{,}0\\,\\text{N}$."
-        },
-        {
-          "text": "Voimaa ei ole, koska kappale on levossa.",
-          "feedback": "Kappale on levossa, koska käsi pitää sitä paikallaan: käden voima ja jousen voima kumoavat toisensa. Venytetty jousi vetää kappaletta koko ajan, ja juuri tämä voima panee sen liikkeelle, kun käsi päästää irti."
+          "text": "Kokonaisvoima on nolla, koska lintu on irti päästettäessä levossa.",
+          "feedback": "Lintu on levossa vain niin kauan kuin lapsi pitää sitä paikallaan: käden voima, jousen voima ja paino kumoavat toisensa. Kun käsi päästää irti, jäljelle jäävät jousen voima ja paino, joiden summa osoittaa ylöspäin. Juuri tämä voima panee linnun liikkeelle."
         }
       ]
     },

@@ -50,4 +50,7 @@ import math
 r["kaatuu-tan30"] = math.tan(math.radians(30))   # 0,577
 r["kaatuu-matala"] = 0.60 / 0.60                 # b/h = 1,0 > 0,577: stays
 r["kaatuu-korkea"] = 0.30 / 0.80                 # b/h = 0,375 < 0,577: tips
+# kertaus: the paint can's weight 50 N, 0,80 m from the trestle's edge on the horizontal plank, M = F r
+r["kertaus-M"] = 50 * 0.80                                # 40 Nm
+r["kertaus-M-div"] = 50 / 0.80                            # mistake F/r: 62,5 -> "noin 63"
 print(json.dumps({k: round(v, 6) for k, v in r.items()}))

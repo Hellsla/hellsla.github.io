@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 11f0ae4441e1ac86
+CONTENT-HASH: 568a8f092ff12e3f
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Oikean vastauksen palaute sanoo 'Sama purkki aivan pukin reunan kohdalla ei kierrä lankkua lainkaan' (väärän vastauksen palaute) ja 'Tänään selvitetään, milloin lankku kaatuu': hyvä, ei paljasta ennusteita.
+- Display-kaava ja sen perässä oleva piste ('$$...$$. Tässä ...') jättää irralliseen riviin yksinäisen pisteen; poista piste tai siirrä se kaavan sisään.
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; tukipinta definition (box, chair examples) and the tipping-vs-sliding distinction are clear and keep the core idea; no figure or task touched.
+batch delta review (queue 8j): kertaus choice against the hook phenomenon and the Ennusta answers, feedback, answers.py numbers.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bbf844f09f395efa
+CONTENT-HASH: ef590b3be059e98f
 
 ## Blocking
-(none)
+- None.
 
 ## Polish
-- ratanopeus: "Nopeus osoittaa radan suuntaan" could say "radan tangentin suuntaan", the lesson's own words.
+- None.
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: ympyräliike, ratanopeus (matka/aika at constant speed), kierrosaika and pyörimistaajuus = 1/T agree with the lesson.
+batch delta review (fi-easy, round 2): The kertaus choice now uses a smaller roundabout, r = 1,5 m. Recomputed: 2 pi r = 9,42 m -> 'noin 9,4 m' (two figures as the data); pi r = 4,71 m -> 4,7 m; diameter 3,0 m. Exactly one correct option; each distractor's feedback says why it is wrong (half a revolution; the diameter is the straight chord, the circumference is pi times it). It no longer gives Aino's 2,0 m path, so Ennuste 2 (speed ratio 2) is not answered in advance. lesson-answers.py kertaus-s/-pir/-d match.

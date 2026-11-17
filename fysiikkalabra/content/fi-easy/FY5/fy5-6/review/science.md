@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9138422ae14414ac
+CONTENT-HASH: 0f54b390406f4b04
 
 ## Blocking
 
 ## Polish
+- The `\quad` inserted mid-chain in three solutions (γM = …) leaves a gap inside one product. Typography only.
 
 ## Checked
-- light delta review (teacher 2026-11-07), after fixes 2: HEAD~1 diff: summary bullet now 'Painottomuudessa kappaletta ei tue mikään, ja se putoaa vapaasti: gravitaatio vaikuttaa, mutta tukivoima on nolla'; correct (free fall, gravity acts, zero support force) and consistent with the body text; no number changed.
+Batch delta review: the kertaus choice (ISS, nearly circular orbit, nearly constant speed): "kohti Maan keskipistettä" is the only correct option, and the outward, tangent and zero-force distractors' feedback is right; the solutions' numbers (7,671 km/s, 544 km, 6,43·10²³ kg) are unchanged.

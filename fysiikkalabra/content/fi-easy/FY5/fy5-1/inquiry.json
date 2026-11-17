@@ -22,22 +22,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: vinon voiman komponentti",
+      "title": "Kertaa: paino",
       "optional": true,
-      "prompt": "Köysi vetää laatikkoa $200\\,\\text{N}$:n voimalla. Voima on $30^\\circ$:n kulmassa vaakatasoon nähden. Kuinka suuri on voiman pystykomponentti?",
+      "prompt": "Mutteri ei aukea. Siksi painat vaakasuoran avaimen varren päätä alaspäin koko painollasi. Massasi on $60\\,\\text{kg}$. Kuinka suuri on painosi?",
       "choices": [
         {
-          "text": "$100\\,\\text{N}$, koska pystykomponentti on $F\\sin 30^\\circ$.",
+          "text": "Noin $590\\,\\text{N}$, koska $G = mg$.",
           "correct": true,
-          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0{,}5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. Tässä luvussa tarvitaan samaa suorakulmaisen kolmion sääntöä, kun lasketaan vinon voiman vartta."
+          "feedback": "Oikein. Paino on $$\\begin{aligned} G &= mg \\\\ &= 60\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 590\\,\\text{N} \\end{aligned}$$ (luku *Paino, kitka ja kalteva taso*). Tässä luvussa selvitetään, mitä voima saa aikaan, kun se kiertää kappaletta."
         },
         {
-          "text": "$173\\,\\text{N}$, koska pystykomponentti on $F\\cos 30^\\circ$.",
-          "feedback": "Kosini antaa kulman viereisen kateetin eli vaakakomponentin $F\\cos 30^\\circ \\approx 173\\,\\text{N}$. Pystykomponentti on kulman vastainen kateetti $F\\sin 30^\\circ = 100\\,\\text{N}$."
+          "text": "$60\\,\\text{N}$, koska paino on yhtä suuri kuin massa.",
+          "feedback": "Massa ja paino ovat eri suureita. Massa $60\\,\\text{kg}$ kertoo aineen määrän. Paino on voima, jolla Maa vetää sinua: $G = mg \\approx 590\\,\\text{N}$ (luku *Paino, kitka ja kalteva taso*)."
         },
         {
-          "text": "$200\\,\\text{N}$, koska komponentti on yhtä suuri kuin voima.",
-          "feedback": "Komponentti on suorakulmaisen kolmion kateetti, ja hypotenuusa on voima itse. Kateetti on aina lyhyempi kuin hypotenuusa. Pystykomponentti on $F\\sin 30^\\circ = 100\\,\\text{N}$."
+          "text": "Noin $6{,}1\\,\\text{N}$, koska $G = \\tfrac{m}{g}$.",
+          "feedback": "Jaoit massan putoamiskiihtyvyydellä. Paino on massan ja putoamiskiihtyvyyden tulo: $G = mg \\approx 590\\,\\text{N}$."
         }
       ]
     },

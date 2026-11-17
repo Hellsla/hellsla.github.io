@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 557c8bde7f97945f
+CONTENT-HASH: 5e2d08d0cb1ccd69
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] fy5-2 kertaus — wrong option begins lowercase ("noin $63\,\text{Nm}$") while the others in the batch use a capital; write "Noin".
+- [Minor] fy5-2 kertaus — the answer's display equation ends in a stray comma ("= 40 Nm,") followed by "koska…"; put the reason before the equation.
 
 ## Checked
-batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.
+- batch delta review: Pohdinta stage capture (herata-390) and the retrieval box rendered at 390 px in the preview build with the wrong and right feedback opened; typography, Finnish and layout of the rewritten kertaus judged.

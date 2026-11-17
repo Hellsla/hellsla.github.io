@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bbd19d9b0ad3dd8b
+CONTENT-HASH: d6242dd74f6dbd47
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- Kertaus (kaiutin soi hiljaa ja kovaa) on saman ilmiön kautta; ei paljasta ennusteita (etäisyys ja kaiuttimien määrä). Hook kysyy desibeleistä, kertaus amplitudista: silta toimii.
 
 ## Checked
-Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.
+batch delta review (queue 8j): kertaus choice against the hook phenomenon and the Ennusta answers, feedback, answers.py numbers.

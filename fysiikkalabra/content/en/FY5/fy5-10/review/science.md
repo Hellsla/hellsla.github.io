@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 582c5df6e9d91c3f
+CONTENT-HASH: ebd51d5e5e46db72
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked every changed passage in lesson, inquiry (model, Koe 3 title, explain model answer and criterion) for the rope: speed depends on the medium's properties, for a rope its tension and mass per unit length, tension is no longer called the medium, and the sim model now states that mass per unit length is constant; the new criterion asks only what the prompt asks (wavelength in Koe 3). Searched the lesson for leftover medium = tension wording: none.
+batch delta review: kertaus now the hand shaking the rope's free end, 12 vibrations in 6.0 s: f = 2.0 Hz, T = 0.50 s; distractors 0.50, 72, 12 Hz keep right feedback; lesson-answers kertaus-f/T match; worked-example stages only split into paragraphs, no physics changed.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2bae39cb7d291fd8
+CONTENT-HASH: 4c44592aa787de15
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- kertaus (loud and quiet note from a concert loudspeaker) matches the concert theme of the closing reflection, while the hook asks about decibels; a link to the decibel question could be added in the feedback.
 
 ## Checked
-Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.
+batch delta review (queue 8j): kertaus same concert-speaker scene; ennuste-1/2 not given away; the other changes (numbers, reflow) read clearly.
