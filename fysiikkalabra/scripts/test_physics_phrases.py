@@ -1,6 +1,6 @@
 """physics_phrases.py catches the sentences the 2026-10-28 audit found (and the 2026-11-15 proofreading's P1 and P8),
 passes their corrections, and passes every Finnish lesson, unit, exercise set and Sovella itsenäisesti file now except
-the sentences listed in docs/physics-phrases-known.tsv, which work queue 18 corrects (NOTES.md §10).
+the sentences listed in docs/physics-phrases-known/<course>.tsv, which work queue 18 corrects (NOTES.md §10).
 
   python scripts/test_physics_phrases.py"""
 import pathlib, sys
@@ -79,13 +79,13 @@ if not P.problems_in("lesson.md", FY2_HEAT, "FY4"): bad += 1; print("FAIL heat-i
 if P.course_of(P.ROOT / "content/fi/units/fy9-lampo") != "units" or P.course_of(P.ROOT / "content/fi/FY2/fy2-1") != "FY2": bad += 1; print("FAIL course_of")
 if P.problems_in("inquiry.json", DISTRACTOR): bad += 1; print("FAIL a wrong option's own text was flagged")
 if not P.problems_in("inquiry.json", TAUGHT): bad += 1; print("FAIL a correct option's claim was not flagged")
-KNOWN, seen = P.known(), set()   # docs/physics-phrases-known.tsv: hits already in the texts when their rule came
+KNOWN, seen = P.known(), set()   # docs/physics-phrases-known/<course>.tsv: hits already in the texts when their rule came
 for folder in P.finnish_units():
     for f, line, rid, msg, s in P.problems(folder):
         key = (str(folder.relative_to(P.ROOT / "content/fi")), f, rid, s)
         if key in KNOWN: seen.add(key); continue
         bad += 1; print(f"FAIL {folder.relative_to(P.ROOT)}/{f}:{line} [{rid}] {msg}\n    «{s}»")
-for k in sorted(KNOWN - seen): print(f"note: {P.KNOWN.name} row no longer found (delete it): {k[0]}/{k[1]} [{k[2]}]")
-print(f"{len(seen)} known sentence(s) still to correct ({P.KNOWN.relative_to(P.ROOT)}, work queue 18)")
+for k in sorted(KNOWN - seen): print(f"note: {P.KNOWN.relative_to(P.ROOT)}/{k[0].split('/')[0]}.tsv row no longer found (delete it): {k[0]}/{k[1]} [{k[2]}]")
+print(f"{len(seen)} known sentence(s) still to correct ({P.KNOWN.relative_to(P.ROOT)}/<course>.tsv, work queue 18)")
 print("test_physics_phrases:", "OK" if not bad else f"{bad} failure(s)")
 sys.exit(1 if bad else 0)

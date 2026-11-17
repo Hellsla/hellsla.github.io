@@ -32,23 +32,11 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
-## 5. CI:n toistettavuus (2026-11-13)
-
-Varattu: claude/ci-reproducibility
-
-Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
-samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
-(360, 390, 768, 1280 px) itse, kun Docker on käytettävissä; layout-virhe nimeää tehtävän, ratkaisun vaiheen ja elementin;
-`ci_scope.py` ei laske sivua muuttuneeksi, jos sen ainoa ero on `?v=`-tunnisteet.
-Jäljellä osa B (koordinaattorin luvalla, kun FY4:n, FY5:n ja FY7:n kaava-PR:t ovat mainissa): `docs/clipped-formulas.tsv`
-ja `docs/physics-phrases-known.tsv` kurssikohtaisiksi tiedostoiksi (esim. `docs/clipped-formulas/FY4.tsv`), jotta kaksi
-kurssi-PR:ää ei koske samaan tiedostoon. Jaettu muutos: tehdään yksin.
-
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
 Tehty: `check_layout.py` havaitsee leikkautuvan kaavan (360 ja 390 px, avattu ratkaisu, kolme kieltä), `reviews.py` tuntee
 kategorian `reflow` (science ja pedagogy none, visual delta), kehittäjäohjeessa on rivi. Mainissa jo olevat leikkautuvat
-kaavat ovat `docs/clipped-formulas.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
+kaavat ovat `docs/clipped-formulas/<kurssi>.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
 1. lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt kyllä), ja korjataanko vanha lista jaetulla
    komponentilla vai sivu kerrallaan;
 2. tehdäänkö täysi CI-pohjainen lista (koko sivuston ajo, noin 20 ydintuntia): lista on tehty paikallisella Chromiumilla, ja
@@ -97,7 +85,7 @@ FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe ko
 
 FY3 tehty (PR #628): 876 riviä pois listalta; 23 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku, fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin, sekä fy3-15:n kertausvalinnan palautteen kaava: `test_inquiry.py` vertaa palautteen alkua lähteeseen eikä tunnista näyttökaavaan siirtyvää välimerkkiä).
 
-Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
+Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas/`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
 näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
 - Tekstin sisällä oleva pitkä kaava nostetaan omaksi kaavarivikseen, ja pitkä ketju jaetaan `aligned`-ympäristöön
@@ -499,12 +487,12 @@ FY1 tehty: claude/fy1-oikoluku (PR #614).
 FY5 tehty: claude/fy5-oikoluku-aineisto (PR #624); samassa PR:ssä kohdan 19 aineistotehtävät FY5-A1…A5.
 FY8 tehty: claude/fy8-oikoluku (PR #621); samalla kokeen ja Sovellan leikkautuvat kaavat (5d).
 Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
-`docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
+`docs/physics-phrases-known/<kurssi>.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
-FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known.tsv`:n rivit (FY5, FY6, FY9).
+FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known/`:n rivit (FY5, FY6, FY9).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
