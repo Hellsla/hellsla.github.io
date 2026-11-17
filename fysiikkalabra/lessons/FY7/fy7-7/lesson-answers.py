@@ -53,4 +53,6 @@ a["wind-mean-MW-per-turbine"] = 8358 / 1835           # 4,55 MW
 a["wind-mean-GW"] = 19.8e12 / (366 * 24) / 1e9        # 2,254 GW mean power over 2024 (8784 h)
 a["wind-rotor-f"] = 12 / 60                           # a rotor at 12 r/min turns 0,20 times a second
 a["wind-gear"] = 1500 / 12                            # gearbox 12 r/min -> 1500 r/min: ratio 125
+# Retrieval: rotor one turn in 5,0 s: f = 1/T = 0,20 Hz (mistake 2,0 Hz)
+a["kertaus-f"] = 1 / 5.0
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

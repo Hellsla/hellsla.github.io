@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Revise: a compass in a magnetic field",
+      "title": "Revise: a compass without a current",
       "optional": true,
-      "prompt": "A compass is placed next to a bar magnet. In which direction does the north end of the compass needle turn?",
+      "prompt": "When there is no current in the copper wire, the compass needle points north. In which direction does the north end of the needle turn, and why?",
       "choices": [
         {
-          "text": "Along the field line, that is, in the direction in which the magnetic field points at the compass.",
+          "text": "Along the field line, that is, in the direction in which the Earth's magnetic field points at the compass.",
           "correct": true,
-          "feedback": "Correct. A compass is a small magnet that turns to point along the field; that is why it can be used to explore the direction of the field (chapter *Magnets, the magnetic dipole and the magnetic field*). In this lesson the compass will also reveal the field of a current-carrying wire."
+          "feedback": "Correct. A compass is a small magnet that turns to point along the field; that is why it can be used to explore the direction of the field (chapter *Magnets, the magnetic dipole and the magnetic field*). Without a current only the Earth's field acts on the needle. In this lesson the compass will also reveal the field of a current-carrying wire."
         },
         {
-          "text": "Always towards the north pole of the magnet, because like poles attract each other.",
-          "feedback": "Like poles repel each other. The north end of the needle turns along the field line, and outside a magnet the field lines go from the north pole to the south pole."
+          "text": "Along the wire, because the copper wire attracts the needle.",
+          "feedback": "Copper is not a magnetic material, so it does not attract the needle. The north end of the needle turns along the field line, and without a current the field at the compass is the Earth's (about $50\\,\\mu\\text{T}$)."
         },
         {
-          "text": "Always towards geographic north, because the Earth's field is stronger than the field of the magnet.",
-          "feedback": "Near a magnet its field is usually much stronger than the Earth's field (about $50\\,\\mu\\text{T}$), so the needle turns along the field line of the magnet."
+          "text": "In any direction, because without a current no field steers the needle.",
+          "feedback": "The Earth's magnetic field is always there, about $50\\,\\mu\\text{T}$ in Finland. The needle turns along its field line, and that is why a compass points north."
         },
         {
-          "text": "Perpendicular to the field lines, because a magnetic force is always perpendicular to the field.",
+          "text": "Perpendicular to the Earth's field lines, because a magnetic force is always perpendicular to the field.",
           "feedback": "Perpendicularity applies to the force on a moving charge (chapter *Charged particle in electric and magnetic fields*). A compass needle is a magnetic dipole, and it turns to point along the field."
         }
       ]

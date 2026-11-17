@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: interferenssi",
-      "prompt": "Kaksi saman laserin aaltoa ($\\lambda = 650\\,\\text{nm}$) saapuu samaan kohtaan varjostimella. Ne lähtevät samassa vaiheessa, ja niiden matkaero on $975\\,\\text{nm}$. Mitä kohdassa havaitaan?",
+      "prompt": "Saippuakalvolle osuu punaista valoa ($\\lambda = 650\\,\\text{nm}$). Kaksi aaltoa kulkee eri reittejä ja saapuu samaan kohtaan silmässä. Aallot lähtevät samassa vaiheessa. Vaihe muuttuu vain matkan takia. Matkaero on $975\\,\\text{nm}$. Mitä kohdassa havaitaan?",
       "choices": [
         {
           "text": "Heikentävä interferenssi: matkaero on puolitoista aallonpituutta.",

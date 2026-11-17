@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: interference",
-      "prompt": "Two waves from the same laser ($\\lambda = 650\\,\\text{nm}$) arrive at the same point on a screen. They start in phase, and their path difference is $975\\,\\text{nm}$. What is observed at that point?",
+      "prompt": "Red light ($\\lambda = 650\\,\\text{nm}$) strikes a soap film. Two waves travel along different paths and arrive at the same point in the eye. They start in phase, the phase changes only because of the distance travelled, and their path difference is $975\\,\\text{nm}$. What is observed at that point?",
       "choices": [
         {
           "text": "Destructive interference: the path difference is one and a half wavelengths.",

@@ -23,16 +23,16 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: refraction",
-      "prompt": "A ray of light goes from water ($n = 1.33$) into air at an angle of incidence of $30^\\circ$. How does the ray refract?",
+      "prompt": "Light goes from air into the end of a glass fibre ($n = 1.48$) at an angle of incidence of $30^\\circ$. How does the ray refract into the glass?",
       "choices": [
         {
-          "text": "Away from the normal: the angle of refraction is larger than $30^\\circ$.",
+          "text": "Towards the normal: the angle of refraction is smaller than $30^\\circ$.",
           "correct": true,
-          "feedback": "Correct. The law of refraction gives $$\\begin{aligned} &1.33 \\cdot \\sin 30^\\circ \\\\ &= 1.00 \\cdot \\sin\\alpha_2 \\end{aligned}$$, so $\\alpha_2 \\approx 41.7^\\circ$ (chapter *Reflection and refraction of light*)). Today we find out what happens when the angle of incidence is increased."
+          "feedback": "Correct. The law of refraction gives $$\\begin{aligned} &1.00 \\cdot \\sin 30^\\circ \\\\ &= 1.48 \\cdot \\sin\\alpha_2 \\end{aligned}$$, so $\\alpha_2 \\approx 19.8^\\circ$ (chapter *Reflection and refraction of light*). Today we find out how light travels inside the fibre."
         },
         {
-          "text": "Towards the normal: the angle of refraction is smaller than $30^\\circ$.",
-          "feedback": "Light refracts towards the normal when it goes from a substance with a smaller refractive index into one with a larger refractive index, for example from air into water. When it goes from water into air, $\\sin\\alpha_2 = 1.33 \\cdot \\sin 30^\\circ$, so the angle of refraction is about $41.7^\\circ$."
+          "text": "Away from the normal: the angle of refraction is larger than $30^\\circ$.",
+          "feedback": "Light refracts away from the normal when it goes from a substance with a larger refractive index into one with a smaller refractive index, for example from water into air. When it goes from air into glass, $\\sin\\alpha_2 = \\sin 30^\\circ : 1.48$, so the angle of refraction is about $19.8^\\circ$."
         },
         {
           "text": "It does not refract, because $30^\\circ$ is a small angle of incidence.",

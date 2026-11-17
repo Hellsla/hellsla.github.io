@@ -22,8 +22,8 @@
       "id": "kertaus-induktio",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: induction",
-      "prompt": "A magnetic flux passes through a coil. In which situation is a voltage induced in the coil?",
+      "title": "Review: induction in a power-plant generator",
+      "prompt": "A magnetic flux passes through a coil in a power-plant generator. In which situation is a voltage induced in the coil?",
       "choices": [
         {
           "text": "When the magnetic flux through the coil changes.",

@@ -67,4 +67,7 @@ a["siirto-inverted"] = deg(math.atan2(26, 20))    # mistake: tan θ inverted, 52
 # exit ticket: fridge magnet 5 mT in µT and against Earth's 52 µT
 a["exit-uT"] = 5e-3 / 1e-6                         # 5000 µT
 a["exit-ratio"] = 5000 / 52                        # about 96, i.e. about a hundred times
+# Pohdinta retrieval task: orienteer 300 m north then 400 m east
+a["kertaus-matka"] = math.hypot(300, 400)         # 500 m
+a["kertaus-summa"] = 300 + 400                    # mistake: 700 m
 print(json.dumps(a))

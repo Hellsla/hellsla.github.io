@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: suoran johtimen magneettikenttä",
-      "prompt": "Pitkässä suorassa johtimessa kulkee virta. Kuinka suuri on magneettivuon tiheys eli kentän voimakkuus kaksi kertaa niin kaukana johtimesta kuin aluksi?",
+      "prompt": "Kaiuttimen kaapelin yhdessä pitkässä suorassa johtimessa kulkee virta $0{,}50\\,\\text{A}$. Johtimen magneettivuon tiheys eli kentän voimakkuus on $1{,}0\\,\\text{cm}$:n päässä $10\\,\\mu\\text{T}$. Kuinka suuri se on $2{,}0\\,\\text{cm}$:n päässä?",
       "choices": [
         {
-          "text": "Puolet alkuperäisestä, koska $B = \\mu_0 I : (2\\pi r)$ on kääntäen verrannollinen etäisyyteen.",
+          "text": "$5{,}0\\,\\mu\\text{T}$ eli puolet, koska $B = \\mu_0 I : (2\\pi r)$ on kääntäen verrannollinen etäisyyteen.",
           "correct": true,
-          "feedback": "Oikein. Suoran johtimen kenttä kiertää johdinta ympyröinä. Sen suuruus on kääntäen verrannollinen etäisyyteen $r$ (luku *Virtajohtimen ja käämin magneettikenttä*). Tänään tällä kentällä selitetään, miksi kaksi virtajohdinta vetää tai hylkii toisiaan."
+          "feedback": "Oikein. Suoran johtimen kenttä kiertää johdinta ympyröinä. Sen suuruus on kääntäen verrannollinen etäisyyteen $r$ (luku *Virtajohtimen ja käämin magneettikenttä*): $B = 10\\,\\mu\\text{T} \\cdot \\dfrac{1{,}0\\,\\text{cm}}{2{,}0\\,\\text{cm}} = 5{,}0\\,\\mu\\text{T}$. Tänään tällä kentällä selitetään, miksi kaksi virtajohdinta vetää tai hylkii toisiaan."
         },
         {
-          "text": "Neljäsosa alkuperäisestä, koska kenttä heikkenee etäisyyden neliön mukaan.",
-          "feedback": "Etäisyyden neliön mukaan heikkenee pistevarauksen sähkökenttä. Pitkän suoran johtimen kenttä on $B = \\mu_0 I : (2\\pi r)$. Siksi kaksinkertaisella etäisyydellä se on puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
+          "text": "$2{,}5\\,\\mu\\text{T}$ eli neljäsosa, koska kenttä heikkenee etäisyyden neliön mukaan.",
+          "feedback": "Etäisyyden neliön mukaan heikkenee pistevarauksen sähkökenttä. Pitkän suoran johtimen kenttä on $B = \\mu_0 I : (2\\pi r)$. Siksi kaksinkertaisella etäisyydellä se on $5{,}0\\,\\mu\\text{T}$ eli puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
         },
         {
-          "text": "Yhtä suuri, koska virta on johtimen joka kohdassa sama.",
-          "feedback": "Virta on sama, mutta kenttä heikkenee, kun etäisyys kasvaa: $B = \\mu_0 I : (2\\pi r)$. Kaksinkertaisella etäisyydellä kenttä on puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
+          "text": "$10\\,\\mu\\text{T}$ eli yhtä suuri, koska virta on johtimen joka kohdassa sama.",
+          "feedback": "Virta on sama, mutta kenttä heikkenee, kun etäisyys kasvaa: $B = \\mu_0 I : (2\\pi r)$. Kaksinkertaisella etäisyydellä kenttä on $5{,}0\\,\\mu\\text{T}$ eli puolet (luku *Virtajohtimen ja käämin magneettikenttä*)."
         }
       ],
       "optional": true

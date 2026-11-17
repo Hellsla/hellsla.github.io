@@ -22,8 +22,8 @@
       "id": "kertaus-induktio",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: induktio",
-      "prompt": "Käämin läpi kulkee magneettivuo. Missä tilanteessa käämiin indusoituu jännite?",
+      "title": "Kertaa: induktio voimalaitoksen generaattorissa",
+      "prompt": "Voimalaitoksen generaattorissa käämin läpi kulkee magneettivuo. Missä tilanteessa käämiin indusoituu jännite?",
       "choices": [
         {
           "text": "Kun käämin läpi kulkeva magneettivuo muuttuu.",

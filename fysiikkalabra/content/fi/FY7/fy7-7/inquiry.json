@@ -24,21 +24,21 @@
       "stage": "herata",
       "type": "choice",
       "optional": true,
-      "title": "Kertaa: milloin jännite syntyy?",
-      "prompt": "Käämi on paikallaan voimakkaan magneetin edessä, ja sen läpi kulkee suuri magneettivuo, joka ei muutu. Kuinka suuri induktiojännite käämiin syntyy?",
+      "title": "Kertaa: taajuus ja jaksonaika",
+      "prompt": "Tuulivoimalan roottori kääntyy kerran $5{,}0\\,\\text{s}$:ssa. Mikä on roottorin pyörimistaajuus?",
       "choices": [
         {
-          "text": "Ei lainkaan, koska jännite syntyy vain vuon muuttuessa: $e = -N\\,\\Delta\\Phi : \\Delta t$.",
+          "text": "$0{,}20\\,\\text{Hz}$, koska taajuus on jaksonaikaa vastaava käänteisluku: $f = 1 : T$.",
           "correct": true,
-          "feedback": "Oikein. Induktiojännite riippuu vuon muutosnopeudesta, ei vuon suuruudesta (luku *Sähkömagneettinen induktio*). Tänään vuon muutos saadaan aikaan pyörittämällä käämiä."
+          "feedback": "Oikein. Pyörimistaajuus kertoo kierrosten määrän sekunnissa: $f = 1 : T = 1 : 5{,}0\\,\\text{s} = 0{,}20\\,\\text{Hz}$. Tänään tutkitaan, miten pyöriminen saa aikaan vaihtojännitteen."
         },
         {
-          "text": "Suuri, koska vuo on suuri ja jännite on verrannollinen vuohon.",
-          "feedback": "Induktiolain $e = -N\\,\\Delta\\Phi : \\Delta t$ mukaan jännite riippuu siitä, kuinka nopeasti vuo muuttuu. Muuttumaton vuo, kuinka suuri tahansa, ei synnytä jännitettä (luku *Sähkömagneettinen induktio*)."
+          "text": "$5{,}0\\,\\text{Hz}$, koska taajuus on sama luku kuin kiertoaika.",
+          "feedback": "Taajuus ja kiertoaika ovat toistensa käänteislukuja, $f = 1 : T$, ei samoja lukuja. Kun kierros kestää $5{,}0\\,\\text{s}$, kierroksia on sekunnissa vain $1 : 5{,}0 = 0{,}20$."
         },
         {
-          "text": "Se riippuu vain kierrosten lukumäärästä $N$, ei vuosta.",
-          "feedback": "Kierrosten lukumäärä kertoo, kuinka moneen kierrokseen jännite syntyy, mutta jos vuo ei muutu, jokaisen kierroksen jännite on nolla: $e = -N\\,\\Delta\\Phi : \\Delta t = 0$ (luku *Sähkömagneettinen induktio*)."
+          "text": "$2{,}0\\,\\text{Hz}$, koska taajuus on kiertoajan käänteisluku ja $1 : 5{,}0 = 2{,}0$.",
+          "feedback": "Käänteisluku on oikea ajatus, mutta lasku on väärin: $1 : 5{,}0 = 0{,}20$, ei $2{,}0$. Järkevyys: kierros kestää useita sekunteja, joten kierroksia sekunnissa on selvästi alle yksi."
         }
       ]
     },
