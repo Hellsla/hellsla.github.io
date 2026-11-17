@@ -1,23 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 8b0962f5cbc82d0f
+CONTENT-HASH: 75e3d3915811c5e0
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- inquiry.json "aineisto" (optional) — the only place where the student determines the sliding coefficient $\mu$ (goal "kitkakertoimen määrittäminen"); exp-1 gives only $\mu_0$. Keep it optional if the hour is tight, but name it in the closing summary or make the first numeric hint of the exit ticket ask for $\mu$ too.
-- inquiry.json "virhe" — all three wrong options end "Virhe on tukivoiman suunnassa", so after one wrong try the student reads the answer in the feedback of the others. Give the other two feedbacks only their own repair and let the correct option name the error.
-- inquiry.json exit-ticket Q3 (Kuun paino) — practises the weight paragraph, which no activity otherwise touches; fine as a quick item, but Q3 does not test the lesson's core (friction on a slope). Consider a slope-force question instead and leave weight/mass in the text.
-- lesson.md "Kitka ei aina vastusta liikettä" — good qualitative coverage of example J; the check tasks never ask it again (only exit ticket Q2). One option in a check naming the pickup-truck case would close the loop.
-- lesson.md noste/väliaineen vastusvoima — only one sentence, which is right for the "täsmennys" goal; no change needed, just do not extend it.
+1. The last subsection, "Kitkakertoimen määrittäminen", has no "Pysähdy ja mieti" although it carries the slot's experimental goal. Add one answerable from its paragraph, e.g. "Lautaa kallistetaan, ja kappale lähtee liukumaan kulmalla $30^\circ$. Mikä on lepokitkakerroin?" (answer $\mu_0 = \tan 30^\circ \approx 0{,}58$, massa ei vaikuta).
+2. Two of the four questions duplicate the exit ticket: walking friction (pysähdy 4 / exit ticket 2) and Moon mass and weight (pysähdy 1 / exit ticket 3, with the same $60\,\text{kg}$ and $97\,\text{N}$ already in the paragraph). The exit ticket then retrieves nothing new. Vary one side (e.g. pysähdy 4: "mikä voima kiihdyttää avolavan laatikkoa?"; exit ticket 3: another planet or a weight from a given $g$).
+3. Pysähdy 4 sits in the subsection whose core idea is the truck bed, but asks about walking, which the paragraph restates almost verbatim. The truck question tests the idea harder and is answerable from the same paragraph.
+4. Pysähdy 3 is nearly a quote of the paragraph's last sentence, so it is recall, not reasoning. Acceptable; asking "mikä muuttuu, kun kulma kasvaa: $G_x$, $N$, $\mu_0$?" would force the distinction between the force and the limit.
+5. Pysähdy 2 answers "equal to the pull", with no limit or numbers. Adding "Veto kasvaa $50\,\text{N}$:iin: mitä sitten?" would hit the static-to-sliding step as well.
+6. The `kitka` figure's aria-label says "myy nolla kertaa N" (screen-reader wording; check it reads well).
 
 ## Checked
-- Learning path: hook (box stays then slides) is answered by the conclusion explain and reflect; prior (fy4-5 FBD, components) is retrieved by an optional, relevant item.
-- Two predictions, each with option-specific, misconception-repairing feedback; both can be refuted by the experiments (pred-1 by $F_\mu$ column, pred-2 by equal $a$ at three masses); locks and `min` fit.
-- exp-1 numeric question (read limit angle, $\mu_0 = \tan\alpha_0$) has progressive hints and sin/cos mistake feedback; the model-value caveat is stated in the sim box and the conclusion.
-- Worked example: seven stages, one step each, diagram before equations, symbolic before substitution, reasonableness check.
-- Force-diagram plan met: select (4 single-error options), error, draw (`"draw": true` with model figure and criteria), equations (exp-1, siirto, check-2); solutions draw before any equation.
-- Figure descriptions list arrows without saying which is wrong ("virhe" description lists $\overline{N}$ as vertical, does not judge it); theory figure on slope does not give the task answers away.
-- Workload: heavy but one lesson, with retrieval, reflect, aineisto optional; sim text behind Käyttöohje / Mallin oletukset / Laskennan selitys.
-- Finnish: case endings after number+unit correct; terms (lähtökitka, liukukitka, lepokitkakerroin) match the glossary.
-- Not verified: no page captures were present in the packet ("Screenshots: none yet"), so figure legibility and phone layout are judged only from the passing layout checks and the figure descriptions.
+- Each of the four questions is answerable from the paragraph just read: Paino, Lepokitka ja liukukitka, Kalteva taso, Kitka ei aina vastusta liikettä. Each hits that subsection's idea, apart from the gaps in Polish 3-5. The answers are short, model-like and observable, and they state the reason ("koska"), not only the result.
+- The answers are closed, so nothing is disclosed before the student acts. They do not duplicate the inquiry prediction answers (pred-1 and pred-2 are about the angle and the mass).
+- Learning path: Pohdinta, retrieval (optional), two refutable predictions, sim with locked parameters and a table, conclusion explain with criteria, optional data task, theory, a staged worked example (seven stages), error spotting, select-diagram, a transfer with three hints and mistake feedback, a draw task with a criteria list, and three checks. Workload fits an hour (the core path is lean).
+- Force diagram plan: skills error, select, equations and draw (check-3, `draw: true`) are covered; the distractors in `valitse` each have one error with feedback that names it.
+- Captures opened: contact-1.png (first screen, sim 390 px, figures 10 and 12) and contact-2.png (figures 14 and 16, diagram choices). The figures are clear, uncluttered and use colour with labels. The captures do not show the pysahdy boxes, so those were judged from the text. I did not open the 1280 px captures.
+- Finnish is correct and the terms match the glossary (lähtökitka, liukukitka, noste).
