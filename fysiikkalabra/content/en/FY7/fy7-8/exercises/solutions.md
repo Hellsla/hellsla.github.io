@@ -41,7 +41,9 @@
 ## fy7-8-L1-05
 **Given:** line voltage of the three-phase line $U = 400\,\text{kV}$, current of a phase conductor $I = 800\,\text{A}$, power factor $\cos\varphi = 1$
 **Find:** the transmitted power $P$ in megawatts
-**Principle:** The line is three-phase, and $400\,\text{kV}$ is the line voltage between the phase conductors. The active power of an evenly loaded three-phase grid is $P = \sqrt{3}\,U I \cos\varphi$. The two-wire model $P = UI$ would give too small a result. Each of the three phase conductors carries power at the phase voltage $U : \sqrt{3}$, because the voltages of the phases are out of phase with each other, so the total power is $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$.
+**Principle:** The line is three-phase, and $400\,\text{kV}$ is the line voltage between the phase conductors. The active power of an evenly loaded three-phase grid is $P = \sqrt{3}\,U I \cos\varphi$. The two-wire model $P = UI$ would give too small a result.
+
+Each of the three phase conductors carries power at the phase voltage $U : \sqrt{3}$, because the voltages of the phases are out of phase with each other, so the total power is $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$.
 **Formula:** $P = \sqrt{3}\,U I \cos\varphi$, and when $\cos\varphi = 1$, $P = \sqrt{3}\,U I$
 **Conversions:** $U = 400\,\text{kV} = 400 \cdot 1000\,\text{V} = 400\,000\,\text{V}$. Finally $1\,\text{MW} = 1\,000\,000\,\text{W}$.
 **Substitution:** $P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554.26\,\text{MW}$
@@ -81,7 +83,9 @@
 ## fy7-8-L2-04
 **Given:** the curve of the graph showing the power loss $P_\text{h}$ as a function of the current $I$
 **Find:** the resistance $R$ of the wire in ohms
-**Principle:** The power that becomes internal energy in the wire is $P_\text{h} = R I^2$, so the power loss grows with the square of the current and the graph is a parabola starting from the origin. When one point is read from the curve, the resistance can be solved. The fitted curve evens out the random errors of the individual measurements, so the value is read from the curve and not from an individual point.
+**Principle:** The power that becomes internal energy in the wire is $P_\text{h} = R I^2$, so the power loss grows with the square of the current and the graph is a parabola starting from the origin.
+
+When one point is read from the curve, the resistance can be solved. The fitted curve evens out the random errors of the individual measurements, so the value is read from the curve and not from an individual point.
 **Reading the graph:** The curve passes through the grid point ($5.0\,\text{A}$; $20\,\text{W}$): at the current $5.0\,\text{A}$ the power loss of the fitted curve is $20\,\text{W}$. The measurement point $20.1\,\text{W}$ is close to the curve.
 **Formula:** $P_\text{h} = R I^2$, so $R = \dfrac{P_\text{h}}{I^2}$
 **Conversions:** Not needed: the power is in watts and the current in amperes, and $\tfrac{\text{W}}{\text{A}^2} = \tfrac{\text{V}}{\text{A}} = \Omega$.
@@ -122,12 +126,16 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 **Conversions:** Not needed: in the ratio of the voltages the kilovolts cancel.
 **Substitution:** $\dfrac{P_2}{P_1} = \dfrac{(400\,\text{kV})^2}{(220\,\text{kV})^2} = (1.818)^2 = 3.306$
 **Answer:** about $3.3$ times the power, two significant figures like the voltage $220\,\text{kV}$.
-**Reasonableness:** The voltage increases to somewhat less than double, so the power can increase to somewhat less than four times. For example, the powers $100\,\text{MW}$ and $331\,\text{MW}$ give the currents $455\,\text{A}$ and $826\,\text{A}$, and the share of the losses $R I : U$ is the same in both. The same ratio $(400 : 220)^2$ is obtained in the real three-phase grid too, because there as well the share of the loss is proportional to the power and inversely proportional to the square of the voltage.
+**Reasonableness:** The voltage increases to somewhat less than double, so the power can increase to somewhat less than four times. For example, the powers $100\,\text{MW}$ and $331\,\text{MW}$ give the currents $455\,\text{A}$ and $826\,\text{A}$, and the share of the losses $R I : U$ is the same in both.
+
+The same ratio $(400 : 220)^2$ is obtained in the real three-phase grid too, because there as well the share of the loss is proportional to the power and inversely proportional to the square of the voltage.
 
 ## fy7-8-L1-06
 **Find:** why a transformer gives no voltage in the secondary coil when the primary coil is connected to a direct voltage.
 **Principle:** A voltage is induced in the secondary coil only if the magnetic flux through the coil changes (the law of induction). Direct current is constant, so the magnetic flux it produces in the iron core is constant, even though the current flows and the field exists.
-**Model answer:** The magnetic flux produced by the direct current does not change, so no voltage is induced in the secondary coil. The current flows in the primary coil and the iron core is magnetized, but only a changing flux induces a voltage. Alternating current changes the flux continuously, which is why a transformer works with alternating voltage. A transformer can both raise and lower a voltage, and this depends on the numbers of turns, not on the type of current.
+**Model answer:** The magnetic flux produced by the direct current does not change, so no voltage is induced in the secondary coil. The current flows in the primary coil and the iron core is magnetized, but only a changing flux induces a voltage.
+
+Alternating current changes the flux continuously, which is why a transformer works with alternating voltage. A transformer can both raise and lower a voltage, and this depends on the numbers of turns, not on the type of current.
 
 ## fy7-8-L1-07
 **Given:** the power loss at first $P_\text{h,1} = 840\,\text{kW}$, the transmission voltage is doubled, $U_2 = 2U_1$, the power $P$ and the resistance $R$ stay the same
@@ -167,13 +175,17 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 **Formula:** $P_1 = U_1 I_1$ (assumption: the current and the voltage are in the same phase), $P_2 = U_2 I_2$ and $\eta = \dfrac{P_2}{P_1}$
 **Conversions:** Not needed: the voltages are in volts and the currents in amperes, so the powers come out in watts.
 **Substitution:** On the rows $\eta = 0.54$, $0.76$, $0.83$, $0.86$ and $0.88$ (powers $P_1 = 4.6$; $9.66$; $14.49$; $20.47$ and $26.22\,\text{W}$, $P_2 = 2.48$; $7.32$; $12.0$; $17.7$ and $23.0\,\text{W}$). On the last row $P_1 = 230\,\text{V} \cdot 0.114\,\text{A} = 26.22\,\text{W}$, $P_2 = 11.5\,\text{V} \cdot 2.00\,\text{A} = 23.0\,\text{W}$ and $\eta = \dfrac{23.0\,\text{W}}{26.22\,\text{W}} = 0.877 = 87.7\,\%$
-**Answer:** $87.7\,\%$, three significant figures like the values $0.114\,\text{A}$, $11.5\,\text{V}$ and $2.00\,\text{A}$. The efficiency is greatest at the greatest load and lowest at the smallest load, only about $54\,\%$. The reason is that the power loss is almost constant, about $2\text{–}3\,\text{W}$ (the differences $P_1 - P_2$ of the powers are $2.1$; $2.3$; $2.5$; $2.8$ and $3.2\,\text{W}$), while the secondary power increases. At a small load an almost constant loss is a large part of the primary power, at a large load a small part.
+**Answer:** $87.7\,\%$, three significant figures like the values $0.114\,\text{A}$, $11.5\,\text{V}$ and $2.00\,\text{A}$. The efficiency is greatest at the greatest load and lowest at the smallest load, only about $54\,\%$.
+
+The reason is that the power loss is almost constant, about $2\text{–}3\,\text{W}$ (the differences $P_1 - P_2$ of the powers are $2.1$; $2.3$; $2.5$; $2.8$ and $3.2\,\text{W}$), while the secondary power increases. At a small load an almost constant loss is a large part of the primary power, at a large load a small part.
 **Reasonableness:** On the last row the loss is $$\begin{aligned} &26.22\,\text{W} - 23.0\,\text{W} \\ &= 3.2\,\text{W} \end{aligned}$$, which is $3.22\,\text{W} : 26.22\,\text{W} = 12.3\,\%$ of the primary power, and $100\,\% - 12.3\,\% = 87.7\,\%$. The secondary voltage falls as the load increases ($12.4\,\text{V} \to 11.5\,\text{V}$), which shows the loss caused by the resistance of the coils.
 
 ## fy7-8-L2-07
 **Given:** primary voltage $U_1 = 230\,\text{V}$, secondary voltage $U_2 = 2300\,\text{V}$, primary current $I_1 = 2.0\,\text{A}$, ideal transformer
 **Find:** a) what is wrong in the student's reasoning, b) the secondary current $I_2$ in amperes
-**Principle:** An ideal transformer neither consumes nor produces energy, so power is conserved, $U_1 I_1 = U_2 I_2$. The student's mistake is to claim that a transformer does not change the current: when the voltage becomes ten times as large, the current must become a tenth so that the power stays the same. The student's result $4600\,\text{W}$ is ten times the primary power $460\,\text{W}$, that is, the transformer would have produced energy out of nothing.
+**Principle:** An ideal transformer neither consumes nor produces energy, so power is conserved, $U_1 I_1 = U_2 I_2$. The student's mistake is to claim that a transformer does not change the current: when the voltage becomes ten times as large, the current must become a tenth so that the power stays the same.
+
+The student's result $4600\,\text{W}$ is ten times the primary power $460\,\text{W}$, that is, the transformer would have produced energy out of nothing.
 **Formula:** $U_1 I_1 = U_2 I_2$, so $I_2 = \dfrac{U_1 I_1}{U_2}$
 **Conversions:** Not needed: the voltages are in volts and the current in amperes.
 **Substitution:** $I_2 = \dfrac{230\,\text{V} \cdot 2.0\,\text{A}}{2300\,\text{V}} = \dfrac{460\,\text{W}}{2300\,\text{V}} = 0.20\,\text{A}$
@@ -183,19 +195,25 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 ## fy7-8-L3-04
 **Given:** constant power $P = 200\,\text{MW}$, distance $150\,\text{km}$, total resistance of the conductors $0.040\,\Omega$ per kilometre of line, time $t = 8760\,\text{h}$, voltages $U_\text{A} = 220\,\text{kV}$ and $U_\text{B} = 400\,\text{kV}$, price of electricity $50\,\text{€/MWh}$
 **Find:** the yearly saving of option B in the value of the lost energy in millions of euros, and the justification
-**Principle:** The task uses the simplified two-wire model. The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller. Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
+**Principle:** The task uses the simplified two-wire model. The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller.
+
+Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
 **Formula:** $R = 0.040\,\tfrac{\Omega}{\text{km}} \cdot s$, $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$, $E = P_\text{h} t$ and
 
 $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
 **Conversions:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_\text{A} = 220 \cdot 10^{3}\,\text{V}$ and $U_\text{B} = 400 \cdot 10^{3}\,\text{V}$. The power loss is finally converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Substitution:** a) $R = 0.040\,\tfrac{\Omega}{\text{km}} \cdot 150\,\text{km} = 6.0\,\Omega$, $I_\text{A} = \dfrac{200 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 909.1\,\text{A}$ and $I_\text{B} = \dfrac{200 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 500\,\text{A}$. b) $P_\text{h,A} = 6.0\,\Omega \cdot (909.1\,\text{A})^2 = 4.959\,\text{MW}$ and $P_\text{h,B} = 6.0\,\Omega \cdot (500\,\text{A})^2 = 1.500\,\text{MW}$, so $E_\text{A} = 4.959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$ and $E_\text{B} = 1.500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$. c) Saving $$\begin{aligned} &= (43\,440\,\text{MWh} - 13\,140\,\text{MWh}) \\ &\cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 1.515 \cdot 10^{6}\,\text{€} \end{aligned}$$
-**Answer:** about $1.5\,\text{million €}$ a year, two significant figures like the power $200\,\text{MW}$. Justification: the transmitted power is the same, but at a higher voltage the current is smaller ($500\,\text{A}$ and not $909\,\text{A}$). The power loss depends on the square of the current, so it falls to about a third even though the resistance is the same. The high voltage of the transmission grid is therefore economical.
+**Answer:** about $1.5\,\text{million €}$ a year, two significant figures like the power $200\,\text{MW}$. Justification: the transmitted power is the same, but at a higher voltage the current is smaller ($500\,\text{A}$ and not $909\,\text{A}$).
+
+The power loss depends on the square of the current, so it falls to about a third even though the resistance is the same. The high voltage of the transmission grid is therefore economical.
 **Reasonableness:** The ratio of the voltages is $400 : 220 = 1.82$, and the ratio of the losses is its square, $3.3$. Indeed, $$\begin{aligned} &4.959\,\text{MW} : 1.500\,\text{MW} \\ &= 3.3 \end{aligned}$$. The loss in option B is $$\begin{aligned} &1.5\,\text{MW} : 200\,\text{MW} \\ &= 0.75\,\% \end{aligned}$$ and in option A $2.5\,\%$, of the order of magnitude of the transmission grid.
 
 ## fy7-8-L3-05
 **Given:** the powers of the table $(P_\text{out};\ P_\text{in})$: $(0.0\,\text{kW};\ 0.6\,\text{kW})$, $(10.0\,\text{kW};\ 10.6\,\text{kW})$, $(20.0\,\text{kW};\ 20.7\,\text{kW})$, $(40.0\,\text{kW};\ 40.9\,\text{kW})$, $(60.0\,\text{kW};\ 61.3\,\text{kW})$ and $(80.0\,\text{kW};\ 81.9\,\text{kW})$, model $P_\text{h} = P_0 + a P_\text{out}^2$
 **Find:** the value of the output power $P_\text{out}$ in kilowatts at which the efficiency is greatest
-**Principle:** The power loss is the difference of the input and output powers. With no load the transformer still takes a power $P_0$ (heating of the iron core), and under load an additional $R I^2$ becomes internal energy in the coils. The voltage is constant, so the secondary current $I = P_\text{out} : U$ is proportional to the output power and $R I^2 = \dfrac{R}{U^2} P_\text{out}^2 = a P_\text{out}^2$. The efficiency is greatest when the share of the loss in the output power is smallest. The condition given in the task (the constant loss and the load-dependent loss are equal) is obtained from this by differentiation, but it is not derived here.
+**Principle:** The power loss is the difference of the input and output powers. With no load the transformer still takes a power $P_0$ (heating of the iron core), and under load an additional $R I^2$ becomes internal energy in the coils. The voltage is constant, so the secondary current $I = P_\text{out} : U$ is proportional to the output power and $R I^2 = \dfrac{R}{U^2} P_\text{out}^2 = a P_\text{out}^2$.
+
+The efficiency is greatest when the share of the loss in the output power is smallest. The condition given in the task (the constant loss and the load-dependent loss are equal) is obtained from this by differentiation, but it is not derived here.
 **Formula:** $P_\text{h} = P_\text{in} - P_\text{out}$, $\eta = \dfrac{P_\text{out}}{P_\text{in}}$, $P_0 = P_\text{h}(0)$, $a = \dfrac{P_\text{h} - P_0}{P_\text{out}^2}$ and from the condition $P_0 = a P_\text{out}^2$ we get $P_\text{out} = \sqrt{\dfrac{P_0}{a}}$
 **Conversions:** Not needed: all the powers are in kilowatts, and $a$ gets the unit $\text{kW}^{-1}$.
 **Substitution:** a) The power losses are $0.6$; $0.6$; $0.7$; $0.9$; $1.3$ and $1.9\,\text{kW}$ and the efficiencies on the rows $10\text{–}80\,\text{kW}$ are $94.3$; $96.6$; $97.8$; $97.9$ and $97.7\,\%$. b) At no load $P_0 = 0.6\,\text{kW}$. The greatest load has the smallest relative reading error, so $a = \dfrac{1.9\,\text{kW} - 0.6\,\text{kW}}{(80.0\,\text{kW})^2} = 2.03 \cdot 10^{-4}\,\text{kW}^{-1}$. c) $P_\text{out} = \sqrt{\dfrac{0.6\,\text{kW}}{2.03 \cdot 10^{-4}\,\text{kW}^{-1}}} = \sqrt{2954\,\text{kW}^2} = 54.35\,\text{kW}$
@@ -204,7 +222,9 @@ $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
 
 ## fy7-8-L2-08
 **Find:** the order of magnitude of the power loss $P_\text{h}$ that turns into heat in the cable of the wind turbine.
-**Principle:** The task uses the simplified two-wire model. An ideal transformer does not change the power, so the cable transmits the power $3.0\,\text{MW}$ at the voltage $20\,\text{kV}$. The current of the cable is obtained from the transmitted power and the transmission voltage, $I = P : U$, and the power loss is $P_\text{h} = RI^2$. The transmission voltage is not the voltage across the resistance of the cable, so the expression $U^2 : R$ cannot be used.
+**Principle:** The task uses the simplified two-wire model. An ideal transformer does not change the power, so the cable transmits the power $3.0\,\text{MW}$ at the voltage $20\,\text{kV}$. The current of the cable is obtained from the transmitted power and the transmission voltage, $I = P : U$, and the power loss is $P_\text{h} = RI^2$.
+
+The transmission voltage is not the voltage across the resistance of the cable, so the expression $U^2 : R$ cannot be used.
 **Model answer:** The current of the cable:
 
 $I = \dfrac{3.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}}$
@@ -217,7 +237,11 @@ $P_\text{h} = 0.50\,\Omega \cdot (150\,\text{A})^2$
 
 $P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
 
-The power loss is about $11\,\text{kW}$, so the order of magnitude is $10\,\text{kW}$. It is only about $0.4\,\%$ of the transmitted power. The wrong options come from typical mistakes. The product $RI = 75\,\text{V}$ is the voltage drop of the cable, not a power, and it would give an order of magnitude of $0.1\,\text{kW}$. If the transformer is forgotten and the current is calculated with the voltage $690\,\text{V}$, the current is about $4\,350\,\text{A}$ and the power loss about $9.5\,\text{MW}$, which is more than the turbine produces. The expression $U^2 : R$ with the transmission voltage gives $800\,\text{MW}$, that is, an order of magnitude of $1000\,\text{MW}$, which is even more impossible. Reasonableness: the transformer reduces the current to about $29$ times smaller and the losses to about $840$ times smaller than they would be at the voltage $690\,\text{V}$.
+The power loss is about $11\,\text{kW}$, so the order of magnitude is $10\,\text{kW}$. It is only about $0.4\,\%$ of the transmitted power. The wrong options come from typical mistakes. The product $RI = 75\,\text{V}$ is the voltage drop of the cable, not a power, and it would give an order of magnitude of $0.1\,\text{kW}$.
+
+If the transformer is forgotten and the current is calculated with the voltage $690\,\text{V}$, the current is about $4\,350\,\text{A}$ and the power loss about $9.5\,\text{MW}$, which is more than the turbine produces. The expression $U^2 : R$ with the transmission voltage gives $800\,\text{MW}$, that is, an order of magnitude of $1000\,\text{MW}$, which is even more impossible.
+
+Reasonableness: the transformer reduces the current to about $29$ times smaller and the losses to about $840$ times smaller than they would be at the voltage $690\,\text{V}$.
 
 ## fy7-8-L2-09
 **Given:** the transmitted power $P = 200\,\text{MW}$ and the curve of the graph showing the share $P_\text{h} : P$ of the power loss as a function of the transmission voltage $U$
@@ -237,7 +261,11 @@ $R = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6.0\,\Omega$
 ## fy7-8-L2-10
 **Given:** from the source material ([Fingrid – Suomen sähköjärjestelmä](https://www.fingrid.fi/kantaverkko/kehittaminen/suomen-sahkojarjestelma/), read 16 November 2026) the voltage levels and lengths of the power lines of the transmission grid and the voltage levels of the distribution networks; from the task the active power $P = 200\,\text{MW}$, the power factor $\cos\varphi = 1$, the line voltages $U_{110} = 110\,\text{kV}$ and $U_{400} = 400\,\text{kV}$ and the resistance of one phase conductor $R = 4.0\,\Omega$
 **Find:** a) the voltage levels and line lengths of the transmission grid, the voltage levels of the distribution networks and the ratio of the highest voltage to the lowest; b) the current $I$ in a phase conductor at each line voltage; c) the power loss $P_\text{h}$ in megawatts at each line voltage; d) a comparison of the results, an explanation and an assessment of two simplifications
-**Principle:** The active power of an evenly loaded three-phase line is $P = \sqrt{3}\,UI\cos\varphi$, where $U$ is the line voltage and $I$ the current in a phase conductor. The power and the power factor are the same at both voltages, so the size of the current is set by the voltage. In each of the three phase conductors the current $I$ passes through the resistance $R$, and the power $RI^2$ becomes internal energy in the conductor. In three conductors the power loss is $P_\text{h} = 3RI^2$ in all. The transmission voltage is not the voltage across the resistance of a conductor, so the expression $U^2 : R$ cannot be used.
+**Principle:** The active power of an evenly loaded three-phase line is $P = \sqrt{3}\,UI\cos\varphi$, where $U$ is the line voltage and $I$ the current in a phase conductor. The power and the power factor are the same at both voltages, so the size of the current is set by the voltage.
+
+In each of the three phase conductors the current $I$ passes through the resistance $R$, and the power $RI^2$ becomes internal energy in the conductor. In three conductors the power loss is $P_\text{h} = 3RI^2$ in all.
+
+The transmission voltage is not the voltage across the resistance of a conductor, so the expression $U^2 : R$ cannot be used.
 **Formula:** $P = \sqrt{3}\,UI\cos\varphi$, from which $I = \dfrac{P}{\sqrt{3}\,U\cos\varphi}$. When the current is substituted into the equation $P_\text{h} = 3RI^2$, the result is
 
 $$\begin{aligned} P_\text{h} &= 3R \cdot \dfrac{P^2}{3U^2\cos^2\varphi} \\ &= \dfrac{RP^2}{U^2\cos^2\varphi} \end{aligned}$$
@@ -255,14 +283,34 @@ c) The power losses:
 $$\begin{aligned} P_{\text{h},110} &= \dfrac{4.0\,\Omega \cdot (200 \cdot 10^{6}\,\text{W})^2}{(110 \cdot 10^{3}\,\text{V})^2} \\ &= 1.322 \cdot 10^{7}\,\text{W} \\ &= 13.22\,\text{MW} \end{aligned}$$
 
 $$\begin{aligned} P_{\text{h},400} &= \dfrac{4.0\,\Omega \cdot (200 \cdot 10^{6}\,\text{W})^2}{(400 \cdot 10^{3}\,\text{V})^2} \\ &= 1.000 \cdot 10^{6}\,\text{W} \\ &= 1.000\,\text{MW} \end{aligned}$$
-**Part a):** According to the source material, the transmission grid of Finland has (the situation in 2025) $5400\,\text{km}$ of $400\,\text{kV}$ power lines, $1000\,\text{km}$ of $220\,\text{kV}$ power lines and $7600\,\text{km}$ of $110\,\text{kV}$ power lines. The voltage levels of the power lines of the transmission grid are therefore $400\,\text{kV}$, $220\,\text{kV}$ and $110\,\text{kV}$. The material also mentions $320\,\text{km}$ of HVDC cables. They are high-voltage direct-current links, and this task does not deal with them. According to the material the distribution networks operate at the voltage levels $0.4$–$110\,\text{kV}$, and they are typically connected to the transmission grid through the $110\,\text{kV}$ network. The highest voltage of the transmission grid is $400\,\text{kV} : 0.4\,\text{kV} = 1000$ times the lowest voltage of the distribution networks. If the page has been updated, the lengths you read may differ from these. The material does not give a reason why the voltages of the transmission grid are this high. The reason comes from physics in parts b)–d).
-**Part d):** Comparison: the current is about $1050\,\text{A}$ at the line voltage $110\,\text{kV}$ and about $289\,\text{A}$ at the line voltage $400\,\text{kV}$. The ratio of the currents is the inverse of the ratio of the voltages, $400 : 110 \approx 3.64$. The power loss is about $13\,\text{MW}$, that is, $6.6\,\%$ of the transmitted power, at the line voltage $110\,\text{kV}$ and about $1.0\,\text{MW}$, that is, $0.50\,\%$, at the line voltage $400\,\text{kV}$. The ratio of the power losses is $13.2$, the square of the ratio of the voltages.
+**Part a):** According to the source material, the transmission grid of Finland has (the situation in 2025) $5400\,\text{km}$ of $400\,\text{kV}$ power lines, $1000\,\text{km}$ of $220\,\text{kV}$ power lines and $7600\,\text{km}$ of $110\,\text{kV}$ power lines. The voltage levels of the power lines of the transmission grid are therefore $400\,\text{kV}$, $220\,\text{kV}$ and $110\,\text{kV}$.
 
-Explanation: The transmitted power is the same, $P = \sqrt{3}\,UI$, so at a higher voltage a current smaller in the same ratio is enough. The loss arises in the resistance of the conductors, through which the current passes, and the power loss $P_\text{h} = 3RI^2$ depends on the square of the current. Therefore the power loss is inversely proportional to the square of the voltage, $P_\text{h} = RP^2 : U^2$. The energy that becomes internal energy in the conductors is transferred to the surroundings as heat and never reaches the user. This explains why long distances are covered at the voltages of hundreds of kilovolts of part a) and the voltage is lowered with transformers only closer to the user.
+The material also mentions $320\,\text{km}$ of HVDC cables. They are high-voltage direct-current links, and this task does not deal with them. According to the material the distribution networks operate at the voltage levels $0.4$–$110\,\text{kV}$, and they are typically connected to the transmission grid through the $110\,\text{kV}$ network.
 
-Simplifications of the model, of which two are enough for the answer. First: the resistance was assumed to be the same at both voltages. In real lines of different voltage levels the conductors and the lengths of the lines differ, so the resistance differs too. The ratio $13.2$ holds only for the same resistance. The power loss is proportional to the resistance, so a line twice as long, for example, doubles it. Second: the power factor was assumed to be $1$. With a smaller power factor the same active power needs a larger current, and the losses grow at both voltages by the factor $1 : \cos^2\varphi$. For example, with $\cos\varphi = 0.90$ the factor is about $1.23$. The ratio of the losses does not change.
+The highest voltage of the transmission grid is $400\,\text{kV} : 0.4\,\text{kV} = 1000$ times the lowest voltage of the distribution networks. If the page has been updated, the lengths you read may differ from these. The material does not give a reason why the voltages of the transmission grid are this high.
 
-Third: the power was assumed constant and the load even. The real transmitted power varies, and because the power loss depends on the square of the power, it varies even more. Fourth: the model contains only the losses in the resistance of the conductors. Raising and lowering the voltage needs transformers, which have losses of their own, and a higher voltage requires better insulation of the line. That is why the voltage is not raised without limit, and a lower voltage is enough for small powers and short distances, as in the distribution networks of the material. The conclusion still stays the same: a high transmission voltage reduces the current and the losses caused by the resistance. The simplifications affect only the numerical values.
+The reason comes from physics in parts b)–d).
+**Part d):** Comparison: the current is about $1050\,\text{A}$ at the line voltage $110\,\text{kV}$ and about $289\,\text{A}$ at the line voltage $400\,\text{kV}$. The ratio of the currents is the inverse of the ratio of the voltages, $400 : 110 \approx 3.64$.
+
+The power loss is about $13\,\text{MW}$, that is, $6.6\,\%$ of the transmitted power, at the line voltage $110\,\text{kV}$ and about $1.0\,\text{MW}$, that is, $0.50\,\%$, at the line voltage $400\,\text{kV}$. The ratio of the power losses is $13.2$, the square of the ratio of the voltages.
+
+Explanation: The transmitted power is the same, $P = \sqrt{3}\,UI$, so at a higher voltage a current smaller in the same ratio is enough. The loss arises in the resistance of the conductors, through which the current passes, and the power loss $P_\text{h} = 3RI^2$ depends on the square of the current.
+
+Therefore the power loss is inversely proportional to the square of the voltage, $P_\text{h} = RP^2 : U^2$. The energy that becomes internal energy in the conductors is transferred to the surroundings as heat and never reaches the user.
+
+This explains why long distances are covered at the voltages of hundreds of kilovolts of part a) and the voltage is lowered with transformers only closer to the user.
+
+Simplifications of the model, of which two are enough for the answer. First: the resistance was assumed to be the same at both voltages. In real lines of different voltage levels the conductors and the lengths of the lines differ, so the resistance differs too.
+
+The ratio $13.2$ holds only for the same resistance. The power loss is proportional to the resistance, so a line twice as long, for example, doubles it. Second: the power factor was assumed to be $1$.
+
+With a smaller power factor the same active power needs a larger current, and the losses grow at both voltages by the factor $1 : \cos^2\varphi$. For example, with $\cos\varphi = 0.90$ the factor is about $1.23$. The ratio of the losses does not change.
+
+Third: the power was assumed constant and the load even. The real transmitted power varies, and because the power loss depends on the square of the power, it varies even more. Fourth: the model contains only the losses in the resistance of the conductors.
+
+Raising and lowering the voltage needs transformers, which have losses of their own, and a higher voltage requires better insulation of the line. That is why the voltage is not raised without limit, and a lower voltage is enough for small powers and short distances, as in the distribution networks of the material.
+
+The conclusion still stays the same: a high transmission voltage reduces the current and the losses caused by the resistance. The simplifications affect only the numerical values.
 **Answer:** $13\,\text{MW}$ is the power loss at the line voltage $110\,\text{kV}$ (more precisely $13.2\,\text{MW}$). At the line voltage $400\,\text{kV}$ the power loss is $1.0\,\text{MW}$. The currents are $1050\,\text{A}$ and $289\,\text{A}$. The power losses have two significant figures like the resistance $4.0\,\Omega$, and the currents three like the power $200\,\text{MW}$ and the voltages.
 **Reasonableness:** The same power losses follow from the currents of part b) with the equation of the task, $P_\text{h} = 3RI^2$:
 
@@ -270,4 +318,6 @@ $P_{\text{h},110} = 3 \cdot 4.0\,\Omega \cdot (1049.7\,\text{A})^2 = 13.22\,\tex
 
 $P_{\text{h},400} = 3 \cdot 4.0\,\Omega \cdot (288.7\,\text{A})^2 = 1.000\,\text{MW}$
 
-The ratio of the voltages is $400 : 110 = 3.64$, and its square $13.2$ is the ratio of the power losses, as the proportionality $P_\text{h} \sim 1 : U^2$ requires. The voltage drop in one conductor at the line voltage $110\,\text{kV}$ is only $RI = 4.0\,\Omega \cdot 1049.7\,\text{A} \approx 4.2\,\text{kV}$. It is small compared with the transmission voltage, so the transmission voltage really is not the voltage across the resistance. Both power losses are clearly smaller than the transmitted power $200\,\text{MW}$.
+The ratio of the voltages is $400 : 110 = 3.64$, and its square $13.2$ is the ratio of the power losses, as the proportionality $P_\text{h} \sim 1 : U^2$ requires. The voltage drop in one conductor at the line voltage $110\,\text{kV}$ is only $RI = 4.0\,\Omega \cdot 1049.7\,\text{A} \approx 4.2\,\text{kV}$.
+
+It is small compared with the transmission voltage, so the transmission voltage really is not the voltage across the resistance. Both power losses are clearly smaller than the transmitted power $200\,\text{MW}$.

@@ -72,4 +72,9 @@ a["siirto-mistake-km"] = 400 * 0.12 * 0.040 * 1000            # ohm/km used as o
 a["tarkistus-2"] = 9.0 - 6.0                                  # 3,0 V
 a["tarkistus-2-mistake"] = 9.0 + 6.0                          # 15 V (added instead of subtracted)
 
+# kertaus: bird body 4,0 V over 2,0 kohm
+a["kertaus-I"] = 4.0 / 2000                                  # 2,0 mA
+a["kertaus-I-k"] = 4.0 / 2.0                                 # 2,0 A (k forgotten)
+a["kertaus-I-mult"] = 4.0 * 2000                             # 8,0 kA
+a["kertaus-I-inv"] = 2000 / 4.0                              # 500 A
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

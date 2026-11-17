@@ -22,26 +22,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: sähkövirta ja varaus",
+      "title": "Kertaa: sähköinen vuorovaikutus",
       "optional": true,
-      "prompt": "Johtimen poikkileikkauksen läpi kulkee varaus $0{,}50\\,\\text{C}$ ajassa $2{,}0\\,\\text{s}$. Kuinka suuri on sähkövirta?",
+      "prompt": "Kaksi samanlaista ilmapalloa hierotaan villapaitaan, ja molemmat saavat negatiivisen varauksen. Pallot ripustetaan langoista vierekkäin. Mitä niiden välillä tapahtuu?",
       "choices": [
         {
-          "text": "$0{,}25\\,\\text{A}$",
+          "text": "Ne hylkivät toisiaan.",
           "correct": true,
-          "feedback": "Oikein. Sähkövirta on aikayksikössä kulkeva varaus: $$\\begin{aligned} I &= Q : t \\\\ &= 0{,}50\\,\\text{C} : 2{,}0\\,\\text{s} \\\\ &= 0{,}25\\,\\text{A} \\end{aligned}$$ (luku *Virtapiiri, sähkövirta ja jännite*). Tänään katsotaan, mistä varaus tulee. Katsotaan myös, miten varaukset vaikuttavat toisiinsa."
+          "feedback": "Oikein. Samanmerkkiset varaukset hylkivät toisiaan, joten kaksi negatiivisesti varattua ilmapalloa työntää toisiaan poispäin (luku *Virtapiiri, sähkövirta ja jännite*). Tänään selvitetään, mistä varaus tulee ja miten varaamaton kappale reagoi varattuun."
         },
         {
-          "text": "$1{,}0\\,\\text{A}$",
-          "feedback": "Kerroit varauksen ja ajan. Virta kertoo, kuinka paljon varausta kulkee sekunnissa. Siksi varaus jaetaan ajalla: $0{,}50\\,\\text{C} : 2{,}0\\,\\text{s} = 0{,}25\\,\\text{A}$."
+          "text": "Ne vetävät toisiaan puoleensa.",
+          "feedback": "Erimerkkiset varaukset vetävät toisiaan puoleensa. Molemmat pallot ovat negatiivisia, joten ne hylkivät toisiaan (luku *Virtapiiri, sähkövirta ja jännite*)."
         },
         {
-          "text": "$4{,}0\\,\\text{A}$",
-          "feedback": "Jaoit ajan varauksella. Virta on varaus jaettuna ajalla, $I = Q : t$. Sen yksikkö on $\\text{C/s} = \\text{A}$. Käänteinen osamäärä antaisi yksikön $\\text{s/C}$."
-        },
-        {
-          "text": "$0{,}50\\,\\text{A}$",
-          "feedback": "Tämä on kulkenut varaus, ei virta. Varaus kulki kahdessa sekunnissa, joten sekunnissa kulkee puolet siitä: $0{,}25\\,\\text{A}$."
+          "text": "Ne eivät vaikuta toisiinsa, koska ilmapallot ovat eristeitä.",
+          "feedback": "Eristekin voi varautua ja pitää varauksen, ja juuri niin hankauksessa käy. Molemmat pallot ovat varattuja samanmerkkisesti, joten ne hylkivät toisiaan (luku *Virtapiiri, sähkövirta ja jännite*)."
         }
       ]
     },

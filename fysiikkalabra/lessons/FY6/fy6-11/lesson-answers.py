@@ -107,8 +107,8 @@ a["ex-n"] = a["ex-q"] / e                                   # 3,0 elementary cha
 a["ex-check-F"] = 3 * e * E                                 # 3 e E = 4,806e-14 N = m g
 
 # --- kertaus: Coulomb's law, one charge doubled at the same distance ------------------------------------------------
-a["kertaus"] = 12 * 2                                       # 12 µN -> 24 µN
-a["kertaus-mistake-sq"] = 12 * 4                            # 48 µN (squared by mistake)
+a["kertaus"] = 12 * 2                                       # 12 nN -> 24 nN
+a["kertaus-mistake-sq"] = 12 * 4                            # 48 nN (squared by mistake)
 
 # --- error spotting: U = 1,2 kV, d = 3,0 cm -------------------------------------------------------------------------
 a["virhe-right"] = 1.2e3 / 0.030                            # 4,0e4 V/m

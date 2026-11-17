@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7a1db7c054f0ee27
+CONTENT-HASH: c8b77a5c450492a1
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] inquiry.json review feedback — a display `aligned` block is followed directly by "(chapter ...)" with no space in the source; check on the page that the parenthesis sits on its own line cleanly (earlier text had a space).
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-10-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
-
-## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+batch delta review: the diff changes only the review question (inquiry.json) and answer constants, no figure or layout; quantities are inline LaTeX with units and `\cdot`, divisions with a colon, English fluent; theory-figure captures unaffected by the diff.

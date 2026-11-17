@@ -285,7 +285,9 @@ Kuituyhteyden pituus on $80\,\text{km}$, ja kuidun vaimennuskerroin on $0{,}20\,
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kuidun pituus $L = 80\,\text{km}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$ ja lähetetty teho $P_0 = 2{,}0\,\text{mW}$. Kysytään vastaanottimeen saapuvaa tehoa $P$.
+**Tunnetut ja kysytty.** Kuidun pituus $L = 80\,\text{km}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$ ja lähetetty teho $P_0 = 2{,}0\,\text{mW}$.
+
+Kysytään vastaanottimeen saapuvaa tehoa $P$.
 
 <!-- vaihe -->
 

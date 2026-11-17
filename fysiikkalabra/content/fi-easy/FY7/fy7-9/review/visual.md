@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f5ae73cf558c1554
+CONTENT-HASH: 91fa561148c2fcfa
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] fig 1 (EM wave): the $\overline{E}$ label touches its arrowhead at 390 px; nudge it right.
 
 ## Checked
-- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.
+batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.

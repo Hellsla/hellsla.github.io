@@ -321,7 +321,9 @@ Sähköaseman muuntaja laskee alueverkon jännitteen $110\,\text{kV}$ jakeluverk
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Ensiöjännite on $U_1 = 110\,\text{kV}$ ja toisiojännite $U_2 = 20\,\text{kV}$. Toisiokäämin kierrosten lukumäärä on $N_2 = 360$ ja toisiovirta $I_2 = 450\,\text{A}$. Kysytään ensiökäämin kierrosten lukumäärää $N_1$ ja ensiövirtaa $I_1$.
+**Tunnetut ja kysytty.** Ensiöjännite on $U_1 = 110\,\text{kV}$ ja toisiojännite $U_2 = 20\,\text{kV}$. Toisiokäämin kierrosten lukumäärä on $N_2 = 360$ ja toisiovirta $I_2 = 450\,\text{A}$.
+
+Kysytään ensiökäämin kierrosten lukumäärää $N_1$ ja ensiövirtaa $I_1$.
 
 <!-- vaihe -->
 

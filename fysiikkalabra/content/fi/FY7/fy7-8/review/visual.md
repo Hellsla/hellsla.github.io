@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1562066e08d335f2
+CONTENT-HASH: 61a5dea8877e2a1f
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-8.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.
+- batch delta review: contact-2 opened (loss-percentage graph, worked example, Pohdinta, Ennusta, sim at 390); paragraph split only, layout intact.

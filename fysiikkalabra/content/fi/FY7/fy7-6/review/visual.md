@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: eb81890c6d5e137e
+CONTENT-HASH: 7c611d086c165667
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-6.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.
+- batch delta review: contact-2 opened (eddy-current figure, energy bars, worked example, Pohdinta); paragraph split only, layout intact.

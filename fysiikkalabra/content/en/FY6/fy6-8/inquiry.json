@@ -23,26 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the voltage law",
+      "title": "Review: electric power",
       "optional": true,
-      "prompt": "An ideal voltage source of $9.0\\,\\text{V}$ and two resistors are connected in series. The voltage of the first resistor is $3.0\\,\\text{V}$. What is the voltage of the second resistor?",
+      "prompt": "The power of a car's headlight is $55\\,\\text{W}$, and it is connected to a $12\\,\\text{V}$ battery. How large is the current through the headlight?",
       "choices": [
         {
-          "text": "$6.0\\,\\text{V}$",
+          "text": "About $4.6\\,\\text{A}$",
           "correct": true,
-          "feedback": "Correct. Going around the loop, the rise of potential in the source is equal to the drops in the resistors: $9.0\\,\\text{V} = 3.0\\,\\text{V} + 6.0\\,\\text{V}$ (chapter *Kirchhoff's laws and potential in a circuit*). Today one more resistor joins the same loop: the internal resistance of the battery itself."
+          "feedback": "Correct. From $P = UI$ we get $$\\begin{aligned} I &= P : U \\\\ &= 55\\,\\text{W} : 12\\,\\text{V} \\\\ &\\approx 4.6\\,\\text{A} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we find out why a large current drawn from the battery can dim lamps connected to it."
         },
         {
-          "text": "$9.0\\,\\text{V}$",
-          "feedback": "The whole voltage of the source would be across the second resistor only if it were the only resistor in the loop. By the voltage law the $9.0\\,\\text{V}$ of the source is shared between the resistors, so $9.0\\,\\text{V} - 3.0\\,\\text{V} = 6.0\\,\\text{V}$ is left for the second."
+          "text": "About $660\\,\\text{A}$",
+          "feedback": "You multiplied the power by the voltage. Power is voltage times current, $P = UI$, so the current is the power divided by the voltage: $55\\,\\text{W} : 12\\,\\text{V} \\approx 4.6\\,\\text{A}$."
         },
         {
-          "text": "$12\\,\\text{V}$",
-          "feedback": "The voltages of the resistors are not added to the voltage of the source. Together they are equal to the voltage of the source, so the voltage of the second resistor is $9.0\\,\\text{V} - 3.0\\,\\text{V} = 6.0\\,\\text{V}$."
+          "text": "About $0.22\\,\\text{A}$",
+          "feedback": "You divided the voltage by the power. From $P = UI$ the current is $I = P : U$, not $U : P$: $55\\,\\text{W} : 12\\,\\text{V} \\approx 4.6\\,\\text{A}$."
         },
         {
-          "text": "$3.0\\,\\text{V}$",
-          "feedback": "In resistors in series the current is the same, not the voltage. By the voltage law the voltages of the resistors total $9.0\\,\\text{V}$, so the voltage of the second is $6.0\\,\\text{V}$."
+          "text": "$43\\,\\text{A}$",
+          "feedback": "Power and voltage are different quantities, so they cannot be subtracted. The current is $I = P : U$, so $I = 55\\,\\text{W} : 12\\,\\text{V} \\approx 4.6\\,\\text{A}$."
         }
       ]
     },

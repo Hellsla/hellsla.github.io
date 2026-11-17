@@ -436,7 +436,9 @@ Käämissä on $250$ kierrosta, ja sen poikkipinta-ala on $4{,}0\,\text{cm}^2$. 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 250$, pinta-ala $A = 4{,}0\,\text{cm}^2$, magneettivuon tiheys aluksi $B_1 = 0{,}10\,\text{T}$ ja lopuksi $B_2 = 0{,}50\,\text{T}$, aika $\Delta t = 0{,}20\,\text{s}$. Kysytään induktiojännitteen suuruutta $|e|$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 250$, pinta-ala $A = 4{,}0\,\text{cm}^2$, magneettivuon tiheys aluksi $B_1 = 0{,}10\,\text{T}$ ja lopuksi $B_2 = 0{,}50\,\text{T}$, aika $\Delta t = 0{,}20\,\text{s}$.
+
+Kysytään induktiojännitteen suuruutta $|e|$.
 
 <!-- vaihe -->
 

@@ -242,7 +242,9 @@ Laserin säde tulee ilmasta altaan vedenpintaan tulokulmassa $55{,}0^\circ$. Kui
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tulokulma $\alpha_1 = 55{,}0^\circ$, ilman taitekerroin $n_1 = 1{,}00$, veden taitekerroin $n_2 = 1{,}33$ ja valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$. Kysytään taitekulmaa $\alpha_2$ ja valon nopeutta vedessä $v$.
+**Tunnetut ja kysytty.** Tulokulma $\alpha_1 = 55{,}0^\circ$, ilman taitekerroin $n_1 = 1{,}00$, veden taitekerroin $n_2 = 1{,}33$ ja valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$.
+
+Kysytään taitekulmaa $\alpha_2$ ja valon nopeutta vedessä $v$.
 
 <!-- vaihe -->
 

@@ -91,7 +91,9 @@
 ## fy7-16-L3-01
 **Given:** length of the cable $L = 1172\,\text{km}$, attenuation coefficient $a = 0.18\,\text{dB/km}$, greatest attenuation of one section $A_\text{max} = 20\,\text{dB}$
 **Find:** the smallest number of amplifiers
-**Principle:** The fibre is uniform along its whole length, so the attenuation of a section is $A = a\,l$, where $l$ is the length of the section. A section may be at most so long that the attenuation is $20\,\text{dB}$. Enough sections are needed to cover the whole cable, and because the transmitter and the receiver are at the ends, there is one amplifier fewer than there are sections.
+**Principle:** The fibre is uniform along its whole length, so the attenuation of a section is $A = a\,l$, where $l$ is the length of the section. A section may be at most so long that the attenuation is $20\,\text{dB}$.
+
+Enough sections are needed to cover the whole cable, and because the transmitter and the receiver are at the ends, there is one amplifier fewer than there are sections.
 **Formula:** $A_\text{max} = a\,l_\text{max}$, so $l_\text{max} = \dfrac{A_\text{max}}{a}$; the number of sections $k \ge \dfrac{L}{l_\text{max}}$ and the number of amplifiers $k - 1$
 **Conversions:** Not needed: the lengths are in kilometres and the attenuations in decibels.
 **Substitution:** $l_\text{max} = \dfrac{20\,\text{dB}}{0.18\,\text{dB/km}} = 111.1\,\text{km}$, so $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111.1\,\text{km}} = 10.55$. Thus $k = 11$ sections are needed, and $11 - 1 = 10$ amplifiers.
@@ -111,7 +113,9 @@
 ## fy7-16-L3-03
 **Given:** transmitted power $P_0 = 1.0\,\text{mW}$, smallest power needed $P = 10\,\mu\text{W}$, attenuation coefficient $a = 0.20\,\text{dB/km}$, four splices each attenuating by $0.50\,\text{dB}$, refractive index of the glass $n = 1.47$, speed of light in a vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** the travel time $t$ of a light pulse from end to end of the longest link, in milliseconds
-**Principle:** The total attenuation of the link may be at most the amount given by the ratio of the powers. Decibels are added, so the part that is not used up by the splices is left for the fibre, and from it the greatest length is found. In glass light travels at the speed $v = c : n$ (chapter *Total internal reflection and optical fibre*), and a pulse travelling along the axis covers the length of the fibre.
+**Principle:** The total attenuation of the link may be at most the amount given by the ratio of the powers. Decibels are added, so the part that is not used up by the splices is left for the fibre, and from it the greatest length is found.
+
+In glass light travels at the speed $v = c : n$ (chapter *Total internal reflection and optical fibre*), and a pulse travelling along the axis covers the length of the fibre.
 **Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, $A = aL + 4 \cdot 0.50\,\text{dB}$, so $L = \dfrac{A - 4 \cdot 0.50\,\text{dB}}{a}$, and $t = \dfrac{L}{v} = \dfrac{nL}{c}$
 **Conversions:** $P_0 = 1.0\,\text{mW} = 1.0 \cdot 10^{-3}\,\text{W}$, $P = 10\,\mu\text{W} = 1.0 \cdot 10^{-5}\,\text{W}$; length $90\,\text{km} = 90 \cdot 1000\,\text{m}$; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $A = 10\,\text{dB} \cdot \lg \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{1.0 \cdot 10^{-5}\,\text{W}} = 10\,\text{dB} \cdot \lg 100 = 20\,\text{dB}$, $L = \dfrac{20\,\text{dB} - 2.0\,\text{dB}}{0.20\,\text{dB/km}} = 90\,\text{km} = 90\,000\,\text{m}$, so $t = \dfrac{1.47 \cdot 90\,000\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} = 4.41 \cdot 10^{-4}\,\text{s} = 0.441\,\text{ms}$
@@ -121,7 +125,9 @@
 ## fy7-16-L1-06
 **Find:** why the glass plate of an induction hob does not heat up by itself, even though the magnetic field of the coil passes through it
 **Principle:** In an induction hob the coil produces a changing magnetic field, and a changing flux induces eddy currents in a conducting object. The eddy currents change electrical energy into internal energy in a resistance at the power $RI^2$. Heating therefore requires that an electric current can flow in the object.
-**Model answer:** Glass does not conduct electricity, so no eddy currents arise in it to change electrical energy into internal energy. The option saying that glass blocks the magnetic field is wrong, because the field passes through the glass and heats the base of the pan. The option saying that the melting point prevents heating is wrong, because heating depends on the current and not on the melting point. The option saying that the eddy currents cancel each other according to Lenz’s law is wrong, because Lenz’s law gives the direction of the current and does not remove the current.
+**Model answer:** Glass does not conduct electricity, so no eddy currents arise in it to change electrical energy into internal energy. The option saying that glass blocks the magnetic field is wrong, because the field passes through the glass and heats the base of the pan.
+
+The option saying that the melting point prevents heating is wrong, because heating depends on the current and not on the melting point. The option saying that the eddy currents cancel each other according to Lenz’s law is wrong, because Lenz’s law gives the direction of the current and does not remove the current.
 
 ## fy7-16-L1-07
 **Given:** power at the start $P_0 = 4.0\,\text{mW}$, attenuation coefficient $a = 0.20\,\text{dB/km}$, length $L = 45\,\text{km}$
@@ -157,7 +163,9 @@
 ## fy7-16-L2-06
 **Given:** initial power $P_0 = 800\,\mu\text{W}$, the lengths $L$ and powers $P$ of the table
 **Find:** the attenuation coefficient $a$ in the unit $\text{dB/km}$
-**Principle:** The fibre is uniform along its whole length, so the attenuation grows in direct proportion to the length: $A = aL$. When $A$ is plotted as a function of the length $L$, the points lie on a straight line through the origin whose slope is $a$. The line goes through the origin because a fibre of zero length has no attenuation.
+**Principle:** The fibre is uniform along its whole length, so the attenuation grows in direct proportion to the length: $A = aL$. When $A$ is plotted as a function of the length $L$, the points lie on a straight line through the origin whose slope is $a$.
+
+The line goes through the origin because a fibre of zero length has no attenuation.
 **Reading the graph:** The attenuations are $A = 2.15;\ 3.89;\ 6.11;\ 7.93;\ 10.05\,\text{dB}$ at the lengths $10;\ 20;\ 30;\ 40;\ 50\,\text{km}$. In real measurements the points are not exactly on one line, so the line is drawn between the points. The fitted line goes through the points $(0;\ 0)$ and $(50;\ 10.0)$.
 **Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ and $A = aL$, so the slope of the line is $a = \dfrac{\Delta A}{\Delta L}$
 **Conversions:** Not needed: the powers are in microwatts and their ratio has no unit.
@@ -177,7 +185,9 @@
 
 ## fy7-16-L2-08
 **Find:** the order of magnitude of the round-trip time $t$ of a light pulse in a $1200\,\text{km}$ fibre link.
-**Principle:** Light travels in the core of the fibre at the speed $v = c : n$. Because the light travels almost parallel to the axis, the distance it covers is practically the length of the fibre. The distance covered back and forth is twice the length of the link, and the time is the distance divided by the speed. The length is converted into metres first, so that the units match the speed.
+**Principle:** Light travels in the core of the fibre at the speed $v = c : n$. Because the light travels almost parallel to the axis, the distance it covers is practically the length of the fibre.
+
+The distance covered back and forth is twice the length of the link, and the time is the distance divided by the speed. The length is converted into metres first, so that the units match the speed.
 **Model answer:** The speed of light in the fibre and the distance back and forth:
 
 $$\begin{aligned}
@@ -196,7 +206,9 @@ $$\begin{aligned}
 
 The round-trip time is about $12\,\text{ms}$, that is of the order of ten milliseconds. Check: every kilometre delays the signal by about $4.9\,\mu\text{s}$, and $2400 \cdot 4.9\,\mu\text{s} \approx 11.8\,\text{ms}$.
 
-The wrong orders of magnitude come from unit errors. If the length is substituted as the number of kilometres, the result is a thousand times too small, about $12\,\mu\text{s}$. If $1200\,\text{km}$ is written as $1.2 \cdot 10^5\,\text{m}$, the result is ten times too small. If the speed is taken as $300\,000$, that is the speed in kilometres per second, and the length in metres, the result is a thousand times too large, about $12\,\text{s}$.
+The wrong orders of magnitude come from unit errors. If the length is substituted as the number of kilometres, the result is a thousand times too small, about $12\,\mu\text{s}$. If $1200\,\text{km}$ is written as $1.2 \cdot 10^5\,\text{m}$, the result is ten times too small.
+
+If the speed is taken as $300\,000$, that is the speed in kilometres per second, and the length in metres, the result is a thousand times too large, about $12\,\text{s}$.
 
 ## fy7-16-L3-04
 **Given:** $N = 15$, $f = 130\,\text{kHz}$, $d$ and $e_0$ of the table, the charging limit $e_0 = 1.0\,\text{V}$, new frequency $f' = 100\,\text{kHz}$ and the same flux
@@ -206,8 +218,14 @@ The wrong orders of magnitude come from unit errors. If the length is substitute
 **Conversions:** $f = 1.30 \cdot 10^{5}\,\text{Hz}$, $f' = 1.00 \cdot 10^{5}\,\text{Hz}$ and $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
 **Substitution:** a) The denominator is $15 \cdot 2\pi \cdot 1.30 \cdot 10^{5}\,\text{Hz} = 1.225 \cdot 10^{7}\,\text{Hz}$, so the fluxes are $0.377;\ 0.221;\ 0.124;\ 0.0677;\ 0.0384\,\mu\text{Wb}$ at the distances $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
 b) $\Phi_{\min} = \dfrac{1.0\,\text{V}}{15 \cdot 2\pi \cdot 1.00 \cdot 10^{5}\,\text{Hz}} = 0.1061\,\mu\text{Wb}$ is between the flux values $0.1241\,\mu\text{Wb}$ ($12\,\text{mm}$) and $0.0677\,\mu\text{Wb}$ ($16\,\text{mm}$): $$\begin{aligned} d &= 12\,\text{mm} \\ &+ 4\,\text{mm} \cdot \dfrac{0.1241 - 0.1061}{0.1241 - 0.0677} \\ &= 13.28\,\text{mm} \end{aligned}$$
-**Answer:** $13\,\text{mm}$, two significant figures; the interpolation is an estimate, because the flux does not decrease linearly. c) The same flux varies more slowly at the frequency $100\,\text{kHz}$ than at $130\,\text{kHz}$, so the induced voltage is smaller. The limit $1.0\,\text{V}$ is exceeded only with a greater flux, that is closer to the charger. The distance could be restored by adding turns to the receiver coil, because the voltage is directly proportional to the number of turns.
-**Reasonableness:** The limit value $0.1061\,\mu\text{Wb}$ is smaller than the flux at the distance $12\,\text{mm}$ but greater than at the distance $16\,\text{mm}$, so $13.3\,\text{mm}$ is between them. At the frequency $130\,\text{kHz}$ the limit value would be $0.0816\,\mu\text{Wb}$ and the distance about $15.0\,\text{mm}$, so lowering the frequency shortens the working distance, as in part c. Increasing the turns from $15$ to $20$ would raise the voltage by the factor $1.33$ and would make up for the drop in frequency by the factor $1.30$.
+**Answer:** $13\,\text{mm}$, two significant figures; the interpolation is an estimate, because the flux does not decrease linearly.
+
+c) The same flux varies more slowly at the frequency $100\,\text{kHz}$ than at $130\,\text{kHz}$, so the induced voltage is smaller.
+
+The limit $1.0\,\text{V}$ is exceeded only with a greater flux, that is closer to the charger. The distance could be restored by adding turns to the receiver coil, because the voltage is directly proportional to the number of turns.
+**Reasonableness:** The limit value $0.1061\,\mu\text{Wb}$ is smaller than the flux at the distance $12\,\text{mm}$ but greater than at the distance $16\,\text{mm}$, so $13.3\,\text{mm}$ is between them. At the frequency $130\,\text{kHz}$ the limit value would be $0.0816\,\mu\text{Wb}$ and the distance about $15.0\,\text{mm}$, so lowering the frequency shortens the working distance, as in part c.
+
+Increasing the turns from $15$ to $20$ would raise the voltage by the factor $1.33$ and would make up for the drop in frequency by the factor $1.30$.
 
 ## fy7-16-L3-05
 **Given:** $f = 30\,\text{kHz}$, $B_0 = 3.0\,\text{mT}$, $r = 9.0\,\text{cm}$, $R_\text{A} = 0.040\,\Omega$, $R_\text{B} = 0.050\,\Omega$, $R_\text{C} = 0.080\,\Omega$, field uniform and perpendicular to the base
@@ -217,7 +235,13 @@ b) $\Phi_{\min} = \dfrac{1.0\,\text{V}}{15 \cdot 2\pi \cdot 1.00 \cdot 10^{5}\,\
 **Conversions:** $f = 3.0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3.0 \cdot 10^{-3}\,\text{T}$, $r = 0.090\,\text{m}$ and $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** a) $\Phi_0 = 3.0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0.090\,\text{m})^2 = 7.63 \cdot 10^{-5}\,\text{Wb}$ and $$\begin{aligned} e_0 &= 2\pi \cdot 3.0 \cdot 10^{4}\,\text{Hz} \\ &\cdot 7.63 \cdot 10^{-5}\,\text{Wb} \\ &= 14.39\,\text{V} \end{aligned}$$. The powers $P = \dfrac{(14.39\,\text{V})^2}{2R}$ are $2.59\,\text{kW}$ for pan A, $2.07\,\text{kW}$ for B and $1.29\,\text{kW}$ for C.
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0.080\,\Omega}{0.040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42.43\,\text{kHz}$
-**Answer:** $42\,\text{kHz}$, two significant figures like the initial data. The resistance of pan C is double, so its power is half; raising the frequency increases the rate of change of the flux and the voltage, and the power grows as the square of the frequency. c) The magnetic field of the eddy current itself was ignored: according to Lenz’s law it opposes the change of flux, so the real current and power are smaller than the model gives. In a base that conducts very well (aluminium, copper) the field of the eddy current itself cancels a large part of the flux, so the model does not apply to them; the ferromagnetism of steel, on the other hand, increases the heating.
+**Answer:** $42\,\text{kHz}$, two significant figures like the initial data.
+
+The resistance of pan C is double, so its power is half; raising the frequency increases the rate of change of the flux and the voltage, and the power grows as the square of the frequency.
+
+c) The magnetic field of the eddy current itself was ignored: according to Lenz’s law it opposes the change of flux, so the real current and power are smaller than the model gives.
+
+In a base that conducts very well (aluminium, copper) the field of the eddy current itself cancels a large part of the flux, so the model does not apply to them; the ferromagnetism of steel, on the other hand, increases the heating.
 **Reasonableness:** The ratio of the powers $2.59\,\text{kW} : 1.29\,\text{kW} = 2.0$ corresponds to the ratio of the resistances $0.080 : 0.040 = 2.0$. Raising the frequency by the factor $\sqrt{2} = 1.414$ increases the power by the factor $1.414^2 = 2.0$, so the power of pan C at the frequency $42.4\,\text{kHz}$ is $1.29\,\text{kW} \cdot 2.0 = 2.59\,\text{kW}$.
 
 ## fy7-16-L2-09

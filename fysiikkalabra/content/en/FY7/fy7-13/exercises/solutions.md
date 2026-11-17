@@ -101,7 +101,9 @@
 ## fy7-13-L3-02
 **Given:** wavelength $\lambda = 650\,\text{nm}$, distance of the screen from the disc $L = 10.0\,\text{cm}$, separation of the maxima $\pm 1$ $89\,\text{mm}$, order $k = 1$
 **Find:** the track spacing $d$ in micrometres
-**Principle:** The evenly spaced tracks of a CD act as a reflection grating: for light arriving perpendicularly the reflected maxima obey the same grating equation as in a transmission grating, and $d$ is the track spacing. The screen is parallel to the disc, that is perpendicular to the incident beam, so the angle comes from a right-angled triangle. The maximum is half of the separation of the dots from the hole.
+**Principle:** The evenly spaced tracks of a CD act as a reflection grating: for light arriving perpendicularly the reflected maxima obey the same grating equation as in a transmission grating, and $d$ is the track spacing.
+
+The screen is parallel to the disc, that is perpendicular to the incident beam, so the angle comes from a right-angled triangle. The maximum is half of the separation of the dots from the hole.
 **Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $d = \dfrac{k\lambda}{\sin\theta}$
 **Conversions:** $x = 89\,\text{mm} : 2 = 44.5\,\text{mm} = 4.45\,\text{cm}$; for the angle it is enough that $x$ and $L$ are in the same unit. $650\,\text{nm} = 0.650\,\mu\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{4.45\,\text{cm}}{10.0\,\text{cm}} = \tan^{-1} 0.445 = 23.99^\circ$ and $d = \dfrac{1 \cdot 0.650\,\mu\text{m}}{\sin 23.99^\circ} = \dfrac{0.650\,\mu\text{m}}{0.4066} = 1.599\,\mu\text{m}$
@@ -121,7 +123,11 @@
 ## fy7-13-L1-06
 **Find:** how the width of a diffraction pattern changes when the slit is made narrower
 **Principle:** Diffraction is stronger the closer the slit width is to the wavelength. In a narrow slit the light bends at the edges of the slit into a wider range of angles, and the wavelength is determined by the light source and does not change in the slit.
-**Model answer:** The pattern becomes wider, because in a narrow slit the light bends more strongly to the sides. The option that the pattern becomes narrower is not true, because even a narrow slit does not let through only the light that travels straight ahead. The option that the width of the pattern depends only on the wavelength ignores the slit width, although it is exactly what decides the bending. The option that the slit shortens the wavelength and moves the maxima further out is wrong, because the slit does not change the wavelength; the pattern becomes wider because the light bends more, not because the wavelength changes.
+**Model answer:** The pattern becomes wider, because in a narrow slit the light bends more strongly to the sides. The option that the pattern becomes narrower is not true, because even a narrow slit does not let through only the light that travels straight ahead.
+
+The option that the width of the pattern depends only on the wavelength ignores the slit width, although it is exactly what decides the bending.
+
+The option that the slit shortens the wavelength and moves the maxima further out is wrong, because the slit does not change the wavelength; the pattern becomes wider because the light bends more, not because the wavelength changes.
 
 ## fy7-13-L1-07
 **Given:** line density $N = 500$ lines per millimetre, wavelength $\lambda = 532\,\text{nm}$, order $k = 2$
@@ -147,7 +153,9 @@
 **Given:** line density $N = 100$ lines per millimetre, screen distance $L = 1.00\,\text{m}$, positions $x_k$ of the maxima for orders $k = 1, \ldots, 8$
 **Find:** the wavelength $\lambda$ of the laser in nanometres
 **Principle:** From the grating equation $\sin\theta_k = \dfrac{\lambda}{d} \cdot k$, so the points $(k, \sin\theta_k)$ lie on a straight line that passes through the origin and whose slope is $\lambda : d$. The angle of each maximum is obtained from a right triangle through the tangent, because the screen is perpendicular to the beam.
-**Reading the graph:** From the $x_k$ of the table we calculate $\theta_k = \tan^{-1}(x_k : L)$ and $\sin\theta_k$: the values are $0.0629$, $0.1250$, $0.1914$, $0.2516$, $0.3176$, $0.3801$, $0.4429$ and $0.5081$. The points are close to a straight line through the origin. The least-squares line through the origin (with a calculator or a spreadsheet) gives a slope of $0.06337$, and the line drawn by hand likewise about $0.063$; an individual point deviates slightly from the line because of measurement error.
+**Reading the graph:** From the $x_k$ of the table we calculate $\theta_k = \tan^{-1}(x_k : L)$ and $\sin\theta_k$: the values are $0.0629$, $0.1250$, $0.1914$, $0.2516$, $0.3176$, $0.3801$, $0.4429$ and $0.5081$. The points are close to a straight line through the origin.
+
+The least-squares line through the origin (with a calculator or a spreadsheet) gives a slope of $0.06337$, and the line drawn by hand likewise about $0.063$; an individual point deviates slightly from the line because of measurement error.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and slope $a = \dfrac{\lambda}{d}$, so $\lambda = a\,d$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$ and finally $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\lambda = 0.06337 \cdot 1.00 \cdot 10^{-5}\,\text{m} = 6.337 \cdot 10^{-7}\,\text{m} = 633.7\,\text{nm}$
@@ -157,7 +165,9 @@
 ## fy7-13-L2-06
 **Given:** line density $N = 600$ lines per millimetre, $L = 1.00\,\text{m}$, $x = 33.7\,\text{cm}$, order $k = 1$; the student's result $562\,\text{nm}$
 **Find:** a) the error in the student's reasoning, b) the correct wavelength, c) the deviation of the student's result from the correct one in percent
-**Principle:** From the triangle of the screen we get $\tan\theta = x : L$, not $\sin\theta = x : L$. The sine and the tangent are almost equal only for small angles, and here the angle is almost $19^\circ$. The correct wavelength is calculated from the sine of the angle, and the error is the difference between the student's result and the correct one relative to the correct result.
+**Principle:** From the triangle of the screen we get $\tan\theta = x : L$, not $\sin\theta = x : L$. The sine and the tangent are almost equal only for small angles, and here the angle is almost $19^\circ$.
+
+The correct wavelength is calculated from the sine of the angle, and the error is the difference between the student's result and the correct one relative to the correct result.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta = \dfrac{x}{L}$, $\lambda = d\sin\theta$ and error $\dfrac{\lambda_\text{st} - \lambda}{\lambda} \cdot 100\,\%$
 **Conversions:** $x = 33.7\,\text{cm} = 0.337\,\text{m}$ and $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.337\,\text{m}}{1.00\,\text{m}} = 18.62^\circ$, $\lambda = 1.667 \cdot 10^{-6}\,\text{m} \cdot \sin 18.62^\circ = 1.667 \cdot 10^{-6}\,\text{m} \cdot 0.3193 = 5.323 \cdot 10^{-7}\,\text{m} = 532.3\,\text{nm}$ and error $$\begin{aligned} &= \dfrac{561.7\,\text{nm} - 532.3\,\text{nm}}{532.3\,\text{nm}} \cdot 100\,\% \\ &= 5.53\,\% \end{aligned}$$
@@ -167,11 +177,15 @@
 ## fy7-13-L2-07
 **Find:** which change reduces the relative uncertainty of the wavelength when the reading uncertainty $\Delta x$ is always the same
 **Principle:** The wavelength is calculated from the distance $x$, and the relative uncertainty is approximately $\Delta x : x$. When $\Delta x$ stays the same, the uncertainty is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
-**Model answer:** The relative uncertainty decreases when a more distant maximum is measured: the same reading uncertainty is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the uncertainty grows. A sparser grating makes the angles and so $x$ smaller, so the relative uncertainty grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
+**Model answer:** The relative uncertainty decreases when a more distant maximum is measured: the same reading uncertainty is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the uncertainty grows.
+
+A sparser grating makes the angles and so $x$ smaller, so the relative uncertainty grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
 
 ## fy7-13-L2-08
 **Find:** how the distance $x$ of the first-order maximum from the central maximum changes when the grating is replaced with a denser one and the screen is moved closer.
-**Principle:** The direction of the maximum is determined by the grating equation $d\sin\theta = k\lambda$, and the angle does not depend on the position of the screen. On the screen the distance of the maximum from the central maximum comes from a right-angled triangle, $x = L\tan\theta$. The change therefore has two opposite effects: the denser grating increases the angle, and the closer screen decreases the distance at the same angle. We calculate $x$ for both situations.
+**Principle:** The direction of the maximum is determined by the grating equation $d\sin\theta = k\lambda$, and the angle does not depend on the position of the screen. On the screen the distance of the maximum from the central maximum comes from a right-angled triangle, $x = L\tan\theta$.
+
+The change therefore has two opposite effects: the denser grating increases the angle, and the closer screen decreases the distance at the same angle. We calculate $x$ for both situations.
 **Model answer:** In the initial situation the grating constant is $$\begin{aligned} d_1 &= 1\,\text{mm} : 100 \\ &= 1.00 \cdot 10^{-5}\,\text{m} \end{aligned}$$.
 
 $$\begin{aligned}
@@ -192,27 +206,53 @@ $$\begin{aligned}
 
 The ratio is $$\begin{aligned} x_2 : x_1 &= 19.9\,\text{cm} : 13.0\,\text{cm} \\ &\approx 1.5 \end{aligned}$$. The distance therefore grows to about $1.5$ times the original, from $13.0\,\text{cm}$ to about $19.9\,\text{cm}$.
 
-For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance. Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it. The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
+For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance.
+
+Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it.
+
+The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
 
 ## fy7-13-L3-04
 **Given:** slit separation $d = 0.250\,\text{mm}$, screen distance $L = 2.00\,\text{m}$, intensity table
 **Find:** a) the wavelength $\lambda$ in nanometres, b) the position of the second-order maximum, c) the position of the first maximum with a grating and the difference between the patterns
-**Principle:** The maxima of a double slit form under the same condition as in a grating: $d\sin\theta = k\lambda$. The position of the first maximum is read from the peak of the intensity in the table, the angle is obtained from a right triangle, and the wavelength from the grating equation. With the same $d$ and wavelength the directions of the maxima are the same.
-**Reading the graph:** In the graph $I(x)$ there is a peak $I = 1.00$ at the central maximum $x = 0.0\,\text{mm}$, a minimum $I = 0.00$ at $2.5\,\text{mm}$ and the next peak $I = 1.00$ at $5.0\,\text{mm}$; the readings at $4.5\,\text{mm}$ and $5.5\,\text{mm}$ ($0.91$ and $0.89$) are almost equal. So the first-order maximum is at $x_1 = 5.0\,\text{mm}$. The next peak in the table is at $10.0\,\text{mm}$ ($I = 1.00$, the readings at $9.5\,\text{mm}$ and $10.5\,\text{mm}$ are $0.91$ and $0.89$), and between them the minimum is at $7.5\,\text{mm}$ ($I = 0.00$).
+**Principle:** The maxima of a double slit form under the same condition as in a grating: $d\sin\theta = k\lambda$. The position of the first maximum is read from the peak of the intensity in the table, the angle is obtained from a right triangle, and the wavelength from the grating equation.
+
+With the same $d$ and wavelength the directions of the maxima are the same.
+**Reading the graph:** In the graph $I(x)$ there is a peak $I = 1.00$ at the central maximum $x = 0.0\,\text{mm}$, a minimum $I = 0.00$ at $2.5\,\text{mm}$ and the next peak $I = 1.00$ at $5.0\,\text{mm}$; the readings at $4.5\,\text{mm}$ and $5.5\,\text{mm}$ ($0.91$ and $0.89$) are almost equal.
+
+So the first-order maximum is at $x_1 = 5.0\,\text{mm}$. The next peak in the table is at $10.0\,\text{mm}$ ($I = 1.00$, the readings at $9.5\,\text{mm}$ and $10.5\,\text{mm}$ are $0.91$ and $0.89$), and between them the minimum is at $7.5\,\text{mm}$ ($I = 0.00$).
 **Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $\lambda = \dfrac{d\sin\theta}{k}$ and $x_k = L\tan\theta_k$
 **Conversions:** $d = 0.250\,\text{mm} = 2.50 \cdot 10^{-4}\,\text{m}$ and $x_1 = 5.0\,\text{mm} = 5.0 \cdot 10^{-3}\,\text{m}$.
-**Substitution:** a) $\theta_1 = \tan^{-1}\dfrac{5.0 \cdot 10^{-3}\,\text{m}}{2.00\,\text{m}} = \tan^{-1} 0.00250 = 0.143^\circ$ and $\lambda = 2.50 \cdot 10^{-4}\,\text{m} \cdot \sin 0.143^\circ = 2.50 \cdot 10^{-4}\,\text{m} \cdot 0.00250 = 6.25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$. b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2.50 \cdot 10^{-4}\,\text{m}} = 0.00500$, so $x_2 = 2.00\,\text{m} \cdot \tan 0.2865^\circ = 0.0100\,\text{m} = 10.0\,\text{mm}$; in the table the peak $I = 1.00$ is exactly at this position. c) The first maximum of the grating appears at the same position, $x_1 = 5.0\,\text{mm}$.
-**Answer:** $\lambda \approx 6.3 \cdot 10^2\,\text{nm}$ (calculated value $625\,\text{nm}$), two significant figures, because the position of the maximum read from the table, $x_1 = 5.0\,\text{mm}$, has two. The second-order maximum is at $10.0\,\text{mm}$, which fits the table. The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
-**Reasonableness:** The wavelength $625\,\text{nm}$ is orange-red light. The spacing of the maxima is $5.0\,\text{mm}$, so the minima are at $2.5\,\text{mm}$ and $7.5\,\text{mm}$, and in the table the intensity is $0.00$ there. A grating spacing of $0.250\,\text{mm}$ means only $4$ lines per millimetre, so the grating of part c) is imaginary; the line density of a real grating is hundreds of lines per millimetre. The angle is small, so $\lambda \approx d x_1 : L = 625\,\text{nm}$.
+**Substitution:** a) $\theta_1 = \tan^{-1}\dfrac{5.0 \cdot 10^{-3}\,\text{m}}{2.00\,\text{m}} = \tan^{-1} 0.00250 = 0.143^\circ$ and $\lambda = 2.50 \cdot 10^{-4}\,\text{m} \cdot \sin 0.143^\circ = 2.50 \cdot 10^{-4}\,\text{m} \cdot 0.00250 = 6.25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$.
+
+b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2.50 \cdot 10^{-4}\,\text{m}} = 0.00500$, so $x_2 = 2.00\,\text{m} \cdot \tan 0.2865^\circ = 0.0100\,\text{m} = 10.0\,\text{mm}$; in the table the peak $I = 1.00$ is exactly at this position.
+
+c) The first maximum of the grating appears at the same position, $x_1 = 5.0\,\text{mm}$.
+**Answer:** $\lambda \approx 6.3 \cdot 10^2\,\text{nm}$ (calculated value $625\,\text{nm}$), two significant figures, because the position of the maximum read from the table, $x_1 = 5.0\,\text{mm}$, has two. The second-order maximum is at $10.0\,\text{mm}$, which fits the table.
+
+The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
+**Reasonableness:** The wavelength $625\,\text{nm}$ is orange-red light. The spacing of the maxima is $5.0\,\text{mm}$, so the minima are at $2.5\,\text{mm}$ and $7.5\,\text{mm}$, and in the table the intensity is $0.00$ there.
+
+A grating spacing of $0.250\,\text{mm}$ means only $4$ lines per millimetre, so the grating of part c) is imaginary; the line density of a real grating is hundreds of lines per millimetre. The angle is small, so $\lambda \approx d x_1 : L = 625\,\text{nm}$.
 
 ## fy7-13-L3-05
 **Given:** wavelength $\lambda = 532\,\text{nm}$, order $k = 1$, measurements $(L; 2x)$: $(4.0\,\text{cm}; 8.3\,\text{cm})$, $(6.0\,\text{cm}; 12.5\,\text{cm})$, $(8.0\,\text{cm}; 16.7\,\text{cm})$ and $(10.0\,\text{cm}; 20.9\,\text{cm})$, reference value $0.74\,\mu\text{m}$
 **Find:** a) the distance $d$ between the tracks and its mean $d_\text{avg}$ in micrometres, b) whether a second order exists, the number of dots of light and the direction of the zeroth-order reflection, c) the deviation of the mean from the reference value
-**Principle:** The evenly spaced tracks of a DVD act as a reflection grating: the reflected maxima of perpendicularly incident light follow the grating equation $d\sin\theta = k\lambda$. The cardboard is parallel to the disc, that is perpendicular to the incident beam, so the angle is obtained from a right triangle. A maximum is half of the distance $2x$ away from the hole.
+**Principle:** The evenly spaced tracks of a DVD act as a reflection grating: the reflected maxima of perpendicularly incident light follow the grating equation $d\sin\theta = k\lambda$.
+
+The cardboard is parallel to the disc, that is perpendicular to the incident beam, so the angle is obtained from a right triangle. A maximum is half of the distance $2x$ away from the hole.
 **Formula:** $x = \dfrac{2x}{2}$, $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $d = \dfrac{\lambda}{\sin\theta}$
 **Conversions:** $532\,\text{nm} = 0.532\,\mu\text{m}$; for the angle it is enough that $x$ and $L$ are in the same unit (centimetres).
-**Substitution:** a) The angles are $\theta_1 = \tan^{-1}\dfrac{4.15}{4.0} = 46.05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6.25}{6.0} = 46.17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8.35}{8.0} = 46.23^\circ$ and $\theta_4 = \tan^{-1}\dfrac{10.45}{10.0} = 46.26^\circ$. From them $d_1 = \dfrac{0.532\,\mu\text{m}}{\sin 46.05^\circ} = 0.7389\,\mu\text{m}$, $d_2 = 0.7375\,\mu\text{m}$, $d_3 = 0.7368\,\mu\text{m}$ and $d_4 = 0.7363\,\mu\text{m}$. The sum is $2.9495\,\mu\text{m}$, so $d_\text{avg} = 2.9495\,\mu\text{m} : 4 = 0.7374\,\mu\text{m}$. b) For the second order $\sin\theta_2 = 2 \cdot 0.532\,\mu\text{m} : 0.7374\,\mu\text{m} = 1.44$, which is impossible. The zeroth-order reflection returns along the path of the perpendicularly incident beam through the hole towards the laser, so no dot forms on the cardboard at $k = 0$. c) $\dfrac{0.7374 - 0.74}{0.74} \cdot 100\,\% = -0.36\,\%$.
-**Answer:** $0.74\,\mu\text{m}$, two significant figures like the distance $2x$ (a more precise intermediate result is $0.737\,\mu\text{m}$). No second-order maximum forms, because the value of the sine, $1.44$, is greater than $1$. Two dots of light are seen on the cardboard (the maxima $k = \pm 1$); the zeroth-order reflection returns through the hole towards the laser, so there are three maxima ($k = 0, \pm 1$) but two dots. The mean is $0.36\,\%$ smaller than the reference value.
+**Substitution:** a) The angles are $\theta_1 = \tan^{-1}\dfrac{4.15}{4.0} = 46.05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6.25}{6.0} = 46.17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8.35}{8.0} = 46.23^\circ$ and $\theta_4 = \tan^{-1}\dfrac{10.45}{10.0} = 46.26^\circ$. From them $d_1 = \dfrac{0.532\,\mu\text{m}}{\sin 46.05^\circ} = 0.7389\,\mu\text{m}$, $d_2 = 0.7375\,\mu\text{m}$, $d_3 = 0.7368\,\mu\text{m}$ and $d_4 = 0.7363\,\mu\text{m}$. The sum is $2.9495\,\mu\text{m}$, so $d_\text{avg} = 2.9495\,\mu\text{m} : 4 = 0.7374\,\mu\text{m}$.
+
+b) For the second order $\sin\theta_2 = 2 \cdot 0.532\,\mu\text{m} : 0.7374\,\mu\text{m} = 1.44$, which is impossible.
+
+The zeroth-order reflection returns along the path of the perpendicularly incident beam through the hole towards the laser, so no dot forms on the cardboard at $k = 0$.
+
+c) $\dfrac{0.7374 - 0.74}{0.74} \cdot 100\,\% = -0.36\,\%$.
+**Answer:** $0.74\,\mu\text{m}$, two significant figures like the distance $2x$ (a more precise intermediate result is $0.737\,\mu\text{m}$). No second-order maximum forms, because the value of the sine, $1.44$, is greater than $1$.
+
+Two dots of light are seen on the cardboard (the maxima $k = \pm 1$); the zeroth-order reflection returns through the hole towards the laser, so there are three maxima ($k = 0, \pm 1$) but two dots. The mean is $0.36\,\%$ smaller than the reference value.
 **Reasonableness:** The wavelength is only about $0.7$ times the track spacing, so $\sin\theta_1 = 0.532 : 0.7374 = 0.72$ and the angle $46^\circ$ is possible; the maximum is further to the side than $L$ ($\tan 46^\circ = 1.04$). Different values of $L$ give almost the same $d$, so the data is consistent.
 
 ## fy7-13-L1-09
@@ -229,7 +269,9 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Given:** line density $N = 400$ lines per millimetre, order $k = 2$; from the figure the distance from the grating to the screen $L = 1.20\,\text{m}$ and the position of the second-order maximum $x_2 = 70.0\,\text{cm}$
 **Asked:** the wavelength $\lambda$ of the laser in nanometres
 **Principle:** The screen is perpendicular to the beam, so the angle follows from the right-angled triangle through the tangent, and the direction of the maximum follows the grating equation. In the second-order maximum the path difference is two wavelengths.
-**Reading the figure:** The distance $L$ is read from the dimension line at the bottom of the figure: $L = 1.20\,\text{m}$. The second-order maximum is the one of the two light spots on a side that is farther from the central maximum. Its position is read on the scale: the spot is between $60\,\text{cm}$ and $80\,\text{cm}$, near the middle at $70\,\text{cm}$, so $x_2 \approx 70.0\,\text{cm}$ (reading accuracy about $\pm 1\,\text{cm}$). The first-order spot is closer to the central maximum.
+**Reading the figure:** The distance $L$ is read from the dimension line at the bottom of the figure: $L = 1.20\,\text{m}$. The second-order maximum is the one of the two light spots on a side that is farther from the central maximum.
+
+Its position is read on the scale: the spot is between $60\,\text{cm}$ and $80\,\text{cm}$, near the middle at $70\,\text{cm}$, so $x_2 \approx 70.0\,\text{cm}$ (reading accuracy about $\pm 1\,\text{cm}$). The first-order spot is closer to the central maximum.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta_2 = \dfrac{x_2}{L}$ and $d\sin\theta_2 = 2\lambda$, so $\lambda = \dfrac{d\sin\theta_2}{2}$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2.50 \cdot 10^{-6}\,\text{m}$ and $x_2 = 70.0\,\text{cm} = 0.700\,\text{m}$.
 **Substitution:** $\theta_2 = \tan^{-1}\dfrac{0.700\,\text{m}}{1.20\,\text{m}} = 30.26^\circ$ and $\lambda = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot \sin 30.26^\circ}{2} = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot 0.5039}{2} = 6.30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$

@@ -111,4 +111,9 @@ a["tarkistus-2-noRs"] = 1.8 / 0.25                            # 7,2 A (R_s left 
 a["tarkistus-2-U"] = 12.6 + 0.050 * a["tarkistus-2"]          # terminal voltage 12,9 V
 a["tarkistus-2-U2"] = 14.4 - 0.25 * a["tarkistus-2"]          # the same from the charger's side
 
+# kertaus: phone charger 5,0 V, 2,0 A
+a["kertaus-P"] = 5.0 * 2.0                                   # 10 W
+a["kertaus-R"] = 5.0 / 2.0                                   # 2,5 (U:I)
+a["kertaus-sum"] = 5.0 + 2.0                                 # 7,0
+a["kertaus-inv"] = 2.0 / 5.0                                 # 0,40
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

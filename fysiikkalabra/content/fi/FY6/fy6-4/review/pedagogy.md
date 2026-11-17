@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5b156b425ef70725
+CONTENT-HASH: b85c521e523778fa
 
 ## Blocking
 
 ## Polish
-1. inquiry.json, feedback "Vastuksessa muuttuu varausten energiaa vastuksen sisäenergiaksi" — "vastuksen" twice in one sentence; smoother: "Vastuksessa varausten sähköinen energia muuttuu sisäenergiaksi".
-2. lesson.md "Sarjaankytkentä" — the sentence is now long (energy, internal energy, heat to surroundings); consider ending it at "sisäenergiaksi" and starting a new sentence "Se siirtyy lämpönä ympäristöön."
+- The photo's alt says "satoja pieniä valoja" while the caption says "kymmeniä lamppuja" in a string; harmless, but the two could agree.
+- The caption points to "kytkentätapa ratkaisee, mitä tapahtuu kun yksi rikkoutuu"; fine as a hook, it does not decide the series/parallel answer.
 
 ## Checked
-batch delta review: lesson.md (Sarjaankytkentä, Yleinen virhekäsitys), inquiry.json feedback and the simulation howto ("Mitä suurempi teho vastuksessa muuttuu sisäenergiaksi, sitä oranssimpana se hehkuu"). Energy terminology is consistent with the other fy6 lessons, the howto still says what to do and what the glow means, and the changes touch no figure, number or symbol. Captures not reopened.
+batch delta review: the Christmas-light photo (looked at it: a lit house at night, recognisable) sits after the parallel-branch paragraph, before Kokonaisresistanssi, with the alt and caption in good Finnish; the Ohm's law retrieval prompt now uses one lamp from the string (100 Ω, constant), matching the chapter's context; worked-example stage 1 splits knowns and the asked quantity on their own lines, the asked quantity last.

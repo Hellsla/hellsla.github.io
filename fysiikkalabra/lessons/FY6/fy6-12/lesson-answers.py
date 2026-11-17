@@ -87,4 +87,7 @@ a["siirto-mass-ratio"] = m_xe / m_e                                 # xenon ion 
 a["exit-1"] = -(70 - 20)                                            # electron 20 V -> 70 V: Delta E_p = -50 eV
 a["exit-2"] = 3.0e3 * e                                             # 3,0 keV = 4,806e-16 J
 
+# kertaus: W = F s, 2,0e-15 N over 0,50 m
+a["kertaus-W"] = 2.0e-15 * 0.50                             # 1,0e-15 J
+a["kertaus-W-div"] = 2.0e-15 / 0.50                          # 4,0e-15 J
 print(json.dumps({k: round(v, 6) if abs(v) >= 1e-3 or v == 0 else float(f"{v:.6g}") for k, v in a.items()}))

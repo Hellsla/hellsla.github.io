@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 19551b21747c9115
-
+CONTENT-HASH: 667821c8897abcff
 ## Blocking
-(none)
 
 ## Polish
-- None.
-
 ## Checked
-batch delta review: inquiry step "siirto" question reworded; it now asks for the energy in units of full phone charges with losses included and says "Vastaa latauskertoina"/equivalent, which removes the 1,68 vs one-whole-charge ambiguity. Numbers, answer 1,68, unit and solution unchanged, so the solution and hints still match; the prompt gives the situation first and the question last.
+batch delta review: new retrieval task and feedback (charger power (resistance, sum, inverse distractors)); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.
