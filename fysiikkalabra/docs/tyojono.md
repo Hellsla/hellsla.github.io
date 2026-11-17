@@ -119,6 +119,12 @@ Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final�
 vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
 Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
 
+## 20. Näin opiskelet -sivu (opettaja 2026-11-17)
+Varattu: claude/nain-opiskelet-sivu
+Sivun `nain-opiskelet.html` (+ en/, fi-easy/) pedagoginen ja visuaalinen kehitys: kuusivaiheinen opiskelupolku yhdeksi
+kaavioksi palautesilmukoineen, tarkennetut opiskeluvinkit, palautteen hyödyntäminen. Jaettu muutos (`lang/`, `templates/`,
+`site.css`, `build.py study_guide`): yhdistetään yksin. Luvun oikea rakenne tarkistettu `templates/lesson.html`:stä.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
 **PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
