@@ -304,3 +304,91 @@ $$.
 \end{aligned}
 $$ is known to three digits. The two values of the kinetic energy, $850\,\text{eV}$ and $854\,\text{eV}$, differ from each other by only about $0.5\,\%$, so they agree: conservation of momentum and conservation of energy give the same result. The small difference is due to the change in wavelength $3.66\,\text{pm}$ being known to only three digits.
 **Reasonableness:** The side $p_\text{e}$ of the triangle must be larger than the difference of the photon momenta and smaller than their sum: $0.456 \cdot 10^{-23} < 1.575 \cdot 10^{-23} < 1.818 \cdot 10^{-23}$ (unit $\text{kg}\cdot\text{m/s}$). The angle $120\,{}^\circ$ is close to backscattering, so the result is closer to the sum, as it should be. The electron received about $850\,\text{eV}$, that is, about $5\,\%$ of the energy $17.4\,\text{keV}$ of the incident photon ($E = \dfrac{hc}{\lambda} = 2.794 \cdot 10^{-15}\,\text{J}$), and the wavelength grew by about $5\,\%$, which is of the same order of magnitude.
+
+## fy8-4-L1-09
+**Given:** wavelength of the green line read from the figure $\lambda = 546\,\text{nm}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Asked:** the momentum $p$ of a photon of the green line in units of $10^{-27}\,\text{kg}\cdot\text{m/s}$
+**Principle:** A photon has no mass, but it has momentum that depends only on its wavelength. All the photons of an emission line have the same wavelength, so the momentum of one photon follows from the wavelength of the line.
+**Reading the graph:** The small ticks of the wavelength scale are $10\,\text{nm}$ apart and the numbers $50\,\text{nm}$ apart. The green line is to the left of the number $550\,\text{nm}$, about $4\,\text{nm}$ below it, so $\lambda = 546\,\text{nm}$. The other lines are violet at about $405\,\text{nm}$, blue at about $436\,\text{nm}$ and yellow at about $577\,\text{nm}$ and $579\,\text{nm}$. The reading is secure to a few nanometres, so the momentum is secure to better than $1\,\%$.
+**Formula:** $p = \dfrac{h}{\lambda}$
+**Conversions:** $546\,\text{nm} = 546 \cdot 10^{-9}\,\text{m}$. Unit: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$.
+**Substitution:** $$
+\begin{aligned}
+p &= \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{546 \cdot 10^{-9}\,\text{m}} \\
+&= 1.2136 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}
+\end{aligned}
+$$
+**Answer:** $1.21 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, three significant figures as in the read wavelength $546\,\text{nm}$.
+**Reasonableness:** According to the theory, the momentum of a $500\,\text{nm}$ photon is $1.3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$. The wavelength $546\,\text{nm}$ is a little longer, so the momentum is a little smaller. The blue line at $436\,\text{nm}$ would give a larger and the yellow line at $577\,\text{nm}$ a smaller momentum, and green lies between them.
+
+## fy8-4-L1-10
+**Given:** wavelength of the X-ray photon $\lambda = 0.0711\,\text{nm}$; from the table (MAFY, *Properties of particles*, electron) the rest mass $m_\text{e} = 0.511\,\tfrac{\text{MeV}}{\text{c}^2}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Asked:** the energy $E$ of the photon as a percentage of the rest energy $m_\text{e}c^2$ of the electron
+**Principle:** The energy of a photon is $E = \dfrac{hc}{\lambda}$. By the equivalence of mass and energy the rest energy of the electron is $m_\text{e}c^2$, and the mass unit $\tfrac{\text{MeV}}{\text{c}^2}$ means that the rest energy is the number of the table in megaelectronvolts: $m_\text{e}c^2 = 0.511\,\text{MeV}$. Comparing the energy of the photon with the rest energy shows whether the photon's energy is small or large next to the electron's energy, which decides how much of its energy a photon loses in the Compton effect.
+**Formula:** $E = \dfrac{hc}{\lambda}$ and the share $= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%$
+**Conversions:** $0.0711\,\text{nm} = 0.0711 \cdot 10^{-9}\,\text{m}$. Rest energy: $0.511\,\text{MeV} = 0.511 \cdot 10^{6}\,\text{eV} = 5.11 \cdot 10^{5}\,\text{eV}$. The photon's energy is changed from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Substitution:** First the product $hc$:
+$$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Then the energy of the photon in joules:
+$$
+\begin{aligned}
+E &= \dfrac{hc}{\lambda} \\
+&= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0.0711 \cdot 10^{-9}\,\text{m}} \\
+&= 2.7939 \cdot 10^{-15}\,\text{J}
+\end{aligned}
+$$
+Then in electronvolts:
+$$
+\begin{aligned}
+E &= \dfrac{2.7939 \cdot 10^{-15}\,\text{J}}{1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
+&= 1.744 \cdot 10^{4}\,\text{eV}
+\end{aligned}
+$$
+Finally the comparison with the rest energy:
+$$
+\begin{aligned}
+\dfrac{E}{m_\text{e}c^2} \cdot 100\,\% &= \dfrac{1.744 \cdot 10^{4}\,\text{eV}}{5.11 \cdot 10^{5}\,\text{eV}} \cdot 100\,\% \\
+&= 3.413\,\%
+\end{aligned}
+$$
+**Answer:** $3.41\,\%$, three significant figures as in the wavelength $0.0711\,\text{nm}$ and the rest energy $0.511\,\text{MeV}$. The rest mass is the value of the MAFY table; the editions of the tables may differ slightly, and an answer within about $\pm 3\,\%$ is accepted.
+**Reasonableness:** Estimate: $$
+\begin{aligned}
+E &\approx \dfrac{1240\,\text{eV}\,\text{nm}}{0.0711\,\text{nm}} \\
+&\approx 17\,400\,\text{eV} \\
+\dfrac{E}{m_\text{e}c^2} &\approx \dfrac{17.4\,\text{keV}}{511\,\text{keV}} \\
+&\approx 0.034
+\end{aligned}
+$$ The energy of the photon is only about three per cent of the rest energy, so the electron receives only a small part of the energy in the collision: in the Compton effect the wavelength then grows by only a few per cent, as in the scattering experiment where the wavelength $0.0711\,\text{nm}$ grew to $0.0735\,\text{nm}$, about $3.4\,\%$. A photon of visible light has an energy a thousand times smaller still.
+
+## fy8-4-L2-09
+**Given:** energy levels read from the figure $E_3 = -3.0\,\text{eV}$ and $E_1 = -8.0\,\text{eV}$; $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
+**Asked:** the momentum $p$ of the emitted photon in units of $10^{-27}\,\text{kg}\cdot\text{m/s}$
+**Principle:** When an atom moves from one level to another it emits one photon whose energy is the difference of the energies of the levels, because energy is conserved (the recoil is ignored). The momentum of the photon follows from its energy: $p = \dfrac{E}{c}$.
+**Reading the graph:** The vertical axis is energy in electronvolts from zero to $-9\,\text{eV}$, and the grid spacing is $1\,\text{eV}$. The level $E_3$ is at the third grid line, $-3.0\,\text{eV}$, and the level $E_1$ is lowest at $-8.0\,\text{eV}$. The levels are five grid spacings apart, so the energy of the photon is $5.0\,\text{eV}$.
+**Formula:** $E = E_3 - E_1$ and $p = \dfrac{E}{c}$
+**Conversions:** The energy in joules: $E = 5.0\,\text{eV} = 5.0 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 8.01 \cdot 10^{-19}\,\text{J}$.
+**Substitution:** First the energy of the photon:
+$$
+\begin{aligned}
+E &= E_3 - E_1 \\
+&= -3.0\,\text{eV} - (-8.0\,\text{eV}) \\
+&= 5.0\,\text{eV}
+\end{aligned}
+$$
+Then the momentum:
+$$
+\begin{aligned}
+p &= \dfrac{E}{c} \\
+&= \dfrac{8.01 \cdot 10^{-19}\,\text{J}}{2.998 \cdot 10^{8}\,\text{m/s}} \\
+&= 2.672 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}
+\end{aligned}
+$$
+**Answer:** $2.7 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, two significant figures as in the read energies $-3.0\,\text{eV}$ and $-8.0\,\text{eV}$ (the exact calculated value $2.67 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$ is accepted).
+**Reasonableness:** The wavelength of the photon is $\lambda = \dfrac{hc}{E} = \dfrac{1240\,\text{eV}\,\text{nm}}{5.0\,\text{eV}} \approx 248\,\text{nm}$, which is ultraviolet. Comparison: the momentum of a $500\,\text{nm}$ photon is $1.3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, and a photon with half the wavelength has about twice the momentum, $2.7 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$.

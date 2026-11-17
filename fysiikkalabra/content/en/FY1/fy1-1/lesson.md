@@ -411,7 +411,12 @@ The diameter of a hydrogen atom is about $1.1\cdot10^{-10}\,\text{m}$ and the di
 
 <!-- vaihe -->
 
-**Given and find.** The diameter of the hydrogen atom is $d_\text{atom} = 1.1\cdot10^{-10}\,\text{m}$ and the diameter of the proton is $d_\text{proton} = 1.7\cdot10^{-15}\,\text{m}$. We are asked for the ratio of the sizes $k$ and the number of steps of powers of ten.
+**Given and find.**
+
+- The diameter of the hydrogen atom is $d_\text{atom} = 1.1\cdot10^{-10}\,\text{m}$ and
+- the diameter of the proton is $d_\text{proton} = 1.7\cdot10^{-15}\,\text{m}$.
+
+We are asked for the ratio of the sizes $k$ and the number of steps of powers of ten.
 
 <!-- vaihe -->
 

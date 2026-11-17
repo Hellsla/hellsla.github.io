@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f08e184ae3cb1022
-SCOPE: delta added-exercise from 52acd1437917e580 base 9df3f06ae3cc
+CONTENT-HASH: a3bc2e7e26e3fc05
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-3-L2-09 mallivastaus c) — "ja seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA)" names ICARUS twice and "seuraavaksi" reads oddly — "ja myöhemmin kaikki neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasivat kulkuajan, joka sopii valon nopeuteen."
-- [Minor] fy1-3-L2-09 mallivastaus b) — the quotation ”20 miljoonasosaa” renders with straight quotes — use Finnish ”…” on both sides.
-- [Minor] fy1-3-L2-09 mallivastaus c) — "kaksi mahdollista virhelähdettä" then "Myöhemmin … selittyi viallisella osalla" leaves open how the two relate — add one linking clause.
+- [Minor] solutions.md, 3-18 Mallivastaus c) — the new paragraph names ICARUS twice and says "kulkuajan sopivaksi valon nopeuteen" and then "kulkuajan, joka sopii valon nopeuteen" within one sentence, so it repeats itself — e.g. "Riippumaton ICARUS-koe mittasi kulkuajan, joka sopi valon nopeuteen, ja sen jälkeen neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) saivat saman tuloksen."
 
 ## Checked
-- Opened fy1-3-open-exercises-L2-1280 parts 12, 13 and 14 (task 2-?, all solution blocks, Vastaus, Järkevyys) at 1280 px.
-- Own capture of the open card at 360 px (scrollWidth 360): the three calculation chains are aligned at the equals signs, rows break outside numbers and units, no clipping.
-- Units, fractions, \cdot, decimal commas and the case endings (730 km:n, 60 ns:n) are correct; the set still reads as one.
+- delta 8c md-paragraphs (solutions.md only): the split model answers and answer notes in the error, reaction-time, outlier (3-22), agreement (3-23), pendulum and neutrino (3-18) tasks.
+- opened full size: L2-1280-13, -14 (neutrino b-d, Vastaus, Järkevyys); L3-1280-4, -5, -6 (3-22 and 3-23 incl. new closing paragraphs).
+- contact-8 (#85-#96) for the surrounding pages.
+- New paragraphs are separate blocks with even spacing; display chains, panels and Järkevyys boxes intact; nothing clipped. No figures in the delta.
+- Captures are from the lesson's review/shots folder (the exercise folder holds none); same hash.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

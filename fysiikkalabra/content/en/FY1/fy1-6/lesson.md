@@ -646,7 +646,13 @@ A stone is dropped from rest from a bridge, and it hits the water $1.5\,\text{s}
 
 <!-- vaihe -->
 
-**Given and find.** The duration of the fall is $t = 1.5\,\text{s}$, the stone starts from rest and the acceleration of free fall is $g = 9.81\,\text{m/s}^2$. We want the speed $v$ at the moment of impact, first in $\text{m/s}$ and then in $\text{km/h}$.
+**Given and find.**
+
+- The duration of the fall is $t = 1.5\,\text{s}$,
+- the stone starts from rest and
+- the acceleration of free fall is $g = 9.81\,\text{m/s}^2$.
+
+We want the speed $v$ at the moment of impact, first in $\text{m/s}$ and then in $\text{km/h}$.
 
 <!-- vaihe -->
 

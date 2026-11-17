@@ -606,7 +606,9 @@ Students investigate the motion of a toy car. In a trial run the speed of the ca
 
 <!-- vaihe -->
 
-**Given and unknown.** Speed $v = 0.42\,\text{m/s}$, uncertainty of the time $\Delta t = 0.2\,\text{s}$ and largest allowed relative uncertainty $\varepsilon_\text{max} = 5.0\,\% = 0.050$. We are asked for the shortest distance $s_\text{min}$.
+**Given and unknown.** Speed $v = 0.42\,\text{m/s}$, uncertainty of the time $\Delta t = 0.2\,\text{s}$ and largest allowed relative uncertainty $\varepsilon_\text{max} = 5.0\,\% = 0.050$.
+
+We are asked for the shortest distance $s_\text{min}$.
 
 <!-- vaihe -->
 

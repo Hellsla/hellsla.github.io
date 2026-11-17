@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1c48b203dab533bb
+CONTENT-HASH: 82ebf2e6ebf86817
 
 ## Blocking
-- none (round 1 Major resolved: the Voyager 2 quotation again wraps as running text; the full stops follow `km` and `AU` on the same line, no lone punctuation, no display blocks inside the quotation)
+(none)
 
 ## Polish
-- [Minor] exercises.json, Voyager 2 student solution (capture 14) — where two split inline formulas meet on one line, the gap before the relation sign is only a word space ("vt= 15,341 km/s") — acceptable; if the build can, give the continuation formula a leading `{}` so the `=` gets its relation spacing on both sides.
-- [Minor] solutions.md (capture 07) — `(` stays alone at a line end before the wrapped formula (carried from round 1, untouched text) — keep the parenthesis with the formula.
+(none)
 
 ## Checked
-- delta 5d reflow, round 2 (only change: the two Voyager formulas back to split inline formulas); 360 px captures, every box open.
-- opened at full resolution: 14 (= 15–18, byte-identical), 19 (hint).
-- opened as contact sheets: 01, 02, 03 (= 04), 05, 06, 07 (= 08), 09, 10, 11 (= 12), 13: unchanged from round 1, equals signs aligned, no row broken inside a number or unit, nothing clipped.
-- no figures in the delta.
+- Delta (md-paragraphs, solutions.md only): opened 1280 px open-solution captures of fy1-1-L1-06 (1280 L1 part 6), L2-07 (L2 part 7), L3-04 (L3 parts 4 and 5).
+- Each changed Mallivastaus / Vastaus is now several short paragraphs inside the solution card; spacing between paragraphs is even, formulas and the aligned chains unchanged, nothing clipped or overflowing, hierarchy (labelled blocks) intact. Words unchanged, so the Finnish stands as previously passed.
+- Not every changed item had its own capture opened; the change is the same paragraph-break pattern in each.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

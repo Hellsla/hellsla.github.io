@@ -479,7 +479,9 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa ja saa tu
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Mittauksia on $n = 6$, ja pienin tulos on $t_\text{min} = 3{,}07\,\text{s}$ ja suurin $t_\text{max} = 3{,}31\,\text{s}$. Kysytään keskiarvoa $\bar{t}$, virhearviota $\Delta t$ ja suhteellista epävarmuutta $\varepsilon$.
+**Tunnetut ja kysytty.** Mittauksia on $n = 6$, ja pienin tulos on $t_\text{min} = 3{,}07\,\text{s}$ ja suurin $t_\text{max} = 3{,}31\,\text{s}$.
+
+Kysytään keskiarvoa $\bar{t}$, virhearviota $\Delta t$ ja suhteellista epävarmuutta $\varepsilon$.
 
 <!-- vaihe -->
 

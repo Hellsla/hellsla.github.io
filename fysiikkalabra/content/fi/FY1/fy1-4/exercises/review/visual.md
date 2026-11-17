@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 72a265bfa9067748
-SCOPE: delta added-exercise from c109fb6875e61c4c base 9df3f06ae3cc
+CONTENT-HASH: ce1397695e53d23f
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-4-L2-09 task (4-18), data table — the table caption "Ilman lämpötila vuorokauden aikana (keksitty esimerkkiaineisto)" wraps to five lines in a narrow table that fills under half the card, leaving an empty right side; and the table comes after the sentence "Vastauskenttään tulee …", so the answer instruction is not the last thing before the field. Let the caption use the card width, or move the table before that sentence.
-- [Minor] fy1-4-L2-09 solution — "Kaava" shows the first formula as a two-row block and the model $T(t)=\ldots$ as plain text after it ("ja lineaarinen malli …"); reads fine, only slightly uneven.
+- none
 
 ## Checked
-- fy1-4-open-exercises-L2-1280-12 (task 4-18 with its data table, answer field, opened Annettu) and -13, -14 (the whole solution: Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys) at readable resolution.
-- check_layout.py fy1-4 --width 360: OK in fi, en and fi-easy.
-- Maths: KaTeX renders, units upright with thin space, decimal comma in the table and prose, ${}^\circ\text{C/h}$ correct, chain aligned at `=` in rows, answer set apart, order principle → formula → substitution → result → interpretation kept. No plain-text quantities. No figure in the exercise (data table only; the graph is the student's task).
-- Finnish: instructions say what to do (a to d), the situation comes first and the question last; terms match the glossary (kuvaaja, lineaarinen malli, kulmakerroin as muutosnopeus). The set still reads as one with its neighbours.
-- The other 22 exercises were not re-reviewed (unchanged).
+- delta 8c md-paragraphs (solutions.md only): the split model answers and answer notes in the slope, spring-overload, error-analysis, row-error and temperature tasks.
+- opened full size: L3-1280-3 (cooling and 4-21 Vastaus), L2-1280-13 (temperature task a-c), L3-1280-8 (slope uncertainty Vastaus and Järkevyys); contact-7 and contact-8 (#73-#93) for the rest, incl. the row-error task 4-17 and the spring task.
+- New paragraphs are separate blocks with even spacing; display chains, units and Järkevyys panels intact; nothing clipped. No figures in the delta.
+- Captures are from the lesson's review/shots folder (the exercise folder holds none); same hash.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

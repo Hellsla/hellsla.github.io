@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 226c539fa114bd81
-SCOPE: delta added-exercise from 46d8fb2ad4c08785 base 9df3f06ae3cc
+CONTENT-HASH: 0e37eae0e84f1918
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy1-2-L2-08 Mallivastaus b) — "ne ovat sitä suurempia, mitä kauemmin kappaleet muuttuvat" is vague for an S2 reader — "Ero kasvaa sitä mukaa, kun kappaleet muuttuvat vuosien kuluessa."
-- [Minor] fy1-2-L2-08 Muunnokset — the two conversions stack in one panel with their own rows; fine, but "25 µg" row could be separated by a blank line as in the capture (already is); no action unless the panel is reworked.
+(none)
 
 ## Checked
-- fy1-2 L2 captures 1280 px, parts 9, 10, 11 (task 2-18 text, input, Annettu, Kaava, Muunnokset, Sijoitus rows, Mallivastaus a–d, Vastaus, Järkevyys): KaTeX renders, equals aligned, units upright, decimal comma, nothing clipped.
-- No new figure. The 352-360 px and 1024-1920 px captures of the open solution are not in the packet; check_layout.py --width 360 was run (whole site, summary only) and showed no failure of this lesson's exercises that I could read.
+- Delta (md-paragraphs, solutions.md only): opened 1280 px open-solution captures of fy1-2 L1 part 9 (task 2-9 paragraph break) and L2 part 8 (L2-08 area).
+- Each changed Mallivastaus / Vastaus is now several short paragraphs inside the solution card; spacing between paragraphs is even, formulas and the aligned chains unchanged, nothing clipped or overflowing, hierarchy (labelled blocks) intact. Words unchanged, so the Finnish stands as previously passed.
+- Not every changed item had its own capture opened; the change is the same paragraph-break pattern in each.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

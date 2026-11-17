@@ -364,7 +364,15 @@ Voyager 2 crossed the heliopause on 5 November 2018 at a distance of $s_0 = 119.
 
 <!-- vaihe -->
 
-**Given and find.** $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$ and $1\,\text{AU} = 149\,597\,870.7\,\text{km}$. The time interval from 5 November 2018 to 5 November 2026 is 8 years, including the leap days of 2020 and 2024: $8 \cdot 365 + 2 = 2922$ days. The quantity to find is the distance $s$ from the Sun.
+**Given and find.**
+
+- $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018),
+- $v = 15.341\,\text{km/s}$ and
+- $1\,\text{AU} = 149\,597\,870.7\,\text{km}$.
+
+The time interval from 5 November 2018 to 5 November 2026 is 8 years, including the leap days of 2020 and 2024: $8 \cdot 365 + 2 = 2922$ days.
+
+The quantity to find is the distance $s$ from the Sun.
 
 <!-- vaihe -->
 
@@ -400,7 +408,13 @@ s &= s_0 + v t \\
 
 <!-- vaihe -->
 
-**Reasonableness.** A speed of $15\,\text{km/s}$ covers in a year about $15\,\text{km/s} \cdot 3.16 \cdot 10^{7}\,\text{s} \approx 4.7 \cdot 10^{8}\,\text{km} \approx 3.2\,\text{AU}$, so in 8 years the probe advances about $26\,\text{AU}$ and $119.0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$. For 15 February 2026 the same model gives a distance from the Sun of $142.6\,\text{AU}$. The NASA/JPL Voyager mission status page gave the probe's distance from the Earth in February 2026 as $143.05\,\text{AU}$. The Earth orbits the Sun, so the probe's distance from the Earth differs from its distance from the Sun by up to about $1\,\text{AU}$ over the year. The difference of $0.5\,\text{AU}$ is smaller than this: the model and the observation agree to within about $1\,\text{AU}$, and this comparison cannot test the model more precisely. That is less than one percent of the distance, so the constant-speed model suits predictions over a few years.
+**Reasonableness.** A speed of $15\,\text{km/s}$ covers in a year about $15\,\text{km/s} \cdot 3.16 \cdot 10^{7}\,\text{s} \approx 4.7 \cdot 10^{8}\,\text{km} \approx 3.2\,\text{AU}$, so in 8 years the probe advances about $26\,\text{AU}$ and $119.0\,\text{AU} + 26\,\text{AU} \approx 145\,\text{AU}$.
+
+For 15 February 2026 the same model gives a distance from the Sun of $142.6\,\text{AU}$. The NASA/JPL Voyager mission status page gave the probe's distance from the Earth in February 2026 as $143.05\,\text{AU}$.
+
+The Earth orbits the Sun, so the probe's distance from the Earth differs from its distance from the Sun by up to about $1\,\text{AU}$ over the year.
+
+The difference of $0.5\,\text{AU}$ is smaller than this: the model and the observation agree to within about $1\,\text{AU}$, and this comparison cannot test the model more precisely. That is less than one percent of the distance, so the constant-speed model suits predictions over a few years.
 
 ## Common misconception
 Many people think that in uniform motion the position doubles when the time doubles. This happens only if the motion starts from the zero point. When a trolley starts at $s_0 = 6\,\text{m}$ and moves at $2.0\,\text{m/s}$, it is at $10\,\text{m}$ at $2.0\,\text{s}$ and at $14\,\text{m}$ at $4.0\,\text{s}$, not at $20\,\text{m}$. The distance, however, does double: $4.0\,\text{m}$ becomes $8.0\,\text{m}$. Another mistake is to calculate the speed as the quotient of position and time $s : t$ instead of the quotient of the change in position and the time interval: the speed is $\Delta s : \Delta t$, not $s : t$, when $s_0 \neq 0$.

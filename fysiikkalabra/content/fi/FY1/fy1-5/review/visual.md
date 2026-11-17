@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d7223223c75fe9a4
+CONTENT-HASH: 5a6ad2a9f70d1519
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Stage 4: the inline fractions $\tfrac{1}{149\,597\,870{,}7}$ are small at 390 px but legible.
 
 ## Checked
-delta 5d reflow, round 1: opened contact sheet of all fi/fy1-5 captures at 360 px (captures 01-03); no clipping, equals signs aligned, rows break outside numbers and units.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+- Opened fy1-5-example-390-1 and -2 (bullets, question paragraph, stage 7 split into paragraphs); layout intact.
