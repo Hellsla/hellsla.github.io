@@ -1,0 +1,172 @@
+{
+ "title": "Listen & Watch Physics",
+ "subtitle": "Podcasts, documentaries and videos in English",
+ "description": "English-language physics podcasts, documentaries and videos for upper-secondary students, by module FY1–FY8.",
+ "intro": [
+  "Hear and see the physics of your modules in the words scientists use. Every programme here is made in English and is linked to the publisher's own page.",
+  "Pick your module, or choose only podcasts, documentaries or videos. You do not need to understand every word: start with a short programme."
+ ],
+ "featured_title": "A good place to start",
+ "other_lang": {
+  "lang": "fi",
+  "lead": "Prefer physics content in Finnish?",
+  "text": "Explore our Finnish-language podcasts, documentaries and science videos.",
+  "link": "Explore Finnish resources →"
+ },
+ "items": [
+  {
+   "id": "en-nasa-rocket",
+   "language": "en",
+   "title": "Rocket Assembly Required",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/rocket-assembly-required/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "rockets",
+    "propulsion",
+    "spaceflight"
+   ],
+   "durationMinutes": null,
+   "description": "NASA engineers explain the many steps of preparing a large rocket to take people back to the Moon. A real-life look at what it takes to launch something heavy against gravity.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-dart",
+   "language": "en",
+   "title": "Defending the Planet from Asteroids",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/defending-the-planet-from-asteroids/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "asteroids",
+    "collisions",
+    "DART"
+   ],
+   "durationMinutes": null,
+   "description": "Three scientists talk about what asteroids can tell us about the early solar system and how NASA would respond if one were heading for Earth. Good background for momentum and collisions.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-asteroid-name",
+   "language": "en",
+   "title": "An Asteroid by Any Other Name",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/an-asteroid-by-any-other-name-with-latif-nasser/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "asteroids",
+    "orbits",
+    "observation"
+   ],
+   "durationMinutes": null,
+   "description": "How do astronomers spot, track and manage every space rock near Earth? A look at the observing and orbit work behind planetary defence.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-space-weather",
+   "language": "en",
+   "title": "Sun Series: What Is Space Weather?",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/sun-series-space-weather/",
+   "type": "podcast",
+   "modules": [
+    "FY7"
+   ],
+   "topics": [
+    "magnetic fields",
+    "charged particles",
+    "solar storms"
+   ],
+   "durationMinutes": null,
+   "description": "Meet a team that monitors eruptions of radiation and plasma from the Sun, and revisit the strongest geomagnetic storm on record.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-spectrum",
+   "language": "en",
+   "title": "Introduction to the Electromagnetic Spectrum",
+   "source": "NASA Science",
+   "url": "https://science.nasa.gov/learn/heat/resource/introduction-to-the-electromagnetic-spectrum/",
+   "type": "video",
+   "modules": [
+    "FY7"
+   ],
+   "topics": [
+    "electromagnetic waves",
+    "radiation",
+    "spectrum"
+   ],
+   "durationMinutes": 5,
+   "description": "A five-minute video that places radio waves, visible light, X-rays and the rest on one scale. A quick way to revise the electromagnetic spectrum.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-dark-side",
+   "language": "en",
+   "title": "Welcome to the Dark Side",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/roman-dark-side-encore/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "dark energy",
+    "dark matter",
+    "cosmology"
+   ],
+   "durationMinutes": null,
+   "description": "How scientists study some of the biggest open questions in physics, and why the Roman Space Telescope is built to test ideas about dark energy.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-black-hole",
+   "language": "en",
+   "title": "Inside a Black Hole",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/inside-a-black-hole/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "black holes",
+    "relativity"
+   ],
+   "durationMinutes": null,
+   "description": "Two astrophysicists describe what a black hole really is and what it might be like to go hunting for one. A conversation, so expect spoken explanations rather than calculations.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-webb",
+   "language": "en",
+   "title": "Webb Space Telescope: Into the Unknown",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/webb-space-telescope-into-the-unknown/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "infrared astronomy",
+    "space telescopes"
+   ],
+   "durationMinutes": null,
+   "description": "The first of four episodes on the James Webb Space Telescope and the science it was built to do, from the first stars to distant planets.",
+   "verified": true
+  }
+ ]
+}

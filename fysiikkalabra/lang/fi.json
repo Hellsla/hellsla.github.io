@@ -32,6 +32,7 @@
     "resume_clear_confirm": "Tyhjennetäänkö eteneminen? Lukujen vaihemerkinnät ja Jatka-rivi poistetaan tästä selaimesta. Vastauksesi, ratkaisusi ja itsearviosi säilyvät.",
     "modules": "Moduulit",
     "reading_tips": "Kirjavinkit",
+    "media_nav": "Kuuntele ja katso",
     "booklets": "Vihkot",
     "teacher_nav": "Opettajalle",
     "reading_loan": "Lainattavissa Laurilta",
@@ -3180,6 +3181,17 @@
     "total_title": "Kokeen pisteet",
     "total_note": "Monivalinnat pisteyttää sivu, kun avaat niiden mallivastauksen. Muut pisteet ovat oma arviosi. Valinnaisista osista lasketaan parhaat tehtävät sääntöjen mukaan.",
     "revise": "Jos jokin tehtävä jäi heikoksi, palaa luvuille, jotka on mainittu tehtävän kohdassa Taidot luvuista."
+  },
+  "media": {
+    "module": "Moduuli",
+    "type": "Tyyppi",
+    "type_podcast": "Podcast",
+    "type_documentary": "Dokumentti",
+    "type_video": "Opetusvideo",
+    "minutes": "{{n}} min",
+    "short": "Vain lyhyet (alle {{n}} min)",
+    "count": "Näytetään {{n}}",
+    "none": "Ei sisältöjä näillä valinnoilla"
   },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",

@@ -1,0 +1,49 @@
+{
+ "title": "Kuuntele ja katso fysiikkaa",
+ "subtitle": "Podcastit, dokumentit ja videot suomeksi",
+ "description": "Suomenkielisiä fysiikan podcasteja, dokumentteja ja opetusvideoita lukiolaisille moduuleittain FY1–FY8.",
+ "intro": [
+  "Fysiikkaa voi opiskella myös kuuntelemalla ja katsomalla. Tähän on koottu suomenkielisiä ohjelmia, joiden sisältö on tarkistettu ja linkki toimii.",
+  "Valitse oma moduulisi tai vain podcastit, dokumentit tai videot. Lyhyet ohjelmat sopivat hyvin aloitukseen."
+ ],
+ "featured_title": "Hyvä paikka aloittaa",
+ "other_lang": {
+  "lang": "en",
+  "lead": "Haluatko harjoitella myös fysiikan englantia?",
+  "text": "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Samat fysiikan ilmiöt avautuvat uudesta näkökulmasta – samalla opit alan englanninkielistä sanastoa.",
+  "link": "Tutustu englanninkielisiin sisältöihin →"
+ },
+ "items": [
+  {
+   "id": "fi-yle-mp3",
+   "language": "fi",
+   "title": "Fysiikan mp3-kurssi",
+   "source": "Yle Oppiminen",
+   "url": "https://yle.fi/a/20-149212",
+   "type": "podcast",
+   "modules": [
+    "FY1",
+    "FY2",
+    "FY3",
+    "FY4",
+    "FY5",
+    "FY6",
+    "FY7",
+    "FY8"
+   ],
+   "topics": [
+    "fysiikan historia",
+    "liikeoppi",
+    "Newtonin lait",
+    "energia",
+    "aaltoliike",
+    "radioaktiivisuus"
+   ],
+   "durationMinutes": null,
+   "description": "Kahdeksan radio-ohjelmaa fysiikan peruskäsitteistä: fysiikan historiaa, liikeoppia, Newtonin lakeja, energiaa, aaltoliikettä ja radioaktiivisuutta. Kuuntele ohjelmat vaikka matkalla kouluun.",
+   "difficulty": "perus",
+   "note": "Vanhempi aineisto: ohjelmat on tehty 1990-luvun lopulla eivätkä ne noudata nykyistä opetussuunnitelmaa. Sisältö on silti pätevää, mutta ota ohjelmien ikä huomioon. Kunkin ohjelman kesto on noin 30 minuuttia.",
+   "verified": true
+  }
+ ]
+}

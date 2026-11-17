@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -1499,6 +1499,14 @@ def build_language(lang):
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
     if rt: (out / reading_tips.PAGE).write_text(page(rt["title"], reading_tips.body(T, lang), f'<a href="index.html">{T("site.name")}</a> › {esc(rt["title"])}',
                                               reading_tips.PAGE, rt["description"], main_class="reading reading-tips"))
+    # Kuuntele ja katso fysiikkaa (teacher 2026-11-17, scripts/media_tips.py): podcasts, documentaries and videos, linked from every header.
+    # Its note to the other language's page: fi and fi-easy -> en, en -> fi (a page every language builds, so the link never misses).
+    if media_tips.source_exists():
+        mt = media_tips.load(lang)
+        other = f"{UP}{media_tips.PAGE}" if lang == "en" else f"{'../' if lang != i18n.SOURCE else ''}en/{media_tips.PAGE}"
+        mnames = {c: course_text(c, curriculum[c])["title"] for c in media_tips.MODULES if c in curriculum}
+        (out / media_tips.PAGE).write_text(page(mt["title"], media_tips.body(T, lang, mnames, other), f'<a href="index.html">{T("site.name")}</a> › {esc(mt["title"])}',
+                                                 media_tips.PAGE, mt["description"], main_class="reading reading-tips media-page"))
     # Vihkot (teacher 2026-11-07, scripts/booklets.py): the printable A5 books of the courses, linked from every header
     bk_titles = {c: course_text(c, curriculum[c])["title"] for c in curriculum if c.startswith("FY")}
     (out / booklets.PAGE).write_text(page(T("site.booklets"), booklets.body(T, lang, bk_titles, lambda c: module_icons.img(c, 40)),
@@ -1586,7 +1594,7 @@ def build_language(lang):
                 removed.append(lid if lang == i18n.SOURCE else f"{lang}/{lid}")
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {old_page.relative_to(LIVE)} is on the live site but its reviews are not current ({why}); this build removes it")
     pre = out.relative_to(SITE).as_posix() + "/" if out != SITE else ""
-    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + lt_built + jk_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
+    expected.extend(pre + n for n in ["index.html", ABOUT] + ([PRIVACY] if priv_md else []) + ([TEACHER_PAGE] if teacher_built else []) + ([concept_cards.APP] if concept_cards.modules(concept_cards.data_lang(lang)) else []) + ([reading_tips.PAGE] if reading_tips.SOURCE.is_file() else []) + ([media_tips.PAGE] if media_tips.source_exists() else []) + [booklets.PAGE, STUDY_PAGE] + ahjo_built + kr_built + lt_built + jk_built + [f"{c}.html" for c, _ in modules] + [f"{c}.html" for c in local] + [f"{i}.html" for i in built_ids] + [f"{i}.html" for i in inv_built] + [f"{g}.html" for g in guide_built] + [practice.page_name(c) for c in practice_built] + [practice.page_name(c + practice.EXAM) for c in exam_built] + mixer_built
                     + [f"{u}.html" for u, ls in unit_pub.items() if lang in ls and not only])
     if SITE.name == "site.tmp" and lang in units.languages():   # a unit that lost its reviews leaves the site only with a warning
         for u in units.ids(lang):

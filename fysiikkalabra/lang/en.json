@@ -32,6 +32,7 @@
     "resume_clear_confirm": "Clear your progress? The chapters' stage marks and the Continue row are removed from this browser. Your answers, solutions and self-assessments are kept.",
     "modules": "Modules",
     "reading_tips": "Book tips",
+    "media_nav": "Listen & Watch",
     "booklets": "Booklets",
     "teacher_nav": "For teachers",
     "reading_loan": "Borrow from Lauri",
@@ -3180,6 +3181,17 @@
     "total_title": "Exam score",
     "total_note": "The page scores the multiple-choice items when you open their model answer. The other points are your own assessment. In the optional parts the best tasks count under the rules.",
     "revise": "If a task went badly, go back to the chapters listed under Skills from chapters for that task."
+  },
+  "media": {
+    "module": "Module",
+    "type": "Type",
+    "type_podcast": "Podcast",
+    "type_documentary": "Documentary",
+    "type_video": "Educational video",
+    "minutes": "{{n}} min",
+    "short": "Short only (under {{n}} min)",
+    "count": "Showing {{n}}",
+    "none": "Nothing matches these choices"
   },
   "booklets": {
     "lead": "Printable A5 booklets: the theory and worked examples of each course in one book. Tasks, simulations and model solutions are online: every chapter starts with a QR code to its page.",
