@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6345880dec9d5f1c
+CONTENT-HASH: 6f05942d807ec312
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: worked example step 7 at 390 px (example-390-2); paragraph splits read naturally, formulas and units unchanged and rendered in KaTeX, nothing clipped.
+batch delta review: Pohdinta stage capture (stage-herata-390) opened, phenomenon text, question and the optional retrieval box legible at 390 px; retrieval prompt, choices and feedback read from the diff (all quantities in LaTeX with units, no plain quantities).
