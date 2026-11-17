@@ -31,7 +31,7 @@
         {
           "text": "about $21\\,\\text{s}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.40\\,\\text{kg} \\cdot 10\\,\\text{K} \\\\ &= 16\\,760\\,\\text{J} \\end{aligned}$$ $$\\begin{aligned} t &= \\frac{Q}{P} \\\\ &= \\frac{16\\,760\\,\\text{J}}{800\\,\\text{W}} \\\\ &\\approx 21\\,\\text{s} \\end{aligned}$$."
+          "feedback": "Correct: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.40\\,\\text{kg} \\cdot 10\\,\\text{K} \\\\ &= 16\\,760\\,\\text{J} \\end{aligned}$$ The time follows from the power: $$\\begin{aligned} t &= \\frac{Q}{P} \\\\ &= \\frac{16\\,760\\,\\text{J}}{800\\,\\text{W}} \\\\ &\\approx 21\\,\\text{s} \\end{aligned}$$."
         },
         {
           "text": "about $17\\,\\text{kJ}$",

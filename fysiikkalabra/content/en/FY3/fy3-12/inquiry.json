@@ -23,11 +23,11 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap from an earlier lesson",
-      "prompt": "In the lesson *Internal energy, heat and conservation of energy* the change in internal energy was written as $\\Delta U = Q + W$. On a winter night a layer of the ground surface gives $4.0\\,\\text{kJ}$ of heat to its surroundings and at the same time receives $1.0\\,\\text{kJ}$ of heat from them. No work is done. What happens to the internal energy and the temperature of the layer?",
+      "prompt": "In the lesson *Internal energy, heat and conservation of energy* the change in internal energy was written as $\\Delta U = Q + W$. On a winter night a layer of the ground surface gives $4.0\\,\\text{kJ}$ of heat to its surroundings and at the same time receives $1.0\\,\\text{kJ}$ of heat from them. No work is done, and there is no change of state. What happens to the internal energy and the temperature of the layer?",
       "choices": [
         {
           "text": "The internal energy stays the same because energy is conserved, and the temperature stays the same.",
-          "feedback": "Energy is conserved, but the layer gives away more than it receives, so its own internal energy decreases. The energy that leaves ends up as heat in the surroundings: $\\Delta U = Q + W$ gives $-3.0\\,\\text{kJ}$."
+          "feedback": "Energy is conserved, but the layer gives away more than it receives, so its own internal energy decreases. The energy that leaves is transferred as heat to the surroundings and increases their internal energy. The change of the layer itself is $\\Delta U = Q + W = -3.0\\,\\text{kJ}$."
         },
         {
           "text": "The internal energy decreases by $3.0\\,\\text{kJ}$ and the temperature falls.",

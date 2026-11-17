@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ca261fda071e6e92
+CONTENT-HASH: 13a8e7bdce0fa52f
 
 ## Blocking
 
 ## Polish
-- [Minor] fy3-12-fig-7-390.png (untouched figure) — the "insulation" label sits partly over the hatched layer and the temperature line; give it a paper-coloured backing or move it.
+- [Minor] Recap card — "In the lesson *Internal energy, heat and conservation of energy*" in the prompt: other chapters say "chapter"; unify. Display ΔU = Q + W block is clear.
 
 ## Checked
-- batch delta review: opened fy3-12-example-390-1/2.png (quantities now LaTeX, paragraphs split cleanly, chains aligned, no clipping), fy3-12-fig-row-1280.png, fy3-12-fig-7-390.png; the inquiry and exit-ticket changes are unit-in-LaTeX only.
+batch delta review: opened my own captures of the Pohdinta recap card with feedback open, wrong option at 390 px (display Q = 1.0 kJ − 4.0 kJ = −3.0 kJ inside the feedback, fits) and correct option at 1280 px (ΔU = Q + W chain, aligned at "="); nothing clipped, the card grows downward. Shipped captures lacked the feedback-open state. Hash unchanged at the end.

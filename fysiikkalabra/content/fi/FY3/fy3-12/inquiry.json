@@ -19,11 +19,11 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa aiemmalta tunnilta",
-      "prompt": "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Talviyönä maan pinnan kerros luovuttaa ympäristöön lämpönä $4{,}0\\,\\text{kJ}$ ja saa samalla ympäristöstä lämpönä $1{,}0\\,\\text{kJ}$. Työtä ei tehdä. Mitä kerroksen sisäenergialle ja lämpötilalle tapahtuu?",
+      "prompt": "Luvussa *Sisäenergia, lämpömäärä ja energian säilyminen* sisäenergian muutos kirjoitettiin muotoon $\\Delta U = Q + W$. Talviyönä maan pinnan kerros luovuttaa ympäristöön lämpönä $4{,}0\\,\\text{kJ}$ ja saa samalla ympäristöstä lämpönä $1{,}0\\,\\text{kJ}$. Työtä ei tehdä, eikä olomuoto muutu. Mitä kerroksen sisäenergialle ja lämpötilalle tapahtuu?",
       "choices": [
         {
           "text": "Sisäenergia pysyy samana, koska energia säilyy, ja lämpötila pysyy samana.",
-          "feedback": "Energia säilyy, mutta kerros luovuttaa enemmän kuin saa, joten sen oma sisäenergia pienenee. Pois siirtyvä energia on lämpönä ympäristössä: $\\Delta U = Q + W$ antaa $-3{,}0\\,\\text{kJ}$."
+          "feedback": "Energia säilyy, mutta kerros luovuttaa enemmän kuin saa, joten sen oma sisäenergia pienenee. Pois siirtyvä energia siirtyy lämpönä ympäristöön ja kasvattaa sen sisäenergiaa. Kerroksen oma muutos on $\\Delta U = Q + W = -3{,}0\\,\\text{kJ}$."
         },
         {
           "text": "Sisäenergia pienenee $3{,}0\\,\\text{kJ}$ ja lämpötila laskee.",

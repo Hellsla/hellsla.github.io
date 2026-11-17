@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: Boyle's law",
-      "prompt": "A helium balloon contains $3.0\\,\\text{l}$ of gas at a pressure of $100\\,\\text{kPa}$. The balloon is squeezed in the hands until its volume is $2.0\\,\\text{l}$. The temperature and the amount of gas do not change. What is the pressure of the gas now?",
+      "prompt": "A cylinder with a piston contains helium, $3.0\\,\\textsf{l}$ at a pressure of $100\\,\\text{kPa}$. The piston is pushed in until the volume of the gas is $2.0\\,\\textsf{l}$. The temperature and the amount of gas do not change. What is the pressure of the gas now?",
       "choices": [
         {
           "text": "$67\\,\\text{kPa}$",
@@ -36,11 +36,11 @@
         {
           "text": "$150\\,\\text{kPa}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} p_2 &= \\frac{p_1 V_1}{V_2} \\\\ &= \\frac{100\\,\\text{kPa} \\cdot 3.0\\,\\text{l}}{2.0\\,\\text{l}} \\\\ &= 150\\,\\text{kPa} \\end{aligned}$$. In this lesson you explain the same behaviour of a gas with particles."
+          "feedback": "Correct: $$\\begin{aligned} p_2 &= \\frac{p_1 V_1}{V_2} \\\\ &= \\frac{100\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l}}{2.0\\,\\textsf{l}} \\\\ &= 150\\,\\text{kPa} \\end{aligned}$$. In this lesson you explain the same behaviour of a gas with particles."
         },
         {
           "text": "$200\\,\\text{kPa}$",
-          "feedback": "The volume does not halve: it decreases from $3.0\\,\\text{l}$ to $2.0\\,\\text{l}$, so the ratio is $3.0/2.0 = 1.5$, not $2$. The pressure becomes $1.5$ times as large, $150\\,\\text{kPa}$."
+          "feedback": "The volume does not halve: it decreases from $3.0\\,\\textsf{l}$ to $2.0\\,\\textsf{l}$, so the ratio is $3.0 : 2.0 = 1.5$, not $2$. The pressure becomes $1.5$ times as large, $150\\,\\text{kPa}$."
         }
       ],
       "optional": true
