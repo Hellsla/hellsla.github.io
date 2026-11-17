@@ -192,11 +192,7 @@ Perustelu on siis, että diodi johtaa vain anodi plusnavan puolella ja jokainen 
 
 b) Kulutusten summa on $\sum E_\text{kul} = 5340\,\text{kWh}$, joten omavaraisuusaste on $\dfrac{4683\,\text{kWh}}{5340\,\text{kWh}} = 0{,}877 = 87{,}7\,\%$.
 
-c) Kuukausituotanto on $E_\text{kk} = 0{,}19 \cdot 24\,\text{m}^2 \cdot H = 4{,}56\,\text{m}^2 \cdot H$.
-
-Se on pienempi kuin kulutus tammi-, helmi- ja maaliskuussa sekä loka-, marras- ja joulukuussa: esimerkiksi tammikuussa $4{,}56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$, kun kulutus on $620\,\text{kWh}$, ja joulukuussa $36\,\text{kWh}$, kun kulutus on $650\,\text{kWh}$.
-
-Näiden kuuden kuukauden kulutus on yhteensä $3370\,\text{kWh}$ ja tuotanto yhteensä $853\,\text{kWh}$, joten vajaus on $2517\,\text{kWh}$.
+c) Kuukausituotanto on $E_\text{kk} = 0{,}19 \cdot 24\,\text{m}^2 \cdot H = 4{,}56\,\text{m}^2 \cdot H$. Se on pienempi kuin kulutus tammi-, helmi- ja maaliskuussa sekä loka-, marras- ja joulukuussa: esimerkiksi tammikuussa $4{,}56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$, kun kulutus on $620\,\text{kWh}$, ja joulukuussa $36\,\text{kWh}$, kun kulutus on $650\,\text{kWh}$. Näiden kuuden kuukauden kulutus on yhteensä $3370\,\text{kWh}$ ja tuotanto yhteensä $853\,\text{kWh}$, joten vajaus on $2517\,\text{kWh}$.
 **Vastaus:** $88\,\%$, kaksi merkitsevää numeroa kuten hyötysuhteessa $19\,\%$. Vuosituotanto on noin $4{,}7 \cdot 10^{3}\,\text{kWh}$.
 **Järkevyys:** Tuotanto on noin $4{,}7\,\text{MWh}$, mikä sopii $24\,\text{m}^2$:n paneelistolle Suomessa, ja se on vähän alle talon kulutuksen $5340\,\text{kWh}$, joten omavaraisuusaste on alle $100\,\%$. Omavaraisuusaste on vuosisumma. Kesän ylijäämää ei voi käyttää talvella ilman varastointia, ja talven vajaus $2517\,\text{kWh}$ on $2517 : 5340 = 47\,\%$ vuosikulutuksesta. Verkosta ostetaan siis vähintään tämä osuus, vaikka omavaraisuusaste on $88\,\%$.
 
@@ -207,15 +203,7 @@ Näiden kuuden kuukauden kulutus on yhteensä $3370\,\text{kWh}$ ja tuotanto yht
 **Kuvaajan lukeminen:** a) Ominaiskäyrän jyrkkä suora osa on taulukon kahden viimeisen pisteen välissä: virta kasvaa $20\,\text{mA}$:sta $41\,\text{mA}$:iin, kun jännite kasvaa $2{,}05\,\text{V}$:sta $2{,}10\,\text{V}$:iin, joten suoran kulmakerroin on $\dfrac{41\,\text{mA} - 20\,\text{mA}}{2{,}10\,\text{V} - 2{,}05\,\text{V}} = 420\,\tfrac{\text{mA}}{\text{V}}$. Suora leikkaa jänniteakselin kohdassa $2{,}05\,\text{V} - \dfrac{20\,\text{mA}}{420\,\text{mA/V}} = 2{,}05\,\text{V} - 0{,}048\,\text{V} = 2{,}00\,\text{V}$. Kynnysjännite on noin $2{,}0\,\text{V}$.
 **Kaava:** $I = \dfrac{U - U_\text{D}}{R}$ vastuksen kautta ja ominaiskäyrän virta taulukosta
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssi ohmeina, ja tulos $\text{V} : \Omega = \text{A}$ muutetaan milliampeereiksi kertomalla luvulla $1000$.
-**Sijoitus:** Vastuksen kautta tuleva virta on jännitteellä $2{,}00\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}00\,\text{V}}{180\,\Omega} = 13{,}9\,\text{mA}$ ja jännitteellä $2{,}05\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}05\,\text{V}}{180\,\Omega} = 13{,}6\,\text{mA}$.
-
-LEDin virta on näillä jännitteillä $9{,}8\,\text{mA}$ ja $20\,\text{mA}$.
-
-Jännitteellä $2{,}00\,\text{V}$ vastuksen kautta tuleva virta on LEDin virtaa suurempi, jännitteellä $2{,}05\,\text{V}$ pienempi, joten leikkaus on välillä.
-
-Suorina kuvattuna leikkaus on kohdassa $U_\text{D} \approx 2{,}02\,\text{V}$ ja $I \approx 13{,}8\,\text{mA}$.
-
-Tarkistus: $\dfrac{4{,}5\,\text{V} - 2{,}02\,\text{V}}{180\,\Omega} = 13{,}8\,\text{mA}$.
+**Sijoitus:** Vastuksen kautta tuleva virta on jännitteellä $2{,}00\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}00\,\text{V}}{180\,\Omega} = 13{,}9\,\text{mA}$ ja jännitteellä $2{,}05\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}05\,\text{V}}{180\,\Omega} = 13{,}6\,\text{mA}$. LEDin virta on näillä jännitteillä $9{,}8\,\text{mA}$ ja $20\,\text{mA}$. Jännitteellä $2{,}00\,\text{V}$ vastuksen kautta tuleva virta on LEDin virtaa suurempi, jännitteellä $2{,}05\,\text{V}$ pienempi, joten leikkaus on välillä. Suorina kuvattuna leikkaus on kohdassa $U_\text{D} \approx 2{,}02\,\text{V}$ ja $I \approx 13{,}8\,\text{mA}$. Tarkistus: $\dfrac{4{,}5\,\text{V} - 2{,}02\,\text{V}}{180\,\Omega} = 13{,}8\,\text{mA}$.
 
 c) Kun virta kasvaa arvosta $9{,}8\,\text{mA}$ arvoon $41\,\text{mA}$, eli yli nelinkertaiseksi, jännite muuttuu arvosta $2{,}00\,\text{V}$ arvoon $2{,}10\,\text{V}$ eli $0{,}10\,\text{V}$.
 **Vastaus:** $14\,\text{mA}$, kaksi merkitsevää numeroa, koska taulukon pisteiden väli on karkea ja tulos on luettu kahden pisteen väliltä. Työpisteen jännite on noin $2{,}0\,\text{V}$. Virta on sallittua pienempi kuin $25\,\text{mA}$.

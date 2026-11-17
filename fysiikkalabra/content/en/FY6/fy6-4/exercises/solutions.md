@@ -158,9 +158,9 @@ Adding resistors increases the total resistance only in a series connection.
 **Reading the graph:** No graph; the values are read from the table.
 **Formula:** $R_\text{series} = R_1 + R_2 + R_3$ and $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
 **Conversions:** Not needed, all the resistances are in ohms.
-**Substitution:** a) $R_\text{series} = 217\,\Omega + 328\,\Omega + 468\,\Omega = 1013\,\Omega$. The difference from the measured value is $1013\,\Omega - 1009\,\Omega = 4\,\Omega$, that is, $\dfrac{4\,\Omega}{1009\,\Omega} \approx 0.4\,\%$, which is smaller than $1.5\,\%$. b) $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omega} + \dfrac{1}{468\,\Omega} = 0.009\,794\,\dfrac{1}{\Omega}$, so $R_\text{parallel} = 102.1\,\Omega$.
+**Substitution:** a) $R_\text{series} = 217\,\Omega + 328\,\Omega + 468\,\Omega = 1013\,\Omega$. The difference from the measured value is $1013\,\Omega - 1009\,\Omega = 4\,\Omega$, that is, $\dfrac{4\,\Omega}{1009\,\Omega} \approx 0.4\,\%$, which is smaller than $1.5\,\%$.
 
-The difference from the measured value is $102.1\,\Omega - 101.4\,\Omega = 0.7\,\Omega$, that is, $\dfrac{0.7\,\Omega}{101.4\,\Omega} \approx 0.7\,\%$.
+b) $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omega} + \dfrac{1}{468\,\Omega} = 0.009\,794\,\dfrac{1}{\Omega}$, so $R_\text{parallel} = 102.1\,\Omega$. The difference from the measured value is $102.1\,\Omega - 101.4\,\Omega = 0.7\,\Omega$, that is, $\dfrac{0.7\,\Omega}{101.4\,\Omega} \approx 0.7\,\%$.
 **Answer:** $102\,\Omega$, three significant figures like the measurement results. The difference for the series connection is about $0.4\,\%$ and for the parallel connection about $0.7\,\%$, both within the error limit of $1.5\,\%$, so the measurement supports the formulas of the connections.
 **Reasonableness:** The calculated parallel connection is smaller than the smallest individual resistance, $217\,\Omega$, and the series connection is larger than the largest, $468\,\Omega$, as they should be. With rounded numbers $\tfrac{1}{200} + \tfrac{1}{300} + \tfrac{1}{500} = 0.010$, so $R \approx 100\,\Omega$.
 
@@ -201,9 +201,11 @@ In the repaired circuit the voltage of the parallel part is obtained from Ohm's 
 **Reading the graph:** No graph; the values are read from the table.
 **Formula:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$, $I = \dfrac{U}{R}$, $U_{23} = R_{23} I$ and $I_3 = \dfrac{U_{23}}{R_3}$
 **Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
-**Substitution:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ and $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$. b) If one branch is off, only one $110\,\Omega$ resistor remains, and $R = 70\,\Omega + 110\,\Omega = 180\,\Omega$, which matches the measurement.
+**Substitution:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ and $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$.
 
-The current in the wire of $R_3$ is $0.0\,\text{mA}$ and the current of $R_2$ is equal to the battery current, so $R_3$ is off. c) In the repaired circuit $I = \dfrac{9.0\,\text{V}}{125\,\Omega} = 0.072\,\text{A}$, $U_{23} = 55\,\Omega \cdot 0.072\,\text{A} = 3.96\,\text{V}$ and $I_3 = \dfrac{3.96\,\text{V}}{110\,\Omega} = 0.036\,\text{A} = 36\,\text{mA}$
+b) If one branch is off, only one $110\,\Omega$ resistor remains, and $R = 70\,\Omega + 110\,\Omega = 180\,\Omega$, which matches the measurement. The current in the wire of $R_3$ is $0.0\,\text{mA}$ and the current of $R_2$ is equal to the battery current, so $R_3$ is off.
+
+c) In the repaired circuit $I = \dfrac{9.0\,\text{V}}{125\,\Omega} = 0.072\,\text{A}$, $U_{23} = 55\,\Omega \cdot 0.072\,\text{A} = 3.96\,\text{V}$ and $I_3 = \dfrac{3.96\,\text{V}}{110\,\Omega} = 0.036\,\text{A} = 36\,\text{mA}$
 **Answer:** $36\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$. The total resistance of the board should be $125\,\Omega$, and the measurements are explained by resistor $R_3$ being off its wire.
 **Reasonableness:** In the repaired circuit the current of each of the two equal branches is half of the total current, $0.072\,\text{A} : 2 = 0.036\,\text{A}$. The voltages add up: $0.072\,\text{A} \cdot 70\,\Omega + 3.96\,\text{V} = 5.04\,\text{V} + 3.96\,\text{V} = 9.0\,\text{V}$.
 

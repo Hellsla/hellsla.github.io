@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e0c77cc5e5d3bc9d
+CONTENT-HASH: e589ae8241a41bf5
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none new
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened all 2 proof sheet(s) fi-fy6-12-exercises-* and every numbered formula; all `fits`, breaks sensible.
+- Delta (solutions.md paragraph breaks only). Opened 1280 px captures: open-exercises-1280-6 (L1-06), L2-1280-8 (the "Varaus ei pyri" model answer), L3-1280-7 and -8 (energy-distribution task, Sijoitus a-c with display maths between paragraphs, Vastaus, Järkevyys).
+- Each break is one thought, nothing starts mid-thought, no one-word paragraph, spacing in the solution card even, nothing clipped.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

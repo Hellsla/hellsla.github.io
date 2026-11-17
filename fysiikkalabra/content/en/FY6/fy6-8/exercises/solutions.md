@@ -240,9 +240,9 @@ $E = 5.56\,\text{V} + 1.10\,\Omega \cdot 0.50\,\text{A} = 6.11\,\text{V}$
 b) $R_\text{s} = 1.10\,\Omega - 0.30\,\Omega = 0.80\,\Omega$.
 c) $I_\text{k} = \dfrac{6.11\,\text{V}}{0.80\,\Omega} = 7.64\,\text{A}$
 **Answer:** For the answer box: c) $7.6\,\text{A}$, two significant figures like the resistance of the wires $0.30\,\Omega$. The measurement should have been made by connecting the voltmeter directly across the terminals of the group of batteries, so that the voltage drop in the wires is not included in the measured voltage.
-**Other parts:** a) the source voltage of the group of batteries is $E \approx 6.11\,\text{V}$. b) The student's internal resistance is too large, because the slope includes the resistance of the wires; the internal resistance of the group of batteries is $0.80\,\Omega$.
+**Other parts:** a) the source voltage of the group of batteries is $E \approx 6.11\,\text{V}$.
 
-The student's short-circuit current $5.6\,\text{A}$ is too small, because the student divided the source voltage by too large a resistance.
+b) The student's internal resistance is too large, because the slope includes the resistance of the wires; the internal resistance of the group of batteries is $0.80\,\Omega$. The student's short-circuit current $5.6\,\text{A}$ is too small, because the student divided the source voltage by too large a resistance.
 **Reasonableness:** According to the model, at the current $2.00\,\text{A}$ the terminal voltage of the group of batteries is $$\begin{aligned} &6.11\,\text{V} - 0.80\,\Omega \cdot 2.00\,\text{A} \\ &= 4.51\,\text{V} \end{aligned}$$ and after the wires $$\begin{aligned} &4.51\,\text{V} - 0.30\,\Omega \cdot 2.00\,\text{A} \\ &= 3.91\,\text{V} \end{aligned}$$, which is the fourth value of the table.
 
 The correct short-circuit current is greater than the student's, because the internal resistance of the group of batteries is smaller than the $1.1\,\Omega$ the student obtained.

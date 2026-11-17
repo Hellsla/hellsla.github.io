@@ -200,13 +200,9 @@ Tunnistus tehdään vertaamalla resistansseja jännitteen funktiona, ja työpist
 **Periaate:** Resistanssi saadaan jokaisessa lämpötilassa suhteena $R = U : I$. Kun jännite pidetään samana, virran pieneneminen kertoo resistanssin kasvusta. Kokeessa muutetaan vain yhtä tekijää, lämpötilaa, ja muut tekijät pidetään vakioina, jotta tulos voidaan liittää lämpötilaan. Prosenttikasvu on $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$.
 **Kaava:** $R = \dfrac{U}{I}$ ja kasvu $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, lämpötilan muutosta ei tarvitse muuntaa.
-**Sijoitus:** Muuttujat: riippumaton muuttuja on veden eli langan lämpötila $T$, riippuva muuttuja on langan resistanssi $R$ (mitataan virrasta ja jännitteestä), ja vakioitavat tekijät ovat langan aine, pituus ja paksuus sekä jännite $1{,}00\,\text{V}$.
+**Sijoitus:** Muuttujat: riippumaton muuttuja on veden eli langan lämpötila $T$, riippuva muuttuja on langan resistanssi $R$ (mitataan virrasta ja jännitteestä), ja vakioitavat tekijät ovat langan aine, pituus ja paksuus sekä jännite $1{,}00\,\text{V}$. Mittausjärjestely: virtamittari kytketään sarjaan langan kanssa ja jännitemittari rinnan langan kanssa, jotta mittarit mittaavat langan virtaa ja jännitettä; lanka on lakattu, jotta vesi ei johda virtaa sen ohi, ja lämpömittari on langan vieressä. Resistanssit ovat $R_{20} = 1{,}00\,\text{V} : 0{,}500\,\text{A} = 2{,}000\,\Omega$, $R_{40} = 2{,}262\,\Omega$, $R_{60} = 2{,}513\,\Omega$ ja $R_{80} = 1{,}00\,\text{V} : 0{,}362\,\text{A} = 2{,}762\,\Omega$, joten kasvu on $\dfrac{2{,}762\,\Omega - 2{,}000\,\Omega}{2{,}000\,\Omega} \cdot 100\,\% = 38{,}1\,\%$. Virhelähteet:
 
-Mittausjärjestely: virtamittari kytketään sarjaan langan kanssa ja jännitemittari rinnan langan kanssa, jotta mittarit mittaavat langan virtaa ja jännitettä; lanka on lakattu, jotta vesi ei johda virtaa sen ohi, ja lämpömittari on langan vieressä.
-
-Resistanssit ovat $R_{20} = 1{,}00\,\text{V} : 0{,}500\,\text{A} = 2{,}000\,\Omega$, $R_{40} = 2{,}262\,\Omega$, $R_{60} = 2{,}513\,\Omega$ ja $R_{80} = 1{,}00\,\text{V} : 0{,}362\,\text{A} = 2{,}762\,\Omega$, joten kasvu on $\dfrac{2{,}762\,\Omega - 2{,}000\,\Omega}{2{,}000\,\Omega} \cdot 100\,\% = 38{,}1\,\%$.
-
-Virhelähteet: (1) lanka lämpenee myös virrasta itsestään, joten sen lämpötila voi olla korkeampi kuin veden; virta kytketään vain mittaushetkeksi ja jännite pidetään pienenä.
+(1) lanka lämpenee myös virrasta itsestään, joten sen lämpötila voi olla korkeampi kuin veden; virta kytketään vain mittaushetkeksi ja jännite pidetään pienenä.
 
 (2) Lanka ei ole ehtinyt tasaantua veden lämpötilaan, tai lämpömittari ei ole langan kohdalla; jokaisessa lämpötilassa odotetaan, kunnes lämpömittarin lukema ei enää muutu, ja sekoitetaan vettä.
 **Vastaus:** Resistanssi on kasvanut noin $38\,\%$ (laskettu $38{,}1\,\%$), kaksi merkitsevää numeroa, koska kasvu on kahden lähes yhtä suuren resistanssin erotus suhteessa arvoon $R_{20}$. Tulos tukee päätelmää, että metallilangan resistanssi kasvaa lämpötilan noustessa.

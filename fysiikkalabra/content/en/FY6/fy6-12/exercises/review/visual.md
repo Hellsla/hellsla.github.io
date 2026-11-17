@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cdd347c4ff43d02f
+CONTENT-HASH: 95a012f70ae11a97
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md, energy-conservation task Principle/Substitution — "The kinetic energy is $90\,\text{eV}$ ..." follows the previous paragraph with no blank line, so the paragraph gap is missing; add a blank line.
+- [Minor] deflection task Substitution — a break leaves "c)" at the end of one paragraph ("... does not hit a plate. c) Gravity is ..."); break before "c)".
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-12-exercises-1-2, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta: solutions.md paragraph breaks only. Opened fy6-12-open-exercises-L3-1280-5 (deflection task: Principle in two paragraphs, Formula, Substitution), plus the diff for every task.
+- Breaks fall at sentence boundaries, one thing per paragraph, no orphaned one-word paragraph, spacing inside the card even, nothing clipped, formulas and units unchanged.
+- 390 px captures not opened separately.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

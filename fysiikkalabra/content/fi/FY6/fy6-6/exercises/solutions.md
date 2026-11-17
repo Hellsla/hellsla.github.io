@@ -194,9 +194,7 @@ Kohdan a) resistanssit ovat $R_1 = 48{,}1\,\Omega$ ja $R_2 = 77{,}9\,\Omega$.
 
 Ylikuormittuva vastus on siis $R_2$.
 
-Pyöristetyssä tuloksessa on kaksi merkitsevää numeroa kuten sarjakytkennän tehossa $420\,\text{W}$.
-
-Se ylittää sallitun tehon $750\,\text{W}$, kun taas vastuksen $R_1$ teho $1331\,\text{W}$ jää alle rajan $1400\,\text{W}$.
+Pyöristetyssä tuloksessa on kaksi merkitsevää numeroa kuten sarjakytkennän tehossa $420\,\text{W}$. Se ylittää sallitun tehon $750\,\text{W}$, kun taas vastuksen $R_1$ teho $1331\,\text{W}$ jää alle rajan $1400\,\text{W}$.
 
 Vastuksessa $R_1$ muuttuu enemmän energiaa, mutta teho kasvaa kummassakin yhtä paljon ($1{,}10^2 = 1{,}21$-kertaiseksi), ja vastus $R_2$ on rajallaan jo valmiiksi: sen teho on $679\,\text{W} : 750\,\text{W} = 91\,\%$ sallitusta, vastuksen $R_1$ vain $79\,\%$.
 **Järkevyys:** Rinnankytkennän mittaus täsmää: $R_2$:n teho jännitteellä $230\,\text{V}$ on $$(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}$$, joten $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. Tehon kasvukerroin tarkistuu: $679\,\text{W} \cdot 1{,}21 = 822\,\text{W}$ ja $1100\,\text{W} \cdot 1{,}21 = 1331\,\text{W}$.

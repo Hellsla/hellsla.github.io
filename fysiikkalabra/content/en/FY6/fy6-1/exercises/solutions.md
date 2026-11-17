@@ -177,28 +177,22 @@ The mean current is the total charge divided by the total time. Current is not u
 **Principle:** Electric current flows only in a closed circuit, in which the charge circulates from the battery through a component and back to the battery. Current is not used up in the lamp, but the same current comes into the lamp and leaves it.
 
 A thick wire lets the current flow much more easily than the filament of the lamp, so almost all of the current flows through the wire.
-**Model answer:** a) The lamp is not lit in circuit A. The loop is not closed, because the other terminal of the lamp and the negative terminal of the battery are not connected, so the charge cannot circulate and no current flows anywhere.
+**Model answer:** a) The lamp is not lit in circuit A. The loop is not closed, because the other terminal of the lamp and the negative terminal of the battery are not connected, so the charge cannot circulate and no current flows anywhere. The student’s error is to think that current is used up in the lamp: current is not used up, but the charge circulates and returns to the battery, which is why a return wire is needed.
 
-The student’s error is to think that current is used up in the lamp: current is not used up, but the charge circulates and returns to the battery, which is why a return wire is needed. b) The lamp is not lit in circuit B.
+b) The lamp is not lit in circuit B. The lamp is bypassed with a thick wire, and the charge passes the lamp through the wire that keeps the loop closed. No current flows through the lamp, so no energy is transferred to it. The wire connects the terminals of the lamp, so it bypasses the lamp; this is a short circuit, which must not be made with a real battery, because the battery and the wire may heat up.
 
-The lamp is bypassed with a thick wire, and the charge passes the lamp through the wire that keeps the loop closed. No current flows through the lamp, so no energy is transferred to it.
-
-The wire connects the terminals of the lamp, so it bypasses the lamp; this is a short circuit, which must not be made with a real battery, because the battery and the wire may heat up. c) Circuit A is fixed by connecting the other terminal of the lamp with a wire to the negative terminal of the battery, which makes a closed loop and the current flows through the lamp.
+c) Circuit A is fixed by connecting the other terminal of the lamp with a wire to the negative terminal of the battery, which makes a closed loop and the current flows through the lamp.
 
 ## fy6-1-L2-07
 **Find:** a) how the ammeter is connected and the measurement made; b) the averages of the currents before the lamp and after the lamp; c) whether the measurements support the claim that current is used up in the lamp
 **Principle:** An ammeter measures the current that passes through it, so it is connected in series into the loop of the circuit, so that the whole current to be measured passes through it.
 
 If current were used up in the lamp, the meter should show a clearly smaller reading after the lamp than before the lamp. The measurement results are not exactly the same, because the reading has an uncertainty, and small differences in one direction and the other belong to it.
-**Model answer:** a) The ammeter is connected into the loop in series: the circuit is opened at the point to be measured and the meter is connected into the opened point, so that the whole current passes through it.
+**Model answer:** a) The ammeter is connected into the loop in series: the circuit is opened at the point to be measured and the meter is connected into the opened point, so that the whole current passes through it. First the meter is between the lamp and the positive terminal of the battery, before the lamp. Then the meter is moved between the lamp and the negative terminal of the battery, where it measures the current after the lamp.
 
-First the meter is between the lamp and the positive terminal of the battery, before the lamp. Then the meter is moved between the lamp and the negative terminal of the battery, where it measures the current after the lamp. b) Before the lamp the sum is $$\begin{aligned} &0.32\,\text{A} + 0.30\,\text{A} + 0.33\,\text{A} \\ &+ 0.29\,\text{A} + 0.31\,\text{A} \\ &= 1.55\,\text{A} \end{aligned}$$, so the average is $1.55\,\text{A} : 5 = 0.310\,\text{A}$.
+b) Before the lamp the sum is $$\begin{aligned} &0.32\,\text{A} + 0.30\,\text{A} + 0.33\,\text{A} \\ &+ 0.29\,\text{A} + 0.31\,\text{A} \\ &= 1.55\,\text{A} \end{aligned}$$, so the average is $1.55\,\text{A} : 5 = 0.310\,\text{A}$. After the lamp the sum is $$\begin{aligned} &0.31\,\text{A} + 0.30\,\text{A} + 0.32\,\text{A} \\ &+ 0.30\,\text{A} + 0.30\,\text{A} \\ &= 1.53\,\text{A} \end{aligned}$$, so the average is $1.53\,\text{A} : 5 = 0.306\,\text{A}$.
 
-After the lamp the sum is $$\begin{aligned} &0.31\,\text{A} + 0.30\,\text{A} + 0.32\,\text{A} \\ &+ 0.30\,\text{A} + 0.30\,\text{A} \\ &= 1.53\,\text{A} \end{aligned}$$, so the average is $1.53\,\text{A} : 5 = 0.306\,\text{A}$. c) The difference of the averages is $0.004\,\text{A}$, which is smaller than the resolution of the meter, that is its smallest display step, $0.01\,\text{A}$.
-
-In addition, the differences go in both directions from measurement to measurement and do not exceed one display step $0.01\,\text{A}$, so they are explained by the uncertainty of the reading.
-
-The measurements thus do not support the claim that current is used up in the lamp: the current is equally large on both sides of the lamp within the accuracy of the measurement.
+c) The difference of the averages is $0.004\,\text{A}$, which is smaller than the resolution of the meter, that is its smallest display step, $0.01\,\text{A}$. In addition, the differences go in both directions from measurement to measurement and do not exceed one display step $0.01\,\text{A}$, so they are explained by the uncertainty of the reading. The measurements thus do not support the claim that current is used up in the lamp: the current is equally large on both sides of the lamp within the accuracy of the measurement.
 
 ## fy6-1-L3-04
 **Given:** for each hour $U$ and $I$ from the table: $4.0\,\text{V}$ and $0.80\,\text{A}$; $3.8\,\text{V}$ and $0.75\,\text{A}$; $3.7\,\text{V}$ and $0.70\,\text{A}$; $3.6\,\text{V}$ and $0.60\,\text{A}$; $3.4\,\text{V}$ and $0.50\,\text{A}$; each interval $t = 1.0\,\text{h}$

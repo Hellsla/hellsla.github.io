@@ -169,40 +169,20 @@ Väite, jonka mukaan elektronit liikkuvat kytkimen raon yli, on väärin, koska 
 ## fy6-1-L2-06
 **Kysytty:** a) palaako lamppu piirissä A ja mikä on oppilaan päättelyn virhe; b) palaako lamppu piirissä B ja minne virta kulkee; c) kuinka piiri A korjataan
 **Periaate:** Sähkövirta kulkee vain suljetussa virtapiirissä, jossa varaus kiertää paristosta komponentin läpi takaisin paristoon. Virta ei kulu lampussa, vaan sama virta tulee lamppuun ja lähtee siitä. Paksu johto päästää virran kulkemaan paljon helpommin kuin lampun hehkulanka, joten lähes koko virta kulkee johdon kautta.
-**Mallivastaus:** a) Lamppu ei pala piirissä A.
+**Mallivastaus:** a) Lamppu ei pala piirissä A. Silmukka ei ole suljettu, koska lampun toinen kanta ja pariston miinusnapa eivät ole yhteydessä, joten varaus ei pääse kiertämään eikä virta kulje missään. Oppilaan virhe on ajatella, että virta kuluu lampussa loppuun: virta ei kulu, vaan varaus kiertää ja palaa paristoon, ja siksi paluujohto tarvitaan.
 
-Silmukka ei ole suljettu, koska lampun toinen kanta ja pariston miinusnapa eivät ole yhteydessä, joten varaus ei pääse kiertämään eikä virta kulje missään.
-
-Oppilaan virhe on ajatella, että virta kuluu lampussa loppuun: virta ei kulu, vaan varaus kiertää ja palaa paristoon, ja siksi paluujohto tarvitaan.
-
-b) Lamppu ei pala piirissä B.
-
-Lamppu on ohitettu paksulla johdolla, ja varaus kulkee silmukan suljettuna pitävän johdon kautta lampun ohi.
-
-Lampun läpi ei kulje virtaa, joten siihen ei siirry energiaa.
-
-Johto yhdistää lampun kannat, joten se ohittaa lampun; tämä on oikosulku, jota ei saa tehdä todellisella paristolla, koska paristo ja johto voivat lämmetä.
+b) Lamppu ei pala piirissä B. Lamppu on ohitettu paksulla johdolla, ja varaus kulkee silmukan suljettuna pitävän johdon kautta lampun ohi. Lampun läpi ei kulje virtaa, joten siihen ei siirry energiaa. Johto yhdistää lampun kannat, joten se ohittaa lampun; tämä on oikosulku, jota ei saa tehdä todellisella paristolla, koska paristo ja johto voivat lämmetä.
 
 c) Piiri A korjataan yhdistämällä lampun toinen kanta johdolla pariston miinusnapaan, jolloin syntyy suljettu silmukka ja virta kulkee lampun läpi.
 
 ## fy6-1-L2-07
 **Kysytty:** a) miten ampeerimittari kytketään ja mittaus tehdään; b) virtojen keskiarvot ennen lamppua ja lampun jälkeen; c) tukevatko mittaukset sitä, että virta kuluu lampussa
 **Periaate:** Ampeerimittari mittaa virran, joka kulkee sen läpi, joten se kytketään virtapiirin silmukkaan sarjaan, jolloin koko mitattava virta kulkee sen kautta. Jos virta kuluisi lampussa, mittarin pitäisi näyttää lampun jälkeen selvästi pienempää lukemaa kuin ennen lamppua. Mittaustulokset eivät ole täsmälleen samat, koska lukemaan liittyy epävarmuus, ja pienet erot suuntaan ja toiseen kuuluvat tähän.
-**Mallivastaus:** a) Ampeerimittari kytketään silmukkaan sarjaan: piiri avataan mitattavasta kohdasta ja mittari liitetään avoimeen kohtaan, niin että koko virta kulkee sen läpi.
+**Mallivastaus:** a) Ampeerimittari kytketään silmukkaan sarjaan: piiri avataan mitattavasta kohdasta ja mittari liitetään avoimeen kohtaan, niin että koko virta kulkee sen läpi. Ensin mittari on lampun ja pariston plusnavan välissä, ennen lamppua. Sitten mittari siirretään lampun ja pariston miinusnavan väliin, jolloin se mittaa virran lampun jälkeen.
 
-Ensin mittari on lampun ja pariston plusnavan välissä, ennen lamppua.
+b) Ennen lamppua summa on $$\begin{aligned} &0{,}32\,\text{A} + 0{,}30\,\text{A} + 0{,}33\,\text{A} \\ &+ 0{,}29\,\text{A} + 0{,}31\,\text{A} \\ &= 1{,}55\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}55\,\text{A} : 5 = 0{,}310\,\text{A}$. Lampun jälkeen summa on $$\begin{aligned} &0{,}31\,\text{A} + 0{,}30\,\text{A} + 0{,}32\,\text{A} \\ &+ 0{,}30\,\text{A} + 0{,}30\,\text{A} \\ &= 1{,}53\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}53\,\text{A} : 5 = 0{,}306\,\text{A}$.
 
-Sitten mittari siirretään lampun ja pariston miinusnavan väliin, jolloin se mittaa virran lampun jälkeen.
-
-b) Ennen lamppua summa on $$\begin{aligned} &0{,}32\,\text{A} + 0{,}30\,\text{A} + 0{,}33\,\text{A} \\ &+ 0{,}29\,\text{A} + 0{,}31\,\text{A} \\ &= 1{,}55\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}55\,\text{A} : 5 = 0{,}310\,\text{A}$.
-
-Lampun jälkeen summa on $$\begin{aligned} &0{,}31\,\text{A} + 0{,}30\,\text{A} + 0{,}32\,\text{A} \\ &+ 0{,}30\,\text{A} + 0{,}30\,\text{A} \\ &= 1{,}53\,\text{A} \end{aligned}$$, joten keskiarvo on $1{,}53\,\text{A} : 5 = 0{,}306\,\text{A}$.
-
-c) Keskiarvojen ero on $0{,}004\,\text{A}$, mikä on pienempi kuin mittarin resoluutio eli pienin näyttöaskel $0{,}01\,\text{A}$.
-
-Lisäksi erot ovat mittauksittain kumpaankin suuntaan eivätkä ylitä yhtä näyttöaskelta $0{,}01\,\text{A}$, joten ne selittyvät lukeman epävarmuudella.
-
-Mittaukset eivät siis tue sitä, että virta kuluu lampussa: virta on molemmin puolin lamppua yhtä suuri mittauksen tarkkuudella.
+c) Keskiarvojen ero on $0{,}004\,\text{A}$, mikä on pienempi kuin mittarin resoluutio eli pienin näyttöaskel $0{,}01\,\text{A}$. Lisäksi erot ovat mittauksittain kumpaankin suuntaan eivätkä ylitä yhtä näyttöaskelta $0{,}01\,\text{A}$, joten ne selittyvät lukeman epävarmuudella. Mittaukset eivät siis tue sitä, että virta kuluu lampussa: virta on molemmin puolin lamppua yhtä suuri mittauksen tarkkuudella.
 
 ## fy6-1-L3-04
 **Annettu:** tunneittain $U$ ja $I$ taulukosta: $4{,}0\,\text{V}$ ja $0{,}80\,\text{A}$; $3{,}8\,\text{V}$ ja $0{,}75\,\text{A}$; $3{,}7\,\text{V}$ ja $0{,}70\,\text{A}$; $3{,}6\,\text{V}$ ja $0{,}60\,\text{A}$; $3{,}4\,\text{V}$ ja $0{,}50\,\text{A}$; jokainen väli $t = 1{,}0\,\text{h}$

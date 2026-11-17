@@ -166,11 +166,7 @@ Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännit
 **Sijoitus:** $I = \dfrac{1{,}60\,\text{V} - 1{,}49\,\text{V}}{0{,}50\,\Omega - 0{,}22\,\Omega} = \dfrac{0{,}11\,\text{V}}{0{,}28\,\Omega} = 0{,}39\,\text{A}$
 **Vastaus:** a) noin $0{,}40\,\text{A}$; graafinen lukema ja laskenta antavat arvon väliltä $0{,}35\text{–}0{,}45\,\text{A}$, koska suorien sovitus vaihtelee.
 
-b) Suurella virralla parempi on paristo B, koska sen sisäinen resistanssi $0{,}22\,\Omega$ on pienempi kuin pariston A $0{,}50\,\Omega$, joten sen napajännite pienenee virran kasvaessa loivemmin.
-
-Pariston A lähdejännite on suurempi, joten pienellä virralla alle $0{,}4\,\text{A}$ paristo A antaa korkeamman napajännitteen.
-
-Virralla $1{,}00\,\text{A}$ napajännite on paristolla A $1{,}10\,\text{V}$ ja paristolla B $1{,}27\,\text{V}$.
+b) Suurella virralla parempi on paristo B, koska sen sisäinen resistanssi $0{,}22\,\Omega$ on pienempi kuin pariston A $0{,}50\,\Omega$, joten sen napajännite pienenee virran kasvaessa loivemmin. Pariston A lähdejännite on suurempi, joten pienellä virralla alle $0{,}4\,\text{A}$ paristo A antaa korkeamman napajännitteen. Virralla $1{,}00\,\text{A}$ napajännite on paristolla A $1{,}10\,\text{V}$ ja paristolla B $1{,}27\,\text{V}$.
 **Järkevyys:** Virralla $0{,}40\,\text{A}$ pariston A napajännite on $$\begin{aligned} &1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$ ja pariston B $$\begin{aligned} &1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$, ja tämä on taulukon rivien $0{,}30\,\text{A}$ ja $0{,}50\,\text{A}$ välissä, kuten pitää. Oikosulkuvirta on paristolla B $1{,}49\,\text{V} : 0{,}22\,\Omega \approx 6{,}8\,\text{A}$ ja paristolla A $1{,}60\,\text{V} : 0{,}50\,\Omega = 3{,}2\,\text{A}$, joten B pystyy antamaan suuremman virran.
 
 ## fy6-8-L2-07
@@ -201,9 +197,7 @@ $\text{osuus} = \dfrac{R_\text{s} I^2}{EI} = \dfrac{R_\text{s}}{R + R_\text{s}}$
 
 $P = RI^2 = \dfrac{E^2 R}{(R + R_\text{s})^2}$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
-**Sijoitus:** a) Uusi: $R_\text{s} = \dfrac{0{,}10\,\text{V}}{0{,}40\,\text{A}} = 0{,}25\,\Omega$ ja $E = 1{,}56\,\text{V} + 0{,}25\,\Omega \cdot 0{,}10\,\text{A} = 1{,}58\,\text{V}$.
-
-Ikääntynyt: $R_\text{s} = \dfrac{1{,}41\,\text{V} - 0{,}97\,\text{V}}{0{,}40\,\text{A}} = 1{,}10\,\Omega$ ja $E = 1{,}41\,\text{V} + 1{,}10\,\Omega \cdot 0{,}10\,\text{A} = 1{,}52\,\text{V}$.
+**Sijoitus:** a) Uusi: $R_\text{s} = \dfrac{0{,}10\,\text{V}}{0{,}40\,\text{A}} = 0{,}25\,\Omega$ ja $E = 1{,}56\,\text{V} + 0{,}25\,\Omega \cdot 0{,}10\,\text{A} = 1{,}58\,\text{V}$. Ikääntynyt: $R_\text{s} = \dfrac{1{,}41\,\text{V} - 0{,}97\,\text{V}}{0{,}40\,\text{A}} = 1{,}10\,\Omega$ ja $E = 1{,}41\,\text{V} + 1{,}10\,\Omega \cdot 0{,}10\,\text{A} = 1{,}52\,\text{V}$.
 b) Ikääntynyt: $I = \dfrac{1{,}52\,\text{V}}{2{,}0\,\Omega + 1{,}10\,\Omega} = 0{,}490\,\text{A}$, kehitetty teho $EI = 1{,}52\,\text{V} \cdot 0{,}490\,\text{A} = 0{,}745\,\text{W}$ ja paristoon jäävä teho $R_\text{s} I^2 = 1{,}10\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W}$. Osuus on $\dfrac{0{,}264\,\text{W}}{0{,}745\,\text{W}} = \dfrac{1{,}10\,\Omega}{3{,}10\,\Omega} = 0{,}355$. Uusi paristo: $\dfrac{0{,}25\,\Omega}{2{,}0\,\Omega + 0{,}25\,\Omega} = 0{,}11$.
 c) Ikääntyneelle ($E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}10\,\Omega$): $R = 0{,}55\,\Omega$: $P = \dfrac{(1{,}52\,\text{V})^2 \cdot 0{,}55\,\Omega}{(1{,}65\,\Omega)^2} = 0{,}47\,\text{W}$; $R = 1{,}1\,\Omega$: $P = \dfrac{(1{,}52\,\text{V})^2 \cdot 1{,}1\,\Omega}{(2{,}2\,\Omega)^2} = 0{,}53\,\text{W}$; $R = 2{,}2\,\Omega$: $P = 0{,}47\,\text{W}$; $R = 4{,}4\,\Omega$: $P = 0{,}34\,\text{W}$. Osuus, joka muuttuu pariston sisäenergiaksi: $R = 1{,}1\,\Omega$: $\dfrac{1{,}10\,\Omega}{2{,}2\,\Omega} = 0{,}50$.
 **Vastaus:** Vastauslaatikkoon $35\,\%$.

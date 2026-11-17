@@ -183,15 +183,9 @@ Väite, että kenttä olisi yhtä voimakas, olisi totta vain, jos viivat olisiva
 **Muunnokset:** $q = 2{,}0 \cdot 10^{-9}\,\text{C}$ ja $1\,\mu\text{N} = 10^{-6}\,\text{N}$; $d = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$.
 **Sijoitus:** a) $E = F : q$ antaa pisteissä $x = 0$; $2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ arvot $3{,}01 \cdot 10^{4}$; $2{,}99 \cdot 10^{4}$; $2{,}98 \cdot 10^{4}$; $2{,}95 \cdot 10^{4}$; $2{,}90 \cdot 10^{4}$ ja $1{,}65 \cdot 10^{4}\,\text{V/m}$.
 
-b) Poikkeamat keskikohdan arvosta ovat $x = 2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ pisteissä $0{,}7\,\%$, $1{,}2\,\%$, $2{,}0\,\%$, $3{,}7\,\%$ ja $45{,}2\,\%$.
+b) Poikkeamat keskikohdan arvosta ovat $x = 2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ pisteissä $0{,}7\,\%$, $1{,}2\,\%$, $2{,}0\,\%$, $3{,}7\,\%$ ja $45{,}2\,\%$. Homogeenisia ovat pisteet $x = 0$ – $6{,}0\,\text{cm}$, ja kenttä heikkenee selvästi, kun lähestytään levyn reunaa.
 
-Homogeenisia ovat pisteet $x = 0$ – $6{,}0\,\text{cm}$, ja kenttä heikkenee selvästi, kun lähestytään levyn reunaa.
-
-c) Neljän homogeenisen pisteen voimien summa on $$\begin{aligned} &60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} \\ &+ 59{,}0\,\mu\text{N} \\ &= 238{,}5\,\mu\text{N} \end{aligned}$$, joten voiman keskiarvo on $238{,}5\,\mu\text{N} : 4 = 59{,}6\,\mu\text{N}$.
-
-Kentän keskiarvo on $E = \dfrac{59{,}6 \cdot 10^{-6}\,\text{N}}{2{,}0 \cdot 10^{-9}\,\text{C}} = 2{,}98 \cdot 10^{4}\,\text{V/m}$.
-
-Vertailuarvo on $U : d = 600\,\text{V} : 0{,}020\,\text{m} = 3{,}0 \cdot 10^{4}\,\text{V/m}$.
+c) Neljän homogeenisen pisteen voimien summa on $$\begin{aligned} &60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} \\ &+ 59{,}0\,\mu\text{N} \\ &= 238{,}5\,\mu\text{N} \end{aligned}$$, joten voiman keskiarvo on $238{,}5\,\mu\text{N} : 4 = 59{,}6\,\mu\text{N}$. Kentän keskiarvo on $E = \dfrac{59{,}6 \cdot 10^{-6}\,\text{N}}{2{,}0 \cdot 10^{-9}\,\text{C}} = 2{,}98 \cdot 10^{4}\,\text{V/m}$. Vertailuarvo on $U : d = 600\,\text{V} : 0{,}020\,\text{m} = 3{,}0 \cdot 10^{4}\,\text{V/m}$.
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{V/m}$ ($2{,}98 \cdot 10^{4}\,\text{V/m}$), kaksi merkitsevää numeroa kuten testivarauksessa. Tulos on sama kuin $U : d$, joten kenttä on levyjen välissä homogeeninen noin $6\,\text{cm}$:n päähän keskikohdasta.
 **Järkevyys:** Keskiarvo $2{,}98 \cdot 10^{4}\,\text{V/m}$ poikkeaa arvosta $U : d$ vain $0{,}6\,\%$. Pisteessä $x = 8{,}0\,\text{cm}$ kenttä on jo $3{,}7\,\%$ heikompi kuin keskellä, joten $3\,\%$:n raja ylittyy ennen reunaa, ja reunalla $x = 10{,}0\,\text{cm}$ kenttä on jo $45{,}2\,\%$ heikompi.
 
@@ -228,23 +222,9 @@ Elektronin paino voidaan jättää huomiotta, mutta pölyhiukkasen ei.
 **Periaate:** Leijuva pisara on levossa, joten sähköinen voima $qE$ ja paino $mg$ ovat yhtä suuret. Levyjen välinen kenttä on homogeeninen, $E = U : d$. Siis $qU : d = mg$. Kaikki varaukset ovat saman askeleen kokonaislukukertoja. Pienimmän varauksen oletetaan olevan yksi askel, jos muiden suhteet siihen ovat kokonaislukuja.
 **Kaava:** $qE = mg$ ja $E = \dfrac{U}{d}$, joten $q = \dfrac{mgd}{U}$; $e \approx \dfrac{S}{N}$, missä $S$ on suhteiden $q : n$ summa ja $N = 5$ pisaroiden lukumäärä
 **Muunnokset:** $d = 8{,}0\,\text{mm} = 8{,}0 \cdot 10^{-3}\,\text{m}$ ja $m = 3{,}8 \cdot 10^{-15}\,\text{kg}$ ja niin edelleen.
-**Sijoitus:** a) Pisaralle 1 paino on $mg = 3{,}8 \cdot 10^{-15}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}73 \cdot 10^{-14}\,\text{N}$ ja $mgd = 3{,}73 \cdot 10^{-14}\,\text{N} \cdot 8{,}0 \cdot 10^{-3}\,\text{m} = 2{,}98 \cdot 10^{-16}\,\text{J}$, joten $q_1 = 2{,}98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3{,}20 \cdot 10^{-19}\,\text{C}$.
+**Sijoitus:** a) Pisaralle 1 paino on $mg = 3{,}8 \cdot 10^{-15}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}73 \cdot 10^{-14}\,\text{N}$ ja $mgd = 3{,}73 \cdot 10^{-14}\,\text{N} \cdot 8{,}0 \cdot 10^{-3}\,\text{m} = 2{,}98 \cdot 10^{-16}\,\text{J}$, joten $q_1 = 2{,}98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3{,}20 \cdot 10^{-19}\,\text{C}$. Samoin pisaroille 2–5 saadaan $4{,}84 \cdot 10^{-19}\,\text{C}$, $1{,}59 \cdot 10^{-19}\,\text{C}$, $6{,}38 \cdot 10^{-19}\,\text{C}$ ja $4{,}83 \cdot 10^{-19}\,\text{C}$. Sähköisen voiman täytyy osoittaa ylös kohti positiivista levyä, joten pisarat ovat negatiivisia.
 
-Samoin pisaroille 2–5 saadaan $4{,}84 \cdot 10^{-19}\,\text{C}$, $1{,}59 \cdot 10^{-19}\,\text{C}$, $6{,}38 \cdot 10^{-19}\,\text{C}$ ja $4{,}83 \cdot 10^{-19}\,\text{C}$.
-
-Sähköisen voiman täytyy osoittaa ylös kohti positiivista levyä, joten pisarat ovat negatiivisia.
-
-b) Pienin varaus on pisaralla 3, $1{,}59 \cdot 10^{-19}\,\text{C}$.
-
-Muiden suhde siihen on $2{,}0$; $3{,}0$; $4{,}0$ ja $3{,}0$, joten alkeisvarausten lukumäärät ovat pisaroilla 1–5 järjestyksessä $n = 2$; $3$; $1$; $4$ ja $3$.
-
-Suhteet ovat kokonaislukuja, joten pisaran 3 varaus on yksi alkeisvaraus ($n = 1$).
-
-Kohdan c kirjallisuusarvo tukee valintaa.
-
-Suhteet $q : n$ ovat $1{,}60$; $1{,}61$; $1{,}59$; $1{,}60$ ja $1{,}61$, kaikki yksikössä $10^{-19}\,\text{C}$.
-
-Suhteiden summa on $8{,}01 \cdot 10^{-19}\,\text{C}$, joten $e \approx 8{,}01 \cdot 10^{-19}\,\text{C} : 5 = 1{,}60 \cdot 10^{-19}\,\text{C}$.
+b) Pienin varaus on pisaralla 3, $1{,}59 \cdot 10^{-19}\,\text{C}$. Muiden suhde siihen on $2{,}0$; $3{,}0$; $4{,}0$ ja $3{,}0$, joten alkeisvarausten lukumäärät ovat pisaroilla 1–5 järjestyksessä $n = 2$; $3$; $1$; $4$ ja $3$. Suhteet ovat kokonaislukuja, joten pisaran 3 varaus on yksi alkeisvaraus ($n = 1$). Kohdan c kirjallisuusarvo tukee valintaa. Suhteet $q : n$ ovat $1{,}60$; $1{,}61$; $1{,}59$; $1{,}60$ ja $1{,}61$, kaikki yksikössä $10^{-19}\,\text{C}$. Suhteiden summa on $8{,}01 \cdot 10^{-19}\,\text{C}$, joten $e \approx 8{,}01 \cdot 10^{-19}\,\text{C} : 5 = 1{,}60 \cdot 10^{-19}\,\text{C}$.
 **Vastaus:** c) Alkeisvarauksen arvio on $1{,}60 \cdot 10^{-19}\,\text{C}$, ja se poikkeaa kirjallisuusarvosta $1{,}602 \cdot 10^{-19}\,\text{C}$ alle $1\,\%$, mittaustarkkuuden rajoissa. Pisaroiden varaukset ovat eri suuria mutta tarkasti samojen askelten monikertoja: jos varaus voisi olla mikä tahansa, suhteet $q : n$ eivät olisi lähes vakioita. Siksi aineisto tukee sitä, että varaus esiintyy vain alkeisvarauksen monikertoina.
 
 d) Hiukkaset varataan, joten levyjen kentässä niihin kohdistuu voima $F = qE$ kohti vastakkaismerkkistä levyä ja ne liikkuvat sinne ja tarttuvat siihen. Kun jännite kasvaa, kenttä $E = U : d$ kasvaa, jolloin voima ja kiihtyvyys kasvavat samassa suhteessa jännitteeseen. Hiukkaset pääsevät levylle nopeammin, ja myös raskaammat ja vähemmän varautuneet hiukkaset kerääntyvät.
@@ -262,9 +242,7 @@ Näin poikkeama on $y = \tfrac{1}{2}at^2$, kun $t = L : v_0$.
 Paino jätetään huomiotta, jos se on paljon pienempi kuin sähköinen voima.
 **Kaava:** $E = \dfrac{U}{d}$, $F = qE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v_0}$ ja $y = \dfrac{1}{2}at^2$
 **Muunnokset:** $U = 2{,}0\,\text{kV} = 2000\,\text{V}$, $d = 5{,}0 \cdot 10^{-3}\,\text{m}$, $L = 1{,}0 \cdot 10^{-2}\,\text{m}$; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** a) $E = \dfrac{2000\,\text{V}}{5{,}0 \cdot 10^{-3}\,\text{m}} = 4{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 1{,}0 \cdot 10^{-12}\,\text{C} \cdot 4{,}0 \cdot 10^{5}\,\text{V/m} = 4{,}0 \cdot 10^{-7}\,\text{N}$.
-
-Paino on $mg = 3{,}0 \cdot 10^{-11}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}9 \cdot 10^{-10}\,\text{N}$, joten sähköinen voima on noin $1400$-kertainen painoon verrattuna ja painon voi jättää huomiotta.
+**Sijoitus:** a) $E = \dfrac{2000\,\text{V}}{5{,}0 \cdot 10^{-3}\,\text{m}} = 4{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 1{,}0 \cdot 10^{-12}\,\text{C} \cdot 4{,}0 \cdot 10^{5}\,\text{V/m} = 4{,}0 \cdot 10^{-7}\,\text{N}$. Paino on $mg = 3{,}0 \cdot 10^{-11}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}9 \cdot 10^{-10}\,\text{N}$, joten sähköinen voima on noin $1400$-kertainen painoon verrattuna ja painon voi jättää huomiotta.
 
 b) $a = \dfrac{4{,}0 \cdot 10^{-7}\,\text{N}}{3{,}0 \cdot 10^{-11}\,\text{kg}} = 1{,}33 \cdot 10^{4}\,\text{m/s}^2$.
 
@@ -272,12 +250,6 @@ c) $t = \dfrac{1{,}0 \cdot 10^{-2}\,\text{m}}{20\,\text{m/s}} = 5{,}0 \cdot 10^{
 
 d) $$\begin{aligned} y &= \dfrac{1}{2} \cdot 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot (5{,}0 \cdot 10^{-4}\,\text{s})^2 \\ &= 1{,}67 \cdot 10^{-3}\,\text{m} \\ &= 1{,}67\,\text{mm} \end{aligned}$$.
 
-e) Pisara tulee puolivälistä, joten se osuu levyyn, jos poikkeama on yli $d : 2 = 2{,}5\,\text{mm}$.
-
-Nyt $1{,}67\,\text{mm} < 2{,}5\,\text{mm}$, joten pisara ei osu levyyn.
-
-Jännitteen kaksinkertaistuessa myös $E$, $F$ ja $a$ kaksinkertaistuvat, jolloin $y = 3{,}33\,\text{mm} > 2{,}5\,\text{mm}$, joten pisara osuu levyyn.
-
-Se saavuttaa poikkeaman $2{,}5\,\text{mm}$ ajassa $t = \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\text{m/s}^2} = 4{,}3 \cdot 10^{-4}\,\text{s}$, jolloin se on edennyt $20\,\text{m/s} \cdot 4{,}3 \cdot 10^{-4}\,\text{s} = 8{,}7\,\text{mm} < 10\,\text{mm}$, eli osuma tapahtuu ennen levyjen päätä.
+e) Pisara tulee puolivälistä, joten se osuu levyyn, jos poikkeama on yli $d : 2 = 2{,}5\,\text{mm}$. Nyt $1{,}67\,\text{mm} < 2{,}5\,\text{mm}$, joten pisara ei osu levyyn. Jännitteen kaksinkertaistuessa myös $E$, $F$ ja $a$ kaksinkertaistuvat, jolloin $y = 3{,}33\,\text{mm} > 2{,}5\,\text{mm}$, joten pisara osuu levyyn. Se saavuttaa poikkeaman $2{,}5\,\text{mm}$ ajassa $t = \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\text{m/s}^2} = 4{,}3 \cdot 10^{-4}\,\text{s}$, jolloin se on edennyt $20\,\text{m/s} \cdot 4{,}3 \cdot 10^{-4}\,\text{s} = 8{,}7\,\text{mm} < 10\,\text{mm}$, eli osuma tapahtuu ennen levyjen päätä.
 **Vastaus:** $1{,}7\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtötiedoissa. Pisara ei osu levyyn, mutta kaksinkertaisella jännitteellä osuisi.
 **Järkevyys:** Poikkeama on pienempi kuin levyjen puoliväli $2{,}5\,\text{mm}$, mikä sopii kirjoittimeen, jossa pisaran paikkaa säädetään jännitteellä. Vaakanopeudella $20\,\text{m/s}$ pisara kulkee levyjen ohi $0{,}5\,\text{ms}$:ssa, ja sinä aikana sivuttaisnopeus kasvaa arvoon $$\begin{aligned} &a \cdot t \\ &= 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot 5{,}0 \cdot 10^{-4}\,\text{s} \\ &= 6{,}7\,\text{m/s} \end{aligned}$$, joka on selvästi pienempi kuin $20\,\text{m/s}$.

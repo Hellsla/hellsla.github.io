@@ -186,7 +186,9 @@ Of the energy taken from the grid only the fraction given by the efficiency is s
 **Formula:** $\eta P t = W_\text{battery}$, so $t = \dfrac{W_\text{battery}}{\eta P}$
 **Conversions:** $W_\text{battery} = (0.80 - 0.20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$ and $\eta = 0.92$
 **Substitution:** $t = \dfrac{36\,\text{kWh}}{0.92 \cdot 7.4\,\text{kW}} = \dfrac{36\,\text{kWh}}{6.808\,\text{kW}} = 5.288\,\text{h}$
-**Answer:** In the answer box $5.3\,\text{h}$, two significant figures like the efficiency $92\,\%$. a) First error: the student uses the whole energy of the battery $60\,\text{kWh}$, although only $60\,\%$ of it, that is $36\,\text{kWh}$, is transferred to the battery.
+**Answer:** In the answer box $5.3\,\text{h}$, two significant figures like the efficiency $92\,\%$.
+
+a) First error: the student uses the whole energy of the battery $60\,\text{kWh}$, although only $60\,\%$ of it, that is $36\,\text{kWh}$, is transferred to the battery.
 
 Second error: the student does not take the efficiency into account, so the student divides by the power alone and not by the product $\eta P$.
 

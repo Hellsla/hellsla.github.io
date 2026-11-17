@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 99ab280aa2e4e2d7
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 4c46f6619202b032
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md 14-LED järkevyys: the split paragraph begins "Siksi LEDin jännite voidaan pitää vakiona" — fine, but could stay joined to the previous sentence.
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-14-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- Delta (md-paragraphs only): opened exercises L2-8, L2-9, L3-3, L3-5, L3-6, L3-7 (solar a)–c) and LED a)–c) solutions). Samples at 1280 px; breaks are not width-dependent. Paragraph breaks fall at thought boundaries, no orphan one-word paragraph, solution-card spacing even, nothing clipped.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

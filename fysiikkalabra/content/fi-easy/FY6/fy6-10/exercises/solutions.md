@@ -216,9 +216,9 @@ Jakamalla yhtälöt saadaan $F = mg\tan\theta$. Langat ja pallot muodostavat tas
 **Kaava:** $F = mg\tan\theta$, $r = 2L\sin\theta$ ja $F = k\,\dfrac{q^2}{r^2}$, josta $q = r\sqrt{\dfrac{F}{k}}$
 **Muunnokset:** $m = 0{,}80\,\text{g} = 0{,}80 \cdot 0{,}001\,\text{kg} = 8{,}0 \cdot 10^{-4}\,\text{kg}$. Lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $$\begin{aligned} F &= 8{,}0 \cdot 10^{-4}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot \tan 10\,{}^\circ \\ &= 1{,}384 \cdot 10^{-3}\,\text{N} \end{aligned}$$ ja $r = 2 \cdot 0{,}30\,\text{m} \cdot \sin 10\,{}^\circ = 0{,}1042\,\text{m}$, joten $q = 0{,}1042\,\text{m} \cdot \sqrt{\dfrac{1{,}384 \cdot 10^{-3}\,\text{N}}{8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = 0{,}1042\,\text{m} \cdot 3{,}924 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 4{,}088 \cdot 10^{-8}\,\text{C} = 40{,}9\,\text{nC}$
-**Vastaus:** $41\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Pallojen etäisyys on $0{,}10\,\text{m}$. c) Sähköiset voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret, vaikka varaukset olisivat eri suuret. Massat ovat samat, joten ehto $\tan\theta = F : (mg)$ antaa kummallekin pallolle saman kulman.
+**Vastaus:** $41\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Pallojen etäisyys on $0{,}10\,\text{m}$.
 
-Kulma ei pysy $10\,{}^\circ$:ssa vaan kasvaa, koska voima $F$ kasvaa. Langat ovat silti keskenään yhtä suuressa kulmassa pystysuoraan nähden.
+c) Sähköiset voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret, vaikka varaukset olisivat eri suuret. Massat ovat samat, joten ehto $\tan\theta = F : (mg)$ antaa kummallekin pallolle saman kulman. Kulma ei pysy $10\,{}^\circ$:ssa vaan kasvaa, koska voima $F$ kasvaa. Langat ovat silti keskenään yhtä suuressa kulmassa pystysuoraan nähden.
 **Järkevyys:** Sähköinen voima $1{,}38\,\text{mN}$ on pieni verrattuna painoon $mg = 7{,}85\,\text{mN}$. Myös $\tan 10\,{}^\circ = 0{,}176$ on sama suhde, joten kulma on pieni. Takaisinsijoitus Coulombin lakiin antaa $1{,}38\,\text{mN}$.
 
 ## fy6-10-L1-09
