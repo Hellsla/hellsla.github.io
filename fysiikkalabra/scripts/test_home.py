@@ -145,17 +145,20 @@ for lang in i18n.languages():
     rp = (out / "lukuvinkit.html").read_text(); sp = (out / "nain-opiskelet.html").read_text() if (out / "nain-opiskelet.html").is_file() else ""
     main_sp = re.search(r'<main[^>]*>(.*?)</main>', sp, re.S); main_sp = main_sp.group(1) if main_sp else ""
     heads = re.findall(r'<h2 id="h-[a-z]+">([^<]*)</h2>', main_sp)
-    expect(f"{lang}: nain-opiskelet.html: Näin opit fysiikkaa with its four parts in order (teacher 2026-11-08; Ydinpolku ja valinnaiset tehtävät 2026-11-13)",
-           f'<h1 id="h-study">{_h.escape(T("guide.title"))}</h1>' in main_sp and heads == [_h.escape(T("guide." + k)) for k in ("start_h", "core_h", "stuck_h", "tips_h")], heads)
-    chips = re.findall(r'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">(\d)</span>([^<]*)</span>', main_sp)
-    expect(f"{lang}: the four steps name the chapter stages as a lesson's stage bar numbers them",
-           main_sp.count('<li><h3>') >= 4 and chips == [(str(n), _h.escape(x)) for n, x in zip(range(1, 7), [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella"]] + [T("lesson.exercises")])], chips)
-    ways = re.search(r'<ul class="stuck-ways">(.*?)</ul>', main_sp, re.S)
-    expect(f"{lang}: the problem-solving map: the question, four ways in an unordered list, the retry card; its lines are decorative",
-           'class="stuck-q"' in main_sp and ways and ways.group(1).count("<li>") == 4 and 'class="stuck-retry"' in main_sp
-           and all('aria-hidden="true"' in m for m in re.findall(r'<svg class="stuck-lines[^>]*>', main_sp)))
-    expect(f"{lang}: five study tips and the link to the front page's module list",
-           len(re.findall(r'<li><svg class="study-icon"', main_sp.split('class="study-tips"')[-1])) == 5 and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
+    expect(f"{lang}: nain-opiskelet.html: Näin opit fysiikkaa with its three parts in order (teacher 2026-11-17: path, learning, feedback)",
+           f'<h1 id="h-study">{_h.escape(T("guide.title"))}</h1>' in main_sp and heads == [_h.escape(T("guide." + k)) for k in ("path_h", "learn_h", "feedback_h")], heads)
+    path = re.search(r'<ol class="study-path">(.*?)</ol>', main_sp, re.S)
+    stages = [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella"]] + [T("lesson.exercises"), T("inquiry.stage_tarkista")]
+    nums = re.findall(r'<span class="path-no"><span class="visually-hidden">[^<]*</span>([^<]*)</span>', path.group(1)) if path else []
+    expect(f"{lang}: the path diagram: six steps in an ordered list, each with an icon (aria-hidden) and the chapter stage bar's number (5–6 for examples and exercises, 7 for the test), no stage the chapter lacks",
+           bool(path) and path.group(1).count("<li>") == 6 and path.group(1).count('<svg class="study-icon" ') == 6 and path.group(1).count('aria-hidden="true"') == 6
+           and nums == ["1", "2", "3", "4", "5–6", "7"] and len(stages) == 7, nums)
+    expect(f"{lang}: the feedback loop sits under the path; the path is not repeated as a text list",
+           'class="path-loop"' in main_sp and main_sp.find('class="path-loop"') > main_sp.find('class="study-path"') and 'study-steps' not in main_sp and 'stuck-map' not in main_sp)
+    expect(f"{lang}: eight study tips and four help items, then feedback and self-assessment side by side, and the link to the front page's module list",
+           main_sp.split('class="study-tips"', 1)[-1].count('<li><svg class="study-icon"') == 12 and 'class="study-two"' in main_sp and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
+    expect(f"{lang}: the page promises no weekly points or login: feedback is 'may', no scoring system (teacher 2026-11-17)",
+           'viikoittai' not in main_sp.lower() and 'weekly' not in main_sp.lower())
     expect(f"{lang}: every page's header links Näin opiskelet; on its own page it is marked current (teacher 2026-11-08)",
            '<a class="nav-study" aria-current="page" href="nain-opiskelet.html">' in sp
            and not [p.name for p in out.glob("*.html") if '<header class="top">' in p.read_text() and 'class="nav-study"' not in p.read_text()])
