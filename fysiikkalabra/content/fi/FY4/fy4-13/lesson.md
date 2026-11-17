@@ -305,7 +305,9 @@ Pöydällä on kärry, jonka massa on $1{,}5\,\text{kg}$. Siihen sidottu lanka k
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m_1 = 1{,}5\,\text{kg}$, $m_2 = 0{,}60\,\text{kg}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kiihtyvyyttä $a$ ja langan jännitysvoimaa $T$.
+**Tunnetut ja kysytty.** $m_1 = 1{,}5\,\text{kg}$, $m_2 = 0{,}60\,\text{kg}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kiihtyvyyttä $a$ ja langan jännitysvoimaa $T$.
 
 <!-- vaihe -->
 

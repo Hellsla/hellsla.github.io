@@ -362,7 +362,9 @@ Pulkkaa, jonka massa on $12\,\text{kg}$, vedetään vaakasuoralla lumella narull
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $m = 12\,\text{kg}$, $T = 80\,\text{N}$, $\alpha = 35^\circ$, $F_\mu = 30\,\text{N}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään kiihtyvyyttä $a$ ja tukivoimaa $N$.
+**Tunnetut ja kysytty.** $m = 12\,\text{kg}$, $T = 80\,\text{N}$, $\alpha = 35^\circ$, $F_\mu = 30\,\text{N}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään kiihtyvyyttä $a$ ja tukivoimaa $N$.
 
 <!-- vaihe -->
 

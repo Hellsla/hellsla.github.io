@@ -500,7 +500,9 @@ Pyöräilijä polkee suoraa tietä tasaisella nopeudella $6{,}0\,\text{m/s}$. He
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Origo on pysäytysviivalla ja positiivinen suunta on kulkusuunta. Auto A: $x_{0\text{A}} = 0$, $v_{0\text{A}} = 0$, $a = 2{,}0\,\text{m/s}^2$. Pyöräilijä B: $x_{0\text{B}} = 16\,\text{m}$, $v = 6{,}0\,\text{m/s}$ (vakio). Kysytään ohitushetkeä $t$ ja ohituspaikkaa $x$.
+**Tunnetut ja kysytty.** Origo on pysäytysviivalla ja positiivinen suunta on kulkusuunta. Auto A: $x_{0\text{A}} = 0$, $v_{0\text{A}} = 0$, $a = 2{,}0\,\text{m/s}^2$. Pyöräilijä B: $x_{0\text{B}} = 16\,\text{m}$, $v = 6{,}0\,\text{m/s}$ (vakio).
+
+Kysytään ohitushetkeä $t$ ja ohituspaikkaa $x$.
 
 <!-- vaihe -->
 

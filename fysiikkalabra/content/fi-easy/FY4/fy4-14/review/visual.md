@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 35b940b761644836
+CONTENT-HASH: 802cc2cf1aae0244
 
 ## Blocking
+(none)
 
 ## Polish
-
+(none)
 
 ## Checked
-batch delta review: diff read (figures.json kuvaukset, Kertaa-kysymys); opened fy4-14 fig-13-390 and fig-row-1280, layout intact, descriptions match figures. Other lessons: text diffs only, captures not opened.
+- batch delta review: opened example-390 captures (fi-easy, fy4-14); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

@@ -390,7 +390,9 @@ Tuulivoimalan roottorin halkaisija on $120\,\text{m}$. Tuulen nopeus on $9{,}0\,
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Roottorin halkaisija on $d = 120\,\text{m}$, tuulen nopeus $v = 9{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$ ja hyötysuhde $\eta = 45\,\%$. Kysytään sähkötehoa $P$.
+**Tunnetut ja kysytty.** Roottorin halkaisija on $d = 120\,\text{m}$, tuulen nopeus $v = 9{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$ ja hyötysuhde $\eta = 45\,\%$.
+
+Kysytään sähkötehoa $P$.
 
 <!-- vaihe -->
 

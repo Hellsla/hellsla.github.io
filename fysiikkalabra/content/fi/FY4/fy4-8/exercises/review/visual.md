@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 27dde45fa6e89ceb
+CONTENT-HASH: 8038d1872877ae59
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] exercises.json task text, capture fi-390-09 #3 — the punctuation after the lifted student calculation is not drawn into the formula's last row: a lone "`.`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… . \end{aligned}$$`). No new review round needed.
+- [Minor] sol-fy4-8-L2-10-390.png (Vastaus, kohdat c-e) — the sub-parts a)-e) are separate paragraphs now, but e) still holds a long run of factors in one block — optional: split the second half of e) at "Vammat riippuvat".
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-09, fi-390-10 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Delta (md-paragraphs): opened shots/sol-fy4-8-L1-06-390.png in full and sol-fy4-8-L2-10-390.png in 1500 px parts 2-5 (part 1, the task statement, not opened: no break there). L1-06: the model answer and the steep/gentle-slide balance are one thought each in two paragraphs. L2-10: the Vastaus sub-parts a)-e), the 7,7 kN / 150 kN comparison and the closing remarks sit in separate paragraphs, spacing even, nothing clipped. Words unchanged. Hash re-run before writing: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

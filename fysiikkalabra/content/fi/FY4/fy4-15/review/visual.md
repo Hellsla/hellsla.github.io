@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a4a504fe2c1f3695
+CONTENT-HASH: 544728773deb0a3f
 
 ## Blocking
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.
+- batch delta review: opened example-390 captures (fi, fy4-15); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

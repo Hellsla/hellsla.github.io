@@ -605,7 +605,9 @@ Pyöräilijä tulee mäen alkuun nopeudella $4{,}0\,\text{m/s}$ ja lakkaa polkem
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Alkunopeus $v_0 = 4{,}0\,\text{m/s}$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$ ja siirtymä $\Delta x = x - x_0 = 60\,\text{m}$ liikkeen suuntaan, joka valitaan positiiviseksi. Kysytään aikaa $t$ ja nopeutta $v$ mäen alla.
+**Tunnetut ja kysytty.** Alkunopeus $v_0 = 4{,}0\,\text{m/s}$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$ ja siirtymä $\Delta x = x - x_0 = 60\,\text{m}$ liikkeen suuntaan, joka valitaan positiiviseksi.
+
+Kysytään aikaa $t$ ja nopeutta $v$ mäen alla.
 
 <!-- vaihe -->
 

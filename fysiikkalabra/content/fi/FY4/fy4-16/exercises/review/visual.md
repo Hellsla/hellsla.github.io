@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a94e9ddad9324157
+CONTENT-HASH: 23186f4e97bbff73
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] exercises.json task text, capture fi-390-25 #5 — the punctuation after the lifted student calculation is not drawn into the formula's last row: "`.”`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… . \end{aligned}$$`). No new review round needed.
+None.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-24, fi-390-25, fi-390-26 and fi-1280-18, fi-1280-20; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-16-L1-06-390.png (lift scale: result / each rejected claim), sol-fy4-16-L1-07-390.png (energy: the claims and the closing remark), sol-fy4-16-L3-04-390.png (sled Järkevyys, the closing paragraph on real snow friction is a separate point) and sol-fy4-16-L3-05-390.png (parachutist Järkevyys: drag vs weight, time average, why the difference is right).
+- Breaks separate distinct points; spacing even, nothing clipped, display blocks intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

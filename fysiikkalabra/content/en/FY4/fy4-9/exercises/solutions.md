@@ -102,7 +102,9 @@
 ## fy4-9-L3-02
 **Given:** mass of the passenger $m = 75\,\text{kg}$, stopping time $\Delta t = 0.12\,\text{s}$, average force of the belt at most $F = 10\,\text{kN}$, final velocity $v = 0$
 **Find:** the greatest initial velocity $v_0$ from which the passenger can be stopped, in $\text{km/h}$
-**Principle:** In the horizontal direction only the force of the belt acts on the passenger, so it is the net force. By the impulse–momentum principle the impulse of the force of the belt equals the change in the passenger's momentum. When the force and the time are at their greatest, the momentum to be stopped, and so the initial velocity, is also at its greatest.
+**Principle:** In the horizontal direction only the force of the belt acts on the passenger, so it is the net force. By the impulse–momentum principle the impulse of the force of the belt equals the change in the passenger's momentum.
+
+When the force and the time are at their greatest, the momentum to be stopped, and so the initial velocity, is also at its greatest.
 **Formula:** $F\,\Delta t = mv_0 - 0$, so $v_0 = \dfrac{F\,\Delta t}{m}$
 **Conversions:** $F = 10\,\text{kN} = 10\,000\,\text{N}$; finally the answer is converted to $\text{km/h}$ by multiplying by $3.6$, since $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_0 = \dfrac{10\,000\,\text{N} \cdot 0.12\,\text{s}}{75\,\text{kg}} = \dfrac{1200\,\text{N}\cdot\text{s}}{75\,\text{kg}} = 16\,\text{m/s} = 16 \cdot 3.6\,\text{km/h} = 57.6\,\text{km/h}$
@@ -112,7 +114,9 @@
 ## fy4-9-L3-03
 **Given:** mass of each ball $m = 0.20\,\text{kg}$, incoming velocity $8.0\,\text{m/s}$, outgoing velocity of the rubber ball $6.0\,\text{m/s}$ back, the clay ball stays in place, contact time $\Delta t = 0.020\,\text{s}$ for both
 **Find:** the difference $\Delta F$ between the average forces of the rubber ball and the clay ball on the wall, in $\text{N}$
-**Principle:** The force of the wall is the horizontal net force on the ball, and by the impulse–momentum principle its impulse is the change in the ball's momentum. By Newton's third law the ball pushes the wall with a force equal in magnitude to the force of the wall on the ball. The positive direction is chosen towards the wall: $v_0 = 8.0\,\text{m/s}$, for the clay ball $v = 0$ and for the rubber ball $v = -6.0\,\text{m/s}$.
+**Principle:** The force of the wall is the horizontal net force on the ball, and by the impulse–momentum principle its impulse is the change in the ball's momentum.
+
+By Newton's third law the ball pushes the wall with a force equal in magnitude to the force of the wall on the ball. The positive direction is chosen towards the wall: $v_0 = 8.0\,\text{m/s}$, for the clay ball $v = 0$ and for the rubber ball $v = -6.0\,\text{m/s}$.
 **Formula:** The magnitude of the force is $F = \dfrac{m\,|v - v_0|}{\Delta t}$, so $\Delta F = \dfrac{m(v_0 + v_\text{r})}{\Delta t} - \dfrac{mv_0}{\Delta t} = \dfrac{m v_\text{r}}{\Delta t}$, where $v_\text{r} = 6.0\,\text{m/s}$ is the outgoing speed of the rubber ball
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Delta F = \dfrac{0.20\,\text{kg} \cdot 6.0\,\text{m/s}}{0.020\,\text{s}} = \dfrac{1.2\,\text{kg}\cdot\text{m/s}}{0.020\,\text{s}} = 60\,\text{N}$
@@ -122,7 +126,13 @@
 ## fy4-9-L1-06
 **Find:** the sign and direction of the momentum $\overline{p}$ of the cart when the cart moves to the left and the positive direction is to the right
 **Principle:** The momentum $\overline{p} = m\overline{v}$ is a vector with the direction of the velocity, because mass is always positive. In one dimension the direction is expressed by the sign: a momentum pointing in the positive direction is positive, and one pointing in the opposite direction is negative.
-**Model answer:** The correct statement is the one saying that the momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction. The cart moves to the left, that is, against the positive direction, so $v < 0$ and $p = mv < 0$. The statement about a positive momentum forgets that the sign of the velocity carries over to the product: the mass is positive, but the velocity is not. The statement that the momentum always points in the chosen positive direction is wrong, because the direction follows the velocity and not the choice of direction. The statement about zero is wrong, because the momentum is zero only when the velocity is zero; whether the motion is horizontal does not affect it.
+**Model answer:** The correct statement is the one saying that the momentum is negative, because its direction is the direction of the velocity, that is, against the chosen direction. The cart moves to the left, that is, against the positive direction, so $v < 0$ and $p = mv < 0$.
+
+The statement about a positive momentum forgets that the sign of the velocity carries over to the product: the mass is positive, but the velocity is not.
+
+The statement that the momentum always points in the chosen positive direction is wrong, because the direction follows the velocity and not the choice of direction.
+
+The statement about zero is wrong, because the momentum is zero only when the velocity is zero; whether the motion is horizontal does not affect it.
 
 ## fy4-9-L1-07
 **Given:** mass of the stone $m = 20\,\text{kg}$, initial velocity $v_0 = 0$, impulse of the pushing force $I = 36\,\text{N}\cdot\text{s}$; friction from the ice is neglected
@@ -157,18 +167,26 @@
 ## fy4-9-L2-06
 **Given:** mass of the cart $m = 0.50\,\text{kg}$, initial velocity $v_0 = 0.80\,\text{m/s}$, final velocity $v = 0$; durations $\Delta t$ for metal $6.0\,\text{ms}$, for rubber $25\,\text{ms}$ and for foam $80\,\text{ms}$ (example data); friction and air resistance are neglected
 **Find:** a) the average force of the metal bumper and b) the average force of the foam bumper $F_\text{avg}$ in $\text{N}$; c) an explanation
-**Principle:** On an air track the weight and the normal force from the track cancel each other, so the horizontal net force is the force of the bumper. By the impulse–momentum principle its impulse equals the change in the cart's momentum. The cart stops from the same velocity with every bumper, so the change in momentum is the same every time.
+**Principle:** On an air track the weight and the normal force from the track cancel each other, so the horizontal net force is the force of the bumper. By the impulse–momentum principle its impulse equals the change in the cart's momentum.
+
+The cart stops from the same velocity with every bumper, so the change in momentum is the same every time.
 **Formula:** $F_\text{avg}\,\Delta t = 0 - mv_0$, so the magnitude of the force is $F_\text{avg} = \dfrac{mv_0}{\Delta t}$
 **Conversions:** $6.0\,\text{ms} = 0.0060\,\text{s}$ and $80\,\text{ms} = 0.080\,\text{s}$; the magnitude of the change in momentum is $mv_0 = 0.50\,\text{kg} \cdot 0.80\,\text{m/s} = 0.40\,\text{kg}\cdot\text{m/s}$
 **Substitution:** a) $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.0060\,\text{s}} = 67\,\text{N}$ and b) $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.080\,\text{s}} = 5.0\,\text{N}$
 **Answer:** b) $5.0\,\text{N}$; in part a the force of the metal bumper is $67\,\text{N}$. The results are given to two significant figures like the mass and the velocity.
-**Reasonableness:** The time is $80 : 6.0 \approx 13$ times longer, so the force is about $13$ times smaller: $67\,\text{N} : 5.0\,\text{N} \approx 13$. Explanation for c: by the impulse–momentum principle the impulse of the net force $F_\text{avg}\,\Delta t$ equals the change in momentum, and it is the same in all measurements. When a soft bumper lengthens the stopping time $\Delta t$, the product must stay the same, and the average force becomes smaller. An airbag works the same way: it does not reduce the change in momentum but lengthens the stopping.
+**Reasonableness:** The time is $80 : 6.0 \approx 13$ times longer, so the force is about $13$ times smaller: $67\,\text{N} : 5.0\,\text{N} \approx 13$. Explanation for c: by the impulse–momentum principle the impulse of the net force $F_\text{avg}\,\Delta t$ equals the change in momentum, and it is the same in all measurements.
+
+When a soft bumper lengthens the stopping time $\Delta t$, the product must stay the same, and the average force becomes smaller. An airbag works the same way: it does not reduce the change in momentum but lengthens the stopping.
 
 ## fy4-9-L2-07
 **Given:** mass of the cart $m = 0.50\,\text{kg}$, incoming velocity $1.50\,\text{m/s}$ towards the end; the force $F$ as a function of time in the table (example data); friction and air resistance are neglected
 **Find:** the magnitude of the change in the velocity of the cart $|\Delta v|$ in $\text{m/s}$
-**Principle:** The force of the end is the horizontal net force on the cart, because the weight and the normal force from the track cancel each other. The force varies, so its impulse is the area between the $(t, F)$ graph and the time axis. By the impulse–momentum principle the impulse equals the change in momentum. The positive direction is away from the end, that is, the direction of the force.
-**Reading the graph:** The points are plotted in the $(t, F)$ coordinate system and joined with a broken line, so seven trapezoids lie under the graph. The width of each is $10\,\text{ms}$ and the heights are the values of adjacent measurements. At the end points $F = 0$, so the sum of the areas of the trapezoids is $\Delta t$ times the sum of the forces at the interior points. The sum of the interior points is $144.0\,\text{N}$.
+**Principle:** The force of the end is the horizontal net force on the cart, because the weight and the normal force from the track cancel each other. The force varies, so its impulse is the area between the $(t, F)$ graph and the time axis.
+
+By the impulse–momentum principle the impulse equals the change in momentum. The positive direction is away from the end, that is, the direction of the force.
+**Reading the graph:** The points are plotted in the $(t, F)$ coordinate system and joined with a broken line, so seven trapezoids lie under the graph. The width of each is $10\,\text{ms}$ and the heights are the values of adjacent measurements.
+
+At the end points $F = 0$, so the sum of the areas of the trapezoids is $\Delta t$ times the sum of the forces at the interior points. The sum of the interior points is $144.0\,\text{N}$.
 **Formula:** $I = \Delta t \cdot \Sigma F$ and $I = m\,\Delta v$, so $\Delta v = \dfrac{I}{m}$
 **Conversions:** $\Delta t = 10\,\text{ms} = 0.010\,\text{s}$
 **Substitution:** $I = 0.010\,\text{s} \cdot 144.0\,\text{N} = 1.44\,\text{N}\cdot\text{s}$ and $\Delta v = \dfrac{1.44\,\text{N}\cdot\text{s}}{0.50\,\text{kg}} = 2.88\,\text{m/s}$
@@ -184,21 +202,29 @@
 **Conversions:** $\Delta t = 10\,\text{ms} = 0.010\,\text{s}$, $98.1\,\text{kN} = 98\,100\,\text{N}$ and $1\,\text{m/s} = 3.6\,\text{km/h}$
 **Substitution:** a) $I = 0.010\,\text{s} \cdot 98\,100\,\text{N} = 981\,\text{N}\cdot\text{s}$. b) $v_0 = \dfrac{981\,\text{N}\cdot\text{s}}{70\,\text{kg}} = 14.01\,\text{m/s} = 14.01 \cdot 3.6\,\text{km/h} = 50.45\,\text{km/h}$. c) The same change in momentum was stopped in $0.025\,\text{s}$: $F_\text{avg} = \dfrac{981\,\text{N}\cdot\text{s}}{0.025\,\text{s}} = 39\,240\,\text{N}$.
 **Answer:** b) $50\,\text{km/h}$, two significant figures like the mass $70\,\text{kg}$. In parts a and c the impulse is $9.8 \cdot 10^2\,\text{N}\cdot\text{s}$ and the average force with a rigid obstacle is $39\,\text{kN}$.
-**Reasonableness:** The velocity $50\,\text{km/h}$ is a typical crash-test velocity. The average force of the airbag $\dfrac{981\,\text{N}\cdot\text{s}}{0.100\,\text{s}} = 9.81\,\text{kN}$ is smaller than the greatest force $17.4\,\text{kN}$, as it should be. Justification for c: with a rigid obstacle the average force $39\,\text{kN}$ is more than twice the greatest force of the airbag, even though the impulse is the same. The airbag lengthens the stopping from $25\,\text{ms}$ to $100\,\text{ms}$, so the force is smaller and strains the body less.
+**Reasonableness:** The velocity $50\,\text{km/h}$ is a typical crash-test velocity. The average force of the airbag $\dfrac{981\,\text{N}\cdot\text{s}}{0.100\,\text{s}} = 9.81\,\text{kN}$ is smaller than the greatest force $17.4\,\text{kN}$, as it should be.
+
+Justification for c: with a rigid obstacle the average force $39\,\text{kN}$ is more than twice the greatest force of the airbag, even though the impulse is the same. The airbag lengthens the stopping from $25\,\text{ms}$ to $100\,\text{ms}$, so the force is smaller and strains the body less.
 
 ## fy4-9-L3-05
 **Given:** mass of the ball $m = 0.60\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; times from the table (example data): release $0.000\,\text{s}$, hits the floor $0.500\,\text{s}$, leaves the floor $0.512\,\text{s}$, highest point $0.912\,\text{s}$; air resistance is neglected
 **Find:** b) the average force of the floor on the ball $N_\text{avg}$ in $\text{N}$; a) the velocities before the hit and after the bounce; c) the comparison force for a clay ball and an explanation
-**Principle:** In the air the acceleration of the ball is $g$ downwards, so the velocity before the hit follows from the falling time and the velocity after the bounce from the rising time, because the ball is at rest at the highest point. The positive direction is up. During the contact the force of the floor $N$ upwards and the weight $G = mg$ downwards act on the ball, so the net force is $N - G$. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
+**Principle:** In the air the acceleration of the ball is $g$ downwards, so the velocity before the hit follows from the falling time and the velocity after the bounce from the rising time, because the ball is at rest at the highest point. The positive direction is up.
+
+During the contact the force of the floor $N$ upwards and the weight $G = mg$ downwards act on the ball, so the net force is $N - G$. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
 **Formula:** $v_1 = -g\,t_\text{fall}$ and $v_2 = g\,t_\text{rise}$; $(N_\text{avg} - mg)\,\Delta t = mv_2 - mv_1$, so $N_\text{avg} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
 **Conversions:** The falling time is $0.500\,\text{s}$, the contact time $\Delta t = 0.512\,\text{s} - 0.500\,\text{s} = 0.012\,\text{s}$ and the rising time $0.912\,\text{s} - 0.512\,\text{s} = 0.400\,\text{s}$.
 **Substitution:** a) $v_1 = -9.81\,\text{m/s}^2 \cdot 0.500\,\text{s} = -4.905\,\text{m/s}$ and $v_2 = 9.81\,\text{m/s}^2 \cdot 0.400\,\text{s} = 3.924\,\text{m/s}$. b) The change in momentum is $$\begin{aligned} &m(v_2 - v_1) \\ &= 0.60\,\text{kg} \\ &\cdot (3.924 + 4.905)\,\text{m/s} \\ &= 5.297\,\text{kg}\cdot\text{m/s} \end{aligned}$$, and the weight is $mg = 0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 5.886\,\text{N}$. So $N_\text{avg} = 5.886\,\text{N} + \dfrac{5.297\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 5.886\,\text{N} + 441.5\,\text{N} = 447.3\,\text{N}$. c) For the clay ball $v_2 = 0$, so $$\begin{aligned} &N_\text{avg} = 5.886\,\text{N} \\ &+ \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.012\,\text{s}} \\ &= 5.886\,\text{N} + 245.3\,\text{N} \\ &= 251.1\,\text{N} \end{aligned}$$.
 **Answer:** b) $4.5 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.60\,\text{kg}$ and the contact time $0.012\,\text{s}$. The velocities in part a are $-4.9\,\text{m/s}$ and $+3.9\,\text{m/s}$, and for the clay ball of part c the force is $2.5 \cdot 10^2\,\text{N}$.
-**Reasonableness:** The weight $5.9\,\text{N}$ is only about $1.3\,\%$ of the force of the floor. The ball fell about $1.2\,\text{m}$ and rose about $0.78\,\text{m}$, which fits a basketball. Explanation for c: the change in momentum of the clay ball is $2.9\,\text{kg}\cdot\text{m/s}$, but the momentum of the rebounding ball also changes upwards to $+2.4\,\text{kg}\cdot\text{m/s}$, so its change $5.3\,\text{kg}\cdot\text{m/s}$ is greater and a greater force is needed in the same time.
+**Reasonableness:** The weight $5.9\,\text{N}$ is only about $1.3\,\%$ of the force of the floor. The ball fell about $1.2\,\text{m}$ and rose about $0.78\,\text{m}$, which fits a basketball.
+
+Explanation for c: the change in momentum of the clay ball is $2.9\,\text{kg}\cdot\text{m/s}$, but the momentum of the rebounding ball also changes upwards to $+2.4\,\text{kg}\cdot\text{m/s}$, so its change $5.3\,\text{kg}\cdot\text{m/s}$ is greater and a greater force is needed in the same time.
 
 ## fy4-9-L1-09
 **Find:** the order of magnitude of the average force $F_\text{avg}$ when the roof stops a $20\,\text{g}$ hailstone from a speed of $20\,\text{m/s}$ in a time of $1.0\,\text{ms}$
-**Principle:** During the impact the force of the roof acts on the hailstone, and the effect of the weight is ignored, so the force of the roof is the net force. According to the impulse principle, its impulse equals the change in the momentum of the hailstone. The hailstone stops and does not bounce, so the magnitude of the change in momentum is $m v$. For the order of magnitude, the mass and the time still have to be converted to SI units.
+**Principle:** During the impact the force of the roof acts on the hailstone, and the effect of the weight is ignored, so the force of the roof is the net force. According to the impulse principle, its impulse equals the change in the momentum of the hailstone.
+
+The hailstone stops and does not bounce, so the magnitude of the change in momentum is $m v$. For the order of magnitude, the mass and the time still have to be converted to SI units.
 **Model answer:** Conversions: $m = 20\,\text{g} = 0.020\,\text{kg}$ and $\Delta t = 1.0\,\text{ms} = 0.0010\,\text{s}$.
 
 From the impulse principle $F_\text{avg}\,\Delta t = m v$, so
@@ -209,7 +235,9 @@ $m v = 0.020\,\text{kg} \cdot 20\,\text{m/s}$, that is $m v = 0.40\,\text{kg}\cd
 
 $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.0010\,\text{s}}$, that is $F_\text{avg} = 400\,\text{N}$
 
-The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailstone is $0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.20\,\text{N}$, about $2000$ times smaller than the force of the roof, so ignoring the weight was justified. The other options come from errors: $0.4\,\text{N}$ when milliseconds are not converted to seconds, $4000\,\text{N}$ when the kinetic energy $\tfrac{1}{2} m v^2 = 4.0\,\text{J}$ is used instead of the momentum, and $400\,000\,\text{N}$ when the mass is substituted in grams.
+The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailstone is $0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.20\,\text{N}$, about $2000$ times smaller than the force of the roof, so ignoring the weight was justified.
+
+The other options come from errors: $0.4\,\text{N}$ when milliseconds are not converted to seconds, $4000\,\text{N}$ when the kinetic energy $\tfrac{1}{2} m v^2 = 4.0\,\text{J}$ is used instead of the momentum, and $400\,000\,\text{N}$ when the mass is substituted in grams.
 
 ## fy4-9-L2-08
 **Given:** from the graph the force as a function of time; the greatest force $F_\text{max} = 900\,\text{N}$ and the contact ends at $\Delta t = 12\,\text{ms}$
@@ -224,10 +252,20 @@ The nearest option is $400\,\text{N}$. Reasonableness: the weight of the hailsto
 
 ## fy4-9-L2-09
 **Find:** a) why a bathroom scale is not suited to determining mass on the space station, b) the mass measurement method of the video and how it works, c) a method of your own for determining the mass $m$ in weightlessness and the equation from which the mass is solved, d) the sources of error of your own method and how their effect is reduced
-**Principle:** Mass describes the inertia of a body, that is, how hard it is to change the motion of the body. Inertia does not depend on whether the body is supported or in free fall. That is why the mass can be determined from a known force and the measured change of motion. Newton's second law $\Sigma\overline{F} = m\overline{a}$ and the impulse principle $\overline{I} = \Delta\overline{p}$ fit when the pushing force is the only significant force in the direction of motion: then it is the net force. These facts are taken from the source (NASA, read 16 November 2026): the device is SLAMMD, it applies a known force to an astronaut attached to the arm of the device, and the mass is calculated from the resulting acceleration with Newton's second law. The rest is reasoning with physics.
-**Model answer:** a) A bathroom scale does not measure mass but the supporting force with which the scale pushes on the person. At rest on the surface of the Earth the supporting force is equal to the weight $mg$, and the scale shows the mass calculated from it. The space station and the astronaut are both in free fall around the Earth with the same acceleration. So the astronaut does not press on the scale, and the scale does not support the astronaut: the reading is zero. The mass has still not changed, and gravity still acts on the astronaut, since it is what keeps the station and the astronaut in orbit. The mass must therefore be measured through inertia.
+**Principle:** Mass describes the inertia of a body, that is, how hard it is to change the motion of the body. Inertia does not depend on whether the body is supported or in free fall.
 
-b) According to NASA's description, SLAMMD applies a known force $F$ to an astronaut attached to the arm of the device, and the device measures the resulting motion. Compare the description with what you saw in the video. The other forces in the direction of motion are small, so this force is the net force. From Newton's second law $\Sigma F = ma$ we get
+That is why the mass can be determined from a known force and the measured change of motion. Newton's second law $\Sigma\overline{F} = m\overline{a}$ and the impulse principle $\overline{I} = \Delta\overline{p}$ fit when the pushing force is the only significant force in the direction of motion: then it is the net force.
+
+These facts are taken from the source (NASA, read 16 November 2026): the device is SLAMMD, it applies a known force to an astronaut attached to the arm of the device, and the mass is calculated from the resulting acceleration with Newton's second law. The rest is reasoning with physics.
+**Model answer:** a) A bathroom scale does not measure mass but the supporting force with which the scale pushes on the person. At rest on the surface of the Earth the supporting force is equal to the weight $mg$, and the scale shows the mass calculated from it.
+
+The space station and the astronaut are both in free fall around the Earth with the same acceleration. So the astronaut does not press on the scale, and the scale does not support the astronaut: the reading is zero.
+
+The mass has still not changed, and gravity still acts on the astronaut, since it is what keeps the station and the astronaut in orbit. The mass must therefore be measured through inertia.
+
+b) According to NASA's description, SLAMMD applies a known force $F$ to an astronaut attached to the arm of the device, and the device measures the resulting motion. Compare the description with what you saw in the video.
+
+The other forces in the direction of motion are small, so this force is the net force. From Newton's second law $\Sigma F = ma$ we get
 
 $m = \dfrac{F}{a}$
 
@@ -237,7 +275,9 @@ $m = \dfrac{F\,\Delta t}{\Delta v}$
 
 The equations are the same law, because $a = \dfrac{\Delta v}{\Delta t}$. The same force gives a larger mass a smaller acceleration. The astronaut has to keep the body rigid and fixed to the arm, so that the whole body moves as one piece.
 
-c) The task has many correct solutions, and this is one example. Its numbers are example values, not measured results. A spring-driven pusher pushes the body with a known constant force $F = 20.0\,\text{N}$ for a time $\Delta t = 0.50\,\text{s}$. A motion sensor or video analysis gives the change in velocity $\Delta v = 0.125\,\text{m/s}$. The measured quantities are the force, the time it acts and the change in velocity (from a video, distance and time). From the impulse principle $F\,\Delta t = m\,\Delta v$, so
+c) The task has many correct solutions, and this is one example. Its numbers are example values, not measured results. A spring-driven pusher pushes the body with a known constant force $F = 20.0\,\text{N}$ for a time $\Delta t = 0.50\,\text{s}$. A motion sensor or video analysis gives the change in velocity $\Delta v = 0.125\,\text{m/s}$.
+
+The measured quantities are the force, the time it acts and the change in velocity (from a video, distance and time). From the impulse principle $F\,\Delta t = m\,\Delta v$, so
 
 $m = \dfrac{F\,\Delta t}{\Delta v}$
 
@@ -245,7 +285,9 @@ $$\begin{aligned} m &= \dfrac{20.0\,\text{N} \cdot 0.50\,\text{s}}{0.125\,\text{
 
 The result has two significant figures, like the time $0.50\,\text{s}$. The unit is right, because $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
 
-Another possible method: a known body with the mass $m_1 = 10.0\,\text{kg}$ and the unknown body are pushed apart from rest. According to Newton's third law they push each other with equal and opposite forces for the same time. The impulses and the changes in momentum are therefore equal in magnitude, $m_1 v_1 = m_2 v_2$, where $v_1$ and $v_2$ are the speeds measured from a video. When, for example, $v_1 = 0.40\,\text{m/s}$ and $v_2 = 0.050\,\text{m/s}$, we get
+Another possible method: a known body with the mass $m_1 = 10.0\,\text{kg}$ and the unknown body are pushed apart from rest. According to Newton's third law they push each other with equal and opposite forces for the same time.
+
+The impulses and the changes in momentum are therefore equal in magnitude, $m_1 v_1 = m_2 v_2$, where $v_1$ and $v_2$ are the speeds measured from a video. When, for example, $v_1 = 0.40\,\text{m/s}$ and $v_2 = 0.050\,\text{m/s}$, we get
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
@@ -257,7 +299,11 @@ and the mass of the unknown body is
 
 $$\begin{aligned} m_2 &= \dfrac{4.0\,\text{kg}\cdot\text{m/s}}{0.050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
-d) The sources of error of the example method are these: the force of the spring does not stay constant during the push; the duration of a short push is hard to measure; the velocity read from a video depends on the scale and the frame rate; the body is not rigid if limbs or loose items move; air currents and touching the walls or cables add forces; the pusher's own moving parts have mass. Repeating the measurement and taking the mean reduce the effect of random error. Systematic error is reduced by calibrating the device with known masses. In addition, the body is kept rigid and fixed to the arm, the push is made longer and the time is measured with a sensor instead of a stopwatch.
+d) The sources of error of the example method are these: the force of the spring does not stay constant during the push; the duration of a short push is hard to measure; the velocity read from a video depends on the scale and the frame rate; the body is not rigid if limbs or loose items move; air currents and touching the walls or cables add forces; the pusher's own moving parts have mass.
+
+Repeating the measurement and taking the mean reduce the effect of random error. Systematic error is reduced by calibrating the device with known masses.
+
+In addition, the body is kept rigid and fixed to the arm, the push is made longer and the time is measured with a sensor instead of a stopwatch.
 
 In the equation $m = \dfrac{F\,\Delta t}{\Delta v}$ the mass is a product and a quotient. That is why a relative error in $F$, $\Delta t$ or $\Delta v$ causes approximately the same relative error in the mass. If the change in velocity is read as $0.130\,\text{m/s}$, which is $4\,\%$ too large, the mass becomes $77\,\text{kg}$, about $4\,\%$ too small.
 

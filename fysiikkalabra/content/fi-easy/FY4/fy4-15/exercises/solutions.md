@@ -189,7 +189,11 @@ $$\begin{aligned}P &= 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m
 Suhteiden summa on $7{,}513$, joten keskiarvo on $k_\text{ka} = 7{,}513 : 6 = 1{,}252\,\tfrac{\text{kW}}{(\text{m/s})^3} = 1252\,\tfrac{\text{W}}{(\text{m/s})^3}$. Hyötysuhde on
 $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1{,}25 \cdot 5027} \\ &= 0{,}3986\end{aligned}$$
 **Vastaus:** $40\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska taulukon tehot on annettu kahdella tai kolmella numerolla.
-**Mallivastaus kohtiin a ja c:** Nopeus kasvaa nopeudesta $4\,\text{m/s}$ nopeuteen $9\,\text{m/s}$ eli $2{,}25$-kertaiseksi. Silloin $v^3$ kasvaa yli $11$-kertaiseksi, ja teho kasvaa saman verran: $905 : 80 \approx 11{,}3$. Suhde $P/v^3$ pysyy välillä $1{,}24$–$1{,}27$. Se vaihtelee siis vain noin $\pm 2\,\%$ koko nopeusalueella. Pisteiden satunnainen hajonta selittää pienen vaihtelun. Suhde ei kasva eikä pienene nopeuden mukana, joten malli $P = k v^3$ sopii aineistoon. Tuplaus tukee tulosta. Nopeudesta $4\,\text{m/s}$ nopeuteen $8\,\text{m/s}$ teho kasvaa $650 : 80 \approx 8{,}1$-kertaiseksi, ja $2^3 = 8$. Mallin ennuste nopeudella $13\,\text{m/s}$ on $$\begin{aligned} &1{,}252 \cdot 13^3\,\text{kW} \\ &\approx 2750\,\text{kW} \\ &= 2{,}8\,\text{MW} \end{aligned}$$. Se on suurempi kuin nimellisteho $2{,}0\,\text{MW}$. Voimala ei voi tuottaa nimellistehoaan enempää. Lapoja käännetään niin, että osa tuulesta menee ohi. Siksi malli $P = k v^3$ pätee vain nimellistehon alapuolella.
+**Mallivastaus kohtiin a ja c:** Nopeus kasvaa nopeudesta $4\,\text{m/s}$ nopeuteen $9\,\text{m/s}$ eli $2{,}25$-kertaiseksi. Silloin $v^3$ kasvaa yli $11$-kertaiseksi, ja teho kasvaa saman verran: $905 : 80 \approx 11{,}3$. Suhde $P/v^3$ pysyy välillä $1{,}24$–$1{,}27$. Se vaihtelee siis vain noin $\pm 2\,\%$ koko nopeusalueella. Pisteiden satunnainen hajonta selittää pienen vaihtelun.
+
+Suhde ei kasva eikä pienene nopeuden mukana, joten malli $P = k v^3$ sopii aineistoon. Tuplaus tukee tulosta. Nopeudesta $4\,\text{m/s}$ nopeuteen $8\,\text{m/s}$ teho kasvaa $650 : 80 \approx 8{,}1$-kertaiseksi, ja $2^3 = 8$.
+
+Mallin ennuste nopeudella $13\,\text{m/s}$ on $$\begin{aligned} &1{,}252 \cdot 13^3\,\text{kW} \\ &\approx 2750\,\text{kW} \\ &= 2{,}8\,\text{MW} \end{aligned}$$. Se on suurempi kuin nimellisteho $2{,}0\,\text{MW}$. Voimala ei voi tuottaa nimellistehoaan enempää. Lapoja käännetään niin, että osa tuulesta menee ohi. Siksi malli $P = k v^3$ pätee vain nimellistehon alapuolella.
 **Järkevyys:** Tuulen teho nopeudella $9\,\text{m/s}$ on $\tfrac{1}{2} \cdot 1{,}25 \cdot 5027 \cdot 9^3\,\text{W} \approx 2290\,\text{kW}$. Teho $905\,\text{kW}$ on siitä $905 : 2290 \approx 0{,}40$, sama kuin saatu hyötysuhde. Tulos on alle teoreettisen ylärajan $59\,\%$ ja alle puolet, kuten tuulivoimalalla.
 
 ## fy4-15-L3-05
@@ -201,7 +205,9 @@ $$\begin{aligned}\eta &= \frac{2 \cdot 1252}{1{,}25 \cdot 5027} \\ &= 0{,}3986\e
 **Sijoitus:** Tehojen summa on $$\begin{aligned} &40 + 52 + 62 + 58 + 48 \\ &+ 40 \\ &= 300\,\text{MW} \end{aligned}$$. Jokainen teho kestää yhden tunnin, joten $E = 300\,\text{MWh} = 300 \cdot 3{,}6 \cdot 10^{9}\,\text{J} = 1{,}08 \cdot 10^{12}\,\text{J}$. Veteen siirtyy energiaa $\eta E = 0{,}800 \cdot 1{,}08 \cdot 10^{12}\,\text{J} = 8{,}64 \cdot 10^{11}\,\text{J}$. Massa ja tilavuus ovat
 $$\begin{aligned}m &= \frac{8{,}64 \cdot 10^{11}\,\text{J}}{9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 85{,}0\,\text{m}} \\ &= 1{,}036 \cdot 10^{9}\,\text{kg} \\ V &= \frac{m}{\rho} = 1{,}036 \cdot 10^{6}\,\text{m}^3\end{aligned}$$
 **Vastaus:** $1{,}04 \cdot 10^{6}\,\text{m}^3$. Vastauksessa on kolme merkitsevää numeroa, koska korkeus $85{,}0\,\text{m}$ ja hyötysuhde $0{,}800$ on annettu kolmella numerolla.
-**Mallivastaus kohtiin b ja c:** Pumpattu vesi $1{,}04 \cdot 10^{6}\,\text{m}^3$ on pienempi kuin yläaltaan tilavuus $1{,}20 \cdot 10^{6}\,\text{m}^3$. Vesi mahtuu siis altaaseen, ja allas täyttyy noin $86\,\%$:iin. Veteen varastoitunut energia on $0{,}800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. Teholla $40{,}0\,\text{MW}$ se riittäisi ajaksi $240\,\text{MWh} : 40{,}0\,\text{MW} = 6{,}00\,\text{h}$, jos turbiinin ja generaattorin häviöt jätetään huomiotta. Todellisuudessa häviöt lyhentävät aikaa. Pumppuvoimala sopii tuulivoiman rinnalle. Tuulivoima riippuu säästä, ja sen teho voi ylittää kulutuksen. Vesivoimaa taas on helppo säätää. Ylijäämäsähkö voidaan varastoida veden potentiaalienergiaksi. Kun tuuli tyyntyy ja kulutus on suurempi kuin tuotanto, energia muutetaan takaisin sähköksi.
+**Mallivastaus kohtiin b ja c:** Pumpattu vesi $1{,}04 \cdot 10^{6}\,\text{m}^3$ on pienempi kuin yläaltaan tilavuus $1{,}20 \cdot 10^{6}\,\text{m}^3$. Vesi mahtuu siis altaaseen, ja allas täyttyy noin $86\,\%$:iin. Veteen varastoitunut energia on $0{,}800 \cdot 300\,\text{MWh} = 240\,\text{MWh}$. Teholla $40{,}0\,\text{MW}$ se riittäisi ajaksi $240\,\text{MWh} : 40{,}0\,\text{MW} = 6{,}00\,\text{h}$, jos turbiinin ja generaattorin häviöt jätetään huomiotta. Todellisuudessa häviöt lyhentävät aikaa.
+
+Pumppuvoimala sopii tuulivoiman rinnalle. Tuulivoima riippuu säästä, ja sen teho voi ylittää kulutuksen. Vesivoimaa taas on helppo säätää. Ylijäämäsähkö voidaan varastoida veden potentiaalienergiaksi. Kun tuuli tyyntyy ja kulutus on suurempi kuin tuotanto, energia muutetaan takaisin sähköksi.
 **Järkevyys:** Tarkistetaan potentiaalienergia: $$\begin{aligned} &1{,}036 \cdot 10^{9}\,\text{kg} \\ &\cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}0\,\text{m} \\ &= 8{,}64 \cdot 10^{11}\,\text{J} \end{aligned}$$, joka on $240\,\text{MWh}$. Kuutiometri vettä sitoo $85\,\text{m}$:n korkeudella noin $$\begin{aligned} &1000 \cdot 9{,}81 \cdot 85\,\text{J} \\ &= 0{,}83\,\text{MJ} \end{aligned}$$. Energia $240\,\text{MWh} = 8{,}64 \cdot 10^{5}\,\text{MJ}$ vaatii siis noin $10^{6}$ kuutiometriä, kuten saatiin.
 
 ## fy4-15-L2-08
@@ -221,7 +227,15 @@ $$\begin{aligned}
 &\phantom{P} \approx 1{,}96 \cdot 10^{6}\,\text{W}
 \end{aligned}$$
 
-Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$. Siinä $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ on häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa. Molemmat kasvavat nopeuden mukana. Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu. Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu. Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
+Sähköteho on suuruusluokaltaan $2\,\text{MW}$. Teho voidaan kirjoittaa muotoon $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$.
+
+Siinä $\tfrac{1}{2}v^2$ on yhden ilmakilogramman liike-energia ja $\rho A v$ on häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman massa. Molemmat kasvavat nopeuden mukana.
+
+Vaihtoehto $0{,}2\,\text{MW}$ syntyy, kun teho lasketaan verrannolliseksi neliöön $v^2$: mukana on vain liike-energia kilogrammaa kohti, ja massavirran kasvu unohtuu.
+
+Vaihtoehto $20\,\text{kW}$ syntyy, kun teho lasketaan verrannolliseksi nopeuteen $v$: mukana on vain massavirta, ja kilogrammaa kohti lasketun liike-energian kasvu unohtuu.
+
+Jos nopeus sijoitetaan lukuna $36$ muuntamatta, tulos on noin $47$ kertaa liian suuri, noin $90\,\text{MW}$.
 
 Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siitä saadaan sähköksi alle puolet. Luvun esimerkissä $120\,\text{m}$:n roottori tuotti tuulen nopeudella $9{,}0\,\text{m/s}$ noin $2{,}3\,\text{MW}$. Tulos on siis samaa suuruusluokkaa.
 

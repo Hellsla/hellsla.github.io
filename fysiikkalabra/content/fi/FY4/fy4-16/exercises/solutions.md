@@ -221,12 +221,20 @@ v alas
 ## fy4-16-L1-06
 **Kysytty:** miten vaa'an lukema on verrattuna lukemaan, kun ylöspäin liikkuva hissi hidastaa pysähtyäkseen.
 **Periaate:** Vaaka mittaa tukivoimaa $N$. Tukivoima ja paino määräävät kiihtyvyyden Newtonin toisen lain mukaan, ei liikkeen suunta. Ylöspäin liikkuva hissi, joka hidastaa, kiihtyy alaspäin, joten kokonaisvoima osoittaa alas.
-**Mallivastaus:** Vaa'an lukema on pienempi kuin levossa. Kun positiivinen suunta on alas, $mg - N = ma$, joten $N = m(g - a)$ on pienempi kuin paino $mg$. Väite, että lukema olisi suurempi, koska hissi liikkuu ylös, sekoittaa nopeuden ja kiihtyvyyden: lukemaan vaikuttaa vain kiihtyvyys. Väite, että lukema olisi sama, koska massa ei muutu, ohittaa sen, että vaaka mittaa tukivoimaa eikä massaa. Nollaa lukema ei ole, koska hissin hidastuvuus on paljon pienempi kuin $g$.
+**Mallivastaus:** Vaa'an lukema on pienempi kuin levossa. Kun positiivinen suunta on alas, $mg - N = ma$, joten $N = m(g - a)$ on pienempi kuin paino $mg$.
+
+Väite, että lukema olisi suurempi, koska hissi liikkuu ylös, sekoittaa nopeuden ja kiihtyvyyden: lukemaan vaikuttaa vain kiihtyvyys.
+
+Väite, että lukema olisi sama, koska massa ei muutu, ohittaa sen, että vaaka mittaa tukivoimaa eikä massaa. Nollaa lukema ei ole, koska hissin hidastuvuus on paljon pienempi kuin $g$.
 
 ## fy4-16-L1-07
 **Kysytty:** mikä väite laskuvarjohyppääjän mekaanisesta energiasta on oikea, kun hän laskeutuu tasaisella nopeudella.
 **Periaate:** Mekaaninen energia on liike-energian ja potentiaalienergian summa. Energiaperiaatteen mukaan sen muutos on muiden voimien kuin painon tekemä työ, tässä ilmanvastuksen työ. Ilmanvastus osoittaa liikettä vastaan, joten sen työ on negatiivinen.
-**Mallivastaus:** Mekaaninen energia pienenee. Nopeus ei muutu, joten liike-energia pysyy samana, mutta korkeus pienenee ja potentiaalienergia pienenee. Ilmanvastus tekee negatiivista työtä, ja se muuttaa mekaanisen energian sisäenergiaksi. Väite, että mekaaninen energia säilyisi, koska nopeus ei muutu, ottaa huomioon vain liike-energian. Väite, että se säilyisi, koska paino ja ilmanvastus kumoavat toisensa, sekoittaa kokonaisvoiman ja energian: voimien summa on nolla, joten liike-energia ei muutu, mutta ilmanvastuksen työ ei ole nolla. Mekaaninen energia ei kasva, koska painon työ vain muuttaa potentiaalienergiaa ja ilmanvastus vie saman määrän pois.
+**Mallivastaus:** Mekaaninen energia pienenee. Nopeus ei muutu, joten liike-energia pysyy samana, mutta korkeus pienenee ja potentiaalienergia pienenee. Ilmanvastus tekee negatiivista työtä, ja se muuttaa mekaanisen energian sisäenergiaksi. Väite, että mekaaninen energia säilyisi, koska nopeus ei muutu, ottaa huomioon vain liike-energian.
+
+Väite, että se säilyisi, koska paino ja ilmanvastus kumoavat toisensa, sekoittaa kokonaisvoiman ja energian: voimien summa on nolla, joten liike-energia ei muutu, mutta ilmanvastuksen työ ei ole nolla.
+
+Mekaaninen energia ei kasva, koska painon työ vain muuttaa potentiaalienergiaa ja ilmanvastus vie saman määrän pois.
 
 ## fy4-16-L1-08
 **Annettu:** $m = 20{,}0\,\text{kg}$, $\alpha = 30{,}0\,{}^\circ$, $\mu = 0{,}200$, pulkka liukuu rinnettä alas; oppilaan tulos $39{,}2\,\text{N}$; $g = 9{,}81\,\text{m/s}^2$
@@ -327,7 +335,9 @@ a vasen
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakertoimet ovat yksikköttömiä. Massa supistuu pois molemmista yhtälöistä.
 **Sijoitus:** Sulkulauseke on $\sin 14{,}0\,{}^\circ - 0{,}060\cdot\cos 14{,}0\,{}^\circ = 0{,}2419 - 0{,}0582 = 0{,}1837$, joten $L = \dfrac{0{,}150\cdot 20{,}0\,\text{m}}{0{,}1837} = 16{,}33\,\text{m}$. Juurella $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)} = \sqrt{2\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16{,}33\,\text{m}\cdot 0{,}1837} = 7{,}67\,\text{m/s}$
 **Vastaus:** b) $16\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}060$; c) $7{,}7\,\text{m/s}$. Massa supistuu pois, koska sekä paino että kitka ovat verrannollisia massaan: raskaampi lapsi saa suuremman liike-energian mutta myös suuremman kitkavoiman, ja nopeus on sama.
-**Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $$\begin{aligned} &16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ \\ &= 15{,}85\,\text{m} \end{aligned}$$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Laskettu suurin pituus $16{,}3\,\text{m}$ pätee vain tehtävän oletuksilla. Lumen todellinen kitkakerroin vaihtelee esimerkiksi lämpötilan, jään, lumen laadun ja pulkan pohjan mukaan, ja jo hieman pienempi kitkakerroin pidentäisi liukumatkaa. Siksi mallia ei voi käyttää suoraan todellisen pulkkamäen turvallisuussuunnitteluun.
+**Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $$\begin{aligned} &16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ \\ &= 15{,}85\,\text{m} \end{aligned}$$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Laskettu suurin pituus $16{,}3\,\text{m}$ pätee vain tehtävän oletuksilla.
+
+Lumen todellinen kitkakerroin vaihtelee esimerkiksi lämpötilan, jään, lumen laadun ja pulkan pohjan mukaan, ja jo hieman pienempi kitkakerroin pidentäisi liukumatkaa. Siksi mallia ei voi käyttää suoraan todellisen pulkkamäen turvallisuussuunnitteluun.
 
 ## fy4-16-L3-05
 **Annettu:** $m = 78{,}0\,\text{kg}$; taulukosta nopeudet alaspäin hetkillä $0$ – $3{,}0\,\text{s}$ ja $4{,}0\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$; positiivinen suunta alas
@@ -345,7 +355,11 @@ v alas
 **Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k}0} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $$\begin{aligned} &F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} \\ &= 765{,}2\,\text{N} + 1439{,}8\,\text{N} \\ &= 2205\,\text{N} \end{aligned}$$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
 **Vastaus:** b) $2{,}21\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $78{,}0\,\text{kg}$ ja nopeuksissa; a) $h = 55{,}6\,\text{m}$; c) ilmanvastus on painoa suurempi, koska nopeus pienenee ja kiihtyvyys osoittaa ylös.
-**Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu. Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $$\begin{aligned} &F_\text{v} \\ &\approx 78{,}0\,\text{kg}\cdot(9{,}81 \\ &+ 12{,}7)\,\text{m/s}^2 \\ &\approx 1{,}76\,\text{kN} \end{aligned}$$. Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).
+**Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu.
+
+Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $$\begin{aligned} &F_\text{v} \\ &\approx 78{,}0\,\text{kg}\cdot(9{,}81 \\ &+ 12{,}7)\,\text{m/s}^2 \\ &\approx 1{,}76\,\text{kN} \end{aligned}$$.
+
+Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).
 
 ## fy4-16-L2-08
 **Kysytty:** mikä päätelmä voidaan tehdä pelkän taulukon perusteella, kun lukeman epävarmuus on $\Delta x = 1{,}0\,\text{m}$.
