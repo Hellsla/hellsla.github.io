@@ -12,3 +12,6 @@ date	reviewer	from	to	base	categories
 2026-11-15	pedagogy	b8187c70d80f7adc	557619839d72af4d	b5600a63ddae	reflow
 2026-11-16	science	5ca23e469a626f1f	793abe73f0e420f6	5b3ca4f81c77	md-paragraphs,typography
 2026-11-16	pedagogy	5ca23e469a626f1f	793abe73f0e420f6	5b3ca4f81c77	md-paragraphs,typography
+2026-11-17	science	5ca23e469a626f1f	b93dbcad7073c42c	5b3ca4f81c77	caption-label,md-paragraphs,typography
+2026-11-17	pedagogy	5ca23e469a626f1f	b93dbcad7073c42c	5b3ca4f81c77	caption-label,md-paragraphs,typography
+2026-11-17	visual	793abe73f0e420f6	b93dbcad7073c42c	5dfe89c8b643	caption-label

@@ -678,15 +678,47 @@ expect("... a label added to a caption, or a word changed beside it, is not the 
 out = cap(E0.replace("(esimerkkiaineisto)", "(luonnos)"))
 expect("... another parenthesis in its place is a changed caption, not none", "science: none" not in out, out)
 cap(E0.replace(LAB + '"', '"')); code, out = run(t, "reviews.py", "carry", LESSON, "--exercises")
-expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"(esimerkkiaineisto)\" taken out of table captions, nothing else (teacher 2026-11-15))") for l in out.splitlines()) == 3, out)
+expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"esimerkkiaineisto\" taken out of table captions, nothing else (teacher 2026-11-15, 2026-11-16))") for l in out.splitlines()) == 3, out)
 code, out = run(t, "reviews.py", "verify")
 expect("verify re-derives the caption-label carry in CI", code == 0 and "ERROR" not in out, out[-400:])
 cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
 code, out = run(t, "reviews.py", "verify")
 expect("... and the carry no longer holds once the same file also changed a caption word", "exercises: draft" in out, out[-400:])
+expect("... the new forms are the category line for line too", rv.caption_removed(_cj("Kärryn nopeus, esimerkkiaineisto"), _cj("Kärryn nopeus")) == _cj("Kärryn nopeus") and rv.caption_removed(_cj("Esimerkkiaineisto: sama jännite"), _cj("Sama jännite")) == _cj("Sama jännite") and rv.caption_removed(_cj("Example data: three boiler options"), _cj("Three boiler options")) == _cj("Three boiler options"))
+expect("... but not with a changed letter beside it, or a lower-case start kept", rv.caption_removed(_cj("Esimerkkiaineisto: sama jännite"), _cj("sama jännite")) == _cj("Esimerkkiaineisto: sama jännite") and rv.caption_removed(_cj("Kärryn nopeus, esimerkkiaineisto"), _cj("Kärryn vauhti")) == _cj("Kärryn nopeus, esimerkkiaineisto"))
+# 8l-b. the same without parentheses (teacher 2026-11-16): "…, esimerkkiaineisto" and "Esimerkkiaineisto: …"
+t = project(); E = t / "content/fi/FY3" / LESSON / "exercises" / "exercises.json"; _n = iter(range(99))
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', lambda m: m.group(1) + (m.group(2) + ", esimerkkiaineisto" if next(_n) % 2 else "Esimerkkiaineisto: " + m.group(2)[:1].lower() + m.group(2)[1:]) + m.group(3), E.read_text()))
+init_git(t)
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews")
+E1 = E.read_text()
+expect("the passed set has both forms", ', esimerkkiaineisto"' in E1 and '"Esimerkkiaineisto: ' in E1, E1[:300])
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', lambda m: m.group(1) + rv.caption_label_free(m.group(2)) + m.group(3), E1))
+out = run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+expect("both forms taken out: none for all three, category caption-label", out.count(": none") == 3 and "caption-label" in out, out)
+code, out = run(t, "reviews.py", "carry", LESSON, "--exercises"); code, out = run(t, "reviews.py", "verify")
+expect("... and verify re-derives that carry", code == 0 and "ERROR" not in out, out[-400:])
+E.write_text(E1.replace("Esimerkkiaineisto: l", "l", 1))
+out = run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+expect("... a marker taken out without its capital letter is a changed caption (not none)", "science: none" not in out, out)
 expect("the marker is a caption's alone: a text mention is no caption", rv.caption_free(json.dumps({"text": "Taulukko (esimerkkiaineisto)."})) == json.dumps({"text": "Taulukko (esimerkkiaineisto)."}, indent=1))
 for old, new in (("Taulukko (esimerkkiaineisto)", "Taulukko"), ("Table (example data)", "Table"), ("Table (example data set)", "Table"),
-                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B")):
+                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B"),
+                 # without parentheses too (teacher 2026-11-16, work queue 8l-b): fi, fi-easy and en
+                 ("Kärryn nopeus, esimerkkiaineisto", "Kärryn nopeus"), ("Velocity of the cart, example data", "Velocity of the cart"),
+                 ("Pisteen $P$ potentiaali eri kuormilla, esimerkkiaineisto", "Pisteen $P$ potentiaali eri kuormilla"),
+                 ("Esimerkkiaineisto: sama jännite kolmella mittausalueella", "Sama jännite kolmella mittausalueella"),
+                 ("Esimerkkiaineisto: öljypisaroiden leijumisjännitteet", "Öljypisaroiden leijumisjännitteet"),
+                 ("Example data: three boiler options", "Three boiler options"),
+                 ("Lasien taitekertoimet (tyypillisiä arvoja, esimerkkiaineisto)", "Lasien taitekertoimet (tyypillisiä arvoja)"),
+                 ("Refractive indices of the glasses (typical values, example data)", "Refractive indices of the glasses (typical values)"),
+                 ("Ilman lämpötila vuorokauden aikana (keksitty esimerkkiaineisto)", "Ilman lämpötila vuorokauden aikana"),
+                 ("R-luku yhdellä mittausasemalla (keksitty esimerkkiaineisto, ei mittaustulos)", "R-luku yhdellä mittausasemalla"),
+                 ("R number at one measuring station (an invented example data set, not a measurement)", "R number at one measuring station"),
+                 # a word of its own is no marker: it stays
+                 ("Esimerkkiaineiston keruu", "Esimerkkiaineiston keruu"), ("Esimerkkiaineisto ja malli", "Esimerkkiaineisto ja malli"),
+                 ("Mittaus, esimerkkiaineisto ja malli", "Mittaus, esimerkkiaineisto ja malli"), ("Example data sets compared", "Example data sets compared")):
     expect(f"caption_free: {old!r} → {new!r}", json.loads(rv.caption_free(json.dumps({"data": [{"caption": old}]})))["data"][0]["caption"] == new)
 expect("caption-label: nobody needs to look", rv.RULES["caption-label"] == ("none", "none", "none"))
 # an item (koe, sovella, unit): its view leaves the marker out, so a carry-item over a pure marker removal is accepted
