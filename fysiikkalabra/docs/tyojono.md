@@ -78,6 +78,7 @@ Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei p�
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
+Varattu (FY3, 0f): claude/fy3-lapikaynti (8c ensin, 8j toisessa PR:ssä).
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
 Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana). Jäljellä
 järjestyksessä FY7 → FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
@@ -101,6 +102,7 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
+Varattu (FY3, 0f): claude/fy3-lapikaynti (8c ensin; 8j omassa PR:ssä sen jälkeen).
 Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`).
 FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; PR #676).
 Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit), FY3, FY6 (0f-PR #675), FY7, FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
