@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7126c6c1848e8249
+CONTENT-HASH: eeccff04aba30fbe
+SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
 
 ## Blocking
 - none
@@ -8,8 +9,8 @@ CONTENT-HASH: 7126c6c1848e8249
 - none
 
 ## Checked
-- Delta (round 3): only the Mallivastaus d) line of fy8-13-L2-09 (inline chain split into two adjacent formulas) in solutions.md. Opened the 1280 px level-2 open-solution captures (parts 11-13, fi-easy) around 13-17, the 0,88 mSv chain at the end.
-- The two formulas read as one continuous line with a normal space, same weight and spacing as neighbouring maths, equals sign intact, numbers, signs and units unchanged; surrounding layout (Vastaus, Järkevyys boxes) survived. 360 px clipping: the packet's layout 360 px check is ok; no 360 px capture of this line exists, so wrapping is taken from that check.
+- fi-easy capture open-exercises-L2-1280-15 (L2-10, changed Järkevyys/Reasonableness block): units upright, $16\,\mu\text{Sv/h}$ and $15\,\mu\text{Sv/h}$ set cleanly, no clipping; the sentence on interpolation and the convex curve reads clearly in fi-easy.
+- No 360 px capture exists in the packet's inventory; 360 px taken from the passing layout check (short prose, no display maths). Rest of the set unchanged since the round-2 PASS.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
