@@ -1,0 +1,166 @@
+"""One review round's deterministic steps in one command (work queue 0a, teacher 2026-11-17).
+
+  python scripts/round.py <id>[,<id>…] [--exercises] [--lang fi,en,…] [--batch] [--skip-checks]
+  python scripts/round.py <id>[,<id>…] --finish [--exercises] [--lang …]
+
+Runs, in this order, what /lesson, /exercises and /quality-audit used to run one command (one orchestrator turn) at a time:
+  1. the generated files CI compares: docs/figures/catalog.json (figcat.py build), docs/assessment/<COURSE>.md and
+     docs/coverage/<COURSE>.md of every course the ids belong to (their --check fails CI when they are stale);
+  2. check_lesson.py <id> for every id (every language of the lesson), then the quick site-wide checks CI runs that a
+     lesson's text can break (test_notation, answers_shown, objectives, exercise_bank, test_physics_phrases); an id
+     whose checks fail gets no packets: fix it first (--skip-checks skips this step, e.g. to remake a packet after an
+     ESCALATE when nothing changed);
+  3. per id, language and part (lesson and exercises; --exercises: the exercise set only): reviews.py carry, which
+     records every reviewer whose scope is none and says which reviews are needed (delta or full);
+  4. screenshot.py <id> --lang <lang> --if-stale for every language in which a visual review is needed (a language
+     without captures was what sent visual packets back in fy8-5…fy8-8);
+  5. review_packet.py for every needed review (with --batch: one review_packet.py --batch per role and language for
+     the lesson diffs; an exercise set still gets its own packet).
+--finish instead regenerates the files of step 1, runs reviews.py verify (as CI does; a few minutes), prints each id's
+status in every language and rebuilds site/ (build.py --all, build.py).
+
+Prints a short summary: the failing check lines only, each reviewer's mode, the carries recorded, the packet paths and
+the generated files that changed. Every command's full output is in preview/round.log. --lang limits the languages
+(default: every language that has the lesson). Exit status 1 if a check, a step or verify failed."""
+import pathlib, re, subprocess, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import courses, i18n
+
+ROOT = courses.ROOT
+PY = sys.executable
+LOG = ROOT / "preview" / "round.log"
+QUICK = [["test_notation.py"], ["answers_shown.py"], ["objectives.py"], ["test_physics_phrases.py"]]
+GENERATED = ["docs/figures/catalog.json", "docs/assessment", "docs/coverage"]
+ROLES = ("science", "pedagogy", "visual")
+
+
+def run(args, log):
+    """(exit status, output lines) of python scripts/<args>, the output appended to the log."""
+    r = subprocess.run([PY, str(ROOT / "scripts" / args[0]), *map(str, args[1:])], capture_output=True, text=True, cwd=ROOT)
+    out = (r.stdout + r.stderr).rstrip()
+    log.write(f"$ python scripts/{' '.join(map(str, args))}  (exit {r.returncode})\n{out}\n\n"); log.flush()
+    return r.returncode, out.splitlines()
+
+
+def languages(lid, only):
+    langs = [l for l in i18n.languages() if any((f / "meta.json").exists() for f in (ROOT / "content" / l).glob(f"*/{lid}"))]
+    return [l for l in langs if not only or l in only]
+
+
+def lang_args(lang):
+    return [] if lang == courses.SOURCE_LANG else ["--lang", lang]
+
+
+def changed_generated():
+    r = subprocess.run(["git", "status", "--short", "--", *GENERATED], capture_output=True, text=True, cwd=ROOT)
+    return [l[3:] for l in r.stdout.splitlines()]
+
+
+def generate(ids, log, say):
+    bad = 0
+    for args in [["figcat.py", "build"]] + [[s, c] for c in sorted({courses.course_of(i) for i in ids}) for s in ("assessment.py", "coverage.py")]:
+        rc, out = run(args, log)
+        if rc: bad += 1; say(f"FAIL {' '.join(args)}: " + (out[-1] if out else f"exit {rc}"))
+    ch = changed_generated()
+    say("generated: " + (", ".join(ch) + " changed: commit them" if ch else "up to date"))
+    return bad
+
+
+def parse_carry(lines):
+    """{reviewer: (mode, carried now?)} and the status line, from reviews.py carry's output."""
+    res, state = {}, ""
+    for l in lines:
+        m = re.match(r"(science|pedagogy|visual): (.*)", l)
+        if m:
+            t = m.group(2)
+            res[m.group(1)] = ("none", True) if t.startswith("carried over") else ("none", False) if t == "already current" \
+                else (t.split()[0], False)
+        elif l.strip(): state = l
+    # a reviewer whose PASS is already for the current content needs nothing, whatever its scope says
+    for name in res:
+        if res[name][0] != "none" and re.search(rf"\b{name}=PASS\b", state): res[name] = ("none", False)
+    return res, state
+
+
+def main(a):
+    if not a or a[0].startswith("-"): sys.exit(__doc__)
+    ids = a[0].split(",")
+    only = a[a.index("--lang") + 1].split(",") if "--lang" in a else []
+    parts = ["exercises"] if "--exercises" in a else ["lesson", "exercises"]
+    LOG.parent.mkdir(exist_ok=True)
+    summary, bad = [], 0
+    def say(s): summary.append(s); print(s, flush=True)
+    with LOG.open("w") as log:
+        for lid in ids: courses.find_lesson(lid)        # exits with its own message for an unknown id
+        bad += generate(ids, log, say)
+        if "--finish" in a:
+            rc, out = run(["reviews.py", "verify"], log)
+            errs = [l for l in out if l.startswith("ERROR")]
+            say("verify: " + ("ok" if rc == 0 else f"FAIL ({len(errs)} error(s))")); [say("  " + e) for e in errs[:20]]
+            bad += rc != 0
+            for lid in ids:
+                for lang in languages(lid, only):
+                    _, out = run(["reviews.py", "status", lid, *lang_args(lang)], log)
+                    say(f"[{lang}] " + (out[-1] if out else "?"))
+            for args in (["build.py", "--all"], ["build.py"]):
+                rc, out = run(args, log)
+                warn = [l for l in out if "WARNING" in l]
+                say(f"{' '.join(args)}: " + ("ok" if rc == 0 else "FAIL " + (out[-1] if out else "")) + (f", {len(warn)} WARNING line(s) (in the log)" if warn else ""))
+                bad += rc != 0
+            say(f"full output: {LOG.relative_to(ROOT)}"); return 1 if bad else 0
+
+        failed = set()
+        if "--skip-checks" not in a:
+            for lid in ids:
+                rc, out = run(["check_lesson.py", lid], log)
+                fails = [l for l in out if not l.startswith(("ok ", "browser for", lid + ":"))]
+                say(f"{lid} checks: " + ("ok" if rc == 0 else "FAIL"))
+                if rc: failed.add(lid); [say("  " + l) for l in fails[:30]]
+            for args in QUICK + [["exercise_bank.py", c] for c in sorted({courses.course_of(i) for i in ids})]:
+                rc, out = run(args, log)
+                if rc: bad += 1; say(f"FAIL {' '.join(args)}"); [say("  " + l) for l in [l for l in out if "FAIL" in l or "ERROR" in l][:10] or out[-5:]]
+            bad += len(failed)
+            if failed: say(f"no packets for {', '.join(sorted(failed))}: fix the failing checks first")
+
+        needed = {}                                     # (lid, lang, part) -> {role: mode}
+        for lid in [i for i in ids if i not in failed]:
+            for lang in languages(lid, only):
+                for part in parts:
+                    rc, out = run(["reviews.py", "carry", lid, *lang_args(lang), *(["--exercises"] if part == "exercises" else [])], log)
+                    if rc: bad += 1; say(f"FAIL carry {lid} {lang} {part}: {out[-1] if out else rc}"); continue
+                    res, _ = parse_carry(out)
+                    carried = [n for n, (_, c) in res.items() if c]
+                    need = {n: m for n, (m, _) in res.items() if m != "none"}
+                    say(f"{lid} [{lang}] {part}: " + (", ".join(f"{n} {m}" for n, m in need.items()) or "nothing to review")
+                        + (f"; carried now: {', '.join(carried)}" if carried else ""))
+                    if need: needed[(lid, lang, part)] = need
+
+        shots = sorted({(lid, lang) for (lid, lang, _), need in needed.items() if "visual" in need})
+        for lid, lang in shots:
+            rc, out = run(["screenshot.py", lid, *lang_args(lang), "--if-stale"], log)
+            say(f"captures {lid} [{lang}]: " + ("ok" if rc == 0 else "FAIL " + (out[-1] if out else "")) + (f" ({out[-1]})" if rc == 0 and out else ""))
+            if rc: bad += 1; needed = {k: {r: m for r, m in v.items() if not (k[:2] == (lid, lang) and r == "visual")} for k, v in needed.items()}
+
+        packets = []
+        batch = "--batch" in a and len(ids) > 1
+        for role in ROLES:
+            if batch:
+                for lang in sorted({k[1] for k, v in needed.items() if k[2] == "lesson" and role in v}):
+                    lids = [k[0] for k, v in needed.items() if k[1] == lang and k[2] == "lesson" and role in v]
+                    rc, out = run(["review_packet.py", "--batch", ",".join(lids), "--role", role, *lang_args(lang)], log)
+                    packets.append((rc, f"{role} [{lang}] batch {','.join(lids)}", out))
+            for (lid, lang, part), need in needed.items():
+                if role not in need or (batch and part == "lesson"): continue
+                rc, out = run(["review_packet.py", lid, "--role", role, *(["--exercises"] if part == "exercises" else []), *lang_args(lang)], log)
+                also = part == "exercises" and need[role] == "full" and needed.get((lid, lang, "lesson"), {}).get(role) == "full"
+                packets.append((rc, f"{role} {need[role]} {lid} [{lang}] {part}" + (" (the lesson packet asks for this report too)" if also else ""), out))
+        for rc, what, out in packets:
+            path = next((l for l in reversed(out) if re.match(r"\S+\.md: ", l)), out[-1] if out else "")
+            say(f"packet {what}: " + (path if rc == 0 else "FAIL " + path)); bad += rc != 0
+        if not needed and not failed: say("no review needed: every PASS holds for the current content")
+        say(f"full output: {LOG.relative_to(ROOT)}")
+    return 1 if bad else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

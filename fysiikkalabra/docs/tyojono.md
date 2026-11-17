@@ -13,21 +13,11 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 Tehdään seuraavaksi, ennen uusia kurssikohtaisia läpikäyntejä. Mittaus 10.–17.11. (git-historia): 89 yhdistettyä
 PR:ää, 140 mainin yhdistystä haaroihin ja noin 110 `site/`-uudelleenrakennusta; `site/` on 246 Mt ja 1282 tiedostoa.
 Kulutuslokin (`review/usage.tsv`) otoksessa orkestroija on kallein rivi (yksi istunto: Opus, 296 vuoroa, 17,8 M
-tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osat 0a–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
+tokenia, 4,72 $; yksittäinen katselmointi 0,02–1 $). Osa 0a on tehty (`scripts/round.py`, PR #670). Osat 0b–0e ja 0g muuttavat jaettuja tiedostoja (`scripts/`,
 `.claude/`, `CLAUDE.md`, `.github/workflows/`): ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja
 yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR:nsä ja raportoi PR:ssä, mitä se säästi
 (vuorot, tokenit, yhdistykset tai katselmoinnit ennen ja jälkeen). Avoimet jaetut PR:t #665 (5g) ja #666 (8o)
 yhdistetään ensin.
-
-### 0a. Katselmointikierroksen ajo yhdellä komennolla
-`/lesson`, `/exercises` ja `/quality-audit` ajavat nyt ketjun `check_lesson.py` → `screenshot.py --if-stale` →
-`reviews.py scope` → `reviews.py carry` → `review_packet.py` komento kerrallaan, ja jokainen komento on orkestroijan
-vuoro koko kontekstilla. Yksi skripti (esim. `python scripts/round.py <id>[,<id>…] [--exercises] [--lang]`) ajaa
-ketjun ja tulostaa lyhyen yhteenvedon: tarkistusten tulos (vain epäonnistuneet rivit), kunkin roolin scope, kirjatut
-carryt ja pakettien polut. Erälle (`--batch`) sama. Komentotiedostot (`.claude/commands/`) lyhennetään käyttämään sitä.
-Samalla selvitetään, miksi orkestrointi on ajettu Opuksella, vaikka `lesson.md` määrää Sonnetin (komennon `model:` ei
-ilmeisesti vaikuta pilvi-istunnon malliin), ja kirjataan työntekijäistunnon malli koordinaattorin käynnistysohjeeseen.
-Ei muuta katselmointisääntöjä. Testi: skriptin yhteenveto vastaa erikseen ajettujen komentojen tuloksia.
 
 ### 0b. Ohjetiedostot lyhyiksi
 `fysiikkalabra/CLAUDE.md` latautuu jokaiseen istuntoon ja agenttiin, ja suuri osa siitä on päivättyä päätöshistoriaa
@@ -277,8 +267,9 @@ carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksis
 fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
 järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-kaavaa, pitkät Annettu-rivit). Ulkoasun Polish-huomiot
 (vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
-ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
-esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
+ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella (fi, en,
+fi-easy) ja esimerkkikoe tehty (claude/fy4-lapikaynti, 0f): tiede ja pedagogiikka carry, ulkoasu delta PASS; en- ja
+fi-easy-Sovella arvioitiin diffistä fi-kaappausten kanssa (screenshot.py ei kaappaa käännettyä Sovellaa), koe diffistä.
 
 FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
 esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
@@ -424,7 +415,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 **Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
 (seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
 "example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
-(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+(fi, fi-easy, en). FY4 (fy4-2) tehty (claude/fy4-lapikaynti, kaikki
+katselmoinnit carry). **Jäljellä FY5 ja FY8** (fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
 kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
 `caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
 
