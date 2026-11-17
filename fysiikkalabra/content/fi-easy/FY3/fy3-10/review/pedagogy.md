@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c09510655da596f8
+CONTENT-HASH: 1e3401a595c10da7
 
 ## Blocking
-- none
 
 ## Polish
-- The Ennuste ("100 to 200 particles, same V and T") is close to the open question about comparing gas amounts, but the retrieval does not touch particle number, so nothing is disclosed. Keep it that way.
+- The unit symbol l is now \textsf{l} in the maths; check that it renders legibly next to the upright kPa on the phone.
 
 ## Checked
-batch delta review, round 1: the retrieval uses the hook's helium balloon squeezed from 3,0 l to 2,0 l (Boyle's law, 150 kPa) and tests the prior law the lesson builds on; the distractors (67 kPa, 100 kPa, 200 kPa) are inverse, no-change and doubling slips. It gives no hint of how n enters pV = nRT, so the Ennuste and the open question stay open.
+batch delta review: the piston-cylinder Boyle retrieval (helium, push the piston, T and n constant) is a clearer closed-system case than a squeezed balloon; the answer 150 kPa, the 200 kPa distractor feedback (ratio 3,0 : 2,0 = 1,5) and the link to the lesson's particle explanation hold together.

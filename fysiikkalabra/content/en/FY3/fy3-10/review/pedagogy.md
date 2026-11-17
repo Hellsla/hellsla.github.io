@@ -1,9 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 2e0c597a985386a4
+CONTENT-HASH: 6edf712b0fd0697f
 ## Blocking
 ## Polish
-- The recap fits the balloon phenomenon and Boyle's law is the right prerequisite; it does not touch Ennusta (adding particles 100 to 200, pressure doubles). Its options are ordered ascending with the correct answer third, so the pattern is neutral.
-- The distractor "200 kPa" (halving) is a good slip; its feedback names the real ratio 1,5. Good.
-- The feedback of 67 kPa says "multiplied ... the wrong way round"; "inverted the ratio" is clearer for a student.
+- The feedback writes "$3.0 : 2.0 = 1.5$"; "$3.0/2.0 = 1.5$" (the earlier form) reads more clearly as a quotient.
 ## Checked
-batch delta review: herata recap (helium balloon 3,0 l to 2,0 l at 100 kPa) fits the phenomenon and is clear; no Ennusta answer disclosed; the feedback repairs the inverse-proportion misconception; the answers file agrees (150 kPa).
+batch delta review: the piston-and-cylinder retrieval states constant temperature and amount of gas, keeps Boyle's law, and the distractor feedback still repairs the "volume halves" misconception; the helium cylinder links to the lesson's cylinder figure better than the squeezed balloon did.

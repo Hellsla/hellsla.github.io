@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 5639040cc31fd4c3
-
+CONTENT-HASH: 719473bcd792b302
 ## Blocking
-
 ## Polish
-- Ilmiö vertaa heliumia ja ilmaa (hiukkasten määrä ja massa), kertaus puristaa heliumpalloa (Boyle): tilanne sama pallo, mutta ajatus eri. Hyväksyttävä, koska Boylen laki on edellisen luvun esitieto.
-- Kertaus kertoo jo "lämpötila ja kaasun määrä eivät muutu"; Ennusta kysyy hiukkasten lisäämistä, joten vastaus ei paljastu.
-
+- Litre is typeset with \textsf{l} (to avoid l looking like 1), so check it is used for every litre in the lesson, not only in this task.
 ## Checked
-batch delta review: kertaus sopii palloilmiöön ja kysyy esitietoa Boylen laista; 150 kPa ja distraktorit (väärinpäin, ei muutu, suhde 2) ovat oikeita, palaute korjaa; ei paljasta Ennusta-vastauksia.
+batch delta review: the piston-cylinder helium prompt keeps the Boyle's law task unchanged in numbers (3,0 l to 2,0 l, 150 kPa), isothermal and fixed amount stated, distractor feedback still repairs the "volume halves" error; fits the lesson's gas-in-cylinder figures.

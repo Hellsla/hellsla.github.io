@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: b845352d0b689a84
-
+CONTENT-HASH: 2ffd1ae3f9d1f45d
 ## Blocking
-
 ## Polish
-- Kertaus (nettolämpö -3,0 kJ) valmistelee ajatusta nettovirrasta, jota Ennusta 2:n Bea-vaihtoehto käyttää; se ei kerro vastausta, mutta älä lisää vihjeitä ilmakehästä.
-- Kerroksen "saa ympäristöstä lämpönä" voisi nimetä (ilmakehän vastasäteily), jotta ilmiö ja kertaus kohtaavat.
-
+- Feedback: "Pois siirtyvä energia siirtyy lämpönä" repeats the verb; e.g. "Kerroksesta pois mennyt energia siirtyy lämpönä ympäristöön ...".
 ## Checked
-batch delta review: kertaus (talviyön maankerros, ΔU = Q + W) kuuluu pakkasyö/pilvi-ilmiöön ja kysyy esitietoa; ei paljasta kasvihuoneilmiön Ennusta-vastauksia; distraktorit (säilyminen, vain luovutettu, merkki) ovat aitoja; lukuarvot ja yksiköt LaTeXina, tehtävien pienet muutokset johdonmukaisia.
+batch delta review: "eikä olomuoto muutu" closes the latent-heat loophole so the answer is unambiguous; the new feedback sentence separates the layer's change from the environment's gain and ends with the correct ΔU = -3,0 kJ.
