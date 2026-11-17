@@ -294,7 +294,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A fire piston has a closed cylinder with tinder at the bottom. The piston is pushed quickly down with the palm of the hand, and the compressed air gets so hot that the tinder ignites. The palm pushes the piston with an average force of 75 N over a distance of 8.0 cm, and during the compression a quantity of heat of $0.60\\,\\text{J}$ has time to be transferred from the air to the walls. By how much does the internal energy of the air increase? Assume that all the work of the palm is done on the air (ignore friction). Give the answer in joules.",
+      "prompt": "A fire piston has a closed cylinder with tinder at the bottom. The piston is pushed quickly down with the palm of the hand, and the compressed air gets so hot that the tinder ignites. The palm pushes the piston with an average force of $75\\,\\text{N}$ over a distance of $8.0\\,\\text{cm}$, and during the compression a quantity of heat of $0.60\\,\\text{J}$ has time to be transferred from the air to the walls. By how much does the internal energy of the air increase? Assume that all the work of the palm is done on the air (ignore friction). Give the answer in joules.",
       "answer": 5.4,
       "unit": "J",
       "tolerance": 0.02,

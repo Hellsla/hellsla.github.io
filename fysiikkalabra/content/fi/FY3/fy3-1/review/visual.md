@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9ec259238b146c26
+CONTENT-HASH: 2e26d69fe5be0d20
 
 ## Blocking
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Round 1, delta (lesson.md, md-paragraphs: text cut into paragraphs, words unchanged). No 360 px captures exist (said once); the 360 px layout check is clean per the packet.
+- 390 px: fy3-1-example-390-1 (stages 1-5: Tunnetut / Kysytty, Periaate, Kaava, Yksikkömuunnokset, Sijoitus each their own paragraph, question last; formula boxes and aligned equals signs intact) and fy3-1-stage-sovella-390-1 (the same stages inside the Esimerkit stage, nothing clipped, no horizontal overflow).
+- 1280 px: fy3-1-open-exercises-1280-1 (solution open: Annettu/Kysytty/Periaate rows and boxed Sijoitus) and fy3-1-open-tarkista-1280-1 (Testaa ja arvioi: answers and feedback paragraphs, reading width and hierarchy fine).
+- Paragraph breaks sit at meaningful boundaries; the layout around them survived.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

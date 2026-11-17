@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 51751878d112a680
+CONTENT-HASH: 9fd36711862df6e6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-7-L3-05 Muunnokset — "…$35{,}0\,\text{K}$. $r = …$" runs two statements together without a connector; add "Lisäksi".
+(none)
 
 ## Checked
-- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-7 L2 captures 8, 14 and 15 (new PhET data task with a-d model answers; L2 Sijoitus rows) and L3 capture 8 (L3-05 Kaava rows).
-- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean. The new exercise fy3-7-L2-10 reads well: source link first, a-d clear, model solution complete and typographically clean. 
+- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (1280 px only); layout check at 360 px is clean per the packet.
+- 1280 px with solutions open: ../review/shots/fy3-7-open-exercises-L2-1280-1.png (8-10 solution: Periaate paragraph, Muunnokset box, Sijoitus rows with 565 s to min) and fy3-7-open-tarkista-1280-1.png for the surrounding layout.
+- Breaks at meaningful boundaries, formulas in boxes, equals signs aligned, nothing clipped.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

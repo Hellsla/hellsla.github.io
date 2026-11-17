@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0628862c6f7deb8a
+CONTENT-HASH: 2bd01af38fa74e17
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-6.png (exercises 12-1 to 12-11, solutions open): the split Principle paragraphs of 12-11, the reasonableness notes of 12-4 and 12-10 and the wrong-option feedback of 12-8 read well; no overflow.
+- review/shots/fy3-10-example-390-1.png (helium balloon example, stages 1-4 at 390 px): unchanged, the bulleted unit conversions with their boxes fit the phone width.
+- review/shots/fy3-10-open-exercises-1280-3.png (opened solution 12-3 and the end of 12-2): J/(mol·K) fractions, scientific notation and units render correctly.

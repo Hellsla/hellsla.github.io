@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 038a37e0201e14a4
+CONTENT-HASH: bcba5280a01c2a67
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:132 — on a phone the continuation rows start at the same left edge as the `=` rows (earlier note stands); readable.
+- [Minor] none new; earlier solution-wrapping notes stand.
 
 ## Checked
-- Delta, round 1. Capture en fy7-6-open-exercises-L2-1280-7 (lesson folder review/shots) full size: Reasonableness split into short paragraphs, the N·s/m fractions and the 6-14 answer card lay out correctly, nothing clipped.
+- Delta, round 2. Opened open-exercises-1280-2, -4 and -5 (en): task 6-6 with the reworded option, its feedback, the Vastaus box and the model answer; neighbours 6-2/6-3/6-5 for layout. en: "tries to keep" reads naturally. Wording only; option fits two lines, nothing clipped, layout survived.
 - Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0820f8734e66e4da
+CONTENT-HASH: 92aa53d46add51e9
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+- batch delta review, round 3: fresh 360 px render of the opened Pohdinta retrieval task (wrong-answer feedback) and fy7-7-stage-herata-390; rows aligned, nothing clipped, no overflow.

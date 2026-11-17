@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 21df55a514bbabc8
+CONTENT-HASH: 3d0e239029fd8ba7
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] fy3-14 theory — the paragraph "Jos $Q_v \geq Q_j$, kaikki jää sulaa. Silloin…" starts with "Silloin", which points back across a list; repeating the condition would be clearer.
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Delta (paragraph breaks only, words unchanged). No 360 px captures exist; 390 px used.
+- fy3-14-example-390-2.png: stages 4-6 show one step per paragraph, aligned chains, nothing clipped.
+- fy3-14-stage-selita-390-2.png: notation list, figure, table and numbered final states readable.
+- fy3-14-open-tarkista-1280-2.png: opened feedback and hints, reading column held.
+- fy3-14-open-exercises-L2-1280-5.png: opened solution with split paragraphs, formulas intact.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

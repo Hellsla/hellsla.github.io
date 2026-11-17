@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 28a3b421e466f8b3
+CONTENT-HASH: 3962664527ed4eb6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-11-L2-10 (13-19), Annettu/Vastaus — Annettu quotes the source in one dense block and Vastaus runs a)–d) together in one paragraph; splitting at a), b), c), d) would help (optional).
+- [Minor] fy3-11-open-exercises-L2-1280-1.png, 13-10 Muunnokset — a one-word paragraph "joten" between two display boxes; acceptable, optional: "joten" could join the next display's lead-in.
 
 ## Checked
-- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 16 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
-- New exercise fy3-11-L2-10 captured whole at 390 and 1280 px (source link first, a–d, answer box, solution): source link wraps cleanly, formulas aligned, language fluent.
-- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Round 1, delta (md-paragraphs): solutions.md only, paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
+- 1280 px with solutions open: fy3-11-open-exercises-1280-1.png (13-1: Muunnokset text, Sijoitus rows aligned, answer set apart, Järkevyys unit chain); fy3-11-open-exercises-L2-1280-1.png (13-10); fy3-11-open-tarkista-1280-1.png (model answers in cards).
+- 390 px: fy3-11-stage-exercises-390.png (level cards readable); fy3-11-example-390-1.png (stage paragraph structure).
 - Hash same at start and end.
 
 ## Scores

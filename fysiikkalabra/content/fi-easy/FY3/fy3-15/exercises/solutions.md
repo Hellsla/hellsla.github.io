@@ -122,7 +122,9 @@
 **Muunnokset:** Kaikki energiat ovat gigawattitunteina, joten yksiköt supistuvat. Muunnoksia ei tarvita. Tulokset kerrotaan sadalla, jolloin saat prosentit.
 **Sijoitus:** Vuonna 2023 sähkön ja kaukolämmön summa on $$\begin{aligned} &735\,\text{GWh} + 1470\,\text{GWh} \\ &= 2205\,\text{GWh} \end{aligned}$$, joten $\eta_\text{kok} = \dfrac{2205\,\text{GWh}}{2450\,\text{GWh}} = 0{,}900 = 90{,}0\,\%$. Sähköhyötysuhteet ovat $\eta_\text{s} = \tfrac{840}{2400} = 35{,}0\,\%$ (2021), $\tfrac{800}{2500} = 32{,}0\,\%$ (2022) ja $\tfrac{735}{2450} = 30{,}0\,\%$ (2023). Kokonaishyötysuhteet ovat $\tfrac{2030}{2400} = 84{,}6\,\%$ (2021) ja $\tfrac{2210}{2500} = 88{,}4\,\%$ (2022).
 **Vastaus:** $90{,}0\,\%$, kolme merkitsevää numeroa kuten taulukon energioissa.
-**Järkevyys:** Kokonaishyötysuhde on enintään $100\,\%$ ja suurempi kuin sähköhyötysuhde, kuten pitääkin. Hukkalämpöä jää vuonna 2023 $$\begin{aligned} &2450\,\text{GWh} - 2205\,\text{GWh} \\ &= 245\,\text{GWh} \end{aligned}$$. Se on noin kymmenesosa. Kylmänä vuonna kaukolämpöä tarvitaan enemmän. Silloin suurempi osa lauhduttimen lämmöstä tulee hyötykäyttöön ja sähköä saadaan vähemmän. Sähköhyötysuhde pieneni arvosta $35{,}0\,\%$ arvoon $30{,}0\,\%$, mutta kokonaishyötysuhde kasvoi arvosta $84{,}6\,\%$ arvoon $90{,}0\,\%$. Sähkö ja lämpö eivät silti ole yhtä arvokkaita, vaikka ne lasketaan yhteen.
+**Järkevyys:** Kokonaishyötysuhde on enintään $100\,\%$ ja suurempi kuin sähköhyötysuhde, kuten pitääkin. Hukkalämpöä jää vuonna 2023 $$\begin{aligned} &2450\,\text{GWh} - 2205\,\text{GWh} \\ &= 245\,\text{GWh} \end{aligned}$$. Se on noin kymmenesosa. Kylmänä vuonna kaukolämpöä tarvitaan enemmän.
+
+Silloin suurempi osa lauhduttimen lämmöstä tulee hyötykäyttöön ja sähköä saadaan vähemmän. Sähköhyötysuhde pieneni arvosta $35{,}0\,\%$ arvoon $30{,}0\,\%$, mutta kokonaishyötysuhde kasvoi arvosta $84{,}6\,\%$ arvoon $90{,}0\,\%$. Sähkö ja lämpö eivät silti ole yhtä arvokkaita, vaikka ne lasketaan yhteen.
 
 ## fy3-15-L2-06
 **Annettu:** taulukosta ydinvoimala $P_\text{o} = 2400\,\text{MW}$ ja $P_\text{s} = 840\,\text{MW}$, kivihiilivoimala $1200\,\text{MW}$ ja $432\,\text{MW}$, biovoimala $350\,\text{MW}$ ja $112\,\text{MW}$
@@ -132,7 +134,9 @@
 **Muunnokset:** Kaikki tehot ovat megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** Ydinvoimala: $\eta = \tfrac{840\,\text{MW}}{2400\,\text{MW}} = 0{,}350$ ja $P_\text{h} = 2400\,\text{MW} - 840\,\text{MW} = 1560\,\text{MW}$. Kivihiilivoimala: $\eta = \tfrac{432}{1200} = 0{,}360$ ja $P_\text{h} = 1200\,\text{MW} - 432\,\text{MW} = 768\,\text{MW}$. Biovoimala: $\eta = \tfrac{112}{350} = 0{,}320$ ja $P_\text{h} = 350\,\text{MW} - 112\,\text{MW} = 238\,\text{MW}$.
 **Vastaus:** $1560\,\text{MW}$ (ydinvoimala), kolme merkitsevää numeroa kuten sähkötehoissa.
-**Järkevyys:** Jokaisella laitoksella $P_\text{s} + P_\text{h}$ on yhtä suuri kuin $P_\text{o}$. Esimerkiksi $840 + 1560 = 2400$. Heikoin hyötysuhde on biovoimalalla ($32{,}0\,\%$). Sillä on kuitenkin pienin hukkalämmön teho ($238\,\text{MW}$), koska laitos on pieni. Suurin hukkalämmön teho on ydinvoimalalla, vaikka sen hyötysuhde ($35{,}0\,\%$) on lähes yhtä suuri kuin kivihiilivoimalan ($36{,}0\,\%$). Hyötysuhde ja hukkalämmön teho eivät siis ole samassa järjestyksessä.
+**Järkevyys:** Jokaisella laitoksella $P_\text{s} + P_\text{h}$ on yhtä suuri kuin $P_\text{o}$. Esimerkiksi $840 + 1560 = 2400$. Heikoin hyötysuhde on biovoimalalla ($32{,}0\,\%$). Sillä on kuitenkin pienin hukkalämmön teho ($238\,\text{MW}$), koska laitos on pieni.
+
+Suurin hukkalämmön teho on ydinvoimalalla, vaikka sen hyötysuhde ($35{,}0\,\%$) on lähes yhtä suuri kuin kivihiilivoimalan ($36{,}0\,\%$). Hyötysuhde ja hukkalämmön teho eivät siis ole samassa järjestyksessä.
 
 ## fy3-15-L2-07
 **Annettu:** $\eta_1 = 0{,}920$ (kattila), $\eta_2 = 0{,}410$ (höyrykierto) ja $\eta_3 = 0{,}970$ (generaattori). Oppilaan tulos on $230\,\%$.
@@ -186,7 +190,9 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa. Sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
-**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu. Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput siirtyy hukkalämpönä ympäristöön. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
+**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu.
+
+Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput siirtyy hukkalämpönä ympäristöön. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
 **Annettu:** lämmitystarve $Q_1 = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
@@ -218,7 +224,9 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Sijoitus:** Nousujen summa on $$\begin{aligned} &10{,}9 + 10{,}7 + 10{,}6 + 10{,}9 \\ &= 43{,}1\,\text{K} \end{aligned}$$, joten $\Delta T_\text{ka} = 10{,}775\,\text{K}$. Silloin
 $$\begin{aligned} P_\text{L} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10{,}775\,\text{K} \\ &= 1{,}7156 \cdot 10^{9}\,\text{W} \\ &= 1716\,\text{MW} \end{aligned}$$
 **Vastaus:** $1720\,\text{MW}$, kolme merkitsevää numeroa kuten vesivirrassa ja lämpötilan nousussa.
-**Järkevyys:** Arvio: $$\begin{aligned} &4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \\ &\approx 1{,}8 \cdot 10^9\,\text{W} \end{aligned}$$. Hukkalämmön teho on $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$. Lauhduttimen osuus siitä on $\tfrac{1716}{1800} = 95\,\%$. Loput, noin $84\,\text{MW}$, menee esimerkiksi generaattorin ja muuntajan häviöinä ilmaan. Meriveteen siirtyy vähemmän lämpöä kuin hukkalämpöä, kuten pitääkin. Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämpää. Siksi sillä ei voi enää käytännössä tuottaa sähköä. Näin pienellä lämpötilaerolla suurin mahdollinen hyötysuhde olisi vain muutama prosentti. Energia ei kuitenkaan katoa, vaan se lämmittää merta. Heinäkuussa vesi lähtee lämpötilassa $28{,}4\,{}^\circ\text{C}$. Purkualueella meri on siis lämpimämpää kuin muualla, ja vesieliöiden olot voivat heiketä.
+**Järkevyys:** Arvio: $$\begin{aligned} &4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \\ &\approx 1{,}8 \cdot 10^9\,\text{W} \end{aligned}$$. Hukkalämmön teho on $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$. Lauhduttimen osuus siitä on $\tfrac{1716}{1800} = 95\,\%$. Loput, noin $84\,\text{MW}$, menee esimerkiksi generaattorin ja muuntajan häviöinä ilmaan. Meriveteen siirtyy vähemmän lämpöä kuin hukkalämpöä, kuten pitääkin.
+
+Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämpää. Siksi sillä ei voi enää käytännössä tuottaa sähköä. Näin pienellä lämpötilaerolla suurin mahdollinen hyötysuhde olisi vain muutama prosentti. Energia ei kuitenkaan katoa, vaan se lämmittää merta. Heinäkuussa vesi lähtee lämpötilassa $28{,}4\,{}^\circ\text{C}$. Purkualueella meri on siis lämpimämpää kuin muualla, ja vesieliöiden olot voivat heiketä.
 
 ## fy3-15-L1-09
 **Annettu:** vesivirta $q_m = 80\,\text{kg/s}$ ja lämpötilan nousu $\Delta T = 40\,\text{K}$. Taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, nesteet, vesi) $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$.

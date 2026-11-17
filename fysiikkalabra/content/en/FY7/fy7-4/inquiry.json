@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recall: the magnetic field of a straight wire",
-      "prompt": "A current flows in a long straight wire. How large is the magnetic flux density at twice the distance from the wire compared with the original distance?",
+      "prompt": "A current of $0.50\\,\\text{A}$ flows in a long straight wire. The magnetic flux density of the wire is $10\\,\\mu\\text{T}$ at $1.0\\,\\text{cm}$. How large is it at $2.0\\,\\text{cm}$?",
       "choices": [
         {
-          "text": "Half of the original, because $B = \\mu_0 I : (2\\pi r)$ is inversely proportional to the distance.",
+          "text": "$5.0\\,\\mu\\text{T}$, that is half, because $B = \\mu_0 I : (2\\pi r)$ is inversely proportional to the distance.",
           "correct": true,
-          "feedback": "Correct. The field of a straight wire circles the wire, and its magnitude is inversely proportional to the distance $r$ (chapter *Magnetic field of a wire and a coil*). Today this field is used to explain why two current-carrying wires attract or repel each other."
+          "feedback": "Correct. The field of a straight wire circles the wire, and its magnitude is inversely proportional to the distance $r$ (chapter *Magnetic field of a wire and a coil*): $$\n\\begin{aligned}\n&B \\\\\n&= 10\\,\\mu\\text{T} \\cdot \\dfrac{1.0\\,\\text{cm}}{2.0\\,\\text{cm}} \\\\\n&= 5.0\\,\\mu\\text{T}\n\\end{aligned}\n$$. Today this field is used to explain why two current-carrying wires attract or repel each other."
         },
         {
-          "text": "A quarter of the original, because the field weakens with the square of the distance.",
-          "feedback": "It is the electric field of a point charge that weakens with the square of the distance. The field of a long straight wire is $B = \\mu_0 I : (2\\pi r)$, so at twice the distance it is half (chapter *Magnetic field of a wire and a coil*)."
+          "text": "$2.5\\,\\mu\\text{T}$, that is a quarter, because the field weakens with the square of the distance.",
+          "feedback": "It is the electric field of a point charge that weakens with the square of the distance. The field of a long straight wire is $B = \\mu_0 I : (2\\pi r)$, so at twice the distance it is $5.0\\,\\mu\\text{T}$, half (chapter *Magnetic field of a wire and a coil*)."
         },
         {
-          "text": "The same, because the current is the same everywhere in the wire.",
-          "feedback": "The current is the same, but the field weakens as the distance grows: $B = \\mu_0 I : (2\\pi r)$. At twice the distance the field is half (chapter *Magnetic field of a wire and a coil*)."
+          "text": "$10\\,\\mu\\text{T}$, that is the same, because the current is the same everywhere in the wire.",
+          "feedback": "The current is the same, but the field weakens as the distance grows: $B = \\mu_0 I : (2\\pi r)$. At twice the distance the field is $5.0\\,\\mu\\text{T}$, half (chapter *Magnetic field of a wire and a coil*)."
         }
       ],
       "optional": true

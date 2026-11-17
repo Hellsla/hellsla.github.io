@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e2cb78db43525510
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 68e759202638abad
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-- Formula section: $e_\text{ka} = -N\,\Delta\Phi/\Delta t$ named as the average induced voltage over $\Delta t$, steady change → constant $e$; consistent with the fy7-5 statement. Minus sign/Lenz sentence unchanged and right. fi, en, fi-easy agree. Hash identical at start and end.
+batch delta review: only the prompt changed (magnet held at rest in a copper tube inside a coil): zero voltage still the one correct answer, feedback unchanged and right; the setting names the copper tube but gives no fall-time hint, so Ennusta 1-2 are not revealed.

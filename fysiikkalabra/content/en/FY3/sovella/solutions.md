@@ -66,13 +66,20 @@
   <foreignObject x="325" y="163.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$0.43\,\text{K/min}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points are not on a straight line: at first the temperature rises by about $0.8\,\text{K}$ per minute, but at the end only by about $0.4\,\text{K}$ per minute. So a smooth, levelling-off curve is drawn through the points, not a straight line or a broken line. The auxiliary lines for parts b and d are also drawn in the figure.
+**Model answer:** The points are not on a straight line: at first the temperature rises by about $0.8\,\text{K}$ per minute, but at the end only by about $0.4\,\text{K}$ per minute.
+
+So a smooth, levelling-off curve is drawn through the points, not a straight line or a broken line. The auxiliary lines for parts b and d are also drawn in the figure.
 
 ### b)
 **Given:** mass of the water $m = 4.00\,\text{kg}$, specific heat capacity of water $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and the graph from part a
 **Find:** the power $P$ at which the water receives energy from the solar radiation
-**Principle:** The power the water receives shows in how fast its temperature rises: the quantity of heat is $Q = cm\Delta T$ and the power is $P = Q : \Delta t$. The warmer the water is compared with the air, the more heat is conducted and radiated to the surroundings. At the start of the measurement the water is at air temperature, so then almost all the power received from the Sun heats the water. So the power is determined from the start of the graph, not from the average rise over the whole measurement.
+**Principle:** The power the water receives shows in how fast its temperature rises: the quantity of heat is $Q = cm\Delta T$ and the power is $P = Q : \Delta t$.
+
+The warmer the water is compared with the air, the more heat is conducted and radiated to the surroundings. At the start of the measurement the water is at air temperature, so then almost all the power received from the Sun heats the water.
+
+So the power is determined from the start of the graph, not from the average rise over the whole measurement.
 **Reading the graph:** A tangent is drawn to the curve at $0\,\text{min}$. It passes through the points $(0\,\text{min};\ 20.0\,{}^\circ\text{C})$ and $(10\,\text{min};\ 28.5\,{}^\circ\text{C})$, so the initial rate of warming is $\dfrac{\Delta T}{\Delta t} = \dfrac{8.5\,\text{K}}{10\,\text{min}} = 0.85\,\text{K/min}$.
+
 **Formula:** $P = \dfrac{Q}{\Delta t} = cm \cdot \dfrac{\Delta T}{\Delta t}$
 **Conversions:** $0.85\,\text{K/min} = 0.85\,\text{K} : 60\,\text{s} = 0.014\,17\,\text{K/s}$. A change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $$\begin{aligned} P &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 0.014\,17\,\text{K/s} \\ &= 237\,\text{W} \end{aligned}$$
@@ -92,18 +99,24 @@
 ### d)
 **Given:** power received from the Sun $P \approx 237\,\text{W}$ and the graph from part a
 **Find:** why the warming slows down and the power of the heat loss $P_\text{loss}$ at $50\,\text{min}$
-**Principle:** Heat is conducted through the walls of the box and the glass at a higher power, the greater the temperature difference between the water and the air ($P = UA\Delta T$), and a warm box also radiates more. As the water warms up, the loss grows, so a smaller and smaller part of the power received from the Sun is left for the water and the temperature rises more and more slowly. The power received from the Sun stays the same, so the loss is the difference between it and the power left for the water.
+**Principle:** Heat is conducted through the walls of the box and the glass at a higher power, the greater the temperature difference between the water and the air ($P = UA\Delta T$), and a warm box also radiates more.
+
+As the water warms up, the loss grows, so a smaller and smaller part of the power received from the Sun is left for the water and the temperature rises more and more slowly. The power received from the Sun stays the same, so the loss is the difference between it and the power left for the water.
+
 **Reading the graph:** The slope at $50\,\text{min}$ is read from the line through the points at $40\,\text{min}$ and $60\,\text{min}$, which is almost parallel to the tangent of the curve: $\dfrac{54.7\,{}^\circ\text{C} - 46.2\,{}^\circ\text{C}}{20\,\text{min}} = 0.425\,\text{K/min}$.
 **Formula:** $P_\text{water} = cm \cdot \dfrac{\Delta T}{\Delta t}$ and $P_\text{loss} = P - P_\text{water}$
 **Conversions:** $0.425\,\text{K/min} = 0.425\,\text{K} : 60\,\text{s} = 0.007\,08\,\text{K/s}$
 **Substitution:** $$\begin{aligned} P_\text{water} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \\ &\cdot 0.007\,08\,\text{K/s} \\ &= 119\,\text{W} \end{aligned}$$ and $P_\text{loss} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
 **Answer:** $P_\text{loss} \approx 120\,\text{W}$, two significant figures, because both slopes are read from the graph.
-**Reasonableness:** At $50\,\text{min}$ the water is about $31\,\text{K}$ warmer than the air, and the loss is about half of the power received from the Sun. If it continued at the same rate, the loss would grow equal to the power received when the temperature difference is about $60\,\text{K}$. Then the temperature of the water would stop rising at about $80\,{}^\circ\text{C}$, which is believable for a simple collector.
+**Reasonableness:** At $50\,\text{min}$ the water is about $31\,\text{K}$ warmer than the air, and the loss is about half of the power received from the Sun.
+
+If it continued at the same rate, the loss would grow equal to the power received when the temperature difference is about $60\,\text{K}$. Then the temperature of the water would stop rising at about $80\,{}^\circ\text{C}$, which is believable for a simple collector.
 
 ### e)
 **Find:** two assumptions of parts b–d and the direction of their effect
 **Principle:** An assumption is good if its error is small compared with the uncertainty of reading. For each assumption, you think about whether the water would in reality receive more or less energy than was calculated.
 **Model answer:** Any two, with justification:
+
 - *The warming of the box and the glass has been left out.* Part of the energy received from the Sun also heats the box, so the real power of the collector is slightly higher than calculated.
 - *No losses were assumed at the start.* Losses begin as soon as the water becomes warmer than the air. If the slope is read from a line through the first points and not from the tangent at the start, it is too small, and the power comes out slightly too small.
 - *The meter reading $800\,\text{W/m}^2$ was assumed to stay the same for the whole hour.* If a cloud or the change in the height of the Sun reduced the radiation during the measurement, part of the slowing of the warming is due to that and not to losses, and the loss in part d is too large.
@@ -119,9 +132,12 @@
 ### a)
 **Given:** the valve keeps a gauge pressure of $80\,\text{kPa}$, outside air pressure $101\,\text{kPa}$ and the boiling temperatures in the table
 **Find:** the temperature $T$ of the water when the valve lets steam out
-**Principle:** Water boils at the temperature that corresponds to the total pressure acting on the surface of the water. When the valve lets steam out, the total pressure in the cooker is the outside air pressure and the gauge pressure of the valve together. The air has already left, so under the lid there is only water vapour and the whole pressure is the pressure of the vapour. The table gives the boiling temperature only at intervals of $5\,{}^\circ\text{C}$, so a value in between is interpolated between the two nearest rows, assuming that the temperature changes evenly between them.
+**Principle:** Water boils at the temperature that corresponds to the total pressure acting on the surface of the water. When the valve lets steam out, the total pressure in the cooker is the outside air pressure and the gauge pressure of the valve together.
+
+The air has already left, so under the lid there is only water vapour and the whole pressure is the pressure of the vapour. The table gives the boiling temperature only at intervals of $5\,{}^\circ\text{C}$, so a value in between is interpolated between the two nearest rows, assuming that the temperature changes evenly between them.
 **Formula:** $p = p_0 + \Delta p$ and $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
 **Conversions:** Not needed, all pressures are in kilopascals.
+
 **Substitution:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, which is between the rows $169.2\,\text{kPa}$ and $198.7\,\text{kPa}$. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11.8\,\text{kPa}}{29.5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2.0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
 **Answer:** $T \approx 117\,{}^\circ\text{C}$ to the nearest degree: the gauge pressure of the valve is given to two figures, and between the values of the table the curve bends slightly.
 **Reasonableness:** The temperature is between $115\,{}^\circ\text{C}$ and $120\,{}^\circ\text{C}$ of the table and closer to $115\,{}^\circ\text{C}$, just like the pressure lies between theirs. If the gauge pressure $80\,\text{kPa}$ had been read from the table as such, the boiling temperature would have come out below $95\,{}^\circ\text{C}$, which is impossible for a cooker whose pressure is higher than the outside air.
@@ -129,13 +145,22 @@
 ### b)
 **Find:** why the boiling temperature is higher and why food cooks faster
 **Principle:** The table shows that the boiling temperature of water increases as pressure increases. The same information is in the vaporisation curve of the phase diagram, but the table is enough for the answer.
-**Model answer:** When it boils, water vaporises as bubbles throughout the liquid. A vapour bubble exists only if the pressure of the vapour inside it is equal to the pressure of the surrounding liquid, which is affected by the pressure at the surface. The vapour pressure increases as the temperature rises, because faster particles leave the liquid more often and hit the wall of the bubble harder. The higher the pressure at the surface, the higher the temperature must be before bubbles can form. In the pressure cooker the pressure is about $1.8$ times the outside air pressure, so the water boils only at about $117\,{}^\circ\text{C}$.
-Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\circ\text{C}$ hotter than in an open pot, the temperature difference to the surface of the food is greater. Then heat is conducted into the food faster, and at a higher temperature the changes of cooking also happen faster.
+**Model answer:** When it boils, water vaporises as bubbles throughout the liquid. A vapour bubble exists only if the pressure of the vapour inside it is equal to the pressure of the surrounding liquid, which is affected by the pressure at the surface.
+
+The vapour pressure increases as the temperature rises, because faster particles leave the liquid more often and hit the wall of the bubble harder. The higher the pressure at the surface, the higher the temperature must be before bubbles can form.
+
+In the pressure cooker the pressure is about $1.8$ times the outside air pressure, so the water boils only at about $117\,{}^\circ\text{C}$.
+Food cooks when its inner parts get warm enough.
+
+Because the water is $17\,{}^\circ\text{C}$ hotter than in an open pot, the temperature difference to the surface of the food is greater. Then heat is conducted into the food faster, and at a higher temperature the changes of cooking also happen faster.
 
 ### c)
 **Given:** power of the hob $P = 300\,\text{W}$, of which $\eta = 0.80$ is transferred to the contents of the cooker, time $t = 20\,\text{min}$ and specific latent heat of vaporisation of water $r = 2260\,\text{kJ/kg}$
 **Find:** the mass $m$ of the water that vaporises
-**Principle:** The valve keeps the pressure constant, so the contents of the cooker stay at the boiling temperature. The temperature does not rise, and the potatoes are assumed to be already at the temperature of the cooker, so all the energy transferred to the contents is used to vaporise water, and the steam produced escapes through the valve. The mass of the water and the potatoes is not needed: it only determines how long the water lasts.
+**Principle:** The valve keeps the pressure constant, so the contents of the cooker stay at the boiling temperature. The temperature does not rise, and the potatoes are assumed to be already at the temperature of the cooker, so all the energy transferred to the contents is used to vaporise water, and the steam produced escapes through the valve.
+
+The mass of the water and the potatoes is not needed: it only determines how long the water lasts.
+
 **Formula:** $\eta P t = rm$, so $m = \dfrac{\eta P t}{r}$
 **Conversions:** $t = 20\,\text{min} = 20 \cdot 60\,\text{s} = 1200\,\text{s}$ and $r = 2260\,\text{kJ/kg} = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\eta P t = 0.80 \cdot 300\,\text{W} \cdot 1200\,\text{s} = 288\,000\,\text{J}$ and $m = \dfrac{288\,000\,\text{J}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.127\,\text{kg}$
@@ -145,12 +170,17 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 ### d)
 **Given:** temperature of the water $117\,{}^\circ\text{C}$, boiling temperature at outside air pressure $100\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2.26 \cdot 10^6\,\text{J/kg}$
 **Find:** what happens and what fraction $\dfrac{m_\text{v}}{m}$ of the water vaporises
-**Principle:** When the lid is opened, the pressure in the cooker drops straight to the outside air pressure, so the boiling temperature drops to $100\,{}^\circ\text{C}$. The water is $17\,{}^\circ\text{C}$ hotter than its boiling temperature, so it boils violently throughout its volume until it has cooled to $100\,{}^\circ\text{C}$. Energy is conserved: the energy needed for the vaporisation comes from the cooling of the water itself. The part that vaporises is small, so the whole mass $m$ can be used as the mass of the cooling water.
+**Principle:** When the lid is opened, the pressure in the cooker drops straight to the outside air pressure, so the boiling temperature drops to $100\,{}^\circ\text{C}$. The water is $17\,{}^\circ\text{C}$ hotter than its boiling temperature, so it boils violently throughout its volume until it has cooled to $100\,{}^\circ\text{C}$.
+
+Energy is conserved: the energy needed for the vaporisation comes from the cooling of the water itself. The part that vaporises is small, so the whole mass $m$ can be used as the mass of the cooling water.
+
 **Formula:** $c m \Delta T = r m_\text{v}$, so $\dfrac{m_\text{v}}{m} = \dfrac{c \Delta T}{r}$
 **Conversions:** $\Delta T = 117\,{}^\circ\text{C} - 100\,{}^\circ\text{C} = 17\,\text{K}$ and $r = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\dfrac{m_\text{v}}{m} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 17\,\text{K}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.031$
 **Answer:** about $3\,\%$ of the water vaporises in an instant. One significant figure is enough, because the heat of the potatoes and the cooker was left out of the calculation. They also cool down and vaporise more water, so the real fraction is slightly larger.
-**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\text{l}$. Tens of litres of hot steam and boiling splashes are released at once, and steam burns worse as it condenses than water at the same temperature. So a pressure cooker may be opened only after the pressure has dropped.
+**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\text{l}$.
+
+Tens of litres of hot steam and boiling splashes are released at once, and steam burns worse as it condenses than water at the same temperature. So a pressure cooker may be opened only after the pressure has dropped.
 
 ### Hyväksytään myös
 - In parts c and d the value $r \approx 2.21 \cdot 10^6\,\text{J/kg}$ for $117\,{}^\circ\text{C}$ can be used; the results do not change.
@@ -167,9 +197,13 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 ### a)
 **Given:** volume of the bubble at the bottom $V_1 = 4.0\,\text{cm}^3$, depth $h = 15.0\,\text{m}$, temperatures $T_1 = 6.0\,{}^\circ\text{C}$ and $T_2 = 20.0\,{}^\circ\text{C}$, atmospheric pressure $p_0 = 101\,\text{kPa}$, density of water $\rho = 1000\,\text{kg/m}^3$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the volume $V_2$ of the bubble at the surface
-**Principle:** The amount of air in the bubble stays the same. The bubble is small, so it is always at the temperature of the surrounding water, and its pressure is the pressure of the water at that depth: atmospheric pressure and hydrostatic pressure together. From the equation of state of an ideal gas $pV = nRT$ it follows that when $n$ is constant, $\dfrac{pV}{T}$ stays the same. Both pressure and temperature change, so neither can be left out.
+**Principle:** The amount of air in the bubble stays the same. The bubble is small, so it is always at the temperature of the surrounding water, and its pressure is the pressure of the water at that depth: atmospheric pressure and hydrostatic pressure together.
+
+From the equation of state of an ideal gas $pV = nRT$ it follows that when $n$ is constant, $\dfrac{pV}{T}$ stays the same. Both pressure and temperature change, so neither can be left out.
 **Formula:** $p_1 = p_0 + \rho g h$ and $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1}$, where at the surface $p_2 = p_0$
-**Conversions:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6.0 + 273.15)\,\text{K} = 279.15\,\text{K}$ and $T_2 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. The volume can stay in cubic centimetres, because the equation has a ratio of volumes.
+**Conversions:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6.0 + 273.15)\,\text{K} = 279.15\,\text{K}$ and $T_2 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$.
+
+The volume can stay in cubic centimetres, because the equation has a ratio of volumes.
 **Substitution:** $$\begin{aligned} p_1 &= 101\,000\,\text{Pa} \\ &+ 1000\,\text{kg/m}^3 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} \\ &= 248\,150\,\text{Pa} \end{aligned}$$ and $$\begin{aligned} V_2 &= 4.0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293.15\,\text{K}}{279.15\,\text{K}} \\ &= 10.3\,\text{cm}^3 \end{aligned}$$
 **Answer:** $V_2 \approx 10\,\text{cm}^3$, two significant figures as in the volume $4.0\,\text{cm}^3$.
 **Reasonableness:** The pressure falls by a factor of about $2.5$ as the bubble rises, so the volume grows to about $2.5$ times, and the warming increases it by about $5\,\%$ more. The growth of bubbles as they rise can also be seen in diving videos.
@@ -181,13 +215,18 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 **Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Conversions:** Not needed, the units cancel in the ratio of the pressures.
 **Substitution:** $V_2 = 6.0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\text{l}$
-**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue. While rising, you must never hold your breath: you breathe normally throughout the ascent, so that the expanding air can escape from the lungs.
+**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue.
+
+While rising, you must never hold your breath: you breathe normally throughout the ascent, so that the expanding air can escape from the lungs.
 **Reasonableness:** The volume grows in the same ratio as the bubble in part a, except for the share due to warming: the temperature of the lungs does not change.
 
 ### c)
 **Given:** volume of the tank $V_\text{tank} = 12.0\,\text{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
 **Find:** the time $t$ the diver can stay at a depth of $15.0\,\text{m}$
-**Principle:** According to the problem, the temperature of the air is the same in the tank and in the lungs (part d) estimates the effect of warming), so the amount of air is proportional to the product of pressure and volume (Boyle's law). The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
+**Principle:** According to the problem, the temperature of the air is the same in the tank and in the lungs (part d) estimates the effect of warming), so the amount of air is proportional to the product of pressure and volume (Boyle's law).
+
+The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
+
 **Formula:** $\Delta p_\text{tank} V_\text{tank} = p V$, so $V = \dfrac{\Delta p_\text{tank} V_\text{tank}}{p}$, and $t = \dfrac{V}{q}$
 **Conversions:** $\Delta p_\text{tank} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. The volumes can stay in litres.
 **Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ and $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$
@@ -198,12 +237,10 @@ Food cooks when its inner parts get warm enough. Because the water is $17\,{}^\c
 **Find:** two assumptions, the direction of their effect and the use of the result
 **Principle:** The calculation is a model. For each assumption, you think about whether in reality more or less air is used than in the model.
 **Model answer:** Any two, with justification:
+
 - *The consumption is steady.* Exertion, cold water and nervousness increase breathing, so the real time is often shorter.
 - *The whole time is spent at a depth of $15.0\,\text{m}$.* During the descent and the ascent the pressure is lower and less air is used, so in this respect the time is longer.
-- *The temperature stays the same.* The air in the tank is at the temperature of the water, but the consumption $20\,\text{l/min}$ is measured in the lungs at body temperature. When it warms up, the same amount of air takes up about $10\,\%$ more space, so less of the tank air is used per minute and the time is about $10\,\%$ longer.
-
-An additional note: at very high pressure air is no longer exactly an ideal gas, and the tank contains slightly less air than the model gives. This is not required in upper secondary school.
-The calculated time is a rough estimate, not a guarantee. A dive is planned so that some air is left in reserve, and the ascent is started by the reading of the gauge and not by the clock.
+- *The temperature stays the same.* The air in the tank is at the temperature of the water, but the consumption $20\,\text{l/min}$ is measured in the lungs at body temperature. When it warms up, the same amount of air takes up about $10\,\%$ more space, so less of the tank air is used per minute and the time is about $10\,\%$ longer. An additional note: at very high pressure air is no longer exactly an ideal gas, and the tank contains slightly less air than the model gives. This is not required in upper secondary school. The calculated time is a rough estimate, not a guarantee. A dive is planned so that some air is left in reserve, and the ascent is started by the reading of the gauge and not by the clock.
 
 ### Yleisiä virheitä
 - Only the hydrostatic pressure $\rho g h \approx 147\,\text{kPa}$ is used as the pressure, without the atmospheric pressure.

@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 92cd21a0acba0197
-
+CONTENT-HASH: ca261fda071e6e92
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: 'conducted' to 'transferred' in the formula heading lead and summary is consistent and also fits convection and radiation across a wall.
+batch delta review: decimal comma changed to decimal point in English numbers (tasks and worked example); no remaining {,} in the lesson files, so the notation is consistent; meaning, answers and solutions unaffected.

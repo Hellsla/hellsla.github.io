@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3cff09b0ecc53897
+CONTENT-HASH: e613916eb837e804
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-6-stage-herata-390 (Pohdinta; changed retrieval prompt sits in the closed box, layout intact). Wording judged from the diff: clear situation then question.

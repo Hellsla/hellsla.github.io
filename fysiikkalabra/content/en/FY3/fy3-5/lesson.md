@@ -147,7 +147,9 @@ A pump cylinder contains air. The piston is pushed down, so the surroundings do 
 
 <!-- vaihe -->
 
-**Given and find.** The air is the system. The surroundings do work on the system, so $W = +150\,\text{J}$. Heat is transferred out of the system, so $Q = -40\,\text{J}$. The quantity to find is the change in internal energy $\Delta U$.
+**Given and find.** The air is the system. The surroundings do work on the system, so $W = +150\,\text{J}$. Heat is transferred out of the system, so $Q = -40\,\text{J}$.
+
+The quantity to find is the change in internal energy $\Delta U$.
 
 <!-- vaihe -->
 

@@ -208,7 +208,9 @@ s_\text{otsa} &= (36{,}7 - 36{,}0) : 2 = 0{,}35\,\text{K} \\
 s_\text{suu} &= (37{,}1 - 36{,}9) : 2 = 0{,}1\,\text{K} 
 \end{aligned}$$
 $$\theta_\text{otsa,korj} = 37{,}6 - 0{,}6 = 37{,}0\,{}^\circ\text{C}$$
-**Vastaus:** $0{,}6\,\text{K}$. Vastauksessa on yksi merkitsevä numero, koska lukemat on annettu $0{,}1\,\text{K}$:n tarkkuudella. Ero on systemaattinen. Jokainen otsalukema ($36{,}0\ldots 36{,}7\,{}^\circ\text{C}$) on pienempi kuin jokainen suulukema ($36{,}9\ldots 37{,}1\,{}^\circ\text{C}$). Lisäksi ero $0{,}6\,\text{K}$ on suurempi kuin otsamittarin hajonta $0{,}35\,\text{K}$. Kun suu näyttää $37{,}6\,{}^\circ\text{C}$, otsamittari näyttäisi keskimäärin $37{,}0\,{}^\circ\text{C}$. Se on alle kuumerajan, joten kuume jäisi havaitsematta, vaikka henkilöllä on kuume.
+**Vastaus:** $0{,}6\,\text{K}$. Vastauksessa on yksi merkitsevä numero, koska lukemat on annettu $0{,}1\,\text{K}$:n tarkkuudella. Ero on systemaattinen. Jokainen otsalukema ($36{,}0\ldots 36{,}7\,{}^\circ\text{C}$) on pienempi kuin jokainen suulukema ($36{,}9\ldots 37{,}1\,{}^\circ\text{C}$).
+
+Lisäksi ero $0{,}6\,\text{K}$ on suurempi kuin otsamittarin hajonta $0{,}35\,\text{K}$. Kun suu näyttää $37{,}6\,{}^\circ\text{C}$, otsamittari näyttäisi keskimäärin $37{,}0\,{}^\circ\text{C}$. Se on alle kuumerajan, joten kuume jäisi havaitsematta, vaikka henkilöllä on kuume.
 **Järkevyys:** Korvamittarin keskiarvo on sama kuin viitteen, ja sen hajonta $0{,}2\,\text{K}$ on pieni. Korvamittari on siis tässä aineistossa luotettavin. Otsamittarin keskiarvo $36{,}4\,{}^\circ\text{C}$ on viitettä pienempi. Kaikki viisi otsalukemaa ovat viitteen pienintä lukemaa $36{,}9\,{}^\circ\text{C}$ pienempiä. Toistaminen pienentää keskiarvon satunnaista virhettä, mutta ei poista systemaattista virhettä. Siksi viidenkin mittauksen keskiarvo on kuumetta arvioitaessa liian pieni.
 
 ## fy3-3-L3-05
@@ -232,7 +234,11 @@ T_3 &= 293{,}15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 \frac{\Delta E_\text{k}}{E_\text{k,1}} &= \frac{333{,}15 - 293{,}15}{293{,}15} = 0{,}136
 \end{aligned}$$
 Liike-energia kasvaa siis $13{,}6\,\%$.
-**Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$). Vastauksessa on kolme merkitsevää numeroa, kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: lämpötilassa $60{,}0\,{}^\circ\text{C}$ kokonaispaine on $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$, eikä venttiili avaudu. Liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia. Ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä. Ylipaine on kokonaispaineen ja ilmanpaineen erotus.
+**Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$). Vastauksessa on kolme merkitsevää numeroa, kuten ilmanpaineessa $101\,\text{kPa}$.
+
+Muut tulokset: lämpötilassa $60{,}0\,{}^\circ\text{C}$ kokonaispaine on $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$, eikä venttiili avaudu. Liike-energia kasvaa $13{,}6\,\%$.
+
+Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia. Ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä. Ylipaine on kokonaispaineen ja ilmanpaineen erotus.
 **Järkevyys:** Kun venttiili avautuu, kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$. Kelvinlämpötilan on siis kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$. Se vastaa tulosta $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $$\begin{aligned} &293{,}15 \cdot 1{,}5 - 273{,}15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L1-09

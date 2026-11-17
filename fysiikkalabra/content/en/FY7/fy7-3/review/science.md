@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e070b14b313b08c9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 103e5d090d023a78
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Diff is only $\mu_0 = 4\pi\cdot10^{-7}$ → $\mu_0 \approx 4\pi\cdot10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ (2 lesson lines, 3 inquiry lines per language; word-level diff checked: no other change). Correct after the 2019 SI revision; the measured-$\mu_0$ results ($\mu_0 = Al : N$) stay as equalities, which is right. LaTeX intact in all three languages. Hash identical at start and end.
+batch delta review: retrieval prompt now asks where the needle points beside a wire with no current; exactly one correct option (along the Earth's field), distractor feedback right (copper not magnetic, Earth's field about 50 uT, dipole aligns with field); no Ennusta answer revealed.

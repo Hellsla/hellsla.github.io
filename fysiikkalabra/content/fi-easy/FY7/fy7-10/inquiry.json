@@ -22,21 +22,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: heijastuslaki",
-      "prompt": "Aalto osuu tasaiseen seinään. Aallon etenemissuunnan ja seinän normaalin välinen kulma on $30^\\circ$. Mihin suuntaan heijastunut aalto etenee?",
+      "title": "Kertaa: heijastuslaki järven pinnalla",
+      "prompt": "Tyyni järvi peilaa rannan puita. Puusta tuleva valo osuu veden pintaan. Valon etenemissuunnan ja pinnan normaalin välinen kulma on $30^\\circ$. Mihin suuntaan veden pinnasta heijastunut valo etenee?",
       "choices": [
         {
           "text": "Normaalin toiselle puolelle, $30^\\circ$:n kulmaan normaalista.",
           "correct": true,
-          "feedback": "Oikein. Heijastuskulma on yhtä suuri kuin tulokulma, kun molemmat mitataan normaalista (luku *Aalto kohtaa esteen tai raon*). Tässä luvussa sama laki pätee valoon."
+          "feedback": "Oikein. Heijastuskulma on yhtä suuri kuin tulokulma, kun molemmat mitataan normaalista (luku *Aalto kohtaa esteen tai raon*). Sama laki pätee aalloille ja valolle."
         },
         {
           "text": "Normaalin toiselle puolelle, $60^\\circ$:n kulmaan normaalista.",
-          "feedback": "Kulma $60^\\circ$ on tulevan aallon ja seinän pinnan välinen kulma. Heijastuslaki koskee normaalista mitattuja kulmia. Heijastuskulma on siis $30^\\circ$ (luku *Aalto kohtaa esteen tai raon*)."
+          "feedback": "Kulma $60^\\circ$ on tulevan valon ja veden pinnan välinen kulma. Heijastuslaki koskee normaalista mitattuja kulmia. Heijastuskulma on siis $30^\\circ$ (luku *Aalto kohtaa esteen tai raon*)."
         },
         {
-          "text": "Takaisin samaa reittiä, koska seinä pysäyttää aallon.",
-          "feedback": "Aalto palaa samaa reittiä vain, kun se tulee kohtisuoraan seinään. Vinosti tuleva aalto heijastuu normaalin toiselle puolelle yhtä suureen kulmaan (luku *Aalto kohtaa esteen tai raon*)."
+          "text": "Takaisin samaa reittiä, koska pinta pysäyttää valon.",
+          "feedback": "Valo palaa samaa reittiä vain, kun se tulee kohtisuoraan pintaan. Vinosti tuleva valo heijastuu normaalin toiselle puolelle yhtä suureen kulmaan (luku *Aalto kohtaa esteen tai raon*)."
         }
       ],
       "optional": true

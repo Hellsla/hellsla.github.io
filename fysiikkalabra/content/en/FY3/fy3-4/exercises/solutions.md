@@ -102,7 +102,9 @@
 ## fy3-4-L3-02
 **Given:** height of the hose above the lid $h = 4.0\,\text{m}$, area of the lid $A = 0.25\,\text{m}^2$, $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$; amount of water in the hose $0.40\,\textsf{l}$
 **Find:** the increase $\Delta F$ in the force on the lid in kilonewtons
-**Principle:** The water in the barrel and the water in the hose are one liquid at rest, so at the lid the pressure grows by the hydrostatic pressure $\rho g h$ of the column of water in the hose. The pressure depends only on the height, not on the amount of water, so a thin hose is enough. This increase in pressure acts on the whole area of the lid.
+**Principle:** The water in the barrel and the water in the hose are one liquid at rest, so at the lid the pressure grows by the hydrostatic pressure $\rho g h$ of the column of water in the hose.
+
+The pressure depends only on the height, not on the amount of water, so a thin hose is enough. This increase in pressure acts on the whole area of the lid.
 **Formula:** $\Delta p = \rho g h$ and $\Delta F = \Delta p \, A$, so $\Delta F = \rho g h A$
 **Conversions:** All quantities are in SI units. At the end $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 4.0\,\text{m} = 39\,240\,\text{Pa}$; $\Delta F = 39\,240\,\text{Pa} \cdot 0.25\,\text{m}^2 = 9810\,\text{N} = 9.81\,\text{kN}$
@@ -121,8 +123,14 @@
 
 ## fy3-4-L1-06
 **Find:** why a nail goes into wood point first but not head first, when the force of the thumb is the same.
-**Principle:** Pressure is the ratio of the force perpendicular to a surface to the area of the surface, $p = F/A$. The nail is in equilibrium between the thumb and the wood, so the force is equally large at the point, at the head and at the thumb. The pressure therefore depends only on how small an area the same force is concentrated on.
-**Model answer:** The area of the point is small, so the same force causes a greater pressure at the point, and the fibres of the wood give way. The area of the head is many times greater, so the pressure there is small and the nail does not penetrate the wood. The nail does not amplify the force: the force is equally large in both cases, but the pressure is not. The weight of the nail itself does not matter, because it is small compared with the force of the thumb.
+**Principle:** Pressure is the ratio of the force perpendicular to a surface to the area of the surface, $p = F/A$.
+
+The nail is in equilibrium between the thumb and the wood, so the force is equally large at the point, at the head and at the thumb. The pressure therefore depends only on how small an area the same force is concentrated on.
+**Model answer:** The area of the point is small, so the same force causes a greater pressure at the point, and the fibres of the wood give way.
+
+The area of the head is many times greater, so the pressure there is small and the nail does not penetrate the wood. The nail does not amplify the force: the force is equally large in both cases, but the pressure is not.
+
+The weight of the nail itself does not matter, because it is small compared with the force of the thumb.
 
 ## fy3-4-L1-07
 **Given:** depth $h = 40\,\text{m}$, density of Baltic Sea water $\rho = 1005\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
@@ -137,12 +145,16 @@
 ## fy3-4-L1-08
 **Find:** what the error is in the claim that at double the depth the total pressure is also double.
 **Principle:** In a liquid the total pressure is $p = p_0 + \rho g h$. The hydrostatic part $\rho g h$ is directly proportional to the depth, but the pressure $p_0$ at the surface is a constant term, which is the same at every depth.
-**Model answer:** Only the share of the water doubles, because the atmospheric pressure is the same at both depths. For example, with atmospheric pressure $101\,\text{kPa}$, the pressure at a depth of $5\,\text{m}$ is $101\,\text{kPa} + 49\,\text{kPa} = 150\,\text{kPa}$ and at a depth of $10\,\text{m}$ it is $101\,\text{kPa} + 98\,\text{kPa} = 199\,\text{kPa}$, that is, only about $1.3$ times as great. The pressure grows with depth, but not with the square of the depth, and the density of water is the same at every depth.
+**Model answer:** Only the share of the water doubles, because the atmospheric pressure is the same at both depths. For example, with atmospheric pressure $101\,\text{kPa}$, the pressure at a depth of $5\,\text{m}$ is $101\,\text{kPa} + 49\,\text{kPa} = 150\,\text{kPa}$ and at a depth of $10\,\text{m}$ it is $101\,\text{kPa} + 98\,\text{kPa} = 199\,\text{kPa}$, that is, only about $1.3$ times as great.
+
+The pressure grows with depth, but not with the square of the depth, and the density of water is the same at every depth.
 
 ## fy3-4-L2-05
 **Given:** six points $(h, p)$ from the table; slope of the fitted line $k = 9.78\,\tfrac{\text{kPa}}{\text{m}}$; the line passes through the mean point $(h_{\text{mean}}, p_{\text{mean}})$; $g = 9.81\,\text{m/s}^2$
 **Find:** a) the density $\rho$ of the water; b) the atmospheric pressure $p_0$ in kilopascals
-**Principle:** The pressure in a liquid is $p = p_0 + \rho g h$, so the graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$. In real series of measurements the data points are usually not exactly on one line because of measurement uncertainty, so the fitted line passes through the middle of the set of points, and therefore through the mean point.
+**Principle:** The pressure in a liquid is $p = p_0 + \rho g h$, so the graph $(h, p)$ is a straight line whose slope is $\rho g$ and whose constant term is $p_0$.
+
+In real series of measurements the data points are usually not exactly on one line because of measurement uncertainty, so the fitted line passes through the middle of the set of points, and therefore through the mean point.
 **Reading the table:** The constant term is the pressure of the line at $h = 0$, and it is obtained from the mean point. The sum of the depths is $30.0\,\text{m}$ and the sum of the pressures $891.8\,\text{kPa}$.
 **Formula:** a) $k = \rho g$, so $\rho = \dfrac{k}{g}$. b) $p_{\text{mean}} = p_0 + k h_{\text{mean}}$, so $p_0 = p_{\text{mean}} - k h_{\text{mean}}$
 **Conversions:** $k = 9.78\,\text{kPa/m} = 9780\,\text{Pa/m} = 9780\,\text{N/m}^3$, so that the density comes in the unit $\text{kg/m}^3$.
@@ -171,7 +183,9 @@ $$\begin{aligned} p_0 &= 148.63\,\text{kPa} - 9.78\,\tfrac{\text{kPa}}{\text{m}}
 **Formula:** $\Delta h_{\text{mean}} = \dfrac{\text{sum}}{3}$; $\Delta p = \rho g \Delta h_{\text{mean}}$; $p = p_0 + \Delta p$
 **Conversions:** Height from centimetres to metres: $14.5\,\text{cm} = 14.5 : 100\,\text{m} = 0.145\,\text{m}$. At the end $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Substitution:** a) The sum is $$\begin{aligned} &14.2\,\text{cm} + 14.8\,\text{cm} + 14.5\,\text{cm} \\ &= 43.5\,\text{cm} \end{aligned}$$, so $\Delta h_{\text{mean}} = 43.5\,\text{cm} : 3 = 14.5\,\text{cm}$. b) $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0.145\,\text{m} = 1422.45\,\text{Pa} = 1.42\,\text{kPa}$. c) $p = 101\,\text{kPa} + 1.42\,\text{kPa} = 102.42\,\text{kPa}$
-**Answer:** b) $1.42\,\text{kPa}$, three significant figures like the height difference $14.5\,\text{cm}$. In part c) the total pressure is $102\,\text{kPa}$, because the atmospheric pressure $101\,\text{kPa}$ is given to three figures. The surface on the gas side is lower because the pressure of the gas is greater than atmospheric pressure and it pushes the liquid down in its own arm, until the water column of the height difference balances the gauge pressure.
+**Answer:** b) $1.42\,\text{kPa}$, three significant figures like the height difference $14.5\,\text{cm}$. In part c) the total pressure is $102\,\text{kPa}$, because the atmospheric pressure $101\,\text{kPa}$ is given to three figures.
+
+The surface on the gas side is lower because the pressure of the gas is greater than atmospheric pressure and it pushes the liquid down in its own arm, until the water column of the height difference balances the gauge pressure.
 **Reasonableness:** A water column of $10\,\text{cm}$ corresponds to about $1\,\text{kPa}$, so $14.5\,\text{cm}$ corresponds to about $1.4\,\text{kPa}$. The gauge pressure is only about $1.4\,\%$ of atmospheric pressure ($1.42/101 = 0.014$), which fits a small height difference.
 
 ## fy3-4-L3-04
@@ -186,13 +200,17 @@ $$\begin{aligned} p_0 &= 148.63\,\text{kPa} - 9.78\,\tfrac{\text{kPa}}{\text{m}}
 $$\begin{aligned} h' &= \dfrac{196\,082\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}} \\ &= 19.988\,\text{m} \end{aligned}$$
 
 so the error in depth is $20.0\,\text{m} - 19.988\,\text{m} = 0.012\,\text{m} = 1.2\,\text{cm}$. The uncertainty of the gauge, $0.5\,\text{kPa}$, corresponds to a depth of $500\,\text{Pa} : 9810\,\text{Pa/m} = 0.051\,\text{m} = 5.1\,\text{cm}$.
-**Answer:** $\delta p = 0.12\,\text{kPa}$, two significant figures like the difference in density $1000 - 998.2 = 1.8\,\text{kg/m}^3$. The difference in density between the layers therefore shows up in the pressure by only about $0.06\,\%$. It is smaller than the uncertainty of the gauge, $0.5\,\text{kPa}$, and the error in depth, $1.2\,\text{cm}$, is smaller than the $5.1\,\text{cm}$ corresponding to the uncertainty, so the difference is not visible in the reading of the gauge.
+**Answer:** $\delta p = 0.12\,\text{kPa}$, two significant figures like the difference in density $1000 - 998.2 = 1.8\,\text{kg/m}^3$. The difference in density between the layers therefore shows up in the pressure by only about $0.06\,\%$.
+
+It is smaller than the uncertainty of the gauge, $0.5\,\text{kPa}$, and the error in depth, $1.2\,\text{cm}$, is smaller than the $5.1\,\text{cm}$ corresponding to the uncertainty, so the difference is not visible in the reading of the gauge.
 **Reasonableness:** The density of water differs from $1000\,\text{kg/m}^3$ most in the top layer, by less than $0.2\,\%$ (the ratio $1.8 : 1000 = 0.0018$). The deviation concerns the top $15\,\text{m}$ of the water column, and in the middle layer it is only $0.03\,\%$, so the change in the total pressure is even smaller: the calculated difference is about $0.06\,\%$.
 
 ## fy3-4-L3-05
 **Given:** height of the wall $H = 20.0\,\text{m}$ in four parts, each of height $5.0\,\text{m}$; width of the strip $w = 1.0\,\text{m}$; $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** a) the pressures at the edges of the parts; b) the forces on the top and bottom parts, $F_1$ and $F_4$, in kilonewtons; c) the sum of the forces and a check; d) why the wall is thicker at the bottom
-**Principle:** The water presses on the wall perpendicular to its surface, and the pressure is $\Delta p = \rho g h$. Atmospheric pressure acts on the wall on both sides and cancels itself, so only the gauge pressure is calculated. Because the pressure is a linear function of depth, the mean pressure of a part is the mean of the pressures at its top and bottom edges, and the force on the part is $F = p_{\text{mean}} A$.
+**Principle:** The water presses on the wall perpendicular to its surface, and the pressure is $\Delta p = \rho g h$. Atmospheric pressure acts on the wall on both sides and cancels itself, so only the gauge pressure is calculated.
+
+Because the pressure is a linear function of depth, the mean pressure of a part is the mean of the pressures at its top and bottom edges, and the force on the part is $F = p_{\text{mean}} A$.
 **Reading the table:** The depths $h_1$ and $h_2$ of the top and bottom edges of each part are read from the table. The height of each part is $h_2 - h_1 = 5.0\,\text{m}$, so the area of a part is $A = 5.0\,\text{m} \cdot 1.0\,\text{m} = 5.0\,\text{m}^2$.
 **Formula:** a) $\Delta p = \rho g h$. b) $p_{\text{mean}} = \dfrac{\rho g h_1 + \rho g h_2}{2}$ and $F = p_{\text{mean}} A$. c) the whole strip: $F_{\text{tot}} = \dfrac{0 + \rho g H}{2} \cdot H w$. d) compare the forces $F_4$ and $F_1$
 **Conversions:** All quantities are in SI units, so the pressures come in pascals and the forces in newtons. At the end $1\,\text{kN} = 1000\,\text{N}$.
@@ -201,7 +219,9 @@ so the error in depth is $20.0\,\text{m} - 19.988\,\text{m} = 0.012\,\text{m} = 
 $$\begin{aligned} F_4 &= 171.675\,\text{kPa} \cdot 5.0\,\text{m}^2 \\ &= 858.375\,\text{kN} \end{aligned}$$
 
 c) In the same way, parts 2 and 3 give $367.9\,\text{kN}$ and $613.1\,\text{kN}$. The sum is $$\begin{aligned} &122.6\,\text{kN} + 367.9\,\text{kN} \\ &+ 613.1\,\text{kN} + 858.4\,\text{kN} \\ &= 1962\,\text{kN} \end{aligned}$$. Check for the whole strip: $98.1\,\text{kPa} \cdot 20.0\,\text{m}^2 = 1962\,\text{kN}$. d) The ratio of the forces is $F_4 : F_1 = 858.4\,\text{kN} : 122.6\,\text{kN} = 7.0$.
-**Answer:** $F_4 = 858\,\text{kN}$, three significant figures, because the depths $15.0\,\text{m}$ and $20.0\,\text{m}$ are given to three figures and the width of the strip is exactly one metre. The force on the bottom part is seven times the force on the top part ($F_1 = 123\,\text{kN}$), because the pressure grows with depth. That is why the wall is made thicker at the bottom: the lower part has to withstand a much greater force than the upper part.
+**Answer:** $F_4 = 858\,\text{kN}$, three significant figures, because the depths $15.0\,\text{m}$ and $20.0\,\text{m}$ are given to three figures and the width of the strip is exactly one metre.
+
+The force on the bottom part is seven times the force on the top part ($F_1 = 123\,\text{kN}$), because the pressure grows with depth. That is why the wall is made thicker at the bottom: the lower part has to withstand a much greater force than the upper part.
 **Reasonableness:** The forces on the parts grow in equal steps in the ratio $1 : 3 : 5 : 7$ ($122.6 \cdot 3 \approx 367.9$, $122.6 \cdot 5 \approx 613.1$, $122.6 \cdot 7 \approx 858.4$), which fits a linearly growing pressure.
 
 ## fy3-4-L1-09
@@ -216,7 +236,9 @@ Calculate the pressure:
 
 $$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9.81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
 
-The number $9.81 \cdot 10^{6}$ is closer to $10^{7}$ than to $10^{6}$, so the order of magnitude is $10^{7}\,\text{Pa}$. The answer $10^{5}\,\text{Pa}$ is the order of magnitude of atmospheric pressure and does not take the depth into account. The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the answer $10^{8}\,\text{Pa}$ to the depth $10\,\text{km}$. Estimate: in water the pressure grows by about $10\,\text{kPa}$ per metre, so $1000\,\text{m}$ gives $10^{7}\,\text{Pa}$.
+The number $9.81 \cdot 10^{6}$ is closer to $10^{7}$ than to $10^{6}$, so the order of magnitude is $10^{7}\,\text{Pa}$. The answer $10^{5}\,\text{Pa}$ is the order of magnitude of atmospheric pressure and does not take the depth into account.
+
+The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the answer $10^{8}\,\text{Pa}$ to the depth $10\,\text{km}$. Estimate: in water the pressure grows by about $10\,\text{kPa}$ per metre, so $1000\,\text{m}$ gives $10^{7}\,\text{Pa}$.
 
 ## fy3-4-L1-10
 **Given:** $h = 25.0\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Nesteiden tiheyksiä*, sea water) $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$

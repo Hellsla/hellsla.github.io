@@ -48,7 +48,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Vuo pienenee. Induktiovirran kenttä pitää vuon ennallaan, ja rengas vetää magneettia puoleensa.",
+      "answer": "Vuo pienenee. Induktiovirran kenttä yrittää pitää vuon ennallaan, ja rengas vetää magneettia puoleensa.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -61,7 +61,7 @@
           "feedback": "Kun magneetti menee kauemmas, renkaan läpi kulkeva vuo pienenee. Se ei kasva. Vuo kasvaa vain, kun magneetti tulee lähemmäs rengasta. Silloin rengas todella hylkii magneettia."
         },
         {
-          "text": "Vuo pienenee. Induktiovirran kenttä pitää vuon ennallaan, ja rengas vetää magneettia puoleensa.",
+          "text": "Vuo pienenee. Induktiovirran kenttä yrittää pitää vuon ennallaan, ja rengas vetää magneettia puoleensa.",
           "correct": true,
           "feedback": "Oikein: vuon pienenemistä vastustetaan. Siksi induktiovirran kenttä on renkaan keskellä samansuuntainen kuin magneetin kenttä. Renkaan magneetin puoleiselle sivulle syntyy S-napa. Se vetää N-napaa puoleensa ja vastustaa magneetin loittonemista."
         },

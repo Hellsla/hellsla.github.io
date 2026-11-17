@@ -36,7 +36,9 @@
 **Conversions:** No conversions are needed: the pressure is in pascals, the volume in cubic metres and the amount of substance in moles, so the result comes out directly in kelvins.
 **Substitution:** $T = \dfrac{1.13 \cdot 10^5\,\text{Pa} \cdot 0.200\,\text{m}^3}{8.40\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 323.8\,\text{K}$
 **Answer:** $324\,\text{K}$, three significant figures. All the data ($0.200\,\text{m}^3$, $8.40\,\text{mol}$, $1.13 \cdot 10^5\,\text{Pa}$ and $R = 8.31$) are given with three digits.
-**Reasonableness:** In degrees Celsius the result is $323.8 - 273.15 \approx 51\,{}^\circ\text{C}$, which is a possible temperature for a dark barrel in the summer sun. With the same amount of substance and volume, a pressure of $101\,\text{kPa}$ would correspond to a temperature of $16\,{}^\circ\text{C}$, so the pressure has risen by about $12\,\%$ as the temperature rose. The pressure grows with the temperature, as it should.
+**Reasonableness:** In degrees Celsius the result is $323.8 - 273.15 \approx 51\,{}^\circ\text{C}$, which is a possible temperature for a dark barrel in the summer sun.
+
+With the same amount of substance and volume, a pressure of $101\,\text{kPa}$ would correspond to a temperature of $16\,{}^\circ\text{C}$, so the pressure has risen by about $12\,\%$ as the temperature rose. The pressure grows with the temperature, as it should.
 
 ## fy3-10-L1-05
 **Given:** carbon dioxide, $m = 425\,\text{g}$, $M = 44\,\text{g/mol}$
@@ -56,12 +58,20 @@
 **Conversions:** $V = 10.0\,\textsf{l} = 0.0100\,\text{m}^3$, $M = 32.0\,\text{g/mol} = 0.0320\,\text{kg/mol}$ and $T = (15 + 273.15)\,\text{K} = 288.15\,\text{K}$. Finally $1\,\text{bar} = 10^5\,\text{Pa}$.
 **Substitution:** $n = \dfrac{2.40\,\text{kg}}{0.0320\,\text{kg/mol}} = 75.0\,\text{mol}$. $p = \dfrac{75.0\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288.15\,\text{K}}{0.0100\,\text{m}^3} = 1.796 \cdot 10^7\,\text{Pa} = 179.6\,\text{bar}$
 **Answer:** $180\,\text{bar}$, three significant figures. All the data ($10.0\,\textsf{l}$, $2.40\,\text{kg}$, $32.0\,\text{g/mol}$ and $R = 8.31$) are given with three digits, and the $288\,\text{K}$ obtained from the whole degrees $15\,{}^\circ\text{C}$ also has three digits.
-**Reasonableness:** The pressure of a full oxygen cylinder is typically about $200\,\text{bar}$, so an almost full cylinder is believable. Order of magnitude: a mole of gas takes up about $24\,\textsf{l}$ at normal pressure, so $75\,\text{mol}$ would take up about $1800\,\textsf{l}$, and compressed into $10\,\textsf{l}$ the pressure is about $1800 / 10 \approx 180$ times atmospheric pressure. At such a high pressure a real gas differs from an ideal gas by a few percent, but the problem asked for the ideal gas value.
+**Reasonableness:** The pressure of a full oxygen cylinder is typically about $200\,\text{bar}$, so an almost full cylinder is believable.
+
+Order of magnitude: a mole of gas takes up about $24\,\textsf{l}$ at normal pressure, so $75\,\text{mol}$ would take up about $1800\,\textsf{l}$, and compressed into $10\,\textsf{l}$ the pressure is about $1800 / 10 \approx 180$ times atmospheric pressure.
+
+At such a high pressure a real gas differs from an ideal gas by a few percent, but the problem asked for the ideal gas value.
 
 ## fy3-10-L2-02
 **Given:** unknown gas, $V = 1.00\,\textsf{l}$, increase in mass $m = 1.15\,\text{g}$, $p = 101\,\text{kPa}$, $\theta = 22\,{}^\circ\text{C}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** molar mass $M$ and the type of gas
-**Principle:** The flask was a vacuum, so the increase in mass is the mass of the gas. The equation of state gives the amount of substance from the pressure, the volume and the temperature, and the molar mass is the mass divided by the amount of substance. The equation of state does not contain the type of gas, so the type is identified only from the molar mass.
+**Principle:** The flask was a vacuum, so the increase in mass is the mass of the gas.
+
+The equation of state gives the amount of substance from the pressure, the volume and the temperature, and the molar mass is the mass divided by the amount of substance.
+
+The equation of state does not contain the type of gas, so the type is identified only from the molar mass.
 **Formula:** $pV = nRT$ and $n = \dfrac{m}{M}$, so $\dfrac{pV}{RT} = \dfrac{m}{M}$ and $M = \dfrac{mRT}{pV}$
 **Conversions:** $V = 1.00\,\textsf{l} = 0.00100\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ and $T = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$. The mass is left in grams, so the result is in $\text{g/mol}$.
 **Substitution:** $M = \dfrac{1.15\,\text{g} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 295.15\,\text{K}}{101\,000\,\text{Pa} \cdot 0.00100\,\text{m}^3} = 27.93\,\tfrac{\text{g}}{\text{mol}}$
@@ -76,7 +86,9 @@
 **Conversions:** $T_1 = (30 + 273.15)\,\text{K} = 303.15\,\text{K}$. The pressures and volumes appear as ratios, so they cancel when they are in the same units: $4.60\,\text{MPa} = 4600\,\text{kPa}$ and the litres stay as litres.
 **Substitution:** $T_2 = 303.15\,\text{K} \cdot \dfrac{4600\,\text{kPa} \cdot 0.0300\,\textsf{l}}{101\,\text{kPa} \cdot 0.500\,\textsf{l}} = 828.4\,\text{K}$. $\theta_2 = 828.4 - 273.15 = 555.3\,{}^\circ\text{C}$
 **Answer:** $555\,{}^\circ\text{C}$, three significant figures. All the data ($0.500\,\textsf{l}$, $101\,\text{kPa}$, $0.0300\,\textsf{l}$, $4.60\,\text{MPa}$ and $303\,\text{K}$ from the whole degrees $30\,{}^\circ\text{C}$) have three digits, and subtracting $273.15\,\text{K}$ from the temperature $828\,\text{K}$ keeps the units. The fuel ignites, because $555\,{}^\circ\text{C}$ is clearly above $250\,{}^\circ\text{C}$.
-**Reasonableness:** The volume is about $17$ times smaller and the pressure about $46$ times greater ($0.500/0.0300 \approx 16.7$ and $4600/101 \approx 45.5$), so the product $pV$ and with it the temperature in kelvins grow by a factor of about $45.5 / 16.7 \approx 2.73$: $303\,\text{K} \cdot 2.73 \approx 828\,\text{K}$. The result agrees, and the temperature rises when a gas is compressed, so a diesel engine does not need a spark plug.
+**Reasonableness:** The volume is about $17$ times smaller and the pressure about $46$ times greater ($0.500/0.0300 \approx 16.7$ and $4600/101 \approx 45.5$), so the product $pV$ and with it the temperature in kelvins grow by a factor of about $45.5 / 16.7 \approx 2.73$: $303\,\text{K} \cdot 2.73 \approx 828\,\text{K}$.
+
+The result agrees, and the temperature rises when a gas is compressed, so a diesel engine does not need a spark plug.
 
 ## fy3-10-L2-04
 **Given:** the volume of each container $V = 2.00\,\textsf{l}$; the measurement points of the graph at grid crossings, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
@@ -91,12 +103,14 @@
 
 ## fy3-10-L2-08
 **Find:** which row of the student's calculation is wrong.
-**Principle:** In the equation of state $pV = nRT$ the units must match the unit of $R$: pressure in pascals and volume in cubic metres (or kilopascals and litres), temperature always in kelvins. When the result is in kelvins, degrees Celsius are obtained by subtracting $273$, because $273$ is added to a Celsius temperature when converting it to kelvins. The calculation can be checked row by row: unit conversions, solving the equation, substitution and finally the conversion to degrees Celsius.
-**Model answer:** Row 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 0.00200\,\text{m}^3$ are correct.
-Row 2: $T = \dfrac{pV}{nR}$ is correct.
-Row 3: the numerator $100\,000 \cdot 0.00200 = 200$ and the denominator $0.0800 \cdot 8.31 = 0.665$, so $T = 200 : 0.665 \approx 301\,\text{K}$ is correct.
-Row 4 is wrong, because $273$ was added instead of subtracted. The correct value is $\theta = 301 - 273 = 28\,{}^\circ\text{C}$.
-Check: $574\,{}^\circ\text{C}$ would be a hot oven, but $28\,{}^\circ\text{C}$ fits room-temperature air. The correct answer is row 4.
+**Principle:** In the equation of state $pV = nRT$ the units must match the unit of $R$: pressure in pascals and volume in cubic metres (or kilopascals and litres), temperature always in kelvins.
+
+When the result is in kelvins, degrees Celsius are obtained by subtracting $273$, because $273$ is added to a Celsius temperature when converting it to kelvins.
+
+The calculation can be checked row by row: unit conversions, solving the equation, substitution and finally the conversion to degrees Celsius.
+**Model answer:** Row 1: $100\,\text{kPa} = 100\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 0.00200\,\text{m}^3$ are correct. Row 2: $T = \dfrac{pV}{nR}$ is correct. Row 3: the numerator $100\,000 \cdot 0.00200 = 200$ and the denominator $0.0800 \cdot 8.31 = 0.665$, so $T = 200 : 0.665 \approx 301\,\text{K}$ is correct. Row 4 is wrong, because $273$ was added instead of subtracted.
+
+The correct value is $\theta = 301 - 273 = 28\,{}^\circ\text{C}$. Check: $574\,{}^\circ\text{C}$ would be a hot oven, but $28\,{}^\circ\text{C}$ fits room-temperature air. The correct answer is row 4.
 
 ## fy3-10-L3-01
 **Given:** air in the lungs, $V = 0.55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6.022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
@@ -114,7 +128,9 @@ $$N = \dfrac{3.345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}}{2577\,\tfrac{\te
 ## fy3-10-L3-02
 **Given:** insulating glass unit, $A = 1.20\,\text{m}^2$, difference in mass $\Delta m = 6.0\,\text{g}$, $p = 101\,\text{kPa}$, $\theta = 20\,{}^\circ\text{C}$, $M_\text{Ar} = 40\,\text{g/mol}$, $M_\text{air} = 29\,\text{g/mol}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** thickness $d$ of the gas layer in millimetres
-**Principle:** The gap is filled at the same pressure and temperature, so the volume is the same and there is the same number of moles of gas with either filling. The difference in mass is due only to the greater molar mass of argon, so you can get the amount of substance from the difference in mass and the difference in molar masses.
+**Principle:** The gap is filled at the same pressure and temperature, so the volume is the same and there is the same number of moles of gas with either filling.
+
+The difference in mass is due only to the greater molar mass of argon, so you can get the amount of substance from the difference in mass and the difference in molar masses.
 **Formula:** $\Delta m = n (M_\text{Ar} - M_\text{air})$, so $n = \dfrac{\Delta m}{M_\text{Ar} - M_\text{air}}$. From the equation of state $V = \dfrac{nRT}{p}$ and $V = Ad$, so $d = \dfrac{nRT}{pA} = \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{air})}$
 **Conversions:** $T = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$ and $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. The mass and the molar masses are in grams, so $n$ comes out directly in moles. Finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $n = \dfrac{6.0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0.5455\,\text{mol}$.
@@ -129,17 +145,27 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 ## fy3-10-L3-03
 **Given:** compressed air tank, $V = 200.0\,\textsf{l}$, gauge pressure before $10.0\,\text{bar}$ and after $7.0\,\text{bar}$, $\theta = 18\,{}^\circ\text{C}$, $M = 29\,\text{g/mol}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** mass $\Delta m$ of the air that leaked out, in kilograms
-**Principle:** The volume and the temperature of the tank stay the same, so the drop in pressure is due only to the decrease in the amount of substance: $\Delta p V = \Delta n RT$. The reading of the gauge is the total pressure minus atmospheric pressure, and atmospheric pressure is the same at the start and at the end. It cancels in the pressure difference, so the readings can be used as they are.
+**Principle:** The volume and the temperature of the tank stay the same, so the drop in pressure is due only to the decrease in the amount of substance: $\Delta p V = \Delta n RT$.
+
+The reading of the gauge is the total pressure minus atmospheric pressure, and atmospheric pressure is the same at the start and at the end. It cancels in the pressure difference, so the readings can be used as they are.
 **Formula:** $\Delta n = \dfrac{\Delta p\,V}{RT}$ and $\Delta m = \Delta n\,M$, so $\Delta m = \dfrac{\Delta p\,V M}{RT}$
 **Conversions:** $\Delta p = 10.0\,\text{bar} - 7.0\,\text{bar} = 3.0\,\text{bar} = 3.0 \cdot 10^5\,\text{Pa}$, $V = 200.0\,\textsf{l} = 0.2000\,\text{m}^3$, $M = 0.029\,\text{kg/mol}$ and $T = (18 + 273.15)\,\text{K} = 291.15\,\text{K}$.
 **Substitution:** $\Delta n = \dfrac{3.0 \cdot 10^5\,\text{Pa} \cdot 0.2000\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 291.15\,\text{K}} = 24.80\,\text{mol}$. $\Delta m = 24.80\,\text{mol} \cdot 0.029\,\tfrac{\text{kg}}{\text{mol}} = 0.7192\,\text{kg}$
 **Answer:** $0.72\,\text{kg}$, two significant figures. The limiting datum is the pressure difference $10.0\,\text{bar} - 7.0\,\text{bar} = 3.0\,\text{bar}$: the difference of the readings has the decimals of the less precise reading, so it has two digits. The volume $200.0\,\textsf{l}$, the molar mass $29\,\text{g/mol}$ and $291\,\text{K}$ have at least two digits and do not limit the result.
-**Reasonableness:** At the start the tank contained, at a total pressure of $11.0\,\text{bar}$, about $2.6\,\text{kg}$ of air, so the leaked $0.72\,\text{kg}$ is about $27\,\%$. The gauge pressure fell $10.0 \to 7.0\,\text{bar}$, which is $30\,\%$ of the gauge pressure and a little more than $27\,\%$ of the total pressure, because atmospheric pressure does not leak out. The amount of air that leaked was $24.8\,\text{mol}$, and that is a sensible amount for a drop in pressure of three bars.
+**Reasonableness:** At the start the tank contained, at a total pressure of $11.0\,\text{bar}$, about $2.6\,\text{kg}$ of air, so the leaked $0.72\,\text{kg}$ is about $27\,\%$.
+
+The gauge pressure fell $10.0 \to 7.0\,\text{bar}$, which is $30\,\%$ of the gauge pressure and a little more than $27\,\%$ of the total pressure, because atmospheric pressure does not leak out.
+
+The amount of air that leaked was $24.8\,\text{mol}$, and that is a sensible amount for a drop in pressure of three bars.
 
 ## fy3-10-L1-06
 **Find:** what the amount of substance $n$ describes in the equation of state $pV = nRT$.
 **Principle:** The mole is a unit of the number of particles, and one mole always contains $6.022 \cdot 10^{23}$ particles, whatever the substance. The equation of state links the pressure, volume and temperature of a gas to its number of particles.
-**Model answer:** The amount of substance gives the number of particles of the gas in moles, $n = N/N_\text{A}$. It is not the mass of the gas: the mass is $m = nM$, and the molar mass $M$ does not appear in the equation of state. Nor is it the density or the speed of the particles, because the volume $V$ and the temperature $T$ are quantities of their own in the equation.
+**Model answer:** The amount of substance gives the number of particles of the gas in moles, $n = N/N_\text{A}$.
+
+It is not the mass of the gas: the mass is $m = nM$, and the molar mass $M$ does not appear in the equation of state.
+
+Nor is it the density or the speed of the particles, because the volume $V$ and the temperature $T$ are quantities of their own in the equation.
 
 ## fy3-10-L1-07
 **Given:** helium, $V_1 = 2.50\,\textsf{l}$, $\theta_1 = 21\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$; $\theta_2 = -9\,{}^\circ\text{C}$, $p_2 = 98\,\text{kPa}$
@@ -163,14 +189,22 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Formula:** $n_1 = \dfrac{p_1V}{RT_1}$ and $n_2 = \dfrac{p_2V}{RT_2}$, so $\dfrac{n_2}{n_1} = \dfrac{p_2 T_1}{p_1 T_2}$ and the leaked share is $1 - \dfrac{n_2}{n_1}$
 **Conversions:** $T_1 = (5.0 + 273.15)\,\text{K} = 278.15\,\text{K}$ and $T_2 = (26.0 + 273.15)\,\text{K} = 299.15\,\text{K}$. The pressures are in the same unit, so they cancel.
 **Substitution:** a) Without a leak the amount of substance and the volume do not change, so $p_2' = p_1 \dfrac{T_2}{T_1} = 300\,\text{kPa} \cdot \dfrac{299.15\,\text{K}}{278.15\,\text{K}} = 322.6\,\text{kPa}$. b) $\dfrac{n_2}{n_1} = \dfrac{305\,\text{kPa} \cdot 278.15\,\text{K}}{300\,\text{kPa} \cdot 299.15\,\text{K}} = 0.9453$, so the leaked share is $1 - 0.9453 = 0.0547$
-**Answer:** $5.5\,\%$, two significant figures: the share is the difference $1 - 0.945$, so the third digit of the pressures decides the second digit. In a tyre that does not leak the pressure after the drive would be $323\,\text{kPa}$, but the measured pressure is $305\,\text{kPa}$. The rise in pressure $300 \to 305\,\text{kPa}$ does not alone show a leak, because the rise in temperature would raise the pressure even without a leak.
+**Answer:** $5.5\,\%$, two significant figures: the share is the difference $1 - 0.945$, so the third digit of the pressures decides the second digit.
+
+In a tyre that does not leak the pressure after the drive would be $323\,\text{kPa}$, but the measured pressure is $305\,\text{kPa}$.
+
+The rise in pressure $300 \to 305\,\text{kPa}$ does not alone show a leak, because the rise in temperature would raise the pressure even without a leak.
 **Reasonableness:** The measured pressure is $305 : 322.6 \approx 0.945$ of the pressure of a tyre that does not leak, so about $94.5\,\%$ of the air is left and the leaked share is about $5.5\,\%$. The temperature rose by about $7.5\,\%$ ($278 \to 299\,\text{K}$), but the pressure by only $1.7\,\%$, so some air must have escaped.
 
 ## fy3-10-L2-06
 **Given:** $p = 101\,\text{kPa}$ constant, amount of air constant; $(T, V)$ points in the table; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** amount of substance $n$ in millimoles
 **Principle:** The pressure and the amount of substance are constant, so the equation of state gives $V = \dfrac{nR}{p}\,T$. The volume is directly proportional to the temperature in kelvins, and the slope of the line in the $(T, V)$ graph is $\dfrac{nR}{p}$.
-**Reading the graph:** Plot the points and draw a line that passes between them. The least-squares line is $V = 0.408\,\tfrac{\text{cm}^3}{\text{K}} \cdot T + 1.1\,\text{cm}^3$, and your own line can be compared with it. Read two points far apart from the line: the values of the line are $(280\,\text{K};\ 115.4\,\text{cm}^3)$ and $(360\,\text{K};\ 148.0\,\text{cm}^3)$, not the table values $115.0\,\text{cm}^3$ and $147.6\,\text{cm}^3$. The slope is $k = \dfrac{(148.0 - 115.4)\,\text{cm}^3}{(360 - 280)\,\text{K}} = 0.4075\,\tfrac{\text{cm}^3}{\text{K}}$. The constant term of the line, $1.1\,\text{cm}^3$, is small compared with the volumes $115$–$148\,\text{cm}^3$, so the line passes almost through the origin.
+**Reading the graph:** Plot the points and draw a line that passes between them. The least-squares line is $V = 0.408\,\tfrac{\text{cm}^3}{\text{K}} \cdot T + 1.1\,\text{cm}^3$, and your own line can be compared with it.
+
+Read two points far apart from the line: the values of the line are $(280\,\text{K};\ 115.4\,\text{cm}^3)$ and $(360\,\text{K};\ 148.0\,\text{cm}^3)$, not the table values $115.0\,\text{cm}^3$ and $147.6\,\text{cm}^3$. The slope is $k = \dfrac{(148.0 - 115.4)\,\text{cm}^3}{(360 - 280)\,\text{K}} = 0.4075\,\tfrac{\text{cm}^3}{\text{K}}$.
+
+The constant term of the line, $1.1\,\text{cm}^3$, is small compared with the volumes $115$–$148\,\text{cm}^3$, so the line passes almost through the origin.
 **Formula:** $k = \dfrac{nR}{p}$, so $n = \dfrac{kp}{R}$
 **Conversions:** $k = 0.4075\,\tfrac{\text{cm}^3}{\text{K}} = 0.4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}}$ and $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Finally $1\,\text{mol} = 1000\,\text{mmol}$.
 **Substitution:** $n = \dfrac{0.4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}} \cdot 101\,000\,\text{Pa}}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 4.953 \cdot 10^{-3}\,\text{mol}$
@@ -181,16 +215,30 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Given:** pressures and volumes of the same amount of gas: series A with volumes $1.0$–$4.0\,\textsf{l}$ and series B with volumes $1.5$–$4.5\,\textsf{l}$
 **Find:** which series was measured at the higher temperature.
 **Principle:** The amount of gas is the same, so the equation of state $pV = nRT$ implies that the product $pV$ is directly proportional to the temperature. On an isotherm the product $pV$ is constant, and at a higher temperature the product is greater. The volumes of the series are different, so the pressures cannot be compared directly.
-**Model answer:** In series A the product $pV$ is about $244\,\text{kPa} \cdot \textsf{l}$ on every row, for example $2.0\,\textsf{l} \cdot 122\,\text{kPa}$. In series B it is about $305\,\text{kPa} \cdot \textsf{l}$, for example $2.5\,\textsf{l} \cdot 122\,\text{kPa}$. The product is greater in series B, so series B was measured at the higher temperature. The ratio of the temperatures is $305 : 244 \approx 1.25$. The same pressure $122\,\text{kPa}$ is at a greater volume in series B, and in the $(V, p)$ coordinate system the isotherm of B lies higher. Both series obey Boyle's law, so the decrease of the pressure as the volume increases does not tell the temperature.
+**Model answer:** In series A the product $pV$ is about $244\,\text{kPa} \cdot \textsf{l}$ on every row, for example $2.0\,\textsf{l} \cdot 122\,\text{kPa}$. In series B it is about $305\,\text{kPa} \cdot \textsf{l}$, for example $2.5\,\textsf{l} \cdot 122\,\text{kPa}$.
+
+The product is greater in series B, so series B was measured at the higher temperature. The ratio of the temperatures is $305 : 244 \approx 1.25$.
+
+The same pressure $122\,\text{kPa}$ is at a greater volume in series B, and in the $(V, p)$ coordinate system the isotherm of B lies higher.
+
+Both series obey Boyle's law, so the decrease of the pressure as the volume increases does not tell the temperature.
 
 ## fy3-10-L3-04
 **Given:** helium, $V = 20.0\,\textsf{l}$; from the table moment 1: $\theta_1 = 5.0\,{}^\circ\text{C}$, $p_1 = 14.2\,\text{bar}$, moment 2: $\theta_2 = 21.0\,{}^\circ\text{C}$, $p_2 = 11.0\,\text{bar}$, moment 3: $\theta_3 = 21.0\,{}^\circ\text{C}$, $p_3 = 6.5\,\text{bar}$; balloon $p_\text{b} = 101\,\text{kPa}$, $\theta_\text{b} = 21.0\,{}^\circ\text{C}$, $V_\text{b} = 5.0\,\textsf{l}$; $M = 4.0\,\tfrac{\text{g}}{\text{mol}}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** the mass $m$ of helium used in grams (part b); the amounts of substance $n_1$, $n_2$, $n_3$ (a) and the numbers of balloons (c)
-**Principle:** The volume of the cylinder is constant and no gas leaks, so the equation of state $pV = nRT$ gives the amount of substance at each moment separately. The temperature changes between moments 1 and 2, so the amount of substance is not directly proportional to the pressure: the same pressure corresponds to a greater amount of substance in the cold. The amount used is the difference of the amounts of substance.
+**Principle:** The volume of the cylinder is constant and no gas leaks, so the equation of state $pV = nRT$ gives the amount of substance at each moment separately.
+
+The temperature changes between moments 1 and 2, so the amount of substance is not directly proportional to the pressure: the same pressure corresponds to a greater amount of substance in the cold.
+
+The amount used is the difference of the amounts of substance.
 **Formula:** $n = \dfrac{pV}{RT}$, the amount used $\Delta n = n_1 - n_3$ and the mass $m = \Delta n \cdot M$. The amount of substance in one balloon is $n_\text{b} = \dfrac{p_\text{b}V_\text{b}}{RT_\text{b}}$, and the number of balloons is $\dfrac{\Delta n}{n_\text{b}}$.
 **Conversions:** $V = 20.0\,\textsf{l} = 0.0200\,\text{m}^3$ and $V_\text{b} = 0.0050\,\text{m}^3$; $p_1 = 14.2\,\text{bar} = 1.42 \cdot 10^6\,\text{Pa}$, $p_2 = 1.10 \cdot 10^6\,\text{Pa}$ and $p_3 = 6.5 \cdot 10^5\,\text{Pa}$; $T_1 = (5.0 + 273.15)\,\text{K} = 278.15\,\text{K}$ and $T_2 = T_3 = T_\text{b} = 294.15\,\text{K}$.
 **Substitution:** a) $n_1 = \dfrac{1.42 \cdot 10^6\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 278.15\,\text{K}} = 12.29\,\text{mol}$, $n_2 = \dfrac{1.10 \cdot 10^6\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 9.000\,\text{mol}$ and $n_3 = \dfrac{6.5 \cdot 10^5\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 5.318\,\text{mol}$. b) $\Delta n = 12.29\,\text{mol} - 5.318\,\text{mol} = 6.968\,\text{mol}$ and $m = 6.968\,\text{mol} \cdot 4.0\,\tfrac{\text{g}}{\text{mol}} = 27.87\,\text{g}$. c) $n_\text{b} = \dfrac{101\,000\,\text{Pa} \cdot 0.0050\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 0.2066\,\text{mol}$, so the helium used filled $\dfrac{6.968\,\text{mol}}{0.2066\,\text{mol}} = 33.7$ balloons. When the pressure is $101\,\text{kPa}$, the cylinder contains $n_\text{end} = \dfrac{101\,000\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 0.8264\,\text{mol}$, so $$\begin{aligned} &5.318\,\text{mol} - 0.8264\,\text{mol} \\ &= 4.492\,\text{mol} \end{aligned}$$ is still available, enough for $\dfrac{4.492\,\text{mol}}{0.2066\,\text{mol}} = 21.7$ balloons.
-**Answer:** b) $28\,\text{g}$, two significant figures, because the molar mass $4.0\,\tfrac{\text{g}}{\text{mol}}$ is given with two digits. a) $n_1 = 12.3\,\text{mol}$, $n_2 = 9.00\,\text{mol}$ and $n_3 = 5.32\,\text{mol}$. c) The helium used filled about $34$ balloons (about $16$ in the first stage and about $18$ in the second), and $21$ more full balloons can still be filled. From the pressure difference $14.2 - 6.5 = 7.7\,\text{bar}$ the mass would have been calculated as about $25\,\text{g}$, which is too small, because at the first moment the cylinder contained cold gas: the same pressure corresponds to a greater amount of substance in the cold gas, so the initial amount of substance is greater than the pressure difference would suggest.
+**Answer:** b) $28\,\text{g}$, two significant figures, because the molar mass $4.0\,\tfrac{\text{g}}{\text{mol}}$ is given with two digits. a) $n_1 = 12.3\,\text{mol}$, $n_2 = 9.00\,\text{mol}$ and $n_3 = 5.32\,\text{mol}$.
+
+c) The helium used filled about $34$ balloons (about $16$ in the first stage and about $18$ in the second), and $21$ more full balloons can still be filled.
+
+From the pressure difference $14.2 - 6.5 = 7.7\,\text{bar}$ the mass would have been calculated as about $25\,\text{g}$, which is too small, because at the first moment the cylinder contained cold gas: the same pressure corresponds to a greater amount of substance in the cold gas, so the initial amount of substance is greater than the pressure difference would suggest.
 **Reasonableness:** At the start the cylinder contained about $$\begin{aligned} &14 \cdot 20 : (0.083 \cdot 278) \\ &\approx 12\,\text{mol} \end{aligned}$$ and at the end about $5\,\text{mol}$, so the difference is about $7\,\text{mol}$ and $7 \cdot 4\,\text{g} \approx 28\,\text{g}$. One litre of gas at room temperature is about $0.041\,\text{mol}$, so a $5\,\textsf{l}$ balloon needs about $0.21\,\text{mol}$, and $7 : 0.21 \approx 33$ agrees with the result.
 
 ## fy3-10-L3-05
@@ -200,7 +248,15 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Formula:** a) $n = \dfrac{p_0V_0}{RT_0}$. b) and c) $V = \dfrac{nRT}{p}$. In the linear estimate the height is $h = h_{10} + (h_{15} - h_{10}) \cdot \dfrac{V_\text{max} - V_{10}}{V_{15} - V_{10}}$.
 **Conversions:** $p_0 = 101\,000\,\text{Pa}$, $T_0 = (15.0 + 273.15)\,\text{K} = 288.15\,\text{K}$, $T_{10} = (-50.0 + 273.15)\,\text{K} = 223.15\,\text{K}$, $T_{15} = 216.65\,\text{K}$ and $p_{10} = 26\,500\,\text{Pa}$, $p_{15} = 12\,100\,\text{Pa}$.
 **Substitution:** a) $n = \dfrac{101\,000\,\text{Pa} \cdot 2.50\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288.15\,\text{K}} = 105.4\,\text{mol}$. b) $$\begin{aligned} &V_{10} \\ &= \dfrac{105.4\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 223.15\,\text{K}}{26\,500\,\text{Pa}} \\ &= 7.379\,\text{m}^3 \end{aligned}$$. c) $$\begin{aligned} &V_{15} \\ &= \dfrac{105.4\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 216.65\,\text{K}}{12\,100\,\text{Pa}} \\ &= 15.69\,\text{m}^3 \end{aligned}$$ and $$\begin{aligned} h &= 10\,\text{km} \\ &+ 5\,\text{km} \cdot \dfrac{(12.0 - 7.379)\,\text{m}^3}{(15.69 - 7.379)\,\text{m}^3} \\ &= 12.8\,\text{km} \end{aligned}$$
-**Answer:** b) $7.4\,\text{m}^3$, two significant figures, because the ICAO values are rounded and the gas of the balloon is not exactly at the temperature of the surrounding air. The amount of helium is a) $105\,\text{mol}$. c) At a height of $15\,\text{km}$ the volume would be $15.7\,\text{m}^3$, which is over the limit of the envelope, $12.0\,\text{m}^3$. According to the linear estimate the balloon withstands up to a height of about $12.8\,\text{km}$ and bursts after that; the real limit is slightly higher, because the volume grows at an accelerating rate. The volume increases because the pressure falls by the factor $26.5 : 101 \approx 0.26$ but the temperature in kelvins only by the factor $223.15 : 288.15 \approx 0.77$. The volume is directly proportional to the temperature and inversely proportional to the pressure, so the fall in pressure wins over the fall in temperature.
+**Answer:** b) $7.4\,\text{m}^3$, two significant figures, because the ICAO values are rounded and the gas of the balloon is not exactly at the temperature of the surrounding air. The amount of helium is a) $105\,\text{mol}$.
+
+c) At a height of $15\,\text{km}$ the volume would be $15.7\,\text{m}^3$, which is over the limit of the envelope, $12.0\,\text{m}^3$.
+
+According to the linear estimate the balloon withstands up to a height of about $12.8\,\text{km}$ and bursts after that; the real limit is slightly higher, because the volume grows at an accelerating rate.
+
+The volume increases because the pressure falls by the factor $26.5 : 101 \approx 0.26$ but the temperature in kelvins only by the factor $223.15 : 288.15 \approx 0.77$.
+
+The volume is directly proportional to the temperature and inversely proportional to the pressure, so the fall in pressure wins over the fall in temperature.
 **Reasonableness:** The ratio of the volumes is $V_{10} : V_0 = 0.77 : 0.26 \approx 3.0$ and $3.0 \cdot 2.50\,\text{m}^3 \approx 7.5\,\text{m}^3$, which matches the calculated volume $7.4\,\text{m}^3$. The mass of the helium is $105.4\,\text{mol} \cdot 4.0\,\tfrac{\text{g}}{\text{mol}} \approx 0.42\,\text{kg}$, which is reasonable for a weather balloon. The limit $12.0\,\text{m}^3$ lies between the volumes $7.4\,\text{m}^3$ and $15.7\,\text{m}^3$, so the height $12.8\,\text{km}$ lies between the heights $10\,\text{km}$ and $15\,\text{km}$.
 
 ## fy3-10-L1-09

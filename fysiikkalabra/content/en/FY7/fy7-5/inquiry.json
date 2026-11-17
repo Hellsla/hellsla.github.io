@@ -22,21 +22,21 @@
       "id": "kertaus-voima",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the magnetic force on a charge",
-      "prompt": "An electron is at rest in a uniform magnetic field whose magnetic flux density is $0.50\\,\\text{T}$. What force does the field exert on the electron?",
+      "title": "Review: the magnetic force on a moving charge",
+      "prompt": "The magnetic field of the permanent magnet in a bicycle hub dynamo is $0.50\\,\\text{T}$. An electron enters the field perpendicular to the field at a speed of $2.0 \\cdot 10^{6}\\,\\text{m/s}$. How large is the force on the electron?",
       "choices": [
         {
-          "text": "No force, because the magnetic force $F = |q|vB$ is zero when the velocity is zero.",
+          "text": "The force is $1.6 \\cdot 10^{-13}\\,\\text{N}$, and it is perpendicular to both the velocity and the field.",
           "correct": true,
-          "feedback": "Correct. A magnetic field acts only on a moving charge (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod, but the electrons of a rod at rest do not."
+          "feedback": "Correct. A magnetic field acts on a moving charge with the force $F = |q|vB$, perpendicular to the velocity and the field (chapter *Charged particle in electric and magnetic fields*). Today this explains why the electrons of a metal rod moving in a field shift to one end of the rod."
         },
         {
           "text": "A force along the field, because the electron in a field is like a compass needle.",
-          "feedback": "A compass needle is a magnetic dipole, but the field acts on an electron only when it moves: $F = |q|vB$, and at zero velocity the force is zero (chapter *Charged particle in electric and magnetic fields*)."
+          "feedback": "A compass needle is a magnetic dipole, but on a moving electron the force is perpendicular to the field, not along it: $F = |q|vB$ (chapter *Charged particle in electric and magnetic fields*)."
         },
         {
-          "text": "A force perpendicular to the field, whose magnitude depends on the field.",
-          "feedback": "The force is perpendicular to the field only when the charge moves, and its magnitude is $F = |q|vB$. No force acts on an electron at rest (chapter *Charged particle in electric and magnetic fields*)."
+          "text": "A force of $3.2 \\cdot 10^{-13}\\,\\text{N}$, because the size of the field does not matter.",
+          "feedback": "The size of the field is part of it: $$\n\\begin{aligned}\n&F \\\\\n&= |q|vB \\\\\n&= 1.6 \\cdot 10^{-19}\\,\\text{C} \\cdot 2.0 \\cdot 10^{6}\\,\\text{m/s} \\\\\n&\\quad \\cdot 0.50\\,\\text{T} \\\\\n&\\approx 1.6 \\cdot 10^{-13}\\,\\text{N}\n\\end{aligned}\n$$ (chapter *Charged particle in electric and magnetic fields*)."
         }
       ],
       "optional": true

@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 12e52c909bf5e60e
+CONTENT-HASH: d0d4803fcf0982bf
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] Open-solution captures were read mainly at 390 px; the 360 px check is by check_layout.py and my own DOM measurement.
+- [Minor] fy3-16-L2 solution — the closing "Vastaus on annettu kahdella merkitsevällä numerolla…" is fine; no change needed.
 
 ## Checked
-- Own 390 px captures of the opened solutions (preview/fi-easy/fy3-16, scratchpad), plus a DOM measurement of every opened formula at 360, 390 and 1280 px (clipping, off-screen, row breaking inside a katex); check_layout.py --width 360 run.
-- Reflowed rows read: aligned equals signs in one column, continuation rows begin with an operator, closing comma or full stop stays in the aligned row (fy3-15-L2-05, fy3-10-L1-07 at 1280, fy3-12-L2-02, fy3-13-L2-06, fy3-16-L3-01).
-- New task fy3-9-L2-10 and fy3-11-L2-10 read in full at 390 px (source link first, a–d, long solution): typography and Finnish fine.
-- Not every changed solution was opened as a capture; the rest by the DOM measurement only.
+- Delta (paragraph breaks in solutions, words unchanged). No 360 px captures exist; 390 px used.
+- fy3-16-open-exercises-L2-1280-5.png: opened solution, one step per paragraph, chains aligned, no clipping.
+- fy3-16-open-tarkista-1280-2.png: task card with feedback open, reading column held.
+- fy3-16-example-390-2.png and fy3-16-stage-sovella-390-2.png: phone layout intact.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1e3321925072288a
+CONTENT-HASH: eee0188d143985f1
 Mode: delta
 Round: 1
 
@@ -7,11 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] fy3-8 10-15 task text still starts with the word "Esimerkkiaineisto:" (captions lost it; text left as is) — decide whether to drop it too.
+None.
 
 ## Checked
-- fy3-8-open-exercises-L2-1280-8, -16 (Muunnokset/Sijoitus aligned rows, trailing punctuation).
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; judged at 390 px in the lesson captures and at 1280 px.
+- 1280 px with solutions open: fy3-8-open-exercises-1280-3.png (task 10-3 solution rows, ΔT conversion block, Kaava with l = l₀ + Δl), fy3-8-open-tarkista-1280-1.png (open Vastaus with Δl chain, feedback legible).
+- 390 px: fy3-8-example-390-2.png, fy3-8-stage-sovella-390-2.png (shared solution layout holds, no clipping).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

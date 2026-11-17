@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f4b33f0f26651d8a
+CONTENT-HASH: 0cb24339a7f174f5
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy3-9-L2-10 solution Given — the example series (T = 197; 254; … K and p = …) is two inline lists of seven values; a small table would read better.
-- [Minor] fy3-9-L2-10 solution — the shrink-wrapped Formula box (p_2/p_1 = kT_2/kT_1 = T_2/T_1) is narrower than the other formula boxes; harmless.
+- [Minor] open-exercises-1280-3 (11-3) — the Reading the graph block repeats a formula on its own line right after a short paragraph; fine, but the "Formula" row is the only place the page is tall. No action needed.
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280. New exercise fy3-9-L2-10 opened at 1280 px (source link first, parts a–d, answer box, long solution): layout, typography and language clean.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
+- 1280 px with solutions open: fy3-9-open-exercises-1280-3.png (11-3: Given, Find, Principle, Reading the graph, Formula as separate paragraphs, even spacing, equations aligned); fy3-9-open-tarkista-1280-2.png (hints open, formulas intact, no clipping).
+- 390 px: fy3-9-stage-exercises-390.png (level list only, solutions closed); fy3-9-stage-tarkista-390-2.png (task cards, no overflow). The changed solution paragraphs were judged from the 1280 px captures.
 - Hash run at start and end: unchanged.
 
 ## Scores

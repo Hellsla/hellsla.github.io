@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c31b0e2dcf823b64
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: f8678b268c4d5d97
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Geometric extra path 2d vs optical path difference 2nd, compared with the vacuum/air wavelength: correct (550 : 1.33 = 413.5 nm). Very thin soap film: reflections in antiphase, ideally very little reflected light, looks dark/almost black in reflected light: correct; formula section and summary now say optical path difference. Languages match. (language checked: en.)
-- Round 2: exit ticket now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta", consistent with theory and summary (previous polish resolved).
+batch delta review: round-1 film-physics wording fixed: the retrieval is now two in-phase laser waves in air, path difference 975 nm = 1.5 x 650 nm -> destructive (recomputed); no claim about film reflections or phase changes, so no conflict with the half-wave rule taught later; one correct option, feedback right; Ennusta not revealed.

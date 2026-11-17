@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c61deae94f708241
+CONTENT-HASH: 31b7193e4d111c8b
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+batch delta review (round 2): opened fy7-3-stage-herata-390 (Pohdinta; the changed retrieval task is in the closed box, title "Kertaa: kompassi ilman virtaa" visible, layout intact). Task body judged from the diff: units in LaTeX, natural Finnish.

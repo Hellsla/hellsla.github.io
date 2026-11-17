@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ebcb2ac7204fc7e5
+CONTENT-HASH: 216349569932dbcb
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
+(none)
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Round 1, delta (md-paragraphs): lesson.md paragraph breaks, words unchanged. No 360 px captures exist; 390 px used.
+- 390 px: fy3-11-example-390-1.png (stages 1-4: knowns, remark and question each own paragraph, question last; displays aligned; nothing clipped); fy3-11-stage-selita-390-2.png (photo with caption, figure after its paragraph, Hyötysuhde paragraphs of sensible length, no overflow).
+- 1280 px with solutions open: fy3-11-open-tarkista-1280-1.png (hint answers, feedback blocks); fy3-11-open-exercises-1280-1.png (13-1 solution, Järkevyys block); fy3-11-open-exercises-L2-1280-1.png (13-10 Muunnokset: display, "joten", display, "Lisäksi" paragraph; reads in order, rows aligned).
+- Hash same at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

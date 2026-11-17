@@ -2,27 +2,33 @@
   "_note": "English texts of the Lukuvinkit page; titles, authors, links, courses and the loan marks come from content/fi/lukuvinkit.json in the same order (scripts/reading_tips.py).",
   "title": "Book tips",
   "subtitle": "Physics beyond the textbook",
-  "description": "Fourteen books on physics beyond the textbook: its history, everyday phenomena, thought experiments and some rather unusual questions.",
+  "description": "Twenty books on physics beyond the textbook: experiments, everyday phenomena, the history of physics, thought experiments and some big questions. The easiest books come first and the demanding ones last.",
   "intro": [
     "Physics is not only formulas and calculations. It is also stories, surprising questions, experiments and attempts to understand the world.",
     "In these books you can find new views of familiar phenomena, or meet physics there is no time for in lessons. You do not have to read a book from cover to cover. You can start with one chapter that interests you."
   ],
-  "list_lead": "If physics interests you, these books are worth a look. They cover the history of physics, everyday phenomena, thought experiments and some rather unusual questions.",
-  "loan_note": "The first nine books on the list are on my own shelf, so feel free to ask to borrow them!",
+  "list_lead": "If physics interests you, these books are worth a look. The most approachable ones come first and the most demanding ones last. They cover experiments, everyday phenomena, the history of physics, thought experiments and some rather unusual questions.",
+  "loan_note": "The books marked “Borrow from Lauri” are on my own shelf, so feel free to ask to borrow them!",
   "books": [
-    {"language": "Finnish", "level": "easy–intermediate", "text": "What would happen if the speed of light were as slow as the speed of cars? Imaginative adventures make the strange effects of relativity and quantum physics understandable."},
-    {"language": "Finnish", "level": "intermediate", "text": "Could you travel into the past? Or into the future? The book explores time and the possibilities of time travel from the point of view of physics."},
     {"language": "Finnish / English", "level": "easy", "text": "What would happen if everyone in the world jumped at the same time? Absurd questions lead to surprisingly serious physics and fun calculations."},
     {"language": "English", "level": "easy", "text": "More imaginative questions with scientific answers. Could you cool the atmosphere by opening every freezer at once? The book shows how physics can be used to investigate almost any question."},
+    {"language": "Finnish", "level": "easy", "text": "Humorous and sometimes astonishing memoirs of a Nobel-winning physicist. Above all, the book is about curiosity, experimenting and the way a scientist thinks."},
+    {"language": "Finnish (Finnish edition only listed here)", "level": "easy", "text": "200 small experiments in natural science and technology. The book shows that interesting science can be done with simple equipment. A particularly good source of inspiration for your own experiments and research projects."},
+    {"language": "Finnish (translation; English original: Why Toast Lands Jelly-Side Down)", "level": "easy–intermediate", "text": "Why does toast land butter-side down? And how can everyday household objects show how the laws of physics work? The book presents over a hundred ingenious demonstrations that let you investigate physical phenomena yourself."},
+    {"language": "Finnish", "level": "easy–intermediate", "text": "A classic from the history of science: What would happen if the speed of light were as slow as the speed of cars? Imaginative adventures make the strange effects of relativity and quantum physics understandable."},
     {"language": "Finnish", "level": "easy–intermediate", "text": "A short, thought-provoking book on the big ideas of modern physics: relativity, quantum physics and the universe."},
     {"language": "English", "level": "easy–intermediate", "text": "Could Spider-Man really swing from his web? How fast could the Flash run? And how do Superman's powers square with Newton's laws? The book examines superheroes' abilities with real physics."},
-    {"language": "Finnish", "level": "intermediate–demanding", "text": "Where did the universe come from? What are black holes? Does time have a beginning or an end? A well-known classic of modern cosmology."},
-    {"language": "Finnish", "level": "intermediate", "text": "Most of the matter in the universe is invisible. How do we know it exists, and what could it be?"},
-    {"language": "English", "level": "demanding", "text": "The quantum revolution of the first decades of the 20th century, told by a physicist of that era. Planck, Bohr, Heisenberg, Schrödinger and the other founders of the theory all appear."},
     {"language": "English", "level": "easy–intermediate", "text": "Why does popcorn pop? Why does drying coffee leave a ring? Everyday phenomena open connections to the big principles of physics."},
-    {"language": "Finnish", "level": "easy", "text": "Humorous and sometimes astonishing memoirs of a Nobel-winning physicist. Above all, the book is about curiosity, experimenting and the way a scientist thinks."},
+    {"language": "Finnish (translation; English original: Fear of Physics)", "level": "easy–intermediate", "text": "Why might a physicist assume a cow is a sphere? The book opens up the way physicists think and shows how simple models are built from complicated phenomena. A good choice if you want to understand why physics relies on assumptions and estimates."},
+    {"language": "Finnish (Finnish edition only listed here)", "level": "easy–intermediate", "text": "An illustrated introduction to the life and research of Stephen Hawking. Black holes, relativity and the big questions about the universe become familiar through text and drawings. An alternative if you want to approach Hawking's ideas more lightly than through his own books."},
     {"language": "Finnish", "level": "easy–intermediate", "text": "Stories of the people who shaped physics, from Pascal to Higgs. A good choice if you want to know how ideas in physics have changed."},
+    {"language": "Finnish", "level": "intermediate", "text": "Could you travel into the past? Or into the future? The book explores time and the possibilities of time travel from the point of view of physics."},
     {"language": "English", "level": "intermediate", "text": "Ten landmark experiments in the history of science. The book shows how a simple but cleverly designed experiment can lead to a great scientific discovery."},
-    {"language": "English", "level": "intermediate", "text": "A collection of strange, fun and sometimes dangerous-looking phenomena of physics. The book invites you to ask questions and look for explanations."}
+    {"language": "English", "level": "intermediate", "text": "A collection of strange, fun and sometimes dangerous-looking phenomena of physics. The book invites you to ask questions and look for explanations."},
+    {"language": "Finnish", "level": "intermediate", "text": "Most of the matter in the universe is invisible. How do we know it exists, and what could it be?"},
+    {"language": "Finnish (Finnish edition only listed here)", "level": "intermediate", "text": "How was the size of the Earth found out? And how can we measure the distance to a star we cannot travel to? The book tells how, over the centuries, people have learned to measure an ever larger universe."},
+    {"language": "Finnish", "level": "intermediate–demanding", "text": "A classic from the history of science: Where did the universe come from? What are black holes? Does time have a beginning or an end? A well-known classic of modern cosmology."},
+    {"language": "Finnish (Finnish edition only listed here)", "level": "demanding", "text": "Can something be impossible to predict even though it follows exact laws of nature? Chaos theory shows why small differences at the start can lead to big changes. The book challenges you to think about predictability, chance and the laws of nature in a new way."},
+    {"language": "English", "level": "demanding", "text": "A classic from the history of science: The quantum revolution of the first decades of the 20th century, told by a physicist of that era. Planck, Bohr, Heisenberg, Schrödinger and the other founders of the theory all appear."}
   ]
 }

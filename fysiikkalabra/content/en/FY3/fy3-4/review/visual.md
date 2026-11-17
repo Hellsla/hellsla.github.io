@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: bcde6e7fa0cfeb01
+CONTENT-HASH: 873d4f3ec6f72561
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-6.png (exercises 5-4 to 5-16, solutions open): the nail model answer (5-6/5-7) now sits in three short paragraphs; the depth model answer of 5-8 and the principle of 5-9 read cleanly; no clipped formulas.
+- review/shots/fy3-4-example-390-1.png (pressure on a diver, stages 1-4 at 390 px): unchanged, display equations centred and legible.
+- review/shots/fy3-4-open-exercises-1280-3.png (opened solution 5-3, start of 5-4): the substitution rows, kPa and pascal units and the reasonableness block render correctly.

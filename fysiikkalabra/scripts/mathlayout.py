@@ -102,7 +102,7 @@ WIDE_LHS = 20        # visible characters: a left side up to this long shares th
 WIDE_MAX = 40        # visible characters (vis_len) a row joined for a wide screen may have: it must fit a 768 px task card (fy5-6 overflowed at 62, fy8-11 at 46)
 
 
-CONT_OP = re.compile(r"(\+|-|\\cdot(?![A-Za-z])|\\times(?![A-Za-z])|:)\s*\S")   # a row that starts with a binary operator continues the row before
+CONT_OP = re.compile(r"(\+|-|/|\\cdot(?![A-Za-z])|\\times(?![A-Za-z])|\\div(?![A-Za-z])|:)\s*\S")   # a row that starts with a binary operator continues the row before
 
 
 def join_wide(tex):
@@ -147,8 +147,9 @@ def with_punct(tex, punct):
     if not punct: return tex
     mark = "\\text{" + punct + "}"
     m = re.fullmatch(r"(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
-    if m: return m.group(1).rstrip() + mark + m.group(2)
-    return tex.rstrip() + mark
+    head, tail = (m.group(1), m.group(2)) if m else (tex, "")
+    k = re.fullmatch(r"(.*?)((?:\s*(?:&|\\\\(?:\[[^\]]*\])?))*\s*)", head, re.S)   # trailing `&` and `\\` stay last (work queue 5h)
+    return k.group(1).rstrip() + mark + k.group(2) + tail if k.group(2).strip() else head.rstrip() + mark + tail
 
 
 # display maths in a text, with the sentence mark that follows it straight after the closing $$ (never inside a word or a number: ".5")
