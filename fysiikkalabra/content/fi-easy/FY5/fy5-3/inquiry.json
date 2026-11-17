@@ -23,21 +23,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: liike ilman kokonaisvoimaa",
-      "prompt": "Jääkiekko liukuu jäällä, kun maila ei enää kosketa sitä. Kitkaa ja ilmanvastusta ei oteta huomioon, koska ne ovat hyvin pieniä. Miten kiekko liikkuu?",
+      "title": "Kertaa: ympyrän kehän pituus",
+      "prompt": "Karuselli pyörii tasaisesti. Aino seisoo karusellin reunalla $2{,}0\\,\\text{m}$:n päässä keskipisteestä. Kuinka pitkän matkan Aino kulkee yhden kierroksen aikana?",
       "choices": [
         {
-          "text": "Suoraan ja tasaisella vauhdilla, koska siihen vaikuttavien voimien summa on nolla.",
+          "text": "Noin $13\\,\\text{m}$, koska ympyrän kehän pituus on $2\\pi r$.",
           "correct": true,
-          "feedback": "Oikein. Paino ja jään tukivoima kumoavat toisensa. Vaakasuunnassa ei vaikuta voimaa. Newtonin ensimmäisen lain mukaan kiekon nopeus ei siis muutu: ei suuruus eikä suunta (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*). Tänään katsomme, mitä tarvitaan, jotta suunta muuttuu."
+          "feedback": "Oikein. Yhdellä kierroksella Aino kulkee kerran ympyrän kehän ympäri: $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 2{,}0\\,\\text{m} \\\\ &\\approx 13\\,\\text{m} \\end{aligned}$$. Eetu on keskitangon vieressä. Hän kulkee samassa ajassa paljon lyhyemmän matkan. Tänään selvitetään, mitä tämä tarkoittaa heidän nopeuksilleen."
         },
         {
-          "text": "Se hidastuu vähitellen, koska mailan antama voima kuluu kiekosta loppuun.",
-          "feedback": "Kiekkoon ei jää mailan voimaa, joka voisi kulua loppuun. Voima on vuorovaikutus. Se loppuu, kun maila ei enää kosketa kiekkoa (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*). Kun voimien summa on nolla, nopeus pysyy samana."
+          "text": "Noin $6{,}3\\,\\text{m}$, koska ympyrän kehän pituus on $\\pi r$.",
+          "feedback": "Matka $\\pi r$ on vasta puolet kehästä. Se on puolen kierroksen matka. Koko kierroksella Aino kulkee $s = 2\\pi r = 2\\pi \\cdot 2{,}0\\,\\text{m} \\approx 13\\,\\text{m}$."
         },
         {
-          "text": "Se kaartaa vähitellen siihen suuntaan, johon mailaa viimeksi käännettiin.",
-          "feedback": "Kaartaminen tarkoittaa, että nopeuden suunta muuttuu. Siihen tarvitaan kokonaisvoima. Kiekkoon ei vaikuta vaakasuunnassa mikään, joten se liikkuu suoraan."
+          "text": "$4{,}0\\,\\text{m}$, koska kierroksella kuljetaan ympyrän halkaisijan verran.",
+          "feedback": "$4{,}0\\,\\text{m}$ on ympyrän halkaisija $2r$. Se on suora matka reunalta keskipisteen kautta toiselle reunalle. Aino kulkee kehää pitkin. Kehä on $\\pi$ kertaa halkaisija: $s = 2\\pi r \\approx 13\\,\\text{m}$."
         }
       ],
       "optional": true

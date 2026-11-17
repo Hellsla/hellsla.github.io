@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Kertaa: vinon voiman komponentti",
       "optional": true,
-      "prompt": "Köysi vetää laatikkoa $200\\,\\text{N}$:n voimalla. Voima on $30^\\circ$:n kulmassa vaakatasoon nähden. Kuinka suuri on voiman pystykomponentti?",
+      "prompt": "Kaverisi vetää pitkän avaimen vartta $120\\,\\text{N}$:n voimalla. Voima on $30^\\circ$:n kulmassa varren suuntaan nähden. Kuinka suuri on voiman komponentti, joka on kohtisuorassa vartta vastaan?",
       "choices": [
         {
-          "text": "$100\\,\\text{N}$, koska pystykomponentti on $F\\sin 30^\\circ$.",
+          "text": "$60\\,\\text{N}$, koska kohtisuora komponentti on $F\\sin 30^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0{,}5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. Tässä luvussa tarvitaan samaa suorakulmaisen kolmion sääntöä, kun lasketaan vinon voiman vartta."
+          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $$\\begin{aligned} F\\sin 30^\\circ &= 120\\,\\text{N}\\cdot 0{,}5 \\\\ &= 60\\,\\text{N} \\end{aligned}$$. Tässä luvussa tarvitaan samaa suorakulmaisen kolmion sääntöä, kun lasketaan vinon voiman vartta."
         },
         {
-          "text": "$173\\,\\text{N}$, koska pystykomponentti on $F\\cos 30^\\circ$.",
-          "feedback": "Kosini antaa kulman viereisen kateetin eli vaakakomponentin $F\\cos 30^\\circ \\approx 173\\,\\text{N}$. Pystykomponentti on kulman vastainen kateetti $F\\sin 30^\\circ = 100\\,\\text{N}$."
+          "text": "$104\\,\\text{N}$, koska kohtisuora komponentti on $F\\cos 30^\\circ$.",
+          "feedback": "Kosini antaa kulman viereisen kateetin. Se on varren suuntainen komponentti $F\\cos 30^\\circ \\approx 104\\,\\text{N}$. Vartta vastaan kohtisuora komponentti on kulman vastainen kateetti $F\\sin 30^\\circ = 60\\,\\text{N}$."
         },
         {
-          "text": "$200\\,\\text{N}$, koska komponentti on yhtä suuri kuin voima.",
-          "feedback": "Komponentti on suorakulmaisen kolmion kateetti, ja hypotenuusa on voima itse. Kateetti on aina lyhyempi kuin hypotenuusa. Pystykomponentti on $F\\sin 30^\\circ = 100\\,\\text{N}$."
+          "text": "$120\\,\\text{N}$, koska komponentti on yhtä suuri kuin voima.",
+          "feedback": "Komponentti on suorakulmaisen kolmion kateetti, ja hypotenuusa on voima itse. Kateetti on aina lyhyempi kuin hypotenuusa. Vartta vastaan kohtisuora komponentti on $F\\sin 30^\\circ = 60\\,\\text{N}$."
         }
       ]
     },

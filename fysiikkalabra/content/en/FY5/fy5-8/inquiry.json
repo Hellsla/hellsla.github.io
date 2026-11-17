@@ -26,24 +26,24 @@
       "type": "choice",
       "title": "Recap: Newton's third law",
       "optional": true,
-      "prompt": "A hand pulls the end of a spring fixed to a wall to the right with a force of $5.0\\,\\text{N}$, and the spring is at rest. With what force and in which direction does the spring pull the hand?",
+      "prompt": "The player pulls the knob of the pinball plunger backwards with a force of $5.0\\,\\text{N}$ and holds it still. With what force and in which direction does the knob pull the player's hand?",
       "choices": [
         {
-          "text": "With a force of $5.0\\,\\text{N}$ to the left.",
+          "text": "With a force of $5.0\\,\\text{N}$ forwards.",
           "correct": true,
-          "feedback": "Correct. As you learned in the chapter *Interaction and force: Newton's first and third laws*, two objects exert forces of equal magnitude and opposite direction on each other. The force of the hand acts on the spring, the force of the spring on the hand. In this chapter that distinction is important."
+          "feedback": "Correct. As you learned in the chapter *Interaction and force: Newton's first and third laws*, two objects exert forces of equal magnitude and opposite direction on each other. The force of the hand acts on the knob, the force of the knob on the hand. In this chapter that distinction is important."
         },
         {
-          "text": "With no force, because the spring is at rest.",
-          "feedback": "The forces on a spring at rest cancel each other, but the spring still acts on both of its ends. By Newton's third law the spring pulls the hand with a force of equal magnitude, $5.0\\,\\text{N}$, in the opposite direction, that is to the left."
+          "text": "With no force, because the knob is at rest.",
+          "feedback": "The forces on the knob at rest cancel each other, but the knob still acts on the hand. By Newton's third law the knob pulls the hand with a force of equal magnitude, $5.0\\,\\text{N}$, in the opposite direction, that is forwards."
         },
         {
-          "text": "With a force of $5.0\\,\\text{N}$ to the right.",
-          "feedback": "The forces of an interaction have opposite directions. The hand pulls the spring to the right, so the spring pulls the hand to the left with a force of the same magnitude, $5.0\\,\\text{N}$."
+          "text": "With a force of $5.0\\,\\text{N}$ backwards.",
+          "feedback": "The forces of an interaction have opposite directions. The hand pulls the knob backwards, so the knob pulls the hand forwards with a force of the same magnitude, $5.0\\,\\text{N}$."
         },
         {
-          "text": "With a smaller force to the left, because the spring stretches.",
-          "feedback": "Stretching does not reduce the reaction force. By Newton's third law the forces are always equal in magnitude: the spring pulls the hand to the left with a force of $5.0\\,\\text{N}$."
+          "text": "With a smaller force forwards, because the spring is compressed.",
+          "feedback": "Compressing the spring does not reduce the reaction force. By Newton's third law the forces are always equal in magnitude: the knob pulls the hand forwards with a force of $5.0\\,\\text{N}$."
         }
       ]
     },

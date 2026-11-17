@@ -26,26 +26,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: natural frequencies of a string",
+      "title": "Review: wavelength",
       "optional": true,
-      "prompt": "The fundamental frequency of a guitar string is $110\\,\\text{Hz}$. At what other frequencies can a standing wave form on the string?",
+      "prompt": "The siren of an ambulance standing still sounds at a frequency of $700\\,\\text{Hz}$, and the speed of sound in air is $340\\,\\text{m/s}$. What is the wavelength of the siren's sound?",
       "choices": [
         {
-          "text": "$220\\,\\text{Hz}$, $330\\,\\text{Hz}$, $440\\,\\text{Hz}$ and so on.",
+          "text": "About $0.49\\,\\text{m}$, because $\\lambda = \\tfrac{v}{f}$.",
           "correct": true,
-          "feedback": "Correct. The natural frequencies of a string fixed at both ends are whole-number multiples of the fundamental frequency, $f_n = n f_1$ (chapter *Standing waves: nodes, antinodes and natural frequencies*). Today we will see that the string sounds at all of these at the same time and that they decide the timbre of the sound."
+          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{700\\,\\text{Hz}} \\approx 0.49\\,\\text{m}$ (chapter *How waves form and travel*). Today we find out why the same siren sounds different in pitch as it drives past."
         },
         {
-          "text": "Only $330\\,\\text{Hz}$, $550\\,\\text{Hz}$, $770\\,\\text{Hz}$ and so on.",
-          "feedback": "Only the odd multiples belong to a tube closed at one end, which has a node at the closed end and an antinode at the open end. Both ends of a string are nodes, so any whole number of half wavelengths fits on it and $f_n = n f_1$ with $n = 1, 2, 3, \\ldots$"
+          "text": "About $2.1\\,\\text{m}$, because $\\lambda = \\tfrac{f}{v}$.",
+          "feedback": "You divided the frequency by the speed, and the unit of the result is then $1/\\text{m}$, not metres. From the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency: $\\lambda = \\tfrac{v}{f} \\approx 0.49\\,\\text{m}$."
         },
         {
-          "text": "$55\\,\\text{Hz}$, $27.5\\,\\text{Hz}$ and so on, because the wavelength can grow.",
-          "feedback": "The fundamental frequency is the *lowest* natural frequency of the string: the longest wave that fits on the string is $\\lambda_1 = 2L$. The other natural frequencies are higher than it, whole-number multiples of the fundamental frequency."
-        },
-        {
-          "text": "At any frequency, as long as the string is plucked hard enough.",
-          "feedback": "Plucking harder changes the amplitude, not which standing waves fit on the string. The fixed ends are nodes, so a standing wave forms only at the natural frequencies $f_n = n f_1$."
+          "text": "$238\\,000\\,\\text{m}$, because $\\lambda = v \\cdot f$.",
+          "feedback": "You multiplied the speed by the frequency. In the equation $v = f\\lambda$ the wavelength is the speed divided by the frequency, $\\lambda = \\tfrac{v}{f} \\approx 0.49\\,\\text{m}$. A high frequency means a short wavelength, not a long one (chapter *How waves form and travel*)."
         }
       ]
     },

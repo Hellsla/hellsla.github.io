@@ -26,26 +26,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: kielen ominaistaajuudet",
+      "title": "Kertaa: aallonpituus",
       "optional": true,
-      "prompt": "Kitaran kielen perustaajuus on $110\\,\\text{Hz}$. Millä muilla taajuuksilla kieleen voi syntyä seisova aalto?",
+      "prompt": "Ambulanssi seisoo paikallaan, ja sen sireeni soi taajuudella $700\\,\\text{Hz}$. Äänen nopeus ilmassa on $340\\,\\text{m/s}$. Mikä on sireenin äänen aallonpituus?",
       "choices": [
         {
-          "text": "$220\\,\\text{Hz}$, $330\\,\\text{Hz}$, $440\\,\\text{Hz}$ ja niin edelleen.",
+          "text": "Noin $0{,}49\\,\\text{m}$, koska $\\lambda = \\tfrac{v}{f}$.",
           "correct": true,
-          "feedback": "Oikein. Kahdesta päästä kiinnitetyn kielen ominaistaajuudet ovat perustaajuuden kokonaislukukertoja $f_n = n f_1$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Tänään nähdään, että kieli soi kaikilla näillä taajuuksilla yhtä aikaa. Ne ratkaisevat äänen sointivärin."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{340\\,\\text{m/s}}{700\\,\\text{Hz}} \\approx 0{,}49\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Tänään selvitetään, miksi sama sireeni kuulostaa ohiajon aikana eri korkuiselta."
         },
         {
-          "text": "Vain $330\\,\\text{Hz}$, $550\\,\\text{Hz}$, $770\\,\\text{Hz}$ ja niin edelleen.",
-          "feedback": "Pelkät parittomat monikerrat kuuluvat toisesta päästä suljetulle putkelle. Sen suljetussa päässä on solmu ja avoimessa päässä kupu. Kielen molemmat päät ovat solmuja. Kieleen mahtuu siksi mikä tahansa kokonaismäärä puolikkaita aallonpituuksia, ja $f_n = n f_1$, kun $n = 1, 2, 3, \\ldots$"
+          "text": "Noin $2{,}1\\,\\text{m}$, koska $\\lambda = \\tfrac{f}{v}$.",
+          "feedback": "Jaoit taajuuden nopeudella. Silloin tuloksen yksikkö on $1/\\text{m}$, ei metri. Yhtälöstä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella: $\\lambda = \\tfrac{v}{f} \\approx 0{,}49\\,\\text{m}$."
         },
         {
-          "text": "$55\\,\\text{Hz}$, $27{,}5\\,\\text{Hz}$ ja niin edelleen, koska aallonpituus voi kasvaa.",
-          "feedback": "Perustaajuus on kielen *alin* ominaistaajuus: pisin aalto, joka mahtuu kieleen, on $\\lambda_1 = 2L$. Muut ominaistaajuudet ovat sitä suurempia, perustaajuuden kokonaislukukertoja."
-        },
-        {
-          "text": "Millä tahansa taajuudella, kunhan kieltä näppäistään tarpeeksi voimakkaasti.",
-          "feedback": "Voimakkuus muuttaa amplitudia, ei sitä, mitkä seisovat aallot kieleen mahtuvat. Kiinteät päät ovat solmuja, joten seisova aalto syntyy vain ominaistaajuuksilla $f_n = n f_1$."
+          "text": "$238\\,000\\,\\text{m}$, koska $\\lambda = v \\cdot f$.",
+          "feedback": "Kerroit nopeuden taajuudella. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella, $\\lambda = \\tfrac{v}{f} \\approx 0{,}49\\,\\text{m}$. Suuri taajuus tarkoittaa lyhyttä aallonpituutta, ei pitkää (luku *Aaltojen synty ja eteneminen*)."
         }
       ]
     },

@@ -23,21 +23,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recall: motion without a net force",
-      "prompt": "An ice hockey puck slides on the ice after the stick no longer touches it. Friction and air resistance are assumed negligible. How does the puck move?",
+      "title": "Recall: the circumference of a circle",
+      "prompt": "The roundabout turns steadily, and Aino stands at its edge, $2.0\\,\\text{m}$ from the centre. How far does Aino travel during one revolution?",
       "choices": [
         {
-          "text": "In a straight line at constant speed, because the sum of the forces acting on it is zero.",
+          "text": "About $13\\,\\text{m}$, because the circumference of a circle is $2\\pi r$.",
           "correct": true,
-          "feedback": "Correct. The weight and the support force of the ice cancel each other, and no force acts horizontally, so by Newton's first law the velocity of the puck does not change: neither its magnitude nor its direction (chapter *Interaction and force: Newton's first and third laws*). Today we look at what is needed for the direction to change."
+          "feedback": "Correct. In one revolution Aino goes once round the circumference: $$\\begin{aligned} s &= 2\\pi r \\\\ &= 2\\pi \\cdot 2.0\\,\\text{m} \\\\ &\\approx 13\\,\\text{m} \\end{aligned}$$. Next to the centre pole Eetu travels a much shorter distance in the same time. Today we find out what this means for their speeds."
         },
         {
-          "text": "It slows down gradually, because the force given by the stick is used up in the puck.",
-          "feedback": "No force from the stick is left in the puck to be used up. A force is an interaction, and it ends when the stick no longer touches the puck (chapter *Interaction and force: Newton's first and third laws*). When the sum of the forces is zero, the velocity stays the same."
+          "text": "About $6.3\\,\\text{m}$, because the circumference of a circle is $\\pi r$.",
+          "feedback": "The distance $\\pi r$ is only half the circumference, the distance of half a revolution. In a whole revolution Aino travels $s = 2\\pi r = 2\\pi \\cdot 2.0\\,\\text{m} \\approx 13\\,\\text{m}$."
         },
         {
-          "text": "It curves gradually in the direction in which the stick was last turned.",
-          "feedback": "Curving means that the direction of the velocity changes, and that requires a net force. When nothing acts on the puck horizontally, it moves in a straight line."
+          "text": "$4.0\\,\\text{m}$, because a revolution covers the diameter of the circle.",
+          "feedback": "$4.0\\,\\text{m}$ is the diameter of the circle, $2r$, the straight distance from the edge through the centre to the opposite edge. Aino travels along the circumference, which is $\\pi$ times the diameter: $s = 2\\pi r \\approx 13\\,\\text{m}$."
         }
       ],
       "optional": true

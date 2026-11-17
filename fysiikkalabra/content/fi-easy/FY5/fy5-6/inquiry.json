@@ -24,24 +24,24 @@
       "optional": true,
       "type": "choice",
       "title": "Kertaa: kokonaisvoima ympyräliikkeessä",
-      "prompt": "Kappale kiertää vaakasuoraa ympyrärataa tasaisella vauhdilla. Mihin suuntaan kappaleeseen vaikuttava kokonaisvoima osoittaa?",
+      "prompt": "ISS kiertää Maata. Sen rata on lähes ympyrä, ja sen vauhti on lähes tasainen. Mihin suuntaan asemaan vaikuttava kokonaisvoima osoittaa?",
       "choices": [
         {
-          "text": "Kohti radan keskipistettä.",
+          "text": "Kohti radan keskipistettä eli Maan keskipistettä.",
           "correct": true,
-          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan. Siksi kappaleella on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti keskipistettä. Kokonaisvoima $\\Sigma F = \\tfrac{mv^2}{r}$ osoittaa samaan suuntaan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+          "feedback": "Oikein. Tasaisessa ympyräliikkeessä nopeuden suunta muuttuu koko ajan. Siksi asemalla on normaalikiihtyvyys $a_\\text{n} = \\tfrac{v^2}{r}$ kohti radan keskipistettä. Kokonaisvoima $\\Sigma F = \\tfrac{mv^2}{r}$ osoittaa samaan suuntaan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Liikkeen suuntaan eli radan tangentin suuntaan.",
-          "feedback": "Tangentin suuntainen voima muuttaisi vauhtia. Tasaisessa ympyräliikkeessä vauhti pysyy samana ja vain nopeuden suunta muuttuu. Siksi kokonaisvoima on kohtisuorassa nopeuteen nähden ja osoittaa kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+          "feedback": "Tangentin suuntainen voima muuttaisi vauhtia. Tasaisessa ympyräliikkeessä vauhti pysyy samana ja vain nopeuden suunta muuttuu. Siksi kokonaisvoima on kohtisuorassa nopeuteen nähden ja osoittaa kohti radan keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
-          "text": "Poispäin keskipisteestä, koska kappale pyrkii ulospäin.",
-          "feedback": "Kappale ei pyri ulospäin vaan suoraan eteenpäin, radan tangentin suuntaan. Jotta se kääntyisi, siihen täytyy vaikuttaa voima kohti keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+          "text": "Poispäin Maasta, koska asema pyrkii ulospäin.",
+          "feedback": "Asema ei pyri ulospäin vaan suoraan eteenpäin, radan tangentin suuntaan. Jotta se kääntyisi, siihen täytyy vaikuttaa voima kohti radan keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         },
         {
           "text": "Kokonaisvoima on nolla, koska vauhti ei muutu.",
-          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu. Siksi kappaleella on kiihtyvyys. Ilman kokonaisvoimaa kappale liikkuisi suoraan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
+          "feedback": "Vauhti ei muutu, mutta nopeuden suunta muuttuu. Siksi asemalla on kiihtyvyys. Ilman kokonaisvoimaa asema liikkuisi suoraan (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*)."
         }
       ]
     },

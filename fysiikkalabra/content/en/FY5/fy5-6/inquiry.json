@@ -24,24 +24,24 @@
       "optional": true,
       "type": "choice",
       "title": "Review: net force in circular motion",
-      "prompt": "A body goes round a horizontal circular path at a constant speed. In which direction does the net force on it point?",
+      "prompt": "The ISS orbits the Earth on a nearly circular path at a nearly constant speed. In which direction does the net force on the station point?",
       "choices": [
         {
-          "text": "Towards the centre of the path.",
+          "text": "Towards the centre of the path, that is the centre of the Earth.",
           "correct": true,
-          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the body has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre, and the net force $\\Sigma F = \\tfrac{mv^2}{r}$ points in the same direction (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+          "feedback": "Correct. In uniform circular motion the direction of the velocity changes all the time, so the station has a centripetal acceleration $a_\\text{n} = \\tfrac{v^2}{r}$ towards the centre of the path, and the net force $\\Sigma F = \\tfrac{mv^2}{r}$ points in the same direction (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "In the direction of motion, that is along the tangent of the path.",
-          "feedback": "A force along the tangent would change the speed. In uniform circular motion the speed stays the same and only the direction of the velocity changes, so the net force is perpendicular to the velocity and points towards the centre (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+          "feedback": "A force along the tangent would change the speed. In uniform circular motion the speed stays the same and only the direction of the velocity changes, so the net force is perpendicular to the velocity and points towards the centre of the path (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
-          "text": "Away from the centre, because the body tends to move outwards.",
-          "feedback": "The body does not tend to move outwards but straight ahead, along the tangent of the path. To make it turn, a force towards the centre must act on it (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+          "text": "Away from the Earth, because the station tends to move outwards.",
+          "feedback": "The station does not tend to move outwards but straight ahead, along the tangent of the path. To make it turn, a force towards the centre of the path must act on it (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         },
         {
           "text": "The net force is zero, because the speed does not change.",
-          "feedback": "The speed does not change, but the direction of the velocity does, so the body accelerates. Without a net force the body would move in a straight line (chapter *Centripetal acceleration and the equation of motion in a circle*)."
+          "feedback": "The speed does not change, but the direction of the velocity does, so the station accelerates. Without a net force the station would move in a straight line (chapter *Centripetal acceleration and the equation of motion in a circle*)."
         }
       ]
     },
