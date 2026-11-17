@@ -14,4 +14,4 @@ CONTENT-HASH: f60b307c452eec2c
 - Solutions: staged blocks, aligned equals signs, fractions, units upright with thin space, decimal separator right for the language, no horizontal overflow; set reads as one with the neighbouring tasks.
 
 ## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
