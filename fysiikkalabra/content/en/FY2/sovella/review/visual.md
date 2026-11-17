@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 66d2635ac1dd2950
+CONTENT-HASH: e593b9a8eff8089d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, *Other arguments* — 'the table's typical capacity factor, $0.70$' does not say which table; name it (for science: check that $0.70$ is the table's typical value for biomass).
+(none)
 
 ## Checked
-- Delta review of the one changed sentence in solutions.md (en). No captures exist for this hash (content/en/FY2/sovella/review/shots/ is absent), so this is judged from the source: plain prose with one inline $0.70$ in LaTeX, decimal point, comma-separated clause reads naturally; nothing in it can clip. A capture was not made; re-check if you want it confirmed on screen.
-- Hash: 66d2635ac1dd2950.
+- Delta only: diff of commit baa0ac1bf5 for content/en/FY2/sovella/solutions.md (whitespace-only paragraph splits; words, numbers and order unchanged).
+- Splits fall at meaningful boundaries: the result line vs its interpretation; the biomass counterargument vs "My answer" vs the share note; each source-comparison example split into observation, further detail and conclusion. No formula or inline chain is cut, no $...$ spans a break, and each paragraph is one idea, under about 120 words.
+- Capture: the Finnish capture content/fi/FY2/sovella/review/shots/FY2-sovella-page-390-18.png (layout unchanged, no overflow or clipping). The English Sovella is not captured by the screenshot tool.
+- Hash run at start and end: e593b9a8eff8089d.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
