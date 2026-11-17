@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 2e0c597a985386a4
+VERDICT: PASS
+CONTENT-HASH: 6edf712b0fd0697f
 
 ## Blocking
-- [Major] content/en/FY3/fy3-10/inquiry.json, Pohdinta recap card (lines 26, 39, 43) — the litre is written `\text{l}`, so the page shows "$3.0\,\text{l}$" as "3.01" and "2.01" (prompt, correct feedback and the ratio feedback; seen at 390 and 1280 px) — a symbol that reads as the digit 1 in new text, and the lint forbids it (NOTES.md §1) — write `\textsf{l}` in all three places (the lesson's own solutions already do).
 
 ## Polish
-- [Minor] Recap card — otherwise the display chain (\dfrac, 100 kPa · 3.0 l / 2.0 l) is well aligned at 390 px.
+- [Minor] Litre sign: `\textsf{l}` is now clearly not the digit 1, but at 390 px "3.0 l" is a thin upright stroke close to a vertical bar; acceptable, a shared KaTeX matter (`\ell` would be the alternative), no change requested.
+- [Minor] The correct feedback ends the display block with a full stop outside it ("$$…$$. In this lesson…"); renders cleanly, nothing to fix.
 
 ## Checked
-batch delta review: opened my own captures of the Pohdinta recap card with feedback open, correct option at 390 px and wrong option at 1280 px; the litre misreading is visible in both; the shipped captures lacked the feedback-open state. Hash unchanged at the end.
+- batch delta review: own captures of the Pohdinta (Recap: Boyle's law) card with the correct feedback open, 390 px and 1280 px (scratchpad fy3-10-card-390.png, fy3-10-card-1280.png): prompt, options, fraction chain with aligned "=", litre sign, closing sentence all legible and unclipped. Round-1 defect (l read as 1) resolved.

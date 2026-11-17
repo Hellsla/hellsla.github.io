@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8be3549cec667f27
+CONTENT-HASH: 61fec2274fcb774b
 
 ## Blocking
 
 ## Polish
-- [Minor] Recap card, correct feedback at 390 px — the Q = cmΔT chain wraps with "· 0.40 kg · 10 K" on its own row; acceptable automatic wrapping, readable.
+- [Minor] Pohdinta/Predict card feedback: the two aligned blocks now read as a sequence ("The time follows from the power:"); the first Q chain opens a row with a bare "· 0.40 kg" which is the existing aligned layout, no change needed.
 
 ## Checked
-batch delta review: opened my own captures of the Pohdinta recap card with feedback open, correct option at 390 px (two display blocks, \dfrac fraction in the t = Q/P block aligned) and wrong option at 1280 px (inline Q = Pt, t = Q/P); units upright, \cdot used, no clipping. Shipped captures lacked the feedback-open state. Hash unchanged at the end.
+- batch delta review: own captures of the changed task card with the correct-answer feedback open, 390 px and 1280 px (scratchpad fy3-7-card-390.png, fy3-7-card-1280.png); the linking sentence sits between the two aligned blocks, both blocks aligned at "=", nothing clipped, no overflow. Shipped captures fy3-7-fig-* unchanged and not reopened.
