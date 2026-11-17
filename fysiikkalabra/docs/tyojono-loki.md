@@ -660,6 +660,18 @@ caption-label mielivaltaisen yhdistelmän myös samalla rivillä (ennen: lukumuu
 kaavat yhä tiukasti. Uusi `report_problems` / `reviews.py check-report <id> [--lang] [--exercises]` (myös `verify`): vapaamuotoinen
 SCOPE-rivi ja kielen raportissa suomenkielisen lähteen hash hylätään ennen hyväksymistä. Testit `test_reviews.py` "0c".
 
+## [loki] 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali (2026-11-17, draft-PR, sääntöteksti odottaa opettajan hyväksyntää)
+`reviews.py`: luokka `fi-layout` (ei RULES-luokka, kuten `translation-of-passed`). Kielineutraali = muutos on vain esitystapaluokkaa
+(`LAYOUT_CATS`: reflow, md-paragraphs/paragraphs, caption-label, mikä tahansa yhdistelmä) JA käännöksen `layout_skeleton` (rivi kerrallaan:
+listakohta vai ei, kaavojen määrä, `$$`- ja aligned-lohkojen määrä, jokaisessa tekstitiedostossa) on sama kuin suomenkielisen tekstin
+(`source_layout_differs`). Silloin käännöksen ulkoasukatselmoija on `none` (carry-rivi, `from` = käännöksen oma läpäisty hash), kun suomenkielisellä
+osalla on aito ulkoasun PASS nykyiselle hashille (`source_visual_ok`; baseline-rivi ei kelpaa). `status` laskee carryn vain niin kauan kuin suomalainen PASS
+on voimassa; `verify` johtaa ehdot uudelleen. Ei kielineutraalia: sana, luku, merkki, yksikkö, kaava, kuva, otsikko-/label-teksti muuttuu; kappale
+jaettu eri kohdasta kuin suomeksi; käännöksen oma ulkoasun FAIL. Varoitusehto (koordinaattori välitti 2026-11-17 klo 21.05 opettajan hyväksynnän "approve 0e" ja lisäehdon): jos `check_layout.py` antaa en- tai fi-easy-sivulla varoituksen (sen ainoa hyväksytty huomautus on tunnettu leikkautuva kaava, `docs/clipped-formulas/`), kielellä tehdään oma ulkoasukatselmointi, ei carrya (`layout_warnings`). Säästö pienenee: `docs/clipped-formulas/`-listassa on 155 en- ja 125 fi-easy-riviä, ja niiden sivut jäävät carryn ulkopuolelle (oma ulkoasukatselmointi), joten edellä oleva säästöarvio on yläraja. Opettaja hyväksyi 0e:n koordinaattorille suoraan 2026-11-17 klo 21.05 ("approve 0e"), koordinaattori vahvisti sen erikseen. Ei kata kohteita (`carry-item`). Testit `test_reviews.py` "0e".
+Säästöarvio (FY6 #662, 24 ulkoasusarjaa, kolme kieltä): ennen 72 ulkoasukatselmointia (fi, en, fi-easy), nyt 24 suomeksi + 48 carryä. Mitattu keskiarvo
+(`usage.tsv`, 94 ulkoasun delta-katselmointia): 538 k tokenia ja 0,30 $ per katselmointi, joten 48 katselmointia ≈ 26 M tokenia ≈ 14 $ ja 48 vuoroa. Ylärajaa:
+säästö toteutuu vain käännöksille, joiden kappalejako vastaa suomea; muut katselmoidaan kuten ennen.
+
 ## 8p. `reviews.py`: kaavan sanat ja uusi tehtävä (2026-11-17, PR #684)
 (a) `_tr_text`: kaavan kaikki `\text{}`/`\mathrm{}`-sanat (yli 3 merkkiä) normalisoidaan paikanpitäjäksi (`FORMULA_WORD`); enintään 3 merkin sanat
 (N, kg, min, MeV, vrk) pysyvät tiukkoina, jotta yksikön muutos (vrk → s) näkyy yhä; luvut, operaattorit ja symbolit tiukkoina. (b) Uuden tehtävän oma `"id"`/`"level"`-rivi
