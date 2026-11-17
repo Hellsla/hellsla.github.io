@@ -22,21 +22,21 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: kierrosaika ja pyörimistaajuus",
-      "prompt": "Karuselli tekee yhden kierroksen $4{,}0\\,\\text{s}$:ssa. Mikä on sen pyörimistaajuus?",
+      "title": "Kertaa: kierrosaika ja taajuus",
+      "prompt": "Ruudun käyrästä näkyy, että punnus palaa alimpaan kohtaansa aina $0{,}50\\,\\text{s}$:n välein. Kuinka monta kertaa sekunnissa punnus käy alimmassa kohdassaan?",
       "choices": [
         {
-          "text": "$0{,}25\\,\\tfrac{1}{\\text{s}}$, koska sekunnissa ehtii neljäsosa kierroksesta.",
+          "text": "$2{,}0$ kertaa, koska yksi toisto kestää puoli sekuntia.",
           "correct": true,
-          "feedback": "Oikein. Pyörimistaajuus on kierrosajan käänteisluku, $f = \\tfrac{1}{T} = \\tfrac{1}{4{,}0\\,\\text{s}} = 0{,}25\\,\\tfrac{1}{\\text{s}}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Samat suureet kuvaavat tänään edestakaista liikettä."
+          "feedback": "Oikein. Sekunnissa ehtii $\\tfrac{1}{0{,}50\\,\\text{s}} = 2{,}0\\,\\tfrac{1}{\\text{s}}$ toistoa. Sama ajatus oli ympyräliikkeessä: pyörimistaajuus on kierrosajan käänteisluku, $f = \\tfrac{1}{T}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Samat suureet kuvaavat tänään edestakaista liikettä."
         },
         {
-          "text": "$4{,}0\\,\\tfrac{1}{\\text{s}}$, koska yksi kierros kestää neljä sekuntia.",
-          "feedback": "Neljä sekuntia on yhden kierroksen kesto eli kierrosaika. Pyörimistaajuus kertoo kierrosten määrän sekunnissa. Neljässä sekunnissa tulee yksi kierros, joten sekunnissa tulee $\\tfrac{1}{4{,}0}$ kierrosta eli $0{,}25\\,\\tfrac{1}{\\text{s}}$."
+          "text": "$0{,}50$ kertaa, koska yksi toisto kestää $0{,}50\\,\\text{s}$.",
+          "feedback": "$0{,}50\\,\\text{s}$ on yhden toiston kesto. Se on kuin kierrosaika ympyräliikkeessä. Toistojen määrä sekunnissa on sen käänteisluku, kuten pyörimistaajuus $f = \\tfrac{1}{T}$: $\\tfrac{1}{0{,}50\\,\\text{s}} = 2{,}0\\,\\tfrac{1}{\\text{s}}$."
         },
         {
-          "text": "$0{,}25\\,\\text{s}$, koska taajuus on aika jaettuna kierroksilla.",
-          "feedback": "Luku $0{,}25$ on oikea, mutta yksikkö ei ole. Pyörimistaajuus on kierrosten määrä aikayksikössä, joten sen yksikkö on $\\tfrac{1}{\\text{s}}$. Yksikkö ei ole sekunti."
+          "text": "Sitä ei voi laskea, koska punnus ei kierrä ympyrää.",
+          "feedback": "Toistuvaa liikettä kuvataan samoilla suureilla kuin pyörimistä. Ne ovat yhden toiston kesto ja toistojen määrä sekunnissa. Punnus palaa alimpaan kohtaansa $0{,}50\\,\\text{s}$:n välein. Siksi se käy siellä $2{,}0$ kertaa sekunnissa."
         }
       ],
       "optional": true

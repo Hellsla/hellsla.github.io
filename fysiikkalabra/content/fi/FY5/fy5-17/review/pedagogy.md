@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e29d9c5cb47aab9c
+CONTENT-HASH: 264fde04475c9835
 
 ## Blocking
 
+none
+
 ## Polish
+- The '1,6·10^3 m' option is f/v = 1623 with the wrong unit; name the number in its feedback so the repair is concrete.
+- Correct feedback previews 'yksityiskohtien erottuminen', not Ennuste 1 or 2; acceptable.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the numeric answer 3.08 → 3.1 cm (tolerance 0.03 still accepts the full-precision value) and the rewritten answer line of the solution that explains why two significant figures from the graph reading.
+batch delta review: new kertaus (2,5 MHz in tissue) uses neither the 65 µs echo of Ennuste 1 nor the gel question of Ennuste 2, so no answer is disclosed; context fits; Tunnetut split ok.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 318947dcf5129922
+CONTENT-HASH: ffd711b48645c6ec
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Recomputed Δd = 1540 m/s · 40 µs / 2 = 3.08 cm; answer 3.1 cm with tolerance 0.03 accepts 3.08 (and the one-last-digit check accepts 3.0–3.2, within the ±2 µs reading uncertainty of Δt); the new two-significant-figure reason (5 µs grid, ~1 µs reading) holds; mistakes 6.16 and 6.93 still distinct.
+batch delta review: new recap (probe $2.5\,\text{MHz}$, soft tissue $1540\,\text{m/s}$, the same speed the lesson uses throughout) recomputed: $\lambda = v/f = 0.616\,\text{mm} \to$ "about 0.62 mm" (correct), $vf = 3.85\cdot10^{9} \to 3.9\cdot10^{9}\,\text{m}$, $f/v = 1623 \to 1.6\cdot10^{3}$; exactly one correct option; the unchanged distractor feedback (product, inverted quotient with unit 1/m) still fits the new numbers; matches `lambda-2.5MHz` later in the lesson; lesson-answers.py runs.

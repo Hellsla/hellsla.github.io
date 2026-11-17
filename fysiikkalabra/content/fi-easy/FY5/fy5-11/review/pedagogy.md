@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6e488fc558e8d4f6
+CONTENT-HASH: 55eaaa9897e5d699
 
 ## Blocking
 
+none
+
 ## Polish
+- Kertaus-palaute "verrataan aukon leveyteen" nimeää tulevan vertailun; ei paljasta Ennuste 3:n suuntaa, mutta sanan "tänään" lauseen voisi jättää pois.
+
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the narrowed right-hand slit of the diffraction figure: it is now visibly narrower than the wavelength, matching its b < λ label and description.
+batch delta review: new retrieval task (lambda = v/f, 20 m) does not reveal Ennuste 1-3; unit-based distractor feedback repairs the v*f and f/v slips; consistent with Tarkista 1 context; paragraph split clear.

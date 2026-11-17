@@ -1,31 +1,113 @@
 ## fy5-k1
 
 ### a)
-**Perustelu:** Momentti on voiman ja sen varren tulo, $M = Fr$. Kohtisuorilla voimilla varsi on vaikutuskohdan etäisyys mutterin keskipisteestä: $M_1 = 100\,\text{N} \cdot 0{,}30\,\text{m} = 30\,\text{Nm}$ ja $$\begin{aligned} M_2 &= 150\,\text{N} \cdot 0{,}15\,\text{m} \\ &= 22{,}5\,\text{Nm} \end{aligned}$$. Vinon voiman varsi on $r = d\sin\alpha$. Koska $\sin 30^\circ = 0{,}5$, varsi on $r = 0{,}15\,\text{m}$, joten $M_3 = 120\,\text{N} \cdot 0{,}15\,\text{m} = 18\,\text{Nm}$. Järjestys on siis $M_1 > M_2 > M_3$. Vaihtoehto $M_3 > M_1 > M_2$ syntyy, jos kulma unohdetaan: $120\,\text{N} \cdot 0{,}30\,\text{m} = 36\,\text{Nm}$. Järjestys $M_2 > M_3 > M_1$ vertaa pelkkiä voimia ja $M_1 = M_3 > M_2$ pelkkiä etäisyyksiä.
+**Perustelu:** Momentti on voiman ja sen varren tulo, $M = Fr$.
+
+Kohtisuorilla voimilla varsi on vaikutuskohdan etäisyys mutterin keskipisteestä: $M_1 = 100\,\text{N} \cdot 0{,}30\,\text{m} = 30\,\text{Nm}$ ja $$\begin{aligned} M_2 &= 150\,\text{N} \cdot 0{,}15\,\text{m} \\ &= 22{,}5\,\text{Nm} \end{aligned}$$.
+
+Vinon voiman varsi on $r = d\sin\alpha$.
+
+Koska $\sin 30^\circ = 0{,}5$, varsi on $r = 0{,}15\,\text{m}$, joten $M_3 = 120\,\text{N} \cdot 0{,}15\,\text{m} = 18\,\text{Nm}$.
+
+Järjestys on siis $M_1 > M_2 > M_3$.
+
+Vaihtoehto $M_3 > M_1 > M_2$ syntyy, jos kulma unohdetaan: $120\,\text{N} \cdot 0{,}30\,\text{m} = 36\,\text{Nm}$.
+
+Järjestys $M_2 > M_3 > M_1$ vertaa pelkkiä voimia ja $M_1 = M_3 > M_2$ pelkkiä etäisyyksiä.
 
 ### b)
-**Perustelu:** Lankku on levossa, joten tukivoimien summa on lankun ja maalarin painojen summa, ja momenttien summa minkä tahansa pisteen suhteen on nolla. Valitaan momenttipisteeksi oikea pukki. Maalari on kaukana siitä, joten hänen painonsa momentti on suuri, ja vasemman pukin tukivoiman on oltava suuri, jotta sen momentti kumoaa sen. Lankun paino jakautuu pukeille tasan, mutta maalarin painosta suurempi osa tulee lähemmälle eli vasemmalle pukille. Vaihtoehto, jossa oikean pukin voima on suurempi, kääntää päättelyn: maalarin pitkä varsi oikean pukin suhteen kasvattaa vasemman pukin voimaa. Tukivoimat olisivat yhtä suuret vain, jos maalari seisoisi keskellä, ja niiden summa on aina painojen summa, missä maalari seisookin.
+**Perustelu:** Lankku on levossa, joten tukivoimien summa on lankun ja maalarin painojen summa, ja momenttien summa minkä tahansa pisteen suhteen on nolla.
+
+Valitaan momenttipisteeksi oikea pukki.
+
+Maalari on kaukana siitä, joten hänen painonsa momentti on suuri, ja vasemman pukin tukivoiman on oltava suuri, jotta sen momentti kumoaa sen.
+
+Lankun paino jakautuu pukeille tasan, mutta maalarin painosta suurempi osa tulee lähemmälle eli vasemmalle pukille.
+
+Vaihtoehto, jossa oikean pukin voima on suurempi, kääntää päättelyn: maalarin pitkä varsi oikean pukin suhteen kasvattaa vasemman pukin voimaa.
+
+Tukivoimat olisivat yhtä suuret vain, jos maalari seisoisi keskellä, ja niiden summa on aina painojen summa, missä maalari seisookin.
 
 ### c)
-**Perustelu:** Matkustaja on tasaisessa ympyräliikkeessä, joten hänen kiihtyvyytensä ja häneen vaikuttava kokonaisvoima osoittavat kohti kaarteen keskipistettä eli vasemmalle. Hitautensa vuoksi matkustajan keho pyrkii jatkamaan suoraan, auto kääntyy hänen altaan, ja oikea ovi tulee häntä vasten ja työntää häntä kohti keskipistettä. Painautuminen ovea vasten tuntuu ulospäin vetävältä voimalta, mutta mikään ei vedä matkustajaa ulospäin: todellista keskipakoisvoimaa ei ole. Kokonaisvoima ei ole nolla, koska nopeuden suunta muuttuu, vaikka vauhti pysyy samana, ja kiihtyvyys osoittaa kaarteen sisäpuolelle eikä ulospäin.
+**Perustelu:** Matkustaja on tasaisessa ympyräliikkeessä, joten hänen kiihtyvyytensä ja häneen vaikuttava kokonaisvoima osoittavat kohti kaarteen keskipistettä eli vasemmalle.
+
+Hitautensa vuoksi matkustajan keho pyrkii jatkamaan suoraan, auto kääntyy hänen altaan, ja oikea ovi tulee häntä vasten ja työntää häntä kohti keskipistettä.
+
+Painautuminen ovea vasten tuntuu ulospäin vetävältä voimalta, mutta mikään ei vedä matkustajaa ulospäin: todellista keskipakoisvoimaa ei ole.
+
+Kokonaisvoima ei ole nolla, koska nopeuden suunta muuttuu, vaikka vauhti pysyy samana, ja kiihtyvyys osoittaa kaarteen sisäpuolelle eikä ulospäin.
 
 ### d)
-**Perustelu:** Gravitaatiolain mukaan $F = \gamma\tfrac{m_1 m_2}{r^2}$. Kun suureet ovat SI-yksiköissä ja $r = 1{,}0\,\text{m}$, voima on $F = 6{,}674 \cdot 10^{-11} \cdot 60 \cdot 60\,\text{N}$. Siis $F \approx 2{,}4 \cdot 10^{-7}\,\text{N}$. Luku $2{,}4$ on lähempänä lukua $1$ kuin lukua $10$, joten suuruusluokka on $10^{-7}\,\text{N}$, niin pieni, ettei sitä huomaa. Vaihtoehto $10^{-11}\,\text{N}$ syntyy, jos etäisyys sijoitetaan senttimetreinä ($2{,}4 \cdot 10^{-11}\,\text{N}$), ja $10^{-1}\,\text{N}$, jos massat sijoitetaan grammoina ($0{,}24\,\text{N}$). $10^{3}\,\text{N}$ on opiskelijan paino $60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 590\,\text{N}$ eli Maan, ei toisen opiskelijan, vetovoima.
+**Perustelu:** Gravitaatiolain mukaan $F = \gamma\tfrac{m_1 m_2}{r^2}$.
+
+Kun suureet ovat SI-yksiköissä ja $r = 1{,}0\,\text{m}$, voima on $F = 6{,}674 \cdot 10^{-11} \cdot 60 \cdot 60\,\text{N}$.
+
+Siis $F \approx 2{,}4 \cdot 10^{-7}\,\text{N}$.
+
+Luku $2{,}4$ on lähempänä lukua $1$ kuin lukua $10$, joten suuruusluokka on $10^{-7}\,\text{N}$, niin pieni, ettei sitä huomaa.
+
+Vaihtoehto $10^{-11}\,\text{N}$ syntyy, jos etäisyys sijoitetaan senttimetreinä ($2{,}4 \cdot 10^{-11}\,\text{N}$), ja $10^{-1}\,\text{N}$, jos massat sijoitetaan grammoina ($0{,}24\,\text{N}$).
+
+$10^{3}\,\text{N}$ on opiskelijan paino $60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 590\,\text{N}$ eli Maan, ei toisen opiskelijan, vetovoima.
 
 ### e)
-**Perustelu:** Nopeus on paikan muutosnopeus eli $(t, x)$-kuvaajan kulmakerroin. Alussa kappale on ääriasennossa, jossa kuvaajan tangentti on vaakasuora, joten nopeus on nolla. Sen jälkeen $x$ pienenee, joten nopeus on negatiivinen, ja tasapainoasemassa, jossa $x = 0$, kuvaaja laskee jyrkimmin: nopeus on suurin negatiivinen. Tämä on kuvaaja C. Kuvaaja A on paikan kuvaaja itse: siinä nopeus olisi suurin ääriasennossa, jossa kappale on hetken levossa. Kuvaajassa B nopeuden etumerkki on väärin, ja kuvaaja D on kiihtyvyyden kuvaaja: kiihtyvyys on suurin negatiivinen silloin, kun poikkeama on suurin positiivinen.
+**Perustelu:** Nopeus on paikan muutosnopeus eli $(t, x)$-kuvaajan kulmakerroin.
+
+Alussa kappale on ääriasennossa, jossa kuvaajan tangentti on vaakasuora, joten nopeus on nolla.
+
+Sen jälkeen $x$ pienenee, joten nopeus on negatiivinen, ja tasapainoasemassa, jossa $x = 0$, kuvaaja laskee jyrkimmin: nopeus on suurin negatiivinen.
+
+Tämä on kuvaaja C.
+
+Kuvaaja A on paikan kuvaaja itse: siinä nopeus olisi suurin ääriasennossa, jossa kappale on hetken levossa.
+
+Kuvaajassa B nopeuden etumerkki on väärin, ja kuvaaja D on kiihtyvyyden kuvaaja: kiihtyvyys on suurin negatiivinen silloin, kun poikkeama on suurin positiivinen.
 
 ### f)
-**Perustelu:** Jaksonaika $T = 2\pi\sqrt{\tfrac{m}{k}}$ ei riipu amplitudista, joten se pysyy samana. Värähtelyn energia $\tfrac{1}{2}kA^2$ nelinkertaistuu, ja tasapainoasemassa se on kokonaan liike-energiaa $\tfrac{1}{2}mv_\text{max}^2$. Siksi $v_\text{max}^2$ nelinkertaistuu ja $v_\text{max}$ kaksinkertaistuu: kappale kulkee jaksossa kaksinkertaisen matkan kaksinkertaisella nopeudella samassa ajassa. Vaihtoehto, jossa jaksonaika kaksinkertaistuu, olettaa pidemmän matkan vievän enemmän aikaa, mutta suuremmasta poikkeamasta jousi myös kiihdyttää kappaletta voimakkaammin. Nelinkertaistuva on energia, ei nopeus.
+**Perustelu:** Jaksonaika $T = 2\pi\sqrt{\tfrac{m}{k}}$ ei riipu amplitudista, joten se pysyy samana.
+
+Värähtelyn energia $\tfrac{1}{2}kA^2$ nelinkertaistuu, ja tasapainoasemassa se on kokonaan liike-energiaa $\tfrac{1}{2}mv_\text{max}^2$.
+
+Siksi $v_\text{max}^2$ nelinkertaistuu ja $v_\text{max}$ kaksinkertaistuu: kappale kulkee jaksossa kaksinkertaisen matkan kaksinkertaisella nopeudella samassa ajassa.
+
+Vaihtoehto, jossa jaksonaika kaksinkertaistuu, olettaa pidemmän matkan vievän enemmän aikaa, mutta suuremmasta poikkeamasta jousi myös kiihdyttää kappaletta voimakkaammin.
+
+Nelinkertaistuva on energia, ei nopeus.
 
 ### g)
-**Perustelu:** Taajuus määräytyy lähteestä: ilman jokainen painevaihtelu saa vedenpinnan ja veden värähtelemään samassa tahdissa, joten taajuus pysyy $1000\,\text{Hz}$:nä. Aallonpituus on $\lambda = \tfrac{v}{f}$: ilmassa $340\,\text{m/s} : 1000\,\text{Hz} = 0{,}34\,\text{m}$ ja vedessä $1500\,\text{m/s} : 1000\,\text{Hz} = 1{,}5\,\text{m}$, joten aallonpituus kasvaa yli nelinkertaiseksi. Lyhenevä aallonpituus syntyy, jos ajatellaan tiheämmän veden puristavan aaltoa kokoon, mutta äänen nopeus vedessä on suurempi. Jos taajuus ja aallonpituus pysyisivät samoina, myös nopeus pysyisi samana, eikä taajuus muutu väliaineen vaihtuessa.
+**Perustelu:** Taajuus määräytyy lähteestä: ilman jokainen painevaihtelu saa vedenpinnan ja veden värähtelemään samassa tahdissa, joten taajuus pysyy $1000\,\text{Hz}$:nä.
+
+Aallonpituus on $\lambda = \tfrac{v}{f}$: ilmassa $340\,\text{m/s} : 1000\,\text{Hz} = 0{,}34\,\text{m}$ ja vedessä $1500\,\text{m/s} : 1000\,\text{Hz} = 1{,}5\,\text{m}$, joten aallonpituus kasvaa yli nelinkertaiseksi.
+
+Lyhenevä aallonpituus syntyy, jos ajatellaan tiheämmän veden puristavan aaltoa kokoon, mutta äänen nopeus vedessä on suurempi.
+
+Jos taajuus ja aallonpituus pysyisivät samoina, myös nopeus pysyisi samana, eikä taajuus muutu väliaineen vaihtuessa.
 
 ### h)
-**Perustelu:** Matkaero on $\Delta s = 0{,}60\,\text{m}$. Se on $1{,}5$ aallonpituutta, koska $0{,}60 : 0{,}40 = 1{,}5$, eli puolikkaan verran yli kokonaisen määrän aallonpituuksia. Kaiuttimet ovat samassa vaiheessa, joten pisteessä P toisen aallon harja kohtaa toisen pohjan: interferenssi on heikentävä, ja ääni on heikko. Täysin hiljaista ei ole, koska P on eri etäisyyksillä kaiuttimista ja aaltojen amplitudit ovat hieman eri suuret. Kahden kaiuttimen ääni ei siis aina vahvistu, vaan tulos riippuu matkaerosta. Interferenssi ei muuta taajuutta, ja huojunta vaatisi kaksi hieman eri taajuista ääntä.
+**Perustelu:** Matkaero on $\Delta s = 0{,}60\,\text{m}$.
+
+Se on $1{,}5$ aallonpituutta, koska $0{,}60 : 0{,}40 = 1{,}5$, eli puolikkaan verran yli kokonaisen määrän aallonpituuksia.
+
+Kaiuttimet ovat samassa vaiheessa, joten pisteessä P toisen aallon harja kohtaa toisen pohjan: interferenssi on heikentävä, ja ääni on heikko.
+
+Täysin hiljaista ei ole, koska P on eri etäisyyksillä kaiuttimista ja aaltojen amplitudit ovat hieman eri suuret.
+
+Kahden kaiuttimen ääni ei siis aina vahvistu, vaan tulos riippuu matkaerosta.
+
+Interferenssi ei muuta taajuutta, ja huojunta vaatisi kaksi hieman eri taajuista ääntä.
 
 ### i)
-**Perustelu:** Lähestyvän ambulanssin edessä aaltorintamat tihenevät, joten kuultu taajuus on suurempi kuin $f_0$, ja loittonevan ambulanssin takana ne harvenevat, joten taajuus on pienempi kuin $f_0$. Kun ambulanssi on vielä kaukana, se lähestyy kuulijaa lähes koko nopeudellaan, ja taajuus pysyy lähes vakiona. Ohituksen aikana kuulijaa kohti suuntautuva nopeuden osa muuttuu nopeasti, ja taajuus laskee $f_0$:n läpi. Tämä on kuvaaja B. Kuvaaja C esittää yleistä harhakäsitystä, että taajuus nousee ambulanssin lähestyessä: lähestyessä kasvaa äänen voimakkuus, ei taajuus. Kuvaajassa A Dopplerin ilmiötä ei ole, ja kuvaajassa D taajuus muuttuu väärään suuntaan.
+**Perustelu:** Lähestyvän ambulanssin edessä aaltorintamat tihenevät, joten kuultu taajuus on suurempi kuin $f_0$, ja loittonevan ambulanssin takana ne harvenevat, joten taajuus on pienempi kuin $f_0$.
+
+Kun ambulanssi on vielä kaukana, se lähestyy kuulijaa lähes koko nopeudellaan, ja taajuus pysyy lähes vakiona.
+
+Ohituksen aikana kuulijaa kohti suuntautuva nopeuden osa muuttuu nopeasti, ja taajuus laskee $f_0$:n läpi.
+
+Tämä on kuvaaja B.
+
+Kuvaaja C esittää yleistä harhakäsitystä, että taajuus nousee ambulanssin lähestyessä: lähestyessä kasvaa äänen voimakkuus, ei taajuus.
+
+Kuvaajassa A Dopplerin ilmiötä ei ole, ja kuvaajassa D taajuus muuttuu väärään suuntaan.
 
 ### j)
 **Perustelu:** Kaksi samanlaista leikkuria tuo kuulijalle kaksinkertaisen intensiteetin, joten taso kasvaa $10\,\text{dB} \cdot \lg 2 \approx 3\,\text{dB}$ ja on $93\,\text{dB}$. Desibelejä ei lasketa yhteen ($180\,\text{dB}$), koska asteikko on logaritminen. Taso $100\,\text{dB}$ vastaisi kymmenkertaista intensiteettiä eli kymmentä leikkuria. Taso ei myöskään pysy $90\,\text{dB}$:ssä, koska korvaan tulee sekunnissa kaksi kertaa enemmän energiaa.
@@ -42,7 +124,13 @@
 
 ### a)
 **Kysytty:** laudan voimakuvio ja pultin voiman suunta
-**Periaate:** Valitaan kappaleeksi lauta. Siihen vaikuttavat Maa (laudan paino laudan keskeltä, koska lauta on tasapaksu), hyppääjä (jalkojen voima kärjessä alaspäin; hyppääjä on levossa, joten voima on hänen painonsa suuruinen), tuki B (tukivoima ylöspäin) ja pultti A. Lauta on levossa, joten voimien summa on nolla ja momenttien summa minkä tahansa pisteen suhteen on nolla. Pultin voiman suunta saadaan momenttiehdosta tuen B suhteen.
+**Periaate:** Valitaan kappaleeksi lauta.
+
+Siihen vaikuttavat Maa (laudan paino laudan keskeltä, koska lauta on tasapaksu), hyppääjä (jalkojen voima kärjessä alaspäin; hyppääjä on levossa, joten voima on hänen painonsa suuruinen), tuki B (tukivoima ylöspäin) ja pultti A.
+
+Lauta on levossa, joten voimien summa on nolla ja momenttien summa minkä tahansa pisteen suhteen on nolla.
+
+Pultin voiman suunta saadaan momenttiehdosta tuen B suhteen.
 
 <svg data-fig="fy5-k2-fbd" viewBox="0 0 600 440" role="img" aria-label="Mallikuvio: hyppylaudan voimakuvio. Lauta on pitkä vaakasuora suorakulmio. Vasemmasta päästä A osoittaa alas pultin voima F A. Tuen kohdalta B, 1,2 metrin päästä päästä A, osoittaa ylös tukivoima N, joka on kuvion pisin nuoli. Laudan keskeltä osoittaa alas laudan paino G, lyhyt nuoli. Laudan oikeaan päähän osoittaa ylhäältä alas hyppääjän jalkojen voima F h. Nuolten pituudet ovat mittakaavassa." style="max-width:100%;font-size:24px">
   <rect x="70" y="253" width="480" height="18" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
@@ -62,7 +150,15 @@
   <foreignObject x="178" y="213.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{B}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Laudan voimat ovat paino $\overline{G}$ laudan keskeltä alas, hyppääjän jalkojen voima $\overline{F}_\text{h}$ kärjestä alas, tuen tukivoima $\overline{N}$ kohdasta B ylös ja pultin voima $\overline{F}_\text{A}$ takapäästä A. Valitaan momenttipisteeksi tuki B, jolloin tukivoimalla ei ole momenttia. Laudan paino (varsi $0{,}8\,\text{m}$) ja hyppääjän voima (varsi $2{,}8\,\text{m}$) kiertävät lautaa samaan suuntaan, kärki alaspäin. Jotta lauta pysyy levossa, pultin voiman on kierrettävä lautaa vastakkaiseen suuntaan, ja tuen takana olevassa päässä A se onnistuu vain alaspäin osoittavalla voimalla. Pultti siis vetää laudan takapäätä alas, ja tukivoima on kaikkien kolmen alaspäin osoittavan voiman summa, kuvion pisin nuoli.
+**Mallivastaus:** Laudan voimat ovat paino $\overline{G}$ laudan keskeltä alas, hyppääjän jalkojen voima $\overline{F}_\text{h}$ kärjestä alas, tuen tukivoima $\overline{N}$ kohdasta B ylös ja pultin voima $\overline{F}_\text{A}$ takapäästä A.
+
+Valitaan momenttipisteeksi tuki B, jolloin tukivoimalla ei ole momenttia.
+
+Laudan paino (varsi $0{,}8\,\text{m}$) ja hyppääjän voima (varsi $2{,}8\,\text{m}$) kiertävät lautaa samaan suuntaan, kärki alaspäin.
+
+Jotta lauta pysyy levossa, pultin voiman on kierrettävä lautaa vastakkaiseen suuntaan, ja tuen takana olevassa päässä A se onnistuu vain alaspäin osoittavalla voimalla.
+
+Pultti siis vetää laudan takapäätä alas, ja tukivoima on kaikkien kolmen alaspäin osoittavan voiman summa, kuvion pisin nuoli.
 
 ### b)
 **Annettu:** $m_\text{l} = 40\,\text{kg}$, $m_\text{h} = 60\,\text{kg}$, laudan pituus $4{,}0\,\text{m}$, tuki B $1{,}2\,\text{m}$:n päässä takapäästä, $g = 9{,}81\,\text{m/s}^2$
@@ -77,7 +173,13 @@
 ### c)
 **Annettu:** $G = 392{,}4\,\text{N}$, $F_\text{h} = 588{,}6\,\text{N}$, laudan painopiste $r_G = 0{,}8\,\text{m}$ tuen B kärjen puolella, tuki $1{,}2\,\text{m}$:n päässä takapäästä
 **Kysytty:** miten pultin voima muuttuu, ja hyppääjän paikka, jossa $F_\text{A} = 0$
-**Periaate:** Momenttiehto tuen B suhteen: $$F_\text{A} \cdot 1{,}2\,\text{m} = G \cdot 0{,}8\,\text{m} + F_\text{h} r_\text{h}$$, missä $r_\text{h}$ on hyppääjän etäisyys tuesta kärjen puolella. Kun hyppääjä kävelee kohti tukea, $r_\text{h}$ ja siksi myös pultin voima pienenevät. Tuen kohdalla $r_\text{h} = 0$, mutta laudan paino vaatii vielä pultin voiman $392{,}4 \cdot 0{,}8 : 1{,}2\,\text{N} \approx 262\,\text{N}$. Pultin voima on nolla vasta, kun hyppääjä on tuen takana etäisyydellä $x$ niin, että hänen momenttinsa kumoaa laudan painon momentin.
+**Periaate:** Momenttiehto tuen B suhteen: $$F_\text{A} \cdot 1{,}2\,\text{m} = G \cdot 0{,}8\,\text{m} + F_\text{h} r_\text{h}$$, missä $r_\text{h}$ on hyppääjän etäisyys tuesta kärjen puolella.
+
+Kun hyppääjä kävelee kohti tukea, $r_\text{h}$ ja siksi myös pultin voima pienenevät.
+
+Tuen kohdalla $r_\text{h} = 0$, mutta laudan paino vaatii vielä pultin voiman $392{,}4 \cdot 0{,}8 : 1{,}2\,\text{N} \approx 262\,\text{N}$.
+
+Pultin voima on nolla vasta, kun hyppääjä on tuen takana etäisyydellä $x$ niin, että hänen momenttinsa kumoaa laudan painon momentin.
 **Kaava:** $F_\text{h} x = G r_G \quad\Rightarrow\quad x = \dfrac{G r_G}{F_\text{h}}$, ja etäisyys takapäästä on $1{,}2\,\text{m} - x$.
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $x = \dfrac{392{,}4\,\text{N} \cdot 0{,}8\,\text{m}}{588{,}6\,\text{N}} \approx 0{,}533\,\text{m}$, joten etäisyys takapäästä on $1{,}2\,\text{m} - 0{,}533\,\text{m} \approx 0{,}67\,\text{m}$.
@@ -147,7 +249,19 @@
   <foreignObject x="118.5" y="285.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kohti Maan keskipistettä}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Kameraan vaikuttaa vain Maan gravitaatiovoima $\overline{F}$ kohti Maan keskipistettä. Kameran nopeus $\overline{v}$ on radan tangentin suuntainen, ja sen kiihtyvyys $\overline{a}$ eli normaalikiihtyvyys osoittaa gravitaatiovoiman suuntaan kohti Maan keskipistettä. Gravitaatio ei ole kadonnut, vaan se on radalla lähes yhtä suuri kuin maanpinnalla. Gravitaatio antaa kameralle ja satelliitille saman kiihtyvyyden $\tfrac{\gamma M}{r^2} \approx 8{,}4\,\text{m/s}^2$ niiden massasta riippumatta, joten ne ovat vapaassa pudotuksessa yhdessä: ne putoavat koko ajan kohti Maata, mutta suuren ratanopeuden vuoksi ohittavat sen. Koska ne putoavat samalla tavalla, satelliitin seinät eivät paina kameraa eikä niiden välillä ole tukivoimaa, ja kamera pysyy satelliitin suhteen paikallaan. Tämä on painottomuutta. Mikään ”keskipakoisvoima” ei kumoa gravitaatiota: jos kokonaisvoima olisi nolla, kamera jatkaisi suoraan eikä kiertäisi Maata.
+**Mallivastaus:** Kameraan vaikuttaa vain Maan gravitaatiovoima $\overline{F}$ kohti Maan keskipistettä.
+
+Kameran nopeus $\overline{v}$ on radan tangentin suuntainen, ja sen kiihtyvyys $\overline{a}$ eli normaalikiihtyvyys osoittaa gravitaatiovoiman suuntaan kohti Maan keskipistettä.
+
+Gravitaatio ei ole kadonnut, vaan se on radalla lähes yhtä suuri kuin maanpinnalla.
+
+Gravitaatio antaa kameralle ja satelliitille saman kiihtyvyyden $\tfrac{\gamma M}{r^2} \approx 8{,}4\,\text{m/s}^2$ niiden massasta riippumatta, joten ne ovat vapaassa pudotuksessa yhdessä: ne putoavat koko ajan kohti Maata, mutta suuren ratanopeuden vuoksi ohittavat sen.
+
+Koska ne putoavat samalla tavalla, satelliitin seinät eivät paina kameraa eikä niiden välillä ole tukivoimaa, ja kamera pysyy satelliitin suhteen paikallaan.
+
+Tämä on painottomuutta.
+
+Mikään ”keskipakoisvoima” ei kumoa gravitaatiota: jos kokonaisvoima olisi nolla, kamera jatkaisi suoraan eikä kiertäisi Maata.
 
 ### d)
 **Annettu:** $h = 400\,\text{km}$, $R = 6371\,\text{km}$, $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -156,7 +270,11 @@
 **Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$, missä $r = R + h$
 **Muunnokset:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $v = \sqrt{\dfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{6{,}771 \cdot 10^{6}}}\,\tfrac{\text{m}}{\text{s}} \approx 7671\,\tfrac{\text{m}}{\text{s}}$
-**Vastaus:** Ratanopeus on $400\,\text{km}$:n korkeudella noin $7{,}67\,\text{km/s}$, eli suurempi kuin b-kohdan ylemmän radan nopeus $7{,}60\,\text{km/s}$, vaikka ilmanvastus jarruttaa satelliittia: lähempänä Maata gravitaatio on voimakkaampi, ja ympyräradalla pysyminen vaatii suuremman nopeuden. Ympyräratamalli kuvaa liikettä niin kauan kuin ilmanvastus muuttaa rataa kierroksen aikana vain vähän. Alempana ilma on tiheämpää, jarrutus kasvaa ja rata madaltuu yhä nopeammin; lopulta satelliitti putoaa ilmakehään, eikä sen liike ole enää tasaista ympyräliikettä.
+**Vastaus:** Ratanopeus on $400\,\text{km}$:n korkeudella noin $7{,}67\,\text{km/s}$, eli suurempi kuin b-kohdan ylemmän radan nopeus $7{,}60\,\text{km/s}$, vaikka ilmanvastus jarruttaa satelliittia: lähempänä Maata gravitaatio on voimakkaampi, ja ympyräradalla pysyminen vaatii suuremman nopeuden.
+
+Ympyräratamalli kuvaa liikettä niin kauan kuin ilmanvastus muuttaa rataa kierroksen aikana vain vähän.
+
+Alempana ilma on tiheämpää, jarrutus kasvaa ja rata madaltuu yhä nopeammin; lopulta satelliitti putoaa ilmakehään, eikä sen liike ole enää tasaista ympyräliikettä.
 **Järkevyys:** Säde pienenee vain noin $2\,\%$, ja nopeus on verrannollinen säteen neliöjuuren käänteislukuun, joten nopeus kasvaa vain noin $1\,\%$, kuten tulos osoittaa.
 
 ### Yleisiä virheitä
@@ -276,7 +394,17 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 ### d)
 **Kysytty:** miksi suora ei kulje origon kautta, pallon säde kuvaajasta ja vaikutus $g$:n arvoon
 **Periaate:** Heilurin pituus on $L = l + r$, missä $r$ on pallon säde, koska pituus mitattiin pallon yläpintaan eikä keskipisteeseen. Silloin $$\begin{aligned} T^2 &= \tfrac{4\pi^2}{g}\,(l + r) \\ &= \tfrac{4\pi^2}{g}\,l + \tfrac{4\pi^2}{g}\,r \end{aligned}$$.
-**Mallivastaus:** Jokainen mitattu pituus on säteen verran todellista heilurin pituutta lyhyempi. Siksi suora on siirtynyt ylöspäin: kun $l = 0$, heilurin pituus olisi vielä $r$, ja $T^2$-akselin leikkauskohta on $\tfrac{4\pi^2}{g}\,r$. Kuvaajan mukaan leikkauskohta on noin $0{,}09\,\text{s}^2$, joten säde on noin $0{,}09\,\text{s}^2 : 4{,}0\,\tfrac{\text{s}^2}{\text{m}} \approx 0{,}02\,\text{m}$ eli noin $2\,\text{cm}$. Saman tuloksen saa, kun suoraa jatketaan $l$-akselille: se leikkaa akselin noin kohdassa $l = -2\,\text{cm}$. Vakiosuuruinen virhe pituudessa siirtää suoraa mutta ei muuta sen kulmakerrointa, joten c-kohdan tulos $g$:lle ei muutu. Kulmakertoimesta määrittäminen poistaa siis tämän systemaattisen virheen, kun taas yhdestä mittauksesta pituudella $l$ laskettu $g$ olisi liian pieni.
+**Mallivastaus:** Jokainen mitattu pituus on säteen verran todellista heilurin pituutta lyhyempi.
+
+Siksi suora on siirtynyt ylöspäin: kun $l = 0$, heilurin pituus olisi vielä $r$, ja $T^2$-akselin leikkauskohta on $\tfrac{4\pi^2}{g}\,r$.
+
+Kuvaajan mukaan leikkauskohta on noin $0{,}09\,\text{s}^2$, joten säde on noin $0{,}09\,\text{s}^2 : 4{,}0\,\tfrac{\text{s}^2}{\text{m}} \approx 0{,}02\,\text{m}$ eli noin $2\,\text{cm}$.
+
+Saman tuloksen saa, kun suoraa jatketaan $l$-akselille: se leikkaa akselin noin kohdassa $l = -2\,\text{cm}$.
+
+Vakiosuuruinen virhe pituudessa siirtää suoraa mutta ei muuta sen kulmakerrointa, joten c-kohdan tulos $g$:lle ei muutu.
+
+Kulmakertoimesta määrittäminen poistaa siis tämän systemaattisen virheen, kun taas yhdestä mittauksesta pituudella $l$ laskettu $g$ olisi liian pieni.
 
 ### Yleisiä virheitä
 - Jaksonajaksi otetaan $t_{10}$ jakamatta sitä kymmenellä, tai epävarmuutta ei jaeta kymmenellä.
@@ -328,7 +456,13 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
   <foreignObject x="290" y="345.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$L$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Perustaajuudella kielellä on solmut S kummassakin päässä ja yksi kupu K keskellä: kielen pituus on puolet aallonpituudesta. Seuraavalla ominaistaajuudella kielellä on solmut päissä ja keskellä ja kaksi kupua, jotka värähtelevät vastakkaisiin suuntiin: kielen pituus on yksi aallonpituus. Seisova aalto syntyy vain, kun päistä heijastuneet aallot vahvistavat toisiaan eli kielen pituus on puolen aallonpituuden monikerta, $L = n \cdot \tfrac{\lambda}{2}$, missä $n = 1, 2, 3, \ldots$ Muilla aallonpituuksilla heijastuneet aallot kohtaavat eri vaiheissa ja heikentävät toisiaan, eikä värähtely jää soimaan. Koska aallon nopeus kielessä on vakio, vain näitä aallonpituuksia vastaavat taajuudet $f = \tfrac{v}{\lambda}$ ovat kielen ominaistaajuuksia.
+**Mallivastaus:** Perustaajuudella kielellä on solmut S kummassakin päässä ja yksi kupu K keskellä: kielen pituus on puolet aallonpituudesta.
+
+Seuraavalla ominaistaajuudella kielellä on solmut päissä ja keskellä ja kaksi kupua, jotka värähtelevät vastakkaisiin suuntiin: kielen pituus on yksi aallonpituus.
+
+Seisova aalto syntyy vain, kun päistä heijastuneet aallot vahvistavat toisiaan eli kielen pituus on puolen aallonpituuden monikerta, $L = n \cdot \tfrac{\lambda}{2}$, missä $n = 1, 2, 3, \ldots$ Muilla aallonpituuksilla heijastuneet aallot kohtaavat eri vaiheissa ja heikentävät toisiaan, eikä värähtely jää soimaan.
+
+Koska aallon nopeus kielessä on vakio, vain näitä aallonpituuksia vastaavat taajuudet $f = \tfrac{v}{\lambda}$ ovat kielen ominaistaajuuksia.
 
 ### b)
 **Annettu:** $L = 0{,}550\,\text{m}$, $f_1 = 196\,\text{Hz}$
@@ -470,13 +604,33 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Kaava:** $\dfrac{\Delta v}{v} = \dfrac{\Delta d}{d} + \dfrac{\Delta t}{t}$ ja $\Delta L = 10\,\text{dB} \cdot \lg\left(\dfrac{s_2}{s_1}\right)^2$, missä $s = 2d$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** Lyhin: $\dfrac{0{,}1\,\text{m}}{15{,}0\,\text{m}} + \dfrac{0{,}002\,\text{s}}{0{,}090\,\text{s}} \approx 0{,}0067 + 0{,}022 \approx 0{,}029$. Pisin: $\dfrac{0{,}1\,\text{m}}{65{,}0\,\text{m}} + \dfrac{0{,}002\,\text{s}}{0{,}386\,\text{s}} \approx 0{,}0015 + 0{,}0052 \approx 0{,}0067$. Tasojen ero: $\Delta L = 10\,\text{dB} \cdot \lg\left(\dfrac{130\,\text{m}}{30\,\text{m}}\right)^2 \approx 12{,}7\,\text{dB}$.
-**Vastaus:** Nopeuden suhteellinen epävarmuus on lyhimmällä etäisyydellä noin $3\,\%$ ja pisimmällä noin $0{,}7\,\%$; kummallakin suurin osuus on ajan epävarmuudella. Pitkä etäisyys on siis tarkempi, koska samat epävarmuudet ovat pienempi osa mitatusta ajasta ja matkasta. Kaiun taso on kuitenkin pisimmällä etäisyydellä noin $13\,\text{dB}$ pienempi, ja heikko kaiku erottuu huonosti taustamelusta ja muista heijastuksista. Sopiva etäisyys on siis niin pitkä kuin kaiku vielä erottuu selvästi taustamelusta: tässä mittauksessa pisimmät etäisyydet antoivat tarkimmat tulokset.
+**Vastaus:** Nopeuden suhteellinen epävarmuus on lyhimmällä etäisyydellä noin $3\,\%$ ja pisimmällä noin $0{,}7\,\%$; kummallakin suurin osuus on ajan epävarmuudella.
+
+Pitkä etäisyys on siis tarkempi, koska samat epävarmuudet ovat pienempi osa mitatusta ajasta ja matkasta.
+
+Kaiun taso on kuitenkin pisimmällä etäisyydellä noin $13\,\text{dB}$ pienempi, ja heikko kaiku erottuu huonosti taustamelusta ja muista heijastuksista.
+
+Sopiva etäisyys on siis niin pitkä kuin kaiku vielä erottuu selvästi taustamelusta: tässä mittauksessa pisimmät etäisyydet antoivat tarkimmat tulokset.
 **Järkevyys:** Lyhimmän mittauksen nopeus $333\,\text{m/s}$ poikkeaa suoran arvosta $336\,\text{m/s}$ noin $1\,\%$, mikä on sen epävarmuuden $3\,\%$ rajoissa.
 
 ### e)
 **Kysytty:** miksi kapea pylväs ei antanut kaikua, sekä ryhmän tuloksen luotettavuus ja parannusehdotus
 **Periaate:** Aallonpituus on $\lambda = \tfrac{v}{f}$. Kun aalto kohtaa esteen, joka ei ole aallonpituuteen verrattuna suuri, aalto taipuu esteen ympäri eli diffraktoituu. Suuri tasainen pinta heijastaa aallon heijastuslain mukaisesti, kapea kaareva pinta hajottaa heijastuneen aallon moneen suuntaan.
-**Mallivastaus:** Kapuloiden äänen aallonpituudet ovat $\tfrac{336\,\text{m/s}}{3000\,\text{Hz}} \approx 0{,}11\,\text{m}$ ja $\tfrac{336\,\text{m/s}}{300\,\text{Hz}} \approx 1{,}1\,\text{m}$ välillä. Pylväs on $0{,}30\,\text{m}$ leveä. Matalilla äänillä, joiden aallonpituus on pylvään levyinen tai pidempi, ääni taipuu pylvään ympäri ja jatkaa eteenpäin, eikä juuri mitään heijastu takaisin. Korkeimmilla äänillä pylväs on noin kolmen aallonpituuden levyinen, mutta kapea ja pyöreä pylväs heijastaa takaisin vain pienen osan äänestä ja hajottaa sen sivuille. Kummassakin tapauksessa mittaajalle palaava kaiku on niin heikko, että se hukkuu taustameluun. Koulun seinä on monta aallonpituutta leveä, joten se heijastaa äänen heijastuslain mukaisesti takaisin mittaajaa kohti. Ensimmäisen ryhmän tulos on luotettava: kuvaajan nopeus poikkeaa lämpötilan mukaisesta arvosta alle prosentin, mikä on mittausten epävarmuuden rajoissa, ja pisteet ovat lähes suoralla. Tulosta parantaisivat esimerkiksi toistot jokaisella etäisyydellä, pidemmät etäisyydet hiljaisessa paikassa, lämpötilan ja tuulen tarkistus mittauksen aikana tai kahden mikrofonin menetelmä, jossa ajan lukeminen on tarkempaa.
+**Mallivastaus:** Kapuloiden äänen aallonpituudet ovat $\tfrac{336\,\text{m/s}}{3000\,\text{Hz}} \approx 0{,}11\,\text{m}$ ja $\tfrac{336\,\text{m/s}}{300\,\text{Hz}} \approx 1{,}1\,\text{m}$ välillä.
+
+Pylväs on $0{,}30\,\text{m}$ leveä.
+
+Matalilla äänillä, joiden aallonpituus on pylvään levyinen tai pidempi, ääni taipuu pylvään ympäri ja jatkaa eteenpäin, eikä juuri mitään heijastu takaisin.
+
+Korkeimmilla äänillä pylväs on noin kolmen aallonpituuden levyinen, mutta kapea ja pyöreä pylväs heijastaa takaisin vain pienen osan äänestä ja hajottaa sen sivuille.
+
+Kummassakin tapauksessa mittaajalle palaava kaiku on niin heikko, että se hukkuu taustameluun.
+
+Koulun seinä on monta aallonpituutta leveä, joten se heijastaa äänen heijastuslain mukaisesti takaisin mittaajaa kohti.
+
+Ensimmäisen ryhmän tulos on luotettava: kuvaajan nopeus poikkeaa lämpötilan mukaisesta arvosta alle prosentin, mikä on mittausten epävarmuuden rajoissa, ja pisteet ovat lähes suoralla.
+
+Tulosta parantaisivat esimerkiksi toistot jokaisella etäisyydellä, pidemmät etäisyydet hiljaisessa paikassa, lämpötilan ja tuulen tarkistus mittauksen aikana tai kahden mikrofonin menetelmä, jossa ajan lukeminen on tarkempaa.
 
 ### Yleisiä virheitä
 - Kohdassa a matkaksi otetaan $d$ eikä $2d$, jolloin nopeudeksi saadaan noin $167\,\text{m/s}$.
@@ -520,7 +674,13 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Kaava:** $L_2 = L_1 + 10\,\text{dB} \cdot \lg\left(\dfrac{r_1}{r_2}\right)^2$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L_2 = 103\,\text{dB} + 10\,\text{dB} \cdot \lg\left(\dfrac{10\,\text{m}}{25\,\text{m}}\right)^2 \approx 103\,\text{dB} - 8\,\text{dB} = 95\,\text{dB}$. Tulppien kanssa korvalle tulee $95\,\text{dB} - 12\,\text{dB} = 83\,\text{dB}$, joten $n = \dfrac{83\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -0{,}67$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{-0{,}67}} \approx 12{,}7\,\text{h}$.
-**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$. Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla vertailuaika on noin $13\,\text{h}$, joten neljän tunnin vuoron annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan. Ilman tulppia taso $95\,\text{dB}$ ylittää kummankin toiminta-arvon, joten tulppia on käytettävä koko vuoron ajan. Korvalle tuleva $83\,\text{dB}$ jää raja-arvon $87\,\text{dB(A)}$ alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta, joten melua kannattaa vähentää muutenkin.
+**Vastaus:** Uudella paikalla melutaso on noin $95\,\text{dB}$.
+
+Tulppien kanssa korvalle tulee noin $83\,\text{dB}$, jolla vertailuaika on noin $13\,\text{h}$, joten neljän tunnin vuoron annos jää vertailuannoksen alle, kun tulppia pidetään koko vuoron ajan.
+
+Ilman tulppia taso $95\,\text{dB}$ ylittää kummankin toiminta-arvon, joten tulppia on käytettävä koko vuoron ajan.
+
+Korvalle tuleva $83\,\text{dB}$ jää raja-arvon $87\,\text{dB(A)}$ alle, mutta vertailuannoksen alittaminen ei takaa kuulon turvallisuutta, joten melua kannattaa vähentää muutenkin.
 **Järkevyys:** Neljän tunnin vuoron vertailutaso on $85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, ja $83\,\text{dB}$ jää sen alle. Etäisyys kasvaa $2{,}5$-kertaiseksi eli enemmän kuin kerran mutta vähemmän kuin kahdesti kaksinkertaiseksi, joten tason on laskettava $6$–$12\,\text{dB}$: $8\,\text{dB}$ on uskottava.
 
 ### d)
@@ -540,7 +700,19 @@ Vaaka-akselilla on langan pituus $l\ (\text{m})$ ja pystyakselilla $T^2\ (\text{
 **Kaava:** $D = \dfrac{t}{t_\text{v}}$, missä $t_\text{v} = \dfrac{8\,\text{h}}{2^{\,n}}$ ja $n = \dfrac{L - 25\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** Korvalle tulee $103\,\text{dB} - 25\,\text{dB} = 78\,\text{dB}$, joten $n = \dfrac{78\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} \approx -2{,}33$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{-2{,}33}} \approx 40\,\text{h}$ ja $D = \dfrac{4{,}0\,\text{h}}{40{,}3\,\text{h}} \approx 0{,}099$.
-**Vastaus:** Kupusuojaimilla annos on noin $10\,\%$ vertailuannoksesta. Suosittelen kupusuojaimia, joiden läpi radiopuhelinta voi kuunnella: niitä ei tarvitse ottaa pois, ja d-kohdan mukaan lyhytkin tauko ilman suojaimia moninkertaistaa annoksen. Vartiopaikan siirto kauemmas pienentää annosta lisää, ja tulppia voi käyttää varalla. Arvio on suuntaa antava. Kaiutintorni ei ole pistemäinen lähde, joten taso pienenee etäisyyden kasvaessa hitaammin kuin mallissa, ja yleisön ääni ja heijastukset lisäävät melua. Melutaso vaihtelee kappaleiden mukaan, eikä keskiarvo kerro voimakkaista huipuista. Lisäksi suojainten todellinen vaimennus ja ihmisten kuulon herkkyys vaihtelevat, joten vertailuannoksen alittaminen ei takaa kuulon turvallisuutta ja altistus kannattaa pitää selvästi sen alapuolella.
+**Vastaus:** Kupusuojaimilla annos on noin $10\,\%$ vertailuannoksesta.
+
+Suosittelen kupusuojaimia, joiden läpi radiopuhelinta voi kuunnella: niitä ei tarvitse ottaa pois, ja d-kohdan mukaan lyhytkin tauko ilman suojaimia moninkertaistaa annoksen.
+
+Vartiopaikan siirto kauemmas pienentää annosta lisää, ja tulppia voi käyttää varalla.
+
+Arvio on suuntaa antava.
+
+Kaiutintorni ei ole pistemäinen lähde, joten taso pienenee etäisyyden kasvaessa hitaammin kuin mallissa, ja yleisön ääni ja heijastukset lisäävät melua.
+
+Melutaso vaihtelee kappaleiden mukaan, eikä keskiarvo kerro voimakkaista huipuista.
+
+Lisäksi suojainten todellinen vaimennus ja ihmisten kuulon herkkyys vaihtelevat, joten vertailuannoksen alittaminen ei takaa kuulon turvallisuutta ja altistus kannattaa pitää selvästi sen alapuolella.
 **Järkevyys:** Kupusuojaimet vaimentavat $13\,\text{dB}$ enemmän kuin tulpat todellisuudessa, eli vähän yli neljä $3\,\text{dB}$:n askelta: annos pienenee noin $2^{4{,}33} \approx 20$-osaan b-kohdan $200\,\%$:sta, noin $10\,\%$:iin.
 
 ### Yleisiä virheitä

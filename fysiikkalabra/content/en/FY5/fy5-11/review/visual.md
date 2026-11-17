@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8c1d8409c7aa46fe
+CONTENT-HASH: d1ccad1ab3b8e737
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: worked example steps 1-2 at 390 px (example-390-1); paragraph splits read naturally, formulas and units unchanged and rendered in KaTeX, nothing clipped.
+- batch delta review: stage-herata-390 capture (and fy5-11: recap choice rendered cleanly: units upright, three options legible); changed text is LaTeX with units, natural English.

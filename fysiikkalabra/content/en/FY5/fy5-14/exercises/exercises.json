@@ -202,7 +202,7 @@
       "unit": "m/s",
       "tolerance": 0.03,
       "data": {
-        "caption": "Example data: frequency of the horn as the car approaches",
+        "caption": "Frequency of the horn as the car approaches",
         "columns": [
           "Measurement",
           "$f\\,(\\text{Hz})$"
@@ -240,7 +240,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Example data: peaks of the spectra, relative height",
+        "caption": "Peaks of the spectra, relative height",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "Flute",
@@ -367,7 +367,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Example data: change in frequency during the heartbeat",
+        "caption": "Change in frequency during the heartbeat",
         "columns": [
           "$t\\,(\\text{s})$",
           "$\\Delta f\\,(\\text{kHz})$"
@@ -412,7 +412,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Example data: peaks of the spectra, relative amplitude",
+        "caption": "Peaks of the spectra, relative amplitude",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "Middle",
