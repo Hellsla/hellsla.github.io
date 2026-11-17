@@ -749,7 +749,7 @@ expect("translation compare: {,} and . and whitespace are the same formula", rv.
 expect("... a sub- or superscript label may be translated, and is recorded for the one-to-one check",
        rv._tr_text("$E_\\text{sähkö} = 216\\,\\text{kJ}$", "$E_\\text{elec} = 216\\,\\text{kJ}$", _p) and ("sähkö", "elec") in _p)
 expect("... a unit inside \\text{} may not change", not rv._tr_text("$t = 230\\,\\text{vrk}$", "$t = 230\\,\\text{s}$", []))
-expect("... formulas in another order are not equivalent", not rv._tr_text("$4{,}0\\,\\text{s}$ ja $18\\,\\text{m}$", "$18\\,\\text{m}$ in $4.0\\,\\text{s}$", []))
+expect("... formulas in another order are equivalent (0c: where a language puts a formula in its sentence is no science)", rv._tr_text("$4{,}0\\,\\text{s}$ ja $18\\,\\text{m}$", "$18\\,\\text{m}$ in $4.0\\,\\text{s}$", []))
 expect("... nor another number outside a formula", not rv._tr_text("Haaran 3 virta", "The current of branch 2", []))
 expect("... an option's text keeps its labels in order", not rv._tr_text("Kappale B", "Body D", [], labels=True) and rv._tr_text("Kappale B", "A body B", [], labels=True))
 t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
@@ -930,6 +930,47 @@ expect("8o: ... and an item of a list under an experiment key (vary) is still ex
        _cl(json.dumps({"vary": ["m", "v"]}, indent=1), json.dumps({"vary": ["m", "h"]}, indent=1)) == {"experiment"})
 expect("8o: a JSON view of the string values keeps non-strings and keys", rv._json_strings('{"a": ["x", 1, true], "b": {"c": "y"}}', str.upper) == json.dumps({"a": ["X", 1, True], "b": {"c": "Y"}}, indent=1)
        and rv._json_strings("{", str.upper) is None)
+
+# 0c. one presentation class: reflow, paragraphs, caption label and any mix of them; an order-free translation check;
+# a report's own hash and a well-formed scope line (work queue 0c, 2026-11-17)
+_fc = rv.format_categories
+_MD = "**Tulos.** Lasketaan $a = b + c$ ja saadaan $x = 2{,}5\\,\\text{m}$, koska $m$ on vakio."
+_MD2 = "**Tulos.**\n\n- Lasketaan\n$$\\begin{aligned} a &= b + c \\\\ &= d \\end{aligned}$$"
+_A = "Lasketaan $a = b$\n$= c$ ja saadaan tulos. Sitten toinen asia."
+_B = "Lasketaan\n\n$$\\begin{aligned} a &= b = c \\end{aligned}$$\n\n- ja saadaan tulos.\n- Sitten toinen asia."
+expect("0c: reflow and a paragraph cut into a list on the same lines are both categories", _fc(_A, _B, "lesson.md") == {"reflow", "md-paragraphs"}, str(_fc(_A, _B, "lesson.md")))
+expect("0c: a paragraph cut alone is md-paragraphs only", _fc("Yksi lause. Toinen lause.", "Yksi lause.\n\nToinen lause.", "lesson.md") == {"md-paragraphs"})
+expect("0c: a chain re-broken alone is reflow only", _fc("$a = b$ $= c$", "$a = b = c$", "lesson.md") == {"reflow"})
+expect("0c: ... a changed number in the rows is none of them", _fc(_A, _B.replace("= c", "= d"), "lesson.md") is None)
+expect("0c: ... a changed word with a paragraph cut is none of them", _fc("Yksi lause. Toinen.", "Yksi lause.\n\nKolmas.", "lesson.md") is None)
+expect("0c: ... a swapped sign in a chain is none of them", _fc("$a = b + c$", "$a = b - c$", "lesson.md") is None)
+expect("0c: ... a whitespace-only difference is no presentation class", _fc("Sana  yksi.", "Sana yksi.", "lesson.md") is None)
+_J = lambda cap, txt: json.dumps({"level1": [{"id": "x", "caption": cap, "text": txt}]}, indent=1, ensure_ascii=False)
+expect("0c: the caption marker out, the text cut into paragraphs and a chain re-broken, in one JSON: three classes",
+       _fc(_J("Taulukko (esimerkkiaineisto)", "Laske $a = b$ $= c$. Sitten d."), _J("Taulukko", "Laske $a = b = c$.\n\nSitten d."), "exercises.json") == {"caption-label", "reflow", "paragraphs"},
+       str(_fc(_J("Taulukko (esimerkkiaineisto)", "Laske $a = b$ $= c$. Sitten d."), _J("Taulukko", "Laske $a = b = c$.\n\nSitten d."), "exercises.json")))
+expect("0c: ... a marker added to a caption is no class", _fc(_J("Taulukko", "x"), _J("Taulukko (esimerkkiaineisto)", "x"), "exercises.json") is None)
+expect("0c: ... a caption word changed with the marker is no class", _fc(_J("Taulukko (esimerkkiaineisto)", "x"), _J("Kaavio", "x"), "exercises.json") is None)
+expect("0c: the same view serves an item: format_view equals chain_view then para_view",
+       rv.format_view(_A, "lesson.md") == rv.format_view(_B, "lesson.md"))
+_tt = lambda a, b: rv._tr_text(a, b, [])
+expect("0c: a translation with an inline formula one place later in the sentence is still equivalent (en L3-05, $820{,}5$)",
+       _tt("Massa on $820{,}5\\,\\text{g}$ ja tiheys $\\rho = 2{,}0$.", "Density is $\\rho = 2{,}0$ and the mass is $820{,}5\\,\\text{g}$."))
+expect("0c: ... fi-easy L2-01, $0{,}1$ moved", _tt("Jos $x = 0{,}1$, niin $y = 2$.", "Niin $y = 2$, jos $x = 0{,}1$."))
+expect("0c: ... but a changed number in a formula is not", not _tt("Massa $820{,}5\\,\\text{g}$.", "Mass $820{,}6\\,\\text{g}$."))
+expect("0c: ... a formula lost or added is not", not _tt("Massa $m$ ja $F$.", "Mass $m$.") and not _tt("Massa $m$.", "Mass $m$ and $F$."))
+expect("0c: ... a duplicated formula in place of another is not", not _tt("Massa $m$ ja $F$.", "Mass $m$ and $m$."))
+expect("0c: ... a prose number that differs is not", not _tt("Massa $m$ on 12 kg.", "Mass $m$ is 13 kg."))
+_p = []; rv._tr_text("A $E_\\text{sähkö}$ ja $F_\\text{x}$.", "$F_\\text{x}$ and $E_\\text{electric}$.", _p)
+expect("0c: ... the subscript labels still pair one to one when the formulas swap places", sorted(_p) == [("sähkö", "electric"), ("x", "x")], str(_p))
+_rt = _pl.Path(_tf.mkdtemp())
+def _mk(lang, text):
+    d = _rt / f"content/{lang}/FY3/fy3-3/review"; d.mkdir(parents=True, exist_ok=True); (d / "visual.md").write_text(text); return d.parent
+_fi, _en = _mk("fi", "VERDICT: PASS\nCONTENT-HASH: aaaaaaaaaaaaaaaa\n"), _mk("en", "VERDICT: PASS\nCONTENT-HASH: bbbbbbbbbbbbbbbb\nSCOPE: vain ulkoasu, ei muuta\n")
+_scope = rv.scope_claim(_en, "visual")
+expect("0c: a free-form SCOPE line is read as malformed (report_problems turns it into an error)", _scope and _scope[0] == "malformed", str(_scope))
+expect("0c: ... a well-formed one is not", rv.scope_claim(_mk("sv", "VERDICT: PASS\nCONTENT-HASH: cccccccccccccccc\nSCOPE: delta reflow from 0123456789abcdef base abcdef1\n"), "visual")[0] == ["reflow"])
+expect("0c: report_problems and check-report exist and the CLI says what is wrong", "check-report" in rv.__doc__ and callable(rv.report_problems))
 
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
