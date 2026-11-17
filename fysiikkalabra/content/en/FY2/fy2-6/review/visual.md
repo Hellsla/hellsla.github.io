@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9560440f769ebfaa
+CONTENT-HASH: f18834b72c71945e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- en fy2-6-example-390-1.png and -2.png: stage 1 (given / question as two paragraphs) and stage 7 (reasonableness chain, "and 14 : 43.8 = 0.32.", closing sentence as own paragraph); spacing even, formulas unclipped, decimal point and units correct.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 (English 5) · accessibility 5
+batch delta review: diff rewrites the recap task (12 GW, 3 h, 36 GWh); quantities all LaTeX with units, decimal point in English; opened fy2-6-fig-row-1280.png, layout fine.

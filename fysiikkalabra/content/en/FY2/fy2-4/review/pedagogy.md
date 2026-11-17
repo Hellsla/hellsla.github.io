@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 56dcd8258585d1da
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the FY2 targeted-fix diff (git diff origin/main...HEAD) only
-
+CONTENT-HASH: 36a908c7d0515933
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- git diff origin/main...HEAD of fy2-4 inquiry.json (en); hash verified.
-- Sim model paragraph: "losses are the part of the energy that does not end up as the defined useful output ... mostly thermal energy ... part of the incoming radiant energy is also reflected back to the surroundings" reads naturally in context and matches fi.
-- Experiment-1 model: "losses, mostly heat" matches fi "pääosin lämpöä".
+batch delta review: The 60 W bulb retrieval continues the opening lamp. Distractors keep the same misconceptions (adding, dividing either way) with feedback naming them. It does not disclose either prediction: it asks energy taken, not efficiency or useful share. Example bullets and split Result fine.

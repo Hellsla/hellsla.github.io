@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ca9562db290c2b56
+CONTENT-HASH: 46e3caa7a34295c6
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- fi-easy fy2-6-example-390-1.png and -2.png: stage 1 (knowns / question), stage 6 (result and the significant-figures sentence as own paragraph), stage 7 (Järkevyys chain and closing sentence). Spacing even, formulas unclipped, plain sentences read clearly.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: retrieval task 2 kW to 12 GW, 36 GWh, LaTeX units and case ending 12 GW:ssa; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.

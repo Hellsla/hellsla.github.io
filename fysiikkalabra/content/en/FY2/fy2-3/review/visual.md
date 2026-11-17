@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 795f2f9ca4e62da4
+CONTENT-HASH: 8bdbae88002e5802
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta (md-paragraphs): worked example stage 1 knowns as a list, stage 6 result split. Opened fy2-3-example-390-1 and -2 (en captures): list reads cleanly, paragraphs separated, nothing clipped.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: diff is inquiry.json review-task wording only (figures and layout unchanged); opened the 1280 px theory-figure captures of fy2-4 and fy2-6 to confirm the layout survived; changed text is natural English.

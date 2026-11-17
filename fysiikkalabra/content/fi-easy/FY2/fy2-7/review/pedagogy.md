@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 94cfb94728086217
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: 18d3ea7dbe6b16e4
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (fi-easy), judged in context; round-1 findings for this unit.
-- lesson.md: sisäenergia now 'aineen hiukkasten liikkeen ja niiden välisten vuorovaikutusten energiaa. Sen kasvu näkyy johtimen lämpenemisenä.' Correct and complete at FY2 level, still plain S2 Finnish; 'Sen kasvu näkyy' is also more precise than before.
+batch delta review: the retrieval is now the district-heating pump from the opening; it asks efficiency only, so the Ennusta predictions (grid loss share, high voltage) are not disclosed. Knowns lists and split Tulos paragraphs follow the one-thing-per-paragraph rule. The paragraph splits in the worked example keep the same words and numbers.

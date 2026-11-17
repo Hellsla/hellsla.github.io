@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 926d2ac39577cda9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: f280a71c44e26ce3
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (en); content hash recomputed and equal to the brief's.
-- lesson.md worked example result: $0{,}45\,\text{MJ} - 110\,\text{kJ} = 340\,\text{kJ}$ recomputed; two significant figures set by $0{,}45\,\text{MJ}$ is correct, and treating the integer $110\,\text{kJ}$ as exact follows the teacher's rule of 2026-11-07 (no $1{,}0\cdot10^{1}$-style notation introduced).
-- English changes match the fi source in substance (CO2 equivalent, internal energy vs heat, accounting assumption).
+batch delta review: retrieval choice car -> cyclist: wording only; correct option and feedback unchanged in physics (kinetic energy turns into other forms, total conserved); exactly one correct option; teacher-approved figures not judged.
