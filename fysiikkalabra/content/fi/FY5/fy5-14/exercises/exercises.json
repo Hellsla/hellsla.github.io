@@ -202,7 +202,7 @@
       "unit": "m/s",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: torven taajuus auton lähestyessä",
+        "caption": "Torven taajuus auton lähestyessä",
         "columns": [
           "Mittaus",
           "$f\\,(\\text{Hz})$"
@@ -240,7 +240,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: spektrien piikit, suhteellinen korkeus",
+        "caption": "Spektrien piikit, suhteellinen korkeus",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "Huilu",
@@ -367,7 +367,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: taajuuden muutos sykkeen aikana",
+        "caption": "Taajuuden muutos sykkeen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$\\Delta f\\,(\\text{kHz})$"
@@ -412,7 +412,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkiaineisto: spektrien piikit, suhteellinen amplitudi",
+        "caption": "Spektrien piikit, suhteellinen amplitudi",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "Keskeltä",
