@@ -21,15 +21,7 @@ So the measurements are plotted as they are.
 
 The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decrease of the points can be seen, and the start is marked in the figure.
 
-<svg data-fig="fy6-s1-graph" viewBox="0 0 600 380" role="img" aria-label="Graph: terminal voltage U of the battery in volts as a function of the current I in amperes.
-
-Six black points at currents 0.10–0.60 A; the voltage falls from 4.48 V to 3.89 V.
-
-A straight line has been fitted to the points, passing between the points, and it has been extended as a dashed line to the vertical axis at 4.60 V.
-
-The points (0.10 A; 4.48 V) and (0.60 A; 3.88 V) are marked on the line, with a slope triangle between them in which the change in current is 0.50 A and the change in voltage is −0.60 V.
-
-The scale of the vertical axis starts at 3.6 V." style="max-width:100%;font-size:24px">
+<svg data-fig="fy6-s1-graph" viewBox="0 0 600 380" role="img" aria-label="Graph: terminal voltage U of the battery in volts as a function of the current I in amperes. Six black points at currents 0.10–0.60 A; the voltage falls from 4.48 V to 3.89 V. A straight line has been fitted to the points, passing between the points, and it has been extended as a dashed line to the vertical axis at 4.60 V. The points (0.10 A; 4.48 V) and (0.60 A; 3.88 V) are marked on the line, with a slope triangle between them in which the change in current is 0.50 A and the change in voltage is −0.60 V. The scale of the vertical axis starts at 3.6 V." style="max-width:100%;font-size:24px">
   <line x1="146.5" y1="320" x2="146.5" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197" y1="320" x2="197" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="247.5" y1="320" x2="247.5" y2="66" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

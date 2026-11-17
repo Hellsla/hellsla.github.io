@@ -291,7 +291,9 @@ Kaksi vastusta, $R_1 = 120\,\Omega$ ja $R_2 = 60\,\Omega$, kytketään rinnan $9
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $R_1 = 120\,\Omega$, $R_2 = 60\,\Omega$ ja $U = 9{,}0\,\text{V}$. Kysytään paristosta lähtevää virtaa $I$.
+**Tunnetut ja kysytty.** $R_1 = 120\,\Omega$, $R_2 = 60\,\Omega$ ja $U = 9{,}0\,\text{V}$.
+
+Kysytään paristosta lähtevää virtaa $I$.
 
 <!-- vaihe -->
 
