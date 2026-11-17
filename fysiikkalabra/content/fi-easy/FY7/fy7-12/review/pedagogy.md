@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f6d4777566df2cb3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 1e62b986a2ea19df
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+- Selitys 'Tänään selvitetään...' on hyvä; lisää vielä, että kuidun pää on tasainen.
 ## Checked
-- Diff: no propagating refracted ray (instead of 'no light at all'), an ideal lossless boundary reflects all power, one sentence on the evanescent field; traditional fibre endoscope vs modern video endoscope with a tip camera.
-- Corrections are short and keep the main idea (total internal reflection) intact.
-- Round 2: the bold definition 'Tämä on kokonaisheijastuminen' now follows the definition sentence directly, and 'eikä energiaa siirry toiseen aineeseen' is added before the evanescent-field sentence, so students no longer wonder whether light leaks; my item is resolved.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash f6d4777566df2cb3 at start and end.
+batch delta review (SCOPE: Pohdinta retrieval task): air-to-fibre-glass refraction (19,8 deg checked) belongs to the fibre and prepares but does not reveal Ennusta (leakage angle, air vs cladding).

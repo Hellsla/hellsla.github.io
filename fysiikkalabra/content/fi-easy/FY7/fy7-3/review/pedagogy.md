@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 647388c3ad9838b2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 21e9f8f58ab66d6a
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+- Tehtävä ei sano, että kompassi on johtimen lähellä; yksi lause tilanteesta ('Kompassi on kuparijohtimen vieressä') selkeyttäisi.
+- Nosturin magneetti (Miksi) ei näy tehtävässä; johdin ja kompassi ovat luvun kokeen väline, joten yhteys on löyhä mutta hyväksyttävä.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 647388c3ad9838b2 at start and end.
+batch delta review (SCOPE: Pohdinta retrieval task): Earth-field compass retrieval is the chapter's own instrument, not the crane; neither Ennusta (stretched coil, coil end) is revealed.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d3ec9ced68ab9e4a
+CONTENT-HASH: c468408378d09c4e
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] Example 2 task: the student's quotation opens with a lone `"` at the end of the line before the displayed `d = 1 mm : 600 …`; drop the quotation marks around displayed calculations ("A student calculates …:").
+- [Minor] The changed retrieval task is collapsed in the capture; its opened text was judged from the diff (units and formulas in LaTeX, no plain quantities).
 
 ## Checked
-- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (18 rendered blocks) was captured from the built page (preview/en/fy7-13.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.
+- batch delta review: opened fy7-13-stage-herata-390.png (Pohdinta with the changed optional task title) and read the diff of the task prompt, choices and feedback; typography, wording and layout fine.

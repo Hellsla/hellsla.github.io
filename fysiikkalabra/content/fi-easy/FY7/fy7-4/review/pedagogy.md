@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b72feb4f29c1d660
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 4479c9b92810f528
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+- 'Kaiuttimen kaapelin yhdessä pitkässä suorassa johtimessa' on raskas; jaa kahteen lauseeseen.
+- Tehtävä ei tarvitse kaavaa laskemiseen: suhde 1:2 riittää, mikä sopii kertaukseen.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash b72feb4f29c1d660 at start and end.
+batch delta review (SCOPE: Pohdinta retrieval task): speaker-cable wire numbers verified (10 microT at 1 cm for 0,50 A), no Ennusta answer disclosed.
