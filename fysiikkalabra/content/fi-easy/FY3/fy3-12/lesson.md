@@ -228,7 +228,7 @@ Tässä $P$ on lämpöteho (W). Suure $U$ on rakennusosan U-arvo (W/(m²·K)). S
 
 
 ## Esimerkki
-Omakotitalon seinien pinta-ala on 120 m² ja U-arvo $0{,}17\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ikkunoiden pinta-ala on 20,0 m² ja U-arvo $1{,}0\,\text{W/(m}^2\text{}\cdot\text{K)}$. Sisällä on $21\,{}^\circ\text{C}$ ja ulkona $-15\,{}^\circ\text{C}$. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi? Kuinka paljon energiaa se siirtää vuorokaudessa?
+Omakotitalon seinien pinta-ala on $120\,\text{m}^2$ ja U-arvo $0{,}17\,\text{W/(m}^2\text{}\cdot\text{K)}$. Ikkunoiden pinta-ala on $20{,}0\,\text{m}^2$ ja U-arvo $1{,}0\,\text{W/(m}^2\text{}\cdot\text{K)}$. Sisällä on $21\,{}^\circ\text{C}$ ja ulkona $-15\,{}^\circ\text{C}$. Kuinka suuri lämpöteho johtuu seinien ja ikkunoiden läpi? Kuinka paljon energiaa se siirtää vuorokaudessa?
 
 <!-- vaihe -->
 

@@ -191,9 +191,7 @@
 **Sijoitus:** a) ja b)
 
 $$\begin{aligned} m_\text{yht} &= 520\,\text{kg} + 180\,\text{kg} \\ &\quad + 95\,\text{kg} + 140\,\text{kg} \\ &= 935\,\text{kg} \\ G_\text{Maa} &= 935\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 9172\,\text{N} \\ G_\text{Mars} &= 935\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 3469\,\text{N} \\ m_\text{max} &= \dfrac{6000\,\text{N}}{3{,}71\,\text{m/s}^2} = 1617\,\text{kg} \\ m_\text{lisä} &= 1617\,\text{kg} - 935\,\text{kg} = 682\,\text{kg} \end{aligned}$$
-**Vastaus:** a) Yhteismassa on $935\,\text{kg}$. Paino Maassa on $9{,}17\,\text{kN}$ ja Marsissa $3{,}47\,\text{kN}$. Maassa paino ylittää rajan $6{,}00\,\text{kN}$. Yksikkö ei siis voisi seistä jaloillaan Maassa, mutta Marsissa se kestää.
-
-b) Lisäkuorma voi olla enintään $682\,\text{kg}$. Marsiin voi viedä suuremman kokonaismassan ($1617\,\text{kg}$) kuin Maahan ($6000\,\text{N} : 9{,}81\,\text{m/s}^2 \approx 612\,\text{kg}$). Syy on se, että sama massa painaa Marsissa vain noin $0{,}38$-kertaisesti. Jalkoihin kohdistuu silloin pienempi voima.
+**Vastaus:** a) Yhteismassa on $935\,\text{kg}$. Paino Maassa on $9{,}17\,\text{kN}$ ja Marsissa $3{,}47\,\text{kN}$. Maassa paino ylittää rajan $6{,}00\,\text{kN}$. Yksikkö ei siis voisi seistä jaloillaan Maassa, mutta Marsissa se kestää. b) Lisäkuorma voi olla enintään $682\,\text{kg}$. Marsiin voi viedä suuremman kokonaismassan ($1617\,\text{kg}$) kuin Maahan ($6000\,\text{N} : 9{,}81\,\text{m/s}^2 \approx 612\,\text{kg}$). Syy on se, että sama massa painaa Marsissa vain noin $0{,}38$-kertaisesti. Jalkoihin kohdistuu silloin pienempi voima.
 **Järkevyys:** Kun kokonaismassa on $1617\,\text{kg}$, paino Marsissa on $$\begin{aligned} &1617\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 \\ &= 6000\,\text{N} \end{aligned}$$. Se on täsmälleen jalkojen raja. Marsin sallittu kokonaismassa on $\dfrac{9{,}81}{3{,}71} \approx 2{,}64$-kertainen Maan sallittuun massaan verrattuna. Lasketaan: $2{,}64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
 
 ## fy3-1-L1-09

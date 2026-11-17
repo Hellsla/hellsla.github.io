@@ -207,9 +207,7 @@ With the same force, the smaller $g$ of Mars allows a greater mass. The greatest
 **Substitution:** a) and b)
 
 $$\begin{aligned} m_\text{tot} &= 520\,\text{kg} + 180\,\text{kg} \\ &\quad + 95\,\text{kg} + 140\,\text{kg} \\ &= 935\,\text{kg} \\ G_\text{Earth} &= 935\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 9172\,\text{N} \\ G_\text{Mars} &= 935\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 3469\,\text{N} \\ m_\text{max} &= \dfrac{6000\,\text{N}}{3.71\,\text{m/s}^2} = 1617\,\text{kg} \\ m_\text{extra} &= 1617\,\text{kg} - 935\,\text{kg} = 682\,\text{kg} \end{aligned}$$
-**Answer:** a) The total mass is $935\,\text{kg}$; the weight on Earth is $9.17\,\text{kN}$ and on Mars $3.47\,\text{kN}$. On Earth the weight exceeds the limit $6.00\,\text{kN}$, so the unit could not stand on its legs on Earth, but on Mars it can.
-
-b) The additional load can be at most $682\,\text{kg}$. A greater total mass can be taken to Mars ($1617\,\text{kg}$) than to Earth ($6000\,\text{N} : 9.81\,\text{m/s}^2 \approx 612\,\text{kg}$), because the same mass weighs only about $0.38$ times as much on Mars and a smaller force acts on the legs.
+**Answer:** a) The total mass is $935\,\text{kg}$; the weight on Earth is $9.17\,\text{kN}$ and on Mars $3.47\,\text{kN}$. On Earth the weight exceeds the limit $6.00\,\text{kN}$, so the unit could not stand on its legs on Earth, but on Mars it can. b) The additional load can be at most $682\,\text{kg}$. A greater total mass can be taken to Mars ($1617\,\text{kg}$) than to Earth ($6000\,\text{N} : 9.81\,\text{m/s}^2 \approx 612\,\text{kg}$), because the same mass weighs only about $0.38$ times as much on Mars and a smaller force acts on the legs.
 **Reasonableness:** When the total mass is $1617\,\text{kg}$, the weight on Mars is $$\begin{aligned} &1617\,\text{kg} \cdot 3.71\,\text{m/s}^2 \\ &= 6000\,\text{N} \end{aligned}$$, exactly the limit of the legs. The allowed total mass on Mars is $\dfrac{9.81}{3.71} \approx 2.64$ times the mass allowed on Earth, and $2.64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
 
 ## fy3-1-L1-09
