@@ -122,13 +122,29 @@
 ## fy6-12-L1-06
 **Kysytty:** miten positiivisen ja negatiivisen varauksen sähköinen potentiaalienergia muuttuu, kun kumpikin siirtyy saman matkan kentän suuntaan.
 **Periaate:** Sähkökenttä osoittaa suuremmasta potentiaalista pienempään, joten kentän suuntaan siirryttäessä potentiaali $V$ pienenee. Varauksen potentiaalienergia on $E_\text{p} = qV$, joten muutoksen etumerkki riippuu myös varauksen etumerkistä.
-**Mallivastaus:** Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan. Positiivisella $q$ pienempi $V$ tarkoittaa pienempää tuloa $qV$, ja negatiivisella $q$ se tarkoittaa suurempaa, vähemmän negatiivista arvoa. Kenttä tekee positiiviseen varaukseen positiivisen työn ja negatiiviseen negatiivisen työn, ja työ on potentiaalienergian vähenemä. Väite, jonka mukaan kummankin energia pienenee, unohtaa varauksen etumerkin. Väite, jonka mukaan energia pysyy samana, unohtaa, että potentiaali muuttuu tasaisesti matkan funktiona. Väite, jonka mukaan positiivisen energia kasvaa, kääntää potentiaalin suunnan.
+**Mallivastaus:** Positiivisen varauksen potentiaalienergia pienenee ja negatiivisen kasvaa, koska potentiaali laskee kentän suuntaan.
+
+Positiivisella $q$ pienempi $V$ tarkoittaa pienempää tuloa $qV$, ja negatiivisella $q$ se tarkoittaa suurempaa, vähemmän negatiivista arvoa.
+
+Kenttä tekee positiiviseen varaukseen positiivisen työn ja negatiiviseen negatiivisen työn, ja työ on potentiaalienergian vähenemä.
+
+Väite, jonka mukaan kummankin energia pienenee, unohtaa varauksen etumerkin.
+
+Väite, jonka mukaan energia pysyy samana, unohtaa, että potentiaali muuttuu tasaisesti matkan funktiona.
+
+Väite, jonka mukaan positiivisen energia kasvaa, kääntää potentiaalin suunnan.
 **Järkevyys:** Esimerkiksi potentiaalin laskiessa $100\,\text{V}$ varauksen $+e$ energia muuttuu $-100\,\text{eV}$ ja varauksen $-e$ energia $+100\,\text{eV}$, yhtä paljon vastakkaisiin suuntiin.
 
 ## fy6-12-L1-07
 **Kysytty:** mikä väite on oikein, kun potentiaalin nollakohta siirretään negatiiviselta levyltä positiiviselle.
 **Periaate:** Potentiaali on jännite valittuun nollakohtaan nähden, joten se muuttuu nollakohdan mukana. Jännite on kahden kohdan potentiaalien erotus, ja kun kumpaakin potentiaalia siirretään saman verran, erotus ei muutu.
-**Mallivastaus:** Negatiivisen levyn potentiaali on $-200\,\text{V}$, ja jännite on edelleen $200\,\text{V}$, koska jännite on potentiaalien erotus: $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$. Positiivisen levyn potentiaali on nyt $0\,\text{V}$, joten potentiaali ei ole levyn oma ominaisuus vaan riippuu nollakohdan valinnasta. Jännite ei ole nolla eikä negatiivinen, ja kenttä on ennallaan, koska nollakohdan siirto muuttaa kaikkia potentiaaleja yhtä paljon. Kenttä osoittaa edelleen positiiviselta levyltä negatiiviselle.
+**Mallivastaus:** Negatiivisen levyn potentiaali on $-200\,\text{V}$, ja jännite on edelleen $200\,\text{V}$, koska jännite on potentiaalien erotus: $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$.
+
+Positiivisen levyn potentiaali on nyt $0\,\text{V}$, joten potentiaali ei ole levyn oma ominaisuus vaan riippuu nollakohdan valinnasta.
+
+Jännite ei ole nolla eikä negatiivinen, ja kenttä on ennallaan, koska nollakohdan siirto muuttaa kaikkia potentiaaleja yhtä paljon.
+
+Kenttä osoittaa edelleen positiiviselta levyltä negatiiviselle.
 **Järkevyys:** Ennen siirtoa erotus oli $200\,\text{V} - 0\,\text{V} = 200\,\text{V}$ ja siirron jälkeen $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$, joten jännite on sama.
 
 ## fy6-12-L1-08
@@ -155,7 +171,15 @@
 ## fy6-12-L2-06
 **Kysytty:** mikä on opiskelijan väitteen virhe.
 **Periaate:** Kenttä osoittaa suuremmasta potentiaalista pienempään, ja positiivinen varaus kiihtyy kentän suuntaan. Vain sähköisen voiman vaikuttaessa liike-energian ja potentiaalienergian summa säilyy, joten kun liike-energia kasvaa, potentiaalienergia $qV$ pienenee.
-**Mallivastaus:** Sähköinen voima kiihdyttää levosta lähtevää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee. Varaus ei pyri kohti suurempaa energiaa vaan pienempää potentiaalienergiaa, ja liike-energia kasvaa sen verran kuin potentiaalienergia pienenee. Suurempaan potentiaaliin positiivinen varaus pääsee vain, jos sillä on liike-energiaa tai ulkoinen voima tekee työtä sen siirtämiseksi. Suunta ei riipu hiukkasen massasta eikä potentiaalin etumerkistä, koska nollakohta valitaan vapaasti. Voima vaikuttaa varaukseen joka kohdassa, ei vasta nollakohdassa.
+**Mallivastaus:** Sähköinen voima kiihdyttää levosta lähtevää positiivista varausta kentän suuntaan eli kohti pienempää potentiaalia, jolloin sen potentiaalienergia pienenee.
+
+Varaus ei pyri kohti suurempaa energiaa vaan pienempää potentiaalienergiaa, ja liike-energia kasvaa sen verran kuin potentiaalienergia pienenee.
+
+Suurempaan potentiaaliin positiivinen varaus pääsee vain, jos sillä on liike-energiaa tai ulkoinen voima tekee työtä sen siirtämiseksi.
+
+Suunta ei riipu hiukkasen massasta eikä potentiaalin etumerkistä, koska nollakohta valitaan vapaasti.
+
+Voima vaikuttaa varaukseen joka kohdassa, ei vasta nollakohdassa.
 **Järkevyys:** Esimerkiksi protoni levyjen välissä kiihtyy negatiivista levyä kohti, jonka potentiaali on pienempi. Se saa liike-energiaa, joten potentiaalienergian täytyy pienentyä.
 
 ## fy6-12-L2-07
@@ -212,7 +236,13 @@ Liike-energia on $90\,\text{eV}$ eli $1{,}4 \cdot 10^{-17}\,\text{J}$ kahden mer
 **Taulukon tulkinta:** Osuus pienenee vastajännitteen kasvaessa: $100\,\%$ arvolla $0\,\text{V}$ ja $0\,\%$ arvolla $100\,\text{V}$. Jyrkimmin se laskee välillä $40\,\text{V}$–$60\,\text{V}$.
 **Kaava:** $E_\text{k,ka} = \sum p_i E_i$, missä $p_i$ on välin osuus ja $E_i$ välin keskikohta, ja $v = \sqrt{\dfrac{2E_\text{k,ka}}{m}}$
 **Muunnokset:** $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, ja vastajännite $U_\text{v}$ voltteina vastaa energiaa $eU_\text{v}$, siis saman verran elektronivoltteina.
-**Sijoitus:** a) Vähintään $40\,\text{eV}$ energian omistaa $71\,\%$ ja vähintään $60\,\text{eV}$ energian $22\,\%$, joten väliin kuuluu $71\,\% - 22\,\% = 49\,\%$. b) Osuudet väleille $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$ ja $80$–$100\,\text{eV}$ ovat $2\,\%$, $27\,\%$, $49\,\%$, $19\,\%$ ja $3\,\%$, ja ne ovat yhteensä $100\,\%$. Keskikohdat ovat $10$, $30$, $50$, $70$ ja $90\,\text{eV}$, joten painotettu summa on $$\begin{aligned} &0{,}02 \cdot 10\,\text{eV} + 0{,}27 \cdot 30\,\text{eV} \\ &+ 0{,}49 \cdot 50\,\text{eV} + 0{,}19 \cdot 70\,\text{eV} \\ &+ 0{,}03 \cdot 90\,\text{eV} \\ &= 48{,}8\,\text{eV} \end{aligned}$$. c) Jouleina $E_\text{k,ka} = 48{,}8 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 7{,}818 \cdot 10^{-18}\,\text{J}$ ja $v = \sqrt{\dfrac{2 \cdot 7{,}818 \cdot 10^{-18}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 4{,}14 \cdot 10^{6}\,\text{m/s}$.
+**Sijoitus:** a) Vähintään $40\,\text{eV}$ energian omistaa $71\,\%$ ja vähintään $60\,\text{eV}$ energian $22\,\%$, joten väliin kuuluu $71\,\% - 22\,\% = 49\,\%$.
+
+b) Osuudet väleille $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$ ja $80$–$100\,\text{eV}$ ovat $2\,\%$, $27\,\%$, $49\,\%$, $19\,\%$ ja $3\,\%$, ja ne ovat yhteensä $100\,\%$.
+
+Keskikohdat ovat $10$, $30$, $50$, $70$ ja $90\,\text{eV}$, joten painotettu summa on $$\begin{aligned} &0{,}02 \cdot 10\,\text{eV} + 0{,}27 \cdot 30\,\text{eV} \\ &+ 0{,}49 \cdot 50\,\text{eV} + 0{,}19 \cdot 70\,\text{eV} \\ &+ 0{,}03 \cdot 90\,\text{eV} \\ &= 48{,}8\,\text{eV} \end{aligned}$$.
+
+c) Jouleina $E_\text{k,ka} = 48{,}8 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 7{,}818 \cdot 10^{-18}\,\text{J}$ ja $v = \sqrt{\dfrac{2 \cdot 7{,}818 \cdot 10^{-18}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 4{,}14 \cdot 10^{6}\,\text{m/s}$.
 **Vastaus:** a) $49\,\%$; b) noin $49\,\text{eV}$; c) $4{,}1 \cdot 10^{6}\,\text{m/s}$ (laatikkoon $4{,}14 \cdot 10^{6}\,\text{m/s}$), kaksi merkitsevää numeroa, koska energiavälit on mitattu karkeasti; d) keskikohtaoletus tekee tuloksesta arvion.
 **Järkevyys:** Elektronit, joiden energia on enintään $100\,\text{eV}$, kulkevat korkeintaan nopeudella $5{,}9 \cdot 10^{6}\,\text{m/s}$ (sama kaava energialla $100\,\text{eV}$), ja tulos $4{,}1 \cdot 10^{6}\,\text{m/s}$ on sen alle. Nopeus on noin $1{,}4\,\%$ valon nopeudesta, joten lauseke $\tfrac{1}{2}mv^2$ pätee. Kohta d): jakauma tunnetaan vain $20\,\text{eV}$:n tarkkuudella, joten välin elektronien energiat vaihtelevat eivätkä ole tarkasti keskikohdassa.
 

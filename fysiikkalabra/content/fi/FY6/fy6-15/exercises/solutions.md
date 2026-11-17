@@ -172,12 +172,52 @@ Tilanteen A virta ylittää vain tuntokynnyksen. Tilanteen B virta jää näill�
 **Annettu:** aineistosta ([Tukesin tiedote](https://tukes.fi/-/ala-kayta-pistorasiaan-kytkettavaa-aurinkopaneelia)): tiedotteen otsikko ”Älä käytä pistorasiaan kytkettävää aurinkopaneelia”; tehtävästä teho $P = 800\,\text{W}$, jännite $U = 230\,\text{V}$, tehokerroin yksi, sulakkeen nimellisvirta $I_\text{s} = 16\,\text{A}$ ja se, että verkkokauppa myy tällaisia paneeleja
 **Kysytty:** a) millaisesta järjestelmästä tiedote varoittaa, mitkä vaarat se nimeää ja mihin suuntaan energia siirtyy; b) tehoa vastaava virta $I$ ampeereina; c) miten sähköisku ja ylikuumeneminen voivat syntyä ja kuinka suuri virta ryhmäjohdon osassa voi kulkea; d) arvio väitteestä
 **Periaate:** Verkkojännite $230\,\text{V}$ on vaihtojännitteen tehollinen arvo. Kun tehokerroin on yksi, virta ja jännite ovat samanvaiheiset ja teho lasketaan kaavalla $P = UI$ kuten tasajännitteellä. Ryhmän laitteet ovat rinnan, joten niiden virrat summautuvat ryhmäjohdossa. Sulake huomaa vain sen virran, joka kulkee sulakkeen itsensä läpi.
-**Kohta a):** Tiedote koskee aurinkopaneeleja, jotka kytketään pistotulpalla tavalliseen pistorasiaan; otsikkonsa mukaan se kehottaa olemaan käyttämättä tällaista paneelia. Aineisto nimeää vaarat; fysiikan perusteella niitä on ainakin kaksi: sähköisku ja ylikuumeneminen eli palovaara. Tavallinen sähkölaite ottaa energiaa verkosta: energia siirtyy sähkökeskukselta ryhmäjohtoa pitkin pistorasiaan ja siitä laitteeseen. Paneelin vaihtosuuntaaja syöttää energiaa päinvastaiseen suuntaan, pistorasian kautta ryhmäjohtoon. Ryhmällä on silloin kaksi syöttöä: sähkökeskus ja paneeli.
+**Kohta a):** Tiedote koskee aurinkopaneeleja, jotka kytketään pistotulpalla tavalliseen pistorasiaan; otsikkonsa mukaan se kehottaa olemaan käyttämättä tällaista paneelia.
+
+Aineisto nimeää vaarat; fysiikan perusteella niitä on ainakin kaksi: sähköisku ja ylikuumeneminen eli palovaara.
+
+Tavallinen sähkölaite ottaa energiaa verkosta: energia siirtyy sähkökeskukselta ryhmäjohtoa pitkin pistorasiaan ja siitä laitteeseen.
+
+Paneelin vaihtosuuntaaja syöttää energiaa päinvastaiseen suuntaan, pistorasian kautta ryhmäjohtoon.
+
+Ryhmällä on silloin kaksi syöttöä: sähkökeskus ja paneeli.
 **Kaava:** Kohta b): $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{800\,\text{W}}{230\,\text{V}} = 3{,}478\,\text{A} \approx 3{,}48\,\text{A}$
-**Kohta c):** Seuraava selitys perustuu luvun fysiikkaan ja tehtävän kahteen vaaraan. Tulipalon vaara: sulake on ryhmän alussa sähkökeskuksessa, joten se mittaa vain keskukselta tulevan virran. Oletetaan, että paneelin pistorasia on keskuksen ja ryhmän muiden laitteiden välissä. Paneelin virta ei kulje sulakkeen läpi, mutta paneelin jälkeen se kulkee samassa johdossa kuin keskukselta tuleva virta. Kun laitteet ottavat paljon tehoa, tässä johdon osassa voi kulkea virta $$\begin{aligned} I_\text{j} &= I_\text{s} + I \\ &= 16\,\text{A} + 3{,}478\,\text{A} \\ &\approx 19{,}5\,\text{A} \end{aligned}$$ ilman, että sulakkeen nimellisvirta ylittyy. Johdin lämpenee teholla $P = RI^2$, joten lämpöteho on $\left(\dfrac{19{,}478\,\text{A}}{16\,\text{A}}\right)^2 \approx 1{,}48$-kertainen verrattuna virtaan $16\,\text{A}$, jolle sulake on valittu. Johto voi ylikuumentua, vaikka sulake ei laukea. Sähköiskun vaara: jos vaihtosuuntaaja ei lopeta syöttöä heti, kun pistotulppa irrotetaan, tulpan paljaissa nastoissa voi olla jännite. Samasta syystä ryhmä voi jäädä jännitteiseksi, vaikka sen sulake on kytketty pois sähkötyön ajaksi. Ryhmän suojaus on suunniteltu tilanteeseen, jossa sähkö tulee ryhmään vain sähkökeskukselta.
-**Kohta d):** Väite ei pidä paikkaansa. Tehtävän mukaan verkkokauppa myy tällaisia paneeleja, ja tiedotteen otsikko on viranomaisen kehotus olla käyttämättä tuotetyyppiä. Myynnissä oleminen ei siis osoita, että tuote on tarkastettu, eikä sitä, että sen käyttö on sallittua. Väitteessä on lisäksi kaksi eri asiaa: turvallinen ja sallittu. Kumpikaan ei seuraa siitä, että tuotetta myydään. Kuluttaja voi tarkistaa, kuka tuotteesta vastaa ja onko viranomainen varoittanut siitä. CE-merkintä on valmistajan oma vakuutus siitä, että tuote täyttää vaatimukset, ei viranomaisen antama hyväksyntä. Rakennuksen kiinteään sähköverkkoon liitettävän laitteiston asentaa sähköalan ammattilainen.
+**Kohta c):** Seuraava selitys perustuu luvun fysiikkaan ja tehtävän kahteen vaaraan.
+
+Tulipalon vaara: sulake on ryhmän alussa sähkökeskuksessa, joten se mittaa vain keskukselta tulevan virran.
+
+Oletetaan, että paneelin pistorasia on keskuksen ja ryhmän muiden laitteiden välissä.
+
+Paneelin virta ei kulje sulakkeen läpi, mutta paneelin jälkeen se kulkee samassa johdossa kuin keskukselta tuleva virta.
+
+Kun laitteet ottavat paljon tehoa, tässä johdon osassa voi kulkea virta $$\begin{aligned} I_\text{j} &= I_\text{s} + I \\ &= 16\,\text{A} + 3{,}478\,\text{A} \\ &\approx 19{,}5\,\text{A} \end{aligned}$$ ilman, että sulakkeen nimellisvirta ylittyy.
+
+Johdin lämpenee teholla $P = RI^2$, joten lämpöteho on $\left(\dfrac{19{,}478\,\text{A}}{16\,\text{A}}\right)^2 \approx 1{,}48$-kertainen verrattuna virtaan $16\,\text{A}$, jolle sulake on valittu.
+
+Johto voi ylikuumentua, vaikka sulake ei laukea.
+
+Sähköiskun vaara: jos vaihtosuuntaaja ei lopeta syöttöä heti, kun pistotulppa irrotetaan, tulpan paljaissa nastoissa voi olla jännite.
+
+Samasta syystä ryhmä voi jäädä jännitteiseksi, vaikka sen sulake on kytketty pois sähkötyön ajaksi.
+
+Ryhmän suojaus on suunniteltu tilanteeseen, jossa sähkö tulee ryhmään vain sähkökeskukselta.
+**Kohta d):** Väite ei pidä paikkaansa.
+
+Tehtävän mukaan verkkokauppa myy tällaisia paneeleja, ja tiedotteen otsikko on viranomaisen kehotus olla käyttämättä tuotetyyppiä.
+
+Myynnissä oleminen ei siis osoita, että tuote on tarkastettu, eikä sitä, että sen käyttö on sallittua.
+
+Väitteessä on lisäksi kaksi eri asiaa: turvallinen ja sallittu.
+
+Kumpikaan ei seuraa siitä, että tuotetta myydään.
+
+Kuluttaja voi tarkistaa, kuka tuotteesta vastaa ja onko viranomainen varoittanut siitä.
+
+CE-merkintä on valmistajan oma vakuutus siitä, että tuote täyttää vaatimukset, ei viranomaisen antama hyväksyntä.
+
+Rakennuksen kiinteään sähköverkkoon liitettävän laitteiston asentaa sähköalan ammattilainen.
 **Vastaus:** $3{,}48\,\text{A}$, kolme merkitsevää numeroa kuten jännitteessä $230\,\text{V}$. Virta on pieni, mutta se tulee ryhmään sulakkeen ohi, joten ryhmäjohdon osassa voi kulkea noin $19{,}5\,\text{A}$, vaikka sulakkeen läpi kulkee vain $16\,\text{A}$.
 **Järkevyys:** Tarkistus: $230\,\text{V} \cdot 3{,}478\,\text{A} = 800\,\text{W}$. Arvio $800\,\text{W} : 200\,\text{V} = 4\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle neljäsosa sulakkeen nimellisvirrasta $16\,\text{A}$, sillä $16\,\text{A} : 4 = 4\,\text{A}$. Vaara ei siis synny virran suuruudesta vaan siitä, että sulake ei huomaa paneelin virtaa.
 
@@ -210,7 +250,13 @@ Tilanteen A virta ylittää vain tuntokynnyksen. Tilanteen B virta jää näill�
 **Muunnokset:** $R = 4{,}0\,\text{k}\Omega = 4{,}0 \cdot 1000\,\Omega = 4000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{600\,\text{V} - 400\,\text{V}}{4000\,\Omega} = \dfrac{200\,\text{V}}{4000\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
 **Vastaus:** $50\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $4{,}0\,\text{k}\Omega$.
-**Järkevyys:** Virta on kammiovärinän vaaran rajalla, vaikka ihminen ei koske johtimeen lainkaan. Jos jalat olisivat yhdessä, potentiaaliero ja virta olisivat lähes nolla. Jalasta toiseen kulkeva virta ei välttämättä kulje sydämen kautta, mutta kaatuminen voi tuoda sydämen virran reitille. Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $6{,}0\,\text{m}$ välinen jännite on vain $100\,\text{V}$, vaikka väli on kaksi metriä, joten pois kannattaa siirtyä lyhyin askelin.
+**Järkevyys:** Virta on kammiovärinän vaaran rajalla, vaikka ihminen ei koske johtimeen lainkaan.
+
+Jos jalat olisivat yhdessä, potentiaaliero ja virta olisivat lähes nolla.
+
+Jalasta toiseen kulkeva virta ei välttämättä kulje sydämen kautta, mutta kaatuminen voi tuoda sydämen virran reitille.
+
+Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $6{,}0\,\text{m}$ välinen jännite on vain $100\,\text{V}$, vaikka väli on kaksi metriä, joten pois kannattaa siirtyä lyhyin askelin.
 
 ## fy6-15-L3-04
 **Annettu:** johtimien resistanssi $R = 0{,}40\,\Omega$; taulukosta virrat $I = 4{,}0$; $8{,}0$; $12{,}0$; $16{,}0\,\text{A}$ ja lämpötilan nousut $\Delta T = 2{,}1$; $7{,}6$; $17{,}2$; $30{,}4\,\text{K}$; eristeen raja $\Delta T_\text{max} = 50\,\text{K}$
@@ -230,5 +276,13 @@ Tilanteen A virta ylittää vain tuntokynnyksen. Tilanteen B virta jää näill�
 **Kaava:** $I = \dfrac{U}{R_\text{e} + R_\text{k}}$; rajalla $I_\text{raja} = \dfrac{U}{R_\text{e} + R_\text{k}}$, josta $R_\text{e} = \dfrac{U}{I_\text{raja}} - R_\text{k}$
 **Muunnokset:** $R_\text{k} = 1{,}5\,\text{k}\Omega = 1500\,\Omega$; $I_\text{raja} = 30\,\text{mA} = 0{,}030\,\text{A}$; esimerkiksi $R_\text{e} = 900\,\text{k}\Omega = 900\,000\,\Omega$; virrat ampeereista milliampeereiksi: $1\,\text{A} = 1000\,\text{mA}$; tulos ohmeista kiloohmeiksi: $1\,\text{k}\Omega = 1000\,\Omega$.
 **Sijoitus:** Rajalla $R_\text{e} = \dfrac{230\,\text{V}}{0{,}030\,\text{A}} - 1500\,\Omega = 7667\,\Omega - 1500\,\Omega = 6167\,\Omega = 6{,}167\,\text{k}\Omega$. Virrat: viikko 1: $\dfrac{230\,\text{V}}{900\,000\,\Omega + 1500\,\Omega} = 0{,}26\,\text{mA}$; viikko 3: $\dfrac{230\,\text{V}}{121\,500\,\Omega} = 1{,}9\,\text{mA}$; viikko 5: $\dfrac{230\,\text{V}}{41\,500\,\Omega} = 5{,}5\,\text{mA}$; viikko 7: $\dfrac{230\,\text{V}}{13\,500\,\Omega} = 17{,}0\,\text{mA}$; viikko 9: $\dfrac{230\,\text{V}}{5500\,\Omega} = 41{,}8\,\text{mA}$
-**Vastaus:** $6{,}2\,\text{k}\Omega$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$. Kohta b): vikavirtasuoja laukeaa vasta viikon 9 mittauksessa, jossa virta ylittää rajan; viikoilla 3, 5 ja 7 virta on tuntokynnyksen yläpuolella, ja viikolla 7 se ylittää myös irrottamiskynnyksen $10\,\text{mA}$, joten ote ei välttämättä irtoa, vaikka vikavirtasuoja ei laukea. Vikavirtasuoja on sähköiskuilta suojaava lisäsuojalaite. Se ei kuitenkaan poista kaikkia sähköiskun vaaroja: ihmisen läpi voi kulkea vaarallinen virta myös silloin, kun vikavirtasuojan laukaisuraja ei ylity. Siksi laitteen suojamaadoituksen ja eristyksen on oltava kunnossa, eikä viallista laitetta saa käyttää.
+**Vastaus:** $6{,}2\,\text{k}\Omega$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$.
+
+Kohta b): vikavirtasuoja laukeaa vasta viikon 9 mittauksessa, jossa virta ylittää rajan; viikoilla 3, 5 ja 7 virta on tuntokynnyksen yläpuolella, ja viikolla 7 se ylittää myös irrottamiskynnyksen $10\,\text{mA}$, joten ote ei välttämättä irtoa, vaikka vikavirtasuoja ei laukea.
+
+Vikavirtasuoja on sähköiskuilta suojaava lisäsuojalaite.
+
+Se ei kuitenkaan poista kaikkia sähköiskun vaaroja: ihmisen läpi voi kulkea vaarallinen virta myös silloin, kun vikavirtasuojan laukaisuraja ei ylity.
+
+Siksi laitteen suojamaadoituksen ja eristyksen on oltava kunnossa, eikä viallista laitetta saa käyttää.
 **Järkevyys:** Raja-arvolla $R_\text{e} = 6167\,\Omega$ koko resistanssi on $7667\,\Omega$ ja virta $230\,\text{V} : 7667\,\Omega = 30\,\text{mA}$. Viikon 9 resistanssi $4{,}0\,\text{k}\Omega$ on pienempi kuin raja, joten virta $41{,}8\,\text{mA}$ ylittää laukaisurajan. Viikon 7 resistanssi $12\,\text{k}\Omega$ on suurempi kuin raja, joten virta $17{,}0\,\text{mA}$ jää sen alle, vaikka ihmiselle se on jo vaarallinen.

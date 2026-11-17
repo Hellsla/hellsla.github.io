@@ -417,7 +417,9 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Akun energia on $64\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, $I = 16\,\text{A}$ kussakin kolmessa vaiheessa, $U = 230\,\text{V}$, $\eta = 0{,}90$ ja $a = 15\,\text{snt/kWh}$. Kysytään latausaikaa $t$ ja kustannusta $K$.
+**Tunnetut ja kysytty.** Akun energia on $64\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, $I = 16\,\text{A}$ kussakin kolmessa vaiheessa, $U = 230\,\text{V}$, $\eta = 0{,}90$ ja $a = 15\,\text{snt/kWh}$.
+
+Kysytään latausaikaa $t$ ja kustannusta $K$.
 
 <!-- vaihe -->
 
