@@ -29,7 +29,7 @@
         {
           "text": "about $0.62\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Correct. From the equation $v = f\\lambda$ we get $\\lambda = \\tfrac{v}{f} = \\tfrac{1540\\,\\text{m/s}}{2\\,500\\,000\\,\\text{Hz}} \\approx 0.00062\\,\\text{m}$ (chapter *How waves form and travel*). The wavelength is less than a millimetre. Today we see how the wavelength limits how small details show in the image."
+          "feedback": "Correct. From the equation $v = f\\lambda$ we get $$\\begin{aligned} \\lambda &= \\frac{v}{f} \\\\ &= \\frac{1540\\,\\text{m/s}}{2.5 \\cdot 10^{6}\\,\\text{Hz}} \\\\ &\\approx 0.00062\\,\\text{m} \\end{aligned}$$ (chapter *How waves form and travel*). The wavelength is less than a millimetre. Today we see how the wavelength limits how small details show in the image."
         },
         {
           "text": "about $3.9 \\cdot 10^{9}\\,\\text{m}$",

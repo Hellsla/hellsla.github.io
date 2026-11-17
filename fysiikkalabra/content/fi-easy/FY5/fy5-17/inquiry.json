@@ -29,7 +29,7 @@
         {
           "text": "noin $0{,}62\\,\\text{mm}$",
           "correct": true,
-          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{1540\\,\\text{m/s}}{2\\,500\\,000\\,\\text{Hz}} \\approx 0{,}00062\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Aallonpituus on alle millimetrin. Tänään nähdään, miten aallonpituus rajaa sitä, kuinka pieniä yksityiskohtia kuvassa näkyy."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $$\\begin{aligned} \\lambda &= \\frac{v}{f} \\\\ &= \\frac{1540\\,\\text{m/s}}{2{,}5 \\cdot 10^{6}\\,\\text{Hz}} \\\\ &\\approx 0{,}00062\\,\\text{m} \\end{aligned}$$ (luku *Aaltojen synty ja eteneminen*). Aallonpituus on alle millimetrin. Tänään nähdään, miten aallonpituus rajaa sitä, kuinka pieniä yksityiskohtia kuvassa näkyy."
         },
         {
           "text": "noin $3{,}9 \\cdot 10^{9}\\,\\text{m}$",
