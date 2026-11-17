@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 52c10a4d543df7af
+CONTENT-HASH: 5639040cc31fd4c3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy3-10-example-390-1.png, stage 4 — the list "tilavuus / paine / lämpötila" with one display box under each bullet is a little loose on a phone — optional: keep as is, it reads clearly.
+- [Minor] Pohdinta, Kertaa-kortti: litra $\textsf{l}$ ("$3{,}0\,\textsf{l}$:sta") näyttää kapealta ja muistuttaa ykköstä; projektin sääntö (\textsf{l}), ei muutosta.
 
 ## Checked
-- Round 1, delta (md-paragraphs, teacher-figure): lesson.md paragraph breaks, words unchanged; figures approved by the teacher not re-judged. No 360 px captures exist; 390 px used.
-- 390 px: fy3-10-example-390-1.png (stages 1-4, knowns and question apart, displays aligned, nothing clipped); fy3-10-stage-selita-390-2.png (particle figure fits, R display aligned, paragraphs of sensible length, no overflow).
-- 1280 px with solutions open: fy3-10-open-tarkista-1280-1.png (hint answer with ja-separated displays, feedback in cards); fy3-10-open-exercises-1280-1.png (12-1 solution blocks); fy3-10-open-exercises-L2-1280-1.png (12-10 Muunnokset, three conversions in one box, "Lopuksi" paragraph after it).
-- Hash same at start and end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: Pohdinta-kortti auki ja palaute näkyvissä (väärä vaihtoehto valittu, Vastaa painettu) 390 px ja 1280 px (oma Playwright-kaappaus preview-sivusta). $3{,}0/2{,}0 = 1{,}5$, $150\,\text{kPa}$:iin ja $100\,\text{kPa}$:n oikein ladottu (sijamuodot kaavan jälkeen), ei leikkautumista, palaute kortin sisällä. Suomi sujuvaa.
