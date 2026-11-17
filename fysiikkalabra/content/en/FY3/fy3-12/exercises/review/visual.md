@@ -5,13 +5,13 @@ CONTENT-HASH: 0aa776c33031e473
 None.
 
 ## Polish
-- [Minor] solutions.md — none worth listing; the split paragraphs read as separate steps and each ends with its own punctuation.
+- [Minor] open-exercises-L2-1280-4 — the Substitution block has a trailing full stop after "1.26 kW." inside the formula while the other rows have none; drop the stop.
 
 ## Checked
-- Delta (md-paragraphs: solutions.md only, paragraphs cut into shorter paragraphs, words unchanged). Diff of solutions.md read; contact sheets and the packet capture fy3-12-open-exercises-L2-1280-10 (U-value solution: Principle and Reading the graph split, Formula, Conversions) opened at 1280 px (the page's own captures, with every solution open).
-- The split paragraphs sit inside the solution card with even spacing, labels (Given, Principle, Reasonableness, ...) intact; display formulas keep equals signs in one column, no clipping, no overflow, no lone punctuation, no empty gaps; the layout survived the change.
-- Figures and the lesson page unchanged and outside this exercise-set delta; no new text, no new figures.
-- Hash run at start and at end: unchanged.
+- Delta (md-paragraphs plus units set as LaTeX: solutions.md). There are no 360 px captures; the 390 px ones were used.
+- 1280 px with solutions open: fy3-12-open-exercises-L2-1280-4.png (units such as kWh, m^2, K, h render upright with a thin space; Principle, Conversions, Answer, Reasonableness as separate paragraphs; nothing clipped); fy3-12-open-tarkista-1280-2.png (checks, optional task, self-assessment row).
+- 390 px: fy3-12-stage-tarkista-390-2.png (task cards, no overflow); fy3-12-stage-sovella-390-2.png (task 5, textarea and buttons fit).
+- Hash run at start and end: unchanged.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -2,14 +2,16 @@ VERDICT: PASS
 CONTENT-HASH: d0d4803fcf0982bf
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy3-16-L1-06 Mallivastaus — the new paragraph "Me siis aistimme…" is clear; none to fix.
+- [Minor] fy3-16-L2 solution — the closing "Vastaus on annettu kahdella merkitsevällä numerolla…" is fine; no change needed.
 
 ## Checked
-- Delta: solutions.md only cut into paragraphs (md-paragraphs); one changed item, L1-06, read in source (diff).
-- Captures opened (current stamp: exercises hash d0d4803fcf0982bf): fy3-16-open-exercises-1280-8 (nearby L1 solution with aligned Sijoitus chain, Vastaus box, Järkevyys; layout intact, no clipping). L1-06's own capture not separately opened.
+- Delta (paragraph breaks in solutions, words unchanged). No 360 px captures exist; 390 px used.
+- fy3-16-open-exercises-L2-1280-5.png: opened solution, one step per paragraph, chains aligned, no clipping.
+- fy3-16-open-tarkista-1280-2.png: task card with feedback open, reading column held.
+- fy3-16-example-390-2.png and fy3-16-stage-sovella-390-2.png: phone layout intact.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

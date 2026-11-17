@@ -2,14 +2,16 @@ VERDICT: PASS
 CONTENT-HASH: 4fa065b425efd80a
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy3-9-L3-05 Järkevyys — the new last paragraph ("Syvyys 30 m on taulukon syvimmän rivin alapuolella…") reads well; no change needed. Optional: begin it "Tämä syvyys…" only if the editor wants a clearer link back.
+- none
 
 ## Checked
-- Delta: solutions.md only cut into paragraphs (md-paragraphs); words unchanged. Changed item fy3-9-L3-05 (Järkevyys paragraph) read in source.
-- Captures opened (current stamp: exercises hash 4fa065b425efd80a; shots are in the lesson's review/shots): fy3-9-open-exercises-L3-1280-6 and -7 (L3 solutions open: aligned chains, answer box, Järkevyys block, next task card). Layout survived: no clipping, blocks in order. Other changed sets/captures not needed for this single-item diff.
+- Delta: solutions.md only cut into paragraphs (md-paragraphs; "Kuvaajan lukeminen" and a Järkevyys block), words unchanged. No 360 px captures exist; judged at 390 px.
+- 1280 px (lesson's review/shots): fy3-9-open-exercises-L3-1280-6.png (solution open: paragraphs inside the Mallivastaus and Kuvaajan lukeminen blocks, chains aligned) and fy3-9-open-exercises-1280-5.png (answer box, Järkevyys block, next card).
+- 390 px: fy3-9-stage-exercises-390.png and fy3-9-stage-tarkista-390-1.png (cards readable, no clipping or overflow).
+- Layout survived; blocks stay in order, no empty gaps.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

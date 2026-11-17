@@ -7,11 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] fy3-6-L2-10 — the Aineistosta/Annettu block is one long paragraph (L2-1280-14); optionally split quote and task data.
+None.
 
 ## Checked
-- review/shots (current for this hash): fy3-6-open-exercises-L2-1280-14 (L2-10 Annettu to Sijoitus), L2-1280-16 (Järkevyys end), -1280 L3 task of the Kaava/Kuvaajan lukeminen kind seen via fy3-5 L3-5.
-- Diff: paragraphs and a), b), c) parts cut, words unchanged. Judged: reading order, aligned rows, units in LaTeX, nothing clipped, layout survived.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; judged at 390 px in the lesson captures and at 1280 px.
+- 1280 px with solutions open: fy3-6-open-exercises-1280-3.png (task 6-3 solution: Annettu, Muunnokset with ΔT block, Sijoitus rows, Vastaus, Järkevyys), fy3-6-open-tarkista-1280-1.png (open Vastaus boxes, aligned chains).
+- 390 px: fy3-6-example-390-2.png, fy3-6-stage-sovella-390-2.png (shared solution row component; no clipping, one thing per paragraph).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

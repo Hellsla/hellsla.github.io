@@ -8,9 +8,10 @@ CONTENT-HASH: f589aef727fde30b
 (none)
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut in two or three, words in the same order. Read the added paragraphs in the diff for language and punctuation.
-- Opened the 1280 px open-solution captures of fy3-15 (several parts of levels 1-3 chosen where split paragraphs and displays sit, e.g. fy3-9 L1 parts 3 and 6, L2-14; fy3-15 part 5; fy3-11 L3-4; fy3-14 L3-3; fy3-10 L3-5; fy3-12 L2-9; fy3-16 L3-5): new paragraph breaks sit between answer, reasoning and Jarkevyys blocks inside the card, formula rows aligned at "=", punctuation after a display stays on the last row, no clipping, no number or unit broken, units LaTeX with thin space, decimal commas right.
-- Language: split paragraphs read as one idea each, no mechanical phrasing. No figures changed.
+- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
+- 1280 px with solutions open: fy3-15-open-exercises-1280-1.png (level 1, 14-1: Kaava and Sijoitus paragraphs with displays, Vastaus and Järkevyys set apart, no clipping), fy3-15-open-exercises-L2-1280-1.png (level 2, 14-10: formula chain on one row, substitution rows aligned at "=", reasonableness block with its own display).
+- 390 px: fy3-15-example-390-1.png and fy3-15-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
+- Language: split paragraphs read as one idea each.
 - Hash same at start and end.
 
 ## Scores

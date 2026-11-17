@@ -2,15 +2,14 @@ VERDICT: PASS
 CONTENT-HASH: 05f819a64c89fa68
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Round 1, delta (solutions.md only, md-paragraphs: text cut into paragraphs, words unchanged). Opened at 1280 px: fy3-3 L3 capture 5 (L3-05 Annettu/Periaate/Kaava/Sijoitus rows).
-- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes, equals signs aligned, closing punctuation inside the boxes, nothing clipped, surrounding layout intact. No 390 px exercise captures exist; the 360 px layout check is clean (packet).
-- Hash unchanged at the end.
+- Round 1, delta (solutions.md, md-paragraphs: words unchanged). Packet captures are 1280 px only; no 360 or 390 px exercise captures exist (said once); the 360 px layout check is clean per the packet.
+- fy3-3-open-exercises-L3-1280-5 (Annettu, Periaate, Kaava as short paragraphs with boxed formulas, Sijoitus rows aligned at the equals signs, nothing clipped).
+- fy3-3-open-exercises-L2-1280-5 (Annettu to Järkevyys in separate rows, Muunnokset and Sijoitus boxes aligned).
+- Breaks sit at meaningful boundaries; surrounding layout intact.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

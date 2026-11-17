@@ -5,13 +5,13 @@ CONTENT-HASH: 0c5b7254268f0235
 None.
 
 ## Polish
-- [Minor] fy3-16-L2-17 solution, Reasonableness — two inline stacked fractions (2.913/0.253 and 299/26) in one paragraph tighten the line spacing so the numerator of the lower fraction almost touches the line above; write them as inline \tfrac or a short colon division (2.913 : 0.253) — or put the comparison in a display formula.
+- [Minor] open-exercises-L2-1280-4 (16-13) — the Given paragraph runs the symbols together on one line ("c = 4190 J/(kg K)" beside the temperatures); consider a break before the table value. Optional.
 
 ## Checked
-- Delta (md-paragraphs: solutions.md only, paragraphs cut into shorter paragraphs, words unchanged). Diff of solutions.md read; contact sheets and the packet capture fy3-16-open-exercises-L2-1280-10 (Principle, Conversions, Reasonableness of the ice-pack solution, split into paragraphs) opened at 1280 px (the page's own captures, with every solution open).
-- The split paragraphs sit inside the solution card with even spacing, labels (Given, Principle, Reasonableness, ...) intact; display formulas keep equals signs in one column, no clipping, no overflow, no lone punctuation, no empty gaps; the layout survived the change.
-- Figures and the lesson page unchanged and outside this exercise-set delta; no new text, no new figures.
-- Hash run at start and at end: unchanged.
+- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
+- 1280 px with solutions open: fy3-16-open-exercises-L2-1280-4.png (16-12 Formula, Conversions, Substitution, Answer, Reasonableness as separate paragraphs; fractions and units aligned; nothing clipped); fy3-16-open-tarkista-1280-2.png (checks with feedback open).
+- 390 px: fy3-16-stage-tarkista-390-2.png (task cards, no overflow); fy3-16-stage-sovella-390-2.png (stages 4-6: paragraph breaks clear, aligned chains fit the phone).
+- Hash run at start and end: unchanged.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

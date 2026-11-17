@@ -7,11 +7,13 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] Changed Vastaus blocks of 3-L3-04/05 (the "Lisäksi ero…" and "Muut tulokset" paragraphs) were not located one by one; judged from neighbouring captures of the same component.
+None.
 
 ## Checked
-- review/shots (current for this hash): fy3-3-open-exercises-L3-1280-4 (3-21 Vastaus/Järkevyys, 3-22 task), L3-1280-5 (3-22 solution: Annettu, Kaava, aligned Sijoitus rows).
-- Diff: paragraphs cut, words unchanged. Judged: reading order, equals signs aligned, units/decimal commas in LaTeX, nothing clipped, no overflow.
+- Delta: solutions.md paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
+- 1280 px, solutions open: fy3-3-open-exercises-1280-3.png (Periaate, Kaava with inline fractions, Järkevyys paragraph and block); fy3-3-open-exercises-L2-1280-4.png (Kuvaajan lukeminen, "ja" between two substitution blocks, Vastaus); fy3-3-open-tarkista-1280-1.png (checks).
+- 390 px: fy3-3-example-390-1.png and fy3-3-example-390-2.png (same shared styles, rows wrap, nothing clipped).
+- Judged: logical paragraph order, KaTeX units and decimal commas.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

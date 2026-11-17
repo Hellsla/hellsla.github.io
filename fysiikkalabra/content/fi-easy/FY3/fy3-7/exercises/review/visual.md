@@ -7,12 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] fy3-7-8-16 task table — the title cell wraps into a narrow four-line header (L2-1280-9); widen or shorten the caption.
+None.
 
 ## Checked
-- review/shots (current for this hash): fy3-7-open-exercises-L2-1280-5 (8-13 rows, Järkevyys; start of 8-14), L2-1280-9 (8-15 Järkevyys, 8-16 task and solution start).
-- Diff: paragraphs cut, words unchanged. Judged: reading order, aligned rows, units in LaTeX, nothing clipped, layout survived.
-- The split L2-08 and Taulukon lukeminen paragraphs were not opened individually.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; judged at 390 px in the lesson captures and at 1280 px.
+- 1280 px with solutions open: fy3-7-open-exercises-1280-3.png (task 8-3 solution: Muunnokset paragraph, Sijoitus rows, Vastaus, Järkevyys blocks; no overflow), fy3-7-open-tarkista-1280-1.png (open Vastaus and feedback).
+- 390 px: fy3-7-example-390-2.png, fy3-7-stage-sovella-390-2.png (shared solution layout holds, no clipping).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

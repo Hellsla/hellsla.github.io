@@ -8,8 +8,9 @@ CONTENT-HASH: bf6fcdc9cf923eca
 (none)
 
 ## Checked
-- Round 1, delta (solutions.md only, md-paragraphs: text cut into paragraphs, words unchanged). Opened at 1280 px: fy3-6 L2 capture 6 (7-14 Annettu, Kuvaajan lukeminen, start of Sijoitus).
-- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes, equals signs aligned, closing punctuation inside the boxes, nothing clipped, surrounding layout intact. No 390 px exercise captures exist; the 360 px layout check is clean (packet).
+- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (1280 px only); layout check at 360 px is clean per the packet.
+- 1280 px with solutions open: ../review/shots/fy3-6-open-exercises-L2-1280-1.png (7-10, Muunnokset paragraph, Sijoitus fraction rows, answer box) and, for the neighbouring layout, fy3-6-open-tarkista-1280-1.png.
+- Paragraph breaks at meaningful boundaries, formulas in their boxes, equals signs aligned, nothing clipped.
 - Hash unchanged at the end.
 
 ## Scores

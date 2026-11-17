@@ -8,8 +8,9 @@ CONTENT-HASH: f210f1541bd7cf89
 (none)
 
 ## Checked
-- Round 1, delta (solutions.md only, md-paragraphs: text cut into paragraphs, words unchanged). Opened at 1280 px: fy3-8 L2 capture 8 (L2-05 Sijoitus/Vastaus/Järkevyys, 10-15 task opening).
-- Paragraph breaks sit at meaningful boundaries, formulas stay in their boxes, equals signs aligned, closing punctuation inside the boxes, nothing clipped, surrounding layout intact. No 390 px exercise captures exist; the 360 px layout check is clean (packet).
+- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (1280 px only); layout check at 360 px is clean per the packet.
+- 1280 px with solutions open: ../review/shots/fy3-8-open-exercises-L2-1280-1.png (10-10: conversions with each sentence after its box, fractions legible, answer set apart) and fy3-8-open-tarkista-1280-1.png for the surrounding layout.
+- Breaks at meaningful boundaries, formulas in boxes, equals signs aligned, nothing clipped.
 - Hash unchanged at the end.
 
 ## Scores

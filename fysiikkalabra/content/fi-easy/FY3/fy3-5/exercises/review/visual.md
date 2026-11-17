@@ -7,11 +7,12 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] The changed Kohta a)/b)/c) Vastaus paragraphs of fy3-5-L3-05 were not located in a capture; judged from the shared component in neighbouring captures.
+None.
 
 ## Checked
-- review/shots (current for this hash): fy3-5-open-exercises-L3-1280-5 (L3 task: Kuvaajan lukeminen, Kaava, Sijoitus), 1280-10 (L1-09 solution, Vastaus and Järkevyys).
-- Diff: paragraphs cut, words unchanged. Judged: reading order, aligned rows, units in LaTeX, nothing clipped, layout survived.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; solutions judged at 390 px in the lesson's worked-example captures and at 1280 px.
+- 1280 px with solutions open: fy3-5-open-exercises-1280-3.png (task 6-3 solution rows, boxed Vastaus, Järkevyys block), fy3-5-open-tarkista-1280-1.png (Vastaus boxes with the aligned ΔU rows).
+- 390 px: fy3-5-example-390-1.png, fy3-5-stage-sovella-390-1.png (same row structure at phone width; one thing per paragraph, no clipping or overflow).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
