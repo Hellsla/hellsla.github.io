@@ -148,6 +148,21 @@
           "feedback": "True: a photon along the axis travels through the material between the mirrors many times and is multiplied on the way. Photons that go sideways leave the material before they have time to multiply."
         }
       ]
+    },
+    {
+      "id": "fy8-7-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "A red laser pointer emits light of wavelength $670\\,\\text{nm}$ and power $2.0\\,\\text{mW}$. Look up the Planck constant in the MAFY table (mafytaulukot.fi). The speed of light is $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$. How many photons does the pointer emit per second?",
+      "answer": 6700000000000000.0,
+      "unit": "1/s",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY table *Physical constants* (Luonnonvakiot)."
+      ]
     }
   ],
   "level2": [
@@ -300,6 +315,19 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-7-L2-08",
+      "level": 2,
+      "text": "The figure shows the number of photons per second emitted by one laser as a function of wavelength. The point stands for a laser of unknown power. Read the wavelength and the number of photons per second of the point from the figure and calculate the power of the laser in milliwatts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "figure": "fy8-7/rate-task",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 1.5,
+      "unit": "mW",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -389,6 +417,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-7-L3-06",
+      "level": 3,
+      "text": "The figure shows the number of photons per second emitted by two lasers, X and Y, as a function of wavelength. Read the wavelength and the number of photons per second of each point from the figure. Calculate how many times greater the power of laser X is than the power of laser Y ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$).",
+      "figure": "fy8-7/rate-task2",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 3.0,
+      "unit": "",
+      "tolerance": 0.04
     }
   ]
 }

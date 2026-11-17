@@ -38,5 +38,12 @@ def _polyfit1(xs, ys):
 pp = [10, 20, 30, 40, 50, 60, 70.]; pl = [0.0, 0.1, 2.1, 6.1, 10.0, 13.9, 18.1]
 k, b0 = _polyfit1(pp[2:], pl[2:])                     # fit above threshold: slope 0,398, intercept -9,86 mW, threshold 24,8 mW
 a["fy8-7-L3-05"] = k * 1064 / 808                         # N_L / N_p = (dP_L / dP_p) lambda_L / lambda_p = 0,398 * 1,3168 = 0,524
+# fy8-7-L1-10 (MAFY lookup, h = 6,62607015e-34 J s from the table Luonnonvakiot): 2,0 mW of 670 nm: 1,34e-9 / 1,9865e-25 = 6,7455e15 1/s -> 6,7e15
+a["fy8-7-L1-10"] = 2.0e-3 * 670e-9 / (6.62607015e-34 * c)
+# fy8-7-L2-08 (figure fy8-7/rate-task): the point (520 nm, 3,93e15 1/s) is a 1,5 mW laser: P = (N/t) hc / lambda, 3,9e15 read -> 1,49 mW -> 1,5 mW
+a["fy8-7-L2-08"] = (1.5e-3 * 520e-9 / hc) * hc / 520e-9 * 1e3
+# fy8-7-L3-06 (figure fy8-7/rate-task2): X 450 nm, 6,80e15; Y 800 nm, 4,03e15 (3,0 mW and 1,0 mW): P_X / P_Y = (N_X / N_Y) (lambda_Y / lambda_X) = 3,0
+nX, nY = 3.0e-3 * 450e-9 / hc, 1.0e-3 * 800e-9 / hc
+a["fy8-7-L3-06"] = (nX / nY) * (800 / 450)
 # fy8-7-L1-09 is a true-or-false task without a number: 650 nm photon hc/lambda = 3,056e-19 J = 1,91 eV for the laser and the LED alike
 print(json.dumps({k: float(f"{v:.7g}") for k, v in a.items()}))

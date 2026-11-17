@@ -295,3 +295,101 @@ d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 =
 **Sijoitus:** c) $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = 0{,}398 \cdot \dfrac{1064\,\text{nm}}{808\,\text{nm}} = 0{,}398 \cdot 1{,}3168 = 0{,}524$. d) Neodyymilaserissa alempi lasertaso tyhjenee heti, joten inversio syntyy jo pienelläkin pumppauksella. Kynnyksen alapuolella vahvistus on silti pienempi kuin häviöt, jotka aiheutuvat peilin läpi ulos pääsevästä valosta, sironnasta ja absorptiosta. Silloin laservärähtely ei käynnisty, vaan aine lähettää vain heikkoa spontaania valoa joka suuntaan, ja $P_\text{L} \approx 0$. Kynnyksellä vahvistus on yhtä suuri kuin häviöt, ja kynnyksen yläpuolella lisäpumppaus muuttuu laservaloksi.
 **Vastaus:** $0{,}52$ laserfotonia lisäpumppausfotonia kohti, kaksi merkitsevää numeroa, koska sovituksen hajonta (toleranssi $6\,\%$) ei tue useampaa. Kynnysteho $25\,\text{mW}$ ja kulmakerroin $0{,}40$ eivät ole vastauslaatikkoon.
 **Järkevyys:** Luku on alle yksi, koska kukin pumppausfotoni tuottaa enintään yhden laserfotonin, joten arvo $0{,}52$ on mahdollinen. Kulmakertoimen enimmäisarvo olisi $\tfrac{808}{1064} = 0{,}76$, ja todellinen $0{,}40$ on sen alla; $0{,}52 \cdot 0{,}76 = 0{,}40$, kuten pitää.
+
+## fy8-7-L1-10
+**Annettu:** laserin teho $P = 2{,}0\,\text{mW}$, aallonpituus $\lambda = 670\,\text{nm}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$; taulukosta (MAFY, *Luonnonvakiot*) Planckin vakio $h = 6{,}626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Kysytty:** sekunnissa lähtevien fotonien määrä $\tfrac{N}{t}$
+**Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Planckin vakio ei kuulu tehtävän tietoihin, joten se haetaan taulukosta.
+**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, josta $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Muunnokset:** $P = 2{,}0\,\text{mW} = 2{,}0 \cdot 10^{-3}\,\text{W}$ ja $\lambda = 670\,\text{nm} = 670 \cdot 10^{-9}\,\text{m}$.
+**Sijoitus:** Ensin tulo $hc$:
+$$
+\begin{aligned}
+hc &= 6{,}626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Sitten tulo $P\lambda$:
+$$
+\begin{aligned}
+P\lambda &= 2{,}0 \cdot 10^{-3}\,\text{W} \\
+&\cdot 670 \cdot 10^{-9}\,\text{m} \\
+&= 1{,}34 \cdot 10^{-9}\,\text{W}\,\text{m}
+\end{aligned}
+$$
+Lopuksi fotonien määrä sekunnissa:
+$$
+\begin{aligned}
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+&= \dfrac{1{,}34 \cdot 10^{-9}\,\text{W}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} \\
+&= 6{,}7455 \cdot 10^{15}\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$
+**Vastaus:** $6{,}7 \cdot 10^{15}$ fotonia sekunnissa, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{mW}$. Planckin vakio on MAFY-taulukon (*Luonnonvakiot*) arvo; taulukkojen painosten arvot voivat poiketa hieman, ja vastaus hyväksytään noin $\pm 2\,\%$ tarkkuudella.
+**Järkevyys:** Yhden fotonin energia on $\tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{670 \cdot 10^{-9}\,\text{m}} \approx 3{,}0 \cdot 10^{-19}\,\text{J}$, ja $6{,}7 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 3{,}0 \cdot 10^{-19}\,\text{J} \approx 2{,}0 \cdot 10^{-3}\,\text{W}$, kuten pitää. Vihreä $532\,\text{nm}$:n osoitin, jonka teho on $5{,}0\,\text{mW}$, lähettää $1{,}3 \cdot 10^{16}\,\tfrac{1}{\text{s}}$; tässä teho on pienempi mutta aallonpituus pidempi, joten luku $6{,}7 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ on uskottava.
+
+## fy8-7-L2-08
+**Annettu:** kuvasta luettu pisteen aallonpituus $\lambda = 520\,\text{nm}$ ja fotonien määrä sekunnissa $\tfrac{N}{t} = 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
+**Kysytty:** laserin teho $P$ milliwatteina
+**Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Sekä aallonpituus että fotonien määrä tulevat kuvasta.
+**Kuvaajan lukeminen:** Vaaka-akselilla on aallonpituus ja ruudukon väli on $100\,\text{nm}$. Piste on viidennen ja kuudennen pystyviivan välissä, viidennen viivan jälkeen $20\,\text{nm}$:n verran, joten $\lambda = 520\,\text{nm}$. Pystyakselilla on fotonien määrä sekunnissa yksikössä $10^{15}\,\tfrac{1}{\text{s}}$ ja ruudukon väli on $0{,}5$. Piste on hieman alle neljännen vaakaviivan (arvo $4{,}0$) alapuolella, joten $\tfrac{N}{t} \approx 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
+**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Muunnokset:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ ja lopuksi $1\,\text{mW} = 10^{-3}\,\text{W}$.
+**Sijoitus:** Ensin tulo $hc$:
+$$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Sitten yhden fotonin energia:
+$$
+\begin{aligned}
+\dfrac{hc}{\lambda} &= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}8201 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
+Lopuksi teho:
+$$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+&= 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 3{,}8201 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}490 \cdot 10^{-3}\,\text{W} \\
+&= 1{,}490\,\text{mW}
+\end{aligned}
+$$
+**Vastaus:** $1{,}5\,\text{mW}$, kaksi merkitsevää numeroa, koska fotonien määrä luetaan kuvasta kahdella numerolla ($3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$). Kuvaajan lukutarkkuus huomioiden vastaus hyväksytään noin $\pm 3\,\%$ tarkkuudella.
+**Järkevyys:** Yhden fotonin energia on noin $2{,}4\,\text{eV}$, vihreää valoa. Laser, jonka teho olisi $1{,}0\,\text{mW}$, lähettäisi tällä aallonpituudella noin $2{,}6 \cdot 10^{15}$ fotonia sekunnissa, ja kuvan arvo $3{,}9 \cdot 10^{15}$ on noin puolitoistakertainen, joten teho $1{,}5\,\text{mW}$ täsmää.
+
+## fy8-7-L3-06
+**Annettu:** kuvasta luetut pisteet: laser X $\lambda_\text{X} = 450\,\text{nm}$, $\tfrac{N_\text{X}}{t} = 6{,}8 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ ja laser Y $\lambda_\text{Y} = 800\,\text{nm}$, $\tfrac{N_\text{Y}}{t} = 4{,}0 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
+**Kysytty:** tehojen suhde $\tfrac{P_\text{X}}{P_\text{Y}}$
+**Periaate:** Kummankin laserin teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Suuri fotonimäärä ei yksin tarkoita suurta tehoa, koska lyhyen aallonpituuden fotoni kantaa enemmän energiaa kuin pitkän.
+**Kuvaajan lukeminen:** Vaaka-akselin ruudukon väli on $100\,\text{nm}$ ja pystyakselin $1 \cdot 10^{15}\,\tfrac{1}{\text{s}}$. Piste X on aallonpituudella $450\,\text{nm}$ eli neljännen ja viidennen pystyviivan puolivälissä, ja se on $6{,}8$ yksikön korkeudella, hieman alle seitsemännen vaakaviivan. Piste Y on aallonpituudella $800\,\text{nm}$ eli kahdeksannen pystyviivan kohdalla, ja se on aivan neljännen vaakaviivan yläpuolella, $4{,}0$ yksikön korkeudella.
+**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, joten $\dfrac{P_\text{X}}{P_\text{Y}} = \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} = \dfrac{N_\text{X}/t}{N_\text{Y}/t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}$
+**Muunnokset:** Suhteessa aallonpituudet ja fotonimäärät supistuvat samassa yksikössä, joten nanometrejä ja yksikköä $10^{15}\,\tfrac{1}{\text{s}}$ ei tarvitse muuntaa. Vakio $hc$ supistuu.
+**Sijoitus:** Ensin fotonimäärien suhde:
+$$
+\begin{aligned}
+\dfrac{N_\text{X}/t}{N_\text{Y}/t} &= \dfrac{6{,}8 \cdot 10^{15}\,\tfrac{1}{\text{s}}}{4{,}0 \cdot 10^{15}\,\tfrac{1}{\text{s}}} \\
+&= 1{,}70
+\end{aligned}
+$$
+Sitten aallonpituuksien suhde:
+$$
+\begin{aligned}
+\dfrac{\lambda_\text{Y}}{\lambda_\text{X}} &= \dfrac{800\,\text{nm}}{450\,\text{nm}} \\
+&= 1{,}7778
+\end{aligned}
+$$
+Lopuksi tehojen suhde:
+$$
+\begin{aligned}
+\dfrac{P_\text{X}}{P_\text{Y}} &= 1{,}70 \cdot 1{,}7778 \\
+&= 3{,}022
+\end{aligned}
+$$
+**Vastaus:** laserin X teho on noin $3{,}0$ kertaa laserin Y teho, kaksi merkitsevää numeroa, koska luetut arvot ovat kahden numeron tarkkuudella. Kuvaajan lukutarkkuus huomioiden vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Lasketaan tehot erikseen: $P_\text{X} = 6{,}8 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 4{,}41 \cdot 10^{-19}\,\text{J} \approx 3{,}0\,\text{mW}$ ja $P_\text{Y} = 4{,}0 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 2{,}48 \cdot 10^{-19}\,\text{J} \approx 1{,}0\,\text{mW}$, joten suhde on noin $3$. Laser Y lähettää fotoneja vain noin $1{,}7$ kertaa vähemmän, mutta tehoero on kolminkertainen, koska X:n fotonit ovat energisempiä.

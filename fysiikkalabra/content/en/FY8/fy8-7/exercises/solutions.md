@@ -295,3 +295,101 @@ d) The energy efficiency is $\tfrac{15.0\,\text{W}}{20.0\,\text{W}} = 0.750 = 75
 **Substitution:** c) $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = 0.398 \cdot \dfrac{1064\,\text{nm}}{808\,\text{nm}} = 0.398 \cdot 1.3168 = 0.524$. d) In a neodymium laser the lower laser level empties immediately, so an inversion is formed even with a small pumping. Below the threshold the gain is nevertheless smaller than the losses caused by the light escaping through the mirror, scattering and absorption. Then laser oscillation does not start, but the medium emits only weak spontaneous light in all directions, and $P_\text{L} \approx 0$. At the threshold the gain is equal to the losses, and above the threshold additional pumping turns into laser light.
 **Answer:** $0.52$ laser photons per additional pump photon, two significant figures, because the scatter of the fit (tolerance $6\,\%$) does not support more. The threshold power $25\,\text{mW}$ and the slope $0.40$ are not for the answer box.
 **Reasonableness:** The number is less than one, because each pump photon produces at most one laser photon, so the value $0.52$ is possible. The greatest possible value of the slope would be $\tfrac{808}{1064} = 0.76$, and the actual $0.40$ is below it; $0.52 \cdot 0.76 = 0.40$, as it should be.
+
+## fy8-7-L1-10
+**Given:** power of the laser $P = 2.0\,\text{mW}$, wavelength $\lambda = 670\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$; from the table (MAFY, *Physical constants*) the Planck constant $h = 6.626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Find:** the number of photons emitted per second $\tfrac{N}{t}$
+**Principle:** The photons of a laser are alike, so the power is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. The Planck constant is not among the data of the task, so it is looked up in the table.
+**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, from which $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Conversions:** $P = 2.0\,\text{mW} = 2.0 \cdot 10^{-3}\,\text{W}$ and $\lambda = 670\,\text{nm} = 670 \cdot 10^{-9}\,\text{m}$.
+**Substitution:** First the product $hc$:
+$$
+\begin{aligned}
+hc &= 6.626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Then the product $P\lambda$:
+$$
+\begin{aligned}
+P\lambda &= 2.0 \cdot 10^{-3}\,\text{W} \\
+&\cdot 670 \cdot 10^{-9}\,\text{m} \\
+&= 1.34 \cdot 10^{-9}\,\text{W}\,\text{m}
+\end{aligned}
+$$
+Finally the number of photons per second:
+$$
+\begin{aligned}
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+&= \dfrac{1.34 \cdot 10^{-9}\,\text{W}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} \\
+&= 6.7455 \cdot 10^{15}\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$
+**Answer:** $6.7 \cdot 10^{15}$ photons per second, two significant figures like the power $2.0\,\text{mW}$. The Planck constant is the value of the MAFY table (*Physical constants*); the values of different editions of the tables may differ slightly, and the answer is accepted within about $\pm 2\,\%$.
+**Reasonableness:** The energy of one photon is $\tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{670 \cdot 10^{-9}\,\text{m}} \approx 3.0 \cdot 10^{-19}\,\text{J}$, and $6.7 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 3.0 \cdot 10^{-19}\,\text{J} \approx 2.0 \cdot 10^{-3}\,\text{W}$, as it should. A green $532\,\text{nm}$ pointer of $5.0\,\text{mW}$ emits $1.3 \cdot 10^{16}\,\tfrac{1}{\text{s}}$; here the power is smaller but the wavelength longer, so $6.7 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ is plausible.
+
+## fy8-7-L2-08
+**Given:** wavelength of the point read from the figure $\lambda = 520\,\text{nm}$ and number of photons per second $\tfrac{N}{t} = 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
+**Find:** the power $P$ of the laser in milliwatts
+**Principle:** The photons of a laser are alike, so the power is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. Both the wavelength and the number of photons come from the figure.
+**Reading the graph:** The horizontal axis is the wavelength and the grid spacing is $100\,\text{nm}$. The point is between the fifth and the sixth vertical line, $20\,\text{nm}$ after the fifth, so $\lambda = 520\,\text{nm}$. The vertical axis is the number of photons per second in units of $10^{15}\,\tfrac{1}{\text{s}}$ and the grid spacing is $0.5$. The point is just below the fourth horizontal line (value $4.0$), so $\tfrac{N}{t} \approx 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
+**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Conversions:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ and finally $1\,\text{mW} = 10^{-3}\,\text{W}$.
+**Substitution:** First the product $hc$:
+$$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Then the energy of one photon:
+$$
+\begin{aligned}
+\dfrac{hc}{\lambda} &= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} \\
+&= 3.8201 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
+Finally the power:
+$$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+&= 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 3.8201 \cdot 10^{-19}\,\text{J} \\
+&= 1.490 \cdot 10^{-3}\,\text{W} \\
+&= 1.490\,\text{mW}
+\end{aligned}
+$$
+**Answer:** $1.5\,\text{mW}$, two significant figures, because the number of photons is read from the figure with two figures ($3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$). Allowing for the reading of the graph, the answer is accepted within about $\pm 3\,\%$.
+**Reasonableness:** The energy of one photon is about $2.4\,\text{eV}$, green light. A laser of $1.0\,\text{mW}$ would emit about $2.6 \cdot 10^{15}$ photons per second at this wavelength, and the value $3.9 \cdot 10^{15}$ of the figure is about one and a half times that, so the power $1.5\,\text{mW}$ fits.
+
+## fy8-7-L3-06
+**Given:** points read from the figure: laser X $\lambda_\text{X} = 450\,\text{nm}$, $\tfrac{N_\text{X}}{t} = 6.8 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ and laser Y $\lambda_\text{Y} = 800\,\text{nm}$, $\tfrac{N_\text{Y}}{t} = 4.0 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
+**Find:** the ratio of the powers $\tfrac{P_\text{X}}{P_\text{Y}}$
+**Principle:** The power of each laser is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. A large number of photons does not alone mean a large power, because a photon of a short wavelength carries more energy than one of a long wavelength.
+**Reading the graph:** The grid spacing of the horizontal axis is $100\,\text{nm}$ and of the vertical axis $1 \cdot 10^{15}\,\tfrac{1}{\text{s}}$. Point X is at the wavelength $450\,\text{nm}$, halfway between the fourth and the fifth vertical line, and at the height $6.8$, a little below the seventh horizontal line. Point Y is at the wavelength $800\,\text{nm}$, on the eighth vertical line, and just above the fourth horizontal line, at the height $4.0$.
+**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, so $\dfrac{P_\text{X}}{P_\text{Y}} = \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} = \dfrac{N_\text{X}/t}{N_\text{Y}/t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}$
+**Conversions:** In a ratio the wavelengths and the numbers of photons are in the same unit and cancel, so nanometres and the unit $10^{15}\,\tfrac{1}{\text{s}}$ need no conversion. The constant $hc$ cancels.
+**Substitution:** First the ratio of the numbers of photons:
+$$
+\begin{aligned}
+\dfrac{N_\text{X}/t}{N_\text{Y}/t} &= \dfrac{6.8 \cdot 10^{15}\,\tfrac{1}{\text{s}}}{4.0 \cdot 10^{15}\,\tfrac{1}{\text{s}}} \\
+&= 1.70
+\end{aligned}
+$$
+Then the ratio of the wavelengths:
+$$
+\begin{aligned}
+\dfrac{\lambda_\text{Y}}{\lambda_\text{X}} &= \dfrac{800\,\text{nm}}{450\,\text{nm}} \\
+&= 1.7778
+\end{aligned}
+$$
+Finally the ratio of the powers:
+$$
+\begin{aligned}
+\dfrac{P_\text{X}}{P_\text{Y}} &= 1.70 \cdot 1.7778 \\
+&= 3.022
+\end{aligned}
+$$
+**Answer:** the power of laser X is about $3.0$ times the power of laser Y, two significant figures, because the values read are of two-figure precision. Allowing for the reading of the graph, the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** Calculate the powers separately: $P_\text{X} = 6.8 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 4.41 \cdot 10^{-19}\,\text{J} \approx 3.0\,\text{mW}$ and $P_\text{Y} = 4.0 \cdot 10^{15}\,\tfrac{1}{\text{s}} \cdot 2.48 \cdot 10^{-19}\,\text{J} \approx 1.0\,\text{mW}$, so the ratio is about $3$. Laser Y emits only about $1.7$ times fewer photons, but the difference in power is threefold, because the photons of X are more energetic.
