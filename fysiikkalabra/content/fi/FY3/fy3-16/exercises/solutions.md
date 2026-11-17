@@ -219,7 +219,9 @@ Jään jäähtyminen: $Q_3 = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdo
 Yhteensä $Q = 21{,}32 \cdot 10^{9}\,\text{J}$, ja teho $P = \dfrac{21{,}32 \cdot 10^{9}\,\text{J}}{36\,000\,\text{s}} = 592\,200\,\text{W} = 592\,\text{kW}$
 **Vastaus:** $590\,\text{kW}$, kaksi merkitsevää numeroa, koska vesikerroksen paksuus $0{,}030\,\text{m}$ ja jään lämpötila $-5{,}0\,{}^\circ\text{C}$ ovat kahdella numerolla.
 **Järkevyys:** Arvio: $54\,000\,\text{kg}$ jäätymiseen tarvitaan noin $$\begin{aligned} &0{,}33\,\text{MJ/kg} \cdot 54\,000\,\text{kg} \\ &\approx 18\,\text{GJ} \end{aligned}$$, ja kaikkiaan noin $21\,\text{GJ}$, joka on $$\begin{aligned} &21{,}3\,\text{GJ} : 3{,}6\,\text{GJ/MWh} \\ &\approx 5{,}9\,\text{MWh} \end{aligned}$$ eli noin $5900\,\text{kWh}$; kymmenessä tunnissa teho on noin $590\,\text{kW}$.
-**Mallivastaus d)-kohtaan:** jäätyminen vaatii eniten, noin $85\,\%$ koko energiasta, koska jäätymislämpö $s = 334\,\text{kJ/kg}$ vastaa suunnilleen $80\,\text{K}$:n lämpötilan muutosta vedessä ($334 : 4{,}19 \approx 80$), kun taas veden ja jään jäähtyminen on vain $12\,\text{K}$ ja $5{,}0\,\text{K}$. Todellinen tarvittava jäähdytysteho on laskettua suurempi, koska hallin ilmasta, valaistuksesta, katsojista, betonilaatasta ja maaperästä tulee lisää lämpöä; malli antaa siis alarajan. Koneen sähköteho riippuu lisäksi sen kylmäkertoimesta.
+**Mallivastaus d)-kohtaan:** jäätyminen vaatii eniten, noin $85\,\%$ koko energiasta, koska jäätymislämpö $s = 334\,\text{kJ/kg}$ vastaa suunnilleen $80\,\text{K}$:n lämpötilan muutosta vedessä ($334 : 4{,}19 \approx 80$), kun taas veden ja jään jäähtyminen on vain $12\,\text{K}$ ja $5{,}0\,\text{K}$.
+
+Todellinen tarvittava jäähdytysteho on laskettua suurempi, koska hallin ilmasta, valaistuksesta, katsojista, betonilaatasta ja maaperästä tulee lisää lämpöä; malli antaa siis alarajan. Koneen sähköteho riippuu lisäksi sen kylmäkertoimesta.
 
 ## fy3-16-L1-09
 **Annettu:** veden massa $m = 0{,}30\,\text{kg}$, lämpötila $100\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, aineiden olomuodon muutokset, vesi) $r = 2260\,\text{kJ/kg}$

@@ -184,6 +184,7 @@ c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)
 ```
 missä $T_1$ ja $T_2$ ovat kappaleiden alkulämpötilat ja $T$ yhteinen loppulämpötila eli tasapainolämpötila. Yhtälön molemmat puolet ovat positiivisia lämpömääriä: kuumalle kappaleelle lasketaan alkulämpötila miinus loppulämpötila, kylmälle loppulämpötila miinus alkulämpötila. Yhtälöstä voidaan ratkaista mikä tahansa suure, kun muut tunnetaan: loppulämpötila, massa tai tuntematon ominaislämpökapasiteetti.
 
+
 Tasapainolämpötila $T$ esiintyy yhtälössä kahdessa termissä. Se ratkaistaan kertomalla sulut auki, keräämällä $T$:tä sisältävät termit samalle puolelle ja ottamalla $T$ yhteiseksi tekijäksi:
 ```latex
 \begin{aligned}
@@ -253,7 +254,11 @@ Kalorimetrissä on $0{,}300\,\text{kg}$ vettä, jonka lämpötila on $20{,}0\,{}
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}300\,\text{kg}$, $T_\text{v} = 20{,}0\,{}^\circ\text{C}$ ja taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Metalli: $m_\text{m} = 0{,}200\,\text{kg}$, $T_\text{m} = 100{,}0\,{}^\circ\text{C}$. Tasapainolämpötila $T = 24{,}5\,{}^\circ\text{C}$. Kysytään metallin ominaislämpökapasiteettia $c_\text{m}$.
+**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}300\,\text{kg}$, $T_\text{v} = 20{,}0\,{}^\circ\text{C}$ ja taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+
+Metalli: $m_\text{m} = 0{,}200\,\text{kg}$, $T_\text{m} = 100{,}0\,{}^\circ\text{C}$. Tasapainolämpötila $T = 24{,}5\,{}^\circ\text{C}$.
+
+Kysytään metallin ominaislämpökapasiteettia $c_\text{m}$.
 
 <!-- vaihe -->
 
@@ -295,7 +300,9 @@ Kalorimetrissä on $0{,}300\,\text{kg}$ vettä, jonka lämpötila on $20{,}0\,{}
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia $385\,\text{J/(kg}\cdot\text{K)}$, joten kappale on luultavasti kuparia. Häviöttömässä kalorimetrissä $0{,}200\,\text{kg}$:n kuparikappale nostaisi veden $24{,}6\,{}^\circ\text{C}$:seen (kokeile simulaatiossa); mitattu $0{,}1\,\text{K}$ pienempi lukema selittyy lukematarkkuudella tai sillä, että todellisuudessa osa lämmöstä siirtyi myös kalorimetrin astiaan ja ilmaan. Vesi lämpeni vain $4{,}5\,\text{K}$, vaikka metalli jäähtyi $75{,}5\,\text{K}$: veden lämpökapasiteetti on $C_\text{v} = m_\text{v} c_\text{v} = 0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, mikä on paljon enemmän kuin kappaleen lämpökapasiteetti $C_\text{m} = m_\text{m} c_\text{m} = 0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
+**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia $385\,\text{J/(kg}\cdot\text{K)}$, joten kappale on luultavasti kuparia. Häviöttömässä kalorimetrissä $0{,}200\,\text{kg}$:n kuparikappale nostaisi veden $24{,}6\,{}^\circ\text{C}$:seen (kokeile simulaatiossa); mitattu $0{,}1\,\text{K}$ pienempi lukema selittyy lukematarkkuudella tai sillä, että todellisuudessa osa lämmöstä siirtyi myös kalorimetrin astiaan ja ilmaan.
+
+Vesi lämpeni vain $4{,}5\,\text{K}$, vaikka metalli jäähtyi $75{,}5\,\text{K}$: veden lämpökapasiteetti on $C_\text{v} = m_\text{v} c_\text{v} = 0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, mikä on paljon enemmän kuin kappaleen lämpökapasiteetti $C_\text{m} = m_\text{m} c_\text{m} = 0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Kilon veden ja kilon raudan lämmittäminen $20\,{}^\circ\text{C}$:sta $60\,{}^\circ\text{C}$:seen vaatii vedelle lähes kymmenkertaisen energian. Toinen virhe on laskea tasapainolämpötila keskiarvona. Kun $1{,}0\,\text{kg}$ 80-asteista vettä kaadetaan $3{,}0\,\text{kg}$:aan 20-asteista vettä, veden ominaislämpökapasiteetti $c$ on yhtälön molemmilla puolilla ja supistuu pois:

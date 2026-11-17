@@ -160,7 +160,9 @@ Pumpun sylinterissä on ilmaa. Mäntää painetaan alas. Ympäristö tekee ilmaa
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Ilma on systeemi. Ympäristö tekee työtä systeemiin, joten $W = +150\,\text{J}$. Lämpöä siirtyy systeemistä pois, joten $Q = -40\,\text{J}$. Kysytty on sisäenergian muutos $\Delta U$.
+**Tunnetut ja kysytty.** Ilma on systeemi. Ympäristö tekee työtä systeemiin, joten $W = +150\,\text{J}$. Lämpöä siirtyy systeemistä pois, joten $Q = -40\,\text{J}$.
+
+Kysytty on sisäenergian muutos $\Delta U$.
 
 <!-- vaihe -->
 

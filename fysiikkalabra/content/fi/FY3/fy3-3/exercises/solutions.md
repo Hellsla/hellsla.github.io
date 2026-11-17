@@ -232,7 +232,11 @@ T_3 &= 293{,}15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 \frac{\Delta E_\text{k}}{E_\text{k,1}} &= \frac{333{,}15 - 293{,}15}{293{,}15} = 0{,}136
 \end{aligned}$$
 Liike-energia kasvaa siis $13{,}6\,\%$.
-**Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$), kolme merkitsevää numeroa kuten ilmanpaineessa $101\,\text{kPa}$. Muut tulokset: kokonaispaine $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$ lämpötilassa $60{,}0\,{}^\circ\text{C}$ (venttiili ei avaudu), ja liike-energia kasvaa $13{,}6\,\%$. Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia, mutta ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä; ylipaine on kokonaispaineen ja ilmanpaineen erotus.
+**Vastaus:** $145\,{}^\circ\text{C}$ (tarkasti $145{,}46\,{}^\circ\text{C}$), kolme merkitsevää numeroa kuten ilmanpaineessa $101\,\text{kPa}$.
+
+Muut tulokset: kokonaispaine $797\,\text{kPa}$ ja ylipaine $696\,\text{kPa}$ lämpötilassa $60{,}0\,{}^\circ\text{C}$ (venttiili ei avaudu), ja liike-energia kasvaa $13{,}6\,\%$.
+
+Kokonaispaine kasvaa $796{,}7 : 701 = 1{,}136$-kertaiseksi eli $13{,}6\,\%$, saman verran kuin liike-energia, mutta ylipaine kasvaa $695{,}7 : 600 = 1{,}16$-kertaiseksi eli $16\,\%$. Kokonaispaine on verrannollinen kelvinlämpötilaan, koska se syntyy hiukkasten törmäyksistä; ylipaine on kokonaispaineen ja ilmanpaineen erotus.
 **Järkevyys:** Venttiilin avautumisessa kokonaispaine kasvaa suhteessa $1001 : 701 = 1{,}43$, joten kelvinlämpötilan on kasvettava samoin: $293 \cdot 1{,}43 \approx 419\,\text{K}$, mikä vastaa tuloksen $418{,}61\,\text{K} - 273{,}15 = 145{,}46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$ suuruusluokkaa. Auton sisällä oleva $60\,{}^\circ\text{C}$ on selvästi alle $145\,{}^\circ\text{C}$, joten venttiili ei avaudu. Jos ylipainetta pidettäisiin verrannollisena, saataisiin väärin $$\begin{aligned} &293{,}15 \cdot 1{,}5 - 273{,}15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L1-09

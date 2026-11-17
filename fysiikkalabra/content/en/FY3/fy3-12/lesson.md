@@ -226,7 +226,9 @@ The walls of a detached house have an area of 120 m² and a U-value of $0.17\,\t
 
 <!-- vaihe -->
 
-**Given and find.** Walls: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Windows: $A_\text{i} = 20.0\,\text{m}^2$, $U_\text{i} = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Temperatures $T_\text{in} = 21\,{}^\circ\text{C}$ and $T_\text{out} = -15\,{}^\circ\text{C}$. You are asked for the thermal power $P$ and the energy $E$ in one day.
+**Given and find.** Walls: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Windows: $A_\text{i} = 20.0\,\text{m}^2$, $U_\text{i} = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Temperatures $T_\text{in} = 21\,{}^\circ\text{C}$ and $T_\text{out} = -15\,{}^\circ\text{C}$.
+
+You are asked for the thermal power $P$ and the energy $E$ in one day.
 
 <!-- vaihe -->
 

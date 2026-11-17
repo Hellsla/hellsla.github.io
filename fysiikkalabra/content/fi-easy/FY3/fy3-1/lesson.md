@@ -273,7 +273,9 @@ Tutkimusrobotin massa on $1{,}20 \cdot 10^2\,\text{kg}$. Mikä on sen paino Maas
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa on $m = 1{,}20 \cdot 10^2\,\text{kg}$. Taulukosta saadaan $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$. Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
+**Tunnetut ja kysytty.** Massa on $m = 1{,}20 \cdot 10^2\,\text{kg}$. Taulukosta saadaan $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$.
+
+Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
 
 <!-- vaihe -->
 
@@ -313,7 +315,9 @@ G_\text{Mars} &= m g_\text{Mars}
 
 <!-- vaihe -->
 
-**Järkevyys.** Yhden kilogramman massan paino Maassa on noin $10\,\text{N}$. Siksi $120\,\text{kg}$:n massan paino on noin $1200\,\text{N}$. Marsin $g$ on vähän yli kolmasosa Maan arvosta ($3{,}71 : 9{,}81 \approx 0{,}38$). Myös $445\,\text{N}$ on vähän yli kolmasosa $1{,}18\,\text{kN}$:sta. Marsissa paino on pienempi. Syy on se, että Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa paikoissa sama.
+**Järkevyys.** Yhden kilogramman massan paino Maassa on noin $10\,\text{N}$. Siksi $120\,\text{kg}$:n massan paino on noin $1200\,\text{N}$. Marsin $g$ on vähän yli kolmasosa Maan arvosta ($3{,}71 : 9{,}81 \approx 0{,}38$).
+
+Myös $445\,\text{N}$ on vähän yli kolmasosa $1{,}18\,\text{kN}$:sta. Marsissa paino on pienempi. Syy on se, että Marsin ja robotin välinen vuorovaikutus on heikompi kuin Maan ja robotin. Massa on molemmissa paikoissa sama.
 
 ## Yleinen virhekäsitys
 Arkikielessä sanotaan ”painan 70 kiloa”, mutta kilogramma on massan yksikkö, ei painon. Fysiikassa massa on $70\,\text{kg}$ ja paino Maassa noin $690\,\text{N}$. Toinen virhe on ajatella, että kappaleen massa muuttuu Kuussa. Massa pysyy samana, ja vain paino pienenee. Huomaa myös, että voimamittari mittaa voimaa, ei massaa. Sen lukema muuttuu, kun sama kappale viedään toiseen paikkaan. Kylpyhuonevaaka näyttää silti kilogrammoja. Se mittaa voimaa, ja sen asteikko on tehty Maassa jakamalla voima arvolla $9{,}81\,\text{m/s}^2$. Kuussa tällainen vaaka näyttäisi vain noin kuudesosan massasta.

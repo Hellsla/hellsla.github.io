@@ -116,7 +116,13 @@
 **Formula:** $Q = (U_1 - U_2)A\Delta T\,t$ and $W = \dfrac{Q}{\varepsilon}$, so $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
 **Conversions:** The time is already in hours and the result is wanted in kilowatt-hours, so the power $\text{W}$ is converted to kilowatts by dividing by a thousand: $\text{Wh} / 1000 = \text{kWh}$.
 **Substitution:** $$\begin{aligned} Q &= (0.35 - 0.10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \\ &\cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} \\ &= 475\,\text{W} \cdot 5800\,\text{h} \\ &= 2\,755\,000\,\text{Wh} \\ &= 2755\,\text{kWh} \end{aligned}$$. $W = \dfrac{2755\,\text{kWh}}{2.8} \approx 983.9\,\text{kWh}$
-**Answer:** $980\,\text{kWh}$, two significant figures. The limiting data are the coefficient of performance $2.8$, the difference of the U-values $0.35 - 0.10 = 0.25$ and the temperature difference $19\,\text{K}$, all with two figures; the area $100\,\text{m}^2$ and the time $5800\,\text{h}$ are values with at least two figures. The calculator result $983.9\,\text{kWh}$ is rounded. The pump does not create heat but moves it using electricity, and the more heat the house needs, the more electricity is used. That is why insulation is worthwhile: a smaller heating need means a smaller electricity bill.
+**Answer:** $980\,\text{kWh}$, two significant figures.
+
+The limiting data are the coefficient of performance $2.8$, the difference of the U-values $0.35 - 0.10 = 0.25$ and the temperature difference $19\,\text{K}$, all with two figures; the area $100\,\text{m}^2$ and the time $5800\,\text{h}$ are values with at least two figures.
+
+The calculator result $983.9\,\text{kWh}$ is rounded. The pump does not create heat but moves it using electricity, and the more heat the house needs, the more electricity is used.
+
+That is why insulation is worthwhile: a smaller heating need means a smaller electricity bill.
 **Reasonableness:** Back-calculation: $983.9 \cdot 2.8 \approx 2755\,\text{kWh}$. The electricity saving is smaller than the heat saving of $2755\,\text{kWh}$, because the pump delivers $2.8$ kWh of heat from one kilowatt-hour of electricity; in addition to the electricity, heat comes from the outdoor air. With direct electric heating ($\varepsilon = 1$) the saving would be the whole $2755\,\text{kWh}$. In frost the coefficient of performance decreases and the backup resistance heater starts, so the saving is then greatest.
 
 ## fy3-12-L1-06
@@ -127,12 +133,22 @@
 ## fy3-12-L1-07
 **Find:** which statement about the greenhouse effect is correct
 **Principle:** The greenhouse effect arises from the interaction of the gases of the atmosphere with the thermal radiation of the surface. Greenhouse gases absorb the thermal radiation emitted by the surface and radiate part of it back down, which raises the equilibrium temperature of the surface.
-**Model answer:** The correct statement is the one saying that greenhouse gases absorb the thermal radiation of the surface and radiate part of it back down, so the surface is warmer. Thanks to the effect, the mean temperature of the surface is about $+15\,{}^\circ\text{C}$ and not about $-18\,{}^\circ\text{C}$. Ozone depletion is a different matter: it increases ultraviolet radiation but hardly warms the Earth. Greenhouse gases do not prevent the radiation of the Sun from reaching the surface. The natural greenhouse effect exists even without human emissions, and the emissions strengthen it.
+**Model answer:** The correct statement is the one saying that greenhouse gases absorb the thermal radiation of the surface and radiate part of it back down, so the surface is warmer.
+
+Thanks to the effect, the mean temperature of the surface is about $+15\,{}^\circ\text{C}$ and not about $-18\,{}^\circ\text{C}$. Ozone depletion is a different matter: it increases ultraviolet radiation but hardly warms the Earth.
+
+Greenhouse gases do not prevent the radiation of the Sun from reaching the surface. The natural greenhouse effect exists even without human emissions, and the emissions strengthen it.
 
 ## fy3-12-L1-08
 **Find:** which statement about heat transfer through the wall is correct when it is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors
 **Principle:** A temperature difference transfers energy, as a net amount, from the warmer body to the colder one. Thermal radiation is emitted by both, however, and the warmer one emits more. The quantity that is transferred is energy, not cold.
-**Model answer:** Heat is transferred as a net amount from indoors to outdoors, because the temperature difference transfers energy from the warmer to the colder. Cold does not move anywhere: the inner surface feels cold because heat is transferred from the skin and the room towards the wall. The transfer is not equal in both directions, because then the indoor temperature would stay the same without heating, which is not true in frost. Heat is conducted also through a solid wall, and insulation only reduces the power that passes through it.
+**Model answer:** Heat is transferred as a net amount from indoors to outdoors, because the temperature difference transfers energy from the warmer to the colder.
+
+Cold does not move anywhere: the inner surface feels cold because heat is transferred from the skin and the room towards the wall.
+
+The transfer is not equal in both directions, because then the indoor temperature would stay the same without heating, which is not true in frost.
+
+Heat is conducted also through a solid wall, and insulation only reduces the power that passes through it.
 
 ## fy3-12-L2-05
 **Given:** $m = 0.25\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, initial temperature $80.0\,{}^\circ\text{C}$; from the table at the time $t = 10\,\text{min}$, $T_\text{A} = 69.0\,{}^\circ\text{C}$ (open) and $T_\text{B} = 73.0\,{}^\circ\text{C}$ (lid)
@@ -143,7 +159,13 @@
 **Substitution:** $T_\text{B} - T_\text{A} = 73.0\,{}^\circ\text{C} - 69.0\,{}^\circ\text{C} = 4.0\,\text{K}$. $P_\text{lid} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 4.0\,\text{K}}{600\,\text{s}} = \dfrac{4190\,\text{J}}{600\,\text{s}} = 6.98\,\text{W}$
 **Answer:** $7.0\,\text{W}$, two significant figures. The limiting datum is the temperature difference $4.0\,\text{K}$, which is a two-figure value.
 **Reasonableness:** The open cup gives out $\dfrac{4190 \cdot 0.25 \cdot 11.0}{600}\,\text{W} \approx 19.2\,\text{W}$ and the cup with a lid $\dfrac{4190 \cdot 0.25 \cdot 7.0}{600}\,\text{W} \approx 12.2\,\text{W}$, so the difference is $19.2\,\text{W} - 12.2\,\text{W} = 7.0\,\text{W}$, as calculated. The lid thus removes about a third of the loss. The power is small compared with, for example, the losses of a house, which fits a small cup.
-**Model answer b):** The lid prevents above all evaporation: the evaporating water takes the heat of vaporisation with it, and convection carries the vapour and the warm air away from above the cup. The lid stops this flow, so the water in cup B cools more slowly. It still cools, because heat is conducted through the wall of the cup and the lid into the surrounding air and the cup radiates heat, and the lid does not prevent these. According to the table, the temperature of cup B falls from $80.0\,{}^\circ\text{C}$ to $67.4\,{}^\circ\text{C}$ in $20\,\text{min}$.
+**Model answer b):** The lid prevents above all evaporation: the evaporating water takes the heat of vaporisation with it, and convection carries the vapour and the warm air away from above the cup.
+
+The lid stops this flow, so the water in cup B cools more slowly.
+
+It still cools, because heat is conducted through the wall of the cup and the lid into the surrounding air and the cup radiates heat, and the lid does not prevent these.
+
+According to the table, the temperature of cup B falls from $80.0\,{}^\circ\text{C}$ to $67.4\,{}^\circ\text{C}$ in $20\,\text{min}$.
 
 ## fy3-12-L2-06
 **Given:** $A = 1.6\,\text{m}^2$, $U = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $T_\text{in} = 21\,{}^\circ\text{C}$, $T_\text{out} = -15\,{}^\circ\text{C}$; the student's result $\Delta T = 6\,\text{K}$ and $P = 9.6\,\text{W}$
@@ -177,7 +199,15 @@
 **Substitution:** $\Delta A = 7.5 \cdot 10^{6}\,\text{km}^2 - 3.9 \cdot 10^{6}\,\text{km}^2 = 3.6 \cdot 10^{6}\,\text{km}^2$. $$\begin{aligned} \Delta P &= 90\,\tfrac{\text{W}}{\text{m}^2} \cdot 3.6 \cdot 10^{12}\,\text{m}^2 \\ &\cdot (0.60 - 0.06) \\ &= 1.7496 \cdot 10^{14}\,\text{W} \end{aligned}$$. $\Delta P_\text{Earth} = \dfrac{1.7496 \cdot 10^{14}\,\text{W}}{5.1 \cdot 10^{14}\,\text{m}^2} = 0.343\,\tfrac{\text{W}}{\text{m}^2}$
 **Answer:** $0.34\,\tfrac{\text{W}}{\text{m}^2}$, two significant figures, because the radiation power $90\,\tfrac{\text{W}}{\text{m}^2}$ and the difference of the albedos $0.54$ are two-figure values. It is about a third of the energy imbalance $1.0\,\tfrac{\text{W}}{\text{m}^2}$, because $0.34 / 1.0 \approx 0.3$.
 **Reasonableness:** The change in the area of ice is $$\begin{aligned} &3.6 \cdot 10^{12} / 5.1 \cdot 10^{14} \\ &\approx 0.7\,\% \end{aligned}$$ of the area of the Earth. Over it the absorbed power increases by the factor $0.54$ relative to $90\,\tfrac{\text{W}}{\text{m}^2}$, that is, $0.007 \cdot 90 \cdot 0.54 \approx 0.34\,\tfrac{\text{W}}{\text{m}^2}$, as calculated. If the albedos were the same, the increase would be zero, as it should be. The result is positive, because open sea absorbs more.
-**Model answer c):** The feedback is positive because it strengthens the original change: warming melts ice, so reflection decreases and the absorbed power increases, which warms things even more. The model is rough because it uses all the time the same radiation power $90\,\tfrac{\text{W}}{\text{m}^2}$ and fixed albedos. In reality the radiation of the Sun varies strongly with the season, the albedo of ice changes because of melt ponds, and clouds change the absorbed power. The loss of ice cannot continue indefinitely, because there is only a limited amount of ice. The biggest simplification is that the loss of the September minimum is calculated as if the sea were open all year round at the annual mean of $90\,\tfrac{\text{W}}{\text{m}^2}$, so the estimate is an upper limit.
+**Model answer c):** The feedback is positive because it strengthens the original change: warming melts ice, so reflection decreases and the absorbed power increases, which warms things even more.
+
+The model is rough because it uses all the time the same radiation power $90\,\tfrac{\text{W}}{\text{m}^2}$ and fixed albedos.
+
+In reality the radiation of the Sun varies strongly with the season, the albedo of ice changes because of melt ponds, and clouds change the absorbed power.
+
+The loss of ice cannot continue indefinitely, because there is only a limited amount of ice.
+
+The biggest simplification is that the loss of the September minimum is calculated as if the sea were open all year round at the annual mean of $90\,\tfrac{\text{W}}{\text{m}^2}$, so the estimate is an upper limit.
 
 ## fy3-12-L3-05
 **Given:** $P_\text{abs} = 239\,\tfrac{\text{W}}{\text{m}^2}$, the share absorbed by the atmosphere $f = 0.80$, the remaining $1 - f = 0.20$ goes straight into space; the atmosphere radiates half upwards and half downwards; the points $(T, P)$ of the table
@@ -188,7 +218,11 @@
 **Substitution:** $S = \dfrac{239\,\tfrac{\text{W}}{\text{m}^2}}{1 - 0.40} = 398.3\,\tfrac{\text{W}}{\text{m}^2}$. Check: $239 + 0.40 \cdot 398.3 = 398.3\,\tfrac{\text{W}}{\text{m}^2}$. The value $398.3$ is between the points $288\,\text{K}$ ($390$) and $303\,\text{K}$ ($478$) of the table: $T = 288\,\text{K} + \dfrac{398.3 - 390}{478 - 390} \cdot 15\,\text{K} = 289.4\,\text{K}$. $T_\text{C} = 289.4\,\text{K} - 273.15\,\text{K} = 16.3\,{}^\circ\text{C}$
 **Answer:** $16\,{}^\circ\text{C}$ (calculated $16.3\,{}^\circ\text{C}$), two significant figures, because linear interpolation on a curved table limits the result to an accuracy of about $\pm 0.5\,\text{K}$.
 **Reasonableness:** A temperature of $16\,{}^\circ\text{C}$ is close to the real mean temperature of the Earth, about $+15\,{}^\circ\text{C}$. The power $398.3\,\tfrac{\text{W}}{\text{m}^2}$ is larger than $239\,\tfrac{\text{W}}{\text{m}^2}$, as it should be, because the surface receives extra energy from the atmosphere. The limiting case $f = 0$ gives $S = 239\,\tfrac{\text{W}}{\text{m}^2}$, which corresponds in the table to about $255\,\text{K}$.
-**Model answer c):** Without the atmosphere the surface would radiate only the power it absorbs, $239\,\tfrac{\text{W}}{\text{m}^2}$, which corresponds in the table to $255\,\text{K}$, that is, $255 - 273.15 \approx -18\,{}^\circ\text{C}$. With the atmosphere the model gives a temperature of $16.3\,{}^\circ\text{C}$, about $34\,\text{K}$ warmer, so the greenhouse effect raises the surface temperature by this much. The model is still rough: the real atmosphere absorbs the radiation of the Sun, the share $0.80$ varies with wavelength, and clouds, convection and the evaporation of water transfer energy upwards from the surface in other ways than by radiation.
+**Model answer c):** Without the atmosphere the surface would radiate only the power it absorbs, $239\,\tfrac{\text{W}}{\text{m}^2}$, which corresponds in the table to $255\,\text{K}$, that is, $255 - 273.15 \approx -18\,{}^\circ\text{C}$.
+
+With the atmosphere the model gives a temperature of $16.3\,{}^\circ\text{C}$, about $34\,\text{K}$ warmer, so the greenhouse effect raises the surface temperature by this much.
+
+The model is still rough: the real atmosphere absorbs the radiation of the Sun, the share $0.80$ varies with wavelength, and clouds, convection and the evaporation of water transfer energy upwards from the surface in other ways than by radiation.
 
 ## fy3-12-L2-08
 **Find:** the thermal powers $P$ conducted through the building parts and their order from smallest to largest.
@@ -203,7 +237,11 @@ Windows: $UA = 9.6\,\text{W/K}$, $P = 9.6\,\text{W/K} \cdot 30\,\text{K} = 288\,
 
 Wall: $UA = 15.3\,\text{W/K}$, $P = 15.3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
 
-From smallest to largest: door, roof, windows, wall. The U-value alone would give the wrong order, because the windows and the door have a large U-value but a small area, and the area alone would also give it wrong, because the wall has a small U-value but a large area. The results are given with two significant figures, because the U-values are given with two: about $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ and $460\,\text{W}$. Estimate: the wall's $UA \approx 0.2 \cdot 90 = 18\,\text{W/K}$ is the largest and the door's $2\,\text{W/K}$ the smallest, which fits.
+From smallest to largest: door, roof, windows, wall.
+
+The U-value alone would give the wrong order, because the windows and the door have a large U-value but a small area, and the area alone would also give it wrong, because the wall has a small U-value but a large area.
+
+The results are given with two significant figures, because the U-values are given with two: about $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ and $460\,\text{W}$. Estimate: the wall's $UA \approx 0.2 \cdot 90 = 18\,\text{W/K}$ is the largest and the door's $2\,\text{W/K}$ the smallest, which fits.
 
 ## fy3-12-L1-09
 **Given:** $A = 10\,\text{m}^2$, $d = 0.20\,\text{m}$, $T_\text{in} = 20\,{}^\circ\text{C}$, $T_\text{out} = -10\,{}^\circ\text{C}$, $U = \dfrac{\lambda}{d}$; from the table (MAFY table, thermal conductivities: solids, wood (pine)) $\lambda = 0.14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}$

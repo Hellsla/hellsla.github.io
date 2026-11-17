@@ -122,7 +122,11 @@
 **Formula:** $P t = c m \Delta T$, so $c = \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}$
 **Conversions:** The power $100\,\text{W} = 100\,\tfrac{\text{J}}{\text{s}}$ and the time in seconds are in SI units, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $c = \dfrac{100\,\tfrac{\text{J}}{\text{s}}}{0.50\,\text{kg} \cdot 0.0483\,\tfrac{\text{K}}{\text{s}}} = 4138\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Answer:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.50\,\text{kg}$. b) The liquid is water, because the table value $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ differs from the result by only about $1\,\%$, and the values of the other substances in the table ($2100$ or less) are not close. c) Heat losses can be reduced with insulation and a lid on the calorimeter: then heat does not escape to the surroundings and the liquid does not evaporate, so a larger share of the energy of the resistor raises the temperature of the liquid and $c$ does not come out too large.
+**Answer:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.50\,\text{kg}$.
+
+b) The liquid is water, because the table value $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ differs from the result by only about $1\,\%$, and the values of the other substances in the table ($2100$ or less) are not close.
+
+c) Heat losses can be reduced with insulation and a lid on the calorimeter: then heat does not escape to the surroundings and the liquid does not evaporate, so a larger share of the energy of the resistor raises the temperature of the liquid and $c$ does not come out too large.
 **Reasonableness:** Energy balance: the resistor gives $100\,\text{W} \cdot 300\,\text{s} = 30\,000\,\text{J}$, and the liquid receives $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 14.5\,\text{K} = 30\,378\,\text{J}$. The numbers differ by about $1\,\%$, which is the size of the scatter of the measurements, so the losses in this interval are small.
 
 ## fy3-6-L2-06
@@ -150,10 +154,15 @@
 **Find:** which of the lines of the student's calculation is wrong.
 **Principle:** The amount of heat is $Q = c m \Delta T$, where $\Delta T$ is the final temperature minus the initial temperature. When something cools, $\Delta T$ and $Q$ are negative, and the minus sign tells that the body gives out energy to the surroundings. The calculation can be checked line by line: the change in temperature, the formula, the substitution and the interpretation of the result.
 **Model answer:** Line 1: $$\begin{aligned} \Delta T &= 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} \\ &= -180\,\text{K} \end{aligned}$$ is correct, because a change in temperature is the same in kelvins and in degrees Celsius.
+
 Line 2: $Q = c m \Delta T$ is correct, because the state of matter of the plate does not change.
+
 Line 3: $450 \cdot 3.0 = 1350$ and $1350 \cdot (-180) = -243\,000$, so $Q = -243\,000\,\text{J}$ is correct.
+
 Line 4 is wrong, because a negative amount of heat is possible: it tells that the plate gives out energy.
+
 Correct: the plate gives out $243\,\text{kJ}$ to the surroundings.
+
 Check: the plate cools, so its internal energy decreases and it cannot receive energy at the same time. The correct answer is line 4.
 
 ## fy3-6-L3-01
@@ -196,7 +205,11 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Substitution:**
 
 $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0.50\,\text{kg} \cdot 5.6\,\text{K}} \\ &= 4286\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ Q_\text{water} &= 4190 \cdot 0.50 \cdot 6.8\,\text{J} \\ &= 14\,246\,\text{J} \\ P_\text{loss} &= 200\,\text{W} - \dfrac{14\,246\,\text{J}}{120\,\text{s}} \\ &= 81.3\,\text{W} \end{aligned}$$
-**Answer:** $81\,\text{W}$, two significant figures as in the mass $0.50\,\text{kg}$. a) The first minute gives $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is only about $2\,\%$ above the table value. b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$ to $3.4\,\text{K}$ per minute, because the warmer water and vessel give out more and more heat to the surroundings. At the start the losses are small, so $c$ should be fitted to the beginning of the graph, where the energy of the resistor heats almost entirely the water.
+**Answer:** $81\,\text{W}$, two significant figures as in the mass $0.50\,\text{kg}$.
+
+a) The first minute gives $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is only about $2\,\%$ above the table value.
+
+b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$ to $3.4\,\text{K}$ per minute, because the warmer water and vessel give out more and more heat to the surroundings. At the start the losses are small, so $c$ should be fitted to the beginning of the graph, where the energy of the resistor heats almost entirely the water.
 **Reasonableness:** The loss power is about $41\,\%$ of the $200\,\text{W}$ power of the resistor, and the curve bending towards the end fits this. The difference in temperature from the room is on average $60.2\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} \approx 40\,\text{K}$ in the interval, so the loss is about $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, which is of the order of magnitude of an ordinary open vessel. At the start the loss is only about $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$, or about $3\,\%$ of the power, so the $c$ of part a) is only a few per cent too large.
 
 ## fy3-6-L3-05
@@ -210,7 +223,13 @@ $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0.50\,\text{kg} 
 $$\begin{aligned} Q &= 4190 \cdot 0.300 \cdot 17.5\,\text{J} \\ &= 21\,998\,\text{J} \\ P &= \dfrac{21\,998\,\text{J}}{600\,\text{s}} \\ &= 36.66\,\text{W} \\ k &= \dfrac{36.66\,\text{W}}{(81.25 - 20.0)\,\text{K}} \\ &= 0.599\,\tfrac{\text{W}}{\text{K}} \end{aligned}$$
 
 In the same way for the other intervals: the quantities of heat are $16.2$, $12.7$, $9.05$, $7.16$ and $5.15\,\text{kJ}$, the powers $27.0$, $21.2$, $15.1$, $11.9$ and $8.59\,\text{W}$ and the coefficients $0.587$, $0.612$, $0.582$, $0.614$ and $0.590\,\tfrac{\text{W}}{\text{K}}$.
-**Answer:** $0.60\,\tfrac{\text{W}}{\text{K}}$, three significant figures in the temperatures and the mass, but $k$ varies from interval to interval by about $\pm 3\,\%$, so the second figure is the last meaningful one. c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}}$, that is, within $3\,\%$ of their mean, although the power falls from $36.7\,\text{W}$ to $8.59\,\text{W}$. The model fits the measurements well; the small differences come from the $0.1\,{}^\circ\text{C}$ precision of the temperature readings. The cooling slows down because the power given out is directly proportional to the difference in temperature from the room: as the temperature of the water falls, the difference becomes smaller and the power falls in the same ratio.
+**Answer:** $0.60\,\tfrac{\text{W}}{\text{K}}$, three significant figures in the temperatures and the mass, but $k$ varies from interval to interval by about $\pm 3\,\%$, so the second figure is the last meaningful one.
+
+c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}}$, that is, within $3\,\%$ of their mean, although the power falls from $36.7\,\text{W}$ to $8.59\,\text{W}$.
+
+The model fits the measurements well; the small differences come from the $0.1\,{}^\circ\text{C}$ precision of the temperature readings.
+
+The cooling slows down because the power given out is directly proportional to the difference in temperature from the room: as the temperature of the water falls, the difference becomes smaller and the power falls in the same ratio.
 **Reasonableness:** The ratio of the powers of the first and the last interval is $\dfrac{36.66}{8.59} \approx 4.3$ and the ratio of the differences in temperature $\dfrac{61.25}{14.55} \approx 4.2$, so the power really follows the difference in temperature.
 
 ## fy3-6-L1-09
@@ -247,9 +266,21 @@ $$\begin{aligned} Q_\text{given} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\
 
 a) According to the article, hot water can in some conditions freeze faster than cold water. Everyday experience says the opposite: the hot water must first cool to the temperature of the cold water, and that takes time. By the calculation the hot water must give off $170\,\text{kJ}$ before freezing can even start. The headline states the matter as a general fact, but the text itself limits it to special conditions.
 
-c) Evaporation acts in two ways. The water that evaporates takes energy with it, so the water left behind cools faster. In addition the mass of the water decreases, and $Q = cm\Delta T$ is directly proportional to the mass: a smaller amount of water has to give off less energy. Much more water evaporates from hot water than from cold. The container affects how fast the energy is transferred: a shallow, wide container has a large surface area, a lid prevents evaporation, and metal conducts heat better than plastic. The container itself cools too, and its heat capacity is $C = cm$. Of the conditions, the temperature of the freezer, the movement of the air and the surface under the container matter. A hot container can, for example, melt the frost under it and get a better contact with the cold shelf.
+c) Evaporation acts in two ways. The water that evaporates takes energy with it, so the water left behind cools faster.
 
-d) Take two identical containers and put the same mass of water from the same tap in each, for example $0.20\,\text{kg}$. The initial temperature of one sample is, for example, $80\,{}^\circ\text{C}$ and of the other $20\,{}^\circ\text{C}$. Put the containers in the same freezer on the same kind of surface. Measure the temperature of the water as a function of time, the time to freezing and the mass of the water before and after the experiment. Keep constant the mass and quality of the water, the shape and material of the container, the place in the freezer and the temperature of the freezer. Decide before the experiment what freezing means (the first ice crystals or completely solid). Change one factor at a time, for example with a lid and without, and repeat the experiment several times.
+In addition the mass of the water decreases, and $Q = cm\Delta T$ is directly proportional to the mass: a smaller amount of water has to give off less energy. Much more water evaporates from hot water than from cold.
+
+The container affects how fast the energy is transferred: a shallow, wide container has a large surface area, a lid prevents evaporation, and metal conducts heat better than plastic. The container itself cools too, and its heat capacity is $C = cm$.
+
+Of the conditions, the temperature of the freezer, the movement of the air and the surface under the container matter. A hot container can, for example, melt the frost under it and get a better contact with the cold shelf.
+
+d) Take two identical containers and put the same mass of water from the same tap in each, for example $0.20\,\text{kg}$. The initial temperature of one sample is, for example, $80\,{}^\circ\text{C}$ and of the other $20\,{}^\circ\text{C}$.
+
+Put the containers in the same freezer on the same kind of surface. Measure the temperature of the water as a function of time, the time to freezing and the mass of the water before and after the experiment.
+
+Keep constant the mass and quality of the water, the shape and material of the container, the place in the freezer and the temperature of the freezer. Decide before the experiment what freezing means (the first ice crystals or completely solid).
+
+Change one factor at a time, for example with a lid and without, and repeat the experiment several times.
 **Reasonableness:** A comparison: the same amount of water at $20\,{}^\circ\text{C}$ gives off only a quarter of this when it cools to the freezing point.
 
 $$\begin{aligned} Q_{20} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \\ &\cdot 20\,\text{K} \\ &= 41\,900\,\text{J} \end{aligned}$$

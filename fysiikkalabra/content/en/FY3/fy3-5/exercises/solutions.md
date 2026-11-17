@@ -188,7 +188,11 @@
 **Formula:** $P = \dfrac{E_\text{v}}{t}$, $Q_\text{out} = E_\text{v} - \Delta U$ and the share $= \dfrac{Q_\text{out}}{E_\text{v}} \cdot 100\,\%$
 **Conversions:** $E_\text{v} = 239.9\,\text{kJ} = 239\,900\,\text{J}$, so that the power comes out in watts; $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2.00\,\text{kW}$. b) $Q_\text{out} = 239.9\,\text{kJ} - 205.1\,\text{kJ} = 34.8\,\text{kJ}$ and the share is $\dfrac{34.8\,\text{kJ}}{239.9\,\text{kJ}} \cdot 100\,\% = 14.5\,\%$
-**Answer:** $Q_\text{out} = 34.8\,\text{kJ}$ (part b), three significant figures, like the values of the table, that is, about $14.5\,\%$ of the energy of the heating element. Part a): the mean power is $P = 2.00\,\text{kW}$. Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount. The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
+**Answer:** $Q_\text{out} = 34.8\,\text{kJ}$ (part b), three significant figures, like the values of the table, that is, about $14.5\,\%$ of the energy of the heating element.
+
+Part a): the mean power is $P = 2.00\,\text{kW}$.
+
+Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount. The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
 **Reasonableness:** The loss is smaller than the energy of the heating element ($34.8\,\text{kJ} < 239.9\,\text{kJ}$), so the internal energy of the water still increases, as in the table. Balance: $$\begin{aligned} &205.1\,\text{kJ} + 34.8\,\text{kJ} \\ &= 239.9\,\text{kJ} \end{aligned}$$. In the measurement the power is $2.00\,\text{kW}$ and the loss is on average about $0.29\,\text{kW}$ all the time, which is about $15\,\%$ of the power, that is, a clearly measurable part.
 
 ## fy3-5-L1-09
@@ -199,7 +203,9 @@
 
 $$\begin{aligned} \Delta U &= Q + W \\ &= 0 + 60\,\text{J} = 60\,\text{J} \end{aligned}$$
 
-Statement 1 is true, because the internal energy increases by $60\,\text{J}$. Statement 2 is true, because the air stays a gas and the increase in its internal energy raises the temperature. Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 is false, because work changes the internal energy even when no heat is transferred. Statement 5 is false, because heat is a transfer of energy and there is no heat in the air: the air has gained internal energy.
+Statement 1 is true, because the internal energy increases by $60\,\text{J}$. Statement 2 is true, because the air stays a gas and the increase in its internal energy raises the temperature.
+
+Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 is false, because work changes the internal energy even when no heat is transferred. Statement 5 is false, because heat is a transfer of energy and there is no heat in the air: the air has gained internal energy.
 
 ## fy3-5-L1-10
 **Given:** quantity of heat $Q = 2.0\,\text{kcal}$ and work $W = 3.0\,\text{kJ}$; from the table (MAFY table, unit conversions, energy/work, calorie) $1\,\text{cal} = 4.1868\,\text{J}$

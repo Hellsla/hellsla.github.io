@@ -73,7 +73,13 @@
 **Given:** the measurements in the table $V = 10.0$; $12.5$; $15.0$; $20.0$; $25.0$; $30.0\,\text{ml}$ and $p = 203;\ 159;\ 134;\ 99;\ 81;\ 66\,\text{kPa}$, temperature constant
 **Find:** the slope $pV$ of the straight line fitted to the $(1/V,\,p)$ graph, in joules
 **Principle:** The temperature and the amount of air stay the same, so by Boyle's law $pV$ is constant. Then $p = pV \cdot \dfrac{1}{V}$ is a proportionality, and the $(1/V,\,p)$ graph is a straight line through the origin whose slope is $pV$.
-**Reading the graph:** Calculate the column $1/V$ (see Conversions) and plot the points $(1/V,\,p)$. The slope of a line through the origin is $p/(1/V) = pV$, so each point gives its own value: $pV = 2030$; $1988$; $2010$; $1980$; $2025$; $1980\,\text{kPa}\cdot\text{ml}$. The line is placed so that the points are spread evenly on both sides of it, and its slope is approximately the mean of these values, $\dfrac{12\,013}{6}\,\text{kPa}\cdot\text{ml} \approx 2000\,\text{kPa}\cdot\text{ml}$. Check from the graph: the line passes through the point $(0.100\,\tfrac{1}{\text{ml}};\ 200\,\text{kPa})$, and the measured point $(0.100;\ 203)$ is slightly above it. The slope is read from the line and not from a single measured point, because every measurement has an error.
+**Reading the graph:** Calculate the column $1/V$ (see Conversions) and plot the points $(1/V,\,p)$.
+
+The slope of a line through the origin is $p/(1/V) = pV$, so each point gives its own value: $pV = 2030$; $1988$; $2010$; $1980$; $2025$; $1980\,\text{kPa}\cdot\text{ml}$.
+
+The line is placed so that the points are spread evenly on both sides of it, and its slope is approximately the mean of these values, $\dfrac{12\,013}{6}\,\text{kPa}\cdot\text{ml} \approx 2000\,\text{kPa}\cdot\text{ml}$.
+
+Check from the graph: the line passes through the point $(0.100\,\tfrac{1}{\text{ml}};\ 200\,\text{kPa})$, and the measured point $(0.100;\ 203)$ is slightly above it. The slope is read from the line and not from a single measured point, because every measurement has an error.
 **Formula:** $k = \dfrac{\Delta p}{\Delta(1/V)} = \dfrac{p}{1/V} = pV$, so $pV = \dfrac{p}{1/V}$
 **Conversions:** $1/V = 0.100$; $0.0800$; $0.0667$; $0.0500$; $0.0400$; $0.0333\,\tfrac{1}{\text{ml}}$. Unit: $1\,\text{kPa} \cdot 1\,\text{ml} = 1000\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 = 0.001\,\text{J}$.
 **Substitution:** A point read from the line: $pV = \dfrac{200\,\text{kPa}}{0.100\,\tfrac{1}{\text{ml}}} = 2000\,\text{kPa}\cdot\text{ml} = 2000 \cdot 0.001\,\text{J} = 2.00\,\text{J}$
@@ -98,7 +104,11 @@
 **Conversions:** The hydrostatic pressure in pascals: $\rho g h = 196\,200\,\text{Pa} = 196.2\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volumes are in the same unit, so they do not need to be converted.
 **Substitution:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} \\ &= 101\,\text{kPa} + 196.2\,\text{kPa} \\ &= 297.2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
 **Answer:** $V_2 \approx 5.9\,\text{cm}^3$, two significant figures. The limiting value is the volume of the bubble, $2.0\,\text{cm}^3$ (two figures); the depth $20.0\,\text{m}$ and the atmospheric pressure $101\,\text{kPa}$ have three figures, and the density of water, $1000\,\tfrac{\text{kg}}{\text{m}^3}$, is a known table value that does not limit the result.
-**Reasonableness:** Every ten metres of water adds about one atmosphere of pressure, so at $20\,\text{m}$ the pressure is about $3 p_0$ and the volume at the surface is about three times as large: $3 \cdot 2.0\,\text{cm}^3 \approx 6\,\text{cm}^3$. The same applies to the lungs: if a person diving with compressed air held their breath while rising, the air in the lungs would try to expand to almost three times its volume. The lungs cannot stretch that much, and lung tissue can be damaged by far smaller expansion. You must never hold your breath when rising: breathe normally throughout the ascent, so that the expanding air can leave the lungs.
+**Reasonableness:** Every ten metres of water adds about one atmosphere of pressure, so at $20\,\text{m}$ the pressure is about $3 p_0$ and the volume at the surface is about three times as large: $3 \cdot 2.0\,\text{cm}^3 \approx 6\,\text{cm}^3$.
+
+The same applies to the lungs: if a person diving with compressed air held their breath while rising, the air in the lungs would try to expand to almost three times its volume.
+
+The lungs cannot stretch that much, and lung tissue can be damaged by far smaller expansion. You must never hold your breath when rising: breathe normally throughout the ascent, so that the expanding air can leave the lungs.
 
 ## fy3-9-L3-02
 **Given:** gauge pressure $\Delta p_1 = 250.0\,\text{kPa}$, $p_0 = 101\,\text{kPa}$, $\theta_1 = 20\,{}^\circ\text{C}$, $\theta_2 = -20\,{}^\circ\text{C}$, volume constant, no air escapes
@@ -123,7 +133,13 @@
 ## fy3-9-L1-06
 **Find:** what the $(V, p)$ graph of an isothermal change looks like.
 **Principle:** The amount of sealed air stays the same and its temperature stays the same, so Boyle's law holds: $pV$ is constant. Then $p = \text{constant} \cdot \dfrac{1}{V}$, that is, the pressure is inversely proportional to the volume.
-**Model answer:** The graph is a falling curve, because the product $pV$ is constant: when the volume doubles, the pressure halves, and when the volume halves, the pressure doubles. The curve approaches the axes but never meets them. A falling straight line would be wrong, because the pressure would not decrease by the same amount for every added millilitre. A rising graph is wrong, because the amount of air is the same all the time, and when the volume increases the particles hit the walls less often. A horizontal graph is wrong, because a constant temperature does not mean a constant pressure: when the volume changes, the pressure changes.
+**Model answer:** The graph is a falling curve, because the product $pV$ is constant: when the volume doubles, the pressure halves, and when the volume halves, the pressure doubles. The curve approaches the axes but never meets them.
+
+A falling straight line would be wrong, because the pressure would not decrease by the same amount for every added millilitre.
+
+A rising graph is wrong, because the amount of air is the same all the time, and when the volume increases the particles hit the walls less often.
+
+A horizontal graph is wrong, because a constant temperature does not mean a constant pressure: when the volume changes, the pressure changes.
 **Reading the graph:** The shape of the graph is deduced from the product $pV = \text{constant}$: choose the volumes $V$, $2V$ and $4V$, and the corresponding pressures are $p$, $\dfrac{p}{2}$ and $\dfrac{p}{4}$. The points do not lie on one straight line but form a falling curve.
 
 ## fy3-9-L1-07
@@ -139,15 +155,26 @@
 ## fy3-9-L1-08
 **Find:** what a straight line through the origin in a $(1/V,\,p)$ graph shows.
 **Principle:** A straight line through the origin has the form $p = k \cdot \dfrac{1}{V}$, and its slope is $k = pV$. If the points lie, within the measurement uncertainty, on such a line, the product $pV$ is constant.
-**Model answer:** The line shows that the pressure is inversely proportional to the volume and that the product $pV$ is constant, that is, Boyle's law holds within the measurement uncertainty. The claim of direct proportionality to the volume is wrong, because when the volume increases the quantity $1/V$ decreases. The claim of a rising temperature is wrong, because the points were plotted in a $(1/V,\,p)$ graph and not in a $(V,\,p)$ graph; a rising temperature would take the points off the line. The claim about the square is wrong, because then the points would lie on a curve and not on a line.
+**Model answer:** The line shows that the pressure is inversely proportional to the volume and that the product $pV$ is constant, that is, Boyle's law holds within the measurement uncertainty.
+
+The claim of direct proportionality to the volume is wrong, because when the volume increases the quantity $1/V$ decreases.
+
+The claim of a rising temperature is wrong, because the points were plotted in a $(1/V,\,p)$ graph and not in a $(V,\,p)$ graph; a rising temperature would take the points off the line.
+
+The claim about the square is wrong, because then the points would lie on a curve and not on a line.
 
 ## fy3-9-L2-05
 **Given:** from the table the temperatures $\theta = 20.0$; $40.0$; $60.0$; $80.0\,{}^\circ\text{C}$, the pressures of vessel A $p_\text{A} = 99.8$; $106.4$; $113.4$; $119.8\,\text{kPa}$ and the volumes of vessel B $V_\text{B} = 14.7$; $15.7$; $16.6$; $17.6\,\text{ml}$
 **Find:** a) the changes of state and the comparison of the ratios; b) the pressure $p$ of vessel A at $100\,{}^\circ\text{C}$ in kilopascals
 **Principle:** If the pressure of vessel A is directly proportional to the temperature in kelvins, $p/T$ is constant, and the change is isochoric (the volume and the amount of air stay the same). In vessel B the volume changes: if $V/T$ is constant, the pressure is constant and the change is isobaric. The proportionality holds only for the temperature in kelvins.
 **Reading the graph:** The task does not require plotting: the points $(T,\,p)$ and $(T,\,V)$ would lie on straight lines through the origin if the ratios are constant, so the ratios are calculated directly from the rows of the table and compared. The temperatures in kelvins are $T = 293.15$; $313.15$; $333.15$; $353.15\,\text{K}$.
-**Model answer a):** In vessel A the ratio $p/T$ is $0.3404$; $0.3398$; $0.3404$; $0.3392\,\tfrac{\text{kPa}}{\text{K}}$, so it is constant to within about $0.3\,\%$. In vessel B the ratio $V/T$ is $0.0501$; $0.0501$; $0.0498$; $0.0498\,\tfrac{\text{ml}}{\text{K}}$, so it is also constant within the measurement uncertainty. So vessel A shows an isochoric change and vessel B an isobaric change. The small variation is due to the random variation of the measurements.
-In degrees Celsius the ratio of vessel A is $p/\theta = 4.99$; $2.66$; $1.89$; $1.50\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. These decrease sharply, so the pressure is not proportional to the temperature in degrees Celsius but to the temperature in kelvins.
+**Model answer a):** In vessel A the ratio $p/T$ is $0.3404$; $0.3398$; $0.3404$; $0.3392\,\tfrac{\text{kPa}}{\text{K}}$, so it is constant to within about $0.3\,\%$.
+
+In vessel B the ratio $V/T$ is $0.0501$; $0.0501$; $0.0498$; $0.0498\,\tfrac{\text{ml}}{\text{K}}$, so it is also constant within the measurement uncertainty. So vessel A shows an isochoric change and vessel B an isobaric change.
+
+The small variation is due to the random variation of the measurements. In degrees Celsius the ratio of vessel A is $p/\theta = 4.99$; $2.66$; $1.89$; $1.50\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
+
+These decrease sharply, so the pressure is not proportional to the temperature in degrees Celsius but to the temperature in kelvins.
 **Formula:** $\dfrac{p}{T} = k$, so $p = kT$
 **Conversions:** $T = \theta + 273.15\,\text{K}$, so $T_{100} = (100 + 273.15)\,\text{K} = 373.15\,\text{K}$. The coefficient $k$ is the mean of the four ratios of vessel A.
 **Substitution:** The sum of the ratios is $1.3598\,\tfrac{\text{kPa}}{\text{K}}$, so $k = 0.33995\,\tfrac{\text{kPa}}{\text{K}}$.
@@ -166,7 +193,13 @@ p &= kT \\
 **Find:** a) the behaviour of the product $pV$ and the type of error; b) the volume $V_\text{h}$ in millilitres
 **Principle:** The sealed air in the syringe and the hose has a total volume $V + V_\text{h}$. The temperature and the amount of air stay the same, so Boyle's law holds for all the air: $p\,(V + V_\text{h})$ is constant. The student calculated the product using only the volume of the syringe.
 **Reading the graph:** From the table the product $pV$ is calculated for every row, and for part b) the first row $(10.0\,\text{ml};\ 200\,\text{kPa})$ and the last row $(40.0\,\text{ml};\ 57.1\,\text{kPa})$ are chosen.
-**Model answer a):** The products are $pV = 2000$; $2180$; $2250$; $2284\,\text{kPa}\cdot\text{ml}$. They increase with the volume, because there is in reality always $V_\text{h}$ more air than is read from the scale. When $V$ is small, this extra volume is a large part of the total volume and the product $pV$ stays smaller than the true value. When $V$ is large, the share is smaller and the product is closer to the true value. The error is systematic: it is in the same direction in every measurement and the volume is the same, so it does not vary randomly. Repeating the measurements would not remove it; it is corrected by taking the volume of the hose into account.
+**Model answer a):** The products are $pV = 2000$; $2180$; $2250$; $2284\,\text{kPa}\cdot\text{ml}$. They increase with the volume, because there is in reality always $V_\text{h}$ more air than is read from the scale.
+
+When $V$ is small, this extra volume is a large part of the total volume and the product $pV$ stays smaller than the true value. When $V$ is large, the share is smaller and the product is closer to the true value.
+
+The error is systematic: it is in the same direction in every measurement and the volume is the same, so it does not vary randomly.
+
+Repeating the measurements would not remove it; it is corrected by taking the volume of the hose into account.
 **Formula:** $p_1 (V_1 + V_\text{h}) = p_4 (V_4 + V_\text{h})$, so $V_\text{h} = \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4}$
 **Conversions:** Not needed: the kilopascals and millilitres are the same on both sides of the equation, and the result comes out in millilitres.
 **Substitution:** The products are $p_4 V_4 = 57.1\,\text{kPa} \cdot 40.0\,\text{ml} = 2284\,\text{kPa}\cdot\text{ml}$ and $p_1 V_1 = 200\,\text{kPa} \cdot 10.0\,\text{ml} = 2000\,\text{kPa}\cdot\text{ml}$. The pressure difference is $p_1 - p_4 = 142.9\,\text{kPa}$.
@@ -184,7 +217,11 @@ V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142.9\,\text{kPa}} \\
 **Find:** a) the absolute zero $\theta_0$ in degrees Celsius from the extension of the line; b) the comparison with the known value and the behaviour of the gas
 **Principle:** The volume and the amount of air are constant, so the pressure is directly proportional to the temperature in kelvins, $p = kT$. So a line fitted to the $(\theta,\,p)$ points reaches the pressure $p = 0$ at the temperature $T = 0\,\text{K}$, which is absolute zero.
 **Reading the graph:** A line is fitted to the points so that the points lie evenly on both sides of it. Two points far apart are read from the line. The fitted line passes less than $0.04\,\text{kPa}$ from the measured points $(0.0\,{}^\circ\text{C};\ 100.1\,\text{kPa})$ and $(80.0\,{}^\circ\text{C};\ 129.1\,\text{kPa})$, so they are suitable as points of the line. The extension of the line to the left of the graph meets the $\theta$ axis where $p = 0$.
-**Model answer b):** The result differs from the known value $-273.15\,{}^\circ\text{C}$ by about $3\,\text{K}$, that is, about $1\,\%$, which is within the measurement uncertainty when the points are less than $0.3\,\text{kPa}$ from the line. The extrapolation reaches about $276\,\text{K}$ below the measured range, although the measurement interval is only $80\,\text{K}$, so even a small error in the slope changes the result a lot. The extension is a prediction of the model: a real gas condenses into a liquid at a much higher temperature, and then the pressure is no longer proportional to the temperature in kelvins and the extension of the line does not hold.
+**Model answer b):** The result differs from the known value $-273.15\,{}^\circ\text{C}$ by about $3\,\text{K}$, that is, about $1\,\%$, which is within the measurement uncertainty when the points are less than $0.3\,\text{kPa}$ from the line.
+
+The extrapolation reaches about $276\,\text{K}$ below the measured range, although the measurement interval is only $80\,\text{K}$, so even a small error in the slope changes the result a lot.
+
+The extension is a prediction of the model: a real gas condenses into a liquid at a much higher temperature, and then the pressure is no longer proportional to the temperature in kelvins and the extension of the line does not hold.
 **Formula:** The slope of the line $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and the line $p = p_1 + k(\theta - \theta_1)$. From the condition $p = 0$ we get $\theta_0 = \theta_1 - \dfrac{p_1}{k}$.
 **Conversions:** Not needed: a temperature difference is the same in degrees Celsius and in kelvins, and the result is wanted in degrees Celsius.
 **Substitution:** The slope
@@ -210,7 +247,11 @@ $$\begin{aligned}
 **Principle:** Boyle's law holds when the temperature of the sealed gas stays constant. In fast compression the plunger does work on the gas, but the energy does not have time to transfer completely to the surroundings, so part of the work stays in the gas and the internal energy and the temperature of the gas increase. The amount of air is the same, so the temperature is obtained from two changes of state: first an isothermal compression (Boyle's law) and then warming at constant volume ($p/T$ constant).
 **Reading the graph:** From the row $V = 10.0\,\text{ml}$ of the table the pressure of the fast compression, $481\,\text{kPa}$, is read. The comparison pressure for the isothermal compression is calculated from the initial state, because it contains no reading error.
 **Model answer a):** In slow compression the products are $pV = 4040$; $4050$; $4060$ and $4030\,\text{kPa}\cdot\text{ml}$, so they are constant to within about $1\,\%$ and Boyle's law holds. In fast compression the products are $4040$; $4230$; $4520$ and $4810\,\text{kPa}\cdot\text{ml}$, and they increase by as much as about $19\,\%$ from the initial value, so Boyle's law does not hold.
-**Model answer b):** In fast compression the temperature of the gas rises, because part of the work stays as energy of the gas: the mean kinetic energy of the particles increases. The particles of warmer gas hit the walls more often and harder, so the pressure is greater than at a constant temperature. Boyle's law requires a constant temperature, so it does not describe this situation. When the plunger is held still, the volume is constant and the air gives energy to the surroundings until the temperature is again $20.0\,{}^\circ\text{C}$. The pressure then drops back to the value given by Boyle's law, that is, about $404\,\text{kPa}$.
+**Model answer b):** In fast compression the temperature of the gas rises, because part of the work stays as energy of the gas: the mean kinetic energy of the particles increases.
+
+The particles of warmer gas hit the walls more often and harder, so the pressure is greater than at a constant temperature. Boyle's law requires a constant temperature, so it does not describe this situation.
+
+When the plunger is held still, the volume is constant and the air gives energy to the surroundings until the temperature is again $20.0\,{}^\circ\text{C}$. The pressure then drops back to the value given by Boyle's law, that is, about $404\,\text{kPa}$.
 **Formula:** Step 1 (isothermal): $p_1 V_1 = p' V_2$, so $p' = \dfrac{p_1 V_1}{V_2}$. Step 2 (isochoric): $\dfrac{p'}{T_1} = \dfrac{p_2}{T_2}$, so $T_2 = \dfrac{T_1 p_2}{p'}$ and $\theta_2 = T_2 - 273.15\,\text{K}$ in degrees Celsius.
 **Conversions:** $T_1 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. Finally the kelvins are converted back to degrees Celsius by subtracting $273.15$. The pressures and volumes do not need to be converted, because they cancel.
 **Substitution:** The isothermal compression gives the pressure
@@ -292,13 +333,42 @@ Graph B passes through the points $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\te
 **Reasonableness:** The temperature rises by about $24\,\%$ ($373 : 300 \approx 1.24$), so the pressure must rise by the same amount: $120\,\text{kPa} \cdot 1.24 \approx 149\,\text{kPa}$. The result is also above the last point of the graph, $140\,\text{kPa}$, as it should be, because $100\,{}^\circ\text{C}$ is hotter than $350\,\text{K}$.
 
 ## fy3-9-L2-10
-**Given:** the pairs of temperature and pressure $(T,\,p)$ you measured in the simulation while the volume and the number of particles stay the same. Your own numbers depend on how many particles you pumped in, so here is the method and an example measurement of 16 November 2026 (100 heavy particles, one gauge reading per temperature): $T = 197$; $254$; $300$; $352$; $405$; $454$; $511\,\text{K}$ and $p = 824$; $994$; $1170$; $1363$; $1581$; $1766$; $2024\,\text{kPa}$. A check point that is not used in forming the model: $T_\text{pred} = 601\,\text{K}$, where the simulation showed the pressure $2346\,\text{kPa}$. In the ratio of part c) $T_1 = 300\,\text{K}$ and $T_2 = 450\,\text{K}$.
+**Given:** the pairs of temperature and pressure $(T,\,p)$ you measured in the simulation while the volume and the number of particles stay the same.
+
+Your own numbers depend on how many particles you pumped in, so here is the method and an example measurement of 16 November 2026 (100 heavy particles, one gauge reading per temperature): $T = 197$; $254$; $300$; $352$; $405$; $454$; $511\,\text{K}$ and $p = 824$; $994$; $1170$; $1363$; $1581$; $1766$; $2024\,\text{kPa}$.
+
+A check point that is not used in forming the model: $T_\text{pred} = 601\,\text{K}$, where the simulation showed the pressure $2346\,\text{kPa}$. In the ratio of part c) $T_1 = 300\,\text{K}$ and $T_2 = 450\,\text{K}$.
 **Find:** a) the measurement series and the uncertainty of a pressure reading; b) the $(T,\,p)$ graph and the dependence between the quantities; c) the prediction $p_\text{pred}$, its check and the pressure ratio $p_2/p_1$; d) an explanation with the particle model
-**Principle:** The volume of the container and the number of particles stay the same, so the change of state is isochoric. The pressure of a thin gas is then directly proportional to the kelvin temperature, that is, $p/T$ is constant. The measurement tests this: if the model fits, the points lie within the measurement uncertainty on a straight line through the origin.
-**Model answer a):** The temperature is taken from the simulation in kelvins and the pressure in kilopascals. The setting “Hold Constant: Volume (V)” locks the wall of the container, and the number of particles stays the same when the pump is not touched. Only the temperature is changed, so the change in pressure is due to the temperature. The reading of the pressure gauge fluctuates by a few per cent although the temperature stays the same. In the example measurement the fluctuation was about $\pm 30\,\text{kPa}$ at pressures of $1000\,\text{kPa}$–$2000\,\text{kPa}$. This is an estimate of the uncertainty of a single pressure reading. The middle one of several readings is more reliable than one reading.
-**Reading the graph:** The horizontal axis shows $T$ in kelvins and the vertical axis $p$ in kilopascals, and both axes start from zero, so that one can see whether the extension of the line passes through the origin. The line is fitted so that the points are spread evenly on both sides of it. The slope is read from two points of the line that are far apart, not from two neighbouring measured points, or it is obtained from the fit of a spreadsheet or a calculator. In the example measurement the fit of a line through the origin gives the slope $k = 3.924\,\tfrac{\text{kPa}}{\text{K}}$.
-**Model answer b):** The points lie on a rising straight line whose extension passes through the origin within the measurement uncertainty. In the example measurement a freely fitted line has the slope $3.84\,\tfrac{\text{kPa}}{\text{K}}$ and the constant term $32\,\text{kPa}$. The constant term is of the same order as the fluctuation of the pressure reading and small compared with the measured pressures, so the data fit a line through the origin. So the pressure is directly proportional to the kelvin temperature: $p = kT$, where $k \approx 3.92\,\tfrac{\text{kPa}}{\text{K}}$.
-The same is seen in the ratios $p/T$, which are row by row $4.18$; $3.91$; $3.90$; $3.87$; $3.90$; $3.89$; $3.96\,\tfrac{\text{kPa}}{\text{K}}$. They are almost the same. The first point deviates most: it is $51\,\text{kPa}$ above the line, while the others are at most $19\,\text{kPa}$ from it. It is one reading of a fluctuating gauge. A result that clearly deviates is checked, and the measurement can be repeated if needed. A result is not removed merely because it differs from the others. The constant $k$ depends on the number of particles and the volume, so your own value may be different, but the form of the dependence is the same.
+**Principle:** The volume of the container and the number of particles stay the same, so the change of state is isochoric. The pressure of a thin gas is then directly proportional to the kelvin temperature, that is, $p/T$ is constant.
+
+The measurement tests this: if the model fits, the points lie within the measurement uncertainty on a straight line through the origin.
+**Model answer a):** The temperature is taken from the simulation in kelvins and the pressure in kilopascals.
+
+The setting “Hold Constant: Volume (V)” locks the wall of the container, and the number of particles stays the same when the pump is not touched. Only the temperature is changed, so the change in pressure is due to the temperature.
+
+The reading of the pressure gauge fluctuates by a few per cent although the temperature stays the same. In the example measurement the fluctuation was about $\pm 30\,\text{kPa}$ at pressures of $1000\,\text{kPa}$–$2000\,\text{kPa}$.
+
+This is an estimate of the uncertainty of a single pressure reading. The middle one of several readings is more reliable than one reading.
+**Reading the graph:** The horizontal axis shows $T$ in kelvins and the vertical axis $p$ in kilopascals, and both axes start from zero, so that one can see whether the extension of the line passes through the origin.
+
+The line is fitted so that the points are spread evenly on both sides of it.
+
+The slope is read from two points of the line that are far apart, not from two neighbouring measured points, or it is obtained from the fit of a spreadsheet or a calculator.
+
+In the example measurement the fit of a line through the origin gives the slope $k = 3.924\,\tfrac{\text{kPa}}{\text{K}}$.
+**Model answer b):** The points lie on a rising straight line whose extension passes through the origin within the measurement uncertainty. In the example measurement a freely fitted line has the slope $3.84\,\tfrac{\text{kPa}}{\text{K}}$ and the constant term $32\,\text{kPa}$.
+
+The constant term is of the same order as the fluctuation of the pressure reading and small compared with the measured pressures, so the data fit a line through the origin.
+
+So the pressure is directly proportional to the kelvin temperature: $p = kT$, where $k \approx 3.92\,\tfrac{\text{kPa}}{\text{K}}$.
+
+The same is seen in the ratios $p/T$, which are row by row $4.18$; $3.91$; $3.90$; $3.87$; $3.90$; $3.89$; $3.96\,\tfrac{\text{kPa}}{\text{K}}$. They are almost the same.
+
+The first point deviates most: it is $51\,\text{kPa}$ above the line, while the others are at most $19\,\text{kPa}$ from it. It is one reading of a fluctuating gauge.
+
+A result that clearly deviates is checked, and the measurement can be repeated if needed. A result is not removed merely because it differs from the others.
+
+The constant $k$ depends on the number of particles and the volume, so your own value may be different, but the form of the dependence is the same.
 **Formula:** $p = kT$, so the prediction is $p_\text{pred} = kT_\text{pred}$ and the pressure ratio is $\dfrac{p_2}{p_1} = \dfrac{kT_2}{kT_1} = \dfrac{T_2}{T_1}$
 **Conversions:** None needed: the temperatures are already in kelvins and the pressures in kilopascals. The ratio could not be calculated in degrees Celsius.
 **Substitution:** The prediction of part c) with the model of the example measurement:
@@ -317,7 +387,14 @@ $$\begin{aligned}
 &= 1.50
 \end{aligned}$$
 
-**Model answer d):** The pressure of a gas arises when the particles collide with the walls of the container. In an ideal gas the temperature measures the mean kinetic energy of the particles' motion from place to place, so in a warmer gas the particles move faster on average. Faster particles hit the walls more often and harder. The volume and the number of particles stay the same, so there are as many particles in a unit of volume as before, and the whole change in pressure is due to the particles moving faster. That is why the pressure increases when the temperature rises, and decreases towards zero when the kelvin temperature approaches zero.
-Limits of the model: the gas of the simulation is an ideal gas, so the line continues unchanged at all temperatures. For a real gas the result holds when the gas is thin and far from condensing. A real gas condenses into a liquid before $0\,\text{K}$ is reached.
+**Model answer d):** The pressure of a gas arises when the particles collide with the walls of the container.
+
+In an ideal gas the temperature measures the mean kinetic energy of the particles' motion from place to place, so in a warmer gas the particles move faster on average. Faster particles hit the walls more often and harder.
+
+The volume and the number of particles stay the same, so there are as many particles in a unit of volume as before, and the whole change in pressure is due to the particles moving faster.
+
+That is why the pressure increases when the temperature rises, and decreases towards zero when the kelvin temperature approaches zero. Limits of the model: the gas of the simulation is an ideal gas, so the line continues unchanged at all temperatures.
+
+For a real gas the result holds when the gas is thin and far from condensing. A real gas condenses into a liquid before $0\,\text{K}$ is reached.
 **Answer:** The pressure increases by a factor of $1.50$, three significant figures as in the temperatures. Your own constant $k$ and your prediction may differ from the example, but the ratio is the same for every model $p = kT$, because $k$ cancels.
 **Reasonableness:** The kelvin temperature increases by $50\,\%$, so a directly proportional pressure must increase by $50\,\%$. The model of the example measurement gives the pressures $1177\,\text{kPa}$ and $1766\,\text{kPa}$, whose ratio is $1.50$. The measured rows $300\,\text{K}$ and $454\,\text{K}$ give almost the same ratio: $1766 : 1170 \approx 1.51$.

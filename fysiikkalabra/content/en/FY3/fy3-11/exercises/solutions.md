@@ -209,7 +209,17 @@ b) The coefficient of performance of the season:
 ```
 c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving is $$\begin{aligned} &13.7\,\text{MWh} - 4.995\,\text{MWh} \\ &= 8.7\,\text{MWh} \end{aligned}$$.
 **Answer:** b) $\varepsilon_\text{season} = 2.74$, three significant figures. The initial values are given with two figures, so the result is really known to two figures ($2.7$), and the third figure is given so that the rounding does not move the answer outside the accepted interval. This number goes in the answer box.
-**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance. The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high. Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest. Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average. Energy balance: $$\begin{aligned} &4.995\,\text{MWh} + 8.7\,\text{MWh} \\ &= 13.7\,\text{MWh} \end{aligned}$$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand. The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
+**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance.
+
+The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high.
+
+Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest.
+
+Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average.
+
+Energy balance: $$\begin{aligned} &4.995\,\text{MWh} + 8.7\,\text{MWh} \\ &= 13.7\,\text{MWh} \end{aligned}$$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand.
+
+The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
 
 ## fy3-11-L3-05
 **Given:** cross-sectional area $A = 200\,\text{cm}^2$, constant pressure $p = 125\,\text{kPa}$, power of the resistor $P = 260\,\text{W}$, time $t = 4.0\,\text{s}$, height of the piston $h_1 = 10.0\,\text{cm}$ at the start and $h_2 = 22.0\,\text{cm}$ at the end
@@ -239,7 +249,13 @@ b)
 ```
 c) The share that became work is $\tfrac{W}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0.288 \approx 29\,\%$.
 **Answer:** b) $\Delta U = 0.74\,\text{kJ}$, two significant figures, because the power $260\,\text{W}$ and the time $4.0\,\text{s}$ are given with two figures. This number goes in the answer box.
-**Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up. This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle. To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings. The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
+**Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up.
+
+This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle.
+
+To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings.
+
+The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
 **Reasonableness:** The change in internal energy is positive and smaller than the heat, $0 < 740\,\text{J} < 1040\,\text{J}$, as it should be when a gas expands and receives heat. Energy balance: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. The speed of the piston, $3.0\,\text{cm/s}$, is slow, so the motion of a lightly moving piston is calm.
 
 ## fy3-11-L2-08
@@ -275,12 +291,24 @@ The engines do the same work, but that does not make the efficiency the same: th
 **Reasonableness:** At the start the length of the gas column is $$\begin{aligned} &0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.20\,\text{m} \end{aligned}$$ and at the end $$\begin{aligned} &0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.80\,\text{m} \end{aligned}$$. The difference is $0.60\,\text{m}$, as calculated.
 
 ## fy3-11-L2-10
-**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$. From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
+**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$.
+
+From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
 **Find:** a) what the coefficient of performance means and how it differs from an efficiency, b) the heat $Q_1$ transferred to the room and the heat $Q_2$ taken from the surroundings in kilowatt-hours ($Q_2$ for the answer field), c) the effect of the temperatures on the coefficient of performance, d) an assessment of the claim
 **Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump. The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
 **Formula:** $Q_1 = Q_2 + W$ and $\varepsilon = \dfrac{Q_1}{W}$, from which $Q_1 = \varepsilon W$ and $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
 **Conversions:** The electrical energy is given and the heats are asked for in kilowatt-hours, so no conversions are needed. The coefficient of performance has no unit.
-**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$. An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$. The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$. A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings. Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$. The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
+**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$.
+
+An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$.
+
+The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$.
+
+A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings.
+
+Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$.
+
+The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
 
 b) The heat transferred to the room:
 ```latex
@@ -298,8 +326,26 @@ Q_2 &= (\varepsilon - 1)\,W \\
 &= 7.5\,\text{kWh}
 \end{aligned}
 ```
-c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is. When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases. In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost. In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is.
 
-d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room. The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room. The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings. The only true part of the claim is that $Q_1 > W$.
+When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases.
+
+In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost.
+
+In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+
+d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room.
+
+The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room.
+
+The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings.
+
+The only true part of the claim is that $Q_1 > W$.
 **Answer:** b) $Q_1 = 10\,\text{kWh}$ and $Q_2 = 7.5\,\text{kWh}$, two significant figures, as in the initial values $4.0$ and $2.5\,\text{kWh}$. The answer field takes $7.5\,\text{kWh}$. a) The coefficient of performance is the ratio of the heat given out to the room to the electrical energy, not an energy-conversion efficiency. c) The coefficient of performance decreases when the temperature difference grows. d) The claim is wrong, because the energy balance holds when the heat taken from the surroundings is counted.
-**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$. An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions. According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$. The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.
+**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$.
+
+An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions.
+
+According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$.
+
+The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.

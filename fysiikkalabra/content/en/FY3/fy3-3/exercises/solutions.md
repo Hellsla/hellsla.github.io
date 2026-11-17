@@ -51,7 +51,9 @@
 ## fy3-3-L1-06
 **Find:** whether the gas in a sealed cylinder is a closed or an open system.
 **Principle:** A system is closed if no matter can leave it and none can enter. Energy can still cross the boundary. The piston is part of the boundary of the system: when it moves, the volume changes, but no matter crosses the boundary.
-**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked. Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not necessarily constant either.
+**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked.
+
+Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not necessarily constant either.
 
 ## fy3-3-L1-07
 **Given:** $\theta = -18\,{}^\circ\text{C}$
@@ -66,7 +68,9 @@
 ## fy3-3-L1-08
 **Find:** which quantity of the gas stays the same when a closed rigid container is heated.
 **Principle:** The walls of a rigid container do not move, so the volume of the gas is the volume of the container and stays the same. Heating raises the temperature of the gas, and the average kinetic energy of the particles grows. The particles hit the wall more often and harder, so the pressure rises.
-**Model answer:** The volume stays the same, because the walls of a rigid container do not move when it is heated. The temperature and the pressure rise. The average kinetic energy of the particles grows with the temperature, because in a dilute gas it is directly proportional to the temperature in kelvins. The container being closed only means that the number of particles, that is, the amount of substance, stays the same. The container does not prevent warming or the rise in pressure.
+**Model answer:** The volume stays the same, because the walls of a rigid container do not move when it is heated. The temperature and the pressure rise. The average kinetic energy of the particles grows with the temperature, because in a dilute gas it is directly proportional to the temperature in kelvins.
+
+The container being closed only means that the number of particles, that is, the amount of substance, stays the same. The container does not prevent warming or the rise in pressure.
 
 ## fy3-3-L2-01
 **Given:** $T_1 = 288\,\text{K}$, temperature rise $\Delta T = 45\,\text{K}$
@@ -92,7 +96,9 @@
 **Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the pressure depends linearly on the temperature, also outside the measured range
 **Find:** pressure $p$ at the temperature $\theta = -100\,{}^\circ\text{C}$ in kilopascals
 **Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range, that is, extrapolated.
-**Reading the graph:** The data points are at temperatures $0\ldots 100\,{}^\circ\text{C}$. The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$. From these two points the slope of the line is calculated, and the line is continued to the left to the temperature $-100\,{}^\circ\text{C}$. If you draw the line by eye, you get a value of $45$–$50\,\text{kPa}$, which is accepted.
+**Reading the graph:** The data points are at temperatures $0\ldots 100\,{}^\circ\text{C}$. The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$.
+
+From these two points the slope of the line is calculated, and the line is continued to the left to the temperature $-100\,{}^\circ\text{C}$. If you draw the line by eye, you get a value of $45$–$50\,\text{kPa}$, which is accepted.
 **Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
 **Conversions:** No conversions are needed: the pressures are in kilopascals, and the temperature differences are the same in degrees Celsius and in kelvins.
 **Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $$\begin{aligned} p &= 75\,\text{kPa} \\ &+ 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} \\ &= 75\,\text{kPa} - 27.5\,\text{kPa} \\ &= 47.5\,\text{kPa} \end{aligned}$$
@@ -131,7 +137,11 @@ $$\begin{aligned}
 \Delta\theta_4 &= 54.4 - 48.6 = 5.8\,\text{K} \\
 \frac{\Delta\theta_1}{\Delta\theta_4} &= \frac{10.1\,\text{K}}{5.8\,\text{K}} = 1.741
 \end{aligned}$$
-**Answer:** $1.7$ times, two significant figures like the drops $10.1\,\text{K}$ and $5.8\,\text{K}$. Explanation: at the start the water is $60.0\,\text{K}$ warmer than the room and at the end only $28.6\,\text{K}$ warmer. When the temperature difference to the room gets smaller, the drop slows down: in the first hour the drop is $10.1 : 60.0 \approx 0.17$ and in the last hour $5.8 : 34.4 \approx 0.17$ of the temperature difference at the start of the hour. The water tends towards room temperature but does not go past it.
+**Answer:** $1.7$ times, two significant figures like the drops $10.1\,\text{K}$ and $5.8\,\text{K}$. Explanation: at the start the water is $60.0\,\text{K}$ warmer than the room and at the end only $28.6\,\text{K}$ warmer.
+
+When the temperature difference to the room gets smaller, the drop slows down: in the first hour the drop is $10.1 : 60.0 \approx 0.17$ and in the last hour $5.8 : 34.4 \approx 0.17$ of the temperature difference at the start of the hour.
+
+The water tends towards room temperature but does not go past it.
 **Reasonableness:** The drop of cooling water slows down, so the ratio must be above $1$, and $1.7 > 1$. Check: the hourly drops are $10.1$, $8.6$, $6.9$ and $5.8\,\text{K}$, a decreasing sequence. The temperature of the water, $48.6\,{}^\circ\text{C}$, is still above the room temperature $20.0\,{}^\circ\text{C}$.
 
 ## fy3-3-L2-07
@@ -173,7 +183,9 @@ $$\begin{aligned}
 ## fy3-3-L3-03
 **Given:** $\theta_1 = 20.0\,{}^\circ\text{C}$ and average kinetic energy $E_2 = \tfrac{1}{2}E_1$
 **Find:** final temperature in degrees Celsius, $\theta_2$
-**Principle:** According to the task, the average kinetic energy of the particles of the gas is directly proportional to the temperature in kelvins; this is so in a dilute gas whose particles interact with each other only when they collide. The proportionality applies to the temperature in kelvins, because only the zero of the Kelvin scale is absolute zero. When the energy is halved, the temperature in kelvins is also halved. You must not halve the Celsius temperature.
+**Principle:** According to the task, the average kinetic energy of the particles of the gas is directly proportional to the temperature in kelvins; this is so in a dilute gas whose particles interact with each other only when they collide.
+
+The proportionality applies to the temperature in kelvins, because only the zero of the Kelvin scale is absolute zero. When the energy is halved, the temperature in kelvins is also halved. You must not halve the Celsius temperature.
 **Formula:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, so $T_2 = \dfrac{T_1}{2}$, and $\tfrac{\theta_2}{{}^\circ\text{C}} = \tfrac{T_2}{\text{K}} - 273.15$
 **Conversions:** The initial temperature is converted to kelvins: $T_1 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. At the end $T_2$ is converted back to degrees Celsius by subtracting $273.15$.
 **Substitution:** $T_2 = \dfrac{293.15\,\text{K}}{2} = 146.575\,\text{K}$, and $\theta_2 = (146.575 - 273.15)\,{}^\circ\text{C} = -126.575\,{}^\circ\text{C}$
@@ -183,7 +195,9 @@ $$\begin{aligned}
 ## fy3-3-L3-04
 **Given:** the readings of five measurements (example data): ear thermometer $36.9$, $37.1$, $36.8$, $37.0$, $37.2$; forehead thermometer $36.2$, $36.7$, $36.0$, $36.5$, $36.6$; mouth thermometer (reference) $37.0$, $37.0$, $37.1$, $36.9$, $37.0$, all in degrees Celsius; fever limit $37.5\,{}^\circ\text{C}$ and a mouth measurement of $37.6\,{}^\circ\text{C}$
 **Find:** the difference between the mean of the forehead thermometer and the reference method, $\Delta\theta = \theta_\text{mouth,avg} - \theta_\text{forehead,avg}$, in kelvins (part b)
-**Principle:** The mean is calculated from the repeated measurements. The difference to the reference method shows the direction and size of the error of the method, and the spread of the readings shows the order of magnitude of the random variation. If the difference is larger than the spread and all the readings deviate in the same direction, the error is systematic. A simple estimate of the spread is half of the range.
+**Principle:** The mean is calculated from the repeated measurements. The difference to the reference method shows the direction and size of the error of the method, and the spread of the readings shows the order of magnitude of the random variation.
+
+If the difference is larger than the spread and all the readings deviate in the same direction, the error is systematic. A simple estimate of the spread is half of the range.
 **Formula:** $\theta_\text{avg} = \dfrac{\sum \theta_i}{n}$, estimate of the spread $s = \dfrac{\theta_\text{max} - \theta_\text{min}}{2}$ and $\Delta\theta = \theta_\text{mouth,avg} - \theta_\text{forehead,avg}$
 **Conversions:** No conversions are needed, because a temperature difference is the same in degrees Celsius and in kelvins.
 **Substitution:**
@@ -208,13 +222,21 @@ s_\text{forehead} &= (36.7 - 36.0) : 2 = 0.35\,\text{K} \\
 s_\text{mouth} &= (37.1 - 36.9) : 2 = 0.1\,\text{K} 
 \end{aligned}$$
 $$\theta_\text{forehead,corr} = 37.6 - 0.6 = 37.0\,{}^\circ\text{C}$$
-**Answer:** $0.6\,\text{K}$, one significant figure, because the readings are given to the accuracy of $0.1\,\text{K}$. The difference is systematic, because every forehead reading ($36.0\ldots 36.7\,{}^\circ\text{C}$) is lower than every mouth reading ($36.9\ldots 37.1\,{}^\circ\text{C}$), and the difference $0.6\,\text{K}$ is larger than the spread of the forehead thermometer, $0.35\,\text{K}$. When the mouth shows $37.6\,{}^\circ\text{C}$, the forehead thermometer would show $37.0\,{}^\circ\text{C}$ on average, which is below the fever limit, so the fever would go undetected although the person has a fever.
-**Reasonableness:** The mean of the ear thermometer is the same as that of the reference, and its spread of $0.2\,\text{K}$ is small, so the ear thermometer is the most reliable in this data. The mean of the forehead thermometer, $36.4\,{}^\circ\text{C}$, is lower than the reference, and all five forehead readings are lower than the lowest reference reading, $36.9\,{}^\circ\text{C}$. Repeating reduces the random error of the mean but does not remove the systematic error, so even the mean of five measurements is too low for assessing a fever.
+**Answer:** $0.6\,\text{K}$, one significant figure, because the readings are given to the accuracy of $0.1\,\text{K}$. The difference is systematic, because every forehead reading ($36.0\ldots 36.7\,{}^\circ\text{C}$) is lower than every mouth reading ($36.9\ldots 37.1\,{}^\circ\text{C}$), and the difference $0.6\,\text{K}$ is larger than the spread of the forehead thermometer, $0.35\,\text{K}$.
+
+When the mouth shows $37.6\,{}^\circ\text{C}$, the forehead thermometer would show $37.0\,{}^\circ\text{C}$ on average, which is below the fever limit, so the fever would go undetected although the person has a fever.
+**Reasonableness:** The mean of the ear thermometer is the same as that of the reference, and its spread of $0.2\,\text{K}$ is small, so the ear thermometer is the most reliable in this data.
+
+The mean of the forehead thermometer, $36.4\,{}^\circ\text{C}$, is lower than the reference, and all five forehead readings are lower than the lowest reference reading, $36.9\,{}^\circ\text{C}$.
+
+Repeating reduces the random error of the mean but does not remove the systematic error, so even the mean of five measurements is too low for assessing a fever.
 
 ## fy3-3-L3-05
 **Given:** gauge pressure $p_\text{g1} = 600\,\text{kPa}$ at the temperature $\theta_1 = 20.0\,{}^\circ\text{C}$, atmospheric pressure $p_0 = 101\,\text{kPa}$, the gauge pressure at which the valve opens $p_\text{g,max} = 900\,\text{kPa}$, $\theta_2 = 60.0\,{}^\circ\text{C}$ (example data)
 **Find:** the temperature $\theta_3$ in degrees Celsius at which the safety valve opens (part b); in addition the total pressure and the gauge pressure at the temperature $\theta_2$ and the increase in kinetic energy
-**Principle:** The tank is sealed and rigid, so the amount of air and the volume are constant. Then the total pressure is directly proportional to the temperature in kelvins. The proportionality applies to the total pressure, not to the gauge pressure, so the gauge pressures are first converted to total pressures by adding the atmospheric pressure. In a dilute gas the average kinetic energy of the particles is also directly proportional to the temperature in kelvins.
+**Principle:** The tank is sealed and rigid, so the amount of air and the volume are constant. Then the total pressure is directly proportional to the temperature in kelvins.
+
+The proportionality applies to the total pressure, not to the gauge pressure, so the gauge pressures are first converted to total pressures by adding the atmospheric pressure. In a dilute gas the average kinetic energy of the particles is also directly proportional to the temperature in kelvins.
 **Formula:** $p = p_\text{g} + p_0$
 $$p_2 = p_1\,\frac{T_2}{T_1}$$
 $$\frac{\Delta E_\text{k}}{E_\text{k,1}} = \frac{T_2 - T_1}{T_1}$$
@@ -232,8 +254,18 @@ T_3 &= 293.15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 \frac{\Delta E_\text{k}}{E_\text{k,1}} &= \frac{333.15 - 293.15}{293.15} = 0.136
 \end{aligned}$$
 So the kinetic energy increases by $13.6\,\%$.
-**Answer:** $145\,{}^\circ\text{C}$ (exactly $145.46\,{}^\circ\text{C}$), three significant figures like the atmospheric pressure $101\,\text{kPa}$. Other results: the total pressure is $797\,\text{kPa}$ and the gauge pressure $696\,\text{kPa}$ at $60.0\,{}^\circ\text{C}$ (the valve does not open), and the kinetic energy increases by $13.6\,\%$. The total pressure increases by a factor of $796.7 : 701 = 1.136$, or $13.6\,\%$, the same as the kinetic energy, but the gauge pressure increases by a factor of $695.7 : 600 = 1.16$, or $16\,\%$. The total pressure is proportional to the temperature in kelvins, because it arises from the collisions of the particles; the gauge pressure is the difference between the total pressure and the atmospheric pressure.
-**Reasonableness:** When the valve opens, the total pressure increases by the ratio $1001 : 701 = 1.43$, so the temperature in kelvins must increase by the same factor: $293 \cdot 1.43 \approx 419\,\text{K}$, which matches the order of magnitude of the result $418.61\,\text{K} - 273.15 = 145.46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. The $60\,{}^\circ\text{C}$ inside a car is clearly below $145\,{}^\circ\text{C}$, so the valve does not open. If the gauge pressure were taken as proportional, the wrong result would be $$\begin{aligned} &293.15 \cdot 1.5 - 273.15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
+**Answer:** $145\,{}^\circ\text{C}$ (exactly $145.46\,{}^\circ\text{C}$), three significant figures like the atmospheric pressure $101\,\text{kPa}$.
+
+Other results: the total pressure is $797\,\text{kPa}$ and the gauge pressure $696\,\text{kPa}$ at $60.0\,{}^\circ\text{C}$ (the valve does not open), and the kinetic energy increases by $13.6\,\%$.
+
+The total pressure increases by a factor of $796.7 : 701 = 1.136$, or $13.6\,\%$, the same as the kinetic energy, but the gauge pressure increases by a factor of $695.7 : 600 = 1.16$, or $16\,\%$.
+
+The total pressure is proportional to the temperature in kelvins, because it arises from the collisions of the particles; the gauge pressure is the difference between the total pressure and the atmospheric pressure.
+**Reasonableness:** When the valve opens, the total pressure increases by the ratio $1001 : 701 = 1.43$, so the temperature in kelvins must increase by the same factor: $293 \cdot 1.43 \approx 419\,\text{K}$, which matches the order of magnitude of the result $418.61\,\text{K} - 273.15 = 145.46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$.
+
+The $60\,{}^\circ\text{C}$ inside a car is clearly below $145\,{}^\circ\text{C}$, so the valve does not open.
+
+If the gauge pressure were taken as proportional, the wrong result would be $$\begin{aligned} &293.15 \cdot 1.5 - 273.15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L1-09
 **Find:** the unit of the constant $c$ when $p = c\,T$, the pressure is in the unit $\text{kPa}$ and the temperature in the unit $\text{K}$

@@ -226,7 +226,9 @@ Omakotitalon seinien pinta-ala on 120 m² ja U-arvo $0{,}17\,\text{W/(m}^2\text{
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Seinät: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Ikkunat: $A_\text{i} = 20{,}0\,\text{m}^2$, $U_\text{i} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Lämpötilat $T_\text{sisä} = 21\,{}^\circ\text{C}$ ja $T_\text{ulko} = -15\,{}^\circ\text{C}$. Kysytään lämpötehoa $P$ ja energiaa $E$ vuorokaudessa.
+**Tunnetut ja kysytty.** Seinät: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0{,}17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Ikkunat: $A_\text{i} = 20{,}0\,\text{m}^2$, $U_\text{i} = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Lämpötilat $T_\text{sisä} = 21\,{}^\circ\text{C}$ ja $T_\text{ulko} = -15\,{}^\circ\text{C}$.
+
+Kysytään lämpötehoa $P$ ja energiaa $E$ vuorokaudessa.
 
 <!-- vaihe -->
 

@@ -122,7 +122,11 @@
 **Kaava:** $P t = c m \Delta T$, joten $c = \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}$
 **Muunnokset:** Teho $100\,\text{W} = 100\,\tfrac{\text{J}}{\text{s}}$ ja aika sekunteina ovat SI-yksiköissä, joten muunnoksia ei tarvita. Lämpötilan muutos on sama celsiusasteina ja kelvineinä.
 **Sijoitus:** $c = \dfrac{100\,\tfrac{\text{J}}{\text{s}}}{0{,}50\,\text{kg} \cdot 0{,}0483\,\tfrac{\text{K}}{\text{s}}} = 4138\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
-**Vastaus:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. b) Neste on vettä, koska taulukon arvo $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ poikkeaa tuloksesta vain noin $1\,\%$ eikä muiden taulukon aineiden arvo ($2100$ tai pienempi) tule lähelle. c) Lämpöhäviöitä voi pienentää kalorimetrin eristyksellä ja kannella: silloin lämpöä ei karkaa ympäristöön eikä nestettä haihdu, joten suurempi osa vastuksen energiasta nostaa nesteen lämpötilaa ja $c$ ei tule laskettua liian suureksi.
+**Vastaus:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
+
+b) Neste on vettä, koska taulukon arvo $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ poikkeaa tuloksesta vain noin $1\,\%$ eikä muiden taulukon aineiden arvo ($2100$ tai pienempi) tule lähelle.
+
+c) Lämpöhäviöitä voi pienentää kalorimetrin eristyksellä ja kannella: silloin lämpöä ei karkaa ympäristöön eikä nestettä haihdu, joten suurempi osa vastuksen energiasta nostaa nesteen lämpötilaa ja $c$ ei tule laskettua liian suureksi.
 **Järkevyys:** Energiatase: vastus antaa $100\,\text{W} \cdot 300\,\text{s} = 30\,000\,\text{J}$, ja neste vastaanottaa $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \cdot 14{,}5\,\text{K} = 30\,378\,\text{J}$. Luvut eroavat noin $1\,\%$, mikä on mittaushajonnan suuruinen, joten häviöt ovat tällä välillä pienet.
 
 ## fy3-6-L2-06
@@ -150,10 +154,15 @@
 **Kysytty:** mikä oppilaan laskun riveistä on väärin.
 **Periaate:** Lämpömäärä on $Q = c m \Delta T$, missä $\Delta T$ on loppulämpötila miinus alkulämpötila. Jäähtyessä $\Delta T$ ja $Q$ ovat negatiivisia, ja miinusmerkki kertoo, että kappale luovuttaa energiaa ympäristöön. Laskun voi tarkistaa rivi riviltä: lämpötilan muutos, kaava, sijoitus ja tuloksen tulkinta.
 **Mallivastaus:** Rivi 1: $$\begin{aligned} \Delta T &= 40\,{}^\circ\text{C} - 220\,{}^\circ\text{C} \\ &= -180\,\text{K} \end{aligned}$$ on oikein, koska lämpötilan muutos on sama kelvineinä ja celsiusasteina.
+
 Rivi 2: $Q = c m \Delta T$ on oikein, koska levyn olomuoto ei muutu.
+
 Rivi 3: $450 \cdot 3{,}0 = 1350$ ja $1350 \cdot (-180) = -243\,000$, joten $Q = -243\,000\,\text{J}$ on oikein.
+
 Rivi 4 on väärin, koska negatiivinen lämpömäärä on mahdollinen: se kertoo, että levy luovuttaa energiaa.
+
 Oikein: levy luovuttaa ympäristöön $243\,\text{kJ}$.
+
 Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla vastaanottaa energiaa. Oikea vastaus on rivi 4.
 
 ## fy3-6-L3-01
@@ -196,7 +205,11 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Sijoitus:**
 
 $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0{,}50\,\text{kg} \cdot 5{,}6\,\text{K}} \\ &= 4286\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ Q_\text{vesi} &= 4190 \cdot 0{,}50 \cdot 6{,}8\,\text{J} \\ &= 14\,246\,\text{J} \\ P_\text{häviö} &= 200\,\text{W} - \dfrac{14\,246\,\text{J}}{120\,\text{s}} \\ &= 81{,}3\,\text{W} \end{aligned}$$
-**Vastaus:** $81\,\text{W}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. a) Ensimmäisestä minuutista saadaan $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, joka on vain noin $2\,\%$ taulukkoarvoa suurempi. b) Teho on vakio, mutta lämpötilan nousu pienenee $5{,}6\,\text{K}$:sta $3{,}4\,\text{K}$:iin minuutissa, koska lämpimämpi vesi ja astia luovuttavat ympäristöön yhä enemmän lämpöä. Alussa häviöt ovat pienet, joten $c$ kannattaa sovittaa kuvaajan alkuosaan, jossa vastuksen energia lämmittää lähes kokonaan vettä.
+**Vastaus:** $81\,\text{W}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
+
+a) Ensimmäisestä minuutista saadaan $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, joka on vain noin $2\,\%$ taulukkoarvoa suurempi.
+
+b) Teho on vakio, mutta lämpötilan nousu pienenee $5{,}6\,\text{K}$:sta $3{,}4\,\text{K}$:iin minuutissa, koska lämpimämpi vesi ja astia luovuttavat ympäristöön yhä enemmän lämpöä. Alussa häviöt ovat pienet, joten $c$ kannattaa sovittaa kuvaajan alkuosaan, jossa vastuksen energia lämmittää lähes kokonaan vettä.
 **Järkevyys:** Häviöteho on noin $41\,\%$ vastuksen $200\,\text{W}$:n tehosta, ja loppua kohti kaartuva käyrä sopii tähän. Lämpötilaero huoneeseen on välillä keskimäärin $60{,}2\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} \approx 40\,\text{K}$, joten häviö on noin $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, mikä on tavallisen avoimen astian suuruusluokkaa. Alussa häviö on vain noin $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$ eli noin $3\,\%$ tehosta, joten a)-kohdan $c$ on vain muutaman prosentin liian suuri.
 
 ## fy3-6-L3-05
@@ -210,7 +223,13 @@ $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0{,}50\,\text{kg
 $$\begin{aligned} Q &= 4190 \cdot 0{,}300 \cdot 17{,}5\,\text{J} \\ &= 21\,998\,\text{J} \\ P &= \dfrac{21\,998\,\text{J}}{600\,\text{s}} \\ &= 36{,}66\,\text{W} \\ k &= \dfrac{36{,}66\,\text{W}}{(81{,}25 - 20{,}0)\,\text{K}} \\ &= 0{,}599\,\tfrac{\text{W}}{\text{K}} \end{aligned}$$
 
 Samoin muille väleille: lämpömäärät ovat $16{,}2$, $12{,}7$, $9{,}05$, $7{,}16$ ja $5{,}15\,\text{kJ}$, tehot $27{,}0$, $21{,}2$, $15{,}1$, $11{,}9$ ja $8{,}59\,\text{W}$ ja kertoimet $0{,}587$, $0{,}612$, $0{,}582$, $0{,}614$ ja $0{,}590\,\tfrac{\text{W}}{\text{K}}$.
-**Vastaus:** $0{,}60\,\tfrac{\text{W}}{\text{K}}$, kolme merkitsevää numeroa lämpötiloissa ja massassa, mutta $k$ vaihtelee väleittäin noin $\pm 3\,\%$, joten toinen numero on viimeinen merkityksellinen. c) Kaikki kuusi $k$:ta ovat välillä $0{,}58\ldots 0{,}61\,\tfrac{\text{W}}{\text{K}}$ eli alle $3\,\%$:n päässä keskiarvostaan, vaikka teho pienenee $36{,}7\,\text{W}$:sta $8{,}59\,\text{W}$:iin. Malli sopii mittauksiin hyvin; pienet erot johtuvat lämpötilalukemien $0{,}1\,{}^\circ\text{C}$:n tarkkuudesta. Jäähtyminen hidastuu, koska luovutettu teho on verrannollinen lämpötilaeroon huoneeseen: veden lämpötilan laskiessa ero pienenee ja teho pienenee samassa suhteessa.
+**Vastaus:** $0{,}60\,\tfrac{\text{W}}{\text{K}}$, kolme merkitsevää numeroa lämpötiloissa ja massassa, mutta $k$ vaihtelee väleittäin noin $\pm 3\,\%$, joten toinen numero on viimeinen merkityksellinen.
+
+c) Kaikki kuusi $k$:ta ovat välillä $0{,}58\ldots 0{,}61\,\tfrac{\text{W}}{\text{K}}$ eli alle $3\,\%$:n päässä keskiarvostaan, vaikka teho pienenee $36{,}7\,\text{W}$:sta $8{,}59\,\text{W}$:iin.
+
+Malli sopii mittauksiin hyvin; pienet erot johtuvat lämpötilalukemien $0{,}1\,{}^\circ\text{C}$:n tarkkuudesta.
+
+Jäähtyminen hidastuu, koska luovutettu teho on verrannollinen lämpötilaeroon huoneeseen: veden lämpötilan laskiessa ero pienenee ja teho pienenee samassa suhteessa.
 **Järkevyys:** Ensimmäisen ja viimeisen välin tehojen suhde on $\dfrac{36{,}66}{8{,}59} \approx 4{,}3$ ja lämpötilaerojen suhde $\dfrac{61{,}25}{14{,}55} \approx 4{,}2$, joten teho todella seuraa lämpötilaeroa.
 
 ## fy3-6-L1-09
@@ -247,9 +266,21 @@ $$\begin{aligned} Q_\text{luov} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\t
 
 a) Artikkelin mukaan kuuma vesi voi joissakin olosuhteissa jäätyä nopeammin kuin kylmä. Arkikokemus sanoo päinvastaista: kuuman veden on ensin jäähdyttävä kylmän veden lämpötilaan, ja siihen kuluu aikaa. Laskun mukaan kuuman veden on luovutettava $170\,\text{kJ}$, ennen kuin jäätyminen voi edes alkaa. Otsikko esittää asian yleisenä tosiasiana, mutta itse teksti rajaa sen erityisiin olosuhteisiin.
 
-c) Haihtuminen vaikuttaa kahdella tavalla. Haihtuva vesi vie mukanaan energiaa, joten jäljelle jäävä vesi jäähtyy nopeammin. Lisäksi veden massa pienenee, ja $Q = cm\Delta T$ on suoraan verrannollinen massaan: pienemmän vesimäärän on luovutettava vähemmän energiaa. Kuumasta vedestä haihtuu paljon enemmän kuin kylmästä. Astia vaikuttaa siihen, kuinka nopeasti energia siirtyy: laakeassa astiassa pinta-ala on suuri, kansi estää haihtumisen, ja metalli johtaa lämpöä paremmin kuin muovi. Myös astia itse jäähtyy, ja sen lämpökapasiteetti on $C = cm$. Olosuhteista vaikuttavat pakastimen lämpötila, ilman liike ja astian alusta. Kuuma astia voi esimerkiksi sulattaa alleen huurretta ja saada paremman kosketuksen kylmään hyllyyn.
+c) Haihtuminen vaikuttaa kahdella tavalla. Haihtuva vesi vie mukanaan energiaa, joten jäljelle jäävä vesi jäähtyy nopeammin.
 
-d) Otetaan kaksi samanlaista astiaa ja kumpaankin sama massa vettä samasta hanasta, esimerkiksi $0{,}20\,\text{kg}$. Toisen näytteen alkulämpötila on esimerkiksi $80\,{}^\circ\text{C}$ ja toisen $20\,{}^\circ\text{C}$. Astiat pannaan samaan pakastimeen samanlaiselle alustalle. Mitataan veden lämpötila ajan funktiona, aika jäätymiseen ja veden massa ennen koetta ja sen jälkeen. Vakioidaan veden massa ja laatu, astian muoto ja materiaali, paikka pakastimessa ja pakastimen lämpötila. Ennen koetta päätetään, mitä jäätyminen tarkoittaa (ensimmäiset jääkiteet vai kokonaan kiinteä). Muutetaan yhtä tekijää kerrallaan, esimerkiksi kansi päällä ja ilman kantta, ja toistetaan koe useita kertoja.
+Lisäksi veden massa pienenee, ja $Q = cm\Delta T$ on suoraan verrannollinen massaan: pienemmän vesimäärän on luovutettava vähemmän energiaa. Kuumasta vedestä haihtuu paljon enemmän kuin kylmästä.
+
+Astia vaikuttaa siihen, kuinka nopeasti energia siirtyy: laakeassa astiassa pinta-ala on suuri, kansi estää haihtumisen, ja metalli johtaa lämpöä paremmin kuin muovi. Myös astia itse jäähtyy, ja sen lämpökapasiteetti on $C = cm$.
+
+Olosuhteista vaikuttavat pakastimen lämpötila, ilman liike ja astian alusta. Kuuma astia voi esimerkiksi sulattaa alleen huurretta ja saada paremman kosketuksen kylmään hyllyyn.
+
+d) Otetaan kaksi samanlaista astiaa ja kumpaankin sama massa vettä samasta hanasta, esimerkiksi $0{,}20\,\text{kg}$. Toisen näytteen alkulämpötila on esimerkiksi $80\,{}^\circ\text{C}$ ja toisen $20\,{}^\circ\text{C}$.
+
+Astiat pannaan samaan pakastimeen samanlaiselle alustalle. Mitataan veden lämpötila ajan funktiona, aika jäätymiseen ja veden massa ennen koetta ja sen jälkeen.
+
+Vakioidaan veden massa ja laatu, astian muoto ja materiaali, paikka pakastimessa ja pakastimen lämpötila. Ennen koetta päätetään, mitä jäätyminen tarkoittaa (ensimmäiset jääkiteet vai kokonaan kiinteä).
+
+Muutetaan yhtä tekijää kerrallaan, esimerkiksi kansi päällä ja ilman kantta, ja toistetaan koe useita kertoja.
 **Järkevyys:** Vertailu: sama vesimäärä lämpötilasta $20\,{}^\circ\text{C}$ luovuttaa jäähtyessään jäätymispisteeseen vain neljäsosan tästä.
 
 $$\begin{aligned} Q_{20} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} \\ &\cdot 20\,\text{K} \\ &= 41\,900\,\text{J} \end{aligned}$$

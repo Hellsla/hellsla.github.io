@@ -176,7 +176,9 @@ Wood chip energy is fed into the boiler of a biopower plant at a power of $500\,
 
 <!-- vaihe -->
 
-**Given and find.** Fuel power $P_1 = 500\,\text{MW}$. When only electricity is produced, the electric power is $P_\text{e} = 190\,\text{MW}$; in combined production $P_\text{e} = 150\,\text{MW}$ and the district heating power is $P_\text{dh} = 290\,\text{MW}$. The efficiencies $\eta$ and the power of the waste heat $P_2$ are asked for in both cases.
+**Given and find.** Fuel power $P_1 = 500\,\text{MW}$. When only electricity is produced, the electric power is $P_\text{e} = 190\,\text{MW}$; in combined production $P_\text{e} = 150\,\text{MW}$ and the district heating power is $P_\text{dh} = 290\,\text{MW}$.
+
+The efficiencies $\eta$ and the power of the waste heat $P_2$ are asked for in both cases.
 
 <!-- vaihe -->
 
@@ -219,7 +221,11 @@ P_{2,2} &= P_1 - (P_\text{e} + P_\text{dh}) \\
 
 <!-- vaihe -->
 
-**Result.** With electricity production alone the efficiency is $\eta_1 = 0.380 = 38.0\,\%$ and $310\,\text{MW}$ of waste heat is transferred to the environment, most of it through the condenser to the sea. In combined production the overall efficiency is $\eta_2 = 0.880 = 88.0\,\%$ and there is only $60\,\text{MW}$ of waste heat. The powers are given in whole megawatts, so the differences $310\,\text{MW}$ and $60\,\text{MW}$ are known to the nearest megawatt. The efficiencies are quotients, so they have as many figures as the least precise power: $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ and $500\,\text{MW}$ all have three figures, so the efficiencies are given with three figures.
+**Result.** With electricity production alone the efficiency is $\eta_1 = 0.380 = 38.0\,\%$ and $310\,\text{MW}$ of waste heat is transferred to the environment, most of it through the condenser to the sea.
+
+In combined production the overall efficiency is $\eta_2 = 0.880 = 88.0\,\%$ and there is only $60\,\text{MW}$ of waste heat. The powers are given in whole megawatts, so the differences $310\,\text{MW}$ and $60\,\text{MW}$ are known to the nearest megawatt.
+
+The efficiencies are quotients, so they have as many figures as the least precise power: $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ and $500\,\text{MW}$ all have three figures, so the efficiencies are given with three figures.
 
 <!-- vaihe -->
 
