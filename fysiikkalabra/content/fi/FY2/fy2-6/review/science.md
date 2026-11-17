@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5321c759d58b694c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: ed33081273252032
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- None.
 
 ## Checked
-- Diff `git diff origin/main...HEAD` of lesson.md, inquiry.json, exit-ticket.json (fi); content hash recomputed and equal to the brief's.
-- lesson.md: ordinary year $365\cdot24 = 8760\,\text{h}$, leap year $366\cdot24 = 8784\,\text{h}$ recomputed; worked example $14\,\text{GWh} : 8760\,\text{h} = 1598\,\text{kW} = 1{,}598\,\text{MW} \approx 1{,}6\,\text{MW}$, $1{,}598 : 5{,}0 = 32\,\%$ recomputed; unit conversion now correct.
-- Changed text matches the en and fi-easy versions in substance.
+batch delta review: retrieval recomputed: 12 GW * 3 h = 36 GWh correct; 4,0 GWh (P/t) and 36 GW (wrong unit) feedback right; 12 GW is a plausible Finnish winter-morning load (peak about 14-15 GW); lesson-answers.py inq-kertaus = 36 runs; worked example paragraphs split, numbers unchanged (0,32).
