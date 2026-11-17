@@ -1,16 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 337e48e6aa0cc5a4
+VERDICT: FAIL
+CONTENT-HASH: b845352d0b689a84
 
 ## Blocking
-- none
+- **A (definition), `inquiry.json` `pr-tasapaino`, feedback of the first distractor.** "Pois siirtyvä energia on lämpönä ympäristössä" describes heat as something stored in the surroundings. This contradicts the lesson and fy3-5: heat is energy in transfer, and a body has no heat. Suggested fix: "Pois siirtyvä energia siirtyy lämpönä ympäristöön, jonka sisäenergia kasvaa."
 
 ## Polish
-- content/fi/FY3/fy3-12/lesson.md:155, 225, 233, 266 — the worked example and the U-value paragraph still say "lämpö johtuu" / "läpi johtuu teho" for the same $P = UA\Delta T$. That is a fair simplification (C), because conduction dominates in an insulated wall. To match the new wording, "siirtyy" could replace it there as well (the same holds for en and fi-easy if they have the same lines).
+- "lämpötila laskee" holds only while the layer does not change state: freezing moist soil stays at 0 °C while its internal energy falls. On a winter night the layer is usually frozen already, so this is a fair simplification. "(olomuoto ei muutu)" in the prompt would close the gap.
 
 ## Checked
-- Hash 337e48e6aa0cc5a4 at the start and at the end.
-- The diff changes only one word, "johtuva" to "siirtyvä", in the Kaava section and the Tiivistelmä. No numbers or symbols changed.
-- The physics is better now. A U-value is a combined thermal transmittance: it includes surface convection, radiation, and conduction and convection in window gaps. So "siirtyvä" is more accurate than "johtuva".
-- It agrees with the glossary's U-arvo definition ("lämpötehoa siirtyy neliömetrin läpi") and with the paragraph at line 155.
-- The condition "Kaava pätee, kun lämpötilat … pysyvät vakioina" stays next to the formula.
-- The en ("conducted" to "transferred") and fi-easy diffs are the same change in the same two places.
+batch delta review: the new retrieval choice `pr-tasapaino` is recomputed: ΔU = (1,0 − 4,0) kJ + 0 = −3,0 kJ, the only correct option. The distractors are wrong and their feedback numbers right: "pysyy samana" confuses conservation, −4,0 kJ ignores the heat received, and +3,0 kJ has the wrong sign. The choice does not reveal Ennuste 1 (back radiation) or Ennuste 2 (a new balance after the CO₂ step). The exit ticket gives 0,20 · 50 · 30 = 300 W. The transfer task's answer is unchanged: 0,30 · 4,0 · 16 W · 24 h = 0,461 kWh. The other edits are LaTeX units and a paragraph split. lesson-answers.py agrees with my own values.
