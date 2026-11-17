@@ -64,6 +64,13 @@ Varattu: claude/elevenlabs-readaloud
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
+## 5h. mathlayout: join_wide ja with_punct (koordinaattori 2026-11-17)
+Varattu: claude/mathlayout-join-wide
+Jaettu korjaus `scripts/mathlayout.py`:hen. `join_wide` ei liitä relaatiorivin (`&=`, `&<`, `&\approx`) edellisen rivin
+jatkoriviin, mutta liittää jatkorivin (`&+`, `&-`, `&\cdot`, `&/`, `&:`) edelliseen; `with_punct` jättää välimerkin rivin
+viimeisen lausekkeen perään (ei loppu-`&`:n jälkeen). Testit `scripts/test_mathlayout.py`:ssä; build ja `site/`-diff,
+tarkistus 1280 ja 360 px:llä; `reviews.py verify` (renderöinti ei muuta lähdetekstiä).
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
