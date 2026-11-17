@@ -13,19 +13,9 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c).
-Osat 0d–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
+Osat 0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
-
-### 0d. CI:n selain pilvi-istuntoihin
-Varattu: claude/ci-selain-0d
-Usea kurssi-PR jätti rivejä, jotka "vain CI:n Chromium leikkaa" (FY4, FY7, FY2), ja ne löytyivät vasta CI-kierroksella.
-Pilvi-istunnossa Docker on asennettu, mutta sen palvelu ei ole käynnissä (tarkistettu 2026-11-17), joten
-`ci_env.py run` ja `check_lesson.py`:n layout-tarkistus putoavat istunnon omaan Chromiumiin. Selvitä ja korjaa: joko
-Docker-palvelu käyntiin ympäristön setup-skriptissä, tai `requirements-ci.txt`:n Playwright-versio, sen Chromium ja
-CI-kuvan fontit asennetaan setup-skriptissä ja `ci_env.py` tunnistaa ne samaksi selaimeksi. Hyväksymisehto: fy2-3
-360 px:llä antaa istunnossa saman määrän leikkautuvia kaavoja kuin CI (13, ei 3; `docs/QUALITY.md` aukko 2).
-Ympäristön muutos on opettajan hyväksyttävä.
 
 ### 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali
 Opettajan päätös 2026-11-17 (hyväksytty jonoon; sääntöteksti hyväksytään yhdistämällä PR). Kun muutos on esitystapaluokkaa
