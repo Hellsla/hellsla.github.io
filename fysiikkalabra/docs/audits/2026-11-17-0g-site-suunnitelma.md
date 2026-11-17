@@ -1,6 +1,6 @@
 # Työjono 0g: `site/` pois sisältö-PR:istä — suunnitelma
 
-Tila: **vain suunnitelma, ei koodia. Odottaa opettajan hyväksyntää.** Mitään ei toteuteta ennen sitä; toteutus omina PR:inään (osa 7).
+Tila: **hyväksytty (opettaja 2026-11-17, päätökset 1–5 suositusten mukaan; osa 11).** Tämä PR on vain suunnitelma, ei koodia; toteutus omina PR:inään (osa 7), PR 1 ensin.
 Laatija: worker-istunto, 2026-11-17. Mittaukset ovat `origin/main`ista 5aaa798.
 
 ## 0. Nykytila (mitattu)
@@ -98,10 +98,10 @@ Mitatut luvut: ~110 `site/`-uudelleenrakennusta ja ~140 mainin yhdistystä haaro
 - **Arvio (oletus, ei mitattu):** jos yksi rakenna-yhdistä-korjaa-kierros maksaa 10–20 k tokenia ja yhden ylimääräisen CI-ajon, 110 kierrosta viikossa on noin 1,1–2,2 M tokenia ja 110 tarpeetonta CI-ajoa; työntekijän vuoroista poistuu 1–2 per kierros. Todellinen luku mitataan PR 4:ssä `usage.py`:llä kohdan 0 mukaan (vuorot, tokenit, yhdistykset ennen/jälkeen).
 - **Uusi kustannus:** yksi lisärakennus `plan`-työssä ja `layout`-töissä (osa 8); arvioidaan PR 1:ssä, ja nettohyöty raportoidaan.
 
-## 11. Päätettävää opettajalle
+## 11. Opettajan päätökset (2026-11-17: "hyväksyn päätökset 1-5", suositusten mukaan)
 
-1. Hyväksytäänkö A: `site/` poistuu repossa kokonaan (suositus), vai B: CI-botti kirjoittaa sen mainiin?
-2. Vanhat `hellsla.github.io/fysiikkalabra/site/`-osoitteet: ohjauspysäkit vai linkkien vaihto `ruukkilab.fi`:hin?
-3. Esikatselu: riittääkö CI-artefakti + muuttuneiden sivujen lista (suositus), vai halutaanko erillinen esikatselusivusto?
-4. Otetaanko 0h (`catalog.json`, `assessment`, `coverage` CI:lle) jonoon?
-5. Hyväksytäänkö siirtymäjärjestys PR 1 (varjo) → PR 2 (kytkentä) → PR 3 (poisto) → PR 4?
+1. **A:** `site/` poistuu repossa kokonaan (ei botti-committeja mainiin).
+2. Vanhat `hellsla.github.io/fysiikkalabra/site/`-linkit vaihdetaan `ruukkilab.fi`-osoitteisiin PR 3:ssa.
+3. Esikatselu = CI-artefakti ja muuttuneiden sivujen lista; erillistä esikatselusivustoa ei tehdä.
+4. 0h (`catalog.json`, `docs/assessment`, `docs/coverage` CI:lle) otetaan jonoon 0g:n jälkeen (`tyojono.md`).
+5. Siirtymä järjestyksessä PR 1 varjo → PR 2 kytkentä → PR 3 poisto → PR 4 mittaus. PR 3:n ajankohta sovitaan erikseen: koordinaattori ilmoittaa ikkunan, jotta avoimet PR:t ehditään yhdistää ensin.
