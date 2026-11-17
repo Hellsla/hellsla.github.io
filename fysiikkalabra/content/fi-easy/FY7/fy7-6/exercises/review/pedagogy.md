@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 50e828664421391d
-SCOPE: delta added-exercise from b366c16fb04b0dad base 8f23aa7ae3bd
+CONTENT-HASH: 3d77db712e00ae54
+SCOPE: delta wording of fy7-6-L1-06 (Lenz's law)
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-6-L3-06 is only a little harder than L2-09 (same graph, one more step); it is acceptable as level 3 because it joins the force balance and the graph, but the third question of the set that reads F(v) from this figure is enough.
+- none
 
 ## Checked
-- L2-09: P = Fv with F = 0,40 N at 0,25 m/s gives 100 mW; the solution derives P = Fv from work per time; check at half speed.
-- L3-06: terminal speed from mg = kv, k = 1,6 N·s/m from two points, v = 0,28 m/s correct; figure description gives no power or terminal speed.
-- Both questions last or near last; units, conversions and sig figs explained.
-- Language checked: fi-easy. Hash 50e828664421391d at start and end.
+- L1-06 answer and correct option now say the induced field tries to keep the flux unchanged: 'yrittää pitää': plain, correct for S2 readers. It no longer claims the flux stays constant, and the feedback (opposes the decrease, S pole attracts the magnet) stays consistent.
+- Answer and option text match; solutions.md change is presentation only.
+- Language checked: fi-easy. Hash 3d77db712e00ae54 at start and end.

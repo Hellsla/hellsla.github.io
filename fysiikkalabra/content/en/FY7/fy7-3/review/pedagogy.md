@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 26b3b9c9bd4094f5
+CONTENT-HASH: 103e5d090d023a78
+
 ## Blocking
+
 (none)
+
 ## Polish
-- none
+
+none.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Compass without current retrieves 'needle follows the field' and sets up the wire-compass phenomenon; Ennusta (coil length, coil end) not revealed.
+
+batch delta review (round 2): The retrieval (compass beside the wire, no current) sits in the crane/compass phenomenon and retrieves the compass and Earth's field; it gives away neither prediction.

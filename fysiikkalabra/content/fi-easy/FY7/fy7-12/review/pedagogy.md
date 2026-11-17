@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1e62b986a2ea19df
+CONTENT-HASH: 14d0a1a2f2136aed
 ## Blocking
-(none)
+- None.
 ## Polish
-- Selitys 'Tänään selvitetään...' on hyvä; lisää vielä, että kuidun pää on tasainen.
+- None.
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): air-to-fibre-glass refraction (19,8 deg checked) belongs to the fibre and prepares but does not reveal Ennusta (leakage angle, air vs cladding).
+batch delta review: Retrieval (Snell, 30 deg into n=1,48 glass) retrieves refraction needed for critical angle, reveals no Ennuste; corrected feedback angle 19,8 deg matches the task.

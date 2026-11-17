@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9f31e6f6cfefc30d
+CONTENT-HASH: a1d131e9dc3b5e30
 ## Blocking
-(none)
+- None.
 ## Polish
-- 'kalvon kahden viereisen kohdan' on epäselvä; kirjoita 'kahden raon'.
-- 'Mitä pisteessä P näkyy?' sopii, mutta nimeä vastaukset kirkas/pimeä.
+- None.
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): laser and two openings fit the dark classroom; retrieves path difference 1,5 lambda, no Ennusta (grating density, colour) disclosed.
+batch delta review: 'raon' replaces 'kohdan': clearer. Retrieval (path difference 1,5 lambda) retrieves interference, discloses no Ennuste answer.

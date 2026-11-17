@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d4ea3449c3adfd79
+CONTENT-HASH: be7561f2690be5e0
+
 ## Blocking
+
 (none)
+
 ## Polish
-- The correct answer (flux changes) is the principle Ennusta 1 (battery, 0 V) applies, and option 3 echoes the battery; it stays pre-existing prior knowledge, not a disclosure, but keep the 'battery' option out if a student could read it as a cue.
+
+say in the prompt that the power plant also supplies sockets, to tie it to the phenomenon.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. 
+
+batch delta review (round 2): The retrieval (effective value of the 325 V socket voltage) retrieves the prior knowledge the transformer needs, and the answer to Ennusta 1 (battery on the primary) is no longer disclosed. The socket link to the power plant is thin but acceptable.

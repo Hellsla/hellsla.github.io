@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 056b620559581d4c
+CONTENT-HASH: 27c9dd149cac4ca0
+
 ## Blocking
+
 (none)
+
 ## Polish
-- Air into fibre glass retrieves refraction toward the normal. The wrong-option feedback says 'away from the normal when going from larger to smaller index', a faint cue for the TIR Ennusta; shorten it.
+
+none.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. 
+
+batch delta review (round 2): The retrieval (air to glass fibre end, n = 1,48, 30 degrees) is within the fibre phenomenon and retrieves refraction; the corrected 19,8 degrees is right. It does not mention total reflection or the Ennusta core and cladding.

@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8d5ac7aa4a212757
+CONTENT-HASH: d81546d145d9486f
 ## Blocking
-(none)
+- None.
 ## Polish
-- Elektronin lennättäminen dynamon kenttään on tekaistu; sanoisi vain 'varattu hiukkanen'.
-- Oikea vaihtoehto sisältää kaavan ja arvon, joten vaihtoehdot eroavat selvästi pituudeltaan.
+- None.
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): charge-in-field retrieval (F = 1,6e-13 N checked) fits the dynamo, does not reveal Ennusta 1 (zero voltage inside the field) or 2.
+batch delta review: Feedback trim and 'Voima' option wording are clear; retrieval (F=|q|vB) still prepares the rod-in-field phenomenon, no Ennuste answer disclosed.

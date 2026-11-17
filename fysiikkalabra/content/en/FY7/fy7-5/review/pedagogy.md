@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: efdf1846d978d198
+CONTENT-HASH: 1513035b0b2a06a9
+
 ## Blocking
+
 (none)
+
 ## Polish
-- The feedback of the correct option still says 'a rod at rest gets no shift', which the new question no longer tests; reword. Hub dynamo is a fair fit and no Ennusta answer is revealed (zero voltage inside field, speed doubling).
+
+none.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. 
+
+batch delta review (round 2): The retrieval (force on an electron in the hub dynamo field) belongs to the dynamo and retrieves the Lorentz force; Ennusta 1 (coil in a field) is not disclosed. The feedback now does not reveal that a rod at rest has no effect.

@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 123c3dc0586c997c
+CONTENT-HASH: 5adb5e575047e861
+
 ## Blocking
+
 (none)
+
 ## Polish
-- The prior 'voltage only when flux changes' (needed for Ennusta 1) is no longer retrieved; f=1/T is a weaker link, though it serves Ennusta 2. Consider a second optional item or accept as is.
+
+none.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. 
+
+batch delta review (round 2): The retrieval (rotor turn in 5,0 s, f = 1/T) belongs to the wind-farm phenomenon; the new 12 Hz distractor is a real misconception (turns per minute) and the feedback repairs it. Ennusta (coil position) not disclosed.

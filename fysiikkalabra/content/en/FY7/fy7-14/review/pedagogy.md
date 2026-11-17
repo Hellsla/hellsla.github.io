@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 811810bf0a6cb0f2
+CONTENT-HASH: f8678b268c4d5d97
+
 ## Blocking
+
 (none)
+
 ## Polish
-- none
+
+the opening sentence already names adding and cancelling as the source of the colours, which gives away a little of the Teoria; consider cutting it.
+
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Soap film wording with 'phase changes only because of distance' is clear and prevents the inversion confusion; Ennusta 1 (black thin film) not revealed.
+
+batch delta review (round 2): The retrieval (975 nm = 1,5 wavelengths, red laser) retrieves interference and is tied to the soap film; the model is not given, and Ennusta (a 20 nm film) is not disclosed.

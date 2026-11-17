@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 48b0ef9563664fcd
+CONTENT-HASH: 69ec76d620d5da18
 ## Blocking
-(none)
+- None.
 ## Polish
-- Vaihtoehdoissa vaihtelevat 'jaksonaika' ja 'kiertoaika'; käytä yhtä termiä.
-- 'jaksonaikaa vastaava käänteisluku' -> 'jaksonajan käänteisluku'.
-- Kolmas vaihtoehto on laskuvirhe, ei virhekäsitys; arvioimalla sen voi hylätä.
+- None.
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): turbine rotor 5,0 s per turn matches the lesson's 12 r/min; f = 1/T retrieval does not reveal the Ennusta answers.
+batch delta review: Retrieval (rotor 5,0 s -> f) belongs to the rotating coil, retrieves f=1/T; new 12 Hz (rpm) distractor is a real misconception with repairing feedback; Ennuste not disclosed.

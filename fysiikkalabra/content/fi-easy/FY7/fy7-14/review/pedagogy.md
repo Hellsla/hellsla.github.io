@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 432ce3c17b9a951d
+CONTENT-HASH: ec48e7cd49143106
 ## Blocking
-(none)
+- None.
 ## Polish
-- 'Vaihe muuttuu vain matkan takia' tekee tehtävästä yksinkertaisen, mutta sivuuttaa heijastuksen vaihesiirron, jota Ennuste 1 testaa; sano 'tässä tehtävässä'.
-- Lyhennä: 'Kaksi aaltoa saapuu silmään eri reiteiltä.'
+- None.
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): red light on soap film retrieves path difference; Ennusta 1 (very thin film dark) is not revealed.
+batch delta review: Rewritten retrieval: laser, path difference 975 nm = 1,5 lambda in air, weakening; belongs to thin-film colours, retrieves condition without reflection phase jumps, no Ennuste answer disclosed; Finnish clear.
