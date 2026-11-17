@@ -101,7 +101,9 @@
 ## fy7-15-L3-02
 **Annettu:** veden taitekerroin $n_1 = 1{,}33$ (valo tulee vedestä ja heijastuu veteen), ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** tulokulma $\alpha_\text{B}$ asteina, jolla vedenpinnasta takaisin veteen heijastunut valo on täysin polarisoitunutta
-**Periaate:** Heijastunut valo on täysin polarisoitunutta Brewsterin kulmassa. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Brewsterin laissa $n_1$ on sen aineen taitekerroin, josta valo tulee ja johon se heijastuu. Tässä se on veden taitekerroin. Luku $n_2$ on sen aineen taitekerroin, johon valo taittuu. Tässä se on ilman taitekerroin. Taittunut säde on olemassa vain, jos tulokulma on pienempi kuin rajakulma $\sin\alpha_\text{r} = n_2 : n_1$.
+**Periaate:** Heijastunut valo on täysin polarisoitunutta Brewsterin kulmassa. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Brewsterin laissa $n_1$ on sen aineen taitekerroin, josta valo tulee ja johon se heijastuu.
+
+Tässä se on veden taitekerroin. Luku $n_2$ on sen aineen taitekerroin, johon valo taittuu. Tässä se on ilman taitekerroin. Taittunut säde on olemassa vain, jos tulokulma on pienempi kuin rajakulma $\sin\alpha_\text{r} = n_2 : n_1$.
 **Kaava:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
 **Muunnokset:** Niitä ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma saadaan asteina.
 **Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}00}{1{,}33} = \tan^{-1} 0{,}7519 = 36{,}94^\circ$
@@ -197,7 +199,9 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 **Muunnokset:** Niitä ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma saadaan asteina.
 **Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}36}{1{,}00} = \tan^{-1} 1{,}36 = 53{,}67^\circ$
 **Vastaus:** $53{,}7^\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten taitekertoimissa.
-**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$. Brewsterin kulman pitää siis olla yli $45^\circ$. Opiskelijan kulma $36{,}3^\circ$ on alle $45^\circ$. Se ei voi olla Brewsterin kulma valolle, joka tulee ilmasta tiheämpään aineeseen. Opiskelijan kulma on $90^\circ - 53{,}67^\circ = 36{,}33^\circ$ eli taitekulma etanolissa. Brewsterin kulmassa heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Sama kulma on myös Brewsterin kulma valolle, joka tulee etanolin sisältä ilmaan, koska silloin $\tan\alpha_\text{B} = 1{,}00 : 1{,}36$.
+**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$. Brewsterin kulman pitää siis olla yli $45^\circ$. Opiskelijan kulma $36{,}3^\circ$ on alle $45^\circ$. Se ei voi olla Brewsterin kulma valolle, joka tulee ilmasta tiheämpään aineeseen.
+
+Opiskelijan kulma on $90^\circ - 53{,}67^\circ = 36{,}33^\circ$ eli taitekulma etanolissa. Brewsterin kulmassa heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Sama kulma on myös Brewsterin kulma valolle, joka tulee etanolin sisältä ilmaan, koska silloin $\tan\alpha_\text{B} = 1{,}00 : 1{,}36$.
 **Mallivastaus:** Virhe oli taitekertoimien järjestys Brewsterin laissa. Opiskelijan laskema kulma $36{,}3^\circ$ ei ole tulokulma vaan taitekulma etanolissa, kun tulokulma on oikea Brewsterin kulma $53{,}7^\circ$. Se olisi Brewsterin kulma vasta valolle, joka tulee etanolin sisältä ilmaan.
 
 ## fy7-15-L3-04
@@ -215,7 +219,9 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 ## fy7-15-L3-05
 **Annettu:** häikäisyn intensiteetti $I_0 = 40\,\text{W/m}^2$, veden taitekerroin $n_2 = 1{,}33$, ilman taitekerroin $n_1 = 1{,}00$, tulokulma on Brewsterin kulma, lasien läpäisysuunta on $\varphi = 25{,}0^\circ$ pystysuunnasta, tavallisen lasin läpäisykerroin $30\,\%$
 **Kysytty:** Auringon korkeus horisontin yläpuolella; häikäisyn intensiteetti $I$ polaroitujen lasien jälkeen yksikössä $\text{W/m}^2$; lasien vertailu
-**Periaate:** Valo tulee ilmasta veteen. Siksi $n_1$ on ilman ja $n_2$ on veden taitekerroin, ja Brewsterin kulma on $\alpha_\text{B} = \tan^{-1}(n_2 : n_1)$. Kulma mitataan pinnan normaalista. Auringon korkeus vaakasuorasta pinnasta on siis $90^\circ - \alpha_\text{B}$. Brewsterin kulmassa heijastunut valo on täysin polarisoitunutta pinnan suuntaan eli vaakasuuntaan. Siihen käytetään Malusin lakia. Läpäisysuunta on $25{,}0^\circ$ pystysuunnasta. Sen ja vaakasuoran polarisaatiosuunnan välinen kulma on siksi $\theta = 90^\circ - 25{,}0^\circ$.
+**Periaate:** Valo tulee ilmasta veteen. Siksi $n_1$ on ilman ja $n_2$ on veden taitekerroin, ja Brewsterin kulma on $\alpha_\text{B} = \tan^{-1}(n_2 : n_1)$. Kulma mitataan pinnan normaalista. Auringon korkeus vaakasuorasta pinnasta on siis $90^\circ - \alpha_\text{B}$.
+
+Brewsterin kulmassa heijastunut valo on täysin polarisoitunutta pinnan suuntaan eli vaakasuuntaan. Siihen käytetään Malusin lakia. Läpäisysuunta on $25{,}0^\circ$ pystysuunnasta. Sen ja vaakasuoran polarisaatiosuunnan välinen kulma on siksi $\theta = 90^\circ - 25{,}0^\circ$.
 **Kaava:** $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$, korkeus $h = 90^\circ - \alpha_\text{B}$, kulma $\theta = 90^\circ - \varphi$ ja $I = I_0 \cos^2\theta$
 **Muunnokset:** Niitä ei tarvita: kulmat ovat asteina, ja intensiteetti pysyy yksikössä $\text{W/m}^2$. Osuus $30\,\% = 0{,}30$.
 **Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}33}{1{,}00} = 53{,}06^\circ$, joten $h = 90^\circ - 53{,}06^\circ = 36{,}94^\circ$. Kulma on $\theta = 90^\circ - 25{,}0^\circ = 65{,}0^\circ$, ja $I = 40\,\text{W/m}^2 \cdot \cos^2 65{,}0^\circ = 40\,\text{W/m}^2 \cdot 0{,}1786 = 7{,}144\,\text{W/m}^2$. Tavallinen lasi päästäisi läpi $0{,}30 \cdot 40\,\text{W/m}^2 = 12\,\text{W/m}^2$.
@@ -258,4 +264,6 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 ## fy7-15-L2-09
 **Kysytty:** miksi polarisaatiosuotimen asento vaikuttaa ikkunalasin heijastukseen mutta ei juuri ikkunan takana oleviin tavaroihin, ja miksi heijastus kirkastuu neljänneskierroksen jälkeen
 **Periaate:** Polarisaattori päästää läpi vain sen värähtelyn, joka on sen läpäisysuunnan suuntainen. Se absorboi värähtelyn, joka on kohtisuorassa läpäisysuuntaa vastaan. Eristeen, kuten lasin, pinnasta heijastunut valo on osittain polarisoitunutta pinnan suuntaisesti. Pinnan suuntainen värähtely heijastuu nimittäin voimakkaammin kuin muut. Tavaroista ikkunan läpi tuleva valo on polarisoimatonta. Siinä on värähtelyä kaikissa suunnissa yhtä paljon.
-**Mallivastaus:** Heijastuksessa on enemmän lasin pinnan suuntaista värähtelyä kuin muita suuntia. Kun suotimen läpäisysuunta on kohtisuorassa tätä suuntaa vastaan, suodin absorboi suurimman osan heijastuneesta valosta. Silloin heijastus himmenee. Tavaroista tuleva valo on polarisoimatonta. Siksi suodin päästää siitä aina noin puolet läpi, asennosta riippumatta, eikä tavaroiden kirkkaus juuri muutu. Neljänneskierroksen ($90^\circ$) jälkeen läpäisysuunta on heijastuksen värähtelysuunnan suuntainen. Silloin heijastus pääsee taas läpi. Heijastus ei yleensä katoa kokonaan, koska heijastunut valo on vain osittain polarisoitunutta.
+**Mallivastaus:** Heijastuksessa on enemmän lasin pinnan suuntaista värähtelyä kuin muita suuntia. Kun suotimen läpäisysuunta on kohtisuorassa tätä suuntaa vastaan, suodin absorboi suurimman osan heijastuneesta valosta. Silloin heijastus himmenee. Tavaroista tuleva valo on polarisoimatonta.
+
+Siksi suodin päästää siitä aina noin puolet läpi, asennosta riippumatta, eikä tavaroiden kirkkaus juuri muutu. Neljänneskierroksen ($90^\circ$) jälkeen läpäisysuunta on heijastuksen värähtelysuunnan suuntainen. Silloin heijastus pääsee taas läpi. Heijastus ei yleensä katoa kokonaan, koska heijastunut valo on vain osittain polarisoitunutta.

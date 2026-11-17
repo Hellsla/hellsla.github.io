@@ -31,12 +31,16 @@
 ## fy7-1-L1-04
 **Find:** the poles of the pieces and whether the cut faces attract or repel each other
 **Principle:** A magnet is a magnetic dipole: its poles always occur in pairs. Every part of a magnet consists of atomic dipoles lined up in the same direction, so every piece is also a dipole. Unlike poles attract and like poles repel each other.
-**Model answer:** Each piece becomes a complete magnet with a north pole and a south pole. If the north pole of the original magnet was on the right, the north pole of each piece is on the right. So a north pole appears on the cut face of the left piece and a south pole on the cut face of the right piece. When the cut faces are brought back together, they have unlike poles, so the pieces attract each other and form one magnet again.
+**Model answer:** Each piece becomes a complete magnet with a north pole and a south pole. If the north pole of the original magnet was on the right, the north pole of each piece is on the right.
+
+So a north pole appears on the cut face of the left piece and a south pole on the cut face of the right piece. When the cut faces are brought back together, they have unlike poles, so the pieces attract each other and form one magnet again.
 
 ## fy7-1-L1-05
 **Find:** the direction of the north end of the compass needle in front of the north pole of the magnet, and the reason
 **Principle:** The direction of the field is the direction in which the north end of a compass needle points. Outside a magnet the field lines start from the north pole. The north end of the needle is itself a north pole, and like poles repel each other.
-**Model answer:** The north end of the needle points directly away from the magnet, along the axis of the magnet. On the axis in front of the north pole the field lines leave the pole straight outwards, so the field points away from the magnet. The same follows from the poles: the north pole of the magnet repels the north end of the needle and attracts its south end, so the south end turns towards the magnet and the north end away from it.
+**Model answer:** The north end of the needle points directly away from the magnet, along the axis of the magnet. On the axis in front of the north pole the field lines leave the pole straight outwards, so the field points away from the magnet.
+
+The same follows from the poles: the north pole of the magnet repels the north end of the needle and attracts its south end, so the south end turns towards the magnet and the north end away from it.
 
 ## fy7-1-L2-01
 **Given:** field of the magnet $B_\text{m} = 25\,\mu\text{T}$ towards the east, horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$ towards the north
@@ -81,7 +85,9 @@
 ## fy7-1-L3-01
 **Given:** north pole of the magnet towards the north, compass east of the magnet at the level of its middle, field of the magnet there $B_\text{m} = 25\,\mu\text{T}$, horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$ towards the north
 **Find:** north component $B_y$ of the horizontal total field in microtesla (north positive) and the direction of the needle
-**Principle:** Outside the magnet the field lines run from the north pole to the south pole, so at the side of the magnet at the level of its middle the field is parallel to the magnet and points from the north-pole end to the south-pole end, that is towards the south. It is opposite to the Earth's field, so the fields are added together with their signs. The needle turns to point along the total field, so the sign of the component tells whether the needle points north or south.
+**Principle:** Outside the magnet the field lines run from the north pole to the south pole, so at the side of the magnet at the level of its middle the field is parallel to the magnet and points from the north-pole end to the south-pole end, that is towards the south.
+
+It is opposite to the Earth's field, so the fields are added together with their signs. The needle turns to point along the total field, so the sign of the component tells whether the needle points north or south.
 **Formula:** with north positive, $B_y = B_\text{h} - B_\text{m}$
 **Conversions:** Not needed: both fields are in microtesla.
 **Substitution:** $B_y = 14\,\mu\text{T} - 25\,\mu\text{T} = -11\,\mu\text{T}$
@@ -91,7 +97,13 @@
 ## fy7-1-L3-02
 **Find:** why a steel clip drawn along a magnet becomes a magnet and why heating removes the magnetisation
 **Principle:** Steel is ferromagnetic. Its atomic dipoles form magnetic domains whose directions vary in an unmagnetised piece. An external field aligns the domains, and in steel the alignment is partly kept after the field is removed. At a high enough temperature the thermal motion of the atoms destroys the alignment of the atomic dipoles.
-**Model answer:** At first the domains of the clip point in different directions, and their effects cancel. When a pole of the magnet is drawn along the clip, always in the same direction, the field of the magnet turns the domains and makes those that point along the field grow. In steel many domains stay aligned when the magnet is taken away, so the clip becomes a permanent magnet with its own north pole and south pole. It magnetises the pins and attracts them. When the clip is heated hot enough (the Curie temperature of iron is about $770\,{}^\circ\text{C}$), the thermal motion of the atoms mixes up the alignment of the atomic dipoles and the domains disappear. When the clip cools, the domains form again but in random directions, so the clip is no longer a magnet.
+**Model answer:** At first the domains of the clip point in different directions, and their effects cancel. When a pole of the magnet is drawn along the clip, always in the same direction, the field of the magnet turns the domains and makes those that point along the field grow.
+
+In steel many domains stay aligned when the magnet is taken away, so the clip becomes a permanent magnet with its own north pole and south pole.
+
+It magnetises the pins and attracts them. When the clip is heated hot enough (the Curie temperature of iron is about $770\,{}^\circ\text{C}$), the thermal motion of the atoms mixes up the alignment of the atomic dipoles and the domains disappear.
+
+When the clip cools, the domains form again but in random directions, so the clip is no longer a magnet.
 
 ## fy7-1-L3-03
 **Given:** Helsinki $B_1 = 53\,\mu\text{T}$ and $I_1 = 74^\circ$, Longyearbyen $B_2 = 55\,\mu\text{T}$ and $I_2 = 82.5^\circ$ below the horizontal
@@ -101,18 +113,28 @@
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels.
 **Substitution:** $k = \dfrac{53\,\mu\text{T} \cdot \cos 74^\circ}{55\,\mu\text{T} \cdot \cos 82.5^\circ} = \dfrac{14.6\,\mu\text{T}}{7.18\,\mu\text{T}} = 2.03$
 **Answer:** about $2.0$ times, two significant figures like the fields $53\,\mu\text{T}$ and $55\,\mu\text{T}$. In Longyearbyen the field is almost vertical, so its horizontal component is only about half of the value in Helsinki.
-**Model answer (why):** Only the horizontal component turns the needle. In Longyearbyen it is only about half of that in Helsinki, even though the whole field is greater, because the field points almost straight into the ground. The field that turns the needle is weak, so the needle settles slowly and even small disturbances, such as an iron object nearby, turn it easily. The answer is correct if it says that a compass is steered by the horizontal component and not by the whole field.
+**Model answer (why):** Only the horizontal component turns the needle. In Longyearbyen it is only about half of that in Helsinki, even though the whole field is greater, because the field points almost straight into the ground.
+
+The field that turns the needle is weak, so the needle settles slowly and even small disturbances, such as an iron object nearby, turn it easily. The answer is correct if it says that a compass is steered by the horizontal component and not by the whole field.
 **Reasonableness:** The whole field is a little greater in Longyearbyen, but $\cos 82.5^\circ \approx 0.13$ is much smaller than $\cos 74^\circ \approx 0.28$, so the ratio is close to two. At the magnetic pole the field would be vertical, the horizontal component zero and the compass would not work at all.
 
 ## fy7-1-L1-06
 **Find:** why a magnet attracts an iron nail but not an aluminium can or a copper coin
 **Principle:** A magnet attracts only ferromagnetic substances. In a ferromagnetic substance such as iron, the magnetic dipoles of the atoms form domains that align in the field of the magnet, and the substance becomes magnetised. Electrical conductivity, mass or density does not decide the matter.
-**Model answer:** Iron is ferromagnetic: its magnetic domains align in the same direction in the field of the magnet, so the nail becomes magnetised and the magnet attracts it. Aluminium and copper are not ferromagnetic, they have no domains that the field of the magnet could align, so the magnet does not attract them. The claim that a magnet attracts all metals is a misconception. The correct option is the one that names ferromagnetism and the alignment of the domains as the reason; electrical conductivity, density and the absence of dipoles do not explain the difference.
+**Model answer:** Iron is ferromagnetic: its magnetic domains align in the same direction in the field of the magnet, so the nail becomes magnetised and the magnet attracts it. Aluminium and copper are not ferromagnetic, they have no domains that the field of the magnet could align, so the magnet does not attract them.
+
+The claim that a magnet attracts all metals is a misconception. The correct option is the one that names ferromagnetism and the alignment of the domains as the reason; electrical conductivity, density and the absence of dipoles do not explain the difference.
 
 ## fy7-1-L1-07
 **Find:** what the direction of the north end of a compass needle tells about the Earth's magnetic poles
 **Principle:** The north end of the needle is the north pole of a magnet. Poles of the same name repel and unlike poles attract each other, so the north end of the needle is attracted by the south pole of the bar-magnet model.
-**Model answer:** The north end of the needle turns towards the geographic north, so it is attracted by the pole there. Since the north end of the needle is a north pole and unlike poles attract each other, in the bar-magnet model there is a south pole near the geographic North Pole. In geomagnetism and navigation this pole is nevertheless called the magnetic north pole, because the name is based on its location. The needle is a magnet and it is turned by the Earth's magnetic field, not by the rotation of the Earth, gravity or friction. The correct option is the one that deduces the name of the pole from the attraction between unlike poles; a pole of the same name seeking the needle, the axis of rotation and the absence of poles do not belong in the explanation of the Earth's field.
+**Model answer:** The north end of the needle turns towards the geographic north, so it is attracted by the pole there.
+
+Since the north end of the needle is a north pole and unlike poles attract each other, in the bar-magnet model there is a south pole near the geographic North Pole. In geomagnetism and navigation this pole is nevertheless called the magnetic north pole, because the name is based on its location.
+
+The needle is a magnet and it is turned by the Earth's magnetic field, not by the rotation of the Earth, gravity or friction.
+
+The correct option is the one that deduces the name of the pole from the attraction between unlike poles; a pole of the same name seeking the needle, the axis of rotation and the absence of poles do not belong in the explanation of the Earth's field.
 
 ## fy7-1-L1-08
 **Given:** magnetic flux density of the Earth's field $B = 53\,\mu\text{T}$, inclination $I = 76^\circ$ below the horizontal
@@ -127,12 +149,18 @@
 ## fy7-1-L2-05
 **Given:** horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$ towards the north, field of the magnet towards the east; measurement points of the table $(r;\ \theta)$: $(8.0\,\text{cm};\ 73^\circ)$, $(10.0\,\text{cm};\ 61^\circ)$, $(12.0\,\text{cm};\ 46^\circ)$, $(16.0\,\text{cm};\ 24^\circ)$, $(20.0\,\text{cm};\ 12^\circ)$ and $(25.0\,\text{cm};\ 7^\circ)$
 **Find:** field of the magnet $B_\text{m}$ at a distance of $12\,\text{cm}$, the fields at distances of $8.0\,\text{cm}$ and $16\,\text{cm}$, and whether the field is inversely proportional to the distance
-**Principle:** The field of the magnet points east and the horizontal component of the Earth's field north, so they are perpendicular to each other and the angle of the needle satisfies $\tan\theta = B_\text{m} : B_\text{h}$. The Earth's field is the same at all points, so the field at each point is obtained from the angle. In an inversely proportional field, doubling the distance would halve the field.
+**Principle:** The field of the magnet points east and the horizontal component of the Earth's field north, so they are perpendicular to each other and the angle of the needle satisfies $\tan\theta = B_\text{m} : B_\text{h}$.
+
+The Earth's field is the same at all points, so the field at each point is obtained from the angle. In an inversely proportional field, doubling the distance would halve the field.
 **Formula:** $B_\text{m} = B_\text{h}\tan\theta$
 **Conversions:** Not needed: the result is obtained in microtesla like $B_\text{h}$.
 **Substitution:** a) $B_\text{m}(12\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 46^\circ = 14\,\mu\text{T} \cdot 1.036 = 14.5\,\mu\text{T}$. b) $B_\text{m}(8.0\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 73^\circ = 14\,\mu\text{T} \cdot 3.271 = 45.8\,\mu\text{T}$ and $B_\text{m}(16\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 24^\circ = 14\,\mu\text{T} \cdot 0.4452 = 6.23\,\mu\text{T}$, so the ratio is $\dfrac{45.8\,\mu\text{T}}{6.23\,\mu\text{T}} = 7.3$
-**Answer:** a) $14.5\,\mu\text{T}$, that is, $15\,\mu\text{T}$ with two significant figures, because the angle $46^\circ$ is known to two figures. b) The field is not inversely proportional to the distance. When the distance doubles from $8.0\,\text{cm}$ to $16\,\text{cm}$, the field decreases by a factor of about $7.3$, not just to a half. The field weakens with increasing distance much faster than $1/r$.
-**Reasonableness:** The field $14.5\,\mu\text{T}$ is about the size of the Earth's field $14\,\mu\text{T}$, and that is exactly when the needle has turned about $45^\circ$, as in the table at $12\,\text{cm}$. The field decreases with increasing distance: $45.8\,\mu\text{T}$, $14.5\,\mu\text{T}$ and $6.23\,\mu\text{T}$ at distances $8.0$, $12$ and $16\,\text{cm}$, as the field of a magnet should. The ratio $7.3$ is close to $2^3 = 8$, like a field that decreases as $1/r^3$.
+**Answer:** a) $14.5\,\mu\text{T}$, that is, $15\,\mu\text{T}$ with two significant figures, because the angle $46^\circ$ is known to two figures.
+
+b) The field is not inversely proportional to the distance. When the distance doubles from $8.0\,\text{cm}$ to $16\,\text{cm}$, the field decreases by a factor of about $7.3$, not just to a half. The field weakens with increasing distance much faster than $1/r$.
+**Reasonableness:** The field $14.5\,\mu\text{T}$ is about the size of the Earth's field $14\,\mu\text{T}$, and that is exactly when the needle has turned about $45^\circ$, as in the table at $12\,\text{cm}$.
+
+The field decreases with increasing distance: $45.8\,\mu\text{T}$, $14.5\,\mu\text{T}$ and $6.23\,\mu\text{T}$ at distances $8.0$, $12$ and $16\,\text{cm}$, as the field of a magnet should. The ratio $7.3$ is close to $2^3 = 8$, like a field that decreases as $1/r^3$.
 
 ## fy7-1-L2-06
 **Given:** components of the magnetometer $(B_x;\ B_y;\ B_z)$: window $(11;\ -5.0;\ -47)\,\mu\text{T}$, sofa $(12;\ -4.0;\ -49)\,\mu\text{T}$ and desk $(31;\ 14;\ -62)\,\mu\text{T}$; the components are perpendicular to each other, the Earth's field in the room is about $50\,\mu\text{T}$
@@ -141,7 +169,9 @@
 **Formula:** $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
 **Conversions:** Not needed: all components are in microtesla.
 **Substitution:** Window: $B = \sqrt{11^2 + (-5.0)^2 + (-47)^2}\,\mu\text{T} = \sqrt{2355}\,\mu\text{T} = 48.5\,\mu\text{T}$. Sofa: $B = \sqrt{12^2 + (-4.0)^2 + (-49)^2}\,\mu\text{T} = \sqrt{2561}\,\mu\text{T} = 50.6\,\mu\text{T}$. Desk: $B = \sqrt{31^2 + 14^2 + (-62)^2}\,\mu\text{T} = \sqrt{5001}\,\mu\text{T} = 70.7\,\mu\text{T}$
-**Answer:** a) Next to the desk the total field is $71\,\mu\text{T}$, two significant figures like the components; by the window it is $49\,\mu\text{T}$ and on the sofa $51\,\mu\text{T}$. b) There is probably iron or steel near the desk, because there the field is about $20\,\mu\text{T}$ greater than the Earth's field $50\,\mu\text{T}$ and all the components differ from the values at the window and the sofa. The fields at the window and the sofa are close to the Earth's field.
+**Answer:** a) Next to the desk the total field is $71\,\mu\text{T}$, two significant figures like the components; by the window it is $49\,\mu\text{T}$ and on the sofa $51\,\mu\text{T}$.
+
+b) There is probably iron or steel near the desk, because there the field is about $20\,\mu\text{T}$ greater than the Earth's field $50\,\mu\text{T}$ and all the components differ from the values at the window and the sofa. The fields at the window and the sofa are close to the Earth's field.
 **Reasonableness:** The fields at the window and the sofa, $48.5\,\mu\text{T}$ and $50.6\,\mu\text{T}$, are almost the same as the Earth's field $50\,\mu\text{T}$, as in a place without iron. The $70.7\,\mu\text{T}$ at the desk is greater than the greatest component $62\,\mu\text{T}$, as a total field must be.
 
 ## fy7-1-L2-07
@@ -151,7 +181,9 @@
 **Formula:** $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, from which $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels.
 **Substitution:** $\theta = \tan^{-1}\dfrac{30\,\mu\text{T}}{14\,\mu\text{T}} = \tan^{-1} 2.143 = 65.0^\circ$
-**Answer:** a) The student swapped the legs of the ratio: they divided the Earth's field by the field of the magnet, although the opposite leg $B_\text{m}$ belongs in the numerator. The result $25^\circ$ is implausible, because the field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$. b) The correct angle is $65^\circ$ from north towards east, two significant figures like the fields.
+**Answer:** a) The student swapped the legs of the ratio: they divided the Earth's field by the field of the magnet, although the opposite leg $B_\text{m}$ belongs in the numerator. The result $25^\circ$ is implausible, because the field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$.
+
+b) The correct angle is $65^\circ$ from north towards east, two significant figures like the fields.
 **Reasonableness:** The field of the magnet is more than twice the Earth's field, so the angle must be more than $45^\circ$ but less than $90^\circ$, and $65^\circ$ is. A check in the other direction: $14\,\mu\text{T} \cdot \tan 65.0^\circ = 30\,\mu\text{T}$.
 
 ## fy7-1-L3-04
@@ -161,22 +193,42 @@
 **Formula:** $B_\text{h} = B\cos I$ and $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
 **Conversions:** Not needed: all fields are in microtesla.
 **Substitution:** Helsinki: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 74^\circ = 14.6\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{14.6\,\mu\text{T}} = 53.9^\circ$. Oulu: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 76^\circ = 12.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{12.8\,\mu\text{T}} = 57.3^\circ$. Utsjoki: $B_\text{h} = 52\,\mu\text{T} \cdot \cos 78^\circ = 10.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{10.8\,\mu\text{T}} = 61.6^\circ$
-**Answer:** a) The horizontal components are $15\,\mu\text{T}$ in Helsinki, $13\,\mu\text{T}$ in Oulu and $11\,\mu\text{T}$ in Utsjoki. b) In Utsjoki the needle turns $62^\circ$ from north towards east; in Helsinki the angle is $54^\circ$ and in Oulu $57^\circ$. c) The total field is about $52\text{–}53\,\mu\text{T}$ everywhere, but the further north one goes, the more steeply the field points into the ground and the smaller the part of it that is horizontal. The needle is steered only by the horizontal component, so the same magnet turns it more in the north. A compass is therefore more sensitive to disturbances in the north, because the field that steers the needle is weaker.
-**Reasonableness:** The horizontal component decreases as one goes north, so $\tan\theta = 20 : B_\text{h}$ grows. The vertical component is almost the same in every town, $53\,\mu\text{T} \cdot \sin 74^\circ \approx 51\,\mu\text{T}$ and $52\,\mu\text{T} \cdot \sin 78^\circ \approx 51\,\mu\text{T}$, so the total field does not change but its division changes. The $B_\text{h} = 10.8\,\mu\text{T}$ of Utsjoki is smaller than the $20\,\mu\text{T}$ of the magnet, so the angle must be more than $45^\circ$, as the result is.
+**Answer:** a) The horizontal components are $15\,\mu\text{T}$ in Helsinki, $13\,\mu\text{T}$ in Oulu and $11\,\mu\text{T}$ in Utsjoki.
+
+b) In Utsjoki the needle turns $62^\circ$ from north towards east; in Helsinki the angle is $54^\circ$ and in Oulu $57^\circ$.
+
+c) The total field is about $52\text{–}53\,\mu\text{T}$ everywhere, but the further north one goes, the more steeply the field points into the ground and the smaller the part of it that is horizontal.
+
+The needle is steered only by the horizontal component, so the same magnet turns it more in the north. A compass is therefore more sensitive to disturbances in the north, because the field that steers the needle is weaker.
+**Reasonableness:** The horizontal component decreases as one goes north, so $\tan\theta = 20 : B_\text{h}$ grows. The vertical component is almost the same in every town, $53\,\mu\text{T} \cdot \sin 74^\circ \approx 51\,\mu\text{T}$ and $52\,\mu\text{T} \cdot \sin 78^\circ \approx 51\,\mu\text{T}$, so the total field does not change but its division changes.
+
+The $B_\text{h} = 10.8\,\mu\text{T}$ of Utsjoki is smaller than the $20\,\mu\text{T}$ of the magnet, so the angle must be more than $45^\circ$, as the result is.
 
 ## fy7-1-L3-05
 **Given:** $B_\text{h} = 14\,\mu\text{T}$ towards the north; measurement points of the table $(r;\ \theta)$: $(12.0\,\text{cm};\ 69^\circ)$, $(14.0\,\text{cm};\ 56^\circ)$, $(16.0\,\text{cm};\ 47^\circ)$, $(20.0\,\text{cm};\ 27^\circ)$, $(24.0\,\text{cm};\ 18^\circ)$ and $(30.0\,\text{cm};\ 8^\circ)$; the field of the magnet on the axis is the same at a distance $r$ on either side
 **Find:** fields $B_\text{m}$ and the constancy of the product $B_\text{m} r^3$, the distance $r_0$ at which the horizontal total field is zero, and the direction of the needle before and after it
-**Principle:** In the experiment the field of the magnet towards the east is perpendicular to the horizontal component of the Earth's field, so $\tan\theta = B_\text{m} : B_\text{h}$ and $B_\text{m} = B_\text{h}\tan\theta$. If the product $B_\text{m} r^3$ is approximately a constant $k$, the field follows the model $B_\text{m} = k : r^3$. When the magnet is turned to the north–south direction with its north pole towards the compass, the field points away from the pole, that is, south, opposite to the Earth's field. The north component is $B_\text{h} - B_\text{m}$, and it is zero when $B_\text{m} = B_\text{h}$.
+**Principle:** In the experiment the field of the magnet towards the east is perpendicular to the horizontal component of the Earth's field, so $\tan\theta = B_\text{m} : B_\text{h}$ and $B_\text{m} = B_\text{h}\tan\theta$. If the product $B_\text{m} r^3$ is approximately a constant $k$, the field follows the model $B_\text{m} = k : r^3$.
+
+When the magnet is turned to the north–south direction with its north pole towards the compass, the field points away from the pole, that is, south, opposite to the Earth's field. The north component is $B_\text{h} - B_\text{m}$, and it is zero when $B_\text{m} = B_\text{h}$.
 **Formula:** $B_\text{m} = B_\text{h}\tan\theta$, $k = B_\text{m} r^3$ and $B_\text{m}(r_0) = B_\text{h}$, from which $r_0 = \sqrt[3]{\dfrac{k}{B_\text{h}}}$
 **Conversions:** Not needed: the fields are in microtesla and the distances in centimetres, so $k$ is obtained in the unit $\mu\text{T}\cdot\text{cm}^3$ and $r_0$ in centimetres.
-**Substitution:** Fields: $B_\text{m} = 36.5$; $20.8$; $15.0$; $7.13$; $4.55$ and $1.97\,\mu\text{T}$ at distances $12$; $14$; $16$; $20$; $24$ and $30\,\text{cm}$. The products $B_\text{m} r^3$ are $63.0$; $57.0$; $61.5$; $57.1$; $62.9$ and $53.1$ in the unit $10^3\,\mu\text{T}\cdot\text{cm}^3$. Their sum is $354.5 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. The angles have been read to the nearest degree, so the products vary, and the mean evens out the reading error: $k = 59.1 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Then $r_0 = \sqrt[3]{\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{14\,\mu\text{T}}} = \sqrt[3]{4221\,\text{cm}^3} = 16.2\,\text{cm}$
-**Answer:** a) The product $B_\text{m} r^3$ is about $5.3\ldots6.3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$ at all points, although the field decreases from $36.5\,\mu\text{T}$ to $1.97\,\mu\text{T}$, so the field is approximately inversely proportional to the cube of the distance. b) $r_0 \approx 16\,\text{cm}$ (more precisely $16.2\,\text{cm}$), two significant figures like the angles; the value is approximate, because $k$ is a mean of scattered products. c) When $r < r_0$, the field of the magnet (towards the south) is greater than the Earth's field (towards the north), so the north component is negative and the north end of the needle points south. When $r > r_0$, the Earth's field is greater and the north end of the needle points north. At the distance $r_0$ the horizontal total field is zero, so the needle does not settle in any direction.
+**Substitution:** Fields: $B_\text{m} = 36.5$; $20.8$; $15.0$; $7.13$; $4.55$ and $1.97\,\mu\text{T}$ at distances $12$; $14$; $16$; $20$; $24$ and $30\,\text{cm}$. The products $B_\text{m} r^3$ are $63.0$; $57.0$; $61.5$; $57.1$; $62.9$ and $53.1$ in the unit $10^3\,\mu\text{T}\cdot\text{cm}^3$.
+
+Their sum is $354.5 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. The angles have been read to the nearest degree, so the products vary, and the mean evens out the reading error: $k = 59.1 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Then $r_0 = \sqrt[3]{\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{14\,\mu\text{T}}} = \sqrt[3]{4221\,\text{cm}^3} = 16.2\,\text{cm}$
+**Answer:** a) The product $B_\text{m} r^3$ is about $5.3\ldots6.3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$ at all points, although the field decreases from $36.5\,\mu\text{T}$ to $1.97\,\mu\text{T}$, so the field is approximately inversely proportional to the cube of the distance.
+
+b) $r_0 \approx 16\,\text{cm}$ (more precisely $16.2\,\text{cm}$), two significant figures like the angles; the value is approximate, because $k$ is a mean of scattered products.
+
+c) When $r < r_0$, the field of the magnet (towards the south) is greater than the Earth's field (towards the north), so the north component is negative and the north end of the needle points south.
+
+When $r > r_0$, the Earth's field is greater and the north end of the needle points north. At the distance $r_0$ the horizontal total field is zero, so the needle does not settle in any direction.
 **Reasonableness:** In the table at a distance of $16\,\text{cm}$ the field is $15.0\,\mu\text{T}$, a little greater than the Earth's field $14\,\mu\text{T}$, and at $20\,\text{cm}$ only $7.13\,\mu\text{T}$, so the zero point must be a little over $16\,\text{cm}$, as $16.2\,\text{cm}$ is. A check: $\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{(16.2\,\text{cm})^3} = 13.9\,\mu\text{T}$.
 
 ## fy7-1-L1-09
 **Find:** which of the five statements about a bar magnet, its field lines and the magnetic poles of the Earth are true.
-**Principle:** A magnet is a magnetic dipole: its poles always occur in pairs, and a single pole has never been observed. The direction of the field is the direction in which the north end of a compass needle points. Outside the magnet the field lines go from the north pole to the south pole and inside from the south pole to the north pole. The field of two magnets is the vector sum of their fields, and at each point it has one direction. Unlike poles attract each other.
+**Principle:** A magnet is a magnetic dipole: its poles always occur in pairs, and a single pole has never been observed. The direction of the field is the direction in which the north end of a compass needle points.
+
+Outside the magnet the field lines go from the north pole to the south pole and inside from the south pole to the north pole. The field of two magnets is the vector sum of their fields, and at each point it has one direction. Unlike poles attract each other.
 **Model answer:** Statements 3 and 4 are true, statements 1, 2 and 5 are false.
 
 1 false: a new north pole forms at the cut. The long piece still has both a north pole and a south pole, and the short piece becomes another complete magnet.

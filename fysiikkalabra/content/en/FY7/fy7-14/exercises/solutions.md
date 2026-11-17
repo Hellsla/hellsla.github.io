@@ -41,7 +41,9 @@
 ## fy7-14-L1-05
 **Given:** refractive index of the plastic of the lens $n_\text{plastic} = 1.60$, normal incidence
 **Find:** the refractive index $n_\text{c}$ of the ideal coating
-**Principle:** The more the refractive indices at an interface differ, the stronger the reflected wave is. When the waves reflected from the upper and lower surfaces of the coating are equally strong, they can cancel each other completely. At normal incidence this happens when the refractive index of the coating is the square root of the refractive index of the lens material, as stated in the chapter: then $1.00 : n_\text{c} = n_\text{c} : n_\text{plastic}$.
+**Principle:** The more the refractive indices at an interface differ, the stronger the reflected wave is. When the waves reflected from the upper and lower surfaces of the coating are equally strong, they can cancel each other completely.
+
+At normal incidence this happens when the refractive index of the coating is the square root of the refractive index of the lens material, as stated in the chapter: then $1.00 : n_\text{c} = n_\text{c} : n_\text{plastic}$.
 **Formula:** $n_\text{c} = \sqrt{n_\text{plastic}}$
 **Conversions:** Not needed: the refractive indices have no unit.
 **Substitution:** $n_\text{c} = \sqrt{1.60} = 1.2649$
@@ -50,13 +52,21 @@
 
 ## fy7-14-L1-06
 **Find:** at which surface of the soap film the wave is inverted in the reflection, and why.
-**Principle:** A reflected wave is inverted, that is, gets a shift of half a wavelength, when the light is reflected from a material with a greater refractive index. At the upper surface the light arrives from air into the film ($1.00 \to 1.33$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from the film into air ($1.33 \to 1.00$), so the refractive index decreases and the wave is not inverted. Inversion does not depend on whether the light arrives at normal incidence.
-**Model answer:** The wave is inverted only at the upper surface of the film, because the light is reflected there from a material with a greater refractive index. At the lower surface the light is reflected from a material with a smaller refractive index, so its reflection keeps its phase. The fact that there is the same material on both sides of the film does not make the surfaces alike: what matters is whether the refractive index increases or decreases in the direction of travel. That is why there is one shift of half a wavelength in the reflections, and for a soap film the condition for reinforcement is $2nd = (k + \tfrac{1}{2})\lambda$.
+**Principle:** A reflected wave is inverted, that is, gets a shift of half a wavelength, when the light is reflected from a material with a greater refractive index. At the upper surface the light arrives from air into the film ($1.00 \to 1.33$), so the refractive index increases and the wave is inverted.
+
+At the lower surface the light arrives from the film into air ($1.33 \to 1.00$), so the refractive index decreases and the wave is not inverted. Inversion does not depend on whether the light arrives at normal incidence.
+**Model answer:** The wave is inverted only at the upper surface of the film, because the light is reflected there from a material with a greater refractive index. At the lower surface the light is reflected from a material with a smaller refractive index, so its reflection keeps its phase.
+
+The fact that there is the same material on both sides of the film does not make the surfaces alike: what matters is whether the refractive index increases or decreases in the direction of travel.
+
+That is why there is one shift of half a wavelength in the reflections, and for a soap film the condition for reinforcement is $2nd = (k + \tfrac{1}{2})\lambda$.
 
 ## fy7-14-L1-07
 **Given:** refractive index of the oil $n_\text{oil} = 1.47$, refractive index of the water $n_\text{w} = 1.33$, refractive index of air $1.00$, wavelength $\lambda = 570\,\text{nm}$, normal incidence
 **Find:** the thickness $d$ of the thinnest oil film that reflects most strongly, in nanometres
-**Principle:** At the upper surface the light arrives from air into oil ($1.00 \to 1.47$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from oil into water ($1.47 \to 1.33$), so the refractive index decreases and the wave is not inverted. There is one inversion, so the waves reinforce each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest film is obtained with $k = 0$.
+**Principle:** At the upper surface the light arrives from air into oil ($1.00 \to 1.47$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from oil into water ($1.47 \to 1.33$), so the refractive index decreases and the wave is not inverted.
+
+There is one inversion, so the waves reinforce each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest film is obtained with $k = 0$.
 **Formula:** $2n_\text{oil}d = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n_\text{oil}}$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1.47} = 96.94\,\text{nm}$
@@ -75,8 +85,12 @@
 
 ## fy7-14-L1-09
 **Find:** the expression for the thickness $d$ of the film at the first dark ring outside the black spot.
-**Principle:** The path difference of the waves reflected from the two surfaces of the film is $2nd$, because the wave reflected from the lower surface travels through the film back and forth, and the wavelength in the film is $\lambda : n$. The reflection at the upper surface, from air to the film, inverts the wave; the reflection at the lower surface, from the film to air, does not. When there is one shift, the condition for destructive interference is $2nd = k\lambda$, where $k = 0, 1, 2, \ldots$
-**Model answer:** The black spot is so thin that the path difference is almost zero. It corresponds to the value $k = 0$ of the destructive condition: the waves cancel each other because of the shift at the upper surface. When the film thickens, a bright ring comes first, where $2nd = \tfrac{1}{2}\lambda$, that is $d = \lambda : (4n)$. After that comes the first dark ring, where $k = 1$:
+**Principle:** The path difference of the waves reflected from the two surfaces of the film is $2nd$, because the wave reflected from the lower surface travels through the film back and forth, and the wavelength in the film is $\lambda : n$.
+
+The reflection at the upper surface, from air to the film, inverts the wave; the reflection at the lower surface, from the film to air, does not. When there is one shift, the condition for destructive interference is $2nd = k\lambda$, where $k = 0, 1, 2, \ldots$
+**Model answer:** The black spot is so thin that the path difference is almost zero. It corresponds to the value $k = 0$ of the destructive condition: the waves cancel each other because of the shift at the upper surface.
+
+When the film thickens, a bright ring comes first, where $2nd = \tfrac{1}{2}\lambda$, that is $d = \lambda : (4n)$. After that comes the first dark ring, where $k = 1$:
 
 $$\begin{aligned}
 &2nd = 1 \cdot \lambda \\
@@ -97,7 +111,9 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 1$: $\lambda = \dfrac{2 \cdot 1.33 \cdot 240\,\text{nm}}{1} = 638.4\,\text{nm}$; for $k = 2$ we get $319.2\,\text{nm}$, which is ultraviolet.
 **Answer:** $638\,\text{nm}$, three significant figures like the refractive index $1.33$ and the thickness $240\,\text{nm}$.
-**Reasonableness:** The missing light is red, so the film looks blue-green at this point. The result is close to, and greater than, the $532\,\text{nm}$ missing for the $200\,\text{nm}$ film of the chapter, as it should be for a thicker film: the missing wavelength grows in the same ratio as the thickness. The thickness is $1.2$ times as great, and $1.2 \cdot 532\,\text{nm}$ is $638.4\,\text{nm}$.
+**Reasonableness:** The missing light is red, so the film looks blue-green at this point. The result is close to, and greater than, the $532\,\text{nm}$ missing for the $200\,\text{nm}$ film of the chapter, as it should be for a thicker film: the missing wavelength grows in the same ratio as the thickness.
+
+The thickness is $1.2$ times as great, and $1.2 \cdot 532\,\text{nm}$ is $638.4\,\text{nm}$.
 
 ## fy7-14-L2-02
 **Given:** refractive index of the coating $n = 1.38$, thickness $d = 110\,\text{nm}$, refractive index of the glass $1.52$, visible light $400$–$700\,\text{nm}$
@@ -122,7 +138,9 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 ## fy7-14-L2-04
 **Given:** refractive index of the layer $n = 2.30$, of the glass $1.52$, wavelength $\lambda = 550\,\text{nm}$, light from air at normal incidence
 **Find:** the thickness $d$ of the thinnest strongly reflecting layer, in nanometres
-**Principle:** The reflection from the upper surface, from air into the layer ($1.00 \to 2.30$), inverts the wave. At the lower surface the light is reflected from the layer into the glass ($2.30 \to 1.52$), that is, at a material of lower refractive index, so the wave is not inverted. Because of the single inversion, the conditions are the same as in a soap film: the waves strengthen each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest layer is given by $k = 0$.
+**Principle:** The reflection from the upper surface, from air into the layer ($1.00 \to 2.30$), inverts the wave. At the lower surface the light is reflected from the layer into the glass ($2.30 \to 1.52$), that is, at a material of lower refractive index, so the wave is not inverted.
+
+Because of the single inversion, the conditions are the same as in a soap film: the waves strengthen each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest layer is given by $k = 0$.
 **Formula:** $2nd = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n}$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{550\,\text{nm}}{4 \cdot 2.30} = 59.783\,\text{nm}$
@@ -132,7 +150,9 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 ## fy7-14-L2-05
 **Given:** the data points of the table $(d;\ \lambda)$: $(90\,\text{nm};\ 483\,\text{nm})$, $(100\,\text{nm};\ 534\,\text{nm})$, $(110\,\text{nm};\ 584\,\text{nm})$, $(120\,\text{nm};\ 640\,\text{nm})$ and $(130\,\text{nm};\ 693\,\text{nm})$; soap film in air, normal incidence
 **Find:** the refractive index $n$ of the film
-**Principle:** A soap film has one inverting reflection, so the wavelength reflected most strongly is the one for which $2nd = (k + \tfrac{1}{2})\lambda$, that is, $\lambda = \dfrac{2n}{k + \frac{1}{2}} \cdot d$. The wavelength is directly proportional to the thickness, so the line of the graph passes approximately through the origin and its slope is $\dfrac{2n}{k + \frac{1}{2}}$. The order is deduced from the slope: with $k = 0$ we get $n = \tfrac{1}{4} \cdot$ slope and with $k = 1$ we get $n = 0.75 \cdot$ slope. The refractive index must suit soapy water, about $1.3$.
+**Principle:** A soap film has one inverting reflection, so the wavelength reflected most strongly is the one for which $2nd = (k + \tfrac{1}{2})\lambda$, that is, $\lambda = \dfrac{2n}{k + \frac{1}{2}} \cdot d$. The wavelength is directly proportional to the thickness, so the line of the graph passes approximately through the origin and its slope is $\dfrac{2n}{k + \frac{1}{2}}$.
+
+The order is deduced from the slope: with $k = 0$ we get $n = \tfrac{1}{4} \cdot$ slope and with $k = 1$ we get $n = 0.75 \cdot$ slope. The refractive index must suit soapy water, about $1.3$.
 **Reading the graph:** The points lie on a rising line with points on both sides of it, and the line passes close to the origin. The fitted line passes approximately through the points $(90\,\text{nm};\ 482\,\text{nm})$ and $(130\,\text{nm};\ 692\,\text{nm})$. They are read from the line and chosen far apart.
 **Formula:** slope $a = \dfrac{\Delta\lambda}{\Delta d}$ and $a = \dfrac{2n}{k + \frac{1}{2}}$, so with $k = 0$ we get $n = \dfrac{a}{4}$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres, and the slope has no unit.
@@ -143,7 +163,9 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 ## fy7-14-L2-06
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 250\,\text{nm}$, air on both sides, visible light $400$–$700\,\text{nm}$, normal incidence; the path difference calculated by the student $2nd = 665\,\text{nm}$
 **Find:** the error in the student's reasoning and the visible wavelength $\lambda$ that is reflected most strongly, in nanometres
-**Principle:** The student calculated the path difference correctly but forgot the shift of half a wavelength in the reflection. The reflection at the upper surface from air into the film inverts the wave, and the reflection at the lower surface from the film into air does not. When the path difference is a whole wavelength, the other wave is in opposite phase because of the inversion, so the waves weaken each other: $2nd = k\lambda$ is the condition for weakening. The waves of red light, $665\,\text{nm}$, weaken each other, and the film does not look red. The wavelength reflected most strongly is the one for which $2nd = (k + \tfrac{1}{2})\lambda$.
+**Principle:** The student calculated the path difference correctly but forgot the shift of half a wavelength in the reflection. The reflection at the upper surface from air into the film inverts the wave, and the reflection at the lower surface from the film into air does not.
+
+When the path difference is a whole wavelength, the other wave is in opposite phase because of the inversion, so the waves weaken each other: $2nd = k\lambda$ is the condition for weakening. The waves of red light, $665\,\text{nm}$, weaken each other, and the film does not look red. The wavelength reflected most strongly is the one for which $2nd = (k + \tfrac{1}{2})\lambda$.
 **Formula:** $2nd = (k + \tfrac{1}{2})\lambda$, so $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 1$: $\lambda = \dfrac{665\,\text{nm}}{1.5} = 443.3\,\text{nm}$. With $k = 0$ we get $1330\,\text{nm}$ (infrared) and with $k = 2$ we get $266\,\text{nm}$ (ultraviolet), so they are not visible light.
@@ -158,8 +180,14 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 **Formula:** $d = \dfrac{\lambda}{4n}$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{540\,\text{nm}}{4 \cdot 1.38} = 97.83\,\text{nm}$
-**Answer:** $97.8\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $540\,\text{nm}$. The coating is designed for the green wavelength $540\,\text{nm}$. The purple colour arises because the reflection is greatest at both ends of the graph: violet ($420\,\text{nm}$) is reflected $1.84\,\%$ and red ($700\,\text{nm}$) $1.64\,\%$, while green is reflected only $1.26\,\%$, that is, violet about $1.5$ times and red about $1.3$ times as much as green. A mixture of red and violet looks purple, whereas green passes through the glass.
-**Reasonableness:** Check: $$\begin{aligned} &4 \cdot 1.38 \cdot 97.83\,\text{nm} \\ &= 540\,\text{nm} \end{aligned}$$. The coating is a little thinner than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, because the wavelength is a little shorter. The coating does not cancel all wavelengths equally well, as stated in the chapter: the reflection at the edges is about $1.3$–$1.5$ times that in the middle, and the smallest reflection $1.26\,\%$ is close to the $1.3\,\%$ mentioned in the chapter.
+**Answer:** $97.8\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $540\,\text{nm}$. The coating is designed for the green wavelength $540\,\text{nm}$.
+
+The purple colour arises because the reflection is greatest at both ends of the graph: violet ($420\,\text{nm}$) is reflected $1.84\,\%$ and red ($700\,\text{nm}$) $1.64\,\%$, while green is reflected only $1.26\,\%$, that is, violet about $1.5$ times and red about $1.3$ times as much as green.
+
+A mixture of red and violet looks purple, whereas green passes through the glass.
+**Reasonableness:** Check: $$\begin{aligned} &4 \cdot 1.38 \cdot 97.83\,\text{nm} \\ &= 540\,\text{nm} \end{aligned}$$. The coating is a little thinner than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, because the wavelength is a little shorter.
+
+The coating does not cancel all wavelengths equally well, as stated in the chapter: the reflection at the edges is about $1.3$–$1.5$ times that in the middle, and the smallest reflection $1.26\,\%$ is close to the $1.3\,\%$ mentioned in the chapter.
 
 ## fy7-14-L2-08
 **Given:** refractive index of the coating $1.38$, refractive index of the glass $1.52$, the reflected shares $R$ read from the figure at wavelengths $400$–$700\,\text{nm}$
@@ -170,12 +198,16 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 **Conversions:** Not needed: both shares are read in percent, and the ratio has no unit.
 **Substitution:** $\text{removed share} = 1 - \dfrac{R_\text{coated}}{R_0} = 1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
 **Answer:** about $70\,\%$, two significant figures like the values read from the graph. The uncertainty of reading the graph affects the third figure.
-**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely even at the wavelength where it works best. This is expected: the refractive index of $\text{MgF}_2$, $1.38$, is larger than $\sqrt{1.52} \approx 1.23$, so the waves reflected from the two surfaces of the coating are not equally strong and do not cancel each other completely.
+**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely even at the wavelength where it works best.
+
+This is expected: the refractive index of $\text{MgF}_2$, $1.38$, is larger than $\sqrt{1.52} \approx 1.23$, so the waves reflected from the two surfaces of the coating are not equally strong and do not cancel each other completely.
 
 ## fy7-14-L3-01
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\lambda = 589\,\text{nm}$, normal incidence; the film thickens from top to bottom, and the topmost part is black
 **Find:** the thickness $d$ of the film at the second dark band, in nanometres
-**Principle:** The reflection from the upper surface inverts the wave and that from the lower surface does not, so the waves weaken each other when $2nd = k\lambda$. The black top is the value $k = 0$, where the film is much thinner than the wavelength. The film thickens downwards, so the next dark bands are in order $k = 1$ and $k = 2$; at the second dark band $k = 2$. The bright bands lie between the dark ones.
+**Principle:** The reflection from the upper surface inverts the wave and that from the lower surface does not, so the waves weaken each other when $2nd = k\lambda$. The black top is the value $k = 0$, where the film is much thinner than the wavelength.
+
+The film thickens downwards, so the next dark bands are in order $k = 1$ and $k = 2$; at the second dark band $k = 2$. The bright bands lie between the dark ones.
 **Formula:** $2nd = 2\lambda$, so $d = \dfrac{\lambda}{n}$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{589\,\text{nm}}{1.33} = 442.86\,\text{nm}$
@@ -205,18 +237,52 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 ## fy7-14-L3-04
 **Given:** refractive index of air $1.00$, of oil $n = 1.47$, of water $1.33$, thickness of the film $d = 450\,\text{nm}$, white light at normal incidence, visible light $400$–$700\,\text{nm}$
 **Find:** a) the visible wavelengths reflected most strongly and the colour of the point; b) the thickness at which the wavelength of part a) is reflected most weakly for the first time as the film thins; c) the reason for the dark and almost colourless appearance of the film when $d \ll \lambda$
-**Principle:** a) At the upper surface the light arrives from air into oil ($1.00 \to 1.47$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from oil into water ($1.47 \to 1.33$), so the refractive index decreases and the wave is not inverted. There is one inversion, so the wavelengths reflected most strongly satisfy the condition $2nd = (k + \tfrac{1}{2})\lambda$ and those reflected most weakly satisfy the condition $2nd = k\lambda$. b) As the film thins, the path difference $2nd$ decreases. A wavelength is reflected most weakly (destructive interference) when the path difference is a whole number of wavelengths. The path difference is at first $2.5$ wavelengths, so the first weakening during the thinning is at the point where the path difference is $2$ wavelengths. c) In a very thin film the path difference is almost zero, but one reflection has been inverted. The air–oil interface reflects more strongly than the oil–water interface, so the waves do not cancel each other completely.
+**Principle:** a) At the upper surface the light arrives from air into oil ($1.00 \to 1.47$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from oil into water ($1.47 \to 1.33$), so the refractive index decreases and the wave is not inverted.
+
+There is one inversion, so the wavelengths reflected most strongly satisfy the condition $2nd = (k + \tfrac{1}{2})\lambda$ and those reflected most weakly satisfy the condition $2nd = k\lambda$.
+
+b) As the film thins, the path difference $2nd$ decreases. A wavelength is reflected most weakly (destructive interference) when the path difference is a whole number of wavelengths.
+
+The path difference is at first $2.5$ wavelengths, so the first weakening during the thinning is at the point where the path difference is $2$ wavelengths.
+
+c) In a very thin film the path difference is almost zero, but one reflection has been inverted.
+
+The air–oil interface reflects more strongly than the oil–water interface, so the waves do not cancel each other completely.
 **Formula:** $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$ (reflected most strongly) and $d = \dfrac{k\lambda}{2n}$ (destructive interference)
 **Conversions:** Not needed: the thickness and the wavelengths are both in nanometres.
-**Substitution:** a) The path difference is $2nd = 2 \cdot 1.47 \cdot 450\,\text{nm} = 1323\,\text{nm}$. With $k = 0$ we get $2646\,\text{nm}$ and with $k = 1$ we get $882\,\text{nm}$, both infrared. With $k = 2$ we get $\lambda = \dfrac{1323\,\text{nm}}{2.5} = 529.2\,\text{nm}$, and with $k = 3$ we get $378\,\text{nm}$, which is ultraviolet. In the visible range only $529\,\text{nm}$, green, is therefore reflected strongly. The weakened wavelengths are $\lambda = \dfrac{1323\,\text{nm}}{k}$, so with $k = 2$ red $661.5\,\text{nm}$ is missing and with $k = 3$ violet-blue $441\,\text{nm}$ is missing. The point looks green. b) The path difference of the green wavelength $529.2\,\text{nm}$ was $1323\,\text{nm} = 2.5\lambda$. As the film thins, the path difference decreases, and the first whole number is $2$. Then $2nd' = 2\lambda$, that is, $d' = \dfrac{2 \cdot 529.2\,\text{nm}}{2 \cdot 1.47} = \dfrac{1058.4\,\text{nm}}{2.94} = 360.0\,\text{nm}$.
-**Answer:** $360\,\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength. c) When the thickness of the film is much smaller than the wavelength, the path difference $2nd$ is almost zero for all wavelengths of visible light. The reflection from the upper surface has been inverted and that from the lower surface has not, so the reflected waves are in opposite phase at all wavelengths and weaken each other. All wavelengths of visible light are reflected equally, so the film looks colourless, and the reflection is small: about $2.0\,\%$, as much as from water alone, whereas in a thicker place the colour reflected most strongly is reflected about $5.8\,\%$. The film is thus darker than the thicker, coloured place, where green is reflected almost three times as strongly. Complete cancellation does not occur, because the reflection from the air–oil interface (amplitude about $0.19$) is much stronger than that from the oil–water interface (about $0.05$).
+**Substitution:** a) The path difference is $2nd = 2 \cdot 1.47 \cdot 450\,\text{nm} = 1323\,\text{nm}$. With $k = 0$ we get $2646\,\text{nm}$ and with $k = 1$ we get $882\,\text{nm}$, both infrared. With $k = 2$ we get $\lambda = \dfrac{1323\,\text{nm}}{2.5} = 529.2\,\text{nm}$, and with $k = 3$ we get $378\,\text{nm}$, which is ultraviolet. In the visible range only $529\,\text{nm}$, green, is therefore reflected strongly.
+
+The weakened wavelengths are $\lambda = \dfrac{1323\,\text{nm}}{k}$, so with $k = 2$ red $661.5\,\text{nm}$ is missing and with $k = 3$ violet-blue $441\,\text{nm}$ is missing. The point looks green.
+
+b) The path difference of the green wavelength $529.2\,\text{nm}$ was $1323\,\text{nm} = 2.5\lambda$. As the film thins, the path difference decreases, and the first whole number is $2$. Then $2nd' = 2\lambda$, that is, $d' = \dfrac{2 \cdot 529.2\,\text{nm}}{2 \cdot 1.47} = \dfrac{1058.4\,\text{nm}}{2.94} = 360.0\,\text{nm}$.
+**Answer:** $360\,\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength.
+
+c) When the thickness of the film is much smaller than the wavelength, the path difference $2nd$ is almost zero for all wavelengths of visible light.
+
+The reflection from the upper surface has been inverted and that from the lower surface has not, so the reflected waves are in opposite phase at all wavelengths and weaken each other.
+
+All wavelengths of visible light are reflected equally, so the film looks colourless, and the reflection is small: about $2.0\,\%$, as much as from water alone, whereas in a thicker place the colour reflected most strongly is reflected about $5.8\,\%$.
+
+The film is thus darker than the thicker, coloured place, where green is reflected almost three times as strongly. Complete cancellation does not occur, because the reflection from the air–oil interface (amplitude about $0.19$) is much stronger than that from the oil–water interface (about $0.05$).
 **Reasonableness:** Check: $2 \cdot 1.47 \cdot 360\,\text{nm} = 1058.4\,\text{nm} = 2 \cdot 529.2\,\text{nm}$. The thickness has decreased by $450\,\text{nm} - 360\,\text{nm} = 90\,\text{nm}$, and this is a quarter of the wavelength in oil, $\dfrac{529.2\,\text{nm}}{4 \cdot 1.47} = 90.0\,\text{nm}$, because the path difference decreased by half a wavelength ($2.5\lambda \to 2\lambda$). As the film thins further, the next dark point would be at $k = 1$, at the thickness $180\,\text{nm}$.
 
 ## fy7-14-L3-05
 **Given:** wavelength $\lambda = 589\,\text{nm}$, refractive index of air $1.00$, of glass $1.52$, distance of the foil from the line of contact $L = 80\,\text{mm}$, the points of the table $(k;\ x)$: $(1;\ 1.9\,\text{mm})$, $(2;\ 3.9\,\text{mm})$, $(3;\ 5.7\,\text{mm})$, $(4;\ 7.7\,\text{mm})$, $(5;\ 9.5\,\text{mm})$, $(6;\ 11.5\,\text{mm})$, $(7;\ 13.3\,\text{mm})$ and $(8;\ 15.2\,\text{mm})$
 **Find:** a) which surface inverts the wave and why the line of contact is dark; b) the fringe spacing $\Delta x$ and the increase of the thickness of the air layer from one fringe to the next; c) the thickness $D$ of the foil in micrometres
-**Principle:** a) At the upper surface of the air layer the light arrives from glass into air ($1.52 \to 1.00$), so the refractive index decreases and the wave is not inverted. At the lower surface the light arrives from air into glass ($1.00 \to 1.52$), so the refractive index increases and the wave is inverted. There is one inversion, so in the dark fringes $2nd = k\lambda$, where $n = 1.00$. At the line of contact $d = 0$, so the path difference is zero and the reflected waves are in opposite phase because of the inversion: the line is dark and its order is $k = 0$. b) The difference between the path differences of successive dark fringes is one wavelength, so the thickness of the air layer increases by $\Delta d = \dfrac{\lambda}{2}$ from one fringe to the next. The fringes are evenly spaced, so the thickness of the wedge increases steadily with the distance. c) Over the distance $L$ there are $\dfrac{L}{\Delta x}$ fringes in all, and for each the thickness increases by $\dfrac{\lambda}{2}$.
-**Reading the graph:** The points lie on a rising line with points on both sides of it, and the line passes almost through the origin. The fitted line passes approximately through the points $(0;\ 0.05\,\text{mm})$ and $(8;\ 15.2\,\text{mm})$. The point $(0;\ 0.05\,\text{mm})$ is where the fitted line crosses the vertical axis and is not a measurement. The points are read from the line and chosen far apart. The slope is the fringe spacing $\Delta x$.
+**Principle:** a) At the upper surface of the air layer the light arrives from glass into air ($1.52 \to 1.00$), so the refractive index decreases and the wave is not inverted. At the lower surface the light arrives from air into glass ($1.00 \to 1.52$), so the refractive index increases and the wave is inverted.
+
+There is one inversion, so in the dark fringes $2nd = k\lambda$, where $n = 1.00$.
+
+At the line of contact $d = 0$, so the path difference is zero and the reflected waves are in opposite phase because of the inversion: the line is dark and its order is $k = 0$.
+
+b) The difference between the path differences of successive dark fringes is one wavelength, so the thickness of the air layer increases by $\Delta d = \dfrac{\lambda}{2}$ from one fringe to the next.
+
+The fringes are evenly spaced, so the thickness of the wedge increases steadily with the distance.
+
+c) Over the distance $L$ there are $\dfrac{L}{\Delta x}$ fringes in all, and for each the thickness increases by $\dfrac{\lambda}{2}$.
+**Reading the graph:** The points lie on a rising line with points on both sides of it, and the line passes almost through the origin. The fitted line passes approximately through the points $(0;\ 0.05\,\text{mm})$ and $(8;\ 15.2\,\text{mm})$.
+
+The point $(0;\ 0.05\,\text{mm})$ is where the fitted line crosses the vertical axis and is not a measurement. The points are read from the line and chosen far apart. The slope is the fringe spacing $\Delta x$.
 **Formula:** $\Delta x = \dfrac{x_2 - x_1}{k_2 - k_1}$, $\Delta d = \dfrac{\lambda}{2}$ and $D = \dfrac{L}{\Delta x} \cdot \dfrac{\lambda}{2}$
 **Conversions:** $\dfrac{\lambda}{2} = \dfrac{589\,\text{nm}}{2} = 294.5\,\text{nm} = 0.2945\,\mu\text{m}$, because $1\,\mu\text{m} = 1000\,\text{nm}$. The distances $L$ and $\Delta x$ are both in millimetres, so their ratio has no unit.
 **Substitution:** $\Delta x = \dfrac{15.2\,\text{mm} - 0.05\,\text{mm}}{8 - 0} = 1.894\,\text{mm}$. The thickness increases by $294.5\,\text{nm}$ from one fringe to the next. Over the distance $L$ there are $\dfrac{80\,\text{mm}}{1.894\,\text{mm}} = 42.24$ fringes, so $D = 42.24 \cdot 0.2945\,\mu\text{m} = 12.44\,\mu\text{m} \approx 12\,\mu\text{m}$.
@@ -226,7 +292,9 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 ## fy7-14-L3-06
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, normal incidence, graph $R(\lambda)$ for $400$–$700\,\text{nm}$; the thickness is not given
 **Find:** the order $k$ of the destructive condition and the thickness $d$ of the film in nanometres
-**Principle:** One reflection inverts the wave, so the reflection is at a minimum when $2nd = k\lambda_\text{min}$ and at a maximum when $2nd = (k' + \tfrac{1}{2})\lambda_\text{max}$. It is the same film, so the path difference $2nd$ is the same in both. Of two neighbouring extremes, the shorter wavelength fits into the path difference more times, so for the longer-wavelength maximum next to the minimum $k' = k - 1$. First $k$ is solved, then $d$.
+**Principle:** One reflection inverts the wave, so the reflection is at a minimum when $2nd = k\lambda_\text{min}$ and at a maximum when $2nd = (k' + \tfrac{1}{2})\lambda_\text{max}$. It is the same film, so the path difference $2nd$ is the same in both.
+
+Of two neighbouring extremes, the shorter wavelength fits into the path difference more times, so for the longer-wavelength maximum next to the minimum $k' = k - 1$. First $k$ is solved, then $d$.
 **Reading the graph:** In the visible range the curve has one minimum and one maximum to the right of it. The minimum is almost zero at $\lambda_\text{min} \approx 466\,\text{nm}$. The maximum is highest, about $7.7\,\%$, at $\lambda_\text{max} \approx 621\,\text{nm}$.
 **Formula:** $k\lambda_\text{min} = (k - \tfrac{1}{2})\lambda_\text{max}$, so $k = \dfrac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})}$; thickness $d = \dfrac{k\lambda_\text{min}}{2n}$
 **Conversions:** Not needed: the wavelengths and the thickness are both in nanometres.

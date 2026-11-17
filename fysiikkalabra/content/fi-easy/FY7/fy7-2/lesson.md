@@ -429,7 +429,9 @@ Massaspektrometrin nopeusvalitsimessa sähkökentän voimakkuus on $6{,}00 \cdot
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tunnetaan nämä: valitsimessa $E = 6{,}00 \cdot 10^{4}\,\text{V/m}$ ja $B_1 = 0{,}200\,\text{T}$, taivutuskentässä $B_2 = 0{,}500\,\text{T}$, osumakohdan etäisyys raosta $d = 24{,}9\,\text{cm}$ ja ionin varaus $q = 1{,}602 \cdot 10^{-19}\,\text{C}$. Varaus on positiivinen, joten $|q| = q$. Kysytään ionin massaa $m$.
+**Tunnetut ja kysytty.** Tunnetaan nämä: valitsimessa $E = 6{,}00 \cdot 10^{4}\,\text{V/m}$ ja $B_1 = 0{,}200\,\text{T}$, taivutuskentässä $B_2 = 0{,}500\,\text{T}$, osumakohdan etäisyys raosta $d = 24{,}9\,\text{cm}$ ja ionin varaus $q = 1{,}602 \cdot 10^{-19}\,\text{C}$. Varaus on positiivinen, joten $|q| = q$.
+
+Kysytään ionin massaa $m$.
 
 <!-- vaihe -->
 

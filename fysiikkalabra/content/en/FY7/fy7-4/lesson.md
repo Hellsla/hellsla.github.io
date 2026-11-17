@@ -264,11 +264,15 @@ A loudspeaker voice coil has $60$ turns of thin wire, and the radius of the coil
 
 <!-- vaihe -->
 
-**Given and find.** Number of turns $N = 60$, radius of the coil $r = 1.3\,\text{cm}$, magnetic flux density $B = 0.95\,\text{T}$, current $I = 1.5\,\text{A}$ and angle between the wire and the field $\alpha = 90^\circ$. We are asked for the force $F$ on the coil.
+**Given and find.** Number of turns $N = 60$, radius of the coil $r = 1.3\,\text{cm}$, magnetic flux density $B = 0.95\,\text{T}$, current $I = 1.5\,\text{A}$ and angle between the wire and the field $\alpha = 90^\circ$.
+
+We are asked for the force $F$ on the coil.
 
 <!-- vaihe -->
 
-**Principle.** The field is radial, so every part of the wire of the coil is perpendicular to the field, and the force on every part points in the same direction, along the axis of the coil. The forces therefore add up, and in the formula $F = I l B \sin\alpha$ the length $l$ is the whole length of the wire of the coil: $N$ turns, each with the length of the circumference of a circle, $2\pi r$.
+**Principle.** The field is radial, so every part of the wire of the coil is perpendicular to the field, and the force on every part points in the same direction, along the axis of the coil.
+
+The forces therefore add up, and in the formula $F = I l B \sin\alpha$ the length $l$ is the whole length of the wire of the coil: $N$ turns, each with the length of the circumference of a circle, $2\pi r$.
 
 <!-- vaihe -->
 

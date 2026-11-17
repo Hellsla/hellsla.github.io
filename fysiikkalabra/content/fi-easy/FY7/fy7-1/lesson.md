@@ -429,7 +429,9 @@ Kompassi on vaakasuoralla pöydällä Etelä-Suomessa. Siellä Maan magneettiken
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Maan kentän vaakakomponentti on $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen. Neulan kääntymiskulma on $\theta = 52^\circ$ itään. Kysytään magneetin magneettivuon tiheyttä $B_\text{m}$ kompassin kohdalla.
+**Tunnetut ja kysytty.** Maan kentän vaakakomponentti on $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen. Neulan kääntymiskulma on $\theta = 52^\circ$ itään.
+
+Kysytään magneetin magneettivuon tiheyttä $B_\text{m}$ kompassin kohdalla.
 
 <!-- vaihe -->
 

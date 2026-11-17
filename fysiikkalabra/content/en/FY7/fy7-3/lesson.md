@@ -370,7 +370,9 @@ A school coil has $600$ turns and its length is $15.0\,\text{cm}$. A current of 
 
 <!-- vaihe -->
 
-**Given and asked.** Number of turns $N = 600$, length of the coil $l = 15.0\,\text{cm}$, current $I = 2.50\,\text{A}$ and the constant $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. We are asked for the magnetic flux density $B$ at the centre of the coil and its ratio to the Earth's field $B_\text{Earth} = 50\,\mu\text{T}$.
+**Given and asked.** Number of turns $N = 600$, length of the coil $l = 15.0\,\text{cm}$, current $I = 2.50\,\text{A}$ and the constant $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$.
+
+We are asked for the magnetic flux density $B$ at the centre of the coil and its ratio to the Earth's field $B_\text{Earth} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 
@@ -410,7 +412,9 @@ A school coil has $600$ turns and its length is $15.0\,\text{cm}$. A current of 
 
 <!-- vaihe -->
 
-**Reasonableness.** The turn density is $600 : 0.150\,\text{m} = 4000$ turns per metre. One ampere and a thousand turns per metre give about $1.3\,\text{mT}$, so $2.5\,\text{A}$ and four times the density give about $1.3\,\text{mT} \cdot 2.5 \cdot 4 = 13\,\text{mT}$. The result is about $250$ times the Earth's field, so the field of the coil is easy to measure, and it is clearly smaller than the roughly $1.5\,\text{T}$ of an MRI scanner, which needs a superconducting coil and a current of hundreds of amperes.
+**Reasonableness.** The turn density is $600 : 0.150\,\text{m} = 4000$ turns per metre. One ampere and a thousand turns per metre give about $1.3\,\text{mT}$, so $2.5\,\text{A}$ and four times the density give about $1.3\,\text{mT} \cdot 2.5 \cdot 4 = 13\,\text{mT}$.
+
+The result is about $250$ times the Earth's field, so the field of the coil is easy to measure, and it is clearly smaller than the roughly $1.5\,\text{T}$ of an MRI scanner, which needs a superconducting coil and a current of hundreds of amperes.
 
 ## Common misconception
 Many people think that the magnetic field of a current-carrying wire points away from the wire, like the electric field of a charged wire. The field lines, however, go round the wire as closed circles, and they have neither a starting point nor an end point. A compass next to the wire therefore turns across the wire, not towards it.
