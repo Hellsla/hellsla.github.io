@@ -2,7 +2,7 @@
 
 Opettajan 15.–17.11.2026 hyväksymät kuvat, jotka Codex piirsi uudelleen Ruukkilabran alkuperäisistä kuvista.
 Tämä kansio on vain kuvien säilytystä ja lataamista varten. **Haaraa ei yhdistetä `main`iin**: zipit ovat yhteensä
-noin 480 Mt ja jäisivät repositorion historiaan pysyvästi.
+noin 470 Mt ja jäisivät repositorion historiaan pysyvästi.
 
 | Paketti | Kuvia | Niistä kaavioita merkintöineen |
 |---|---|---|
