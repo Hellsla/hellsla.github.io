@@ -61,7 +61,8 @@ a["tarkistus2-suhde"] = 0.045 / lam_t                           # 1,5
 a["tarkistus2-virhe-f"] = 0.045 / (6.0 / 0.18)                  # mistake λ = f/v = 33,3 m: b/λ = 0,00135
 a["tarkistus2-theta"] = theta_half(4.5, 3.0)                    # Järkevyys: the model spreads b/λ = 1,5 over θ ≈ 24°
 a["tarkistus2-virhe-cm"] = 4.5 / (0.18 / 6.0)                   # mistake: b in cm, λ in m: 150
-# kertaus: f doubled at the same v halves λ = v/f
-a["kertaus-lambda"] = 0.20 / 10                                 # 0,20 m/s at 10 Hz: 0,020 m = 2,0 cm
-a["kertaus-lambda-2"] = 0.20 / 20                               # at 20 Hz: 1,0 cm
+# kertaus: harbour waves at 5,0 m/s, crests at 0,25 Hz: λ = v/f
+a["kertaus-lambda"] = 5.0 / 0.25                                # 20 m
+a["kertaus-vf"] = 5.0 * 0.25                                    # mistake v·f: 1,25 -> "noin 1,3"
+a["kertaus-fv"] = 0.25 / 5.0                                    # mistake f/v: 0,050
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
