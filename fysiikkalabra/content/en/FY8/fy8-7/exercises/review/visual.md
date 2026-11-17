@@ -1,17 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: e73b4e5e83dd72e3
+VERDICT: FAIL
+CONTENT-HASH: 6d49d00ad198cb8a
 
 ## Blocking
-(none)
+- [Major] fy8-7-L2-08 solution, "Kuvaajan lukeminen" (open-exercises-L2-1280-10/11) — the text says the point is just below "the fourth horizontal line (value 4.0)", but the grid spacing is 0.5 (the text itself says so) and the figure's integer labels are on every second line, so the 4.0 line is the eighth, not the fourth; a student counting lines as told gets the wrong value — a graph-reading model solution must be countable on the figure — say "the grid line labelled 4 (the eighth line)" or "just below the line at 4.0", dropping the ordinal.
 
 ## Polish
-- [Minor] fy8-7-L3-04 (open-exercises-L3-1280-5 and -6, task 7-20) — for science: the task now says the rest "turns into internal energy", while part c) still reads "the thermal power turning into heat in the medium" and the solution keeps "thermal power" and "unavoidable heat". Decide whether these follow the new wording.
+(none)
 
 ## Checked
-- Round 1, delta: "as heat" → "as internal energy" (L3-04 task and part d, L2-01 Principle), $0.76 \to 0.75\,\text{W}$ (L3-02 Reasonableness), L1-09 Principle ("in atomic and ion lasers … at least three energy levels"). Hash the same at start and end. Captures are in the lesson's review/shots and current.
-- Opened at full size: open-exercises-L3-1280-3 (7-18: the Reasonableness block shows "≈ 0.75 W" on its own aligned row, inside the card) and open-exercises-L3-1280-6 (7-20: part d reads "remains in the medium as internal energy", answer and reasonableness blocks intact).
-- contact-7 for the rest: L1-09 Principle (#76) and L2-01 Principle (#78) show the new sentences inside their solution cards, no change of layout.
-- Decimal points, upright units and thin spaces as before; the new sentences are natural English; nothing clipped or overflowing in the captures opened.
+- Delta (added exercises L1-10, L2-08, L3-06) in the en captures: open-exercises-1280-11/12 (L1-10 task and full solution), open-exercises-L2-1280-10/11 (L2-08 with figure rate-task), open-exercises-L3-1280-9/10 (L3-06 with figure rate-task2). Other languages' equivalents spot-checked (en L2-10, fi-easy L3-10). figures.py rate_task read to confirm the grid. Not opened: 360 px captures (layout check ok in packet).
+- Formulas render without clipping, aligned at = , units upright; both figures have axes with quantity and unit, distinct points, no answer given away; L3 point labels X and Y legible.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · English 5 · accessibility 5

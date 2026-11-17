@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e73b4e5e83dd72e3
-Mode: delta (round 1)
+CONTENT-HASH: 6d49d00ad198cb8a
+SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- content/en/FY8/fy8-7/exercises/exercises.json:337 — part c) "Calculate the thermal power turning into heat in the medium per second" reads oddly beside the new "turns into internal energy" — "Calculate the power at which the internal energy of the medium grows (the thermal power) and the part of it that …".
+- solutions.md, fy8-7-L2-08 graph reading: the line "the fourth horizontal line (value 4.0)" is the eighth line on a grid of 0.5; say "the horizontal line at 4.0" so the student does not count lines wrongly.
 
 ## Checked
-- "heat" → "internal energy" in the fibre-laser task text, its part d) solution and the 808/1064 nm Principle: task meaning, data and answer 82.2 % unchanged; part c) is still computed in the solution as the thermal power.
-- L1-09 Principle now limits the three-level claim to atomic and ion lasers and says "energy levels", matching the brief's summary.
-- Reasonableness of the green-photon task: 0.75 W follows from the shown rounded 2.0·10^18 1/s; still below 1.0 W, so the check's point is intact.
-- Solutions remain followable step by step; no step removed.
-- Levels, counts and contexts untouched by the diff; English natural.
-- Hash identical at start and end.
+- L1-10 (MAFY lookup, data): level 1 fits (one formula, one table lookup, c given, h left to the table); not a repeat of L1-07 (h given there); tolerance 2 % covers table editions; hint points to the table without giving the value.
+- L2-08 (graph): unknown power from a point read off the figure; figure gives wavelength 520 nm and 3,9e15 /s legibly, description matches and states no power; answer 1,5 mW checks (3,93e15 gives 1,50 mW), tolerance 3 % suits the reading.
+- L3-06 (graph, ratio): two points, answer needs the insight that photon count alone does not give power and that hc cancels; figure and description give the values without the answer; 3,0 (3,02) with 4 % tolerance is fair.
+- Progression and mix: graph reading was missing from the set, now one task at levels 2 and 3, lookup at level 1; no repeat of the worked example (rate from energy gap).
+- Solutions: situation, reading of the graph, formula, conversions, substitution in steps, significant figures and a sanity check; readable at 360 px (short aligned lines).
+- Language: terms and number-unit cases consistent with the set; no errors found.
