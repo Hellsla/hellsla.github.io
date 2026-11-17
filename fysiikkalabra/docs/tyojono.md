@@ -206,7 +206,13 @@ järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
 
-Varattu: claude/fy4-kappalejako (FY4)
+FY4 tehty (claude/fy4-kappalejako, #654): fy4-1…fy4-16 esimerkit ja ratkaisut kolmella kielellä; tiede ja pedagogiikka
+carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksistaan. Lintin 8c-varoituksia jää fi 16, en 34,
+fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
+järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-kaavaa, pitkät Annettu-rivit). Ulkoasun Polish-huomiot
+(vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
+ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
+esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
 
 FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
 esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
