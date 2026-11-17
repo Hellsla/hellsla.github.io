@@ -181,9 +181,7 @@ b) There is probably iron or steel near the desk, because there the field is abo
 **Formula:** $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, from which $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels.
 **Substitution:** $\theta = \tan^{-1}\dfrac{30\,\mu\text{T}}{14\,\mu\text{T}} = \tan^{-1} 2.143 = 65.0^\circ$
-**Answer:** a) The student swapped the legs of the ratio: they divided the Earth's field by the field of the magnet, although the opposite leg $B_\text{m}$ belongs in the numerator. The result $25^\circ$ is implausible, because the field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$.
-
-b) The correct angle is $65^\circ$ from north towards east, two significant figures like the fields.
+**Answer:** a) The student swapped the legs of the ratio: they divided the Earth's field by the field of the magnet, although the opposite leg $B_\text{m}$ belongs in the numerator. The result $25^\circ$ is implausible, because the field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$. b) The correct angle is $65^\circ$ from north towards east, two significant figures like the fields.
 **Reasonableness:** The field of the magnet is more than twice the Earth's field, so the angle must be more than $45^\circ$ but less than $90^\circ$, and $65^\circ$ is. A check in the other direction: $14\,\mu\text{T} \cdot \tan 65.0^\circ = 30\,\mu\text{T}$.
 
 ## fy7-1-L3-04
@@ -193,13 +191,7 @@ b) The correct angle is $65^\circ$ from north towards east, two significant figu
 **Formula:** $B_\text{h} = B\cos I$ and $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
 **Conversions:** Not needed: all fields are in microtesla.
 **Substitution:** Helsinki: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 74^\circ = 14.6\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{14.6\,\mu\text{T}} = 53.9^\circ$. Oulu: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 76^\circ = 12.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{12.8\,\mu\text{T}} = 57.3^\circ$. Utsjoki: $B_\text{h} = 52\,\mu\text{T} \cdot \cos 78^\circ = 10.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{10.8\,\mu\text{T}} = 61.6^\circ$
-**Answer:** a) The horizontal components are $15\,\mu\text{T}$ in Helsinki, $13\,\mu\text{T}$ in Oulu and $11\,\mu\text{T}$ in Utsjoki.
-
-b) In Utsjoki the needle turns $62^\circ$ from north towards east; in Helsinki the angle is $54^\circ$ and in Oulu $57^\circ$.
-
-c) The total field is about $52\text{–}53\,\mu\text{T}$ everywhere, but the further north one goes, the more steeply the field points into the ground and the smaller the part of it that is horizontal.
-
-The needle is steered only by the horizontal component, so the same magnet turns it more in the north. A compass is therefore more sensitive to disturbances in the north, because the field that steers the needle is weaker.
+**Answer:** a) The horizontal components are $15\,\mu\text{T}$ in Helsinki, $13\,\mu\text{T}$ in Oulu and $11\,\mu\text{T}$ in Utsjoki. b) In Utsjoki the needle turns $62^\circ$ from north towards east; in Helsinki the angle is $54^\circ$ and in Oulu $57^\circ$. c) The total field is about $52\text{–}53\,\mu\text{T}$ everywhere, but the further north one goes, the more steeply the field points into the ground and the smaller the part of it that is horizontal. The needle is steered only by the horizontal component, so the same magnet turns it more in the north. A compass is therefore more sensitive to disturbances in the north, because the field that steers the needle is weaker.
 **Reasonableness:** The horizontal component decreases as one goes north, so $\tan\theta = 20 : B_\text{h}$ grows. The vertical component is almost the same in every town, $53\,\mu\text{T} \cdot \sin 74^\circ \approx 51\,\mu\text{T}$ and $52\,\mu\text{T} \cdot \sin 78^\circ \approx 51\,\mu\text{T}$, so the total field does not change but its division changes.
 
 The $B_\text{h} = 10.8\,\mu\text{T}$ of Utsjoki is smaller than the $20\,\mu\text{T}$ of the magnet, so the angle must be more than $45^\circ$, as the result is.
@@ -215,13 +207,7 @@ When the magnet is turned to the north–south direction with its north pole tow
 **Substitution:** Fields: $B_\text{m} = 36.5$; $20.8$; $15.0$; $7.13$; $4.55$ and $1.97\,\mu\text{T}$ at distances $12$; $14$; $16$; $20$; $24$ and $30\,\text{cm}$. The products $B_\text{m} r^3$ are $63.0$; $57.0$; $61.5$; $57.1$; $62.9$ and $53.1$ in the unit $10^3\,\mu\text{T}\cdot\text{cm}^3$.
 
 Their sum is $354.5 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. The angles have been read to the nearest degree, so the products vary, and the mean evens out the reading error: $k = 59.1 \cdot 10^3\,\mu\text{T}\cdot\text{cm}^3$. Then $r_0 = \sqrt[3]{\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{14\,\mu\text{T}}} = \sqrt[3]{4221\,\text{cm}^3} = 16.2\,\text{cm}$
-**Answer:** a) The product $B_\text{m} r^3$ is about $5.3\ldots6.3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$ at all points, although the field decreases from $36.5\,\mu\text{T}$ to $1.97\,\mu\text{T}$, so the field is approximately inversely proportional to the cube of the distance.
-
-b) $r_0 \approx 16\,\text{cm}$ (more precisely $16.2\,\text{cm}$), two significant figures like the angles; the value is approximate, because $k$ is a mean of scattered products.
-
-c) When $r < r_0$, the field of the magnet (towards the south) is greater than the Earth's field (towards the north), so the north component is negative and the north end of the needle points south.
-
-When $r > r_0$, the Earth's field is greater and the north end of the needle points north. At the distance $r_0$ the horizontal total field is zero, so the needle does not settle in any direction.
+**Answer:** a) The product $B_\text{m} r^3$ is about $5.3\ldots6.3 \cdot 10^4\,\mu\text{T}\cdot\text{cm}^3$ at all points, although the field decreases from $36.5\,\mu\text{T}$ to $1.97\,\mu\text{T}$, so the field is approximately inversely proportional to the cube of the distance. b) $r_0 \approx 16\,\text{cm}$ (more precisely $16.2\,\text{cm}$), two significant figures like the angles; the value is approximate, because $k$ is a mean of scattered products. c) When $r < r_0$, the field of the magnet (towards the south) is greater than the Earth's field (towards the north), so the north component is negative and the north end of the needle points south. When $r > r_0$, the Earth's field is greater and the north end of the needle points north. At the distance $r_0$ the horizontal total field is zero, so the needle does not settle in any direction.
 **Reasonableness:** In the table at a distance of $16\,\text{cm}$ the field is $15.0\,\mu\text{T}$, a little greater than the Earth's field $14\,\mu\text{T}$, and at $20\,\text{cm}$ only $7.13\,\mu\text{T}$, so the zero point must be a little over $16\,\text{cm}$, as $16.2\,\text{cm}$ is. A check: $\dfrac{59\,100\,\mu\text{T}\cdot\text{cm}^3}{(16.2\,\text{cm})^3} = 13.9\,\mu\text{T}$.
 
 ## fy7-1-L1-09

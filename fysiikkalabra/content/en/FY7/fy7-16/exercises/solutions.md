@@ -180,9 +180,7 @@ The line goes through the origin because a fibre of zero length has no attenuati
 **Formula:** $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
 **Conversions:** Finally the ratio is multiplied by one hundred to give percent.
 **Substitution:** $\dfrac{P}{P_0} = 10^{-20\,\text{dB} / (10\,\text{dB})} = 10^{-2} = 0.010$, so $0.010 \cdot 100\,\% = 1.0\,\%$ arrives
-**Answer:** a) The error is that decibels were interpreted as percentages. Decibels are added and the ratios of the powers are multiplied: two $10\,\text{dB}$ parts reduce the power to a tenth twice.
-
-b) $1.0\,\%$ of the transmitted power arrives. The student’s value $80\,\%$ would correspond to an attenuation of only about $1\,\text{dB}$.
+**Answer:** a) The error is that decibels were interpreted as percentages. Decibels are added and the ratios of the powers are multiplied: two $10\,\text{dB}$ parts reduce the power to a tenth twice. b) $1.0\,\%$ of the transmitted power arrives. The student’s value $80\,\%$ would correspond to an attenuation of only about $1\,\text{dB}$.
 **Reasonableness:** The attenuation $20\,\text{dB}$ is $2 \cdot 10\,\text{dB}$, so the power is $\tfrac{1}{10} \cdot \tfrac{1}{10} = \tfrac{1}{100}$, that is $1\,\%$. Checking the student’s value: $10\,\text{dB} \cdot \lg \dfrac{1}{0.80} = 0.97\,\text{dB}$, so $80\,\%$ would correspond to an attenuation of about $1\,\text{dB}$ and not $20\,\text{dB}$.
 
 ## fy7-16-L2-08

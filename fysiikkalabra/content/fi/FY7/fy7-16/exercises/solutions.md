@@ -174,9 +174,7 @@ Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, 
 **Kaava:** $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
 **Muunnokset:** Lopuksi suhde kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\dfrac{P}{P_0} = 10^{-20\,\text{dB} / (10\,\text{dB})} = 10^{-2} = 0{,}010$, joten perille saapuu $0{,}010 \cdot 100\,\% = 1{,}0\,\%$
-**Vastaus:** a) Virhe on se, että desibelit tulkittiin prosenteiksi. Desibelit lasketaan yhteen ja tehojen suhteet kerrotaan: kaksi $10\,\text{dB}$:n osuutta pienentää tehon kymmenesosaan kahdesti.
-
-b) $1{,}0\,\%$ lähetetystä tehosta saapuu perille. Opiskelijan arvo $80\,\%$ vastaisi vaimennusta vain noin $1\,\text{dB}$.
+**Vastaus:** a) Virhe on se, että desibelit tulkittiin prosenteiksi. Desibelit lasketaan yhteen ja tehojen suhteet kerrotaan: kaksi $10\,\text{dB}$:n osuutta pienentää tehon kymmenesosaan kahdesti. b) $1{,}0\,\%$ lähetetystä tehosta saapuu perille. Opiskelijan arvo $80\,\%$ vastaisi vaimennusta vain noin $1\,\text{dB}$.
 **Järkevyys:** Vaimennus $20\,\text{dB}$ on $2 \cdot 10\,\text{dB}$, joten teho on $\tfrac{1}{10} \cdot \tfrac{1}{10} = \tfrac{1}{100}$ eli $1\,\%$. Opiskelijan arvon tarkistus: $10\,\text{dB} \cdot \lg \dfrac{1}{0{,}80} = 0{,}97\,\text{dB}$, joten $80\,\%$ vastaisi noin $1\,\text{dB}$:n vaimennusta eikä $20\,\text{dB}$:ä.
 
 ## fy7-16-L2-08

@@ -154,9 +154,7 @@ Nothing needs to be calculated with the peak value.
 **Formula:** $P = UI$, so $I = \dfrac{P}{U}$
 **Conversions:** Not needed.
 **Substitution:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0.2609\,\text{A}$
-**Answer:** a) The student took the mains voltage to be a peak value and divided it by $\sqrt{2}$, although the voltage of the socket is already an rms value. The rms voltage is therefore $230\,\text{V}$, not $163\,\text{V}$, and with a voltage that is too small the current came out too large.
-
-b) The rms value of the current is $0.26\,\text{A}$, two significant figures like the power $60\,\text{W}$.
+**Answer:** a) The student took the mains voltage to be a peak value and divided it by $\sqrt{2}$, although the voltage of the socket is already an rms value. The rms voltage is therefore $230\,\text{V}$, not $163\,\text{V}$, and with a voltage that is too small the current came out too large. b) The rms value of the current is $0.26\,\text{A}$, two significant figures like the power $60\,\text{W}$.
 **Reasonableness:** Check: $230\,\text{V} \cdot 0.26\,\text{A} \approx 60\,\text{W}$. The student’s result $0.37\,\text{A}$ would have given a power of $230\,\text{V} \cdot 0.37\,\text{A} = 85\,\text{W}$, which is not $60\,\text{W}$.
 
 ## fy7-7-L3-01
