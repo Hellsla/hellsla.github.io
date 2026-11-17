@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3672780394efe5ba
+CONTENT-HASH: 8368f1e935156427
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-16 L3 flux task, Sijoitus a)/b): the lettered line "b)" follows the previous paragraph with no extra space; a little space would separate the parts. Does not affect use.
+- none
 
 ## Checked
-- Delta (md-paragraphs, solutions.md only: paragraphs cut, words unchanged).
-- Own capture at 1280 px (fi, fy7-16): open-exercises-L3-1280-6 (13 mm interpolation task: Kaava rows, Sijoitus, Vastaus, part c) as a separate paragraph). Layout survived, formulas aligned, nothing clipped.
-- Rest not re-reviewed.
+- Delta (md-paragraphs): solutions.md of fy7-16 (fi) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 40aedcb95ee29c03
+CONTENT-HASH: beea806e1660b981
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions L1-01 — Finnish "kuinka monta kertaa suurempi" is in straight quotes; use ”…”.
-- [Minor] L1-06 / L3-02 — "alkeisalue" is used in the task without a one-line gloss; a short "(samansuuntaisten atomimagneettien alue)" would help S2 students.
-- [Minor] open-exercises L2 — the data-table caption wraps in a narrow column beside the table; let it span the table.
+- none
 
 ## Checked
-- contact-8 (exercise captures #85–#96) and open-exercises-L2-1280-10 and -12 at full size: sum-grid and incl-grid figures, solutions, tables (decimal comma correct in the cells), formula rows
-- Read all task texts, choices and feedback in Finnish (Selkeä suomi); numbers with units are LaTeX with case endings after the maths.
-- Only 1280 px captures exist for the exercises.
+- Delta (md-paragraphs): solutions.md of fy7-1 (fi-easy) cut into paragraphs. Opened full-size captures of opened solutions at 1280 px (level 1 part 3, level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

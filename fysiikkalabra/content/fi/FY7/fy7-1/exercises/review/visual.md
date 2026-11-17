@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b1ad2ba08f212fd9
+CONTENT-HASH: a5159ad088cd40a8
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: b1ad2ba08f212fd9
 - none
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of 1-3, 1-6, 1-7, 1-9, 1-14 model answers, Vastaus and Sijoitus cut into paragraphs.
-- Contact sheets of the opened exercises at 1280 px (fi, fy7-1), plus full-size captures of the changed answers (fi fy7-1). Paragraph cuts keep layout, spacing and card containment; formulas, units and decimal commas unchanged; no clipping or overflow seen.
+- Delta (md-paragraphs): solutions.md of fy7-1 (fi) cut into paragraphs. Opened full-size captures of opened solutions at 1280 px (level 1 part 3, level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
 - Hash identical at start and end.
 
 ## Scores
