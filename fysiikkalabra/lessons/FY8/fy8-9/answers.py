@@ -35,6 +35,6 @@ a["fy8-9-L3-03"] = 100 * I / (I + Cs)               # I-131 share of the total a
 a["fy8-9-L3-04"] = 72 * LN2 / math.log(71.2 / 32.8) / 24   # mix A(96 h) = 71,2 and A(168 h) = 32,8 MBq: T½ = 64,38 h = 2,683 d
 Teff = 8.0 * LN2 / math.log(400 / 65.5)             # I-131 in the body 400 -> 65,5 MBq in 8,0 d: T_eff = 3,065 d
 a["fy8-9-L3-05"] = 1 / (1 / Teff - 1 / 8.02)        # 1/T_bio = 1/T_eff - 1/T_fys: T_bio = 4,96 d
-a["fy8-9-L2-09"] = 200.0 * LN2 / math.log((380 - 5) / (58 - 5))   # Pa-234m figure: net 375 at 0 s, 53 at 200 s, T½ = 70,83 s -> 70,8 s
+a["fy8-9-L2-09"] = 200.0 * LN2 / math.log((380 - 5) / (58 - 5))   # Pa-234m figure: net 375 at 0 s, 53 at 200 s, T½ = 70,85 s -> 70,9 s
 a["fy8-9-L2-10"] = LN2 / 5.0                        # activity figure: halved 720 -> 360 kBq at 5,0 h, λ = 0,1386 1/h -> 0,14 1/h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

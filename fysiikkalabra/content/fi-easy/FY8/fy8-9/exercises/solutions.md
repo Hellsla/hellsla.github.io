@@ -252,12 +252,12 @@ $$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-akti
 **Annettu:** taustasäteily $5$ pulssia $10\,\text{s}$:n jaksossa; kuvasta luettuna $y_0 = 380$ pulssia hetkellä $t_0 = 0$ ja $y_1 = 58$ pulssia hetkellä $t_1 = 200\,\text{s}$.
 **Kysytty:** puoliintumisaika $T_{1/2}$ sekunteina.
 **Periaate:** Vain näytteen pulssit pienenevät hajoamislain mukaan, joten tausta $B$ vähennetään ensin. Nettopulssimäärä noudattaa samaa lakia kuin aktiivisuus: $y_\text{netto} = y_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$.
-**Kuvaajan lukeminen:** Kuvan pisteistä luettiin pulssimäärät kohdista $t = 0$ ja $t = 200\,\text{s}$: noin $380$ ja $58$. Pisteet eivät ole tarkasti käyrällä satunnaisen vaihtelun vuoksi, joten vastauksen toleranssi on suurempi.
+**Kuvaajan lukeminen:** Kuvan pisteistä luettiin pulssimäärät kohdista $t = 0$ ja $t = 200\,\text{s}$: noin $380$ ja $58$. Pisteet eivät ole tarkasti käyrällä satunnaisen vaihtelun vuoksi, joten luvut ovat vain likiarvoja, ja vastaus hyväksytään $2\,\%$:n tarkkuudella. Se erottaa tuloksen vielä taustaa vähentämättä saatavasta $73{,}7\,\text{s}$:sta.
 **Kaava:** $y_1 - B = (y_0 - B)\left(\tfrac{1}{2}\right)^{t_1/T_{1/2}}$, joten $T_{1/2} = \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)}$
 **Muunnokset:** Aika on jo sekunteina, joten muunnoksia ei tarvita.
-**Sijoitus:** Nettopulssit ovat $y_0 - B = 380 - 5 = 375$ ja $y_1 - B = 58 - 5 = 53$. Siis $T_{1/2} = \dfrac{200\,\text{s} \cdot 0{,}69315}{\ln (375 : 53)} = \dfrac{138{,}63\,\text{s}}{1{,}9567} = 70{,}85\,\text{s}$
-**Vastaus:** $70{,}9\,\text{s}$, kolme merkitsevää numeroa kuten luetuissa pulssimäärissä ja taustassa.
-**Järkevyys:** Netto putosi $375 \to 53$, eli noin kolme puolitusta ($375 : 8 \approx 47$), joten $T_{1/2} \approx 200\,\text{s} : 2{,}8 \approx 71\,\text{s}$. Ilman taustan vähennystä saataisiin $\tfrac{200\,\text{s} \cdot 0{,}69315}{\ln (380 : 58)} = 73{,}9\,\text{s}$, liian pitkä aika, koska tausta ei hajoa.
+**Sijoitus:** Nettopulssit ovat $y_0 - B = 380 - 5 = 375$ ja $y_1 - B = 58 - 5 = 53$. Siis $T_{1/2} = \dfrac{200\,\text{s} \cdot 0{,}69315}{\ln \dfrac{375}{53}} = \dfrac{138{,}63\,\text{s}}{1{,}9567} = 70{,}85\,\text{s}$
+**Vastaus:** $70{,}9\,\text{s}$, kolme merkitsevää numeroa, koska pulssimäärät ovat annettuja arvoja ja tulosta käytetään vain noin $2\,\%$:n tarkkuudella.
+**Järkevyys:** Netto putosi $375 \to 53$, eli noin kolme puolitusta ($375 : 8 \approx 47$), joten $T_{1/2} \approx 200\,\text{s} : 2{,}8 \approx 71\,\text{s}$. Ilman taustan vähennystä saataisiin $\tfrac{200\,\text{s} \cdot 0{,}69315}{\ln \dfrac{380}{58}} = 73{,}7\,\text{s}$, liian pitkä aika, koska tausta ei hajoa.
 
 ## fy8-9-L2-10
 **Annettu:** kuvaajasta luettuna alkuaktiivisuus $A_0 = 720\,\text{kBq}$ hetkellä $t = 0$.
@@ -268,4 +268,4 @@ $$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-akti
 **Muunnokset:** Aika on tunteina ja vastaus halutaan yksikössä $\tfrac{1}{\text{h}}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $\lambda = \dfrac{0{,}69315}{5{,}0\,\text{h}} = 0{,}1386\,\tfrac{1}{\text{h}}$
 **Vastaus:** $0{,}14\,\tfrac{1}{\text{h}}$, kaksi merkitsevää numeroa kuten luetussa puoliintumisajassa $5{,}0\,\text{h}$.
-**Järkevyys:** Tunnissa hajoaa noin $14\,\%$ jäljellä olevista ytimistä, joten viidessä tunnissa jäljelle jää $0{,}86^{5} \approx 0{,}47$ eli noin puolet. Se täsmää luetun puoliintumisajan kanssa.
+**Järkevyys:** Tunnissa jäljelle jää $\left(\tfrac{1}{2}\right)^{1/5{,}0} \approx 0{,}871$ ytimistä (noin $13\,\%$ hajoaa), joten viidessä tunnissa jäljelle jää $0{,}871^{5} \approx 0{,}50$ eli puolet. Se täsmää luetun puoliintumisajan kanssa.

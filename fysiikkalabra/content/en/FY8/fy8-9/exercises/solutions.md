@@ -252,12 +252,12 @@ $$. On the basis of part c), biological removal decreases the iodine-131 activit
 **Given:** background $5$ pulses per $10\,\text{s}$ interval; read from the figure, $y_0 = 380$ pulses at $t_0 = 0$ and $y_1 = 58$ pulses at $t_1 = 200\,\text{s}$.
 **Asked:** the half-life $T_{1/2}$ in seconds.
 **Principle:** Only the sample's pulses follow the decay law, so the background $B$ is subtracted first. The net count is proportional to the activity and follows $y_\text{net} = y_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$.
-**Reading the graph:** The counts were read from the points at $t = 0$ and $t = 200\,\text{s}$: about $380$ and $58$. Points do not lie exactly on the curve because of random variation, so the answer's tolerance is wider.
+**Reading the graph:** The counts were read from the points at $t = 0$ and $t = 200\,\text{s}$: about $380$ and $58$. Points do not lie exactly on the curve because of random variation, so the readings are only approximate and the answer is accepted within $2\,\%$, which still separates it from the $73.7\,\text{s}$ obtained without the background subtraction.
 **Formula:** $y_1 - B = (y_0 - B)\left(\tfrac{1}{2}\right)^{t_1/T_{1/2}}$, so $T_{1/2} = \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)}$
 **Conversions:** The time is already in seconds, so none are needed.
-**Substitution:** The net counts are $y_0 - B = 380 - 5 = 375$ and $y_1 - B = 58 - 5 = 53$. So $T_{1/2} = \dfrac{200\,\text{s} \cdot 0.69315}{\ln (375 : 53)} = \dfrac{138.63\,\text{s}}{1.9567} = 70.85\,\text{s}$
-**Answer:** $70.9\,\text{s}$, three significant figures as in the read counts and the background.
-**Reasonableness:** The net count fell $375 \to 53$, about three halvings ($375 : 8 \approx 47$), so $T_{1/2} \approx 200\,\text{s} : 2.8 \approx 71\,\text{s}$. Without subtracting the background one would get $\tfrac{200\,\text{s} \cdot 0.69315}{\ln (380 : 58)} = 73.9\,\text{s}$, too long, because the background does not decay.
+**Substitution:** The net counts are $y_0 - B = 380 - 5 = 375$ and $y_1 - B = 58 - 5 = 53$. So $T_{1/2} = \dfrac{200\,\text{s} \cdot 0.69315}{\ln \dfrac{375}{53}} = \dfrac{138.63\,\text{s}}{1.9567} = 70.85\,\text{s}$
+**Answer:** $70.9\,\text{s}$, three significant figures, since the counts are given values and the result is only used to within about $2\,\%$.
+**Reasonableness:** The net count fell $375 \to 53$, about three halvings ($375 : 8 \approx 47$), so $T_{1/2} \approx 200\,\text{s} : 2.8 \approx 71\,\text{s}$. Without subtracting the background one would get $\tfrac{200\,\text{s} \cdot 0.69315}{\ln \dfrac{380}{58}} = 73.7\,\text{s}$, too long, because the background does not decay.
 
 ## fy8-9-L2-10
 **Given:** read from the graph, the initial activity $A_0 = 720\,\text{kBq}$ at $t = 0$.
@@ -268,4 +268,4 @@ $$. On the basis of part c), biological removal decreases the iodine-131 activit
 **Conversions:** The time is in hours and the answer is wanted in $\tfrac{1}{\text{h}}$, so none are needed.
 **Substitution:** $\lambda = \dfrac{0.69315}{5.0\,\text{h}} = 0.1386\,\tfrac{1}{\text{h}}$
 **Answer:** $0.14\,\tfrac{1}{\text{h}}$, two significant figures as in the read half-life $5.0\,\text{h}$.
-**Reasonableness:** About $14\,\%$ of the remaining nuclei decay each hour, so after five hours $0.86^{5} \approx 0.47$, about half, is left. This agrees with the read half-life.
+**Reasonableness:** Each hour $\left(\tfrac{1}{2}\right)^{1/5.0} \approx 0.871$ of the nuclei remain (about $13\,\%$ decay), so after five hours $0.871^{5} \approx 0.50$, half, is left. This agrees with the read half-life.
