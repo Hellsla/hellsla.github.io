@@ -26,7 +26,7 @@
       "prompt": "Polkupyörän napadynamon kestomagneetin kenttä on $0{,}50\\,\\text{T}$. Kenttään lentää kohtisuoraan kenttää vastaan elektroni nopeudella $2{,}0 \\cdot 10^{6}\\,\\text{m/s}$. Kuinka suuri voima kohdistuu elektroniin?",
       "choices": [
         {
-          "text": "Voima $F = |q|vB \\approx 1{,}6 \\cdot 10^{-13}\\,\\text{N}$, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan.",
+          "text": "Voima $1{,}6 \\cdot 10^{-13}\\,\\text{N}$, ja se on kohtisuorassa sekä nopeutta että kenttää vastaan.",
           "correct": true,
           "feedback": "Oikein. Magneettikenttä vaikuttaa liikkuvaan varaukseen voimalla $F = |q|vB$, ja voima on kohtisuorassa nopeutta ja kenttää vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Tänään tästä seuraa, miksi kentässä liikkuvan metallitangon elektronit siirtyvät tangon päähän."
         },
@@ -36,7 +36,7 @@
         },
         {
           "text": "Voima $3{,}2 \\cdot 10^{-13}\\,\\text{N}$, koska kentän suuruudella ei ole väliä.",
-          "feedback": "Kentän suuruus on mukana: $$\n\\begin{aligned}\n&F \\\\\n&= |q|vB \\\\\n&= 1{,}6 \\cdot 10^{-19}\\,\\text{C} \\cdot 2{,}0 \\cdot 10^{6}\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\\\\n&\\approx 1{,}6 \\cdot 10^{-13}\\,\\text{N}\n\\end{aligned}\n$$ (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)."
+          "feedback": "Kentän suuruus on mukana: $$\n\\begin{aligned}\n&F \\\\\n&= |q|vB \\\\\n&= 1{,}6 \\cdot 10^{-19}\\,\\text{C} \\cdot 2{,}0 \\cdot 10^{6}\\,\\text{m/s} \\\\\n&\\quad \\cdot 0{,}50\\,\\text{T} \\\\\n&\\approx 1{,}6 \\cdot 10^{-13}\\,\\text{N}\n\\end{aligned}\n$$ (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*)."
         }
       ],
       "optional": true
