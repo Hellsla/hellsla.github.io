@@ -775,7 +775,7 @@ _td = lambda x, y: rv._tr_data(rv._choice_answer(x), rv._choice_answer(y), [])
 expect("8r: a translated choice answer (the correct option's text) is no difference (fy8-14 L1-06)", _td(_cf, _ce))
 expect("8r: another correct option differs", not _td(_cf, _ch("It grows.", "The positron annihilates.", "It grows.", ca=False)))
 expect("8r: a numeric answer that differs still differs", not _td({"answer": 4.2, "unit": "m"}, {"answer": 4.3, "unit": "m"}))
-expect("8r: an answer naming no option is compared as before", not _td({**_cf, "answer": "Muu"}, {**_ce, "answer": "Other"}))
+expect("8r: an answer naming no option is compared as text as before (a changed number differs)", not _td({**_cf, "answer": "Muu 3"}, {**_ce, "answer": "Other 4"}))
 t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
 shutil.copytree(FI, EN, ignore=shutil.ignore_patterns("review"))
 XE = EN / "exercises"; _ej = XE / "exercises.json"; _ex = json.loads(_ej.read_text())
