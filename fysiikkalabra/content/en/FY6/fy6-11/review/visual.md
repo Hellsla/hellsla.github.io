@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 409c6c988de07c40
+CONTENT-HASH: 16d4928e3fccf0b9
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json koe-2 (proof formula 2) — the second row begins with the division colon `: (3 \cdot 10^{-9}\,\text{C})`; legible and breaks between whole quantities, but a row beginning with an operator is slightly unusual — optional: keep as is.
+- [Minor] inquiry.json review feedback — a display `aligned` block is followed directly by "(chapter ...)" with no space in the source; check on the page that the parenthesis sits on its own line cleanly (earlier text had a space).
 
 ## Checked
-- Delta round 4: proof sheet review-batch/proof/en-fy6-11-lesson-1.png opened, all 7 formulas looked at (simulaatio calc, koe-2, koe-3, koe-3 solution, virhe feedback x2, siirto): every one fits its box at 352 px, rows break at relations or between whole quantities, never between a number and its power of ten, units upright with thin space, relation signs aligned.
-- The one change since the last PASS (the 2000 V feedback formula back to inline) is the accepted known clipped formula listed in docs/clipped-formulas.tsv; not a finding.
-- check_layout.py passes at 352–1920 px per the prompt; page captures not re-opened (nothing else changed).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+batch delta review: the diff changes only the review question (inquiry.json) and answer constants, no figure or layout; quantities are inline LaTeX with units and `\cdot`, divisions with a colon, English fluent; theory-figure captures unaffected by the diff.

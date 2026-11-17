@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1fdd76a02f7a6093
+CONTENT-HASH: 2c5e69e7585ee03e
 
 ## Blocking
+- none
 
 ## Polish
+- inquiry.json feedback, option 3: "varaus on $Q = It$, joten $Q = ...$" has joten twice; write "joten varaus on $Q = It = 4{,}0\\,\\text{A}\\cdot 10\\,\\text{s} = 40\\,\\text{C}$".
 
 ## Checked
-batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.
+- batch delta review: the diff changes only the optional Kertaa task in Pohdinta (inquiry.json, numbers with LaTeX units, aligned displays); opened stage-herata-390 (or confirmed unchanged figures/layout from contact context); no figure or sim changed.

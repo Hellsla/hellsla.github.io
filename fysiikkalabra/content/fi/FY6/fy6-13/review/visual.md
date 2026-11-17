@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8b927531ff04d49d
+CONTENT-HASH: 317ca93c5dcfdac2
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.
+- batch delta review: the diff changes only the optional Kertaa task in Pohdinta (inquiry.json, numbers with LaTeX units, aligned displays); opened stage-herata-390 (or confirmed unchanged figures/layout from contact context); no figure or sim changed.

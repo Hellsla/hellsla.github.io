@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: fe692166241c80f6
-
+CONTENT-HASH: 2c5e69e7585ee03e
 ## Blocking
-(none)
 
 ## Polish
-- "Ohmisen vastuksen" is not defined in the lesson (it says "Ohmin lakia noudattava"); use that phrase for consistency.
 
 ## Checked
-batch delta review (fi): misconception now correctly conditions constancy of R on temperature; light-bulb contrast kept; filament photo caption explains energy conversion.
+batch delta review: toaster-wire Q=It retrieval, 4 distractors with named errors; Finnish clear, feedback names each error, links to the lesson's topic; split Tunnetut ja kysytty paragraphs consistent.
