@@ -29,7 +29,7 @@
         {
           "text": "Noin $590\\,\\text{N}$, koska $G = mg$.",
           "correct": true,
-          "feedback": "Oikein. Paino on $G = mg = 60\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 590\\,\\text{N}$ (luku *Paino, kitka ja kalteva taso*). Tässä luvussa selvitetään, mitä voima saa aikaan, kun se kiertää kappaletta."
+          "feedback": "Oikein. Paino on $$\\begin{aligned} G &= mg \\\\ &= 60\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 590\\,\\text{N} \\end{aligned}$$ (luku *Paino, kitka ja kalteva taso*). Tässä luvussa selvitetään, mitä voima saa aikaan, kun se kiertää kappaletta."
         },
         {
           "text": "$60\\,\\text{N}$, koska paino on yhtä suuri kuin massa.",

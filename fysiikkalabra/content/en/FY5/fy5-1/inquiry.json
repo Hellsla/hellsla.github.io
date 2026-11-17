@@ -29,7 +29,7 @@
         {
           "text": "About $590\\,\\text{N}$, because $G = mg$.",
           "correct": true,
-          "feedback": "Correct. The weight is $G = mg = 60\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 590\\,\\text{N}$ (chapter *Weight, friction and the inclined plane*). This chapter finds out what a force does when it turns a body."
+          "feedback": "Correct. The weight is $$\\begin{aligned} G &= mg \\\\ &= 60\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 590\\,\\text{N} \\end{aligned}$$ (chapter *Weight, friction and the inclined plane*). This chapter finds out what a force does when it turns a body."
         },
         {
           "text": "$60\\,\\text{N}$, because the weight is equal to the mass.",
