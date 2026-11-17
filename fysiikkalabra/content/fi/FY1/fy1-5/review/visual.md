@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5a6ad2a9f70d1519
+CONTENT-HASH: 7916686a43344713
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Stage 4: the inline fractions $\tfrac{1}{149\,597\,870{,}7}$ are small at 390 px but legible.
+- none
 
 ## Checked
-- Opened fy1-5-example-390-1 and -2 (bullets, question paragraph, stage 7 split into paragraphs); layout intact.
+- batch delta review: opened fy1-5-stage-herata-390 (Pohdinta with the changed Kertaa item closed box); feedback text read in the diff; no clipping, math renders.
