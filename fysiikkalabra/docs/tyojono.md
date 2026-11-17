@@ -121,6 +121,12 @@ Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final�
 vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
 Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
 
+## 8r. translation_differs: valintatehtävän answer (jaettu `scripts/`; 2026-11-17)
+Varattu: claude/8r-translation-choice
+`reviews.translation_differs` vertasi valintatehtävän `answer`-kenttää (oikean vaihtoehdon TEKSTI, käännetään) sellaisenaan, joten
+en ja fi-easy saivat eron ja tiedekatselmointi ajettiin turhaan täytenä (fy8-14-L1-06, #692). Korjaus: choice-`answer` verrataan
+oikean vaihtoehdon indeksin kautta; luvut, kaavat ja asetukset pysyvät tiukkoina. Yhdistetään yksin.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
 **PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
