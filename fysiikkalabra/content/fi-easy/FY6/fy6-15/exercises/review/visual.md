@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: eabed0026abee629
+CONTENT-HASH: a41d2773d2998e16
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-15: quotation marks are mixed (task text uses ”…”, Annettu stage uses straight "…"); use ”…” in both.
+- [Minor] solutions.md 15 L2 kohta c): the paragraph "Paneelin jälkeen se kulkee…" opens with an unclear "se" (paneelin virta) — write "Paneelin virta kulkee kuitenkin…".
 
 ## Checked
-- Proof sheets fi-easy-fy6-15-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs only): opened exercises L2-12, L2-13 (kohdat a), c), d)). Samples at 1280 px; breaks are not width-dependent. Paragraph breaks fall at thought boundaries, no orphan one-word paragraph, solution-card spacing even, nothing clipped.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -92,7 +92,9 @@
 ## fy6-14-L3-01
 **Given:** voltage of the LED $U_\text{D} = 2.0\,\text{V}$, series resistor $R = 120\,\Omega$, voltage of the batteries first $U_1 = 4.5\,\text{V}$ and finally $U_2 = 3.6\,\text{V}$
 **Find:** the decrease of the current as a percentage of the original current
-**Principle:** By assumption the voltage of the LED stays the same, so the whole change in voltage falls on the resistor. The current is obtained from Kirchhoff's voltage law and Ohm's law. The voltage of the resistor decreases proportionally more than the voltage of the batteries, because the constant voltage of the LED has been subtracted from it.
+**Principle:** By assumption the voltage of the LED stays the same, so the whole change in voltage falls on the resistor. The current is obtained from Kirchhoff's voltage law and Ohm's law.
+
+The voltage of the resistor decreases proportionally more than the voltage of the batteries, because the constant voltage of the LED has been subtracted from it.
 **Formula:** $I = \dfrac{U - U_\text{D}}{R}$, so $I_1 = \dfrac{U_1 - U_\text{D}}{R}$, $I_2 = \dfrac{U_2 - U_\text{D}}{R}$ and the relative change is $\dfrac{I_1 - I_2}{I_1}$
 **Conversions:** None needed: the currents are divided by each other, so the unit cancels. The ratio is changed to a percentage by multiplying by a hundred.
 **Substitution:** $I_1 = \dfrac{4.5\,\text{V} - 2.0\,\text{V}}{120\,\Omega} = 0.02083\,\text{A}$, $I_2 = \dfrac{3.6\,\text{V} - 2.0\,\text{V}}{120\,\Omega} = 0.01333\,\text{A}$ and $\dfrac{I_1 - I_2}{I_1} = \dfrac{0.00750\,\text{A}}{0.02083\,\text{A}} = 0.36$
@@ -102,7 +104,9 @@
 ## fy6-14-L3-02
 **Given:** measured pairs $(U;\ I)$ of the panel in the same lighting (nine pairs in the task)
 **Find:** the load resistance $R$ in ohms when the power is the greatest of the measurements
-**Principle:** The power of the panel is $P = UI$. It is zero in a short circuit and at open circuit, so the greatest power is between them, at the maximum power point. We calculate the power of each measurement and choose the greatest, and the load resistance is obtained from Ohm's law $U = RI$ for the load, because the voltage of the load is the voltage of the panel and its current is the current of the panel.
+**Principle:** The power of the panel is $P = UI$. It is zero in a short circuit and at open circuit, so the greatest power is between them, at the maximum power point.
+
+We calculate the power of each measurement and choose the greatest, and the load resistance is obtained from Ohm's law $U = RI$ for the load, because the voltage of the load is the voltage of the panel and its current is the current of the panel.
 **Formula:** $P = UI$, and at the maximum power point $U = RI$, from which $R = \dfrac{U}{I}$
 **Conversions:** None needed: the voltages are in volts and the currents in amperes.
 **Substitution:** The powers are $0\,\text{W}$, $32.5\,\text{W}$, $44.5\,\text{W}$, $48.8\,\text{W}$, $49.3\,\text{W}$, $45.9\,\text{W}$, $36.1\,\text{W}$, $19.0\,\text{W}$ and $0\,\text{W}$. The greatest is $17.0\,\text{V} \cdot 2.90\,\text{A} = 49.3\,\text{W}$, so $R = \dfrac{17.0\,\text{V}}{2.90\,\text{A}} = 5.86\,\Omega$
@@ -112,7 +116,11 @@
 ## fy6-14-L3-03
 **Given:** voltage of the strip $U = 12\,\text{V}$, three LEDs in series in a group, the voltage of each $U_\text{D} = 3.0\,\text{V}$, current of the group $I = 20\,\text{mA}$
 **Find:** the share of the power of the strip that goes to the series resistors, as a percentage
-**Principle:** The groups are in parallel, so across each group there is $12\,\text{V}$, and the groups are identical, so it is enough to consider one group. In a group the LEDs and the resistor are in series, so the same current flows through all of them, and the voltage is shared: $U = U_R + 3U_\text{D}$. The power of the resistor is $U_R I$ and the power of the whole group $UI$.
+**Principle:** The groups are in parallel, so across each group there is $12\,\text{V}$, and the groups are identical, so it is enough to consider one group.
+
+In a group the LEDs and the resistor are in series, so the same current flows through all of them, and the voltage is shared: $U = U_R + 3U_\text{D}$.
+
+The power of the resistor is $U_R I$ and the power of the whole group $UI$.
 **Formula:** $U_R = U - 3U_\text{D}$ and the share is $\dfrac{U_R I}{UI}$, so the share is $\dfrac{U - 3U_\text{D}}{U}$
 **Conversions:** None needed: the current cancels, and the ratio of the voltages is a ratio. Finally we multiply by a hundred.
 **Substitution:** $\dfrac{12\,\text{V} - 3 \cdot 3.0\,\text{V}}{12\,\text{V}} = \dfrac{3.0\,\text{V}}{12\,\text{V}} = 0.25 = 25\,\%$
@@ -121,13 +129,25 @@
 
 ## fy6-14-L1-06
 **Find:** what happens in the circuit when the voltage of the battery is $9.0\,\text{V}$ and the triangle of the diode symbol points towards the resistor, which is connected to the negative terminal
-**Principle:** The direction of the current is agreed to be from the positive terminal to the negative terminal. A diode lets current through when the direction of the current is the same as the direction the triangle of the symbol points (the forward direction), and blocks it in the opposite direction (the reverse direction). In the forward direction the voltage of the diode is small, and by Kirchhoff's voltage law the rest of the voltage of the battery is left for the resistor in series.
-**Model answer:** The triangle points towards the negative terminal, that is, in the direction of the current, so the diode is in the forward direction. Current flows in the circuit, and there is only a small voltage across the diode (at most about $1\,\text{V}$), because the resistor takes most of the $9.0\,\text{V}$ of the battery. The other options are wrong: they either put the diode in the reverse direction or give a diode in the forward direction the whole voltage of the battery.
+**Principle:** The direction of the current is agreed to be from the positive terminal to the negative terminal. A diode lets current through when the direction of the current is the same as the direction the triangle of the symbol points (the forward direction), and blocks it in the opposite direction (the reverse direction).
+
+In the forward direction the voltage of the diode is small, and by Kirchhoff's voltage law the rest of the voltage of the battery is left for the resistor in series.
+**Model answer:** The triangle points towards the negative terminal, that is, in the direction of the current, so the diode is in the forward direction.
+
+Current flows in the circuit, and there is only a small voltage across the diode (at most about $1\,\text{V}$), because the resistor takes most of the $9.0\,\text{V}$ of the battery.
+
+The other options are wrong: they either put the diode in the reverse direction or give a diode in the forward direction the whole voltage of the battery.
 
 ## fy6-14-L1-07
 **Find:** why a series resistor is needed in series with an LED
-**Principle:** The voltage of an LED stays almost the same in the forward direction even when the current changes a lot: the characteristic curve rises steeply. If the LED is connected directly to the terminals of the battery, the extra voltage has nowhere else to go, and the current grows so large that the LED burns out. A resistor connected in series takes part of the voltage by Kirchhoff's voltage law ($U = U_R + U_\text{D}$), and by Ohm's law its voltage determines the current: $I = U_R : R$.
-**Model answer:** The series resistor is needed because the current of the LED grows steeply even when the voltage of the LED grows only a little. The resistor takes the extra voltage of the battery for itself and keeps the current suitable. The other options are wrong: the resistor does not increase the current, does not change the type of the voltage, and does not prevent current from flowing in the wrong direction.
+**Principle:** The voltage of an LED stays almost the same in the forward direction even when the current changes a lot: the characteristic curve rises steeply.
+
+If the LED is connected directly to the terminals of the battery, the extra voltage has nowhere else to go, and the current grows so large that the LED burns out.
+
+A resistor connected in series takes part of the voltage by Kirchhoff's voltage law ($U = U_R + U_\text{D}$), and by Ohm's law its voltage determines the current: $I = U_R : R$.
+**Model answer:** The series resistor is needed because the current of the LED grows steeply even when the voltage of the LED grows only a little.
+
+The resistor takes the extra voltage of the battery for itself and keeps the current suitable. The other options are wrong: the resistor does not increase the current, does not change the type of the voltage, and does not prevent current from flowing in the wrong direction.
 
 ## fy6-14-L1-08
 **Given:** area $A = 12\,\text{cm}^2$, irradiance $G = 1000\,\text{W/m}^2$, voltage $U = 2.0\,\text{V}$, current $I = 100\,\text{mA}$
@@ -142,7 +162,11 @@
 ## fy6-14-L2-05
 **Given:** voltages of the LEDs at the current $15\,\text{mA}$: blue $3.10\,\text{V}$, red $1.90\,\text{V}$, yellow $2.10\,\text{V}$, voltage of the source $U = 5.0\,\text{V}$, current $I = 15\,\text{mA}$
 **Find:** a) which LED needs the largest series resistor, b) the resistance $R$ of that series resistor in ohms
-**Principle:** The source, the resistor and the LED are in series, so the same current flows through both and $U = U_R + U_\text{D}$. The voltage of the resistor $U_R = U - U_\text{D}$ is the larger, the smaller the voltage of the LED is. Since the current is the same for all, by Ohm's law $R = U_R : I$ the greatest voltage of the resistor gives the greatest resistance. The largest series resistor is therefore needed for the LED with the smallest voltage, that is, the red LED.
+**Principle:** The source, the resistor and the LED are in series, so the same current flows through both and $U = U_R + U_\text{D}$. The voltage of the resistor $U_R = U - U_\text{D}$ is the larger, the smaller the voltage of the LED is.
+
+Since the current is the same for all, by Ohm's law $R = U_R : I$ the greatest voltage of the resistor gives the greatest resistance.
+
+The largest series resistor is therefore needed for the LED with the smallest voltage, that is, the red LED.
 **Formula:** $R = \dfrac{U - U_\text{D}}{I}$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** For the red LED $R = \dfrac{5.0\,\text{V} - 1.90\,\text{V}}{0.015\,\text{A}} = \dfrac{3.1\,\text{V}}{0.015\,\text{A}} = 207\,\Omega$
@@ -162,7 +186,11 @@
 ## fy6-14-L2-07
 **Given:** voltage of the battery $U = 9.0\,\text{V}$, voltage of the LED $U_\text{D} = 3.2\,\text{V}$, current $I = 15\,\text{mA}$; the student got $600\,\Omega$
 **Find:** a) the student's error, b) the correct series resistor $R$ in ohms
-**Principle:** The source, the resistor and the LED are in series, so the voltage of the battery is shared between the resistor and the LED: $U = U_R + U_\text{D}$. Ohm's law $R = U_R : I$ concerns the voltage of the resistor itself, not the whole voltage of the battery. The student used the whole voltage of the battery as the voltage of the resistor and forgot the voltage of the LED. The error makes the resistor too large, so the current would be smaller than desired.
+**Principle:** The source, the resistor and the LED are in series, so the voltage of the battery is shared between the resistor and the LED: $U = U_R + U_\text{D}$.
+
+Ohm's law $R = U_R : I$ concerns the voltage of the resistor itself, not the whole voltage of the battery. The student used the whole voltage of the battery as the voltage of the resistor and forgot the voltage of the LED.
+
+The error makes the resistor too large, so the current would be smaller than desired.
 **Formula:** $R = \dfrac{U - U_\text{D}}{I}$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** $R = \dfrac{9.0\,\text{V} - 3.2\,\text{V}}{0.015\,\text{A}} = \dfrac{5.8\,\text{V}}{0.015\,\text{A}} = 387\,\Omega$
@@ -171,7 +199,11 @@
 
 ## fy6-14-L2-08
 **Find:** which of the three lights are on and why.
-**Principle:** A diode and an LED conduct only in the forward direction, when the anode is on the positive terminal side of the battery. In the reverse direction no current passes. Branches connected in parallel are each at the whole voltage of the battery, so each branch is a circuit of its own: a diode in the reverse direction in one branch interrupts only the current of that branch. The same current passes through components in series.
+**Principle:** A diode and an LED conduct only in the forward direction, when the anode is on the positive terminal side of the battery. In the reverse direction no current passes.
+
+Branches connected in parallel are each at the whole voltage of the battery, so each branch is a circuit of its own: a diode in the reverse direction in one branch interrupts only the current of that branch.
+
+The same current passes through components in series.
 **Model answer:** Only LED A is on.
 
 Branch 1: the anode of the LED is on the positive terminal side, so the LED is in the forward direction. The voltage of the branch $4.5\,\text{V}$ is greater than the voltage of the LED $2.0\,\text{V}$, and across the series resistor remains $4.5\,\text{V} - 2.0\,\text{V} = 2.5\,\text{V}$. Current passes, and LED A is on.
@@ -180,28 +212,50 @@ Branch 2: the cathode of the LED is on the positive terminal side, so LED B is i
 
 Branch 3: the cathode of the silicon diode is on the positive terminal side, so the diode is in the reverse direction. The filament of the lamp would conduct in both directions, but in series the same current passes through the lamp and the diode, and the diode stops it. Lamp C is not on.
 
-So the reason is that a diode conducts only when the anode is on the positive terminal side, and each parallel branch works as a circuit of its own. The need for a series resistor is a true fact, but it does not tell the direction of the current. If the branches were in series, even one diode in the reverse direction would interrupt the current of the whole circuit, and no light would be on.
+So the reason is that a diode conducts only when the anode is on the positive terminal side, and each parallel branch works as a circuit of its own.
+
+The need for a series resistor is a true fact, but it does not tell the direction of the current. If the branches were in series, even one diode in the reverse direction would interrupt the current of the whole circuit, and no light would be on.
 
 ## fy6-14-L3-04
 **Given:** area $A = 24\,\text{m}^2$, efficiency $\eta = 19\,\%$, monthly radiation energies $H$ and consumptions $E_\text{kul}$ in the table
 **Find:** a) the annual production $E$, b) the degree of self-sufficiency as a percentage, c) the months in which the production is smaller than the consumption, and the limitation of the degree of self-sufficiency
-**Principle:** The efficiency is the electrical energy divided by the radiation energy falling on the panels. The radiation energy is the radiation energy per square metre times the area, $H A$, so the electrical energy produced is $E = \eta H A$. The annual production is obtained by adding up the radiation energies of the months, and the degree of self-sufficiency is the ratio of the annual production to the annual consumption.
+**Principle:** The efficiency is the electrical energy divided by the radiation energy falling on the panels. The radiation energy is the radiation energy per square metre times the area, $H A$, so the electrical energy produced is $E = \eta H A$.
+
+The annual production is obtained by adding up the radiation energies of the months, and the degree of self-sufficiency is the ratio of the annual production to the annual consumption.
 **Formula:** $E = \eta A \sum H$ and degree of self-sufficiency $= \dfrac{E}{\sum E_\text{kul}}$
 **Conversions:** $\eta = 19\,\% = 0.19$. No others: the energies are in kilowatt-hours.
-**Substitution:** a) The sum of the radiation energies is $\sum H = 1027\,\text{kWh/m}^2$, so $E = 0.19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$. b) The sum of the consumptions is $\sum E_\text{kul} = 5340\,\text{kWh}$, so the degree of self-sufficiency is $\dfrac{4683\,\text{kWh}}{5340\,\text{kWh}} = 0.877 = 87.7\,\%$. c) The monthly production is $E_\text{kk} = 0.19 \cdot 24\,\text{m}^2 \cdot H = 4.56\,\text{m}^2 \cdot H$. It is smaller than the consumption in January, February and March and in October, November and December: for example in January $4.56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$ when the consumption is $620\,\text{kWh}$, and in December $36\,\text{kWh}$ when the consumption is $650\,\text{kWh}$. The consumption of these six months is $3370\,\text{kWh}$ in total and the production $853\,\text{kWh}$ in total, so the shortfall is $2517\,\text{kWh}$.
+**Substitution:** a) The sum of the radiation energies is $\sum H = 1027\,\text{kWh/m}^2$, so $E = 0.19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$.
+
+b) The sum of the consumptions is $\sum E_\text{kul} = 5340\,\text{kWh}$, so the degree of self-sufficiency is $\dfrac{4683\,\text{kWh}}{5340\,\text{kWh}} = 0.877 = 87.7\,\%$.
+
+c) The monthly production is $E_\text{kk} = 0.19 \cdot 24\,\text{m}^2 \cdot H = 4.56\,\text{m}^2 \cdot H$. It is smaller than the consumption in January, February and March and in October, November and December: for example in January $4.56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$ when the consumption is $620\,\text{kWh}$, and in December $36\,\text{kWh}$ when the consumption is $650\,\text{kWh}$. The consumption of these six months is $3370\,\text{kWh}$ in total and the production $853\,\text{kWh}$ in total, so the shortfall is $2517\,\text{kWh}$.
 **Answer:** $88\,\%$, two significant figures like the efficiency $19\,\%$. The annual production is about $4.7 \cdot 10^{3}\,\text{kWh}$.
-**Reasonableness:** The production is about $4.7\,\text{MWh}$, which fits a panel array of $24\,\text{m}^2$ in Finland, and it is a little below the consumption of the house, $5340\,\text{kWh}$, so the degree of self-sufficiency is below $100\,\%$. The degree of self-sufficiency is an annual sum. The surplus of summer cannot be used in winter without storage, and the shortfall of winter, $2517\,\text{kWh}$, is $2517 : 5340 = 47\,\%$ of the annual consumption. So at least this share is bought from the grid, although the degree of self-sufficiency is $88\,\%$.
+**Reasonableness:** The production is about $4.7\,\text{MWh}$, which fits a panel array of $24\,\text{m}^2$ in Finland, and it is a little below the consumption of the house, $5340\,\text{kWh}$, so the degree of self-sufficiency is below $100\,\%$.
+
+The degree of self-sufficiency is an annual sum. The surplus of summer cannot be used in winter without storage, and the shortfall of winter, $2517\,\text{kWh}$, is $2517 : 5340 = 47\,\%$ of the annual consumption.
+
+So at least this share is bought from the grid, although the degree of self-sufficiency is $88\,\%$.
 
 ## fy6-14-L3-05
 **Given:** the measurement points of the characteristic curve of the LED $(U_\text{D};\ I)$, voltage of the battery $U = 4.5\,\text{V}$, series resistor $R = 180\,\Omega$, greatest permitted current $25\,\text{mA}$
 **Find:** a) the threshold voltage, b) the current at the operating point in milliamperes, c) the change in the voltage of the LED as the current grows, and the justification for a constant voltage
-**Principle:** In a series circuit the same current flows through the resistor and the LED, and $U = U_R + U_\text{D}$. The current coming through the resistor is $I = \dfrac{U - U_\text{D}}{R}$ at each voltage of the LED, and the current of the LED is obtained from the characteristic curve. The operating point is the voltage at which these two currents are equal: the intersection of the load line and the characteristic curve.
-**Reading the graph:** a) The steep straight part of the characteristic curve lies between the last two points of the table: the current grows from $20\,\text{mA}$ to $41\,\text{mA}$ when the voltage grows from $2.05\,\text{V}$ to $2.10\,\text{V}$, so the slope of the line is $\dfrac{41\,\text{mA} - 20\,\text{mA}}{2.10\,\text{V} - 2.05\,\text{V}} = 420\,\tfrac{\text{mA}}{\text{V}}$. The line meets the voltage axis at $2.05\,\text{V} - \dfrac{20\,\text{mA}}{420\,\text{mA/V}} = 2.05\,\text{V} - 0.048\,\text{V} = 2.00\,\text{V}$. The threshold voltage is about $2.0\,\text{V}$.
+**Principle:** In a series circuit the same current flows through the resistor and the LED, and $U = U_R + U_\text{D}$. The current coming through the resistor is $I = \dfrac{U - U_\text{D}}{R}$ at each voltage of the LED, and the current of the LED is obtained from the characteristic curve.
+
+The operating point is the voltage at which these two currents are equal: the intersection of the load line and the characteristic curve.
+**Reading the graph:** a) The steep straight part of the characteristic curve lies between the last two points of the table: the current grows from $20\,\text{mA}$ to $41\,\text{mA}$ when the voltage grows from $2.05\,\text{V}$ to $2.10\,\text{V}$, so the slope of the line is $\dfrac{41\,\text{mA} - 20\,\text{mA}}{2.10\,\text{V} - 2.05\,\text{V}} = 420\,\tfrac{\text{mA}}{\text{V}}$.
+
+The line meets the voltage axis at $2.05\,\text{V} - \dfrac{20\,\text{mA}}{420\,\text{mA/V}} = 2.05\,\text{V} - 0.048\,\text{V} = 2.00\,\text{V}$. The threshold voltage is about $2.0\,\text{V}$.
 **Formula:** $I = \dfrac{U - U_\text{D}}{R}$ through the resistor and the current of the characteristic curve from the table
 **Conversions:** Not needed: the voltages are in volts and the resistance in ohms, and the result $\text{V} : \Omega = \text{A}$ is converted to milliamperes by multiplying by $1000$.
-**Substitution:** The current coming through the resistor is, at the voltage $2.00\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.00\,\text{V}}{180\,\Omega} = 13.9\,\text{mA}$ and, at the voltage $2.05\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.05\,\text{V}}{180\,\Omega} = 13.6\,\text{mA}$. The current of the LED at these voltages is $9.8\,\text{mA}$ and $20\,\text{mA}$. At the voltage $2.00\,\text{V}$ the current coming through the resistor is greater than the current of the LED, and at $2.05\,\text{V}$ it is smaller, so the intersection lies in between. Drawn as straight lines, the intersection is at $U_\text{D} \approx 2.02\,\text{V}$ and $I \approx 13.8\,\text{mA}$. Check: $\dfrac{4.5\,\text{V} - 2.02\,\text{V}}{180\,\Omega} = 13.8\,\text{mA}$. c) When the current grows from $9.8\,\text{mA}$ to $41\,\text{mA}$, that is, to more than four times, the voltage changes from $2.00\,\text{V}$ to $2.10\,\text{V}$, that is, by $0.10\,\text{V}$.
+**Substitution:** The current coming through the resistor is, at the voltage $2.00\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.00\,\text{V}}{180\,\Omega} = 13.9\,\text{mA}$ and, at the voltage $2.05\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.05\,\text{V}}{180\,\Omega} = 13.6\,\text{mA}$. The current of the LED at these voltages is $9.8\,\text{mA}$ and $20\,\text{mA}$. At the voltage $2.00\,\text{V}$ the current coming through the resistor is greater than the current of the LED, and at $2.05\,\text{V}$ it is smaller, so the intersection lies in between. Drawn as straight lines, the intersection is at $U_\text{D} \approx 2.02\,\text{V}$ and $I \approx 13.8\,\text{mA}$. Check: $\dfrac{4.5\,\text{V} - 2.02\,\text{V}}{180\,\Omega} = 13.8\,\text{mA}$.
+
+c) When the current grows from $9.8\,\text{mA}$ to $41\,\text{mA}$, that is, to more than four times, the voltage changes from $2.00\,\text{V}$ to $2.10\,\text{V}$, that is, by $0.10\,\text{V}$.
 **Answer:** $14\,\text{mA}$, two significant figures, because the spacing of the points in the table is coarse and the result has been read from between two points. The voltage at the operating point is about $2.0\,\text{V}$. The current is smaller than the permitted $25\,\text{mA}$.
-**Reasonableness:** The current $13.8\,\text{mA}$ is smaller than the permitted $25\,\text{mA}$, so the LED withstands it. The voltage $2.02\,\text{V}$ is in the ordinary range of a green LED, and the voltage at the operating point is slightly greater than the threshold voltage $2.0\,\text{V}$, as it should be on a steep curve. Justification for c): the voltage changes only $0.10\,\text{V}$, about $5\,\%$, although the current grows to more than four times. So the voltage of the LED can be kept constant, and the voltage $U - U_\text{D}$ is left for the series resistor, which determines the current. Without the resistor the current would be determined by the steep curve alone, and even a small increase in voltage would make the current large.
+**Reasonableness:** The current $13.8\,\text{mA}$ is smaller than the permitted $25\,\text{mA}$, so the LED withstands it. The voltage $2.02\,\text{V}$ is in the ordinary range of a green LED, and the voltage at the operating point is slightly greater than the threshold voltage $2.0\,\text{V}$, as it should be on a steep curve.
+
+Justification for c): the voltage changes only $0.10\,\text{V}$, about $5\,\%$, although the current grows to more than four times. So the voltage of the LED can be kept constant, and the voltage $U - U_\text{D}$ is left for the series resistor, which determines the current.
+
+Without the resistor the current would be determined by the steep curve alone, and even a small increase in voltage would make the current large.
 
 ## fy6-14-L2-09
 **Given:** the $(U, I)$ graph of a solar panel, voltage $U = 4.0\,\text{V}$

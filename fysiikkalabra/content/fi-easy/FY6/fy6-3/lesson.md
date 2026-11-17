@@ -409,7 +409,9 @@ Konstantaanilangasta halutaan tehdä vastus, jonka resistanssi on $12\,\Omega$. 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $R = 12\,\Omega$, $A = 0{,}20\,\text{mm}^2$ ja $\rho = 5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m}$. Kysytään langan pituutta $l$.
+**Tunnetut ja kysytty.** $R = 12\,\Omega$, $A = 0{,}20\,\text{mm}^2$ ja $\rho = 5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m}$.
+
+Kysytään langan pituutta $l$.
 
 <!-- vaihe -->
 

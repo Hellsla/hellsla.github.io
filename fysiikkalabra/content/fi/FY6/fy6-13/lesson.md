@@ -348,7 +348,9 @@ Kameran salamalaitteen kondensaattorin kapasitanssi on $150\,\mu\text{F}$, ja se
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $C = 150\,\mu\text{F}$, $U = 300\,\text{V}$ ja purkautumisaika $t = 1{,}0\,\text{ms}$. Kysytään energiaa $W$ ja keskimääräistä tehoa $P$.
+**Tunnetut ja kysytty.** $C = 150\,\mu\text{F}$, $U = 300\,\text{V}$ ja purkautumisaika $t = 1{,}0\,\text{ms}$.
+
+Kysytään energiaa $W$ ja keskimääräistä tehoa $P$.
 
 <!-- vaihe -->
 

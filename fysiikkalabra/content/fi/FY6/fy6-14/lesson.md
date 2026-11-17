@@ -563,7 +563,9 @@ Polkupyörän takavalon punaista LEDiä käytetään $6{,}0\,\text{V}$:n paristo
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Lähteen jännite $U = 6{,}0\,\text{V}$, LEDin jännite $U_\text{D} = 2{,}0\,\text{V}$ ja virta $I = 20\,\text{mA}$. Kysytään etuvastuksen resistanssia $R$ ja vastuksen tehoa $P_R$.
+**Tunnetut ja kysytty.** Lähteen jännite $U = 6{,}0\,\text{V}$, LEDin jännite $U_\text{D} = 2{,}0\,\text{V}$ ja virta $I = 20\,\text{mA}$.
+
+Kysytään etuvastuksen resistanssia $R$ ja vastuksen tehoa $P_R$.
 
 <!-- vaihe -->
 

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ff4878db594db81d
+CONTENT-HASH: 9b75b63b83a33ce0
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] sheet 1 #4: the break falls inside a bracket (`… + 0.60` / `+ 0.50) A · 1.0 h`); readable.
+- none new
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-1-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L2-1280-6 (charge/current solution card: Substitution, Answer, Reasonableness) plus the diff read in full.
+- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

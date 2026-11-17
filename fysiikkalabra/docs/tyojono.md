@@ -280,6 +280,14 @@ järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-
 ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
 
+FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
+esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
+(kierros 2 niille 24 tehtäväsarjalle, joissa kierros 1 löysi katkoja kesken osien). Sääntö, jonka kierros 1 opetti: kun
+askeleessa on osamerkit a), b) … tai (1), (2), katko tulee osamerkin eteen, ei osan keskelle. Yhdeksi kappaleeksi jäivät
+askeleet, joiden vastausluvut ovat myöhemmissä osissa (answers_shown), ja muutama virkerajaton kohta. Polish (vain kirjattu):
+uusi kappale alkaa joskus pronominilla ("Se …"), jonka viittauskohde on edellisessä kappaleessa (fi-easy fy6-9…fy6-11,
+fy6-13, fy6-15; korjaus vaatisi sanamuodon muutoksen); en fy6-16:n kaapelivirtatehtävän Answer päättyy osamerkkiin "a)".
+
 FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
 (`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
 tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastausluku on b)-kohdassa (fy5-2 L2-06,
@@ -425,6 +433,18 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
+
+## 8m. Monivalinnan vaihtoehdot verrataan avaimittain katselmoinnin laajuudessa (koordinaattori 2026-11-17)
+
+Varattu: claude/reviews-json-avaimittain (jaettu: scripts/reviews.py, test_reviews.py; yhdistetään yksin)
+
+`reviews.py scope` vertasi exercises.json- ja inquiry.json-tiedostot riveittäin (difflib). Kun monivalinnan
+vaihtoehdot kirjoitettiin uudelleen, muuttumaton rivi kuten `"correct": true` kohdistui toiseen kohtaan ja näkyi
+poistettuna ja lisättynä, joten muutos sai luokan `experiment` ja tiede- ja pedagogiikkakatselmoinnista tuli FULL
+(8j FY5, PR #661: fy5-7, fy5-11 ja fy5-17 palautettiin, koska täydet katselmoinnit olisivat maksaneet noin 1 M tokenia).
+Korjaus: JSON verrataan avaimittain (polku id:n tai indeksin mukaan), joten muuttumaton avain–arvo-pari ei ole muutos.
+Pelkkä vaihtoehdon tekstin muutos on `wording` tai `numbers` (delta); muuttunut `correct`, alkutila tai vastaus on
+edelleen `experiment` (täysi katselmointi), samoin lisätty tai poistettu vaihtoehto, jolla on `correct`.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 

@@ -492,7 +492,9 @@ Kaksi pientä metallipalloa on eristetangoilla niin, että pallojen keskipisteid
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $q_1 = +12\,\text{nC}$, $q_2 = -8{,}0\,\text{nC}$ ja $r = 6{,}0\,\text{cm}$. Kysytään voiman suuruutta $F$ ja sitä, vetävätkö vai hylkivätkö pallot toisiaan.
+**Tunnetut ja kysytty.** $q_1 = +12\,\text{nC}$, $q_2 = -8{,}0\,\text{nC}$ ja $r = 6{,}0\,\text{cm}$.
+
+Kysytään voiman suuruutta $F$ ja sitä, vetävätkö vai hylkivätkö pallot toisiaan.
 
 <!-- vaihe -->
 

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 14160b7c35b760a5
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 2a2a90599c87d863
+Mode: delta (md-paragraphs: paragraph breaks in solutions, work queue 8c)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy6-6 L2-06 Järkevyys: "4-kertaiseksi" wraps at the hyphen ("4-" / "kertaiseksi") on 1280 px; not from this diff, optional `$4\\text{-kertaiseksi}$` with a non-breaking form.
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-6-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- fy6-6 review/shots fy6-6-open-exercises-L2-1280-8 (Järkevyys split in the lamp task, task 6-15 below it): break after the resistance values, second paragraph starts with the explanation; reads naturally. The Vastaus splits (L2 and L3 solutions) read from source, same pattern.
+- Judged at 1280 px (open-solution captures; the exercise captures exist at that width only); the breaks are plain paragraph spacing inside the solution card, no new element, so the 390 px layout follows the same card flow.
 
 ## Scores
 illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

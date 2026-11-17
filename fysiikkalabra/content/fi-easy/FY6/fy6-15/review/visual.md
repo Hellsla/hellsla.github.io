@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7e4400d1f6c83036
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 5a27937209023c40
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-15-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
-
-## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+batch delta review: the only change is the stage-1 paragraph break (knowns, then "Kysytään ..." as its own paragraph); read the diff and opened the fy6-10 and fy6-16 example-390 captures (the same stage pattern, current for this hash): the break reads naturally, no one-word orphan, spacing even, nothing clipped.

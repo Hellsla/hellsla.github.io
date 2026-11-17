@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bf6889e7af52c433
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: c569d8c95da8ef68
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy6-1 solutions.md c): the pronoun-opening 'Se' paragraphs stay as they are (word change not allowed).
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-1-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- fy6-1-open-exercises-L2-1280-8 (L2-07 a)/b)/c) breaks, formulas, card spacing) ; L1 'Piiri A/B' change judged from the diff text: breaks now fall before b) and c), round-1 finding resolved.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

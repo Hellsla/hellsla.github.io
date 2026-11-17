@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 049f9f3c30c00322
+CONTENT-HASH: 21672faf3c60a0f2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] sheet 3 #25: the unit `N · m²` is split across rows (`… N` / `· m²,`), so `· m²` reads as a factor; keep the unit in one row.
+- [Minor] solutions.md, the "Answer ... ball charge doubled" task — "The product of the charges doubles ..." follows the previous paragraph with no blank line, so the paragraph gap is missing there; add a blank line.
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-10-exercises-1-4, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta: solutions.md paragraph breaks only. Opened fy6-10-open-exercises-L3-1280-5 (10-23, Principle in four short paragraphs), plus the changed-text diff for every task.
+- Breaks fall at sentence boundaries, one thing per paragraph, no one-word paragraph, spacing inside the solution card even, nothing clipped, formulas and units unchanged.
+- 390 px captures not opened separately.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

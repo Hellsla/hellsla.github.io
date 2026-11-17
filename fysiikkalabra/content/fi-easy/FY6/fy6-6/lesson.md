@@ -309,7 +309,9 @@ Auton lisälämmittimessä on kaksi lämmitysvastusta, $R_1 = 15\,\Omega$ ja $R_
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 15\,\Omega$, $R_2 = 30\,\Omega$ ja $t = 5{,}0\,\text{min}$. Kysytään tehoja $P_1$ ja $P_2$ sekä energiaa $E$.
+**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 15\,\Omega$, $R_2 = 30\,\Omega$ ja $t = 5{,}0\,\text{min}$.
+
+Kysytään tehoja $P_1$ ja $P_2$ sekä energiaa $E$.
 
 <!-- vaihe -->
 
