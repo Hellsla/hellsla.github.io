@@ -350,6 +350,33 @@
           "feedback": "The difference cannot be compared directly with the uncertainty $\\Delta k$, because they have different units. The uncertainty of the Planck constant is $\\Delta h = e\\,\\Delta k$, that is $0.34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, and the difference $0.25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ is smaller than it."
         }
       ]
+    },
+    {
+      "id": "fy8-6-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-6/ryhma",
+      "text": "The figure shows the threshold voltages $U_\\text{k}$ of the LEDs a group measured as a function of the frequency $f$ of the light, with the line fitted to them. Use the speed of light $c = 2.998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Read from the line in the figure the frequency $f$ at which the threshold voltage is $2.30\\,\\text{V}$.\n\nb) Calculate the wavelength $\\lambda = \\tfrac{c}{f}$ that corresponds to this frequency and decide what colour the LED is.\n\nWrite in the box the wavelength of part b) in nanometres.",
+      "answer": 517,
+      "unit": "nm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-6-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-6/ryhma",
+      "text": "The figure shows the threshold voltages $U_\\text{k}$ of the LEDs a group measured as a function of the frequency $f$ of the light, with the line fitted to them. Use the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ and $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Read from the line the threshold voltage at the frequency $f = 7.0 \\cdot 10^{14}\\,\\text{Hz}$.\n\nb) Calculate the same voltage from the simple model $U_\\text{k} = \\tfrac{hf}{e}$ and subtract the value read in part a).\n\nc) Explain in words why the measured threshold voltage is lower than the model gives.\n\nWrite in the box the difference of part b) in volts.",
+      "answer": 0.095,
+      "unit": "V",
+      "tolerance": 0.1
     }
   ],
   "level3": [
