@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: kenttä levyjen välissä",
+      "title": "Kertaa: teho ja energia",
       "optional": true,
-      "prompt": "Kahden yhdensuuntaisen metallilevyn välinen jännite on $300\\,\\text{V}$, ja levyjen etäisyys on $2{,}0\\,\\text{mm}$. Kuinka voimakas sähkökenttä levyjen välissä on?",
+      "prompt": "Kameran salaman teho on $4{,}0\\,\\text{kW}$, ja välähdys kestää $1{,}0\\,\\text{ms}$. Kuinka paljon energiaa välähdyksessä vapautuu?",
       "choices": [
         {
-          "text": "$150\\,\\text{kV/m}$",
+          "text": "$4{,}0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein. Homogeenisen kentän voimakkuus on $$\\begin{aligned} E &= \\tfrac{U}{d} \\\\ &= 300\\,\\text{V} : 0{,}0020\\,\\text{m} \\\\ &= 150\\,000\\,\\text{V/m} \\end{aligned}$$ (luku *Homogeeninen sähkökenttä*). Tänään samanlaisista levyistä tehdään kondensaattori."
+          "feedback": "Oikein. Energia on teho kertaa aika: $$\\begin{aligned} E &= Pt \\\\ &= 4000\\,\\text{W} \\cdot 0{,}0010\\,\\text{s} \\\\ &= 4{,}0\\,\\text{J} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään selvitetään, mihin salamaa varten tarvittava energia varastoidaan."
         },
         {
-          "text": "$150\\,\\text{V/m}$",
-          "feedback": "Jaoit jännitteen millimetreillä. Kentän yksikkö on $\\text{V/m}$, joten etäisyys muutetaan metreiksi: $2{,}0\\,\\text{mm} = 0{,}0020\\,\\text{m}$, ja $$\\begin{aligned} E &= 300\\,\\text{V} : 0{,}0020\\,\\text{m} \\\\ &= 150\\,\\text{kV/m} \\end{aligned}$$."
+          "text": "$4{,}0\\,\\text{kJ}$",
+          "feedback": "Unohdit muuttaa ajan sekunneiksi. $1{,}0\\,\\text{ms} = 0{,}0010\\,\\text{s}$, joten $E = Pt$, eli $E = 4{,}0\\,\\text{J}$."
         },
         {
-          "text": "$0{,}60\\,\\text{V/m}$",
-          "feedback": "Kerroit jännitteen ja etäisyyden. Kenttä on jännite etäisyyttä kohti, $E = \\tfrac{U}{d}$: mitä lähempänä levyt ovat, sitä voimakkaampi kenttä samalla jännitteellä. Oikea arvo on $150\\,\\text{kV/m}$."
+          "text": "$4{,}0\\,\\text{mJ}$",
+          "feedback": "Teho on $4{,}0\\,\\text{kW} = 4000\\,\\text{W}$, ei $4{,}0\\,\\text{W}$. Silloin $E = Pt$, joten $E = 4{,}0\\,\\text{J}$."
         }
       ]
     },

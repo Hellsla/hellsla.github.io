@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 39146c60089b3711
+CONTENT-HASH: e94aa10a1ea5c8d7
 
 ## Blocking
 
 ## Polish
-- None.
+- The 184 A option's feedback gives only the answer; one line `230 V : 46 Ω` as in the others would be more uniform.
 
 ## Checked
-- Every number, unit and $...$ formula in lesson.md, inquiry.json, figures.json and the exit ticket is identical to the Finnish reference (numeral multiset equal).
-- Fixed: inquiry.json tarkistus-2 said "sisäenergiaksi eli lämmöksi", which equates internal energy with heat; the Finnish reference (round-1 fix) says only "sisäenergiaksi". Now matches.
-- Sähköenergia becomes sisäenergia, heat is transferred to the surroundings; no 'muuttuu lämmöksi' remains.
-- Worked example, error task, kettle and cord solutions recomputed and complete.
-- meta.json key_concepts: 3 items, explanations 17-21 words, no digits, no $; correct (power per second, P = RI^2 quadruples with doubled current, electrical energy to internal energy).
-- sims.fy6-6 labels equal the Finnish ones.
-- Re-review after the concept-review commit: heat-transfer wording (energy transferred as heat to the surroundings), Joule-law condition (same resistor, resistance constant), points no longer called measured (ex-pi), all matching the Finnish; no numbers changed; figure descriptions regenerated and captures retaken.
+batch delta review: retrieval 230 V : 46 Ω = 5,0 A, distractors 0,20 A (R:U), 11 kA (U·R = 10 580), 184 A (U - R) recomputed; consistent with exit-1 (1150 W toaster at 5,0 A); photo caption (high-resistance wire takes nearly all the power, same current in the cord, P = RI²) correct; stage split without number changes.

@@ -1,13 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 1801dc8d3de815ed
-
+CONTENT-HASH: 3759ce8adef926a5
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
-- Lesson path, activities and figure placement unchanged; the figures sit beside their paragraphs and their captions still match the text.
-- The added descriptions serve exercise option figures and do not change the lesson's workload or learning path.
+batch delta review: new retrieval task and feedback (current and charge (Q = It; distractors divide, invert, add)); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.

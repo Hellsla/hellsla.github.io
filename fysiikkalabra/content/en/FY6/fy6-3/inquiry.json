@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: connecting the meters",
-      "prompt": "You want to measure the voltage across a lamp and the current through the lamp at the same time. How are the meters connected?",
+      "title": "Review: current and charge",
+      "prompt": "A current of $4.0\\,\\text{A}$ flows through the heating wire of a toaster. How much charge passes through the cross-section of the wire in $10\\,\\text{s}$?",
       "choices": [
         {
-          "text": "The ammeter in series with the lamp and the voltmeter in parallel with the lamp.",
+          "text": "$40\\,\\text{C}$",
           "correct": true,
-          "feedback": "Correct. The same current must flow through the ammeter as through the lamp, so it is in the same branch of the circuit as the lamp. A voltmeter measures the voltage between two points, so it is connected across the terminals of the lamp (chapter *Measurements in an electric circuit*)."
+          "feedback": "Correct. Current is the charge passing in a unit of time, so $Q = It$: $$\\begin{aligned} Q &= 4.0\\,\\text{A}\\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$ (chapter *Circuit, electric current and voltage*). Today we ask what decides how large a current a given voltage drives through a component."
         },
         {
-          "text": "Both meters in series with the lamp, so that the current flows through all of them.",
-          "feedback": "The resistance of a voltmeter is very large, so in series it almost cuts off the current and the lamp goes out. A voltmeter is connected in parallel with the component whose voltage is measured (chapter *Measurements in an electric circuit*)."
+          "text": "$2.5\\,\\text{C}$",
+          "feedback": "You divided the time by the current. The charge is the current times the time, $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$: each second $4.0\\,\\text{C}$ passes, so more time means more charge."
         },
         {
-          "text": "The ammeter in parallel with the lamp and the voltmeter in series with the lamp.",
-          "feedback": "The meters have swapped places. The resistance of an ammeter is very small, so in parallel almost all the current would flow through the meter and bypass the lamp. An ammeter goes in series, a voltmeter in parallel."
+          "text": "$0.40\\,\\text{C}$",
+          "feedback": "You divided the current by the time. Current is charge divided by time, $I = Q : t$, so the charge is $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         },
         {
-          "text": "Both meters in parallel with the lamp, because they measure the lamp.",
-          "feedback": "An ammeter connected in parallel would bypass the lamp, because its resistance is very small. To measure a current, the current must flow through the meter, so the ammeter is connected in series."
+          "text": "$14\\,\\text{C}$",
+          "feedback": "Current and time are different quantities and cannot be added. Charge is their product: $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         }
       ],
       "optional": true

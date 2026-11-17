@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 16a4839bc698252a
+CONTENT-HASH: f7ad38a15577cf64
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] sheet 1 #3: `v` stands alone on its row before `= √…`; acceptable (long right side), could keep `v =` with the root.
+- none
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-12-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta round 2: the diff is a space added after the display formula before "(chapter ...)" in the Kertaa feedback (plus "we get" in fy6-8).
+- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (preview/en); the spacing renders well, with no stray indent, clipping or overflow. This lesson shares the same one-character change.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

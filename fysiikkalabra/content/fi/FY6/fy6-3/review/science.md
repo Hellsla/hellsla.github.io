@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fe692166241c80f6
+CONTENT-HASH: 406e00c3400719ee
 
 ## Blocking
 
-None.
-
 ## Polish
-
-None.
+- lesson-answers.py: none.
 
 ## Checked
-
-batch delta review: the misconception paragraph now restricts the constant resistance to an ohmic resistor at constant temperature and conditions, with I ∝ U following from it; this is consistent with the next sentences (R depends on material, length, thickness and temperature; the bulb's R rises because the filament heats). Filament-bulb caption: the tungsten filament glows when current flows, and electron–ion collisions turning electrical energy into internal energy is a fair classical picture at this level (C). No number, option or feedback changed.
+batch delta review: kertaus Q = It recomputed (40 C; distractors 2,5 = t/I, 0,40 = I/t, 14 = I+t, each feedback names its error), one correct option, lesson-answers.py runs; reflowed chains and approved formula names not re-judged.

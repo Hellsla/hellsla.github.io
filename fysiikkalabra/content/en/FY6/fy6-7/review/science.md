@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b7a77d887517552d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: ea181c76ebfe8c83
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson-answers.py: the comment still says "lamp ... 0,26 A", and "535 W" should be Ω.
 
 ## Checked
-- P = UI for mains now conditioned: in-phase current and voltage (heating devices) or power factor ≈ 1; general AC active power depends on phase difference (= fi). 2000 W / 230 V ≈ 8,7 A unchanged and correct.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): P = UI = 230 V · 0.43 A = 98.9 ≈ 99 W; U/I ≈ 535 ≈ 530 Ω correctly called a resistance; 0.43 W distractor; one correct option. P = UI for a TV is a fair simplification (C).

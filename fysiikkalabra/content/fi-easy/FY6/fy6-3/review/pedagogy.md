@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7f59adac9f04c880
+CONTENT-HASH: 911ad44be0a90440
 
 ## Blocking
-(none)
+none
 
 ## Polish
-(none)
+- Kertaa feedback: after the display block `(luku ...)` follows without a space; add one.
 
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
-- Lesson path, activities and figure placement unchanged; the figures sit beside their paragraphs and their captions still match the text.
-- The added descriptions serve exercise option figures and do not change the lesson's workload or learning path.
+batch delta review: retrieval choice Q=It (40 C; distractors 2,5/0,40/14 each a real slip, feedback repairs), answers.py, re-broken rows.

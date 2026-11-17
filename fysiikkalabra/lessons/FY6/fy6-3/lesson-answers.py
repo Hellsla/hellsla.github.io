@@ -59,4 +59,8 @@ a["tark2"] = 2.20 / 0.100                             # 22 Ω
 a["tark2-inv"] = 0.100 / 2.20                         # mistake: I : U = 0,045
 # check 1: doubling U through a resistor at constant temperature: R stays 10 Ω, I doubles
 a["tark1-I"] = 2 * a["koe1-I-1.5"]
+# kertaus: toaster wire 4,0 A for 10 s
+a["kertaus-Q"] = 4.0 * 10                                    # 40 C
+a["kertaus-Q-div"] = 10 / 4.0                                # 2,5 (t:I)
+a["kertaus-Q-I"] = 4.0 / 10                                  # 0,40 (I:t)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

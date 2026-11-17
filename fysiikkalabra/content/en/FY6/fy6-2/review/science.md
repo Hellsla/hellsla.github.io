@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ca8401bb91b5326f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 335c1ffa7490ccc4
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Multimeter: jack assignment framed as the example meter; meters differ, check markings and manual (= fi).
-- New sentences: ammeter must not be connected across source terminals; school lab uses safe low-voltage sources as instructed (= fi). Physics of the wrong-connection paragraph unchanged.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+- batch delta review: the review choice's new prompt (battery, lamp and resistor in a row, lamp lit) fits all four options; exactly one correct (current through a cross-section, voltage between two points), each distractor's feedback still says why it is wrong and none conflicts with the series situation; exit-ticket change is presentation only; hash same at start and end.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 21a75d71bb08aab7
+CONTENT-HASH: ea181c76ebfe8c83
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 21a75d71bb08aab7
 - none
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-7-lesson-1-2, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta round 2: the diff is a space added after the display formula before "(chapter ...)" in the Kertaa feedback (plus "we get" in fy6-8).
+- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (preview/en); the spacing renders well, with no stray indent, clipping or overflow. This lesson shares the same one-character change.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
