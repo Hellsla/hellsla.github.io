@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 14d0a1a2f2136aed
+CONTENT-HASH: f1f9856c52feb3eb
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: round-1 finding fixed: all three feedbacks now give 19,8° (asin(sin 30°/1,48) = 19,75°, lesson-answers match); toward the normal is the one correct option; distractor feedback right; Ennuste 1 (14°/15°: 80,59°/79,93° vs 80,57°) and Ennuste 2 (70,25° vs 42,51°/80,57°) rechecked and not revealed.
+- Delta, round 3: retrieval (air n = 1,00 into glass n = 1,48 at 30°) recomputed with my own script: sin α2 = 0,5 : 1,48 = 0,3378, α2 = 19,745° -> 19,7°; lesson-answers.py kertaus-alpha2 prints 19.745198, the same.
+- All three feedbacks of the retrieval item now say 19,7°; no 19,8° left in inquiry.json or lesson.md.
+- Toward the normal is still the one correct option; both distractors' feedback is still right.
+- Hash the same at start and end.

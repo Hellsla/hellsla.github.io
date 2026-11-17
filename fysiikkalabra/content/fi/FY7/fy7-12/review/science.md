@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4a1385424308d9f5
+CONTENT-HASH: fb3b370ff079bc9a
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: round-1 blocking item fixed: retrieval now air -> glass n = 1,48 at 30°, α2 = 19,75° -> 19,8° recomputed, toward the normal the only correct option, both distractors' feedback right and no stale 41,7° left; lesson-answers key; lesson.md presentation only; does not reveal either Ennusta (critical angle, core/cladding).
+- Delta, round 3: retrieval (air n = 1,00 into glass n = 1,48 at 30°) recomputed with my own script: sin α2 = 0,5 : 1,48 = 0,3378, α2 = 19,745° -> 19,7°; lesson-answers.py kertaus-alpha2 prints 19.745198, the same.
+- All three feedbacks of the retrieval item now say 19,7°; no 19,8° left in inquiry.json or lesson.md.
+- Toward the normal is still the one correct option; both distractors' feedback is still right (away from the normal only from larger to smaller n; an oblique ray always refracts).
+- Hash the same at start and end.

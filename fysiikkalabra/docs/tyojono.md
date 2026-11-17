@@ -101,10 +101,10 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
-Varattu (FY7, 0f-läpikäynti PR 2: 8j + vanhentuneet tehtäväkatselmoinnit): claude/fy7-lapikaynti-2
 Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`), FY6 (0f-PR #675: fy6-2…14; `docs/audits/2026-11-17-8j-FY6.md`).
 FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; PR #676).
-Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit), FY3, FY7, FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
+FY7 tehty (0f-PR 2: fy7-1, 3–10, 12–14; `docs/audits/2026-11-17-8j-FY7.md`).
+Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit), FY3, FY8 (ja fy2-1). Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
 ## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
