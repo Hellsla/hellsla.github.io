@@ -2,14 +2,16 @@ VERDICT: PASS
 CONTENT-HASH: 1c95d0d9f489d9e6
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy3-11-L2-10 Järkevyys — the new "Perustelu:" paragraph and the following paragraph are short and clear; no fix needed.
+- none
 
 ## Checked
-- Delta: solutions.md only cut into paragraphs (md-paragraphs); changed items L2-10, L3-04, L3-05 read in source (diff).
-- Captures opened (current stamp: exercises hash 1c95d0d9f489d9e6): fy3-11-open-exercises-L3-1280-5 (L3 solution with aligned Sijoitus chains, Vastaus box, Järkevyys block; next task L2-10 card opens cleanly). No clipping or overflow. Other changed items by source diff only.
+- Delta: solutions.md only cut into paragraphs (md-paragraphs): the Järkevyys and Perustelu blocks, words unchanged. No 360 px captures exist; judged at 390 px.
+- 1280 px (lesson's review/shots): fy3-11-open-exercises-L2-1280-6.png (solution open: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus; chains aligned) and fy3-11-open-tarkista-1280-1.png (answers and feedback open).
+- 390 px: fy3-11-example-390-3.png (long paragraph block under 120 words, readable) and fy3-11-example-390-1.png (cards and chains fit the column).
+- Layout survived; nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

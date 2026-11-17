@@ -2,14 +2,16 @@ VERDICT: PASS
 CONTENT-HASH: ebc0dbaacb3c6385
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy3-12-L3-03/04 Mallivastaus — new paragraphs begin "Se lisää ultraviolettisäteilyä…" (referent: otsonikato, in the last sentence before); clear but a repeated noun ("Otsonikato lisää…") would help a skimming S2 reader.
+- none
 
 ## Checked
-- Delta: solutions.md only cut into paragraphs (md-paragraphs); changed items L1-07, L1-08, L2-05, L2-08, L3-03…05 read in source (diff).
-- Captures opened (current stamp: exercises hash ebc0dbaacb3c6385): fy3-12-open-exercises-L2-1280-8 (solution with aligned chains and next task card, no clipping). Other changed items by source diff only.
+- Delta: solutions.md only cut into paragraphs (md-paragraphs): the Vastaus note and two Mallivastaus blocks, words unchanged. No 360 px captures exist; judged at 390 px.
+- 1280 px (lesson's review/shots): fy3-12-open-exercises-L2-1280-7.png (solution open: Sijoitus, Vastaus, Järkevyys, Mallivastaus b) with two paragraphs; chains aligned) and fy3-12-open-tarkista-1280-1.png (answers open).
+- 390 px: fy3-12-example-390-2.png and fy3-12-stage-tarkista-390-1.png (cards and chains fit, no overflow).
+- Layout survived; blocks in order.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
