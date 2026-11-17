@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Review: velocity in circular motion",
       "optional": true,
-      "prompt": "An object goes round a circular path so that its tangential speed stays the same all the time. Which statement about its velocity $\\overline{v}$ is true?",
+      "prompt": "A car drives round a curve shaped like an arc of a circle so that its speedometer shows the same reading all the time. Which statement about the velocity $\\overline{v}$ of the car is true?",
       "choices": [
         {
           "text": "The magnitude of the velocity stays the same, but its direction changes.",
           "correct": true,
-          "feedback": "Correct. As you learned in the chapter *Moving in a circle: period and speed*, the velocity is always along the tangent of the path, so its direction turns as the object goes round. This chapter finds out what the change of direction means for acceleration and forces."
+          "feedback": "Correct. As you learned in the chapter *Moving in a circle: period and speed*, the velocity is always along the tangent of the path, so its direction turns as the car drives round the curve. This chapter finds out what the change of direction means for acceleration and forces."
         },
         {
-          "text": "The velocity stays completely the same, because the speed of the object does not change.",
-          "feedback": "The speed, that is the magnitude of the velocity, stays the same, but velocity is a vector that also has a direction. On a circular path the direction is always along the tangent of the path, so it keeps changing."
+          "text": "The velocity stays completely the same, because the speed of the car does not change.",
+          "feedback": "The speed, that is the magnitude of the velocity, stays the same, but velocity is a vector that also has a direction. In the curve the direction is always along the tangent of the path, so it keeps changing."
         },
         {
           "text": "The velocity points all the time straight to the centre of the path.",
-          "feedback": "The velocity is along the tangent of the path, that is perpendicular to the radius. If the velocity pointed to the centre, the object would move towards the centre and not along the circle."
+          "feedback": "The velocity is along the tangent of the path, that is perpendicular to the radius. If the velocity pointed to the centre, the car would move towards the centre and not along the curve."
         }
       ]
     },

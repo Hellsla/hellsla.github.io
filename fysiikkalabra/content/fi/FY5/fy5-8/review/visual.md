@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f77e5b7fe159add4
+CONTENT-HASH: 60d8f5dd180ec649
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] fy5-8 kertaus — "Tässä luvussa tämä ero on tärkeä." is vague; say what the difference is (the spring's force on the hand vs the hand's on the spring).
 
 ## Checked
-batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.
+- batch delta review: Pohdinta stage capture (herata-390) and the retrieval box rendered at 390 px in the preview build with the wrong and right feedback opened; typography, Finnish and layout of the rewritten kertaus judged.

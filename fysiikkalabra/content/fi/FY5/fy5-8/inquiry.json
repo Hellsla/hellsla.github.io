@@ -26,24 +26,24 @@
       "type": "choice",
       "title": "Kertaa: Newtonin kolmas laki",
       "optional": true,
-      "prompt": "Käsi vetää seinään kiinnitetyn jousen päätä oikealle $5{,}0\\,\\text{N}$:n voimalla, ja jousi on levossa. Kuinka suurella voimalla ja mihin suuntaan jousi vetää kättä?",
+      "prompt": "Pelaaja vetää flipperin männän nuppia taaksepäin $5{,}0\\,\\text{N}$:n voimalla ja pitää sitä paikallaan. Kuinka suurella voimalla nuppi vetää pelaajan kättä?",
       "choices": [
         {
-          "text": "$5{,}0\\,\\text{N}$:n voimalla vasemmalle.",
+          "text": "$5{,}0\\,\\text{N}$:n voimalla.",
           "correct": true,
-          "feedback": "Oikein. Kuten luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, kaksi kappaletta vaikuttaa toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla. Käden voima vaikuttaa jouseen, jousen voima käteen. Tässä luvussa tämä ero on tärkeä."
+          "feedback": "Oikein. Kuten luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, kaksi kappaletta vaikuttaa toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla. Käden voima vaikuttaa nuppiin, nupin voima käteen. Tässä luvussa tämä ero on tärkeä."
         },
         {
-          "text": "Ei millään voimalla, koska jousi on levossa.",
-          "feedback": "Levossa olevaan jouseen vaikuttavat voimat kumoavat toisensa, mutta jousi vaikuttaa silti kumpaankin päähänsä. Newtonin kolmannen lain mukaan jousi vetää kättä yhtä suurella voimalla, $5{,}0\\,\\text{N}$, vastakkaiseen suuntaan eli vasemmalle."
+          "text": "Ei millään voimalla, koska nuppi on levossa.",
+          "feedback": "Levossa olevaan nuppiin vaikuttavat voimat kumoavat toisensa, mutta nuppi vaikuttaa silti käteen. Newtonin kolmannen lain mukaan nuppi vetää kättä yhtä suurella voimalla kuin käsi nuppia, $5{,}0\\,\\text{N}$:n voimalla."
         },
         {
-          "text": "$5{,}0\\,\\text{N}$:n voimalla oikealle.",
-          "feedback": "Vuorovaikutuksen voimat ovat vastakkaissuuntaiset. Käsi vetää jousta oikealle, joten jousi vetää kättä vasemmalle, yhtä suurella voimalla $5{,}0\\,\\text{N}$."
+          "text": "Pienemmällä voimalla kuin $5{,}0\\,\\text{N}$, koska jousi puristuu.",
+          "feedback": "Jousen puristuminen ei pienennä vastavoimaa. Newtonin kolmannen lain mukaan vuorovaikutuksen voimat ovat aina yhtä suuret: nuppi vetää kättä $5{,}0\\,\\text{N}$:n voimalla."
         },
         {
-          "text": "Pienemmällä voimalla vasemmalle, koska jousi venyy.",
-          "feedback": "Venyminen ei pienennä vastavoimaa. Newtonin kolmannen lain mukaan voimat ovat aina yhtä suuret: jousi vetää kättä $5{,}0\\,\\text{N}$:n voimalla vasemmalle."
+          "text": "Suuremmalla voimalla kuin $5{,}0\\,\\text{N}$, koska jousi on puristunut.",
+          "feedback": "Jousen puristuminen ei kasvata vastavoimaa. Nupin ja käden vuorovaikutuksessa voimat ovat aina yhtä suuret (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*): nuppi vetää kättä $5{,}0\\,\\text{N}$:n voimalla."
         }
       ]
     },

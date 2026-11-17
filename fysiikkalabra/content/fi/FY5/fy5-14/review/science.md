@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 26a3b88ee71206d3
+CONTENT-HASH: 2803d6a2137afd31
 
 ## Blocking
-None.
 
 ## Polish
-1. glossary.json (outside the hash): "huojunta" and "Doppler-ilmiö" still use f_h, v_s, v_h; update to f_H, v_L, v_H when next edited.
+
 
 ## Checked
-Delta review (fi): inquiry.json siirto solution, Järkevyys: "huojuvan" / "waver" replaced by "korkeuden vaihtelevan" / "the pitch vary". This fixes the earlier polish item: the effect is a periodic Doppler shift of pitch, not beats (which need two superposed frequencies). Numbers unchanged and recomputed: f_max = 2000 Hz · 340/(340 − 12,566) = 2076,8 Hz, f_min = 1928,7 Hz, twice a second (T = 0,500 s). Nothing else in the lesson changed since the passed version.
+batch delta review: Kertaus re-set as the stationary siren: λ = v/f = 340/700 = 0,486 ≈ 0,49 m (source at rest, so no Doppler shift, stated); distractors f/v = 2,06 (unit 1/m, said) and v·f = 238 000 wrong with correct feedback; one correct option; lesson-answers.py agrees. Worked-example paragraph splits: numbers unchanged (341, 286, 55 Hz).

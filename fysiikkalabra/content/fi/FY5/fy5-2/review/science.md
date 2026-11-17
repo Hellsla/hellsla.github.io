@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2834614bb3a402d4
+CONTENT-HASH: 5e2d08d0cb1ccd69
 
 ## Blocking
 
 ## Polish
+- The F/r distractor is labelled "noin 63 Nm"; its feedback could add that F/r would not even have the unit Nm (N/m).
 
 ## Checked
-- light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context, not a full review; tipping paragraph: the definition of tukipinta (box base, area between a chair's legs), the vertical through the centre of mass, the moment of the weight about the support edge (restoring inside, tipping outside) and tipping (rotation about an edge) vs sliding (prevented by friction) are correct and agree with the kaatuu figure's caption.
+batch delta review: Kertaus: M = Fr = 50 N · 0,80 m = 40 Nm, lever arm correct because weight is vertical and plank horizontal; distractors F/r = 62,5 ("noin 63") and 50 Nm wrong with correct feedback; one correct option. lesson-answers.py agrees. Diving-board solution and hint reflow: numbers unchanged (1079,1 N, 1962 N).

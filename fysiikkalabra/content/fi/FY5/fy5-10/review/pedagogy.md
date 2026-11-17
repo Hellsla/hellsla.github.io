@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 14a6b7b2f3b670f5
+CONTENT-HASH: 970d92e06364aff1
 
 ## Blocking
+(none)
 
 ## Polish
+- Kertaus feedback 'sama taajuus siirtyy kädestä narun aaltoon' nudges Ennusta 2 (point P oscillates); cut it.
+- Option 12 Hz feedback is garbled ('kuudesosa siitä, 2,0' lacks unit and sense); say 'jakamalla 12 kuudella sekunnilla saadaan 2,0 Hz'.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru ja sen jännitys' by the rope's properties (tension and mass per unit length) in the theory, worked example, misconception box, sim model notes, experiment 3 title and the conclusion's model answer; the last criterion is observable and now assesses both halves of what the prompt asks about experiment 3. Terms and the tension-only model are consistent.
+batch delta review: kertaus on the rope; hook is a single pulse, periodic shaking accepted; numbers and answers in the diff consistent with answers.py and solutions (not recomputed).

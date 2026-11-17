@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: bbf844f09f395efa
+CONTENT-HASH: ef590b3be059e98f
+
 ## Blocking
 
 ## Polish
-- Otsikossa on *jaksonaika*, mutta teksti ja käsitelista käyttävät vain sanaa *kierrosaika*. Selitykseen voisi lisätä "kierrosaika eli jaksonaika", jotta S2-lukija yhdistää otsikon ja käsitteen.
-- *ratanopeus*: "Nopeus osoittaa radan suuntaan" on epätarkka; "ympyrän tangentin suuntaan" tai "radan kulkusuuntaan" olisi selvempi.
+- The photo caption (edge travels farther than near the axle) states Ennusta 2's answer in the lesson text; fine if the text follows the inquiry, otherwise cut that clause.
+
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: every term is a term the lesson bolds and uses, each explanation is short S2 Finnish, physically correct and consistent with the lesson's own definition, wording, tasks and feedback; no numbers or symbols changed, nothing in the lesson disclosed or removed.
+batch delta review (round 2): round-1 finding resolved: Eetu sentence and teaser gone, radius 1,5 m differs from Ennusta 2 (1,0/2,0 m), feedback says nothing of time or speed; circumference is a real prior skill (pi r, diameter distractors).

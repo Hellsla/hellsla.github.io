@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 91486fc577656c02
+CONTENT-HASH: 5bbb06b345bfe92d
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-light delta review (teacher 2026-11-07): only the passages changed against origin/main were judged, in context; no full review was done even where the tooling asks for one. Support area as the region bounded by the contact points (box base, chair legs), vertical line through the centre of mass, restoring vs toppling moment about the edge, toppling (rotation about an edge) vs sliding prevented by friction: all correct and consistent with the figure.
+batch delta review: kertaus now the hook's paint can, 50 N at 0.80 m on a horizontal overhang, lever arm = horizontal distance since weight vertical; recomputed M = 40 Nm, F/r = 62.5 -> 'about 63', 50 Nm distractors with right feedback; lesson-answers kertaus-M/M-div match; diving-board hint/solution only reflowed (\quad), 1079 N unchanged.

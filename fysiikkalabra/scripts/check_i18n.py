@@ -1,5 +1,9 @@
 """Is every language complete, and does every translation keep the lesson's numbers, formulas and structure?
-Usage: python scripts/check_i18n.py [<lang>]
+Usage: python scripts/check_i18n.py [<lang>] | --lesson <id> [<lang>]
+
+--lesson <id> checks one lesson only (check_lesson.py runs it; teacher 2026-11-17, after fy8-6's translation error
+was found only in CI): its translation in every language that has one (the lesson's checks below) and its title in
+each language's courses.json; the language-wide checks (lang/<lang>.json, other lessons, units) are left to CI.
 
 Finnish (fi) is the source. For every other language, lang/<lang>.json and content/<lang>/ (README "Languages"):
 
@@ -256,7 +260,30 @@ def check_language(lang):
     return errs, notes
 
 
-if __name__ == "__main__":
+def check_one(lid, lang):
+    """The checks of check_language that concern one lesson: its translation into lang (when there is one) and its
+    title in content/<lang>/courses.json. (errors, translated?)"""
+    fi = courses.find_lesson(lid); t = courses.translation(fi, lang); errs = []
+    if not (t / "meta.json").exists(): return errs, False
+    f = ROOT / "content" / lang / "courses.json"
+    tr = json.loads(f.read_text()) if f.is_file() else {}
+    if lid not in tr.get(fi.parent.name, {}).get("lessons", {}): errs.append(f"content/{lang}/courses.json: {fi.parent.name} has no title for {lid}")
+    check_lesson(fi, t, lang, errs)
+    return errs, True
+
+
+if __name__ == "__main__" and sys.argv[1:2] == ["--lesson"]:
+    if len(sys.argv) < 3: sys.exit(__doc__)
+    lid, langs = sys.argv[2], sys.argv[3:] or i18n.languages()[1:]
+    bad, done = 0, []
+    for lang in langs:
+        errs, translated = check_one(lid, lang)
+        for e in errs: print("ERROR", e)
+        if translated: done.append(f"{lang} {len(errs)} error(s)")
+        bad += bool(errs)
+    print(f"{lid}: " + ("; ".join(done) if done else "no translation yet"))
+    sys.exit(1 if bad else 0)
+elif __name__ == "__main__":
     langs = sys.argv[1:] or i18n.languages()[1:]
     if not langs: print(f"lang: {i18n.SOURCE} only (the source language); nothing to compare"); sys.exit(0)
     bad = 0

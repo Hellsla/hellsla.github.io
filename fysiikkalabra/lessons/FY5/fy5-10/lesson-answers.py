@@ -70,4 +70,7 @@ a["tark1-l1"] = 3.0 / 2.0                               # 1,5 m
 a["tark1-l2"] = 1.5 / 2.0                               # 0,75 m
 # exit ticket: f tripled in the same rope -> λ/3
 a["exit-ratio"] = 1 / 3
+# kertaus: the hand makes 12 full vibrations in 6,0 s
+a["kertaus-f"] = 12 / 6.0                                 # 2,0 Hz
+a["kertaus-T"] = 6.0 / 12                                 # 0,50 s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -43,4 +43,8 @@ a["check2-min"] = pi * 0.125 * 11000                     # 4320 (minutes not con
 a["exit-f"] = 15 / 60                                    # 0,25 1/s
 a["exit-T"] = 1 / a["exit-f"]                            # 4,0 s
 a["exit-ratio"] = 9.0 / 3.0                              # 3,0
+# kertaus: the smaller roundabout, r = 1,5 m: one revolution s = 2πr
+a["kertaus-s"] = 2 * math.pi * 1.5                        # 9,42 m -> "noin 9,4 m"
+a["kertaus-s-pir"] = math.pi * 1.5                        # mistake πr: 4,71 m
+a["kertaus-s-d"] = 2 * 1.5                                # mistake: the diameter 3,0 m
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
