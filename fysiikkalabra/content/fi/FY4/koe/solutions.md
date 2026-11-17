@@ -1,19 +1,29 @@
 ## fy4-k1
 
 ### a)
-**Perustelu:** Vaunuun vaikuttavat rinteen suuntaiset voimat ovat koko ajan samat: painon rinteen suuntainen komponentti osoittaa rinnettä alas. Siksi vaunun kiihtyvyys on vakio ja negatiivinen: $(t, v)$-kuvaaja on laskeva suora. Ylös kulkiessaan vaunun nopeus on positiivinen ja pienenee, lakipisteessä se on nolla, ja alas kulkiessaan se on negatiivinen. Kuvaaja B jatkuu siis suorana nollan läpi negatiiviseksi. Kuvaaja A esittää vauhtia eli nopeuden suuruutta, josta suunta puuttuu. Kuvaaja C on vaunun paikan kuvaaja eikä nopeuden, ja kuvaajassa D kiihtyvyys osoittaisi rinnettä ylös.
+**Perustelu:** Vaunuun vaikuttavat rinteen suuntaiset voimat ovat koko ajan samat: painon rinteen suuntainen komponentti osoittaa rinnettä alas. Siksi vaunun kiihtyvyys on vakio ja negatiivinen: $(t, v)$-kuvaaja on laskeva suora.
+
+Ylös kulkiessaan vaunun nopeus on positiivinen ja pienenee, lakipisteessä se on nolla, ja alas kulkiessaan se on negatiivinen. Kuvaaja B jatkuu siis suorana nollan läpi negatiiviseksi.
+
+Kuvaaja A esittää vauhtia eli nopeuden suuruutta, josta suunta puuttuu. Kuvaaja C on vaunun paikan kuvaaja eikä nopeuden, ja kuvaajassa D kiihtyvyys osoittaisi rinnettä ylös.
 
 ### b)
-**Perustelu:** Ainoa kiveen vaikuttava voima on paino, joten kiven kiihtyvyys on koko lennon ajan $g = 9{,}81\,\text{m/s}^2$ alaspäin, myös lakipisteessä. Lakipisteessä nopeus on hetken nolla, mutta se muuttuu koko ajan: hetkeä aiemmin kivi liikkui ylös ja hetkeä myöhemmin alas. Vaihtoehto, jossa kiihtyvyys on nolla, sekoittaa nopeuden ja kiihtyvyyden: jos kiihtyvyys olisi nolla, kivi jäisi leijumaan. Kiihtyvyys ei myöskään osoita nousun aikana ylöspäin, koska nopeus pienenee.
+**Perustelu:** Ainoa kiveen vaikuttava voima on paino, joten kiven kiihtyvyys on koko lennon ajan $g = 9{,}81\,\text{m/s}^2$ alaspäin, myös lakipisteessä. Lakipisteessä nopeus on hetken nolla, mutta se muuttuu koko ajan: hetkeä aiemmin kivi liikkui ylös ja hetkeä myöhemmin alas.
+
+Vaihtoehto, jossa kiihtyvyys on nolla, sekoittaa nopeuden ja kiihtyvyyden: jos kiihtyvyys olisi nolla, kivi jäisi leijumaan. Kiihtyvyys ei myöskään osoita nousun aikana ylöspäin, koska nopeus pienenee.
 
 ### c)
 **Perustelu:** Voimat $F_1$ ja $F_2$ ovat saman vuorovaikutuksen voima ja vastavoima, joten Newtonin III lain mukaan ne ovat joka hetki yhtä suuret ja vastakkaissuuntaiset massoista ja nopeuksista riippumatta. Henkilöauto vaurioituu ja hidastuu enemmän, koska sama voima muuttaa pienemmän massan nopeutta enemmän ($a = \tfrac{F}{m}$), ei siksi, että siihen kohdistuisi suurempi voima.
 
 ### d)
-**Perustelu:** Ylöspäin liikkuva hissi hidastuu, joten sen ja henkilön kiihtyvyys osoittaa alaspäin. Henkilöön vaikuttavat vain paino alas ja tukivoima ylös. Newtonin II lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas, joten $G - N = ma$ ja $N < G$. Liikkeen suunta ei ratkaise, vaan kiihtyvyyden suunta. Tukivoima ja paino eivät ole voima ja vastavoima, koska ne kohdistuvat samaan kappaleeseen; painon vastavoima on henkilön Maahan kohdistama vetovoima.
+**Perustelu:** Ylöspäin liikkuva hissi hidastuu, joten sen ja henkilön kiihtyvyys osoittaa alaspäin. Henkilöön vaikuttavat vain paino alas ja tukivoima ylös. Newtonin II lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas, joten $G - N = ma$ ja $N < G$. Liikkeen suunta ei ratkaise, vaan kiihtyvyyden suunta.
+
+Tukivoima ja paino eivät ole voima ja vastavoima, koska ne kohdistuvat samaan kappaleeseen; painon vastavoima on henkilön Maahan kohdistama vetovoima.
 
 ### e)
-**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liukukitka. Palikka liukuu ylös, joten liukukitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
+**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liukukitka. Palikka liukuu ylös, joten liukukitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A.
+
+Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
 
 ### f)
 **Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $$\begin{aligned} \mu_0 N &= 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\approx 196\,\text{N} \end{aligned}$$ on täysin kehittynyt lepokitka eli lähtökitka, ei lepokitkan arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
@@ -173,7 +183,9 @@
   <foreignObject x="487.5" y="91.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Laatikkoon vaikuttavat paino $\overline{G}$ suoraan alas, lavan tukivoima $\overline{N}$ suoraan ylös ja lepokitka $\overline{F}_{\mu 0}$ eteenpäin, auton kiihtyvyyden suuntaan. Pystysuunnassa laatikko ei kiihdy, joten paino ja tukivoima ovat yhtä suuret. Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja lava liukuisi sen alta eteenpäin: kitka vastustaa tätä liukumistaipumusta. Eteenpäin vievää ”liikevoimaa” ei ole, ja nopeus ja kiihtyvyys piirretään laatikon viereen omina nuolinaan.
+**Mallivastaus:** Laatikkoon vaikuttavat paino $\overline{G}$ suoraan alas, lavan tukivoima $\overline{N}$ suoraan ylös ja lepokitka $\overline{F}_{\mu 0}$ eteenpäin, auton kiihtyvyyden suuntaan. Pystysuunnassa laatikko ei kiihdy, joten paino ja tukivoima ovat yhtä suuret.
+
+Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja lava liukuisi sen alta eteenpäin: kitka vastustaa tätä liukumistaipumusta. Eteenpäin vievää ”liikevoimaa” ei ole, ja nopeus ja kiihtyvyys piirretään laatikon viereen omina nuolinaan.
 
 ### b)
 **Annettu:** $\mu_0 = 0{,}40$, $m = 40\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
@@ -240,7 +252,9 @@
 ### c)
 **Kysytty:** kumpi mittaus vaikuttaa epävarmuuteen enemmän, ja miten mittausta voi parantaa
 **Periaate:** Verrataan suhteellisia epävarmuuksia. Kun suure on lausekkeessa toisessa potenssissa, sen suhteellinen epävarmuus vaikuttaa tulokseen kaksinkertaisena.
-**Mallivastaus:** Nopeuden suhteellinen epävarmuus on $\tfrac{0{,}03}{1{,}50} = 2\,\%$ ja matkan $\tfrac{0{,}01}{0{,}46} \approx 2\,\%$, eli ne ovat yhtä suuret. Nopeus on kuitenkin lausekkeessa $\mu = \tfrac{v^2}{2gs}$ toisessa potenssissa, joten sen osuus kertoimen epävarmuudesta on noin $4\,\%$, kaksi kertaa matkan osuus. Siksi kannattaa parantaa nopeuden mittausta: mitataan valoportin katkaisijan pituus tarkemmin, toistetaan mittaus useita kertoja ja käytetään keskiarvoa, tai määritetään nopeus videoanalyysillä. Toistoista näkee myös satunnaisen hajonnan.
+**Mallivastaus:** Nopeuden suhteellinen epävarmuus on $\tfrac{0{,}03}{1{,}50} = 2\,\%$ ja matkan $\tfrac{0{,}01}{0{,}46} \approx 2\,\%$, eli ne ovat yhtä suuret. Nopeus on kuitenkin lausekkeessa $\mu = \tfrac{v^2}{2gs}$ toisessa potenssissa, joten sen osuus kertoimen epävarmuudesta on noin $4\,\%$, kaksi kertaa matkan osuus.
+
+Siksi kannattaa parantaa nopeuden mittausta: mitataan valoportin katkaisijan pituus tarkemmin, toistetaan mittaus useita kertoja ja käytetään keskiarvoa, tai määritetään nopeus videoanalyysillä. Toistoista näkee myös satunnaisen hajonnan.
 
 ### d)
 **Kysytty:** liukumismatka, kun massa kaksinkertaistuu ja alkunopeus pysyy samana
@@ -292,7 +306,11 @@
 ### d)
 **Kysytty:** nopeuden muutosten ja voimien vertailu sekä selitys
 **Periaate:** Newtonin III laki: vaunut kohdistavat toisiinsa voiman ja vastavoiman. Newtonin II laki impulssin muodossa: $\Delta v = \tfrac{F\,\Delta t}{m}$.
-**Mallivastaus:** Vaunun A nopeus muuttuu arvosta $1{,}5\,\text{m/s}$ arvoon $0{,}60\,\text{m/s}$ eli $-0{,}90\,\text{m/s}$, ja vaunun B nopeus muuttuu $+0{,}60\,\text{m/s}$. Newtonin III lain mukaan vaunut kohdistavat toisiinsa joka hetki yhtä suuret ja vastakkaissuuntaiset voimat, ja voimat vaikuttavat yhtä pitkän ajan. Siksi vaunuihin kohdistuvat impulssit ovat yhtä suuret ja vastakkaissuuntaiset, ja vaunujen liikemäärät muuttuvat yhtä paljon vastakkaisiin suuntiin. Sama impulssi muuttaa raskaamman vaunun nopeutta vähemmän, koska $\Delta v = \tfrac{I}{m}$: nopeuksien muutokset ovat kääntäen verrannolliset massoihin, $\tfrac{0{,}90}{0{,}60} = \tfrac{36\,\text{t}}{24\,\text{t}} = 1{,}5$.
+**Mallivastaus:** Vaunun A nopeus muuttuu arvosta $1{,}5\,\text{m/s}$ arvoon $0{,}60\,\text{m/s}$ eli $-0{,}90\,\text{m/s}$, ja vaunun B nopeus muuttuu $+0{,}60\,\text{m/s}$.
+
+Newtonin III lain mukaan vaunut kohdistavat toisiinsa joka hetki yhtä suuret ja vastakkaissuuntaiset voimat, ja voimat vaikuttavat yhtä pitkän ajan. Siksi vaunuihin kohdistuvat impulssit ovat yhtä suuret ja vastakkaissuuntaiset, ja vaunujen liikemäärät muuttuvat yhtä paljon vastakkaisiin suuntiin.
+
+Sama impulssi muuttaa raskaamman vaunun nopeutta vähemmän, koska $\Delta v = \tfrac{I}{m}$: nopeuksien muutokset ovat kääntäen verrannolliset massoihin, $\tfrac{0{,}90}{0{,}60} = \tfrac{36\,\text{t}}{24\,\text{t}} = 1{,}5$.
 
 ### Yleisiä virheitä
 - Liike-energian oletetaan säilyvän, jolloin yhteiseksi nopeudeksi saadaan väärä arvo.
@@ -369,7 +387,9 @@
   <foreignObject x="406.5" y="257" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Levyn voima kasvaa ponnistuksen alussa nopeasti noin $1500\,\text{N}$:iin, yli kaksinkertaiseksi painoon nähden, ja pienenee sitten nollaan, kun jalat irtoavat. Pisteet yhdistetään sileällä käyrällä, koska voima muuttuu jatkuvasti. Siellä missä käyrä on painon viivan yläpuolella, kokonaisvoima osoittaa ylös ja opiskelijan nopeus kasvaa. Lopussa, noin hetkestä $0{,}33\,\text{s}$ alkaen, käyrä on viivan alapuolella: kokonaisvoima osoittaa alas, ja nopeuden kasvu loppuu jo ennen irtoamista.
+**Mallivastaus:** Levyn voima kasvaa ponnistuksen alussa nopeasti noin $1500\,\text{N}$:iin, yli kaksinkertaiseksi painoon nähden, ja pienenee sitten nollaan, kun jalat irtoavat. Pisteet yhdistetään sileällä käyrällä, koska voima muuttuu jatkuvasti.
+
+Siellä missä käyrä on painon viivan yläpuolella, kokonaisvoima osoittaa ylös ja opiskelijan nopeus kasvaa. Lopussa, noin hetkestä $0{,}33\,\text{s}$ alkaen, käyrä on viivan alapuolella: kokonaisvoima osoittaa alas, ja nopeuden kasvu loppuu jo ennen irtoamista.
 
 ### c)
 **Annettu:** b-kohdan kuvaaja, $G = 687\,\text{N}$, $m = 70{,}0\,\text{kg}$, ponnistuksen kesto $0{,}40\,\text{s}$
@@ -399,7 +419,9 @@
 **Kaava:** $h = \tfrac{1}{2}g\left(\dfrac{t}{2}\right)^2 = \dfrac{g\,t^2}{8}$
 **Muunnokset:** Yhden kuvan kesto on $\tfrac{1}{30}\,\text{s} \approx 0{,}033\,\text{s}$.
 **Sijoitus:** $h = \dfrac{9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot (0{,}49\,\text{s})^2}{8} \approx 0{,}29\,\text{m}$. Kun lentoaika on yhden kuvan verran pidempi tai lyhyempi, $0{,}52\,\text{s}$ tai $0{,}46\,\text{s}$, saadaan $0{,}34\,\text{m}$ ja $0{,}26\,\text{m}$.
-**Vastaus:** Lentoajan mukaan nousukorkeus on noin $0{,}29\,\text{m}$ ja sen epävarmuus noin $0{,}04\,\text{m}$ eli noin $14\,\%$. Voimalevyn tulos $0{,}31\,\text{m}$ on tällä välillä, joten tulokset sopivat yhteen. Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävarmuutta selvästi. Voimalevyn tulokseen vaikuttavat harva mittausväli ja pinta-alan arvio, ja koska kokonaisvoiman impulssi on kahden suuren luvun erotus, $1\,\%$:n virhe pinta-alassa muuttaa nopeutta noin $3\,\%$ ja korkeutta noin $5\,\%$. Kumpaakin voi parantaa: voimalevyllä tiheämmällä mittausvälillä ja videolla suuremmalla kuvanopeudella.
+**Vastaus:** Lentoajan mukaan nousukorkeus on noin $0{,}29\,\text{m}$ ja sen epävarmuus noin $0{,}04\,\text{m}$ eli noin $14\,\%$. Voimalevyn tulos $0{,}31\,\text{m}$ on tällä välillä, joten tulokset sopivat yhteen.
+
+Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävarmuutta selvästi. Voimalevyn tulokseen vaikuttavat harva mittausväli ja pinta-alan arvio, ja koska kokonaisvoiman impulssi on kahden suuren luvun erotus, $1\,\%$:n virhe pinta-alassa muuttaa nopeutta noin $3\,\%$ ja korkeutta noin $5\,\%$. Kumpaakin voi parantaa: voimalevyllä tiheämmällä mittausvälillä ja videolla suuremmalla kuvanopeudella.
 **Järkevyys:** Korkeudet eroavat noin $5\,\%$, mikä on pienempi kuin videomenetelmän epävarmuus.
 
 ### Yleisiä virheitä
@@ -453,14 +475,22 @@
 **Kaava:** $a = \dfrac{v^2}{2s}$ ja $a_\text{huippu,2} = a_2 \cdot \dfrac{a_\text{huippu,1}}{a_1}$
 **Muunnokset:** $2{,}4\,\text{cm} = 0{,}024\,\text{m}$ ja $1{,}0\,\text{cm} = 0{,}010\,\text{m}$
 **Sijoitus:** Mitattu kypärä: $a_1 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}024\,\text{m}} \approx 613\,\tfrac{\text{m}}{\text{s}^2}$, joten huippuarvo on $\tfrac{950}{613} \approx 1{,}55$ kertaa keskiarvo. Tämä matkan suhteen laskettu keskiarvo eroaa hieman b-kohdan ajan suhteen lasketusta $603\,\text{m/s}^2$:stä, koska painuma on pyöristetty $2{,}4\,\text{cm}$:iin; ero ei muuta johtopäätöstä. Ohuempi kypärä: $a_2 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}010\,\text{m}} \approx 1470\,\tfrac{\text{m}}{\text{s}^2}$ ja $a_\text{huippu,2} \approx 1{,}55 \cdot 1470\,\tfrac{\text{m}}{\text{s}^2} \approx 2280\,\tfrac{\text{m}}{\text{s}^2}$.
-**Vastaus:** Ohuemman kypärän suurin kiihtyvyys olisi noin $2300\,\text{m/s}^2$ eli noin $230$ kertaa $g$. Se jää rajan $2450\,\text{m/s}^2$ alle, joten kypärä läpäisisi tämän iskutestin, mutta vain noin $7\,\%$:n marginaalilla. Koko kypärän hyväksyntään tarvittaisiin lisäksi muut standardin testit. Arvio perustuu oletukseen, että kuvaajan muoto säilyy, ja jo pieni muutos vaahtomuovissa tai pudotusnopeudessa voisi viedä tuloksen rajan yli. Ohuempi kypärä on siksi riskialtis valinta.
+**Vastaus:** Ohuemman kypärän suurin kiihtyvyys olisi noin $2300\,\text{m/s}^2$ eli noin $230$ kertaa $g$. Se jää rajan $2450\,\text{m/s}^2$ alle, joten kypärä läpäisisi tämän iskutestin, mutta vain noin $7\,\%$:n marginaalilla.
+
+Koko kypärän hyväksyntään tarvittaisiin lisäksi muut standardin testit. Arvio perustuu oletukseen, että kuvaajan muoto säilyy, ja jo pieni muutos vaahtomuovissa tai pudotusnopeudessa voisi viedä tuloksen rajan yli. Ohuempi kypärä on siksi riskialtis valinta.
 **Järkevyys:** Painuma pienenee $2{,}4$-osaan, joten kiihtyvyys kasvaa $2{,}4$-kertaiseksi: $2{,}4 \cdot 950\,\tfrac{\text{m}}{\text{s}^2} = 2280\,\tfrac{\text{m}}{\text{s}^2}$, sama tulos.
 
 ### e)
 **Kysytty:** perustelu kypärän vaihtamiselle ja arvio testin kuvaavuudesta onnettomuudessa nopeudella $25\,\text{km/h}$
 **Periaate:** Kypärän suojaus perustuu painumamatkaan: mitä pidemmällä matkalla pää pysähtyy, sitä pienempi kiihtyvyys ja voima (d-kohta). Törmäyksessä pysäytettävä liike-energia kasvaa nopeuden neliössä.
 **Mallivastaus:** Iskussa vaahtomuovin solut murskautuvat, eikä muovi palaudu ennalleen, vaikka pinnasta ei näkyisi mitään. Seuraavassa iskussa painumamatkaa on vähemmän, joten pää pysähtyy lyhyemmällä matkalla ja kiihtyvyys ja voima kasvavat, kuten d-kohdassa ohuemmalla kypärällä. Siksi kypärä vaihdetaan.
-Testi vastaa noin $5{,}4\,\text{m/s}$:n iskua. Nopeus $25\,\text{km/h}$ on noin $6{,}9\,\text{m/s}$. Jos pää osuisi seinään kohtisuoraan tällä koko etenemisnopeudella, pysäytettävä liike-energia olisi noin $(6{,}9 : 5{,}4)^2 \approx 1{,}6$-kertainen. Pään todellinen törmäysnopeus ei kuitenkaan ole automaattisesti sama kuin pyöräilijän etenemisnopeus: pyöräilijä voi jarruttaa tai osua seinään vinosti, jolloin kohtisuora nopeus on pienempi, tai kaatua niin, että pää putoaa lisäksi korkeammalta. Vaahtomuovi voi painua pohjaan asti, jolloin loppu pysähtymisestä tapahtuu hyvin lyhyellä matkalla ja kiihtyvyys kasvaa jyrkästi. Testissä isku on lisäksi suora ja päämalli jäykkä; todellisessa onnettomuudessa vartalo ja niska, pään kiertoliike ja vino iskukulma muuttavat tilannetta. Testi on siis vähimmäisvaatimus: kypärä vähentää vammoja tavallisissa kaatumisissa, mutta se ei takaa suojaa suurissa nopeuksissa.
+Testi vastaa noin $5{,}4\,\text{m/s}$:n iskua. Nopeus $25\,\text{km/h}$ on noin $6{,}9\,\text{m/s}$. Jos pää osuisi seinään kohtisuoraan tällä koko etenemisnopeudella, pysäytettävä liike-energia olisi noin $(6{,}9 : 5{,}4)^2 \approx 1{,}6$-kertainen.
+
+Pään todellinen törmäysnopeus ei kuitenkaan ole automaattisesti sama kuin pyöräilijän etenemisnopeus: pyöräilijä voi jarruttaa tai osua seinään vinosti, jolloin kohtisuora nopeus on pienempi, tai kaatua niin, että pää putoaa lisäksi korkeammalta.
+
+Vaahtomuovi voi painua pohjaan asti, jolloin loppu pysähtymisestä tapahtuu hyvin lyhyellä matkalla ja kiihtyvyys kasvaa jyrkästi. Testissä isku on lisäksi suora ja päämalli jäykkä; todellisessa onnettomuudessa vartalo ja niska, pään kiertoliike ja vino iskukulma muuttavat tilannetta.
+
+Testi on siis vähimmäisvaatimus: kypärä vähentää vammoja tavallisissa kaatumisissa, mutta se ei takaa suojaa suurissa nopeuksissa.
 
 ### Yleisiä virheitä
 - Kohdassa b keskimääräiseksi kiihtyvyydeksi otetaan kuvaajan huippuarvo.
