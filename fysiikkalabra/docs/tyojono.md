@@ -277,8 +277,9 @@ carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksis
 fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
 järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-kaavaa, pitkät Annettu-rivit). Ulkoasun Polish-huomiot
 (vain kirjattu): fi-easy fy4-10 "(2) Heilahdus." / "(2) Törmäys." jäävät edellisen kappaleen loppuun; L2-10:n osat c)–e) fy4-7:ssä
-ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
-esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
+ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella (fi, en,
+fi-easy) ja esimerkkikoe tehty (claude/fy4-lapikaynti, 0f): tiede ja pedagogiikka carry, ulkoasu delta PASS; en- ja
+fi-easy-Sovella arvioitiin diffistä fi-kaappausten kanssa (screenshot.py ei kaappaa käännettyä Sovellaa), koe diffistä.
 
 FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
 esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
@@ -424,7 +425,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 **Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
 (seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
 "example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
-(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+(fi, fi-easy, en). FY4 (fy4-2) tehty (claude/fy4-lapikaynti, kaikki
+katselmoinnit carry). **Jäljellä FY5 ja FY8** (fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
 kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
 `caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
 

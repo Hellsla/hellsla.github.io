@@ -176,7 +176,7 @@
       "unit": "m/s²",
       "tolerance": 0.05,
       "data": {
-        "caption": "Velocity of the cart, example data",
+        "caption": "Velocity of the cart",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -225,7 +225,7 @@
       "unit": "m/s²",
       "tolerance": 0.05,
       "data": {
-        "caption": "Position of the cart, example data",
+        "caption": "Position of the cart",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -359,7 +359,7 @@
       "unit": "m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Velocity of the car, example data",
+        "caption": "Velocity of the car",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{km/h})$"
@@ -401,7 +401,7 @@
       "unit": "m",
       "tolerance": 0.06,
       "data": {
-        "caption": "Velocity of the cart on the track, example data",
+        "caption": "Velocity of the cart on the track",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
