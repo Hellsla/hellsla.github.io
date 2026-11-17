@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f447cdfb0ba35ecd
+CONTENT-HASH: b0951191567d27b3
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The removed proportionality recap would have given away Ennuste 1; the unit-conversion Kertaa is a better prerequisite.
 
 ## Checked
-batch delta review: the single feedback change ("noin 2,7 kertaa niin tiheää kuin vesi") fixes an awkward genitive form and states the comparison base (water); the feedback still repairs the misconception with an order-of-magnitude estimate (250 cm3 of water = 250 g); consistent with the solution text.
+batch delta review (round 2): unit-conversion Kertaa, 6,4·10^-3 distractor and answers.py comment consistent; no Ennusta disclosure.

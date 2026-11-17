@@ -1003,6 +1003,8 @@ TRANSLATED = "translation-of-passed"
 EXACT_KEYS = ("id", "level", "kind", "core", "unit", "tolerance", "figure", "correct", "true", "lookup")   # identical in every language
 OPTION_LISTS = ("choices", "statements", "order", "reasons")    # options compared by position, an option's text by its labels (A, B, …) too
 SCRIPT_WORD = re.compile(r"([_^])(\{?)\\(text|mathrm)\{([^{}]*)\}")   # E_\text{sähkö}, x_{\text{max}}: a translated label
+FORMULA_WORD = re.compile(r"\\(text|mathrm)\{([^{}]*)\}")      # any \text{} word of a formula: m_\text{hiili} = E/\text{lämpöarvo} (fy8-11 L3-05, work queue 8p)
+UNIT_LIKE = 3        # a \text{} word of at most this many characters (N, kg, min, MeV) is a unit or a symbol and stays strict
 PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
 LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
 MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$", re.S)
@@ -1021,6 +1023,7 @@ def _tr_text(a, b, pairs, labels=False):
         for f in check_i18n.formula_spans(re.sub(r"<svg\b.*?</svg>", "", s, flags=re.S)):
             words = []
             f = SCRIPT_WORD.sub(lambda m: (words.append(m.group(4).strip()), f"{m.group(1)}{m.group(2)}\\{m.group(3)}{{§}}")[1], re.sub(r"\s+", "", f).replace("{,}", "."))
+            f = FORMULA_WORD.sub(lambda m: f"\\{m.group(1)}{{§}}" if len(m.group(2)) > UNIT_LIKE else m.group(0), f)   # the other words: a translation's own (units stay strict)
             out.append((f, words))
         return out
     sa, sb = sorted(spans(a), key=lambda x: x[0]), sorted(spans(b), key=lambda x: x[0])   # the formulas as a multiset: where a language puts a formula in its sentence is no science (en L3-05, fi-easy L2-01, 2026-11-17); stable, so equal formulas keep their label pairs in order
@@ -1755,6 +1758,15 @@ def caption_removed(a, b):
     return "\n".join(out)
 
 
+def _only_added_ids(ra, rb):
+    """True when every exercise of `ra` is in `rb` with the same id and level and in the same order within its level,
+    and `rb` has more: its new ids are the whole of the id and level difference (work queue 8p)."""
+    ia, ib = _exercise_items(ra), _exercise_items(rb)
+    if not (ia and ib) or set(ia[0]) - set(ib[0]) or set(ib[0]) == set(ia[0]): return False
+    if any(ia[0][i][0] != ib[0][i][0] for i in ia[0]): return False
+    return all([i for i in ib[1][lvl] if i in ia[0]] == ia[1][lvl] for lvl in EXERCISE_LEVELS)
+
+
 def changes(folder, base, part="lesson", split=False, new=None):
     """(categories, unified diff, changed line count) of `part` between commit `base` and the working tree, over every
     source its hash covers, as the base saw them and as they are now. Formatting the hash ignores is not a change here
@@ -1767,6 +1779,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
     cats, diff, n = ({"split"} if split else set()), [], 0
     before_split = split and not old.files(courses.exercise_dir(folder).relative_to(ROOT).as_posix())
     for rel, binary in paths:
+        before = set(cats)
         ra, rb = old.source(rel, binary), new.source(rel, binary)
         if before_split and rel.split("/")[-1] in ANSWERS:     # one answers.py then: this part's file is cut from it
             ra = old.source(courses.lesson_rel(folder, "answers.py"))
@@ -1861,6 +1874,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
             cats |= classify(rel, _class_diff(rel, a2, b), folder.name) if a2 != b else set()
         elif goals is not None: cats |= classify(rel, _class_diff(rel, a, b), folder.name)
         else: cats |= classify(rel, _class_diff(rel, a, b) if a and b else lines, folder.name)
+        if rel.endswith("exercises.json") and "levels" in cats and "levels" not in before and _only_added_ids(ra, rb): cats.discard("levels")   # new exercises' own id and level lines are no change of a level or id (8p)
         n += sum(1 for l in lines if l.startswith(("+", "-")) and not l.startswith(("+++", "---")))
         diff += lines
     if part == "exercises" and not split and diff and added_exercises(folder, old, new): cats = {"added-exercise"}   # the diff stays whole, for the packet

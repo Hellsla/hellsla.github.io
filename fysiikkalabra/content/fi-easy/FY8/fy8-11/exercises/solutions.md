@@ -295,3 +295,25 @@ E &= 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \\
 $$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}537 \cdot 10^{9}\,\text{kg} = 1{,}54 \cdot 10^{6}\,\text{t}$
 **Vastaus:** $540\,\text{kg}$ kohdan b) tuloksena. Kaksi merkitsevää numeroa riittää, koska hyötysuhde $0{,}33$ ja käyttöaika $92\,\%$ on annettu kahdella numerolla. Kohdassa a) lämpöteho on $1500\,\text{MW}$ ja jäähdytysveteen siirtyy $1000\,\text{MW}$ (samat kaksi merkitsevää numeroa). Kohdassa c) tarvittaisiin noin $1{,}5$ miljoonaa tonnia kivihiiltä. Ydinreaktioissa energia on miljoonia elektronivoltteja atomia kohti, ja palamisessa se on elektronivoltin luokkaa. Siksi hiiltä tarvitaan noin $2{,}8$ miljoonaa kertaa enemmän massaa kuin uraani-235:tä.
 **Järkevyys:** Luvun mukaan gramma uraani-235:tä vapauttaa noin $82\,\text{GJ}$. Energia $4{,}457 \cdot 10^{16}\,\text{J}$ jaettuna luvulla $8{,}2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ on noin $5{,}4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$. Se täsmää. Jäähdytysveteen siirtyvä teho on suurempi kuin sähköteho, mikä sopii hyötysuhteeseen $0{,}33$, koska $1029 > 507$.
+
+## fy8-11-L2-09
+**Annettu:** kuvaaja $E_\text{B}/A$ massaluvun $A$ funktiona; ydin $A = 200$ jakautuu kahdeksi ytimeksi, joissa kummassakin $A = 100$; vertailuarvo uraani-235:n fissiolle noin $200\,\text{MeV}$
+**Kysytty:** jakautumisessa vapautuva energia $Q$ megaelektronivoltteina
+**Periaate:** Jakautumisessa nukleonien määrä pysyy samana. Sidosenergia nukleonia kohti kuitenkin kasvaa. Silloin myös ytimien kokonaissidosenergia kasvaa, ja kasvua vastaava energia vapautuu (luku *Massavaje ja ytimen sidosenergia*). Kuvaaja näyttää ytimien yleisen suuntauksen, joten tulos on arvio.
+**Kuvaajan lukeminen:** Kun $A = 200$, käyrä on ruudukon viivalla $7{,}9\,\text{MeV}$. Kun $A = 100$, käyrä on viivalla $8{,}7\,\text{MeV}$. Lukutarkkuus on ruudukon väli $0{,}1\,\text{MeV}$. Sidosenergia nukleonia kohti on siis $\varepsilon_{200} = 7{,}9\,\text{MeV}$ ja $\varepsilon_{100} = 8{,}7\,\text{MeV}$.
+**Kaava:** Sidosenergia on $E_\text{B} = A\,\varepsilon$. Vapautuva energia on sidosenergioiden erotus: $Q = E_\text{B,loppu} - E_\text{B,alku}$. Kummallakin puolella on $200$ nukleonia, joten $Q = 200\,\varepsilon_{100} - 200\,\varepsilon_{200}$ eli $Q = A\,(\varepsilon_{100} - \varepsilon_{200})$.
+**Muunnokset:** Ei tarvita: sidosenergia nukleonia kohti on jo megaelektronivoltteina.
+**Sijoitus:** $Q = 200 \cdot (8{,}7\,\text{MeV} - 7{,}9\,\text{MeV}) = 200 \cdot 0{,}8\,\text{MeV} = 160\,\text{MeV}$
+**Vastaus:** $160\,\text{MeV}$. Lukemat ovat ruudukon tarkkuudella, joten tulos on arvio. Sen epävarmuus on noin $\pm 20\,\text{MeV}$. Kaksi merkitsevää numeroa riittää.
+**Järkevyys:** Uraani-235:llä sidosenergia nukleonia kohti kasvaa noin $0{,}9\,\text{MeV}$. Silloin $0{,}9\,\text{MeV} \cdot 236 \approx 210\,\text{MeV}$, mikä on lähellä arvoa $200\,\text{MeV}$. Kevyemmällä ytimellä kasvu on pienempi, ja energiaa vapautuu vähän vähemmän. Energia on positiivinen ja miljoonien elektronivolttien luokkaa, kuten ydinreaktioissa.
+
+## fy8-11-L3-06
+**Annettu:** kuvaaja aktiivisuudesta ajan funktiona, alkuaktiivisuus $A_0 = 720\,\text{kBq}$, tavoite $A = 0{,}1\,\%\,A_0$
+**Kysytty:** a) puoliintumisaika $T_{1/2}$, b) aika $t$ tunteina, kun $A = 0{,}1\,\%\,A_0$
+**Periaate:** Aktiivisuus noudattaa hajoamislakia ja puolittuu jokaisen puoliintumisajan aikana (luku *Hajoamislaki ja puoliintumisaika*). Kuvassa on vain $20\,\text{h}$, joten tavoitteeseen pääsemiseksi kuvaajaa pitää jatkaa eli ekstrapoloida. Se on perusteltua, koska tehtävässä oletetaan hajoamislain pätevän myös kuvan jälkeen.
+**Kuvaajan lukeminen:** Alkuarvo on $720\,\text{kBq}$, joten puolet siitä on $360\,\text{kBq}$. Käyrä on tässä korkeudessa kohdassa $t = 5{,}0\,\text{h}$. Siis $T_{1/2} = 5{,}0\,\text{h}$. Tarkistus: kohdassa $10\,\text{h}$ käyrä on noin $180\,\text{kBq}$ eli neljäsosa alkuarvosta.
+**Kaava:** $\dfrac{A}{A_0} = \left(\dfrac{1}{2}\right)^{t/T_{1/2}}$, josta $2^{t/T_{1/2}} = \dfrac{A_0}{A}$ ja $t = T_{1/2} \log_2 \dfrac{A_0}{A}$
+**Muunnokset:** $0{,}1\,\% = 0{,}001$, joten $\tfrac{A_0}{A} = \tfrac{1}{0{,}001} = 1000$. Aikaa ei tarvitse muuntaa: puoliintumisaika on tunteina.
+**Sijoitus:** $t = 5{,}0\,\text{h} \cdot \log_2 1000 = 5{,}0\,\text{h} \cdot 9{,}966 = 49{,}83\,\text{h}$
+**Vastaus:** $50\,\text{h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten luetussa puoliintumisajassa $5{,}0\,\text{h}$.
+**Järkevyys:** $2^{10} = 1024 \approx 1000$, joten tarvitaan noin kymmenen puoliintumisaikaa eli noin $50\,\text{h}$. Kuvan lopussa, kohdassa $20\,\text{h}$, aktiivisuus on vasta $\tfrac{1}{16}$ alkuarvosta eli noin $45\,\text{kBq}$. Tämä nuklidi olisi turvallinen parissa vuorokaudessa. Plutonium-239:n puoliintumisaika on kuitenkin $24\,100\,\text{a}$, ja sama pieneneminen vie noin $240\,000\,\text{a}$ (tehtävä L3-03). Siksi pitkäikäinen jäte eristetään Onkaloon.

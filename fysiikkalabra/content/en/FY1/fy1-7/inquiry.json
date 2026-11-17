@@ -23,26 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: direct proportionality",
+      "title": "Review: unit conversion",
       "optional": true,
-      "prompt": "In an experiment the quantities $x$ and $y$ are measured. Within the measurement uncertainty, the measurement points lie on a straight line through the origin. What does this tell you about how the quantities depend on each other?",
+      "prompt": "The side of the cubes at the recycling point is measured with a ruler as $4.0\\,\\text{cm}$. What is the volume of a cube in cubic metres?",
       "choices": [
         {
-          "text": "The quantity $y$ is directly proportional to the quantity $x$: the ratio $y : x$ is constant, and it is the slope of the line.",
+          "text": "$6.4\\cdot10^{-5}\\,\\text{m}^3$",
           "correct": true,
-          "feedback": "Correct. A line through the origin has the form $y = kx$, so the ratio $y : x = k$ stays the same and doubling $x$ doubles $y$ (chapter *Graphs and fitting a straight line*). Today $y$ is mass, $x$ is volume and $k$ is density."
+          "feedback": "Correct: $$\\begin{aligned} V &= a^{3} \\\\ &= (4.0\\cdot10^{-2}\\,\\text{m})^{3} \\\\ &= 6.4\\cdot10^{-5}\\,\\text{m}^3 \\end{aligned}$$. The length is converted to metres first, and in a volume it is raised to the third power, so the power of ten is too: $(10^{-2})^{3} = 10^{-6}$ (chapter *Quantities, units and the SI system*)."
         },
         {
-          "text": "The quantities $x$ and $y$ are equal.",
-          "feedback": "The slope can be any number, not only 1. At the points of the line $y = kx$, $y$ is $k$ times $x$ (chapter *Graphs and fitting a straight line*)."
+          "text": "$64\\,\\text{m}^3$",
+          "feedback": "This is the numerical value of the volume in cubic centimetres, $(4.0\\,\\text{cm})^3 = 64\\,\\text{cm}^3$. The unit has not been converted: $1\\,\\text{cm} = 10^{-2}\\,\\text{m}$, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$ (chapter *Quantities, units and the SI system*)."
         },
         {
-          "text": "The quantity $y$ always increases by the same amount when $x$ increases, but $y$ may be non-zero at the start.",
-          "feedback": "This describes the line $y = kx + b$, where the constant $b$ is the intercept on the vertical axis. When the line passes through the origin, $b = 0$, and then $y$ is also zero when $x$ is zero."
+          "text": "$6.4\\cdot10^{-3}\\,\\text{m}^3$",
+          "feedback": "You used the conversion for area, $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. In a volume the length is raised to the third power, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
         },
         {
-          "text": "The quantities do not depend on each other.",
-          "feedback": "If the quantities did not depend on each other, the points would lie on a horizontal line or be scattered. A line whose slope is not zero shows a clear dependence."
+          "text": "$0.64\\,\\text{m}^3$",
+          "feedback": "You converted the volume like a length, multiplying only by $10^{-2}$. In a volume the length is raised to the third power, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
         }
       ]
     },

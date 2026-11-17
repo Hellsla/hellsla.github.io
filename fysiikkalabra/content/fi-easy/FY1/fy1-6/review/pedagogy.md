@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4182b91f542a99eb
+CONTENT-HASH: aea6f326f3889386
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
+
 
 ## Polish
-1. lesson.md, Kaava: Vapaan pudotuksen nopeus: the new paragraph reads well (a = Δv/Δt, Δv = aΔt, then Δv = v, Δt = t from rest, so v = gt follows in one step; the earlier chapter text already introduced acceleration). Optional: add half a sentence that with constant acceleration the average acceleration equals the instantaneous one, since the MAFY name says 'keskikiihtyvyys' (average) and a student may ask why average.
-2. The vt-graph sentence 'kulmakerroin Δv/Δt = g' now links back to the formula; no change needed.
+- The correct feedback says the hammer's speed changes; fine, since Ennuste 1 asks how, not whether.
+- Mean speed of a falling body is a good bridge from fy1-5.
 
-fi-easy: wording stays clear and says the same as fi.
+## Checked
+batch delta review: hammer Kertaa vs Ennuste 1 (v at 3 s) and 2 (mass): no disclosure; answer 1,1 and distractors 1,8/0,93/2,7 match the answers.py comment.

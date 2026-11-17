@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5a6ad2a9f70d1519
+CONTENT-HASH: c2b79b7bc2f57488
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Stage 4: the inline fractions $\tfrac{1}{149\,597\,870{,}7}$ are small at 390 px but legible.
+- none
 
 ## Checked
-- Opened fy1-5-example-390-1 and -2 (bullets, question paragraph, stage 7 split into paragraphs); layout intact.
+- batch delta review (fi, round 2, fy1-5): changed Pohdinta recap task read in full (LaTeX $(s, t)$, $\Delta t : \Delta s$, Finnish); captures opened: stage-herata-390, contact-1 (top, sim, figures unchanged and intact). Recap box closed, nothing clipped.

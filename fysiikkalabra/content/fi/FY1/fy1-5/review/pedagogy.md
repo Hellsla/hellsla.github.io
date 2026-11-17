@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4a37eb247b0360ff
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: c2b79b7bc2f57488
 
 ## Blocking
-- none
+
 
 ## Polish
-- Reasonableness line now just restates the calculation; fine.
+- Axes (s, t) are the reverse of the lesson's (t, s); consider one sentence in the correct feedback that speed is the inverse of this slope.
 
 ## Checked
-- fy1-5 diff: colour of the s = s0 + vt line in the theory figure changed from orange to ink (colour never carried meaning here; no text refers to it); 'Toistonopeus' label matches lang and sim; position vs distance wording (title 'milloin paikka on verrannollinen aikaan', Δs = vt, s:t vs Δs:Δt) is conceptually cleaner; Reasonableness check still valid (6,0 m/s, 6x45 = 270).
-- Language fi: matches the Finnish fixes; fi-easy stays plain Finnish.
+batch delta review (round 2): Voyager Kertaa against Ennuste 1 and 2: no answer disclosed; Finnish clear; feedbacks consistent with the new axes.

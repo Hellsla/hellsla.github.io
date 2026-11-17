@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6fcd799d6fd6f900
+CONTENT-HASH: 2b496ad3e6b080b1
 
 ## Blocking
 - none
 
 ## Polish
-1. lesson.md, Kaava section, first sentence: the prose defines plain acceleration as Δv/Δt while the row is named average acceleration (keskikiihtyvyys); one word ("keskikiihtyvyys" / "average acceleration") in that sentence would match the row. Not blocking: the constant-acceleration condition for Δv = aΔt is stated.
+- none
 
 ## Checked
-a = Δv/Δt and Δv = aΔt correct and MAFY's; from rest Δv = v, Δt = t gives v = gt; symbols a, Δv, Δt defined with units; agrees with the slope Δv/Δt in the graph text, inquiry solutions and feedback; fi, fi-easy, en say the same; no number changed (diff); answers.py and lesson-answers.py output identical to 3ec8cc24.
+- batch delta review: recomputed $v = s/t = 1{,}4 : 1{,}3 = 1{,}077 \to 1{,}1\,\text{m/s}$ (two significant figures, like the data). The data agree with the Moon's $g = 1{,}62\,\text{m/s}^2$: falling $1{,}4\,\text{m}$ from rest takes $\sqrt{2s/g} = 1{,}31\,\text{s}$. Distractors recomputed: $st = 1{,}82$, $t/s = 0{,}93$, $s + t = 2{,}7$. Their feedback names each mistake correctly. The correct option's feedback rightly calls the result a mean speed because the speed changes. lesson-answers.py kertaus-v = 1,076923 matches. Exactly one option is correct. Hash the same at the start and the end.

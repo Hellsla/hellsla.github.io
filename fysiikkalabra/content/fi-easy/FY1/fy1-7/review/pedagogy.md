@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4acefd1011b47ee8
+CONTENT-HASH: 2191e0954c217842
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- The removed proportionality recap would have given away Ennuste 1; unit conversion is a better prerequisite (fy1-2). The 6,4·10^-3 distractor (area conversion applied to 64 cm³) is consistent.
 
 ## Checked
-batch delta review: the single feedback change ("noin 2,7 kertaa niin tiheää kuin vesi") fixes an awkward genitive form and states the comparison base (water); the feedback still repairs the misconception with an order-of-magnitude estimate (250 cm3 of water = 250 g); consistent with the solution text.
+batch delta review: unit-conversion Kertaa vs Ennusta tasks, answers.py comment, feedbacks.

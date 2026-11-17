@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 530b1b54a3228923
+CONTENT-HASH: db3c0de40d1f1fa7
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] stage 1 bullet wraps so the formula 'c = ...' sits on its own indented line; acceptable.
+- none
 
 ## Checked
-batch delta review: opened fy1-2-example-390-1 (stages 1-5); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.
+- batch delta review (en, fy1-2): changed recap task (powers of ten, units, colon division) read in full; layout judged from the unchanged stage-herata pattern (en fy1-1/fy1-6 herata-390 opened); no figure changed.
