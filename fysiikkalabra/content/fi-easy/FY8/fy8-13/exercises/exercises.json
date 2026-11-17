@@ -249,6 +249,19 @@
       "answer": 0.88,
       "unit": "mSv",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy8-13-L2-10",
+      "level": 2,
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "Kuvassa on gammasäteilylähteen annosnopeus $\\dot{H}$ betoniseinän takana. Annosnopeus kertoo, kuinka paljon annosta kertyy tunnissa. Vaaka-akselilla on seinän paksuus $d$. Kuvaajan lukutarkkuus on noin $1\\,\\mu\\text{Sv/h}$ ja $0{,}5\\,\\text{cm}$. Oleta, että betonin vaimennus noudattaa puoliintumispaksuuden lakia.\n\na) Lue kuvaajasta annosnopeus ilman betonia. Lue myös betonin puoliintumispaksuus $d_{1/2}$. Se on paksuus, joka puolittaa annosnopeuden.\n\nb) Laske annosnopeus, kun seinän paksuus on $12\\,\\text{cm}$.\n\nc) Tarkista tulos. Lue annosnopeus suoraan kuvaajasta kohdasta $d = 12\\,\\text{cm}$.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "answer": 15,
+      "unit": "µSv/h",
+      "tolerance": 0.04
     }
   ],
   "level3": [
@@ -350,6 +363,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-13-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "Säteilylähteen huoneen betoniseinä on $20\\,\\text{cm}$ paksu. Työpiste on heti seinän takana. Kuvassa on annosnopeus $\\dot{H}$ betoniseinän takana seinän paksuuden $d$ funktiona. Mittaus on tehty työpisteen etäisyydellä lähteestä. Työntekijän annos saa vuoron aikana olla enintään $20\\,\\mu\\text{Sv}$ (esimerkkiarvo). Oleta, että annosnopeus pysyy vakiona koko vuoron ajan. Oleta myös, että sirontaa ja muita säteilylähteitä ei oteta huomioon.\n\na) Lue kuvaajasta annosnopeus työpisteessä.\n\nb) Laske, kuinka kauan työntekijä saa olla työpisteessä vuoron aikana. Anna vastaus tunteina.\n\nc) Vuoro kestää $8\\,\\text{h}$. Päättele kuvaajasta, kuinka paksu seinän pitää vähintään olla. Annosrajoite ei saa ylittyä.\n\nd) Nimeä yksi mallin oletus. Kerro, miksi seinä kannattaa siksi tehdä kohdan c) arvoa paksummaksi.\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "answer": 4.0,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ]
 }
