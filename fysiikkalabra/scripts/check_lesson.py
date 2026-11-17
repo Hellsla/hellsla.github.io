@@ -1,6 +1,7 @@
 """Every deterministic check of one lesson in one command. Usage: python scripts/check_lesson.py <id>
 
-Runs the lint, the KaTeX parse check, a preview build, the simulation tests (when the lesson has a sim), the
+Runs the lint, the KaTeX parse check, the translation check of the lesson's own pages (check_i18n.py --lesson: every
+language that has it translated; teacher 2026-11-17), a preview build, the simulation tests (when the lesson has a sim), the
 inquiry tests and the answer-position check (when it has inquiry.json) and the layout check at 360, 390, 768 and 1280 px
 (every state: closed, hints open, everything open; every language; in CI's browser image when Docker is here,
 scripts/ci_env.py). Prints one
@@ -16,6 +17,7 @@ if len(sys.argv) != 2: sys.exit(__doc__)
 lid = sys.argv[1]; folder = find_lesson(lid)
 steps = [("lint", [PY, SCRIPTS / "lint_lesson.py", lid]),
          ("latex", [PY, SCRIPTS / "check_latex.py", folder]),
+         ("i18n", [PY, SCRIPTS / "check_i18n.py", "--lesson", lid]),
          ("build", [PY, SCRIPTS / "build.py", lid])]
 if courses.sim_dir(folder): steps.append(("sims", [PY, SCRIPTS / "test_sims.py", lid]))
 if (folder / "inquiry.json").exists():
@@ -35,7 +37,7 @@ for name, cmd in steps:
     ok = r.returncode == 0
     failed += not ok
     out = (r.stdout + r.stderr).strip().splitlines()
-    detail = next((l for l in reversed(out) if " passed, " in l), "") if ok and name == "inquiry" else ""
+    detail = next((l for l in reversed(out) if " passed, " in l), "") if ok and name == "inquiry" else out[-1].split(": ", 1)[-1] if ok and name == "i18n" and out else ""
     lines.append(("ok   " if ok else "FAIL ") + name + (f" ({detail.strip()})" if detail else "")); print(lines[-1])
     if not ok: print("     " + "\n     ".join([l for l in out if l.startswith(("FAIL", "ERROR", "  FAIL"))][:25] or out[-25:]))
 lines.append(f"browser for the layout: {ci_env.image() if in_ci_image else 'this session, not the CI image (no Docker)'}"); print(lines[-1])
