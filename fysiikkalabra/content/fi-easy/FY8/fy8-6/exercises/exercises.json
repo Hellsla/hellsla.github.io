@@ -350,6 +350,33 @@
           "feedback": "Eroa ei voi verrata suoraan epävarmuuteen $\\Delta k$, koska niillä on eri yksiköt. Planckin vakion epävarmuus on $\\Delta h = e\\,\\Delta k$, eli $0{,}34 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$. Ero $0{,}25 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ on sitä pienempi."
         }
       ]
+    },
+    {
+      "id": "fy8-6-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-6/ryhma",
+      "text": "Kuvassa ovat ryhmän mittaamien LEDien kynnysjännitteet $U_\\text{k}$ valon taajuuden $f$ funktiona. Pisteisiin on sovitettu suora. Käytä valon nopeutta $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$.\n\na) Lue kuvasta suoralta se taajuus $f$, jolla kynnysjännite on $2{,}30\\,\\text{V}$.\n\nb) Laske tätä taajuutta vastaava aallonpituus $\\lambda = \\tfrac{c}{f}$. Päättele sen avulla, minkä värinen LED on.\n\nKirjoita laatikkoon kohdan b) aallonpituus nanometreinä.",
+      "answer": 517,
+      "unit": "nm",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-6-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-6/ryhma",
+      "text": "Kuvassa ovat ryhmän mittaamien LEDien kynnysjännitteet $U_\\text{k}$ valon taajuuden $f$ funktiona. Pisteisiin on sovitettu suora. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$.\n\na) Lue suoralta kynnysjännite, kun taajuus on $f = 7{,}0 \\cdot 10^{14}\\,\\text{Hz}$.\n\nb) Laske sama jännite yksinkertaisella mallilla $U_\\text{k} = \\tfrac{hf}{e}$. Vähennä siitä kohdassa a) luettu arvo.\n\nc) Selitä sanoin, miksi mitattu kynnysjännite on pienempi kuin malli antaa.\n\nKirjoita laatikkoon kohdan b) erotus voltteina.",
+      "answer": 0.095,
+      "unit": "V",
+      "tolerance": 0.1
     }
   ],
   "level3": [
