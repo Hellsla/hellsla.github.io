@@ -1,7 +1,7 @@
 ok   lint
 ok   latex
 ok   build
-ok   sims
+FAIL sims
 ok   inquiry (137 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
@@ -9,4 +9,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: mcr.microsoft.com/playwright/python:v1.65.0-noble
-fy6-9: reviewed (science=PASS (carried over: formula-names,reflow,teacher-figure), pedagogy=PASS (carried over: formula-names,reflow,teacher-figure), visual=PASS); exercises: reviewed (science=PASS (carried over: caption-label), pedagogy=PASS (carried over: caption-label), visual=PASS (carried over: caption-label))
+fy6-9: reviewed (science=PASS (carried over: formula-names,md-paragraphs,reflow,teacher-figure,typography), pedagogy=PASS (carried over: formula-names,md-paragraphs,reflow,teacher-figure,typography), visual=PASS); exercises: reviewed (science=PASS (carried over: caption-label,md-paragraphs,typography), pedagogy=PASS (carried over: caption-label,md-paragraphs,typography), visual=PASS (carried over: caption-label))
