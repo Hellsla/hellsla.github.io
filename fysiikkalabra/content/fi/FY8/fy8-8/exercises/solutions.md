@@ -302,7 +302,8 @@ $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \c
 **Vastaus:** $2159\,\text{keV}$ eli $2{,}159\,\text{MeV}$ perustilan yläpuolella, neljä merkitsevää numeroa kuten annetuissa energioissa.
 **Järkevyys:** Taso X on alinta viritystasoa ylempänä, kuten pitää. Se on myös alempana kuin ylin taso, jolta vahvat piikit lähtevät: $$
 \begin{aligned}
-1332{,}5\,\text{keV} + 1173{,}2\,\text{keV} \\
+1332{,}5\,\text{keV} \\
+&+ 1173{,}2\,\text{keV} \\
 &= 2505{,}7\,\text{keV}
 \end{aligned}
 $$ on suurempi kuin $2158{,}6\,\text{keV}$.
@@ -324,7 +325,8 @@ E_\text{C} &= 2158{,}6\,\text{keV} + 347{,}1\,\text{keV} \\
 \end{aligned}
 $$ Tarkistus: siirtymä C $\to$ A on $$
 \begin{aligned}
-2505{,}7\,\text{keV} - 1332{,}5\,\text{keV} \\
+2505{,}7\,\text{keV} \\
+&- 1332{,}5\,\text{keV} \\
 &= 1173{,}2\,\text{keV}
 \end{aligned}
 $$, ja se on toinen vahva piikki. Kaikki neljä piikkiä selittyvät. Jos A $\to$ perustila olisi $1173{,}2\,\text{keV}$, olisi $E_\text{C} = 1173{,}2 + 826{,}1 + 347{,}1 = 2346{,}4\,\text{keV}$ ja siirtymä C $\to$ A olisi $1173{,}2\,\text{keV}$ eikä $1332{,}5\,\text{keV}$. Piikki $1332{,}5\,\text{keV}$ jäisi selittämättä, joten vaihtoehto ei kelpaa. Tasokaaviossa ovat perustila $0$, A $1332{,}5\,\text{keV}$, B $2158{,}6\,\text{keV}$ ja C $2505{,}7\,\text{keV}$; nuolet C $\to$ B ($347{,}1\,\text{keV}$), B $\to$ A ($826{,}1\,\text{keV}$), C $\to$ A ($1173{,}2\,\text{keV}$) ja A $\to$ perustila ($1332{,}5\,\text{keV}$).

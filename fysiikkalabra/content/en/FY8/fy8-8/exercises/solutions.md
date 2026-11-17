@@ -302,7 +302,8 @@ $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8427 \cdot
 **Answer:** $2159\,\text{keV}$ or $2.159\,\text{MeV}$ above the ground state, four significant figures as in the given energies.
 **Reasonableness:** Level X is above the lowest excited level, as it should be. It is also below the top level from which the strong peaks start: $$
 \begin{aligned}
-1332.5\,\text{keV} + 1173.2\,\text{keV} \\
+1332.5\,\text{keV} \\
+&+ 1173.2\,\text{keV} \\
 &= 2505.7\,\text{keV}
 \end{aligned}
 $$ is greater than $2158.6\,\text{keV}$.
@@ -324,7 +325,8 @@ E_\text{C} &= 2158.6\,\text{keV} + 347.1\,\text{keV} \\
 \end{aligned}
 $$ Check: the transition C $\to$ A is $$
 \begin{aligned}
-2505.7\,\text{keV} - 1332.5\,\text{keV} \\
+2505.7\,\text{keV} \\
+&- 1332.5\,\text{keV} \\
 &= 1173.2\,\text{keV}
 \end{aligned}
 $$, which is the other strong peak. All four peaks are explained. If A $\to$ ground state were $1173.2\,\text{keV}$, then $E_\text{C} = 1173.2 + 826.1 + 347.1 = 2346.4\,\text{keV}$ and the transition C $\to$ A would be $1173.2\,\text{keV}$, not $1332.5\,\text{keV}$. The peak $1332.5\,\text{keV}$ would remain unexplained, so this option is not valid. The level diagram has the ground state $0$, A $1332.5\,\text{keV}$, B $2158.6\,\text{keV}$ and C $2505.7\,\text{keV}$; the arrows are C $\to$ B ($347.1\,\text{keV}$), B $\to$ A ($826.1\,\text{keV}$), C $\to$ A ($1173.2\,\text{keV}$) and A $\to$ ground state ($1332.5\,\text{keV}$).
