@@ -33,6 +33,7 @@ kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan P
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
+Varattu: claude/0g-site-suunnitelma (suunnitelma: `docs/audits/2026-11-17-0g-site-suunnitelma.md`, draft-PR ilman koodia)
 Jokainen yhdistetty PR vanhentaa kaikkien avoimien PR:ien `site/`-kopion, joten jokainen haara yhdistää mainin ja
 rakentaa `site/`:n uudelleen keskimäärin 1,6 kertaa (juuren `CLAUDE.md` sääntö 4). Tavoite: sisältö-PR ei sisällä
 `site/`-muutoksia; CI rakentaa sivuston ja `ruukkilabra-deploy.yml` julkaisee rakennetun version mainin ajon jälkeen.
