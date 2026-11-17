@@ -24,24 +24,24 @@
       "type": "choice",
       "title": "Review: burning a fuel",
       "optional": true,
-      "prompt": "Petrol burns in a car engine. Which description is physically correct?",
+      "prompt": "Coal burns in the boiler of a coal-fired power plant. Which description is physically correct?",
       "choices": [
         {
-          "text": "Chemical energy changes into kinetic energy and heat, and the carbon of the petrol leaves as carbon dioxide in the exhaust gases.",
+          "text": "Chemical energy changes into thermal energy, and the carbon of the coal leaves as carbon dioxide in the flue gases.",
           "correct": true,
           "feedback": "Correct. When a fuel burns, chemical energy is released (chapter *Fuels and heat of combustion $E = Hm$*), and the carbon atoms of the fuel combine with oxygen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. That is why every amount of energy obtained by burning a carbon-containing fuel brings carbon dioxide with it."
         },
         {
-          "text": "When petrol burns, it changes completely into energy, so no carbon or other matter is left in the exhaust gases.",
-          "feedback": "Matter does not turn into energy. In burning, the atoms are rearranged, and the carbon ends up in carbon dioxide molecules. Both energy and matter are conserved: chemical energy changes into heat and kinetic energy, but the carbon atoms do not disappear."
+          "text": "When coal burns, it changes completely into energy, so no carbon or other matter is left in the flue gases.",
+          "feedback": "Matter does not turn into energy. In burning, the atoms are rearranged, and the carbon ends up in carbon dioxide molecules. Both energy and matter are conserved: chemical energy changes into heat, but the carbon atoms do not disappear."
         },
         {
-          "text": "When petrol burns, it produces energy out of nothing, so the engine gets more energy than the fuel originally contained.",
-          "feedback": "Energy does not appear out of nothing. The energy the engine gets comes from the chemical energy of the fuel, and part of it becomes waste heat (chapter *Fuels and heat of combustion $E = Hm$*)."
+          "text": "When coal burns, it produces energy out of nothing, so the power plant gets more energy than the fuel originally contained.",
+          "feedback": "Energy does not appear out of nothing. The energy the power plant gets comes from the chemical energy of the fuel, and part of it becomes waste heat (chapter *Fuels and heat of combustion $E = Hm$*)."
         },
         {
-          "text": "The carbon of the petrol burns away and disappears, so the exhaust gases contain only water vapour and warm air.",
-          "feedback": "Petrol is a hydrocarbon, and its carbon ends up as carbon dioxide when it burns. Water vapour comes from the hydrogen, but carbon dioxide is the most important greenhouse gas in exhaust gas."
+          "text": "The carbon of the coal burns away and disappears, so the flue gases contain only water vapour and warm air.",
+          "feedback": "Coal is mostly carbon, and its carbon ends up as carbon dioxide when it burns. Carbon dioxide is the most important greenhouse gas in flue gas."
         }
       ]
     },

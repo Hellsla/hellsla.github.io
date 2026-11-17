@@ -24,24 +24,24 @@
       "type": "choice",
       "title": "Kertaa: polttoaineen palaminen",
       "optional": true,
-      "prompt": "Bensiini palaa auton moottorissa. Mikä kuvaus on fysikaalisesti oikea?",
+      "prompt": "Hiilivoimalan kattilassa palaa kivihiiltä. Mikä kuvaus on fysikaalisesti oikea?",
       "choices": [
         {
-          "text": "Kemiallinen energia muuttuu liike-energiaksi ja lämmöksi, ja bensiinin hiili poistuu hiilidioksidina pakokaasuissa.",
+          "text": "Kemiallinen energia muuttuu lämpöenergiaksi, ja kivihiilen hiili poistuu hiilidioksidina savukaasuissa.",
           "correct": true,
           "feedback": "Oikein. Palaessa kemiallinen energia vapautuu (luku *Polttoaineet ja lämpöarvo*), ja polttoaineen hiiliatomit yhtyvät happeen: $\\text{C} + \\text{O}_2 \\rightarrow \\text{CO}_2$. Tästä syystä jokainen hiilipitoisesta polttoaineesta polttamalla otettu energiamäärä tuo mukanaan hiilidioksidia."
         },
         {
-          "text": "Bensiini muuttuu palaessaan kokonaan energiaksi, joten pakokaasuihin ei jää lainkaan hiiltä tai muuta ainetta.",
-          "feedback": "Aine ei katoa energiaksi. Palamisessa atomit järjestyvät uudelleen, ja hiili päätyy hiilidioksidimolekyyleihin. Energia ja aine säilyvät kumpikin: kemiallinen energia muuttuu lämmöksi ja liike-energiaksi, mutta hiiliatomit eivät häviä."
+          "text": "Kivihiili muuttuu palaessaan kokonaan energiaksi, joten savukaasuihin ei jää lainkaan hiiltä tai muuta ainetta.",
+          "feedback": "Aine ei katoa energiaksi. Palamisessa atomit järjestyvät uudelleen, ja hiili päätyy hiilidioksidimolekyyleihin. Energia ja aine säilyvät kumpikin: kemiallinen energia muuttuu lämmöksi, mutta hiiliatomit eivät häviä."
         },
         {
-          "text": "Palaessaan bensiini tuottaa energiaa tyhjästä, joten moottori saa enemmän energiaa kuin polttoaineessa oli alun perin.",
-          "feedback": "Energiaa ei synny tyhjästä. Moottorin saama energia on peräisin polttoaineen kemiallisesta energiasta, ja osa siitä muuttuu hukkalämmöksi (luku *Polttoaineet ja lämpöarvo*)."
+          "text": "Palaessaan kivihiili tuottaa energiaa tyhjästä, joten voimala saa enemmän energiaa kuin polttoaineessa oli alun perin.",
+          "feedback": "Energiaa ei synny tyhjästä. Voimalan saama energia on peräisin polttoaineen kemiallisesta energiasta, ja osa siitä muuttuu hukkalämmöksi (luku *Polttoaineet ja lämpöarvo*)."
         },
         {
-          "text": "Bensiinin hiili palaa loppuun ja katoaa, joten pakokaasuissa on vain vesihöyryä ja lämmintä ilmaa.",
-          "feedback": "Bensiini on hiilivetyä, ja sen hiili päätyy palaessaan hiilidioksidiksi. Vesihöyryä syntyy vedystä, mutta hiilidioksidi on pakokaasun tärkein kasvihuonekaasu."
+          "text": "Kivihiilen hiili palaa loppuun ja katoaa, joten savukaasuissa on vain vesihöyryä ja lämmintä ilmaa.",
+          "feedback": "Kivihiili on pääosin hiiltä, ja sen hiili päätyy palaessaan hiilidioksidiksi. Hiilidioksidi on savukaasun tärkein kasvihuonekaasu."
         }
       ]
     },

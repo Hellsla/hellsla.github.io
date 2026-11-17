@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e4bde5c1bc0d9477
+CONTENT-HASH: 13eeea90f2e8d0e5
 
 ## Blocking
 
 ## Polish
-(none)
 
 ## Checked
-Delta (list of knowns). Opened en fy2-7-example-390-1 and -2: bullets render cleanly, question paragraph last.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: diff is one prompt sentence in inquiry.json (district heating pump), quantities in LaTeX; figures unchanged; layout confirmed from the 1280 px fig-row captures of sibling lessons.

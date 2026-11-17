@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d5830c49a5122d07
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: 395a70d4a5bd17b8
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- None. ("valoksi ja lämmöksi" is acceptable in FY2; heat-into rule applies from FY3.)
 
 ## Checked
-- Round-2 diff `git diff HEAD~1` (commit 29f864da6) of this unit's files (fi fy2-3), judged in context; content hash recomputed and equal to the new hash.
-- lesson.md: removed the sentence "Niiden osamäärä on aikavälin keskiteho". The average-power meaning is still stated in the next sentences (uneven conversion gives the average power over $\Delta t$; steady operation gives $P = E : t$), so nothing is lost and nothing becomes wrong.
-- No changed numbers other than those noted; no physics regression against the round-1 review.
+batch delta review: retrieval choice now kettle and hall lamp; kettle electrical -> water's lämpöenergia, lamp -> light and heat correct; one correct option, distractor feedback right; worked example knowns as list and result/reason split, numbers unchanged (80 W, 4,0 h, 30 vrk, 20 snt/kWh -> 1,9 EUR).

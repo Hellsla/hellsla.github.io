@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1367bc514662e939
+CONTENT-HASH: b0e429f289d10003
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta md-paragraphs (lesson.md, example stages 1 and 6). Opened fi-easy fy2-4-example-390-1.png and fy2-4-example-390-2.png: knowns as a three-item bullet list, formulas intact, "Kysytään" on its own line; result line and the two-sentence significant-figures paragraph separate; spacing consistent, nothing clipped.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: retrieval task 40 W to 60 W bulb, options and feedback recomputed (1800 J), LaTeX units, colon for division; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.

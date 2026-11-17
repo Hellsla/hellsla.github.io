@@ -41,7 +41,14 @@ teacher's approval of a figure, of a plan, or of a material content change: the 
    keeps the two equal). A session's own Chromium is another build with other fonts and measured formulas 4-9 px
    narrower (en/fy1-1 2026-11-13; fy2-3 at 360 px: 3 clipped formulas locally, 13 in the image). `python
    scripts/ci_env.py run <command>` runs a check in that image (Docker), and `check_lesson.py` does it for its layout
-   checks by itself; without Docker the gap remains.
+   checks by itself; without Docker the gap remains. In a Claude Code cloud session (root, Docker installed, daemon not
+   running) `ci_env.py` starts `dockerd` itself and pulls the image through the session's proxy (about 2 GB, once per
+   session; checked 2026-11-17, work queue 0d: fy2-3 at 360 px gives 5 + 3 + 5 = 13 known clipped formulas in the image),
+   so no change to the environment is needed. The session's own Playwright (the cloud image has 1.63; `pip install -r
+   requirements-ci.txt` gives 1.65) matters only when Docker is missing; the browser checks run in the image's 1.65.
+   `round.py` also checks the session before a round: a shallow clone (which makes `reviews.py scope` answer FULL for
+   "not in git history") is deepened with `git fetch --unshallow`, and a missing Python package stops it with the
+   `pip install -r requirements-ci.txt` command.
 3. **Reviewers share a model family.** Three independent reviews are independent in their packets, not in their blind
    spots. The teacher's own reading is the check on that, above all for new physics.
 4. **Language versions.** en and fi-easy are judged by the same agents and `check_i18n.py`; no person checks them.

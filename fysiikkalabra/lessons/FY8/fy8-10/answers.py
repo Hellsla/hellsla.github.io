@@ -41,4 +41,10 @@ a["fy8-10-L3-04"] = n_u * q_u * 1.602177e-13 / 1e10    # E = N Q = 7,113e10 J ->
 dm_year = 1.0e28 * 365.25 * 24 * 3600 / C ** 2         # L t / c²: 3,511e18 kg per year
 f_h = (4 * M_H - 4.002603) / (4 * M_H)                 # 0,028697 u / 4,031300 u = 0,007119 of the hydrogen mass becomes energy
 a["fy8-10-L3-05"] = dm_year / f_h / 1e20               # hydrogen fused per year: 4,932e20 kg -> 4,9 · 10²⁰ kg
+# Added exercises: MAFY lookup (nuclear masses, so no electron bookkeeping) and two graph-reading tasks (fy8-10/kayra-points)
+M_P, M_N_MAFY, M_D = 1.007276466621, 1.00866491595, 2.0135532001   # MAFY, Hiukkasten ominaisuuksia (docs/mafy-arvot.tsv)
+dm_d = M_P + M_N_MAFY - M_D                            # deuteron: 0,0023882 u
+a["fy8-10-L1-09"] = dm_d * U_MEV                       # E_B = 2,2246 MeV -> 2,225 MeV (wrong: hydrogen atom for the proton gives 2,7355 MeV)
+a["fy8-10-L2-09"] = 120 * 8.5                          # E_B/A read 8,5 MeV at A = 120 (Sn-120 is 8,5046): E_B = 1020 MeV (true 1020,5)
+a["fy8-10-L3-06"] = 235 * 8.5 - 235 * 7.6              # read 8,5 at A = 120 and 7,6 at A = 235 (true 7,591): Q = 211,5 MeV (true values 216,6)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
