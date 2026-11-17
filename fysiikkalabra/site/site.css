@@ -989,7 +989,7 @@ details.level>ol>li:last-child{border-bottom:0}
    picture sticks under the stage bar while the student scrolls through its controls and readouts, so a change shows as
    it is made. It stops at the end of the card (#sim-root is its containing block). Only a window tall enough to keep
    room for the controls under the picture (a phone held upright), only a picture that leaves room for them (lesson.js
-   sets sim-fits: at most 55 % of the window under the bar; fy7-4 stays in the flow), never in the enlarged view.
+   sets sim-fits: at most 45 % of the window under the bar, teacher 2026-11-17; fy7-4 stays in the flow), never in the enlarged view.
    lesson.js sets --toc-h to the bar's height. */
 @media (max-width:37.5rem) and (min-height:34rem){
   .sim-stick #sim.sim-fits:not(.sim-expanded) #sim-root>.sim-canvas{position:sticky;top:var(--toc-h,3.6rem);z-index:4;background:var(--surface);padding-bottom:.35rem;margin-bottom:-.35rem;box-shadow:0 .5rem .45rem -.45rem rgba(20,23,30,.18)}

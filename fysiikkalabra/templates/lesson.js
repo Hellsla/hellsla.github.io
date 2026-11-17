@@ -159,7 +159,7 @@
     // bar, so a tall picture (fy7-4) stays in the flow and never covers the controls (inquiry.SIM_STICK_SHARE).
     const stickSim = document.querySelector('.sim-stick #sim');
     if (stickSim && 'ResizeObserver' in window) {
-      const STICK_SHARE = 0.55;
+      const STICK_SHARE = 0.45;
       const fit = () => {
         const bar = toc.getBoundingClientRect().height, box = stickSim.querySelector('#sim-root > .sim-canvas');
         const c = box && (box.querySelector('canvas') || box);   // the drawing itself: the sticky box's own padding must not tip it over

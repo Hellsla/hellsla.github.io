@@ -728,7 +728,7 @@ SIM_CARD_OLD = {
 # lesson.js lets it stick only when it leaves room for the controls (SIM_STICK_SHARE of the window under the bar); a
 # taller picture stays in the flow. A chapter listed here never sticks (with the reason).
 SIM_STICK_OFF = {}
-SIM_STICK_SHARE = 0.55                                 # lesson.js STICK_SHARE, test_inquiry.py stick_checks
+SIM_STICK_SHARE = 0.45                                 # lesson.js STICK_SHARE, test_inquiry.py stick_checks
 TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutki shows one investigation at first
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
