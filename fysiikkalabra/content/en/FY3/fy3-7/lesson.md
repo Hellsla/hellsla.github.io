@@ -228,7 +228,13 @@ The specific latent heat of vaporisation of water is determined experimentally. 
 
 <!-- vaihe -->
 
-**Given and find.** Power $P = 1000\,\text{W}$, time $t = 300\,\text{s}$ and the mass vaporised, that is, the change in the balance reading, $\Delta m = 128\,\text{g}$. The water is boiling, so it is at $100\,{}^\circ\text{C}$. We want the specific latent heat of vaporisation $r$. Assume that all the energy from the heater goes into the water.
+**Given and find.** Power $P = 1000\,\text{W}$, time $t = 300\,\text{s}$ and the mass vaporised, that is, the change in the balance reading, $\Delta m = 128\,\text{g}$.
+
+The water is boiling, so it is at $100\,{}^\circ\text{C}$.
+
+We want the specific latent heat of vaporisation $r$.
+
+Assume that all the energy from the heater goes into the water.
 
 <!-- vaihe -->
 

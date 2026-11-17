@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e592a51123c9f1c7
+CONTENT-HASH: 0c5b7254268f0235
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] open-exercises-L2-1280-4 (16-13) — the Given paragraph runs the symbols together on one line ("c = 4190 J/(kg K)" beside the temperatures); consider a break before the table value. Optional.
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
+- 1280 px with solutions open: fy3-16-open-exercises-L2-1280-4.png (16-12 Formula, Conversions, Substitution, Answer, Reasonableness as separate paragraphs; fractions and units aligned; nothing clipped); fy3-16-open-tarkista-1280-2.png (checks with feedback open).
+- 390 px: fy3-16-stage-tarkista-390-2.png (task cards, no overflow); fy3-16-stage-sovella-390-2.png (stages 4-6: paragraph breaks clear, aligned chains fit the phone).
 - Hash run at start and end: unchanged.
 
 ## Scores

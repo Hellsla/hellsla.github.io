@@ -263,7 +263,11 @@ Määritä ekstrapoloimalla lämpötila, jossa kaasun paine olisi nolla.
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Taulukossa on kuusi mittapistettä $(\theta,\, p)$. Paine on $p_0 = 100\,\text{kPa}$ lämpötilassa $0\,{}^\circ\text{C}$. Kysytään lämpötilaa $\theta_0$, jossa paine olisi nolla. Pisteet ovat kuvaajassa suoralla. Paine kasvaa jokaista $20\,{}^\circ\text{C}$ kohti $7$–$8\,\text{kPa}$. Suoraa jatketaan vasemmalle, mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.
+**Tunnetut ja kysytty.** Taulukossa on kuusi mittapistettä $(\theta,\, p)$. Paine on $p_0 = 100\,\text{kPa}$ lämpötilassa $0\,{}^\circ\text{C}$.
+
+Kysytään lämpötilaa $\theta_0$, jossa paine olisi nolla.
+
+Pisteet ovat kuvaajassa suoralla. Paine kasvaa jokaista $20\,{}^\circ\text{C}$ kohti $7$–$8\,\text{kPa}$. Suoraa jatketaan vasemmalle, mittausalueen ulkopuolelle. Tätä sanotaan ekstrapoloinniksi.
 
 <svg data-fig="extrapolation" viewBox="0 0 600 350" role="img" aria-label="Kuvaaja näyttää, miten kaasun paine riippuu lämpötilasta suljetussa astiassa. Mittapisteet ovat lämpötila-alueella 0–100 °C, ja ne ovat suoralla. Suoraa on jatkettu eli ekstrapoloitu. Jatkettu suora kohtaa nollapaineen noin −270 °C:ssa. Pystyakseli on kuvan vasemmassa reunassa kohdassa −300 °C." style="max-width:100%;font-size:24px">
   <line x1="120.5" y1="290" x2="120.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -359,7 +363,11 @@ Pystyakseli on piirretty kuvan vasempaan reunaan, noin $-300\,{}^\circ\text{C}$:
 
 <!-- vaihe -->
 
-**Järkevyys.** Tulos on lähellä absoluuttista nollapistettä $-273{,}15\,{}^\circ\text{C}$. Ero on vain noin $3\,{}^\circ\text{C}$ eli yksi prosentti. Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p = 100\,\text{kPa}$ vastaa lämpötilaa $273{,}15\,\text{K}$. Silloin paine lämpötilassa $100\,{}^\circ\text{C}$ olisi $100\,\text{kPa} \cdot \tfrac{373{,}15}{273{,}15} = 136{,}6\,\text{kPa}$. Mitattu arvo on $137\,\text{kPa}$. Mikromallin mukaan nollapaineessa hiukkasten liike olisi niin vähäistä, ettei paine enää syntyisi. Todelliset kaasut nesteytyvät jo ennen tätä lämpötilaa. Siksi suoran jatke on vain malli, ja se kuvaa raja-arvoa.
+**Järkevyys.** Tulos on lähellä absoluuttista nollapistettä $-273{,}15\,{}^\circ\text{C}$. Ero on vain noin $3\,{}^\circ\text{C}$ eli yksi prosentti.
+
+Tehdään vielä riippumaton tarkistus. Jos paine on verrannollinen kelvinlämpötilaan, $p = 100\,\text{kPa}$ vastaa lämpötilaa $273{,}15\,\text{K}$. Silloin paine lämpötilassa $100\,{}^\circ\text{C}$ olisi $100\,\text{kPa} \cdot \tfrac{373{,}15}{273{,}15} = 136{,}6\,\text{kPa}$. Mitattu arvo on $137\,\text{kPa}$.
+
+Mikromallin mukaan nollapaineessa hiukkasten liike olisi niin vähäistä, ettei paine enää syntyisi. Todelliset kaasut nesteytyvät jo ennen tätä lämpötilaa. Siksi suoran jatke on vain malli, ja se kuvaa raja-arvoa.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että lämpötila kaksinkertaistuu, kun se nousee $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:een. Fysikaalisesti oikea vertailu tehdään kelvineinä: $283\,\text{K}$:sta $293\,\text{K}$:iin. Lämpötilojen suhde on 293/283 ≈ 1,035, eli nousu on noin $3{,}5\,\%$. Siksi hiukkasten keskimääräinen liike-energia ei kaksinkertaistu. Toinen virhe on pitää $0\,{}^\circ\text{C}$:ta alimpana mahdollisena lämpötilana. Se on vain veden jäätymispiste. Alin mahdollinen lämpötila on $0\,\text{K}$.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 232613594d85c8f2
+CONTENT-HASH: 0b286001548e8fad
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
 
 ## Checked
-- Delta round 2: rendered preview (fi) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
+- Round 1, delta (md-paragraphs, teacher-figure): lesson.md only, text cut into paragraphs, words unchanged, figures untouched.
+- 1280 px with solutions open: fy3-15-open-tarkista-1280-1.png (Pohdintatehtävä Vastaus: lead sentence, display chain, closing sentence as separate paragraphs; Käsitetehtävä feedback), fy3-15-open-exercises-1280-1.png (14-1 solution blocks, aligned rows, no clipping).
+- 390 px: fy3-15-example-390-1.png and fy3-15-stage-sovella-390-1.png (worked example stages 1-4: knowns and question as separate paragraphs, principle, display with three rows aligned, units conversions paragraph; no overflow, units LaTeX, decimal commas right). There are no 360 px captures.
+- Language: breaks fall at one idea each; no mechanical phrasing.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

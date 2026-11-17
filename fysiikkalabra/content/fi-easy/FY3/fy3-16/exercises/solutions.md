@@ -128,7 +128,9 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 ## fy3-16-L1-06
 **Kysytty:** miksi metallikahva tuntuu kylmemmältä kuin puukahva, vaikka molemmat ovat huoneen lämpötilassa.
 **Periaate:** Pitkään huoneessa olleet kappaleet ovat lämpötilatasapainossa ympäristönsä kanssa. Silloin kahvojen lämpötila on sama. Tuntuman ratkaisee, kuinka nopeasti energiaa siirtyy lämpimästä kädestä kahvaan. Lämpötilaeron vuoksi energiaa siirtyy kokonaisuutena kädestä kahvaan. Siirtymisen nopeus riippuu aineen lämmönjohtavuudesta. Lämmönjohtavuus kertoo, kuinka hyvin aine johtaa lämpöä.
-**Mallivastaus:** Metalli johtaa lämpöä hyvin. Siksi käden iholta siirtyy metalliin nopeasti paljon energiaa, ja ihon lämpötila laskee nopeasti. Puu johtaa lämpöä huonosti. Siksi energiaa siirtyy hitaammin, ja ihon pinta pysyy lämpimämpänä. Me siis aistimme ihon lämpötilan ja energian siirtymisen nopeuden. Emme aisti kahvan lämpötilaa. Kylmyys ei virtaa kahvasta käteen. Kahvan sisäenergiakaan ei ratkaise asiaa, sillä molempien lämpötila on sama kuin huoneen.
+**Mallivastaus:** Metalli johtaa lämpöä hyvin. Siksi käden iholta siirtyy metalliin nopeasti paljon energiaa, ja ihon lämpötila laskee nopeasti. Puu johtaa lämpöä huonosti. Siksi energiaa siirtyy hitaammin, ja ihon pinta pysyy lämpimämpänä.
+
+Me siis aistimme ihon lämpötilan ja energian siirtymisen nopeuden. Emme aisti kahvan lämpötilaa. Kylmyys ei virtaa kahvasta käteen. Kahvan sisäenergiakaan ei ratkaise asiaa, sillä molempien lämpötila on sama kuin huoneen.
 
 ## fy3-16-L1-07
 **Kysytty:** miksi laukun sisälämpötila pysyy $0\,{}^\circ\text{C}$:ssa, vaikka seinän läpi tulee koko ajan energiaa.

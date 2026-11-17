@@ -116,7 +116,9 @@
 **Kaava:** $Q = (U_1 - U_2)A\Delta T\,t$ ja $W = \dfrac{Q}{\varepsilon}$, joten $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
 **Muunnokset:** Aika on jo tunteina ja tulos halutaan kilowattitunteina, joten teho $\text{W}$ muutetaan kilowateiksi jakamalla tuhannella: $\text{Wh} / 1000 = \text{kWh}$.
 **Sijoitus:** $$\begin{aligned} Q &= (0{,}35 - 0{,}10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \\ &\cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} \\ &= 475\,\text{W} \cdot 5800\,\text{h} \\ &= 2\,755\,000\,\text{Wh} \\ &= 2755\,\text{kWh} \end{aligned}$$. $W = \dfrac{2755\,\text{kWh}}{2{,}8} \approx 983{,}9\,\text{kWh}$
-**Vastaus:** $980\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat lämpökerroin $2{,}8$, U-arvojen erotus $0{,}35 - 0{,}10 = 0{,}25$ ja lämpötilaero $19\,\text{K}$, kaikki kaksi numeroa; ala $100\,\text{m}^2$ ja aika $5800\,\text{h}$ ovat vähintään kahden numeron arvoja. Laskimen tulos $983{,}9\,\text{kWh}$ pyöristetään. Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Siksi eristys kannattaa: pienempi lämmöntarve tarkoittaa pienempää sähkölaskua.
+**Vastaus:** $980\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat lämpökerroin $2{,}8$, U-arvojen erotus $0{,}35 - 0{,}10 = 0{,}25$ ja lämpötilaero $19\,\text{K}$, kaikki kaksi numeroa; ala $100\,\text{m}^2$ ja aika $5800\,\text{h}$ ovat vähintään kahden numeron arvoja. Laskimen tulos $983{,}9\,\text{kWh}$ pyöristetään.
+
+Pumppu ei luo lämpöä vaan siirtää sitä sähköllä, ja sähköä kuluu sitä enemmän, mitä enemmän lämpöä talo tarvitsee. Siksi eristys kannattaa: pienempi lämmöntarve tarkoittaa pienempää sähkölaskua.
 **Järkevyys:** Takaisinlasku: $983{,}9 \cdot 2{,}8 \approx 2755\,\text{kWh}$. Sähkösäästö on pienempi kuin lämpösäästö $2755\,\text{kWh}$, koska pumppu luovuttaa $2{,}8$ kWh lämpöä yhdellä sähkökilowattitunnilla; sähkön lisäksi lämpöä tulee ulkoilmasta. Suoralla sähkölämmityksellä ($\varepsilon = 1$) säästö olisi koko $2755\,\text{kWh}$. Pakkasella lämpökerroin pienenee ja lisävastus käynnistyy, joten säästö on silloin suurin.
 
 ## fy3-12-L1-06
@@ -127,12 +129,16 @@
 ## fy3-12-L1-07
 **Kysytty:** mikä väite kasvihuoneilmiöstä on oikein
 **Periaate:** Kasvihuoneilmiö syntyy ilmakehän kaasujen ja maanpinnan lämpösäteilyn vuorovaikutuksesta. Kasvihuonekaasut imevät maanpinnan lähettämää lämpösäteilyä ja säteilevät osan siitä takaisin alas, mikä nostaa maanpinnan tasapainolämpötilaa.
-**Mallivastaus:** Oikea väite on se, jonka mukaan kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi. Ilmiön ansiosta maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$ eikä noin $-18\,{}^\circ\text{C}$. Otsonikato on eri asia: se lisää ultraviolettisäteilyä mutta ei juuri lämmitä maapalloa. Kasvihuonekaasut eivät estä Auringon säteilyä pääsemästä maanpinnalle. Luonnollinen kasvihuoneilmiö on olemassa ilman ihmisen päästöjäkin, ja päästöt voimistavat sitä.
+**Mallivastaus:** Oikea väite on se, jonka mukaan kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan siitä takaisin alas, joten maanpinta on lämpimämpi. Ilmiön ansiosta maanpinnan keskilämpötila on noin $+15\,{}^\circ\text{C}$ eikä noin $-18\,{}^\circ\text{C}$.
+
+Otsonikato on eri asia: se lisää ultraviolettisäteilyä mutta ei juuri lämmitä maapalloa. Kasvihuonekaasut eivät estä Auringon säteilyä pääsemästä maanpinnalle. Luonnollinen kasvihuoneilmiö on olemassa ilman ihmisen päästöjäkin, ja päästöt voimistavat sitä.
 
 ## fy3-12-L1-08
 **Kysytty:** mikä väite lämmön siirtymisestä seinän läpi on oikein, kun sisällä on $21\,{}^\circ\text{C}$ ja ulkona $-15\,{}^\circ\text{C}$
 **Periaate:** Lämpötilaero siirtää energiaa nettomääräisesti lämpimämmästä kappaleesta kylmempään. Lämpösäteilyä lähtee kuitenkin molemmista, ja lämpimämmästä lähtee enemmän. Siirtyvä suure on energia, ei kylmyys.
-**Mallivastaus:** Lämpöä siirtyy nettomääräisesti sisältä ulos, koska lämpötilaero siirtää energiaa lämpimämmästä kylmempään. Kylmyys ei siirry mihinkään: sisäpinta tuntuu kylmältä, koska lämpöä siirtyy ihosta ja huoneesta seinää kohti. Siirtyminen ei ole yhtä suurta molempiin suuntiin, koska silloin sisälämpötila pysyisi ennallaan ilman lämmitystä, mikä ei pakkasella pidä paikkaansa. Lämpö johtuu myös umpinaisen seinän läpi, ja eristys vain pienentää tehoa, joka sen läpi kulkee.
+**Mallivastaus:** Lämpöä siirtyy nettomääräisesti sisältä ulos, koska lämpötilaero siirtää energiaa lämpimämmästä kylmempään. Kylmyys ei siirry mihinkään: sisäpinta tuntuu kylmältä, koska lämpöä siirtyy ihosta ja huoneesta seinää kohti.
+
+Siirtyminen ei ole yhtä suurta molempiin suuntiin, koska silloin sisälämpötila pysyisi ennallaan ilman lämmitystä, mikä ei pakkasella pidä paikkaansa. Lämpö johtuu myös umpinaisen seinän läpi, ja eristys vain pienentää tehoa, joka sen läpi kulkee.
 
 ## fy3-12-L2-05
 **Annettu:** $m = 0{,}25\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, alkulämpötila $80{,}0\,{}^\circ\text{C}$; taulukosta ajan $t = 10\,\text{min}$ kohdalla $T_\text{A} = 69{,}0\,{}^\circ\text{C}$ (avoin) ja $T_\text{B} = 73{,}0\,{}^\circ\text{C}$ (kansi)
@@ -143,7 +149,9 @@
 **Sijoitus:** $T_\text{B} - T_\text{A} = 73{,}0\,{}^\circ\text{C} - 69{,}0\,{}^\circ\text{C} = 4{,}0\,\text{K}$. $P_\text{kansi} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 4{,}0\,\text{K}}{600\,\text{s}} = \dfrac{4190\,\text{J}}{600\,\text{s}} = 6{,}98\,\text{W}$
 **Vastaus:** $7{,}0\,\text{W}$, kaksi merkitsevää numeroa. Rajoittava tieto on lämpötilaero $4{,}0\,\text{K}$, joka on kahden numeron arvo.
 **Järkevyys:** Avoin kuppi luovuttaa $\dfrac{4190 \cdot 0{,}25 \cdot 11{,}0}{600}\,\text{W} \approx 19{,}2\,\text{W}$ ja kuppi kannen kanssa $\dfrac{4190 \cdot 0{,}25 \cdot 7{,}0}{600}\,\text{W} \approx 12{,}2\,\text{W}$, joten erotus on $19{,}2\,\text{W} - 12{,}2\,\text{W} = 7{,}0\,\text{W}$, kuten laskettu. Kansi poistaa siis noin kolmanneksen häviöstä. Teho on pieni verrattuna esimerkiksi talon häviöihin, mikä sopii yhteen pienen kupin kanssa.
-**Mallivastaus b):** Kansi estää ennen kaikkea haihtumisen: höyrystyvä vesi vie mukanaan höyrystymislämmön, ja konvektio kuljettaa höyryn ja lämpimän ilman pois kupin yltä. Kansi pysäyttää tämän virtauksen, joten kupin B vesi jäähtyy hitaammin. Se jäähtyy silti, koska lämpöä johtuu kupin seinän ja kannen läpi ympäröivään ilmaan ja kuppi säteilee lämpöä, eikä kansi estä niitä. Taulukon mukaan kupin B lämpötila laskee ajassa $20\,\text{min}$ arvosta $80{,}0\,{}^\circ\text{C}$ arvoon $67{,}4\,{}^\circ\text{C}$.
+**Mallivastaus b):** Kansi estää ennen kaikkea haihtumisen: höyrystyvä vesi vie mukanaan höyrystymislämmön, ja konvektio kuljettaa höyryn ja lämpimän ilman pois kupin yltä. Kansi pysäyttää tämän virtauksen, joten kupin B vesi jäähtyy hitaammin.
+
+Se jäähtyy silti, koska lämpöä johtuu kupin seinän ja kannen läpi ympäröivään ilmaan ja kuppi säteilee lämpöä, eikä kansi estä niitä. Taulukon mukaan kupin B lämpötila laskee ajassa $20\,\text{min}$ arvosta $80{,}0\,{}^\circ\text{C}$ arvoon $67{,}4\,{}^\circ\text{C}$.
 
 ## fy3-12-L2-06
 **Annettu:** $A = 1{,}6\,\text{m}^2$, $U = 1{,}0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $T_\text{sisä} = 21\,{}^\circ\text{C}$, $T_\text{ulko} = -15\,{}^\circ\text{C}$; oppilaan tulos $\Delta T = 6\,\text{K}$ ja $P = 9{,}6\,\text{W}$
@@ -177,7 +185,11 @@
 **Sijoitus:** $\Delta A = 7{,}5 \cdot 10^{6}\,\text{km}^2 - 3{,}9 \cdot 10^{6}\,\text{km}^2 = 3{,}6 \cdot 10^{6}\,\text{km}^2$. $$\begin{aligned} \Delta P &= 90\,\tfrac{\text{W}}{\text{m}^2} \cdot 3{,}6 \cdot 10^{12}\,\text{m}^2 \\ &\cdot (0{,}60 - 0{,}06) \\ &= 1{,}7496 \cdot 10^{14}\,\text{W} \end{aligned}$$. $\Delta P_\text{maa} = \dfrac{1{,}7496 \cdot 10^{14}\,\text{W}}{5{,}1 \cdot 10^{14}\,\text{m}^2} = 0{,}343\,\tfrac{\text{W}}{\text{m}^2}$
 **Vastaus:** $0{,}34\,\tfrac{\text{W}}{\text{m}^2}$, kaksi merkitsevää numeroa, koska säteilyteho $90\,\tfrac{\text{W}}{\text{m}^2}$ ja albedojen erotus $0{,}54$ ovat kahden numeron arvoja. Se on noin kolmannes energiaepätasapainosta $1{,}0\,\tfrac{\text{W}}{\text{m}^2}$, koska $0{,}34 / 1{,}0 \approx 0{,}3$.
 **Järkevyys:** Jään alan muutos on $$\begin{aligned} &3{,}6 \cdot 10^{12} / 5{,}1 \cdot 10^{14} \\ &\approx 0{,}7\,\% \end{aligned}$$ maapallon alasta. Sen kohdalla imetty teho kasvaa $0{,}54$-kertaisesti $90\,\tfrac{\text{W}}{\text{m}^2}$:iin nähden, eli $0{,}007 \cdot 90 \cdot 0{,}54 \approx 0{,}34\,\tfrac{\text{W}}{\text{m}^2}$, kuten laskettu. Jos albedot olisivat samat, lisäys olisi nolla, kuten pitääkin. Tulos on positiivinen, koska avoin meri imee enemmän.
-**Mallivastaus c):** Palautekytkentä on positiivinen, koska se vahvistaa alkuperäistä muutosta: lämpeneminen sulattaa jäätä, jolloin heijastuminen pienenee ja imetty teho kasvaa, mikä lämmittää vielä lisää. Malli on karkea, koska se käyttää koko ajan samaa säteilytehoa $90\,\tfrac{\text{W}}{\text{m}^2}$ ja kiinteitä albedoja. Todellisuudessa Auringon säteily vaihtelee voimakkaasti vuodenajan mukaan, jään albedo muuttuu sulamislammikoiden vuoksi ja pilvet muuttavat imeytyvää tehoa. Jään väheneminen ei voi jatkua loputtomiin, koska jäätä on vain rajallinen määrä. Suurin yksinkertaistus on, että syyskuun minimin menetys lasketaan niin kuin meri olisi avoinna koko vuoden vuosikeskiarvolla $90\,\tfrac{\text{W}}{\text{m}^2}$, joten arvio on yläraja.
+**Mallivastaus c):** Palautekytkentä on positiivinen, koska se vahvistaa alkuperäistä muutosta: lämpeneminen sulattaa jäätä, jolloin heijastuminen pienenee ja imetty teho kasvaa, mikä lämmittää vielä lisää. Malli on karkea, koska se käyttää koko ajan samaa säteilytehoa $90\,\tfrac{\text{W}}{\text{m}^2}$ ja kiinteitä albedoja.
+
+Todellisuudessa Auringon säteily vaihtelee voimakkaasti vuodenajan mukaan, jään albedo muuttuu sulamislammikoiden vuoksi ja pilvet muuttavat imeytyvää tehoa. Jään väheneminen ei voi jatkua loputtomiin, koska jäätä on vain rajallinen määrä.
+
+Suurin yksinkertaistus on, että syyskuun minimin menetys lasketaan niin kuin meri olisi avoinna koko vuoden vuosikeskiarvolla $90\,\tfrac{\text{W}}{\text{m}^2}$, joten arvio on yläraja.
 
 ## fy3-12-L3-05
 **Annettu:** $P_\text{im} = 239\,\tfrac{\text{W}}{\text{m}^2}$, ilmakehän imemä osuus $f = 0{,}80$, loput $1 - f = 0{,}20$ menee suoraan avaruuteen; ilmakehä säteilee puoliksi ylös ja puoliksi alas; taulukon pisteet $(T, P)$
@@ -188,7 +200,9 @@
 **Sijoitus:** $S = \dfrac{239\,\tfrac{\text{W}}{\text{m}^2}}{1 - 0{,}40} = 398{,}3\,\tfrac{\text{W}}{\text{m}^2}$. Tarkistus: $239 + 0{,}40 \cdot 398{,}3 = 398{,}3\,\tfrac{\text{W}}{\text{m}^2}$. Arvo $398{,}3$ on taulukon pisteiden $288\,\text{K}$ ($390$) ja $303\,\text{K}$ ($478$) välissä: $T = 288\,\text{K} + \dfrac{398{,}3 - 390}{478 - 390} \cdot 15\,\text{K} = 289{,}4\,\text{K}$. $T_\text{C} = 289{,}4\,\text{K} - 273{,}15\,\text{K} = 16{,}3\,{}^\circ\text{C}$
 **Vastaus:** $16\,{}^\circ\text{C}$ (laskettuna $16{,}3\,{}^\circ\text{C}$), kaksi merkitsevää numeroa, koska lineaarinen interpolointi kaarevalla taulukkokäyrällä rajoittaa tuloksen noin $\pm 0{,}5\,\text{K}$:n tarkkuuteen.
 **Järkevyys:** Lämpötila $16\,{}^\circ\text{C}$ on lähellä maapallon todellista keskilämpötilaa noin $+15\,{}^\circ\text{C}$. Teho $398{,}3\,\tfrac{\text{W}}{\text{m}^2}$ on suurempi kuin $239\,\tfrac{\text{W}}{\text{m}^2}$, kuten pitää, koska maanpinta saa ilmakehältä lisää energiaa. Rajatapaus $f = 0$ antaa $S = 239\,\tfrac{\text{W}}{\text{m}^2}$, ja sitä vastaa taulukosta noin $255\,\text{K}$.
-**Mallivastaus c):** Ilman ilmakehää maanpinta säteilisi vain imemänsä tehon $239\,\tfrac{\text{W}}{\text{m}^2}$, jota vastaa taulukosta $255\,\text{K}$ eli $255 - 273{,}15 \approx -18\,{}^\circ\text{C}$. Malli antaa ilmakehällä lämpötilan $16{,}3\,{}^\circ\text{C}$, eli noin $34\,\text{K}$ lämpimämmän, joten kasvihuoneilmiö nostaa maanpinnan lämpötilaa tämän verran. Malli on silti karkea: oikea ilmakehä imee Auringon säteilyä, osuus $0{,}80$ vaihtelee aallonpituuden mukaan, ja pilvet, konvektio ja veden haihtuminen siirtävät energiaa maanpinnalta ylös muullakin tavalla kuin säteilemällä.
+**Mallivastaus c):** Ilman ilmakehää maanpinta säteilisi vain imemänsä tehon $239\,\tfrac{\text{W}}{\text{m}^2}$, jota vastaa taulukosta $255\,\text{K}$ eli $255 - 273{,}15 \approx -18\,{}^\circ\text{C}$. Malli antaa ilmakehällä lämpötilan $16{,}3\,{}^\circ\text{C}$, eli noin $34\,\text{K}$ lämpimämmän, joten kasvihuoneilmiö nostaa maanpinnan lämpötilaa tämän verran.
+
+Malli on silti karkea: oikea ilmakehä imee Auringon säteilyä, osuus $0{,}80$ vaihtelee aallonpituuden mukaan, ja pilvet, konvektio ja veden haihtuminen siirtävät energiaa maanpinnalta ylös muullakin tavalla kuin säteilemällä.
 
 ## fy3-12-L2-08
 **Kysytty:** rakennusosien läpi johtuvat lämpötehot $P$ ja niiden järjestys pienimmästä suurimpaan.
@@ -203,7 +217,9 @@ Ikkunat: $UA = 9{,}6\,\text{W/K}$, $P = 9{,}6\,\text{W/K} \cdot 30\,\text{K} = 2
 
 Seinä: $UA = 15{,}3\,\text{W/K}$, $P = 15{,}3\,\text{W/K} \cdot 30\,\text{K} = 459\,\text{W}$
 
-Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antaisi väärän järjestyksen, koska ikkunoilla ja ovella U-arvo on suuri mutta pinta-ala pieni, ja pelkkä pinta-ala antaisi sen myös väärin, koska seinän U-arvo on pieni mutta pinta-ala suuri. Tulokset annetaan kahdella merkitsevällä numerolla, koska U-arvot on annettu kahdella: noin $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ ja $460\,\text{W}$. Arvio: seinän $UA \approx 0{,}2 \cdot 90 = 18\,\text{W/K}$ on suurin ja oven $2\,\text{W/K}$ pienin, mikä sopii.
+Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antaisi väärän järjestyksen, koska ikkunoilla ja ovella U-arvo on suuri mutta pinta-ala pieni, ja pelkkä pinta-ala antaisi sen myös väärin, koska seinän U-arvo on pieni mutta pinta-ala suuri.
+
+Tulokset annetaan kahdella merkitsevällä numerolla, koska U-arvot on annettu kahdella: noin $60\,\text{W}$, $220\,\text{W}$, $290\,\text{W}$ ja $460\,\text{W}$. Arvio: seinän $UA \approx 0{,}2 \cdot 90 = 18\,\text{W/K}$ on suurin ja oven $2\,\text{W/K}$ pienin, mikä sopii.
 
 ## fy3-12-L1-09
 **Annettu:** $A = 10\,\text{m}^2$, $d = 0{,}20\,\text{m}$, $T_\text{sisä} = 20\,{}^\circ\text{C}$, $T_\text{ulko} = -10\,{}^\circ\text{C}$, $U = \dfrac{\lambda}{d}$; taulukosta (MAFY-taulukko, lämmönjohtavuuksia: kiinteät aineet, puu (mänty)) $\lambda = 0{,}14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}$

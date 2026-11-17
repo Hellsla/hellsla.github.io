@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f5e200691bd07b3c
+CONTENT-HASH: 4c581ca0a325f86c
 
 ## Blocking
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
+- [Minor] fy3-2-example-390-1, stage 2 — at 390 px "(s, F)" ends a line and "-kuvaajan" starts the next; unchanged wording, a line-break matter only — keep the compound together (e.g. a non-breaking form) when the text is next edited.
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Round 1, delta (lesson.md, md-paragraphs; the teacher-figure part is carried). No 360 px captures exist (said once); the 360 px layout check is clean per the packet.
+- 390 px: fy3-2-example-390-1 (graph figure under the problem, stages 1-4: knowns, remark and question as separate paragraphs, formula box aligned) and fy3-2-stage-sovella-390-1 (the same inside Esimerkit, no clipping or overflow).
+- 1280 px: fy3-2-open-exercises-1280-1 (2-1 solution open: rows, boxed Sijoitus, Vastaus, Järkevyys paragraphs) and fy3-2-open-tarkista-1280-1 (Testaa ja arvioi cards, feedback, readable width).
+- Breaks sit at meaningful boundaries; layout around them survived.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

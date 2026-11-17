@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 22b817faad474e15
+CONTENT-HASH: 486d4649bf3ae1ef
 Mode: delta
 Round: 1
 
@@ -7,11 +7,13 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] Only shared captures examined; no per-exercise check of fy3-3.
+None.
 
 ## Checked
-- Delta formulas by their rendering in the shared component, seen in the fy3-1, fy3-2 and fy3-5 captures; no fy3-3-specific capture opened (Polish: not opened one by one).
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- Delta: solutions.md paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
+- 1280 px, solutions open: fy3-3-open-exercises-1280-3.png (Periaate, Kaava with inline fractions, Järkevyys paragraph and block); fy3-3-open-exercises-L2-1280-4.png (Kuvaajan lukeminen, "ja" between two substitution blocks, Vastaus); fy3-3-open-tarkista-1280-1.png (checks).
+- 390 px: fy3-3-example-390-1.png and fy3-3-example-390-2.png (same shared styles, rows wrap, nothing clipped).
+- Judged: logical paragraph order, KaTeX units and decimal commas.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

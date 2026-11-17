@@ -233,7 +233,9 @@ Lauhdevoimalaitoksen polttoaineteho on $600\,\text{MW}$. Kattilan hyötysuhde on
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Polttoaineteho $P_\text{o} = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$ (kattila), $\eta_2 = 0{,}440$ (höyrykierto) ja $\eta_3 = 0{,}950$ (generaattori ja muuntaja). Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
+**Tunnetut ja kysytty.** Polttoaineteho $P_\text{o} = 600\,\text{MW}$ ja vaiheiden hyötysuhteet $\eta_1 = 0{,}910$ (kattila), $\eta_2 = 0{,}440$ (höyrykierto) ja $\eta_3 = 0{,}950$ (generaattori ja muuntaja).
+
+Kysytään sähkötehoa $P_3$, koko ketjun hyötysuhdetta $\eta$ ja hukkalämmön tehoa $P_\text{h}$.
 
 <!-- vaihe -->
 

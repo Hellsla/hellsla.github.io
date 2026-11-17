@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 92cd21a0acba0197
+CONTENT-HASH: ca261fda071e6e92
 
 ## Blocking
 
 ## Polish
-- The goal (inquiry learn 2), the contribution, the refrigerator task and the worked example still say the power "conducted through" a building part, while the Formula section and Summary now say "transferred". This is not wrong at this level (C), because the worked example is about conduction. Using "transferred" in the goal and contribution would match the Finnish.
 
 ## Checked
-batch delta review: "conducted" changed to "transferred" in the formula section and Summary. P = UAΔT with U counting the surface layers (convection, radiation) is better described as transferred. No numbers or symbols changed.
+batch delta review: three decimal-separator changes only ($1{,}5 \to 1.5\,\text{m}^2$, $4{,}0 \to 4.0\,\text{m}^2$, $20{,}0 \to 20.0\,\text{m}^2$); values unchanged. Recomputed: window "find the error" task, correct $\Delta T = 30\,\text{K}$ gives $P = UA\Delta T = 45\,\text{W}$ against the student's $15\,\text{W}$, so the error remains the temperature difference and the intended option stays the single correct one; refrigerator $P = 0.30\cdot 4.0\cdot 16\,\text{W} = 19.2\,\text{W}$, $E = Pt = 0.461\,\text{kWh}$ per day, matches `answer`; worked example walls $734\,\text{W}$ + windows $720\,\text{W}$ = $1.45\,\text{kW}$, $34.9\,\text{kWh}$ (about $126\,\text{MJ}$) per day, consistent with the data now written with the English point. Teacher-approved figures untouched.

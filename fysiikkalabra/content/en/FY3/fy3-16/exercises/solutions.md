@@ -31,7 +31,10 @@
 ## fy3-16-L1-04
 **Given:** ice $m = 0.75\,\text{kg}$, at the melting point $0\,{}^\circ\text{C}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** quantity of heat $Q$ needed to melt the ice, in kilojoules
-**Principle:** The ice is already at the melting point, and while it melts it stays at $0\,{}^\circ\text{C}$. So the energy does not raise the temperature but changes the interactions between the particles: the regular arrangement of the ice breaks down and the interaction energy between the particles increases, and we need the specific latent heat of fusion $s$, not $c\,\Delta T$.
+**Principle:** The ice is already at the melting point, and while it melts it stays at $0\,{}^\circ\text{C}$.
+
+So the energy does not raise the temperature but changes the interactions between the particles: the regular arrangement of the ice breaks down and the interaction energy between the particles increases, and we need the specific latent heat of fusion $s$, not $c\,\Delta T$.
+
 **Formula:** $Q = s\,m$
 **Conversions:** Not needed: $s$ is in kilojoules per kilogram and the mass is in kilograms.
 **Substitution:** $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.75\,\text{kg} = 250.5\,\text{kJ}$
@@ -91,17 +94,26 @@
 ## fy3-16-L3-01
 **Given:** stones $m_\text{k} = 25\,\text{kg}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; water $m_\text{v} = 0.20\,\text{kg}$, $T_\text{initial} = 20\,{}^\circ\text{C}$, warms to $100\,{}^\circ\text{C}$ and vaporises; from the table $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** drop in the temperature of the stones $\Delta T_\text{k}$ in kelvins
-**Principle:** Energy is conserved: when all the energy is taken from the stones, the energy given out by the stones is equal to the energy absorbed by the water. The water absorbs energy in two stages (warming up and vaporisation), and the stones only cool down, so their state does not change. The warming of the steam and the heating of the stove are not taken into account.
+**Principle:** Energy is conserved: when all the energy is taken from the stones, the energy given out by the stones is equal to the energy absorbed by the water.
+
+The water absorbs energy in two stages (warming up and vaporisation), and the stones only cool down, so their state does not change. The warming of the steam and the heating of the stove are not taken into account.
 **Formula:** $c_\text{k}\,m_\text{k}\,\Delta T_\text{k} = m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)$, so $\Delta T_\text{k} = \dfrac{m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)}{c_\text{k}\,m_\text{k}}$
-**Conversions:** $\Delta T_\text{v} = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
+**Conversions:** $\Delta T_\text{v} = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins.
+
+$r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** $c_\text{v}\,\Delta T_\text{v} = 4190 \cdot 80\,\tfrac{\text{J}}{\text{kg}} = 335\,200\,\tfrac{\text{J}}{\text{kg}}$, $$\begin{aligned} Q_\text{v} &= 0.20\,\text{kg} \\ &\cdot (335\,200 + 2\,260\,000)\,\tfrac{\text{J}}{\text{kg}} \\ &= 519\,040\,\text{J} \end{aligned}$$ and $\Delta T_\text{k} = \dfrac{519\,040\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 25\,\text{kg}} = 25.95\,\text{K}$
 **Answer:** $26\,\text{K}$, two significant figures like the masses $0.20\,\text{kg}$ and $25\,\text{kg}$.
-**Reasonableness:** Vaporisation takes $452\,\text{kJ}$, which is $87\,\%$ of the energy, and warming alone would lower the temperature of the stones by only about $3.4\,\text{K}$. The drop in the stones is small compared with their temperature of $300\,{}^\circ\text{C}$, because there are a lot of stones. Warming the steam would make the drop slightly larger, and a stove that keeps heating the stones would make it smaller; $26\,\text{K}$ is the drop without heating by the stove.
+**Reasonableness:** Vaporisation takes $452\,\text{kJ}$, which is $87\,\%$ of the energy, and warming alone would lower the temperature of the stones by only about $3.4\,\text{K}$. The drop in the stones is small compared with their temperature of $300\,{}^\circ\text{C}$, because there are a lot of stones.
+
+Warming the steam would make the drop slightly larger, and a stove that keeps heating the stones would make it smaller; $26\,\text{K}$ is the drop without heating by the stove.
 
 ## fy3-16-L3-02
 **Given:** ice $m_\text{ice} = 0.500\,\text{kg}$, $0\,{}^\circ\text{C}$; water $m_\text{v} = 2.00\,\text{kg}$, $T_\text{v} = 30.0\,{}^\circ\text{C}$; the container is insulated; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** final temperature of the mixture $T$ in degrees Celsius
-**Principle:** Energy is conserved, because the container is insulated: the energy given out by the water melts the ice and warms the melted water to the final temperature. This works only if all the ice melts. First check: as it cools to $0\,{}^\circ\text{C}$ the water can give out at most $c\,m_\text{v}\,T_\text{v} = 251\,400\,\text{J}$, and melting the ice needs only $s\,m_\text{ice} = 167\,000\,\text{J}$. Since $251\,400\,\text{J} > 167\,000\,\text{J}$, all the ice melts and the final temperature is above $0\,{}^\circ\text{C}$.
+**Principle:** Energy is conserved, because the container is insulated: the energy given out by the water melts the ice and warms the melted water to the final temperature. This works only if all the ice melts.
+
+First check: as it cools to $0\,{}^\circ\text{C}$ the water can give out at most $c\,m_\text{v}\,T_\text{v} = 251\,400\,\text{J}$, and melting the ice needs only $s\,m_\text{ice} = 167\,000\,\text{J}$. Since $251\,400\,\text{J} > 167\,000\,\text{J}$, all the ice melts and the final temperature is above $0\,{}^\circ\text{C}$.
+
 **Formula:** $$\begin{aligned} &c\,m_\text{v}(T_\text{v} - T) \\ &= s\,m_\text{ice} + c\,m_\text{ice}\,T \end{aligned}$$, so $T = \dfrac{c\,m_\text{v}\,T_\text{v} - s\,m_\text{ice}}{c\,(m_\text{v} + m_\text{ice})}$
 **Conversions:** The ice is at $0\,{}^\circ\text{C}$, so the change in temperature of the melted water is $T - 0\,{}^\circ\text{C} = T$ and the water cools by $T_\text{v} - T$; the differences are the same in kelvins, and $T$ comes directly in degrees Celsius. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** The numerator is $$\begin{aligned} &4190 \cdot 2.00 \cdot 30.0\,\text{J} \\ &- 334\,000 \cdot 0.500\,\text{J} \\ &= 251\,400\,\text{J} - 167\,000\,\text{J} \\ &= 84\,400\,\text{J} \end{aligned}$$ and the denominator is $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2.50\,\text{kg} = 10\,475\,\tfrac{\text{J}}{\text{K}}$, so
@@ -114,26 +126,40 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8.057\,{}
 ## fy3-16-L3-03
 **Given:** $U = 1.5\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0.50\,\text{m}^2$, outside $30\,{}^\circ\text{C}$ and inside $0\,{}^\circ\text{C}$, so $\Delta T = 30\,\text{K}$, $t = 6.0\,\text{h}$; drinks $m_\text{j} = 0.50\,\text{kg}$, $\Delta T_\text{j} = 24\,\text{K}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ice $-10\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$, $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** smallest mass $m$ of the ice pack in kilograms
-**Principle:** Energy is conserved: during the 6.0 hours the ice has to absorb the energy coming through the wall and the energy given out by the drinks. The ice first warms from $-10\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$ ($c_\text{ice}\,\Delta T_\text{ice}$) and then melts ($s$). By the assumption of the problem the inside is at $0\,{}^\circ\text{C}$, so the power through the wall stays constant.
+**Principle:** Energy is conserved: during the 6.0 hours the ice has to absorb the energy coming through the wall and the energy given out by the drinks. The ice first warms from $-10\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$ ($c_\text{ice}\,\Delta T_\text{ice}$) and then melts ($s$).
+
+By the assumption of the problem the inside is at $0\,{}^\circ\text{C}$, so the power through the wall stays constant.
 **Formula:** $m\,(c_\text{ice}\,\Delta T_\text{ice} + s) = U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$, so $m = \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}$
 **Conversions:** $t = 6.0\,\text{h} = 21\,600\,\text{s}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. The change in the temperature of the ice is $\Delta T_\text{ice} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, the same in kelvins.
+
 **Substitution:**
 Energy from the wall: $U A\,\Delta T\,t = 1.5 \cdot 0.50 \cdot 30 \cdot 21\,600\,\text{J} = 486\,000\,\text{J}$
 Energy from the drinks: $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0.50 \cdot 24\,\text{J} = 50\,280\,\text{J}$
 Energy taken by the ice per kilogram: $c_\text{ice}\,\Delta T_\text{ice} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$
 Smallest mass: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1.511\,\text{kg}$
 **Answer:** $1.6\,\text{kg}$, two significant figures, because the U-value $1.5$, the area $0.50\,\text{m}^2$, the mass of the drinks $0.50\,\text{kg}$ and the time $6.0\,\text{h}$ all have two figures. The calculated $1.511\,\text{kg}$ is the smallest mass that is enough, so it is rounded up: $1.5\,\text{kg}$ would not be enough.
-**Reasonableness:** The wall brings in $486\,\text{kJ}$ and the drinks $50\,\text{kJ}$, about $536\,\text{kJ}$ in total. If the ice were already at $0\,{}^\circ\text{C}$, we would need $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1.6\,\text{kg}$. Warming freezer ice takes about $\tfrac{21}{334} \approx 6\,\%$ more energy per kilogram, so the mass needed is slightly smaller, $1.51\,\text{kg}$, and rounded up to two figures the smallest mass that is enough is $1.6\,\text{kg}$.
+**Reasonableness:** The wall brings in $486\,\text{kJ}$ and the drinks $50\,\text{kJ}$, about $536\,\text{kJ}$ in total. If the ice were already at $0\,{}^\circ\text{C}$, we would need $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1.6\,\text{kg}$.
+
+Warming freezer ice takes about $\tfrac{21}{334} \approx 6\,\%$ more energy per kilogram, so the mass needed is slightly smaller, $1.51\,\text{kg}$, and rounded up to two figures the smallest mass that is enough is $1.6\,\text{kg}$.
 
 ## fy3-16-L1-06
 **Find:** why a metal handle feels colder than a wooden handle even though both are at room temperature.
-**Principle:** Objects that have been in a room for a long time are in thermal equilibrium with their surroundings, so the handles are at the same temperature. What decides the feel is how fast energy moves from the warm hand into the handle: because of the temperature difference there is a net transfer of energy from the hand to the handle, and the rate of the transfer depends on the thermal conductivity of the material.
-**Model answer:** Metal conducts heat well, so a lot of energy moves quickly from the skin of the hand into the metal and the temperature of the skin drops quickly. Wood conducts heat poorly, so energy moves more slowly and the surface of the skin stays warmer. So what we sense is the temperature of the skin and the rate at which energy is transferred, not the temperature of the handle. Cold does not flow from the handle into the hand, and the internal energy of the handle does not decide the matter: both are at the temperature of the room.
+**Principle:** Objects that have been in a room for a long time are in thermal equilibrium with their surroundings, so the handles are at the same temperature.
+
+What decides the feel is how fast energy moves from the warm hand into the handle: because of the temperature difference there is a net transfer of energy from the hand to the handle, and the rate of the transfer depends on the thermal conductivity of the material.
+
+**Model answer:** Metal conducts heat well, so a lot of energy moves quickly from the skin of the hand into the metal and the temperature of the skin drops quickly. Wood conducts heat poorly, so energy moves more slowly and the surface of the skin stays warmer.
+
+So what we sense is the temperature of the skin and the rate at which energy is transferred, not the temperature of the handle. Cold does not flow from the handle into the hand, and the internal energy of the handle does not decide the matter: both are at the temperature of the room.
 
 ## fy3-16-L1-07
 **Find:** why the temperature inside the bag stays at $0\,{}^\circ\text{C}$ although energy comes through the wall all the time.
-**Principle:** A power $P = UA\Delta T$ is transferred into the bag through the wall, and its energy $P\,t$ goes to the ice. The ice is at its melting point, so the energy does not raise the temperature but is used for melting, $Q = s\,m$: it increases the interaction energy between the particles. The temperature can rise only after all the ice has melted.
-**Model answer:** The energy entering the bag melts ice, and the temperature does not change during melting. So it is $0\,{}^\circ\text{C}$ inside as long as there is ice left. Ice does not produce cold; it cools by taking in energy. The wall also only slows down the conduction of heat and does not prevent it, and it is exactly the energy coming through the wall that melts the ice. When the ice has melted, the incoming energy warms the water and the temperature starts to rise.
+**Principle:** A power $P = UA\Delta T$ is transferred into the bag through the wall, and its energy $P\,t$ goes to the ice. The ice is at its melting point, so the energy does not raise the temperature but is used for melting, $Q = s\,m$: it increases the interaction energy between the particles.
+
+The temperature can rise only after all the ice has melted.
+**Model answer:** The energy entering the bag melts ice, and the temperature does not change during melting. So it is $0\,{}^\circ\text{C}$ inside as long as there is ice left. Ice does not produce cold; it cools by taking in energy.
+
+The wall also only slows down the conduction of heat and does not prevent it, and it is exactly the energy coming through the wall that melts the ice. When the ice has melted, the incoming energy warms the water and the temperature starts to rise.
 
 ## fy3-16-L1-08
 **Given:** power $P = 2.0\,\text{kW}$, water $m = 1.5\,\text{kg}$, $T_\text{initial} = 20\,{}^\circ\text{C}$, $T_\text{final} = 100\,{}^\circ\text{C}$; given in the problem $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -153,35 +179,51 @@ Smallest mass: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tf
 **Conversions:** The change in temperature is the same in kelvins: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. The time is $t = 30\,\text{min} = 1800\,\text{s}$ and the power is $P = 6.0\,\text{kW} = 6000\,\text{W}$.
 **Substitution:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8.16 \cdot 10^{6}\,\text{J}}{10.8 \cdot 10^{6}\,\text{J}} = 0.756 = 75.6\,\%$
 **Answer:** $76\,\%$, two significant figures, as in the power $6.0\,\text{kW}$ and the mass $40\,\text{kg}$.
-**Reasonableness:** The efficiency is below $100\,\%$, as it must be. If all the energy ended up in the stones, the temperature would rise by $\dfrac{10.8 \cdot 10^{6}\,\text{J}}{800 \cdot 40\,\text{J/K}} \approx 340\,\text{K}$, whereas the measured rise is $255\,\text{K}$, about three quarters of that. Period by period, the energy $c\,m\,\Delta T$ is $2.94\,\text{MJ}$, $2.69\,\text{MJ}$ and $2.53\,\text{MJ}$, while $3.6\,\text{MJ}$ of electrical energy is used per period, so the efficiencies of the periods are about $82\,\%$, $75\,\%$ and $70\,\%$.
-**Model answer for part b):** the stones give out heat to the surroundings, and the power lost grows as the temperature difference grows. As the stones get hotter, a larger share of the elements' power of $6.0\,\text{kW}$ escapes to the surroundings and a smaller share warms the stones. So the rise slows down period by period ($92\,\text{K}$, $84\,\text{K}$, $79\,\text{K}$).
+**Reasonableness:** The efficiency is below $100\,\%$, as it must be. If all the energy ended up in the stones, the temperature would rise by $\dfrac{10.8 \cdot 10^{6}\,\text{J}}{800 \cdot 40\,\text{J/K}} \approx 340\,\text{K}$, whereas the measured rise is $255\,\text{K}$, about three quarters of that.
+
+Period by period, the energy $c\,m\,\Delta T$ is $2.94\,\text{MJ}$, $2.69\,\text{MJ}$ and $2.53\,\text{MJ}$, while $3.6\,\text{MJ}$ of electrical energy is used per period, so the efficiencies of the periods are about $82\,\%$, $75\,\%$ and $70\,\%$.
+**Model answer for part b):** the stones give out heat to the surroundings, and the power lost grows as the temperature difference grows.
+
+As the stones get hotter, a larger share of the elements' power of $6.0\,\text{kW}$ escapes to the surroundings and a smaller share warms the stones. So the rise slows down period by period ($92\,\text{K}$, $84\,\text{K}$, $79\,\text{K}$).
 
 ## fy3-16-L2-06
 **Given:** from the table, points $(T_\text{out};\ E)$: $(8\,{}^\circ\text{C};\ 1210\,\text{kWh})$, $(2\,{}^\circ\text{C};\ 1790\,\text{kWh})$, $(-3\,{}^\circ\text{C};\ 2340\,\text{kWh})$, $(-8\,{}^\circ\text{C};\ 2790\,\text{kWh})$; time in a month $t = 720\,\text{h}$
 **Find:** heat loss coefficient $UA$ of the house in $\text{W/K}$
 **Principle:** The heating energy equals the energy lost through the structures, $E = P\,t = UA\,\Delta T\,t$, and $\Delta T = T_\text{in} - T_\text{out}$. When the indoor temperature and $UA$ are constants, $E$ is a linear function of the outdoor temperature, and the slope of the line is $-UA\,t$.
-**Reading the graph:** The points $(T_\text{out}, E)$ lie approximately on a descending line, but not exactly on it because of variation in the measurements. The fitted line passes between the points. The slope is read from two points of the line: $(8\,{}^\circ\text{C};\ 1210\,\text{kWh})$ and $(-8\,{}^\circ\text{C};\ 2810\,\text{kWh})$ (a point of the line, not a measured point; the value in the table is $2790\,\text{kWh}$), so $k = \dfrac{2810\,\text{kWh} - 1210\,\text{kWh}}{-8\,\text{K} - 8\,\text{K}} = -100\,\dfrac{\text{kWh}}{\text{K}}$.
+**Reading the graph:** The points $(T_\text{out}, E)$ lie approximately on a descending line, but not exactly on it because of variation in the measurements. The fitted line passes between the points.
+
+The slope is read from two points of the line: $(8\,{}^\circ\text{C};\ 1210\,\text{kWh})$ and $(-8\,{}^\circ\text{C};\ 2810\,\text{kWh})$ (a point of the line, not a measured point; the value in the table is $2790\,\text{kWh}$), so $k = \dfrac{2810\,\text{kWh} - 1210\,\text{kWh}}{-8\,\text{K} - 8\,\text{K}} = -100\,\dfrac{\text{kWh}}{\text{K}}$.
 **Formula:** $k = -UA\,t$, so $UA = \dfrac{-k}{t}$
 **Conversions:** The magnitude of the slope is $100\,\dfrac{\text{kWh}}{\text{K}}$, and $\dfrac{\text{kWh}}{\text{h}} = \text{kW}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
+
 **Substitution:** $UA = \dfrac{100\,\tfrac{\text{kWh}}{\text{K}}}{720\,\text{h}} = 0.1389\,\dfrac{\text{kW}}{\text{K}} = 139\,\dfrac{\text{W}}{\text{K}}$
 **Answer:** $1.4 \cdot 10^{2}\,\dfrac{\text{W}}{\text{K}}$ (calculated value $139\,\dfrac{\text{W}}{\text{K}}$), two significant figures, because fitting the line limits the accuracy.
 **Reasonableness:** Check against the data: in a month like February, when $T_\text{out} = -8\,{}^\circ\text{C}$ and $\Delta T \approx 28\,\text{K}$, the power is $139 \cdot 28\,\text{W} \approx 3.9\,\text{kW}$ and the energy is $$\begin{aligned} &3.9\,\text{kW} \cdot 720\,\text{h} \\ &\approx 2800\,\text{kWh} \end{aligned}$$, which matches the value $2790\,\text{kWh}$ in the table.
-**Model answer for part c):** the line crosses the horizontal axis when $E = 0$, that is, when $\Delta T = 0$: at about $+20\,{}^\circ\text{C}$, which is the indoor temperature of the house. Above it no heating is needed, so the line tells you the indoor temperature, not a random number. In a real house, people, appliances and the sun produce free heat, so the intersection is typically lower than the indoor temperature.
+**Model answer for part c):** the line crosses the horizontal axis when $E = 0$, that is, when $\Delta T = 0$: at about $+20\,{}^\circ\text{C}$, which is the indoor temperature of the house.
+
+Above it no heating is needed, so the line tells you the indoor temperature, not a random number. In a real house, people, appliances and the sun produce free heat, so the intersection is typically lower than the indoor temperature.
 
 ## fy3-16-L2-07
 **Given:** ice $m = 0.80\,\text{kg}$, $T_\text{ice} = 0\,{}^\circ\text{C}$, outside $26\,{}^\circ\text{C}$, $A = 0.70\,\text{m}^2$, $U = 1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; given in the problem $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the time $t$ the ice lasts, in hours; also where the student's error is
-**Principle:** The student used the outdoor temperature in kelvins as the temperature difference, $26 + 273 = 299\,\text{K}$. The formula $P = UA\Delta T$ needs the difference of the temperatures, and the difference is the same in degrees Celsius and in kelvins, because the scales have the same degree: $26\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 26\,\text{K}$, or $299\,\text{K} - 273\,\text{K}$. The student ignored the indoor temperature. When there is ice, it is $0\,{}^\circ\text{C}$ inside and the energy coming through the wall melts the ice, $UA\Delta T\,t = s\,m$.
+**Principle:** The student used the outdoor temperature in kelvins as the temperature difference, $26 + 273 = 299\,\text{K}$. The formula $P = UA\Delta T$ needs the difference of the temperatures, and the difference is the same in degrees Celsius and in kelvins, because the scales have the same degree: $26\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 26\,\text{K}$, or $299\,\text{K} - 273\,\text{K}$.
+
+The student ignored the indoor temperature. When there is ice, it is $0\,{}^\circ\text{C}$ inside and the energy coming through the wall melts the ice, $UA\Delta T\,t = s\,m$.
+
 **Formula:** $UA\Delta T\,t = s\,m$, so $t = \dfrac{s\,m}{UA\Delta T}$
 **Conversions:** No conversion of temperatures: $\Delta T = 26\,\text{K}$. The latent heat of fusion is $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.80\,\text{kg}}{1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 0.70\,\text{m}^2 \cdot 26\,\text{K}} = \dfrac{267\,200\,\text{J}}{25.48\,\text{W}} = 10\,487\,\text{s} = 2.913\,\text{h}$
 **Answer:** $2.9\,\text{h}$, two significant figures, as in the values $0.80\,\text{kg}$, $0.70\,\text{m}^2$ and $1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
-**Reasonableness:** The student's result of $0.25\,\text{h}$, about $15$ minutes, would be too short: a power of $25\,\text{W}$ melts a kilogram of ice only in hours. The ratio of the wrong and correct results, $\dfrac{2.913}{0.253} \approx 11.5$, is the same as the ratio of the temperature differences, $\dfrac{299}{26} \approx 11.5$, which shows that the whole difference comes from the wrong $\Delta T$. The result is of the same order of magnitude as in the example of the section: about three hours.
+**Reasonableness:** The student's result of $0.25\,\text{h}$, about $15$ minutes, would be too short: a power of $25\,\text{W}$ melts a kilogram of ice only in hours.
+
+The ratio of the wrong and correct results, $\dfrac{2.913}{0.253} \approx 11.5$, is the same as the ratio of the temperature differences, $\dfrac{299}{26} \approx 11.5$, which shows that the whole difference comes from the wrong $\Delta T$. The result is of the same order of magnitude as in the example of the section: about three hours.
 
 ## fy3-16-L2-08
 **Given:** first trip $m_1 = 1.0\,\text{kg}$, $U_1 = U$, $\Delta T_1 = 20\,\text{K}$; second trip $m_2 = 1.5\,\text{kg}$, $U_2 = 0.5\,U$, $\Delta T_2 = 30\,\text{K}$; area $A$ the same
 **Find:** how the time $t$ the ice lasts changes from the first trip to the second
-**Principle:** While there is ice, the inside is at $0\,{}^\circ\text{C}$, so the temperature difference across the wall is the outdoor temperature in degrees Celsius. The power through the wall, $UA\Delta T$, melts the ice: $UA\Delta T\,t = s\,m$, from which $t = \dfrac{s\,m}{UA\Delta T}$. The time is directly proportional to the mass of the ice and inversely proportional to the U-value and the temperature difference. The latent heat of fusion $s$ and the area $A$ are the same and cancel from the ratio.
+**Principle:** While there is ice, the inside is at $0\,{}^\circ\text{C}$, so the temperature difference across the wall is the outdoor temperature in degrees Celsius. The power through the wall, $UA\Delta T$, melts the ice: $UA\Delta T\,t = s\,m$, from which $t = \dfrac{s\,m}{UA\Delta T}$.
+
+The time is directly proportional to the mass of the ice and inversely proportional to the U-value and the temperature difference. The latent heat of fusion $s$ and the area $A$ are the same and cancel from the ratio.
 **Model answer:** The ratio of the durations:
 
 $\dfrac{t_2}{t_1} = \dfrac{m_2}{m_1} \cdot \dfrac{U_1}{U_2} \cdot \dfrac{\Delta T_1}{\Delta T_2}$
@@ -190,36 +232,49 @@ $\dfrac{t_2}{t_1} = \dfrac{1.5}{1.0} \cdot \dfrac{U}{0.5\,U} \cdot \dfrac{20}{30
 
 $\dfrac{t_2}{t_1} = 1.5 \cdot 2 \cdot \dfrac{2}{3} = 2$
 
-The time doubles. The mass and the temperature difference both increase by the factor $1.5$ and cancel each other, so the change is caused by the halving of the U-value. If the U-value were read the wrong way round, half would be obtained. If the rise in the outdoor temperature were forgotten, a tripled time $1.5 \cdot 2 = 3$ would be obtained, and if the U-value were forgotten, the time would stay the same, $1.5 \cdot \tfrac{2}{3} \cdot 1 = 1$.
+The time doubles. The mass and the temperature difference both increase by the factor $1.5$ and cancel each other, so the change is caused by the halving of the U-value.
+
+If the U-value were read the wrong way round, half would be obtained. If the rise in the outdoor temperature were forgotten, a tripled time $1.5 \cdot 2 = 3$ would be obtained, and if the U-value were forgotten, the time would stay the same, $1.5 \cdot \tfrac{2}{3} \cdot 1 = 1$.
 
 ## fy3-16-L3-04
 **Given:** average $U = 0.50\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 120\,\text{m}^2$, $T_\text{in} = 18\,{}^\circ\text{C}$, $t = 720\,\text{h}$ per month; outdoor temperatures from the table: $5\,{}^\circ\text{C}$, $0\,{}^\circ\text{C}$, $-4\,{}^\circ\text{C}$, $-9\,{}^\circ\text{C}$, $-7\,{}^\circ\text{C}$, $-3\,{}^\circ\text{C}$; A: $\eta_\text{A} = 1.00$, $0.15\,\tfrac{\text{€}}{\text{kWh}}$; B: $\eta_\text{B} = 0.70$, heating value $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $0.18\,\tfrac{\text{€}}{\text{kg}}$
 **Find:** the saving in cost over the heating season from the cheaper option, in euros
-**Principle:** The heating energy equals the energy conducted through the structures. The power of each month is $P = UA\Delta T$ and the energy is $P\,t$. Since $UA$, $t$ and the indoor temperature are the same, the energy of the season is $UA\,t\,\Sigma\Delta T$. The fuel has to supply this energy divided by the efficiency, and the mass of firewood is obtained from the heating value.
+**Principle:** The heating energy equals the energy conducted through the structures. The power of each month is $P = UA\Delta T$ and the energy is $P\,t$.
+
+Since $UA$, $t$ and the indoor temperature are the same, the energy of the season is $UA\,t\,\Sigma\Delta T$. The fuel has to supply this energy divided by the efficiency, and the mass of firewood is obtained from the heating value.
+
 **Formula:** $E = UA\,t\,\Sigma\Delta T$, the cost of electricity $C_\text{A} = \dfrac{E}{\eta_\text{A}}\,h_\text{A}$ and of wood $C_\text{B} = \dfrac{E}{\eta_\text{B}\,H}\,h_\text{B}$, so the saving is $C_\text{A} - C_\text{B}$
 **Conversions:** The temperature differences $\Delta T = 18\,{}^\circ\text{C} - T_\text{out}$ are the same in kelvins: $13$, $18$, $22$, $27$, $25$ and $21\,\text{K}$. The heat loss coefficient is $UA = 0.50 \cdot 120\,\tfrac{\text{W}}{\text{K}} = 60\,\tfrac{\text{W}}{\text{K}} = 0.060\,\tfrac{\text{kW}}{\text{K}}$. The heating value $15\,\tfrac{\text{MJ}}{\text{kg}}$ is converted: $1\,\text{kWh} = 3.6\,\text{MJ}$, so $H = \dfrac{15}{3.6}\,\tfrac{\text{kWh}}{\text{kg}} = 4.167\,\tfrac{\text{kWh}}{\text{kg}}$.
+
 **Substitution:** The sum of the temperature differences is $$\begin{aligned} &13 + 18 + 22 + 27 + 25 + 21 \\ &= 126\,\text{K} \end{aligned}$$, so $E = 0.060\,\tfrac{\text{kW}}{\text{K}} \cdot 720\,\text{h} \cdot 126\,\text{K} = 5443\,\text{kWh}$.
 Electricity: $C_\text{A} = \dfrac{5443\,\text{kWh}}{1.00} \cdot 0.15\,\tfrac{\text{€}}{\text{kWh}} = 816.5\,\text{€}$
 Wood: mass $= \dfrac{5443\,\text{kWh}}{0.70 \cdot 4.167\,\tfrac{\text{kWh}}{\text{kg}}} = 1866\,\text{kg}$, so $C_\text{B} = 1866\,\text{kg} \cdot 0.18\,\tfrac{\text{€}}{\text{kg}} = 335.9\,\text{€}$
 Saving: $C_\text{A} - C_\text{B} = 816.5\,\text{€} - 335.9\,\text{€} = 480.6\,\text{€}$
 **Answer:** about $480\,\text{€}$ ($480.6\,\text{€}$): by this model, heating with wood is about $480\,\text{€}$ cheaper; two significant figures, because $U = 0.50$ and $A = 120\,\text{m}^2$ are known to two figures.
 **Reasonableness:** The energy of the season, $5443\,\text{kWh} \approx 19.6\,\text{GJ}$, and the energy content of the wood, $1866\,\text{kg} \cdot 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.70 \approx 19.6\,\text{GJ}$, agree. The price of one useful kilowatt-hour is $0.15\,\tfrac{\text{€}}{\text{kWh}}$ for electricity and $\dfrac{0.18}{0.70 \cdot 4.167}\,\tfrac{\text{€}}{\text{kWh}} \approx 0.062\,\tfrac{\text{€}}{\text{kWh}}$ for wood, so electricity is about $2.4$ times as expensive, and the cost ratio $816.5 : 335.9 \approx 2.4$ is the same.
-**Model answer for part c):** heating with wood is cheaper. The conclusion depends on the prices and efficiencies: if the price of wood were above about $0.44\,\tfrac{\text{€}}{\text{kg}}$, electricity would be cheaper. The model assumes a constant indoor temperature, the monthly mean temperatures, and that only $UA$ describes the losses; ventilation, the effort of using a fireplace and the storage of wood are not in the calculation. The prices and temperatures of the sample data are made up.
+**Model answer for part c):** heating with wood is cheaper. The conclusion depends on the prices and efficiencies: if the price of wood were above about $0.44\,\tfrac{\text{€}}{\text{kg}}$, electricity would be cheaper.
+
+The model assumes a constant indoor temperature, the monthly mean temperatures, and that only $UA$ describes the losses; ventilation, the effort of using a fireplace and the storage of wood are not in the calculation. The prices and temperatures of the sample data are made up.
 
 ## fy3-16-L3-05
 **Given:** length $60\,\text{m}$, width $30\,\text{m}$, thickness of the water layer before freezing $0.030\,\text{m}$, initial temperature of the water $12\,{}^\circ\text{C}$, final temperature of the ice $-5.0\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$, $c_\text{water} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, time $t = 10\,\text{h}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** average power $P$ of the refrigeration machine in kilowatts
-**Principle:** The machine removes energy from the water in three stages, and all the power is used for them: $P\,t = Q_1 + Q_2 + Q_3$. The water first cools to $0\,{}^\circ\text{C}$ ($Q_1 = c_\text{water}\,m\,\Delta T_1$), then freezes at constant temperature ($Q_2 = s\,m$: when freezing, the same energy is released as is needed for melting), and finally the ice cools to $-5.0\,{}^\circ\text{C}$ ($Q_3 = c_\text{ice}\,m\,\Delta T_3$). The temperature does not change during freezing, so $c\,\Delta T$ is not used for it.
+**Principle:** The machine removes energy from the water in three stages, and all the power is used for them: $P\,t = Q_1 + Q_2 + Q_3$. The water first cools to $0\,{}^\circ\text{C}$ ($Q_1 = c_\text{water}\,m\,\Delta T_1$), then freezes at constant temperature ($Q_2 = s\,m$: when freezing, the same energy is released as is needed for melting), and finally the ice cools to $-5.0\,{}^\circ\text{C}$ ($Q_3 = c_\text{ice}\,m\,\Delta T_3$).
+
+The temperature does not change during freezing, so $c\,\Delta T$ is not used for it.
 **Formula:** $m = \rho\,V$, $$\begin{aligned} P\,t &= c_\text{water}\,m\,\Delta T_1 \\ &+ s\,m + c_\text{ice}\,m\,\Delta T_3 \end{aligned}$$, so $P = \dfrac{m\,(c_\text{water}\,\Delta T_1 + s + c_\text{ice}\,\Delta T_3)}{t}$
 **Conversions:** The changes in temperature are the same in kelvins: $\Delta T_1 = 12\,\text{K}$ and $\Delta T_3 = 5.0\,\text{K}$. $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and $t = 10\,\text{h} = 36\,000\,\text{s}$.
 **Substitution:** The volume is $V = 60\,\text{m} \cdot 30\,\text{m} \cdot 0.030\,\text{m} = 54\,\text{m}^3$ and the mass is $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 54\,\text{m}^3 = 54\,000\,\text{kg}$.
+
 Cooling of the water: $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 54\,000\,\text{kg} \cdot 12\,\text{K} = 2.715 \cdot 10^{9}\,\text{J}$
 Freezing: $Q_2 = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 54\,000\,\text{kg} = 18.04 \cdot 10^{9}\,\text{J}$
 Cooling of the ice: $Q_3 = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 54\,000\,\text{kg} \cdot 5.0\,\text{K} = 0.567 \cdot 10^{9}\,\text{J}$
 In total $Q = 21.32 \cdot 10^{9}\,\text{J}$, and the power is $P = \dfrac{21.32 \cdot 10^{9}\,\text{J}}{36\,000\,\text{s}} = 592\,200\,\text{W} = 592\,\text{kW}$
 **Answer:** $590\,\text{kW}$, two significant figures, because the thickness of the water layer $0.030\,\text{m}$ and the temperature of the ice $-5.0\,{}^\circ\text{C}$ have two figures.
 **Reasonableness:** Estimate: freezing $54\,000\,\text{kg}$ needs about $$\begin{aligned} &0.33\,\text{MJ/kg} \cdot 54\,000\,\text{kg} \\ &\approx 18\,\text{GJ} \end{aligned}$$, and altogether about $21\,\text{GJ}$, which is $$\begin{aligned} &21.3\,\text{GJ} : 3.6\,\text{GJ/MWh} \\ &\approx 5.9\,\text{MWh} \end{aligned}$$, or about $5900\,\text{kWh}$; over ten hours the power is about $590\,\text{kW}$.
-**Model answer for part d):** freezing requires the most, about $85\,\%$ of the total energy, because the heat of freezing $s = 334\,\text{kJ/kg}$ corresponds roughly to a change in temperature of $80\,\text{K}$ in water ($334 : 4.19 \approx 80$), whereas the cooling of the water and the ice is only $12\,\text{K}$ and $5.0\,\text{K}$. The real cooling power needed is greater than the calculated one, because additional heat comes from the air of the hall, the lighting, the spectators, the concrete slab and the ground; the model therefore gives a lower limit. The electrical power of the machine also depends on its coefficient of performance.
+**Model answer for part d):** freezing requires the most, about $85\,\%$ of the total energy, because the heat of freezing $s = 334\,\text{kJ/kg}$ corresponds roughly to a change in temperature of $80\,\text{K}$ in water ($334 : 4.19 \approx 80$), whereas the cooling of the water and the ice is only $12\,\text{K}$ and $5.0\,\text{K}$.
+
+The real cooling power needed is greater than the calculated one, because additional heat comes from the air of the hall, the lighting, the spectators, the concrete slab and the ground; the model therefore gives a lower limit. The electrical power of the machine also depends on its coefficient of performance.
 
 ## fy3-16-L1-09
 **Given:** mass of the water $m = 0.30\,\text{kg}$, temperature $100\,{}^\circ\text{C}$; from the table (MAFY table, changes of state, water) $r = 2260\,\text{kJ/kg}$

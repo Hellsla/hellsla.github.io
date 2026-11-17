@@ -209,7 +209,11 @@ b) Kauden lämpökerroin:
 ```
 c) Suora sähkölämmitys kuluttaa $13{,}7\,\text{MWh}$ sähköä, joten säästö on $$\begin{aligned} &13{,}7\,\text{MWh} - 4{,}995\,\text{MWh} \\ &= 8{,}7\,\text{MWh} \end{aligned}$$.
 **Vastaus:** b) $\varepsilon_\text{kausi} = 2{,}74$, kolme merkitsevää numeroa. Lähtötiedot on annettu kahdella numerolla, joten tulos tunnetaan oikeasti kahden numeron tarkkuudella ($2{,}7$), ja kolmas numero annetaan, jotta pyöristys ei siirrä vastausta ulos hyväksytystä välistä. Vastauslaatikkoon tulee tämä luku.
-**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri. Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $$\begin{aligned} &4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} \\ &= 13{,}7\,\text{MWh} \end{aligned}$$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta. Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi siirtää kylmästä ulkoilmasta lämpimään sisälle, kun lämpötilaero kasvaa.
+**Järkevyys:** Kauden lämpökerroin $2{,}74$ on kuukausien pienimmän ($2{,}4$) ja suurimman ($3{,}4$) lämpökertoimen välissä. Kuukausien lämpökertoimien tavallinen keskiarvo olisi: lämpökertoimien summa on $14{,}4$, joten keskiarvo on $\tfrac{14{,}4}{5} = 2{,}88$, noin $5\,\%$ liian suuri.
+
+Perustelu: keskiarvo antaisi jokaiselle kuukaudelle saman painon, vaikka kylmimpänä kuukautena lämpöä tarvitaan eniten ja lämpökerroin on pienin. Silloin sähköä kuluu eniten pienellä lämpökertoimella, joten koko kauden lämpökertoimen on oltava keskiarvoa pienempi. Energiatase: $$\begin{aligned} &4{,}995\,\text{MWh} + 8{,}7\,\text{MWh} \\ &= 13{,}7\,\text{MWh} \end{aligned}$$ eli ulkoilmasta otettu lämpö kattaa noin $64\,\%$ lämmöntarpeesta.
+
+Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi siirtää kylmästä ulkoilmasta lämpimään sisälle, kun lämpötilaero kasvaa.
 
 ## fy3-11-L3-05
 **Annettu:** poikkipinta-ala $A = 200\,\text{cm}^2$, paine $p = 125\,\text{kPa}$ vakiona, vastuksen teho $P = 260\,\text{W}$, aika $t = 4{,}0\,\text{s}$, männän korkeus $h_1 = 10{,}0\,\text{cm}$ alussa ja $h_2 = 22{,}0\,\text{cm}$ lopussa
@@ -239,7 +243,9 @@ b)
 ```
 c) Työksi muuttui osuus $\tfrac{W}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0{,}288 \approx 29\,\%$.
 **Vastaus:** b) $\Delta U = 0{,}74\,\text{kJ}$, kaksi merkitsevää numeroa, koska teho $260\,\text{W}$ ja aika $4{,}0\,\text{s}$ on annettu kahdella numerolla. Vastauslaatikkoon tulee tämä luku.
-**Perustelu c):** Noin $29\,\%$ lämmöstä muuttui työksi, ja loput noin $71\,\%$ jäi ilman sisäenergiaksi, joten ilma lämpeni. Tämä sopii ilmaan: kaksiatomisella kaasulla vakiopaineessa työn osuus on noin $\tfrac{2}{7} \approx 29\,\%$ saadusta lämmöstä. Yksittäinen laajeneminen ei ole lämpövoimakone, koska kone toistaa työnsä kierros kerrallaan. Jotta mäntä saadaan takaisin alkuun, ilma on jäähdytettävä ja puristettava, ja jäähdytyksessä lämpöä siirtyy kylmempään ympäristöön. Yhden laajenemisen työn osuus $29\,\%$ ei siis ole kierroksen hyötysuhde: se on $\eta = W/Q_1$, ja siinä työ on $W = Q_1 - Q_2$.
+**Perustelu c):** Noin $29\,\%$ lämmöstä muuttui työksi, ja loput noin $71\,\%$ jäi ilman sisäenergiaksi, joten ilma lämpeni. Tämä sopii ilmaan: kaksiatomisella kaasulla vakiopaineessa työn osuus on noin $\tfrac{2}{7} \approx 29\,\%$ saadusta lämmöstä. Yksittäinen laajeneminen ei ole lämpövoimakone, koska kone toistaa työnsä kierros kerrallaan.
+
+Jotta mäntä saadaan takaisin alkuun, ilma on jäähdytettävä ja puristettava, ja jäähdytyksessä lämpöä siirtyy kylmempään ympäristöön. Yhden laajenemisen työn osuus $29\,\%$ ei siis ole kierroksen hyötysuhde: se on $\eta = W/Q_1$, ja siinä työ on $W = Q_1 - Q_2$.
 **Järkevyys:** Sisäenergian muutos on positiivinen ja pienempi kuin lämpö, $0 < 740\,\text{J} < 1040\,\text{J}$, kuten pitääkin, kun kaasu laajenee ja saa lämpöä. Energiatase: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. Männän nopeus $3{,}0\,\text{cm/s}$ on hidas, joten kevyen männän liike on rauhallista.
 
 ## fy3-11-L2-08
@@ -275,12 +281,18 @@ Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $10
 **Järkevyys:** Alussa kaasupatsaan pituus on $$\begin{aligned} &0{,}0010\,\text{m}^3 : 0{,}0050\,\text{m}^2 \\ &= 0{,}20\,\text{m} \end{aligned}$$ ja lopussa $$\begin{aligned} &0{,}0040\,\text{m}^3 : 0{,}0050\,\text{m}^2 \\ &= 0{,}80\,\text{m} \end{aligned}$$. Erotus on $0{,}60\,\text{m}$, kuten laskettu.
 
 ## fy3-11-L2-10
-**Annettu:** aineistosta: COP ”kertoo, paljonko pumppu tuottaa kyseisellä hetkellä ja kyseisissä olosuhteissa lämpöä suhteessa sen käyttämään sähköenergiaan”; lämpöpumppu ”toimii sitä tehokkaammin, mitä pienempi lämpötilaero sisä- ja ulkoilman välillä on”; noin $-25\,{}^\circ\text{C}$:n pakkasella uudehkon ilmalämpöpumpun lämpökerroin on enää $1$–$2$; tutkittujen talojen ilma-vesilämpöpumppujen koko vuoden lämpökerroin oli noin $1{,}4$–$3$. Tehtävästä: lämpökerroin $\varepsilon = 4{,}0$ ja pumpun käyttämä sähköenergia $W = 2{,}5\,\text{kWh}$
+**Annettu:** aineistosta: COP ”kertoo, paljonko pumppu tuottaa kyseisellä hetkellä ja kyseisissä olosuhteissa lämpöä suhteessa sen käyttämään sähköenergiaan”; lämpöpumppu ”toimii sitä tehokkaammin, mitä pienempi lämpötilaero sisä- ja ulkoilman välillä on”; noin $-25\,{}^\circ\text{C}$:n pakkasella uudehkon ilmalämpöpumpun lämpökerroin on enää $1$–$2$; tutkittujen talojen ilma-vesilämpöpumppujen koko vuoden lämpökerroin oli noin $1{,}4$–$3$.
+
+Tehtävästä: lämpökerroin $\varepsilon = 4{,}0$ ja pumpun käyttämä sähköenergia $W = 2{,}5\,\text{kWh}$
 **Kysytty:** a) mitä lämpökerroin tarkoittaa ja miten se eroaa hyötysuhteesta, b) huoneeseen siirtyvä lämpö $Q_1$ ja ympäristöstä otettu lämpö $Q_2$ kilowattitunteina ($Q_2$ vastauskenttään), c) lämpötilojen vaikutus lämpökertoimeen, d) arvio väitteestä
 **Periaate:** Energia säilyy. Lämpöpumppu ei tuota energiaa vaan siirtää sitä: huoneeseen luovutettu lämpö on ympäristöstä otetun lämmön ja pumpun käyttämän sähköenergian summa. Lämpökerroin kertoo, kuinka moninkertainen huoneeseen luovutettu lämpö on pumpun käyttämään sähköenergiaan verrattuna. Tehtävässä tunnetaan $\varepsilon$ ja $W$, joten nämä kaksi yhtälöä riittävät.
 **Kaava:** $Q_1 = Q_2 + W$ ja $\varepsilon = \dfrac{Q_1}{W}$, joista $Q_1 = \varepsilon W$ ja $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
 **Muunnokset:** Sähköenergia on annettu ja lämmöt kysytään kilowattitunteina, joten muunnoksia ei tarvita. Lämpökertoimella ei ole yksikköä.
-**Sijoitus:** a) Aineiston mukaan lämpökerroin kertoo, paljonko pumppu tuottaa lämpöä suhteessa käyttämäänsä sähköenergiaan, eli $\varepsilon = Q_1/W$. Hyötysuhde taas on hyödyksi saadun energian osuus kaikesta laitteen ottamasta energiasta. Hyötysuhde on enintään $100\,\%$. Sähkölämmittimen ainoa otettu energia on sähköenergia, ja käytännössä se kaikki siirtyy lämpönä huoneeseen, joten sähkölämmittimen hyötysuhde on käytännössä $100\,\%$. Lämpöpumppu ottaa energiaa kahta reittiä: sähköenergian $W$ ja ympäristöstä lämmön $Q_2$. Lämpökertoimen jakajassa on näistä vain sähköenergia, joten lämpökerroin ei ole energianmuunnon hyötysuhde ja se voi olla suurempi kuin $1$. Ilmaus ”hyötysuhde on $300$ prosenttia” on siksi epätarkka: se tarkoittaa, että lämpöä saadaan kolminkertaisesti sähköenergiaan verrattuna, ei sitä, että energiaa syntyisi lisää.
+**Sijoitus:** a) Aineiston mukaan lämpökerroin kertoo, paljonko pumppu tuottaa lämpöä suhteessa käyttämäänsä sähköenergiaan, eli $\varepsilon = Q_1/W$. Hyötysuhde taas on hyödyksi saadun energian osuus kaikesta laitteen ottamasta energiasta. Hyötysuhde on enintään $100\,\%$.
+
+Sähkölämmittimen ainoa otettu energia on sähköenergia, ja käytännössä se kaikki siirtyy lämpönä huoneeseen, joten sähkölämmittimen hyötysuhde on käytännössä $100\,\%$. Lämpöpumppu ottaa energiaa kahta reittiä: sähköenergian $W$ ja ympäristöstä lämmön $Q_2$.
+
+Lämpökertoimen jakajassa on näistä vain sähköenergia, joten lämpökerroin ei ole energianmuunnon hyötysuhde ja se voi olla suurempi kuin $1$. Ilmaus ”hyötysuhde on $300$ prosenttia” on siksi epätarkka: se tarkoittaa, että lämpöä saadaan kolminkertaisesti sähköenergiaan verrattuna, ei sitä, että energiaa syntyisi lisää.
 
 b) Huoneeseen siirtyvä lämpö:
 ```latex
@@ -298,8 +310,16 @@ Q_2 &= (\varepsilon - 1)\,W \\
 &= 7{,}5\,\text{kWh}
 \end{aligned}
 ```
-c) Aineiston mukaan lämpöpumppu toimii sitä tehokkaammin, mitä pienempi lämpötilaero sisä- ja ulkoilman välillä on. Kun ulkona kylmenee tai lämmitykseen tarvitaan korkeampi lämpötila, lämpö on siirrettävä suuremman lämpötilaeron yli. Silloin pumppu tarvitsee saman lämmön siirtämiseen enemmän sähköenergiaa, joten $\varepsilon = Q_1/W$ pienenee. Ilma-vesilämpöpumpussa vaikutus on kaksinkertainen, koska aineiston mukaan pakkasella tarvitaan myös lämpimämpää lämmitysvettä. Kovalla pakkasella lämpökerroin lähestyy arvoa $1$: aineiston mukaan noin $-25\,{}^\circ\text{C}$:ssa se on enää $1$–$2$. Kun $\varepsilon = 1$, on $Q_2 = (\varepsilon - 1)\,W = 0$, eli pumppu lämmittää kuin sähkölämmitin.
+c) Aineiston mukaan lämpöpumppu toimii sitä tehokkaammin, mitä pienempi lämpötilaero sisä- ja ulkoilman välillä on. Kun ulkona kylmenee tai lämmitykseen tarvitaan korkeampi lämpötila, lämpö on siirrettävä suuremman lämpötilaeron yli.
 
-d) Väite on virheellinen. Pumppu ei tuota lämpöä tyhjästä vaan siirtää sitä ympäristöstä huoneeseen. Kohdan b) tase: pumppu ottaa sähköenergiaa $2{,}5\,\text{kWh}$ ja ympäristöstä lämpöä $7{,}5\,\text{kWh}$, yhteensä $10\,\text{kWh}$, ja luovuttaa huoneeseen lämpöä $10\,\text{kWh}$. Otettu ja luovutettu energia ovat yhtä suuret, joten energia säilyy. Väitteessä otetuksi energiaksi lasketaan vain sähköenergia ja ympäristöstä otettu lämpö jätetään pois. Totta väitteessä on vain se, että $Q_1 > W$.
+Silloin pumppu tarvitsee saman lämmön siirtämiseen enemmän sähköenergiaa, joten $\varepsilon = Q_1/W$ pienenee. Ilma-vesilämpöpumpussa vaikutus on kaksinkertainen, koska aineiston mukaan pakkasella tarvitaan myös lämpimämpää lämmitysvettä. Kovalla pakkasella lämpökerroin lähestyy arvoa $1$: aineiston mukaan noin $-25\,{}^\circ\text{C}$:ssa se on enää $1$–$2$.
+
+Kun $\varepsilon = 1$, on $Q_2 = (\varepsilon - 1)\,W = 0$, eli pumppu lämmittää kuin sähkölämmitin.
+
+d) Väite on virheellinen. Pumppu ei tuota lämpöä tyhjästä vaan siirtää sitä ympäristöstä huoneeseen. Kohdan b) tase: pumppu ottaa sähköenergiaa $2{,}5\,\text{kWh}$ ja ympäristöstä lämpöä $7{,}5\,\text{kWh}$, yhteensä $10\,\text{kWh}$, ja luovuttaa huoneeseen lämpöä $10\,\text{kWh}$.
+
+Otettu ja luovutettu energia ovat yhtä suuret, joten energia säilyy. Väitteessä otetuksi energiaksi lasketaan vain sähköenergia ja ympäristöstä otettu lämpö jätetään pois. Totta väitteessä on vain se, että $Q_1 > W$.
 **Vastaus:** b) $Q_1 = 10\,\text{kWh}$ ja $Q_2 = 7{,}5\,\text{kWh}$, kaksi merkitsevää numeroa kuten lähtöarvoissa $4{,}0$ ja $2{,}5\,\text{kWh}$. Vastauskenttään tulee $7{,}5\,\text{kWh}$. a) Lämpökerroin on huoneeseen luovutetun lämmön suhde sähköenergiaan, ei energianmuunnon hyötysuhde. c) Lämpökerroin pienenee, kun lämpötilaero kasvaa. d) Väite on virheellinen, koska energiatase täsmää, kun ympäristöstä otettu lämpö lasketaan mukaan.
-**Järkevyys:** Energiatase: $$\begin{aligned} &7{,}5\,\text{kWh} + 2{,}5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$ eli $Q_2 + W = Q_1$. Ympäristöstä otettu lämpö on pienempi kuin huoneeseen luovutettu lämpö, kuten pitääkin, ja sen osuus on $\tfrac{7{,}5}{10} = 75\,\%$. Sähkölämmitin antaisi samalla sähköenergialla vain $2{,}5\,\text{kWh}$ lämpöä. Mallin rajat: lämpökerroin $4{,}0$ kuvaa yhtä hetkeä hyvissä olosuhteissa. Aineiston mukaan lämpökerroin riippuu hetkestä ja olosuhteista, ja tutkittujen talojen ilma-vesilämpöpumppujen koko vuoden lämpökerroin oli vain noin $1{,}4$–$3$. Yhden hetken lämpökertoimesta ei siksi voi laskea koko vuoden sähkönkulutusta.
+**Järkevyys:** Energiatase: $$\begin{aligned} &7{,}5\,\text{kWh} + 2{,}5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$ eli $Q_2 + W = Q_1$. Ympäristöstä otettu lämpö on pienempi kuin huoneeseen luovutettu lämpö, kuten pitääkin, ja sen osuus on $\tfrac{7{,}5}{10} = 75\,\%$. Sähkölämmitin antaisi samalla sähköenergialla vain $2{,}5\,\text{kWh}$ lämpöä. Mallin rajat: lämpökerroin $4{,}0$ kuvaa yhtä hetkeä hyvissä olosuhteissa.
+
+Aineiston mukaan lämpökerroin riippuu hetkestä ja olosuhteista, ja tutkittujen talojen ilma-vesilämpöpumppujen koko vuoden lämpökerroin oli vain noin $1{,}4$–$3$. Yhden hetken lämpökertoimesta ei siksi voi laskea koko vuoden sähkönkulutusta.

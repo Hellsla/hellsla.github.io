@@ -429,7 +429,9 @@ Sipsipussissa on lentokentällä $0{,}80\,\textsf{l}$ ilmaa $101\,\text{kPa}$:n 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tunnetaan $p_1 = 101\,\text{kPa}$, $V_1 = 0{,}80\,\textsf{l}$ ja $p_2 = 78\,\text{kPa}$. Lämpötila on sama. Kysytään lopputilavuutta $V_2$ litroina.
+**Tunnetut ja kysytty.** Tunnetaan $p_1 = 101\,\text{kPa}$, $V_1 = 0{,}80\,\textsf{l}$ ja $p_2 = 78\,\text{kPa}$. Lämpötila on sama.
+
+Kysytään lopputilavuutta $V_2$ litroina.
 
 <!-- vaihe -->
 
