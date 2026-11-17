@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1513035b0b2a06a9
+CONTENT-HASH: 942d55118f8c060b
 
 ## Blocking
 
 ## Polish
-
+- None.
 
 ## Checked
-batch delta review: removed the rod-at-rest clause; distractor reworded to a bare number. F = |q|vB = 1.602e-19*2.0e6*0.50 = 1.6e-13 N recomputed; 3.2e-13 N distractor is |q|v numerically and its feedback is right; lesson-answers rounding of kertaus-F to 4 s.f. checked (1.602e-13, 3.204e-13). One correct option.
+batch delta review: Pohdinta retrieval task kertaus-voima, option 1 text without the inline formula and option 3 feedback split into aligned rows; recomputed F = |q|vB = 1.602e-19 C x 2.0e6 m/s x 0.50 T = 1.60e-13 N (two significant figures from the data, v perpendicular to B as the prompt states), distractor 3.2e-13 N = |q|v with B omitted matches its feedback; same numbers, order and units as before the split; option 1 still the only correct one, its feedback still names F = |q|vB and the perpendicular direction; the compass-needle distractor unchanged.
