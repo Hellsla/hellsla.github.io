@@ -699,10 +699,31 @@ def _md_paragraphs(rem, add):
             if l.strip() == "<!-- vaihe -->": out.append([])
             else: out[-1].append(l)
         return out
-    flat = lambda ls: " ".join(" ".join(re.sub(r"^\s*- ", "", l) for l in ls).split())
+    flat = lambda ls: _math_space(" ".join(" ".join(re.sub(r"^\s*- ", "", l) for l in ls).split()))
     sr, sa = segs(rem), segs(add)
     if len(sr) != len(sa) or any(l.lstrip().startswith(("#", "```", "<", "|")) for seg in sr + sa for l in seg): return False
     return all(flat(r) == flat(a) for r, a in zip(sr, sa))
+
+
+MATH_SPACE = re.compile(r"(?<![A-Za-z])\s+|\s+(?![A-Za-z])")
+
+
+def _math_space(text):
+    """`text` with the whitespace inside its formulas left out where LaTeX ignores it (not between two letters, where it
+    ends a control word: `\\cdot x`). A calculation chain lifted into an aligned block reads `d_\\text{A} \\approx 400`
+    in chain_view where the passed inline formula had `d_\\text{A}\\approx400`, so a stage both re-broken and cut into
+    paragraphs is still word for word the same (work queue 8c, en/fy1-1 2026-11-16)."""
+    return re.sub(r"\$\$.*?\$\$|\$[^$]*\$", lambda m: MATH_SPACE.sub("", m.group(0)), text, flags=re.S)
+
+
+def para_view(text, rel=""):
+    """`text` as the md-paragraphs rule reads it (category "md-paragraphs", work queue 8c): a `- ` list marker at the start of
+    a line left out and every run of whitespace one space, so a paragraph cut into several paragraphs or into a list has the
+    view it had and every word, number, sign and unit is in the same order. In a .json view a line break is the two
+    characters \\n, so `\\n- ` is a list item there."""
+    if rel.endswith(".json"):
+        return re.sub(r"(?:\s|(?<!\\)\\n)+", " ", re.sub(r"(?<!\\)\\n- ", r"\\n", text))
+    return " ".join(re.sub(r"(?m)^[ \t]*- ", "", text).split())
 
 
 def _chapter_refs_renamed(old, new):
@@ -1186,6 +1207,8 @@ def approve_figures(lid):
 # A calculation chain re-broken into rows or a long inline formula lifted into an aligned display formula (work queue 5d
 # and 5f, teacher 2026-11-15) carries the science and pedagogy PASS as for a lesson (category "reflow"): the views are
 # then compared with every chain in one form (chain_view); the visual reviewer always looks again (RULES["reflow"]).
+# A text only cut into paragraphs or a list (work queue 8c, 2026-11-16) carries them the same way (category
+# "md-paragraphs"): the views are then compared as para_view reads them, list markers and whitespace left out.
 ITEM_KINDS = ("investigation", "sovella", "koe", "unit", "guide")
 
 
@@ -1204,7 +1227,7 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False, reflow=False):
+def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False, reflow=False, paragraphs=False):
     """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
     drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too.
     `tx(name, text)` / `code_tx(text)`: the teacher's exact replacements made on a passed version (MAFY's symbols,
@@ -1216,7 +1239,8 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     fit = lambda t: re.sub(r"font-size:\d+px", "", re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t)) if drawn else t   # a label box follows its formula's size
     after = lambda n, t: tx(n, t, True) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
     chains = lambda n, t: chain_view(t, n) if reflow and n.endswith((".md", ".json")) else t   # `reflow`: calculation chains in one form (category "reflow")
-    out = [(n, chains(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n))))) for n in texts]
+    paras = lambda n, t: para_view(t, n) if paragraphs and n.endswith((".md", ".json")) else t   # `paragraphs`: paragraph breaks and list markers left out (category "md-paragraphs")
+    out = [(n, paras(n, chains(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
         if code_tx and code: code = code_tx(code)
@@ -1230,21 +1254,23 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     return out
 
 
-def item_view(kind, iid, lang, src, passed=False, reflow=False):
+def item_view(kind, iid, lang, src, passed=False, reflow=False, paragraphs=False):
     """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
     unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella". `reflow`: every
     calculation chain of the texts in one form (chain_view), so a chain only re-broken into rows or lifted into an aligned
-    display formula is no difference (category "reflow": science and pedagogy carry over it, the visual reviewer looks)."""
+    display formula is no difference (category "reflow": science and pedagogy carry over it, the visual reviewer looks).
+    `paragraphs`: every text as para_view reads it, so a text only cut into paragraphs or a list is no difference (category
+    "md-paragraphs", work queue 8c: the same reviewers)."""
     m, key, oid = _item(kind, iid)
     names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
     sym = kind == "unit" and bool(kaavat.symbol_rows(key, lang))     # MAFY's symbols (docs/fy9/mafy-tunnukset.tsv)
     tx = (lambda n, t, canonical=False: kaavat.apply_symbols(key, lang, n, t, canonical)) if sym and passed else None
     code_tx = (lambda t: kaavat.apply_symbols(key, None, "figures.py", t)) if sym and passed else None
-    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym, reflow=reflow)
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym, reflow=reflow, paragraphs=paragraphs)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
         tk = m.task_key(key)
-        out += [("sovella", _figure_free(practice.folder(tk, lang), practice.code_folder(tk), practice.TEXTS, practice.CODE, f"{key}-sovella", src, reflow=reflow))]
+        out += [("sovella", _figure_free(practice.folder(tk, lang), practice.code_folder(tk), practice.TEXTS, practice.CODE, f"{key}-sovella", src, reflow=reflow, paragraphs=paragraphs))]
     return out
 
 
@@ -1270,14 +1296,18 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
         base = _item_base(kind, iid, lang, frm)
         if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
         now = now or item_view(kind, iid, lang, WorkTree())
-        reflowed = False
+        reflowed = paras = False
         if item_view(kind, iid, lang, Commit(base), passed=True) != now:
-            if item_view(kind, iid, lang, Commit(base), passed=True, reflow=True) != item_view(kind, iid, lang, WorkTree(), reflow=True):
-                print(f"{name}: more than teacher-approved figures, formula names and re-broken calculation chains changed, review needed"); continue
-            if RULES["reflow"][REVIEWS.index(name)] != "none":
-                print(f"{name}: calculation chains re-broken into rows: {RULES['reflow'][REVIEWS.index(name)]} review needed"); continue
-            reflowed = True
-        cat = item_category(kind, iid, lang, base, reflowed)
+            same = lambda **kw: item_view(kind, iid, lang, Commit(base), passed=True, **kw) == item_view(kind, iid, lang, WorkTree(), **kw)
+            if same(paragraphs=True): paras = True                           # only cut into paragraphs or lists (work queue 8c)
+            elif same(reflow=True): reflowed = True                          # calculation chains re-broken (their view collapses whitespace too)
+            elif same(reflow=True, paragraphs=True): reflowed = paras = True
+            else:
+                print(f"{name}: more than teacher-approved figures, formula names, re-broken calculation chains and paragraph breaks changed, review needed"); continue
+            what = {"reflow": "calculation chains re-broken into rows", "md-paragraphs": "texts cut into paragraphs or lists"}
+            need = [f"{what[c]}: {RULES[c][REVIEWS.index(name)]}" for c, on in (("reflow", reflowed), ("md-paragraphs", paras)) if on and RULES[c][REVIEWS.index(name)] != "none"]
+            if need: print(f"{name}: {'; '.join(need)} review needed"); continue
+        cat = item_category(kind, iid, lang, base, reflowed, paras)
         rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": cat})
         added.append(name); print(f"{name}: carried over ({'; '.join(WHY[c] for c in cat.split(','))})")
     if added:
@@ -1286,7 +1316,7 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
     print(f"{lang}/{key}: {m.status(key, lang)['state']}")
 
 
-def item_category(kind, iid, lang, base, reflowed=False):
+def item_category(kind, iid, lang, base, reflowed=False, paras=False):
     """What a carried item change was: "formula-names" when the named formulas of its texts changed, "teacher-figure"
     when anything else did (approved figures), both when both did."""
     m, key, oid = _item(kind, iid)
@@ -1297,6 +1327,7 @@ def item_category(kind, iid, lang, base, reflowed=False):
     if kind == "unit" and [kaavat.apply_symbols(key, lang, n, t) for n, t in zip(m.TEXTS, old)] != old: cats.append("mafy-symbols")
     if any(t and caption_free(t) != t for t in (Commit(base).read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) for n in m.TEXTS if n.endswith(".json"))): cats.append("caption-label")
     if _figures_differ(kind, iid, lang, base): cats.append("teacher-figure")
+    if paras: cats.append("md-paragraphs")
     if reflowed: cats.append("reflow")
     return ",".join(cats or ["teacher-figure"])
 
@@ -1322,9 +1353,10 @@ def verify_item_carries(kind, iid, lang):
         what = f"{lang}/{key}: carry of {name}"
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
         if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
-        rf = "reflow" in c["categories"].split(",")
+        rf, mp = (k in c["categories"].split(",") for k in ("reflow", "md-paragraphs"))
         if rf and RULES["reflow"][REVIEWS.index(name)] != "none": errs.append(f"{what}: a re-break of calculation chains (reflow) does not carry the {name} review"); continue
-        if item_view(kind, iid, lang, Commit(c["base"]), passed=True, reflow=rf) != item_view(kind, iid, lang, WorkTree(), reflow=rf): errs.append(f"{what} covers more than figures, formula names and re-broken calculation chains the rules allow")
+        if mp and RULES["md-paragraphs"][REVIEWS.index(name)] != "none": errs.append(f"{what}: paragraph breaks (md-paragraphs) do not carry the {name} review"); continue
+        if item_view(kind, iid, lang, Commit(c["base"]), passed=True, reflow=rf, paragraphs=mp) != item_view(kind, iid, lang, WorkTree(), reflow=rf, paragraphs=mp): errs.append(f"{what} covers more than figures, formula names, re-broken calculation chains and paragraph breaks the rules allow")
     return errs
 
 
