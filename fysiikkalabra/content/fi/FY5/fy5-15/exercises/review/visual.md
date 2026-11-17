@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e28e18da5b5c35ee
-ROUND: 3
+CONTENT-HASH: 5f72f91706b0f831
+ROUND: 1
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json 342 — at the join of the two inline pieces the relation has its space on one side only ("I0≈ 3,2 · 10^−13 W/m²"); a leading `{}` in the second piece evens it (known).
-- [Minor] solutions.md 39 — "…noin 8000 m², ja" leaves "ja" alone on a line before the box at 390 px; harmless (carried).
+- [Minor] solutions.md fy5-15-L2-06 and L3-05 Järkevyys — the bold lead-in "Perustelu (kohta c):" sits inside the first paragraph (L2-06 line end, L3-05 mid-block); start it a paragraph of its own.
 
 ## Checked
-- Delta, round 3: exercises.json 342 (answer of the "negatiivinen taso" task, now two consecutive inline formulas) and solutions.md 188 (continuation row `&\quad \to 16 m`).
-- Own captures from preview/fy5-15.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-15-390-I32-0.png, fy5-15-1280-I32-0.png, fy5-15-390-to16m-1.png, fy5-15-1280-to16m-0.png, fy5-15-390-I32-1.png.
-- exercises.json 342: round 2's blocking item is gone. The formula stays in the sentence and the semicolon follows W/m² directly at both widths ("…pienempi, I = 10^−0,5 I0 ≈ 3,2 · 10^−13 W/m²; keskimääräinen kuulija…"); at 390 px the formula fits one line (right edge 340 of 360 px), mantissa and power of ten together.
-- solutions.md 188: at 390 px "1,0 m → 2,0 m → 4,0 m → 8,0 m" and an indented "→ 16 m," under it; at 1280 px the whole chain is one row (round 2's orphan remark is met).
-- scrollWidth equals the viewport at both widths; nothing clipped.
+- fy5-15 open-exercises-L3-1280-6 (L2/L3 Vastaus and Järkevyys block with the split paragraphs, 1280 px): the split sits inside the one Järkevyys panel, spacing fine, no clipping. The L1-06/L1-07 Mallivastaus splits and the display formula now preceded by a blank line were read from the diff only.
+- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -320,7 +320,9 @@ Kalastaja punnitsee kalan jousivaa'alla. Kala, jonka massa on $1{,}20\,\text{kg}
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kalan massa on $m = 1{,}20\,\text{kg}$, jousen venymä $x = 3{,}0\,\text{cm}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään jousivakiota $k$ ja jousen potentiaalienergiaa $E_\text{p}$.
+**Tunnetut ja kysytty.** Kalan massa on $m = 1{,}20\,\text{kg}$, jousen venymä $x = 3{,}0\,\text{cm}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään jousivakiota $k$ ja jousen potentiaalienergiaa $E_\text{p}$.
 
 <!-- vaihe -->
 

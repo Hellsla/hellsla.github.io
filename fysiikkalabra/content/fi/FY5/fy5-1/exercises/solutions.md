@@ -57,7 +57,9 @@
 ## fy5-1-L1-07
 **Kysytty:** narun voiman momentti $M$ saranoiden suhteen.
 **Periaate:** Momentti on $M = Fr$, ja varsi $r$ on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Naru vetää kahvaa oven tasossa kohti saranoita, joten vaikutussuora on oven tason suora, joka kulkee saranoiden kautta.
-**Mallivastaus:** Saranoiden etäisyys vaikutussuorasta on nolla, joten varsi on $r = 0$ ja momentti on $M = 30\,\text{N}\cdot 0\,\text{m} = 0\,\text{Nm}$. Naru vetää ovea kohti saranoita eikä kierrä sitä, vaikka voima on $30\,\text{N}$ ja kahva on $0{,}80\,\text{m}$:n päässä. Etäisyys kahvaan olisi varsi vain, jos voima olisi kohtisuorassa oveen nähden, ja silloin momentti olisi $24\,\text{Nm}$. Momentti ei myöskään ole sama asia kuin voima, vaan voiman ja varren tulo.
+**Mallivastaus:** Saranoiden etäisyys vaikutussuorasta on nolla, joten varsi on $r = 0$ ja momentti on $M = 30\,\text{N}\cdot 0\,\text{m} = 0\,\text{Nm}$. Naru vetää ovea kohti saranoita eikä kierrä sitä, vaikka voima on $30\,\text{N}$ ja kahva on $0{,}80\,\text{m}$:n päässä.
+
+Etäisyys kahvaan olisi varsi vain, jos voima olisi kohtisuorassa oveen nähden, ja silloin momentti olisi $24\,\text{Nm}$. Momentti ei myöskään ole sama asia kuin voima, vaan voiman ja varren tulo.
 
 ## fy5-1-L1-08
 **Annettu:** voima $F = 15\,\text{N}$ kohtisuoraan sauvaa vastaan, varsi $r = 0{,}60\,\text{m}$, kiertosuunta myötäpäivään
@@ -163,7 +165,9 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 ## fy5-1-L3-01
 **Annettu:** jalan voima $F = 500\,\text{N}$ suoraan alaspäin, polkimen etäisyys akselista $d = 0{,}175\,\text{m}$, kampi $45^\circ$ vaakatason alapuolella
 **Kysytty:** voiman momentti $M$ kammen akselin suhteen yksikössä $\text{Nm}$ sekä asennot, joissa momentti on suurin ja nolla
-**Periaate:** Kampi kiertyy akselinsa ympäri, joten jalan voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on pystysuora, joten sen vaikutussuora on polkimen kautta kulkeva pystysuora, ja varsi on polkimen vaakasuora etäisyys akselista. Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pystysuorassa, koska silloin vaikutussuora kulkee akselin kautta. Asennossa $45^\circ$ vaakasuora etäisyys on kulman viereinen kateetti.
+**Periaate:** Kampi kiertyy akselinsa ympäri, joten jalan voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on pystysuora, joten sen vaikutussuora on polkimen kautta kulkeva pystysuora, ja varsi on polkimen vaakasuora etäisyys akselista.
+
+Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pystysuorassa, koska silloin vaikutussuora kulkee akselin kautta. Asennossa $45^\circ$ vaakasuora etäisyys on kulman viereinen kateetti.
 **Kaava:** $M = Fr$ ja $r = d\cos 45^\circ$, joten $M = Fd\cos 45^\circ$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 500\,\text{N}\cdot 0{,}175\,\text{m}\cdot\cos 45^\circ = 87{,}5\,\text{Nm}\cdot 0{,}7071 = 61{,}87\,\text{Nm}$
@@ -197,7 +201,11 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Kaava:** $M_\text{p} = F_\text{p} d$ ja $M_\text{p} = F_\text{k} R$, joten $F_\text{k} = \dfrac{F_\text{p} d}{R}$; takapyörälle $M = F_\text{k} r$
 **Muunnokset:** Takahammaspyörän säteet muunnetaan metreiksi: $r_1 = 9{,}00\,\text{cm} = 0{,}0900\,\text{m}$, $r_2 = 0{,}0600\,\text{m}$ ja $r_3 = 0{,}0400\,\text{m}$.
 **Sijoitus:** Kammen momentti on $M_\text{p} = 450\,\text{N}\cdot 0{,}175\,\text{m} = 78{,}75\,\text{Nm}$, ja ketjun voima on $F_\text{k} = \dfrac{78{,}75\,\text{Nm}}{0{,}100\,\text{m}} = 787{,}5\,\text{N}$. Vaihteella 1: $M = 787{,}5\,\text{N}\cdot 0{,}0900\,\text{m} = 70{,}875\,\text{Nm}$, vaihteella 2: $$787{,}5\,\text{N}\cdot 0{,}0600\,\text{m} = 47{,}25\,\text{Nm}$$ ja vaihteella 3: $787{,}5\,\text{N}\cdot 0{,}0400\,\text{m} = 31{,}5\,\text{Nm}$.
-**Vastaus:** $70{,}9\,\text{Nm}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa. Ketjun voima on $788\,\text{N}$, ja momentit vaihteilla 2 ja 3 ovat $47{,}3\,\text{Nm}$ ja $31{,}5\,\text{Nm}$. Jyrkkään ylämäkeen valitaan vaihde 1, koska suurin takahammaspyörä antaa samalla poljinvoimalla suurimman momentin takapyörälle, ja pyörä tarvitsee suuren momentin ylämäessä. Hinta on pienempi nopeus: suuri takahammaspyörä saa pyörän pyörimään hitaammin samalla poljinnopeudella. Pienellä takahammaspyörällä momentti on vastaavasti pienempi mutta nopeus suurempi.
+**Vastaus:** $70{,}9\,\text{Nm}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
+
+Ketjun voima on $788\,\text{N}$, ja momentit vaihteilla 2 ja 3 ovat $47{,}3\,\text{Nm}$ ja $31{,}5\,\text{Nm}$.
+
+Jyrkkään ylämäkeen valitaan vaihde 1, koska suurin takahammaspyörä antaa samalla poljinvoimalla suurimman momentin takapyörälle, ja pyörä tarvitsee suuren momentin ylämäessä. Hinta on pienempi nopeus: suuri takahammaspyörä saa pyörän pyörimään hitaammin samalla poljinnopeudella. Pienellä takahammaspyörällä momentti on vastaavasti pienempi mutta nopeus suurempi.
 **Järkevyys:** Kammen varsi on suurempi kuin etuhammaspyörän säde, joten ketjun voima on suurempi kuin polkimen voima: $450\,\text{N}\cdot 1{,}75 = 787{,}5\,\text{N}$. Takahammaspyörän säde on $0{,}90$-kertainen etuhammaspyörän säteeseen nähden, joten $$78{,}75\,\text{Nm}\cdot 0{,}90 = 70{,}9\,\text{Nm}$$. Suuruusluokka on järkevä: $9\,\text{cm}$:n säde on suuri takahammaspyörä, ja sen antama momentti on vain hieman pienempi kuin kammen momentti.
 
 ## fy5-1-L3-05

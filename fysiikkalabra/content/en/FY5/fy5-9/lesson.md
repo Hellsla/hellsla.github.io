@@ -348,7 +348,9 @@ A body of mass $0.400\,\text{kg}$ is attached to a spring and oscillates on a fr
 
 <!-- vaihe -->
 
-**Reasonableness.** Check the other way round: if the spring constant were exactly $25\,\text{N/m}$, the period would be $2\pi\sqrt{0.400\,\text{kg} : 25\,\text{N/m}} \approx 0.795\,\text{s}$, very close to the measured $0.800\,\text{s}$. A spring of about $25\,\text{N/m}$ stretches $1\,\text{cm}$ when pulled with a force of $0.25\,\text{N}$, which suits a light school spring. The frequency is $f = \tfrac{1}{T} = 1.25\,\text{Hz}$, so there is a little over one oscillation per second, and they are easy to count.
+**Reasonableness.** Check the other way round: if the spring constant were exactly $25\,\text{N/m}$, the period would be $2\pi\sqrt{0.400\,\text{kg} : 25\,\text{N/m}} \approx 0.795\,\text{s}$, very close to the measured $0.800\,\text{s}$. A spring of about $25\,\text{N/m}$ stretches $1\,\text{cm}$ when pulled with a force of $0.25\,\text{N}$, which suits a light school spring.
+
+The frequency is $f = \tfrac{1}{T} = 1.25\,\text{Hz}$, so there is a little over one oscillation per second, and they are easy to count.
 
 ## Common misconception
 Many people think that a heavy pendulum bob swings faster, because a greater weight acts on it. A greater force does act on a heavier bob, but it is also harder to accelerate: the acceleration $a = \tfrac{F}{m}$ stays the same, as in free fall. That is why the period of a pendulum does not depend on the mass. For a mass on a spring, however, the mass does matter, because the force of the spring does not grow with the mass.

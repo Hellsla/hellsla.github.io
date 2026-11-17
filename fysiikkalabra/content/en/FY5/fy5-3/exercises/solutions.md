@@ -31,7 +31,9 @@
 ## fy5-3-L1-04
 **Given:** radius of the path $r = 1.5\,\text{m}$, speed $v = 3.0\,\text{m/s}$, time after the break $t = 2.0\,\text{s}$
 **Find:** the distance $d$ of the puck from the centre of the path in $\text{m}$
-**Principle:** When the string breaks, no force acts on the puck horizontally, so the puck continues straight with the velocity it had at the moment of the break. The velocity is along the tangent of the path, that is, perpendicular to the radius, so the puck moves along the tangent the distance $s = vt$. From the centre to the point of the break the distance is $r$, and from there onwards perpendicular to it the distance is $s$, so by the Pythagorean theorem $d^2 = r^2 + s^2$.
+**Principle:** When the string breaks, no force acts on the puck horizontally, so the puck continues straight with the velocity it had at the moment of the break. The velocity is along the tangent of the path, that is, perpendicular to the radius, so the puck moves along the tangent the distance $s = vt$.
+
+From the centre to the point of the break the distance is $r$, and from there onwards perpendicular to it the distance is $s$, so by the Pythagorean theorem $d^2 = r^2 + s^2$.
 **Formula:** $d = \sqrt{r^2 + (vt)^2}$
 **Conversions:** None needed: the radius is in metres, the time in seconds and the speed in $\text{m/s}$.
 **Substitution:** $d = \sqrt{(1.5\,\text{m})^2 + (3.0\,\text{m/s} \cdot 2.0\,\text{s})^2} = \sqrt{2.25\,\text{m}^2 + 36\,\text{m}^2} = 6.185\,\text{m}$
@@ -96,12 +98,16 @@
 **Conversions:** None needed: the unit of the radii cancels.
 **Substitution:** $v_2 = \dfrac{40.2\,\text{m}}{36.5\,\text{m}} \cdot 7.0\,\text{m/s} = 1.1014 \cdot 7.0\,\text{m/s} = 7.710\,\text{m/s}$
 **Answer:** $7.7\,\text{m/s}$, two significant figures like the speed of the inner runner $7.0\,\text{m/s}$.
-**Reasonableness:** The outer arc is about $10\,\%$ longer, so the speed must also be about $10\,\%$ greater. For both, the duration of the bend is $t = \tfrac{\pi \cdot 36.5\,\text{m}}{7.0\,\text{m/s}} = 16.4\,\text{s}$, because staying side by side means that both arrive at the end of the bend at the same time. In a race the starting positions of the outer lanes are staggered forwards so that arcs of different lengths even out; in this task the runners start side by side and no staggering is needed.
+**Reasonableness:** The outer arc is about $10\,\%$ longer, so the speed must also be about $10\,\%$ greater. For both, the duration of the bend is $t = \tfrac{\pi \cdot 36.5\,\text{m}}{7.0\,\text{m/s}} = 16.4\,\text{s}$, because staying side by side means that both arrive at the end of the bend at the same time.
+
+In a race the starting positions of the outer lanes are staggered forwards so that arcs of different lengths even out; in this task the runners start side by side and no staggering is needed.
 
 ## fy5-3-L3-02
 **Given:** speed $v = 36\,\text{km/h}$, the car goes round a quarter of the circle
 **Find:** the magnitude of the change of velocity $|\Delta\overline{v}|$ in $\text{m/s}$
-**Principle:** The speed stays the same, but the velocity is always along the tangent of the path, perpendicular to the radius. In a quarter of a revolution the radius turns $90^\circ$, so the velocity also turns $90^\circ$: $\overline{v}_1$ and $\overline{v}_2$ are perpendicular to each other. When they are drawn from the same point, the change $\Delta\overline{v} = \overline{v}_2 - \overline{v}_1$ is the hypotenuse of a right triangle whose legs are $v$ and $v$.
+**Principle:** The speed stays the same, but the velocity is always along the tangent of the path, perpendicular to the radius. In a quarter of a revolution the radius turns $90^\circ$, so the velocity also turns $90^\circ$: $\overline{v}_1$ and $\overline{v}_2$ are perpendicular to each other.
+
+When they are drawn from the same point, the change $\Delta\overline{v} = \overline{v}_2 - \overline{v}_1$ is the hypotenuse of a right triangle whose legs are $v$ and $v$.
 **Formula:** $|\Delta\overline{v}|^2 = v^2 + v^2$, so $|\Delta\overline{v}| = \sqrt{2}\, v$
 **Conversions:** $v = 36\,\tfrac{\text{km}}{\text{h}} = \dfrac{36 \cdot 1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$
 **Substitution:** $|\Delta\overline{v}| = \sqrt{2} \cdot 10\,\text{m/s} = 14.14\,\text{m/s}$
@@ -111,7 +117,9 @@
 ## fy5-3-L3-03
 **Given:** radius of the front sprocket $r_\text{f} = 10.0\,\text{cm}$, radius of the rear sprocket $r_\text{r} = 4.0\,\text{cm}$, radius of the rear wheel $R = 0.34\,\text{m}$, rotation frequency of the front sprocket $f_\text{f} = 1.0\,\tfrac{1}{\text{s}}$; the tyre does not slip
 **Find:** the speed $u$ of the bicycle in $\text{km/h}$
-**Principle:** The chain moves on the rim of both sprockets at the same speed $v_\text{c}$, so $2\pi r_\text{f} f_\text{f} = 2\pi r_\text{r} f_\text{r}$. The rear wheel turns at the same frequency $f_\text{r}$ as the rear sprocket. When the tyre does not slip, the point of the tyre touching the ground is momentarily at rest relative to the ground, so in one revolution the bicycle advances the circumference $2\pi R$ of the tyre, and the speed is $u = 2\pi R f_\text{r}$.
+**Principle:** The chain moves on the rim of both sprockets at the same speed $v_\text{c}$, so $2\pi r_\text{f} f_\text{f} = 2\pi r_\text{r} f_\text{r}$. The rear wheel turns at the same frequency $f_\text{r}$ as the rear sprocket.
+
+When the tyre does not slip, the point of the tyre touching the ground is momentarily at rest relative to the ground, so in one revolution the bicycle advances the circumference $2\pi R$ of the tyre, and the speed is $u = 2\pi R f_\text{r}$.
 **Formula:** $f_\text{r} = \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$ and $u = 2\pi R f_\text{r}$, so $u = 2\pi R\, \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$
 **Conversions:** The unit of the radii of the sprockets cancels. Finally $1\,\text{m/s} = \dfrac{0.001\,\text{km}}{\frac{1}{3600}\,\text{h}} = 3.6\,\tfrac{\text{km}}{\text{h}}$.
 **Substitution:** $f_\text{r} = \dfrac{10.0\,\text{cm}}{4.0\,\text{cm}} \cdot 1.0\,\tfrac{1}{\text{s}} = 2.5\,\tfrac{1}{\text{s}}$, $u = 2\pi \cdot 0.34\,\text{m} \cdot 2.5\,\tfrac{1}{\text{s}} = 5.341\,\text{m/s} = 5.341 \cdot 3.6\,\tfrac{\text{km}}{\text{h}} = 19.23\,\tfrac{\text{km}}{\text{h}}$
@@ -120,8 +128,12 @@
 
 ## fy5-3-L1-06
 **Find:** the direction of the velocity of a body in uniform circular motion.
-**Principle:** The velocity is always in the direction of the motion of the body. On a circular path the direction of motion is at every moment the direction of the tangent of the path, that is, perpendicular to the radius. The body goes round the path, so the direction of the tangent keeps turning, and the velocity changes even though the speed stays the same.
-**Model answer:** The velocity is along the tangent of the path, because the body moves in the direction of the path at every moment. The velocity does not point towards the centre: the body stays at the same distance from the centre, so it does not move towards it. Nor does it point away from the centre, because no force pushes the body outwards; when the string breaks, the body continues along the tangent. The direction of the velocity does not stay fixed but turns through a whole revolution during one revolution, even though the speed is constant.
+**Principle:** The velocity is always in the direction of the motion of the body. On a circular path the direction of motion is at every moment the direction of the tangent of the path, that is, perpendicular to the radius.
+
+The body goes round the path, so the direction of the tangent keeps turning, and the velocity changes even though the speed stays the same.
+**Model answer:** The velocity is along the tangent of the path, because the body moves in the direction of the path at every moment. The velocity does not point towards the centre: the body stays at the same distance from the centre, so it does not move towards it.
+
+Nor does it point away from the centre, because no force pushes the body outwards; when the string breaks, the body continues along the tangent. The direction of the velocity does not stay fixed but turns through a whole revolution during one revolution, even though the speed is constant.
 
 ## fy5-3-L1-07
 **Given:** rotation frequency $f = 3000\,\tfrac{1}{\text{min}}$
@@ -145,7 +157,9 @@
 
 ## fy5-3-L1-09
 **Find:** how the tangential speed $v$ of the child changes when the radius increases from $1.2\,\text{m}$ to $2.4\,\text{m}$ and the frequency of rotation decreases from $16\,\tfrac{1}{\text{min}}$ to $8.0\,\tfrac{1}{\text{min}}$.
-**Principle:** In both situations the child is in uniform circular motion, and the tangential speed is $v = 2\pi r f$. The tangential speed is therefore directly proportional to both the radius and the frequency of rotation, and the changes of both must be taken into account. When the ratio is calculated, the frequency of rotation does not need to be converted to the unit $\tfrac{1}{\text{s}}$, because the conversion factor cancels.
+**Principle:** In both situations the child is in uniform circular motion, and the tangential speed is $v = 2\pi r f$. The tangential speed is therefore directly proportional to both the radius and the frequency of rotation, and the changes of both must be taken into account.
+
+When the ratio is calculated, the frequency of rotation does not need to be converted to the unit $\tfrac{1}{\text{s}}$, because the conversion factor cancels.
 **Model answer:** The radius doubles:
 
 $\dfrac{r_2}{r_1} = \dfrac{2.4\,\text{m}}{1.2\,\text{m}} = 2.0$
@@ -165,7 +179,9 @@ The tangential speed stays the same. Check: at the start $f_1 = \tfrac{16}{60\,\
 ## fy5-3-L2-05
 **Given:** times for ten revolutions $t_{10}$: $41.2\,\text{s}$, $40.6\,\text{s}$, $41.8\,\text{s}$, $40.9\,\text{s}$ and $41.5\,\text{s}$; distance of the seat from the axis $r = 2.1\,\text{m}$
 **Find:** the period $T$ and the speed $v$ of the seat; $v$ in $\text{m/s}$ goes in the answer box
-**Principle:** The time of a single revolution is hard to measure accurately, because starting and stopping the clock include an error from reaction time. When ten revolutions are measured at once, the same error is shared among ten revolutions and the error of the period is one tenth. The mean of the measurements evens out random scatter. The period is the mean time divided by the number of revolutions, and the speed is then calculated with the formula $v = \tfrac{2\pi r}{T}$.
+**Principle:** The time of a single revolution is hard to measure accurately, because starting and stopping the clock include an error from reaction time. When ten revolutions are measured at once, the same error is shared among ten revolutions and the error of the period is one tenth.
+
+The mean of the measurements evens out random scatter. The period is the mean time divided by the number of revolutions, and the speed is then calculated with the formula $v = \tfrac{2\pi r}{T}$.
 **Formula:** $t_{\text{av}} = \dfrac{\text{sum of measurements}}{5}$, $\quad T = \dfrac{t_{\text{av}}}{10}$, $\quad v = \dfrac{2\pi r}{T}$
 **Conversions:** Not needed: the time is in seconds and the distance in metres.
 **Substitution:** The sum of the measurements is $206.0\,\text{s}$, so
@@ -198,7 +214,11 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42.16 \cdot 10^{6}\,\text{m}}{86\,160\,\text{
 \end{aligned}
 ```
 **Answer:** a) The speeds are $7.59\,\text{km/s}$, $3.87\,\text{km/s}$ and, for the geostationary satellite, $3.07\,\text{km/s}$, three significant figures like the values in the table. b) The satellite farther away is slower: the radius of the orbit grows from top to bottom in the table, but the speed decreases. The answer box gets $3.07\,\text{km/s}$.
-**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth. The circumference is $$\begin{aligned} &2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$, and $$\begin{aligned} &3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$. In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
+**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth.
+
+The circumference is $$\begin{aligned} &2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$, and $$\begin{aligned} &3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$.
+
+In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
 
 ## fy5-3-L2-07
 **Given:** diameter of the tyre $d = 64\,\text{cm}$, rotation frequency $f = 8.0\,\tfrac{1}{\text{s}}$; the result of the student $32\,\text{m/s}$
@@ -219,7 +239,11 @@ v &= 2\pi \cdot 0.32\,\text{m} \cdot 8.0\,\tfrac{1}{\text{s}} \\
 ## fy5-3-L3-04
 **Given:** latitudes $\varphi_{\text{Kourou}} = 5.2\,{}^\circ$, $\varphi_{\text{Canaveral}} = 28.5\,{}^\circ$ and $\varphi_{\text{Plesetsk}} = 62.7\,{}^\circ$; radius of the Earth $R = 6371\,\text{km}$, period $T = 86\,164\,\text{s}$, speed in low orbit $7.7\,\text{km/s}$
 **Find:** the speeds of the launch sites, the difference $\Delta v$ between the speeds from Kourou and Plesetsk in $\text{m/s}$, and the speed from Kourou as a percentage of the speed in low orbit
-**Principle:** The Earth rotates as a rigid body, so every place goes round the axis of the Earth in uniform circular motion with the period $T$. The path of a place is a circle of latitude whose radius is $r = R\cos\varphi$: the radius $R$ drawn from the centre of the Earth to the place makes the angle $\varphi$ with the plane of the equator, and the distance of the place from the axis is the part of this radius in the direction of the equator, $R\cos\varphi$. A rocket launched eastwards gets the speed of the place as its initial speed.
+**Principle:** The Earth rotates as a rigid body, so every place goes round the axis of the Earth in uniform circular motion with the period $T$.
+
+The path of a place is a circle of latitude whose radius is $r = R\cos\varphi$: the radius $R$ drawn from the centre of the Earth to the place makes the angle $\varphi$ with the plane of the equator, and the distance of the place from the axis is the part of this radius in the direction of the equator, $R\cos\varphi$.
+
+A rocket launched eastwards gets the speed of the place as its initial speed.
 **Formula:** $r = R\cos\varphi$, $\quad v = \dfrac{2\pi r}{T}$
 **Conversions:** $R = 6371\,\text{km} = 6.371 \cdot 10^{6}\,\text{m}$ and $7.7\,\text{km/s} = 7700\,\text{m/s}$
 **Substitution:** The radii of the circles of latitude are $r_{\text{Kourou}} = 6.371 \cdot 10^{6}\,\text{m} \cdot \cos 5.2\,{}^\circ = 6.345 \cdot 10^{6}\,\text{m}$, $r_{\text{Canaveral}} = 5.599 \cdot 10^{6}\,\text{m}$ and $r_{\text{Plesetsk}} = 2.922 \cdot 10^{6}\,\text{m}$. The speeds are
@@ -241,13 +265,21 @@ The difference and the share of the speed in low orbit:
 \frac{462.7\,\text{m/s}}{7700\,\text{m/s}} &= 0.060 = 6.0\,\%
 \end{aligned}
 ```
-**Answer:** a) The speeds are $463\,\text{m/s}$, $408\,\text{m/s}$ and $213\,\text{m/s}$. b) Kourou gives a speed greater by $250\,\text{m/s}$ than Plesetsk, two significant figures, because the latitude $5.2\,{}^\circ$ is given with two digits. c) The speed from Kourou is about $6.0\,\%$ of the speed in low orbit. The speeds of the places differ because all of them make a revolution in the same time $T$, but a place nearer the pole goes round a smaller circle of latitude and travels a shorter distance in a revolution. The answer box gets $250\,\text{m/s}$.
-**Reasonableness:** At the equator the speed is $\dfrac{2\pi \cdot 6.371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464.6\,\text{m/s}$, and Kourou is close to it, $462.7\,\text{m/s}$. The speed of Plesetsk is $\cos 62.7\,{}^\circ = 0.459$ times that at the equator: $$0.459 \cdot 464.6\,\text{m/s} = 213\,\text{m/s}$$. At the pole the radius is zero and so is the speed, so the speed decreases as the latitude increases. The extra speed from the rotation is thus only a small part of the speed in low orbit.
+**Answer:** a) The speeds are $463\,\text{m/s}$, $408\,\text{m/s}$ and $213\,\text{m/s}$. b) Kourou gives a speed greater by $250\,\text{m/s}$ than Plesetsk, two significant figures, because the latitude $5.2\,{}^\circ$ is given with two digits. c) The speed from Kourou is about $6.0\,\%$ of the speed in low orbit.
+
+The speeds of the places differ because all of them make a revolution in the same time $T$, but a place nearer the pole goes round a smaller circle of latitude and travels a shorter distance in a revolution. The answer box gets $250\,\text{m/s}$.
+**Reasonableness:** At the equator the speed is $\dfrac{2\pi \cdot 6.371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464.6\,\text{m/s}$, and Kourou is close to it, $462.7\,\text{m/s}$. The speed of Plesetsk is $\cos 62.7\,{}^\circ = 0.459$ times that at the equator: $$0.459 \cdot 464.6\,\text{m/s} = 213\,\text{m/s}$$.
+
+At the pole the radius is zero and so is the speed, so the speed decreases as the latitude increases. The extra speed from the rotation is thus only a small part of the speed in low orbit.
 
 ## fy5-3-L3-05
 **Given:** speed $v = 1.2\,\text{m/s}$, start of the groove $r_1 = 25\,\text{mm}$, end of the groove $r_2 = 58\,\text{mm}$, spacing of the turns of the groove $1.6\,\mu\text{m}$
 **Find:** the rotation frequency at the start and at the end of the groove in $\tfrac{1}{\text{min}}$ and the playing time $t$ in minutes; the playing time goes in the answer box
-**Principle:** The laser reads the groove at a constant speed, so the speed is the same at every radius. For the speed $v = 2\pi r f$ holds, so the rotation frequency is $f = \tfrac{v}{2\pi r}$: when the radius grows, the rotation frequency decreases. The number of turns of the groove is obtained by dividing the growth of the radius of the groove by the spacing of the turns. When the radius grows steadily, the length of the groove is the number of turns times the circumference of the circle of the mean radius. At a constant speed the playing time is the length of the groove divided by the speed.
+**Principle:** The laser reads the groove at a constant speed, so the speed is the same at every radius. For the speed $v = 2\pi r f$ holds, so the rotation frequency is $f = \tfrac{v}{2\pi r}$: when the radius grows, the rotation frequency decreases.
+
+The number of turns of the groove is obtained by dividing the growth of the radius of the groove by the spacing of the turns.
+
+When the radius grows steadily, the length of the groove is the number of turns times the circumference of the circle of the mean radius. At a constant speed the playing time is the length of the groove divided by the speed.
 **Formula:** $f = \dfrac{v}{2\pi r}$, $\quad N = \dfrac{r_2 - r_1}{\Delta r}$, $\quad s = N \cdot 2\pi r_{\text{av}}$, $\quad t = \dfrac{s}{v}$
 **Conversions:** $r_1 = 25\,\text{mm} = 0.025\,\text{m}$, $r_2 = 0.058\,\text{m}$ and the spacing of the turns $\Delta r = 1.6\,\mu\text{m} = 1.6 \cdot 10^{-6}\,\text{m} = 0.0016\,\text{mm}$. The rotation frequency is converted from $\tfrac{1}{\text{s}}$ to $\tfrac{1}{\text{min}}$ by multiplying by $60$.
 **Substitution:** Part a):
@@ -270,8 +302,14 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 &= 4482\,\text{s} = 74.7\,\text{min}
 \end{aligned}
 ```
-**Answer:** a) The rotation frequency is about $460\,\tfrac{1}{\text{min}}$ at the start of the groove and about $200\,\tfrac{1}{\text{min}}$ at the end. b) There are about $2.1 \cdot 10^{4}$ turns of the groove, the length of the groove is about $5.4\,\text{km}$ and the playing time is about $75\,\text{min}$, two significant figures like the spacing of the turns $1.6\,\mu\text{m}$. c) The laser follows the groove at a constant speed, and farther out the groove goes round a larger circle. Since $v = 2\pi r f$, at the same speed the rotation frequency must decrease as the radius grows. The answer box gets the playing time $75\,\text{min}$.
-**Reasonableness:** The playing time $75\,\text{min}$ corresponds to the playing time of an ordinary CD, which is about $74$–$80\,\text{min}$. The rotation frequency decreases in the ratio $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, and $458 \cdot \dfrac{25}{58} = 197$, as at the calculated end. There are $20\,625$ turns and the playing time is $74.7\,\text{min}$, so the mean rotation frequency is $\dfrac{20\,625}{74.7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$, which lies between $458\,\tfrac{1}{\text{min}}$ at the start and $198\,\tfrac{1}{\text{min}}$ at the end.
+**Answer:** a) The rotation frequency is about $460\,\tfrac{1}{\text{min}}$ at the start of the groove and about $200\,\tfrac{1}{\text{min}}$ at the end. b) There are about $2.1 \cdot 10^{4}$ turns of the groove, the length of the groove is about $5.4\,\text{km}$ and the playing time is about $75\,\text{min}$, two significant figures like the spacing of the turns $1.6\,\mu\text{m}$.
+
+c) The laser follows the groove at a constant speed, and farther out the groove goes round a larger circle.
+
+Since $v = 2\pi r f$, at the same speed the rotation frequency must decrease as the radius grows. The answer box gets the playing time $75\,\text{min}$.
+**Reasonableness:** The playing time $75\,\text{min}$ corresponds to the playing time of an ordinary CD, which is about $74$–$80\,\text{min}$. The rotation frequency decreases in the ratio $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, and $458 \cdot \dfrac{25}{58} = 197$, as at the calculated end.
+
+There are $20\,625$ turns and the playing time is $74.7\,\text{min}$, so the mean rotation frequency is $\dfrac{20\,625}{74.7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$, which lies between $458\,\tfrac{1}{\text{min}}$ at the start and $198\,\tfrac{1}{\text{min}}$ at the end.
 
 ## fy5-3-L1-10
 **Given:** period $T = 5.0\,\text{s}$; the distance of the point $B$ from the centre is read from the figure

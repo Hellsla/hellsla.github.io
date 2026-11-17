@@ -144,10 +144,14 @@ Kadun intensiteetti on siis noin $10\,000$-kertainen. Suhde $2$ syntyy, kun desi
 **Kysytty:** onko negatiivinen intensiteettitaso mahdoton, mitä se tarkoittaa ja voiko tuulettimen kuulla
 **Periaate:** Intensiteettitaso $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$ ei ole intensiteetti vaan vertailu kuulokynnykseen $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Logaritmi on negatiivinen, kun sen argumentti on positiivinen mutta pienempi kuin yksi.
 **Mallivastaus:** Opiskelija ei ole oikeassa. Negatiivinen taso ei tarkoita negatiivista intensiteettiä, vaan sitä, että intensiteetti on pienempi kuin kuulokynnys: $\lg \dfrac{I}{I_0} = -0{,}5$, joten
+
 ```latex
 I = I_0 \cdot 10^{-0{,}5} \approx 3{,}2 \cdot 10^{-13}\,\text{W/m}^2
 ```
-Se on positiivinen, noin kolmasosa kuulokynnyksestä. Jokainen intensiteetin pieneneminen kymmenesosaan vähentää tasoa $10\,\text{dB}$, joten kuulokynnystä heikommilla äänillä taso on negatiivinen, vaikka intensiteetti on aina positiivinen. Keskimääräinen kuulija ei kuule tuuletinta, koska ääni on kuulokynnyksen alapuolella. Kuulokynnys $I_0$ on kuitenkin sovittu vertailuarvo: kuulokynnys vaihtelee ihmisestä ja taajuudesta toiseen, ja nuoret, herkkäkuuloiset ihmiset voivat kuulla herkimmillä taajuuksilla, noin $3000\,\text{Hz}$:n tienoilla, hieman alle $0\,\text{dB}$:n ääniä. Hiljaisessa kaiuttomassa huoneessa mittaus on siis aivan mahdollinen.
+
+Se on positiivinen, noin kolmasosa kuulokynnyksestä. Jokainen intensiteetin pieneneminen kymmenesosaan vähentää tasoa $10\,\text{dB}$, joten kuulokynnystä heikommilla äänillä taso on negatiivinen, vaikka intensiteetti on aina positiivinen. Keskimääräinen kuulija ei kuule tuuletinta, koska ääni on kuulokynnyksen alapuolella.
+
+Kuulokynnys $I_0$ on kuitenkin sovittu vertailuarvo: kuulokynnys vaihtelee ihmisestä ja taajuudesta toiseen, ja nuoret, herkkäkuuloiset ihmiset voivat kuulla herkimmillä taajuuksilla, noin $3000\,\text{Hz}$:n tienoilla, hieman alle $0\,\text{dB}$:n ääniä. Hiljaisessa kaiuttomassa huoneessa mittaus on siis aivan mahdollinen.
 
 **Itsearviointi:** Vastauksessani
 
@@ -158,12 +162,16 @@ Se on positiivinen, noin kolmasosa kuulokynnyksestä. Jokainen intensiteetin pie
 ## fy5-15-L1-06
 **Kysytty:** mitä intensiteettitaso $0\,\text{dB}$ tarkoittaa
 **Periaate:** Intensiteettitaso on $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, joten se vertaa intensiteettiä kuulokynnykseen $I_0$. Taso on nolla, kun logaritmin argumentti on $1$.
-**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan intensiteetti on $I_0$, koska silloin $\lg(I/I_0) = \lg 1 = 0$. Taso $0\,\text{dB}$ on siis kuulokynnys eli heikoin ääni, jonka kuulija vielä juuri havaitsee, ei hiljaisuus. Vaihtoehto, jonka mukaan ääntä ei ole, on väärin, koska nollan logaritmia ei ole olemassa ja intensiteetti $I = 0$ ei anna mitään tasoa. Vaihtoehto kipukynnyksestä on väärin, koska kipukynnys on moninkertainen kuulokynnykseen verrattuna eli asteikon yläpäässä. Vaihtoehto, jonka mukaan nolla on asteikon alaraja, on väärin, koska heikommilla äänillä osamäärä $I/I_0$ on pienempi kuin $1$ ja taso negatiivinen.
+**Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan intensiteetti on $I_0$, koska silloin $\lg(I/I_0) = \lg 1 = 0$. Taso $0\,\text{dB}$ on siis kuulokynnys eli heikoin ääni, jonka kuulija vielä juuri havaitsee, ei hiljaisuus. Vaihtoehto, jonka mukaan ääntä ei ole, on väärin, koska nollan logaritmia ei ole olemassa ja intensiteetti $I = 0$ ei anna mitään tasoa.
+
+Vaihtoehto kipukynnyksestä on väärin, koska kipukynnys on moninkertainen kuulokynnykseen verrattuna eli asteikon yläpäässä. Vaihtoehto, jonka mukaan nolla on asteikon alaraja, on väärin, koska heikommilla äänillä osamäärä $I/I_0$ on pienempi kuin $1$ ja taso negatiivinen.
 
 ## fy5-15-L1-07
 **Kysytty:** mikä on virhe laskussa, jossa kahden $64\,\text{dB}$:n koneen yhteistasoksi saadaan $128\,\text{dB}$
 **Periaate:** Toisistaan riippumattomien äänilähteiden intensiteetit lasketaan yhteen, ja yhteistaso lasketaan summaintensiteetistä. Desibelit ovat logaritminen asteikko, joten niitä ei voi laskea yhteen.
-**Mallivastaus:** Virhe on se, että opiskelija laskee desibelit yhteen. Kaksi samanlaista konetta kaksinkertaistaa intensiteetin, ja kaksinkertainen intensiteetti lisää tasoa vain $10\,\text{dB} \cdot \lg 2 \approx 3{,}0\,\text{dB}$, joten yhteistaso on noin $67\,\text{dB}$. Väite, että kumpikin kone lisäisi kolme desibeliä ja taso olisi $70\,\text{dB}$, on väärin, koska kolmen desibelin lisäys koskee koko yhteistasoa vain kerran. Väite keskiarvosta $64\,\text{dB}$ on väärin, koska toinen kone lisää ääntä. Väite kymmenkertaisesta intensiteetistä ja tasosta $74\,\text{dB}$ on väärin, koska kaksi konetta antaa vain kaksinkertaisen intensiteetin; $10\,\text{dB}$ lisää vaatisi kymmenen konetta.
+**Mallivastaus:** Virhe on se, että opiskelija laskee desibelit yhteen. Kaksi samanlaista konetta kaksinkertaistaa intensiteetin, ja kaksinkertainen intensiteetti lisää tasoa vain $10\,\text{dB} \cdot \lg 2 \approx 3{,}0\,\text{dB}$, joten yhteistaso on noin $67\,\text{dB}$. Väite, että kumpikin kone lisäisi kolme desibeliä ja taso olisi $70\,\text{dB}$, on väärin, koska kolmen desibelin lisäys koskee koko yhteistasoa vain kerran.
+
+Väite keskiarvosta $64\,\text{dB}$ on väärin, koska toinen kone lisää ääntä. Väite kymmenkertaisesta intensiteetistä ja tasosta $74\,\text{dB}$ on väärin, koska kaksi konetta antaa vain kaksinkertaisen intensiteetin; $10\,\text{dB}$ lisää vaatisi kymmenen konetta.
 
 ## fy5-15-L1-08
 **Annettu:** kipukynnyksen intensiteetti $I = 1{,}0\,\text{W/m}^2$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
@@ -264,7 +272,9 @@ r &= \sqrt{\dfrac{0{,}3945\,\text{W}}{4\pi \cdot 3{,}162 \cdot 10^{-7}\,\text{W/
 \end{aligned}
 ```
 **Vastaus:** Kohdan b) tulos on $3{,}2 \cdot 10^{2}\,\text{m}$, kaksi merkitsevää numeroa, koska raja-arvo $55\,\text{dB}$ on annettu täysinä desibeleinä ja $\pm 0{,}5\,\text{dB}$ muuttaa etäisyyttä välillä $297\,\text{m}$–$334\,\text{m}$. Tulos $315\,\text{m}$ pyöristetään ylöspäin, turvalliselle puolelle, koska $55\,\text{dB}$ on raja-arvo. Kohdan a) ääniteho on noin $0{,}39\,\text{W}$.
-**Järkevyys:** Taso laskee $6{,}0\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tasosta $72{,}6\,\text{dB}$ kohdassa $40\,\text{m}$ tasoon $55\,\text{dB}$ on noin $17{,}6\,\text{dB}$ eli noin $2{,}9$ kaksinkertaistumista, joten etäisyys on noin $40\,\text{m} \cdot 2^{2{,}9} \approx 300\,\text{m}$, mikä sopii tulokseen $3{,}2 \cdot 10^{2}\,\text{m}$. **Perustelu (kohta c):** Yksittäinen lukema sisältää mittausvirhettä: tehoarviot vaihtelevat välillä $0{,}366\,\text{W}$–$0{,}428\,\text{W}$, joten keskiarvo tasoittaa virheen. Pitkällä matkalla ilman ääntä vaimentava vaikutus, maan ja kasvillisuuden vaimennus, tuuli ja lämpötilakerrokset sekä heijastukset rakennuksista voivat poiketa mallista, koska malli ei sisällä niitä; todellinen taso voi olla pienempi tai suurempi kuin malli ennustaa (ilman ja maan vaimennus pienentää sitä yleensä, heijastukset suurentavat), joten tulos $3{,}2 \cdot 10^{2}\,\text{m}$ on arvio.
+**Järkevyys:** Taso laskee $6{,}0\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tasosta $72{,}6\,\text{dB}$ kohdassa $40\,\text{m}$ tasoon $55\,\text{dB}$ on noin $17{,}6\,\text{dB}$ eli noin $2{,}9$ kaksinkertaistumista, joten etäisyys on noin $40\,\text{m} \cdot 2^{2{,}9} \approx 300\,\text{m}$, mikä sopii tulokseen $3{,}2 \cdot 10^{2}\,\text{m}$. **Perustelu (kohta c):** Yksittäinen lukema sisältää mittausvirhettä: tehoarviot vaihtelevat välillä $0{,}366\,\text{W}$–$0{,}428\,\text{W}$, joten keskiarvo tasoittaa virheen.
+
+Pitkällä matkalla ilman ääntä vaimentava vaikutus, maan ja kasvillisuuden vaimennus, tuuli ja lämpötilakerrokset sekä heijastukset rakennuksista voivat poiketa mallista, koska malli ei sisällä niitä; todellinen taso voi olla pienempi tai suurempi kuin malli ennustaa (ilman ja maan vaimennus pienentää sitä yleensä, heijastukset suurentavat), joten tulos $3{,}2 \cdot 10^{2}\,\text{m}$ on arvio.
 
 ## fy5-15-L3-05
 **Annettu:** kitaravahvistimen teho $P_1 = 0{,}20\,\text{W}$, rumpusetin taso $L_2 = 90\,\text{dB}$ etäisyydellä $r_2 = 2{,}0\,\text{m}$, kuuntelijan etäisyys $r = 8{,}0\,\text{m}$, tavoitetaso $L_\text{raja} = 70\,\text{dB}$ ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$; lähteet ovat samassa paikassa, riippumattomia ja pistemäisiä
@@ -297,7 +307,11 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 \end{aligned}
 ```
 **Vastaus:** Kohdan b) tulos on $45\,\text{m}$, kaksi merkitsevää numeroa kuten tehossa $0{,}20\,\text{W}$ ja etäisyydessä $8{,}0\,\text{m}$. Tulos $44{,}6\,\text{m}$ pyöristetään ylöspäin, turvalliselle puolelle, koska $70\,\text{dB}$ on raja-arvo. Kohdan a) yhteistaso on noin $85\,\text{dB}$.
-**Järkevyys:** Taso laskee yhteistasosta $84{,}9\,\text{dB}$ tasoon $70\,\text{dB}$ eli $14{,}9\,\text{dB}$, mikä on noin $2{,}5$ etäisyyden kaksinkertaistumista ($6{,}0\,\text{dB}$ kutakin kohti), ja $8{,}0\,\text{m} \cdot 2^{2{,}5} \approx 45\,\text{m}$. Yhteistaso on suurempi kuin kumpikaan lähde yksin ($84{,}0\,\text{dB}$ ja $78{,}0\,\text{dB}$) mutta pienempi kuin niiden desibelien summa. **Perustelu (kohta c):** Kuulon intensiteettialue on valtava: kuulokynnyksestä kipukynnykseen intensiteetti kasvaa kertoimella $10^{12}$. Logaritminen asteikko pakkaa tämän alueen lukuihin $0\,\text{dB}$–$120\,\text{dB}$, ja kuulo erottaa likimain suhteellisia eroja, joten sama intensiteetin kerroin, esimerkiksi kaksinkertaistuminen, tuntuu suunnilleen samalta muutokselta (noin $3\,\text{dB}$) hiljaisella ja kovalla äänellä.
+**Järkevyys:** Taso laskee yhteistasosta $84{,}9\,\text{dB}$ tasoon $70\,\text{dB}$ eli $14{,}9\,\text{dB}$, mikä on noin $2{,}5$ etäisyyden kaksinkertaistumista ($6{,}0\,\text{dB}$ kutakin kohti), ja $8{,}0\,\text{m} \cdot 2^{2{,}5} \approx 45\,\text{m}$.
+
+Yhteistaso on suurempi kuin kumpikaan lähde yksin ($84{,}0\,\text{dB}$ ja $78{,}0\,\text{dB}$) mutta pienempi kuin niiden desibelien summa. **Perustelu (kohta c):** Kuulon intensiteettialue on valtava: kuulokynnyksestä kipukynnykseen intensiteetti kasvaa kertoimella $10^{12}$.
+
+Logaritminen asteikko pakkaa tämän alueen lukuihin $0\,\text{dB}$–$120\,\text{dB}$, ja kuulo erottaa likimain suhteellisia eroja, joten sama intensiteetin kerroin, esimerkiksi kaksinkertaistuminen, tuntuu suunnilleen samalta muutokselta (noin $3\,\text{dB}$) hiljaisella ja kovalla äänellä.
 
 ## fy5-15-L1-09
 **Annettu:** kuvasta taso etäisyydellä $r = 4{,}0\,\text{m}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$

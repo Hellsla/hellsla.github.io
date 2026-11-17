@@ -94,7 +94,9 @@ $85\,\text{dB} - 79\,\text{dB} = 6\,\text{dB}$
 
 $79\,\text{dB} - 74\,\text{dB} = 5\,\text{dB}$
 
-Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi myöskään viimeisen välin pienempi lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$. Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$, mutta epävarmuuden vuoksi todellinen taso voi olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä. Toiminta-arvo ei myöskään ole turvallisuusraja, joten mittaus ei osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
+Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikkeama $1\,\text{dB}$ on pienempi kuin erotuksen epävarmuus $2\,\text{dB}$. Siksi myöskään viimeisen välin pienempi lasku ei osoita, että ääni vaimenisi kauempana hitaammin. Taso ei puolitu: puolet $91\,\text{dB}$:stä olisi noin $46\,\text{dB}$, kun mitattiin $85\,\text{dB}$.
+
+Etäisyydellä $4{,}0\,\text{m}$ lukema on $85\,\text{dB}$, mutta epävarmuuden vuoksi todellinen taso voi olla $84$–$86\,\text{dB}$, joten ylempi toiminta-arvo voi ylittyä. Toiminta-arvo ei myöskään ole turvallisuusraja, joten mittaus ei osoita $8\,\text{h}$:n työskentelyä turvalliseksi.
 
 ## fy5-16-L3-01
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
@@ -119,7 +121,9 @@ Kaikki erotukset ovat odotetun $6{,}0\,\text{dB}$:n tuntumassa, ja suurin poikke
 ## fy5-16-L3-03
 **Kysytty:** miksi vastamelu vaimentaa matalaa huminaa paremmin kuin puhetta
 **Periaate:** Vastamelu kumoaa melun heikentävällä interferenssillä vain, jos se on korvan kohdalla vastakkaisessa vaiheessa. Aallonpituus $\lambda = \dfrac{v}{f}$ ja jaksonaika $T = \dfrac{1}{f}$ kertovat, kuinka tarkasti ajoituksen ja paikan on osuttava.
-**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna, ja elektroniikalla on aikaa muodostaa vastakkainen signaali, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$. Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon, jolloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, kun taas humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
+**Mallivastaus:** Huminan aallonpituus on $\lambda = \dfrac{343\,\text{m/s}}{100\,\text{Hz}} \approx 3{,}4\,\text{m}$ ja jaksonaika $10\,\text{ms}$. Koko korvakäytävä ja kuvun sisus ovat pieniä aallonpituuteen verrattuna, ja elektroniikalla on aikaa muodostaa vastakkainen signaali, joten vastamelu pysyy korvan kohdalla vastakkaisessa vaiheessa. Puheen aallonpituudet ovat $\dfrac{343\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$ ja $\dfrac{343\,\text{m/s}}{1000\,\text{Hz}} \approx 34\,\text{cm}$, ja jaksonaika on enintään $1\,\text{ms}$.
+
+Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta paljon, jolloin aallot eivät enää kumoa toisiaan. Lisäksi puhe vaihtelee nopeasti, kun taas humina on tasaista. Korkeita ääniä vaimentavat lähinnä kuulokkeiden kuvut.
 
 ## fy5-16-L1-06
 **Kysytty:** mikä toimenpide lyhentää luokan jälkikaiunta-aikaa
@@ -310,4 +314,6 @@ Aineiston kolme viitearvoa mahtuvat $7\,\text{dB}$:n sisään, ja silti ne erott
 
 Väite kuulostaa uskottavalta, koska $3\,\text{dB}$:n muutos kuulostaa korvaan pieneltä. Kuulon rasitus riippuu kuitenkin energiasta eikä siitä, miltä ääni kuulostaa.
 
-**Järkevyys:** Luvun nyrkkisääntö antaa saman: $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti, $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo eikä turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin. Malli ei myöskään kata iskumelua: aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen, joten tarkempi tulos ei olisi perusteltu.
+**Järkevyys:** Luvun nyrkkisääntö antaa saman: $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti, $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo eikä turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin.
+
+Malli ei myöskään kata iskumelua: aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen, joten tarkempi tulos ei olisi perusteltu.

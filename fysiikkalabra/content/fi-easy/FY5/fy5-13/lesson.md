@@ -394,7 +394,9 @@ Kitaran A-kielen värähtelevä osa satulasta tallaan on $0{,}650\,\text{m}$ pit
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kielen pituus on $L = 0{,}650\,\text{m}$ ja perustaajuus $f_1 = 110\,\text{Hz}$. Uusi perustaajuus on $f_1' = 165\,\text{Hz}$. Kysytään aallon nopeutta $v$ kielessä ja värähtelevän osan uutta pituutta $L'$.
+**Tunnetut ja kysytty.** Kielen pituus on $L = 0{,}650\,\text{m}$ ja perustaajuus $f_1 = 110\,\text{Hz}$. Uusi perustaajuus on $f_1' = 165\,\text{Hz}$.
+
+Kysytään aallon nopeutta $v$ kielessä ja värähtelevän osan uutta pituutta $L'$.
 
 <!-- vaihe -->
 

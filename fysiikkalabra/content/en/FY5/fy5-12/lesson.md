@@ -253,7 +253,9 @@ Two loudspeakers are connected to the same signal generator, so they play in pha
 
 <!-- vaihe -->
 
-**Given and find.** Frequency $f = 680\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$, distances $s_1 = 4.25\,\text{m}$ and $s_2 = 3.00\,\text{m}$. We are asked whether the interference at the listener is constructive or destructive.
+**Given and find.** Frequency $f = 680\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$, distances $s_1 = 4.25\,\text{m}$ and $s_2 = 3.00\,\text{m}$.
+
+We are asked whether the interference at the listener is constructive or destructive.
 
 <!-- vaihe -->
 

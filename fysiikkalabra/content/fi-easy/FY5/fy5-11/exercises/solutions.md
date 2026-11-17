@@ -51,7 +51,9 @@
 ## fy5-11-L1-07
 **Kysytty:** miten taajuuden kaksinkertaistaminen muuttaa aallon taipumista raon takana
 **Periaate:** Aallon nopeus pysyy samana. Yhtälön $v = f\lambda$ mukaan aallonpituus pienenee, kun taajuus kasvaa. Diffraktio eli aallon taipuminen on sitä voimakkaampaa, mitä kapeampi rako on aallonpituuteen verrattuna.
-**Mallivastaus:** Uusi aallonpituus on puolet entisestä eli $2{,}0\,\text{cm}$. Raon leveys aallonpituuteen verrattuna kasvaa suhteesta $\tfrac{3{,}0\,\text{cm}}{4{,}0\,\text{cm}} = 0{,}75$ suhteeseen $\tfrac{3{,}0\,\text{cm}}{2{,}0\,\text{cm}} = 1{,}5$. Rako on siis suhteessa leveämpi, ja taipuminen heikkenee. Taipuminen on kuitenkin yhä selvää, koska rako on vielä aallonpituuden kokoinen. Aallon energia ei vaikuta taipumisen voimakkuuteen. Myöskään raon leveys yksin ei ratkaise sitä. Ratkaisevaa on, kuinka leveä rako on aallonpituuteen verrattuna. Aalto kulkee raosta kummallakin taajuudella.
+**Mallivastaus:** Uusi aallonpituus on puolet entisestä eli $2{,}0\,\text{cm}$. Raon leveys aallonpituuteen verrattuna kasvaa suhteesta $\tfrac{3{,}0\,\text{cm}}{4{,}0\,\text{cm}} = 0{,}75$ suhteeseen $\tfrac{3{,}0\,\text{cm}}{2{,}0\,\text{cm}} = 1{,}5$. Rako on siis suhteessa leveämpi, ja taipuminen heikkenee. Taipuminen on kuitenkin yhä selvää, koska rako on vielä aallonpituuden kokoinen.
+
+Aallon energia ei vaikuta taipumisen voimakkuuteen. Myöskään raon leveys yksin ei ratkaise sitä. Ratkaisevaa on, kuinka leveä rako on aallonpituuteen verrattuna. Aalto kulkee raosta kummallakin taajuudella.
 
 ## fy5-11-L1-08
 **Annettu:** pohjan syvyys $d = 36\,\text{m}$, äänen nopeus vedessä $v = 1500\,\text{m/s}$
@@ -135,7 +137,11 @@ $$
 \end{aligned}
 $$
 **Vastaus:** a) $\lambda = 1{,}8\,\text{cm}$. b) Rako on $8{,}0$ kertaa aallonpituuden levyinen, kaksi merkitsevää numeroa kuten taajuudessa ja nopeudessa. c) Aalto taipuu voimakkaasti, kun $\tfrac{b}{\lambda}$ on enintään noin $2$. Aalto taipuu vähän, kun suhde on selvästi suurempi.
-**Järkevyys:** Muiden rakojen suhteet ovat $\tfrac{b}{\lambda} = 0{,}5$; $1{,}0$; $2{,}0$ ja $4{,}0$. Aalto leviää joka suuntaan, kun $\tfrac{b}{\lambda} \leq 1$. Se taipuu selvästi, kun suhde on $2{,}0$. Se taipuu vain vähän, kun suhde on $4{,}0$ tai suurempi. c) Suhteet $0{,}5$; $1{,}0$; $2{,}0$; $4{,}0$ ja $8{,}0$ vastaavat havaintoja ”joka suuntaan”, ”joka suuntaan”, ”leviää selvästi”, ”vähän taipumista” ja ”lähes suora keila”. Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonpituuteen verrattuna, sitä vähemmän aalto taipuu.
+**Järkevyys:** Muiden rakojen suhteet ovat $\tfrac{b}{\lambda} = 0{,}5$; $1{,}0$; $2{,}0$ ja $4{,}0$. Aalto leviää joka suuntaan, kun $\tfrac{b}{\lambda} \leq 1$. Se taipuu selvästi, kun suhde on $2{,}0$. Se taipuu vain vähän, kun suhde on $4{,}0$ tai suurempi.
+
+c) Suhteet $0{,}5$; $1{,}0$; $2{,}0$; $4{,}0$ ja $8{,}0$ vastaavat havaintoja ”joka suuntaan”, ”joka suuntaan”, ”leviää selvästi”, ”vähän taipumista” ja ”lähes suora keila”.
+
+Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonpituuteen verrattuna, sitä vähemmän aalto taipuu.
 
 ## fy5-11-L2-07
 **Annettu:** tulevan ja heijastuneen säteen välinen kulma $\varphi = 64^\circ$
@@ -150,7 +156,9 @@ $$
 ## fy5-11-L3-01
 **Kysytty:** miksi matala ääni kuuluu nurkan taakse mutta korkea ei, perusteltuna diffraktiolla ja aallonpituuksilla
 **Periaate:** Diffraktio on voimakasta, kun aukon leveys on aallonpituuden suuruinen tai pienempi. Se on heikkoa, kun aukko on monta aallonpituutta leveä. Aallonpituus saadaan yhtälöstä $\lambda = \tfrac{v}{f}$ (luku *Aaltojen synty ja eteneminen*).
-**Mallivastaus:** Basson aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{100\,\text{Hz}} = 3{,}43\,\text{m}$. Ikkuna on siis vain noin neljäsosa aallonpituudesta ($b/\lambda = \tfrac{0{,}80\,\text{m}}{3{,}43\,\text{m}} \approx 0{,}23$). Ikkuna toimii silloin kuin yksi alkeisaallon lähde. Ääni leviää ikkunasta joka suuntaan, myös nurkan taakse. Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \approx 6{,}9\,\text{cm}$, joten ikkuna on noin $12$ aallonpituutta leveä. Siitä ääni jatkaa lähes suorana keilana eteenpäin. Nurkan taakse se taipuu vain vähän. Siksi nurkan takana kuuluu enimmäkseen bassoa.
+**Mallivastaus:** Basson aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{100\,\text{Hz}} = 3{,}43\,\text{m}$. Ikkuna on siis vain noin neljäsosa aallonpituudesta ($b/\lambda = \tfrac{0{,}80\,\text{m}}{3{,}43\,\text{m}} \approx 0{,}23$). Ikkuna toimii silloin kuin yksi alkeisaallon lähde. Ääni leviää ikkunasta joka suuntaan, myös nurkan taakse.
+
+Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \approx 6{,}9\,\text{cm}$, joten ikkuna on noin $12$ aallonpituutta leveä. Siitä ääni jatkaa lähes suorana keilana eteenpäin. Nurkan taakse se taipuu vain vähän. Siksi nurkan takana kuuluu enimmäkseen bassoa.
 
 ## fy5-11-L3-02
 **Annettu:** merkkien etäisyys $d = 0{,}40\,\text{m}$, viive $\Delta t = 0{,}50\,\text{s}$, aallon nopeus $v = 0{,}30\,\text{m/s}$
@@ -199,7 +207,9 @@ $$
 \end{aligned}
 $$
 **Vastaus:** pohja on jyrkin välillä $x = 40\,\text{m}$ … $60\,\text{m}$. Sen kaltevuuskulma on $35^\circ$, kaksi merkitsevää numeroa kuten viiveiden erotus $90\,\text{ms} - 71\,\text{ms} = 19\,\text{ms}$. Syvin kohta on $x = 80\,\text{m}$, syvyys noin $72\,\text{m}$.
-**c) Perustelut:** Pulssi kulkee alas pohjaan ja takaisin pintaan. Mitattu viive vastaa siis kaksinkertaista syvyyttä. Siksi $d = \tfrac{vt}{2}$. Viivettä ei saa kertoa nopeudella sellaisenaan. Mittauspisteiden välistä tiedetään vain, että syvyys on päätepisteiden välillä, koska pohjan oletetaan olevan suora. Oletus suorasta pohjasta pettää eniten siellä, missä rinne muuttuu nopeasti. Jyrkässä rinteessä kynnys tai kuoppa voi jäädä pisteiden väliin. Tiheämmät mittaukset antavat tarkemman profiilin. Malli olettaa, että pulssi kulkee pystysuoraan alas ja kaiku palaa suoraan alta. Jyrkässä rinteessä oletus ei päde. Ensimmäinen kaiku palaa pohjan lähimmästä pisteestä eikä suoraan alta. Siksi malli aliarvioi syvyyden siinä kohdassa.
+**c) Perustelut:** Pulssi kulkee alas pohjaan ja takaisin pintaan. Mitattu viive vastaa siis kaksinkertaista syvyyttä. Siksi $d = \tfrac{vt}{2}$. Viivettä ei saa kertoa nopeudella sellaisenaan. Mittauspisteiden välistä tiedetään vain, että syvyys on päätepisteiden välillä, koska pohjan oletetaan olevan suora. Oletus suorasta pohjasta pettää eniten siellä, missä rinne muuttuu nopeasti.
+
+Jyrkässä rinteessä kynnys tai kuoppa voi jäädä pisteiden väliin. Tiheämmät mittaukset antavat tarkemman profiilin. Malli olettaa, että pulssi kulkee pystysuoraan alas ja kaiku palaa suoraan alta. Jyrkässä rinteessä oletus ei päde. Ensimmäinen kaiku palaa pohjan lähimmästä pisteestä eikä suoraan alta. Siksi malli aliarvioi syvyyden siinä kohdassa.
 **Järkevyys:** Muiden välien kulmat ovat $12{,}5^\circ$; $22{,}1^\circ$; $14{,}5^\circ$ ja $23{,}9^\circ$ (pohja nousee). Kaikki ovat alle $35^\circ$. Tarkistus: $\tan 35^\circ = 0{,}70$, ja $0{,}70 \cdot 20{,}0\,\text{m} = 14\,\text{m}$ vastaa syvyyden muutosta.
 
 ## fy5-11-L3-05
@@ -221,12 +231,16 @@ $$
 \frac{b}{\lambda_\text{FM}} = \frac{600\,\text{m}}{3{,}00\,\text{m}} = 200
 $$
 **Vastaus:** vuori on $2{,}0 \cdot 10^2$ kertaa FM-aallonpituuden levyinen, kaksi merkitsevää numeroa kuten vuoren leveydessä.
-**c) Perustelut:** AM-radion aallonpituus $333\,\text{m}$ on samaa kokoluokkaa kuin vuoren leveys, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1{,}8$. Siksi diffraktio on voimakasta ja AM-lähetys taipuu vuoren taakse laaksoon. FM-radion aallonpituus on vain $\tfrac{1}{200}$ vuoren leveydestä. Digi-tv:llä $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0{,}500\,\text{m}} = 1200$. Niiden diffraktio on heikkoa: aallot etenevät lähes suoraan, ja vuoren taakse jää radiovarjo. Näkyvän valon aallonpituus $550\,\text{nm} = 5{,}5 \cdot 10^{-7}\,\text{m}$ on vielä paljon lyhyempi, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$. Siksi valo etenee käytännössä suoraan eikä taivu vuoren taakse.
+**c) Perustelut:** AM-radion aallonpituus $333\,\text{m}$ on samaa kokoluokkaa kuin vuoren leveys, $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{333\,\text{m}} = 1{,}8$. Siksi diffraktio on voimakasta ja AM-lähetys taipuu vuoren taakse laaksoon. FM-radion aallonpituus on vain $\tfrac{1}{200}$ vuoren leveydestä. Digi-tv:llä $\tfrac{b}{\lambda} = \tfrac{600\,\text{m}}{0{,}500\,\text{m}} = 1200$.
+
+Niiden diffraktio on heikkoa: aallot etenevät lähes suoraan, ja vuoren taakse jää radiovarjo. Näkyvän valon aallonpituus $550\,\text{nm} = 5{,}5 \cdot 10^{-7}\,\text{m}$ on vielä paljon lyhyempi, $\tfrac{b}{\lambda} \approx 1 \cdot 10^9$. Siksi valo etenee käytännössä suoraan eikä taivu vuoren taakse.
 **Järkevyys:** Mitä korkeampi taajuus, sitä lyhyempi aallonpituus ja sitä heikompi diffraktio: $333\,\text{m} > 3{,}00\,\text{m} > 0{,}500\,\text{m} > 5{,}5 \cdot 10^{-7}\,\text{m}$. Tarkistus: $333\,\text{m} \cdot 9{,}00 \cdot 10^5\,\text{Hz} = 3{,}00 \cdot 10^8\,\text{m/s}$.
 
 ## fy5-11-L2-08
 **Kysytty:** asetelmien järjestys sen mukaan, kuinka voimakkaasti aalto leviää raon takana, heikoimmasta voimakkaimpaan.
-**Periaate:** Diffraktion voimakkuus riippuu siitä, kuinka leveä rako on aallonpituuteen verrattuna. Diffraktio tarkoittaa aallon leviämistä raon tai esteen reunalla. Kun rako on monta aallonpituutta leveä, aalto jatkaa lähes suorana ja kaartuu vain reunoilta. Kun $b \approx \lambda$ tai $b < \lambda$, aalto leviää paljon. Vertaillaan siis suhdetta $\lambda : b$. Mitä suurempi suhde on, sitä voimakkaammin aalto leviää. Aallonpituus saadaan perusyhtälöstä $\lambda = \tfrac{v}{f}$. Leveydet muutetaan samaan yksikköön.
+**Periaate:** Diffraktion voimakkuus riippuu siitä, kuinka leveä rako on aallonpituuteen verrattuna. Diffraktio tarkoittaa aallon leviämistä raon tai esteen reunalla. Kun rako on monta aallonpituutta leveä, aalto jatkaa lähes suorana ja kaartuu vain reunoilta.
+
+Kun $b \approx \lambda$ tai $b < \lambda$, aalto leviää paljon. Vertaillaan siis suhdetta $\lambda : b$. Mitä suurempi suhde on, sitä voimakkaammin aalto leviää. Aallonpituus saadaan perusyhtälöstä $\lambda = \tfrac{v}{f}$. Leveydet muutetaan samaan yksikköön.
 **Mallivastaus:** Aallonpituudet ovat
 
 $\lambda_\text{A} = \dfrac{0{,}30\,\text{m/s}}{10\,\text{Hz}} = 3{,}0\,\text{cm}$

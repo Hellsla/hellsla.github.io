@@ -51,8 +51,12 @@
 ## fy5-4-L2-01
 **Given:** combined mass $m = 80\,\text{kg}$, speed $v = 8.0\,\text{m/s}$, radius of the arc at the bottom of the dip $r = 16\,\text{m}$; $g = 9.81\,\text{m/s}^2$; air resistance and rolling resistance are neglected
 **Find:** the support force $N$ of the road in $\text{kN}$
-**Principle:** At the bottom of the dip the cyclist and the bicycle are for a moment on a circular path whose centre is above the road. By Newton's second law the net force points up towards the centre and equals $m\tfrac{v^2}{r}$. In the vertical direction only the weight and the support force of the road act on them, so the support force must be greater than the weight.
-**Force diagram:** The cyclist and the bicycle as one object, a rectangle on the road, $y$ up. The weight $\overline{G}$ from the centre downwards and the support force $\overline{N}$ of the road from the bottom face upwards, longer than the weight. The acceleration separately as a thin orange arrow up towards the centre of the arc.
+**Principle:** At the bottom of the dip the cyclist and the bicycle are for a moment on a circular path whose centre is above the road. By Newton's second law the net force points up towards the centre and equals $m\tfrac{v^2}{r}$.
+
+In the vertical direction only the weight and the support force of the road act on them, so the support force must be greater than the weight.
+**Force diagram:** The cyclist and the bicycle as one object, a rectangle on the road, $y$ up. The weight $\overline{G}$ from the centre downwards and the support force $\overline{N}$ of the road from the bottom face upwards, longer than the weight.
+
+The acceleration separately as a thin orange arrow up towards the centre of the arc.
 ```voimakuvio
 pinta 0
 G 784,8
@@ -80,7 +84,9 @@ akselit 0
 ## fy5-4-L2-03
 **Given:** $m = 1200\,\text{kg}$, $v = 12\,\text{m/s}$, radius of the arc at the top $r = 30\,\text{m}$; $g = 9.81\,\text{m/s}^2$; air resistance and rolling resistance are neglected
 **Find:** the support force $N$ of the road in $\text{kN}$
-**Principle:** At the top of the hill the car is for a moment on a circular path whose centre is below the road. By Newton's second law the net force points down towards the centre and equals $m\tfrac{v^2}{r}$. In the vertical direction only the weight and the support force act on the car, so the weight is greater than the support force.
+**Principle:** At the top of the hill the car is for a moment on a circular path whose centre is below the road. By Newton's second law the net force points down towards the centre and equals $m\tfrac{v^2}{r}$.
+
+In the vertical direction only the weight and the support force act on the car, so the weight is greater than the support force.
 **Force diagram:** The car as a rectangle on the road, $y$ up. The weight $\overline{G}$ from the centre downwards and the support force $\overline{N}$ of the road from the bottom face upwards, shorter than the weight. The acceleration separately as a thin orange arrow down towards the centre of the arc.
 ```voimakuvio
 pinta 0
@@ -110,7 +116,9 @@ akselit 0
 **Given:** radius of the bend $r = 60\,\text{m}$, coefficient of static friction $\mu_0 = 0.10$, horizontal road; $g = 9.81\,\text{m/s}^2$; air resistance and rolling resistance are neglected
 **Find:** the greatest speed $v$ in $\text{km/h}$
 **Principle:** In a bend the only horizontal force on the car is the static friction of the road, and by Newton's second law it must be $m\tfrac{v^2}{r}$ towards the centre. Static friction can be at most $\mu_0 N$. At the greatest speed the friction is at its maximum.
-**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up. The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, one tenth of the length of the weight. The acceleration separately towards the centre.
+**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up.
+
+The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, one tenth of the length of the weight. The acceleration separately towards the centre.
 ```voimakuvio
 pinta 0
 G 100
@@ -128,8 +136,12 @@ akselit 0
 ## fy5-4-L3-02
 **Given:** $m = 0.40\,\text{kg}$, $r = 0.80\,\text{m}$, greatest tension of the string $T_\text{max} = 25\,\text{N}$, the table is smooth and horizontal
 **Find:** the greatest rotation frequency $f$ in $\text{Hz}$
-**Principle:** The puck is in uniform circular motion. In the plane of the table only the tension of the string acts on it, so by Newton's second law the tension is $m\tfrac{v^2}{r}$ towards the peg. The greater the speed, the greater the tension, so the greatest allowed tension gives the greatest speed. The rotation frequency $f$ is the number of revolutions per second, so in one second the puck travels the distance $f \cdot 2\pi r$, that is $v = 2\pi r f$.
-**Force diagram:** The puck seen from the side as a rectangle on the table, the peg on the right, $x$ towards the peg and $y$ up. The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ of the table from the bottom face upwards and equally long, and the tension $\overline{T}$ of the string from the right side towards the peg. The acceleration separately towards the peg.
+**Principle:** The puck is in uniform circular motion. In the plane of the table only the tension of the string acts on it, so by Newton's second law the tension is $m\tfrac{v^2}{r}$ towards the peg.
+
+The greater the speed, the greater the tension, so the greatest allowed tension gives the greatest speed. The rotation frequency $f$ is the number of revolutions per second, so in one second the puck travels the distance $f \cdot 2\pi r$, that is $v = 2\pi r f$.
+**Force diagram:** The puck seen from the side as a rectangle on the table, the peg on the right, $x$ towards the peg and $y$ up.
+
+The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ of the table from the bottom face upwards and equally long, and the tension $\overline{T}$ of the string from the right side towards the peg. The acceleration separately towards the peg.
 ```voimakuvio
 pinta 0
 G 3,924
@@ -148,7 +160,9 @@ akselit 0
 **Given:** design speed $v = 80\,\text{km/h}$, sideways friction at most $0.25\,mg$, horizontal road; $g = 9.81\,\text{m/s}^2$; air resistance and rolling resistance are neglected
 **Find:** the smallest radius $r$ of the bend in $\text{m}$
 **Principle:** In a bend the only horizontal force on the car is the friction of the road, and by Newton's second law it must be $m\tfrac{v^2}{r}$ towards the centre. The smaller the radius, the greater the friction needed, so the smallest allowed radius is found when the friction is the greatest allowed.
-**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up. The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, a quarter of the length of the weight. The acceleration separately towards the centre.
+**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up.
+
+The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, a quarter of the length of the weight. The acceleration separately towards the centre.
 ```voimakuvio
 pinta 0
 G 100
@@ -166,12 +180,16 @@ akselit 0
 ## fy5-4-L1-06
 **Find:** what explains why the passenger is pressed against the door in the bend.
 **Principle:** In uniform circular motion the direction of the velocity changes, so the acceleration and the net force point towards the centre of the bend. A force is needed to make the passenger turn with the car. A force pointing outwards is not needed, and there is none.
-**Model answer:** The body of the passenger tends to keep going straight when the car turns. The door pushes the passenger inwards and forces him into the bend, and this force is felt as being pressed outwards against the door. The claim of a centrifugal force is wrong, because no object pulls the passenger outwards. The claim that there is no sideways force is wrong, because the direction of the velocity changes while the speed stays the same. The friction between the seat and the passenger opposes sliding outwards, so it points inwards.
+**Model answer:** The body of the passenger tends to keep going straight when the car turns. The door pushes the passenger inwards and forces him into the bend, and this force is felt as being pressed outwards against the door.
+
+The claim of a centrifugal force is wrong, because no object pulls the passenger outwards. The claim that there is no sideways force is wrong, because the direction of the velocity changes while the speed stays the same. The friction between the seat and the passenger opposes sliding outwards, so it points inwards.
 
 ## fy5-4-L1-07
 **Find:** in which direction the acceleration of a cyclist riding steadily round a bend points.
 **Principle:** Acceleration is the change of the velocity divided by the time, and velocity is a vector. When the speed stays the same but the direction of the velocity turns towards the inside of the bend, the change of the velocity and the acceleration point towards the centre of the path.
-**Model answer:** The acceleration points towards the centre of the path, because the direction of the velocity keeps turning inwards. It is perpendicular to the velocity, so it changes only the direction and not the speed. An acceleration in the direction of motion would change the speed, which is not the case. The acceleration is not zero, because the direction of the velocity changes. An acceleration pointing outwards is not correct, even though the cyclist feels as if he were pushed out.
+**Model answer:** The acceleration points towards the centre of the path, because the direction of the velocity keeps turning inwards. It is perpendicular to the velocity, so it changes only the direction and not the speed.
+
+An acceleration in the direction of motion would change the speed, which is not the case. The acceleration is not zero, because the direction of the velocity changes. An acceleration pointing outwards is not correct, even though the cyclist feels as if he were pushed out.
 
 ## fy5-4-L1-08
 **Given:** original centripetal acceleration $a_1 = 1.0\,\text{m/s}^2$, new speed $v_2 = 3\,v_1$, the same bend, that is the same radius $r$
@@ -186,8 +204,12 @@ akselit 0
 ## fy5-4-L2-05
 **Given:** radius $r = 0.80\,\text{m}$; from the table $(v, F)$ pairs in the range $v = 3.0\ldots 7.0\,\text{m/s}$ and $F = 0.28\ldots 1.53\,\text{N}$; sample data
 **Find:** the mass $m$ of the stopper in $\text{g}$
-**Principle:** The stopper is in uniform circular motion on a smooth horizontal table. The weight and the support force of the table cancel each other, so the horizontal string gives the only force pointing towards the centre. By Newton's second law $F = m\tfrac{v^2}{r}$, so $F$ is directly proportional to $v^2$ and the slope is $\tfrac{m}{r}$. The line goes through the origin, because at rest ($v = 0$) the string does not pull.
-**Reading the graph:** Calculate $v^2$ for each row: $9.0$, $16$, $25$, $36$ and $49\,\text{m}^2/\text{s}^2$. The points $(v^2, F)$ lie close to a line but not exactly on it, because the measurements have a little scatter. The line was drawn by eye through the origin between the points, and it happens to pass through the point $(49\,\text{m}^2/\text{s}^2,\ 1.53\,\text{N})$. The slope is read from the line at two points far apart: the origin and this point. Check: the mean of the quantities $F/v^2$ is $0.0312\,\text{kg/m}$, and the least-squares fit gives the same mass, $25.0\,\text{g}$.
+**Principle:** The stopper is in uniform circular motion on a smooth horizontal table. The weight and the support force of the table cancel each other, so the horizontal string gives the only force pointing towards the centre.
+
+By Newton's second law $F = m\tfrac{v^2}{r}$, so $F$ is directly proportional to $v^2$ and the slope is $\tfrac{m}{r}$. The line goes through the origin, because at rest ($v = 0$) the string does not pull.
+**Reading the graph:** Calculate $v^2$ for each row: $9.0$, $16$, $25$, $36$ and $49\,\text{m}^2/\text{s}^2$. The points $(v^2, F)$ lie close to a line but not exactly on it, because the measurements have a little scatter. The line was drawn by eye through the origin between the points, and it happens to pass through the point $(49\,\text{m}^2/\text{s}^2,\ 1.53\,\text{N})$.
+
+The slope is read from the line at two points far apart: the origin and this point. Check: the mean of the quantities $F/v^2$ is $0.0312\,\text{kg/m}$, and the least-squares fit gives the same mass, $25.0\,\text{g}$.
 **Formula:** $k = \dfrac{\Delta F}{\Delta(v^2)}$ and $k = \dfrac{m}{r}$, so $m = k\,r$
 **Conversions:** $1\,\text{kg} = 1000\,\text{g}$, so $m$ is finally converted to grams.
 **Substitution:** $k = \dfrac{1.53\,\text{N} - 0\,\text{N}}{49\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0.03122\,\text{kg/m}$ and $m = 0.03122\,\tfrac{\text{kg}}{\text{m}}\cdot 0.80\,\text{m} = 0.02498\,\text{kg} = 24.98\,\text{g}$
@@ -198,7 +220,9 @@ akselit 0
 **Given:** from the table $(r, v)$ pairs $(20\,\text{m},\ 10.4\,\text{m/s})$, $(30\,\text{m},\ 12.6\,\text{m/s})$, $(40\,\text{m},\ 14.8\,\text{m/s})$ and $(50\,\text{m},\ 16.3\,\text{m/s})$; $g = 9.81\,\text{m/s}^2$; the track is horizontal, air resistance is neglected; sample data
 **Find:** the mean of the coefficient of static friction $\mu_0$, $\mu_{0,\text{av}}$ (no unit)
 **Principle:** The only horizontal force on the car is the static friction of the road, and by Newton's second law it must be $m\tfrac{v^2}{r}$ towards the centre. Just before sliding the friction is at its maximum, $\mu_0 N$. In the vertical direction the car does not accelerate, so $N = mg$.
-**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up. The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, slightly over half of the length of the weight. The acceleration separately towards the centre.
+**Force diagram:** The car seen from behind as a rectangle, the centre of the bend on the right, $x$ towards the centre and $y$ up.
+
+The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face upwards and equally long, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face towards the centre, slightly over half of the length of the weight. The acceleration separately towards the centre.
 ```voimakuvio
 pinta 0
 G 100
@@ -216,17 +240,23 @@ akselit 0
 ## fy5-4-L2-07
 **Given:** $m = 850\,\text{kg}$, $v = 18\,\text{m/s}$, $r = 75\,\text{m}$, the road is horizontal; the result of the student $7344\,\text{N}$
 **Find:** a) the error of the student, b) the friction force $F_\mu$ in $\text{kN}$
-**Principle:** The car is in uniform circular motion, so by Newton's second law the sum of the real forces on the car points towards the centre and is $m\tfrac{v^2}{r}$. In the horizontal direction the only real force is the friction of the road, so the friction is this sum. There is no real centrifugal force, so it is not drawn in the force diagram and not included in the calculation.
+**Principle:** The car is in uniform circular motion, so by Newton's second law the sum of the real forces on the car points towards the centre and is $m\tfrac{v^2}{r}$.
+
+In the horizontal direction the only real force is the friction of the road, so the friction is this sum. There is no real centrifugal force, so it is not drawn in the force diagram and not included in the calculation.
 **Formula:** $x$ (towards the centre): $F_\mu = m\dfrac{v^2}{r}$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4.32\,\text{m/s}^2 = 3672\,\text{N} = 3.672\,\text{kN}$
 **Answer:** $3.7\,\text{kN}$ towards the centre of the bend, two significant figures like the speed $18\,\text{m/s}$ and the radius $75\,\text{m}$.
 **Reasonableness:** The centripetal acceleration is $4.32\,\text{m/s}^2$, about $0.44\,g$, and the weight of the car is about $8.3\,\text{kN}$. So the friction must be about $0.44$ times the weight, which is possible on wet asphalt. The result of the student would require a friction about $0.88$ times the weight, and that would already require very good grip.
-**Model answer on the error:** The student drew a centrifugal force pointing outwards on the car and added it to the friction. There is no such real force, because no object pulls the car outwards. The expression $m\tfrac{v^2}{r}$ is the magnitude of the net force and not a force of its own, and the net force comes from the friction alone. So the friction is $m\tfrac{v^2}{r} = 3672\,\text{N}$, and the doubled value $7344\,\text{N}$ calculated by the student is twice too large.
+**Model answer on the error:** The student drew a centrifugal force pointing outwards on the car and added it to the friction. There is no such real force, because no object pulls the car outwards.
+
+The expression $m\tfrac{v^2}{r}$ is the magnitude of the net force and not a force of its own, and the net force comes from the friction alone. So the friction is $m\tfrac{v^2}{r} = 3672\,\text{N}$, and the doubled value $7344\,\text{N}$ calculated by the student is twice too large.
 
 ## fy5-4-L2-08
 **Find:** which of the four free-body diagrams correctly shows the forces acting on the car at the topmost point of the loop.
-**Principle:** The body chosen is the car. The Earth (weight $\overline{G}$) and the track (support force $\overline{N}$) act on it; air resistance and friction are neglected. At the topmost point the centre of the loop is below the car, so the normal acceleration and, by Newton's second law, the net force point down. The track is above the car, so its support force pushes the car away from the track, that is, down. There is no real centrifugal force, and velocity is not a force.
+**Principle:** The body chosen is the car. The Earth (weight $\overline{G}$) and the track (support force $\overline{N}$) act on it; air resistance and friction are neglected. At the topmost point the centre of the loop is below the car, so the normal acceleration and, by Newton's second law, the net force point down.
+
+The track is above the car, so its support force pushes the car away from the track, that is, down. There is no real centrifugal force, and velocity is not a force.
 **Model answer:** The correct one is free-body diagram C. Let the positive direction be down towards the centre. Then
 
 $G + N = m a_\text{n}$
@@ -235,7 +265,9 @@ $G + N = m \cdot 1.5\,g$
 
 $N = 1.5\,mg - mg$, that is, $N = 0.5\,mg$
 
-The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$. In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
+The support force points down and is half of the weight, as in diagram C. In diagram A the support force has been drawn upwards like that of a floor; then the net force would be $G - N = 0.5\,G$ and not $1.5\,G$.
+
+In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the net force although the car accelerates, and no object acts with such a force. In diagram D the velocity has been drawn as a force, although no force acts on the car in the direction of motion.
 
 ## fy5-4-L2-09
 **Given:** the point of the graph $v = 15\,\text{m/s}$, $a_\text{n} = 3.0\,\text{m/s}^2$; uniform circular motion in a level bend
@@ -251,8 +283,14 @@ The support force points down and is half of the weight, as in diagram C. In dia
 ## fy5-4-L3-04
 **Given:** $m = 60.0\,\text{kg}$; at the bottom $v_1 = 27.2\,\text{m/s}$ and $a_1 = 53.2\,\text{m/s}^2$; at the top $v_2 = 14.0\,\text{m/s}$ and $a_2 = 14.1\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$; sample data; air resistance and rolling resistance are neglected
 **Find:** a) the radius $r$ of the loop; b) the support force $N$ of the car on the passenger at the top and at the bottom; c) the smallest speed $v_\text{min}$ at the top, in $\text{m/s}$. The answer box takes the support force at the top, in $\text{N}$.
-**Principle:** In the loop the passenger is for a moment in uniform circular motion, and the net force points towards the centre of the loop and is $ma_\text{n}$. The radius is found from the tangential speed and the centripetal acceleration by the formula $a_\text{n} = \tfrac{v^2}{r}$. Only the weight $\overline{G}$ and the support force $\overline{N}$ of the car act on the passenger, and they are solved from the equation of motion in the direction of the centre. At the top the centre is below and at the bottom above.
-**Force diagram:** At the bottom the passenger as a rectangle, $y$ up towards the centre. The weight $\overline{G}$ from the centre downwards and the support force $\overline{N}$ from the bottom face upwards, clearly longer than the weight. The acceleration separately up towards the centre.
+**Principle:** In the loop the passenger is for a moment in uniform circular motion, and the net force points towards the centre of the loop and is $ma_\text{n}$. The radius is found from the tangential speed and the centripetal acceleration by the formula $a_\text{n} = \tfrac{v^2}{r}$.
+
+Only the weight $\overline{G}$ and the support force $\overline{N}$ of the car act on the passenger, and they are solved from the equation of motion in the direction of the centre. At the top the centre is below and at the bottom above.
+**Force diagram:** At the bottom the passenger as a rectangle, $y$ up towards the centre.
+
+The weight $\overline{G}$ from the centre downwards and the support force $\overline{N}$ from the bottom face upwards, clearly longer than the weight.
+
+The acceleration separately up towards the centre.
 ```voimakuvio
 pinta 0
 G 588,6
@@ -276,13 +314,21 @@ akselit 0
 b) $N_2 = 60.0\,\text{kg}\cdot(14.1 - 9.81)\,\text{m/s}^2 = 60.0\,\text{kg}\cdot 4.29\,\text{m/s}^2 = 257.4\,\text{N}$ and $N_1 = 60.0\,\text{kg}\cdot(9.81 + 53.2)\,\text{m/s}^2 = 3780.6\,\text{N}$. Compared with the weight $mg = 588.6\,\text{N}$: $\tfrac{N_1}{mg} = \tfrac{3780.6}{588.6} = 6.42$.
 c) $v_\text{min} = \sqrt{9.81\,\text{m/s}^2\cdot 13.90\,\text{m}} = \sqrt{136.4\,\text{m}^2/\text{s}^2} = 11.7\,\text{m/s}$
 **Answer:** The support force at the top is about $260\,\text{N}$ (two significant figures, because the difference $14.1 - 9.81$ is accurate only to about two figures). At the bottom the support force is $3.8\,\text{kN}$, about $6.4$ times the weight, and the radius of the loop is about $13.9\,\text{m}$. The smallest speed at the top is $11.7\,\text{m/s}$.
-**Reasonableness:** The speed at the top in the table, $14.0\,\text{m/s}$, is greater than $11.7\,\text{m/s}$, and the measured acceleration $14.1\,\text{m/s}^2$ is greater than $g$, so the support force is positive: the passenger stays in contact with the car and feels light at the top, only about $0.44$ times his weight ($257.4 : 588.6$). At the bottom he is pressed into the seat, which agrees with the experience of a roller coaster. The two values of the radius are close to each other ($13.91\,\text{m}$ and $13.90\,\text{m}$), so the data fit a circular track. Energy check (no friction): $v_1^2 - v_2^2 = 543.8\,\text{m}^2/\text{s}^2$ and $4\,g\,r = 545.6\,\text{m}^2/\text{s}^2$, so the data agree with conservation of energy, and at the bottom the support force is over $6\,mg$, as it should be in a frictionless loop.
+**Reasonableness:** The speed at the top in the table, $14.0\,\text{m/s}$, is greater than $11.7\,\text{m/s}$, and the measured acceleration $14.1\,\text{m/s}^2$ is greater than $g$, so the support force is positive: the passenger stays in contact with the car and feels light at the top, only about $0.44$ times his weight ($257.4 : 588.6$).
+
+At the bottom he is pressed into the seat, which agrees with the experience of a roller coaster. The two values of the radius are close to each other ($13.91\,\text{m}$ and $13.90\,\text{m}$), so the data fit a circular track.
+
+Energy check (no friction): $v_1^2 - v_2^2 = 543.8\,\text{m}^2/\text{s}^2$ and $4\,g\,r = 545.6\,\text{m}^2/\text{s}^2$, so the data agree with conservation of energy, and at the bottom the support force is over $6\,mg$, as it should be in a frictionless loop.
 
 ## fy5-4-L3-05
 **Given:** radius $r = 130\,\text{m}$, angle of banking $\alpha = 8.0\,{}^\circ$ (the road slopes down towards the inner edge), coefficient of static friction $\mu_0 = 0.40$; $g = 9.81\,\text{m/s}^2$; air resistance and rolling resistance are neglected
 **Find:** a) the speed $v_0$ without friction, b) the greatest speed $v_\text{max}$ with friction included, c) a justification. The answer box takes $v_\text{max}$ in $\text{km/h}$.
-**Principle:** The car is in uniform circular motion, and the net force is horizontal and points towards the centre, with magnitude $m\tfrac{v^2}{r}$. The support force $\overline{N}$ of the road is perpendicular to the road, so on a banked road it has a horizontal component towards the centre. At the greatest speed the car tends to slide out and up the slope, so the static friction $\overline{F}_\mu$ points down along the slope and is at its maximum, $\mu_0 N$. In the vertical direction the car does not accelerate.
-**Force diagram:** The car seen from behind as a rectangle on a banked road that rises to the right, and the centre of the bend on the left. The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face perpendicular to the road, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face down along the slope. The acceleration separately horizontally to the left towards the centre. The horizontal axis $x$ points towards the centre and $y$ up.
+**Principle:** The car is in uniform circular motion, and the net force is horizontal and points towards the centre, with magnitude $m\tfrac{v^2}{r}$. The support force $\overline{N}$ of the road is perpendicular to the road, so on a banked road it has a horizontal component towards the centre.
+
+At the greatest speed the car tends to slide out and up the slope, so the static friction $\overline{F}_\mu$ points down along the slope and is at its maximum, $\mu_0 N$. In the vertical direction the car does not accelerate.
+**Force diagram:** The car seen from behind as a rectangle on a banked road that rises to the right, and the centre of the bend on the left.
+
+The weight $\overline{G}$ from the centre downwards, the support force $\overline{N}$ from the bottom face perpendicular to the road, and the maximum static friction $\overline{F}_\mu$ from the corner of the bottom face down along the slope. The acceleration separately horizontally to the left towards the centre. The horizontal axis $x$ points towards the centre and $y$ up.
 ```voimakuvio
 pinta 8
 G 100
@@ -308,13 +354,19 @@ b) The fraction is $\dfrac{0.1405 + 0.40}{1 - 0.40\cdot 0.1405} = \dfrac{0.5405}
 $v_\text{max} = \sqrt{1275.3\,\text{m}^2/\text{s}^2\cdot 0.5727} = 27.03\,\text{m/s} = 97.3\,\text{km/h}$.
 In a horizontal bend ($\alpha = 0$) we would have $v = \sqrt{\mu_0\,g\,r} = \sqrt{0.40\cdot 1275.3\,\text{m}^2/\text{s}^2} = 22.58\,\text{m/s} = 81.3\,\text{km/h}$.
 **Answer:** $v_\text{max} \approx 97\,\text{km/h}$, two significant figures like the angle $8.0\,{}^\circ$ and the coefficient $0.40$. Without friction the bend could be taken at $v_0 \approx 48\,\text{km/h}$, and in a horizontal bend the greatest speed would be about $81\,\text{km/h}$, so the banking raises the limit by about $16\,\text{km/h}$, that is about a fifth.
-**Reasonableness:** The limiting case $\mu_0 = 0$ gives $v_\text{max} = v_0$, and the limiting case $\alpha = 0$ gives the result for the horizontal bend, so the formula works in both. The result $97\,\text{km/h}$ is greater than $81\,\text{km/h}$ and $48\,\text{km/h}$, as it should be. In the force diagram the magnitude of the friction is $0.40\cdot N$ and the support force is greater than the weight ($N \approx 1.07\,mg$, because $N = \tfrac{mg}{\cos\alpha - \mu_0\sin\alpha}$), so the balance in the vertical direction checks out.
-**Model answer on the justification:** On a banked road the support force is not vertical but tilts towards the centre of the bend. Its horizontal component gives a part of the net force pointing towards the centre, so the friction does not have to supply the whole net force towards the centre. The same coefficient of friction is therefore enough for a greater speed, and on an icy or wet road the banking can be decisive. At the speed $v_0$ no friction is needed at all.
+**Reasonableness:** The limiting case $\mu_0 = 0$ gives $v_\text{max} = v_0$, and the limiting case $\alpha = 0$ gives the result for the horizontal bend, so the formula works in both. The result $97\,\text{km/h}$ is greater than $81\,\text{km/h}$ and $48\,\text{km/h}$, as it should be.
+
+In the force diagram the magnitude of the friction is $0.40\cdot N$ and the support force is greater than the weight ($N \approx 1.07\,mg$, because $N = \tfrac{mg}{\cos\alpha - \mu_0\sin\alpha}$), so the balance in the vertical direction checks out.
+**Model answer on the justification:** On a banked road the support force is not vertical but tilts towards the centre of the bend. Its horizontal component gives a part of the net force pointing towards the centre, so the friction does not have to supply the whole net force towards the centre.
+
+The same coefficient of friction is therefore enough for a greater speed, and on an icy or wet road the banking can be decisive. At the speed $v_0$ no friction is needed at all.
 
 ## fy5-4-L3-06
 **Given:** $m = 1200\,\text{kg}$; $v = 20\,\text{m/s}$; from the graph at this speed $F = 8.0\,\text{kN}$; $g = 9.81\,\text{m/s}^2$; level road, friction is the only horizontal force
 **Find:** the least coefficient of static friction $\mu_0$ (no unit)
-**Principle:** Friction is the only horizontal force, so it is the net force towards the centre of the bend. The road is level and there is no vertical acceleration, so the support force is $N = mg$. The car stays on the road as long as the friction needed does not exceed the maximum static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
+**Principle:** Friction is the only horizontal force, so it is the net force towards the centre of the bend. The road is level and there is no vertical acceleration, so the support force is $N = mg$.
+
+The car stays on the road as long as the friction needed does not exceed the maximum static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
 **Reading the graph:** The marked point on the curve is where the gridlines $v = 20\,\text{m/s}$ and $F = 8.0\,\text{kN}$ meet (the vertical axis is in kilonewtons). The friction needed at $20\,\text{m/s}$ is read as $F = 8.0\,\text{kN}$.
 **Formula:** $F = \mu_0 N$ and $N = mg$, so $\mu_0 = \dfrac{F}{mg}$
 **Conversions:** $F = 8.0\,\text{kN} = 8.0 \cdot 1000\,\text{N} = 8000\,\text{N}$
