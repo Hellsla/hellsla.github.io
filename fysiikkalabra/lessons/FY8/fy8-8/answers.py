@@ -35,6 +35,7 @@ mK, mE = sum(K) / 4, sum(EK) / 4
 k = sum((x - mK) * (y - mE) for x, y in zip(K, EK)) / sum((x - mK) ** 2 for x in K)   # 0,5978 keV per channel
 b = mE - k * mK                               # 1,199 keV
 a["fy8-8-L2-07"] = k * 1531 + b               # 916,4 keV
+a["fy8-8-L2-09"] = 1332.5 + 826.1            # Co-60 spectrum: lowest level 1332,5 keV, weak line 826,1 keV -> level X = 2158,6 keV
 # Level 3
 n_alpha = (232 - 208) // 4                    # Th-232 -> Pb-208: 6 alpha decays
 a["fy8-8-L3-01"] = 82 - (90 - 2 * n_alpha)    # Z: 90 - 12 + n_beta = 82 -> 4 beta-minus decays
@@ -45,5 +46,8 @@ nal = (222 - 206) // 4                        # 4 alpha decays
 a["fy8-8-L3-04"] = 82 - 86 + 2 * nal          # Z: 86 - 8 + n_beta = 82 -> 4 beta-minus decays
 # L3-05: levels 351,2; 820,5; 1501,4 keV; missing line is 1501,4 - 351,2 = 1150,2 keV
 a["fy8-8-L3-05"] = lam_pm(1501.4 - 351.2)     # 1,078 pm
+# L3-06: A = 1332,5 (A -> ground), B = A + 826,1 = 2158,6, C = B + 347,1 = 2505,7 = A + 1173,2; direct C -> ground line
+EC = 1332.5 + 1173.2                          # 2505,7 keV
+a["fy8-8-L3-06"] = lam_pm(EC)                 # 0,4949 pm
 # fy8-8-L2-08 is a find-the-error task without a number: row 3, I-131 beta-minus, Z = 52 - 1 = 51 != 53; correct daughter Xe-131 (Z = 54)
 print(json.dumps({i: (round(v, 6) if not isinstance(v, str) else v) for i, v in a.items()}, ensure_ascii=False))
