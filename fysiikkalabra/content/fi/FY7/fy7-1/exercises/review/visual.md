@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 639c00a01150b06a
+CONTENT-HASH: b1ad2ba08f212fd9
 
 ## Blocking
 - none
@@ -8,9 +8,9 @@ CONTENT-HASH: 639c00a01150b06a
 - none
 
 ## Checked
-- Delta (reflow): 1-10 Järkevyys (tan check, two rows) and 1-11 Sijoitus (B², three rows on a phone, joined to two at 1280 px).
-- Own captures of the opened solutions from the current preview at 390 px and 1280 px (fy7-1-L2-01, fy7-1-L2-02), read at full size; overflow of every exercise formula measured at 360, 390 and 1280 px: none.
-- Rows start with a relation or a + sign; trailing punctuation sits inside the block; numbers, signs and units unchanged. Hash identical at start and end.
+- Delta (md-paragraphs): solutions.md of 1-3, 1-6, 1-7, 1-9, 1-14 model answers, Vastaus and Sijoitus cut into paragraphs.
+- Contact sheets of the opened exercises at 1280 px (fi, fy7-1), plus full-size captures of the changed answers (fi fy7-1). Paragraph cuts keep layout, spacing and card containment; formulas, units and decimal commas unchanged; no clipping or overflow seen.
+- Hash identical at start and end.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 5 · accessibility 5

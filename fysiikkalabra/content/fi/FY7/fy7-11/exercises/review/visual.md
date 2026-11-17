@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a4596f25fe42cab1
+CONTENT-HASH: e7f8269acb1357b3
 
 ## Blocking
 
 ## Polish
+- [Minor] fy7-11-L3-05 task text — the caption still reads "(esimerkkiaineisto)" in the capture while exercises.json says the marker was taken out; recheck that the capture matches the committed text (not judged further, teacher's decision).
 
 ## Checked
-- own captures of every aligned block of the opened solutions at 390 and 1280 px (preview page at this hash, /tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/vis_b916/shots/fy7-11-390-s1, fy7-11-1280-s1): L2-01 Δt chain (minus row, = column) and L2-06 Mallivastaus (180° + 2 · 59,0° − 4 · 40,07° = 137,7°). Clean at both widths, text flow after the block intact.
-- No formula of the exercises overflows its box at 360 or 390 px (measured in the browser, every solution open).
-- Rest not re-reviewed.
+- Delta (md-paragraphs and the caption marker). Opened fy7-11-open-exercises-L3-1280-5 and -8: task 11-20 with its table, the Sijoitus and Kaava blocks of the prism task (aligned formulas, boxes) render without overflow or clipping. The new paragraphs after Sijoitus and Mallivastaus sit as separate blocks in the card; not every one was located by position.
+- Wording unchanged by the diff, fluent.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

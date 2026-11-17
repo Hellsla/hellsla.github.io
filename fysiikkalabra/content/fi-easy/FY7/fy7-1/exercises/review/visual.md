@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2c969d08583a5d20
+CONTENT-HASH: b1ad2ba08f212fd9
 
 ## Blocking
 - none
@@ -8,9 +8,9 @@ CONTENT-HASH: 2c969d08583a5d20
 - none
 
 ## Checked
-- Delta (reflow): solutions.md:49 (Järkevyys, tan 60,75°) and :57 (Sijoitus, B² in three rows), rendered from preview/fi-easy/fy7-1.html with every solution open at 390 and 1280 px (own captures of each re-broken step). Rows start with "=" or "+", numbers, signs and units in the same order, full stop and comma inside the block, nothing clipped; at 1280 px the continuation rows are joined.
-- Overflow scan of every display formula, eq-chain and table of the exercises at 360, 390 and 1280 px: none; no red KaTeX; no page overflow.
+- Delta (md-paragraphs): solutions.md of 1-3, 1-6, 1-7, 1-9, 1-14 model answers, Vastaus and Sijoitus cut into paragraphs.
+- Contact sheets of the opened exercises at 1280 px (fi-easy, fy7-1), plus full-size captures of the changed answers (fi fy7-1). Paragraph cuts keep layout, spacing and card containment; formulas, units and decimal commas unchanged; no clipping or overflow seen.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 288f991a90427cce
+CONTENT-HASH: b1ad2ba08f212fd9
 
 ## Blocking
 - none
@@ -8,9 +8,9 @@ CONTENT-HASH: 288f991a90427cce
 - none
 
 ## Checked
-- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-1.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S1-390-1.png, S1-1280-1.png in the session scratchpad).
-- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit.
-- fy7-1-L2-01 and L2-02: rows start at a relation or a + sign; the wide form joins them; the full stop and comma sit inside the block.
+- Delta (md-paragraphs): solutions.md of 1-3, 1-6, 1-7, 1-9, 1-14 model answers, Vastaus and Sijoitus cut into paragraphs.
+- Contact sheets of the opened exercises at 1280 px (en, fy7-1), plus full-size captures of the changed answers (fi fy7-1). Paragraph cuts keep layout, spacing and card containment; formulas, units and decimal commas unchanged; no clipping or overflow seen.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5
