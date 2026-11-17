@@ -20,6 +20,7 @@ yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR
 yhdistetään ensin.
 
 ### 0a. Katselmointikierroksen ajo yhdellä komennolla
+Varattu: claude/tehostus-0a
 `/lesson`, `/exercises` ja `/quality-audit` ajavat nyt ketjun `check_lesson.py` → `screenshot.py --if-stale` →
 `reviews.py scope` → `reviews.py carry` → `review_packet.py` komento kerrallaan, ja jokainen komento on orkestroijan
 vuoro koko kontekstilla. Yksi skripti (esim. `python scripts/round.py <id>[,<id>…] [--exercises] [--lang]`) ajaa
