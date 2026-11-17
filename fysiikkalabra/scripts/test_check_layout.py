@@ -9,7 +9,7 @@ opened as a solution at 360 px, and checks that
   - the check is not tied to a language (the same formula with a decimal comma and a decimal point);
   - a failure names where the formula is: the task's id, the solution step and the element (work queue 5).
 Usage: python scripts/test_check_layout.py"""
-import pathlib, re, shutil, subprocess, sys, tempfile
+import os, pathlib, re, shutil, subprocess, sys, tempfile
 HERE = pathlib.Path(__file__).resolve().parent
 SITE = HERE.parent / "site"
 failures = []
@@ -65,6 +65,17 @@ def main():
                     expect(f"{name} at {width} px: the failure names the task, the step and the element", "at #fx-task-07 > details.solution" in out and 'step "Substitution"' in out, out)
                 else:
                     expect(f"{name} at {width} px: formulas that fit give no alarm", r.returncode == 0 and "clipped" not in out, out)
+        # the known rows live in one file per course (docs/clipped-formulas/<group>.tsv, work queue 5): a row in its own
+        # file lets its formula pass, the same row in another course's file is refused
+        r = subprocess.run([sys.executable, str(HERE / "check_layout.py"), "fx-bad-hz", "--width", "360", "--dir", str(tmp)], capture_output=True, text=True)
+        rows = [l.split("clipped or scrolling, not fully shown: ", 1)[1] for l in r.stdout.splitlines() if "clipped or scrolling" in l]
+        known = tmp / "known"; known.mkdir()
+        (known / "fx.tsv").write_text("# test\n" + "".join(f"fx-bad-hz\t{t}\n" for t in rows))
+        r = subprocess.run([sys.executable, str(HERE / "check_layout.py"), "fx-bad-hz", "--width", "360", "--dir", str(tmp)], capture_output=True, text=True, env={**os.environ, "CLIPPED_KNOWN": str(known)})
+        expect("a known clipped formula in its course's file passes", bool(rows) and r.returncode == 0 and "docs/clipped-formulas/fx.tsv" in r.stdout, r.stdout + r.stderr)
+        (known / "fx.tsv").rename(known / "FY4.tsv")
+        r = subprocess.run([sys.executable, str(HERE / "check_layout.py"), "fx-bad-hz", "--width", "360", "--dir", str(tmp)], capture_output=True, text=True, env={**os.environ, "CLIPPED_KNOWN": str(known)})
+        expect("a known row in another course's file is refused", r.returncode != 0 and "belongs in fx.tsv" in r.stdout + r.stderr, r.stdout + r.stderr)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     print(f"\n{len(failures)} FAILED: " + ", ".join(failures) if failures else "\nall check_layout tests passed")

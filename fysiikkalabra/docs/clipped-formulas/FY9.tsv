@@ -1,0 +1,87 @@
+# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
+# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
+# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+en/fy9-aallot	d = vt = 1480\,\tfrac{\text{m}}{\text{s}} \cdot 0.024\,\text{s} = 35.5
+en/fy9-energia	2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}
+en/fy9-energia	7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 9
+en/fy9-energia	E = P\,t = 2.0\,\text{kW} \cdot 30\,\text{min} = 60\,\text{kWh}
+en/fy9-energia	T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\tex
+en/fy9-harjoituskoe	= \sqrt{\dfrac{10 \cdot 1.20 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\tex
+en/fy9-kaasut	= \dfrac{100\,000\,\text{Pa} \cdot 2800\,\text{m}^3 \cdot 0.0290\,\tfr
+en/fy9-kaasut	p_2 = p_1 \cdot \tfrac{T_2}{T_1} = 100\,\text{kPa} \cdot \tfrac{60}{20
+en/fy9-kokeellisuus	= \dfrac{2000\,\text{J/(kg}\cdot\text{K)} \cdot 0.200\,\text{kg} \cdot
+en/fy9-lampo	= \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12.0\,\t
+en/fy9-lampo	= \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{i} m_\text{i
+en/fy9-lampo	Q = cm\Delta T = 2100\,\text{J/(kg}\cdot\text{K)} \cdot 0.50\,\text{kg
+en/fy9-liike	(20\,\text{km/h} + 60\,\text{km/h}) : 2 = 40\,\text{km/h}
+en/fy9-magnetismi-valo	= \dfrac{1.673 \cdot 10^{-27}\,\text{kg} \cdot 3.914 \cdot 10^{7}\,\te
+en/fy9-magnetismi-valo	x_3 = 0.800\,\text{m} \cdot \tan 73.3^\circ \approx 2.7\,\text{m}
+en/fy9-mittaaminen	210\,\text{mm} = 210 \cdot 0.001\,\text{m} = 0.210\,\text{m}
+en/fy9-moderni	1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\te
+en/fy9-moderni	= \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10
+en/fy9-sahkokentta	= \dfrac{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 1.0 \cdot 0.0625\,\tex
+en/fy9-sahkokentta	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot (150\,\tex
+en/fy9-sailymislait	= \dfrac{92\,\text{kg} \cdot 6.0\,\tfrac{\text{m}}{\text{s}} + 78\,\te
+en/fy9-sailymislait	\Delta p = 0.20\,\text{kg} \cdot 4.0\,\tfrac{\text{m}}{\text{s}} - 0.2
+en/fy9-voimat	= \dfrac{120\,\text{N} - 0.15 \cdot 50\,\text{kg} \cdot 9.81\,\text{m/
+en/fy9-voimat	F_\mu = \mu m g = 0.10 \cdot 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \a
+en/fy9-voimat	a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2
+en/fy9-ympyraliike	= \dfrac{3.984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdot 
+en/fy9-ympyraliike	= \sqrt{518.0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9.81\,\tfrac{\
+en/fy9-ympyraliike	= \sqrt{\dfrac{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\
+fi-easy/fy9-aallot	d = vt = 1480\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}024\,\text{s} = 35
+fi-easy/fy9-energia	2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}
+fi-easy/fy9-energia	7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx
+fi-easy/fy9-energia	E = P\,t = 2{,}0\,\text{kW} \cdot 30\,\text{min} = 60\,\text{kWh}
+fi-easy/fy9-energia	T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{
+fi-easy/fy9-harjoituskoe	= \sqrt{\dfrac{10 \cdot 1{,}20 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,
+fi-easy/fy9-kaasut	= \dfrac{100\,000\,\text{Pa} \cdot 2800\,\text{m}^3 \cdot 0{,}0290\,\t
+fi-easy/fy9-kaasut	p_2 = p_1 \cdot \tfrac{T_2}{T_1} = 100\,\text{kPa} \cdot \tfrac{60}{20
+fi-easy/fy9-kokeellisuus	= \dfrac{2000\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}200\,\text{kg} \cd
+fi-easy/fy9-lampo	= \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12{,}0\,
+fi-easy/fy9-lampo	= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{j} m_\text{j
+fi-easy/fy9-lampo	Q = cm\Delta T = 2100\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}50\,\text{
+fi-easy/fy9-liike	(20\,\text{km/h} + 60\,\text{km/h}) : 2 = 40\,\text{km/h}
+fi-easy/fy9-magnetismi-valo	= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 3{,}914 \cdot 10^{7}\
+fi-easy/fy9-magnetismi-valo	x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m
+fi-easy/fy9-mittaaminen	210\,\text{mm} = 210 \cdot 0{,}001\,\text{m} = 0{,}210\,\text{m}
+fi-easy/fy9-moderni	1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\
+fi-easy/fy9-moderni	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
+fi-easy/fy9-sahkokentta	= \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 1{,}0 \cdot 0{,}0625
+fi-easy/fy9-sahkokentta	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot (150\,\t
+fi-easy/fy9-sailymislait	= \dfrac{92\,\text{kg} \cdot 6{,}0\,\tfrac{\text{m}}{\text{s}} + 78\,\
+fi-easy/fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot 4{,}0\,\tfrac{\text{m}}{\text{s}} -
+fi-easy/fy9-voimat	= \dfrac{120\,\text{N} - 0{,}15 \cdot 50\,\text{kg} \cdot 9{,}81\,\tex
+fi-easy/fy9-voimat	F_\mu = \mu m g = 0{,}10 \cdot 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^
+fi-easy/fy9-voimat	a = 1{,}175\,\tfrac{1}{\text{kg}} \cdot F - 0{,}281\,\text{m/s}^2
+fi-easy/fy9-ympyraliike	= \dfrac{3{,}984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdo
+fi-easy/fy9-ympyraliike	= \sqrt{518{,}0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9{,}81\,\tfr
+fi-easy/fy9-ympyraliike	= \sqrt{\dfrac{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}
+fy9-aallot	d = vt = 1480\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}024\,\text{s} = 35
+fy9-energia	2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}
+fy9-energia	7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx
+fy9-energia	E = P\,t = 2{,}0\,\text{kW} \cdot 30\,\text{min} = 60\,\text{kWh}
+fy9-energia	T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{
+fy9-harjoituskoe	= \sqrt{\dfrac{10 \cdot 1{,}20 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,
+fy9-kaasut	= \dfrac{100\,000\,\text{Pa} \cdot 2800\,\text{m}^3 \cdot 0{,}0290\,\t
+fy9-kaasut	p_2 = p_1 \cdot \tfrac{T_2}{T_1} = 100\,\text{kPa} \cdot \tfrac{60}{20
+fy9-kokeellisuus	= \dfrac{2000\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}200\,\text{kg} \cd
+fy9-lampo	= \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12{,}0\,
+fy9-lampo	= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{j} m_\text{j
+fy9-lampo	Q = cm\Delta T = 2100\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}50\,\text{
+fy9-liike	(20\,\text{km/h} + 60\,\text{km/h}) : 2 = 40\,\text{km/h}
+fy9-magnetismi-valo	= \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 3{,}914 \cdot 10^{7}\
+fy9-magnetismi-valo	x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m
+fy9-mittaaminen	210\,\text{mm} = 210 \cdot 0{,}001\,\text{m} = 0{,}210\,\text{m}
+fy9-moderni	1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\
+fy9-moderni	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
+fy9-sahkokentta	= \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 1{,}0 \cdot 0{,}0625
+fy9-sahkokentta	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot (150\,\t
+fy9-sailymislait	= \dfrac{92\,\text{kg} \cdot 6{,}0\,\tfrac{\text{m}}{\text{s}} + 78\,\
+fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot 4{,}0\,\tfrac{\text{m}}{\text{s}} -
+fy9-voimat	= \dfrac{120\,\text{N} - 0{,}15 \cdot 50\,\text{kg} \cdot 9{,}81\,\tex
+fy9-voimat	F_\mu = \mu m g = 0{,}10 \cdot 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^
+fy9-voimat	a = 1{,}175\,\tfrac{1}{\text{kg}} \cdot F - 0{,}281\,\text{m/s}^2
+fy9-ympyraliike	= \dfrac{3{,}984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdo
+fy9-ympyraliike	= \sqrt{518{,}0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9{,}81\,\tfr
+fy9-ympyraliike	= \sqrt{\dfrac{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}
