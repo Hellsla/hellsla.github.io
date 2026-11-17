@@ -1,21 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: eacff728d2981da8
+VERDICT: PASS
+CONTENT-HASH: 682ce6a6709579a6
+SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
 
 ## Blocking
 
-- solutions.md fy8-13-L2-10 Järkevyys (Finnish: lähempänä 10 cm:ä) — claims 12 cm lies "closer to 15 cm", but 12 is closer to 10 cm (2 vs 3 cm); a student checking the result is misled — fix: "12 cm lies between 10 cm (20 µSv/h) and 15 cm (10 µSv/h), so the result must lie between 10 and 20 µSv/h; 15 µSv/h fits (the curve is convex, so the value is a little above the straight-line midpoint)" (translate in this language's own words).
-
 ## Polish
 
-- fy8-13-L3-06 text — "annosnopeus ... työpisteen etäisyydellä lähteestä" is ambiguous (reads as if the graph depended on distance); say "työpiste on kiinteällä etäisyydellä lähteestä" / the same in this language.
-- fy8-13-L3-06 a) and b) are level-2 steps (read, t = H/Ḣ); the level-3 demand is c) and d). Accept, or ask for c) without the hint of the 25 cm edge: the curve ends exactly at the answer, 25 cm.
-- fy8-13-L2-10 overlaps L3-05 (concrete thickness graph/table) and L2-04 (shield); acceptable as the only exponential read-off with a fractional d/d_1/2.
+- fy8-13-L3-06 a) and b) are level-2 steps; the level-3 demand is c) and d), and the curve ends exactly at the answer (25 cm). Accepted.
+- fy8-13-L2-10 overlaps L3-05 and L2-04 in context; acceptable as the only exponential read-off with a fractional d/d_1/2.
 
 ## Checked
 
-- L2-10: figure gives 80 µSv/h at 0 and 40 at 5 cm on the 1 cm grid; figure description does not state the half-value layer; answer 15 (15,16) within tolerance 0,04.
-- L2-10 c) check against the graph is a real verification step; level 2 fits.
-- L3-06: 20 cm gives 5 µSv/h on a gridline, 25 cm gives 2,5; answers 4,0 h and 25 cm consistent.
-- L3-06 d) asks for an assumption and its effect; the model answer is observable and correct (scatter, constant rate).
-- Solutions staged: given, principle, formula, conversions, substitution, answer, check.
+- Round-1 blocking fixed: L2-10 Järkevyys now says 12 cm lies between 10 cm (20) and 15 cm (10), result 10...20, convex curve so slightly above 15; correct.
+- L3-06 text now says the graph holds at the same distance as the workstation; the ambiguity is gone.
+- L2-10: 80 at 0, 40 at 5 cm; 80·0,5^2,4 = 15,16; answer 15, tolerance 0,04; c) is a real check; level 2 fits.
+- L3-06: 5 µSv/h at 20 cm, 2,5 at 25 cm; 4,0 h and 25 cm consistent; d) asks an observable assumption and effect.
+- Solutions staged: given, principle, reading, formula, conversions, substitution, answer, check.
+- Set mix: only graph read-offs with a fractional exponent (L2-10) and a design task (L3-06); no repeat of the worked example.
 - Method: delta, added exercises only.
