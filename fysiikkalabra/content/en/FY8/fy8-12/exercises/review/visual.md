@@ -1,17 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 883da37d124339dd
+VERDICT: PASS
+CONTENT-HASH: 6d921e617ea8865f
+SCOPE: delta added-exercise from 586285323faf3a8f base 5b3ca4f81c77
 
 ## Blocking
-- [Major] fy8-12-L2-09 exercises.json `unit` — the answer field shows the Finnish unit "pulssia/min" beside "Write a solution / Check" on the English page (capture L2-1280-14); every other English exercise has an English unit — a language error in the one element the student fills in — set `"unit": "pulses/min"` in the en exercises.json (the answer 141.4 and tolerance stay).
+(none)
 
 ## Polish
-- [Minor] fy8-12-L3-07 solution (Answer) — straight quotes "at most" — use “at most”.
-- [Minor] en solutions — decimals `2{,}5`, `67{,}73` render with a decimal comma in English; same as the rest of the set, so only for the teacher if English is meant to use a point.
+- [Minor] fy8-12-L2-09 — the prompt asks for "pulses per minute" and the language-neutral unit field is `1/min`; L1-07 writes $\tfrac{1}{\text{min}}$ in its text. Optional: match it.
 
 ## Checked
-- Delta: L2-09 (captures en L2-1280-13, -14) and L3-07 (en L3-1280-13; layout of the fi L3-11/12 shared figure), solutions open.
-- Figure fy8-12/tuntematon in English: axis "pulses / min" and "d (mm)" localised, ticks readable, answer not given away.
-- Chains aligned, units upright, no clipping; English text fluent and consistent with the Finnish.
+- Round 3 delta: the L2-09 unit field (en) and L1-07 for comparison, read from exercises.json. No new captures opened: a data-field change only; the round 2 captures carry for the layout.
+- `1/min` is plain and language-neutral, with no Finnish word in it. It is acceptable on the English page, and the round 2 blocker is resolved.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish n/a (en only; fi carried) · accessibility 4
