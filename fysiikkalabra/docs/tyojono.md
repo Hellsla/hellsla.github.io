@@ -184,6 +184,7 @@ FY1 tehty (claude/fy1-kappalejako, #650): fy1-1…fy1-8 esimerkit ja ratkaisut k
 harjoitusten kolme vaihetta (kiviaskel 21 kertaluokkaa, sadepisarat, Auringon etäisyys), joissa kappalejako osuu samaan
 kohtaan kuin aiempi reflow, ja `reviews.py` ei luokittele yhdistelmää; sekä FY1:n Sovella ja esimerkkikoe (pitkiä
 kappaleita, mutta `carry-item` ei kanna `md-paragraphs`-luokkaa: vaatii yhteisen muutoksen reviews.py:hyn).
+Varattu: claude/fy1-kappalejako-2 (FY1:n Sovella, esimerkkikoe ja en fy1-1:n kolme askelta; 8c-1 #657 mainissa).
 
 Opettaja 2026-11-16: laajennetaan myös FY9:ään ja FY10:een. Järjestys FY1 → FY2 → FY4 → FY5 → FY6 → FY7 → FY8 →
 FY3 loput → FY9 → FY10.
