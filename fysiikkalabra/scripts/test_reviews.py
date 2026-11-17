@@ -468,6 +468,13 @@ expect("... nor a heading", not rv._md_paragraphs(["## A B"], ["## A", "B"]))
 expect("... across a stage marker both sides have", rv._md_paragraphs(["A B.", "", "<!-- vaihe -->", "", "C D."], ["A", "", "B.", "", "<!-- vaihe -->", "", "C D."]))
 expect("... but not a stage marker moved", not rv._md_paragraphs(["A B.", "<!-- vaihe -->", "C D."], ["A", "<!-- vaihe -->", "B. C D."]))
 expect("an md-paragraphs change needs only the visual reviewer", rv.RULES["md-paragraphs"] == ("none", "none", "delta"))
+expect("... also when the stage was re-broken too: a chain lifted into an aligned block reads with a space more inside the formula",
+       rv._md_paragraphs(["**M:** so $d_\\text{A}\\approx400$. This is it. The value $1{,}5$."], ["**M:** so $d_\\text{A} \\approx400$. This is it.", "", "The value $1{,}5$."]))
+expect("... but a space that ends a control word is not left out", not rv._md_paragraphs(["A $a\\cdot x$ b. C"], ["A $a\\cdotx$ b.", "", "C"]))
+expect("para_view: a paragraph cut into paragraphs and a list reads as it did", rv.para_view("A $x$ b c.\nD", "s.md") == rv.para_view("A $x$\n\n- b\n- c.\n\nD", "s.md"))
+expect("... and not when a word changes", rv.para_view("A b c.", "s.md") != rv.para_view("A\n\n- b\n- d.", "s.md"))
+expect("... in JSON a \\n- is a list item, and a LaTeX \\nu stays", rv.para_view(json.dumps({"s": "A.\n\n- b\n- c \\nu"}), "t.json") == rv.para_view(json.dumps({"s": "A. b c \\nu"}), "t.json")
+       != rv.para_view(json.dumps({"s": "A. b c u"}), "t.json"))
 _lo = r"    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));"
 expect("a LaTeX label moved in a sim's own label() helper is a label nudge", rv._js_label_pair(_lo, _lo.replace("ts(36)", "ts(39)")))
 expect("... but not its size", not rv._js_label_pair(_lo, _lo.replace("ts(12)", "ts(14)")))
@@ -692,6 +699,17 @@ import practice as _pr
 _fk, _fl = None, None
 expect("item_view: a sovella set's tasks.json with and without the marker has one view; another caption has another",
        rv.item_view("sovella", "FY3", "fi", _Src(_T)) == rv.item_view("sovella", "FY3", "fi", _Src(_T2)) != rv.item_view("sovella", "FY3", "fi", _Src(_T3)))
+# an item's solutions.md cut into paragraphs or a list (work queue 8c): one view with `paragraphs`, and only with it
+class _SrcMd:
+    def __init__(self, md): self.md = md
+    def read(self, rel, binary=False): return self.md if rel.endswith("solutions.md") else _T2 if rel.endswith("tasks.json") else None
+_M1 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kaksi numeroa. Koska $a$ ja $b$ tunnetaan.\n"
+_M2 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kaksi numeroa.\n\n- Koska $a$ ja\n- $b$ tunnetaan.\n"
+_M3 = "## FY3-1\n**Vastaus:** $2\\,\\text{m}$, kolme numeroa.\n\nKoska $a$ ja $b$ tunnetaan.\n"
+_iv = lambda md, **kw: rv.item_view("sovella", "FY3", "fi", _SrcMd(md), **kw)
+expect("item_view: a solution step cut into paragraphs and a list has the view it had with paragraphs=True", _iv(_M1, paragraphs=True) == _iv(_M2, paragraphs=True))
+expect("... not without it, and not when a word changes", _iv(_M1) != _iv(_M2) and _iv(_M1, paragraphs=True) != _iv(_M3, paragraphs=True))
+expect("... a list is no re-broken chain: the reflow view alone tells them apart", _iv(_M1, reflow=True) != _iv(_M2, reflow=True))
 # 9. a translated exercise set (teacher 2026-11-12): numerically equivalent to the Finnish set, whose science PASS is
 # current → the science review carries over; pedagogy and visual review the language; anything numeric differs → as before
 _p = []
@@ -789,6 +807,27 @@ rows = (U / "review/carry.tsv").read_text().splitlines()
 (U / "review/visual.md").write_text((U / "review/visual.md").read_text().replace(uh(), rows[-1].split("\t")[2]))   # the visual PASS of the version before the re-break
 code, out = run(t, "reviews.py", "verify")
 expect("... and verify rejects a visual carry row over a reflow", code == 1 and "does not carry the visual review" in out, out[-600:])
+# a unit's text cut into paragraphs and a list, word for word the same (work queue 8c): science and pedagogy carry over
+# (md-paragraphs), the visual reviewer looks; a changed word with it carries nothing
+git(t, "checkout", "-q", "HEAD", "--", "content"); (U / "review/carry.tsv").unlink(missing_ok=True)
+for n in ("science", "pedagogy", "visual"): ureport(n)
+git(t, "add", "."); git(t, "commit", "-qm", "unit reviewed again")
+src4 = um.read_text()
+PA = ", joten nopeus on pieni."   # after the aligned chain the re-break test left
+def usplit(new_text):
+    um.write_text(src4.replace(PA, new_text, 1)); (U / "review/carry.tsv").unlink(missing_ok=True)
+    return run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+expect("... (the chain is there to cut after)", PA in src4)
+out = usplit(",\n\n- joten nopeus\n- on pieni.")
+expect("a unit's text cut into paragraphs and a list: science and pedagogy carried over (md-paragraphs), visual needed",
+       "science: carried over" in out and "pedagogy: carried over" in out and "visual: texts cut into paragraphs or lists: delta review needed" in out
+       and "md-paragraphs" in (U / "review/carry.tsv").read_text() and "reflow" not in (U / "review/carry.tsv").read_text(), out)
+ureport("visual"); git(t, "add", "."); git(t, "commit", "-qm", "paragraphs carried, visual passed")
+code, out = run(t, "reviews.py", "verify")
+expect("... verify re-derives the unit's md-paragraphs carry", not re.search(rf"ERROR \S*{UNIT}", out), out[-600:])
+git(t, "checkout", "-q", "HEAD~1", "--", "content")
+out = usplit(",\n\n- joten nopeus\n- on melko pieni.")
+expect("... but a changed word with the paragraph breaks carries nothing", "science: carried over" not in out and "review needed" in out, out)
 
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
