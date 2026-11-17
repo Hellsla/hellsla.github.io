@@ -28,15 +28,15 @@
         {
           "text": "$230\\,\\text{V}$, because the effective value is the peak value divided by $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Correct. The effective value is the constant voltage that heats a resistor as much as the alternating voltage: $U = U_0 : \\sqrt{2} = 325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (chapter *Generator and alternating current*). Today the transformer works with effective values."
+          "feedback": "Correct. The effective value is the constant voltage that heats a resistor as much as the alternating voltage: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*). Today the transformer works with effective values."
         },
         {
           "text": "$325\\,\\text{V}$, because the effective value is the same as the peak value.",
-          "feedback": "The peak value is reached only for an instant in each cycle. The effective value is lower: $U = U_0 : \\sqrt{2} = 325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (chapter *Generator and alternating current*)."
+          "feedback": "The peak value is reached only for an instant in each cycle. The effective value is lower: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*)."
         },
         {
           "text": "$460\\,\\text{V}$, because the effective value is the peak value multiplied by $\\sqrt{2}$.",
-          "feedback": "The effective value cannot be larger than the peak value. It is the peak value divided by $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (chapter *Generator and alternating current*)."
+          "feedback": "The effective value cannot be larger than the peak value. It is the peak value divided by $\\sqrt{2}$: $$\n\\begin{aligned}\n&325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (chapter *Generator and alternating current*)."
         }
       ],
       "optional": true

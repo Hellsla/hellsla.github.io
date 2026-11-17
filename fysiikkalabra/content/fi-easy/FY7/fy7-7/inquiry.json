@@ -30,7 +30,7 @@
         {
           "text": "$0{,}20\\,\\text{Hz}$, koska taajuus on jaksonaikaa vastaava käänteisluku: $f = 1 : T$.",
           "correct": true,
-          "feedback": "Oikein. Pyörimistaajuus kertoo, montako kierrosta tehdään sekunnissa: $f = 1 : T = 1 : 5{,}0\\,\\text{s} = 0{,}20\\,\\text{Hz}$. Tässä luvussa tutkitaan, miten pyöriminen tuottaa vaihtojännitteen."
+          "feedback": "Oikein. Pyörimistaajuus kertoo, montako kierrosta tehdään sekunnissa: $$\n\\begin{aligned}\n&f \\\\\n&= 1 : T \\\\\n&= 1 : 5{,}0\\,\\text{s} \\\\\n&= 0{,}20\\,\\text{Hz}\n\\end{aligned}\n$$. Tässä luvussa tutkitaan, miten pyöriminen tuottaa vaihtojännitteen."
         },
         {
           "text": "$5{,}0\\,\\text{Hz}$, koska taajuus on sama luku kuin jaksonaika.",

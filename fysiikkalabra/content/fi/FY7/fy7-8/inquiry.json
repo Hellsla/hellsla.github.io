@@ -28,15 +28,15 @@
         {
           "text": "$230\\,\\text{V}$, koska tehollinen arvo on huippuarvo jaettuna luvulla $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Oikein. Tehollinen arvo on tasajännite, joka lämmittää vastusta yhtä paljon kuin vaihtojännite: $U = U_0 : \\sqrt{2} = 325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (luku *Generaattori ja vaihtovirta*). Tänään muuntaja toimii tehollisilla arvoilla."
+          "feedback": "Oikein. Tehollinen arvo on tasajännite, joka lämmittää vastusta yhtä paljon kuin vaihtojännite: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*). Tänään muuntaja toimii tehollisilla arvoilla."
         },
         {
           "text": "$325\\,\\text{V}$, koska tehollinen arvo on sama kuin huippuarvo.",
-          "feedback": "Huippuarvo saavutetaan vain hetken jokaisella jaksolla. Tehollinen arvo on pienempi: $U = U_0 : \\sqrt{2} = 325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (luku *Generaattori ja vaihtovirta*)."
+          "feedback": "Huippuarvo saavutetaan vain hetken jokaisella jaksolla. Tehollinen arvo on pienempi: $$\n\\begin{aligned}\n&U \\\\\n&= U_0 : \\sqrt{2} \\\\\n&= 325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*)."
         },
         {
           "text": "$460\\,\\text{V}$, koska tehollinen arvo on huippuarvo kerrottuna luvulla $\\sqrt{2}$.",
-          "feedback": "Tehollinen arvo ei voi olla huippuarvoa suurempi. Se on huippuarvo jaettuna luvulla $\\sqrt{2}$: $325\\,\\text{V} : \\sqrt{2} \\approx 230\\,\\text{V}$ (luku *Generaattori ja vaihtovirta*)."
+          "feedback": "Tehollinen arvo ei voi olla huippuarvoa suurempi. Se on huippuarvo jaettuna luvulla $\\sqrt{2}$: $$\n\\begin{aligned}\n&325\\,\\text{V} : \\sqrt{2} \\\\\n&\\approx 230\\,\\text{V}\n\\end{aligned}\n$$ (luku *Generaattori ja vaihtovirta*)."
         }
       ],
       "optional": true

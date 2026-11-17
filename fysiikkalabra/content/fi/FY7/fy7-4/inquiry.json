@@ -28,7 +28,7 @@
         {
           "text": "$5{,}0\\,\\mu\\text{T}$ eli puolet, koska $B = \\mu_0 I : (2\\pi r)$ on kääntäen verrannollinen etäisyyteen.",
           "correct": true,
-          "feedback": "Oikein. Suoran johtimen kenttä kiertää johdinta ympyröinä, ja sen suuruus on kääntäen verrannollinen etäisyyteen $r$ (luku *Virtajohtimen ja käämin magneettikenttä*): $B = 10\\,\\mu\\text{T} \\cdot \\dfrac{1{,}0\\,\\text{cm}}{2{,}0\\,\\text{cm}} = 5{,}0\\,\\mu\\text{T}$. Tänään tällä kentällä selitetään, miksi kaksi virtajohdinta vetää tai hylkii toisiaan."
+          "feedback": "Oikein. Suoran johtimen kenttä kiertää johdinta ympyröinä, ja sen suuruus on kääntäen verrannollinen etäisyyteen $r$ (luku *Virtajohtimen ja käämin magneettikenttä*): $$\n\\begin{aligned}\n&B \\\\\n&= 10\\,\\mu\\text{T} \\cdot \\dfrac{1{,}0\\,\\text{cm}}{2{,}0\\,\\text{cm}} \\\\\n&= 5{,}0\\,\\mu\\text{T}\n\\end{aligned}\n$$. Tänään tällä kentällä selitetään, miksi kaksi virtajohdinta vetää tai hylkii toisiaan."
         },
         {
           "text": "$2{,}5\\,\\mu\\text{T}$ eli neljäsosa, koska kenttä heikkenee etäisyyden neliön mukaan.",

@@ -30,7 +30,7 @@
         {
           "text": "$0.20\\,\\text{Hz}$, because frequency is the reciprocal of the period: $f = 1 : T$.",
           "correct": true,
-          "feedback": "Correct. The rotation frequency tells how many turns are made per second: $f = 1 : T = 1 : 5.0\\,\\text{s} = 0.20\\,\\text{Hz}$. Today we study how rotation produces an alternating voltage."
+          "feedback": "Correct. The rotation frequency tells how many turns are made per second: $$\n\\begin{aligned}\n&f \\\\\n&= 1 : T \\\\\n&= 1 : 5.0\\,\\text{s} \\\\\n&= 0.20\\,\\text{Hz}\n\\end{aligned}\n$$. Today we study how rotation produces an alternating voltage."
         },
         {
           "text": "$5.0\\,\\text{Hz}$, because frequency is the same number as the period.",
