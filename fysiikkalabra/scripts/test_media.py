@@ -39,8 +39,9 @@ for lang, d in out.items():
 
 if "--no-browser" not in sys.argv:
     from playwright.sync_api import sync_playwright
+    import _browser
     with sync_playwright() as p:
-        b = p.chromium.launch()
+        b = _browser.launch(p)
         for lang, d in out.items():
             for w in (360, 1280):
                 pg = b.new_page(viewport={"width": w, "height": 800}); pg.goto((d / media_tips.PAGE).resolve().as_uri())
