@@ -677,3 +677,7 @@ Olemassa olevan tehtävän tason tai id:n muutos antaa yhä FULL:n. Testit `test
 Kuvatehtävät fy8-11-L2-09 (`fy8-11/sidosenergia-luku`) ja fy8-11-L3-06 (`fy8-9/aktiivisuus`), fi/en/fi-easy; ei taulukkotehtävää (FY8:ssa luvuissa 1, 4, 7, 10, 13, 16); 8l-b: `caption`-kentissä ei merkintää. Opit: en-tiede ei kulkenut carryllä, koska
 `translation_differs` vertaa alaindeksin ulkopuolista `\text{}`-sanaa (`\text{lämpöarvo}` / `\text{heating value}`, L3-05) ja `added-exercise` antoi pedagogiikalle full-katselmoinnin joka kielellä; molemmat siirrettiin erilliseen jaettuun korjaukseen (8p).
 Kulutus: agenttien kontekstien summa noin 480 k (katto 250 k ylittyi, koordinaattori salli jatkon).
+
+## §6 fy8-12 (PR #685, 2026-11-17)
+Kuvatehtävät fy8-12-L2-09 (lue d½ ja nettopulssitaajuus, 30 mm) ja fy8-12-L3-07 (paksuus, jolla taajuus on 1/50 alkuarvosta), molemmat kuvalla `fy8-12/tuntematon`, fi/en/fi-easy; ei taulukkotehtävää (FY8:ssa luvuissa 1, 4, 7, 10, 13, 16); 8l-b: ei merkintöjä.
+Opit: pedagogiikka hylkäsi L3-07:n rajan 1/20 (sama lasku kuin luvun esimerkissä) → 1/50; `unit` on kielineutraali kenttä (`check_i18n.py`), joten L2-09:n yksikkö on `1/min` kaikilla kielillä, ei käännetty `pulses/min`; 360 px:n leikkautumiset korjattiin jakamalla sijoitusketju riveiksi.
