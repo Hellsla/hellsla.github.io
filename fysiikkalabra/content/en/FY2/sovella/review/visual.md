@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e593b9a8eff8089d
+CONTENT-HASH: 1038050384135643
 
 ## Blocking
 (none)
@@ -8,10 +8,9 @@ CONTENT-HASH: e593b9a8eff8089d
 (none)
 
 ## Checked
-- Delta only: diff of commit baa0ac1bf5 for content/en/FY2/sovella/solutions.md (whitespace-only paragraph splits; words, numbers and order unchanged).
-- Splits fall at meaningful boundaries: the result line vs its interpretation; the biomass counterargument vs "My answer" vs the share note; each source-comparison example split into observation, further detail and conclusion. No formula or inline chain is cut, no $...$ spans a break, and each paragraph is one idea, under about 120 words.
-- Capture: the Finnish capture content/fi/FY2/sovella/review/shots/FY2-sovella-page-390-18.png (layout unchanged, no overflow or clipping). The English Sovella is not captured by the screenshot tool.
-- Hash run at start and end: e593b9a8eff8089d.
+- Delta, round 2, en solutions.md: `git diff -w` shows exactly 5 inserted blank lines, each before a list ("On a calm, frosty evening power could be produced by", "Hyväksytään myös" in both tasks, "Yleisiä virheitä" in both tasks). A script found no list item directly under a non-blank paragraph line, so no list is left unrendered; no sentence is split mid-way.
+- Captures: the Finnish captures content/fi/FY2/sovella/review/shots/ (contact-3, stage-fy2-s1-390-12) show the same structure: short paragraphs, maths and lists intact at 390 px. The screenshot tool does not capture the translated Sovella, so the English rendering is inferred from the identical Finnish structure.
+- Figures and the other captures were judged in the earlier PASS; the diff changes only whitespace.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

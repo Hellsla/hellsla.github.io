@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3a725bc875db6bf1
+CONTENT-HASH: 8c66783eeff22dc0
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md s1 e, "Biomassan osuus energiasta on vain noin $11\,\%$." — the one-sentence paragraph after the counter-argument now stands alone and reads as a loose end; join it to the previous paragraph ("Vastaan, ... suurimmillaan. Biomassan osuus ...").
+- [Minor] solutions.md s1 e, "Biomassan osuus energiasta on vain noin $11\,\%$." — still a one-sentence paragraph (round 1 note); join it to the previous paragraph.
 
 ## Checked
-- Delta review (round 1) of commit baa0ac1bf5, fi-easy solutions.md: nine paragraph breaks, whitespace only; no word, number or formula changed. Each break falls at a sentence boundary and starts a new idea (after a display chain: "vuodessa." / the comparison; Esimerkki in b and c split into example, assumptions, uncertainty; d: conclusion, comparison basis). No break falls inside a chain or formula.
-- Opened content/fi/FY2/sovella/review/shots/contact-4.png (Finnish captures; the fi-easy page is not captured). #41–#42 show the old long solution paragraphs, so the split removes the text walls seen there; a paragraph of 3 to 5 sentences fits the card at 390 px.
-- Hash run at start and end: 3a725bc875db6bf1.
+- Delta review (round 2) of solutions.md, fi-easy: the diff is five blank lines inserted before lists (after "Tyynenä pakkasiltana tehoa voisivat tuottaa", after the "Hyväksytään myös" intro paragraph of s1, and after the headings "Yleisiä virheitä" (s1), "Hyväksytään myös" and "Yleisiä virheitä" (s2)). No word, number or formula changed.
+- Read every list in the file (lines 45, 97, 106, 127, 171, 178): each now has a blank line before it, and a list item is never joined to the paragraph before it. The paragraph splits from round 1 are unchanged.
+- Opened content/fi/FY2/sovella/review/shots/contact-4.png (Finnish captures, same structure; the fi-easy page is not captured). #39 shows the power-source list rendered as bullets under its lead line. #42–#43 show the list of acceptable answers and the Yleisiä virheitä list as bullets, with the display formulas inside the items set in boxes. #48 shows the source-selection task's list as bullets. No list is run into a paragraph and no paragraph break is out of place.
+- Hash from the packet (the hash command did not accept this item id).
 
 ## Scores
 illustrations 4 (no figures) · typography 5 · Finnish 4 · accessibility 4
