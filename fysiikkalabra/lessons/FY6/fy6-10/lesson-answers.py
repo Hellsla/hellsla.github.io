@@ -55,8 +55,7 @@ a["siirto"] = F(q_s, q_s, 0.050) * 1000                       # 0,923 mN
 a["siirto-cm"] = F(q_s, q_s, 5.0) * 1000                      # r left in cm: 9,2 · 10^-5 mN
 a["siirto-ei-nelio"] = K * q_s ** 2 / 0.050 * 1000            # r not squared: 0,046 mN
 a["siirto-q-kerran"] = K * q_s / 0.050 ** 2 * 1000            # q not squared (k q / r^2): 5,8 · 10^7 mN
-# --- kertaus: 0,50 C in 2,0 s ---
-a["kertaus"] = 0.50 / 2.0                                     # 0,25 A
+# --- kertaus: qualitative (two like charged balloons repel), no numbers ---
 # --- tarkistus-2: figure check-graph, two equal charges q = 30 nC; the student reads F = 9,0 mN at r = 3,0 cm ---
 for r in (3, 4, 5, 6, 9):
     a[f"check-graph-{r}"] = F_sim(30, 30, r)                  # 8,99; 5,06; 3,24; 2,25; 1,0 mN (the figure's data)

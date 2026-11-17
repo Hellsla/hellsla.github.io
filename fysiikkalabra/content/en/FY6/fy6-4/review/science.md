@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d4fbd719c4387262
+CONTENT-HASH: e250902d768e474a
 
 ## Blocking
 
-
 ## Polish
 
-
 ## Checked
-- Lesson texts unchanged since the earlier PASS; spot-skimmed against content/fi/FY6/fy6-4 (same 342 lines, numbers, units, formulas, 7-step example). Sim label "same current" and legend wording are physically correct.
-- Re-review after the internal-energy concept fix: lesson, inquiry (feedback, howto) and the lang key sims.fy6-4.samavirta match the Finnish; terms and numbers unchanged; the sim shows the translated label.
+- batch delta review: recall prompt now a lamp with constant resistance (stated, so Ohm's law applies): I = 6.0 V / 100 Ω = 0.060 A = 60 mA, one correct option, distractors 600 mA, 17 A, 0.60 kA each wrong with correct feedback; prior-item chapter name matches FY6 chapter *Circuit, electric current and voltage*; new figure alt text (9.0 V, R1 = 30 Ω, R2 = 45 Ω in parallel) matches figures.py task_parallel; Christmas-lights photo and caption (connection decides what happens when one lamp breaks) consistent with the series/parallel theory and the opening illustration; hash same at start and end.

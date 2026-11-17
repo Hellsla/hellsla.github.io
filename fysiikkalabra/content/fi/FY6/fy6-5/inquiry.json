@@ -23,22 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: rinnankytkentä",
+      "title": "Kertaa: Ohmin laki",
       "optional": true,
-      "prompt": "Kaksi erilaista lamppua on kytketty rinnan samaan paristoon. Mikä seuraavista pitää aina paikkansa?",
+      "prompt": "Pieni lintu istuu paljaalla johdolla. Oletetaan, että linnun kehon yli olisi jännite $4{,}0\\,\\text{V}$ ja kehon resistanssi on $2{,}0\\,\\text{k}\\Omega$. Kuinka suuri virta linnun läpi kulkisi?",
       "choices": [
         {
-          "text": "Kummankin lampun yli on sama jännite.",
+          "text": "$2{,}0\\,\\text{mA}$",
           "correct": true,
-          "feedback": "Oikein. Rinnankytkennässä jokainen haara on kytketty samoihin kahteen kohtaan, joten jokaisen haaran yli on sama jännite (luku *Vastusten sarja- ja rinnankytkennät*). Tänään nähdään, miksi näin on ja miten virta jakautuu haaroihin."
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 4{,}0\\,\\text{V} : 2000\\,\\Omega \\\\ &= 0{,}0020\\,\\text{A} \\\\ &= 2{,}0\\,\\text{mA} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään selvitetään, mikä ratkaisee, kulkeeko kappaleen läpi virtaa, kun se koskettaa virtapiiriä."
         },
         {
-          "text": "Kummankin lampun kautta kulkee sama virta.",
-          "feedback": "Sama virta kulkee sarjaan kytkettyjen komponenttien läpi. Rinnankytkennässä virta jakautuu haaroihin, ja erilaisten lamppujen virrat ovat erisuuret. Yhteistä on jännite (luku *Vastusten sarja- ja rinnankytkennät*)."
+          "text": "$2{,}0\\,\\text{A}$",
+          "feedback": "Jaoit $4{,}0\\,\\text{V}$ luvulla $2{,}0$ ja unohdit, että k tarkoittaa tuhatta. Koska $2{,}0\\,\\text{k}\\Omega = 2000\\,\\Omega$, virta on $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega$, joten $I = 2{,}0\\,\\text{mA}$."
         },
         {
-          "text": "Pariston jännite jakautuu lamppujen kesken puoliksi.",
-          "feedback": "Jännite jakautuu komponenttien kesken sarjaankytkennässä. Rinnan kytketyt lamput ovat kumpikin suoraan pariston napojen välissä, joten kummankin yli on koko pariston jännite (luku *Vastusten sarja- ja rinnankytkennät*)."
+          "text": "$8{,}0\\,\\text{kA}$",
+          "feedback": "Kerroit jännitteen ja resistanssin. Ohmin laki on $U = RI$, joten virta on jännite jaettuna resistanssilla: $4{,}0\\,\\text{V} : 2000\\,\\Omega = 2{,}0\\,\\text{mA}$."
+        },
+        {
+          "text": "$500\\,\\text{A}$",
+          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 4{,}0\\,\\text{V} : 2000\\,\\Omega$, eli $I = 2{,}0\\,\\text{mA}$."
         }
       ]
     },

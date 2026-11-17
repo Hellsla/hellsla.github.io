@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c9e9e1f66c903361
+CONTENT-HASH: 25620b211e5bd87b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.
+- batch delta review: opened Kertaa box rendered from preview at 390 px (opened, answer selected); prompt wraps cleanly, maths renders, no horizontal overflow.

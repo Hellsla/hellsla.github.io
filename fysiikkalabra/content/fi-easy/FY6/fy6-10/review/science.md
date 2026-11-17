@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4c8a617f47644757
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 33ce2b5bd2f03d25
 
 ## Blocking
-- none
 
 ## Polish
-- "pallosymmetrisesti eli tasaisesti joka suuntaan": the gloss fits a uniform sphere; spherical symmetry also allows a density that varies with r. Acceptable at this level (C).
 
 ## Checked
-- Coulomb: tarkka pistevarauksille; pallosymmetrinen varaus ↔ keskipisteen pistevaraus; lähellä olevat johtavat pallot: pintavaraus jakautuu uudelleen (= fi).
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+batch delta review: new qualitative retrieval (two negatively charged balloons repel), one correct option, attract and 'insulators do not interact' distractors with correct feedback (an insulator can be charged by rubbing); cited chapter Virtapiiri, sähkövirta ja jännite does state that like charges repel; removed kertaus key in lesson-answers.py matches; figures.json strings are teacher-approved figure text, numbers unchanged (3/6/9/12 cm -> 4,0/1,0/0,44/0,25 mN rechecked).

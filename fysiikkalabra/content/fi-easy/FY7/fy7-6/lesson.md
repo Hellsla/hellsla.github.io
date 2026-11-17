@@ -327,7 +327,9 @@ Opiskelija pudottaa $25\,\text{g}$:n neodyymimagneetin $1{,}20\,\text{m}$:n pitu
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Magneetin massa $m = 25\,\text{g}$, putken pituus eli pudotuskorkeus $h = 1{,}20\,\text{m}$, putoamisaika $t = 8{,}0\,\text{s}$ ja $g = 9{,}81\,\text{m/s}^2$. Kysytään, kuinka paljon putken sisäenergia kasvaa. Merkitään sitä $Q$.
+**Tunnetut ja kysytty.** Magneetin massa $m = 25\,\text{g}$, putken pituus eli pudotuskorkeus $h = 1{,}20\,\text{m}$, putoamisaika $t = 8{,}0\,\text{s}$ ja $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään, kuinka paljon putken sisäenergia kasvaa. Merkitään sitä $Q$.
 
 <!-- vaihe -->
 

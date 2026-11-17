@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cf2338df95a049df
+CONTENT-HASH: 480116802ef413d9
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 3-18 (fy7-3/wire-graph-task) — dashed guides to all three points (earlier note stands).
+- none
 
 ## Checked
-- Delta (reflow): Järkevyys of the 800 A line task, Perustelu kohtaan d) (322 µT ≈ 320 µT), the tight single-layer coil check (B = µ0 I : d_e, four rows), the stretched coil B1 and B2 blocks, and the Tarkistus of the N = 497 coil.
-- Own captures of these opened solutions from the current preview at 390 px, read at full size; formula overflow measured at 360, 390 and 1280 px: none.
-- Rows start with a relation or a colon between whole quantities; no number parted from its power of ten or unit. Hash identical at start and end.
+- Delta (md-paragraphs): the diff of solutions.md (fi, fy7-3) read word by word: only paragraphs cut in two, words unchanged.
+- Opened fy7-3 L2 part 12 and L3 parts 1-2 (fi). Captures opened at 1280 px, solutions open; paragraph breaks sit between whole thoughts, formula boxes, Vastaus and Järkevyys blocks intact, no clipping or overflow.
+- Hash identical at start and end.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 5 · accessibility 5

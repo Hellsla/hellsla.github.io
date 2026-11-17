@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cc0c6be54948b8a2
+CONTENT-HASH: eeaccc7c40351a6b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: fy6-8 (fi-easy), lesson.md line 304, reversed-battery sentence. Physics: with one of n series cells reversed, E = (sum of the others) − E_rev = E_all − 2·E_rev, so "smaller by twice the reversed battery's source voltage" is right (now true for unequal cells too, as round 1 asked); agrees with solutions.md (E1+E1−E1 = 1.5 V vs 4.5 V, I = 0.316 A vs 0.95 A, factor 3) and the exercise text; internal resistance still added; no choice, number or symbol changed; hash identical at start and end.
+batch delta review: retrieval I = P : U = 55 W : 12 V = 4,58 ≈ 4,6 A (P = UI, 'saadaan', then I = P : U in aligned rows); distractors 660 A, 0,22 A, 43 A recomputed with right feedback; one correct option; worked-example stage split, numbers unchanged.

@@ -101,4 +101,8 @@ a["tarkistus-3-W"] = 0.5 * 220e-6 * 330 ** 2                  # 11,98 J, about 1
 # --- exit ticket: C = 100 µF, U = 12 V ---
 a["exit-Q"] = 100e-6 * 12 * 1e3                                # 1,2 mC
 
+# kertaus: flash 4,0 kW for 1,0 ms
+a["kertaus-E"] = 4000 * 1.0e-3                              # 4,0 J
+a["kertaus-E-kJ"] = 4000 * 1.0                               # 4000 J (ms not converted)
+a["kertaus-E-W"] = 4.0 * 1.0e-3                              # 4,0e-3 J (kW as W)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

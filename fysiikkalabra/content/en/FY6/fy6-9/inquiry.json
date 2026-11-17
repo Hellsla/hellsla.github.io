@@ -23,22 +23,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recall: terminal voltage",
+      "title": "Review: electric power",
       "optional": true,
-      "prompt": "A current is drawn from a battery. The source voltage of the battery is $E$ and its internal resistance is $R_\\text{s}$. Which statement about the terminal voltage $U$ of the battery is true?",
+      "prompt": "A phone charger gives a voltage of $5.0\\,\\text{V}$ and a current of $2.0\\,\\text{A}$. How large is the power of the charger?",
       "choices": [
         {
-          "text": "$U$ is smaller than $E$, because part of the source voltage is left in the internal resistance of the battery.",
+          "text": "$10\\,\\text{W}$",
           "correct": true,
-          "feedback": "Correct. When a current $I$ is drawn from a battery, the terminal voltage is $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*). Today the current passes through the battery in the other direction, and we will see what happens to the terminal voltage then."
+          "feedback": "Correct. $$\\begin{aligned} P &= UI \\\\ &= 5.0\\,\\text{V} \\cdot 2.0\\,\\text{A} \\\\ &= 10\\,\\text{W} \\end{aligned}$$ (chapter *Electric power and the heating of a resistor*). Today we look at what changes between the charger and the battery while charging."
         },
         {
-          "text": "$U$ is equal to $E$, because the source voltage is a property of the battery itself.",
-          "feedback": "The terminal voltage is equal to the source voltage only when no current flows. When a current is drawn, the voltage $R_\\text{s} I$ in the internal resistance lowers the terminal voltage: $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*)."
+          "text": "$2.5\\,\\text{W}$",
+          "feedback": "You divided the voltage by the current. That gives the resistance, $5.0\\,\\text{V} : 2.0\\,\\text{A} = 2.5\\,\\Omega$, not the power. Power is voltage times current: $P = UI$, so $P = 10\\,\\text{W}$."
         },
         {
-          "text": "$U$ is greater than $E$, because the current increases the voltage between the terminals of the battery.",
-          "feedback": "When a battery discharges, the opposite happens: the current passes through the internal resistance, and the terminal voltage is smaller, $U = E - R_\\text{s} I$ (chapter *Electromotive force and internal resistance*)."
+          "text": "$7.0\\,\\text{W}$",
+          "feedback": "Voltage and current are different quantities and cannot be added. Power is their product: $P = UI$, so $P = 10\\,\\text{W}$."
+        },
+        {
+          "text": "$0.40\\,\\text{W}$",
+          "feedback": "You divided the current by the voltage. Power is voltage times current: $P = UI$, so $P = 10\\,\\text{W}$."
         }
       ]
     },

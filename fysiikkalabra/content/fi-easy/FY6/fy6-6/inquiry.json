@@ -26,20 +26,24 @@
       "type": "choice",
       "title": "Kertaa: Ohmin laki",
       "optional": true,
-      "prompt": "Vastuksen resistanssi on $30\\,\\Omega$. Sen yli on jännite $6{,}0\\,\\text{V}$. Kuinka suuri virta kulkee vastuksen läpi?",
+      "prompt": "Paahtimen lämmityslangan resistanssi on $46\\,\\Omega$, ja sen yli on jännite $230\\,\\text{V}$. Kuinka suuri virta langan läpi kulkee?",
       "choices": [
         {
-          "text": "$0{,}20\\,\\text{A}$",
-          "correct": true,
-          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 6{,}0\\,\\text{V} : 30\\,\\Omega \\\\ &= 0{,}20\\,\\text{A} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään Ohmin laki yhdistetään tehoon."
-        },
-        {
-          "text": "$180\\,\\text{A}$",
-          "feedback": "Kerroit jännitteen ja resistanssin. Ohmin laki on $U = RI$. Virta on siis jännite jaettuna resistanssilla: $6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$ (luku *Resistanssi ja Ohmin laki*)."
-        },
-        {
           "text": "$5{,}0\\,\\text{A}$",
-          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$. Suurempi resistanssi antaa pienemmän virran. Siis $I = 6{,}0\\,\\text{V} : 30\\,\\Omega = 0{,}20\\,\\text{A}$ (luku *Resistanssi ja Ohmin laki*)."
+          "correct": true,
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} I &= U : R \\\\ &= 230\\,\\text{V} : 46\\,\\Omega \\\\ &= 5{,}0\\,\\text{A} \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään Ohmin laki yhdistetään tehoon."
+        },
+        {
+          "text": "$0{,}20\\,\\text{A}$",
+          "feedback": "Jaoit resistanssin jännitteellä. Virta on $I = U : R$: suurempi resistanssi antaa pienemmän virran, joten $I = 230\\,\\text{V} : 46\\,\\Omega$, eli $I = 5{,}0\\,\\text{A}$."
+        },
+        {
+          "text": "$11\\,\\text{kA}$",
+          "feedback": "Kerroit jännitteen ja resistanssin. Ohmin laki on $U = RI$, joten virta on jännite jaettuna resistanssilla: $230\\,\\text{V} : 46\\,\\Omega = 5{,}0\\,\\text{A}$."
+        },
+        {
+          "text": "$184\\,\\text{A}$",
+          "feedback": "Jännite ja resistanssi ovat eri suureita, joten niitä ei voi vähentää toisistaan. Virta on $I = U : R$, joten $I = 5{,}0\\,\\text{A}$."
         }
       ]
     },

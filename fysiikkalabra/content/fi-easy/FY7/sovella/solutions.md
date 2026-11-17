@@ -2,7 +2,11 @@
 
 ### a)
 **Kysytty:** suoraan kulkevaan boori-11-ioniin vaikuttavat voimat ja kumpi valitsimen levy on positiivinen
-**Periaate:** Ioniin vaikuttaa kaksi voimaa. Magneettinen voima syntyy, koska ioni liikkuu magneettikentässä. Sähköinen voima syntyy, koska levyjen välillä on sähkökenttä. Painovoima on mitättömän pieni. Ioni kulkee suoraan tasaisella nopeudella vain, jos voimien summa on nolla. Silloin voimat ovat yhtä suuret ja vastakkaissuuntaiset. Magneettinen voima on kohtisuorassa sekä nopeutta että kenttää vastaan. Sen suunta saadaan oikean käden säännöstä. Positiiviseen varaukseen vaikuttava sähköinen voima osoittaa samaan suuntaan kuin sähkökenttä.
+**Periaate:** Ioniin vaikuttaa kaksi voimaa. Magneettinen voima syntyy, koska ioni liikkuu magneettikentässä. Sähköinen voima syntyy, koska levyjen välillä on sähkökenttä. Painovoima on mitättömän pieni.
+
+Ioni kulkee suoraan tasaisella nopeudella vain, jos voimien summa on nolla. Silloin voimat ovat yhtä suuret ja vastakkaissuuntaiset.
+
+Magneettinen voima on kohtisuorassa sekä nopeutta että kenttää vastaan. Sen suunta saadaan oikean käden säännöstä. Positiiviseen varaukseen vaikuttava sähköinen voima osoittaa samaan suuntaan kuin sähkökenttä.
 
 <svg data-fig="fy7-s1-forces" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva nopeusvalitsimesta. Ylempi levy on positiivinen ja alempi negatiivinen, joten sähkökenttä E osoittaa levyjen välissä alaspäin. Magneettikenttä osoittaa paperiin sisään, mitä kuvaavat vihreät ristit. Levyjen välissä on positiivinen ioni, jonka nopeus v osoittaa oikealle. Ioniin vaikuttaa magneettinen voima F m ylöspäin ja sähköinen voima F s alaspäin. Voimanuolet ovat yhtä pitkät, koska suoraan kulkevaan ioniin vaikuttavat voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
   <rect x="60" y="38" width="480" height="12" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
@@ -66,7 +70,9 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 ### d)
 **Annettu:** $v = 7{,}251 \cdot 10^{5}\,\text{m/s}$, $m_{11} = 1{,}8281 \cdot 10^{-26}\,\text{kg}$, $m_{10} = 1{,}6627 \cdot 10^{-26}\,\text{kg}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ ja boori-11-ionien radan säde $r = 40{,}0\,\text{cm}$
 **Kysytty:** analysointimagneetin magneettivuon tiheys $B$ ja boori-10-ionien osumakohdan etäisyys boori-11-ionien raosta
-**Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei muuta vauhtia, vaan kääntää liikkeen suuntaa. Homogeenisessa kentässä ioni kulkee tasaista ympyräliikettä, ja magneettinen voima on sen keskeisvoima. Valitsimen jälkeen kaikilla ioneilla on sama nopeus. Siksi radan säde on suoraan verrannollinen ionin massaan. Puoliympyrän jälkeen ioni osuu seinään halkaisijan $2r$ päähän tulokohdasta. Kahden ionilajin osumakohtien etäisyys on siis niiden halkaisijoiden erotus.
+**Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan. Siksi se ei muuta vauhtia, vaan kääntää liikkeen suuntaa. Homogeenisessa kentässä ioni kulkee tasaista ympyräliikettä, ja magneettinen voima on sen keskeisvoima.
+
+Valitsimen jälkeen kaikilla ioneilla on sama nopeus. Siksi radan säde on suoraan verrannollinen ionin massaan. Puoliympyrän jälkeen ioni osuu seinään halkaisijan $2r$ päähän tulokohdasta. Kahden ionilajin osumakohtien etäisyys on siis niiden halkaisijoiden erotus.
 **Kaava:** $evB = \dfrac{m v^2}{r}$, josta $B = \dfrac{m_{11} v}{e r}$. Samalla nopeudella ja kentällä $r_{10} = \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r$, ja osumakohtien etäisyys on $\Delta x = 2r - 2r_{10} = 2(r - r_{10})$.
 **Muunnokset:** $r = 40{,}0\,\text{cm} = 0{,}400\,\text{m}$
 **Sijoitus:** $mv = 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text{m/s} = 1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}$, joten $B = \dfrac{1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}400\,\text{m}} = 0{,}2069\,\text{T}$. Boori-10-ionien säde on $r_{10} = \dfrac{1{,}6627}{1{,}8281} \cdot 0{,}400\,\text{m} = 0{,}3638\,\text{m}$, joten $\Delta x = 2 \cdot (0{,}400\,\text{m} - 0{,}3638\,\text{m}) = 0{,}0724\,\text{m}$
@@ -78,7 +84,9 @@ Positiiviseen ioniin vaikuttava sähköinen voima osoittaa samaan suuntaan kuin 
 **Periaate:** Valitsimen läpi kulkevan ionin voimat ovat tasapainossa: $eE = evB_\text{s}$. Tästä varaus supistuu, eikä massa esiinny yhtälössä lainkaan. Valitsin päästää siis suoraan läpi jokaisen ionin, jonka nopeus on $E : B_\text{s}$. Kiihdytyksen jälkeinen nopeus riippuu sekä massasta että liike-energiasta.
 **Mallivastaus:** *Ilman energian vaihtelua.* Täyden kiihdytyksen saanut boori-10-ioni on kevyempi, joten sen nopeus on suurempi: $v_{10} = \sqrt{\dfrac{2eU}{m_{10}}}$. Sijoitetaan b-kohdan arvot ja massa $m_{10} = 1{,}6627 \cdot 10^{-26}\,\text{kg}$. Saadaan $v_{10} \approx 7{,}60 \cdot 10^{5}\,\text{m/s}$. Tällä nopeudella magneettinen voima on suurempi kuin sähköinen. Ioni kaartuu valitsimessa ylöspäin eikä pääse läpi. Tässä insinööri on oikeassa.
 
-*Energian vaihdellessa.* Boori-10-ioni kulkee valitsimen läpi, jos sen nopeus on sama kuin boori-11-ionien eli $7{,}25 \cdot 10^{5}\,\text{m/s}$. Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$. Boori-11-ionin liike-energia on $\tfrac{1}{2} m_{11} v^2$. Suhde on siis $m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91$. Boori-10-ioni, jonka liike-energia on noin $9\,\%$ täyttä pienempi, pääsee siis suoraan läpi. Kun energia vaihtelee jopa $10\,\%$, tällaisia ioneja on varmasti.
+*Energian vaihdellessa.* Boori-10-ioni kulkee valitsimen läpi, jos sen nopeus on sama kuin boori-11-ionien eli $7{,}25 \cdot 10^{5}\,\text{m/s}$. Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$. Boori-11-ionin liike-energia on $\tfrac{1}{2} m_{11} v^2$.
+
+Suhde on siis $m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91$. Boori-10-ioni, jonka liike-energia on noin $9\,\%$ täyttä pienempi, pääsee siis suoraan läpi. Kun energia vaihtelee jopa $10\,\%$, tällaisia ioneja on varmasti.
 
 *Johtopäätös.* Ehdotus ei käy. Valitsin valitsee nopeuden, ei massaa. Kun energia vaihtelee, sen läpi pääsee myös boori-10-ioneja. Vasta analysointimagneetti erottaa samalla nopeudella kulkevat ionit massan mukaan, koska radan säde on silloin suoraan verrannollinen massaan.
 
@@ -213,7 +221,11 @@ $\approx 5{,}2\,\text{MW}$.
 ### e)
 **Annettu:** johtimien etäisyys $r = 1{,}5\,\text{m}$, virta normaalikäytössä $I = 300\,\text{A}$ (a-kohta) ja oikosulussa $I_\text{k} = 8{,}0\,\text{kA}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$, johtimen poikkipinta-ala $A = 150\,\text{mm}^2$ ja alumiinin tiheys $\rho_\text{Al} = 2700\,\text{kg/m}^3$
 **Kysytty:** vetävätkö vai hylkivätkö johtimet toisiaan, voima johtimen metriä kohti $F : l$ kummassakin tilanteessa ja sen merkitys
-**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Johtimissa kulkee siis yhtä suuri virta vastakkaisiin suuntiin. Kumpikin johdin on pitkä suora johdin. Johtimet ovat paljon pidempiä kuin niiden etäisyys. Siksi toisen johtimen kohdalla oleva magneettikenttä saadaan suoran johtimen kentän kaavasta. Kenttä on kohtisuorassa toista johdinta vastaan, joten siihen kohdistuu voima $F = IlB$. Oikean käden säännön mukaan vastakkaissuuntaiset virrat hylkivät toisiaan. Vaihtovirralla virrat vaihtavat suuntaa yhtä aikaa. Ne ovat siis aina vastakkaissuuntaiset, ja johtimet hylkivät toisiaan koko ajan. Johtimen metrin paino saadaan sen massasta, joka on tiheyden ja tilavuuden tulo.
+**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin. Johtimissa kulkee siis yhtä suuri virta vastakkaisiin suuntiin. Kumpikin johdin on pitkä suora johdin. Johtimet ovat paljon pidempiä kuin niiden etäisyys.
+
+Siksi toisen johtimen kohdalla oleva magneettikenttä saadaan suoran johtimen kentän kaavasta. Kenttä on kohtisuorassa toista johdinta vastaan, joten siihen kohdistuu voima $F = IlB$. Oikean käden säännön mukaan vastakkaissuuntaiset virrat hylkivät toisiaan.
+
+Vaihtovirralla virrat vaihtavat suuntaa yhtä aikaa. Ne ovat siis aina vastakkaissuuntaiset, ja johtimet hylkivät toisiaan koko ajan. Johtimen metrin paino saadaan sen massasta, joka on tiheyden ja tilavuuden tulo.
 **Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$ ja $F = IlB$, joten $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. Painoa varten $\dfrac{G}{l} = \rho_\text{Al} A g$.
 **Muunnokset:** $I_\text{k} = 8{,}0\,\text{kA} = 8{,}0 \cdot 10^{3}\,\text{A}$ ja $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** Normaalikäytössä $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 4{,}0 \cdot 10^{-5}\,\text{T}$ ja $\dfrac{F}{l} = 300\,\text{A} \cdot 4{,}0 \cdot 10^{-5}\,\text{T} = 0{,}012\,\text{N/m}$. Oikosulussa $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8{,}0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 1{,}067 \cdot 10^{-3}\,\text{T}$ ja $\dfrac{F}{l} = 8{,}0 \cdot 10^{3}\,\text{A} \cdot 1{,}067 \cdot 10^{-3}\,\text{T} = 8{,}53\,\text{N/m}$. Johtimen paino metriä kohti on $$
@@ -225,7 +237,11 @@ $\approx 5{,}2\,\text{MW}$.
 \end{aligned}
 $$.
 **Vastaus:** Johtimet hylkivät toisiaan. Voima on normaalikäytössä noin $0{,}012\,\text{N}$ ja oikosulussa noin $8{,}5\,\text{N}$ johtimen jokaista metriä kohti. Vastauksessa on kaksi merkitsevää numeroa, kuten etäisyydessä ja oikosulkuvirrassa. Normaalikäytössä voimalla ei ole merkitystä. Oikosulussa voima on noin kaksinkertainen johtimen painoon nähden.
-**Järkevyys:** Normaalikäytössä voima on vain noin $0{,}3\,\%$ johtimen painosta, joka on noin $4{,}0\,\text{N}$ metriä kohti. Oikosulussa virta on noin $27$-kertainen, ja voima kasvaa virran neliönä. Voima on siis noin $710$-kertainen: $8{,}53 : 3{,}97 \approx 2{,}1$ kertaa johtimen paino. Pylväiden välillä roikkuvat johtimet heilahtavat silloin erilleen. Ne voivat heilahtaa takaisin ja lyödä yhteen. Siksi johtimien väli mitoitetaan oikosulun mukaan, ja oikosulku katkaistaan sekunnin murto-osassa. Näin suuri virta on mahdollinen vain lähellä sähköasemaa, koska siellä johdon resistanssi vikapaikkaan asti on pieni.
+**Järkevyys:** Normaalikäytössä voima on vain noin $0{,}3\,\%$ johtimen painosta, joka on noin $4{,}0\,\text{N}$ metriä kohti. Oikosulussa virta on noin $27$-kertainen, ja voima kasvaa virran neliönä.
+
+Voima on siis noin $710$-kertainen: $8{,}53 : 3{,}97 \approx 2{,}1$ kertaa johtimen paino. Pylväiden välillä roikkuvat johtimet heilahtavat silloin erilleen. Ne voivat heilahtaa takaisin ja lyödä yhteen.
+
+Siksi johtimien väli mitoitetaan oikosulun mukaan, ja oikosulku katkaistaan sekunnin murto-osassa. Näin suuri virta on mahdollinen vain lähellä sähköasemaa, koska siellä johdon resistanssi vikapaikkaan asti on pieni.
 
 ### Hyväksytään myös
 - a-kohdan voi laskea suoraan kaavalla $P_\text{h} = \dfrac{R P^2}{U^2}$. b-kohdan voi laskea a-kohdan tuloksesta suhteella $P_\text{h,110} = P_\text{h,20} \cdot (20 : 110)^2$.
@@ -265,7 +281,9 @@ Kuuma aihio säteilee kokonaisuudessaan valtavalla teholla, joten pienikin näky
 ### c)
 **Annettu:** ytimen taitekerroin $n_1 = 1{,}44$, kuoren $n_2 = 1{,}42$ ja ilman $1{,}00$
 **Kysytty:** ytimen ja kuoren rajapinnan rajakulma $\alpha_\text{r}$ ja suurin tulokulma $\theta$ kuidun päätypinnalla
-**Periaate:** Valo kulkee kahden rajapinnan kautta. Päätypinnalla se tulee ilmasta ytimeen ja taittuu normaalia kohti kulmaan $\beta$ (taittumislaki). Ytimen sivupinnalla valo heijastuu kokonaan, jos sen tulokulma on vähintään rajakulma. Päätypinta on kohtisuorassa sivupintaa vastaan. Siksi päätypinnan normaali on sivupinnan suuntainen, ja säteen tulokulma sivupinnalla on $90^\circ - \beta$. Mitä suurempi on $\theta$, sitä suurempi on $\beta$ ja sitä pienempi on sivupinnan tulokulma. Suurimmalla sallitulla tulokulmalla sivupinnan tulokulma on siis täsmälleen rajakulma.
+**Periaate:** Valo kulkee kahden rajapinnan kautta. Päätypinnalla se tulee ilmasta ytimeen ja taittuu normaalia kohti kulmaan $\beta$ (taittumislaki). Ytimen sivupinnalla valo heijastuu kokonaan, jos sen tulokulma on vähintään rajakulma. Päätypinta on kohtisuorassa sivupintaa vastaan.
+
+Siksi päätypinnan normaali on sivupinnan suuntainen, ja säteen tulokulma sivupinnalla on $90^\circ - \beta$. Mitä suurempi on $\theta$, sitä suurempi on $\beta$ ja sitä pienempi on sivupinnan tulokulma. Suurimmalla sallitulla tulokulmalla sivupinnan tulokulma on siis täsmälleen rajakulma.
 
 <svg data-fig="fy7-s4-fibre" viewBox="0 0 600 300" role="img" aria-label="Kaavakuva, kulmat liioiteltuja: valokuidun pää sivulta. Keskellä on ydin, jonka taitekerroin on n 1. Ylä- ja alapuolella on kuori, jonka taitekerroin on n 2. Vasemmalla on ilmaa. Säde tulee ilmasta kuidun päätypintaan kulmassa theeta päätypinnan normaaliin nähden. Ytimessä säde taittuu kulmaan beeta. Säde osuu ytimen ja kuoren rajapintaan kulmassa alfa r rajapinnan normaaliin nähden ja heijastuu kokonaan takaisin ytimeen. Kulmat beeta ja alfa r ovat yhdessä 90 astetta." style="max-width:100%;font-size:24px">
   <rect x="200" y="40" width="380" height="50" fill="#e7f5ff" stroke="#8a96a3" stroke-width="1.5"/>
@@ -309,12 +327,18 @@ Kuuma aihio säteilee kokonaisuudessaan valtavalla teholla, joten pienikin näky
 ### e)
 **Annettu:** kalvon taitekerroin $n = 1{,}38$, lasin taitekerroin $1{,}50$, ilman $1{,}00$ ja aallonpituus $\lambda = 2{,}0\,\mu\text{m}$; valo tulee kohtisuoraan
 **Kysytty:** ohuimman heijastusta vähentävän kalvon paksuus $d$ ja onko vihertävä heijastus merkki väärästä kalvosta
-**Periaate:** Kalvon ylä- ja alapinnasta heijastuneet aallot interferoivat. Valo tulee kohtisuoraan. Alapinnasta heijastunut aalto kulkee silloin lisämatkan $2d$ kalvossa, jossa aallonpituus on $\lambda : n$. Matkaero on siis $2nd$ ilman aallonpituuksina. Kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}50$). Kumpikin heijastus kääntää aallon, joten käännökset kumoavat toisensa. Silloin aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Ne vahvistavat toisiaan, kun $2nd = k\lambda$. Ohuin heikentävä kalvo saadaan arvolla $k = 0$.
+**Periaate:** Kalvon ylä- ja alapinnasta heijastuneet aallot interferoivat. Valo tulee kohtisuoraan. Alapinnasta heijastunut aalto kulkee silloin lisämatkan $2d$ kalvossa, jossa aallonpituus on $\lambda : n$.
+
+Matkaero on siis $2nd$ ilman aallonpituuksina. Kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}50$). Kumpikin heijastus kääntää aallon, joten käännökset kumoavat toisensa.
+
+Silloin aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Ne vahvistavat toisiaan, kun $2nd = k\lambda$. Ohuin heikentävä kalvo saadaan arvolla $k = 0$.
 **Kaava:** $2nd = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n}$
 **Muunnokset:** $\lambda = 2{,}0\,\mu\text{m} = 2{,}0 \cdot 10^{-6}\,\text{m}$
 **Sijoitus:** $d = \dfrac{2{,}0 \cdot 10^{-6}\,\text{m}}{4 \cdot 1{,}38} = 3{,}62 \cdot 10^{-7}\,\text{m} = 362\,\text{nm}$
 **Vastaus:** Ohuin kalvo on $d \approx 0{,}36\,\mu\text{m}$ eli noin $360\,\text{nm}$ paksu. Vastauksessa on kaksi merkitsevää numeroa, kuten aallonpituudessa. Vihertävä heijastus ei ole merkki väärästä kalvosta. Se kuuluu infrapunalle suunnitellulle kalvolle.
-**Järkevyys:** Kalvo on neljäsosa aallonpituudesta kalvossa: $2000\,\text{nm} : 1{,}38 = 1449\,\text{nm}$, ja sen neljäsosa on $362\,\text{nm}$. Näin heijastuksenestokalvossa kuuluu olla. Matkaero on $2nd = 2 \cdot 1{,}38 \cdot 362\,\text{nm} = 1000\,\text{nm}$. Näkyvän valon alueella se on kaksi kertaa $500\,\text{nm}$, joten vihertävä valo $500\,\text{nm}$ vahvistuu ($2nd = 2\lambda$). Punainen valo $667\,\text{nm}$ ($2nd = 1{,}5\lambda$) ja violetti valo $400\,\text{nm}$ ($2nd = 2{,}5\lambda$) heikkenevät. Siksi ikkuna heijastaa vihertävää valoa, ja asentajan epäily on aiheeton.
+**Järkevyys:** Kalvo on neljäsosa aallonpituudesta kalvossa: $2000\,\text{nm} : 1{,}38 = 1449\,\text{nm}$, ja sen neljäsosa on $362\,\text{nm}$. Näin heijastuksenestokalvossa kuuluu olla. Matkaero on $2nd = 2 \cdot 1{,}38 \cdot 362\,\text{nm} = 1000\,\text{nm}$.
+
+Näkyvän valon alueella se on kaksi kertaa $500\,\text{nm}$, joten vihertävä valo $500\,\text{nm}$ vahvistuu ($2nd = 2\lambda$). Punainen valo $667\,\text{nm}$ ($2nd = 1{,}5\lambda$) ja violetti valo $400\,\text{nm}$ ($2nd = 2{,}5\lambda$) heikkenevät. Siksi ikkuna heijastaa vihertävää valoa, ja asentajan epäily on aiheeton.
 
 ### Hyväksytään myös
 - a-kohdassa lämpötilan voi muuttaa celsiusasteiksi vähentämällä $273$. Vastaukseksi hyväksytään $1180\,{}^\circ\text{C}$ tai $1176\,{}^\circ\text{C}$.
@@ -461,9 +485,15 @@ $$ ja $$
 \end{aligned}
 $$. Aallonpituuden epävarmuus on siis noin $\pm 3\,\text{nm}$, eli $\lambda = (589 \pm 3)\,\text{nm}$. Myös hilavakiossa on pieni epävarmuus, joka vain kasvattaa tätä.
 
-*Päätelmän arviointi.* Heliumin viiva $587{,}56\,\text{nm}$ ja natriumin viivat $588{,}99\,\text{nm}$ ja $589{,}59\,\text{nm}$ ovat kaikki välillä $586$–$592\,\text{nm}$. Heliumin ja natriumin ero, noin $1{,}4\,\text{nm}$, on epävarmuutta pienempi. Kulmina ero on vain $20{,}64^\circ$ ja $20{,}70^\circ$ eli noin $0{,}05^\circ$. Se on alle goniometrin lukematarkkuuden. Mittaus ei siis erota natriumia heliumista, eikä ryhmän päätelmä ole perusteltu tällä mittauksella. Lampussa voi olla natriumia, mutta se ei seuraa tästä mittauksesta.
+*Päätelmän arviointi.* Heliumin viiva $587{,}56\,\text{nm}$ ja natriumin viivat $588{,}99\,\text{nm}$ ja $589{,}59\,\text{nm}$ ovat kaikki välillä $586$–$592\,\text{nm}$. Heliumin ja natriumin ero, noin $1{,}4\,\text{nm}$, on epävarmuutta pienempi. Kulmina ero on vain $20{,}64^\circ$ ja $20{,}70^\circ$ eli noin $0{,}05^\circ$.
 
-*Parannukset.* Maksimien ehdosta $\sin\theta = \dfrac{k\lambda}{d}$ nähdään, että kun aallonpituus muuttuu, kulman sini muuttuu $k$-kertaisesti. Toisessa kertaluvussa heliumin ja natriumin maksimit ovat kulmissa $44{,}84^\circ$ ja $44{,}98^\circ$. Ero on siis noin $0{,}14^\circ$, lähes kolminkertainen ensimmäiseen kertalukuun verrattuna. Aallonpituuden epävarmuus on noin $\pm 1\,\text{nm}$. Toinen kertaluku helpottaisi erottamista, mutta yksinään se riittää vain niukasti. Kulmaero on vain hieman lukematarkkuutta $0{,}1^\circ$ suurempi, ja $\pm 1\,\text{nm}$ on lähes yhtä suuri kuin viivojen väli $1{,}4\,\text{nm}$. Siksi tarvitaan lisäksi tiheämpi hila, jossa kulmat ovat suurempia, tai tarkempi goniometri. Lisäksi kulman voi mitata keskimaksimin molemmin puolin ja käyttää puolta niiden välisestä kulmasta. Se poistaa hilan kallistuksen aiheuttaman virheen.
+Se on alle goniometrin lukematarkkuuden. Mittaus ei siis erota natriumia heliumista, eikä ryhmän päätelmä ole perusteltu tällä mittauksella. Lampussa voi olla natriumia, mutta se ei seuraa tästä mittauksesta.
+
+*Parannukset.* Maksimien ehdosta $\sin\theta = \dfrac{k\lambda}{d}$ nähdään, että kun aallonpituus muuttuu, kulman sini muuttuu $k$-kertaisesti. Toisessa kertaluvussa heliumin ja natriumin maksimit ovat kulmissa $44{,}84^\circ$ ja $44{,}98^\circ$. Ero on siis noin $0{,}14^\circ$, lähes kolminkertainen ensimmäiseen kertalukuun verrattuna.
+
+Aallonpituuden epävarmuus on noin $\pm 1\,\text{nm}$. Toinen kertaluku helpottaisi erottamista, mutta yksinään se riittää vain niukasti. Kulmaero on vain hieman lukematarkkuutta $0{,}1^\circ$ suurempi, ja $\pm 1\,\text{nm}$ on lähes yhtä suuri kuin viivojen väli $1{,}4\,\text{nm}$.
+
+Siksi tarvitaan lisäksi tiheämpi hila, jossa kulmat ovat suurempia, tai tarkempi goniometri. Lisäksi kulman voi mitata keskimaksimin molemmin puolin ja käyttää puolta niiden välisestä kulmasta. Se poistaa hilan kallistuksen aiheuttaman virheen.
 
 ### e)
 **Kysytty:** onko jompikumpi havainto väärin, kun prismassa violetti ja hilassa punainen poikkeaa eniten

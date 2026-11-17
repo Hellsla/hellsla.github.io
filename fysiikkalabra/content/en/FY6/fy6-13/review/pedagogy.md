@@ -1,10 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: d3bbbfc30db75858
-
+CONTENT-HASH: e00bf1c87575dc40
 ## Blocking
 
 ## Polish
-- The packet shows no diff for this lesson; the readout label change ("ideal-model values at this voltage, as if no breakdown occurred") was not in my diff, so its wording is not judged here.
-
 ## Checked
-batch delta review: packet diff empty; nothing changed in the text to judge.
+batch delta review: new retrieval task and feedback (flash energy E = Pt with prefix traps); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.

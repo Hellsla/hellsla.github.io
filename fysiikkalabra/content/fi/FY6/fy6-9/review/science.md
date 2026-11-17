@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f4d5434820adfe77
+CONTENT-HASH: f1a2a31e2acbe42d
 
 ## Blocking
 
 ## Polish
-- None from the physics. The new question "Kuinka monen puhelimen akun täyden latauksen verran energiaa ... saadaan, kun häviöt otetaan huomioon?" now asks for the energy-equivalent number of full charges after losses, which is exactly what the solution computes ($N = 0{,}70\,U_1Q_1/(U_2Q_2)$); a fractional answer 1,68 now reads naturally.
+- none.
 
 ## Checked
-batch delta review: siirto prompt rewording only; recomputed 0,70 · 3,7 V · 10 Ah / (3,85 V · 4,0 Ah) = 25,9 Wh / 15,4 Wh = 1,682 → 1,68 (tolerance 0,02 holds); mistakes 2,5 (mAh ratio), 2,4 (no losses), 1,75 (0,70 · 2,5) still distinct and their feedback right; hints, solution and the 30 % loss to internal energy agree with the new wording; hash same at start and end.
+batch delta review: kertaus P = UI = 10 W (2,5 named as resistance in Ω, 7,0 sum, 0,40 inverted), one correct option, lesson-answers.py runs; worked-example split only.

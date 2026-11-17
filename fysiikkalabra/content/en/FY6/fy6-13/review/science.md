@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d3bbbfc30db75858
+CONTENT-HASH: 90ed9583c4bcd64d
 
 ## Blocking
 
 ## Polish
-- assets/sims/fy6/fy6-13/sim.js:81 — the code comment still says "the ideal model's values before it". It is not shown to students and is optional to update. This is C-level.
+- The retrieval writes the energy as E = Pt, while this chapter's theory says the energy is W because E is the field strength here; consider W = Pt in the feedback.
+- lesson-answers.py still holds the old kertaus keys (150 kV/m); remove them.
 
 ## Checked
-- batch delta review: the packet's wording diff is empty. The only change is lang/en.json:2014 `sims.fy6-13.lukemat_lap` (it is outside the content hash, which is unchanged) and now reads "Values of the ideal model at this voltage, as if no breakdown occurred". sim.js:62–64 confirms that, connected and in breakdown, U = U0 (the voltage shown on the line above), Q = C·U0 and W = ½·Q·U0. "At this voltage" is therefore exact, and last round's Polish item is resolved. Example: d = 1.0 mm in air, C = 177 pF, U0 = 3.1 kV gives 549 nC and 851 µJ. The label and the mallirajaus note agree; the label is used only when S.lap && !S.burnt; no simState key or calculation changed; it says the same as fi. Hash identical at start and end.
+batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): E = Pt = 4000 W · 0.0010 s = 4.0 J; 4.0 kJ (ms not converted) and 4.0 mJ (kW read as W) wrong with right feedback; one correct option; fy6-6 teaches E = Pt.

@@ -60,9 +60,11 @@ a["ex-Rs"] = (1.58 - 1.45) / I                             # 0,3586 ohm -> 0,36 
 a["ex-Ik"] = 1.58 / a["ex-Rs"]                             # 4,406 A -> 4,4 A
 a["ex-check-U"] = 1.58 - a["ex-Rs"] * I                    # 1,45 V back
 
-# --- kertaus: loop with a 9,0 V source, 3,0 V over R1: R2 gets 6,0 V ---
-a["kertaus"] = 9.0 - 3.0
-a["kertaus-mistake"] = 9.0 + 3.0                            # 12 V (added)
+# --- kertaus: headlight 55 W on 12 V ---
+a["kertaus"] = 55 / 12                                      # 4,58 A, about 4,6 A
+a["kertaus-mult"] = 55 * 12                                 # 660
+a["kertaus-inv"] = 12 / 55                                  # 0,22
+a["kertaus-sub"] = 55 - 12                                  # 43
 
 # --- error spotting: E = 9,0 V, R_s = 1,5 ohm, R = 12 ohm ---
 I, U = load(9.0, 1.5, 12)

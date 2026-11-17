@@ -166,7 +166,7 @@
       "title": "Napadynamo",
       "source": "example",
       "source_note": "Dynamon tiedot ja jännitteen kuvaaja ovat keksittyjä mutta tyypillisiä. Polkupyörän dynamovalo on yleensä $6\\,\\text{V}$ ja $3\\,\\text{W}$. Napadynamossa on usein $28$ magneettinapaa.",
-      "text": "Napadynamo on rakennettu polkupyörän etupyörän napaan. Pyörän mukana pyörii kestomagneettirengas, jossa on $28$ magneettinapaa. Navat ovat vuorotellen pohjois- ja etelänapoja. Käämi pysyy paikallaan, ja siinä on rautasydän. Sydämen läpi kulkevan magneettivuon suunta vaihtuu aina, kun seuraava napa ohittaa sen. Siksi jännitteessä on $14$ jaksoa jokaista pyörän kierrosta kohti. Pyörän halkaisija renkaineen on $0{,}70\\,\\text{m}$. Dynamoon voidaan kytkeä valo, jonka nimellisjännite on $6{,}0\\,\\text{V}$ ja teho $3{,}0\\,\\text{W}$.\n\nPyöräilijä mittasi dynamon jännitteen oskilloskoopilla. Valo oli pois päältä, ja hän ajoi tasaisella vauhdilla. Kuvaaja on alla.",
+      "text": "Napadynamo on rakennettu polkupyörän etupyörän napaan. Pyörän mukana pyörii kestomagneettirengas, jossa on $28$ magneettinapaa. Navat ovat vuorotellen pohjois- ja etelänapoja. Käämi pysyy paikallaan, ja siinä on rautasydän. Sydämen läpi kulkevan magneettivuon suunta vaihtuu aina, kun seuraava napa ohittaa sen. Siksi jännitteessä on $14$ jaksoa jokaista pyörän kierrosta kohti. Pyörän halkaisija renkaineen on $0{,}70\\,\\text{m}$.\n\nDynamoon voidaan kytkeä valo, jonka nimellisjännite on $6{,}0\\,\\text{V}$ ja teho $3{,}0\\,\\text{W}$.\n\nPyöräilijä mittasi dynamon jännitteen oskilloskoopilla. Valo oli pois päältä, ja hän ajoi tasaisella vauhdilla. Kuvaaja on alla.",
       "figure": "fy7-sovella/fy7-s2-signal",
       "parts": [
         {

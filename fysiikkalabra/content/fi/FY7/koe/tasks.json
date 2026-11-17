@@ -199,7 +199,7 @@
    "title": "Elektronisuihku magneettikentässä",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
-   "text": "Opiskelija tutki tyhjiöputkessa kulkevaa elektronisuihkua. Elektronit lähtevät levosta ja kiihtyvät jännitteellä $U$. Sen jälkeen ne tulevat homogeeniseen magneettikenttään, jonka vuontiheys on $B = 0{,}80\\,\\text{mT}$ ja suunta kohtisuoraan elektronien nopeuteen nähden. Suihku kiertää ympyrärataa, jonka säteen $r$ opiskelija mittasi suihkun jäljestä. Säteen mittauksen epävarmuus on $\\pm 1\\,\\text{mm}$, ja jännite tunnetaan tarkasti. Elektronin ominaisvaraus $e / m_\\text{e}$ on opiskelijalle tuntematon.\n\n| $U\\ (\\text{V})$ | $80$ | $120$ | $160$ | $200$ | $240$ |\n|---|---|---|---|---|---|\n| $r\\ (\\text{mm})$ | $38$ | $46$ | $54$ | $59$ | $66$ |",
+   "text": "Opiskelija tutki tyhjiöputkessa kulkevaa elektronisuihkua. Elektronit lähtevät levosta ja kiihtyvät jännitteellä $U$. Sen jälkeen ne tulevat homogeeniseen magneettikenttään, jonka vuontiheys on $B = 0{,}80\\,\\text{mT}$ ja suunta kohtisuoraan elektronien nopeuteen nähden.\n\nSuihku kiertää ympyrärataa, jonka säteen $r$ opiskelija mittasi suihkun jäljestä. Säteen mittauksen epävarmuus on $\\pm 1\\,\\text{mm}$, ja jännite tunnetaan tarkasti. Elektronin ominaisvaraus $e / m_\\text{e}$ on opiskelijalle tuntematon.\n\n| $U\\ (\\text{V})$ | $80$ | $120$ | $160$ | $200$ | $240$ |\n|---|---|---|---|---|---|\n| $r\\ (\\text{mm})$ | $38$ | $46$ | $54$ | $59$ | $66$ |",
    "parts": [
     {
      "id": "a",
@@ -598,7 +598,7 @@
    "title": "Hila ja laserosoitin",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
-   "text": "Opiskelija valaisi tuntematonta hilaa vihreällä laserilla, jonka aallonpituus on $532\\,\\text{nm}$. Valo osui hilaan kohtisuoraan, ja hilan ja varjostimen etäisyys oli $L = 1{,}500\\,\\text{m}$. Opiskelija mittasi, kuinka kaukana keskimaksimista kertalukujen $k = 1$, $2$ ja $3$ maksimit ovat varjostimella. Etäisyys $x$ on keskimaksimin ja maksimin välinen, ja sen lukemaepävarmuus on $\\pm 2\\,\\text{mm}$.\n\n| $k$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $x\\ (\\text{m})$ | $0{,}243$ | $0{,}503$ | $0{,}822$ |",
+   "text": "Opiskelija valaisi tuntematonta hilaa vihreällä laserilla, jonka aallonpituus on $532\\,\\text{nm}$. Valo osui hilaan kohtisuoraan, ja hilan ja varjostimen etäisyys oli $L = 1{,}500\\,\\text{m}$.\n\nOpiskelija mittasi, kuinka kaukana keskimaksimista kertalukujen $k = 1$, $2$ ja $3$ maksimit ovat varjostimella. Etäisyys $x$ on keskimaksimin ja maksimin välinen, ja sen lukemaepävarmuus on $\\pm 2\\,\\text{mm}$.\n\n| $k$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $x\\ (\\text{m})$ | $0{,}243$ | $0{,}503$ | $0{,}822$ |",
    "parts": [
     {
      "id": "a",
@@ -728,7 +728,7 @@
    "title": "Tuulipuiston sähkön siirto",
    "source": "example",
    "source_note": "Tilanne, kaapelin resistanssi ja hinnat on laadittu esimerkiksi.",
-   "text": "Rannikolle suunnitellaan tuulipuistoa, jonka generaattorit tuottavat tehon $12\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Teho siirretään $40\\,\\text{km}$:n päähän kaapelilla, jonka kokonaisresistanssi on $4{,}8\\,\\Omega$. Laskuissa kaapelin resistanssi oletetaan vakioksi ja siirto lasketaan kuin tasavirralla. Puisto tuottaa tehon $12\\,\\text{MW}$ vastaavan energian vuodessa $4000\\,\\text{h}$ ajan, ja häviöenergian arvo on $50\\,\\text{€/MWh}$.\n\n| Vaihtoehto | Siirtojännite | Lisäkustannus |\n|---|---|---|\n| A: suora siirto | $20\\,\\text{kV}$ | $0$ |\n| B: muuntajat molemmissa päissä | $110\\,\\text{kV}$ | $3{,}0\\,\\text{M€}$ |",
+   "text": "Rannikolle suunnitellaan tuulipuistoa, jonka generaattorit tuottavat tehon $12\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Teho siirretään $40\\,\\text{km}$:n päähän kaapelilla, jonka kokonaisresistanssi on $4{,}8\\,\\Omega$. Laskuissa kaapelin resistanssi oletetaan vakioksi ja siirto lasketaan kuin tasavirralla.\n\nPuisto tuottaa tehon $12\\,\\text{MW}$ vastaavan energian vuodessa $4000\\,\\text{h}$ ajan, ja häviöenergian arvo on $50\\,\\text{€/MWh}$.\n\n| Vaihtoehto | Siirtojännite | Lisäkustannus |\n|---|---|---|\n| A: suora siirto | $20\\,\\text{kV}$ | $0$ |\n| B: muuntajat molemmissa päissä | $110\\,\\text{kV}$ | $3{,}0\\,\\text{M€}$ |",
    "parts": [
     {
      "id": "a",
@@ -906,7 +906,7 @@
    "title": "Hehkulampun spektri",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia. Volframin sulamispiste $3695\\,\\text{K}$ on taulukkoarvo.",
-   "text": "Opiskelija mittasi spektrometrillä hehkulampun langan säteilyn spektriä eri lämpötiloissa. Langan lämpötila $T$ arvioitiin sen resistanssin muutoksesta, ja arvion epävarmuus on noin $\\pm 50\\,\\text{K}$. Spektrin huipun aallonpituus $\\lambda_\\text{max}$ luettiin spektristä, ja sen epävarmuus on noin $\\pm 15\\,\\text{nm}$. Opiskelija oletti, että lanka säteilee likimain mustan kappaleen tavoin.\n\n| $T\\ (\\text{K})$ | $2200$ | $2400$ | $2600$ | $2800$ | $3000$ |\n|---|---|---|---|---|---|\n| $\\lambda_\\text{max}\\ (\\text{nm})$ | $1262$ | $1139$ | $1070$ | $975$ | $921$ |",
+   "text": "Opiskelija mittasi spektrometrillä hehkulampun langan säteilyn spektriä eri lämpötiloissa. Langan lämpötila $T$ arvioitiin sen resistanssin muutoksesta, ja arvion epävarmuus on noin $\\pm 50\\,\\text{K}$.\n\nSpektrin huipun aallonpituus $\\lambda_\\text{max}$ luettiin spektristä, ja sen epävarmuus on noin $\\pm 15\\,\\text{nm}$. Opiskelija oletti, että lanka säteilee likimain mustan kappaleen tavoin.\n\n| $T\\ (\\text{K})$ | $2200$ | $2400$ | $2600$ | $2800$ | $3000$ |\n|---|---|---|---|---|---|\n| $\\lambda_\\text{max}\\ (\\text{nm})$ | $1262$ | $1139$ | $1070$ | $975$ | $921$ |",
    "parts": [
     {
      "id": "a",

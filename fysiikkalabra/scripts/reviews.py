@@ -1005,9 +1005,34 @@ OPTION_LISTS = ("choices", "statements", "order", "reasons")    # options compar
 SCRIPT_WORD = re.compile(r"([_^])(\{?)\\(text|mathrm)\{([^{}]*)\}")   # E_\text{sähkö}, x_{\text{max}}: a translated label
 FORMULA_WORD = re.compile(r"\\(text|mathrm)\{([^{}]*)\}")      # any \text{} word of a formula: m_\text{hiili} = E/\text{lämpöarvo} (fy8-11 L3-05, work queue 8p)
 UNIT_LIKE = 3        # a \text{} word of at most this many characters (N, kg, min, MeV) is a unit or a symbol and stays strict
+LONE_WORD = re.compile(r"\\(?:text|mathrm)\{([^{}]*)\}")   # a formula that is only a \text{} word: no number, symbol or operator (work queue 8q)
+LABEL_PAIRS = [("ka", "avg", "av", "mean"), ("alku", "initial", "i", "start", "before"), ("loppu", "final", "f", "end", "after"),
+               ("max", "max"), ("min", "min"), ("kok", "tot", "total"), ("yht", "tot", "total"), ("häviö", "loss"), ("hyöty", "useful"),
+               ("lämpö", "thermal", "heat"), ("sähkö", "el", "elec", "electric"), ("ulko", "out", "outer"), ("sisä", "in", "int"),
+               ("nim", "rated", "nom"), ("mitattu", "measured", "meas"), ("lukema", "reading")]   # a Finnish subscript word and its English ones, from the repository's own pairs (a lone label formula: $\text{ka}$ / $\text{avg}$)
+UNIT_NAMES = {"mSv": ("millisievert", "millisv"), "µSv": ("mikrosievert",), "Sv": ("sievert",), "Gy": ("gray", "harmaa"), "Bq": ("becquerel", "bequerel"),
+              "kg": ("kilogram", "kilo"), "g": ("gramma", "gram"), "N": ("newton",), "J": ("joule",), "W": ("watti", "watt"), "V": ("voltti", "volt"),
+              "A": ("ampeeri", "ampere"), "Hz": ("hertsi", "hertz"), "Pa": ("pascal",), "m": ("metri", "metre", "meter"), "s": ("sekunti", "second"),
+              "h": ("tunti", "hour"), "min": ("minuutti", "minute")}   # a unit written as a word in the other language's text (work queue 8q: $\text{mSv}$ beside "millisieverteinä")
 PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
 LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
 MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$", re.S)
+
+
+def _lone_words_ok(wa, wb, ta, tb):
+    """True when the lone \\text{} formulas of two texts (wa, wb: their words) are the same words: a word is equal, or a known label
+    pair (ka / avg), or - a unit such as mSv written as a formula in one language and as plain text in the other - a word of the other
+    text (ta, tb: its text outside formulas). A unit in both stays strict: mSv / Sv is a different unit."""
+    ra, rb = list(wa), list(wb)
+    for w in wa:
+        if w in rb: ra.remove(w); rb.remove(w)
+    words = lambda t: set(re.findall(r"[^\W_]+", t))
+    known = lambda x, y: any(x in g and y in g for g in LABEL_PAIRS)
+    for w in list(ra):
+        m = next((v for v in rb if known(w, v)), None)
+        if m is not None: ra.remove(w); rb.remove(m)
+    def named(w, t): return w in words(t) or any(re.search(r"(?<![^\W\d_])" + n, t, re.I) for n in UNIT_NAMES.get(w, ()))
+    return all(named(w, tb) for w in ra) and all(named(w, ta) for w in rb)
 
 
 def _tr_text(a, b, pairs, labels=False):
@@ -1018,17 +1043,21 @@ def _tr_text(a, b, pairs, labels=False):
     same capital-letter labels in order ("Kappale B" → "Body B"; English "A" and "I" before a lowercase word are words)."""
     import check_i18n
     if not (isinstance(a, str) and isinstance(b, str)): return a == b
-    def spans(s):
+    lone = ([], [])
+    def spans(s, side):
         out = []
         for f in check_i18n.formula_spans(re.sub(r"<svg\b.*?</svg>", "", s, flags=re.S)):
+            m = LONE_WORD.fullmatch(re.sub(r"\s+", "", f))
+            if m: lone[side].append(m.group(1)); continue   # a unit or label alone: no formula to count (compared below)
             words = []
             f = SCRIPT_WORD.sub(lambda m: (words.append(m.group(4).strip()), f"{m.group(1)}{m.group(2)}\\{m.group(3)}{{§}}")[1], re.sub(r"\s+", "", f).replace("{,}", "."))
             f = FORMULA_WORD.sub(lambda m: f"\\{m.group(1)}{{§}}" if len(m.group(2)) > UNIT_LIKE else m.group(0), f)   # the other words: a translation's own (units stay strict)
             out.append((f, words))
         return out
-    sa, sb = sorted(spans(a), key=lambda x: x[0]), sorted(spans(b), key=lambda x: x[0])   # the formulas as a multiset: where a language puts a formula in its sentence is no science (en L3-05, fi-easy L2-01, 2026-11-17); stable, so equal formulas keep their label pairs in order
+    sa, sb = sorted(spans(a, 0), key=lambda x: x[0]), sorted(spans(b, 1), key=lambda x: x[0])   # the formulas as a multiset: where a language puts a formula in its sentence is no science (en L3-05, fi-easy L2-01, 2026-11-17); stable, so equal formulas keep their label pairs in order
     if [f for f, _ in sa] != [f for f, _ in sb]: return False
     for (_, wa), (_, wb) in zip(sa, sb): pairs.extend(zip(wa, wb))
+    if not _lone_words_ok(*lone, MATH_OR_BLOCK.sub(" ", a), MATH_OR_BLOCK.sub(" ", b)): return False
     if re.findall(r'data-fig="([^"]+)"', a) != re.findall(r'data-fig="([^"]+)"', b) or FBD_SPEC.findall(a) != FBD_SPEC.findall(b): return False
     pa, pb = MATH_OR_BLOCK.sub(" ", a), MATH_OR_BLOCK.sub(" ", b)
     nums = lambda s: sorted(n.replace(",", ".") for n in PROSE_NUMBER.findall(s))
@@ -1073,7 +1102,9 @@ def translation_differs(folder, fi=None, tr=None):
     for (i, x), (_, y) in zip(sa[1], sb[1]):
         if not _tr_text(x, y, pairs): return f"the solution of {i}: its formulas or numbers differ"
     fwd, back = {}, {}
+    canon = lambda w: next((g[0] + "~" for g in LABEL_PAIRS if w in g[1:] or w == g[0]), w) if w not in ("max", "min") else w   # tot / total, avg / av / mean: the same label spelled two ways (work queue 8q)
     for x, y in pairs:
+        x, y = canon(x), canon(y)
         if fwd.setdefault(x, y) != y or back.setdefault(y, x) != x: return f"a subscript label is translated two ways (\\text{{{x}}} / \\text{{{y}}})"
     texts = lambda s, f: [s.read(at(f, n)) for n in courses.EXERCISE_FILES]
     if courses.pic_refs_in(texts(fi, src)) != courses.pic_refs_in(texts(tr, folder)): return "the pictures differ"

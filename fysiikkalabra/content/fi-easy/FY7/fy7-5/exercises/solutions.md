@@ -134,7 +134,9 @@ $$
 ## fy7-5-L1-06
 **Kysytty:** miksi levossa olevan magneetin ja käämin välille ei synny induktiojännitettä, vaikka vuo on suuri
 **Periaate:** Induktiolain mukaan käämiin syntyvä jännite on $e = -N\dfrac{\Delta\Phi}{\Delta t}$. Jännite riippuu siis siitä, kuinka nopeasti vuo muuttuu. Vuon suuruus ei ratkaise. Kun magneetti on levossa käämin suhteen, vuo pysyy vakiona. Silloin $\Delta\Phi = 0$.
-**Mallivastaus:** Käämin läpi kulkeva vuo on suuri, mutta se ei muutu. Magneetti ja käämi ovat levossa toistensa suhteen. Jännite syntyy vain silloin, kun vuo muuttuu. Siksi volttimittari näyttää nollaa. Kun magneettia liikutetaan, vuo muuttuu ja mittari näyttää jännitettä. Jännite on sitä suurempi, mitä nopeammin vuo muuttuu. Kenttä ei estä jännitteen syntymistä. Virta ei ole jännitteen edellytys. Virta on jännitteen seuraus suljetussa piirissä.
+**Mallivastaus:** Käämin läpi kulkeva vuo on suuri, mutta se ei muutu. Magneetti ja käämi ovat levossa toistensa suhteen. Jännite syntyy vain silloin, kun vuo muuttuu. Siksi volttimittari näyttää nollaa.
+
+Kun magneettia liikutetaan, vuo muuttuu ja mittari näyttää jännitettä. Jännite on sitä suurempi, mitä nopeammin vuo muuttuu. Kenttä ei estä jännitteen syntymistä. Virta ei ole jännitteen edellytys. Virta on jännitteen seuraus suljetussa piirissä.
 
 ## fy7-5-L1-07
 **Annettu:** ensimmäisen käämin kierrosluku $N_1 = 120$ ja jännite $e_1 = 0{,}90\,\text{V}$; toisen käämin kierrosluku $N_2 = 300$; käämit ovat muuten samanlaiset ja magneetti liikkuu samoin
@@ -160,7 +162,9 @@ $$
 **Annettu:** kierrosten lukumäärä $N = 120$; taulukosta yhden kierroksen vuo $\Phi$ ajan $t$ funktiona, väli $0{,}10\,\text{s}$ (esimerkkiaineisto)
 **Kysytty:** induktiojännitteen suurin itseisarvo $|e|$ voltteina
 **Periaate:** Induktiolain mukaan jännite on verrannollinen vuon muutosnopeuteen $\Delta\Phi : \Delta t$. Jännite on siis suurin siinä kohdassa, jossa vuo muuttuu nopeimmin. Vuo muuttuu jokaisen aikavälin aikana likimain tasaisesti. Siksi jännite on jokaisella välillä likimain vakio.
-**Kuvaajan lukeminen:** Taulukon vuoarvoista lasketaan vuon muutos $\Delta\Phi$ jokaisella $0{,}10\,\text{s}$:n välillä. Nousuvaiheessa ($0$–$0{,}30\,\text{s}$) muutokset ovat $0{,}98$, $1{,}05$ ja $0{,}97\,\text{mWb}$. Suurin muutos on $1{,}05\,\text{mWb}$ välillä $0{,}10$–$0{,}20\,\text{s}$. Välillä $0{,}30$–$0{,}40\,\text{s}$ vuo ei juuri muutu ($0{,}01\,\text{mWb}$). Laskuvaiheessa muutokset ovat $\Delta\Phi = 1{,}21\,\text{mWb}$ välillä $0{,}40$–$0{,}50\,\text{s}$ ja $1{,}20\,\text{mWb}$ välillä $0{,}50$–$0{,}60\,\text{s}$. Jyrkin yksittäinen väli on siis $0{,}40$–$0{,}50\,\text{s}$. Sillä välillä $\Delta\Phi = 1{,}21\,\text{mWb}$ ja $\Delta t = 0{,}10\,\text{s}$.
+**Kuvaajan lukeminen:** Taulukon vuoarvoista lasketaan vuon muutos $\Delta\Phi$ jokaisella $0{,}10\,\text{s}$:n välillä. Nousuvaiheessa ($0$–$0{,}30\,\text{s}$) muutokset ovat $0{,}98$, $1{,}05$ ja $0{,}97\,\text{mWb}$. Suurin muutos on $1{,}05\,\text{mWb}$ välillä $0{,}10$–$0{,}20\,\text{s}$.
+
+Välillä $0{,}30$–$0{,}40\,\text{s}$ vuo ei juuri muutu ($0{,}01\,\text{mWb}$). Laskuvaiheessa muutokset ovat $\Delta\Phi = 1{,}21\,\text{mWb}$ välillä $0{,}40$–$0{,}50\,\text{s}$ ja $1{,}20\,\text{mWb}$ välillä $0{,}50$–$0{,}60\,\text{s}$. Jyrkin yksittäinen väli on siis $0{,}40$–$0{,}50\,\text{s}$. Sillä välillä $\Delta\Phi = 1{,}21\,\text{mWb}$ ja $\Delta t = 0{,}10\,\text{s}$.
 **Kaava:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$
 **Muunnokset:** $\Delta\Phi = 1{,}21\,\text{mWb} = 1{,}21 \cdot 10^{-3}\,\text{Wb}$
 **Sijoitus:** $|e| = 120 \cdot \dfrac{1{,}21 \cdot 10^{-3}\,\text{Wb}}{0{,}10\,\text{s}} = 120 \cdot 0{,}0121\,\text{V} = 1{,}452\,\text{V} \approx 1{,}45\,\text{V}$
@@ -181,7 +185,9 @@ $$
 ## fy7-5-L2-07
 **Kysytty:** mikä opiskelijan laskussa on virheellistä
 **Periaate:** Kaava $e = vBl$ johdetaan tilanteesta, jossa nopeus, tanko ja kenttä ovat keskenään kohtisuorassa. Magneettinen voima siirtää tangon mukana liikkuvia elektroneja tangon suuntaan, ja päiden välille syntyy jännite. Opiskelijan tehtävässä tanko liikkuu kentän suuntaisesti. Siksi tämä ehto ei täyty.
-**Mallivastaus:** Kun tanko liikkuu kentän suuntaan, elektronien nopeus on samansuuntainen kuin kenttä. Silloin magneettinen voima on nolla. Elektronit eivät siirry tangon päähän, päihin ei kerry varausta, ja tangon päiden välille ei synny jännitettä. Opiskelijan tulos $0{,}30\,\text{V}$ on väärä. Oikea jännite on nolla. Samaan tulokseen päätyy vuon avulla: tanko ei pyyhkäise kenttäviivojen läpi uutta pinta-alaa, joten vuo ei muutu. Kaavaa $e = vBl$ saa käyttää vain, kun kolme suuntaa ovat kohtisuorassa toisiaan vastaan.
+**Mallivastaus:** Kun tanko liikkuu kentän suuntaan, elektronien nopeus on samansuuntainen kuin kenttä. Silloin magneettinen voima on nolla. Elektronit eivät siirry tangon päähän, päihin ei kerry varausta, ja tangon päiden välille ei synny jännitettä. Opiskelijan tulos $0{,}30\,\text{V}$ on väärä.
+
+Oikea jännite on nolla. Samaan tulokseen päätyy vuon avulla: tanko ei pyyhkäise kenttäviivojen läpi uutta pinta-alaa, joten vuo ei muutu. Kaavaa $e = vBl$ saa käyttää vain, kun kolme suuntaa ovat kohtisuorassa toisiaan vastaan.
 
 ## fy7-5-L3-04
 **Annettu:** tangon pituus $l = 0{,}40\,\text{m}$, magneettivuon tiheys $B = 0{,}25\,\text{T}$, lähtö levosta, tasainen kiihtyvyys; taulukosta $e(t)$ kuudella mittauspisteellä (esimerkkiaineisto), muun muassa $e = 198\,\text{mV}$ hetkellä $t = 1{,}2\,\text{s}$
@@ -202,7 +208,9 @@ $$
 **Kaava:** $|A_\text{a}| = N\Phi$, josta $\Phi = \dfrac{|A_\text{a}|}{N}$
 **Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$. Lisäksi $\text{V}\cdot\text{s} = \text{Wb}$.
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$. Siis $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
-**Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa, ja toisessa se pienenee takaisin nollaan. Siksi jännitteiden etumerkit ovat vastakkaiset. Vuon kokonaismuutos on kummassakin pulssissa yhtä suuri, joten pinta-alat ovat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan. Siksi sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa. Pulssi on kapeampi ja korkeampi.
+**Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa, ja toisessa se pienenee takaisin nollaan.
+
+Siksi jännitteiden etumerkit ovat vastakkaiset. Vuon kokonaismuutos on kummassakin pulssissa yhtä suuri, joten pinta-alat ovat itseisarvoltaan yhtä suuret. Magneetti kiihtyy pudotessaan. Siksi sama vuon muutos tapahtuu toisessa pulssissa lyhyemmässä ajassa. Pulssi on kapeampi ja korkeampi.
 **Järkevyys:** Pulssien pinta-alat eroavat toisistaan noin $1\,\%$, joten mittausaineisto on sisäisesti johdonmukainen. Kolmion likiarvo $\tfrac{1}{2} \cdot 1{,}8\,\text{V} \cdot 0{,}020\,\text{s} = 0{,}018\,\text{V}\cdot\text{s}$ antaa saman suuruusluokan.
 
 ## fy7-5-L1-09

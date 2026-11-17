@@ -413,11 +413,15 @@ A compass lies on a horizontal table in southern Finland, where the horizontal c
 
 <!-- vaihe -->
 
-**Given and find.** The horizontal component of the Earth's field is $B_\text{h} = 14\,\mu\text{T}$ towards the north and the angle of deflection of the needle is $\theta = 52^\circ$ towards the east. We are asked for the magnetic flux density $B_\text{m}$ of the magnet at the compass.
+**Given and find.** The horizontal component of the Earth's field is $B_\text{h} = 14\,\mu\text{T}$ towards the north and the angle of deflection of the needle is $\theta = 52^\circ$ towards the east.
+
+We are asked for the magnetic flux density $B_\text{m}$ of the magnet at the compass.
 
 <!-- vaihe -->
 
-**Principle.** The compass needle turns to point along the total field. At the compass, the field of the magnet points towards the south pole of the magnet, that is east, so it is perpendicular to the horizontal component of the Earth's field, which points north. The total field is the diagonal of a rectangle, and the tangent of the angle $\theta$ is the ratio of the opposite side to the adjacent side.
+**Principle.** The compass needle turns to point along the total field. At the compass, the field of the magnet points towards the south pole of the magnet, that is east, so it is perpendicular to the horizontal component of the Earth's field, which points north.
+
+The total field is the diagonal of a rectangle, and the tangent of the angle $\theta$ is the ratio of the opposite side to the adjacent side.
 
 <!-- vaihe -->
 
@@ -451,7 +455,9 @@ B_\text{m} &= B_\text{h}\tan\theta \\
 
 <!-- vaihe -->
 
-**Reasonableness.** At an angle of $45^\circ$ the field of the magnet would equal $B_\text{h}$. The angle is greater than $45^\circ$, so $B_\text{m}$ is greater than $14\,\mu\text{T}$, as the result is. The total field is $\sqrt{(14\,\mu\text{T})^2 + (17.9\,\mu\text{T})^2} \approx 22.7\,\mu\text{T}$, and $B_\text{h} : \cos 52^\circ$ gives the same. The field is of the order of magnitude of the Earth's field, which fits a magnet about ten centimetres away.
+**Reasonableness.** At an angle of $45^\circ$ the field of the magnet would equal $B_\text{h}$. The angle is greater than $45^\circ$, so $B_\text{m}$ is greater than $14\,\mu\text{T}$, as the result is.
+
+The total field is $\sqrt{(14\,\mu\text{T})^2 + (17.9\,\mu\text{T})^2} \approx 22.7\,\mu\text{T}$, and $B_\text{h} : \cos 52^\circ$ gives the same. The field is of the order of magnitude of the Earth's field, which fits a magnet about ten centimetres away.
 
 ## Common misconception
 Many people think that the north end of a compass needle seeks the north pole of a bar magnet, because the Earth's northern magnetic pole is called the magnetic north pole. However, the north end of a compass needle is the north pole of a magnet, and it is attracted by an unlike pole. So in the bar-magnet model the pole near the geographic North Pole is a south pole, although in geomagnetism it is called the magnetic north pole.

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7f59adac9f04c880
+CONTENT-HASH: b8111f551289ac67
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- `lesson-answers.py` gives only the three numeric options; the 14 C option (4,0 + 10, an invalid sum) has no line. That is fine but could be noted in a comment for completeness.
 
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new "mA" word and the four (I,U) pick-* descriptions belong to exercise option figures; no lesson figure uses them.
-- Read the captured theory pages: the lesson's five figures (hero, measure-circuit, micro, curves, wire) render with the same labels and numbers as before; no figure text changed.
-- No number, symbol, option or feedback in the lesson changed; my earlier PASS stands.
-- Hash same at start and end.
+batch delta review: new retrieval Q = It (4,0 A, 10 s -> 40 C; distractors 2,5 C, 0,40 C, 14 C recomputed, each feedback names the right error), exactly one correct; lesson-answers.py kertaus keys; reflow and formula-name rows carry.
