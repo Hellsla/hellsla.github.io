@@ -333,7 +333,7 @@ $$
 **Annettu:** kuvasta luettu pisteen aallonpituus $\lambda = 520\,\text{nm}$ ja fotonien määrä sekunnissa $\tfrac{N}{t} = 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** laserin teho $P$ milliwatteina
 **Periaate:** Laserin fotonit ovat samanlaisia. Siksi teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Sekä aallonpituus että fotonien määrä tulevat kuvasta.
-**Kuvaajan lukeminen:** Vaaka-akselilla on aallonpituus ja ruudukon väli on $100\,\text{nm}$. Piste on viidennen ja kuudennen pystyviivan välissä, viidennen viivan jälkeen $20\,\text{nm}$:n verran, joten $\lambda = 520\,\text{nm}$. Pystyakselilla on fotonien määrä sekunnissa yksikössä $10^{15}\,\tfrac{1}{\text{s}}$ ja ruudukon väli on $0{,}5$. Piste on hieman alle neljännen vaakaviivan (arvo $4{,}0$) alapuolella, joten $\tfrac{N}{t} \approx 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
+**Kuvaajan lukeminen:** Vaaka-akselilla on aallonpituus ja ruudukon väli on $100\,\text{nm}$. Piste on viidennen ja kuudennen pystyviivan välissä, viidennen viivan jälkeen $20\,\text{nm}$:n verran, joten $\lambda = 520\,\text{nm}$. Pystyakselilla on fotonien määrä sekunnissa yksikössä $10^{15}\,\tfrac{1}{\text{s}}$ ja ruudukon väli on $0{,}5$. Piste on hieman vaakaviivan $4{,}0$ alapuolella, joten $\tfrac{N}{t} \approx 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
 **Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ ja lopuksi $1\,\text{mW} = 10^{-3}\,\text{W}$.
 **Sijoitus:** Ensin tulo $hc$:

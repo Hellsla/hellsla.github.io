@@ -333,7 +333,7 @@ $$
 **Given:** wavelength of the point read from the figure $\lambda = 520\,\text{nm}$ and number of photons per second $\tfrac{N}{t} = 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the power $P$ of the laser in milliwatts
 **Principle:** The photons of a laser are alike, so the power is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. Both the wavelength and the number of photons come from the figure.
-**Reading the graph:** The horizontal axis is the wavelength and the grid spacing is $100\,\text{nm}$. The point is between the fifth and the sixth vertical line, $20\,\text{nm}$ after the fifth, so $\lambda = 520\,\text{nm}$. The vertical axis is the number of photons per second in units of $10^{15}\,\tfrac{1}{\text{s}}$ and the grid spacing is $0.5$. The point is just below the fourth horizontal line (value $4.0$), so $\tfrac{N}{t} \approx 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
+**Reading the graph:** The horizontal axis is the wavelength and the grid spacing is $100\,\text{nm}$. The point is between the fifth and the sixth vertical line, $20\,\text{nm}$ after the fifth, so $\lambda = 520\,\text{nm}$. The vertical axis is the number of photons per second in units of $10^{15}\,\tfrac{1}{\text{s}}$ and the grid spacing is $0.5$. The point is just below the horizontal line at $4.0$, so $\tfrac{N}{t} \approx 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
 **Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ and finally $1\,\text{mW} = 10^{-3}\,\text{W}$.
 **Substitution:** First the product $hc$:
