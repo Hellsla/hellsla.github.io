@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4acefd1011b47ee8
+CONTENT-HASH: 2191e0954c217842
 
 ## Blocking
-- none
 
 ## Polish
-- none
+None.
 
 ## Checked
-- batch delta review: inquiry.json distractor feedback. "Alumiini on noin 2,7 kertaa niin tiheää kuin vesi" is right (2700/1000). 0,25 L · 2,7 kg/L = 0,675 kg ≈ 0,7 kg, recomputed. It matches the Finnish main version, and the option stays wrong with a reason. The hash was the same at the start and the end.
+batch delta review: retrieval choice now V = a³ = (4,0·10⁻² m)³ = 6,4·10⁻⁵ m³, recomputed; distractors 64 (no conversion), 6,4·10⁻³ (area factor 10⁻⁴), 0,64 (length factor 10⁻²) each match their feedback; two significant figures from 4,0 cm; side 4,0 cm agrees with the lesson text; lesson-answers.py prints 6,4e-05.

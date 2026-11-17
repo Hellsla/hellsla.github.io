@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4dd3211d3cf8e04f
+CONTENT-HASH: 2191e0954c217842
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 4dd3211d3cf8e04f
 - none
 
 ## Checked
-- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.
+- batch delta review (fi-easy, fy1-7): captures opened: stage-herata-390 (recap box "Kertaa: yksikön muunnos" closed, nothing clipped); changed task read in full ($6{,}4\cdot10^{-5}\,\text{m}^3$, aligned chain, plain Finnish); figures unchanged.

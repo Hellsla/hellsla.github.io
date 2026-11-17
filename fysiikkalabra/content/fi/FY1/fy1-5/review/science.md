@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7916686a43344713
+CONTENT-HASH: c2b79b7bc2f57488
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The prompt says "eri etäisyyksillä" / "at different distances" without naming from what; "etäisyys Maasta" (distance from Earth) would match the signal path. The slope is then 1/c, about 3,3 ns/m; not required at this level.
 
 ## Checked
-- batch delta review: the retrieval item now uses Voyager 2's (t, s) data. The slope as the change in distance per unit time is correct, and for a probe moving straight out from the Sun this is its speed (C). Distractor 1 (distance at $t = 0$) is the intercept, and its feedback says so. Distractor 3 (distance still to go) is wrong, and its feedback (slope = $\Delta s : \Delta t$) says why. Exactly one option is correct. Approved figures, formula names and md-paragraphs not judged. Hash the same at the start and the end.
+batch delta review: retrieval choice rewritten to signal travel time vs distance in (s,t); slope = Δt:Δs (time per unit distance, 1/c) is the one correct option; intercept and "length of the line" distractors wrong with correct feedback; consistent with the chapter on straight-line fitting.

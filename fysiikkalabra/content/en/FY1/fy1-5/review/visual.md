@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5db1d502e139bc7a
+CONTENT-HASH: e56a91a4c5ea9518
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] stage 4 conversion chain with small nested fractions is dense but readable; optional.
+- none
 
 ## Checked
-batch delta review: opened fy1-5-example-390-1 (stages 1-4); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.
+- batch delta review (en, fy1-5): changed recap task ($(s, t)$, $\Delta t : \Delta s$) read in full; layout judged from the herata-390 pattern (en fy1-6 opened); figures unchanged.

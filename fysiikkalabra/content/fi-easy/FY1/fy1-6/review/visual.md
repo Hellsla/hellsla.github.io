@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 690a34729e9b22e0
+CONTENT-HASH: aea6f326f3889386
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 690a34729e9b22e0
 - none
 
 ## Checked
-- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.
+- batch delta review (fi-easy, fy1-6): changed hammer task read in full (units in LaTeX, decimal comma, aligned feedback chain); layout judged from en fy1-6 herata-390 (task and options render cleanly) and fi-easy herata captures.

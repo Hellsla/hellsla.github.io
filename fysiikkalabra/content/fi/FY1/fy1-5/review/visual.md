@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7916686a43344713
+CONTENT-HASH: c2b79b7bc2f57488
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7916686a43344713
 - none
 
 ## Checked
-- batch delta review: opened fy1-5-stage-herata-390 (Pohdinta with the changed Kertaa item closed box); feedback text read in the diff; no clipping, math renders.
+- batch delta review (fi, round 2, fy1-5): changed Pohdinta recap task read in full (LaTeX $(s, t)$, $\Delta t : \Delta s$, Finnish); captures opened: stage-herata-390, contact-1 (top, sim, figures unchanged and intact). Recap box closed, nothing clipped.

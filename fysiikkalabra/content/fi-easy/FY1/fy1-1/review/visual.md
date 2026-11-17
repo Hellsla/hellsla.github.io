@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5758b9fa13dffb4c
+CONTENT-HASH: 9d298d25c9c6f60e
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 5758b9fa13dffb4c
 - none
 
 ## Checked
-- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.
+- batch delta review (fi-easy, fy1-1): changed recap task read in full ($10^{-15}$, short plain sentences, decimal comma); layout judged from the herata-390 pattern (fi-easy fy1-2 and fy1-7 opened); figures unchanged.
