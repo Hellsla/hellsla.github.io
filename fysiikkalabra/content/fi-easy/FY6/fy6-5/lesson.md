@@ -241,7 +241,9 @@ Jännitelähteen jännite on $12\,\text{V}$. Lähteen plusnavasta virta kulkee v
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 20\,\Omega$, $R_2 = 60\,\Omega$, $R_3 = 30\,\Omega$ ja miinusnavan potentiaali $0\,\text{V}$. Kysytään pisteen $B$ potentiaalia $V_B$ ja virtaa $I_3$.
+**Tunnetut ja kysytty.** $U = 12\,\text{V}$, $R_1 = 20\,\Omega$, $R_2 = 60\,\Omega$, $R_3 = 30\,\Omega$ ja miinusnavan potentiaali $0\,\text{V}$.
+
+Kysytään pisteen $B$ potentiaalia $V_B$ ja virtaa $I_3$.
 
 <!-- vaihe -->
 

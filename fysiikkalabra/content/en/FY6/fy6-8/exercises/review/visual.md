@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 991cfb600192a207
+CONTENT-HASH: 9e09cd49a1072e9c
 
 ## Blocking
 - none
@@ -8,7 +8,9 @@ CONTENT-HASH: 991cfb600192a207
 - none
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-8-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- delta (solutions.md, paragraph breaks only): the break before "b)" now sits right before the part label; the earlier mid-part break is resolved.
+- Opened fy6-8-open-exercises-L3-1280-9 (lesson folder shots): "Other parts" a) / b) paragraphs read cleanly, spacing even, nothing clipped.
+- Words, numbers, units unchanged.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

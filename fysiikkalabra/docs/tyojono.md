@@ -281,6 +281,14 @@ ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain pä
 fi-easy) ja esimerkkikoe tehty (claude/fy4-lapikaynti, 0f): tiede ja pedagogiikka carry, ulkoasu delta PASS; en- ja
 fi-easy-Sovella arvioitiin diffistä fi-kaappausten kanssa (screenshot.py ei kaappaa käännettyä Sovellaa), koe diffistä.
 
+FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
+esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
+(kierros 2 niille 24 tehtäväsarjalle, joissa kierros 1 löysi katkoja kesken osien). Sääntö, jonka kierros 1 opetti: kun
+askeleessa on osamerkit a), b) … tai (1), (2), katko tulee osamerkin eteen, ei osan keskelle. Yhdeksi kappaleeksi jäivät
+askeleet, joiden vastausluvut ovat myöhemmissä osissa (answers_shown), ja muutama virkerajaton kohta. Polish (vain kirjattu):
+uusi kappale alkaa joskus pronominilla ("Se …"), jonka viittauskohde on edellisessä kappaleessa (fi-easy fy6-9…fy6-11,
+fy6-13, fy6-15; korjaus vaatisi sanamuodon muutoksen); en fy6-16:n kaapelivirtatehtävän Answer päättyy osamerkkiin "a)".
+
 FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
 (`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
 tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastausluku on b)-kohdassa (fy5-2 L2-06,

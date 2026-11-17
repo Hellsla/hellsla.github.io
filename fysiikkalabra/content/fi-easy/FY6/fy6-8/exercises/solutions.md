@@ -122,7 +122,9 @@
 ## fy6-8-L1-06
 **Kysytty:** milloin pariston napajännite on yhtä suuri kuin sen lähdejännite.
 **Periaate:** Napajännite on $U = E - R_\text{s} I$. Tässä $R_\text{s} I$ on jännitehäviö pariston sisäisessä resistanssissa. Napajännite on yhtä suuri kuin lähdejännite vain silloin, kun tämä jännitehäviö on nolla. Silloin paristosta ei oteta virtaa.
-**Mallivastaus:** Napajännite on yhtä suuri kuin lähdejännite, kun paristosta ei oteta virtaa. Silloin sisäisessä resistanssissa ei synny jännitehäviötä. Jos virta on suuri, jännitehäviö on suuri ja navoille jää lähdejännitettä pienempi jännite. Virta on suurin oikosulussa, ja silloin napajännite on nolla. Kun kuormitusvastus on yhtä suuri kuin sisäinen resistanssi, napajännite on vain puolet lähdejännitteestä. Väite ”jännitteet ovat aina yhtä suuret” ei pidä paikkaansa. Lähdejännite on pariston ominaisuus, mutta napajännite riippuu otettavasta virrasta.
+**Mallivastaus:** Napajännite on yhtä suuri kuin lähdejännite, kun paristosta ei oteta virtaa. Silloin sisäisessä resistanssissa ei synny jännitehäviötä. Jos virta on suuri, jännitehäviö on suuri ja navoille jää lähdejännitettä pienempi jännite. Virta on suurin oikosulussa, ja silloin napajännite on nolla.
+
+Kun kuormitusvastus on yhtä suuri kuin sisäinen resistanssi, napajännite on vain puolet lähdejännitteestä. Väite ”jännitteet ovat aina yhtä suuret” ei pidä paikkaansa. Lähdejännite on pariston ominaisuus, mutta napajännite riippuu otettavasta virrasta.
 
 ## fy6-8-L1-07
 **Kysytty:** mitä pariston oikosulussa tapahtuu.
@@ -164,7 +166,11 @@
 ## fy6-8-L2-07
 **Kysytty:** mikä väite oppilaan päätelmästä, että sisäinen resistanssi on nolla, on oikein.
 **Periaate:** Napajännite on $U = E - R_\text{s} I$. Kun jännitemittari on kytketty ilman kuormaa, sen läpi kulkee häviävän pieni virta. Siksi $I \approx 0$ ja jännitehäviö sisäisessä resistanssissa on nolla. Silloin $U = E$, vaikka sisäinen resistanssi olisi kuinka suuri.
-**Mallivastaus:** Oppilaan päätelmä on virheellinen. Ilman kuormaa mitattu jännite $1{,}58\,\text{V}$ on pariston lähdejännite, koska virta on nolla eikä sisäisessä resistanssissa synny jännitehäviötä. Sama jännite näkyisi, vaikka sisäinen resistanssi olisi suuri. Yksi mittaus ilman virtaa ei siis kerro sisäisestä resistanssista mitään. Jännitemittarin virta on hyvin pieni, joten mittari ei itse pienennä jännitettä. Sisäinen resistanssi ei myöskään ole ääretön, vaikka virta on nolla, koska se on pariston vakio-ominaisuus. Sisäinen resistanssi saadaan mittaamalla napajännite ja virta kuormitettuna, mieluiten usealla kuormalla. Sitten lasketaan $R_\text{s} = (E - U) : I$ tai luetaan kuvaajan kulmakertoimesta.
+**Mallivastaus:** Oppilaan päätelmä on virheellinen. Ilman kuormaa mitattu jännite $1{,}58\,\text{V}$ on pariston lähdejännite, koska virta on nolla eikä sisäisessä resistanssissa synny jännitehäviötä. Sama jännite näkyisi, vaikka sisäinen resistanssi olisi suuri. Yksi mittaus ilman virtaa ei siis kerro sisäisestä resistanssista mitään.
+
+Jännitemittarin virta on hyvin pieni, joten mittari ei itse pienennä jännitettä. Sisäinen resistanssi ei myöskään ole ääretön, vaikka virta on nolla, koska se on pariston vakio-ominaisuus. Sisäinen resistanssi saadaan mittaamalla napajännite ja virta kuormitettuna, mieluiten usealla kuormalla.
+
+Sitten lasketaan $R_\text{s} = (E - U) : I$ tai luetaan kuvaajan kulmakertoimesta.
 
 ## fy6-8-L3-04
 **Annettu:** taulukon mittauspisteet virroilla $0{,}10\,\text{A}$ … $0{,}50\,\text{A}$. Uuden pariston napajännite pienenee arvosta $1{,}56\,\text{V}$ arvoon $1{,}46\,\text{V}$ ja ikääntyneen arvosta $1{,}41\,\text{V}$ arvoon $0{,}97\,\text{V}$ (esimerkkiaineisto). Kuormitusvastus on $R = 2{,}0\,\Omega$.
@@ -185,7 +191,9 @@ c) Ikääntyneelle ($E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}10\,\Omega$): $R =
 **Vastaus:** Vastauslaatikkoon $35\,\%$. a) Uusi paristo: $E = 1{,}58\,\text{V}$, $R_\text{s} = 0{,}25\,\Omega$. Ikääntynyt paristo: $E = 1{,}52\,\text{V}$, $R_\text{s} = 1{,}1\,\Omega$.
 b) Vastauslaatikkoon: noin $35\,\%$ ikääntyneen pariston kehittämästä tehosta muuttuu pariston sisäenergiaksi. Vastauksessa on kaksi merkitsevää numeroa, kuten kuorman $2{,}0\,\Omega$ tarkkuudessa. Uudella paristolla osuus on vain noin $11\,\%$, koska sen sisäinen resistanssi $0{,}25\,\Omega$ on paljon pienempi.
 c) Teho on suurin, noin $0{,}53\,\text{W}$, kuormalla $1{,}1\,\Omega$. Se on yhtä suuri kuin sisäinen resistanssi. Silloin puolet kehitetystä tehosta muuttuu pariston sisäenergiaksi.
-**Järkevyys:** Tehot täsmäävät: $0{,}264\,\text{W} + 2{,}0\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W} + 0{,}481\,\text{W} = 0{,}745\,\text{W}$, kuten kehitetty teho. Ikääntyneen pariston lähdejännite on vain hieman pienempi kuin uuden. Sisäinen resistanssi on kuitenkin yli nelinkertainen. Siksi ikääntynyt paristo lämpenee paljon enemmän ja antaa kuormalle vähemmän tehoa. Tehon maksimi on loiva, kuten arvot $0{,}47\,\text{W}$, $0{,}53\,\text{W}$ ja $0{,}47\,\text{W}$ näyttävät. Silti suurimmallakin teholla puolet energiasta menee hukkaan. Siksi laitteissa kuorma valitaan yleensä suuremmaksi kuin $R_\text{s}$.
+**Järkevyys:** Tehot täsmäävät: $0{,}264\,\text{W} + 2{,}0\,\Omega \cdot (0{,}490\,\text{A})^2 = 0{,}264\,\text{W} + 0{,}481\,\text{W} = 0{,}745\,\text{W}$, kuten kehitetty teho. Ikääntyneen pariston lähdejännite on vain hieman pienempi kuin uuden. Sisäinen resistanssi on kuitenkin yli nelinkertainen. Siksi ikääntynyt paristo lämpenee paljon enemmän ja antaa kuormalle vähemmän tehoa.
+
+Tehon maksimi on loiva, kuten arvot $0{,}47\,\text{W}$, $0{,}53\,\text{W}$ ja $0{,}47\,\text{W}$ näyttävät. Silti suurimmallakin teholla puolet energiasta menee hukkaan. Siksi laitteissa kuorma valitaan yleensä suuremmaksi kuin $R_\text{s}$.
 
 ## fy6-8-L3-05
 **Annettu:** taulukon mittauspisteet $(I;\ U)$ virroilla $0{,}50\,\text{A}$ … $3{,}00\,\text{A}$. Jännite pienenee arvosta $5{,}56\,\text{V}$ arvoon $2{,}79\,\text{V}$ (esimerkkiaineisto). Johtimien yhteenlaskettu resistanssi on $R_\text{j} = 0{,}30\,\Omega$. Oppilaan kulmakerroin on $1{,}1\,\Omega$ ja oikosulkuvirta $5{,}6\,\text{A}$.

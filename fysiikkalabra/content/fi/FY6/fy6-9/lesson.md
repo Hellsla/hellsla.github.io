@@ -304,7 +304,9 @@ Akkukennon lähdejännite on $3{,}70\,\text{V}$ ja sisäinen resistanssi $0{,}10
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $E = 3{,}70\,\text{V}$, $R_\text{s} = 0{,}10\,\Omega$, $U_\text{lat} = 4{,}20\,\text{V}$ ja $R = 0{,}15\,\Omega$. Kysytään latausvirtaa $I$ ja napajännitettä $U$.
+**Tunnetut ja kysytty.** $E = 3{,}70\,\text{V}$, $R_\text{s} = 0{,}10\,\Omega$, $U_\text{lat} = 4{,}20\,\text{V}$ ja $R = 0{,}15\,\Omega$.
+
+Kysytään latausvirtaa $I$ ja napajännitettä $U$.
 
 <!-- vaihe -->
 

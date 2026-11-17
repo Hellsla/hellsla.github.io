@@ -92,7 +92,9 @@
 ## fy6-3-L3-01
 **Given:** original resistance $R_1 = 0.80\,\Omega$; the length doubles, $l_2 = 2 l_1$; the volume is conserved
 **Find:** the resistance $R_2$ of the stretched wire
-**Principle:** The wire is of the same material and uniform, so $R = \rho l : A$. The volume $V = A l$ stays the same, so when the length doubles, the cross-sectional area is halved. Both changes increase the resistance: the length doubles it, and the half-size cross-sectional area doubles it again. So the resistance changes more than the length.
+**Principle:** The wire is of the same material and uniform, so $R = \rho l : A$. The volume $V = A l$ stays the same, so when the length doubles, the cross-sectional area is halved.
+
+Both changes increase the resistance: the length doubles it, and the half-size cross-sectional area doubles it again. So the resistance changes more than the length.
 **Formula:** $R_1 = \rho \dfrac{l_1}{A_1}$ and $R_2 = \rho \dfrac{l_2}{A_2}$, where $l_2 = 2 l_1$ and $A_2 = \dfrac{A_1}{2}$, so $R_2 = \rho \dfrac{2 l_1}{A_1 / 2} = 4 R_1$
 **Conversions:** Not needed: the resistances are in ohms, and the comparison is made with ratios.
 **Substitution:** $R_2 = 4 \cdot 0.80\,\Omega = 3.2\,\Omega$
@@ -102,7 +104,9 @@
 ## fy6-3-L3-02
 **Given:** nichrome wire, $A = 0.20\,\text{mm}^2$, $U = 2.00\,\text{V}$; measurements of $l$ and $I$: $0.40\,\text{m}$ and $0.91\,\text{A}$, $0.80\,\text{m}$ and $0.46\,\text{A}$, $1.20\,\text{m}$ and $0.30\,\text{A}$, $1.60\,\text{m}$ and $0.23\,\text{A}$
 **Find:** the resistivity $\rho$ of nichrome in $\mu\Omega\cdot\text{m}$
-**Principle:** The resistance for each length is $R = U : I$. The resistance of a uniform wire is $R = \rho l : A$, so $R$ is directly proportional to the length and the ratio $R : l$ is the constant $\rho : A$. In real data sets the points are usually not exactly on the same line because of measurement uncertainty, so all the measurements are used.
+**Principle:** The resistance for each length is $R = U : I$. The resistance of a uniform wire is $R = \rho l : A$, so $R$ is directly proportional to the length and the ratio $R : l$ is the constant $\rho : A$.
+
+In real data sets the points are usually not exactly on the same line because of measurement uncertainty, so all the measurements are used.
 **Formula:** $R = \dfrac{U}{I}$ and $R = \rho \dfrac{l}{A}$, so $\rho = \dfrac{R}{l} \cdot A$
 **Conversions:** $A = 0.20\,\text{mm}^2 = 0.20 \cdot 10^{-6}\,\text{m}^2$. Finally $10^{-6}\,\Omega\cdot\text{m} = 1\,\mu\Omega\cdot\text{m}$.
 **Substitution:** The resistances are $2.00\,\text{V} : 0.91\,\text{A} = 2.20\,\Omega$, $4.35\,\Omega$, $6.67\,\Omega$ and $8.70\,\Omega$, and the ratios $R : l$ are $5.49$, $5.43$, $5.56$ and $5.43\,\Omega/\text{m}$. The slope of the line fitted through the origin is $5.47\,\Omega/\text{m}$, so $\rho = 5.47\,\tfrac{\Omega}{\text{m}} \cdot 0.20 \cdot 10^{-6}\,\text{m}^2 = 1.09 \cdot 10^{-6}\,\Omega\cdot\text{m}$
@@ -117,17 +121,33 @@
 **Conversions:** Not needed: the voltage is in volts and the resistance in ohms.
 **Substitution:** $I_\text{cold} = \dfrac{3.0\,\text{V}}{1.0\,\Omega} = 3.0\,\text{A}$
 **Answer:** $3.0\,\text{A}$, two significant figures like the voltage and the resistance.
-**Reasonableness:** The resistance of the lit lamp is $3.0\,\text{V} : 0.25\,\text{A} = 12\,\Omega$, which is 12 times the cold value, so the switch-on current is 12 times the operating current $0.25\,\text{A}$. This large current heats the thin wire very quickly, and the thinnest part of the wire heats up most, because there the resistance per unit length is greatest. That is why the wire most often breaks right when the lamp is switched on.
+**Reasonableness:** The resistance of the lit lamp is $3.0\,\text{V} : 0.25\,\text{A} = 12\,\Omega$, which is 12 times the cold value, so the switch-on current is 12 times the operating current $0.25\,\text{A}$.
+
+This large current heats the thin wire very quickly, and the thinnest part of the wire heats up most, because there the resistance per unit length is greatest.
+
+That is why the wire most often breaks right when the lamp is switched on.
 
 ## fy6-3-L1-06
 **Find:** what a characteristic curve that is a straight line through the origin tells about the component.
-**Principle:** The characteristic curve shows how the voltage and the current depend on each other. If the curve is a straight line through the origin, the voltage is directly proportional to the current: when one doubles, the other doubles too. Then the ratio $R = U : I$ is the same at every point, and the slope of the line is the resistance.
-**Model answer:** The component obeys Ohm's law, because the voltage is directly proportional to the current and the resistance $R = U : I$ is constant. The resistance does not increase with the voltage, because then the curve would be curved. The resistance is not zero either: passing through the origin only tells us that at zero voltage the current is also zero. The current and the voltage merely increasing at the same time does not prove proportionality; that is shown only by the ratio $U : I$ being constant.
+**Principle:** The characteristic curve shows how the voltage and the current depend on each other. If the curve is a straight line through the origin, the voltage is directly proportional to the current: when one doubles, the other doubles too.
+
+Then the ratio $R = U : I$ is the same at every point, and the slope of the line is the resistance.
+**Model answer:** The component obeys Ohm's law, because the voltage is directly proportional to the current and the resistance $R = U : I$ is constant.
+
+The resistance does not increase with the voltage, because then the curve would be curved. The resistance is not zero either: passing through the origin only tells us that at zero voltage the current is also zero.
+
+The current and the voltage merely increasing at the same time does not prove proportionality; that is shown only by the ratio $U : I$ being constant.
 
 ## fy6-3-L1-07
 **Find:** how the resistivity and the resistance differ for two wires of the same metal and the same thickness when one is twice as long.
-**Principle:** The resistivity $\rho$ is a property of the material and depends on the material and the temperature, not on the dimensions of the wire. The resistance $R = \rho l : A$ also depends on the length $l$ and the cross-sectional area $A$. A wire twice as long is like two wires one after the other.
-**Model answer:** The resistivity is the same, but the resistance of the longer wire is greater because of the length: it is double, because the cross-sectional area and the material are the same and the length is double. The resistivity of the longer wire is not greater, because it does not depend on the dimensions. The resistance is not the same either, because it depends on the length. A longer wire does not give the current more room either: the room for the current is described by the cross-sectional area, and it is the same for both wires.
+**Principle:** The resistivity $\rho$ is a property of the material and depends on the material and the temperature, not on the dimensions of the wire.
+
+The resistance $R = \rho l : A$ also depends on the length $l$ and the cross-sectional area $A$. A wire twice as long is like two wires one after the other.
+**Model answer:** The resistivity is the same, but the resistance of the longer wire is greater because of the length: it is double, because the cross-sectional area and the material are the same and the length is double.
+
+The resistivity of the longer wire is not greater, because it does not depend on the dimensions. The resistance is not the same either, because it depends on the length.
+
+A longer wire does not give the current more room either: the room for the current is described by the cross-sectional area, and it is the same for both wires.
 
 ## fy6-3-L1-08
 **Given:** at first $U = 4.5\,\text{V}$ and $I_1 = 0.60\,\text{A}$; the new wire is of the same copper, equally thick and twice as long; the voltage and the temperature stay the same
@@ -142,13 +162,23 @@
 ## fy6-3-L2-05
 **Given:** the measurement points $(U, I)$ in the table, $U = 1.0\,\text{V}$–$8.0\,\text{V}$ and $I = 6.6\,\text{mA}$–$53.6\,\text{mA}$; the error limit of the multimeter about $\pm 0.5\,\text{mA}$
 **Find:** the resistance $R$ of the resistor from the slope of the fitted line and its uncertainty $\Delta R$
-**Principle:** The characteristic curve of a resistor is a straight line through the origin, and its slope is the resistance. The measurement points scatter around the line because of measurement uncertainty, so the line is drawn through the middle of the set of points so that there are points on both sides of it. The line does not have to pass through any single point.
-**Reading the graph:** The current $I$ is on the horizontal axis and the voltage $U$ on the vertical axis. The fitted line runs from the origin through the middle of the points. The line is drawn on paper or with a graphing program; your own drawing is checked by comparing its reading with this one. A point far from the others is read from the line: when $I = 50.0\,\text{mA}$, the line is at $U = 7.5\,\text{V}$. The farther the reading point is from the origin, the smaller the share of the reading error in the slope.
+**Principle:** The characteristic curve of a resistor is a straight line through the origin, and its slope is the resistance. The measurement points scatter around the line because of measurement uncertainty, so the line is drawn through the middle of the set of points so that there are points on both sides of it.
+
+The line does not have to pass through any single point.
+**Reading the graph:** The current $I$ is on the horizontal axis and the voltage $U$ on the vertical axis. The fitted line runs from the origin through the middle of the points.
+
+The line is drawn on paper or with a graphing program; your own drawing is checked by comparing its reading with this one. A point far from the others is read from the line: when $I = 50.0\,\text{mA}$, the line is at $U = 7.5\,\text{V}$.
+
+The farther the reading point is from the origin, the smaller the share of the reading error in the slope.
 **Formula:** $R = \dfrac{\Delta U}{\Delta I}$, that is, the slope of the line; the uncertainty $\Delta R \approx \dfrac{R_{\text{max}} - R_{\text{min}}}{2}$, where $R_{\text{max}}$ and $R_{\text{min}}$ are the largest and smallest $U : I$ of the individual points
 **Conversions:** $50.0\,\text{mA} = 50.0 \cdot 10^{-3}\,\text{A} = 0.0500\,\text{A}$
 **Substitution:** $R = \dfrac{7.5\,\text{V} - 0\,\text{V}}{0.0500\,\text{A} - 0\,\text{A}} = 150\,\Omega$. The values $U : I$ of the points are $152$, $148$, $152$, $149$, $151$, $149$, $151$ and $149\,\Omega$ (smallest $148.1\,\Omega$ and largest $151.5\,\Omega$), so the estimate from the scatter of the points is $\Delta R \approx \dfrac{151.5\,\Omega - 148.1\,\Omega}{2} = 1.7\,\Omega$
 **Answer:** $R = 150\,\Omega$, three significant figures, because the uncertainty is only about $2\,\Omega$; the uncertainty is about $\Delta R \approx 2\,\Omega$, that is, $R = (150 \pm 2)\,\Omega$.
-**Reasonableness:** All the resistances of the points are between $148\,\Omega$ and $152\,\Omega$, that is, at most about $1.5\,\%$ from the fitted value, so the line describes the measurements well. The scatter matches the error limit of the multimeter: the deviations of the points from the line are at most about $0.4\,\text{mA}$, which is within the error limit $0.5\,\text{mA}$. The voltage across the resistor is $8.0\,\text{V}$ when the current is $53.3\,\text{mA}$: $150\,\Omega \cdot 0.0533\,\text{A} = 8.0\,\text{V}$.
+**Reasonableness:** All the resistances of the points are between $148\,\Omega$ and $152\,\Omega$, that is, at most about $1.5\,\%$ from the fitted value, so the line describes the measurements well.
+
+The scatter matches the error limit of the multimeter: the deviations of the points from the line are at most about $0.4\,\text{mA}$, which is within the error limit $0.5\,\text{mA}$.
+
+The voltage across the resistor is $8.0\,\text{V}$ when the current is $53.3\,\text{mA}$: $150\,\Omega \cdot 0.0533\,\text{A} = 8.0\,\text{V}$.
 
 ## fy6-3-L2-06
 **Given:** the measurement points $(U, I)$ of a filament lamp in the table, $U = 1.0\,\text{V}$–$5.0\,\text{V}$
@@ -158,41 +188,75 @@
 **Conversions:** Not needed: the voltage is in volts and the current in amperes.
 **Substitution:** $R = 1.0\,\text{V} : 0.098\,\text{A} = 10.2\,\Omega$, $2.0\,\text{V} : 0.146\,\text{A} = 13.7\,\Omega$, $3.0\,\text{V} : 0.187\,\text{A} = 16.0\,\Omega$, $4.0\,\text{V} : 0.221\,\text{A} = 18.1\,\Omega$ and $5.0\,\text{V} : 0.248\,\text{A} = 20.2\,\Omega$. The ratio is $\dfrac{20.2\,\Omega}{10.2\,\Omega} = 1.98$
 **Answer:** $2.0$ times, two significant figures like the voltages. The lamp does not obey Ohm's law, because the resistance increases from $10\,\Omega$ to about $20\,\Omega$.
-**Reasonableness:** The voltage becomes five times as large ($5.0\,\text{V} : 1.0\,\text{V} = 5.0$), but the current only about $2.5$ times as large ($0.248\,\text{A} : 0.098\,\text{A} = 2.5$). By Ohm's law the current would also become five times as large, so the resistance must become about $5.0 : 2.5 = 2.0$ times as large, as calculated. Explanation: a larger current heats the tungsten wire, and the resistance of a hot metal wire is greater. The temperature of the lamp changes during the measurement, so the condition of Ohm's law of a constant temperature is not met.
+**Reasonableness:** The voltage becomes five times as large ($5.0\,\text{V} : 1.0\,\text{V} = 5.0$), but the current only about $2.5$ times as large ($0.248\,\text{A} : 0.098\,\text{A} = 2.5$).
+
+By Ohm's law the current would also become five times as large, so the resistance must become about $5.0 : 2.5 = 2.0$ times as large, as calculated.
+
+Explanation: a larger current heats the tungsten wire, and the resistance of a hot metal wire is greater. The temperature of the lamp changes during the measurement, so the condition of Ohm's law of a constant temperature is not met.
 
 ## fy6-3-L2-07
 **Given:** the measurement points $(U, I)$: $(0.0\,\text{V}; 0.00\,\text{A})$, $(1.0\,\text{V}; 0.20\,\text{A})$, $(2.0\,\text{V}; 0.41\,\text{A})$, $(3.0\,\text{V}; 0.61\,\text{A})$ and $(4.0\,\text{V}; 0.81\,\text{A})$
 **Find:** what is wrong in the student's reasoning, and the mean $R_{\text{avg}}$ of the resistances at the non-zero voltages
-**Principle:** The resistance $R = U : I$ is defined only when the current is not zero. At the point $U = 0.0\,\text{V}$ and $I = 0.00\,\text{A}$ the ratio is $0 : 0$, which is not a number. That a resistor does not pass a current without a voltage does not mean that the resistance is zero. The resistance is estimated from the points where the current can be measured. If the ratio $U : I$ is the same at them, the resistor obeys Ohm's law and the resistance does not increase with the voltage.
+**Principle:** The resistance $R = U : I$ is defined only when the current is not zero. At the point $U = 0.0\,\text{V}$ and $I = 0.00\,\text{A}$ the ratio is $0 : 0$, which is not a number.
+
+That a resistor does not pass a current without a voltage does not mean that the resistance is zero. The resistance is estimated from the points where the current can be measured.
+
+If the ratio $U : I$ is the same at them, the resistor obeys Ohm's law and the resistance does not increase with the voltage.
 **Formula:** $R = \dfrac{U}{I}$ for each point and $R_{\text{avg}} = \dfrac{R_1 + \ldots + R_4}{4}$
 **Conversions:** Not needed: the voltage is in volts and the current in amperes.
 **Substitution:** $R_1 = 1.0\,\text{V} : 0.20\,\text{A} = 5.00\,\Omega$, $R_2 = 2.0\,\text{V} : 0.41\,\text{A} = 4.88\,\Omega$, $R_3 = 3.0\,\text{V} : 0.61\,\text{A} = 4.92\,\Omega$ and $R_4 = 4.0\,\text{V} : 0.81\,\text{A} = 4.94\,\Omega$. The sum is $19.74\,\Omega$, so $R_{\text{avg}} = 19.74\,\Omega : 4 = 4.93\,\Omega$
 **Answer:** $R_{\text{avg}} = 4.9\,\Omega$, two significant figures like the currents. The student's reasoning is wrong: at the zero point the resistance cannot be calculated (the ratio $0 : 0$ is not zero), and at the other points the resistance is practically the same, so it does not increase with the voltage.
-**Reasonableness:** At the largest voltage $4.0\,\text{V}$ we get $4.94\,\Omega$, and all the values are between $4.88\,\Omega$ and $5.00\,\Omega$, so the mean $4.9\,\Omega$ is between them. Check: $4.9\,\Omega \cdot 0.81\,\text{A} = 4.0\,\text{V}$. The difference between the first point, $5.00\,\Omega$, and the other values is measurement uncertainty, not an increase. The slope of a line fitted through the origin gives the same result, $4.9\,\Omega$.
+**Reasonableness:** At the largest voltage $4.0\,\text{V}$ we get $4.94\,\Omega$, and all the values are between $4.88\,\Omega$ and $5.00\,\Omega$, so the mean $4.9\,\Omega$ is between them.
+
+Check: $4.9\,\Omega \cdot 0.81\,\text{A} = 4.0\,\text{V}$. The difference between the first point, $5.00\,\Omega$, and the other values is measurement uncertainty, not an increase. The slope of a line fitted through the origin gives the same result, $4.9\,\Omega$.
 
 ## fy6-3-L3-04
 **Given:** the currents of the components A, B and C at the voltages $0.5\,\text{V}$–$3.0\,\text{V}$ in the table (in milliamperes); the components are a resistor, a filament lamp and a diode
 **Find:** the identification of the components from the change of the resistance, and the resistance $R$ of the diode at the operating point $U = 1.5\,\text{V}$ in ohms
-**Principle:** The resistance at each point is $R = U : I$. For a resistor it stays the same when the temperature is constant, that is, the characteristic curve is a straight line. The resistance of a filament lamp increases with the voltage, because a larger current heats the wire and the resistance of a hot metal is greater. A diode does not obey Ohm's law: at a small voltage hardly any current flows through it and the resistance is large, but once the current starts to grow, the resistance of the diode decreases as the voltage increases. The identification is made by comparing the resistances as a function of the voltage, and at an operating point the resistance is the $U : I$ of the point, not the steepness of the curve.
+**Principle:** The resistance at each point is $R = U : I$. For a resistor it stays the same when the temperature is constant, that is, the characteristic curve is a straight line.
+
+The resistance of a filament lamp increases with the voltage, because a larger current heats the wire and the resistance of a hot metal is greater.
+
+A diode does not obey Ohm's law: at a small voltage hardly any current flows through it and the resistance is large, but once the current starts to grow, the resistance of the diode decreases as the voltage increases.
+
+The identification is made by comparing the resistances as a function of the voltage, and at an operating point the resistance is the $U : I$ of the point, not the steepness of the curve.
 **Formula:** $R = \dfrac{U}{I}$
 **Conversions:** Currents from milliamperes to amperes: $1\,\text{mA} = 10^{-3}\,\text{A}$, for example $20.0\,\text{mA} = 0.0200\,\text{A}$.
-**Substitution:** Component A: $R = 0.5\,\text{V} : 6.6\,\text{mA} = 76\,\Omega$, $1.0\,\text{V} : 13.5\,\text{mA} = 74\,\Omega$, $1.5\,\text{V} : 20.0\,\text{mA} = 75\,\Omega$, $2.0\,\text{V} : 26.6\,\text{mA} = 75\,\Omega$ and $3.0\,\text{V} : 40.2\,\text{mA} = 75\,\Omega$. Component B: $16\,\Omega$, $22\,\Omega$, $26\,\Omega$, $30\,\Omega$ and $37\,\Omega$. Component C: $1.0\,\text{V} : 0.1\,\text{mA} = 10\,\text{k}\Omega$, $1.5\,\text{V} : 2.5\,\text{mA} = 600\,\Omega$, $2.0\,\text{V} : 21\,\text{mA} = 95\,\Omega$ and $3.0\,\text{V} : 98\,\text{mA} = 31\,\Omega$ (at the voltage $0.5\,\text{V}$ the current is zero, so the resistance is not calculated). The resistance of the diode at the operating point is $R = \dfrac{1.5\,\text{V}}{2.5 \cdot 10^{-3}\,\text{A}} = 600\,\Omega$, and the resistance of the filament lamp at the same point is $\dfrac{1.5\,\text{V}}{57 \cdot 10^{-3}\,\text{A}} = 26\,\Omega$
+**Substitution:** Component A: $R = 0.5\,\text{V} : 6.6\,\text{mA} = 76\,\Omega$, $1.0\,\text{V} : 13.5\,\text{mA} = 74\,\Omega$, $1.5\,\text{V} : 20.0\,\text{mA} = 75\,\Omega$, $2.0\,\text{V} : 26.6\,\text{mA} = 75\,\Omega$ and $3.0\,\text{V} : 40.2\,\text{mA} = 75\,\Omega$.
+
+Component B: $16\,\Omega$, $22\,\Omega$, $26\,\Omega$, $30\,\Omega$ and $37\,\Omega$. Component C: $1.0\,\text{V} : 0.1\,\text{mA} = 10\,\text{k}\Omega$, $1.5\,\text{V} : 2.5\,\text{mA} = 600\,\Omega$, $2.0\,\text{V} : 21\,\text{mA} = 95\,\Omega$ and $3.0\,\text{V} : 98\,\text{mA} = 31\,\Omega$ (at the voltage $0.5\,\text{V}$ the current is zero, so the resistance is not calculated).
+
+The resistance of the diode at the operating point is $R = \dfrac{1.5\,\text{V}}{2.5 \cdot 10^{-3}\,\text{A}} = 600\,\Omega$, and the resistance of the filament lamp at the same point is $\dfrac{1.5\,\text{V}}{57 \cdot 10^{-3}\,\text{A}} = 26\,\Omega$
 **Answer:** $6.0 \cdot 10^{2}\,\Omega$, two significant figures like the current $2.5\,\text{mA}$. Component A is the resistor (constant resistance, about $75\,\Omega$), B the filament lamp (the resistance increases from $16\,\Omega$ to $37\,\Omega$) and C the diode (the resistance decreases from $10\,\text{k}\Omega$ to $31\,\Omega$). At the point $U = 1.5\,\text{V}$ the resistance of the diode is about $23$ times the resistance of the filament lamp.
-**Reasonableness:** Check: $$600\,\Omega \cdot 2.5 \cdot 10^{-3}\,\text{A} = 1.5\,\text{V}$$. The ratio is $600\,\Omega : 26\,\Omega = 23$. The current of the resistor is directly proportional to the voltage: the voltage triples from $1.0\,\text{V}$ to $3.0\,\text{V}$, and the current grows from $13.5\,\text{mA}$ to $40.2\,\text{mA}$, that is, $2.98$ times. For the filament lamp the voltage grows by the same amount but the current only $81 : 46 = 1.8$ times, so the resistance increases.
+**Reasonableness:** Check: $$600\,\Omega \cdot 2.5 \cdot 10^{-3}\,\text{A} = 1.5\,\text{V}$$. The ratio is $600\,\Omega : 26\,\Omega = 23$. The current of the resistor is directly proportional to the voltage: the voltage triples from $1.0\,\text{V}$ to $3.0\,\text{V}$, and the current grows from $13.5\,\text{mA}$ to $40.2\,\text{mA}$, that is, $2.98$ times.
+
+For the filament lamp the voltage grows by the same amount but the current only $81 : 46 = 1.8$ times, so the resistance increases.
 
 ## fy6-3-L3-05
 **Given:** varnished iron wire in a water bath, $U = 1.00\,\text{V}$ in all the measurements; $T$ and $I$: $20\,{}^\circ\text{C}$ and $0.500\,\text{A}$, $40\,{}^\circ\text{C}$ and $0.442\,\text{A}$, $60\,{}^\circ\text{C}$ and $0.398\,\text{A}$, $80\,{}^\circ\text{C}$ and $0.362\,\text{A}$
 **Find:** the variables of the experiment and the measuring arrangement, the increase of the resistance of the wire as a percentage from $20\,{}^\circ\text{C}$ to $80\,{}^\circ\text{C}$, and two sources of error
-**Principle:** At each temperature the resistance is obtained as the ratio $R = U : I$. When the voltage is kept the same, a decrease of the current shows an increase of the resistance. In the experiment only one factor, the temperature, is changed and the other factors are kept constant, so that the result can be connected to the temperature. The percentage increase is $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$.
+**Principle:** At each temperature the resistance is obtained as the ratio $R = U : I$. When the voltage is kept the same, a decrease of the current shows an increase of the resistance.
+
+In the experiment only one factor, the temperature, is changed and the other factors are kept constant, so that the result can be connected to the temperature.
+
+The percentage increase is $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$.
 **Formula:** $R = \dfrac{U}{I}$ and the increase $\dfrac{R_{80} - R_{20}}{R_{20}} \cdot 100\,\%$
 **Conversions:** Not needed: the voltage is in volts and the current in amperes, and the change of the temperature does not need to be converted.
-**Substitution:** Variables: the independent variable is the temperature $T$ of the water, that is, of the wire, the dependent variable is the resistance $R$ of the wire (measured from the current and the voltage), and the controlled factors are the material, length and thickness of the wire and the voltage $1.00\,\text{V}$. Measuring arrangement: the ammeter is connected in series with the wire and the voltmeter in parallel with the wire, so that the meters measure the current and the voltage of the wire; the wire is varnished so that the water does not conduct current past it, and the thermometer is next to the wire. The resistances are $R_{20} = 1.00\,\text{V} : 0.500\,\text{A} = 2.000\,\Omega$, $R_{40} = 2.262\,\Omega$, $R_{60} = 2.513\,\Omega$ and $R_{80} = 1.00\,\text{V} : 0.362\,\text{A} = 2.762\,\Omega$, so the increase is $\dfrac{2.762\,\Omega - 2.000\,\Omega}{2.000\,\Omega} \cdot 100\,\% = 38.1\,\%$. Sources of error: (1) the wire also heats up from the current itself, so its temperature may be higher than that of the water; the current is switched on only for the moment of measurement and the voltage is kept small. (2) The wire has not had time to settle to the temperature of the water, or the thermometer is not at the wire; at each temperature we wait until the reading of the thermometer no longer changes, and stir the water.
+**Substitution:** Variables: the independent variable is the temperature $T$ of the water, that is, of the wire, the dependent variable is the resistance $R$ of the wire (measured from the current and the voltage), and the controlled factors are the material, length and thickness of the wire and the voltage $1.00\,\text{V}$. Measuring arrangement: the ammeter is connected in series with the wire and the voltmeter in parallel with the wire, so that the meters measure the current and the voltage of the wire; the wire is varnished so that the water does not conduct current past it, and the thermometer is next to the wire. The resistances are $R_{20} = 1.00\,\text{V} : 0.500\,\text{A} = 2.000\,\Omega$, $R_{40} = 2.262\,\Omega$, $R_{60} = 2.513\,\Omega$ and $R_{80} = 1.00\,\text{V} : 0.362\,\text{A} = 2.762\,\Omega$, so the increase is $\dfrac{2.762\,\Omega - 2.000\,\Omega}{2.000\,\Omega} \cdot 100\,\% = 38.1\,\%$. Sources of error:
+
+(1) the wire also heats up from the current itself, so its temperature may be higher than that of the water; the current is switched on only for the moment of measurement and the voltage is kept small.
+
+(2) The wire has not had time to settle to the temperature of the water, or the thermometer is not at the wire; at each temperature we wait until the reading of the thermometer no longer changes, and stir the water.
 **Answer:** The resistance has increased by about $38\,\%$ (calculated $38.1\,\%$), two significant figures, because the increase is the difference of two almost equal resistances relative to the value $R_{20}$. The result supports the conclusion that the resistance of a metal wire increases as the temperature rises.
-**Reasonableness:** The current decreases as the temperature rises ($0.500\,\text{A} \to 0.362\,\text{A}$) and the voltage is constant, so the resistance must increase: $0.500\,\text{A} : 0.362\,\text{A} = 1.38$. The resistance increases by about the same amount over each $20\,{}^\circ\text{C}$ interval ($0.262\,\Omega$, $0.251\,\Omega$ and $0.249\,\Omega$), that is, the increase is almost steady. The measurement is of one wire, so the result describes the wire of this example data and is not an exact property of iron wire.
+**Reasonableness:** The current decreases as the temperature rises ($0.500\,\text{A} \to 0.362\,\text{A}$) and the voltage is constant, so the resistance must increase: $0.500\,\text{A} : 0.362\,\text{A} = 1.38$.
+
+The resistance increases by about the same amount over each $20\,{}^\circ\text{C}$ interval ($0.262\,\Omega$, $0.251\,\Omega$ and $0.249\,\Omega$), that is, the increase is almost steady. The measurement is of one wire, so the result describes the wire of this example data and is not an exact property of iron wire.
 
 ## fy6-3-L1-09
 **Find:** which of the four $(I, U)$ graphs is the characteristic curve of a $2.0\,\text{k}\Omega$ resistor obeying Ohm's law.
-**Principle:** The resistance of a resistor obeying Ohm's law is constant, so $U = RI$: the characteristic curve is a straight line through the origin whose slope is the resistance $R$. Resistance is the ratio of the voltage to the current $U : I$, not $I : U$, and it must be the same at every point of the curve.
+**Principle:** The resistance of a resistor obeying Ohm's law is constant, so $U = RI$: the characteristic curve is a straight line through the origin whose slope is the resistance $R$.
+
+Resistance is the ratio of the voltage to the current $U : I$, not $I : U$, and it must be the same at every point of the curve.
 **Model answer:** The correct one is graph C. Let us calculate the voltage of the resistor at a current of $4.0\,\text{mA}$.
 
 $U = RI$
@@ -201,7 +265,13 @@ $U = 2.0 \cdot 10^{3}\,\Omega \cdot 4.0 \cdot 10^{-3}\,\text{A}$
 
 $U = 8.0\,\text{V}$
 
-The line of graph C passes through the origin and the point $(4.0\,\text{mA};\ 8.0\,\text{V})$, and also at the point $(2.0\,\text{mA};\ 4.0\,\text{V})$ the ratio is $U : I = 2.0\,\text{k}\Omega$. The curve of graph A passes through the same point $(4.0\,\text{mA};\ 8.0\,\text{V})$, but at the point $(2.0\,\text{mA};\ 2.0\,\text{V})$ the ratio is only $1.0\,\text{k}\Omega$: the resistance increases with the voltage, so the component does not obey Ohm's law. In graph B the voltage at a current of $4.0\,\text{mA}$ is $2.0\,\text{V}$, so the resistance would be $0.50\,\text{k}\Omega$: there the slope has been taken to be $I : U$. In graph D the voltage is constant $2.0\,\text{V}$, so the ratio $U : I$ changes all the time: there the numerical value of the resistance has been drawn as the voltage.
+The line of graph C passes through the origin and the point $(4.0\,\text{mA};\ 8.0\,\text{V})$, and also at the point $(2.0\,\text{mA};\ 4.0\,\text{V})$ the ratio is $U : I = 2.0\,\text{k}\Omega$.
+
+The curve of graph A passes through the same point $(4.0\,\text{mA};\ 8.0\,\text{V})$, but at the point $(2.0\,\text{mA};\ 2.0\,\text{V})$ the ratio is only $1.0\,\text{k}\Omega$: the resistance increases with the voltage, so the component does not obey Ohm's law.
+
+In graph B the voltage at a current of $4.0\,\text{mA}$ is $2.0\,\text{V}$, so the resistance would be $0.50\,\text{k}\Omega$: there the slope has been taken to be $I : U$.
+
+In graph D the voltage is constant $2.0\,\text{V}$, so the ratio $U : I$ changes all the time: there the numerical value of the resistance has been drawn as the voltage.
 
 **Reading the graph:** The voltage is read from each graph at two currents, for example $2.0\,\text{mA}$ and $4.0\,\text{mA}$, and the ratio $U : I$ is calculated. Only in graph C is the ratio $2.0\,\text{k}\Omega$ at both points.
 
@@ -216,15 +286,41 @@ The line of graph C passes through the origin and the point $(4.0\,\text{mA};\ 8
 **Reasonableness:** Units: $\Omega\cdot\text{m} \cdot \text{m} : \text{m}^2 = \Omega$. One metre of this wire is $0.0112\,\Omega$, and $40 \cdot 0.0112\,\Omega = 0.45\,\Omega$. A thicker conductor with a cross-sectional area of $2.5\,\text{mm}^2$ would have a smaller resistance, which makes sense.
 
 ## fy6-3-L2-08
-**Given:** from the source material (the PhET simulation *Circuit Construction Kit: DC*): a self-built circuit with a battery and a resistor, the ammeter in series with the resistor and the voltmeter across the terminals of the resistor. The example measurement of the table: the voltages $3.0\,\text{V}$, $6.0\,\text{V}$, $9.0\,\text{V}$, $12.0\,\text{V}$ and $15.0\,\text{V}$ and the currents $0.075\,\text{A}$, $0.150\,\text{A}$, $0.225\,\text{A}$, $0.300\,\text{A}$ and $0.375\,\text{A}$. Your own readings are different if the resistance of your resistor is different. The method is the same, and it is shown here with the example measurement of the table, which is not the only correct result.
+**Given:** from the source material (the PhET simulation *Circuit Construction Kit: DC*): a self-built circuit with a battery and a resistor, the ammeter in series with the resistor and the voltmeter across the terminals of the resistor.
+
+The example measurement of the table: the voltages $3.0\,\text{V}$, $6.0\,\text{V}$, $9.0\,\text{V}$, $12.0\,\text{V}$ and $15.0\,\text{V}$ and the currents $0.075\,\text{A}$, $0.150\,\text{A}$, $0.225\,\text{A}$, $0.300\,\text{A}$ and $0.375\,\text{A}$. Your own readings are different if the resistance of your resistor is different.
+
+The method is the same, and it is shown here with the example measurement of the table, which is not the only correct result.
 **Find:** a) a series of measurements at five or more voltages; b) the graph of the current as a function of the voltage, the resistance $R$ of the resistor in ohms and whether the resistor obeys Ohm's law; c) the electric power $P$ of the resistor in watts at two voltages; d) why the relationship between the current and the voltage of a filament lamp differs from the model of an ideal resistor
-**Principle:** A resistor obeys Ohm's law if the current through it is directly proportional to the voltage across it. Then the ratio $U : I$, that is, the resistance, is the same at every voltage, and the measurement points lie on a straight line through the origin. The line passes through the origin because without a voltage no current flows through the resistor. The resistor of the simulation is an ideal model whose resistance is constant, so the condition of Ohm's law is met.
-**Part a):** The voltage of the battery is changed between the measurements, and the resistor is kept the same. At each voltage the voltage $U$ across the resistor is read from the voltmeter and the current $I$ from the ammeter, and the readings are recorded in a table. The voltage is read from the meter and not from the label of the battery, because the resistance needs exactly the voltage across the terminals of the resistor. The voltages are chosen from a wide range and at even intervals, so that the shape of the graph shows clearly. The example measurement of the table is such a series.
-**Reading the graph:** The voltage $U$ is on the horizontal axis and the current $I$ on the vertical axis. The five points of the table fall on the same straight line, which passes through the origin. A point far from the origin is read from the line, so that the share of the reading error is small: when $U = 15.0\,\text{V}$, the line is at $I = 0.375\,\text{A}$. The slope of this graph is $\dfrac{\Delta I}{\Delta U}$, that is, the reciprocal of the resistance, $\dfrac{1}{R}$. In the characteristic curve of the chapter the axes are the other way round (the current on the horizontal axis), and then the slope is $R$ itself.
+**Principle:** A resistor obeys Ohm's law if the current through it is directly proportional to the voltage across it. Then the ratio $U : I$, that is, the resistance, is the same at every voltage, and the measurement points lie on a straight line through the origin.
+
+The line passes through the origin because without a voltage no current flows through the resistor. The resistor of the simulation is an ideal model whose resistance is constant, so the condition of Ohm's law is met.
+**Part a):** The voltage of the battery is changed between the measurements, and the resistor is kept the same. At each voltage the voltage $U$ across the resistor is read from the voltmeter and the current $I$ from the ammeter, and the readings are recorded in a table.
+
+The voltage is read from the meter and not from the label of the battery, because the resistance needs exactly the voltage across the terminals of the resistor.
+
+The voltages are chosen from a wide range and at even intervals, so that the shape of the graph shows clearly. The example measurement of the table is such a series.
+**Reading the graph:** The voltage $U$ is on the horizontal axis and the current $I$ on the vertical axis. The five points of the table fall on the same straight line, which passes through the origin.
+
+A point far from the origin is read from the line, so that the share of the reading error is small: when $U = 15.0\,\text{V}$, the line is at $I = 0.375\,\text{A}$.
+
+The slope of this graph is $\dfrac{\Delta I}{\Delta U}$, that is, the reciprocal of the resistance, $\dfrac{1}{R}$. In the characteristic curve of the chapter the axes are the other way round (the current on the horizontal axis), and then the slope is $R$ itself.
 **Formula:** Part b): the definition of resistance $R = \dfrac{U}{I}$ gives $I = \dfrac{1}{R} \cdot U$, so the slope of the line is $\dfrac{\Delta I}{\Delta U} = \dfrac{1}{R}$ and $R = \dfrac{\Delta U}{\Delta I}$. Part c): $P = UI$
 **Conversions:** None needed: the voltage is in volts and the current in amperes, so the resistance comes out in ohms ($1\,\Omega = 1\,\text{V/A}$) and the power in watts ($1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$).
 **Substitution:** Part b): $R = \dfrac{15.0\,\text{V} - 0\,\text{V}}{0.375\,\text{A} - 0\,\text{A}} = 40.0\,\Omega$. Part c): at the voltage $6.0\,\text{V}$ the power is $P_1 = U_1 I_1 = 6.0\,\text{V} \cdot 0.150\,\text{A} = 0.90\,\text{W}$ and at the voltage $12.0\,\text{V}$ the power is $P_2 = U_2 I_2 = 12.0\,\text{V} \cdot 0.300\,\text{A} = 3.60\,\text{W}$
-**Part b):** The points lie on a straight line through the origin, so the current is directly proportional to the voltage and the resistance is constant. The resistor therefore obeys Ohm's law. In your own measurement with the simulation the conclusion is the same, although the value of the resistance is different. In real series of measurements the points usually do not lie exactly on the same line because of measurement uncertainty, and then the line is fitted through the middle of the set of points.
-**Part d):** The tungsten filament of a filament lamp heats up the more, the larger the current through it. The resistivity of a metal increases as the temperature rises, so the resistance of the hot filament is larger than that of the cold one. As the voltage increases, the current therefore increases more slowly than in direct proportion, and the graph bends below the straight line. Ohm's law requires that the temperature of the conductor stays the same, and this condition is not met in a filament lamp. In the model of an ideal resistor the resistance is constant, so the model does not describe the lamp. At each point the resistance of the lamp is still the ratio $U : I$.
+**Part b):** The points lie on a straight line through the origin, so the current is directly proportional to the voltage and the resistance is constant.
+
+The resistor therefore obeys Ohm's law. In your own measurement with the simulation the conclusion is the same, although the value of the resistance is different.
+
+In real series of measurements the points usually do not lie exactly on the same line because of measurement uncertainty, and then the line is fitted through the middle of the set of points.
+**Part d):** The tungsten filament of a filament lamp heats up the more, the larger the current through it. The resistivity of a metal increases as the temperature rises, so the resistance of the hot filament is larger than that of the cold one.
+
+As the voltage increases, the current therefore increases more slowly than in direct proportion, and the graph bends below the straight line. Ohm's law requires that the temperature of the conductor stays the same, and this condition is not met in a filament lamp.
+
+In the model of an ideal resistor the resistance is constant, so the model does not describe the lamp. At each point the resistance of the lamp is still the ratio $U : I$.
 **Answer:** $40.0\,\Omega$ is the resistance of the resistor of the table, three significant figures like the values read, $15.0\,\text{V}$ and $0.375\,\text{A}$. The resistor obeys Ohm's law. The powers are $0.90\,\text{W}$ at the voltage $6.0\,\text{V}$ and $3.60\,\text{W}$ at the voltage $12.0\,\text{V}$.
-**Reasonableness:** The ratio $U : I$ is the same at the other points too: $3.0\,\text{V} : 0.075\,\text{A} = 40\,\Omega$ and $9.0\,\text{V} : 0.225\,\text{A} = 40\,\Omega$. When the voltage doubles from $6.0\,\text{V}$ to $12.0\,\text{V}$, the current doubles too, so the power becomes four times as large: $3.60\,\text{W} : 0.90\,\text{W} = 4.0$. The units work out: $\text{V} : \text{A} = \Omega$.
+**Reasonableness:** The ratio $U : I$ is the same at the other points too: $3.0\,\text{V} : 0.075\,\text{A} = 40\,\Omega$ and $9.0\,\text{V} : 0.225\,\text{A} = 40\,\Omega$.
+
+When the voltage doubles from $6.0\,\text{V}$ to $12.0\,\text{V}$, the current doubles too, so the power becomes four times as large: $3.60\,\text{W} : 0.90\,\text{W} = 4.0$.
+
+The units work out: $\text{V} : \text{A} = \Omega$.

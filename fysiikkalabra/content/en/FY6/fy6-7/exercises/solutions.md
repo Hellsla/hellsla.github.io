@@ -112,7 +112,9 @@
 ## fy6-7-L3-03
 **Given:** resistance of the heating resistor $R = 26.5\,\Omega$, voltage $U = 230\,\text{V}$, time $t = 2.50\,\text{h}$
 **Find:** the electrical energy $E$ in kilowatt-hours
-**Principle:** By Ohm's law the current of a resistor is the voltage divided by the resistance. The power of the resistor is voltage times current, and since the resistance stays constant, the power is constant and the energy is power times time. The electrical energy becomes the internal energy of the resistor, which is transferred as heat to the water.
+**Principle:** By Ohm's law the current of a resistor is the voltage divided by the resistance. The power of the resistor is voltage times current, and since the resistance stays constant, the power is constant and the energy is power times time.
+
+The electrical energy becomes the internal energy of the resistor, which is transferred as heat to the water.
 **Formula:** $I = \dfrac{U}{R}$, $P = UI$ and $E = Pt$, so $E = UIt$
 **Conversions:** The power is converted to kilowatts ($1\,\text{kW} = 1000\,\text{W}$), so that the energy calculated with hours comes out in kilowatt-hours.
 **Substitution:** $I = \dfrac{230\,\text{V}}{26.5\,\Omega} = 8.679\,\text{A}$, $P = 230\,\text{V} \cdot 8.679\,\text{A} = 1996\,\text{W} = 1.996\,\text{kW}$ and $E = 1.996\,\text{kW} \cdot 2.50\,\text{h} = 4.99\,\text{kWh}$
@@ -121,8 +123,12 @@
 
 ## fy6-7-L1-06
 **Find:** which quantity the kilowatt-hour measures.
-**Principle:** The power of a device tells how fast it uses energy, and energy is obtained by multiplying power by time, $E = Pt$. When the power is in kilowatts and the time in hours, the unit of the product is kilowatt times hour, that is, the kilowatt-hour. The unit therefore belongs to the quantity that is power times time.
-**Model answer:** The kilowatt-hour measures energy, because it is power multiplied by the time of use: $1\,\text{kWh} = 1\,\text{kW} \cdot 1\,\text{h}$. Power is not the right answer, because power tells the rate and its unit, the kilowatt, does not have time as a factor. Current is not the right answer, because its unit is the ampere and an electricity bill charges for energy. Price is not the right answer, because the kilowatt-hour is a physical quantity, and a price is obtained only by multiplying the energy by a price.
+**Principle:** The power of a device tells how fast it uses energy, and energy is obtained by multiplying power by time, $E = Pt$. When the power is in kilowatts and the time in hours, the unit of the product is kilowatt times hour, that is, the kilowatt-hour.
+
+The unit therefore belongs to the quantity that is power times time.
+**Model answer:** The kilowatt-hour measures energy, because it is power multiplied by the time of use: $1\,\text{kWh} = 1\,\text{kW} \cdot 1\,\text{h}$. Power is not the right answer, because power tells the rate and its unit, the kilowatt, does not have time as a factor.
+
+Current is not the right answer, because its unit is the ampere and an electricity bill charges for energy. Price is not the right answer, because the kilowatt-hour is a physical quantity, and a price is obtained only by multiplying the energy by a price.
 
 ## fy6-7-L1-07
 **Given:** power $P = 0.90\,\text{kW}$, time of use $15\,\text{min}$ a day, $30$ days, price $a = 18\,\text{c/kWh}$
@@ -137,7 +143,11 @@
 ## fy6-7-L1-08
 **Given:** energy $E = 1.0\,\text{kWh}$, power $P = 40\,\text{W}$
 **Find:** the student's error and the correct time $t$ in hours
-**Principle:** Energy is power times time, $E = Pt$, so the time is obtained by dividing the energy by the power. The student multiplied the energy and the power together. The unit of the product would be $\text{kWh} \cdot \text{W}$, which is not a unit of time, and the number $40$ cannot be given the unit hour. A check of the units reveals the error.
+**Principle:** Energy is power times time, $E = Pt$, so the time is obtained by dividing the energy by the power. The student multiplied the energy and the power together.
+
+The unit of the product would be $\text{kWh} \cdot \text{W}$, which is not a unit of time, and the number $40$ cannot be given the unit hour.
+
+A check of the units reveals the error.
 **Formula:** $E = Pt$, so $t = \dfrac{E}{P}$
 **Conversions:** $P = 40\,\text{W} = 40 \cdot 0.001\,\text{kW} = 0.040\,\text{kW}$
 **Substitution:** $t = \dfrac{1.0\,\text{kWh}}{0.040\,\text{kW}} = 25\,\text{h}$
@@ -156,7 +166,9 @@
 b) $7.3 \cdot 10^{2}\,\text{kWh}$, two significant figures. The limiting data are the powers $90\,\text{W}$ and $60\,\text{W}$ and the usage times; the powers $110\,\text{W}$, $800\,\text{W}$ and $1200\,\text{W}$ have more figures.
 
 c) Lighting is a suitable target for saving, because it is the second largest item and its power can be reduced by changing the lamps to LED lamps, whereas the time of use of the vacuum cleaner cannot be shortened without the cleaning suffering.
-**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7.3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
+**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home.
+
+In a year $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7.3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
 
 ## fy6-7-L2-06
 **Given:** meter readings $12\,437.2\,\text{kWh}$ at the start and $12\,493.5\,\text{kWh}$ after seven days, price $a = 16\,\text{c/kWh}$
@@ -176,8 +188,12 @@ c) $9.0\,\text{€}$.
 ## fy6-7-L2-07
 **Given:** energy meter readings $0.00$–$1.64\,\text{kWh}$ as a function of time $0$–$48\,\text{h}$, $365$ days
 **Find:** the energy of the refrigerator in a year $E_\text{year}$ in kilowatt-hours and two factors that distort the measurement
-**Principle:** When the consumption is steady on average, the reading of the meter grows in direct proportion to time, so the points lie on a line through the origin. The slope of the line is the average power. The energy of a year is obtained by multiplying the average power found in the measurement by the number of hours in a year.
-**Reading the graph:** The points $(12\,\text{h}; 0.43\,\text{kWh})$, $(24\,\text{h}; 0.79\,\text{kWh})$, $(36\,\text{h}; 1.24\,\text{kWh})$ and $(48\,\text{h}; 1.64\,\text{kWh})$ lie on both sides of the line by a small random scatter. The line passes through the origin, because the reading was $0.00\,\text{kWh}$ at the moment $t = 0$. It passes by the point $(48\,\text{h}; 1.64\,\text{kWh})$, so the energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
+**Principle:** When the consumption is steady on average, the reading of the meter grows in direct proportion to time, so the points lie on a line through the origin.
+
+The slope of the line is the average power. The energy of a year is obtained by multiplying the average power found in the measurement by the number of hours in a year.
+**Reading the graph:** The points $(12\,\text{h}; 0.43\,\text{kWh})$, $(24\,\text{h}; 0.79\,\text{kWh})$, $(36\,\text{h}; 1.24\,\text{kWh})$ and $(48\,\text{h}; 1.64\,\text{kWh})$ lie on both sides of the line by a small random scatter.
+
+The line passes through the origin, because the reading was $0.00\,\text{kWh}$ at the moment $t = 0$. It passes by the point $(48\,\text{h}; 1.64\,\text{kWh})$, so the energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
 **Formula:** $P_\text{avg} = \dfrac{E}{t}$ and $E_\text{year} = P_\text{avg} t_\text{year}$
 **Conversions:** $t_\text{year} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Substitution:** $P_\text{avg} = \dfrac{1.64\,\text{kWh}}{48\,\text{h}} = 0.03417\,\text{kW}$ and $E_\text{year} = 0.03417\,\text{kW} \cdot 8760\,\text{h} = 299.3\,\text{kWh}$
@@ -191,11 +207,15 @@ c) The room temperature during the measurement is different from the yearly aver
 ## fy6-7-L3-04
 **Given:** consumption $E$ and price $a$ in six four-hour periods from the table; power of the heater $P = 2.0\,\text{kW}$, time $t = 3.0\,\text{h}$ in the period from $16$ to $20$ o'clock
 **Find:** the total cost of the day and the average price, and the saving $S$ in euros when the heating of the heater is moved to the period from $00$ to $04$ o'clock
-**Principle:** The cost of each period is the price of the period times the energy of the period, and the total cost is the sum of these. The average price is the total cost divided by the total energy. When the heating of the heater is moved, the energy of the heater stays the same but it is paid for at the price of another period, so the saving is the moved energy times the difference of the prices.
+**Principle:** The cost of each period is the price of the period times the energy of the period, and the total cost is the sum of these.
+
+The average price is the total cost divided by the total energy. When the heating of the heater is moved, the energy of the heater stays the same but it is paid for at the price of another period, so the saving is the moved energy times the difference of the prices.
 **Formula:** $K = \sum aE$ by periods, $a_\text{avg} = \dfrac{K}{E_\text{tot}}$ and $E_\text{heater} = Pt$. The saving is
 $$S = E_\text{heater}\,(a_\text{high} - a_\text{low}).$$
 **Conversions:** The costs are calculated in cents and converted to euros at the end: $100\,\text{c} = 1\,\text{€}$.
-**Substitution:** The costs of the periods are $4.68$; $12.96$; $32.24$; $19.20$; $162.96$ and $35.40$ cents. For example the first period is $1.2\,\text{kWh} \cdot 3.9\,\tfrac{\text{c}}{\text{kWh}} = 4.68\,\text{c}$. The sum is $267.44\,\text{c} = 2.674\,\text{€}$. The total energy is $19.0\,\text{kWh}$, so $a_\text{avg} = 267.44\,\text{c} : 19.0\,\text{kWh} = 14.08\,\text{c/kWh}$. The energy of the heater is $E_\text{heater} = 2.0\,\text{kW} \cdot 3.0\,\text{h} = 6.0\,\text{kWh}$, and the saving is $S = 6.0\,\text{kWh} \cdot (19.4 - 3.9)\,\tfrac{\text{c}}{\text{kWh}} = 93.0\,\text{c} = 0.930\,\text{€}$.
+**Substitution:** The costs of the periods are $4.68$; $12.96$; $32.24$; $19.20$; $162.96$ and $35.40$ cents. For example the first period is $1.2\,\text{kWh} \cdot 3.9\,\tfrac{\text{c}}{\text{kWh}} = 4.68\,\text{c}$.
+
+The sum is $267.44\,\text{c} = 2.674\,\text{€}$. The total energy is $19.0\,\text{kWh}$, so $a_\text{avg} = 267.44\,\text{c} : 19.0\,\text{kWh} = 14.08\,\text{c/kWh}$. The energy of the heater is $E_\text{heater} = 2.0\,\text{kW} \cdot 3.0\,\text{h} = 6.0\,\text{kWh}$, and the saving is $S = 6.0\,\text{kWh} \cdot (19.4 - 3.9)\,\tfrac{\text{c}}{\text{kWh}} = 93.0\,\text{c} = 0.930\,\text{€}$.
 **Answer:** In the answer box: $0.93\,\text{€}$. a) $2.7\,\text{€}$ and an average price of $14\,\text{c/kWh}$.
 
 b) $0.93\,\text{€}$ per day, two significant figures like the power of the heater $2.0\,\text{kW}$.
@@ -206,7 +226,9 @@ c) The saving arises because the same energy $6.0\,\text{kWh}$ is bought at a lo
 ## fy6-7-L3-05
 **Given:** energy of the old appliance $E_\text{old} = 320\,\text{kWh}$ a year, of the new one $E_\text{new} = 98\,\text{kWh}$ a year, price of the new one $H = 489\,\text{€}$, price of electricity $a = 17\,\text{c/kWh}$, service life $15\,\text{a}$
 **Find:** the payback time $T$ in years, and the saving during the service life
-**Principle:** The new appliance uses less energy in a year, and the energy saving multiplied by the price gives the yearly saving in money. The payback time is the time in which the saving grows to the price of the new appliance. During the service life the saving is the yearly saving times the service life, from which the purchase price is subtracted.
+**Principle:** The new appliance uses less energy in a year, and the energy saving multiplied by the price gives the yearly saving in money. The payback time is the time in which the saving grows to the price of the new appliance.
+
+During the service life the saving is the yearly saving times the service life, from which the purchase price is subtracted.
 **Formula:** $\Delta E = E_\text{old} - E_\text{new}$, $S = a\Delta E$, $T = \dfrac{H}{S}$ and the gain over the service life $V = 15\,\text{a} \cdot S - H$
 **Conversions:** $a = 17\,\text{c/kWh} = 0.17\,\text{€/kWh}$
 **Substitution:** $\Delta E = 320\,\text{kWh} - 98\,\text{kWh} = 222\,\text{kWh}$ a year and $S = 0.17\,\tfrac{\text{€}}{\text{kWh}} \cdot 222\,\text{kWh} = 37.74\,\text{€}$ a year. The payback time is
@@ -216,7 +238,9 @@ During the service life the saving is $15\,\text{a} \cdot 37.74\,\text{€/a} = 
 
 b) $13\,\text{a}$, two significant figures like the price $17\,\text{c/kWh}$ and the energy $98\,\text{kWh}$.
 
-c) During the service life the appliance saves about $77\,\text{€}$ after the purchase price. The replacement is only barely worthwhile, because the payback time is close to the service life $15\,\text{a}$ and the gain is about $16\,\%$ of the purchase price. The model does not take into account that an old refrigerator warms the home more, so during electric heating in winter part of the saving is lost.
+c) During the service life the appliance saves about $77\,\text{€}$ after the purchase price. The replacement is only barely worthwhile, because the payback time is close to the service life $15\,\text{a}$ and the gain is about $16\,\%$ of the purchase price.
+
+The model does not take into account that an old refrigerator warms the home more, so during electric heating in winter part of the saving is lost.
 **Reasonableness:** Check: $13\,\text{a} \cdot 37.74\,\text{€/a} = 490.6\,\text{€} \approx 489\,\text{€}$. The new appliance uses only $98 : 320 \approx 31\,\%$ of the energy of the old one, so a large saving is credible.
 
 ## fy6-7-L1-09
@@ -233,7 +257,11 @@ $$\begin{aligned}
 &\phantom{E} = 0.060\,\text{kWh}
 \end{aligned}$$
 
-The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour. The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$. Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and three minutes is only $\tfrac{1}{20}$ of an hour.
+The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical energy. The order of magnitude is thus hundredths of a kilowatt-hour.
+
+The wrong options come from unit errors: dividing the minutes by $3600$ gives $0.0010\,\text{kWh}$, substituting the minutes as hours gives $3.6\,\text{kWh}$, substituting the watts as kilowatts gives $60\,\text{kWh}$, and the product of the watts and the minutes gives $3600\,\text{kWh}$.
+
+Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and three minutes is only $\tfrac{1}{20}$ of an hour.
 
 ## fy6-7-L1-10
 **Given:** power $P = 1.5\,\text{kW}$, time $t = 2.0\,\text{h}$; conversion from the MAFY table (Yksikkömuunnoksia, energy/work, kilowatt-hour) $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$
@@ -259,13 +287,31 @@ The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical 
 ## fy6-7-L2-09
 **Given:** from the source material ([ENERGY STAR – Certified Residential Refrigerators](https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results), searched on 15 November 2026, filters Type: Top Freezer and the volume class $15$–$17.9\,\text{ft}^3$): model A (LG LT18S1100*) $V = 17.5\,\text{ft}^3$ and $E_\text{A} = 344\,\text{kWh}$ a year; model B (LG LT18S1200*) $V = 17.5\,\text{ft}^3$ and $E_\text{B} = 440\,\text{kWh}$ a year; price of electricity $a = 0.20\,\text{€/kWh}$; number of years $n = 10$
 **Find:** a) a comparison of the annual energy uses; b) the average powers $P_\text{A}$ and $P_\text{B}$ in watts; c) the electricity costs $K_\text{A}$ and $K_\text{B}$ over ten years in euros and their difference; d) why the average power is not the same thing as the momentary input power of the compressor
-**Principle:** Power tells how fast an appliance uses energy, so the average power is the energy used divided by the whole time during which it was used. A refrigerator is connected to the mains all year, so the time is all the hours of the year. Electricity is paid for per kilowatt-hour, so the cost is price times energy; basic charges are not counted in the cost of one appliance. With your own models the numbers are different, but the method is the same. Below is an example solution with the pair in the table.
-**Reading the table:** Both models are of the same type and the same size: $$\begin{aligned} V &= 17.5\,\text{ft}^3 \\ &= 17.5 \cdot 28.3\,\textsf{l} \\ &\approx 495\,\textsf{l} \end{aligned}$$. So the difference in energy use does not come from the size or the type of the appliance. The value in column $E$ is the energy the appliance uses in one year in the standard test.
-**Part a):** Model B uses $$\begin{aligned} &E_\text{B} - E_\text{A} \\ &= 440\,\text{kWh} - 344\,\text{kWh} \\ &= 96\,\text{kWh} \end{aligned}$$ more in a year than model A. The ratio of the energy uses is $$\begin{aligned} &E_\text{B} : E_\text{A} \\ &= 440\,\text{kWh} : 344\,\text{kWh} \\ &\approx 1.28 \end{aligned}$$, so model B uses about $28\,\%$ more, although the appliances are of the same size and type.
+**Principle:** Power tells how fast an appliance uses energy, so the average power is the energy used divided by the whole time during which it was used.
+
+A refrigerator is connected to the mains all year, so the time is all the hours of the year. Electricity is paid for per kilowatt-hour, so the cost is price times energy; basic charges are not counted in the cost of one appliance.
+
+With your own models the numbers are different, but the method is the same. Below is an example solution with the pair in the table.
+**Reading the table:** Both models are of the same type and the same size: $$\begin{aligned} V &= 17.5\,\text{ft}^3 \\ &= 17.5 \cdot 28.3\,\textsf{l} \\ &\approx 495\,\textsf{l} \end{aligned}$$.
+
+So the difference in energy use does not come from the size or the type of the appliance. The value in column $E$ is the energy the appliance uses in one year in the standard test.
+**Part a):** Model B uses $$\begin{aligned} &E_\text{B} - E_\text{A} \\ &= 440\,\text{kWh} - 344\,\text{kWh} \\ &= 96\,\text{kWh} \end{aligned}$$ more in a year than model A.
+
+The ratio of the energy uses is $$\begin{aligned} &E_\text{B} : E_\text{A} \\ &= 440\,\text{kWh} : 344\,\text{kWh} \\ &\approx 1.28 \end{aligned}$$, so model B uses about $28\,\%$ more, although the appliances are of the same size and type.
 **Formula:** Part b): the energy is $E = P_\text{avg}t$, which gives the average power $P_\text{avg} = \dfrac{E}{t}$. Part c): the energy of $n$ years is $E_n = nE$ and its cost $K = aE_n = naE$
 **Conversions:** A year in hours: $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$. The power comes out in kilowatts, and $1\,\text{kW} = 1000\,\text{W}$. The price is already in euros per kilowatt-hour.
 **Substitution:** $P_\text{A} = \dfrac{344\,\text{kWh}}{8760\,\text{h}} = 0.03927\,\text{kW} = 39.27\,\text{W}$ and $P_\text{B} = \dfrac{440\,\text{kWh}}{8760\,\text{h}} = 0.05023\,\text{kW} = 50.23\,\text{W}$. The costs are $K_\text{A} = 10 \cdot 0.20\,\tfrac{\text{€}}{\text{kWh}} \cdot 344\,\text{kWh} = 688\,\text{€}$ and $K_\text{B} = 10 \cdot 0.20\,\tfrac{\text{€}}{\text{kWh}} \cdot 440\,\text{kWh} = 880\,\text{€}$. Their difference is $880\,\text{€} - 688\,\text{€} = 192\,\text{€}$.
-**Part d):** The compressor of a refrigerator does not run all the time. A thermostat starts it when the temperature inside rises and stops it when the refrigerator has cooled enough. While it runs, the compressor draws clearly more power from the mains than the average power, and between the running periods the refrigerator draws very little. The average power is the energy of the year divided by all the hours of the year, also those during which the compressor stands still, so it is smaller than the input power during running. If the compressor runs for the fraction $k$ of the time at the power $P_\text{run}$, the average power is approximately $P_\text{avg} = kP_\text{run}$. The input power of a household refrigerator's compressor is typically of the order of a hundred watts (a general order of magnitude, not a value from the source material). For example, with an input power of $100\,\text{W}$ the compressor of model A would run for the fraction $k = 39.27\,\text{W} : 100\,\text{W} \approx 0.39$, about $39\,\%$ of the time. So the average power does not show how much power the refrigerator draws at a moment when the compressor is running.
+**Part d):** The compressor of a refrigerator does not run all the time. A thermostat starts it when the temperature inside rises and stops it when the refrigerator has cooled enough.
+
+While it runs, the compressor draws clearly more power from the mains than the average power, and between the running periods the refrigerator draws very little.
+
+The average power is the energy of the year divided by all the hours of the year, also those during which the compressor stands still, so it is smaller than the input power during running.
+
+If the compressor runs for the fraction $k$ of the time at the power $P_\text{run}$, the average power is approximately $P_\text{avg} = kP_\text{run}$. The input power of a household refrigerator's compressor is typically of the order of a hundred watts (a general order of magnitude, not a value from the source material).
+
+For example, with an input power of $100\,\text{W}$ the compressor of model A would run for the fraction $k = 39.27\,\text{W} : 100\,\text{W} \approx 0.39$, about $39\,\%$ of the time.
+
+So the average power does not show how much power the refrigerator draws at a moment when the compressor is running.
 **Answer:** In the answer box: $39.3\,\text{W}$. a) Model B uses $96\,\text{kWh}$, about $28\,\%$, more in a year than model A.
 
 b) $P_\text{A} = 39.3\,\text{W}$ and $P_\text{B} = 50.2\,\text{W}$, three significant figures like the annual energy uses $344\,\text{kWh}$ and $440\,\text{kWh}$.
@@ -273,4 +319,8 @@ b) $P_\text{A} = 39.3\,\text{W}$ and $P_\text{B} = 50.2\,\text{W}$, three signif
 c) About $690\,\text{€}$ and $880\,\text{€}$, a difference of about $190\,\text{€}$; two significant figures like the price $0.20\,\text{€/kWh}$.
 
 d) The compressor runs in cycles, so its input power while running is larger than the average power. This is an example solution with the values taken on 15 November 2026; with your own pair the numbers are different.
-**Reasonableness:** Check: $$\begin{aligned} &0.0393\,\text{kW} \cdot 8760\,\text{h} \\ &\approx 344\,\text{kWh} \end{aligned}$$, which is the annual energy use of model A. An average power of a few tens of watts suits a refrigerator whose compressor runs only part of the time. The cost is about $$\begin{aligned} &350\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\ &= 70\,\text{€} \end{aligned}$$ a year, about $700\,\text{€}$ in ten years, of the same size as the calculated values. The real cost differs from this, because the energy use in a home depends on the room temperature and on how often the door is opened, and the price of electricity does not stay the same for ten years.
+**Reasonableness:** Check: $$\begin{aligned} &0.0393\,\text{kW} \cdot 8760\,\text{h} \\ &\approx 344\,\text{kWh} \end{aligned}$$, which is the annual energy use of model A. An average power of a few tens of watts suits a refrigerator whose compressor runs only part of the time.
+
+The cost is about $$\begin{aligned} &350\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\ &= 70\,\text{€} \end{aligned}$$ a year, about $700\,\text{€}$ in ten years, of the same size as the calculated values.
+
+The real cost differs from this, because the energy use in a home depends on the room temperature and on how often the door is opened, and the price of electricity does not stay the same for ten years.

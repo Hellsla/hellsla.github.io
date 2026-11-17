@@ -399,7 +399,9 @@ Taskulampun lampun läpi kulkee virta $0{,}25\,\text{A}$, ja lamppu palaa $12\,\
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Virta on $I = 0{,}25\,\text{A}$ ja aika $t = 12\,\text{min}$. Kysytään lampun läpi kulkenutta varausta $Q$.
+**Tunnetut ja kysytty.** Virta on $I = 0{,}25\,\text{A}$ ja aika $t = 12\,\text{min}$.
+
+Kysytään lampun läpi kulkenutta varausta $Q$.
 
 <!-- vaihe -->
 

@@ -13,6 +13,11 @@ date	reviewer	from	to	base	categories
 2026-11-15	science	a32b15bf322a41fe	3b56acf60ce0f476	-	translation-of-passed
 2026-11-15	pedagogy	c464157cc013fdd3	3b56acf60ce0f476	f6726a8a5a94	reflow
 2026-11-16	science	7a6a4a96cc364108	36c2c5b745ea76ef	-	translation-of-passed
+2026-11-17	science	88128d0e80473690	e41da43196589eba	-	translation-of-passed
+2026-11-17	pedagogy	36c2c5b745ea76ef	e41da43196589eba	5b3ca4f81c77	md-paragraphs,typography
 2026-11-17	pedagogy	36c2c5b745ea76ef	bddd6d8bf005bf1d	5b3ca4f81c77	caption-label
 2026-11-17	visual	36c2c5b745ea76ef	bddd6d8bf005bf1d	5b3ca4f81c77	caption-label
 2026-11-17	science	0ebe34fd8347676b	bddd6d8bf005bf1d	-	translation-of-passed
+2026-11-17	science	abae4faf9a96d7c3	32c06be7277c40e8	-	translation-of-passed
+2026-11-17	pedagogy	36c2c5b745ea76ef	32c06be7277c40e8	5b3ca4f81c77	caption-label,md-paragraphs,typography
+2026-11-17	visual	e41da43196589eba	32c06be7277c40e8	b65e5797b576	caption-label

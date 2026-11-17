@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 99ab280aa2e4e2d7
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 2bb19658ebccad91
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
@@ -9,7 +9,7 @@ Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 - none
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-14-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- Diff text only: breaks before b), c) in the solar and LED tasks; round-1 Minor resolved (a)/b)/c) now at paragraph starts).
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

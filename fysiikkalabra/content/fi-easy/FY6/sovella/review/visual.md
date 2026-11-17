@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 59ef16e87ca04106
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 61aef90c0dfe7f9b
+
+Mode: delta (md-paragraphs: paragraph breaks in solution steps, work queue 8c)
 
 ## Blocking
 - none
@@ -9,7 +10,9 @@ Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 - none
 
 ## Checked
-- All 2 proof sheet(s) of fi-easy-sovella-item (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- fi-easy has no captures; split judged from the diff only (same component as fi, whose captures I opened). 3 breaks.
+- Checked the diff against origin/main for solutions.md: each break falls at a sentence boundary, one thing per paragraph, no one-word orphans; the short "Vastaus: I ≈ 4,3 A" lead paragraph mirrors the stated answer line and reads as intended.
+- Hash re-read at end: unchanged.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

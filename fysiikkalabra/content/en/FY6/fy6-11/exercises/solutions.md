@@ -112,7 +112,9 @@
 ## fy6-11-L3-02
 **Given:** voltage $U = 50\,\text{V}$, plate distance $d = 1.0\,\text{cm}$, mass of the electron $m = 9.109 \cdot 10^{-31}\,\text{kg}$ and charge $e = 1.602 \cdot 10^{-19}\,\text{C}$; initial speed $v_0 = 0$
 **Find:** the speed $v$ of the electron at the positive plate in kilometres per second
-**Principle:** In a uniform field a constant force $eE$ acts on the electron towards the positive plate, and the plates are in vacuum, so there are no other forces (the weight is negligibly small). By Newton's second law the acceleration $a = eE : m$ is constant, so the motion is uniformly accelerated, and for a body that has travelled the distance $d$ from rest $v^2 = 2ad$ holds.
+**Principle:** In a uniform field a constant force $eE$ acts on the electron towards the positive plate, and the plates are in vacuum, so there are no other forces (the weight is negligibly small).
+
+By Newton's second law the acceleration $a = eE : m$ is constant, so the motion is uniformly accelerated, and for a body that has travelled the distance $d$ from rest $v^2 = 2ad$ holds.
 **Formula:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ and $v^2 = 2ad$, so $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Conversions:** $d = 1.0\,\text{cm} = 0.010\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $E = \dfrac{50\,\text{V}}{0.010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9.109 \cdot 10^{-31}\,\text{kg}} = 8.794 \cdot 10^{14}\,\text{m/s}^2$ and $$\begin{aligned} v &= \sqrt{2 \cdot 8.794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0.010\,\text{m}} \\ &= 4.19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
@@ -122,7 +124,9 @@
 ## fy6-11-L3-03
 **Given:** mass of the ball $m = 2.0\,\text{g}$, electric field strength $E = 1.5 \cdot 10^{5}\,\text{N/C}$ horizontal, angle of the thread from the vertical $\alpha = 10^\circ$, $g = 9.81\,\text{m/s}^2$
 **Find:** the charge $q$ of the ball in nanocoulombs
-**Principle:** The forces on the ball are the weight $mg$ down, the electric force $qE$ horizontally and the tension of the thread along the thread. The ball is at rest, so the sum of the forces is zero. In the vertical direction the vertical component of the tension, $T\cos\alpha$, cancels the weight, and in the horizontal direction its horizontal component, $T\sin\alpha$, cancels the electric force.
+**Principle:** The forces on the ball are the weight $mg$ down, the electric force $qE$ horizontally and the tension of the thread along the thread. The ball is at rest, so the sum of the forces is zero.
+
+In the vertical direction the vertical component of the tension, $T\cos\alpha$, cancels the weight, and in the horizontal direction its horizontal component, $T\sin\alpha$, cancels the electric force.
 **Formula:** $T\sin\alpha = qE$ and $T\cos\alpha = mg$; dividing gives $\tan\alpha = \dfrac{qE}{mg}$, so $q = \dfrac{mg\tan\alpha}{E}$
 **Conversions:** $m = 2.0\,\text{g} = 2.0 \cdot 10^{-3}\,\text{kg}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $$\begin{aligned} mg\tan\alpha &= 2.0 \cdot 10^{-3}\,\text{kg} \\ &\cdot 9.81\,\text{m/s}^2 \cdot \tan 10^\circ \\ &= 3.459 \cdot 10^{-3}\,\text{N} \end{aligned}$$ and $q = \dfrac{3.459 \cdot 10^{-3}\,\text{N}}{1.5 \cdot 10^{5}\,\text{N/C}} = 2.306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
@@ -132,12 +136,20 @@
 ## fy6-11-L1-06
 **Find:** what the density of the field lines tells about the fields in regions A and B.
 **Principle:** Field lines show the direction of the electric force at each point, and their density tells the strength of the field: the denser the lines, the stronger the field. The field exists between the lines too, and the lines do not represent charges.
-**Model answer:** In region A the lines are close together, so the field there is stronger than in region B, where the lines are far apart. The claim that the space between lines far apart would make the field stronger is wrong, because the strength of the field shows in the density of the lines and not in the space between them. The claim that the lines represent charges is also wrong: the lines start from positive charges and end at negative charges. The claim that the field is equally strong would be true only if the lines were equally dense everywhere, as in a uniform field.
+**Model answer:** In region A the lines are close together, so the field there is stronger than in region B, where the lines are far apart.
+
+The claim that the space between lines far apart would make the field stronger is wrong, because the strength of the field shows in the density of the lines and not in the space between them.
+
+The claim that the lines represent charges is also wrong: the lines start from positive charges and end at negative charges. The claim that the field is equally strong would be true only if the lines were equally dense everywhere, as in a uniform field.
 
 ## fy6-11-L1-07
 **Find:** in which direction the electric force on the negative particle points.
 **Principle:** A force $\overline{F} = q\overline{E}$ acts on a charge $q$ in a field. When $q$ is negative, the force points against the field. In a uniform field the force is constant and does not vanish, even though the field is the same at every point.
-**Model answer:** The field points to the right, so the force on the negative particle points to the left. The particle therefore moves towards the positive plate, from which the field lines start. The idea that the force always points in the direction of the field holds only for a positive charge. The idea that the particle would be attracted to the negative plate is wrong, because charges of the same sign repel each other. In a uniform field the forces do not cancel each other, but a constant force $F = qE$ acts on the particle.
+**Model answer:** The field points to the right, so the force on the negative particle points to the left. The particle therefore moves towards the positive plate, from which the field lines start.
+
+The idea that the force always points in the direction of the field holds only for a positive charge. The idea that the particle would be attracted to the negative plate is wrong, because charges of the same sign repel each other.
+
+In a uniform field the forces do not cancel each other, but a constant force $F = qE$ acts on the particle.
 
 ## fy6-11-L1-08
 **Given:** electric field strength $E = 4.0 \cdot 10^{5}\,\text{V/m}$, voltage $U = 3.0\,\text{kV}$
@@ -155,7 +167,9 @@
 **Principle:** The field measured with the test charge is $E = F : q$. If $E = U : d$ and $U$ is constant, the product $E \cdot d$ must be the same at all distances and equal to the voltage. In a measurement the products vary slightly because of random variation.
 **Formula:** $E = \dfrac{F}{q}$ and $U = E \cdot d$
 **Conversions:** $q = 5.0 \cdot 10^{-9}\,\text{C}$, $F = 102\,\mu\text{N} = 102 \cdot 10^{-6}\,\text{N}$ and so on; $d = 2.0\,\text{cm} = 0.020\,\text{m}$ and so on.
-**Substitution:** a) $E = F : q$ gives at the distances $2.0$; $3.0$; $4.0$; $5.0$; $6.0$ and $8.0\,\text{cm}$ the fields $2.04 \cdot 10^{4}$; $1.31 \cdot 10^{4}$; $1.02 \cdot 10^{4}$; $7.8 \cdot 10^{3}$; $6.8 \cdot 10^{3}$ and $4.92 \cdot 10^{3}\,\text{N/C}$. b) The products $E \cdot d$ are in the same order $408\,\text{V}$, $393\,\text{V}$, $408\,\text{V}$, $390\,\text{V}$, $408\,\text{V}$ and $394\,\text{V}$. The sum of the products is $2401\,\text{V}$, so the mean is $2401\,\text{V} : 6 = 400\,\text{V}$.
+**Substitution:** a) $E = F : q$ gives at the distances $2.0$; $3.0$; $4.0$; $5.0$; $6.0$ and $8.0\,\text{cm}$ the fields $2.04 \cdot 10^{4}$; $1.31 \cdot 10^{4}$; $1.02 \cdot 10^{4}$; $7.8 \cdot 10^{3}$; $6.8 \cdot 10^{3}$ and $4.92 \cdot 10^{3}\,\text{N/C}$.
+
+b) The products $E \cdot d$ are in the same order $408\,\text{V}$, $393\,\text{V}$, $408\,\text{V}$, $390\,\text{V}$, $408\,\text{V}$ and $394\,\text{V}$. The sum of the products is $2401\,\text{V}$, so the mean is $2401\,\text{V} : 6 = 400\,\text{V}$.
 **Answer:** $4.0 \cdot 10^{2}\,\text{V}$, two significant figures like the test charge. c) The field decreases as the distance increases, but the product $E \cdot d$ stays almost constant (between $390\,\text{V}$ and $408\,\text{V}$) with no systematic trend. So $E$ is inversely proportional to the distance, $E = U : d$, and the product is the voltage between the plates.
 **Reasonableness:** The distance becomes four times as large ($2.0\,\text{cm} \to 8.0\,\text{cm}$), and the field decreases to about a quarter: $$\begin{aligned} &2.04 \cdot 10^{4}\,\text{N/C} \\ &: 4.92 \cdot 10^{3}\,\text{N/C} \\ &= 4.1 \end{aligned}$$. The largest deviation of the products from the mean is $400\,\text{V} - 390\,\text{V} = 10\,\text{V}$, or about $2.5\,\%$, which fits the precision of the measurement.
 
@@ -175,13 +189,19 @@
 **Principle:** The force on a test charge is $F = qE$, so $E = F : q$ gives the field at each point. The field is uniform in a region where $E$ is constant. At the edges of the plates and outside them the field weakens, so uniformity must be checked by measuring at different places.
 **Formula:** $E = \dfrac{F}{q}$, deviation $= \dfrac{E_0 - E}{E_0}$ and the reference value $E = \dfrac{U}{d}$
 **Conversions:** $q = 2.0 \cdot 10^{-9}\,\text{C}$ and $1\,\mu\text{N} = 10^{-6}\,\text{N}$; $d = 2.0\,\text{cm} = 0.020\,\text{m}$.
-**Substitution:** a) $E = F : q$ gives at the points $x = 0$; $2.0$; $4.0$; $6.0$; $8.0$ and $10.0\,\text{cm}$ the values $3.01 \cdot 10^{4}$; $2.99 \cdot 10^{4}$; $2.98 \cdot 10^{4}$; $2.95 \cdot 10^{4}$; $2.90 \cdot 10^{4}$ and $1.65 \cdot 10^{4}\,\text{V/m}$. b) The deviations from the value at the centre at the points $x = 2.0$; $4.0$; $6.0$; $8.0$ and $10.0\,\text{cm}$ are $0.7\,\%$, $1.2\,\%$, $2.0\,\%$, $3.7\,\%$ and $45.2\,\%$. The uniform points are $x = 0$ – $6.0\,\text{cm}$, and the field weakens clearly when approaching the edge of the plate. c) The sum of the forces at the four uniform points is $$\begin{aligned} &60.2\,\mu\text{N} + 59.8\,\mu\text{N} + 59.5\,\mu\text{N} \\ &+ 59.0\,\mu\text{N} \\ &= 238.5\,\mu\text{N} \end{aligned}$$, so the mean of the force is $238.5\,\mu\text{N} : 4 = 59.6\,\mu\text{N}$. The mean of the field is $E = \dfrac{59.6 \cdot 10^{-6}\,\text{N}}{2.0 \cdot 10^{-9}\,\text{C}} = 2.98 \cdot 10^{4}\,\text{V/m}$. The reference value is $U : d = 600\,\text{V} : 0.020\,\text{m} = 3.0 \cdot 10^{4}\,\text{V/m}$.
+**Substitution:** a) $E = F : q$ gives at the points $x = 0$; $2.0$; $4.0$; $6.0$; $8.0$ and $10.0\,\text{cm}$ the values $3.01 \cdot 10^{4}$; $2.99 \cdot 10^{4}$; $2.98 \cdot 10^{4}$; $2.95 \cdot 10^{4}$; $2.90 \cdot 10^{4}$ and $1.65 \cdot 10^{4}\,\text{V/m}$.
+
+b) The deviations from the value at the centre at the points $x = 2.0$; $4.0$; $6.0$; $8.0$ and $10.0\,\text{cm}$ are $0.7\,\%$, $1.2\,\%$, $2.0\,\%$, $3.7\,\%$ and $45.2\,\%$. The uniform points are $x = 0$ – $6.0\,\text{cm}$, and the field weakens clearly when approaching the edge of the plate.
+
+c) The sum of the forces at the four uniform points is $$\begin{aligned} &60.2\,\mu\text{N} + 59.8\,\mu\text{N} + 59.5\,\mu\text{N} \\ &+ 59.0\,\mu\text{N} \\ &= 238.5\,\mu\text{N} \end{aligned}$$, so the mean of the force is $238.5\,\mu\text{N} : 4 = 59.6\,\mu\text{N}$. The mean of the field is $E = \dfrac{59.6 \cdot 10^{-6}\,\text{N}}{2.0 \cdot 10^{-9}\,\text{C}} = 2.98 \cdot 10^{4}\,\text{V/m}$. The reference value is $U : d = 600\,\text{V} : 0.020\,\text{m} = 3.0 \cdot 10^{4}\,\text{V/m}$.
 **Answer:** $3.0 \cdot 10^{4}\,\text{V/m}$ ($2.98 \cdot 10^{4}\,\text{V/m}$), two significant figures like the test charge. The result is the same as $U : d$, so the field between the plates is uniform up to about $6\,\text{cm}$ from the centre.
 **Reasonableness:** The mean $2.98 \cdot 10^{4}\,\text{V/m}$ differs from $U : d$ by only $0.6\,\%$. At the point $x = 8.0\,\text{cm}$ the field is already $3.7\,\%$ weaker than at the centre, so the $3\,\%$ limit is exceeded before the edge, and at the edge $x = 10.0\,\text{cm}$ the field is already $45.2\,\%$ weaker.
 
 ## fy6-11-L2-08
 **Find:** which of the four force diagrams shows the forces on the dust particle correctly.
-**Principle:** The body is the particle. The forces on it are due to the Earth (the weight $\overline{G}$) and the electric field of the plates (the electric force $\overline{F}_\text{e} = q\overline{E}$); in a vacuum there is no air resistance. The charge of the particle is negative, so the electric force points against the field. In a uniform field the magnitude of the force is $F_\text{e} = \lvert q \rvert E$ everywhere between the plates. Velocity is not a force, and a horizontal motion does not need a horizontal force.
+**Principle:** The body is the particle. The forces on it are due to the Earth (the weight $\overline{G}$) and the electric field of the plates (the electric force $\overline{F}_\text{e} = q\overline{E}$); in a vacuum there is no air resistance.
+
+The charge of the particle is negative, so the electric force points against the field. In a uniform field the magnitude of the force is $F_\text{e} = \lvert q \rvert E$ everywhere between the plates. Velocity is not a force, and a horizontal motion does not need a horizontal force.
 **Model answer:** The correct one is force diagram B. The field points up and the particle is negative, so the electric force points down. The magnitudes of the forces:
 
 $F_\text{e} = \lvert q \rvert E$
@@ -196,7 +216,11 @@ $G = 1.0 \cdot 10^{-12}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
 
 $G \approx 9.8 \cdot 10^{-12}\,\text{N}$
 
-Both forces point down, and the arrow of the electric force is about twice as long as the arrow of the weight, as in diagram B. In diagram A the electric force is drawn in the direction of the field, which would hold only for a positive particle. In diagram C the velocity is drawn as a force, although no force acts on the particle in the direction of motion. In diagram D the weight is missing, although it is about half of the electric force. The weight of an electron can be ignored, but the weight of a dust particle cannot.
+Both forces point down, and the arrow of the electric force is about twice as long as the arrow of the weight, as in diagram B.
+
+In diagram A the electric force is drawn in the direction of the field, which would hold only for a positive particle. In diagram C the velocity is drawn as a force, although no force acts on the particle in the direction of motion.
+
+In diagram D the weight is missing, although it is about half of the electric force. The weight of an electron can be ignored, but the weight of a dust particle cannot.
 
 ## fy6-11-L3-04
 **Given:** example data: distance of the plates $d = 8.0\,\text{mm}$, positive plate on top, $g = 9.81\,\text{m/s}^2$; masses of the droplets $3.8$; $4.6$; $3.2$; $5.1$ and $4.2 \cdot 10^{-15}\,\text{kg}$ and hovering voltages $931\,\text{V}$, $746\,\text{V}$, $1580\,\text{V}$, $627\,\text{V}$ and $683\,\text{V}$
@@ -204,18 +228,34 @@ Both forces point down, and the arrow of the electric force is about twice as lo
 **Principle:** A hovering droplet is at rest, so the electric force $qE$ and the weight $mg$ are equal. The field between the plates is uniform, $E = U : d$. So $qU : d = mg$. All the charges are whole-number multiples of the same step. The smallest charge is assumed to be one step if the ratios of the others to it are whole numbers.
 **Formula:** $qE = mg$ and $E = \dfrac{U}{d}$, so $q = \dfrac{mgd}{U}$; $e \approx \dfrac{S}{N}$, where $S$ is the sum of the ratios $q : n$ and $N = 5$ is the number of droplets
 **Conversions:** $d = 8.0\,\text{mm} = 8.0 \cdot 10^{-3}\,\text{m}$ and $m = 3.8 \cdot 10^{-15}\,\text{kg}$ and so on.
-**Substitution:** a) For droplet 1 the weight is $mg = 3.8 \cdot 10^{-15}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.73 \cdot 10^{-14}\,\text{N}$ and $mgd = 3.73 \cdot 10^{-14}\,\text{N} \cdot 8.0 \cdot 10^{-3}\,\text{m} = 2.98 \cdot 10^{-16}\,\text{J}$, so $q_1 = 2.98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3.20 \cdot 10^{-19}\,\text{C}$. In the same way, for droplets 2–5 we get $4.84 \cdot 10^{-19}\,\text{C}$, $1.59 \cdot 10^{-19}\,\text{C}$, $6.38 \cdot 10^{-19}\,\text{C}$ and $4.83 \cdot 10^{-19}\,\text{C}$. The electric force must point up towards the positive plate, so the droplets are negative. b) The smallest charge belongs to droplet 3, $1.59 \cdot 10^{-19}\,\text{C}$. The ratios of the others to it are $2.0$; $3.0$; $4.0$ and $3.0$, so the numbers of elementary charges of droplets 1–5 in order are $n = 2$; $3$; $1$; $4$ and $3$. The ratios are whole numbers, so the charge of droplet 3 is one elementary charge ($n = 1$). The literature value in part c supports the choice. The ratios $q : n$ are $1.60$; $1.61$; $1.59$; $1.60$ and $1.61$, all in the unit $10^{-19}\,\text{C}$. The sum of the ratios is $8.01 \cdot 10^{-19}\,\text{C}$, so $e \approx 8.01 \cdot 10^{-19}\,\text{C} : 5 = 1.60 \cdot 10^{-19}\,\text{C}$.
+**Substitution:** a) For droplet 1 the weight is $mg = 3.8 \cdot 10^{-15}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.73 \cdot 10^{-14}\,\text{N}$ and $mgd = 3.73 \cdot 10^{-14}\,\text{N} \cdot 8.0 \cdot 10^{-3}\,\text{m} = 2.98 \cdot 10^{-16}\,\text{J}$, so $q_1 = 2.98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3.20 \cdot 10^{-19}\,\text{C}$. In the same way, for droplets 2–5 we get $4.84 \cdot 10^{-19}\,\text{C}$, $1.59 \cdot 10^{-19}\,\text{C}$, $6.38 \cdot 10^{-19}\,\text{C}$ and $4.83 \cdot 10^{-19}\,\text{C}$. The electric force must point up towards the positive plate, so the droplets are negative.
+
+b) The smallest charge belongs to droplet 3, $1.59 \cdot 10^{-19}\,\text{C}$. The ratios of the others to it are $2.0$; $3.0$; $4.0$ and $3.0$, so the numbers of elementary charges of droplets 1–5 in order are $n = 2$; $3$; $1$; $4$ and $3$. The ratios are whole numbers, so the charge of droplet 3 is one elementary charge ($n = 1$). The literature value in part c supports the choice. The ratios $q : n$ are $1.60$; $1.61$; $1.59$; $1.60$ and $1.61$, all in the unit $10^{-19}\,\text{C}$. The sum of the ratios is $8.01 \cdot 10^{-19}\,\text{C}$, so $e \approx 8.01 \cdot 10^{-19}\,\text{C} : 5 = 1.60 \cdot 10^{-19}\,\text{C}$.
 **Answer:** c) The estimate of the elementary charge is $1.60 \cdot 10^{-19}\,\text{C}$, and it differs from the literature value $1.602 \cdot 10^{-19}\,\text{C}$ by less than $1\,\%$, within the precision of the measurement. The charges of the droplets are of different sizes but exact multiples of the same steps: if the charge could be anything, the ratios $q : n$ would not be almost constant. So the data supports charge occurring only as multiples of the elementary charge.
 
-d) The particles are charged, so in the field of the plates a force $F = qE$ acts on them towards the plate of the opposite sign, and they move there and stick to it. When the voltage increases, the field $E = U : d$ increases, so the force and the acceleration grow in the same proportion as the voltage. The particles reach the plate faster, and heavier and less charged particles are collected too.
+d) The particles are charged, so in the field of the plates a force $F = qE$ acts on them towards the plate of the opposite sign, and they move there and stick to it.
+
+When the voltage increases, the field $E = U : d$ increases, so the force and the acceleration grow in the same proportion as the voltage. The particles reach the plate faster, and heavier and less charged particles are collected too.
 **Reasonableness:** Check for droplet 3: $$\begin{aligned} &1.59 \cdot 10^{-19}\,\text{C} \cdot 1580\,\text{V} \\ &: 0.0080\,\text{m} \\ &= 3.14 \cdot 10^{-14}\,\text{N} \end{aligned}$$ and the weight is $3.2 \cdot 10^{-15}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.14 \cdot 10^{-14}\,\text{N}$. The spread of the ratios $q : n$ is $1.61 - 1.59 = 0.02$ in the unit $10^{-19}\,\text{C}$, or about $1.3\,\%$ of $1.60 \cdot 10^{-19}\,\text{C}$, which fits the precision of the data.
 
 ## fy6-11-L3-05
 **Given:** example situation: mass of the droplet $m = 3.0 \cdot 10^{-11}\,\text{kg}$, charge $q = 1.0 \cdot 10^{-12}\,\text{C}$, initial speed along the plates $v_0 = 20\,\text{m/s}$ from halfway between the plates, length of the plates $L = 10\,\text{mm}$, distance $d = 5.0\,\text{mm}$, voltage $U = 2.0\,\text{kV}$, $g = 9.81\,\text{m/s}^2$
 **Find:** a) the electric force and the weight, b) the acceleration, c) the time between the plates, d) the deviation $y$ in millimetres, e) whether the droplet hits a plate
-**Principle:** Between the plates the field is uniform, $E = U : d$, and a constant force $qE$ acts on the droplet perpendicular to the plates. As with a horizontally thrown ball, the motion is divided into two parts: along the plates there is no force, so the speed $v_0$ stays constant, and sideways the droplet accelerates from rest with the constant acceleration $a = qE : m$. So the deviation is $y = \tfrac{1}{2}at^2$, when $t = L : v_0$. The weight is ignored if it is much smaller than the electric force.
+**Principle:** Between the plates the field is uniform, $E = U : d$, and a constant force $qE$ acts on the droplet perpendicular to the plates.
+
+As with a horizontally thrown ball, the motion is divided into two parts: along the plates there is no force, so the speed $v_0$ stays constant, and sideways the droplet accelerates from rest with the constant acceleration $a = qE : m$. So the deviation is $y = \tfrac{1}{2}at^2$, when $t = L : v_0$.
+
+The weight is ignored if it is much smaller than the electric force.
 **Formula:** $E = \dfrac{U}{d}$, $F = qE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v_0}$ and $y = \dfrac{1}{2}at^2$
 **Conversions:** $U = 2.0\,\text{kV} = 2000\,\text{V}$, $d = 5.0 \cdot 10^{-3}\,\text{m}$, $L = 1.0 \cdot 10^{-2}\,\text{m}$; finally $1\,\text{m} = 1000\,\text{mm}$.
-**Substitution:** a) $E = \dfrac{2000\,\text{V}}{5.0 \cdot 10^{-3}\,\text{m}} = 4.0 \cdot 10^{5}\,\text{V/m}$ and $F = 1.0 \cdot 10^{-12}\,\text{C} \cdot 4.0 \cdot 10^{5}\,\text{V/m} = 4.0 \cdot 10^{-7}\,\text{N}$. The weight is $mg = 3.0 \cdot 10^{-11}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 2.9 \cdot 10^{-10}\,\text{N}$, so the electric force is about $1400$ times the weight and the weight can be ignored. b) $a = \dfrac{4.0 \cdot 10^{-7}\,\text{N}}{3.0 \cdot 10^{-11}\,\text{kg}} = 1.33 \cdot 10^{4}\,\text{m/s}^2$. c) $t = \dfrac{1.0 \cdot 10^{-2}\,\text{m}}{20\,\text{m/s}} = 5.0 \cdot 10^{-4}\,\text{s}$. d) $$\begin{aligned} y &= \dfrac{1}{2} \cdot 1.33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot (5.0 \cdot 10^{-4}\,\text{s})^2 \\ &= 1.67 \cdot 10^{-3}\,\text{m} \\ &= 1.67\,\text{mm} \end{aligned}$$. e) The droplet enters halfway, so it hits a plate if the deviation is more than $d : 2 = 2.5\,\text{mm}$. Now $1.67\,\text{mm} < 2.5\,\text{mm}$, so the droplet does not hit a plate. When the voltage is doubled, $E$, $F$ and $a$ double too, so $y = 3.33\,\text{mm} > 2.5\,\text{mm}$, and the droplet hits a plate. It reaches the deviation $2.5\,\text{mm}$ in the time $t = \sqrt{2 \cdot 2.5 \cdot 10^{-3}\,\text{m} : 2.67 \cdot 10^{4}\,\text{m/s}^2} = 4.3 \cdot 10^{-4}\,\text{s}$, by which time it has advanced $20\,\text{m/s} \cdot 4.3 \cdot 10^{-4}\,\text{s} = 8.7\,\text{mm} < 10\,\text{mm}$, so the hit happens before the ends of the plates.
+**Substitution:** a) $E = \dfrac{2000\,\text{V}}{5.0 \cdot 10^{-3}\,\text{m}} = 4.0 \cdot 10^{5}\,\text{V/m}$ and $F = 1.0 \cdot 10^{-12}\,\text{C} \cdot 4.0 \cdot 10^{5}\,\text{V/m} = 4.0 \cdot 10^{-7}\,\text{N}$. The weight is $mg = 3.0 \cdot 10^{-11}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 2.9 \cdot 10^{-10}\,\text{N}$, so the electric force is about $1400$ times the weight and the weight can be ignored.
+
+b) $a = \dfrac{4.0 \cdot 10^{-7}\,\text{N}}{3.0 \cdot 10^{-11}\,\text{kg}} = 1.33 \cdot 10^{4}\,\text{m/s}^2$.
+
+c) $t = \dfrac{1.0 \cdot 10^{-2}\,\text{m}}{20\,\text{m/s}} = 5.0 \cdot 10^{-4}\,\text{s}$.
+
+d) $$\begin{aligned} y &= \dfrac{1}{2} \cdot 1.33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot (5.0 \cdot 10^{-4}\,\text{s})^2 \\ &= 1.67 \cdot 10^{-3}\,\text{m} \\ &= 1.67\,\text{mm} \end{aligned}$$.
+
+e) The droplet enters halfway, so it hits a plate if the deviation is more than $d : 2 = 2.5\,\text{mm}$. Now $1.67\,\text{mm} < 2.5\,\text{mm}$, so the droplet does not hit a plate. When the voltage is doubled, $E$, $F$ and $a$ double too, so $y = 3.33\,\text{mm} > 2.5\,\text{mm}$, and the droplet hits a plate. It reaches the deviation $2.5\,\text{mm}$ in the time $t = \sqrt{2 \cdot 2.5 \cdot 10^{-3}\,\text{m} : 2.67 \cdot 10^{4}\,\text{m/s}^2} = 4.3 \cdot 10^{-4}\,\text{s}$, by which time it has advanced $20\,\text{m/s} \cdot 4.3 \cdot 10^{-4}\,\text{s} = 8.7\,\text{mm} < 10\,\text{mm}$, so the hit happens before the ends of the plates.
 **Answer:** $1.7\,\text{mm}$, two significant figures like the given values. The droplet does not hit a plate, but with double the voltage it would.
 **Reasonableness:** The deviation is smaller than the half-gap $2.5\,\text{mm}$, which suits a printer where the position of the droplet is controlled with the voltage. The horizontal speed $20\,\text{m/s}$ takes the droplet past the plates in $0.5\,\text{ms}$, and during that time the sideways speed grows to $$\begin{aligned} &a \cdot t \\ &= 1.33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot 5.0 \cdot 10^{-4}\,\text{s} \\ &= 6.7\,\text{m/s} \end{aligned}$$, which is clearly smaller than $20\,\text{m/s}$.

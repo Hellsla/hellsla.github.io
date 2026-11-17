@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9816ea982e4489ee
+CONTENT-HASH: 9834072d28c9751a
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-1-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
-
-## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.

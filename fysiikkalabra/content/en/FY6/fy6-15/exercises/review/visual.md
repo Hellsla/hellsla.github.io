@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8b0aab82c5c21690
+CONTENT-HASH: 2ac1e391ce8541b9
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-15: quotation marks are mixed (task text uses ”…”, Annettu stage uses straight "…"); use ”…” in both.
+- [Minor] No new Minors; breaks fall at sentence boundaries.
 
 ## Checked
-- Proof sheets en-fy6-15-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs only, solutions.md). Opened a level-2 1280 px open-solutions capture (open-exercises-L2-1280-8) of this set and judged the added breaks from it and the diff; short one-sentence paragraphs read as separate thoughts, none orphaned or mid-thought.
+- Spacing inside the solution card consistent; nothing clipped; formulas intact. No 390 px exercise captures exist; layout is the shared card.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

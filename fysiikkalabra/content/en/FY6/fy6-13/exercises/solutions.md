@@ -93,7 +93,9 @@
 ## fy6-13-L3-01
 **Given:** capacitance $C_1 = 120\,\text{pF}$, voltage $U_1 = 500\,\text{V}$, the source is disconnected, the distance of the plates doubles
 **Find:** the change in energy $\Delta W$ in microjoules
-**Principle:** The charge of a disconnected capacitor cannot change, because the charge has no path from one plate to the other. The capacitance of a parallel-plate capacitor is inversely proportional to the distance of the plates, so it halves, and the voltage $U = \tfrac{Q}{C}$ doubles. The increase in energy is the work done in pulling the plates apart.
+**Principle:** The charge of a disconnected capacitor cannot change, because the charge has no path from one plate to the other. The capacitance of a parallel-plate capacitor is inversely proportional to the distance of the plates, so it halves, and the voltage $U = \tfrac{Q}{C}$ doubles.
+
+The increase in energy is the work done in pulling the plates apart.
 **Formula:** $Q = C_1 U_1$, $C_2 = \tfrac{1}{2} C_1$, $U_2 = \dfrac{Q}{C_2}$ and $\Delta W = \tfrac{1}{2} Q U_2 - \tfrac{1}{2} Q U_1$, from which $\Delta W = \tfrac{1}{2} Q (U_2 - U_1)$
 **Conversions:** $C_1 = 120\,\text{pF} = 120 \cdot 10^{-12}\,\text{F}$
 **Substitution:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ and $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15.0 \cdot 10^{-6}\,\text{J}$
@@ -113,7 +115,9 @@
 ## fy6-13-L3-03
 **Given:** capacitance $C = 1.0\,\text{nF}$, voltage $U = 6.0\,\text{kV}$, for polystyrene $\varepsilon_\text{r} = 2.6$ and $E_\text{max} = 24\,\text{MV/m}$, the field at most $\tfrac{1}{2} E_\text{max}$, $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$
 **Find:** the area of the plate $A$ in square centimetres
-**Principle:** The field between the plates is $E = \tfrac{U}{d}$. The field may be at most half of the dielectric strength, so the dielectric must be at least thick enough that the field does not exceed this limit. When the thickness is known, the area that gives the desired capacitance is solved from the formula of a parallel-plate capacitor.
+**Principle:** The field between the plates is $E = \tfrac{U}{d}$. The field may be at most half of the dielectric strength, so the dielectric must be at least thick enough that the field does not exceed this limit.
+
+When the thickness is known, the area that gives the desired capacitance is solved from the formula of a parallel-plate capacitor.
 **Formula:** $\tfrac{1}{2} E_\text{max} = \dfrac{U}{d}$, from which $d = \dfrac{2U}{E_\text{max}}$, and $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, from which $A = \dfrac{C d}{\varepsilon_0 \varepsilon_\text{r}}$
 **Conversions:** $U = 6.0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1.0 \cdot 10^{-9}\,\text{F}$ and finally $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Substitution:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5.0 \cdot 10^{-4}\,\text{m}$ and $A = \dfrac{1.0 \cdot 10^{-9}\,\text{F} \cdot 5.0 \cdot 10^{-4}\,\text{m}}{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.6} \approx 0.0217\,\text{m}^2 = 217\,\text{cm}^2$
@@ -123,12 +127,18 @@
 ## fy6-13-L1-06
 **Find:** what happens to the capacitance when the voltage doubles.
 **Principle:** The capacitance is the ratio of the charge to the voltage, $C = \tfrac{Q}{U}$. It is determined by the area of the plates, their distance and the dielectric, not by the voltage to which the capacitor is charged. When the voltage grows, the charge grows in the same proportion.
-**Model answer:** The capacitance stays the same, because it is determined by the construction of the capacitor. At the voltage $5.0\,\text{V}$ the charge is $Q_1 = 5.0\,\text{V} \cdot C$, and at the voltage $10\,\text{V}$ it is $Q_2 = 10\,\text{V} \cdot C$, so the charge doubles but the ratio $\tfrac{Q}{U}$ does not change. The capacitance does not double, decrease or become four times as large. The energy, on the other hand, becomes four times as large, because $W = \tfrac{1}{2} C U^2$ depends on the square of the voltage.
+**Model answer:** The capacitance stays the same, because it is determined by the construction of the capacitor. At the voltage $5.0\,\text{V}$ the charge is $Q_1 = 5.0\,\text{V} \cdot C$, and at the voltage $10\,\text{V}$ it is $Q_2 = 10\,\text{V} \cdot C$, so the charge doubles but the ratio $\tfrac{Q}{U}$ does not change.
+
+The capacitance does not double, decrease or become four times as large. The energy, on the other hand, becomes four times as large, because $W = \tfrac{1}{2} C U^2$ depends on the square of the voltage.
 
 ## fy6-13-L1-07
 **Find:** what happens to the voltage when a dielectric is pushed into a disconnected capacitor.
 **Principle:** The charge of a disconnected capacitor cannot change, because the charge has no path from one plate to the other. The dielectric makes the capacitance $\varepsilon_\text{r}$ times as large, and the voltage is obtained from the formula $U = \tfrac{Q}{C}$.
-**Model answer:** The voltage decreases. The charge $Q$ stays the same, because the source has been disconnected, and the capacitance $C$ increases because of the dielectric. Since $U = \tfrac{Q}{C}$, the voltage decreases in the same proportion as the capacitance increases: it becomes $\tfrac{1}{\varepsilon_\text{r}}$ times as large. The dielectric does not conduct charge from one plate to the other, and the voltage does not stay the same, because the source no longer keeps it constant. The energy $W = \tfrac{1}{2} Q U$ decreases too.
+**Model answer:** The voltage decreases. The charge $Q$ stays the same, because the source has been disconnected, and the capacitance $C$ increases because of the dielectric.
+
+Since $U = \tfrac{Q}{C}$, the voltage decreases in the same proportion as the capacitance increases: it becomes $\tfrac{1}{\varepsilon_\text{r}}$ times as large. The dielectric does not conduct charge from one plate to the other, and the voltage does not stay the same, because the source no longer keeps it constant.
+
+The energy $W = \tfrac{1}{2} Q U$ decreases too.
 
 ## fy6-13-L1-08
 **Given:** capacitance $C = 1000\,\mu\text{F}$, voltages $U_1 = 6.0\,\text{V}$ and $U_2 = 18\,\text{V}$
@@ -142,7 +152,9 @@
 
 ## fy6-13-L1-09
 **Find:** which of the five statements about a charged capacitor are true.
-**Principle:** In charging, the battery moves charge from one plate to the other, so the plates have charges $+Q$ and $-Q$, and $Q = CU$. Charge does not pass through the insulator, and the current stops when the voltage of the capacitor is the voltage of the battery. The capacitance depends only on the structure, and the energy is $W = \tfrac{1}{2} C U^2$.
+**Principle:** In charging, the battery moves charge from one plate to the other, so the plates have charges $+Q$ and $-Q$, and $Q = CU$.
+
+Charge does not pass through the insulator, and the current stops when the voltage of the capacitor is the voltage of the battery. The capacitance depends only on the structure, and the energy is $W = \tfrac{1}{2} C U^2$.
 **Model answer:** The charge is
 
 $Q = CU$
@@ -172,8 +184,12 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 ## fy6-13-L2-05
 **Given:** the points $(U;\ Q)$ of the table: $(2.0\,\text{V};\ 94\,\mu\text{C})$, $(4.0\,\text{V};\ 189\,\mu\text{C})$, $(6.0\,\text{V};\ 281\,\mu\text{C})$, $(8.0\,\text{V};\ 380\,\mu\text{C})$, $(10.0\,\text{V};\ 471\,\mu\text{C})$ and $(12.0\,\text{V};\ 567\,\mu\text{C})$
 **Find:** the energy $W$ at the voltage $12\,\text{V}$ in millijoules
-**Principle:** Since $Q = CU$, the points lie on a straight line through the origin whose slope is the capacitance $C$. When the capacitance is known, the energy is obtained from the formula $W = \tfrac{1}{2} C U^2$. The same energy is the area $\tfrac{1}{2} Q U$ of the triangle between the line of the $(U, Q)$ graph and the $Q$ axis.
-**Reading the graph:** The points lie on a rising straight line with points on both sides of it, and the line passes through the origin. The slope is read from two points of the fitted line that are far apart, the origin and the point $(12\,\text{V};\ 566\,\mu\text{C})$: $\tfrac{566\,\mu\text{C}}{12\,\text{V}} \approx 47.2\,\tfrac{\mu\text{C}}{\text{V}}$, so the capacitance is about $47.2\,\mu\text{F}$.
+**Principle:** Since $Q = CU$, the points lie on a straight line through the origin whose slope is the capacitance $C$. When the capacitance is known, the energy is obtained from the formula $W = \tfrac{1}{2} C U^2$.
+
+The same energy is the area $\tfrac{1}{2} Q U$ of the triangle between the line of the $(U, Q)$ graph and the $Q$ axis.
+**Reading the graph:** The points lie on a rising straight line with points on both sides of it, and the line passes through the origin.
+
+The slope is read from two points of the fitted line that are far apart, the origin and the point $(12\,\text{V};\ 566\,\mu\text{C})$: $\tfrac{566\,\mu\text{C}}{12\,\text{V}} \approx 47.2\,\tfrac{\mu\text{C}}{\text{V}}$, so the capacitance is about $47.2\,\mu\text{F}$.
 **Formula:** $C = \dfrac{Q}{U}$ (the slope of the line) and $W = \tfrac{1}{2} C U^2$
 **Conversions:** $C = 47.2\,\tfrac{\mu\text{C}}{\text{V}} = 47.2\,\mu\text{F} = 47.2 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 47.2 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 3.40 \cdot 10^{-3}\,\text{J} = 3.40\,\text{mJ}$
@@ -182,42 +198,66 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 
 ## fy6-13-L2-06
 **Find:** the time interval during which the charging current is the greatest.
-**Principle:** The current is the rate at which charge moves. Since $Q = CU$ and the capacitance is constant, the charge changes at the same rate as the voltage, so the current is directly proportional to the rate at which the voltage grows, that is, to the steepness of the graph. The current thus depends not on the size of the voltage but on how fast the voltage grows.
-**Model answer:** The charging current is the greatest during the interval $0\text{–}1\,\text{s}$, because the voltage then grows the fastest, $3.5\,\text{V}$ per second, and charge moves to the plates the fastest. At the start the voltage of the capacitor is zero, so the whole voltage of the source drives the current. As charge accumulates in the capacitor, its voltage opposes the source, the growth of the voltage slows down and the current decreases towards zero. The current is not the greatest when the voltage or the charge is the greatest, but when they change the fastest.
+**Principle:** The current is the rate at which charge moves. Since $Q = CU$ and the capacitance is constant, the charge changes at the same rate as the voltage, so the current is directly proportional to the rate at which the voltage grows, that is, to the steepness of the graph.
+
+The current thus depends not on the size of the voltage but on how fast the voltage grows.
+**Model answer:** The charging current is the greatest during the interval $0\text{–}1\,\text{s}$, because the voltage then grows the fastest, $3.5\,\text{V}$ per second, and charge moves to the plates the fastest.
+
+At the start the voltage of the capacitor is zero, so the whole voltage of the source drives the current. As charge accumulates in the capacitor, its voltage opposes the source, the growth of the voltage slows down and the current decreases towards zero.
+
+The current is not the greatest when the voltage or the charge is the greatest, but when they change the fastest.
 **Reading the graph:** The growth of the voltage in one second is $3.5\,\text{V}$ during $0\text{–}1\,\text{s}$, $2.0\,\text{V}$ during $1\text{–}2\,\text{s}$, $1.4\,\text{V}$ during $2\text{–}3\,\text{s}$, $0.8\,\text{V}$ during $3\text{–}4\,\text{s}$, $0.5\,\text{V}$ during $4\text{–}5\,\text{s}$ and $0.3\,\text{V}$ during $5\text{–}6\,\text{s}$. The graph is steepest at the start and becomes gentler all the time.
 
 ## fy6-13-L2-07
 **Given:** capacitance $C = 220\,\mu\text{F}$, voltage of the source $U = 24\,\text{V}$, the student’s result $QU = 127\,\text{mJ}$
 **Find:** a) the error in the student’s reasoning, b) the stored energy $W$ in millijoules
-**Principle:** The source moves the charge $Q$ from one plate to the other across its whole voltage $U$, and so gives the energy $QU$. In charging, the voltage of the capacitor grows from zero to $U$, so the charge moves on average across the voltage $\tfrac{U}{2}$, and only half of the energy given by the source is stored in the capacitor.
+**Principle:** The source moves the charge $Q$ from one plate to the other across its whole voltage $U$, and so gives the energy $QU$.
+
+In charging, the voltage of the capacitor grows from zero to $U$, so the charge moves on average across the voltage $\tfrac{U}{2}$, and only half of the energy given by the source is stored in the capacitor.
 **Formula:** $W = \tfrac{1}{2} C U^2$
 **Conversions:** $C = 220\,\mu\text{F} = 220 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0.0634\,\text{J} = 63.4\,\text{mJ}$
 **Answer:** $63\,\text{mJ}$, two significant figures, because the limiting datum is the voltage $24\,\text{V}$; the capacitance $220\,\mu\text{F}$ has three.
-**Model answer on the error:** The student’s $QU = 127\,\text{mJ}$ is the energy given by the source, but only half of it is stored in the capacitor. During charging the voltage of the capacitor is at first zero and grows only gradually to $24\,\text{V}$, so the charge does not move across the full voltage all the time. The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and resistors and passes to the surroundings as heat.
+**Model answer on the error:** The student’s $QU = 127\,\text{mJ}$ is the energy given by the source, but only half of it is stored in the capacitor.
+
+During charging the voltage of the capacitor is at first zero and grows only gradually to $24\,\text{V}$, so the charge does not move across the full voltage all the time.
+
+The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and resistors and passes to the surroundings as heat.
 **Reasonableness:** The stored energy is $$\begin{aligned} &\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} \\ &= 63.4\,\text{mJ} \end{aligned}$$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Given:** charging current $I = 15\,\text{mA}$, the points $(t;\ U)$ of the table: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ and $(12\,\text{s};\ 1201\,\text{V})$, voltage of the shock $1.8\,\text{kV}$, discharge time $5.0\,\text{ms}$
 **Find:** the average power of the shock $P$ in kilowatts, and in addition the charging time and the justification for not touching the capacitor
-**Principle:** With a constant current the charge is $Q = It$, and for a capacitor $Q = CU$, so $U = \tfrac{I}{C} t$: the voltage grows directly with time, and the slope of the line is $\tfrac{I}{C}$. When the capacitance is known, the energy released in the shock is the energy of the capacitor $\tfrac{1}{2} C U^2$, and the average power is obtained by dividing it by the discharge time.
+**Principle:** With a constant current the charge is $Q = It$, and for a capacitor $Q = CU$, so $U = \tfrac{I}{C} t$: the voltage grows directly with time, and the slope of the line is $\tfrac{I}{C}$.
+
+When the capacitance is known, the energy released in the shock is the energy of the capacitor $\tfrac{1}{2} C U^2$, and the average power is obtained by dividing it by the discharge time.
 **Reading the graph:** The points lie on a straight line through the origin, and the voltage grows by about $100\,\text{V}$ per second. The slope is read from two points of the fitted line that are far apart, the origin and the point $(12\,\text{s};\ 1200\,\text{V})$: $\tfrac{1200\,\text{V}}{12\,\text{s}} = 100\,\tfrac{\text{V}}{\text{s}}$.
 **Formula:** $\dfrac{I}{C} = k$, from which $C = \dfrac{I}{k}$, and $W = \tfrac{1}{2} C U^2$ and $P = \dfrac{W}{t}$
 **Conversions:** $I = 15\,\text{mA} = 15 \cdot 10^{-3}\,\text{A}$, $U = 1.8\,\text{kV} = 1800\,\text{V}$ and $t = 5.0\,\text{ms} = 5.0 \cdot 10^{-3}\,\text{s}$
 **Substitution:** $C = \dfrac{15 \cdot 10^{-3}\,\text{A}}{100\,\text{V/s}} = 1.5 \cdot 10^{-4}\,\text{F} = 150\,\mu\text{F}$, $W = \tfrac{1}{2} \cdot 1.5 \cdot 10^{-4}\,\text{F} \cdot (1800\,\text{V})^2 = 243\,\text{J}$ and $P = \dfrac{243\,\text{J}}{5.0 \cdot 10^{-3}\,\text{s}} = 4.86 \cdot 10^{4}\,\text{W}$
 **Answer:** $48.6\,\text{kW}$, that is, about $49\,\text{kW}$, two significant figures like the discharge time.
-**Model answer on the charging time and safety:** Charging takes $t = \tfrac{U}{k} = \tfrac{1800\,\text{V}}{100\,\text{V/s}} = 18\,\text{s}$. The capacitor of the device must not be touched even when it is unplugged, because a charged capacitor keeps its charge and energy until it gets a path for the current: here the energy is $243\,\text{J}$ and the voltage $1.8\,\text{kV}$. Touching the terminals would let a current pass through the body, and the discharge would be a dangerous shock.
+**Model answer on the charging time and safety:** Charging takes $t = \tfrac{U}{k} = \tfrac{1800\,\text{V}}{100\,\text{V/s}} = 18\,\text{s}$. The capacitor of the device must not be touched even when it is unplugged, because a charged capacitor keeps its charge and energy until it gets a path for the current: here the energy is $243\,\text{J}$ and the voltage $1.8\,\text{kV}$.
+
+Touching the terminals would let a current pass through the body, and the discharge would be a dangerous shock.
 **Reasonableness:** The charge is $Q = It = 15\,\text{mA} \cdot 18\,\text{s} = 0.27\,\text{C}$, and $\tfrac{1}{2} \cdot 0.27\,\text{C} \cdot 1800\,\text{V} = 243\,\text{J}$, the same result. The average power of charging is only $243\,\text{J} : 18\,\text{s} = 13.5\,\text{W}$, whereas in the shock the same energy is released in $5.0\,\text{ms}$, so the power is thousands of times as great.
 
 ## fy6-13-L3-05
 **Given:** area of the plate $A = 100\,\text{cm}^2$, thickness of the dielectric layer $d = 0.050\,\text{mm}$, from the table for Teflon $\varepsilon_\text{r} = 2.1$ and $E_\text{max} = 60\,\text{MV/m}$ and for glass $\varepsilon_\text{r} = 5.6$ and $E_\text{max} = 14\,\text{MV/m}$, the field at most $\tfrac{1}{2} E_\text{max}$, $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$
 **Find:** the ratio of the energies of the Teflon and the glass capacitor $\tfrac{W_\text{Teflon}}{W_\text{glass}}$ and a justification
-**Principle:** The allowed field is $\tfrac{1}{2} E_\text{max}$, so the greatest voltage is $U = \tfrac{1}{2} E_\text{max} d$. The capacitance of a parallel-plate capacitor is obtained from the formula $C = \tfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, and the energy is $W = \tfrac{1}{2} C U^2$. The ratio of the energies shows which dielectric stores more energy in the same volume.
+**Principle:** The allowed field is $\tfrac{1}{2} E_\text{max}$, so the greatest voltage is $U = \tfrac{1}{2} E_\text{max} d$. The capacitance of a parallel-plate capacitor is obtained from the formula $C = \tfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, and the energy is $W = \tfrac{1}{2} C U^2$.
+
+The ratio of the energies shows which dielectric stores more energy in the same volume.
 **Formula:** $U = \tfrac{1}{2} E_\text{max} d$, $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$ and $W = \tfrac{1}{2} C U^2$
 **Conversions:** $A = 100\,\text{cm}^2 = 1.0 \cdot 10^{-2}\,\text{m}^2$, $d = 0.050\,\text{mm} = 5.0 \cdot 10^{-5}\,\text{m}$, $60\,\text{MV/m} = 60 \cdot 10^{6}\,\text{V/m}$ and $14\,\text{MV/m} = 14 \cdot 10^{6}\,\text{V/m}$
-**Substitution:** Teflon: $U = \tfrac{1}{2} \cdot 60 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 5.0 \cdot 10^{-5}\,\text{m} = 1500\,\text{V}$, $\varepsilon_0 \varepsilon_\text{r} A = 1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}$, from which $C = \dfrac{1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}}{5.0 \cdot 10^{-5}\,\text{m}} = 3.72\,\text{nF}$ and $W = \tfrac{1}{2} \cdot 3.72 \cdot 10^{-9}\,\text{F} \cdot (1500\,\text{V})^2 = 4.18\,\text{mJ}$. For glass $U = 350\,\text{V}$, $C = 9.92\,\text{nF}$ and $W = \tfrac{1}{2} \cdot 9.92 \cdot 10^{-9}\,\text{F} \cdot (350\,\text{V})^2 = 0.607\,\text{mJ}$. The ratio is $\dfrac{4.18\,\text{mJ}}{0.607\,\text{mJ}} = 6.89$.
+**Substitution:** Teflon: $U = \tfrac{1}{2} \cdot 60 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 5.0 \cdot 10^{-5}\,\text{m} = 1500\,\text{V}$, $\varepsilon_0 \varepsilon_\text{r} A = 1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}$, from which $C = \dfrac{1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}}{5.0 \cdot 10^{-5}\,\text{m}} = 3.72\,\text{nF}$ and $W = \tfrac{1}{2} \cdot 3.72 \cdot 10^{-9}\,\text{F} \cdot (1500\,\text{V})^2 = 4.18\,\text{mJ}$.
+
+For glass $U = 350\,\text{V}$, $C = 9.92\,\text{nF}$ and $W = \tfrac{1}{2} \cdot 9.92 \cdot 10^{-9}\,\text{F} \cdot (350\,\text{V})^2 = 0.607\,\text{mJ}$. The ratio is $\dfrac{4.18\,\text{mJ}}{0.607\,\text{mJ}} = 6.89$.
 **Answer:** $6.9$, two significant figures like the values of the table. The ratio is a pure number with no unit.
-**Model answer c):** Substituting $C$ and $U$ into the formula of the energy gives $W = \tfrac{1}{8} \varepsilon_0 \varepsilon_\text{r} E_\text{max}^2 A d$, so with the same dimensions the energy is proportional to the quantity $\varepsilon_\text{r} E_\text{max}^2$. The relative permittivity of glass is $\tfrac{5.6}{2.1} = 2.7$ times that of Teflon, but the dielectric strength of Teflon is $\tfrac{60}{14} = 4.3$ times that of glass, and it enters the formula as a square: $4.3^2 = 18.4$. The ratio is $\tfrac{18.4}{2.7} \approx 6.9$: Teflon withstands a much greater voltage and therefore stores more energy, even though the capacitance of glass is greater.
+**Model answer c):** Substituting $C$ and $U$ into the formula of the energy gives $W = \tfrac{1}{8} \varepsilon_0 \varepsilon_\text{r} E_\text{max}^2 A d$, so with the same dimensions the energy is proportional to the quantity $\varepsilon_\text{r} E_\text{max}^2$.
+
+The relative permittivity of glass is $\tfrac{5.6}{2.1} = 2.7$ times that of Teflon, but the dielectric strength of Teflon is $\tfrac{60}{14} = 4.3$ times that of glass, and it enters the formula as a square: $4.3^2 = 18.4$.
+
+The ratio is $\tfrac{18.4}{2.7} \approx 6.9$: Teflon withstands a much greater voltage and therefore stores more energy, even though the capacitance of glass is greater.
 **Reasonableness:** For Teflon the voltage is $1500\,\text{V}$ and for glass $350\,\text{V}$, and the capacitances are $3.72\,\text{nF}$ and $9.92\,\text{nF}$. The ratio is obtained from these too: $\tfrac{3.72}{9.92} \cdot \left(\tfrac{1500}{350}\right)^2 = 0.375 \cdot 18.4 = 6.9$.
 
 ## fy6-13-L1-10
@@ -244,12 +284,42 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 ## fy6-13-L2-09
 **Given:** from the source material (the PhET simulation *Capacitor Lab: Basics*): a parallel-plate capacitor connected to a battery, whose voltage, plate separation and plate area can be changed; in part b) the capacitance $C = 1000\,\mu\text{F}$ and the voltage $U = 12\,\text{V}$; for the comparison of part d) the phone battery of the chapter *Batteries and the charging circuit*, with a nominal voltage of $3.85\,\text{V}$ and a capacity of $5.0\,\text{Ah}$
 **Find:** a) how the charge depends on the voltage and how the plate separation affects the capacitance; b) the stored energy $W$ in millijoules; c) the change in the energy when the voltage doubles; d) a comparison of a capacitor and a battery as energy stores, and the uses of each
-**Principle:** Capacitance is the ratio of charge to voltage, and it depends only on the structure of the capacitor. In charging, the voltage grows in the same proportion as the charge, so the charge moves on average across the voltage $\tfrac{U}{2}$ and the energy is half the product of the charge and the voltage. For the capacitor of part b) the capacitance and the voltage are known, so the energy follows from them.
-**Part a):** When the plate separation and the plate area stay the same, the capacitance $C$ does not change. Your pairs of values should show that the charge grows in the same proportion as the voltage: when the voltage doubles, the charge doubles. The charge is therefore directly proportional to the voltage, $Q = CU$, and the ratio $\tfrac{Q}{U}$ is the same in every pair: it is the capacitance. When the plates are moved further apart, the capacitance decreases: when the separation doubles, the capacitance halves. The capacitance is inversely proportional to the separation, as the formula $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$ says. Because the battery keeps the voltage the same, the charge $Q = CU$ decreases as well. Your own readings depend on the settings you chose. What follows is an example calculation, not a reading from the simulation: an air-filled ($\varepsilon_\text{r} \approx 1.0$, so the factor $\varepsilon_\text{r}$ drops out) parallel-plate capacitor has the plate area $A = 2.0\,\text{cm}^2 = 2.0 \cdot 10^{-4}\,\text{m}^2$ and the separation $d = 4.0\,\text{mm}$. Then $$\begin{aligned} C &= \dfrac{\varepsilon_0 A}{d} \\ &= \dfrac{8.854 \cdot 10^{-12}\,\tfrac{\text{F}}{\text{m}} \cdot 2.0 \cdot 10^{-4}\,\text{m}^2}{4.0 \cdot 10^{-3}\,\text{m}} \\ &\approx 0.44\,\text{pF} \end{aligned}$$. With a separation of $8.0\,\text{mm}$ the same calculation gives $0.22\,\text{pF}$, half of that. At a voltage of $1.5\,\text{V}$ the charge of the first capacitor is $$\begin{aligned} Q &= CU \\ &= 0.44\,\text{pF} \cdot 1.5\,\text{V} \\ &\approx 0.66\,\text{pC} \end{aligned}$$.
+**Principle:** Capacitance is the ratio of charge to voltage, and it depends only on the structure of the capacitor. In charging, the voltage grows in the same proportion as the charge, so the charge moves on average across the voltage $\tfrac{U}{2}$ and the energy is half the product of the charge and the voltage.
+
+For the capacitor of part b) the capacitance and the voltage are known, so the energy follows from them.
+**Part a):** When the plate separation and the plate area stay the same, the capacitance $C$ does not change. Your pairs of values should show that the charge grows in the same proportion as the voltage: when the voltage doubles, the charge doubles.
+
+The charge is therefore directly proportional to the voltage, $Q = CU$, and the ratio $\tfrac{Q}{U}$ is the same in every pair: it is the capacitance.
+
+When the plates are moved further apart, the capacitance decreases: when the separation doubles, the capacitance halves. The capacitance is inversely proportional to the separation, as the formula $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$ says.
+
+Because the battery keeps the voltage the same, the charge $Q = CU$ decreases as well. Your own readings depend on the settings you chose.
+
+What follows is an example calculation, not a reading from the simulation: an air-filled ($\varepsilon_\text{r} \approx 1.0$, so the factor $\varepsilon_\text{r}$ drops out) parallel-plate capacitor has the plate area $A = 2.0\,\text{cm}^2 = 2.0 \cdot 10^{-4}\,\text{m}^2$ and the separation $d = 4.0\,\text{mm}$.
+
+Then $$\begin{aligned} C &= \dfrac{\varepsilon_0 A}{d} \\ &= \dfrac{8.854 \cdot 10^{-12}\,\tfrac{\text{F}}{\text{m}} \cdot 2.0 \cdot 10^{-4}\,\text{m}^2}{4.0 \cdot 10^{-3}\,\text{m}} \\ &\approx 0.44\,\text{pF} \end{aligned}$$. With a separation of $8.0\,\text{mm}$ the same calculation gives $0.22\,\text{pF}$, half of that.
+
+At a voltage of $1.5\,\text{V}$ the charge of the first capacitor is $$\begin{aligned} Q &= CU \\ &= 0.44\,\text{pF} \cdot 1.5\,\text{V} \\ &\approx 0.66\,\text{pC} \end{aligned}$$.
 **Formula:** Part b): $W = \tfrac{1}{2} Q U$ and $Q = CU$, so $W = \tfrac{1}{2} C U^2$
 **Conversions:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F}$, at the end $1\,\text{mJ} = 10^{-3}\,\text{J}$, and in the comparison of part d) $1\,\text{Wh} = 3600\,\text{J}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 1000 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 0.072\,\text{J} = 72\,\text{mJ}$
-**Part c):** When the voltage is $2U$ and the capacitance is the same, the energy is $$\begin{aligned} W_2 &= \tfrac{1}{2} C (2U)^2 \\ &= 4 \cdot \tfrac{1}{2} C U^2 \\ &= 4W \end{aligned}$$. The energy becomes four times as large, because it is proportional to the square of the voltage: the charge $Q = CU$ doubles, and it moves on average across twice the voltage. For the capacitor of part b) $$\begin{aligned} W_2 &= 4 \cdot 0.072\,\text{J} \\ &= 0.288\,\text{J} \\ &\approx 0.29\,\text{J} \end{aligned}$$. The same can be checked in the simulation: when the voltage of the battery is doubled and the plates are not changed, the energy reading should become four times as large.
-**Part d):** In a capacitor the energy is in the electric field between the plates, and no chemical reaction takes place in charging or discharging. That is why a capacitor can take in and give out its energy very quickly and withstands a very large number of charge and discharge cycles, but it holds little energy. In a battery the energy is stored as chemical energy, and a device of the same size holds far more of it. A battery gives out its energy over a long time, and its internal resistance limits the current (chapter *Electromotive force and internal resistance*). For example, the energy of the phone battery of the chapter *Batteries and the charging circuit* is $$\begin{aligned} W_\text{bat} &= UQ \\ &= 3.85\,\text{V} \cdot 5.0\,\text{Ah} \\ &= 19.25\,\text{Wh} \\ &= 69\,300\,\text{J} \end{aligned}$$. That is $69\,300\,\text{J} : 0.072\,\text{J} \approx 9.6 \cdot 10^{5}$, about a million times the energy of the capacitor of part b). A capacitor suits uses that need a large power for a short time or fast charging: a camera flash, smoothing the voltage in electronics, short power peaks and, with supercapacitors of very large capacitance, recovering braking energy. A battery suits uses that need a lot of energy for a long time: a phone, an electric bicycle and an electric car.
+**Part c):** When the voltage is $2U$ and the capacitance is the same, the energy is $$\begin{aligned} W_2 &= \tfrac{1}{2} C (2U)^2 \\ &= 4 \cdot \tfrac{1}{2} C U^2 \\ &= 4W \end{aligned}$$.
+
+The energy becomes four times as large, because it is proportional to the square of the voltage: the charge $Q = CU$ doubles, and it moves on average across twice the voltage.
+
+For the capacitor of part b) $$\begin{aligned} W_2 &= 4 \cdot 0.072\,\text{J} \\ &= 0.288\,\text{J} \\ &\approx 0.29\,\text{J} \end{aligned}$$. The same can be checked in the simulation: when the voltage of the battery is doubled and the plates are not changed, the energy reading should become four times as large.
+**Part d):** In a capacitor the energy is in the electric field between the plates, and no chemical reaction takes place in charging or discharging.
+
+That is why a capacitor can take in and give out its energy very quickly and withstands a very large number of charge and discharge cycles, but it holds little energy.
+
+In a battery the energy is stored as chemical energy, and a device of the same size holds far more of it. A battery gives out its energy over a long time, and its internal resistance limits the current (chapter *Electromotive force and internal resistance*).
+
+For example, the energy of the phone battery of the chapter *Batteries and the charging circuit* is $$\begin{aligned} W_\text{bat} &= UQ \\ &= 3.85\,\text{V} \cdot 5.0\,\text{Ah} \\ &= 19.25\,\text{Wh} \\ &= 69\,300\,\text{J} \end{aligned}$$.
+
+That is $69\,300\,\text{J} : 0.072\,\text{J} \approx 9.6 \cdot 10^{5}$, about a million times the energy of the capacitor of part b). A capacitor suits uses that need a large power for a short time or fast charging: a camera flash, smoothing the voltage in electronics, short power peaks and, with supercapacitors of very large capacitance, recovering braking energy.
+
+A battery suits uses that need a lot of energy for a long time: a phone, an electric bicycle and an electric car.
 **Answer:** $72\,\text{mJ}$, that is $0.072\,\text{J}$, two significant figures like the voltage $12\,\text{V}$; the capacitance $1000\,\mu\text{F}$ is a whole number ending in zeros, which is taken as exact. When the voltage doubles, the energy becomes four times as large, about $0.29\,\text{J}$.
-**Reasonableness:** The charge is $Q = CU = 1000 \cdot 10^{-6}\,\text{F} \cdot 12\,\text{V} = 0.012\,\text{C}$, and $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 0.012\,\text{C} \cdot 12\,\text{V} = 0.072\,\text{J}$, the same result. The unit is right: $1\,\text{F} \cdot 1\,\text{V}^2 = 1\,\tfrac{\text{C}}{\text{V}} \cdot 1\,\text{V}^2 = 1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$. The energy is small compared with the energy of a battery, as the comparison of part d) shows.
+**Reasonableness:** The charge is $Q = CU = 1000 \cdot 10^{-6}\,\text{F} \cdot 12\,\text{V} = 0.012\,\text{C}$, and $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 0.012\,\text{C} \cdot 12\,\text{V} = 0.072\,\text{J}$, the same result.
+
+The unit is right: $1\,\text{F} \cdot 1\,\text{V}^2 = 1\,\tfrac{\text{C}}{\text{V}} \cdot 1\,\text{V}^2 = 1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$. The energy is small compared with the energy of a battery, as the comparison of part d) shows.
