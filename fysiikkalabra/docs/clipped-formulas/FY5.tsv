@@ -1,0 +1,19 @@
+# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
+# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
+# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+FY5-koe	= 6{,}674 \cdot 10^{-11} \cdot \dfrac{5{,}97 \cdot 10^{24} \cdot 4{,}0
+en/fy5-1	\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)
+en/fy5-12	3.20\,\text{m} + 2.40\,\text{m} = 5.60\,\text{m}
+en/fy5-4	= 1200\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 - \dfrac{(12\,\text{m/s
+en/fy5-6	\gamma M = 6.674 \cdot 10^{-11} \cdot 5.97 \cdot 10^{24}\,\text{m}^3/\
+en/fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0.090\,
+fi-easy/fy5-1	\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)
+fi-easy/fy5-12	3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}
+fi-easy/fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\text{m
+fi-easy/fy5-6	\gamma M = 6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}\,\text{m}
+fi-easy/fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,}090
+fy5-1	\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)
+fy5-12	3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}
+fy5-4	= 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\text{m
+fy5-6	\gamma M = 6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}\,\text{m}
+fy5-8	= \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0{,}090

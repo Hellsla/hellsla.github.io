@@ -1,0 +1,4 @@
+# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
+# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
+# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+fy10-hissi	\tfrac{1}{2} \cdot \delta a \cdot t_\text{loppu}^2 = \tfrac{1}{2} \cdo
