@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cf74760874cf6a09
+CONTENT-HASH: 3f91bee9f22eb267
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review (round 2): opened fy7-8-stage-herata-390 (Pohdinta; changed retrieval title "Kertaa: tehollinen jännite" visible, box closed, layout intact). Task body judged from the diff: colon division, units in LaTeX, case endings after maths.
+- batch delta review, round 3: fresh 360 px render of the opened Pohdinta retrieval task (aligned U rows in feedback, options incl. the 230 V option) and fy7-8-stage-herata-390; nothing clipped, no overflow.

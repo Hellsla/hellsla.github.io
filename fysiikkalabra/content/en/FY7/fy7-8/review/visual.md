@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: be7561f2690be5e0
+CONTENT-HASH: c7b50ebcfc2a22c7
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review: opened fy7-8-stage-herata-390.png (Pohdinta with the new optional "Revise: effective voltage" task, collapsed in the capture); layout intact; new text read from the diff (units in LaTeX, \sqrt{2}, colon division, \approx); no figures changed; the opened card itself was not captured.
+- Delta round 3: fy7-8-stage-herata-390.png (Pohdinta) and my own 360 px capture of the retrieval task with all feedback opened: calculation rows aligned at the equals signs, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

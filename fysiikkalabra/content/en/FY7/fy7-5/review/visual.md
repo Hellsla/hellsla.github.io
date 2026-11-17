@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1513035b0b2a06a9
+CONTENT-HASH: 942d55118f8c060b
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review: opened fy7-5-stage-herata-390.png (Pohdinta with the changed optional retrieval task, collapsed in the capture); layout intact; changed option and feedback read from the diff (number with unit in LaTeX, \cdot, no plain quantities); no figures changed; the opened card itself was not captured.
+- Delta round 3: fy7-5-stage-herata-390.png (Pohdinta), fy7-5-open-tarkista-1280-1.png, and my own 360 px capture of the retrieval task with all feedback opened: the shortened option and the re-broken chain read cleanly, rows aligned, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
