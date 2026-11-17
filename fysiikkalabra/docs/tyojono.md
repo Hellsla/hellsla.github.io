@@ -20,6 +20,7 @@ yhdistetään ennen sisältö-PR:iä. Jokainen osa on oma haaransa ja luonnos-PR
 yhdistetään ensin.
 
 ### 0b. Ohjetiedostot lyhyiksi
+Varattu: claude/ohjeet-lyhyiksi-0b
 `fysiikkalabra/CLAUDE.md` latautuu jokaiseen istuntoon ja agenttiin, ja suuri osa siitä on päivättyä päätöshistoriaa
 (käyttöliittymän vaiheet, Design audit, ääneenluvun toteutus). `tyojono.md` on yli 630 riviä (noin 33 k tokenia), ja
 suuri osa on "tehty"-merkintöjä, opittua ja kirjattuja päätöksiä.
