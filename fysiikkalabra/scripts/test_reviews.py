@@ -1040,6 +1040,15 @@ expect("0e (e) a row forged for an en cut that is not the Finnish cut: verify re
 git(t, "checkout", "-q", "--", "content")
 _rep(EN, "visual", en0("hash").strip(), "FAIL")
 out = en0("scope")
+git(t, "checkout", "-q", "--", "content")
+_el.write_text(_cut(_el.read_text()));
+(t / "docs/clipped-formulas").mkdir(parents=True, exist_ok=True)
+(t / "docs/clipped-formulas/FY3.tsv").write_text(f"# head\nen/{LESSON}\t= \\dfrac{{a}}{{b}}\n")
+out = en0("scope")
+expect("0e (g) a known clipped formula on the en page is a check_layout warning: no carry, en visual is a delta", "visual: none" not in out and "fi-layout" not in out, out)
+(t / "docs/clipped-formulas/FY3.tsv").write_text(f"# head\nfi-easy/{LESSON}\t= x\n")
+expect("0e ... a row of another language does not count", "fi-layout" in en0("scope"), en0("scope"))
+(t / "docs/clipped-formulas/FY3.tsv").unlink(); git(t, "checkout", "-q", "--", "content")
 expect("0e (f) an en visual FAIL for its current hash is never overridden", "fi-layout" not in out, out)
 
 expect("real project untouched", snapshot() == REAL)

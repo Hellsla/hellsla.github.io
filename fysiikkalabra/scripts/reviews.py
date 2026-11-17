@@ -99,7 +99,7 @@ keeps the Finnish text's skeleton (`layout_skeleton`: per line a list item or no
 blocks, in every text file). Then the visual reviewer looks at the Finnish page only: when the Finnish part has a genuine visual
 PASS for its current hash (`source_visual_ok`; a baseline row is none) and `source_layout_differs` is None, `scope` gives the
 translation's visual reviewer mode `none`, categories "<classes>,fi-layout", and `carry` writes the row (from the translation's
-own passed hash). `status` counts it only while the Finnish PASS is current; `verify` re-derives it. A changed word,
+own passed hash). A page on which check_layout.py gives a warning (a known clipped formula in docs/clipped-formulas/) is never carried. `status` counts it only while the Finnish PASS is current; `verify` re-derives it. A changed word,
 number, formula, figure or picture, a differently cut paragraph and a translation whose own visual verdict is FAIL are not
 language-neutral: that language is reviewed as before. Not covered: items (`carry-item`).
 
@@ -1749,12 +1749,24 @@ def source_visual_ok(folder, part="lesson"):
     return bool(src) and status(src, part)["reports"][VISUAL] == "PASS"
 
 
+CLIPPED = ROOT / "docs" / "clipped-formulas"     # check_layout.py's known clipped formulas: its one "pass with a note" (a warning)
+
+
+def layout_warnings(folder):
+    """How many clipped formulas check_layout.py lets this translated page keep (docs/clipped-formulas/<course>.tsv, rows
+    `<lang>/<id>`): the page passes the check with a warning ("OK (N known clipped formulas)"), which the teacher counts as
+    a reason for that language's own layout review (work queue 0e, relayed by the coordinator 2026-11-17)."""
+    key = f"{courses.lang_of(folder)}/{folder.name}"
+    return sum(1 for f in sorted(CLIPPED.glob("*.tsv")) for l in f.read_text().splitlines() if l.split("\t", 1)[0] == key)
+
+
 def source_layout_differs(folder, part="lesson"):
     """None when the translated part (`folder`, content/<lang>/) has, in every text file, the layout skeleton of the Finnish one
     (layout_skeleton: the same paragraphs, list items, formulas per line, display and aligned blocks), so a presentation
     change made to both is the same change; otherwise why not, in a few words (work queue 0e, "Layout of a translation")."""
     src = _source_part(folder, part)
     if not src: return "no Finnish source"
+    if n := layout_warnings(folder): return f"check_layout.py passes this page with a warning ({n} known clipped formulas, docs/clipped-formulas/)"
     wt = WorkTree()
     for n in PARTS[part]:
         if not n.endswith((".md", ".json")): continue
