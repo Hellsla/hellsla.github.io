@@ -91,12 +91,12 @@ header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-
 header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
-/* Valikko (design audit 2026-11-10, P0-1): under 64rem (58rem until the Kuuntele ja katso link, 2026-11-17) the header's links no longer disappear one by one; they all give
+/* Valikko (design audit 2026-11-10, P0-1): under 72rem (58rem until the Kuuntele ja katso link, 2026-11-17) the header's links no longer disappear one by one; they all give
    way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
-   of the header is reachable on a phone. From 64rem the links show and the button is gone. The limit was 52rem until
+   of the header is reachable on a phone. From 72rem the links show and the button is gone. The limit was 52rem until
    Opettajalle joined the links (2026-11-11): the English header then needs 904 px to stay on one row. */
 .nav-menu{display:none;position:relative;margin:0}
-@media (max-width:63.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+@media (max-width:71.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
 /* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
    "English" beside the brand leave no room for it at 360 px */
 @media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -235,7 +235,7 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
   .mod-q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .plan-list{margin-top:60px}   /* the gap one row high, so the planned courses' rows stay level with the modules' (teacher 2026-11-04) */
 }
-@media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
+@media (min-width:700px) and (max-width:71.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
 /* Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, build.py study_guide): a wider column than the reading
    pages (the problem-solving map needs four cards side by side), text kept to the reading measure. Three parts under
    full-width rules like a lesson's stages. 1 four numbered steps on thin rules, two columns, each with the lesson's
