@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 76f108ca139d6b18
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 2c9f93d9d410c35d
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md task 1 d) — the unchanged line "Sovitetun suoran vakiotermi on noin…" now follows the last new paragraph without a blank line; it rendered as its own paragraph, but a blank line would make the structure explicit.
 
 ## Checked
-- Opened s1.png (fy1-s1 fi render): 'ramppi' label sits above the ramp points between the 0,32 m guide and the 0,4 s point, v-formula in the lower right clear of the data and the t = 2,0 s guide, axes legible; en/fi-easy use the same coordinates with shorter/equal-width labels (diff of foreignObject positions read). Model-answer wording diffs read.
+- Delta 8c (md-paragraphs), changed steps: 1 c) Mallivastaus (four paragraphs) and 1 d) Mallivastaus (three paragraphs plus the old tail).
+- Opened contact-1.png and FY1-sovella-page-390-6.png (390 px, solutions open; c and d in view): breaks render as even paragraph gaps inside the labelled block, no label detached, $...$ formulas and units intact, nothing clipped. Captures are current for this hash.
+- Not opened: other captures (outside the diff).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

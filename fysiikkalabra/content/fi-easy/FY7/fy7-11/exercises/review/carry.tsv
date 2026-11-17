@@ -18,3 +18,6 @@ date	reviewer	from	to	base	categories
 2026-11-15	science	5e6573a29a4c4bb8	257e985767a7a94b	-	translation-of-passed
 2026-11-16	science	a4596f25fe42cab1	b8ba260488bd61fc	-	translation-of-passed
 2026-11-16	pedagogy	d08eceb1247765e5	b8ba260488bd61fc	91518ffb68e7	reflow
+2026-11-17	science	d08eceb1247765e5	3bf28a11163bfe35	cabadc3e6179	caption-label,reflow
+2026-11-17	pedagogy	d08eceb1247765e5	3bf28a11163bfe35	cabadc3e6179	caption-label,reflow
+2026-11-17	visual	b8ba260488bd61fc	3bf28a11163bfe35	5b3ca4f81c77	caption-label

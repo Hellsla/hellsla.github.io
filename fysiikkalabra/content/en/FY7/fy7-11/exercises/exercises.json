@@ -183,7 +183,7 @@
       "unit": "°",
       "tolerance": 0.05,
       "data": {
-        "caption": "Refractive indices of the glasses (typical values, example data)",
+        "caption": "Refractive indices of the glasses (typical values)",
         "columns": [
           "Glass",
           "$n_\\text{r}\\,(656\\,\\text{nm})$",

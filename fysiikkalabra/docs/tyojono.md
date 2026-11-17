@@ -135,7 +135,7 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
 FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
-Varattu: claude/exercises-fy8-5 (fy8-5)
+Varattu: claude/exercises-fy8-6 (fy8-6)
 Havainto (koordinaattori 2026-11-15, fy8-2): kahdessa erässä peräkkäin ulkoasu on hylännyt ratkaisujen kaavaketjut,
 jotka eivät katkea 360 px:llä (`check_layout.py` ei havainnut niitä). Seuraavien erien kehittäjän pitää jakaa pitkät
 sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta, yksikkö- ja vertailuketjut omille riveilleen)
@@ -180,10 +180,9 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
-FY1 tehty (claude/fy1-kappalejako, #650): fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä. Avoinna FY1:stä: en fy1-1:n
-harjoitusten kolme vaihetta (kiviaskel 21 kertaluokkaa, sadepisarat, Auringon etäisyys), joissa kappalejako osuu samaan
-kohtaan kuin aiempi reflow, ja `reviews.py` ei luokittele yhdistelmää; sekä FY1:n Sovella ja esimerkkikoe (pitkiä
-kappaleita, mutta `carry-item` ei kanna `md-paragraphs`-luokkaa: vaatii yhteisen muutoksen reviews.py:hyn).
+FY1 tehty: fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä (#650); Sovella (fi, en, fi-easy), esimerkkikoe ja en
+fy1-1:n harjoitusten kolme askelta (claude/fy1-kappalejako-2, 8c-1:n #657 jälkeen). Jäljellä FY1:ssä vain numeroitu lista
+Sovellan mallivastauksessa "Mitkä tahansa neljä seuraavista", jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
 
 Opettaja 2026-11-16: laajennetaan myös FY9:ään ja FY10:een. Järjestys FY1 → FY2 → FY4 → FY5 → FY6 → FY7 → FY8 →
 FY3 loput → FY9 → FY10.
@@ -334,6 +333,13 @@ Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
 ## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
+
+**Tila 2026-11-17 (#658):** `caption-label` tunnistaa nyt myös muodot "…, esimerkkiaineisto", "Esimerkkiaineisto: …"
+(seuraava kirjain isoksi), "(…, esimerkkiaineisto)" ja "(keksitty esimerkkiaineisto[, ei mittaustulos])" sekä en
+"example data" vastaavasti (`reviews.caption_label_free`). Merkintä on poistettu FY1-, FY2-, FY6- ja FY7-otsikoista
+(fi, fi-easy, en). **Jäljellä FY4, FY5 ja FY8** (fy4-2, fy5-11, fy5-14, fy8-2, fy8-11; fi, fi-easy, en): niillä oli
+kurssi-PR:t kesken samoissa tiedostoissa, joten ne tehdään kurssi kerrallaan, kun luokka on mainissa: otsikot
+`caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]` (fi ensin, sitten fi-easy ja en).
 
 Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
 "…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n

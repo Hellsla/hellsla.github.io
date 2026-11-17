@@ -162,7 +162,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "md-paragraphs":  ("none",  "none", "delta"),   # a lesson or solution text cut into paragraphs or a list (blank lines, "- " markers), its words in the same order unchanged: the visual reviewer looks (work queue 8c, teacher 2026-11-13)    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
     "formula-names": ("none",  "none", "none"),    # formulas given the names of a docs/*/kaavanimet.tsv (```kaavat; FY9 units, FY1–FY8 lessons), nothing else changed (teacher 2026-11-12)
-    "caption-label":  ("none",  "none", "none"),    # the marker "(esimerkkiaineisto)" / "(example data)" taken out of table captions, every other character as it was (teacher 2026-11-15, "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)")
+    "caption-label":  ("none",  "none", "none"),    # the marker "esimerkkiaineisto" / "example data" taken out of table captions, every other character as it was (teacher 2026-11-15, "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)"; without parentheses too, 2026-11-16 "joo poistetaan")
     "mafy-symbols":   ("none",  "none", "none"),    # FY9 formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv; teacher 2026-11-12, "treenataan yo-kokeisiin")
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
@@ -186,7 +186,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
-       "caption-label": "the marker \"(esimerkkiaineisto)\" taken out of table captions, nothing else (teacher 2026-11-15)",
+       "caption-label": "the marker \"esimerkkiaineisto\" taken out of table captions, nothing else (teacher 2026-11-15, 2026-11-16)",
        "mafy-symbols": "formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv)",
        "formula-names": "formula names the teacher approved (docs/*/kaavanimet.tsv)",
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
@@ -1599,32 +1599,63 @@ def _changed(a, b):
     return [l for l in difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=0) if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))]
 
 
-CAPTION_LABEL = re.compile(r"\s*\((?:esimerkkiaineisto|example data(?: set)?)\)")
-CAPTION_LABEL_PLUS = re.compile(r"\s*\((?:esimerkkiaineisto|example data(?: set)?),\s*([^)]*)\)")   # "(esimerkkiaineisto, energiat NNDC NuDat 3)": the rest stays
+_LABEL = r"(?:[Ee]simerkkiaineisto|[Ee]xample data(?: set)?)"
+CAPTION_LABEL = re.compile(r"\s*\(" + _LABEL + r"\)")                       # "Taulukko (esimerkkiaineisto)"
+CAPTION_LABEL_PLUS = re.compile(r"\s*\(" + _LABEL + r",\s*([^)]*)\)")      # "(esimerkkiaineisto, energiat NNDC NuDat 3)": the rest stays
+CAPTION_LABEL_LAST = re.compile(r",\s*" + _LABEL + r"\)")                    # "(tyypillisiä arvoja, esimerkkiaineisto)": the rest stays
+CAPTION_LABEL_INVENTED = re.compile(r"\s*\((?:keksitty esimerkkiaineisto(?:, ei mittaustulos)?|an invented example data set(?:, not a measurement)?)\)")
+CAPTION_LABEL_TAIL = re.compile(r",\s*" + _LABEL + r"\s*$")                  # "Kärryn nopeus, esimerkkiaineisto" (teacher 2026-11-16)
+CAPTION_LABEL_HEAD = re.compile(r"^\s*" + _LABEL + r":\s*(\S)")              # "Esimerkkiaineisto: sama jännite …" → "Sama jännite …"
+
+
+def caption_label_free(c):
+    """One caption with the marker esimerkkiaineisto / example data taken out, every other character as it was: in
+    parentheses alone or with other words (teacher 2026-11-15), and since 2026-11-16 also "…, esimerkkiaineisto" at the
+    end and "Esimerkkiaineisto: …" at the start, whose next letter is then capitalised (fi, fi-easy, en)."""
+    c = CAPTION_LABEL_INVENTED.sub("", CAPTION_LABEL.sub("", CAPTION_LABEL_PLUS.sub(r" (\1)", c)))
+    c = CAPTION_LABEL_TAIL.sub("", CAPTION_LABEL_LAST.sub(")", c))
+    return CAPTION_LABEL_HEAD.sub(lambda m: m.group(1).upper(), c)
 
 
 def _caption_free(o):
     if isinstance(o, dict):
-        return {k: (CAPTION_LABEL.sub("", CAPTION_LABEL_PLUS.sub(r" (\1)", v)) if k == "caption" and isinstance(v, str) else _caption_free(v)) for k, v in o.items()}
+        return {k: (caption_label_free(v) if k == "caption" and isinstance(v, str) else _caption_free(v)) for k, v in o.items()}
     if isinstance(o, list): return [_caption_free(x) for x in o]
     return o
 
 
 def caption_free(text):
-    """A JSON text as `_view` shows it with the marker "(esimerkkiaineisto)" / "(example data)" taken out of every
-    "caption" value (teacher 2026-11-15; the category "caption-label"), the rest of a caption's parentheses kept; the
-    text itself when it is not JSON. Only the key "caption" is touched: a task's own words and the source line stay."""
+    """A JSON text as `_view` shows it with the marker esimerkkiaineisto / example data taken out of every "caption"
+    value (`caption_label_free`; teacher 2026-11-15 and 2026-11-16; the category "caption-label"); the text itself when
+    it is not JSON. Only the key "caption" is touched: a task's own words and the source line stay."""
     try: return json.dumps(_caption_free(json.loads(text)), indent=1, ensure_ascii=False)
     except (TypeError, json.JSONDecodeError): return text
 
 
+_CAPTION_LINE = re.compile(r'^(\s*"caption": )(".*")(,?)$')
+
+
+def _caption_value(x):
+    """(the line around it, the caption) of a "caption" line of a JSON text, None for any other line."""
+    m = _CAPTION_LINE.match(x)
+    if not m: return None
+    try: v = json.loads(m.group(2))
+    except json.JSONDecodeError: return None
+    return ((m.group(1), m.group(3)), v) if isinstance(v, str) else None
+
+
+def _caption_only_lost_label(x, y):
+    a, b = _caption_value(x), _caption_value(y)
+    return bool(a and b) and a[0] == b[0] and a[1] != b[1] and caption_label_free(a[1]) == b[1]
+
+
 def caption_removed(a, b):
     """`a` (a JSON text as `_view` shows it) with every "caption" line whose only difference from `b`'s is that the marker
-    "(esimerkkiaineisto)" / "(example data)" is gone replaced by `b`'s line; `a` itself when there is none. Line for
-    line, so a caption that also changed a word, or gained a marker, stays a change."""
+    esimerkkiaineisto / example data is gone replaced by `b`'s line; `a` itself when there is none. Line for line, so a
+    caption that also changed a word, or gained a marker, stays a change."""
     la, lb = a.split("\n"), b.split("\n")
     if len(la) != len(lb): return a        # a key added or removed: not a pure caption change (the rest is classified as usual)
-    out = [y if '"caption":' in x and x != y and CAPTION_LABEL.sub("", CAPTION_LABEL_PLUS.sub(r" (\1)", x)) == y else x for x, y in zip(la, lb)]
+    out = [y if '"caption":' in x and x != y and _caption_only_lost_label(x, y) else x for x, y in zip(la, lb)]
     return "\n".join(out)
 
 
@@ -1667,7 +1698,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
         if not binary and a and b and rel.endswith(".json") and not rel.startswith("figure:"):   # the marker "(esimerkkiaineisto)" taken out of captions (teacher 2026-11-15)
             a2 = caption_removed(a, b)                 # the old text with each caption line that only lost the marker as the new text has it
             if a2 != a:
-                cats.add("caption-label"); diff.append(f"--- {rel}: the marker (esimerkkiaineisto) taken out of captions, the teacher's approval 2026-11-15")
+                cats.add("caption-label"); diff.append(f"--- {rel}: the marker esimerkkiaineisto taken out of captions, the teacher's approval 2026-11-15 and 2026-11-16")
                 a = ra = a2                            # what else changed is classified as usual
                 if a == b: continue
         if not binary and a and b and rel.endswith((".md", ".json")) and not rel.startswith("figure:"):   # calculation chains re-broken into rows (teacher 2026-11-15)

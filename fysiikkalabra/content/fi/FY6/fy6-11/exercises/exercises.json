@@ -170,7 +170,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: testivarauksen voima eri levyjen etäisyyksillä",
+        "caption": "Testivarauksen voima eri levyjen etäisyyksillä",
         "columns": [
           "$d\\,(\\text{cm})$",
           "$F\\,(\\mu\\text{N})$"
@@ -228,7 +228,7 @@
       "unit": "V/m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: testivarauksen voima levyjen suuntaisella suoralla",
+        "caption": "Testivarauksen voima levyjen suuntaisella suoralla",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F\\,(\\mu\\text{N})$"
@@ -336,7 +336,7 @@
       "unit": "C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkiaineisto: öljypisaroiden leijumisjännitteet",
+        "caption": "Öljypisaroiden leijumisjännitteet",
         "columns": [
           "$\\text{Pisara}$",
           "$m\\,(10^{-15}\\,\\text{kg})$",

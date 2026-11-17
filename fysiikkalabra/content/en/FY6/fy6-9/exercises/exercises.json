@@ -188,7 +188,7 @@
       "unit": "Wh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Terminal voltage of a lithium cell during discharge, example data",
+        "caption": "Terminal voltage of a lithium cell during discharge",
         "columns": [
           "$t\\,(\\text{h})$",
           "$U\\,(\\text{V})$"
@@ -246,7 +246,7 @@
       "unit": "Ω",
       "tolerance": 0.05,
       "data": {
-        "caption": "Charging current as a function of the voltage of the charger, example data",
+        "caption": "Charging current as a function of the voltage of the charger",
         "columns": [
           "$U_\\text{ch}\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -335,7 +335,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Discharge of a lithium cell with two currents, example data",
+        "caption": "Discharge of a lithium cell with two currents",
         "columns": [
           "$I\\,(\\text{A})$",
           "$t\\,(\\text{h})$",
@@ -367,7 +367,7 @@
       "unit": "h",
       "tolerance": 0.02,
       "data": {
-        "caption": "Source voltage of a car battery as a function of the charge level, example data",
+        "caption": "Source voltage of a car battery as a function of the charge level",
         "columns": [
           "Charge level $(\\%)$",
           "$E\\,(\\text{V})$"
