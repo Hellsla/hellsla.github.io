@@ -1,12 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 817b02c47d12d667
+VERDICT: PASS
+CONTENT-HASH: eeaccc7c40351a6b
 
 ## Blocking
-- Kertaa feedback of the correct option reads `Kaavasta $P = UI I = P : U = ...$`: two formulas run together, so `P = UI I` is nonsense to a student. Write 'Kaavasta $P = UI$ saadaan $I = P : U = ...$'.
 
 ## Polish
-- Space missing before `(luku` after the formula.
-- Distractor 43 A explains subtraction well; fine.
+- Palautteessa "luku *Sähköteho ja vastuksen lämpeneminen*" ja kolme virheellistä vaihtoehtoa (kertolasku, käänteinen osamäärä, vähennys) ovat aitoja virheitä; ei muutettavaa. Valinnainen lisäys: oikean vaihtoehdon palautteen voisi sitoa suoraan tunnin alun ajovaloon, jotta kytkös himmenemiseen näkyy.
 
 ## Checked
-batch delta review: retrieval headlight 55 W/12 V (4,6 A; 660, 0,22, 43 verified), split paragraph.
+batch delta review: kertauskysymys vaihdettu jännitelaista sähkötehoon; ennakkotieto (P = UI) on aiempi luku, vaihtoehdot ovat virhepohjaisia ja palaute korjaa virheen nimeämällä sen, luvut täsmäävät answers.py:n kanssa (55/12 = 4,58 A; 660; 0,22; 43); johdatus avaa tunnin ajovalo-aiheeseen. Kuvat eivät muuttuneet.

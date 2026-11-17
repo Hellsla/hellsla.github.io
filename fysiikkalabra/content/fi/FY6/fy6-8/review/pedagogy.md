@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 6204a5cdeb5e6310
+CONTENT-HASH: 62bd0fd864d5e28c
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: headlight P=UI retrieval (feedback formula shown in file reads correctly); Finnish clear, feedback names each error, links to the lesson's topic; split Tunnetut ja kysytty paragraphs consistent.
+batch delta review: one feedback sentence in inquiry.json (prior-knowledge check, P = UI) now reads "Kaavasta $P = UI$ saadaan ... (luku ...)": grammatical, spaced correctly, same numbers and units, consistent with the rest of the lesson. Nothing else changed.
