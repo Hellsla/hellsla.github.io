@@ -38,7 +38,7 @@
         },
         {
           "text": "$6.4\\cdot10^{-4}\\,\\text{m}^3$",
-          "feedback": "You used the conversion for area, $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. In a volume the length is raised to the third power, so $1\\,\\text{cm}^3 = (10^{-2})^{3}\\,\\text{m}^3 = 10^{-6}\\,\\text{m}^3$."
+          "feedback": "You used the conversion for area, $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$. In a volume the length is raised to the third power, so $1\\,\\text{cm}^3 = 10^{-6}\\,\\text{m}^3$."
         },
         {
           "text": "$0.64\\,\\text{m}^3$",
