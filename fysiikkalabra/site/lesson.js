@@ -154,9 +154,21 @@
      Without JavaScript the bar is a plain list of links. */
   const toc = document.querySelector('nav.toc');
   if (toc) {
-    // the height of the bar for a simulation picture that sticks under it on a phone (site.css .sim-stick, work queue 10 PR 4 pilot)
-    if (document.querySelector('.sim-stick') && 'ResizeObserver' in window)
-      new ResizeObserver(() => document.documentElement.style.setProperty('--toc-h', toc.getBoundingClientRect().height + 'px')).observe(toc);
+    // A simulation's picture sticks under the bar on a phone (site.css .sim-stick, work queue 10 PR 4): the bar's height
+    // as --toc-h, and class sim-fits on #sim only while the picture takes at most STICK_SHARE of the window under the
+    // bar, so a tall picture (fy7-4) stays in the flow and never covers the controls (inquiry.SIM_STICK_SHARE).
+    const stickSim = document.querySelector('.sim-stick #sim');
+    if (stickSim && 'ResizeObserver' in window) {
+      const STICK_SHARE = 0.45;
+      const fit = () => {
+        const bar = toc.getBoundingClientRect().height, box = stickSim.querySelector('#sim-root > .sim-canvas');
+        const c = box && (box.querySelector('canvas') || box);   // the drawing itself: the sticky box's own padding must not tip it over
+        document.documentElement.style.setProperty('--toc-h', bar + 'px');
+        stickSim.classList.toggle('sim-fits', !!c && c.offsetHeight > 0 && c.offsetHeight <= STICK_SHARE * (window.innerHeight - bar));
+      };
+      const ro = new ResizeObserver(fit); ro.observe(toc); ro.observe(stickSim);
+      window.addEventListener('resize', fit);
+    }
     const links = [...toc.querySelectorAll('a[href^="#"]')];
     const pairs = links.map((a) => [a, document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)))]).filter((p) => p[1]);
     const targets = pairs.map((p) => p[1]);
