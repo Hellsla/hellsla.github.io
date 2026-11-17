@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8a46fba96fbecc22
+CONTENT-HASH: 2d9ffef79bb88ca8
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
+(none)
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Round 1, delta (md-paragraphs: words unchanged). No 360 px captures exist; 390 px used.
+- 390 px: fy3-7-stage-sovella-390-1.png (stages 1-3: knowns, remark, assumption as separate short paragraphs, derivation box aligned), fy3-7-example-390-2.png (stages 5-7: aligned rows with fractions and units, Järkevyys in short paragraphs around the Δm chain; nothing clipped).
+- 1280 px with solutions open: fy3-7-open-tarkista-1280-1.png (exit-ticket answers, feedback boxes, readable), fy3-7-open-exercises-L2-1280-1.png (8-10: Annettu to Vastaus blocks, conversions in their own box, t chain aligned).
+- Layout intact; breaks at meaningful boundaries.
+- Hash unchanged at the end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

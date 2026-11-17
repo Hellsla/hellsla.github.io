@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b611049cf9b8ec67
+CONTENT-HASH: 8299e9bd9efe899a
+Mode: delta
+Round: 1
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] Worked example stage 7 (fy3-7-example-390-2.png) is a long paragraph (about 60 words) before the Δm block; could be split at "Siksi oletus", optional.
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Diff: paragraph breaks in lesson.md, words unchanged. No 360 px captures exist; phone judged at 390 px.
+- 390 px: fy3-7-example-390-2.png (stages 4-7: fractions in r and Δm chains aligned, result, check and follow-up separated; nothing clipped), fy3-7-stage-sovella-390-2.png (same example in Esimerkit; includes the closed optional Esimerkki 2 and 3 boxes).
+- 1280 px: fy3-7-open-tarkista-1280-1.png (Vastaus open, Q = sm and Q = rm in maths, feedback box legible), fy3-7-open-exercises-1280-3.png (task 8-3 solution rows, Järkevyys with two blocks).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

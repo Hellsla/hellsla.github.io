@@ -667,6 +667,18 @@ caption-label mielivaltaisen yhdistelmän myös samalla rivillä (ennen: lukumuu
 kaavat yhä tiukasti. Uusi `report_problems` / `reviews.py check-report <id> [--lang] [--exercises]` (myös `verify`): vapaamuotoinen
 SCOPE-rivi ja kielen raportissa suomenkielisen lähteen hash hylätään ennen hyväksymistä. Testit `test_reviews.py` "0c".
 
+## [loki] 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali (2026-11-17, draft-PR, sääntöteksti odottaa opettajan hyväksyntää)
+`reviews.py`: luokka `fi-layout` (ei RULES-luokka, kuten `translation-of-passed`). Kielineutraali = muutos on vain esitystapaluokkaa
+(`LAYOUT_CATS`: reflow, md-paragraphs/paragraphs, caption-label, mikä tahansa yhdistelmä) JA käännöksen `layout_skeleton` (rivi kerrallaan:
+listakohta vai ei, kaavojen määrä, `$$`- ja aligned-lohkojen määrä, jokaisessa tekstitiedostossa) on sama kuin suomenkielisen tekstin
+(`source_layout_differs`). Silloin käännöksen ulkoasukatselmoija on `none` (carry-rivi, `from` = käännöksen oma läpäisty hash), kun suomenkielisellä
+osalla on aito ulkoasun PASS nykyiselle hashille (`source_visual_ok`; baseline-rivi ei kelpaa). `status` laskee carryn vain niin kauan kuin suomalainen PASS
+on voimassa; `verify` johtaa ehdot uudelleen. Ei kielineutraalia: sana, luku, merkki, yksikkö, kaava, kuva, otsikko-/label-teksti muuttuu; kappale
+jaettu eri kohdasta kuin suomeksi; käännöksen oma ulkoasun FAIL. Varoitusehto (koordinaattori välitti 2026-11-17 klo 21.05 opettajan hyväksynnän "approve 0e" ja lisäehdon): jos `check_layout.py` antaa en- tai fi-easy-sivulla varoituksen (sen ainoa hyväksytty huomautus on tunnettu leikkautuva kaava, `docs/clipped-formulas/`), kielellä tehdään oma ulkoasukatselmointi, ei carrya (`layout_warnings`). Säästö pienenee: `docs/clipped-formulas/`-listassa on 155 en- ja 125 fi-easy-riviä, ja niiden sivut jäävät carryn ulkopuolelle (oma ulkoasukatselmointi), joten edellä oleva säästöarvio on yläraja. Opettaja hyväksyi 0e:n koordinaattorille suoraan 2026-11-17 klo 21.05 ("approve 0e"), koordinaattori vahvisti sen erikseen. Ei kata kohteita (`carry-item`). Testit `test_reviews.py` "0e".
+Säästöarvio (FY6 #662, 24 ulkoasusarjaa, kolme kieltä): ennen 72 ulkoasukatselmointia (fi, en, fi-easy), nyt 24 suomeksi + 48 carryä. Mitattu keskiarvo
+(`usage.tsv`, 94 ulkoasun delta-katselmointia): 538 k tokenia ja 0,30 $ per katselmointi, joten 48 katselmointia ≈ 26 M tokenia ≈ 14 $ ja 48 vuoroa. Ylärajaa:
+säästö toteutuu vain käännöksille, joiden kappalejako vastaa suomea; muut katselmoidaan kuten ennen.
+
 ## 8p. `reviews.py`: kaavan sanat ja uusi tehtävä (2026-11-17, PR #684)
 (a) `_tr_text`: kaavan kaikki `\text{}`/`\mathrm{}`-sanat (yli 3 merkkiä) normalisoidaan paikanpitäjäksi (`FORMULA_WORD`); enintään 3 merkin sanat
 (N, kg, min, MeV, vrk) pysyvät tiukkoina, jotta yksikön muutos (vrk → s) näkyy yhä; luvut, operaattorit ja symbolit tiukkoina. (b) Uuden tehtävän oma `"id"`/`"level"`-rivi
@@ -685,5 +697,11 @@ Opit: pedagogiikka hylkäsi L3-07:n rajan 1/20 (sama lasku kuin luvun esimerkiss
 ## §6 fy8-13 (PR #688, 2026-11-17)
 Kuvatehtävät fy8-13-L2-10 ja fy8-13-L3-06 (molemmat `fy8-13/vaimennus`), fi/en/fi-easy. Taulukkotehtävä (luku 13 kuuluu lukuihin 4/7/10/13/16) jäi pois: `docs/mafy-arvot.tsv`:ssä ei ole luvulle VERIFIED-riviä, eikä säteilyannoksen taulukkoa löytynyt mafytaulukot.fi:stä; lisää rivi, kun taulukon URL on tiedossa. Opit: (1) en- ja fi-easy-tiede ei siirry carryllä, koska `translation_differs` löytää vanhoista tehtävistä eron (en fy8-13-L2-03: alaindeksi `ka`/`avg`; fi-easy L2-09: ylimääräinen `$\text{mSv}$`-kaava tekstissä). (2) Järkevyys-rivin kuperuusperustelu meni väärin kahdesti (kupera käyrä on jänteen alapuolella); kirjoita "suora interpolointi antaa X, kupera käyrä on sen alapuolella". (3) Tiedekatselmoinnin Polish: L2-10:n d½ 5,0 cm vs. luvun noin 4 cm (Cs-137); fi-easy: "suora interpolointi", "kupera", "janan" vaikeita. Kulutus ylitti katon (konteksteja yht. noin 795 k, 168 % vertailusta; kolme kierrosta).
 
+## §6 fy8-14 (PR #692, 2026-11-17)
+Kuvatehtävät fy8-14-L2-08 (`fy8-14/kontrasti-points`, vastaavan luukerroksen paksuus) ja fy8-14-L2-09 (`fy8-14/fdg`, FDG-ruiskun aktiivisuus), fi/en/fi-easy. Taulukkotehtävä jäi pois: `docs/mafy-arvot.tsv`:ssä ei ole FY8-riviä. Opit: (1) en-tiede ei siirtynyt carryllä: `translation_differs` löytää eron vanhasta valintatehtävästä fy8-14-L1-06 (`answer` on kielikohtainen vastausteksti); tarkista tarkistuksen käsittely, sitten carry. (2) Polish, ei korjattu: L2-08:n toleranssi 0,06 ja L2-09:n 0,04 liian tiukat luvun lukutarkkuuteen nähden (ehdotus 0,08–0,09 ja 0,05–0,06); L2-08:n lause "luun voi korvata pehmytkudoskerroksella" kääntää osan c suunnan; L2-09:n merkitsevät numerot ja halkeamisreitti 480→240→120→60 ratkaisuun; `(esimerkkiaineisto)` vain L2-09:ssä; kuvissa tiheämpi akselien merkintä, luu-merkintä ja y-akselin 0.
+
 ## §5h mathlayout: join_wide ja with_punct (PR #691, 2026-11-17)
 `join_wide` ei liittänyt relaatiorivejä jatkoriviin jo mainissa (5g); jäljellä oli `&/`- ja `&\div`-rivi, jota ei tunnistettu jatkoriviksi (fy3-10: `/ (…) ≈ 0,083` liitettiin leveällä näytöllä). `CONT_OP` sai `/` ja `\div`. `with_punct` jättää loppu-`&`:n ja `\\`:n viimeiseksi, välimerkki viimeisen lausekkeen perään. Testit `test_mathlayout.py` (5h). `site/`: vain fy3-10 fi/en/fi-easy muuttui; check_layout 1280 ja 360 px ok; `reviews.py verify` ok, yksikään raportti ei vanhentunut (renderöinti ei kuulu hashiin).
+
+## §0i Kirjavinkit: kuusi uutta kirjaa (opettaja 2026-11-17)
+`content/fi/lukuvinkit.json` 14 → 20 kirjaa (Ehrlich, Press, Krauss, Ferguson, McEvoy–Zarate, Ruelle); järjestys helpoimmasta vaativimpaan; uusi `content/fi-easy/lukuvinkit.json` (selkoversio); en päivitetty. Tieteenhistoriallinen merkintä kirjan tekstissä (Tompkins, Ajan lyhyt historia, Thirty Years), ei uutta avainta. Lainamerkinnät ennallaan, uudet `false`. Uusien kirjojen linkit ovat Finnan hakulinkkejä (`Search/Results?lookfor=…&type=Title`), koska Finnan tietuetunnuksia ei voitu tarkistaa (pilviympäristön verkko esti `finna.fi`); opettaja korvaa ne tietuelinkeillä tarkistettuaan.

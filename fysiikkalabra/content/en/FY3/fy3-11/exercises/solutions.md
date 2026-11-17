@@ -72,12 +72,20 @@
 ## fy3-11-L2-03
 **Given:** heat transferred to the air $Q = 700.0\,\text{J}$, the pressure stays $p = 125\,\text{kPa}$, increase in volume $\Delta V = 1.60\,\textsf{l}$
 **Find:** the change in internal energy $\Delta U$ in joules with its sign
-**Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q + W$, where $W$ is the work done on the air. The piston moves lightly, so the pressure stays constant. The air expands and does the work $p\,\Delta V$, so the work done on it is $W = -p\,\Delta V$.
+**Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q + W$, where $W$ is the work done on the air.
+
+The piston moves lightly, so the pressure stays constant. The air expands and does the work $p\,\Delta V$, so the work done on it is $W = -p\,\Delta V$.
 **Formula:** $W = -p\,\Delta V$, so $\Delta U = Q + W = Q - p\,\Delta V$
 **Conversions:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ and $1.60\,\textsf{l} = 0.00160\,\text{m}^3$, so $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Substitution:** $$\begin{aligned} \Delta U &= 700.0\,\text{J} \\ &- 125\,000\,\text{Pa} \cdot 0.00160\,\text{m}^3 \\ &= 700.0\,\text{J} - 200\,\text{J} \\ &= 500\,\text{J} \end{aligned}$$
-**Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures. The limiting value is the work done by the air, $p\,\Delta V = 200\,\text{J}$, which has three figures and is known to the nearest joule, because the pressure $125\,\text{kPa}$ and the change in volume $1.60\,\textsf{l}$ are given with three figures. In the difference $700.0 - 200$ the less precise number decides the decimals, so the result is known to the nearest joule.
-**Reasonableness:** Of the heat, $200\,\text{J}$ is used in pushing the piston and the remaining $500\,\text{J}$ raises the temperature of the air, so $\Delta U > 0$ and $\Delta U < Q$. If the work were added to the heat, the result would be $900\,\text{J}$, more than the heat that entered the air, although the air gives up energy as it pushes the piston. So the sign is correct.
+**Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures.
+
+The limiting value is the work done by the air, $p\,\Delta V = 200\,\text{J}$, which has three figures and is known to the nearest joule, because the pressure $125\,\text{kPa}$ and the change in volume $1.60\,\textsf{l}$ are given with three figures.
+
+In the difference $700.0 - 200$ the less precise number decides the decimals, so the result is known to the nearest joule.
+**Reasonableness:** Of the heat, $200\,\text{J}$ is used in pushing the piston and the remaining $500\,\text{J}$ raises the temperature of the air, so $\Delta U > 0$ and $\Delta U < Q$.
+
+If the work were added to the heat, the result would be $900\,\text{J}$, more than the heat that entered the air, although the air gives up energy as it pushes the piston. So the sign is correct.
 
 ## fy3-11-L2-04
 **Given:** mechanical power $P_\text{a} = 480\,\text{kW}$, efficiency $\eta = 40.0\,\% = 0.400$
@@ -97,16 +105,26 @@
 **Conversions:** The efficiencies are $40.0\,\% = 0.400$ and $90.0\,\% = 0.900$. All powers are in megawatts, so no other conversion is needed.
 **Substitution:** $$\begin{aligned} \Delta P &= \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} \\ &- 320\,\text{MW} \\ &= 240\,\text{MW} + 200\,\text{MW} \\ &- 320\,\text{MW} \\ &= 120\,\text{MW} \end{aligned}$$
 **Answer:** $120\,\text{MW}$, two significant figures. The limiting value is the electric power $96\,\text{MW}$ (two figures): it determines the fuel power of the condensing plant, $240\,\text{MW}$, to the nearest ten megawatts, and the difference $440\,\text{MW} - 320\,\text{MW}$ keeps this precision. The efficiencies $40.0\,\%$ and $90.0\,\%$ have three figures and do not limit the precision.
-**Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases. A condensing power plant turns heat into work, and then part of the heat must always be given up to a colder environment, usually the sea.
+**Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases.
+
+A condensing power plant turns heat into work, and then part of the heat must always be given up to a colder environment, usually the sea.
 
 ## fy3-11-L3-02
 **Given:** yearly heat demand $Q_1 = 16.0\,\text{MWh}$, coefficient of performance of the heat pump $\varepsilon = 2.50$, current heating is direct electric heating
 **Find:** the electrical energy saved $\Delta E$ and the heat taken from the outdoor air $Q_2$ in megawatt-hours, and a justification for why the pump is not a perpetual motion machine
-**Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses. In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat. Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
+**Principle:** The coefficient of performance tells how many times as much heat the pump gives out as the electricity it uses.
+
+In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat.
+
+Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
 **Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$. The saving is $\Delta E = Q_1 - W$ and from conservation of energy $Q_2 = Q_1 - W$, so $\Delta E = Q_2 = Q_1 - \dfrac{Q_1}{\varepsilon}$.
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
 **Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
-**Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures. The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used. The result is the product $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
+**Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures.
+
+The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used.
+
+The result is the product $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
 **Reasonableness:** The electricity saved is exactly the heat brought in from the outdoor air, and the pump uses only $\tfrac{1}{2.50} = 40\,\%$ of the electricity. Checking the balance: the heat entering the house is $$\begin{aligned} &9.60\,\text{MWh} + 6.40\,\text{MWh} \\ &= 16.0\,\text{MWh} \end{aligned}$$. The pump is not a perpetual motion machine, because it does not create energy but uses electricity to transfer heat from cold to warm.
 
 ## fy3-11-L3-03
@@ -120,17 +138,27 @@
 $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12.04\,\text{kW} \end{aligned}$$
 
 **Answer:** $12.0\,\text{kW}$, three significant figures. All the values ($6.00\,\textsf{l}$, $0.750\,\text{kg/l}$, $43.0\,\text{MJ/kg}$, $28.0\,\%$ and $80.0\,\text{km/h}$) are given with three figures; the distance $100\,\text{km}$ is the reference distance for consumption and does not limit the precision.
-**Reasonableness:** The fuel power is $\tfrac{1.935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, so $31\,\text{kW}$ leaves as waste heat through the exhaust gases and the radiator. The petrol used is $54\,\text{kWh}$ of energy, and the work is $28\,\%$ of that, $15\,\text{kWh}$. An electric car needs about $\tfrac{15\,\text{kWh}}{0.90} \approx 17\,\text{kWh}$ from the battery to do the same work, because its motor turns electricity into work with an efficiency of $90\,\%$ and no heat has to be turned into work.
+**Reasonableness:** The fuel power is $\tfrac{1.935 \cdot 10^8\,\text{J}}{4500\,\text{s}} = 43\,\text{kW}$, so $31\,\text{kW}$ leaves as waste heat through the exhaust gases and the radiator. The petrol used is $54\,\text{kWh}$ of energy, and the work is $28\,\%$ of that, $15\,\text{kWh}$.
+
+An electric car needs about $\tfrac{15\,\text{kWh}}{0.90} \approx 17\,\text{kWh}$ from the battery to do the same work, because its motor turns electricity into work with an efficiency of $90\,\%$ and no heat has to be turned into work.
 
 ## fy3-11-L1-06
 **Find:** how the work done by a gas expanding at constant pressure can be seen in the $(V, p)$ coordinate system.
 **Principle:** At constant pressure the work done by the gas is $W = p\,\Delta V$. In the coordinate system the pressure is the height of the horizontal segment and the change in volume $\Delta V$ is its length, that is, its width, so the product is the area of the rectangle between the segment and the volume axis.
-**Model answer:** The work is the area of the rectangle under the segment, because its height is the pressure and its width is the change in volume. The height alone or the length alone is not the work; to get the work you need both the pressure and the change in volume. The work is not zero either, even though the pressure does not change: the piston moves when the volume grows, and the force does work. The unit $\text{Pa} \cdot \text{m}^3$ is the joule.
+**Model answer:** The work is the area of the rectangle under the segment, because its height is the pressure and its width is the change in volume.
+
+The height alone or the length alone is not the work; to get the work you need both the pressure and the change in volume.
+
+The work is not zero either, even though the pressure does not change: the piston moves when the volume grows, and the force does work. The unit $\text{Pa} \cdot \text{m}^3$ is the joule.
 
 ## fy3-11-L1-07
 **Find:** why the heat that a heat pump gives out indoors can be greater than the electrical energy it uses without breaking the conservation of energy.
 **Principle:** A heat pump uses electricity to transfer heat from the colder outdoor air to the warmer indoor air. Energy is conserved, so the heat given out indoors is the sum of the heat taken from outdoors and the electrical energy used by the pump: $Q_1 = Q_2 + W$.
-**Model answer:** Part of the heat given out indoors has been taken from the outdoor air, so the energy going indoors is the sum of the heat from the outdoor air and the electrical energy. The pump does not produce energy but transfers it, and the outdoor air cools a little. The coefficient of performance $\varepsilon = Q_1/W$ can therefore be over 1, although the efficiency cannot exceed $100\,\%$. Electricity and heat are both energy, so they can be compared with each other.
+**Model answer:** Part of the heat given out indoors has been taken from the outdoor air, so the energy going indoors is the sum of the heat from the outdoor air and the electrical energy.
+
+The pump does not produce energy but transfers it, and the outdoor air cools a little. The coefficient of performance $\varepsilon = Q_1/W$ can therefore be over 1, although the efficiency cannot exceed $100\,\%$.
+
+Electricity and heat are both energy, so they can be compared with each other.
 
 ## fy3-11-L1-08
 **Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_1 = 3.90\,\text{kW}$
@@ -158,13 +186,19 @@ P_1 &= 4.444 \cdot 10^{-3}\,\tfrac{\text{kg}}{\text{s}} \cdot 43 \cdot 10^6\,\tf
 \end{aligned}
 ```
 For the other loads in the same way: $20.0\,\text{kW}$ gives $21.2\,\%$, $40.0\,\text{kW}$ gives $28.9\,\%$ and $80.0\,\text{kW}$ gives $29.8\,\%$.
-**Answer:** The greatest efficiency is $31.4\,\%$ at the load $60.0\,\text{kW}$, three significant figures. The heat of combustion $43\,\text{MJ/kg}$ is given with two figures, so the result is really known to two figures ($31\,\%$); the third figure is given so that the loads can be compared with each other and the rounding does not take the answer outside the accepted interval.
+**Answer:** The greatest efficiency is $31.4\,\%$ at the load $60.0\,\text{kW}$, three significant figures.
+
+The heat of combustion $43\,\text{MJ/kg}$ is given with two figures, so the result is really known to two figures ($31\,\%$); the third figure is given so that the loads can be compared with each other and the rounding does not take the answer outside the accepted interval.
 **Reasonableness:** The efficiency is below $100\,\%$ and in the range of $20$–$40\,\%$ typical of diesel engines. It grows with the load and decreases again at the greatest load, so the maximum is in the middle. Estimate: $\tfrac{60}{16 \cdot 43 / 3.6} = \tfrac{60}{191} \approx 0.31$.
 
 ## fy3-11-L2-06
 **Find:** what is wrong in the student's claim about the efficiency of a heat engine.
 **Principle:** A heat engine takes heat $Q_1$ from a hot source, does work $W$ and gives out heat $Q_2$ to a colder environment: $W = Q_1 - Q_2$. A piston engine can repeat its work only if the gas is cooled before the piston is returned, and in the cooling heat is transferred to the colder surroundings. So $Q_2 > 0$ and $\eta = W/Q_1 < 100\,\%$.
-**Model answer:** The claim is wrong, because the engine can repeat its work only by cooling the gas, and therefore part of the heat must always be given out to the colder surroundings. Energy is indeed conserved, but that does not mean that all the heat could become work: part of the heat is transferred to the surroundings in the cooling. Removing friction improves the efficiency, but the limit does not go away. The size of the engine or the heat of combustion of the fuel does not change this limit.
+**Model answer:** The claim is wrong, because the engine can repeat its work only by cooling the gas, and therefore part of the heat must always be given out to the colder surroundings.
+
+Energy is indeed conserved, but that does not mean that all the heat could become work: part of the heat is transferred to the surroundings in the cooling. Removing friction improves the efficiency, but the limit does not go away.
+
+The size of the engine or the heat of combustion of the fuel does not change this limit.
 
 ## fy3-11-L2-07
 **Given:** electrical energies of the four days in the table $W$: $2.1$, $3.0$, $4.2$ and $3.6\,\text{kWh}$, and the heats given out indoors $Q_1$: $6.4$, $8.1$, $10.0$ and $9.3\,\text{kWh}$
@@ -180,12 +214,18 @@ Q_2 &= 33.8\,\text{kWh} - 12.9\,\text{kWh} \\
 \end{aligned}
 ```
 **Answer:** $20.9\,\text{kWh}$, three significant figures, because the energies are given to a tenth and the difference is known to that precision.
-**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $$\begin{aligned} &20.9\,\text{kWh} + 12.9\,\text{kWh} \\ &= 33.8\,\text{kWh} \end{aligned}$$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
+**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $$\begin{aligned} &20.9\,\text{kWh} + 12.9\,\text{kWh} \\ &= 33.8\,\text{kWh} \end{aligned}$$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them.
+
+The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
 
 ## fy3-11-L3-04
 **Given:** monthly heat demands $Q$ and coefficients of performance $\varepsilon$ from the table: November $1.8\,\text{MWh}$ and $3.4$; December $2.6\,\text{MWh}$ and $2.9$; January $4.0\,\text{MWh}$ and $2.4$; February $3.1\,\text{MWh}$ and $2.6$; March $2.2\,\text{MWh}$ and $3.1$
 **Find:** a) the monthly electrical energies and their sum, b) the coefficient of performance of the season $\varepsilon_\text{season}$ (for the answer box), c) why the average is not used, and the saving of electricity compared with direct electric heating
-**Principle:** The coefficient of performance is $\varepsilon = Q_1/W$, and here the heat given out indoors is the heat demand, $Q_1 = Q$, so the electrical energy of each month is $W = Q/\varepsilon$. The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season. The electricity use of direct electric heating is equal to the heat demand.
+**Principle:** The coefficient of performance is $\varepsilon = Q_1/W$, and here the heat given out indoors is the heat demand, $Q_1 = Q$, so the electrical energy of each month is $W = Q/\varepsilon$.
+
+The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season.
+
+The electricity use of direct electric heating is equal to the heat demand.
 **Formula:** $W = \dfrac{Q}{\varepsilon}$ and $\varepsilon_\text{season} = \dfrac{\sum Q}{\sum W}$
 **Conversions:** All the energies are in megawatt-hours, so no conversions are needed. The coefficient of performance has no unit.
 **Substitution:** a) Month by month:
@@ -209,12 +249,26 @@ b) The coefficient of performance of the season:
 ```
 c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving is $$\begin{aligned} &13.7\,\text{MWh} - 4.995\,\text{MWh} \\ &= 8.7\,\text{MWh} \end{aligned}$$.
 **Answer:** b) $\varepsilon_\text{season} = 2.74$, three significant figures. The initial values are given with two figures, so the result is really known to two figures ($2.7$), and the third figure is given so that the rounding does not move the answer outside the accepted interval. This number goes in the answer box.
-**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance. The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high. Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest. Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average. Energy balance: $$\begin{aligned} &4.995\,\text{MWh} + 8.7\,\text{MWh} \\ &= 13.7\,\text{MWh} \end{aligned}$$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand. The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
+**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance.
+
+The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high.
+
+Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest.
+
+Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average.
+
+Energy balance: $$\begin{aligned} &4.995\,\text{MWh} + 8.7\,\text{MWh} \\ &= 13.7\,\text{MWh} \end{aligned}$$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand.
+
+The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
 
 ## fy3-11-L3-05
 **Given:** cross-sectional area $A = 200\,\text{cm}^2$, constant pressure $p = 125\,\text{kPa}$, power of the resistor $P = 260\,\text{W}$, time $t = 4.0\,\text{s}$, height of the piston $h_1 = 10.0\,\text{cm}$ at the start and $h_2 = 22.0\,\text{cm}$ at the end
 **Find:** a) the heat $Q$ and the work $W$ done by the gas, b) the change in internal energy $\Delta U$ in kilojoules (for the answer box), c) the share that became work, and a justification of why a single expansion is not a heat engine
-**Principle:** The energy of the resistor is transferred to the air as heat, $Q = Pt$. The pressure is constant, so the work done by the air is $W = p\,\Delta V$, and the change in volume is obtained from the displacement of the piston: $\Delta V = A\,\Delta h$. Energy is conserved: by the first law the internal energy changes by the heat and the work done on the air. The work done on the expanding air is $-p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
+**Principle:** The energy of the resistor is transferred to the air as heat, $Q = Pt$.
+
+The pressure is constant, so the work done by the air is $W = p\,\Delta V$, and the change in volume is obtained from the displacement of the piston: $\Delta V = A\,\Delta h$.
+
+Energy is conserved: by the first law the internal energy changes by the heat and the work done on the air. The work done on the expanding air is $-p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
 **Reading the graph:** From the table the height of the piston grows from $h_1 = 10.0\,\text{cm}$ to $h_2 = 22.0\,\text{cm}$, so $\Delta h = 12.0\,\text{cm}$. The height grows by about the same amount every second ($3.0\,\text{cm/s}$). The pressure is given as constant, and the steady rise fits heating with a constant power.
 **Formula:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W = p\,\Delta V$ and $\Delta U = Q - p\,\Delta V$
 **Conversions:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0.0200\,\text{m}^2$, $\Delta h = 12.0\,\text{cm} = 0.120\,\text{m}$ and $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
@@ -239,7 +293,13 @@ b)
 ```
 c) The share that became work is $\tfrac{W}{Q} = \tfrac{300\,\text{J}}{1040\,\text{J}} = 0.288 \approx 29\,\%$.
 **Answer:** b) $\Delta U = 0.74\,\text{kJ}$, two significant figures, because the power $260\,\text{W}$ and the time $4.0\,\text{s}$ are given with two figures. This number goes in the answer box.
-**Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up. This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle. To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings. The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
+**Justification c):** About $29\,\%$ of the heat became work, and the remaining about $71\,\%$ stayed as the internal energy of the air, so the air warmed up.
+
+This fits air: for a diatomic gas at constant pressure the share of the work is about $\tfrac{2}{7} \approx 29\,\%$ of the heat received. A single expansion is not a heat engine, because an engine repeats its work cycle after cycle.
+
+To bring the piston back to the start, the air has to be cooled and compressed, and in the cooling heat is transferred to the colder surroundings.
+
+The work share $29\,\%$ of one expansion is therefore not the efficiency of a cycle: that is $\eta = W/Q_1$, where the work is $W = Q_1 - Q_2$.
 **Reasonableness:** The change in internal energy is positive and smaller than the heat, $0 < 740\,\text{J} < 1040\,\text{J}$, as it should be when a gas expands and receives heat. Energy balance: $740\,\text{J} + 300\,\text{J} = 1040\,\text{J}$. The speed of the piston, $3.0\,\text{cm/s}$, is slow, so the motion of a lightly moving piston is calm.
 
 ## fy3-11-L2-08
@@ -251,7 +311,9 @@ Engine A: $\eta_\text{A} = \dfrac{120\,\text{kJ}}{400\,\text{kJ}} = 0.30$
 
 Engine B: $\eta_\text{B} = \dfrac{120\,\text{kJ}}{300\,\text{kJ}} = 0.40$
 
-The engines do the same work, but that does not make the efficiency the same: the extra $100\,\text{kJ}$ of heat taken by engine A is not converted into work but passes to the colder surroundings ($Q_2 = Q_1 - W$, that is, $280\,\text{kJ}$ and $180\,\text{kJ}$). The size of the absorbed heat alone does not decide either, and the comparison needs the fraction $W/Q_1$. The result is reasonable: both efficiencies stay below $100\,\%$, as they must for a heat engine.
+The engines do the same work, but that does not make the efficiency the same: the extra $100\,\text{kJ}$ of heat taken by engine A is not converted into work but passes to the colder surroundings ($Q_2 = Q_1 - W$, that is, $280\,\text{kJ}$ and $180\,\text{kJ}$).
+
+The size of the absorbed heat alone does not decide either, and the comparison needs the fraction $W/Q_1$. The result is reasonable: both efficiencies stay below $100\,\%$, as they must for a heat engine.
 
 ## fy3-11-L1-09
 **Given:** pressure $p = 1\,\text{atm}$ constant, change in volume $\Delta V = 2.0\,\textsf{l}$; from the table (MAFY table, unit conversions, pressure) $1\,\text{atm} = 101\,325\,\text{Pa}$
@@ -275,12 +337,26 @@ The engines do the same work, but that does not make the efficiency the same: th
 **Reasonableness:** At the start the length of the gas column is $$\begin{aligned} &0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.20\,\text{m} \end{aligned}$$ and at the end $$\begin{aligned} &0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.80\,\text{m} \end{aligned}$$. The difference is $0.60\,\text{m}$, as calculated.
 
 ## fy3-11-L2-10
-**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$. From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
+**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$.
+
+From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
 **Find:** a) what the coefficient of performance means and how it differs from an efficiency, b) the heat $Q_1$ transferred to the room and the heat $Q_2$ taken from the surroundings in kilowatt-hours ($Q_2$ for the answer field), c) the effect of the temperatures on the coefficient of performance, d) an assessment of the claim
-**Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump. The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
+**Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump.
+
+The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
 **Formula:** $Q_1 = Q_2 + W$ and $\varepsilon = \dfrac{Q_1}{W}$, from which $Q_1 = \varepsilon W$ and $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
 **Conversions:** The electrical energy is given and the heats are asked for in kilowatt-hours, so no conversions are needed. The coefficient of performance has no unit.
-**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$. An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$. The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$. A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings. Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$. The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
+**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$.
+
+An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$.
+
+The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$.
+
+A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings.
+
+Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$.
+
+The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
 
 b) The heat transferred to the room:
 ```latex
@@ -298,8 +374,30 @@ Q_2 &= (\varepsilon - 1)\,W \\
 &= 7.5\,\text{kWh}
 \end{aligned}
 ```
-c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is. When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases. In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost. In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is.
 
-d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room. The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room. The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings. The only true part of the claim is that $Q_1 > W$.
-**Answer:** b) $Q_1 = 10\,\text{kWh}$ and $Q_2 = 7.5\,\text{kWh}$, two significant figures, as in the initial values $4.0$ and $2.5\,\text{kWh}$. The answer field takes $7.5\,\text{kWh}$. a) The coefficient of performance is the ratio of the heat given out to the room to the electrical energy, not an energy-conversion efficiency. c) The coefficient of performance decreases when the temperature difference grows. d) The claim is wrong, because the energy balance holds when the heat taken from the surroundings is counted.
-**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$. An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions. According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$. The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.
+When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases.
+
+In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost.
+
+In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+
+d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room.
+
+The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room.
+
+The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings.
+
+The only true part of the claim is that $Q_1 > W$.
+**Answer:** b) $Q_1 = 10\,\text{kWh}$ and $Q_2 = 7.5\,\text{kWh}$, two significant figures, as in the initial values $4.0$ and $2.5\,\text{kWh}$. The answer field takes $7.5\,\text{kWh}$.
+
+a) The coefficient of performance is the ratio of the heat given out to the room to the electrical energy, not an energy-conversion efficiency. c) The coefficient of performance decreases when the temperature difference grows.
+
+d) The claim is wrong, because the energy balance holds when the heat taken from the surroundings is counted.
+**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$.
+
+An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions.
+
+According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$.
+
+The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.

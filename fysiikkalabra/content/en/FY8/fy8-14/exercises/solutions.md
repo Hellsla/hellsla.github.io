@@ -228,3 +228,48 @@ Because $\dfrac{1}{\left(\tfrac{1}{2}\right)^{n}} = 2^{n}$, we get
 $$A_0 = A \cdot 2^{t/T_{1/2}}$$
 
 So the correct expression is $A_0 = A \cdot 2^{t/T_{1/2}}$. Check: the half-life of fluorine-$18$ is about $110\,\text{min}$. For example, in a transport that lasts $330\,\text{min}$ the activity halves three times, and when it leaves, $2^{3} = 8$ times the activity $A$ is needed. The expression for a steady change would give only $\tfrac{2 \cdot 330}{110} = 6$ times $A$. The wrong expressions: $A \cdot \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ is smaller than $A$, so the law of decay has been used in the wrong direction. In the expression $A \cdot 2^{T_{1/2}/t}$ the exponent has been turned upside down, and it would decrease as the transport time increases. The expression $A \cdot \tfrac{2t}{T_{1/2}}$ assumes that the activity changes steadily, and at the time $t = 0$ it would give zero.
+
+## fy8-14-L2-08
+**Given:** graph: the share $I : I_0$ that gets through soft tissue and bone as a function of thickness (about $60\,\text{keV}$), thickness of soft tissue $d_\text{tissue} = 5.0\,\text{cm}$
+**Asked:** a) the share $I : I_0$ at the thickness $5.0\,\text{cm}$, b) the half-value thicknesses $d_{1/2}^\text{tissue}$ and $d_{1/2}^\text{bone}$, c) the thickness of the bone layer $d_\text{bone}$ in centimetres
+**Principle:** A layer lets through the share $\left(\tfrac{1}{2}\right)^{n}$, where $n$ is the thickness in half-value thicknesses. Two layers let through the same share when their $n$ is the same.
+**Reading the graph:** At $d = 5.0\,\text{cm}$ the soft-tissue curve is between $0.35$ and $0.40$, about $0.36$. The soft-tissue curve is at $0.5$, half of the starting value, at $d = 3.4\,\text{cm}$, so $d_{1/2}^\text{tissue} = 3.4\,\text{cm}$. The bone curve is at $0.5$ at $d = 1.1\,\text{cm}$, so $d_{1/2}^\text{bone} = 1.1\,\text{cm}$.
+**Formula:** The shares must be equal: $\left(\tfrac{1}{2}\right)^{n_\text{bone}} = \left(\tfrac{1}{2}\right)^{n_\text{tissue}}$, so $n_\text{bone} = n_\text{tissue}$, that is $d_\text{bone} : d_{1/2}^\text{bone} = d_\text{tissue} : d_{1/2}^\text{tissue}$. Solving
+
+$$d_\text{bone} = d_\text{tissue} \cdot \frac{d_{1/2}^\text{bone}}{d_{1/2}^\text{tissue}}$$
+
+**Conversions:** None needed: all thicknesses are in centimetres.
+**Substitution:**
+$$
+\begin{aligned}
+&d_\text{bone} = d_\text{tissue} \cdot \frac{d_{1/2}^\text{bone}}{d_{1/2}^\text{tissue}} \\
+&= 5.0\,\text{cm} \cdot \frac{1.1\,\text{cm}}{3.4\,\text{cm}} \\
+&= 5.0\,\text{cm} \cdot 0.3235 \\
+&= 1.618\,\text{cm}
+\end{aligned}
+$$
+**Answer:** c) $d_\text{bone} = 1.6\,\text{cm}$, two significant figures like the thickness $5.0\,\text{cm}$ and the half-value thicknesses. From the graph: the bone curve is at $0.36$ at $d \approx 1.6\,\text{cm}$, so the results agree.
+**Reasonableness:** Bone attenuates about three times as much as soft tissue ($3.4 : 1.1 = 3.1$), so the bone layer must be about a third of the soft-tissue thickness: $5.0\,\text{cm} : 3.1 = 1.6\,\text{cm}$.
+
+## fy8-14-L2-09
+**Given:** graph: the activity of an FDG syringe as a function of time, limit activity $A = 60\,\text{MBq}$
+**Asked:** a) the initial activity $A_0$ and the half-life $T_{1/2}$, b) the time $t$ in minutes at which the activity is $60\,\text{MBq}$, c) a check from the graph
+**Principle:** The activity of a radioactive substance halves during every half-life, so the graph is a curve that falls ever more gently. By assumption the activity decreases only through decay, so the decay law applies.
+**Reading the graph:** At $t = 0$ the curve starts from $A_0 = 480\,\text{MBq}$. Half of the starting value, $240\,\text{MBq}$, is reached at $t = 110\,\text{min}$ (between the grid lines $100\,\text{min}$ and $120\,\text{min}$), so $T_{1/2} = 110\,\text{min}$.
+**Formula:** The decay law $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. Dividing by the initial activity and taking the base-2 logarithm gives $\dfrac{t}{T_{1/2}} = \log_2 \dfrac{A_0}{A}$, so
+
+$$t = T_{1/2} \cdot \log_2 \frac{A_0}{A}$$
+
+**Conversions:** None needed: the half-life is in minutes and the activities in megabecquerels, so the ratio $A_0 : A$ is a number.
+**Substitution:**
+$$
+\begin{aligned}
+&t = T_{1/2} \cdot \log_2 \frac{A_0}{A} \\
+&= 110\,\text{min} \cdot \log_2 \frac{480\,\text{MBq}}{60\,\text{MBq}} \\
+&= 110\,\text{min} \cdot \log_2 8 \\
+&= 110\,\text{min} \cdot 3 \\
+&= 330\,\text{min}
+\end{aligned}
+$$
+**Answer:** b) $t = 330\,\text{min}$, that is $5.5\,\text{h}$, three significant figures like the half-life read from the graph. In part c) the curve is at $60\,\text{MBq}$ at $t = 330\,\text{min}$ (three half-lives: $480 \to 240 \to 120 \to 60$), so the results agree.
+**Reasonableness:** The activity falls to the ratio $60 : 480 = 1 : 8 = \left(\tfrac{1}{2}\right)^3$, so three half-lives are needed. The time $330\,\text{min}$ is three times $110\,\text{min}$.

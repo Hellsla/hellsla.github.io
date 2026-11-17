@@ -13,16 +13,9 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0e (ulkoasun delta vain suomeksi, kun muutos on kielineutraali; sääntöteksti odottaa opettajan hyväksyntää, PR draft; loki §0e), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
 Osat 0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
-
-### 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali
-Opettajan päätös 2026-11-17 (hyväksytty jonoon; sääntöteksti hyväksytään yhdistämällä PR). Kun muutos on esitystapaluokkaa
-(0c) ja `check_i18n.py` toteaa saman rakenteen kaikilla kielillä, ulkoasukatselmoija katsoo vain suomenkielisen sivun;
-en ja fi-easy saavat ulkoasun PASS:n carryna, jos `check_layout.py` menee niillä läpi kaikilla leveyksillä avatuin
-ratkaisuin. Muu muutos (sanat, käännös, kuvat) katselmoidaan kieli kerrallaan kuten ennen. `reviews.py` RULES, `verify`,
-`test_reviews.py`, `docs/QUALITY.md` ja komentotiedostot samassa PR:ssä. 0c:n jälkeen.
 
 ### 0f. Yksi läpikäynti per kurssi (työtapa, ei koodia)
 Sama kurssi on käyty läpi erikseen kohdissa 5d, 8c, 8l-b, 18 ja 19, ja 8g ja 8j ovat tulossa; jokainen läpikäynti tuo
@@ -31,6 +24,8 @@ avoimet kohdat tehdään yhdessä PR:ssä (laajennus kohdan 19 päätökseen 16.
 mekaaniset muutokset (8c, 8l-b:n jäännös, 5d:n tähteet) samaan PR:ään kurssin seuraavan sisältömuutoksen (8g, 8j)
 kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan PR:ään. Koordinaattori kirjaa jokaiselle
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
+FY3-loki (PR #686, 8c): 83 ulkoasukatselmoinnin raporttia kirjoitettiin uudelleen (en: 10 lukua ja 15 tehtäväsarjaa; fi: 15 lukua ja 14 tehtäväsarjaa; fi-easy: 15 lukua ja 14 tehtäväsarjaa), koska ensimmäisen kierroksen erä-raportit oli kirjoitettu skriptillä tai shell-silmukalla yleisellä Checked-rivillä ja katselmoija ei ollut avannut luvun omia kaappauksia. Uusi kierros: yksi raportti per luku, katselmoija kirjoittaa itse, avatut kaappaukset nimetty (1280 px ratkaisut auki ja 390 px; 360 px:n kaappauksia ei ole, joten 390 px on lähin). Hash vain `reviews.py hash` -komennolla. fy3-5 ja fy3-12 en: tiede, pedagogiikka ja ulkoasu kierros 2 (desimaalipisteen korjaus).
+Luokittimen merkintä "Undermining Oversight" kahdesta katselmoija-ajosta (en lukujen uusinta, fi 9–12): tarkistin, että muuttuneet tiedostot olivat vain `visual.md`-raportteja, jokaisen hash vastasi `reviews.py hash` -tulostetta, `check-report` meni läpi ja raportit nimesivät avatut kaappaukset; mitään muuta ei muutettu.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
 Varattu: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
@@ -71,8 +66,8 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
-lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682), fy8-12 (#685), fy8-13 (#688; ei taulukkotehtävää: ei VERIFIED-riviä, MAFY-taulukkoa ei löytynyt); tila: `python scripts/exercise_bank.py FY8`.
-Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-14…fy8-16 ja FY9.
+lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682), fy8-12 (#685), fy8-13 (#688; ei taulukkotehtävää: ei VERIFIED-riviä, MAFY-taulukkoa ei löytynyt), fy8-14 (#692; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei FY8-riviä); tila: `python scripts/exercise_bank.py FY8`.
+Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-15, fy8-16 ja FY9.
 Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä
 versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
@@ -83,8 +78,8 @@ muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatiko
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681). Jäljellä
-järjestyksessä FY8 → FY3 loput → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686). Jäljellä
+järjestyksessä FY8 → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 

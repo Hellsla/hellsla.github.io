@@ -147,7 +147,9 @@ A diver is in a lake at a depth of $12.0\,\text{m}$, next to the window of an un
 
 <!-- vaihe -->
 
-**Given and find.** Depth $h = 12.0\,\text{m}$, atmospheric pressure $p_0 = 101\,\text{kPa}$, the density of water from a table or from the problem $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$ and window area $A = 150\,\text{cm}^2$. We want the total pressure $p$ around the diver and the force $F$ on the window.
+**Given and find.** Depth $h = 12.0\,\text{m}$, atmospheric pressure $p_0 = 101\,\text{kPa}$, the density of water from a table or from the problem $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$ and window area $A = 150\,\text{cm}^2$.
+
+We want the total pressure $p$ around the diver and the force $F$ on the window.
 
 <!-- vaihe -->
 
@@ -194,7 +196,11 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Reasonableness.** The total pressure is about 2.2 times atmospheric pressure, which fits the fact that 10 metres of water add about one atmosphere and 12 metres add a little more. Estimate: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. The force equals the weight of a mass of about $180\,\text{kg}$, although the window is small. The pressure does not crush the diver's body, because in water the same pressure acts on the body from all sides and the body fluids transmit it to the inside as well. Only the pressure in the body's air spaces, such as the ears, has to be equalised.
+**Reasonableness.** The total pressure is about 2.2 times atmospheric pressure, which fits the fact that 10 metres of water add about one atmosphere and 12 metres add a little more.
+
+Estimate: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. The force equals the weight of a mass of about $180\,\text{kg}$, although the window is small.
+
+The pressure does not crush the diver's body, because in water the same pressure acts on the body from all sides and the body fluids transmit it to the inside as well. Only the pressure in the body's air spaces, such as the ears, has to be equalised.
 
 ## Common misconception
 Many people think that the pressure at the bottom depends on how much water the container holds. In a narrow tube and a wide pool, where the water reaches the same height, the pressure at the bottom is the same, even though the pool holds a thousand times as much water. Pressure depends only on the depth, the density and the pressure at the surface. Another mistake is to confuse pressure and force: the sharp tip of a drawing pin does not produce a greater force than the head, but spreads the same force over a smaller area, so the pressure is greater. A third mistake is to forget atmospheric pressure: $\rho g h$ alone gives only the gauge pressure, and the total pressure under water is always greater than that.

@@ -222,11 +222,13 @@ where $P$ is the thermal power (W), $U$ is the U-value of the building part (W/(
 
 
 ## Worked example
-The walls of a detached house have an area of 120 m² and a U-value of $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, and the windows have an area of 20.0 m² and a U-value of $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$. It is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
+The walls of a detached house have an area of $120\,\text{m}^2$ and a U-value of $0.17\,\text{W/(m}^2\text{}\cdot\text{K)}$, and the windows have an area of $20.0\,\text{m}^2$ and a U-value of $1.0\,\text{W/(m}^2\text{}\cdot\text{K)}$. It is $21\,{}^\circ\text{C}$ indoors and $-15\,{}^\circ\text{C}$ outdoors. How large is the thermal power conducted through the walls and windows, and how much energy does it transfer in one day?
 
 <!-- vaihe -->
 
-**Given and find.** Walls: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Windows: $A_\text{i} = 20.0\,\text{m}^2$, $U_\text{i} = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Temperatures $T_\text{in} = 21\,{}^\circ\text{C}$ and $T_\text{out} = -15\,{}^\circ\text{C}$. You are asked for the thermal power $P$ and the energy $E$ in one day.
+**Given and find.** Walls: $A_\text{s} = 120\,\text{m}^2$, $U_\text{s} = 0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Windows: $A_\text{i} = 20.0\,\text{m}^2$, $U_\text{i} = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$. Temperatures $T_\text{in} = 21\,{}^\circ\text{C}$ and $T_\text{out} = -15\,{}^\circ\text{C}$.
+
+You are asked for the thermal power $P$ and the energy $E$ in one day.
 
 <!-- vaihe -->
 
@@ -263,11 +265,15 @@ The walls of a detached house have an area of 120 m² and a U-value of $0.17\,\t
 
 <!-- vaihe -->
 
-**Result.** The power conducted through the walls and windows is $P \approx 1.5\,\text{kW}$, and in one day it transfers the energy $E \approx 35\,\text{kWh}$. The result is given to two significant figures. The limiting data are the U-values $0.17$ and $1.0$ and the temperature difference $36\,\text{K}$ (a difference of whole degrees), all with two figures; the areas $120\,\text{m}^2$ and $20.0\,\text{m}^2$ are more precise.
+**Result.** The power conducted through the walls and windows is $P \approx 1.5\,\text{kW}$, and in one day it transfers the energy $E \approx 35\,\text{kWh}$. The result is given to two significant figures.
+
+The limiting data are the U-values $0.17$ and $1.0$ and the temperature difference $36\,\text{K}$ (a difference of whole degrees), all with two figures; the areas $120\,\text{m}^2$ and $20.0\,\text{m}^2$ are more precise.
 
 <!-- vaihe -->
 
-**Reasonableness.** The area of the windows is only a sixth of the area of the walls, but the same amount of heat goes through them ($20.0\,\text{W/K}$ and $20.4\,\text{W/K}$), because their U-value is almost six times as large. With rounded numbers, $40\,\text{W/K} \cdot 36\,\text{K} \approx 1.4\,\text{kW}$ and $1.4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. The heating of the house replaces this power, and the roof, floor and ventilation add to the need.
+**Reasonableness.** The area of the windows is only a sixth of the area of the walls, but the same amount of heat goes through them ($20.0\,\text{W/K}$ and $20.4\,\text{W/K}$), because their U-value is almost six times as large.
+
+With rounded numbers, $40\,\text{W/K} \cdot 36\,\text{K} \approx 1.4\,\text{kW}$ and $1.4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. The heating of the house replaces this power, and the roof, floor and ventilation add to the need.
 
 ## Common misconception
 Many people mix up the greenhouse effect and ozone depletion, although they are different things: ozone depletion lets more ultraviolet radiation through, but it hardly warms the Earth. Another mistake is to think that the greenhouse effect is entirely harmful. The natural greenhouse effect keeps the Earth habitable, and the problem is its strengthening because of human emissions. A third mistake is to believe that a woollen sweater produces heat. It only slows down the conduction and convection of heat away from the body, just as the insulation in a wall slows down the escape of heat from a house.

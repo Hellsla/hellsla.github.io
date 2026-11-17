@@ -263,7 +263,11 @@ Use extrapolation to find the temperature at which the pressure of the gas would
 
 <!-- vaihe -->
 
-**Given and find.** The table has six data points $(\theta,\, p)$, and the pressure is $p_0 = 100\,\text{kPa}$ at $0\,{}^\circ\text{C}$. You are asked for the temperature $\theta_0$ at which the pressure would be zero. On a graph the points lie on a straight line: for every $20\,{}^\circ\text{C}$ the pressure increases by $7$–$8\,\text{kPa}$. The line is continued to the left, outside the measured range, that is, extrapolated.
+**Given and find.** The table has six data points $(\theta,\, p)$, and the pressure is $p_0 = 100\,\text{kPa}$ at $0\,{}^\circ\text{C}$.
+
+You are asked for the temperature $\theta_0$ at which the pressure would be zero.
+
+On a graph the points lie on a straight line: for every $20\,{}^\circ\text{C}$ the pressure increases by $7$–$8\,\text{kPa}$. The line is continued to the left, outside the measured range, that is, extrapolated.
 
 <svg data-fig="extrapolation" viewBox="0 0 600 350" role="img" aria-label="Pressure of a gas as a function of temperature in a closed container: the data points in the temperature range 0–100 °C lie on a straight line, and the extrapolated line meets zero pressure at a temperature of about −270 °C. The vertical axis is at the left edge of the figure at −300 °C." style="max-width:100%;font-size:24px">
   <line x1="120.5" y1="290" x2="120.5" y2="84" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -359,7 +363,11 @@ The vertical axis is drawn at the left edge of the figure, at about $-300\,{}^\c
 
 <!-- vaihe -->
 
-**Reasonableness.** The result is close to absolute zero, $-273.15\,{}^\circ\text{C}$: only about $3\,{}^\circ\text{C}$, or one per cent, away from it. An independent check: if the pressure is proportional to the temperature in kelvins, $p = 100\,\text{kPa}$ corresponds to $273.15\,\text{K}$, so the pressure at $100\,{}^\circ\text{C}$ would be $100\,\text{kPa} \cdot \tfrac{373.15}{273.15} = 136.6\,\text{kPa}$, and the measured value is $137\,\text{kPa}$. According to the micro model, at zero pressure the motion of the particles would be so small that no pressure would arise any more. Real gases liquefy before this temperature is reached, so the continuation of the line is only a model and describes a limiting value.
+**Reasonableness.** The result is close to absolute zero, $-273.15\,{}^\circ\text{C}$: only about $3\,{}^\circ\text{C}$, or one per cent, away from it.
+
+An independent check: if the pressure is proportional to the temperature in kelvins, $p = 100\,\text{kPa}$ corresponds to $273.15\,\text{K}$, so the pressure at $100\,{}^\circ\text{C}$ would be $100\,\text{kPa} \cdot \tfrac{373.15}{273.15} = 136.6\,\text{kPa}$, and the measured value is $137\,\text{kPa}$.
+
+According to the micro model, at zero pressure the motion of the particles would be so small that no pressure would arise any more. Real gases liquefy before this temperature is reached, so the continuation of the line is only a model and describes a limiting value.
 
 ## Common misconception
 Many people think that the temperature doubles when it rises from $10\,{}^\circ\text{C}$ to $20\,{}^\circ\text{C}$. The physically correct comparison is made in kelvins: from $283\,\text{K}$ to $293\,\text{K}$. The ratio of the temperatures is 293/283 ≈ 1.035, so the increase is about $3.5\,\%$. This is why the average kinetic energy of the particles does not double. Another mistake is to think that $0\,{}^\circ\text{C}$ is the lowest possible temperature. It is only the freezing point of water, and the lowest possible temperature is $0\,\text{K}$.

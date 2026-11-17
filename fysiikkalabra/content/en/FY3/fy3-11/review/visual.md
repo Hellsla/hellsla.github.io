@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2f67c497cbf99990
+CONTENT-HASH: 7477e3e96ceac475
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-6.png (exercises 13-1 to 13-8 and the opening of the checks, solutions open): the split answer and limiting-value paragraphs of 13-1 and 13-2, the pV graph of 13-4 and the cogeneration reasonableness of 13-3 read clearly; no clipping.
+- review/shots/fy3-11-example-390-1.png (biomass plant efficiency example, stages 1-3 at 390 px): knowns, remark and question in separate paragraphs, equations legible.
+- review/shots/fy3-11-open-exercises-1280-3.png (opened solution 13-2, start of 13-3): the 7.5 % fraction estimate, W and MW units and the answer box render correctly.

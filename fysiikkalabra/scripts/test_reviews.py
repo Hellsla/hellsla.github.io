@@ -988,6 +988,69 @@ expect("0c: a free-form SCOPE line is read as malformed (report_problems turns i
 expect("0c: ... a well-formed one is not", rv.scope_claim(_mk("sv", "VERDICT: PASS\nCONTENT-HASH: cccccccccccccccc\nSCOPE: delta reflow from 0123456789abcdef base abcdef1\n"), "visual")[0] == ["reflow"])
 expect("0c: report_problems and check-report exist and the CLI says what is wrong", "check-report" in rv.__doc__ and callable(rv.report_problems))
 
+# 0e. a translation's presentation-only change, cut as the Finnish text, whose visual PASS is current: its visual review
+# is the Finnish one's (work queue 0e; the rule text awaits the teacher's approval)
+expect("0e: layout skeleton: the words are no part of it, the paragraph cut, a list item and the formulas per line are",
+       rv.layout_skeleton("Yksi $a$ ja $b$.\n\nToinen.", "x.md") == rv.layout_skeleton("One $c$ and $d$.\n\nSecond.", "x.md")
+       and rv.layout_skeleton("Yksi.\n\nToinen.", "x.md") != rv.layout_skeleton("One. Second.", "x.md")
+       and rv.layout_skeleton("a\n- b", "x.md") != rv.layout_skeleton("a\nb", "x.md")
+       and rv.layout_skeleton("a $x$ ja $y$", "x.md") != rv.layout_skeleton("a $x$", "x.md")
+       and rv.layout_skeleton('{"t": "a\\n\\nb"}', "x.json") == rv.layout_skeleton("a\n\nb", "x.md"))
+t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
+shutil.copytree(FI, EN, ignore=shutil.ignore_patterns("review"))
+_fl, _el = FI / "lesson.md", EN / "lesson.md"
+_el.write_text(_el.read_text().replace("Ydinajatus", "Core idea", 1))            # a word the Finnish text does not have
+_para = next(m for m in re.finditer(r"^[A-ZÄÖ][^\n$#|<>]{150,}?[a-zä]\. (?=[A-ZÄÖ])", _fl.read_text(), re.M))
+def _cut(text): return text.replace(_para.group(0), _para.group(0).rstrip() + "\n\n", 1)           # the paragraph cut in two at a sentence
+git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "fi and en")
+def _rep(folder, name, hsh, verdict="PASS"):
+    (folder / "review").mkdir(exist_ok=True); (folder / "review" / f"{name}.md").write_text(f"VERDICT: {verdict}\nCONTENT-HASH: {hsh}\n\n## Blocking\nnone\n")
+def en0(*a): return run(t, "reviews.py", *a, LESSON, "--lang", "en")[1]
+for n in ("science", "pedagogy", "visual"): _rep(FI, n, h(t)); _rep(EN, n, en0("hash").strip())
+git(t, "add", "."); git(t, "commit", "-qm", "reviews")
+expect("0e: setup: both languages reviewed", "reviewed" in en0("status") and "reviewed" in state(t), en0("status"))
+_fl.write_text(_cut(_fl.read_text()))
+_rep(FI, "visual", h(t))                                                           # the Finnish layout review of the new cut
+out = en0("scope")
+expect("0e (a) the paragraph is cut in Finnish only: en is not cut the same, visual is a delta as before", "visual: delta" in out and "fi-layout" not in out, out)
+_el.write_text(_cut(_el.read_text()))
+out = en0("scope")
+expect("0e (b) cut in both, the Finnish visual PASS current: en visual none (fi-layout), science and pedagogy carried as before",
+       "visual: none" in out and "fi-layout" in out and "science: none" in out and "pedagogy: none" in out, out)
+out = en0("carry")
+expect("0e ... carry writes the row and en is reviewed", "visual: carried over" in out and "fi-layout" in (EN / "review/carry.tsv").read_text() and en0("status").startswith("fy3-3: reviewed"), out + en0("status"))
+git(t, "add", "."); git(t, "commit", "-qm", "layout in both")
+code, out = run(t, "reviews.py", "verify")
+expect("0e ... verify accepts it", code == 0 and "ERROR" not in out, out[-600:])
+_el.write_text(_el.read_text().replace("Core idea", "Main idea", 1))
+out = en0("scope")
+expect("0e (c) a changed word with the cut: en visual is a delta again", "visual: none" not in out and "fi-layout" not in out, out)
+_el.write_text(_el.read_text().replace("Main idea", "Core idea", 1))
+_fl.write_text(_fl.read_text().replace("Ydinajatus", "Ydinajatus ja", 1))
+out = en0("status")
+expect("0e (d) the Finnish text changed afterwards (its visual PASS stale): the en carry counts for nothing", "visual=PASS" not in out and "draft" in out, out)
+code, out = run(t, "reviews.py", "verify")
+expect("0e ... verify has nothing to re-derive for it", code == 0 and "ERROR" not in out, out[-600:])
+_fl.write_text(_fl.read_text().replace("Ydinajatus ja", "Ydinajatus", 1))
+_el.write_text(_el.read_text().replace(_para.group(0).rstrip() + "\n\n", _para.group(0).rstrip() + "\n\n- ", 1))   # en cut into a list item where the Finnish text has a paragraph
+_rows = (EN / "review/carry.tsv").read_text().splitlines(); _last = _rows[-1].split("\t")
+(EN / "review/carry.tsv").write_text("\n".join(_rows + ["\t".join(_last[:3] + [en0("hash").strip()] + _last[4:])]) + "\n")   # a row forged for that version
+code, out = run(t, "reviews.py", "verify")
+expect("0e (e) a row forged for an en cut that is not the Finnish cut: verify rejects it", code == 1 and "not cut as the Finnish text" in out, out[-600:])
+git(t, "checkout", "-q", "--", "content")
+_rep(EN, "visual", en0("hash").strip(), "FAIL")
+out = en0("scope")
+git(t, "checkout", "-q", "--", "content")
+_el.write_text(_cut(_el.read_text()));
+(t / "docs/clipped-formulas").mkdir(parents=True, exist_ok=True)
+(t / "docs/clipped-formulas/FY3.tsv").write_text(f"# head\nen/{LESSON}\t= \\dfrac{{a}}{{b}}\n")
+out = en0("scope")
+expect("0e (g) a known clipped formula on the en page is a check_layout warning: no carry, en visual is a delta", "visual: none" not in out and "fi-layout" not in out, out)
+(t / "docs/clipped-formulas/FY3.tsv").write_text(f"# head\nfi-easy/{LESSON}\t= x\n")
+expect("0e ... a row of another language does not count", "fi-layout" in en0("scope"), en0("scope"))
+(t / "docs/clipped-formulas/FY3.tsv").unlink(); git(t, "checkout", "-q", "--", "content")
+expect("0e (f) an en visual FAIL for its current hash is never overridden", "fi-layout" not in out, out)
+
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

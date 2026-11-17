@@ -273,7 +273,9 @@ A research robot has a mass of $1.20 \cdot 10^2\,\text{kg}$. What is its weight 
 
 <!-- vaihe -->
 
-**Given and find.** The mass is $m = 1.20 \cdot 10^2\,\text{kg}$, and from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Mars} = 3.71\,\text{m/s}^2$. We want the weights $G_\text{Earth}$ and $G_\text{Mars}$.
+**Given and find.** The mass is $m = 1.20 \cdot 10^2\,\text{kg}$, and from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Mars} = 3.71\,\text{m/s}^2$.
+
+We want the weights $G_\text{Earth}$ and $G_\text{Mars}$.
 
 <!-- vaihe -->
 

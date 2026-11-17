@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 55080c0e1a498ab1
+CONTENT-HASH: a9c9c40835ee0d7f
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only; lesson.md unchanged in substance). Opened:
+- review/shots/contact-6.png (exercises 1-9 to 1-18 with solutions open): the split Principle / Model answer paragraphs read as separate short blocks, no clipping or overlap.
+- review/shots/fy3-1-example-390-1.png (worked example stages 1-5 at 390 px): unchanged, formulas and aligned chains intact, no overflow.
+- review/shots/fy3-1-open-exercises-1280-3.png (opened solution 1-3 and start of 1-4): section order given, find, principle, formula, substitution, answer, reasonableness is preserved; units and LaTeX render correctly.

@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2c6d0cf2ab541ab3
-SCOPE: delta added-exercise from fb4c9e7694ba0259 base 81db4a6fd727
+CONTENT-HASH: 75d0c0ac34cd096d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-9-L2-10, Annettu — the paragraph packs the whole measurement series (about 90 words with seven values twice) into one block; a small table (T, p) would read better (optional).
-- [Minor] fy3-9-L2-10, Kysytty — a)–d) run as one sentence; one item per line would be clearer (optional).
+(none)
 
 ## Checked
-- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 15 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
-- New exercise fy3-9-L2-10 read at 1280 px in the existing captures L2-1280-14…17 (source link first, a–d, model solution, answer box, Järkevyys): layout, typography and language clean; decimal commas, units and `:`-division correct.
-- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
+- 1280 px with solutions open: fy3-9-open-exercises-1280-1.png (11-1: new paragraph after Vastaus, Kolme merkitsevää numeroa, Järkevyys as own block); fy3-9-open-exercises-L2-1280-1.png (11-10: Muunnokset text-display-text sequence, answer set apart, formula rows aligned); fy3-9-open-tarkista-1280-1.png (model answer rows).
+- 390 px: fy3-9-stage-exercises-390.png (level cards closed, readable, no overflow); fy3-9-example-390-1.png (stage paragraphs short, displays not clipped).
 - Hash same at start and end.
 
 ## Scores

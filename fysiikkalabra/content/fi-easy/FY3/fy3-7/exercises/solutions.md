@@ -93,13 +93,24 @@
 **Kysytty:** erien järjestys tarvittavan lämpömäärän $Q$ mukaan pienimmästä suurimpaan
 **Periaate:** Lämpenemiseen tarvitaan $Q = cm\Delta T$, sulamiseen $Q = sm$ ja höyrystymiseen $Q = rm$. Olomuodon muutoksessa lämpötila ei muutu, mutta energiaa kuluu silti paljon. Järjestys ei ole sama kuin massan järjestys. Se ei myöskään riipu siitä, onko olomuoto muuttunut. Tulokseen vaikuttavat massa ja lämpötilan muutos sekä ominaislämpökapasiteetti $c$, ominaissulamislämpö $s$ tai ominaishöyrystymislämpö $r$.
 **Mallivastaus:** Lasketaan jokaisen erän lämpömäärä:
+
 Teekannu: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}0\,\text{kg} \cdot 20\,\text{K}$,
 eli $Q = 83\,800\,\text{J} \approx 84\,\text{kJ}$
+
 Jääpussi: $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}50\,\text{kg} = 167\,\text{kJ}$
+
 Kattila: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg} \cdot 80\,\text{K}$,
 eli $Q = 201\,120\,\text{J} \approx 201\,\text{kJ}$
+
 Kiehuva vesi: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}10\,\text{kg} = 226\,\text{kJ}$
-Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mukaan pienimmästä suurimpaan järjestys olisi kiehuva vesi $0{,}10\,\text{kg}$, jääpussi $0{,}50\,\text{kg}$, kattila $0{,}60\,\text{kg}$ ja teekannu $1{,}0\,\text{kg}$. Lämmön järjestys on lähes päinvastainen, joten massa ei ratkaise. Jään sulaminen vaatii vähemmän energiaa kuin kattilallisen lämmittäminen kiehumispisteeseen. Olomuodon muutos ei siis aina ole suurin menoerä. Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon energiaa, koska $r$ on suuri. Siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
+
+Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mukaan pienimmästä suurimpaan järjestys olisi kiehuva vesi $0{,}10\,\text{kg}$, jääpussi $0{,}50\,\text{kg}$, kattila $0{,}60\,\text{kg}$ ja teekannu $1{,}0\,\text{kg}$.
+
+Lämmön järjestys on lähes päinvastainen, joten massa ei ratkaise.
+
+Jään sulaminen vaatii vähemmän energiaa kuin kattilallisen lämmittäminen kiehumispisteeseen. Olomuodon muutos ei siis aina ole suurin menoerä.
+
+Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon energiaa, koska $r$ on suuri. Siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
 
 ## fy3-7-L3-01
 **Annettu:** mehu (veden $c$) $m_1 = 0{,}35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; jää $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -137,7 +148,11 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 ## fy3-7-L1-06
 **Kysytty:** mitä sulavan jään ja sulamisveden seoksen lämpötilalle tapahtuu, kun jäätä on vielä jäljellä.
 **Periaate:** Kun paine on vakio, puhtaan aineen lämpötila pysyy samana olomuodon muutoksen ajan. Sulamisen aikana energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia. Se kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Siksi energia ei näy lämpötilan nousuna.
-**Mallivastaus:** Lämpötila pysyy samana. Energia kuluu hiukkasten keskinäisten vuorovaikutusten muuttamiseen. Se ei kasvata hiukkasten liike-energiaa. Vaihtoehto, jonka mukaan lämpötila nousee tasaisesti, unohtaa tämän. Vaihtoehto, jonka mukaan seos jäähtyy, on väärä, koska lämmityksessä energiaa siirtyy seokseen koko ajan. Vaihtoehto, jossa lämpötila ensin nousee ja sitten laskee, ei vastaa mitään sulamisen vaihetta. Vasta kun kaikki jää on sulanut, sulamisvesi alkaa lämmetä.
+**Mallivastaus:** Lämpötila pysyy samana.
+
+Energia kuluu hiukkasten keskinäisten vuorovaikutusten muuttamiseen. Se ei kasvata hiukkasten liike-energiaa.
+
+Vaihtoehto, jonka mukaan lämpötila nousee tasaisesti, unohtaa tämän. Vaihtoehto, jonka mukaan seos jäähtyy, on väärä, koska lämmityksessä energiaa siirtyy seokseen koko ajan. Vaihtoehto, jossa lämpötila ensin nousee ja sitten laskee, ei vastaa mitään sulamisen vaihetta. Vasta kun kaikki jää on sulanut, sulamisvesi alkaa lämmetä.
 
 ## fy3-7-L1-07
 **Kysytty:** miksi hien haihtuminen viilentää ihoa.
@@ -159,7 +174,13 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Kysytty:** a) vaiheet ja lämpötilan pysyminen samana; b) ominaissulamislämpö $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$
 **Periaate:** Teho on vakio, joten kuumentimen antama energia on $Pt$. Kun lämpötila nousee, energia kuluu lämpenemiseen, $Q = cm\Delta T$. Kun lämpötila pysyy vakiona $0\,{}^\circ\text{C}$:ssa, jää sulaa. Koko energia kuluu sulamiseen, $Pt = sm$.
 **Mallivastaus a):** Ensin jää lämpenee $0\,{}^\circ\text{C}$:seen. Sitten lämpötila pysyy $0\,{}^\circ\text{C}$:ssa, vaikka kuumennin antaa energiaa. Energia kuluu jään sulattamiseen ja kasvattaa hiukkasten välistä vuorovaikutusenergiaa. Lopuksi kaikki jää on sulanut ja vesi lämpenee.
-**Taulukon lukeminen:** Rivit $20\,\text{s}$ ja $150\,\text{s}$ ovat jo tasanteen sisällä. Siksi sulamisen alku ja loppu arvioidaan nousuista. Alku: rivit $0\,\text{s}$ ja $10\,\text{s}$ antavat nousun $1{,}14\,\tfrac{\text{K}}{\text{s}}$. Siksi $0\,{}^\circ\text{C}$ saavutetaan noin $18\,\text{s}$:ssa. Loppu: rivillä $160\,\text{s}$ lämpötila on $1{,}9\,{}^\circ\text{C}$. Rivien $160\,\text{s}$ ja $180\,\text{s}$ nousu on $0{,}575\,\tfrac{\text{K}}{\text{s}}$. Nousu alkoi siis noin $3{,}3\,\text{s}$ aiemmin eli noin $157\,\text{s}$:ssa. Sulamisen kesto on $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
+**Taulukon lukeminen:** Rivit $20\,\text{s}$ ja $150\,\text{s}$ ovat jo tasanteen sisällä. Siksi sulamisen alku ja loppu arvioidaan nousuista.
+
+Alku: rivit $0\,\text{s}$ ja $10\,\text{s}$ antavat nousun $1{,}14\,\tfrac{\text{K}}{\text{s}}$. Siksi $0\,{}^\circ\text{C}$ saavutetaan noin $18\,\text{s}$:ssa.
+
+Loppu: rivillä $160\,\text{s}$ lämpötila on $1{,}9\,{}^\circ\text{C}$. Rivien $160\,\text{s}$ ja $180\,\text{s}$ nousu on $0{,}575\,\tfrac{\text{K}}{\text{s}}$. Nousu alkoi siis noin $3{,}3\,\text{s}$ aiemmin eli noin $157\,\text{s}$:ssa.
+
+Sulamisen kesto on $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
 **Kaava:** $Pt = sm$, josta $s = \dfrac{P\,\Delta t}{m}$
 **Muunnokset:** Teho ja aika ovat jo perusyksiköissä, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:**
@@ -171,6 +192,7 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
 \end{aligned}$$
 
 **Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 5\,\%$. Kolme merkitsevää numeroa annetaan massan ja tehon mukaan. Jos tasanteeksi lukee suoraan rivit $20\,\text{s}$ ja $150\,\text{s}$, aika on $130\,\text{s}$ ja tulos $312\,\tfrac{\text{kJ}}{\text{kg}}$. Se on liian pieni, koska sulaminen alkoi jo ennen riviä $20\,\text{s}$ ja päättyi vasta rivin $150\,\text{s}$ jälkeen.
+
 **Järkevyys:** Tulos vastaa jään tunnettua ominaissulamislämpöä $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $$\begin{aligned} c m \Delta T &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ &\cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} \\ &= 10\,500\,\text{J} \end{aligned}$$. Mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$. Se on noin kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
 
 ## fy3-7-L2-06
@@ -210,7 +232,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Vastaus:** $14{,}4\,\text{K}$, kolme merkitsevää numeroa kuten taulukon lämpötiloissa. Interpolointi on arvio, joten hyväksytään $\pm 4\,\%$.
+
 **Mallivastaus b):** Kiehuva vesi pysyy lämpötilassa $T_\text{k}$, vaikka hella antaa lisää energiaa. Lisäenergia höyrystää vettä eikä nosta lämpötilaa. Vuoristossa $T_\text{k}$ on vain noin $85{,}7\,{}^\circ\text{C}$. Ruoka on siis ympäröivässä vedessä noin $14\,\text{K}$ viileämpää kuin merenpinnan tasolla. Ruoan kypsyminen riippuu lämpötilasta, joten se kestää kauemmin.
+
 **Järkevyys:** Arvio $85{,}7\,{}^\circ\text{C}$ on rivien $81{,}3\,{}^\circ\text{C}$ ja $90{,}0\,{}^\circ\text{C}$ välissä. Samoin paine $60{,}0\,\text{kPa}$ on rivien $50{,}0\,\text{kPa}$ ja $70{,}0\,\text{kPa}$ välissä. Ero $14{,}4\,\text{K}$ on pienempi kuin paineessa $50{,}0\,\text{kPa}$ ($18{,}7\,\text{K}$) ja suurempi kuin paineessa $70{,}0\,\text{kPa}$ ($10{,}0\,\text{K}$). Näin pitääkin olla.
 
 ## fy3-7-L3-04
@@ -245,6 +269,7 @@ s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
 \end{aligned}$$
 
 **Vastaus:** a) $69\,{}^\circ\text{C}$; b) $12\,\text{W}$; c) $Q = 20\,\text{kJ}$ ja $s \approx 200\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan karkeasti, joten hyväksytään $\pm 8\,\%$. Tulos annetaan kahdella merkitsevällä numerolla.
+
 **Järkevyys:** Jähmettyminen kestää $27{,}7\,\text{min}$. Se on selvästi kauemmin kuin nesteen $9{,}8\,\text{K}$:n jäähtyminen $3\,\text{min}$:ssa. Vertailu: jos sama energia $19{,}9\,\text{kJ}$ laskisi nestettä, lämpötila laskisi $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}100\,\text{kg}} \approx 90\,\text{K}$. Jähmettymisessä vapautuu siis paljon energiaa. Tasanteella lämpötila ei laske, koska jähmettyminen vapauttaa juuri sen energian, jonka aine luovuttaa ympäristöön. Koko vapautuva energia kuluu ympäristön häviöihin.
 
 ## fy3-7-L3-05
@@ -263,7 +288,9 @@ m_\text{h} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}
 $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{kg}$$
 
 **Vastaus:** a) $23{,}5\,\text{g}$, kolme merkitsevää numeroa kuten massassa $0{,}300\,\text{kg}$; b) $0{,}386\,\text{kg}$. Se on noin $16$ kertaa höyryn massa.
+
 **Mallivastaus:** Yksi kilogramma höyryä luovuttaa jäähtyessään $65\,{}^\circ\text{C}$:seen yhteensä $2\,406\,650\,\text{J}$. Yksi kilogramma samanlämpöistä vettä luovuttaa vain $4190 \cdot 35{,}0\,\text{J} = 146\,650\,\text{J}$. Höyryn luovuttamasta energiasta valtaosa, noin $94\,\%$, vapautuu tiivistymisessä, kun lämpötila pysyy vakiona. Iholle osuva höyry tiivistyy ihon pinnalle ja luovuttaa tämän suuren energian iholle. Siksi sama massa höyryä aiheuttaa paljon pahemman palovamman kuin yhtä kuuma vesi.
+
 **Järkevyys:** Tulos $23{,}5\,\text{g}$ on pieni verrattuna maidon massaan $300\,\text{g}$. Höyry luovuttaa tiivistyessään paljon energiaa, koska $r$ on suuri. Tarkistus: $23{,}5\,\text{g}$ luovuttaa tiivistyessään $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0235\,\text{kg} = 53{,}1\,\text{kJ}$ ja jäähtyessään $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}0235\,\text{kg} \cdot 35{,}0\,\text{K} = 3{,}4\,\text{kJ}$. Yhteensä se on $56{,}6\,\text{kJ}$, ja maito ottaa $56{,}6\,\text{kJ}$. Energiat täsmäävät.
 
 ## fy3-7-L1-09
@@ -292,7 +319,11 @@ $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{
 **Kysytty:** a) hiukkasten liikkeen ja järjestyksen vertailu kolmessa olomuodossa; b) miksi lämpötila ei nouse olomuodon muutoksen aikana; c) sulattamiseen tarvittava energia $Q$ kilojouleina; d) mitä yksinkertainen hiukkasmalli kuvaa hyvin ja mitä ei
 **Periaate:** Hiukkasmallissa lämpötila kuvaa hiukkasten lämpöliikkeen keskimääräistä liike-energiaa. Hiukkasten välisiin vuorovaikutuksiin liittyy vuorovaikutusenergiaa. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy sulamispisteessä. Lämpötilan muutosta ei siis ole, ja tarvittava lämpömäärä on $Q = sm$.
 **Mallivastaus a):** Kiinteässä aineessa hiukkaset ovat lähellä toisiaan säännöllisessä järjestyksessä. Ne värähtelevät paikoillaan. Nesteessä hiukkaset ovat yhä lähellä toisiaan, mutta ne liikkuvat toistensa ohi. Pysyvää järjestystä ei ole. Kaasussa hiukkaset ovat kaukana toisistaan. Ne liikkuvat nopeasti ja vapaasti ja täyttävät koko säiliön. Järjestys siis vähenee ja liike vapautuu järjestyksessä kiinteä, neste, kaasu.
-**Mallivastaus b):** Sulamisen ja höyrystymisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa. Simulaatiossa tämä näkyy näin: kun kiinteää ainetta lämmitetään, sen säännöllinen rakenne hajoaa. Hiukkasten keskimääräinen liike-energia ei tänä aikana kasva. Siksi lämpötila pysyy sulamispisteessä, kunnes kaikki aine on sulanut. Molekyylien sisäiset kemialliset sidokset eivät katkea. Sana ”välttämättä” on paikallaan. Ennen olomuodon muutosta ja sen jälkeen sama energia kasvattaa hiukkasten liike-energiaa, ja lämpötila nousee. Lämpötila pysyy vakiona vain, kun aine on puhdasta ja paine on vakio.
+**Mallivastaus b):** Sulamisen ja höyrystymisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa.
+
+Simulaatiossa tämä näkyy näin: kun kiinteää ainetta lämmitetään, sen säännöllinen rakenne hajoaa. Hiukkasten keskimääräinen liike-energia ei tänä aikana kasva. Siksi lämpötila pysyy sulamispisteessä, kunnes kaikki aine on sulanut. Molekyylien sisäiset kemialliset sidokset eivät katkea.
+
+Sana ”välttämättä” on paikallaan. Ennen olomuodon muutosta ja sen jälkeen sama energia kasvattaa hiukkasten liike-energiaa, ja lämpötila nousee. Lämpötila pysyy vakiona vain, kun aine on puhdasta ja paine on vakio.
 **Kaava:** $Q = sm$, ja kysytty $Q$ on jo ratkaistu.
 **Muunnokset:** Ei tarvita. Massa on kilogrammoina ja $s$ kilojouleina kilogrammaa kohti, joten tulos tulee kilojouleina. Tarkistusta varten $66{,}8\,\text{kJ} = 66\,800\,\text{J}$.
 **Sijoitus:**
@@ -303,7 +334,13 @@ Q &= 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}20\,\text{kg} \\
 \end{aligned}$$
 
 **Vastaus:** c) $67\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$.
-**Mallivastaus d):** Malli kuvaa hyvin sen, mikä olomuodoissa on laadullisesti erilaista (eli millaisia ne ovat, ei kuinka paljon): hiukkasten järjestyksen, liikkeen ja etäisyydet. Se näyttää myös, että kaasu täyttää koko säiliön ja että lämmittäminen voimistaa liikettä ja hajottaa rakenteen. Malli jättää kuvaamatta määrät. Siitä ei saa energiaa jouleina eikä ominaissulamislämmön arvoa. Kohdan c) arvo $334\,\tfrac{\text{kJ}}{\text{kg}}$ on mitattu oikeasta jäästä, sitä ei ole luettu simulaatiosta. Mallissa on vain pieni määrä hiukkasia tasokuvassa ja yksinkertainen vetovoima niiden välillä. Oikeassa jääpalassa hiukkasia on valtavan paljon kolmessa ulottuvuudessa. Siksi malli ei myöskään selitä veden erityispiirteitä, esimerkiksi sitä, että jää on harvempaa kuin vesi. Malli sopii siis ilmiön selittämiseen, mutta ei lukuarvojen ennustamiseen.
+**Mallivastaus d):** Malli kuvaa hyvin sen, mikä olomuodoissa on laadullisesti erilaista (eli millaisia ne ovat, ei kuinka paljon): hiukkasten järjestyksen, liikkeen ja etäisyydet. Se näyttää myös, että kaasu täyttää koko säiliön ja että lämmittäminen voimistaa liikettä ja hajottaa rakenteen.
+
+Malli jättää kuvaamatta määrät. Siitä ei saa energiaa jouleina eikä ominaissulamislämmön arvoa. Kohdan c) arvo $334\,\tfrac{\text{kJ}}{\text{kg}}$ on mitattu oikeasta jäästä, sitä ei ole luettu simulaatiosta.
+
+Mallissa on vain pieni määrä hiukkasia tasokuvassa ja yksinkertainen vetovoima niiden välillä. Oikeassa jääpalassa hiukkasia on valtavan paljon kolmessa ulottuvuudessa. Siksi malli ei myöskään selitä veden erityispiirteitä, esimerkiksi sitä, että jää on harvempaa kuin vesi.
+
+Malli sopii siis ilmiön selittämiseen, mutta ei lukuarvojen ennustamiseen.
 **Järkevyys:** Sama energia lämmittäisi sulaneen $0{,}20\,\text{kg}$:n vesimäärän lämpötilaa ($c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$) määrän
 
 $$\begin{aligned}
