@@ -1,9 +1,10 @@
-VERDICT: PASS
-CONTENT-HASH: ca261fda071e6e92
+VERDICT: FAIL
+CONTENT-HASH: 13a8e7bdce0fa52f
 
 ## Blocking
+- **A, definition** (herata choice `pr-tasapaino`, feedback of the option "The internal energy stays the same because energy is conserved"): "The energy that leaves ends up as heat in the surroundings" says the surroundings hold heat. This breaks the guardrail "heat is energy in transfer; a body has internal energy, not heat". It also contradicts fy3-6's new retrieval, whose feedback says "An object does not have heat". Suggested: "The energy that leaves is transferred as heat to the surroundings, whose internal energy increases: $\Delta U = Q + W$ gives $-3.0\,\text{kJ}$." The Finnish source has the same slip ("Pois siirtyvä energia on lämpönä ympäristössä"), so fix it there too, e.g. "siirtyy lämpönä ympäristöön, jonka sisäenergia kasvaa".
 
 ## Polish
 
 ## Checked
-batch delta review: three decimal-separator changes only ($1{,}5 \to 1.5\,\text{m}^2$, $4{,}0 \to 4.0\,\text{m}^2$, $20{,}0 \to 20.0\,\text{m}^2$); values unchanged. Recomputed: window "find the error" task, correct $\Delta T = 30\,\text{K}$ gives $P = UA\Delta T = 45\,\text{W}$ against the student's $15\,\text{W}$, so the error remains the temperature difference and the intended option stays the single correct one; refrigerator $P = 0.30\cdot 4.0\cdot 16\,\text{W} = 19.2\,\text{W}$, $E = Pt = 0.461\,\text{kWh}$ per day, matches `answer`; worked example walls $734\,\text{W}$ + windows $720\,\text{W}$ = $1.45\,\text{kW}$, $34.9\,\text{kWh}$ (about $126\,\text{MJ}$) per day, consistent with the data now written with the English point. Teacher-approved figures untouched.
+batch delta review: new herata retrieval choice (ground layer gives 4.0 kJ, receives 1.0 kJ, W = 0) recomputed: ΔU = −3.0 kJ and the temperature falls. Exactly one option is correct. The distractors (ΔU = 0, −4.0 kJ, +3.0 kJ) are really wrong, and apart from the item above their feedback is right. lesson-answers.py agrees. The choice reveals neither Ennusta pred-1 (back-radiation) nor pred-2 (a new balance after the CO₂ step).

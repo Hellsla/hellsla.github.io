@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2635a6898134e622
+CONTENT-HASH: 4f3e18beb1717ff9
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, order; only subscript labels differ, translated); no bare number+unit left outside LaTeX; decimal point (not comma) in English; no Finnish words left (Lake Päijänne is a proper noun); JSON valid; check_i18n 0 errors for en in these chapters.
-- Physics: numbers, answers and formulas identical to the Finnish; no new claim introduced.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+batch delta review: new herata retrieval choice (3000 kg water column, G = mg = 29 430 N ≈ 29 kN) recomputed; exactly one correct option, distractors 3000 N (mass for weight), 306 N (m/g, 305.8 rounds to 306) and 3000 kg (unit) really wrong with right feedback; lesson-answers.py agrees; it reveals none of Ennusta pred-1 to pred-3 (total vs gauge pressure, density, tube vs pool); prior-item title fix; new diver photo and caption (exhaled bubbles rise) physically right; worked-example stage splits keep every number (12.0 m, 101 kPa, ≈220 kPa, ≈180 kg) and claim unchanged.
