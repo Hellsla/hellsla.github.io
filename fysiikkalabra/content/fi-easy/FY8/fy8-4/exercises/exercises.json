@@ -111,6 +111,34 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-4-L1-09",
+      "level": 1,
+      "text": "Kuvassa on tuntemattoman lampun emissiospektri. Lue kuvasta vihreän viivan aallonpituus. Laske sen viivan fotonin liikemäärä. Anna vastaus yksikössä $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 1.21,
+      "unit": "10⁻²⁷ kg·m/s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-4-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "Röntgenfotonin aallonpituus on $0{,}0711\\,\\text{nm}$. Hae MAFY-taulukosta (mafytaulukot.fi) elektronin lepomassa energiayksikössä. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Kuinka monta prosenttia elektronin lepoenergiasta fotonin energia on? Anna vastaus prosentteina.",
+      "answer": 3.41,
+      "unit": "%",
+      "tolerance": 0.03,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Hiukkasten ominaisuuksia*."
+      ]
     }
   ],
   "level2": [
@@ -311,6 +339,19 @@
           "feedback": "Väite on tosi, mutta se ei kerro, kumpaan suuntaan aallonpituus muuttuu. Suunnan ratkaisee se, että fotoni luovuttaa elektronille energiaa ja liikemäärää."
         }
       ]
+    },
+    {
+      "id": "fy8-4-L2-09",
+      "level": 2,
+      "text": "Kuvassa on kuvitteellisen atomin energiatasot. Atomi on tasolla $E_3$ ja siirtyy tasolle $E_1$. Silloin atomi lähettää yhden fotonin. Lue energiat kuvasta. Laske lähetetyn fotonin liikemäärä. Atomin takaisku jätetään huomiotta. Anna vastaus yksikössä $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "figure": "fy8-3/levels-task",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 2.67,
+      "unit": "10⁻²⁷ kg·m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [

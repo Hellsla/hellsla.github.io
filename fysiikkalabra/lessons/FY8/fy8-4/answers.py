@@ -43,4 +43,9 @@ lam0, lam1 = 0.07110e-9, 0.07476e-9                 # Compton at θ = 120°: λ 
 p0, p1 = h / lam0, h / lam1                         # p = 9,319e-24, p' = 8,863e-24 kg m/s
 a["fy8-4-L3-05"] = math.sqrt(p0**2 + p1**2 - 2 * p0 * p1 * math.cos(math.radians(120))) / 1e-23   # cosine rule: p_e = 1,575e-23 -> 1,57
 # L3-05 check: p_e²/(2 m_e) = 850 eV, hc/λ − hc/λ' = 854 eV (agree within 0,5 %)
+# Figure tasks and a MAFY lookup task (added later)
+a["fy8-4-L1-09"] = h / 546e-9 / 1e-27              # green line read from fy8-2/lamp-spectrum, 546 nm: p = h/λ = 1,2136e-27 -> 1,21 (10⁻²⁷ kg·m/s)
+a["fy8-4-L2-09"] = (-3.0 - (-8.0)) * e / c / 1e-27  # fy8-3/levels-task, E3 = -3,0 eV -> E1 = -8,0 eV: E = 5,0 eV = 8,01e-19 J, p = E/c = 2,672e-27 -> 2,67 (10⁻²⁷ kg·m/s)
+m_e_c2 = 0.511e6 * e                                # MAFY Hiukkasten ominaisuuksia: electron rest mass 0,511 MeV/c² -> rest energy 8,187e-14 J
+a["fy8-4-L1-10"] = (h * c / 0.0711e-9) / m_e_c2 * 100   # photon 0,0711 nm: E = 2,794e-15 J = 17,44 keV; E / (m_e c²) = 3,413 %
 print(json.dumps({k: float(f"{v:.6g}") for k, v in a.items()}))
