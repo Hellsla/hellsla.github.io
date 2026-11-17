@@ -21,7 +21,11 @@
 ## fy5-12-L1-03
 **Find:** whether the interference at each of four points is constructive or destructive, when $\lambda = 0.60\,\text{m}$
 **Principle:** For waves from two sources of the same frequency and in phase the interference is constructive when the path difference is a whole number of wavelengths, $\Delta s = n\lambda$, and destructive when it is half a wavelength more than a whole number, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. So each path difference is divided by the wavelength.
-**Model answer:** a) $\tfrac{0.60\,\text{m}}{0.60\,\text{m}} = 1$, a whole number, so the interference is constructive. b) $\tfrac{0.90\,\text{m}}{0.60\,\text{m}} = 1.5 = 1 + \tfrac{1}{2}$, so destructive. c) $\tfrac{1.20\,\text{m}}{0.60\,\text{m}} = 2$, so constructive. d) $\tfrac{1.50\,\text{m}}{0.60\,\text{m}} = 2.5 = 2 + \tfrac{1}{2}$, so destructive. At the constructive points the wave from farther away lags by a whole number of periods and arrives crest with crest; at the destructive points it lags half a period more, so a crest arrives with a trough. The size of the path difference alone does not decide: the larger path difference c) is constructive, although the smaller b) is destructive.
+**Model answer:** a) $\tfrac{0.60\,\text{m}}{0.60\,\text{m}} = 1$, a whole number, so the interference is constructive. b) $\tfrac{0.90\,\text{m}}{0.60\,\text{m}} = 1.5 = 1 + \tfrac{1}{2}$, so destructive. c) $\tfrac{1.20\,\text{m}}{0.60\,\text{m}} = 2$, so constructive. d) $\tfrac{1.50\,\text{m}}{0.60\,\text{m}} = 2.5 = 2 + \tfrac{1}{2}$, so destructive.
+
+At the constructive points the wave from farther away lags by a whole number of periods and arrives crest with crest; at the destructive points it lags half a period more, so a crest arrives with a trough.
+
+The size of the path difference alone does not decide: the larger path difference c) is constructive, although the smaller b) is destructive.
 
 ## fy5-12-L1-04
 **Given:** wavelength $\lambda = 0.68\,\text{m}$, loudspeakers in phase
@@ -66,7 +70,9 @@
 ## fy5-12-L2-03
 **Given:** wavelength $\lambda = 2.0\,\text{cm}$, distances $s_1 = 14.0\,\text{cm}$ and $s_2 = 9.0\,\text{cm}$, amplitudes at point R $A_1 = 3.0\,\text{mm}$ and $A_2 = 2.0\,\text{mm}$
 **Find:** the amplitude $A_\text{R}$ of the vibration of the water at point R in millimetres
-**Principle:** First we find out from the ratio of the path difference to the wavelength whether the waves arrive in phase or in opposite phase. In opposite phase a crest of one wave is always at a trough of the other, and by the principle of superposition the displacements are subtracted, so the amplitude is the difference of the amplitudes. Waves of different sizes do not cancel each other completely.
+**Principle:** First we find out from the ratio of the path difference to the wavelength whether the waves arrive in phase or in opposite phase.
+
+In opposite phase a crest of one wave is always at a trough of the other, and by the principle of superposition the displacements are subtracted, so the amplitude is the difference of the amplitudes. Waves of different sizes do not cancel each other completely.
 **Formula:** $\Delta s = s_1 - s_2$; if $\tfrac{\Delta s}{\lambda} = n + \tfrac{1}{2}$, $A_\text{R} = A_1 - A_2$
 **Conversions:** None needed: the distances and the wavelength are in centimetres, and the amplitudes stay in millimetres.
 **Substitution:** $\Delta s = 14.0\,\text{cm} - 9.0\,\text{cm} = 5.0\,\text{cm}$, $\dfrac{\Delta s}{\lambda} = \dfrac{5.0\,\text{cm}}{2.0\,\text{cm}} = 2.5 = 2 + \tfrac{1}{2}$, so the interference is destructive, and $A_\text{R} = 3.0\,\text{mm} - 2.0\,\text{mm} = 1.0\,\text{mm}$
@@ -76,7 +82,9 @@
 ## fy5-12-L2-04
 **Given:** the distance between the centres of the pulses at first $s = 1.20\,\text{m}$, the speed of each pulse $v = 0.40\,\text{m/s}$; the pulses are equally large and of the same shape but on opposite sides of the string
 **Find:** the time $t$ in seconds until the string is completely straight for a moment
-**Principle:** By the principle of superposition, equally large pulses of the same shape on opposite sides cancel each other at every point exactly when they are exactly on top of each other, that is, when their centres are at the same place. The pulses approach each other, each at the speed $v$, so the distance between them shrinks by $2vt$ in the time $t$.
+**Principle:** By the principle of superposition, equally large pulses of the same shape on opposite sides cancel each other at every point exactly when they are exactly on top of each other, that is, when their centres are at the same place.
+
+The pulses approach each other, each at the speed $v$, so the distance between them shrinks by $2vt$ in the time $t$.
 **Formula:** $2vt = s$, so $t = \dfrac{s}{2v}$
 **Conversions:** None needed: the distance is in metres and the speed in $\text{m/s}$.
 **Substitution:** $t = \dfrac{1.20\,\text{m}}{2 \cdot 0.40\,\text{m/s}} = \dfrac{1.20\,\text{m}}{0.80\,\text{m/s}} = 1.5\,\text{s}$
@@ -86,17 +94,23 @@
 ## fy5-12-L3-01
 **Given:** distance between the loudspeakers $d = 3.0\,\text{m}$, frequency $f = 340\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$; loudspeakers in phase, the path parallel to the line between the loudspeakers
 **Find:** the number $N$ of quiet spots along the whole path
-**Principle:** It is quiet in destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. One side of a triangle is shorter than the sum of the other two, so in the triangle formed by the listener and the loudspeakers $s_1 < s_2 + d$, that is, the path difference is always smaller than the distance $d$ between the loudspeakers; it approaches $d$ only very far to the side. As the listener walks from left to right, the path difference grows from zero towards $d$ on each side of the perpendicular bisector, so every destructive path difference smaller than $d$ occurs once on each side.
+**Principle:** It is quiet in destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. One side of a triangle is shorter than the sum of the other two, so in the triangle formed by the listener and the loudspeakers $s_1 < s_2 + d$, that is, the path difference is always smaller than the distance $d$ between the loudspeakers; it approaches $d$ only very far to the side.
+
+As the listener walks from left to right, the path difference grows from zero towards $d$ on each side of the perpendicular bisector, so every destructive path difference smaller than $d$ occurs once on each side.
 **Formula:** $\lambda = \dfrac{v}{f}$ and the condition $\left(n + \tfrac{1}{2}\right)\lambda < d$; when there are $k$ numbers $n$ that meet the condition, $N = 2k$
 **Conversions:** None needed: the speed is in $\text{m/s}$ and the frequency in hertz, so the wavelength comes out in metres like $d$.
 **Substitution:** $\lambda = \dfrac{340\,\text{m/s}}{340\,\text{Hz}} = 1.0\,\text{m}$; the destructive path differences are $0.5\,\text{m}$, $1.5\,\text{m}$, $2.5\,\text{m}$, $3.5\,\text{m}$, …, of which $n = 0, 1, 2$ meet the condition $\Delta s < 3.0\,\text{m}$, that is, $k = 3$; $N = 2 \cdot 3 = 6$
 **Answer:** $6$ quiet spots, three on each side of the perpendicular bisector. The number is an exact whole number.
-**Reasonableness:** On the perpendicular bisector the path difference is zero and the sound loud, and quiet and loud spots alternate symmetrically on both sides of it, so the number has to be even. A path difference of $3.5\,\text{m}$ would be greater than the distance between the loudspeakers, $3.0\,\text{m}$, which is impossible, so there cannot be a fourth quiet spot on either side.
+**Reasonableness:** On the perpendicular bisector the path difference is zero and the sound loud, and quiet and loud spots alternate symmetrically on both sides of it, so the number has to be even.
+
+A path difference of $3.5\,\text{m}$ would be greater than the distance between the loudspeakers, $3.0\,\text{m}$, which is impossible, so there cannot be a fourth quiet spot on either side.
 
 ## fy5-12-L3-02
 **Given:** wave speed $v = 24\,\text{cm/s}$, point T is at rest at the frequency $f_1 = 10\,\text{Hz}$ and next at the frequency $f_2 = 14\,\text{Hz}$
 **Find:** the path difference $\Delta s$ at point T in centimetres
-**Principle:** The water is at rest when the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The point does not move, so the path difference is the same at both frequencies. When the frequency grows, the wavelength gets smaller and more wavelengths fit into the path difference. Since $14\,\text{Hz}$ is the next destructive frequency, exactly one more wavelength then fits into the path difference: $n$ grows by one.
+**Principle:** The water is at rest when the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The point does not move, so the path difference is the same at both frequencies. When the frequency grows, the wavelength gets smaller and more wavelengths fit into the path difference.
+
+Since $14\,\text{Hz}$ is the next destructive frequency, exactly one more wavelength then fits into the path difference: $n$ grows by one.
 **Formula:** $\dfrac{\Delta s}{\lambda_1} = n + \tfrac{1}{2}$ and $\dfrac{\Delta s}{\lambda_2} = n + \tfrac{3}{2}$. Subtract: $\Delta s\left(\dfrac{1}{\lambda_2} - \dfrac{1}{\lambda_1}\right) = 1$. Since $\dfrac{1}{\lambda} = \dfrac{f}{v}$, we get $\Delta s = \dfrac{v}{f_2 - f_1}$
 **Conversions:** None needed: the speed is in $\text{cm/s}$, so the wavelengths and the path difference come out in centimetres.
 **Substitution:** $\Delta s = \dfrac{24\,\text{cm/s}}{14\,\text{Hz} - 10\,\text{Hz}} = \dfrac{24\,\text{cm/s}}{4\,\text{Hz}} = 6.0\,\text{cm}$. For the check, the wavelengths: $\lambda_1 = \dfrac{24\,\text{cm/s}}{10\,\text{Hz}} = 2.4\,\text{cm}$ and $\lambda_2 = \dfrac{24\,\text{cm/s}}{14\,\text{Hz}} = 1.714\,\text{cm}$
@@ -106,7 +120,11 @@
 ## fy5-12-L3-03
 **Given:** distance between the gaps $d = 16.0\,\text{m}$, distance of the boat from the nearer gap $s_2 = 30.0\,\text{m}$ perpendicular to the breakwater, the boat on the nodal line nearest to the perpendicular bisector of the gaps
 **Find:** a justification for the gaps acting as sources in phase, and the wavelength $\lambda$ in metres
-**Principle:** The wave crests at sea are parallel to the breakwater, so the same crest arrives at both gaps at the same moment. In a narrow gap the wave diffracts and spreads into the harbour in curved wavefronts (chapter *A wave meets an obstacle or a gap*), so the gaps act like two sources of the same frequency and in phase. The boat, the nearer gap and the farther gap form a right triangle, so the distance to the farther gap follows from the Pythagorean theorem. The nodal line nearest to the perpendicular bisector is destructive interference with $n = 0$, $\Delta s = \tfrac{1}{2}\lambda$.
+**Principle:** The wave crests at sea are parallel to the breakwater, so the same crest arrives at both gaps at the same moment.
+
+In a narrow gap the wave diffracts and spreads into the harbour in curved wavefronts (chapter *A wave meets an obstacle or a gap*), so the gaps act like two sources of the same frequency and in phase.
+
+The boat, the nearer gap and the farther gap form a right triangle, so the distance to the farther gap follows from the Pythagorean theorem. The nodal line nearest to the perpendicular bisector is destructive interference with $n = 0$, $\Delta s = \tfrac{1}{2}\lambda$.
 **Formula:** $s_1 = \sqrt{d^2 + s_2^2}$ and $s_1 - s_2 = \dfrac{\lambda}{2}$, so $\lambda = 2\left(\sqrt{d^2 + s_2^2} - s_2\right)$
 **Conversions:** None needed: the distances are in metres.
 **Substitution:** $s_1 = \sqrt{(16.0\,\text{m})^2 + (30.0\,\text{m})^2} = \sqrt{1156\,\text{m}^2} = 34.0\,\text{m}$, $\lambda = 2 \cdot (34.0\,\text{m} - 30.0\,\text{m}) = 2 \cdot 4.0\,\text{m} = 8.0\,\text{m}$
@@ -116,12 +134,16 @@
 ## fy5-12-L1-06
 **Find:** what happens to two opposite pulses after they meet
 **Principle:** By the principle of superposition the displacement of the string at a point is the sum of the displacements of the pulses at that point. The addition takes place only as long as the pulses overlap, so it does not change the pulses themselves.
-**Model answer:** The pulses pass through each other and continue unchanged. When they overlap, the upward and downward displacements add up and the string is straight for a moment, but this does not mean that the pulses have vanished: the string is still moving, and the pulses reappear. The pulses do not bounce back like colliding objects and do not merge permanently, because they only add up at the moment they meet.
+**Model answer:** The pulses pass through each other and continue unchanged. When they overlap, the upward and downward displacements add up and the string is straight for a moment, but this does not mean that the pulses have vanished: the string is still moving, and the pulses reappear.
+
+The pulses do not bounce back like colliding objects and do not merge permanently, because they only add up at the moment they meet.
 
 ## fy5-12-L1-07
 **Find:** why a loud sound is heard on the perpendicular bisector at any frequency
 **Principle:** The combined effect of the waves from two sources in phase is decided by the path difference $\Delta s = |s_1 - s_2|$. Every point on the perpendicular bisector is equally far from both loudspeakers.
-**Model answer:** On the perpendicular bisector the distances are equal, so the path difference is $\Delta s = 0$. Both waves have travelled equally far, so they arrive at the listener in phase, crest with crest, and reinforce each other. The condition $\Delta s = n\lambda$ is satisfied with $n = 0$ whatever the wavelength, and that is why the reinforcement does not depend on the frequency. The speed of sound is the same everywhere.
+**Model answer:** On the perpendicular bisector the distances are equal, so the path difference is $\Delta s = 0$. Both waves have travelled equally far, so they arrive at the listener in phase, crest with crest, and reinforce each other.
+
+The condition $\Delta s = n\lambda$ is satisfied with $n = 0$ whatever the wavelength, and that is why the reinforcement does not depend on the frequency. The speed of sound is the same everywhere.
 
 ## fy5-12-L1-08
 **Given:** distances $s_1 = 5.30\,\text{m}$ and $s_2 = 4.45\,\text{m}$, speed of sound $v = 340\,\text{m/s}$, loudspeakers in phase
@@ -136,7 +158,11 @@
 ## fy5-12-L2-05
 **Given:** distance between the loudspeakers $d = 2.00\,\text{m}$, speed of sound $v = 340\,\text{m/s}$, positions of the points of weakest sound from the table (the microphone moved over the range $0.30\,\text{m}$ … $1.70\,\text{m}$): first $x_1 = 0.38\,\text{m}$ and sixth $x_6 = 1.63\,\text{m}$
 **Find:** the frequency $f$ of the sound in hertz
-**Principle:** Between the loudspeakers the distances of a point are $x$ and $d - x$, so the path difference is $\Delta s = |d - 2x|$. At a point of weakest sound the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the path differences of adjacent points differ by one wavelength. Since a change $\Delta x$ in $x$ changes the path difference by $2\Delta x$, the spacing of adjacent points is $\Delta x = \tfrac{\lambda}{2}$. This is the same $\lambda/2$ spacing as between the nodes of a standing wave (chapter Standing wave). The points are sound minima and not complete silence, because near one loudspeaker the waves differ in strength and do not cancel each other completely.
+**Principle:** Between the loudspeakers the distances of a point are $x$ and $d - x$, so the path difference is $\Delta s = |d - 2x|$. At a point of weakest sound the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the path differences of adjacent points differ by one wavelength.
+
+Since a change $\Delta x$ in $x$ changes the path difference by $2\Delta x$, the spacing of adjacent points is $\Delta x = \tfrac{\lambda}{2}$. This is the same $\lambda/2$ spacing as between the nodes of a standing wave (chapter Standing wave).
+
+The points are sound minima and not complete silence, because near one loudspeaker the waves differ in strength and do not cancel each other completely.
 **Formula:** $\Delta x = \dfrac{x_6 - x_1}{5}$, $\lambda = 2\Delta x$ and $f = \dfrac{v}{\lambda}$, so $f = \dfrac{v}{2\Delta x}$
 **Conversions:** None needed: the positions are in metres and the speed in $\text{m/s}$.
 **Substitution:** The table lists all the points in the chosen range in order, so there are five intervals between the first and the sixth point, and $\Delta x = \dfrac{1.63\,\text{m} - 0.38\,\text{m}}{5} = 0.250\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{2 \cdot 0.250\,\text{m}} = 680\,\text{Hz}$
@@ -146,12 +172,16 @@
 ## fy5-12-L2-06
 **Find:** how the student's claim that energy is lost on a nodal line is corrected
 **Principle:** Destructive interference means that the waves cancel each other's displacements at certain points. The loudspeakers, however, keep emitting the same amount of energy all the time, so the total amount of energy must be conserved.
-**Model answer:** The claim is wrong. On nodal lines the displacements cancel each other, so very little energy is carried there. The energy is not lost, however: the interference pattern distributes it in space differently, and correspondingly more energy goes to the points of constructive interference. The energy does not turn into heat on nodal lines and does not move back to the loudspeakers, because the waves pass through each other and the power produced by the loudspeakers stays the same.
+**Model answer:** The claim is wrong. On nodal lines the displacements cancel each other, so very little energy is carried there. The energy is not lost, however: the interference pattern distributes it in space differently, and correspondingly more energy goes to the points of constructive interference.
+
+The energy does not turn into heat on nodal lines and does not move back to the loudspeakers, because the waves pass through each other and the power produced by the loudspeakers stays the same.
 
 ## fy5-12-L2-07
 **Given:** amplitudes by path difference from the table; the waves of the sources are equally large
 **Find:** a) the wavelength $\lambda$ in centimetres and b) the amplitude $A$ of the wave from one source in millimetres
-**Principle:** The waves of sources in phase reinforce each other when $\Delta s = n\lambda$, and the amplitude of the resultant wave is then $2A$. In destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, the amplitude of equally large waves is zero. So the greatest amplitudes in the table, at $\Delta s = 0.0\,\text{cm}$, $2.0\,\text{cm}$ and $4.0\,\text{cm}$, are twice the amplitude of one wave, and the smallest, at $1.0\,\text{cm}$ and $3.0\,\text{cm}$, are close to zero.
+**Principle:** The waves of sources in phase reinforce each other when $\Delta s = n\lambda$, and the amplitude of the resultant wave is then $2A$. In destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, the amplitude of equally large waves is zero.
+
+So the greatest amplitudes in the table, at $\Delta s = 0.0\,\text{cm}$, $2.0\,\text{cm}$ and $4.0\,\text{cm}$, are twice the amplitude of one wave, and the smallest, at $1.0\,\text{cm}$ and $3.0\,\text{cm}$, are close to zero.
 **Formula:** a) the difference of the path differences of adjacent maxima is $\lambda$; b) $A_\text{max} = 2A$, so $A = \dfrac{A_\text{max}}{2}$
 **Conversions:** None needed: the path differences are in centimetres and the amplitudes in millimetres, as the task asks.
 **Substitution:** a) $\lambda = 2.0\,\text{cm} - 0.0\,\text{cm} = 2.0\,\text{cm}$, and the same spacing is between the maxima at $2.0\,\text{cm}$ and $4.0\,\text{cm}$. b) The sum of the maxima is $$\begin{aligned} &7.9\,\text{mm} + 8.1\,\text{mm} + 7.8\,\text{mm} \\ &= 23.8\,\text{mm} \end{aligned}$$, so their average is $A_\text{max,av} = \dfrac{23.8\,\text{mm}}{3} = 7.93\,\text{mm}$ and $A = \dfrac{7.93\,\text{mm}}{2} = 3.97\,\text{mm}$
@@ -166,23 +196,33 @@
 **Conversions:** None needed: the distances are in metres and the speed in $\text{m/s}$.
 **Substitution:** a) $\lambda = \dfrac{340\,\text{m/s}}{170\,\text{Hz}} = 2.00\,\text{m}$, $\Delta s = \dfrac{2.00\,\text{m}}{2} = 1.00\,\text{m}$ and $s_\text{N} = 3.00\,\text{m} + 1.00\,\text{m} = 4.00\,\text{m}$. b) A loud sound first results when $\Delta s = \lambda_2$, so $f_2 = \dfrac{340\,\text{m/s}}{1.00\,\text{m}} = 340\,\text{Hz}$.
 **Answer:** b) $340\,\text{Hz}$, three significant figures like the speed of sound; a) loudspeaker N is $4.00\,\text{m}$ from the listener.
-**Model answer:** c) The path difference $1.00\,\text{m}$ is half a wavelength only at the frequency $170\,\text{Hz}$ and at frequencies corresponding to odd multiples of it, such as $510\,\text{Hz}$. At the frequency $340\,\text{Hz}$ the sound is loud, so the arrangement damps only certain frequencies and only at a certain place, whereas noise contains many frequencies and the listener moves. In noise-cancelling headphones a microphone measures the noise, and a loudspeaker produces next to the ear a wave that has been inverted to the opposite phase. The path difference is then almost zero and the phase difference is half a period at all frequencies, so the waves weaken each other at the listener's ear.
+**Model answer:** c) The path difference $1.00\,\text{m}$ is half a wavelength only at the frequency $170\,\text{Hz}$ and at frequencies corresponding to odd multiples of it, such as $510\,\text{Hz}$. At the frequency $340\,\text{Hz}$ the sound is loud, so the arrangement damps only certain frequencies and only at a certain place, whereas noise contains many frequencies and the listener moves.
+
+In noise-cancelling headphones a microphone measures the noise, and a loudspeaker produces next to the ear a wave that has been inverted to the opposite phase. The path difference is then almost zero and the phase difference is half a period at all frequencies, so the waves weaken each other at the listener's ear.
 **Reasonableness:** Check: at the frequency $340\,\text{Hz}$ the wavelength is $1.00\,\text{m}$ and $\tfrac{\Delta s}{\lambda} = \tfrac{1.00\,\text{m}}{1.00\,\text{m}} = 1$, so the sound is loud. At the frequency $170\,\text{Hz}$ the ratio is $0.5$ and the sound is quiet; the ratio in between grows steadily from a half to one.
 
 ## fy5-12-L3-05
 **Given:** distance between the loudspeakers $d = 1.00\,\text{m}$, distance of the line from the loudspeakers $L = 4.00\,\text{m}$, loudspeakers at $y = \pm 0.50\,\text{m}$, quiet points from the table $y_1 = 0.82\,\text{m}$ and $y_2 = 3.01\,\text{m}$, $v = 340\,\text{m/s}$
 **Find:** the frequency $f$ of the sound in hertz
-**Principle:** The distances of the listener from the loudspeakers follow from the Pythagorean theorem, and their difference is the path difference. At quiet points the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud, and the path difference grows steadily as $y$ increases. So the first quiet point corresponds to $n = 0$ and the next to $n = 1$.
+**Principle:** The distances of the listener from the loudspeakers follow from the Pythagorean theorem, and their difference is the path difference. At quiet points the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$.
+
+On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud, and the path difference grows steadily as $y$ increases. So the first quiet point corresponds to $n = 0$ and the next to $n = 1$.
 **Formula:** $s_1 = \sqrt{L^2 + (y + 0.50\,\text{m})^2}$ and $s_2 = \sqrt{L^2 + (y - 0.50\,\text{m})^2}$, $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ and $f = \dfrac{v}{\lambda}$
 **Conversions:** None needed: all lengths are in metres.
 **Substitution:** At the point $y_1 = 0.82\,\text{m}$: $s_1 = \sqrt{(4.00\,\text{m})^2 + (1.32\,\text{m})^2} = 4.212\,\text{m}$ and $s_2 = \sqrt{(4.00\,\text{m})^2 + (0.32\,\text{m})^2} = 4.013\,\text{m}$, so $\Delta s = 4.212\,\text{m} - 4.013\,\text{m} = 0.199\,\text{m}$, $\lambda = 2 \cdot 0.199\,\text{m} = 0.399\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{0.399\,\text{m}} = 852.6\,\text{Hz}$. Check at the point $y_2 = 3.01\,\text{m}$: $s_1 = 5.322\,\text{m}$, $s_2 = 4.722\,\text{m}$ and $\Delta s = 0.599\,\text{m} = \tfrac{3}{2}\lambda$, so $\lambda = 0.400\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{0.400\,\text{m}} = 850.9\,\text{Hz}$.
 **Answer:** $8.5 \cdot 10^{2}\,\text{Hz}$ or $850\,\text{Hz}$, two significant figures: the two estimates $853\,\text{Hz}$ and $851\,\text{Hz}$ differ by less than a percent, and the path difference is a difference of two almost equal distances, so its accuracy is poorer than that of the distances.
-**Model answer:** b) On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud. As $y$ increases, the path difference grows from zero, and the first condition of destructive interference that it reaches is $\Delta s = \tfrac{1}{2}\lambda$, that is $n = 0$. The next quiet point requires the path difference $\tfrac{3}{2}\lambda$, that is $n = 1$, and between them there is a point of loud sound at $\Delta s = \lambda$. The second point gives the path difference $0.599\,\text{m}$, which is three times the first, $0.199\,\text{m}$ ($\tfrac{0.599}{0.199} = 3.0$), as it should be for $\tfrac{3}{2}\lambda$ and $\tfrac{1}{2}\lambda$; if the point $y_1$ had been $n = 1$, the ratio would have been $\tfrac{5}{3}$ and not $3$.
+**Model answer:** b) On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud. As $y$ increases, the path difference grows from zero, and the first condition of destructive interference that it reaches is $\Delta s = \tfrac{1}{2}\lambda$, that is $n = 0$.
+
+The next quiet point requires the path difference $\tfrac{3}{2}\lambda$, that is $n = 1$, and between them there is a point of loud sound at $\Delta s = \lambda$.
+
+The second point gives the path difference $0.599\,\text{m}$, which is three times the first, $0.199\,\text{m}$ ($\tfrac{0.599}{0.199} = 3.0$), as it should be for $\tfrac{3}{2}\lambda$ and $\tfrac{1}{2}\lambda$; if the point $y_1$ had been $n = 1$, the ratio would have been $\tfrac{5}{3}$ and not $3$.
 **Reasonableness:** The wavelength $0.400\,\text{m}$ is considerably smaller than the distance between the loudspeakers, $1.00\,\text{m}$, so the path difference can reach the value $\tfrac{3}{2}\lambda = 0.60\,\text{m} < d$ and there are at least two quiet points. The estimate $\Delta s \approx \dfrac{dy}{L} = \dfrac{1.00\,\text{m} \cdot 0.82\,\text{m}}{4.00\,\text{m}} = 0.205\,\text{m}$ is close to the exact value $0.199\,\text{m}$.
 
 ## fy5-12-L2-08
 **Find:** which line of the student's reasoning is wrong when finding out whether the interference at point P is constructive or destructive.
-**Principle:** The sources vibrate in phase at the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength, $\tfrac{\Delta s}{\lambda}$. If $\Delta s = n\lambda$, the waves arrive in phase and the interference is constructive. If $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, a crest meets a trough and the interference is destructive. The reasoning can be checked line by line: wavelength, path difference, ratio and conclusion.
+**Principle:** The sources vibrate in phase at the same frequency, so the type of interference is decided by the ratio of the path difference to the wavelength, $\tfrac{\Delta s}{\lambda}$. If $\Delta s = n\lambda$, the waves arrive in phase and the interference is constructive.
+
+If $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, a crest meets a trough and the interference is destructive. The reasoning can be checked line by line: wavelength, path difference, ratio and conclusion.
 **Model answer:** Line 1 is correct:
 
 $\lambda = \dfrac{v}{f} = \dfrac{0.36\,\text{m/s}}{12\,\text{Hz}}$
@@ -225,13 +265,25 @@ The correct answer is line 4. Check: with this wavelength the path differences o
 **Given:** from the source material (the PhET simulation *Wave Interference*, the Interference screen, sound as the wave type): two sources oscillating in phase and a top view of the wave field; in part c) the wavelength $\lambda = 0.80\,\text{m}$
 **Find:** a) the places of constructive and destructive interference; b) how the pattern changes when the frequency changes; c) the smallest positive path differences $\Delta s$ in metres; d) why the loudness varies in a room and why a real sound field is more complicated than the model
 **Principle:** The sources oscillate in phase and at the same frequency, so the kind of interference at a point is decided by its path difference $\Delta s = |s_1 - s_2|$ compared with the wavelength. When the path difference is a whole number of wavelengths, the waves arrive in phase. An extra half wavelength makes them arrive in opposite phase.
-**Part a):** In the picture of the simulation the light and dark areas show the pressure variation. The bands in which the light and dark places stand out strongly are places of constructive interference. One of them is the perpendicular bisector of the sources, where $\Delta s = 0$. On both sides of it there are curved lines where $\Delta s = \lambda$, $2\lambda$ and so on. Between them there are evenly grey bands, the nodal lines, where $\Delta s = \tfrac{1}{2}\lambda$, $\tfrac{3}{2}\lambda$ and so on. On them the interference is destructive and the medium stays almost at rest. The lines fan out from between the sources, and the pattern is symmetric about the perpendicular bisector.
-**Part b):** The speed of the wave in the medium does not change, so the equation $v = f\lambda$ gives $\lambda = \dfrac{v}{f}$ (chapter *How waves form and travel*). When the frequency increases, the wavelength shortens and the conditions are met at smaller path differences: the nodal lines move closer to each other, and there are more of them. When the frequency decreases, the lines spread apart and there are fewer of them. On the perpendicular bisector $\Delta s = 0$ at every frequency, so it stays constructive and the pattern stays symmetric.
-**Formula:** Part c): the condition for constructive interference is $\Delta s = n\lambda$. The value $n = 0$ gives a path difference of zero, which is not positive, so the smallest positive path difference comes from $n = 1$: $\Delta s_\text{c} = \lambda$. The condition for destructive interference is $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the smallest path difference comes from $n = 0$: $\Delta s_\text{d} = \tfrac{1}{2}\lambda$, and the next one with $n = 1$: $\Delta s_\text{d2} = \tfrac{3}{2}\lambda$
+**Part a):** In the picture of the simulation the light and dark areas show the pressure variation. The bands in which the light and dark places stand out strongly are places of constructive interference. One of them is the perpendicular bisector of the sources, where $\Delta s = 0$.
+
+On both sides of it there are curved lines where $\Delta s = \lambda$, $2\lambda$ and so on. Between them there are evenly grey bands, the nodal lines, where $\Delta s = \tfrac{1}{2}\lambda$, $\tfrac{3}{2}\lambda$ and so on. On them the interference is destructive and the medium stays almost at rest.
+
+The lines fan out from between the sources, and the pattern is symmetric about the perpendicular bisector.
+**Part b):** The speed of the wave in the medium does not change, so the equation $v = f\lambda$ gives $\lambda = \dfrac{v}{f}$ (chapter *How waves form and travel*). When the frequency increases, the wavelength shortens and the conditions are met at smaller path differences: the nodal lines move closer to each other, and there are more of them.
+
+When the frequency decreases, the lines spread apart and there are fewer of them. On the perpendicular bisector $\Delta s = 0$ at every frequency, so it stays constructive and the pattern stays symmetric.
+**Formula:** Part c): the condition for constructive interference is $\Delta s = n\lambda$. The value $n = 0$ gives a path difference of zero, which is not positive, so the smallest positive path difference comes from $n = 1$: $\Delta s_\text{c} = \lambda$.
+
+The condition for destructive interference is $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the smallest path difference comes from $n = 0$: $\Delta s_\text{d} = \tfrac{1}{2}\lambda$, and the next one with $n = 1$: $\Delta s_\text{d2} = \tfrac{3}{2}\lambda$
 **Conversions:** None needed: the wavelength is in metres, and the path difference is asked for in metres.
 **Substitution:** $\Delta s_\text{c} = 0.80\,\text{m}$ and $\Delta s_\text{d} = \tfrac{1}{2} \cdot 0.80\,\text{m} = 0.40\,\text{m}$ and $\Delta s_\text{d2} = \tfrac{3}{2} \cdot 0.80\,\text{m} = 1.20\,\text{m}$
 **Part d):** The listener's distances from the loudspeakers differ from place to place in the room, so the path difference varies with the position. At places where $\Delta s = n\lambda$ the waves arrive in phase and the sound is loud. At places where $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ they arrive in opposite phase and the sound is weak.
 
-The model of the simulation has two point sources, one frequency and a space without obstacles. In a real room the sound reflects from the walls, the floor and the ceiling, so many more waves arrive at the listener. Music contains many frequencies at once, and each has its own pattern. Loudspeakers are not point sources, and the amplitudes of the waves are not equal at the listener, so the waves do not cancel completely. In addition, the listener's ears are at different places.
+The model of the simulation has two point sources, one frequency and a space without obstacles. In a real room the sound reflects from the walls, the floor and the ceiling, so many more waves arrive at the listener.
+
+Music contains many frequencies at once, and each has its own pattern. Loudspeakers are not point sources, and the amplitudes of the waves are not equal at the listener, so the waves do not cancel completely. In addition, the listener's ears are at different places.
 **Answer:** $0.40\,\text{m}$ is the smallest positive path difference at which the interference is destructive. Constructive interference correspondingly occurs at a path difference of $0.80\,\text{m}$, and the next destructive path difference is $\tfrac{3}{2}\lambda = 1.20\,\text{m}$. The results have two significant figures like the wavelength $0.80\,\text{m}$. The box accepts $0.40$ or $0.4$, because they are the same number.
-**Reasonableness:** The ratio $\tfrac{\Delta s}{\lambda}$ is $0.40\,\text{m} : 0.80\,\text{m} = 0.5$ in the destructive case and $0.80\,\text{m} : 0.80\,\text{m} = 1$ in the constructive case, as the conditions require. The destructive place comes before the first constructive side line, as in the picture of the simulation. The path difference cannot be larger than the distance between the sources, so these places exist only if the distance between the sources is larger than the path difference in question.
+**Reasonableness:** The ratio $\tfrac{\Delta s}{\lambda}$ is $0.40\,\text{m} : 0.80\,\text{m} = 0.5$ in the destructive case and $0.80\,\text{m} : 0.80\,\text{m} = 1$ in the constructive case, as the conditions require. The destructive place comes before the first constructive side line, as in the picture of the simulation.
+
+The path difference cannot be larger than the distance between the sources, so these places exist only if the distance between the sources is larger than the path difference in question.

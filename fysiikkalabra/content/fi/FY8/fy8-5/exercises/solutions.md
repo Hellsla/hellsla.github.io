@@ -259,3 +259,63 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 $$. Kohdassa c) $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}3642 \cdot 10^{-19}\,\text{J}} = 5{,}905 \cdot 10^{-7}\,\text{m} = 590{,}5\,\text{nm}$ ja kohdassa d) $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}2343 \cdot 10^{-19}\,\text{J}} = 2{,}412 \cdot 10^{-7}\,\text{m} = 241{,}2\,\text{nm}$.
 **Vastaus:** a) Atomissa on $11$ elektronia, ja konfiguraatio on $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: kuoret $n = 1$ ja $n = 2$ täyttyvät ($2 + 8 = 10$ elektronia), ja yhdestoista elektroni on seuraavassa alimmassa orbitaalissa $3\text{s}$, joten uloimmalla kuorella on vain yksi elektroni. b) Valenssielektroni on litiumilla kuorella $n = 2$, natriumilla kuorella $n = 3$ ja kaliumilla kuorella $n = 4$. Se on sitä kauempana ytimestä, mitä korkeampi kuori on, ja sen ja ytimen välissä on yhä useampi täysi kuori, jonka elektronit hylkivät sitä. Ytimen varaus kasvaa lukujen $3$, $11$ ja $19$ mukaan, mutta ionisaatioenergia silti pienenee arvoista $5{,}39\,\text{eV}$ ja $5{,}14\,\text{eV}$ arvoon $4{,}34\,\text{eV}$, joten kuoren kasvun vaikutus on suurempi kuin ytimen varauksen. Vetyatomin kaava $\tfrac{13{,}6\,\text{eV}}{n^2}$ antaisi samalla tavalla pienenevät arvot $3{,}40\,\text{eV}$, $1{,}51\,\text{eV}$ ja $0{,}85\,\text{eV}$; alkalimetalleilla arvot ovat suurempia, koska sisäkuorten elektronit eivät varjosta ytimen varausta täysin, joten valenssielektroniin vaikuttaa suurempi varaus kuin vedyssä. c) Fotonin aallonpituus on $590\,\text{nm}$, kolme merkitsevää numeroa kuten luvussa $2{,}10\,\text{eV}$. d) Ionisaatioon kelpaa fotoni, jonka aallonpituus on enintään $241\,\text{nm}$. Fotonin energia $2{,}10\,\text{eV}$ on pienempi kuin $E_\text{i} = 5{,}14\,\text{eV}$, joten c)-kohdan fotoni ei riitä irrottamaan elektronia; se vain siirtää elektronin tilalle $3\text{p}$.
 **Järkevyys:** Aallonpituus $590\,\text{nm}$ on näkyvän valon alueella, keltaisen valon kohdalla, ja natriumlamppu hohtaa keltaisena. Energiat ovat johdonmukaisia: ionisoiva fotoni tarvitsee energian $5{,}14\,\text{eV}$, mikä on $\tfrac{5{,}14}{2{,}10} = 2{,}45$ kertaa viritysfotonin energia, ja aallonpituus on vastaavasti $\tfrac{590{,}5\,\text{nm}}{241{,}2\,\text{nm}} = 2{,}45$ kertaa niin pitkä. Ionisaatioraja $241\,\text{nm}$ on ultraviolettia, kuten pitääkin.
+
+## fy8-5-L2-08
+**Annettu:** kuvassa orbitaalit $1\text{s}$, $2\text{s}$ ja $2\text{p}$; kuvan $2\text{p}$-orbitaali on yksi kolmesta $2\text{p}$-orbitaalista; orbitaalilla enintään $2$ elektronia
+**Kysytty:** a) orbitaalien solmut, b) miksi elektronia ei havaita solmussa, c) alikuorten $1\text{s}$, $2\text{s}$ ja $2\text{p}$ elektronien enimmäismäärä $N_\text{max}$
+**Periaate:** Orbitaali on elektronin aaltofunktion antama todennäköisyysjakauma. Solmussa aalto on nolla, joten siellä todennäköisyys havaita elektroni on nolla. Alikuoren elektronien enimmäismäärä on orbitaalien lukumäärä kertaa kaksi, koska orbitaalilla on enintään kaksi elektronia (Paulin kieltosääntö).
+**Kuvaajan lukeminen:** Kuvassa $1\text{s}$ on pallo, jossa ei ole solmua. Orbitaalissa $2\text{s}$ on pallon sisällä solmupallo. Orbitaalissa $2\text{p}$ on kaksi lohkoa ja niiden välissä ytimen kautta kulkeva solmutaso. Kuva näyttää $2\text{p}$-alikuoresta vain yhden kolmesta orbitaalista, mutta tekstin mukaan kolmea orbitaalia on $3$. Orbitaaleja on siis $1$ ($1\text{s}$), $1$ ($2\text{s}$) ja $3$ ($2\text{p}$).
+**Kaava:** $N_\text{max} = 2 N_\text{orb}$, missä $N_\text{orb}$ on orbitaalien lukumäärä, alikuorille $1\text{s}$, $2\text{s}$ ja $2\text{p}$ yhteensä
+**Muunnokset:** Ei tarvita, koska kysytään lukumäärää.
+**Sijoitus:** Orbitaaleja on yhteensä $1 + 1 + 3 = 5$.
+Elektroneja mahtuu enintään $N_\text{max} = 2 \cdot 5 = 10$.
+**Vastaus:** $10$ elektronia. Tulos on tarkka kokonaisluku.
+
+a) Orbitaalissa $1\text{s}$ ei ole solmua, orbitaalissa $2\text{s}$ on solmupallo ja orbitaalissa $2\text{p}$ on solmutaso.
+
+b) Solmussa aalto on nolla, joten todennäköisyys havaita elektroni on siellä nolla. Solmun kummallakin puolella aalto poikkeaa nollasta, joten elektroni voi olla kummallakin puolella, vaikka se ei koskaan osu solmuun. Tämä ei tarkoita, että elektroni kulkisi solmun läpi radalla: aalto on tila, jolla ei ole rataa.
+**Järkevyys:** Tulos $10$ on sama kuin kuoren $n = 2$ enimmäismäärä $2 \cdot 2^2 = 8$ lisättynä kuoren $n = 1$ määrällä $2 \cdot 1^2 = 2$, eli $8 + 2 = 10$. Neonin $10$ elektronia täyttävät juuri nämä alikuoret $1\text{s}^2\,2\text{s}^2\,2\text{p}^6$.
+
+## fy8-5-L2-09
+**Annettu:** kuvan energiat $E_4 = -0{,}850\,\text{eV}$ ($4\text{s}$) ja $E_2 = -3{,}40\,\text{eV}$ ($2\text{p}$); $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** a) fotonin energia $E_\text{f}$ eV, b) aallonpituus $\lambda$, c) kuoren $n = 4$ orbitaalien lukumäärä ja perustelu aallonpituuden samuudelle
+**Periaate:** Energia säilyy: atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina, jonka energia on $E_\text{f} = \tfrac{hc}{\lambda}$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta.
+**Kuvaajan lukeminen:** Kuvassa $4\text{s}$-orbitaalin laatikko on energia-akselin kohdalla $-0{,}850\,\text{eV}$ ja $2\text{p}$-orbitaalien laatikot kohdalla $-3{,}40\,\text{eV}$. Nuoli alkaa ylemmältä tasolta ja päättyy alemmalle, joten fotoni syntyy siirtymässä $E_4 \to E_2$. Kuorella $n = 4$ kuva näyttää alikuoret $4\text{s}$, $4\text{p}$, $4\text{d}$ ja $4\text{f}$, joissa on $1$, $3$, $5$ ja $7$ laatikkoa.
+**Kaava:** $E_\text{f} = E_4 - E_2$ ja $E_\text{f} = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Muunnokset:** Energia muunnetaan jouleiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
+**Sijoitus:** Kohta a): $$
+\begin{aligned}
+E_\text{f} &= E_4 - E_2 \\
+&= -0{,}850\,\text{eV} - (-3{,}40\,\text{eV}) \\
+&= 2{,}55\,\text{eV}
+\end{aligned}
+$$
+Joulemuunnos: $$
+\begin{aligned}
+E_\text{f} &= 2{,}55 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 4{,}085 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
+Kohta b): $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+ja $$
+\begin{aligned}
+\lambda &= \frac{hc}{E_\text{f}} \\
+&= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}085 \cdot 10^{-19}\,\text{J}} \\
+&= 4{,}863 \cdot 10^{-7}\,\text{m} \\
+&= 486\,\text{nm}
+\end{aligned}
+$$
+**Vastaus:** $486\,\text{nm}$, kolme merkitsevää numeroa kuten energioissa $-0{,}850\,\text{eV}$ ja $-3{,}40\,\text{eV}$.
+
+a) Fotonin energia on $E_\text{f} = 2{,}55\,\text{eV}$.
+
+b) Aallonpituus on $\lambda = 486\,\text{nm}$.
+
+c) Kuoren $n = 4$ orbitaalien lukumäärä on $1 + 3 + 5 + 7 = 16 = 4^2$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta, joten kaikilla $16$ orbitaalilla on sama energia $-0{,}850\,\text{eV}$. Siirtymä $4\text{d} \to 2\text{p}$ alkaa samalta energialta ja päättyy samalle energialle kuin $4\text{s} \to 2\text{p}$, joten energiaero $2{,}55\,\text{eV}$ ja aallonpituus $486\,\text{nm}$ ovat samat.
+**Järkevyys:** Aallonpituus $486\,\text{nm}$ on näkyvän valon alueella, sinivihreää valoa, ja se on vedyn Balmer-sarjan toinen viiva. Se on lyhyempi kuin siirtymän $3 \to 2$ viiva $656\,\text{nm}$, koska energiaero $2{,}55\,\text{eV}$ on suurempi kuin $1{,}89\,\text{eV}$.

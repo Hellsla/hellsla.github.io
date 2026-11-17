@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1e178cb77d9b856d
+CONTENT-HASH: f33b3b571c66f73a
 
 ## Blocking
 
 ## Polish
-
+- [Minor] solutions.md Järkevyys: the split is clean; a wrapped line ends in "(" before the inequality in a narrow column; no fix needed.
 
 ## Checked
-- Delta review, round 3: solutions.md line 162 (Järkevyys): `2π√(0,300 : 20,14) s = 0,767 s.` lifted to a display formula.
-- Opened fy5-9-ex-390-0.png and fy5-9-ex-1280-0.png: one row at both widths, root bar covers the whole quotient, colon division, full stop inside the box; the text continues below.
-- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-9.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
-- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
-- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-9 --lang fi-easy; opened fy5-9-open-exercises-L3-1280-8 and -9 (the split Järkevyys block, formulas, final box).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

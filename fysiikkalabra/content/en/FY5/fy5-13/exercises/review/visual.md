@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2794fc8c4f25cc41
-ROUND: 3 (delta, work queue 5d: calculations re-broken; en)
+CONTENT-HASH: 514563bbc45f9e15
+ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
 
 ## Blocking
 
 ## Polish
-- [Minor] L1-02, L2-03, L2-05 Reasonableness — a one-row check now stands in its own display box in mid-sentence after "and"; reads well, slightly heavier than the inline original at 1280 px — keep, or return to inline where the row fits a 360 px line.
 
 ## Checked
-- fy5-13-390-0/-1/-2.png and fy5-13-1280-0/-1/-2.png (sheet-13-390.png, sheet-13-1280.png): L1-02, L2-03, L2-05 Reasonableness; the three lifted products each on one row, full stop inside the box, text flows before and after.
-- caption-label change (marker out of captions) was carried on main earlier; outside this diff.
-- Own Playwright captures of preview/en (`?ratkaisut=1`, every details box opened) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-13/; page scan at both widths: no horizontal overflow, no formula past the viewport, no KaTeX error.
+- Own reading of review/shots in content/en/FY5/fy5-13/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
+- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
+- Wording unchanged by the diff (paragraph cuts only); no figures changed.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 5

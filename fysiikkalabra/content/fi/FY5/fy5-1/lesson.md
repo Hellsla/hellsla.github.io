@@ -324,7 +324,9 @@ Juuttunutta mutteria avataan kiintoavaimella. Käsi tarttuu varteen $0{,}35\,\te
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $F = 240\,\text{N}$, $d = 0{,}35\,\text{m}$, $\alpha = 65^\circ$ ja mutterin vaatima momentti $80\,\text{Nm}$. Kysytään voiman momenttia $M$ ja sitä, riittääkö se.
+**Tunnetut ja kysytty.** $F = 240\,\text{N}$, $d = 0{,}35\,\text{m}$, $\alpha = 65^\circ$ ja mutterin vaatima momentti $80\,\text{Nm}$.
+
+Kysytään voiman momenttia $M$ ja sitä, riittääkö se.
 
 <!-- vaihe -->
 

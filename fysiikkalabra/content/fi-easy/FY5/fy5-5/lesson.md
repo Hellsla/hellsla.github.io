@@ -642,7 +642,9 @@ Kuinka suurella voimalla Maa ja Kuu vetävät toisiaan? Maan massa on $5{,}97 \c
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, Kuun massa $m = 7{,}35 \cdot 10^{22}\,\text{kg}$, etäisyys $r = 3{,}84 \cdot 10^{5}\,\text{km}$ ja gravitaatiovakio $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Kysytään gravitaatiovoiman suuruutta $F$.
+**Tunnetut ja kysytty.** Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, Kuun massa $m = 7{,}35 \cdot 10^{22}\,\text{kg}$, etäisyys $r = 3{,}84 \cdot 10^{5}\,\text{km}$ ja gravitaatiovakio $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$.
+
+Kysytään gravitaatiovoiman suuruutta $F$.
 
 <!-- vaihe -->
 

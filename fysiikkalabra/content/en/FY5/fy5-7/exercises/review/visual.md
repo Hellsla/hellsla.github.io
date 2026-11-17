@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7a6dd85128582070
+CONTENT-HASH: cb9de47dbd238fbc
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
+- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
 
 ## Checked
-- Delta, round 3 (English): solutions.md:30 and :111, checks lifted into display formulas; captions change (marker removed) not re-judged beyond the text.
-- Opened fy5-7-ex-peak-0-390.png, fy5-7-ex-eq-0-390.png and fy5-7-ex-eq-0-1280.png: `2.5 cm − (−2.5 cm) = 5.0 cm,` and the two `39.5 cm ∓ 7.50 cm` checks each on one row inside its box, the comma inside the formula, the sentence continuing below (`and`, `as measured.`); nothing clipped at either width (fy5-7-ex-peak-0-1280.png measured, not opened).
-- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
+- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-7/review/shots/ (current for this hash): exercises 1280 parts L2-8 (pendulum answer/part b split), L3-7 (sine fit), L1-3 (amplitude graph task).
+- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
+- Hash re-run at the end: cb9de47dbd238fbc (unchanged).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

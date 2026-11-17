@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 381d12526046039b
+CONTENT-HASH: ffe41b7b59ad6312
 
 ## Blocking
 
 ## Polish
-
+- [Minor] solutions.md L3-05 c): the new paragraph starts "Niiden diffraktio", with the antecedent (FM, digi-tv) at the end of the previous one; "FM- ja digi-tv-aaltojen diffraktio on heikkoa" would read alone.
 
 ## Checked
-- Delta review, round 3: solutions.md line 29 (Järkevyys): `8,0 Hz · 0,030 m = 0,24 m/s,` lifted to a display formula.
-- Opened sheet-390-c.png (fy5-11-ex-390-0.png) and sheet-1280-c.png (fy5-11-ex-1280-0.png): one row, the comma inside the box, `ja yksikkö (m/s)/(1/s) = m.` continues below with the small fraction legible.
-- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-11.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
-- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
-- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
+- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
+- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-11 --lang fi-easy; opened fy5-11-open-exercises-L3-1280-7 (split Perustelut, Järkevyys box).
+- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
+- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
+- Not opened: the 390 px captures (the change is text breaks in the same column).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

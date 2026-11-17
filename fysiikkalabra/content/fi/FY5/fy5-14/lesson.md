@@ -581,7 +581,9 @@ Juna ajaa suoraa rataa tasaisella nopeudella $108\,\text{km/h}$ ja soittaa ään
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Äänimerkin taajuus $f_0 = 311\,\text{Hz}$, junan nopeus $v_\text{L} = 108\,\text{km/h}$ ja äänen nopeus $v = 340\,\text{m/s}$. Kysytään kuultua taajuutta junan lähestyessä ($f_1$) ja loitotessa ($f_2$) sekä taajuuden laskua $\Delta f = f_1 - f_2$.
+**Tunnetut ja kysytty.** Äänimerkin taajuus $f_0 = 311\,\text{Hz}$, junan nopeus $v_\text{L} = 108\,\text{km/h}$ ja äänen nopeus $v = 340\,\text{m/s}$.
+
+Kysytään kuultua taajuutta junan lähestyessä ($f_1$) ja loitotessa ($f_2$) sekä taajuuden laskua $\Delta f = f_1 - f_2$.
 
 <!-- vaihe -->
 
@@ -621,7 +623,9 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{L}} \\
 
 <!-- vaihe -->
 
-**Tulos.** Matkustaja kuulee lähestyvän junan äänen taajuudella $341\,\text{Hz}$ ja loittonevan taajuudella $286\,\text{Hz}$, kolmella merkitsevällä numerolla kuten lähtötiedoissa. Ohitushetkellä taajuus laskee noin $55\,\text{Hz}$: erotuksen tarkkuus on noin hertsi, koska kumpikin taajuus tunnetaan noin puolen hertsin tarkkuudella. Todellisuudessa matkustaja on hieman radan sivussa, joten taajuus ei laske hetkessä vaan liukuvasti sinä lyhyenä aikana, jona juna ohittaa hänet. Kaukana ohituskohdasta kuullut taajuudet ovat silti lähes $341\,\text{Hz}$ ja $286\,\text{Hz}$.
+**Tulos.** Matkustaja kuulee lähestyvän junan äänen taajuudella $341\,\text{Hz}$ ja loittonevan taajuudella $286\,\text{Hz}$, kolmella merkitsevällä numerolla kuten lähtötiedoissa. Ohitushetkellä taajuus laskee noin $55\,\text{Hz}$: erotuksen tarkkuus on noin hertsi, koska kumpikin taajuus tunnetaan noin puolen hertsin tarkkuudella.
+
+Todellisuudessa matkustaja on hieman radan sivussa, joten taajuus ei laske hetkessä vaan liukuvasti sinä lyhyenä aikana, jona juna ohittaa hänet. Kaukana ohituskohdasta kuullut taajuudet ovat silti lähes $341\,\text{Hz}$ ja $286\,\text{Hz}$.
 
 <!-- vaihe -->
 

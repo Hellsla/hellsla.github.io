@@ -61,7 +61,9 @@
 ## fy5-13-L2-02
 **Given:** tuning fork $f = 440\,\text{Hz}$; shortest resonating air column $L = 19.3\,\text{cm}$, closed at its lower end by the water surface
 **Find:** the speed of sound in air $v$ in metres per second
-**Principle:** At the water surface the air cannot move, so there is a displacement node, and at the open mouth of the tube there is an antinode. The sound is first amplified when the length of the air column corresponds to the fundamental frequency of a closed tube, that is, a quarter of a wavelength from the node to the antinode. The speed follows from the basic wave equation.
+**Principle:** At the water surface the air cannot move, so there is a displacement node, and at the open mouth of the tube there is an antinode.
+
+The sound is first amplified when the length of the air column corresponds to the fundamental frequency of a closed tube, that is, a quarter of a wavelength from the node to the antinode. The speed follows from the basic wave equation.
 **Formula:** $L = \dfrac{\lambda}{4}$ and $v = f\lambda$, so $v = 4 L f$
 **Conversions:** $L = 19.3\,\text{cm} = 0.193\,\text{m}$
 **Substitution:** $v = 4 \cdot 0.193\,\text{m} \cdot 440\,\text{Hz} = 0.772\,\text{m} \cdot 440\,\text{Hz} = 339.68\,\text{m/s}$
@@ -91,7 +93,9 @@
 
 ## fy5-13-L2-08
 **Find:** how the fundamental frequency of a pipe of length $L$ that is open at both ends changes when the pipe is made half as long and one end is closed
-**Principle:** A pipe open at both ends has a displacement antinode at each end, so at the fundamental frequency half a wavelength fits into the length of the pipe and $f_1 = \tfrac{v}{2L}$. In a pipe closed at one end the closed end is a node and the open end an antinode, so a quarter of a wavelength fits into the length and $f_1 = \tfrac{v}{4L}$. The speed of sound $v$ is the same in both, because the air temperature does not change.
+**Principle:** A pipe open at both ends has a displacement antinode at each end, so at the fundamental frequency half a wavelength fits into the length of the pipe and $f_1 = \tfrac{v}{2L}$.
+
+In a pipe closed at one end the closed end is a node and the open end an antinode, so a quarter of a wavelength fits into the length and $f_1 = \tfrac{v}{4L}$. The speed of sound $v$ is the same in both, because the air temperature does not change.
 **Model answer:** The fundamental frequency stays the same. The fundamental frequency of the first pipe is
 
 $f_1 = \dfrac{v}{2L}$
@@ -102,12 +106,16 @@ $f_1' = \dfrac{v}{4 \cdot \tfrac{L}{2}}$
 
 $f_1' = \dfrac{v}{2L}$
 
-The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles the fundamental frequency, and the plug halves it, so the changes cancel each other. Doubling would be the result if the closed pipe were calculated like an open pipe or a string. Dropping to half takes into account only the plug, and becoming four times as high reads the effect of the plug the wrong way round.
+The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles the fundamental frequency, and the plug halves it, so the changes cancel each other. Doubling would be the result if the closed pipe were calculated like an open pipe or a string.
+
+Dropping to half takes into account only the plug, and becoming four times as high reads the effect of the plug the wrong way round.
 
 ## fy5-13-L3-01
 **Given:** fundamental frequency of the open organ pipe $f_\text{o} = 262\,\text{Hz}$; the length of the pipe $L$ and the speed of sound $v$ stay the same when the upper end is closed
 **Find:** the fundamental frequency $f_\text{c}$ of the closed pipe in hertz
-**Principle:** In an open pipe there is a displacement antinode at each end, so at the fundamental frequency $L = \tfrac{\lambda}{2}$. At the closed end there is a node, so at the fundamental frequency of the closed pipe $L = \tfrac{\lambda}{4}$. The same length therefore corresponds to a wavelength twice as long, and since the speed of sound is the same, the frequency is halved.
+**Principle:** In an open pipe there is a displacement antinode at each end, so at the fundamental frequency $L = \tfrac{\lambda}{2}$. At the closed end there is a node, so at the fundamental frequency of the closed pipe $L = \tfrac{\lambda}{4}$.
+
+The same length therefore corresponds to a wavelength twice as long, and since the speed of sound is the same, the frequency is halved.
 **Formula:** $f_\text{o} = \dfrac{v}{2L}$ and $f_\text{c} = \dfrac{v}{4L}$, so dividing, $\dfrac{f_\text{c}}{f_\text{o}} = \dfrac{2L}{4L} = \dfrac{1}{2}$, giving $f_\text{c} = \dfrac{f_\text{o}}{2}$
 **Conversions:** None are needed: the length and the speed are not needed as numbers, because they cancel.
 **Substitution:** $f_\text{c} = \dfrac{262\,\text{Hz}}{2} = 131\,\text{Hz}$
@@ -136,18 +144,28 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 
 ## fy5-13-L1-06
 **Find:** which statement describes an antinode of a standing wave correctly
-**Principle:** A standing wave forms when waves travelling in opposite directions add up. At points where the waves are in the same phase at every moment they reinforce each other and the amplitude of the vibration is greatest: this is an antinode. At points where the waves are in opposite phases at every moment they cancel each other and the displacement is zero: this is a node.
-**Model answer:** An antinode is a point where the string vibrates with the greatest amplitude, because the waves travelling in opposite directions are always in the same phase there. The statement about a string that stays still all the time describes a node. A wave crest does not travel in a standing wave, so the statement about a crest travelling to the antinode is wrong. At the fixing point the string cannot move, so there is a node, not an antinode. An antinode is always halfway between two nodes, $\tfrac{\lambda}{4}$ from each of them.
+**Principle:** A standing wave forms when waves travelling in opposite directions add up. At points where the waves are in the same phase at every moment they reinforce each other and the amplitude of the vibration is greatest: this is an antinode.
+
+At points where the waves are in opposite phases at every moment they cancel each other and the displacement is zero: this is a node.
+**Model answer:** An antinode is a point where the string vibrates with the greatest amplitude, because the waves travelling in opposite directions are always in the same phase there. The statement about a string that stays still all the time describes a node.
+
+A wave crest does not travel in a standing wave, so the statement about a crest travelling to the antinode is wrong. At the fixing point the string cannot move, so there is a node, not an antinode. An antinode is always halfway between two nodes, $\tfrac{\lambda}{4}$ from each of them.
 
 ## fy5-13-L1-07
 **Find:** which of the given frequencies is a natural frequency of a tube closed at one end when the fundamental frequency is $f_1 = 150\,\text{Hz}$
 **Principle:** At the closed end there is a displacement node and at the open end an antinode. From a node to an antinode is a quarter of a wavelength, so the length of the tube is an odd number of quarter wavelengths. The natural frequencies are therefore $f_n = n f_1$ only for the odd numbers $n = 1, 3, 5, \ldots$
-**Model answer:** The correct option is $450\,\text{Hz}$, because the natural frequencies are odd multiples of the fundamental frequency and $3 f_1 = 3 \cdot 150\,\text{Hz} = 450\,\text{Hz}$. The next natural frequencies would be $750\,\text{Hz}$, $1050\,\text{Hz}$ and so on. The option $300\,\text{Hz}$ is twice the fundamental frequency, which is a natural frequency for a string but not for a closed tube. The option $600\,\text{Hz}$ is four times the fundamental frequency, and an even multiple does not fit a closed tube. The option $75\,\text{Hz}$ is lower than the fundamental frequency, but the fundamental frequency is the lowest natural frequency.
+**Model answer:** The correct option is $450\,\text{Hz}$, because the natural frequencies are odd multiples of the fundamental frequency and $3 f_1 = 3 \cdot 150\,\text{Hz} = 450\,\text{Hz}$. The next natural frequencies would be $750\,\text{Hz}$, $1050\,\text{Hz}$ and so on.
+
+The option $300\,\text{Hz}$ is twice the fundamental frequency, which is a natural frequency for a string but not for a closed tube. The option $600\,\text{Hz}$ is four times the fundamental frequency, and an even multiple does not fit a closed tube.
+
+The option $75\,\text{Hz}$ is lower than the fundamental frequency, but the fundamental frequency is the lowest natural frequency.
 
 ## fy5-13-L1-08
 **Given:** length of the vibrating part of the string $L = 0.60\,\text{m}$, speed of the wave $v = 120\,\text{m/s}$; the string is fixed at both ends; the student's result $200\,\text{Hz}$
 **Find:** a) the student's error; b) the correct fundamental frequency $f_1$ in hertz
-**Principle:** There is a node at each fixed end. At the fundamental frequency the string has one antinode in the middle, so the length of the string is only half a wavelength: $L = \tfrac{\lambda_1}{2}$. The student took the length of the whole string as the wavelength, so the wavelength was half of what it should be and the frequency twice too large. The fundamental frequency follows from the equation $v = f\lambda$.
+**Principle:** There is a node at each fixed end. At the fundamental frequency the string has one antinode in the middle, so the length of the string is only half a wavelength: $L = \tfrac{\lambda_1}{2}$.
+
+The student took the length of the whole string as the wavelength, so the wavelength was half of what it should be and the frequency twice too large. The fundamental frequency follows from the equation $v = f\lambda$.
 **Formula:** $\lambda_1 = 2L$, so $f_1 = \dfrac{v}{\lambda_1} = \dfrac{v}{2L}$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_1 = \dfrac{120\,\text{m/s}}{2 \cdot 0.60\,\text{m}} = \dfrac{120\,\text{m/s}}{1.20\,\text{m}} = 100\,\text{Hz}$
@@ -167,7 +185,9 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 ## fy5-13-L2-06
 **Given:** tuning fork $f = 512\,\text{Hz}$; lengths of the air column at the resonances $L_1 = 16.3\,\text{cm}$, $L_2 = 49.9\,\text{cm}$ and $L_3 = 83.3\,\text{cm}$; the water surface is a closed end
 **Find:** a) the speed of sound in air $v$ in metres per second; b) the deviation of the first length from a quarter of a wavelength and its cause
-**Principle:** At the water surface there is a displacement node and at the mouth of the tube an antinode, so at resonance the length of the air column is an odd number of quarter wavelengths. The distance between successive resonances is half a wavelength, so the difference between the lengths of the first and the third resonance is a whole wavelength. When the difference is used, the end correction of the tube disappears, because it affects all the lengths equally.
+**Principle:** At the water surface there is a displacement node and at the mouth of the tube an antinode, so at resonance the length of the air column is an odd number of quarter wavelengths.
+
+The distance between successive resonances is half a wavelength, so the difference between the lengths of the first and the third resonance is a whole wavelength. When the difference is used, the end correction of the tube disappears, because it affects all the lengths equally.
 **Formula:** $\lambda = L_3 - L_1$ and $v = f\lambda$; for part b) $e = \dfrac{\lambda}{4} - L_1$
 **Conversions:** $L_3 - L_1$ is calculated in centimetres and converted to metres: $67.0\,\text{cm} = 0.670\,\text{m}$.
 **Substitution:** $\lambda = 83.3\,\text{cm} - 16.3\,\text{cm} = 67.0\,\text{cm} = 0.670\,\text{m}$, so $v = 512\,\text{Hz} \cdot 0.670\,\text{m} = 343.0\,\text{m/s}$. In part b) $\tfrac{\lambda}{4} = 0.670\,\text{m} : 4 = 16.75\,\text{cm}$ and $e = 16.75\,\text{cm} - 16.3\,\text{cm} = 0.45\,\text{cm}$.
@@ -177,27 +197,49 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 ## fy5-13-L2-07
 **Find:** what explains the rise in pitch when the string is pressed against the fingerboard and the tension does not change
 **Principle:** At the fundamental frequency of a string fixed at both ends $\lambda = 2L$ and $f = \tfrac{v}{2L}$. The speed of the wave depends on the tension and the thickness of the string, which do not change when the string is pressed. Only the length of the vibrating part changes.
-**Model answer:** The correct explanation is that the vibrating part becomes shorter, so the wavelength decreases and the frequency increases when the speed of the wave does not change. The statement that the speed of the wave would increase in a shorter string is wrong, because the speed depends on the tension and the thickness and not on the length. The statement that the wavelength stays the same is wrong, because $\lambda = 2L$ becomes shorter with the string. The statement about the amplitude is wrong, because the amplitude determines neither the speed of the wave nor the frequency.
+**Model answer:** The correct explanation is that the vibrating part becomes shorter, so the wavelength decreases and the frequency increases when the speed of the wave does not change.
+
+The statement that the speed of the wave would increase in a shorter string is wrong, because the speed depends on the tension and the thickness and not on the length. The statement that the wavelength stays the same is wrong, because $\lambda = 2L$ becomes shorter with the string.
+
+The statement about the amplitude is wrong, because the amplitude determines neither the speed of the wave nor the frequency.
 
 ## fy5-13-L3-04
 **Given:** length of the vibrating part of the string $L = 0.650\,\text{m}$ (does not change); $F$ and $f_1$ of the table (example data): $20.0\,\text{N}$, $40.0\,\text{N}$, $60.0\,\text{N}$, $80.0\,\text{N}$ and $81.0\,\text{Hz}$, $115.5\,\text{Hz}$, $140.0\,\text{Hz}$, $163.0\,\text{Hz}$; tension for the prediction $120\,\text{N}$
 **Find:** a) which ratio, $\tfrac{f_1}{F}$ or $\tfrac{f_1^2}{F}$, is constant; b) the change in the fundamental frequency when $F$ is quadrupled; c) the fundamental frequency $f_1$ at the tension $120\,\text{N}$ in hertz
-**Principle:** If $f_1 \propto F$, the ratio $\tfrac{f_1}{F}$ would be constant. If $f_1 \propto \sqrt{F}$, that is, $f_1^2 \propto F$, the ratio $\tfrac{f_1^2}{F}$ would be constant. In real measurements the ratios are not exactly equal, so a ratio whose variation is small and random is accepted as constant. The length of the string stays the same, so the change in the fundamental frequency is caused by the change in the speed of the wave when the tension of the string changes.
+**Principle:** If $f_1 \propto F$, the ratio $\tfrac{f_1}{F}$ would be constant. If $f_1 \propto \sqrt{F}$, that is, $f_1^2 \propto F$, the ratio $\tfrac{f_1^2}{F}$ would be constant. In real measurements the ratios are not exactly equal, so a ratio whose variation is small and random is accepted as constant.
+
+The length of the string stays the same, so the change in the fundamental frequency is caused by the change in the speed of the wave when the tension of the string changes.
 **Formula:** $\dfrac{f_1^2}{F} = k$, so $f_1 = \sqrt{kF}$, where $k$ is the mean of the ratios
 **Conversions:** None are needed: the forces are in newtons and the frequencies in hertz.
-**Substitution:** a) The ratios $\tfrac{f_1}{F}$ are $4.05$, $2.89$, $2.33$ and $2.04$ in the unit $\tfrac{\text{Hz}}{\text{N}}$, so they decrease steadily and are not constant. The ratios $\tfrac{f_1^2}{F}$ are $328.1$, $333.5$, $326.7$ and $332.1$ in the unit $\tfrac{\text{Hz}^2}{\text{N}}$ and deviate randomly from their mean by only about $1\,\%$. b) Since $f_1 \propto \sqrt{F}$, a quadrupled $F$ produces a frequency $\sqrt{4} = 2$ times as high. c) The sum of the ratios is $1320.3\,\tfrac{\text{Hz}^2}{\text{N}}$, so $k = 1320.3 : 4 = 330.1\,\tfrac{\text{Hz}^2}{\text{N}}$. Then $f_1 = \sqrt{330.1\,\tfrac{\text{Hz}^2}{\text{N}} \cdot 120\,\text{N}} = \sqrt{39610\,\text{Hz}^2} = 199.0\,\text{Hz}$
+**Substitution:** a) The ratios $\tfrac{f_1}{F}$ are $4.05$, $2.89$, $2.33$ and $2.04$ in the unit $\tfrac{\text{Hz}}{\text{N}}$, so they decrease steadily and are not constant. The ratios $\tfrac{f_1^2}{F}$ are $328.1$, $333.5$, $326.7$ and $332.1$ in the unit $\tfrac{\text{Hz}^2}{\text{N}}$ and deviate randomly from their mean by only about $1\,\%$.
+
+b) Since $f_1 \propto \sqrt{F}$, a quadrupled $F$ produces a frequency $\sqrt{4} = 2$ times as high. c) The sum of the ratios is $1320.3\,\tfrac{\text{Hz}^2}{\text{N}}$, so $k = 1320.3 : 4 = 330.1\,\tfrac{\text{Hz}^2}{\text{N}}$. Then $f_1 = \sqrt{330.1\,\tfrac{\text{Hz}^2}{\text{N}} \cdot 120\,\text{N}} = \sqrt{39610\,\text{Hz}^2} = 199.0\,\text{Hz}$
 **Answer:** $199\,\text{Hz}$, three significant figures as in the measurement results. The proportionality $f_1 \propto \sqrt{F}$ fits the data, but $f_1 \propto F$ does not.
-**Reasonableness:** The measured frequencies $81.0\,\text{Hz}$ and $163.0\,\text{Hz}$ correspond to the forces $20.0\,\text{N}$ and $80.0\,\text{N}$, which differ by a factor of four, and the frequency doubles: $163.0 : 81.0 = 2.01$, which supports part b). The prediction is extrapolation instead of interpolation: $120\,\text{N}$ is $50\,\%$ greater than the greatest measured tension $80.0\,\text{N}$. The prediction is reasonably reliable, because the same string and the same model describe the whole measured range, but it does not hold if the string approaches breaking or stretches in a different way. The prediction is greater than the frequency $163.0\,\text{Hz}$ measured at the greatest measured force, as it should be, because the force is greater.
+**Reasonableness:** The measured frequencies $81.0\,\text{Hz}$ and $163.0\,\text{Hz}$ correspond to the forces $20.0\,\text{N}$ and $80.0\,\text{N}$, which differ by a factor of four, and the frequency doubles: $163.0 : 81.0 = 2.01$, which supports part b). The prediction is extrapolation instead of interpolation: $120\,\text{N}$ is $50\,\%$ greater than the greatest measured tension $80.0\,\text{N}$.
+
+The prediction is reasonably reliable, because the same string and the same model describe the whole measured range, but it does not hold if the string approaches breaking or stretches in a different way.
+
+The prediction is greater than the frequency $163.0\,\text{Hz}$ measured at the greatest measured force, as it should be, because the force is greater.
 
 ## fy5-13-L3-05
 **Given:** two tubes, each of length $L = 0.800\,\text{m}$; the three lowest resonance frequencies (example data): tube A $207\,\text{Hz}$, $413\,\text{Hz}$, $621\,\text{Hz}$ and tube B $103\,\text{Hz}$, $311\,\text{Hz}$, $517\,\text{Hz}$; the end correction of the tubes is ignored
 **Find:** a) which tube is open and which is closed; b) the speed of sound in air $v$ in metres per second, taking the mean of the results of the tubes; c) why the tubes sound different
-**Principle:** The natural frequencies of a tube open at both ends are $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, so the resonances are in the ratio $1 : 2 : 3$. The natural frequencies of a tube closed at one end are $f_n = n \cdot \tfrac{v}{4L}$ only for odd $n$, so the resonances are in the ratio $1 : 3 : 5$. The ratios reveal the type of the tube, and each data set gives its own estimate of the speed.
+**Principle:** The natural frequencies of a tube open at both ends are $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, so the resonances are in the ratio $1 : 2 : 3$. The natural frequencies of a tube closed at one end are $f_n = n \cdot \tfrac{v}{4L}$ only for odd $n$, so the resonances are in the ratio $1 : 3 : 5$.
+
+The ratios reveal the type of the tube, and each data set gives its own estimate of the speed.
 **Formula:** open tube $f_1 = \dfrac{v}{2L}$, so $v = 2 L f_1$; closed tube $f_1 = \dfrac{v}{4L}$, so $v = 4 L f_1$; for both, $f_1$ is the mean of the ratios $\tfrac{f}{n}$ ($n = 1, 2, 3$ for the open tube and $n = 1, 3, 5$ for the closed tube)
 **Conversions:** None are needed: the length is in metres and the frequencies in hertz.
-**Substitution:** a) For tube A the frequencies are about $207\,\text{Hz} \cdot (1, 2, 3)$, so A is open. For tube B they are about $103\,\text{Hz} \cdot (1, 3, 5)$, so B is closed. b) Open A: the sum of the ratios $207.0$, $206.5$ and $207.0$ is $620.5\,\text{Hz}$, so $f_{1,\text{A}} = 206.83\,\text{Hz}$ and $v_\text{A} = 2 \cdot 0.800\,\text{m} \cdot 206.83\,\text{Hz} = 330.9\,\text{m/s}$. Closed B: the sum of the ratios $103.0$, $103.67$ and $103.4$ is $310.07\,\text{Hz}$, so $f_{1,\text{B}} = 103.36\,\text{Hz}$ and $v_\text{B} = 4 \cdot 0.800\,\text{m} \cdot 103.36\,\text{Hz} = 330.7\,\text{m/s}$. The mean is $v = (330.9\,\text{m/s} + 330.7\,\text{m/s}) : 2 = 330.8\,\text{m/s}$
-**Answer:** $331\,\text{m/s}$, three significant figures as in the frequencies and the length $0.800\,\text{m}$. Tube A is open and tube B is closed. The tubes sound different because in an open tube all multiples of the fundamental frequency sound but in a closed tube only the odd ones, so the overtones of the sounds are different. In addition, the fundamental frequency of the closed tube is half of that of the open tube, that is, the sound is an octave lower.
-**Reasonableness:** The two independent results, $330.9\,\text{m/s}$ and $330.7\,\text{m/s}$, are almost the same, which supports the identification of the tubes. If the types had been swapped, the speeds would be $165\,\text{m/s}$ and $662\,\text{m/s}$, which is implausible. The result $331\,\text{m/s}$ corresponds to the speed of sound in air at about $0\,{}^\circ\text{C}$, which suits a cold warehouse and is smaller than $340\,\text{m/s}$.
+**Substitution:** a) For tube A the frequencies are about $207\,\text{Hz} \cdot (1, 2, 3)$, so A is open. For tube B they are about $103\,\text{Hz} \cdot (1, 3, 5)$, so B is closed.
+
+b) Open A: the sum of the ratios $207.0$, $206.5$ and $207.0$ is $620.5\,\text{Hz}$, so $f_{1,\text{A}} = 206.83\,\text{Hz}$ and $v_\text{A} = 2 \cdot 0.800\,\text{m} \cdot 206.83\,\text{Hz} = 330.9\,\text{m/s}$. Closed B: the sum of the ratios $103.0$, $103.67$ and $103.4$ is $310.07\,\text{Hz}$, so $f_{1,\text{B}} = 103.36\,\text{Hz}$ and $v_\text{B} = 4 \cdot 0.800\,\text{m} \cdot 103.36\,\text{Hz} = 330.7\,\text{m/s}$. The mean is $v = (330.9\,\text{m/s} + 330.7\,\text{m/s}) : 2 = 330.8\,\text{m/s}$
+**Answer:** $331\,\text{m/s}$, three significant figures as in the frequencies and the length $0.800\,\text{m}$. Tube A is open and tube B is closed.
+
+The tubes sound different because in an open tube all multiples of the fundamental frequency sound but in a closed tube only the odd ones, so the overtones of the sounds are different.
+
+In addition, the fundamental frequency of the closed tube is half of that of the open tube, that is, the sound is an octave lower.
+**Reasonableness:** The two independent results, $330.9\,\text{m/s}$ and $330.7\,\text{m/s}$, are almost the same, which supports the identification of the tubes. If the types had been swapped, the speeds would be $165\,\text{m/s}$ and $662\,\text{m/s}$, which is implausible.
+
+The result $331\,\text{m/s}$ corresponds to the speed of sound in air at about $0\,{}^\circ\text{C}$, which suits a cold warehouse and is smaller than $340\,\text{m/s}$.
 
 ## fy5-13-L1-09
 **Given:** length of the pipe $L = 0.50\,\text{m}$, open at both ends; from the table (MAFY table, Aaltoliike, speeds of sound in different media, gases at $0\,{}^\circ\text{C}$) the speed of sound in helium $v_\text{He} = 971\,\text{m/s}$ and in air $v_\text{air} = 331.5\,\text{m/s}$
@@ -207,7 +249,11 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 **Conversions:** None are needed: the length is in metres and the speeds in metres per second.
 **Substitution:** $f_{1,\text{He}} = \dfrac{971\,\text{m/s}}{2 \cdot 0.50\,\text{m}} = 971\,\text{Hz}$ and $f_{1,\text{air}} = \dfrac{331.5\,\text{m/s}}{1.00\,\text{m}} = 331.5\,\text{Hz}$, so $\Delta f = 971\,\text{Hz} - 331.5\,\text{Hz} = 639.5\,\text{Hz}$
 **Answer:** $6.4 \cdot 10^{2}\,\text{Hz}$, that is about $640\,\text{Hz}$, two significant figures like the length $0.50\,\text{m}$. The table values are $971\,\text{m/s}$ and $331.5\,\text{m/s}$; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** Sound travels in helium at $971 : 331.5 = 2.93$ times the speed, so the fundamental frequency is the same multiple: $971\,\text{Hz} : 331.5\,\text{Hz} = 2.93$. The note rises to almost three times, about one and a half octaves, but a voice does not change the same way: the voice of a person who has breathed helium sounds odd because the resonances of the vocal tract rise, while the fundamental frequency of the vocal folds hardly changes. The difference is positive, as it should be, because helium is a lighter gas than air.
+**Reasonableness:** Sound travels in helium at $971 : 331.5 = 2.93$ times the speed, so the fundamental frequency is the same multiple: $971\,\text{Hz} : 331.5\,\text{Hz} = 2.93$.
+
+The note rises to almost three times, about one and a half octaves, but a voice does not change the same way: the voice of a person who has breathed helium sounds odd because the resonances of the vocal tract rise, while the fundamental frequency of the vocal folds hardly changes.
+
+The difference is positive, as it should be, because helium is a lighter gas than air.
 
 ## fy5-13-L2-09
 **Given:** speed of the wave $v = 75.0\,\text{m/s}$; the positions of the vibrator and the pulley are nodes; the length of the vibrating part of the rope and the present number of loops are read from the figure; the new pattern has five loops

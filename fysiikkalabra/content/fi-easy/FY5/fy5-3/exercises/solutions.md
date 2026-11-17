@@ -121,7 +121,9 @@
 ## fy5-3-L1-06
 **Kysytty:** mihin suuntaan tasaisessa ympyräliikkeessä olevan kappaleen nopeus osoittaa.
 **Periaate:** Nopeus osoittaa aina samaan suuntaan kuin kappale liikkuu. Ympyräradalla liikkeen suunta on joka hetki radan tangentin suunta. Se on kohtisuorassa sädettä vastaan. Kappale kiertää rataa, joten tangentin suunta kääntyy koko ajan. Siksi nopeus muuttuu, vaikka vauhti pysyy samana.
-**Mallivastaus:** Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan. Nopeus ei osoita kohti keskipistettä. Kappale pysyy samalla etäisyydellä keskipisteestä, joten se ei liiku sitä kohti. Nopeus ei osoita myöskään poispäin keskipisteestä, koska mikään voima ei työnnä kappaletta ulospäin. Kun naru katkeaa, kappale jatkaa tangentin suuntaan. Nopeuden suunta ei pysy samana. Se kääntyy yhden kierroksen aikana kokonaisen kierroksen, vaikka vauhti on vakio.
+**Mallivastaus:** Nopeus on radan tangentin suuntainen, koska kappale liikkuu joka hetki radan suuntaan. Nopeus ei osoita kohti keskipistettä. Kappale pysyy samalla etäisyydellä keskipisteestä, joten se ei liiku sitä kohti.
+
+Nopeus ei osoita myöskään poispäin keskipisteestä, koska mikään voima ei työnnä kappaletta ulospäin. Kun naru katkeaa, kappale jatkaa tangentin suuntaan. Nopeuden suunta ei pysy samana. Se kääntyy yhden kierroksen aikana kokonaisen kierroksen, vaikka vauhti on vakio.
 
 ## fy5-3-L1-07
 **Annettu:** pyörimistaajuus $f = 3000\,\tfrac{1}{\text{min}}$
@@ -241,7 +243,9 @@ Erotus ja osuus matalan radan vauhdista:
 \frac{462{,}7\,\text{m/s}}{7700\,\text{m/s}} &= 0{,}060 = 6{,}0\,\%
 \end{aligned}
 ```
-**Vastaus:** a) Ratanopeudet ovat $463\,\text{m/s}$, $408\,\text{m/s}$ ja $213\,\text{m/s}$. b) Kourou antaa $250\,\text{m/s}$ suuremman vauhdin kuin Plesetsk. Vastauksessa on kaksi merkitsevää numeroa, koska leveysaste $5{,}2\,{}^\circ$ on annettu kahdella numerolla. c) Kourousta saatava vauhti on noin $6{,}0\,\%$ matalan radan vauhdista. Paikkojen ratanopeudet eroavat, koska kaikki tekevät kierroksen samassa ajassa $T$. Lähempänä napaa oleva paikka kiertää kuitenkin pienempää leveysympyrää. Silloin se kulkee kierroksella lyhyemmän matkan. Vastauslaatikkoon tulee $250\,\text{m/s}$.
+**Vastaus:** a) Ratanopeudet ovat $463\,\text{m/s}$, $408\,\text{m/s}$ ja $213\,\text{m/s}$. b) Kourou antaa $250\,\text{m/s}$ suuremman vauhdin kuin Plesetsk. Vastauksessa on kaksi merkitsevää numeroa, koska leveysaste $5{,}2\,{}^\circ$ on annettu kahdella numerolla. c) Kourousta saatava vauhti on noin $6{,}0\,\%$ matalan radan vauhdista.
+
+Paikkojen ratanopeudet eroavat, koska kaikki tekevät kierroksen samassa ajassa $T$. Lähempänä napaa oleva paikka kiertää kuitenkin pienempää leveysympyrää. Silloin se kulkee kierroksella lyhyemmän matkan. Vastauslaatikkoon tulee $250\,\text{m/s}$.
 **Järkevyys:** Päiväntasaajalla ratanopeus on $\dfrac{2\pi \cdot 6{,}371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464{,}6\,\text{m/s}$. Kourou on lähellä sitä, $462{,}7\,\text{m/s}$. Plesetskin ratanopeus on $\cos 62{,}7\,{}^\circ = 0{,}459$-kertainen päiväntasaajaan verrattuna: $$0{,}459 \cdot 464{,}6\,\text{m/s} = 213\,\text{m/s}$$. Navalla säde on nolla ja ratanopeus on nolla. Ratanopeus siis pienenee, kun leveysaste kasvaa. Pyörimisestä saatava lisävauhti on vain pieni osa matalan radan vauhdista.
 
 ## fy5-3-L3-05
@@ -270,7 +274,9 @@ t &= \frac{5378\,\text{m}}{1{,}2\,\text{m/s}} \\
 &= 4482\,\text{s} = 74{,}7\,\text{min}
 \end{aligned}
 ```
-**Vastaus:** a) Pyörimistaajuus on uran alussa noin $460\,\tfrac{1}{\text{min}}$ ja lopussa noin $200\,\tfrac{1}{\text{min}}$. b) Uran kierroksia on noin $2{,}1 \cdot 10^{4}$, uran pituus on noin $5{,}4\,\text{km}$ ja soittoaika on noin $75\,\text{min}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kierrosten välissä $1{,}6\,\mu\text{m}$. c) Laser kulkee uraa vakioratanopeudella, ja ulompana ura kiertää suuremman ympyrän. Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienentyä säteen kasvaessa. Vastauslaatikkoon tulee soittoaika $75\,\text{min}$.
+**Vastaus:** a) Pyörimistaajuus on uran alussa noin $460\,\tfrac{1}{\text{min}}$ ja lopussa noin $200\,\tfrac{1}{\text{min}}$. b) Uran kierroksia on noin $2{,}1 \cdot 10^{4}$, uran pituus on noin $5{,}4\,\text{km}$ ja soittoaika on noin $75\,\text{min}$.
+
+Vastauksessa on kaksi merkitsevää numeroa, kuten kierrosten välissä $1{,}6\,\mu\text{m}$. c) Laser kulkee uraa vakioratanopeudella, ja ulompana ura kiertää suuremman ympyrän. Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienentyä säteen kasvaessa. Vastauslaatikkoon tulee soittoaika $75\,\text{min}$.
 **Järkevyys:** Soittoaika $75\,\text{min}$ sopii tavalliselle CD-levylle. Sen soittoaika on noin $74$–$80\,\text{min}$. Pyörimistaajuus pienenee suhteessa $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, ja $458 \cdot \dfrac{25}{58} = 197$. Se on sama kuin laskettu loppu. Kierroksia on $20\,625$ ja soittoaika on $74{,}7\,\text{min}$. Keskimääräinen pyörimistaajuus on siis $\dfrac{20\,625}{74{,}7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$. Se on alun $458\,\tfrac{1}{\text{min}}$ ja lopun $198\,\tfrac{1}{\text{min}}$ välissä.
 
 ## fy5-3-L1-10

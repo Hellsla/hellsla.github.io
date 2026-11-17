@@ -52,7 +52,9 @@
 ## fy5-7-L1-06
 **Find:** which weight makes more oscillations per second, when the period of one and the frequency of the other is known.
 **Principle:** The number of oscillations per second is the frequency. The period and the frequency are reciprocals of each other, $f = \tfrac{1}{T}$, so they are different quantities in different units, and their numerical values cannot be compared directly. For the comparison, the frequency is calculated for both.
-**Model answer:** The frequency of the weight whose period is $0.25\,\text{s}$ is $\tfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$. It is greater than the frequency of the other weight, $3.0\,\text{Hz}$, so weight A, whose period is known, makes four oscillations per second and weight B three. Comparing the numerical values directly ($3.0$ is greater than $0.25$) is a mistake, because they are different quantities. The conclusion that a longer period means faster oscillation is also wrong: a longer period means fewer oscillations. As periods the comparison would be $0.25\,\text{s}$ and $\tfrac{1}{3.0}\,\text{s} = 0.33\,\text{s}$, and the shorter period belongs to the faster oscillator.
+**Model answer:** The frequency of the weight whose period is $0.25\,\text{s}$ is $\tfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$. It is greater than the frequency of the other weight, $3.0\,\text{Hz}$, so weight A, whose period is known, makes four oscillations per second and weight B three.
+
+Comparing the numerical values directly ($3.0$ is greater than $0.25$) is a mistake, because they are different quantities. The conclusion that a longer period means faster oscillation is also wrong: a longer period means fewer oscillations. As periods the comparison would be $0.25\,\text{s}$ and $\tfrac{1}{3.0}\,\text{s} = 0.33\,\text{s}$, and the shorter period belongs to the faster oscillator.
 
 ## fy5-7-L1-07
 **Given:** frequency $f = 1.6\,\text{Hz}$, number of oscillations $n = 40$
@@ -67,13 +69,17 @@
 ## fy5-7-L1-08
 **Find:** how the period changes when the frequency doubles, and where the student’s claim is wrong.
 **Principle:** The frequency and the period are reciprocals of each other, $f = \tfrac{1}{T}$. When the frequency grows, less time is left for one oscillation, so the period decreases in the same ratio. The student treated the quantities as proportional, although one is the reciprocal of the other.
-**Model answer:** If the frequency doubles, for example from $2.0\,\text{Hz}$ to $4.0\,\text{Hz}$, the period is halved from $0.50\,\text{s}$ to $0.25\,\text{s}$, because $T = \tfrac{1}{f}$. The student’s claim is wrong: faster oscillation means a greater frequency but a shorter period. The period cannot be considered a fixed property, because it changes with the frequency. Nor does it grow because there are more oscillations, since the period is the duration of one oscillation and not the total time of all of them.
+**Model answer:** If the frequency doubles, for example from $2.0\,\text{Hz}$ to $4.0\,\text{Hz}$, the period is halved from $0.50\,\text{s}$ to $0.25\,\text{s}$, because $T = \tfrac{1}{f}$. The student’s claim is wrong: faster oscillation means a greater frequency but a shorter period.
+
+The period cannot be considered a fixed property, because it changes with the frequency. Nor does it grow because there are more oscillations, since the period is the duration of one oscillation and not the total time of all of them.
 
 ## fy5-7-L2-01
 **Given:** a graph of the displacement $x$ of a cart as a function of time $t$ according to the sine model, time $t = 0.10\,\text{s}$
 **Find:** the displacement $x$ of the cart from the equilibrium position in centimetres at the moment $t$
 **Principle:** The graph is a sine curve that starts from the equilibrium position going up, so the displacement is described by the model $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. The coefficients $A$ and $T$ of the model are read from the graph, and then the displacement is calculated at the desired moment.
-**Reading the graph:** The peaks are at the grid line $x = 3.0\,\text{cm}$, so $A = 3.0\,\text{cm}$. The curve passes the equilibrium position going up at the times $0$, $0.50\,\text{s}$ and $1.0\,\text{s}$, so one oscillation takes $T = 0.50\,\text{s}$. The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph, because there is no grid line there, so it is calculated.
+**Reading the graph:** The peaks are at the grid line $x = 3.0\,\text{cm}$, so $A = 3.0\,\text{cm}$. The curve passes the equilibrium position going up at the times $0$, $0.50\,\text{s}$ and $1.0\,\text{s}$, so one oscillation takes $T = 0.50\,\text{s}$.
+
+The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph, because there is no grid line there, so it is calculated.
 **Formula:** $x = A \sin\left(\dfrac{2\pi t}{T}\right)$
 **Conversions:** None needed: the time is in seconds and the amplitude in centimetres. The calculator is set to radian mode.
 **Substitution:** $x = 3.0\,\text{cm} \cdot \sin\left(\dfrac{2\pi \cdot 0.10\,\text{s}}{0.50\,\text{s}}\right) = 3.0\,\text{cm} \cdot \sin 1.257 = 3.0\,\text{cm} \cdot 0.951 = 2.85\,\text{cm}$
@@ -113,7 +119,9 @@
 ## fy5-7-L2-05
 **Given:** times of six successive peaks in the table: the first $t_1 = 0.42\,\text{s}$ and the sixth $t_6 = 3.47\,\text{s}$
 **Find:** the frequency $f$ of the oscillation in hertz
-**Principle:** The interval between two successive peaks is one period, because at a peak the object is at the same position and the phase of the motion is the same. Between the first and the sixth peak there are five periods, not six. Using the whole measurement series spreads the reading uncertainty over several periods, and the frequency is obtained as the reciprocal of the period.
+**Principle:** The interval between two successive peaks is one period, because at a peak the object is at the same position and the phase of the motion is the same.
+
+Between the first and the sixth peak there are five periods, not six. Using the whole measurement series spreads the reading uncertainty over several periods, and the frequency is obtained as the reciprocal of the period.
 **Reading the table:** The time of the first peak $0.42\,\text{s}$ and the time of the sixth peak $3.47\,\text{s}$ are read from the table; between them there are five intervals between peaks.
 **Formula:** $T = \dfrac{t_6 - t_1}{5}$ and $f = \dfrac{1}{T}$
 **Conversions:** None needed: the times are in seconds, so the frequency is obtained in hertz.
@@ -128,7 +136,9 @@
 **Formula:** $t_{\text{avg}} = \dfrac{\text{sum of the times}}{5}$ and $T = \dfrac{t_{\text{avg}}}{10}$
 **Conversions:** None needed: all times are in seconds.
 **Substitution:** The sum of the times is $75.5\,\text{s}$, so $t_{\text{avg}} = \dfrac{75.5\,\text{s}}{5} = 15.1\,\text{s}$ and $T = \dfrac{15.1\,\text{s}}{10} = 1.51\,\text{s}$
-**Answer:** a) $1.51\,\text{s}$, three significant figures as in the measured times. Part b): the range of the measurements is $15.4\,\text{s} - 14.8\,\text{s} = 0.6\,\text{s}$, so the estimate of the uncertainty is half of it, $0.3\,\text{s}$ for ten swings. For the period it is $\tfrac{0.3\,\text{s}}{10} = 0.03\,\text{s}$, that is, $T \approx 1.51\,\text{s} \pm 0.03\,\text{s}$. In timing by hand the error is of the same order of magnitude regardless of the number of swings, but the time of ten swings is divided by ten, so the error in the period decreases to a tenth. If one swing were timed, the same $0.3\,\text{s}$ would be almost a fifth of the period.
+**Answer:** a) $1.51\,\text{s}$, three significant figures as in the measured times. Part b): the range of the measurements is $15.4\,\text{s} - 14.8\,\text{s} = 0.6\,\text{s}$, so the estimate of the uncertainty is half of it, $0.3\,\text{s}$ for ten swings. For the period it is $\tfrac{0.3\,\text{s}}{10} = 0.03\,\text{s}$, that is, $T \approx 1.51\,\text{s} \pm 0.03\,\text{s}$.
+
+In timing by hand the error is of the same order of magnitude regardless of the number of swings, but the time of ten swings is divided by ten, so the error in the period decreases to a tenth. If one swing were timed, the same $0.3\,\text{s}$ would be almost a fifth of the period.
 **Reasonableness:** The period $1.51\,\text{s}$ is close to each single measurement divided by ten ($1.48\,\text{s}$ … $1.54\,\text{s}$), and the usual period of a pendulum is a few seconds or less, so the result is believable.
 
 ## fy5-7-L2-07
@@ -145,7 +155,9 @@
 ## fy5-7-L3-01
 **Given:** period $T = 1.2\,\text{s}$, timing starts at a pass through the equilibrium position going up, the height asked about $x = \tfrac{A}{2}$
 **Find:** the time $t$ after which the weight is for the first time at the height $\tfrac{A}{2}$
-**Principle:** The oscillation is sinusoidal, and timing starts at a pass through the equilibrium position in the positive direction, so $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. When $x = \tfrac{A}{2}$, the value of the sine is $\tfrac{1}{2}$. The first time corresponds to the smallest positive angle for which the sine is $\tfrac{1}{2}$. In a right triangle with an angle of $30^\circ$ the opposite leg is half of the hypotenuse, so $\sin 30^\circ = \tfrac{1}{2}$, and because $180^\circ = \pi$, the angle is $30^\circ = \tfrac{\pi}{6}$. The next angle, $150^\circ$, would fall only in the downward phase. The amplitude cancels, so it is not needed.
+**Principle:** The oscillation is sinusoidal, and timing starts at a pass through the equilibrium position in the positive direction, so $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. When $x = \tfrac{A}{2}$, the value of the sine is $\tfrac{1}{2}$. The first time corresponds to the smallest positive angle for which the sine is $\tfrac{1}{2}$.
+
+In a right triangle with an angle of $30^\circ$ the opposite leg is half of the hypotenuse, so $\sin 30^\circ = \tfrac{1}{2}$, and because $180^\circ = \pi$, the angle is $30^\circ = \tfrac{\pi}{6}$. The next angle, $150^\circ$, would fall only in the downward phase. The amplitude cancels, so it is not needed.
 **Formula:** $\dfrac{A}{2} = A \sin\left(\dfrac{2\pi t}{T}\right)$, from which $\dfrac{2\pi t}{T} = \dfrac{\pi}{6}$, so $t = \dfrac{T}{12}$
 **Conversions:** None needed: the period is in seconds, and the angle is in radians.
 **Substitution:** $t = \dfrac{1.2\,\text{s}}{12} = 0.10\,\text{s}$
@@ -155,7 +167,9 @@
 ## fy5-7-L3-02
 **Given:** distance of the button from the axis $r = 15\,\text{cm}$, rotation frequency $45\,\tfrac{1}{\text{min}}$, time from the pass through the middle $t = 0.20\,\text{s}$
 **Find:** the distance $x$ of the shadow from the middle of its motion in centimetres
-**Principle:** The button is in uniform circular motion, and the horizontal light casts on the wall its height above the level of the axis. The height of a point in circular motion oscillates sinusoidally: the amplitude is the radius of the circle and the frequency is the rotation frequency. The light comes from far away and is parallel, so the shadow is as large as the height of the button above the level of the axis. The time is counted from the pass through the middle going up, so the sine model is used.
+**Principle:** The button is in uniform circular motion, and the horizontal light casts on the wall its height above the level of the axis. The height of a point in circular motion oscillates sinusoidally: the amplitude is the radius of the circle and the frequency is the rotation frequency.
+
+The light comes from far away and is parallel, so the shadow is as large as the height of the button above the level of the axis. The time is counted from the pass through the middle going up, so the sine model is used.
 **Formula:** $x = A \sin(2\pi f t)$, where $A = r$, that is, $x = r \sin(2\pi f t)$
 **Conversions:** $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0.75\,\text{Hz}$
 **Substitution:** $x = 15\,\text{cm} \cdot \sin(2\pi \cdot 0.75\,\text{Hz} \cdot 0.20\,\text{s}) = 15\,\text{cm} \cdot \sin 0.9425 = 15\,\text{cm} \cdot 0.8090 = 12.14\,\text{cm}$
@@ -175,7 +189,9 @@
 ## fy5-7-L3-04
 **Given:** times of the R peaks in the table: at rest beat 6, that is, the end of the sixth beat interval, $t_{\text{rest}} = 4.96\,\text{s}$, and after exercise $t_{\text{exercise}} = 2.77\,\text{s}$, both counted from beat 0, that is, from the time $0\,\text{s}$; number of beat intervals $n = 6$
 **Find:** the increase $p$ of the pulse (frequency) in percent from rest to exercise
-**Principle:** The beats repeat approximately evenly, so they are treated as periodic motion: the beat interval is the period $T$ and the pulse is the frequency $f = \tfrac{1}{T}$ in beats per unit of time. The period is determined from all six intervals, because then the variation of single intervals averages out. The increase of the pulse is the difference of the frequencies relative to the frequency at rest.
+**Principle:** The beats repeat approximately evenly, so they are treated as periodic motion: the beat interval is the period $T$ and the pulse is the frequency $f = \tfrac{1}{T}$ in beats per unit of time.
+
+The period is determined from all six intervals, because then the variation of single intervals averages out. The increase of the pulse is the difference of the frequencies relative to the frequency at rest.
 **Formula:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ and $p = \dfrac{f_{\text{exercise}} - f_{\text{rest}}}{f_{\text{rest}}} \cdot 100\,\%$
 **Conversions:** Pulse per minute: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. In the calculation of the percentage the units cancel.
 **Substitution:** At rest $T_{\text{rest}} = \dfrac{4.96\,\text{s}}{6} = 0.8267\,\text{s}$ and $f_{\text{rest}} = \dfrac{1}{0.8267\,\text{s}} = 1.210\,\text{Hz} = 72.6\,\tfrac{1}{\text{min}}$. After exercise $T_{\text{exercise}} = \dfrac{2.77\,\text{s}}{6} = 0.4617\,\text{s}$ and $f_{\text{exercise}} = \dfrac{1}{0.4617\,\text{s}} = 2.166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. The increase is $p = \dfrac{2.166\,\text{Hz} - 1.210\,\text{Hz}}{1.210\,\text{Hz}} \cdot 100\,\% = 79.06\,\%$.
@@ -195,7 +211,9 @@
 
 ## fy5-7-L1-09
 **Find:** which of the four graphs shows the displacement $x$ of the weight as a function of time $t$ when the frequency is $f = 2.0\,\text{Hz}$, the amplitude $A = 3.0\,\text{cm}$ and timing starts at a pass through the equilibrium position going up.
-**Principle:** The period is the reciprocal of the frequency, $T = \tfrac{1}{f}$. From a graph the period is read between two successive peaks, and the amplitude from the level of the equilibrium position $x = 0$ to the level of the peak. Because timing starts at a pass in the positive direction, the curve is $x = A \sin\left(\tfrac{2\pi t}{T}\right)$ and starts from zero going up.
+**Principle:** The period is the reciprocal of the frequency, $T = \tfrac{1}{f}$. From a graph the period is read between two successive peaks, and the amplitude from the level of the equilibrium position $x = 0$ to the level of the peak.
+
+Because timing starts at a pass in the positive direction, the curve is $x = A \sin\left(\tfrac{2\pi t}{T}\right)$ and starts from zero going up.
 **Model answer:** The correct one is graph B. Let us calculate the period.
 
 $T = \dfrac{1}{f}$
@@ -204,6 +222,10 @@ $T = \dfrac{1}{2.0\,\text{Hz}}$
 
 $T = 0.50\,\text{s}$
 
-In graph B successive peaks are $0.50\,\text{s}$ apart, and the peaks are at $3.0\,\text{cm}$ and the troughs at $-3.0\,\text{cm}$. The first peak is at $\tfrac{T}{4} = 0.125\,\text{s}$, and in two seconds $4$ oscillations fit, as the frequency $2.0\,\text{Hz}$ requires. In graph A the passes through the equilibrium position are $0.50\,\text{s}$ apart, but the period is $1.0\,\text{s}$: there half a period has been read as a whole one. In graph C the distance between the peaks and the troughs is $3.0\,\text{cm}$, so the amplitude is only $1.5\,\text{cm}$: there the amplitude has been mixed up with the distance between the extreme positions, $2A$. In graph D the period is $2.0\,\text{s}$: there the numerical value of the frequency has been taken as the period.
+In graph B successive peaks are $0.50\,\text{s}$ apart, and the peaks are at $3.0\,\text{cm}$ and the troughs at $-3.0\,\text{cm}$. The first peak is at $\tfrac{T}{4} = 0.125\,\text{s}$, and in two seconds $4$ oscillations fit, as the frequency $2.0\,\text{Hz}$ requires.
+
+In graph A the passes through the equilibrium position are $0.50\,\text{s}$ apart, but the period is $1.0\,\text{s}$: there half a period has been read as a whole one.
+
+In graph C the distance between the peaks and the troughs is $3.0\,\text{cm}$, so the amplitude is only $1.5\,\text{cm}$: there the amplitude has been mixed up with the distance between the extreme positions, $2A$. In graph D the period is $2.0\,\text{s}$: there the numerical value of the frequency has been taken as the period.
 
 **Reading the graph:** From each graph, read the time between two successive peaks and the height of the peak from the dashed line of the equilibrium position. Graphs B and C oscillate in step, so they can be told apart only by the height of the peaks.
