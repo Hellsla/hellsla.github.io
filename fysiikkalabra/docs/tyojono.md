@@ -180,6 +180,8 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
+Varattu: claude/fy6-kappalejako (FY6: fy6-1…fy6-16, Sovella ja esimerkkikoe).
+
 FY1 tehty: fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä (#650); Sovella (fi, en, fi-easy), esimerkkikoe ja en
 fy1-1:n harjoitusten kolme askelta (claude/fy1-kappalejako-2, 8c-1:n #657 jälkeen). Jäljellä FY1:ssä vain numeroitu lista
 Sovellan mallivastauksessa "Mitkä tahansa neljä seuraavista", jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
