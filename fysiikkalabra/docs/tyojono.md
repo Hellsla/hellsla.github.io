@@ -272,6 +272,8 @@ järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
 
+Varattu: claude/fy4-lapikaynti (FY4: Sovella, esimerkkikoe, 8l-b ja kurssin muut sisältökohdat, 0f)
+
 FY4 tehty (claude/fy4-kappalejako, #654): fy4-1…fy4-16 esimerkit ja ratkaisut kolmella kielellä; tiede ja pedagogiikka
 carry (`md-paragraphs`), ulkoasu delta PASS jokaiselle osalle omista kaappauksistaan. Lintin 8c-varoituksia jää fi 16, en 34,
 fi-easy 18: pitkät **Vastaus:**-askeleet (vastausluku pysyy ensimmäisessä kappaleessa) sekä fy4-7:n ja fy4-11:n kohdat, joissa
