@@ -314,6 +314,19 @@
      "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny nukleonien häviämisestä vaan sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
     }
    ]
+  },
+  {
+   "id": "fy8-11-L2-09",
+   "level": 2,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-11/sidosenergia-luku",
+   "text": "Kuvassa on ytimen sidosenergia nukleonia kohti, $E_\\text{B}/A$, massaluvun $A$ funktiona. Ruudukon väli pystysuunnassa on $0{,}1\\,\\text{MeV}$. Ydin, jossa on $200$ nukleonia, jakautuu kahdeksi ytimeksi, joissa kummassakin on $100$ nukleonia. Oletetaan, että kuvaaja kuvaa myös näitä ytimiä.\n\na) Lue kuvaajasta sidosenergia nukleonia kohti, kun $A = 200$ ja kun $A = 100$.\n\nb) Arvioi lukemien avulla jakautumisessa vapautuva energia ja vertaa sitä uraani-235:n fissiossa vapautuvaan noin $200\\,\\text{MeV}$:n energiaan.\n\nVastauslaatikkoon tulee kohdan b) energia megaelektronivoltteina.",
+   "answer": 160,
+   "unit": "MeV",
+   "tolerance": 0.15
   }
  ],
  "level3": [
@@ -399,6 +412,19 @@
    "answer": 540,
    "unit": "kg",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-06",
+   "level": 3,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-9/aktiivisuus",
+   "text": "Käytetty ydinpolttoaine jäähdytetään välivarastossa ennen loppusijoitusta Onkaloon. Kuvassa on välivaraston yhden fissiotuotteen näytteen aktiivisuus ajan funktiona. Arvot ovat esimerkkiarvoja. Oletetaan, että näytteen aktiivisuus noudattaa hajoamislakia myös kuvan ulkopuolella ja että näyte voidaan käsitellä turvallisesti, kun sen aktiivisuus on laskenut arvoon $0{,}1\\,\\%$ alkuarvosta.\n\na) Lue kuvaajasta nuklidin puoliintumisaika.\n\nb) Kuinka kauan kuluu siihen, että aktiivisuus on laskenut arvoon $0{,}1\\,\\%$ alkuarvostaan?\n\nVastauslaatikkoon tulee kohdan b) aika tunteina.",
+   "answer": 50,
+   "unit": "h",
+   "tolerance": 0.05
   }
  ]
 }

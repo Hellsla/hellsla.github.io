@@ -314,6 +314,19 @@
      "feedback": "Nukleonien määrä säilyy, mutta johtopäätös ei seuraa siitä. Energia ei synny siitä, että nukleonit katoavat. Se syntyy sidosenergian muutoksesta, ja sidosenergian muutos vastaa massan muutosta."
     }
    ]
+  },
+  {
+   "id": "fy8-11-L2-09",
+   "level": 2,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-11/sidosenergia-luku",
+   "text": "Kuvassa on ytimen sidosenergia nukleonia kohti, $E_\\text{B}/A$, massaluvun $A$ funktiona. Nukleoni on protoni tai neutroni. Ruudukon väli pystysuunnassa on $0{,}1\\,\\text{MeV}$. Ydin, jossa on $200$ nukleonia, jakautuu kahdeksi ytimeksi. Kummassakin uudessa ytimessä on $100$ nukleonia. Oletetaan, että kuvaaja sopii myös näihin ytimiin.\n\na) Lue kuvaajasta sidosenergia nukleonia kohti, kun $A = 200$ ja kun $A = 100$.\n\nb) Arvioi lukemien avulla, kuinka paljon energiaa jakautumisessa vapautuu. Vertaa tulosta uraani-235:n fissioon, jossa vapautuu noin $200\\,\\text{MeV}$.\n\nVastauslaatikkoon tulee kohdan b) energia megaelektronivoltteina.",
+   "answer": 160,
+   "unit": "MeV",
+   "tolerance": 0.15
   }
  ],
  "level3": [
@@ -399,6 +412,19 @@
    "answer": 540,
    "unit": "kg",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-06",
+   "level": 3,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-9/aktiivisuus",
+   "text": "Käytetty ydinpolttoaine jäähtyy ensin välivarastossa. Sen jälkeen se viedään loppusijoitukseen Onkaloon. Kuvassa on yhden fissiotuotteen näytteen aktiivisuus ajan funktiona. Arvot ovat esimerkkiarvoja. Oletetaan, että aktiivisuus pienenee hajoamislain mukaan myös kuvan ulkopuolella. Oletetaan myös, että näytteen voi käsitellä turvallisesti, kun aktiivisuus on enää $0{,}1\\,\\%$ alkuarvosta.\n\na) Lue kuvaajasta nuklidin puoliintumisaika. Puoliintumisaika on aika, jonka aikana aktiivisuus pienenee puoleen.\n\nb) Kuinka kauan kuluu siihen, että aktiivisuus on $0{,}1\\,\\%$ alkuarvosta?\n\nVastauslaatikkoon tulee kohdan b) aika tunteina.",
+   "answer": 50,
+   "unit": "h",
+   "tolerance": 0.05
   }
  ]
 }

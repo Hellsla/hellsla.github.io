@@ -314,6 +314,19 @@
      "feedback": "The number of nucleons is conserved, but the conclusion does not follow from that. Energy does not come from nucleons disappearing but from the change in binding energy, and a change in binding energy corresponds to a change in mass."
     }
    ]
+  },
+  {
+   "id": "fy8-11-L2-09",
+   "level": 2,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-11/sidosenergia-luku",
+   "text": "The figure shows the binding energy per nucleon, $E_\\text{B}/A$, as a function of the mass number $A$. The grid spacing in the vertical direction is $0.1\\,\\text{MeV}$. A nucleus with $200$ nucleons splits into two nuclei with $100$ nucleons each. Assume that the graph also describes these nuclei.\n\na) Read from the graph the binding energy per nucleon at $A = 200$ and at $A = 100$.\n\nb) Using your readings, estimate the energy released in the split and compare it with the roughly $200\\,\\text{MeV}$ released in the fission of uranium-235.\n\nThe answer box takes the energy of part b) in megaelectronvolts.",
+   "answer": 160,
+   "unit": "MeV",
+   "tolerance": 0.15
   }
  ],
  "level3": [
@@ -399,6 +412,19 @@
    "answer": 540,
    "unit": "kg",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy8-11-L3-06",
+   "level": 3,
+   "kind": [
+    "graph",
+    "reasoning"
+   ],
+   "figure": "fy8-9/aktiivisuus",
+   "text": "Spent nuclear fuel is cooled in an interim storage before final disposal in Onkalo. The figure shows the activity of a sample of one fission product in the storage as a function of time. The values are example values. Assume that the activity of the sample follows the decay law also beyond the figure, and that the sample can be handled safely once its activity has fallen to $0.1\\,\\%$ of the initial value.\n\na) Read the half-life of the nuclide from the graph.\n\nb) How long does it take for the activity to fall to $0.1\\,\\%$ of its initial value?\n\nThe answer box takes the time of part b) in hours.",
+   "answer": 50,
+   "unit": "h",
+   "tolerance": 0.05
   }
  ]
 }
