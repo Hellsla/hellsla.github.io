@@ -57,10 +57,10 @@ with sync_playwright() as pw:
         pg.close()
         pg = b.new_page(viewport={"width": 1440, "height": 900}); pg.goto((SITE / name).as_uri())
         expect(f"{name} at 1440 px: the links show, the menu button does not", not pg.is_visible(".nav-menu > summary") and pg.is_visible("header.top nav > a.nav-study") and pg.is_visible("header.top nav > a.nav-teacher"))
-        for w in (991, 992):   # the limit where the links give way to the button (site.css, 62rem): on both sides the header is one row
+        for w in (1023, 1024):   # the limit where the links give way to the button (site.css, 64rem): on both sides the header is one row
             pg.set_viewport_size({"width": w, "height": 900}); pg.wait_for_timeout(150)
             row = pg.evaluate("(() => { const h = document.querySelector('header.top'), n = h.querySelector('nav'), v = [...n.children].filter(c => c.getBoundingClientRect().width > 0); return [new Set(v.map(c => Math.round(c.getBoundingClientRect().top))).size, Math.abs(n.getBoundingClientRect().top - h.querySelector('.brand').getBoundingClientRect().top) < 30, document.documentElement.scrollWidth <= innerWidth, !!n.querySelector('a.nav-teacher') && n.querySelector('a.nav-teacher').getBoundingClientRect().width > 0]; })()")
-            expect(f"{name} at {w} px: the header is one row, {'links' if w == 992 else 'the menu button'}", row[0] == 1 and row[1] and row[2] and row[3] == (w == 992), row)
+            expect(f"{name} at {w} px: the header is one row, {'links' if w == 1024 else 'the menu button'}", row[0] == 1 and row[1] and row[2] and row[3] == (w == 1024), row)
         for w, px in ((1599, 16), (1760, 17.41), (1920, 18.82), (2560, 18.82)):   # a wide screen reads from the back of the classroom (site.css, 2026-11-11): the root size grows from 1600 px, 17 px text is 20 px at 1920 px and no larger beyond
             pg.set_viewport_size({"width": w, "height": 1000}); pg.wait_for_timeout(150)
             got = pg.evaluate("[parseFloat(getComputedStyle(document.documentElement).fontSize), document.documentElement.scrollWidth <= innerWidth, Math.round(document.querySelector('.page').getBoundingClientRect().width)]")
