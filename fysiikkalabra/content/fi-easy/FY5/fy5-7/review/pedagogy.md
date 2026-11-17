@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6cdd4bfd4ae18092
+CONTENT-HASH: 4592c00990b0c5e0
 
 ## Blocking
-(none)
+
+none
 
 ## Polish
-(none)
+- Kertaa-tehtävän "Ruudun käyrästä näkyy" viittaa ruutuun, jota Herätä-vaiheessa ei vielä ole; sano esim. "Liiketunnistimen käyrästä".
+- Kertaus (f = 1/T) tukee Ennuste 2:ta, mutta opiskelijan on silti päätettävä itse, miten T:n kaksinkertaistus näkyy käyrässä; ei paljasta vastausta.
 
 ## Checked
-identity entries keep the original Finnish wording, which already reads clearly; decimal comma used; photo alt text and caption simple; nothing else changed.
+batch delta review: new retrieval task (f = 1/T) does not disclose Ennuste 1 (A) or 2 (T doubled); distractors have repairing feedback; paragraph split clear.
