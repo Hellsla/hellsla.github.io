@@ -392,7 +392,7 @@ $$, the same as the slope of the fit. The corrected intercept $-0.11\,\text{V}$ 
 **Conversions:** The frequency is $f = 5.8 \cdot 10^{14}\,\text{Hz}$. The result is converted from metres to nanometres: $1\,\text{m} = 10^9\,\text{nm}$.
 **Substitution:** $\lambda = \dfrac{2.998 \cdot 10^8\,\text{m/s}}{5.8 \cdot 10^{14}\,\text{Hz}} = 5.169 \cdot 10^{-7}\,\text{m}$. In nanometres $5.169 \cdot 10^{-7}\,\text{m} = 5.169 \cdot 10^{-7} \cdot 10^9\,\text{nm} = 516.9\,\text{nm}$.
 **Answer:** $\lambda = 517\,\text{nm}$, three significant figures like the constant $c$ and the value read from the graph. The wavelength is in the region of green light, so the LED is green.
-**Reasonableness:** The peak wavelength of a green LED is about $500$–$550\,\text{nm}$ and its threshold voltage about $2.3\,\text{V}$, so the result fits. With round numbers $c : f$ is about $5 \cdot 10^{-7}\,\text{m}$. The formula $\tfrac{hc}{eU_\text{k}}$ would give $539\,\text{nm}$ for $2.30\,\text{V}$; the measured line gives a shorter wavelength because the measured threshold voltage is lower than $\tfrac{hc}{e\lambda}$.
+**Reasonableness:** The peak wavelength of a green LED is about $500$–$550\,\text{nm}$ and its threshold voltage about $2.3\,\text{V}$, so the result fits. With round numbers $c : f$ is about $5 \cdot 10^{-7}\,\text{m}$. For $2.30\,\text{V}$ the formula would give the wavelength $\tfrac{hc}{eU_\text{k}} = 539\,\text{nm}$; the measured line gives a shorter wavelength because the measured threshold voltage is lower than $\tfrac{hc}{e\lambda}$.
 
 ## fy8-6-L2-10
 **Given:** the fitted line of the figure, $f = 7.0 \cdot 10^{14}\,\text{Hz}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
