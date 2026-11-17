@@ -97,7 +97,9 @@
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** $$\begin{aligned} \tfrac{1}{2}mv_A^2 &= \tfrac{1}{2} \cdot 9.109 \cdot 10^{-31}\,\text{kg} \\ &\cdot (2.0 \cdot 10^{6}\,\text{m/s})^2 \\ &= 1.822 \cdot 10^{-18}\,\text{J} \end{aligned}$$, $$\begin{aligned} &e(V_B - V_A) \\ &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &= 1.922 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $$\begin{aligned} E_{\text{k},B} &= 1.822 \cdot 10^{-18}\,\text{J} \\ &+ 1.922 \cdot 10^{-17}\,\text{J} \\ &= 2.105 \cdot 10^{-17}\,\text{J} \end{aligned}$$ and $v_B = \sqrt{\dfrac{2 \cdot 2.105 \cdot 10^{-17}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 6.80 \cdot 10^{6}\,\text{m/s}$
 **Answer:** $6.8 \cdot 10^{6}\,\text{m/s}$, two significant figures like the initial speed and the potentials.
-**Reasonableness:** At point $A$ the kinetic energy of the electron is only about $11\,\text{eV}$, and it gains another $120\,\text{eV}$, so the kinetic energy grows to about $12$ times and the speed to about $\sqrt{12} \approx 3.5$ times: $$\begin{aligned} &3.5 \cdot 2.0 \cdot 10^{6}\,\text{m/s} \\ &= 7 \cdot 10^{6}\,\text{m/s} \end{aligned}$$. The electron speeds up, because a negative charge accelerates toward a higher potential.
+**Reasonableness:** At point $A$ the kinetic energy of the electron is only about $11\,\text{eV}$, and it gains another $120\,\text{eV}$, so the kinetic energy grows to about $12$ times and the speed to about $\sqrt{12} \approx 3.5$ times: $$\begin{aligned} &3.5 \cdot 2.0 \cdot 10^{6}\,\text{m/s} \\ &= 7 \cdot 10^{6}\,\text{m/s} \end{aligned}$$.
+
+The electron speeds up, because a negative charge accelerates toward a higher potential.
 
 ## fy6-12-L3-02
 **Given:** mass of the electron $m_\text{e} = 9.109 \cdot 10^{-31}\,\text{kg}$, mass of the proton $m_\text{p} = 1.673 \cdot 10^{-27}\,\text{kg}$; each starts from rest and travels through the same potential difference $U$, and the magnitude of each charge is $e$
@@ -112,7 +114,9 @@
 ## fy6-12-L3-03
 **Given:** plate separation $d = 2.0\,\text{cm}$, voltage $U = 600\,\text{V}$, initial speed $v_0 = 3.0 \cdot 10^{5}\,\text{m/s}$, $m = 1.673 \cdot 10^{-27}\,\text{kg}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the distance of the turning point from the positive plate in millimetres
-**Principle:** The proton moves toward a higher potential, so its potential energy increases and its kinetic energy decreases by the same amount. It stops at the point where the whole initial kinetic energy has changed into potential energy. In a uniform field the potential grows steadily, $V = Ex = \dfrac{U}{d}\,x$ measured from the negative plate.
+**Principle:** The proton moves toward a higher potential, so its potential energy increases and its kinetic energy decreases by the same amount. It stops at the point where the whole initial kinetic energy has changed into potential energy.
+
+In a uniform field the potential grows steadily, $V = Ex = \dfrac{U}{d}\,x$ measured from the negative plate.
 **Formula:** $E_{\text{k},0} = \tfrac{1}{2}mv_0^2$ and $E_{\text{k},0} = eV = e\,\dfrac{U}{d}\,x$, from which $x = \dfrac{E_{\text{k},0}\,d}{eU}$; the distance from the positive plate is $d - x$
 **Conversions:** $d = 2.0\,\text{cm} = 0.020\,\text{m}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $$\begin{aligned} E_{\text{k},0} &= \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \\ &\cdot (3.0 \cdot 10^{5}\,\text{m/s})^2 \\ &= 7.529 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $x = \dfrac{7.529 \cdot 10^{-17}\,\text{J} \cdot 0.020\,\text{m}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 600\,\text{V}} = 0.01566\,\text{m}$ and $d - x = 0.020\,\text{m} - 0.01566\,\text{m} = 0.00434\,\text{m} = 4.34\,\text{mm}$
@@ -122,13 +126,23 @@
 ## fy6-12-L1-06
 **Find:** how the electric potential energy of a positive and a negative charge changes when each moves the same distance in the direction of the field.
 **Principle:** The electric field points from a higher potential to a lower one, so when moving in the direction of the field the potential $V$ decreases. The potential energy of a charge is $E_\text{p} = qV$, so the sign of the change also depends on the sign of the charge.
-**Model answer:** The potential energy of the positive charge decreases and that of the negative charge increases, because the potential falls in the direction of the field. For a positive $q$ a smaller $V$ means a smaller product $qV$, and for a negative $q$ it means a greater, less negative value. The field does positive work on the positive charge and negative work on the negative charge, and the work equals the decrease of the potential energy. The claim that the energy of both decreases forgets the sign of the charge. The claim that the energy stays the same forgets that the potential changes steadily with distance. The claim that the energy of the positive charge increases reverses the direction of the potential.
+**Model answer:** The potential energy of the positive charge decreases and that of the negative charge increases, because the potential falls in the direction of the field.
+
+For a positive $q$ a smaller $V$ means a smaller product $qV$, and for a negative $q$ it means a greater, less negative value. The field does positive work on the positive charge and negative work on the negative charge, and the work equals the decrease of the potential energy.
+
+The claim that the energy of both decreases forgets the sign of the charge. The claim that the energy stays the same forgets that the potential changes steadily with distance.
+
+The claim that the energy of the positive charge increases reverses the direction of the potential.
 **Reasonableness:** For example, when the potential falls by $100\,\text{V}$, the energy of the charge $+e$ changes by $-100\,\text{eV}$ and that of the charge $-e$ by $+100\,\text{eV}$, equally much in opposite directions.
 
 ## fy6-12-L1-07
 **Find:** which claim is correct when the zero point of the potential is moved from the negative plate to the positive plate.
 **Principle:** The potential is the voltage relative to the chosen zero point, so it changes with the zero point. The voltage is the difference between the potentials of two points, and when both potentials are shifted by the same amount, the difference does not change.
-**Model answer:** The potential of the negative plate is $-200\,\text{V}$, and the voltage is still $200\,\text{V}$, because the voltage is the difference of the potentials: $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$. The potential of the positive plate is now $0\,\text{V}$, so the potential is not a property of the plate itself but depends on the choice of the zero point. The voltage is neither zero nor negative, and the field is unchanged, because moving the zero point changes all potentials by the same amount. The field still points from the positive plate to the negative one.
+**Model answer:** The potential of the negative plate is $-200\,\text{V}$, and the voltage is still $200\,\text{V}$, because the voltage is the difference of the potentials: $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$.
+
+The potential of the positive plate is now $0\,\text{V}$, so the potential is not a property of the plate itself but depends on the choice of the zero point.
+
+The voltage is neither zero nor negative, and the field is unchanged, because moving the zero point changes all potentials by the same amount. The field still points from the positive plate to the negative one.
 **Reasonableness:** Before the move the difference was $200\,\text{V} - 0\,\text{V} = 200\,\text{V}$ and after the move $0\,\text{V} - (-200\,\text{V}) = 200\,\text{V}$, so the voltage is the same.
 
 ## fy6-12-L1-08
@@ -144,18 +158,30 @@
 ## fy6-12-L2-05
 **Given:** plate separation $d = 6.0\,\text{cm}$; the points $(x, V)$ of the table; the negative plate is the zero point, so $V = 0$ at $x = 0$
 **Find:** the field strength $E$ in the unit $\text{V/m}$ and the voltage $U$ between the plates in volts
-**Principle:** In a uniform field the potential grows steadily from the negative plate, $V = Ex$, so the points lie on a line that passes through the origin and whose slope is $E$. The measurement scatter evens out when a line is fitted to all the points by the least-squares method and $E$ is read from the slope of the line. The voltage is the potential at the positive plate, that is, $U = Ed$.
+**Principle:** In a uniform field the potential grows steadily from the negative plate, $V = Ex$, so the points lie on a line that passes through the origin and whose slope is $E$.
+
+The measurement scatter evens out when a line is fitted to all the points by the least-squares method and $E$ is read from the slope of the line.
+
+The voltage is the potential at the positive plate, that is, $U = Ed$.
 **Reading the table:** The points rise steadily and are close to a line, but not exactly on it. The slope of the fitted line through the origin is $k = \dfrac{\sum x V}{\sum x^2}$.
 **Formula:** $E = k$ and $U = Ed$
 **Conversions:** $1\,\text{V/cm} = 1\,\text{V} : 0.01\,\text{m} = 100\,\text{V/m}$ and $d = 6.0\,\text{cm} = 0.060\,\text{m}$.
-**Substitution:** The sum $$\begin{aligned} \sum x^2 &= 1.0^2 + 2.0^2 + 3.0^2 \\ &+ 4.0^2 + 5.0^2 \\ &= 55.0\,\text{cm}^2 \end{aligned}$$ and the sum $$\begin{aligned} \sum xV &= 5.2 + 19.4 + 46.2 \\ &+ 78.4 + 126.5 \\ &= 275.7\,\text{V}\cdot\text{cm} \end{aligned}$$. The slope is $$\begin{aligned} k &= 275.7 : 55.0 \\ &= 5.013\,\text{V/cm} \end{aligned}$$, so $E = 5.013\,\text{V/cm} = 501\,\text{V/m}$ and $U = Ed = 501\,\text{V/m} \cdot 0.060\,\text{m} = 30.1\,\text{V}$
+**Substitution:** The sum $$\begin{aligned} \sum x^2 &= 1.0^2 + 2.0^2 + 3.0^2 \\ &+ 4.0^2 + 5.0^2 \\ &= 55.0\,\text{cm}^2 \end{aligned}$$ and the sum $$\begin{aligned} \sum xV &= 5.2 + 19.4 + 46.2 \\ &+ 78.4 + 126.5 \\ &= 275.7\,\text{V}\cdot\text{cm} \end{aligned}$$.
+
+The slope is $$\begin{aligned} k &= 275.7 : 55.0 \\ &= 5.013\,\text{V/cm} \end{aligned}$$, so $E = 5.013\,\text{V/cm} = 501\,\text{V/m}$ and $U = Ed = 501\,\text{V/m} \cdot 0.060\,\text{m} = 30.1\,\text{V}$
 **Answer:** a) $E \approx 5.0 \cdot 10^{2}\,\text{V/m}$; b) $U \approx 30\,\text{V}$ ($30.1\,\text{V}$ in the box), two significant figures like the plate separation $6.0\,\text{cm}$.
 **Reasonableness:** At $5.0\,\text{cm}$ the fitted line gives $25.1\,\text{V}$, which is close to the measured $25.3\,\text{V}$, and at $6.0\,\text{cm}$ it gives $30.1\,\text{V}$. The potential of the positive plate is equal to the voltage $U$, because the zero point is at the negative plate.
 
 ## fy6-12-L2-06
 **Find:** what the error in the student's claim is.
 **Principle:** The field points from a higher potential to a lower one, and a positive charge accelerates in the direction of the field. When only the electric force acts, the sum of the kinetic energy and the potential energy is conserved, so when the kinetic energy grows, the potential energy $qV$ decreases.
-**Model answer:** The electric force accelerates a positive charge that starts from rest in the direction of the field, that is, toward a lower potential, and then its potential energy decreases. The charge does not tend toward a greater energy but toward a smaller potential energy, and the kinetic energy grows by as much as the potential energy decreases. A positive charge gets to a higher potential only if it has kinetic energy or an external force does work to move it. The direction does not depend on the mass of the particle or on the sign of the potential, because the zero point is chosen freely. The force acts on the charge at every point, not only at the zero point.
+**Model answer:** The electric force accelerates a positive charge that starts from rest in the direction of the field, that is, toward a lower potential, and then its potential energy decreases.
+
+The charge does not tend toward a greater energy but toward a smaller potential energy, and the kinetic energy grows by as much as the potential energy decreases.
+
+A positive charge gets to a higher potential only if it has kinetic energy or an external force does work to move it. The direction does not depend on the mass of the particle or on the sign of the potential, because the zero point is chosen freely.
+
+The force acts on the charge at every point, not only at the zero point.
 **Reasonableness:** For example, a proton between the plates accelerates toward the negative plate, whose potential is lower. It gains kinetic energy, so the potential energy must decrease.
 
 ## fy6-12-L2-07
@@ -164,13 +190,21 @@
 **Principle:** Only the electric force does work, so the kinetic energy equals the work done by the field, $\tfrac{1}{2}mv^2 = eU$. The mass is obtained by solving the equation for every row, and the random measurement scatter evens out in the mean.
 **Formula:** $\tfrac{1}{2}mv^2 = eU$, from which $m = \dfrac{2eU}{v^2}$
 **Conversions:** The speed $6.88$ in the unit $10^{4}\,\text{m/s}$ of the table is $6.88 \cdot 10^{4}\,\text{m/s}$; otherwise the quantities are in base units.
-**Substitution:** The mass of the row $U = 100\,\text{V}$ is $m_1 = \dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V}}{(6.88 \cdot 10^{4}\,\text{m/s})^2} = 6.77 \cdot 10^{-27}\,\text{kg}$. The other rows give $m_2 = 6.47 \cdot 10^{-27}\,\text{kg}$, $m_3 = 6.68 \cdot 10^{-27}\,\text{kg}$, $m_4 = 6.63 \cdot 10^{-27}\,\text{kg}$ and $m_5 = 6.75 \cdot 10^{-27}\,\text{kg}$. The sum of the masses is $33.30 \cdot 10^{-27}\,\text{kg}$, so $m = 33.30 \cdot 10^{-27}\,\text{kg} : 5 = 6.66 \cdot 10^{-27}\,\text{kg}$
+**Substitution:** The mass of the row $U = 100\,\text{V}$ is $m_1 = \dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V}}{(6.88 \cdot 10^{4}\,\text{m/s})^2} = 6.77 \cdot 10^{-27}\,\text{kg}$.
+
+The other rows give $m_2 = 6.47 \cdot 10^{-27}\,\text{kg}$, $m_3 = 6.68 \cdot 10^{-27}\,\text{kg}$, $m_4 = 6.63 \cdot 10^{-27}\,\text{kg}$ and $m_5 = 6.75 \cdot 10^{-27}\,\text{kg}$.
+
+The sum of the masses is $33.30 \cdot 10^{-27}\,\text{kg}$, so $m = 33.30 \cdot 10^{-27}\,\text{kg} : 5 = 6.66 \cdot 10^{-27}\,\text{kg}$
 **Answer:** a) $6.66 \cdot 10^{-27}\,\text{kg}$, three significant figures like the speeds; b) the ion is a singly charged helium ion (He$^+$), whose mass is $6.646 \cdot 10^{-27}\,\text{kg}$.
-**Reasonableness:** The result differs from the mass of the helium ion by less than $1\,\%$, whereas the mass of the proton would be about $4$ times smaller and that of the deuteron about two times smaller, so the choice is clear. The masses of the rows vary by about $\pm 3\,\%$, which fits the scatter of the three-digit speeds.
+**Reasonableness:** The result differs from the mass of the helium ion by less than $1\,\%$, whereas the mass of the proton would be about $4$ times smaller and that of the deuteron about two times smaller, so the choice is clear.
+
+The masses of the rows vary by about $\pm 3\,\%$, which fits the scatter of the three-digit speeds.
 
 ## fy6-12-L2-08
 **Find:** whether the student's calculation has an error and in which row, when the kinetic energy at point B of an electron that started from rest is calculated.
-**Principle:** Only the electric force does work, so the sum of the kinetic energy and the potential energy is conserved. The kinetic energy grows by as much as the potential energy $E_\text{p} = qV$ decreases. The change depends on the potential difference $V_B - V_A$ between the points, not on the potential of a single point, whose value depends on the choice of the zero point.
+**Principle:** Only the electric force does work, so the sum of the kinetic energy and the potential energy is conserved. The kinetic energy grows by as much as the potential energy $E_\text{p} = qV$ decreases.
+
+The change depends on the potential difference $V_B - V_A$ between the points, not on the potential of a single point, whose value depends on the choice of the zero point.
 **Model answer:** Row 1 is correct: the force on the electron points against the field, so it starts toward a higher potential, from point A to point B.
 
 Row 2 is correct: the charge of the electron is $q = -e$, so $E_{\text{p},A} = -30\,\text{eV}$ and $E_{\text{p},B} = -120\,\text{eV}$. The potential energy decreases.
@@ -193,28 +227,44 @@ $E_\text{k} = 1.442 \cdot 10^{-17}\,\text{J}$
 
 $E_\text{k} \approx 1.4 \cdot 10^{-17}\,\text{J}$
 
-The kinetic energy is $90\,\text{eV}$, that is, $1.4 \cdot 10^{-17}\,\text{J}$ to two significant figures. Check: the potential energy decreases by $-30\,\text{eV} - (-120\,\text{eV}) = 90\,\text{eV}$, and the same amount changes into kinetic energy. The correct answer is row 3: the kinetic energy is given by the potential difference, not by the potential of the end point.
+The kinetic energy is $90\,\text{eV}$, that is, $1.4 \cdot 10^{-17}\,\text{J}$ to two significant figures. Check: the potential energy decreases by $-30\,\text{eV} - (-120\,\text{eV}) = 90\,\text{eV}$, and the same amount changes into kinetic energy.
+
+The correct answer is row 3: the kinetic energy is given by the potential difference, not by the potential of the end point.
 
 ## fy6-12-L3-04
 **Given:** accelerating voltage $U_\text{a} = 1.8\,\text{kV}$, length of the plates $L = 5.0\,\text{cm}$, plate separation $d = 1.5\,\text{cm}$, deflecting voltage $U_\text{d} = 120\,\text{V}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; initial speed zero, and the electron enters between the plates from the middle, parallel to the plates
 **Find:** a) the speed $v$ before the plates, b) the deflection $y$ in millimetres at the end of the plates and whether the electron hits a plate, c) whether gravity is negligible
-**Principle:** In the acceleration only the electric force does work, so potential energy changes into kinetic energy. Between the plates the field is uniform and its force is perpendicular to the plates, so the acceleration is constant. In the direction of the plates there is no force, so the speed $v$ is conserved and the transit time is $t = L : v$.
+**Principle:** In the acceleration only the electric force does work, so potential energy changes into kinetic energy. Between the plates the field is uniform and its force is perpendicular to the plates, so the acceleration is constant.
+
+In the direction of the plates there is no force, so the speed $v$ is conserved and the transit time is $t = L : v$.
 **Formula:** $\tfrac{1}{2}mv^2 = eU_\text{a}$, from which $v = \sqrt{\dfrac{2eU_\text{a}}{m}}$; $E = \dfrac{U_\text{d}}{d}$, $F = eE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v}$ and $y = \tfrac{1}{2}at^2$. Combined, the mass cancels: $y = \dfrac{U_\text{d}L^2}{4dU_\text{a}}$
 **Conversions:** $U_\text{a} = 1.8\,\text{kV} = 1800\,\text{V}$, $L = 5.0\,\text{cm} = 0.050\,\text{m}$, $d = 1.5\,\text{cm} = 0.015\,\text{m}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
-**Substitution:** a) $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1800\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 2.516 \cdot 10^{7}\,\text{m/s}$. b) The time is $t = 0.050\,\text{m} : 2.516 \cdot 10^{7}\,\text{m/s} = 1.987 \cdot 10^{-9}\,\text{s}$, the force $$\begin{aligned} F &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &: 0.015\,\text{m} \\ &= 1.282 \cdot 10^{-15}\,\text{N} \end{aligned}$$ and the acceleration $$\begin{aligned} a &= 1.282 \cdot 10^{-15}\,\text{N} \\ &: 9.109 \cdot 10^{-31}\,\text{kg} \\ &= 1.407 \cdot 10^{15}\,\text{m/s}^2 \end{aligned}$$. The deflection is $$\begin{aligned} y &= \tfrac{1}{2} \cdot 1.407 \cdot 10^{15}\,\text{m/s}^2 \\ &\cdot (1.987 \cdot 10^{-9}\,\text{s})^2 \\ &= 2.78 \cdot 10^{-3}\,\text{m} \\ &= 2.78\,\text{mm} \end{aligned}$$. Half of the plate separation is $d : 2 = 7.5\,\text{mm}$, so the electron does not hit a plate. c) Gravity is $mg = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 8.94 \cdot 10^{-30}\,\text{N}$, and the electric force is $1.282 \cdot 10^{-15}\,\text{N}$, that is, about $1.4 \cdot 10^{14}$ times greater.
+**Substitution:** a) $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1800\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 2.516 \cdot 10^{7}\,\text{m/s}$. b) The time is $t = 0.050\,\text{m} : 2.516 \cdot 10^{7}\,\text{m/s} = 1.987 \cdot 10^{-9}\,\text{s}$, the force $$\begin{aligned} F &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &: 0.015\,\text{m} \\ &= 1.282 \cdot 10^{-15}\,\text{N} \end{aligned}$$ and the acceleration $$\begin{aligned} a &= 1.282 \cdot 10^{-15}\,\text{N} \\ &: 9.109 \cdot 10^{-31}\,\text{kg} \\ &= 1.407 \cdot 10^{15}\,\text{m/s}^2 \end{aligned}$$.
+
+The deflection is $$\begin{aligned} y &= \tfrac{1}{2} \cdot 1.407 \cdot 10^{15}\,\text{m/s}^2 \\ &\cdot (1.987 \cdot 10^{-9}\,\text{s})^2 \\ &= 2.78 \cdot 10^{-3}\,\text{m} \\ &= 2.78\,\text{mm} \end{aligned}$$.
+
+Half of the plate separation is $d : 2 = 7.5\,\text{mm}$, so the electron does not hit a plate. c) Gravity is $mg = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 8.94 \cdot 10^{-30}\,\text{N}$, and the electric force is $1.282 \cdot 10^{-15}\,\text{N}$, that is, about $1.4 \cdot 10^{14}$ times greater.
 **Answer:** a) $2.5 \cdot 10^{7}\,\text{m/s}$; b) $2.8\,\text{mm}$, two significant figures like the initial data, and the electron does not hit a plate; c) the electric force is about $1.4 \cdot 10^{14}$ times greater than gravity, so gravity can be neglected.
 **Reasonableness:** Directly with the symbol formula $y = \dfrac{120\,\text{V} \cdot (0.050\,\text{m})^2}{4 \cdot 0.015\,\text{m} \cdot 1800\,\text{V}} = 2.78\,\text{mm}$, the same result. The speed is about $8\,\%$ of the speed of light, so the classical formula $\tfrac{1}{2}mv^2$ is suitable.
 
 ## fy6-12-L3-05
 **Given:** the retarding voltages $U_\text{r}$ of the table and the shares of the electrons that get through; $e = 1.602 \cdot 10^{-19}\,\text{C}$, $m = 9.109 \cdot 10^{-31}\,\text{kg}$; an electron gets through if $E_\text{k} \ge eU_\text{r}$
 **Find:** a) the share between $40\,\text{eV}$ and $60\,\text{eV}$, b) the mean kinetic energy, c) the corresponding speed $v$, d) why the result is an estimate
-**Principle:** The electron is slowed down at the grid and gets through only if its kinetic energy is enough to climb the retarding voltage $U_\text{r}$, that is, $E_\text{k} \ge eU_\text{r}$. At a retarding voltage $U_\text{r}$ all electrons get through whose kinetic energy is at least $U_\text{r}$ in electronvolts. The difference of the shares of two consecutive rows is the share of the electrons whose energy is between these values. The mean is obtained by weighting the midpoints of the intervals by the shares, and the speed is obtained from the kinetic energy.
+**Principle:** The electron is slowed down at the grid and gets through only if its kinetic energy is enough to climb the retarding voltage $U_\text{r}$, that is, $E_\text{k} \ge eU_\text{r}$.
+
+At a retarding voltage $U_\text{r}$ all electrons get through whose kinetic energy is at least $U_\text{r}$ in electronvolts. The difference of the shares of two consecutive rows is the share of the electrons whose energy is between these values.
+
+The mean is obtained by weighting the midpoints of the intervals by the shares, and the speed is obtained from the kinetic energy.
 **Reading the table:** The share decreases as the retarding voltage increases: $100\,\%$ at $0\,\text{V}$ and $0\,\%$ at $100\,\text{V}$. It falls most steeply between $40\,\text{V}$ and $60\,\text{V}$.
 **Formula:** $E_\text{k,av} = \sum p_i E_i$, where $p_i$ is the share of the interval and $E_i$ the midpoint of the interval, and $v = \sqrt{\dfrac{2E_\text{k,av}}{m}}$
 **Conversions:** $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, and the retarding voltage $U_\text{r}$ in volts corresponds to the energy $eU_\text{r}$, that is, the same number in electronvolts.
-**Substitution:** a) An energy of at least $40\,\text{eV}$ is held by $71\,\%$ and at least $60\,\text{eV}$ by $22\,\%$, so the interval holds $71\,\% - 22\,\% = 49\,\%$. b) The shares for the intervals $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$ and $80$–$100\,\text{eV}$ are $2\,\%$, $27\,\%$, $49\,\%$, $19\,\%$ and $3\,\%$, and they add up to $100\,\%$. The midpoints are $10$, $30$, $50$, $70$ and $90\,\text{eV}$, so the weighted sum is $$\begin{aligned} &0.02 \cdot 10\,\text{eV} + 0.27 \cdot 30\,\text{eV} \\ &+ 0.49 \cdot 50\,\text{eV} + 0.19 \cdot 70\,\text{eV} \\ &+ 0.03 \cdot 90\,\text{eV} \\ &= 48.8\,\text{eV} \end{aligned}$$. c) In joules $E_\text{k,av} = 48.8 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 7.818 \cdot 10^{-18}\,\text{J}$ and $v = \sqrt{\dfrac{2 \cdot 7.818 \cdot 10^{-18}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 4.14 \cdot 10^{6}\,\text{m/s}$.
+**Substitution:** a) An energy of at least $40\,\text{eV}$ is held by $71\,\%$ and at least $60\,\text{eV}$ by $22\,\%$, so the interval holds $71\,\% - 22\,\% = 49\,\%$. b) The shares for the intervals $0$–$20$, $20$–$40$, $40$–$60$, $60$–$80$ and $80$–$100\,\text{eV}$ are $2\,\%$, $27\,\%$, $49\,\%$, $19\,\%$ and $3\,\%$, and they add up to $100\,\%$.
+
+The midpoints are $10$, $30$, $50$, $70$ and $90\,\text{eV}$, so the weighted sum is $$\begin{aligned} &0.02 \cdot 10\,\text{eV} + 0.27 \cdot 30\,\text{eV} \\ &+ 0.49 \cdot 50\,\text{eV} + 0.19 \cdot 70\,\text{eV} \\ &+ 0.03 \cdot 90\,\text{eV} \\ &= 48.8\,\text{eV} \end{aligned}$$. c) In joules $E_\text{k,av} = 48.8 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 7.818 \cdot 10^{-18}\,\text{J}$ and $v = \sqrt{\dfrac{2 \cdot 7.818 \cdot 10^{-18}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 4.14 \cdot 10^{6}\,\text{m/s}$.
 **Answer:** a) $49\,\%$; b) about $49\,\text{eV}$; c) $4.1 \cdot 10^{6}\,\text{m/s}$ ($4.14 \cdot 10^{6}\,\text{m/s}$ in the box), two significant figures, because the energy intervals are measured roughly; d) the midpoint assumption makes the result an estimate.
-**Reasonableness:** Electrons whose energy is at most $100\,\text{eV}$ travel at a speed of at most $5.9 \cdot 10^{6}\,\text{m/s}$ (the same formula with the energy $100\,\text{eV}$), and the result $4.1 \cdot 10^{6}\,\text{m/s}$ is below it. The speed is about $1.4\,\%$ of the speed of light, so the expression $\tfrac{1}{2}mv^2$ holds. Part d): the distribution is known only to a precision of $20\,\text{eV}$, so the energies of the electrons in an interval vary and are not exactly at the midpoint.
+**Reasonableness:** Electrons whose energy is at most $100\,\text{eV}$ travel at a speed of at most $5.9 \cdot 10^{6}\,\text{m/s}$ (the same formula with the energy $100\,\text{eV}$), and the result $4.1 \cdot 10^{6}\,\text{m/s}$ is below it.
+
+The speed is about $1.4\,\%$ of the speed of light, so the expression $\tfrac{1}{2}mv^2$ holds. Part d): the distribution is known only to a precision of $20\,\text{eV}$, so the energies of the electrons in an interval vary and are not exactly at the midpoint.
 
 ## fy6-12-L2-09
 **Given:** the potential $V$ between the plates from the graph; the electron starts from rest at $x = 1.0\,\text{cm}$ and goes to the positive plate; $e = 1.602 \cdot 10^{-19}\,\text{C}$, $m = 9.109 \cdot 10^{-31}\,\text{kg}$

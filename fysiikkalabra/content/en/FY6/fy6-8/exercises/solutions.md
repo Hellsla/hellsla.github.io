@@ -41,7 +41,9 @@
 ## fy6-8-L1-05
 **Given:** the points of the graph and the straight line drawn through them, extended to the axes
 **Find:** the short-circuit current $I_\text{k}$ in amperes
-**Principle:** In a short circuit the terminal voltage is zero. The $(I, U)$ graph of a battery is the straight line $U = E - R_\text{s} I$, so the short-circuit current is the current at which the line meets the horizontal axis. The short-circuit current was not measured but is obtained by extending the line drawn through the points.
+**Principle:** In a short circuit the terminal voltage is zero. The $(I, U)$ graph of a battery is the straight line $U = E - R_\text{s} I$, so the short-circuit current is the current at which the line meets the horizontal axis.
+
+The short-circuit current was not measured but is obtained by extending the line drawn through the points.
 **Reading the graph:** The line, extended with a dashed line, meets the horizontal axis $U = 0$ at the gridline $3.0\,\text{A}$. It meets the vertical axis at $4.5\,\text{V}$, which is the source voltage.
 **Formula:** $U = E - R_\text{s} I_\text{k} = 0$, from which $I_\text{k} = \dfrac{E}{R_\text{s}}$; the value is read from where the line meets the horizontal axis.
 **Conversions:** Not needed: the current is read in amperes.
@@ -92,7 +94,9 @@
 ## fy6-8-L3-01
 **Given:** two identical batteries in parallel, each with $E_1 = 1.5\,\text{V}$ and $R_{\text{s}1} = 0.40\,\Omega$; resistance of the lamp $R = 0.80\,\Omega$
 **Find:** the current $I_1$ through each battery in amperes
-**Principle:** The source voltage of identical batteries in parallel is the same as for one, and the internal resistances are parallel branches, so the internal resistance of the group is half the internal resistance of one battery. The group and the lamp form a loop whose current comes from the voltage law. The batteries are identical, so by the current law the total current is shared equally between them.
+**Principle:** The source voltage of identical batteries in parallel is the same as for one, and the internal resistances are parallel branches, so the internal resistance of the group is half the internal resistance of one battery.
+
+The group and the lamp form a loop whose current comes from the voltage law. The batteries are identical, so by the current law the total current is shared equally between them.
 **Formula:** $R_\text{s} = \dfrac{R_{\text{s}1}}{2}$, $I = \dfrac{E_1}{R + R_\text{s}}$ and $I_1 = \dfrac{I}{2}$
 **Conversions:** Not needed: all the quantities are in base units.
 **Substitution:** $R_\text{s} = \dfrac{0.40\,\Omega}{2} = 0.20\,\Omega$, $I = \dfrac{1.5\,\text{V}}{0.80\,\Omega + 0.20\,\Omega} = 1.5\,\text{A}$ and $I_1 = \dfrac{1.5\,\text{A}}{2} = 0.75\,\text{A}$
@@ -102,7 +106,9 @@
 ## fy6-8-L3-02
 **Given:** three batteries in series, one the wrong way round; each with $E_1 = 1.5\,\text{V}$ and $R_{\text{s}1} = 0.25\,\Omega$; resistance of the lamp $R = 4.0\,\Omega$
 **Find:** the current $I$ through the lamp in amperes
-**Principle:** In a series connection the changes of potential are added. In the batteries that are the right way round the potential rises by $E_1$, but in the one the wrong way round it drops by the same amount, so the source voltage of the group is $E_1 + E_1 - E_1$. The internal resistance of all three is still in the same loop one after the other.
+**Principle:** In a series connection the changes of potential are added. In the batteries that are the right way round the potential rises by $E_1$, but in the one the wrong way round it drops by the same amount, so the source voltage of the group is $E_1 + E_1 - E_1$.
+
+The internal resistance of all three is still in the same loop one after the other.
 **Formula:** $E = E_1 + E_1 - E_1 = E_1$, $R_\text{s} = 3R_{\text{s}1}$ and $I = \dfrac{E}{R + R_\text{s}} = \dfrac{E_1}{R + 3R_{\text{s}1}}$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1.5\,\text{V}}{4.0\,\Omega + 3 \cdot 0.25\,\Omega} = \dfrac{1.5\,\text{V}}{4.75\,\Omega} = 0.3158\,\text{A}$
@@ -112,7 +118,9 @@
 ## fy6-8-L3-03
 **Given:** load $R_1 = 2.0\,\Omega$, terminal voltage $U_1 = 1.20\,\text{V}$; load $R_2 = 6.0\,\Omega$, terminal voltage $U_2 = 1.44\,\text{V}$
 **Find:** the source voltage $E$ in volts
-**Principle:** The terminal voltage is the voltage of the load resistor, so Ohm's law gives the current of each measurement. The same battery is in both measurements, so $U = E - R_\text{s} I$ holds with the same $E$ and $R_\text{s}$. From the two equations the internal resistance is solved first and then the source voltage.
+**Principle:** The terminal voltage is the voltage of the load resistor, so Ohm's law gives the current of each measurement. The same battery is in both measurements, so $U = E - R_\text{s} I$ holds with the same $E$ and $R_\text{s}$.
+
+From the two equations the internal resistance is solved first and then the source voltage.
 **Formula:** $I_1 = \dfrac{U_1}{R_1}$ and $I_2 = \dfrac{U_2}{R_2}$; $U_1 = E - R_\text{s} I_1$ and $U_2 = E - R_\text{s} I_2$, so $R_\text{s} = \dfrac{U_2 - U_1}{I_1 - I_2}$ and $E = U_1 + R_\text{s} I_1$
 **Conversions:** Not needed: all the quantities are in base units.
 **Substitution:** $I_1 = \dfrac{1.20\,\text{V}}{2.0\,\Omega} = 0.60\,\text{A}$, $I_2 = \dfrac{1.44\,\text{V}}{6.0\,\Omega} = 0.24\,\text{A}$, $R_\text{s} = \dfrac{1.44\,\text{V} - 1.20\,\text{V}}{0.60\,\text{A} - 0.24\,\text{A}} = 0.667\,\Omega$ and $E = 1.20\,\text{V} + 0.667\,\Omega \cdot 0.60\,\text{A} = 1.60\,\text{V}$
@@ -122,12 +130,20 @@
 ## fy6-8-L1-06
 **Find:** when the terminal voltage of a battery is equal to its source voltage.
 **Principle:** The terminal voltage is $U = E - R_\text{s} I$, where $R_\text{s} I$ is the voltage drop in the internal resistance of the battery. The terminal voltage is the source voltage only when this voltage drop is zero, that is, when no current is drawn from the battery.
-**Model answer:** The terminal voltage is equal to the source voltage when no current is drawn from the battery, because then no voltage drop arises in the internal resistance. If the current is large, the voltage drop is large and a voltage smaller than the source voltage is left across the terminals; the current is greatest in a short circuit, when the terminal voltage is zero. When the load resistance is equal to the internal resistance, the terminal voltage is only half of the source voltage. The claim that the voltages are always equal does not hold: the source voltage is a property of the battery, but the terminal voltage depends on the current drawn.
+**Model answer:** The terminal voltage is equal to the source voltage when no current is drawn from the battery, because then no voltage drop arises in the internal resistance.
+
+If the current is large, the voltage drop is large and a voltage smaller than the source voltage is left across the terminals; the current is greatest in a short circuit, when the terminal voltage is zero.
+
+When the load resistance is equal to the internal resistance, the terminal voltage is only half of the source voltage. The claim that the voltages are always equal does not hold: the source voltage is a property of the battery, but the terminal voltage depends on the current drawn.
 
 ## fy6-8-L1-07
 **Find:** what happens in a short circuit of a battery.
-**Principle:** The current is $I = E : (R + R_\text{s})$. In a short circuit the resistance of the external circuit is $R \approx 0$, so only the internal resistance of the battery limits the current, and the current is the short-circuit current $I_\text{k} = E : R_\text{s}$. In batteries $R_\text{s}$ is small, so the short-circuit current is large.
-**Model answer:** In a short circuit the current grows large, because only the internal resistance of the battery limits it. The whole source voltage is left across the internal resistance, so the terminal voltage is almost zero and the internal energy of the battery grows quickly. That is why a short circuit is dangerous and can damage the battery. The current does not drop to zero or stay the same, because the current is determined by the resistance of the whole circuit, and the terminal voltage cannot exceed the source voltage.
+**Principle:** The current is $I = E : (R + R_\text{s})$. In a short circuit the resistance of the external circuit is $R \approx 0$, so only the internal resistance of the battery limits the current, and the current is the short-circuit current $I_\text{k} = E : R_\text{s}$.
+
+In batteries $R_\text{s}$ is small, so the short-circuit current is large.
+**Model answer:** In a short circuit the current grows large, because only the internal resistance of the battery limits it. The whole source voltage is left across the internal resistance, so the terminal voltage is almost zero and the internal energy of the battery grows quickly.
+
+That is why a short circuit is dangerous and can damage the battery. The current does not drop to zero or stay the same, because the current is determined by the resistance of the whole circuit, and the terminal voltage cannot exceed the source voltage.
 
 ## fy6-8-L1-08
 **Given:** source voltage $E = 1.50\,\text{V}$, terminal voltage $U = 1.31\,\text{V}$, current $I = 0.50\,\text{A}$
@@ -142,34 +158,52 @@
 ## fy6-8-L2-05
 **Given:** the measured points of the table $(I;\ U)$: $(0.20\,\text{A};\ 1.43\,\text{V})$, $(0.40\,\text{A};\ 1.31\,\text{V})$, $(0.60\,\text{A};\ 1.20\,\text{V})$, $(0.80\,\text{A};\ 1.10\,\text{V})$, $(1.00\,\text{A};\ 0.99\,\text{V})$ and $(1.20\,\text{A};\ 0.86\,\text{V})$ (example data)
 **Find:** a) the source voltage $E$ read from the line, b) the internal resistance $R_\text{s}$ in ohms
-**Principle:** The terminal voltage of a battery is $U = E - R_\text{s} I$, so the $(I, U)$ points lie on a descending line. The line meets the vertical axis at $U = E$, and its slope is $-R_\text{s}$. The measured points have a little scatter, so the line is drawn through the middle of the set of points and not tied to individual points.
-**Reading the graph:** The fitted line meets the vertical axis at $1.54\,\text{V}$ and passes approximately through the point $(1.20\,\text{A};\ 0.87\,\text{V})$. The points lie on both sides of the line; if the line is turned differently within the limits of the points, the slope changes by about $\pm 0.03\,\Omega$. The two points read from the line are far apart: $(0\,\text{A};\ 1.54\,\text{V})$ and $(1.20\,\text{A};\ 0.87\,\text{V})$.
+**Principle:** The terminal voltage of a battery is $U = E - R_\text{s} I$, so the $(I, U)$ points lie on a descending line. The line meets the vertical axis at $U = E$, and its slope is $-R_\text{s}$.
+
+The measured points have a little scatter, so the line is drawn through the middle of the set of points and not tied to individual points.
+**Reading the graph:** The fitted line meets the vertical axis at $1.54\,\text{V}$ and passes approximately through the point $(1.20\,\text{A};\ 0.87\,\text{V})$. The points lie on both sides of the line; if the line is turned differently within the limits of the points, the slope changes by about $\pm 0.03\,\Omega$.
+
+The two points read from the line are far apart: $(0\,\text{A};\ 1.54\,\text{V})$ and $(1.20\,\text{A};\ 0.87\,\text{V})$.
 **Formula:** $R_\text{s} = -\dfrac{\Delta U}{\Delta I} = \dfrac{U_1 - U_2}{I_2 - I_1}$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{1.54\,\text{V} - 0.87\,\text{V}}{1.20\,\text{A} - 0\,\text{A}} = \dfrac{0.67\,\text{V}}{1.20\,\text{A}} = 0.558\,\Omega$
 **Answer:** a) $E \approx 1.54\,\text{V}$; b) $R_\text{s} \approx 0.56\,\Omega$, two significant figures, because the line is fitted by eye. A fit by eye varies: the slope can change by about $\pm 0.03\,\Omega$, so a value between $0.53\text{–}0.59\,\Omega$ is a good answer.
-**Reasonableness:** According to the model, at the current $0.60\,\text{A}$ the terminal voltage is $$\begin{aligned} &1.54\,\text{V} - 0.56\,\Omega \cdot 0.60\,\text{A} \\ &= 1.20\,\text{V} \end{aligned}$$, and that is the third value of the table. The source voltage is greater than any measured terminal voltage, as it should be. The short-circuit current would be $1.54\,\text{V} : 0.56\,\Omega \approx 2.8\,\text{A}$, but that is an extension of the line outside the range of measurement and it is not measured.
+**Reasonableness:** According to the model, at the current $0.60\,\text{A}$ the terminal voltage is $$\begin{aligned} &1.54\,\text{V} - 0.56\,\Omega \cdot 0.60\,\text{A} \\ &= 1.20\,\text{V} \end{aligned}$$, and that is the third value of the table.
+
+The source voltage is greater than any measured terminal voltage, as it should be. The short-circuit current would be $1.54\,\text{V} : 0.56\,\Omega \approx 2.8\,\text{A}$, but that is an extension of the line outside the range of measurement and it is not measured.
 
 ## fy6-8-L2-06
 **Given:** the measured points of the table $(I;\ U_\text{A};\ U_\text{B})$ at currents $0.10\,\text{A}$ … $1.00\,\text{A}$: the terminal voltage of battery A decreases from $1.55\,\text{V}$ to $1.10\,\text{V}$ and that of battery B from $1.47\,\text{V}$ to $1.27\,\text{V}$ (example data)
 **Find:** a) the current $I$ at which the terminal voltages are equal; b) which battery is better at a large current and why
 **Principle:** Both batteries follow the model $U = E - R_\text{s} I$, so the points of each fit its own descending line. At the intersection of the lines the terminal voltages are equal. The slope of a line is $-R_\text{s}$, so a gentler line means a smaller internal resistance.
-**Reading the graph:** The line of battery A passes through the points $(0\,\text{A};\ 1.60\,\text{V})$ and $(1.00\,\text{A};\ 1.10\,\text{V})$, so $E_\text{A} = 1.60\,\text{V}$ and $R_\text{A} = 0.50\,\Omega$. The line of battery B passes through the points $(0\,\text{A};\ 1.49\,\text{V})$ and $(1.00\,\text{A};\ 1.27\,\text{V})$, so $E_\text{B} = 1.49\,\text{V}$ and $R_\text{B} = 0.22\,\Omega$. The lines intersect in the graph at about the current $0.4\,\text{A}$, between the table rows $0.30\,\text{A}$ and $0.50\,\text{A}$: first the terminal voltage of A is greater ($1.45\,\text{V}$ and $1.42\,\text{V}$), then that of B ($1.35\,\text{V}$ and $1.38\,\text{V}$).
+**Reading the graph:** The line of battery A passes through the points $(0\,\text{A};\ 1.60\,\text{V})$ and $(1.00\,\text{A};\ 1.10\,\text{V})$, so $E_\text{A} = 1.60\,\text{V}$ and $R_\text{A} = 0.50\,\Omega$.
+
+The line of battery B passes through the points $(0\,\text{A};\ 1.49\,\text{V})$ and $(1.00\,\text{A};\ 1.27\,\text{V})$, so $E_\text{B} = 1.49\,\text{V}$ and $R_\text{B} = 0.22\,\Omega$. The lines intersect in the graph at about the current $0.4\,\text{A}$, between the table rows $0.30\,\text{A}$ and $0.50\,\text{A}$: first the terminal voltage of A is greater ($1.45\,\text{V}$ and $1.42\,\text{V}$), then that of B ($1.35\,\text{V}$ and $1.38\,\text{V}$).
 **Formula:** $E_\text{A} - R_\text{A} I = E_\text{B} - R_\text{B} I$, from which $I = \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}}$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1.60\,\text{V} - 1.49\,\text{V}}{0.50\,\Omega - 0.22\,\Omega} = \dfrac{0.11\,\text{V}}{0.28\,\Omega} = 0.39\,\text{A}$
 **Answer:** a) about $0.40\,\text{A}$; the graphical reading and the calculation give a value between $0.35\text{–}0.45\,\text{A}$, because the fit of the lines varies. b) At a large current battery B is better, because its internal resistance $0.22\,\Omega$ is smaller than that of battery A, $0.50\,\Omega$, so its terminal voltage decreases more gently as the current grows. The source voltage of battery A is greater, so at a small current, below $0.4\,\text{A}$, battery A gives the higher terminal voltage. At the current $1.00\,\text{A}$ the terminal voltage is $1.10\,\text{V}$ for battery A and $1.27\,\text{V}$ for battery B.
-**Reasonableness:** At the current $0.40\,\text{A}$ the terminal voltage of battery A is $$\begin{aligned} &1.60\,\text{V} - 0.50\,\Omega \cdot 0.40\,\text{A} \\ &= 1.40\,\text{V} \end{aligned}$$ and that of battery B is $$\begin{aligned} &1.49\,\text{V} - 0.22\,\Omega \cdot 0.40\,\text{A} \\ &= 1.40\,\text{V} \end{aligned}$$, and this is between the table rows $0.30\,\text{A}$ and $0.50\,\text{A}$, as it should be. The short-circuit current is $1.49\,\text{V} : 0.22\,\Omega \approx 6.8\,\text{A}$ for battery B and $1.60\,\text{V} : 0.50\,\Omega = 3.2\,\text{A}$ for battery A, so B can deliver a larger current.
+**Reasonableness:** At the current $0.40\,\text{A}$ the terminal voltage of battery A is $$\begin{aligned} &1.60\,\text{V} - 0.50\,\Omega \cdot 0.40\,\text{A} \\ &= 1.40\,\text{V} \end{aligned}$$ and that of battery B is $$\begin{aligned} &1.49\,\text{V} - 0.22\,\Omega \cdot 0.40\,\text{A} \\ &= 1.40\,\text{V} \end{aligned}$$, and this is between the table rows $0.30\,\text{A}$ and $0.50\,\text{A}$, as it should be.
+
+The short-circuit current is $1.49\,\text{V} : 0.22\,\Omega \approx 6.8\,\text{A}$ for battery B and $1.60\,\text{V} : 0.50\,\Omega = 3.2\,\text{A}$ for battery A, so B can deliver a larger current.
 
 ## fy6-8-L2-07
 **Find:** which statement about the student's conclusion that the internal resistance is zero is correct.
 **Principle:** The terminal voltage is $U = E - R_\text{s} I$. When a voltmeter is connected without a load, a vanishingly small current passes through it, so $I \approx 0$ and the voltage drop in the internal resistance is zero. Then $U = E$ regardless of how large the internal resistance is.
-**Model answer:** The student's conclusion is wrong. The voltage $1.58\,\text{V}$ measured without a load is the source voltage of the battery, because the current is zero and no voltage drop arises in the internal resistance. The same voltage would be seen even if the internal resistance were large, so a single measurement without a current tells nothing about it. The current of the voltmeter is very small, so the meter itself does not reduce the voltage. Nor is the internal resistance infinite even though the current is zero, because it is a constant property of the battery. The internal resistance is obtained by measuring the terminal voltage and the current under load, preferably at several loads, and calculating $R_\text{s} = (E - U) : I$ or from the slope of the graph.
+**Model answer:** The student's conclusion is wrong. The voltage $1.58\,\text{V}$ measured without a load is the source voltage of the battery, because the current is zero and no voltage drop arises in the internal resistance.
+
+The same voltage would be seen even if the internal resistance were large, so a single measurement without a current tells nothing about it. The current of the voltmeter is very small, so the meter itself does not reduce the voltage.
+
+Nor is the internal resistance infinite even though the current is zero, because it is a constant property of the battery. The internal resistance is obtained by measuring the terminal voltage and the current under load, preferably at several loads, and calculating $R_\text{s} = (E - U) : I$ or from the slope of the graph.
 
 ## fy6-8-L3-04
 **Given:** the measured points of the table at currents $0.10\,\text{A}$ … $0.50\,\text{A}$: the terminal voltage of the new battery decreases from $1.56\,\text{V}$ to $1.46\,\text{V}$ and that of the aged battery from $1.41\,\text{V}$ to $0.97\,\text{V}$ (example data); load resistance $R = 2.0\,\Omega$
 **Find:** a) $E$ and $R_\text{s}$ of each battery; b) the share of the electric power produced by the aged battery that is converted into the internal energy of the battery, as a percentage; c) the power delivered to the resistor at the resistances $0.55\,\Omega$, $1.1\,\Omega$, $2.2\,\Omega$ and $4.4\,\Omega$, and the load with the greatest power
-**Principle:** The terminal voltage of both batteries follows the model $U = E - R_\text{s} I$, so the intercept of the fitted line on the vertical axis is $E$ and the slope is $-R_\text{s}$. Under load the current is $I = E : (R + R_\text{s})$. The power produced by the battery is $P = EI$, the power converted in the internal resistance is $R_\text{s} I^2$ and the power in the load is $RI^2$. The expression for power comes from the formula for electric power (chapter *Electric power and heating of a resistor*).
+**Principle:** The terminal voltage of both batteries follows the model $U = E - R_\text{s} I$, so the intercept of the fitted line on the vertical axis is $E$ and the slope is $-R_\text{s}$.
+
+Under load the current is $I = E : (R + R_\text{s})$. The power produced by the battery is $P = EI$, the power converted in the internal resistance is $R_\text{s} I^2$ and the power in the load is $RI^2$.
+
+The expression for power comes from the formula for electric power (chapter *Electric power and heating of a resistor*).
 **Reading the graph:** The line of the new battery passes through the points $(0.10\,\text{A};\ 1.56\,\text{V})$ and $(0.50\,\text{A};\ 1.46\,\text{V})$ and that of the aged battery through the points $(0.10\,\text{A};\ 1.41\,\text{V})$ and $(0.50\,\text{A};\ 0.97\,\text{V})$. The points of both lie on both sides of the line.
 **Formula:** $R_\text{s} = \dfrac{U_1 - U_2}{I_2 - I_1}$ and $E = U_1 + R_\text{s} I_1$
 
@@ -181,16 +215,22 @@ $P = RI^2 = \dfrac{E^2 R}{(R + R_\text{s})^2}$
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** a) New: $R_\text{s} = \dfrac{0.10\,\text{V}}{0.40\,\text{A}} = 0.25\,\Omega$ and $E = 1.56\,\text{V} + 0.25\,\Omega \cdot 0.10\,\text{A} = 1.58\,\text{V}$. Aged: $R_\text{s} = \dfrac{1.41\,\text{V} - 0.97\,\text{V}}{0.40\,\text{A}} = 1.10\,\Omega$ and $E = 1.41\,\text{V} + 1.10\,\Omega \cdot 0.10\,\text{A} = 1.52\,\text{V}$.
 b) Aged: $I = \dfrac{1.52\,\text{V}}{2.0\,\Omega + 1.10\,\Omega} = 0.490\,\text{A}$, the power produced is $EI = 1.52\,\text{V} \cdot 0.490\,\text{A} = 0.745\,\text{W}$ and the power remaining in the battery is $R_\text{s} I^2 = 1.10\,\Omega \cdot (0.490\,\text{A})^2 = 0.264\,\text{W}$. The share is $\dfrac{0.264\,\text{W}}{0.745\,\text{W}} = \dfrac{1.10\,\Omega}{3.10\,\Omega} = 0.355$. New battery: $\dfrac{0.25\,\Omega}{2.0\,\Omega + 0.25\,\Omega} = 0.11$.
-c) For the aged battery ($E = 1.52\,\text{V}$, $R_\text{s} = 1.10\,\Omega$): $R = 0.55\,\Omega$: $P = \dfrac{(1.52\,\text{V})^2 \cdot 0.55\,\Omega}{(1.65\,\Omega)^2} = 0.47\,\text{W}$; $R = 1.1\,\Omega$: $P = \dfrac{(1.52\,\text{V})^2 \cdot 1.1\,\Omega}{(2.2\,\Omega)^2} = 0.53\,\text{W}$; $R = 2.2\,\Omega$: $P = 0.47\,\text{W}$; $R = 4.4\,\Omega$: $P = 0.34\,\text{W}$. The share converted into the internal energy of the battery: $R = 1.1\,\Omega$: $\dfrac{1.10\,\Omega}{2.2\,\Omega} = 0.50$.
+c) For the aged battery ($E = 1.52\,\text{V}$, $R_\text{s} = 1.10\,\Omega$): $R = 0.55\,\Omega$: $P = \dfrac{(1.52\,\text{V})^2 \cdot 0.55\,\Omega}{(1.65\,\Omega)^2} = 0.47\,\text{W}$; $R = 1.1\,\Omega$: $P = \dfrac{(1.52\,\text{V})^2 \cdot 1.1\,\Omega}{(2.2\,\Omega)^2} = 0.53\,\text{W}$; $R = 2.2\,\Omega$: $P = 0.47\,\text{W}$; $R = 4.4\,\Omega$: $P = 0.34\,\text{W}$.
+
+The share converted into the internal energy of the battery: $R = 1.1\,\Omega$: $\dfrac{1.10\,\Omega}{2.2\,\Omega} = 0.50$.
 **Answer:** In the answer box: $35\,\%$. a) New battery: $E = 1.58\,\text{V}$, $R_\text{s} = 0.25\,\Omega$; aged battery: $E = 1.52\,\text{V}$, $R_\text{s} = 1.1\,\Omega$.
 b) For the answer box: about $35\,\%$ of the power produced by the aged battery is converted into the internal energy of the battery, two significant figures like the precision of the load $2.0\,\Omega$. For the new battery the share is only about $11\,\%$, because its internal resistance $0.25\,\Omega$ is much smaller.
 c) The power is greatest, about $0.53\,\text{W}$, with the load $1.1\,\Omega$, which is equal to the internal resistance. Then half of the power produced is converted into the internal energy of the battery.
-**Reasonableness:** The powers match: $0.264\,\text{W} + 2.0\,\Omega \cdot (0.490\,\text{A})^2 = 0.264\,\text{W} + 0.481\,\text{W} = 0.745\,\text{W}$, as the power produced. The source voltage of the aged battery is only slightly smaller than that of the new one, but the internal resistance is more than four times as large, and so it heats up much more and gives less power to the load. The maximum of the power is gentle, as the values $0.47\,\text{W}$, $0.53\,\text{W}$ and $0.47\,\text{W}$ show, but even at the greatest power half of the energy is wasted, so in devices the load is usually chosen larger than $R_\text{s}$.
+**Reasonableness:** The powers match: $0.264\,\text{W} + 2.0\,\Omega \cdot (0.490\,\text{A})^2 = 0.264\,\text{W} + 0.481\,\text{W} = 0.745\,\text{W}$, as the power produced. The source voltage of the aged battery is only slightly smaller than that of the new one, but the internal resistance is more than four times as large, and so it heats up much more and gives less power to the load.
+
+The maximum of the power is gentle, as the values $0.47\,\text{W}$, $0.53\,\text{W}$ and $0.47\,\text{W}$ show, but even at the greatest power half of the energy is wasted, so in devices the load is usually chosen larger than $R_\text{s}$.
 
 ## fy6-8-L3-05
 **Given:** the measured points of the table $(I;\ U)$ at currents $0.50\,\text{A}$ … $3.00\,\text{A}$: the voltage decreases from $5.56\,\text{V}$ to $2.79\,\text{V}$ (example data); total resistance of the wires $R_\text{j} = 0.30\,\Omega$; the student's slope $1.1\,\Omega$ and short-circuit current $5.6\,\text{A}$
 **Find:** a) the source voltage $E$; b) the student's error and the correct internal resistance of the group of batteries; c) the correct short-circuit current $I_\text{k}$ of the group of batteries in amperes
-**Principle:** The voltmeter is across the terminals of the load resistor, so it shows a voltage that is smaller than the terminal voltage of the group of batteries by the voltage drop $R_\text{j} I$ in the wires: $$\begin{aligned} U &= E - R_\text{s} I - R_\text{j} I \\ &= E - (R_\text{s} + R_\text{j}) I \end{aligned}$$. So the slope of the graph is $-(R_\text{s} + R_\text{j})$, and the student's value includes the resistance of the wires. The internal resistance of the group of batteries itself is obtained by subtracting $R_\text{j}$, and the short-circuit current is calculated from it.
+**Principle:** The voltmeter is across the terminals of the load resistor, so it shows a voltage that is smaller than the terminal voltage of the group of batteries by the voltage drop $R_\text{j} I$ in the wires: $$\begin{aligned} U &= E - R_\text{s} I - R_\text{j} I \\ &= E - (R_\text{s} + R_\text{j}) I \end{aligned}$$.
+
+So the slope of the graph is $-(R_\text{s} + R_\text{j})$, and the student's value includes the resistance of the wires. The internal resistance of the group of batteries itself is obtained by subtracting $R_\text{j}$, and the short-circuit current is calculated from it.
 **Reading the graph:** The fitted line passes through the points $(0.50\,\text{A};\ 5.56\,\text{V})$ and $(3.00\,\text{A};\ 2.80\,\text{V})$. The points lie on both sides of the line. The line meets the vertical axis at $6.11\,\text{V}$, which is the source voltage, because when the current is zero there is no voltage drop in the wires.
 **Formula:** $E = U_1 + (R_\text{s} + R_\text{j}) I_1$; $R_\text{s} + R_\text{j} = \dfrac{U_1 - U_2}{I_2 - I_1}$; $R_\text{s} = (R_\text{s} + R_\text{j}) - R_\text{j}$; $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
@@ -200,13 +240,25 @@ $E = 5.56\,\text{V} + 1.10\,\Omega \cdot 0.50\,\text{A} = 6.11\,\text{V}$
 b) $R_\text{s} = 1.10\,\Omega - 0.30\,\Omega = 0.80\,\Omega$.
 c) $I_\text{k} = \dfrac{6.11\,\text{V}}{0.80\,\Omega} = 7.64\,\text{A}$
 **Answer:** For the answer box: c) $7.6\,\text{A}$, two significant figures like the resistance of the wires $0.30\,\Omega$. The measurement should have been made by connecting the voltmeter directly across the terminals of the group of batteries, so that the voltage drop in the wires is not included in the measured voltage.
-**Other parts:** a) the source voltage of the group of batteries is $E \approx 6.11\,\text{V}$. b) The student's internal resistance is too large, because the slope includes the resistance of the wires; the internal resistance of the group of batteries is $0.80\,\Omega$. The student's short-circuit current $5.6\,\text{A}$ is too small, because the student divided the source voltage by too large a resistance.
-**Reasonableness:** According to the model, at the current $2.00\,\text{A}$ the terminal voltage of the group of batteries is $$\begin{aligned} &6.11\,\text{V} - 0.80\,\Omega \cdot 2.00\,\text{A} \\ &= 4.51\,\text{V} \end{aligned}$$ and after the wires $$\begin{aligned} &4.51\,\text{V} - 0.30\,\Omega \cdot 2.00\,\text{A} \\ &= 3.91\,\text{V} \end{aligned}$$, which is the fourth value of the table. The correct short-circuit current is greater than the student's, because the internal resistance of the group of batteries is smaller than the $1.1\,\Omega$ the student obtained. If the terminals were connected with wires, the current would be smaller, $6.11\,\text{V} : 1.10\,\Omega \approx 5.6\,\text{A}$, which is the student's figure, but it is the current with the wires, not the short-circuit current of the group of batteries.
+**Other parts:** a) the source voltage of the group of batteries is $E \approx 6.11\,\text{V}$. b) The student's internal resistance is too large, because the slope includes the resistance of the wires; the internal resistance of the group of batteries is $0.80\,\Omega$.
+
+The student's short-circuit current $5.6\,\text{A}$ is too small, because the student divided the source voltage by too large a resistance.
+**Reasonableness:** According to the model, at the current $2.00\,\text{A}$ the terminal voltage of the group of batteries is $$\begin{aligned} &6.11\,\text{V} - 0.80\,\Omega \cdot 2.00\,\text{A} \\ &= 4.51\,\text{V} \end{aligned}$$ and after the wires $$\begin{aligned} &4.51\,\text{V} - 0.30\,\Omega \cdot 2.00\,\text{A} \\ &= 3.91\,\text{V} \end{aligned}$$, which is the fourth value of the table.
+
+The correct short-circuit current is greater than the student's, because the internal resistance of the group of batteries is smaller than the $1.1\,\Omega$ the student obtained.
+
+If the terminals were connected with wires, the current would be smaller, $6.11\,\text{V} : 1.10\,\Omega \approx 5.6\,\text{A}$, which is the student's figure, but it is the current with the wires, not the short-circuit current of the group of batteries.
 
 ## fy6-8-L2-08
 **Find:** which conclusion about the source voltage $E$ and the internal resistance $R_\text{s}$ of the battery is justified on the basis of the measurements of the table.
-**Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the measured points $(I, U)$ should lie on a descending line. The line meets the vertical axis at $U = E$, and its slope is $-R_\text{s}$. The slope is read from the line at two points far apart; here the extreme points are on the line. The deviations of the points from the line are compared with the measurement uncertainty $\pm 0.01\,\text{V}$.
-**Model answer:** The drops of the terminal voltage between successive measurements, when the current increases by $0.20\,\text{A}$, are $0.08\,\text{V}$, $0.07\,\text{V}$, $0.09\,\text{V}$ and $0.08\,\text{V}$. They differ from each other by at most $0.02\,\text{V}$. The difference of two drops depends on three or four readings, so its uncertainty is up to $4 \cdot 0.01\,\text{V} = 0.04\,\text{V}$, and the difference fits within it. The points thus fit one line, and the measurements do not show that the internal resistance changes.
+**Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the measured points $(I, U)$ should lie on a descending line. The line meets the vertical axis at $U = E$, and its slope is $-R_\text{s}$.
+
+The slope is read from the line at two points far apart; here the extreme points are on the line. The deviations of the points from the line are compared with the measurement uncertainty $\pm 0.01\,\text{V}$.
+**Model answer:** The drops of the terminal voltage between successive measurements, when the current increases by $0.20\,\text{A}$, are $0.08\,\text{V}$, $0.07\,\text{V}$, $0.09\,\text{V}$ and $0.08\,\text{V}$. They differ from each other by at most $0.02\,\text{V}$.
+
+The difference of two drops depends on three or four readings, so its uncertainty is up to $4 \cdot 0.01\,\text{V} = 0.04\,\text{V}$, and the difference fits within it.
+
+The points thus fit one line, and the measurements do not show that the internal resistance changes.
 
 The slope from the extreme points:
 
@@ -224,7 +276,9 @@ $$\begin{aligned}
 &\phantom{E} = 1.55\,\text{V}
 \end{aligned}$$
 
-Conclusion: the source voltage is about $1.55\,\text{V}$ and the internal resistance about $0.40\,\Omega$. The reading $1.51\,\text{V}$ at the smallest current is a terminal voltage, not the source voltage. The quotient of one measurement, for example $1.19\,\text{V} : 0.90\,\text{A} \approx 1.3\,\Omega$, is the resistance of the load and not the internal resistance. If both errors are made, the result is $1.51\,\text{V}$ and $1.3\,\Omega$.
+Conclusion: the source voltage is about $1.55\,\text{V}$ and the internal resistance about $0.40\,\Omega$. The reading $1.51\,\text{V}$ at the smallest current is a terminal voltage, not the source voltage.
+
+The quotient of one measurement, for example $1.19\,\text{V} : 0.90\,\text{A} \approx 1.3\,\Omega$, is the resistance of the load and not the internal resistance. If both errors are made, the result is $1.51\,\text{V}$ and $1.3\,\Omega$.
 
 The uncertainty affects the result too: if the readings of the extreme points are $0.01\,\text{V}$ off in opposite directions, the slope becomes $0.30\,\text{V} : 0.80\,\text{A} \approx 0.38\,\Omega$ or $0.34\,\text{V} : 0.80\,\text{A} \approx 0.43\,\Omega$, so the internal resistance is about $0.4\,\Omega$.
 
@@ -238,4 +292,6 @@ $$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
 **Conversions:** Not needed: the voltage is in volts and the current in amperes.
 **Substitution:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0.020\,\Omega$
 **Answer:** $0.020\,\Omega$, that is $20\,\text{m}\Omega$, to two significant figures because the values are read from the grid.
-**Reasonableness:** The internal resistance of a car battery is very small so that it can deliver a current of hundreds of amperes. Check with the third point $(150\,\text{A};\ 9\,\text{V})$: the voltage drops $2\,\text{V}$ for every $100\,\text{A}$, so $2\,\text{V} : 100\,\text{A} = 0.020\,\Omega$. The source voltage would be $$\begin{aligned} &U + R_\text{s} I \\ &= 11\,\text{V} + 0.020\,\Omega \cdot 50\,\text{A} \\ &= 12\,\text{V} \end{aligned}$$, which is the source voltage of an ordinary lead-acid battery.
+**Reasonableness:** The internal resistance of a car battery is very small so that it can deliver a current of hundreds of amperes. Check with the third point $(150\,\text{A};\ 9\,\text{V})$: the voltage drops $2\,\text{V}$ for every $100\,\text{A}$, so $2\,\text{V} : 100\,\text{A} = 0.020\,\Omega$.
+
+The source voltage would be $$\begin{aligned} &U + R_\text{s} I \\ &= 11\,\text{V} + 0.020\,\Omega \cdot 50\,\text{A} \\ &= 12\,\text{V} \end{aligned}$$, which is the source voltage of an ordinary lead-acid battery.
