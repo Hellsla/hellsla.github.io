@@ -11,19 +11,27 @@
 ## fy3-15-L1-02
 **Given:** power of the kinetic energy of the air flow $P_\text{wind} = 2.50\,\text{MW}$ and electric power $P_\text{elec} = 1.05\,\text{MW}$
 **Find:** the efficiency $\eta$ of the turbine as a percentage
-**Principle:** Efficiency is the share of the useful power in the power coming into the plant. Here the input power is the power of the kinetic energy of the air flowing through the rotor and the useful power is the power going to the electricity grid; the rest of the energy stays in the motion of the air or turns into internal energy, which is transferred to the surroundings as heat.
+**Principle:** Efficiency is the share of the useful power in the power coming into the plant.
+
+Here the input power is the power of the kinetic energy of the air flowing through the rotor and the useful power is the power going to the electricity grid; the rest of the energy stays in the motion of the air or turns into internal energy, which is transferred to the surroundings as heat.
+
 **Formula:** $\eta = \dfrac{P_\text{elec}}{P_\text{wind}}$
 **Conversions:** Both powers are in megawatts, so the units cancel. The result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta = \dfrac{1.05\,\text{MW}}{2.50\,\text{MW}} = 0.420 = 42.0\,\%$
 **Answer:** $42.0\,\%$, three significant figures like the powers $2.50\,\text{MW}$ and $1.05\,\text{MW}$.
-**Reasonableness:** Estimate: $1 / 2.5 = 0.4$, which matches the result. The efficiency of a modern wind turbine is at best about 40–$45\,\%$. You cannot take all the energy from the wind, because the air has to keep moving after the rotor too. Part of the energy taken by the rotor turns into internal energy in friction and electrical losses, and this is transferred to the surroundings as heat.
+**Reasonableness:** Estimate: $1 / 2.5 = 0.4$, which matches the result. The efficiency of a modern wind turbine is at best about 40–$45\,\%$. You cannot take all the energy from the wind, because the air has to keep moving after the rotor too.
+
+Part of the energy taken by the rotor turns into internal energy in friction and electrical losses, and this is transferred to the surroundings as heat.
 
 ## fy3-15-L1-03
 **Given:** area $A = 20.0\,\text{m}^2$, radiation power per unit area $I = 1.00\,\tfrac{\text{kW}}{\text{m}^2}$, efficiency $\eta = 0.210$
 **Find:** the electric power $P$ of the panel in kilowatts
-**Principle:** The power of the radiation hitting the panel is the intensity times the area, and the efficiency tells what fraction of it turns into electricity. The rest is reflected or turns into internal energy of the panel, which is transferred to the surroundings as heat, so the electric power is the $\eta$ fraction of the input power $P_\text{o} = IA$, the power of the radiation hitting the panel.
+**Principle:** The power of the radiation hitting the panel is the intensity times the area, and the efficiency tells what fraction of it turns into electricity.
+
+The rest is reflected or turns into internal energy of the panel, which is transferred to the surroundings as heat, so the electric power is the $\eta$ fraction of the input power $P_\text{o} = IA$, the power of the radiation hitting the panel.
 **Formula:** $P = \eta P_\text{o} = \eta I A$
 **Conversions:** The units go along with the numbers: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, so the result comes directly in kilowatts and no conversions are needed.
+
 **Substitution:** $P = 0.210 \cdot 1.00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20.0\,\text{m}^2 = 0.210 \cdot 20.0\,\text{kW} = 4.20\,\text{kW}$
 **Answer:** $4.20\,\text{kW}$, three significant figures, because the area $20.0\,\text{m}^2$, the radiation power $1.00\,\tfrac{\text{kW}}{\text{m}^2}$ and the efficiency $0.210$ all have three figures.
 **Reasonableness:** Radiation of $20.0\,\text{kW}$ hits the panel, and about a fifth of it ($0.210 \approx 0.2$) is $\approx 4\,\text{kW}$. The rest, $$\begin{aligned} &20.0\,\text{kW} - 4.20\,\text{kW} \\ &= 15.8\,\text{kW} \end{aligned}$$, heats the panel or is reflected away. On the roof of a detached house $4\,\text{kW}$ is a usual peak power in clear weather.
@@ -32,9 +40,14 @@
 **Given:** read from the bars of the figure: $P_\text{o} = 400\,\text{MW}$, $P_1 = 350\,\text{MW}$, $P_2 = 150\,\text{MW}$ and $P_3 = 140\,\text{MW}$
 **Find:** the step in which the power decreases the most, and the power transferred to the surroundings as heat in that step
 **Principle:** The power plant runs steadily and energy is conserved, so when the power decreases in a step, the difference is transferred to the surroundings as heat. The power coming out of a step is smaller than the power going in, and the difference is the waste heat produced in it.
-**Reading the graph:** The tops of the bars $P_\text{o}$, $P_1$ and $P_2$ are on the gridlines, and they give the powers $400$, $350$ and $150\,\text{MW}$. The electric power $P_3$ is a little below the line $150\,\text{MW}$, about $140\,\text{MW}$; it is not needed for the answer. The decrease of power step by step is $P_\text{o} - P_1 = 50\,\text{MW}$ in the boiler, $P_1 - P_2 = 200\,\text{MW}$ in the steam cycle and $P_2 - P_3 = 10\,\text{MW}$ in the generator and transformer. The biggest drop is between the bars $P_1$ and $P_2$, that is in the steam cycle.
+**Reading the graph:** The tops of the bars $P_\text{o}$, $P_1$ and $P_2$ are on the gridlines, and they give the powers $400$, $350$ and $150\,\text{MW}$.
+
+The electric power $P_3$ is a little below the line $150\,\text{MW}$, about $140\,\text{MW}$; it is not needed for the answer. The decrease of power step by step is $P_\text{o} - P_1 = 50\,\text{MW}$ in the boiler, $P_1 - P_2 = 200\,\text{MW}$ in the steam cycle and $P_2 - P_3 = 10\,\text{MW}$ in the generator and transformer.
+
+The biggest drop is between the bars $P_1$ and $P_2$, that is in the steam cycle.
 **Formula:** $P_\text{h} = P_\text{o} - P_\text{a}$, where $P_\text{o}$ is the input power coming into the step and $P_\text{a}$ the output power leaving it; in the steam cycle $P_\text{o} = P_1$ and $P_\text{a} = P_2$, so $P_\text{h} = P_1 - P_2$
 **Conversions:** Not needed: all powers are in megawatts.
+
 **Substitution:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
 **Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The ends of the bars $P_1$ and $P_2$ lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures, and the result $200\,\text{MW}$ has three significant figures.
 **Reasonableness:** The losses of the steps add up to $$\begin{aligned} &50 + 200 + 10 \\ &= 260\,\text{MW} \\ &= P_\text{o} - P_3 \\ &= 400\,\text{MW} - 140\,\text{MW} \end{aligned}$$, so the balance works out. The efficiency of the steam cycle is $150 / 350 \approx 0.43$, which suits a steam cycle, and its loss is over $75\,\%$ of the waste heat of the whole plant.
@@ -52,7 +65,9 @@
 ## fy3-15-L1-06
 **Find:** why the overall efficiency of a combined heat and power plant is higher than that of a condensing power plant when the fuel is the same
 **Principle:** Efficiency tells what share of the energy of the fuel is put to use. The energy released from the fuel is the same in both, so the difference comes from what is counted as useful: in a condensing power plant only electricity, in combined production electricity and district heating, $\eta_\text{tot} = \dfrac{P_\text{s} + P_\text{k}}{P_\text{o}}$.
-**Model answer:** In combined production the heat of the condenser is led into the district heating network instead of the sea, so a larger share of the energy of the fuel is put to use. No more energy is released from the fuel, because the heat of combustion is the same. The turbine does not convert a larger share of the heat into electricity either: usually less electricity is obtained than in a condensing power plant. The district heating network does not produce extra energy, since the electricity and heat together do not exceed the fuel power. Waste heat is still produced, but less of it.
+**Model answer:** In combined production the heat of the condenser is led into the district heating network instead of the sea, so a larger share of the energy of the fuel is put to use. No more energy is released from the fuel, because the heat of combustion is the same.
+
+The turbine does not convert a larger share of the heat into electricity either: usually less electricity is obtained than in a condensing power plant. The district heating network does not produce extra energy, since the electricity and heat together do not exceed the fuel power. Waste heat is still produced, but less of it.
 
 ## fy3-15-L1-07
 **Given:** thermal power of the reactor $P_\text{o} = 1500\,\text{MW}$ and electric power $P_\text{s} = 510\,\text{MW}$
@@ -92,7 +107,9 @@
 **Conversions:** The efficiencies are dimensionless numbers, so no unit conversions are needed. At the end the result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta_2 = \dfrac{0.380}{0.900 \cdot 0.980} = \dfrac{0.380}{0.882} = 0.43084 = 43.08\,\%$
 **Answer:** $43.1\,\%$, three significant figures, because all three efficiencies, $0.380$, $0.900$ and $0.980$, have three figures.
-**Reasonableness:** Check: $$\begin{aligned} &0.900 \cdot 0.4308 \cdot 0.980 \\ &= 0.380 \end{aligned}$$. The efficiency of the steam cycle is greater than that of the whole chain, $0.380$, as it should be, because the other steps only reduce it. It is a little greater than the usual efficiency of a whole condensing power plant (about $40\,\%$, typically $38$–$42\,\%$), because the losses of the boiler and the generator are not included in it, and it is the weakest link of the chain.
+**Reasonableness:** Check: $$\begin{aligned} &0.900 \cdot 0.4308 \cdot 0.980 \\ &= 0.380 \end{aligned}$$. The efficiency of the steam cycle is greater than that of the whole chain, $0.380$, as it should be, because the other steps only reduce it.
+
+It is a little greater than the usual efficiency of a whole condensing power plant (about $40\,\%$, typically $38$–$42\,\%$), because the losses of the boiler and the generator are not included in it, and it is the weakest link of the chain.
 
 ## fy3-15-L2-03
 **Given:** electric power $P_\text{s} = 150\,\text{MW}$, efficiency $\eta = 0.360$, heat of combustion $H = 9.00\,\tfrac{\text{MJ}}{\text{kg}}$, time $t = 1\,\text{h}$
@@ -122,7 +139,11 @@
 **Conversions:** All energies are in gigawatt-hours, so the units cancel and no conversions are needed. The results are multiplied by one hundred to get percentages.
 **Substitution:** In 2023 the sum of electricity and district heating is $$\begin{aligned} &735\,\text{GWh} + 1470\,\text{GWh} \\ &= 2205\,\text{GWh} \end{aligned}$$, so $\eta_\text{tot} = \dfrac{2205\,\text{GWh}}{2450\,\text{GWh}} = 0.900 = 90.0\,\%$. The electrical efficiencies are $\eta_\text{s} = \tfrac{840}{2400} = 35.0\,\%$ (2021), $\tfrac{800}{2500} = 32.0\,\%$ (2022) and $\tfrac{735}{2450} = 30.0\,\%$ (2023). The overall efficiencies are $\tfrac{2030}{2400} = 84.6\,\%$ (2021) and $\tfrac{2210}{2500} = 88.4\,\%$ (2022).
 **Answer:** $90.0\,\%$, three significant figures like the energies in the table.
-**Reasonableness:** The overall efficiency is at most $100\,\%$ and greater than the electrical efficiency, as it should be. In 2023 the waste heat is $$\begin{aligned} &2450\,\text{GWh} - 2205\,\text{GWh} \\ &= 245\,\text{GWh} \end{aligned}$$, about a tenth. In a cold year more district heating is needed, so a larger share of the heat of the condenser is put to use and less electricity is obtained: the electrical efficiency decreased from $35.0\,\%$ to $30.0\,\%$, but the overall efficiency increased from $84.6\,\%$ to $90.0\,\%$. Electricity and heat are still not equally valuable, even though they are added together.
+**Reasonableness:** The overall efficiency is at most $100\,\%$ and greater than the electrical efficiency, as it should be. In 2023 the waste heat is $$\begin{aligned} &2450\,\text{GWh} - 2205\,\text{GWh} \\ &= 245\,\text{GWh} \end{aligned}$$, about a tenth.
+
+In a cold year more district heating is needed, so a larger share of the heat of the condenser is put to use and less electricity is obtained: the electrical efficiency decreased from $35.0\,\%$ to $30.0\,\%$, but the overall efficiency increased from $84.6\,\%$ to $90.0\,\%$.
+
+Electricity and heat are still not equally valuable, even though they are added together.
 
 ## fy3-15-L2-06
 **Given:** from the table, the nuclear power plant $P_\text{o} = 2400\,\text{MW}$ and $P_\text{s} = 840\,\text{MW}$, the coal power plant $1200\,\text{MW}$ and $432\,\text{MW}$, the bio power plant $350\,\text{MW}$ and $112\,\text{MW}$
@@ -132,7 +153,9 @@
 **Conversions:** All powers are in megawatts, so no conversions are needed.
 **Substitution:** Nuclear power plant: $\eta = \tfrac{840\,\text{MW}}{2400\,\text{MW}} = 0.350$ and $P_\text{h} = 2400\,\text{MW} - 840\,\text{MW} = 1560\,\text{MW}$. Coal power plant: $\eta = \tfrac{432}{1200} = 0.360$ and $P_\text{h} = 1200\,\text{MW} - 432\,\text{MW} = 768\,\text{MW}$. Bio power plant: $\eta = \tfrac{112}{350} = 0.320$ and $P_\text{h} = 350\,\text{MW} - 112\,\text{MW} = 238\,\text{MW}$.
 **Answer:** $1560\,\text{MW}$ (nuclear power plant), three significant figures like the electric powers.
-**Reasonableness:** For each plant $P_\text{s} + P_\text{h}$ equals $P_\text{o}$: for example $840 + 1560 = 2400$. The lowest efficiency belongs to the bio power plant ($32.0\,\%$), but it has the smallest waste heat power ($238\,\text{MW}$), because it is small. The largest waste heat power belongs to the nuclear power plant, even though its efficiency ($35.0\,\%$) is almost as high as that of the coal power plant ($36.0\,\%$). So efficiency and waste heat power do not come in the same order.
+**Reasonableness:** For each plant $P_\text{s} + P_\text{h}$ equals $P_\text{o}$: for example $840 + 1560 = 2400$. The lowest efficiency belongs to the bio power plant ($32.0\,\%$), but it has the smallest waste heat power ($238\,\text{MW}$), because it is small.
+
+The largest waste heat power belongs to the nuclear power plant, even though its efficiency ($35.0\,\%$) is almost as high as that of the coal power plant ($36.0\,\%$). So efficiency and waste heat power do not come in the same order.
 
 ## fy3-15-L2-07
 **Given:** $\eta_1 = 0.920$ (boiler), $\eta_2 = 0.410$ (steam cycle) and $\eta_3 = 0.970$ (generator); the student's result $230\,\%$
@@ -142,12 +165,16 @@
 **Conversions:** The efficiencies are dimensionless numbers, so no conversions are needed. At the end the result is multiplied by one hundred to get a percentage.
 **Substitution:** $\eta = 0.920 \cdot 0.410 \cdot 0.970 = 0.3659 = 36.6\,\%$
 **Answer:** $36.6\,\%$, three significant figures like the given efficiencies.
-**Reasonableness:** The student's error: a sum of efficiencies of $230\,\%$ would be over $100\,\%$, which is impossible, because a plant cannot produce more electricity than there is energy in the fuel. Each step reduces the power that is left, so the efficiencies are multiplied, not added. The product $0.366$ is smaller than the weakest step $0.410$, as it should be when all the factors are below 1. Estimate: $0.9 \cdot 0.4 \cdot 1.0 = 0.36$. The waste heat is $100\,\% - 36.6\,\% = 63.4\,\%$ of the fuel power.
+**Reasonableness:** The student's error: a sum of efficiencies of $230\,\%$ would be over $100\,\%$, which is impossible, because a plant cannot produce more electricity than there is energy in the fuel. Each step reduces the power that is left, so the efficiencies are multiplied, not added.
+
+The product $0.366$ is smaller than the weakest step $0.410$, as it should be when all the factors are below 1. Estimate: $0.9 \cdot 0.4 \cdot 1.0 = 0.36$. The waste heat is $100\,\% - 36.6\,\% = 63.4\,\%$ of the fuel power.
 
 ## fy3-15-L2-08
 **Given:** fuel power $P_\text{o} = 1200\,\text{MW}$, water flow $12\,\tfrac{\text{m}^3}{\text{s}}$, temperature of the water $8\,{}^\circ\text{C} \to 18\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$ and $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the order of magnitude of the thermal power $P_\text{L}$ transferred from the condenser to the water
-**Principle:** The thermal power transferred to the water is $P_\text{L} = c\,q_m\,\Delta T$, where $q_m$ is the mass flow rate ($\text{kg/s}$) and $\Delta T$ is the rise in the temperature of the water in the condenser. The order of magnitude is enough, so the values may be rounded, but the density must be used and $\Delta T$ is the difference of the temperatures in kelvins.
+**Principle:** The thermal power transferred to the water is $P_\text{L} = c\,q_m\,\Delta T$, where $q_m$ is the mass flow rate ($\text{kg/s}$) and $\Delta T$ is the rise in the temperature of the water in the condenser.
+
+The order of magnitude is enough, so the values may be rounded, but the density must be used and $\Delta T$ is the difference of the temperatures in kelvins.
 **Model answer:** The mass flow rate:
 
 $q_m = \rho\,\dfrac{V}{t}$
@@ -166,7 +193,9 @@ $$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tf
 
 $P_\text{L} \approx 5.0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
 
-The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\,\%$ of the fuel power $1200\,\text{MW}$, which fits the fact that a large part of the energy of the fuel is transferred through the condenser. The other options come from errors: $0.5\,\text{MW}$ when the density is not used, $50\,\text{MW}$ when a cubic metre is read as a hundred kilograms and $15\,000\,\text{MW}$ when the final temperature in kelvins is used as the rise.
+The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\,\%$ of the fuel power $1200\,\text{MW}$, which fits the fact that a large part of the energy of the fuel is transferred through the condenser.
+
+The other options come from errors: $0.5\,\text{MW}$ when the density is not used, $50\,\text{MW}$ when a cubic metre is read as a hundred kilograms and $15\,000\,\text{MW}$ when the final temperature in kelvins is used as the rise.
 
 ## fy3-15-L3-01
 **Given:** $P_\text{o} = 600\,\text{MW}$. Electricity only: $P_\text{s,0} = 240\,\text{MW}$. Full combined production: $P_\text{s,full} = 180\,\text{MW}$ and $P_\text{k,full} = 348\,\text{MW}$. Now the district heating power is $P_\text{k} = 200\,\text{MW}$.
@@ -176,7 +205,9 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 **Conversions:** All powers are in megawatts and $k$ is a dimensionless number, so no conversions are needed.
 **Substitution:** $k = \dfrac{240\,\text{MW} - 180\,\text{MW}}{348\,\text{MW}} = 0.17241$ and $P_\text{s} = 240\,\text{MW} - 0.17241 \cdot 200\,\text{MW} = 205.517\,\text{MW}$. Then $\eta_\text{tot} = \dfrac{205.517\,\text{MW} + 200\,\text{MW}}{600\,\text{MW}} = 0.67586 = 67.6\,\%$.
 **Answer:** $P_\text{s} = 206\,\text{MW}$ and $\eta_\text{tot} = 67.6\,\%$, three significant figures, that is megawatt precision, because all powers are given to the nearest megawatt: the difference $240 - 180 = 60\,\text{MW}$ has that precision, and the subtracted $0.172 \cdot 200 \approx 34\,\text{MW}$ is to the nearest unit.
-**Reasonableness:** The results are between the extreme modes: the electric power between $180$ and $240\,\text{MW}$ and the efficiency between $40\,\%$ and $88\,\%$. Limiting case: when $P_\text{k} = 348\,\text{MW}$, the formula gives $240 - 60 = 180\,\text{MW}$. For every megawatt of district heating $\tfrac{60}{348} = 0.17\,\text{MW}$ of electricity is lost. The combined efficiency does not tell which is more worthwhile, because electricity can be used for anything, but district heat is mainly used for heating; profitability depends on need and prices.
+**Reasonableness:** The results are between the extreme modes: the electric power between $180$ and $240\,\text{MW}$ and the efficiency between $40\,\%$ and $88\,\%$. Limiting case: when $P_\text{k} = 348\,\text{MW}$, the formula gives $240 - 60 = 180\,\text{MW}$.
+
+For every megawatt of district heating $\tfrac{60}{348} = 0.17\,\text{MW}$ of electricity is lost. The combined efficiency does not tell which is more worthwhile, because electricity can be used for anything, but district heat is mainly used for heating; profitability depends on need and prices.
 
 ## fy3-15-L3-02
 **Given:** electrical energy $E = 36.0\,\text{GWh}$, efficiency $\eta = 0.380$ and heat of combustion of coal $H = 25.0\,\tfrac{\text{MJ}}{\text{kg}}$; given $1\,\text{GWh} = 3.60 \cdot 10^{12}\,\text{J}$
@@ -186,25 +217,40 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 **Conversions:** $E = 36.0 \cdot 3.60 \cdot 10^{12}\,\text{J} = 1.296 \cdot 10^{14}\,\text{J}$ and $H = 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. At the end $1\,\text{kt} = 10^6\,\text{kg}$.
 **Substitution:** $m = \dfrac{1.296 \cdot 10^{14}\,\text{J}}{0.380 \cdot 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1.3642 \cdot 10^7\,\text{kg} = 13.642\,\text{kt}$
 **Answer:** $13.6\,\text{kt}$, three significant figures, because the electrical energy $36.0\,\text{GWh}$, the efficiency $0.380$, the heat of combustion $25.0\,\tfrac{\text{MJ}}{\text{kg}}$ and the conversion factor $3.60 \cdot 10^{12}\,\text{J}/\text{GWh}$ all have three figures.
-**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds $50\,\text{t}$. The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which gets used up: about $38\,\%$ of its energy turns into electricity and the rest is transferred to the surroundings as waste heat, and burning produces emissions, but the energy of the wind is not a store that gets used up. The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
+**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds $50\,\text{t}$.
+
+The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which gets used up: about $38\,\%$ of its energy turns into electricity and the rest is transferred to the surroundings as waste heat, and burning produces emissions, but the energy of the wind is not a store that gets used up.
+
+The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
 
 ## fy3-15-L3-03
 **Given:** heating need $Q_1 = 100\,\text{kWh}$, coefficient of performance $\varepsilon = 3.00$, efficiency of the power plant $\eta_\text{plant} = 0.400$ and share left after transmission $\eta_\text{transm} = 0.950$
 **Find:** the energy of the fuel $E_\text{fuel}$ at the power plant in kilowatt-hours
-**Principle:** A heat pump moves heat from outside to inside and uses electricity for it, so the coefficient of performance tells the ratio of heat to electricity. The electricity is produced from fuel in a chain where each step lets through only part of the energy, so the fuel is found by dividing the electricity by the efficiency of the chain.
+**Principle:** A heat pump moves heat from outside to inside and uses electricity for it, so the coefficient of performance tells the ratio of heat to electricity.
+
+The electricity is produced from fuel in a chain where each step lets through only part of the energy, so the fuel is found by dividing the electricity by the efficiency of the chain.
+
 **Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$, and $E_\text{fuel} = \dfrac{W}{\eta_\text{transm}\, \eta_\text{plant}}$, thus $E_\text{fuel} = \dfrac{Q_1}{\eta_\text{transm}\, \eta_\text{plant}\, \varepsilon}$. In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy the pump uses.
+
 **Conversions:** All energies are in kilowatt-hours and the factors are dimensionless, so no conversions are needed.
 **Substitution:** $E_\text{fuel} = \dfrac{100\,\text{kWh}}{0.950 \cdot 0.400 \cdot 3.00} = \dfrac{100\,\text{kWh}}{1.14} = 87.719\,\text{kWh}$
 **Answer:** $87.7\,\text{kWh}$, three significant figures, because the factors $0.950$, $0.400$ and $3.00$ have three figures and the heating need $100\,\text{kWh}$ is given to the nearest kilowatt-hour.
-**Reasonableness:** Direct electric heating would need $\dfrac{100\,\text{kWh}}{0.380} = 263\,\text{kWh}$ of fuel and an oil boiler $\dfrac{100\,\text{kWh}}{0.900} = 111\,\text{kWh}$. The heat pump saves the most fuel, because in addition to the electricity used, heat transferred from the outside air comes into the house, so electricity is needed for only a third of the heat. Direct electric heating is the worst, because over $60\,\%$ of the energy of the fuel has already been wasted in producing the electricity.
+**Reasonableness:** Direct electric heating would need $\dfrac{100\,\text{kWh}}{0.380} = 263\,\text{kWh}$ of fuel and an oil boiler $\dfrac{100\,\text{kWh}}{0.900} = 111\,\text{kWh}$. The heat pump saves the most fuel, because in addition to the electricity used, heat transferred from the outside air comes into the house, so electricity is needed for only a third of the heat.
+
+Direct electric heating is the worst, because over $60\,\%$ of the energy of the fuel has already been wasted in producing the electricity.
 
 ## fy3-15-L3-04
 **Given:** electricity need $P_\text{s} = 100\,\text{MW}$ and district heating need $P_\text{k} = 200\,\text{MW}$. A: efficiency of the condensing power plant $\eta_\text{s,A} = 0.400$ and of the heating boiler $\eta_\text{boiler} = 0.900$. B: electrical efficiency of the combined heat and power plant $\eta_\text{s,B} = 0.320$ and district heating power $0.560\,P_{\text{o},\text{B}}$; the missing heat is produced in a similar heating boiler ($\eta_\text{boiler} = 0.900$)
 **Find:** the difference of the fuel powers $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$ in megawatts
-**Principle:** The fuel power is found by dividing the useful power by the efficiency. In option A electricity and heat are produced separately, so the fuel powers are added. In option B the plant is sized according to the electricity need, and the district heating it produces is subtracted from the heat need; the heat that is left is produced in a boiler.
+**Principle:** The fuel power is found by dividing the useful power by the efficiency. In option A electricity and heat are produced separately, so the fuel powers are added.
+
+In option B the plant is sized according to the electricity need, and the district heating it produces is subtracted from the heat need; the heat that is left is produced in a boiler.
+
 **Formula:** A: $P_{\text{o},\text{A}} = \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{boiler}}$. B: $P_{\text{o},\text{CHP}} = \dfrac{P_\text{s}}{\eta_\text{s,B}}$, $P_\text{k,CHP} = 0.560\,P_{\text{o},\text{CHP}}$ and $P_{\text{o},\text{B}} = P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{boiler}}$. The difference is $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$.
 **Conversions:** All powers are in megawatts and the efficiencies are dimensionless numbers, so no conversions are needed.
-**Substitution:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0.400} + \dfrac{200\,\text{MW}}{0.900} = 250\,\text{MW} + 222.22\,\text{MW} = 472.22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0.320} = 312.5\,\text{MW}$ and $P_\text{k,CHP} = 0.560 \cdot 312.5\,\text{MW} = 175.0\,\text{MW}$. The boiler has to produce $$\begin{aligned} &200\,\text{MW} - 175.0\,\text{MW} \\ &= 25.0\,\text{MW} \end{aligned}$$, so the fuel power of the boiler is $\dfrac{25.0\,\text{MW}}{0.900} = 27.78\,\text{MW}$ and $$\begin{aligned} P_{\text{o},\text{B}} &= 312.5\,\text{MW} + 27.78\,\text{MW} \\ &= 340.28\,\text{MW} \end{aligned}$$. The difference is $$\begin{aligned} &472.22\,\text{MW} - 340.28\,\text{MW} \\ &= 131.94\,\text{MW} \end{aligned}$$.
+**Substitution:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0.400} + \dfrac{200\,\text{MW}}{0.900} = 250\,\text{MW} + 222.22\,\text{MW} = 472.22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0.320} = 312.5\,\text{MW}$ and $P_\text{k,CHP} = 0.560 \cdot 312.5\,\text{MW} = 175.0\,\text{MW}$.
+
+The boiler has to produce $$\begin{aligned} &200\,\text{MW} - 175.0\,\text{MW} \\ &= 25.0\,\text{MW} \end{aligned}$$, so the fuel power of the boiler is $\dfrac{25.0\,\text{MW}}{0.900} = 27.78\,\text{MW}$ and $$\begin{aligned} P_{\text{o},\text{B}} &= 312.5\,\text{MW} + 27.78\,\text{MW} \\ &= 340.28\,\text{MW} \end{aligned}$$. The difference is $$\begin{aligned} &472.22\,\text{MW} - 340.28\,\text{MW} \\ &= 131.94\,\text{MW} \end{aligned}$$.
 **Answer:** $132\,\text{MW}$, three significant figures like the given efficiencies. Option B needs about $28\,\%$ less fuel.
 **Reasonableness:** The overall efficiency of combined production is $0.320 + 0.560 = 0.880$, and $$\begin{aligned} &0.880 \cdot 312.5\,\text{MW} \\ &= 275\,\text{MW} \end{aligned}$$ is the sum of electricity and heat, $100\,\text{MW} + 175\,\text{MW}$. The overall efficiency of option A is only $\dfrac{300\,\text{MW}}{472.22\,\text{MW}} = 0.635$. The saving comes from the fact that in combined production the heat of the condenser, which in a condensing power plant would go to the sea, heats the city.
 
@@ -218,7 +264,11 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 **Substitution:** The sum of the rises is $$\begin{aligned} &10.9 + 10.7 + 10.6 + 10.9 \\ &= 43.1\,\text{K} \end{aligned}$$, so $\Delta T_\text{avg} = 10.775\,\text{K}$. Then
 $$\begin{aligned} P_\text{L} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10.775\,\text{K} \\ &= 1.7156 \cdot 10^{9}\,\text{W} \\ &= 1716\,\text{MW} \end{aligned}$$
 **Answer:** $1720\,\text{MW}$, three significant figures like the water flow and the rise in temperature.
-**Reasonableness:** Estimate: $$\begin{aligned} &4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \\ &\approx 1.8 \cdot 10^9\,\text{W} \end{aligned}$$. The waste heat power is $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, and the condenser's share of it is $\tfrac{1716}{1800} = 95\,\%$; the rest, about $84\,\text{MW}$, goes into the air, for example as losses of the generator and the transformer. Less heat is transferred to the sea water than the waste heat, as it should be. After the condenser the water is only about $11\,\text{K}$ warmer than the surroundings, so in practice it can no longer be used to produce electricity: with so small a temperature difference the largest possible efficiency would be only a few per cent, but the energy has not disappeared: it warms the sea. In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the sea is warmer in the discharge area than elsewhere, and conditions for aquatic life may worsen.
+**Reasonableness:** Estimate: $$\begin{aligned} &4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \\ &\approx 1.8 \cdot 10^9\,\text{W} \end{aligned}$$. The waste heat power is $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, and the condenser's share of it is $\tfrac{1716}{1800} = 95\,\%$; the rest, about $84\,\text{MW}$, goes into the air, for example as losses of the generator and the transformer. Less heat is transferred to the sea water than the waste heat, as it should be.
+
+After the condenser the water is only about $11\,\text{K}$ warmer than the surroundings, so in practice it can no longer be used to produce electricity: with so small a temperature difference the largest possible efficiency would be only a few per cent, but the energy has not disappeared: it warms the sea.
+
+In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the sea is warmer in the discharge area than elsewhere, and conditions for aquatic life may worsen.
 
 ## fy3-15-L1-09
 **Given:** mass flow of the water $q_m = 80\,\text{kg/s}$, rise in temperature $\Delta T = 40\,\text{K}$; from the table (MAFY table, specific heat capacities, liquids, water) $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$

@@ -423,7 +423,9 @@ A party balloon is filled with helium until its volume is $5.0\,\textsf{l}$. In 
 
 <!-- vaihe -->
 
-**Given and find.** The volume of the balloon is $V = 5.0\,\textsf{l}$, the pressure is $p = 101\,\text{kPa}$, the temperature is $\theta = 20\,{}^\circ\text{C}$ and the molar mass of helium is $M = 4.0\,\text{g/mol}$. We want the amount of substance $n$ and the mass $m$.
+**Given and find.** The volume of the balloon is $V = 5.0\,\textsf{l}$, the pressure is $p = 101\,\text{kPa}$, the temperature is $\theta = 20\,{}^\circ\text{C}$ and the molar mass of helium is $M = 4.0\,\text{g/mol}$.
+
+We want the amount of substance $n$ and the mass $m$.
 
 <!-- vaihe -->
 
@@ -469,7 +471,11 @@ m &= nM \\
 &\approx 0.83\,\text{g}
 \end{aligned}
 ```
-The balloon contains $0.21\,\text{mol}$ of helium, and its mass is $0.83\,\text{g}$. The amount of substance is limited by the volume $5.0\,\textsf{l}$, and the mass by the molar mass $4.0\,\text{g/mol}$ as well, each with two digits, so the results are given with two significant figures. The pressure $101\,\text{kPa}$ and the temperature $293\,\text{K}$ have three digits and do not limit the result.
+The balloon contains $0.21\,\text{mol}$ of helium, and its mass is $0.83\,\text{g}$.
+
+The amount of substance is limited by the volume $5.0\,\textsf{l}$, and the mass by the molar mass $4.0\,\text{g/mol}$ as well, each with two digits, so the results are given with two significant figures.
+
+The pressure $101\,\text{kPa}$ and the temperature $293\,\text{K}$ have three digits and do not limit the result.
 
 <!-- vaihe -->
 

@@ -149,7 +149,9 @@ Sukeltaja on järvessä $12{,}0\,\text{m}$:n syvyydessä. Hän on vedenalaisen t
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Syvyys $h = 12{,}0\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$ ja $g = 9{,}81\,\text{m/s}^2$. Veden tiheys $\rho = 1000\,\text{kg/m}^3$ saadaan taulukosta tai tehtävästä. Ikkunan ala on $A = 150\,\text{cm}^2$. Kysytään kokonaispaine $p$ sukeltajan ympärillä ja ikkunaan kohdistuva voima $F$.
+**Tunnetut ja kysytty.** Syvyys $h = 12{,}0\,\text{m}$, ilmanpaine $p_0 = 101\,\text{kPa}$ ja $g = 9{,}81\,\text{m/s}^2$. Veden tiheys $\rho = 1000\,\text{kg/m}^3$ saadaan taulukosta tai tehtävästä. Ikkunan ala on $A = 150\,\text{cm}^2$.
+
+Kysytään kokonaispaine $p$ sukeltajan ympärillä ja ikkunaan kohdistuva voima $F$.
 
 <!-- vaihe -->
 
@@ -196,7 +198,11 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine. Tämä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen ja 12 metriä hieman enemmän. Arvio: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. Voima vastaa noin $180\,\text{kg}$:n massan painoa, vaikka ikkuna on pieni. Paine ei litistä sukeltajan kehoa. Vedessä sama paine vaikuttaa kehoon joka puolelta, ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
+**Järkevyys.** Kokonaispaine on noin 2,2 kertaa ilmanpaine. Tämä sopii siihen, että 10 metriä vettä lisää noin yhden ilmanpaineen ja 12 metriä hieman enemmän.
+
+Arvio: $10\,\text{kPa/m} \cdot 12\,\text{m} + 101\,\text{kPa} \approx 220\,\text{kPa}$. Voima vastaa noin $180\,\text{kg}$:n massan painoa, vaikka ikkuna on pieni.
+
+Paine ei litistä sukeltajan kehoa. Vedessä sama paine vaikuttaa kehoon joka puolelta, ja kehon nesteet välittävät sen myös sisälle. Vain kehon ilmatilojen, kuten korvien, paine on tasattava.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että paine pohjassa riippuu siitä, kuinka paljon vettä astiassa on. Näin ei ole. Otetaan kapea putki ja leveä allas, joissa vesi ulottuu samaan korkeuteen. Pohjan paine on sama, vaikka altaassa on tuhatkertainen määrä vettä. Paine riippuu vain syvyydestä, tiheydestä ja pinnan paineesta.

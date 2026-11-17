@@ -178,7 +178,9 @@ Biovoimalaitoksen kattilaan syötetään puuhakkeen energiaa teholla $500\,\text
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$. Yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$. Kysytään hyötysuhteita $\eta$ ja hukkalämmön tehoa $P_2$ kummassakin tapauksessa.
+**Tunnetut ja kysytty.** Polttoaineteho $P_1 = 500\,\text{MW}$. Pelkkää sähköä tuotettaessa sähköteho $P_\text{s} = 190\,\text{MW}$. Yhteistuotannossa $P_\text{s} = 150\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 290\,\text{MW}$.
+
+Kysytään hyötysuhteita $\eta$ ja hukkalämmön tehoa $P_2$ kummassakin tapauksessa.
 
 <!-- vaihe -->
 
@@ -221,7 +223,9 @@ P_{2,2} &= P_1 - (P_\text{s} + P_\text{k}) \\
 
 <!-- vaihe -->
 
-**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $\eta_1 = 0{,}380 = 38{,}0\,\%$. Hukkalämpöä siirtyy ympäristöön $310\,\text{MW}$. Suurin osa siitä siirtyy lauhduttimen kautta mereen. Yhteistuotannossa kokonaishyötysuhde on $\eta_2 = 0{,}880 = 88{,}0\,\%$. Hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella. Hyötysuhteet ovat osamääriä. Niissä on yhtä monta numeroa kuin epätarkimmassa tehossa. Tehot $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ ja $500\,\text{MW}$ ovat kaikki kolmen numeron arvoja. Siksi hyötysuhteet annetaan kolmella numerolla.
+**Tulos.** Pelkällä sähköntuotannolla hyötysuhde on $\eta_1 = 0{,}380 = 38{,}0\,\%$. Hukkalämpöä siirtyy ympäristöön $310\,\text{MW}$. Suurin osa siitä siirtyy lauhduttimen kautta mereen. Yhteistuotannossa kokonaishyötysuhde on $\eta_2 = 0{,}880 = 88{,}0\,\%$. Hukkalämpöä on vain $60\,\text{MW}$. Tehot on annettu täysinä megawatteina, joten erotukset $310\,\text{MW}$ ja $60\,\text{MW}$ tunnetaan megawatin tarkkuudella.
+
+Hyötysuhteet ovat osamääriä. Niissä on yhtä monta numeroa kuin epätarkimmassa tehossa. Tehot $190\,\text{MW}$, $150\,\text{MW}$, $290\,\text{MW}$ ja $500\,\text{MW}$ ovat kaikki kolmen numeron arvoja. Siksi hyötysuhteet annetaan kolmella numerolla.
 
 <!-- vaihe -->
 

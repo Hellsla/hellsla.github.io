@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e280ca9270616f82
+CONTENT-HASH: 2d522aa2e800d3c6
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 10-19 Reasonableness uses a straight apostrophe in "The model's result" where the rest of the text uses ’; unify.
-- [Minor] 10-19 Given starts in lower case ("from the source …"); unify with the other sets.
+- none
 
 ## Checked
-- 390 px chain montage (two sheets, all chains incl. the new task) opened; 1280 px fy3-8-open-exercises-L2-1280-15…17 opened: the new 10-19 (NASA source link first, a–d, long solution with three display blocks) is clear; `\Delta h_\text{thermal} = \tfrac13 \cdot 115.8\,\text{mm} \approx 39\,\text{mm}.` carries its full stop inside the formula, so nothing stands alone.
-- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
+- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
+- 1280 px, solutions open: fy3-8-open-exercises-1280-3.png, fy3-8-open-exercises-1280-6.png. Split Given, Principle and Reasonableness paragraphs read cleanly; chains, answer boxes and cards intact, no clipping.
+- 390 px: fy3-8-stage-tarkista-390-1.png, fy3-8-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

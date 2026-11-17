@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: df6d5c1fa166c3f5
+CONTENT-HASH: 3e63c8e6f58c1952
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] a solution writes `6.52\,\text{m}/8.0\,\text{s}` with a slash; the house rule is a colon for a written division.
+- none
 
 ## Checked
-- 390 px chain montage opened (31 chains), no clipping, equals signs aligned.
-- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
+- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
+- 1280 px, solutions open: fy3-2-open-exercises-1280-3.png, fy3-2-open-exercises-1280-6.png. Split paragraphs render as separate readable blocks; display chains, answer box, Reasonableness intact, no clipping.
+- 390 px: fy3-2-stage-tarkista-390-1.png, fy3-2-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

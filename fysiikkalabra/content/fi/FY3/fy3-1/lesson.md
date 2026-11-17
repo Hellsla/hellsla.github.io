@@ -273,7 +273,9 @@ Tutkimusrobotin massa on $1{,}20 \cdot 10^2\,\text{kg}$. Mikä on sen paino Maas
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Massa on $m = 1{,}20 \cdot 10^2\,\text{kg}$, ja taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$. Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
+**Tunnetut ja kysytty.** Massa on $m = 1{,}20 \cdot 10^2\,\text{kg}$, ja taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$.
+
+Kysytään painoja $G_\text{Maa}$ ja $G_\text{Mars}$.
 
 <!-- vaihe -->
 

@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 47c22d6c138ac152
+CONTENT-HASH: c3c17b76f13d77d4
 
 ## Blocking
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
+- [Minor] open-tarkista-1280-1, Pohdintatehtävä 1 Vastaus: the closing paragraph "kaksi merkitsevää numeroa kuten massassa …" starts with a lowercase letter on its own paragraph after the display, and the second display ends in "41,9 kJ." with a full stop inside the display; start the paragraph with a capital ("Kaksi merkitsevää numeroa …") or join it to the last display row.
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Round 1, delta (md-paragraphs, teacher-figure): lesson.md only, text cut into paragraphs, words unchanged, figures untouched.
+- 1280 px with solutions open: fy3-16-open-tarkista-1280-1.png (Pohdintatehtävä answers: Sulaminen / Lämpeneminen / Yhteensä as separate paragraphs with aligned displays, no clipping), fy3-16-open-exercises-1280-1.png (16-1 solution blocks, displays aligned, units thin-spaced).
+- 390 px: fy3-16-example-390-1.png and fy3-16-stage-sovella-390-1.png (worked example stages 1-3: knowns, question, principle and formula each in own paragraph, display aligned, no overflow, units LaTeX). There are no 360 px captures.
+- Language: breaks fall at one idea each; no mechanical phrasing.
+- Hash same at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 934f85563a66ee3d
+CONTENT-HASH: 7cef0fa8bc1eb5b9
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+Delta (solutions.md paragraph breaks only). Opened:
+- review/shots/contact-6.png (exercises 2-5 to 2-15, solutions open): the new breaks in 2-7 (three model-answer paragraphs) and the Reading the graph blocks of 2-4 and 2-13 are short, readable and not clipped.
+- review/shots/fy3-2-example-390-1.png (work-by-a-stretching-spring example, stages 1-4 at 390 px, with its graph): figure and axes legible, text unchanged.
+- review/shots/fy3-2-open-exercises-1280-3.png (opened solution 2-3, start of 2-4): kJ and W units and the fraction chains render correctly; the added reasonableness paragraphs do not disturb the layout.

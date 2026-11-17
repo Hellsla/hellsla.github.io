@@ -226,7 +226,9 @@ Kalorimetrissä on $0{,}250\,\text{kg}$ vettä, jonka lämpötila on $24{,}0\,{}
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}250\,\text{kg}$, $T_\text{v} = 24{,}0\,{}^\circ\text{C}$. Jää: $m_\text{j} = 0{,}050\,\text{kg}$, $T_\text{j} = -8{,}0\,{}^\circ\text{C}$. Taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$. Kysytään, sulaako kaikki jää, ja lopputilan lämpötilaa $T$.
+**Tunnetut ja kysytty.** Vesi: $m_\text{v} = 0{,}250\,\text{kg}$, $T_\text{v} = 24{,}0\,{}^\circ\text{C}$. Jää: $m_\text{j} = 0{,}050\,\text{kg}$, $T_\text{j} = -8{,}0\,{}^\circ\text{C}$. Taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{j} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$.
+
+Kysytään, sulaako kaikki jää, ja lopputilan lämpötilaa $T$.
 
 <!-- vaihe -->
 

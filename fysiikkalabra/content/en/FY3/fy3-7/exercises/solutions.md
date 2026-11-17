@@ -93,13 +93,22 @@
 **Find:** the order of the batches by the quantity of heat $Q$ needed, from smallest to largest
 **Principle:** Warming needs $Q = cm\Delta T$, melting $Q = sm$ and vaporisation $Q = rm$. In a change of state the temperature does not change, but a lot of energy is still used. The order is not the same as the order of the masses, nor does it depend on whether the state has changed, because the result depends on the mass, the change in temperature and the specific heat capacity $c$, the specific latent heat of fusion $s$ or the specific latent heat of vaporisation $r$.
 **Model answer:** Let us calculate the quantity of heat of each batch:
+
 Teapot: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1.0\,\text{kg} \cdot 20\,\text{K}$,
 that is, $Q = 83\,800\,\text{J} \approx 84\,\text{kJ}$
+
 Ice bag: $Q = 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.50\,\text{kg} = 167\,\text{kJ}$
+
 Pan: $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} \cdot 80\,\text{K}$,
 that is, $Q = 201\,120\,\text{J} \approx 201\,\text{kJ}$
+
 Boiling water: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.10\,\text{kg} = 226\,\text{kJ}$
-From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass from smallest to largest it would be boiling water $0.10\,\text{kg}$, ice bag $0.50\,\text{kg}$, pan $0.60\,\text{kg}$ and teapot $1.0\,\text{kg}$. The order of the heat is almost the opposite, so mass does not decide. Melting ice needs less than warming a panful of water to the boiling point, so a change of state is not always the biggest item. Estimate: vaporisation needs a lot even for a small mass because $r$ is large, and so only $0.10\,\text{kg}$ is enough to pass all the other batches.
+
+From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass from smallest to largest it would be boiling water $0.10\,\text{kg}$, ice bag $0.50\,\text{kg}$, pan $0.60\,\text{kg}$ and teapot $1.0\,\text{kg}$.
+
+The order of the heat is almost the opposite, so mass does not decide. Melting ice needs less than warming a panful of water to the boiling point, so a change of state is not always the biggest item.
+
+Estimate: vaporisation needs a lot even for a small mass because $r$ is large, and so only $0.10\,\text{kg}$ is enough to pass all the other batches.
 
 ## fy3-7-L3-01
 **Given:** juice (the $c$ of water) $m_1 = 0.35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; ice $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -112,6 +121,7 @@ From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass 
 $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 
 **Answer:** $9.7\,{}^\circ\text{C}$, two significant figures like the mass $0.35\,\text{kg}$.
+
 **Reasonableness:** The result is between $0\,{}^\circ\text{C}$ and $25\,{}^\circ\text{C}$. If the $60\,\text{g}$ were already water at $0\,{}^\circ\text{C}$, the final temperature would be $\dfrac{0.35 \cdot 25}{0.41}\,{}^\circ\text{C} \approx 21\,{}^\circ\text{C}$. Ice cools much more, because melting absorbs $20\,040\,\text{J}$ of heat without any change of temperature: this is why the drink cools by over $11\,\text{K}$ more.
 
 ## fy3-7-L3-02
@@ -137,7 +147,11 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 ## fy3-7-L1-06
 **Find:** what happens to the temperature of the mixture of melting ice and meltwater while there is still ice left.
 **Principle:** At constant pressure the temperature of a pure substance stays constant throughout a change of state. The energy transferred during melting changes the interactions between the particles and increases the interaction energy between them, so it does not show up as a rise in temperature.
-**Model answer:** The temperature stays the same, because the energy is used to change the interactions between the particles and not to increase the kinetic energy of the particles. The option saying that the temperature rises steadily forgets this. The option saying that the mixture cools contradicts the fact that energy is transferred to the mixture all the time during heating. The option in which the temperature first rises and then falls does not match any stage of melting. Only when all the ice has melted does the meltwater start to warm up.
+**Model answer:** The temperature stays the same, because the energy is used to change the interactions between the particles and not to increase the kinetic energy of the particles. The option saying that the temperature rises steadily forgets this. The option saying that the mixture cools contradicts the fact that energy is transferred to the mixture all the time during heating.
+
+The option in which the temperature first rises and then falls does not match any stage of melting.
+
+Only when all the ice has melted does the meltwater start to warm up.
 
 ## fy3-7-L1-07
 **Find:** why the evaporation of sweat cools the skin.
@@ -159,7 +173,13 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Find:** a) the stages and why the temperature stays constant; b) the specific latent heat of fusion $s$ in $\tfrac{\text{kJ}}{\text{kg}}$
 **Principle:** The power is constant, so the energy given by the heater is $Pt$. While the temperature rises, the energy is used for warming, $Q = cm\Delta T$. While the temperature stays constant at $0\,{}^\circ\text{C}$, the ice melts and all the energy is used for melting, $Pt = sm$.
 **Model answer a):** First the ice warms to $0\,{}^\circ\text{C}$. Then the temperature stays at $0\,{}^\circ\text{C}$ even though the heater gives out energy: the energy is used to melt the ice and increases the interaction energy between the particles. Finally all the ice has melted and the water warms up.
-**Reading the table:** The rows $20\,\text{s}$ and $150\,\text{s}$ are already inside the plateau, so the start and end of melting are estimated from the slopes. Start: the rows $0\,\text{s}$ and $10\,\text{s}$ give a rise of $1.14\,\tfrac{\text{K}}{\text{s}}$, so $0\,{}^\circ\text{C}$ is reached at about $18\,\text{s}$. End: at the row $160\,\text{s}$ the temperature is $1.9\,{}^\circ\text{C}$, and the rise between the rows $160\,\text{s}$ and $180\,\text{s}$ is $0.575\,\tfrac{\text{K}}{\text{s}}$, so the rise began about $3.3\,\text{s}$ earlier, at about $157\,\text{s}$. The duration of melting is $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
+**Reading the table:** The rows $20\,\text{s}$ and $150\,\text{s}$ are already inside the plateau, so the start and end of melting are estimated from the slopes.
+
+Start: the rows $0\,\text{s}$ and $10\,\text{s}$ give a rise of $1.14\,\tfrac{\text{K}}{\text{s}}$, so $0\,{}^\circ\text{C}$ is reached at about $18\,\text{s}$.
+
+End: at the row $160\,\text{s}$ the temperature is $1.9\,{}^\circ\text{C}$, and the rise between the rows $160\,\text{s}$ and $180\,\text{s}$ is $0.575\,\tfrac{\text{K}}{\text{s}}$, so the rise began about $3.3\,\text{s}$ earlier, at about $157\,\text{s}$.
+
+The duration of melting is $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
 **Formula:** $Pt = sm$, from which $s = \dfrac{P\,\Delta t}{m}$
 **Conversions:** The power and time are already in base units, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:**
@@ -170,7 +190,12 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0.250\,\text{kg}} \\
 &= 333\,600\,\tfrac{\text{J}}{\text{kg}}
 \end{aligned}$$
 
-**Answer:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. The time is read only to about a second, so $\pm 5\,\%$ is accepted, and three significant figures are given to match the mass and the power. If the plateau is read directly as the rows $20\,\text{s}$ and $150\,\text{s}$, the time is $130\,\text{s}$ and the result $312\,\tfrac{\text{kJ}}{\text{kg}}$, too small, because melting started before the row $20\,\text{s}$ and ended only after the row $150\,\text{s}$.
+**Answer:** $334\,\tfrac{\text{kJ}}{\text{kg}}$.
+
+The time is read only to about a second, so $\pm 5\,\%$ is accepted, and three significant figures are given to match the mass and the power.
+
+If the plateau is read directly as the rows $20\,\text{s}$ and $150\,\text{s}$, the time is $130\,\text{s}$ and the result $312\,\tfrac{\text{kJ}}{\text{kg}}$, too small, because melting started before the row $20\,\text{s}$ and ended only after the row $150\,\text{s}$.
+
 **Reasonableness:** The result matches the known specific latent heat of fusion of ice, $334\,\tfrac{\text{kJ}}{\text{kg}}$. Heating the ice from $-20\,{}^\circ\text{C}$ took about $18\,\text{s}$, that is, $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Check: $$\begin{aligned} c m \Delta T &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ &\cdot 0.250\,\text{kg} \cdot 20\,\text{K} \\ &= 10\,500\,\text{J} \end{aligned}$$, so the measurement and the calculation agree. Melting took about $83\,\text{kJ}$, about eight times more energy than warming the ice.
 
 ## fy3-7-L2-06
@@ -210,7 +235,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Answer:** $14.4\,\text{K}$, three significant figures like the temperatures in the table. The interpolation is an estimate, so $\pm 4\,\%$ is accepted.
+
 **Model answer b):** Boiling water stays at the temperature $T_\text{b}$ even though the hob gives more energy: the extra energy vaporises water and does not raise the temperature. In the mountains $T_\text{b}$ is only about $85.7\,{}^\circ\text{C}$, so the food in the surrounding water is about $14\,\text{K}$ cooler than at sea level. Cooking depends on temperature, so it takes longer.
+
 **Reasonableness:** The estimate $85.7\,{}^\circ\text{C}$ lies between the rows $81.3\,{}^\circ\text{C}$ and $90.0\,{}^\circ\text{C}$, just as the pressure $60.0\,\text{kPa}$ lies between the rows $50.0\,\text{kPa}$ and $70.0\,\text{kPa}$. The difference $14.4\,\text{K}$ is smaller than at $50.0\,\text{kPa}$ ($18.7\,\text{K}$) and larger than at $70.0\,\text{kPa}$ ($10.0\,\text{K}$), as it should be.
 
 ## fy3-7-L3-04
@@ -245,7 +272,10 @@ s &= \dfrac{19\,910\,\text{J}}{0.100\,\text{kg}} \\
 \end{aligned}$$
 
 **Answer:** a) $69\,{}^\circ\text{C}$; b) $12\,\text{W}$; c) $Q = 20\,\text{kJ}$ and $s \approx 200\,\tfrac{\text{kJ}}{\text{kg}}$. The time is read roughly, so $\pm 8\,\%$ is accepted and the result is given to two significant figures.
-**Reasonableness:** Solidification lasts $27.7\,\text{min}$, much longer than the $3\,\text{min}$ in which the liquid cools by $9.8\,\text{K}$. Comparison: if the same energy $19.9\,\text{kJ}$ cooled the liquid, the temperature would fall by $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.100\,\text{kg}} \approx 90\,\text{K}$, so a lot of energy is released in solidification. On the plateau the temperature does not fall, because solidification releases exactly the energy that the substance gives out to the surroundings: all the energy released goes to cover the losses to the surroundings.
+
+**Reasonableness:** Solidification lasts $27.7\,\text{min}$, much longer than the $3\,\text{min}$ in which the liquid cools by $9.8\,\text{K}$.
+
+Comparison: if the same energy $19.9\,\text{kJ}$ cooled the liquid, the temperature would fall by $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.100\,\text{kg}} \approx 90\,\text{K}$, so a lot of energy is released in solidification. On the plateau the temperature does not fall, because solidification releases exactly the energy that the substance gives out to the surroundings: all the energy released goes to cover the losses to the surroundings.
 
 ## fy3-7-L3-05
 **Given:** milk $M = 0.300\,\text{kg}$, $T_0 = 20.0\,{}^\circ\text{C}$, final temperature $T = 65.0\,{}^\circ\text{C}$; steam at $100\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
@@ -263,7 +293,13 @@ m_\text{s} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}
 $$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
 
 **Answer:** a) $23.5\,\text{g}$, three significant figures like the mass $0.300\,\text{kg}$; b) $0.386\,\text{kg}$, which is about $16$ times the mass of the steam.
-**Model answer:** One kilogram of steam cooling to $65\,{}^\circ\text{C}$ gives out a total of $2\,406\,650\,\text{J}$, but one kilogram of water at the same temperature gives out only $4190 \cdot 35.0\,\text{J} = 146\,650\,\text{J}$. Most of the energy given out by the steam, about $94\,\%$, is released in condensation while the temperature stays constant. Steam that hits the skin condenses on the surface of the skin and gives this large quantity of energy to the skin, so the same mass of steam causes a much worse burn than water that is just as hot.
+
+**Model answer:** One kilogram of steam cooling to $65\,{}^\circ\text{C}$ gives out a total of $2\,406\,650\,\text{J}$, but one kilogram of water at the same temperature gives out only $4190 \cdot 35.0\,\text{J} = 146\,650\,\text{J}$.
+
+Most of the energy given out by the steam, about $94\,\%$, is released in condensation while the temperature stays constant.
+
+Steam that hits the skin condenses on the surface of the skin and gives this large quantity of energy to the skin, so the same mass of steam causes a much worse burn than water that is just as hot.
+
 **Reasonableness:** The result $23.5\,\text{g}$ is small compared with the mass of the milk, $300\,\text{g}$, because steam gives out a lot of energy as it condenses ($r$ is large). Check: $23.5\,\text{g}$ gives out $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.0235\,\text{kg} = 53.1\,\text{kJ}$ as it condenses and $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.0235\,\text{kg} \cdot 35.0\,\text{K} = 3.4\,\text{kJ}$ as it cools, $56.6\,\text{kJ}$ in total, and the milk absorbs $56.6\,\text{kJ}$. The energies match.
 
 ## fy3-7-L1-09
@@ -292,9 +328,16 @@ $$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
 **Find:** a) a comparison of the motion and arrangement of the particles in the three states; b) why the temperature does not rise during a change of state; c) the energy $Q$ needed for melting, in kilojoules; d) what the simple particle model describes well and what it does not
 **Principle:** In the particle model, temperature describes the mean kinetic energy of the particles’ thermal motion, and the interactions between the particles carry interaction energy. When a pure substance melts at constant pressure, its temperature stays at the melting point, so there is no temperature change and the heat needed is $Q = sm$.
 **Model answer a):** In the solid the particles are close together in a regular arrangement and vibrate in place. In the liquid the particles are still close together, but they move past one another and there is no lasting arrangement. In the gas the particles are far apart, move fast and freely, and fill the whole container. So the order decreases and the motion becomes freer in the order solid, liquid, gas.
-**Model answer b):** During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. In the simulation this shows as the regular structure of the solid breaking up on heating. The mean kinetic energy of the particles does not increase during this time, so the temperature stays at the melting point until all of the substance has melted. The chemical bonds inside the molecules do not break. The word “necessarily” is in place: before and after the change of state the same energy increases the kinetic energy of the particles and the temperature rises, and the temperature stays constant only for a pure substance at constant pressure.
+**Model answer b):** During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them.
+
+In the simulation this shows as the regular structure of the solid breaking up on heating. The mean kinetic energy of the particles does not increase during this time, so the temperature stays at the melting point until all of the substance has melted. The chemical bonds inside the molecules do not break.
+
+The word “necessarily” is in place: before and after the change of state the same energy increases the kinetic energy of the particles and the temperature rises, and the temperature stays constant only for a pure substance at constant pressure.
+
 **Formula:** $Q = sm$, and the asked $Q$ is already solved.
+
 **Conversions:** None needed: the mass is in kilograms and $s$ in kilojoules per kilogram, so the result comes in kilojoules. For the check, $66.8\,\text{kJ} = 66\,800\,\text{J}$.
+
 **Substitution:**
 
 $$\begin{aligned}
@@ -303,7 +346,13 @@ Q &= 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.20\,\text{kg} \\
 \end{aligned}$$
 
 **Answer:** c) $67\,\text{kJ}$, two significant figures like the mass $0.20\,\text{kg}$.
-**Model answer d):** The model describes well what differs in kind between the states: the arrangement, motion and spacing of the particles, the fact that a gas fills the whole container, and the fact that heating makes the motion stronger and breaks up the structure. The model leaves out the amounts: it gives no energy in joules and no value for the specific latent heat of fusion, so the value $334\,\tfrac{\text{kJ}}{\text{kg}}$ of part c) is measured from real ice, not read from the simulation. The model has only a small number of particles in a flat picture and a simple attraction between them, whereas a real block of ice has an enormous number of particles in three dimensions. For the same reason the model does not explain the special features of water, such as ice being less dense than water. So the model suits explaining the phenomenon but not predicting numerical values.
+**Model answer d):** The model describes well what differs in kind between the states: the arrangement, motion and spacing of the particles, the fact that a gas fills the whole container, and the fact that heating makes the motion stronger and breaks up the structure.
+
+The model leaves out the amounts: it gives no energy in joules and no value for the specific latent heat of fusion, so the value $334\,\tfrac{\text{kJ}}{\text{kg}}$ of part c) is measured from real ice, not read from the simulation.
+
+The model has only a small number of particles in a flat picture and a simple attraction between them, whereas a real block of ice has an enormous number of particles in three dimensions. For the same reason the model does not explain the special features of water, such as ice being less dense than water.
+
+So the model suits explaining the phenomenon but not predicting numerical values.
 **Reasonableness:** The same energy would raise the temperature of the melted $0.20\,\text{kg}$ of water ($c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$) by
 
 $$\begin{aligned}

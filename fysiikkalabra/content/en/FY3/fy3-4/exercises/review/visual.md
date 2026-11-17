@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8cc60cc521025723
+CONTENT-HASH: 6e46a118823eff8e
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 5-4 Reasonableness: `0.0025 m²/4` uses a slash for a division in text; the house rule is a colon (`:`).
+- none
 
 ## Checked
-- 390 px chain montage opened (two sheets, all chains), fy3-4-open-exercises-1280-4 (5-4 pressure of the stove): display rows aligned, no lone punctuation.
-- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
+- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
+- 1280 px, solutions open: fy3-4-open-exercises-1280-3.png, fy3-4-open-exercises-1280-6.png. Split Principle and Model answer paragraphs read cleanly; substitution rows, answer box and Reasonableness intact, no clipping.
+- 390 px: fy3-4-stage-tarkista-390-1.png, fy3-4-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

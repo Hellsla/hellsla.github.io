@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a0117cc8ece79348
+CONTENT-HASH: 854419bcf707eb53
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] units are written both as stacked `\tfrac{\text{kPa}}{{}^\circ\text{C}}` and inline `kPa/°C` in neighbouring chains; unify when next edited.
+- none
 
 ## Checked
-- 390 px chain montage opened (all chains), fy3-3-open-exercises-L2-1280-5 (ratio of kelvin temperatures): fractions and rows fine.
-- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
+- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
+- 1280 px, solutions open: fy3-3-open-exercises-1280-3.png, fy3-3-open-exercises-1280-6.png. Split paragraphs (Principle, Model answer) render as separate blocks; chains and answer boxes intact, no clipping.
+- 390 px: fy3-3-stage-tarkista-390-1.png, fy3-3-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

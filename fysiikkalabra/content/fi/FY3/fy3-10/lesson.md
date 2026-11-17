@@ -423,7 +423,9 @@ Juhlapallo täytetään heliumilla, kunnes sen tilavuus on $5{,}0\,\textsf{l}$. 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Pallon tilavuus $V = 5{,}0\,\textsf{l}$, paine $p = 101\,\text{kPa}$, lämpötila $\theta = 20\,{}^\circ\text{C}$ ja heliumin moolimassa $M = 4{,}0\,\text{g/mol}$. Kysytään ainemäärää $n$ ja massaa $m$.
+**Tunnetut ja kysytty.** Pallon tilavuus $V = 5{,}0\,\textsf{l}$, paine $p = 101\,\text{kPa}$, lämpötila $\theta = 20\,{}^\circ\text{C}$ ja heliumin moolimassa $M = 4{,}0\,\text{g/mol}$.
+
+Kysytään ainemäärää $n$ ja massaa $m$.
 
 <!-- vaihe -->
 

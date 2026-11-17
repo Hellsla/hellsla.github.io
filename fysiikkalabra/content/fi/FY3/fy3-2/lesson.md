@@ -326,7 +326,11 @@ Jousta venytetään $20\,\text{cm}$. Venyttävä voima kasvaa tasaisesti nollast
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Jousen venytys eli voiman kulkema matka on $s = 20\,\text{cm}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$. Voima kasvaa tasaisesti nollasta. Kysytään venyttävän voiman tekemää työtä $W$.
+**Tunnetut ja kysytty.** Jousen venytys eli voiman kulkema matka on $s = 20\,\text{cm}$, ja voiman suurin arvo on $F_\text{max} = 40\,\text{N}$.
+
+Voima kasvaa tasaisesti nollasta.
+
+Kysytään venyttävän voiman tekemää työtä $W$.
 
 <!-- vaihe -->
 

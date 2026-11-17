@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7f0a6c75997f050d
+CONTENT-HASH: fc2b72b86cfc839f
+Mode: delta
+Round: 1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
+None.
 
 ## Checked
-- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
-- Hash unchanged at the end.
+- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; solutions judged at 390 px in the lesson's worked-example captures and at 1280 px.
+- 1280 px with solutions open: fy3-5-open-exercises-1280-3.png (task 6-3 solution rows, boxed Vastaus, Järkevyys block), fy3-5-open-tarkista-1280-1.png (Vastaus boxes with the aligned ΔU rows).
+- 390 px: fy3-5-example-390-1.png, fy3-5-stage-sovella-390-1.png (same row structure at phone width; one thing per paragraph, no clipping or overflow).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

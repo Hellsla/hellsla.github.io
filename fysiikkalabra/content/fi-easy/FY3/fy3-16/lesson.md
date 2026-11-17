@@ -195,7 +195,9 @@ Retkellä kylmälaukussa on $1{,}0\,\text{kg}$:n jääpussi. Sen lämpötila on 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Jään massa on $m_\text{jää} = 1{,}0\,\text{kg}$. Juomien massa on $m_\text{j} = 0{,}50\,\text{kg}$, ja niiden lämpötilan lasku on $\Delta T_\text{j} = 20\,\text{K}$. Seinien $UA = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}80\,\text{m}^2$. Lämpötilaero ulkoa sisään on $\Delta T_\text{u} = 28\,\text{K}$. Taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$. Kysytään aikaa $t$, jonka kuluttua jää on loppunut.
+**Tunnetut ja kysytty.** Jään massa on $m_\text{jää} = 1{,}0\,\text{kg}$. Juomien massa on $m_\text{j} = 0{,}50\,\text{kg}$, ja niiden lämpötilan lasku on $\Delta T_\text{j} = 20\,\text{K}$. Seinien $UA = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}} \cdot 0{,}80\,\text{m}^2$. Lämpötilaero ulkoa sisään on $\Delta T_\text{u} = 28\,\text{K}$. Taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$.
+
+Kysytään aikaa $t$, jonka kuluttua jää on loppunut.
 
 <!-- vaihe -->
 

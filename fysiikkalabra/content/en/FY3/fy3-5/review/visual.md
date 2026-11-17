@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1203286786b17e39
+CONTENT-HASH: d535fe0102400b0f
 
 ## Blocking
 
-
 ## Polish
 
-
 ## Checked
-- batch delta review: opened fy3-5-1280-0, fy3-5-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- batch delta review: only the inquiry numeric task changed (decimal point 8.0 in English, unit in LaTeX); opened fy3-5-sim-390.png (layout intact, readout and controls fine); the diff has no visual effect elsewhere.

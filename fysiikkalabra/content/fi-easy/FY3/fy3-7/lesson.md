@@ -228,7 +228,15 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Vaa'an päällä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Teho on $P = 1000\,\text{W}$ ja aika on $t = 300\,\text{s}$. Höyrystynyt massa on sama kuin vaa'an lukeman muutos: $\Delta m = 128\,\text{g}$. Vesi kiehuu, joten se on $100\,{}^\circ\text{C}$:ssa. Kysytään ominaishöyrystymislämpöä $r$. Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
+**Tunnetut ja kysytty.** Teho on $P = 1000\,\text{W}$ ja aika on $t = 300\,\text{s}$.
+
+Höyrystynyt massa on sama kuin vaa'an lukeman muutos: $\Delta m = 128\,\text{g}$.
+
+Vesi kiehuu, joten se on $100\,{}^\circ\text{C}$:ssa.
+
+Kysytään ominaishöyrystymislämpöä $r$.
+
+Oletetaan, että kuumentimen energia siirtyy kokonaan veteen.
 
 <!-- vaihe -->
 

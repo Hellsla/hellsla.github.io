@@ -4,10 +4,14 @@
 **Perustelu:** Paino on $G = mg$, joten Kuussa $G = 2{,}50\,\text{kg} \cdot 1{,}62\,\tfrac{\text{m}}{\text{s}^2} \approx 4{,}05\,\text{N}$. Massa $2{,}50\,\text{kg}$ on sama kaikkialla, mutta se ei ole paino eikä sen yksikkö ole newton. Vaihtoehto $1{,}54\,\text{N}$ syntyy jakamalla massa putoamiskiihtyvyydellä ($2{,}50 : 1{,}62$), ja $24{,}5\,\text{N}$ on laitteen paino Maassa.
 
 ### b)
-**Perustelu:** Työ on $(s, F)$-kuvaajan ja vaaka-akselin väliin jäävä pinta-ala. Välillä $0$–$3{,}0\,\text{m}$ se on suorakulmio $40\,\text{N} \cdot 3{,}0\,\text{m} = 120\,\text{J}$ ja välillä $3{,}0$–$5{,}0\,\text{m}$ kolmio $\tfrac{1}{2} \cdot 2{,}0\,\text{m} \cdot 40\,\text{N} = 40\,\text{J}$. Työ on yhteensä $160\,\text{J}$. Vaihtoehto $200\,\text{J}$ syntyy, jos voimaa $40\,\text{N}$ pidetään vakiona koko matkalla, $120\,\text{J}$ jättää kolmion pois ja $100\,\text{J}$ kertoo matkan alku- ja loppuvoiman keskiarvolla $20\,\text{N}$, vaikka voima ei pienene tasaisesti koko matkalla.
+**Perustelu:** Työ on $(s, F)$-kuvaajan ja vaaka-akselin väliin jäävä pinta-ala. Välillä $0$–$3{,}0\,\text{m}$ se on suorakulmio $40\,\text{N} \cdot 3{,}0\,\text{m} = 120\,\text{J}$ ja välillä $3{,}0$–$5{,}0\,\text{m}$ kolmio $\tfrac{1}{2} \cdot 2{,}0\,\text{m} \cdot 40\,\text{N} = 40\,\text{J}$. Työ on yhteensä $160\,\text{J}$.
+
+Vaihtoehto $200\,\text{J}$ syntyy, jos voimaa $40\,\text{N}$ pidetään vakiona koko matkalla, $120\,\text{J}$ jättää kolmion pois ja $100\,\text{J}$ kertoo matkan alku- ja loppuvoiman keskiarvolla $20\,\text{N}$, vaikka voima ei pienene tasaisesti koko matkalla.
 
 ### c)
-**Perustelu:** Yön aikana lusikat ovat asettuneet lämpötasapainoon huoneen kanssa, joten niiden lämpötila on sama. Lämmin käsi luovuttaa lämpöä kumpaankin, mutta metalli johtaa lämpöä paljon paremmin kuin puu ja vie sitä kädestä nopeammin pois. Iho jäähtyy, ja metalli tuntuu kylmältä. Kylmä ei ole ainetta, joka siirtyisi. Ominaislämpökapasiteetti ei yksin selitä tuntemusta, ja metallin ominaislämpökapasiteetti massaa kohti on itse asiassa pienempi kuin puun.
+**Perustelu:** Yön aikana lusikat ovat asettuneet lämpötasapainoon huoneen kanssa, joten niiden lämpötila on sama. Lämmin käsi luovuttaa lämpöä kumpaankin, mutta metalli johtaa lämpöä paljon paremmin kuin puu ja vie sitä kädestä nopeammin pois.
+
+Iho jäähtyy, ja metalli tuntuu kylmältä. Kylmä ei ole ainetta, joka siirtyisi. Ominaislämpökapasiteetti ei yksin selitä tuntemusta, ja metallin ominaislämpökapasiteetti massaa kohti on itse asiassa pienempi kuin puun.
 
 ### d)
 **Perustelu:** Hydrostaattinen paine on $p = \rho g h$, joten $$\begin{aligned} h &= \dfrac{p}{\rho g} \\ &= \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \\ &\approx 10\,\text{m} \end{aligned}$$. Vaihtoehto $1\,\text{m}$ on kymmenen kertaa liian pieni: metrin vesipatsaan paine on vain noin $9{,}8\,\text{kPa}$.
@@ -19,7 +23,9 @@
 **Perustelu:** Lämpötilan muutos on $\Delta T = \dfrac{Q}{cm}$: kun $Q$ ja $m$ ovat samat, pienimmän ominaislämpökapasiteetin aine lämpenee eniten. Esimerkiksi lämpömäärä $1{,}0\,\text{kJ}$ lämmittää kilogramman alumiinia noin $1{,}1\,\text{K}$, kuparia noin $2{,}6\,\text{K}$ ja lyijyä noin $7{,}7\,\text{K}$. Järjestys on alumiini, kupari, lyijy. Käänteinen järjestys syntyy, jos ajatellaan, että suuri ominaislämpökapasiteetti tarkoittaa nopeaa lämpenemistä. Tilavuuksia ei tarvita, koska massat ovat samat.
 
 ### g)
-**Perustelu:** Teho on vakio, joten vaakasuoran osan pituus kertoo, kuinka paljon energiaa olomuodon muutos vaatii. Veden ominaishöyrystymislämpö $2260\,\tfrac{\text{kJ}}{\text{kg}}$ on noin $6{,}8$ kertaa jään ominaissulamislämpö $333\,\tfrac{\text{kJ}}{\text{kg}}$, joten kiehuminen kestää noin $6{,}8$ kertaa niin kauan kuin sulaminen. Massa ei muutu sulaessa. Veden suurempi ominaislämpökapasiteetti selittää, miksi vesi lämpenee loivemmin kuin jää, mutta ei vaakasuorien osien pituuksia, sillä niiden aikana lämpötila ei muutu.
+**Perustelu:** Teho on vakio, joten vaakasuoran osan pituus kertoo, kuinka paljon energiaa olomuodon muutos vaatii. Veden ominaishöyrystymislämpö $2260\,\tfrac{\text{kJ}}{\text{kg}}$ on noin $6{,}8$ kertaa jään ominaissulamislämpö $333\,\tfrac{\text{kJ}}{\text{kg}}$, joten kiehuminen kestää noin $6{,}8$ kertaa niin kauan kuin sulaminen.
+
+Massa ei muutu sulaessa. Veden suurempi ominaislämpökapasiteetti selittää, miksi vesi lämpenee loivemmin kuin jää, mutta ei vaakasuorien osien pituuksia, sillä niiden aikana lämpötila ei muutu.
 
 ### h)
 **Perustelu:** Lämmetessä levyn kaikki mitat kasvavat samassa suhteessa, kuin levystä otettaisiin suurennettu kuva. Myös reiän reunan pituus kasvaa, joten reikä suurenee. Ajatus, että metalli laajenee reiän sisään, on yleinen virhekäsitys: reiän reunan atomien väliset etäisyydet kasvavat reunan suunnassa, joten reunaympyrä pitenee.
@@ -28,7 +34,9 @@
 **Perustelu:** Jäykässä säiliössä tilavuus ja ainemäärä ovat vakiot, joten $\dfrac{p}{T}$ on vakio, kun lämpötila on kelvineinä. Paineiden suhde on $\dfrac{p_2}{p_1} = \dfrac{313{,}15\,\text{K}}{293{,}15\,\text{K}} \approx 1{,}07$, eli paine kasvaa noin $7\,\%$. Kaksinkertaistuminen syntyy, jos celsiusasteita $40 : 20$ käytetään kuin absoluuttisia lämpötiloja, ja $20\,\%$ syntyy, jos $20$ asteen nousu tulkitaan prosenteiksi.
 
 ### j)
-**Perustelu:** Hiilidioksidi päästää Auringon näkyvän valon lähes esteettä läpi, mutta se absorboi Maan pinnan lähettämää infrapunasäteilyä. Kun pitoisuus kasvaa, avaruuteen pääsee aluksi vähemmän tehoa kuin Maa saa Auringosta, ja Maa lämpenee. Lämpimämpi Maa säteilee enemmän, kunnes lähtevä ja tuleva teho ovat taas yhtä suuret uudessa, korkeammassa lämpötilassa. Hiilidioksidi ei lisää Auringosta tulevaa säteilyä, eikä se tuota lämpöä. Otsonikato on eri ilmiö.
+**Perustelu:** Hiilidioksidi päästää Auringon näkyvän valon lähes esteettä läpi, mutta se absorboi Maan pinnan lähettämää infrapunasäteilyä. Kun pitoisuus kasvaa, avaruuteen pääsee aluksi vähemmän tehoa kuin Maa saa Auringosta, ja Maa lämpenee.
+
+Lämpimämpi Maa säteilee enemmän, kunnes lähtevä ja tuleva teho ovat taas yhtä suuret uudessa, korkeammassa lämpötilassa. Hiilidioksidi ei lisää Auringosta tulevaa säteilyä, eikä se tuota lämpöä. Otsonikato on eri ilmiö.
 
 ### Yleisiä virheitä
 - Kohdassa a massa ja paino sekoitetaan.
@@ -108,7 +116,9 @@ $\theta_0 = -\dfrac{58{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text
 ### c)
 **Kysytty:** miksi pituus kasvaa tasaisesti ja mitä suoran jatkaminen olettaa
 **Periaate:** Ideaalikaasun tilanyhtälöstä $pV = nRT$ seuraa, että kun paine ja ainemäärä ovat vakiot, tilavuus on suoraan verrannollinen absoluuttiseen lämpötilaan.
-**Mallivastaus:** Tulppa liikkuu vapaasti, joten se asettuu aina kohtaan, jossa ilman paine on yhtä suuri kuin ulkoilman paine ja tulpan pieni lisäpaine yhteensä. Paine pysyy siis vakiona, eikä ilmaa pääse pois. Silloin ilman tilavuus on verrannollinen absoluuttiseen lämpötilaan. Putken poikkipinta-ala $A$ on vakio, joten tilavuus $V = AL$ on verrannollinen pituuteen, ja pituus kasvaa yhtä paljon jokaista astetta kohti. Kun suoraa jatketaan pituuteen nolla, oletetaan, että ilma käyttäytyy ideaalikaasun tavoin myös kaukana mittausalueen alapuolella. Todellisuudessa ilma nesteytyy noin $-190\,{}^\circ\text{C}$:ssa, eikä sen tilavuus koskaan pienene nollaan. Tulos kertoo lämpötilan, jossa ideaalikaasun tilavuus olisi nolla.
+**Mallivastaus:** Tulppa liikkuu vapaasti, joten se asettuu aina kohtaan, jossa ilman paine on yhtä suuri kuin ulkoilman paine ja tulpan pieni lisäpaine yhteensä. Paine pysyy siis vakiona, eikä ilmaa pääse pois. Silloin ilman tilavuus on verrannollinen absoluuttiseen lämpötilaan.
+
+Putken poikkipinta-ala $A$ on vakio, joten tilavuus $V = AL$ on verrannollinen pituuteen, ja pituus kasvaa yhtä paljon jokaista astetta kohti. Kun suoraa jatketaan pituuteen nolla, oletetaan, että ilma käyttäytyy ideaalikaasun tavoin myös kaukana mittausalueen alapuolella. Todellisuudessa ilma nesteytyy noin $-190\,{}^\circ\text{C}$:ssa, eikä sen tilavuus koskaan pienene nollaan. Tulos kertoo lämpötilan, jossa ideaalikaasun tilavuus olisi nolla.
 
 ### d)
 **Annettu:** jokainen lukema $2{,}0\,\text{mm}$ todellista suurempi; a-kohdan suoran kulmakerroin $k = 0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}$
@@ -263,7 +273,9 @@ Yhteensä noin $250\,\text{kJ}$, eli noin puolet banaanin ravintoenergiasta. Pak
 ### b)
 **Kysytty:** miksi putkilinjassa on U:n muotoisia mutkia
 **Periaate:** Lämpölaajeneminen muuttaa putken pituutta aina, kun veden lämpötila muuttuu. Jos pituuden muutos estetään, putkeen syntyy suuret voimat.
-**Mallivastaus:** Putki pitenee lämmetessä, a-kohdan tapauksessa jo $120$ metrin matkalla noin $15\,\text{cm}$, ja lyhenee taas jäähtyessä, esimerkiksi kun veden lämpötila laskee kesäksi tai verkko korjataan. U:n muotoinen mutka joustaa: sen sakarat taipuvat hieman, joten pituuden muutos ei siirry putken kiinnityksiin ja laitteisiin. Jos putki olisi kiinnitetty jäykästi suoraksi, lämpölaajeneminen synnyttäisi niin suuret voimat, että putki voisi taipua mutkalle tai sen kiinnitykset ja liitokset voisivat rikkoutua.
+**Mallivastaus:** Putki pitenee lämmetessä, a-kohdan tapauksessa jo $120$ metrin matkalla noin $15\,\text{cm}$, ja lyhenee taas jäähtyessä, esimerkiksi kun veden lämpötila laskee kesäksi tai verkko korjataan.
+
+U:n muotoinen mutka joustaa: sen sakarat taipuvat hieman, joten pituuden muutos ei siirry putken kiinnityksiin ja laitteisiin. Jos putki olisi kiinnitetty jäykästi suoraksi, lämpölaajeneminen synnyttäisi niin suuret voimat, että putki voisi taipua mutkalle tai sen kiinnitykset ja liitokset voisivat rikkoutua.
 
 ### c)
 **Annettu:** kokonaispaine $p_1 = 650\,\text{kPa}$, $h = 35\,\text{m}$, $\rho = 947\,\text{kg/m}^3$ ja $g = 9{,}81\,\text{m/s}^2$
@@ -300,7 +312,9 @@ $p_2 = 650\,000\,\text{Pa} - 325\,000\,\text{Pa} = 325\,000\,\text{Pa}$
 ### a)
 **Kysytty:** miksi lämpötila pysyy alussa vakiona ja alkaa sitten nousta
 **Periaate:** Olomuodon muutoksen aikana aineen saama energia muuttaa olomuotoa eikä nosta lämpötilaa.
-**Mallivastaus:** Astiassa on jään ja veden seos, joka on sulamispisteessä $0\,{}^\circ\text{C}$. Vastuksen antama energia kuluu jään sulamiseen: se irrottaa vesimolekyylejä jään säännöllisestä rakenteesta ja kasvattaa molekyylien välistä vuorovaikutusenergiaa. Lämpötila, joka kuvaa hiukkasten keskimääräistä liike-energiaa, ei muutu. Niin kauan kuin jäätä on jäljellä ja seosta sekoitetaan, lämpötila pysyy lähes nollassa. Kun kaikki jää on sulanut, vastuksen energia lämmittää vettä, ja lämpötila alkaa nousta tasaisesti.
+**Mallivastaus:** Astiassa on jään ja veden seos, joka on sulamispisteessä $0\,{}^\circ\text{C}$. Vastuksen antama energia kuluu jään sulamiseen: se irrottaa vesimolekyylejä jään säännöllisestä rakenteesta ja kasvattaa molekyylien välistä vuorovaikutusenergiaa.
+
+Lämpötila, joka kuvaa hiukkasten keskimääräistä liike-energiaa, ei muutu. Niin kauan kuin jäätä on jäljellä ja seosta sekoitetaan, lämpötila pysyy lähes nollassa. Kun kaikki jää on sulanut, vastuksen energia lämmittää vettä, ja lämpötila alkaa nousta tasaisesti.
 
 ### b)
 **Kysytty:** $(t, T)$-kuvaaja ja hetki, jolloin jää on sulanut
@@ -407,11 +421,10 @@ $s = \dfrac{126\,000\,\text{J}}{0{,}400\,\text{kg}} \approx 316\,000\,\tfrac{\te
 **Kysytty:** mittauksen luotettavuus, eron selitykset ja niiden vaikutussuunnat
 **Periaate:** Verrataan tulosta taulukkoarvoon ja käydään läpi, miten kukin mallin oletus poikkeaa todellisuudesta ja mihin suuntaan se muuttaa tulosta.
 **Mallivastaus:** Tulos $316\,\tfrac{\text{kJ}}{\text{kg}}$ on noin $5\,\%$ pienempi kuin taulukkoarvo $333\,\tfrac{\text{kJ}}{\text{kg}}$. Ero selittyy useilla virhelähteillä, jotka kaikki pienentävät tulosta:
+
 - Sulamisen aikana $0\,{}^\circ\text{C}$:n seos sai lämpöä myös $21\,{}^\circ\text{C}$:n huoneilmasta. Sulamiseen kului siis enemmän energiaa kuin $P\,\Delta t$, joten sulaminen loppui aiemmin ja tulos jää liian pieneksi.
 - Lämpenemisvaiheessa osa vastuksen energiasta lämmitti astiaa ja vastusta, ja yli $21\,{}^\circ\text{C}$:n vesi luovutti lämpöä huoneeseen. Vesi lämpeni siksi hitaammin kuin vastuksen teho edellyttäisi, ja kulmakertoimesta saatu teho on todellista pienempi.
-- Jos murskatussa jäässä oli sulamisvettä, jäätä oli vähemmän kuin punnittiin, ja tulos jää liian pieneksi.
-
-Koska virhelähteet vaikuttavat samaan suuntaan, ne sopivat havaittuun eroon. Mittaus on hyvä määritys muutaman prosentin tarkkuudella. Tulosta parantaisivat esimerkiksi astian kansi, jään kuivaaminen ennen punnitusta ja mittaus, jossa lämpötila vaihtelee yhtä paljon huoneen lämpötilan ala- ja yläpuolella.
+- Jos murskatussa jäässä oli sulamisvettä, jäätä oli vähemmän kuin punnittiin, ja tulos jää liian pieneksi. Koska virhelähteet vaikuttavat samaan suuntaan, ne sopivat havaittuun eroon. Mittaus on hyvä määritys muutaman prosentin tarkkuudella. Tulosta parantaisivat esimerkiksi astian kansi, jään kuivaaminen ennen punnitusta ja mittaus, jossa lämpötila vaihtelee yhtä paljon huoneen lämpötilan ala- ja yläpuolella.
 
 ### Yleisiä virheitä
 - Kohdassa c käytetään vain jään tai vain alkuperäisen veden massaa, vaikka lämpenemisvaiheessa lämpenee koko $0{,}500\,\text{kg}$ vettä.
