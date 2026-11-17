@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4a37eb247b0360ff
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 7916686a43344713
 
 ## Blocking
 - none
@@ -9,8 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Johtopäätös title "milloin paikka on verrannollinen aikaan": now physically right (position ∝ t only when s0 = 0; distance always) and agrees with the model answer and criteria
-- Järkevyys of siirto: v = 21,6 km/h = 6,0 m/s, 6,0 · 45 = 270 m, s = 120 + 270 = 390 m recomputed
-- lesson.md: "laskea nopeus paikan ja ajan osamääränä s : t" vs Δs : Δt when s0 ≠ 0 is the correct distinction; 4,0 m → 8,0 m
-- heliopause sentence ("aurinkotuuli ei enää hallitse") correct; interval notation 2,0–4,0 s
-- figures.py: only the colour of the s = s0 + vt line (HEAT → INK); geometry and numbers unchanged; sim.js: comment only; lang sims.fy1-5 "Toistonopeus"/"Replay speed" matches the inquiry text
+- batch delta review: the retrieval item now uses Voyager 2's (t, s) data. The slope as the change in distance per unit time is correct, and for a probe moving straight out from the Sun this is its speed (C). Distractor 1 (distance at $t = 0$) is the intercept, and its feedback says so. Distractor 3 (distance still to go) is wrong, and its feedback (slope = $\Delta s : \Delta t$) says why. Exactly one option is correct. Approved figures, formula names and md-paragraphs not judged. Hash the same at the start and the end.
