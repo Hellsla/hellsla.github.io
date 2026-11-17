@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9b386c8f277354d7
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: a555d02f7a803565
+Mode: delta (md-paragraphs, round 2)
 
 ## Blocking
 - none
@@ -9,7 +9,7 @@ Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 - none
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-11-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+- fy6-11-open-exercises-L3-1280-7 (droplet task, card spacing, formulas intact); other changed solutions (a)/b)/c), (a)-(e) breaks, Millikan b)) from the diff text. Round-1 Minor ('Se saavuttaa') is now inside part e), no orphan.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

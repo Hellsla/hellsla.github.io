@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3172c295e60ab82c
+CONTENT-HASH: f9910725a21270e0
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 3172c295e60ab82c
 - none
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-14-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
+- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

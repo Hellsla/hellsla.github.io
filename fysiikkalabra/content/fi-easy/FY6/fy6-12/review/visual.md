@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c4f6e75d48f72442
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: e4d14079fd5d775d
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] sheet 1 item 3: the short left side "v" stands alone on a row, "= sqrt(...)" below it; readable, a little loose.
 
 ## Checked
-- All 1 proof sheet(s) of fi-easy-fy6-12-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
-
-## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+batch delta review: the only change is the stage-1 paragraph break (knowns, then "Kysytään ..." as its own paragraph); read the diff and opened the fy6-10 and fy6-16 example-390 captures (the same stage pattern, current for this hash): the break reads naturally, no one-word orphan, spacing even, nothing clipped.

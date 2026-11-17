@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4e028df1586f0c55
+CONTENT-HASH: fcd2f4b3d829db74
+
 ## Blocking
 
 ## Polish
+- The photo caption (edge travels farther than near the axle) states Ennusta 2's answer in the lesson text; fine if the text follows the inquiry, otherwise cut that clause.
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+batch delta review (round 2): round-1 finding resolved: Eetu sentence and teaser gone, radius 1,5 m differs from Ennusta 2 (1,0/2,0 m), feedback says nothing of time or speed; circumference is a real prior skill (pi r, diameter distractors).

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2a633435c63ab47d
+CONTENT-HASH: ad52fee825c47409
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-3 all languages: the data-table caption wraps in a narrow, cramped table box; widen the table or keep the caption on one line.
-- [Minor] fy6-3 solution: the Kaava stage mixes parts b) and c) in one paragraph; give each part's formula its own line. 'Kohta b)' also appears twice (Sijoitus and as its own stage).
+- [Minor] 3-23 Substitution: the break before (1) is fine, but 'Measuring arrangement:' runs on after the Variables sentence; the resistance chain is shown as R40 loose and R60/R80 grouped (shared mathlayout, not in this diff).
 
 ## Checked
-- Proof sheets en-fy6-3-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; capture open-exercises-L2 of fy6-3 opened.
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-6 and -7 (3-23 solution); diff read.
+- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

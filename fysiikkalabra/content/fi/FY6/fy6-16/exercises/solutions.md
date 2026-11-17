@@ -122,7 +122,15 @@
 ## fy6-16-L1-06
 **Kysytty:** mitä aseman kilowattiluku ja akun kilowattituntiluku kertovat.
 **Periaate:** Teho kertoo, kuinka nopeasti energiaa siirtyy, ja sen yksikkö on kilowatti. Energia saadaan kertomalla teho ajalla, $W = Pt$, joten sen yksikkö on kilowatti kertaa tunti eli kilowattitunti. Latausnopeus on siis tehoa ja akun koko energiaa.
-**Mallivastaus:** Aseman kilowattiluku kertoo latausnopeuden eli tehon, ja akun kilowattituntiluku kertoo, kuinka paljon energiaa akkuun mahtuu. Väite, jonka mukaan luvut ovat toisinpäin, on väärä, koska kilowattitunti on energian yksikkö eikä nopeutta voi mitata sillä. Väite, jonka mukaan yksiköt ovat sama asia, on väärä, koska kilowattitunti saadaan kertomalla kilowatti ajalla. Väite, jonka mukaan kilowatti on jännite ja kilowattitunti virta, on väärä, koska jännite mitataan voltteina ja virta ampeereina. Esimerkiksi $11\,\text{kW}$:n asema siirtää tunnissa $11\,\text{kWh}$.
+**Mallivastaus:** Aseman kilowattiluku kertoo latausnopeuden eli tehon, ja akun kilowattituntiluku kertoo, kuinka paljon energiaa akkuun mahtuu.
+
+Väite, jonka mukaan luvut ovat toisinpäin, on väärä, koska kilowattitunti on energian yksikkö eikä nopeutta voi mitata sillä.
+
+Väite, jonka mukaan yksiköt ovat sama asia, on väärä, koska kilowattitunti saadaan kertomalla kilowatti ajalla.
+
+Väite, jonka mukaan kilowatti on jännite ja kilowattitunti virta, on väärä, koska jännite mitataan voltteina ja virta ampeereina.
+
+Esimerkiksi $11\,\text{kW}$:n asema siirtää tunnissa $11\,\text{kWh}$.
 
 ## fy6-16-L1-07
 **Annettu:** teho $P = 7{,}4\,\text{kW}$, latausaika $t = 5{,}5\,\text{h}$

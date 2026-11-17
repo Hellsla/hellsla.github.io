@@ -276,7 +276,9 @@ Lampun jännite mitataan yleismittarilla kahdesti. Alueella $20\,\text{V}$ näyt
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Lukemat $U_{20} = 1{,}50\,\text{V}$ (resoluutio $r_{20} = 0{,}01\,\text{V}$) ja $U_2 = 1{,}500\,\text{V}$ (resoluutio $r_2 = 0{,}001\,\text{V}$), $p = 0{,}5\,\%$ ja $n = 2$. Kysytään virherajoja $\Delta U_{20}$ ja $\Delta U_2$.
+**Tunnetut ja kysytty.** Lukemat $U_{20} = 1{,}50\,\text{V}$ (resoluutio $r_{20} = 0{,}01\,\text{V}$) ja $U_2 = 1{,}500\,\text{V}$ (resoluutio $r_2 = 0{,}001\,\text{V}$), $p = 0{,}5\,\%$ ja $n = 2$.
+
+Kysytään virherajoja $\Delta U_{20}$ ja $\Delta U_2$.
 
 <!-- vaihe -->
 

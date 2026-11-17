@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 96d603d38bea9bcb
+CONTENT-HASH: e30ee82741c92408
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] proof sheet 1 #3: the row break leaves `v` alone on the first row and `= √…` on the next; readable, but `v = √…` on one row would be tidier.
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-12-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
-
-## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.

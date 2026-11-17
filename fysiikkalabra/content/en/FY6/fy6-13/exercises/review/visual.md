@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5c922b90294f7d20
+CONTENT-HASH: b6b4a1468e05b4b5
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] No Minors beyond the shared ones.
+- [Minor] No new Minors. Paragraph breaks in solutions.md fall at sentence boundaries; one idea per paragraph, no one-word paragraphs, no paragraph starts mid-thought.
 
 ## Checked
-- Proof sheets en-fy6-13-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- Delta (md-paragraphs only, solutions.md). Opened at 1280 px: open-exercises-1280-6 (13-6 split Principle/Model answer), open-exercises-L2-1280-8 (13-6 model answer, 13-17 Principle), open-exercises-L3-1280-6, -7 (13-23 safety paragraph split; 13-24 Principle and Given), -9 (end of card).
+- Spacing inside the solution card consistent (same gap between paragraphs as between labelled blocks); nothing clipped; formulas intact.
+- 390 px: no exercise captures exist for this part; the layout is the shared card, judged from the 1280 captures.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

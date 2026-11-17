@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 91486fc577656c02
+CONTENT-HASH: 5bbb06b345bfe92d
+
 ## Blocking
+None.
 
 ## Polish
-- lesson.md:263 — the paragraph has grown to about 170 words (house rule: about 120), and it adds the term "the vertical projection of the centre of mass", which the lesson never uses again — drop that appositive and start a new paragraph at "Toppling is rotation about an edge".
+- kertaus (paint can on the overhang, moment about the trestle edge) matches the hook and gives nothing away: the tipping point and the support forces are left open.
 
 ## Checked
-light delta review (teacher 2026-11-07): batch delta review of the support-area paragraph in context. "Support area" is defined clearly with a box and a chair, it matches the summary (line 517), and the inquiry's "base of the shelf" is still consistent because a shelf's base is its support area. The topple/slide distinction fits the figure. No numbers or symbols changed.
+batch delta review (queue 8j): kertaus matches hook, no Ennusta answer given; the other changes (numbers, reflow) read clearly.

@@ -255,7 +255,9 @@ Kylpyhuoneen sähköisen lattialämmityksen teho on $0{,}80\,\text{kW}$. Termost
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $P = 0{,}80\,\text{kW}$, käyttöaika $6\,\text{h}\ 15\,\text{min}$ vuorokaudessa, $30$ vuorokautta, hinta $a = 18\,\text{snt/kWh}$. Kysytään energiaa $E$ kilowattitunteina ja kustannusta $K$ euroina.
+**Tunnetut ja kysytty.** $P = 0{,}80\,\text{kW}$, käyttöaika $6\,\text{h}\ 15\,\text{min}$ vuorokaudessa, $30$ vuorokautta, hinta $a = 18\,\text{snt/kWh}$.
+
+Kysytään energiaa $E$ kilowattitunteina ja kustannusta $K$ euroina.
 
 <!-- vaihe -->
 

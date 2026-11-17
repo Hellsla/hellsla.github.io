@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 11b20da3afa8eb74
+CONTENT-HASH: fb41a3bf9daa9486
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none new
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-4-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-5 and -6 (4-21 solution with a), b), c) rows); diff read.
+- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

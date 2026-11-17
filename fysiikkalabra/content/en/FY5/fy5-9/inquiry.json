@@ -24,24 +24,20 @@
       "type": "choice",
       "title": "Recall: the harmonic force",
       "optional": true,
-      "prompt": "A body on a frictionless surface is attached to a spring with a spring constant of $40\\,\\text{N/m}$. The body is pulled $5.0\\,\\text{cm}$ to the right of the equilibrium position and held still. In which direction does the force of the spring on the body point, and how large is it?",
+      "prompt": "A child pulls the bird of the spring toy a little below its equilibrium position and holds it still. In which direction does the net force on the bird point just after the child lets go?",
       "choices": [
         {
-          "text": "To the left, towards the equilibrium position, $2.0\\,\\text{N}$.",
+          "text": "Upwards, towards the equilibrium position.",
           "correct": true,
-          "feedback": "Correct. The harmonic force is $F = -kx$: its magnitude is $$\\begin{aligned} kx &= 40\\,\\text{N/m} \\cdot 0.050\\,\\text{m} \\\\ &= 2.0\\,\\text{N} \\end{aligned}$$, and the minus sign tells us that it points against the displacement, that is, towards the equilibrium position (chapter *Spring force and spring energy*). Today we find out what kind of motion this force produces when the body is released."
+          "feedback": "Correct. At the equilibrium position the force of the spring and the weight of the bird cancel each other. Lower down the upward force of the spring is greater, so the net force points upwards, against the displacement. In the same way a horizontal spring always pulls a body towards the equilibrium position: the harmonic force is $F = -kx$ (chapter *Spring force and spring energy*). Today we find out what kind of motion this force produces when the body is released."
         },
         {
-          "text": "To the right, in the direction of the displacement, $2.0\\,\\text{N}$.",
-          "feedback": "The magnitude is right, but a stretched spring pulls the body back and does not push it further away. The force of the spring always points towards the equilibrium position, which is why the formula $F = -kx$ has a minus sign."
+          "text": "Downwards, in the direction of the displacement.",
+          "feedback": "The spring does not take the bird further from the equilibrium position but back towards it. Lower down the upward force of the spring is greater than the weight of the bird, so the net force points upwards. That is why the formula $F = -kx$ has a minus sign."
         },
         {
-          "text": "To the left, $200\\,\\text{N}$.",
-          "feedback": "The direction is right, but the displacement was substituted in centimetres. The unit of the spring constant is $\\text{N/m}$, so the displacement must be converted to metres: $5.0\\,\\text{cm} = 0.050\\,\\text{m}$, and the force is $2.0\\,\\text{N}$."
-        },
-        {
-          "text": "There is no force, because the body is at rest.",
-          "feedback": "The body is at rest because a hand holds it in place: the force of the hand and the force of the spring cancel each other. A stretched spring pulls the body all the time, and this very force sets it moving when the hand lets go."
+          "text": "The net force is zero, because the bird is at rest when it is let go.",
+          "feedback": "The bird is at rest only as long as the child holds it in place: the force of the hand, the force of the spring and the weight cancel each other. When the hand lets go, the force of the spring and the weight remain, and their sum points upwards. This very force sets the bird moving."
         }
       ]
     },

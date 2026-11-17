@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ccb98e9a17ea30ff
+CONTENT-HASH: 990a1684173dd0c7
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-9 solution: Kohta D) is one paragraph well over 120 words; its first sentence is stiff; split at the two instructions.
+- none
 
 ## Checked
-- Proof sheets en-fy6-9-exercises-* (all, every numbered formula, opened side by side with the other language).
-- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
-- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
-- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
+- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
+- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

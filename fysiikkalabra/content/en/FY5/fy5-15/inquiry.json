@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Review: properties of sound",
       "optional": true,
-      "prompt": "A guitar string sounds first quietly and then loudly at the same pitch. What changes in the sound?",
+      "prompt": "A loudspeaker on the concert stage plays the same note first quietly and then loudly. What changes in the sound?",
       "choices": [
         {
           "text": "The amplitude of the sound wave, that is, the size of the pressure variation in the air, increases.",

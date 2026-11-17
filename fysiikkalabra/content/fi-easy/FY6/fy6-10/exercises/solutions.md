@@ -121,7 +121,9 @@
 ## fy6-10-L1-06
 **Kysytty:** mikä väite sauvan ja villan varauksista hieromisen jälkeen on oikein
 **Periaate:** Varaus säilyy. Hierottaessa elektroneja siirtyy kappaleesta toiseen, mutta niitä ei synny eikä katoa. Neutraalien kappaleiden yhteinen varaus on alussa nolla. Sen on oltava nolla myös hieromisen jälkeen. Sauva on saanut ylimääräisiä elektroneja ja on negatiivinen. Villa on menettänyt yhtä monta elektronia ja on positiivinen.
-**Mallivastaus:** Oikea väite on se, jonka mukaan villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan. Väite, jonka mukaan villa jäisi neutraaliksi, on väärä. Sauvan saamat elektronit eivät synny tyhjästä. Väite lämpönä katoavasta varauksesta on väärä. Varaus ei muutu lämmöksi vaan säilyy. Väite, jonka mukaan myös villa olisi negatiivinen, on väärä. Molemmat kappaleet eivät voi saada elektroneja, ellei niitä tule jostain.
+**Mallivastaus:** Oikea väite on se, jonka mukaan villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan. Väite, jonka mukaan villa jäisi neutraaliksi, on väärä. Sauvan saamat elektronit eivät synny tyhjästä. Väite lämpönä katoavasta varauksesta on väärä.
+
+Varaus ei muutu lämmöksi vaan säilyy. Väite, jonka mukaan myös villa olisi negatiivinen, on väärä. Molemmat kappaleet eivät voi saada elektroneja, ellei niitä tule jostain.
 
 ## fy6-10-L1-07
 **Kysytty:** mitä sähköiselle voimalle tapahtuu, kun varausten etäisyys kaksinkertaistetaan
@@ -142,7 +144,11 @@
 **Annettu:** taulukon mittaukset $F$ etäisyyksillä $r = 2{,}0$; $3{,}0$; $4{,}0$; $5{,}0$; $6{,}0$ ja $8{,}0\,\text{cm}$. Pallojen varaukset ovat yhtä suuret. $$k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
 **Kysytty:** a) kuvaajan avulla osoitus, että $F \propto r^{-2}$; b) kummankin pallon varaus $q$ nanocoulombeina
 **Periaate:** Jos Coulombin laki pätee, $F = k\,\dfrac{q^2}{r^2} = k q^2 \cdot \dfrac{1}{r^2}$. Voima on siis suoraan verrannollinen suureeseen $1 : r^2$. Silloin pisteet $(1 : r^2,\, F)$ ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on $k q^2$.
-**Kuvaajan lukeminen:** Suureet $1 : r^2$ ovat $2500$; $1111$; $625$; $400$; $278$ ja $156\,\text{m}^{-2}$. Pisteet $(1 : r^2,\, F)$ ovat hajonnan puitteissa origon kautta kulkevalla suoralla. Siksi $F$ on kääntäen verrannollinen etäisyyden neliöön. Suora pakotetaan kulkemaan origon kautta. Kun $r \to \infty$, niin $1 : r^2 \to 0$, ja Coulombin lain mukaan myös $F \to 0$. Kulmakerrointa ei lueta kahdesta piirretyn suoran pisteestä. Se on pienimmän neliösumman sovitus origon kautta (suora, joka on mahdollisimman lähellä kaikkia pisteitä): $s = \sum xy : \sum x^2$, missä $x = 1 : r^2$ ja $y = F$. Tulos on $s = 5{,}50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$.
+**Kuvaajan lukeminen:** Suureet $1 : r^2$ ovat $2500$; $1111$; $625$; $400$; $278$ ja $156\,\text{m}^{-2}$. Pisteet $(1 : r^2,\, F)$ ovat hajonnan puitteissa origon kautta kulkevalla suoralla. Siksi $F$ on kääntäen verrannollinen etäisyyden neliöön. Suora pakotetaan kulkemaan origon kautta.
+
+Kun $r \to \infty$, niin $1 : r^2 \to 0$, ja Coulombin lain mukaan myös $F \to 0$. Kulmakerrointa ei lueta kahdesta piirretyn suoran pisteestä.
+
+Se on pienimmän neliösumman sovitus origon kautta (suora, joka on mahdollisimman lähellä kaikkia pisteitä): $s = \sum xy : \sum x^2$, missä $x = 1 : r^2$ ja $y = F$. Tulos on $s = 5{,}50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$.
 **Kaava:** $s = k q^2$, josta $q = \sqrt{\dfrac{s}{k}}$
 **Muunnokset:** Voimat newtoneina: $F = 13{,}6\,\text{mN} = 13{,}6 \cdot 10^{-3}\,\text{N}$ jne. Etäisyydet metreinä: $r = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ jne. Lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $q = \sqrt{\dfrac{5{,}50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2}{8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = \sqrt{6{,}12 \cdot 10^{-16}\,\text{C}^2} = 2{,}47 \cdot 10^{-8}\,\text{C} = 24{,}7\,\text{nC}$
@@ -190,7 +196,11 @@ Varausten tulo kaksinkertaistuu. Se kaksinkertaistaa voiman. Etäisyyden neliö 
 ## fy6-10-L3-04
 **Annettu:** $q_1 = +6{,}0\,\text{nC}$ kohdassa $x = 0$, $q_2 = -2{,}5\,\text{nC}$ kohdassa $d = 12\,\text{cm}$. Positiivinen koevaraus $q$
 **Kysytty:** a) millä alueilla kokonaisvoima voi olla nolla; b) nollakohta $x$ senttimetreinä kohdasta $x = 0$; c) miksi tulos ei riipu koevarauksen suuruudesta
-**Periaate:** Positiivinen $q_1$ hylkii positiivista koevarausta pois itsestään. Negatiivinen $q_2$ vetää sitä puoleensa. Kokonaisvoima on nolla vain, jos voimat osoittavat vastakkaisiin suuntiin ja ovat yhtä suuret. Suunnat ratkaisevat alueen. Välillä $0 < x < 12\,\text{cm}$ molemmat voimat osoittavat positiiviseen $x$-suuntaan ($q_1$ työntää koevarausta kohti varausta $q_2$ ja $q_2$ vetää sitä puoleensa). Voimat vahvistavat toisiaan, joten nollakohtaa ei ole. Alueella $x < 0$ voimat ovat vastakkaiset. Koevaraus on kuitenkin lähempänä suurempaa varausta $q_1$, joten sen voima on aina suurempi. Alueella $x > 12\,\text{cm}$ voimat ovat vastakkaiset ja koevaraus on lähempänä pienempää varausta $q_2$. Silloin voimat voivat olla yhtä suuret. Nollakohta on siis varauksen $q_2$ takana.
+**Periaate:** Positiivinen $q_1$ hylkii positiivista koevarausta pois itsestään. Negatiivinen $q_2$ vetää sitä puoleensa. Kokonaisvoima on nolla vain, jos voimat osoittavat vastakkaisiin suuntiin ja ovat yhtä suuret. Suunnat ratkaisevat alueen.
+
+Välillä $0 < x < 12\,\text{cm}$ molemmat voimat osoittavat positiiviseen $x$-suuntaan ($q_1$ työntää koevarausta kohti varausta $q_2$ ja $q_2$ vetää sitä puoleensa). Voimat vahvistavat toisiaan, joten nollakohtaa ei ole. Alueella $x < 0$ voimat ovat vastakkaiset.
+
+Koevaraus on kuitenkin lähempänä suurempaa varausta $q_1$, joten sen voima on aina suurempi. Alueella $x > 12\,\text{cm}$ voimat ovat vastakkaiset ja koevaraus on lähempänä pienempää varausta $q_2$. Silloin voimat voivat olla yhtä suuret. Nollakohta on siis varauksen $q_2$ takana.
 **Kaava:** $k\,\dfrac{\lvert q_1 \rvert q}{x^2} = k\,\dfrac{\lvert q_2 \rvert q}{(x - d)^2}$, josta $\dfrac{x}{x - d} = \sqrt{\dfrac{\lvert q_1 \rvert}{\lvert q_2 \rvert}} = s$ ja $x = \dfrac{d\,s}{s - 1}$
 **Muunnokset:** Ei tarvita: varausten suhteessa nanocoulombit supistuvat, ja kohta saadaan senttimetreinä.
 **Sijoitus:** $s = \sqrt{\dfrac{6{,}0\,\text{nC}}{2{,}5\,\text{nC}}} = \sqrt{2{,}4} = 1{,}549$ ja $x = \dfrac{12\,\text{cm} \cdot 1{,}549}{1{,}549 - 1} = 33{,}85\,\text{cm}$
@@ -200,11 +210,15 @@ Varausten tulo kaksinkertaistuu. Se kaksinkertaistaa voiman. Etäisyyden neliö 
 ## fy6-10-L3-05
 **Annettu:** $m = 0{,}80\,\text{g}$, langan pituus $L = 0{,}30\,\text{m}$, kulma $\theta = 10\,{}^\circ$, $g = 9{,}81\,\text{m/s}^2$, $$k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$. Varaukset ovat yhtä suuret
 **Kysytty:** a) voimakuva ja $F = mg\tan\theta$; b) pallojen etäisyys $r$ ja varaus $q$ nanocoulombeina; c) miksi kummankin langan kulma on edelleen yhtä suuri, kun toisen pallon varaus kolminkertaistuu ja kulma muuttuu
-**Periaate:** Palloon vaikuttavat kolme voimaa. Paino $\overline{G}$ osoittaa alaspäin. Langan jännitysvoima $\overline{T}$ osoittaa pitkin lankaa ylöspäin kohti ripustuspistettä. Sähköinen hylkimisvoima $\overline{F}$ osoittaa vaakasuoraan poispäin toisesta pallosta. Tasapainossa pallon kiihtyvyys on nolla, joten voimat kumoavat toisensa. Pystysuunnassa $T\cos\theta = mg$ ja vaakasuunnassa $T\sin\theta = F$. Jakamalla yhtälöt saadaan $F = mg\tan\theta$. Langat ja pallot muodostavat tasakylkisen kolmion, jonka huippukulman puolikas on $\theta$. Etäisyys on siis $r = 2L\sin\theta$. Varaukset ovat yhtä suuret, joten Coulombin laista $F = k q^2 : r^2$.
+**Periaate:** Palloon vaikuttavat kolme voimaa. Paino $\overline{G}$ osoittaa alaspäin. Langan jännitysvoima $\overline{T}$ osoittaa pitkin lankaa ylöspäin kohti ripustuspistettä. Sähköinen hylkimisvoima $\overline{F}$ osoittaa vaakasuoraan poispäin toisesta pallosta. Tasapainossa pallon kiihtyvyys on nolla, joten voimat kumoavat toisensa. Pystysuunnassa $T\cos\theta = mg$ ja vaakasuunnassa $T\sin\theta = F$.
+
+Jakamalla yhtälöt saadaan $F = mg\tan\theta$. Langat ja pallot muodostavat tasakylkisen kolmion, jonka huippukulman puolikas on $\theta$. Etäisyys on siis $r = 2L\sin\theta$. Varaukset ovat yhtä suuret, joten Coulombin laista $F = k q^2 : r^2$.
 **Kaava:** $F = mg\tan\theta$, $r = 2L\sin\theta$ ja $F = k\,\dfrac{q^2}{r^2}$, josta $q = r\sqrt{\dfrac{F}{k}}$
 **Muunnokset:** $m = 0{,}80\,\text{g} = 0{,}80 \cdot 0{,}001\,\text{kg} = 8{,}0 \cdot 10^{-4}\,\text{kg}$. Lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $$\begin{aligned} F &= 8{,}0 \cdot 10^{-4}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot \tan 10\,{}^\circ \\ &= 1{,}384 \cdot 10^{-3}\,\text{N} \end{aligned}$$ ja $r = 2 \cdot 0{,}30\,\text{m} \cdot \sin 10\,{}^\circ = 0{,}1042\,\text{m}$, joten $q = 0{,}1042\,\text{m} \cdot \sqrt{\dfrac{1{,}384 \cdot 10^{-3}\,\text{N}}{8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = 0{,}1042\,\text{m} \cdot 3{,}924 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 4{,}088 \cdot 10^{-8}\,\text{C} = 40{,}9\,\text{nC}$
-**Vastaus:** $41\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Pallojen etäisyys on $0{,}10\,\text{m}$. c) Sähköiset voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret, vaikka varaukset olisivat eri suuret. Massat ovat samat, joten ehto $\tan\theta = F : (mg)$ antaa kummallekin pallolle saman kulman. Kulma ei pysy $10\,{}^\circ$:ssa vaan kasvaa, koska voima $F$ kasvaa. Langat ovat silti keskenään yhtä suuressa kulmassa pystysuoraan nähden.
+**Vastaus:** $41\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja kulmassa. Pallojen etäisyys on $0{,}10\,\text{m}$.
+
+c) Sähköiset voimat ovat voima ja vastavoima, joten ne ovat yhtä suuret, vaikka varaukset olisivat eri suuret. Massat ovat samat, joten ehto $\tan\theta = F : (mg)$ antaa kummallekin pallolle saman kulman. Kulma ei pysy $10\,{}^\circ$:ssa vaan kasvaa, koska voima $F$ kasvaa. Langat ovat silti keskenään yhtä suuressa kulmassa pystysuoraan nähden.
 **Järkevyys:** Sähköinen voima $1{,}38\,\text{mN}$ on pieni verrattuna painoon $mg = 7{,}85\,\text{mN}$. Myös $\tan 10\,{}^\circ = 0{,}176$ on sama suhde, joten kulma on pieni. Takaisinsijoitus Coulombin lakiin antaa $1{,}38\,\text{mN}$.
 
 ## fy6-10-L1-09

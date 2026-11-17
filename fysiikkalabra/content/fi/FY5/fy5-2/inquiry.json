@@ -24,20 +24,20 @@
    "type": "choice",
    "title": "Kertaa: voiman momentti",
    "optional": true,
-   "prompt": "Ovea työnnetään kahvasta voimalla $20\\,\\text{N}$ kohtisuoraan ovea vastaan. Kahva on $0{,}80\\,\\text{m}$:n päässä saranoista. Kuinka suuri on voiman momentti saranoiden suhteen?",
+   "prompt": "Maalipurkin paino on $50\\,\\text{N}$. Purkki on vaakasuoran lankun ulokkeella $0{,}80\\,\\text{m}$:n päässä sen pukin reunasta, jonka varassa lankku lepää. Kuinka suuri on purkin painon momentti pukin reunan suhteen?",
    "choices": [
     {
-     "text": "$16\\,\\text{Nm}$, koska momentti on voima kertaa voiman varsi.",
+     "text": "$40\\,\\text{Nm}$, koska momentti on voima kertaa voiman varsi.",
      "correct": true,
-     "feedback": "Oikein. $$\\begin{aligned} M &= Fr \\\\ &= 20\\,\\text{N} \\cdot 0{,}80\\,\\text{m} \\\\ &= 16\\,\\text{Nm} \\end{aligned}$$, koska voima on kohtisuorassa ovea vastaan ja varsi on etäisyys saranoista (luku *Momentti: voiman kiertävä vaikutus*). Tänään momentteja lasketaan kappaleelle, joka ei kierry lainkaan."
+     "feedback": "Oikein. $$\\begin{aligned} M &= Fr \\\\ &= 50\\,\\text{N} \\cdot 0{,}80\\,\\text{m} \\\\ &= 40\\,\\text{Nm} \\end{aligned}$$, koska paino on pystysuora ja lankku vaakasuora, joten varsi on purkin etäisyys pukin reunasta (luku *Momentti: voiman kiertävä vaikutus*). Tänään selvitetään, milloin momentit pitävät lankun paikallaan ja milloin se kaatuu."
     },
     {
-     "text": "$25\\,\\text{Nm}$, koska voima jaetaan etäisyydellä saranoista.",
-     "feedback": "Momentti on voiman ja varren tulo, ei osamäärä: $M = Fr$. Kauempana saranoista sama voima kiertää ovea enemmän, joten momentti kasvaa etäisyyden kasvaessa. Oikea arvo on $16\\,\\text{Nm}$."
+     "text": "noin $63\\,\\text{Nm}$, koska voima jaetaan etäisyydellä pukin reunasta.",
+     "feedback": "Momentti on voiman ja varren tulo, ei osamäärä: $M = Fr$. Kauempana pukin reunasta sama paino kiertää lankkua enemmän, joten momentti kasvaa etäisyyden kasvaessa. Oikea arvo on $40\\,\\text{Nm}$."
     },
     {
-     "text": "$20\\,\\text{Nm}$, koska momentti on yhtä suuri kuin voima.",
-     "feedback": "Momentti riippuu myös siitä, kuinka kaukana kiertoakselista voima vaikuttaa. Sama $20\\,\\text{N}$:n voima aivan saranan vieressä ei juuri kierrä ovea. Momentti on $M = Fr = 16\\,\\text{Nm}$ (luku *Momentti: voiman kiertävä vaikutus*)."
+     "text": "$50\\,\\text{Nm}$, koska momentti on yhtä suuri kuin voima.",
+     "feedback": "Momentti riippuu myös siitä, kuinka kaukana kiertoakselista voima vaikuttaa. Sama purkki aivan pukin reunan kohdalla ei kierrä lankkua lainkaan. Momentti on $M = Fr = 40\\,\\text{Nm}$ (luku *Momentti: voiman kiertävä vaikutus*)."
     }
    ]
   },

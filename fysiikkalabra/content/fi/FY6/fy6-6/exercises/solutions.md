@@ -163,7 +163,13 @@
 **Muunnokset:** Ei tarvita: $\text{V} \cdot \text{A} = \text{W}$.
 **Sijoitus:** $P_1 = 3{,}0\,\text{V} \cdot 0{,}254\,\text{A} = 0{,}762\,\text{W}$ ja $P_2 = 6{,}0\,\text{V} \cdot 0{,}346\,\text{A} = 2{,}076\,\text{W}$, joten $p = \dfrac{2{,}076\,\text{W} - 0{,}762\,\text{W}}{0{,}762\,\text{W}} \cdot 100\,\% = 172\,\%$
 **Vastaus:** $172\,\%$, pyöristettynä $1{,}7 \cdot 10^{2}\,\%$ eli noin $170\,\%$, kaksi merkitsevää numeroa kuten virran ja jännitteen mittauksissa.
-**Järkevyys:** Muiden rivien tehot ovat $0{,}049\,\text{W}$, $0{,}15\,\text{W}$, $0{,}424\,\text{W}$, $1{,}15\,\text{W}$ ja $1{,}59\,\text{W}$, ja teho kasvaa jokaisella rivillä. Teho ei kasva jännitteen neliönä, koska lampun resistanssi ei ole vakio: jännitteellä $3{,}0\,\text{V}$ se on $3{,}0\,\text{V} : 0{,}254\,\text{A} = 11{,}8\,\Omega$ ja jännitteellä $6{,}0\,\text{V}$ jo $6{,}0\,\text{V} : 0{,}346\,\text{A} = 17{,}3\,\Omega$. Lamppu kuumenee, hehkulangan resistanssi kasvaa, ja virta kasvaa vähemmän kuin jännite. Siksi teho kasvaa vain $2{,}7$-kertaiseksi eikä $4$-kertaiseksi, kuten vakioresistanssilla $P = U^2 : R$ kasvaisi ($300\,\%$).
+**Järkevyys:** Muiden rivien tehot ovat $0{,}049\,\text{W}$, $0{,}15\,\text{W}$, $0{,}424\,\text{W}$, $1{,}15\,\text{W}$ ja $1{,}59\,\text{W}$, ja teho kasvaa jokaisella rivillä.
+
+Teho ei kasva jännitteen neliönä, koska lampun resistanssi ei ole vakio: jännitteellä $3{,}0\,\text{V}$ se on $3{,}0\,\text{V} : 0{,}254\,\text{A} = 11{,}8\,\Omega$ ja jännitteellä $6{,}0\,\text{V}$ jo $6{,}0\,\text{V} : 0{,}346\,\text{A} = 17{,}3\,\Omega$.
+
+Lamppu kuumenee, hehkulangan resistanssi kasvaa, ja virta kasvaa vähemmän kuin jännite.
+
+Siksi teho kasvaa vain $2{,}7$-kertaiseksi eikä $4$-kertaiseksi, kuten vakioresistanssilla $P = U^2 : R$ kasvaisi ($300\,\%$).
 
 ## fy6-6-L2-07
 **Annettu:** sarjassa lamppu A: $U_\text{A} = 9{,}0\,\text{V}$, lamppu B: $U_\text{B} = 3{,}0\,\text{V}$, virta $I = 0{,}50\,\text{A}$ molemmissa
@@ -182,7 +188,15 @@
 **Kaava:** $R_1 = \dfrac{U^2}{P_1}$, $R_2 = \dfrac{U^2}{P_\text{s}} - R_1$, $P' = \dfrac{U'^2}{R}$
 **Muunnokset:** $U' = 1{,}10 \cdot 230\,\text{V} = 253\,\text{V}$ ja $1{,}4\,\text{kW} = 1400\,\text{W}$, $0{,}75\,\text{kW} = 750\,\text{W}$
 **Sijoitus:** $R_1 = \dfrac{(230\,\text{V})^2}{1100\,\text{W}} = 48{,}09\,\Omega$ ja $R_2 = \dfrac{(230\,\text{V})^2}{420\,\text{W}} - 48{,}09\,\Omega = 125{,}95\,\Omega - 48{,}09\,\Omega = 77{,}86\,\Omega$. Jännitteellä $253\,\text{V}$: $P_1' = \dfrac{(253\,\text{V})^2}{48{,}09\,\Omega} = 1331\,\text{W}$ ja $P_2' = \dfrac{(253\,\text{V})^2}{77{,}86\,\Omega} = 822\,\text{W}$
-**Vastaus:** $822\,\text{W}$ vastuksessa $R_2$ (pyöristettynä $8{,}2 \cdot 10^{2}\,\text{W}$). Kohdan a) resistanssit ovat $R_1 = 48{,}1\,\Omega$ ja $R_2 = 77{,}9\,\Omega$. Ylikuormittuva vastus on siis $R_2$. Pyöristetyssä tuloksessa on kaksi merkitsevää numeroa kuten sarjakytkennän tehossa $420\,\text{W}$. Se ylittää sallitun tehon $750\,\text{W}$, kun taas vastuksen $R_1$ teho $1331\,\text{W}$ jää alle rajan $1400\,\text{W}$. Vastuksessa $R_1$ muuttuu enemmän energiaa, mutta teho kasvaa kummassakin yhtä paljon ($1{,}10^2 = 1{,}21$-kertaiseksi), ja vastus $R_2$ on rajallaan jo valmiiksi: sen teho on $679\,\text{W} : 750\,\text{W} = 91\,\%$ sallitusta, vastuksen $R_1$ vain $79\,\%$.
+**Vastaus:** $822\,\text{W}$ vastuksessa $R_2$ (pyöristettynä $8{,}2 \cdot 10^{2}\,\text{W}$).
+
+Kohdan a) resistanssit ovat $R_1 = 48{,}1\,\Omega$ ja $R_2 = 77{,}9\,\Omega$.
+
+Ylikuormittuva vastus on siis $R_2$.
+
+Pyöristetyssä tuloksessa on kaksi merkitsevää numeroa kuten sarjakytkennän tehossa $420\,\text{W}$. Se ylittää sallitun tehon $750\,\text{W}$, kun taas vastuksen $R_1$ teho $1331\,\text{W}$ jää alle rajan $1400\,\text{W}$.
+
+Vastuksessa $R_1$ muuttuu enemmän energiaa, mutta teho kasvaa kummassakin yhtä paljon ($1{,}10^2 = 1{,}21$-kertaiseksi), ja vastus $R_2$ on rajallaan jo valmiiksi: sen teho on $679\,\text{W} : 750\,\text{W} = 91\,\%$ sallitusta, vastuksen $R_1$ vain $79\,\%$.
 **Järkevyys:** Rinnankytkennän mittaus täsmää: $R_2$:n teho jännitteellä $230\,\text{V}$ on $$(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}$$, joten $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. Tehon kasvukerroin tarkistuu: $679\,\text{W} \cdot 1{,}21 = 822\,\text{W}$ ja $1100\,\text{W} \cdot 1{,}21 = 1331\,\text{W}$.
 
 ## fy6-6-L3-05
@@ -192,7 +206,15 @@
 **Kaava:** $R_\text{L} = \dfrac{U_\text{n}^2}{P_\text{n}}$, $I = \dfrac{U}{R_\text{L} + R_\text{j}}$, $P_\text{j} = R_\text{j} I^2$
 **Muunnokset:** $P_\text{n} = 2{,}0\,\text{kW} = 2000\,\text{W}$
 **Sijoitus:** $R_\text{L} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26{,}45\,\Omega$. Ohut johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 2{,}4\,\Omega} = 7{,}97\,\text{A}$ ja $P_\text{o} = 2{,}4\,\Omega \cdot (7{,}97\,\text{A})^2 = 152{,}5\,\text{W}$. Paksu johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 0{,}71\,\Omega} = 8{,}47\,\text{A}$ ja $P_\text{p} = 0{,}71\,\Omega \cdot (8{,}47\,\text{A})^2 = 50{,}9\,\text{W}$
-**Vastaus:** $152{,}5\,\text{W}$, pyöristettynä $1{,}5 \cdot 10^{2}\,\text{W}$ eli noin $150\,\text{W}$ ohuessa johdossa ja $51\,\text{W}$ paksussa, kaksi merkitsevää numeroa kuten resistanssissa $2{,}4\,\Omega$. Virta on molemmilla johdoilla lähes sama, $7{,}97\,\text{A}$ ja $8{,}47\,\text{A}$, joten johdon teho $RI^2$ riippuu lähinnä sen resistanssista: ohuen johdon resistanssi on noin $3{,}4$-kertainen ja teho noin kolminkertainen. Rullalla oleva ohut johto jäähtyy huonosti, joten se lämpenee. Kuormitettu johtokela kannattaa kelata auki, eikä johdon sallittua virtaa saa ylittää. Paksussa johdossa muuttuu vähemmän energiaa, joten se pysyy viileämpänä.
+**Vastaus:** $152{,}5\,\text{W}$, pyöristettynä $1{,}5 \cdot 10^{2}\,\text{W}$ eli noin $150\,\text{W}$ ohuessa johdossa ja $51\,\text{W}$ paksussa, kaksi merkitsevää numeroa kuten resistanssissa $2{,}4\,\Omega$.
+
+Virta on molemmilla johdoilla lähes sama, $7{,}97\,\text{A}$ ja $8{,}47\,\text{A}$, joten johdon teho $RI^2$ riippuu lähinnä sen resistanssista: ohuen johdon resistanssi on noin $3{,}4$-kertainen ja teho noin kolminkertainen.
+
+Rullalla oleva ohut johto jäähtyy huonosti, joten se lämpenee.
+
+Kuormitettu johtokela kannattaa kelata auki, eikä johdon sallittua virtaa saa ylittää.
+
+Paksussa johdossa muuttuu vähemmän energiaa, joten se pysyy viileämpänä.
 **Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $$\begin{aligned} &26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 \\ &= 1681\,\text{W} \end{aligned}$$, ja yhdessä johdon kanssa $$\begin{aligned} &1681\,\text{W} + 152{,}5\,\text{W} \\ &= 1834\,\text{W} \end{aligned}$$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
 
 ## fy6-6-L2-08

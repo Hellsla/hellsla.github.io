@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 701c06f82c5c9f11
+CONTENT-HASH: 1bc534bce89f0fd5
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- Hook is why dB; kertaus (quiet vs loud same note, amplitude) is the same speaker/loudness scene, so acceptable; Ennusta 1/2 not disclosed. Distractor 'ääni etenee nopeammin' is a real misconception.
 
 ## Checked
-Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.
+batch delta review: kertaus on loudness at a speaker; no Ennusta answer disclosed; numbers and answers in the diff consistent with answers.py and solutions (not recomputed).

@@ -634,7 +634,9 @@ Revontulielektroni lähtee lähes levosta ja kulkee kohti suurempaa potentiaalia
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $U = 3{,}0\,\text{kV}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$ ja alkunopeus nolla. Kysytään liike-energiaa $E_\text{k}$ elektronivoltteina ja jouleina sekä nopeutta $v$.
+**Tunnetut ja kysytty.** $U = 3{,}0\,\text{kV}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$ ja alkunopeus nolla.
+
+Kysytään liike-energiaa $E_\text{k}$ elektronivoltteina ja jouleina sekä nopeutta $v$.
 
 <!-- vaihe -->
 

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b940733541290752
+CONTENT-HASH: b985b7a417d021ea
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] proof sheet 1 #5: `ΔK` stands alone on the first row, `=` on the next.
+- [Minor] No Minors from this delta; the new paragraph breaks fall at sentence boundaries, one thing per paragraph, no orphaned one-word paragraphs, no stage starts mid-thought.
 
 ## Checked
-- Delta (reflow, 5d), round 3. Opened all 2 proof sheet(s) fi-fy6-16-exercises-* and every numbered formula; all `fits`, breaks sensible.
+- Delta (md-paragraphs, solutions.md only): the diff read in full; captures opened: fy6-16-open-exercises-L2-1280-5 (solution card spacing at 1280).
+- Not opened: 390 px solution captures (none are made for open solutions; check_layout 360 px already passes in the packet).
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 84bf0587a8c78863
-Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
+CONTENT-HASH: 8e4c5b58f136d617
 
 ## Blocking
 - none
@@ -9,7 +8,10 @@ Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 - none
 
 ## Checked
-- Round 3. Opened proof sheet fi-koe-item-1 (both formulas); both `fits`, breaks sensible.
+- Delta review: the change since the last PASS is paragraph breaks in solutions.md (git diff origin/main, all hunks read).
+- contact-1, contact-2, contact-3, contact-6 (triage); page-390-10 (k1 h, i, j) and page-1280-5 (k1 a, b) at readable size; k3 d, k6 d and k7 d, e in the contact sheets.
+- Each break is one thought per paragraph, nothing starts mid-thought, no one-word paragraph, spacing inside the solution card even, nothing clipped at 390 or 1280 px.
+- Inline display `$$aligned$$` pieces (k1 e, f) keep their own line and render intact.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

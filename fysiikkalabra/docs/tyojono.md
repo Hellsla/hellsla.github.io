@@ -280,6 +280,14 @@ järkevää katkoa ei ole (kaksoispisteeseen päättyvä Sijoitus ennen display-
 ja fy4-8:ssa ilman kappaleväliä; muutama yhden virkkeen kappale, joka vain päättää edellisen ajatuksen. FY4:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py-muutosta kuin FY1:n ja FY2:n.
 
+FY6 tehty (claude/fy6-kappalejako): fy6-1…fy6-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy) ja
+esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`, Sovellassa ja kokeessa `carry-item`), ulkoasu delta PASS
+(kierros 2 niille 24 tehtäväsarjalle, joissa kierros 1 löysi katkoja kesken osien). Sääntö, jonka kierros 1 opetti: kun
+askeleessa on osamerkit a), b) … tai (1), (2), katko tulee osamerkin eteen, ei osan keskelle. Yhdeksi kappaleeksi jäivät
+askeleet, joiden vastausluvut ovat myöhemmissä osissa (answers_shown), ja muutama virkerajaton kohta. Polish (vain kirjattu):
+uusi kappale alkaa joskus pronominilla ("Se …"), jonka viittauskohde on edellisessä kappaleessa (fi-easy fy6-9…fy6-11,
+fy6-13, fy6-15; korjaus vaatisi sanamuodon muutoksen); en fy6-16:n kaapelivirtatehtävän Answer päättyy osamerkkiin "a)".
+
 FY5 tehty (claude/fy5-kappalejako): fy5-1…fy5-17 esimerkit ja ratkaisut kolmella kielellä, tiede ja pedagogiikka carry
 (`md-paragraphs`), ulkoasu delta PASS. fy5-2:n tehtävissä aiemman reflow'n rivit jäivät jakamatta (jako niissä antaisi
 tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastausluku on b)-kohdassa (fy5-2 L2-06,
@@ -382,7 +390,9 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
-Varattu: claude/fy4-pohdinta-kertaus (FY4)
+FY4 tehty (#647). Tila 2026-11-17: FY5 tehty (#661) paitsi **fy5-7, fy5-11 ja fy5-17** (avoimia; `docs/audits/2026-11-17-8j-FY5.md`): niiden korjaus
+on kirjoitettu, mutta difflib-kohdistus → FULL (muuttumaton `"correct": true` -rivi luokitellaan `experiment`-muutokseksi),
+tarvitsee luokittelijan korjauksen tai opettajan budjettiluvan. Muut kurssit (FY1–FY3, FY6–FY8) vielä tekemättä.
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
 paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
