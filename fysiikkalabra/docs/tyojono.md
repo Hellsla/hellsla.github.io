@@ -13,18 +13,9 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c).
-Osat 0d–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
+Osat 0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
-
-### 0d. CI:n selain pilvi-istuntoihin
-Usea kurssi-PR jätti rivejä, jotka "vain CI:n Chromium leikkaa" (FY4, FY7, FY2), ja ne löytyivät vasta CI-kierroksella.
-Pilvi-istunnossa Docker on asennettu, mutta sen palvelu ei ole käynnissä (tarkistettu 2026-11-17), joten
-`ci_env.py run` ja `check_lesson.py`:n layout-tarkistus putoavat istunnon omaan Chromiumiin. Selvitä ja korjaa: joko
-Docker-palvelu käyntiin ympäristön setup-skriptissä, tai `requirements-ci.txt`:n Playwright-versio, sen Chromium ja
-CI-kuvan fontit asennetaan setup-skriptissä ja `ci_env.py` tunnistaa ne samaksi selaimeksi. Hyväksymisehto: fy2-3
-360 px:llä antaa istunnossa saman määrän leikkautuvia kaavoja kuin CI (13, ei 3; `docs/QUALITY.md` aukko 2).
-Ympäristön muutos on opettajan hyväksyttävä.
 
 ### 0e. Ulkoasun delta vain suomeksi, kun muutos on kielineutraali
 Opettajan päätös 2026-11-17 (hyväksytty jonoon; sääntöteksti hyväksytään yhdistämällä PR). Kun muutos on esitystapaluokkaa
@@ -76,8 +67,8 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
-lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674); tila: `python scripts/exercise_bank.py FY8`.
-Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-10…fy8-16 ja FY9.
+lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678); tila: `python scripts/exercise_bank.py FY8`.
+Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-11…fy8-16 ja FY9.
 Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä
 versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 

@@ -19,6 +19,12 @@ Runs, in this order, what /lesson, /exercises and /quality-audit used to run one
 --finish instead regenerates the files of step 1, runs reviews.py verify (as CI does; a few minutes), prints each id's
 status in every language and rebuilds site/ (build.py --all, build.py).
 
+Before anything else it checks the environment (work queue 0d): a shallow clone (a cloud session clones with limited
+history, and reviews.py scope then answers FULL for "not in git history") is deepened with git fetch --unshallow, and a
+missing Python package (markdown, numpy, playwright) stops the round with the install command, pip install -r
+requirements-ci.txt. The browser checks themselves run in CI's image through ci_env.py, so a session's own Playwright
+version (the cloud image has 1.63, the repository pins 1.65) only warns.
+
 Prints a short summary: the failing check lines only, each reviewer's mode, the carries recorded, the packet paths and
 the generated files that changed. Every command's full output is in preview/round.log. --lang limits the languages
 (default: every language that has the lesson). Exit status 1 if a check, a step or verify failed."""
@@ -82,8 +88,44 @@ def parse_carry(lines):
     return res, state
 
 
+def shallow():
+    r = subprocess.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT, capture_output=True, text=True)
+    return r.stdout.strip() == "true"
+
+
+def missing_packages():
+    """The packages of requirements-ci.txt that this Python cannot import, and a version warning for playwright."""
+    import importlib.util, importlib.metadata as md
+    req = (ROOT / "requirements-ci.txt").read_text() if (ROOT / "requirements-ci.txt").is_file() else ""
+    names = [m.group(1) for m in re.finditer(r"^([A-Za-z0-9_.-]+)", req, re.M)]
+    gone = [n for n in names if importlib.util.find_spec(n) is None]
+    warn = []
+    pin = re.search(r"^playwright==([0-9.]+)", req, re.M)
+    if pin and "playwright" not in gone:
+        have = md.version("playwright")
+        if have != pin.group(1): warn.append(f"playwright {have} here, requirements-ci.txt pins {pin.group(1)}: browser checks run in CI's image (ci_env.py), pip install -r requirements-ci.txt matches the session")
+    return gone, warn
+
+
+def preflight():
+    """0 when the round can start; 1 with a message that says what to do."""
+    gone, warn = missing_packages()
+    for w in warn: print("note: " + w)
+    if gone:
+        print(f"round.py: missing Python package(s): {', '.join(gone)}. Run: pip install -r requirements-ci.txt (in fysiikkalabra/)")
+        return 1
+    if shallow():
+        print("shallow clone: reviews.py scope would answer FULL for a version not in the history; running git fetch --unshallow", flush=True)
+        r = subprocess.run(["git", "fetch", "--unshallow", "origin"], cwd=ROOT, capture_output=True, text=True)
+        if r.returncode != 0 or shallow():
+            print("round.py: git fetch --unshallow failed" + (": " + r.stderr.strip().splitlines()[-1] if r.stderr.strip() else "") + ". Run it yourself before the round")
+            return 1
+    return 0
+
+
 def main(a):
     if not a or a[0].startswith("-"): sys.exit(__doc__)
+    if preflight(): return 1
     ids = a[0].split(",")
     only = a[a.index("--lang") + 1].split(",") if "--lang" in a else []
     parts = ["exercises"] if "--exercises" in a else ["lesson", "exercises"]
