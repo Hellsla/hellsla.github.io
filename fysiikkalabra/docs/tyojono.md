@@ -288,6 +288,7 @@ esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
 FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
 esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
 kappalejako vaatisi täydet tiede- ja pedagogiikkakatselmoinnit; ensin jaetun tiedoston muutos `reviews.py`:hin.
+FY2:n Sovella (fi, en, fi-easy) jaettu claude/fy2-lapikaynti-haarassa (0f); esimerkkikokeessa ei ollut jaettavaa.
 
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
@@ -381,7 +382,7 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
-Varattu: claude/fy2-lapikaynti (FY2, työjono 0f: 8j sekä FY2:n Sovella ja esimerkkikoe 8c:stä)
+FY2 (claude/fy2-lapikaynti, `docs/audits/2026-11-17-8j-FY2.md`): fy2-2, 3, 4, 6, 7, 8 korjattu; fy2-5 liittyy jo; fy2-1:llä ei ole kertaustehtävää (kysymys opettajalle).
 
 FY4 tehty (#647). Tila 2026-11-17: FY5 tehty (#661) paitsi **fy5-7, fy5-11 ja fy5-17** (avoimia; `docs/audits/2026-11-17-8j-FY5.md`): niiden korjaus
 on kirjoitettu, mutta difflib-kohdistus → FULL (muuttumaton `"correct": true` -rivi luokitellaan `experiment`-muutokseksi),
