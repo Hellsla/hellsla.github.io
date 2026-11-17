@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 54537ad9c998f1a3
-SCOPE: delta round 2 (L2-09 tolerance and solution wording, L2-10 reasonableness check, answers.py comment)
+SCOPE: delta added-exercise from d9ba28cfd425b32a base 5b3ca4f81c77
 
 ## Blocking
 

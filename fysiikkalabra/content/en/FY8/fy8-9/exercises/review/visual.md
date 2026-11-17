@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 9136b7411732c7ca
-SCOPE: visual: delta (a changed line carries a number, formula, symbol or unit) base=7669c41 categories=answers,numbers
+SCOPE: delta answers,numbers from f60b307c452eec2c base 7669c41
 
 ## Blocking
 (none)
