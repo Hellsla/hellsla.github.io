@@ -214,6 +214,18 @@ kappale yli ~60 sanaa tai useita virkkeitä eri asioista), sitten korjataan kurs
 (typografia/kappalejako: odotettavasti visual delta, muut carry). Ensin pilotti yhdellä luvulla (fy3-13) opettajan
 nähtäväksi.
 
+### 8c-1. md-paragraphs myös Sovellaan, kokeisiin, yksiköihin ja tutkimuksiin (jaettu, koordinaattori 2026-11-16)
+
+FY1:n työssä (#650) kaksi aukkoa `reviews.py`:ssä. (1) `carry-item` ei tuntenut luokkaa `md-paragraphs`: Sovellan,
+esimerkkikokeen, yksikön, tutkimuksen tai TVT-ohjeen kappalejako kantoi vain väärällä nimellä "reflow" (sen näkymä
+yhdistää välilyönnit), ja `- `-listamerkit eivät kantaneet lainkaan. (2) Kun sama rivi oli aiemmin reflow'ttu
+(inline-kaava aligned-lohkoksi) ja nyt jaetaan kappaleisiin, `_md_paragraphs` näki kaavan sisällä yhden välilyönnin eron
+(`d_\text{A} \approx` / `d_\text{A}\approx`) eikä luokitellut muutosta (en fy1-1:n harjoitukset). Korjaus: `para_view`
+(listamerkit pois, välilyönnit yhdeksi) `item_view`n vaihtoehdoksi, `carry-item` ja `verify` tuntevat `md-paragraphs`-
+rivit, ja `_md_paragraphs` jättää pois kaavan sisäiset välilyönnit, joita LaTeX ei näe (ei kahden kirjaimen välistä).
+Testit `test_reviews.py`:ssä. Säännöt ennallaan: tiede ja pedagogiikka carry, ulkoasu delta. Sen jälkeen FY1:n Sovella,
+esimerkkikoe ja en fy1-1:n harjoitusten kolme askelta.
+
 ## 8d. Käsitekorttien pitkät otsikot katkeavat keskeltä sanaa (opettaja 2026-11-13)
 
 Kertaa luvun käsitteet -kortissa "Ominaislämpökapasiteet|ti" katkeaa ilman tavuviivaa (kortin otsikko piirretään
