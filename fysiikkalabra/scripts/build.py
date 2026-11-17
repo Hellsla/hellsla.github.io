@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -322,6 +322,7 @@ def render_md(text, **kw):
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
     text = kaavat.as_html(text, T("lesson.extra_formula"))                         # ```kaavat: named formulas as a formula table
     text = kaavat.johda_html(text, T("lesson.derive"), T("lesson.derive_show"))   # ```johda: "Johda itse", the derivation behind a button
+    text = stopthink.as_html(text, T("lesson.stop_think"), T("lesson.answer"))     # ```pysahdy: "Pysähdy ja mieti", a question and an openable answer
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []

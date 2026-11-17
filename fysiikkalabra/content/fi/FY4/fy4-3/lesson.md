@@ -361,6 +361,12 @@
 ### Voima on vuorovaikutus
 Kun kaksi kappaletta vaikuttavat toisiinsa, niiden välillä on **vuorovaikutus**: käsi työntää laatikkoa, naru vetää pulkkaa ja Maa vetää omenaa. Vuorovaikutuksen voimakkuutta kuvaa **voima**, jonka yksikkö on newton ($\text{N}$). Voima on vektori, jolla on suuruus ja suunta, ja sitä merkitään $\overline{F}$. Jokaisella voimalla on aiheuttaja, joka on aina toinen kappale. Kosketusvoimissa kappaleet koskettavat toisiaan. Maan vetovoima eli **paino** $\overline{G}$ ja magneettien voimat vaikuttavat myös etäältä.
 
+```pysahdy
+Heitetty pallo lentää ilmassa. Mitkä kappaleet vaikuttavat palloon lennon aikana?
+---
+Maa eli paino ja ilma eli ilmanvastus. Heittäjän käsi ei enää vaikuta palloon.
+```
+
 ### Liike jatkuu ilman voimaa
 Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään ei enää työnnä kiveä eteenpäin, mutta kivi liukuu silti kymmeniä metrejä. Liu'un aikana kiveen vaikuttavat vain Maa ja jää (ilmanvastus on hyvin pieni). Pystysuunnassa paino ja jään tukivoima eli jään kiveä ylöspäin tukeva, pintaa vastaan kohtisuora voima kumoavat toisensa. Vaakasuunnassa on vain jään pieni kitkavoima eli pintojen välinen liikettä vastustava voima, joka osoittaa taaksepäin ja hidastaa kiveä hyvin vähitellen.
 
@@ -405,6 +411,12 @@ Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi, ja se liukuisi samaan s
 <figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Kolme miestä vetää paksua köyttä nojaten taaksepäin ja jalat maata vasten."><figcaption>Köydenvetäjät nojaavat taaksepäin ja painavat jalkansa maata vasten.</figcaption></figure>
 
 Arkikokemus näyttää toista, koska maan päällä kitka ja ilmanvastus hidastavat lähes kaikkea, mikä liikkuu. Pyörä pysähtyy, kun polkeminen loppuu, koska tie ja ilma jarruttavat sitä, eivät siksi, että "liikkeen voima" kuluisi loppuun. Mitä pienempi kitka, sitä kauemmin liike jatkuu: jäällä pidemmälle kuin asfaltilla ja avaruudessa lähes rajatta.
+
+```pysahdy
+Miksi kaupan kärryt pysähtyvät, kun lakkaat työntämästä?
+---
+Kitka ja ilmanvastus muuttavat liikettä. Ilman niitä kärryt jatkaisivat samalla nopeudella.
+```
 
 ### Voima ja vastavoima
 Kun luistelija A työntää luistelijaa B, kumpikin lähtee liukumaan poispäin toisesta. B ei vain ota työntöä vastaan, vaan se vaikuttaa samalla A:han. Vuorovaikutus on aina kaksisuuntainen. Tämä on **Newtonin kolmas laki** eli **voiman ja vastavoiman laki**: kun kappale A vaikuttaa kappaleeseen B voimalla, B vaikuttaa A:han yhtä suurella mutta vastakkaissuuntaisella voimalla. Voima ja vastavoima syntyvät samassa vuorovaikutuksessa samaan aikaan, ja ne ovat samaa lajia: työntö ja vastatyöntö, vetovoima ja vastavetovoima.
@@ -465,6 +477,12 @@ Kun luistelija A työntää luistelijaa B, kumpikin lähtee liukumaan poispäin 
 <figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="Valkoinen raketti nousee pystysuoraan kirkkaan liekin ja savuvanan varassa. Laukaisualustan ympärillä on suuria valkoisia höyrypilviä ja ristikkomastoja."><figcaption>Falcon 9 -raketti nousee Floridassa syyskuussa 2024. Raketti työntää palamiskaasuja alaspäin, ja kaasut työntävät rakettia ylöspäin yhtä suurella voimalla. Raketti ei tarvitse ilmaa eikä maata, jota vasten työntää.</figcaption></figure>
 
 Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella, koska pienemmän massan liiketila muuttuu samasta voimasta enemmän; tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät koskaan kumoa toisiaan, eikä niitä piirretä saman kappaleen voimakuvioon.
+
+```pysahdy
+Potkaiset palloa jalallasi. Mikä voima vaikuttaa jalkaasi, kun jalka osuu palloon?
+---
+Pallo vaikuttaa jalkaasi yhtä suurella mutta vastakkaissuuntaisella voimalla eli vastavoimalla.
+```
 
 ## Kaava: Newtonin ensimmäinen ja kolmas laki
 Newtonin ensimmäinen laki on ehto kappaleeseen vaikuttavien voimien summalle:

@@ -136,6 +136,12 @@
 ### Paino
 Kappaleen **paino** $\overline{G}$ on voima, jolla Maa vetää kappaletta. Se osoittaa aina suoraan alas, myös rinteellä, ja voimakuviossa se piirretään kappaleen keskipisteestä. Painon suuruus on massan ja putoamiskiihtyvyyden tulo $mg$. Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea sen liiketilaa on muuttaa, ja se on sama kaikkialla. Paino taas riippuu paikasta: Kuun pinnalla $g = 1{,}62\,\text{m/s}^2$, joten $60\,\text{kg}$:n ihmisen paino on siellä noin $97\,\text{N}$, kun se Maassa on noin $590\,\text{N}$.
 
+```pysahdy
+Astronautti, jonka massa on $80\,\text{kg}$, siirtyy Kuuhun. Mikä hänen massastaan ja painostaan muuttuu?
+---
+Massa pysyy samana, mutta paino pienenee, koska Kuun putoamiskiihtyvyys on pienempi kuin Maan.
+```
+
 ### Lepokitka ja liukukitka
 Kun kaksi pintaa koskettaa toisiaan, ne vastustavat liukumista toistensa suhteen. Tämä pinnan suuntainen voima on **kitka** $\overline{F}_\mu$. Pinnat eivät ole täysin sileitä: pienet epätasaisuudet tarttuvat toisiinsa, ja pintojen hiukkasten välillä on vetovoimia. Mitä lujemmin pinnat painuvat toisiaan vasten eli mitä suurempi tukivoima $N$ on, sitä suurempi kitka voi olla.
 
@@ -191,6 +197,12 @@ Kun laatikkoa vedetään lattialla heikosti, se ei liiku. Silloin siihen vaikutt
 
 Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $50\,\text{N}$:iin asti, ja siinä laatikko lähtee liikkeelle. Liukuvaan laatikkoon vaikuttaa $35\,\text{N}$:n liukukitka, vaikka vetoa lisättäisiin. Siksi raskas kaappi on vaikeinta saada liikkeelle, ja liikkeellä se kulkee kevyemmin.
 
+```pysahdy
+Vedät laatikkoa heikosti, mutta se ei liiku. Kuinka suuri lepokitka on?
+---
+Yhtä suuri kuin vetosi ja vastakkaissuuntainen, koska kokonaisvoima on nolla ja laatikko pysyy levossa.
+```
+
 ### Kalteva taso
 Kaltevalla tasolla eli rinteellä paino osoittaa yhä suoraan alas, mutta pinta on vinossa. Tukivoima on kohtisuorassa pintaa vastaan, ja kitka on pinnan suuntainen. Laskua varten paino jaetaan kahteen **komponenttiin**: rinteen suuntainen komponentti pyrkii viemään kappaletta rinnettä alas, ja pintaa vastaan kohtisuora komponentti painaa kappaletta pintaa vasten. Komponentit eivät ole uusia voimia. Ne korvaavat painon laskussa, ja voimakuviossa ne piirretään katkoviivoin.
 
@@ -243,6 +255,12 @@ Kaltevalla tasolla eli rinteellä paino osoittaa yhä suoraan alas, mutta pinta 
 </svg>
 
 Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä pienempi kohtisuora komponentti. Kun pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima eikä kappale kiihdy siinä suunnassa, tukivoima pienenee kohtisuoran komponentin mukana ja sen mukana lepokitkan yläraja. Siksi laatikko lähtee jyrkässä rinteessä liukumaan: rinnettä alas vievä komponentti kasvaa suuremmaksi kuin lähtökitka, jonka pinta pystyy aiheuttamaan.
+
+```pysahdy
+Miksi laatikko lähtee liukumaan, kun rinne on tarpeeksi jyrkkä?
+---
+Painon rinteen suuntainen komponentti kasvaa, ja tukivoima sekä lähtökitka pienenevät. Komponentti ylittää lähtökitkan.
+```
 
 ### Kitka ei aina vastusta liikettä
 Kitka vastustaa pintojen liukumista **toistensa suhteen**, ei välttämättä kappaleen liikettä. Kun avolava-auto lähtee kiihtyen liikkeelle, lavalla oleva laatikko kiihtyy mukana. Kun ilmanvastus jätetään huomiotta, ainoa vaakasuora voima laatikkoon on lavan kitka, joten sen täytyy osoittaa eteenpäin, liikkeen suuntaan: lava pyrkii liukumaan eteenpäin laatikon alta, ja lepokitka estää sen. Samoin kävellessä jalka työntää maata taaksepäin, ja maan lepokitka työntää jalkaa eteenpäin. Peilijäällä, jossa kitkaa on hyvin vähän, liikkeelle lähteminen on siksi vaikeaa.
@@ -297,6 +315,12 @@ Kitka vastustaa pintojen liukumista **toistensa suhteen**, ei välttämättä ka
 </svg>
 
 Kitkan lisäksi kappaleeseen voi vaikuttaa muitakin kosketusvoimia. **Noste** on voima, jolla neste tai kaasu työntää siihen uponnutta kappaletta ylöspäin, ja **väliaineen vastusvoima** on voima, jolla ilma tai vesi vastustaa kappaleen liikettä. Ilmanvastusta käsitellään tarkemmin luvussa *Ilmanvastus ja putoaminen ilmassa*. Tässä luvussa ilmanvastus ja noste jätetään huomiotta.
+
+```pysahdy
+Kävelet eteenpäin. Mihin suuntaan maan kitka vaikuttaa jalkaasi?
+---
+Eteenpäin, liikkeesi suuntaan: jalkasi työntää maata taaksepäin, ja maan lepokitka työntää jalkaasi eteenpäin.
+```
 
 ## Kaava: Kitkavoima ja kalteva taso
 Painon suuruus on

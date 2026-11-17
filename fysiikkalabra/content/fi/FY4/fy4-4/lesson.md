@@ -364,6 +364,12 @@ Kuvan vasemmalla laatikko lepää lattialla. Paino $\overline{G}$ ja lattian tuk
   <foreignObject x="513.5" y="345.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\Sigma\overline{F}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Laatikkoa vedetään narulla oikealle, ja se kiihtyy. Mitä tästä voi päätellä vaakasuuntaisista voimista?
+---
+Narun voima on suurempi kuin kitka, joten vaakasuuntainen kokonaisvoima ei ole nolla vaan osoittaa oikealle.
+```
+
 ### Massa vastustaa nopeuden muutosta
 Mittaukset kärryllä paljastavat kaksi säännönmukaisuutta. Kun kokonaisvoima kaksinkertaistuu, kiihtyvyys kaksinkertaistuu: kiihtyvyys on suoraan verrannollinen kokonaisvoimaan. Kun sama kokonaisvoima vaikuttaa kaksi kertaa massiivisempaan kärryyn, kiihtyvyys puolittuu. Massa kertoo siis kappaleen hitaudesta eli siitä, kuinka vaikeaa sen nopeutta on muuttaa. Kuvaajassa kumpikin massa antaa origon kautta kulkevan suoran, ja raskaamman kärryn suora on puolet loivempi.
 
@@ -425,6 +431,12 @@ Mittaukset kärryllä paljastavat kaksi säännönmukaisuutta. Kun kokonaisvoima
 </svg>
 
 Tästä saadaan vastaus alun kysymykseen. Moottori pyörittää vetäviä pyöriä, ja tie työntää renkaita eteenpäin. Kun tämä voima on yhtä suuri lastatussa ja tyhjässä autossa, lastatun auton paljon suurempi massa tekee kiihtyvyydestä pienen. Lastin paino ei sinänsä vedä autoa taaksepäin, koska tien tukivoima kumoaa sen. Raskas lasti kasvattaa kyllä renkaiden vierimisvastusta, mutta pääsyy hitaaseen kiihtymiseen on suuri massa.
+
+```pysahdy
+Sama kokonaisvoima vaikuttaa tyhjään ja täyteen kauppakärryyn. Kumpi kiihtyy enemmän ja miksi?
+---
+Tyhjä kärry, koska sen massa on pienempi. Massa vastustaa nopeuden muutosta: kaksinkertainen massa puolittaa kiihtyvyyden.
+```
 
 ## Kaava: Newtonin toinen laki
 Newtonin toinen laki eli dynamiikan peruslaki kokoaa havainnot yhteen yhtälöön:
@@ -523,6 +535,12 @@ Laki on vektoriyhtälö: kokonaisvoima ja kiihtyvyys osoittavat aina samaan suun
   <path d="M565.5,493 L572,506 L578.5,493" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="555.5" y="509.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Laatikko nousee köyden varassa ja hidastuu. Mihin suuntaan kokonaisvoima osoittaa?
+---
+Alas, koska kiihtyvyys osoittaa alas, vaikka laatikko liikkuu yhä ylöspäin. Köyden voima on painoa pienempi.
+```
 
 ### Ensin voimat, sitten yhtälö
 Kun lakia käytetään laskuun, edetään aina samassa järjestyksessä. Valitaan kappale ja piirretään sen voimakuvio, jossa jokaisella voimalla on aiheuttaja: Maa, köysi, alusta tai vetäjä. Valitaan positiivinen suunta, yleensä kiihtyvyyden suunta. Vasta sitten kirjoitetaan voimista kokonaisvoima etumerkkeineen ja asetetaan se yhtä suureksi kuin $ma$. Nosturin laatikolle, kun ylöspäin on positiivinen, saadaan $T - G = ma$. Luvussa *Voimakuvio ja voimien yhteisvaikutus* sama menetelmä laajenee vinoihin voimiin.

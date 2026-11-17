@@ -136,6 +136,12 @@
 ### Weight
 The **weight** $\overline{G}$ of an object is the force with which the Earth pulls the object. It always points straight down, also on a slope, and in a free-body diagram it is drawn from the center of the object. The magnitude of the weight is the product of the mass and the acceleration of free fall, $mg$. Mass describes the inertia of an object, that is how hard it is to change its state of motion, and it is the same everywhere. Weight, on the other hand, depends on the place: on the surface of the Moon $g = 1.62\,\text{m/s}^2$, so the weight of a $60\,\text{kg}$ person there is about $97\,\text{N}$, whereas on Earth it is about $590\,\text{N}$.
 
+```pysahdy
+An astronaut whose mass is $80\,\text{kg}$ moves to the Moon. What changes in the astronaut's mass and weight?
+---
+The mass stays the same, but the weight becomes smaller, because the Moon's free-fall acceleration is smaller than the Earth's.
+```
+
 ### Static friction and sliding friction
 When two surfaces touch each other, they resist sliding relative to each other. This force parallel to the surface is **friction** $\overline{F}_\mu$. The surfaces are not perfectly smooth: tiny bumps catch on each other, and there are attractive forces between the particles of the surfaces. The harder the surfaces are pressed against each other, that is the greater the normal force $N$ is, the greater the friction can be.
 
@@ -191,6 +197,12 @@ When a box on a floor is pulled only weakly, it does not move. Then **static fri
 
 In the graph the normal force of the floor is $100\,\text{N}$. Static friction grows with the pull up to $50\,\text{N}$, where the box starts to move. A sliding box is acted on by a sliding friction of $35\,\text{N}$, even if the pull is increased. This is why a heavy cabinet is hardest to get moving, and once it is moving it goes more easily.
 
+```pysahdy
+You pull a box weakly, but it does not move. How large is the static friction?
+---
+As large as your pull and in the opposite direction, because the net force is zero and the box stays at rest.
+```
+
 ### The inclined plane
 On an inclined plane, that is a slope, the weight still points straight down, but the surface is slanted. The normal force is perpendicular to the surface, and the friction is parallel to the surface. For calculation the weight is split into two **components**: the component along the slope tends to take the object down the slope, and the component perpendicular to the surface presses the object against the surface. The components are not new forces. They replace the weight in the calculation, and in a free-body diagram they are drawn as dashed lines.
 
@@ -243,6 +255,12 @@ On an inclined plane, that is a slope, the weight still points straight down, bu
 </svg>
 
 The steeper the slope, the greater the component along the slope and the smaller the perpendicular component. When only the weight and the normal force act perpendicular to the surface and the object does not accelerate in that direction, the normal force decreases together with the perpendicular component, and with it the upper limit of static friction. This is why a box starts to slide on a steep slope: the component pulling it down the slope grows greater than the maximum static friction that the surface can exert.
+
+```pysahdy
+Why does a box start to slide when the slope is steep enough?
+---
+The component of the weight along the slope grows, while the normal force and the maximum static friction become smaller. The component exceeds the maximum static friction.
+```
 
 ### Friction does not always oppose motion
 Friction opposes the sliding of surfaces **relative to each other**, not necessarily the motion of the object. When a pickup truck starts to move with an acceleration, a box on its bed accelerates along with it. When air drag is ignored, the only horizontal force on the box is the friction of the bed, so it must point forward, in the direction of motion: the bed tends to slide forward from under the box, and static friction prevents this. Likewise, when we walk, the foot pushes the ground backward, and the static friction of the ground pushes the foot forward. On mirror-smooth ice, where there is very little friction, getting started is therefore difficult.
@@ -297,6 +315,12 @@ Friction opposes the sliding of surfaces **relative to each other**, not necessa
 </svg>
 
 Besides friction, other contact forces can act on an object. **Buoyancy** is the force with which a liquid or a gas pushes upward an object immersed in it, and the **drag of the medium** is the force with which air or water opposes the motion of an object. Air drag is treated in more detail in the chapter *Air resistance and falling through air*. In this chapter air drag and buoyancy are ignored.
+
+```pysahdy
+You walk forward. Which way does the friction from the ground act on your foot?
+---
+Forwards, in the direction of your motion: your foot pushes the ground backwards, and the static friction from the ground pushes your foot forwards.
+```
 
 ## Formula: The friction force and the inclined plane
 The magnitude of the weight is

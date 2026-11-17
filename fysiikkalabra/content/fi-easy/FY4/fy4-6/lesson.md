@@ -138,6 +138,12 @@ Kappaleen **paino** $\overline{G}$ on voima, jolla Maa vetää kappaletta. Paino
 
 Massa kertoo, kuinka vaikea kappaleen liiketilaa on muuttaa. Massa on sama kaikkialla. Paino taas riippuu paikasta. Kuun pinnalla $g = 1{,}62\,\text{m/s}^2$. Siksi $60\,\text{kg}$:n ihmisen paino on Kuussa noin $97\,\text{N}$, mutta Maassa noin $590\,\text{N}$.
 
+```pysahdy
+Astronautin massa on $80\,\text{kg}$. Hän menee Kuuhun. Muuttuuko hänen massansa? Entä paino?
+---
+Massa ei muutu. Paino pienenee, koska Kuu vetää vähemmän kuin Maa.
+```
+
 ### Lepokitka ja liukukitka
 Kun kaksi pintaa koskettaa toisiaan, ne vastustavat liukumista toistensa suhteen. Tämä pinnan suuntainen voima on **kitka** $\overline{F}_\mu$. Pinnat eivät ole täysin sileitä. Pienet epätasaisuudet tarttuvat toisiinsa, ja pintojen hiukkasten välillä on vetovoimia. Mitä lujemmin pinnat painuvat toisiaan vasten, sitä suurempi kitka voi olla. Pintojen painamista toisiaan vasten kuvaa tukivoima $N$.
 
@@ -194,6 +200,12 @@ Kun veto ylittää ylärajan, laatikko lähtee liukumaan. Silloin kitka vaihtuu 
 </svg>
 
 Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $50\,\text{N}$:iin asti. Siinä laatikko lähtee liikkeelle. Liukuvaan laatikkoon vaikuttaa $35\,\text{N}$:n liukukitka, vaikka vetoa lisättäisiin. Siksi raskas kaappi on vaikeinta saada liikkeelle. Kun kaappi liikkuu, sitä on helpompi työntää.
+
+```pysahdy
+Vedät laatikkoa vähän, mutta se ei liiku. Kuinka suuri lepokitka on?
+---
+Se on yhtä suuri kuin vetosi, mutta osoittaa vastakkaiseen suuntaan. Siksi voimat kumoavat toisensa ja laatikko pysyy paikallaan.
+```
 
 ### Kalteva taso
 Kalteva taso on vino pinta eli rinne. Rinteellä paino osoittaa yhä suoraan alas, mutta pinta on vinossa. Tukivoima on kohtisuorassa pintaa vastaan, ja kitka on pinnan suuntainen.
@@ -254,6 +266,12 @@ Oletetaan, että pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoim
 
 Siksi laatikko lähtee jyrkässä rinteessä liukumaan. Rinnettä alas vievä komponentti kasvaa suuremmaksi kuin lähtökitka, jonka pinta pystyy aiheuttamaan.
 
+```pysahdy
+Miksi laatikko lähtee liukumaan, kun rinne on tarpeeksi jyrkkä?
+---
+Rinnettä alas vievä osa painosta kasvaa. Samalla tukivoima ja lähtökitka pienenevät. Lopulta alas vievä osa on suurempi kuin lähtökitka.
+```
+
 ### Kitka ei aina vastusta liikettä
 Kitka vastustaa pintojen liukumista **toistensa suhteen**. Se ei välttämättä vastusta kappaleen liikettä.
 
@@ -311,6 +329,12 @@ Samoin kävellessä jalka työntää maata taaksepäin, ja maan lepokitka työnt
 </svg>
 
 Kitkan lisäksi kappaleeseen voi vaikuttaa muitakin kosketusvoimia. **Noste** on voima, jolla neste tai kaasu työntää siihen uponnutta kappaletta ylöspäin. **Väliaineen vastusvoima** on voima, jolla ilma tai vesi vastustaa kappaleen liikettä. Ilmanvastusta käsitellään tarkemmin luvussa *Ilmanvastus ja putoaminen ilmassa*. Tässä luvussa ilmanvastus ja noste jätetään huomiotta.
+
+```pysahdy
+Kävelet eteenpäin. Mihin suuntaan maan kitka vaikuttaa jalkaasi?
+---
+Eteenpäin, samaan suuntaan kuin kävelet. Jalkasi työntää maata taaksepäin, ja maan kitka työntää jalkaa eteenpäin.
+```
 
 ## Kaava: Kitkavoima ja kalteva taso
 Painon suuruus on
