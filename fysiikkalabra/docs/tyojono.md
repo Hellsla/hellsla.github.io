@@ -65,7 +65,7 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 5h. mathlayout: join_wide ja with_punct (koordinaattori 2026-11-17)
-Varattu: claude/mathlayout-join-wide
+Varattu: claude/mathlayout-5h
 Jaettu korjaus `scripts/mathlayout.py`:hen. `join_wide` ei liitä relaatiorivin (`&=`, `&<`, `&\approx`) edellisen rivin
 jatkoriviin, mutta liittää jatkorivin (`&+`, `&-`, `&\cdot`, `&/`, `&:`) edelliseen; `with_punct` jättää välimerkin rivin
 viimeisen lausekkeen perään (ei loppu-`&`:n jälkeen). Testit `scripts/test_mathlayout.py`:ssä; build ja `site/`-diff,
