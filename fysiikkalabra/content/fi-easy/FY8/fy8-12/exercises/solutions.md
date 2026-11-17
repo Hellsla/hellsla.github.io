@@ -281,7 +281,9 @@ $$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vai
 **Kuvaajan lukeminen:** Kuvaaja alkaa arvosta $800\,\text{pulssia/min}$ kohdassa $d = 0$. Puolet siitä, $400\,\text{pulssia/min}$, on kohdassa $d = 12\,\text{mm}$. Siis $d_{1/2} = 12\,\text{mm}$. Tarkistus: kohdassa $24\,\text{mm}$ käyrä on arvossa $200\,\text{pulssia/min}$, eli neljännes alusta.
 **Kaava:** $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; kysytty suure $R$ on jo yksin vasemmalla, joten kaavaa ei tarvitse muokata.
 **Muunnokset:** Ei tarvita: $d$ ja $d_{1/2}$ ovat molemmat millimetreinä, joten niiden osamäärä on pelkkä luku.
-**Sijoitus:** $R = 800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{30\,\text{mm}/12\,\text{mm}} = 800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulssia/min} \cdot 0{,}17678 = 141{,}42\,\text{pulssia/min}$
+Puoliintumispaksuuksien lukumäärä on $\dfrac{30\,\text{mm}}{12\,\text{mm}} = 2{,}5$.
+
+**Sijoitus:** $R = 800\,\text{pulssia/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulssia/min} \cdot 0{,}17678 = 141{,}42\,\text{pulssia/min}$
 **Vastaus:** $140\,\text{pulssia/min}$ ($141{,}4$ käy myös), kaksi merkitsevää numeroa kuten kuvaajasta luetussa arvossa $12\,\text{mm}$.
 **Järkevyys:** Kohdassa $24\,\text{mm}$ on kaksi puoliintumispaksuutta ja pulssitaajuus on $200\,\text{pulssia/min}$. Kohdassa $36\,\text{mm}$ on kolme ja pulssitaajuus on $100\,\text{pulssia/min}$. Kohta $30\,\text{mm}$ on näiden puolivälissä, joten tulos $140\,\text{pulssia/min}$ on arvojen $200$ ja $100$ välissä.
 

@@ -273,7 +273,9 @@ $$, as measured. Justification of part d): a GM tube detects only a small fracti
 **Reading the graph:** The graph starts at $800\,\text{pulses/min}$ at $d = 0$. Half of it, $400\,\text{pulses/min}$, is reached at $d = 12\,\text{mm}$, so $d_{1/2} = 12\,\text{mm}$. Check: at $24\,\text{mm}$ the curve is at $200\,\text{pulses/min}$, a quarter of the start.
 **Formula:** $R = R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; the asked quantity is already alone on the left, so no rearranging is needed.
 **Conversions:** None needed: $d$ and $d_{1/2}$ are both in millimetres, so their quotient is a pure number.
-**Substitution:** $R = 800\,\text{pulses/min} \cdot \left(\tfrac{1}{2}\right)^{30\,\text{mm}/12\,\text{mm}} = 800\,\text{pulses/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulses/min} \cdot 0{,}17678 = 141{,}42\,\text{pulses/min}$
+The number of half-value thicknesses is $\dfrac{30\,\text{mm}}{12\,\text{mm}} = 2{,}5$.
+
+**Substitution:** $R = 800\,\text{pulses/min} \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 800\,\text{pulses/min} \cdot 0{,}17678 = 141{,}42\,\text{pulses/min}$
 **Answer:** $140\,\text{pulses/min}$ ($141{,}4$ is accepted too), two significant figures like the half-value thickness $12\,\text{mm}$ read off the graph.
 **Reasonableness:** At $24\,\text{mm}$ there are two half-value thicknesses and $200\,\text{pulses/min}$, at $36\,\text{mm}$ three and $100\,\text{pulses/min}$. $30\,\text{mm}$ lies halfway between, so $140\,\text{pulses/min}$ is between $200$ and $100$.
 
