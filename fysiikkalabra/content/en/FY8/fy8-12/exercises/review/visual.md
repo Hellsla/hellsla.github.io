@@ -1,16 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 586285323faf3a8f
+VERDICT: FAIL
+CONTENT-HASH: 883da37d124339dd
 
 ## Blocking
-(none)
+- [Major] fy8-12-L2-09 exercises.json `unit` — the answer field shows the Finnish unit "pulssia/min" beside "Write a solution / Check" on the English page (capture L2-1280-14); every other English exercise has an English unit — a language error in the one element the student fills in — set `"unit": "pulses/min"` in the en exercises.json (the answer 141.4 and tolerance stay).
 
 ## Polish
-- [Minor] fy8-12-L2-08 solution, Reasonableness — the order-of-magnitude chain starts with a bare product — start it with $E \approx$.
-- [Minor] fy8-12-L2-08 — the prefix mu in "$\mu\text{eV}$" renders as italic mu next to upright eV — use an upright micro sign (\text{\textmu} or \mathrm{\mu}) everywhere in the set.
+- [Minor] fy8-12-L3-07 solution (Answer) — straight quotes "at most" — use “at most”.
+- [Minor] en solutions — decimals `2{,}5`, `67{,}73` render with a decimal comma in English; same as the rest of the set, so only for the teacher if English is meant to use a point.
 
 ## Checked
-- Captures fy8-12-open-exercises-L2-1280-10 (task 12-17 text, source link, parts a–c), -11 (part d, answer box in µeV, given, principle, model answer a), -12 (conversions, substitution rows, comparison fractions, model answer c), -13 (model answer d, answer, reasonableness). Captures rebuilt for this hash.
-- Round-1 Major fixed: no decimal comma left (grep of exercises.json and solutions.md: 0), "J s" now thin-spaced. Layout clean, no clipping. Delta: caption wording ("example data" removed) not re-opened, text-only.
+- Delta: L2-09 (captures en L2-1280-13, -14) and L3-07 (en L3-1280-13; layout of the fi L3-11/12 shared figure), solutions open.
+- Figure fy8-12/tuntematon in English: axis "pulses / min" and "d (mm)" localised, ticks readable, answer not given away.
+- Chains aligned, units upright, no clipping; English text fluent and consistent with the Finnish.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
