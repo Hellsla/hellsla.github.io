@@ -4,6 +4,7 @@
   python scripts/reviews.py status [<id>]              reviewed | legacy | draft of the lesson and its exercises
   python scripts/reviews.py legacy <id>                write review/legacy.md: prototype content the teacher keeps visible
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
+  python scripts/reviews.py check-report <id> [--lang en] [--exercises]   a report's own hash and a well-formed SCOPE line (also in verify)
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
   python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
   python scripts/reviews.py carry-item investigation|sovella|koe|unit|guide <id> [--lang en]
@@ -1008,7 +1009,7 @@ MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$",
 
 
 def _tr_text(a, b, pairs, labels=False):
-    """True when the translated text b keeps the science of the Finnish text a: the same formulas in the same order
+    """True when the translated text b keeps the science of the Finnish text a: the same formulas (a multiset: their order in the sentence differs by language)
     (check_i18n.formula_spans; whitespace dropped, {,} read as a point, \\text{} words kept except a sub- or superscript
     label, whose words go to `pairs` for the one-to-one check), the same figures (data-fig) and force-diagram specs, the
     same numbers outside the formulas (as a multiset: word order differs by language) and, in an option (`labels`), the
@@ -1022,7 +1023,7 @@ def _tr_text(a, b, pairs, labels=False):
             f = SCRIPT_WORD.sub(lambda m: (words.append(m.group(4).strip()), f"{m.group(1)}{m.group(2)}\\{m.group(3)}{{§}}")[1], re.sub(r"\s+", "", f).replace("{,}", "."))
             out.append((f, words))
         return out
-    sa, sb = spans(a), spans(b)
+    sa, sb = sorted(spans(a), key=lambda x: x[0]), sorted(spans(b), key=lambda x: x[0])   # the formulas as a multiset: where a language puts a formula in its sentence is no science (en L3-05, fi-easy L2-01, 2026-11-17); stable, so equal formulas keep their label pairs in order
     if [f for f, _ in sa] != [f for f, _ in sb]: return False
     for (_, wa), (_, wb) in zip(sa, sb): pairs.extend(zip(wa, wb))
     if re.findall(r'data-fig="([^"]+)"', a) != re.findall(r'data-fig="([^"]+)"', b) or FBD_SPEC.findall(a) != FBD_SPEC.findall(b): return False
@@ -1302,7 +1303,7 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     after = lambda n, t: tx(n, t, True) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
     chains = lambda n, t: chain_view(t, n) if reflow and n.endswith((".md", ".json")) else t   # `reflow`: calculation chains in one form (category "reflow")
     paras = lambda n, t: para_view(t, n) if paragraphs and n.endswith((".md", ".json")) else t   # `paragraphs`: paragraph breaks and list markers left out (category "md-paragraphs")
-    out = [(n, paras(n, chains(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))))) for n in texts]
+    out = [(n, chains(n, paras(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))))) for n in texts]   # markers first (format_view)
     for n in code_names:
         code = src.read(rel(code_folder / n))
         if code_tx and code: code = code_tx(code)
@@ -1636,6 +1637,39 @@ def chain_view(text, rel="", outside=True):
     return "".join(out)
 
 
+def _cut_lines(text, rel):
+    """The text's lines with calculation chains merged (chain_view, the text between formulas as it is), a JSON string's \\n
+    read as a line break, blank lines and `- ` list markers left out: how it is cut into paragraphs."""
+    if rel.endswith(".json"): text = re.sub(r"(?<!\\)\\n", "\n", text)
+    return [" ".join(re.sub(r"^\s*- ", "", l).split()) for l in chain_view(text, "", False).split("\n") if l.strip()]
+
+
+def format_view(text, rel=""):
+    """The one normalized view of how a text is presented: calculation chains in one form (chain_view), paragraph breaks
+    and list markers left out (para_view, first: a marker is only at a line's start while the lines are lines). Two texts with the same format_view have the same words, numbers, signs, units
+    and formulas in the same order and differ only in line and paragraph breaks, `- ` markers, how a chain is divided
+    into rows or lifted into an aligned block, and LaTeX-invisible spaces. The same for every target (chapter, exercise
+    set, unit, Sovella, exam, investigation, TVT guide); item_view reads its texts with the same two functions."""
+    return chain_view(para_view(text, rel), rel)
+
+
+def format_categories(a, b, rel=""):
+    """The set of carried categories ("caption-label", "reflow", "md-paragraphs" or "paragraphs" for a JSON text) that
+    together explain the whole difference between `a` (the passed text) and `b`, or None when they do not: the marker
+    esimerkkiaineisto taken out of captions (only a removal), then format_view equal. Any combination of the classes, also
+    on one line (work queue 0c: FY5 fy5-12, fy5-2; FY4 fy4-14; FY3 fy3-5, where two classes on a line read as a number change)."""
+    if a == b: return None
+    cats, a0 = set(), a
+    if rel.endswith(".json"):
+        a = caption_free(a)
+        if a != a0: cats.add("caption-label")
+    if format_view(a, rel) != format_view(b, rel): return None
+    if layout_marks(a) != layout_marks(b): cats.add("reflow")
+    if _cut_lines(a, rel) != _cut_lines(b, rel): cats.add("paragraphs" if rel.endswith(".json") else "md-paragraphs")
+    if not cats and (chain_view(a, rel) != chain_view(b, rel) or para_view(a, rel) != para_view(b, rel)): return None   # whitespace only: not a presentation change
+    return cats or None
+
+
 def layout_marks(text):
     """What a re-break changes and nothing else does: how many formulas, display formulas and aligned blocks a text has."""
     return (len(MATH_SPAN.findall(text)), text.count("$$"), text.count("begin{aligned}"))
@@ -1764,6 +1798,8 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 a = ra = a2                            # what else changed is classified as usual
                 if a == b: continue
         if not binary and a and b and rel.endswith((".md", ".json")) and not rel.startswith("figure:"):   # calculation chains re-broken into rows (teacher 2026-11-15)
+            fc = format_categories(a, b, rel)         # any combination of reflow, paragraphs and caption label, also on one line (work queue 0c)
+            if fc: cats |= fc; diff.append(f"--- {rel}: only presentation changed ({', '.join(sorted(fc))})"); continue
             na, nb = chain_view(a, rel), chain_view(b, rel)
             if (na, nb) != (a, b) and layout_marks(a) != layout_marks(b):   # a chain is re-broken when its formulas, display delimiters or aligned blocks change; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
                 if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
@@ -1977,6 +2013,26 @@ def scope_claim(folder, name, part="lesson"):
     return None
 
 
+def report_problems(folder, part="lesson"):
+    """Errors for the reports of one lesson (or exercise set) that cannot be accepted, whatever their verdict (work queue 0c,
+    fy8-5…8): a `SCOPE:` line that is not `SCOPE: delta <categories> from <hash> base <commit>` (a free-form one), and in a
+    translation a CONTENT-HASH that is the Finnish source's hash (its current one or one of its reports') and not this
+    folder's: the reviewer judged the Finnish page, or copied its hash. A translation's report names its own hash."""
+    errs, own = [], content_hash(folder, part)
+    what = f"{courses.lang_of(folder)}/{folder.name}" + (" exercises" if part == "exercises" else "")
+    src = courses.translation(folder, i18n.SOURCE)
+    fi = set()
+    if courses.lang_of(folder) != i18n.SOURCE and src.is_dir():
+        fi = {content_hash(src, part)} | {r[1] for n in REVIEWS if (r := report(src, n, part))}
+    for name in REVIEWS:
+        f = review_dir(folder, part) / f"{name}.md"
+        if not f.exists(): continue
+        rep, claim = report(folder, name, part), scope_claim(folder, name, part)
+        if claim and claim[0] == "malformed": errs.append(f"{what}: {name}.md has a free-form scope line `{claim[1]}` (SCOPE: delta <categories> from <hash> base <commit>, or none)")
+        if rep and rep[1] in fi - {own}: errs.append(f"{what}: {name}.md names the Finnish hash {rep[1]}, not this language's own {own}")
+    return errs
+
+
 def verify_scopes(folder, part="lesson"):
     """Errors for delta PASS reports in use that name what they covered (`SCOPE: delta <categories> from <hash> base
     <commit>`): the commit must hold the version this reviewer passed before, and the change from it to the version the
@@ -2133,6 +2189,8 @@ if __name__ == "__main__":
     elif a[0] == "status": print("\n".join(describe(f) for f in ([find_lesson(a[1])] if len(a) > 1 else courses.lessons())))
     elif a[0] == "legacy": write_legacy(find_lesson(a[1]))
     elif a[0] == "scope": print_scope(find_lesson(a[1]), part)
+    elif a[0] == "check-report":                        # before a report is accepted: its hash and scope line (report_problems)
+        errs = report_problems(find_lesson(a[1]), part); print("\n".join(errs) or "reports ok"); sys.exit(1 if errs else 0)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "carry-item": item_carry(a[1], a[2], globals().get("LANG", i18n.SOURCE))
     elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
@@ -2145,7 +2203,7 @@ if __name__ == "__main__":
             try: print(describe(f))
             except ValueError as e: print("ERROR", e); bad += 1; continue
             for p in ("lesson", "exercises"):
-                for e in verify_carries(f, p) + verify_scopes(f, p): print("ERROR", e); bad += 1
+                for e in verify_carries(f, p) + verify_scopes(f, p) + report_problems(f, p): print("ERROR", e); bad += 1
         import units as _units
         for lang in sorted(set(i18n.languages()) | set(_units.languages())):
             for kind, iid in items(lang):

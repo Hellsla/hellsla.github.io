@@ -157,7 +157,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sovelluksen mittaama kaiun viive eri etäisyyksillä, esimerkkiaineisto",
+        "caption": "Sovelluksen mittaama kaiun viive eri etäisyyksillä",
         "columns": [
           "$d\\,(\\text{m})$",
           "$t\\,(\\text{s})$"
@@ -194,7 +194,7 @@
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Aalto raon takana eri rakoleveyksillä, esimerkkiaineisto",
+        "caption": "Aalto raon takana eri rakoleveyksillä",
         "columns": [
           "$b\\,(\\text{cm})$",
           "Aalto raon takana"
@@ -299,7 +299,7 @@
       "unit": "°",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaiun viive pohjasta, esimerkkiaineisto",
+        "caption": "Kaiun viive pohjasta",
         "columns": [
           "$x\\,(\\text{m})$",
           "$t\\,(\\text{ms})$"
@@ -345,7 +345,7 @@
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lähetysten taajuudet, esimerkkiaineisto",
+        "caption": "Lähetysten taajuudet",
         "columns": [
           "Lähetys",
           "$f$"

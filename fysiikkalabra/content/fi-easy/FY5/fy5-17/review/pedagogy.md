@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6d9e753be2010433
+CONTENT-HASH: 49f335afacf8dda4
 
 ## Blocking
 
+none
+
 ## Polish
+- Kertaus-oikean palautteen display-kaava on pitkä pienellä näytöllä; harkitse yhtä riviä.
+
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the numeric answer 3.08 → 3.1 cm (tolerance 0.03 still accepts the full-precision value) and the rewritten answer line of the solution that explains why two significant figures from the graph reading. Selkeä suomi: the answer line is split into short sentences.
+batch delta review: new retrieval task (lambda in tissue, 2,5 MHz, 1540 m/s) leaves Ennuste 1 (d = vt/2) and 2 (gel) unrevealed; distractors from v*f and f/v with units; paragraph split clear.

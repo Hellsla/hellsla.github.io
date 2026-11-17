@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a4254015fd08611c
-SCOPE: delta added-exercise from 2492493ba54a8626 base 415cbc7c6bc3
+CONTENT-HASH: f7903aada0819615
+SCOPE: delta answers,numbers from add603ad0d41dab0 base 7669c41
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy8-9-L2-08 Vastaus — task and Annettu call 30 a "tarkka arvo", yet Vastaus gives two figures because it is "noin 30 a"; state one reason (for pedagogy: precision of the answer box).
-- [Minor] fy8-9-L2-08 task — the data table stands after "Vastaa laatikkoon…" and just before the answer box; place it before parts a)–d).
-- [Minor] Vastaus — straight quotes "noin 30 a" and the line starts "On jäljellä"; use ”…” and "Jäljellä on".
+- [Minor] fy8-9-L2-09 solution, Järkevyys — the no-background chain (200 s · 0,69315 over ln 380/58) renders at a small nested-fraction size, readable but cramped at 1280 px; a shared-layout matter, no content change.
+- [Minor] fy8-9-L2-10 figure — y labels every 200 kBq against a 50 kBq grid; an optional label every 100 kBq would help reading 360 kBq (carried over from round 1).
 
 ## Checked
-- fy8-9-open-exercises-L2-1280-10 (end of 9-16, task 9-17 text, table start), -11 (table end, answer box, Annettu to Sijoitus), -12 (Kohta a) to Järkevyys), captures regenerated for the current hash.
-- Round 1 defect fixed: no literal asterisks, the chapter name is in quotation marks. Maths, units, the exponent chain and layout are clean.
+- Delta (fi-easy): fy8-9-open-exercises-L2-1280-13 and -14 (tasks 9-18 and 9-19, every solution open) and -15 (end of 9-19); -12 also opened in fi. Figures unchanged since round 1 (fig-28-390 judged then).
+- L2-09: new "Kuvaajan lukeminen" text reads fluently; 2 %:n and 73,7 s:sta (en: 73.7 s) set correctly; Sijoitus nested fraction ln 375/53 clean, equals signs aligned, answer 70,9 s set apart with its justification.
+- L2-10: new Järkevyys chain (1/2)^(1/5,0) ≈ 0,871 and 0,871^5 ≈ 0,50 renders cleanly.
+- No clipping, overflow or red KaTeX; solutions inside their cards.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

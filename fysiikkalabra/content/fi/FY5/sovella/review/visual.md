@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b7e95092661a03ea
+CONTENT-HASH: c05a8657af84848d
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md:19 (fy5-s1 b, **Sijoitus**; captures fi-390-470880Nm-1, fi-1280-470880Nm-1) — the sum is three consecutive inline formulas and wraps before the second at both widths, so a line begins "−470 880 Nm= 1 012 020 Nm": the minus is set as a sign (no space after it) and "=" has no space before it — readable in context, the known join spacing — begin the pieces with `{}-` and `{}=` so KaTeX sets binary and relation spacing.
-- [Minor] task-card rubric formulas (tasks.json details) are centred in their box while the solution's display formulas are left-aligned — shared style, not from this change.
+- [Minor] solutions.md a-, b-, c-, s2-a-, s3-kohdat — `$$\begin{aligned}…$$` display maths sits inside a running sentence and is followed by ", joten …" or "." on its own line. This is unchanged from the baseline; at 390 px the stray punctuation line reads slightly oddly. Optional: end the sentence before the display, or put the continuation in the next sentence.
+- [Minor] solutions.md fy5-s1 d) — the sentence "Kuorma ei siis heitty ulospäin…" is now its own paragraph right after the "Kuljettajan selitys" paragraph. It reads as a conclusion, so the split is fine; only a thought: "siis" is slightly redundant after the split.
 
 ## Checked
-- ROUND 3. Re-break review of the diff against origin/main (solutions.md 11 formulas, tasks.json 3); the page outside the changed formulas was not re-judged (passed on main). The standard captures are stale and were not regenerated: per the round brief I made my own of the current preview page.
-- Own captures of preview/FY5-sovella.html with ?ratkaisut=1 and every details box open, 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-sk/: fi-{390,1280}-470880Nm-0 and -1, -882_9kNm_470_9-0, -2000kg_9_81-0, -600kNm_412-0 (three formulas), -600000Nm_9_81-0, -421_8-1, -160000km-0 and -1, -0_028s_2_1_984-0, -k_mgx-0, -0_265kg_19_9-0, -mgrmax_mpgrp-1, -335_8-1.
-- Read on the sheets sheet-fi-390-a, sheet-fi-390-b, s58-fi-1280-a, s58-fi-1280-b, each larger than device size.
-- Round 2 item is fixed: no third column; the sentence comma or full stop sits directly after the last quantity of the block at both widths.
-- Every row starts with a relation or a whole quantity; no break inside a quantity; equals signs in one column in the labelled chains; units upright, thin spaces, decimal mark intact, colon division kept.
-- Measured in the same run: no display formula wider than its box, no page overflow at 390 or 1280 px.
-- Wide screen: one-relation blocks join to one row; labelled chains keep their rows. Not a finding.
-- Hash the same at the start and the end.
+- Source-only review (the screenshot inventory is empty, so there are no captures; the packet permits judging from source for this paragraph-split change). No figure was opened and no figure claim is made. The figures were not touched by the diff.
+- Hash run at start and end: c05a8657af84848d.
+- Read the full solutions.md diff (word-diff against origin/main): every split lands at a thought boundary (Periaate → method, Mallivastaus → Johtopäätös → real-crane remark, Kuljettajan selitys → conclusion, Mallivastaus → Epävarmuus → Poikkeaman syy). No `$…$` or `$$…$$` is broken across a paragraph, no bold label is orphaned from its text, and the label-per-line structure (Annettu, Kysytty, Periaate, …) is intact.
+- tasks.json: the three edited task texts (s1 d, s3 Jupiter, s4 urut) were split at the premise, assumption and question boundaries. The `$…$` units with `\\,\\text` are unchanged, with correct case endings (`$15\,\text{m}$:n`, `$9{,}93\,\text{h}$:n`). The instruction sentence now stands alone as the last paragraph, which improves task clarity.
+- Display aligned blocks are short, broken at `=`/`\\`, and break nothing at phone width by structure.
 
 ## Scores
-illustrations 4 (not re-judged) · typography 4 · Finnish 4 (not re-judged) · accessibility 4
+illustrations 4 (not re-inspected) · typography 4 · Finnish 4 · accessibility 4

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8132c9436beee126
+CONTENT-HASH: c78ff5d773c6861a
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: Checked the diffraction figure: half-width 0.35λ gives slit width 0.7λ, consistent with the label b < λ and the alt text; inline SVG barrier rectangles (y 44–181, 199–336) match yc ± 0.35·26 px.
+- batch delta review: new retrieval task, λ = v/f = 5,0 m/s / 0,25 Hz = 20 m (recomputed; `kertaus-lambda`). Distractors v·f = 1,25 ("noin 1,3 m") and f/v = 0,050 match the mistakes their feedback names, and the feedback's units (m/s², 1/m) are correct; exactly one correct option. Two significant figures fit the data. The worked example's knowns/question split changes no number.

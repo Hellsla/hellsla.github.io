@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: aallonpituus ja taajuus",
-      "prompt": "Aaltoaltaan aaltokone tekee aaltoja taajuudella $10\\,\\text{Hz}$, ja aallot etenevät nopeudella $0{,}20\\,\\text{m/s}$. Aaltokoneen taajuus kaksinkertaistetaan, ja aaltojen nopeus pysyy samana. Mitä aallonpituudelle tapahtuu?",
+      "prompt": "Avomereltä tulevat aallot etenevät nopeudella $5{,}0\\,\\text{m/s}$, ja aallonharjoja osuu aallonmurtajaan taajuudella $0{,}25\\,\\text{Hz}$. Mikä on aaltojen aallonpituus?",
       "choices": [
         {
-          "text": "Aallonpituus puolittuu.",
+          "text": "$20\\,\\text{m}$",
           "correct": true,
-          "feedback": "Oikein. Kun $v = f\\lambda$ ja nopeus pysyy samana, $\\lambda = \\tfrac{v}{f}$ puolittuu, kun $f$ kaksinkertaistuu: $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Aaltojen synty ja eteneminen*). Aallonpituutta tarvitaan tänään, kun aallon kokoa verrataan raon leveyteen."
+          "feedback": "Oikein. Yhtälöstä $v = f\\lambda$ saadaan $\\lambda = \\tfrac{v}{f} = \\tfrac{5{,}0\\,\\text{m/s}}{0{,}25\\,\\text{Hz}} = 20\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*). Aallonpituutta tarvitaan tänään, kun aallon kokoa verrataan aukon leveyteen."
         },
         {
-          "text": "Aallonpituus kaksinkertaistuu.",
-          "feedback": "Taajuus kertoo, kuinka monta harjaa lähtee sekunnissa. Kun harjoja lähtee kaksi kertaa tiheämmin samalla nopeudella, ne ovat lähempänä toisiaan: $\\lambda = \\tfrac{v}{f}$ pienenee $2{,}0\\,\\text{cm}$:stä $1{,}0\\,\\text{cm}$:iin (luku *Aaltojen synty ja eteneminen*)."
+          "text": "Noin $1{,}3\\,\\text{m}$",
+          "feedback": "Kerroit nopeuden taajuudella. Tulon yksikkö on $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{1}{\\text{s}} = \\tfrac{\\text{m}}{\\text{s}^2}$, ei metri. Yhtälössä $v = f\\lambda$ aallonpituus on nopeus jaettuna taajuudella: $\\lambda = \\tfrac{v}{f} = 20\\,\\text{m}$ (luku *Aaltojen synty ja eteneminen*)."
         },
         {
-          "text": "Aallonpituus pysyy samana, koska aallon nopeus ei muutu.",
-          "feedback": "Nopeus ei muutu, mutta yhtälössä $v = f\\lambda$ on kaksi muuta suuretta. Jos $f$ kaksinkertaistuu ja $v$ pysyy, $\\lambda$:n on puolituttava: $\\lambda = \\tfrac{0{,}20\\,\\text{m/s}}{20\\,\\text{Hz}} = 1{,}0\\,\\text{cm}$."
+          "text": "$0{,}050\\,\\text{m}$",
+          "feedback": "Jaoit taajuuden nopeudella, ja tuloksen yksikkö on silloin $1/\\text{m}$, ei metri. Aallonpituus on $\\lambda = \\tfrac{v}{f}$: nopeus jaettuna taajuudella, $20\\,\\text{m}$."
         }
       ]
     },
