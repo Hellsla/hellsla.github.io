@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ae5fdc4921d613b8
+CONTENT-HASH: 4696d3cd76b16bc6
 
 ## Blocking
 
-
 ## Polish
-- The prompt already states the needle points north, so the question is really "why"; consider "Miksi neula osoittaa pohjoiseen?".
-- "Kupari ei ole magneettista ainetta": "ei ole ferromagneettinen aine" (as fy7-6 says) is the precise form (C, not blocking).
+- Pohdinta retrieval: the new prompt places the compass beside the wire with no current; the correct option (needle along the local Earth field line) is the only right one, and the three distractors' feedback (copper not magnetic; Earth field about $50\,\mu\text{T}$; perpendicularity belongs to the force on a moving charge) is correct.
 
 ## Checked
-batch delta review: new retrieval (compass beside a currentless copper wire): one correct option (along Earth's field), distractor feedback right, Earth's field ~50 µT fine; Ennusta (stretched coil, coil end) not revealed.
+batch delta review: compass retrieval prompt and its four options and feedback; no Ennusta answer revealed.

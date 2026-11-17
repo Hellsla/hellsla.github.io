@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0c93728f3baf1a43
+CONTENT-HASH: da34ad33d42e2236
 
 ## Blocking
 
-
 ## Polish
-- "kalvon kahden viereisen kohdan kautta" is vague; "kalvon kahden kapean raon kautta" says what the source is.
+
 
 ## Checked
-batch delta review: only the prompt changed; 1,5 lambda with sources in phase -> destructive is the one correct option, feedback unchanged and right; Ennusta (denser grating, colour) not revealed.
+batch delta review: 'kohta' -> 'rako' in the retrieval prompt; Δ = 1,5λ destructive, one correct option, feedback right; no Ennusta revealed.

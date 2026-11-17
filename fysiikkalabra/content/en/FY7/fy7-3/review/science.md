@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 26b3b9c9bd4094f5
+CONTENT-HASH: 103e5d090d023a78
 
 ## Blocking
 
-
 ## Polish
-- "About 50 µT" is the total Earth field; the needle on the table follows its horizontal component (C, acceptable).
+
 
 ## Checked
-batch delta review: compass with no current: Earth's field steers the needle; copper non-magnetic; dipole aligns along, not across, the field; one correct option; Ennusta (coil length, coil end) not revealed.
+batch delta review: retrieval prompt now asks where the needle points beside a wire with no current; exactly one correct option (along the Earth's field), distractor feedback right (copper not magnetic, Earth's field about 50 uT, dipole aligns with field); no Ennusta answer revealed.

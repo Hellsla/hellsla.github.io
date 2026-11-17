@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d4ea3449c3adfd79
+CONTENT-HASH: be7561f2690be5e0
 
 ## Blocking
 
-
 ## Polish
-- None.
+
 
 ## Checked
-batch delta review: prompt reworded to a generator coil; induction only when flux changes, options and feedback unchanged and right; one correct option; Ennusta (DC transformer 0 V, line loss) not revealed directly.
+batch delta review: new retrieval on effective voltage: 325 V / sqrt2 = 229.8 V -> 230 V, wrong 325*sqrt2 = 459.6 V -> 460 V recomputed; one correct option, feedback right (effective value heats a resistor like the DC value; cannot exceed peak). Does not reveal the transformer predictions.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5a30bb80c9d64eab
+CONTENT-HASH: 4ffbf41ced309f84
 
 ## Blocking
 
-
 ## Polish
-- (none)
+
 
 ## Checked
-batch delta review: f = 1/T = 1/5,0 s = 0,20 Hz recomputed; one correct option, 5,0 Hz and 2,0 Hz distractors with right feedback and a sound reasonableness check; Ennusta (position of max voltage, double frequency) not revealed.
+batch delta review: f = 1/T = 0,20 Hz recomputed; new distractor 12 (turns per minute) and its feedback right; 'jaksonaika' wording; lesson-answers keys; one correct option; no Ennusta revealed.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: efdf1846d978d198
+CONTENT-HASH: 1513035b0b2a06a9
 
 ## Blocking
 
-
 ## Polish
-- `lesson-answers.py` prints `round(v, 6)`, so `kertaus-F` (1.6e-13 N) and `kertaus-F-noB` print as 0.0; print them in another unit or unrounded.
+
 
 ## Checked
-batch delta review: F = |q|vB = 1.6e-13 N recomputed, perpendicular to v and B; |q|v = 3.2e-13 N distractor (wrong unit on purpose) and along-field distractor rightly refuted; one correct option; Ennusta (coil inside field, speed) not revealed.
+batch delta review: removed the rod-at-rest clause; distractor reworded to a bare number. F = |q|vB = 1.602e-19*2.0e6*0.50 = 1.6e-13 N recomputed; 3.2e-13 N distractor is |q|v numerically and its feedback is right; lesson-answers rounding of kertaus-F to 4 s.f. checked (1.602e-13, 3.204e-13). One correct option.

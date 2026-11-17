@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: f4cbf47027780357
+VERDICT: PASS
+CONTENT-HASH: 4a1385424308d9f5
 
 ## Blocking
-- **A (internal consistency, number).** The third option's feedback, unchanged, still ends "Taittumislaista taitekulma on noin $41{,}7^\circ$", the old water-to-air value. For the new air-to-glass task (n = 1,48, 30°) the refraction angle is $19{,}8^\circ$ (recomputed 19,75°), as the other two feedbacks say. Fix: $19{,}8^\circ$ there.
 
 ## Polish
-- (none)
+
 
 ## Checked
-batch delta review: new retrieval air -> fibre glass recomputed: asin(sin30°/1,48) = 19,75°; correct option (toward the normal) is the only correct one; Ennusta (critical angle, air vs cladding) not revealed; stale 41,7° in one feedback.
+batch delta review: round-1 blocking item fixed: retrieval now air -> glass n = 1,48 at 30°, α2 = 19,75° -> 19,8° recomputed, toward the normal the only correct option, both distractors' feedback right and no stale 41,7° left; lesson-answers key; lesson.md presentation only; does not reveal either Ennusta (critical angle, core/cladding).
