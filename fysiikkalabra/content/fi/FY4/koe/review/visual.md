@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9cc11d9de8effe6c
+CONTENT-HASH: 4a94cb53e481c169
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-- Economical review (teacher 2026-11-16): only the changed line judged, from the packet diff and source; no capture opened (text-only change, previous pass relied on for the rest).
-- Järkevyys row (solutions.md L437): "\approx 5{,}5\,\text{m/s}, lähes sama kuin a-kohdan nopeus" correct typography and wording.
+- Delta 8c (md-paragraphs): git diff origin/main of solutions.md; blank lines only, between sentences; words, numbers, formulas unchanged. Splits: Perustelu of q a/b/c/d, Mallivastaus/Vastaus of the box, uncertainty, impulse, force plate, helmet items (helmet text five paragraphs).
+- Opened FY4-koe-page-390-3.png and -4.png and stage-osa-1-390-2.png (390 px, task part; the solution blocks were not in these frames, so the split paragraphs themselves were judged from the diff, with the Sovella capture stage-fy4-s1-390-4.png as evidence for how continuation paragraphs render in the same solution component: even gaps, label on first paragraph, nothing clipped).
+- Breaks at sentence ends; each paragraph one thought; the helmet reading is clearer split.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

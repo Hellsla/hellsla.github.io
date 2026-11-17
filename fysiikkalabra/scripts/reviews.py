@@ -735,7 +735,8 @@ def _chapter_refs_renamed(old, new):
 
 
 def _json_leaves(v, path=(), key=None, out=None):
-    """{path: line} of a JSON value, one line per scalar (or list of scalars) as `_view` would print it ("correct": true).
+    """{path: line} of a JSON value, one line per scalar as `_view` would print it ("correct": true), a list's item with the
+    list's key ("prior": "…"), so a rule that compares two lines (a chapter reference renamed) sees one item.
     An object in a list is found by its "id" when every item of the list has a unique one (their order is then a leaf of
     its own, "id": [...], so a reordering is still a change), otherwise by its index."""
     out = {} if out is None else out
@@ -746,6 +747,8 @@ def _json_leaves(v, path=(), key=None, out=None):
         keyed = all(isinstance(i, str) for i in ids) and len(set(ids)) == len(ids)
         if keyed: out[path + ("#order",)] = f'"id": {json.dumps(ids, ensure_ascii=False)}'
         for i, x in enumerate(v): _json_leaves(x, path + ((f"id={ids[i]}",) if keyed else (i,)), key, out)
+    elif isinstance(v, list) and v and not any(isinstance(x, (dict, list)) for x in v):   # a list of strings or numbers ("prior", "vary"):
+        for i, x in enumerate(v): _json_leaves(x, path + (i,), key, out)                     # one line per item, as `_view` shows it, each with its key
     else:
         out[path] = (f'{json.dumps(key, ensure_ascii=False)}: ' if isinstance(key, str) else "") + json.dumps(v, ensure_ascii=False)
     return out
@@ -755,7 +758,7 @@ KEYED_JSON = ("exercises.json", "inquiry.json")
 
 
 def keyed_diff(a, b):
-    """The +/- lines of two JSON texts compared key by key (work queue 8m, coordinator 2026-11-17): a key whose value is
+    """The +/- lines of two JSON texts compared key by key (work queue 8o, coordinator 2026-11-17): a key whose value is
     the same in both is no change, wherever difflib would align its line, so options rewritten around an unchanged
     `"correct": true` change only their texts. Each changed key is its own block; None when either is not JSON."""
     try: la, lb = _json_leaves(json.loads(a)), _json_leaves(json.loads(b))
@@ -766,6 +769,23 @@ def keyed_diff(a, b):
         if x == y: continue
         out += ([f"-{x}"] if x is not None else []) + ([f"+{y}"] if y is not None else []) + [" "]
     return out
+
+
+def _json_strings(text, fn):
+    """A JSON text (as `_view` shows it) with `fn` applied to every string value, shown again as `_view` shows it; None
+    when the text is not JSON. A view that rewrites a text inside its strings so keeps the file comparable key by key."""
+    try: d = json.loads(text)
+    except (TypeError, json.JSONDecodeError): return None
+    def m(v):
+        if isinstance(v, dict): return {k: m(x) for k, x in v.items()}
+        if isinstance(v, list): return [m(x) for x in v]
+        return fn(v) if isinstance(v, str) else v
+    return json.dumps(m(d), indent=1, ensure_ascii=False)
+
+
+def _chain_string(s):
+    """One JSON string's text with its calculation chains in one form, the text between them as it is (chain_view)."""
+    return chain_view(s, "", False)
 
 
 def _class_diff(rel, a, b):
@@ -1748,6 +1768,9 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if (na, nb) != (a, b) and layout_marks(a) != layout_marks(b):   # a chain is re-broken when its formulas, display delimiters or aligned blocks change; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
                 if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
                 ga, gb = chain_view(a, rel, False), chain_view(b, rel, False)   # the text between the formulas as it is: lines stay lines
+                if rel.endswith(KEYED_JSON):           # an exercise set's or an inquiry's JSON stays JSON, so it is still compared key by key (work queue 8o)
+                    ja, jb = _json_strings(a, _chain_string), _json_strings(b, _chain_string)
+                    if ja is not None and jb is not None: ga, gb = ja, jb
                 if len(_changed(a, b)) > len(_changed(ga, gb)): cats.add("reflow"); a, b = ga, gb   # some of the change is a re-break; classify what else changed as usual
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff

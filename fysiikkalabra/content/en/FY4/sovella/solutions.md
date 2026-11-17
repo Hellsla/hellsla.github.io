@@ -80,11 +80,15 @@
   <foreignObject x="280.5" y="298.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{wax B: } 0.245\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The points of both runs are almost on a straight line, so the speed grows steadily and the acceleration is almost constant. A separate straight line is fitted to each set of points, passing between the points, and the points are not joined into a broken line. The small scatter of the points on both sides of the line is the random variation of the measurement. The line of wax A is steeper, so the skier accelerates faster with it.
+**Model answer:** The points of both runs are almost on a straight line, so the speed grows steadily and the acceleration is almost constant. A separate straight line is fitted to each set of points, passing between the points, and the points are not joined into a broken line.
+
+The small scatter of the points on both sides of the line is the random variation of the measurement. The line of wax A is steeper, so the skier accelerates faster with it.
 
 ### b)
 **Find:** the free-body diagram of the skier during the run, when air resistance is not taken into account
-**Principle:** The object is chosen to be the skier with equipment, and we look for what interacts with it: the Earth (weight) and the snow of the slope (normal force and friction). Air is left out according to the problem. The skier does not push with poles, so there is no forward force: the motion down the slope does not need a force of its own.
+**Principle:** The object is chosen to be the skier with equipment, and we look for what interacts with it: the Earth (weight) and the snow of the slope (normal force and friction). Air is left out according to the problem.
+
+The skier does not push with poles, so there is no forward force: the motion down the slope does not need a force of its own.
 
 <svg data-fig="fy4-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Two figures. On the left a picture of the situation: the skier glides upright down a snowy slope to the right, and a blue velocity arrow v points down the slope. On the right the skier&#x27;s free-body diagram, with the skier as a rectangle tilted parallel to the slope: the weight G from the centre straight down, the normal force N from the lower surface perpendicular to the slope and away from it, and sliding friction from the upper corner of the lower surface up the slope. The components of the weight as dashed lines from the centre: G x down the slope and G y perpendicular to the slope and towards it; G y is as long as the normal force and G x is longer than the friction. Separately an orange acceleration arrow a down the slope. Axes: x down the slope and y perpendicular to the slope, away from it. The slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart." style="max-width:100%;font-size:24px">
   <foreignObject x="80" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation}$</div></foreignObject>
@@ -158,12 +162,20 @@
 - The normal force $\overline{N}$ starts from the lower surface and points perpendicular to the slope, away from it. It is equal to the component of the weight perpendicular to the slope, so it is slightly smaller than the weight.
 - The sliding friction $\overline{F}_\mu$ starts from the upper corner of the lower surface and points up the slope, because the skier slides down the slope.
 
-The acceleration $\overline{a}$ points down the slope, so the sum of the forces also points down the slope: the component of the weight along the slope is larger than the friction. The acceleration arrow is drawn next to the object in its own colour, because it is not a force. The dashed arrows $G_x$ and $G_y$ in the model figure are the components of the weight along the slope and perpendicular to it, not new forces: together they replace the weight and help with the equations of motion in part c. They do not need to be drawn in your own free-body diagram. In the model figure the slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart: on a $4.0^\circ$ slope the normal force is almost equal to the weight and the friction is very short.
+The acceleration $\overline{a}$ points down the slope, so the sum of the forces also points down the slope: the component of the weight along the slope is larger than the friction.
+
+The acceleration arrow is drawn next to the object in its own colour, because it is not a force.
+
+The dashed arrows $G_x$ and $G_y$ in the model figure are the components of the weight along the slope and perpendicular to it, not new forces: together they replace the weight and help with the equations of motion in part c. They do not need to be drawn in your own free-body diagram.
+
+In the model figure the slope is drawn steeper and the friction larger than in the problem so that the arrows can be told apart: on a $4.0^\circ$ slope the normal force is almost equal to the weight and the friction is very short.
 
 ### c)
 **Given:** the angle of inclination of the slope $\alpha = 4.0^\circ$, $g = 9.81\,\text{m/s}^2$ and the graph of part a; mass $m = 72\,\text{kg}$
 **Find:** the coefficients of sliding friction $\mu_\text{A}$ and $\mu_\text{B}$
-**Principle:** The graphs are straight lines, so the acceleration is constant and it is the slope of the line. By Newton's second law the acceleration is caused by the sum of the forces, so the friction force is deduced from the acceleration and the coefficient of friction from that. On a slope it is best to choose the axes along the slope, because the motion is along the slope.
+**Principle:** The graphs are straight lines, so the acceleration is constant and it is the slope of the line. By Newton's second law the acceleration is caused by the sum of the forces, so the friction force is deduced from the acceleration and the coefficient of friction from that.
+
+On a slope it is best to choose the axes along the slope, because the motion is along the slope.
 **Free-body diagram:** The diagram of part b: the $x$-axis down the slope and the $y$-axis perpendicular to the slope, away from it. The components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. The normal force is in the direction of the $y$-axis and the friction opposite to the $x$-axis.
 ```voimakuvio
 pinta -4
@@ -179,14 +191,20 @@ komponentit G
 **Conversions:** Not needed, the accelerations are in the unit $\text{m/s}^2$.
 **Substitution:** $g\sin\alpha = 9.81\,\text{m/s}^2 \cdot \sin 4.0^\circ = 0.684\,\text{m/s}^2$ and $g\cos\alpha = 9.81\,\text{m/s}^2 \cdot \cos 4.0^\circ = 9.786\,\text{m/s}^2$. $\mu_\text{A} = \dfrac{(0.684 - 0.39)\,\text{m/s}^2}{9.786\,\text{m/s}^2} = 0.030$ and $\mu_\text{B} = \dfrac{(0.684 - 0.245)\,\text{m/s}^2}{9.786\,\text{m/s}^2} = 0.045$
 **Answer:** $\mu_\text{A} \approx 0.030$ and $\mu_\text{B} \approx 0.045$. The coefficient of friction has no unit. Two significant figures, because the slopes are read from the graph to about two figures.
-**Reasonableness:** The coefficient of friction between a waxed ski and snow is a few hundredths, much smaller than, for example, between a shoe and a floor. Both accelerations are smaller than $g\sin\alpha = 0.684\,\text{m/s}^2$, which the skier would get without friction. The mass $72\,\text{kg}$ was not needed, because the weight, the normal force and the friction are all proportional to the mass.
+**Reasonableness:** The coefficient of friction between a waxed ski and snow is a few hundredths, much smaller than, for example, between a shoe and a floor. Both accelerations are smaller than $g\sin\alpha = 0.684\,\text{m/s}^2$, which the skier would get without friction.
+
+The mass $72\,\text{kg}$ was not needed, because the weight, the normal force and the friction are all proportional to the mass.
 
 ### d)
 **Find:** how reliable the conclusion "wax A glides better" is
 **Principle:** The conclusion is reliable if the difference between the waxes is clearly larger than the uncertainty of the results and if the sources of error cannot turn the difference the other way round.
-**Model answer:** *Uncertainty.* The points are close to the lines, so the slope can be read to an accuracy of about $\pm 0.02\,\text{m/s}^2$. In the coefficient of friction this means $$\begin{aligned} &0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \\ &\approx 0.002 \end{aligned}$$. An uncertainty in the angle of the slope, for example $\pm 0.1^\circ$, changes both coefficients by about $0.002$ in the same direction, so it does not change the difference. The difference between the waxes, $0.045 - 0.030 = 0.015$, is many times larger.
+**Model answer:** *Uncertainty.* The points are close to the lines, so the slope can be read to an accuracy of about $\pm 0.02\,\text{m/s}^2$. In the coefficient of friction this means $$\begin{aligned} &0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \\ &\approx 0.002 \end{aligned}$$.
 
-*Air resistance.* Air resistance points up the slope like friction, so it reduces the acceleration. When it is left out, all of the slowing effect is counted as friction, and both coefficients of friction come out larger than the true ones. Air resistance grows with the speed, and in run A the skier moves faster, so the coefficient of wax A is overestimated more. The true advantage of wax A is therefore at least as large as the calculated one.
+An uncertainty in the angle of the slope, for example $\pm 0.1^\circ$, changes both coefficients by about $0.002$ in the same direction, so it does not change the difference. The difference between the waxes, $0.045 - 0.030 = 0.015$, is many times larger.
+
+*Air resistance.* Air resistance points up the slope like friction, so it reduces the acceleration. When it is left out, all of the slowing effect is counted as friction, and both coefficients of friction come out larger than the true ones.
+
+Air resistance grows with the speed, and in run A the skier moves faster, so the coefficient of wax A is overestimated more. The true advantage of wax A is therefore at least as large as the calculated one.
 
 *Conclusion.* With this data wax A glides better. However, each wax has been tried only once, and the snow or the wind may change between the runs. A more certain result is obtained by repeating the runs alternately with each wax.
 
@@ -254,11 +272,17 @@ komponentit G
   <foreignObject x="100.5" y="50.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$a_0 \approx 0.45\,\text{m/s}^2$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The acceleration decreases more and more steeply as the speed increases, so a straight line does not fit the points; a curve does. The friction force does not depend on the speed, but air resistance grows with the speed, so the decrease in the acceleration is caused by air resistance. At a very low speed air resistance is almost zero. When the curve is extended to the speed $v = 0$, it gives the acceleration without air resistance: $a_0 \approx 0.45\,\text{m/s}^2$.
+**Model answer:** The acceleration decreases more and more steeply as the speed increases, so a straight line does not fit the points; a curve does. The friction force does not depend on the speed, but air resistance grows with the speed, so the decrease in the acceleration is caused by air resistance.
+
+At a very low speed air resistance is almost zero. When the curve is extended to the speed $v = 0$, it gives the acceleration without air resistance: $a_0 \approx 0.45\,\text{m/s}^2$.
 
 Substituting $a_0$ into the equation of part c: $$\begin{aligned} &\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} \\ &= \dfrac{(0.684 - 0.45)\,\text{m/s}^2}{9.786\,\text{m/s}^2} \\ &\approx 0.024 \end{aligned}$$.
 
-The value $0.030$ of part c is therefore about $0.006$ too large, an error of about a fifth of the value of part c, because there the slowing effect of air resistance was counted as friction. This is a systematic error: it always changes the result in the same direction, and repeating the runs does not remove it. The error is about three times the uncertainty of reading the slope, $0.002$, but smaller than the difference between the waxes, $0.015$. In the slower run B air resistance has a smaller effect, so wax A glides better also after the correction.
+The value $0.030$ of part c is therefore about $0.006$ too large, an error of about a fifth of the value of part c, because there the slowing effect of air resistance was counted as friction.
+
+This is a systematic error: it always changes the result in the same direction, and repeating the runs does not remove it. The error is about three times the uncertainty of reading the slope, $0.002$, but smaller than the difference between the waxes, $0.015$.
+
+In the slower run B air resistance has a smaller effect, so wax A glides better also after the correction.
 
 ### Hyväksytään myös
 - In part c the slope can also be obtained from a straight-line fit by a calculator or spreadsheet ($0.390$ and $0.245\,\text{m/s}^2$) or from two other points of the line far from each other. Slopes of $0.37\text{–}0.41\,\text{m/s}^2$ and $0.23\text{–}0.26\,\text{m/s}^2$ are accepted.
@@ -278,7 +302,9 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### a)
 **Given:** the height difference from the starting platform to the beginning of the brake $h = 15.0\,\text{m}$, the rider starts from rest, $g = 9.81\,\text{m/s}^2$
 **Find:** the speed $v$ at the beginning of the brake with the instructor's model
-**Principle:** The instructor's figure is obtained when friction and air resistance are not taken into account. Then only the weight and the force of the cable through the trolley act on the rider. The force of the cable is perpendicular to the cable, that is, to the motion, so it does no work. Only the weight does work, so the mechanical energy is conserved: potential energy changes into kinetic energy. The shape and length of the cable then do not affect the final speed, only the height difference.
+**Principle:** The instructor's figure is obtained when friction and air resistance are not taken into account. Then only the weight and the force of the cable through the trolley act on the rider.
+
+The force of the cable is perpendicular to the cable, that is, to the motion, so it does no work. Only the weight does work, so the mechanical energy is conserved: potential energy changes into kinetic energy. The shape and length of the cable then do not affect the final speed, only the height difference.
 **Formula:** $mgh = \tfrac{1}{2}mv^2$, so $v = \sqrt{2gh}$
 **Conversions:** Not needed in the calculation. For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m}} = \sqrt{294.3}\,\text{m/s} = 17.2\,\text{m/s}$ and $17.2 \cdot 3.6\,\text{km/h} = 61.8\,\text{km/h}$
@@ -288,7 +314,9 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### b)
 **Given:** $m = 62\,\text{kg}$, $h = 15.0\,\text{m}$, the length of the cable from the starting platform to the beginning of the brake $s = 180\,\text{m}$ and the measured speed $v = 11.2\,\text{m/s}$
 **Find:** the force $F_\text{res}$ opposing the motion on average
-**Principle:** The measured $11.2\,\text{m/s} \approx 40\,\text{km/h}$ is much smaller than the $17.2\,\text{m/s}$ of part a, so mechanical energy is not conserved. The friction of the trolley wheels and air resistance oppose the motion for the whole distance and do negative work. By the work–energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is chosen to be the beginning of the brake, where the speed was measured. When the combined effect of the resisting forces is described by an average force $F_\text{res}$ pointing against the direction of motion, its work is $W = -F_\text{res}\,s$.
+**Principle:** The measured $11.2\,\text{m/s} \approx 40\,\text{km/h}$ is much smaller than the $17.2\,\text{m/s}$ of part a, so mechanical energy is not conserved. The friction of the trolley wheels and air resistance oppose the motion for the whole distance and do negative work.
+
+By the work–energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is chosen to be the beginning of the brake, where the speed was measured. When the combined effect of the resisting forces is described by an average force $F_\text{res}$ pointing against the direction of motion, its work is $W = -F_\text{res}\,s$.
 **Formula:** $mgh - F_\text{res}\,s = \tfrac{1}{2}mv^2$, so $F_\text{res} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 9123\,\text{J}$ and $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11.2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{res} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29.1\,\text{N}$
@@ -310,11 +338,17 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Principle:** The models differ in how the resisting force depends on the mass of the rider. From the energy equation we can see what each assumption means for the speed.
 **Model answer:** *The other instructor's model.* If the whole resisting force were friction proportional to the normal force and thus to the mass, $F_\text{res} = k\,mg$, the energy equation would be $mgh - k\,mg\,s = \tfrac{1}{2}mv^2$. The mass cancels, and every rider would get the same speed, $11.2\,\text{m/s}$.
 
-*The resisting forces separated.* The friction of the trolley wheels grows with the mass, because the normal force between the cable and the wheels grows with the rider's weight. Air resistance, on the other hand, depends on the speed and on the size and posture of the rider, not on the mass. For a heavy rider air resistance is therefore a smaller part of the weight, and they arrive faster than a light rider.
+*The resisting forces separated.* The friction of the trolley wheels grows with the mass, because the normal force between the cable and the wheels grows with the rider's weight. Air resistance, on the other hand, depends on the speed and on the size and posture of the rider, not on the mass.
+
+For a heavy rider air resistance is therefore a smaller part of the weight, and they arrive faster than a light rider.
 
 *The estimates.* The estimate $14\,\text{m/s}$ of part c is too large, because in it friction also stays the same, although in reality it grows with the mass. The other instructor's estimate $11.2\,\text{m/s}$ is too small, because air resistance does not grow with the mass. The true speed is between these.
 
-*Design.* When the models are compared, the brake should be designed for the larger speed, because a brake designed for too small a speed could fail. Neither number is a safe maximum speed, however. The $14\,\text{m/s}$ of part c is an estimate based on an assumption about the resisting force, and the $17.2\,\text{m/s}$ of the frictionless model is the larger reference value of this simplified energy model. Actually designing the brake requires separate safety margins, a load analysis and real measurements, for example radar measurements of the speeds of heavy riders.
+*Design.* When the models are compared, the brake should be designed for the larger speed, because a brake designed for too small a speed could fail.
+
+Neither number is a safe maximum speed, however. The $14\,\text{m/s}$ of part c is an estimate based on an assumption about the resisting force, and the $17.2\,\text{m/s}$ of the frictionless model is the larger reference value of this simplified energy model.
+
+Actually designing the brake requires separate safety margins, a load analysis and real measurements, for example radar measurements of the speeds of heavy riders.
 
 ### Yleisiä virheitä
 - In part b the whole difference between the potential energy and the kinetic energy is divided by the height $15.0\,\text{m}$ and not by the distance travelled by the resisting force, $180\,\text{m}$.
@@ -331,7 +365,9 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### a)
 **Given:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, sliding distance $s = 4.2\,\text{m}$, coefficient of friction $\mu = 0.75$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the cars' common speed $v'$ right after the collision
-**Principle:** After the collision the cars move as one object with the mass $m = m_\text{A} + m_\text{B}$. The road is horizontal, so there is no acceleration in the vertical direction and the normal force is equal to the weight, $N = mg$. The wheels are locked, so the sliding friction is $F_\mu = \mu N = \mu mg$, and it is the only horizontal force. Friction does negative work until the kinetic energy has been used up (the work–energy principle). Newton's second law gives the same result: the deceleration is $\mu g$.
+**Principle:** After the collision the cars move as one object with the mass $m = m_\text{A} + m_\text{B}$. The road is horizontal, so there is no acceleration in the vertical direction and the normal force is equal to the weight, $N = mg$. The wheels are locked, so the sliding friction is $F_\mu = \mu N = \mu mg$, and it is the only horizontal force.
+
+Friction does negative work until the kinetic energy has been used up (the work–energy principle). Newton's second law gives the same result: the deceleration is $\mu g$.
 **Formula:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, so $v' = \sqrt{2\mu g s}$
 **Conversions:** Not needed. The masses cancel, so they are not needed in this part.
 **Substitution:** $v' = \sqrt{2 \cdot 0.75 \cdot 9.81\,\text{m/s}^2 \cdot 4.2\,\text{m}} = \sqrt{61.8}\,\text{m/s} = 7.86\,\text{m/s}$
@@ -341,7 +377,9 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### b)
 **Given:** $m_\text{A} = 1250\,\text{kg}$ at rest, $m_\text{B} = 1700\,\text{kg}$ and $v' = 7.86\,\text{m/s}$ from part a
 **Find:** the speed $v_\text{B}$ of car B just before the collision, and whether the account is true
-**Principle:** In the collision the cars act on each other with large forces which, by Newton's third law, are equally large and opposite. These internal forces do not change the cars' total momentum. The external force, the friction of the road, is much smaller than the collision forces, and the collision lasts only a fraction of a second, so the impulse of friction during the collision is small. Therefore momentum is almost conserved. The positive direction is chosen to be the direction of motion of car B.
+**Principle:** In the collision the cars act on each other with large forces which, by Newton's third law, are equally large and opposite. These internal forces do not change the cars' total momentum.
+
+The external force, the friction of the road, is much smaller than the collision forces, and the collision lasts only a fraction of a second, so the impulse of friction during the collision is small. Therefore momentum is almost conserved. The positive direction is chosen to be the direction of motion of car B.
 
 <svg data-fig="fy4-s3-collision" viewBox="0 0 600 420" role="img" aria-label="Two pictures of the situation. At the top before the collision: car B comes from the left towards car A, which is at rest. Above car B there is a blue velocity arrow v B to the right and a purple momentum arrow p B to the right; the speed of car A is zero. At the bottom right after the collision: the cars are stuck together and move together to the right. Above them there is a blue velocity arrow v prime, which is shorter than v B, and a purple momentum arrow p prime, which is as long as p B. The positive direction is to the right. The arrows are to scale." style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="11.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{before}$</div></foreignObject>
@@ -482,7 +520,9 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### c)
 **Given:** the mass of the driver $m = 68\,\text{kg}$, the change in velocity $\Delta v = v' - 0 = 7.86\,\text{m/s}$ and the duration of the collision $\Delta t = 0.12\,\text{s}$
 **Find:** the average force $F_\text{avg}$ of the seat back on the driver and its comparison with the weight
-**Principle:** The driver is at first at rest and after the collision moves with the car at the speed $v'$. In the horizontal direction the driver's momentum is changed by the force of the seat back, so by the impulse principle its impulse is equal to the change in the driver's momentum. The force is not constant, so the average force is calculated.
+**Principle:** The driver is at first at rest and after the collision moves with the car at the speed $v'$.
+
+In the horizontal direction the driver's momentum is changed by the force of the seat back, so by the impulse principle its impulse is equal to the change in the driver's momentum. The force is not constant, so the average force is calculated.
 **Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, and the comparison $\dfrac{F_\text{avg}}{mg}$
 **Conversions:** Not needed.
 **Substitution:** $F_\text{avg} = \dfrac{68\,\text{kg} \cdot 7.86\,\text{m/s}}{0.12\,\text{s}} = 4455\,\text{N}$ and $\dfrac{F_\text{avg}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6.7$
@@ -492,9 +532,13 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 ### d)
 **Find:** why a head restraint and a flexible seat back reduce injuries
 **Principle:** The velocity of an object changes only when a force acts on it (Newton's first law). The impulse needed for the change in velocity is $m\,\Delta v$, and the average force is $F_\text{avg} = m\,\Delta v : \Delta t$.
-**Model answer:** In a rear-end collision the seat back pushes the driver's torso forward. The head is not attached to the seat back, so it tends to keep its old velocity, that is, to stay in place. The torso moves forward from under the head, and the neck bends backwards and stretches until the muscles and ligaments of the neck pull the head along. This sudden bending causes a neck injury, so-called whiplash.
+**Model answer:** In a rear-end collision the seat back pushes the driver's torso forward. The head is not attached to the seat back, so it tends to keep its old velocity, that is, to stay in place.
 
-When the head restraint is close to the back of the head, it pushes the head forward almost at the same time as the seat back pushes the torso. The head gets the impulse it needs directly from the head restraint, so the neck does not bend and does not have to transmit a large force to the head. A head restraint that is far away does not help, because the neck has time to bend before the head hits the restraint.
+The torso moves forward from under the head, and the neck bends backwards and stretches until the muscles and ligaments of the neck pull the head along. This sudden bending causes a neck injury, so-called whiplash.
+
+When the head restraint is close to the back of the head, it pushes the head forward almost at the same time as the seat back pushes the torso. The head gets the impulse it needs directly from the head restraint, so the neck does not bend and does not have to transmit a large force to the head.
+
+A head restraint that is far away does not help, because the neck has time to bend before the head hits the restraint.
 
 The change in the driver's velocity $\Delta v$ is the same whether the seat back is rigid or flexible. A flexible seat back lengthens the time $\Delta t$ in which the velocity changes, so the average force $F_\text{avg} = m\,\Delta v : \Delta t$ is smaller. For example, twice the time halves the average force.
 

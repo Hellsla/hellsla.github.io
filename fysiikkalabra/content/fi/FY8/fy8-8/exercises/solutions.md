@@ -290,3 +290,60 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \cdot 10^{-13}\,\text{J}} = 1{,}0780 \cdot 10^{-12}\,\text{m} = 1{,}0780\,\text{pm}$
 **Vastaus:** $1{,}08\,\text{pm}$, kolme merkitsevää numeroa. Tasot ovat perustilan yläpuolella $351{,}2$, $820{,}5$ ja $1501{,}4\,\text{keV}$, ja puuttuvan viivan energia on $1150{,}2\,\text{keV}$.
 **Järkevyys:** Puuttuva energia $1150{,}2\,\text{keV}$ on pienempi kuin suurin viiva $1501{,}4\,\text{keV}$ ja suurempi kuin viiva $820{,}5\,\text{keV}$. Siksi aallonpituus on pidempi kuin suurimman viivan $0{,}83\,\text{pm}$ ja lyhyempi kuin viivan $820{,}5\,\text{keV}$ aallonpituus $1{,}51\,\text{pm}$. Tulos $1{,}08\,\text{pm}$ on näiden välissä.
+
+## fy8-8-L2-09
+**Annettu:** Co-60-lähteen gammaspektrin kaksi vahvaa piikkiä (kuva) ja heikko lisäpiikki $826{,}1\,\text{keV}$, joka on siirtymä tasolta X alimmalle viritystasolle
+**Kysytty:** tason X energia $E_\text{X}$ perustilan yläpuolella
+**Periaate:** Gammafotonin energia on kahden ytimen energiatason erotus. Fotoni, joka vie ytimen perustilaan, kertoo suoraan sen tason energian, jolta se lähtee. Kun tunnetaan alimman viritystason energia, ylempi taso saadaan lisäämällä siihen siirtymän fotonin energia.
+**Kuvaajan lukeminen:** Vaaka-akselilla on fotonin energia, ja piikit ovat kohdissa $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$. Pienempienergiainen fotoni lähtee ensin ja suurempienergiainen vie ytimen perustilaan, joten alimman viritystason energia on suuremman piikin energia, $E_1 = 1332{,}5\,\text{keV}$. Pienempi piikki on siirtymä ylemmältä tasolta tälle tasolle.
+**Kaava:** $E_\gamma = E_\text{ylempi} - E_\text{alempi}$, josta $E_\text{X} = E_1 + E_\gamma$
+**Muunnokset:** Ei tarvita, koska kaikki energiat ovat kiloelektronivoltteina.
+**Sijoitus:** $E_\text{X} = E_1 + E_\gamma = 1332{,}5\,\text{keV} + 826{,}1\,\text{keV} = 2158{,}6\,\text{keV}$. Tasokaaviossa perustila on alhaalla, sen yläpuolella taso $1332{,}5\,\text{keV}$ ja ylimpänä taso X $2158{,}6\,\text{keV}$. Nuolet: X $\to$ alin viritystaso ($826{,}1\,\text{keV}$) ja alin viritystaso $\to$ perustila ($1332{,}5\,\text{keV}$).
+**Vastaus:** $2159\,\text{keV}$ eli $2{,}159\,\text{MeV}$ perustilan yläpuolella, neljä merkitsevää numeroa kuten annetuissa energioissa.
+**Järkevyys:** Taso X on alinta viritystasoa ylempänä, kuten pitää. Se on myös alempana kuin ylin taso, jolta vahvat piikit lähtevät: $$
+\begin{aligned}
+1332{,}5\,\text{keV} \\
+&+ 1173{,}2\,\text{keV} \\
+&= 2505{,}7\,\text{keV}
+\end{aligned}
+$$ on suurempi kuin $2158{,}6\,\text{keV}$.
+
+## fy8-8-L3-06
+**Annettu:** Co-60-lähteen gammaspektrin kaksi vahvaa piikkiä (kuva) ja heikot piikit $826{,}1\,\text{keV}$ (B $\to$ A) ja $347{,}1\,\text{keV}$ (C $\to$ B); $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** tasojen A, B ja C energiat, suoran siirtymän C $\to$ perustila fotonin energia $E_\text{C}$ ja aallonpituus $\lambda$ pikometreinä
+**Periaate:** Gammafotonin energia on kahden tason energiaerotus. Ylempi taso saadaan lisäämällä alemman tason energiaan siirtymän fotonin energia, ja tasot voivat olla vain sellaisia, että kaikki havaitut piikit selittyvät samoilla tasoilla. Fotonin aallonpituus saadaan energiasta kaavalla $\lambda = hc/E$.
+**Kuvaajan lukeminen:** Kuvassa on kaksi piikkiä, $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$. Kuvasta ei näe, kumpi niistä on siirtymä A $\to$ perustila.
+**Kaava:** $E_\text{A} = E_{\text{A} \to 0}$, $E_\text{B} = E_\text{A} + E_{\text{B} \to \text{A}}$, $E_\text{C} = E_\text{B} + E_{\text{C} \to \text{B}}$ ja $\lambda = \dfrac{hc}{E_\text{C}}$
+**Muunnokset:** $E_\text{C} = 2505{,}7\,\text{keV} = 2505{,}7 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}0141 \cdot 10^{-13}\,\text{J}$ ja lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Sijoitus:** a) Kokeillaan, että A $\to$ perustila on piikki $1332{,}5\,\text{keV}$. Silloin $$
+\begin{aligned}
+E_\text{A} &= 1332{,}5\,\text{keV} \\
+E_\text{B} &= 1332{,}5\,\text{keV} + 826{,}1\,\text{keV} \\
+&= 2158{,}6\,\text{keV} \\
+E_\text{C} &= 2158{,}6\,\text{keV} + 347{,}1\,\text{keV} \\
+&= 2505{,}7\,\text{keV}
+\end{aligned}
+$$ Tarkistus: siirtymä C $\to$ A on $$
+\begin{aligned}
+2505{,}7\,\text{keV} \\
+&- 1332{,}5\,\text{keV} \\
+&= 1173{,}2\,\text{keV}
+\end{aligned}
+$$, ja se on toinen vahva piikki. Kaikki neljä piikkiä selittyvät. Jos A $\to$ perustila olisi $1173{,}2\,\text{keV}$, olisi $E_\text{C} = 1173{,}2 + 826{,}1 + 347{,}1 = 2346{,}4\,\text{keV}$ ja siirtymä C $\to$ A olisi $1173{,}2\,\text{keV}$ eikä $1332{,}5\,\text{keV}$. Piikki $1332{,}5\,\text{keV}$ jäisi selittämättä, joten vaihtoehto ei kelpaa. Tasokaaviossa ovat perustila $0$, A $1332{,}5\,\text{keV}$, B $2158{,}6\,\text{keV}$ ja C $2505{,}7\,\text{keV}$; nuolet C $\to$ B ($347{,}1\,\text{keV}$), B $\to$ A ($826{,}1\,\text{keV}$), C $\to$ A ($1173{,}2\,\text{keV}$) ja A $\to$ perustila ($1332{,}5\,\text{keV}$).
+b) Suoran siirtymän fotonin energia on tason C energia: $E_\text{C} = 2505{,}7\,\text{keV}$.
+c) $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\lambda &= \dfrac{hc}{E_\text{C}} \\
+&= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}0141 \cdot 10^{-13}\,\text{J}} \\
+&= 4{,}9487 \cdot 10^{-13}\,\text{m} \\
+&= 0{,}49487\,\text{pm}
+\end{aligned}
+$$
+**Vastaus:** $0{,}495\,\text{pm}$, kolme merkitsevää numeroa kuten annetuissa aallonpituuden vakioissa. Tasot ovat $1332{,}5$, $2158{,}6$ ja $2505{,}7\,\text{keV}$ perustilan yläpuolella, ja suoran siirtymän energia on $2505{,}7\,\text{keV}$.
+**Järkevyys:** Suoran siirtymän energia on suurempi kuin kumpikaan vahvoista piikeistä ($1332{,}5\,\text{keV}$ ja $1173{,}2\,\text{keV}$), joten aallonpituuden pitää olla lyhyempi kuin niiden aallonpituudet $0{,}93\,\text{pm}$ ja $1{,}06\,\text{pm}$. Tulos $0{,}495\,\text{pm}$ on lyhyempi. Lisäksi $347{,}1 + 826{,}1 = 1173{,}2$, joten kaksi reittiä tasolta C tasolle A antavat saman energian.

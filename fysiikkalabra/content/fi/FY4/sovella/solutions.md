@@ -158,7 +158,13 @@
 - Tukivoima $\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulospäin. Se on yhtä suuri kuin painon rinnettä vastaan kohtisuora komponentti, joten se on hieman painoa pienempi.
 - Liukukitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylöspäin, koska hiihtäjä liukuu rinnettä alas.
 
-Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka. Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska se ei ole voima. Mallikuvan katkoviivanuolet $G_x$ ja $G_y$ ovat painon komponentit rinteen suuntaan ja sitä vastaan kohtisuoraan, eivät uusia voimia: ne korvaavat yhdessä painon ja auttavat c-kohdan liikeyhtälöissä. Omaan voimakuvioon niitä ei tarvitse piirtää. Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
+Kiihtyvyys $\overline{a}$ osoittaa rinnettä alas, joten voimien summa osoittaa myös rinnettä alas: painon rinteen suuntainen komponentti on suurempi kuin kitka.
+
+Kiihtyvyysnuoli piirretään kappaleen viereen omalla värillään, koska se ei ole voima.
+
+Mallikuvan katkoviivanuolet $G_x$ ja $G_y$ ovat painon komponentit rinteen suuntaan ja sitä vastaan kohtisuoraan, eivät uusia voimia: ne korvaavat yhdessä painon ja auttavat c-kohdan liikeyhtälöissä. Omaan voimakuvioon niitä ei tarvitse piirtää.
+
+Mallikuvassa rinne on piirretty jyrkemmäksi ja kitka suuremmaksi kuin tehtävässä, jotta nuolet erottuvat: $4{,}0^\circ$:n rinteessä tukivoima on lähes yhtä suuri kuin paino ja kitka hyvin lyhyt.
 
 ### c)
 **Annettu:** rinteen kaltevuuskulma $\alpha = 4{,}0^\circ$, $g = 9{,}81\,\text{m/s}^2$ ja a-kohdan kuvaaja; massa $m = 72\,\text{kg}$
@@ -258,7 +264,11 @@ komponentit G
 
 Sijoitetaan $a_0$ c-kohdan yhtälöön: $$\begin{aligned} &\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} \\ &= \dfrac{(0{,}684 - 0{,}45)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} \\ &\approx 0{,}024 \end{aligned}$$.
 
-c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin viidesosa c-kohdan arvosta, koska siinä ilmanvastuksen hidastava vaikutus laskettiin kitkan ansioksi. Kyse on systemaattisesta virheestä: se muuttaa tulosta aina samaan suuntaan, eikä laskujen toistaminen poista sitä. Virhe on noin kolme kertaa niin suuri kuin kulmakertoimen lukemisen epävarmuus $0{,}002$, mutta pienempi kuin voiteiden ero $0{,}015$. Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu paremmin myös korjauksen jälkeen.
+c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin viidesosa c-kohdan arvosta, koska siinä ilmanvastuksen hidastava vaikutus laskettiin kitkan ansioksi.
+
+Kyse on systemaattisesta virheestä: se muuttaa tulosta aina samaan suuntaan, eikä laskujen toistaminen poista sitä. Virhe on noin kolme kertaa niin suuri kuin kulmakertoimen lukemisen epävarmuus $0{,}002$, mutta pienempi kuin voiteiden ero $0{,}015$.
+
+Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu paremmin myös korjauksen jälkeen.
 
 ### Hyväksytään myös
 - c-kohdassa kulmakertoimen saa myös laskimen tai taulukkolaskennan suoran sovituksesta ($0{,}390$ ja $0{,}245\,\text{m/s}^2$) tai kahdesta muusta kaukana toisistaan olevasta suoran pisteestä. Kulmakertoimet $0{,}37\text{–}0{,}41\,\text{m/s}^2$ ja $0{,}23\text{–}0{,}26\,\text{m/s}^2$ hyväksytään.
@@ -331,7 +341,9 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 ### a)
 **Annettu:** $m_\text{A} = 1250\,\text{kg}$, $m_\text{B} = 1700\,\text{kg}$, liukumamatka $s = 4{,}2\,\text{m}$, kitkakerroin $\mu = 0{,}75$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** autojen yhteinen nopeus $v'$ heti törmäyksen jälkeen
-**Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä ja tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liukukitka on $F_\mu = \mu N = \mu mg$, ja se on ainoa vaakasuora voima. Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
+**Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä ja tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liukukitka on $F_\mu = \mu N = \mu mg$, ja se on ainoa vaakasuora voima.
+
+Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
 **Kaava:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, josta $v' = \sqrt{2\mu g s}$
 **Muunnokset:** Ei tarvita. Massat supistuvat, joten niitä ei tarvita tässä kohdassa.
 **Sijoitus:** $v' = \sqrt{2 \cdot 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}2\,\text{m}} = \sqrt{61{,}8}\,\text{m/s} = 7{,}86\,\text{m/s}$
