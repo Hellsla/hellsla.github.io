@@ -106,7 +106,9 @@ Boiling water: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.10\,\text{kg} = 2
 
 From smallest to largest: teapot, ice bag, pan, boiling water. In order of mass from smallest to largest it would be boiling water $0.10\,\text{kg}$, ice bag $0.50\,\text{kg}$, pan $0.60\,\text{kg}$ and teapot $1.0\,\text{kg}$.
 
-The order of the heat is almost the opposite, so mass does not decide. Melting ice needs less than warming a panful of water to the boiling point, so a change of state is not always the biggest item. Estimate: vaporisation needs a lot even for a small mass because $r$ is large, and so only $0.10\,\text{kg}$ is enough to pass all the other batches.
+The order of the heat is almost the opposite, so mass does not decide. Melting ice needs less than warming a panful of water to the boiling point, so a change of state is not always the biggest item.
+
+Estimate: vaporisation needs a lot even for a small mass because $r$ is large, and so only $0.10\,\text{kg}$ is enough to pass all the other batches.
 
 ## fy3-7-L3-01
 **Given:** juice (the $c$ of water) $m_1 = 0.35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; ice $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$

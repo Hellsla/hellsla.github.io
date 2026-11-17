@@ -106,7 +106,9 @@ Kiehuva vesi: $Q = 2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}10\,\text{kg} = 
 
 Pienimmästä suurimpaan: teekannu, jääpussi, kattila, kiehuva vesi. Massan mukaan pienimmästä suurimpaan järjestys olisi kiehuva vesi $0{,}10\,\text{kg}$, jääpussi $0{,}50\,\text{kg}$, kattila $0{,}60\,\text{kg}$ ja teekannu $1{,}0\,\text{kg}$.
 
-Lämmön järjestys on lähes päinvastainen, joten massa ei ratkaise. Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen kiehumispisteeseen, joten olomuodon muutos ei aina ole suurin menoerä. Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon, koska $r$ on suuri, ja siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
+Lämmön järjestys on lähes päinvastainen, joten massa ei ratkaise. Jään sulaminen vaatii vähemmän kuin kattilallisen lämmittäminen kiehumispisteeseen, joten olomuodon muutos ei aina ole suurin menoerä.
+
+Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon, koska $r$ on suuri, ja siksi vain $0{,}10\,\text{kg}$ riittää ohittamaan kaikki muut erät.
 
 ## fy3-7-L3-01
 **Annettu:** mehu (veden $c$) $m_1 = 0{,}35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; jää $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$

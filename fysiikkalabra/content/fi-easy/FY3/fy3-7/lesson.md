@@ -230,7 +230,9 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Vaa'an päällä
 
 **Tunnetut ja kysytty.** Teho on $P = 1000\,\text{W}$ ja aika on $t = 300\,\text{s}$.
 
-Höyrystynyt massa on sama kuin vaa'an lukeman muutos: $\Delta m = 128\,\text{g}$. Vesi kiehuu, joten se on $100\,{}^\circ\text{C}$:ssa.
+Höyrystynyt massa on sama kuin vaa'an lukeman muutos: $\Delta m = 128\,\text{g}$.
+
+Vesi kiehuu, joten se on $100\,{}^\circ\text{C}$:ssa.
 
 Kysytään ominaishöyrystymislämpöä $r$.
 

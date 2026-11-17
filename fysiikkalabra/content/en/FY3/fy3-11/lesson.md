@@ -182,7 +182,9 @@ The efficiencies $\eta$ and the power of the waste heat $P_2$ are asked for in b
 
 <!-- vaihe -->
 
-**Principle.** Efficiency is the useful power divided by the power supplied; it is calculated from powers just like from energies, because both are energy in the same time. Energy is conserved, so the fuel power is divided into the useful power and the waste heat. In electricity production alone only the electricity is useful; in combined production both the electricity and the district heating are.
+**Principle.** Efficiency is the useful power divided by the power supplied; it is calculated from powers just like from energies, because both are energy in the same time.
+
+Energy is conserved, so the fuel power is divided into the useful power and the waste heat. In electricity production alone only the electricity is useful; in combined production both the electricity and the district heating are.
 
 <!-- vaihe -->
 
@@ -229,7 +231,11 @@ The efficiencies are quotients, so they have as many figures as the least precis
 
 <!-- vaihe -->
 
-**Reasonableness.** Energy is conserved: $190\,\text{MW} + 310\,\text{MW} = 500\,\text{MW}$ and $$\begin{aligned} &150\,\text{MW} + 290\,\text{MW} + 60\,\text{MW} \\ &= 500\,\text{MW} \end{aligned}$$. The efficiency of electricity production stays clearly below $100\,\%$, because a heat engine must give up part of the heat to something colder. Even the overall efficiency is not $100\,\%$, because part of the heat leaves with the flue gases and other losses. Less electricity is obtained in combined production because the steam is condensed at a higher temperature so that its heat is suitable for district heating. The energy of the fuel is still put to much better use.
+**Reasonableness.** Energy is conserved: $190\,\text{MW} + 310\,\text{MW} = 500\,\text{MW}$ and $$\begin{aligned} &150\,\text{MW} + 290\,\text{MW} + 60\,\text{MW} \\ &= 500\,\text{MW} \end{aligned}$$. The efficiency of electricity production stays clearly below $100\,\%$, because a heat engine must give up part of the heat to something colder.
+
+Even the overall efficiency is not $100\,\%$, because part of the heat leaves with the flue gases and other losses.
+
+Less electricity is obtained in combined production because the steam is condensed at a higher temperature so that its heat is suitable for district heating. The energy of the fuel is still put to much better use.
 
 ## Common misconception
 Many people think that better technology could make a heat engine almost perfect, so that all the heat would turn into work. Reducing friction and other losses helps, but part of the heat must always be given up to a colder environment, so the efficiency of a heat engine stays clearly below $100\,\%$. The frictionless piston of the simulation shows the reason: for the piston to be brought down with less work than it took to raise it, the gas has to be cooled, and in the cooling heat is transferred to the cold water. The limit applies to a machine that turns heat into work, not to all devices: for example, in an electric heater practically all the electrical energy increases the internal energy of the resistor and is transferred as heat to the room.

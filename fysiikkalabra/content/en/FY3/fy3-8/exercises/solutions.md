@@ -97,7 +97,10 @@ $\dfrac{\Delta l_\text{B}}{\Delta l_\text{A}} = \dfrac{\alpha l_\text{B} \Delta 
 The ratio of the initial lengths is $l_\text{B} : l_\text{A} = 2.0\,\text{m} : 4.0\,\text{m} = 0.5$.
 The ratio of the changes in temperature is $\Delta T_\text{B} : \Delta T_\text{A} = 30\,\text{K} : 10\,\text{K} = 3$.
 So $\Delta l_\text{B} : \Delta l_\text{A} = 0.5 \cdot 3 = 1.5$, that is, the change in length becomes $1.5$ times as large.
-Estimate: if the coefficient is about $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, rod A lengthens by about $0.5\,\text{mm}$ and rod B by about $0.7\,\text{mm}$. The shorter rod lengthens more, because its temperature rises three-fold even though its initial length is only half. The change would triple only if the rods were equally long.
+
+Estimate: if the coefficient is about $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, rod A lengthens by about $0.5\,\text{mm}$ and rod B by about $0.7\,\text{mm}$.
+
+The shorter rod lengthens more, because its temperature rises three-fold even though its initial length is only half. The change would triple only if the rods were equally long.
 
 ## fy3-8-L3-01
 **Given:** steel gear, diameter of the hole $d_0 = 75.000\,\text{mm}$ at the temperature $T_0 = 20\,{}^\circ\text{C}$, diameter of the axle $d = 75.090\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
@@ -159,7 +162,20 @@ $$\begin{aligned} \Delta l &= 23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2.0\,\
 **Conversions:** The volumes are in the same unit, so $\Delta V$ and $V_0$ cancel in the same unit. The change in temperature is $\Delta T = 10\,{}^\circ\text{C} - 4\,{}^\circ\text{C} = 6\,\text{K}$, the same in kelvins. The result is given in the unit $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Substitution:** $\Delta V = 1.00030\,\text{dm}^3 - 1.00003\,\text{dm}^3 = 0.00027\,\text{dm}^3$, and
 $\gamma = \dfrac{0.00027\,\text{dm}^3}{1.00003\,\text{dm}^3 \cdot 6\,\text{K}} = 0.000045\,\tfrac{1}{\text{K}} = 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
-**Answer:** b) $\gamma \approx 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, two significant figures, because the change in volume $0.00027\,\text{dm}^3$ is known to two figures. Part a): the smallest volume is at $4\,{}^\circ\text{C}$, so the density is greatest there. Model answer c): the $\gamma$ of water is not constant; it grows with temperature and is close to zero near $4\,{}^\circ\text{C}$. So the table value $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ cannot be used over this range. Unlike most liquids, water shrinks when it warms up over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$. In winter the surface water of a lake cools, becomes denser and sinks until all the water is at about $4\,{}^\circ\text{C}$. After that the colder water is lighter and stays at the surface, so the water at the bottom stays at about $4\,{}^\circ\text{C}$ and the lake freezes from the surface.
+**Answer:** b) $\gamma \approx 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, two significant figures, because the change in volume $0.00027\,\text{dm}^3$ is known to two figures.
+
+Part a): the smallest volume is at $4\,{}^\circ\text{C}$, so the density is greatest there.
+
+Model answer c): the $\gamma$ of water is not constant; it grows with temperature and is close to zero near $4\,{}^\circ\text{C}$.
+
+So the table value $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ cannot be used over this range.
+
+Unlike most liquids, water shrinks when it warms up over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$.
+
+In winter the surface water of a lake cools, becomes denser and sinks until all the water is at about $4\,{}^\circ\text{C}$.
+
+After that the colder water is lighter and stays at the surface, so the water at the bottom stays at about $4\,{}^\circ\text{C}$ and the lake freezes from the surface.
+
 **Reasonableness:** The coefficient $45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is clearly smaller than the comparison value of part c), about a fifth of it, because $\gamma$ grows with temperature. Over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ the volume decreases, so the coefficient there is negative.
 
 ## fy3-8-L2-06
@@ -170,7 +186,16 @@ $\gamma = \dfrac{0.00027\,\text{dm}^3}{1.00003\,\text{dm}^3 \cdot 6\,\text{K}} =
 **Formula:** $\Delta l = \alpha l_0 \Delta T$, so $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
 **Conversions:** $\Delta l = 1.10\,\text{mm} = 0.00110\,\text{m}$, so that the units cancel. The result is given in the unit $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Substitution:** $\alpha = \dfrac{0.00110\,\text{m}}{0.800\,\text{m} \cdot 60\,\text{K}} = \dfrac{0.00110}{48}\,\tfrac{1}{\text{K}} = 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
-**Answer:** a) $\alpha \approx 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, three significant figures, because the change in length $1.10\,\text{mm}$ is given to three figures. Model answer b): the coefficient is closest to the value for aluminium, $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, so the rod is aluminium. The value for steel, $12$, and for copper, $17$, are clearly further away. The measurement points usually do not lie exactly on the same straight line because of measurement uncertainty: every reading has an uncertainty, and the rod does not warm up completely evenly. So the variation of the steps $0.17\ldots 0.20\,\text{mm}$ is to be expected, and a straight line fitted through all the points gives the same slope as the end points, $\alpha \approx 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
+**Answer:** a) $\alpha \approx 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, three significant figures, because the change in length $1.10\,\text{mm}$ is given to three figures.
+
+Model answer b): the coefficient is closest to the value for aluminium, $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, so the rod is aluminium.
+
+The value for steel, $12$, and for copper, $17$, are clearly further away.
+
+The measurement points usually do not lie exactly on the same straight line because of measurement uncertainty: every reading has an uncertainty, and the rod does not warm up completely evenly.
+
+So the variation of the steps $0.17\ldots 0.20\,\text{mm}$ is to be expected, and a straight line fitted through all the points gives the same slope as the end points, $\alpha \approx 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
+
 **Reasonableness:** The expected change in the length of an aluminium rod over the whole range is $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 0.800\,\text{m} \cdot 60\,\text{K} = 1.10\,\text{mm}$, which matches the measured value. For steel it would be $0.58\,\text{mm}$ and for copper $0.82\,\text{mm}$, which differ from the measured value clearly more than the accuracy of the dial gauge, $0.01\,\text{mm}$.
 
 ## fy3-8-L2-07
@@ -181,7 +206,12 @@ $\gamma = \dfrac{0.00027\,\text{dm}^3}{1.00003\,\text{dm}^3 \cdot 6\,\text{K}} =
 **Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. The change in length $10\,\text{mm} = 0.010\,\text{m}$, so that $l_0$ comes out in metres.
 **Substitution:** a) $\Delta l = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 1.00\,\text{m} \cdot 80\,\text{K} = 0.00096\,\text{m} = 0.96\,\text{mm}$. c) The required change is $\Delta l = \dfrac{0.5\,\text{mm}}{0.050} = 10\,\text{mm} = 0.010\,\text{m}$, so
 $l_0 = \dfrac{0.010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = 10.4\,\text{m}$
-**Answer:** c) $l_0 \approx 10.4\,\text{m}$, three significant figures as calculated; the reading accuracy $0.5\,\text{mm}$ is a one-figure value, so in practice the length is about $10\,\text{m}$. Model answer b): the change in part a), $0.96\,\text{mm}$, is only about twice the reading accuracy of the tape measure, $0.5\,\text{mm}$, so the measurement uncertainty could be over half of the result ($52\,\%$) and the coefficient $\alpha$ could not be obtained reliably. A small change is measured with an instrument that reads to a hundredth of a millimetre, such as a dial gauge whose probe is against the end of the tube. A longer tube or a greater change in temperature would also reduce the relative uncertainty.
+**Answer:** c) $l_0 \approx 10.4\,\text{m}$, three significant figures as calculated; the reading accuracy $0.5\,\text{mm}$ is a one-figure value, so in practice the length is about $10\,\text{m}$.
+
+Model answer b): the change in part a), $0.96\,\text{mm}$, is only about twice the reading accuracy of the tape measure, $0.5\,\text{mm}$, so the measurement uncertainty could be over half of the result ($52\,\%$) and the coefficient $\alpha$ could not be obtained reliably.
+
+A small change is measured with an instrument that reads to a hundredth of a millimetre, such as a dial gauge whose probe is against the end of the tube. A longer tube or a greater change in temperature would also reduce the relative uncertainty.
+
 **Reasonableness:** A check: $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 10.4\,\text{m} \cdot 80\,\text{K} = 10\,\text{mm}$, and $5.0\,\%$ of that is $0.5\,\text{mm}$. A ten-metre steam pipe is impractical in a school laboratory, so a dial gauge is a more sensible solution than a longer tube. The reading accuracy of a dial gauge, $0.01\,\text{mm}$, would be only $1\,\%$ of the change $0.96\,\text{mm}$.
 
 ## fy3-8-L3-04
@@ -194,7 +224,14 @@ $l_0 = \dfrac{0.010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\
 **Substitution:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 44\,\text{K} = 0.0132\,\text{m} = 13.2\,\text{mm}$
 b) The change in winter is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 40\,\text{K} = 0.0120\,\text{m} = 12.0\,\text{mm}$, so $g_\text{max} = 30\,\text{mm} - 12.0\,\text{mm} = 18\,\text{mm}$.
-**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$, in practice $13\,\text{mm}$, and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are acceptable rounded to two figures. Model answer c): the gap $15\,\text{mm}$ is in the range $13.2\,\text{mm} \ldots 18\,\text{mm}$, so it is acceptable when installing at $8\,{}^\circ\text{C}$: in summer a gap of $15\,\text{mm} - 13.2\,\text{mm} = 1.8\,\text{mm}$ is left, and in winter it is $$\begin{aligned} &15\,\text{mm} + 12.0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$. If the rails were installed in a frost at $-32\,{}^\circ\text{C}$ with the same gap, the rail would warm up to summer by $\Delta T = 84\,\text{K}$ and lengthen by $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 84\,\text{K} \\ &= 25.2\,\text{mm} \end{aligned}$$. That is more than the gap of $15\,\text{mm}$, so the gap would close and the rails would be pressed against each other. So the installation gap depends on the installation temperature.
+**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$, in practice $13\,\text{mm}$, and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are acceptable rounded to two figures.
+
+Model answer c): the gap $15\,\text{mm}$ is in the range $13.2\,\text{mm} \ldots 18\,\text{mm}$, so it is acceptable when installing at $8\,{}^\circ\text{C}$: in summer a gap of $15\,\text{mm} - 13.2\,\text{mm} = 1.8\,\text{mm}$ is left, and in winter it is $$\begin{aligned} &15\,\text{mm} + 12.0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$.
+
+If the rails were installed in a frost at $-32\,{}^\circ\text{C}$ with the same gap, the rail would warm up to summer by $\Delta T = 84\,\text{K}$ and lengthen by $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 84\,\text{K} \\ &= 25.2\,\text{mm} \end{aligned}$$.
+
+That is more than the gap of $15\,\text{mm}$, so the gap would close and the rails would be pressed against each other. So the installation gap depends on the installation temperature.
+
 **Reasonableness:** The change over the whole year is $$\begin{aligned} &12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 84\,\text{K} \\ &= 25.2\,\text{mm} \end{aligned}$$, and it is the sum $13.2\,\text{mm} + 12.0\,\text{mm}$, so the width of the range $$\begin{aligned} &g_\text{max} - g_\text{min} \\ &= 18\,\text{mm} - 13.2\,\text{mm} \\ &= 4.8\,\text{mm} \\ &= 30\,\text{mm} - 25.2\,\text{mm} \end{aligned}$$ matches. In practice the gap is chosen from the middle of the range, about $15\,\text{mm}$, and nowadays long rails are welded together without a gap.
 
 ## fy3-8-L3-05
@@ -205,7 +242,14 @@ b) The change in winter is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\t
 **Conversions:** $V_0 = 1.00\,\text{cm}^3 = 1000\,\text{mm}^3$, so that the volumes and the area of the capillary are in the same unit, and $$\begin{aligned} \Delta T &= 30\,{}^\circ\text{C} - 10\,{}^\circ\text{C} \\ &= 20\,\text{K} \end{aligned}$$. The area of the capillary is $A = \pi \cdot (0.30\,\text{mm})^2 = 0.283\,\text{mm}^2$.
 **Substitution:** $$\begin{aligned} \Delta V_\text{ethanol} &= 1.1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 22.0\,\text{mm}^3 \end{aligned}$$ and $$\begin{aligned} \Delta V_\text{bulb} &= 3 \cdot 9.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 0.54\,\text{mm}^3 \end{aligned}$$. So
 $h = \dfrac{22.0\,\text{mm}^3 - 0.54\,\text{mm}^3}{0.283\,\text{mm}^2} = 75.9\,\text{mm}$
-**Answer:** a) $h \approx 75.9\,\text{mm}$, three significant figures as calculated; the coefficients $1.1 \cdot 10^{-3}$ and $9.0 \cdot 10^{-6}$ are values with 2–3 figures, so in practice the rise is about $76\,\text{mm}$. Model answer b): without the expansion of the bulb the rise would be $\dfrac{22.0\,\text{mm}^3}{0.283\,\text{mm}^2} = 77.8\,\text{mm}$, that is $\dfrac{77.8\,\text{mm} - 75.9\,\text{mm}}{75.9\,\text{mm}} = 2.5\,\%$ greater. So the expansion of the bulb is a small but not negligible correction. Model answer c): with water $\gamma = 0.21 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ the growth in volume would be $4.2\,\text{mm}^3$, of which the bulb's share $0.54\,\text{mm}^3$ leaves $3.66\,\text{mm}^3$, that is a rise of only $12.9\,\text{mm}$. That is less than a fifth of the rise of the ethanol, so the scale would be dense and the uncertainty of reading large. In addition, water shrinks over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ and freezes, so the column would not work correctly in the cold.
+**Answer:** a) $h \approx 75.9\,\text{mm}$, three significant figures as calculated; the coefficients $1.1 \cdot 10^{-3}$ and $9.0 \cdot 10^{-6}$ are values with 2–3 figures, so in practice the rise is about $76\,\text{mm}$.
+
+Model answer b): without the expansion of the bulb the rise would be $\dfrac{22.0\,\text{mm}^3}{0.283\,\text{mm}^2} = 77.8\,\text{mm}$, that is $\dfrac{77.8\,\text{mm} - 75.9\,\text{mm}}{75.9\,\text{mm}} = 2.5\,\%$ greater. So the expansion of the bulb is a small but not negligible correction.
+
+Model answer c): with water $\gamma = 0.21 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ the growth in volume would be $4.2\,\text{mm}^3$, of which the bulb's share $0.54\,\text{mm}^3$ leaves $3.66\,\text{mm}^3$, that is a rise of only $12.9\,\text{mm}$.
+
+That is less than a fifth of the rise of the ethanol, so the scale would be dense and the uncertainty of reading large. In addition, water shrinks over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ and freezes, so the column would not work correctly in the cold.
+
 **Reasonableness:** The density of the scale is $\dfrac{75.9\,\text{mm}}{20\,\text{K}} = 3.8\,\tfrac{\text{mm}}{\text{K}}$, so reading one degree is possible, and the length of the column, $76\,\text{mm}$, fits in an ordinary thermometer. The relative growth in the volume of the ethanol is $1.1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \cdot 20\,\text{K} = 2.2\,\%$ and that of the bulb only $0.054\,\%$, so the effect of the bulb is small, as the result shows.
 
 ## fy3-8-L1-09
@@ -238,7 +282,23 @@ $h = \dfrac{22.0\,\text{mm}^3 - 0.54\,\text{mm}^3}{0.283\,\text{mm}^2} = 75.9\,\
 **Conversions:** The change in temperature is the same in degrees Celsius and in kelvins, so $\Delta T = 0.30\,\text{K}$. The height is in metres, so $\Delta h$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** a) $$\begin{aligned} v &= \dfrac{\Delta h_\text{sea}}{\Delta t} \\ &= \dfrac{115.8\,\text{mm}}{33.8\,\text{a}} \\ &= 3.43\,\tfrac{\text{mm}}{\text{a}} \end{aligned}$$ c) $$\begin{aligned} \Delta h &= \gamma h_0 \Delta T \\ &= 2.0 \cdot 10^{-4}\,\tfrac{1}{\text{K}} \cdot 1000\,\text{m} \\ &\cdot 0.30\,\text{K} \\ &= 0.060\,\text{m} \\ &= 60\,\text{mm} \end{aligned}$$
 **Answer:** c) $\Delta h = 60\,\text{mm}$, that is $6.0\,\text{cm}$, two significant figures, like the data $0.30\,{}^\circ\text{C}$ and $2.0 \cdot 10^{-4}\,\tfrac{1}{\text{K}}$. a) With this dated material $v \approx 3.4\,\tfrac{\text{mm}}{\text{a}}$. With values read on another day the result can differ slightly from this: the correct answer is the rate calculated correctly from your own readings, when the reading day and the values read are stated.
-**Model answer a):** The sea level has risen through the whole measurement period: from the beginning of 1993 to October 2026 by about $116\,\text{mm}$, on average about $3.4\,\text{mm}$ per year. The curve does not rise evenly: it shows a rise and a fall every year. According to the source, the data includes the seasonal cycle of the sea level. A rate calculated from the two end points tells neither this variation nor whether the rise has become faster during the period. The text of the page gives the rise as about $91\,\text{mm}$, but the box of the latest measurement shows $115.8\,\text{mm}$. With the value $91\,\text{mm}$ the rate would be $2.7\,\tfrac{\text{mm}}{\text{a}}$, so the answer has to state which values and times were used.
-**Model answer b):** When seawater warms, the thermal motion of its particles becomes stronger and the mean distance between the particles grows. The particles themselves do not get bigger. The same amount of water therefore takes up a larger volume: $\Delta V = \gamma V_0 \Delta T$. The bottom and the edges of the ocean basin do not give way, so the extra volume fits only upwards. The sea level rises although the mass of the water does not change.
-**Model answer d):** The model describes only one cause. According to the source, about two thirds of the rise is caused by meltwater from glaciers and ice sheets, which adds water to the sea, and the share of thermal expansion is about one third. The sea does not warm evenly either: the surface layer warms more than the deep water, and the warming varies from place to place. The coefficient $\gamma$ is not constant but depends on the temperature, salinity and pressure of the water: in cold water it is smaller than in warm water. The model does not tell how much the sea will warm in the future or how much ice will melt, so it cannot predict the rise. In addition, the local sea level can differ from the global mean: on the coast of Finland, for example, the land is rising.
-**Reasonableness:** The relative change is $\gamma \Delta T = 6.0 \cdot 10^{-5}$, that is $0.0060\,\%$. It is very small, but in a column one kilometre high it is already centimetres. According to the source, the share of thermal expansion in the measured rise is one third: $$\begin{aligned} \Delta h_\text{thermal} &= \tfrac{1}{3} \cdot 115.8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$. The model's result $60\,\text{mm}$ is of the same order of magnitude, so the model gives a believable order of magnitude although it does not describe the real sea exactly. In part a) the uncertainty of the latest measurement, $\pm 4.0\,\text{mm}$, corresponds to about $\pm 0.12\,\tfrac{\text{mm}}{\text{a}}$ in the rate, so two significant figures are enough.
+**Model answer a):** The sea level has risen through the whole measurement period: from the beginning of 1993 to October 2026 by about $116\,\text{mm}$, on average about $3.4\,\text{mm}$ per year.
+
+The curve does not rise evenly: it shows a rise and a fall every year. According to the source, the data includes the seasonal cycle of the sea level. A rate calculated from the two end points tells neither this variation nor whether the rise has become faster during the period.
+
+The text of the page gives the rise as about $91\,\text{mm}$, but the box of the latest measurement shows $115.8\,\text{mm}$. With the value $91\,\text{mm}$ the rate would be $2.7\,\tfrac{\text{mm}}{\text{a}}$, so the answer has to state which values and times were used.
+
+**Model answer b):** When seawater warms, the thermal motion of its particles becomes stronger and the mean distance between the particles grows. The particles themselves do not get bigger. The same amount of water therefore takes up a larger volume: $\Delta V = \gamma V_0 \Delta T$.
+
+The bottom and the edges of the ocean basin do not give way, so the extra volume fits only upwards. The sea level rises although the mass of the water does not change.
+
+**Model answer d):** The model describes only one cause. According to the source, about two thirds of the rise is caused by meltwater from glaciers and ice sheets, which adds water to the sea, and the share of thermal expansion is about one third.
+
+The sea does not warm evenly either: the surface layer warms more than the deep water, and the warming varies from place to place. The coefficient $\gamma$ is not constant but depends on the temperature, salinity and pressure of the water: in cold water it is smaller than in warm water.
+
+The model does not tell how much the sea will warm in the future or how much ice will melt, so it cannot predict the rise. In addition, the local sea level can differ from the global mean: on the coast of Finland, for example, the land is rising.
+**Reasonableness:** The relative change is $\gamma \Delta T = 6.0 \cdot 10^{-5}$, that is $0.0060\,\%$.
+
+It is very small, but in a column one kilometre high it is already centimetres. According to the source, the share of thermal expansion in the measured rise is one third: $$\begin{aligned} \Delta h_\text{thermal} &= \tfrac{1}{3} \cdot 115.8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$. The model's result $60\,\text{mm}$ is of the same order of magnitude, so the model gives a believable order of magnitude although it does not describe the real sea exactly.
+
+In part a) the uncertainty of the latest measurement, $\pm 4.0\,\text{mm}$, corresponds to about $\pm 0.12\,\tfrac{\text{mm}}{\text{a}}$ in the rate, so two significant figures are enough.

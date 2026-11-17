@@ -280,7 +280,9 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kannen pituus $l_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu), pienin lämpötila $-30\,{}^\circ\text{C}$ ja suurin $+30\,{}^\circ\text{C}$. Kysytään kannen pituuden muutosta $\Delta l$ koko vuoden aikana.
+**Tunnetut ja kysytty.** Kannen pituus $l_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu), pienin lämpötila $-30\,{}^\circ\text{C}$ ja suurin $+30\,{}^\circ\text{C}$.
+
+Kysytään kannen pituuden muutosta $\Delta l$ koko vuoden aikana.
 
 <!-- vaihe -->
 

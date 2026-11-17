@@ -86,7 +86,9 @@
 **Formula:** $P_\text{abs} = (1 - r)P_\text{in}$, so $$\begin{aligned} \Delta P_\text{abs} &= (1 - r_2)P_\text{in} - (1 - r_1)P_\text{in} \\ &= (r_1 - r_2)P_\text{in} \end{aligned}$$
 **Conversions:** The percentages are converted to decimal numbers: $30.0\,\% = 0.300$ and $29.0\,\% = 0.290$. The power stays in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $\Delta P_\text{abs} = (0.300 - 0.290) \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 0.010 \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 3.4\,\tfrac{\text{W}}{\text{m}^2}$
-**Answer:** $3.4\,\tfrac{\text{W}}{\text{m}^2}$, two significant figures. There are two limiting data: the difference $0.300 - 0.290 = 0.010$ (two figures, because the percentages are given to a tenth of a percent) and the incoming power $340\,\tfrac{\text{W}}{\text{m}^2}$ (at least two figures). If the percentages had been given only as whole numbers, the difference $30 - 29 = 1$ would be a one-figure value. The result is $\dfrac{3.4}{1.0} = 3.4$ times the current imbalance.
+**Answer:** $3.4\,\tfrac{\text{W}}{\text{m}^2}$, two significant figures. There are two limiting data: the difference $0.300 - 0.290 = 0.010$ (two figures, because the percentages are given to a tenth of a percent) and the incoming power $340\,\tfrac{\text{W}}{\text{m}^2}$ (at least two figures).
+
+If the percentages had been given only as whole numbers, the difference $30 - 29 = 1$ would be a one-figure value. The result is $\dfrac{3.4}{1.0} = 3.4$ times the current imbalance.
 **Reasonableness:** A separate calculation: the absorbed power increases from $238\,\tfrac{\text{W}}{\text{m}^2}$ to $241.4\,\tfrac{\text{W}}{\text{m}^2}$, a difference of $3.4\,\tfrac{\text{W}}{\text{m}^2}$. The increase is positive, because reflection decreases. A change of one percentage point is small, but large compared with the imbalance, and the warming melts ice, which increases absorption further.
 
 ## fy3-12-L3-01
@@ -96,7 +98,11 @@
 **Formula:** $cm\Delta T = Pt$, so $\Delta T = \dfrac{Pt}{cm}$
 **Conversions:** The time is converted to seconds, because the power is in watts, that is, joules per second: $t = 10.0 \cdot 3600\,\text{s} = 36\,000\,\text{s}$. The mass is already in kilograms.
 **Substitution:** $\Delta T = \dfrac{1.4\,\text{W} \cdot 36\,000\,\text{s}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg}} = \dfrac{50\,400\,\text{J}}{2514\,\tfrac{\text{J}}{\text{K}}} \approx 20.05\,\text{K}$
-**Answer:** $20\,\text{K}$, two significant figures. The limiting data are the mass $0.60\,\text{kg}$ and the power $1.4\,\text{W}$ (both with two figures); the time $10.0\,\text{h}$ and the specific heat capacity $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ are three-figure values. In a vacuum there are no particles, so heat is neither conducted nor carried by convection from one wall to the other. The shiny surfaces reflect thermal radiation back. Heat escapes mainly by conduction through the neck and the stopper of the flask.
+**Answer:** $20\,\text{K}$, two significant figures. The limiting data are the mass $0.60\,\text{kg}$ and the power $1.4\,\text{W}$ (both with two figures); the time $10.0\,\text{h}$ and the specific heat capacity $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ are three-figure values.
+
+In a vacuum there are no particles, so heat is neither conducted nor carried by convection from one wall to the other. The shiny surfaces reflect thermal radiation back.
+
+Heat escapes mainly by conduction through the neck and the stopper of the flask.
 **Reasonableness:** Coffee at $90\,{}^\circ\text{C}$ in the morning is still about $70\,{}^\circ\text{C}$ in the evening, as in a good thermos flask. Balance: the $$\begin{aligned} &4190 \cdot 0.60 \cdot 20.05\,\text{J} \\ &\approx 50\,400\,\text{J} \end{aligned}$$ given out by the coffee is equal to the $1.4 \cdot 36\,000\,\text{J}$ that escaped. Units: $\text{W} \cdot \text{s} = \text{J}$ and $\tfrac{\text{J}}{\text{J}/\text{K}} = \text{K}$.
 
 ## fy3-12-L3-02
@@ -106,7 +112,9 @@
 **Formula:** $E_\text{v} = IAt_\text{v}$ and $cm\Delta T = 10fE_\text{v}$, so $\Delta T = \dfrac{10fIAt_\text{v}}{cm}$
 **Conversions:** A year in seconds: $t_\text{v} = 365 \cdot 24 \cdot 3600\,\text{s} = 3.1536 \cdot 10^{7}\,\text{s}$. Ten years is the factor $10$ in the formula, and the percentage is $90\,\% = 0.90$.
 **Substitution:** $$\begin{aligned} E_\text{v} &= 1.0\,\tfrac{\text{W}}{\text{m}^2} \cdot 5.1 \cdot 10^{14}\,\text{m}^2 \\ &\cdot 3.1536 \cdot 10^{7}\,\text{s} \\ &\approx 1.608 \cdot 10^{22}\,\text{J} \end{aligned}$$. $\Delta T = \dfrac{10 \cdot 0.90 \cdot 1.608 \cdot 10^{22}\,\text{J}}{4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2.6 \cdot 10^{20}\,\text{kg}} = \dfrac{1.447 \cdot 10^{23}\,\text{J}}{1.04 \cdot 10^{24}\,\tfrac{\text{J}}{\text{K}}} \approx 0.139\,\text{K}$
-**Answer:** $E_\text{v} = 1.6 \cdot 10^{22}\,\text{J}$ and $\Delta T = 0.14\,\text{K}$, two significant figures. The limiting data are the power $1.0\,\tfrac{\text{W}}{\text{m}^2}$, the area $5.1 \cdot 10^{14}\,\text{m}^2$, the mass $2.6 \cdot 10^{20}\,\text{kg}$ and the specific heat capacity $4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, all with two figures; the calculator result $0.139\,\text{K}$ is rounded. A large mass of water slows down the warming, because a large heat capacity $cm$ needs a lot of energy for a change of one kelvin.
+**Answer:** $E_\text{v} = 1.6 \cdot 10^{22}\,\text{J}$ and $\Delta T = 0.14\,\text{K}$, two significant figures. The limiting data are the power $1.0\,\tfrac{\text{W}}{\text{m}^2}$, the area $5.1 \cdot 10^{14}\,\text{m}^2$, the mass $2.6 \cdot 10^{20}\,\text{kg}$ and the specific heat capacity $4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, all with two figures; the calculator result $0.139\,\text{K}$ is rounded.
+
+A large mass of water slows down the warming, because a large heat capacity $cm$ needs a lot of energy for a change of one kelvin.
 **Reasonableness:** Order of magnitude: $10^{23}\,\text{J}$ divided by $10^{24}\,\tfrac{\text{J}}{\text{K}}$ is about $0.1\,\text{K}$. The heat capacity is $4.0 \cdot 10^{3} \cdot 2.6 \cdot 10^{20}\,\tfrac{\text{J}}{\text{K}} = 1.04 \cdot 10^{24}\,\tfrac{\text{J}}{\text{K}}$. For comparison, the mass of the atmosphere is only about $5 \cdot 10^{18}\,\text{kg}$, and the same energy would warm it by tens of kelvins. The ocean slows down the warming, but the stored energy keeps it going for a long time.
 
 ## fy3-12-L3-03
@@ -123,12 +131,18 @@ The limiting data are the coefficient of performance $2.8$, the difference of th
 The calculator result $983.9\,\text{kWh}$ is rounded. The pump does not create heat but moves it using electricity, and the more heat the house needs, the more electricity is used.
 
 That is why insulation is worthwhile: a smaller heating need means a smaller electricity bill.
-**Reasonableness:** Back-calculation: $983.9 \cdot 2.8 \approx 2755\,\text{kWh}$. The electricity saving is smaller than the heat saving of $2755\,\text{kWh}$, because the pump delivers $2.8$ kWh of heat from one kilowatt-hour of electricity; in addition to the electricity, heat comes from the outdoor air. With direct electric heating ($\varepsilon = 1$) the saving would be the whole $2755\,\text{kWh}$. In frost the coefficient of performance decreases and the backup resistance heater starts, so the saving is then greatest.
+**Reasonableness:** Back-calculation: $983.9 \cdot 2.8 \approx 2755\,\text{kWh}$. The electricity saving is smaller than the heat saving of $2755\,\text{kWh}$, because the pump delivers $2.8$ kWh of heat from one kilowatt-hour of electricity; in addition to the electricity, heat comes from the outdoor air.
+
+With direct electric heating ($\varepsilon = 1$) the saving would be the whole $2755\,\text{kWh}$. In frost the coefficient of performance decreases and the backup resistance heater starts, so the saving is then greatest.
 
 ## fy3-12-L1-06
 **Find:** how heat is transferred from the campfire to the face when the air between them is cool
 **Principle:** Heat is transferred by conduction, by convection or as thermal radiation. Thermal radiation passes through a medium without warming it much, so it can warm a body even when there is cool air in between. Conduction and convection require heat to travel with the medium or through it.
-**Model answer:** Heat is transferred mainly as thermal radiation: the hot surface of the campfire emits radiation that passes through the air and is absorbed by the skin. Convection does not explain it, because the air heated by the campfire rises upwards and does not flow horizontally to the face. Conduction through the air does not explain it either, because air is a poor conductor of heat and the air in between stays cool. The face does not touch the hot embers either, so direct conduction by contact is ruled out.
+**Model answer:** Heat is transferred mainly as thermal radiation: the hot surface of the campfire emits radiation that passes through the air and is absorbed by the skin.
+
+Convection does not explain it, because the air heated by the campfire rises upwards and does not flow horizontally to the face.
+
+Conduction through the air does not explain it either, because air is a poor conductor of heat and the air in between stays cool. The face does not touch the hot embers either, so direct conduction by contact is ruled out.
 
 ## fy3-12-L1-07
 **Find:** which statement about the greenhouse effect is correct
@@ -175,20 +189,28 @@ According to the table, the temperature of cup B falls from $80.0\,{}^\circ\text
 **Conversions:** A temperature difference is the same in degrees Celsius and in kelvins, so no conversions are needed: $\Delta T = 21\,{}^\circ\text{C} - (-15\,{}^\circ\text{C}) = 36\,\text{K}$. The other units are already $\text{m}^2$ and $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
 **Substitution:** $P = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 1.6\,\text{m}^2 \cdot 36\,\text{K} = 57.6\,\text{W}$
 **Answer:** $58\,\text{W}$, two significant figures. The limiting data are $U = 1.0$, $A = 1.6\,\text{m}^2$ and the difference of whole degrees $\Delta T = 36\,\text{K}$.
-**Reasonableness:** The student calculated $21 - 15 = 6$, that is, treated the frost reading of the outdoor temperature as a positive number. The correct difference is $21 + 15 = 36\,\text{K}$. The error can be noticed with rounded numbers: the temperature difference between the room and the frost is about $20 + 15 = 35\,\text{K}$, so the power is about $1.0 \cdot 1.6 \cdot 35 \approx 56\,\text{W}$, not $9.6\,\text{W}$. The student's value is $36 / 6 = 6$ times too small. Back-calculation: $57.6 / (1.0 \cdot 1.6) = 36\,\text{K}$.
+**Reasonableness:** The student calculated $21 - 15 = 6$, that is, treated the frost reading of the outdoor temperature as a positive number. The correct difference is $21 + 15 = 36\,\text{K}$.
+
+The error can be noticed with rounded numbers: the temperature difference between the room and the frost is about $20 + 15 = 35\,\text{K}$, so the power is about $1.0 \cdot 1.6 \cdot 35 \approx 56\,\text{W}$, not $9.6\,\text{W}$. The student's value is $36 / 6 = 6$ times too small. Back-calculation: $57.6 / (1.0 \cdot 1.6) = 36\,\text{K}$.
 **Model answer a):** The student calculated the temperature difference incorrectly: they subtracted $15$ from $21$ instead of subtracting $-15$. With rounded numbers the error can be noticed, because the difference between the room and the frost is clearly over $30\,\text{K}$, so the result $9.6\,\text{W}$ is about six times too small.
 
 ## fy3-12-L2-07
 **Given:** $A = 0.50\,\text{m}^2$; the points $(\Delta T, P)$ of the table; the line passes approximately through the points $(0\,\text{K};\ 0\,\text{W})$ and $(50.0\,\text{K};\ 8.75\,\text{W})$
 **Find:** the U-value $U$ of the panel in the unit $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
 **Principle:** When the temperatures stay constant, the power conducted through the panel is $P = UA\Delta T$, so $P$ is proportional to the temperature difference $\Delta T$. In the graph $(\Delta T, P)$ the line passes through the origin, because without a temperature difference no heat is transferred ($\Delta T = 0$, so $P = 0$). The slope of the line is $UA$.
-**Reading the graph:** In real series of measurements the data points are usually not exactly on the same line because of measurement uncertainty, so individual points deviate from the line because of the variation in the measurements. The line is drawn between the points, and the slope is read from two points of the line, not from two neighbouring data points: $(0\,\text{K};\ 0\,\text{W})$ and $(50.0\,\text{K};\ 8.75\,\text{W})$.
+**Reading the graph:** In real series of measurements the data points are usually not exactly on the same line because of measurement uncertainty, so individual points deviate from the line because of the variation in the measurements.
+
+The line is drawn between the points, and the slope is read from two points of the line, not from two neighbouring data points: $(0\,\text{K};\ 0\,\text{W})$ and $(50.0\,\text{K};\ 8.75\,\text{W})$.
 **Formula:** $k = \dfrac{\Delta P}{\Delta(\Delta T)}$, $k = UA$, so $U = \dfrac{k}{A}$
 **Conversions:** Not needed: the power is in watts, the temperature difference in kelvins and the area in square metres.
 **Substitution:** $k = \dfrac{8.75\,\text{W} - 0\,\text{W}}{50.0\,\text{K} - 0\,\text{K}} = 0.175\,\tfrac{\text{W}}{\text{K}}$. $U = \dfrac{0.175\,\tfrac{\text{W}}{\text{K}}}{0.50\,\text{m}^2} = 0.35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
 **Answer:** $0.35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, two significant figures, like the area $0.50\,\text{m}^2$.
 **Reasonableness:** Back-calculation: $0.35 \cdot 0.50 \cdot 40.0 = 7.0\,\text{W}$, and the table has the value $6.9\,\text{W}$ at $\Delta T = 40.0\,\text{K}$, so the line passes between the points. The value is larger than that of a modern wall, $0.17\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, about double, but much smaller than that of a window, $1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, that is, a plausible value for a somewhat older insulated wall panel.
-**Model answer b):** The points lie on a line, so the power is proportional to the temperature difference: when the difference doubles, the power doubles, as the formula $P = UA\Delta T$ says. The temperatures had to stay constant, because the formula holds only when both surfaces of the structure are at a uniform temperature and the temperatures do not change during the measurement. Otherwise the panel would store or release energy, and the measured power would not equal $UA\Delta T$.
+**Model answer b):** The points lie on a line, so the power is proportional to the temperature difference: when the difference doubles, the power doubles, as the formula $P = UA\Delta T$ says.
+
+The temperatures had to stay constant, because the formula holds only when both surfaces of the structure are at a uniform temperature and the temperatures do not change during the measurement.
+
+Otherwise the panel would store or release energy, and the measured power would not equal $UA\Delta T$.
 
 ## fy3-12-L3-04
 **Given:** from the table $A_{1980} = 7.5 \cdot 10^{6}\,\text{km}^2$ and $A_{2020} = 3.9 \cdot 10^{6}\,\text{km}^2$; radiation power $I = 90\,\tfrac{\text{W}}{\text{m}^2}$, albedos $a_\text{ice} = 0.60$ and $a_\text{sea} = 0.06$, area of the Earth $A_\text{Earth} = 5.1 \cdot 10^{14}\,\text{m}^2$, energy imbalance $1.0\,\tfrac{\text{W}}{\text{m}^2}$

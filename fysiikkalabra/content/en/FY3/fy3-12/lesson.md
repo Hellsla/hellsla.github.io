@@ -265,11 +265,15 @@ You are asked for the thermal power $P$ and the energy $E$ in one day.
 
 <!-- vaihe -->
 
-**Result.** The power conducted through the walls and windows is $P \approx 1.5\,\text{kW}$, and in one day it transfers the energy $E \approx 35\,\text{kWh}$. The result is given to two significant figures. The limiting data are the U-values $0.17$ and $1.0$ and the temperature difference $36\,\text{K}$ (a difference of whole degrees), all with two figures; the areas $120\,\text{m}^2$ and $20.0\,\text{m}^2$ are more precise.
+**Result.** The power conducted through the walls and windows is $P \approx 1.5\,\text{kW}$, and in one day it transfers the energy $E \approx 35\,\text{kWh}$. The result is given to two significant figures.
+
+The limiting data are the U-values $0.17$ and $1.0$ and the temperature difference $36\,\text{K}$ (a difference of whole degrees), all with two figures; the areas $120\,\text{m}^2$ and $20.0\,\text{m}^2$ are more precise.
 
 <!-- vaihe -->
 
-**Reasonableness.** The area of the windows is only a sixth of the area of the walls, but the same amount of heat goes through them ($20.0\,\text{W/K}$ and $20.4\,\text{W/K}$), because their U-value is almost six times as large. With rounded numbers, $40\,\text{W/K} \cdot 36\,\text{K} \approx 1.4\,\text{kW}$ and $1.4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. The heating of the house replaces this power, and the roof, floor and ventilation add to the need.
+**Reasonableness.** The area of the windows is only a sixth of the area of the walls, but the same amount of heat goes through them ($20.0\,\text{W/K}$ and $20.4\,\text{W/K}$), because their U-value is almost six times as large.
+
+With rounded numbers, $40\,\text{W/K} \cdot 36\,\text{K} \approx 1.4\,\text{kW}$ and $1.4\,\text{kW} \cdot 24\,\text{h} \approx 34\,\text{kWh}$. The heating of the house replaces this power, and the roof, floor and ventilation add to the need.
 
 ## Common misconception
 Many people mix up the greenhouse effect and ozone depletion, although they are different things: ozone depletion lets more ultraviolet radiation through, but it hardly warms the Earth. Another mistake is to think that the greenhouse effect is entirely harmful. The natural greenhouse effect keeps the Earth habitable, and the problem is its strengthening because of human emissions. A third mistake is to believe that a woollen sweater produces heat. It only slows down the conduction and convection of heat away from the body, just as the insulation in a wall slows down the escape of heat from a house.
