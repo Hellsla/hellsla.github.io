@@ -1,0 +1,47 @@
+# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
+# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
+# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+en/fy14-atom-models	-0.85\ \text{eV} - (-1.51\ \text{eV}) = 0.66\ \text{eV}
+en/fy14-atom-models	1240\ \text{eV} \cdot \text{nm} : 13.6\ \text{eV} \approx 91\ \text{nm
+en/fy14-atom-models	1240\ \text{eV} \cdot \text{nm} : 656\ \text{nm} \approx 1.9\ \text{eV
+en/fy14-atom-models	6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \cdot 2.998 \cdot 10^{8}
+en/fy14-atom-models	= -0.544\ \text{eV} - (-3.40\ \text{eV})
+en/fy14-atom-models	E = 1240\ \text{eV} \cdot \text{nm} : 656.3\ \text{nm}
+en/fy14-atom-models	E_3 - E_1 = -1.51\ \text{eV} - (-13.6\ \text{eV}) = 12.1\ \text{eV}
+en/fy14-atom-models	\lambda = 1240\ \text{eV} \cdot \text{nm} : 12.1\ \text{eV} \approx 10
+en/fy14-atom-models	hc = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s} \cdot 2.998 \cdot 1
+en/fy14-atom-models	hc/\lambda = 1240\ \text{eV} \cdot \text{nm} : 410\ \text{nm} \approx 
+en/fy14-big-machines	1\ \text{keV} = 1000 \cdot 1.602 \cdot 10^{-19}\ \text{J}
+en/fy14-big-machines	{1.958 \cdot 10^{6}} : {3.00 \cdot 10^{8}} \approx 0.65\ \%
+en/fy14-binding-energy	0.002388\ \text{u} \cdot 931.5\ \text{MeV/u} = 2.22\ \text{MeV}
+en/fy14-binding-energy	250
+en/fy14-binding-energy	= 28.30\ \text{MeV} - 2.22\ \text{MeV} - 8.48\ \text{MeV}
+en/fy14-binding-energy	B = 0.002388\ \text{u} \cdot 931.5\ \text{MeV/u} = 2.22\ \text{MeV}
+en/fy14-binding-energy	m_\text{parts} = 2 \cdot 1.007825\ \text{u} + 2 \cdot 1.008665\ \text{
+en/fy14-classical-limits	= 2.898 \cdot 10^{6}\ \text{nm} \cdot \text{K} : 10\,000\ \text{K}
+en/fy14-classical-limits	T = (400 + 273)\ \text{K} = 673\ \text{K}
+en/fy14-fotoni	0.76\ \text{mm} : 490\ \text{mm} \approx 0.0015
+en/fy14-fotoni	B^2r^2 \approx 2.30 \cdot 10^{-9}\ \text{T}^2 \cdot \text{m}^2
+en/fy14-fusion-reactions	1\ \text{kg} : (235.04\ \text{u} \cdot 1.66 \cdot 10^{-27}\ \text{kg/u
+en/fy14-fusion-reactions	3.37 \cdot 10^{14} : 3.25 \cdot 10^{7} = 1.04 \cdot 10^{7}
+en/fy14-fusion-reactions	890.7\ \text{kJ/mol} : (6.022 \cdot 10^{23}\ \text{mol}^{-1}) = 1.479 
+en/fy14-fusion-reactions	E = 17.6\ \text{MeV} \cdot 1.602 \cdot 10^{-13}\ \text{J/MeV} : (5.030
+en/fy14-fusion-society	m = 25\ \text{kg} \cdot (1/2)^{10/12.3} = 25\ \text{kg} \cdot 0.570 \a
+en/fy14-fusion-society	{}^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He}\ (3.5\
+en/fy14-inside-iter	Q = P_\text{fusion} / P_\text{heating} = 16\ \text{MW} : 24\ \text{MW}
+en/fy14-inside-iter	^{2}_{1}\text{H} + {}^{3}_{1}\text{H} \to {}^{4}_{2}\text{He}\ (3.5\ \
+en/fy14-nucleus	N = A - Z = 235 - 92 = 143
+en/fy14-photoelectric	3.97 \cdot 10^{-19}\ \text{J} : 1.602 \cdot 10^{-19}\ \text{J/eV} = 2.
+en/fy14-photoelectric	E_{\text{k,max}} = 2.48\ \text{eV} - 2.14\ \text{eV} = 0.34\ \text{eV}
+en/fy14-photoelectric	E_{\text{k,max}} = 3.10\ \text{eV} - 2.36\ \text{eV} = 0.74\ \text{eV}
+en/fy14-photoelectric	U_\text{s} = E_{\text{k,max}}/e = 1.19 \cdot 10^{-19}\ \text{J} : 1.60
+en/fy14-plasma	p = nkT = 1.0 \cdot 10^{20}\ \text{m}^{-3} \cdot 1.381 \cdot 10^{-23}\
+en/fy14-quantum-tunnelling	= 1.35 \cdot 10^{3}\ \text{eV} \cdot 1.602 \cdot 10^{-19}\ \text{J/eV}
+en/fy14-quantum-tunnelling	\lambda \approx 7.79 \cdot 10^{-13}\ \text{m} = 779\ \text{fm}
+en/fy14-secret-fusion	= 1.381 \cdot 10^{-23}\ \text{J/K} \cdot 5.0 \cdot 10^{6}\ \text{K}
+en/fy14-sun-puzzle	4.3 \cdot 10^{9}\ \text{kg/s} \cdot 1.45 \cdot 10^{17}\ \text{s} = 6.2
+en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 0.0003 = 0.03\ \%
+en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 3 \cdot 10^{-4}
+en/fy14-sun-puzzle	= 32.5 \cdot 10^{6}\ \text{J/kg} \cdot 1.99 \cdot 10^{30}\ \text{kg}
+en/fy14-sun-puzzle	G = 6.674 \cdot 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2
+en/fy14-sun-puzzle	M \cdot 32.5\ \text{MJ/kg} : L \approx 1.7 \cdot 10^{11}\ \text{s}

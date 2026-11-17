@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: df0225f5b9796ad4
+CONTENT-HASH: 2d131b382d63c27b
+SCOPE: delta added-exercise from df0225f5b9796ad4 base cabadc3e6179
 
 ## Blocking
 
 ## Polish
+- [Minor] fy8-3/levels-task and fy8-2/lamp-spectrum (L1-09, L2-09) — the lamp figure draws the yellow pair 577/579 nm as one thick line, while the description and solution speak of two lines — acceptable at this scale; optionally say "kaksi lähekkäistä viivaa, jotka näkyvät yhtenä" in the solution's reading step.
 
 ## Checked
-- Delta round 1 (wording): one comma added to the Kysytty line of fy8-4-L3-04. Hash df0225f5b9796ad4 at the start and at the end.
-- Opened fy8-4-open-exercises-L3-1280-5 (task 4-20 with its solution open): Kysytty now reads "osumien keräämiseen kuluva aika t sekunteina, fotonien keskimääräinen väli d sekä perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion"; the list of three asked things is now separated correctly (before, "sekunteina fotonien" ran together). Two lines, inside the card, symbols t and d in maths.
-- Opened fy8-4-open-exercises-L3-1280-6 (the rest of the same solution): Muunnokset, Sijoitus rows and Vastaus unchanged and intact; the layout survived.
-- No figure, formula, number or unit changed; nothing else judged in this delta.
+- Opened (1280 px, solutions open, language fi): the L1 parts holding tasks 4-9 and 4-10 (spectrum figure, Annettu to Vastaus, Järkevyys) and the L2 parts holding task 4-19 (energy-level figure, solution rows, Vastaus, Järkevyys wavelength block).
+- Figure for 4-9: dark spectrum strip, ticks every 10 nm, numbers every 50 nm, axis "λ (nm)" in LaTeX, green line clearly just left of 550; gives the value needed, does not give the answer away.
+- Figure for 4-19: grid 1 eV, E axis in eV, levels E1 to E4 labelled in LaTeX; E3 and E1 readable.
+- Formula rows: aligned, no clipping, decimal comma/point right, units upright with thin space, fractions in display, MAFY hint in a closed Vihje; the set reads as one with the neighbouring tasks.
+- Hash 2d131b382d63c27b at the start and at the end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

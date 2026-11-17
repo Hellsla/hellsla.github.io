@@ -111,6 +111,34 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy8-4-L1-09",
+      "level": 1,
+      "text": "The figure shows the emission spectrum of an unknown gas discharge lamp. Read the wavelength of the green line from the figure and calculate the momentum of a photon of that line. Give the answer in units of $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 1.21,
+      "unit": "10⁻²⁷ kg·m/s",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy8-4-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "An X-ray photon has the wavelength $0.0711\\,\\text{nm}$. Look up the rest mass of the electron in energy units in the MAFY table (mafytaulukot.fi). Use $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What percentage of the rest energy of the electron is the energy of the photon? Give the answer in percent.",
+      "answer": 3.41,
+      "unit": "%",
+      "tolerance": 0.03,
+      "hints": [
+        "The value is in the MAFY table *Properties of particles* (Hiukkasten ominaisuuksia)."
+      ]
     }
   ],
   "level2": [
@@ -311,6 +339,19 @@
           "feedback": "The statement is true, but it does not tell in which direction the wavelength changes. The direction is decided by the fact that the photon gives energy and momentum to the electron."
         }
       ]
+    },
+    {
+      "id": "fy8-4-L2-09",
+      "level": 2,
+      "text": "The figure shows the energy levels of an imaginary atom. The atom is at the level $E_3$ and drops to the level $E_1$, emitting one photon. Read the energies from the figure and calculate the momentum of the emitted photon. Ignore the recoil of the atom. Give the answer in units of $10^{-27}\\,\\text{kg}\\cdot\\text{m/s}$.",
+      "figure": "fy8-3/levels-task",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 2.67,
+      "unit": "10⁻²⁷ kg·m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
