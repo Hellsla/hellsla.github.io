@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f60b307c452eec2c
-SCOPE: delta added-exercise from c0842f06ba77912b base 5b3ca4f81c77
+CONTENT-HASH: 9136b7411732c7ca
+SCOPE: delta round 2 (L2-09 tolerance and solution wording, L2-10 reasonableness check, answers.py comment)
 
 ## Blocking
 
@@ -8,17 +8,15 @@ SCOPE: delta added-exercise from c0842f06ba77912b base 5b3ca4f81c77
 
 ## Polish
 
-1. fy8-9-L2-09 — the task gives the two readings (380 and 58) in its text, so the figure is not needed to answer; the graph-reading skill is not practised. Fix (optional): give only the background and the sampling, and let the student read both values from the figure (the description already states 380 at the start).
-2. fy8-9-L2-09 — tolerance 0,05 is wide for given readings. Not subtracting the background gives 73,9 s, 4,2 % off, so the page marks it "Lähellä", but a tighter tolerance (0,03) would make the point of the task, subtracting the background, count. Reading error does not need the margin once the values are given.
-3. fy8-9-L2-09 — near-repeat of L2-05 and L2-06 (background subtraction, half-life from pulse counts). The new part is reading the graph, which polish 1 would strengthen.
-4. Solutions — "ln (375 : 53)" uses a colon for division; "\dfrac{375}{53}" reads better in the formula.
+1. fy8-9-L2-09 — the two readings (380, 58) are still given in the task text, so the figure is not needed to answer (earlier polish 1, unchanged; optional): give only the background and let the student read the values.
+2. solutions.md L2-09 "Kuvaajan lukeminen" — "which still separates it" refers loosely to the margin; say what the 2 % margin separates: "the answer is accepted within 2 %, which still separates it from 73.7 s without the background (clear referent: 'the 2 % margin still separates ...')."
 
 ## Checked
 
-- L2-10: figure needed (no number in the text), reading to the 360 kBq level is the real task; solution reads graph, then λ = ln 2 / T, with a 0,86^5 check.
-- L2-10 tolerance 0,03 around 0,14 suits a graph reading; answer 0,1386 inside it; two significant figures justified.
-- Both tasks: situation first, question last, level 2 (graph reading plus one or two steps), no trap the lesson did not prepare.
-- Solutions follow the seven steps in order, principle explained, conversion stated, reasonableness checked.
-- Figure descriptions (pa-points, aktiivisuus) give a non-seeing reader the data without the answer.
-- Mix of the level: L2 now data/graph heavy but with error and experiment tasks; no repeat of the worked example.
-- Method: delta, added exercises only; language of this version read.
+- L2-09 tolerance 0,02: answer 70,9 s accepts 69,5-72,3 s; the no-background result 73,7 s (3,9 % off) now falls outside "oikein", so the task's point counts. Corrects my earlier 73,9 s; 73,7 s verified.
+- The solution's reading paragraph now honestly says the readings are approximate and why the margin is 2 %; the "wider tolerance" wording is gone.
+- "\dfrac{375}{53}" replaces the colon (earlier polish 4 done), also in the no-background check.
+- L2-10 check: 0,5^(1/5,0) = 0,871 each hour, 0,871^5 = 0,50 is exact and cleaner than 0,86^5 = 0,47; the 13 % decay figure matches.
+- answers.py comment 70,85 -> 70,9 matches the solution and the json.
+- Seven solution steps, level, figure and phone captures unchanged by the diff.
+- Method: delta; hash unchanged at start and end.
