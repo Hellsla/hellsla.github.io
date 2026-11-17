@@ -304,3 +304,91 @@ $$.
 \end{aligned}
 $$ tunnetaan kolmella numerolla. Kaksi liike-energian arvoa, $850\,\text{eV}$ ja $854\,\text{eV}$, poikkeavat toisistaan vain noin $0{,}5\,\%$, joten ne sopivat yhteen: liikemäärän ja energian säilyminen antavat saman tuloksen. Pieni ero johtuu siitä, että aallonpituuden muutos $3{,}66\,\text{pm}$ tunnetaan vain kolmen numeron tarkkuudella.
 **Järkevyys:** Kolmion sivun $p_\text{e}$ täytyy olla fotonien liikemäärien erotusta suurempi ja summaa pienempi: $0{,}456 \cdot 10^{-23} < 1{,}575 \cdot 10^{-23} < 1{,}818 \cdot 10^{-23}$ (yksikkö $\text{kg}\cdot\text{m/s}$). Kulma $120\,{}^\circ$ on lähellä takaisinsirontaa, joten tulos on lähempänä summaa, kuten pitääkin. Elektroni sai noin $850\,\text{eV}$ eli noin $5\,\%$ tulevan fotonin energiasta $17{,}4\,\text{keV}$ ($E = \dfrac{hc}{\lambda} = 2{,}794 \cdot 10^{-15}\,\text{J}$), ja aallonpituus kasvoi noin $5\,\%$, mikä on saman suuruusluokan.
+
+## fy8-4-L1-09
+**Annettu:** kuvasta luettu vihreän viivan aallonpituus $\lambda = 546\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Kysytty:** vihreän viivan fotonin liikemäärä $p$ yksikössä $10^{-27}\,\text{kg}\cdot\text{m/s}$
+**Periaate:** Fotonilla ei ole massaa, mutta sillä on liikemäärä, joka riippuu vain aallonpituudesta. Emissioviivan kaikilla fotoneilla on sama aallonpituus, joten yhden fotonin liikemäärä saadaan viivan aallonpituudesta.
+**Kuvaajan lukeminen:** Aallonpituusasteikon pienet jakoviivat ovat $10\,\text{nm}$ välein ja luvut $50\,\text{nm}$ välein. Vihreä viiva on luvun $550\,\text{nm}$ vasemmalla puolella, noin $4\,\text{nm}$ sen alapuolella, eli $\lambda = 546\,\text{nm}$. Muut viivat ovat violetti noin $405\,\text{nm}$, sininen noin $436\,\text{nm}$ ja keltaiset noin $577\,\text{nm}$ ja $579\,\text{nm}$. Lukema on varma muutaman nanometrin tarkkuudella, joten liikemäärä on varma alle $1\,\%$:n tarkkuudella.
+**Kaava:** $p = \dfrac{h}{\lambda}$
+**Muunnokset:** $546\,\text{nm} = 546 \cdot 10^{-9}\,\text{m}$. Yksikkö: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$.
+**Sijoitus:** $$
+\begin{aligned}
+p &= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{546 \cdot 10^{-9}\,\text{m}} \\
+&= 1{,}2136 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $1{,}21 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, kolme merkitsevää numeroa kuten luetussa aallonpituudessa $546\,\text{nm}$.
+**Järkevyys:** Teoriaosan mukaan $500\,\text{nm}$:n fotonin liikemäärä on $1{,}3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$. Aallonpituus $546\,\text{nm}$ on vähän pidempi, joten liikemäärä on vähän pienempi. Sininen $436\,\text{nm}$:n viiva antaisi suuremman ja keltainen $577\,\text{nm}$:n viiva pienemmän liikemäärän, ja vihreä on niiden välissä.
+
+## fy8-4-L1-10
+**Annettu:** röntgenfotonin aallonpituus $\lambda = 0{,}0711\,\text{nm}$; taulukosta (MAFY, *Hiukkasten ominaisuuksia*, elektroni) lepomassa $m_\text{e} = 0{,}511\,\tfrac{\text{MeV}}{\text{c}^2}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** fotonin energian $E$ osuus elektronin lepoenergiasta $m_\text{e}c^2$ prosentteina
+**Periaate:** Fotonin energia on $E = \dfrac{hc}{\lambda}$. Massa-energia-ekvivalenssin mukaan elektronin lepoenergia on $m_\text{e}c^2$, ja massayksikkö $\tfrac{\text{MeV}}{\text{c}^2}$ tarkoittaa, että lepoenergia on taulukon luku megaelektronivoltteina: $m_\text{e}c^2 = 0{,}511\,\text{MeV}$. Vertaamalla fotonin energiaa lepoenergiaan nähdään, onko fotonin energia pieni vai suuri elektronin energiaan verrattuna, mikä ratkaisee Comptonin ilmiössä fotonin menettämän osuuden.
+**Kaava:** $E = \dfrac{hc}{\lambda}$ ja osuus $= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%$
+**Muunnokset:** $0{,}0711\,\text{nm} = 0{,}0711 \cdot 10^{-9}\,\text{m}$. Lepoenergia: $0{,}511\,\text{MeV} = 0{,}511 \cdot 10^{6}\,\text{eV} = 5{,}11 \cdot 10^{5}\,\text{eV}$. Fotonin energia muutetaan jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** Ensin tulo $hc$:
+$$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
+Sitten fotonin energia jouleina:
+$$
+\begin{aligned}
+E &= \dfrac{hc}{\lambda} \\
+&= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0711 \cdot 10^{-9}\,\text{m}} \\
+&= 2{,}7939 \cdot 10^{-15}\,\text{J}
+\end{aligned}
+$$
+Sitten elektronivoltteina:
+$$
+\begin{aligned}
+E &= \dfrac{2{,}7939 \cdot 10^{-15}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
+&= 1{,}744 \cdot 10^{4}\,\text{eV}
+\end{aligned}
+$$
+Lopuksi vertailu lepoenergiaan:
+$$
+\begin{aligned}
+\dfrac{E}{m_\text{e}c^2} \cdot 100\,\% &= \dfrac{1{,}744 \cdot 10^{4}\,\text{eV}}{5{,}11 \cdot 10^{5}\,\text{eV}} \cdot 100\,\% \\
+&= 3{,}413\,\%
+\end{aligned}
+$$
+**Vastaus:** $3{,}41\,\%$, kolme merkitsevää numeroa kuten aallonpituudessa $0{,}0711\,\text{nm}$ ja lepoenergiassa $0{,}511\,\text{MeV}$. Lepomassa on MAFY-taulukon arvo; taulukkojen painosten arvot voivat poiketa hieman, ja vastaus hyväksytään noin $\pm 3\,\%$ tarkkuudella.
+**Järkevyys:** Pika-arvio: $$
+\begin{aligned}
+E &\approx \dfrac{1240\,\text{eV}\,\text{nm}}{0{,}0711\,\text{nm}} \\
+&\approx 17\,400\,\text{eV} \\
+\dfrac{E}{m_\text{e}c^2} &\approx \dfrac{17{,}4\,\text{keV}}{511\,\text{keV}} \\
+&\approx 0{,}034
+\end{aligned}
+$$ Fotonin energia on vain noin kolme prosenttia lepoenergiasta, joten elektroni saa törmäyksessä vain pienen osan energiasta: Comptonin ilmiössä aallonpituus kasvaa tällöin vain muutaman prosentin, kuten sirontakokeessa, jossa aallonpituus $0{,}0711\,\text{nm}$ kasvoi arvoon $0{,}0735\,\text{nm}$ eli noin $3{,}4\,\%$. Näkyvän valon fotonin energia on vielä tuhatkertaa pienempi.
+
+## fy8-4-L2-09
+**Annettu:** kuvasta luetut energiatasot $E_3 = -3{,}0\,\text{eV}$ ja $E_1 = -8{,}0\,\text{eV}$; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** lähetetyn fotonin liikemäärä $p$ yksikössä $10^{-27}\,\text{kg}\cdot\text{m/s}$
+**Periaate:** Atomi lähettää siirtyessään tasolta toiselle yhden fotonin, jonka energia on tasojen energioiden erotus, koska energia säilyy (takaisku jätetään huomiotta). Fotonin liikemäärä saadaan sen energiasta: $p = \dfrac{E}{c}$.
+**Kuvaajan lukeminen:** Pystyakselilla on energia elektronivoltteina nollasta $-9\,\text{eV}$:iin, ja ruudukon väli on $1\,\text{eV}$. Taso $E_3$ on kolmannen ruudukon viivan kohdalla, $-3{,}0\,\text{eV}$, ja taso $E_1$ alimpana kohdassa $-8{,}0\,\text{eV}$. Tasojen etäisyys on viisi ruudukon väliä, joten fotonin energia on $5{,}0\,\text{eV}$.
+**Kaava:** $E = E_3 - E_1$ ja $p = \dfrac{E}{c}$
+**Muunnokset:** Energia jouleina: $E = 5{,}0\,\text{eV} = 5{,}0 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 8{,}01 \cdot 10^{-19}\,\text{J}$.
+**Sijoitus:** Ensin fotonin energia:
+$$
+\begin{aligned}
+E &= E_3 - E_1 \\
+&= -3{,}0\,\text{eV} - (-8{,}0\,\text{eV}) \\
+&= 5{,}0\,\text{eV}
+\end{aligned}
+$$
+Sitten liikemäärä:
+$$
+\begin{aligned}
+p &= \dfrac{E}{c} \\
+&= \dfrac{8{,}01 \cdot 10^{-19}\,\text{J}}{2{,}998 \cdot 10^{8}\,\text{m/s}} \\
+&= 2{,}672 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $2{,}7 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, kaksi merkitsevää numeroa kuten luetuissa energioissa $-3{,}0\,\text{eV}$ ja $-8{,}0\,\text{eV}$ (tarkka laskettu arvo $2{,}67 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$ hyväksytään).
+**Järkevyys:** Fotonin aallonpituus on $\lambda = \dfrac{hc}{E} = \dfrac{1240\,\text{eV}\,\text{nm}}{5{,}0\,\text{eV}} \approx 248\,\text{nm}$ eli ultraviolettia. Vertailu: $500\,\text{nm}$:n fotonin liikemäärä on $1{,}3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$, ja puolta lyhyemmän aallonpituuden fotonin liikemäärä on noin kaksinkertainen, $2{,}7 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$.
