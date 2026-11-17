@@ -13,20 +13,9 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673).
-Osat 0c–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c).
+Osat 0d–0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
-
-### 0c. Yksi yleinen esitystapaluokka `reviews.py`:hin
-`reflow`, `md-paragraphs` ja `caption-label` on tehty kukin erikseen, ja jokainen on jättänyt tähteitä: kohteet
-(Sovella, koe, yksikkö, tutkimus, TVT-ohje) tulivat mukaan vasta jälkikäteen (5f, 8c-1), ja kahden luokan yhdistelmä
-samalla rivillä luokittuu lukumuutokseksi (FY5 fy5-12, fy5-2; FY4 fy4-14; FY3 fy3-5). Korjaus: yksi normalisoitu
-vertailu (samat sanat, luvut, merkit, yksiköt ja kaavat samassa järjestyksessä; rivijako, kappalejako, listamerkit,
-`aligned`-rakenne ja LaTeXille näkymättömät välilyönnit eivät merkitse), joka koskee samalla tavalla lukua,
-tehtäväsarjaa ja jokaista kohdetyyppiä ja sallii luokkien yhdistelmät. Säännöt ennallaan: tiede ja pedagogiikka carry,
-ulkoasu delta; `verify` johtaa rivit uudelleen. Testit `test_reviews.py`:hin jokaisesta yllä nimetystä tähteestä. Sen
-jälkeen kurssien 5d- ja 8c-tähteet (Sovella, kokeet, yhdistelmärivit) voi tehdä ilman täysiä katselmointeja. #666:n
-jälkeen; ennen kuin 8c jatkuu FY7:ään.
 
 ### 0d. CI:n selain pilvi-istuntoihin
 Usea kurssi-PR jätti rivejä, jotka "vain CI:n Chromium leikkaa" (FY4, FY7, FY2), ja ne löytyivät vasta CI-kierroksella.
