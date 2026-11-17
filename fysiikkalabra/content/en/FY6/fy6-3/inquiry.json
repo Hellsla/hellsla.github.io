@@ -28,19 +28,19 @@
         {
           "text": "$40\\,\\text{C}$",
           "correct": true,
-          "feedback": "Correct. Current is the charge passing in a unit of time, so $$\\begin{aligned} Q &= It \\\\ &= 4.0\\,\\text{A} \\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$(chapter *Circuit, electric current and voltage*). Today we ask what decides how large a current a given voltage drives through a component."
+          "feedback": "Correct. Current is the charge passing in a unit of time, so $Q = It$: $$\\begin{aligned} Q &= 4.0\\,\\text{A}\\cdot 10\\,\\text{s} \\\\ &= 40\\,\\text{C} \\end{aligned}$$(chapter *Circuit, electric current and voltage*). Today we ask what decides how large a current a given voltage drives through a component."
         },
         {
           "text": "$2.5\\,\\text{C}$",
-          "feedback": "You divided the time by the current. The charge is the current times the time, $Q = It = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$: each second $4.0\\,\\text{C}$ passes, so more time means more charge."
+          "feedback": "You divided the time by the current. The charge is the current times the time, $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$: each second $4.0\\,\\text{C}$ passes, so more time means more charge."
         },
         {
           "text": "$0.40\\,\\text{C}$",
-          "feedback": "You divided the current by the time. Current is charge divided by time, $I = Q : t$, so the charge is $Q = It = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
+          "feedback": "You divided the current by the time. Current is charge divided by time, $I = Q : t$, so the charge is $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         },
         {
           "text": "$14\\,\\text{C}$",
-          "feedback": "Current and time are different quantities and cannot be added. Charge is their product: $Q = It = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
+          "feedback": "Current and time are different quantities and cannot be added. Charge is their product: $Q = It$, so $Q = 4.0\\,\\text{A} \\cdot 10\\,\\text{s} = 40\\,\\text{C}$."
         }
       ],
       "optional": true
