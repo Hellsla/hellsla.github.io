@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4a1385424308d9f5
+CONTENT-HASH: fb3b370ff079bc9a
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review (round 2): opened fy7-12-stage-herata-390 (Pohdinta with Kertaa: taittuminen); the changed feedback number is LaTeX with a degree sign, layout intact.
+- Delta round 3: opened fy7-12-stage-herata-390 (Pohdinta with the closed Kertaa: taittuminen box); layout intact. The only change is 19,8 -> 19,7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with {,} and ^\circ.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

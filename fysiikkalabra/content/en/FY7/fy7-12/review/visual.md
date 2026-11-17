@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 27c9dd149cac4ca0
+CONTENT-HASH: d7c32b096b14dea4
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: opened fy7-12-stage-herata-390.png (Pohdinta with the optional retrieval task, collapsed in the capture); layout intact; the one changed number ($19.8^\circ$, LaTeX) read from the diff; no figures changed; the opened card itself was not captured.
+- Delta round 3 (en): opened fy7-12-stage-herata-390 (Think about it with the closed Recall: refraction box); layout intact. The only change is 19.8 -> 19.7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with ^\circ and a decimal point.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
