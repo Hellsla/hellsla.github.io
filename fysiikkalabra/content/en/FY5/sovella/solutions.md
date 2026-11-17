@@ -3,7 +3,11 @@
 ### a)
 **Given:** load $m = 2.0\,\text{t} = 2000\,\text{kg}$, jib $m_\text{p} = 4.0\,\text{t}$ and $r_\text{p} = 12\,\text{m}$, counterweight $m_\text{v} = 9.0\,\text{t}$ and $r_\text{v} = 10\,\text{m}$
 **Find:** the distance $r$ of the trolley from the axis of the tower when the total moment of the weights is zero
-**Principle:** Three weights act on the jib: the weight of the load at the trolley (through the cable), the weight of the jib itself at its centre of mass, and the weight of the counterweight. The jib turns about the vertical axis of the tower, but the vertical weights are parallel to this axis and do not turn the jib about it. The weights tend to tip the jib in its vertical plane, so the moments are calculated about the horizontal moment axis A, which passes through the tower perpendicular to this plane. The lever arm of each weight is the perpendicular distance of its line of action from the axis A. The weights are vertical and the axis horizontal, so the lever arm is the horizontal distance of the weight from the axis of the tower. The load and the weight of the jib turn the jib towards the side of the load, the counterweight in the opposite direction. In equilibrium with respect to rotation the sum of the moments is zero.
+**Principle:** Three weights act on the jib: the weight of the load at the trolley (through the cable), the weight of the jib itself at its centre of mass, and the weight of the counterweight. The jib turns about the vertical axis of the tower, but the vertical weights are parallel to this axis and do not turn the jib about it.
+
+The weights tend to tip the jib in its vertical plane, so the moments are calculated about the horizontal moment axis A, which passes through the tower perpendicular to this plane. The lever arm of each weight is the perpendicular distance of its line of action from the axis A.
+
+The weights are vertical and the axis horizontal, so the lever arm is the horizontal distance of the weight from the axis of the tower. The load and the weight of the jib turn the jib towards the side of the load, the counterweight in the opposite direction. In equilibrium with respect to rotation the sum of the moments is zero.
 **Formula:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. The acceleration of free fall cancels, so $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
 **Conversions:** $1\,\text{t} = 1000\,\text{kg}$, so $m_\text{p} = 4000\,\text{kg}$ and $m_\text{v} = 9000\,\text{kg}$.
 **Substitution:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
@@ -29,11 +33,15 @@
 
 *How much could be added.* For the empty crane there is room of $$600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$$ below the limit, so the counterweight can be increased by at most $$\begin{aligned} &188\,000\,\text{Nm} : (9.81\,\text{m/s}^2 \cdot 10\,\text{m}) \\ &\approx 1.9\,\text{t} \end{aligned}$$. Then the greatest load at the tip would be $$1200\,\text{kNm} : 392.4\,\text{m}^2/\text{s}^2 \approx 3.1\,\text{t}$$.
 
-*Conclusion.* The suggestion does not work as it stands. In the model of the problem the counterweight is dimensioned so that the limit is not exceeded with the empty or the fully loaded crane. Instead of two tonnes, the counterweight could be increased by at most about $1.9\,\text{t}$, and the lifting capacity cannot be increased further without a sturdier tower. For a real crane one moment condition is not enough: the counterweight may be changed only as the manufacturer instructs, because safety also depends on, for example, the wind, the strength of the structures and the foundation.
+*Conclusion.* The suggestion does not work as it stands. In the model of the problem the counterweight is dimensioned so that the limit is not exceeded with the empty or the fully loaded crane. Instead of two tonnes, the counterweight could be increased by at most about $1.9\,\text{t}$, and the lifting capacity cannot be increased further without a sturdier tower.
+
+For a real crane one moment condition is not enough: the counterweight may be changed only as the manufacturer instructs, because safety also depends on, for example, the wind, the strength of the structures and the foundation.
 
 ### d)
 **Find:** the free-body diagram of the load while the jib turns steadily, and an evaluation of the operator's explanation
-**Principle:** The load is chosen as the object. The bodies interacting with it are the Earth (weight) and the cable (tension); nothing else touches the load, and air resistance is small at low speed. When the jib turns steadily, the load moves in a horizontal circle about the axis of the tower, so it has a centripetal acceleration towards the axis. The net force must then point towards the axis.
+**Principle:** The load is chosen as the object. The bodies interacting with it are the Earth (weight) and the cable (tension); nothing else touches the load, and air resistance is small at low speed.
+
+When the jib turns steadily, the load moves in a horizontal circle about the axis of the tower, so it has a centripetal acceleration towards the axis. The net force must then point towards the axis.
 
 <svg data-fig="fy5-s1-fbd" viewBox="0 0 600 400" role="img" aria-label="Two pictures. On the left a side view of the situation: a part of the jib at the top, the axis of the tower as a dashed line on the left. The cable from the trolley is tilted so that the load is farther from the axis of the tower than the trolley. Next to the load an orange acceleration arrow a n points horizontally towards the axis of the tower. On the right the free-body diagram of the load, the load as a rectangle tilted along the cable: the weight G straight down from the centre and the tension S of the cable from the upper surface along the cable upwards and towards the axis of the tower. The tension is slightly longer than the weight, and its vertical component is equal to the weight. Separately an orange acceleration arrow a n to the left. The angle has been drawn much larger than in the problem so that the arrows can be told apart." style="max-width:100%;font-size:24px">
   <foreignObject x="90" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{situation}$</div></foreignObject>
@@ -73,19 +81,27 @@
 - The weight $\overline{G}$ starts from the centre and points straight down.
 - The tension $\overline{S}$ of the cable starts from the upper surface where the cable is attached and points along the cable upwards and slightly towards the axis of the tower, because the load is farther out than the trolley.
 
-In the vertical direction the load does not accelerate, so the vertical component of the tension is equal to the weight, and the tension is slightly larger than the weight. The horizontal component of the tension is the net force, and it points towards the axis of the tower like the centripetal acceleration $\overline{a}_\text{n}$, which is drawn separately in its own colour. In the model picture the angle of the cable has been drawn much larger than in the problem so that the arrows can be told apart.
+In the vertical direction the load does not accelerate, so the vertical component of the tension is equal to the weight, and the tension is slightly larger than the weight. The horizontal component of the tension is the net force, and it points towards the axis of the tower like the centripetal acceleration $\overline{a}_\text{n}$, which is drawn separately in its own colour.
 
-*The operator's explanation.* There is no real centrifugal force: no body pulls the load outwards, and there is no outward force in the free-body diagram. When the jib starts to turn, the load tends to continue straight ahead because of its inertia. That is why it stays on the outer edge of the circle and the cable tilts, until the horizontal component of the tension is enough to turn the motion of the load onto a circular path. So the load is not thrown outwards but lags behind its straight path only by as much as the cable needs to pull it towards the centre.
+In the model picture the angle of the cable has been drawn much larger than in the problem so that the arrows can be told apart.
+
+*The operator's explanation.* There is no real centrifugal force: no body pulls the load outwards, and there is no outward force in the free-body diagram. When the jib starts to turn, the load tends to continue straight ahead because of its inertia. That is why it stays on the outer edge of the circle and the cable tilts, until the horizontal component of the tension is enough to turn the motion of the load onto a circular path.
+
+So the load is not thrown outwards but lags behind its straight path only by as much as the cable needs to pull it towards the centre.
 
 ### e)
 **Given:** the radius $r = 21\,\text{m}$ of part a, period $T = 90\,\text{s}$, cable length $15\,\text{m}$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the angle $\theta$ between the cable and the vertical, and whether it matters
-**Principle:** The load moves in uniform circular motion, so its acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ towards the axis of the tower. The speed is obtained from the period. Newton's second law is written for the free-body diagram of part d by components: axis $x$ horizontally towards the axis of the tower and $y$ upwards. The tilt moves the load only by centimetres, so the distance of the trolley, $21\,\text{m}$, can be used as the radius of the circle.
+**Principle:** The load moves in uniform circular motion, so its acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ towards the axis of the tower. The speed is obtained from the period. Newton's second law is written for the free-body diagram of part d by components: axis $x$ horizontally towards the axis of the tower and $y$ upwards.
+
+The tilt moves the load only by centimetres, so the distance of the trolley, $21\,\text{m}$, can be used as the radius of the circle.
 **Formula:** $x$: $S\sin\theta = m\dfrac{v^2}{r}$ and $y$: $S\cos\theta - mg = 0$. Dividing the equations by each other gives $\tan\theta = \dfrac{v^2}{rg}$, where $v = \dfrac{2\pi r}{T}$. The mass cancels.
 **Conversions:** Not needed.
 **Substitution:** $v = \dfrac{2\pi \cdot 21\,\text{m}}{90\,\text{s}} = 1.466\,\text{m/s}$ and $\tan\theta = \dfrac{(1.466\,\text{m/s})^2}{21\,\text{m} \cdot 9.81\,\text{m/s}^2} = 0.01043$, so $\theta = 0.598^\circ$
 **Answer:** $\theta \approx 0.60^\circ$, two significant figures like the period $90\,\text{s}$. The load has moved outwards from the trolley by $15\,\text{m} \cdot 0.01043 \approx 0.16\,\text{m}$.
-**Reasonableness:** The centripetal acceleration $a_\text{n} = (1.466\,\text{m/s})^2 : 21\,\text{m} \approx 0.10\,\text{m/s}^2$ is only about one percent of the acceleration of free fall, so the angle is small and the tension is practically equal to the weight. Steady turning therefore hardly matters in lifting work. A sudden start or stop, on the other hand, makes the load swing, because the cable cannot immediately give the load the same acceleration as the trolley.
+**Reasonableness:** The centripetal acceleration $a_\text{n} = (1.466\,\text{m/s})^2 : 21\,\text{m} \approx 0.10\,\text{m/s}^2$ is only about one percent of the acceleration of free fall, so the angle is small and the tension is practically equal to the weight.
+
+Steady turning therefore hardly matters in lifting work. A sudden start or stop, on the other hand, makes the load swing, because the cable cannot immediately give the load the same acceleration as the trolley.
 
 ### Hyväksytään myös
 - The moments of parts a and b can be calculated as products of mass and distance without the acceleration of free fall, when $g$ cancels, as long as in part b the limit is changed to the same form: $$\begin{aligned} &600\,000\,\text{Nm} : 9.81\,\text{m/s}^2 \\ &\approx 61\,160\,\text{kg}\cdot\text{m} \end{aligned}$$.
@@ -105,7 +121,9 @@ In the vertical direction the load does not accelerate, so the vertical componen
 
 ### a)
 **Find:** a graph whose points, according to the circular-orbit model, fit a straight line through the origin
-**Graph:** In the model, the moon is kept in a circular orbit by the gravity of Jupiter, which is the only significant force acting on the moon. It is the centripetal force of the circular motion of the moon: $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, so $v^2 = \gamma M \cdot \dfrac{1}{r}$. The orbital speed is calculated from the period: $v = \dfrac{2\pi r}{T}$, with the radius in metres and the period in seconds ($1\,\text{d} = 86\,400\,\text{s}$). For example, for Io $$\begin{aligned} v &= \dfrac{2\pi \cdot 421.8 \cdot 10^{6}\,\text{m}}{1.769 \cdot 86\,400\,\text{s}} \\ &= 17\,340\,\text{m/s} \end{aligned}$$, so $v^2 = 3.01 \cdot 10^{8}\,\text{m}^2/\text{s}^2$ and $\tfrac{1}{r} = 2.37 \cdot 10^{-9}\,\tfrac{1}{\text{m}}$.
+**Graph:** In the model, the moon is kept in a circular orbit by the gravity of Jupiter, which is the only significant force acting on the moon. It is the centripetal force of the circular motion of the moon: $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, so $v^2 = \gamma M \cdot \dfrac{1}{r}$.
+
+The orbital speed is calculated from the period: $v = \dfrac{2\pi r}{T}$, with the radius in metres and the period in seconds ($1\,\text{d} = 86\,400\,\text{s}$). For example, for Io $$\begin{aligned} v &= \dfrac{2\pi \cdot 421.8 \cdot 10^{6}\,\text{m}}{1.769 \cdot 86\,400\,\text{s}} \\ &= 17\,340\,\text{m/s} \end{aligned}$$, so $v^2 = 3.01 \cdot 10^{8}\,\text{m}^2/\text{s}^2$ and $\tfrac{1}{r} = 2.37 \cdot 10^{-9}\,\tfrac{1}{\text{m}}$.
 
 | moon | $v\ (\text{km/s})$ | $\tfrac{1}{r}\ (10^{-9}\,\tfrac{1}{\text{m}})$ | $v^2\ (10^{8}\,\tfrac{\text{m}^2}{\text{s}^2})$ |
 |---|---|---|---|
@@ -178,7 +196,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
   <foreignObject x="187" y="87.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(5.0;\ 6.35)$</span></div></foreignObject>
 </svg>
 
-**Model answer:** All five points are on the same straight line through the origin, so the circular-orbit model, in which gravity is the centripetal force, describes the motion of the moons well. The line passes through the origin because according to the model the orbital speed would be zero infinitely far away ($\tfrac{1}{r} = 0$). According to the model, the slope of the line is $\gamma M$, which is the same for all the moons, although the masses of the moons are very different.
+**Model answer:** All five points are on the same straight line through the origin, so the circular-orbit model, in which gravity is the centripetal force, describes the motion of the moons well. The line passes through the origin because according to the model the orbital speed would be zero infinitely far away ($\tfrac{1}{r} = 0$).
+
+According to the model, the slope of the line is $\gamma M$, which is the same for all the moons, although the masses of the moons are very different.
 
 ### b)
 **Given:** the graph of part a and $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -194,7 +214,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### c)
 **Given:** the rotation period of Jupiter $T = 9.93\,\text{h}$ and $\gamma M = 1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2$ from part b
 **Find:** the radius $r$ of the orbit of the probe
-**Principle:** The probe stays above the same cloud formation only if it orbits Jupiter in the same direction and in the same time as the cloud formation, which the problem assumes to go round in the rotation period of Jupiter, $9.93\,\text{h}$. The orbit is thus an equatorial circular orbit synchronised with the rotation of Jupiter. The centripetal force of the circular motion of the probe is the gravity of Jupiter, as for the moons, so $v^2 = \dfrac{\gamma M}{r}$, and the orbital speed is $v = \dfrac{2\pi r}{T}$.
+**Principle:** The probe stays above the same cloud formation only if it orbits Jupiter in the same direction and in the same time as the cloud formation, which the problem assumes to go round in the rotation period of Jupiter, $9.93\,\text{h}$.
+
+The orbit is thus an equatorial circular orbit synchronised with the rotation of Jupiter. The centripetal force of the circular motion of the probe is the gravity of Jupiter, as for the moons, so $v^2 = \dfrac{\gamma M}{r}$, and the orbital speed is $v = \dfrac{2\pi r}{T}$.
 **Formula:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, so $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ and $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
 **Conversions:** $T = 9.93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Substitution:** $r^3 = \dfrac{1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4.11 \cdot 10^{24}\,\text{m}^3$, so $r = 1.60 \cdot 10^{8}\,\text{m}$
@@ -204,7 +226,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### d)
 **Find:** an evaluation of the claim that Ganymede would orbit faster than Io on the orbit of Io, and the assumptions of the result of part b
 **Principle:** The orbital speed is obtained from the condition that gravity is the centripetal force of the circular motion of the moon: $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, where $m$ is the mass of the moon.
-**Model answer:** *The claim.* It is true that at the same distance a larger gravitational force acts on a more massive moon, because the force is proportional to the mass $m$ of the moon. However, a more massive moon needs a correspondingly larger centripetal force to stay on the same circular orbit, because the required force $m\tfrac{v^2}{r}$ is also proportional to the mass. The mass of the moon cancels from the equation, leaving $v^2 = \dfrac{\gamma M}{r}$: the orbital speed depends only on the mass $M$ of Jupiter and the radius of the orbit. On the orbit of Io, Ganymede would therefore orbit with the same speed and in the same time as Io. The claim is not correct. The same can be seen from the graph of part a: moons of very different masses are on the same line.
+**Model answer:** *The claim.* It is true that at the same distance a larger gravitational force acts on a more massive moon, because the force is proportional to the mass $m$ of the moon. However, a more massive moon needs a correspondingly larger centripetal force to stay on the same circular orbit, because the required force $m\tfrac{v^2}{r}$ is also proportional to the mass.
+
+The mass of the moon cancels from the equation, leaving $v^2 = \dfrac{\gamma M}{r}$: the orbital speed depends only on the mass $M$ of Jupiter and the radius of the orbit. On the orbit of Io, Ganymede would therefore orbit with the same speed and in the same time as Io. The claim is not correct. The same can be seen from the graph of part a: moons of very different masses are on the same line.
 
 *The assumptions.* The result of part b requires that
 - the orbits of the moons are circles whose centre is the centre of Jupiter; in reality Jupiter and the moon orbit their common centre of mass, but the masses of the moons are so small compared with the mass of Jupiter that the difference is insignificant
@@ -300,7 +324,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
   <foreignObject x="240" y="53.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0.350;\ 0.722)$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The points are almost on a straight line, so the square of the period grows steadily with the mass, as the model predicts. A straight line is fitted to the points so that it passes between them; it is not forced through the origin, because the measured points do not point there. When the line is extended to the vertical axis, it meets the axis at about $0.028\,\text{s}^2$, slightly above the origin.
+**Model answer:** The points are almost on a straight line, so the square of the period grows steadily with the mass, as the model predicts. A straight line is fitted to the points so that it passes between them; it is not forced through the origin, because the measured points do not point there.
+
+When the line is extended to the vertical axis, it meets the axis at about $0.028\,\text{s}^2$, slightly above the origin.
 
 ### b)
 **Given:** the graph of part a
@@ -316,9 +342,13 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### c)
 **Find:** what the deviation of the line from the origin can be due to and how reliable the spring constant of part b is
 **Principle:** Random error scatters the points on both sides of the line. A systematic error or a deficiency of the model shifts the results in the same direction. The result is reliable when different methods give the same value within the uncertainties.
-**Model answer:** *Uncertainty.* In hand timing the uncertainty due to reaction time is about $0.2\,\text{s}$. Spread over ten periods, it is only $0.02\,\text{s}$ in the period, which is the reason for measuring ten periods. The points deviate from the line by at most about $0.005\,\text{s}^2$, so the random variation is small and does not explain the intercept of $0.028\,\text{s}^2$ on the vertical axis.
+**Model answer:** *Uncertainty.* In hand timing the uncertainty due to reaction time is about $0.2\,\text{s}$. Spread over ten periods, it is only $0.02\,\text{s}$ in the period, which is the reason for measuring ten periods.
 
-*The cause of the deviation.* In the model $T = 2\pi\sqrt{\tfrac{m}{k}}$ only the mass oscillates and the spring is massless. The mass of the spring itself, $45\,\text{g}$, however, moves along: its lower end moves with the mass and its upper end is at rest. The oscillating mass is therefore larger than the hanging mass alone, which shifts the whole line upwards but does not change its slope. From the intercept the extra mass is $$0.028\,\text{s}^2 : 1.984\,\text{s}^2/\text{kg} \approx 0.014\,\text{kg}$$, about a third of the mass of the spring. The result makes sense, because the lower part of the spring moves almost as much as the mass and the upper part hardly at all.
+The points deviate from the line by at most about $0.005\,\text{s}^2$, so the random variation is small and does not explain the intercept of $0.028\,\text{s}^2$ on the vertical axis.
+
+*The cause of the deviation.* In the model $T = 2\pi\sqrt{\tfrac{m}{k}}$ only the mass oscillates and the spring is massless. The mass of the spring itself, $45\,\text{g}$, however, moves along: its lower end moves with the mass and its upper end is at rest. The oscillating mass is therefore larger than the hanging mass alone, which shifts the whole line upwards but does not change its slope.
+
+From the intercept the extra mass is $$0.028\,\text{s}^2 : 1.984\,\text{s}^2/\text{kg} \approx 0.014\,\text{kg}$$, about a third of the mass of the spring. The result makes sense, because the lower part of the spring moves almost as much as the mass and the upper part hardly at all.
 
 *Comparison.* From the measurement at rest $$\begin{aligned} k &= \dfrac{mg}{x} \\ &= \dfrac{0.200\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.098\,\text{m}} \\ &\approx 20.0\,\text{N/m} \end{aligned}$$. It differs from the result of part b, $19.9\,\text{N/m}$, by less than one percent, so two independent methods support each other.
 
@@ -327,7 +357,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### d)
 **Given:** $m = 0.250\,\text{kg}$, the mass of the spring $m_\text{s} = 45\,\text{g}$, amplitude $A = 5.0\,\text{cm}$ and $k = 19.9\,\text{N/m}$ from part b
 **Find:** the greatest speed $v_\text{max}$ of the mass
-**Principle:** The energy of the oscillation is conserved when friction and air resistance are small. At an extreme position the mass is momentarily at rest, and the whole energy $\tfrac{1}{2}kA^2$ is potential energy. At the equilibrium position the displacement is zero, so the whole energy is kinetic energy and the speed is greatest. For a vertical spring the weight only shifts the equilibrium position, so the displacement is measured from the equilibrium position. In the model of the problem the mass of the spring itself is taken into account as in part c: the lower part of the spring moves with the mass, so a third of the mass of the spring is added to the mass in the kinetic energy.
+**Principle:** The energy of the oscillation is conserved when friction and air resistance are small. At an extreme position the mass is momentarily at rest, and the whole energy $\tfrac{1}{2}kA^2$ is potential energy. At the equilibrium position the displacement is zero, so the whole energy is kinetic energy and the speed is greatest.
+
+For a vertical spring the weight only shifts the equilibrium position, so the displacement is measured from the equilibrium position. In the model of the problem the mass of the spring itself is taken into account as in part c: the lower part of the spring moves with the mass, so a third of the mass of the spring is added to the mass in the kinetic energy.
 **Formula:** $\tfrac{1}{2}m_\text{eff}v_\text{max}^2 = \tfrac{1}{2}kA^2$, where $m_\text{eff} = m + \tfrac{1}{3}m_\text{s}$, so $v_\text{max} = A\sqrt{\dfrac{k}{m_\text{eff}}}$
 **Conversions:** $A = 5.0\,\text{cm} = 0.050\,\text{m}$ and $m_\text{s} = 45\,\text{g} = 0.045\,\text{kg}$
 **Substitution:** $m_\text{eff} = 0.250\,\text{kg} + 0.045\,\text{kg} : 3 = 0.265\,\text{kg}$ and $v_\text{max} = 0.050\,\text{m} \cdot \sqrt{\dfrac{19.9\,\text{N/m}}{0.265\,\text{kg}}} = 0.050\,\text{m} \cdot 8.67\,\tfrac{1}{\text{s}} = 0.433\,\text{m/s}$
@@ -338,7 +370,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 - In part b slopes of $1.95\text{–}2.02\,\text{s}^2/\text{kg}$ and the spring constants calculated from them, $19.5\text{–}20.2\,\text{N/m}$, are accepted, as is a line fitted by a calculator or spreadsheet ($19.9\,\text{N/m}$).
 - The graph of part a can also be drawn from the quantities $m$ and $T^2$ with the mass on a gram scale; in part b the unit must then be converted.
 - In part c the deviation can also be explained by a systematic error, when the explanation is justified and it is stated that an addition of constant size does not change the slope.
-- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns two points when the student says that the mass of the spring is ignored and justifies the assumption: the point for the energy principle (the first criterion without the effective mass) and the point for the equation (with the mass $m$). The point for the result requires the model the task asks for. The added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$, is also accepted.
+- In part d, $v_\text{max} \approx 0.45\,\text{m/s}$ calculated with a massless spring earns two points when the student says that the mass of the spring is ignored and justifies the assumption: the point for the energy principle (the first criterion without the effective mass) and the point for the equation (with the mass $m$).
+
+The point for the result requires the model the task asks for. The added mass of $14\,\text{g}$ from the intercept of part c, which gives the same $0.43\,\text{m/s}$, is also accepted.
 
 ### Yleisiä virheitä
 - A $(m, T)$ graph is drawn and a straight line is fitted to its curved set of points.
@@ -358,12 +392,16 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 **Conversions:** $T = 4.0\,\text{ms} = 0.0040\,\text{s}$
 **Substitution:** $f = \dfrac{1}{0.0040\,\text{s}} = 250\,\tfrac{1}{\text{s}} = 250\,\text{Hz}$
 **Answer:** $f = 250\,\text{Hz}$. Two or three significant figures: the duration of five periods can be read accurately from the guide lines.
-**Reasonableness:** The frequency is typical of the sound of an instrument, close to middle C. The shape of the signal shows that in addition to the fundamental frequency it contains double the frequency, $500\,\text{Hz}$: the distance between a high and a low peak is half a period. If the distance between peaks, $2.0\,\text{ms}$, is taken as the period, $500\,\text{Hz}$ is wrongly obtained.
+**Reasonableness:** The frequency is typical of the sound of an instrument, close to middle C. The shape of the signal shows that in addition to the fundamental frequency it contains double the frequency, $500\,\text{Hz}$: the distance between a high and a low peak is half a period.
+
+If the distance between peaks, $2.0\,\text{ms}$, is taken as the period, $500\,\text{Hz}$ is wrongly obtained.
 
 ### b)
 **Given:** the fundamental frequency $f = 250\,\text{Hz}$ and the speed of sound $v = 343\,\text{m/s}$; the pipe is open at both ends
 **Find:** the length $L$ of the pipe
-**Principle:** A standing wave forms in the air column of the pipe when the sound wave is reflected from the ends of the tube. At an open end the air can move freely, so there is an antinode of the oscillation there. When both ends are open, in the fundamental mode the tube has two antinodes at the ends and one node in the middle, so the length of the tube is half the wavelength. The wavelength is obtained from the basic equation of waves $v = f\lambda$.
+**Principle:** A standing wave forms in the air column of the pipe when the sound wave is reflected from the ends of the tube. At an open end the air can move freely, so there is an antinode of the oscillation there.
+
+When both ends are open, in the fundamental mode the tube has two antinodes at the ends and one node in the middle, so the length of the tube is half the wavelength. The wavelength is obtained from the basic equation of waves $v = f\lambda$.
 **Formula:** $L = \dfrac{\lambda}{2}$ and $\lambda = \dfrac{v}{f}$, so $L = \dfrac{v}{2f}$
 **Conversions:** Not needed.
 **Substitution:** $L = \dfrac{343\,\text{m/s}}{2 \cdot 250\,\text{Hz}} = 0.686\,\text{m}$
@@ -383,7 +421,9 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### d)
 **Given:** the sound level $L_1 = 88\,\text{dB}$, treated as an intensity level in a free sound field, at a distance $r_1 = 4.0\,\text{m}$, the distance of the organist $r_2 = 2.0\,\text{m}$, practice time $3\,\text{h}$; upper action value $L_0 = 85\,\text{dB}$ and the corresponding time $t_0 = 8\,\text{h}$
 **Find:** the daily reference time $t_\text{ref}$ of the organist, the time in which the energy dose of the upper action value builds up, and whether the dose of the practice stays below it
-**Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples. The change in the intensity level is obtained from the ratio of the intensities. The reference time, in which the same energy dose builds up, halves for every $3\,\text{dB}$ rise.
+**Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples.
+
+The change in the intensity level is obtained from the ratio of the intensities. The reference time, in which the same energy dose builds up, halves for every $3\,\text{dB}$ rise.
 **Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$
 **Conversions:** Not needed.
 **Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{ref} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
@@ -393,13 +433,17 @@ $\tfrac{1}{r}$ is chosen for the horizontal axis and $v^2$ for the vertical axis
 ### e)
 **Find:** an evaluation of the assumptions of the model of part d, the direction of the real exposure, and a reliable way to find it out
 **Principle:** The point-source model assumes that sound starts from a single point and travels without obstacles or reflections. For each assumption we consider whether the level at the organist would in reality be larger or smaller than the model gives.
-**Model answer:** *The organ is not a point source.* The pipes are spread over an area several metres wide and high, and the distance of the organist from most of the pipes is much more than $2\,\text{m}$. Near an extended source the level does not rise by $6\,\text{dB}$ every time the distance is halved, so the $94\,\text{dB}$ of part d is probably too large an estimate.
+**Model answer:** *The organ is not a point source.* The pipes are spread over an area several metres wide and high, and the distance of the organist from most of the pipes is much more than $2\,\text{m}$.
+
+Near an extended source the level does not rise by $6\,\text{dB}$ every time the distance is halved, so the $94\,\text{dB}$ of part d is probably too large an estimate.
 
 *Reflections.* The walls, floor and vaults of the church reflect sound, and reverberation is heard throughout the hall. Part of the level measured at a distance of $4.0\,\text{m}$ is reverberation, which does not get louder closer up. This also makes the estimate too large.
 
 *Playing.* During practice the organ is seldom played at full power all the time, so the average level is lower. On the other hand, in some churches the position of the pipes and the console may direct sound straight at the organist.
 
-*A reliable way.* A sound level meter measures the A-weighted level at the organist's ear throughout a normal practice and the daily noise exposure is calculated from it as an energy average and compared with the action values $80\,\text{dB}$ and $85\,\text{dB}$. The exposure is probably smaller than the estimate of part d, but only a measurement tells whether hearing protection is needed. Even staying below an action value does not guarantee safe hearing, so hearing protection is worth using in loud practices.
+*A reliable way.* A sound level meter measures the A-weighted level at the organist's ear throughout a normal practice and the daily noise exposure is calculated from it as an energy average and compared with the action values $80\,\text{dB}$ and $85\,\text{dB}$.
+
+The exposure is probably smaller than the estimate of part d, but only a measurement tells whether hearing protection is needed. Even staying below an action value does not guarantee safe hearing, so hearing protection is worth using in loud practices.
 
 ### Hyväksytään myös
 - In part a the period can also be read from the duration of two or three periods; answers of $240\text{–}260\,\text{Hz}$ are accepted.
