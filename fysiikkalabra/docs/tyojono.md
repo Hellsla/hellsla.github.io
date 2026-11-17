@@ -381,6 +381,8 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
+Varattu: claude/fy2-lapikaynti (FY2, työjono 0f: 8j sekä FY2:n Sovella ja esimerkkikoe 8c:stä)
+
 FY4 tehty (#647). Tila 2026-11-17: FY5 tehty (#661) paitsi **fy5-7, fy5-11 ja fy5-17** (avoimia; `docs/audits/2026-11-17-8j-FY5.md`): niiden korjaus
 on kirjoitettu, mutta difflib-kohdistus → FULL (muuttumaton `"correct": true` -rivi luokitellaan `experiment`-muutokseksi),
 tarvitsee luokittelijan korjauksen tai opettajan budjettiluvan. Muut kurssit (FY1–FY3, FY6–FY8) vielä tekemättä.
