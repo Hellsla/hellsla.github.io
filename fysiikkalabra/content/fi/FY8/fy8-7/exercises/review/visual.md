@@ -1,14 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: f8c679679d08ccc9
+VERDICT: PASS
+CONTENT-HASH: bb52b416609e298b
+SCOPE: delta added-exercise from 6eb91ace4b5c1ba6 base 5b3ca4f81c77
 
 ## Blocking
-- [Major] fy8-7-L2-08 solution, Kuvaajan lukeminen (open-exercises-L2-1280-10/11) — teksti sanoo pisteen olevan "hieman alle neljännen vaakaviivan (arvo 4,0)", mutta ruudukon väli on 0,5 (kuten teksti itse sanoo) ja kuvan kokonaisluvut ovat joka toisella viivalla, joten arvon 4,0 viiva on kahdeksas, ei neljäs; viivoja laskeva opiskelija lukee väärän arvon — kuvaajan lukemisen mallivastauksen on oltava laskettavissa kuvasta — korjaus: "hieman alle viivan, jonka kohdalla on merkitty 4 (arvo 4,0)".
+(none)
 
 ## Polish
+- [Minor] fy8-7-L1-10, answer panel (open-exercises-1280-12) — the Vastaus box shows "6,7 · 10^15" and the unit "1/s" is only in the answer field; the solution text names it "fotonia sekunnissa". Fix: write the unit in the box, `$6{,}7 \cdot 10^{15}\,\tfrac{1}{\text{s}}$`.
 
 ## Checked
-- Delta (added exercises L1-10, L2-08, L3-06) in the fi captures: open-exercises-1280-11/12 (L1-10 task and full solution), open-exercises-L2-1280-10/11 (L2-08 with figure rate-task), open-exercises-L3-1280-9/10 (L3-06 with figure rate-task2). Other languages' equivalents spot-checked (en L2-10, fi-easy L3-10). figures.py rate_task read to confirm the grid. Not opened: 360 px captures (layout check ok in packet).
-- Formulas render without clipping, aligned at = , units upright; both figures have axes with quantity and unit, distinct points, no answer given away; L3 point labels X and Y legible.
+- Round-1 Major: L2-08 "Kuvaajan lukeminen" now says "hieman vaakaviivan $4{,}0$ alapuolella", no ordinal; countable on the figure (gridline at 4.0).
+- L2-08 captures L2-1280-10 and L2-1280-11: figure rate-task has axes with quantity and unit, a distinct green point and the 0,5 grid; solution rows aligned and unclipped.
+- L3-06 captures L3-1280-9 and L3-1280-10: figure rate-task2 has labelled points X (purple) and Y (red) and a 1-unit grid; the ordinals "seitsemännen" and "neljännen vaakaviivan" are correct for that grid; ratio chains aligned, units upright.
+- L1-10 capture 1280-12: solution formulas aligned and readable; units LaTeX, decimal comma correct.
+- The set still reads as one. 360 px captures not opened; the packet's layout check is ok.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
