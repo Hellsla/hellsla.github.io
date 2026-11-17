@@ -91,12 +91,12 @@ header.top nav>a,.lang-menu>summary,.nav-menu>summary{display:inline-flex;align-
 header.top nav>a:hover,.lang-menu>summary:hover,.nav-menu>summary:hover{color:var(--ink);background:var(--bg-tint)}
 header.top nav>a:active,.lang-menu>summary:active{background:var(--line)}
 @media (max-width:29.99rem){.brand{gap:8px}.brand-mark{width:34px;height:34px}.brand-name small{letter-spacing:.06em;max-width:7.5rem}.lang-menu>summary{padding:0 6px;gap:.3rem}header.top{column-gap:8px}header.top nav{gap:2px}}   /* room for the menu button beside "Selkeä suomi" and under "Upper secondary physics" (two lines) at 360 px */
-/* Valikko (design audit 2026-11-10, P0-1): under 58rem the header's links no longer disappear one by one; they all give
+/* Valikko (design audit 2026-11-10, P0-1): under 72rem (58rem until the Kuuntele ja katso link, 2026-11-17) the header's links no longer disappear one by one; they all give
    way to one menu button beside the language control (a <details>, no script, like the language menu), so every page
-   of the header is reachable on a phone. From 58rem the links show and the button is gone. The limit was 52rem until
+   of the header is reachable on a phone. From 72rem the links show and the button is gone. The limit was 52rem until
    Opettajalle joined the links (2026-11-11): the English header then needs 904 px to stay on one row. */
 .nav-menu{display:none;position:relative;margin:0}
-@media (max-width:57.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
+@media (max-width:71.99rem){header.top nav>a{display:none}.nav-menu{display:block}}
 /* on a phone the word gives way to the three bars (the button keeps its name for a screen reader): "Selkeä suomi" and
    "English" beside the brand leave no room for it at 360 px */
 @media (max-width:29.99rem){.nav-menu-t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -235,7 +235,7 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
   .mod-q{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .plan-list{margin-top:60px}   /* the gap one row high, so the planned courses' rows stay level with the modules' (teacher 2026-11-04) */
 }
-@media (min-width:700px) and (max-width:63.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
+@media (min-width:700px) and (max-width:71.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
 /* Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, build.py study_guide): a wider column than the reading
    pages (the problem-solving map needs four cards side by side), text kept to the reading measure. Three parts under
    full-width rules like a lesson's stages. 1 four numbered steps on thin rules, two columns, each with the lesson's
@@ -1190,6 +1190,28 @@ main .book-text{margin:0 0 .7rem}
 .book-facts{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;margin:0;font-size:var(--fs-small);color:var(--ink-2)}
 .book-facts>div{display:flex;gap:.35rem}.book-facts dt{font-weight:700;color:var(--ink)}.book-facts dt::after{content:":"}.book-facts dd{margin:0}
 @media (max-width:29.99rem){ol.books>li.book{padding-left:2.6rem}ol.books>li.book::before{width:1.9rem;height:1.9rem}}
+
+/* Kuuntele ja katso fysiikkaa (teacher 2026-11-17, scripts/media_tips.py): module, type and short filters over plain lists; without
+   scripts the form stays hidden and everything is listed. Items are quiet rows like the books, no numbers. */
+.media-other{margin:1rem 0 1.4rem;padding:.65rem 1rem;background:var(--accent-soft);border-radius:var(--inner-radius);font-size:var(--fs-inner)}
+.media-other p{margin:0}.media-other a{font-weight:600;white-space:nowrap}
+.media-filters{display:grid;gap:.7rem;margin:0 0 1.6rem;padding:1rem 0;border-block:1px solid var(--line)}.media-filters[hidden]{display:none}
+.media-filters>div{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem}
+.media-flabel{min-width:5.2rem;font:700 var(--fs-small) var(--sans);color:var(--ink-2)}
+.media-chip{min-height:44px;padding:0 .95rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 var(--fs-ui) var(--sans);cursor:pointer}
+.media-chip:hover{background:var(--bg-tint)}.media-chip[aria-pressed="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:var(--surface)}
+.media-chip:focus-visible,.media-short input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.media-short{display:flex;align-items:center;gap:.5rem;min-height:44px;font:600 var(--fs-ui) var(--sans)}.media-short input{width:1.25rem;height:1.25rem}
+.media-count{margin:0;font-size:var(--fs-small);color:var(--ink-2)}
+.media-page section{margin:0 0 1.6rem}.media-page section[hidden],.media-page li[hidden]{display:none}
+.media-list{list-style:none;margin:0;padding:0}
+li.media{margin:0;padding:1.1rem 0 1.2rem;border-top:1px solid var(--line)}li.media:last-child{border-bottom:1px solid var(--line)}
+.media-title{font:600 1.1875rem/1.3 var(--serif);margin:0 0 .15rem}.media-title a{text-decoration-thickness:1px}
+.media-source{margin:0 0 .4rem;font-size:var(--fs-ui);font-weight:600;color:var(--ink-2)}
+main .media-text{margin:0 0 .5rem}
+.media-facts{margin:0;font-size:var(--fs-small);font-weight:700;color:var(--accent-deep)}
+.media-note{margin:.4rem 0 0;font-size:var(--fs-small);color:var(--ink-2)}
+@media (max-width:29.99rem){.media-flabel{flex:0 0 100%}}
 
 /* enlarge (teacher 2026-11-03, "kuvat aukeaa klikkaamalla isoksi, ei kuitenkaan liian isoksi; simulaatiot saa klikattua
    isoksi"): lesson.js part 7 opens a figure or a photo in a dialog, sim-embed.js shows the simulation card full screen. */

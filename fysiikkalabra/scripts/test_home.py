@@ -137,7 +137,7 @@ for lang in i18n.languages():
     leaks = sorted(str(f.relative_to(out)) for f in out.glob("*.html") if ('href="' + "../" * len(out.relative_to(ROOT.parent).parts) + 'index.html"') in f.read_text())
     expect(f"{lang}: no page links out of the site to the teacher's portfolio (teacher 2026-11-04)", not leaks, leaks[:5])
     expect(f"{lang}: the front page header links Vihkot and Sivustosta after Lukuvinkit (teacher 2026-11-07)",
-           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-booklets" href="vihkot.html">{_h.escape(T("site.booklets"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
+           f'<a class="nav-reading" href="lukuvinkit.html">{_h.escape(T("site.reading_tips"))}</a><a class="nav-media" href="podcastit.html">{_h.escape(T("site.media_nav"))}</a><a class="nav-booklets" href="vihkot.html">{_h.escape(T("site.booklets"))}</a><a class="nav-about" href="tietoa.html">{_h.escape(T("site.about"))}</a>' in hdr, hdr[-400:])
     src = next((f for f in (ROOT / "content" / lang / "tietoa.md", ROOT / "content" / "fi" / "tietoa.md") if f.is_file()), None)
     heads = re.findall(r"^#+ (.+)$", src.read_text(), re.M) if src else []
     expect(f"{lang}: Sivustosta shows the teacher's text (content/{lang}/tietoa.md) with all its headings and bold parts",

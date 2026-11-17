@@ -1,0 +1,454 @@
+{
+ "title": "Listen & Watch Physics",
+ "subtitle": "Podcasts, documentaries and videos in English",
+ "description": "English-language physics podcasts, documentaries and videos for upper-secondary students, by module FY1–FY8.",
+ "intro": [
+  "Hear and see the physics of your modules in the words scientists use. Every programme here is made in English and is linked to the publisher's own page.",
+  "Pick your module, or choose only podcasts, documentaries or videos. You do not need to understand every word: start with a short programme."
+ ],
+ "featured_title": "A good place to start",
+ "other_lang": {
+  "lang": "fi",
+  "lead": "Prefer physics content in Finnish?",
+  "text": "Explore our Finnish-language podcasts, documentaries and science videos.",
+  "link": "Explore Finnish resources →"
+ },
+ "items": [
+  {
+   "id": "en-nasa-rocket",
+   "language": "en",
+   "title": "Rocket Assembly Required",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/rocket-assembly-required/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "rockets",
+    "propulsion",
+    "spaceflight"
+   ],
+   "durationMinutes": null,
+   "description": "NASA engineers explain the many steps of preparing a large rocket to take people back to the Moon. A real-life look at what it takes to launch something heavy against gravity.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-dart",
+   "language": "en",
+   "title": "Defending the Planet from Asteroids",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/defending-the-planet-from-asteroids/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "asteroids",
+    "collisions",
+    "DART"
+   ],
+   "durationMinutes": null,
+   "description": "Three scientists talk about what asteroids can tell us about the early solar system and how NASA would respond if one were heading for Earth. Good background for momentum and collisions.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-asteroid-name",
+   "language": "en",
+   "title": "An Asteroid by Any Other Name",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/an-asteroid-by-any-other-name-with-latif-nasser/",
+   "type": "podcast",
+   "modules": [
+    "FY4"
+   ],
+   "topics": [
+    "asteroids",
+    "orbits",
+    "observation"
+   ],
+   "durationMinutes": null,
+   "description": "How do astronomers spot, track and manage every space rock near Earth? A look at the observing and orbit work behind planetary defence.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-space-weather",
+   "language": "en",
+   "title": "Sun Series: What Is Space Weather?",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/sun-series-space-weather/",
+   "type": "podcast",
+   "modules": [
+    "FY7"
+   ],
+   "topics": [
+    "magnetic fields",
+    "charged particles",
+    "solar storms"
+   ],
+   "durationMinutes": null,
+   "description": "Meet a team that monitors eruptions of radiation and plasma from the Sun, and revisit the strongest geomagnetic storm on record.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-spectrum",
+   "language": "en",
+   "title": "Introduction to the Electromagnetic Spectrum",
+   "source": "NASA Science",
+   "url": "https://science.nasa.gov/learn/heat/resource/introduction-to-the-electromagnetic-spectrum/",
+   "type": "video",
+   "modules": [
+    "FY7"
+   ],
+   "topics": [
+    "electromagnetic waves",
+    "radiation",
+    "spectrum"
+   ],
+   "durationMinutes": 5,
+   "description": "A five-minute video that places radio waves, visible light, X-rays and the rest on one scale. A quick way to revise the electromagnetic spectrum.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-dark-side",
+   "language": "en",
+   "title": "Welcome to the Dark Side",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/roman-dark-side-encore/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "dark energy",
+    "dark matter",
+    "cosmology"
+   ],
+   "durationMinutes": null,
+   "description": "How scientists study some of the biggest open questions in physics, and why the Roman Space Telescope is built to test ideas about dark energy.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-nasa-black-hole",
+   "language": "en",
+   "title": "Inside a Black Hole",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/inside-a-black-hole/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "black holes",
+    "relativity"
+   ],
+   "durationMinutes": null,
+   "description": "Two astrophysicists describe what a black hole really is and what it might be like to go hunting for one. A conversation, so expect spoken explanations rather than calculations.",
+   "verified": true
+  },
+  {
+   "id": "en-nasa-webb",
+   "language": "en",
+   "title": "Webb Space Telescope: Into the Unknown",
+   "source": "NASA",
+   "url": "https://www.nasa.gov/podcasts/curious-universe/webb-space-telescope-into-the-unknown/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "infrared astronomy",
+    "space telescopes"
+   ],
+   "durationMinutes": null,
+   "description": "The first of four episodes on the James Webb Space Telescope and the science it was built to do, from the first stars to distant planets.",
+   "verified": true
+  },
+  {
+   "id": "en-nova-cosmos",
+   "language": "en",
+   "title": "Decoding the Universe: Cosmos",
+   "source": "PBS NOVA",
+   "url": "https://www.pbs.org/video/decoding-the-universe-cosmos-pqnkre/",
+   "type": "documentary",
+   "modules": [
+    "FY1"
+   ],
+   "topics": [
+    "cosmology",
+    "structure of the universe"
+   ],
+   "durationMinutes": 54,
+   "description": "A full-length NOVA documentary on the big discoveries that changed our picture of the universe.",
+   "verified": true
+  },
+  {
+   "id": "en-spacetime-info",
+   "language": "en",
+   "title": "How Much Information Is in the Universe?",
+   "source": "PBS Space Time",
+   "url": "https://www.pbs.org/video/how-much-information-is-in-the-universe-mit8rr/",
+   "type": "video",
+   "modules": [
+    "FY1"
+   ],
+   "topics": [
+    "information",
+    "physical reality"
+   ],
+   "durationMinutes": 9,
+   "description": "Is the universe made of stuff, or of information? A short, demanding look at one of physics' odd questions.",
+   "difficulty": "advanced",
+   "verified": true
+  },
+  {
+   "id": "en-sf-gridlock",
+   "language": "en",
+   "title": "Are We Facing Electrical Gridlock?",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/are-we-facing-electrical-gridlock/",
+   "type": "podcast",
+   "modules": [
+    "FY2",
+    "FY6"
+   ],
+   "topics": [
+    "electric grid",
+    "renewable energy"
+   ],
+   "durationMinutes": 26,
+   "description": "Renewable energy and smart appliances are straining an old electrical grid. What makes a grid hard to run, and what can be done?",
+   "verified": true
+  },
+  {
+   "id": "en-sf-fusion",
+   "language": "en",
+   "title": "New Fusion Reactor Doubles Energy Record From Fusing Atoms",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/fusion-energy-breakthrough/",
+   "type": "podcast",
+   "modules": [
+    "FY3",
+    "FY8"
+   ],
+   "topics": [
+    "fusion",
+    "plasma",
+    "tokamak"
+   ],
+   "durationMinutes": 9,
+   "description": "Results from the JET tokamak give hope that ITER will succeed. An ITER engineer explains what a hot deuterium–tritium plasma is and why five seconds matters.",
+   "featured": true,
+   "verified": true
+  },
+  {
+   "id": "en-sf-bottle",
+   "language": "en",
+   "title": "The Physics That Makes Swing-Top Bottles 'Pop'",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/physics-bottles-pop/",
+   "type": "podcast",
+   "modules": [
+    "FY3"
+   ],
+   "topics": [
+    "gases",
+    "pressure",
+    "temperature",
+    "sound"
+   ],
+   "durationMinutes": null,
+   "description": "A physicist recorded uncorking a swing-top bottle with microphones and a high-speed camera. What happens to temperature, sound and speed in that instant?",
+   "verified": true
+  },
+  {
+   "id": "en-sf-vibrato",
+   "language": "en",
+   "title": "Visualizing The Beauty Of Vibrato",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/visualizing-the-beauty-of-vibrato/",
+   "type": "podcast",
+   "modules": [
+    "FY5"
+   ],
+   "topics": [
+    "frequency",
+    "oscillations",
+    "music"
+   ],
+   "durationMinutes": 12,
+   "description": "Researchers use tools from quantum physics to put numbers on the vibration of a singing voice.",
+   "verified": true
+  },
+  {
+   "id": "en-sf-diy",
+   "language": "en",
+   "title": "Heavy Metal: The Physics of DIY Instruments",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/videos/heavy-metal-the-physics-of-diy-instruments-2/",
+   "type": "video",
+   "modules": [
+    "FY5"
+   ],
+   "topics": [
+    "resonance",
+    "sound"
+   ],
+   "durationMinutes": null,
+   "description": "A composer builds instruments from garbage and a physicist explains how the changes turn noise into notes.",
+   "verified": true
+  },
+  {
+   "id": "en-cc-sound",
+   "language": "en",
+   "title": "Sound: Crash Course Physics #18",
+   "source": "Crash Course",
+   "url": "https://thecrashcourse.com/courses/sound-crash-course-physics-18/",
+   "type": "video",
+   "modules": [
+    "FY5"
+   ],
+   "topics": [
+    "sound waves",
+    "Doppler effect"
+   ],
+   "durationMinutes": null,
+   "description": "What sound is, how it travels and where the Doppler effect comes from. A good revision of the basics.",
+   "verified": true
+  },
+  {
+   "id": "en-cc-music",
+   "language": "en",
+   "title": "The Physics of Music: Crash Course Physics #19",
+   "source": "Crash Course",
+   "url": "https://thecrashcourse.com/courses/the-physics-of-music-crash-course-physics-19/",
+   "type": "video",
+   "modules": [
+    "FY5"
+   ],
+   "topics": [
+    "waves",
+    "harmonics",
+    "acoustics"
+   ],
+   "durationMinutes": null,
+   "description": "How music works in terms of waves and how those waves interact.",
+   "verified": true
+  },
+  {
+   "id": "en-cc-power",
+   "language": "en",
+   "title": "How Power Gets to Your Home: Crash Course Physics #35",
+   "source": "Crash Course",
+   "url": "https://thecrashcourse.com/courses/how-power-gets-to-your-home-crash-course-physics-35/",
+   "type": "video",
+   "modules": [
+    "FY6"
+   ],
+   "topics": [
+    "power generation",
+    "transmission",
+    "transformers"
+   ],
+   "durationMinutes": null,
+   "description": "How power gets from the power plant to your home, a process more complicated than it looks.",
+   "verified": true
+  },
+  {
+   "id": "en-cc-magnetism",
+   "language": "en",
+   "title": "Magnetism: Crash Course Physics #32",
+   "source": "Crash Course",
+   "url": "https://thecrashcourse.com/courses/magnetism-crash-course-physics-32/",
+   "type": "video",
+   "modules": [
+    "FY7"
+   ],
+   "topics": [
+    "magnetic fields",
+    "forces"
+   ],
+   "durationMinutes": null,
+   "description": "Magnetic poles, fields and the forces they cause, starting from the magnets you already know.",
+   "verified": true
+  },
+  {
+   "id": "en-pbs-radium",
+   "language": "en",
+   "title": "An Element of Mystery – The Radium Girls",
+   "source": "PBS SciTech Now",
+   "url": "https://www.pbs.org/video/element-mystery-z3rmuk/",
+   "type": "video",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "radioactivity",
+    "radiation safety"
+   ],
+   "durationMinutes": 6,
+   "description": "The author of The Radium Girls discusses how workers were poisoned by radium paint. Mostly history and health effects, a good link to radiation safety.",
+   "note": "An interview about a book, not a physics lesson.",
+   "verified": true
+  },
+  {
+   "id": "en-sf-fallout",
+   "language": "en",
+   "title": "What Radioactive Animals Teach Us About Nuclear Fallout",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/animals-indicators-nuclear-fallout/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "radioisotopes",
+    "nuclear fallout"
+   ],
+   "durationMinutes": 17,
+   "description": "Measuring cesium in wild boar and uranium in turtles shows how radioactive materials travel through the environment.",
+   "verified": true
+  },
+  {
+   "id": "en-sf-chernobyl",
+   "language": "en",
+   "title": "Chernobyl And The Disastrous Days Of April 1986",
+   "source": "Science Friday",
+   "url": "https://www.sciencefriday.com/segments/the-disastrous-days-of-april-1986/",
+   "type": "podcast",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "Chernobyl",
+    "nuclear engineering"
+   ],
+   "durationMinutes": 26,
+   "description": "The engineering mistakes and operating errors that led to the Chernobyl disaster, told by the author of a new book.",
+   "verified": true
+  },
+  {
+   "id": "en-spacetime-expand",
+   "language": "en",
+   "title": "Will the Universe Expand Forever?",
+   "source": "PBS Space Time",
+   "url": "https://www.pbs.org/video/will-the-universe-expand-forever-qm4ogs/",
+   "type": "video",
+   "modules": [
+    "FY8"
+   ],
+   "topics": [
+    "cosmology",
+    "dark energy"
+   ],
+   "durationMinutes": 13,
+   "description": "What could the fate of the universe be? A short but demanding look at the question.",
+   "difficulty": "advanced",
+   "verified": true
+  }
+ ]
+}
