@@ -182,7 +182,7 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 FY1 tehty: fy1-1…fy1-8 esimerkit ja ratkaisut kolmella kielellä (#650); Sovella (fi, en, fi-easy), esimerkkikoe ja en
 fy1-1:n harjoitusten kolme askelta (claude/fy1-kappalejako-2, 8c-1:n #657 jälkeen). Jäljellä FY1:ssä vain numeroitu lista
-Sovellan tehtävässä 2 a), jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
+Sovellan mallivastauksessa "Mitkä tahansa neljä seuraavista", jonka lint lukee yhdeksi kappaleeksi (lista, ei kappale; ei muutettu).
 
 Opettaja 2026-11-16: laajennetaan myös FY9:ään ja FY10:een. Järjestys FY1 → FY2 → FY4 → FY5 → FY6 → FY7 → FY8 →
 FY3 loput → FY9 → FY10.
