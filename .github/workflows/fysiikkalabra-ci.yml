@@ -65,6 +65,33 @@ jobs:
           echo "pages=$pages" >> "$GITHUB_OUTPUT"
           python scripts/ci_parallel.py plan --pages "$pages" | tee -a "$GITHUB_OUTPUT"
           { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"
+      # Shadow run of work queue 0g (PR 1, teacher 2026-11-17): the pages the browser checks would test if site/ were not committed,
+      # from two renders (the base commit's and this one's) instead of the committed site/ diff. It only reports; nothing reads it.
+      - uses: actions/setup-node@v4
+        if: github.event_name == 'pull_request'
+        with: { node-version: "22" }
+      - name: shadow scope from two renders (work queue 0g PR 1; reports only, never fails the run)
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        env: { OLD: "${{ steps.scope.outputs.pages }}" }
+        run: |
+          base="origin/${{ github.base_ref }}"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          t0=$(date +%s)
+          git worktree add --detach /tmp/base-tree "$base"
+          (cd /tmp/base-tree/fysiikkalabra && python scripts/build.py > /tmp/build-base.log 2>&1) || { tail -20 /tmp/build-base.log; exit 1; }
+          t1=$(date +%s)
+          python scripts/build.py > /tmp/build-head.log 2>&1 || { tail -20 /tmp/build-head.log; exit 1; }
+          t2=$(date +%s)
+          new=$(python scripts/ci_scope.py "$base" --built /tmp/base-tree/fysiikkalabra/site site 2> /tmp/scope-built.txt) || new="(ci_scope.py --built failed)"
+          if [ "$OLD" = "$new" ]; then verdict="SAME"; else verdict="DIFFERENT"; fi
+          {
+            echo "### Shadow scope from two renders (work queue 0g PR 1): $verdict"
+            echo "- committed site/ diff (in use): \`${OLD:-none}\`"
+            echo "- two renders (shadow):          \`${new:-none}\`"
+            echo "- build of base $((t1-t0)) s, of head $((t2-t1)) s"
+            sed 's/^/    /' /tmp/scope-built.txt
+          } | tee -a "$GITHUB_STEP_SUMMARY"
   checks-1:   # the sources, the build and the built pages
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
@@ -107,6 +134,8 @@ jobs:
       - run: python scripts/build.py --all
       - name: the browser checks' runner and gate (plan, shards, verdicts; a page not tested, tested twice or failed fails the gate; scripts/ci_parallel.py, 2026-11-11)
         run: python scripts/test_ci_parallel.py
+      - name: ci_scope.py's built mode, the pages to test from two renders instead of the committed site/ diff (work queue 0g PR 1)
+        run: python scripts/test_ci_scope_built.py
       - name: built pages are accessible as static HTML (field names, aria references, unique ids, figure text alternatives, button names, page language; teacher 2026-10-30)
         run: python scripts/check_a11y.py site
       - name: a figure shown twice on a page has its own SVG ids (teacher 2026-10-29)

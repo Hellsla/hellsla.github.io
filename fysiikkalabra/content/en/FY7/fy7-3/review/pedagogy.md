@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e070b14b313b08c9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 103e5d090d023a78
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- none
+
+none.
 
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: en. Hash e070b14b313b08c9 at start and end.
+
+batch delta review (round 2): The retrieval (compass beside the wire, no current) sits in the crane/compass phenomenon and retrieves the compass and Earth's field; it gives away neither prediction.

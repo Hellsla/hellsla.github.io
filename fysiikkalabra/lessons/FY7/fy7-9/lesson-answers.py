@@ -73,4 +73,7 @@ a["check-T-K"] = b / 2.1e-6                                  # 1380 K
 a["check"] = b / 2.1e-6 - 273.15                             # 1107 °C -> 1,1 · 10³ °C
 # exit ticket: T three times -> λ_max to a third
 a["exit-third"] = 1 / 3
+# kertaus (herata): taajuus f = c / λ, punainen 700 nm ja violetti 400 nm hehkuvassa raudassa
+a["kertaus-f-punainen"] = c / 700e-9                          # 4,3 · 10¹⁴ Hz
+a["kertaus-f-violetti"] = c / 400e-9                         # 7,5 · 10¹⁴ Hz
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

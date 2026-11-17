@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 39363d1cfdd56ffb
+CONTENT-HASH: be7561f2690be5e0
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Delta only: the phone-charger illustration (scene) moved from after the Summary to right after the charger paragraph it illustrates; drawing unchanged, no labels or numbers.
-- The `[6pt]` spacing removed between $P = UI$ and $P_\text{h} = RI^2 = RP^2/U^2$: same formulas, no physics change.
-- Shared physics recomputed in the fi review (fy7-8 fi, same session): worked example, sim values, loss graph, virhe, siirto, checks, exit ticket all right.
-- Hash identical at start and end.
+batch delta review: new retrieval on effective voltage: 325 V / sqrt2 = 229.8 V -> 230 V, wrong 325*sqrt2 = 459.6 V -> 460 V recomputed; one correct option, feedback right (effective value heats a resistor like the DC value; cannot exceed peak). Does not reveal the transformer predictions.

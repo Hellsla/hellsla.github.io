@@ -23,21 +23,21 @@
       "id": "kertaus-aalto",
       "stage": "herata",
       "type": "choice",
-      "title": "Recap: frequency and wavelength of a wave",
-      "prompt": "The frequency of a wave doubles and the speed of the wave stays the same. How does the wavelength change?",
+      "title": "Recap: wavelength and frequency in glowing iron",
+      "prompt": "The red light of a glowing iron bar has a wavelength of $700\\,\\text{nm}$ and the violet light $400\\,\\text{nm}$. Both travel at $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$. Which light has the higher frequency?",
       "choices": [
         {
-          "text": "It is halved.",
+          "text": "The violet, because its wavelength is shorter.",
           "correct": true,
-          "feedback": "Correct. A wave travels one wavelength during one period, so $v = f\\lambda$ (chapter *How waves form and travel*). When $v$ stays the same and $f$ doubles, $\\lambda$ is halved. The same holds for light, whose speed is $c$."
+          "feedback": "Correct. A wave travels one wavelength during one period, so $v = f\\lambda$ (chapter *How waves form and travel*). At the same speed a shorter wavelength means a higher frequency: $f = c : \\lambda$, which gives $7.5 \\cdot 10^{14}\\,\\text{Hz}$ for violet and $4.3 \\cdot 10^{14}\\,\\text{Hz}$ for red."
         },
         {
-          "text": "It doubles.",
-          "feedback": "When the frequency rises, the period gets shorter, and the wave has time to travel a shorter distance during one period. Since $v = f\\lambda$ and $v$ stays the same, a doubled frequency halves the wavelength (chapter *How waves form and travel*)."
+          "text": "The red, because its wavelength is longer.",
+          "feedback": "A longer wavelength means a lower frequency. Since $v = f\\lambda$ and the speed is the same, $f = c : \\lambda$: red has $4.3 \\cdot 10^{14}\\,\\text{Hz}$ and violet $7.5 \\cdot 10^{14}\\,\\text{Hz}$ (chapter *How waves form and travel*)."
         },
         {
-          "text": "It stays the same.",
-          "feedback": "Wavelength, frequency and speed are related: $v = f\\lambda$ (chapter *How waves form and travel*). If $v$ stays the same and $f$ doubles, $\\lambda$ must be halved."
+          "text": "They have the same frequency, because their speed is the same.",
+          "feedback": "The same speed does not mean the same frequency. Since $v = f\\lambda$, the frequency is $f = c : \\lambda$, and different wavelengths give different frequencies: red $4.3 \\cdot 10^{14}\\,\\text{Hz}$ and violet $7.5 \\cdot 10^{14}\\,\\text{Hz}$ (chapter *How waves form and travel*)."
         }
       ],
       "optional": true

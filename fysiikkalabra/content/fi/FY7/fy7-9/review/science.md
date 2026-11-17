@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0819435386a6e0e6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 9e67b6ab8a650b06
 
 ## Blocking
-- none
+
 
 ## Polish
-- none
+- Glowing iron emits very little at 400 nm (its peak is in the infrared); "valkohehkuisen raudan" or a plainer source of violet light would fit the chapter's own picture better.
 
 ## Checked
-- Classical-radiation hedge (accelerating charge radiates in classical EM; atomic/nuclear emission -> quantum physics) is correct and appears in theory and summary; non-ionising UV damage (sunburn, photokeratitis/cornea) correct; fi, en, fi-easy say the same. (language checked: fi.)
+batch delta review: f = c/lambda: 4,3e14 Hz (700 nm), 7,5e14 Hz (400 nm) recomputed; one correct option, both distractors' feedback right; Ennusta (Wien shift, 300 K stone) not revealed.

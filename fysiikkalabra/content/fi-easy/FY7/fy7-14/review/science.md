@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b6357eb2bbe3a6b7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: ec48e7cd49143106
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The correct option's feedback could add that on a film one reflection also inverts the wave, but only after Ennuste 1; as is, "sama ajatus" leaves no wrong picture (C).
 
 ## Checked
-- Geometric extra path 2d vs optical path difference 2nd, compared with the vacuum/air wavelength: correct (550 : 1.33 = 413.5 nm). Very thin soap film: reflections in antiphase, ideally very little reflected light, looks dark/almost black in reflected light: correct; formula section and summary now say optical path difference. Languages match. (language checked: fi-easy.)
-- Round 2: exit ticket now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta", consistent with theory and summary (previous polish resolved).
+batch delta review: round-1 finding fixed: the two waves now travel different routes in air, so path difference alone decides (975/650 = 1,5, destructive) and no film reflection is implied; the soap-film sentence is only motivation; the feedback does not reveal Ennuste 1's inversion answer; one correct option; distractor feedback right.

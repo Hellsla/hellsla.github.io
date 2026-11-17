@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b96c35d0875bfeb3
+CONTENT-HASH: aa58822df89291a5
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (wavefront refraction, apparent depth, alpha2(alpha1) graph, lake scene, worked example); teacher-approved figures legible, nothing clipped.
+batch delta, round 1: fy7-10-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.

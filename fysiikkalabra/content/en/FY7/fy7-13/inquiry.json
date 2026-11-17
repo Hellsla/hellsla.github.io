@@ -24,7 +24,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: interference",
-      "prompt": "Two sources of the same frequency, oscillating in the same phase, emit waves. Point P is $1.5$ wavelengths farther from one source than from the other. What happens at point P?",
+      "prompt": "Laser light passes through two neighbouring slits in the foil, and the waves leaving the slits are in the same phase and have the same frequency. Point P on the wall is $1.5$ wavelengths farther from one slit than from the other. What is seen at point P?",
       "choices": [
         {
           "text": "The waves reinforce each other, because the path difference is larger than one wavelength.",

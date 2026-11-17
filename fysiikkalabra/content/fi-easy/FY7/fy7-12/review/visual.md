@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5f363b5920802f41
+CONTENT-HASH: f1f9856c52feb3eb
 
 ## Blocking
 
 ## Polish
-- [Minor] none
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+- Delta round 3 (fi-easy): opened fy7-12-stage-herata-390 (Pohdinta with the closed Kertaa: taittuminen box); layout intact. The only change is 19,8 -> 19,7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with {,} and ^\circ.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
