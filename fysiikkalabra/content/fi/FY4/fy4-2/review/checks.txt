@@ -9,4 +9,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: this session, not the CI image (no Docker)
-fy4-2: reviewed (science=PASS (carried over: md-paragraphs,typography), pedagogy=PASS (carried over: md-paragraphs,typography), visual=PASS); exercises: draft (science=PASS (carried over: reflow), pedagogy=PASS (carried over: reflow), visual=stale)
+fy4-2: reviewed (science=PASS (carried over: md-paragraphs,typography), pedagogy=PASS (carried over: md-paragraphs,typography), visual=PASS); exercises: reviewed (science=PASS (carried over: reflow), pedagogy=PASS (carried over: reflow), visual=PASS)
