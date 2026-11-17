@@ -264,7 +264,9 @@ Kaiuttimen puhekelassa on $60$ kierrosta ohutta johdinta, ja kelan säde on $1{,
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 60$, kelan säde $r = 1{,}3\,\text{cm}$, magneettivuon tiheys $B = 0{,}95\,\text{T}$, virta $I = 1{,}5\,\text{A}$ ja johtimen ja kentän välinen kulma $\alpha = 90^\circ$. Kysytään kelaan kohdistuvaa voimaa $F$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä $N = 60$, kelan säde $r = 1{,}3\,\text{cm}$, magneettivuon tiheys $B = 0{,}95\,\text{T}$, virta $I = 1{,}5\,\text{A}$ ja johtimen ja kentän välinen kulma $\alpha = 90^\circ$.
+
+Kysytään kelaan kohdistuvaa voimaa $F$.
 
 <!-- vaihe -->
 

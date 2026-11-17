@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 25293e0855e68dc1
+CONTENT-HASH: 09ff9ea6d57c44e7
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] exercises.json fy7-2-L2-10 and solutions.md Kohta d) — straight quotation marks ("Magneettinen aktiivisuus…", "voimakas häiriö takaa revontulet"); other FY7 sets use ”…”. Fix: ”…”.
-- [Minor] exercises.json fy7-2-L2-10, last line — "Vastaa laatikkoon kohdan b) ympyräradan säde." is not idiomatic. Fix: "Kirjoita laatikkoon kohdan b) ympyräradan säde metreinä."
-- [Minor] solutions.md fy7-2-L2-10 Kaava — "a) [formula] missä R on R-luku. b) …" runs both parts together; give b) its own line as Sijoitus does.
-- [Minor] solutions.md:64 (fy7-2-L1-07 Järkevyys, outside this delta) — the r = mv/(qB) row is about 20 px wider than its box at 360 px (fits at 390 px).
-- [Minor] solutions.md, m = … · 1,18·10⁻⁵ m²/V — at 1280 px the "·" row is not joined to the fraction row although it would fit.
+- [Minor] fy7-2/r-points — the fitted line is solid to the origin although the data start at 0,5; draw the part below the first point dashed.
+- [Minor] L2-10 — the opening paragraph is long (source, Ilmatieteen laitos page description and question run together); a break before "Mitä revontulet kertovat…" would help S2 readers.
+- [Minor] L2-08 — the 2x2 option grid leaves an empty area beside an opened feedback; shared component.
 
 ## Checked
-- New exercise fy7-2-L2-10 in full at 390 and 1280 px, solution open (own captures of the whole card): source line with link and "luettu 16. marraskuuta 2026", task parts a)–d), example table with its caption (keksitty esimerkkiaineisto, ei mittaustulos), answer box, every solution step, both links in Annettu. Every quantity and symbol is LaTeX, decimal comma, \cdot, colon division, nT/s and µT upright; r chain aligned (83,55 m ≈ 84 m); nothing clipped, table fits.
-- Selkeä suomi: short sentences, terms explained once (kynnysarvo, aurinkotuuli, magneettikehä), consistent voice.
-- Delta reflow: all 16 re-broken steps at 390 and 1280 px; rows start with "=", "≈" or "·" between whole quantities; no clipping.
-- Overflow scan at 360/390/1280 px, no red KaTeX. Hash identical at start and end.
+- contact-8 (exercise captures #85–#96): L2-08 force diagrams with Finnish feedback, L2-09 graph, L2-10 R number task, level 3
+- open-exercises-L2-1280-12 at full size: graph with decimal-comma ticks (0,5; 1,0 …), `B = 0,20 T`, solution formatting
+- Read all Finnish task texts, choices and feedback: terms explained for S2 (liike-energia, aurinkotuuli, klassinen käsittely, geomagneettinen häiriö); LaTeX units correct.
+- Only 1280 px captures exist for the exercises.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

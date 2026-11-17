@@ -386,7 +386,9 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 600$. Käämin pituus on $l = 15{,}0\,\text{cm}$ ja virta $I = 2{,}50\,\text{A}$. Vakio on $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Kysytään magneettivuon tiheyttä $B$ käämin keskellä. Lisäksi kysytään sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
+**Tunnetut ja kysytty.** Kierrosten lukumäärä on $N = 600$. Käämin pituus on $l = 15{,}0\,\text{cm}$ ja virta $I = 2{,}50\,\text{A}$. Vakio on $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$.
+
+Kysytään magneettivuon tiheyttä $B$ käämin keskellä. Lisäksi kysytään sen suhdetta Maan kenttään $B_\text{Maa} = 50\,\mu\text{T}$.
 
 <!-- vaihe -->
 
@@ -426,7 +428,9 @@ Koulun käämissä on $600$ kierrosta, ja sen pituus on $15{,}0\,\text{cm}$. Kä
 
 <!-- vaihe -->
 
-**Järkevyys.** Kierrostiheys on $600 : 0{,}150\,\text{m} = 4000$ kierrosta metrillä. Yksi ampeeri ja tuhat kierrosta metrillä antavat noin $1{,}3\,\text{mT}$. Nyt virta on $2{,}5\,\text{A}$ ja tiheys nelinkertainen, joten kenttä on noin $1{,}3\,\text{mT} \cdot 2{,}5 \cdot 4 = 13\,\text{mT}$. Tulos on noin $250$-kertainen Maan kenttään verrattuna, joten käämin kenttä on helppo mitata. Se on kuitenkin selvästi pienempi kuin magneettikuvauslaitteen noin $1{,}5\,\text{T}$. Sellainen kenttä vaatii suprajohtavan käämin ja satojen ampeerien virran.
+**Järkevyys.** Kierrostiheys on $600 : 0{,}150\,\text{m} = 4000$ kierrosta metrillä. Yksi ampeeri ja tuhat kierrosta metrillä antavat noin $1{,}3\,\text{mT}$. Nyt virta on $2{,}5\,\text{A}$ ja tiheys nelinkertainen, joten kenttä on noin $1{,}3\,\text{mT} \cdot 2{,}5 \cdot 4 = 13\,\text{mT}$.
+
+Tulos on noin $250$-kertainen Maan kenttään verrattuna, joten käämin kenttä on helppo mitata. Se on kuitenkin selvästi pienempi kuin magneettikuvauslaitteen noin $1{,}5\,\text{T}$. Sellainen kenttä vaatii suprajohtavan käämin ja satojen ampeerien virran.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että virtajohtimen magneettikenttä osoittaa johtimesta poispäin. Näin on varatun johtimen sähkökentässä. Magneettikentän kenttäviivat kuitenkin kiertävät johdinta suljettuina ympyröinä, eikä niillä ole alku- eikä loppupistettä. Kompassi johtimen vieressä kääntyy siksi poikittain johtimeen nähden, ei johdinta kohti.

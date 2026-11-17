@@ -304,7 +304,11 @@ Valokuidun ytimen taitekerroin on $1{,}48$ ja kuoren $1{,}46$. Kuinka suuri on r
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Ytimen taitekerroin $n_1 = 1{,}48$, kuoren taitekerroin $n_2 = 1{,}46$ ja säteen tulokulma $\alpha = 83^\circ$. Kysytään rajakulmaa $\alpha_\text{r}$. Kysytään myös, kokonaisheijastuuko säde.
+**Tunnetut ja kysytty.** Ytimen taitekerroin $n_1 = 1{,}48$, kuoren taitekerroin $n_2 = 1{,}46$ ja säteen tulokulma $\alpha = 83^\circ$.
+
+Kysytään rajakulmaa $\alpha_\text{r}$.
+
+Kysytään myös, kokonaisheijastuuko säde.
 
 <!-- vaihe -->
 

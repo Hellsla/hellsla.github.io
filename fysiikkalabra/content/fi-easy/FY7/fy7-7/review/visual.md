@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f421eff7bc911531
+CONTENT-HASH: 0820f8734e66e4da
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] none
 
 ## Checked
-- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.
+batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.

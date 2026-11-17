@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1e0c9f8fcf1c5474
+CONTENT-HASH: 9ae6860d27e03aeb
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] solutions.md:132 — at 390 px the left side "mgh − ½mv²" stands alone and every following row ("= …", "· 1,00 m", "− ½ · …") is flush left; correct, but the "· 1,00 m" row is short. Could break before "− ½" only.
+- [Minor] solutions.md:132 — the "· 1,00 m" row is short and flush left at 390 px (earlier note stands).
 
 ## Checked
-- Delta (reflow): solutions.md:22, 34, 107, 132, 160, 196 from preview/fi-easy/fy7-6.html, every solution open, at 390 and 1280 px (own captures of all eight re-broken steps). Rows start with "=", "≈", "−" or "·" between whole quantities; the fraction with N·s/m stays whole; 100 800 J → 100,8 kJ on their own rows; punctuation inside the blocks; at 1280 px the "·" rows are joined.
-- Captions without the "(esimerkkiaineisto)" marker: nothing left dangling in the task cards seen.
-- Overflow scan of every display formula, eq-chain and table at 360, 390 and 1280 px: none; no red KaTeX.
+- Delta, round 1. Capture fi-easy fy7-6-open-exercises-L2-1280-7 (lesson folder review/shots) full size: Järkevyys and Mallivastaus split into short paragraphs, fractions with N·s/m whole, nothing clipped.
 - Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

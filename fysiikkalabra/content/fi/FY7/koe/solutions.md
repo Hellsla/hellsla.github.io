@@ -1,34 +1,52 @@
 ## fy7-k1
 
 ### a)
-**Perustelu:** Magneetti on dipoli: sen pohjois- ja etelänapa ovat aina pari, koska magnetismi syntyy atomien ja alueiden pienistä dipoleista, jotka ovat kappaleen sisällä järjestyneet. Kun magneetti sahataan poikki, jokaiseen katkaisupintaan ilmestyy uusi napa, ja kumpikin kappale on pienempi magneetti, jolla on pohjoisnapa ja etelänapa. Erillistä yksinapaa ei synny. Vaihtoehto, jossa kappaleet ovat pelkkiä napoja, tulee käsityksestä, että navat ovat kappaleen kaksi päätä, jotka voi erottaa; magneettisuus ei myöskään katoa, koska se ei ole napojen välisessä rajassa vaan alueiden järjestyksessä.
+**Perustelu:** Magneetti on dipoli: sen pohjois- ja etelänapa ovat aina pari, koska magnetismi syntyy atomien ja alueiden pienistä dipoleista, jotka ovat kappaleen sisällä järjestyneet. Kun magneetti sahataan poikki, jokaiseen katkaisupintaan ilmestyy uusi napa, ja kumpikin kappale on pienempi magneetti, jolla on pohjoisnapa ja etelänapa. Erillistä yksinapaa ei synny.
+
+Vaihtoehto, jossa kappaleet ovat pelkkiä napoja, tulee käsityksestä, että navat ovat kappaleen kaksi päätä, jotka voi erottaa; magneettisuus ei myöskään katoa, koska se ei ole napojen välisessä rajassa vaan alueiden järjestyksessä.
 
 ### b)
-**Perustelu:** Magneettinen voima toimii keskeisvoimana: $|q|vB = \tfrac{m v^2}{r}$, joten $r = \tfrac{mv}{|q|B}$, ja nopeuden kaksinkertaistuessa säde kaksinkertaistuu. Kierrosaika on $T = \tfrac{2\pi r}{v} = \tfrac{2\pi m}{|q|B}$, joka ei riipu nopeudesta: suurempi nopeus tarkoittaa pidempää rataa mutta samalla kertaa nopeampaa liikettä. Vaihtoehto, jossa kierrosaika kaksinkertaistuu, unohtaa, että nopeus kasvaa samassa suhteessa kuin rata. Vaihtoehto, jossa säde nelinkertaistuu, tulee nopeuden neliöstä liike-energian kaavassa, mutta säde riippuu nopeudesta suoraan.
+**Perustelu:** Magneettinen voima toimii keskeisvoimana: $|q|vB = \tfrac{m v^2}{r}$, joten $r = \tfrac{mv}{|q|B}$, ja nopeuden kaksinkertaistuessa säde kaksinkertaistuu. Kierrosaika on $T = \tfrac{2\pi r}{v} = \tfrac{2\pi m}{|q|B}$, joka ei riipu nopeudesta: suurempi nopeus tarkoittaa pidempää rataa mutta samalla kertaa nopeampaa liikettä.
+
+Vaihtoehto, jossa kierrosaika kaksinkertaistuu, unohtaa, että nopeus kasvaa samassa suhteessa kuin rata. Vaihtoehto, jossa säde nelinkertaistuu, tulee nopeuden neliöstä liike-energian kaavassa, mutta säde riippuu nopeudesta suoraan.
 
 ### c)
-**Perustelu:** Johtimen toisen johtimen kohdalla aiheuttama kenttä on $B = \tfrac{\mu_0 I_1}{2\pi r}$, ja voima johdinpituutta kohti on $\tfrac{F}{l} = I_2 B = \tfrac{\mu_0 I_1 I_2}{2\pi r}$. Voima on verrannollinen virtaan $I_1$ ja kääntäen verrannollinen etäisyyteen $r$ (ei sen neliöön), joten kaksinkertainen virta ja kaksinkertainen etäisyys kumoavat toisensa: voima pysyy $F$:nä. Vaihtoehto $F/2$ syntyy, jos voiman luullaan riippuvan etäisyyden neliöstä kuten pistevarausten välillä, ja $2F$ jos etäisyyden vaikutus unohdetaan.
+**Perustelu:** Johtimen toisen johtimen kohdalla aiheuttama kenttä on $B = \tfrac{\mu_0 I_1}{2\pi r}$, ja voima johdinpituutta kohti on $\tfrac{F}{l} = I_2 B = \tfrac{\mu_0 I_1 I_2}{2\pi r}$. Voima on verrannollinen virtaan $I_1$ ja kääntäen verrannollinen etäisyyteen $r$ (ei sen neliöön), joten kaksinkertainen virta ja kaksinkertainen etäisyys kumoavat toisensa: voima pysyy $F$:nä.
+
+Vaihtoehto $F/2$ syntyy, jos voiman luullaan riippuvan etäisyyden neliöstä kuten pistevarausten välillä, ja $2F$ jos etäisyyden vaikutus unohdetaan.
 
 ### d)
 **Perustelu:** Indusoituva jännite on $|e| = N\tfrac{\Delta\Phi}{\Delta t}$, ja hetki $4{,}5\,\text{s}$ on jaksolla $4{,}0\,\text{s}$–$5{,}5\,\text{s}$, jolla vuo pienenee $0{,}6\,\text{mWb}$ ajassa $1{,}5\,\text{s}$. Siis $|e| = 200 \cdot \tfrac{0{,}6 \cdot 10^{-3}\,\text{Wb}}{1{,}5\,\text{s}} = 0{,}08\,\text{V}$. Arvo $0{,}06\,\text{V}$ on ensimmäisen jakson ($0$–$2\,\text{s}$) jännite, ja $0{,}12\,\text{V}$ saadaan, kun aikaväli unohdetaan ($200 \cdot 0{,}6\,\text{mWb}$). Arvo $0{,}40\,\text{mV}$ on vuon muutosnopeus $\tfrac{0{,}6\,\text{mWb}}{1{,}5\,\text{s}}$ ilman kierroslukua $200$.
 
 ### e)
-**Perustelu:** Putoava magneetti muuttaa putken seinämän läpi kulkevaa magneettivuota, ja sähkömagneettisessa induktiossa kuparissa syntyy sähkökenttä, joka ajaa pyörrevirtoja. Lenzin lain mukaan virtojen magneettikenttä vastustaa vuon muutosta eli magneetin liikettä, ja magneetin mekaanista energiaa (putoamisen myötä pienenevää potentiaalienergiaa, kun nopeus on vakio) muuttuu putken sisäenergiaksi. Muovi on eriste, joten siinä pyörrevirtoja ei synny ja magneetti putoaa lähes vapaasti. Kupari ei ole ferromagneettista: magneetti ei vedä sitä puoleensa, ja ilmanvastus on kummassakin putkessa sama. Magneetti ei myöskään varaudu.
+**Perustelu:** Putoava magneetti muuttaa putken seinämän läpi kulkevaa magneettivuota, ja sähkömagneettisessa induktiossa kuparissa syntyy sähkökenttä, joka ajaa pyörrevirtoja. Lenzin lain mukaan virtojen magneettikenttä vastustaa vuon muutosta eli magneetin liikettä, ja magneetin mekaanista energiaa (putoamisen myötä pienenevää potentiaalienergiaa, kun nopeus on vakio) muuttuu putken sisäenergiaksi.
+
+Muovi on eriste, joten siinä pyörrevirtoja ei synny ja magneetti putoaa lähes vapaasti. Kupari ei ole ferromagneettista: magneetti ei vedä sitä puoleensa, ja ilmanvastus on kummassakin putkessa sama. Magneetti ei myöskään varaudu.
 
 ### f)
-**Perustelu:** Ensimmäinen suodin päästää läpi vain yhden suunnan mukaisesti polarisoituneen valon, ja toinen, siihen nähden kohtisuorassa oleva suodin pysäyttää sen. Kun väliin asetetaan $45^\circ$ kulmassa oleva suodin, se päästää läpi ensimmäisen suotimen valon komponentin, joka on sen läpäisysuunnassa, ja läpäissyt valo on polarisoitunut tämän suotimen suuntaan. Tällä valolla on komponentti myös viimeisen suotimen läpäisysuunnassa, joten osa valosta pääsee läpi, vaikka intensiteetti on pienempi kuin alussa. Suodin ei siis vain vaimenna: se muuttaa polarisaation suuntaa. Vaihtoehto, jossa valo pääsee täysin läpi, unohtaa, että jokainen suodin pysäyttää suuntaansa vastaan kohtisuoran komponentin. Vaihtoehto, jossa suodin kääntää polarisaation takaisin, ei pidä paikkaansa, koska läpäissyt valo on polarisoitunut keskimmäisen suotimen suuntaan eikä ensimmäisen.
+**Perustelu:** Ensimmäinen suodin päästää läpi vain yhden suunnan mukaisesti polarisoituneen valon, ja toinen, siihen nähden kohtisuorassa oleva suodin pysäyttää sen. Kun väliin asetetaan $45^\circ$ kulmassa oleva suodin, se päästää läpi ensimmäisen suotimen valon komponentin, joka on sen läpäisysuunnassa, ja läpäissyt valo on polarisoitunut tämän suotimen suuntaan. Tällä valolla on komponentti myös viimeisen suotimen läpäisysuunnassa, joten osa valosta pääsee läpi, vaikka intensiteetti on pienempi kuin alussa. Suodin ei siis vain vaimenna: se muuttaa polarisaation suuntaa.
+
+Vaihtoehto, jossa valo pääsee täysin läpi, unohtaa, että jokainen suodin pysäyttää suuntaansa vastaan kohtisuoran komponentin. Vaihtoehto, jossa suodin kääntää polarisaation takaisin, ei pidä paikkaansa, koska läpäissyt valo on polarisoitunut keskimmäisen suotimen suuntaan eikä ensimmäisen.
 
 ### g)
-**Perustelu:** Samalla teholla $P = UI$ virta on $I = P/U$, joten kymmenkertainen jännite tarkoittaa kymmenesosaa virrasta. Häviöteho on $P_\text{h} = RI^2$, joten se pienenee $10^2 = 100$-kertaisesti eli sadasosaan. Kymmenesosa tulee, kun virran neliöllistä vaikutusta ei huomioida. Häviöteho ei voi kasvaa, koska jännitteen nosto pienentää virtaa; kasvu syntyisi, jos virheellisesti käytettäisiin kaavaa $P_\text{h} = U^2/R$ johdon yli olevalle koko jännitteelle.
+**Perustelu:** Samalla teholla $P = UI$ virta on $I = P/U$, joten kymmenkertainen jännite tarkoittaa kymmenesosaa virrasta. Häviöteho on $P_\text{h} = RI^2$, joten se pienenee $10^2 = 100$-kertaisesti eli sadasosaan.
+
+Kymmenesosa tulee, kun virran neliöllistä vaikutusta ei huomioida. Häviöteho ei voi kasvaa, koska jännitteen nosto pienentää virtaa; kasvu syntyisi, jos virheellisesti käytettäisiin kaavaa $P_\text{h} = U^2/R$ johdon yli olevalle koko jännitteelle.
 
 ### h)
-**Perustelu:** Aallonpituus saadaan yhtälöstä $\lambda = c/f$: mikroaalloille $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{2{,}45 \cdot 10^{9}\,\text{Hz}} \approx 0{,}12\,\text{m}$ ja FM-radiolle $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{1{,}00 \cdot 10^{8}\,\text{Hz}} \approx 3{,}0\,\text{m}$. Järjestys lyhimmästä pisimpään on röntgensäteily ($0{,}1\,\text{nm}$), punainen valo ($700\,\text{nm}$), mikroaallot ($12\,\text{cm}$) ja FM-radio ($3\,\text{m}$). Järjestys, jossa mikroaallot ja FM-radio on vaihdettu, vertaa taajuuksia väärin päin: pienempi taajuus tarkoittaa pidempää aallonpituutta. Vaihtoehto, jossa FM-radio on ensimmäisenä, on säteilyt taajuuden kasvun mukaan eikä aallonpituuden: taajuuden kasvaessa aallonpituus pienenee.
+**Perustelu:** Aallonpituus saadaan yhtälöstä $\lambda = c/f$: mikroaalloille $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{2{,}45 \cdot 10^{9}\,\text{Hz}} \approx 0{,}12\,\text{m}$ ja FM-radiolle $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{1{,}00 \cdot 10^{8}\,\text{Hz}} \approx 3{,}0\,\text{m}$. Järjestys lyhimmästä pisimpään on röntgensäteily ($0{,}1\,\text{nm}$), punainen valo ($700\,\text{nm}$), mikroaallot ($12\,\text{cm}$) ja FM-radio ($3\,\text{m}$).
+
+Järjestys, jossa mikroaallot ja FM-radio on vaihdettu, vertaa taajuuksia väärin päin: pienempi taajuus tarkoittaa pidempää aallonpituutta. Vaihtoehto, jossa FM-radio on ensimmäisenä, on säteilyt taajuuden kasvun mukaan eikä aallonpituuden: taajuuden kasvaessa aallonpituus pienenee.
 
 ### i)
-**Perustelu:** Kokonaisheijastus ytimestä vaippaan alkaa rajakulmasta $\alpha_\text{r}$, jolle $n_1\sin\alpha_\text{r} = n_2\sin 90^\circ$, joten $\sin\alpha_\text{r} = \tfrac{1{,}44}{1{,}50} = 0{,}96$ ja $\alpha_\text{r} \approx 73{,}7^\circ$. Kulmassa $76^\circ$ kulma on rajakulmaa suurempi, ja valo heijastuu kokonaan; kulmassa $70^\circ$ se on pienempi, ja osa valosta taittuu vaippaan. Tiheämmästä aineesta tuleminen on välttämätön mutta ei riittävä ehto, joten väite kummastakin kulmasta ei toimi. Pienempi kulma ei lisää kokonaisheijastusta: päinvastoin.
+**Perustelu:** Kokonaisheijastus ytimestä vaippaan alkaa rajakulmasta $\alpha_\text{r}$, jolle $n_1\sin\alpha_\text{r} = n_2\sin 90^\circ$, joten $\sin\alpha_\text{r} = \tfrac{1{,}44}{1{,}50} = 0{,}96$ ja $\alpha_\text{r} \approx 73{,}7^\circ$. Kulmassa $76^\circ$ kulma on rajakulmaa suurempi, ja valo heijastuu kokonaan; kulmassa $70^\circ$ se on pienempi, ja osa valosta taittuu vaippaan.
+
+Tiheämmästä aineesta tuleminen on välttämätön mutta ei riittävä ehto, joten väite kummastakin kulmasta ei toimi. Pienempi kulma ei lisää kokonaisheijastusta: päinvastoin.
 
 ### j)
-**Perustelu:** Ilmasta tiheämpään aineeseen heijastuessa aalto vaihtaa vaihetta puoli aallonpituutta, mutta kalvon takapinnalla (kalvosta ilmaan) vaihe ei muutu. Kun kalvo on paljon aallonpituutta ohuempi, matkaero on lähes nolla, joten kahdesta pinnasta heijastuneet aallot ovat vastakkaisissa vaiheissa ja kumoavat toisensa kaikilla aallonpituuksilla: reuna on musta. Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. Vaihtoehto, jossa kumoutuminen vaatii paksuutta $\tfrac{\lambda}{2}$, on väärä: yhden vaihekäännön vuoksi heijastus on voimakkain paksuudella $\tfrac{\lambda}{4n}$, ja paksuudella $\tfrac{\lambda}{2n}$ matkaero $2nd = \lambda$ kumoaa vain sen aallonpituuden, ei kaikkia; reuna on kuitenkin paljon ohuempi kuin aallonpituus.
+**Perustelu:** Ilmasta tiheämpään aineeseen heijastuessa aalto vaihtaa vaihetta puoli aallonpituutta, mutta kalvon takapinnalla (kalvosta ilmaan) vaihe ei muutu. Kun kalvo on paljon aallonpituutta ohuempi, matkaero on lähes nolla, joten kahdesta pinnasta heijastuneet aallot ovat vastakkaisissa vaiheissa ja kumoavat toisensa kaikilla aallonpituuksilla: reuna on musta.
+
+Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. Vaihtoehto, jossa kumoutuminen vaatii paksuutta $\tfrac{\lambda}{2}$, on väärä: yhden vaihekäännön vuoksi heijastus on voimakkain paksuudella $\tfrac{\lambda}{4n}$, ja paksuudella $\tfrac{\lambda}{2n}$ matkaero $2nd = \lambda$ kumoaa vain sen aallonpituuden, ei kaikkia; reuna on kuitenkin paljon ohuempi kuin aallonpituus.
 
 ### Yleisiä virheitä
 - Luullaan, että magneetin navat voi erottaa sahaamalla (a).
@@ -129,7 +147,9 @@
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä kulkevat kaikkien virhepalkkien sisällä. Ominaisvaraus on kääntäen verrannollinen kulmakertoimeen, joten jyrkin suora antaa pienimmän ja loivin suurimman arvon; epävarmuus on niiden eron puolikas.
 **Kaava:** $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(e/m_\text{e})_\text{max} - (e/m_\text{e})_\text{min}}{2}$, missä $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$
 **Muunnokset:** Kulmakertoimet lasketaan yksikössä $\text{m}^2/\text{V}$.
-**Sijoitus:** Jyrkin suora kulkee pisteiden $(80\,\text{V};\ 1{,}368 \cdot 10^{-3}\,\text{m}^2)$ ja $(200\,\text{V};\ 3{,}599 \cdot 10^{-3}\,\text{m}^2)$ kautta (kulmakerroin $1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}$), loivin pisteiden $(80\,\text{V};\ 1{,}520 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}224 \cdot 10^{-3}\,\text{m}^2)$ kautta ($1{,}690 \cdot 10^{-5}\,\text{m}^2/\text{V}$). Kun $B^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, jyrkimmälle suoralle $B^2 k = 1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{min} = \dfrac{2}{1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $= 1{,}68 \cdot 10^{11}\,\text{C/kg}$. Loivimmalle suoralle $B^2 k = 1{,}082 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{max} = 1{,}85 \cdot 10^{11}\,\text{C/kg}$, joten $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(1{,}85 - 1{,}68) \cdot 10^{11}\,\text{C/kg}}{2}$ $\approx 0{,}08 \cdot 10^{11}\,\text{C/kg}$
+**Sijoitus:** Jyrkin suora kulkee pisteiden $(80\,\text{V};\ 1{,}368 \cdot 10^{-3}\,\text{m}^2)$ ja $(200\,\text{V};\ 3{,}599 \cdot 10^{-3}\,\text{m}^2)$ kautta (kulmakerroin $1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}$), loivin pisteiden $(80\,\text{V};\ 1{,}520 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}224 \cdot 10^{-3}\,\text{m}^2)$ kautta ($1{,}690 \cdot 10^{-5}\,\text{m}^2/\text{V}$).
+
+Kun $B^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, jyrkimmälle suoralle $B^2 k = 1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{min} = \dfrac{2}{1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $= 1{,}68 \cdot 10^{11}\,\text{C/kg}$. Loivimmalle suoralle $B^2 k = 1{,}082 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{max} = 1{,}85 \cdot 10^{11}\,\text{C/kg}$, joten $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(1{,}85 - 1{,}68) \cdot 10^{11}\,\text{C/kg}}{2}$ $\approx 0{,}08 \cdot 10^{11}\,\text{C/kg}$
 **Vastaus:** $(1{,}74 \pm 0{,}08) \cdot 10^{11}\,\text{C/kg}$. Ominaisvarauksen $e / m_\text{e}$ tunnettu arvo $1{,}759 \cdot 10^{11}\,\text{C/kg}$ kuuluu väliin, joten mittaus on sopusoinnussa.
 **Järkevyys:** Suhteellinen epävarmuus on noin $5\,\%$, mikä sopii säteen lukemaan $\pm 1\,\text{mm}$ eli $2$–$3\,\%$ ja sen neliöintiin.
 
@@ -162,7 +182,9 @@
 ### b)
 **Kysytty:** virran suunta sauvassa
 **Periaate:** Lenzin lain mukaan indusoituva virta on sellainen, että sen magneettikenttä vastustaa vuon muutosta.
-**Mallivastaus:** Sauva liikkuu oikealle, joten silmukan pinta-ala kasvaa ja paperin sisään osoittava vuo kasvaa. Indusoituvan virran kentän on vastustettava kasvua ja osoitettava silmukan sisällä paperista ulos. Oikean käden säännön mukaan ulos osoittava kenttä syntyy virrasta, joka kiertää silmukassa vastapäivään, joten sauvassa (silmukan oikeassa reunassa) virta kulkee ylöspäin. Sama saadaan voimasta sauvan varauksiin: $\overline{v}$ oikealle ja $\overline{B}$ sisään antaa positiiviselle varaukselle voiman ylöspäin.
+**Mallivastaus:** Sauva liikkuu oikealle, joten silmukan pinta-ala kasvaa ja paperin sisään osoittava vuo kasvaa. Indusoituvan virran kentän on vastustettava kasvua ja osoitettava silmukan sisällä paperista ulos. Oikean käden säännön mukaan ulos osoittava kenttä syntyy virrasta, joka kiertää silmukassa vastapäivään, joten sauvassa (silmukan oikeassa reunassa) virta kulkee ylöspäin.
+
+Sama saadaan voimasta sauvan varauksiin: $\overline{v}$ oikealle ja $\overline{B}$ sisään antaa positiiviselle varaukselle voiman ylöspäin.
 
 ### c)
 **Annettu:** $e = 0{,}30\,\text{V}$, $R = 0{,}60\,\Omega$, $l = 0{,}30\,\text{m}$, $B = 0{,}40\,\text{T}$, $v = 2{,}5\,\text{m/s}$
@@ -177,7 +199,9 @@
 ### d)
 **Kysytty:** miksi virran suunta ei voi olla päinvastainen ja mihin vetoteho päätyy
 **Periaate:** Energian säilyminen: sähköenergiaa ei voi syntyä tyhjästä.
-**Mallivastaus:** Jos virta kulkisi päinvastaiseen suuntaan, magneettinen voima työntäisi sauvaa eteenpäin. Sauva kiihtyisi, vuon muutos ja jännite kasvaisivat ja virta kasvaisi lisää: sauva saisi liike-energiaa ja vastus lämpöä ilman ulkoista työtä, mikä rikkoo energian säilymisen. Todellisessa tilanteessa magneettinen voima vastustaa liikettä, joten vetävä voima tekee työn ja se muuttuu sähköenergiaksi. Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi, joka siirtyy lämpönä ympäristöön, joten se on sama kuin vetoteho.
+**Mallivastaus:** Jos virta kulkisi päinvastaiseen suuntaan, magneettinen voima työntäisi sauvaa eteenpäin. Sauva kiihtyisi, vuon muutos ja jännite kasvaisivat ja virta kasvaisi lisää: sauva saisi liike-energiaa ja vastus lämpöä ilman ulkoista työtä, mikä rikkoo energian säilymisen. Todellisessa tilanteessa magneettinen voima vastustaa liikettä, joten vetävä voima tekee työn ja se muuttuu sähköenergiaksi.
+
+Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ muuttuu vastuksessa sisäenergiaksi, joka siirtyy lämpönä ympäristöön, joten se on sama kuin vetoteho.
 
 ### Yleisiä virheitä
 - Virran suunta päätellään vain muistisäännöstä ilman Lenzin lain perustelua (b).
@@ -224,7 +248,9 @@
 ### d)
 **Kysytty:** miksi muuntaja toimii vain vaihtovirralla ja miksi siirtojännite on suuri
 **Periaate:** Muuntaja toimii sähkömagneettisen induktion avulla, ja siirrossa häviöt ovat virran neliöllisiä.
-**Mallivastaus:** Ensiökäämin virta synnyttää rautasydämeen magneettivuon, ja toisiojännite indusoituu vuon muuttuessa. Vaihtovirran vuo muuttuu jatkuvasti, joten toisiossa on jännite. Tasavirta antaa vakiovuon, jolloin $\Delta\Phi/\Delta t = 0$ eikä toisiojännitettä synny (vain kytkentähetkellä). Samalla teholla $P = UI$ suuremman jännitteen virta on pienempi, ja johdon häviöteho $P_\text{h} = RI^2$ pienenee virran neliön mukaan. Esimerkiksi jännitteen kymmenkertaistaminen pienentää häviöt sadasosaan. Vaihtovirralla jännite voidaan muuntaa voimalaitoksella ylös ja kuluttajan lähellä alas yksinkertaisella muuntajalla.
+**Mallivastaus:** Ensiökäämin virta synnyttää rautasydämeen magneettivuon, ja toisiojännite indusoituu vuon muuttuessa. Vaihtovirran vuo muuttuu jatkuvasti, joten toisiossa on jännite. Tasavirta antaa vakiovuon, jolloin $\Delta\Phi/\Delta t = 0$ eikä toisiojännitettä synny (vain kytkentähetkellä).
+
+Samalla teholla $P = UI$ suuremman jännitteen virta on pienempi, ja johdon häviöteho $P_\text{h} = RI^2$ pienenee virran neliön mukaan. Esimerkiksi jännitteen kymmenkertaistaminen pienentää häviöt sadasosaan. Vaihtovirralla jännite voidaan muuntaa voimalaitoksella ylös ja kuluttajan lähellä alas yksinkertaisella muuntajalla.
 
 ### Yleisiä virheitä
 - Käytetään huippuarvoa tehollisen jännitteen tilalla muuntajalaskussa (c).
@@ -267,7 +293,9 @@
 ### d)
 **Kysytty:** kuvio valkoisella valolla ja sen selitys
 **Periaate:** Maksimin ehto on matkaeron $d\sin\theta = k\lambda$ oltava kokonaisluku aallonpituuksia, ja suuntakulma riippuu aallonpituudesta.
-**Mallivastaus:** Keskimaksimissa $k = 0$ matkaero on nolla kaikilla aallonpituuksilla, joten kaikki värit vahvistavat toisiaan samassa kohdassa ja keskimaksimi on valkoinen. Ensimmäisen kertaluvun maksimi syntyy, kun matkaero vierekkäisistä raoista on täsmälleen yksi aallonpituus, $d\sin\theta = \lambda$. Pidemmällä aallonpituudella sama matkaero saavutetaan suuremmalla kulmalla, joten valo hajoaa spektriksi: violetti on lähimpänä keskimaksimia ja punainen kauimpana. Keskimaksimin kummallakin puolella on oma spektrinsä. Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät päällekkäin; esimerkiksi kertaluvun $3$ violetti ($3 \cdot 400\,\text{nm} = 1200\,\text{nm}$) on lähempänä keskimaksimia kuin kertaluvun $2$ punainen ($2 \cdot 700\,\text{nm} = 1400\,\text{nm}$).
+**Mallivastaus:** Keskimaksimissa $k = 0$ matkaero on nolla kaikilla aallonpituuksilla, joten kaikki värit vahvistavat toisiaan samassa kohdassa ja keskimaksimi on valkoinen. Ensimmäisen kertaluvun maksimi syntyy, kun matkaero vierekkäisistä raoista on täsmälleen yksi aallonpituus, $d\sin\theta = \lambda$. Pidemmällä aallonpituudella sama matkaero saavutetaan suuremmalla kulmalla, joten valo hajoaa spektriksi: violetti on lähimpänä keskimaksimia ja punainen kauimpana. Keskimaksimin kummallakin puolella on oma spektrinsä.
+
+Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät päällekkäin; esimerkiksi kertaluvun $3$ violetti ($3 \cdot 400\,\text{nm} = 1200\,\text{nm}$) on lähempänä keskimaksimia kuin kertaluvun $2$ punainen ($2 \cdot 700\,\text{nm} = 1400\,\text{nm}$).
 
 ### Yleisiä virheitä
 - Kulma lasketaan kaavalla $\sin\theta = x / L$ tangentin $\tan\theta = x/L$ asemesta (a).
@@ -310,7 +338,11 @@
 ### d)
 **Kysytty:** oletusten arviointi ja vaihtoehdon valinta
 **Periaate:** Mallin tulokset ovat yhtä luotettavia kuin sen oletukset. Valinta perustellaan luvuilla ja huomioidaan mallin rajat.
-**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin. B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin $9$–$10$ vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma. Kaksi muuntajaa, joiden häviö on $0{,}5\,\%$ kummallakin, hukkaisi noin $120\,\text{kW}$, enemmän kuin B:n kaapeli ($57\,\text{kW}$); yhteensä noin $177\,\text{kW}$ on silti vain noin kymmenesosa A:n häviöstä $1{,}73\,\text{MW}$, joten B voittaa. Johtopäätös: valitaan B.
+**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin.
+
+B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin $9$–$10$ vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma.
+
+Kaksi muuntajaa, joiden häviö on $0{,}5\,\%$ kummallakin, hukkaisi noin $120\,\text{kW}$, enemmän kuin B:n kaapeli ($57\,\text{kW}$); yhteensä noin $177\,\text{kW}$ on silti vain noin kymmenesosa A:n häviöstä $1{,}73\,\text{MW}$, joten B voittaa. Johtopäätös: valitaan B.
 
 ### Yleisiä virheitä
 - Häviöteho lasketaan kaavalla $P_\text{h} = UI$ koko jännitteellä (a).
@@ -422,7 +454,9 @@
 **Kaava:** Wienin siirtymälaki $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$
 **Muunnokset:** $550\,\text{nm} = 5{,}50 \cdot 10^{-7}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{5{,}50 \cdot 10^{-7}\,\text{m}} = 5269\,\text{K}$
-**Vastaus:** Lämpötilan olisi oltava noin $5270\,\text{K}$, mikä on selvästi volframin sulamispistettä $3695\,\text{K}$ korkeampi. Mitatulla lämpötila-alueella $2200$–$3000\,\text{K}$ huippu on aallonpituuksilla $1{,}3\,\mu\text{m}$–$0{,}97\,\mu\text{m}$ eli infrapunassa, ja sulamispisteen lähelläkin ($3695\,\text{K}$) huippu on vasta $0{,}78\,\mu\text{m}$:n kohdalla, joten suurin osa säteilystä on näkymätöntä lämpösäteilyä ja lampun hyötysuhde valon tuotossa on pieni. Päättely perustuu malliin, joka on mitattu vain välillä $2200$–$3000\,\text{K}$, joten päättely on ekstrapolointia; todellinen lanka ei ole täydellinen musta kappale, eikä Wienin laki yksin kerro, kuinka suuri osa säteilystä on näkyvää (siihen tarvittaisiin koko spektri).
+**Vastaus:** Lämpötilan olisi oltava noin $5270\,\text{K}$, mikä on selvästi volframin sulamispistettä $3695\,\text{K}$ korkeampi.
+
+Mitatulla lämpötila-alueella $2200$–$3000\,\text{K}$ huippu on aallonpituuksilla $1{,}3\,\mu\text{m}$–$0{,}97\,\mu\text{m}$ eli infrapunassa, ja sulamispisteen lähelläkin ($3695\,\text{K}$) huippu on vasta $0{,}78\,\mu\text{m}$:n kohdalla, joten suurin osa säteilystä on näkymätöntä lämpösäteilyä ja lampun hyötysuhde valon tuotossa on pieni. Päättely perustuu malliin, joka on mitattu vain välillä $2200$–$3000\,\text{K}$, joten päättely on ekstrapolointia; todellinen lanka ei ole täydellinen musta kappale, eikä Wienin laki yksin kerro, kuinka suuri osa säteilystä on näkyvää (siihen tarvittaisiin koko spektri).
 **Järkevyys:** Lämpötila $5270\,\text{K}$ on lähellä Auringon pintalämpötilaa, jonka spektrin huippu on näkyvässä valossa; kiinteä lanka ei tällaista lämpötilaa kestä.
 
 ### Yleisiä virheitä
