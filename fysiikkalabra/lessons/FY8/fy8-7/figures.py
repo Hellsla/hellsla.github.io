@@ -177,6 +177,36 @@ def rate_graph():
     return f.svg()
 
 
+def rate_task():
+    """Task figure: one laser of unknown power as a point (lambda, N/t) on a grid; no line, no power, no value printed."""
+    f = Fig("fy87-rt", 340, "Kuvaaja mittakaavassa: laserin lähettämien fotonien määrä sekunnissa aallonpituuden funktiona. Vaaka-akselilla "
+            "aallonpituus nollasta 700 nanometriin, ruudukon väli 100 nm, pystyakselilla fotonien määrä sekunnissa yksikkönä "
+            "10 potenssiin 15 fotonia sekunnissa, nollasta 5:een, ruudukon väli 0,5. Kuvaajassa on yksi piste: aallonpituus 520 nm, "
+            "fotonien määrä sekunnissa 3,93 yksikköä eli noin 3,9 · 10 potenssiin 15 sekunnissa.")
+    ax = Axes(f, (96, 290), (486, 74), x=(0, 700), y=(0, 5), xticks=[100, 200, 300, 400, 500, 600, 700],
+              yticks=[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5], xlabel=r"\lambda\ (\text{nm})",
+              ylabel=r"N/t\ (10^{15}\,\text{1/s})", yfmt=lambda v: "" if v % 1 else f"{v:g}")
+    ax.point(520, 1.5e-3 * 520e-9 / HC / 1e15, GREEN, 7)
+    return f.svg()
+
+
+def rate_task2():
+    """Task figure: two lasers X and Y as points (lambda, N/t); no line, no power printed."""
+    f = Fig("fy87-rt2", 340, "Kuvaaja mittakaavassa: kahden laserin, X:n ja Y:n, lähettämien fotonien määrä sekunnissa aallonpituuden "
+            "funktiona. Vaaka-akselilla aallonpituus nollasta 900 nanometriin, ruudukon väli 100 nm, pystyakselilla fotonien määrä "
+            "sekunnissa yksikkönä 10 potenssiin 15 fotonia sekunnissa, nollasta 8:aan, ruudukon väli 1. Piste X: aallonpituus 450 nm, "
+            "6,80 yksikköä. Piste Y: aallonpituus 800 nm, 4,03 yksikköä.")
+    ax = Axes(f, (96, 290), (486, 74), x=(0, 900), y=(0, 8), xticks=[100, 200, 300, 400, 500, 600, 700, 800, 900],
+              yticks=[1, 2, 3, 4, 5, 6, 7, 8], xlabel=r"\lambda\ (\text{nm})",
+              ylabel=r"N/t\ (10^{15}\,\text{1/s})", yfmt=lambda v: "" if v % 2 else f"{v:g}",
+              xfmt=lambda v: "" if v % 200 else f"{v:g}")
+    for nm, mw, col, name in ((450, 3.0, VIOLET, "X"), (800, 1.0, HOT, "Y")):
+        r = mw * 1e-3 * nm * 1e-9 / HC / 1e15
+        ax.point(nm, r, col, 7)
+        f.tex(ax.X(nm) + 14, ax.Y(r) - 16, name, "start", col)
+    return f.svg()
+
+
 def tunnel():
     """Tunneloituminen (optional): the probability of finding an electron before, inside and after a thin barrier."""
     f = Fig("fy87-tun", 320, "Periaatekuva tunneloitumisesta, ei mittakaavassa. Vasemmalta tulee elektroni, jonka energia E, vaakasuora "
@@ -250,7 +280,7 @@ def hero():
 
 
 FIGURES = {"hero": hero, "processes": processes, "inversion": inversion, "cavity": cavity, "qdots": qdots,
-           "rate-graph": rate_graph, "tunnel": tunnel}
+           "rate-graph": rate_graph, "tunnel": tunnel, "rate-task": rate_task, "rate-task2": rate_task2}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "processes": "reveals: absorption, spontaneous and stimulated emission and that stimulated photons are identical",
@@ -259,4 +289,6 @@ REUSE = {
     "qdots": "reveals: quantum-dot diameters 2-6 nm with their wavelengths and photon energies",
     "rate-graph": "reveals: N/t of 1,0 mW lasers at 405, 532 and 650 nm on a line through the origin",
     "tunnel": "safe: schematic of the probability before, inside and behind a barrier",
+    "rate-task": "safe: one laser as a point at 520 nm on a grid of N/t against wavelength, no power or line given",
+    "rate-task2": "safe: two lasers X (450 nm) and Y (800 nm) as points on a grid of N/t against wavelength, no powers given",
 }
