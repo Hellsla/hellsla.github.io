@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d732ae0bd7fa362d
+CONTENT-HASH: 8ca1747492890ab6
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] Open-solution captures were read mainly at 390 px; the 360 px check is by check_layout.py and my own DOM measurement.
+- [Minor] fy3-10-L3-05 — the added paragraph "Paine-eron … perusteella massa olisi noin 25 g" follows the Vastaus paragraph; it is Järkevyys-like content set as a plain paragraph. Acceptable; optionally lead it with a bold "Perustelu:".
 
 ## Checked
-- Own 390 px captures of the opened solutions (preview/fi-easy/fy3-10, scratchpad), plus a DOM measurement of every opened formula at 360, 390 and 1280 px (clipping, off-screen, row breaking inside a katex); check_layout.py --width 360 run.
-- Reflowed rows read: aligned equals signs in one column, continuation rows begin with an operator, closing comma or full stop stays in the aligned row (fy3-15-L2-05, fy3-10-L1-07 at 1280, fy3-12-L2-02, fy3-13-L2-06, fy3-16-L3-01).
-- New task fy3-9-L2-10 and fy3-11-L2-10 read in full at 390 px (source link first, a–d, long solution): typography and Finnish fine.
-- Not every changed solution was opened as a capture; the rest by the DOM measurement only.
+- Delta: solutions.md only cut into paragraphs (md-paragraphs); changed items L2-06, L2-07, L3-04, L3-05 read in source (diff).
+- Captures opened (current stamp: exercises hash 8ca1747492890ab6): fy3-10-open-exercises-L2-1280-11 (L2-07 Mallivastaus now two paragraphs; next task card follows cleanly, no clipping). Other changed items by source diff only.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
