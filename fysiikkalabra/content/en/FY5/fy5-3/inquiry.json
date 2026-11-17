@@ -33,7 +33,7 @@
         },
         {
           "text": "About $6.3\\,\\text{m}$, because the circumference of a circle is $\\pi r$.",
-          "feedback": "The distance $\\pi r$ is only half the circumference, the distance of half a revolution. In a whole revolution Aino travels $s = 2\\pi r = 2\\pi \\cdot 2.0\\,\\text{m} \\approx 13\\,\\text{m}$."
+          "feedback": "The distance $\\pi r$ is only half the circumference, the distance of half a revolution. In a whole revolution Aino travels $s = 2\\pi r \\approx 13\\,\\text{m}$."
         },
         {
           "text": "$4.0\\,\\text{m}$, because a revolution covers the diameter of the circle.",

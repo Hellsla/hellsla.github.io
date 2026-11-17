@@ -33,7 +33,7 @@
         },
         {
           "text": "Noin $6{,}3\\,\\text{m}$, koska ympyrän kehän pituus on $\\pi r$.",
-          "feedback": "Matka $\\pi r$ on vasta puolet kehästä eli puolen kierroksen matka. Koko kierroksella Aino kulkee $s = 2\\pi r = 2\\pi \\cdot 2{,}0\\,\\text{m} \\approx 13\\,\\text{m}$."
+          "feedback": "Matka $\\pi r$ on vasta puolet kehästä eli puolen kierroksen matka. Koko kierroksella Aino kulkee $s = 2\\pi r \\approx 13\\,\\text{m}$."
         },
         {
           "text": "$4{,}0\\,\\text{m}$, koska kierroksella kuljetaan ympyrän halkaisijan verran.",
