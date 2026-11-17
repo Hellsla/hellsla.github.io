@@ -299,6 +299,8 @@ The sea does not warm evenly either: the surface layer warms more than the deep 
 The model does not tell how much the sea will warm in the future or how much ice will melt, so it cannot predict the rise. In addition, the local sea level can differ from the global mean: on the coast of Finland, for example, the land is rising.
 **Reasonableness:** The relative change is $\gamma \Delta T = 6.0 \cdot 10^{-5}$, that is $0.0060\,\%$.
 
-It is very small, but in a column one kilometre high it is already centimetres. According to the source, the share of thermal expansion in the measured rise is one third: $$\begin{aligned} \Delta h_\text{thermal} &= \tfrac{1}{3} \cdot 115.8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$. The model's result $60\,\text{mm}$ is of the same order of magnitude, so the model gives a believable order of magnitude although it does not describe the real sea exactly.
+It is very small, but in a column one kilometre high it is already centimetres. According to the source, the share of thermal expansion in the measured rise is one third: $$\begin{aligned} \Delta h_\text{thermal} &= \tfrac{1}{3} \cdot 115.8\,\text{mm} \\ &\approx 39\,\text{mm} \end{aligned}$$.
+
+The model's result $60\,\text{mm}$ is of the same order of magnitude, so the model gives a believable order of magnitude although it does not describe the real sea exactly.
 
 In part a) the uncertainty of the latest measurement, $\pm 4.0\,\text{mm}$, corresponds to about $\pm 0.12\,\tfrac{\text{mm}}{\text{a}}$ in the rate, so two significant figures are enough.

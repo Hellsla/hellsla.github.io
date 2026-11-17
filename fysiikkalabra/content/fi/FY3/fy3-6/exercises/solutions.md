@@ -210,6 +210,7 @@ $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0{,}50\,\text{kg
 a) Ensimmäisestä minuutista saadaan $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, joka on vain noin $2\,\%$ taulukkoarvoa suurempi.
 
 b) Teho on vakio, mutta lämpötilan nousu pienenee $5{,}6\,\text{K}$:sta $3{,}4\,\text{K}$:iin minuutissa, koska lämpimämpi vesi ja astia luovuttavat ympäristöön yhä enemmän lämpöä. Alussa häviöt ovat pienet, joten $c$ kannattaa sovittaa kuvaajan alkuosaan, jossa vastuksen energia lämmittää lähes kokonaan vettä.
+
 **Järkevyys:** Häviöteho on noin $41\,\%$ vastuksen $200\,\text{W}$:n tehosta, ja loppua kohti kaartuva käyrä sopii tähän. Lämpötilaero huoneeseen on välillä keskimäärin $60{,}2\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} \approx 40\,\text{K}$, joten häviö on noin $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, mikä on tavallisen avoimen astian suuruusluokkaa. Alussa häviö on vain noin $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$ eli noin $3\,\%$ tehosta, joten a)-kohdan $c$ on vain muutaman prosentin liian suuri.
 
 ## fy3-6-L3-05

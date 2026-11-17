@@ -127,6 +127,7 @@
 b) The liquid is water, because the table value $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ differs from the result by only about $1\,\%$, and the values of the other substances in the table ($2100$ or less) are not close.
 
 c) Heat losses can be reduced with insulation and a lid on the calorimeter: then heat does not escape to the surroundings and the liquid does not evaporate, so a larger share of the energy of the resistor raises the temperature of the liquid and $c$ does not come out too large.
+
 **Reasonableness:** Energy balance: the resistor gives $100\,\text{W} \cdot 300\,\text{s} = 30\,000\,\text{J}$, and the liquid receives $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \cdot 14.5\,\text{K} = 30\,378\,\text{J}$. The numbers differ by about $1\,\%$, which is the size of the scatter of the measurements, so the losses in this interval are small.
 
 ## fy3-6-L2-06
@@ -209,8 +210,15 @@ $$\begin{aligned} c &= \dfrac{200\,\text{W} \cdot 60\,\text{s}}{0.50\,\text{kg} 
 
 a) The first minute gives $c \approx 4300\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is only about $2\,\%$ above the table value.
 
-b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$ to $3.4\,\text{K}$ per minute, because the warmer water and vessel give out more and more heat to the surroundings. At the start the losses are small, so $c$ should be fitted to the beginning of the graph, where the energy of the resistor heats almost entirely the water.
-**Reasonableness:** The loss power is about $41\,\%$ of the $200\,\text{W}$ power of the resistor, and the curve bending towards the end fits this. The difference in temperature from the room is on average $60.2\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} \approx 40\,\text{K}$ in the interval, so the loss is about $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, which is of the order of magnitude of an ordinary open vessel. At the start the loss is only about $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$, or about $3\,\%$ of the power, so the $c$ of part a) is only a few per cent too large.
+b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$ to $3.4\,\text{K}$ per minute, because the warmer water and vessel give out more and more heat to the surroundings.
+
+At the start the losses are small, so $c$ should be fitted to the beginning of the graph, where the energy of the resistor heats almost entirely the water.
+
+**Reasonableness:** The loss power is about $41\,\%$ of the $200\,\text{W}$ power of the resistor, and the curve bending towards the end fits this.
+
+The difference in temperature from the room is on average $60.2\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} \approx 40\,\text{K}$ in the interval, so the loss is about $81\,\text{W} : 40\,\text{K} \approx 2\,\text{W/K}$, which is of the order of magnitude of an ordinary open vessel.
+
+At the start the loss is only about $2\,\tfrac{\text{W}}{\text{K}} \cdot 3\,\text{K} \approx 6\,\text{W}$, or about $3\,\%$ of the power, so the $c$ of part a) is only a few per cent too large.
 
 ## fy3-6-L3-05
 **Given:** water $m = 0.300\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ from the table, room temperature $T_\text{room} = 20.0\,{}^\circ\text{C}$, length of the interval $10\,\text{min}$; temperatures $90.0$, $72.5$, $59.6$, $49.5$, $42.3$, $36.6$ and $32.5\,{}^\circ\text{C}$ at ten-minute intervals
@@ -223,6 +231,7 @@ b) The power is constant, but the rise in temperature falls from $5.6\,\text{K}$
 $$\begin{aligned} Q &= 4190 \cdot 0.300 \cdot 17.5\,\text{J} \\ &= 21\,998\,\text{J} \\ P &= \dfrac{21\,998\,\text{J}}{600\,\text{s}} \\ &= 36.66\,\text{W} \\ k &= \dfrac{36.66\,\text{W}}{(81.25 - 20.0)\,\text{K}} \\ &= 0.599\,\tfrac{\text{W}}{\text{K}} \end{aligned}$$
 
 In the same way for the other intervals: the quantities of heat are $16.2$, $12.7$, $9.05$, $7.16$ and $5.15\,\text{kJ}$, the powers $27.0$, $21.2$, $15.1$, $11.9$ and $8.59\,\text{W}$ and the coefficients $0.587$, $0.612$, $0.582$, $0.614$ and $0.590\,\tfrac{\text{W}}{\text{K}}$.
+
 **Answer:** $0.60\,\tfrac{\text{W}}{\text{K}}$, three significant figures in the temperatures and the mass, but $k$ varies from interval to interval by about $\pm 3\,\%$, so the second figure is the last meaningful one.
 
 c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}}$, that is, within $3\,\%$ of their mean, although the power falls from $36.7\,\text{W}$ to $8.59\,\text{W}$.
@@ -230,6 +239,7 @@ c) All six values of $k$ are between $0.58\ldots 0.61\,\tfrac{\text{W}}{\text{K}
 The model fits the measurements well; the small differences come from the $0.1\,{}^\circ\text{C}$ precision of the temperature readings.
 
 The cooling slows down because the power given out is directly proportional to the difference in temperature from the room: as the temperature of the water falls, the difference becomes smaller and the power falls in the same ratio.
+
 **Reasonableness:** The ratio of the powers of the first and the last interval is $\dfrac{36.66}{8.59} \approx 4.3$ and the ratio of the differences in temperature $\dfrac{61.25}{14.55} \approx 4.2$, so the power really follows the difference in temperature.
 
 ## fy3-6-L1-09
@@ -264,7 +274,11 @@ The cooling slows down because the power given out is directly proportional to t
 $$\begin{aligned} Q_\text{given} &= cm\left|\Delta T\right| \\ &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} \\ &\cdot 80\,\text{K} \\ &= 167\,600\,\text{J} \\ &\approx 170\,\text{kJ} \end{aligned}$$
 **Answer:** b) $170\,\text{kJ}$, two significant figures as in the mass $0.50\,\text{kg}$ and the temperature $80\,{}^\circ\text{C}$.
 
-a) According to the article, hot water can in some conditions freeze faster than cold water. Everyday experience says the opposite: the hot water must first cool to the temperature of the cold water, and that takes time. By the calculation the hot water must give off $170\,\text{kJ}$ before freezing can even start. The headline states the matter as a general fact, but the text itself limits it to special conditions.
+a) According to the article, hot water can in some conditions freeze faster than cold water.
+
+Everyday experience says the opposite: the hot water must first cool to the temperature of the cold water, and that takes time.
+
+By the calculation the hot water must give off $170\,\text{kJ}$ before freezing can even start. The headline states the matter as a general fact, but the text itself limits it to special conditions.
 
 c) Evaporation acts in two ways. The water that evaporates takes energy with it, so the water left behind cools faster.
 
@@ -289,4 +303,6 @@ So the hot water must give off more, and the difference is
 
 $$\begin{aligned} \Delta Q &= 167\,600\,\text{J} - 41\,900\,\text{J} \\ &= 125\,700\,\text{J} \end{aligned}$$
 
-That is why the phenomenon needs something that changes the comparison, such as evaporation. The model $Q = cm\Delta T$ does not give the time, because the time depends on how fast the energy is transferred. The article contains no measurements, and researchers do not agree on when the phenomenon occurs. The phenomenon is therefore possible, but it has not been confirmed as a general rule.
+That is why the phenomenon needs something that changes the comparison, such as evaporation.
+
+The model $Q = cm\Delta T$ does not give the time, because the time depends on how fast the energy is transferred. The article contains no measurements, and researchers do not agree on when the phenomenon occurs. The phenomenon is therefore possible, but it has not been confirmed as a general rule.

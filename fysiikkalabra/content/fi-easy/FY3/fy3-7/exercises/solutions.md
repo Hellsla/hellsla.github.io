@@ -192,6 +192,7 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
 \end{aligned}$$
 
 **Vastaus:** $334\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan vain noin sekunnin tarkkuudella, joten hyväksytään $\pm 5\,\%$. Kolme merkitsevää numeroa annetaan massan ja tehon mukaan. Jos tasanteeksi lukee suoraan rivit $20\,\text{s}$ ja $150\,\text{s}$, aika on $130\,\text{s}$ ja tulos $312\,\tfrac{\text{kJ}}{\text{kg}}$. Se on liian pieni, koska sulaminen alkoi jo ennen riviä $20\,\text{s}$ ja päättyi vasta rivin $150\,\text{s}$ jälkeen.
+
 **Järkevyys:** Tulos vastaa jään tunnettua ominaissulamislämpöä $334\,\tfrac{\text{kJ}}{\text{kg}}$. Jään lämmitys $-20\,{}^\circ\text{C}$:sta vei noin $18\,\text{s}$ eli $600\,\text{W} \cdot 18\,\text{s} = 10\,800\,\text{J}$. Tarkistus: $$\begin{aligned} c m \Delta T &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\ &\cdot 0{,}250\,\text{kg} \cdot 20\,\text{K} \\ &= 10\,500\,\text{J} \end{aligned}$$. Mittaus ja laskenta sopivat yhteen. Sulaminen vei noin $83\,\text{kJ}$. Se on noin kahdeksan kertaa enemmän energiaa kuin jään lämmittäminen.
 
 ## fy3-7-L2-06
@@ -231,7 +232,9 @@ $$\begin{aligned}
 \end{aligned}$$
 
 **Vastaus:** $14{,}4\,\text{K}$, kolme merkitsevää numeroa kuten taulukon lämpötiloissa. Interpolointi on arvio, joten hyväksytään $\pm 4\,\%$.
+
 **Mallivastaus b):** Kiehuva vesi pysyy lämpötilassa $T_\text{k}$, vaikka hella antaa lisää energiaa. Lisäenergia höyrystää vettä eikä nosta lämpötilaa. Vuoristossa $T_\text{k}$ on vain noin $85{,}7\,{}^\circ\text{C}$. Ruoka on siis ympäröivässä vedessä noin $14\,\text{K}$ viileämpää kuin merenpinnan tasolla. Ruoan kypsyminen riippuu lämpötilasta, joten se kestää kauemmin.
+
 **Järkevyys:** Arvio $85{,}7\,{}^\circ\text{C}$ on rivien $81{,}3\,{}^\circ\text{C}$ ja $90{,}0\,{}^\circ\text{C}$ välissä. Samoin paine $60{,}0\,\text{kPa}$ on rivien $50{,}0\,\text{kPa}$ ja $70{,}0\,\text{kPa}$ välissä. Ero $14{,}4\,\text{K}$ on pienempi kuin paineessa $50{,}0\,\text{kPa}$ ($18{,}7\,\text{K}$) ja suurempi kuin paineessa $70{,}0\,\text{kPa}$ ($10{,}0\,\text{K}$). Näin pitääkin olla.
 
 ## fy3-7-L3-04
@@ -266,6 +269,7 @@ s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
 \end{aligned}$$
 
 **Vastaus:** a) $69\,{}^\circ\text{C}$; b) $12\,\text{W}$; c) $Q = 20\,\text{kJ}$ ja $s \approx 200\,\tfrac{\text{kJ}}{\text{kg}}$. Aika luetaan karkeasti, joten hyväksytään $\pm 8\,\%$. Tulos annetaan kahdella merkitsevällä numerolla.
+
 **Järkevyys:** Jähmettyminen kestää $27{,}7\,\text{min}$. Se on selvästi kauemmin kuin nesteen $9{,}8\,\text{K}$:n jäähtyminen $3\,\text{min}$:ssa. Vertailu: jos sama energia $19{,}9\,\text{kJ}$ laskisi nestettä, lämpötila laskisi $\dfrac{19\,910\,\text{J}}{2200\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}100\,\text{kg}} \approx 90\,\text{K}$. Jähmettymisessä vapautuu siis paljon energiaa. Tasanteella lämpötila ei laske, koska jähmettyminen vapauttaa juuri sen energian, jonka aine luovuttaa ympäristöön. Koko vapautuva energia kuluu ympäristön häviöihin.
 
 ## fy3-7-L3-05
@@ -284,7 +288,9 @@ m_\text{h} &= \dfrac{56\,565\,\text{J}}{2\,406\,650\,\tfrac{\text{J}}{\text{kg}}
 $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{kg}$$
 
 **Vastaus:** a) $23{,}5\,\text{g}$, kolme merkitsevää numeroa kuten massassa $0{,}300\,\text{kg}$; b) $0{,}386\,\text{kg}$. Se on noin $16$ kertaa höyryn massa.
+
 **Mallivastaus:** Yksi kilogramma höyryä luovuttaa jäähtyessään $65\,{}^\circ\text{C}$:seen yhteensä $2\,406\,650\,\text{J}$. Yksi kilogramma samanlämpöistä vettä luovuttaa vain $4190 \cdot 35{,}0\,\text{J} = 146\,650\,\text{J}$. Höyryn luovuttamasta energiasta valtaosa, noin $94\,\%$, vapautuu tiivistymisessä, kun lämpötila pysyy vakiona. Iholle osuva höyry tiivistyy ihon pinnalle ja luovuttaa tämän suuren energian iholle. Siksi sama massa höyryä aiheuttaa paljon pahemman palovamman kuin yhtä kuuma vesi.
+
 **Järkevyys:** Tulos $23{,}5\,\text{g}$ on pieni verrattuna maidon massaan $300\,\text{g}$. Höyry luovuttaa tiivistyessään paljon energiaa, koska $r$ on suuri. Tarkistus: $23{,}5\,\text{g}$ luovuttaa tiivistyessään $2260\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}0235\,\text{kg} = 53{,}1\,\text{kJ}$ ja jäähtyessään $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}0235\,\text{kg} \cdot 35{,}0\,\text{K} = 3{,}4\,\text{kJ}$. Yhteensä se on $56{,}6\,\text{kJ}$, ja maito ottaa $56{,}6\,\text{kJ}$. Energiat täsmäävät.
 
 ## fy3-7-L1-09

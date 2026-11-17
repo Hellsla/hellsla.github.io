@@ -192,8 +192,13 @@
 
 Part a): the mean power is $P = 2.00\,\text{kW}$.
 
-Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount. The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
-**Reasonableness:** The loss is smaller than the energy of the heating element ($34.8\,\text{kJ} < 239.9\,\text{kJ}$), so the internal energy of the water still increases, as in the table. Balance: $$\begin{aligned} &205.1\,\text{kJ} + 34.8\,\text{kJ} \\ &= 239.9\,\text{kJ} \end{aligned}$$. In the measurement the power is $2.00\,\text{kW}$ and the loss is on average about $0.29\,\text{kW}$ all the time, which is about $15\,\%$ of the power, that is, a clearly measurable part.
+Part c): The missing energy has not disappeared: it has been transferred as heat through the wall of the kettle to the surrounding air and the table, whose internal energy has increased by the same amount.
+
+The first law holds when the net heat $Q = E_\text{v} - Q_\text{out}$ is used for the water. The accumulated loss $E_\text{v} - \Delta U$ grows on every row of the table: $8.1$, $16.3$, $26.1$ and $34.8\,\text{kJ}$, because the warm water gives off heat to the surroundings all the time.
+
+**Reasonableness:** The loss is smaller than the energy of the heating element ($34.8\,\text{kJ} < 239.9\,\text{kJ}$), so the internal energy of the water still increases, as in the table. Balance: $$\begin{aligned} &205.1\,\text{kJ} + 34.8\,\text{kJ} \\ &= 239.9\,\text{kJ} \end{aligned}$$.
+
+In the measurement the power is $2.00\,\text{kW}$ and the loss is on average about $0.29\,\text{kW}$ all the time, which is about $15\,\%$ of the power, that is, a clearly measurable part.
 
 ## fy3-5-L1-09
 **Given:** work $W = 60\,\text{J}$ (the surroundings do work on the air), no heat is transferred, that is $Q = 0$, the air stays a gas

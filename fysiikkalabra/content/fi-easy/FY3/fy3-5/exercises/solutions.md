@@ -193,6 +193,7 @@
 Kohta a): keskiteho on $P = 2{,}00\,\text{kW}$.
 
 Kohta c): Puuttuva energia ei ole kadonnut. Se on siirtynyt lämpönä keittimen seinän kautta ympäröivään ilmaan ja pöytään. Niiden sisäenergia on kasvanut yhtä paljon. Ensimmäinen pääsääntö on voimassa, kun veden nettolämpönä käytetään arvoa $Q = E_\text{v} - Q_\text{ulos}$. Kertynyt häviö $E_\text{v} - \Delta U$ kasvaa taulukossa jokaisella rivillä: $8{,}1$, $16{,}3$, $26{,}1$ ja $34{,}8\,\text{kJ}$. Lämmin vesi luovuttaa ympäristöön lämpöä koko ajan.
+
 **Järkevyys:** Häviö on pienempi kuin vastuksen energia ($34{,}8\,\text{kJ} < 239{,}9\,\text{kJ}$), joten veden sisäenergia kasvaa edelleen, kuten taulukossa. Tase: $$\begin{aligned} &205{,}1\,\text{kJ} + 34{,}8\,\text{kJ} \\ &= 239{,}9\,\text{kJ} \end{aligned}$$. Mittauksessa teho on $2{,}00\,\text{kW}$ ja häviö on keskimäärin noin $0{,}29\,\text{kW}$ koko ajan. Se on noin $15\,\%$ tehosta eli selvästi mitattava osa.
 
 ## fy3-5-L1-09
