@@ -369,6 +369,31 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-9-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-9/pa-points",
+      "text": "Protaktinium-$234\\text{m}$-näytteen pulssit laskettiin Geiger-mittarilla $10\\,\\text{s}$:n jaksoissa $20\\,\\text{s}$:n välein (esimerkkiaineisto, kuva). Taustasäteilyä tuli ilman näytettä keskimäärin $5$ pulssia $10\\,\\text{s}$:n jaksossa. Kuvasta luettuna pulsseja on alussa $t = 0$ noin $380$ ja hetkellä $t = 200\\,\\text{s}$ noin $58$.\n\nMikä on näytteen puoliintumisaika? Vähennä ensin tausta. Anna vastaus sekunteina.",
+      "answer": 70.9,
+      "unit": "s",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy8-9-L2-10",
+      "level": 2,
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy8-9/aktiivisuus",
+      "text": "Kuvassa on tuntemattoman radioaktiivisen näytteen aktiivisuus ajan funktiona (esimerkkiaineisto). Lue kuvaajasta, milloin alkuaktiivisuus on puolittunut. Laske sen avulla näytteen hajoamisvakio.\n\nMikä on hajoamisvakio $\\lambda$? Anna vastaus yksikössä $\\tfrac{1}{\\text{h}}$.",
+      "answer": 0.14,
+      "unit": "1/h",
+      "tolerance": 0.03
     }
   ],
   "level3": [

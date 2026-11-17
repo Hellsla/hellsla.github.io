@@ -369,6 +369,31 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-9-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-9/pa-points",
+      "text": "The pulse count of a protactinium-$234\\text{m}$ sample was measured with a Geiger counter in $10\\,\\text{s}$ intervals every $20\\,\\text{s}$ (example data, figure). Without the sample the background gave on average $5$ pulses per $10\\,\\text{s}$ interval. Read from the figure, the count is about $380$ at $t = 0$ and about $58$ at $t = 200\\,\\text{s}$.\n\nWhat is the half-life of the sample? Subtract the background first. Give the answer in seconds.",
+      "answer": 70.9,
+      "unit": "s",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy8-9-L2-10",
+      "level": 2,
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy8-9/aktiivisuus",
+      "text": "The figure shows the activity of an unknown radioactive sample as a function of time (example data). Read from the graph the time at which the initial activity has halved, and use it to calculate the decay constant of the sample.\n\nWhat is the decay constant $\\lambda$? Give the answer in $\\tfrac{1}{\\text{h}}$.",
+      "answer": 0.14,
+      "unit": "1/h",
+      "tolerance": 0.03
     }
   ],
   "level3": [
