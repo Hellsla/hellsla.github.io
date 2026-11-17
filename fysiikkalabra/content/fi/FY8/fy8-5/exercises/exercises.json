@@ -271,6 +271,32 @@
           "feedback": "Osumat eivät ole virheitä. Ne kuuluvat jakaumaan, ja tarkempikin mittaus löytäisi elektronin joka kymmenennellä kerralla rajan ulkopuolelta."
         }
       ]
+    },
+    {
+      "id": "fy8-5-L2-08",
+      "level": 2,
+      "text": "Kuvassa on vetyatomin kolmen orbitaalin poikkileikkaukset ytimen kautta. Kuvan $2\\text{p}$-orbitaali on yksi kolmesta $2\\text{p}$-orbitaalista, ja kullakin orbitaalilla on enintään kaksi elektronia.\n\na) Lue kuvasta, millä orbitaaleista on solmupallo, millä solmutaso ja millä ei solmua lainkaan.\n\nb) Selitä solmun avulla, miksi elektronia ei havaita solmun kohdalla, vaikka se voi olla solmun molemmilla puolilla.\n\nc) Kuinka monta elektronia mahtuu enintään kuvan kolmen orbitaalin alikuorille $1\\text{s}$, $2\\text{s}$ ja $2\\text{p}$ yhteensä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "figure": "fy8-5/nodes",
+      "answer": 10,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-09",
+      "level": 2,
+      "text": "Kuvassa on vetyatomin energiatasot kuorilta $n = 1$–$4$ ja niiden orbitaalit laatikoina. Nuoli näyttää siirtymän $4\\text{s}$-orbitaalilta $2\\text{p}$-orbitaalille, ja siirtymässä atomi lähettää fotonin. Käytä vakioita $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$ sekä muunnosta $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Lue kuvasta tilojen $4\\text{s}$ ja $2\\text{p}$ energiat ja laske fotonin energia $E_\\text{f}$ elektronivoltteina.\n\nb) Laske fotonin aallonpituus $\\lambda$.\n\nc) Laske kuvan perusteella, kuinka monta orbitaalia kuorella $n = 4$ on, ja perustele, miksi fotonin aallonpituus olisi sama, jos elektroni lähtisi $4\\text{d}$-orbitaalilta.\n\nAnna b)-kohdan tulos vastauslaatikkoon nanometreinä.",
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-5/levels-n4",
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
     }
   ],
   "level3": [

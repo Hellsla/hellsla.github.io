@@ -271,6 +271,32 @@
           "feedback": "The hits are not errors. They belong to the distribution, and even a more accurate measurement would find the electron outside the boundary one time in ten."
         }
       ]
+    },
+    {
+      "id": "fy8-5-L2-08",
+      "level": 2,
+      "text": "The figure shows cross-sections of three orbitals of the hydrogen atom through the nucleus. The $2\\text{p}$ orbital in the figure is one of the three $2\\text{p}$ orbitals, and each orbital holds at most two electrons.\n\na) Read from the figure which of the orbitals has a nodal sphere, which has a nodal plane and which has no node at all.\n\nb) Use the node to explain why the electron is not found at the node, even though it can be on both sides of it.\n\nc) How many electrons can the subshells $1\\text{s}$, $2\\text{s}$ and $2\\text{p}$ of the three orbitals in the figure hold in total?\n\nEnter the result of part c) in the answer box.",
+      "kind": [
+        "graph",
+        "concept"
+      ],
+      "figure": "fy8-5/nodes",
+      "answer": 10,
+      "unit": "kpl",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-5-L2-09",
+      "level": 2,
+      "text": "The figure shows the energy levels of the hydrogen atom for the shells $n = 1$–$4$ and their orbitals as boxes. The arrow shows the transition from the $4\\text{s}$ orbital to the $2\\text{p}$ orbital, and in the transition the atom emits a photon. Use the constants $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ and $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and the conversion $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\na) Read the energies of the states $4\\text{s}$ and $2\\text{p}$ from the figure and calculate the energy $E_\\text{f}$ of the photon in electronvolts.\n\nb) Calculate the wavelength $\\lambda$ of the photon.\n\nc) Using the figure, work out how many orbitals the shell $n = 4$ has, and justify why the wavelength of the photon would be the same if the electron started from the $4\\text{d}$ orbital.\n\nEnter the result of part b) in the answer box in nanometres.",
+      "kind": [
+        "graph",
+        "model"
+      ],
+      "figure": "fy8-5/levels-n4",
+      "answer": 486,
+      "unit": "nm",
+      "tolerance": 0.02
     }
   ],
   "level3": [
