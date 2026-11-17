@@ -23,20 +23,20 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: the slope of a line",
-      "prompt": "The measurement points (time, position) lie on a straight line in the $(t, s)$ coordinate system. What does the slope of the line tell you?",
+      "prompt": "The travel time of the radio signal of the Voyager 2 probe to Earth is measured at different distances. The measurement points (distance, travel time) lie on a straight line in the $(s, t)$ coordinate system. What does the slope of the line tell you?",
       "choices": [
         {
-          "text": "The point where the line crosses the $s$-axis.",
-          "feedback": "That is where the line crosses the $s$-axis, the constant term, not the slope (chapter *Graphing and fitting a straight line*). The slope tells you how steep the line is: by how many units $s$ changes when $t$ increases by one."
+          "text": "The travel time when the distance is zero.",
+          "feedback": "That is where the line crosses the $t$-axis, not the slope (chapter *Graphing and fitting a straight line*). The slope tells you how steep the line is: by how many units $t$ changes when $s$ increases by one."
         },
         {
-          "text": "How much the position changes per unit of time.",
-          "correct": true,
-          "feedback": "Correct. The slope is $\\Delta s : \\Delta t$ (chapter *Graphing and fitting a straight line*). In motion it is the speed, and you apply it today."
+          "text": "How much the travel time grows per unit of distance.",
+          "feedback": "Correct. The slope is $\\Delta t : \\Delta s$ (chapter *Graphing and fitting a straight line*). Here it is the time needed per unit of distance. Today you apply the same idea to motion.",
+          "correct": true
         },
         {
           "text": "How long the line is.",
-          "feedback": "The length of the line does not matter, because the line continues in both directions. The slope is the ratio of two changes, $\\Delta s : \\Delta t$ (chapter *Graphing and fitting a straight line*)."
+          "feedback": "The length of the line does not matter, because the line continues in both directions. The slope is the ratio of two changes, $\\Delta t : \\Delta s$ (chapter *Graphing and fitting a straight line*)."
         }
       ],
       "optional": true

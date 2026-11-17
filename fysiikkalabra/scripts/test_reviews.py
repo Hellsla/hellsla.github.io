@@ -627,6 +627,15 @@ put(entries=(dict(NEW, figure=f"{LESSON}/few-points"),), fig=VAR); out = ex_scop
 expect("an added exercise that shows a new figure variant: delta for all three", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
 put(fig=("(100, 102.5)]:", "(100, 103.0)]:")); out = ex_scope()
 expect("one added and the figure a surviving exercise shows changed: as before (figure, full)", "science: full" in out and "pedagogy: full" in out and "added-exercise" not in out, out)
+# 8p: a new exercise beside a change of a surviving exercise's wording is no change of a level or id; a surviving exercise's level or id is
+def reword(ex): ex["level1"][0]["text"] = ex["level1"][0]["text"].replace("a", "e", 1)
+def relevel(ex): ex["level3"].append(dict(ex["level2"].pop(0), level=3))
+put(edit=reword); out = ex_scope()
+expect("8p: one added and a surviving exercise's wording changed: not a change of a level or id", "levels" not in out, out)
+put(edit=relevel); out = ex_scope()
+expect("8p: one added and a surviving exercise moved to another level: still a level change, pedagogy full", "levels" in out and "pedagogy: full" in out and "added-exercise" not in out, out)
+put(entries=(), sol="", ans="", edit=lambda ex: ex["level2"][0].update(id=f"{LESSON}-L2-77")); out = ex_scope()
+expect("8p: a surviving exercise's id changed: still a level or id change, pedagogy full", "levels" in out and "pedagogy: full" in out, out)
 def scoped(name, frm=H0, base=B0):
     (X / "review" / f"{name}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h(t, part='exercises')}\nSCOPE: delta added-exercise from {frm} base {base[:12]}\n\n## Blocking\nnone\n")
 put()
@@ -752,6 +761,8 @@ expect("... a unit inside \\text{} may not change", not rv._tr_text("$t = 230\\,
 expect("... formulas in another order are equivalent (0c: where a language puts a formula in its sentence is no science)", rv._tr_text("$4{,}0\\,\\text{s}$ ja $18\\,\\text{m}$", "$18\\,\\text{m}$ in $4.0\\,\\text{s}$", []))
 expect("... nor another number outside a formula", not rv._tr_text("Haaran 3 virta", "The current of branch 2", []))
 expect("... an option's text keeps its labels in order", not rv._tr_text("Kappale B", "Body D", [], labels=True) and rv._tr_text("Kappale B", "A body B", [], labels=True))
+expect("8p: a translated \\text{} word outside a sub- or superscript is the same formula (fy8-11 L3-05)", rv._tr_text("$m_\\text{hiili}=\\dfrac{E}{\\text{lämpöarvo}}$", "$m_\\text{carbon}=\\dfrac{E}{\\text{heating value}}$", []))
+expect("... a changed number, operator or symbol beside it still differs", not rv._tr_text("$m=\\dfrac{E}{\\text{lämpöarvo}}$", "$m=\\dfrac{2E}{\\text{heating value}}$", []) and not rv._tr_text("$m=\\dfrac{E}{\\text{lämpöarvo}}$", "$m=E\\cdot\\text{heating value}$", []))
 t = project(); FI = t / "content/fi/FY3" / LESSON; EN = t / "content/en/FY3" / LESSON
 shutil.copytree(FI, EN, ignore=shutil.ignore_patterns("review"))
 XE = EN / "exercises"; _ej = XE / "exercises.json"; _ex = json.loads(_ej.read_text())

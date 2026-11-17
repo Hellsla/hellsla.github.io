@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a790d8d8a8ace68b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: e550e957002f8c9e
 
 ## Blocking
-- none
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Etsi virhe distractor 'satoja tonneja': the student's wrong result 675 000 kg = 675 t, so the new wording matches the error (old 'tuhansia kiloja' was too small); feedback unchanged and right.
-- Model answer: nickel 8,91 g/cm³ vs copper 8,96 g/cm³ (true), nickel ferromagnetic and copper not, so magnetism discriminates: correct; 'muut havainnot' is the right word.
-- Displacement figure: label V = V2 - V1 on the bracket between the 40 ml and 70 ml readings, aria/text 'lukemien erotus': consistent with the text (V = V2 - V1); figures.py change only label text and width.
-- Reading uncertainty (meniscus), beam estimate 1,9 kg · 7,9 ≈ 15 kg, container mistake (subtract for one weighing, slope for a graph): physics right.
-- Iceberg alt text change: not physics.
+batch delta review: retrieval choice now V = a³ = (4,0·10⁻² m)³ = 6,4·10⁻⁵ m³, recomputed; distractors 64 (no conversion), 6,4·10⁻³ (area factor 10⁻⁴), 0,64 (length factor 10⁻²) each match their feedback; two significant figures from 4,0 cm; side 4,0 cm agrees with the lesson text; lesson-answers.py prints 6,4e-05.
