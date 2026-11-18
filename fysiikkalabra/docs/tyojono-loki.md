@@ -715,3 +715,6 @@ Sivun `nain-opiskelet.html` (fi, en, fi-easy) uudistus: kuusivaiheinen opiskelup
 ## 4c. Kuuntele ja katso + Kirjavinkit: korjaukset ja kuvitus (2026-11-18)
 Tavutusvirhe (`lang="en"` suomenkielisen laatikon ympärillä) korjattu, kolme kieltä; kielentarkistus (3 muutosta); kuvitus FY1–FY8 ja yläkuvat
 (`scripts/page_art.py`, opettaja hyväksyy); kaappaukset `docs/audits/2026-11-18-kuuntele-ja-katso/`.
+
+## §0i (toinen) Pysähdy ja mieti -pilotti (PR #699, 2026-11-18)
+Opettaja hyväksyi pilotin 2026-11-18 (koordinaattorin välityksellä, kielikorjausten jälkeen). Merkintä ```pysahdy (kysymys, rivi `---`, vastaus; `scripts/stopthink.py`, `test_stopthink.py`), render `<aside class="stop-think">` + `<details>` "Vastaus", tyyli `templates/site.css`, tekstit `lang/*.json` `lesson.stop_think`. Sisältö: fy4-3 (3 kysymystä), fy4-4 (3), fy4-6 (4), fi/en/fi-easy. Laajennus muihin lukuihin vasta opettajan erillisellä päätöksellä.

@@ -154,7 +154,7 @@ Siksi vierekkäisten kohtien väli on $\Delta x = \tfrac{\lambda}{2}$. Sama $\la
 ## fy5-12-L2-06
 **Kysytty:** miten opiskelijan väite energian häviämisestä solmuviivalla oikaistaan
 **Periaate:** Heikentävässä interferenssissä aallot kumoavat toistensa poikkeamat tietyissä kohdissa. Kaiuttimet kuitenkin lähettävät energiaa koko ajan yhtä paljon. Siksi energian kokonaismäärän täytyy säilyä.
-**Mallivastaus:** Väite on väärä. Solmuviivoilla poikkeamat kumoavat toisensa, joten sinne kulkeutuu hyvin vähän energiaa. Energia ei kuitenkaan häviä. Interferenssikuvio jakaa sen tilaan eri tavalla: vahvistavan interferenssin kohtiin energiaa kulkeutuu vastaavasti enemmän. Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin. Aallot kulkevat toistensa läpi, ja kaiuttimien teho pysyy samana.
+**Mallivastaus:** Väite on väärä. Solmuviivoilla poikkeamat kumoavat toisensa, joten sinne kulkeutuu hyvin vähän energiaa. Energia ei kuitenkaan häviä. Interferenssikuvio jakaa sen tilaan eri tavalla: vahvistavan interferenssin kohtiin energiaa kulkeutuu vastaavasti enemmän. Energia ei muutu solmuviivoilla sisäenergiaksi eikä siirry takaisin kaiuttimiin. Aallot kulkevat toistensa läpi, ja kaiuttimien teho pysyy samana.
 
 ## fy5-12-L2-07
 **Annettu:** amplitudit taulukosta matkaeron mukaan; lähteiden aallot ovat yhtä suuret

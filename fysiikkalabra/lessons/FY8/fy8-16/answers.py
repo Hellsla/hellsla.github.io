@@ -39,4 +39,10 @@ a["fy8-16-L2-06"] = C_KMS * z6 / 70                     # v = 11 965 km/s, d = 1
 # L3-04: example data, rotation curve; at r = 30 kpc observed 213 km/s, visible-matter model 113 km/s
 a["fy8-16-L3-04"] = 213 / 113                           # ratio 1,885 (observed +2,9 % and model -38,9 % between 10 and 30 kpc)
 a["fy8-16-L3-05"] = 2.725 * (486.4 / 121.6)             # Lyman-alpha 121,6 -> 486,4 nm: stretch 4,000 (z = 3,000), T = 4 * 2,725 K = 10,9 K
+# L2-09: figure fy8-16/hubble-t, line through the grid point (250 Mpc, 18 000 km/s) -> H0 = 72 km/s/Mpc; Hγ 434,0 -> 449,3 nm
+H_FIG = 18000 / 250                                     # H0 read from the figure's line: 72,0 km/s/Mpc
+z9 = (449.3 - 434.0) / 434.0                            # Δλ = 15,3 nm, z = 0,03525
+a["fy8-16-L2-09"] = C_KMS * z9 / H_FIG                  # v = 10 569 km/s, d = 146,8 Mpc -> 147 Mpc
+# L3-06: same figure; where the line reaches v = 0,10 c (the limit of v = c z)
+a["fy8-16-L3-06"] = 0.10 * C_KMS / H_FIG                # v = 29 980 km/s, d = 416,4 Mpc (the figure's axis ends at 300 Mpc)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

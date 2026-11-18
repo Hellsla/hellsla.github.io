@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3153b143cc15415a
+CONTENT-HASH: 083e5d1f4f70e7ef
 
 ## Blocking
 
 ## Polish
-- None.
+- Box pulled by a rope and speeding up: "the force of the rope is greater than the friction" assumes a horizontal rope (with a slanted rope only its horizontal component counts). The question already says "horizontal forces", so this is C; "the horizontal pull of the rope" would make it exact.
 
 ## Checked
-batch delta review: the new retrieval question (a lorry at rest at the lights). N = G at rest, exactly one option is correct, the N > G distractor's feedback is right by Newton's second law, and the point that a loaded lorry has a larger G and so a larger N is right. The figure labels "cart A/B" agree with the solutions.
+batch delta review: three new "Stop and think" blocks (rope pull > friction, net force to the right; same net force, empty cart accelerates more, a = F/m, double the mass halves a; box rising and slowing: acceleration and net force downward, T < G, consistent with T - G = ma below) judged against the theory; no numbers to recompute; no captures opened.

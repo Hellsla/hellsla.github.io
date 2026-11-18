@@ -278,6 +278,20 @@
           "feedback": "Correct: $z_\\text{A} \\approx 0.0101$ and $z_\\text{B} \\approx 0.0300$. The distance $d = \\tfrac{cz}{H_0}$ is proportional to the redshift, so the ratio of the distances is about $3.0$."
         }
       ]
+    },
+    {
+      "id": "fy8-16-L2-09",
+      "level": 2,
+      "core": true,
+      "text": "The figure shows the recession speed $v$ of nine galaxies as a function of distance $d$ in megaparsecs. A line through the origin has been fitted to the points. In the spectrum of a new galaxy, the $\\text{H}\\gamma$ line of hydrogen, whose wavelength in the laboratory is $434.0\\,\\text{nm}$, appears at the wavelength $449.3\\,\\text{nm}$. The distance of the galaxy has not been measured in any other way.\n\na) Calculate the redshift $z$ and the recession speed $v$ of the galaxy. Use $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nb) Read the slope of the line, that is, the Hubble constant $H_0$, from the figure. The line passes through a grid point.\n\nc) How far away is the galaxy?\n\nEnter the result of part c) in the answer field in megaparsecs.",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "answer": 146.8,
+      "unit": "Mpc",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -373,6 +387,20 @@
       ],
       "answer": 10.9,
       "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-06",
+      "level": 3,
+      "text": "The figure shows the recession speed $v$ of nine galaxies as a function of distance $d$ in megaparsecs. A line through the origin has been fitted to the points. The formula $v = c\\,z$ holds only when the redshift is small, about $z < 0.10$. The speed of light is $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$. The axis of the figure ends at the distance $300\\,\\text{Mpc}$, and the farthest point is about $285\\,\\text{Mpc}$ away.\n\na) Read the Hubble constant $H_0$ from the figure as the slope of the line. The line passes through a grid point.\n\nb) The line is extended beyond the figure. At what distance does the line give the recession speed $0.10\\,c$?\n\nc) Why is this distance an uncertain estimate on the basis of the figure, and why can the formula $v = c\\,z$ not be used to find the speed of galaxies whose redshift is clearly above $0.10$?\n\nEnter the result of part b) in the answer field in megaparsecs.",
+      "kind": [
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "answer": 416.4,
+      "unit": "Mpc",
       "tolerance": 0.02
     }
   ]
