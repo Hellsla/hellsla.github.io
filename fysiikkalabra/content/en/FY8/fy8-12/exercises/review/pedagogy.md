@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 3c71dfde0dd50970
-SCOPE: delta unit notation 1/min -> min⁻¹ (L1-07, L2-09, solutions)
+SCOPE: delta answers,md-paragraphs,numbers,typography from 6d921e617ea8865f base 64d4935c5ce5
 
 ## Blocking
 
