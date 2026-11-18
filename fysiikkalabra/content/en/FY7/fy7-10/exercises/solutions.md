@@ -62,7 +62,7 @@
 **Given:** angle of incidence in air $\alpha_1 = 40.0^\circ$, angle of refraction in the plastic $\alpha_2 = 25.4^\circ$, refractive index of air $n_1 = 1.00$, $c = 3.00 \cdot 10^{8}\,\text{m/s}$
 **Find:** the speed of light in the plastic $v$ in the form $\ldots \cdot 10^{8}\,\text{m/s}$
 **Principle:** The refractive index of the plastic follows from the law of refraction, because both angles and the refractive index of air are known. The refractive index tells how many times more slowly light travels in the plastic than in a vacuum, $n = c : v$.
-**Formula:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, so $n_2 = \dfrac{n_1 \sin\alpha_1}{\sin\alpha_2}$, and $v = \dfrac{c}{n_2}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_1 &= n_2 \sin\alpha_2 \\ n_2 &= \frac{n_1 \sin\alpha_1}{\sin\alpha_2} \\ n_2 &= \frac{c}{v} \\ v &= \frac{c}{n_2} \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees, the refractive indices have no unit, and the speed comes out in the same unit as $c$.
 **Substitution:** $n_2 = \dfrac{1.00 \cdot \sin 40.0^\circ}{\sin 25.4^\circ} = \dfrac{0.6428}{0.4289} = 1.4986$ and $v = \dfrac{3.00 \cdot 10^{8}\,\text{m/s}}{1.4986} = 2.002 \cdot 10^{8}\,\text{m/s}$
 **Answer:** $v \approx 2.00 \cdot 10^{8}\,\text{m/s}$, so the answer is $2.00$; three significant figures like the angles.
@@ -72,7 +72,7 @@
 **Given:** thickness of the glass $d = 2.0\,\text{cm}$, refractive index of the glass $n = 1.52$, speed of light in air $c = 3.00 \cdot 10^{8}\,\text{m/s}$
 **Find:** the difference in travel times $\Delta t$ in picoseconds
 **Principle:** In the glass light travels at the speed $v = c : n$, so travelling the same distance takes longer in the glass than in the air. The travel time is the distance divided by the speed. The light arrives perpendicular to the glass, so it is not refracted and travels the distance $d$ in the glass.
-**Formula:** $\Delta t = \dfrac{d}{v} - \dfrac{d}{c}$, where $v = \dfrac{c}{n}$, so $\Delta t = \dfrac{n d}{c} - \dfrac{d}{c} = \dfrac{(n - 1)\, d}{c}$
+**Formula:** $$\begin{aligned} t_\text{glass} &= \frac{d}{v} \\ t_\text{air} &= \frac{d}{c} \\ \Delta t &= t_\text{glass} - t_\text{air} \\ v &= \frac{c}{n} \\ \Delta t &= \frac{n d}{c} - \frac{d}{c} \\ &= \frac{(n - 1)\, d}{c} \end{aligned}$$
 **Conversions:** $d = 2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$. Finally $1\,\text{ps} = 10^{-12}\,\text{s}$.
 **Substitution:** $\Delta t = \dfrac{(1.52 - 1) \cdot 0.020\,\text{m}}{3.00 \cdot 10^{8}\,\text{m/s}} = 3.467 \cdot 10^{-11}\,\text{s} = 34.67\,\text{ps}$
 **Answer:** $\Delta t \approx 35\,\text{ps}$, two significant figures like the thickness $2.0\,\text{cm}$.
@@ -113,7 +113,7 @@
 **Given:** speed of light in material A $v_1 = 2.25 \cdot 10^{8}\,\text{m/s}$, in material B $v_2 = 1.97 \cdot 10^{8}\,\text{m/s}$, angle of incidence $\alpha_1 = 40.0^\circ$
 **Find:** the angle of refraction $\alpha_2$ in degrees
 **Principle:** The law of refraction $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ and the definition of the refractive index $n = c : v$ together give $\dfrac{\sin\alpha_1}{v_1} = \dfrac{\sin\alpha_2}{v_2}$: the ratio of the sines of the angles is the same as the ratio of the speeds. Light slows down when it passes into material B, so it is refracted towards the normal.
-**Formula:** $\dfrac{c}{v_1}\sin\alpha_1 = \dfrac{c}{v_2}\sin\alpha_2$, so $\sin\alpha_2 = \dfrac{v_2 \sin\alpha_1}{v_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_1 &= n_2 \sin\alpha_2 \\ n &= \frac{c}{v} \\ \frac{c}{v_1}\sin\alpha_1 &= \frac{c}{v_2}\sin\alpha_2 \\ \sin\alpha_2 &= \frac{v_2 \sin\alpha_1}{v_1} \end{aligned}$$
 **Conversions:** Not needed: the speeds are in the same unit, so they cancel.
 **Substitution:** $\sin\alpha_2 = \dfrac{1.97 \cdot 10^{8}\,\text{m/s} \cdot \sin 40.0^\circ}{2.25 \cdot 10^{8}\,\text{m/s}} = 0.8756 \cdot 0.6428 = 0.5628$, so $\alpha_2 = 34.249^\circ$
 **Answer:** $\alpha_2 \approx 34.2^\circ$, three significant figures like the speeds and the angle of incidence.
@@ -128,7 +128,7 @@
 **Given:** wavelength in air $\lambda_0 = 633\,\text{nm}$, refractive index of glass $n = 1.52$, refractive index of air $1.00$, the frequency $f$ does not change at the boundary
 **Find:** the wavelength in glass $\lambda$ in nanometres
 **Principle:** The frequency stays the same at the boundary, but the speed of light changes. For a wave $v = f\lambda$, so the wavelength is directly proportional to the speed. In air $v_0 = c : 1.00 \approx c$ and in glass $v = c : n$, so the speed and with it the wavelength decrease by the factor of the refractive index.
-**Formula:** $\lambda_0 = \dfrac{v_0}{f}$ and $\lambda = \dfrac{v}{f}$, so $\dfrac{\lambda}{\lambda_0} = \dfrac{v}{v_0} = \dfrac{1}{n}$ and $\lambda = \dfrac{\lambda_0}{n}$
+**Formula:** $$\begin{aligned} \lambda_0 &= \frac{v_0}{f} \\ \lambda &= \frac{v}{f} \\ \frac{\lambda}{\lambda_0} &= \frac{v}{v_0} \\ &= \frac{c : n}{c} \\ &= \frac{1}{n} \\ \lambda &= \frac{\lambda_0}{n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength is calculated in nanometres, because the refractive index has no unit.
 **Substitution:** $\lambda = \dfrac{633\,\text{nm}}{1.52} = 416.4\,\text{nm}$
 **Answer:** $\lambda \approx 416\,\text{nm}$, three significant figures like the wavelength and the refractive index.

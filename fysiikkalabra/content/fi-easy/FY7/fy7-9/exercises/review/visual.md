@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c7dd49e82fdb5d8d
+CONTENT-HASH: 3a6d16d67c977e97
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: c7dd49e82fdb5d8d
 - none
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-9 (fi-easy) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
-- Hash identical at start and end.
+- Delta (work queue 8g: Kaava step rewritten into aligned display blocks, fi-easy). Opened full-size at 1280 px with solutions open: fy7-9-open-exercises-L2-1280-3 (9-12 Kaava, four aligned rows). Equals signs align, fractions and subscripts render, the order principle, symbolic steps, then substitution holds, the block sits inside the solution card with no clipping, overflow or red KaTeX. The neighbouring Muunnokset, Sijoitus and Vastaus blocks are unaffected. No figures changed. No 390 px solution capture exists in this packet, so the phone wrap of the longest chains was not judged.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

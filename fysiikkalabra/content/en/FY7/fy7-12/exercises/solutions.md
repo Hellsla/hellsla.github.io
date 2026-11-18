@@ -2,7 +2,7 @@
 **Given:** refractive index of water $n_1 = 1.33$, refractive index of air $n_2 = 1.00$
 **Find:** the critical angle $\alpha_\text{r}$ at the boundary between water and air, in degrees
 **Principle:** The light of the lamp goes from water into air, that is from a substance with a larger refractive index into one with a smaller refractive index, so a critical angle exists. At the critical angle the angle of refraction is $90^\circ$, so the sine of the critical angle follows from the law of refraction $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices are numbers without units, and the angle comes out in degrees.
 **Substitution:** $\alpha_\text{r} = \sin^{-1}\dfrac{1.00}{1.33} = \sin^{-1} 0.7519 = 48.75^\circ$
 **Answer:** $48.8^\circ$, three significant figures like the refractive indices $1.33$ and $1.00$.
@@ -12,7 +12,7 @@
 **Given:** refractive index of diamond $n_1 = 2.42$, refractive index of air $n_2 = 1.00$
 **Find:** the critical angle $\alpha_\text{r}$ at the boundary between diamond and air, in degrees
 **Principle:** The light goes from diamond into air, that is from a substance with a larger refractive index into one with a smaller refractive index, so a critical angle exists. At the critical angle the angle of refraction is $90^\circ$, and the law of refraction $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ gives the sine of the critical angle.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices are numbers without units.
 **Substitution:** $\alpha_\text{r} = \sin^{-1}\dfrac{1.00}{2.42} = \sin^{-1} 0.4132 = 24.41^\circ$
 **Answer:** $24.4^\circ$, three significant figures like the refractive indices.
@@ -22,7 +22,7 @@
 **Given:** refractive index of glass $n_1 = 1.52$, refractive index of water $n_2 = 1.33$
 **Find:** the critical angle $\alpha_\text{r}$ at the boundary between glass and water, in degrees, when light goes from the glass into the water
 **Principle:** The refractive index of glass is larger than that of water, so light going from glass into water has a critical angle. At the critical angle the angle of refraction is $90^\circ$, and the law of refraction $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ gives the sine of the critical angle.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices are numbers without units.
 **Substitution:** $\alpha_\text{r} = \sin^{-1}\dfrac{1.33}{1.52} = \sin^{-1} 0.8750 = 61.04^\circ$
 **Answer:** $61.0^\circ$, three significant figures like the refractive indices.
@@ -52,7 +52,7 @@
 **Given:** refractive index of the core $n_1 = 1.47$, critical angle at the boundary between the core and the cladding $\alpha_\text{r} = 82.0^\circ$
 **Find:** the refractive index $n_2$ of the cladding
 **Principle:** Light goes from the core into the cladding, and at the critical angle the angle of refraction is $90^\circ$. The law of refraction $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ gives a relation between the critical angle and the refractive indices, and the refractive index of the cladding can be solved from it.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $n_2 = n_1 \sin\alpha_\text{r}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ n_2 &= n_1 \sin\alpha_\text{r} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices have no units, and the angle is in degrees.
 **Substitution:** $n_2 = 1.47 \cdot \sin 82.0^\circ = 1.47 \cdot 0.9903 = 1.456$
 **Answer:** $1.46$, three significant figures like the refractive index of the core $1.47$ and the angle $82.0^\circ$.
@@ -62,7 +62,7 @@
 **Given:** angle of incidence on the short side face (the leg face) of the prism $\alpha = 45^\circ$, air outside the prism $n_2 = 1.00$
 **Find:** the smallest refractive index $n$ of the glass of the prism for which the light is totally internally reflected
 **Principle:** Light is totally internally reflected from glass into air when the angle of incidence is larger than the critical angle or equal to it. The critical angle can therefore be at most $45^\circ$. The critical angle decreases as the refractive index of the glass increases, so the smallest allowed refractive index is the one for which the critical angle is exactly $45^\circ$.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, so at the limit $\alpha_\text{r} = \alpha$ we get $n = \dfrac{n_2}{\sin\alpha}$
+**Formula:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ \alpha_\text{r} &= \alpha \\ \sin\alpha &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices have no units.
 **Substitution:** $n = \dfrac{1.00}{\sin 45^\circ} = \dfrac{1.00}{0.7071} = 1.414$
 **Answer:** at least $1.41$, three significant figures like the refractive index of air $1.00$.
@@ -72,7 +72,7 @@
 **Given:** critical angle at the boundary between the plastic and air $\alpha_\text{r} = 42.0^\circ$, refractive index of air $n_2 = 1.00$, speed of light in a vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** the speed of light $v$ in the plastic, in kilometres per second
 **Principle:** The refractive index of the plastic follows from the critical angle, because at the critical angle the angle of refraction in the air is $90^\circ$. The refractive index in turn tells how many times more slowly light travels in the plastic than in a vacuum.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, so $n = \dfrac{n_2}{\sin\alpha_\text{r}}$, and $v = \dfrac{c}{n}$
+**Formula:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha_\text{r}} \\ v &= \frac{c}{n} \\ &= \frac{c \sin\alpha_\text{r}}{n_2} \end{aligned}$$
 **Conversions:** At the end $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $n = \dfrac{1.00}{\sin 42.0^\circ} = \dfrac{1.00}{0.6691} = 1.494$ and $v = \dfrac{3.00 \cdot 10^8\,\text{m/s}}{1.494} = 2.007 \cdot 10^8\,\text{m/s} = 2.007 \cdot 10^5\,\text{km/s}$
 **Answer:** $2.01 \cdot 10^5\,\text{km/s}$, three significant figures like the critical angle $42.0^\circ$.
@@ -82,7 +82,7 @@
 **Given:** length of the fibre $s = 250\,\text{km}$, refractive index of the glass $n = 1.46$, speed of light in a vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** the travel time $t$ of the light pulse in milliseconds
 **Principle:** In glass light travels at a constant speed $v = c : n$. The pulse travels along the axis of the fibre, so the distance it covers is the length of the fibre, and the travel time is the distance divided by the speed.
-**Formula:** $v = \dfrac{c}{n}$ and $t = \dfrac{s}{v}$, so $t = \dfrac{n s}{c}$
+**Formula:** $$\begin{aligned} v &= \frac{c}{n} \\ t &= \frac{s}{v} \\ &= \frac{n s}{c} \end{aligned}$$
 **Conversions:** $s = 250\,\text{km} = 250 \cdot 1000\,\text{m} = 2.50 \cdot 10^5\,\text{m}$. At the end $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $t = \dfrac{1.46 \cdot 2.50 \cdot 10^5\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} = 1.217 \cdot 10^{-3}\,\text{s} = 1.217\,\text{ms}$
 **Answer:** $1.22\,\text{ms}$, three significant figures like the refractive index $1.46$ and the length of the fibre $250\,\text{km}$.
@@ -92,7 +92,7 @@
 **Given:** depth of the lamp $h = 1.80\,\text{m}$, refractive index of water $n_1 = 1.33$, refractive index of air $n_2 = 1.00$
 **Find:** the radius $r$ of the circle from which light comes out of the water surface
 **Principle:** The rays from the lamp meet the water surface at a larger angle of incidence the farther from the point above the lamp they hit the surface. Light gets into the air only when the angle of incidence is smaller than the critical angle; at larger angles of incidence the light is totally internally reflected. At the edge of the circle the ray meets the surface exactly at the critical angle, and the normal to the surface is vertical, so the depth, the radius and the ray of light form a right-angled triangle.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ and $\tan\alpha_\text{r} = \dfrac{r}{h}$, so $r = h \tan\alpha_\text{r}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \tan\alpha_\text{r} &= \frac{r}{h} \\ r &= h \tan\alpha_\text{r} \end{aligned}$$
 **Conversions:** Not needed: the depth is in metres, and the radius comes out in metres.
 **Substitution:** $\alpha_\text{r} = \sin^{-1}\dfrac{1.00}{1.33} = 48.75^\circ$ and $r = 1.80\,\text{m} \cdot \tan 48.75^\circ = 1.80\,\text{m} \cdot 1.140 = 2.053\,\text{m}$
 **Answer:** $2.05\,\text{m}$, three significant figures like the depth $1.80\,\text{m}$ and the refractive index $1.33$.
@@ -102,7 +102,7 @@
 **Given:** refractive index of the core $n_1 = 1.480$, refractive index of the cladding $n_2 = 1.460$, length of the fibre $L = 1.00\,\text{km}$, speed of light in a vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** the difference $\Delta t$ between the arrival times of the light that zigzags and the light that travels along the axis, in nanoseconds
 **Principle:** Both travel in the core at the same speed $v = c : n_1$, but the path of the zigzagging light is longer. When the ray meets the wall at the critical angle, it travels at an angle of $90^\circ - \alpha_\text{r}$ to the axis. For each part $\Delta x$ of the distance along the axis, the ray's own path is $\Delta x : \sin\alpha_\text{r}$, so the whole path is $L : \sin\alpha_\text{r}$.
-**Formula:** $t_1 = \dfrac{n_1 L}{c}$, $t_2 = \dfrac{n_1 L}{c \sin\alpha_\text{r}}$ and $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $\Delta t = t_2 - t_1 = \dfrac{n_1 L}{c}\left(\dfrac{n_1}{n_2} - 1\right)$
+**Formula:** $$\begin{aligned} t_1 &= \frac{L}{v} \\ &= \frac{n_1 L}{c} \\ t_2 &= \frac{L}{v \sin\alpha_\text{r}} \\ &= \frac{n_1 L}{c \sin\alpha_\text{r}} \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \Delta t &= t_2 - t_1 \\ &= \frac{n_1 L}{c}\left(\frac{n_1}{n_2} - 1\right) \end{aligned}$$
 **Conversions:** $L = 1.00\,\text{km} = 1.00 \cdot 1000\,\text{m}$. At the end $1\,\text{s} = 10^9\,\text{ns}$.
 **Substitution:** $$\begin{aligned} &\Delta t \\ &= \dfrac{1.480 \cdot 1000\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} \cdot \left(\dfrac{1.480}{1.460} - 1\right) \\ &= 4.933 \cdot 10^{-6}\,\text{s} \cdot 0.01370 \\ &= 6.758 \cdot 10^{-8}\,\text{s} \\ &= 67.58\,\text{ns} \end{aligned}$$
 **Answer:** $68\,\text{ns}$, two significant figures, because the difference of the refractive indices $1.480 - 1.460 = 0.020$ is known to two significant figures.
@@ -127,7 +127,7 @@
 **Given:** refractive index of acrylic $n_1 = 1.49$, refractive index of water $n_2 = 1.33$
 **Find:** the critical angle $\alpha_\text{r}$ at the boundary between acrylic and water, in degrees
 **Principle:** The light goes from acrylic into water, that is from a substance with a larger refractive index into one with a smaller refractive index, so a critical angle exists. At the critical angle the angle of refraction is $90^\circ$, so the sine of the critical angle follows from the law of refraction $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, so $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices are numbers without units, and the angle comes out in degrees.
 **Substitution:** $\alpha_\text{r} = \sin^{-1}\dfrac{1.33}{1.49} = \sin^{-1} 0.8926 = 63.20^\circ$
 **Answer:** $63.2^\circ$, three significant figures like the refractive indices.
@@ -137,7 +137,7 @@
 **Given:** refractive index of the glass $n = 1.45$, time $t = 0.500\,\text{ms}$, speed of light in a vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** the distance $s$ travelled by the pulse, in kilometres
 **Principle:** Light travels in glass at a constant speed $v = c : n$. The pulse travels along the axis of the fibre, so its distance is the speed multiplied by the time.
-**Formula:** $v = \dfrac{c}{n}$ and $s = v t$, so $s = \dfrac{c t}{n}$
+**Formula:** $$\begin{aligned} v &= \frac{c}{n} \\ s &= v t \\ &= \frac{c t}{n} \end{aligned}$$
 **Conversions:** $t = 0.500\,\text{ms} = 0.500 \cdot 10^{-3}\,\text{s}$. At the end $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $s = \dfrac{3.00 \cdot 10^8\,\text{m/s} \cdot 0.500 \cdot 10^{-3}\,\text{s}}{1.45} = 1.034 \cdot 10^5\,\text{m} = 103.4\,\text{km}$
 **Answer:** $103\,\text{km}$, three significant figures like the refractive index $1.45$, the time $0.500\,\text{ms}$ and the speed of light.
@@ -147,7 +147,7 @@
 **Given:** the critical angles of the table $41.8^\circ$, $42.6^\circ$, $41.5^\circ$, $42.3^\circ$ and $42.0^\circ$; refractive index of air $n_2 = 1.00$; table values: acrylic $1.49$ and polystyrene $1.59$
 **Find:** the refractive index $n$ of the plastic from the mean of the critical angle, the scatter of the measurements and the identification of the plastic
 **Principle:** The light goes from the plastic into air, that is from a substance with a larger refractive index into one with a smaller refractive index, so at the critical angle $n \sin\alpha_\text{r} = n_2 \sin 90^\circ$. The result of a repeated measurement is the mean, and half of the range is a simple estimate of the scatter of the series of measurements. The scatter tells the range in which the value of the refractive index probably lies.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, so $n = \dfrac{n_2}{\sin\alpha_\text{r}}$
+**Formula:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha_\text{r}} \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees, and the refractive index has no unit.
 **Substitution:** The sum of the measurements is $$\begin{aligned} &41.8^\circ + 42.6^\circ + 41.5^\circ \\ &+ 42.3^\circ + 42.0^\circ \\ &= 210.2^\circ \end{aligned}$$, so the mean is $\alpha_\text{r} = 210.2^\circ : 5 = 42.04^\circ$, so $n = \dfrac{1.00}{\sin 42.04^\circ} = \dfrac{1.00}{0.6696} = 1.493$. The scatter is $\tfrac{1}{2} \cdot (42.6^\circ - 41.5^\circ) = 0.55^\circ$. The refractive indices corresponding to the extreme values are $n = 1.00 : \sin 42.6^\circ = 1.477$ and $n = 1.00 : \sin 41.5^\circ = 1.509$.
 **Answer:** $n \approx 1.49$, three significant figures like the critical angles. The refractive index is probably in the range $1.48\ldots 1.51$. The value $1.49$ of acrylic is in this range, but the value $1.59$ of polystyrene is not, so the piece is probably acrylic.
@@ -178,7 +178,7 @@
 **Given:** refractive index of air $n_0 = 1.00$; refractive indices of fibre A $n_1 = 1.48$ and $n_2 = 1.46$, of fibre B $n_1 = 1.50$ and $n_2 = 1.47$, of fibre C $n_1 = 1.46$ and $n_2 = 1.45$
 **Find:** the acceptance angle $\theta_\text{max}$ for fibres B, A and C in degrees, and the comparison with the ratio $\dfrac{n_1}{n_2} - 1$
 **Principle:** A ray travelling in the core stays in the fibre when it is totally internally reflected at the boundary between the core and the cladding, that is when it meets the boundary at least at the critical angle $\alpha_\text{r}$, for which $\sin\alpha_\text{r} = n_2 : n_1$. The ray travels along the boundary at the angle $\varphi = 90^\circ - \alpha_\text{r}$ to the axis, so the largest allowed angle to the axis is $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$. At the end face the ray is refracted from air into the core, and the larger the angle $\varphi$ may be, the larger the angle of incidence $\theta$ can be.
-**Formula:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$ and $n_0 \sin\theta_\text{max} = n_1 \sin\varphi_\text{max}$, so $\theta_\text{max} = \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) = \sin^{-1}\sqrt{n_1^2 - n_2^2}$
+**Formula:** $$\begin{aligned} \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \varphi_\text{max} &= 90^\circ - \alpha_\text{r} \\ n_0 \sin\theta_\text{max} &= n_1 \sin\varphi_\text{max} \\ &= n_1 \cos\alpha_\text{r} \\ \theta_\text{max} &= \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) \\ &= \sin^{-1}\sqrt{n_1^2 - n_2^2} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices are numbers without units, and the angles are in degrees.
 **Substitution:** For fibre B $\alpha_\text{r} = \sin^{-1}\dfrac{1.47}{1.50} = 78.52^\circ$, $\varphi_\text{max} = 90^\circ - 78.52^\circ = 11.48^\circ$ and $\sin\theta_\text{max} = 1.50 \cdot \sin 11.48^\circ = 0.2985$, so $\theta_\text{max} = 17.37^\circ$. For fibres A and C with the shorter formula: $\theta_\text{max} = \sin^{-1}\sqrt{1.48^2 - 1.46^2} = \sin^{-1} 0.2425 = 14.03^\circ$ and $\theta_\text{max} = \sin^{-1}\sqrt{1.46^2 - 1.45^2} = \sin^{-1} 0.1706 = 9.82^\circ$. The delay ratios are A: $\dfrac{1.48}{1.46} - 1 = 0.0137$, B: $\dfrac{1.50}{1.47} - 1 = 0.0204$ and C: $\dfrac{1.46}{1.45} - 1 = 0.0069$.
 **Answer:** the acceptance angle of fibre B is $17.4^\circ$, three significant figures like the refractive indices. The difference of the refractive indices $n_1 - n_2 = 0.03$ is a number of one significant figure, so the result is sensitive to the rounding of the refractive indices. For fibres A and C the acceptance angles are $14.0^\circ$ and $9.8^\circ$. For fibre B the difference of the refractive indices is the largest, and therefore both the acceptance angle and the delay ratio ($2.0\,\%$) are the largest: the fibre accepts the most light, but the pulse spreads the most. For fibre C both are the smallest.
@@ -188,7 +188,7 @@
 **Given:** diameter of the core $2a = 1.0\,\text{mm}$, so the radius of the core $a = 0.50\,\text{mm}$, refractive index of the core $n_1 = 1.49$, refractive index of the cladding $n_2 = 1.40$; the power of the table as a function of the bending radius $R$ ($5.0\,\text{mm}$: $31\,\%$, $10.0\,\text{mm}$: $62\,\%$, $15.0\,\text{mm}$: $88\,\%$, $20.0\,\text{mm}$: $96\,\%$, $30.0\,\text{mm}$: $98\,\%$, $50.0\,\text{mm}$: $99\,\%$)
 **Find:** the smallest bending radius $R_\text{min}$ in millimetres at which even the most dangerous ray is still totally internally reflected
 **Principle:** The ray along the axis arriving at the bend continues straight and meets the boundary at the outer edge. Measured from the centre $\text{O}$ of the bend, the radius of the outer edge is $R + a$, and the distance of the ray travelling next to the inner edge from the centre is $R - a$. The ray is perpendicular to the radius at the start of the bend, so the perpendicular drawn from the centre to the path of the ray has the length $R - a$. In the right-angled triangle whose hypotenuse is the radius of the outer edge $R + a$, the sine of the angle of incidence $\alpha$ is $\sin\alpha = (R - a) : (R + a)$. This is the smallest of all the angles of incidence, because the paths of the other rays are farther from the centre, so the ray travelling next to the inner edge leaks out first. Total internal reflection requires $\alpha \ge \alpha_\text{r}$, for which $\sin\alpha_\text{r} = n_2 : n_1$.
-**Formula:** at the limit $\dfrac{R - a}{R + a} = \dfrac{n_2}{n_1}$, so $n_1 (R - a) = n_2 (R + a)$ and $R_\text{min} = a\,\dfrac{n_1 + n_2}{n_1 - n_2}$
+**Formula:** $$\begin{aligned} \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \sin\alpha &= \frac{R - a}{R + a} \\ \alpha &= \alpha_\text{r} \\ \frac{R - a}{R + a} &= \frac{n_2}{n_1} \\ n_1 (R - a) &= n_2 (R + a) \\ R_\text{min} &= a\,\frac{n_1 + n_2}{n_1 - n_2} \end{aligned}$$
 **Conversions:** Not needed: $R_\text{min}$ comes out in the same unit as $a$, in millimetres.
 **Substitution:** $R_\text{min} = 0.50\,\text{mm} \cdot \dfrac{1.49 + 1.40}{1.49 - 1.40} = 0.50\,\text{mm} \cdot \dfrac{2.89}{0.09} = 0.50\,\text{mm} \cdot 32.11 = 16.06\,\text{mm}$
 **Answer:** $16\,\text{mm}$ ($16.1\,\text{mm}$). The accuracy is limited by the difference of the refractive indices $n_1 - n_2 = 0.09$. In a sharper bend some of the light leaks into the cladding.
@@ -218,7 +218,7 @@ The reason is therefore that the angle of incidence $50.0^\circ$ is larger than 
 **Find:** the critical angle $\alpha_\text{r}$ of sapphire and air in degrees
 **Principle:** Light goes from sapphire into air, that is, from the substance with the larger refractive index to the smaller, so the critical angle exists. The curve of the graph shows exactly this dependence, so the critical angle can be read straight from the curve. The reading can be checked with the formula $\sin\alpha_\text{r} = n_2 : n_1$.
 **Reading the graph:** From $n_1 = 1.77$ on the horizontal axis a vertical line is drawn to the curve. From the point on the curve one goes horizontally to the vertical axis, and the angle is read from the grid lines: it is between the lines $30^\circ$ and $35^\circ$, very near the $35^\circ$ line. The reading is $\alpha_\text{r} \approx 34^\circ$ (reading accuracy about $\pm 1^\circ$).
-**Formula:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, so $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ and $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices have no unit, and the angle is read in degrees.
 **Substitution:** Check: $\alpha_\text{r} = \sin^{-1}\dfrac{1.00}{1.77} = \sin^{-1} 0.5650 = 34.40^\circ$
 **Answer:** $34^\circ$, as far as the graph can be read; the calculated value is $34.4^\circ$. At a sapphire–air boundary light is totally reflected when the angle of incidence is larger than about $34^\circ$.

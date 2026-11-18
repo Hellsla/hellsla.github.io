@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e3199ff2606c9a87
+CONTENT-HASH: 9d27715c7f4ae222
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md (L2-04 chain) — earlier 352 px note stands; fits at 360 px and wider.
+- none
 
 ## Checked
-- Delta, round 1. Captures fy7-5-open-exercises-1280-5, -L2-1280-5, -L3-1280-5 and -L3-1280-6 (in review/shots of the lesson folder), full size: paragraph cuts in the solutions keep Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys in order, chains aligned, no raw LaTeX, no clipping; table captions in the tasks read without the marker.
-- Hash identical at start and end.
+- fy7-5-open-exercises-1280-3 (task 5-3): five-row Kaava block, equals aligned, Sijoitus and Vastaus intact.
+- No 360/390 px exercise capture in the packet (only stage-exercises-390, solutions collapsed); the 360/390/768 px layout checks are in the packet and ok. Judged at 1280 px.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 5

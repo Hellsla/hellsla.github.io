@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7f228403984937d8
+CONTENT-HASH: dba8f481af21facc
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] Kaava blocks (shared) — display blocks use `aligned` rows with the = signs aligned; very tight vertical spacing between fraction rows (e.g. fy7-16 L3 `v = c/n`, `t = L/v`), readable but cramped — shared component line-height tweak if wanted.
+- [Minor] Phone width — the packet has no exercise captures at 390 px (exercise captures are 1280 px only); phone wrapping of the aligned Kaava blocks was not judged from a capture (check_layout 360/390 ok per packet).
 
 ## Checked
-- Delta (md-paragraphs, solutions.md only: Järkevyys, Mallivastaus and L2-09 cut into paragraphs, words unchanged).
-- Own captures at 1280 px (fi, fy7-15): open-exercises-L2-1280-10, -11 (L2-09 model answer), L3-1280-4, -6, -7 (L3-03, L3-04). The paragraph breaks render as separate paragraphs inside the card; headings, formula rows and answer boxes keep their spacing; nothing clipped, no overflow.
-- Rest not re-reviewed.
+- fy7-15-open-exercises-L2-1280-8.png (Kaava of 15-18: old inline form with display blocks, consistent look)
+- Delta: the changed Kaava blocks (aligned, one equation per row, aligned on =, $$\begin{aligned}$$ source form); the layout around them survived: Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order intact, blocks inside the card, nothing clipped at 664 px.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

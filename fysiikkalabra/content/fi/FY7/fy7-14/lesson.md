@@ -503,7 +503,7 @@ Moni ajattelee, että saippuakuplan värit syntyvät samalla tavalla kuin prisma
 - Heijastunut aalto kääntyy eli saa puolen aallonpituuden siirtymän, kun valo heijastuu suuremman taitekertoimen ainetta vasten.
 - Saippuakalvossa ilmassa on yksi siirtymä: vahvistava $2nd = (k + \tfrac{1}{2})\lambda$, heikentävä $2nd = k\lambda$. Hyvin ohut kalvo näyttää siksi heijastuneessa valossa lähes mustalta.
 - Valkoisessa valossa kalvo näyttää värikkäältä, koska osa aallonpituuksista kumoutuu, ja väri vaihtuu kalvon paksuuden mukana.
-- Heijastuksenestopinnoitteessa on kaksi siirtymää, ja ohuin heikentävä pinnoite on $d = \lambda : (4n)$, esimerkiksi $\text{MgF}_2$:lla $99{,}6\,\text{nm}$ aallonpituudelle $550\,\text{nm}$.
+- Heijastuksen estävässä pinnoitteessa on kaksi siirtymää, ja ohuin heikentävä pinnoite on $d = \lambda : (4n)$, esimerkiksi $\text{MgF}_2$:lla $99{,}6\,\text{nm}$ aallonpituudelle $550\,\text{nm}$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sateen jälkeen asfaltilla on lätäkkö, ja sen pinnalla on ohut öljykalvo. Kalvossa näkyy kiemurtelevia renkaita sinistä, vihreää, keltaista ja purppuraa, sillä kalvo on keskeltä paksumpi kuin reunoilta. Värit on laskettu öljykalvolle veden päällä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy714s-asphalt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy714s-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f8fbf"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>

@@ -12,7 +12,7 @@
 **Given:** rms value of the voltage $U = 115\,\text{V}$, frequency $400\,\text{Hz}$
 **Find:** the peak value $U_0$ of the voltage in volts
 **Principle:** An alternating voltage is given as an rms value. The rms value of a sinusoidal voltage is the peak value divided by $\sqrt{2}$, so the peak value is $\sqrt{2}$ times the rms value. The frequency does not affect this ratio.
-**Formula:** $U = \dfrac{U_0}{\sqrt{2}}$, so $U_0 = \sqrt{2} \cdot U$
+**Formula:** $$\begin{aligned} U &= \dfrac{U_0}{\sqrt{2}} \\ U_0 &= \sqrt{2} \cdot U \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $U_0 = \sqrt{2} \cdot 115\,\text{V} = 162.63\,\text{V}$
 **Answer:** $163\,\text{V}$, three significant figures like the voltage $115\,\text{V}$.
@@ -92,7 +92,7 @@ The claim about the average value is wrong, because the average is zero. The cla
 **Find:** the magnetic flux density $B$ in teslas
 **Principle:** The coil rotates steadily in a uniform field, so its voltage is sinusoidal and the peak value is $e_0 = NBA \cdot 2\pi f$. The graph gives the peak value and the period, and the period gives the rotation frequency $f = 1 : T$.
 **Reading the graph:** The peaks of the curve are on the grid line $12\,\text{V}$ (at the times $10\,\text{ms}$ and $50\,\text{ms}$), so $e_0 = 12\,\text{V}$. The curve is zero and rising at the times $0\,\text{ms}$, $40\,\text{ms}$ and $80\,\text{ms}$, so one period lasts $T = 40\,\text{ms}$.
-**Formula:** $f = \dfrac{1}{T}$ and $e_0 = NBA \cdot 2\pi f$, so $B = \dfrac{e_0}{NA \cdot 2\pi f} = \dfrac{e_0 T}{NA \cdot 2\pi}$
+**Formula:** $$\begin{aligned} f &= \dfrac{1}{T} \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \\ &= \dfrac{e_0 T}{NA \cdot 2\pi} \end{aligned}$$
 **Conversions:** $T = 40\,\text{ms} = 40 \cdot 0.001\,\text{s} = 0.040\,\text{s}$ and $A = 30\,\text{cm}^2 = 30 \cdot 0.0001\,\text{m}^2 = 0.0030\,\text{m}^2$
 **Substitution:** $f = \dfrac{1}{0.040\,\text{s}} = 25\,\text{Hz}$ and $B = \dfrac{12\,\text{V}}{200 \cdot 0.0030\,\text{m}^2 \cdot 2\pi \cdot 25\,\tfrac{1}{\text{s}}} = \dfrac{12\,\text{V}}{94.25\,\tfrac{\text{m}^2}{\text{s}}} = 0.1273\,\text{T}$
 **Answer:** $0.13\,\text{T}$, two significant figures, because the values $12\,\text{V}$ and $40\,\text{ms}$ read from the graph are known to two figures.
@@ -102,7 +102,7 @@ The claim about the average value is wrong, because the average is zero. The cla
 **Given:** rms value of the voltage $U = 12\,\text{V}$, number of turns $N = 200$, area $A = 0.0050\,\text{m}^2$, magnetic flux density $B = 0.30\,\text{T}$
 **Find:** the rotation frequency $f$ in hertz
 **Principle:** The voltage of a rotating coil is sinusoidal, and its peak value is $e_0 = NBA \cdot 2\pi f$. The given $12\,\text{V}$ is an rms value, so the peak value is $\sqrt{2}$ times as large. The rotation frequency is solved from the formula for the peak value.
-**Formula:** $e_0 = \sqrt{2} \cdot U$ and $e_0 = NBA \cdot 2\pi f$, so $f = \dfrac{\sqrt{2} \cdot U}{NBA \cdot 2\pi}$
+**Formula:** $$\begin{aligned} e_0 &= \sqrt{2} \cdot U \\ e_0 &= NBA \cdot 2\pi f \\ \sqrt{2} \cdot U &= NBA \cdot 2\pi f \\ f &= \dfrac{\sqrt{2} \cdot U}{NBA \cdot 2\pi} \end{aligned}$$
 **Conversions:** Not needed: the quantities are in SI units.
 **Substitution:** $e_0 = \sqrt{2} \cdot 12\,\text{V} = 16.97\,\text{V}$ and $f = \dfrac{16.97\,\text{V}}{200 \cdot 0.30\,\text{T} \cdot 0.0050\,\text{m}^2 \cdot 2\pi} = \dfrac{16.97\,\text{V}}{1.885\,\text{V}\cdot\text{s}} = 9.003\,\text{Hz}$
 **Answer:** $9.0\,\text{Hz}$, two significant figures like the voltage $12\,\text{V}$ and the field $0.30\,\text{T}$.
@@ -135,9 +135,9 @@ The voltage is zero also at the time $12\,\text{ms}$ (value $-0.1\,\text{V}$), t
 **Given:** rotation frequency $f_1 = 5.0\,\text{Hz}$ and peak value $e_{0,1} = 4.1\,\text{V}$; rotation frequency $f_2 = 10.0\,\text{Hz}$ and measured peak value $e_{0,2} = 8.0\,\text{V}$; $N$, $B$ and $A$ the same
 **Find:** a) the predicted peak value at the frequency $f_2$, b) the deviation of the measurement from the prediction as a percentage, c) the change of the frequency and whether the measurement fits
 **Principle:** The peak value $e_0 = NBA \cdot 2\pi f$ is directly proportional to the rotation frequency when $N$, $B$ and $A$ stay the same. A doubled rotation frequency therefore gives a doubled peak value. The deviation is calculated as the difference between the prediction and the measurement relative to the prediction.
-**Formula:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ and deviation $$\begin{aligned} &= \dfrac{|e_{0,\text{predicted}} - e_{0,\text{measured}}|}{e_{0,\text{predicted}}} \\ &\cdot 100\,\% \end{aligned}$$
+**Formula:** $$\begin{aligned} e_{0,1} &= NBA \cdot 2\pi f_1 \\ e_{0,2} &= NBA \cdot 2\pi f_2 \\ \dfrac{e_{0,2}}{e_{0,1}} &= \dfrac{f_2}{f_1} \\ e_{0,2} &= e_{0,1} \cdot \dfrac{f_2}{f_1} \end{aligned}$$ and $$\begin{aligned} \text{deviation} &= \dfrac{|e_{0,\text{predicted}} - e_{0,\text{measured}}|}{e_{0,\text{predicted}}} \\ &\cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed: the ratio $f_2 : f_1$ is a number.
-**Substitution:** a) $e_{0,\text{predicted}} = 4.1\,\text{V} \cdot \dfrac{10.0\,\text{Hz}}{5.0\,\text{Hz}} = 8.2\,\text{V}$. b) Deviation $$\begin{aligned} &= \dfrac{|8.2\,\text{V} - 8.0\,\text{V}|}{8.2\,\text{V}} \cdot 100\,\% \\ &= 2.44\,\% \end{aligned}$$
+**Substitution:** a) $e_{0,\text{predicted}} = 4.1\,\text{V} \cdot \dfrac{10.0\,\text{Hz}}{5.0\,\text{Hz}} = 8.2\,\text{V}$. b) $$\begin{aligned} \text{deviation} &= \dfrac{|8.2\,\text{V} - 8.0\,\text{V}|}{8.2\,\text{V}} \cdot 100\,\% \\ &= 2.44\,\% \end{aligned}$$
 **Answer:** The deviation is $2.4\,\%$. c) The frequency of the voltage is the same as the rotation frequency, so it also doubles: the period is halved from $200\,\text{ms}$ to $100\,\text{ms}$.
 
 The uncertainty of reading each peak value is $\pm 0.1\,\text{V}$. The prediction $2 \cdot 4.1\,\text{V}$ doubles the uncertainty of the reading ($\pm 0.2\,\text{V}$), and the uncertainty of the measured value $\pm 0.1\,\text{V}$ is added to it, so the total uncertainty is about $\pm 0.3\,\text{V}$.
@@ -151,7 +151,7 @@ The difference $0.2\,\text{V}$ is smaller than this, so the measurement does not
 **Principle:** The mains voltage $230\,\text{V}$ is already an rms value, because an alternating voltage is given as an rms value. An incandescent lamp is a resistive load, so the average power is calculated from rms values as with direct current, $P = UI$, so the rms value of the current is obtained directly from the power and the rms voltage.
 
 Nothing needs to be calculated with the peak value.
-**Formula:** $P = UI$, so $I = \dfrac{P}{U}$
+**Formula:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0.2609\,\text{A}$
 **Answer:** a) The student took the mains voltage to be a peak value and divided it by $\sqrt{2}$, although the voltage of the socket is already an rms value. The rms voltage is therefore $230\,\text{V}$, not $163\,\text{V}$, and with a voltage that is too small the current came out too large. b) The rms value of the current is $0.26\,\text{A}$, two significant figures like the power $60\,\text{W}$.
@@ -175,7 +175,7 @@ A $17.3\,\text{V}$ calculated with the cosine would be wrong: it would give the 
 **Given:** peak value of the generator's voltage $U_0 = 40\,\text{V}$, resistance $R = 40\,\Omega$, resistance of the generator negligible
 **Find:** the average power $P$ of the resistor in watts
 **Principle:** The resistance of the generator is negligible, so the whole voltage is across the resistor. The average power is calculated with rms values as with direct current: $P = UI$, and by Ohm's law $I = U : R$, so $P = U^2 : R$. A power calculated with the peak value would be only the instantaneous peak power.
-**Formula:** $U = \dfrac{U_0}{\sqrt{2}}$ and $P = UI = \dfrac{U^2}{R} = \dfrac{U_0^2}{2R}$
+**Formula:** $$\begin{aligned} U &= \dfrac{U_0}{\sqrt{2}} \\ P &= UI \\ I &= \dfrac{U}{R} \\ P &= \dfrac{U^2}{R} \\ &= \dfrac{U_0^2}{2R} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $U = \dfrac{40\,\text{V}}{\sqrt{2}} = 28.28\,\text{V}$ and $P = \dfrac{(28.28\,\text{V})^2}{40\,\Omega} = \dfrac{800\,\text{V}^2}{40\,\Omega} = 20\,\text{W}$
 **Answer:** $20\,\text{W}$, two significant figures like the voltage $40\,\text{V}$ and the resistance $40\,\Omega$.
@@ -187,7 +187,7 @@ A $17.3\,\text{V}$ calculated with the cosine would be wrong: it would give the 
 **Principle:** The peak voltage of a generator is $e_0 = NBA \cdot 2\pi f$. When $N$, $B$ and $A$ stay the same, the peak voltage, and with it the rms value $U = e_0 : \sqrt{2}$, are directly proportional to the rotation frequency.
 
 In a direct-drive turbine the generator rotates at the same rate as the rotor, so the frequency is proportional to the revolutions per minute of the rotor.
-**Formula:** $\dfrac{U_2}{U_1} = \dfrac{f_2}{f_1}$, so $U_2 = U_1 \cdot \dfrac{f_2}{f_1}$
+**Formula:** $$\begin{aligned} U_1 &= \dfrac{e_{0,1}}{\sqrt{2}} = \dfrac{NBA \cdot 2\pi f_1}{\sqrt{2}} \\ U_2 &= \dfrac{NBA \cdot 2\pi f_2}{\sqrt{2}} \\ \dfrac{U_2}{U_1} &= \dfrac{f_2}{f_1} \\ U_2 &= U_1 \cdot \dfrac{f_2}{f_1} \end{aligned}$$
 **Conversions:** Not needed: in the ratio the revolutions per minute cancel, so they need not be converted to hertz.
 **Substitution:** $U_2 = 690\,\text{V} \cdot \dfrac{9.0}{15} = 690\,\text{V} \cdot 0.60 = 414\,\text{V}$
 **Answer:** about $410\,\text{V}$, two significant figures like the rotation rates $15$ and $9.0$ revolutions per minute.
@@ -199,7 +199,7 @@ In a direct-drive turbine the generator rotates at the same rate as the rotor, s
 **Principle:** The peak value $e_0 = NBA \cdot 2\pi f$ is a linear function of the rotation frequency, with slope $k = NBA \cdot 2\pi$. A line is fitted to the data points with the linear fit of a calculator (or by eye), and $B$ is solved from the slope.
 
 A coil that is not rotating gives zero voltage, so the line should pass through the origin. The roller of a bottle dynamo rotates against the tyre, and the frequency $f$ is the rotation frequency of the roller and the coil.
-**Formula:** $k = NBA \cdot 2\pi$, so $B = \dfrac{k}{NA \cdot 2\pi}$
+**Formula:** $$\begin{aligned} k &= NBA \cdot 2\pi \\ B &= \dfrac{k}{NA \cdot 2\pi} \end{aligned}$$
 **Conversions:** $A = 6.0\,\text{cm}^2 = 6.0 \cdot 0.0001\,\text{m}^2 = 6.0 \cdot 10^{-4}\,\text{m}^2$
 **Substitution:** a) Check with the two extreme points: $k \approx \dfrac{(9.1 - 1.4)\,\text{V}}{(30 - 5)\,\text{Hz}} = 0.308\,\tfrac{\text{V}}{\text{Hz}}$. The fit of the calculator gives $k = 0.308\,\tfrac{\text{V}}{\text{Hz}} = 0.308\,\text{V}\cdot\text{s}$ and $c = -0.107\,\text{V}$. b) $B = \dfrac{0.308\,\text{V}\cdot\text{s}}{240 \cdot 6.0 \cdot 10^{-4}\,\text{m}^2 \cdot 2\pi} = \dfrac{0.308\,\text{V}\cdot\text{s}}{0.9048\,\text{m}^2} = 0.3404\,\text{T}$. c) $e_0 = 0.308\,\tfrac{\text{V}}{\text{Hz}} \cdot 22\,\text{Hz} - 0.107\,\text{V} = 6.67\,\text{V}$; without the constant term the result would be $6.78\,\text{V}$.
 **Answer:** b) $B \approx 0.34\,\text{T}$, two significant figures like the area of the coil. In the formula $e_0$ is directly proportional to the frequency, so the voltage should be zero when $f = 0$. The constant term $c = -0.11\,\text{V}$ is small and is probably due to measurement error, such as the zero point of the oscilloscope or the reading accuracy ($\pm 0.1\,\text{V}$).

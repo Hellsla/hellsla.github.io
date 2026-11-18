@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9868eb67be62fa26
+CONTENT-HASH: 291696921cfea191
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md ~286 — the row $2d = k\lambda$ followed by $\Delta d = \lambda/2$ skips the step "neighbouring fringes differ by one in k"; add a words row or Principle sentence.
 
 ## Checked
-- Delta: the only change is the removal of the parenthesis "(example data)" from the text of fy7-14-L3-05; no number, symbol, question or answer field changed.
-- The sentence reads correctly without it: "The table gives the distance x of the dark fringes from the line of contact. The fringe k = 0 ..."; punctuation and spacing intact.
-- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
-- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
-- Language checked: en. Hash 9868eb67be62fa26 at start and end.
+- Delta only: the Formula steps now start from the general condition 2nd = (k + 1/2)λ, then fix k, then solve for d; each line follows from the previous.
+- Symbols stay consistent with the Substitution (n_plastic, n_oil, λ_min, λ_max, k' = k - 1 in the Principle).
+- No Finnish subscripts or words in the formulas; the subscripts (c, plastic, oil, coat, out, min, max) are English.
+- The coating condition 1.00/n_c = n_c/n_plastic gives n_c = sqrt(n_plastic) correctly.
+- Language checked: en. Hash 291696921cfea191 at start and end.

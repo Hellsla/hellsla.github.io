@@ -22,7 +22,7 @@
 **Annettu:** tangon pituus $l = 0{,}25\,\text{m}$, vauhti $v = 2{,}0\,\text{m/s}$, magneettivuon tiheys $B = 0{,}40\,\text{T}$. Tanko, nopeus ja kenttä ovat keskenään kohtisuorassa.
 **Kysytty:** tangon päiden välinen induktiojännite $e$ voltteina
 **Periaate:** Tangon mukana liikkuviin elektroneihin kohdistuu magneettinen voima $evB$ tangon suuntaan. Siksi elektroneja kertyy tangon toiseen päähän. Siirtyminen loppuu, kun syntyvä sähkökenttä $E = vB$ kumoaa magneettisen voiman. Päiden välinen jännite on $El$.
-**Kaava:** $e = vBl$
+**Kaava:** $$\begin{aligned} F_\text{m} &= |q|vB \\ F_\text{s} &= |q|E \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat SI-yksiköissä, ja $\tfrac{\text{m}}{\text{s}} \cdot \text{T} \cdot \text{m} = \text{V}$.
 **Sijoitus:** $e = 2{,}0\,\text{m/s} \cdot 0{,}40\,\text{T} \cdot 0{,}25\,\text{m} = 0{,}20\,\text{V}$
 **Vastaus:** $0{,}20\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
@@ -32,7 +32,7 @@
 **Annettu:** kierrosten lukumäärä $N = 150$, keskimääräinen induktiojännite $|e| = 0{,}45\,\text{V}$, aika $\Delta t = 0{,}12\,\text{s}$
 **Kysytty:** yhden kierroksen läpi kulkevan magneettivuon muutos $\Delta\Phi$ milliwebereinä
 **Periaate:** Jännite syntyy, koska vuo pienenee, kun magneetti vedetään pois. Induktiolain mukaan keskimääräinen jännite on vuon muutos jaettuna ajalla ja kerrottuna kierrosten lukumäärällä. Jännite, aika ja kierrokset tunnetaan, joten vuon muutoksen voi ratkaista.
-**Kaava:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, josta $\Delta\Phi = \dfrac{|e|\,\Delta t}{N}$
+**Kaava:** $$\begin{aligned} |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ \Delta\Phi &= \dfrac{|e|\,\Delta t}{N} \end{aligned}$$
 **Muunnokset:** Lähtöarvot ovat SI-yksiköissä, ja $\text{V}\cdot\text{s} = \text{Wb}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Delta\Phi = \dfrac{0{,}45\,\text{V} \cdot 0{,}12\,\text{s}}{150} = \dfrac{0{,}054\,\text{V}\cdot\text{s}}{150} = 3{,}6 \cdot 10^{-4}\,\text{Wb} = 0{,}36\,\text{mWb}$
 **Vastaus:** $0{,}36\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä ja ajassa on kaksi.
@@ -42,7 +42,7 @@
 **Annettu:** induktiojännite $e = 12\,\text{mV}$, tangon kentässä oleva pituus $l = 0{,}30\,\text{m}$, magneettivuon tiheys $B = 0{,}080\,\text{T}$. Nopeus on kohtisuorassa tankoa ja kenttää vastaan.
 **Kysytty:** tangon vauhti $v$ metreinä sekunnissa
 **Periaate:** Liikkuvan tangon elektroneihin kohdistuva magneettinen voima siirtää niitä tangon päähän. Päiden välille syntyy jännite $e = vBl$. Jännite on verrannollinen vauhtiin, joten mitatusta jännitteestä voi ratkaista vauhdin.
-**Kaava:** $e = vBl$, josta $v = \dfrac{e}{Bl}$
+**Kaava:** $$\begin{aligned} e &= vBl \\ v &= \dfrac{e}{Bl} \end{aligned}$$
 **Muunnokset:** $e = 12\,\text{mV} = 12 \cdot 0{,}001\,\text{V} = 0{,}012\,\text{V}$
 **Sijoitus:** $v = \dfrac{0{,}012\,\text{V}}{0{,}080\,\text{T} \cdot 0{,}30\,\text{m}} = \dfrac{0{,}012\,\text{V}}{0{,}024\,\text{T}\cdot\text{m}} = 0{,}50\,\text{m/s}$
 **Vastaus:** $0{,}50\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
@@ -52,7 +52,7 @@
 **Annettu:** magneettivuon tiheys $B = 0{,}80\,\text{T}$ kohtisuorassa silmukan tasoa vastaan, pinta-ala aluksi $A_1 = 200\,\text{cm}^2$ ja lopuksi $A_2 = 50\,\text{cm}^2$, aika $\Delta t = 0{,}25\,\text{s}$, yksi kierros $N = 1$
 **Kysytty:** silmukkaan syntyvän induktiojännitteen suuruus $|e|$ millivoltteina
 **Periaate:** Kenttä pysyy samana, mutta silmukan pinta-ala pienenee. Siksi silmukan läpi kulkeva vuo $\Phi = BA$ pienenee. Vuon muutos synnyttää jännitteen induktiolain mukaan. Pinta-ala pienenee tasaisesti, joten jännite on vakio.
-**Kaava:** $\Delta\Phi = B(A_1 - A_2)$ ja $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, joten $|e| = \dfrac{B(A_1 - A_2)}{\Delta t}$, kun $N = 1$
+**Kaava:** $$\begin{aligned} \Phi &= BA \\ \Delta\Phi &= B(A_1 - A_2) \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= \dfrac{B(A_1 - A_2)}{\Delta t} \quad (N = 1) \end{aligned}$$
 **Muunnokset:** $A_1 = 200\,\text{cm}^2 = 200 \cdot (0{,}01\,\text{m})^2 = 0{,}0200\,\text{m}^2$ ja $A_2 = 50\,\text{cm}^2 = 50 \cdot (0{,}01\,\text{m})^2 = 0{,}0050\,\text{m}^2$
 **Sijoitus:** $A_1 - A_2 = 0{,}0200\,\text{m}^2 - 0{,}0050\,\text{m}^2 = 0{,}0150\,\text{m}^2$ ja $|e| = \dfrac{0{,}80\,\text{T} \cdot 0{,}0150\,\text{m}^2}{0{,}25\,\text{s}} = \dfrac{0{,}012\,\text{Wb}}{0{,}25\,\text{s}} = 0{,}048\,\text{V} = 48\,\text{mV}$
 **Vastaus:** $48\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska kentässä $0{,}80\,\text{T}$ ja ajassa $0{,}25\,\text{s}$ on kaksi.
@@ -73,7 +73,7 @@
 **Annettu:** kiskojen väli eli tangon kentässä oleva pituus $l = 0{,}40\,\text{m}$, vauhti $v = 3{,}0\,\text{m/s}$, magneettivuon tiheys $B = 0{,}50\,\text{T}$, vastus $R = 2{,}0\,\Omega$. Kiskojen ja tangon resistanssi on hyvin pieni.
 **Kysytty:** vastuksen läpi kulkeva virta $I$ ampeereina
 **Periaate:** Liikkuvan tangon päiden välille syntyy induktiojännite $e = vBl$, koska tangon elektroneihin kohdistuu magneettinen voima. Tanko, kiskot ja vastus muodostavat suljetun virtapiirin, jossa tanko toimii jännitelähteenä. Muun piirin resistanssi on pieni, joten koko jännite on vastuksen yli. Virran saa Ohmin laista.
-**Kaava:** $e = vBl$ ja $I = \dfrac{e}{R}$, joten $I = \dfrac{vBl}{R}$
+**Kaava:** $$\begin{aligned} e &= vBl \\ e &= RI \\ I &= \dfrac{e}{R} \\ I &= \dfrac{vBl}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat SI-yksiköissä.
 **Sijoitus:** $e = 3{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}40\,\text{m} = 0{,}60\,\text{V}$ ja $I = \dfrac{0{,}60\,\text{V}}{2{,}0\,\Omega} = 0{,}30\,\text{A}$
 **Vastaus:** $0{,}30\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
@@ -83,7 +83,7 @@
 **Annettu:** käämin sivu $l = 5{,}0\,\text{cm}$, kierrosten lukumäärä $N = 20$, vauhti $v = 0{,}25\,\text{m/s}$, magneettivuon tiheys $B = 0{,}30\,\text{T}$ kohtisuorassa käämin tasoa vastaan
 **Kysytty:** käämiin sisääntulon aikana syntyvä induktiojännite $|e|$ millivoltteina
 **Periaate:** Käämi tulee kenttään. Kentässä oleva osa käämin pinta-alasta kasvaa tasaisesti. Siksi jokaisen kierroksen läpi kulkeva vuo kasvaa tasaisesti ja jännite on vakio. Ajassa $\Delta t$ käämi siirtyy matkan $v\Delta t$. Siksi vuo kasvaa määrällä $\Delta\Phi = Bl \cdot v\Delta t$.
-**Kaava:** $|e| = N\dfrac{\Delta\Phi}{\Delta t} = N\dfrac{Bl \cdot v\Delta t}{\Delta t}$, joten $|e| = NBlv$
+**Kaava:** $$\begin{aligned} \Phi &= BA \\ \Delta\Phi &= Bl \cdot v\Delta t \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= N\dfrac{Bl \cdot v\Delta t}{\Delta t} \\ |e| &= NBlv \end{aligned}$$
 **Muunnokset:** $l = 5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$
 **Sijoitus:** $|e| = 20 \cdot 0{,}30\,\text{T} \cdot 0{,}050\,\text{m} \cdot 0{,}25\,\text{m/s} = 0{,}075\,\text{V} = 75\,\text{mV}$
 **Vastaus:** $75\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
@@ -115,7 +115,7 @@ $$
 **Annettu:** kierrosten lukumäärä $N = 100$, pinta-ala $A = 0{,}020\,\text{m}^2$, kelan taso aluksi kohtisuorassa kenttää vastaan, puolen kierroksen kääntö ajassa $\Delta t = 0{,}10\,\text{s}$, keskimääräinen jännite $|e| = 2{,}0\,\text{mV}$
 **Kysytty:** Maan magneettikentän magneettivuon tiheys $B$ mikrotesloina
 **Periaate:** Aluksi yhden kierroksen läpi kulkee vuo $\Phi_1 = BA$. Puolen kierroksen jälkeen sama kenttä kulkee kierroksen läpi vastakkaisesta suunnasta, joten vuo on $\Phi_2 = -BA$. Vuon muutoksen suuruus on siis $\Delta\Phi = 2BA$. Induktiolain mukaan keskimääräinen jännite on $N \cdot 2BA : \Delta t$.
-**Kaava:** $|e| = N\dfrac{2BA}{\Delta t}$, josta $B = \dfrac{|e|\,\Delta t}{2NA}$
+**Kaava:** $$\begin{aligned} \Phi_1 &= BA \\ \Phi_2 &= -BA \\ |\Delta\Phi| &= 2BA \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= N\dfrac{2BA}{\Delta t} \\ B &= \dfrac{|e|\,\Delta t}{2NA} \end{aligned}$$
 **Muunnokset:** $|e| = 2{,}0\,\text{mV} = 2{,}0 \cdot 10^{-3}\,\text{V}$. Vastaus muunnetaan mikrotesloiksi: $1\,\text{T} = 10^{6}\,\mu\text{T}$.
 **Sijoitus:** $B = \dfrac{2{,}0 \cdot 10^{-3}\,\text{V} \cdot 0{,}10\,\text{s}}{2 \cdot 100 \cdot 0{,}020\,\text{m}^2} = \dfrac{2{,}0 \cdot 10^{-4}\,\text{V}\cdot\text{s}}{4{,}0\,\text{m}^2} = 5{,}0 \cdot 10^{-5}\,\text{T} = 50\,\mu\text{T}$
 **Vastaus:** $50\,\mu\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $2{,}0\,\text{mV}$ on kaksi.
@@ -125,7 +125,7 @@ $$
 **Annettu:** kierrosten lukumäärä $N = 300$, kolmion muotoinen jännitepulssi, huippuarvo $e_0 = 0{,}90\,\text{V}$, kesto $\Delta t = 40\,\text{ms}$. Aluksi magneetti on kaukana, joten vuo on nolla.
 **Kysytty:** yhden kierroksen läpi kulkeva magneettivuo $\Phi$ keskimäärin milliwebereinä, kun magneetti on käämin keskellä
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin jännitteen ja keston tulo on $N$ kertaa vuon muutos. Kun pulssin aikavälit lasketaan yhteen, jännitteen kuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala on $N\Delta\Phi$. Pulssin lopussa jännite on nolla, koska vuo on suurimmillaan eikä enää kasva. Silloin magneetti on käämin keskellä. Vuo kasvaa nollasta tähän arvoon, joten $\Delta\Phi = \Phi$.
-**Kaava:** kolmion pinta-ala on $N\Phi = \tfrac{1}{2} e_0 \Delta t$, josta $\Phi = \dfrac{e_0 \Delta t}{2 \cdot N}$
+**Kaava:** $$\begin{aligned} |A| &= N\Phi \\ |A| &= \tfrac{1}{2} e_0 \Delta t \\ N\Phi &= \tfrac{1}{2} e_0 \Delta t \\ \Phi &= \dfrac{e_0 \Delta t}{2 \cdot N} \end{aligned}$$
 **Muunnokset:** $\Delta t = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Phi = \dfrac{0{,}90\,\text{V} \cdot 0{,}040\,\text{s}}{2 \cdot 300} = \dfrac{0{,}036\,\text{V}\cdot\text{s}}{600} = 6{,}0 \cdot 10^{-5}\,\text{Wb} = 0{,}060\,\text{mWb}$
 **Vastaus:** $0{,}060\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska huippuarvossa $0{,}90\,\text{V}$ ja kestossa $40\,\text{ms}$ on kaksi.
@@ -142,7 +142,7 @@ Kun magneettia liikutetaan, vuo muuttuu ja mittari näyttää jännitettä. Jän
 **Annettu:** ensimmäisen käämin kierrosluku $N_1 = 120$ ja jännite $e_1 = 0{,}90\,\text{V}$; toisen käämin kierrosluku $N_2 = 300$; käämit ovat muuten samanlaiset ja magneetti liikkuu samoin
 **Kysytty:** toisen käämin induktiojännite $e_2$ voltteina
 **Periaate:** Käämien pinta-ala on sama ja magneetti liikkuu samoin. Siksi yhden kierroksen vuon muutosnopeus $\Delta\Phi : \Delta t$ on molemmissa sama. Kierrokset ovat sarjassa, joten jännite on suoraan verrannollinen kierrosten lukumäärään.
-**Kaava:** $e_1 = N_1\dfrac{\Delta\Phi}{\Delta t}$ ja $e_2 = N_2\dfrac{\Delta\Phi}{\Delta t}$, joten $e_2 = \dfrac{N_2}{N_1}\,e_1$
+**Kaava:** $$\begin{aligned} e_1 &= N_1\dfrac{\Delta\Phi}{\Delta t} \\ e_2 &= N_2\dfrac{\Delta\Phi}{\Delta t} \\ \dfrac{e_2}{e_1} &= \dfrac{N_2}{N_1} \\ e_2 &= \dfrac{N_2}{N_1}\,e_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kierrosluvut ovat lukuja, ja jännite on voltteina.
 **Sijoitus:** $e_2 = \dfrac{300}{120} \cdot 0{,}90\,\text{V} = 2{,}5 \cdot 0{,}90\,\text{V} = 2{,}25\,\text{V} \approx 2{,}3\,\text{V}$
 **Vastaus:** $2{,}3\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $0{,}90\,\text{V}$ on kaksi.
@@ -152,7 +152,7 @@ Kun magneettia liikutetaan, vuo muuttuu ja mittari näyttää jännitettä. Jän
 **Annettu:** tangon pituus $l = 0{,}50\,\text{m}$, vauhti $v = 0{,}60\,\text{m/s}$, induktiojännite $e = 18\,\text{mV}$; tanko, nopeus ja kenttä ovat keskenään kohtisuorassa
 **Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Liikkuvan tangon elektroneihin vaikuttaa magneettinen voima. Tangon päiden välille syntyy jännite $e = vBl$. Jännite on suoraan verrannollinen magneettivuon tiheyteen. Siksi $B$ voidaan ratkaista mitatusta jännitteestä.
-**Kaava:** $e = vBl$, josta $B = \dfrac{e}{vl}$
+**Kaava:** $$\begin{aligned} e &= vBl \\ B &= \dfrac{e}{vl} \end{aligned}$$
 **Muunnokset:** $e = 18\,\text{mV} = 18 \cdot 0{,}001\,\text{V} = 0{,}018\,\text{V}$
 **Sijoitus:** $B = \dfrac{0{,}018\,\text{V}}{0{,}60\,\text{m/s} \cdot 0{,}50\,\text{m}} = \dfrac{0{,}018\,\text{V}}{0{,}30\,\text{m}^2/\text{s}} = 0{,}060\,\text{T}$
 **Vastaus:** $0{,}060\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
@@ -176,7 +176,7 @@ Välillä $0{,}30$–$0{,}40\,\text{s}$ vuo ei juuri muutu ($0{,}01\,\text{mWb}$
 **Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Liikkuvan tangon jännite on $e = vBl$. Kun $B$ ja $l$ pysyvät samoina, $e$ on suoraan verrannollinen vauhtiin $v$. Silloin $(v, e)$-pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on $Bl$. Pisteet poikkeavat suorasta vähän mittausvirheiden takia.
 **Kuvaajan lukeminen:** Sovitettu suora kulkee origosta pisteiden lomitse. Se kulkee esimerkiksi pisteen $(0{,}60\,\text{m/s};\ 18\,\text{mV})$ ja origon kautta. Suoran kulmakerroin on $k = \Delta e : \Delta v = 18\,\text{mV} : 0{,}60\,\text{m/s} = 30\,\tfrac{\text{mV}}{\text{m/s}}$. Kaikkien pisteiden osamäärät $e : v$ ovat välillä $29$–$31\,\tfrac{\text{mV}}{\text{m/s}}$. Suora kuvaa siis aineistoa hyvin.
-**Kaava:** $k = Bl$, josta $B = \dfrac{k}{l}$
+**Kaava:** $$\begin{aligned} e &= vBl \\ e &= kv \\ k &= Bl \\ B &= \dfrac{k}{l} \end{aligned}$$
 **Muunnokset:** $k = 30\,\tfrac{\text{mV}}{\text{m/s}} = 30 \cdot 0{,}001\,\tfrac{\text{V}}{\text{m/s}} = 0{,}030\,\tfrac{\text{V}}{\text{m/s}}$
 **Sijoitus:** $B = \dfrac{0{,}030\,\text{V}\cdot\text{s/m}}{0{,}20\,\text{m}} = 0{,}15\,\text{T}$
 **Vastaus:** $0{,}15\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska pituudessa $0{,}20\,\text{m}$ ja kulmakertoimessa on kaksi.
@@ -194,7 +194,7 @@ Oikea jännite on nolla. Samaan tulokseen päätyy vuon avulla: tanko ei pyyhkä
 **Kysytty:** a) vaunun kiihtyvyys $a$ ($\text{m/s}^2$) ja perustelu jännitteen kasvulle; b) vaunun kulkema matka $s$ ajassa $1{,}2\,\text{s}$
 **Periaate:** Tanko, nopeus ja kenttä ovat kohtisuorassa, joten tangon päiden välinen jännite on $e = vBl$. Vaunu kiihtyy tasaisesti levosta, joten $v = at$. Tästä seuraa $e = aBl \cdot t$. Jännite on siis suoraan verrannollinen aikaan. $(t, e)$-pisteiden suoran kulmakerroin on $k = aBl$.
 **Kuvaajan lukeminen:** Osamäärät $e : t$ ovat $0{,}160$, $0{,}163$, $0{,}163$, $0{,}166$, $0{,}163$ ja $0{,}165\,\tfrac{\text{V}}{\text{s}}$. Jännite kasvaa siis todella suoraan verrannollisena aikaan. Origon kautta sovitetun suoran kulmakerroin on $k = 0{,}164\,\tfrac{\text{V}}{\text{s}}$ (pienimmän neliösumman sovitus). Se sopii kaikkiin osamääriin $0{,}160$–$0{,}166\,\tfrac{\text{V}}{\text{s}}$.
-**Kaava:** a) $k = aBl$, josta $a = \dfrac{k}{Bl}$. b) Tasaisesti kiihtyvän liikkeen matka levosta on $s = \tfrac{1}{2}at^2$.
+**Kaava:** a) $$\begin{aligned} e &= vBl \\ v &= at \\ e &= aBl \cdot t \\ k &= aBl \\ a &= \dfrac{k}{Bl} \end{aligned}$$ b) $$\begin{aligned} s &= \tfrac{1}{2}at^2 \end{aligned}$$
 **Muunnokset:** $1\,\text{mV} = 0{,}001\,\text{V}$, joten $k$ on SI-yksiköissä.
 **Sijoitus:** a) $a = \dfrac{0{,}164\,\text{V/s}}{0{,}25\,\text{T} \cdot 0{,}40\,\text{m}} = \dfrac{0{,}164\,\text{V/s}}{0{,}100\,\text{T}\cdot\text{m}} = 1{,}64\,\text{m/s}^2$. b) $s = \tfrac{1}{2} \cdot 1{,}64\,\text{m/s}^2 \cdot (1{,}2\,\text{s})^2 = 1{,}18\,\text{m}$
 **Vastaus:** a) $a = 1{,}6\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, koska kentässä ja pituudessa on kaksi. b) $s \approx 1{,}2\,\text{m}$.
@@ -205,7 +205,7 @@ Oikea jännite on nolla. Samaan tulokseen päätyy vuon avulla: tanko ei pyyhkä
 **Kysytty:** a) yhden kierroksen läpi kulkeva suurin magneettivuo $\Phi$ milliwebereinä; b) sama toisesta pulssista ja pulssien erojen selitys
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin tulo $e\,\Delta t$ on $-N\Delta\Phi$. Kun nämä tulot lasketaan yhteen koko pulssin yli, summa on jännitekuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala. Se on $N$ kertaa vuon kokonaismuutos. Ensimmäisen pulssin aikana vuo kasvaa nollasta suurimpaan arvoon. Pulssin lopussa jännite on nolla, koska vuo ei enää muutu.
 **Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä. Jokaisen $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summasta saadaan pinta-alan itseisarvo $$\begin{aligned} |A_\text{a}| &= 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) \\ &+ 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 \\ &+ 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} \\ &= 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} \\ &= 0{,}01946\,\text{V}\cdot\text{s} \end{aligned}$$.
-**Kaava:** $|A_\text{a}| = N\Phi$, josta $\Phi = \dfrac{|A_\text{a}|}{N}$
+**Kaava:** $$\begin{aligned} e\,\Delta t &= -N\Delta\Phi \\ |A_\text{a}| &= N\Phi \\ \Phi &= \dfrac{|A_\text{a}|}{N} \end{aligned}$$
 **Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$. Lisäksi $\text{V}\cdot\text{s} = \text{Wb}$.
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$. Siis $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
 **Vastaus:** a) $\Phi \approx 0{,}078\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteet on annettu kahden desimaalin tarkkuudella ja pinta-ala on arvio. b) Toisesta pulssista saadaan $0{,}079\,\text{mWb}$, eli sama vuo. Ensimmäisessä pulssissa vuo kasvaa, ja toisessa se pienenee takaisin nollaan.

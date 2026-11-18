@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9009caf23c95c976
+CONTENT-HASH: ac618b954077e556
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- Delta: solutions.md paragraph cuts (2-19, 2-24, Vastaus blocks) and the esimerkkiaineisto marker removed from captions in exercises.json; task 2-19 with its source line and table caption.
-- Contact sheets of the opened exercises at 1280 px (fi, fy7-2), plus full-size captures of the changed answers (fi fy7-1). Paragraph cuts keep layout, spacing and card containment; formulas, units and decimal commas unchanged; no clipping or overflow seen.
-- Hash identical at start and end.
+- fy7-2-open-exercises-L2-1280-5: Kaava F_m = G / qvB = mg / v = mg:(qB) aligned at =, row spacing, units fine; surrounding card intact.
+- No 360/390 px exercise capture in the packet (only stage-exercises-390, solutions collapsed); the 360/390/768 px layout checks are in the packet and ok. Judged at 1280 px.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 5
