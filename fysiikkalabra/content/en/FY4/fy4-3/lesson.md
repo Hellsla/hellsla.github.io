@@ -361,6 +361,12 @@
 ### Force is an interaction
 When two objects act on each other, there is an **interaction** between them: a hand pushes a box, a rope pulls a sledge and the Earth pulls an apple. The strength of an interaction is described by a **force**, whose unit is the newton ($\text{N}$). A force is a vector with a magnitude and a direction, and it is written $\overline{F}$. Every force has a cause, and that cause is always another object. In contact forces the objects touch each other. The gravitational force of the Earth, the **weight** $\overline{G}$, and the forces of magnets also act at a distance.
 
+```pysahdy
+A thrown ball is flying through the air. Which bodies act on the ball during the flight?
+---
+The Earth (its weight) and the air (air resistance). The thrower's hand no longer acts on the ball.
+```
+
 ### Motion continues without a force
 A curler pushes the stone only for a moment. When the hand lets go, nothing pushes the stone forward any more, but the stone still slides tens of metres. During the slide only the Earth and the ice act on the stone (air resistance is very small). In the vertical direction the weight and the **normal force** of the ice, the force that supports the stone upwards and is perpendicular to the surface, cancel each other. In the horizontal direction there is only the small **friction** of the ice, a force between the surfaces that opposes motion, points backwards and slows the stone down very gradually.
 
@@ -405,6 +411,12 @@ If there were no friction at all, the speed of the stone would not change, and i
 <figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Three men pulling a thick rope, leaning back with their feet against the ground."><figcaption>Tug of war players lean back and press their feet against the ground.</figcaption></figure>
 
 Everyday experience seems to say otherwise, because on Earth friction and air resistance slow down almost everything that moves. A bicycle stops when you stop pedalling because the road and the air brake it, not because the "force of motion" has been used up. The smaller the friction, the longer the motion continues: further on ice than on asphalt, and in space almost without limit.
+
+```pysahdy
+Why does a shopping cart stop when you stop pushing it?
+---
+Friction and air resistance change its motion. Without them the cart would keep moving at the same velocity.
+```
 
 ### Action and reaction
 When skater A pushes skater B, both start to glide away from each other. B does not just receive the push, but acts on A at the same time. An interaction always works in both directions. This is **Newton's third law**, the **law of action and reaction**: when object A exerts a force on object B, B exerts an equally large but oppositely directed force on A. The two forces form an action–reaction pair. A force and its reaction force arise in the same interaction at the same time, and they are of the same kind: push and counter-push, attraction and counter-attraction.
@@ -465,6 +477,12 @@ When skater A pushes skater B, both start to glide away from each other. B does 
 <figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="A white rocket rises vertically on a bright flame and a trail of smoke. Around the launch pad there are large white clouds of steam and lattice towers."><figcaption>A Falcon 9 rocket lifts off in Florida in September 2024. The rocket pushes the exhaust gases downwards, and the gases push the rocket upwards with a force of equal magnitude. The rocket does not need air or ground to push against.</figcaption></figure>
 
 An adult and a child receive an equally large force from each other, although the adult is much heavier. The child still starts moving with a greater speed, because the same force changes the motion of the smaller mass more; we return to this in the chapter *Newton's second law*. The most important point is that a force and its reaction force act on **different objects**. That is why they never cancel each other, and why they are not drawn in the force diagram of the same object.
+
+```pysahdy
+You kick a ball with your foot. What force acts on your foot when it hits the ball?
+---
+The ball acts on your foot with a force of the same size but opposite direction, the reaction force.
+```
 
 ## Formula: Newton's first and third laws
 Newton's first law is a condition for the sum of the forces acting on an object:

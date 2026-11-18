@@ -89,6 +89,17 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 
 5 epätosi: beeta miinus -hajoamisessa neutroni $udd$ muuttuu protoniksi $uud$, joten yksi $d$-kvarkki muuttuu $u$-kvarkiksi: $d \to u + W^-$. Muutos $u \to d$ tapahtuu beeta plus -hajoamisessa.
 
+## fy8-15-L1-10
+**Annettu:** kuva, jossa on $17$ ruutua: kvarkit $+\tfrac{2}{3}e$ ja $-\tfrac{1}{3}e$, varatut leptonit $-e$, neutriinot $0$, välittäjät $g$, $\gamma$ ja $Z^0$ varaus $0$, $W^\pm$ varaus $\pm e$ ja $H$ varaus $0$
+**Kysytty:** neutraalien hiukkasten lukumäärä $N_0$ ja niistä leptonien lukumäärä $N_\text{L}$
+**Periaate:** Hiukkanen on sähköisesti neutraali, kun sen varaus on $0$. Kuvan ruudut lasketaan ryhmittäin, koska jokaisella rivillä on sama varaus.
+**Kuvaajan lukeminen:** Kvarkkien riveillä varaukset ovat $+\tfrac{2}{3}e$ ja $-\tfrac{1}{3}e$: ei neutraaleja. Rivin $e^-$, $\mu^-$, $\tau^-$ varaus on $-e$, mutta neutriinorivin $\nu_e$, $\nu_\mu$, $\nu_\tau$ varaus on $0$: kolme neutraalia. Välittäjistä $g$, $\gamma$ ja $Z^0$ ovat neutraaleja, mutta $W^\pm$ on varattu: kolme neutraalia. Higgsin bosonin $H$ varaus on $0$: yksi neutraali.
+**Kaava:** $N_0 = N_\nu + N_\text{välittäjä} + N_H$, ja leptoneja ovat vain neutriinot, joten $N_\text{L} = N_\nu$
+**Muunnokset:** Ei tarvita, koska lasketaan ruutujen lukumäärää.
+**Sijoitus:** $N_0 = 3 + 3 + 1 = 7$ ja $N_\text{L} = 3$
+**Vastaus:** a) $7$ ja b) $3$. Tulokset ovat tarkkoja kokonaislukuja, koska ne on laskettu ruuduista.
+**Järkevyys:** Varattuja ruutuja on $6$ kvarkkia, $3$ varattua leptonia ja $W^\pm$ eli $10$, ja $10 + 7 = 17$, kuten ruutuja on yhteensä. Neutriinoja on yksi kutakin varattua leptonia kohti, $3$, kuten pitääkin.
+
 ## fy8-15-L2-01
 **Annettu:** ydin ${}^{12}_{6}\text{C}$: järjestysluku $Z = 6$, massaluku $A = 12$; protoni $uud$, neutroni $udd$
 **Kysytty:** $d$-kvarkkien määrä $N_d$
@@ -181,6 +192,17 @@ Kyllä-rivejä on yhteensä $N = 5$ kappaletta.
 &= 0{,}782\,\text{MeV}
 \end{aligned}
 $$. Osa perushiukkasista hajoaa (myoni). Hajoamisen ratkaisevat säilymislait ja $Q > 0$; neutronin $d$-kvarkki voi muuttua $u$-kvarkiksi. Energian säilyminen ei estä neutronin hajoamista, ja antihiukkasen olemassaolo ei vaikuta siihen.
+
+## fy8-15-L2-08
+**Annettu:** kuvasta luettavat varaukset, reaktio $t \to W^+ + X$, baryoniluku $B_X = \tfrac{1}{3}$
+**Kysytty:** hiukkasen $X$ varaus $q_X$ alkeisvarauksen $e$ monikertana ja mahdolliset kvarkit $X$
+**Periaate:** Varaus säilyy kaikissa tunnetuissa ilmiöissä, joten hajoavan hiukkasen varaus on yhtä suuri kuin syntyvien hiukkasten varausten summa. Baryoniluku $\tfrac{1}{3}$ tarkoittaa, että $X$ on kvarkki eikä antikvarkki.
+**Kuvaajan lukeminen:** Hiukkanen $t$ on kvarkkien ylärivin kolmannessa sarakkeessa, ja ruudussa lukee $+2e/3$, joten $q_t = +\tfrac{2}{3}e$. Ruudussa $W^\pm$ lukee $\pm e$, ja $W^+$ on positiivinen: $q_W = +e$. Kvarkit, joiden varaus on $-\tfrac{1}{3}e$, ovat alemmalla kvarkkirivillä: $d$, $s$ ja $b$.
+**Kaava:** $q_t = q_W + q_X$, joten $q_X = q_t - q_W$
+**Muunnokset:** Ei tarvita, koska kaikki varaukset ovat alkeisvarauksen $e$ monikertoja.
+**Sijoitus:** $q_X = \tfrac{2}{3}e - e = -\tfrac{1}{3}e = -0{,}3333\,e$
+**Vastaus:** b) $q_X = -0{,}333\,e$. Kuvan varaus $-\tfrac{1}{3}e$ on tarkka murtoluku, joten kolme merkitsevää numeroa riittää. c) $X$ voi olla $d$, $s$ tai $b$, koska ne kaikki ovat varaukseltaan $-\tfrac{1}{3}e$. Varaus ei yksin valitse niistä yhtä.
+**Järkevyys:** Tarkistus: $q_W + q_X = e + \left(-\tfrac{1}{3}e\right) = +\tfrac{2}{3}e = q_t$. Arvio pyöreillä luvuilla: $0{,}7 - 1{,}0 = -0{,}3$. Antikvarkin varaus olisi $+\tfrac{1}{3}e$ tai $-\tfrac{2}{3}e$, mikä ei sovi, joten $X$ on kvarkki, kuten baryoniluku vaatii.
 
 ## fy8-15-L3-01
 **Annettu:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672{,}45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115{,}683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192{,}642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493{,}677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ varaukseton mesoni, $m_\pi = 134{,}977\,\tfrac{\text{MeV}}{c^2}$

@@ -89,6 +89,17 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 
 5 false: in beta minus decay the neutron $udd$ changes into the proton $uud$, so one $d$ quark changes into a $u$ quark: $d \to u + W^-$. The change $u \to d$ happens in beta plus decay.
 
+## fy8-15-L1-10
+**Given:** a figure with $17$ boxes: quarks $+\tfrac{2}{3}e$ and $-\tfrac{1}{3}e$, charged leptons $-e$, neutrinos $0$, the mediators $g$, $\gamma$ and $Z^0$ with charge $0$, $W^\pm$ with charge $\pm e$ and $H$ with charge $0$
+**Asked:** the number of neutral particles $N_0$ and the number of leptons among them $N_\text{L}$
+**Principle:** A particle is electrically neutral when its charge is $0$. The boxes are counted in groups, because every row has the same charge.
+**Reading the graph:** In the quark rows the charges are $+\tfrac{2}{3}e$ and $-\tfrac{1}{3}e$: none neutral. The row $e^-$, $\mu^-$, $\tau^-$ has charge $-e$, but the neutrino row $\nu_e$, $\nu_\mu$, $\nu_\tau$ has charge $0$: three neutral. Of the mediators $g$, $\gamma$ and $Z^0$ are neutral but $W^\pm$ is charged: three neutral. The charge of the Higgs boson $H$ is $0$: one neutral.
+**Formula:** $N_0 = N_\nu + N_\text{mediator} + N_H$, and only the neutrinos are leptons, so $N_\text{L} = N_\nu$
+**Conversions:** Not needed, because we are counting boxes.
+**Substitution:** $N_0 = 3 + 3 + 1 = 7$ and $N_\text{L} = 3$
+**Answer:** a) $7$ and b) $3$. The results are exact whole numbers, because they are counted from the boxes.
+**Reasonableness:** The charged boxes are $6$ quarks, $3$ charged leptons and $W^\pm$, that is $10$, and $10 + 7 = 17$, as many as there are boxes. There is one neutrino for each charged lepton, $3$, as there should be.
+
 ## fy8-15-L2-01
 **Given:** nucleus ${}^{12}_{6}\text{C}$: atomic number $Z = 6$, mass number $A = 12$; proton $uud$, neutron $udd$
 **Asked:** the number of $d$ quarks $N_d$
@@ -181,6 +192,17 @@ The number of yes rows is $N = 5$.
 &= 0.782\,\text{MeV}
 \end{aligned}
 $$. Some elementary particles do decay (the muon). Decay is decided by the conservation laws and $Q > 0$; the $d$ quark of the neutron can turn into a $u$ quark. The conservation of energy does not prevent the decay of the neutron, and the existence of an antiparticle does not affect it.
+
+## fy8-15-L2-08
+**Given:** the charges read from the figure, the reaction $t \to W^+ + X$, baryon number $B_X = \tfrac{1}{3}$
+**Asked:** the charge $q_X$ of the particle $X$ as a multiple of the elementary charge $e$, and the quarks that $X$ can be
+**Principle:** Charge is conserved in all known phenomena, so the charge of the decaying particle equals the sum of the charges of the particles produced. A baryon number of $\tfrac{1}{3}$ means that $X$ is a quark and not an antiquark.
+**Reading the graph:** The particle $t$ is in the third column of the top row of quarks, and its box says $+2e/3$, so $q_t = +\tfrac{2}{3}e$. The box $W^\pm$ says $\pm e$, and $W^+$ is the positive one: $q_W = +e$. The quarks with charge $-\tfrac{1}{3}e$ are in the lower row of quarks: $d$, $s$ and $b$.
+**Formula:** $q_t = q_W + q_X$, so $q_X = q_t - q_W$
+**Conversions:** Not needed, because all the charges are multiples of the elementary charge $e$.
+**Substitution:** $q_X = \tfrac{2}{3}e - e = -\tfrac{1}{3}e = -0.3333\,e$
+**Answer:** b) $q_X = -0.333\,e$. The charge $-\tfrac{1}{3}e$ in the figure is an exact fraction, so three significant figures are enough. c) $X$ can be $d$, $s$ or $b$, because all of them have charge $-\tfrac{1}{3}e$. The charge alone does not pick one of them.
+**Reasonableness:** Check: $q_W + q_X = e + \left(-\tfrac{1}{3}e\right) = +\tfrac{2}{3}e = q_t$. Estimate with round numbers: $0.7 - 1.0 = -0.3$. An antiquark would have charge $+\tfrac{1}{3}e$ or $-\tfrac{2}{3}e$, which does not fit, so $X$ is a quark, as the baryon number requires.
 
 ## fy8-15-L3-01
 **Given:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672.45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115.683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192.642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493.677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ an uncharged meson, $m_\pi = 134.977\,\tfrac{\text{MeV}}{c^2}$

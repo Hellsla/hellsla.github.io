@@ -113,7 +113,7 @@ def formula_diff(a, b):
 def md_shape(text):
     no_svg = re.sub(r"<svg\b.*?</svg>", "", text, flags=re.S)
     return {"figures": re.findall(r'data-fig="([^"]+)"', text), "formulas": formulas(no_svg),
-            "blocks": len(re.findall(r"^## ", text, re.M)), "stages": text.count("<!-- vaihe -->"), "sim": text.count("<!-- sim -->")}
+            "blocks": len(re.findall(r"^## ", text, re.M)), "stops": len(re.findall(r"^```pysahdy$", text, re.M)), "stages": text.count("<!-- vaihe -->"), "sim": text.count("<!-- sim -->")}
 
 
 S2_LANGS = ("fi-easy",)   # Finnish as a second language: lessons carry "Luvun tärkeät käsitteet" (teacher 2026-11-03, NOTES.md §12)
