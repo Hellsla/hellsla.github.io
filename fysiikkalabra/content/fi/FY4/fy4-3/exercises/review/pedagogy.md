@@ -1,19 +1,26 @@
 VERDICT: PASS
 CONTENT-HASH: b916fcbcac5a7c18
-SCOPE: delta presentation (Kaava step rewrite, work queue 8g) from previous PASS be8b26190b060e32
+
+Mode: full
 
 ## Blocking
 None.
 
 ## Polish
-- solutions.md, fy4-3-L3-05 Kaava — $F_1$, $F_2$, $F_3$ are not named as the three sensor readings at the point of use ("lukemien keskiarvo" only implies it); the Annettu line gives the values but not the symbols — fix: "Anturin kolme lukemaa ovat $F_1$, $F_2$ ja $F_3$, ja köyden voima on niiden keskiarvo $F_\text{ka} = \dfrac{F_1 + F_2 + F_3}{3}$."
-- Same task, Sijoitus: the row shows $3{,}40\,\text{N}$ while the Vastaus says two significant figures ($3{,}4\,\text{N}$); fine, but the Sijoitus could end "$= 3{,}4\,\text{N}$" for consistency (recorded only).
+- solutions.md fy4-3-L3-05 Kaava — opens with the mean F_ka and only then ΣF = 0; the basic equation (first law, ΣF = F_ka - F_k = 0) should come first, then the averaging. Same order issue is mild in L2-06 (mean before s = v_k Δt).
+- fy4-3-L2-09 is a level-1 read-off (two times, subtract) and shares its figure with L1-09; consider a different reading (e.g. peak force) or accept as a gentle level 2.
+- fy4-3-L3-05 b) the task text states that opposing forces equal the rope force when v is constant, which is what a) asks the student to justify; the hint could be moved to the model solution.
+- solutions.md fy4-3-L1-03 voimakuvio uses G = 590 N although no mass is given; harmless, but say "esimerkkiarvo".
 
 ## Checked
-- Round 1 polish fixed: ΣF is no longer the sum of sensor readings; the mean is $F_\text{ka}$ with $F_1 + F_2 + F_3$, and ΣF means the net force again, as in every other Kaava of the set.
-- Kaava order in L3-05: mean definition, then first law $\Sigma F = F_\text{ka} - F_\text{k} = 0$, then $F_\text{k} = F_\text{ka}$; symbolic to the end before substitution.
-- Sijoitus: $3{,}4 + 3{,}5 + 3{,}3 = 10{,}2\,\text{N}$, divided by 3 gives $3{,}40\,\text{N}$; matches the answer b).
-- Answer, unit, significant figures and tolerance unchanged; no task, id or figure changed.
-- Finnish in the changed text correct ("Lukemien summa ... on", "ensimmäisen lain mukaan").
-- Phone: text-only change; the layout checks (360-1280 px) already ran ok.
-- Captures opened: none (text-only change).
+- Opened exercises.json (L1 01-09, L2 01-09, L3 01-05) and solutions.md in full, plus the packet's exercise-bank plan and lesson brief.
+- Counts 9/9/5 meet 5/4/3; coverage of Newton I (equilibrium, data, concept) and III (pairs, sensors, horse-cart paradox) matches the bank plan; none repeats the worked example.
+- Kaava steps start from ΣF = 0 or the third-law vector equation; each solution has all seven steps and a force diagram where forces act, with systems chosen explicitly (L1-03, L1-05, L3-04).
+- Recomputed: 18; 850; 90; 240; 6,4; 13; 65; 830; 8,9 kN; 4,8; 3,0 m; 0,27 kN; 0,60; 1,9; 480; 3,4; 4,0; 0,10 s. All inside tolerances.
+- Conceptual items: every wrong option has feedback naming the misconception (L1-06, L1-07, L2-07, L2-08 with reasons).
+- Task form (situation first, question last), everyday contexts, "esimerkkiaineisto" labelled.
+- Finnish: grammar, glossary (tukivoima, vastavoima, vierimisvastus, ilmanvastus), case after unit (5,1 N:n, 12 t) correct.
+- Figure fy4-3/anturit: values readable from the packet description; the two readings differ, no answer leaked. Captures not opened (packet layout checks passed).
+
+## Scores
+Level fit 4/5; task wording 5/5; solution completeness 5/5; Finnish 5/5; phone usability 4/5.

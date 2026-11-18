@@ -1,18 +1,24 @@
 VERDICT: PASS
 CONTENT-HASH: 2e5d53eab6b173d8
-SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
+
+Mode: full
 
 ## Blocking
 None.
 
 ## Polish
-- solutions.md fy4-1-L3-05 Kaava — the position x = x_0R + v_R t is left as a separate line after t; one more symbolic step (x in terms of the givens) would match "simplify to the end", but the substitution is still correct and followable. Optional.
+- solutions.md fy4-1-L1-04 Vastaus — the significant-figure sentence ("24 m metrin tarkkuudella, 4,0 m desimetrin") is hard to follow; one short sentence would do.
+- solutions.md fy4-1-L3-05 Kaava — x = x_0R + v_R t stays a separate last line; the final symbolic form (x in the givens) is not written before substituting. Optional.
+- fy4-1-L3-01 and L3-02 are close to level 2 (conversion plus one idea; a meeting equation); L3-03 repeats L2-08's graph-to-mean-value idea. Acceptable, level 3 is carried by L3-04 and L3-05.
 
 ## Checked
-- Delta judged in context: L2-06 and L3-05 now start from x_A = x_B, show the equation with t on both sides, collect t, then the closed form; algebra verified: (v_A - v_B)t = x_0B - x_0A and x_0R + v_P t_0 = (v_P - v_R)t.
-- L3-04 Kaava now states k, then x = k x_ohj and v = k v_ohj, derives x = x_0 + v t with x_0 = k x_0,ohj, and solves t = (x - x_0)/v before substitution; the Sijoitus follows that order.
-- No number, answer, tolerance, task or id changed; the substitutions match the new symbolic forms.
-- Paragraph splits in L1 (sign question), L3-04 and L3-05 Järkevyys and L1-09 keep every causal step and read in smaller pieces.
-- Remaining Kaava lines (L1 one-step tasks, L2-08 etc.) start from the defining equation, then the rearranged form: fine for their level.
-- Finnish: grammar and glossary terms correct in the changed text.
-- Opened captures: review/shots/fy4-1-open-exercises-L3-1280-3.png (phone-width solution layout readable, nothing clipped). The other captures were not opened: the change is text only.
+- Opened exercises.json (L1 01-09, L2 01-09, L3 01-05: counts 9/9/5 meet 5/4/3), solutions.md in full, figure descriptions in the packet (pick-*, ex-kolme-osaa, ex-kaksi-kappaletta: values given, no answer leaked).
+- Kaava steps: every one starts from the defining equation (v = Δx/Δt, x = x0 + vt, x_A = x_B condition, k = l_tod/l_ohj); the meeting tasks L2-06, L3-02, L3-05 derive t symbolically before substitution.
+- Recomputed answers: 8,0; -17; 42; 2,0; 45; 300; 5,0 min; -3,0; 16; 0,61; 5,8 s; -1,5; 2,0; 8; 4,0; 50; 0,25; 0,80 (k = 1,25); 740 m. All match answer fields and tolerances.
+- Task form: situation first, question last; everyday contexts; L1-09 and concept tasks have feedback per wrong option naming the misconception.
+- Solutions follow the seven-step form; L3-04 and L3-05 justify prediction reliability and systematic error.
+- Finnish: grammar, glossary terms, number+unit cases (min:ssa, m:n) correct.
+- Phone usability: relied on the packet's layout checks (360 px ok); did not open captures.
+
+## Scores
+Level fit 4/5; task wording 5/5; solution completeness 5/5; Finnish 5/5; phone usability 4/5.
