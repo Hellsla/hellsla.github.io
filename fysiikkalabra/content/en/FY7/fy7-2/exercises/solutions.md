@@ -112,7 +112,7 @@ $= 3449\,\text{km/s}$
 **Given:** the Earth's magnetic field $B = 50\,\mu\text{T}$, proton $m = 1.673 \cdot 10^{-27}\,\text{kg}$, $q = 1.602 \cdot 10^{-19}\,\text{C}$, velocity perpendicular to the field; $g = 9.81\,\text{m/s}^2$
 **Find:** the speed $v$ at which the magnetic force equals the weight of the proton, in millimetres per second
 **Principle:** In a perpendicular field the magnetic force is $qvB$ and the weight is $mg$. The speed asked for is found by setting these equal.
-**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ F_\text{m} &= G \\ qvB &= mg \\ v &= \dfrac{mg}{qB} \end{aligned}$$
+**Formula:** $$\begin{aligned} F_\text{m} &= G \\ qvB &= mg \\ v &= \dfrac{mg}{qB} \end{aligned}$$
 **Conversions:** $B = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T} = 5.0 \cdot 10^{-5}\,\text{T}$; finally $1\,\text{m/s} = 1000\,\text{mm/s}$.
 **Substitution:** $v = \dfrac{1.673 \cdot 10^{-27}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.602 \cdot 10^{-19}\,\text{C} \cdot 5.0 \cdot 10^{-5}\,\text{T}} = 2.049 \cdot 10^{-3}\,\text{m/s} = 2.049\,\text{mm/s}$
 **Answer:** $2.0\,\text{mm/s}$, two significant figures like the field $50\,\mu\text{T}$.

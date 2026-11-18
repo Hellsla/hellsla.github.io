@@ -94,7 +94,7 @@
 **Principle:** The fibre is uniform along its whole length, so the attenuation of a section is $A = a\,l$, where $l$ is the length of the section. A section may be at most so long that the attenuation is $20\,\text{dB}$.
 
 Enough sections are needed to cover the whole cable, and because the transmitter and the receiver are at the ends, there is one amplifier fewer than there are sections.
-**Formula:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ N &= k - 1 \end{aligned}$$
+**Formula:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ \text{number of amplifiers} &= k - 1 \end{aligned}$$
 **Conversions:** Not needed: the lengths are in kilometres and the attenuations in decibels.
 **Substitution:** $l_\text{max} = \dfrac{20\,\text{dB}}{0.18\,\text{dB/km}} = 111.1\,\text{km}$, so $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111.1\,\text{km}} = 10.55$. Thus $k = 11$ sections are needed, and $11 - 1 = 10$ amplifiers.
 **Answer:** at least $10$ amplifiers. The number is a whole number, and the number of sections is rounded up, because $10$ sections would be too long.

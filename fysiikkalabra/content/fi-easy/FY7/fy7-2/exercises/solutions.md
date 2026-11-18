@@ -110,7 +110,7 @@ $= 3449\,\text{km/s}$
 **Annettu:** Maan magneettikenttä $B = 50\,\mu\text{T}$, protoni $m = 1{,}673 \cdot 10^{-27}\,\text{kg}$, $q = 1{,}602 \cdot 10^{-19}\,\text{C}$, nopeus kohtisuorassa kenttää vastaan; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vauhti $v$, jolla magneettinen voima on yhtä suuri kuin protonin paino, millimetreinä sekunnissa
 **Periaate:** Kohtisuorassa kentässä magneettinen voima on $qvB$ ja paino on $mg$. Kysytty vauhti saadaan, kun nämä merkitään yhtä suuriksi.
-**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ F_\text{m} &= G \\ qvB &= mg \\ v &= \dfrac{mg}{qB} \end{aligned}$$
+**Kaava:** $$\begin{aligned} F_\text{m} &= G \\ qvB &= mg \\ v &= \dfrac{mg}{qB} \end{aligned}$$
 **Muunnokset:** $B = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T} = 5{,}0 \cdot 10^{-5}\,\text{T}$; lopuksi $1\,\text{m/s} = 1000\,\text{mm/s}$.
 **Sijoitus:** $v = \dfrac{1{,}673 \cdot 10^{-27}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5{,}0 \cdot 10^{-5}\,\text{T}} = 2{,}049 \cdot 10^{-3}\,\text{m/s} = 2{,}049\,\text{mm/s}$
 **Vastaus:** $2{,}0\,\text{mm/s}$, kaksi merkitsevää numeroa kuten kentässä $50\,\mu\text{T}$.

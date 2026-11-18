@@ -72,7 +72,7 @@
 **Given:** wavelength $\lambda = 532\,\text{nm}$, distance of the screen $L = 1.00\,\text{m}$, separation of the maxima $\pm 1$ $66.8\,\text{cm}$, order $k = 1$
 **Find:** the line density $N$ of the grating, that is the number of lines per millimetre
 **Principle:** The maxima are symmetric on both sides of the central maximum, so the first maximum is half of the separation of the dots from the central maximum. The angle comes from the right-angled triangle, the grating spacing from the grating equation and the line density from the grating spacing.
-**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
 **Conversions:** $x = 66.8\,\text{cm} : 2 = 33.4\,\text{cm} = 33.4 \cdot 0.01\,\text{m} = 0.334\,\text{m}$, $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.334\,\text{m}}{1.00\,\text{m}} = 18.47^\circ$, $d = \dfrac{532 \cdot 10^{-9}\,\text{m}}{\sin 18.47^\circ} = \dfrac{532 \cdot 10^{-9}\,\text{m}}{0.3168} = 1.679 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{1.679 \cdot 10^{-6}\,\text{m}} = 595.5$
 **Answer:** about $596$ lines per millimetre, three significant figures like the distances. The grating is probably the manufacturer's $600$-line-per-millimetre grating, and the difference is due to measurement uncertainty.

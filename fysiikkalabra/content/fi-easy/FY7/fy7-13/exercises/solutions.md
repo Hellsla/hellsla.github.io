@@ -72,7 +72,7 @@
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, varjostimen etäisyys $L = 1{,}00\,\text{m}$, maksimien $\pm 1$ välinen etäisyys $66{,}8\,\text{cm}$, kertaluku $k = 1$
 **Kysytty:** hilan viivatiheys $N$ eli viivojen määrä millimetrillä
 **Periaate:** Maksimit ovat symmetrisesti keskimaksimin molemmin puolin, joten ensimmäinen maksimi on puolen pisteiden välin päässä keskimaksimista. Kulma saadaan suorakulmaisesta kolmiosta, hilavakio hilayhtälöstä ja viivatiheys hilavakiosta.
-**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
 **Muunnokset:** $x = 66{,}8\,\text{cm} : 2 = 33{,}4\,\text{cm} = 33{,}4 \cdot 0{,}01\,\text{m} = 0{,}334\,\text{m}$, $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}334\,\text{m}}{1{,}00\,\text{m}} = 18{,}47^\circ$, $d = \dfrac{532 \cdot 10^{-9}\,\text{m}}{\sin 18{,}47^\circ} = \dfrac{532 \cdot 10^{-9}\,\text{m}}{0{,}3168} = 1{,}679 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{1{,}679 \cdot 10^{-6}\,\text{m}} = 595{,}5$
 **Vastaus:** noin $596$ viivaa millimetrillä, kolme merkitsevää numeroa kuten etäisyydet. Hila on todennäköisesti valmistajan hila, jossa on $600$ viivaa millimetrillä. Ero johtuu mittausepävarmuudesta.

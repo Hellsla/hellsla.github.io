@@ -92,7 +92,7 @@
 **Annettu:** kaapelin pituus $L = 1172\,\text{km}$, vaimennuskerroin $a = 0{,}18\,\text{dB/km}$, yhden osuuden suurin vaimennus $A_\text{max} = 20\,\text{dB}$
 **Kysytty:** vahvistimien vähimmäismäärä
 **Periaate:** Kuitu on koko matkalta samanlaista, joten osuuden vaimennus on $A = a\,l$, missä $l$ on osuuden pituus. Osuus saa olla enintään niin pitkä, että vaimennus on $20\,\text{dB}$. Osuuksia tarvitaan niin monta, että ne kattavat koko kaapelin. Lähetin ja vastaanotin ovat kaapelin päissä, joten vahvistimia on yksi vähemmän kuin osuuksia.
-**Kaava:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ N &= k - 1 \end{aligned}$$
+**Kaava:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ \text{vahvistimien määrä} &= k - 1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennukset desibeleinä.
 **Sijoitus:** $l_\text{max} = \dfrac{20\,\text{dB}}{0{,}18\,\text{dB/km}} = 111{,}1\,\text{km}$, joten $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111{,}1\,\text{km}} = 10{,}55$. Osuuksia tarvitaan siis $k = 11$, ja vahvistimia $11 - 1 = 10$.
 **Vastaus:** vähintään $10$ vahvistinta. Lukumäärä on kokonaisluku, ja se pyöristetään ylöspäin osuuksien määränä, koska $10$ osuutta olisi liian pitkiä.

@@ -22,7 +22,7 @@
 **Given:** length of the rod $l = 0.25\,\text{m}$, speed $v = 2.0\,\text{m/s}$, magnetic flux density $B = 0.40\,\text{T}$; the rod, the velocity and the field are mutually perpendicular
 **Find:** induced voltage $e$ between the ends of the rod in volts
 **Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The shift stops when the electric field $E = vB$ that appears cancels the magnetic force, and the voltage between the ends is $El$.
-**Formula:** $$\begin{aligned} F_\text{m} &= evB \\ F_\text{s} &= eE \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
+**Formula:** $$\begin{aligned} F_\text{m} &= |q|vB \\ F_\text{s} &= |q|E \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
 **Conversions:** None needed: all quantities are in SI units, and $\tfrac{\text{m}}{\text{s}} \cdot \text{T} \cdot \text{m} = \text{V}$.
 **Substitution:** $e = 2.0\,\text{m/s} \cdot 0.40\,\text{T} \cdot 0.25\,\text{m} = 0.20\,\text{V}$
 **Answer:** $0.20\,\text{V}$, two significant figures like the given values.

@@ -22,7 +22,7 @@
 **Annettu:** tangon pituus $l = 0{,}25\,\text{m}$, vauhti $v = 2{,}0\,\text{m/s}$, magneettivuon tiheys $B = 0{,}40\,\text{T}$. Tanko, nopeus ja kenttä ovat keskenään kohtisuorassa.
 **Kysytty:** tangon päiden välinen induktiojännite $e$ voltteina
 **Periaate:** Tangon mukana liikkuviin elektroneihin kohdistuu magneettinen voima $evB$ tangon suuntaan. Siksi elektroneja kertyy tangon toiseen päähän. Siirtyminen loppuu, kun syntyvä sähkökenttä $E = vB$ kumoaa magneettisen voiman. Päiden välinen jännite on $El$.
-**Kaava:** $$\begin{aligned} F_\text{m} &= evB \\ F_\text{s} &= eE \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
+**Kaava:** $$\begin{aligned} F_\text{m} &= |q|vB \\ F_\text{s} &= |q|E \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat SI-yksiköissä, ja $\tfrac{\text{m}}{\text{s}} \cdot \text{T} \cdot \text{m} = \text{V}$.
 **Sijoitus:** $e = 2{,}0\,\text{m/s} \cdot 0{,}40\,\text{T} \cdot 0{,}25\,\text{m} = 0{,}20\,\text{V}$
 **Vastaus:** $0{,}20\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissakin on kaksi.
