@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ea589dfa26ca3a54
+CONTENT-HASH: 78e62a186299e842
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] fy7-9 Kaava: "λ_max T" sets tight ("λmaxT"); a thin space `\,` before T would help.
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-9 (fi) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
+- Delta, hash current. Opened open-exercises-L3-1280-4/-5 (9-24 Kaava, 4 rows) and L3-1280-6/-7 (9-25 five-row Kaava with "missä T_raja …" line below, aligned on =, clean).
 - Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 4 · Finnish 5 · accessibility 5
