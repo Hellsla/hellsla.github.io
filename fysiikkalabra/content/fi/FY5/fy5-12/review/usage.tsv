@@ -1,3 +1,13 @@
 date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
 2026-11-16T06:54Z	fy5-12	FY5	developer	develop	claude-fable-5-2	medium	exercises	1	653161	20	16315	544792	92034	92086	9	282	9		2.1026	transcript	34efd6352e33
 2026-11-16T06:54Z	fy5-12	FY5	orchestrator	orchestrate	claude-fable-5-2		session/12	2	6843235	44	13023	6769240	60928	45378	224	29849	212		3.5625	transcript	6bdc1af827d6
+2026-11-18T05:22Z	fy5-12	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	370254	22	2684	321496	46052	46460	10	27	12		0.2063	transcript	2ad474e309d7
+2026-11-18T05:22Z	fy5-12	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	425284	28	3659	372212	49385	49927	12	80	13		0.3947	transcript	d11e91c517e9
+2026-11-18T05:22Z	fy5-12	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	104330	12	2417	78440	23461	23931	6	33	6		0.1814	transcript	bb29c26e1a46
+2026-11-18T05:22Z	fy5-12	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	65142	8	1066	44995	19073	19581	4	9	4		0.0674	transcript	e6372e2ab469
+2026-11-18T05:22Z	fy5-12	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	626579	32	4409	569115	53023	53521	15	36	18		0.2905	transcript	455decb9bf42
+2026-11-18T05:22Z	fy5-12	FY5	science-reviewer	review	claude-opus-5-5	medium	delta	1	282149	12	3059	220871	58207	58924	6	48	9		0.3964	transcript	6a3a1f40e42b
+2026-11-18T05:22Z	fy5-12	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	290197	30	3281	255670	31216	31409	12	210	14		0.1620	transcript	04b2f6faed8c
+2026-11-18T05:22Z	fy5-12	FY5	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	60951	8	1330	34217	25396	26290	4	11	5		0.0836	transcript	ea693317b500
+2026-11-18T05:22Z	fy5-12	FY5	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	1	504114	28	3336	448934	51816	52394	13	73	14		0.2527	transcript	ba852cbbcdb9
+2026-11-18T05:22Z	fy5-12	FY5	orchestrator	orchestrate	claude-sonnet-5-5		session	1	5333824	111	14220	5190359	129134	145650	45	1099	42		1.6970	transcript	d2223c10628d
