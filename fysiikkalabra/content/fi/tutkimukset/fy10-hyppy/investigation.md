@@ -206,7 +206,7 @@ Mieti ainakin näitä:
 Tallenna jokaisen hypyn alkuperäinen mittausdata omaksi tiedostokseen tai omaksi mittaussarjakseen, jotta voit palata siihen myöhemmin. Kirjaa jokaisesta hypystä kuvaajasta luetut ja niistä lasketut suureet taulukkoon.
 
 ::: tuki O
-Voit käyttää esimerkiksi tällaisia taulukoita. Ensimmäiseen kirjaat kuvaajasta luetut suureet, toiseen niistä lasketut.
+Voit käyttää esimerkiksi tällaisia taulukoita. Ensimmäiseen kirjaat kuvaajasta luetut suureet, toiseen niistä lasketut. Korkeus $h_\text{imp}$ lasketaan impulssista ja $h_\text{lento}$ lentoajasta.
 
 | Hyppy | $\dfrac{I}{G}\ (\text{s})$ | $t_\text{lento}\ (\text{s})$ |
 |---|---|---|
@@ -214,7 +214,7 @@ Voit käyttää esimerkiksi tällaisia taulukoita. Ensimmäiseen kirjaat kuvaaja
 | 2. | | |
 | 3. | | |
 
-| Hyppy | $v_0\ (\text{m/s})$ | $h\ (\text{m})$, impulssista | $h\ (\text{m})$, lentoajasta |
+| Hyppy | $v_0\ (\text{m/s})$ | $h_\text{imp}\ (\text{m})$ | $h_\text{lento}\ (\text{m})$ |
 |---|---|---|---|
 | 1. | | | |
 | 2. | | | |
