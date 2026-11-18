@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: alpha decay",
-      "prompt": "Polonium-210 ${}^{210}_{84}\\text{Po}$ decays by alpha decay. Which daughter nucleus is formed?",
+      "prompt": "A helium-4 nucleus is the same particle as an alpha particle. Polonium-210 ${}^{210}_{84}\\text{Po}$ emits one helium-4 nucleus when it decays. Which daughter nucleus is formed?",
       "choices": [
         {
           "text": "${}^{206}_{82}\\text{Pb}$, that is, lead-206",

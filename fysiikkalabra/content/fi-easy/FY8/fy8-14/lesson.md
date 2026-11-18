@@ -499,7 +499,9 @@ Kyynärvarren röntgenkuvassa säde A kulkee $8{,}0\,\text{cm}$ pehmytkudosta. S
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Säde A: pehmytkudosta $d_\text{A} = 8{,}0\,\text{cm}$. Säde B: pehmytkudosta $d_\text{kudos} = 5{,}0\,\text{cm}$ ja luuta $d_\text{luu} = 3{,}0\,\text{cm}$. Puoliintumispaksuudet ovat $d_{1/2}^\text{kudos} = 3{,}4\,\text{cm}$ ja $d_{1/2}^\text{luu} = 1{,}1\,\text{cm}$. Kysytään intensiteettien suhdetta ${I_\text{A} : I_\text{B}}$.
+**Tunnetut ja kysytty.** Säde A: pehmytkudosta $d_\text{A} = 8{,}0\,\text{cm}$. Säde B: pehmytkudosta $d_\text{kudos} = 5{,}0\,\text{cm}$ ja luuta $d_\text{luu} = 3{,}0\,\text{cm}$. Puoliintumispaksuudet ovat $d_{1/2}^\text{kudos} = 3{,}4\,\text{cm}$ ja $d_{1/2}^\text{luu} = 1{,}1\,\text{cm}$.
+
+Kysytään intensiteettien suhdetta ${I_\text{A} : I_\text{B}}$.
 
 <!-- vaihe -->
 

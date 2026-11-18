@@ -254,7 +254,9 @@ The red line of a hydrogen lamp is produced when the electron of a hydrogen atom
 
 <!-- vaihe -->
 
-**Given and asked.** Upper level $n = 3$, lower level $n = 2$, energies of the levels $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $c = 2.998 \cdot 10^{8}\,\text{m/s}$. The wavelength $\lambda$ of the photon is asked.
+**Given and asked.** Upper level $n = 3$, lower level $n = 2$, energies of the levels $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $c = 2.998 \cdot 10^{8}\,\text{m/s}$.
+
+The wavelength $\lambda$ of the photon is asked.
 
 <!-- vaihe -->
 

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fc7192b27f2ce4e5
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 9122d135c80ab345
 
 ## Blocking
 - none
@@ -9,4 +8,8 @@ Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix d
 - none
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.  Re-checked after the I-131 note was reworded (calculations use 8,02 d; third significant figure): wording and typography fine.
+- Delta (fi): fy8-9-stage-herata-390 (Pohdinta, Kertaa box closed, technetium-99m scene now matches the retrieval task), fy8-9-open-ennusta-1280-1 (layout around inquiry intact). The changed Kertaa prompt/feedback text read from the diff only (box closed in captures): "teknetium-$99\text{m}$", "molybdeeni-$99$:stä", $99$, $42$/$43$ in LaTeX, case endings correct, fluent Finnish.
+- No lesson.md change beyond approved presentation carry.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

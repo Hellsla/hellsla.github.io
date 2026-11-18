@@ -230,7 +230,9 @@ The spectrum of a neon sign has a strong red-orange line at the wavelength $640\
 
 <!-- vaihe -->
 
-**Given and asked.** The wavelength of the photon is $\lambda = 640\,\text{nm}$, the Planck constant is $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and the speed of light is $c = 2.998 \cdot 10^{8}\,\text{m/s}$. The energy difference $\Delta E = E_\text{u} - E_\text{l}$ is asked, in electronvolts.
+**Given and asked.** The wavelength of the photon is $\lambda = 640\,\text{nm}$, the Planck constant is $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and the speed of light is $c = 2.998 \cdot 10^{8}\,\text{m/s}$.
+
+The energy difference $\Delta E = E_\text{u} - E_\text{l}$ is asked, in electronvolts.
 
 <!-- vaihe -->
 

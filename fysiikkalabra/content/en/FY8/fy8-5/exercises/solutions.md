@@ -119,34 +119,54 @@ $$, the energy of the photon is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-
 ## fy8-5-L3-02
 **Given:** filling order $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; at most two electrons per orbital; the $3\text{p}$ subshell is half full
 **Asked:** the number of electrons $N$ in the atom
-**Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, so electrons go to the $3\text{p}$ subshell only when $1\text{s}$, $2\text{s}$, $2\text{p}$ and $3\text{s}$ are full. An s subshell has one orbital and a p subshell three, so they hold $2$ and $6$ electrons. A half-full $3\text{p}$ subshell contains half of its maximum number.
+**Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, so electrons go to the $3\text{p}$ subshell only when $1\text{s}$, $2\text{s}$, $2\text{p}$ and $3\text{s}$ are full. An s subshell has one orbital and a p subshell three, so they hold $2$ and $6$ electrons.
+
+A half-full $3\text{p}$ subshell contains half of its maximum number.
+
 **Formula:** $$\begin{aligned} N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
 &+ \dfrac{N_\text{3p,max}}{2}
 \end{aligned}$$
+
 **Conversions:** None are needed, because a count is asked.
+
 **Substitution:** $N = 2 + 2 + 6 + 2 + \dfrac{6}{2} = 2 + 2 + 6 + 2 + 3 = 15$
+
 **Answer:** $15$ electrons (the element is phosphorus, configuration $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^2\,3\text{p}^3$); the result is an exact integer.
+
 **Reasonableness:** The full shells $n = 1$ and $n = 2$ hold $2 + 8 = 10$ electrons, and the shell $n = 3$ has $2 + 3 = 5$ electrons, $15$ altogether. In the periodic table the atomic number $15$ is phosphorus, which is in the middle of the third period, as a half-full $3\text{p}$ subshell leads one to expect.
 
 ## fy8-5-L3-03
 **Given:** measurements $N = 5000$; boundary of the orbital $90\,\%$; $5.3\,\%$ of the measurements land inside the nodal sphere, and this inner part belongs practically entirely to the region of the orbital
 **Asked:** the expected number $k$ of measurements that land in the region of the orbital outside the nodal sphere
-**Principle:** The probability $0.90$ of the region of the orbital divides into two parts: the inner part of the nodal sphere and the shell outside the nodal sphere. Since the inner part belongs entirely to the region, the probability of the outer part is the difference $0.90 - 0.053$. In many measurements the share of those landing in a region is approximately the probability of the region.
+**Principle:** The probability $0.90$ of the region of the orbital divides into two parts: the inner part of the nodal sphere and the shell outside the nodal sphere. Since the inner part belongs entirely to the region, the probability of the outer part is the difference $0.90 - 0.053$.
+
+In many measurements the share of those landing in a region is approximately the probability of the region.
+
 **Formula:** $k = (p - p_\text{in})\,N$
+
 **Conversions:** $p = 90\,\% = 0.90$ and $p_\text{in} = 5.3\,\% = 0.053$
+
 **Substitution:** $k = (0.90 - 0.053) \cdot 5000 = 0.847 \cdot 5000 = 4235$
+
 **Answer:** about $4240$ measurements; the number is an expected value that a real series fulfils only approximately, and the share of the inner part, $5.3\,\%$, limits the precision to about two or three significant figures.
+
 **Reasonableness:** Altogether about $0.90 \cdot 5000 = 4500$ measurements land in the region, and of these about $0.053 \cdot 5000 = 265$ inside the nodal sphere; the difference $4235$ is clearly the largest part. This fits the fact that the most common distance of the $2\text{s}$ electron is outside the nodal sphere.
 
 ## fy8-5-L1-06
 **Find:** what the essential difference is between an orbital of the wave-mechanical model of the atom and an orbit of the Bohr model.
 **Principle:** In the wave model the state of the electron is described by a standing wave spread around the nucleus, and the wave tells how probably the electron is detected at each place. An orbital is drawn as a region inside which the electron is detected with a chosen probability, usually $90\,\%$.
-**Model answer:** An orbital is not a path but a region inside which the electron is detected with a chosen probability, and no route can be drawn for the electron. In the Bohr model the electron has a precise orbit, but in the wave model a measurement always gives a single point and the orbital describes only the distribution of many measurements. The claim that an orbital is an imprecise path is wrong, because there is no path at all. A spherical surface is not acceptable, because the measurement results scatter over different distances. The cloud does not mean either that the electron is spread out into parts: in each measurement a whole electron is detected at one place.
+**Model answer:** An orbital is not a path but a region inside which the electron is detected with a chosen probability, and no route can be drawn for the electron.
+
+In the Bohr model the electron has a precise orbit, but in the wave model a measurement always gives a single point and the orbital describes only the distribution of many measurements. The claim that an orbital is an imprecise path is wrong, because there is no path at all.
+
+A spherical surface is not acceptable, because the measurement results scatter over different distances. The cloud does not mean either that the electron is spread out into parts: in each measurement a whole electron is detected at one place.
 
 ## fy8-5-L1-07
 **Find:** what the point cloud of $5000$ measurements describes.
 **Principle:** According to the probability interpretation, the wave does not tell the position of a particle but how probably the particle is detected at each place. A single measurement gives one random result, and the distribution becomes visible only from many measurements.
-**Model answer:** The cloud describes the distribution of the measurement results: there are the most points where the electron is most probably detected, so the cloud is densest near the nucleus. Each point is a separate measurement result independent of the others, so the points are not the route of the electron. The blurring explanation is not acceptable, because each measurement finds the electron precisely at one place, and the cloud arises only as the results accumulate. The electron does not break into pieces either, but in each measurement a whole electron is detected.
+**Model answer:** The cloud describes the distribution of the measurement results: there are the most points where the electron is most probably detected, so the cloud is densest near the nucleus. Each point is a separate measurement result independent of the others, so the points are not the route of the electron.
+
+The blurring explanation is not acceptable, because each measurement finds the electron precisely at one place, and the cloud arises only as the results accumulate. The electron does not break into pieces either, but in each measurement a whole electron is detected.
 
 ## fy8-5-L1-08
 **Given:** subshell $4\text{f}$; the f subshell has seven orbitals; at most two electrons in an orbital
@@ -160,7 +180,10 @@ $$, the energy of the photon is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-
 
 ## fy8-5-L1-09
 **Find:** the order of the states A–E by the energy $E_n$ of the electron, from the smallest to the greatest.
-**Principle:** In a hydrogen atom the energy of a state depends only on the principal quantum number $n$, which is the number in the name of the state. The letter tells the shape of the wave, but it does not change the energy of a state of the hydrogen atom. The energies are negative, so the state whose energy has the greatest absolute value has the smallest energy.
+**Principle:** In a hydrogen atom the energy of a state depends only on the principal quantum number $n$, which is the number in the name of the state. The letter tells the shape of the wave, but it does not change the energy of a state of the hydrogen atom.
+
+The energies are negative, so the state whose energy has the greatest absolute value has the smallest energy.
+
 **Model answer:** The energies:
 
 $E_1 = -\tfrac{13.6\,\text{eV}}{1^2} = -13.6\,\text{eV}$ (state B)
@@ -175,7 +198,9 @@ $E_5 = -\tfrac{13.6\,\text{eV}}{5^2} = -0.544\,\text{eV}$ (state E)
 
 From the smallest energy to the greatest the order is B, D, A, C, E.
 
-The letter does not allow ordering: the $3\text{d}$ state is lower than the $4\text{s}$ state, because its principal quantum number is smaller. Likewise the $5\text{p}$ state is higher than the $4\text{s}$ state, because its principal quantum number is greater. If the states are ordered by the absolute value of the energy, the order is turned the wrong way round: the $1\text{s}$ state is the most tightly bound, and its energy is the smallest.
+The letter does not allow ordering: the $3\text{d}$ state is lower than the $4\text{s}$ state, because its principal quantum number is smaller. Likewise the $5\text{p}$ state is higher than the $4\text{s}$ state, because its principal quantum number is greater.
+
+If the states are ordered by the absolute value of the energy, the order is turned the wrong way round: the $1\text{s}$ state is the most tightly bound, and its energy is the smallest.
 
 ## fy8-5-L2-05
 **Given:** measurements $N = 400$; class width $0.05\,\text{nm}$; counts $k$ of the classes: $118$, $171$, $79$, $23$, $7$ and $2$; radius of the $90\,\%$ boundary $0.14\,\text{nm}$
@@ -197,7 +222,10 @@ c) $72.3\,\%$ of the measurements land at a distance of less than $0.10\,\text{n
 &+ \tfrac{90.0 - 72.3}{92.0 - 72.3} \cdot 0.05\,\text{nm} \\
 &= 0.145\,\text{nm}
 \end{aligned}
-$$, which is close to $0.14\,\text{nm}$. So the data is consistent with the boundary. There are hits outside the boundary too: at a distance of more than $0.15\,\text{nm}$ there are $23 + 7 + 2 = 32$ measurements, that is, $8.0\,\%$.
+$$, which is close to $0.14\,\text{nm}$. So the data is consistent with the boundary.
+
+There are hits outside the boundary too: at a distance of more than $0.15\,\text{nm}$ there are $23 + 7 + 2 = 32$ measurements, that is, $8.0\,\%$.
+
 **Reasonableness:** The most common class $0.05$–$0.10\,\text{nm}$ contains the Bohr radius $0.053\,\text{nm}$, and the class nearest the nucleus is the second most common. The counts decrease quickly outwards, and in total $$
 \begin{aligned}
 &118 + 171 + 79 + 23 + 7 + 2 \\
@@ -209,30 +237,47 @@ $$, as it should be.
 **Given:** length of the string $L = 0.80\,\text{m}$; speed of the wave $v = 64\,\text{m/s}$; ends of the string fixed
 **Find:** a) the wavelength $\lambda$ in each state, b) the frequency $f$ in each state, c) an explanation of the connection between nodes and frequency
 **Principle:** The ends of the string stay in place, so the ends are nodes and a whole number of antinodes fits on the string. When there are $m$ antinodes, the length of each antinode is half a wavelength, so $L = m \cdot \tfrac{\lambda}{2}$. For a wave, $v = f\lambda$.
-**Reading the graph:** In the figure the uppermost state has one antinode and no node between the ends, the middle one has two antinodes and one node, and the lowest has three antinodes and two nodes. So there is always one more antinode than there are nodes: $m = 1, 2, 3$. The wavelengths of the figure cannot be read, so they are calculated from the length of the string.
+**Reading the graph:** In the figure the uppermost state has one antinode and no node between the ends, the middle one has two antinodes and one node, and the lowest has three antinodes and two nodes. So there is always one more antinode than there are nodes: $m = 1, 2, 3$.
+
+The wavelengths of the figure cannot be read, so they are calculated from the length of the string.
+
 **Formula:** $\lambda = \dfrac{2L}{m}$ and $f = \dfrac{v}{\lambda}$
+
 **Conversions:** None are needed, because the length is in metres and the speed in $\text{m/s}$.
+
 **Substitution:** a) In the state $m = 1$ the wavelength is $\lambda = \dfrac{2 \cdot 0.80\,\text{m}}{1} = 1.60\,\text{m}$, in the state $m = 2$ it is $\lambda = \dfrac{2 \cdot 0.80\,\text{m}}{2} = 0.80\,\text{m}$ and in the state $m = 3$ it is $\lambda = \dfrac{2 \cdot 0.80\,\text{m}}{3} = 0.533\,\text{m}$. b) In the state $m = 1$ the frequency is $f_1 = \dfrac{64\,\text{m/s}}{1.60\,\text{m}} = 40\,\text{Hz}$, in the state $m = 2$ it is $f_2 = \dfrac{64\,\text{m/s}}{0.80\,\text{m}} = 80\,\text{Hz}$ and in the state $m = 3$ (two nodes) it is $f_3 = \dfrac{64\,\text{m/s}}{0.5333\,\text{m}} = 120\,\text{Hz}$.
+
 **Answer:** the frequency of the state with two nodes is $120\,\text{Hz}$, two significant figures like the speed $64\,\text{m/s}$.
 
 a) The wavelengths are $1.60\,\text{m}$, $0.80\,\text{m}$ and $0.533\,\text{m}$.
 
 b) The frequencies are $40\,\text{Hz}$, $80\,\text{Hz}$ and $120\,\text{Hz}$.
 
-c) As the number of nodes increases, more antinodes fit on the string, so the wavelength gets shorter and the frequency grows: the wavelengths $1.60\,\text{m}$, $0.80\,\text{m}$ and $0.533\,\text{m}$ give the frequencies $40\,\text{Hz}$, $80\,\text{Hz}$ and $120\,\text{Hz}$. The state of the electron in an atom is also described by a standing wave, so only certain wave shapes are possible and the energy is quantised. In the hydrogen atom, the more nodes, the greater the energy, just as on a string the more nodes, the higher the frequency.
+c) As the number of nodes increases, more antinodes fit on the string, so the wavelength gets shorter and the frequency grows: the wavelengths $1.60\,\text{m}$, $0.80\,\text{m}$ and $0.533\,\text{m}$ give the frequencies $40\,\text{Hz}$, $80\,\text{Hz}$ and $120\,\text{Hz}$.
+
+The state of the electron in an atom is also described by a standing wave, so only certain wave shapes are possible and the energy is quantised. In the hydrogen atom, the more nodes, the greater the energy, just as on a string the more nodes, the higher the frequency.
+
 **Reasonableness:** In the state $m = 2$ the wavelength $0.80\,\text{m}$ equals the length of the string, and its frequency $\dfrac{64\,\text{m/s}}{0.80\,\text{m}} = 80\,\text{Hz}$ lies between $40\,\text{Hz}$ and $120\,\text{Hz}$. The frequencies $40\,\text{Hz}$, $80\,\text{Hz}$ and $120\,\text{Hz}$ are successive multiples of the fundamental frequency $40\,\text{Hz}$, as the number of antinodes requires.
 
 ## fy8-5-L2-07
 **Find:** what is wrong in the student’s reasoning.
 **Principle:** The boundary of an orbital is an agreed probability boundary, not a wall. On average $90\,\%$ of the measurements land inside the $90\,\%$ boundary, so $1 - 0.90 = 0.10$, that is, every tenth measurement, lands outside. In many measurements the share is approximately this probability, $P \approx \tfrac{k}{N}$.
-**Model answer:** The boundary is an agreed probability boundary: about nine tenths of the measurements land inside it, and the rest land outside. $0.10 \cdot 2000 = 200$ hits are expected outside, and the observed number $205$ fits this: $\tfrac{205}{2000} = 10.25\,\%$. So the simulation works correctly, and the hits outside the boundary belong to the probability distribution of the wave model. They are not caused by the electron rushing about quickly or by measurement error, because each measurement gives one point, and even a more accurate measurement would find the electron outside the boundary one time in ten.
+**Model answer:** The boundary is an agreed probability boundary: about nine tenths of the measurements land inside it, and the rest land outside. $0.10 \cdot 2000 = 200$ hits are expected outside, and the observed number $205$ fits this: $\tfrac{205}{2000} = 10.25\,\%$.
+
+So the simulation works correctly, and the hits outside the boundary belong to the probability distribution of the wave model.
+
+They are not caused by the electron rushing about quickly or by measurement error, because each measurement gives one point, and even a more accurate measurement would find the electron outside the boundary one time in ten.
 
 ## fy8-5-L3-04
 **Given:** wavelengths $\lambda$: $657.1\,\text{nm}$, $485.4\,\text{nm}$, $433.5\,\text{nm}$ and $410.6\,\text{nm}$; final shell $n = 2$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** a) the energies $E_\text{f}$ of the photons, b) the numbers $n$ of the starting shells, c) the slope of the line of the graph, d) the wavelength of the line starting from the shell $n = 7$
 **Principle:** The energy of the atom decreases by the difference of the energies of the states, and the same energy leaves as a photon: $E_\text{f} = \tfrac{hc}{\lambda} = E_n - E_2$. Substituting the energy-level formula gives $E_\text{f} = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$. If the points are plotted according to this equation, they fall on a line whose slope is the constant of the energy-level formula.
-**Reading the graph:** The values on the horizontal axis are $\tfrac{1}{4} - \tfrac{1}{n^2} = 0.139$, $0.188$, $0.210$ and $0.222$ for the shells $n = 3, 4, 5, 6$, and the values on the vertical axis are the energies of part a). The points fall approximately on a line that passes through the origin; the measured points vary slightly around the line. As a check, the slope calculated through the first and the last measured point, $(0.1389;\ 1.887\,\text{eV})$ and $(0.2222;\ 3.020\,\text{eV})$, is $\dfrac{3.020\,\text{eV} - 1.887\,\text{eV}}{0.2222 - 0.1389} = 13.6\,\text{eV}$, and the line fitted to all the points, whose slope is used as the answer, gives $13.62\,\text{eV}$ and the constant term $-0.003\,\text{eV}$.
+**Reading the graph:** The values on the horizontal axis are $\tfrac{1}{4} - \tfrac{1}{n^2} = 0.139$, $0.188$, $0.210$ and $0.222$ for the shells $n = 3, 4, 5, 6$, and the values on the vertical axis are the energies of part a). The points fall approximately on a line that passes through the origin; the measured points vary slightly around the line.
+
+As a check, the slope calculated through the first and the last measured point, $(0.1389;\ 1.887\,\text{eV})$ and $(0.2222;\ 3.020\,\text{eV})$, is $\dfrac{3.020\,\text{eV} - 1.887\,\text{eV}}{0.2222 - 0.1389} = 13.6\,\text{eV}$, and the line fitted to all the points, whose slope is used as the answer, gives $13.62\,\text{eV}$ and the constant term $-0.003\,\text{eV}$.
+
 **Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13.6\,\text{eV}}$ and the slope $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
+
 **Conversions:** The wavelength $657.1\,\text{nm} = 657.1 \cdot 10^{-9}\,\text{m}$ and similarly for the others. The product $$
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -240,16 +285,36 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$. Joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}$.
-**Substitution:** a) For the first line $E_\text{f} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657.1 \cdot 10^{-9}\,\text{m}} = 3.0231 \cdot 10^{-19}\,\text{J} = 1.887\,\text{eV}$. Similarly for the other lines: $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$. b) For the first line $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1.887\,\text{eV}}{13.6\,\text{eV}} = 0.2500 - 0.1388 = 0.1112$, so $n = \sqrt{\dfrac{1}{0.1112}} = 3.00$. Similarly for the other lines $n = 4.01$, $5.02$ and $5.98$. d) The energy of a photon starting from the shell $n = 7$ is $13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3.122\,\text{eV} = 5.002 \cdot 10^{-19}\,\text{J}$ and the wavelength is $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.002 \cdot 10^{-19}\,\text{J}} = 3.971 \cdot 10^{-7}\,\text{m} = 397.1\,\text{nm}$.
-**Answer:** a) $1.887\,\text{eV}$, $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$; b) the starting shells are $n = 3, 4, 5$ and $6$, because $n$ is the number of the shell and therefore an integer, and the calculated values $3.00$, $4.01$, $5.02$ and $5.98$ differ from integers only by the measurement uncertainty; c) the slope is $13.6\,\text{eV}$, and it is the constant of the energy-level formula, that is, the absolute value of the ground-state energy of the hydrogen atom; d) about $397\,\text{nm}$.
-**Reasonableness:** The slope $13.6\,\text{eV}$ equals the constant of the energy-level formula, and the line passes through the origin, as $E_\text{f} = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$ requires. The predicted wavelength $397\,\text{nm}$ is shorter than $410.6\,\text{nm}$ of the fourth line, and the lines get closer together towards the limit where $n \to \infty$: then $E_\text{f} = \tfrac{13.6\,\text{eV}}{4} = 3.40\,\text{eV}$ and $\lambda = 365\,\text{nm}$. The lines are separate, because the allowed states of the electron are standing waves and the energy is quantised.
+
+**Substitution:** a) For the first line $E_\text{f} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657.1 \cdot 10^{-9}\,\text{m}} = 3.0231 \cdot 10^{-19}\,\text{J} = 1.887\,\text{eV}$. Similarly for the other lines: $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$.
+
+b) For the first line $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1.887\,\text{eV}}{13.6\,\text{eV}} = 0.2500 - 0.1388 = 0.1112$, so $n = \sqrt{\dfrac{1}{0.1112}} = 3.00$. Similarly for the other lines $n = 4.01$, $5.02$ and $5.98$.
+
+d) The energy of a photon starting from the shell $n = 7$ is $13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3.122\,\text{eV} = 5.002 \cdot 10^{-19}\,\text{J}$ and the wavelength is $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.002 \cdot 10^{-19}\,\text{J}} = 3.971 \cdot 10^{-7}\,\text{m} = 397.1\,\text{nm}$.
+
+**Answer:** a) $1.887\,\text{eV}$, $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$;
+
+b) the starting shells are $n = 3, 4, 5$ and $6$, because $n$ is the number of the shell and therefore an integer, and the calculated values $3.00$, $4.01$, $5.02$ and $5.98$ differ from integers only by the measurement uncertainty;
+
+c) the slope is $13.6\,\text{eV}$, and it is the constant of the energy-level formula, that is, the absolute value of the ground-state energy of the hydrogen atom;
+
+d) about $397\,\text{nm}$.
+
+**Reasonableness:** The slope $13.6\,\text{eV}$ equals the constant of the energy-level formula, and the line passes through the origin, as $E_\text{f} = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$ requires. The predicted wavelength $397\,\text{nm}$ is shorter than $410.6\,\text{nm}$ of the fourth line, and the lines get closer together towards the limit where $n \to \infty$: then $E_\text{f} = \tfrac{13.6\,\text{eV}}{4} = 3.40\,\text{eV}$ and $\lambda = 365\,\text{nm}$.
+
+The lines are separate, because the allowed states of the electron are standing waves and the energy is quantised.
 
 ## fy8-5-L3-05
 **Given:** $Z = 11$; ionisation energies $E_\text{i}$ (NIST Atomic Spectra Database): Li $5.39\,\text{eV}$ ($n = 2$), Na $5.14\,\text{eV}$ ($n = 3$), K $4.34\,\text{eV}$ ($n = 4$); energy of the transition $3\text{s} \to 3\text{p}$ $\Delta E = 2.10\,\text{eV}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** a) the electron configuration of sodium, b) the decrease of the ionisation energy, c) the wavelength $\lambda$ of the exciting photon, d) the longest wavelength $\lambda_\text{max}$ of an ionising photon
-**Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, at most two in each orbital. When a photon is absorbed, the energy of the atom changes by the energy of the photon, so the energy of the photon is the difference of the energies of the states, $\tfrac{hc}{\lambda} = \Delta E$. At least the ionisation energy is needed to release the electron, so the longest acceptable wavelength corresponds to the energy $E_\text{i}$.
+**Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, at most two in each orbital. When a photon is absorbed, the energy of the atom changes by the energy of the photon, so the energy of the photon is the difference of the energies of the states, $\tfrac{hc}{\lambda} = \Delta E$.
+
+At least the ionisation energy is needed to release the electron, so the longest acceptable wavelength corresponds to the energy $E_\text{i}$.
+
 **Formula:** $\lambda = \dfrac{hc}{\Delta E}$ and $\lambda_\text{max} = \dfrac{hc}{E_\text{i}}$
+
 **Conversions:** $\Delta E = 2.10\,\text{eV} = 2.10 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.3642 \cdot 10^{-19}\,\text{J}$ and $E_\text{i} = 5.14\,\text{eV} = 5.14 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 8.2343 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
+
 **Substitution:** First $$
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -257,32 +322,61 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$. In part c) $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.3642 \cdot 10^{-19}\,\text{J}} = 5.905 \cdot 10^{-7}\,\text{m} = 590.5\,\text{nm}$ and in part d) $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8.2343 \cdot 10^{-19}\,\text{J}} = 2.412 \cdot 10^{-7}\,\text{m} = 241.2\,\text{nm}$.
-**Answer:** a) The atom has $11$ electrons, and the configuration is $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: the shells $n = 1$ and $n = 2$ fill up ($2 + 8 = 10$ electrons), and the eleventh electron is in the next lowest orbital, $3\text{s}$, so there is only one electron in the outermost shell. b) The valence electron is in the shell $n = 2$ in lithium, in the shell $n = 3$ in sodium and in the shell $n = 4$ in potassium. The higher the shell, the farther from the nucleus it is, and between it and the nucleus there are more and more full shells whose electrons repel it. The charge of the nucleus grows according to the numbers $3$, $11$ and $19$, but the ionisation energy still decreases from $5.39\,\text{eV}$ and $5.14\,\text{eV}$ to $4.34\,\text{eV}$, so the effect of the growth of the shell is greater than that of the charge of the nucleus. The formula $\tfrac{13.6\,\text{eV}}{n^2}$ of the hydrogen atom would give similarly decreasing values $3.40\,\text{eV}$, $1.51\,\text{eV}$ and $0.85\,\text{eV}$; for the alkali metals the values are greater, because the electrons of the inner shells do not completely screen the charge of the nucleus, so a greater charge than in hydrogen acts on the valence electron. c) The wavelength of the photon is $590\,\text{nm}$, three significant figures like the number $2.10\,\text{eV}$. d) A photon with a wavelength of at most $241\,\text{nm}$ is suitable for ionisation. The energy of the photon, $2.10\,\text{eV}$, is smaller than $E_\text{i} = 5.14\,\text{eV}$, so the photon of part c) is not enough to release the electron; it only moves the electron to the state $3\text{p}$.
-**Reasonableness:** The wavelength $590\,\text{nm}$ is in the region of visible light, at yellow light, and a sodium lamp glows yellow. The energies are consistent: an ionising photon needs the energy $5.14\,\text{eV}$, which is $\tfrac{5.14}{2.10} = 2.45$ times the energy of the exciting photon, and the wavelength is correspondingly $\tfrac{590.5\,\text{nm}}{241.2\,\text{nm}} = 2.45$ times as long. The ionisation limit $241\,\text{nm}$ is ultraviolet, as it should be.
+
+**Answer:** a) The atom has $11$ electrons, and the configuration is $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: the shells $n = 1$ and $n = 2$ fill up ($2 + 8 = 10$ electrons), and the eleventh electron is in the next lowest orbital, $3\text{s}$, so there is only one electron in the outermost shell.
+
+b) The valence electron is in the shell $n = 2$ in lithium, in the shell $n = 3$ in sodium and in the shell $n = 4$ in potassium. The higher the shell, the farther from the nucleus it is, and between it and the nucleus there are more and more full shells whose electrons repel it.
+
+The charge of the nucleus grows according to the numbers $3$, $11$ and $19$, but the ionisation energy still decreases from $5.39\,\text{eV}$ and $5.14\,\text{eV}$ to $4.34\,\text{eV}$, so the effect of the growth of the shell is greater than that of the charge of the nucleus.
+
+The formula $\tfrac{13.6\,\text{eV}}{n^2}$ of the hydrogen atom would give similarly decreasing values $3.40\,\text{eV}$, $1.51\,\text{eV}$ and $0.85\,\text{eV}$; for the alkali metals the values are greater, because the electrons of the inner shells do not completely screen the charge of the nucleus, so a greater charge than in hydrogen acts on the valence electron.
+
+c) The wavelength of the photon is $590\,\text{nm}$, three significant figures like the number $2.10\,\text{eV}$.
+
+d) A photon with a wavelength of at most $241\,\text{nm}$ is suitable for ionisation. The energy of the photon, $2.10\,\text{eV}$, is smaller than $E_\text{i} = 5.14\,\text{eV}$, so the photon of part c) is not enough to release the electron; it only moves the electron to the state $3\text{p}$.
+
+**Reasonableness:** The wavelength $590\,\text{nm}$ is in the region of visible light, at yellow light, and a sodium lamp glows yellow. The energies are consistent: an ionising photon needs the energy $5.14\,\text{eV}$, which is $\tfrac{5.14}{2.10} = 2.45$ times the energy of the exciting photon, and the wavelength is correspondingly $\tfrac{590.5\,\text{nm}}{241.2\,\text{nm}} = 2.45$ times as long.
+
+The ionisation limit $241\,\text{nm}$ is ultraviolet, as it should be.
 
 ## fy8-5-L2-08
 **Given:** the figure shows the orbitals $1\text{s}$, $2\text{s}$ and $2\text{p}$; the $2\text{p}$ orbital in the figure is one of three $2\text{p}$ orbitals; at most $2$ electrons per orbital
 **Asked:** a) the nodes of the orbitals, b) why the electron is not found at a node, c) the greatest number of electrons $N_\text{max}$ in the subshells $1\text{s}$, $2\text{s}$ and $2\text{p}$
 **Principle:** An orbital is the probability distribution given by the electron's wave function. At a node the wave is zero, so the probability of finding the electron there is zero. The greatest number of electrons in a subshell is the number of orbitals times two, because an orbital holds at most two electrons (Pauli exclusion principle).
-**Reading the graph:** In the figure $1\text{s}$ is a sphere with no node. The orbital $2\text{s}$ has a nodal sphere inside the sphere. The orbital $2\text{p}$ has two lobes and a nodal plane through the nucleus between them. The figure shows only one of the three orbitals of the $2\text{p}$ subshell, but the task says there are $3$ of them. So there are $1$ ($1\text{s}$), $1$ ($2\text{s}$) and $3$ ($2\text{p}$) orbitals.
+**Reading the graph:** In the figure $1\text{s}$ is a sphere with no node. The orbital $2\text{s}$ has a nodal sphere inside the sphere. The orbital $2\text{p}$ has two lobes and a nodal plane through the nucleus between them.
+
+The figure shows only one of the three orbitals of the $2\text{p}$ subshell, but the task says there are $3$ of them. So there are $1$ ($1\text{s}$), $1$ ($2\text{s}$) and $3$ ($2\text{p}$) orbitals.
+
 **Formula:** $N_\text{max} = 2 N_\text{orb}$, where $N_\text{orb}$ is the number of orbitals, for the subshells $1\text{s}$, $2\text{s}$ and $2\text{p}$ together
+
 **Conversions:** None are needed, because a count is asked.
+
 **Substitution:** The orbitals total $1 + 1 + 3 = 5$.
+
 At most $N_\text{max} = 2 \cdot 5 = 10$ electrons fit.
+
 **Answer:** $10$ electrons; the result is an exact integer.
 
 a) The orbital $1\text{s}$ has no node, the orbital $2\text{s}$ has a nodal sphere and the orbital $2\text{p}$ has a nodal plane.
 
-b) At a node the wave is zero, so the probability of finding the electron there is zero. On both sides of the node the wave is not zero, so the electron can be on either side without ever being found at the node. This does not mean that the electron travels through the node along a path: the wave is a state that has no path.
+b) At a node the wave is zero, so the probability of finding the electron there is zero. On both sides of the node the wave is not zero, so the electron can be on either side without ever being found at the node.
+
+This does not mean that the electron travels through the node along a path: the wave is a state that has no path.
+
 **Reasonableness:** The result $10$ equals the greatest number of the shell $n = 2$, $2 \cdot 2^2 = 8$, plus that of the shell $n = 1$, $2 \cdot 1^2 = 2$, so $8 + 2 = 10$. The $10$ electrons of neon fill exactly these subshells, $1\text{s}^2\,2\text{s}^2\,2\text{p}^6$.
 
 ## fy8-5-L2-09
 **Given:** energies from the figure $E_4 = -0.850\,\text{eV}$ ($4\text{s}$) and $E_2 = -3.40\,\text{eV}$ ($2\text{p}$); $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** a) the energy of the photon $E_\text{f}$ in eV, b) the wavelength $\lambda$, c) the number of orbitals in the shell $n = 4$ and a justification that the wavelength is the same
 **Principle:** Energy is conserved: the energy of the atom decreases by the difference between the energies of the states, and the same energy leaves as a photon, whose energy is $E_\text{f} = \tfrac{hc}{\lambda}$. In the hydrogen atom the energy of a state depends only on the principal quantum number.
-**Reading the graph:** In the figure the box of the $4\text{s}$ orbital is at $-0.850\,\text{eV}$ on the energy axis and the boxes of the $2\text{p}$ orbitals at $-3.40\,\text{eV}$. The arrow starts from the upper level and ends at the lower one, so the photon is born in the transition $E_4 \to E_2$. On the shell $n = 4$ the figure shows the subshells $4\text{s}$, $4\text{p}$, $4\text{d}$ and $4\text{f}$ with $1$, $3$, $5$ and $7$ boxes.
+**Reading the graph:** In the figure the box of the $4\text{s}$ orbital is at $-0.850\,\text{eV}$ on the energy axis and the boxes of the $2\text{p}$ orbitals at $-3.40\,\text{eV}$. The arrow starts from the upper level and ends at the lower one, so the photon is born in the transition $E_4 \to E_2$.
+
+On the shell $n = 4$ the figure shows the subshells $4\text{s}$, $4\text{p}$, $4\text{d}$ and $4\text{f}$ with $1$, $3$, $5$ and $7$ boxes.
+
 **Formula:** $E_\text{f} = E_4 - E_2$ and $E_\text{f} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_4 - E_2}$
+
 **Conversions:** The energy is converted to joules: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
+
 **Substitution:** Part a): $$
 \begin{aligned}
 E_\text{f} &= E_4 - E_2 \\
@@ -311,11 +405,15 @@ and $$
 &= 486\,\text{nm}
 \end{aligned}
 $$
+
 **Answer:** $486\,\text{nm}$, three significant figures like the energies $-0.850\,\text{eV}$ and $-3.40\,\text{eV}$.
 
 a) The energy of the photon is $E_\text{f} = 2.55\,\text{eV}$.
 
 b) The wavelength is $\lambda = 486\,\text{nm}$.
 
-c) The number of orbitals in the shell $n = 4$ is $1 + 3 + 5 + 7 = 16 = 4^2$. In the hydrogen atom the energy of a state depends only on the principal quantum number, so all $16$ orbitals have the same energy $-0.850\,\text{eV}$. The transition $4\text{d} \to 2\text{p}$ starts at the same energy and ends at the same energy as $4\text{s} \to 2\text{p}$, so the energy difference $2.55\,\text{eV}$ and the wavelength $486\,\text{nm}$ are the same.
+c) The number of orbitals in the shell $n = 4$ is $1 + 3 + 5 + 7 = 16 = 4^2$. In the hydrogen atom the energy of a state depends only on the principal quantum number, so all $16$ orbitals have the same energy $-0.850\,\text{eV}$.
+
+The transition $4\text{d} \to 2\text{p}$ starts at the same energy and ends at the same energy as $4\text{s} \to 2\text{p}$, so the energy difference $2.55\,\text{eV}$ and the wavelength $486\,\text{nm}$ are the same.
+
 **Reasonableness:** The wavelength $486\,\text{nm}$ is in the visible range, blue-green light, and it is the second line of hydrogen's Balmer series. It is shorter than the $656\,\text{nm}$ of the transition $3 \to 2$, because the energy difference $2.55\,\text{eV}$ is greater than $1.89\,\text{eV}$.

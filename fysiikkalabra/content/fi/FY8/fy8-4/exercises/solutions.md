@@ -163,7 +163,9 @@ $$. Aallonpituus kasvaa, kuten Comptonin ilmiössä pitää.
 ## fy8-4-L1-06
 **Kysytty:** mikä selitys sopii siihen, että yksi kerrallaan saapuvista fotoneista kertyy raitakuvio.
 **Periaate:** Kaksoisrakokokeessa aalto kertoo havaitsemisen todennäköisyyden, ja havaittaessa fotoni rekisteröidään kokonaisena yhdessä kohdassa. Raitakuvio on siis osumien jakauma eikä yhden fotonin jälki.
-**Mallivastaus:** Yksittäisen fotonin osumakohta on satunnainen, mutta aalto määrää todennäköisyyden, jolla se rekisteröidään kussakin kohdassa. Kirkkaisiin raitoihin kertyy eniten osumia ja tummiin vähiten, joten tuhansista osumista syntyy raitakuvio. Fotonien törmäily ei kelpaa selitykseksi, koska fotonit saapuvat yksi kerrallaan ja kuvio syntyy silti. Fotoni ei myöskään jakaudu osiin eikä kulje kuulan tavoin vain toisen raon kautta, sillä kuulamalli ei tuottaisi tummia raitoja.
+**Mallivastaus:** Yksittäisen fotonin osumakohta on satunnainen, mutta aalto määrää todennäköisyyden, jolla se rekisteröidään kussakin kohdassa. Kirkkaisiin raitoihin kertyy eniten osumia ja tummiin vähiten, joten tuhansista osumista syntyy raitakuvio. Fotonien törmäily ei kelpaa selitykseksi, koska fotonit saapuvat yksi kerrallaan ja kuvio syntyy silti.
+
+Fotoni ei myöskään jakaudu osiin eikä kulje kuulan tavoin vain toisen raon kautta, sillä kuulamalli ei tuottaisi tummia raitoja.
 
 ## fy8-4-L1-07
 **Annettu:** aallonpituus $\lambda = 405\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -193,7 +195,11 @@ $$ ja elektronivoltteina $E = \dfrac{4{,}905 \cdot 10^{-19}\,\text{J}}{1{,}602 \
 **Kaava:** Osuus $= \dfrac{n_4}{N} \cdot 100\,\%$ ja suhde $= \dfrac{n_4}{n_3}$, missä $n_4$ ja $n_3$ ovat kaistojen 4 ja 3 osumamäärät.
 **Muunnokset:** Ei tarvita: osumamäärät ovat lukumääriä, ja osuus ilmoitetaan prosentteina kertomalla sadalla.
 **Sijoitus:** a) $\dfrac{22}{50} \cdot 100\,\% = 44\,\%$, $\dfrac{248}{500} \cdot 100\,\% = 49{,}6\,\%$ ja $\dfrac{2377}{5000} \cdot 100\,\% = 47{,}5\,\%$. b) $\dfrac{n_4}{n_3} = \dfrac{2377}{208} = 11{,}43$. c) Kun $N = 500$, kirkkailla kaistoilla on $88$, $248$ ja $87$ osumaa ja tummilla $22$, $18$, $23$ ja $14$. Kun $N = 50$, kirkkailla sivukaistoilla on $6$ ja $7$ osumaa ja tummilla $3$, $3$, $5$ ja $4$.
-**Vastaus:** b) noin $11$ kertaa (laskettu $11{,}43$). Osumamäärä on satunnainen: $n$ osumalla vaihtelu on suuruusluokkaa $\sqrt{n}$, joten $208 \pm 14$ on noin $\pm 7\,\%$ ja suhde tunnetaan vain kahden merkitsevän numeron tarkkuudella. c) Raidat erottuvat selvästi, kun $N = 500$: kirkkaiden kaistojen osumamäärät ($88$, $248$, $87$; vaihtelu noin $\pm 9$ ja $\pm 16$) ovat monikertaisia tummiin ($14$–$23$; vaihtelu noin $\pm 4$) verrattuna. Kun $N = 50$, sivukaistojen $6$ ja $7$ ($\pm 2{,}5$) ero tummiin ($3$–$5$; $\pm 2$) on pienempi kuin vaihtelu, joten raidat eivät erotu.
+**Vastaus:** b) noin $11$ kertaa (laskettu $11{,}43$). Osumamäärä on satunnainen: $n$ osumalla vaihtelu on suuruusluokkaa $\sqrt{n}$, joten $208 \pm 14$ on noin $\pm 7\,\%$ ja suhde tunnetaan vain kahden merkitsevän numeron tarkkuudella.
+
+c) Raidat erottuvat selvästi, kun $N = 500$: kirkkaiden kaistojen osumamäärät ($88$, $248$, $87$; vaihtelu noin $\pm 9$ ja $\pm 16$) ovat monikertaisia tummiin ($14$–$23$; vaihtelu noin $\pm 4$) verrattuna.
+
+Kun $N = 50$, sivukaistojen $6$ ja $7$ ($\pm 2{,}5$) ero tummiin ($3$–$5$; $\pm 2$) on pienempi kuin vaihtelu, joten raidat eivät erotu.
 **Järkevyys:** Jokaisen sarakkeen osumamäärien summa on $N$, esimerkiksi $$
 \begin{aligned}
 3 + 6 + 3 + 22 + 5 + 7 + 4 &= 50
@@ -204,7 +210,9 @@ $$. Keskikaistan osuus pysyy noin puolessa kaikista osumista ($44\,\%$, $49{,}6\
 **Annettu:** tulevan säteilyn aallonpituus $\lambda = 71{,}10\,\text{pm}$ ja sironneen säteilyn aallonpituudet $\lambda'$ kulmilla $\theta = 30\,{}^\circ$, $60\,{}^\circ$, $90\,{}^\circ$, $120\,{}^\circ$ ja $150\,{}^\circ$ (taulukko)
 **Kysytty:** aallonpituuden muutos $\Delta\lambda$ kulmalla $\theta = 180\,{}^\circ$ pikometreinä
 **Periaate:** Comptonin ilmiössä sironneen fotonin aallonpituus on pidempi kuin tulevan ja muutos kasvaa sirontakulman mukana. Kun muutosta verrataan lukuun $1 - \cos\theta$, pisteet asettuvat suoralle. Suora kulkee origon kautta, koska kulmalla $\theta = 0\,{}^\circ$ fotoni ei siroa eikä sen aallonpituus muutu.
-**Kuvaajan lukeminen:** Taulukko: $1 - \cos\theta$ on $0{,}134$, $0{,}500$, $1{,}000$, $1{,}500$ ja $1{,}866$ ja $\Delta\lambda$ on $0{,}32\,\text{pm}$, $1{,}20\,\text{pm}$, $2{,}45\,\text{pm}$, $3{,}60\,\text{pm}$ ja $4{,}55\,\text{pm}$. Kuvaajassa pisteet asettuvat suoralle pientä vaihtelua lukuun ottamatta, ja suora kulkee origon kautta. Pisteiden suhde $\tfrac{\Delta\lambda}{1 - \cos\theta}$ on $2{,}39\,\text{pm}$, $2{,}40\,\text{pm}$, $2{,}45\,\text{pm}$, $2{,}40\,\text{pm}$ ja $2{,}44\,\text{pm}$, joten suoran kulmakerroin on $k \approx 2{,}43\,\text{pm}$ (sovituksesta tarkemmin $2{,}426\,\text{pm}$). Kulmakerroin kertoo aallonpituuden muutoksen, kun $1 - \cos\theta = 1$, eli kulmalla $\theta = 90\,{}^\circ$. Se on sama vakio kaikilla kulmilla.
+**Kuvaajan lukeminen:** Taulukko: $1 - \cos\theta$ on $0{,}134$, $0{,}500$, $1{,}000$, $1{,}500$ ja $1{,}866$ ja $\Delta\lambda$ on $0{,}32\,\text{pm}$, $1{,}20\,\text{pm}$, $2{,}45\,\text{pm}$, $3{,}60\,\text{pm}$ ja $4{,}55\,\text{pm}$. Kuvaajassa pisteet asettuvat suoralle pientä vaihtelua lukuun ottamatta, ja suora kulkee origon kautta.
+
+Pisteiden suhde $\tfrac{\Delta\lambda}{1 - \cos\theta}$ on $2{,}39\,\text{pm}$, $2{,}40\,\text{pm}$, $2{,}45\,\text{pm}$, $2{,}40\,\text{pm}$ ja $2{,}44\,\text{pm}$, joten suoran kulmakerroin on $k \approx 2{,}43\,\text{pm}$ (sovituksesta tarkemmin $2{,}426\,\text{pm}$). Kulmakerroin kertoo aallonpituuden muutoksen, kun $1 - \cos\theta = 1$, eli kulmalla $\theta = 90\,{}^\circ$. Se on sama vakio kaikilla kulmilla.
 **Kaava:** $\Delta\lambda = k \cdot (1 - \cos\theta)$, missä $k$ on suoran kulmakerroin
 **Muunnokset:** Ei tarvita: kaikki aallonpituudet ovat pikometreinä. Luku $1 - \cos\theta$ on yksikötön.
 **Sijoitus:** Kulmalla $\theta = 180\,{}^\circ$ on $\cos 180\,{}^\circ = -1$, joten $1 - \cos\theta = 2$ ja $\Delta\lambda = 2{,}426\,\text{pm} \cdot 2 = 4{,}852\,\text{pm}$. Kulmakerroin $2{,}426\,\text{pm}$ on origon kautta kulkevan suoran sovitus kaikkiin viiteen pisteeseen. Arvo $2$ on hieman suurimman mitatun pisteen ($1{,}866$) ulkopuolella, joten tulos on suoran jatke. Jatke on perusteltu, koska pisteet asettuvat suoralle ja suora kulkee fysikaalisesti perustellusti origon kautta.
@@ -261,7 +269,13 @@ Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energ
 &= 3{,}734 \cdot 10^{-19}\,\text{J}
 \end{aligned}
 $$ ja $\dfrac{N}{t} = \dfrac{1{,}5 \cdot 10^{-15}\,\text{J/s}}{3{,}734 \cdot 10^{-19}\,\text{J}} = 4017\,\tfrac{1}{\text{s}}$. b) $r = 0{,}20 \cdot 0{,}40 \cdot 4017\,\tfrac{1}{\text{s}} = 321{,}4\,\tfrac{1}{\text{s}}$. c) $t = \dfrac{5000}{321{,}4\,\tfrac{1}{\text{s}}} = 15{,}56\,\text{s}$. d) $d = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{4017\,\tfrac{1}{\text{s}}} = 7{,}46 \cdot 10^{4}\,\text{m}$, joten $1{,}5\,\text{m}$:n laitteessa on keskimäärin $\dfrac{1{,}5\,\text{m}}{7{,}46 \cdot 10^{4}\,\text{m}} = 2{,}0 \cdot 10^{-5}$ fotonia.
-**Vastaus:** c) $15{,}6\,\text{s} \approx 16\,\text{s}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5 \cdot 10^{-15}\,\text{W}$. d) peräkkäisten fotonien väli on noin $75\,\text{km}$, mikä on noin $50\,000$-kertainen laitteen pituuteen verrattuna. Laitteessa on lähes aina korkeintaan yksi fotoni kerrallaan, joten fotonit eivät voi törmäillä toisiinsa. Raitakuvio syntyy silti, joten se ei johdu fotonien keskinäisestä vuorovaikutuksesta vaan siitä, että aalto määrää yksittäisen fotonin osumatodennäköisyyden. e) Raitakuvio syntyy, kun aalto kulkee molempien rakojen kautta ja aaltojen yhteisvaikutus määrää osumatodennäköisyyden. Jos mittari paljastaa reitin, fotoni on kulkenut vain toisen raon kautta, aaltojen yhteisvaikutusta ei ole, ja osumat jakautuvat kahden yhden raon kuvion summaksi ilman tummia raitoja. Kuvio edellyttää siis sitä, ettei reittiä tiedetä, eikä se voi syntyä siitä, että fotoni kulkee tunnetusti vain toisen raon kautta.
+**Vastaus:** c) $15{,}6\,\text{s} \approx 16\,\text{s}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5 \cdot 10^{-15}\,\text{W}$.
+
+d) peräkkäisten fotonien väli on noin $75\,\text{km}$, mikä on noin $50\,000$-kertainen laitteen pituuteen verrattuna. Laitteessa on lähes aina korkeintaan yksi fotoni kerrallaan, joten fotonit eivät voi törmäillä toisiinsa. Raitakuvio syntyy silti, joten se ei johdu fotonien keskinäisestä vuorovaikutuksesta vaan siitä, että aalto määrää yksittäisen fotonin osumatodennäköisyyden.
+
+e) Raitakuvio syntyy, kun aalto kulkee molempien rakojen kautta ja aaltojen yhteisvaikutus määrää osumatodennäköisyyden. Jos mittari paljastaa reitin, fotoni on kulkenut vain toisen raon kautta, aaltojen yhteisvaikutusta ei ole, ja osumat jakautuvat kahden yhden raon kuvion summaksi ilman tummia raitoja.
+
+Kuvio edellyttää siis sitä, ettei reittiä tiedetä, eikä se voi syntyä siitä, että fotoni kulkee tunnetusti vain toisen raon kautta.
 **Järkevyys:** Tarkistus toisin päin: $321{,}4\,\tfrac{1}{\text{s}} \cdot 15{,}56\,\text{s} = 5000$. Rekisteröidyt osumat ovat $0{,}080 \cdot 4017 \approx 321$, noin $8\,\%$ rakoihin tulleista fotoneista. Kun fotoneja tulee noin $4000$ sekunnissa, ne tulevat keskimäärin $0{,}25\,\text{ms}$:n välein, ja valon kulku $1{,}5\,\text{m}$:n laitteen läpi kestää vain $5\,\text{ns}$, joten laite on lähes aina tyhjä.
 
 ## fy8-4-L3-05

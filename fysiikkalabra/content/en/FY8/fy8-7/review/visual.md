@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 66c250ebde3dc328
+CONTENT-HASH: 2c79b025b43f5d01
+
+NOTE: the packet was mode full, not delta; reviewed in full from the captures.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] inquiry.json, Example 3 (stage-sovella-390-2) — for science: the situation now ends "stays in the fibre as internal energy", and the next sentence asks "how much heat is produced in the fibre per second"; the solution keeps "heating power $P_\text{heat}$" and "The least heat is produced". Decide whether the question and solution should follow the new wording.
+- [Minor] example stage 7 — the sentence "The energy difference corresponds to the wavelength [display] the familiar red light of ..." is split by a display equation and continues in lower case; unit check and wavelength check are mixed — end the sentence before the equation, start a new one after it.
+- [Minor] fig-20 graph — illustrative data not marked as calculated; points are on the line by construction — add "calculated from $P=1.0\,\text{mW}$" to the caption.
+- [Minor] fig-16 — the 570 nm label is black, the others coloured (yellow lacks contrast) — fine, but say in the caption that the colours are approximate.
+- [Minor] sim 1280 — the "Assumptions of the model and explanation" box and the "Assumptions of the model" box look duplicated — for pedagogy: check.
 
 ## Checked
-- Round 1, delta: "as heat" → "as internal energy" in Example 3's prompt, and "divides into the beam and the internal energy of the fibre" in its solution. Hash the same at start and end.
-- Opened stage-sovella-390-2 at full size: the prompt reads fluently, the situation and the question are separate paragraphs, quantities ($1.0\,\text{kW}$, $1070\,\text{nm}$, $976\,\text{nm}$) are set as maths, the card, input and Check button are in place, and the worked example above it kept its layout.
-- The changed Principle sentence of the solution sits behind Show solution and has no capture of its own; judged from the diff text (plain wording, no formula touched). English is natural in both sentences.
+contact-1..3; intro-1280 (opening, learning goals); fig-row-1280 (three events figure); lab-1280 (sim, experiments); example-390-1/2; fig-3, fig-12 (levels, ruby), fig-14 (laser cavity), fig-16 (quantum dots), fig-20 (N/t graph); fig-1, 2, 5 were icon-sized only. Not opened one by one: the other fig-N, theory-1280, exercises, open-* states.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish n/a (en reviewed) 4 · accessibility 4

@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: alfasäteilyn läpäisykyky",
-      "prompt": "Monet luonnon radioaktiiviset aineet, kuten uraanin hajoamissarjan aineet, lähettävät alfasäteilyä. Miksi alfasäteilyn lähde on vaarallinen lähinnä silloin, kun se on päässyt elimistön sisään?",
+      "prompt": "Ydinvoimalan huoltotyöntekijän työvaatteiden pinnalla on alfasäteilyä lähettävää radioaktiivista pölyä. Miksi pöly on vaarallista lähinnä silloin, kun se on päässyt hengityksen mukana elimistön sisään?",
       "choices": [
         {
           "text": "Iho pysäyttää alfahiukkaset, mutta elimistön sisällä ne luovuttavat energiansa suoraan eläviin soluihin.",

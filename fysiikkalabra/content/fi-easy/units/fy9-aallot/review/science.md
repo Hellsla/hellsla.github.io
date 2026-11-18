@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6e26a08a08a64312
-SCOPE: delta (round 2): new tasks fy9-aallot-s7 and s8 (figures fy5-12/ruudukko-tehtava, fy5-13/kuvio-tehtava) and the changed intro; s1-s6 not re-judged. Language: fi-easy; fidelity to fi checked for en and fi-easy.
+CONTENT-HASH: 705a4aa32fbad8ff
+SCOPE: delta: fi-easy diff since 49ba8f9 (new tasks fy9-aallot-s7 two-speaker interference and s8 standing wave on a string in sovella/tasks.json and solutions.md, intro "kahdeksan"); fidelity of s7/s8 to fi; s1-s6 not re-judged.
 
 ## Blocking
 (none)
 
 ## Polish
-- s7: the task text says the loudness difference from the unequal distances is ignored, yet the c model answer adds "not completely silent because the farther loudspeaker is heard more weakly". Physically right, but mildly at odds with the stated simplification; one clause could say "in practice".
-- s8 d: the model answer could add that off resonance the string settles to a small-amplitude forced vibration at 20 Hz (it says "small amplitude", which is correct).
+- s7 c model answer: "Täysin hiljainen se ei ole, koska kauempana oleva kaiutin kuuluu hieman heikommin". The task tells the student to ignore this intensity difference. The criterion's "lähes hiljainen" is fine; the sentence could say "in reality". The same text is in fi.
 
 ## Checked
-- Round-1 blocking items verified fixed in tasks.json and solutions.md: s7 a (two sf from the 0,50 m square side; counts exact), s7 b (three sf from f = 343 Hz; 343,4 has four), s8 a (0,600 m three sf from L = 1,20 m; loop count exact). s8 c now says tension and mass per unit length. en decimal points are periods throughout.
-- Recomputed: s1 = 12*0,50 = 6,0 m; d = 2,5 m; s2 = sqrt(42,25) = 6,5 m; Δs = 0,50 m (12:5:13 triangle). λ = 343,4/343 = 1,0012 m; Δs/λ = 0,499 (destructive for in-phase sources); next maximum Δs = λ gives f = 343,4/0,50 = 686,8 Hz ≈ 690 Hz (answer 687 Hz, 2 % tolerance), consistent with 2*343 Hz.
-- s8: λ = 2*1,20/4 = 0,600 m; v = 50*0,600 = 30 m/s; f3 = 3*30/(2*1,20) = 37,5 Hz ≈ 38 Hz (2 sf limited by 30 m/s); f1 = 12,5 Hz, f2 = 25 Hz; 20/12,5 = 1,6 loops; λ(20 Hz) = 1,5 m. Speed fixed by tension and linear density, unchanged.
-- MAFY constant: 343,4 m/s at 20 °C stated in the task text; speed of sound 343 m/s at nominal. Standing-wave conditions (nodes at both ends, L = nλ/2, f_n = nv/(2L)) correct. Scope is FY5 interference and standing waves; no content beyond.
-- FY9 wording: command words and "Perustele" used correctly; rubric points s7 4+2+3+3 = 12, s8 3+3+4+3 = 13; criteria sum to part points; practice.py check OK for all three languages (8 tasks, 120 points). Intro says eight tasks, matching.
-- Fidelity: en and fi-easy tasks and solutions carry the same numbers, reasons and conclusions as fi.
-- Content hash 6e26a08a08a64312 at start and end, unchanged.
+- Recomputed in one script from the task text and the figure data (fy5-12 speaker_grid: 12 and 5 squares of 0,50 m; fy5-13 task_string: 1,20 m, four loops): s7 a s1 = 6,0 m, s2 = sqrt(6,0² + 2,5²) = 6,5 m, Δs = 0,50 m; b λ = 343,4/343 = 1,001 m; c Δs/λ = 0,50, so destructive interference; d f = 343,4/0,50 = 686,8 Hz (690 Hz is within 2 %). s8 a λ = 2·1,20/4 = 0,600 m; b v = 30 m/s; c f3 = 3·30/2,40 = 37,5 Hz (38 is within 2 %); d f1 = 12,5 Hz and f2 = 25 Hz, so 20 Hz is not an eigenfrequency. All keys are within tolerance.
+- Physics: the sources are in phase and the conditions Δs = nλ and (n + 1/2)λ are correct. Δs does not depend on f. Both string ends are nodes, L = nλ/2 and fn = nv/(2L). The wave speed depends on the tension and the mass per length, so it stays constant at a new frequency. All of this is in FY5 scope.
+- Significant figures follow the data. The square counts are exact, and 1,00 m is given with three figures as the frequency has.
+- Rubrics: s7 4+2+3+3 and s8 3+3+4+3. The criteria match the parts and solutions. "Hyväksytään myös" covers the phase-difference wording, the frequency ratio and the λ = v/f route in s8 d.
+- Fidelity to fi: ids, figures, points, criteria, answers, tolerances and every number in tasks and solutions are identical (compared with a script).
+- Intro: eight tasks, matching the set.
+- The hash was the same at start and end.

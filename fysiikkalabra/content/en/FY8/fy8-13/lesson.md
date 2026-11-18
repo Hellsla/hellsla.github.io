@@ -619,7 +619,11 @@ H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}
 
 <!-- vaihe -->
 
-**Reasonableness.** The absorbed dose is only about $1.7\,\text{mGy}$, but the factor $20$ of alpha radiation raises the equivalent dose of the lungs to about $33\,\text{mSv}$, and the factor $0.12$ reduces it to the effective dose, which describes the radiation detriment to the whole body. The even distribution is a rough model assumption: in reality the alpha particles are absorbed in a thin cell layer on the surface of the airways. The result is of the same order of magnitude as the average radon dose of a Finn, about $4\,\text{mSv}$ per year. The example dealt with the weighting of the dose; in the next task the dose is reduced with time, distance and shielding.
+**Reasonableness.** The absorbed dose is only about $1.7\,\text{mGy}$, but the factor $20$ of alpha radiation raises the equivalent dose of the lungs to about $33\,\text{mSv}$, and the factor $0.12$ reduces it to the effective dose, which describes the radiation detriment to the whole body.
+
+The even distribution is a rough model assumption: in reality the alpha particles are absorbed in a thin cell layer on the surface of the airways. The result is of the same order of magnitude as the average radon dose of a Finn, about $4\,\text{mSv}$ per year.
+
+The example dealt with the weighting of the dose; in the next task the dose is reduced with time, distance and shielding.
 
 ## Common misconception
 Many people think that natural radiation is harmless and only radiation produced by humans is dangerous. The body, however, does not distinguish whether an alpha particle comes from the radon in a cellar or from a laboratory source: the origin of the radiation does not in itself decide how dangerous it is. The effective dose is used to compare exposures and to estimate radiation detriment, but the same effective dose does not guarantee exactly the same individual risk. The largest dose of a Finn comes from natural radon, and therefore measuring and fixing radon is the most effective way to reduce one's own radiation dose.
@@ -628,7 +632,12 @@ Another common mistake is to think that doubling the distance halves the dose ra
 
 ## Summary
 - The absorbed dose is the absorbed energy per unit mass, $D = \tfrac{E}{m}$, in the unit gray, $1\,\text{Gy} = 1\,\tfrac{\text{J}}{\text{kg}}$.
-- The equivalent dose $H_\text{T} = w_\text{R} D_\text{T}$ takes the type of radiation into account (alpha $20$, gamma and beta $1$), and the effective dose $H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$ the sensitivity of the tissues. Both are in the unit sievert, $\text{Sv}$.
+- The equivalent dose $H_\text{T} = w_\text{R} D_\text{T}$ takes the type of radiation into account (alpha $20$, gamma and beta $1$), and the effective dose
+
+    $$H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$$
+
+    the sensitivity of the tissues. Both are in the unit sievert, $\text{Sv}$.
+
 - The average effective dose of a Finn is about $5.9\,\text{mSv}$ per year (STUK-A263, 2020), of which indoor radon is about $4\,\text{mSv}$, or about two thirds.
 - The decay products of radon emit alpha radiation into the lungs; the reference level for dwellings is $300\,\tfrac{\text{Bq}}{\text{m}^3}$.
 - Protection from external radiation is by time ($H = \dot{H} t$), distance ($\dot{H} \propto \tfrac{1}{r^2}$) and shielding: every half-value thickness halves the dose rate of gamma radiation.

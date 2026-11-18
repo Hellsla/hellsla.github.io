@@ -518,7 +518,9 @@ Galaksin spektrissä vedyn punainen $\text{H}\alpha$-viiva, jonka aallonpituus l
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Laboratorion aallonpituus $\lambda_0 = 656{,}3\,\text{nm}$, galaksin valosta mitattu aallonpituus $\lambda = 679{,}3\,\text{nm}$, etäisyys $d = 150\,\text{Mpc}$ ja valon nopeus $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$. Kysytään etääntymisnopeutta $v$ ja Hubblen vakiota $H_0$.
+**Tunnetut ja kysytty.** Laboratorion aallonpituus $\lambda_0 = 656{,}3\,\text{nm}$, galaksin valosta mitattu aallonpituus $\lambda = 679{,}3\,\text{nm}$, etäisyys $d = 150\,\text{Mpc}$ ja valon nopeus $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$.
+
+Kysytään etääntymisnopeutta $v$ ja Hubblen vakiota $H_0$.
 
 <!-- vaihe -->
 

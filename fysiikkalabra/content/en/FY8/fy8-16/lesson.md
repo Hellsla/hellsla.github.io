@@ -518,7 +518,9 @@ In the spectrum of a galaxy, the red $\text{H}\alpha$ line of hydrogen, whose wa
 
 <!-- vaihe -->
 
-**Given and asked.** The laboratory wavelength is $\lambda_0 = 656.3\,\text{nm}$, the wavelength measured from the light of the galaxy is $\lambda = 679.3\,\text{nm}$, the distance is $d = 150\,\text{Mpc}$ and the speed of light is $c = 2.998 \cdot 10^{5}\,\text{km/s}$. We are asked for the recession speed $v$ and the Hubble constant $H_0$.
+**Given and asked.** The laboratory wavelength is $\lambda_0 = 656.3\,\text{nm}$, the wavelength measured from the light of the galaxy is $\lambda = 679.3\,\text{nm}$, the distance is $d = 150\,\text{Mpc}$ and the speed of light is $c = 2.998 \cdot 10^{5}\,\text{km/s}$.
+
+We are asked for the recession speed $v$ and the Hubble constant $H_0$.
 
 <!-- vaihe -->
 

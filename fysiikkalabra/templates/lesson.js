@@ -900,7 +900,7 @@
   const status = document.createElement('p'); status.className = 'visually-hidden'; status.setAttribute('aria-live', 'polite');
   head.append(btn, status);
   const label = () => { const o = isOpen(); btn.textContent = say(o ? 'split_close' : 'split_open', o ? 'Sulje sivunäkymä' : 'Avaa tehtävät teorian viereen'); btn.setAttribute('aria-expanded', String(o)); };
-  const items = () => [...ex.querySelectorAll('li[id], details.level')];
+  const items = () => [...ex.querySelectorAll('li[id], details.level, .core-card')];
   const firstVisible = (top) => items().find((el) => el.offsetParent && el.getBoundingClientRect().bottom > top + 8);
   // The lesson on the left does not move when the panel opens or closes (teacher 2026-11-05, "en halua että
   // vasemmanpuoleinen näkymä liikkuu"): the reading column keeps its left edge (--split-l, the panel takes the room to

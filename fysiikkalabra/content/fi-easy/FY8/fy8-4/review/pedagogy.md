@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 39dba481e40ed11d
+CONTENT-HASH: 6d4f215f45ab5440
+
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: added meta.json key_concepts ("Luvun tärkeät käsitteet") read against lesson.md: each term is one the lesson bolds and uses, each explanation matches the lesson's own definition (often word for word), is physically correct and short S2 Finnish; nothing disclosed beyond the lesson.
+batch delta review: retrieval moved to the double slit with consistent distractor feedback, chapter name, photo with alt text and caption, split paragraph all clear.
