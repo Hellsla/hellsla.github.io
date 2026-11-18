@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: fotonin energia",
-      "prompt": "Punaisen valon aallonpituus on $650\\,\\text{nm}$ ja violetin $410\\,\\text{nm}$. Mikä väite niiden fotoneista on oikein?",
+      "prompt": "Auringon valon spektrin punaisessa päässä aallonpituus on $650\\,\\text{nm}$ ja violetissa päässä $410\\,\\text{nm}$. Mikä väite niiden fotoneista on oikein?",
       "choices": [
         {
           "text": "Violetin valon fotonilla on suurempi energia, koska lyhyempi aallonpituus tarkoittaa suurempaa taajuutta.",

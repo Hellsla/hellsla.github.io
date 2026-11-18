@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 84afeb7f6f9f53bb
+CONTENT-HASH: 41518cbd864a571b
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: 84afeb7f6f9f53bb
 - none
 
 ## Checked
-- Delta round 4, long formulas re-set as aligned blocks. Judged from source: the diff only re-sets one display block (first row the left-hand side alone, each + or - term whole); the same shared aligned renderer was seen in fy8-1 captures, so the layout is as there; not opened separately.
-- Words, numbers and units unchanged by the diff.
+- Delta round 1 (md-paragraphs, teacher-figure). Opened contact-1, top-390, fig-10-390, example-390-1, theory-1280-1, stage-selita-390-2. Paragraph cuts read well, figures stay beside their paragraphs, formulas and units render, no clipping.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -25,16 +25,16 @@
       "type": "choice",
       "title": "Review: frequency and wavelength",
       "optional": true,
-      "prompt": "Light always travels in a vacuum at the same speed $c$. The wavelength of violet light is about $400\\,\\text{nm}$ and that of red light about $650\\,\\text{nm}$. Which light has the greater frequency?",
+      "prompt": "Light always travels in a vacuum at the same speed $c$. The wavelength of the UV-C lamp that illuminates the zinc plate is about $254\\,\\text{nm}$ and that of the red lamp about $650\\,\\text{nm}$. Which lamp's light has the greater frequency?",
       "choices": [
         {
-          "text": "Violet, because a shorter wavelength means a greater frequency.",
+          "text": "UV-C, because a shorter wavelength means a greater frequency.",
           "correct": true,
-          "feedback": "Correct. The basic equation of wave motion $c = f\\lambda$ gives $f = \\tfrac{c}{\\lambda}$ (chapter *How waves form and travel*), so a shorter wavelength gives a greater frequency. The frequency of violet light is about $7.5 \\cdot 10^{14}\\,\\text{Hz}$ and that of red light about $4.6 \\cdot 10^{14}\\,\\text{Hz}$."
+          "feedback": "Correct. The basic equation of wave motion $c = f\\lambda$ gives $f = \\tfrac{c}{\\lambda}$ (chapter *How waves form and travel*), so a shorter wavelength gives a greater frequency. The frequency of UV-C light is about $1.2 \\cdot 10^{15}\\,\\text{Hz}$ and that of red light about $4.6 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
           "text": "Red, because a longer wave oscillates more often.",
-          "feedback": "When the speed of the wave is the same, a longer wave has time to oscillate *less often* per second: $f = \\tfrac{c}{\\lambda}$. The frequency of red light is therefore smaller than that of violet light."
+          "feedback": "When the speed of the wave is the same, a longer wave has time to oscillate *less often* per second: $f = \\tfrac{c}{\\lambda}$. The frequency of red light is therefore smaller than that of UV-C light."
         },
         {
           "text": "The frequencies are equal, because both travel at the speed of light.",

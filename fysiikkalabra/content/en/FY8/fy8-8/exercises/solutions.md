@@ -56,8 +56,13 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9.5383 \cdot 10
 
 ## fy8-8-L1-06
 **Find:** which decay increases the atomic number $Z$ by one and leaves the mass number $A$ unchanged
-**Principle:** In a decay equation the mass number and the charge number are conserved. The atomic number increases by one only when a neutron of the nucleus changes into a proton, and the number of nucleons stays the same. Let us go through the decay modes: alpha decay changes $Z$ and $A$ ($Z - 2$, $A - 4$), beta plus decay decreases $Z$, and gamma decay changes neither.
-**Model answer:** The correct option is beta minus decay, in which a neutron of the nucleus changes into a proton and an electron leaves. Then $Z' = Z + 1$ and $A' = A$, and the charge number is conserved when the charge number $-1$ of the electron is counted: for example ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^{0}_{-1}\text{e} + \bar{\nu}$ balances, because $14 = 14 + 0$ and $6 = 7 - 1$. In beta plus decay a proton changes into a neutron, so the atomic number decreases by one. Alpha decay decreases the atomic number by two and the mass number by four. In gamma decay only energy leaves the nucleus, so neither number changes.
+**Principle:** In a decay equation the mass number and the charge number are conserved. The atomic number increases by one only when a neutron of the nucleus changes into a proton, and the number of nucleons stays the same.
+
+Let us go through the decay modes: alpha decay changes $Z$ and $A$ ($Z - 2$, $A - 4$), beta plus decay decreases $Z$, and gamma decay changes neither.
+
+**Model answer:** The correct option is beta minus decay, in which a neutron of the nucleus changes into a proton and an electron leaves. Then $Z' = Z + 1$ and $A' = A$, and the charge number is conserved when the charge number $-1$ of the electron is counted: for example ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^{0}_{-1}\text{e} + \bar{\nu}$ balances, because $14 = 14 + 0$ and $6 = 7 - 1$.
+
+In beta plus decay a proton changes into a neutron, so the atomic number decreases by one. Alpha decay decreases the atomic number by two and the mass number by four. In gamma decay only energy leaves the nucleus, so neither number changes.
 
 ## fy8-8-L1-07
 **Given:** the parent nucleus ${}^{226}_{88}\text{Ra}$, alpha decay; the alpha particle is ${}^{4}_{2}\text{He}$
@@ -102,7 +107,9 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8796 \cdot 10^{-13}\,\text{J}} = 1.0568 \cdot 10^{-12}\,\text{m} = 1.0568\,\text{pm}$
 **Answer:** $1.06\,\text{pm}$, three significant figures; more precisely $1.057\,\text{pm}$, four figures like the energy difference $1173.3\,\text{keV}$.
-**Reasonableness:** The measured gamma photon is $1173.2\,\text{keV}$, one of the two peaks of the gamma spectrum of cobalt-60; the difference of $0.1\,\text{keV}$ from the level difference $1173.3\,\text{keV}$ comes almost entirely from rounding of the levels (the exact level difference is $1173.24\,\text{keV}$), and the recoil of the nucleus takes only about $0.01\,\text{keV}$. The difference does not change the wavelength at three-figure precision. Its energy is a little smaller than the $1332.5\,\text{keV}$ of the other photon, so the wavelength is a little longer than its $0.931\,\text{pm}$, as it should be.
+**Reasonableness:** The measured gamma photon is $1173.2\,\text{keV}$, one of the two peaks of the gamma spectrum of cobalt-60; the difference of $0.1\,\text{keV}$ from the level difference $1173.3\,\text{keV}$ comes almost entirely from rounding of the levels (the exact level difference is $1173.24\,\text{keV}$), and the recoil of the nucleus takes only about $0.01\,\text{keV}$.
+
+The difference does not change the wavelength at three-figure precision. Its energy is a little smaller than the $1332.5\,\text{keV}$ of the other photon, so the wavelength is a little longer than its $0.931\,\text{pm}$, as it should be.
 
 ## fy8-8-L2-02
 **Given:** the parent nucleus ${}^{214}_{83}\text{Bi}$; first beta minus decay, then alpha decay
@@ -183,16 +190,28 @@ $$). In beta decays the mass number is conserved, as it should be.
 **Given:** the calibration points (channel, energy): $(98;\ 59.54\,\text{keV})$, $(1104;\ 661.7\,\text{keV})$, $(1961;\ 1173.2\,\text{keV})$ and $(2227;\ 1332.5\,\text{keV})$; the channel of the unknown peak $1531$
 **Find:** the energy $E_\gamma$ of the unknown peak in kiloelectronvolts
 **Principle:** The channel number is proportional to the energy of the photon, so the points lie on a straight line $E_\gamma = k \cdot K + b$, where $K$ is the channel number. The measurements have small random variation, so the line is fitted to all the points instead of joining only two points.
-**Reading the graph:** Draw the channel number $K$ on the horizontal axis from $0 \dots 2500$ and the energy $E_\gamma$ on the vertical axis from $0 \dots 1500\,\text{keV}$. The four points lie almost on a straight line, and the line passes close to the origin: the points deviate from the line by less than $1\,\text{keV}$. The slope of the line is about $0.598\,\text{keV}$ per channel, and it crosses the vertical axis near $1.2\,\text{keV}$. From channel $1531$ a vertical line is raised to the straight line and the energy is read from the vertical axis.
+**Reading the graph:** Draw the channel number $K$ on the horizontal axis from $0 \dots 2500$ and the energy $E_\gamma$ on the vertical axis from $0 \dots 1500\,\text{keV}$. The four points lie almost on a straight line, and the line passes close to the origin: the points deviate from the line by less than $1\,\text{keV}$.
+
+The slope of the line is about $0.598\,\text{keV}$ per channel, and it crosses the vertical axis near $1.2\,\text{keV}$. From channel $1531$ a vertical line is raised to the straight line and the energy is read from the vertical axis.
+
 **Formula:** $E_\gamma = k \cdot K + b$, where $k \approx 0.598\,\text{keV}$ per channel and $b \approx 1.2\,\text{keV}$
+
 **Conversions:** None are needed, because the energy is read directly in kiloelectronvolts.
+
 **Substitution:** $E_\gamma = 0.598 \cdot 1531\,\text{keV} + 1.2\,\text{keV} = 915.5\,\text{keV} + 1.2\,\text{keV} = 916.7\,\text{keV}$; more precisely, the least-squares line of all four points gives $916.4\,\text{keV}$
-**Answer:** $916\,\text{keV}$, three significant figures, because the calibration and the reading of the line do not give more. The value read from the line is $915 \dots 920\,\text{keV}$ depending on the drawing accuracy. Justification: the fitted line uses all the measurements and evens out the random variation, whereas a line drawn through two points would shift if the measurement of either point were a little off.
+
+**Answer:** $916\,\text{keV}$, three significant figures, because the calibration and the reading of the line do not give more. The value read from the line is $915 \dots 920\,\text{keV}$ depending on the drawing accuracy.
+
+Justification: the fitted line uses all the measurements and evens out the random variation, whereas a line drawn through two points would shift if the measurement of either point were a little off.
+
 **Reasonableness:** The result $916\,\text{keV}$ is between the line $661.7\,\text{keV}$ of Cs-137 and the line $1173.2\,\text{keV}$ of Co-60, and the channel $1531$ is also between the channels $1104$ and $1961$. Interpolation is reliable, because the point is between the calibration points and not outside them.
 
 ## fy8-8-L2-08
 **Asked:** which of the student's four decay equations is wrong.
-**Principle:** In a decay equation the mass number, that is, the sum of the superscripts, and the atomic number, that is, the sum of the subscripts, are conserved. In alpha decay $A$ decreases by four and $Z$ by two, in beta minus decay a neutron turns into a proton and $Z$ increases by one, and in beta plus decay a proton turns into a neutron and $Z$ decreases by one. In gamma decay $A$ and $Z$ stay the same.
+**Principle:** In a decay equation the mass number, that is, the sum of the superscripts, and the atomic number, that is, the sum of the subscripts, are conserved.
+
+In alpha decay $A$ decreases by four and $Z$ by two, in beta minus decay a neutron turns into a proton and $Z$ increases by one, and in beta plus decay a proton turns into a neutron and $Z$ decreases by one. In gamma decay $A$ and $Z$ stay the same.
+
 **Model answer:** Let us check the mass numbers and the atomic numbers of each line.
 
 Line 1 is correct: $210 = 206 + 4$ and $84 = 82 + 2$.
@@ -248,14 +267,26 @@ $$. $\lambda_\text{min} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.60
 ## fy8-8-L3-04
 **Given:** the members of the series $(A;\ Z)$: Rn-222 $(222;\ 86)$, Po-218 $(218;\ 84)$, Pb-214 $(214;\ 82)$, Bi-214 $(214;\ 83)$, Po-214 $(214;\ 84)$, Pb-210 $(210;\ 82)$ and finally stable Pb-206 $(206;\ 82)$; only alpha and beta minus decays
 **Find:** the decay modes of the transitions of the table, the numbers of decays from Pb-210 to Pb-206 and the total number of beta minus decays $n_\beta$ from Rn-222 to Pb-206
-**Principle:** The mass number changes only in alpha decay, by four in each. The atomic number decreases by two in alpha decay and increases by one in beta minus decay. So the type of a transition can be seen from the changes in $A$ and $Z$, and the numbers of decays in a long chain are obtained from the numbers of the initial and final nuclei.
+**Principle:** The mass number changes only in alpha decay, by four in each. The atomic number decreases by two in alpha decay and increases by one in beta minus decay.
+
+So the type of a transition can be seen from the changes in $A$ and $Z$, and the numbers of decays in a long chain are obtained from the numbers of the initial and final nuclei.
+
 **Formula:** $A_\text{initial} - A_\text{final} = 4 n_\alpha$ and $Z_\text{final} = Z_\text{initial} - 2 n_\alpha + n_\beta$, so $n_\beta = Z_\text{final} - Z_\text{initial} + 2 n_\alpha$
+
 **Conversions:** None are needed, because the numbers are counts.
-**Substitution:** a) Rn-222 $\to$ Po-218: $A$ decreases by four and $Z$ by two, alpha decay. Po-218 $\to$ Pb-214: $218 - 4 = 214$ and $84 - 2 = 82$, alpha decay. Pb-214 $\to$ Bi-214 and Bi-214 $\to$ Po-214: $A$ stays and $Z$ increases $82 \to 83 \to 84$, two beta minus decays. Po-214 $\to$ Pb-210: $214 - 4 = 210$ and $84 - 2 = 82$, alpha decay. So the table has $3$ alpha and $2$ beta minus decays.
+
+**Substitution:** a) Rn-222 $\to$ Po-218: $A$ decreases by four and $Z$ by two, alpha decay. Po-218 $\to$ Pb-214: $218 - 4 = 214$ and $84 - 2 = 82$, alpha decay. Pb-214 $\to$ Bi-214 and Bi-214 $\to$ Po-214: $A$ stays and $Z$ increases $82 \to 83 \to 84$, two beta minus decays. Po-214 $\to$ Pb-210: $214 - 4 = 210$ and $84 - 2 = 82$, alpha decay.
+
+So the table has $3$ alpha and $2$ beta minus decays.
+
 b) Pb-210 $\to$ Pb-206: $n_\alpha = \dfrac{210 - 206}{4} = 1$. The atomic number is $82$ at the start and at the end, so $82 = 82 - 2 \cdot 1 + n_\beta$ and $n_\beta = 2$.
+
 c) In the whole series $n_\alpha = \dfrac{222 - 206}{4} = 4$ and $n_\beta = 82 - 86 + 2 \cdot 4 = 4$. From the table and the calculation of part b): alpha decays $3 + 1 = 4$ and beta minus decays $2 + 2 = 4$.
+
 d) Four alpha decays would decrease the atomic number by $4 \cdot 2 = 8$ and take it to $86 - 8 = 78$. The atomic number of lead is $82$, so the atomic number has to be raised by $82 - 78 = 4$ by beta minus decays.
+
 **Answer:** $4$. The number of beta minus decays is an exact integer; there are also $4$ alpha decays, $8$ decays in total. Alpha decays alone would take the atomic number to $78$, so four beta minus decays are needed.
+
 **Reasonableness:** Check: the mass number $222 - 4 \cdot 4 = 206$ and the atomic number $86 - 2 \cdot 4 + 4 = 82$ balance. At the end of the series $$
 \begin{aligned}
 &{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \\
@@ -266,10 +297,17 @@ $$ there are two beta decays and one alpha decay.
 ## fy8-8-L3-05
 **Given:** the measured lines $351.2$, $468.9$, $681.3$, $820.5$ and $1501.4\,\text{keV}$; three excited levels; the nucleus is at first on the top level; the lowest excited level $351.2\,\text{keV}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the energy $E_\text{m}$ and the wavelength $\lambda$ in picometres of the missing gamma line
-**Principle:** The energy of a gamma photon is the difference between two levels. With three excited levels and the ground state there are six possible transitions, of which five appear in the table. The greatest energy is the transition from the top level to the ground state, and every line has to be a difference between two levels. With the help of the lowest level $351.2\,\text{keV}$ the remaining levels can be solved uniquely. The missing transition is the one that is not in the table.
+**Principle:** The energy of a gamma photon is the difference between two levels. With three excited levels and the ground state there are six possible transitions, of which five appear in the table.
+
+The greatest energy is the transition from the top level to the ground state, and every line has to be a difference between two levels. With the help of the lowest level $351.2\,\text{keV}$ the remaining levels can be solved uniquely. The missing transition is the one that is not in the table.
+
 **Formula:** $E_\gamma = E_\text{u} - E_\text{l}$ and $\lambda = \dfrac{hc}{E_\gamma}$
+
 **Conversions:** $E_\text{m} = 1150.2\,\text{keV} = 1150.2 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.8427 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** a) By the greatest line the top level is $E_3 = 1501.4\,\text{keV}$ and the lowest excited level is $E_1 = 351.2\,\text{keV}$, which is also the smallest line of the table (a transition to the ground state). The third level is obtained from the line $820.5\,\text{keV}$, if it is a transition to the ground state: $E_2 = 820.5\,\text{keV}$. Check with the differences of the levels: $$
+
+**Substitution:** a) By the greatest line the top level is $E_3 = 1501.4\,\text{keV}$ and the lowest excited level is $E_1 = 351.2\,\text{keV}$, which is also the smallest line of the table (a transition to the ground state). The third level is obtained from the line $820.5\,\text{keV}$, if it is a transition to the ground state: $E_2 = 820.5\,\text{keV}$.
+
+Check with the differences of the levels: $$
 \begin{aligned}
 E_2 - E_1 &= 820.5 - 351.2 \\
 &= 469.3
@@ -279,8 +317,12 @@ $$, which is the line $468.9\,\text{keV}$, and $$
 E_3 - E_2 &= 1501.4 - 820.5 \\
 &= 680.9
 \end{aligned}
-$$, which is the line $681.3\,\text{keV}$. All five lines are explained when the measurement uncertainty is less than $0.5\,\text{keV}$. No other order works: if the second level were $681.3\,\text{keV}$, the transition $E_2 - E_1 = 330.1\,\text{keV}$ would be missing from the table and the line $468.9\,\text{keV}$ would remain unexplained.
+$$, which is the line $681.3\,\text{keV}$. All five lines are explained when the measurement uncertainty is less than $0.5\,\text{keV}$.
+
+No other order works: if the second level were $681.3\,\text{keV}$, the transition $E_2 - E_1 = 330.1\,\text{keV}$ would be missing from the table and the line $468.9\,\text{keV}$ would remain unexplained.
+
 b) The missing transition is from the top level to the lowest excited level: $E_\text{m} = E_3 - E_1 = 1501.4 - 351.2 = 1150.2\,\text{keV}$.
+
 c) $$
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -288,18 +330,30 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8427 \cdot 10^{-13}\,\text{J}} = 1.0780 \cdot 10^{-12}\,\text{m} = 1.0780\,\text{pm}$
+
 **Answer:** $1.08\,\text{pm}$, three significant figures. The levels are $351.2$, $820.5$ and $1501.4\,\text{keV}$ above the ground state, and the energy of the missing line is $1150.2\,\text{keV}$.
+
 **Reasonableness:** The missing energy $1150.2\,\text{keV}$ is smaller than the greatest line $1501.4\,\text{keV}$ and greater than the line $820.5\,\text{keV}$. So the wavelength is longer than the $0.83\,\text{pm}$ of the greatest line and shorter than the wavelength $1.51\,\text{pm}$ of the line $820.5\,\text{keV}$. The result $1.08\,\text{pm}$ is between these.
 
 ## fy8-8-L2-09
 **Given:** the two strong peaks of the Co-60 gamma spectrum (figure) and the weak extra peak $826.1\,\text{keV}$, a transition from level X to the lowest excited level
 **Find:** the energy $E_\text{X}$ of level X above the ground state
-**Principle:** The energy of a gamma photon is the difference between two energy levels of the nucleus. The photon that takes the nucleus to the ground state gives directly the energy of the level it leaves. When the energy of the lowest excited level is known, a higher level is obtained by adding the energy of the transition photon to it.
-**Reading the graph:** The horizontal axis is the photon energy, and the peaks are at $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$. The photon of lower energy is emitted first and the photon of higher energy takes the nucleus to the ground state, so the energy of the lowest excited level is the energy of the higher peak, $E_1 = 1332.5\,\text{keV}$. The lower peak is the transition from a higher level to this level.
+**Principle:** The energy of a gamma photon is the difference between two energy levels of the nucleus. The photon that takes the nucleus to the ground state gives directly the energy of the level it leaves.
+
+When the energy of the lowest excited level is known, a higher level is obtained by adding the energy of the transition photon to it.
+
+**Reading the graph:** The horizontal axis is the photon energy, and the peaks are at $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$.
+
+The photon of lower energy is emitted first and the photon of higher energy takes the nucleus to the ground state, so the energy of the lowest excited level is the energy of the higher peak, $E_1 = 1332.5\,\text{keV}$. The lower peak is the transition from a higher level to this level.
+
 **Formula:** $E_\gamma = E_\text{upper} - E_\text{lower}$, so $E_\text{X} = E_1 + E_\gamma$
+
 **Conversions:** None needed, because all energies are in kiloelectronvolts.
+
 **Substitution:** $E_\text{X} = E_1 + E_\gamma = 1332.5\,\text{keV} + 826.1\,\text{keV} = 2158.6\,\text{keV}$. In the level diagram the ground state is at the bottom, above it is the level $1332.5\,\text{keV}$ and at the top level X, $2158.6\,\text{keV}$. The arrows are X $\to$ lowest excited level ($826.1\,\text{keV}$) and lowest excited level $\to$ ground state ($1332.5\,\text{keV}$).
+
 **Answer:** $2159\,\text{keV}$ or $2.159\,\text{MeV}$ above the ground state, four significant figures as in the given energies.
+
 **Reasonableness:** Level X is above the lowest excited level, as it should be. It is also below the top level from which the strong peaks start: $$
 \begin{aligned}
 1332.5\,\text{keV} \\
@@ -329,8 +383,14 @@ $$ Check: the transition C $\to$ A is $$
 &- 1332.5\,\text{keV} \\
 &= 1173.2\,\text{keV}
 \end{aligned}
-$$, which is the other strong peak. All four peaks are explained. If A $\to$ ground state were $1173.2\,\text{keV}$, then $E_\text{C} = 1173.2 + 826.1 + 347.1 = 2346.4\,\text{keV}$ and the transition C $\to$ A would be $1173.2\,\text{keV}$, not $1332.5\,\text{keV}$. The peak $1332.5\,\text{keV}$ would remain unexplained, so this option is not valid. The level diagram has the ground state $0$, A $1332.5\,\text{keV}$, B $2158.6\,\text{keV}$ and C $2505.7\,\text{keV}$; the arrows are C $\to$ B ($347.1\,\text{keV}$), B $\to$ A ($826.1\,\text{keV}$), C $\to$ A ($1173.2\,\text{keV}$) and A $\to$ ground state ($1332.5\,\text{keV}$).
+$$, which is the other strong peak. All four peaks are explained. If A $\to$ ground state were $1173.2\,\text{keV}$, then $E_\text{C} = 1173.2 + 826.1 + 347.1 = 2346.4\,\text{keV}$ and the transition C $\to$ A would be $1173.2\,\text{keV}$, not $1332.5\,\text{keV}$.
+
+The peak $1332.5\,\text{keV}$ would remain unexplained, so this option is not valid.
+
+The level diagram has the ground state $0$, A $1332.5\,\text{keV}$, B $2158.6\,\text{keV}$ and C $2505.7\,\text{keV}$; the arrows are C $\to$ B ($347.1\,\text{keV}$), B $\to$ A ($826.1\,\text{keV}$), C $\to$ A ($1173.2\,\text{keV}$) and A $\to$ ground state ($1332.5\,\text{keV}$).
+
 b) The photon of the direct transition has the energy of level C: $E_\text{C} = 2505.7\,\text{keV}$.
+
 c) $$
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -345,5 +405,7 @@ $$ and $$
 &= 0.49487\,\text{pm}
 \end{aligned}
 $$
+
 **Answer:** $0.495\,\text{pm}$, three significant figures as in the given constants. The levels are $1332.5$, $2158.6$ and $2505.7\,\text{keV}$ above the ground state, and the energy of the direct transition is $2505.7\,\text{keV}$.
+
 **Reasonableness:** The energy of the direct transition is greater than either strong peak ($1332.5\,\text{keV}$ and $1173.2\,\text{keV}$), so the wavelength has to be shorter than theirs, $0.93\,\text{pm}$ and $1.06\,\text{pm}$. The result $0.495\,\text{pm}$ is shorter. Also $347.1 + 826.1 = 1173.2$, so the two routes from level C to level A give the same energy.

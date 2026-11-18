@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b507f51d2917a3b7
+CONTENT-HASH: fa562a1451b96017
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor, out of scope of this delta; shared-build defect for the coordinator] Example 1 title renders "The 3extdo2extp transition": the \t of \text and \to in the en example name (example-names.json) is lost when the build inserts the title. Pre-existing, not touched by the reflow; the same string appears in fi. It should be fixed in the shared title rendering before publication.
-- [Minor] Stage 4 block E_3-E_2 sets the fractions small (\tfrac) in display; \dfrac, as in fy8-3, would read better.
+- [Minor] Optional "Review: the electron in a double slit" box: the opened state is not in the captures; the new prompt was judged from source (fluent, one idea, links the chemistry-book clouds to the wave idea).
 
 ## Checked
-- batch delta review, en: opened example-390-1 (stages 3 and 4 blocks: rows broken before each + or -, first row left-hand side alone, = aligned, units whole, nothing clipped); the other changed blocks judged from the diff/source only. Verdict covers the lifted formulas only. Hash re-run at the end: unchanged.
+- Delta (inquiry.json prompt only): opened fy8-5-stage-herata-390 (stage layout intact, optional box closed, nothing clipped), fy8-5-stage-tarkista-390-1 and -3, fy8-5-open-tarkista-1280-4 (neighbouring stage, layout intact). Hash re-run at the end: unchanged.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -23,7 +23,7 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review: the energy of a photon",
-      "prompt": "The wavelength of red light is $650\\,\\text{nm}$ and that of violet light $410\\,\\text{nm}$. Which statement about their photons is correct?",
+      "prompt": "At the red end of the spectrum of sunlight the wavelength is $650\\,\\text{nm}$ and at the violet end $410\\,\\text{nm}$. Which statement about their photons is correct?",
       "choices": [
         {
           "text": "The photon of violet light has the greater energy, because a shorter wavelength means a higher frequency.",

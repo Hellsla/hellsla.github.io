@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f63f6dccc3931f34
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 638b961476318230
 
 ## Blocking
 - none
@@ -9,4 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- batch delta review: retrieval set at a nuclear plant (alpha-emitting dust on clothes, inhaled); options and feedback unchanged, consistent with the new prompt (inhaled or swallowed); one correct option; rest md-paragraphs/reflow/formula names; hash same at start and end.

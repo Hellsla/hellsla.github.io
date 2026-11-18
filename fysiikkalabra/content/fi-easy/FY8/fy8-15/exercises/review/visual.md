@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d6490d7f746bd076
-SCOPE: delta added-exercise from d9f79207147a8ef9 base 1bdc56f920e4
+CONTENT-HASH: 5e99dcd5ae068804
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy8-15-L1-10 / L2-08 figure — the chart's quark/lepton rows carry no charge unit hint beyond "e"; fine as is. Optional: task could say "ruudun luku on varaus alkeisvarauksen e monikertana" (not needed).
+- none
 
 ## Checked
-- fy8-15-open-exercises-1280-9 and -10 (L1-10 task, figure fy8-15/taulukko, full solution, Järkevyys), fy8-15-open-exercises-L2-1280-8 (end of neighbouring set) and -9 (L2-08 task, figure, answer box with unit e, start of solution).
-- Figure is legible, nothing clipped, colours and legend consistent; charges readable; task text, LaTeX maths, units and solution order (annettu, periaate, kaava, sijoitus, vastaus, järkevyys) correct in presentation; Finnish natural; set reads as one. No 360 px capture of these two was opened; layout checks are in the packet.
+- Delta: exercises/solutions.md paragraph cuts only (md-paragraphs).
+- fy8-15-open-exercises-1280-5 (tasks 15-5 solution end, 15-6 with feedback and full solution open): solution order, LaTeX units and formulas, paragraphs read well, no clipping.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bce70f1717c48c57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 25198780be5abb6a
 
 ## Blocking
-- none
 
 ## Polish
-- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: added sentence "Tapahtuma on sama kuin vapaan neutronin hajoaminen": the underlying process n → p + e⁻ + ν̄ is the same (C, a fair simplification; the released energy differs, not claimed); options and feedback unchanged and right; one correct option.

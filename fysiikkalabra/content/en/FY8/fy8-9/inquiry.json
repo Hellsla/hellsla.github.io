@@ -23,20 +23,20 @@
       "type": "choice",
       "optional": true,
       "title": "Review: beta decay",
-      "prompt": "Iodine-131, used in thyroid treatments, decays by beta minus decay. What happens to the nucleus in the decay?",
+      "prompt": "The technetium-$99\\text{m}$ of a hospital is made from molybdenum-$99$, which decays by beta minus decay. What happens to the nucleus in the decay?",
       "choices": [
         {
-          "text": "A neutron of the nucleus changes into a proton, so the atomic number increases by one and iodine becomes xenon.",
+          "text": "A neutron of the nucleus changes into a proton, so the atomic number increases by one and molybdenum becomes technetium.",
           "correct": true,
-          "feedback": "Correct. An electron and an antineutrino leave the nucleus, the mass number $131$ is conserved and the atomic number increases from $53$ to $54$ (chapter *The atomic nucleus and radioactive decay*). Today we find out *when* the nuclei decay."
+          "feedback": "Correct. An electron and an antineutrino leave the nucleus, the mass number $99$ is conserved and the atomic number increases from $42$ to $43$ (chapter *The atomic nucleus and radioactive decay*). Today we find out *when* the nuclei decay."
         },
         {
           "text": "The nucleus emits an alpha particle, so its mass number decreases by four.",
           "feedback": "This describes alpha decay, in which a particle of two protons and two neutrons leaves the nucleus. In beta minus decay a neutron of the nucleus changes into a proton, so the mass number is conserved and the atomic number increases by one (chapter *The atomic nucleus and radioactive decay*)."
         },
         {
-          "text": "The atom loses one electron from its electron shell, so it becomes an iodine ion.",
-          "feedback": "The beta particle does not come from the electron shell but is created in the nucleus when a neutron changes into a proton. That is why the nucleus becomes the nucleus of another element: iodine becomes xenon (chapter *The atomic nucleus and radioactive decay*)."
+          "text": "The atom loses one electron from its electron shell, so it becomes a molybdenum ion.",
+          "feedback": "The beta particle does not come from the electron shell but is created in the nucleus when a neutron changes into a proton. That is why the nucleus becomes the nucleus of another element: molybdenum becomes technetium (chapter *The atomic nucleus and radioactive decay*)."
         },
         {
           "text": "The nucleus splits into two nuclei of roughly equal size.",

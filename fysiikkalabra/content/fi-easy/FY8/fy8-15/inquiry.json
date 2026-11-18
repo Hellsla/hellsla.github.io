@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Kertaa: beeta miinus -hajoaminen",
       "optional": true,
-      "prompt": "Hiili-14-ydin hajoaa beeta miinus -hajoamisella: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. Mitä ytimessä tapahtuu?",
+      "prompt": "Hiili-14-ydin hajoaa beeta miinus -hajoamisella: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. Tapahtuma on sama kuin vapaan neutronin hajoaminen. Mitä ytimessä tapahtuu?",
       "choices": [
         {
           "text": "Yksi neutroni muuttuu protoniksi. Samalla syntyvät elektroni ja antineutriino.",

@@ -59,6 +59,8 @@ for m in W:                                                 # extremes of the sw
 a["sim-700-E"] = E_eV(700)                                  # 1,77 eV
 
 # --- inquiry: retrieval, error spotting, transfer task, checks, exit ticket ---
+a["kertaus-f-uv"] = c / 254e-9                                 # retrieval: UV-C 254 nm: 1,18e15 Hz
+a["kertaus-f-red"] = c / 650e-9                                # red 650 nm: 4,61e14 Hz
 a["virhe-right"] = E_J(500)                                 # 3,97e-19 J
 a["virhe-wrong"] = h * c / 500                              # λ in nm left unconverted: 3,97e-28 J
 a["siirto"] = h * c / (1.90 * e) * 1e9                      # photocathode W = 1,90 eV: λ0 = 652,6 nm -> 653 nm

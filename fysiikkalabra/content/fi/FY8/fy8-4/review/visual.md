@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d614dadcdcb11cdb
+CONTENT-HASH: da2ad48dd3a1587a
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: d614dadcdcb11cdb
 - none
 
 ## Checked
-- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
+- Round 2 delta (inquiry.json Pohdinta retrieval task reworded; lesson.md paragraphs only). Opened fy8-4-stage-herata-390.png: the card "Kertaa: valon intensiteetti ja fotonit" sits under the phenomenon and the open question, four choices readable, nothing clipped, no overflow, $hf$ feedback is not shown before answering. Finnish is fluent and uses the glossary terms (fotoni, kaksoisrakokoe, intensiteetti). The paragraph cut in lesson.md has no layout effect that the packet checks (layout 360-1280 ok). Figures were not changed and were not re-opened.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

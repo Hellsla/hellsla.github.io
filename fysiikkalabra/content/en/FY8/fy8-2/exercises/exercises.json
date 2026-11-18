@@ -163,7 +163,7 @@
       "unit": "eV",
       "tolerance": 0.02,
       "data": {
-        "caption": "Emission lines of the elements, example data",
+        "caption": "Emission lines of the elements",
         "columns": [
           "Element",
           "$\\lambda_1\\,(\\text{nm})$",
@@ -215,7 +215,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Dark lines of the absorption spectrum of the Sun, example data",
+        "caption": "Dark lines of the absorption spectrum of the Sun",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"
@@ -265,7 +265,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lines of mercury and readings of the scale, example data",
+        "caption": "Lines of mercury and readings of the scale",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$x\\,(\\text{mm})$"
@@ -378,7 +378,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Measured emission lines of the model atom, example data",
+        "caption": "Measured emission lines of the model atom",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"
@@ -420,7 +420,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Illumination and fluorescence of the dyes, example data",
+        "caption": "Illumination and fluorescence of the dyes",
         "columns": [
           "Dye",
           "$\\lambda_\\text{abs}\\,(\\text{nm})$",

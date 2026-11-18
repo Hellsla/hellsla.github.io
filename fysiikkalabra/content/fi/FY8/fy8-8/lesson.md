@@ -352,7 +352,9 @@ Cesium-137 ${}^{137}_{55}\text{Cs}$ hajoaa beeta miinus -hajoamisella. Tytärydi
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Emoydin ${}^{137}_{55}\text{Cs}$, beeta miinus -hajoaminen, gammafotonin energia $E_\gamma = 661{,}7\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$. Kysytään tyttärytimen järjestyslukua $Z'$ ja massalukua $A'$ sekä fotonin aallonpituutta $\lambda$.
+**Tunnetut ja kysytty.** Emoydin ${}^{137}_{55}\text{Cs}$, beeta miinus -hajoaminen, gammafotonin energia $E_\gamma = 661{,}7\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
+
+Kysytään tyttärytimen järjestyslukua $Z'$ ja massalukua $A'$ sekä fotonin aallonpituutta $\lambda$.
 
 <!-- vaihe -->
 

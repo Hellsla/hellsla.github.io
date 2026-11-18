@@ -25,7 +25,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: puoliintumispaksuus",
-      "prompt": "Gammasäteilyn intensiteetti on lyijylevyn takana neljäsosa siitä, mitä se on ilman levyä. Kuinka paksu levy on?",
+      "prompt": "PET-kuvauksen henkilökunta suojautuu potilaasta tulevalta gammasäteilyltä lyijylevyn takana. Levyn takana gammasäteilyn intensiteetti on neljäsosa siitä, mitä se on ilman levyä. Kuinka paksu levy on?",
       "choices": [
         {
           "text": "Kaksi puoliintumispaksuutta, koska ensimmäinen puolittaa säteilyn ja toinen puolittaa jäljelle jääneen.",
