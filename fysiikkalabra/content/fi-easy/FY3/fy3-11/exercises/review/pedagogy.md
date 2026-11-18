@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 0fc397895a2ab582
-SCOPE: delta added-exercise from aa19bbee511151d7 base 71f5784fca44
 
 ## Blocking
 (none)
