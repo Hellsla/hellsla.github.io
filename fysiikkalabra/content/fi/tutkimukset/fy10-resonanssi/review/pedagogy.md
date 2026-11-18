@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c4292566409af6a0
+CONTENT-HASH: b4ffca66ec96bd6c
 
 ## Blocking
 
@@ -31,3 +31,7 @@ None.
 ## Checked (delta 2026-11-16)
 
 - Text/typography diff read in context: heading 'tuloksia' (plural, fine), \pm in text, thin spaces in formula; unchanged meaning. No blocking finding.
+
+## Checked (delta 2026-11-18)
+
+- Read the header-shortening diff. Headers L_pit and L_lyh are explained in the sentence before the table (lengthening vs shortening the air column). The abbreviations are guessable; the mean column is unchanged. No blocking finding.

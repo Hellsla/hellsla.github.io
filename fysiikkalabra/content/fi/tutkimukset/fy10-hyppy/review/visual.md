@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5247ff9a7086f94a
+CONTENT-HASH: 9fdb422985439073
 
 ## Blocking
 (none)
@@ -11,7 +11,10 @@ CONTENT-HASH: 5247ff9a7086f94a
 - [Minor] Teoria — the model graph sits at the end of the closed "tuki O OO" block, after a long run of formulas, so a student in the independent mode never sees it (intended?) — the pedagogue should confirm.
 - [Minor] Mittaa tables — header "hyppy" is lowercase beside the capitalised cells and units (plain ordinary words); fine, but consider "Hyppy".
 
-## Checked (delta 2026-11-16)
+## Checked
+- Delta 2026-11-18: headers $h_\text{imp}$, $h_\text{lento}$ and the added sentence. Opened page-390-9 and -7: both tables fit 390 px, headers on one line, sentence names both heights; formulas beside unchanged.
+
+## Earlier checked (delta 2026-11-16)
 - Changed: privacy sentence shortened in Tutkimustehtävä, table headers 'Hyppy'. Opened page-1280-3 (task text and safety list read well, $N/G$ fraction renders; the repeated privacy wording is now in Turvallisuus only; header capitalisation resolved).
 - Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
