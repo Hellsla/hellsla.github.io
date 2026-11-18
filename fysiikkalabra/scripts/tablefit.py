@@ -78,5 +78,18 @@ def cards(html, finnish):
     return CARD_TITLE.sub(one, html)
 
 
+KC_ITEM = re.compile(r'(<div class="kc-item"[^>]*><dt>)(.*?)(</dt><dd>)(.*?)(</dd>)', re.S)
+
+
+def kc_items(html, finnish):
+    """The no-JavaScript concept-card list (concept_cards.static_card) on a Finnish page: soft hyphens in the long words of
+    term and definition (work queue 8d). Running it again changes nothing."""
+    if not finnish: return html
+    def hy(t):
+        parts = SKIP.split(t.replace(SHY, ""))
+        return "".join(p if i % 2 else WORD.sub(lambda w: hyphenate_card(w.group(0)), p) for i, p in enumerate(parts))
+    return KC_ITEM.sub(lambda m: m.group(1) + hy(m.group(2)) + m.group(3) + hy(m.group(4)) + m.group(5), html)
+
+
 if __name__ == "__main__":
     for w in sys.argv[1:]: print(hyphenate_fi(w).replace(SHY, "-"))
