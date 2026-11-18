@@ -23,7 +23,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: beta decay",
-      "prompt": "The technetium-$99\text{m}$ of a hospital is made from molybdenum-$99$, which decays by beta minus decay. What happens to the nucleus in the decay?",
+      "prompt": "The technetium-$99\\text{m}$ of a hospital is made from molybdenum-$99$, which decays by beta minus decay. What happens to the nucleus in the decay?",
       "choices": [
         {
           "text": "A neutron of the nucleus changes into a proton, so the atomic number increases by one and molybdenum becomes technetium.",

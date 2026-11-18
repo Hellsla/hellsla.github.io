@@ -23,7 +23,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: beetahajoaminen",
-      "prompt": "Sairaalan teknetium-$99\text{m}$ valmistetaan molybdeeni-$99$:stä, joka hajoaa beeta miinus -hajoamisella. Mitä ytimelle tapahtuu hajoamisessa?",
+      "prompt": "Sairaalan teknetium-$99\\text{m}$ valmistetaan molybdeeni-$99$:stä, joka hajoaa beeta miinus -hajoamisella. Mitä ytimelle tapahtuu hajoamisessa?",
       "choices": [
         {
           "text": "Ytimen neutroni muuttuu protoniksi. Järjestysluku kasvaa yhdellä, ja molybdeenistä tulee teknetiumia.",
