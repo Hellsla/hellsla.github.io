@@ -434,76 +434,76 @@ $$. The cord stretches more than its unstretched length, which is usual for a bu
 ## fy9-aallot-s7
 
 ### a)
-**Given:** one square of the grid is $0{,}50\,\text{m}$; the distance from $S_1$ to $\text{P}$ is $12$ squares horizontally; $S_2$ is $5$ squares above $S_1$ in the same vertical line; $\text{P}$ is on the same horizontal line as $S_1$
+**Given:** one square of the grid is $0.50\,\text{m}$; the distance from $S_1$ to $\text{P}$ is $12$ squares horizontally; $S_2$ is $5$ squares above $S_1$ in the same vertical line; $\text{P}$ is on the same horizontal line as $S_1$
 **Find:** the distances $s_1$ and $s_2$ and the path difference $\Delta s = s_2 - s_1$
 **Principle:** The distance $s_1$ runs along the grid, so it follows from the number of squares. The distance $s_2$ is the hypotenuse of a right triangle whose legs are $s_1$ and the distance $d$ between the loudspeakers (Pythagorean theorem). The path difference is the difference of the two distances (chapter *When waves combine: superposition and interference*).
 **Reading the graph:** The numbers of squares are read from the figure: from $S_1$ to $\text{P}$ it is $12$ squares and between $S_1$ and $S_2$ it is $5$ squares.
-**Formula:** $s_1 = 12\,a$, $d = 5\,a$ and $s_2 = \sqrt{s_1^2 + d^2}$, so $\Delta s = s_2 - s_1$; here $a = 0{,}50\,\text{m}$ is the side of a square.
+**Formula:** $s_1 = 12\,a$, $d = 5\,a$ and $s_2 = \sqrt{s_1^2 + d^2}$, so $\Delta s = s_2 - s_1$; here $a = 0.50\,\text{m}$ is the side of a square.
 **Conversions:** The numbers of squares are converted to metres with the side of a square.
 **Substitution:** $$
 \begin{aligned}
-s_1 &= 12 \cdot 0{,}50\,\text{m} \\
-&= 6{,}0\,\text{m}
+s_1 &= 12 \cdot 0.50\,\text{m} \\
+&= 6.0\,\text{m}
 \end{aligned}
 $$; $$
 \begin{aligned}
-d &= 5 \cdot 0{,}50\,\text{m} \\
-&= 2{,}5\,\text{m}
+d &= 5 \cdot 0.50\,\text{m} \\
+&= 2.5\,\text{m}
 \end{aligned}
 $$; $$
 \begin{aligned}
-s_2 &= \sqrt{(6{,}0\,\text{m})^2 + (2{,}5\,\text{m})^2} \\
-&= \sqrt{42{,}25\,\text{m}^2} \\
-&= 6{,}5\,\text{m}
+s_2 &= \sqrt{(6.0\,\text{m})^2 + (2.5\,\text{m})^2} \\
+&= \sqrt{42.25\,\text{m}^2} \\
+&= 6.5\,\text{m}
 \end{aligned}
 $$; $$
 \begin{aligned}
-\Delta s &= 6{,}5\,\text{m} - 6{,}0\,\text{m} \\
-&= 0{,}50\,\text{m}
+\Delta s &= 6.5\,\text{m} - 6.0\,\text{m} \\
+&= 0.50\,\text{m}
 \end{aligned}
 $$
-**Answer:** $s_1 = 6{,}0\,\text{m}$, $s_2 = 6{,}5\,\text{m}$ and $\Delta s = 0{,}50\,\text{m}$. The results have two significant figures, like the numbers of squares and the size of a square.
-**Reasonableness:** The sides of the triangle $6{,}0\,\text{m}$, $2{,}5\,\text{m}$ and $6{,}5\,\text{m}$ are in the ratio $12 : 5 : 13$. The hypotenuse is longer than a leg but shorter than the sum of the legs, $8{,}5\,\text{m}$. The path difference cannot be greater than the distance between the loudspeakers, $2{,}5\,\text{m}$, and it is smaller.
+**Answer:** $s_1 = 6.0\,\text{m}$, $s_2 = 6.5\,\text{m}$ and $\Delta s = 0.50\,\text{m}$. The results have two significant figures, like the side of a square, $0.50\,\text{m}$. The numbers of squares are exact.
+**Reasonableness:** The sides of the triangle $6.0\,\text{m}$, $2.5\,\text{m}$ and $6.5\,\text{m}$ are in the ratio $12 : 5 : 13$. The hypotenuse is longer than a leg but shorter than the sum of the legs, $8.5\,\text{m}$. The path difference cannot be greater than the distance between the loudspeakers, $2.5\,\text{m}$, and it is smaller.
 
 ### b)
-**Given:** $f = 343\,\text{Hz}$ and $v = 343{,}4\,\text{m/s}$
+**Given:** $f = 343\,\text{Hz}$ and $v = 343.4\,\text{m/s}$
 **Find:** the wavelength $\lambda$ in air
 **Principle:** In a periodic wave the wave advances one wavelength in one period, so $v = \lambda f$ (chapter *How waves form and travel*).
 **Formula:** $v = \lambda f$, so $\lambda = \dfrac{v}{f}$
 **Conversions:** None needed: the speed is in $\text{m/s}$ and the frequency in $\text{Hz} = 1/\text{s}$.
 **Substitution:** $$
 \begin{aligned}
-\lambda &= \dfrac{343{,}4\,\text{m/s}}{343\,\text{Hz}} \\
-&\approx 1{,}00\,\text{m}
+\lambda &= \dfrac{343.4\,\text{m/s}}{343\,\text{Hz}} \\
+&\approx 1.00\,\text{m}
 \end{aligned}
 $$
-**Answer:** $\lambda \approx 1{,}00\,\text{m}$, three significant figures like the speed.
-**Reasonableness:** The wavelengths of ordinary speech and music are about $0{,}3\ldots 3\,\text{m}$, so a metre fits. The path difference $0{,}50\,\text{m}$ is half of it.
+**Answer:** $\lambda \approx 1.00\,\text{m}$, three significant figures like the frequency $343\,\text{Hz}$. The speed $343.4\,\text{m/s}$ has four.
+**Reasonableness:** The wavelengths of ordinary speech and music are about $0.3\ldots 3\,\text{m}$, so a metre fits. The path difference $0.50\,\text{m}$ is half of it.
 
 ### c)
-**Given:** $\Delta s = 0{,}50\,\text{m}$ and $\lambda = 1{,}00\,\text{m}$; the loudspeakers play in phase
+**Given:** $\Delta s = 0.50\,\text{m}$ and $\lambda = 1.00\,\text{m}$; the loudspeakers play in phase
 **Find:** whether the sound at $\text{P}$ is loud or quiet
 **Principle:** When the sources are in phase, the waves reinforce each other if $\Delta s = n\lambda$ and cancel each other if $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ (chapter *When waves combine: superposition and interference*). So the path difference is compared with the wavelength.
-**Model answer:** The path difference is $\dfrac{\Delta s}{\lambda} = \dfrac{0{,}50\,\text{m}}{1{,}00\,\text{m}} = 0{,}50$, that is, half a wavelength. The other wave has travelled half a wavelength farther, so it arrives at $\text{P}$ in opposite phase: when one wave compresses the air, the other rarefies it. The waves cancel each other, so $\text{P}$ is a point of quiet sound, an almost silent nodal line. It is not completely silent, because the farther loudspeaker is heard slightly more weakly.
+**Model answer:** The path difference is $\dfrac{\Delta s}{\lambda} = \dfrac{0.50\,\text{m}}{1.00\,\text{m}} = 0.50$, that is, half a wavelength. The other wave has travelled half a wavelength farther, so it arrives at $\text{P}$ in opposite phase: when one wave compresses the air, the other rarefies it. The waves cancel each other, so $\text{P}$ is a point of quiet sound, an almost silent nodal line. It is not completely silent, because the farther loudspeaker is heard slightly more weakly.
 
 ### d)
-**Given:** $\Delta s = 0{,}50\,\text{m}$ and $v = 343{,}4\,\text{m/s}$; at the start $f = 343\,\text{Hz}$, when $\Delta s = \tfrac{1}{2}\lambda$
+**Given:** $\Delta s = 0.50\,\text{m}$ and $v = 343.4\,\text{m/s}$; at the start $f = 343\,\text{Hz}$, when $\Delta s = \tfrac{1}{2}\lambda$
 **Find:** the lowest frequency above the original one at which the sound at $\text{P}$ is loud
 **Principle:** The path difference $\Delta s$ depends only on the positions, not on the frequency. The sound is loud when $\Delta s$ is a whole number of wavelengths, $\Delta s = n\lambda$. When the frequency is raised the wavelength gets shorter, and the next loud point comes when $\Delta s = 1\cdot\lambda$.
 **Formula:** $\lambda = \dfrac{v}{f} = \Delta s$, so $f = \dfrac{v}{\Delta s}$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
-f &= \dfrac{343{,}4\,\text{m/s}}{0{,}50\,\text{m}} \\
-&= 686{,}8\,\text{Hz} \\
+f &= \dfrac{343.4\,\text{m/s}}{0.50\,\text{m}} \\
+&= 686.8\,\text{Hz} \\
 &\approx 690\,\text{Hz}
 \end{aligned}
 $$
-**Answer:** The sound is loud again at the frequency $f \approx 690\,\text{Hz}$, two significant figures like the path difference $0{,}50\,\text{m}$.
+**Answer:** The sound is loud again at the frequency $f \approx 690\,\text{Hz}$, two significant figures like the path difference $0.50\,\text{m}$.
 **Reasonableness:** At the original frequency $343\,\text{Hz}$ the path difference was half a wavelength. When the wavelength halves, the same path difference is a whole wavelength, and the frequency must double: $2 \cdot 343\,\text{Hz} \approx 690\,\text{Hz}$.
 
 ### Yleisiä virheitä
-- In part a the distance to the loudspeaker $S_2$ is taken as the sum of the squares, $12 + 5 = 17$ squares ($8{,}5\,\text{m}$), although the distance runs diagonally straight to $\text{P}$.
+- In part a the distance to the loudspeaker $S_2$ is taken as the sum of the squares, $12 + 5 = 17$ squares ($8.5\,\text{m}$), although the distance runs diagonally straight to $\text{P}$.
 - In part a the numbers of squares are not converted to metres, or the path difference is calculated as $s_1 + s_2$.
 - In part c it is thought that a small path difference always means a loud sound; what matters is the ratio of the path difference to the wavelength.
 - In part d the frequency is calculated as $$
@@ -521,70 +521,70 @@ $$, the original frequency, although the path difference is then only half a wav
 ## fy9-aallot-s8
 
 ### a)
-**Given:** the length of the string from the ruler $L = 1{,}20\,\text{m}$ and the number of loops from the figure $n = 4$; the ends are nodes
+**Given:** the length of the string from the ruler $L = 1.20\,\text{m}$ and the number of loops from the figure $n = 4$; the ends are nodes
 **Find:** the wavelength $\lambda$ on the string
 **Principle:** In a standing wave the distance between two adjacent nodes is $\dfrac{\lambda}{2}$, and one loop is the distance between nodes (chapter *Standing waves: nodes, antinodes and natural frequencies*). The length of the string is $n$ loops.
-**Reading the graph:** On the scale of the ruler the vibrator is at $0$ and the pulley at $1{,}20\,\text{m}$. The figure shows four equally long loops.
+**Reading the graph:** On the scale of the ruler the vibrator is at $0$ and the pulley at $1.20\,\text{m}$. The figure shows four equally long loops.
 **Formula:** $L = n\,\dfrac{\lambda}{2}$, so $\lambda = \dfrac{2L}{n}$
 **Conversions:** None needed: the length is in metres.
 **Substitution:** $$
 \begin{aligned}
-\lambda &= \dfrac{2 \cdot 1{,}20\,\text{m}}{4} \\
-&= 0{,}60\,\text{m}
+\lambda &= \dfrac{2 \cdot 1.20\,\text{m}}{4} \\
+&= 0.600\,\text{m}
 \end{aligned}
 $$
-**Answer:** $\lambda = 0{,}60\,\text{m}$, two significant figures like the number of loops and the length.
-**Reasonableness:** One loop is $0{,}30\,\text{m}$ and four loops are $4 \cdot 0{,}30\,\text{m} = 1{,}20\,\text{m}$, as in the figure.
+**Answer:** $\lambda = 0.600\,\text{m}$, three significant figures like the length $1.20\,\text{m}$. The number of loops is exact.
+**Reasonableness:** One loop is $0.30\,\text{m}$ and four loops are $4 \cdot 0.30\,\text{m} = 1.20\,\text{m}$, as in the figure.
 
 ### b)
-**Given:** $f = 50\,\text{Hz}$ and $\lambda = 0{,}60\,\text{m}$ from part a
+**Given:** $f = 50\,\text{Hz}$ and $\lambda = 0.600\,\text{m}$ from part a
 **Find:** the speed $v$ of the wave on the string
 **Principle:** In a periodic wave $v = \lambda f$ (chapter *How waves form and travel*). The wavelength and frequency of a standing wave are the same as those of the travelling waves that produce it.
 **Formula:** $v = \lambda f$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
-v &= 50\,\text{Hz} \cdot 0{,}60\,\text{m} \\
+v &= 50\,\text{Hz} \cdot 0.600\,\text{m} \\
 &= 30\,\text{m/s}
 \end{aligned}
 $$
 **Answer:** $v = 30\,\text{m/s}$, two significant figures like the initial values.
-**Reasonableness:** The speed $30\,\text{m/s}$ is about $110\,\text{km/h}$, which fits a taut string; the wave crosses the whole $1{,}20\,\text{m}$ of the string in about $0{,}04\,\text{s}$.
+**Reasonableness:** The speed $30\,\text{m/s}$ is about $110\,\text{km/h}$, which fits a taut string; the wave crosses the whole $1.20\,\text{m}$ of the string in about $0.04\,\text{s}$.
 
 ### c)
-**Given:** $L = 1{,}20\,\text{m}$ and $v = 30\,\text{m/s}$ from part b; the number of loops $n = 3$
+**Given:** $L = 1.20\,\text{m}$ and $v = 30\,\text{m/s}$ from part b; the number of loops $n = 3$
 **Find:** the frequency $f_3$ of the vibrator
-**Principle:** The speed of a wave on a string is determined by the tension and the mass of the string, not by the frequency of the vibrator (chapter *How waves form and travel*). The weight and the string stay the same, so the speed is still $30\,\text{m/s}$. With three loops $L = 3\cdot\dfrac{\lambda_3}{2}$ (chapter *Standing waves: nodes, antinodes and natural frequencies*).
+**Principle:** The speed of a wave on a string is determined by the tension and the mass per unit length of the string, not by the frequency of the vibrator (chapter *How waves form and travel*). The weight and the string stay the same, so the speed is still $30\,\text{m/s}$. With three loops $L = 3\cdot\dfrac{\lambda_3}{2}$ (chapter *Standing waves: nodes, antinodes and natural frequencies*).
 **Formula:** $\lambda_3 = \dfrac{2L}{3}$ and $v = f_3\lambda_3$, so $f_3 = \dfrac{v}{\lambda_3} = \dfrac{3v}{2L}$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
-f_3 &= \dfrac{3 \cdot 30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
-&= \dfrac{90\,\text{m/s}}{2{,}40\,\text{m}} \\
-&= 37{,}5\,\text{Hz} \\
+f_3 &= \dfrac{3 \cdot 30\,\text{m/s}}{2 \cdot 1.20\,\text{m}} \\
+&= \dfrac{90\,\text{m/s}}{2.40\,\text{m}} \\
+&= 37.5\,\text{Hz} \\
 &\approx 38\,\text{Hz}
 \end{aligned}
 $$
 **Answer:** The frequency of the vibrator is $f_3 \approx 38\,\text{Hz}$, two significant figures like the initial values.
-**Reasonableness:** The wavelength is now $\dfrac{2 \cdot 1{,}20\,\text{m}}{3} = 0{,}80\,\text{m}$, longer than $0{,}60\,\text{m}$, so the frequency must be lower than $50\,\text{Hz}$ ($38\,\text{Hz} < 50\,\text{Hz}$).
+**Reasonableness:** The wavelength is now $\dfrac{2 \cdot 1.20\,\text{m}}{3} = 0.80\,\text{m}$, longer than $0.600\,\text{m}$, so the frequency must be lower than $50\,\text{Hz}$ ($38\,\text{Hz} < 50\,\text{Hz}$).
 
 ### d)
-**Given:** $L = 1{,}20\,\text{m}$, $v = 30\,\text{m/s}$ and $f = 20\,\text{Hz}$
+**Given:** $L = 1.20\,\text{m}$, $v = 30\,\text{m/s}$ and $f = 20\,\text{Hz}$
 **Find:** whether a clear standing wave forms
 **Principle:** The ends of the string are nodes, so a standing wave forms only when the length of the string is a whole number of half wavelengths, $L = n\dfrac{\lambda}{2}$. Then the frequency is a natural frequency $f_n = n\dfrac{v}{2L}$ (chapter *Standing waves: nodes, antinodes and natural frequencies*).
 **Model answer:** The lowest natural frequency is $$
 \begin{aligned}
-f_1 &= \dfrac{30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
-&= 12{,}5\,\text{Hz}
+f_1 &= \dfrac{30\,\text{m/s}}{2 \cdot 1.20\,\text{m}} \\
+&= 12.5\,\text{Hz}
 \end{aligned}
-$$ The next is $f_2 = 2 f_1 = 25\,\text{Hz}$. The frequency $20\,\text{Hz}$ lies between them: $\dfrac{20\,\text{Hz}}{12{,}5\,\text{Hz}} = 1{,}6$, that is, $1{,}6$ loops would fit the length of the string. A whole number of loops does not form, so nodes cannot be at both ends. No clear standing wave forms on the string: it vibrates only with a small, irregular amplitude.
+$$ The next is $f_2 = 2 f_1 = 25\,\text{Hz}$. The frequency $20\,\text{Hz}$ lies between them: $\dfrac{20\,\text{Hz}}{12.5\,\text{Hz}} = 1.6$, that is, $1.6$ loops would fit the length of the string. A whole number of loops does not form, so nodes cannot be at both ends. No clear standing wave forms on the string: it vibrates only with a small amplitude.
 
 ### Yleisiä virheitä
-- In part a the wavelength is taken as $\dfrac{L}{n} = 0{,}30\,\text{m}$, although a loop is only half a wavelength.
+- In part a the wavelength is taken as $\dfrac{L}{n} = 0.30\,\text{m}$, although a loop is only half a wavelength.
 - In part c the speed is calculated as a new value $\lambda f$ with the old frequency; the speed does not change when the frequency is changed, the wavelength does.
 - In part c the frequency is taken as $3 \cdot 50\,\text{Hz} = 150\,\text{Hz}$ or $\dfrac{50\,\text{Hz}}{3}$.
 - In part d the answer is only "no, because the frequency is too low", although the reason is that $20\,\text{Hz}$ is not a natural frequency.
 
 ### Hyväksytään myös
-- In part c the frequency from the ratio $\dfrac{f_3}{f_1} = \dfrac{3}{1}$: $f_1 = 12{,}5\,\text{Hz}$, so $f_3 = 37{,}5\,\text{Hz}$.
-- In part d the justification with the wavelength: when $f = 20\,\text{Hz}$ the wavelength is $\dfrac{30\,\text{m/s}}{20\,\text{Hz}} = 1{,}5\,\text{m}$, so $\dfrac{L}{\lambda/2} = 1{,}6$ is not a whole number.
+- In part c the frequency from the ratio $\dfrac{f_3}{f_1} = \dfrac{3}{1}$: $f_1 = 12.5\,\text{Hz}$, so $f_3 = 37.5\,\text{Hz}$.
+- In part d the justification with the wavelength: when $f = 20\,\text{Hz}$ the wavelength is $\dfrac{30\,\text{m/s}}{20\,\text{Hz}} = 1.5\,\text{m}$, so $\dfrac{L}{\lambda/2} = 1.6$ is not a whole number.

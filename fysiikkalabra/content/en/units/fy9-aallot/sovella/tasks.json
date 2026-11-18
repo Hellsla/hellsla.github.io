@@ -795,7 +795,7 @@
         "fy5-14"
       ],
       "figure": "fy5-12/ruudukko-tehtava",
-      "text": "Two loudspeakers, $S_1$ and $S_2$, have been set up in a school yard. They play the same sine tone from the same signal generator in phase, and its frequency is $343\\,\\text{Hz}$. The figure shows the yard from above as a grid, and $\\text{P}$ is the point where a microphone has been placed. The speed of sound in air is $343.4\\,\\text{m/s}$. Reflections from walls and the difference in loudness caused by the different distances of the loudspeakers are ignored.",
+      "text": "Two loudspeakers, $S_1$ and $S_2$, have been set up in a school yard. They play the same sine tone from the same signal generator in phase, and its frequency is $343\\,\\text{Hz}$. The figure shows the yard from above as a grid, and $\\text{P}$ is the point where a microphone has been placed. The speed of sound in air at $20\\,{}^\\circ\\text{C}$ is $343.4\\,\\text{m/s}$. Reflections from walls and the difference in loudness caused by the different distances of the loudspeakers are ignored.",
       "parts": [
         {
           "id": "a",
@@ -841,7 +841,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "Distances in metres, two significant figures according to the numbers of squares and the size of a square."
+              "detail": "Distances in metres, two significant figures according to the side of a square, $0.50\\,\\text{m}$; the numbers of squares are exact."
             }
           ]
         },
@@ -958,7 +958,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\lambda = \\dfrac{2 \\cdot 1.20\\,\\text{m}}{4} = 0.60\\,\\text{m}$"
+              "detail": "$\\lambda = \\dfrac{2 \\cdot 1.20\\,\\text{m}}{4} = 0.600\\,\\text{m}$"
             }
           ]
         },
@@ -981,7 +981,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v = 50\\,\\text{Hz} \\cdot 0.60\\,\\text{m} = 30\\,\\text{m/s}$"
+              "detail": "$v = 50\\,\\text{Hz} \\cdot 0.600\\,\\text{m} = 30\\,\\text{m/s}$"
             },
             {
               "key": "units_precision",
@@ -1002,7 +1002,7 @@
           },
           "criteria": [
             {
-              "text": "Justifies that the speed of the wave on the string does not change: it depends on the tension and the mass of the string, not on the frequency of the vibrator, and the weight and the string stay the same.",
+              "text": "Justifies that the speed of the wave on the string does not change: it depends on the tension and the mass per unit length of the string, not on the frequency of the vibrator, and the weight and the string stay the same.",
               "tag": "concept",
               "points": 1
             },

@@ -462,7 +462,7 @@ $$; $$
 &= 0{,}50\,\text{m}
 \end{aligned}
 $$
-**Vastaus:** $s_1 = 6{,}0\,\text{m}$, $s_2 = 6{,}5\,\text{m}$ ja $\Delta s = 0{,}50\,\text{m}$. Tuloksissa on kaksi merkitsevää numeroa, kuten ruutujen lukumäärissä ja ruudun koossa.
+**Vastaus:** $s_1 = 6{,}0\,\text{m}$, $s_2 = 6{,}5\,\text{m}$ ja $\Delta s = 0{,}50\,\text{m}$. Tuloksissa on kaksi merkitsevää numeroa, kuten ruudun sivussa $0{,}50\,\text{m}$. Ruutujen lukumäärät ovat tarkkoja.
 **Järkevyys:** Kolmion sivut $6{,}0\,\text{m}$, $2{,}5\,\text{m}$ ja $6{,}5\,\text{m}$ ovat suhteessa $12 : 5 : 13$. Hypotenuusa on kateettia pidempi mutta lyhyempi kuin kateettien summa $8{,}5\,\text{m}$. Matkaero ei voi olla suurempi kuin kaiuttimien väli $2{,}5\,\text{m}$, ja se on pienempi.
 
 ### b)
@@ -477,7 +477,7 @@ $$
 &\approx 1{,}00\,\text{m}
 \end{aligned}
 $$
-**Vastaus:** $\lambda \approx 1{,}00\,\text{m}$, kolme merkitsevää numeroa kuten nopeudessa.
+**Vastaus:** $\lambda \approx 1{,}00\,\text{m}$, kolme merkitsevää numeroa kuten taajuudessa $343\,\text{Hz}$. Nopeudessa $343{,}4\,\text{m/s}$ on neljä.
 **Järkevyys:** Tavallisen puheen ja musiikin aallonpituudet ovat noin $0{,}3\ldots 3\,\text{m}$, joten metri sopii. Matkaero $0{,}50\,\text{m}$ on puolet siitä.
 
 ### c)
@@ -530,21 +530,21 @@ $$ eli alkuperäinen taajuus, vaikka matkaero on silloin vain puoli aallonpituut
 **Sijoitus:** $$
 \begin{aligned}
 \lambda &= \dfrac{2 \cdot 1{,}20\,\text{m}}{4} \\
-&= 0{,}60\,\text{m}
+&= 0{,}600\,\text{m}
 \end{aligned}
 $$
-**Vastaus:** $\lambda = 0{,}60\,\text{m}$, kaksi merkitsevää numeroa kuten silmukoiden lukumäärässä ja pituudessa.
+**Vastaus:** $\lambda = 0{,}600\,\text{m}$, kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$. Silmukoiden lukumäärä on tarkka.
 **Järkevyys:** Yksi silmukka on $0{,}30\,\text{m}$ ja neljä silmukkaa $4 \cdot 0{,}30\,\text{m} = 1{,}20\,\text{m}$, kuten kuvassa.
 
 ### b)
-**Annettu:** $f = 50\,\text{Hz}$ ja $\lambda = 0{,}60\,\text{m}$ a-kohdasta
+**Annettu:** $f = 50\,\text{Hz}$ ja $\lambda = 0{,}600\,\text{m}$ a-kohdasta
 **Kysytty:** aallon nopeus $v$ narussa
 **Periaate:** Jaksollisessa aallossa $v = \lambda f$ (luku *Aaltojen synty ja eteneminen*). Seisovan aallon aallonpituus ja taajuus ovat samat kuin sen synnyttävien etenevien aaltojen.
 **Kaava:** $v = \lambda f$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
-v &= 50\,\text{Hz} \cdot 0{,}60\,\text{m} \\
+v &= 50\,\text{Hz} \cdot 0{,}600\,\text{m} \\
 &= 30\,\text{m/s}
 \end{aligned}
 $$
@@ -554,7 +554,7 @@ $$
 ### c)
 **Annettu:** $L = 1{,}20\,\text{m}$ ja $v = 30\,\text{m/s}$ b-kohdasta; silmukoiden lukumäärä $n = 3$
 **Kysytty:** täryttäjän taajuus $f_3$
-**Periaate:** Aallon nopeus narussa määräytyy narun kireydestä ja massasta, ei täryttäjän taajuudesta (luku *Aaltojen synty ja eteneminen*). Punnus ja naru pysyvät samoina, joten nopeus on edelleen $30\,\text{m/s}$. Kolmella silmukalla $L = 3\cdot\dfrac{\lambda_3}{2}$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
+**Periaate:** Aallon nopeus narussa määräytyy narun kireydestä ja pituusyksikön massasta, ei täryttäjän taajuudesta (luku *Aaltojen synty ja eteneminen*). Punnus ja naru pysyvät samoina, joten nopeus on edelleen $30\,\text{m/s}$. Kolmella silmukalla $L = 3\cdot\dfrac{\lambda_3}{2}$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
 **Kaava:** $\lambda_3 = \dfrac{2L}{3}$ ja $v = f_3\lambda_3$, joten $f_3 = \dfrac{v}{\lambda_3} = \dfrac{3v}{2L}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
@@ -566,7 +566,7 @@ f_3 &= \dfrac{3 \cdot 30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
 \end{aligned}
 $$
 **Vastaus:** Täryttäjän taajuus on $f_3 \approx 38\,\text{Hz}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Aallonpituus on nyt $\dfrac{2 \cdot 1{,}20\,\text{m}}{3} = 0{,}80\,\text{m}$, suurempi kuin $0{,}60\,\text{m}$, joten taajuuden pitää olla pienempi kuin $50\,\text{Hz}$ ($38\,\text{Hz} < 50\,\text{Hz}$).
+**Järkevyys:** Aallonpituus on nyt $\dfrac{2 \cdot 1{,}20\,\text{m}}{3} = 0{,}80\,\text{m}$, suurempi kuin $0{,}600\,\text{m}$, joten taajuuden pitää olla pienempi kuin $50\,\text{Hz}$ ($38\,\text{Hz} < 50\,\text{Hz}$).
 
 ### d)
 **Annettu:** $L = 1{,}20\,\text{m}$, $v = 30\,\text{m/s}$ ja $f = 20\,\text{Hz}$
@@ -577,7 +577,7 @@ $$
 f_1 &= \dfrac{30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
 &= 12{,}5\,\text{Hz}
 \end{aligned}
-$$ Seuraava on $f_2 = 2 f_1 = 25\,\text{Hz}$. Taajuus $20\,\text{Hz}$ on näiden välissä: $\dfrac{20\,\text{Hz}}{12{,}5\,\text{Hz}} = 1{,}6$, eli narun pituuteen mahtuisi $1{,}6$ silmukkaa. Kokonaista silmukoiden määrää ei synny, joten päihin ei saada molempiin solmua. Narussa ei synny selvää seisovaa aaltoa: se värähtelee vain pienellä, epäsäännöllisellä amplitudilla.
+$$ Seuraava on $f_2 = 2 f_1 = 25\,\text{Hz}$. Taajuus $20\,\text{Hz}$ on näiden välissä: $\dfrac{20\,\text{Hz}}{12{,}5\,\text{Hz}} = 1{,}6$, eli narun pituuteen mahtuisi $1{,}6$ silmukkaa. Kokonaista silmukoiden määrää ei synny, joten päihin ei saada molempiin solmua. Narussa ei synny selvää seisovaa aaltoa: se värähtelee vain pienellä amplitudilla.
 
 ### Yleisiä virheitä
 - a-kohdassa aallonpituudeksi otetaan $\dfrac{L}{n} = 0{,}30\,\text{m}$, vaikka silmukka on vain puoli aallonpituutta.

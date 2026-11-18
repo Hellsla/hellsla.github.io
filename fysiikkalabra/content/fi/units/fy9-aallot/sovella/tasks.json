@@ -795,7 +795,7 @@
     "fy5-14"
    ],
    "figure": "fy5-12/ruudukko-tehtava",
-   "text": "Koulun pihalle on pystytetty kaksi kaiutinta, $S_1$ ja $S_2$. Ne toistavat samasta signaaligeneraattorista samassa vaiheessa samaa siniääntä, jonka taajuus on $343\\,\\text{Hz}$. Kuvassa on piha ylhäältä katsottuna ruudukkona, ja $\\text{P}$ on piste, johon mikrofoni on asetettu. Äänen nopeus ilmassa on $343{,}4\\,\\text{m/s}$. Seinien heijastukset ja kaiuttimien eri etäisyydestä johtuva voimakkuusero jätetään huomiotta.",
+   "text": "Koulun pihalle on pystytetty kaksi kaiutinta, $S_1$ ja $S_2$. Ne toistavat samasta signaaligeneraattorista samassa vaiheessa samaa siniääntä, jonka taajuus on $343\\,\\text{Hz}$. Kuvassa on piha ylhäältä katsottuna ruudukkona, ja $\\text{P}$ on piste, johon mikrofoni on asetettu. Äänen nopeus ilmassa lämpötilassa $20\\,{}^\\circ\\text{C}$ on $343{,}4\\,\\text{m/s}$. Seinien heijastukset ja kaiuttimien eri etäisyydestä johtuva voimakkuusero jätetään huomiotta.",
    "parts": [
     {
      "id": "a",
@@ -841,7 +841,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "Matkat metreinä, kaksi merkitsevää numeroa ruutujen lukumäärien ja ruudun koon mukaan."
+       "detail": "Matkat metreinä, kaksi merkitsevää numeroa ruudun sivun $0{,}50\\,\\text{m}$ mukaan; ruutujen lukumäärät ovat tarkkoja."
       }
      ]
     },
@@ -958,7 +958,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\lambda = \\dfrac{2 \\cdot 1{,}20\\,\\text{m}}{4} = 0{,}60\\,\\text{m}$"
+       "detail": "$\\lambda = \\dfrac{2 \\cdot 1{,}20\\,\\text{m}}{4} = 0{,}600\\,\\text{m}$"
       }
      ]
     },
@@ -981,7 +981,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$v = 50\\,\\text{Hz} \\cdot 0{,}60\\,\\text{m} = 30\\,\\text{m/s}$"
+       "detail": "$v = 50\\,\\text{Hz} \\cdot 0{,}600\\,\\text{m} = 30\\,\\text{m/s}$"
       },
       {
        "key": "units_precision",
@@ -1002,7 +1002,7 @@
      },
      "criteria": [
       {
-       "text": "Perustelee, että aallon nopeus narussa ei muutu: se riippuu narun kireydestä ja massasta, ei täryttäjän taajuudesta, ja punnus ja naru pysyvät samoina.",
+       "text": "Perustelee, että aallon nopeus narussa ei muutu: se riippuu narun kireydestä ja pituusyksikön massasta, ei täryttäjän taajuudesta, ja punnus ja naru pysyvät samoina.",
        "tag": "concept",
        "points": 1
       },
