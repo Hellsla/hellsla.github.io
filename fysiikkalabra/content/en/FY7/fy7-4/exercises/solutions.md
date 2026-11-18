@@ -59,7 +59,7 @@ The directions of the current and the field are perpendicular to each other, so 
 **Given:** distance $r_1 = 4.0\,\text{cm}$, force $F_1 = 0.60\,\text{N}$, new distance $r_2 = 8.0\,\text{cm}$; the currents $I_1$ and $I_2$ and the length $l = 1.0\,\text{m}$ stay the same
 **Find:** force $F_2$ in newtons at the new distance
 **Principle:** The magnitude of the field of the other wire is $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$, and it decreases as the distance increases. The force on the second wire is $F = I_2 l B_1$, so the force is inversely proportional to the distance when the currents and the length do not change.
-**Formula:** $F = \dfrac{\mu_0 I_1 I_2 l}{2\pi r}$, so $F r$ is constant and $F_1 r_1 = F_2 r_2$, from which $F_2 = F_1 \cdot \dfrac{r_1}{r_2}$
+**Formula:** $$\begin{aligned} F &= I_2 l B_1 \\ B_1 &= \dfrac{\mu_0 I_1}{2\pi r} \\ F &= \dfrac{\mu_0 I_1 I_2 l}{2\pi r} \\ F_1 r_1 &= F_2 r_2 \\ F_2 &= F_1 \cdot \dfrac{r_1}{r_2} \end{aligned}$$
 **Conversions:** None needed: the distances are compared with each other, so the centimetres cancel.
 **Substitution:** $F_2 = 0.60\,\text{N} \cdot \dfrac{4.0\,\text{cm}}{8.0\,\text{cm}} = 0.60\,\text{N} \cdot 0.50 = 0.30\,\text{N}$
 **Answer:** $0.30\,\text{N}$, two significant figures like the data.
@@ -69,7 +69,7 @@ The directions of the current and the field are perpendicular to each other, so 
 **Given:** angle $\alpha_1 = 20^\circ$, force $F_1 = 0.050\,\text{N}$, new angle $\alpha_2 = 40^\circ$; $I$, $l$ and $B$ stay the same
 **Find:** force $F_2$ in newtons at the new angle
 **Principle:** The force is $F = I l B \sin\alpha$, and $I$, $l$ and $B$ do not change, so the force is proportional to the sine of the angle, $\sin\alpha$, and not to the angle $\alpha$ itself. Doubling the angle therefore does not double the force.
-**Formula:** $\dfrac{F_2}{F_1} = \dfrac{I l B \sin\alpha_2}{I l B \sin\alpha_1} = \dfrac{\sin\alpha_2}{\sin\alpha_1}$, so $F_2 = F_1 \cdot \dfrac{\sin\alpha_2}{\sin\alpha_1}$
+**Formula:** $$\begin{aligned} F_1 &= I l B \sin\alpha_1 \\ F_2 &= I l B \sin\alpha_2 \\ \dfrac{F_2}{F_1} &= \dfrac{\sin\alpha_2}{\sin\alpha_1} \\ F_2 &= F_1 \cdot \dfrac{\sin\alpha_2}{\sin\alpha_1} \end{aligned}$$
 **Conversions:** None needed: the force is in newtons, and the angles are given in degrees directly for the sine function.
 **Substitution:** $F_2 = 0.050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0.050\,\text{N} \cdot \dfrac{0.6428}{0.3420} = 0.09397\,\text{N}$
 **Answer:** $0.094\,\text{N}$, two significant figures like the force $0.050\,\text{N}$.
@@ -97,7 +97,7 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Reading the graph:** The data points deviate slightly from the line because of measurement uncertainty, so we use the line fitted to the points, which smooths out the deviations. The line passes through the origin and the grid point ($5.0\,\text{A}$; $1.50\,\text{g}$).
 
 We therefore read the current $I = 5.0\,\text{A}$ and the corresponding change $\Delta m = 1.50\,\text{g}$ from the line, not from a single data point: the last data point, $1.47\,\text{g}$, is slightly below the line.
-**Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
+**Formula:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Conversions:** $\Delta m = 1.50\,\text{g} = 1.50 \cdot 0.001\,\text{kg} = 0.00150\,\text{kg}$ and $l = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$
 **Substitution:** $B = \dfrac{0.00150\,\text{kg} \cdot 9.81\,\text{m/s}^2}{5.0\,\text{A} \cdot 0.040\,\text{m}} = \dfrac{0.014715\,\text{N}}{0.20\,\text{A}\cdot\text{m}} = 0.0736\,\text{T}$
 **Answer:** $0.074\,\text{T}$, two significant figures like the length $4.0\,\text{cm}$.
@@ -119,7 +119,7 @@ We therefore read the current $I = 5.0\,\text{A}$ and the corresponding change $
 **Principle:** The current flows through the rod from one rail to the other, so the $l = 8.0\,\text{cm}$ part of the rod is a current-carrying wire perpendicular to the vertical field.
 
 The force $F = I l B$ is horizontal and along the rails. The weight and the normal force of the rails cancel each other and there is no friction, so by Newton's second law $F = m a$.
-**Formula:** $I l B = m a$, so $a = \dfrac{I l B}{m}$
+**Formula:** $$\begin{aligned} \Sigma F &= m a \\ \Sigma F &= I l B \\ I l B &= m a \\ a &= \dfrac{I l B}{m} \end{aligned}$$
 **Conversions:** $l = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$ and $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$
 **Substitution:** $a = \dfrac{15\,\text{A} \cdot 0.080\,\text{m} \cdot 0.30\,\text{T}}{0.020\,\text{kg}} = \dfrac{0.36\,\text{N}}{0.020\,\text{kg}} = 18\,\text{m/s}^2$
 **Answer:** $18\,\text{m/s}^2$, two significant figures like the data.
@@ -129,7 +129,7 @@ The force $F = I l B$ is horizontal and along the rails. The weight and the norm
 **Given:** the measurements of the table $(l;\ \Delta m)$: $(2.0\,\text{cm};\ 0.35\,\text{g})$, $(3.0\,\text{cm};\ 0.51\,\text{g})$, $(4.0\,\text{cm};\ 0.71\,\text{g})$, $(5.0\,\text{cm};\ 0.86\,\text{g})$ and $(6.0\,\text{cm};\ 1.04\,\text{g})$; current $I = 2.0\,\text{A}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the mean of the magnetic flux density $B_{\text{mean}}$ in teslas and the spread
 **Principle:** When a current flows in the field, a force $F = I l B$ acts on the wire, and the balance measures it as a change in weight, $F = \Delta m \cdot g$. Each measurement gives its own value of $B$. The results are usually not exactly the same because of measurement uncertainty, so they are averaged.
-**Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
+**Formula:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Conversions:** $\Delta m$ from grams to kilograms and $l$ from centimetres to metres: for example $0.35\,\text{g} = 0.35 \cdot 10^{-3}\,\text{kg}$ and $2.0\,\text{cm} = 0.020\,\text{m}$.
 **Substitution:** First row: $B = \dfrac{0.35 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{A} \cdot 0.020\,\text{m}} = 0.0858\,\text{T}$. The other rows give in the same way $0.0834\,\text{T}$, $0.0871\,\text{T}$, $0.0844\,\text{T}$ and $0.0850\,\text{T}$. The sum is $0.4257\,\text{T}$, so $B_{\text{mean}} = 0.4257\,\text{T} : 5 = 0.08513\,\text{T}$. The spread is $$\begin{aligned} &(0.0871\,\text{T} - 0.0834\,\text{T}) : 2 \\ &= 0.0018\,\text{T} \end{aligned}$$.
 **Answer:** $B_{\text{mean}} = 0.085\,\text{T}$, two significant figures like the current and the lengths; the spread is approximately $0.002\,\text{T}$, so the result is $(0.085 \pm 0.002)\,\text{T}$. The spread is a simple estimate of the variation of the measurements, not the uncertainty of the mean.
@@ -141,7 +141,7 @@ The force $F = I l B$ is horizontal and along the rails. The weight and the norm
 **Principle:** In the formula $F = I l B$ the length $l$ is only the length of the part of the wire that is in the field, because the field exerts a force only on that part.
 
 The student used the length of the whole wire, $6.0\,\text{cm}$, although only $2.5\,\text{cm}$ is in the field. The divisor was therefore too large and $B$ too small.
-**Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
+**Formula:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Conversions:** $\Delta m = 0.31\,\text{g} = 0.31 \cdot 10^{-3}\,\text{kg}$ and $l = 2.5\,\text{cm} = 0.025\,\text{m}$
 **Substitution:** $B = \dfrac{0.31 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{3.0\,\text{A} \cdot 0.025\,\text{m}} = \dfrac{3.041 \cdot 10^{-3}\,\text{N}}{0.075\,\text{A}\cdot\text{m}} = 0.04055\,\text{T}$
 **Answer:** a) The student divided the force by the length of the whole wire, $6.0\,\text{cm}$, instead of the length in the field, $2.5\,\text{cm}$. b) $B = 0.041\,\text{T}$, two significant figures like the change in the reading $0.31\,\text{g}$.
@@ -154,7 +154,7 @@ The student used the length of the whole wire, $6.0\,\text{cm}$, although only $
 
 When $B$ and $l$ do not change, $F$ is directly proportional to the current $I$. The line passes through the origin, because without current there is no force on the coil.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin and the point $(1.00\,\text{A};\ 5.8\,\text{N})$. The slope is read from the line, not from two adjacent data points.
-**Formula:** The slope of the line is $k = \dfrac{F}{I} = B l$, so $l = \dfrac{k}{B}$
+**Formula:** $$\begin{aligned} F &= I l B \\ k &= \dfrac{F}{I} = B l \\ l &= \dfrac{k}{B} \end{aligned}$$
 **Conversions:** None needed: $\text{N}/\text{A} = \text{T}\cdot\text{m}$, so $k : B$ is in metres.
 **Substitution:** $k = \dfrac{5.8\,\text{N} - 0\,\text{N}}{1.00\,\text{A} - 0\,\text{A}} = 5.8\,\dfrac{\text{N}}{\text{A}}$ and $l = \dfrac{5.8\,\text{N/A}}{1.1\,\text{T}} = 5.27\,\text{m}$
 **Answer:** $5.3\,\text{m}$, two significant figures like the field $1.1\,\text{T}$. Because the fit is done by eye, an answer of $5.1\text{–}5.5\,\text{m}$ is good.
@@ -168,7 +168,7 @@ For example, with a current of $1.0\,\text{A}$ the force is $5.8\,\text{N}$, whi
 **Principle:** The wires are slack when their tension is zero. Then only the weight, downwards, and the magnetic force act on the rod. The rod is at rest, so by Newton's first law the forces must cancel: the magnetic force must point upwards and equal the weight.
 
 The field is horizontal and the rod is perpendicular to it, so the force $I l B$ is vertical; the direction of the current is chosen so that the force points upwards.
-**Formula:** $I l B = m g$, so $I = \dfrac{m g}{l B}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= F_\text{B} - m g = 0 \\ F_\text{B} &= I l B \\ I l B &= m g \\ I &= \dfrac{m g}{l B} \end{aligned}$$
 **Conversions:** $m = 12\,\text{g} = 12 \cdot 0.001\,\text{kg} = 0.012\,\text{kg}$ and $$\begin{aligned} l &= 20\,\text{cm} \\ &= 20 \cdot 0.01\,\text{m} \\ &= 0.20\,\text{m} \end{aligned}$$
 **Substitution:** $I = \dfrac{0.012\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.20\,\text{m} \cdot 0.25\,\text{T}} = \dfrac{0.11772\,\text{N}}{0.050\,\text{T}\cdot\text{m}} = 2.354\,\text{A}$
 **Answer:** $2.4\,\text{A}$, two significant figures like the data.
@@ -190,7 +190,7 @@ The field is horizontal and the rod is perpendicular to it, so the force $I l B$
 **Principle:** Split the field into a horizontal and a vertical component. The wire runs east–west by the compass, so it is perpendicular to the horizontal component, which points to magnetic north, and also perpendicular to the vertical component.
 
 The vertical component exerts on the wire a horizontal force, which does not support the wire. The horizontal component $B_\text{horizontal} = B \cos 74^\circ$ points to magnetic north, and by the right-hand rule a current flowing east experiences from it a vertical force upwards. The wire stays in place when this force equals the weight.
-**Formula:** $I l B \cos 74^\circ = m g$, so $I = \dfrac{m g}{l B \cos 74^\circ}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= F_\text{B} - m g = 0 \\ F_\text{B} &= I l B \cos 74^\circ \\ I l B \cos 74^\circ &= m g \\ I &= \dfrac{m g}{l B \cos 74^\circ} \end{aligned}$$
 **Conversions:** $m = 2.7\,\text{g} = 2.7 \cdot 0.001\,\text{kg} = 0.0027\,\text{kg}$ and $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$. Finally $1\,\text{kA} = 1000\,\text{A}$.
 **Substitution:** $I = \dfrac{0.0027\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.0\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \cos 74^\circ} = \dfrac{0.026487\,\text{N}}{1.4609 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1813\,\text{A} = 1.813\,\text{kA}$
 **Answer:** $1.8\,\text{kA}$, two significant figures like the data.
@@ -203,7 +203,7 @@ The vertical component exerts on the wire a horizontal force, which does not sup
 
 By Newton's second law $m a = I l B - \mu m g$, that is, $a = kI + b$: the acceleration is a linear function of the current. Friction makes the constant term negative, so the line does not pass through the origin: the acceleration of the moving rod is positive only when $I l B > \mu m g$.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(4.0\,\text{A};\ 1.78\,\text{m/s}^2)$ and $(12.0\,\text{A};\ 9.26\,\text{m/s}^2)$, and it crosses the vertical axis at $-1.96\,\text{m/s}^2$. The points are read from the line and chosen far apart from each other.
-**Formula:** $a = \dfrac{l B}{m} \cdot I - \mu g$, so the slope is $k = \dfrac{l B}{m}$, from which $B = \dfrac{k m}{l}$, and the constant term is $b = -\mu g$, from which $\mu = -\dfrac{b}{g}$
+**Formula:** $$\begin{aligned} \Sigma F &= m a \\ F_\mu &= \mu N = \mu m g \\ \Sigma F &= I l B - \mu m g \\ a &= \dfrac{l B}{m} \cdot I - \mu g \\ k &= \dfrac{l B}{m} \\ B &= \dfrac{k m}{l} \\ b &= -\mu g \\ \mu &= -\dfrac{b}{g} \end{aligned}$$
 **Conversions:** $m = 45\,\text{g} = 0.045\,\text{kg}$ and $l = 12\,\text{cm} = 0.12\,\text{m}$
 **Substitution:** $k = \dfrac{9.26\,\text{m/s}^2 - 1.78\,\text{m/s}^2}{12.0\,\text{A} - 4.0\,\text{A}} = 0.935\,\dfrac{\text{m/s}^2}{\text{A}}$, so $B = \dfrac{0.935\,\text{m/s}^2\text{/A} \cdot 0.045\,\text{kg}}{0.12\,\text{m}} = 0.351\,\text{T}$. In addition $\mu = \dfrac{1.96\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.200$.
 **Answer:** $B = 0.35\,\text{T}$, two significant figures like the mass and the length; the coefficient of sliding friction is $\mu = 0.20$.
@@ -215,7 +215,7 @@ By Newton's second law $m a = I l B - \mu m g$, that is, $a = kI + b$: the accel
 **Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other.
 
 Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
-**Formula:** $I l B_1 = m g$, that is, $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, so $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ I l B_1 &= m g \\ B_1 &= \dfrac{\mu_0 I}{2\pi r} \\ \dfrac{\mu_0 I^2 l}{2\pi r} &= m g \\ I^2 &= \dfrac{2\pi r m g}{\mu_0 l} \\ I &= \sqrt{\dfrac{2\pi r m g}{\mu_0 l}} \end{aligned}$$
 **Conversions:** $m = 3.0\,\text{g} = 0.0030\,\text{kg}$ and $r = 1.0\,\text{cm} = 0.010\,\text{m}$
 **Substitution:** The denominator is $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0.50\,\text{m} = 6.283 \cdot 10^{-7}\,\text{Vs/A}$. The numerator is $$\begin{aligned} 2\pi r m g &= 2\pi \cdot 0.010\,\text{m} \\ &\cdot 0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 1.849 \cdot 10^{-3}\,\text{N}\cdot\text{m} \end{aligned}$$. So $I = \sqrt{\dfrac{1.849 \cdot 10^{-3}}{6.283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54.25\,\text{A}$
 **Answer:** a) The currents flow in opposite directions, and $I = 54\,\text{A}$, two significant figures like the mass and the distance.
