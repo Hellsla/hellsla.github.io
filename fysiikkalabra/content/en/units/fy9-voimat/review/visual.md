@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 45c4a34b90d038a0
-SCOPE: delta: sovella s7 "Yleisiä virheitä" last bullet (one-row aligned block -> inline formula), round 2; rest not re-judged.
+CONTENT-HASH: af433df484a995be
+SCOPE: delta: sovella s7 b) Substitution, row "(9.81 m/s² − 1.5 m/s²)" split into two aligned rows (solutions.md lines 498-500), round 3; rest not re-judged.
 
 ## Blocking
-None. The round 1 Major is resolved: solutions.md line 575 now has `$100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$` inline inside the sentence, so the bullet reads as one unbroken line. Numbers and units are unchanged.
+None. Meaning, numbers, order and units unchanged (75.0 kg · (9.81 m/s² − 1.5 m/s²) = 75.0 kg · 8.31 m/s² = 623 N); structure matches the fi version (\quad / \qquad indents). Nothing new appears.
 
 ## Polish
-Round 1 Polish items stay recorded and are not re-raised.
+Earlier Polish stays recorded and is not re-raised.
 
 ## Checked
-- Packet regenerated for en; hash at start and end equal (45c4a34b90d038a0).
-- Edited bullet in en: inline math, no display block left in a list sentence; parentheses and siblings intact.
-- Neighbouring bullets in "Yleisiä virheitä" unchanged and inline-formatted consistently.
-- No other change in the unit since round 1 that affects visuals (hash stable during review).
+- Hash at start and end equal (af433df484a995be).
+- aligned block closes properly; lines stay short and do not overflow.
+- en formulas match fi line by line, apart from the decimal point.
+- Following lines (8.31, 623 N) and Answer block untouched.

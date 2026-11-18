@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 45c4a34b90d038a0
-SCOPE: delta: round 2 (en), s7 "Yleisiä virheitä" last bullet changed from a one-row aligned block to an inline formula; s7, s8 and s1-s6 otherwise not re-judged.
+CONTENT-HASH: af433df484a995be
+SCOPE: delta: round 3 (en), s7 b) Substitution row split in two aligned rows; everything else not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- s8 b) Sijoitus: the printed chain `(-1,14 m/s²) · 2,0 s = -2,29 m/s` does not multiply out (-1,14 · 2,0 = -2,28); the value comes from the unrounded a = -1,1433. Write a = -1,143 m/s² in the chain or note the exact value. Same in all languages.
-- s8 d) Järkevyys sums to 12,25 m (2,29 + 6,87 + 3,09) while the Sijoitus row gives 12,2 m; use 12,23 (unrounded parts) or round the same way in both.
-- s7 d) k ≈ 0,31 kg/m in one place and 0,315 / 0,3147 in the next; use one value consistently.
-- s7 precision wording: a) and c) justify two significant figures "kuten luetuissa nopeuksissa", but 18,6 and 44,5 m/s have three; reword the reason (Δv = 6,0 m/s, F_v with two figures). Answers are right.
+- Earlier Polish stays recorded: s8 b) chain -1.14 · 2.0 = -2.29 (unrounded a); s8 d) sum 12.25 vs 12.2 m; s7 d) k 0.31 vs 0.315; s7 precision wording (18.6 and 44.5 m/s have three figures).
 
 ## Checked
-git diff of unit content (excluding review/) between the round 1 fix commit's parent and now: only solutions.md line 575, formatting only. Same numbers and units: 100 : 75 · 48 m/s = 64 m/s, still marked as the erroneous proportional-to-mass claim, correct contrast v_t ∝ √m. No other content difference. Hash differs from the round 1 report because of that edit and the review files. Round 1 Polish items stay recorded.
+git diff of unit content: only solutions.md s7 b) Substitution. The line `\cdot (9.81 m/s^2 - 1.5 m/s^2)` became `\cdot (9.81 m/s^2` and `\qquad - 1.5 m/s^2)`. Same numbers, order and units, followed by the unchanged 75.0 kg · 8.31 m/s² = 623 N. Matches the fi versions. Nothing new appears. 9.81 - 1.5 = 8.31 and 75.0 · 8.31 = 623 are correct. Hash at start and end: af433df484a995be.
