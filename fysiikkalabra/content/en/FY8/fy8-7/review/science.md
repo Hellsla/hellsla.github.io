@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 6762f2ae91326a1a
+VERDICT: PASS
+CONTENT-HASH: 2c79b025b43f5d01
 
 ## Blocking
-- A (quantitative correctness, internal consistency): content/en/FY8/fy8-7/inquiry.json:33 and :37, Pohdinta retrieval "Review: the photon of a transition". The prompt (l. 28) now says a helium-neon laser's neon atom emits at $633\,\text{nm}$, but both feedbacks (the correct option and the "energy of the upper level $E_2$" distractor) still say "the wavelength $650\,\text{nm}$ corresponds to the energy $\tfrac{hc}{\lambda} \approx 1.91\,\text{eV}$". The student is told a wavelength the task does not give, with an energy that does not belong to the He-Ne transition. Fix: in both feedbacks write $633\,\text{nm}$ and $\approx 1.96\,\text{eV}$ (recomputed $hc/\lambda = 1.959\,\text{eV}$; `kert-633-eV` in lesson-answers.py already gives this, and lesson.md l. 281 and l. 322 use $1.96\,\text{eV}$ and $633\,\text{nm}$ for the same laser).
+- none
 
 ## Polish
-- lessons/FY8/fy8-7/lesson-answers.py:37–38 — `kert-656-eV` and its comment "hydrogen 3 -> 2" belong to the version before last; no text uses them any more — remove them, or relabel them if something else still does.
+- none
 
 ## Checked
-- Hash 6762f2ae91326a1a (`--lang en`) at start and end; the delta was judged in context (prompt, the three changed choices, lesson-answers.py, lesson.md He-Ne passages).
-- Prompt physics: neon is the lasing atom of a He-Ne laser, the 633 nm line is an atomic level-to-level transition, so the round-1 finding (a diode laser described with atomic levels) is resolved.
-- Recomputed with h = 6.626e-34 J s, c = 2.998e8 m/s, e = 1.602e-19 C: 633 nm → 1.959 eV, 650 nm → 1.908 eV, 656 nm → 1.890 eV; `kert-633-eV` agrees.
-- Exactly one correct option ($hf = E_2 - E_1$); the "energy of upper level" distractor is wrong and its feedback names the reason correctly; the same-direction distractor's feedback (spontaneous emission in random directions) is right and fits "returns by itself" in the prompt.
-- Consistency with the worked example (1.96 eV, 1.0 mW, 633 nm) and the He-Ne photo caption: agree once the feedback numbers are fixed.
+- The lesson changed twice while I was reviewing it (6762f2ae… → c3f5dc6c… → 2c79b025…: commits 87bff84aaa feedbacks, 4d6b371f72 lesson-answers clean-up). I reviewed it again against the current files, and the hash is the same at the end.
+- Pohdinta retrieval prompt (inquiry.json:28): neon is the atom that lases in a helium-neon laser, and 633 nm is a transition between atomic levels. The round-1 finding (atomic levels used for a diode laser) is resolved.
+- Both feedbacks (l. 33 correct option, l. 37 "energy of upper level" distractor) now say $633\,\text{nm}$ and $\approx 1.96\,\text{eV}$, which matches the prompt. In the packet's diff they still said 650 nm / 1.91 eV, but that was already fixed on disk.
+- Recomputed with h = 6.626e-34 J s, c = 2.998e8 m/s, e = 1.602e-19 C: 633 nm gives 1.959 eV. `kert-633-eV` = 1.958921 agrees. The stale `kert-656-eV` / `kert-650-eV` keys are gone, and no text refers to them.
+- Assessment: exactly one correct option ($hf = E_2 - E_1$). The upper-level distractor is wrong, and its feedback gives the right reason. The same-direction distractor's feedback (spontaneous emission goes in random directions; "light that atoms emit by themselves spreads in all directions") is right and fits "returns by itself" in the prompt.
+- Consistency: the worked example (lesson.md l. 281, 322: 1.96 eV, 633 nm, 1.0 mW) and the He-Ne photo caption (633 nm) agree with the retrieval item.
+- Other numbers in lesson-answers.py that this delta touches still print unchanged (mis-650 1.91 eV, ex-lambda 632.65 nm).

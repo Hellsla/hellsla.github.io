@@ -1,13 +1,14 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 582d3e8f8eaed80e
 
 ## Blocking
-- [Major] fy8-5-stage-sovella-390-1 (Esimerkit, box title) — "Esimerkki 1: Siirtymä 3extdo2extp" renders as garbled italic text, backslashes lost; source `example-names.json` line 105 `$3\\text{d} \\to 2\\text{p}$` — broken notation in a heading, only math title in the course names — put the title in words ("Siirtymä 3d-tilalta 2p-tilalle" with $3\text{d}$ in maths only if the shared title renderer is fixed) or fix the renderer (shared file, runs alone).
 
 ## Polish
-- none
 
 ## Checked
-- Delta: inquiry prompt (Pohdinta/herata-390), theory-1280-1 (paragraph cuts: layout intact, figures fine), sovella-390-1.
+- Round 2 delta: the round 1 Major only. Fresh captures made with screenshot.py fy8-5 (hash 582d3e8f8eaed80e at start and end).
+- Opened fy8-5-stage-sovella-390-1.png: the box title reads "Esimerkki 1: Siirtymä 3d → 2p", plain and legible. The 3d and 2p in the problem text and the formulas render correctly. Nothing clipped at 390 px.
+- No other captures opened this round. Figures and the rest of the layout were not re-judged; the source change is a title string only.
+
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
