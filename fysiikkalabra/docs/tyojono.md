@@ -103,6 +103,7 @@ Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
 ## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
+Varattu: claude/8k-teacher-text
 Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksytyn diffin (esim. `docs/teacher-text.tsv`),
 `scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
