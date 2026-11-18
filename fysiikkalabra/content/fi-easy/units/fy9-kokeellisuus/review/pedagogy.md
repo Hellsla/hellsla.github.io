@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3cbf8fb8c46c9eb8
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: fc1b77921967a9ae
+SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7 and -s8; older tasks untouched
+
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- None. The round-1 item is fixed: s7 c now reads "Perustele lisäksi, miten nollavirhe vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjan sovitetulta suoralta." The answer is no longer given; rubric and solution agree.
 
 ## Polish
-- (none)
+- "sovitetulta suoralta" is slightly heavy for S2 level; "suoralta, joka sovitetaan koko mittaussarjaan" would be plainer. Optional.
+- The terms "systemaattinen virhe" and "nollavirhe" are unglossed but taught in the unit.
 
 ## Checked
-- sovella/solutions.md a Periaate: "Lähtökitka eli täysin kehittynyt lepokitka on μ0 N. Se riippuu siis pinnoista ja siitä, kuinka lujaa kenkä painaa lattiaa." The pronoun "Se" still points to the right quantity and the reasoning towards μ0 is intact.
-- No task added in fi-easy.
+- Read the round-1 report first; grepped the rebuilt fi-easy packet for s7 c text, criteria, solution and common mistakes: sentences short, one instruction each, numbers same as the Finnish, nothing newly broken.
+- Rounding, no revealed structure, aligned rows, language-neutral unit field re-checked: fine.
+- Hash at start and end: fc1b77921967a9ae.

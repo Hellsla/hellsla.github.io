@@ -375,6 +375,16 @@ def staged_example(lesson_html):
     return lesson_html[:m.start(2)] + body + lesson_html[m.end(2):]
 
 
+BOX_SECTIONS = ("Yleinen virhekäsitys", "Tiivistelmä")
+
+
+def boxed_section(piece):
+    """A theory section as a closed <details> box: its heading becomes the summary (opens with Enter/Space), the rest the body."""
+    m = re.match(r'<h3 class="theory-h">(.*?)</h3>(.*)\Z', piece, flags=re.S)
+    if not m: return piece
+    return f'<details class="theory-box"><summary>{m.group(1)}</summary><div class="box-body">{m.group(2)}</div></details>'
+
+
 def named_sections(html):
     """`## Kaava: Lämpömäärä` is shown as "Lämpömäärä"; the key stays in data-section for the layout (inquiry.heading)."""
     def sub(m):
@@ -1208,6 +1218,8 @@ def build_language(lang):
             if kc_section and "Tiivistelmä" in sections:   # the chapter's concept chips after the summary list (concept_cards.chips)
                 tv = sections["Tiivistelmä"]; kc = concept_cards.chips(meta["course"], meta["id"], T, lang)
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
+            for key in BOX_SECTIONS:                      # "Yleinen virhekäsitys" and Tiivistelmä: each in its own closed box (work queue 8, teacher 2026-11-13)
+                if key in sections: sections[key] = boxed_section(sections[key])
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,
@@ -1633,6 +1645,7 @@ for _page in SITE.rglob("*.html"):
         _new = _new.replace('<script id="fl-strings" type="application/json">{"js"', f'<script id="fl-strings" type="application/json">{{"audio": "{_page.stem}", "js"', 1)
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
     if 'class="ch-box"' in _new: _new = tablefit.cards(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # a card's very long word breaks at a syllable (2026-11-11)
+    if 'class="kc-item"' in _new: _new = tablefit.kc_items(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # the card list without scripts (work queue 8d)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
     expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"] + card_files + assets

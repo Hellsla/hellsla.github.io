@@ -2,6 +2,7 @@
 
   python scripts/round.py <id>[,<id>…] [--exercises] [--lang fi,en,…] [--batch] [--skip-checks]
   python scripts/round.py <id>[,<id>…] --finish [--exercises] [--lang …]
+  python scripts/round.py <unit id>[,…] [--sovella] [--lang …] [--finish]     a course unit (FY9, scripts/units.py)
 
 Runs, in this order, what /lesson, /exercises and /quality-audit used to run one command (one orchestrator turn) at a time:
   1. the generated files CI compares: docs/figures/catalog.json (figcat.py build), docs/assessment/<COURSE>.md and
@@ -18,6 +19,16 @@ Runs, in this order, what /lesson, /exercises and /quality-audit used to run one
      the lesson diffs; an exercise set still gets its own packet).
 --finish instead regenerates the files of step 1, runs reviews.py verify (as CI does; a few minutes), prints each id's
 status in every language and rebuilds site/ (build.py --all, build.py) and palautus/ (palautus_tasks.py).
+
+A course unit id (fy9-liike; work queue 0j, 2026-11-18) is recognised by its folder content/<lang>/units/<id>/ and runs the
+same round for the unit's Sovella task set, which is part of the unit's hash and reviews (--sovella is accepted and
+changes nothing: a unit has no other review packet): figcat.py build; units.py check, practice.py check and figures
+--check; per language reviews.py carry-item unit <id> --lang <l> (a unit's reviews are full or carried, no delta);
+screenshot.py <id> --lang <l> --if-stale where the visual review is needed; practice.py packet units/<id> --role
+science|pedagogy|visual --lang <l> for every needed review; the units.py hash of every language is printed for the
+reviewers' reports. --finish: verify, each language's unit status, build.py --all, build.py, palautus_tasks.py. The
+assessment and coverage files belong to a course, so a unit alone regenerates only the figure catalogue. Lesson ids and
+unit ids can be mixed in one call.
 
 Before anything else it checks the environment (work queue 0d): a shallow clone (a cloud session clones with limited
 history, and reviews.py scope then answers FULL for "not in git history") is deepened with git fetch --unshallow, and a
@@ -53,6 +64,32 @@ def languages(lid, only):
     return [l for l in langs if not only or l in only]
 
 
+def is_unit(uid):
+    import units
+    return any((units.folder(uid, l) / "unit.json").is_file() for l in units.languages())
+
+
+def unit_languages(uid, only):
+    import units
+    return [l for l in units.languages() if (units.folder(uid, l) / "unit.json").is_file() and (not only or l in only)]
+
+
+def has_sovella(uid, lang):
+    import units
+    return (units.folder(uid, lang) / "sovella" / "tasks.json").is_file()
+
+
+def parse_item_carry(lines):
+    """{reviewer: (mode, carried now?)} from reviews.py carry-item's lines: an item review is full or none (no delta)."""
+    res = {}
+    for l in lines:
+        m = re.match(r"(science|pedagogy|visual): (.*)", l)
+        if m:
+            t = m.group(2)
+            res[m.group(1)] = ("none", True) if t.startswith("carried over") else ("none", False) if t == "already current" else ("full", False)
+    return res
+
+
 def lang_args(lang):
     return [] if lang == courses.SOURCE_LANG else ["--lang", lang]
 
@@ -64,7 +101,7 @@ def changed_generated():
 
 def generate(ids, log, say):
     bad = 0
-    for args in [["figcat.py", "build"]] + [[s, c] for c in sorted({courses.course_of(i) for i in ids}) for s in ("assessment.py", "coverage.py")]:
+    for args in [["figcat.py", "build"]] + [[s, c] for c in sorted({courses.course_of(i) for i in ids if not is_unit(i)}) for s in ("assessment.py", "coverage.py")]:
         rc, out = run(args, log)
         if rc: bad += 1; say(f"FAIL {' '.join(args)}: " + (out[-1] if out else f"exit {rc}"))
     ch = changed_generated()
@@ -123,10 +160,56 @@ def preflight():
     return 0
 
 
+def unit_round(uids, only, skip_checks, log, say):
+    """The round's steps 2–5 for course units (work queue 0j): checks, carry, captures, packets of the Sovella task set.
+    Returns the number of failures."""
+    bad, failed, needed = 0, set(), {}
+    if uids and not skip_checks:
+        rc, out = run(["units.py", "check"], log)
+        for uid in uids:
+            hits = [l for l in out if uid in l]
+            say(f"{uid} unit checks: " + ("FAIL" if hits else "ok")); [say("  " + l) for l in hits[:30]]
+            if hits: failed.add(uid)
+        if rc and not failed: bad += 1; say("FAIL units.py check (another unit): " + (out[-1] if out else f"exit {rc}"))
+        for uid in uids:
+            for lang in unit_languages(uid, only):
+                if not has_sovella(uid, lang): continue
+                for args in (["practice.py", "check", f"units/{uid}"], ["practice.py", "figures", f"units/{uid}", "--check", "--lang", lang]):
+                    rc, out = run(args, log)
+                    if rc: failed.add(uid); say(f"FAIL {' '.join(args)}"); [say("  " + l) for l in [l for l in out if l.strip() and not l.startswith("OK")][:10]]
+        bad += len(failed)
+        if failed: say(f"no packets for {', '.join(sorted(failed))}: fix the failing checks first")
+    for uid in [u for u in uids if u not in failed]:
+        for lang in unit_languages(uid, only):
+            rc, out = run(["reviews.py", "carry-item", "unit", uid, "--lang", lang], log)
+            if rc: bad += 1; say(f"FAIL carry-item {uid} {lang}: {out[-1] if out else rc}"); continue
+            res = parse_item_carry(out)
+            need = {n: m for n, (m, _) in res.items() if m != "none"}
+            carried = [n for n, (_, c) in res.items() if c]
+            _, hout = run(["units.py", "hash", uid, "--lang", lang], log)
+            say(f"{uid} [{lang}] hash {hout[-1] if hout else '?'}: " + (", ".join(sorted(need, key=ROLES.index)) + " review needed" if need else "nothing to review")
+                + (f"; carried now: {', '.join(carried)}" if carried else ""))
+            if need and not has_sovella(uid, lang): say(f"  {uid} [{lang}] has no Sovella task set: no packet to make (unit text packets do not exist)"); continue
+            if need: needed[(uid, lang)] = need
+    for (uid, lang), need in sorted(needed.items()):
+        if "visual" in need:
+            rc, out = run(["screenshot.py", uid, "--lang", lang, "--if-stale"], log)
+            say(f"captures {uid} [{lang}]: " + ("ok" if rc == 0 else "FAIL " + (out[-1] if out else "")) + (f" ({out[-1]})" if rc == 0 and out else ""))
+            if rc: bad += 1; need.pop("visual")
+    for role in ROLES:
+        for (uid, lang), need in sorted(needed.items()):
+            if role not in need: continue
+            rc, out = run(["practice.py", "packet", f"units/{uid}", "--role", role, "--lang", lang], log)
+            say(f"packet {role} {uid} [{lang}]: " + (out[-1] if rc == 0 and out else f"FAIL {out[-1] if out else rc}")); bad += rc != 0
+    return bad
+
+
 def main(a):
     if not a or a[0].startswith("-"): sys.exit(__doc__)
     if preflight(): return 1
     ids = a[0].split(",")
+    uids = [i for i in ids if is_unit(i)]
+    ids = [i for i in ids if i not in uids]             # lesson ids; the units run their own round
     only = a[a.index("--lang") + 1].split(",") if "--lang" in a else []
     parts = ["exercises"] if "--exercises" in a else ["lesson", "exercises"]
     LOG.parent.mkdir(exist_ok=True)
@@ -134,7 +217,7 @@ def main(a):
     def say(s): summary.append(s); print(s, flush=True)
     with LOG.open("w") as log:
         for lid in ids: courses.find_lesson(lid)        # exits with its own message for an unknown id
-        bad += generate(ids, log, say)
+        bad += generate(ids + uids, log, say)
         if "--finish" in a:
             rc, out = run(["reviews.py", "verify"], log)
             errs = [l for l in out if l.startswith("ERROR")]
@@ -144,6 +227,11 @@ def main(a):
                 for lang in languages(lid, only):
                     _, out = run(["reviews.py", "status", lid, *lang_args(lang)], log)
                     say(f"[{lang}] " + (out[-1] if out else "?"))
+            import units
+            for uid in uids:
+                for lang in unit_languages(uid, only):
+                    st = units.status(uid, lang)
+                    say(f"[{lang}] {uid}: {st['state']} ({', '.join(f'{k}={v}' for k, v in st['reports'].items())})")
             for args in (["build.py", "--all"], ["build.py"], ["palautus_tasks.py"]):   # palautus/ is generated from the built pages (8s)
                 rc, out = run(args, log)
                 warn = [l for l in out if "WARNING" in l]
@@ -199,7 +287,8 @@ def main(a):
         for rc, what, out in packets:
             path = next((l for l in reversed(out) if re.match(r"\S+\.md: ", l)), out[-1] if out else "")
             say(f"packet {what}: " + (path if rc == 0 else "FAIL " + path)); bad += rc != 0
-        if not needed and not failed: say("no review needed: every PASS holds for the current content")
+        if not needed and not failed and not uids: say("no review needed: every PASS holds for the current content")
+        bad += unit_round(uids, only, "--skip-checks" in a, log, say)
         say(f"full output: {LOG.relative_to(ROOT)}")
     return 1 if bad else 0
 

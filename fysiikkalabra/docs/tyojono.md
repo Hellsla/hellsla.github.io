@@ -64,27 +64,25 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
+FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
-VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; `round.py` ei tunne unit-tunnuksia, kierros käsin: `practice.py packet units/<id>`, `units.py hash`); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
+VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; kierros: `python scripts/round.py fy9-<id>` ja `--finish` (0j; unitin Sovella-sarja on `figcat`-omistaja `<unit>-sovella`, joten uusi unit-kuva kelpaa)); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
+Sivupohjaosa tehty (PR #713: `boxed_section` build.py, `details.theory-box`; test_home.py avaa laatikon näppäimellä). Jäljellä vain sisältötyö luku kerrallaan.
 Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei päde (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` 5.2).
 "Yleinen virhekäsitys" ja Tiivistelmä omiin suljettuihin `<details>`-laatikkoihinsa (näppäimistöllä avattavat); sivupohjan
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686), FY8 (luvut 1–16, Sovella ja koe, 0f-PR claude/fy8-0f). Jäljellä
-järjestyksessä FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686), FY8 (luvut 1–16, Sovella ja koe, 0f-PR claude/fy8-0f), FY10 (ei jaettavaa: kurssilla on vain tutkimukset ja TVT-ohjeet, joissa ei ole esimerkkien vaiheita eikä ratkaisujen vaiheita, ei `<!-- vaihe -->`-rivejä eikä Annettu/Kysytty-vaiheita; pitkät kappaleet ovat ohjeproosaa säännön ulkopuolella; vain suomeksi, tutkimuksista ei ole käännöksiä). Jäljellä
+järjestyksessä FY9. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
-
-## 8d. Käsitekorttien pitkät otsikot katkeavat keskeltä sanaa (opettaja 2026-11-13)
-"Ominaislämpökapasiteet|ti": korjaus kerran `templates/kortit.js`:ssä tavutuksella (pehmeät tavuviivat tai `hyphens:auto` + `lang`),
-niin että katko osuu tavurajalle viivalla; koskee myös kasitteet.html, Kertauspakka ja Varmista käsitteet; `test_home.py`: 360 ja 1280 px. Sivupohja, ei katselmointeja.
 
 ## 8e. Kuvien asettelu (opettaja 2026-11-13) — toteutetaan kohdan 11 U3:n osana
 Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulukkoa vierekkäin, kuva aina selittämänsä kappaleen
@@ -157,7 +155,7 @@ Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
-Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY6, FY9): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
+Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY9; FY6 tehty §8t): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
 Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien tarkistus hyväksyy poikkeaman molempiin suuntiin.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)

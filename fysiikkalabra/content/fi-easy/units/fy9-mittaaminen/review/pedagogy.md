@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 54a1d6c9bb937e88
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (a5651d1a4e826af6); earlier findings kept unless named fixed.
+CONTENT-HASH: ce981cbb7ceb9e3a
+SCOPE: delta: round 3, the fixes of round 2 in s7 and s8; older tasks untouched
+
+Round 3: delta against the version round 2 reviewed (fix round 2).
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none new; round-1 findings stand)
+- s7 a names the model ("jousivakio", "sovita suora"); acceptable at part-a level.
 
 ## Checked
-- Only change: header "mistä tunnistan menetelmän?", which fits rows that are methods (fi PNG opened: eight rows, nothing clipped). No teacher.md sentence to check.
+- Read the fi-easy packet's s7 and s8 task and rubric text. s8 a's constant-term criterion is now in short sentences ("Se on pieni. ... Mikään origon kautta kulkeva suora ei sovi. ... vakiotermi ei vaikuta kulmakertoimeen"): easy to follow, observable, same numbers as fi.
+- s7 c formula rows are aligned, same values as fi.
+- Newly broken: nothing; no revealed structure, results rounded to the data, language-neutral units.
+- Hash re-checked: ce981cbb7ceb9e3a.
