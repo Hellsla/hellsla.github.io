@@ -1222,7 +1222,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}288\\,\\text{J} + 0{,}081\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
+       "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}72\\,\\text{W} \\cdot 0{,}40\\,\\text{s} + 0{,}41\\,\\text{W} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}29\\,\\text{J} + 0{,}082\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
       },
       {
        "key": "units_precision",

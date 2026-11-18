@@ -1154,7 +1154,7 @@
         "fy6-6"
       ],
       "figure": "fy7-5/flux-task-2",
-      "text": "Käämissä on $120$ kierrosta. Käämin päät on kytketty yhteen vastuksen kautta. Koko virtapiirin resistanssi on $8{,}0\\,\\Omega$. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Vuon positiiviselle suunnalle on valittu suunta. Vuo on negatiivinen, kun se kulkee vastakkaiseen suuntaan.",
+      "text": "Käämissä on $120$ kierrosta. Käämin päät on kytketty yhteen vastuksen kautta. Koko virtapiirin resistanssi on $8{,}0\\,\\Omega$. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Vuolle on valittu positiivinen suunta. Jos vuo kulkee vastakkaiseen suuntaan, vuo on negatiivinen.",
       "parts": [
         {
           "id": "a",
@@ -1222,7 +1222,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}288\\,\\text{J} + 0{,}081\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
+              "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}72\\,\\text{W} \\cdot 0{,}40\\,\\text{s} + 0{,}41\\,\\text{W} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}29\\,\\text{J} + 0{,}082\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
             },
             {
               "key": "units_precision",
@@ -1235,7 +1235,7 @@
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "Selitä, mihin suuntaan induktiovirta kulkee eri aikaväleillä. Vuo on nolla hetkellä, jolloin vuo vaihtaa etumerkkiä. Miten se vaikuttaa virtaan?",
+          "text": "Selitä, mihin suuntaan induktiovirta kulkee eri aikaväleillä. Vuo on nolla hetkellä, jolloin vuon etumerkki vaihtuu. Miten tämä nollakohta vaikuttaa virtaan?",
           "criteria": [
             {
               "text": "Toteaa, että jännite indusoituu vain, kun vuo muuttuu. Aikavälillä $0{,}40$–$0{,}60\\,\\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla.",

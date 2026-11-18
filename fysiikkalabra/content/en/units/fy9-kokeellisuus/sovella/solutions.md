@@ -408,7 +408,7 @@ two significant figures as in the braking distances and the slope.
 **Find:** whether there is a systematic error and what the graph tells about random variation
 **Principle:** The sliding friction force is directly proportional to the normal force, $F_\mu = \mu N$, so the points should lie on a straight line through the origin. A systematic error shifts all points in the same direction, a random error scatters them in both directions (chapter *Measuring and the reliability of a measurement*).
 **Reading the graph:** The points lie close to a line through the origin. The deviations of the points from the line are at most about $0.1\,\text{N}$, and they go sometimes up and sometimes down.
-**Model answer:** There is no sign of a systematic error: if the spring balance had been zeroed wrongly, the line would cross the vertical axis above or below the origin, and every point would be the same distance from its correct place. Here the line passes through the origin, so the zero point at least is in order. The scatter of the points on both sides of the line is random variation, for example the balance reading fluctuating while pulling and the limit of reading accuracy. Its size is of the same order as the scale division $0.1\,\text{N}$.
+**Model answer:** There is no sign of a systematic error: if the spring balance had been zeroed wrongly, the line would cross the vertical axis above or below the origin, and every point would be the same distance from its correct place. Here the line passes through the origin, so the zero point at least is in order. A scale error, that is a wrong calibration of the balance, would still give a line through the origin, so this does not rule out every systematic error. The scatter of the points on both sides of the line is random variation, for example the balance reading fluctuating while pulling and the limit of reading accuracy. Its size is of the same order as the scale division $0.1\,\text{N}$.
 **Reasonableness:** When the normal force is $0\,\text{N}$, the friction force is zero, so the line must pass through the origin. The deviations are about $2\,\%$ of the largest friction force, so the variation is small.
 
 ### b)
@@ -504,7 +504,7 @@ n &= \dfrac{2.47 \cdot 10^{-3}\,\text{T/A}}{4\pi \cdot 10^{-7}\,\text{Vs/(Am)}} 
 &\approx 1.96 \cdot 10^{3}\,\text{1/m}
 \end{aligned}
 $$
-**Answer:** $n \approx 2.0 \cdot 10^{3}\,\text{1/m}$, about $20$ turns per centimetre. Two significant figures, because the values read are of two or three figures.
+**Answer:** $n \approx 2.0 \cdot 10^{3}\,\text{1/m}$, about $20$ turns per centimetre. Two significant figures, because the values read have two figures.
 **Reasonableness:** A typical laboratory coil has tens of turns per centimetre, so the number is suitable. Unit: $\text{T/A} : \text{Vs/(Am)} = \text{1/m}$, because $1\,\text{T} = 1\,\text{Vs/m}^2$.
 
 ### b)
@@ -520,7 +520,7 @@ I &= \dfrac{12\,\text{mT}}{2.47\,\text{mT/A}} \\
 \end{aligned}
 $$
 **Answer:** The current needed is about $4.9\,\text{A}$, two significant figures like the values read.
-**Reasonableness:** The current is $4.9 : 2.5 \approx 2$ times the largest measured current, so the result is extrapolation outside the measured range. The graph does not tell whether the dependence stays linear: a large current heats the wire of the coil and increases its resistance, and the power supply may not be able to give such a current. So the result is an estimate and is checked by measuring.
+**Reasonableness:** The current is $4.9 : 2.5 \approx 2$ times the largest measured current, so the result is extrapolation outside the measured range. According to the model $B = \mu_0 n I$ the dependence stays linear, but it has not been measured in this range. In addition, the wire of the coil and the power supply must be able to carry such a current. So the result is an estimate and is checked by measuring.
 
 ### c)
 **Given:** zero reading $B_0 = 0.04\,\text{mT}$ at the current $0\,\text{A}$
@@ -547,11 +547,11 @@ $$
 
 The systematic error, the zero reading $0.04\,\text{mT}$, is removed by measuring the reading at zero current and subtracting it from all readings. Another way is to reverse the direction of the current and calculate $B$ as half the difference of the readings, so that a constant field cancels.
 
-Another weakness is that there is only one reading at each current. The measurements are repeated and the mean is taken. In addition, the current heats the coil and changes its resistance, so the current is kept on only for a short time for each reading.
+Another weakness is that there is only one reading at each current. The measurements are repeated and the mean is taken. In addition, as the coil warms up the current may drift if the supply regulates voltage, or the sensor reading may drift with temperature. So the current is read at every reading and kept on only for a short time.
 
 ### Yleisiä virheitä
 - In part a the slope is read from measurement points that are close together, or the steepness of the line is calculated in $\text{mT/A}$ without converting to tesla, so $n$ becomes $1000$ times too large.
-- In part b the current is calculated as $12 : 6.2 \cdot 2.5\,\text{A}$ or the reliability of the result is not assessed, although the result is outside the measured range.
+- In part b the slope is inverted ($I = kB$) or the reliability of the result is not assessed, although the result is outside the measured range.
 - In part c the zero reading is taken to be a random error, or it is claimed that it changes the slope.
 - In part d a source of error is named but its effect on the result or an improvement is missing.
 

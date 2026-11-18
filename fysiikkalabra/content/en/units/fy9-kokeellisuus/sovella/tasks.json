@@ -794,7 +794,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Another group used the same block and table, but their spring balance read $0.3\\,\\text{N}$ with no load, and the group did not take it into account. When the normal force was $10\\,\\text{N}$, the balance read $2.4\\,\\text{N}$. Calculate the coefficient of friction the group got from this reading, the correct coefficient and the size of the error as a percentage of the correct value. Also explain why the zero error would not affect the slope if the coefficient were determined from a line fitted to the whole series.",
+          "text": "Another group used the same block and table, but their spring balance read $0.3\\,\\text{N}$ with no load, and the group did not take it into account. When the normal force was $10\\,\\text{N}$, the balance read $2.4\\,\\text{N}$. Calculate the coefficient of friction the group got from this reading, the correct coefficient and the size of the error as a percentage of the correct value. Also justify how the zero error would affect the slope if the coefficient were determined from a line fitted to the whole series.",
           "answer": [
             {
               "name": "mu_wrong",
@@ -933,7 +933,7 @@
               "detail": "$I = \\dfrac{12\\,\\text{mT}}{2.47\\,\\text{mT/A}} \\approx 4.9\\,\\text{A}$"
             },
             {
-              "text": "Notes that the result is extrapolation: the largest measured current was $2.5\\,\\text{A}$ and the needed current is about twice that. It cannot be known whether the dependence stays linear, for example when the coil warms up, so the result is only an estimate and must be checked by measuring.",
+              "text": "Notes that the result is extrapolation: the largest measured current was $2.5\\,\\text{A}$ and the needed current is about twice that. The coil and the power supply must be able to carry such a current. The result is only an estimate and must be checked by measuring.",
               "tag": "graph",
               "points": 1
             }
@@ -998,7 +998,7 @@
               "points": 1
             },
             {
-              "text": "Names another weakness and an improvement, for example: only one reading at each current, so repeat the measurements; the current heats the coil and changes its resistance, so keep the current on only for a short time; the sensor must be at the centre of the coil.",
+              "text": "Names another weakness and an improvement, for example: only one reading at each current, so repeat the measurements; if the supply regulates voltage, the current may drift as the coil warms up, so read the current at every reading and keep it on only for a short time; the sensor must be at the centre of the coil.",
               "tag": "experiment",
               "points": 1
             }

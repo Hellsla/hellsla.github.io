@@ -591,7 +591,7 @@ $$
 A single data point contains the random error of reading the angles, and the points lie on both sides of the line. A line fitted to the whole data averages these errors, so its slope is more reliable than the quotient $\sin\alpha_1 : \sin\alpha_2$ of one point. The refractive index is a property of the material and does not depend on the angle of incidence, so all the points lie on the same line and the slope is the same for small and large angles.
 
 ### Yleisiä virheitä
-- In part a the slope is calculated from the axes the wrong way round ($0.30 : 0.44$), which gives $0.68$, and the refractive index would be less than $1$.
+- In part a the slope is calculated from the axes the wrong way round ($0.30 : 0.45$), which gives $0.67$, and the refractive index would be less than $1$.
 - In part a the slope is read from data points and not from the fitted line, or neighbouring points are used, which increases the reading error.
 - In part b the thickness $15\,\text{cm}$ is not converted to metres, or the speed is calculated as $n c = 4.5 \cdot 10^8\,\text{m/s}$, which is greater than the speed of light in air.
 - In part c $\arcsin 1.5$ or $\arcsin\dfrac{n}{1.00}$ is calculated, which does not exist because a sine is at most $1$.
@@ -637,9 +637,10 @@ $$
 \begin{aligned}
 W &= \dfrac{(2.4\,\text{V})^2}{8.0\,\Omega} \cdot 0.40\,\text{s} \\
 &+ \dfrac{(1.8\,\text{V})^2}{8.0\,\Omega} \cdot 0.20\,\text{s} \\
-&= 0.72\,\text{W} \cdot 0.40\,\text{s} + 0.405\,\text{W} \cdot 0.20\,\text{s} \\
-&= 0.288\,\text{J} + 0.081\,\text{J} \\
-&= 0.369\,\text{J}
+&= 0.72\,\text{W} \cdot 0.40\,\text{s} \\
+&+ 0.41\,\text{W} \cdot 0.20\,\text{s} \\
+&= 0.29\,\text{J} + 0.082\,\text{J} \\
+&\approx 0.37\,\text{J}
 \end{aligned}
 $$
 **Answer:** The energy converted into internal energy is $W \approx 0.37\,\text{J}$. The result has two significant figures, like the resistance $8.0\,\Omega$.
@@ -654,7 +655,7 @@ The flux is zero at $t = \dfrac{5.0\,\text{mWb}}{20\,\text{mWb/s}} = 0.25\,\text
 
 ### Yleisiä virheitä
 - In part a the change of flux is calculated as $5.0\,\text{mWb} - 3.0\,\text{mWb}$, or only the final value $3.0\,\text{mWb}$ is used, although the flux changes its sign; the correct change is $8.0\,\text{mWb}$.
-- In part a $\text{mWb}$ is not converted to $\text{Wb}$, so the voltage is a thousandth of the correct one.
+- In part a $\text{mWb}$ is not converted to $\text{Wb}$, so the voltage comes out a thousand times too large ($2400\,\text{V}$ instead of $2.4\,\text{V}$).
 - In part b the energy is calculated for the whole time with one voltage, or the interval $0.40$–$0.60\,\text{s}$ is included with a nonzero voltage.
 - In part c it is said that the direction of the current changes when the flux is zero, or that the current is zero then; the current depends on the rate of change, not on the value of the flux.
 

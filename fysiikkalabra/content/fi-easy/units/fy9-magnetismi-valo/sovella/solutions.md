@@ -591,7 +591,7 @@ $$
 Kulmien lukemisessa on satunnaista virhettä, ja pisteet ovat suoran molemmin puolin. Koko aineistoon sovitettu suora tasaa virheet. Siksi sen kulmakerroin on luotettavampi kuin yhden pisteen osamäärä $\sin\alpha_1 : \sin\alpha_2$. Taitekerroin on aineen ominaisuus. Se ei riipu tulokulmasta, joten kaikki pisteet ovat samalla suoralla. Kulmakerroin on sama pienillä ja suurilla kulmilla.
 
 ### Yleisiä virheitä
-- a-kohdassa kulmakerroin lasketaan akseleilta väärin päin ($0{,}30 : 0{,}44$), jolloin tulokseksi tulee $0{,}68$ ja taitekerroin olisi alle $1$.
+- a-kohdassa kulmakerroin lasketaan akseleilta väärin päin ($0{,}30 : 0{,}45$), jolloin tulokseksi tulee $0{,}67$ ja taitekerroin olisi alle $1$.
 - a-kohdassa kulmakerroin luetaan mittauspisteistä eikä sovitetulta suoralta, tai käytetään vierekkäisiä pisteitä, jolloin lukuvirhe kasvaa.
 - b-kohdassa levyn paksuutta $15\,\text{cm}$ ei muunneta metreiksi, tai nopeudeksi lasketaan $n c = 4{,}5 \cdot 10^8\,\text{m/s}$, mikä on suurempi kuin valon nopeus ilmassa.
 - c-kohdassa lasketaan $\arcsin 1{,}5$ tai $\arcsin\dfrac{n}{1{,}00}$, jota ei ole olemassa, koska sinin arvo on enintään $1$.
@@ -637,9 +637,10 @@ $$
 \begin{aligned}
 W &= \dfrac{(2{,}4\,\text{V})^2}{8{,}0\,\Omega} \cdot 0{,}40\,\text{s} \\
 &+ \dfrac{(1{,}8\,\text{V})^2}{8{,}0\,\Omega} \cdot 0{,}20\,\text{s} \\
-&= 0{,}72\,\text{W} \cdot 0{,}40\,\text{s} + 0{,}405\,\text{W} \cdot 0{,}20\,\text{s} \\
-&= 0{,}288\,\text{J} + 0{,}081\,\text{J} \\
-&= 0{,}369\,\text{J}
+&= 0{,}72\,\text{W} \cdot 0{,}40\,\text{s} \\
+&+ 0{,}41\,\text{W} \cdot 0{,}20\,\text{s} \\
+&= 0{,}29\,\text{J} + 0{,}082\,\text{J} \\
+&\approx 0{,}37\,\text{J}
 \end{aligned}
 $$
 **Vastaus:** Sähköenergiaa muuttuu sisäenergiaksi $W \approx 0{,}37\,\text{J}$. Tuloksessa on kaksi merkitsevää numeroa, kuten resistanssissa $8{,}0\,\Omega$.
@@ -654,7 +655,7 @@ Vuo on nolla hetkellä $t = \dfrac{5{,}0\,\text{mWb}}{20\,\text{mWb/s}} = 0{,}25
 
 ### Yleisiä virheitä
 - a-kohdassa lasketaan vuon muutokseksi $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb}$ tai käytetään vain loppuarvoa $3{,}0\,\text{mWb}$, vaikka vuo vaihtaa etumerkkiä; oikea muutos on $8{,}0\,\text{mWb}$.
-- a-kohdassa $\text{mWb}$ jää muuntamatta yksiköksi $\text{Wb}$, jolloin jännite on tuhannesosa oikeasta.
+- a-kohdassa $\text{mWb}$ jää muuntamatta yksiköksi $\text{Wb}$, jolloin jännite on tuhatkertainen ($2400\,\text{V}$ oikean $2{,}4\,\text{V}$:n sijaan).
 - b-kohdassa lasketaan energia koko ajalta yhdellä jännitteellä tai otetaan väli $0{,}40$–$0{,}60\,\text{s}$ mukaan nollasta poikkeavalla jännitteellä.
 - c-kohdassa sanotaan, että virran suunta vaihtuu, kun vuo on nolla, tai että virta on nolla silloin; virta riippuu muutosnopeudesta, ei vuon arvosta.
 
