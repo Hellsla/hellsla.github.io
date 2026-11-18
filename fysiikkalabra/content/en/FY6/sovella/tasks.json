@@ -6,7 +6,7 @@
       "title": "Flashlight battery",
       "source": "example",
       "source_note": "The measurement results have been made up for the task, but they are of the same order of magnitude as in a measurement of a new flat flashlight battery.",
-      "text": "A student investigates a new flat flashlight battery marked $4.5\\,\\text{V}$ on its side. She connects an adjustable resistor and an ammeter to the battery, and a voltmeter directly across the terminals of the battery (figure). She adjusts the current with the resistor and reads the corresponding terminal voltage $U$. The meters show the current to the nearest $0.01\\,\\text{A}$ and the voltage to the nearest $0.01\\,\\text{V}$. The student measured the current in increasing order, and the circuit was connected for about a minute for each reading. The battery warmed up slightly during the measurements, and the voltage seemed to fall slowly even when the current was not changed. After the series the student measured the voltage once more at a current of $0.10\\,\\text{A}$: the reading was $4.45\\,\\text{V}$, that is $0.03\\,\\text{V}$ lower than at the beginning of the series.\n\nMeasurement results (current $I$, terminal voltage $U$):\n\n- $I = 0.10\\,\\text{A}$, $U = 4.48\\,\\text{V}$\n- $I = 0.20\\,\\text{A}$, $U = 4.37\\,\\text{V}$\n- $I = 0.30\\,\\text{A}$, $U = 4.22\\,\\text{V}$\n- $I = 0.40\\,\\text{A}$, $U = 4.13\\,\\text{V}$\n- $I = 0.50\\,\\text{A}$, $U = 3.99\\,\\text{V}$\n- $I = 0.60\\,\\text{A}$, $U = 3.89\\,\\text{V}$",
+      "text": "A student investigates a new flat flashlight battery marked $4.5\\,\\text{V}$ on its side. She connects an adjustable resistor and an ammeter to the battery, and a voltmeter directly across the terminals of the battery (figure). She adjusts the current with the resistor and reads the corresponding terminal voltage $U$. The meters show the current to the nearest $0.01\\,\\text{A}$ and the voltage to the nearest $0.01\\,\\text{V}$. The student measured the current in increasing order, and the circuit was connected for about a minute for each reading. The battery warmed up slightly during the measurements, and the voltage seemed to fall slowly even when the current was not changed. This slow change of the voltage with time is called drift. After the series the student measured the voltage once more at a current of $0.10\\,\\text{A}$: the reading was $4.45\\,\\text{V}$, that is $0.03\\,\\text{V}$ lower than at the beginning of the series.\n\nMeasurement results (current $I$, terminal voltage $U$):\n\n- $I = 0.10\\,\\text{A}$, $U = 4.48\\,\\text{V}$\n- $I = 0.20\\,\\text{A}$, $U = 4.37\\,\\text{V}$\n- $I = 0.30\\,\\text{A}$, $U = 4.22\\,\\text{V}$\n- $I = 0.40\\,\\text{A}$, $U = 4.13\\,\\text{V}$\n- $I = 0.50\\,\\text{A}$, $U = 3.99\\,\\text{V}$\n- $I = 0.60\\,\\text{A}$, $U = 3.89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
@@ -124,7 +124,7 @@
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "The discharging of the battery lowers the voltage during the series, so the voltages measured later (at larger currents) are too small: the line is too steep and $R_\\text{int}$ comes out too large (a systematic error). Because the current was only increased in one direction, the effect of time is mixed with the slope. Warming also changes $R_\\text{int}$ during the measurement (usually it makes it smaller), so its direction is uncertain."
+              "detail": "The model is idealised here: it assumes that $E$ and $R_\\text{int}$ stay constant throughout the measurement. The discharging of the battery lowers the voltage during the series, so the voltages measured later (at larger currents) are too small: the line is too steep and $R_\\text{int}$ comes out too large (a systematic error). Because the current was only increased in one direction, the effect of time is mixed with the slope. Warming also changes $R_\\text{int}$ during the measurement (usually it makes it smaller), so its direction is uncertain."
             },
             {
               "key": "uncertainty",
@@ -197,7 +197,7 @@
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "How much power is actually transferred to lamp A? Compare the result with the rated power of the lamp.",
+          "text": "How much power is transferred to lamp A? Compare the result with the rated power of the lamp.",
           "answer": {
             "value": 16.7,
             "unit": "W",
@@ -335,7 +335,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "At what speed does the droplet hit the workpiece when air resistance is not taken into account?",
+          "text": "At what speed does the droplet hit the workpiece? State your assumptions.",
           "answer": {
             "value": 13.4,
             "unit": "m/s",
@@ -343,7 +343,7 @@
           },
           "criteria": [
             {
-              "text": "Chooses the principle of energy: the work done by the electric field, $qU$, increases the kinetic energy of the droplet when weight and air resistance are left out; the strength of the field or the acceleration is not needed.",
+              "text": "Chooses the principle of energy: the work done by the electric field, $qU$, increases the kinetic energy of the droplet when weight and air resistance are left out, and states this assumption; the strength of the field or the acceleration is not needed.",
               "tag": "transfer",
               "points": 1
             },
@@ -368,7 +368,7 @@
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "In a measurement the impact speed of the droplets is found to be about $5.0\\,\\text{m/s}$. Explain why it is much smaller than the result of part b, and conclude where the work done by the electric field goes.",
+          "text": "In a measurement the impact speed of the droplets is found to be about $5.0\\,\\text{m/s}$. Explain why the measured speed differs from the result of part b, and conclude where the work done by the electric field goes.",
           "criteria": [
             {
               "text": "Recognises that the model of part b left out air resistance: air resists the motion of the droplet, and as the speed increases, air resistance increases until it is approximately equal to the electric force.",
@@ -472,7 +472,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "How much energy was transferred to the flash? What fraction of the stored energy is this, and why is the fraction larger than the decrease in voltage?",
+          "text": "How much energy was transferred to the flash? What fraction of the stored energy is this? Compare the fraction with the relative decrease in voltage and explain the difference.",
           "answer": [
             {
               "name": "E",
