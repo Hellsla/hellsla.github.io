@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f423b35a43a32521
+CONTENT-HASH: fd4f31b681b40a8c
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json retrieval feedback — where a display `aligned` block sits mid-sentence and is followed by punctuation (fy4-7, 9, 10) the full stop/comma lands on its own line after the block; consider ending the sentence before the block.
+- [Minor] The opened state of the "Answer" disclosure has no capture in the stamped set (closed state only); judged from source: short plain text.
 
 ## Checked
-batch delta review: diff is retrieval-question text/numbers in inquiry.json; opened the Pohdinta captures of fy4-1 and fy4-7 and the Ennusta capture and contact sheet of fy4-9 (maths, units, layout at 390 and 1280 px fine, no clipping); figures unchanged; sources of the other lessons' diffs read (units in LaTeX, decimal point, English fluent).
+batch delta review (round 2): opened fy4-3-theory-1280-1 and fy4-3-stage-selita-390-1 (all three Stop and think blocks as far as visible; stamp matches hash). The block sits in the reading column, label and question readable, green rule consistent with the page, no clipping or collision with figures or headings, answers plain English with no unit problems.
