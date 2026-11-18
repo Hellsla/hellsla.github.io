@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8a3bb847f1c530b5
-SCOPE: delta, round 1 (wording-only diff: "lämmöksi" -> "sisäenergiaksi" in the energy-conservation model answer; Periaate paragraph split in the L2 data task)
+CONTENT-HASH: 850efb4c05608c1f
+SCOPE: delta added-exercise from 13eb4fb8ef479d8c base b5600a63ddae
 
 ## Blocking
 (none)

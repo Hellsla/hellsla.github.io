@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 8a3bb847f1c530b5
-SCOPE: delta wording (Työjono 18 oikoluku P1), round 1
 
 ## Blocking
 
