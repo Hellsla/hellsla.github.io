@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ae4685c645f11ec8
-SCOPE: delta: s7 b and s8 a Järkevyys/Reasonableness: inline "m · 9,81 m/s² = G" became aligned display chain G = mg = m · g = result (19,6 N; 4,2 N); rest not re-judged. Language: en.
+CONTENT-HASH: be4185dec3292c87
+SCOPE: delta: s8 d rubric detail (tasks.json): inline "W_air = 27,4 J − 33,9 J ≈ −6,5 J" became a two-row aligned display (= row, ≈ row); same numbers, order, signs, units; rest not re-judged. Language: en.
 
 ## Blocking
 - (none)
@@ -9,10 +9,9 @@ SCOPE: delta: s7 b and s8 a Järkevyys/Reasonableness: inline "m · 9,81 m/s² =
 - Earlier Polish stays recorded: s8 b "47 km/h" vs unrounded 45 km/h ("noin 45 km/h"); s7 d closing air-resistance remark is outside the task's assumption.
 
 ## Checked
-- s7 b: G = mg = 2,0 kg · 9,81 m/s² = 19,6 N (19,62); friction 2,5 N / 19,6 N = 12,8 %, so "noin 13 %" still holds.
-- s8 a: G = mg = 0,43 kg · 9,81 m/s² = 4,2 N (4,218); comparison with 450 N mean force and the 12 ms argument unchanged.
-- Symbols (G, m, g), units (kg, m/s², N) and numbers equal the earlier inline versions; no new claims, only the layout changed.
-- Reading: sentences "Kelkan paino on [display], joten ..." / "weight is [display], so ..." continue after the block with a comma, the same pattern as s1 c and s2 a in this unit; acceptable, nothing broken awkwardly.
-- Meaning equal across fi, en, fi-easy; nothing new appears.
+- E_p = 0,43 kg · 9,81 m/s² · 6,5 m ≈ 27,4 J (27,42) unchanged.
+- W_air = 27,4 J − 33,9 J ≈ −6,5 J: same operands, minus sign, unit J; only the line break before "≈" added.
+- Connector word ("ja"/"and") between two display blocks reads fine; nothing new appears.
+- Meaning equal across fi, en, fi-easy.
 - Not judged (visual role): 360 px layout.
 - Hash the same at start and end.

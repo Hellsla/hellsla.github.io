@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 15c9c5df0355c1d3
-SCOPE: delta: CI 360 px layout fix (fi-easy), sovella solutions.md Sijoitus row "· (9,81 m/s² − 1,5 m/s²)" split into two aligned rows; en unchanged; all else not re-judged.
+CONTENT-HASH: b30a3481b4ee561b
+SCOPE: delta: CI 360 px layout fix, sovella tasks.json s7 b) rubric Substitution row split into three aligned rows (fi-easy); all else not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- Earlier Polish items (s8 b) chain rounding, s8 d) 12,25 vs 12,2 m, s7 d) k value consistency, s7 precision wording) stay recorded; nothing new.
+- Earlier Polish items stay recorded; nothing new.
 
 ## Checked
-git diff of unit content: only the Sijoitus block in solutions.md. Numbers, order, symbols and units unchanged: 75,0 kg · (9,81 m/s² − 1,5 m/s²) = 75,0 kg · 8,31 m/s² = 623 N (75 · 8,31 = 623,25). The minus now starts the second row with a deeper indent (\qquad), inside parentheses, so the subtraction reads as a continuation; the sentence "Sijoitus:" is followed by a display block as before. No new content appeared.
+git diff of unit content: only the s7 b) Substitution detail in tasks.json. Same numbers, order, signs and units: 75.0 kg · (9.81 m/s² − 1.5 m/s²) ≈ 623 N (75 · 8.31 = 623.25). Split into rows "75.0 kg", "· (9.81 m/s²", "− 1.5 m/s²)" with unchanged result row; parenthesis still closes, minus kept. Decimal comma/point correct for the language. No new content.

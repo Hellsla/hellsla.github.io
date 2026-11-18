@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 23a70fb774c82753
-SCOPE: delta: CI 360 px fix; s7 and s8 Reasonableness weight calculations became display chains G = mg = m · g = result; fi-easy checked.
+CONTENT-HASH: 4cb6396da76519c3
+SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; fi-easy checked.
 
 ## Blocking
 - (none)
 
 ## Polish
 - Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
-- New display block sits mid-sentence ("paino on ... [block] , joten ..."); readable, the following comma/continuation is the same recorded comma-after-display item.
 
 ## Checked
-- Numbers and units unchanged: 2.0 kg · 9.81 m/s² = 19.6 N; 0.43 kg · 9.81 m/s² = 4.2 N (both correct); G = mg symbol added, consistent with later mg in mu formula.
-- Surrounding sentences and conclusions (about 13 % of weight; ignoring weight in kick justified) unchanged; nothing new added.
+- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
+- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
 - Hash at start and end identical.
