@@ -8,7 +8,7 @@ G 18
 T 18 ylös
 a 0
 ```
-**Formula:** $T - G = 0$, so $T = G$
+**Formula:** First law: $\Sigma F = T - G = 0$, so $T = G$
 **Conversions:** The weight is in newtons, so no conversions are needed.
 **Substitution:** $T = G = 18\,\text{N}$
 **Answer:** $18\,\text{N}$, two significant figures like the weight $18\,\text{N}$.
@@ -24,7 +24,7 @@ F_A 850 vasen
 F_B 850 oikea
 a 0
 ```
-**Formula:** $F_B - F_A = 0$, so $F_B = F_A$
+**Formula:** First law: $\Sigma F = F_B - F_A = 0$, so $F_B = F_A$
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_B = F_A = 850\,\text{N}$
 **Answer:** $850\,\text{N}$, three significant figures like the force $850\,\text{N}$.
@@ -67,7 +67,7 @@ F_i 380 vasen
 F_r 240 vasen
 a 0
 ```
-**Formula:** $F - F_\text{d} - F_\text{r} = 0$, so $F_\text{r} = F - F_\text{d}$
+**Formula:** First law: $\Sigma F = F - F_\text{d} - F_\text{r} = 0$, so $F_\text{r} = F - F_\text{d}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $F_\text{r} = 620\,\text{N} - 380\,\text{N} = 240\,\text{N}$
 **Answer:** $240\,\text{N}$, to the nearest ten newtons like the given forces, so two significant figures.
@@ -108,7 +108,7 @@ F_2 5,0 alas työntö
 N 13
 a 0
 ```
-**Formula:** $N - G_1 - F_2 = 0$ and $F_2 = G_2$, so $F = N = G_1 + G_2$
+**Formula:** First law: $\Sigma F = N - G_1 - F_2 = 0$ and $F_2 = G_2$, so $F = N = G_1 + G_2$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $F = 8.0\,\text{N} + 5.0\,\text{N} = 13\,\text{N}$
 **Answer:** $13\,\text{N}$ downwards. The sum is to the nearest tenth of a newton like the weights $8.0\,\text{N}$ and $5.0\,\text{N}$, so it has two significant figures.
@@ -128,7 +128,7 @@ F_VU 65 oikea
 F_v 65 vasen
 a 0
 ```
-**Formula:** $F_{\text{WS}} - F_\text{d} = 0$ and $F_{\text{WS}} = F_{\text{SW}}$, so $F_\text{d} = F_{\text{SW}}$
+**Formula:** First law: $\Sigma F = F_{\text{WS}} - F_\text{d} = 0$ and $F_{\text{WS}} = F_{\text{SW}}$, so $F_\text{d} = F_{\text{SW}}$
 **Conversions:** The force is in newtons, so no conversions are needed.
 **Substitution:** $F_\text{d} = F_{\text{SW}} = 65\,\text{N}$
 **Answer:** $65\,\text{N}$ backwards, two significant figures like the force $65\,\text{N}$.
@@ -145,7 +145,7 @@ F_v 833,85 ylös
 a 0
 v alas
 ```
-**Formula:** $F_\text{d} - G = 0$ and $G = mg$, so $F_\text{d} = mg$
+**Formula:** First law: $\Sigma F = F_\text{d} - G = 0$ and $G = mg$, so $F_\text{d} = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\text{d} = 85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 833.85\,\text{N}$
 **Answer:** $830\,\text{N}$, or $8.3\cdot 10^{2}\,\text{N}$, upwards, two significant figures like the mass $85\,\text{kg}$.
@@ -162,7 +162,7 @@ G_k 5800
 G_m 3139,2
 a 0
 ```
-**Formula:** $T - G_\text{c} - mg = 0$, so $T = G_\text{c} + mg$
+**Formula:** First law: $\Sigma F = T - G_\text{c} - G_\text{p} = 0$ and $G_\text{p} = mg$, so $T = G_\text{c} + mg$
 **Conversions:** $5.8\,\text{kN} = 5800\,\text{N}$; at the end the newtons are converted to kilonewtons by dividing by $1000$.
 **Substitution:** $T = 5800\,\text{N} + 320\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 5800\,\text{N} + 3139.2\,\text{N} = 8939.2\,\text{N}$
 **Answer:** $8.9\,\text{kN}$, two significant figures like the weight of the car $5.8\,\text{kN}$.
@@ -180,7 +180,7 @@ F_v 270 ylös
 a 0
 v alas
 ```
-**Formula:** $F_\text{b} + F_\text{d} - G = 0$, so $F_\text{d} = G - F_\text{b}$
+**Formula:** First law: $\Sigma F = F_\text{b} + F_\text{d} - G = 0$, so $F_\text{d} = G - F_\text{b}$
 **Conversions:** All forces are in kilonewtons and the answer is asked in kilonewtons, so no conversions are needed.
 **Substitution:** $F_\text{d} = 4.62\,\text{kN} - 4.35\,\text{kN} = 0.27\,\text{kN}$
 **Answer:** $0.27\,\text{kN}$ upwards. The difference has two significant figures, because the given forces are to the nearest hundredth of a kilonewton.
@@ -200,7 +200,7 @@ F_m 0,30 alas työntö
 N 0,60
 a 0
 ```
-**Formula:** $N - G - F_\text{m} = 0$ and $F_\text{m} = G$, so $N = 2G$
+**Formula:** First law: $\Sigma F = N - G - F_\text{m} = 0$ and $F_\text{m} = G$, so $N = 2G$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $N = 2\cdot 0.30\,\text{N} = 0.60\,\text{N}$
 **Answer:** $0.60\,\text{N}$, two significant figures like the weight $0.30\,\text{N}$.
@@ -221,7 +221,7 @@ G_v 0,40
 F_o 1,5 alas
 a 0
 ```
-**Formula:** $F - G_\text{s} - F_\text{a} = 0$ and $F_\text{a} = G_\text{a}$, so $F = G_\text{a} + G_\text{s}$
+**Formula:** First law: $\Sigma F = F - G_\text{s} - F_\text{a} = 0$ and $F_\text{a} = G_\text{a}$, so $F = G_\text{a} + G_\text{s}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $F = 1.5\,\text{N} + 0.40\,\text{N} = 1.9\,\text{N}$
 **Answer:** $1.9\,\text{N}$, to the nearest tenth of a newton like the weight of the apple $1.5\,\text{N}$, so two significant figures.
@@ -262,7 +262,7 @@ The force of the rope $\overline{F}_\text{RC}$ points from the child towards the
 
 By the third law the rope pulls sensor A and the wall with forces as large as they pull the rope, so the readings of the sensors are equally large at every moment.
 **Reading the graph:** From the table we read the row where $F_\text{A}$ is largest: $t = 1.0\,\text{s}$, $F_\text{A} = 4.8\,\text{N}$. On the same row $F_\text{B} = 4.8\,\text{N}$. On the other rows the readings differ by at most $0.1\,\text{N}$, which is random variation of the measurement, not a physical difference.
-**Formula:** $F_\text{W} - F_\text{A} = 0$, so $F_\text{W} = F_\text{A}$
+**Formula:** First law: $\Sigma F = F_\text{W} - F_\text{A} = 0$, so $F_\text{W} = F_\text{A}$
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $F_\text{W} = F_\text{A} = 4.8\,\text{N}$
 **Answer:** $4.8\,\text{N}$, two significant figures like the readings in the table.
@@ -310,7 +310,7 @@ T 450 vasen
 F_h 30 vasen
 a 0
 ```
-**Formula:** Cart: $T - F_\text{r} - F_\text{k} = 0$, so $T = F_\text{r} + F_\text{k}$. Horse: $F_\text{t} - T - F_\text{h} = 0$, so $F_\text{t} = T + F_\text{h}$.
+**Formula:** First law for both: $\Sigma F = 0$. Cart: $T - F_\text{r} - F_\text{k} = 0$, so $T = F_\text{r} + F_\text{k}$. Horse: $F_\text{t} - T - F_\text{h} = 0$, so $F_\text{t} = T + F_\text{h}$.
 **Conversions:** The forces are in newtons, so no conversions are needed.
 **Substitution:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ and
 $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
@@ -324,9 +324,9 @@ $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 
 By the third law the cart pulls the rope with a force as large as the rope pulls the cart. The student is pulled by the rope, not by the cart.
 **Reading the graph:** The velocity increases from $t = 0$ from $0$ to $0.69\,\text{m/s}$ and then, from $t = 4.0\,\text{s}$ on, stays almost the same, about $0.70\,\text{m/s}$. The net force is zero from $t = 4.0\,\text{s}$ on. The sensor readings at these three moments are $3.4\,\text{N}$, $3.5\,\text{N}$ and $3.3\,\text{N}$.
-**Formula:** $F_\text{f} = F_\text{av}$ and $F_\text{av} = \dfrac{\Sigma F}{n}$
+**Formula:** The force of the rope is the mean of the readings, $F_\text{av} = \dfrac{F_1 + F_2 + F_3}{3}$. The velocity is constant, so by the first law $\Sigma F = F_\text{av} - F_\text{f} = 0$, so $F_\text{f} = F_\text{av} = \dfrac{F_1 + F_2 + F_3}{3}$
 **Conversions:** The forces are in newtons and the velocity in $\text{m/s}$, so no conversions are needed.
-**Substitution:** The sum of the forces is $10.2\,\text{N}$ and there are $3$ readings, so
+**Substitution:** The sum of the readings $F_1 + F_2 + F_3$ is $10.2\,\text{N}$, so
 $F_\text{f} = \dfrac{10.2\,\text{N}}{3} = 3.40\,\text{N}$.
 **Answer:** b) $3.4\,\text{N}$, two significant figures like the sensor readings. a) The net force is zero from the moment the velocity is constant, that is, from the fourth second on. c) At the start the velocity increases, so the net force is not zero: the rope pulls the cart forwards more than friction opposes, and at the start the rope pulls the cart with a force of $5.1\,\text{N}$. By the third law the cart pulls the rope with the same $5.1\,\text{N}$ backwards, even though the cart accelerates. The rope in turn pulls the student's hand backwards, and the hand pulls the rope forwards with an equally large force.
 **Reasonableness:** The force decreases from $5.1\,\text{N}$ towards $3.4\,\text{N}$ as the acceleration ends. The friction $3.4\,\text{N}$ is smaller than the force at the start, so the cart has speeded up, and equal to the force at constant speed, so the velocity no longer changes.

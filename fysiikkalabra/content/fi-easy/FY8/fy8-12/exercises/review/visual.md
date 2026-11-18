@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 950e9e54b7eb5103
+CONTENT-HASH: 81b5cf5d2daaa058
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L1-07 answer input — unit label "1/min" is plain beside the box (interface, not a lesson text); the task text and solution use LaTeX. No change asked.
+- [Minor] L1-07 and L2/L3 answer rows: the unit beside the input box is plain text "min⁻¹" (interface, not a lesson text); the task and solution use LaTeX. No change asked.
 
 ## Checked
-- Delta (unit "pulssia/min" -> "1/min"): fy8-12-open-exercises-1280-6 and -7 (L1-06, L1-07, solution open, unit row and chain aligned, no clipping), fy8-12-open-exercises-L2-1280-14 (L2-09 solution rows aligned, units upright).
+- Delta (unit 1/min -> min^-1 in L1-07 and the L3-02 solution): fy8-12-open-exercises-1280-5 (L1-07: task text, unit row, Annettu, Sijoitus chain aligned, Vastaus, Järkevyys), -6 (end of L1-07, L1-08 layout), -7 (L1-09 intact), fy8-12-open-exercises-L3-1280-2 (12-20 task, Annettu/Kysytty with min^-1), L3-1280-3 (Sijoitus, Vastaus with 30 min^-1). Exponent legible and upright, thin space present, no clipping, layout survived.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

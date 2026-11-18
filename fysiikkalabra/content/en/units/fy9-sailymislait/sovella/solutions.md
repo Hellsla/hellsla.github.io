@@ -435,3 +435,229 @@ $$
 
 ### Hyväksytään myös
 - In part c with the kinetic energy alone, $F = \dfrac{15\,675\,\text{J}}{0.018\,\text{m}} \approx 0.87\,\text{MN}$, if the solution states that the contribution of the weight is left out as small.
+
+## fy9-sailymislait-s7
+
+### a)
+**Given:** $m = 2.0\,\text{kg}$; from the graph the initial potential energy $E_{\text{p}0} = 40\,\text{J}$ (top of the green bar); the zero level is the bottom of the slope; $g = 9.81\,\text{m/s}^2$
+**Find:** the starting height $h$ above the bottom
+**Principle:** The gravitational potential energy is mass times gravitational acceleration times height above the zero level (chapter *Kinetic energy, potential energy and mechanical energy*). At the start the sled is at rest, so all of its mechanical energy is potential energy.
+**Reading the graph:** The green bar reaches $40\,\text{J}$, so $E_{\text{p}0} = 40\,\text{J}$.
+**Formula:** $E_{\text{p}0} = mgh$, so $h = \dfrac{E_{\text{p}0}}{mg}$
+**Conversions:** None needed: the energy is in joules and the mass in kilograms.
+**Substitution:** $$
+\begin{aligned}
+h &= \dfrac{40\,\text{J}}{2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2} \\
+&= \dfrac{40\,\text{J}}{19.62\,\text{N}} \\
+&= 2.04\,\text{m}
+\end{aligned}
+$$
+**Answer:** $h \approx 2.0\,\text{m}$, two significant figures like the energies read from the graph and the mass.
+**Reasonableness:** The slope is $6.0\,\text{m}$ long and the height difference $2.0\,\text{m}$, so the angle of the slope is $\arcsin\dfrac{2.04\,\text{m}}{6.0\,\text{m}} \approx 20^\circ$. This is an ordinary sledding hill.
+
+### b)
+**Given:** $E_{\text{p}0} = 40\,\text{J}$, final kinetic energy $E_\text{k} = 25\,\text{J}$ (top of the blue bar), length of the slope $s = 6.0\,\text{m}$; at the start $E_\text{k0} = 0$ and at the end $E_\text{p} = 0$
+**Find:** the work $W_\text{friction}$ of the friction force and the magnitude $F$ of the friction force
+**Principle:** The forces on the sled are the weight, the normal force and the sliding friction. The normal force is perpendicular to the motion, so it does no work. Friction changes the mechanical energy, so the energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of the other forces equals the final energy. The sliding friction force is against the motion, so its work is negative: $W_\text{friction} = -Fs$.
+**Reading the graph:** The blue bar reaches $25\,\text{J}$, so $E_\text{k} = 25\,\text{J}$. The work of friction is not drawn.
+**Formula:** $E_{\text{p}0} + W_\text{friction} = E_\text{k}$, so $W_\text{friction} = E_\text{k} - E_{\text{p}0}$; and $W_\text{friction} = -Fs$, so $F = \dfrac{-W_\text{friction}}{s}$
+**Conversions:** None needed: $1\,\text{J} = 1\,\text{N m}$.
+**Substitution:** $$
+\begin{aligned}
+W_\text{friction} &= 25\,\text{J} - 40\,\text{J} \\
+&= -15\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+F &= \dfrac{15\,\text{J}}{6.0\,\text{m}} \\
+&= 2.5\,\text{N}
+\end{aligned}
+$$
+**Answer:** $W_\text{friction} = -15\,\text{J}$ and $F = 2.5\,\text{N}$, two significant figures. The work of friction is negative because friction is against the motion. $15\,\text{J}$ of energy became internal energy, which is transferred to the surroundings as heat.
+**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $$
+\begin{aligned}
+G &= mg \\
+&= 2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 19.6\,\text{N}
+\end{aligned}
+$$, so the friction force is about $13\,\%$ of the weight. The coefficient of sliding friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
+
+### c)
+**Given:** $m = 2.0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ at the bottom, $E_{\text{p}0} = 40\,\text{J}$
+**Find:** the speed $v$ at the bottom and the speed $v_0$ there would be without friction
+**Principle:** At the bottom all the remaining mechanical energy is kinetic energy (chapter *Kinetic energy, potential energy and mechanical energy*). Without friction only the weight would do work, so the mechanical energy would be conserved and all of the initial potential energy would become kinetic energy.
+**Formula:** $E_\text{k} = \tfrac12 mv^2$, so $v = \sqrt{\dfrac{2E_\text{k}}{m}}$; without friction $E_{\text{p}0} = \tfrac12 mv_0^2$, so $v_0 = \sqrt{\dfrac{2E_{\text{p}0}}{m}}$
+**Conversions:** None needed: $1\,\text{J} = 1\,\text{kg m}^2/\text{s}^2$.
+**Substitution:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 25\,\text{J}}{2.0\,\text{kg}}} \\
+&= \sqrt{25\,\text{m}^2/\text{s}^2} \\
+&= 5.0\,\text{m/s}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 40\,\text{J}}{2.0\,\text{kg}}} \\
+&= \sqrt{40\,\text{m}^2/\text{s}^2} \\
+&= 6.3\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v = 5.0\,\text{m/s}$ and without friction $v_0 \approx 6.3\,\text{m/s}$. Friction reduces the speed by about $21\,\%$: part of the potential energy becomes internal energy, which is transferred to the surroundings as heat, and less kinetic energy remains.
+**Reasonableness:** The speed without friction is $6.3\,\text{m/s} \approx 23\,\text{km/h}$ and with friction $5.0\,\text{m/s} = 18\,\text{km/h}$. The speed with friction is lower, as it should be. The speed without friction equals that of a free fall from a height of $2.0\,\text{m}$: $\sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 2.04\,\text{m}} \approx 6.3\,\text{m/s}$.
+
+### d)
+**Given:** new mass $m' = 3.0\,\text{kg}$; the same slope ($h = 2.04\,\text{m}$, $s = 6.0\,\text{m}$, $\alpha \approx 20^\circ$) and the same coefficient of sliding friction $\mu$
+**Find:** the speed of the sled at the bottom
+**Principle:** The energy principle (chapter *Conservation of mechanical energy and the energy principle*). The sliding friction force is $F = \mu N$, and the normal force on the slope is $N = mg\cos\alpha$. Therefore the friction force is directly proportional to the mass.
+**Formula:** $$
+\begin{aligned}
+mgh - Fs &= \tfrac12 mv^2 \\
+F &= \mu mg\cos\alpha \\
+v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
+\end{aligned}
+$$
+**Conversions:** None needed.
+**Substitution:** The mass cancels, so the speed does not depend on the mass. Check with numbers, in order: the potential energy, the friction force, the work of friction, the kinetic energy at the bottom and the speed.
+$$
+\begin{aligned}
+E_\text{p}' &= 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 2.04\,\text{m} \\
+&= 60\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+F' &= \dfrac{3.0}{2.0} \cdot 2.5\,\text{N} \\
+&= 3.75\,\text{N}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+W' &= -3.75\,\text{N} \cdot 6.0\,\text{m} \\
+&= -22.5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+E_\text{k}' &= 60\,\text{J} - 22.5\,\text{J} \\
+&= 37.5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 37.5\,\text{J}}{3.0\,\text{kg}}} \\
+&= 5.0\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The speed does not change: it is still $5.0\,\text{m/s}$. The heavier sled loses more energy to friction ($22.5\,\text{J} > 15\,\text{J}$), but it also has more energy at the start ($60\,\text{J} > 40\,\text{J}$), and both grow in the same ratio.
+**Reasonableness:** As in a free fall, a heavy and a light object reach the same speed when the resistance is small. Here friction follows the same rule because it also grows with the mass. In reality air resistance does not grow with the mass, so the heavier sled would be slightly faster.
+
+### Yleisiä virheitä
+- In part a) the length of the slope $6.0\,\text{m}$ is used as the height, or the potential energy is divided by the mass alone.
+- In part b) the work of friction is written as $+15\,\text{J}$, or the energy $15\,\text{J}$ is not divided by the distance; $15\,\text{J} : 6.0\,\text{m} = 2.5\,\text{N}$ is a force, not an energy.
+- In part c) the speed is calculated from the initial energy $40\,\text{J}$ instead of the final kinetic energy $25\,\text{J}$, so friction is ignored.
+- In part d) it is assumed that the heavier sled is faster or slower, although the mass cancels from the equation.
+
+### Hyväksytään myös
+- In part b) the friction force can also be solved from the changes in kinetic and potential energy separately: $F s = E_{\text{p}0} - E_\text{k}$.
+- In part d) a symbolic argument in which the mass cancels from the energy equation is enough, as long as the result is stated.
+
+## fy9-sailymislait-s8
+
+### a)
+**Given:** the $(t,F)$ graph: the force rises from zero to $900\,\text{N}$ and returns to zero at $12\,\text{ms}$; the graph starts at $t = 0$
+**Find:** the impulse $I$
+**Principle:** The impulse of a force is the area between the force-time graph and the time axis (chapter *Momentum and impulse*). The graph is a triangle and the direction of the force stays the same, so the impulse is the area of the triangle.
+**Reading the graph:** The height of the triangle is $F_\text{max} = 900\,\text{N}$ and its base $\Delta t = 12\,\text{ms}$.
+**Formula:** $I = \tfrac12 F_\text{max}\,\Delta t$
+**Conversions:** $12\,\text{ms} = 12 \cdot 10^{-3}\,\text{s} = 0.012\,\text{s}$
+**Substitution:** $$
+\begin{aligned}
+I &= \tfrac12 \cdot 900\,\text{N} \cdot 0.012\,\text{s} \\
+&= 5.4\,\text{N s}
+\end{aligned}
+$$
+**Answer:** $I = 5.4\,\text{N s}$ upwards, two significant figures like the duration $12\,\text{ms}$.
+**Reasonableness:** The mean force is $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ and it acts for $0.012\,\text{s}$, so $450\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N s}$. The weight of the ball is only $$
+\begin{aligned}
+G &= mg \\
+&= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 4.2\,\text{N}
+\end{aligned}
+$$, so ignoring it during the kick is justified.
+
+### b)
+**Given:** $m = 0.43\,\text{kg}$, initial speed $0$, impulse $I = 5.4\,\text{N s}$
+**Find:** the launch speed $v$
+**Principle:** The impulse-momentum theorem: the impulse of the force equals the change in the momentum of the body (chapter *Momentum and impulse*). During the kick only the force of the foot changes the momentum of the ball, because gravity and air resistance are negligible.
+**Formula:** $I = \Delta p = mv - 0$, so $v = \dfrac{I}{m}$
+**Conversions:** $1\,\text{N s} = 1\,\text{kg m/s}$
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{5.4\,\text{kg m/s}}{0.43\,\text{kg}} \\
+&= 12.56\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v \approx 13\,\text{m/s}$ upwards, two significant figures like the mass and the impulse.
+**Reasonableness:** $13\,\text{m/s}$ is about $47\,\text{km/h}$. This is an ordinary speed for a soft kick; hard shots exceed $25\,\text{m/s}$.
+
+### c)
+**Given:** $m = 0.43\,\text{kg}$, $v = 12.56\,\text{m/s}$ after the kick, zero level at the height of the kick
+**Find:** the kinetic energy $E_\text{k}$ and the height $h$ without air resistance
+**Principle:** Right after the kick the ball has only kinetic energy. When air resistance is left out, only the weight does work, so the mechanical energy is conserved (chapter *Conservation of mechanical energy and the energy principle*). At the highest point the speed is zero.
+**Formula:** $E_\text{k} = \tfrac12 mv^2$; $\tfrac12 mv^2 = mgh$, so $h = \dfrac{v^2}{2g}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 0.43\,\text{kg} \cdot (12.56\,\text{m/s})^2 \\
+&= 33.9\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+h &= \dfrac{(12.56\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} \\
+&= 8.04\,\text{m}
+\end{aligned}
+$$
+**Answer:** $E_\text{k} \approx 34\,\text{J}$ and $h \approx 8.0\,\text{m}$, two significant figures.
+**Reasonableness:** Check with potential energy: $$
+\begin{aligned}
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 8.04\,\text{m} \\
+&\approx 33.9\,\text{J}
+\end{aligned}
+$$, the same as the kinetic energy. The mass of the ball does not affect the height, only the speed does.
+
+### d)
+**Given:** $m = 0.43\,\text{kg}$, $E_\text{k0} = 33.9\,\text{J}$ at launch, measured height $h_\text{measured} = 6.5\,\text{m}$, speed $0$ at the highest point
+**Find:** the work $W_\text{air}$ of air resistance and the mean air resistance $F$
+**Principle:** Air resistance is against the motion, so the mechanical energy is not conserved. The energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of air resistance equals the final energy. At the top the kinetic energy is zero and the potential energy is $mgh_\text{measured}$. The work of air resistance is negative: $W_\text{air} = -Fh_\text{measured}$, where $F$ is the average of the force over the whole rise.
+**Formula:** $E_\text{k0} + W_\text{air} = mgh_\text{measured}$, so $W_\text{air} = mgh_\text{measured} - E_\text{k0}$ and $F = \dfrac{-W_\text{air}}{h_\text{measured}}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 6.5\,\text{m} \\
+&= 27.4\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+W_\text{air} &= 27.4\,\text{J} - 33.9\,\text{J} \\
+&= -6.5\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+F &= \dfrac{6.5\,\text{J}}{6.5\,\text{m}} \\
+&= 1.0\,\text{N}
+\end{aligned}
+$$
+**Answer:** $W_\text{air} \approx -6.5\,\text{J}$ and $F \approx 1.0\,\text{N}$. The mechanical energy is about $19\,\%$ lower than without air resistance. It has become internal energy of the air and the ball, which is transferred to the surroundings as heat.
+**Reasonableness:** The mean air resistance is about a quarter of the weight of the ball ($4.2\,\text{N}$). It is small but measurable. The rise ends $8.0\,\text{m} - 6.5\,\text{m} = 1.5\,\text{m}$ lower than without air resistance.
+
+### Yleisiä virheitä
+- In part a) the area is calculated as a rectangle $900\,\text{N} \cdot 12\,\text{ms}$, or the milliseconds are not converted to seconds.
+- In part b) the impulse is divided by the force of the foot or by the time instead of the mass.
+- In part c) the height is calculated directly from the impulse, or as a potential energy without first calculating the kinetic energy; $h = v^2 : 2g$ is enough.
+- In part d) the work of air resistance is written as a positive number, or it is divided by the wrong distance, for example $8.0\,\text{m}$.
+
+### Hyväksytään myös
+- In part a) the impulse can be found by counting squares: one square is $100\,\text{N} \cdot 2\,\text{ms} = 0.2\,\text{N s}$ and the area of the triangle is about $27$ squares, that is $5.4\,\text{N s}$.
+- In part d) $W_\text{air}$ can also be calculated as the difference of the kinetic and potential energies, as long as the sign is negative.

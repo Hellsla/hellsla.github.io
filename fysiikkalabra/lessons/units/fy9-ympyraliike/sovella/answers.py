@@ -117,4 +117,44 @@ out.update({f"{S}-s7-a": round(v7 / 1000, 4), f"{S}-s7-a-r": round(r7 / 1000), f
             f"{S}-s7-e-theta": round(math.degrees(math.asin(R_E / r7)), 1),
             f"{S}-s7-d-E-J": E7 * 3.6e6, f"{S}-s7-d-t-s": 365 * 86400})
 
+# s8: a car in a level curve (fy5-4/kuvaaja-a; the marked point read from the graph: v = 15 m/s, a_n = 3,0 m/s^2)
+v8, an8 = 15.0, 3.0
+m8, mu8, m8d = 1200.0, 0.50, 1500.0                      # kg, static friction coefficient (wet road), full car
+r8 = v8 ** 2 / an8                                       # m, from a_n = v^2 / r
+F8 = m8 * an8                                            # N, the friction force needed at 15 m/s
+Fmax8 = mu8 * m8 * g                                     # N, the largest static friction force
+vmax8 = math.sqrt(mu8 * g * r8)                          # m/s, from m v^2 / r = mu m g (m cancels)
+anmax8 = mu8 * g                                         # m/s^2, the a_n the friction can give
+vmax8_d = math.sqrt(mu8 * g * r8)                        # m/s, the same with 1500 kg
+F8d = m8d * an8                                          # N, the friction needed at 15 m/s with 1500 kg
+Fmax8d = mu8 * m8d * g                                   # N
+out.update({f"{S}-s8-a": round(r8, 2), f"{S}-s8-b": round(F8 / 1000, 4), f"{S}-s8-b-mg": round(m8 * g, 1),
+            f"{S}-s8-c": round(vmax8, 3), f"{S}-s8-c-F": round(Fmax8, 1), f"{S}-s8-c-an": round(anmax8, 3),
+            f"{S}-s8-c-kmh": round(vmax8 * 3.6, 1), f"{S}-s8-c-share": round(100 * F8 / Fmax8, 1),
+            f"{S}-s8-c-v2": round(mu8 * g * r8, 1),
+            f"{S}-s8-d-v": round(vmax8_d, 3), f"{S}-s8-d-F": round(F8d, 1), f"{S}-s8-d-Fmax": round(Fmax8d, 1),
+            f"{S}-s8-d-ratio": round(m8d / m8, 3), f"{S}-s8-d-an19": round(19.0 ** 2 / r8, 3)})
+
+# s9: a sign hanging from a rod hinged to a wall, held by a wire (fy5-2/kyltti; read from the figure: L = 1,20 m, wire 30,0 deg to the rod)
+L9, th9 = 1.20, 30.0                                     # m, deg
+ms9, mr9 = 18.0, 3.0                                     # kg, the sign and the uniform rod
+s9 = math.sin(math.radians(th9)); c9 = math.cos(math.radians(th9))
+T9 = (ms9 + mr9 / 2) * g / s9                            # N, moments about the hinge: T sin(th) L = m_s g L + m_r g L/2
+Hx9 = T9 * c9                                            # N, horizontal force of the hinge (away from the wall)
+Vy9 = (ms9 + mr9) * g - T9 * s9                          # N, vertical force of the hinge (up)
+Fh9 = math.hypot(Hx9, Vy9)                               # N
+ang9 = math.degrees(math.atan2(Vy9, Hx9))                # deg above the horizontal
+Tmax9 = 600.0                                            # N, the wire's allowed force
+msmax9 = Tmax9 * s9 / g - mr9 / 2                        # kg
+th9d = 45.0
+T9d = (ms9 + mr9 / 2) * g / math.sin(math.radians(th9d))        # N
+Hx9d = T9d * math.cos(math.radians(th9d))                       # N
+out.update({f"{S}-s9-a": round(T9, 2), f"{S}-s9-a-W": round((ms9 + mr9 / 2) * g, 2),
+            f"{S}-s9-a-Mom": round((ms9 + mr9 / 2) * g * L9, 2),
+            f"{S}-s9-b": round(Fh9, 2), f"{S}-s9-b-H": round(Hx9, 2), f"{S}-s9-b-V": round(Vy9, 2),
+            f"{S}-s9-b-ang": round(ang9, 2), f"{S}-s9-b-Gtot": round((ms9 + mr9) * g, 2),
+            f"{S}-s9-b-Vcheck": round(mr9 / 2 * g, 2),
+            f"{S}-s9-c": round(msmax9, 3), f"{S}-s9-c-Wmax": round(Tmax9 * s9, 2),
+            f"{S}-s9-d-T": round(T9d, 2), f"{S}-s9-d-H": round(Hx9d, 2), f"{S}-s9-d-drop": round(100 * (1 - T9d / T9), 1)})
+
 print(json.dumps(out))

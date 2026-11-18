@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dfdef7affccf750c
+CONTENT-HASH: 527b041a30593629
 
 ## Blocking
 
@@ -7,4 +7,6 @@ CONTENT-HASH: dfdef7affccf750c
 - None.
 
 ## Checked
-batch delta review: the cue-ball retrieval question: Δp = 60 N · 0.0050 s = 0.30 kg·m/s, and the quotient is 12 000. The statement that the mass is not needed is right, the stated small other horizontal forces make FΔt the net impulse, and the Newton's cradle caption is right.
+- Captures opened: none (one summary formula moved from inline to a display aligned block; judged from the diff in context).
+- content/en/FY4/fy4-10/lesson.md:396 — $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$ unchanged in terms, primes and signs; only set as a two-row aligned display. The signed-velocity statement and its condition (bullet 394: external forces sum to zero or their impulse negligible) still hold.
+- Hash identical at start and end.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dcfcf10f1aae9990
+CONTENT-HASH: 93a47efca522bc8d
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] sol-fy4-7-L2-10-390.png (Kohta c, d) — the sub-parts c) and d) run on as lines with no paragraph gap, and d) is a ~120-word block listing factors — put each of "Aineistosta ei voi päätellä", "Aineisto ei kerro" and the model remark on its own paragraph.
+- [Minor] fy4-7 L3-04 (tennis ball, task 10-23) Kaava — says "Energiataseesta muuttunut energia on ΔE = E_mek,0 − E_mek,4" without writing the balance equation itself (E_mek,0 = E_mek,4 + ΔE) as the other changed steps do; readable, but the one step that breaks the pattern.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-7-L1-08-390.png, sol-fy4-7-L1-09-390.png and sol-fy4-7-L2-10-390.png (the last cropped into 1500 px parts 2-6; the task statement part 1 was opened only as the first screen, no break there). L1-08: the model answer and the two rebuttal paragraphs separate cleanly. L1-09: the unit comparison, the "only Gv^2/2g" explanation and the Ggh remark are one thing each. L2-10: breaks around the sub-parts read well, spacing even, nothing clipped. Words unchanged. Hash re-run before writing: unchanged.
+- Delta: solutions.md Kaava steps (energy balance, E_k + E_p, slope of the (v^2, E_k) graph, reaction and braking distance); hash same at start and end.
+- Opened fy4-7-open-exercises-L3-1280-4.png (10-22: Kaava ending "E_mek,2 = E_p = mgh. Siis E_muu = ½mv² − mgh", Sijoitus rows start with the quantity, Vastaus, Järkevyys, start of 10-23), fy4-7-open-exercises-L3-1280-5.png (10-23: Kaava with E_mek = E_k + E_p, v = 0, display of ΔE, Sijoitus start), fy4-7-open-exercises-L3-1280-9.png (end of the last level-3 card: aligned chains with primes, Vastaus, Järkevyys, card edge), fy4-7-open-exercises-L3-1280-1.png (level 3 opening, 10-20 with its Kaava intact, for the surrounding layout).
+- Section order kept, spacing even, nothing clipped; subscripts such as E_mek,1 and E'_5 legible, units and decimal commas unchanged. 1280 px captures; packet layout checks passed at all widths.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

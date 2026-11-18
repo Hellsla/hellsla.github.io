@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d6ef06e8d2536fac
+CONTENT-HASH: e7d898f05aacd758
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md Kaava lines — "..., joten ..., joten ..." chains repeat "joten"; optional smoother "ja".
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-11-open-exercises-L2-1280-15 (stopping-distance solution, answer and Lisäksi block); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- fy4-11-open-exercises-L2-1280-6.png (braking-distance line task): Kaava runs s_j = ½v0t_j, t_j = v0/a, then slope k = 1/(2a), a = 1/(2k); display cards aligned at "=", nothing clipped; Sijoitus and Vastaus unchanged in layout.
+- Changed Sijoitus lines (substitution into the last symbolic form, same numbers) and all new Kaava lines read in the diff: basic equations first, derived formula last, inline maths, decimal commas and units correct.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

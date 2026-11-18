@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fbbb9b9401d75abc
-SCOPE: delta added-exercise from ce753f67cda910eb base abdc9e095e4f
+CONTENT-HASH: 84dec66598eb69d3
 
 ## Blocking
 None.
 
 ## Polish
-1. exercises/solutions.md:260 (fy4-9-L2-09 d) — "satunnaisvirhe" is not explained although "systemaattinen virhe" is — "satunnaisvirheen eli virheen, joka vaihtelee mittauksesta toiseen, vaikutus pienenee".
-2. exercises/solutions.md:260 — "raajat tai irtotavarat" — "kädet ja jalat tai irralliset tavarat".
-3. exercises/exercises.json (fy4-9-L2-09) — the video is in English; if the page offers subtitles or a transcript (not checked), say so ("Voit käyttää tekstitystä"), so that language is not the obstacle.
+1. solutions.md dummy task, Kaava — $\Delta t_\text{e}$ appears first in Kaava as "pysähtymisaika $25\,\text{ms}$" and is not tied to the task text; add "(kohdan c jäykkä este)".
+2. Same Kaava — "$I = \Delta t \cdot \Sigma F$" uses ΣF for the sum of graph points while ΣF is the net force elsewhere; use $\Sigma F_i$ or "sisäpisteiden summa".
+3. Carried polish from round 1 (satunnaisvirhe, raajat) unchanged.
 
 ## Checked
-- Added fy4-9-L2-09 only: the video is needed for b) and frames a), c), d); four parts rise from explaining to designing and evaluating, no overlap.
-- Fits level 2 as an experimental-design and reasoning task; differs from the calculations and data tasks of the level and from the worked example; the set's mix gains its first design task with a real source.
-- Only FY4 knowledge: Newton II, impulse principle, Newton III; the second example method derives m1v1 = m2v2 from the third law and equal impulse times, not from a law taught later.
-- Model answer: what a scale measures and why it reads zero in free fall without claiming "no gravity"; m = F/a and m = FΔt/Δv shown as the same law; example numbers marked as examples (80 kg both ways); error sources with remedies; relative error illustrated (4 %).
-- Hard words opened: hitaus, vapaa pudotus, tukivoima, työnnin, kuvataajuus, systemaattinen virhe, kalibrointi, suhteellinen virhe.
-- Hash the same at start and end.
+- Round 2 fix verified: the stopping time of the rigid obstacle is now $\Delta t_\text{e} = 25\,\text{ms}$, distinct from the graph step $\Delta t = 10\,\text{ms}$; the 25 ms is given in task part c.
+- Kaava, Sijoitus (c) and the Järkevyys agree; $F_\text{ka} = 981/0{,}025 = 39\,240\,\text{N}$ correct.
+- No number, answer or id changed.
+- Captures: none opened (text-only delta).

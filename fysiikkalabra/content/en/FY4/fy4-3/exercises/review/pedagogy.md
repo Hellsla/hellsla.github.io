@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c367e5fc29791883
+CONTENT-HASH: 404ccc25fca3a2a7
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- solutions.md L3-05 Formula — the first-law line is still written as the component form $\Sigma F = F_\text{av} - F_\text{f} = 0$ without the vector row $\Sigma\overline{F} = \overline{0}$ (house rule); recorded only, positive direction is clear from the diagram.
+- solutions.md L3-05 Answer — part c) packs the rope, the cart and the hand into one paragraph of about 80 words; consider a paragraph for the hand pair.
 
 ## Checked
-- Delta: the diff judged in its context; hash c367e5fc29791883 at start and end.
-- Principle and Answer c): the third-law pair is now cart–rope, and the rope–hand pair is named separately; this repairs the earlier wording in which the cart pulled the student directly.
-- The new sentences are short and readable, and consistent with each other in Principle and Answer.
-- The marker "(example data)" taken out of captions changes no task.
-- Force-diagram checklist untouched by the diff.
+- Round 2, delta (work queue 8g): the only change is L3-05 Formula and Substitution; no number, answer, tolerance, id or task changed.
+- The earlier ΣF clash is fixed: the mean of the readings is now $F_\text{av} = (F_1 + F_2 + F_3)/3$, and ΣF means only the net force; the repeated result is gone.
+- Chain is consistent: $F_\text{f} = F_\text{av}$ by the first law; $F_1 + F_2 + F_3 = 3.4 + 3.5 + 3.3 = 10.2\,\text{N}$, $10.2/3 = 3.40\,\text{N}$; the Answer (b) 3.4 N and "two significant figures" still match.
+- Substitution goes into the last symbolic form; reading-level and paragraph size fine.
+- Captures not opened: text-only formula change.

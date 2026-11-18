@@ -2,9 +2,9 @@
 **Given:** $x_\text{A} = 4.0\,\text{m} + 2.0\,\text{m/s} \cdot t$ and $x_\text{B} = 24\,\text{m} - 3.0\,\text{m/s} \cdot t$ in the same coordinate system
 **Find:** the time of the meeting $t$ in $\text{s}$
 **Principle:** The carts meet when they are at the same place at the same moment, so $x_\text{A} = x_\text{B}$. The positions are linear functions of time, so the equation has one solution.
-**Formula:** $x_\text{A} = x_\text{B}$, so $4.0 + 2.0\,t = 24 - 3.0\,t$. Terms in $t$ to the left and numbers to the right: $5.0\,t = 20$, so $t = \dfrac{24 - 4.0}{2.0 + 3.0}$
+**Formula:** In uniform motion the position is $x = x_0 + v\,t$, so $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. At the meeting $x_\text{A} = x_\text{B}$, that is, $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$. Terms in $t$ to the left and the other terms to the right: $(v_\text{A} - v_\text{B})\,t = x_{0\text{B}} - x_{0\text{A}}$, so $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
 **Conversions:** The positions are in metres and the velocities in $\text{m/s}$, so the result comes out in seconds. No conversions are needed.
-**Substitution:** $t = \dfrac{24\,\text{m} - 4.0\,\text{m}}{2.0\,\text{m/s} + 3.0\,\text{m/s}} = \dfrac{20\,\text{m}}{5.0\,\text{m/s}} = 4.0\,\text{s}$
+**Substitution:** $t = \dfrac{24\,\text{m} - 4.0\,\text{m}}{2.0\,\text{m/s} - (-3.0\,\text{m/s})} = \dfrac{20\,\text{m}}{5.0\,\text{m/s}} = 4.0\,\text{s}$
 **Answer:** $4.0\,\text{s}$, two significant figures like the velocities ($2.0\,\text{m/s}$ and $3.0\,\text{m/s}$).
 **Reasonableness:** Substituting into both positions: $x_\text{A} = 4.0\,\text{m} + 2.0\,\text{m/s} \cdot 4.0\,\text{s} = 12\,\text{m}$ and $x_\text{B} = 24\,\text{m} - 3.0\,\text{m/s} \cdot 4.0\,\text{s} = 12\,\text{m}$. The positions are equal, so the carts meet. The time is positive, so the meeting happens after the start.
 
@@ -12,7 +12,7 @@
 **Given:** cyclist $x_0 = 0$, $v_\text{C} = 8.0\,\text{m/s}$; runner $x_0 = 60\,\text{m}$, $v_\text{R} = 5.0\,\text{m/s}$; both uniform and in the same direction
 **Find:** the time $t$ when the cyclist catches up with the runner, in $\text{s}$
 **Principle:** Catching up is a meeting: the positions are equal. Both move uniformly, so $x = x_0 + v\,t$ for each. The cyclist is faster, so she catches up with the runner.
-**Formula:** $v_\text{C}\,t = x_{0\text{R}} + v_\text{R}\,t$, so $(v_\text{C} - v_\text{R})\,t = x_{0\text{R}}$ and $t = \dfrac{x_{0\text{R}}}{v_\text{C} - v_\text{R}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$, so $x_\text{C} = v_\text{C}\,t$ and $x_\text{R} = x_{0\text{R}} + v_\text{R}\,t$. When she catches up, $x_\text{C} = x_\text{R}$, that is, $v_\text{C}\,t = x_{0\text{R}} + v_\text{R}\,t$. From this $(v_\text{C} - v_\text{R})\,t = x_{0\text{R}}$ and $t = \dfrac{x_{0\text{R}}}{v_\text{C} - v_\text{R}}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \dfrac{60\,\text{m}}{8.0\,\text{m/s} - 5.0\,\text{m/s}} = \dfrac{60\,\text{m}}{3.0\,\text{m/s}} = 20\,\text{s}$
 **Answer:** $20\,\text{s}$, two significant figures like the velocities.
@@ -33,9 +33,9 @@
 **Find:** the time of the meeting $t$ in $\text{s}$
 **Principle:** The carts are at the same place at the same moment at the point where the lines of the $(t,x)$ graph intersect. The time of the meeting is the horizontal coordinate of the intersection.
 **Reading the graph:** The lines intersect at the point at the horizontal grid line $x = 30\,\text{m}$. From there a vertical line is dropped to the time axis: it hits $t = 5.0\,\text{s}$, halfway between two grid lines ($4$ and $6\,\text{s}$).
-**Formula:** $t = $ the horizontal coordinate of the intersection, read from the graph
+**Formula:** The carts meet when $x_\text{A} = x_\text{B}$. In uniform motion $x = x_0 + v\,t$ and the velocity is $v = \dfrac{\Delta x}{\Delta t}$, so $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$ and $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$. From the graph $t$ is also read directly as the horizontal coordinate of the intersection
 **Conversions:** The axes are already in $\text{s}$ and $\text{m}$, so no conversions are needed.
-**Substitution:** The pair read is $(t;\, x) = (5.0\,\text{s};\, 30\,\text{m})$. A calculation check from the end points of the graph: A advances $60\,\text{m}$ in $10\,\text{s}$, so $v_\text{A} = 6.0\,\text{m/s}$; B moves from $40\,\text{m}$ to $20\,\text{m}$, that is, $-20\,\text{m}$ in $10\,\text{s}$, so $v_\text{B} = -2.0\,\text{m/s}$. The equation $6.0\,t = 40 - 2.0\,t$ gives $t = \dfrac{40\,\text{m}}{8.0\,\text{m/s}} = 5.0\,\text{s}$.
+**Substitution:** The pair read is $(t;\, x) = (5.0\,\text{s};\, 30\,\text{m})$. A calculation check from the end points of the graph: A advances $60\,\text{m}$ in $10\,\text{s}$, so $v_\text{A} = 6.0\,\text{m/s}$; B moves from $40\,\text{m}$ to $20\,\text{m}$, that is, $-20\,\text{m}$ in $10\,\text{s}$, so $v_\text{B} = -2.0\,\text{m/s}$. From the formula $t = \dfrac{40\,\text{m} - 0}{6.0\,\text{m/s} - (-2.0\,\text{m/s})} = \dfrac{40\,\text{m}}{8.0\,\text{m/s}} = 5.0\,\text{s}$.
 **Answer:** $5.0\,\text{s}$, read from the graph to two significant figures.
 **Reasonableness:** The place of the meeting $x = 6.0\,\text{m/s} \cdot 5.0\,\text{s} = 30\,\text{m}$ is between the two starting places ($0$ and $40\,\text{m}$), as it should be. Cart A has travelled $30\,\text{m}$ and B $10\,\text{m}$, and A is three times as fast.
 
@@ -43,7 +43,7 @@
 **Given:** runner A: $x_{0\text{A}} = 0$, $v_\text{A} = 3.5\,\text{m/s}$; runner B: $x_{0\text{B}} = 60\,\text{m}$, $v_\text{B} = -2.5\,\text{m/s}$; both move uniformly
 **Find:** the place of the meeting $x$ in $\text{m}$
 **Principle:** The runners meet when they are at the same place at the same moment, so $x_\text{A} = x_\text{B}$. Once the time of the meeting is solved, the place of the meeting is the position of either runner at that moment. The velocity of B is negative, because B runs toward A, that is, in the negative direction.
-**Formula:** $v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $t = \dfrac{x_{0\text{B}}}{v_\text{A} - v_\text{B}}$ and the place of the meeting is $x = v_\text{A}\,t$
+**Formula:** In uniform motion $x = x_0 + v\,t$, so $x_\text{A} = v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. At the meeting $x_\text{A} = x_\text{B}$, so $v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$ and $t = \dfrac{x_{0\text{B}}}{v_\text{A} - v_\text{B}}$. The place of the meeting is the position of A at that moment: $x = v_\text{A}\,t$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \dfrac{60\,\text{m}}{3.5\,\text{m/s} - (-2.5\,\text{m/s})} = \dfrac{60\,\text{m}}{6.0\,\text{m/s}} = 10\,\text{s}$ and $x = 3.5\,\text{m/s} \cdot 10\,\text{s} = 35\,\text{m}$
 **Answer:** $35\,\text{m}$, two significant figures like the given values.
@@ -53,7 +53,7 @@
 **Given:** bus $v_\text{bus} = 72\,\text{km/h}$, car $v_\text{car} = 90\,\text{km/h}$, the car is $d = 150\,\text{m}$ behind; both uniform and in the same direction
 **Find:** the time $t$ in $\text{s}$
 **Principle:** The car catches up with the bus when the positions are equal. Both move uniformly, so $x = x_0 + v\,t$ for each. We choose the origin at the position of the car at the start.
-**Formula:** $v_\text{car}\,t = d + v_\text{bus}\,t$, so $t = \dfrac{d}{v_\text{car} - v_\text{bus}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$. With the origin at the position of the car at the start, $x_\text{car} = v_\text{car}\,t$ and $x_\text{bus} = d + v_\text{bus}\,t$. When the car catches up, $x_\text{car} = x_\text{bus}$, that is, $v_\text{car}\,t = d + v_\text{bus}\,t$. From this $(v_\text{car} - v_\text{bus})\,t = d$ and $t = \dfrac{d}{v_\text{car} - v_\text{bus}}$
 **Conversions:** $90\,\text{km/h} = 90 : 3.6\,\text{m/s} = 25\,\text{m/s}$ and $72\,\text{km/h} = 72 : 3.6\,\text{m/s} = 20\,\text{m/s}$.
 **Substitution:** $t = \dfrac{150\,\text{m}}{25\,\text{m/s} - 20\,\text{m/s}} = \dfrac{150\,\text{m}}{5.0\,\text{m/s}} = 30\,\text{s}$
 **Answer:** $30\,\text{s}$, two significant figures like the velocities.
@@ -63,7 +63,7 @@
 **Given:** distance between the stations $D = 12\,\text{km}$, velocities $v_1 = 90\,\text{km/h}$ and $v_2 = 54\,\text{km/h}$ toward each other, starting at the same time
 **Find:** the time $t$ in $\text{min}$
 **Principle:** The trains meet when they are at the same place at the same moment. The origin is at the first station and the positive direction is toward the second station: $x_1 = v_1\,t$ and $x_2 = D - v_2\,t$. The equation $x_1 = x_2$ gives the time.
-**Formula:** $v_1\,t = D - v_2\,t$, so $t = \dfrac{D}{v_1 + v_2}$
+**Formula:** In uniform motion $x = x_0 + v\,t$. The origin is at the first station and the positive direction is toward the second station, so $x_1 = v_1\,t$ and $x_2 = D - v_2\,t$, where $v_2$ is the speed of the second train. At the meeting $x_1 = x_2$, that is, $v_1\,t = D - v_2\,t$. From this $(v_1 + v_2)\,t = D$ and $t = \dfrac{D}{v_1 + v_2}$
 **Conversions:** We keep the length in kilometres and the velocity in $\text{km/h}$, so the time comes out in hours: $t = \dfrac{12\,\text{km}}{144\,\text{km/h}}$. Finally $1\,\text{h} = 60\,\text{min}$.
 **Substitution:** $t = \dfrac{12\,\text{km}}{90\,\text{km/h} + 54\,\text{km/h}} = \dfrac{12\,\text{km}}{144\,\text{km/h}} = 0.0833\,\text{h} = 0.0833 \cdot 60\,\text{min} = 5.0\,\text{min}$
 **Answer:** $5.0\,\text{min}$, two significant figures like the velocities ($54\,\text{km/h}$).
@@ -78,7 +78,7 @@
 The line of B starts higher, at $42\,\text{m}$, and falls $1.0\,\text{m}$ every second, because the velocity is negative. The rising line starts lower and the falling line higher, so they approach each other and intersect.
 
 The intersection gives the time and the place where the carts are at the same point.
-**Formula:** $x_\text{A} = x_\text{B}$, that is, $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$. Solving for $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$, so $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. At the meeting $x_\text{A} = x_\text{B}$, that is, $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$. Terms in $t$ to the left and the other terms to the right: $(v_\text{A} - v_\text{B})\,t = x_{0\text{B}} - x_{0\text{A}}$, so $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \dfrac{42\,\text{m} - 6.0\,\text{m}}{3.0\,\text{m/s} - (-1.0\,\text{m/s})} = \dfrac{36\,\text{m}}{4.0\,\text{m/s}} = 9.0\,\text{s}$
 **Answer:** $9.0\,\text{s}$, two significant figures like the given values.
@@ -91,9 +91,9 @@ The intersection gives the time and the place where the carts are at the same po
 
 The distance is $10\,\text{m}$ for the first time before the meeting and for the second time after the meeting.
 **Reading the graph:** The line of cart A goes from the point $(0\,\text{s};\, 0)$ to the point $(10\,\text{s};\, 60\,\text{m})$, so $v_\text{A} = \dfrac{60\,\text{m} - 0}{10\,\text{s} - 0} = 6.0\,\text{m/s}$. The line of cart B goes from the point $(0\,\text{s};\, 40\,\text{m})$ to the point $(10\,\text{s};\, 20\,\text{m})$, so $v_\text{B} = \dfrac{20\,\text{m} - 40\,\text{m}}{10\,\text{s} - 0} = -2.0\,\text{m/s}$.
-**Formula:** $x_\text{B} - x_\text{A} = (40 - 2.0\,t) - 6.0\,t = 40 - 8.0\,t$. We set it equal to $10\,\text{m}$: $t = \dfrac{40\,\text{m} - 10\,\text{m}}{8.0\,\text{m/s}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$, so $x_\text{A} = v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. The distance between the carts is $s = x_\text{B} - x_\text{A} = x_{0\text{B}} + v_\text{B}\,t - v_\text{A}\,t$. Solving for $t$: $(v_\text{A} - v_\text{B})\,t = x_{0\text{B}} - s$, so $t = \dfrac{x_{0\text{B}} - s}{v_\text{A} - v_\text{B}}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
-**Substitution:** $t = \dfrac{40\,\text{m} - 10\,\text{m}}{6.0\,\text{m/s} + 2.0\,\text{m/s}} = \dfrac{30\,\text{m}}{8.0\,\text{m/s}} = 3.75\,\text{s}$
+**Substitution:** $t = \dfrac{40\,\text{m} - 10\,\text{m}}{6.0\,\text{m/s} - (-2.0\,\text{m/s})} = \dfrac{30\,\text{m}}{8.0\,\text{m/s}} = 3.75\,\text{s}$
 **Answer:** $3.8\,\text{s}$ (two significant figures like the distance $10\,\text{m}$). The unrounded value is $3.75\,\text{s}$.
 **Reasonableness:** The distance decreases by $8.0\,\text{m}$ every second and is $40\,\text{m}$ at the start. In $3.75\,\text{s}$ it decreases by $30\,\text{m}$, so $10\,\text{m}$ is left. The moment is before the meeting at $t = 5.0\,\text{s}$, as it should be for the first time.
 
@@ -101,7 +101,7 @@ The distance is $10\,\text{m}$ for the first time before the meeting and for the
 **Given:** runner $x_{0\text{R}} = -8.0\,\text{m}$, $v = 5.0\,\text{m/s}$ (uniform); bus $x_0 = 0$, $v_0 = 0$, $a = 1.0\,\text{m/s}^2$
 **Find:** the first moment $t$ when the runner is level with the bus, in $\text{s}$
 **Principle:** Meeting: $x_\text{B} = x_\text{R}$. The position of the bus is $\tfrac12\,a\,t^2$ and that of the runner is $x_{0\text{R}} + v\,t$. The equation is quadratic, and both positive roots are meetings: the first time the runner catches up with the bus, and the second time the bus, already faster, passes the runner.
-**Formula:** $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$, that is, $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$. The coefficients are $\tfrac12\,a$, $-v$ and $-x_{0\text{R}}$, so the quadratic formula gives $t = \dfrac{v \pm \sqrt{v^2 + 2\,a\,x_{0\text{R}}}}{a}$, and the first meeting is the smaller root
+**Formula:** The bus starts from rest at the origin and accelerates uniformly: $x = x_0 + v_0\,t + \tfrac12\,a\,t^2$ gives $x_\text{B} = \tfrac12\,a\,t^2$. The runner moves uniformly: $x_\text{R} = x_{0\text{R}} + v\,t$. At the meeting $x_\text{B} = x_\text{R}$, that is, $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$ and $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$. The coefficients are $\tfrac12\,a$, $-v$ and $-x_{0\text{R}}$, so the quadratic formula gives $t = \dfrac{v \pm \sqrt{v^2 + 2\,a\,x_{0\text{R}}}}{a}$. The first meeting is the smaller root $t = \dfrac{v - \sqrt{v^2 + 2\,a\,x_{0\text{R}}}}{a}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** The expression under the root is $$\begin{aligned} &v^2 + 2\,a\,x_{0\text{R}} \\ &= (5.0\,\text{m/s})^2 \\ &+ 2 \cdot 1.0\,\text{m/s}^2 \\ &\cdot (-8.0\,\text{m}) \\ &= 9.0\,\text{m}^2/\text{s}^2 \end{aligned}$$. So $t = \dfrac{5.0\,\text{m/s} - 3.0\,\text{m/s}}{1.0\,\text{m/s}^2} = 2.0\,\text{s}$
 **Answer:** $2.0\,\text{s}$, two significant figures like the given values. The larger root $5.0 + 3.0 = 8.0\,\text{s}$ is the moment when the bus passes the runner.
@@ -111,9 +111,9 @@ The distance is $10\,\text{m}$ for the first time before the meeting and for the
 **Given:** bus $x_{0\text{B}} = 0$, $v_0 = 0$, $a = 0.50\,\text{m/s}^2$; runner $x_{0\text{R}} = -20\,\text{m}$, $v = 4.0\,\text{m/s}$ (uniform); both in the same direction
 **Find:** whether the runner catches up with the bus, and the smallest distance $s_\text{min}$ in $\text{m}$
 **Principle:** Two ideas: a meeting requires a non-negative expression under the root, and if there is no meeting, the distance is smallest when the velocities are equal (before that the runner is closing in, after that the bus pulls away).
-**Formula:** The meeting $\tfrac12\,a\,t^2 = x_{0\text{R}} + v\,t$ gives $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$, and the expression under the root is $v^2 + 2\,a\,x_{0\text{R}}$. The velocities are equal when $a\,t = v$, that is, $t = \dfrac{v}{a}$. The distance is $s = x_\text{B} - x_\text{R} = \tfrac12\,a\,t^2 - x_{0\text{R}} - v\,t$
+**Formula:** The bus starts from rest at the origin and accelerates uniformly, $x_\text{B} = \tfrac12\,a\,t^2$, and the runner moves uniformly, $x_\text{R} = x_{0\text{R}} + v\,t$. At a meeting $x_\text{B} = x_\text{R}$, so $\tfrac12\,a\,t^2 - v\,t - x_{0\text{R}} = 0$, and a solution exists only if the expression under the root $v^2 + 2\,a\,x_{0\text{R}}$ is not negative. If there is no meeting, the distance is $s = x_\text{B} - x_\text{R} = \tfrac12\,a\,t^2 - x_{0\text{R}} - v\,t$. It is smallest when the velocities are equal: $a\,t = v$, that is, $t = \dfrac{v}{a}$. Substituting this into the distance and simplifying: $s_\text{min} = -x_{0\text{R}} - \dfrac{v^2}{2\,a}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** The expression under the root: $$\begin{aligned} &(4.0\,\text{m/s})^2 \\ &+ 2 \cdot 0.50\,\text{m/s}^2 \\ &\cdot (-20\,\text{m}) \\ &= 16 - 20 \\ &= -4\,\text{m}^2/\text{s}^2 \\ &< 0 \end{aligned}$$, so the runner does not catch up with the bus. The velocities are equal at $t = \dfrac{4.0\,\text{m/s}}{0.50\,\text{m/s}^2} = 8.0\,\text{s}$. Then $$\begin{aligned} &s_\text{min} \\ &= \tfrac12 \cdot 0.50\,\text{m/s}^2 \\ &\cdot (8.0\,\text{s})^2 \\ &+ 20\,\text{m} - 4.0\,\text{m/s} \cdot 8.0\,\text{s} \\ &= 16\,\text{m} + 20\,\text{m} - 32\,\text{m} \\ &= 4.0\,\text{m} \end{aligned}$$
+**Substitution:** The expression under the root: $$\begin{aligned} &(4.0\,\text{m/s})^2 \\ &+ 2 \cdot 0.50\,\text{m/s}^2 \\ &\cdot (-20\,\text{m}) \\ &= 16 - 20 \\ &= -4\,\text{m}^2/\text{s}^2 \\ &< 0 \end{aligned}$$, so the runner does not catch up with the bus. The velocities are equal at $t = \dfrac{4.0\,\text{m/s}}{0.50\,\text{m/s}^2} = 8.0\,\text{s}$. Then $s_\text{min} = -(-20\,\text{m}) - \dfrac{(4.0\,\text{m/s})^2}{2 \cdot 0.50\,\text{m/s}^2} = 20\,\text{m} - 16\,\text{m} = 4.0\,\text{m}$
 **Answer:** The runner does not catch up with the bus; at closest she is $4.0\,\text{m}$ away, two significant figures like the given values.
 **Reasonableness:** At $8.0\,\text{s}$ the bus is at $16\,\text{m}$ and the runner at $-20\,\text{m} + 32\,\text{m} = 12\,\text{m}$, so the gap is $4.0\,\text{m}$. At $6.0\,\text{s}$ and $10\,\text{s}$ the gap is $5.0\,\text{m}$, so $4.0\,\text{m}$ is the smallest. The gap never goes to zero.
 
@@ -121,7 +121,7 @@ The distance is $10\,\text{m}$ for the first time before the meeting and for the
 **Given:** scooter $x_0 = 0$, $v_0 = 0$, $a = 2.0\,\text{m/s}^2$ in the positive direction; cyclist $x_0 = 180\,\text{m}$, velocity $-8.0\,\text{m/s}$ (toward the scooter, uniform)
 **Find:** the time of the meeting $t$ in $\text{s}$
 **Principle:** The motion of the scooter is uniformly accelerated and that of the cyclist is uniform, and they move in opposite directions. Meeting: $x_\text{S} = x_\text{C}$, when the origin is the starting place of the scooter and the positive direction is toward the cyclist.
-**Formula:** $\tfrac12\,a\,t^2 = D - v\,t$, where $D = 180\,\text{m}$ and $v = 8.0\,\text{m/s}$ is the speed of the cyclist. So $\tfrac12\,a\,t^2 + v\,t - D = 0$, and the positive root is $t = \dfrac{-v + \sqrt{v^2 + 2\,a\,D}}{a}$
+**Formula:** The scooter starts from rest at the origin and accelerates uniformly: $x = x_0 + v_0\,t + \tfrac12\,a\,t^2$ gives $x_\text{S} = \tfrac12\,a\,t^2$. The cyclist moves uniformly at the velocity $-v$, where $v = 8.0\,\text{m/s}$ is the speed of the cyclist: $x_\text{C} = D - v\,t$, where $D = 180\,\text{m}$. At the meeting $x_\text{S} = x_\text{C}$, that is, $\tfrac12\,a\,t^2 = D - v\,t$ and $\tfrac12\,a\,t^2 + v\,t - D = 0$. The quadratic formula gives $t = \dfrac{-v \pm \sqrt{v^2 + 2\,a\,D}}{a}$, and the positive root is $t = \dfrac{-v + \sqrt{v^2 + 2\,a\,D}}{a}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** The expression under the root is $$\begin{aligned} &v^2 + 2\,a\,D = (8.0\,\text{m/s})^2 \\ &+ 2 \cdot 2.0\,\text{m/s}^2 \cdot 180\,\text{m} \\ &= 784\,\text{m}^2/\text{s}^2 \end{aligned}$$. So $t = \dfrac{-8.0\,\text{m/s} + 28\,\text{m/s}}{2.0\,\text{m/s}^2} = 10\,\text{s}$
 **Answer:** $10\,\text{s}$, two significant figures like the given values. The negative root $-18\,\text{s}$ would be before the start and does not belong to the situation.
@@ -141,7 +141,7 @@ The claim of equal accelerations does not hold, because acceleration is the slop
 **Given:** cart A: $x_\text{A} = v_\text{A}\,t$ when $v_\text{A} = 4.0\,\text{m/s}$; cart B starts with a delay $t_0 = 3.0\,\text{s}$ at a velocity $v_\text{B} = 7.0\,\text{m/s}$; both from the same place
 **Find:** the moment $t$ (counted from the start of A) in $\text{s}$
 **Principle:** At a meeting the positions are equal. When the clock shows the moment $t$, B has moved only for the time $t - t_0$, so the position of B is $v_\text{B}\,(t - t_0)$.
-**Formula:** $v_\text{A}\,t = v_\text{B}\,(t - t_0)$, so $(v_\text{B} - v_\text{A})\,t = v_\text{B}\,t_0$ and $t = \dfrac{v_\text{B}\,t_0}{v_\text{B} - v_\text{A}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$, and B moves only for the time $t - t_0$, so $x_\text{A} = v_\text{A}\,t$ and $x_\text{B} = v_\text{B}\,(t - t_0)$. At the meeting $x_\text{A} = x_\text{B}$, that is, $v_\text{A}\,t = v_\text{B}\,(t - t_0)$. From this $(v_\text{B} - v_\text{A})\,t = v_\text{B}\,t_0$ and $t = \dfrac{v_\text{B}\,t_0}{v_\text{B} - v_\text{A}}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \dfrac{7.0\,\text{m/s} \cdot 3.0\,\text{s}}{7.0\,\text{m/s} - 4.0\,\text{m/s}} = \dfrac{21\,\text{m}}{3.0\,\text{m/s}} = 7.0\,\text{s}$
 **Answer:** $7.0\,\text{s}$ counted from the start of A, two significant figures like the given values.
@@ -159,7 +159,7 @@ Equal accelerations are not related to position, and for B the acceleration is z
 **Find:** the moment of the meeting $t$ in $\text{s}$
 **Principle:** In uniform motion the velocity is the change of position divided by the change of time. When the velocities are known, the positions are $x = x_0 + v\,t$, and the runners meet when $x_\text{A} = x_\text{B}$. The points of the table deviate slightly from a straight line because of measurement error, so the first and the last row are used.
 **Reading the graph:** The velocities from the end points of the table: $v_\text{A} = \dfrac{20.4\,\text{m} - 3.0\,\text{m}}{5.0\,\text{s} - 0} = 3.48\,\text{m/s}$ and $v_\text{B} = \dfrac{32.4\,\text{m} - 45.0\,\text{m}}{5.0\,\text{s} - 0} = -2.52\,\text{m/s}$. The velocity of B is negative, because B runs toward A.
-**Formula:** $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Formula:** In uniform motion $x = x_0 + v\,t$, and the velocity is $v = \dfrac{\Delta x}{\Delta t}$. So $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. At the meeting $x_\text{A} = x_\text{B}$, that is, $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \dfrac{45.0\,\text{m} - 3.0\,\text{m}}{3.48\,\text{m/s} - (-2.52\,\text{m/s})} = \dfrac{42.0\,\text{m}}{6.00\,\text{m/s}} = 7.0\,\text{s}$
 **Answer:** $7.0\,\text{s}$, two significant figures, because the velocities are determined from three-digit positions but the measurement contains scatter.
@@ -169,7 +169,7 @@ Equal accelerations are not related to position, and for B the acceleration is z
 **Given:** cyclist $x_{0\text{B}} = 12\,\text{m}$, $v = 4.0\,\text{m/s}$ (uniform); car $x_0 = 0$, $v_0 = 0$, $a = 2.0\,\text{m/s}^2$
 **Find:** what is wrong in the student's solution; the correct moment of passing $t$ in $\text{s}$
 **Principle:** Passing is a meeting in which the positions are equal, $x_\text{A} = x_\text{B}$. The position of the car is $\tfrac12\,a\,t^2$ and that of the cyclist $x_{0\text{B}} + v\,t$. The motion of the car is uniformly accelerated, so the equation is a quadratic equation.
-**Formula:** $\tfrac12\,a\,t^2 = x_{0\text{B}} + v\,t$, that is, $\tfrac12\,a\,t^2 - v\,t - x_{0\text{B}} = 0$, and the positive root is $t = \dfrac{v + \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}$
+**Formula:** The car starts from rest at the origin and accelerates uniformly: $x = x_0 + v_0\,t + \tfrac12\,a\,t^2$ gives $x_\text{A} = \tfrac12\,a\,t^2$. The cyclist moves uniformly: $x_\text{B} = x_{0\text{B}} + v\,t$. At the passing $x_\text{A} = x_\text{B}$, that is, $\tfrac12\,a\,t^2 = x_{0\text{B}} + v\,t$ and $\tfrac12\,a\,t^2 - v\,t - x_{0\text{B}} = 0$. The quadratic formula gives $t = \dfrac{v \pm \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}$, and the positive root is $t = \dfrac{v + \sqrt{v^2 + 2\,a\,x_{0\text{B}}}}{a}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** The expression under the root is $v^2 + 2\,a\,x_{0\text{B}} = 16\,\text{m}^2/\text{s}^2 + 48\,\text{m}^2/\text{s}^2 = 64\,\text{m}^2/\text{s}^2$. So $t = \dfrac{4.0\,\text{m/s} + 8.0\,\text{m/s}}{2.0\,\text{m/s}^2} = 6.0\,\text{s}$
 **Answer:** $6.0\,\text{s}$, two significant figures like the given values.
@@ -183,9 +183,9 @@ Then the car is at the place $4.0\,\text{m}$ and the cyclist at the place $20\,\
 **Find:** the moment when the distance is at its greatest, and the distance $s_\text{max}$ in $\text{m}$
 **Principle:** A is ahead all the time, when B starts from the same place as the slower one. As long as $v_\text{A} > v_\text{B}$, the distance grows, and when B is faster, the distance decreases. So the distance is at its greatest when the velocities are equal. The distance is the area between the graphs up to that moment.
 **Reading the graph:** The graph of A is a horizontal line at $12.0\,\text{m/s}$. The graph of B is a straight line rising from the origin with the slope $a_\text{B} = \dfrac{4.0\,\text{m/s}}{2.0\,\text{s}} = 2.0\,\text{m/s}^2$. The lines intersect at the moment $t = 6.0\,\text{s}$, when in the table the velocity of both is $12.0\,\text{m/s}$.
-**Formula:** The area is a triangle with the base $t$ and the height $v_\text{A}$: $s_\text{max} = \tfrac12\,t\,v_\text{A}$. The same is obtained from the difference of the positions $v_\text{A}\,t - \tfrac12\,a_\text{B}\,t^2$.
+**Formula:** A moves uniformly, $x_\text{A} = v_\text{A}\,t$, and B starts from rest with uniform acceleration, $x_\text{B} = \tfrac12\,a_\text{B}\,t^2$. The distance is $s = x_\text{A} - x_\text{B} = v_\text{A}\,t - \tfrac12\,a_\text{B}\,t^2$. It is greatest when the velocities are equal: $v_\text{A} = a_\text{B}\,t$, that is, $t = \dfrac{v_\text{A}}{a_\text{B}}$. Then $\tfrac12\,a_\text{B}\,t^2 = \tfrac12\,v_\text{A}\,t$, so $s_\text{max} = \tfrac12\,t\,v_\text{A}$, which is the area of the triangle between the graphs
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $s_\text{max} = \tfrac12 \cdot 6.0\,\text{s} \cdot 12.0\,\text{m/s} = 36\,\text{m}$
+**Substitution:** $t = \dfrac{v_\text{A}}{a_\text{B}} = \dfrac{12.0\,\text{m/s}}{2.0\,\text{m/s}^2} = 6.0\,\text{s}$ and $s_\text{max} = \tfrac12 \cdot 6.0\,\text{s} \cdot 12.0\,\text{m/s} = 36\,\text{m}$
 **Answer:** The greatest distance is $36\,\text{m}$, and it is at the moment $6.0\,\text{s}$. Two significant figures like the velocities.
 **Reasonableness:** From the difference of the positions: A is at the place $12.0\,\text{m/s} \cdot 6.0\,\text{s} = 72\,\text{m}$ and B at the place $$\begin{aligned} &\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 \\ &= 36\,\text{m} \end{aligned}$$, so the difference is $36\,\text{m}$. At the moments $4.0\,\text{s}$ and $8.0\,\text{s}$ the difference is $32\,\text{m}$ in both, so $36\,\text{m}$ is the greatest.
 
@@ -232,7 +232,7 @@ Only in graph 3 does the line of the car start at $20\,\text{m/s}$, intersect th
 Second: the passing is complete when the difference of the advance is equal to the gap between the front and the rear, the length of the truck and the length of the car together.
 
 Third: the cars do not have time to meet if the distances travelled by the car and the oncoming car together are at most $d$.
-**Formula:** The relative distance needed is $s_\text{rel} = 10\,\text{m} + L_\text{T} + L_\text{c}$ and $\tfrac12\,a\,t^2 = s_\text{rel}$, so $t = \sqrt{\dfrac{2\,s_\text{rel}}{a}}$. The distance of the car is $s_\text{c} = v_0\,t + \tfrac12\,a\,t^2$, the distance of the oncoming car is $s_\text{o} = v_\text{o}\,t$ and $d_\text{min} = s_\text{c} + s_\text{o}$. The final velocity is $v = v_0 + a\,t$.
+**Formula:** The truck moves uniformly, $x_\text{T} = v_0\,t$, and the car accelerates from the same velocity, $x_\text{c} = v_0\,t + \tfrac12\,a\,t^2$. The difference of the advance is $x_\text{c} - x_\text{T} = \tfrac12\,a\,t^2$. The passing is complete when the difference is $s_\text{rel} = 10\,\text{m} + L_\text{T} + L_\text{c}$, so $\tfrac12\,a\,t^2 = s_\text{rel}$ and $t = \sqrt{\dfrac{2\,s_\text{rel}}{a}}$. The distance of the car is $s_\text{c} = v_0\,t + \tfrac12\,a\,t^2$, the distance of the oncoming car is $s_\text{o} = v_\text{o}\,t$ and $d_\text{min} = s_\text{c} + s_\text{o}$. The final velocity is $v = v_0 + a\,t$.
 **Conversions:** $80\,\text{km/h} = 80 : 3.6\,\text{m/s} = 22.2\,\text{m/s}$. The other quantities are in SI units.
 **Substitution:** $s_\text{rel} = 10\,\text{m} + 12\,\text{m} + 5.0\,\text{m} = 27\,\text{m}$. So $t = \sqrt{\dfrac{2 \cdot 27\,\text{m}}{1.5\,\text{m/s}^2}} = \sqrt{36\,\text{s}^2} = 6.0\,\text{s}$.
 Distance of the car:
@@ -252,7 +252,7 @@ In addition, the car would have to exceed the speed limit $80\,\text{km/h}$ by a
 
 Finally the velocity of the car is compared with the limit to see whether the model is reasonable in reality.
 **Reading the graph:** The points of the table are almost on a straight line: the position grows by about $6.0\,\text{m}$ every second, so the motion is uniform. From the end points $v = \dfrac{23.9\,\text{m} - 0}{4.0\,\text{s} - 0} = 5.975\,\text{m/s} \approx 6.0\,\text{m/s}$.
-**Formula:** The cyclist $x_\text{C} = v\,t$ and the car $x_\text{car} = \tfrac12\,a\,(t - t_0)^2$. Let $\tau = t - t_0$, so that $x_\text{C} = v\,(\tau + t_0)$ and at the passing $\tfrac12\,a\,\tau^2 - v\,\tau - v\,t_0 = 0$. The positive root is $\tau = \dfrac{v + \sqrt{v^2 + 2\,a\,v\,t_0}}{a}$.
+**Formula:** The cyclist moves uniformly, $x_\text{C} = v\,t$, and the car starts from rest at the moment $t_0$ with uniform acceleration, $x_\text{car} = \tfrac12\,a\,(t - t_0)^2$. Let $\tau = t - t_0$, so that $x_\text{C} = v\,(\tau + t_0)$. At the passing $x_\text{C} = x_\text{car}$, that is, $\tfrac12\,a\,\tau^2 = v\,(\tau + t_0)$ and $\tfrac12\,a\,\tau^2 - v\,\tau - v\,t_0 = 0$. The positive root is $\tau = \dfrac{v + \sqrt{v^2 + 2\,a\,v\,t_0}}{a}$.
 **Conversions:** $40\,\text{km/h} = 40 : 3.6\,\text{m/s} = 11.1\,\text{m/s}$. The other quantities are in SI units.
 **Substitution:** The expression under the root is $$\begin{aligned} &v^2 + 2\,a\,v\,t_0 = 36\,\text{m}^2/\text{s}^2 \\ &+ 2 \cdot 2.0 \cdot 6.0 \cdot 1.5\,\text{m}^2/\text{s}^2 \\ &= 72\,\text{m}^2/\text{s}^2 \end{aligned}$$, and the square root is $8.49\,\text{m/s}$. So
 $\tau = \dfrac{6.0\,\text{m/s} + 8.49\,\text{m/s}}{2.0\,\text{m/s}^2} = 7.24\,\text{s}$,

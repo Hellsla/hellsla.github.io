@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5d18f1d6857e0da4
+CONTENT-HASH: 13c6fe9a996f1703
+
 ## Blocking
+None.
 
 ## Polish
-- Newtonin kehdon kuva on biljardikappaleen jälkeen; kuvatekstiin viittaus säilymiseen (liikemäärä siirtyy kuulalta toiselle).
+- Earlier polish stands: Newtonin kehdon kuvatekstiin viittaus säilymiseen (liikemäärä siirtyy kuulalta toiselle).
 
 ## Checked
-batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.
+- Example stage 2: knowns and the question now in two paragraphs, question last, as the house rule asks; numbers, units and symbols unchanged.
+- Summary bullet: the display block carries the same equation, m1v1 + m2v2 = m1v1' + m2v2', split only at the equals sign with the left side on the first row; no symbol, sign or unit changed.
+- The lead-in "nopeudet ovat etumerkillisiä:" still introduces the formula correctly; the bullet reads as before.
+- No Finnish wording changed beyond the paragraph split.
+- Captures opened: none (the available captures predate the change; 360 px and 390 px layout checks ok in the packet).
