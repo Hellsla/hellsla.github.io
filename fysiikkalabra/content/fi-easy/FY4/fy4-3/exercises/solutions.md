@@ -8,7 +8,7 @@ G 18
 T 18 ylös
 a 0
 ```
-**Kaava:** $T - G = 0$, joten $T = G$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = T - G = 0$, joten $T = G$
 **Muunnokset:** Paino on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = G = 18\,\text{N}$
 **Vastaus:** $18\,\text{N}$, kaksi merkitsevää numeroa kuten painossa $18\,\text{N}$.
@@ -24,7 +24,7 @@ F_A 850 vasen
 F_B 850 oikea
 a 0
 ```
-**Kaava:** $F_B - F_A = 0$, joten $F_B = F_A$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F_B - F_A = 0$, joten $F_B = F_A$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_B = F_A = 850\,\text{N}$
 **Vastaus:** $850\,\text{N}$, kolme merkitsevää numeroa kuten voimassa $850\,\text{N}$.
@@ -63,7 +63,7 @@ F_i 380 vasen
 F_r 240 vasen
 a 0
 ```
-**Kaava:** $F - F_\text{i} - F_\text{r} = 0$, joten $F_\text{r} = F - F_\text{i}$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F - F_\text{i} - F_\text{r} = 0$, joten $F_\text{r} = F - F_\text{i}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{r} = 620\,\text{N} - 380\,\text{N} = 240\,\text{N}$
 **Vastaus:** $240\,\text{N}$, kymmenen newtonin tarkkuudella kuten annetut voimat, joten kaksi merkitsevää numeroa.
@@ -98,7 +98,7 @@ F_2 5,0 alas työntö
 N 13
 a 0
 ```
-**Kaava:** $N - G_1 - F_2 = 0$ ja $F_2 = G_2$, joten $F = N = G_1 + G_2$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = N - G_1 - F_2 = 0$ ja $F_2 = G_2$, joten $F = N = G_1 + G_2$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 8{,}0\,\text{N} + 5{,}0\,\text{N} = 13\,\text{N}$
 **Vastaus:** $13\,\text{N}$ alaspäin. Summa on kymmenesosanewtonin tarkkuudella kuten painot $8{,}0\,\text{N}$ ja $5{,}0\,\text{N}$, joten siinä on kaksi merkitsevää numeroa.
@@ -116,7 +116,7 @@ F_VU 65 oikea
 F_v 65 vasen
 a 0
 ```
-**Kaava:** $F_{\text{VU}} - F_\text{v} = 0$ ja $F_{\text{VU}} = F_{\text{UV}}$, joten $F_\text{v} = F_{\text{UV}}$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F_{\text{VU}} - F_\text{v} = 0$ ja $F_{\text{VU}} = F_{\text{UV}}$, joten $F_\text{v} = F_{\text{UV}}$
 **Muunnokset:** Voima on newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = F_{\text{UV}} = 65\,\text{N}$
 **Vastaus:** $65\,\text{N}$ taaksepäin, kaksi merkitsevää numeroa kuten voimassa $65\,\text{N}$.
@@ -133,7 +133,7 @@ F_v 833,85 ylös
 a 0
 v alas
 ```
-**Kaava:** $F_\text{v} - G = 0$ ja $G = mg$, joten $F_\text{v} = mg$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F_\text{v} - G = 0$ ja $G = mg$, joten $F_\text{v} = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 833{,}85\,\text{N}$
 **Vastaus:** $830\,\text{N}$ eli $8{,}3\cdot 10^{2}\,\text{N}$ ylöspäin, kaksi merkitsevää numeroa kuten massassa $85\,\text{kg}$.
@@ -150,7 +150,7 @@ G_k 5800
 G_m 3139,2
 a 0
 ```
-**Kaava:** $T - G_\text{k} - mg = 0$, joten $T = G_\text{k} + mg$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = T - G_\text{k} - G_\text{m} = 0$ ja $G_\text{m} = mg$, joten $T = G_\text{k} + mg$
 **Muunnokset:** $5{,}8\,\text{kN} = 5800\,\text{N}$. Lopuksi newtonit muunnetaan kilonewtoneiksi jakamalla luvulla $1000$.
 **Sijoitus:** $T = 5800\,\text{N} + 320\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 5800\,\text{N} + 3139{,}2\,\text{N} = 8939{,}2\,\text{N}$
 **Vastaus:** $8{,}9\,\text{kN}$, kaksi merkitsevää numeroa kuten korin painossa $5{,}8\,\text{kN}$.
@@ -168,7 +168,7 @@ F_v 270 ylös
 a 0
 v alas
 ```
-**Kaava:** $F_\text{n} + F_\text{v} - G = 0$, joten $F_\text{v} = G - F_\text{n}$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F_\text{n} + F_\text{v} - G = 0$, joten $F_\text{v} = G - F_\text{n}$
 **Muunnokset:** Kaikki voimat ovat kilonewtoneina ja vastaus pyydetään kilonewtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 4{,}62\,\text{kN} - 4{,}35\,\text{kN} = 0{,}27\,\text{kN}$
 **Vastaus:** $0{,}27\,\text{kN}$ ylöspäin. Erotuksessa on kaksi merkitsevää numeroa, koska annetut voimat ovat sadasosakilonewtonin tarkkuudella.
@@ -186,7 +186,7 @@ F_m 0,30 alas työntö
 N 0,60
 a 0
 ```
-**Kaava:** $N - G - F_\text{m} = 0$ ja $F_\text{m} = G$, joten $N = 2G$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = N - G - F_\text{m} = 0$ ja $F_\text{m} = G$, joten $N = 2G$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 2\cdot 0{,}30\,\text{N} = 0{,}60\,\text{N}$
 **Vastaus:** $0{,}60\,\text{N}$, kaksi merkitsevää numeroa kuten painossa $0{,}30\,\text{N}$.
@@ -205,7 +205,7 @@ G_v 0,40
 F_o 1,5 alas
 a 0
 ```
-**Kaava:** $F - G_\text{v} - F_\text{o} = 0$ ja $F_\text{o} = G_\text{o}$, joten $F = G_\text{o} + G_\text{v}$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F - G_\text{v} - F_\text{o} = 0$ ja $F_\text{o} = G_\text{o}$, joten $F = G_\text{o} + G_\text{v}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 1{,}5\,\text{N} + 0{,}40\,\text{N} = 1{,}9\,\text{N}$
 **Vastaus:** $1{,}9\,\text{N}$, kymmenesosanewtonin tarkkuudella kuten omenan paino $1{,}5\,\text{N}$, eli kaksi merkitsevää numeroa.
@@ -236,7 +236,7 @@ a 0
 **Kysytty:** seinän voima köyteen $F_\text{S}$ yksikössä $\text{N}$ hetkellä, jolloin $F_\text{A}$ on suurin
 **Periaate:** Köysi on levossa. Siksi ensimmäisen lain mukaan siihen vaikuttavien voimien summa on nolla: seinän voima köyteen on yhtä suuri kuin oppilaan voima köyteen. Kolmannen lain mukaan köysi vetää anturia A ja seinää yhtä suurilla voimilla kuin ne köyttä. Siksi antureiden lukemat ovat yhtä suuret joka hetki.
 **Kuvaajan lukeminen:** Taulukosta luetaan rivi, jolla $F_\text{A}$ on suurin: $t = 1{,}0\,\text{s}$, $F_\text{A} = 4{,}8\,\text{N}$. Samalla rivillä $F_\text{B} = 4{,}8\,\text{N}$. Muilla riveillä lukemat eroavat enintään $0{,}1\,\text{N}$. Tämä on mittauksen satunnaista vaihtelua, ei fysikaalinen ero.
-**Kaava:** $F_\text{S} - F_\text{A} = 0$, joten $F_\text{S} = F_\text{A}$
+**Kaava:** Ensimmäinen laki, voimien summa on nolla: $\Sigma F = F_\text{S} - F_\text{A} = 0$, joten $F_\text{S} = F_\text{A}$
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{S} = F_\text{A} = 4{,}8\,\text{N}$
 **Vastaus:** $4{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten taulukon lukemissa.
@@ -280,7 +280,7 @@ T 450 vasen
 F_h 30 vasen
 a 0
 ```
-**Kaava:** Kärry: $T - F_\text{r} - F_\text{k} = 0$, joten $T = F_\text{r} + F_\text{k}$. Hevonen: $F_\text{t} - T - F_\text{h} = 0$, joten $F_\text{t} = T + F_\text{h}$.
+**Kaava:** Molemmilla voimien summa on nolla: $\Sigma F = 0$. Kärry: $T - F_\text{r} - F_\text{k} = 0$, joten $T = F_\text{r} + F_\text{k}$. Hevonen: $F_\text{t} - T - F_\text{h} = 0$, joten $F_\text{t} = T + F_\text{h}$.
 **Muunnokset:** Voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 410\,\text{N} + 40\,\text{N} = 450\,\text{N}$ ja
 $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
@@ -292,7 +292,7 @@ $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 **Kysytty:** a) milloin kokonaisvoima on nolla; b) kitkavoima $F_\text{k}$ yksikössä $\text{N}$; c) miksi alussa $F > F_\text{k}$
 **Periaate:** Kun kärryn nopeus on vakio, ensimmäisen lain mukaan kokonaisvoima on nolla. Silloin köyden voima ja kitka ovat yhtä suuret. Jos nopeus muuttuu, kokonaisvoima ei ole nolla. Kolmannen lain mukaan kärry vetää köyttä yhtä suurella voimalla kuin köysi kärryä. Oppilasta ei vedä kärry vaan köysi.
 **Kuvaajan lukeminen:** Nopeus kasvaa hetkestä $t = 0$ alkaen arvosta $0$ arvoon $0{,}69\,\text{m/s}$. Hetkestä $t = 4{,}0\,\text{s}$ alkaen se pysyy lähes samana, noin $0{,}70\,\text{m/s}$. Kokonaisvoima on nolla hetkestä $t = 4{,}0\,\text{s}$ alkaen. Näiden kolmen hetken anturilukemat ovat $3{,}4\,\text{N}$, $3{,}5\,\text{N}$ ja $3{,}3\,\text{N}$.
-**Kaava:** $F_\text{k} = F_\text{ka}$ ja $F_\text{ka} = \dfrac{\Sigma F}{n}$
+**Kaava:** Nopeus on vakio, joten voimien summa on nolla: $F_\text{ka} - F_\text{k} = 0$, joten $F_\text{k} = F_\text{ka}$. Keskiarvo on $F_\text{ka} = \dfrac{\Sigma F}{n}$, joten $F_\text{k} = \dfrac{\Sigma F}{n}$
 **Muunnokset:** Voimat ovat newtoneina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** Voimien summa on $10{,}2\,\text{N}$, ja lukemia on $3$. Siis
 $F_\text{k} = \dfrac{10{,}2\,\text{N}}{3} = 3{,}40\,\text{N}$.
