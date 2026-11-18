@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0f05dc9f0c7301b7
+CONTENT-HASH: 850efb4c05608c1f
 
 ## Blocking
 
 ## Polish
+- exercises.json:214 (L2-06, the feedback on the wrong option "muuttuu solmuviivoilla lämmöksi"): "Solmuviivoilla ei synny tavallista enempää lämpöä" is not a P1 phrase (`lämmöksi`) and the physics is right. To match the corrected model answer it could say "sisäenergiaa" instead of "lämpöä". The option's own wording stays, because a wrong option keeps its words.
 
 ## Checked
-- Hash same at start and end. Delta, round 1 (fi-easy): added fy5-12-L2-10 (PhET Wave Interference, source task).
-- Script comparison with content/fi/FY5/fy5-12: same ids, answer, unit, tolerance, kind; every number in the task text and solution identical in fi and fi-easy.
-- Source: matches sources.md (Interference screen is the second of four, two in-phase sources, sound wave type, top view).
-- Recomputed: constructive n = 1: Δs = λ = 0,80 m; destructive n = 0: λ/2 = 0,40 m; next 3λ/2 = 1,20 m. Answer 0,4 m, tolerance 2 %, two figures as λ.
-- Physics of the simplified wording right: "samanvaiheinen" explained as vibrating in step; nodal lines at (n + ½)λ, central normal Δs = 0 at every frequency; λ = v/f with v unchanged, so higher f gives denser lines.
-- d): reflections, many frequencies, non-point sources, unequal amplitudes (no complete cancellation) named correctly; Δs ≤ source separation (triangle inequality) stated as the existence condition.
-- answers.py lines for L2-10 compute the right physics.
-- No SCOPE line printed in the packet's instructions, so none written.
+- Hash 850efb4c05608c1f at the start and at the end (`--exercises --lang fi-easy`). It matches the packet. Delta review, round 1.
+- solutions.md:157 (L2-06): "Energia ei muutu solmuviivoilla sisäenergiaksi" is correct physics. Destructive interference redistributes energy and converts none of it. Ordinary absorption in air happens everywhere and is not a nodal-line effect, so this is a fair simplification (C). The sentence follows the P1 guardrail and no longer uses "lämmöksi".
+- The sentence agrees with the task's correct option and with the feedback on all three distractors (no conversion to internal energy, no return of energy to the speakers, speaker power unchanged). It also agrees with the brief's lesson sentence "Heikentävä interferenssi ei hävitä energiaa".
+- The only "lämmöksi" left in the set is exercises.json:213. That is a wrong option and keeps its words on purpose. Exactly one option of L2-06 is correct.
+- Every other hunk of the diff (L1-03, L1-0x hiljaiset kohdat, the aallonmurtaja task, L2-05, L3 vastamelu, L3 kaiutinaineisto, L2-10 a and d) only splits a paragraph in two. The words, numbers, symbols and units are unchanged, and the order of the reasoning steps is kept. My previous PASS of these solutions still holds.
+- No answers.py, answer, unit or tolerance changed, so there was nothing new to recompute.

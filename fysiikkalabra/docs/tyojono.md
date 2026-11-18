@@ -157,14 +157,14 @@ Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
-Kaikki kurssit tehty (loki §18). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY5, FY6, FY9): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
+Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY6, FY9): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
 Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien tarkistus hyväksyy poikkeaman molempiin suuntiin.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
 
-## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13; kohdan 18 jälkeen, ennen kohtaa 15)
-`kortit/en/fy6.json` ja `fy8.json` puuttuvat, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole kortteja eikä alleviivauksia.
+## 13. Englanninkieliset käsitekortit FY8 (opettaja 2026-11-13; kohdan 18 jälkeen, ennen kohtaa 15)
+`kortit/en/fy8.json` puuttuu, joten englanninkielisillä FY8-sivuilla ei ole kortteja eikä alleviivauksia. FY6 tehty (PR #702; katselmointi `docs/audits/2026-11-18-en-kortit-fy6-science.md`).
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14, kevennetty 2026-11-16)
 Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 16. Ensin pelkkä raportti (`docs/audits/`), korjaukset vasta opettajan luettua. Kevennetty:
