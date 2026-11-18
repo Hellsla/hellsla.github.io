@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 52b01841ab70a8b6
+CONTENT-HASH: a8113c437ee9eb2f
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
+- [Minor] L3-06 solution, Vastaus: part c) runs on after a) and b) in the same block; a separate line for c) would match the other solutions.
+- [Minor] L2-09 Sijoitus: the "b)" line sits tight against the following "c)" block; a little more space would help.
 
 ## Checked
-- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
-- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
+- Delta: new tasks fy8-16-L2-09 and fy8-16-L3-06 with the shared figure hubble-t (1280 px captures open-exercises-L2 parts 12-13, open-exercises-L3 parts 8-10; fig-25-390 not opened).
+- Task texts (situation first, question last), figure (axis units, ticks, dashed line through data, points distinct, max 300 Mpc visible), solution blocks (aligned chains, units upright, answer set apart, Järkevyys block). Caption "(esimerkkiaineisto)" removal not judged beyond the page.
+- Not judged: 390 px open solutions.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
