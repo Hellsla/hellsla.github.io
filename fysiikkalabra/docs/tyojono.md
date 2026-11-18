@@ -59,7 +59,7 @@ Varattu: claude/elevenlabs-readaloud
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
-`docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
+`docs/clipped-formulas/`:n tähderivit (FY5 ja FY6 mitattu, loput rivit sisältömuutoksia, loki §5d; FY4 ja FY7 8g:n PR:issä); ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
 FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
@@ -68,6 +68,7 @@ luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolman
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
 VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; kierros: `python scripts/round.py fy9-<id>` ja `--finish` (0j; unitin Sovella-sarja on `figcat`-omistaja `<unit>-sovella`, joten uusi unit-kuva kelpaa)); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
+FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 Sivupohjaosa tehty (PR #713: `boxed_section` build.py, `details.theory-box`; test_home.py avaa laatikon näppäimellä). Jäljellä vain sisältötyö luku kerrallaan.

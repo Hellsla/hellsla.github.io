@@ -378,3 +378,153 @@ $$
 
 ### Hyväksytään myös
 - a-kohdassa vastaus $31{,}5\,\text{K}$ tai $32\,\text{K}$, kun perusteluna on pyöristys.
+
+## fy9-lampo-s7
+
+### a)
+**Annettu:** $(t,T)$-kuvaajan suora kulkee pisteestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ pisteeseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$
+**Kysytty:** lämpötilan nousu sekunnissa $\dfrac{\Delta T}{\Delta t}$
+**Periaate:** Teho on vakio, joten lämpötila nousee tasaisesti ja kuvaaja on suora. Suoran kulmakerroin kertoo lämpötilan muutoksen sekunnissa (luku *Aineen lämpeneminen ja jäähtyminen*).
+**Kuvaajan lukeminen:** Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja $(180\,\text{s};\ 60\,{}^\circ\text{C})$.
+**Kaava:** $\dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$
+**Muunnokset:** Lämpötilaero $40\,{}^\circ\text{C}$ on sama kuin $40\,\text{K}$.
+**Sijoitus:** $$
+\begin{aligned}
+\dfrac{\Delta T}{\Delta t} &= \dfrac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{180\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{40\,\text{K}}{180\,\text{s}} \\
+&\approx 0{,}22\,\text{K/s}
+\end{aligned}
+$$
+**Vastaus:** Lämpötila nousee noin $0{,}22\,\text{K/s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Noin $13\,\text{K}$ minuutissa: kolmessa minuutissa lämpötila nousee $40\,\text{K}$, mikä sopii sadan watin vastuksella lämmitetylle puolen kilon kappaleelle.
+
+### b)
+**Annettu:** $m = 0{,}50\,\text{kg}$, $P = 100\,\text{W}$; kuvaajalta $\Delta t = 180\,\text{s}$ ja $\Delta T = 40\,\text{K}$ (a-kohta)
+**Kysytty:** ominaislämpökapasiteetti $c$ ja onko aine alumiinia
+**Periaate:** Energia säilyy: vastuksen luovuttama energia $Pt$ kasvattaa kappaleen sisäenergiaa, ja lämpötilan muutokseen tarvittava energia on $cm\Delta T$ (luku *Aineen lämpeneminen ja jäähtyminen*). Oletuksen mukaan kaikki teho siirtyy kappaleeseen.
+**Kaava:** $Pt = cm\Delta T$, joten $c = \dfrac{P\,\Delta t}{m\,\Delta T}$
+**Muunnokset:** Ei tarvita: $1\,\text{W} = 1\,\text{J/s}$, joten $\text{W} \cdot \text{s} = \text{J}$.
+**Sijoitus:** $$
+\begin{aligned}
+c &= \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0{,}50\,\text{kg} \cdot 40\,\text{K}} \\
+&= \dfrac{18\,000\,\text{J}}{20\,\text{kg} \cdot \text{K}} \\
+&= 900\,\text{J/(kg}\cdot\text{K)}
+\end{aligned}
+$$
+**Vastaus:** $c \approx 9{,}0 \cdot 10^{2}\,\text{J/(kg}\cdot\text{K)}$, kaksi merkitsevää numeroa. Alumiinin taulukkoarvo on $896\,\text{J/(kg}\cdot\text{K)}$, joten ero on $$
+\begin{aligned}
+\dfrac{900 - 896}{896} &\approx 0{,}004 \\
+&= 0{,}4\,\%
+\end{aligned}
+$$ Se on mittaustarkkuuden sisällä, joten kappale voi olla alumiinia. Kuvaaja ei kuitenkaan todista sitä, koska muillakin aineilla voi olla lähes sama arvo.
+**Järkevyys:** Metallien ominaislämpökapasiteetit ovat satoja joulea kilogrammaa ja kelviniä kohti, ja tulos on samaa suuruusluokkaa; vesi ($4190\,\text{J/(kg}\cdot\text{K)}$) lämpenisi tällä teholla paljon hitaammin.
+
+### c)
+**Annettu:** $m = 0{,}50\,\text{kg}$, $P = 100\,\text{W}$, $c = 900\,\text{J/(kg}\cdot\text{K)}$ b-kohdasta; alkulämpötila $20\,{}^\circ\text{C}$ ja loppulämpötila $100\,{}^\circ\text{C}$
+**Kysytty:** lämmitysaika $t$ mittauksen alusta
+**Periaate:** Sama energiaperiaate kuin b-kohdassa: vastuksen luovuttama energia on yhtä suuri kuin kappaleen sisäenergian kasvu. Vastus toimii samalla teholla, joten aika on energia jaettuna teholla.
+**Kaava:** $Pt = cm\Delta T$, joten $t = \dfrac{cm\,\Delta T}{P}$
+**Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C}$, eli $80\,\text{K}$.
+**Sijoitus:** $$
+\begin{aligned}
+t &= \dfrac{900\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}50\,\text{kg} \cdot 80\,\text{K}}{100\,\text{W}} \\
+&= \dfrac{36\,000\,\text{J}}{100\,\text{W}} \\
+&= 360\,\text{s}
+\end{aligned}
+$$
+**Vastaus:** $t \approx 3{,}6 \cdot 10^{2}\,\text{s}$ eli $6{,}0\,\text{min}$, kaksi merkitsevää numeroa. Siirretty energia on $36\,\text{kJ}$.
+**Järkevyys:** Kuvaajan mukaan $40\,\text{K}$ nousu vie $180\,\text{s}$. Nousu $80\,\text{K}$ on kaksinkertainen, joten aika on $2 \cdot 180\,\text{s} = 360\,\text{s}$, sama tulos. Alumiinin taulukkoarvolla saataisiin $358\,\text{s}$.
+
+### d)
+**Kysytty:** miksi todellinen kuvaaja kaartuisi loivemmaksi
+**Periaate:** Energia säilyy. Vastuksen teho ei kaikki jää kappaleeseen, vaan lämmin kappale siirtää lämpönä energiaa ympäröivään ilmaan ja alustaan (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*).
+**Mallivastaus:** Mitä lämpimämpi kappale on suhteessa ympäristöön, sitä suurempi on ympäristöön siirtyvä lämpöteho. Alussa kappale on ympäristön lämpöinen ja siirtyvä teho on pieni, joten lähes koko teho $100\,\text{W}$ kasvattaa sisäenergiaa. Kappaleen lämmetessä ympäristöön siirtyy enemmän ja enemmän, ja sisäenergiaa kasvattava teho (vastuksen teho miinus ympäristöön siirtyvä teho) pienenee. Siksi lämpötila nousee yhä hitaammin ja kuvaaja loivenee. Kappaleen lämpötila lopulta tasaantuu arvoon, jossa ympäristöön siirtyvä teho on yhtä suuri kuin vastuksen teho. Tämän vuoksi a–c-kohdan idealisoitu aika $360\,\text{s}$ on todellisessa kokeessa liian lyhyt.
+
+### Yleisiä virheitä
+- a-kohdassa lasketaan $60\,{}^\circ\text{C} : 180\,\text{s}$ ja unohdetaan, että lämpötila on alussa $20\,{}^\circ\text{C}$.
+- b-kohdassa massaa ei sijoiteta tai teho kerrotaan väärällä ajalla, esimerkiksi koko ajalla $360\,\text{s}$.
+- c-kohdassa lasketaan lämpötilan muutokseksi $100\,\text{K}$ eikä $80\,\text{K}$.
+- d-kohdassa sanotaan, että energia ”katoaa” tai ”hukkuu”, kertomatta, että se siirtyy lämpönä ympäristöön.
+
+
+### Hyväksytään myös
+- b-kohdassa $c$ voidaan laskea ensin nousunopeudesta $c = \dfrac{P}{m\,(\Delta T / \Delta t)}$, kun käytetään a-kohdan tulosta.
+- c-kohdassa tulos $358\,\text{s}$ tai $3{,}6 \cdot 10^{2}\,\text{s}$, kun $c$ otetaan taulukosta.
+
+
+## fy9-lampo-s8
+
+### a)
+**Annettu:** $m = 0{,}60\,\text{kg}$; kuvaajan ensimmäinen osa kulkee pisteestä $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ pisteeseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$
+**Kysytty:** jään ominaislämpökapasiteetti $c$
+**Periaate:** Kun lämpötila muuttuu eikä olomuoto muutu, siirretty energia on $Q = cm\Delta T$ (luku *Aineen lämpeneminen ja jäähtyminen*). Kuvaajan ensimmäisessä osassa jää lämpenee pakkasesta $0\,{}^\circ\text{C}$:seen.
+**Kuvaajan lukeminen:** Ensimmäisen osan päätepisteet ovat kaukana toisistaan: $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ ja $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Niistä $Q = 20\,\text{kJ}$ ja $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
+**Kaava:** $Q = cm\Delta T$, joten $c = \dfrac{Q}{m\,\Delta T}$
+**Muunnokset:** $20\,\text{kJ} = 20 \cdot 1000\,\text{J} = 20\,000\,\text{J}$.
+**Sijoitus:** $$
+\begin{aligned}
+c &= \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} \\
+&= \dfrac{20\,000\,\text{J}}{9{,}6\,\text{kg} \cdot \text{K}} \\
+&\approx 2083\,\text{J/(kg}\cdot\text{K)}
+\end{aligned}
+$$
+**Vastaus:** $c \approx 2{,}1 \cdot 10^{3}\,\text{J/(kg}\cdot\text{K)}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Tulos on sama kuin taulukon arvo $2{,}1\,\text{kJ/(kg}\cdot\text{K)}$ ja noin puolet veden arvosta $4{,}18\,\text{kJ/(kg}\cdot\text{K)}$, mikä on jäälle tuttua.
+
+### b)
+**Annettu:** $m = 0{,}60\,\text{kg}$; kuvaajan vaakasuora osa alkaa kohdasta $Q = 20\,\text{kJ}$ ja päättyy kohtaan $Q = 220\,\text{kJ}$, lämpötila $0\,{}^\circ\text{C}$
+**Kysytty:** jään ominaissulamislämpö $s$
+**Periaate:** Kun lämpötila pysyy vakiona ja siirrettyä energiaa kertyy, energia ei nosta lämpötilaa vaan muuttaa olomuotoa: se sulattaa jään. Sulamiseen tarvittava energia on $Q = sm$ (luku *Olomuodon muutokset*).
+**Kuvaajan lukeminen:** Vaakasuoran osan päätepisteet ovat kaukana toisistaan, joten niistä luetaan $Q_1 = 20\,\text{kJ}$ ja $Q_2 = 220\,\text{kJ}$. Sulamiseen kuluu $Q_\text{s} = Q_2 - Q_1 = 200\,\text{kJ}$.
+**Kaava:** $Q_\text{s} = sm$, joten $s = \dfrac{Q_\text{s}}{m}$
+**Muunnokset:** Ei tarvita, koska vastaus halutaan yksikössä $\text{kJ/kg}$.
+**Sijoitus:** $$
+\begin{aligned}
+s &= \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} \\
+&\approx 333\,\text{kJ/kg}
+\end{aligned}
+$$
+**Vastaus:** $s \approx 3{,}3 \cdot 10^{2}\,\text{kJ/kg}$, kaksi merkitsevää numeroa. Taulukon arvo on $333\,\text{kJ/kg}$, joten tulos on sama.
+**Järkevyys:** Sulamiseen kuluu $200\,\text{kJ}$ eli kymmenkertainen määrä jään lämmittämiseen kuluneeseen $20\,\text{kJ}$:iin verrattuna, vaikka lämpötila ei muutu: sulaminen on energiavaltainen vaihe. $333\,\text{kJ/kg}$ vastaa veden lämmittämistä noin $80\,\text{K}$.
+
+### c)
+**Annettu:** $m = 0{,}60\,\text{kg}$, $c_\text{v} = 4{,}18\,\text{kJ/(kg}\cdot\text{K)}$; jää on sulanut kokonaan kohdassa $Q_2 = 220\,\text{kJ}$ (b-kohta); lopuksi $\Delta T = 20\,\text{K}$
+**Kysytty:** siirretty kokonaisenergia $Q$, kun lämpötila on $20\,{}^\circ\text{C}$
+**Periaate:** Energia säilyy: kokonaisenergia on jään lämmittämiseen, sulattamiseen ja sulamisveden lämmittämiseen siirretty energia. Kuvaajan mukaan kaksi ensimmäistä vaihetta vievät yhteensä $220\,\text{kJ}$, ja sen jälkeen veden lämpötila nousee $0\,{}^\circ\text{C}$:sta ($Q = cm\Delta T$, luku *Lämpötasapaino olomuodon muuttuessa*).
+**Kaava:** $Q = Q_2 + c_\text{v} m\,\Delta T$
+**Muunnokset:** Lämpötilan muutos $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,{}^\circ\text{C}$ on $20\,\text{K}$.
+**Sijoitus:** $$
+\begin{aligned}
+Q &= 220\,\text{kJ} + 4{,}18\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg} \cdot 20\,\text{K} \\
+&= 220\,\text{kJ} + 50{,}2\,\text{kJ} \\
+&\approx 270\,\text{kJ}
+\end{aligned}
+$$
+**Vastaus:** $Q \approx 2{,}7 \cdot 10^{2}\,\text{kJ}$, kaksi merkitsevää numeroa.
+**Järkevyys:** Kuvaajan jatkuessa kohdan $220\,\text{kJ}$ jälkeen lämpötila nousee noin $0{,}40\,\text{K}$ kilojoulea kohti ($1 : (4{,}18 \cdot 0{,}60)$), joten $20\,\text{K}$ vaatii noin $50\,\text{kJ}$ lisää. Vesi lämpenee jäähän verrattuna loivemmin, koska veden $c$ on noin kaksinkertainen.
+
+### d)
+**Annettu:** $Q = 120\,\text{kJ}$; jään lämmittämiseen kului $Q_1 = 20\,\text{kJ}$ (a-kohta); $s = 333\,\text{kJ/kg}$ (b-kohta)
+**Kysytty:** sulanut massa $m_\text{s}$
+**Periaate:** Kohta $120\,\text{kJ}$ on kuvaajan vaakasuoralla osalla ($20\,\text{kJ} \ldots 220\,\text{kJ}$), joten lämpötila on $0\,{}^\circ\text{C}$ ja jää on osittain sulanut. Sulamiseen on käytetty energia $Q - Q_1$, ja se on $Q = sm$ sulaneelle massalle (luku *Olomuodon muutokset*).
+**Kaava:** $Q - Q_1 = s\,m_\text{s}$, joten $m_\text{s} = \dfrac{Q - Q_1}{s}$
+**Muunnokset:** Ei tarvita: energiat ja $s$ ovat kilojouleina.
+**Sijoitus:** $$
+\begin{aligned}
+m_\text{s} &= \dfrac{120\,\text{kJ} - 20\,\text{kJ}}{333\,\text{kJ/kg}} \\
+&\approx 0{,}30\,\text{kg}
+\end{aligned}
+$$
+**Vastaus:** Sulanutta jäätä on noin $0{,}30\,\text{kg}$, puolet massasta; kaksi merkitsevää numeroa. Lämpötila on edelleen $0\,{}^\circ\text{C}$.
+**Järkevyys:** Kohta $120\,\text{kJ}$ on vaakasuoran osan puolivälissä ($(20 + 220) : 2 = 120$), joten puolet jäästä on sulanut: $0{,}30\,\text{kg}$ on puolet massasta $0{,}60\,\text{kg}$.
+
+### Yleisiä virheitä
+- a-kohdassa lämpötilan muutokseksi otetaan $0\,{}^\circ\text{C}$ tai $16\,{}^\circ\text{C}$ ja unohdetaan, että kuvaajan ensimmäinen osa alkaa miinusasteista, tai kilojoulet jätetään muuntamatta jouleiksi.
+- b-kohdassa sulamisenergiaksi otetaan koko $220\,\text{kJ}$ eikä vaakasuoran osan pituus $200\,\text{kJ}$.
+- c-kohdassa lasketaan vain veden lämmittäminen $50\,\text{kJ}$ ja unohdetaan jään lämmitys ja sulaminen.
+- d-kohdassa sulamisenergiaksi otetaan $120\,\text{kJ}$, jolloin tulos on $0{,}36\,\text{kg}$.
+
+
+### Hyväksytään myös
+- a-kohdassa taulukon arvo $2100\,\text{J/(kg}\cdot\text{K)}$ kuvaajalta luetun arvon sijasta, kunhan lukeminen on näkyvissä.
+- c-kohdassa vastaus $2{,}7 \cdot 10^{2}\,\text{kJ}$ tai $270\,\text{kJ}$.

@@ -131,4 +131,30 @@ out.update({"fy9-kaasut-s7-a": round(100 * eta7, 2), "fy9-kaasut-s7-b-P2": round
             "fy9-kaasut-s7-d-T1": round(T1_7, 0), "fy9-kaasut-s7-d-T2": round(T2_7, 0), "fy9-kaasut-s7-d-dT": round(T1_7 - T2_7, 0),
             "fy9-kaasut-s7-d-ratio": round((T1_7 - T2_7) / T1_7, 2)})
 
+# s8 (FY9 B figure task): fy3-10/pt-suorat, p(T) lines of two rigid vessels, V = 2,0 l each (values read from the graph):
+# gas A (200 K; 50 kPa), (400 K; 100 kPa); gas B (200 K; 30 kPa), (400 K; 60 kPa)
+V8 = 2.0e-3                                              # m^3
+pA8, pB8, T8 = 100.0e3, 60.0e3, 400.0                    # Pa, Pa, K (the points at 400 K)
+nA8 = pA8 * V8 / (R * T8)                                # mol
+nB8 = pB8 * V8 / (R * T8)                                # mol
+ratio8 = pB8 / pA8                                       # n_B / n_A at the same V and T
+T8c = -20.0 + K                                          # K
+p8c = pA8 * T8c / T8                                     # Pa: p/T constant (V and n constant)
+p8c_check = nA8 * R * T8c / V8                           # Pa: from pV = nRT
+out.update({"fy9-kaasut-s8-a": round(nA8, 4), "fy9-kaasut-s8-a-200": round(50.0e3 * V8 / (R * 200.0), 4),
+            "fy9-kaasut-s8-b-nB": round(nB8, 4), "fy9-kaasut-s8-b": round(100 * (1 - ratio8), 1),
+            "fy9-kaasut-s8-c-T": round(T8c, 2), "fy9-kaasut-s8-c": round(p8c / 1e3, 1),
+            "fy9-kaasut-s8-c-check": round(p8c_check / 1e3, 1)})
+
+# s9 (FY9 B figure task): fy3-11/pv-isobaari, constant pressure 250 kPa, V from 1,0 l to 4,0 l (values read from the graph)
+p9, V9a, V9b, th9 = 250.0e3, 1.0e-3, 4.0e-3, 20.0       # Pa, m^3, m^3, °C (start temperature given in the task)
+W9 = p9 * (V9b - V9a)                                    # J
+T9a = th9 + K                                            # K
+n9 = p9 * V9a / (R * T9a)                                # mol
+T9b = p9 * V9b / (n9 * R)                                # K
+T9b_check = T9a * V9b / V9a                              # K: Charles's law
+out.update({"fy9-kaasut-s9-a": round(W9, 0), "fy9-kaasut-s9-b-T1": round(T9a, 2), "fy9-kaasut-s9-b": round(n9, 4),
+            "fy9-kaasut-s9-c": round(T9b, 1), "fy9-kaasut-s9-c-check": round(T9b_check, 1),
+            "fy9-kaasut-s9-c-th": round(T9b - K, 1), "fy9-kaasut-s9-c-dT": round(T9b - T9a, 1)})
+
 print(json.dumps(out))

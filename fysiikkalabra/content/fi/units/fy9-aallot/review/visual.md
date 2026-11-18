@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7ca3c185282b2261
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 6e26a08a08a64312
+SCOPE: delta (round 2): new Sovella tasks fy9-aallot-s7 and s8 (task, figures fy5-12/ruudukko-tehtava and fy5-13/kuvio-tehtava, solutions) and the changed intro; s1-s6 not re-judged. Judged from the fi captures; fi has the same cut as fi (58 labelled blocks per set, same formulas and rows); check_layout.py --width 360 OK for fi, en, fi-easy.
 
 ## Blocking
-- (none)
+(none) Round 1 had no blocking items; the significant-figure reasons in s7 a, s7 b, s8 a now read correctly (two, three, three figures with the reason named); en uses decimal points, fi and fi-easy decimal commas.
 
 ## Polish
-- (none)
+- [Minor] s8 figure at 390 px: ruler tick labels are small and "1,20" sits against the pulley post; L is repeated in the task text, so reading is not blocked.
+- [Minor] s7 solution a: the Vastaus box frames only s_1; s_2 and Delta s are plain text below it.
+- [Minor] s7 Sijoitus rows end with a stray semicolon after each aligned block.
 
 ## Checked
-- Hunk `sovella/solutions.md` Yleisiä virheitä, a-kohta (taso → intensiteetti): the sentence reads correctly and now names the quantity that the mistaken proportionality concerns; $3\,\text{dB}$ in LaTeX.
-- Captures opened: `fy9-aallot-stage-exercises-390-30.png`, `fy9-aallot-stage-exercises-1280-23.png`: the list item wraps cleanly, nothing clipped, the rubric under it unchanged.
-- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.
+- exercises-390-50, 51, 57, 58 (s7 task, figure, solution; s8 task, figure, parts and solution a); calculation rows aligned on '=', no clipping at 360-390 px; units in LaTeX with thin space.
+- Not opened: 1280 captures, s1-s6.

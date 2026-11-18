@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 2f9de8817eb2638d
+SCOPE: delta (round 2), new Sovella tasks fy9-kaasut-s8 and s9 (text, figures fy3-10/pt-suorat and fy3-11/pv-isobaari, model answers, rubrics) and the changed intro; s1-s7 not re-judged. Language: en.
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- C `sovella/tasks.json` s7 b: "How large a heat power is transferred from the plant to the environment" is correct but heavy; "At what rate is heat transferred from the plant to the environment" reads more naturally (the solution may keep "heat power").
-- C `sovella/solutions.md` s7 b, Reasonableness: three short display boxes interrupt one sentence ("is … and the sum … is the same as"); it reads, but two sentences would be easier to follow on a phone.
-- A for science: s3 common mistake "the molar mass comes out at about two thirds of the correct one" was judged for wording only, not recomputed.
+- [Minor] pt-suorat: the two lines are solid from 100 K although data points exist only at 200 K and 400 K; the stretch below 200 K is extrapolation and could be dashed. Description gives the two real points per gas.
+- [Minor] Axis tick labels in both figures render at about 9-10 px at 360 px; legible, figure correctly scaled inside its card.
 
 ## Checked
-- Hash at start and end: 3faa649403b7a6f4 (captures current for this hash).
-- Diff hunks read: s2 row $\approx 77\,\text{kW}$ with the added sentence about unrounded values, the s3 common-mistake sentence, the intro. The s2 and s3 lines were judged from source, their captures not opened.
-- ADDED TASK s7 at 390 px: contact-7 and contact-8 (#78–#92) and `stage-exercises-390-54`, `-58`, `-59`: title, source link, the Finnish row names with glosses, assumptions list with stacked units, parts a–e, all solutions, common mistakes, also accepted, rubric. The long denominator row breaks at "$\cdot\,57\,\tfrac{\text{m}^3}{\text{s}}$" inside the card; `=` aligned; nothing clipped.
-- s7 at 1280 px: contact-14 (#162–#168) and `stage-exercises-1280-44`: the denominator on one row, answer box and reasonableness block intact.
-- Quoted source values ("n. $1600\,\text{MW}$", "n. $13\,\text{TWh}$") render inside the quotation marks; every number with a unit is LaTeX; decimal point throughout.
-
-## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+- Round 1 (visual) had no blocking items; the PASS stands. Round-1 content fixes verified in the current text: s9 piston is movable with weights holding the pressure constant (task text and the isobaric graph agree); s9 c answer tolerance 3 % matches the two-significant-figure model answer 1,2 * 10^3 K (1173 K); the intro no longer calls the last task the source task (s8, s9 are plain figure tasks, source note says invented examples); s9 c reasonableness line (4 * 293 K, about 900 C) consistent.
+- Own 360 px captures of s8 and s9 (en page, model answer opened): no horizontal overflow (page scrollWidth 360, task cards 326/326); check_layout --width 360 OK for fi, en, fi-easy.
+- Calculation rows aligned at =, units LaTeX with thin space, litre as \textsf{l}, decimal points (en), boxed answers, fractions legible; the s8 c) chain breaks one step per row without clipping.
+- Figures sit inside the card; aria-label gives the data points and grid step; axes carry quantity and unit; s9 shows the isobar as a horizontal line with direction arrow and end markers.

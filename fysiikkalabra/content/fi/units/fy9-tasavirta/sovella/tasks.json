@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin tasavirtapiirit, sähkötehon ja sähköenergian. Ratkaise ne kuten kokeessa: selvitä ensin kytkentä ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa tunnin tasavirtapiirit, sähkötehon ja sähköenergian. Ratkaise ne kuten kokeessa: selvitä ensin kytkentä ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-tasavirta-s1",
@@ -822,6 +822,314 @@
    "links": {
     "concept": "fy3-6",
     "math": "fy6-7"
+   }
+  },
+  {
+   "id": "fy9-tasavirta-s7",
+   "title": "Hehkulamppu ja pariston jännite",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy6-3",
+    "fy6-4",
+    "fy6-6"
+   ],
+   "figure": "fy6-3/lamp-curve",
+   "text": "Pienen hehkulampun ominaiskäyrä on mitattu muuttamalla lampun jännitettä. Kuvaajassa on lampun jännite $U$ virran $I$ funktiona. Lampun suurin sallittu jännite on $3{,}0\\,\\text{V}$. Lamppua halutaan käyttää $4{,}0\\,\\text{V}$:n paristosta. Pariston sisäinen resistanssi ja johtojen resistanssi jätetään huomiotta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä lampun resistanssi, kun lampun jännite on $2{,}0\\,\\text{V}$.",
+     "answer": {
+      "value": 9.5,
+      "unit": "Ω",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Jännitettä $2{,}0\\,\\text{V}$ vastaava virta luetaan käyrältä: noin $0{,}21\\,\\text{A}$ (hyväksytään $0{,}20\\ldots 0{,}22\\,\\text{A}$)."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$R = \\dfrac{U}{I}$ tässä pisteessä; käyrän tangentin kulmakerroin ei ole resistanssi."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$R = \\dfrac{2{,}0\\,\\text{V}}{0{,}21\\,\\text{A}} = 9{,}5\\,\\Omega$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$R \\approx 9{,}5\\,\\Omega$ kahdella merkitsevällä numerolla, kuten kuvaajasta luetut arvot."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 3,
+     "text": "Määritä lampun resistanssi myös jännitteellä $3{,}0\\,\\text{V}$ ja selitä, miksi se eroaa a-kohdan arvosta.",
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Luetaan $I = 0{,}25\\,\\text{A}$ ja lasketaan $R = \\dfrac{3{,}0\\,\\text{V}}{0{,}25\\,\\text{A}} = 12\\,\\Omega$, joka on suurempi kuin $9{,}5\\,\\Omega$."
+      },
+      {
+       "text": "Selittää eron: kun jännite kasvaa, virta ja teho kasvavat ja hehkulanka kuumenee, jolloin sen resistanssi kasvaa. Siksi käyrä kaartuu eikä lamppu noudata Ohmin lakia.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Lamppu halutaan käyttää suurimmalla sallitulla jännitteellään. Pariston lisäksi käytettävissä on yksi vastus. Miten vastus kytketään ja kuinka suuri sen resistanssin pitää olla?",
+     "answer": {
+      "value": 4.0,
+      "unit": "Ω",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Perustelee kytkennän: vastus kytketään lampun kanssa sarjaan, jolloin virta on sama ja pariston jännite jakautuu lampun ja vastuksen kesken. Rinnan kytkettynä lampun yli olisi koko $4{,}0\\,\\text{V}$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Jännitettä $3{,}0\\,\\text{V}$ vastaava virta luetaan käyrän päätepisteestä: $0{,}25\\,\\text{A}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E = U_\\text{L} + U_\\text{R}$, joten $U_\\text{R} = E - U_\\text{L}$ ja $R = \\dfrac{U_\\text{R}}{I}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$R = \\dfrac{4{,}0\\,\\text{V} - 3{,}0\\,\\text{V}}{0{,}25\\,\\text{A}} = 4{,}0\\,\\Omega$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tarkistus: koko piirin resistanssi on $\\dfrac{4{,}0\\,\\text{V}}{0{,}25\\,\\text{A}} = 16\\,\\Omega$, ja $12\\,\\Omega + 4{,}0\\,\\Omega = 16\\,\\Omega$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske lampun ja vastuksen teho c-kohdan kytkennässä. Kuinka suuri osa pariston tehosta muuttuu lampussa?",
+     "answer": {
+      "value": 75.0,
+      "unit": "%",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = UI$ jokaiselle osalle ja pariston teholle $P = EI$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$P_\\text{L} = 3{,}0\\,\\text{V} \\cdot 0{,}25\\,\\text{A} = 0{,}75\\,\\text{W}$, $P_\\text{R} = 1{,}0\\,\\text{V} \\cdot 0{,}25\\,\\text{A} = 0{,}25\\,\\text{W}$ ja $P = 4{,}0\\,\\text{V} \\cdot 0{,}25\\,\\text{A} = 1{,}0\\,\\text{W}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tehot ovat yhdessä pariston teho: $0{,}75\\,\\text{W} + 0{,}25\\,\\text{W} = 1{,}0\\,\\text{W}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Lampussa muuttuu $\\dfrac{0{,}75\\,\\text{W}}{1{,}0\\,\\text{W}} = 75\\,\\%$ pariston tehosta."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy6-3",
+    "concept": "fy6-3",
+    "math": "fy6-4",
+    "communication": "fy6-6"
+   }
+  },
+  {
+   "id": "fy9-tasavirta-s8",
+   "title": "Kolmen vastuksen kytkentä",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy6-4",
+    "fy6-5",
+    "fy6-6"
+   ],
+   "figure": "fy6-4/siirto-mixed",
+   "text": "Kuvan kytkennässä $12\\,\\text{V}$:n paristoon on kytketty kolme vastusta, joiden resistanssit ovat $20\\,\\Omega$, $60\\,\\Omega$ ja $30\\,\\Omega$. Pariston sisäinen resistanssi ja johtojen resistanssi jätetään huomiotta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka suuri virta kulkee paristosta?",
+     "answer": {
+      "value": 0.3,
+      "unit": "A",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Päättelee kytkennän kuvasta: $60\\,\\Omega$:n ja $30\\,\\Omega$:n vastukset ovat rinnan, ja niiden ryhmä on sarjassa $20\\,\\Omega$:n vastuksen kanssa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$R_\\text{p} = \\dfrac{R_1 R_2}{R_1 + R_2}$, $R = R_3 + R_\\text{p}$ ja $I = \\dfrac{E}{R}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$R_\\text{p} = 20\\,\\Omega$, $R = 40\\,\\Omega$ ja $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0{,}30\\,\\text{A}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$I = 0{,}30\\,\\text{A}$ kahdella merkitsevällä numerolla."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Virta on pienempi kuin pelkästä $20\\,\\Omega$:n vastuksesta ($0{,}60\\,\\text{A}$) ja suurempi kuin jos kaikki vastukset olisivat sarjassa ($\\approx 0{,}11\\,\\text{A}$)."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kuinka suuri virta kulkee $60\\,\\Omega$:n vastuksessa ja kuinka suuri $30\\,\\Omega$:n vastuksessa?",
+     "answer": [
+      {
+       "name": "I60",
+       "value": 0.1,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "I30",
+       "value": 0.2,
+       "unit": "A",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Rinnankytkettyjen vastusten yli on sama jännite: $U_\\text{p} = E - I R_3$ ja $I_k = \\dfrac{U_\\text{p}}{R_k}$."
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$$\n\\begin{aligned}\nU_\\text{p} &= 12\\,\\text{V} \\\\\n&\\quad - 0{,}30\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 6{,}0\\,\\text{V}\n\\end{aligned}\n$$, $I_{60} = \\dfrac{6{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}10\\,\\text{A}$ ja $I_{30} = \\dfrac{6{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}20\\,\\text{A}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$I_{60} = 0{,}10\\,\\text{A}$ ja $I_{30} = 0{,}20\\,\\text{A}$ yksiköineen."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Virrat ovat yhdessä pariston virta: $0{,}10\\,\\text{A} + 0{,}20\\,\\text{A} = 0{,}30\\,\\text{A}$, ja pienempi resistanssi vie suuremman virran."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske $20\\,\\Omega$:n vastuksen teho ja koko kytkennän teho.",
+     "answer": [
+      {
+       "name": "P20",
+       "value": 1.8,
+       "unit": "W",
+       "tolerance": 0.02
+      },
+      {
+       "name": "P",
+       "value": 3.6,
+       "unit": "W",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$P = R I^2$ vastukselle ja $P = EI$ koko kytkennälle."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$P_{20} = 20\\,\\Omega \\cdot (0{,}30\\,\\text{A})^2 = 1{,}8\\,\\text{W}$ ja $P = 12\\,\\text{V} \\cdot 0{,}30\\,\\text{A} = 3{,}6\\,\\text{W}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$P_{20} = 1{,}8\\,\\text{W}$ ja $P = 3{,}6\\,\\text{W}$ yksiköineen."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Vastusten tehot ovat yhdessä pariston teho: $$\n\\begin{aligned}\nP &= 1{,}8\\,\\text{W} + 0{,}60\\,\\text{W} \\\\\n&\\quad + 1{,}2\\,\\text{W} \\\\\n&= 3{,}6\\,\\text{W}\n\\end{aligned}\n$$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Opiskelija irrottaa $30\\,\\Omega$:n vastuksen kytkennästä. Miten $60\\,\\Omega$:n vastuksen teho muuttuu? Ennusta ensin ja perustele sitten laskemalla.",
+     "criteria": [
+      {
+       "text": "Ennustaa ja perustelee: piirin resistanssi kasvaa ja virta pienenee, mutta $20\\,\\Omega$:n vastuksen jännite pienenee, joten $60\\,\\Omega$:n vastukselle jää suurempi jännite ja sen teho kasvaa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$R = 20\\,\\Omega + 60\\,\\Omega = 80\\,\\Omega$, $I = \\dfrac{12\\,\\text{V}}{80\\,\\Omega} = 0{,}15\\,\\text{A}$, $$\n\\begin{aligned}\nU &= 12\\,\\text{V} \\\\\n&\\quad - 0{,}15\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 9{,}0\\,\\text{V}\n\\end{aligned}\n$$ ja $P = \\dfrac{(9{,}0\\,\\text{V})^2}{60\\,\\Omega} = 1{,}35\\,\\text{W}$"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Teho kasvaa arvosta $0{,}60\\,\\text{W}$ arvoon $1{,}35\\,\\text{W}$ eli $2{,}3$-kertaiseksi, vaikka pariston virta pienenee arvosta $0{,}30\\,\\text{A}$ arvoon $0{,}15\\,\\text{A}$."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy6-4",
+    "math": "fy6-5",
+    "communication": "fy6-6"
    }
   }
  ]
