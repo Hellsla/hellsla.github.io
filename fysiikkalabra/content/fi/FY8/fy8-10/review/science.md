@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2259920fc70ee655
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 36c15f8b62d12e9c
 
 ## Blocking
-- none
 
 ## Polish
-- The beta-plus atomic-mass formula could later be marked as an extension; left in the core text for now.
+- None.
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: the reworded prompt (helium-4 nucleus = alpha particle): Po-210 to Pb-206, A 210 - 4 and Z 84 - 2 recomputed, options and feedback unchanged and right, one correct option; exit ticket and lesson.md changes are presentation only.
