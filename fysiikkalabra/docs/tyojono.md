@@ -168,7 +168,7 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 - FY2–FY3: fy2-4 M1 (check-patteri-vaihtoehto), M2 ja M3 (ennuste-1/koe-1, johtopäätös); fy3-6 Tiivistelmään "kun olomuoto ei muutu". #724:n jälkeen.
 - FY4: fy4-4 M4 (lesson.md "480 kg tarkka arvo"). #727:n jälkeen.
 - FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen" (FY6 Sovella-hionnan PR:ssä).
-- FY7: fy7-5 lesson.md:201 napadynamon kuvaus ja exit-ticket.json:8 kysymys 2. #726:n jälkeen.
+- FY7: fy7-5 lesson.md:201 napadynamon kuvaus ja exit-ticket.json:8 kysymys 2. #726:n jälkeen. Varattu: claude/fy7-5-lopputarkistus
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
