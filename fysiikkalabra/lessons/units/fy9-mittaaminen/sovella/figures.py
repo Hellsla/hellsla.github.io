@@ -31,6 +31,9 @@ DX5 = 0.03
 # s6: the syringe; V on the syringe scale, p from the sensor
 V6 = [12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
 p6 = [189.1, 164.5, 146.6, 131.9, 119.2, 109.6, 101.2, 93.5, 87.6, 81.8]
+# s8: the dropped steel ball (fy4-2/fall-points): s against t squared
+t8 = [0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+s8 = [0.002, 0.018, 0.065, 0.128, 0.223, 0.338, 0.477, 0.646, 0.832]
 
 
 def pf(v, d):
@@ -128,4 +131,21 @@ def s6_graph():
     return f.svg()
 
 
-FIGURES = {"s3-pisteet": s3_points, "s3-sovitus": s3_fit, "s5-kuvaaja": s5_graph, "s6-kuvaaja": s6_graph}
+def s8_graph():
+    t2 = [t * t for t in t8]
+    k, b = _fit(t2, s8)
+    k = (0.786 - 0.113) / (0.150 - 0.020)                  # the slope read off the drawn line in the solution (5,18)
+    f = Fig("fy9m-s8-kuvaaja", 400, "Kuvaaja: kuulan putoamismatka s metreinä ajan neliön t² funktiona yksikössä s², 0–0,16 s². Yhdeksän sinistä pistettä "
+            f"on lähellä yhtä nousevaa suoraa, jonka kulmakerroin on {pf(k, 2)} m/s² ja joka leikkaa pystyakselin kohdassa noin {pf(b, 2)} m. "
+            "Suoralta luetut pisteet (0,020 s²; 0,113 m) ja (0,150 s²; 0,786 m) on ympyröity.", size=30)
+    ax = Axes(f, (90, 340), (470, 60), x=(0, 0.18), y=(0, 0.9), xticks=[0.04, 0.08, 0.12, 0.16], yticks=[0.2, 0.4, 0.6, 0.8],
+              xlabel=r"t^2\ (\text{s}^2)", ylabel=r"s\ (\text{m})", xfmt=lambda v: fi(v, 2), yfmt=lambda v: fi(v, 1))
+    ax.line([(0, b), (0.17, b + 0.17 * k)], INK, 3)
+    for x, y in zip(t2, s8): ax.point(x, y, COLD)
+    for x in (0.020, 0.150):
+        f.circle(ax.X(x), ax.Y(b + k * x), 12, "none", INK, 1.5)
+    f.tex(ax.X(0.015), ax.Y(0.74), r"\tfrac{1}{2}g = k \approx " + fi(round(k, 2)) + r"\,\text{m/s}^2", "start")
+    return f.svg()
+
+
+FIGURES = {"s3-pisteet": s3_points, "s3-sovitus": s3_fit, "s5-kuvaaja": s5_graph, "s6-kuvaaja": s6_graph, "s8-kuvaaja": s8_graph}

@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2551e46149b68b40
+CONTENT-HASH: 876c08f6ee47b4ec
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
 Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- (ei mitään)
 
 ## Polish
-- A (carried from round 1), s7 e, criterion 2 partly repeats d; acceptable because e ties it to the correction note.
+- s8 Yleisiä virheitä, a: esimerkki "$\mu = 16 / 20\,\text{cm} = 0{,}80$" on jäänyt vanhoista lukuarvoista. Nykyisillä pisteillä $(0;\,80)$ ja $(10;\,20)$ osamäärä on $80/20 = 4$ ja virheellinen tulos $4/10\,\text{cm} = 0{,}40\,\text{1/cm}$. Korjaa luvut, ettei oppija näe lukua 16, jota aineistossa ei ole.
+- s9 a: ruudukon piste on enää vain ratkaisussa ja kriteerissä, ei tehtävätekstissä; toinen piste on silti origo. Hyväksyttävä.
+- s8 antaa mallin valmiina (tietoinen valinta).
 
 ## Checked
-- Round-1 Blocking, `tasks.json` s7 d: the part now ends "Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella." All three criteria (system boundary; 3,15/300 ≈ 1 %; about 1 MJ of electricity, under half a per cent) are now asked by the part, so a student who answers what is asked can get 3/3. The datum is in the stem ("noin kolmasosan"). Fixed.
-- `solutions.md` s7 d, Kysytty: extended to match the part; the model answer already contains 1/3 · 3,15 MJ = 1,05 MJ and 0,35 %, recomputed.
-- s7 stem: "Lisätietoja:" introduces the list and the three bullets are now full sentences with capitals and full stops. The sentence "Tätä tietoa ei ole artikkelissa" is kept, so the student knows not to look for 300 MJ in the source.
-- `solutions.md` s7 c: the two-figure answer is now justified by the temperature difference 80 K (20 °C to 100 °C, given in the part), not by a "guess"; agrees with part c, where the start temperature is given.
-- s7 e, criterion 1: either justification now earns the point; the criterion is observable and the criteria still sum to 3.
-- Points of s7 unchanged: 2+3+4+3+3 = 15.
+- Avasin fi-paketin: s8 ja s9 tasks.json, solutions.md ja tarkistusosio (practice.py check OK); hash alussa ja lopussa 876c08f6ee47b4ec.
+- Round 1:n polish-kohdat: s9 a:n teksti ei enää anna pistettä $(250;\,18\,000)$, joten $H_0$ luetaan kuvaajalta ja `graph_read` mittaa jotain. s8 a: toinen luettava piste $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ ja ratkaisun luvut ($\ln 4/10 = 0{,}14$) täsmäävät.
+- s8 d: oletus kysytään nyt tekstissä ("Mainitse myös yksi mallin oletus ... ja sen vaikutus"), kriteeri vastaa kysymystä; ei paljasta ratkaisun rakennetta (oletuksen sisältö jää oppijalle).
+- s9 c: uudelleenmuotoilu ("etäisyydet olivat nollia ... samalla nopeudella") ei paljasta ketjua $t = 1/H_0$ eikä yksikkömuunnosta.
+- Pyöristys kahteen numeroon (0,14; 6,6; 2,2; 24; 72; 120; $1{,}4\cdot10^{10}$) vastaa lähtötietoja; tarkempi $\mu$ selitetty. Laskuketjut tasattuina riveinä; yksikkökentät (1/cm, µSv/h, mSv, cm, km/s/Mpc, a) kielineutraaleja.
+- Pisteet 3+3+3+4 ja 3+3+4+3 täsmäävät kriteereihin; 360 px: check_layout ja shots.md, ei avattu.
