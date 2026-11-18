@@ -123,11 +123,11 @@ with sync_playwright() as pw:
                 # where the exercises stand (teacher 2026-11-10): the core tasks' count over the levels, each level's done count in its heading
                 ex = pg.evaluate("""() => { const b = document.querySelector('#exercises .act-exercises'); const marks = [...b.querySelectorAll('details.level > summary .level-done')];
                     const rec = JSON.parse(localStorage.getItem('ruukkilabra:tarkistettu') || '{}');
-                    const done = [...b.querySelectorAll('li[id]')].filter(li => rec[li.id] && rec[li.id].done).length;
                     return { levels: b.querySelectorAll('details.level').length, marks: marks.length, line: !!b.querySelector('.ex-progress'),
-                      shown: marks.filter(x => !x.hidden).reduce((a, x) => a + parseInt(x.textContent, 10), 0), done }; }""")
+                      shown: marks.filter(x => !x.hidden).reduce((a, x) => a + parseInt(x.textContent, 10), 0),
+                      done: [...b.querySelectorAll('details.level li[id]')].filter(li => rec[li.id] && rec[li.id].done).length }; }""")   # the core card has no heading and no count (U1)
                 expect(f"{tag}: the levels' headings together count every done task, and no core-task line stands over them (teacher 2026-11-13)",
-                       ex["marks"] == ex["levels"] and ex["shown"] == ex["done"] > 0 and not ex["line"], ex)
+                       ex["marks"] == ex["levels"] and ex["shown"] == ex["done"] and not ex["line"], ex)
                 go = pg.evaluate("[!!document.querySelector('nav.next-stage'), document.querySelector('#ennusta').nextElementSibling.id]")
                 expect(f"{tag}: Tutki follows Ennusta directly", go == [False, "tutki"], go)
                 sr = pg.evaluate("document.querySelector('nav.toc a[href=\"#ennusta\"] .visually-hidden')?.textContent || ''")

@@ -87,6 +87,11 @@ EXTRACT = r"""(id) => {
   // the tasks templates/palautus.js puts in the file, from the page's own list (window.flSubmissionTasks, version 3):
   // the exercises and FY9 review tasks, and the lesson's own tasks with an answer (teacher 2026-11-06 evening)
   const lis = window.flSubmissionTasks();
+  // the core exercises stand first on the page (U1); the list keeps the running order "luku-tehtävä": the exercises
+  // are put back into their own places in the order of their numbers
+  const slot = []; lis.forEach((li, i) => { if (li.matches && li.matches('#exercises li[id]')) slot.push(i); });
+  const k = (li) => Number((li.dataset.num || '').split('-').pop()) || 0;
+  slot.map((i) => lis[i]).sort((a, b) => k(a) - k(b)).forEach((li, j) => { lis[slot[j]] = li; });
   // a review task's short answer: the answer step of each part of its model solution, under the part's heading
   const reviewAnswer = (li) => {
     const steps = [...li.querySelectorAll(':scope > details.reveal .steps')];
