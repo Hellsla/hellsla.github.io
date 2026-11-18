@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0230c0b74297e942
-SCOPE: delta: round 1 fixes since previous visual review: 7400 N in s8 d) (tasks.json and solutions.md), en translation fixes, en term "centripetal acceleration"; en. Tasks s1-s7 not re-judged.
+CONTENT-HASH: c0ad285a9610c83b
+SCOPE: delta: en s9 "wire" -> "cable" in tasks.json and solutions.md to match shared figure fy5-2/kyltti alt text; en. Other tasks not re-judged.
 
 ## Blocking
-None. The previous Blocking item (s8 d greatest friction 7360 N, three figures against two-figure data) is resolved: tasks.json rubric and solutions.md line 606 now read $\approx 7400\,\text{N}$; no 7360 remains in the language. 4500 N and 61 % unchanged and consistent.
+None. The round 2 Blocking item (s9 text said "wire", figure alt text says "cable") is resolved: no "wire" remains in the en unit, and the figure alt text and the task/solutions now use the same word.
 
 ## Polish
-Round 1 Polish items (s9 a long Periaate paragraph; s9 d / s8 d display-block joins) remain recorded, not re-raised.
+Earlier Polish items (long Periaate paragraph in s9; display-block joins) remain recorded, not re-raised.
 
 ## Checked
-- Grep for 7360 across tasks.json and solutions.md: no hits; 7400 present in both files.
-- Diff of the Sovella files against the previous commit: only the intended lines changed; no new math, figure reference or layout change. The en change (normal -> centripetal acceleration in task s8 statement, solutions Given/Principle/Reasonableness, and the s9 rubric detail translated) reads naturally and matches the en term used elsewhere in the chapter.
-- Display-block structure around the edited line unchanged, so the rendering at 390 px is as judged in round 1.
-- Content hash at start and end identical: 0230c0b74297e942.
+- Grep for "wire" across the en unit: no hits; "cable" used consistently in task statement, parts a and d, rubric details and solutions.
+- Grammar: "a cable runs from...", "the force of the cable", "The cable is oblique", "the cable withstands" all read naturally; "mass of the cable is neglected" fine.
+- Physics and numbers unchanged: 191 N, 380 N, 331 N, 600 N, 30.0 and 45 degrees, 270 N, 29 %.
+- Figure alt text (figures.json fy5-2) reads "A cable runs from the outer end of the rod obliquely up to the wall", matching.
+- Hash at start and end identical: c0ad285a9610c83b.

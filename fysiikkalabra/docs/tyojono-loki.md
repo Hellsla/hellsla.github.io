@@ -722,3 +722,6 @@ Tavutusvirhe (`lang="en"` suomenkielisen laatikon ympärillä) korjattu, kolme k
 
 ## §0i (toinen) Pysähdy ja mieti -pilotti (PR #699, 2026-11-18)
 Opettaja hyväksyi pilotin 2026-11-18 (koordinaattorin välityksellä, kielikorjausten jälkeen). Merkintä ```pysahdy (kysymys, rivi `---`, vastaus; `scripts/stopthink.py`, `test_stopthink.py`), render `<aside class="stop-think">` + `<details>` "Vastaus", tyyli `templates/site.css`, tekstit `lang/*.json` `lesson.stop_think`. Sisältö: fy4-3 (3 kysymystä), fy4-4 (3), fy4-6 (4), fi/en/fi-easy. Laajennus muihin lukuihin vasta opettajan erillisellä päätöksellä.
+
+## §6 (FY9) Kuvatehtävien malli fy9-liike (PR #708, 2026-11-18)
+Opettaja hyväksyi FY9-mallin 2026-11-18 klo 12.20 (koordinaattorin välityksellä; koordinaattorin ilmoitus, ei tässä PR:ssä todennettu). Malli: kaksi kuvatehtävää (s7, s8) unitin `sovella/tasks.json`:iin, olemassa olevat FY4-kuvat, ei jaettua muutosta. Avoimet: `round.py` ei tunne unit-tunnuksia (kierros käsin: `practice.py packet units/<id>`, `units.py hash`); uusi unit-kuva vaatisi `figcat.owners()`-muutoksen. Polish-löydökset PR:n kuvauksessa.

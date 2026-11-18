@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0230c0b74297e942
-SCOPE: delta: round 1 fixes: s8 b maximum friction 7360 N -> 7400 N; also s9 b criterion detail translated; s8 term centripetal acceleration in task text and solutions.
+CONTENT-HASH: c0ad285a9610c83b
+SCOPE: delta: round 3: s9 "wire" -> "cable" in en tasks.json and solutions.md, to match the fy5-2/kyltti alt text.
 
 ## Blocking
-- (none) Round 1 Blocking items resolved (7400 N; Finnish text in the s9 b criterion now 'away from the wall' / 'upwards'; s8 uses 'centripetal acceleration' in text, part a and solutions).
+- (none) Round 2 Blocking (alt text name mismatch) is resolved: s9 text, criteria, solutions and the figure alt text all say "cable".
 
 ## Polish
-- Round 1 Polish items stay recorded, not re-raised.
-- en unit.md recognition map and its figures.json glossary still say 'normal acceleration' (outside the sovella delta); align the term to 'centripetal acceleration' in a later round.
+- Earlier Polish items stay recorded, not re-raised.
+- The generated packet-science.md still says "wire" (review artefact, not learner text); regenerate before the next science round.
 
 ## Checked
-- 7400 N: 0,50 · 1500 kg · 9,81 m/s² = 7357 N, two significant figures = 7400 N, matches the data's precision; 4500 N / 7400 N = 61 % still holds. No 7360 remains in tasks, solutions or answers of this language.
-- s9 b criterion detail now English; s8 term equals the alt text term 'centripetal acceleration'; symbol $a_\text{n}$ kept. No 'poispäin' or 'normal acceleration' left in en sovella files.
-- Diff of the round 1 commit read for this unit: no other change in this language's sovella files; tasks still give no structure away and point counts are unchanged.
-- Hash at start and at end identical.
+- No "wire" left in en tasks.json or solutions.md; "a cable", "the cable", "force of the cable", "cable force" read correctly.
+- Physics and numbers unchanged: L = 1.20 m, 30.0 deg, T about 380 N, Tmax 600 N, 270 N at 45 deg, 331 N hinge.
+- Tasks still give no structure away; point counts unchanged.
+- Hash at start and end identical (c0ad285a9610c83b).
