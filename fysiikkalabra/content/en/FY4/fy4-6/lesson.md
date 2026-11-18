@@ -137,7 +137,7 @@
 The **weight** $\overline{G}$ of an object is the force with which the Earth pulls the object. It always points straight down, also on a slope, and in a free-body diagram it is drawn from the center of the object. The magnitude of the weight is the product of the mass and the acceleration of free fall, $mg$. Mass describes the inertia of an object, that is how hard it is to change its state of motion, and it is the same everywhere. Weight, on the other hand, depends on the place: on the surface of the Moon $g = 1.62\,\text{m/s}^2$, so the weight of a $60\,\text{kg}$ person there is about $97\,\text{N}$, whereas on Earth it is about $590\,\text{N}$.
 
 ```pysahdy
-An astronaut whose mass is $80\,\text{kg}$ moves to the Moon. What changes in the astronaut's mass and weight?
+An astronaut whose mass is $80\,\text{kg}$ moves to the Moon. Does the astronaut's mass change, the weight, or both?
 ---
 The mass stays the same, but the weight becomes smaller, because the Moon's free-fall acceleration is smaller than the Earth's.
 ```
@@ -200,7 +200,7 @@ In the graph the normal force of the floor is $100\,\text{N}$. Static friction g
 ```pysahdy
 You pull a box weakly, but it does not move. How large is the static friction?
 ---
-As large as your pull and in the opposite direction, because the net force is zero and the box stays at rest.
+As large as the force with which you pull, but in the opposite direction, because the net force is zero and the box stays at rest.
 ```
 
 ### The inclined plane
@@ -259,7 +259,7 @@ The steeper the slope, the greater the component along the slope and the smaller
 ```pysahdy
 Why does a box start to slide when the slope is steep enough?
 ---
-The component of the weight along the slope grows, while the normal force and the maximum static friction become smaller. The component exceeds the maximum static friction.
+As the slope gets steeper, the component of the weight along the slope grows, and the normal force and the maximum static friction become smaller. When the component exceeds the maximum static friction, the box starts to move.
 ```
 
 ### Friction does not always oppose motion

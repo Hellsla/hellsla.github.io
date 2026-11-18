@@ -137,7 +137,7 @@
 Kappaleen **paino** $\overline{G}$ on voima, jolla Maa vetää kappaletta. Se osoittaa aina suoraan alas, myös rinteellä, ja voimakuviossa se piirretään kappaleen keskipisteestä. Painon suuruus on massan ja putoamiskiihtyvyyden tulo $mg$. Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea sen liiketilaa on muuttaa, ja se on sama kaikkialla. Paino taas riippuu paikasta: Kuun pinnalla $g = 1{,}62\,\text{m/s}^2$, joten $60\,\text{kg}$:n ihmisen paino on siellä noin $97\,\text{N}$, kun se Maassa on noin $590\,\text{N}$.
 
 ```pysahdy
-Astronautti, jonka massa on $80\,\text{kg}$, siirtyy Kuuhun. Mikä hänen massastaan ja painostaan muuttuu?
+Astronautti, jonka massa on $80\,\text{kg}$, siirtyy Kuuhun. Muuttuuko hänen massansa, painonsa vai molemmat?
 ---
 Massa pysyy samana, mutta paino pienenee, koska Kuun putoamiskiihtyvyys on pienempi kuin Maan.
 ```
@@ -200,7 +200,7 @@ Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $
 ```pysahdy
 Vedät laatikkoa heikosti, mutta se ei liiku. Kuinka suuri lepokitka on?
 ---
-Yhtä suuri kuin vetosi ja vastakkaissuuntainen, koska kokonaisvoima on nolla ja laatikko pysyy levossa.
+Yhtä suuri kuin voima, jolla vedät, mutta vastakkaissuuntainen, koska kokonaisvoima on nolla ja laatikko pysyy levossa.
 ```
 
 ### Kalteva taso
@@ -259,7 +259,7 @@ Mitä jyrkempi rinne, sitä suurempi on rinteen suuntainen komponentti ja sitä 
 ```pysahdy
 Miksi laatikko lähtee liukumaan, kun rinne on tarpeeksi jyrkkä?
 ---
-Painon rinteen suuntainen komponentti kasvaa, ja tukivoima sekä lähtökitka pienenevät. Komponentti ylittää lähtökitkan.
+Kun rinne jyrkkenee, painon rinteen suuntainen komponentti kasvaa ja tukivoima ja lähtökitka pienenevät. Kun komponentti ylittää lähtökitkan, laatikko lähtee liikkeelle.
 ```
 
 ### Kitka ei aina vastusta liikettä

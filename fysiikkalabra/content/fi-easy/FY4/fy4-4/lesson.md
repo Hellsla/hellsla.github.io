@@ -539,7 +539,7 @@ Laki on vektoriyhtälö. Kokonaisvoima ja kiihtyvyys osoittavat aina samaan suun
 ```pysahdy
 Laatikko nousee köyden varassa ja hidastuu. Mihin suuntaan kokonaisvoima osoittaa?
 ---
-Alas. Kokonaisvoima osoittaa aina samaan suuntaan kuin kiihtyvyys, ja hidastuvalla nousulla kiihtyvyys osoittaa alas. Köyden voima on painoa pienempi.
+Alaspäin. Kokonaisvoima osoittaa aina samaan suuntaan kuin kiihtyvyys, ja hidastuvalla nousulla kiihtyvyys osoittaa alaspäin. Köyden voima on painoa pienempi.
 ```
 
 ### Ensin voimat, sitten yhtälö

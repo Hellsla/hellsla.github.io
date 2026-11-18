@@ -139,7 +139,7 @@ Kappaleen **paino** $\overline{G}$ on voima, jolla Maa vetää kappaletta. Paino
 Massa kertoo, kuinka vaikea kappaleen liiketilaa on muuttaa. Massa on sama kaikkialla. Paino taas riippuu paikasta. Kuun pinnalla $g = 1{,}62\,\text{m/s}^2$. Siksi $60\,\text{kg}$:n ihmisen paino on Kuussa noin $97\,\text{N}$, mutta Maassa noin $590\,\text{N}$.
 
 ```pysahdy
-Astronautin massa on $80\,\text{kg}$. Hän menee Kuuhun. Muuttuuko hänen massansa? Entä paino?
+Astronautin massa on $80\,\text{kg}$. Hän menee Kuuhun. Muuttuuko hänen massansa, painonsa vai molemmat?
 ---
 Massa ei muutu. Paino pienenee, koska Kuu vetää vähemmän kuin Maa.
 ```
@@ -204,7 +204,7 @@ Kuvaajassa lattian tukivoima on $100\,\text{N}$. Lepokitka kasvaa vedon mukana $
 ```pysahdy
 Vedät laatikkoa vähän, mutta se ei liiku. Kuinka suuri lepokitka on?
 ---
-Se on yhtä suuri kuin vetosi, mutta osoittaa vastakkaiseen suuntaan. Siksi voimat kumoavat toisensa ja laatikko pysyy paikallaan.
+Se on yhtä suuri kuin voima, jolla vedät, mutta osoittaa vastakkaiseen suuntaan. Siksi voimat kumoavat toisensa ja laatikko pysyy paikallaan.
 ```
 
 ### Kalteva taso
@@ -269,7 +269,7 @@ Siksi laatikko lähtee jyrkässä rinteessä liukumaan. Rinnettä alas vievä ko
 ```pysahdy
 Miksi laatikko lähtee liukumaan, kun rinne on tarpeeksi jyrkkä?
 ---
-Rinnettä alas vievä osa painosta kasvaa. Samalla tukivoima ja lähtökitka pienenevät. Lopulta alas vievä osa on suurempi kuin lähtökitka.
+Kun rinne jyrkkenee, rinnettä alas vievä osa painosta kasvaa ja tukivoima ja lähtökitka pienenevät. Kun alas vievä osa ylittää lähtökitkan, laatikko lähtee liikkeelle.
 ```
 
 ### Kitka ei aina vastusta liikettä

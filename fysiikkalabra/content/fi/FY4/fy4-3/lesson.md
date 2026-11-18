@@ -364,7 +364,7 @@ Kun kaksi kappaletta vaikuttavat toisiinsa, niiden välillä on **vuorovaikutus*
 ```pysahdy
 Heitetty pallo lentää ilmassa. Mitkä kappaleet vaikuttavat palloon lennon aikana?
 ---
-Maa eli paino ja ilma eli ilmanvastus. Heittäjän käsi ei enää vaikuta palloon.
+Maa (paino) ja ilma (ilmanvastus). Heittäjän käsi ei enää vaikuta palloon.
 ```
 
 ### Liike jatkuu ilman voimaa
