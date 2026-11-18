@@ -72,6 +72,7 @@ Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia joulein
 versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
+Varattu: claude/8-sivupohja-avattavat (sivupohja)
 Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei päde (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` 5.2).
 "Yleinen virhekäsitys" ja Tiivistelmä omiin suljettuihin `<details>`-laatikkoihinsa (näppäimistöllä avattavat); sivupohjan
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
