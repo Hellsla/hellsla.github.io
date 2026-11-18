@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4333a9f1a3bfa2cc
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 9b44845a75fe196a
+SCOPE: delta review of the Sovella set: new tasks s7 (Kärry radalla) and s8 (Kaksi kulkijaa samalla tiellä) and the changed intro; s1-s6 not re-judged (previously passed).
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- s8 d: the meeting place is given as $14{,}7\,\text{m}$ from data with two significant figures ($2{,}0$ and $1{,}0\,\text{m/s}$, positions read to whole metres); $15\,\text{m}$ (or "noin $15\,\text{m}$") would match the rounding reason used in a-c. Word task, no answer check.
+- s8 figure: the lines cross on a grid crossing, so $4\,\text{s}$ and $12\,\text{m}$ can be read off; nothing is marked and the rubric scores the calculation, so no answer is given away. A Hyväksytään myös line on how a reading-only answer to c scores would help.
 
 ## Checked
-- solutions.md s5 a Vastaus, the added rounding reason. Recomputed: a = 0,9375 m/s², range 0,741…1,224 m/s², half-range 0,242 m/s², upper limit 0,287 m/s² above and lower limit 0,197 m/s² below the best estimate; so ±0,3 m/s² covers the whole interval and ±0,2 would not. Agrees with the 25 % estimate in Järkevyys.
-- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-liike` OK; hash the same at start and end.
+- One script recomputed every number from the figures' own points (fy4-1 figures.py: (0;4), (4;16), (6;16), (10;8); A 4→20 m, B 20→4 m in 8 s) with my own formulas, beside answers.py: s7 $3{,}0$ and $-2{,}0\,\text{m/s}$; $t_1 = 2{,}667\,\text{s}$, $t_2 = 8{,}0\,\text{s}$; $v_\text{ka} = 0{,}40\,\text{m/s}$, path $20\,\text{m}$, mean speed $2{,}0\,\text{m/s}$; s8 $\pm 2{,}0\,\text{m/s}$, $4{,}0\,\text{s}$, $12\,\text{m}$ (also with B's equation), d $5{,}33\,\text{s}$, $14{,}67\,\text{m}$. All agree; the relative tolerances accept the two-figure roundings.
+- Physics: slope = velocity in uniform motion, sign = direction, displacement vs distance and why mean speed ≥ |mean velocity| (equal only without reversal) are right; meeting condition and closing speed right; the corners of the s7 graph are an idealisation the text states ("kussakin vaiheessa liike on tasaista"). Scope FY1/FY4 kinematics.
+- Rubrics: every criterion asks only what its part asks and the solution shows; criterion points equal part points (s7 3+3+4+4, s8 4+5+2+4); common mistakes and Hyväksytään myös right.
+- Figures: neither marks a slope, crossing, path or mean value.
+- Intro: the count now says eight, which matches the set (8 tasks, 124 points).
+- `practice.py check` OK in all three languages; hash the same at start and end.
