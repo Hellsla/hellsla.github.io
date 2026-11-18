@@ -12,6 +12,7 @@ The list is one ordered list with no subheadings (teacher's brief); a book with 
 import json, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
+import page_art
 
 PAGE = "lukuvinkit.html"
 BOOK_KEYS = {"title", "url", "author", "language", "level", "loan", "text", "courses"}
@@ -61,7 +62,7 @@ def body(T, lang):
         items += (f'<li class="book"><h2 class="book-title"><a href="{esc(b["url"])}" rel="noopener">{esc(b["title"])}</a></h2>'
                   f'<p class="book-author">{esc(b["author"])}</p>{tag}<p class="book-text">{esc(b["text"])}</p>'
                   f'<dl class="book-facts">{facts}</dl></li>')
-    return (f'<span class="eyebrow">{esc(d["subtitle"])}</span><h1>{esc(d["title"])}</h1>'
+    return (f'<div class="page-head"><div><span class="eyebrow">{esc(d["subtitle"])}</span><h1>{esc(d["title"])}</h1></div>{page_art.svg("read", 88)}</div>'
             + "".join(f'<p class="{"lead" if i == 0 else "reading-intro"}">{esc(p)}</p>' for i, p in enumerate(d["intro"]))
             + f'<p class="reading-list-lead">{esc(d["list_lead"])}</p>'
             + f'<p class="reading-loan-note"><span class="book-loan">{esc(T("site.reading_loan"))}</span> {esc(d["loan_note"])}</p>'
