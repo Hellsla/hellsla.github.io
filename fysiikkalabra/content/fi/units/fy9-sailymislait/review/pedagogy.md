@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 12315fb70075c238
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 831c7eb12c2a93c2
+SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; fi checked.
 
 ## Blocking
 - (none)
 
 ## Polish
-- B: sovella/tasks.json quotes the group's conclusion with "muuttuu lämmöksi ja ääneksi" (kept on purpose), while the model answer and criterion now answer with "sisäenergiaksi". A half-sentence bridge in solutions.md would help: "Ryhmän ‘lämmöksi’ tarkoittaa kärryjen ja ympäristön sisäenergiaa."
+- Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
 
 ## Checked
-- unit.md, Yleisiä virheitä: "Liikemäärä ei muutu sisäenergiaksi: sisäenergiaksi muuttuu liike-energiaa." More precise than before (names which energy) and consistent with the third bullet of the same list.
-- sovella/solutions.md Mallivastaus and tasks.json criterion (1 p): both carry P1, say the same thing, criterion still observable; the rest of the answer (vierimisvastus, −12 % / −3 %) untouched.
-- Checked that the quoted misconception in the task text stayed as it was.
-- Item 19: this unit's diff holds no added task.
+- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
+- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
+- Hash at start and end identical.

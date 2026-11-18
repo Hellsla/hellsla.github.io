@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dccc950751fa014f
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 4cb6396da76519c3
+SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; fi-easy checked.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
 
 ## Checked
-- sovella/solutions.md Mallivastaus, tasks.json criterion (1 p, still observable and matching the model answer) and unit.md "Yleisiä virheitä": the three sentences say the same thing in the same words (sisäenergiaksi muuttuu liike-energiaa, ei liikemäärää), and agree with the neighbouring bullet on friction. Grammar checked.
-- Searched the unit for remaining "lämmöksi": none. No task added in fi-easy.
+- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
+- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
+- Hash at start and end identical.

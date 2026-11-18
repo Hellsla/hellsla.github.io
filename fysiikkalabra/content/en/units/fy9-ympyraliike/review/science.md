@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 15f19034f31ca8a5
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: c0ad285a9610c83b
+SCOPE: delta: s9 "wire" -> "cable" in en sovella tasks.json and solutions.md (match fy5-2/kyltti figure alt text). Other tasks not re-judged.
 
 ## Blocking
-- (none)
+- None. Round 2 Blocking (alt text "cable" vs task "wire") is resolved: no "wire" remains in en tasks.json or solutions.md; figure label vaijeri = "cable".
 
 ## Polish
-- C: s7 b reasonableness: the 0.9 % difference comes almost wholly from the period (a 400 km orbit has T = 92.4 min, and (92.4 : 92)^2 = 1.009); "and by the height chosen for the model together" is harmless, since the two given values are simply not an exactly matching pair.
+- Round 1 Polish stays recorded (s9 b 331 N vs 330 N).
+- Unit chart "normal acceleration" (unit.md, figures.json glossary) unchanged, outside this delta.
 
 ## Checked
-- s7 a: the new sentence says correctly that 370-460 km is the range in which the altitude is kept over time and not a variation within one orbit; 90 km : 6771 km = 1.3 %, and the conclusion (circular orbit is a good model) still follows.
-- s7 b: recomputed a_n = 4 pi^2 r : T^2 = 8.773 m/s^2, field strength 8.69 m/s^2, difference 0.9 %; the corrected explanation is consistent with these.
-- s7 e: the angle is now defined (at the centre of the Earth, from the direction pointing straight away from the Sun). For a cylindrical shadow the station is at its edge when r sin(theta) = R, so the statement is right; theta = 70.2 degrees, 2 theta : 360 = 39 %, 35.9 min, 84 kW : 0.61 = 138 kW, all as in the text.
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- Grammar of "a cable runs", "the force in the cable", "the cable withstands", "fixed ... higher up" reads naturally in s9 a, b, d and solutions.
+- Physics and numbers unchanged (191 N, 380 N, 270 N, 29 %, 600 N limit, 19.5 kg).
+- Hash identical at start and end (c0ad285a9610c83b).

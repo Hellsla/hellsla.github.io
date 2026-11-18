@@ -1,20 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 3cec58093328684c
+CONTENT-HASH: 0d9f6781a76891b9
 
 ## Blocking
 
 ## Polish
-- solutions.md (L3-04 c and Järkevyys) — the impact speed at 80 km/h is $14{,}31\,\text{m/s} = 51{,}5\,\text{km/h}$; "noin 51 km/h" — "noin 51–52 km/h" would be exact.
-- solutions.md (L2-10 Periaate) — "vain yksi vaakasuora voima: kitka" assumes air resistance is neglected; add "kun ilmanvastus jätetään huomiotta" (level C).
-- exercises.json L2-10 — the answer field (69,4 km/h) follows the calculator's parameters read on 16.11.2026; if the calculator changes, the field and answers.py must follow.
+- content/fi-easy/FY4/fy4-11/exercises/solutions.md:204 (L3 two cars, Kaava) — "Autot eivät törmää, jos $d$ ja edellä ajavan pysähtymiskohta yltävät takana ajavan pysähtymiskohtaan" is hard to parse; say "Takana ajava ei törmää, jos se pysähtyy viimeistään edellä ajavan pysähtymiskohtaan, eli $d + s_1 \ge s_2$; rajatapauksessa $d + s_1 = s_2$."
+- solutions.md:87 (Kaava) — "Lisäksi Jarrutusmatka" has a capital mid-sentence.
+- solutions.md:215 (L3-04 Kaava) — the new derivation is followed by "$t_\text{r}$ = leikkauskohta" as a bare fragment; "Suoran leikkauskohta pystyakselilla on $t_\text{r}$ ja kulmakerroin $\tfrac{1}{2a}$" ties it to the line just derived.
+- solutions.md:135, 152 — two equations run together with only a full stop or "joten … joten"; a linking word ("Siksi") reads better.
+- Earlier polish (L3-04 51–52 km/h; L2-10 air resistance) still open; not part of this change.
 
 ## Checked
-- Diff since the passed version (bab8736584): only solutions.md of L2-10, Vastaus split into paragraphs before "Lisäksi: a)", "b)", "d)", "e)"; whitespace-normalised text identical to the passed version; exercises.json and answers.py unchanged.
-- All 22 numeric answers recomputed in one script with my own formulas (L2-05 a = 7,85; L2-06 60,0 km/h; L3-01 36,7 km/h; L3-02 11 253 N; L3-03 35,9 m; L3-04 fit t_r = 1,21 s, a = 5,10 m/s², 65,9 km/h; L3-05 18 kN): all inside tolerance and equal to answers.py.
-- L2-10 b: 6,86; 15,43; 27,43; 42,87 m round to the calculator's 7, 15, 27, 43 m; 40 → 80 km/h four-fold.
-- L2-10 c: 49,66 m < 50 m, margin 0,3 m not relied on (safe side); 100 km/h: v = 19,28 m/s = 69,4 km/h; rounded 28 m gives 69,8 km/h, inside 0.03.
-- L2-10 d: 186,8 m on ice, six-fold braking distance, μ = 0,92 and 0,15 from ΣF = ma; e: ABS cannot raise μ, 1,25² = 1,56, calculator 27 → 43 m. No "muuttuu lämmöksi".
-- Source values (1 s; 9 and 1,5 m/s²; rounding to a metre) exactly as in the coordinator's record; solution dated and called an example.
-- L2-08: one correct option (2 : 4 = 0,50); L1-06, L1-07 one correct option each, feedback right.
-- Figures ex-tv-jarrutus (45 m) and ex-tv-tyyny (10,5 kN) readable at grid crossings.
-- Hash the same at the start and the end.
+- Hash 0d9f6781a76891b9 at the start and the end; since 062f457c28^ only solutions.md changed: `**Kaava:**` lines plus two Sijoitus lines (L3 airbag/crumple 0,600 m and the μ = 0,8 braking task) reordered to substitute into the final symbolic form; numbers, answers, tolerances, tasks, ids, exercises.json and answers.py unchanged.
+- Recomputed the two reordered Sijoitus lines: $70{,}0 \cdot 13{,}89^2 / 1{,}200 = 11\,253\,\text{N}$, $\Delta t = 0{,}08640\,\text{s}$; $22{,}22^2/(2 \cdot 0{,}8 \cdot 9{,}81) = 31{,}5\,\text{m}$, $a = 7{,}85\,\text{m/s}^2$: as before.
+- Braking distance now derived from $s_\text{j} = \tfrac12 v_0 t_\text{j}$ and $t_\text{j} = v_0/a$ as in the brief's lesson; $a = \mu g$ from $\Sigma F = ma$, $F_\mu = \mu N$, $N = mg$ (level road stated in the tasks).
+- Impulse steps start from $I = F\Delta t$, $p = mv$, $I = \Delta p$; $F_\text{ka} = m\Delta v/\Delta t$ as the lesson.
+- L3 30 km/h task: $v_0^2/(2a) = (d - v_0 t_\text{r}) + v^2/(2a)$ correctly reasoned (constant deceleration); consistent with Sijoitus.
+- L3-04 quadratic $\tfrac{1}{2a}v^2 + t_\text{r} v - d = 0$, positive root right.
+- Data task: $\Sigma F = ma$, $a = \Delta v/\Delta t$ → $F = m\Delta v/\Delta t$ per interval; valid.
+- Two-cars rajatapaus $d = v_0 t_\text{r} + v_0^2/(2a_2) - v_0^2/(2a_1)$ unchanged and matches Sijoitus.
+- Every Sijoitus substitutes into the last symbolic form shown.
+- Captures: none opened (fi-easy judged from text and the packet).

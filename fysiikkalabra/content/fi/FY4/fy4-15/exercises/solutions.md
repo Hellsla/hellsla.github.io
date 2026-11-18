@@ -2,7 +2,7 @@
 **Annettu:** putouskorkeus $h = 15{,}0\,\text{m}$, virtaama $Q = 120\,\text{m}^3\text{/s}$, hyötysuhde $\eta = 0{,}900$; veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** sähköteho $P$ yksikössä $\text{MW}$
 **Periaate:** Turbiinien läpi putoava vesi menettää potentiaalienergiaa $mgh$, ja sekunnissa putoaa massa $\rho Q$. Voimala muuttaa tästä tehosta sähköksi osuuden $\eta$, joten käytetään vesivoimalan tehon kaavaa.
-**Kaava:** $P = \eta\rho Q g h$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ ja $\eta = \dfrac{P}{P_\text{o}}$, joten $P = \eta P_\text{o} = \eta\rho Q g h$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 15{,}0\,\text{m} \\ &= 15\,892\,200\,\text{W} \\ &\approx 15{,}9\,\text{MW} \end{aligned}$$
 **Vastaus:** $15{,}9\,\text{MW}$, kolme merkitsevää numeroa kuten putouskorkeudessa $15{,}0\,\text{m}$, virtaamassa $120\,\text{m}^3\text{/s}$ ja hyötysuhteessa $0{,}900$.
@@ -32,7 +32,7 @@
 **Annettu:** roottorin pyyhkäisemä pinta-ala $A = 1500\,\text{m}^2$, tuulen nopeus $v = 8{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$
 **Kysytty:** tuulen teho $P_\text{tuuli}$ yksikössä $\text{kW}$
 **Periaate:** Ajassa $t$ häiriötön tuuli kuljettaisi pyyhkäisypinta-alan läpi ilmalieriön, jonka massa on $m = \rho A v t$ ja liike-energia $\tfrac{1}{2}mv^2$. Tuulen teho on tämä liike-energia jaettuna ajalla. Hyötysuhdetta ei tarvita, koska kysytään tuulen tehoa, ei sähkötehoa.
-**Kaava:** $P_\text{tuuli} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, joten $P_\text{tuuli} = \tfrac{1}{2}\rho A v^3$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$ ja $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, joten $P_{\text{tuuli}} = \tfrac{1}{2}\rho A v^3$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} &P_\text{tuuli} \\ &= \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \\ &\cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 480\,000\,\text{W} \\ &= 480\,\text{kW} \end{aligned}$$
 **Vastaus:** $480\,\text{kW}$ eli $4{,}8 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten tuulen nopeudessa $8{,}0\,\text{m/s}$.
@@ -52,7 +52,7 @@
 **Annettu:** sähköteho $P = 10{,}0\,\text{MW}$, putouskorkeus $h = 12{,}0\,\text{m}$, hyötysuhde $\eta = 0{,}880$; veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** virtaama $Q$ yksikössä $\text{m}^3\text{/s}$
 **Periaate:** Vesi menettää pudotessaan potentiaalienergiaa, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Vesivoimalan tehon kaavasta ratkaistaan virtaama, joka antaa halutun tehon.
-**Kaava:** $P = \eta\rho Q g h$, joten $Q = \dfrac{P}{\eta\rho g h}$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ ja $\eta = \dfrac{P}{P_\text{o}}$, joten $P = \eta P_\text{o} = \eta\rho Q g h$, josta $Q = \dfrac{P}{\eta\rho g h}$
 **Muunnokset:** $P = 10{,}0\,\text{MW} = 10{,}0 \cdot 10^{6}\,\text{W}$
 **Sijoitus:** Suureet ovat SI-yksiköissä, ja $\tfrac{\text{W}}{\text{kg/m}^3 \cdot \text{m/s}^2 \cdot \text{m}} = \tfrac{\text{m}^3}{\text{s}}$, joten $Q = \dfrac{10{,}0 \cdot 10^{6}}{0{,}880 \cdot 1000 \cdot 9{,}81 \cdot 12{,}0}\,\tfrac{\text{m}^3}{\text{s}} = 96{,}53\,\tfrac{\text{m}^3}{\text{s}}$
 **Vastaus:** $96{,}5\,\text{m}^3\text{/s}$, kolme merkitsevää numeroa kuten tehossa $10{,}0\,\text{MW}$, putouskorkeudessa $12{,}0\,\text{m}$ ja hyötysuhteessa $0{,}880$.
@@ -62,7 +62,7 @@
 **Annettu:** roottorin halkaisija $d = 82\,\text{m}$, tuulen nopeus $v = 8{,}0\,\text{m/s}$, sähköteho $P = 758\,\text{kW}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$
 **Kysytty:** sähköksi muuttuva osuus eli hyötysuhde $\eta$ prosentteina
 **Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi sekunnissa liike-energian $\tfrac{1}{2}\rho A v^3$, joka on voimalan vertailuteho. Voimala muuttaa siitä sähköksi osuuden $\eta$, joten osuus saadaan tuulivoimalan tehon kaavasta.
-**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$, joten $\eta = \dfrac{2P}{\rho A v^3}$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$, josta $\eta = \dfrac{2P}{\rho A v^3}$
 **Muunnokset:** Säde $r = 82\,\text{m} : 2 = 41\,\text{m}$ ja $P = 758\,\text{kW} = 758\,000\,\text{W}$.
 **Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $\eta = \dfrac{2 \cdot 758\,000\,\text{W}}{1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281{,}0\,\text{m}^2 \cdot \left(8{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3} = 0{,}4485$
 **Vastaus:** noin $45\,\%$, kaksi merkitsevää numeroa kuten halkaisijassa $82\,\text{m}$ ja tuulen nopeudessa $8{,}0\,\text{m/s}$.
@@ -72,7 +72,7 @@
 **Annettu:** virtaama $Q = 850\,\textsf{l}\text{/s}$, putouskorkeus $h = 6{,}5\,\text{m}$, hyötysuhde $\eta = 0{,}75$; veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** sähköteho $P$ yksikössä $\text{kW}$
 **Periaate:** Turbiinin läpi putoava vesi menettää potentiaalienergiaa, ja sekunnissa putoaa massa $\rho Q$. Voimala muuttaa tästä tehosta sähköksi osuuden $\eta$, joten käytetään vesivoimalan tehon kaavaa.
-**Kaava:** $P = \eta\rho Q g h$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ ja $\eta = \dfrac{P}{P_\text{o}}$, joten $P = \eta P_\text{o} = \eta\rho Q g h$
 **Muunnokset:** $850\,\textsf{l} = 850 \cdot 0{,}001\,\text{m}^3 = 0{,}850\,\text{m}^3$, joten $Q = 0{,}850\,\text{m}^3\text{/s}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 0{,}850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 6{,}5\,\text{m} \\ &= 40\,650\,\text{W} \\ &\approx 41\,\text{kW} \end{aligned}$$
 **Vastaus:** $41\,\text{kW}$, kaksi merkitsevää numeroa kuten putouskorkeudessa $6{,}5\,\text{m}$ ja hyötysuhteessa $0{,}75$.
@@ -82,7 +82,7 @@
 **Annettu:** putouskorkeus $h = 9{,}50\,\text{m}$, virtaama $Q = 3{,}20\,\text{m}^3\text{/s}$, hyötysuhde $\eta = 0{,}800$, aika $t = 24{,}0\,\text{h}$; veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** sähköenergia $E$ yksikössä $\text{MWh}$
 **Periaate:** Ensin lasketaan sähköteho vesivoimalan tehon kaavasta, koska putoavan veden potentiaalienergiasta muuttuu sähköksi osuus $\eta$. Teho pysyy vakiona, kun virtaama pysyy samana, joten energia on teho kertaa aika.
-**Kaava:** $P = \eta\rho Q g h$ ja $E = Pt$, joten $E = \eta\rho Q g h t$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ ja $\eta = \dfrac{P}{P_\text{o}}$, joten $P = \eta P_\text{o} = \eta\rho Q g h$, $E = Pt$, joten $E = \eta\rho Q g h t$
 **Muunnokset:** Teho lasketaan watteina ja muunnetaan megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$; aika pidetään tunteina, jolloin energia saadaan megawattitunteina.
 **Sijoitus:** $$\begin{aligned} &P \\ &= 0{,}800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 3{,}20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 9{,}50\,\text{m} \\ &= 238\,579\,\text{W} \end{aligned}$$ ja $E = 0{,}238\,579\,\text{MW} \cdot 24{,}0\,\text{h} = 5{,}7259\,\text{MWh}$
 **Vastaus:** $5{,}73\,\text{MWh}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -92,7 +92,7 @@
 **Annettu:** tuulen nopeus ennen $v_1 = 6{,}0\,\text{m/s}$ ja jälkeen $v_2 = 9{,}0\,\text{m/s}$; roottori ja hyötysuhde ovat samat, eikä voimala saavuta nimellistehoaan
 **Kysytty:** kuinka monta kertaa suurempi sähköteho $P_2$ on kuin $P_1$, suhdeluku $x$
 **Periaate:** Sähköteho on osuus $\eta$ häiriöttömän tuulen sekunnissa pyyhkäisypinta-alan läpi kuljettaman ilman liike-energiasta. Kun tuuli on nopeampi, ilmaa virtaa sekunnissa enemmän suhteessa $v$ ja jokaisella kilogrammalla on liike-energiaa enemmän suhteessa $v^2$, joten teho on verrannollinen kuutioon $v^3$, kun $\eta$, $\rho$ ja $A$ pysyvät samoina.
-**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$, joten $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, joten $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
 **Muunnokset:** Kumpikin nopeus on samassa yksikössä, joten yksikkö supistuu eikä muunnoksia tarvita.
 **Sijoitus:** $x = \left(\dfrac{9{,}0\,\text{m/s}}{6{,}0\,\text{m/s}}\right)^3 = 1{,}5^3 = 3{,}375$
 **Vastaus:** noin $3{,}4$ kertaa suurempi, kaksi merkitsevää numeroa kuten tuulen nopeuksissa $6{,}0\,\text{m/s}$ ja $9{,}0\,\text{m/s}$.
@@ -102,7 +102,7 @@
 **Annettu:** vanhan roottorin halkaisija $d_1 = 82\,\text{m}$, uuden $d_2 = 162\,\text{m}$; tuulen nopeus, ilman tiheys ja hyötysuhde ovat samat, eikä kumpikaan saavuta nimellistehoaan
 **Kysytty:** kuinka monta kertaa suurempi uuden voimalan sähköteho $P_2$ on kuin vanhan $P_1$, suhdeluku $x$
 **Periaate:** Samalla tuulen nopeudella häiriötön tuuli kuljettaa jokaisen roottorin pyyhkäisypinta-alan läpi sekunnissa ilmalieriön, jonka massa on verrannollinen roottorin pinta-alaan $A = \pi r^2$. Jokaisella ilmakilogrammalla on sama liike-energia, joten teho on verrannollinen pinta-alaan ja siten halkaisijan neliöön.
-**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi\left(\tfrac{d}{2}\right)^2$, joten $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi\left(\tfrac{d}{2}\right)^2$, joten $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
 **Muunnokset:** Halkaisijat ovat samassa yksikössä, joten yksikkö supistuu eikä muunnoksia tarvita.
 **Sijoitus:** $x = \left(\dfrac{162\,\text{m}}{82\,\text{m}}\right)^2 = 1{,}9756^2 = 3{,}903$
 **Vastaus:** noin $3{,}9$ kertaa suurempi, kaksi merkitsevää numeroa kuten halkaisijassa $82\,\text{m}$.
@@ -128,7 +128,7 @@
 **Annettu:** virtaama $Q = 35{,}0\,\text{m}^3\text{/s}$, putouskorkeus $h = 8{,}50\,\text{m}$; veden tiheys $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** veden tuoma teho $P_\text{o}$ yksikössä $\text{MW}$
 **Periaate:** Sekunnissa turbiinien läpi putoaa vesimassa $\rho Q$, ja jokainen kilogramma menettää potentiaalienergiaa $gh$. Hyötysuhdetta ei oteta huomioon, joten kysytty teho on potentiaalienergian pienenemisnopeus.
-**Kaava:** $P_\text{o} = \rho Q g h$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$ ja $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t}$, joten $P_\text{o} = \rho Q g h$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten teho saadaan watteina; lopuksi $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} &P_\text{o} \\ &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35{,}0\,\tfrac{\text{m}^3}{\text{s}} \\ &\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8{,}50\,\text{m} \\ &= 2\,918\,475\,\text{W} \\ &\approx 2{,}92\,\text{MW} \end{aligned}$$
 **Vastaus:** $2{,}92\,\text{MW}$, kolme merkitsevää numeroa kuten virtaamassa $35{,}0\,\text{m}^3\text{/s}$ ja putouskorkeudessa $8{,}50\,\text{m}$.
@@ -158,7 +158,7 @@
 **Annettu:** virtaamat huhtikuusta syyskuuhun $85$, $120$, $45$, $30$, $28$ ja $40\,\text{m}^3\text{/s}$ (esimerkkiaineisto), putouskorkeus $h = 9{,}0\,\text{m}$, hyötysuhde $\eta = 0{,}85$, kuukauden pituus $30\,\text{vrk}$; $\rho = 1000\,\text{kg/m}^3$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) sähköenergia $E$ yksikössä $\text{GWh}$; b) toukokuun ja elokuun tehojen suhde sekä selitys vaihtelulle
 **Periaate:** Vesivoimalan teho on kuukauden virtaamalla $P = \eta\rho Q g h$. Koska $\eta$, $\rho$ ja $h$ ovat vakioita, teho on verrannollinen virtaamaan. Energia on teho kertaa aika, ja kullakin kuukaudella on sama pituus, joten energia saadaan summaamalla kuukausien tehot ja kertomalla yhden kuukauden pituudella.
-**Kaava:** $P = \eta\rho Q g h$ ja $E = Pt$, joten $E = \eta\rho g h\,\left(\sum Q\right) t$
+**Kaava:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ ja $\eta = \dfrac{P}{P_\text{o}}$, joten $P = \eta P_\text{o} = \eta\rho Q g h$, $E = Pt$, joten $E = \eta\rho g h\,\left(\sum Q\right) t$
 **Muunnokset:** Kuukauden pituus on $t = 30 \cdot 24\,\text{h} = 720\,\text{h}$. Teho lasketaan watteina ja muunnetaan megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$, jolloin energia saadaan megawattitunteina; lopuksi $1\,\text{GWh} = 1000\,\text{MWh}$.
 **Sijoitus:** Virtaamien summa on $$\begin{aligned} &85 + 120 + 45 + 30 \\ &+ 28 + 40 \\ &= 348\,\text{m}^3\text{/s} \end{aligned}$$. Kuukausitehojen summa on
 $$\begin{aligned}\textstyle\sum P &= 0{,}85 \cdot 1000 \cdot 9{,}81 \cdot 9{,}0 \cdot 348\,\text{W} \\ &= 26{,}12\,\text{MW}\end{aligned}$$
@@ -172,7 +172,7 @@ $$\begin{aligned}E &= 26{,}12\,\text{MW} \cdot 720\,\text{h} \\ &= 18\,804\,\tex
 **Annettu:** halkaisija $d = 60\,\text{m}$, tuulen nopeus $v = 7{,}0\,\text{m/s}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$, hyötysuhde $\eta = 0{,}40$; oppilaan tulos $4{,}9\,\text{kW}$
 **Kysytty:** oppilaan virhe ja oikea sähköteho $P$ yksikössä $\text{kW}$
 **Periaate:** Häiriötön tuuli kuljettaa pyyhkäisypinta-alan läpi sekunnissa ilmaa, jonka massa on verrannollinen nopeuteen $v$, ja jokaisen ilmakilogramman liike-energia on verrannollinen nopeuden neliöön $v^2$. Tuulen teho on siksi verrannollinen nopeuden kolmanteen potenssiin $v^3$. Oppilas käytti nopeutta ensimmäisessä potenssissa.
-**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$
 **Muunnokset:** Säde on $r = 60\,\text{m} : 2 = 30\,\text{m}$. Pinta-ala on $A = \pi \cdot (30\,\text{m})^2 = 2827\,\text{m}^2$, kuten oppilaalla. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** Oikea teho on
 $$\begin{aligned}P &= 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \\ &\quad \cdot 2827\,\text{m}^2 \cdot \left(7{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 242\,452\,\text{W}\end{aligned}$$
@@ -184,7 +184,7 @@ $$\begin{aligned}P &= 0{,}5 \cdot 0{,}40 \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m
 **Annettu:** taulukko: nopeudet $v = 4$–$9\,\text{m/s}$ ja tehot $P = 80$–$905\,\text{kW}$ (esimerkkiaineisto), halkaisija $d = 80\,\text{m}$, ilman tiheys $\rho = 1{,}25\,\text{kg/m}^3$, nimellisteho $2{,}0\,\text{MW}$
 **Kysytty:** a) onko $P \propto v^3$; b) hyötysuhde $\eta$ prosentteina; c) mallin teho nopeudella $13\,\text{m/s}$ ja sen vertaus nimellistehoon
 **Periaate:** Jos teho noudattaa mallia $P = k v^3$, suhde $P/v^3 = k$ on vakio. Tuulivoimalan kaavassa $P = \tfrac{1}{2}\eta\rho A v^3$ vakio on $k = \tfrac{1}{2}\eta\rho A$, joten hyötysuhde saadaan vakiosta $k$, kun roottorin pinta-ala tunnetaan.
-**Kaava:** $k = \dfrac{P}{v^3}$ ja $k = \tfrac{1}{2}\eta\rho A$, joten $\eta = \dfrac{2k}{\rho A}$ ja $A = \pi r^2$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, $k = \dfrac{P}{v^3} = \tfrac{1}{2}\eta\rho A$, joten $\eta = \dfrac{2k}{\rho A}$ ja $A = \pi r^2$
 **Muunnokset:** Säde on $r = 80\,\text{m} : 2 = 40\,\text{m}$, ja $A = \pi \cdot (40\,\text{m})^2 = 5027\,\text{m}^2$. Suhteet lasketaan yksikössä $\text{kW}/(\text{m/s})^3$; keskiarvo muunnetaan watteihin, $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** Suhteet $P/v^3$ nopeuksilla $4$–$9\,\text{m/s}$ ovat $1{,}250$, $1{,}240$, $1{,}273$, $1{,}239$, $1{,}270$ ja $1{,}241$ yksikössä $\tfrac{\text{kW}}{(\text{m/s})^3}$.
 Suhteiden summa on $7{,}513$, joten keskiarvo on $k_\text{ka} = 7{,}513 : 6 = 1{,}252\,\tfrac{\text{kW}}{(\text{m/s})^3} = 1252\,\tfrac{\text{W}}{(\text{m/s})^3}$. Hyötysuhde on
@@ -248,7 +248,7 @@ Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siit�
 **Annettu:** roottorin halkaisija $d = 82\,\text{m}$, tuulen nopeus $v = 9{,}0\,\text{m/s}$, hyötysuhde $\eta = 0{,}45$; MAFY-taulukosta (*Tiheyksiä: Kaasujen tiheyksiä*) ilman tiheys lämpötilassa $0\,{}^\circ\text{C}$ on $\rho = 1{,}29\,\text{kg/m}^3$
 **Kysytty:** sähköteho $P$ yksikössä $\text{kW}$
 **Periaate:** Häiriötön tuuli kuljettaa roottorin pyyhkäisypinta-alan läpi tehon $\tfrac{1}{2}\rho A v^3$, ja voimala muuttaa siitä sähköksi osuuden $\eta$. Kylmä ilma on tiheämpää kuin luvussa käytetty $1{,}25\,\text{kg/m}^3$, joten taulukon tiheys sijoitetaan kaavaan.
-**Kaava:** $P = \tfrac{1}{2}\eta\rho A v^3$ ja $A = \pi r^2$, joten $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
+**Kaava:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{tuuli}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ ja $\eta = \dfrac{P}{P_{\text{tuuli}}}$, joten $P = \eta P_{\text{tuuli}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$, joten $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
 **Muunnokset:** Säde $r = 82\,\text{m} : 2 = 41\,\text{m}$; lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $A = \pi \cdot (41\,\text{m})^2 = 5281{,}0\,\text{m}^2$ ja $$\begin{aligned} &P \\ &= \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 5281{,}0\,\text{m}^2 \cdot \left(9{,}0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 1\,117\,422\,\text{W} \\ &\approx 1100\,\text{kW} \end{aligned}$$
 **Vastaus:** $1100\,\text{kW}$ eli noin $1{,}1\,\text{MW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $0{,}45$ ja tuulen nopeudessa $9{,}0\,\text{m/s}$.

@@ -74,9 +74,9 @@
 **Annettu:** alkunopeus $v_0 = 15{,}0\,\text{m/s}$ ylöspäin, putoamiskiihtyvyys taulukosta $g = 9{,}81\,\text{m/s}^2$ alaspäin; ilmanvastus on pieni
 **Kysytty:** nousukorkeus $h$ heittokohdasta metreinä
 **Periaate:** Valitaan ylöspäin positiiviseksi suunnaksi. Silloin kiihtyvyys on $-g$ koko lennon ajan. Lakipisteessä nopeus on hetken nolla. Ensin ratkaistaan nousuaika ehdosta $v = 0$. Sitten ratkaistaan korkeus paikan yhtälöstä.
-**Kaava:** $v = v_0 - g\,t = 0$, joten $t = \dfrac{v_0}{g}$, ja korkeus on $h = v_0\,t - \dfrac{g\,t^2}{2}$
+**Kaava:** Ylöspäin positiiviseksi: $v = v_0 - g\,t$ ja $y = y_0 + v_0\,t - \tfrac{1}{2}\,g\,t^2$. Lakipisteessä $v = 0$, joten $t = \dfrac{v_0}{g}$. Korkeus on $h = y - y_0 = v_0\,t - \tfrac{1}{2}\,g\,t^2 = \dfrac{v_0^2}{g} - \dfrac{v_0^2}{2g}$, eli $h = \dfrac{v_0^2}{2g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
-**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 1{,}529\,\text{s}$ ja $$\begin{aligned} &h = 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} \\ &- \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot (1{,}529\,\text{s})^2 \\ &\approx 22{,}94\,\text{m} - 11{,}47\,\text{m} \\ &\approx 11{,}47\,\text{m} \end{aligned}$$
+**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 1{,}529\,\text{s}$ ja $h = \dfrac{(15{,}0\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{19{,}62\,\text{m/s}^2} \approx 11{,}47\,\text{m}$
 **Vastaus:** $11{,}5\,\text{m}$, kolme merkitsevää numeroa kuten alkunopeudessa $15{,}0\,\text{m/s}$.
 **Järkevyys:** Nousun aikana nopeus pienenee tasaisesti $15{,}0\,\text{m/s}$:sta nollaan, joten keskinopeus on $7{,}5\,\text{m/s}$ ja $7{,}5\,\text{m/s} \cdot 1{,}529\,\text{s} \approx 11{,}5\,\text{m}$. Noin kolmen kerroksen korkeus on uskottava kovalle heitolle.
 
@@ -104,7 +104,7 @@
 **Annettu:** kiihdytys $0 \to 15{,}0\,\text{m/s}$ ajassa $t_1 = 20{,}0\,\text{s}$, tasainen nopeus $v = 15{,}0\,\text{m/s}$ ajan $t_2 = 60{,}0\,\text{s}$, jarrutus nollaan ajassa $t_3 = 15{,}0\,\text{s}$
 **Kysytty:** asemien välinen matka $s$ metreinä
 **Periaate:** Juna liikkuu koko ajan samaan suuntaan, joten matka on $(t,v)$-kuvaajan alle jäävä pinta-ala. Kuvaaja koostuu kolmesta osasta: kolmio (kiihdytys), suorakulmio (tasainen nopeus) ja kolmio (jarrutus). Kiihtyvyyksiä ei tarvitse laskea. Pinta-alat saadaan suoraan nopeudesta ja ajoista.
-**Kaava:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
+**Kaava:** Matka on $(t,v)$-kuvaajan alle jäävä pinta-ala: kiihdytyksessä kolmio $\tfrac{1}{2}\,v\,t_1$, tasaisessa nopeudessa suorakulmio $v\,t_2$ ja jarrutuksessa kolmio $\tfrac{1}{2}\,v\,t_3$. Siis $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja ajat sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &s = \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} \\ &+ 15{,}0\,\text{m/s} \cdot 60{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 15{,}0\,\text{s} \\ &= 150\,\text{m} + 900\,\text{m} \\ &+ 112{,}5\,\text{m} \\ &= 1162{,}5\,\text{m} \end{aligned}$$
 **Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa. Tulos $1162{,}5\,\text{m}$ pyöristetään kolmeen merkitsevään numeroon, joten luvun lopun nolla ei ole merkitsevä; kilometreinä asia näkyy selvemmin.
@@ -114,7 +114,7 @@
 **Annettu:** sovitettu polynomi $$\begin{aligned} &y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 \\ &+ 3{,}10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1{,}20\,\text{m} \end{aligned}$$, ylöspäin positiivinen; hetki $t = 0{,}500\,\text{s}$
 **Kysytty:** pallon nopeus $v$ etumerkkeineen yksikössä $\text{m/s}$ hetkellä $0{,}500\,\text{s}$
 **Periaate:** Polynomia verrataan tasaisesti kiihtyvän liikkeen paikan yhtälöön $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. Kertoimista luetaan alkunopeus $v_0 = 3{,}10\,\text{m/s}$ ja $\tfrac{1}{2}\,a = -4{,}86\,\text{m/s}^2$. Siis $a = -9{,}72\,\text{m/s}^2$. Nopeus saadaan sitten yhtälöstä $v = v_0 + a\,t$.
-**Kaava:** Polynomin $y = A\,t^2 + B\,t + C$ kertoimista $v_0 = B$ ja $a = 2A$, joten $v = B + 2A\,t$
+**Kaava:** Paikan yhtälö on $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$ ja nopeus $v = v_0 + a\,t$. Polynomin $y = A\,t^2 + B\,t + C$ kertoimista $v_0 = B$ ja $a = 2A$, joten $v = B + 2A\,t$
 **Muunnokset:** Kertoimet ovat SI-yksiköissä ja aika sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &v = 3{,}10\,\text{m/s} \\ &+ 2 \cdot (-4{,}86\,\text{m/s}^2) \\ &\cdot 0{,}500\,\text{s} \\ &= 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} \\ &= -1{,}76\,\text{m/s} \end{aligned}$$
 **Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
@@ -130,7 +130,7 @@
 **Kysytty:** kuljettu matka $\Delta x$ metreinä
 **Periaate:** Potkulauta liikkuu koko ajan samaan suuntaan. Siksi matka on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Kuvaajan alla on suorakulmio (korkeus $v_1$) ja sen päällä kolmio (korkeus $v_2 - v_1$). Yhdessä ne ovat puolisuunnikas.
 **Kuvaajan lukeminen:** Suoran päätepisteet ovat ruudukon viivojen risteyksissä: alkupiste $(0;\, 2{,}0\,\text{m/s})$ ja loppupiste $(5{,}0\,\text{s};\, 7{,}0\,\text{m/s})$.
-**Kaava:** $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, eli nopeuksien keskiarvo kertaa aika
+**Kaava:** Matka on $(t,v)$-kuvaajan alle jäävä pinta-ala: suorakulmio $v_1\,t$ ja sen päällä kolmio $\tfrac{1}{2}\,(v_2 - v_1)\,t$. Siis $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, eli nopeuksien keskiarvo kertaa aika
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja aika sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &\Delta x = 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 5{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} \\ &= 10\,\text{m} + 12{,}5\,\text{m} \\ &= 22{,}5\,\text{m} \end{aligned}$$
 **Vastaus:** $22{,}5\,\text{m}$, kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla.
@@ -157,7 +157,7 @@
 **Kysytty:** kärryn kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Kärry lähtee levosta ja kiihtyy tasaisesti, joten $x = \tfrac{1}{2}\,a\,t^2$. Silloin $x$ on suoraan verrannollinen suureeseen $t^2$. Kun piirretään $(t^2,x)$-kuvaaja, pisteet ovat suoralla, jonka kulmakerroin on $k = \tfrac{1}{2}\,a$. Näin käyrän sovitus muuttuu suoran sovitukseksi.
 **Kuvaajan lukeminen:** Lasketaan $t^2$ jokaiselle hetkelle: $0$, $0{,}16$, $0{,}64$, $1{,}44$, $2{,}56$ ja $4{,}00$ (yksikkö $\text{s}^2$). Pisteet $(t^2,x)$ sopivat suoralle. Sovitetun suoran kulmakerroin on $k \approx 0{,}577\,\text{m/s}^2$.
-**Kaava:** $a = 2k$
+**Kaava:** Levosta lähtevälle $x = \tfrac{1}{2}\,a\,t^2$, joten $x = k\,t^2$ ja $(t^2,x)$-suoran kulmakerroin on $k = \tfrac{1}{2}\,a$. Siis $a = 2k$
 **Muunnokset:** Kulmakerroin on yksikössä $\text{m} : \text{s}^2 = \text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = 2 \cdot 0{,}577\,\text{m/s}^2 \approx 1{,}15\,\text{m/s}^2$. Tarkistus päätepisteellä: $k \approx 2{,}32\,\text{m} : 4{,}00\,\text{s}^2 = 0{,}58\,\text{m/s}^2$, joten $a \approx 1{,}16\,\text{m/s}^2$.
 **Vastaus:** $1{,}15\,\text{m/s}^2$, kolme merkitsevää numeroa kuten sovitetussa kulmakertoimessa. Mittausten hajonta rajoittaa kuitenkin tarkkuuden noin kahteen merkitsevään numeroon.
@@ -175,7 +175,7 @@ Kiihtyvyyttä ei myöskään voi olettaa vakioksi, koska juuri se tutkitaan. Val
 **Kysytty:** a) kiihtyvyys jokaisella kahden sekunnin välillä ja onko se vakio; b) kuljettu matka $s$ ajassa $8{,}0\,\text{s}$ metreinä
 **Periaate:** Auto liikkuu koko ajan samaan suuntaan. Kiihtyvyys aikavälillä on nopeuden muutos jaettuna ajalla, $a = \Delta v : \Delta t$. Jos kiihtyvyys olisi vakio, nopeus kasvaisi yhtä paljon joka välillä. Matka on $(t,v)$-kuvaajan alle jäävä pinta-ala. Oletetaan, että nopeus muuttuu tasaisesti jokaisen välin sisällä. Silloin jokaisen välin ala on puolisuunnikas: nopeuksien keskiarvo kertaa $2{,}0\,\text{s}$.
 **Kuvaajan lukeminen:** Taulukon nopeudet luetaan $(t,v)$-pisteiksi: $(0;\, 0)$, $(2{,}0\,\text{s};\, 36\,\text{km/h})$, $(4{,}0\,\text{s};\, 62\,\text{km/h})$, $(6{,}0\,\text{s};\, 83\,\text{km/h})$ ja $(8{,}0\,\text{s};\, 100\,\text{km/h})$. Kuvaaja nousee, mutta kaartuu loivemmaksi.
-**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; kokonaismatka on välien matkojen summa
+**Kaava:** Kiihtyvyys $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$. Matka on $(t,v)$-kuvaajan ala: välillä suorakulmio $v_1\,\Delta t$ ja kolmio $\tfrac{1}{2}\,(v_2 - v_1)\,\Delta t$, joten $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; kokonaismatka on välien matkojen summa
 **Muunnokset:** Muunnetaan nopeudet yksikköön $\text{m/s}$: $v = \dfrac{v_{\text{km/h}}}{3{,}6}$. Arvot ovat $0$, $10{,}0$, $17{,}2$, $23{,}1$ ja $27{,}8\,\text{m/s}$.
 **Sijoitus:** a) Kiihtyvyydet ovat ($\text{m/s}^2$) $\dfrac{10{,}0 - 0}{2{,}0} = 5{,}0$, $\dfrac{17{,}2 - 10{,}0}{2{,}0} = 3{,}6$, $\dfrac{23{,}1 - 17{,}2}{2{,}0} \approx 2{,}9$ ja $\dfrac{27{,}8 - 23{,}1}{2{,}0} \approx 2{,}4$. b) Välien matkat ovat $10{,}0\,\text{m}$, $27{,}2\,\text{m}$, $40{,}3\,\text{m}$ ja $50{,}8\,\text{m}$. Niiden summa on $128{,}3\,\text{m}$.
 **Vastaus:** a) Kiihtyvyys ei ole vakio. Se pienenee joka välillä arvosta $5{,}0\,\text{m/s}^2$ arvoon $2{,}4\,\text{m/s}^2$. Siksi $(t,v)$-kuvaaja kaartuu loivemmaksi eikä ole suora. Muutos on paljon suurempi kuin lukemisen epätarkkuus. b) Matka on noin $128\,\text{m}$, kolme merkitsevää numeroa kuten nopeuksien muunnoksessa. Kuvaaja on ylöspäin kupera. Siksi kunkin välin suora jänne kulkee käyrän alapuolella, ja todellinen matka on hieman suurempi kuin laskettu.

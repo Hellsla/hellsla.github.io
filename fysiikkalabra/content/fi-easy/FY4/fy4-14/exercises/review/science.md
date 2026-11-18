@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4de8ceed5601dd99
-Mode: full
+CONTENT-HASH: 7b61c71e80ac95f1
 
 ## Blocking
 
 ## Polish
-- solutions.md:789 (L2-04 Vastaus) — "luvut 450 N, 180 N ja 1200 kg luetaan kolminumeroisiksi": by the teacher's rule 1200 kg has four figures; the answer's three figures follow from 450 N and 180 N — name those two as the limiting data.
-- solutions.md:977 (L2-08 Järkevyys) — "Luvun kuvaajan malli" is the model $F_\text{v} = kv^2$, $k = 0{,}26\,\text{kg/m}$, which the exercise brief does not show; the sentence is right (53,2 m/s) but the student cannot recompute it — fine as a comparison, no change needed.
+- content/fi-easy/FY4/fy4-14/exercises/solutions.md (falling-body Kaava steps, e.g. @@ -41, -110, -203, -247) — "$\Sigma F = G - F_\text{v}$" presumes the positive direction down without saying so in the Kaava step; the road tasks and the up/down task name it ("Positiivinen suunta on alas"), and the same three words would make every chain self-contained.
+- solutions.md (@@ -306, b) — the sentence that justifies $a = g$ ("Ilman ilmanvastusta $\Sigma F = G = mg$ …") comes after the result it justifies; put it before $v^2 = v_0^2 + 2as$.
+- solutions.md (L2-08 Järkevyys) — the new breaks leave "Luvun kuvaajan malli antaisi … noin $53\,\text{m/s}$." as a one-sentence paragraph cut from the comparison it starts; keep it with the next sentence.
+- Earlier polish (L2-04 limiting data 450 N and 180 N) still open; not part of this change.
 
 ## Checked
-- Hash the same at the start and the end (4de8ceed5601dd99).
-- All 18 numeric answers recomputed with my own formulas in one script; all inside tolerance and equal to answers.py (L1-03 3,52 m/s² up; L1-08 911,4 N up; L2-03 14,196 m/s²; L2-05 0,1062 N; L3-03 0,4965 N; L3-04 2239,4 N = 2,78 mg; L3-05 171,55 m/s).
-- L2-08: a = (46,4 − 40,4) m/s : 4,0 s = 1,50 m/s²; F_v = 75,0 kg · 8,31 m/s² = 623,25 N = 84,7 % of 735,75 N; slopes 9,3 and 0,45 m/s² as stated; the points level off near 48 m/s (they follow v_T tanh(gt/v_T) with v_T = 48 m/s to 0,1 m/s).
-- L2-08 added sentence: the chapter model gives √(mg/k) = √(735,75 N : 0,26 kg/m) = 53,2 m/s ≈ 53 m/s for 75,0 kg; 48 m/s needs k = mg/v² = 0,32 kg/m, a larger drag area, so "leveämpi asento / väljä puku" is the right direction of the explanation.
-- Force diagrams (checklist): each lists only weight and air resistance (plus N, driving friction and rolling resistance on the road tasks); F_v opposite to the velocity in every case (up when falling, down when rising); arrow lengths agree with the motion (equal at terminal speed, F_v longer when the canopy opens); velocity and acceleration marked beside, never as forces; equations follow from the diagrams with the stated positive direction.
-- L1-06, L1-07, L2-07: exactly one correct option; distractor feedback physically right. L1-09: 1 T, 2 F, 3 T, 4 F, 5 F correct (G = 2,65 N).
-- L2-06 b: force ratio 4,0 with speed ratio 2,07 supports F_v growing about as v²; stated as an observation, not a law to compute with.
-- L3-05: 0,0140 g drop, 8,0 m/s: F_v = 1,37·10⁻⁴ N; 172 m/s = 620 km/h without air; fall time about 190 s.
-- Figure ex-tangentti: tangent through (0; 2,0) and (2,0; 15,0) has slope 6,5 m/s² and touches the tanh curve at P by construction.
-- Scope: air resistance only given or deduced from motion, as the brief says.
+- Hash 7b61c71e80ac95f1 at the start and the end; since 062f457c28^ only `**Kaava:**` lines of solutions.md changed (numbers, answers, tolerances, tasks, ids, exercises.json, answers.py unchanged); the packet's other hunk only splits a paragraph.
+- Every rewritten Kaava starts from $\Sigma F = ma$ (or $a = 0 \Rightarrow \Sigma F = 0$ at terminal speed), then $\Sigma F$ from the forces, then the asked quantity symbolically: the brief's $\overline{G} + \overline{F}_\text{v} = m\overline{a}$ in signed form.
+- Signs: rising ball $-mg - F_\text{v} = ma$ (positive up); up/down task with positive down $mg + F_\text{v} = ma_1$, $mg - F_\text{v} = ma_2$, $\Delta a = 2F_\text{v}/m$; road tasks $F - F_\text{v} - F_\text{r} = 0$ and $-F_\text{v} - F_\text{r} = ma$ (positive forward). All consistent with the force directions in the brief.
+- Halved drag after terminal speed: $a = g/2$ correct.
+- $v = \sqrt{2gh}$ now from $v^2 = v_0^2 + 2as$ with $v_0 = 0$, $a = g$; condition (no air resistance) stated.
+- Data tasks: $a$ from the slope, then $F_\text{v} = m(g - a)$; $F_\text{v} = mg$ at the end where $a = 0$.
+- Notation as in the brief's lesson ($F_\text{v}$, $G$).
+- Captures: none opened (fi-easy judged from text and the packet).

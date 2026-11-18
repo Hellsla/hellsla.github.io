@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 12315fb70075c238
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 831c7eb12c2a93c2
+SCOPE: delta: s8 d rubric detail (tasks.json): inline "W_air = 27,4 J − 33,9 J ≈ −6,5 J" became a two-row aligned display (= row, ≈ row); same numbers, order, signs, units; rest not re-judged. Language: fi.
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: s5 b model answer, changed sentence: "liike-energiasta katosi kokeessa 2 noin puolet" could read "liike-energiasta muuttui muihin muotoihin noin puolet", since the same answer argues that nothing disappears.
+- Earlier Polish stays recorded: s8 b "47 km/h" vs unrounded 45 km/h ("noin 45 km/h"); s7 d closing air-resistance remark is outside the task's assumption.
 
 ## Checked
-- solutions.md s5 b, its rubric criterion in tasks.json and unit.md Yleisiä virheitä: kinetic energy becomes internal energy and sound, momentum is not a form of energy; the unit.md sentence now names kinetic energy and agrees with the neighbouring friction bullet. The rubric criterion matches the model answer.
-- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-sailymislait` OK; hash the same at start and end.
+- E_p = 0,43 kg · 9,81 m/s² · 6,5 m ≈ 27,4 J (27,42) unchanged.
+- W_air = 27,4 J − 33,9 J ≈ −6,5 J: same operands, minus sign, unit J; only the line break before "≈" added.
+- Connector word ("ja"/"and") between two display blocks reads fine; nothing new appears.
+- Meaning equal across fi, en, fi-easy.
+- Not judged (visual role): 360 px layout.
+- Hash the same at start and end.

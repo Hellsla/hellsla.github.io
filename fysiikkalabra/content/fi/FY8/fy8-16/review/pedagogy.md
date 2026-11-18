@@ -1,8 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 93e83667c309bc1e
+CONTENT-HASH: 9ee1c56b9a430097
 ## Blocking
-- none
 ## Polish
-- none
+- "suurissa mittakaavoissa niin tasainen" is abstract for a 16-19-year-old; consider "että maailmankaikkeus näyttää joka suunnassa lähes samanlaiselta".
 ## Checked
-batch delta review: Retrieval now uses a distant galaxy's light through hydrogen gas, linking review to the lesson's redshift theme; options untouched.
+batch delta review: new paragraph on cosmic inflation after the Big Bang paragraph; short, flagged as a hypothesis and as not directly observed, bold term, consistent with the surrounding text; no tasks touch it.

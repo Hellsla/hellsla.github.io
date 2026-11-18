@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 74ac21bbfc5747a1
+CONTENT-HASH: 20fe97b046c6acc0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] lesson.md, new inflation paragraph: for S2 readers "hypoteesin" and "suurissa mittakaavoissa" could be glossed in a few words (e.g. "hypoteesi eli tieteellinen olettamus").
 
 ## Checked
-- Delta (paragraph cuts in lesson.md; one word change in the Kertaa prompt in inquiry.json): fy8-16-theory-1280-1 (Ydinajatus paragraphs, figures 6 and 8 beside/after their text, layout survived), fy8-16-stage-herata-390 (Pohdinta with the Kertaa box, phone width).
-- Prompt text "Kaukaisen galaksin valo kulkee vetykaasun läpi" reads fluently and fits the phenomenon; no plain-text quantity added.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: new Finnish paragraph on kosminen inflaatio (short, one idea, bold term, no plain quantities); fig-row-1280 capture opened, layout intact; typography re-sets render cleanly.

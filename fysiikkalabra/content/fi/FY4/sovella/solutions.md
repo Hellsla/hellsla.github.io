@@ -181,7 +181,7 @@ akselit -4
 komponentit G
 ```
 **Kuvaajan lukeminen:** Voiteen A suora kulkee pisteiden $(0\,\text{s};\ 2{,}10\,\text{m/s})$ ja $(8\,\text{s};\ 5{,}22\,\text{m/s})$ kautta, joten $a_\text{A} = \dfrac{3{,}12\,\text{m/s}}{8\,\text{s}} = 0{,}39\,\text{m/s}^2$. Voiteen B suora kulkee pisteiden $(0\,\text{s};\ 1{,}90\,\text{m/s})$ ja $(8\,\text{s};\ 3{,}86\,\text{m/s})$ kautta, joten $a_\text{B} = \dfrac{1{,}96\,\text{m/s}}{8\,\text{s}} = 0{,}245\,\text{m/s}^2$.
-**Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$ eli $mg\sin\alpha - \mu mg\cos\alpha = ma$. Massa supistuu, ja $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
+**Kaava:** Newtonin toinen laki $\Sigma F = ma$ ja liukukitka $F_\mu = \mu N$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$ eli $mg\sin\alpha - \mu mg\cos\alpha = ma$. Massa supistuu: $g\sin\alpha - \mu g\cos\alpha = a$, ja $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 **Muunnokset:** Ei tarvita, kiihtyvyydet ovat yksikössä $\text{m/s}^2$.
 **Sijoitus:** $g\sin\alpha = 9{,}81\,\text{m/s}^2 \cdot \sin 4{,}0^\circ = 0{,}684\,\text{m/s}^2$ ja $g\cos\alpha = 9{,}81\,\text{m/s}^2 \cdot \cos 4{,}0^\circ = 9{,}786\,\text{m/s}^2$. $\mu_\text{A} = \dfrac{(0{,}684 - 0{,}39)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}030$ ja $\mu_\text{B} = \dfrac{(0{,}684 - 0{,}245)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} = 0{,}045$
 **Vastaus:** $\mu_\text{A} \approx 0{,}030$ ja $\mu_\text{B} \approx 0{,}045$. Kitkakertoimella ei ole yksikköä. Kaksi merkitsevää numeroa, koska kulmakertoimet luetaan kuvaajalta noin kahden numeron tarkkuudella.
@@ -289,7 +289,7 @@ Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu pa
 **Annettu:** korkeusero lähtölavalta jarrun alkuun $h = 15{,}0\,\text{m}$, laskija lähtee levosta, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** nopeus $v$ jarrun alussa ohjaajan mallilla
 **Periaate:** Ohjaajan luku saadaan, kun kitkaa ja ilmanvastusta ei oteta huomioon. Silloin laskijaan vaikuttavat vain paino ja vaijerin voima vaunun kautta. Vaijerin voima on kohtisuorassa vaijeria vastaan eli liikettä vastaan, joten se ei tee työtä. Työtä tekee vain paino, joten mekaaninen energia säilyy: potentiaalienergia muuttuu liike-energiaksi. Vaijerin muoto ja pituus eivät silloin vaikuta loppunopeuteen, vain korkeusero.
-**Kaava:** $mgh = \tfrac{1}{2}mv^2$, josta $v = \sqrt{2gh}$
+**Kaava:** Mekaanisen energian säilyminen $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$, missä $E_\text{p} = mgh$ ja $E_\text{k} = \tfrac{1}{2}mv^2$. Lähtölavalla $E_{\text{k}0} = 0$ ja jarrun alussa (nollataso) $E_\text{p} = 0$, joten $mgh = \tfrac{1}{2}mv^2$. Massa supistuu: $v^2 = 2gh$, ja $v = \sqrt{2gh}$
 **Muunnokset:** Ei tarvita laskussa. Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m}} = \sqrt{294{,}3}\,\text{m/s} = 17{,}2\,\text{m/s}$ ja $17{,}2 \cdot 3{,}6\,\text{km/h} = 61{,}8\,\text{km/h}$
 **Vastaus:** $v \approx 17{,}2\,\text{m/s} \approx 62\,\text{km/h}$, kolme merkitsevää numeroa kuten korkeudessa $15{,}0\,\text{m}$. Ohjaajan väite perustuu siis malliin, jossa mekaaninen energia säilyy.
@@ -299,7 +299,7 @@ Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu pa
 **Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, vaijerin pituus lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja mitattu nopeus $v = 11{,}2\,\text{m/s}$
 **Kysytty:** liikettä keskimäärin vastustava voima $F_\text{vast}$
 **Periaate:** Mitattu $11{,}2\,\text{m/s} \approx 40\,\text{km/h}$ on paljon pienempi kuin a-kohdan $17{,}2\,\text{m/s}$, joten mekaaninen energia ei säily. Vaunun pyörien kitka ja ilmanvastus vastustavat liikettä koko matkan ajan ja tekevät negatiivista työtä. Mekaniikan energiaperiaatteen mukaan $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. Nollatasoksi valitaan jarrun alkukohta, jossa nopeus mitattiin. Kun vastusvoimien yhteistä vaikutusta kuvataan liikkeen suuntaa vastaan osoittavalla keskimääräisellä voimalla $F_\text{vast}$, sen työ on $W = -F_\text{vast}\,s$.
-**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $F_\text{vast} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
+**Kaava:** Mekaniikan energiaperiaate $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, missä $E_\text{p} = mgh$, $E_\text{k} = \tfrac{1}{2}mv^2$ ja $W = -F_\text{vast}\,s$. Lähtölavalla $E_{\text{k}0} = 0$ ja jarrun alussa $E_\text{p} = 0$, joten $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $F_\text{vast} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
 **Vastaus:** $F_\text{vast} \approx 29\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$.
@@ -309,7 +309,7 @@ Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu pa
 **Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja b-kohdan vastusvoiman työ $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)
 **Kysytty:** painavamman laskijan nopeus $v$ jarrun alussa ohjaajan oletuksella
 **Periaate:** Sama energiaperiaate kuin b-kohdassa, mutta nyt tuntematon on nopeus. Vastusvoiman työ on oletuksen mukaan sama kuin kevyellä laskijalla, mutta potentiaalienergia on massan mukana suurempi.
-**Kaava:** $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2\,(mgh - F_\text{vast}\,s)}{m}}$
+**Kaava:** Mekaniikan energiaperiaate samoin kuin b-kohdassa: $mgh - F_\text{vast}\,s = \tfrac{1}{2}mv^2$. Ratkaistaan $v^2 = \dfrac{2\,(mgh - F_\text{vast}\,s)}{m}$, josta $v = \sqrt{\dfrac{2\,(mgh - F_\text{vast}\,s)}{m}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $mgh = 95\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 13\,979\,\text{J}$ ja b-kohdan mukaan $F_\text{vast}\,s = 5234\,\text{J}$, joten $E_\text{k} = 13\,979\,\text{J} - 5234\,\text{J} = 8745\,\text{J}$. $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184{,}1}\,\text{m/s} = 13{,}6\,\text{m/s}$
 **Vastaus:** $v \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska massa $95\,\text{kg}$ ja vastusvoima $29\,\text{N}$ tunnetaan kahden numeron tarkkuudella.
@@ -344,7 +344,7 @@ Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu pa
 **Periaate:** Törmäyksen jälkeen autot liikkuvat yhtenä kappaleena, jonka massa on $m = m_\text{A} + m_\text{B}$. Tie on vaakasuora, joten pystysuunnassa ei ole kiihtyvyyttä ja tukivoima on yhtä suuri kuin paino, $N = mg$. Pyörät ovat lukossa, joten liukukitka on $F_\mu = \mu N = \mu mg$, ja se on ainoa vaakasuora voima.
 
 Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energiaperiaate). Saman tuloksen antaa Newtonin toinen laki: hidastuvuus on $\mu g$.
-**Kaava:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, josta $v' = \sqrt{2\mu g s}$
+**Kaava:** Energiaperiaate $E_{\text{k}0} + W = E_\text{k}$, missä $E_{\text{k}0} = \tfrac{1}{2}mv'^2$, $E_\text{k} = 0$ ja kitkan työ $W = -F_\mu s = -\mu mg\,s$. Siis $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$. Massa supistuu: $v'^2 = 2\mu g s$, ja $v' = \sqrt{2\mu g s}$
 **Muunnokset:** Ei tarvita. Massat supistuvat, joten niitä ei tarvita tässä kohdassa.
 **Sijoitus:** $v' = \sqrt{2 \cdot 0{,}75 \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}2\,\text{m}} = \sqrt{61{,}8}\,\text{m/s} = 7{,}86\,\text{m/s}$
 **Vastaus:** $v' \approx 7{,}9\,\text{m/s}$, kaksi merkitsevää numeroa kuten matkassa $4{,}2\,\text{m}$ ja kitkakertoimessa $0{,}75$.
@@ -485,7 +485,7 @@ Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energ
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Kaava:** $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Kaava:** Liikemäärän säilyminen $p_\text{ennen} = p_\text{jälkeen}$, missä $p = mv$ ja auto A on aluksi levossa: $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Muunnokset:** Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$ ja $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
 **Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei pidä paikkaansa: mallin mukaan auton B nopeus oli juuri ennen törmäystä noin $49\,\text{km/h}$ eli noin $9\,\text{km/h}$ yli rajoituksen.
@@ -495,7 +495,7 @@ Kitka tekee negatiivista työtä, kunnes liike-energia on kulunut loppuun (energ
 **Annettu:** kuljettajan massa $m = 68\,\text{kg}$, nopeuden muutos $\Delta v = v' - 0 = 7{,}86\,\text{m/s}$ ja törmäyksen kesto $\Delta t = 0{,}12\,\text{s}$
 **Kysytty:** selkänojan keskimääräinen voima $F_\text{ka}$ kuljettajaan ja sen vertailu painoon
 **Periaate:** Kuljettaja on aluksi levossa ja liikkuu törmäyksen jälkeen auton mukana nopeudella $v'$. Vaakasuunnassa hänen liikemääränsä muuttaa selkänojan voima, joten impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin kuljettajan liikemäärän muutos. Voima ei ole vakio, joten lasketaan keskimääräinen voima.
-**Kaava:** $F_\text{ka}\,\Delta t = m\,\Delta v$, josta $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, ja vertailu $\dfrac{F_\text{ka}}{mg}$
+**Kaava:** Impulssiperiaate $I = F_\text{ka}\,\Delta t = \Delta p$, missä $\Delta p = m\,\Delta v$. Siis $F_\text{ka}\,\Delta t = m\,\Delta v$, josta $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, ja vertailu $\dfrac{F_\text{ka}}{mg}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $F_\text{ka} = \dfrac{68\,\text{kg} \cdot 7{,}86\,\text{m/s}}{0{,}12\,\text{s}} = 4455\,\text{N}$ ja $\dfrac{F_\text{ka}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6{,}7$
 **Vastaus:** $F_\text{ka} \approx 4{,}5\,\text{kN}$ eli noin $6{,}7$-kertainen kuljettajan painoon verrattuna. Kaksi merkitsevää numeroa kuten törmäyksen kestossa $0{,}12\,\text{s}$.

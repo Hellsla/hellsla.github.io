@@ -8,7 +8,7 @@ G 735,8
 F_v 735,8 ylös työntö @ala
 a 0
 ```
-**Formula:** $mg - F_\text{v} = 0$, so $F_\text{v} = mg$
+**Formula:** $\Sigma F = ma$ and $a = 0$, so $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ and $F_\text{v} = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\text{v} = 75.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$
 **Answer:** $736\,\text{N}$ upward, three significant figures like the mass $75.0\,\text{kg}$.
@@ -40,7 +40,7 @@ G 5,886
 F_v 8 ylös työntö @ala
 a ylös
 ```
-**Formula:** $mg - F_\text{v} = ma$, so $a = \dfrac{mg - F_\text{v}}{m}$
+**Formula:** $\Sigma F = ma$ and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $a = \dfrac{mg - F_\text{v}}{m}$
 **Conversions:** The quantities are in SI units, and $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$, so no conversions are needed.
 **Substitution:** $a = \dfrac{0.600\,\text{kg}\cdot 9.81\,\text{m/s}^2 - 8.00\,\text{N}}{0.600\,\text{kg}} = \dfrac{5.886\,\text{N} - 8.00\,\text{N}}{0.600\,\text{kg}} = -3.523\,\text{m/s}^2$
 **Answer:** $3.52\,\text{m/s}^2$ upward, three significant figures like the mass $0.600\,\text{kg}$ and the air resistance $8.00\,\text{N}$. The minus sign tells that the acceleration points up.
@@ -85,7 +85,7 @@ F_v 18 vasen
 F_r 6,0 vasen
 a 0
 ```
-**Formula:** $F - F_\text{v} - F_\text{r} = 0$, so $F = F_\text{v} + F_\text{r}$
+**Formula:** $\Sigma F = ma$ and $a = 0$, so $\Sigma F = 0$. With forwards as positive, $\Sigma F = F - F_\text{v} - F_\text{r} = 0$ and $F = F_\text{v} + F_\text{r}$
 **Conversions:** All forces are in newtons, so no conversions are needed.
 **Substitution:** $F = 18\,\text{N} + 6.0\,\text{N} = 24\,\text{N}$
 **Answer:** $24\,\text{N}$ forward, two significant figures like the air resistance $18\,\text{N}$.
@@ -101,7 +101,7 @@ G 0,05003
 F_v 0,05003 ylös työntö @ala
 a 0
 ```
-**Formula:** $mg - F_\text{v} = 0$, so $F_\text{v} = mg$
+**Formula:** $\Sigma F = ma$ and $a = 0$, so $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ and $F_\text{v} = mg$
 **Conversions:** $5.10\,\text{g} = 5.10 : 1000\,\text{kg} = 5.10\cdot 10^{-3}\,\text{kg}$
 **Substitution:** $F_\text{v} = 5.10\cdot 10^{-3}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.050031\,\text{N}$
 **Answer:** $0.0500\,\text{N}$ or $50.0\,\text{mN}$ upward, three significant figures like the mass $5.10\,\text{g}$.
@@ -117,7 +117,7 @@ G 686,7
 F_v 266,7 ylös työntö @ala
 a alas
 ```
-**Formula:** $mg - F_\text{v} = ma$, so $F_\text{v} = mg - ma = m(g - a)$
+**Formula:** $\Sigma F = ma$ and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $F_\text{v} = mg - ma = m(g - a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $$\begin{aligned} &F_\text{v} \\ &= 70.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 6.00\,\text{m/s}^2) \\ &= 70.0\,\text{kg}\cdot 3.81\,\text{m/s}^2 \\ &= 266.7\,\text{N} \end{aligned}$$
 **Answer:** $267\,\text{N}$ upward, three significant figures like the mass $70.0\,\text{kg}$ and the acceleration $6.00\,\text{m/s}^2$.
@@ -134,7 +134,7 @@ F_v 0,25 alas työntö @ylä
 a alas
 v ylös
 ```
-**Formula:** $-mg - F_\text{v} = ma$, so $a = -\dfrac{mg + F_\text{v}}{m} = -\left(g + \dfrac{F_\text{v}}{m}\right)$
+**Formula:** $\Sigma F = ma$ and $\Sigma F = -G - F_\text{v} = -mg - F_\text{v}$, so $-mg - F_\text{v} = ma$ and $a = -\dfrac{mg + F_\text{v}}{m} = -\left(g + \dfrac{F_\text{v}}{m}\right)$
 **Conversions:** $57.0\,\text{g} = 57.0 : 1000\,\text{kg} = 0.0570\,\text{kg}$
 **Substitution:** $a = -\left(9.81\,\text{m/s}^2 + \dfrac{0.250\,\text{N}}{0.0570\,\text{kg}}\right) = -(9.81\,\text{m/s}^2 + 4.386\,\text{m/s}^2) = -14.196\,\text{m/s}^2$
 **Answer:** $14.2\,\text{m/s}^2$ downward, three significant figures like the mass $57.0\,\text{g}$ and the air resistance $0.250\,\text{N}$. The minus sign tells that the acceleration points down.
@@ -153,7 +153,7 @@ F_v 450 vasen
 F_r 180 vasen
 a vasen
 ```
-**Formula:** $-F_\text{v} - F_\text{r} = ma$, so $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
+**Formula:** $\Sigma F = ma$ and $\Sigma F = -F_\text{v} - F_\text{r}$ (positive direction forwards), so $-F_\text{v} - F_\text{r} = ma$ and $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
 **Conversions:** The speed is not needed in the calculation, so it is not converted. The forces are in newtons and the mass in kilograms.
 **Substitution:** $a = -\dfrac{450\,\text{N} + 180\,\text{N}}{1200\,\text{kg}} = -\dfrac{630\,\text{N}}{1200\,\text{kg}} = -0.525\,\text{m/s}^2$
 **Answer:** $0.525\,\text{m/s}^2$, three significant figures, when the numbers of the task $450\,\text{N}$, $180\,\text{N}$ and $1200\,\text{kg}$ are read as three-digit values.
@@ -173,7 +173,7 @@ G 706,3
 F_v 353,2 ylös työntö @ala
 a alas
 ```
-**Formula:** Before the change $F_\text{v} = mg$, so after the change $F_\text{v}' = \tfrac{1}{2}mg$. The equation of motion $mg - F_\text{v}' = ma$ gives $a = \dfrac{mg - \tfrac{1}{2}mg}{m} = \dfrac{g}{2}$
+**Formula:** Before the change $\Sigma F = 0$, so $mg - F_\text{v} = 0$ and $F_\text{v} = mg$; after the change $F_\text{v}' = \tfrac{1}{2}mg$. Newton's second law $\Sigma F = ma$ with $\Sigma F = mg - F_\text{v}'$ gives $mg - F_\text{v}' = ma$ and $a = \dfrac{mg - \tfrac{1}{2}mg}{m} = \dfrac{g}{2}$
 **Conversions:** The mass cancels out, so no conversions are needed.
 **Substitution:** $a = \dfrac{9.81\,\text{m/s}^2}{2} = 4.905\,\text{m/s}^2$
 **Answer:** $4.91\,\text{m/s}^2$ downward, three significant figures like the free-fall acceleration $9.81\,\text{m/s}^2$. The mass was not needed.
@@ -193,7 +193,7 @@ G 1,962
 F_v 0,6 ylös työntö @ala
 a alas
 ```
-**Formula:** On the way up $mg + F_\text{v} = ma_1$, so $a_1 = g + \dfrac{F_\text{v}}{m}$. On the way down $mg - F_\text{v} = ma_2$, so $a_2 = g - \dfrac{F_\text{v}}{m}$. The difference is $\Delta a = a_1 - a_2 = \dfrac{2F_\text{v}}{m}$
+**Formula:** Newton's second law $\Sigma F = ma$, positive direction down. On the way up the weight and the air resistance both point down: $\Sigma F = G + F_\text{v} = mg + F_\text{v}$, so $mg + F_\text{v} = ma_1$ and $a_1 = g + \dfrac{F_\text{v}}{m}$. On the way down the air resistance points up: $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma_2$ and $a_2 = g - \dfrac{F_\text{v}}{m}$. The difference is $\Delta a = a_1 - a_2 = \dfrac{2F_\text{v}}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Delta a = \dfrac{2\cdot 0.600\,\text{N}}{0.200\,\text{kg}} = 6.00\,\text{m/s}^2$
 **Answer:** $6.00\,\text{m/s}^2$, three significant figures like the mass $0.200\,\text{kg}$ and the air resistance $0.600\,\text{N}$.
@@ -210,7 +210,7 @@ F_v 0,4965 ylös työntö @ala
 a alas
 ```
 **Reading the graph:** The tangent starts on the vertical axis at $(0;\, 2.0\,\text{m/s})$ and passes through the grid crossing $(2.0\,\text{s};\, 15.0\,\text{m/s})$. These points are far apart and on the grid lines, so they are read accurately. The slope is read from the tangent, not from points of the curve.
-**Formula:** $a = \dfrac{\Delta v}{\Delta t}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
+**Formula:** $a = \dfrac{\Delta v}{\Delta t}$. Newton's second law: $\Sigma F = ma$, and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $F_\text{v} = mg - ma = m(g - a)$
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
 **Substitution:** $a = \dfrac{15.0\,\text{m/s} - 2.0\,\text{m/s}}{2.0\,\text{s} - 0\,\text{s}} = 6.5\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 0.150\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 6.5\,\text{m/s}^2) \\ &= 0.150\,\text{kg}\cdot 3.31\,\text{m/s}^2 \\ &= 0.4965\,\text{N} \end{aligned}$$
 **Answer:** $0.50\,\text{N}$ upward, two significant figures, because the acceleration $6.5\,\text{m/s}^2$ read from the graph is given to two digits.
@@ -255,7 +255,7 @@ F_v 1500 ylös työntö @ala
 a ylös
 v alas
 ```
-**Formula:** $\Sigma F = mg - F_\text{v}$, and the magnitude of the net force is $|\Sigma F|$
+**Formula:** $\Sigma F = G - F_\text{v}$ and $G = mg$, so $\Sigma F = mg - F_\text{v}$, and the magnitude of the net force is $|\Sigma F|$
 **Conversions:** The mass is in kilograms and the force in newtons, so no conversions are needed.
 **Substitution:** $\Sigma F = 60.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 - 1500\,\text{N} = 588.6\,\text{N} - 1500\,\text{N} = -911.4\,\text{N}$
 **Answer:** $911\,\text{N}$ upward (the minus sign tells the direction when the positive direction is down), three significant figures like the mass $60.0\,\text{kg}$.
@@ -272,7 +272,7 @@ G 0,1962
 F_v 0,1062 ylös työntö @ala
 a alas
 ```
-**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newton's second law: $\Sigma F = ma$, and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $F_\text{v} = mg - ma = m(g - a)$
 **Conversions:** $m = 20.0\,\text{g} = 20.0 \cdot 10^{-3}\,\text{kg} = 0.0200\,\text{kg}$
 **Substitution:** $a = \dfrac{5.15\,\text{m/s} - 3.35\,\text{m/s}}{0.80\,\text{s} - 0.40\,\text{s}} = 4.50\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 0.0200\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 4.50\,\text{m/s}^2) \\ &= 0.0200\,\text{kg}\cdot 5.31\,\text{m/s}^2 \\ &= 0.1062\,\text{N} \end{aligned}$$
 **Answer:** $0.106\,\text{N}$ upward, three significant figures like the mass $20.0\,\text{g}$ and the speeds.
@@ -288,7 +288,7 @@ G 0,04709
 F_v 0,04709 ylös työntö @ala
 a 0
 ```
-**Formula:** $mg - F_\text{v} = 0$, so $F_\text{v} = mg$
+**Formula:** $\Sigma F = ma$ and $a = 0$, so $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ and $F_\text{v} = mg$
 **Conversions:** $m_4 = 4.8\,\text{g} = 4.8 \cdot 10^{-3}\,\text{kg}$
 **Substitution:** a) $F_\text{v} = 4.8 \cdot 10^{-3}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.047088\,\text{N}$. b) The ratio of the air resistances is the same as the ratio of the masses: $4.8\,\text{g} : 1.2\,\text{g} = 4.0$. The ratio of the speeds is $1.49\,\text{m/s} : 0.72\,\text{m/s} = 2.1$.
 **Answer:** a) $0.047\,\text{N}$ upward, two significant figures like the mass $4.8\,\text{g}$. b) The air resistance is $4.0$ times greater, but the speed only about $2.1$ times greater. So the air resistance grows faster than the speed: when the speed doubles, the air resistance grows about fourfold.
@@ -319,7 +319,7 @@ F_v 2239 ylös työntö @ala
 a ylös
 v alas
 ```
-**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$. At the end $a = 0$, so $F_\text{v} = mg$.
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newton's second law: $\Sigma F = ma$, and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $F_\text{v} = mg - ma = m(g - a)$. At the end $a = 0$, so $\Sigma F = 0$ and $F_\text{v} = mg$.
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
 **Substitution:** a) $a = \dfrac{15.5\,\text{m/s} - 33.0\,\text{m/s}}{1.5\,\text{s} - 0.5\,\text{s}} = -17.5\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 82.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &+ 17.5\,\text{m/s}^2) \\ &= 82.0\,\text{kg}\cdot 27.31\,\text{m/s}^2 \\ &= 2239.42\,\text{N} \end{aligned}$$. b) $mg = 82.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 804.42\,\text{N}$, so $F_\text{v} : mg = 2239.42\,\text{N} : 804.42\,\text{N} = 2.78$. c) $F_\text{v} = mg = 804.42\,\text{N}$.
 **Answer:** a) $2240\,\text{N}$ upward, three significant figures like the mass $82.0\,\text{kg}$. b) The air resistance is about $2.8$ times the weight. The net force $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ points up, because the acceleration is up. The skydiver does not rise, because the net force only decreases the downward speed: the speed is positive downward at every point of the table. c) The air resistance is about $804\,\text{N}$, the size of the weight. The speed stays constant, because the weight and the air resistance cancel each other and the net force is zero.
@@ -335,7 +335,7 @@ G 1,373
 F_v 1,373 ylös työntö @ala
 a 0
 ```
-**Formula:** a) $mg - F_\text{v} = 0$, so $F_\text{v} = mg$. b) $v^2 = 2gh$, so $v = \sqrt{2gh}$.
+**Formula:** a) $\Sigma F = ma$ and $a = 0$, so $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ and $F_\text{v} = mg$. b) The motion is uniformly accelerated: $v^2 = v_0^2 + 2as$, where $v_0 = 0$, $a = g$ and $s = h$, so $v^2 = 2gh$ and $v = \sqrt{2gh}$. Without air resistance $\Sigma F = G = mg$ and $\Sigma F = ma$, so $a = g$.
 **Conversions:** $m = 0.0140\,\text{g} = 1.40 \cdot 10^{-5}\,\text{kg}$ and $h = 1.50\,\text{km} = 1500\,\text{m}$
 **Substitution:** a) $F_\text{v} = 1.40 \cdot 10^{-5}\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 1.373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171.55\,\text{m/s}$
 **Answer:** a) $1.37 \cdot 10^{-4}\,\text{N}$ upward. b) $172\,\text{m/s}$, three significant figures like the height $1.50\,\text{km}$. c) Without air resistance the speed would be about $620\,\text{km/h}$, over $20$ times the real $8.0\,\text{m/s}$, and the drop would be dangerous. As the drop falls, the air resistance grows as the speed grows until it is the size of the weight. Then the net force is zero and the speed stays constant. The weight of the drop is only about $1.4 \cdot 10^{-4}\,\text{N}$, so a small air resistance is enough to cancel it already at a small speed.
@@ -372,7 +372,7 @@ a alas
 v alas
 ```
 **Reading the graph:** We read the points $(6.0\,\text{s};\, 40.4\,\text{m/s})$ and $(10.0\,\text{s};\, 46.4\,\text{m/s})$ on both sides of the moment $8.0\,\text{s}$. The speed is still increasing, so the slope, that is the acceleration, is positive downward. The rise of the curve flattens: on the interval $0 \ldots 2.0\,\text{s}$ the slope is about $9.3\,\text{m/s}^2$, almost $g$, but on $10 \ldots 12\,\text{s}$ only about $0.5\,\text{m/s}^2$.
-**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $mg - F_\text{v} = ma$, so $F_\text{v} = m(g - a)$
+**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newton's second law: $\Sigma F = ma$, and $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, so $mg - F_\text{v} = ma$ and $F_\text{v} = mg - ma = m(g - a)$
 **Conversions:** The speeds are in $\text{m/s}$, the times in seconds and the mass in kilograms, so no conversions are needed.
 **Substitution:** a) $a = \dfrac{46.4\,\text{m/s} - 40.4\,\text{m/s}}{10.0\,\text{s} - 6.0\,\text{s}} = 1.50\,\text{m/s}^2$ and $$\begin{aligned} &F_\text{v} \\ &= 75.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 \\ &- 1.50\,\text{m/s}^2) \\ &= 75.0\,\text{kg} \cdot 8.31\,\text{m/s}^2 \\ &= 623.25\,\text{N} \end{aligned}$$. b) The weight is $G = mg = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}$, so $\dfrac{F_\text{v}}{G} = \dfrac{623.25\,\text{N}}{735.75\,\text{N}} = 0.847$
 **Answer:** a) $F_\text{v} \approx 623\,\text{N}$ upward, three significant figures like the mass $75.0\,\text{kg}$. b) The air resistance is about $85\,\%$ of the weight. The points of the graph level off near $48\,\text{m/s}$: over the last two seconds the speed increases by only $0.9\,\text{m/s}$. When the speed no longer changes, the acceleration is zero, so the net force is zero and the air resistance equals the weight, about $736\,\text{N}$.

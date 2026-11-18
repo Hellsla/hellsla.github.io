@@ -112,7 +112,7 @@
 **Annettu:** massa $m = 55{,}0\,\text{kg}$, nopeus rampin juurella $v = 7{,}00\,\text{m/s}$, korkeus ylimmässä kohdassa $h = 2{,}10\,\text{m}$, jossa nopeus on nolla, $g = 9{,}81\,\text{m/s}^2$; nollataso on rampin juuri
 **Kysytty:** muuksi energiaksi muuttunut mekaaninen energia jouleina
 **Periaate:** Ilman kitkaa ja ilmanvastusta mekaaninen energia pysyisi samana. Kitka ja ilmanvastus eivät ole konservatiivisia, ja ne muuttavat osan mekaanisesta energiasta sisäenergiaksi. Muuttunut määrä on mekaanisen energian väheneminen juurelta ylimpään kohtaan. Juurella on vain liike-energiaa ($h = 0$), ylimmässä kohdassa vain potentiaalienergiaa ($v = 0$).
-**Kaava:** $E_\text{muu} = E_\text{mek,1} - E_\text{mek,2}$, missä $E_\text{mek,1} = \tfrac{1}{2}\,mv^2$ ja $E_\text{mek,2} = m g h$. Siis $E_\text{muu} = \tfrac{1}{2}\,mv^2 - m g h$
+**Kaava:** Energiatase: $E_\text{mek,1} = E_\text{mek,2} + E_\text{muu}$, joten $E_\text{muu} = E_\text{mek,1} - E_\text{mek,2}$, missä $E_\text{mek,1} = E_\text{k} = \tfrac{1}{2}\,mv^2$ ja $E_\text{mek,2} = E_\text{p} = m g h$. Siis $E_\text{muu} = \tfrac{1}{2}\,mv^2 - m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $$\begin{aligned} &m g h \\ &= 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 2{,}10\,\text{m} \\ &\approx 1133{,}1\,\text{J} \end{aligned}$$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
 **Vastaus:** $214\,\text{J}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -200,7 +200,7 @@ E_\text{mek} &= 560\,\text{J} - 1030\,\text{J} \\
 **Kysytty:** kärryn massa $m$ yksikössä $\text{kg}$
 **Periaate:** Liike-energia on $E_\text{k} = \tfrac{1}{2}\,mv^2$. Kun $E_\text{k}$ piirretään nopeuden neliön $v^2$ funktiona, kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on $\tfrac{1}{2}\,m$. Massa saadaan siis kulmakertoimen kaksinkertaisena.
 **Kuvaajan lukeminen:** Lasketaan ensin $v^2$: $0{,}16$, $0{,}64$, $1{,}44$, $2{,}56$ ja $4{,}00\,\text{m}^2/\text{s}^2$. Piirretään pisteet $(v^2, E_\text{k})$ ja sovitetaan niihin origon kautta kulkeva suora. Suoralta luetaan kaukainen piste: kun $v^2 = 4{,}00\,\text{m}^2/\text{s}^2$, suoran arvo on noin $E_\text{k} = 1{,}04\,\text{J}$.
-**Kaava:** kulmakerroin $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$, joten $m = 2k$
+**Kaava:** liike-energia on $E_\text{k} = \tfrac{1}{2}\,mv^2$, joten kuvaajan $(v^2, E_\text{k})$ kulmakerroin on $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$ ja $m = 2k$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Kulmakertoimen yksikkö on $\text{J} : (\text{m}^2/\text{s}^2) = \text{kg}$.
 **Sijoitus:** $k = \dfrac{1{,}04\,\text{J} - 0\,\text{J}}{4{,}00\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0{,}26\,\text{kg}$, joten $m = 2 \cdot 0{,}26\,\text{kg} = 0{,}52\,\text{kg}$
 **Vastaus:** $0{,}52\,\text{kg}$, kaksi merkitsevää numeroa kuten mittausarvoissa.
@@ -210,7 +210,7 @@ E_\text{mek} &= 560\,\text{J} - 1030\,\text{J} \\
 **Annettu:** massa $m = 0{,}058\,\text{kg}$, korkeimmat kohdat $1{,}50\,\text{m}$, $1{,}09\,\text{m}$, $0{,}80\,\text{m}$, $0{,}57\,\text{m}$ ja $0{,}42\,\text{m}$ lattian yläpuolella; korkeimmassa kohdassa $v = 0$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** mekaaninen energia korkeimmissa kohdissa, keskimääräinen prosenttiosuus, neljässä ensimmäisessä pomppauksessa muuttunut energia $\Delta E$ jouleina ja tulosten riippumattomuus nollatasosta
 **Periaate:** Korkeimmassa kohdassa nopeus on nolla, joten mekaaninen energia on pelkkää potentiaalienergiaa, $E_\text{mek} = E_\text{p} = m g h$. Jos mekaaninen energia säilyisi, pallo palaisi aina samaan korkeuteen. Korkeus pienenee, joten osa mekaanisesta energiasta muuttuu muuksi energiaksi: törmäyksessä pallo ja lattia lämpenevät hieman, pallo värähtelee ja ääntä syntyy. Muuttunut määrä on mekaanisen energian väheneminen.
-**Kaava:** $E_\text{mek} = m g h$. Muuttunut energia on $\Delta E = E_\text{mek,0} - E_\text{mek,4} = m g\,(h_0 - h_4)$. Osuus yhdessä pomppauksessa saadaan korkeuksien suhteesta, koska $E_\text{mek}$ on verrannollinen korkeuteen.
+**Kaava:** $E_\text{mek} = E_\text{k} + E_\text{p}$, ja korkeimmassa kohdassa $v = 0$, joten $E_\text{k} = 0$ ja $E_\text{mek} = m g h$. Energiataseesta muuttunut energia on $\Delta E = E_\text{mek,0} - E_\text{mek,4} = m g\,(h_0 - h_4)$. Osuus yhdessä pomppauksessa saadaan korkeuksien suhteesta, koska $E_\text{mek}$ on verrannollinen korkeuteen.
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** Kohta a): $m g = 0{,}058\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}569\,\text{N}$, ja $E_n = m g h_n$:
 ```latex
@@ -253,7 +253,7 @@ Muutos on sama kuin lattian nollatasolla, koska $m g\,(h_4' - h_0') = m g\,(h_4 
 **Annettu:** massa $m = 48\,\text{kg}$, mittauspisteet $(h, v)$: $(18{,}0\,\text{m};\,1{,}5\,\text{m/s})$, $(14{,}0\,\text{m};\,8{,}3\,\text{m/s})$, $(10{,}0\,\text{m};\,11{,}5\,\text{m/s})$, $(6{,}0\,\text{m};\,14{,}0\,\text{m/s})$ ja $(2{,}0\,\text{m};\,15{,}8\,\text{m/s})$; nollataso on rinteen alapää; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** mekaaninen energia $E_\text{mek}$ pisteissä 1–5, pisteiden 1 ja 5 välillä muuksi energiaksi muuttunut energia $\Delta E$ kilojouleina sekä tuloksen riippumattomuus nollatasosta
 **Periaate:** Jokaisessa pisteessä mekaaninen energia on liike-energian ja potentiaalienergian summa. Ilman kitkaa ja ilmanvastusta se pysyisi samana, joten sen väheneminen kertoo, kuinka paljon energiaa on muuttunut muuksi energiaksi eli sisäenergiaksi kitkan ja ilmanvastuksen vaikutuksesta. Korkeus on pystysuora etäisyys nollatasosta, ei matka rinnettä pitkin.
-**Kaava:** $E_\text{mek} = \tfrac{1}{2}\,mv^2 + m g h$ ja $\Delta E = E_\text{mek,1} - E_\text{mek,5}$
+**Kaava:** $E_\text{mek} = E_\text{k} + E_\text{p}$, missä $E_\text{k} = \tfrac{1}{2}\,mv^2$ ja $E_\text{p} = m g h$, joten $E_\text{mek} = \tfrac{1}{2}\,mv^2 + m g h$. Energiataseesta $E_\text{mek,1} = E_\text{mek,5} + \Delta E$, joten $\Delta E = E_\text{mek,1} - E_\text{mek,5}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten energiat tulevat jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** Kohta a), esimerkkinä piste 1, jossa $m g = 48\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 470{,}9\,\text{N}$:
 ```latex
@@ -347,7 +347,7 @@ Auton massa on $m = 1500\,\text{kg}$, nopeudet ovat $v_1 = 80\,\text{km/h}$ ja $
 Lähteestä otetut tiedot: taulukon luvut ovat raportista <a href="https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf" rel="noopener">Fintraffic: Ajonopeudet maanteillä 2025</a> (luettu 16. marraskuuta 2026). Raportin mukaan kunkin tietyypin luku on sen mittausasemien keskiarvo, ylinopeus tarkoittaa tien nopeusrajoituksen ylittämistä, ja vaihtuvien nopeusrajoitusten tiejaksot on jätetty pois. Mittausasemien raaka-aineisto on avattu Fintrafficin sivulla <a href="https://www.fintraffic.fi/fi/fintraffic/digitraffic-ja-avoin-data" rel="noopener">Digitraffic ja avoin data</a>.
 **Kysytty:** a) ajonopeuksien jakauma $80\,\text{km/h}$:n teillä ja vertailu $100\,\text{km/h}$:n teihin, b) liike-energiat $E_\text{k,1}$ ja $E_\text{k,2}$ sekä niiden ero prosentteina, c) pysähtymismatkojen ero $\Delta s$ metreinä, d) päätelmät liikenneturvallisuudesta ja tekijät, joista aineisto ei kerro
 **Periaate:** Liike-energia riippuu massasta ja nopeuden neliöstä. Pysähtymismatka on kahden liikkeen summa. Reaktioajan auto liikkuu tasaisesti, koska kuljettaja ei vielä jarruta. Sen jälkeen liike on tasaisesti hidastuvaa, koska hidastuvuus oletetaan vakioksi. Siksi käytetään tasaisen liikkeen ja tasaisesti kiihtyvän liikkeen yhtälöitä (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*), ja jarrutuksessa kiihtyvyys on negatiivinen.
-**Kaava:** Liike-energia on $E_\text{k} = \tfrac{1}{2}\,m v^2$. Reaktiomatka on $s_\text{r} = v_0\,t_\text{r}$. Jarrutuksen lopussa nopeus on nolla, $v_0 + a\,t_\text{j} = 0$, joten jarrutusaika on $t_\text{j} = -\dfrac{v_0}{a}$. Jarrutusmatka on silloin
+**Kaava:** Liike-energia on $E_\text{k} = \tfrac{1}{2}\,m v^2$. Reaktioaikana liike on tasaista, $v_0 = \dfrac{s_\text{r}}{t_\text{r}}$, joten reaktiomatka on $s_\text{r} = v_0\,t_\text{r}$. Jarrutuksen lopussa nopeus on nolla, $v_0 + a\,t_\text{j} = 0$, joten jarrutusaika on $t_\text{j} = -\dfrac{v_0}{a}$. Jarrutusmatka on silloin
 $$\begin{aligned} s_\text{j} &= v_0\,t_\text{j} + \tfrac{1}{2}\,a\,t_\text{j}^2 \\ &= -\dfrac{v_0^2}{a} + \dfrac{v_0^2}{2a} \\ &= -\dfrac{v_0^2}{2a} \end{aligned}$$
 Pysähtymismatka on $s = s_\text{r} + s_\text{j}$, ja kysytty ero on $\Delta s = s_2 - s_1$
 **Muunnokset:** Nopeudet muunnetaan yksikköön $\text{m/s}$:

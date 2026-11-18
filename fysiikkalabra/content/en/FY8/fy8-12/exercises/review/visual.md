@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2a922d7712e52c47
+CONTENT-HASH: 3c71dfde0dd50970
 
-Round 1 (delta): solutions.md re-cut into paragraphs (md-paragraphs), words unchanged.
+Round 1 (delta): $\tfrac{1}{\text{min}}$ changed to $\text{min}^{-1}$ in L1-07, L3-02 and the answer-unit fields.
 
 ## Blocking
 - None.
 
 ## Polish
-- None.
+- [Minor] solutions.md L1-07 Reasonableness — $27\,\tfrac{1}{\text{s}}$ and $1.5\,\tfrac{1}{\text{s}}$ still use the fraction form next to $\text{min}^{-1}$ — write $\text{s}^{-1}$ for one unit style.
 
 ## Checked
-- Opened fy8-12-open-exercises-1280-1 (L1, 12-1 solution), fy8-12-open-exercises-L2-1280-5 (12-13 and 12-14) and fy8-12-open-exercises-L3-1280-6 (graph-reading solution). Solutions open inside their cards with labelled sections; formulas, aligned rows and sentence marks intact, no clipping, no lone punctuation, no overflow.
+- Opened fy8-12-open-exercises-1280-5 (L1-07: task text, unit box "min⁻¹", Given/Asked/Substitution/Answer/Reasonableness) and fy8-12-open-exercises-L3-2... (12-20 Given/Asked, Answer line). Exponent legible, aligned rows intact, no clipping or overflow, unit box matches the maths. Also 1280-3 and 1280-6 for surrounding layout.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

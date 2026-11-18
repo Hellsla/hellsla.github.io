@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 771c38ec8f26c28d
+CONTENT-HASH: 0d9f6781a76891b9
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md (jarrutusmatka solution) Kaava — "Lisäksi Jarrutusmatka on kolmion ala" has a capital J mid-sentence — write "jarrutusmatka"; no blocking effect.
+- [Minor] solutions.md d-minimum and passing-distance Kaava — long Kaava paragraphs (about 90 words, three ideas) — split at 'Nopeudella v₀ ...' into its own paragraph if the shared layout does not already.
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-11-open-exercises-L2-1280-15 (stopping-distance solution); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- Opened fy4-11-open-exercises-L3-1280-8 (crash-test task 15-24 and the preceding solution; formulas, rows and table intact).
+- Read all 21 changed lines: basic laws (Σ F = ma, F_μ = μN, I = Δp, s = ½ v₀ t) now precede the combined formulas; no number changed.
+- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

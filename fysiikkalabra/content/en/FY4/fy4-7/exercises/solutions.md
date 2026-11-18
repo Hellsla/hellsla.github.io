@@ -116,7 +116,7 @@ Measured from the point of suspension, the bob is at its lowest a distance $L$ b
 **Principle:** Without friction and air resistance the mechanical energy would stay the same. Friction and air resistance are not conservative, and they change part of the mechanical energy into internal energy.
 
 The amount changed is the decrease in mechanical energy from the foot to the highest point. At the foot there is only kinetic energy ($h = 0$), at the highest point only potential energy ($v = 0$).
-**Formula:** $E_\text{other} = E_\text{mech,1} - E_\text{mech,2}$, where $E_\text{mech,1} = \tfrac{1}{2}\,mv^2$ and $E_\text{mech,2} = m g h$. So $E_\text{other} = \tfrac{1}{2}\,mv^2 - m g h$
+**Formula:** Energy balance: $E_\text{mech,1} = E_\text{mech,2} + E_\text{other}$, so $E_\text{other} = E_\text{mech,1} - E_\text{mech,2}$, where $E_\text{mech,1} = E_\text{k} = \tfrac{1}{2}\,mv^2$ and $E_\text{mech,2} = E_\text{p} = m g h$. So $E_\text{other} = \tfrac{1}{2}\,mv^2 - m g h$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55.0\,\text{kg} \cdot (7.00\,\text{m/s})^2 = 1347.5\,\text{J}$ and $$\begin{aligned} &m g h \\ &= 55.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 2.10\,\text{m} \\ &\approx 1133.1\,\text{J} \end{aligned}$$, so $E_\text{other} = 1347.5\,\text{J} - 1133.1\,\text{J} \approx 214\,\text{J}$
 **Answer:** $214\,\text{J}$, three significant figures like the initial data.
@@ -210,7 +210,7 @@ E_\text{mech} &= 560\,\text{J} - 1030\,\text{J} \\
 **Find:** the mass $m$ of the cart in $\text{kg}$
 **Principle:** Kinetic energy is $E_\text{k} = \tfrac{1}{2}\,mv^2$. When $E_\text{k}$ is plotted as a function of the square of the speed $v^2$, the graph is a line through the origin whose slope is $\tfrac{1}{2}\,m$. The mass is therefore twice the slope.
 **Reading the graph:** First calculate $v^2$: $0.16$, $0.64$, $1.44$, $2.56$ and $4.00\,\text{m}^2/\text{s}^2$. Plot the points $(v^2, E_\text{k})$ and fit to them a line through the origin. A distant point is read from the line: when $v^2 = 4.00\,\text{m}^2/\text{s}^2$, the value of the line is about $E_\text{k} = 1.04\,\text{J}$.
-**Formula:** slope $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$, so $m = 2k$
+**Formula:** the kinetic energy is $E_\text{k} = \tfrac{1}{2}\,mv^2$, so the slope of the $(v^2, E_\text{k})$ graph is $k = \dfrac{\Delta E_\text{k}}{\Delta (v^2)} = \tfrac{1}{2}\,m$, and $m = 2k$
 **Conversions:** All quantities are in SI units, so no conversions are needed. The unit of the slope is $\text{J} : (\text{m}^2/\text{s}^2) = \text{kg}$.
 **Substitution:** $k = \dfrac{1.04\,\text{J} - 0\,\text{J}}{4.00\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0.26\,\text{kg}$, so $m = 2 \cdot 0.26\,\text{kg} = 0.52\,\text{kg}$
 **Answer:** $0.52\,\text{kg}$, two significant figures like the measured values.
@@ -222,7 +222,7 @@ E_\text{mech} &= 560\,\text{J} - 1030\,\text{J} \\
 **Principle:** At the highest point the speed is zero, so the mechanical energy is only potential energy, $E_\text{mech} = E_\text{p} = m g h$. If mechanical energy were conserved, the ball would always return to the same height.
 
 The height decreases, so part of the mechanical energy changes into other energy: in the collision the ball and the floor warm up slightly, the ball vibrates and sound is produced. The amount changed is the decrease in mechanical energy.
-**Formula:** $E_\text{mech} = m g h$. The energy changed is $\Delta E = E_\text{mech,0} - E_\text{mech,4} = m g\,(h_0 - h_4)$. The share in one bounce is obtained from the ratio of the heights, because $E_\text{mech}$ is proportional to the height.
+**Formula:** $E_\text{mech} = E_\text{k} + E_\text{p}$, and at the highest point $v = 0$, so $E_\text{k} = 0$ and $E_\text{mech} = m g h$. From the energy balance, the energy changed is $\Delta E = E_\text{mech,0} - E_\text{mech,4} = m g\,(h_0 - h_4)$. The share in one bounce is obtained from the ratio of the heights, because $E_\text{mech}$ is proportional to the height.
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** Part a): $m g = 0.058\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.569\,\text{N}$, and $E_n = m g h_n$:
 ```latex
@@ -269,7 +269,7 @@ The change is the same as with the floor as the zero level, because $m g\,(h_4' 
 Without friction and air resistance it would stay the same, so its decrease tells how much energy has changed into other energy, that is, internal energy, because of friction and air resistance.
 
 The height is the vertical distance from the zero level, not the distance along the slope.
-**Formula:** $E_\text{mech} = \tfrac{1}{2}\,mv^2 + m g h$ and $\Delta E = E_\text{mech,1} - E_\text{mech,5}$
+**Formula:** $E_\text{mech} = E_\text{k} + E_\text{p}$, where $E_\text{k} = \tfrac{1}{2}\,mv^2$ and $E_\text{p} = m g h$, so $E_\text{mech} = \tfrac{1}{2}\,mv^2 + m g h$. From the energy balance $E_\text{mech,1} = E_\text{mech,5} + \Delta E$, so $\Delta E = E_\text{mech,1} - E_\text{mech,5}$
 **Conversions:** All quantities are in SI units, so the energies come in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** Part a), taking point 1 as an example, where $m g = 48\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 470.9\,\text{N}$:
 ```latex
@@ -365,7 +365,7 @@ Facts taken from the source: the figures of the table are from the report <a hre
 **Principle:** Kinetic energy depends on the mass and on the square of the speed. The stopping distance is the sum of two motions. During the reaction time the car moves uniformly, because the driver is not yet braking.
 
 After that the motion is uniformly decelerated, because the deceleration is assumed constant. So the equations of uniform motion and of uniformly accelerated motion are used (chapter *Acceleration and uniformly accelerated motion*), and in braking the acceleration is negative.
-**Formula:** The kinetic energy is $E_\text{k} = \tfrac{1}{2}\,m v^2$. The reaction distance is $s_\text{r} = v_0\,t_\text{r}$. At the end of the braking the velocity is zero, $v_0 + a\,t_\text{b} = 0$, so the braking time is $t_\text{b} = -\dfrac{v_0}{a}$. The braking distance is then
+**Formula:** The kinetic energy is $E_\text{k} = \tfrac{1}{2}\,m v^2$. During the reaction time the motion is uniform, $v_0 = \dfrac{s_\text{r}}{t_\text{r}}$, so the reaction distance is $s_\text{r} = v_0\,t_\text{r}$. At the end of the braking the velocity is zero, $v_0 + a\,t_\text{b} = 0$, so the braking time is $t_\text{b} = -\dfrac{v_0}{a}$. The braking distance is then
 $$\begin{aligned} s_\text{b} &= v_0\,t_\text{b} + \tfrac{1}{2}\,a\,t_\text{b}^2 \\ &= -\dfrac{v_0^2}{a} + \dfrac{v_0^2}{2a} \\ &= -\dfrac{v_0^2}{2a} \end{aligned}$$
 The stopping distance is $s = s_\text{r} + s_\text{b}$, and the difference asked for is $\Delta s = s_2 - s_1$
 **Conversions:** The speeds are converted to $\text{m/s}$:

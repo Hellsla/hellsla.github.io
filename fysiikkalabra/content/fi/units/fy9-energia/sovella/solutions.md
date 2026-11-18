@@ -464,3 +464,168 @@ Testi antaa silti käyttökelpoisen suuruusluokan: kovalla pakkasella toimintama
 - a-kohdassa muut kuin taulukon autot, kun arvot on luettu lähteen kaaviosta ja lasku on oikein; tulokset voi antaa kokonaisina prosentteina ja positiivisina, kun sanotaan, että mitattu matka on lyhyempi.
 - b-kohdan tulokset kolmella merkitsevällä numerolla, $16{,}7\,\text{kWh}$ ja $26{,}9\,\text{kWh}$ sataa kilometriä kohti.
 - c-kohdassa myös muut perustellut syyt, esimerkiksi kylmän voiteluaineen suurempi kitka voimansiirrossa.
+
+## fy9-energia-s8
+
+### a)
+**Annettu:** kuvasta potentiaalienergia ja liike-energia: A $E_\text{p} = 700\,\text{J}$, $E_\text{k} = 0\,\text{J}$; B $E_\text{p} = 300\,\text{J}$, $E_\text{k} = 300\,\text{J}$; C $E_\text{p} = 0\,\text{J}$, $E_\text{k} = 500\,\text{J}$
+**Kysytty:** sisäenergian lisäys $\Delta E_\text{sis}$ matkoilla A–B ja A–C
+**Periaate:** Kitkallisessa radassa mekaaninen energia ei säily: kitka kasvattaa radan ja pyörien sisäenergiaa. Kokonaisenergia säilyy, joten mekaanisen energian pieneneminen on sisäenergian lisäys (luku *Energialajit ja energian säilyminen*).
+**Kuvaajan lukeminen:** Kussakin kohdassa luetaan sekä potentiaalienergian että liike-energian pylväs ruudukon avulla (ruudukon väli on $100\,\text{J}$).
+**Kaava:** $E_\text{mek} = E_\text{p} + E_\text{k}$ ja $\Delta E_\text{sis} = E_\text{mek,A} - E_\text{mek}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{mek,A} &= 700\,\text{J} + 0\,\text{J} = 700\,\text{J} \\
+E_\text{mek,B} &= 300\,\text{J} + 300\,\text{J} = 600\,\text{J} \\
+E_\text{mek,C} &= 0\,\text{J} + 500\,\text{J} = 500\,\text{J} \\
+\Delta E_\text{sis,AB} &= 700\,\text{J} - 600\,\text{J} = 100\,\text{J} \\
+\Delta E_\text{sis,AC} &= 700\,\text{J} - 500\,\text{J} = 200\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** Sisäenergiaa on syntynyt $100\,\text{J}$ matkalla A–B ja $200\,\text{J}$ matkalla A–C.
+**Järkevyys:** Mekaaninen energia pienenee kohdasta toiseen ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$), eikä se koskaan kasva, kuten kitkallisessa radassa kuuluukin. Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen radalla.
+
+### b)
+**Annettu:** $E_\text{k,C} = 500\,\text{J}$ kuvasta, massa $m = 45\,\text{kg}$
+**Kysytty:** vauhti $v$ kohdassa C
+**Periaate:** Pohjalla potentiaalienergia on nolla, joten kuvan liike-energia kertoo vauhdin (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*).
+**Kuvaajan lukeminen:** Kohdassa C vain liike-energian pylväs on näkyvissä, ja se päättyy kohtaan $500\,\text{J}$.
+**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, josta $v = \sqrt{\dfrac{2E_\text{k}}{m}}$
+**Muunnokset:** Ei tarvita, koska $1\,\text{J} = 1\,\text{kg}\,\text{m}^2/\text{s}^2$.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 500\,\text{J}}{45\,\text{kg}}} \\
+&= \sqrt{22{,}2\,\text{m}^2/\text{s}^2} \\
+&\approx 4{,}7\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Vauhti kohdassa C on $v \approx 4{,}7\,\text{m/s}$, kaksi merkitsevää numeroa kuten massa.
+**Järkevyys:** $4{,}7\,\text{m/s} \approx 17\,\text{km/h}$ on järkevä vauhti half-pipen pohjalla.
+
+### c)
+**Annettu:** sisäenergian lisäys $\Delta E_\text{sis,AC} = 200\,\text{J}$ a-kohdasta, matka $s = 3{,}4\,\text{m}$, massa $m = 45\,\text{kg}$
+**Kysytty:** kitkavoiman keskiarvo $F$
+**Periaate:** Kitkan tekemä työ on yhtä suuri kuin sisäenergian lisäys, ja työ on voima kertaa matka voiman suunnassa (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Keskimääräinen voima saadaan, kun työ jaetaan kuljetulla matkalla.
+**Kaava:** $\Delta E_\text{sis} = Fs$, josta $F = \dfrac{\Delta E_\text{sis}}{s}$
+**Muunnokset:** Ei tarvita, koska $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
+**Sijoitus:** $$
+\begin{aligned}
+F &= \dfrac{200\,\text{J}}{3{,}4\,\text{m}} \\
+&\approx 59\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** Kitkan keskimääräinen voima on $F \approx 59\,\text{N}$, kaksi merkitsevää numeroa kuten matka.
+**Järkevyys:** Paino on $G = mg = 45\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 440\,\text{N}$, joten kitka on noin $13\,\%$ painosta. Pyörillä varustetun laudan vierintävastukselle ja laakerikitkalle se on järkevä suuruusluokka.
+
+### d)
+**Annettu:** $E_\text{p,A} = 700\,\text{J}$ kuvasta, $m = 45\,\text{kg}$
+**Kysytty:** vauhti $v_0$ kohdassa C ilman kitkaa ja syy, miksi todellinen vauhti on pienempi
+**Periaate:** Ilman kitkaa mekaaninen energia säilyy: koko alkuperäinen potentiaalienergia muuttuu liike-energiaksi (luku *Energialajit ja energian säilyminen*).
+**Kuvaajan lukeminen:** Kohdassa A koko energia on potentiaalienergiaa, $700\,\text{J}$.
+**Kaava:** $E_\text{k,C} = E_\text{p,A}$, joten $\tfrac{1}{2}mv_0^2 = E_\text{p,A}$ ja $v_0 = \sqrt{\dfrac{2E_\text{p,A}}{m}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 700\,\text{J}}{45\,\text{kg}}} \\
+&= \sqrt{31{,}1\,\text{m}^2/\text{s}^2} \\
+&\approx 5{,}6\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Ilman kitkaa vauhti olisi $v_0 \approx 5{,}6\,\text{m/s}$. Todellinen vauhti $4{,}7\,\text{m/s}$ on pienempi, koska kitka muuttaa osan energiasta, $200\,\text{J}$ eli $\tfrac{200}{700} \approx 29\,\%$, radan ja pyörien sisäenergiaksi. Se siirtyy lämpönä ympäristöön. Liike-energiaa jää vain $500\,\text{J}$.
+**Järkevyys:** Ilman kitkaa vauhti on suurempi kuin kitkallisessa tapauksessa, kuten pitää. Vauhti pienenee vain noin $0{,}9\,\text{m/s}$, vaikka energiasta menee lähes kolmannes, koska vauhti riippuu energian neliöjuuresta.
+
+### Yleisiä virheitä
+- a-kohdassa luetaan vain liike-energia ja unohdetaan potentiaalienergia, jolloin B:lle saadaan väärin $700\,\text{J} - 300\,\text{J} = 400\,\text{J}$.
+- b-kohdassa käytetään kohdan A energiaa $700\,\text{J}$ tai unohdetaan neliöjuuri ja kerroin $2$.
+- c-kohdassa jaetaan sisäenergia korkeuserolla matkan sijaan tai kitkavoimaksi merkitään energia jouleina.
+- d-kohdassa sanotaan, että energia ”katoaa” tai ”muuttuu lämmöksi”: energia muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
+
+### Hyväksytään myös
+- c-kohdassa kitkavoima kolmella merkitsevällä numerolla, $58{,}8\,\text{N}$, tai todellinen vauhti d-kohdassa kolmella merkitsevällä numerolla, $4{,}71\,\text{m/s}$ ja $5{,}58\,\text{m/s}$.
+- a-kohdassa luettu vastaus suoraan pylväiden summista kuvaajasta, kun mekaanisten energioiden summat näytetään.
+
+## fy9-energia-s9
+
+### a)
+**Annettu:** kuvaajasta A $E_\text{A} = 120\,\text{kJ}$ ja B $E_\text{B} = 40\,\text{kJ}$ hetkellä $t = 80\,\text{s}$; kumpikin suora kulkee origon kautta
+**Kysytty:** sähkötehot $P_\text{A}$ ja $P_\text{B}$
+**Periaate:** Kun energia muuntuu tasaisesti, teho on vakio ja energia on suoraan verrannollinen aikaan. Teho on kuvaajan kulmakerroin (luku *Teho*).
+**Kuvaajan lukeminen:** Luetaan kummankin suoran piste kaukaa origosta, hetkellä $80\,\text{s}$: A $120\,\text{kJ}$ ja B $40\,\text{kJ}$.
+**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$
+**Muunnokset:** $120\,\text{kJ} = 120\,000\,\text{J}$ ja $40\,\text{kJ} = 40\,000\,\text{J}$; lopuksi $1\,\text{W} = 0{,}001\,\text{kW}$.
+**Sijoitus:** $$
+\begin{aligned}
+P_\text{A} &= \dfrac{120\,000\,\text{J}}{80\,\text{s}} = 1500\,\text{W} = 1{,}5\,\text{kW} \\
+P_\text{B} &= \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W} = 0{,}50\,\text{kW}
+\end{aligned}
+$$
+**Vastaus:** $P_\text{A} = 1{,}5\,\text{kW}$ ja $P_\text{B} = 0{,}50\,\text{kW}$, kaksi merkitsevää numeroa kuten luetut arvot.
+**Järkevyys:** Teho $1{,}5\,\text{kW}$ on tyypillinen sähköpatterille. A:n suora on kolme kertaa jyrkempi kuin B:n, ja teho on kolminkertainen.
+
+### b)
+**Annettu:** a-kohdan tehot $P_\text{A} = 1{,}5\,\text{kW}$ ja $P_\text{B} = 0{,}50\,\text{kW}$, käyttöaika $t = 30 \cdot 3{,}0\,\text{h} = 90\,\text{h}$, hinta $p = 0{,}16\,\text{€/kWh}$
+**Kysytty:** sähkön hinta $C_\text{A}$ ja $C_\text{B}$
+**Periaate:** Sähköenergia on teho kertaa aika, ja hinta on energia kertaa yksikköhinta. Kilowattitunti on suoraan sopiva yksikkö, kun teho on kilowatteina ja aika tunteina (luku *Teho*).
+**Kaava:** $E = Pt$ ja $C = E\,p$, joten $C = P\,t\,p$
+**Muunnokset:** Ei tarvita, koska tehot ovat kilowatteina ja ajat tunteina.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{A} &= 1{,}5\,\text{kW} \cdot 90\,\text{h} = 135\,\text{kWh} \\
+C_\text{A} &= 135\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \approx 22\,\text{€} \\
+E_\text{B} &= 0{,}50\,\text{kW} \cdot 90\,\text{h} = 45\,\text{kWh} \\
+C_\text{B} &= 45\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} = 7{,}2\,\text{€}
+\end{aligned}
+$$
+**Vastaus:** A:n sähkö maksaa noin $22\,\text{€}$ ja B:n $7{,}2\,\text{€}$ kahdessa merkitsevässä numerossa.
+**Järkevyys:** Hintojen suhde on $22\,\text{€} : 7{,}2\,\text{€} \approx 3$, sama kuin tehojen suhde, koska käyttöaika ja hinta ovat samat. Pattereille kuukauden kustannus kymmenissä euroissa on tuttu suuruusluokka.
+
+### c)
+**Annettu:** massa $m = 150\,\text{kg}$, korkeus $h = 20\,\text{m}$, sähköenergia kuvaajasta $E = 40\,\text{kJ}$ ajassa $80\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** moottorin B hyötysuhde $\eta$
+**Periaate:** Hyötysuhde on hyödyksi muuttuneen energian osuus otetusta sähköenergiasta (luku *Hyötysuhde*). Hyötyenergia on kuorman potentiaalienergian muutos nostossa.
+**Kuvaajan lukeminen:** B:n suoralta hetkellä $80\,\text{s}$ luetaan $E = 40\,\text{kJ}$.
+**Kaava:** $\eta = \dfrac{E_\text{hyöty}}{E}$, missä $E_\text{hyöty} = mgh$, joten $\eta = \dfrac{mgh}{E}$
+**Muunnokset:** $40\,\text{kJ} = 40\,000\,\text{J}$.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{hyöty} &= 150\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 20\,\text{m} \\
+&\approx 29\,400\,\text{J} \\
+\eta &= \dfrac{29\,400\,\text{J}}{40\,000\,\text{J}} \\
+&= 0{,}74 = 74\,\%
+\end{aligned}
+$$
+**Vastaus:** Moottorin hyötysuhde on $\eta \approx 74\,\%$, kaksi merkitsevää numeroa.
+**Järkevyys:** Hyötysuhde on alle $100\,\%$ ja sopii hissin moottorille, jonka vaihteisto ja köysi kuluttavat osan energiasta. Hyötyenergia $29{,}4\,\text{kJ}$ on pienempi kuin otettu $40\,\text{kJ}$.
+
+### d)
+**Annettu:** $P_\text{B} = 0{,}50\,\text{kW}$ a-kohdasta, $E_\text{hyöty} = 29\,400\,\text{J}$ ja $t = 80\,\text{s}$ c-kohdasta
+**Kysytty:** ympäristöön lämpönä siirtyvä teho $P_\text{häviö}$ ja energiamuoto, johon energia ensin muuttuu
+**Periaate:** Otettu teho jakautuu hyötytehoon ja muuhun tehoon. Muu energia ei häviä, vaan muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön (luku *Hyötysuhde*).
+**Kaava:** $P_\text{häviö} = P - P_\text{hyöty}$, missä $P_\text{hyöty} = \dfrac{E_\text{hyöty}}{t}$
+**Muunnokset:** $P_\text{B} = 0{,}50\,\text{kW} = 500\,\text{W}$.
+**Sijoitus:** $$
+\begin{aligned}
+P_\text{hyöty} &= \dfrac{29\,400\,\text{J}}{80\,\text{s}} \approx 368\,\text{W} \\
+P_\text{häviö} &= 500\,\text{W} - 368\,\text{W} \\
+&\approx 130\,\text{W} = 0{,}13\,\text{kW}
+\end{aligned}
+$$
+**Vastaus:** Lämpönä ympäristöön siirtyy noin $0{,}13\,\text{kW}$. Energia muuttuu ensin moottorin, vaihteiston ja köyden sisäenergiaksi kitkan ja sähkövastuksen vuoksi, ja se siirtyy lämpönä ympäristöön.
+**Järkevyys:** $0{,}13\,\text{kW} = 26\,\%$ otetusta tehosta, joten $\eta + 26\,\% = 100\,\%$; energia säilyy.
+
+### Yleisiä virheitä
+- a-kohdassa teho luetaan kuvaajan yhdestä arvosta jakamatta ajalla tai käytetään kilojouleja jouleina.
+- b-kohdassa käyttöaika lasketaan väärin ($3{,}0\,\text{h}$ eikä $90\,\text{h}$) tai teho jätetään watteihin ja hinta lasketaan kilowattituntihinnalla.
+- c-kohdassa hyötysuhteeksi lasketaan $E / E_\text{hyöty}$ ja saadaan yli $100\,\%$.
+- d-kohdassa energian sanotaan ”katoavan” tai ”muuttuvan lämmöksi”, vaikka kyse on sisäenergiasta, joka siirtyy lämpönä.
+
+### Hyväksytään myös
+- c-kohdassa vastaus $73{,}6\,\%$ tai $0{,}74$, ja d-kohdassa $132\,\text{W}$.
+- d-kohdassa teho voidaan laskea myös hyötysuhteesta: $$
+\begin{aligned}
+P_\text{häviö} &= (1 - \eta)P \\
+&= 0{,}26 \cdot 0{,}50\,\text{kW} \\
+&\approx 0{,}13\,\text{kW}
+\end{aligned}
+$$.

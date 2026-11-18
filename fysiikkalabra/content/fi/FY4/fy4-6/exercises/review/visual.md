@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 21d1b5993aaada33
+CONTENT-HASH: 525d746e2d9a472a
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] shots/sol-fy4-6-L1-06-390.png — the capture ends mid-sentence in the last paragraph of Mallivastaus (the screenshot is cut, 332x1821); the visible part shows the break is clean, but re-capture so the end of the card can be seen.
+- [Minor] fy4-6 L3-03 (8-22 area, hidastuvuus ylämäessä) and similar — the Kaava step is now a six-row block of running text with many inline formulas ($a = g(\sin\alpha + \mu\cos\alpha)$ and $s = v_0^2/2a$ among them). Legible and under 120 words, but a display line for the key results would read lighter.
+- [Minor] fy4-6 Kaava steps mix "ΣF = m a" with overlines and component equations without a word for the sign convention in a few steps; the axis direction is in the figure, so not blocking.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-6-L1-06-390.png (whole, plus its tail cropped) and sol-fy4-6-L1-08-390.png. L1-06: the answer (kitka 20 N, lähtökitka only a limit) and the rebuttal of the wrong claims are separate paragraphs; spacing even, nothing clipped in the visible part. L1-08: the model answer, then the claims "N = G aina", "N > G", "N = 0" in their own paragraph, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
+- Delta: solutions.md Kaava steps and one Sijoitus chain (the F_max / G_x difference now written out); hash same at start and end.
+- Opened fy4-6-open-exercises-1280-3.png (8-2 Muunnokset, Sijoitus, Vastaus, Järkevyys and the start of 8-3: layout intact), fy4-6-open-exercises-L3-1280-3.png (Kaava of the uphill-sliding task: ΣF = m a, y and x equations, a = g(sin α + μ cos α), s = v_0^2/2a; Sijoitus uses the last symbolic form), fy4-6-open-exercises-L3-1280-7.png (Sijoitus of the horizontal and slope stopping-distance task, Vastaus and Järkevyys, next task card).
+- Section order kept, spacing even, nothing clipped; overlines on vectors, plain magnitudes, units and decimal commas unchanged. 1280 px captures; packet layout checks passed at all widths.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

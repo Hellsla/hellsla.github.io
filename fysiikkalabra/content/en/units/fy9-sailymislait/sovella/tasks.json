@@ -1,5 +1,5 @@
 {
-  "intro": "Six exam-style problems bring together the lesson's mechanical energy and momentum. Solve them as in the exam: justify which conservation law you choose and why it holds in the situation, solve for the unknown quantity before substituting the numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Eight exam-style problems bring together the lesson's mechanical energy and momentum. Solve them as in the exam: justify which conservation law you choose and why it holds in the situation, solve for the unknown quantity before substituting the numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-sailymislait-s1",
@@ -782,6 +782,328 @@
       "links": {
         "math": "fy4-10",
         "concept": "fy4-10",
+        "transfer": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s7",
+      "title": "Sled on a slope",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy4-8",
+        "fy4-7",
+        "fy4-6"
+      ],
+      "figure": "fy4-8/palkit-asteikko",
+      "text": "A student studies a sled sliding down a straight slope. The mass of the sled is $2.0\\,\\text{kg}$ and it starts from rest. The slope is $6.0\\,\\text{m}$ long, and the coefficient of sliding friction is the same all the way. Air resistance is negligible. The bottom of the slope is the zero level of potential energy. The graph shows the potential energy $E_{\\text{p}0}$ of the sled at the start and its kinetic energy $E_\\text{k}$ at the end.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the starting height of the sled above the bottom of the slope.",
+          "answer": {
+            "value": 2.039,
+            "unit": "m",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The initial potential energy is read from the top of the green bar: $E_{\\text{p}0} = 40\\,\\text{J}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_{\\text{p}0} = mgh$, so $h = \\dfrac{E_{\\text{p}0}}{mg}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nh &= \\dfrac{40\\,\\text{J}}{2.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2} \\\\\n&\\approx 2.0\\,\\text{m}\n\\end{aligned}\n$$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the work done by the friction force and the magnitude of the friction force.",
+          "answer": [
+            {
+              "name": "W",
+              "value": -15.0,
+              "unit": "J",
+              "tolerance": 0.5
+            },
+            {
+              "name": "F",
+              "value": 2.5,
+              "unit": "N",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The final kinetic energy is read from the top of the blue bar: $E_\\text{k} = 25\\,\\text{J}$. At the start the kinetic energy is zero, and at the end the potential energy is zero."
+            },
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "Energy principle: $E_{\\text{p}0} + W_\\text{friction} = E_\\text{k}$, so $W_\\text{friction} = E_\\text{k} - E_{\\text{p}0}$. The friction force opposes the motion: $W_\\text{friction} = -F s$, so $F = \\dfrac{-W_\\text{friction}}{s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W_\\text{friction} = 25\\,\\text{J} - 40\\,\\text{J} = -15\\,\\text{J}$ and $F = \\dfrac{15\\,\\text{J}}{6.0\\,\\text{m}} = 2.5\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W_\\text{friction} = -15\\,\\text{J}$ and $F = 2.5\\,\\text{N}$; the work is negative because the friction force is against the motion."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the speed of the sled at the bottom of the slope. How large would the speed be without friction?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 5.0,
+              "unit": "m/s",
+              "tolerance": 0.1
+            },
+            {
+              "name": "v0",
+              "value": 6.325,
+              "unit": "m/s",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At the bottom $E_\\text{k} = \\tfrac12 mv^2$, so $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$. Without friction the mechanical energy would be conserved: $E_{\\text{p}0} = \\tfrac12 mv_0^2$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 25\\,\\text{J}}{2.0\\,\\text{kg}}} = 5.0\\,\\text{m/s}$ and $v_0 = \\sqrt{\\dfrac{2 \\cdot 40\\,\\text{J}}{2.0\\,\\text{kg}}} \\approx 6.3\\,\\text{m/s}$"
+            },
+            {
+              "text": "Concludes that friction reduces the speed by about $21\\,\\%$: part of the potential energy becomes internal energy, which is transferred to the surroundings as heat, so less kinetic energy remains.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "The sled is replaced by a similar sled with a mass of $3.0\\,\\text{kg}$. The slope and the coefficient of sliding friction stay the same. What happens to the speed at the bottom of the slope? Justify by calculation.",
+          "answer": {
+            "value": 5.0,
+            "unit": "m/s",
+            "tolerance": 0.1
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the sliding friction force $F = \\mu N = \\mu mg\\cos\\alpha$ is directly proportional to the mass, as is the potential energy $mgh$. Both the source of energy and the work of friction grow in the same ratio.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$mgh - \\mu mg\\cos\\alpha \\cdot s = \\tfrac12 mv^2$, in which the mass cancels: $v = \\sqrt{2g\\,(h - \\mu\\cos\\alpha \\cdot s)}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The new potential energy is $60\\,\\text{J}$ and the work of friction $-22.5\\,\\text{J}$, so $E_\\text{k} = 37.5\\,\\text{J}$ and $v = \\sqrt{\\dfrac{2 \\cdot 37.5\\,\\text{J}}{3.0\\,\\text{kg}}} = 5.0\\,\\text{m/s}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The speed does not change: it is still $5.0\\,\\text{m/s}$, because the mass does not affect the speed when air resistance is negligible. A heavier sled loses more kinetic energy to friction, but it also has more energy to begin with."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-8",
+        "math": "fy4-8",
+        "concept": "fy4-8",
+        "communication": "fy4-8"
+      }
+    },
+    {
+      "id": "fy9-sailymislait-s8",
+      "title": "A kick on a football",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy4-9",
+        "fy4-7",
+        "fy4-8"
+      ],
+      "figure": "fy4-9/tarkistus-kolmio",
+      "text": "A football is kicked straight upwards, and the ball is initially at rest. The mass of the ball is $0.43\\,\\text{kg}$. The graph shows the force with which the foot kicks the ball as a function of time. The kick is so short that gravity and air resistance can be ignored during it. The zero level is the height of the ball at the moment of the kick.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the impulse that the foot exerts on the ball.",
+          "answer": {
+            "value": 5.4,
+            "unit": "N s",
+            "tolerance": 0.2
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The triangle in the graph has a height of $900\\,\\text{N}$ and a base of $12\\,\\text{ms}$, that is $0.012\\,\\text{s}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The impulse is the area between the force-time graph and the time axis: for a triangle $I = \\tfrac12 F_\\text{max}\\,\\Delta t$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nI &= \\tfrac12 \\cdot 900\\,\\text{N} \\cdot 0.012\\,\\text{s} \\\\\n&= 5.4\\,\\text{N s}\n\\end{aligned}\n$$, upwards"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "With what speed does the ball leave the kick?",
+          "answer": {
+            "value": 12.558,
+            "unit": "m/s",
+            "tolerance": 0.4
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The impulse equals the change in momentum: $I = \\Delta p = mv - 0$, so $v = \\dfrac{I}{m}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\dfrac{5.4\\,\\text{N s}}{0.43\\,\\text{kg}} = 12.56\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 13\\,\\text{m/s}$ with two significant figures, upwards."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the kinetic energy of the ball right after the kick and the height to which the ball would rise without air resistance.",
+          "answer": [
+            {
+              "name": "Ek",
+              "value": 33.91,
+              "unit": "J",
+              "tolerance": 1.0
+            },
+            {
+              "name": "h",
+              "value": 8.038,
+              "unit": "m",
+              "tolerance": 0.3
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{k} = \\tfrac12 mv^2$. Without air resistance the mechanical energy is conserved: $\\tfrac12 mv^2 = mgh$, so $h = \\dfrac{v^2}{2g}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= \\tfrac12 \\cdot 0.43\\,\\text{kg} \\\\\n&\\cdot (12.56\\,\\text{m/s})^2 \\\\\n&\\approx 33.9\\,\\text{J}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$h = \\dfrac{(12.56\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\approx 8.04\\,\\text{m}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E_\\text{k} \\approx 34\\,\\text{J}$ and $h \\approx 8.0\\,\\text{m}$ with two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "In a real kick the ball rises to a maximum height of $6.5\\,\\text{m}$. Calculate the work done by air resistance and the mean magnitude of air resistance during the rise. What happens to the energy?",
+          "answer": [
+            {
+              "name": "W",
+              "value": -6.49,
+              "unit": "J",
+              "tolerance": 0.5
+            },
+            {
+              "name": "F",
+              "value": 0.998,
+              "unit": "N",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energy principle: $E_\\text{k0} + W_\\text{air} = mgh_\\text{measured}$, so $W_\\text{air} = mgh_\\text{measured} - E_\\text{k0}$. Mean force: $F = \\dfrac{-W_\\text{air}}{h_\\text{measured}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nE_\\text{p} &= 0.43\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\cdot 6.5\\,\\text{m} \\\\\n&\\approx 27.4\\,\\text{J}\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nW_\\text{air} &= 27.4\\,\\text{J} - 33.9\\,\\text{J} \\\\\n&\\approx -6.5\\,\\text{J}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{6.5\\,\\text{J}}{6.5\\,\\text{m}} \\approx 1.0\\,\\text{N}$"
+            },
+            {
+              "text": "Explains that the mechanical energy is about $19\\,\\%$ lower than without air resistance. It has become internal energy of the air and the ball, which is transferred to the surroundings as heat.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-9",
+        "math": "fy4-9",
+        "concept": "fy4-8",
         "transfer": "fy4-8"
       }
     }

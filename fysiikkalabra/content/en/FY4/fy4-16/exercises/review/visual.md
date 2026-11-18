@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4124ea7e4d54752e
+CONTENT-HASH: 9c8d836bec078c7a
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md, 16-11 Substitution (untouched) — the single-row chain is clipped at 1280 px; known in docs/clipped-formulas/FY4.tsv, needs its own fix.
+- [Minor] solutions.md, 16-21 Formula — one long paragraph before the first display; a break before "So $E_\text{initial} + ...$" would help (Round 1, unchanged).
+- [Minor] solutions.md, friction-work label — $W_\mu$ in the first tasks and $W_{\mu 1}$, $W_{\mu 2}$ in the two-part task; consistent in meaning.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-16-L1-03, L1-05, L1-06, L1-07, L1-08, L2-02, L2-04, L2-06, L2-07, L2-08, L3-01, L3-02, L3-04 and L3-05 -390.png (all 14; plus fy4-16-open-exercises-1280-8).
-- Every split separates one point from the next (result, equation, each rejected claim; steps of the graph reading; the real-snow caveat); no cut mid-thought, spacing even, nothing clipped, display blocks intact.
+- Round 2 delta (solutions.md, five Formula lines: friction and air-resistance work now signed, $W_\mu = -F_\mu L$, $W_\text{d} = -F_\text{d} h$; the balance written $E_\text{initial} + W = E_\text{final}$ with the minus sign in the display). Opened content/en/FY4/fy4-16/review/shots/fy4-16-open-exercises-L2-1280-4.png (16-11 start) and fy4-16-open-exercises-L3-1280-7.png (16-21 Principle, figure, new Formula start). Read every changed line.
+- Signs are consistent between the stated work, the balance and the displayed equation in all five lines; the prose "$-\mu_1 mg\cos\alpha\cdot L$" in the Principle matches. No grep hit for an unsigned friction work left. Layout intact, no new clipping. Hash unchanged at end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
