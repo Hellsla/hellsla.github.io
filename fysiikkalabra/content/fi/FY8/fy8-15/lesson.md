@@ -419,7 +419,9 @@ Vapaa neutroni hajoaa reaktiolla $n \to p + e^- + \bar{\nu}_e$. Näytä, että v
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Reaktio $n \to p + e^- + \bar{\nu}_e$ ja taulukon luvut $q$, $B$ ja $L$. Massat $m_n = 939{,}565\,\tfrac{\text{MeV}}{c^2}$, $m_p = 938{,}272\,\tfrac{\text{MeV}}{c^2}$ ja $m_e = 0{,}511\,\tfrac{\text{MeV}}{c^2}$. Kysytään, säilyvätkö $q$, $B$ ja $L$, sekä vapautuvaa energiaa $Q$ megaelektronivoltteina.
+**Tunnetut ja kysytty.** Reaktio $n \to p + e^- + \bar{\nu}_e$ ja taulukon luvut $q$, $B$ ja $L$. Massat $m_n = 939{,}565\,\tfrac{\text{MeV}}{c^2}$, $m_p = 938{,}272\,\tfrac{\text{MeV}}{c^2}$ ja $m_e = 0{,}511\,\tfrac{\text{MeV}}{c^2}$.
+
+Kysytään, säilyvätkö $q$, $B$ ja $L$, sekä vapautuvaa energiaa $Q$ megaelektronivoltteina.
 
 <!-- vaihe -->
 

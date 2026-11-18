@@ -230,7 +230,9 @@ Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $64
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Fotonin aallonpituus $\lambda = 640\,\text{nm}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja valon nopeus $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$. Kysytään energiatilojen erotusta $\Delta E = E_\text{y} - E_\text{a}$ elektronivoltteina.
+**Tunnetut ja kysytty.** Fotonin aallonpituus $\lambda = 640\,\text{nm}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja valon nopeus $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
+
+Kysytään energiatilojen erotusta $\Delta E = E_\text{y} - E_\text{a}$ elektronivoltteina.
 
 <!-- vaihe -->
 

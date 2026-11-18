@@ -702,7 +702,7 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
   header.top,nav.crumbs,nav.toc,footer.bottom,#sim,form.check,p.howto{display:none!important}
   .page{width:auto;padding:0;display:block}main.reading{max-width:none}
   details>summary::before{content:""}details>summary{font-weight:600}
-  details.level{border:0;padding:0;break-inside:avoid}li{break-inside:avoid}
+  details.level,.core-card{border:0;padding:0;break-inside:avoid}li{break-inside:avoid}
   .katex-display{border:0;background:none}a{color:inherit;text-decoration:none}
   h2{break-after:avoid}
   .fig,article svg{break-inside:avoid}article svg{border:0;padding:0}
@@ -930,18 +930,18 @@ details.fold[open]{padding-bottom:.1rem}
 details.fold.more{margin:0 0 1.25rem}   /* Tutki: the investigations after the first one (teacher 2026-11-06) */
 
 /* exercises: each level a box, each exercise a numbered item on a rule */
-details.level{max-width:calc(var(--measure) + 3rem);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:0 1.2rem;margin:0 0 .8rem}
+details.level,.core-card{max-width:calc(var(--measure) + 3rem);background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius);padding:0 1.2rem;margin:0 0 .8rem}
 details.level>summary{min-height:52px;font:700 var(--fs-h3) var(--sans)}
 details.level>summary .count{margin-left:.6rem}
 details.level[open]>summary{border-bottom:1px solid var(--line-2)}
-details.level>ol{margin:0;padding:0 0 .6rem;list-style:none}
-details.level>ol>li{margin:0;padding:.8rem 0;border-bottom:1px solid var(--line-2)}
-details.level>ol>li:last-child{border-bottom:0}
+details.level>ol,.core-card>ol{margin:0;padding:0 0 .6rem;list-style:none}
+details.level>ol>li,.core-card>ol>li{margin:0;padding:.8rem 0;border-bottom:1px solid var(--line-2)}
+details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
 /* The exercise's running number "6-3" (chapter-exercise, teacher 2026-11-04, build.py number_label): first in the
    exercise, in place of the list marker that restarted at every level; lesson.js moves it into the head row. */
 .ex-num{display:inline-block;margin:0 .6rem .25rem 0;font:700 var(--fs-h3) var(--sans);color:var(--accent-deep);white-space:nowrap;font-variant-numeric:tabular-nums}
 .ex-head .ex-num{margin:0}.practice-task h3 .ex-num{font:inherit;color:var(--accent-deep);margin:0 .35rem 0 0}
-@media (max-width:600px){details.level{padding:0 .8rem}.feedback{margin-left:0}}
+@media (max-width:600px){details.level,.core-card{padding:0 .8rem}.feedback{margin-left:0}}
 
 /* a figure with the text it explains (build.py fig_rows): text first, its figure under it in the reading column, with
    room around it; side by side on a wide screen only when the two are about as tall (.fig-row.side) */
@@ -1061,7 +1061,6 @@ nav.chapter-nav a.prev .dir::before{content:"← "}nav.chapter-nav a.next .dir::
 fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="no"]) .practice-hint{display:block}
 /* the exercise path (teacher 2026-10-29): which exercises are core, extra and challenging, said once and marked */
 .ex-path{max-width:calc(var(--measure) + 3rem);margin:0 0 1rem;font-size:var(--fs-ui);line-height:1.5;color:var(--ink-2)}
-.level-lead{margin:.2rem 0 .6rem;font-size:var(--fs-ui);color:var(--ink-2)}
 .ex-core{display:inline-block;margin:0 .5rem .25rem 0;padding:.05rem .55rem;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent);color:var(--accent-deep);font-size:.8125rem;font-weight:700;vertical-align:.1em}
 .ex-core.ex-ext{background:transparent;border-style:dashed}
 /* Annetut tehtävät (teacher 2026-11-07, templates/tehty.js): an assigned exercise has a quiet green left edge and the tag
@@ -1069,7 +1068,7 @@ fieldset.choice[data-state="no"] .practice-hint,.numeric:has(output[data-state="
    "Avaa isoksi". The module page's Oma eteneminen: the counter, a bar and the graph by date. Colours from the theme's
    variables (the site has no dark theme yet; these follow it when one comes). */
 :root{--given:#2f8a4f}
-details.level>ol>li.assigned{border-left:3px solid var(--given);padding-left:.6rem;margin-left:calc(-.6rem - 3px)}   /* the edge in the margin: the task keeps its full width */
+details.level>ol>li.assigned,.core-card>ol>li.assigned{border-left:3px solid var(--given);padding-left:.6rem;margin-left:calc(-.6rem - 3px)}   /* the edge in the margin: the task keeps its full width */
 .ex-core.ex-given{background:transparent;border-color:var(--given);color:var(--accent-deep)}
 #exercises .ex-head:has(>.ex-done){position:relative;padding-right:8.75rem}.ex-head>.ex-done{position:absolute;top:0;right:3.1rem;margin:0}   /* beside Avaa isoksi, never on a row of its own */
 .ex-done{display:inline-flex;align-items:center;gap:.4rem;min-height:40px;padding:0 .25rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);cursor:pointer;white-space:nowrap}

@@ -1079,7 +1079,9 @@ In a double-slit experiment, red laser light of wavelength $633\,\text{nm}$ is u
 
 <!-- vaihe -->
 
-**Given and asked.** ${\lambda = 633\,\text{nm}}$, ${P = 1.0 \cdot 10^{-13}\,\text{W}}$, ${h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ and ${c = 2.998 \cdot 10^8\,\text{m/s}}$. We are asked for the number of photons per second $\tfrac{N}{t}$ and the average distance $d$ between successive photons.
+**Given and asked.** ${\lambda = 633\,\text{nm}}$, ${P = 1.0 \cdot 10^{-13}\,\text{W}}$, ${h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ and ${c = 2.998 \cdot 10^8\,\text{m/s}}$.
+
+We are asked for the number of photons per second $\tfrac{N}{t}$ and the average distance $d$ between successive photons.
 
 <!-- vaihe -->
 

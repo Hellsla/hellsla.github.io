@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6e26a08a08a64312
-SCOPE: delta (round 2): new Sovella tasks fy9-aallot-s7 and s8 (task, figures fy5-12/ruudukko-tehtava and fy5-13/kuvio-tehtava, solutions) and the changed intro; s1-s6 not re-judged. Judged from the fi captures; en has the same cut as fi (58 labelled blocks per set, same formulas and rows); check_layout.py --width 360 OK for fi, en, fi-easy.
+CONTENT-HASH: 2ab8e54bc5beb6bd
+SCOPE: delta: new Sovella tasks s7 and s8 (figures from the catalog, aligned calculation rows, LaTeX units, English decimal points) judged at 390 px, check_layout at 360 px; other tasks not re-judged
 
 ## Blocking
-(none) Round 1 had no blocking items; the significant-figure reasons in s7 a, s7 b, s8 a now read correctly (two, three, three figures with the reason named); en uses decimal points, fi and fi-easy decimal commas.
+- none
 
 ## Polish
-- [Minor] s8 figure at 390 px: ruler tick labels are small and "1,20" sits against the pulley post; L is repeated in the task text, so reading is not blocked.
-- [Minor] s7 solution a: the Vastaus box frames only s_1; s_2 and Delta s are plain text below it.
-- [Minor] s7 Sijoitus rows end with a stray semicolon after each aligned block.
+- [Minor] s8 figure (fy5-13/kuvio-tehtava) — the ruler numbers are about 9 px at 390 px and the label `1.20` is partly covered by the wooden post at the pulley — catalog figure fix: move the post or shift the label.
+- [Minor] s7 figure (fy5-12/ruudukko-tehtava) — grid has no numbering; the scale bar `1 square = 0.50 m` carries it, which is adequate.
 
 ## Checked
-- exercises-390-50, 51, 57, 58 (s7 task, figure, solution; s8 task, figure, parts and solution a); calculation rows aligned on '=', no clipping at 360-390 px; units in LaTeX with thin space.
-- Not opened: 1280 captures, s1-s6.
+- Unit page captures made (screenshot.py fy9-aallot --lang en); packet read; page opened at 390 px with every box open, tasks s7 and s8 captured as element screenshots (statement, figure, parts, model answer, substitution, answer, reasonableness).
+- check_layout.py fy9-aallot --width 360: OK for en (known clipped formulas are old rows, none in s7/s8).
+- s7 (two loudspeakers on a grid, path difference, interference) and s8 (standing wave on a string with ruler, nodes at 0.30 m steps): figure legibility at 390 px, wording, equations, answer blocks, reasonableness.
+
+## Scores
+illustrations 4 · typography 5 · Finnish (English prose) 5 · accessibility 5

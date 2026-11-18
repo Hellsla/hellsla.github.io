@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: de4f07454a7b19ba
+CONTENT-HASH: 1eb3168abba0c441
 
-Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
+Round 1 (delta): paragraph cuts in lesson.md and one inquiry prompt sentence.
 
 ## Blocking
 - None.
@@ -10,7 +10,8 @@ Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a 
 - None.
 
 ## Checked
-- No capture of this lesson was opened in round 2. Judged from the shared build (mathlayout.with_punct), which I verified on fy8-3, fy8-8, fy8-12 and fy8-16 (marks sit inside the last row, no lone mark); the text of this lesson is unchanged by it.
+- fy8-15-theory-1280-1 (cut paragraphs, figures beside text, maths), fy8-15-stage-selita-390-3 (phone width, antiparticle section and figure), fy8-15-open-ennusta-1280-1 (predictions; the changed beta-decay review prompt is in the optional review set, its wording reads cleanly).
+- Layout survived the paragraph cuts; no clipping, quantities and units set as maths.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

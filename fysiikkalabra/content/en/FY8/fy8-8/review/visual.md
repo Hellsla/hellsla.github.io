@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: edb76e29846abfbf
+CONTENT-HASH: 2603a9b902cc92bd
 
-Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
+Delta: the optional Think about it review task (smoke-detector ionisation) replaced the energy-level photon task.
 
 ## Blocking
 - None.
 
 ## Polish
-- None.
+- [Minor] Review feedback — "Correct (chapter *...*):" is followed by a lifted formula and then "In this chapter..."; reads fine, no change needed beyond optional wording.
 
 ## Checked
-- Opened (fy8-8): example-390-1. Lifted formulas in the staged example and open solutions show the sentence mark inside the formula's last row; no lone mark, no clipping, rows aligned.
+- Opened stage-herata-390 (closed task) and my own 390 px render of the opened task (choices, Answer, correct feedback with the lifted formula): the formula rows are aligned, the closing full stop sits inside the last row, nothing is clipped, and the units are upright with a thin space.
+- The diff is the task text and answers only. No figure changed.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

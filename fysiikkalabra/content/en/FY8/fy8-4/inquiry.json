@@ -23,25 +23,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the photoelectric effect",
-      "prompt": "A metal plate is illuminated with light that releases electrons from it. The wavelength is kept the same, but the intensity of the light is doubled. What happens?",
+      "title": "Review: light intensity and photons",
+      "prompt": "In a double-slit experiment the light of a laser hits the screen. The wavelength is kept the same, but the intensity of the light is doubled. What happens to the photons that hit the screen?",
       "choices": [
         {
-          "text": "The maximum kinetic energy of the released electrons doubles, because the plate receives more energy.",
-          "feedback": "The maximum kinetic energy depends on the energy $hf$ of one photon, not on the amount of light (chapter *The photoelectric effect and the photon*). The same wavelength means the same photon energy, so each electron receives as much energy as before."
+          "text": "The energy of each photon doubles, because the screen receives more energy.",
+          "feedback": "The energy of one photon is $hf$ and depends only on the frequency (chapter *The photoelectric effect and the photon*). The same wavelength means the same photon energy. The extra energy comes from the larger number of photons."
         },
         {
-          "text": "About twice as many electrons are released per second, but their maximum kinetic energy stays the same.",
+          "text": "About twice as many photons hit per second, but the energy of each photon stays the same.",
           "correct": true,
-          "feedback": "Correct. Double the intensity means double the number of photons per second, and one photon releases at most one electron. The photon energy $hf$ does not change (chapter *The photoelectric effect and the photon*). In this lesson, we look at how photons behave when there are very few of them."
+          "feedback": "Correct. Double the intensity means double the number of photons per second. The photon energy $hf$ does not change (chapter *The photoelectric effect and the photon*). In this lesson, we look at how photons behave when there are very few of them."
         },
         {
-          "text": "The energy of each photon doubles, so the electrons are released faster.",
-          "feedback": "The energy of a photon is $hf$, and it depends only on the frequency. Increasing the intensity increases the number of photons, not the energy of a single photon."
+          "text": "The number of photons stays the same, but they travel faster and are more energetic.",
+          "feedback": "In a vacuum photons always travel at the speed of light, and their energy is $hf$. Increasing the intensity increases the number of photons, not the energy of a single photon."
         },
         {
-          "text": "Nothing changes, because the intensity has no effect on the photoelectric effect at all.",
-          "feedback": "The intensity does have an effect: it tells how many photons hit the plate per second. That is why more electrons are released, although the maximum kinetic energy of each stays the same."
+          "text": "Nothing changes, because the intensity has no effect on photons at all.",
+          "feedback": "The intensity does have an effect: it tells how many photons hit the screen per second. There are therefore more photons, although the energy of each stays the same."
         }
       ]
     },
