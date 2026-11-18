@@ -654,10 +654,10 @@ $$
 Vuo on nolla hetkellä $t = \dfrac{5{,}0\,\text{mWb}}{20\,\text{mWb/s}} = 0{,}25\,\text{s}$. Silloin vuon muutosnopeus on sama $-20\,\text{mWb/s}$ kuin ennen ja jälkeen. Induktiojännite on edelleen $2{,}4\,\text{V}$. Jännite riippuu vuon muutosnopeudesta eikä vuon arvosta. Siksi virran suunta ei muutu, vaikka vuon etumerkki vaihtuu.
 
 ### Yleisiä virheitä
-- a-kohdassa lasketaan vuon muutokseksi $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb}$ tai käytetään vain loppuarvoa $3{,}0\,\text{mWb}$, vaikka vuo vaihtaa etumerkkiä; oikea muutos on $8{,}0\,\text{mWb}$.
+- a-kohdassa vuon muutokseksi lasketaan $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb}$. Vuo vaihtaa kuitenkin etumerkkiä. Oikea muutos on $8{,}0\,\text{mWb}$.
 - a-kohdassa $\text{mWb}$ jää muuntamatta yksiköksi $\text{Wb}$, jolloin jännite on tuhatkertainen ($2400\,\text{V}$ oikean $2{,}4\,\text{V}$:n sijaan).
-- b-kohdassa lasketaan energia koko ajalta yhdellä jännitteellä tai otetaan väli $0{,}40$–$0{,}60\,\text{s}$ mukaan nollasta poikkeavalla jännitteellä.
-- c-kohdassa sanotaan, että virran suunta vaihtuu, kun vuo on nolla, tai että virta on nolla silloin; virta riippuu muutosnopeudesta, ei vuon arvosta.
+- b-kohdassa energia lasketaan koko ajalle yhdellä jännitteellä. Tai väli $0{,}40$–$0{,}60\,\text{s}$ otetaan mukaan, vaikka jännite on silloin nolla.
+- c-kohdassa sanotaan, että virran suunta vaihtuu tai virta on nolla, kun vuo on nolla. Virta riippuu vuon muutosnopeudesta eikä vuon arvosta.
 
 ### Hyväksytään myös
 - b-kohdassa teho muodossa $P = e I$ virran $I = \dfrac{e}{R}$ kautta: $I_1 = 0{,}30\,\text{A}$ ja $I_3 = 0{,}225\,\text{A}$ antavat saman tuloksen $0{,}37\,\text{J}$.
