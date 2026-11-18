@@ -42,7 +42,7 @@
 **Annettu:** tulokulma pisaran pinnalla $\alpha = 55{,}0^\circ$, taitekulma $\beta = 38{,}0^\circ$, yksi heijastus pisaran takapinnasta
 **Kysytty:** kulma $\theta$ vastapisteen suunnasta asteina
 **Periaate:** Säde kääntyy tulokohdassa kulman $\alpha - \beta$, heijastuksessa kulman $180^\circ - 2\beta$ ja lähtökohdassa kulman $\alpha - \beta$. Kokonaiskääntymä on $180^\circ + 2\alpha - 4\beta$. Valo lähtee kulmassa $180^\circ$ miinus kääntymä siihen suuntaan nähden, josta auringonvalo tuli.
-**Kaava:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) + (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
+**Kaava:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) \\ &+ (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita: kulmat ovat asteina.
 **Sijoitus:** $\theta = 4 \cdot 38{,}0^\circ - 2 \cdot 55{,}0^\circ = 152{,}0^\circ - 110{,}0^\circ = 42{,}0^\circ$
 **Vastaus:** $42{,}0^\circ$, kulmien tarkkuudella yksi desimaali.

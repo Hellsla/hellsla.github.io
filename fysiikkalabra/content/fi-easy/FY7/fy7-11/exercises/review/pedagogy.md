@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cbcc16dada8a4f00
+CONTENT-HASH: 494809aa821182e9
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Kaava step of every solution: basic law first, derived form, symbolic simplification, then Sijoitus (diff and current solutions.md); aligned blocks render one equation per row (packet diff shows them flattened).
-- Language checked: fi-easy. Hash cbcc16dada8a4f00 at start; unchanged at end.
+- Delta round 2: fy7-11-L1-05 Kaava first row split into two lines (&+ continuation); no maths, numbers or answers changed.
+- Derivation order (basic law, derived formula, Sijoitus) and the formula used in Sijoitus unchanged.
+- Layout-only change; layout checks green. Hash identical at start and end.

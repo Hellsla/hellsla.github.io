@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 322aab7bd04d5c61
+CONTENT-HASH: c5ba678147e84a10
 
 ## Blocking
 (none)
@@ -8,8 +8,6 @@ CONTENT-HASH: 322aab7bd04d5c61
 (none)
 
 ## Checked
-- Delta: only the Kaava step of solutions.md was rewritten (basic law, derived formula, symbolic simplification, then Sijoitus); numbers, answers and tasks unchanged.
-- The derivation steps follow the required order and are aligned blocks in the file; the packet diff shows them flattened.
-- Each Sijoitus still uses the formula its Kaava ends with.
-- Paragraph splits in long Periaate and Vastaus texts are layout only; layout checks are green.
-- Language fi: nothing to correct. Hash 322aab7bd04d5c61 at start and end.
+- Delta round 2: fy7-11-L1-05 Kaava first row split into two lines (&+ continuation); no maths, numbers or answers changed.
+- Derivation order (basic law, derived formula, Sijoitus) and the formula used in Sijoitus unchanged.
+- Layout-only change; layout checks green. Hash identical at start and end.

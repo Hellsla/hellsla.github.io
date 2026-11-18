@@ -42,7 +42,7 @@
 **Given:** angle of incidence at the surface of the droplet $\alpha = 55.0^\circ$, angle of refraction $\beta = 38.0^\circ$, one reflection from the back surface of the droplet
 **Find:** angle $\theta$ from the direction of the antisolar point in degrees
 **Principle:** The ray turns by $\alpha - \beta$ at the point of entry, by $180^\circ - 2\beta$ at the reflection and by $\alpha - \beta$ at the point of exit. The total turning is $180^\circ + 2\alpha - 4\beta$, so the light leaves at $180^\circ$ minus the turning, measured from the direction the sunlight came from.
-**Formula:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) + (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
+**Formula:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) \\ &+ (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees.
 **Substitution:** $\theta = 4 \cdot 38.0^\circ - 2 \cdot 55.0^\circ = 152.0^\circ - 110.0^\circ = 42.0^\circ$
 **Answer:** $42.0^\circ$, to one decimal like the angles.
