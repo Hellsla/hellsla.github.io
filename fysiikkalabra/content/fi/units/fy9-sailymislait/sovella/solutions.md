@@ -474,7 +474,13 @@ F &= \dfrac{15\,\text{J}}{6{,}0\,\text{m}} \\
 \end{aligned}
 $$
 **Vastaus:** $W_\text{kitka} = -15\,\text{J}$ ja $F = 2{,}5\,\text{N}$, kaksi merkitsevää numeroa. Kitkan työ on negatiivinen, koska kitka on liikettä vastaan. Energiaa muuttui sisäenergiaksi $15\,\text{J}$, joka siirtyy lämpönä ympäristöön.
-**Järkevyys:** Kitka vei $\dfrac{15\,\text{J}}{40\,\text{J}} = 37{,}5\,\%$ alun energiasta. Kelkan paino on $2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 19{,}6\,\text{N}$, joten kitkavoima on noin $13\,\%$ painosta. Liukukitkakerroin on $\mu = \dfrac{F}{mg\cos\alpha} \approx 0{,}14$ (kaltevuuskulma $\alpha \approx 20^\circ$), mikä on mahdollinen lumisella tai kostealla rinteellä.
+**Järkevyys:** Kitka vei $\dfrac{15\,\text{J}}{40\,\text{J}} = 37{,}5\,\%$ alun energiasta. Kelkan paino on $$
+\begin{aligned}
+G &= mg \\
+&= 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 19{,}6\,\text{N}
+\end{aligned}
+$$, joten kitkavoima on noin $13\,\%$ painosta. Liukukitkakerroin on $\mu = \dfrac{F}{mg\cos\alpha} \approx 0{,}14$ (kaltevuuskulma $\alpha \approx 20^\circ$), mikä on mahdollinen lumisella tai kostealla rinteellä.
 
 ### c)
 **Annettu:** $m = 2{,}0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ alapäässä, $E_{\text{p}0} = 40\,\text{J}$
@@ -571,7 +577,13 @@ I &= \tfrac12 \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} \\
 \end{aligned}
 $$
 **Vastaus:** $I = 5{,}4\,\text{N s}$ ylöspäin, kaksi merkitsevää numeroa kuten kestossa $12\,\text{ms}$.
-**Järkevyys:** Keskivoima on $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ ja se vaikuttaa $0{,}012\,\text{s}$, joten $450\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N s}$. Pallon paino on vain $0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}2\,\text{N}$, joten sen jättäminen huomiotta potkun aikana on perusteltua.
+**Järkevyys:** Keskivoima on $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ ja se vaikuttaa $0{,}012\,\text{s}$, joten $450\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N s}$. Pallon paino on vain $$
+\begin{aligned}
+G &= mg \\
+&= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 4{,}2\,\text{N}
+\end{aligned}
+$$, joten sen jättäminen huomiotta potkun aikana on perusteltua.
 
 ### b)
 **Annettu:** $m = 0{,}43\,\text{kg}$, alkunopeus $0$, impulssi $I = 5{,}4\,\text{N s}$

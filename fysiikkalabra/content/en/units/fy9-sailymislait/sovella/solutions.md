@@ -474,7 +474,13 @@ F &= \dfrac{15\,\text{J}}{6.0\,\text{m}} \\
 \end{aligned}
 $$
 **Answer:** $W_\text{friction} = -15\,\text{J}$ and $F = 2.5\,\text{N}$, two significant figures. The work of friction is negative because friction is against the motion. $15\,\text{J}$ of energy became internal energy, which is transferred to the surroundings as heat.
-**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 19.6\,\text{N}$, so the friction force is about $13\,\%$ of the weight. The coefficient of sliding friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
+**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $$
+\begin{aligned}
+G &= mg \\
+&= 2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 19.6\,\text{N}
+\end{aligned}
+$$, so the friction force is about $13\,\%$ of the weight. The coefficient of sliding friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
 
 ### c)
 **Given:** $m = 2.0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ at the bottom, $E_{\text{p}0} = 40\,\text{J}$
@@ -571,7 +577,13 @@ I &= \tfrac12 \cdot 900\,\text{N} \cdot 0.012\,\text{s} \\
 \end{aligned}
 $$
 **Answer:** $I = 5.4\,\text{N s}$ upwards, two significant figures like the duration $12\,\text{ms}$.
-**Reasonableness:** The mean force is $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ and it acts for $0.012\,\text{s}$, so $450\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N s}$. The weight of the ball is only $0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 4.2\,\text{N}$, so ignoring it during the kick is justified.
+**Reasonableness:** The mean force is $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ and it acts for $0.012\,\text{s}$, so $450\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N s}$. The weight of the ball is only $$
+\begin{aligned}
+G &= mg \\
+&= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 4.2\,\text{N}
+\end{aligned}
+$$, so ignoring it during the kick is justified.
 
 ### b)
 **Given:** $m = 0.43\,\text{kg}$, initial speed $0$, impulse $I = 5.4\,\text{N s}$
