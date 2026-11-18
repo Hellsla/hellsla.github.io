@@ -42,6 +42,9 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 ### 0h. Generoidut tiedostot CI:lle (opettaja 2026-11-17, 0g:n jälkeen)
 `docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
 
+### 0j. round.py: FY9-units (koordinaattori 2026-11-18)
+Varattu: claude/round-fy9-units. Jaettu muutos (`scripts/`), yhdistetään yksin. `round.py fy9-<id>` ei tunne unit-tunnuksia ("no lesson folder for 'fy9-liike'", PR #708); lisätään unit-tuki, joka ajaa unitin Sovella-tehtäväsarjan katselmointipaketit, kaappaukset, hashin ja `--finish`-vaiheen kuten luvuille. Selvitetään myös, miksi `figcat.owners()` ei tunne unitin omaa `sovella/figures.py`:tä (korjaus, jos pieni; muuten ehdotus).
+
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Jäljellä, opettajan päätettävä: erä 1
 (jaetut komponentit: taulukoiden otsakkeet ja tyhjät rivit 390 px:ssä, listojen numerointi, laskurivit listoissa, apulinkit,
