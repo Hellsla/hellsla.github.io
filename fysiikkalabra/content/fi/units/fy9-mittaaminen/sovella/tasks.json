@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa mittaamisen, epävarmuuden ja kuvaajien taidot. Päätä itse, miten aineisto kannattaa esittää ja mitä kuvaajasta luetaan, ja perustele tuloksen tarkkuus. Viimeinen tehtävä yhdistää mittaamisen kaasujen tilanyhtälöön.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa mittaamisen, epävarmuuden ja kuvaajien taidot. Päätä itse, miten aineisto kannattaa esittää ja mitä kuvaajasta luetaan, ja perustele tuloksen tarkkuus. Kaksi tehtävää alkaa valmiista kuvaajasta, ja yksi tehtävä yhdistää mittaamisen kaasujen tilanyhtälöön.",
  "tasks": [
   {
    "id": "fy9-mittaaminen-s1",
@@ -813,6 +813,248 @@
     "graph": "fy1-4",
     "concept": "fy3-9",
     "transfer": "fy3-10"
+   }
+  },
+  {
+   "id": "fy9-mittaaminen-s7",
+   "title": "Jousen kalibrointi",
+   "source": "example",
+   "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista, ja niihin on lisätty pientä satunnaista vaihtelua mittauksen tapaan.",
+   "skills": [
+    "fy1-3",
+    "fy1-4",
+    "fy5-8"
+   ],
+   "figure": "fy5-8/mittaus",
+   "text": "Opiskelija kalibroi jousen ripustamalla siihen vuorotellen eri massoja. Hän mittaa jousen venymän $x$ viivaimella ja merkitsee kuvaajaan jousta venyttävän voiman $F_\\text{v}$ venymän funktiona. Venymän lukemisen epävarmuudeksi arvioidaan $0{,}2\\,\\text{cm}$; voimat tunnetaan tarkasti.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 5,
+     "text": "Sovita pisteisiin suora ja määritä jousen jousivakio $k$ epävarmuuksineen.",
+     "answer": {
+      "value": 30.0,
+      "unit": "N/m",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Yksi suora pisteiden lomaan, ja piirretyn suoran viereen on arvioitu jyrkin ja loivin suora, jotka vielä kulkevat kaikkien pisteiden $\\pm 0{,}2\\,\\text{cm}$:n vaakavälien kautta."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Jousivoima on suoraan verrannollinen venymään, $F_\\text{v} = kx$, joten $k = \\dfrac{\\Delta F_\\text{v}}{\\Delta x}$; senttimetrit muunnetaan metreiksi."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(1{,}0\\,\\text{cm};\\ 0{,}30\\,\\text{N})$ ja $(10{,}0\\,\\text{cm};\\ 3{,}00\\,\\text{N})$: $0{,}300\\,\\text{N/cm} = 30{,}0\\,\\text{N/m}$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Rajasuorien jousivakiot ovat noin $28{,}8\\,\\text{N/m}$ ja $31{,}3\\,\\text{N/m}$, joten epävarmuus on noin $1{,}2\\,\\text{N/m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$k = (30{,}0 \\pm 1{,}2)\\,\\text{N/m}$: epävarmuudessa kaksi numeroa, koska sen ensimmäinen numero on $1$, ja jousivakio samaan desimaaliin."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 4,
+     "text": "Pitääkö sovitettavan suoran kulkea origon kautta? Perustele sekä jousen toiminnalla että aineistolla. Mitä tarkoittaisi, jos jousen suora leikkaisi $F_\\text{v}$-akselin kohdassa $+0{,}30\\,\\text{N}$?",
+     "criteria": [
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Aineisto sopii origon kautta kulkevaan suoraan: sovitetun suoran leikkaus on käytännössä nolla, ja kaikki suorat, jotka sopivat pisteiden epävarmuuksiin, leikkaavat $x$-akselin välillä $-0{,}20\\ldots{+}0{,}27\\,\\text{cm}$, johon nolla kuuluu."
+      },
+      {
+       "text": "Kun jousi on kuormittamaton, siihen ei kohdistu voimaa eikä se ole venynyt, joten ideaalisen jousen $F_\\text{v} = kx$ kulkee origon kautta.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Leikkaus $+0{,}30\\,\\text{N}$ tarkoittaisi, että jousi tarvitsee jo ennen venymistä noin $0{,}30\\,\\text{N}$:n voiman (esimerkiksi kierrokset ovat puristuneina toisiaan vasten) tai että venymän nollakohta on luettu väärin. Vastaava $x$-akselin leikkaus olisi noin $-1{,}0\\,\\text{cm}$, selvästi enemmän kuin lukemisen epävarmuus $0{,}2\\,\\text{cm}$.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tässä aineistossa suoran pakottaminen origon kautta on perusteltua. Jos vakiotermi erottuisi epävarmuudesta, suoraa ei saisi pakottaa origon kautta, koska kulmakerroin vääristyisi."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Jousta venytetään voimalla $4{,}5\\,\\text{N}$. Arvioi, kuinka paljon jousi venyy, ja kommentoi tuloksen luotettavuutta.",
+     "answer": {
+      "value": 15.0,
+      "unit": "cm",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$x = \\dfrac{F_\\text{v}}{k}$, ja $k$ on a-kohdan arvo; voima on newtoneina ja jousivakio $\\text{N/m}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nx &= \\dfrac{4{,}5\\,\\text{N}}{30{,}0\\,\\text{N/m}} \\\\\n&= 0{,}150\\,\\text{m} \\\\\n&= 15{,}0\\,\\text{cm}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Suhteellinen epävarmuus $\\tfrac{1{,}2}{30{,}0} \\approx 4{,}1\\,\\%$ antaa $\\Delta x \\approx 0{,}6\\,\\text{cm}$, eli $x = (15{,}0 \\pm 0{,}6)\\,\\text{cm}$."
+      },
+      {
+       "text": "Arvioi luotettavuutta: voima $4{,}5\\,\\text{N}$ ja venymä $15\\,\\text{cm}$ ovat kuvaajan alueen ($2{,}94\\,\\text{N}$ ja $9{,}8\\,\\text{cm}$) ulkopuolella, joten tulos on ekstrapolointia. Jousi voi ylittää kimmorajansa, ja ilmoitettu epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "experiment": "fy1-3",
+    "math": "fy5-8",
+    "communication": "fy1-4",
+    "concept": "fy5-8"
+   }
+  },
+  {
+   "id": "fy9-mittaaminen-s8",
+   "title": "Pudotettu teräskuula videolla",
+   "source": "example",
+   "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista, ja niihin on lisätty pientä satunnaista vaihtelua mittauksen tapaan.",
+   "skills": [
+    "fy1-4",
+    "fy1-6",
+    "fy4-2"
+   ],
+   "figure": "fy4-2/fall-points",
+   "text": "Teräskuula pudotetaan korkealta ja kuvataan videolle. Videosta mitataan kuulan putoamismatka $s$ yhdeksällä ajanhetkellä $t$ välillä $0\\ldots 0{,}40\\,\\text{s}$, $0{,}05\\,\\text{s}$:n välein; hetkellä $t = 0$ kuula irtoaa pidikkeestä. Matkan lukemisen epävarmuudeksi arvioidaan $0{,}01\\,\\text{m}$; ajat tunnetaan kuvataajuudesta tarkasti. Kuvaajassa on mittauspisteet.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Esitä aineisto kuvaajana, josta putoamiskiihtyvyys voidaan määrittää, ja sovita pisteisiin suora. Perustele kuvaajan valinta.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1,
+       "detail": "Vaaka-akselilla $t^2\\ (\\text{s}^2)$ ja pystyakselilla $s\\ (\\text{m})$, tasaväliset asteikot."
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "$t^2$ on laskettu jokaiselle ajalle oikein: $0$, $0{,}0025$, $0{,}0100$, $0{,}0225$, $0{,}0400$, $0{,}0625$, $0{,}0900$, $0{,}1225$ ja $0{,}1600\\,\\text{s}^2$, ja pisteet on merkitty erillisinä."
+      },
+      {
+       "text": "Perustelee: kuula putoaa levosta tasaisesti kiihtyen, $s = \\tfrac{1}{2}gt^2$, joten $s$ on suoraan verrannollinen aikaan $t^2$ ja kuvaaja on suora, jonka kulmakerroin on $\\tfrac{1}{2}g$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Yksi suora pisteiden lomaan; suoraa ei ole pakotettu origon kautta eikä pisteitä ole yhdistetty murtoviivaksi."
+      },
+      {
+       "text": "Suoran vakiotermi on noin $0{,}01\\,\\text{m}$ eli lukemisen epävarmuuden suuruinen. Se on pieni: kaikki pisteiden $\\pm 0{,}01\\,\\text{m}$:n välien kautta kulkevat suorat leikkaavat $s$-akselin välillä $+0{,}003\\ldots{+}0{,}012\\,\\text{m}$, eikä mikään origon kautta kulkeva suora sovi. Koska suoraa ei ole pakotettu origon kautta, vakiotermi ei vaikuta kulmakertoimeen.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä kuvaajasta putoamiskiihtyvyys $g$ epävarmuuksineen.",
+     "answer": {
+      "value": 10.35,
+      "unit": "m/s^2",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi ympyröidyt pisteet $(0{,}020\\,\\text{s}^2;\\ 0{,}113\\,\\text{m})$ ja $(0{,}150\\,\\text{s}^2;\\ 0{,}786\\,\\text{m})$: noin $5{,}18\\,\\text{m/s}^2$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Kulmakerroin on $\\tfrac{1}{2}g$, joten $g = 2 \\cdot \\dfrac{\\Delta s}{\\Delta t^2}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$g = 2 \\cdot 5{,}177\\,\\text{m/s}^2 \\approx 10{,}35\\,\\text{m/s}^2$"
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Jyrkin ja loivin suora, jotka kulkevat kaikkien pisteiden $\\pm 0{,}01\\,\\text{m}$:n välien kautta: kulmakertoimet noin $5{,}09$ ja $5{,}24\\,\\text{m/s}^2$, joten $\\Delta g \\approx 0{,}15\\,\\text{m/s}^2$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$g = (10{,}35 \\pm 0{,}15)\\,\\text{m/s}^2$: epävarmuudessa kaksi numeroa, koska sen ensimmäinen numero on $1$, ja tulos samaan desimaaliin."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 4,
+     "text": "Putoamiskiihtyvyyden paikallinen arvo on $9{,}81\\,\\text{m/s}^2$. Vertaa mittaustulosta tähän ja arvioi, mistä ero voi johtua.",
+     "criteria": [
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Ero on $0{,}54\\,\\text{m/s}^2$ eli noin $5{,}5\\,\\%$ ja yli kolme kertaa epävarmuus; arvo $9{,}81\\,\\text{m/s}^2$ on epävarmuusvälin $10{,}19\\ldots 10{,}48\\,\\text{m/s}^2$ ulkopuolella, joten ero ei selity satunnaisella lukemisvirheellä vaan viittaa systemaattiseen virheeseen."
+      },
+      {
+       "text": "Ilmanvastus pienentäisi mitattua kiihtyvyyttä, ei suurentaisi sitä, joten se ei selitä liian suurta tulosta.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Mahdollinen systemaattinen virhe: mittakaavan virhe noin $5{,}5\\,\\%$ tai kuvaväli noin $2{,}7\\,\\%$ pidempi kuin oletettu ($0{,}0514\\,\\text{s}$ eikä $0{,}05\\,\\text{s}$)."
+      },
+      {
+       "text": "Ehdottaa tarkistuksen: mittakaava tunnetulla pituudella kuulan putoamissuoran tasosta, kuvataajuuden tarkistus ja toistetut pudotukset.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "experiment": "fy1-3",
+    "math": "fy4-2",
+    "communication": "fy1-3",
+    "concept": "fy4-2"
    }
   }
  ]

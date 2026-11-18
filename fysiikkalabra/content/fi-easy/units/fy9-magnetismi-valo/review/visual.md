@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 39e4f9f03c069ab1
-Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
+CONTENT-HASH: 43b392b3a623282a
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Sijoitus split); older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+(none) Round 1:n Major on korjattu: fi-easy s9 b) Sijoitus on tasatuilla riveillä (`W = (2,4 V)²/8,0 Ω · 0,40 s` / `+ (1,8 V)²/8,0 Ω · 0,20 s` / `= 0,72 W · 0,40 s` / `+ 0,41 W · 0,20 s` / `= 0,29 J + 0,082 J` / `≈ 0,37 J`). Chromella 360 px:ssä mitattuna lohkot mahtuvat (scrollWidth = clientWidth), ei vaakavieritystä. Välitulos 0,41 W vastaa Järkevyys-kohtaa; luvut ja yksiköt samat kuin fi:ssä.
 
 ## Polish
-- C. s7 a) **Vastaus**: the interval is written "$2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$"; three dots read as an omission. Clearer: "välin $2{,}9976 \cdot 10^8\,\text{m/s}$:sta $2{,}9980 \cdot 10^8\,\text{m/s}$:iin". (Carried from round 1; round-1 Polish B is resolved.)
-- D. s7 e) **Mallivastaus**, second paragraph (about 75 words, 22 lines at 390 px): readable; a further break before "Magneettinen voima on kohtisuorassa liikesuuntaa vastaan, joten se ei tee työtä." would separate bending from energy. Optional.
+- [Minor] s9 b) aikavälit "0–0,80 s" voivat katketa viivan kohdalta; ei estä.
+- [Minor] Yksikköketju Järkevyys-kohdassa pysyy tekstirivinä; ei häiriötä.
 
 ## Checked
-- Hash at start and end: 39e4f9f03c069ab1. Captures re-made (177). `git diff -w` against c502cb9e26: only the paragraph breaks in sovella/solutions.md s7 e); no word changed.
-- Opened at full size: stage-exercises-390-60, -61, -62, -63; stage-exercises-1280-44.
-- s7 e) Mallivastaus: four separate paragraphs with normal paragraph spacing (aineisto / voima ja rata, ei työtä / vahva kenttä ja suprajohtavuus / säde ei laskettavissa klassisesti), at 390 and 1280 px; none exceeds a phone screen.
-- Nothing clipped at 390 px ($P = RI^2$, $RI^2 = 0$, $r = \tfrac{mv}{qB}$ inline intact); Yleisiä virheitä, Hyväksytään myös and the rubric with its aligned calculation rows follow unchanged.
+- fi-easy solutions.md s9 b lähdeteksti ja rakennettu sivu 360 px:ssä (kaavalohkojen leveydet). Vanhat tehtävät ja 1280 px ei avattu.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

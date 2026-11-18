@@ -139,6 +139,32 @@ out.update({f"{S}-s7-a": round(v7 / 1e8, 4), f"{S}-s7-a-ratio": round(v7 / c_maf
             f"{S}-s7-d-n-rounded": round(4.4e8 / 0.579e6, 0),
             f"{S}-s7-d-wrong-Ek": round(0.5 * m_car * 100 ** 2 / 1e6, 2), f"{S}-s7-d-wrong-n": round(E7 / (0.5 * m_car * 100 ** 2), 0)})
 
+# s8: the laser experiment (fy7-10/fit, values read from the fitted line): (0,30; 0,44) and (0,60; 0,89)
+Q8 = [(0.30, 0.44), (0.60, 0.89)]
+n8 = (Q8[1][1] - Q8[0][1]) / (Q8[1][0] - Q8[0][0])                 # slope of sin(a1) against sin(a2) = n of acrylic
+v8 = c / n8                                                        # m/s
+d8 = 0.15                                                          # m, the thickness of the plate
+t8 = d8 / v8                                                       # s
+ar8 = math.degrees(math.asin(1 / n8))                              # deg, the critical angle acrylic -> air
+out.update({f"{S}-s8-a": round(n8, 3), f"{S}-s8-b-v": round(v8 / 1e8, 3), f"{S}-s8-b-t": round(t8 * 1e9, 3),
+            f"{S}-s8-c": round(ar8, 2), f"{S}-s8-c-sin": round(1 / n8, 4)})
+
+# s9: the flux through a coil (fy7-5/flux-task-2, values read from the graph): (0; 5,0 mWb), (0,40 s; -3,0 mWb),
+# (0,60 s; -3,0 mWb), (0,80 s; 0); N = 120 turns, the circuit's resistance 8,0 ohm
+P9 = [(0.0, 5.0e-3), (0.40, -3.0e-3), (0.60, -3.0e-3), (0.80, 0.0)]    # (s, Wb)
+N9, R9 = 120, 8.0
+rate1 = (P9[1][1] - P9[0][1]) / (P9[1][0] - P9[0][0])              # Wb/s
+rate3 = (P9[3][1] - P9[2][1]) / (P9[3][0] - P9[2][0])
+e9_1, e9_3 = -N9 * rate1, -N9 * rate3                              # V, signed
+t0_9 = P9[0][0] + (0 - P9[0][1]) / rate1                           # s, the moment the flux is zero
+W9_1 = e9_1 ** 2 / R9 * (P9[1][0] - P9[0][0])                      # J
+W9_3 = e9_3 ** 2 / R9 * (P9[3][0] - P9[2][0])
+out.update({f"{S}-s9-a-rate1": round(rate1 * 1e3, 3), f"{S}-s9-a-rate3": round(rate3 * 1e3, 3),
+            f"{S}-s9-a-e1": round(abs(e9_1), 3), f"{S}-s9-a-e3": round(abs(e9_3), 3),
+            f"{S}-s9-b-P1": round(e9_1 ** 2 / R9, 3), f"{S}-s9-b-P3": round(e9_3 ** 2 / R9, 3),
+            f"{S}-s9-b-W1": round(W9_1, 4), f"{S}-s9-b-W3": round(W9_3, 4), f"{S}-s9-b": round(W9_1 + W9_3, 4),
+            f"{S}-s9-c-t0": round(t0_9, 3)})
+
 # the unit's own numbers (hook, Ennusta, Tutki, Sovella, Tarkista, exit ticket), quoted in inquiry.json and unit.md
 P_h0, R_h0 = 40e3, 0.50
 for U in (230.0, 20e3):

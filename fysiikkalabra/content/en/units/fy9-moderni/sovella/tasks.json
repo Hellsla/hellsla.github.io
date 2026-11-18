@@ -1,5 +1,5 @@
 {
-  "intro": "Seven matriculation-exam-style problems bring together the photons, atoms, nuclei and radiation of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. The last problem is an applied source-based problem; its source opens from the link in the problem.",
+  "intro": "Nine matriculation-exam-style problems bring together the photons, atoms, nuclei and radiation of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. Problem 7 is an applied source-based problem; its source opens from the link in the problem. Problems 8 and 9 work with a graph.",
   "tasks": [
     {
       "id": "fy9-moderni-s1",
@@ -966,6 +966,277 @@
         "math": "fy3-6",
         "transfer": "fy3-15",
         "communication": "fy8-11"
+      }
+    },
+    {
+      "id": "fy9-moderni-s8",
+      "title": "A concrete wall next to a radiation source room",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy8-13",
+        "fy8-9",
+        "fy1-4"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "A concrete wall separates a corridor of an isotope laboratory from a room with a gamma radiation source. The figure shows the dose rate $\\dot{H}$ of gamma radiation on the corridor side as a function of the thickness $d$ of the wall. The dose rate decreases exponentially: $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$. Here $\\dot{H}_0$ is the dose rate without the wall and $\\mu$ is the attenuation coefficient of concrete.\n\n- the thickness of the wall is $18\\,\\text{cm}$\n- a person stays in the corridor behind the wall $1.5\\,\\text{h}$ per working day, and there are $220$ working days a year\n- the person is not a radiation worker, so their annual dose may be at most $1.0\\,\\text{mSv}$\n- the dose rate is constant, and other radiation sources are not taken into account",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Use the graph to determine the attenuation coefficient $\\mu$ of concrete.",
+          "answer": {
+            "value": 0.139,
+            "unit": "1/cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Two points far apart are read from the graph, for example $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ and $(10\\,\\text{cm};\\ 20\\,\\mu\\text{Sv/h})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, so $\\mu = \\dfrac{\\ln(\\dot{H}_0 / \\dot{H})}{d}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 20)}{10\\,\\text{cm}} \\\\\n&= \\dfrac{1.39}{10\\,\\text{cm}} \\\\\n&\\approx 0.14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "What is the dose rate in the corridor behind the wall?",
+          "answer": {
+            "value": 6.6,
+            "unit": "µSv/h",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$ at the thickness $d = 18\\,\\text{cm}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\dot{H} &= 80\\,\\mu\\text{Sv/h} \\cdot e^{-0.1386 \\cdot 18} \\\\\n&= 80\\,\\mu\\text{Sv/h} \\cdot 0.0825 \\\\\n&\\approx 6.6\\,\\mu\\text{Sv/h}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\dot{H} \\approx 6.6\\,\\mu\\text{Sv/h}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "What dose does the person receive in the corridor in a year? Is the maximum dose exceeded?",
+          "answer": {
+            "value": 2.18,
+            "unit": "mSv",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "dose $H = \\dot{H}\\,t$ when the dose rate is constant, and the time spent in a year $t = 1.5\\,\\text{h} \\cdot 220$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nH &= 6.6\\,\\mu\\text{Sv/h} \\cdot 330\\,\\text{h} \\\\\n&\\approx 2.2\\,\\text{mSv}\n\\end{aligned}\n$$, which is more than $1.0\\,\\text{mSv}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Compares the dose with the maximum dose $1.0\\,\\text{mSv}$: the dose is about twice as large, so the limit is exceeded."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "How thick must the wall be at least so that the annual dose does not exceed the maximum dose? Also name one assumption of the model that may make the result too small, and its effect.",
+          "answer": {
+            "value": 23.6,
+            "unit": "cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Solves the thickness from the condition $\\dot{H} \\cdot t \\le 1.0\\,\\text{mSv}$: $d = \\dfrac{\\ln(\\dot{H}_0 / \\dot{H}_\\text{max})}{\\mu}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\dot{H}_\\text{max} &= 1000\\,\\mu\\text{Sv} : 330\\,\\text{h} \\\\\n&\\approx 3.0\\,\\mu\\text{Sv/h}\n\\end{aligned}\n$$ and $d \\approx 23.6\\,\\text{cm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 24\\,\\text{cm}$, rounded up, because $23\\,\\text{cm}$ would still give too large a dose."
+            },
+            {
+              "text": "Names an assumption that may make the result too small (for example scattering is ignored, the source is stronger or the time spent is longer) and justifies its effect: a real wall should be made thicker than the result.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy8-13",
+        "math": "fy8-9",
+        "transfer": "fy8-13",
+        "communication": "fy8-13"
+      }
+    },
+    {
+      "id": "fy9-moderni-s9",
+      "title": "The recession of galaxies and the age of the universe",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy8-16",
+        "fy1-4",
+        "fy1-2"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "text": "An astronomer has measured the recession velocity $v$ and the distance $d$ of nine galaxies. The figure shows the data points and a fitted line through the origin. According to Hubble's law $v = H_0\\,d$, where $H_0$ is the Hubble constant.\n\n- $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$\n- the astronomer observes a new galaxy that recedes from us at the velocity $8400\\,\\text{km/s}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Use the graph to determine the Hubble constant $H_0$.",
+          "answer": {
+            "value": 72,
+            "unit": "km/s/Mpc",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Two points far apart are read from the line: the origin and $(250\\,\\text{Mpc};\\ 18\\,000\\,\\text{km/s})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = H_0\\,d$, so $H_0 = \\dfrac{v}{d}$, the slope of the line."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H_0 = \\dfrac{18\\,000\\,\\text{km/s}}{250\\,\\text{Mpc}} = 72\\,\\dfrac{\\text{km/s}}{\\text{Mpc}}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "How far away is the new galaxy?",
+          "answer": {
+            "value": 117,
+            "unit": "Mpc",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$d = \\dfrac{v}{H_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$d = \\dfrac{8400\\,\\text{km/s}}{72\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} \\approx 117\\,\\text{Mpc}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 120\\,\\text{Mpc}$, two significant figures like the velocity."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Estimate how long ago the distances between the galaxies were zero, assuming that the distances have grown at the same rate all the time. Give the answer in years.",
+          "answer": {
+            "value": 13580000000,
+            "unit": "a",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "If the distance $d$ of a galaxy has grown from zero at the constant velocity $v$, the time is $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Converts $H_0$ to the unit $1/\\text{s}$: $$\n\\begin{aligned}\nH_0 &= 72\\,\\text{km/s} : (3.086 \\cdot 10^{19}\\,\\text{km}) \\\\\n&\\approx 2.33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{1}{2.333 \\cdot 10^{-18}\\,\\text{1/s}} \\\\\n&= 4.29 \\cdot 10^{17}\\,\\text{s}\n\\end{aligned}\n$$ and in years $$\n\\begin{aligned}\nt &= 4.29 \\cdot 10^{17}\\,\\text{s} : (3.156 \\cdot 10^{7}\\,\\text{s/a}) \\\\\n&\\approx 1.36 \\cdot 10^{10}\\,\\text{a}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 1.4 \\cdot 10^{10}\\,\\text{a}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why the observation that all distant galaxies recede from us does not mean that the Milky Way is the centre of the universe.",
+          "criteria": [
+            {
+              "text": "Explains that according to the graph the velocity is directly proportional to the distance, and the same law would be observed from any galaxy: every galaxy sees the others receding from it.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Gives a correct picture of the expansion: space itself expands and the distances between all galaxies grow (no explosion from a point), for example with the balloon comparison, or justifies the absence of a centre in another equally valid way.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Concludes that the expansion has no centre and the Milky Way has no special place, because the observation is the same everywhere."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy8-16",
+        "math": "fy8-16",
+        "concept": "fy8-16",
+        "communication": "fy8-16"
       }
     }
   ]
