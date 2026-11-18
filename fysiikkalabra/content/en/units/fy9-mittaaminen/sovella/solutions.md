@@ -662,3 +662,210 @@ $$.
 - In part b, a $(\tfrac{1}{V}, p)$ graph is drawn and the line is forced through the origin; the air space of the tube then does not show.
 - In part c, the temperature is substituted in degrees Celsius, or the volume in millilitres and the pressure in kilopascals without conversion, so the amount of substance is wrong by a factor of a thousand.
 - In part d, assumptions are listed without saying in which direction they would change the result.
+
+## fy9-mittaaminen-s7
+
+### a)
+**Given:** the six measured points $(x,\,F_\text{v})$ of the graph, where $x$ is the extension of the spring and $F_\text{v}$ the force stretching it; the uncertainty of reading the extension is $0.2\,\text{cm}$ and the forces are known exactly
+**Find:** the spring constant $k$ with its uncertainty in $\text{N/m}$
+**Principle:** The spring force is directly proportional to the extension, $F_\text{v} = kx$, so the slope of the line fitted to the $(x,\,F_\text{v})$ graph is $k$ (chapter *Spring force and spring energy*). The uncertainty is estimated from the steepest and shallowest lines that still pass through all the $\pm 0.2\,\text{cm}$ horizontal ranges of the points (chapter *Measuring and the reliability of a measurement*).
+**Reading the graph:** Two points far apart are read from the line fitted to the points: $(1.0\,\text{cm};\ 0.30\,\text{N})$ and $(10.0\,\text{cm};\ 3.00\,\text{N})$. The slopes of the limiting lines are read in the same way: the shallowest line corresponds to a spring constant of $28.8\,\text{N/m}$ and the steepest to $31.3\,\text{N/m}$.
+**Formula:** $k = \dfrac{\Delta F_\text{v}}{\Delta x} = \dfrac{F_2 - F_1}{x_2 - x_1}$ and $\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$
+**Conversions:** $1\,\text{cm} = 0.01\,\text{m}$, so $0.300\,\text{N/cm} = 30.0\,\text{N/m}$.
+**Substitution:** $$
+\begin{aligned}
+k &= \dfrac{3.00\,\text{N} - 0.30\,\text{N}}{10.0\,\text{cm} - 1.0\,\text{cm}} \\
+&= \dfrac{2.70\,\text{N}}{9.0\,\text{cm}} \\
+&= 0.300\,\text{N/cm} \\
+&= 30.0\,\text{N/m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta k &= \dfrac{31.27\,\text{N/m} - 28.83\,\text{N/m}}{2} \\
+&= 1.22\,\text{N/m}
+\end{aligned}
+$$
+**Answer:** $k = (30.0 \pm 1.2)\,\text{N/m}$. The uncertainty has two digits because its first digit is $1$, and the spring constant is given to the same decimal.
+**Reasonableness:** The quotient $F_\text{v}/x$ of every point is between $28.8\ldots 30.6\,\text{N/m}$, for example $$
+\begin{aligned}
+k &= 0.49\,\text{N} : 0.017\,\text{m} \\
+&= 28.8\,\text{N/m}
+\end{aligned}
+$$, and it fits within the calculated range $28.8\ldots 31.3\,\text{N/m}$. A spring that stretches $10\,\text{cm}$ under a force of three newtons (a mass of about $0.3\,\text{kg}$) is an ordinary laboratory spring.
+
+### b)
+**Given:** the graph and lines of part a; the intercept of the fitted line on the $F_\text{v}$ axis is $-0.002\,\text{N}$; the limiting lines cross the $x$ axis at $-0.20\,\text{cm}$ and $+0.27\,\text{cm}$
+**Find:** whether the line passes through the origin, and what an intercept of $+0.30\,\text{N}$ would mean
+**Principle:** In an ideal spring the force and the extension are directly proportional, so an unloaded spring ($F_\text{v} = 0$) has not stretched ($x = 0$) and the line passes through the origin (chapter *Spring force and spring energy*). The significance of a constant term is judged by comparing it with the uncertainty (chapter *Graphing and fitting a straight line*).
+**Model answer:** *Data.* The intercept $-0.002\,\text{N}$ of the fitted line is practically zero, and every line compatible with the uncertainties of the points crosses the $x$ axis between $-0.20\ldots{+}0.27\,\text{cm}$. Zero is within this range, so the data do not require a constant term.
+
+*Physics.* An unloaded spring has not stretched, so the line of an ideal spring passes through the origin. Physics and data give the same result.
+
+*An intercept of $+0.30\,\text{N}$.* The line would be $F_\text{v} = 0.30\,\text{N} + kx$. The spring would need a force of about $0.30\,\text{N}$ before it begins to stretch, for example because the coils are pressed against each other, or the zero of the extension would have been read wrongly. The corresponding intercept on the $x$ axis would be $$
+\begin{aligned}
+x_0 &= -\dfrac{0.30\,\text{N}}{0.300\,\text{N/cm}} \\
+&= -1.0\,\text{cm}
+\end{aligned}
+$$, clearly more than the reading uncertainty $0.2\,\text{cm}$, so it would show in the data.
+
+*Conclusion.* In these data forcing the line through the origin is justified. If a constant term stood out from the uncertainty, the line must not be forced through the origin, because the slope and the spring constant would be distorted.
+
+### c)
+**Given:** force $F_\text{v} = 4.5\,\text{N}$ and the spring constant of part a, $k = (30.0 \pm 1.2)\,\text{N/m}$
+**Find:** the extension $x$ with its uncertainty and the reliability of the result
+**Principle:** For the spring force $F_\text{v} = kx$ (chapter *Spring force and spring energy*), so the extension is the force divided by the spring constant. The uncertainty follows from the relative uncertainty of the spring constant, because the force is known exactly.
+**Formula:** $x = \dfrac{F_\text{v}}{k}$ and $\dfrac{\Delta x}{x} = \dfrac{\Delta k}{k}$
+**Conversions:** $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $$
+\begin{aligned}
+x &= \dfrac{4.5\,\text{N}}{30.0\,\text{N/m}} \\
+&= 0.150\,\text{m} \\
+&= 15.0\,\text{cm}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta x &= 15.0\,\text{cm} \cdot \dfrac{1.22\,\text{N/m}}{30.0\,\text{N/m}} \\
+&= 0.61\,\text{cm}
+\end{aligned}
+$$
+**Answer:** $x = (15.0 \pm 0.6)\,\text{cm}$. The result is given to the same decimal as the uncertainty.
+**Reasonableness:** With the limiting spring constants the extension is $$
+\begin{aligned}
+x_\text{min} &= 4.5\,\text{N} : 31.27\,\text{N/m} \\
+&= 14.4\,\text{cm}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+x_\text{max} &= 4.5\,\text{N} : 28.83\,\text{N/m} \\
+&= 15.6\,\text{cm}
+\end{aligned}
+$$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extrapolation: the extension is about $1.5$ times the largest measured one ($9.8\,\text{cm}$) and the force is greater than the largest measured one ($2.94\,\text{N}$). The spring may exceed its elastic limit, and the graph does not tell whether it stays linear. The stated uncertainty describes only the uncertainty of the slope, so the real uncertainty is larger.
+
+### Yleisiä virheitä
+- In part a the slope is read from a single point, for example $0.49\,\text{N} : 1.7\,\text{cm}$, or the unit is left as $\text{N/cm}$.
+- In part a the reading uncertainty of the extension, $0.2\,\text{cm}$, is given as the uncertainty of the spring constant.
+- In part b it is only said that the line "passes through the origin", without justifying it with physics or comparing the constant term with the uncertainty.
+- In part c the result is given without a warning about extrapolation, or the uncertainty is given too precisely.
+
+### Hyväksytään myös
+- In part a a calculator fit: $k = 30.0\,\text{N/m}$ (when $x$ is fitted as a function of the force) or $29.9\,\text{N/m}$ (when the force is fitted as a function of the extension). An uncertainty $\Delta k = 1.0$–$1.5\,\text{N/m}$ is accepted.
+- In part c the extension is read straight from the line of the graph by extending it, provided the uncertainty of the extension is mentioned.
+
+## fy9-mittaaminen-s8
+
+### a)
+**Find:** a graph whose slope gives $g$, and the line fitted to it
+**Graph:** When a ball falls from rest the acceleration is constant (chapter *Acceleration and uniformly accelerated motion*), so $s = \tfrac{1}{2}gt^2$. Therefore $s$ is directly proportional to $t^2$. $t^2\ (\text{s}^2)$ is chosen for the horizontal axis and $s\ (\text{m})$ for the vertical axis, so that the points lie on a straight line whose slope is $\tfrac{1}{2}g$ (chapter *Graphing and fitting a straight line*). The time is squared for each point, and the points $(t^2,\,s)$ are marked in the graph:
+
+| $t\ (\text{s})$ | $0$ | $0.05$ | $0.10$ | $0.15$ | $0.20$ | $0.25$ | $0.30$ | $0.35$ | $0.40$ |
+|---|---|---|---|---|---|---|---|---|---|
+| $t^2\ (\text{s}^2)$ | $0$ | $0.0025$ | $0.0100$ | $0.0225$ | $0.0400$ | $0.0625$ | $0.0900$ | $0.1225$ | $0.1600$ |
+| $s\ (\text{m})$ | $0.002$ | $0.018$ | $0.065$ | $0.128$ | $0.223$ | $0.338$ | $0.477$ | $0.646$ | $0.832$ |
+
+<svg data-fig="s8-kuvaaja" viewBox="0 0 600 400" role="img" aria-label="Graph: the distance s the ball has fallen in metres as a function of the square of the time t², in s², 0–0.16 s². Nine blue points lie close to one rising straight line whose slope is 5.18 m/s² and which crosses the vertical axis at about 0.01 m. The points read from the line, (0.020 s²; 0.113 m) and (0.150 s²; 0.786 m), are circled." style="max-width:100%;font-size:30px">
+  <line x1="174.5" y1="340" x2="174.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="259" y1="340" x2="259" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="343.5" y1="340" x2="343.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="428" y1="340" x2="428" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="278" x2="470" y2="278" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="215.5" x2="470" y2="215.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="153.5" x2="470" y2="153.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="91" x2="470" y2="91" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="89" y1="340" x2="484" y2="340" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,340 L483,346 L483,334 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="341" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="174.5" y1="340" x2="174.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="139.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.04$</div></foreignObject>
+  <line x1="259" y1="340" x2="259" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="224" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.08$</div></foreignObject>
+  <line x1="343.5" y1="340" x2="343.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="308.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.12$</div></foreignObject>
+  <line x1="428" y1="340" x2="428" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="393" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.16$</div></foreignObject>
+  <line x1="83" y1="278" x2="90" y2="278" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="260" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.2$</div></foreignObject>
+  <line x1="83" y1="215.5" x2="90" y2="215.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="197.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.4$</div></foreignObject>
+  <line x1="83" y1="153.5" x2="90" y2="153.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="135.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.6$</div></foreignObject>
+  <line x1="83" y1="91" x2="90" y2="91" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="73" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.8$</div></foreignObject>
+  <foreignObject x="56" y="342" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0$</div></foreignObject>
+  <foreignObject x="502" y="322" width="106" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$t^2\ (\text{s}^2)$</div></foreignObject>
+  <foreignObject x="80" y="0" width="75" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$s\ (\text{m})$</div></foreignObject>
+  <polyline points="90,337 449,63" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="90" cy="339.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="95.5" cy="334.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="111" cy="320" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="137.5" cy="300" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="174.5" cy="270.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="222" cy="235" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="280" cy="191.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="348.5" cy="139" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="428" cy="81" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="132" cy="304.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="406.5" cy="95.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5.18\,\text{m/s}^2$</div></foreignObject>
+</svg>
+
+**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data. The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, roughly the size of the reading uncertainty of the distance, $0.01\,\text{m}$. It is small, and because the line is not forced through the origin, it does not affect the slope. The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$. In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
+
+### b)
+**Given:** the $(t^2,\,s)$ line of part a; the reading uncertainty of the distance is $0.01\,\text{m}$
+**Find:** the acceleration of free fall $g$ with its uncertainty in $\text{m/s}^2$
+**Principle:** The slope of the line is $\tfrac{1}{2}g$ (chapter *Acceleration and uniformly accelerated motion*). The uncertainty is estimated from the steepest and shallowest lines that still pass through all the $\pm 0.01\,\text{m}$ vertical ranges of the points (chapter *Measuring and the reliability of a measurement*).
+**Reading the graph:** The two circled points, far apart, are read from the line: $(0.020\,\text{s}^2;\ 0.113\,\text{m})$ and $(0.150\,\text{s}^2;\ 0.786\,\text{m})$. The slopes of the limiting lines are $5.09\,\text{m/s}^2$ (shallowest) and $5.24\,\text{m/s}^2$ (steepest).
+**Formula:** $a_\text{k} = \dfrac{\Delta s}{\Delta (t^2)} = \dfrac{1}{2}g$, so $g = 2a_\text{k}$ and $\Delta g = 2 \cdot \dfrac{a_\text{max} - a_\text{min}}{2}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+a_\text{k} &= \dfrac{0.786\,\text{m} - 0.113\,\text{m}}{0.150\,\text{s}^2 - 0.020\,\text{s}^2} \\
+&= \dfrac{0.673\,\text{m}}{0.130\,\text{s}^2} \\
+&= 5.177\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+g &= 2 \cdot 5.177\,\text{m/s}^2 \\
+&= 10.35\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta g &= 5.241\,\text{m/s}^2 - 5.094\,\text{m/s}^2 \\
+&= 0.147\,\text{m/s}^2
+\end{aligned}
+$$
+**Answer:** $g = (10.35 \pm 0.15)\,\text{m/s}^2$. The uncertainty has two digits because its first digit is $1$, and the result is given to the same decimal.
+**Reasonableness:** The order of magnitude is right: in free fall the acceleration is about $10\,\text{m/s}^2$. Check at $0.40\,\text{s}$: $s = \tfrac{1}{2} \cdot 10.35\,\text{m/s}^2 \cdot (0.40\,\text{s})^2 = 0.83\,\text{m}$, the same as the measured $0.832\,\text{m}$.
+
+### c)
+**Given:** the measured result $g = (10.35 \pm 0.15)\,\text{m/s}^2$ and the local value $9.81\,\text{m/s}^2$
+**Find:** the comparison with the local value and the possible causes of the difference
+**Principle:** A measured result is compared with a known value through its uncertainty: if the known value lies within the uncertainty range of the result, the difference may be due to random variation. Otherwise a systematic error is looked for (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** *Comparison.* The difference is $$
+\begin{aligned}
+10.35\,\text{m/s}^2 - 9.81\,\text{m/s}^2 &= 0.54\,\text{m/s}^2 \\
+\dfrac{0.54\,\text{m/s}^2}{9.81\,\text{m/s}^2} &\approx 5.5\,\%
+\end{aligned}
+$$ that is $0.54 : 0.147 \approx 3.7$ times the uncertainty. The value $9.81\,\text{m/s}^2$ is outside the uncertainty range $10.19\ldots 10.48\,\text{m/s}^2$, so the difference is not explained by random reading error. The measurement probably has a systematic error.
+
+*Air resistance.* Air resistance opposes the motion of the ball, so it would decrease the measured acceleration. The measured value is, however, too large, so air resistance does not explain the difference.
+
+*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too. An error in the time scale: $g = 2s/t^2$, so if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large. For the measured $10.35\,\text{m/s}^2$ to really be $9.81\,\text{m/s}^2$, the frame interval would have to be $$
+\begin{aligned}
+\sqrt{\dfrac{10.35}{9.81}} &= 1.027 \\
+1.027 \cdot 0.05\,\text{s} &= 0.0514\,\text{s}
+\end{aligned}
+$$ that is, about $2.7\,\%$ longer than assumed. The frame rate would then be lower than the nominal one.
+
+*Improvements.* The scale is calibrated with a known length in the plane of the falling line, the frame rate is checked and the drop is repeated several times.
+
+### Yleisiä virheitä
+- In part a a $(t,s)$ graph is drawn and a line is fitted to it although the points form a curve, or the points are joined with a broken line.
+- In part b the slope is taken directly as $g$ ($5.18\,\text{m/s}^2$) and not multiplied by two, or the slope is read from neighbouring points.
+- In part b the uncertainty is forgotten, or the result is given with too many digits, for example $10.354\,\text{m/s}^2$.
+- In part c a result that is too large is explained by air resistance although it would make the result smaller, or the difference is called "measurement error" without assessing its size relative to the uncertainty.
+
+### Hyväksytään myös
+- In part a the $(t^2,\,s)$ graph can also be drawn with $s$ on the horizontal axis; the slope is then $\tfrac{2}{g}$.
+- In part b a calculator fit gives $g = 10.35\,\text{m/s}^2$; values $10.2$–$10.5\,\text{m/s}^2$ and an uncertainty $0.1$–$0.2\,\text{m/s}^2$ are accepted.

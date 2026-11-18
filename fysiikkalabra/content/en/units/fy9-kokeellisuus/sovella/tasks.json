@@ -1,5 +1,5 @@
 {
-  "intro": "Six tasks on experimental work: two experiment plans, assessing a report, measurement data as a graph, a calculation task with uncertainties and a task that combines modules.",
+  "intro": "Eight tasks on experimental work: two experiment plans, assessing a report, measurement data as a graph, a calculation task with uncertainties and a task that combines modules.",
   "tasks": [
     {
       "id": "fy9-kokeellisuus-s1",
@@ -718,6 +718,298 @@
         "graph": "fy1-4",
         "concept": "fy4-6",
         "experiment": "fy1-3",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s7",
+      "title": "Measuring sliding friction",
+      "source": "example",
+      "source_note": "The situation and the measurement data are invented examples.",
+      "skills": [
+        "fy4-6",
+        "fy1-3",
+        "fy1-4"
+      ],
+      "figure": "fy4-6/mittaus",
+      "text": "A group measured the sliding friction force $F_\\mu$ of a wooden block on a table at several values of the normal force $N$. The block was pulled horizontally at a constant speed with a spring balance, and the normal force was changed by placing masses on the block. The scale division of the spring balance is $0.1\\,\\text{N}$. The graph shows the measurement points.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 3,
+          "text": "Examine the graph. Is there any sign of a systematic error in the data? What does the graph tell about random variation?",
+          "criteria": [
+            {
+              "text": "States that the points lie close to a straight line through the origin, so the friction force is directly proportional to the normal force: $F_\\mu = \\mu N$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Concludes that the graph shows no systematic error: the line is not shifted along the vertical axis. For example, a wrongly zeroed spring balance would move all the points up or down by the same amount.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "States that the points deviate from the line by about $0.1\\,\\text{N}$ or less, sometimes up and sometimes down, and regards this as random variation.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the coefficient of sliding friction and its error estimate from the graph.",
+          "answer": {
+            "value": 0.215,
+            "unit": "",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The normal force and the friction force of each point are read from the graph: $(5\\,\\text{N};\\ 1.1\\,\\text{N})$, $(10\\,\\text{N};\\ 2.1\\,\\text{N})$, $(15\\,\\text{N};\\ 3.3\\,\\text{N})$, $(20\\,\\text{N};\\ 4.2\\,\\text{N})$ and $(25\\,\\text{N};\\ 5.4\\,\\text{N})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F_\\mu = \\mu N$, so $\\mu = \\dfrac{F_\\mu}{N}$, the slope of the line in the graph."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The ratios $F_\\mu : N$ of the points are $0.22$, $0.21$, $0.22$, $0.21$ and $0.216$, so the mean is $0.215$. The slope of a fitted line, $0.21\\text{–}0.22$, is also accepted."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The error estimate is half the range, $\\dfrac{0.22 - 0.21}{2} = 0.005$, so $\\mu = 0.215 \\pm 0.005$. An estimate of $\\pm 0.01$ from extreme lines is also accepted."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Another group used the same block and table, but their spring balance read $0.3\\,\\text{N}$ with no load, and the group did not take it into account. When the normal force was $10\\,\\text{N}$, the balance read $2.4\\,\\text{N}$. Calculate the coefficient of friction the group got from this reading, the correct coefficient and the size of the error as a percentage of the correct value. Also justify how the zero error would affect the slope if the coefficient were determined from a line fitted to the whole series.",
+          "answer": [
+            {
+              "name": "mu_wrong",
+              "value": 0.24,
+              "unit": "",
+              "tolerance": 0.03
+            },
+            {
+              "name": "mu_right",
+              "value": 0.21,
+              "unit": "",
+              "tolerance": 0.03
+            },
+            {
+              "name": "err",
+              "value": 14,
+              "unit": "%",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The correct friction force is the reading minus the zero error, $F_\\mu = F_\\text{reading} - F_0$, and $\\mu = \\dfrac{F_\\mu}{N}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The group's coefficient is $\\dfrac{2.4\\,\\text{N}}{10\\,\\text{N}} = 0.24$ and the correct one $\\dfrac{2.4\\,\\text{N} - 0.3\\,\\text{N}}{10\\,\\text{N}} = 0.21$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The error is $\\dfrac{0.24 - 0.21}{0.21} \\approx 14\\,\\%$ of the correct value."
+            },
+            {
+              "text": "Explains: a zero error shifts every point vertically by the same amount, so the slope $\\dfrac{\\Delta F}{\\Delta N}$ does not change. Only the intercept on the vertical axis changes.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Evaluate the measurement method: name two things that weaken the reliability of the result and say how the experiment would be improved.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Two real weaknesses and their effect, for example: the pulling speed is not exactly constant, so the balance reading fluctuates; there is only one measurement at each normal force; the scale division $0.1\\,\\text{N}$ makes the relative error large at a small normal force ($0.05\\,\\text{N} : 1.1\\,\\text{N} \\approx 5\\,\\%$ at $N = 5\\,\\text{N}$); dust or moisture on the table."
+            },
+            {
+              "text": "Gives an improvement for each weakness, for example: repeat each measurement three times and take the mean, use a force sensor or a steady pulling device, add measurement points and widen the range of the normal force, wipe the table before measuring.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "math": "fy4-6",
+        "concept": "fy4-6",
+        "communication": "fy1-8"
+      }
+    },
+    {
+      "id": "fy9-kokeellisuus-s8",
+      "title": "The magnetic field of a coil and sources of error",
+      "source": "example",
+      "source_note": "The situation and the measurement data are invented examples.",
+      "skills": [
+        "fy7-3",
+        "fy1-4",
+        "fy1-3"
+      ],
+      "figure": "fy7-3/coil-fit",
+      "text": "A group studied the magnetic field of a long air-core coil. A magnetic field sensor was placed at the centre of the coil, and the current $I$ of the coil was varied with a power supply. The graph shows the magnetic flux density $B$ measured by the sensor and a line fitted to the measurement points. The turn density of the coil, the number of turns per unit length, is $n$, and at the centre of the coil $B = \\mu_0 n I$, where $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the slope of the line in the graph and use it to find the turn density $n$ of the coil.",
+          "answer": {
+            "value": 1960,
+            "unit": "1/m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the fitted line that are far apart, for example $(1.0\\,\\text{A};\\ 2.5\\,\\text{mT})$ and $(2.5\\,\\text{A};\\ 6.2\\,\\text{mT})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$B = \\mu_0 n I$, so the slope of the line is $k = \\mu_0 n$ and $n = \\dfrac{k}{\\mu_0}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{6.2\\,\\text{mT} - 2.5\\,\\text{mT}}{2.5\\,\\text{A} - 1.0\\,\\text{A}} \\\\\n&= 2.47\\,\\text{mT/A} \\\\\n&= 2.47 \\cdot 10^{-3}\\,\\text{T/A}\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nn &= \\dfrac{2.47 \\cdot 10^{-3}\\,\\text{T/A}}{4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}} \\\\\n&\\approx 1.96 \\cdot 10^{3}\\,\\text{1/m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The millitesla is converted to tesla. The slope has two significant figures, so $n \\approx 2.0 \\cdot 10^{3}\\,\\text{1/m}$, about $20$ turns per centimetre."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "The group wants to produce a field $B = 12\\,\\text{mT}$ at the centre of the coil. What current is needed according to the graph? Is the result reliable?",
+          "answer": {
+            "value": 4.9,
+            "unit": "A",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$B = kI$ and the line passes practically through the origin, so $I = \\dfrac{B}{k}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = \\dfrac{12\\,\\text{mT}}{2.47\\,\\text{mT/A}} \\approx 4.9\\,\\text{A}$"
+            },
+            {
+              "text": "Notes that the result is extrapolation: the largest measured current was $2.5\\,\\text{A}$ and the needed current is about twice that. The coil and the power supply must be able to carry such a current. The result is only an estimate and must be checked by measuring.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "With no current in the coil, the sensor still showed a reading of $0.04\\,\\text{mT}$. Calculate what percentage this reading is of the values of the field read from the graph at the currents $0.50\\,\\text{A}$ and $2.5\\,\\text{A}$. What type of error is this, and how does it affect the slope?",
+          "answer": [
+            {
+              "name": "r05",
+              "value": 3.1,
+              "unit": "%",
+              "tolerance": 0.1
+            },
+            {
+              "name": "r25",
+              "value": 0.65,
+              "unit": "%",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Reads $B \\approx 1.3\\,\\text{mT}$ at $I = 0.50\\,\\text{A}$ and $B \\approx 6.2\\,\\text{mT}$ at $I = 2.5\\,\\text{A}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{0.04\\,\\text{mT}}{1.3\\,\\text{mT}} \\approx 3\\,\\%$ and $\\dfrac{0.04\\,\\text{mT}}{6.2\\,\\text{mT}} \\approx 0.6\\,\\%$."
+            },
+            {
+              "text": "Names the error systematic: it is constant, does not depend on the current and always has the same direction. The cause can be, for example, the Earth's magnetic field or a zero error of the sensor.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "States that a constant shifts all points by the same amount, so the slope does not change and only the intercept of the line on the vertical axis moves. Calculated from a single point, the error would be relatively larger at a small current.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Evaluate the design of the experiment. Does the model $B \\propto I$ fit the measurement, and how would the experiment be improved?",
+          "criteria": [
+            {
+              "text": "States that the points lie almost on the line and deviate from it only a little in both directions, so the model fits the current range $0\\text{–}2.5\\,\\text{A}$ and the random variation is small.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "text": "Says how the systematic error is removed: the zero reading is measured with no current and subtracted from all readings, or the current is reversed and $B$ is calculated as half the difference of the readings.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Names another weakness and an improvement, for example: only one reading at each current, so repeat the measurements; if the supply regulates voltage, the current may drift as the coil warms up, so read the current at every reading and keep it on only for a short time; the sensor must be at the centre of the coil.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "math": "fy7-3",
+        "concept": "fy7-3",
         "communication": "fy1-8"
       }
     }
