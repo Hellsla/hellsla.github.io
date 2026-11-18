@@ -51,5 +51,12 @@ results = [
           "5h: \\div continues a side, then its relation joins"),
     check(ml.join_wide("\\begin{aligned}\nN &= a \\\\\n&< b \\\\\n&\\approx d\n\\end{aligned}"), None,
           "5h: relation rows (< and \\approx) never join the row before"),
+    check("eq-chain" in ml.list_chains("1. **Laske.** Joten $\\Delta k = (4{,}21 - 3{,}89)\\,\\text{s}^2/\\text{m} : 2 = 0{,}16\\,\\text{s}^2/\\text{m}$. Valmis.\n2. Toinen."), True,
+          "work queue 4: a long chain in a list item becomes the rows of a calculation inside the item"),
+    check(ml.list_chains("1. Lyhyt $x = 1$.\n2. Toinen."), "1. Lyhyt $x = 1$.\n2. Toinen.",
+          "work queue 4: a list item with no long chain is untouched"),
+    check(ml.list_chains("Leipäteksti $\\Delta k = (4{,}21 - 3{,}89)\\,\\text{s}^2/\\text{m} : 2 = 0{,}16\\,\\text{s}^2/\\text{m}$."),
+          "Leipäteksti $\\Delta k = (4{,}21 - 3{,}89)\\,\\text{s}^2/\\text{m} : 2 = 0{,}16\\,\\text{s}^2/\\text{m}$.",
+          "work queue 4: a chain outside a list is left as written"),
 ]
 sys.exit(0 if all(results) else 1)

@@ -587,6 +587,7 @@ tr:last-child td{border-bottom:0}
    scripts/tablefit.py) and pad less on a phone; a number with its unit stays on one line (KaTeX, nbsp).
    check_layout.py fails a table wider than its box. */
 @media (max-width:48rem){th,td{padding:.4rem .45rem}}
+.investigation td:empty{height:2.6rem;border-bottom-color:var(--line);border-left:1px solid var(--line-2)}.investigation td:empty:first-child{border-left:0}   /* work queue 4 batch 1: a blank table the student fills in (a Mittaa table) has rows tall enough to write in and borders that show on a 390 px phone; before, its rows were a hair high and pale */
 @media (max-width:48rem){table.exp-table th,table.exp-table td{padding:.35rem .2rem}table.exp-table tr>:first-child{padding-left:.5rem}table.exp-table tr>:last-child{padding-right:.5rem}}   /* a simulation's reading table keeps its columns on a phone (its rows are compared): less space between them */
 
 /* stage navigation = the progress bar (teacher 2026-11-03): a bar of chips that sticks under the top edge at every width;
