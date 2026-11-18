@@ -290,7 +290,7 @@ This is part of the reason why the spray widens after the nozzle.
 - The potential difference $60\,\text{kV}$ is substituted in kilovolts, so the field comes out wrong by a factor of a thousand.
 - The force is calculated as $U : d$, which mixes up the strength of the field and the force.
 - In part b the formula $v = \sqrt{2 a d}$ is used with the acceleration $g$, or the work is calculated from the weight.
-- The energy of the droplet is said to "turn into heat" or to "disappear"; the energy is transferred to the air and from there as heat.
+- The energy of the droplet is said to "disappear" or to be "lost"; the energy is transferred to the air, whose internal energy increases, and from there as heat to the surroundings.
 - In part d the distance is substituted in millimetres, or the squaring is forgotten.
 
 ## fy6-s4
