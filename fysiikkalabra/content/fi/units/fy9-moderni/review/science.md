@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 2551e46149b68b40
+CONTENT-HASH: 876c08f6ee47b4ec
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8, -s9; older tasks s1-s7 and the intro untouched
 Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+None. The three round-1 items are fixed in the fi text:
+- s8 d Oletukset: the activity clause is gone; it now says scattering adds dose and "tulos on liian pieni, jos lähde vaihdetaan vahvempaan tai oleskeluaika pitenee". Both reasons really raise the dose, so "paksummaksi" follows.
+- s8 d criterion 4: the part text now asks "Mainitse myös yksi mallin oletus, joka voi tehdä tuloksesta liian pienen, ja sen vaikutus", and the criterion's examples (sironta, vahvempi lähde, pidempi oleskelu) are not the given "annosnopeus on vakio". Points still 4 = 1+1+1+1.
+- s9 c: part text "galaksien väliset etäisyydet olivat nollia ... etäisyydet ovat kasvaneet koko ajan samalla nopeudella", Periaate "galaksien väliset etäisyydet ovat kasvaneet nollasta", criterion 1 "etäisyys d on kasvanut nollasta". No start-from-one-place picture left; consistent with d and fy8-16.
 
 ## Polish
-- C: s7 c rounding reason: 80 K is the difference of the given 20 °C and 100 °C; "koska lämpötilat on annettu kahdella merkitsevällä numerolla" would name the given data. The present sentence is acceptable.
+- s8 Yleisiä virheitä, a-kohta: "μ = 16 / 20 cm = 0,80 1/cm" is left over from the old reading point (20 cm; 5,0 µSv/h). With the new points (0; 80) and (10; 20) the quotient error is 4 / 10 cm = 0,40 1/cm. Newly inconsistent, not wrong physics.
+- Round-1 polish taken: s9 task text no longer gives the grid point; s8 a uses (10 cm; 20 µSv/h) (a ±0,5 µSv/h reading now gives µ = 0,136-0,141 1/cm, inside 3 %); s9 d criterion 2 now accepts "muulla yhtä pätevällä tavalla".
 
 ## Checked
-- s7 d part text now also asks "kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella", so criterion 3 (about 1 MJ, under half a percent of the grid energy) asks only what the task asks; the one-third efficiency is given in the task's Lisätietoja. Recomputed: 3,15 MJ / 3 = 1,05 MJ; 1,05 / 300 = 0,35 %; 3,15 / 300 = 1,05 %; 2,05 / 300 = 0,68 %. The solution's Kysytty line states both questions and the model answer gives both.
-- s7 c: new rounding reason (temperature difference 80 K known to two figures) is a valid reason for two figures; m = 3,15e6 J / (4190 · 80 J/kg) = 9,397 kg.
-- Task text: the three facts are now full sentences under "Lisätietoja:"; values unchanged (4,19 kJ/(kg·K), about 300 MJ, one third).
-- s7 e criterion 1: accepts either reason (no electricity produced, or a grid-connected plant is decades away); both are true and in the material.
-- `practice.py check` OK (7 tasks, 110 points).
+- Read the s8 and s9 tasks.json entries and solutions.md sections (current packet-science.md matches them).
+- One script recomputed from the figures' data (80 µSv/h, half-value 5,0 cm; H0 = 72): µ = ln 4/10 = 0,1386 (also ln 8/15), 6,60 µSv/h, 330 h, 2,18 mSv, 3,03 µSv/h, d 23,61 cm, 23 cm -> 3,30 µSv/h, 24 cm -> 2,87 µSv/h ("noin 2,9"), error value 31,6 cm; 116,7 Mpc, 8640 km/s at 120 Mpc, 2,333e-18 1/s, 4,286e17 s, 1,358e10 a. All agree; results rounded to the data's two significant figures, d rounded up with reason.
+- Calculation chains are aligned rows; unit fields (1/cm, µSv/h, mSv, cm, km/s/Mpc, Mpc, a) language-neutral; part texts reveal no solution structure beyond what is asked.
+- practice.py check units/fy9-moderni OK (9 tasks, 136 points), units.py check OK; shots.md is for this hash; hash the same at start and end.

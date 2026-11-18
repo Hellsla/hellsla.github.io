@@ -125,7 +125,7 @@
 
 Väite, jonka mukaan villa jäisi neutraaliksi, on väärä, koska sauvan saamat elektronit eivät synny tyhjästä.
 
-Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
+Väite varauksen häviämisestä on väärä, koska varaus säilyy.
 
 Väite, jonka mukaan myös villa olisi negatiivinen, on väärä, koska molemmat kappaleet eivät voi saada elektroneja ilman, että ne tulevat jostain.
 

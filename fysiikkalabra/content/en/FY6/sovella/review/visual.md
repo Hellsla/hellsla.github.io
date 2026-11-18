@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 57ae70ab9d0c66e7
-
-Mode: delta (md-paragraphs: paragraph breaks in solution steps, work queue 8c)
+CONTENT-HASH: 5e15e967d1274d52
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fig fy6-s1 circuit — the voltmeter and the current arrows are fine, but the figure is drawn only for the Finnish page; the English labels ("fuse", "R_c", "nozzle plate", "workpiece") come from the translation map and were not seen rendered. Check once on the English preview.
+- [Minor] fy6-s3 field figure — the field lines are green, a colour the palette keeps for "correct or stable state"; the figure says E in words, so colour carries nothing alone, but a different ink would avoid the clash (for science: none).
 
 ## Checked
-- en and fi-easy have no captures; split judged from the diff only (same component as fi, whose captures I opened: page-1280-2, -5, page-390-8). en: 29 breaks.
-- Checked the diff against origin/main for solutions.md: each break falls at a sentence boundary, one thing per paragraph, no one-word orphans; the short "Vastaus: I ≈ 4,3 A" lead paragraph mirrors the stated answer line and reads as intended.
+- The captures are of the Finnish page (the screenshot tool writes content/fi/FY6/sovella/review/shots); the English page has no captures of its own. Figures are language-neutral apart from the label map.
+- Opened: contact-10, fig-1 (s1 circuit), fig-3 (s1 graph), fig-5 (s2 circuit), fig-7 (s3 field). The other fig-N files are 28–170 px icons, not figures.
+- Graph: axes with quantity and unit, scale start 3.6 V shown, points distinct from the line, extended to the vertical axis, slope triangle labelled.
+- English source text read in the packet: numbers with units are LaTeX, decimal point, \cdot and the aligned display blocks look correct; no plain quantities found by grep.
 - Hash re-read at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
