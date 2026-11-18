@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2), new Sovella tasks fy9-kaasut-s8 and s9 (text, figures fy3-10/pt-suorat and fy3-11/pv-isobaari, model answers, rubrics) and the changed intro; s1-s7 not re-judged. Language: fi-easy.
+CONTENT-HASH: fd4f0479d36b9c00
+SCOPE: delta: s7 (ydinvoimalan lähdeaineisto), s8 (kuva fy3-10/pt-suorat), s9 (kuva fy3-11/pv-isobaari) ja muuttunut johdanto 390 px:llä
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] pt-suorat: the two lines are solid from 100 K although data points exist only at 200 K and 400 K; the stretch below 200 K is extrapolation and could be dashed. Description gives the two real points per gas.
-- [Minor] Axis tick labels in both figures render at about 9-10 px at 360 px; legible, figure correctly scaled inside its card.
+- [Minor] s7 — ominaislämpökapasiteetti ja tiheys kirjoitettu murtoyksiköllä ($\frac{\text{kJ}}{\text{kg·K}}$), muualla J/(kg·K); yhtenäistä yksikkömuoto.
+- [Minor] s8/s9 — $R = 8{,}31\,\text{J/(mol K)}$ ilman $\cdot$-merkkiä; muualla $\text{J/(mol}\cdot\text{K)}$.
+- [Minor] vanhat tehtävät — kaksi tunnettua leikkautuvaa kaavaa (FY9.tsv), ei tämän deltan.
 
 ## Checked
-- Round 1 (visual) had no blocking items; the PASS stands. Round-1 content fixes verified in the current text: s9 piston is movable with weights holding the pressure constant (task text and the isobaric graph agree); s9 c answer tolerance 3 % matches the two-significant-figure model answer 1,2 * 10^3 K (1173 K); the intro no longer calls the last task the source task (s8, s9 are plain figure tasks, source note says invented examples); s9 c reasonableness line (4 * 293 K, about 900 C) consistent.
-- Own 360 px captures of s8 and s9 (fi-easy page, model answer opened): no horizontal overflow (page scrollWidth 360, task cards 326/326); check_layout --width 360 OK for fi, en, fi-easy.
-- Calculation rows aligned at =, units LaTeX with thin space, litre as \textsf{l}, decimal commas throughout, boxed answers, fractions legible; the s8 c) chain breaks one step per row without clipping.
-- Figures sit inside the card; aria-label gives the data points and grid step; axes carry quantity and unit; s9 shows the isobar as a horizontal line with direction arrow and end markers.
+- Omat 390 px:n elementtikuvat tehtävistä s7, s8, s9 (ongelma, kuva, mallivastaukset auki): kuvat, kaavarivit, vastauslaatikot luettu. check_layout.py --width 360: OK (2 tunnettua).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2): new tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) and the changed intro, judged afresh; s1-s7 not re-judged. Hash at start and end identical. Language: en.
+CONTENT-HASH: b61fa0a2e8442d35
+SCOPE: delta: en tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) in sovella/tasks.json and solutions.md, and the changed intro (git diff 49ba8f9 HEAD); fidelity to fi; s1-s7 not re-judged. Language: en.
 
 ## Blocking
 (none)
 
 ## Polish
-- s9: heating air to about 1170 K (about 900 C) is still not plausible for a school cylinder; a smaller volume ratio or a one-line note ("the gas is idealised") would help. Not blocking, the task is explicitly an invented example.
+- s9: heating air to about 1170 K (about 900 °C) is implausible for a school cylinder; a smaller volume ratio or "the gas is idealised" would help. The task is labelled an invented example.
 
 ## Checked
-- Round-1 blockers verified in the current text, not trusted: (1) s9 now says the movable piston carries weights that hold the pressure constant, "light" is gone, consistent with the constant 250 kPa in the figure; (2) s9 b and c both use two significant figures, answer.value 1172.6 K with tolerance 3 %: 1.2e3 K is 2.3 % off, so inside tolerance, and n = 0.10 mol gives 1203 K (2.6 %), also inside; (3) the intro no longer calls the last task the source task, it says only that one of the tasks is source-based; (4) the s9 c common-mistake line now reads "temperature not converted from Celsius to kelvins or the answer says it quadruples in Celsius (80 C)", which is correct.
-- Own recomputation (R = 8.31, 273.15): s8 a n = 100000*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa point gives the same); s8 b 60/100 = 0.60, so 40 % smaller, n_B 0.036 mol; s8 c 253.15/400*100 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; s9 b n = 0.1026 mol; s9 c T2 = 4*293.15 = 1172.6 K (880 K rise, 899.5 C). All match tasks.json answers and solutions.
-- s8: rigid vessel, constant V and n, so p proportional to T; comparison at equal T and V is physically sound; reading from two far-apart points; precision (two figures) matches the data; the -20 C part lies within the graph's range logic (253 K between 200 K and 400 K).
-- s9 d: heating at constant pressure, internal energy up, Q = dU + W, so Q > W; sign convention and energy wording correct. Magnitude check (0.04 mol of air per litre at 101 kPa, 2.5x pressure gives 0.10 mol) right.
-- Points add up per part, criteria match the parts, scope FY3, figure values are readable from the figures (V and 20 C given in the text).
-- Fidelity: numbers, criteria and physics identical across fi, en and fi-easy.
+- Recomputed in one script (R = 8.31, 273.15): s8 a n = 1e5*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa gives the same); b 60/100 = 0.60, 40 % smaller, n_B = 0.036 mol; c 100*253.15/400 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; b 250/(8.31*293.15) = 0.1026 mol; c T2 = 4*293.15 = 1172.6 K (899 °C). All answers inside tolerances; 1.2e3 K is inside 3 %. Order-of-magnitude checks (0.083 mol in 2 l, 0.042 mol in 1 l of room air) right.
+- Figure source (lessons/FY3/fy3-10, fy3-11 figures.py): A (200 K; 50 kPa), (400 K; 100 kPa), B (200; 30), (400; 60); isobar 250 kPa from 1.0 l to 4.0 l. Readings in the solutions match.
+- Physics: rigid sealed vessel, n and V constant, p proportional to T; comparison at equal T and V; W = p dV at constant pressure as the area; s9 d dU > 0, Q = dU + W, so Q > W, sign convention consistent. Scope FY3. Kelvin conversions explicit.
+- Assessment: criteria sum to part points; criteria ask only what each part asks; alternative methods (slope, V/T constant, Celsius answer) accepted.
+- Fidelity to fi: ids, figures, points, criteria, answer values and tolerances identical; every number in s8/s9 text, criteria and solutions matches fi.
+- Intro: "Nine problems", "one of the problems is source-based", consistent with the set.
+- Hash b61fa0a2e8442d35 (units.py hash --lang en) at start and end.
