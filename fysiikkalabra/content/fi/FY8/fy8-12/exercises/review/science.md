@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 15261a26498e83ce
-SCOPE: delta (unit notation 1/min -> min⁻¹, paragraph splits in solutions.md)
+SCOPE: delta answers,md-paragraphs,numbers,typography from 0e64d48ba9795111 base 64d4935c5ce5
 
 ## Blocking
 
@@ -9,7 +9,7 @@ SCOPE: delta (unit notation 1/min -> min⁻¹, paragraph splits in solutions.md)
 - exercises/solutions.md (L2-09 / tuntematon solutions) — these keep "pulssia/min" where L1-07 and L3-02 now use $\text{min}^{-1}$. This is physically equivalent and not an error. Optionally unify the notation.
 
 ## Checked
-- The hash was 15261a26498e83ce at the start and the end.
+- The hash was 15261a26498e83ce at the start and the end. Scope from the version I passed (0e64d48ba9795111, commit 64d4935c5ce5): categories answers, md-paragraphs, numbers, typography, none of them full for science.
 - I compared the whole diff word for word after mapping $\tfrac{1}{\text{min}}$ to $\text{min}^{-1}$ and collapsing whitespace. The old and new texts are identical. The only changes are the unit notation and blank lines or paragraph splits, so no number, formula, sign or claim changed.
 - exercises.json L1-07 (line 80) and L2-09 (line 339) now have the unit `min⁻¹`. It is the same dimension as 1/min, so it is a correct unit for a count rate. The task text of L1-07 asks for the same unit.
 - I recomputed the answers myself. L1-07: $1215/0{,}75\,\text{min} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$, which matches the stored 1530. L2-09: $800\cdot(1/2)^{30/12} = 141{,}42$, which matches the stored 141,4. Their tolerances are unchanged.
