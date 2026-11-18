@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 13c6fe9a996f1703
-SCOPE: delta (work queue 8g round 3: staged example split of Tunnetut ja kysytty; summary bullet formula as display block) from previous PASS 5d18f1d6857e0da4
 
 ## Blocking
 None.

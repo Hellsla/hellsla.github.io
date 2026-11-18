@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 95fdb7a6565fcd50
-SCOPE: delta (work queue 8g round 3: fy4-10-L2-02 Kaava split with "on sama kuin") from previous PASS 36a3fdd60977dd35
+SCOPE: delta (work queue 8g round 2: "pieneneminen" in fy4-10-L2-02 Kaava) from previous PASS 504b94a242b0ab65
 
 ## Blocking
 None.

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 525d746e2d9a472a
-SCOPE: delta presentation (Kaava step rewrite, work queue 8g) from previous PASS b0acce693db6846d
 
 ## Blocking
 None.

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 06be6c204f936543
-SCOPE: delta (work queue 8g round 2: friction and air-resistance work now signed) from previous PASS 8ad3639f61897685
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 39da8dac762307ce base 484fb79
 
 ## Blocking
 None.

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 5c5e2726a63ff9d8
-SCOPE: delta (work queue 8g round 2: stopping-time symbol $\Delta t_\text{e}$ in fy4-9-L3-04) from previous PASS 982778f9cff7e8e8
+SCOPE: delta md-paragraphs,numbers,reflow,typography from ffd2c67e70d46b4c base cabadc3
 
 ## Blocking
 None.

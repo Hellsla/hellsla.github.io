@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b916fcbcac5a7c18
-SCOPE: delta (work queue 8g round 2: L3-05 mean symbols, F_ka now defined from F_1, F_2, F_3) from previous PASS aed639aa12699893
+SCOPE: delta presentation (Kaava step rewrite, work queue 8g) from previous PASS be8b26190b060e32
 
 ## Blocking
 None.

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: bf5ae79a8c20ac83
-SCOPE: delta (work queue 8g round 3: L3-05 "pieneneminen", Kaava of the sled-bars task) from round-2 report 64e7e82ffa22ebdf
+SCOPE: delta (work queue 8g round 2: Kaava rewrites from the basic equation, paragraph splits) from previous PASS 3adcc392f3bc2b66
 
 ## Blocking
 None.
