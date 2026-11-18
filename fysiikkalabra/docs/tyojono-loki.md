@@ -34,6 +34,8 @@ Ehdotus yhteiseksi kuvasäännöksi (koordinaattori 16.11; opettajan päätettä
 
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
+Erä 1, jaetut komponentit (PR #709, 2026-11-18): `investigations.py` siirtää apulinkit kappaleen perään; `build.ol_starts` säilyttää numeroidun listan alkunumeron; `mathlayout.list_chains` näyttää listakohdan pitkän laskuketjun riveinä (poisti 5 tunnettua leikkautuvaa kaavaa: docs/clipped-formulas/tvt.tsv ja FY10.tsv); `.investigation td:empty` (site.css) korkeammat tyhjät rivit; `screenshot.py` ei kaappaa zoom-painikkeen eikä KaTeXin svg:itä kuvina. Auki: taulukkojen otsakkeet 390 px:ssä. Kuviin ei koskettu (ZIP-kuvia ei käytetä, opettaja 2026-11-18).
+
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
 #536:n kuvauksen järjestyksessä: ensin Major-löydökset tvt-epavarmuus, tvt-kuvaaja, tvt-tyoselostus, fy10-jousivakio,
 fy10-induktio, fy10-lammonjohtuminen, fy10-liukukitka ja fy10-hiuksen-paksuus. fy10-liukukitkan kallistusvirhe
@@ -413,7 +415,7 @@ lang-tekstejä tai fysiikkaa.
 - **PR 4b: Varattu: claude/sim-ui-pr4b-tarttuva-kaikki** yleistys: tarttuva kuva kaikkiin simulaatioihin puhelimella;
   korkeusraja 45 % ikkunasta vaihepalkin alla (opettaja 2026-11-17; 390 px:llä 48/96 tarttuu, korkeammat kuten fy7-4
   pysyvät paikallaan; `inquiry.SIM_STICK_SHARE`, `docs/audits/2026-11-16-sim-pr4b-tarttuva-kaikki/`).
-- **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
+- **PR 5 (tehty, #711)** canvasin nimi (kortin otsikko ja luvun nimi, ei uutta tekstiä) ja kuvaus (lukema, `aria-describedby`), valintaruudut 40 px:n kohteiksi, näkyvä kohdistus (`sim-embed.js`, `site.css`; kaappaukset `docs/audits/2026-11-18-sim-pr5-saavutettavuus/`).
 
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
 fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien

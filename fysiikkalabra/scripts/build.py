@@ -314,6 +314,42 @@ def forms_page_body():
             + "".join(out))
 
 
+def ol_starts(html, text):
+    """A numbered list that goes on from an earlier one ("4. ..." under the next ### heading) keeps its first number:
+    markdown drops it, so the page restarted at 1 (work queue 4 batch 1, FY10 TVT guide). Reads the first number of every
+    top-level numbered list from the source and gives the matching top-level <ol> a start attribute; when the two counts
+    differ (a list made some other way), nothing is changed."""
+    starts, in_ol, fence, blank = [], False, False, False
+    for line in text.split("\n"):
+        if line.lstrip().startswith("```"): fence = not fence
+        if fence: continue
+        m = re.match(r"(\d{1,3})\. ", line)
+        if m:
+            if not in_ol: starts.append(int(m.group(1)))
+            in_ol, blank = True, False
+        elif not line.strip(): blank = True
+        elif line.startswith((" ", "\t")): blank = False
+        else:
+            if blank or re.match(r"(#|[-*+] |>|<)", line): in_ol = False    # after a blank line a flush paragraph ends the list
+            blank = False
+    parts, depth, tops = re.split(r"(</?ol(?:\s[^>]*)?>)", html), 0, 0
+    for t in parts:
+        if t.startswith("<ol"):
+            depth += 1; tops += depth == 1
+        elif t == "</ol>": depth -= 1
+    if all(x == 1 for x in starts) or tops != len(starts): return html
+    depth, out, n = 0, [], 0
+    for t in parts:
+        if t.startswith("<ol"):
+            depth += 1
+            if depth == 1:
+                if starts[n] != 1: t = f'<ol start="{starts[n]}">'
+                n += 1
+        elif t == "</ol>": depth -= 1
+        out.append(t)
+    return "".join(out)
+
+
 def render_md(text, **kw):
     """Markdown -> HTML, with LaTeX kept out of markdown's reach, force-diagram specs drawn (scripts/fbdspec.py) and
     figures embedded by id (`<svg data-fig="fy5-2/lauta-voimat"></svg>`, figcat.embed) drawn in the page's language.
@@ -334,6 +370,7 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(mathlayout.DISPLAY_OR_INLINE, stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
+    html = ol_starts(html, text)
     html = fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
     return figcat.restore(html, figrefs, T.lang) if figrefs else html
 
