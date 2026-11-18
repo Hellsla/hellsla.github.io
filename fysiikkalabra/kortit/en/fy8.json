@@ -1,0 +1,1282 @@
+{
+ "moduuli": "FY8",
+ "nimi": "Matter, radiation and quantisation",
+ "aiheet": [
+  {
+   "id": "fy8-sateilyn-kvantittuminen",
+   "nimi": "Quantisation of radiation"
+  },
+  {
+   "id": "fy8-valosahkoilmio",
+   "nimi": "The photoelectric effect"
+  },
+  {
+   "id": "fy8-aaltohiukkasdualismi",
+   "nimi": "Wave-particle duality"
+  },
+  {
+   "id": "fy8-atomin-energiatasot",
+   "nimi": "Energy levels of the atom"
+  },
+  {
+   "id": "fy8-kvanttimekaaninen-atomimalli",
+   "nimi": "The quantum-mechanical model of the atom"
+  },
+  {
+   "id": "fy8-kvantti-ilmioiden-sovellukset",
+   "nimi": "Applications of quantum phenomena"
+  },
+  {
+   "id": "fy8-rontgensateily",
+   "nimi": "X-radiation"
+  },
+  {
+   "id": "fy8-atomiydin",
+   "nimi": "The atomic nucleus"
+  },
+  {
+   "id": "fy8-ydinreaktiot",
+   "nimi": "Nuclear reactions"
+  },
+  {
+   "id": "fy8-radioaktiivisuus",
+   "nimi": "Radioactivity"
+  },
+  {
+   "id": "fy8-hajoamislaki",
+   "nimi": "The decay law"
+  },
+  {
+   "id": "fy8-sateilyn-vaimeneminen",
+   "nimi": "Attenuation of radiation"
+  },
+  {
+   "id": "fy8-sateilyturvallisuus",
+   "nimi": "Radiation safety"
+  },
+  {
+   "id": "fy8-sateilyn-hyotykaytto",
+   "nimi": "Uses of radiation"
+  },
+  {
+   "id": "fy8-standardimalli",
+   "nimi": "The Standard Model"
+  },
+  {
+   "id": "fy8-maailmankaikkeus",
+   "nimi": "The universe"
+  }
+ ],
+ "kortit": [
+  {
+   "id": "fy8-kvantti",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Quantum",
+   "maaritelma": "The smallest amount in which a physical quantity can be transferred in an interaction."
+  },
+  {
+   "id": "fy8-kvantittuminen",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Quantisation",
+   "maaritelma": "In some phenomena energy can be gained or transferred only in definite portions."
+  },
+  {
+   "id": "fy8-fotoni",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Photon",
+   "maaritelma": "The energy quantum of the electromagnetic radiation field; it has no rest mass."
+  },
+  {
+   "id": "fy8-planckin-vakio",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Planck constant",
+   "maaritelma": "A fundamental constant of quantum physics that links the energy of a photon to the frequency of the radiation."
+  },
+  {
+   "id": "fy8-fotonin-energia",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Photon energy",
+   "maaritelma": "Grows as the frequency of the radiation grows and its wavelength shrinks.",
+   "kaava": "E = hf = \\dfrac{hc}{\\lambda}",
+   "kaava_puhe": "E is h times f, which is h c divided by lambda"
+  },
+  {
+   "id": "fy8-elektronivoltti",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Electronvolt",
+   "maaritelma": "The energy that a charge with the magnitude of the elementary charge gains when it moves through a potential difference of one volt.",
+   "kaava": "1\\,\\text{eV} \\approx 1.60 \\cdot 10^{-19}\\,\\text{J}",
+   "kaava_puhe": "one electronvolt is about 1.60 times 10 to the power minus 19 joules"
+  },
+  {
+   "id": "fy8-musta-kappale",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Black body",
+   "maaritelma": "An ideal emitter whose radiation spectrum depends only on its temperature."
+  },
+  {
+   "id": "fy8-jatkuva-spektri",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-sateilyn-kvantittuminen",
+   "kasite": "Continuous spectrum",
+   "maaritelma": "Contains an unbroken range of wavelengths with no separate spectral lines."
+  },
+  {
+   "id": "fy8-valosahkoilmio",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Photoelectric effect",
+   "maaritelma": "Electromagnetic radiation of high enough frequency can release electrons from the surface of a material."
+  },
+  {
+   "id": "fy8-irrotustyo",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Work function",
+   "maaritelma": "The smallest energy needed to release an electron from the surface of a given material."
+  },
+  {
+   "id": "fy8-rajataajuus",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Threshold frequency",
+   "maaritelma": "The lowest frequency of radiation at which electrons can be released from a given material."
+  },
+  {
+   "id": "fy8-pysaytysjannite",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Stopping voltage",
+   "maaritelma": "The voltage at which even the fastest electrons released from the surface are just stopped."
+  },
+  {
+   "id": "fy8-maksimiliike-energia",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Maximum kinetic energy",
+   "maaritelma": "The energy of the fastest released electron follows from conservation of energy.",
+   "kaava": "E_{\\text{k,max}} = hf - W",
+   "kaava_puhe": "E k max is h f minus W"
+  },
+  {
+   "id": "fy8-valosahkoilmion-energiayhtalo",
+   "moduuli": "FY8",
+   "luku": "fy8-1",
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Photoelectric equation",
+   "maaritelma": "The energy of the photon is used for the work function and the kinetic energy of the electron.",
+   "kaava": "hf = W + E_{\\text{k,max}}",
+   "kaava_puhe": "h f is W plus E k max"
+  },
+  {
+   "id": "fy8-sateilyn-intensiteetti",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-valosahkoilmio",
+   "kasite": "Intensity of radiation",
+   "maaritelma": "Tells the radiation energy arriving at a surface per unit area and unit time."
+  },
+  {
+   "id": "fy8-aaltohiukkasdualismi",
+   "moduuli": "FY8",
+   "luku": "fy8-4",
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Wave-particle duality",
+   "maaritelma": "Radiation and matter particles can have both wave-like and particle-like properties."
+  },
+  {
+   "id": "fy8-fotonin-liikemaara",
+   "moduuli": "FY8",
+   "luku": "fy8-4",
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Photon momentum",
+   "maaritelma": "A massless quantum of radiation has momentum.",
+   "kaava": "p = \\dfrac{h}{\\lambda} = \\dfrac{E}{c}",
+   "kaava_puhe": "p is h divided by lambda, which is E divided by c"
+  },
+  {
+   "id": "fy8-comptonin-sironta",
+   "moduuli": "FY8",
+   "luku": "fy8-4",
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Compton effect",
+   "maaritelma": "A collision of a photon with an electron changes the energy and wavelength of the photon."
+  },
+  {
+   "id": "fy8-kaksoisrakokoe",
+   "moduuli": "FY8",
+   "luku": "fy8-4",
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Double-slit experiment",
+   "maaritelma": "Single particles gradually build up an interference pattern that is characteristic of waves."
+  },
+  {
+   "id": "fy8-aineaalto",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Matter wave",
+   "maaritelma": "A wave-like property associated with a moving matter particle."
+  },
+  {
+   "id": "fy8-de-broglie",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "de Broglie wavelength",
+   "maaritelma": "The wavelength of a particle depends on its momentum.",
+   "kaava": "\\lambda = \\dfrac{h}{p}",
+   "kaava_puhe": "lambda is h divided by p"
+  },
+  {
+   "id": "fy8-interferenssi",
+   "moduuli": "FY8",
+   "luku": "fy8-4",
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Interference",
+   "maaritelma": "The combining of waves strengthens or weakens the observed effect at different places."
+  },
+  {
+   "id": "fy8-elektronimikroskooppi",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-aaltohiukkasdualismi",
+   "kasite": "Electron microscope",
+   "maaritelma": "The short wavelength of electrons makes imaging possible in more detail than with visible light."
+  },
+  {
+   "id": "fy8-energiataso",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Energy level",
+   "maaritelma": "An electron in an atom can have only certain allowed energies."
+  },
+  {
+   "id": "fy8-perustila",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Ground state",
+   "maaritelma": "The lowest possible energy state of an atom."
+  },
+  {
+   "id": "fy8-viritystila",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Excited state",
+   "maaritelma": "A state of an atom in which its electron system has more energy than in the ground state."
+  },
+  {
+   "id": "fy8-virittyminen",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Excitation",
+   "maaritelma": "An atom receives energy and moves to a higher energy level."
+  },
+  {
+   "id": "fy8-emissio",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Emission",
+   "maaritelma": "An atom gives away energy as a photon when it moves to a lower energy level."
+  },
+  {
+   "id": "fy8-absorptio",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Absorption",
+   "maaritelma": "An atom receives a photon of suitable energy and moves to a higher energy level."
+  },
+  {
+   "id": "fy8-emissiospektri",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Emission spectrum",
+   "maaritelma": "Contains the wavelengths that excited matter emits when its atoms de-excite to lower energy levels."
+  },
+  {
+   "id": "fy8-absorptiospektri",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Absorption spectrum",
+   "maaritelma": "Contains the missing wavelengths that matter has absorbed from a continuous spectrum."
+  },
+  {
+   "id": "fy8-viivaspektri",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Line spectrum",
+   "maaritelma": "Consists of separate wavelengths and tells about the quantised energy states of matter."
+  },
+  {
+   "id": "fy8-energiatasokaavio",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Energy level diagram",
+   "maaritelma": "Shows the allowed energies of a system and the transitions between them."
+  },
+  {
+   "id": "fy8-ionisaatioenergia",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Ionisation energy",
+   "maaritelma": "The smallest energy needed to release an electron completely from an atom in its ground state."
+  },
+  {
+   "id": "fy8-vetyatomin-energia",
+   "moduuli": "FY8",
+   "luku": "fy8-3",
+   "aihe": "fy8-atomin-energiatasot",
+   "kasite": "Energy of the hydrogen atom",
+   "maaritelma": "The allowed energy of the electron depends on the principal quantum number.",
+   "kaava": "E_n = -\\dfrac{13.6\\,\\text{eV}}{n^2}",
+   "kaava_puhe": "E n is minus 13.6 electronvolts divided by n squared"
+  },
+  {
+   "id": "fy8-kvanttitila",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Quantum state",
+   "maaritelma": "An allowed state of a system with certain physical properties and an energy."
+  },
+  {
+   "id": "fy8-aaltofunktio",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Wave function",
+   "maaritelma": "A mathematical description from which the probabilities of detecting a particle can be determined."
+  },
+  {
+   "id": "fy8-todennakoisyysjakauma",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Probability distribution",
+   "maaritelma": "Describes how likely it is that a particle is detected in different regions."
+  },
+  {
+   "id": "fy8-orbitaali",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Orbital",
+   "maaritelma": "The quantum state of an electron in an atom. In pictures it is drawn as the region where the electron is detected with high probability."
+  },
+  {
+   "id": "fy8-kvanttiluku",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Quantum number",
+   "maaritelma": "A number that describes the properties of the quantum state of an electron in an atom."
+  },
+  {
+   "id": "fy8-elektronikuori",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Electron shell",
+   "maaritelma": "A group of electron states with the same principal quantum number."
+  },
+  {
+   "id": "fy8-paulin-kieltosaanto",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Pauli exclusion principle",
+   "maaritelma": "In an atom two electrons cannot have all their quantum numbers the same."
+  },
+  {
+   "id": "fy8-heisenbergin-epatarkkuusperiaate",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Heisenberg uncertainty principle",
+   "maaritelma": "The position and the momentum of a particle cannot be determined at the same time with arbitrary accuracy."
+  },
+  {
+   "id": "fy8-tunneloituminen",
+   "moduuli": "FY8",
+   "luku": "fy8-7",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Tunnelling",
+   "maaritelma": "According to quantum mechanics a particle can be found on the other side of a barrier without having enough energy in the classical sense."
+  },
+  {
+   "id": "fy8-seisova-aalto",
+   "moduuli": "FY8",
+   "luku": "fy8-5",
+   "aihe": "fy8-kvanttimekaaninen-atomimalli",
+   "kasite": "Standing wave",
+   "maaritelma": "A wave whose pattern stays in place; the allowed states of a bound electron are standing waves, so only certain quantum states are possible."
+  },
+  {
+   "id": "fy8-puolijohde",
+   "moduuli": "FY8",
+   "luku": "fy8-6",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Semiconductor",
+   "maaritelma": "A material whose electrical conductivity can be controlled, for example by doping or by changing the temperature."
+  },
+  {
+   "id": "fy8-seostaminen",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Doping",
+   "maaritelma": "A small amount of other atoms is added to a semiconductor to change its electrical conductivity."
+  },
+  {
+   "id": "fy8-diodi",
+   "moduuli": "FY8",
+   "luku": "fy8-6",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Diode",
+   "maaritelma": "A semiconductor component that conducts electric current mainly in one direction."
+  },
+  {
+   "id": "fy8-transistori",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Transistor",
+   "maaritelma": "A semiconductor component that can control or amplify an electric current."
+  },
+  {
+   "id": "fy8-aurinkokenno",
+   "moduuli": "FY8",
+   "luku": "fy8-7",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Solar cell",
+   "maaritelma": "A semiconductor device that converts the energy of electromagnetic radiation into electrical energy."
+  },
+  {
+   "id": "fy8-luminesenssi",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Luminescence",
+   "maaritelma": "The production of light in matter without strong heating of the matter."
+  },
+  {
+   "id": "fy8-fluoresenssi",
+   "moduuli": "FY8",
+   "luku": "fy8-2",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Fluorescence",
+   "maaritelma": "After energy is absorbed, light is produced quickly as the excited state de-excites."
+  },
+  {
+   "id": "fy8-fosforenssi",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Phosphorescence",
+   "maaritelma": "The excited state de-excites slowly, so the material can emit light even after the excitation has ended."
+  },
+  {
+   "id": "fy8-stimuloitu-emissio",
+   "moduuli": "FY8",
+   "luku": "fy8-7",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Stimulated emission",
+   "maaritelma": "A photon causes an excited atom to emit a second photon of the same energy."
+  },
+  {
+   "id": "fy8-laser",
+   "moduuli": "FY8",
+   "luku": "fy8-7",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Laser",
+   "maaritelma": "Produces directional, nearly monochromatic and coherent electromagnetic radiation."
+  },
+  {
+   "id": "fy8-koherentti-valo",
+   "moduuli": "FY8",
+   "luku": "fy8-7",
+   "aihe": "fy8-kvantti-ilmioiden-sovellukset",
+   "kasite": "Coherent light",
+   "maaritelma": "The waves oscillate with a constant phase difference between them."
+  },
+  {
+   "id": "fy8-rontgensateily",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "X-radiation",
+   "maaritelma": "Short-wavelength, high-energy ionising electromagnetic radiation."
+  },
+  {
+   "id": "fy8-rontgenputki",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "X-ray tube",
+   "maaritelma": "Electrons are accelerated by a high voltage and made to hit the anode to produce radiation."
+  },
+  {
+   "id": "fy8-katodi",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "Cathode",
+   "maaritelma": "The electrode of an X-ray tube from which electrons are released and accelerated towards the anode."
+  },
+  {
+   "id": "fy8-anodi",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "Anode",
+   "maaritelma": "The target of an X-ray tube that the electrons moving at high speed hit."
+  },
+  {
+   "id": "fy8-jarrutussateily",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "Bremsstrahlung",
+   "maaritelma": "Produced when electrons slow down in the electric field of atomic nuclei; it forms the continuous X-ray spectrum."
+  },
+  {
+   "id": "fy8-karakteristinen-sateily",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "Characteristic X-radiation",
+   "maaritelma": "Produced when an electron of an anode atom drops into a vacancy in an inner shell; it forms spectral lines characteristic of the material."
+  },
+  {
+   "id": "fy8-rontgenspektri",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-rontgensateily",
+   "kasite": "X-ray spectrum",
+   "maaritelma": "Consists of continuous bremsstrahlung with characteristic lines on top of it."
+  },
+  {
+   "id": "fy8-lyhyin-aallonpituus",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-rontgensateily",
+   "kasite": "Shortest wavelength",
+   "maaritelma": "The photon of highest energy from an X-ray tube is produced when all the energy of an electron changes into a photon.",
+   "kaava": "\\lambda_{\\text{min}} = \\dfrac{hc}{eU}",
+   "kaava_puhe": "lambda min is h c divided by the product e U"
+  },
+  {
+   "id": "fy8-nukleoni",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Nucleon",
+   "maaritelma": "A common name for the protons and neutrons of an atomic nucleus."
+  },
+  {
+   "id": "fy8-protoni",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Proton",
+   "maaritelma": "A positively charged nucleon whose number determines the element."
+  },
+  {
+   "id": "fy8-neutroni",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Neutron",
+   "maaritelma": "An electrically neutral nucleon whose number can vary between nuclei of the same element."
+  },
+  {
+   "id": "fy8-jarjestysluku",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Atomic number",
+   "maaritelma": "The number of protons in an atomic nucleus."
+  },
+  {
+   "id": "fy8-massaluku",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Mass number",
+   "maaritelma": "The total number of protons and neutrons in a nucleus."
+  },
+  {
+   "id": "fy8-isotooppi",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Isotope",
+   "maaritelma": "Nuclei of the same element with different numbers of neutrons."
+  },
+  {
+   "id": "fy8-atomimassayksikko",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Atomic mass unit",
+   "maaritelma": "The unit of mass for atoms and nuclei.",
+   "kaava": "1\\,\\text{u} \\approx 1.66 \\cdot 10^{-27}\\,\\text{kg}",
+   "kaava_puhe": "one atomic mass unit is about 1.66 times 10 to the power minus 27 kilograms"
+  },
+  {
+   "id": "fy8-massavaje",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Mass defect",
+   "maaritelma": "The mass of a bound nucleus is smaller than the sum of the masses of its separate nucleons."
+  },
+  {
+   "id": "fy8-sidosenergia",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Binding energy",
+   "maaritelma": "The energy needed to break a nucleus into separate nucleons.",
+   "kaava": "E_\\text{B} = \\Delta m\\,c^2",
+   "kaava_puhe": "E B is delta m times c squared"
+  },
+  {
+   "id": "fy8-sidososuus",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-atomiydin",
+   "kasite": "Binding energy per nucleon",
+   "maaritelma": "The binding energy divided by the number of nucleons in the nucleus describes the stability of the nucleus."
+  },
+  {
+   "id": "fy8-ydinreaktio",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Nuclear reaction",
+   "maaritelma": "An atomic nucleus changes into another nucleus or other nuclei in an interaction with another particle."
+  },
+  {
+   "id": "fy8-reaktioenergia",
+   "moduuli": "FY8",
+   "luku": "fy8-10",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Reaction energy",
+   "maaritelma": "The energy released or taken up in a nuclear reaction is determined by the mass difference between the initial and final states.",
+   "kaava": "Q = (m_\\text{initial} - m_\\text{final})\\,c^2",
+   "kaava_puhe": "Q is the difference m initial minus m final, times c squared"
+  },
+  {
+   "id": "fy8-fissio",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Fission",
+   "maaritelma": "A heavy atomic nucleus splits into two lighter nuclei and releases energy."
+  },
+  {
+   "id": "fy8-ketjureaktio",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Chain reaction",
+   "maaritelma": "The neutrons released in fission cause new fissions."
+  },
+  {
+   "id": "fy8-fuusio",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Fusion",
+   "maaritelma": "Light atomic nuclei combine into a heavier nucleus and can release energy."
+  },
+  {
+   "id": "fy8-fuusioreaktio",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Fusion reaction",
+   "maaritelma": "The energy of stars is produced when light nuclei combine into larger nuclei."
+  },
+  {
+   "id": "fy8-ydinvoimala",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Nuclear power plant",
+   "maaritelma": "The energy released in fission is used to produce electrical energy by way of heat."
+  },
+  {
+   "id": "fy8-kriittinen-massa",
+   "moduuli": "FY8",
+   "luku": "fy8-11",
+   "aihe": "fy8-ydinreaktiot",
+   "kasite": "Critical mass",
+   "maaritelma": "The smallest amount of fissile material with which a self-sustaining chain reaction is possible."
+  },
+  {
+   "id": "fy8-radioaktiivisuus",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Radioactivity",
+   "maaritelma": "An unstable atomic nucleus changes by itself into another nucleus and emits radiation as it does so."
+  },
+  {
+   "id": "fy8-emoydin",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Parent nucleus",
+   "maaritelma": "The original unstable nucleus of a radioactive decay."
+  },
+  {
+   "id": "fy8-tytarydin",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Daughter nucleus",
+   "maaritelma": "The new atomic nucleus produced in a radioactive decay."
+  },
+  {
+   "id": "fy8-alfahajoaminen",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Alpha decay",
+   "maaritelma": "The nucleus emits a helium nucleus that contains two protons and two neutrons."
+  },
+  {
+   "id": "fy8-beeta-hajoaminen",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "$\\beta^-$ decay",
+   "maaritelma": "A neutron of the nucleus changes into a proton, and an electron and an antineutrino are produced."
+  },
+  {
+   "id": "fy8-beeta-hajoaminen-2",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "$\\beta^+$ decay",
+   "maaritelma": "A proton of the nucleus changes into a neutron, and a positron and a neutrino are produced."
+  },
+  {
+   "id": "fy8-elektronisieppaus",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Electron capture",
+   "maaritelma": "The nucleus captures an electron from the innermost shell of its own atom, so a proton changes into a neutron and a neutrino is produced."
+  },
+  {
+   "id": "fy8-gammahajoaminen",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Gamma decay",
+   "maaritelma": "A nucleus in an excited state moves to a lower energy level by emitting a high-energy photon."
+  },
+  {
+   "id": "fy8-alfasateily",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Alpha radiation",
+   "maaritelma": "Consists of helium nuclei; it ionises strongly but penetrates matter poorly."
+  },
+  {
+   "id": "fy8-beetasateily",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Beta radiation",
+   "maaritelma": "Consists of high-speed electrons or positrons."
+  },
+  {
+   "id": "fy8-gammasateily",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Gamma radiation",
+   "maaritelma": "High-energy electromagnetic radiation with great penetrating power."
+  },
+  {
+   "id": "fy8-neutriino",
+   "moduuli": "FY8",
+   "luku": "fy8-8",
+   "aihe": "fy8-radioaktiivisuus",
+   "kasite": "Neutrino",
+   "maaritelma": "A very light, uncharged particle that interacts with matter extremely weakly."
+  },
+  {
+   "id": "fy8-aktiivisuus",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Activity",
+   "maaritelma": "Tells the number of radioactive decays per second."
+  },
+  {
+   "id": "fy8-becquerel",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Becquerel",
+   "maaritelma": "The unit of activity; one becquerel means one decay per second."
+  },
+  {
+   "id": "fy8-hajoamisvakio",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Decay constant",
+   "maaritelma": "Describes the probability per unit time that a single radioactive nucleus decays."
+  },
+  {
+   "id": "fy8-puoliintumisaika",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Half-life",
+   "maaritelma": "The time in which the number of radioactive nuclei and the activity of a sample fall to half."
+  },
+  {
+   "id": "fy8-hajoamislaki",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Decay law",
+   "maaritelma": "The number of undecayed nuclei decreases exponentially.",
+   "kaava": "N = N_0 e^{-\\lambda t}",
+   "kaava_puhe": "N is N zero times e to the power minus lambda t"
+  },
+  {
+   "id": "fy8-aktiivisuuden-pieneneminen",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Decrease of activity",
+   "maaritelma": "The activity of a sample decreases in the same exponential way.",
+   "kaava": "A = A_0 e^{-\\lambda t}",
+   "kaava_puhe": "A is A zero times e to the power minus lambda t"
+  },
+  {
+   "id": "fy8-hajoamissarja",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-hajoamislaki",
+   "kasite": "Decay series",
+   "maaritelma": "A chain of successive radioactive decays ends in a stable nucleus."
+  },
+  {
+   "id": "fy8-intensiteetti",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Intensity",
+   "maaritelma": "Describes the power carried by radiation per unit area."
+  },
+  {
+   "id": "fy8-sateilyn-vaimeneminen",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Attenuation of radiation",
+   "maaritelma": "The intensity of gamma radiation in matter decreases exponentially as the thickness $d$ of the barrier grows.",
+   "kaava": "I = I_0 e^{-\\mu d}",
+   "kaava_puhe": "I is I zero times e to the power minus mu d"
+  },
+  {
+   "id": "fy8-vaimennuskerroin",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Attenuation coefficient",
+   "maaritelma": "A constant $\\mu$ determined by the material and the energy of the radiation; it tells how strongly the material attenuates the radiation. It is related to the half-value thickness by the equation below.",
+   "kaava": "\\mu = \\dfrac{\\ln 2}{d_{1/2}}",
+   "kaava_puhe": "mu is the natural logarithm of two divided by the half-value thickness"
+  },
+  {
+   "id": "fy8-puoliintumispaksuus",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Half-value thickness",
+   "maaritelma": "The thickness of a layer of material that reduces the intensity of radiation to half."
+  },
+  {
+   "id": "fy8-etaisyyden-nelion-laki",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Inverse square law",
+   "maaritelma": "The intensity of the radiation of a point source is inversely proportional to the square of the distance.",
+   "kaava": "I \\propto \\dfrac{1}{r^2}",
+   "kaava_puhe": "I is proportional to one divided by r squared"
+  },
+  {
+   "id": "fy8-valosahkoabsorptio",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Photoelectric absorption",
+   "maaritelma": "A photon gives all its energy to an electron of the matter and disappears."
+  },
+  {
+   "id": "fy8-comptoninsironta",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Compton scattering",
+   "maaritelma": "An interaction between a photon and an electron of the matter in which the photon gives part of its energy to the electron and continues in a new direction with less energy; the most important way gamma radiation is attenuated at medium energies."
+  },
+  {
+   "id": "fy8-parinmuodostus",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyn-vaimeneminen",
+   "kasite": "Pair production",
+   "maaritelma": "A photon of high enough energy can change into an electron and a positron near a nucleus."
+  },
+  {
+   "id": "fy8-ionisoiva-sateily",
+   "moduuli": "FY8",
+   "luku": "fy8-12",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Ionising radiation",
+   "maaritelma": "Radiation whose single particles or photons have enough energy to release electrons from atoms or molecules."
+  },
+  {
+   "id": "fy8-absorboitunut-annos",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Absorbed dose",
+   "maaritelma": "Tells the radiation energy transferred to matter per unit mass."
+  },
+  {
+   "id": "fy8-gray",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Gray",
+   "maaritelma": "The unit of absorbed dose.",
+   "kaava": "1\\,\\text{Gy} = 1\\,\\text{J/kg}",
+   "kaava_puhe": "one gray is one joule per kilogram"
+  },
+  {
+   "id": "fy8-ekvivalenttiannos",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Equivalent dose",
+   "maaritelma": "Takes into account, in addition to the absorbed energy, the biological effect of the type of radiation."
+  },
+  {
+   "id": "fy8-sievert",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Sievert",
+   "maaritelma": "The unit of a dose that describes the biological harm of radiation."
+  },
+  {
+   "id": "fy8-taustasateily",
+   "moduuli": "FY8",
+   "luku": "fy8-9",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Background radiation",
+   "maaritelma": "Ionising radiation that is constantly present in the environment from natural and artificial sources."
+  },
+  {
+   "id": "fy8-radon",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Radon",
+   "maaritelma": "A radioactive gas that moves from the ground into buildings and is the largest source of radiation dose in Finland."
+  },
+  {
+   "id": "fy8-sateilysuojaus",
+   "moduuli": "FY8",
+   "luku": "fy8-13",
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Radiation protection",
+   "maaritelma": "Exposure is reduced by shortening the time, increasing the distance and using suitable shielding."
+  },
+  {
+   "id": "fy8-sateilyvaurio",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyturvallisuus",
+   "kasite": "Radiation damage",
+   "maaritelma": "Ionising radiation can damage cells and DNA and increase the risk of cancer."
+  },
+  {
+   "id": "fy8-rontgenkuvaus",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "X-ray imaging",
+   "maaritelma": "Different tissues of the body attenuate X-radiation differently, so an image of the internal structures is formed."
+  },
+  {
+   "id": "fy8-tietokonetomografia",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "Computed tomography",
+   "maaritelma": "A computer forms a cross-sectional or three-dimensional image of the body from many X-ray images."
+  },
+  {
+   "id": "fy8-isotooppilaaketiede",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "Nuclear medicine",
+   "maaritelma": "Radioactive tracers are used to study the functioning of the body and to treat diseases."
+  },
+  {
+   "id": "fy8-pet-kuvaus",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "PET scan",
+   "maaritelma": "A tracer that emits positrons is used to form an image of the metabolism of the body."
+  },
+  {
+   "id": "fy8-sadehoito",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "Radiotherapy",
+   "maaritelma": "Ionising radiation is aimed at a tumour to damage cancer cells."
+  },
+  {
+   "id": "fy8-radiohiiliajoitus",
+   "moduuli": "FY8",
+   "luku": "fy8-14",
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "Radiocarbon dating",
+   "maaritelma": "The age of an organic sample is estimated from the remaining amount of the isotope carbon-14."
+  },
+  {
+   "id": "fy8-palovaroitin",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-sateilyn-hyotykaytto",
+   "kasite": "Smoke detector",
+   "maaritelma": "In some detectors a radioactive substance ionises the air, which makes it possible to detect smoke."
+  },
+  {
+   "id": "fy8-standardimalli",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Standard Model",
+   "maaritelma": "A theory that describes the fundamental particles of matter and the strong, weak and electromagnetic interactions."
+  },
+  {
+   "id": "fy8-alkeishiukkanen",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Fundamental particle",
+   "maaritelma": "A particle that, according to current knowledge, has no internal structure."
+  },
+  {
+   "id": "fy8-kvarkki",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Quark",
+   "maaritelma": "A fundamental particle of matter from which, for example, protons and neutrons are built."
+  },
+  {
+   "id": "fy8-leptoni",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Lepton",
+   "maaritelma": "A group of fundamental particles that includes, for example, the electron and the neutrinos."
+  },
+  {
+   "id": "fy8-valittajahiukkanen",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Mediator particle",
+   "maaritelma": "A particle of a quantum field by which an interaction can be described."
+  },
+  {
+   "id": "fy8-gluoni",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Gluon",
+   "maaritelma": "The mediator particle of the strong interaction."
+  },
+  {
+   "id": "fy8-valibosoni",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Weak boson",
+   "maaritelma": "The W and Z bosons mediate the weak interaction."
+  },
+  {
+   "id": "fy8-higgsin-bosoni",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Higgs boson",
+   "maaritelma": "A particle associated with the Higgs field; its detection supports the model that explains the masses of particles."
+  },
+  {
+   "id": "fy8-antihiukkanen",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Antiparticle",
+   "maaritelma": "The counterpart of a particle, with the same mass but opposite properties, such as electric charge."
+  },
+  {
+   "id": "fy8-annihilaatio",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Annihilation",
+   "maaritelma": "When a particle and its antiparticle meet, both can disappear, and all their energy is carried away by, for example, photons."
+  },
+  {
+   "id": "fy8-vahva-vuorovaikutus",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Strong interaction",
+   "maaritelma": "Keeps quarks together in hadrons and binds protons and neutrons in the atomic nucleus."
+  },
+  {
+   "id": "fy8-heikko-vuorovaikutus",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-standardimalli",
+   "kasite": "Weak interaction",
+   "maaritelma": "Causes, for example, beta decay and changes the type of particles."
+  },
+  {
+   "id": "fy8-hiukkasfysiikka",
+   "moduuli": "FY8",
+   "luku": "fy8-15",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Particle physics",
+   "maaritelma": "Studies the smallest known building blocks of matter and the interactions between them."
+  },
+  {
+   "id": "fy8-kosmologia",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Cosmology",
+   "maaritelma": "Studies the universe as a whole, and its structure, development and contents."
+  },
+  {
+   "id": "fy8-alkurajahdys",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Big Bang",
+   "maaritelma": "According to the model, the universe developed from a very hot and dense initial state."
+  },
+  {
+   "id": "fy8-kosminen-inflaatio",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Cosmic inflation",
+   "maaritelma": "A phase of very rapid expansion of the early universe."
+  },
+  {
+   "id": "fy8-nukleosynteesi",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Nucleosynthesis",
+   "maaritelma": "In the early universe protons and neutrons formed the first atomic nuclei."
+  },
+  {
+   "id": "fy8-rekombinaatio",
+   "moduuli": "FY8",
+   "luku": null,
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Recombination",
+   "maaritelma": "Electrons bound to nuclei to form neutral atoms, after which radiation could travel freely."
+  },
+  {
+   "id": "fy8-pimea-aine",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Dark matter",
+   "maaritelma": "An unknown form of matter whose gravitational effect is observed in the motions of galaxies and large structures."
+  },
+  {
+   "id": "fy8-pimea-energia",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Dark energy",
+   "maaritelma": "The name for the phenomenon used to explain the accelerating expansion of the universe."
+  },
+  {
+   "id": "fy8-kosminen-taustasateily",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Cosmic background radiation",
+   "maaritelma": "Microwave radiation from the early universe is observed everywhere in space."
+  },
+  {
+   "id": "fy8-punasiirtyma",
+   "moduuli": "FY8",
+   "luku": "fy8-16",
+   "aihe": "fy8-maailmankaikkeus",
+   "kasite": "Redshift",
+   "maaritelma": "The spectrum of distant galaxies shifts to longer wavelengths because of the expansion of the universe."
+  }
+ ]
+}
