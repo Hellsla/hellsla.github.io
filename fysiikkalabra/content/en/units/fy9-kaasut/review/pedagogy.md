@@ -1,17 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: a2b51d07ea6aadea
+SCOPE: delta (s8 fy3-10/pt-suorat, s9 fy3-11/pv-isobaari, changed intro; s1–s7 not re-judged; language: en)
 
 ## Blocking
-- (none)
+- Intro still says "the last task is the applied source task whose material opens from the link". That is now s7; the last task is s9 (a graph task). The statement is false for the student. Fix: name the source task as the eighth-from-last / "tehtävä 7", or reword without "last".
 
 ## Polish
-- A (round 1, still open, optional): s7 d and s2 c share an idea, and s7 shares the plant with fy9-moderni-s6; a cross-reference would help.
+- s8 b: the criterion tagged units_precision ("compare at the same temperature") is really a method point and duplicates the concept criterion; relabel (concept/graph_read) or drop the duplicate.
+- s8 b: "Perustele vertailu" gently signals the equal-conditions argument; acceptable, but "Perustele, voiko kaasuja vertailla suoraan" would hide it better.
+- s8 solution: answer rounded to 0,060 mol while the working keeps 0,0602; fine, but state that b uses 0,0602 unrounded.
+- s9 b/c: 293 K in the rubric, 293,15 K in the solution; add "(293,15 K ≈ 293 K)" to the rubric.
+- Common-mistakes lists are real (unit prefix, mixed temperatures, 60 % vs 40 %, Celsius use, W = pV, Q = W).
 
 ## Checked
-- solutions.md s2 c Reasonableness: the added sentence explains why the row shows $77\,\text{kW}$ while the unrounded powers give $485.1 - 174.6 - 232.9 = 77.6\,\text{kW}$. Correct and readable. answers.py carries the value.
-- solutions.md s5 Yleisiä virheitä: "the molar mass comes out at about two thirds of the correct one" (my round-1 Polish A) is now unambiguous; $210 : 311 \approx 0.68$.
-- solutions.md s7 e: $10\,{}^\circ\text{C} + 11.3\,\text{K} \approx 21\,{}^\circ\text{C}$, now consistent with the assumed sea temperature and part c.
-- tasks.json s7 c part text: no longer names $Q = cm\Delta T$, so the student chooses the model (the rule for these tasks). "the heat transferred to the water per unit time (the heat power)" matches the term the solution uses ($P_2$, "heat power transferred to the seawater") and the criterion $P_2 t = c\rho V\Delta T$. The three questions of the part are still in a clear order; the answer and the criteria are unchanged.
-- Hash identical at start and end.
+- Task texts give situation and graph only; no formula, no model named (s9's "kevyt mäntä" + isobar graph leaves the constant-pressure step to the student). Parts rise: read, compare, change of state / read, derive, infer.
+- Solutions follow rule 7 (given, principle, symbols first, conversions, substitution, rounding reason, reasonableness) for every part; s9 d has a justified model answer. Graph reading is shown.
+- Rubrics are fair: points match demand, no points for irrelevant things; accepted alternatives listed (slope method, V/T proportion, °C answer).
+- Figure ids match the catalog; the figure data (A 200/50, 400/100 K/kPa; B 60 kPa at 400 K; isobar 1,0–4,0 l at 250 kPa) agree with tasks, rubrics and solutions. Names A/B consistent.
+- Workload: s8 11 p, s9 14 p, reasonable.
+- English: faithful to the Finnish (numbers, criteria, structure identical); decimal point used.

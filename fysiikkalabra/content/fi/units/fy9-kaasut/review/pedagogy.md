@@ -1,17 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: 84089ae446eb257f
-Round 2: delta against the version round 1 reviewed (fix round 1).
+VERDICT: FAIL
+CONTENT-HASH: 240835f98a13143b
+SCOPE: delta (s8 fy3-10/pt-suorat, s9 fy3-11/pv-isobaari, changed intro; s1–s7 not re-judged; language: fi)
 
 ## Blocking
-- (none)
+- Intro still says "the last task is the applied source task whose material opens from the link". That is now s7; the last task is s9 (a graph task). The statement is false for the student. Fix: name the source task as the eighth-from-last / "tehtävä 7", or reword without "last".
 
 ## Polish
-- A (carried from round 1), s7 d repeats the idea of s2 c; a cross-reference in the solution would turn it into revision.
-- C (carried), `tasks.json` intro: "Ratkaise ne kuten kokeessa" follows the sentence about the last task, so "ne" points the wrong way.
+- s8 b: the criterion tagged units_precision ("compare at the same temperature") is really a method point and duplicates the concept criterion; relabel (concept/graph_read) or drop the duplicate.
+- s8 b: "Perustele vertailu" gently signals the equal-conditions argument; acceptable, but "Perustele, voiko kaasuja vertailla suoraan" would hide it better.
+- s8 solution: answer rounded to 0,060 mol while the working keeps 0,0602; fine, but state that b uses 0,0602 unrounded.
+- s9 b/c: 293 K in the rubric, 293,15 K in the solution; add "(293,15 K ≈ 293 K)" to the rubric.
+- Common-mistakes lists are real (unit prefix, mixed temperatures, 60 % vs 40 %, Celsius use, W = pV, Q = W).
 
 ## Checked
-- `solutions.md` s2 c, added sentence: 485,1 − 174,6 − 232,9 = 77,6 kW and 485 − 175 − 233 = 77 kW, both recomputed; 77,6/485,1 = 16 %. The sentence explains the difference between the displayed row and the unrounded value without confusing the 16 % conclusion.
-- `solutions.md` s5 common mistake: with 311 kPa the amount of substance is 1,48 times too large, so the molar mass is 210/311 = 0,68 of the right one. "moolimassaksi tulee noin kaksi kolmasosaa oikeasta" now names the quantity; the old "tulos" was ambiguous.
-- `solutions.md` s7 e: "noin 21 °C" now agrees with c (10 °C + 11 K, line 573).
-- `tasks.json` s7 c part text: the formula name is no longer given in the prompt, which suits an application task. "veteen aikayksikössä siirtyvä lämpö eli lämpöteho" and "sekunnissa virtaavan veden tilavuus" give a student what the derivation needs; the equation criterion and the solution (Q = cmΔT, m = ρV, Q = P₂t) still match the instruction "Johda symbolein". The situation is first, the three questions follow in the order of the criteria.
-- `answers.py`: only an added check value; no content effect.
+- Task texts give situation and graph only; no formula, no model named (s9's "kevyt mäntä" + isobar graph leaves the constant-pressure step to the student). Parts rise: read, compare, change of state / read, derive, infer.
+- Solutions follow rule 7 (given, principle, symbols first, conversions, substitution, rounding reason, reasonableness) for every part; s9 d has a justified model answer. Graph reading is shown.
+- Rubrics are fair: points match demand, no points for irrelevant things; accepted alternatives listed (slope method, V/T proportion, °C answer).
+- Figure ids match the catalog; the figure data (A 200/50, 400/100 K/kPa; B 60 kPa at 400 K; isobar 1,0–4,0 l at 250 kPa) agree with tasks, rubrics and solutions. Names A/B consistent.
+- Workload: s8 11 p, s9 14 p, reasonable.
+- Finnish: terms consistent (ainemäärä, kelvinlämpötila, ideaalikaasu); chapter names, no ids.
