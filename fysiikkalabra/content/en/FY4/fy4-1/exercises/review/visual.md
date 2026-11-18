@@ -1,15 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: a6741e28bf576004
+VERDICT: FAIL
+CONTENT-HASH: 19c370b7c9fc0c25
 
 ## Blocking
-None.
+- [Major] visual verification incomplete — the packet's capture folder `content/en/FY4/fy4-1/exercises/review/shots/` does not exist (no contact sheets, no `sol-fy4-1-*` captures), so the changed Kaava lines in solutions.md (cart A/B meeting, correction factor k, police car and truck) could not be judged as rendered — a delta review of math typography needs the captures — fix: regenerate the captures (`python scripts/screenshot.py fy4-1`, packet rebuilt with `scripts/review_packet.py`) and re-run the visual review.
 
 ## Polish
-- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
+None (diff read as text only: the three new Kaava lines are inline chains with correct `\text{}` subscripts and `\,` spacing, the display formula stays its own `$$` line; layout of the longer inline Kaava lines at 390 px is unverified).
 
 ## Checked
-- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-1-L1-06-390.png, sol-fy4-1-L1-07-390.png, sol-fy4-1-L1-08-390.png, sol-fy4-1-L1-09-390.png, sol-fy4-1-L2-06-390.png, sol-fy4-1-L2-07-390.png, sol-fy4-1-L2-09-390.png, sol-fy4-1-L3-03-390.png, sol-fy4-1-L3-04-390.png, sol-fy4-1-L3-05-390.png.
-- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+- No captures could be opened (folder missing). Read the diff and packet only.
+- Hash at start and end: 19c370b7c9fc0c25 (unchanged).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography n/a · Finnish n/a · accessibility n/a

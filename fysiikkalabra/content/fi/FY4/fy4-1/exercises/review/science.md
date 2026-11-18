@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9e3f1aafd212641a
-SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
+CONTENT-HASH: 2e5d53eab6b173d8
+SCOPE: delta kaava-step rewrite and paragraph splits, round 1
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-1/exercises/solutions.md (L2-09 Vastaus) — "nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on luettu kuvaajasta": aika $6{,}0\,\text{s}$ annetaan tehtävätekstissä, sitä ei lueta kuvaajasta. Parempi: "nopeudet on laskettu kuvaajan ruudukon risteyksistä, ja aika $6{,}0\,\text{s}$ on annettu kahdella numerolla".
-- solutions.md (L2-08 Järkevyys) — "Nopeus $2{,}0\,\text{m/s}$ on kävelyvauhtia": kyse on keskivauhdista, joten "Keskivauhti $2{,}0\,\text{m/s}$" pitäisi suureet erillään, kuten ratkaisun muu osa tekee.
 
 ## Checked
-- Kierroksen 3 polish-huomiot on korjattu. L2-08:n keskivauhdilla on oma tunnus $v_\text{kv}$, joten se ei enää sekoitu luvun keskinopeuteen $v_\text{k}$. L2-09:n Vastaus sanoo, että nopeudet on luettu kuvaajasta.
-- Laskin vastaukset uudelleen yhdessä skriptissä, omat kaavani `python -I answers.py`:n rinnalla. L2-08: $s = 12 + 0 + 8 = 20\,\text{m}$ ja $20\,\text{m} : 10\,\text{s} = 2{,}0\,\text{m/s}$. L2-09: $x_\text{A} = 16\,\text{m}$, $x_\text{B} = 8\,\text{m}$ ja $d = 8\,\text{m}$. Sekä answers.py että exercises.json antavat samat arvot.
-- Fysiikka: keskivauhti on matka jaettuna ajalla, ja tehtävä määrittelee sen. Matka saadaan osasiirtymien itseisarvoista, ja vertailu keskinopeuteen $0{,}4\,\text{m/s}$ pitää paikkansa. L2-09 käyttää yhtälöä $x = x_0 + vt$ ja välimatkaa $|x_\text{A} - x_\text{B}|$. Suorat leikkaavat pisteessä $(4\,\text{s};\, 12\,\text{m})$. Ohjeen sanamuoto "ylempänä oleva viiva" on käytössä.
-- Kuvien kulmapisteet ovat ruudukon risteyksissä, joten toleranssit (2 % ja 4 %) riittävät.
-- Hash 9e3f1aafd212641a sekä alussa että lopussa.
+- L2-06 Kaava: $x_{0\text{A}} + v_\text{A}t = x_{0\text{B}} + v_\text{B}t \Rightarrow (v_\text{A} - v_\text{B})t = x_{0\text{B}} - x_{0\text{A}}$. The algebra is right and ends in the unchanged $t$ formula. The derivation starts from the two motion equations and the meeting condition, as the house rule asks.
+- L3-04 Kaava: $x = k\,x_\text{ohj}$ and $v = k\,v_\text{ohj}$ follow from one scale factor for every length. Substituting $x_\text{ohj} = x_{0,\text{ohj}} + v_\text{ohj}t$ gives $x = x_0 + vt$ with $x_0 = k\,x_{0,\text{ohj}}$, and $t = (x - x_0)/v$ is right. It agrees with the substitution ($0{,}39\,\text{m}$, $0{,}80\,\text{m/s}$, $7{,}0\,\text{s}$). The new $x_0$ and $v$ are the lesson's symbols for the true values.
+- L3-05 Kaava: $x_{0\text{R}} + v_\text{R}t = v_\text{P}t - v_\text{P}t_0 \Rightarrow x_{0\text{R}} + v_\text{P}t_0 = (v_\text{P} - v_\text{R})t$. The algebra is right and the $t$ formula is unchanged.
+- The rest of the diff (L1-06 Mallivastaus, L3-04 and L3-05 Järkevyys, L1-09 option discussion) only splits paragraphs. Its words, numbers, signs and units are identical.
+- The caption marker removal in exercises.json changes no physics.
+- No number, answer, unit or tolerance changed, so answers.py needs no recomputation for this delta.
+- Hash 2e5d53eab6b173d8 at start and end.

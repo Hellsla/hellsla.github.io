@@ -1,15 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: a431ea5771aef393
+VERDICT: FAIL
+CONTENT-HASH: 1500ef8744b0673d
 
 ## Blocking
-None.
+- [Major] review/shots/ — visual verification incomplete — the packet's captures (contact sheets, fy4-1-open-exercises-L3-1280-*.png for the three changed Kaava steps) do not exist: the folder content/fi-easy/FY4/fy4-1/exercises/review/shots/ is missing, so the changed Kaava paragraphs could not be looked at as rendered — fix: regenerate the captures (python scripts/screenshot.py fy4-1 --lang fi-easy) and ask for the delta review again.
 
 ## Polish
-- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
+None.
 
 ## Checked
-- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-1-L1-06-390.png, sol-fy4-1-L1-09-390.png, sol-fy4-1-L3-04-390.png, sol-fy4-1-L3-05-390.png.
-- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+- Hash run at start and end: 1500ef8744b0673d (unchanged).
+- Read the diff text of solutions.md (three Kaava steps, 8g and neighbours); no captures could be opened, so no layout judgement was made.
+- The lesson's own shots exist under content/fi-easy/FY4/fy4-1/review/shots/, but they do not show the exercise solutions.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography n/a · Finnish n/a · accessibility n/a
