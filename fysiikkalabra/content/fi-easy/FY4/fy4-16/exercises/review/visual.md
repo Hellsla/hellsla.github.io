@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f7b8d233f6ae25a0
+CONTENT-HASH: 90c89598d4a1e0f7
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md (rinne/pulkka task) Sijoitus — `9{,}81\,\tfrac{\text{m}}{\text{s}^2}` and `14{,}0\,{}^\circ` differ from the house forms `\text{m/s}^2` and `^\circ` — use the standard forms.
-- [Minor] solutions.md long Kaava (energy over the whole slope, air-resistance) — very long paragraphs with an aligned block in the middle; consider a paragraph break at 'Siis'.
+- [Minor] solutions.md rinne task Sijoitus — \tfrac{m}{s^2} and {}^\circ differ from the house forms (carried).
+- [Minor] solutions.md long Kaava paragraphs (slope, 16-22) — consider a break before 'Siis' (carried).
 
 ## Checked
-- Opened fy4-16-open-exercises-L3-1280-6 (sliding task 16-21 with table; the preceding solution's Järkevyys and the task layout intact, no horizontal overflow).
-- Read all 19 changed lines: Newton II / energy principle first, then symbolic result, then Sijoitus.
-- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
+- Opened (content/fi-easy/FY4/fy4-16/review/shots/): fy4-16-open-exercises-L3-1280-3.png (lift task, Newton II Kaava), fy4-16-open-exercises-L3-1280-9.png (parachutist 16-22 table task). All changed Kaava (slope, plateau, air-resistance, Siis E_alku + W = E_loppu) read from the diff.
+- Friction and air-resistance work now signed W = -F s throughout; E_alku + W = E_loppu matches each aligned row.
+- Round 2 delta: round-1 fixes verified in the diff and captures; no layout regression. Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

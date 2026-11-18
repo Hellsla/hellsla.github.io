@@ -1,18 +1,20 @@
-VERDICT: PASS
+VERDICT: FAIL
 CONTENT-HASH: 64e7e82ffa22ebdf
-SCOPE: delta presentation (Kaava step rewrite, work queue 8g) from previous PASS 3adcc392f3bc2b66
+SCOPE: delta (work queue 8g round 2: Kaava rewrites from the basic equation, paragraph splits) from previous PASS 3adcc392f3bc2b66
 
 ## Blocking
-None.
+- solutions.md, fy4-8-L3-05 (bouncing ball) Kaava, last sentence — "Ensimmäisen kimmahduksen energiamuutos on $\Delta E = E_0 - E_1$": $\Delta$ is final minus initial everywhere else in the course ($\Delta E_\text{k}$, $\Delta E_\text{mek} = W$), and here the positive decrease is called "muutos" with the opposite order; the same sign-naming defect was Blocking in fy4-10 (round 1). Fix: "Ensimmäisessä kimmahduksessa sisäenergiaksi muuttunut mekaaninen energia on $E_\text{sis} = E_0 - E_1 = mgh_0 - mgh_1 = mg\left(h_0 - h_1\right)$" (or "mekaanisen energian pieneneminen on $E_0 - E_1$"), and use the same symbol in Sijoitus c).
 
 ## Polish
-- solutions.md fy4-8-L1-09 area (the (v², s) friction graph task) and similar Kaava lines — "joten $\tfrac{1}{2} m v_0^2 - F_\mu s = 0$, josta $s = \dfrac{m}{2F_\mu} \cdot v_0^2$" skips the line $F_\mu s = \tfrac12 m v_0^2$; optional, the step is one rearrangement.
+- solutions.md L2-10 Vastaus: part d comes first and a, b, c, e after "Lisäksi:"; a student meets d before a (earlier polish, stands).
+- Snowboard task (Kaava a-c): one long paragraph of about 130 words; split into a, b and c lines.
+- Kaava lines now repeat "Energian säilyminen: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$" ten times verbatim; fine for learning, but the cart/puck tasks could say once which zero level they chose in a clause of its own.
 
 ## Checked
-- Delta judged in context: every Kaava now opens with the basic principle (energian säilyminen, työperiaate or energiaperiaate E_p0 + E_k0 + W = E_p + E_k), states the zero level and which terms vanish, shows the mass cancelling, and only then gives the solved formula; all verified: v = sqrt(2gh), h = v²/(2g), v_2 = sqrt(v_1² + 2gh), s = m v_1²/(2F_μ), W = mgh, v_2 = sqrt(2Fs/m), F_vast, h_2 = h_1 + v_1²/(2g) - F_vast s/(mg), W = ½m(v_2² - v_1²), g = k/2, F_μ = m/(2k), F = mgh/(L + s_ka), h = (E_k0 - E_k)/(mg).
-- Sign conventions are explicit (W = -F s for resistive forces, kokonaisvoima named where the work-energy principle is used); the energy-bar task and the bounce task derive the ratio r_n = h_{n+1}/h_n from E_n = mgh_n.
-- The set now uses one notation (E_p0, E_k0, E_p, E_k, W) throughout, matching the brief's lesson text; no symbol collisions.
-- Paragraph splits (slide answer, L2-10 Annettu, e) part and Järkevyys) keep every claim; the order of parts a-e stays as passed.
-- No number, answer, tolerance, task, id or source line changed; substitutions match the new symbolic forms.
-- Finnish in changed text correct (sisäenergia, lämpönä in the unchanged parts).
-- Captures opened: content/fi/FY4/fy4-8/review/shots/fy4-8-open-exercises-L2-1280-16.png (L2-10 e and Järkevyys: paragraphs, display row and the Järkevyys block render cleanly, nothing clipped). Others not opened: text-only change.
+- Round 1 blocking fixes verified in this set: friction work is signed ($W = -F_\mu s$, $W = -F_\text{vast} s$, $W = -F\,\Delta s$) in every task where friction acts, with "vastustaa liikettä" given as the reason.
+- Every rewritten Kaava opens from the basic equation (energian säilyminen, työperiaate $E_{\text{k}0} + W = E_\text{k}$ or energiaperiaate) and solves symbolically before Sijoitus; recomputed: 15,34 m/s; 1,835 m; 18,93 m/s; 40 m; 44,1 kJ; 21,2 m/s; 21,98 N; 31,53 m; 23,16 m/s; -1044 J; 74,6 / 54,7 kJ; 54,9 N and 6,87 m/s: all match.
+- Zero level, initial and final energy terms named per task; missing-mass cancellations stated ("Massa supistuu").
+- L2-10 and the children-on-slide splits keep every step; one idea per paragraph. Järkevyys block renders correctly.
+- Finnish in the changed lines correct; case after units kept.
+- No answer, tolerance, task, id or figure changed.
+- Captures opened: content/fi/FY4/fy4-8/review/shots/fy4-8-open-exercises-L2-1280-16.png (L2-10 split paragraphs and Järkevyys: readable, nothing clipped); 360 px layout check already ok.

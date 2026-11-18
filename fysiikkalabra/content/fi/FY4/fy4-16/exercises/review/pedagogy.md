@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8ad3639f61897685
-SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 39da8dac762307ce base 484fb79
+CONTENT-HASH: 06be6c204f936543
+SCOPE: delta (work queue 8g round 2: friction and air-resistance work now signed) from previous PASS 8ad3639f61897685
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- solutions.md, the sled-slope task (L3, $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$) and the parachute graph task (L3, $h = \sum …$), Kaava — each is now about 120 words in one paragraph; split after "…, joten $L = …$." and after "…, joten $h = \sum …$" so the second part (speed at the foot, or the energy equation) is its own paragraph.
-- solutions.md, the friction-slope task with $\mu = \dfrac{gL\sin\alpha - \tfrac12v_2^2}{gL\cos\alpha}$, Kaava — the energy equation is used ($mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2$) without stating $E_\text{alku} = E_\text{loppu} + W_\mu$ as the other rewritten Kaavas do; add it for consistency.
-- solutions.md, the mixed-lift graph task (Kaava "Keskinopeus $v = \Delta x/\Delta t$ ja hidastuvuus …") — "Keskinopeus" appears without saying which quantity is read from the table; one clause "(nopeudet taulukosta paikan muutoksesta)" would help.
+- solutions.md, sled-and-flat task (Kaava, about 150 words in one paragraph after the sign change) — still the round 1 polish: split after "…, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$." so the speed at the foot starts its own paragraph.
+- solutions.md, parachute graph task (Kaava) — same: three ideas in one paragraph (matka, energiaperiaate, c-kohdan liikeyhtälö); start "Energiaperiaate, …" and "Kohdassa c) …" as their own paragraphs.
+- Slope-friction task, Kaava: "Siis $E_\text{alku} + W_\mu = E_\text{loppu}$, eli $mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2$" skips one line (insert $W_\mu = -\mu mg\cos\alpha\cdot L$ before the equation); recorded only.
+
 ## Checked
-- Round 1, delta: the Kaava rewrites and paragraph splits judged; numbers, answers, tasks and ids unchanged (the sled task only drops the repeated symbolic form from Sijoitus and adds the simplified $v$ to Kaava, same values).
-- Every rewritten Kaava now names the basic principle first ($\Sigma F = ma$ with the positive direction, $E_\text{alku} = E_\text{loppu} + W$, $F_\mu = \mu N$, $E_\text{k}$, $E_\text{p}$), derives the combined formula and solves the asked quantity in symbols before the Sijoitus.
-- Algebra spot-checked: $s = v_1^2/(2\mu g)$, $\tan\alpha = \mu$, $|\Delta E_\text{mek}|$, $x = h/\mu$ for the multi-part slide, $v = \sqrt{2gL(\sin\alpha - \mu_1\cos\alpha)}$, $F_\text{v} = mg + (E_{\text{k}0} - E_\text{k})/h$: all correct.
-- Sign handling explicit in the lift tasks (positive up for $N - mg = ma$, positive down for $mg - N = ma$).
-- Splits of the Mallivastaus and the Järkevyys paragraphs keep one idea per paragraph; the sled task's closing remark about modelling limits is now its own paragraph.
-- Finnish in the changed lines correct; glossary terms kept.
-- Captures opened: content/fi/FY4/fy4-16/review/shots/fy4-16-open-exercises-L3-1280-6.png (the Järkevyys blocks and the sled task's start render cleanly, nothing clipped); phone widths judged from the text.
+- Round 1 blocking fix verified in all five tasks (slope-friction, multi-part slide, parachute a/b, sled-and-flat, parachute graph): friction or air-resistance work is written $W_\mu = -F_\mu s$ or $W_\text{v} = -F_\text{v} h$ and the principle is $E_\text{alku} + W = E_\text{loppu}$, so every sign is consistent; no "työ on $F s$" with a positive sign is left in the set.
+- Algebra rechecked: $E_{\text{k}0} + mgh - F_\text{v}h = E_\text{k}$ gives $F_\text{v} = mg + (E_{\text{k}0} - E_\text{k})/h$; $mgh - \mu mg(x_\text{a}+x_\text{b}+x_\text{c}) = 0$ gives $x = h/\mu$; the two-stage sled equations give $L$ and $v$.
+- Numbers unchanged and correct: $\mu = 0{,}1373$; $x = 37{,}5\,\text{m}$; $F_\text{v} = 2{,}12\,\text{kN}$ and $2205\,\text{N}$; $L = 16{,}33\,\text{m}$, $v = 7{,}67\,\text{m/s}$ (numerator $36{,}71 - 13{,}01 = 23{,}70$, shown as $23{,}71$ from unrounded values: fine).
+- The Periaate lines state the sign reason ("liikettä vastaan, joten työ on negatiivinen"), and the force-diagram step precedes the equations in each task.
+- Finnish in the changed lines correct; no answer, tolerance, task, id or figure changed; layout checks ran ok at 360-1280 px.
+- Captures opened: none (text-only sign change).

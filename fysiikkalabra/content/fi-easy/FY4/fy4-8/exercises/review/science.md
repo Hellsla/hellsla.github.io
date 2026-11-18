@@ -1,19 +1,22 @@
 VERDICT: PASS
 CONTENT-HASH: 856d6753f79d091c
+Mode: delta (round 2)
+
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY4/fy4-8/exercises/solutions.md:359-370 (L2-10 e and Järkevyys) — the new breaks leave one-sentence paragraphs that carry the conclusion or the model limit alone ("Se ei kerro, miten energia poistuu.", "Siksi $29\,\text{kN}$ on keskimääräinen arvo …"), cut from the sentence they complete — keep each with its preceding sentence.
-- content/fi-easy/FY4/fy4-8/exercises/solutions.md:298-302 (L2-06 Sijoitus) — the break splits part a) between the energies and their sums $E_\text{mek} = 69{,}5;\ 62{,}5;\ 54{,}7\,\text{kJ}$, and part c) between B–C and C–D; break at b) and c) instead.
-- content/fi-easy/FY4/fy4-8/exercises/solutions.md:337 (L2-09 Kaava) — "$-F_\mu s$ on sama kuin …" is an equation in words; $-F_\mu s = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$ as a formula is clearer.
-- content/fi-easy/FY4/fy4-8/exercises/solutions.md (rewritten Kaava steps) — "Siis … Siis … Siis" in a row; one chain per step reads better, no physics change.
+- content/fi-easy/FY4/fy4-8/exercises/solutions.md (L2-09 Kaava) — "Siis $-F_\mu s$ on sama kuin $(E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$" puts an equation in words. One formula, $-F_\mu s = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$, is clearer.
+- solutions.md:150, 276 — the earlier items (the significant figures of $h$; 1500 kg) are still open. They are not part of this change.
 
 ## Checked
-- Delta only: eighteen Kaava rewrites and paragraph splits; no number, answer, tolerance, task or id changed.
-- Every rewritten Kaava step opens from the brief's law by name (säilymislaki $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$, energiaperiaate with $W$, työperiaate $E_{\text{k}0} + W = E_\text{k}$), names the zero level and each term, then simplifies symbolically to the end before substitution.
-- The right law in each: säilymislaki only where only the weight does work; työperiaate where friction or the stick is the net force on a level path; energiaperiaate where a rope, friction or drag does work.
-- Signs: $W = -F_\mu s$, $W = -F_\text{vast}s$, $W = Fs$ for the stick: right.
-- Recomputed: $v = 15{,}34\,\text{m/s}$; $h = 1{,}835\,\text{m}$; $v_2 = 18{,}93$ and $23{,}16\,\text{m/s}$; $s = 40\,\text{m}$; $W = 44{,}1\,\text{kJ}$; $v_2 = 21{,}2\,\text{m/s}$; $F_\text{vast} = 21{,}98\,\text{N}$; $h_2 = 31{,}53\,\text{m}$; $W = -1{,}044\,\text{kJ}$; $g = 9{,}77\,\text{m/s}^2$; $F_\mu = 1{,}14\,\text{N}$; $F = 54{,}9\,\text{N}$, $v = 6{,}87\,\text{m/s}$; $\Delta E = 0{,}240\,\text{J}$; $h = 1{,}02\,\text{m}$; $F_\mu = 2{,}5\,\text{N}$.
-- L2-06: $F = -W/\Delta s$ per interval 94 / 107 / 157 N unchanged and right.
-- L2-10: split paragraphs keep every claim; c) internal energy then "siirtyy lämpönä ympäristöön" (P1).
-- Captures opened: none (judged from the text and the packet).
+- Hash 856d6753f79d091c at the start and the end. Only the Kaava lines of solutions.md and some paragraph splits changed. No number, answer or tolerance changed. The exercises.json change is presentation only.
+- Each Kaava now starts from its basic equation and then sets each term from the situation:
+  - energy conservation, $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$: L1-01, L1-02, L1-05, L1-06, L2-05, L2-08;
+  - the energy principle, with $W$: L1-08, L2-01, L2-02, L2-07, L2-09, L3-04;
+  - the work principle, $E_{\text{k}0} + W = E_\text{k}$: L1-04, L1-07, L1-09, L2-06.
+- Every resisting force has signed work: $W = -F_\mu s$, $W = -F_\text{vast} s$, $W = -F(L + s_\text{ka})$ and $W = -FL$. The stick's work is $+Fs$, along the motion. The signs are right.
+- L2-07 (radan A–D): the step now says $E_{\text{mek}0} + W = E_\text{mek}$, then $W = -F\Delta s$, then $F = -W/\Delta s$. The values 94, 107 and 157 N are unchanged.
+- L3-05: $r_n = mgh_{n+1}/(mgh_n) = h_{n+1}/h_n$, and $\Delta E = mg(h_0 - h_1)$. Both are right.
+- L2-10: only the paragraph splits changed, word for word the same.
+- The notation matches the brief's lesson ($E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$).
+- Captures opened: none. I judged from the diff and the packet.

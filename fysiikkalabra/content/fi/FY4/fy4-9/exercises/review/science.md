@@ -1,18 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 982778f9cff7e8e8
+VERDICT: PASS
+CONTENT-HASH: 5c5e2726a63ff9d8
 ## Blocking
-- solutions.md:187 fy4-9-L3-04 Kaava — the new sentence "Jäykällä esteellä $I = F_\text{ka}\,\Delta t$, joten $F_\text{ka} = \dfrac{I}{\Delta t}$" uses $\Delta t$ for the rigid obstacle's stopping time ($0{,}025\,\text{s}$), while the same step (in $I = \Delta t \cdot \Sigma F$) and Muunnokset define $\Delta t = 10\,\text{ms}$ as the width of a strip. A student who substitutes the defined $\Delta t$ gets $98\,\text{kN}$, not $39\,\text{kN}$; the symbolic form does not say what Sijoitus computes. Fix: give the stopping time its own symbol (e.g. $F_\text{ka} = \dfrac{I}{\Delta t_\text{e}}$, $\Delta t_\text{e} = 25\,\text{ms}$ the stopping time against the rigid obstacle) or rename the strip width; numbers unchanged.
 
 ## Polish
-- solutions.md:187 (and L2-07, line ~176, pre-existing) — $\Sigma F$ there means the sum of the tabulated force readings, while the chapter and L3-05 in the same set use $\Sigma F$ for the total force. Fix: write the sum in words or as $\Sigma F_i$ ("sisäpisteiden voimien summa").
-- solutions.md Kaava rows of L1 (bat, puck, belt), L2 kick — "…, joten …, joten …" twice in one sentence. Fix: second "joten" → "ja siitä" or a full stop.
+- solutions.md:176, 187 (L2-07, L3-04 Kaava, pre-existing) — $\Sigma F$ there means the sum of the tabulated force readings, while the chapter and L3-05 use $\Sigma F$ for the total force. Fix: write the sum in words or as $\Sigma F_i$ ("sisäpisteiden voimien summa") (carried over).
+- solutions.md Kaava rows of L1 (bat, puck, belt), L2 kick — "…, joten …, joten …" twice in one sentence. Fix: second "joten" → "ja siitä" or a full stop (carried over).
 
 ## Checked
-- Captures opened: fy4-9/review/shots/fy4-9-open-exercises-L3-1280-4.png (rubber/clay ball Kaava renders as the source; $|v - v_0| = 14\,\text{m/s} = v_0 + v_\text{k}$).
-- Every rewritten Kaava now starts from $I = \Delta p$, $I = F\,\Delta t$, $p = mv$ (or the area as impulse) before the solved form; each derived form is algebraically right and is the one Sijoitus uses.
-- Braking car, bat, puck, belt, kick, bumper: signs consistent with the stated positive direction; magnitude taken where the task asks a size.
-- Sled trapezoid and L2-07 strip sum: area = impulse, then $I = \Delta p = m\,\Delta v$; correct.
-- L3-05 bouncing ball: $v = v_0 + at$ with $a = -g$ gives $v_1 = -g t$ and $0 = v_2 - g t_\text{nousu}$; $(N_\text{ka} - mg)\Delta t = m(v_2 - v_1)$ right, weight included in the total force.
-- Paragraph splits (L1-06, L2-06, L2-09) change no wording, number or claim.
-- No number, answer, tolerance, task text or id changed in the diff; answers stand as passed.
-- Hash 982778f9cff7e8e8 at the start and at the end.
+- Round-1 Blocking fixed: L3-04 Kaava now gives the rigid-obstacle stopping time its own symbol, "pysähtymisaika on $\Delta t_\text{e} = 25\,\text{ms}$ ja $I = F_\text{ka}\,\Delta t_\text{e}$, joten $F_\text{ka} = \dfrac{I}{\Delta t_\text{e}}$"; $\Delta t = 10\,\text{ms}$ stays the strip width in $I = \Delta t \cdot \Sigma F$ and Muunnokset, so the two times no longer collide.
+- Sijoitus c) names $\Delta t_\text{e} = 0{,}025\,\text{s}$ and substitutes it: $981\,\text{N·s} : 0{,}025\,\text{s} = 39\,240\,\text{N}$ → $39\,\text{kN}$; $25\,\text{ms}$ is in task part c); a) $981\,\text{N·s}$, b) $14{,}01\,\text{m/s} = 50{,}45\,\text{km/h}$ unchanged.
+- Järkevyys still compares $9{,}81\,\text{kN}$ (airbag mean over $100\,\text{ms}$) with $17{,}4\,\text{kN}$ peak and $39\,\text{kN}$; consistent with the new symbol.
+- No other change since round 1 (git diff d97ccea596..HEAD on the set: L3-04 Kaava and Sijoitus only); no answer, tolerance, task or id changed.
+- Captures: none opened (the fix is a symbol in text; judged from the source).
+- Hash 5c5e2726a63ff9d8 at start and end.

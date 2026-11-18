@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 42433b757b13505f
+CONTENT-HASH: fda453fe872bb127
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md, bounce task Formula: "$\Delta E = E_0 - E_1$ that is $mgh_0 - mgh_1$, that is $\Delta E = mg(h_0 - h_1)$" needs commas before both "that is" and repeats the left side; a single chain $\Delta E = E_0 - E_1 = mgh_0 - mgh_1 = mg(h_0 - h_1)$ would read cleaner.
-- [Minor] solutions.md, several new Formula lines stack "so ... so" ("$\tfrac12 mv_1^2 - F_\mu s = 0$, so $s = \ldots$" after an earlier "so"); and "Hence $-F_\mu s$ equals $(E_\text{p} + E_\text{k}) - \ldots$" in the bar-chart task is wordier than an equals sign. Optional.
-- [Minor] solutions.md, snowboarder task Formula: parts a), b) and c) sit in one paragraph of about 130 words; each part is one idea, so a break before b) and c) would match the one-thing-per-paragraph rule.
+- [Minor] solutions.md, principle names — the same kinetic-only equation $E_{\text{k}0} + W = E_\text{k}$ is called "Work principle" in the Formula lines and the task about the obstacle, but "work–energy principle" at line 295 and in the 11-14 style Principle texts; the general form is "Work–energy principle". Choose one name per equation (the glossary's) for the whole set.
+- [Minor] solutions.md, bar-chart task Principle ("By the energy principle ...") still uses the old name while its Formula line now says "Work–energy principle".
+- [Minor] Round 1 polish (bounce task commas, "so ... so" stacks, snowboarder paragraph break) not changed; optional.
 
 ## Checked
-- Delta (solutions.md, 17 Formula lines), judged from the text. Every line now starts from the basic equation (conservation of energy, the energy principle, the work-energy principle), states the zero level and each energy term, simplifies symbolically (mass cancels shown: v^2 = 2gh; h_2 = h_1 + v_1^2/(2g) - F s/(mg); s = (m/(2F_mu)) v_0^2; F = mgh/(L + s_mean)) and only then Substitution, which is unchanged. Signs of W are explained (friction opposes the motion). Notation uniform: $E_{\text{p}0}$, $E_{\text{k}0}$, \tfrac inline, \dfrac in fractions, aligned blocks with the equals sign in one column.
-- No per-solution captures exist (en: text and packet). Opened content/en/FY4/fy4-1/review/shots/fy4-1-open-exercises-L2-1280-6.png as the layout reference for solution blocks; the changed lines are inline chains and aligned blocks of the same kind already handled by the page. Hash unchanged at the end.
+- Round 2 delta (solutions.md, principle-name wording in about ten Formula lines). Opened content/en/FY4/fy4-8/review/shots/fy4-8-open-exercises-L2-1280-3.png (crane task with the new "Work–energy principle:" Formula) and fy4-8-open-exercises-L2-1280-5.png (puck and pendulum task, layout).
+- Labels now match the equation they introduce in the Formula lines; no layout change, no clipping. Hash unchanged at end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

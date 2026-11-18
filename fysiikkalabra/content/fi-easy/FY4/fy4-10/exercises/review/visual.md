@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d60f19cf1ffbacf4
+CONTENT-HASH: 0f9fb56b0a5cdc15
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md ballistic-pendulum and energy-loss Kaava — a semicolon followed by a capital letter ("...v'; Kappaleiden liike-energia ...", "...; Liike-energia on ...") — use a full stop or lower case.
-- [Minor] solutions.md several Kaava — 'joten ... joten ...' chains and the repeated lead 'Liikemäärä on p = mv' in every solution; fine as a method, optional to vary.
+- [Minor] solutions.md ice-hockey Kaava — 'liike-energian pieneneminen muuttuu muuksi energiaksi' is clumsy (a decrease does not change into energy); better 'liike-energiasta muuttuu muuksi energiaksi osa, joka on $E_\text{k,ennen} - E_\text{k,jälkeen}$'.
+- [Minor] same Kaava — semicolon followed by capital 'Kappaleiden' (carried from round 1).
 
 ## Checked
-- Opened fy4-10-open-exercises-L3-1280-6 (collision/skid solution: new Kaava, aligned rows, Sijoitus and Vastaus all intact, no clipping).
-- Read every changed Kaava line in the diff (21 lines): all show p = mv, conservation, then the symbolic result before Sijoitus.
-- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
+- Opened (content/fi-easy/FY4/fy4-10/review/shots/): fy4-10-open-exercises-L2-1280-1.png, fy4-10-open-exercises-L3-1280-5.png, fy4-10-open-exercises-L2-1280-8.png (layout and Kaava intact, nothing clipped). The ice-hockey hunk read from the diff.
+- Ice-hockey 'pieneneminen' fix verified in text.
+- Round 2 delta: round-1 fixes verified in the diff and captures; no layout regression. Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

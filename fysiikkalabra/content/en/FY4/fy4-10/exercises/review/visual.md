@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 54c02dd6d58ffcf6
+CONTENT-HASH: 8c4b397163073404
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md, ballistic pendulum (Kaava) — the energy balance is written with the word "equals" between two sums of maths ("$E_\text{k,start}+E_\text{p,start}$ equals ..."); an "=" in display form would read faster and align with the collision equation.
-- [Minor] solutions.md, inelastic energy-loss task (Kaava) — a semicolon is followed by a capital "The kinetic energy changed into other forms ..."; use a full stop (or lower case).
-- [Minor] solutions.md, equal-mass elastic collision (Kaava) — about 110 words in one paragraph (conservation laws, squaring, conclusion); a break before "The mass $m$ cancels" would give one idea per paragraph.
-- [Minor] solutions.md, table-of-collisions tasks (Kaava) — "$p_\text{before} = p_\text{after}$; $E_\text{k} = \tfrac12 mv^2$" runs two principles together with a semicolon; acceptable but dense.
+- [Minor] solutions.md, inelastic energy-loss task Formula — the fix for "pieneneminen" reads well, but "$v' = ...$; The decrease ..." still has a capital after the semicolon; use a full stop or lower case.
+- [Minor] Round 1 polish on the pendulum "equals" and the 110-word elastic-collision paragraph unchanged; optional.
 
 ## Checked
-- Opened (en, 1280 px, solutions open) fy4-10-open-exercises-L2-1280-9 (position table task, Kaava with p and Ek lines) and fy4-10-open-exercises-L3-1280-1 (ballistic pendulum, longest new Kaava); read every changed Kaava line in the diff.
-- Basic principle, then derived formula, then symbolic form is now the order; inline formulas and fractions render cleanly, no red KaTeX, nothing clipped at 1280 px, substitution rows aligned. Hash rechecked at end.
+- Round 2 delta (solutions.md, one Formula line: "The decrease of kinetic energy, changed into other forms, is $\Delta E = E_\text{k,before} - E_\text{k,after}$"). Opened content/en/FY4/fy4-10/review/shots/fy4-10-open-exercises-L2-1280-3.png (the task's Substitution, Answer, Reasonableness, wrapped $\Delta E$ row) and fy4-10-open-exercises-L2-1280-4.png (neighbouring task, layout).
+- The new wording is clear and correct as a definition; layout intact, no clipping. Hash unchanged at end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

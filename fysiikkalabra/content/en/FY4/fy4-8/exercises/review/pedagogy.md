@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 42433b757b13505f
+CONTENT-HASH: fda453fe872bb127
 
 ## Blocking
 None.
 
 ## Polish
-- solutions.md, snowboarder task Formula — parts a), b) and c) sit in one line of about 130 words; it is correct, but the over-long paragraph is hard to follow on a phone. Put a), b) and c) on their own lines (one idea each).
-- solutions.md, the mean/standard-deviation style line "a) The mean is $s_\text{mean} = \text{sum}/6$" — "sum" is a word inside a formula; write $s_\text{mean} = \dfrac{s_1 + \dots + s_6}{6}$ or name the sum with a symbol.
-- solutions.md, the bouncing-ball Formula — "that is ... that is ..." repeats twice in one sentence; use "so".
+- solutions.md:295 (cushion/stopping task, Formula) — kinetic-energy-only equation $\tfrac12 m_\text{p}v^2 - Fs = 0$ is called "the work–energy principle", but the lesson and the rest of the set call $E_\text{k0}+W=E_\text{k}$ the "work principle"; use "work principle" there.
+- exercises.json:285 (v0² against s graph task, part b) — "Derive from the work–energy principle ..." uses only kinetic energy, and its solution now says "Work principle"; make the task say "work principle" too.
+- solutions.md:271 (energy-bars task, Principle) — "By the energy principle" is the old label; the Formula row below says "Work–energy principle". Use the same name.
+- Earlier polish still open: "sum" as a word in the snowboarder $s_\text{mean} = \text{sum}/6$.
 
 ## Checked
-- Round 1, delta (work queue 8g): no number, answer, tolerance, task or id changed; I compared removed and added lines, and the paragraph splits are lossless and in the same order.
-- Every energy Formula now opens with the conservation of energy or the work-energy / energy principle, states the zero level and which terms vanish, and shows the mass cancelling before the result; each result checks (v = sqrt(2gh), h = v²/2g, v_2 = sqrt(v_1² + 2gh), s = m v²/(2F_mu), F_res = (m/2 (v_1² - v_2²) + mgh)/s, h_2 = h_1 + v_1²/2g - F_res s/(mg), F = mgh/(L + s_mean), r_n = h_{n+1}/h_n).
-- Sign of the work of friction and resistance (W = -F s) is explained each time; the hill task's W = mgh at constant speed is justified by E_k0 = E_k.
-- The graph tasks (v² against h, s against v_0²) derive the slope (2g, m/(2F_mu)) from the energy equation before reading it; correct.
-- The first Substitution of the roller-coaster task (0.47 kJ + 74.16 kJ = 74.6 kJ) is arithmetically right.
-- Tasks, levels, counts and figures unchanged.
-- Captures not opened: text-structure change only.
+- Round 2, delta (work queue 8g): label-only change; no number, answer, tolerance or task changed.
+- Fixed in solutions: $E_\text{k0}+W=E_\text{k}$ (braking distance, puck, v0² graph, net-force work, cushion, Principle in the final task) is "work principle"; the full equation with $E_\text{p}$ or $E_\text{mech}$ (crane, hill, car on the hill, mechanical-energy table, bars) is "work–energy principle". This matches the lesson's two named formulas.
+- Each changed line keeps its equation, signs ($W=-F_\mu s$) and result unchanged.
+- No unlabelled new text; the open items above are naming slips between two correct principles, not physics errors.
+- Captures not opened: text-only change.

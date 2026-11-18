@@ -5,13 +5,12 @@ CONTENT-HASH: 64e7e82ffa22ebdf
 None.
 
 ## Polish
-- [Minor] fy4-8 skier task (11-15 area) and the 11-14 energy chain — the Kaava is a long paragraph of running text with inline $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$ and several sub-answers (a, b, c) in one block; under 120 words and legible, but each part on its own line would scan faster.
-- [Minor] fy4-8 the sub-letter markers "a) ... b) ..." inside one Kaava paragraph run together with the formulas; a line break before each would help. Optional.
+- [Minor] fy4-8 Kaava lines (11-1, 11-23 and others): the principle equation $E_{\text{p}0}+E_{\text{k}0}=E_\text{p}+E_\text{k}$ now runs inline inside a 3-4 line paragraph; readable, but the opening equation could be set apart in display like the later chains. Optional.
+- [Minor] fy4-8 L3-04 Kaava (a, b, c in one block) is the longest Kaava paragraph; legible, optional split by part.
 
 ## Checked
-- Delta: solutions.md Kaava steps (law first, zero level, then the symbolic result with the mass cancelling); hash same at start and end.
-- Opened fy4-8-open-exercises-1280-1.png (11-1: Kaava "Energian säilyminen: E_p0 + E_k0 = E_p + E_k ... v = √(2gh)", Sijoitus into the last form, Vastaus, Järkevyys), fy4-8-open-exercises-L3-1280-5.png (the skier task: statement, table, Annettu, Periaate, start of Kaava with the energy principle and the zero level), fy4-8-open-exercises-L2-1280-8.png (the track task: end of Kaava with W = −FΔs and F = −W/Δs, Muunnokset, Sijoitus, Vastaus, Järkevyys, and the start of 11-16).
-- Section order kept, spacing even, nothing clipped; subscripts E_p0, E_k0 legible, units and decimal commas unchanged. 1280 px captures; packet layout checks passed at all widths.
+- Delta: opened fy4-8-open-exercises-1280-1.png (11-1 stone: Kaava, Sijoitus, Vastaus, Järkevyys), fy4-8-open-exercises-L2-1280-3.png (braking, hoist: work principle and energy principle Kaava), fy4-8-open-exercises-L3-1280-4.png (throw with $v_2=\sqrt{v_1^2+2gh}$), fy4-8-open-exercises-L3-1280-6.png (snowboarder a-c: Kaava end, Sijoitus rows, Vastaus), fy4-8-open-exercises-L2-1280-6.png (pendulum slope $k=2g$).
+- Subscripts $E_{\text{p}0}$, $E_{\text{k}0}$, fractions and aligned rows render cleanly; friction work signed $W=-F_\mu s$; nothing clipped. 1280 px captures; packet layout checks passed at all widths. Hash unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -233,7 +233,7 @@ Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja l
 **Annettu:** $v = 1{,}50\,\text{m/s}$, $s = 0{,}46\,\text{m}$, $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukukitkakerroin $\mu$
 **Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liukukitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
-**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, $W = Fs$ ja $F_\mu = \mu mg$, joten energiaperiaatteesta $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
+**Kaava:** Työperiaate $E_{\text{k}0} + W = E_\text{k}$, missä $W = -F_\mu s = -\mu mg\,s$, $E_{\text{k}0} = \tfrac{1}{2}mv^2$ ja $E_\text{k} = 0$, joten $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(1{,}50\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}46\,\text{m}} = \dfrac{2{,}25\,\tfrac{\text{m}^2}{\text{s}^2}}{9{,}03\,\tfrac{\text{m}^2}{\text{s}^2}} \approx 0{,}249$
 **Vastaus:** Liukukitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
@@ -472,7 +472,7 @@ Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävar
 **Annettu:** painuma $s_1 = 2{,}4\,\text{cm}$ ja huippuarvo $950\,\text{m/s}^2$ (mittaus), uusi painuma $s_2 = 1{,}0\,\text{cm}$, $v = 5{,}42\,\text{m/s}$, raja $2450\,\text{m/s}^2$
 **Kysytty:** ohuemman kypärän suurin kiihtyvyys ja läpäiseekö kypärä iskutestin
 **Periaate:** Nopeus $v$ pysähtyy painuman matkalla $s$. Kun kiihtyvyys korvataan keskiarvollaan, liike on tasaisesti hidastuvaa, ja $v^2 = 2as$, joten keskimääräinen kiihtyvyys on kääntäen verrannollinen painumaan. Koska kuvaajan muoto pysyy samana, myös huippuarvo on yhtä monta kertaa keskiarvo kuin mittauksessa.
-**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, $W = Fs$ ja $F = ma$, joten $\tfrac{1}{2}mv^2 = mas \quad\Rightarrow\quad a = \dfrac{v^2}{2s}$, ja $a_\text{huippu,2} = a_2 \cdot \dfrac{a_\text{huippu,1}}{a_1}$
+**Kaava:** Työperiaate $E_{\text{k}0} + W = E_\text{k}$, missä $W = -Fs$, $E_{\text{k}0} = \tfrac{1}{2}mv^2$, $E_\text{k} = 0$ ja $F = ma$, joten $\tfrac{1}{2}mv^2 = mas \quad\Rightarrow\quad a = \dfrac{v^2}{2s}$, ja $a_\text{huippu,2} = a_2 \cdot \dfrac{a_\text{huippu,1}}{a_1}$
 **Muunnokset:** $2{,}4\,\text{cm} = 0{,}024\,\text{m}$ ja $1{,}0\,\text{cm} = 0{,}010\,\text{m}$
 **Sijoitus:** Mitattu kypärä: $a_1 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}024\,\text{m}} \approx 613\,\tfrac{\text{m}}{\text{s}^2}$, joten huippuarvo on $\tfrac{950}{613} \approx 1{,}55$ kertaa keskiarvo. Tämä matkan suhteen laskettu keskiarvo eroaa hieman b-kohdan ajan suhteen lasketusta $603\,\text{m/s}^2$:stä, koska painuma on pyöristetty $2{,}4\,\text{cm}$:iin; ero ei muuta johtopäätöstä. Ohuempi kypärä: $a_2 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}010\,\text{m}} \approx 1470\,\tfrac{\text{m}}{\text{s}^2}$ ja $a_\text{huippu,2} \approx 1{,}55 \cdot 1470\,\tfrac{\text{m}}{\text{s}^2} \approx 2280\,\tfrac{\text{m}}{\text{s}^2}$.
 **Vastaus:** Ohuemman kypärän suurin kiihtyvyys olisi noin $2300\,\text{m/s}^2$ eli noin $230$ kertaa $g$. Se jää rajan $2450\,\text{m/s}^2$ alle, joten kypärä läpäisisi tämän iskutestin, mutta vain noin $7\,\%$:n marginaalilla.

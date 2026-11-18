@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e42850bb00939229
-
+CONTENT-HASH: 228beb400ac948b4
 ## Blocking
 
 ## Polish
-- solutions.md:120 (L3-03) — "$F\,\Delta t = m\,|v - v_0|$" puts a signed force against a magnitude — write "$|F|\,\Delta t = m\,|v - v_0|$" or "the magnitude of the force is".
-- solutions.md:108 (L3-02) — "$F\,\Delta t = mv_0 - 0$" has the sign of $\Delta p = 0 - mv_0$ turned without saying so (pre-existing, not new) — add "in magnitude" as in L2-01 and L2-06.
+- content/en/FY4/fy4-9/exercises/solutions.md:201 (L3-04) — the subscript in $\Delta t_\text{e}$ comes from Finnish *este*; in English a reader expects e.g. $\Delta t_\text{o}$ (obstacle) or $\Delta t_\text{rigid}$.
+- content/en/FY4/fy4-9/exercises/solutions.md:202 (L3-04) — Conversions omits $\Delta t_\text{e} = 25\,\text{ms} = 0.025\,\text{s}$, which the Substitution uses; add it beside $10\,\text{ms} = 0.010\,\text{s}$.
+- content/en/FY4/fy4-9/exercises/solutions.md:201 (L3-04) — older text: $I = \Delta t \cdot \Sigma F$ writes the sum of the interior readings with the net-force symbol; e.g. $I = \Delta t\,(F_1 + F_2 + \dots + F_9)$.
 
 ## Checked
-- Hash e42850bb00939229 at start and end; only solutions.md changed, no number, answer, tolerance, task or id changed.
-- Captures: none opened; judged from the text and the packet's diff.
-- L2-01, L2-02, L2-04, L3-02, L2-05, L2-06: the Kaava step now starts from $I = \Delta p$, $I = F\,\Delta t$, $p = mv$ and solves symbolically; each derived formula follows.
-- L3-01, L2-07, L3-04: impulse as area first, then $I = \Delta p$; L3-04 adds $F_\text{avg} = I/\Delta t$ for part c, consistent with the substitution.
-- L3-03: $\Delta F = F_\text{r} - F_\text{c}$ with symbols named; $m(v_0 + v_\text{r})/\Delta t - mv_0/\Delta t = mv_\text{r}/\Delta t$ correct.
-- L3-05: $v = v_0 + at$, $a = -g$ (up positive): $v_1 = -g t_\text{fall}$ from rest, $0 = v_2 - g t_\text{rise}$; $\Sigma F = N_\text{avg} - mg$; final form unchanged and right.
-- L1-07: $I = \Delta p = mv - mv_0$ right.
-- Paragraph splits (L1-06, L1-09, L2-06, L3-04, L3-05, L2-09) move no claim and drop no reason; the run-together formulas in the packet diff are diff rendering only (file lines 230–236 are separate).
-- Substitutions still match the last symbolic forms; answers recomputed earlier stand (no value changed).
+- Captures opened: none (one Formula and one Substitution change; judged from the diff in context).
+- Round 1 Blocking fixed: the rigid-obstacle stopping time now has its own symbol $\Delta t_\text{e} = 25\,\text{ms}$, distinct from the trapezoid width $\Delta t = 10\,\text{ms}$; $F_\text{avg} = I/\Delta t_\text{e}$ is solved symbolically and the Substitution uses the same symbol.
+- c) $981\,\text{N·s} / 0.025\,\text{s} = 39\,240\,\text{N} \approx 39\,\text{kN}$, unchanged; a) $981\,\text{N·s}$ and b) $14.01\,\text{m/s} = 50.45\,\text{km/h}$ unchanged.
+- Sign convention unchanged and consistent: $-I = \Delta p = 0 - mv_0$, $I$ the magnitude.
+- Reasonableness ($981/0.100 = 9.81\,\text{kN} < 17.4\,\text{kN}$) still uses the airbag time and is right.
+- Hash identical at start and end.

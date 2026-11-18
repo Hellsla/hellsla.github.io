@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e42850bb00939229
+CONTENT-HASH: 228beb400ac948b4
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md, airbag task (Kaava) — one paragraph carries the area formula, the impulse principle and the rigid-obstacle formula, about 70 words with two inline fractions; a paragraph break before "For the rigid obstacle" would read lighter.
-- [Minor] solutions.md, bouncing-ball task (Kaava) — long single paragraph (kinematics, then impulse principle) before the display formula; one break after "$v_2 = g\,t_\text{rise}$" would help. Within the 120-word limit.
+- [Minor] solutions.md, airbag task — the Formula paragraph is still one block of about 75 words; a break before "For the rigid obstacle" would read lighter (Round 1 polish, unchanged).
 
 ## Checked
-- Opened (en captures, 1280 px, solutions open) fy4-9-open-exercises-L3-1280-6 (airbag Kaava), L3-1280-7 and L3-1280-8 (bouncing ball Kaava, substitution rows), L2-1280-13 and L2-1280-14 (mass measurement; unchanged neighbours for layout). Read every changed Kaava line in the diff.
-- The new Kaava lines read basic equations, then derived formula, ending in a display of the final symbolic form; inline fractions render without clipping, symbols use \overline-free scalar notation consistently, no red KaTeX, nothing clipped or overflowing. Hash rechecked at end: unchanged.
+- Round 2 delta (solutions.md, airbag task: stopping time now $\Delta t_\text{e} = 25\,\text{ms}$ in Formula and Substitution c). Opened content/en/FY4/fy4-9/review/shots/fy4-9-open-exercises-L3-1280-6.png (airbag task Principle, Formula, Conversions, Substitution, Answer).
+- The symbol $\Delta t_\text{e}$ is defined where first used, distinct from the graph's $\Delta t = 10\,\text{ms}$, used consistently in formula, display and substitution; renders with upright unit, nothing clipped. Hash unchanged at end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 504b94a242b0ab65
-SCOPE: delta md-paragraphs,numbers,reflow,typography from 21ead76999d37875 base cabadc3
+CONTENT-HASH: 36a3fdd60977dd35
+SCOPE: delta (work queue 8g round 2: "pieneneminen" in fy4-10-L2-02 Kaava) from previous PASS 504b94a242b0ab65
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- solutions.md (the player-collision task, Kaava, ";" before "Liike-energian") — capital letter after a semicolon: "…; liike-energian muutos on $\Delta E = E_\text{k,ennen} - E_\text{k,jälkeen}$, …".
-- solutions.md (the coupling-wagons mass task, Kaava) — the step from $m_1 v_1 = (m_1 + m_2)v'$ to $m_2 = \dfrac{m_1(v_1 - v')}{v'}$ is joined with "ja" and the rearrangement is not shown; write "joten $m_1 v_1 = m_1 v' + m_2 v'$, joten $m_2 v' = m_1(v_1 - v')$ ja …".
-- solutions.md fy4-10-L2-10 c — earlier polish still open: "sitä enemmän liike-energiaa häviää" contradicts the course's own energy wording; write "…muuttuu muuksi energiaksi".
-- solutions.md fy4-10-L2-10 — the line with $p'$ and $E_\text{k}'$ has the two results with no separator between them in the source; put them on separate lines.
+- solutions.md:63-64 (fy4-10-L2-02 Kaava) — capital letter after the semicolon is still there ("…; Liike-energian pieneneminen"); fix: "…; liike-energian pieneneminen on …" (earlier polish, not fixed by this change).
+- Same task, Kysytty — "muiksi energiamuodoiksi muuttuva liike-energia $\Delta E$" is fine, but the course wording is "sisäenergiaksi ja ääneksi"; optional: "sisäenergiaksi ja ääneksi muuttuva liike-energia".
+- Packet checks list `layout 360 px` and `layout 390 px` as FAIL (lesson-level checks.txt, written 15:57); not caused by this diff and not re-run here, but a clipped row at phone width must be cleared before the visual review.
+- Earlier polish on fy4-10-L2-10 (wording "häviää", two results on one source line) not part of this diff and stands.
+
 ## Checked
-- Round 1, delta: only the diff judged (Kaava rewrites, paragraph splits); numbers, answers, tasks and ids unchanged in the diff.
-- Every rewritten Kaava now opens from $p_\text{ennen} = p_\text{jälkeen}$ (or $p = mv$, $E_\text{k} = \tfrac12 mv^2$, $\Sigma F = ma$), then the derived formula, symbols to the end, then Sijoitus.
-- Elastic equal-mass collision: the derivation ($v_1' v_2' = 0$, bodies do not pass through each other) is complete and followable; it removes the unexplained "they swap velocities".
-- Two-stage tasks (ballistic pendulum, car crash, wagons with friction) separate the two laws and state each before combining; paragraph splits keep one idea per paragraph.
-- Finnish in the changed lines correct; glossary terms kept.
-- Captures opened: content/fi/FY4/fy4-10/review/shots/fy4-10-open-exercises-L2-1280-5.png (Kaava wraps cleanly, nothing clipped); phone widths judged from the text.
+- Round 1 blocking fix verified: $\Delta E = E_\text{k,ennen} - E_\text{k,jälkeen}$ is now called "pieneneminen", which matches its sign (positive $717{,}2\,\text{J}$ = decrease) and the Kysytty line; the old word "muutos" would have implied a negative value.
+- Arithmetic: $v' = 85 \cdot 6{,}0 / 160 = 3{,}1875\,\text{m/s}$; $\tfrac12 \cdot 85 \cdot 36 = 1530\,\text{J}$; $\tfrac12 \cdot 160 \cdot 3{,}1875^2 = 812{,}8\,\text{J}$; difference $717{,}2\,\text{J}$ correct.
+- Kaava order unchanged and good: $p_\text{ennen} = p_\text{jälkeen}$, symbolic $v'$, then symbolic $\Delta E$ before substitution.
+- Finnish in the changed word correct; glossary and energy wording consistent (energy to other forms, not "häviää").
+- No number, answer, tolerance, task, id or figure changed; text-only change.
+- Captures opened: none (the available shots are 1280 px, and the change is one word).

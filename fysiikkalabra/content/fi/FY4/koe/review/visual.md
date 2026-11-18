@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 4a1fda197003179c
+VERDICT: PASS
+CONTENT-HASH: 75c95b152de5d86b
 
 ## Blocking
-- [Major] koe/solutions.md k4 a) Kaava (line 280) — opens with the combined equation `m_A v_A = (m_A + m_B) u` and no basic equation (`p_ennen = p_jälkeen`, `p = mv`, system total as sum); the 8g rule (basic equations, then derived formula, simplify to the end, then substitute) and the notation order principle → equation → substitution are not met; the other momentum Kaava lines (Sovella, fy4-10) do state it — fix: `$p_\text{ennen} = p_\text{jälkeen}$, missä $p = mv$ ja $v_\text{B} = 0$, joten $m_\text{A}v_\text{A} = (m_\text{A} + m_\text{B})\,u$ ...`.
-- [Major] koe/solutions.md impulse part Kaava (line 300) — starts from `F Δt = m_B u − 0`, the combined form, without `I = Δp`, `I = FΔt`, `p = mv`; same rule and fix as in the Sovella/fy4-9 sets (`$I = \Delta p$, $I = F\,\Delta t$ ja $p = mv$, joten ...`).
+None.
 
 ## Polish
-- [Minor] Kaava lines 126, 204, 455 (`a = Δv/Δt`) are a basic definition, so they pass; line 290 `ΔE = E_k,1 − E_k,2` likewise. No change needed.
-- [Minor] fy4-k2 a) and k6 b) graphs: y gridlines at 400 steps while the peak 1500 lies between ticks; readable, optional extra tick.
+- [Minor] k5 a) and c) Kaava: the chain `... \quad\Rightarrow\quad u = ...` is broken by the page so that the row ends "$\Rightarrow\ u$" and the next row starts "$= \dfrac{...}{...}$" (same in c, "$\Rightarrow\ F$"); readable but the dangling symbol looks like a continuation of the first equation. Same pattern in 11 Kaava lines of solutions.md; optional: write "joten" in words and put the solved form in its own inline formula.
+- [Minor] k2 a) and k6 b) graph y gridlines (round 1 note) still readable; optional extra tick.
 
 ## Checked
-- FY4-koe-fig-1-390.png (four v,t sketches A-D, schematic, axes labelled), fig-2-390.png (slope force diagrams A-D, colours force red, v blue, dashed none needed), fig-3-390.png (F,t graph, units, gridlines): legible at 390 px, nothing clipped.
-- Kaava lines of all 19 parts read in koe/solutions.md; the 8g-changed ones (lines 136, 194, 214, 236, 246, 330, 399, 409, 419, 444, 465, 475) start from the basic equations, then derived formula, then Sijoitus into the last symbolic form.
+- Round 2 fixes: opened FY4-koe-page-1280-25.png (k5 a Kaava starts from $p_\text{ennen}=p_\text{jälkeen}$, $p=mv$, then $m_\text{A}v_\text{A}=(m_\text{A}+m_\text{B})u$ and solved $u$; Sijoitus, Vastaus, Järkevyys), -26.png (k5 b), -27.png (k5 c Kaava starts from $I=\Delta p$, $I=F\Delta t$, $p=mv$; Sijoitus, Vastaus, d) start).
+- Context: FY4-koe-page-1280-30.png (task 6 with table, Osa 3 header), FY4-koe-top-390.png, FY4-koe-fig-1-390.png (velocity graphs A-D), FY4-koe-fig-4-390.png (tram graph, labels and area legible).
+- Units, decimal commas, overlines and spacing consistent in all opened parts. Hash unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

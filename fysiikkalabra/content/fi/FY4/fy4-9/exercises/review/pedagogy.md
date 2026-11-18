@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 982778f9cff7e8e8
-SCOPE: delta md-paragraphs,numbers,reflow,typography from ffd2c67e70d46b4c base cabadc3
+CONTENT-HASH: 5c5e2726a63ff9d8
+SCOPE: delta (work queue 8g round 2: stopping-time symbol $\Delta t_\text{e}$ in fy4-9-L3-04) from previous PASS 982778f9cff7e8e8
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- solutions.md fy4-9-L2-08 Kaava — starts from the area formula $I = \tfrac{1}{2}F_\text{max}\Delta t$; the other rewritten solutions open from $I = \Delta p$, $I = F\Delta t$. Open with "$I = \Delta p$ ja $I = F\,\Delta t$; impulssi on kuvaajan pinta-ala, $I = \tfrac{1}{2}F_\text{max}\Delta t$, ja $F_\text{ka} = \dfrac{I}{\Delta t}$".
-- solutions.md lines 65, 85, 106, 153, 163 Kaava — "…, joten … = …, joten …" has two "joten" in one sentence; replace the second with "ja siis" or start a new sentence ("Ratkaistuna …").
+- solutions.md:188 (fy4-9-L3-04 Kaava) — "$I = \Delta t \cdot \Sigma F$": here $\Sigma F$ is the sum of the table's force values, while the course's $\Sigma F$ is the net force (the same collision as in fy4-3-L3-05); fix: "$I = \Delta t \cdot (F_1 + F_2 + \dots + F_9)$" or "$\Delta t \cdot \Sigma F_\text{taulukko}$".
+- solutions.md:190 (Muunnokset) — the new $\Delta t_\text{e} = 25\,\text{ms}$ and the airbag's $100\,\text{ms}$ are not converted in the Muunnokset row, only inside Sijoitus; fix: add "$25\,\text{ms} = 0{,}025\,\text{s}$ ja $100\,\text{ms} = 0{,}100\,\text{s}$".
+- Previous polish (L2-08 opening, double "joten") not part of this diff and stands as before.
+
 ## Checked
-- Round 1, delta: only the diff judged (Kaava rewrites, paragraph splits in the L1 symbol task, the bumper task and L2-09); numbers, answers, tasks and ids unchanged in the diff.
-- Every rewritten Kaava now starts from $I = \Delta p$, $I = F\,\Delta t$, $p = mv$, then the derived formula, symbolic result before substitution.
-- Graph tasks (lines 96, 176, 187): area formula first, then the impulse principle; followable.
-- The bouncing-ball solution (line 197): $v = v_0 + at$ and $\Sigma F = N_\text{ka} - mg$ stated before the combined equation; followable.
-- L2-09 paragraph splits keep the solution intact; the previous polish items on L2-09 are not part of this diff and stand as before.
-- Finnish in the changed lines: grammar and glossary terms correct ("kokonaisvoima", "impulssiperiaate"); case after units kept.
-- Captures opened: content/fi/FY4/fy4-9/review/shots/fy4-9-open-exercises-L2-1280-6.png (the L2 Kaava/Sijoitus rows render, nothing clipped); the phone captures were not in the shots folder, so 360 px judged from the text.
+- Round 1 blocking fix verified: the stopping time of the rigid obstacle is now $\Delta t_\text{e} = 25\,\text{ms}$, distinct from the sampling step $\Delta t = 10\,\text{ms}$; the Kaava, Sijoitus and Järkevyys rows use it consistently, and the task text (c) gives $25\,\text{ms}$.
+- Arithmetic unchanged and correct: $981 / 0{,}025 = 39\,240\,\text{N}$; answer $39\,\text{kN}$ with two significant figures follows the data.
+- Kaava still reads principle to symbols: $I = \Delta t \cdot \Sigma F$, $-I = \Delta p = 0 - mv_0$, $I = F_\text{ka}\,\Delta t_\text{e}$, then $F_\text{ka} = I/\Delta t_\text{e}$ before substitution.
+- Järkevyys comparison (39 kN against 17,4 kN, and airbag 100 ms) still holds; Finnish ("pysähtymisaika", case after unit "$25\,\text{ms}$:sta") correct.
+- No answer, tolerance, task, id or figure changed; layout checks ran ok at 360-1280 px; text-only change.
+- Captures opened: none.
