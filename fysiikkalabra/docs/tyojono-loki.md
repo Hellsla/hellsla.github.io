@@ -476,6 +476,8 @@ eivät ole ensin (FY4 luku 4: 4-4, 4-6, 4-13, 4-16).
 - Ei julkaistua pilottia: ennen/jälkeen-kuvat PR:ään (FY4 luku 4, 390 ja 1280 px, suljettuna ja yksi tehtävä
   tarkistettuna), ja työ pysähtyy opettajan hyväksyntään.
 
+Opettaja 2026-11-18: ei valitsinta ydintehtävät/tasoittain; U1 sellaisenaan.
+
 ### [loki] U2. Tehtäväkortin ohjainten järjestys (U1:n jälkeen)
 Nyt Vastaus ja Näytä ratkaisu ovat otsikkorivillä ennen tehtävänantoa; täytetty päänappi on Kirjoita ratkaisu ja
 Tarkista on ääriviivanappi; puhelimella otsikkorivi rivittyy kahdelle riville ja lukko jää irralleen. Järjestys
