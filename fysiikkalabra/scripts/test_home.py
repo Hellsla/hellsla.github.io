@@ -489,7 +489,7 @@ with sync_playwright() as pw:
           if (s[i] === '\\u00ad') { shy = true; continue; }
           r.setStart(tn, i); r.setEnd(tn, i + 1); const q = r.getClientRects()[0]; if (!q || !q.width) continue;
           if (prev && /[A-Za-zÅÄÖåäö]/.test(s[i]) && /[A-Za-zÅÄÖåäö]/.test(s[i - 1]) && !shy && q.top > prev.top + q.height / 2) bad.push(s.slice(Math.max(0, i - 6), i + 3));
-          prev = q; shy = false;
+          prev = shy ? null : q; shy = false;   // Chromium reports the box of the letter after a soft-hyphen break on the line before it: that letter is no reference
         }
         if (f.scrollWidth > f.clientWidth + 1) bad.push('overflow: ' + s.slice(0, 20));
       }
@@ -501,7 +501,7 @@ with sync_playwright() as pw:
         if not pairs: continue
         code, card = max(pairs, key=lambda p: max(len(w) for w in p[1]["kasite"].split()))
         want = "en" if lang == "en" else "fi"
-        for w, hgt in ((360, 780), (1280, 900)):
+        for w, hgt in ((320, 780), (340, 780), (360, 780), (375, 780), (1280, 900)):   # several narrow widths: the break choice depends on the width and the font
             pg = b.new_page(viewport={"width": w, "height": hgt})
             pg.goto(URL + f"{pre}kasitteet.html?moduuli={code}&aihe={card['aihe']}"); pg.wait_for_timeout(400)
             root = pg.evaluate("document.documentElement.lang")
