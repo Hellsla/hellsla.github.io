@@ -8,7 +8,7 @@ G 14,715
 T 14,715 ylös
 a 0
 ```
-**Kaava:** $T - mg = 0$, joten $T = mg$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Lamppu on levossa, joten $a_y = 0$. Silloin $T - mg = 0$, joten $T = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $T = 1{,}5\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 14{,}715\,\text{N}$
 **Vastaus:** $14{,}7\,\text{N} \approx 15\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $1{,}5\,\text{kg}$ on annettu kahdella numerolla.
@@ -19,7 +19,7 @@ a 0
 **Kysytty:** kokonaisvoiman suuruus $\Sigma F$ yksikössä $\text{N}$. Kokonaisvoima on kaikkien voimien yhteisvaikutus.
 **Periaate:** Kokonaisvoima on voimien vektorisumma. Lasketaan komponenttien summat erikseen kummankin akselin suunnassa. Akseli $x$ osoittaa oikealle ja $y$ ylös.
 **Kuvaajan lukeminen:** Nuolten pituudet luetaan ruuduista. Nuoli $F_1$ on neljä ruutua pitkä. Nuoli $F_2$ on kaksi ja puoli ruutua pitkä. Nuolet $F_3$ ja $F_4$ ovat kolme ruutua pitkiä. Yksi ruutu on $10\,\text{N}$.
-**Kaava:** $\Sigma F_x = F_1 - F_2$ ja $\Sigma F_y = F_3 - F_4$. Kun $\Sigma F_y = 0$, kokonaisvoiman suuruus on $\Sigma F = |\Sigma F_x|$
+**Kaava:** Kokonaisvoima on kaikkien voimien vektorisumma: $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2 + \overline{F}_3 + \overline{F}_4$. Lasketaan akseleittain: $\Sigma F_x = F_1 - F_2$ ja $\Sigma F_y = F_3 - F_4$. Kun $\Sigma F_y = 0$, kokonaisvoiman suuruus on $\Sigma F = |\Sigma F_x|$
 **Muunnokset:** Ruudut muunnetaan newtoneiksi: $4\cdot 10\,\text{N} = 40\,\text{N}$ ja $2{,}5\cdot 10\,\text{N} = 25\,\text{N}$.
 **Sijoitus:** $\Sigma F_y = 30\,\text{N} - 30\,\text{N} = 0$ ja $\Sigma F = 40\,\text{N} - 25\,\text{N} = 15\,\text{N}$
 **Vastaus:** $15\,\text{N}$ oikealle. Vastauksessa on kaksi merkitsevää numeroa. Ruudukosta voi lukea vain puolen ruudun tarkkuudella, eli $5\,\text{N}$:n tarkkuudella.
@@ -39,7 +39,7 @@ F_mu 4,905 ylös @oikea
 a 0
 akselit 0
 ```
-**Kaava:** $y$: $F_\mu - mg = 0$, joten $F_\mu = mg$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Kirja on levossa, joten $a_y = 0$. Silloin $F_\mu - mg = 0$, joten $F_\mu = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $F_\mu = 0{,}50\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 4{,}905\,\text{N}$
 **Vastaus:** $4{,}9\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $0{,}50\,\text{kg}$ on annettu kahdella numerolla.
@@ -56,7 +56,7 @@ G 637,65
 N 637,65
 a 0
 ```
-**Kaava:** $N - mg = 0$, joten $N = mg$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Henkilö on levossa, joten $a_y = 0$. Silloin $N - mg = 0$, joten $N = mg$
 **Muunnokset:** Massa on kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 65\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 637{,}65\,\text{N}$
 **Vastaus:** $640\,\text{N}$ eli $6{,}4\cdot 10^{2}\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $65\,\text{kg}$ on annettu kahdella numerolla.
@@ -72,7 +72,7 @@ T 250 40
 akselit 0
 komponentit T
 ```
-**Kaava:** $T_x = T\cos\alpha$
+**Kaava:** Voima ja sen komponentit muodostavat suorakulmaisen kolmion. Siinä $\cos\alpha = \dfrac{T_x}{T}$, joten $T_x = T\cos\alpha$
 **Muunnokset:** Voima on newtoneina ja kulma asteina. Muunnoksia ei tarvita. Laskimen asteikko on DEG.
 **Sijoitus:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191{,}5\,\text{N}$
 **Vastaus:** $190\,\text{N}$ eli $1{,}9\cdot 10^{2}\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa. Kulma $40^\circ$ on annettu kahdella numerolla, eikä voima $250\,\text{N}$ ole sitä tarkempi.
@@ -93,7 +93,7 @@ a 0
 akselit 0
 komponentit T
 ```
-**Kaava:** $x$: $T\cos\alpha - F_\mu = 0$, joten $F_\mu = T\cos\alpha$
+**Kaava:** Newtonin toinen laki: $\Sigma F_x = ma_x$. Liike on tasaista, joten $a_x = 0$. Silloin $T\cos\alpha - F_\mu = 0$, joten $F_\mu = T\cos\alpha$
 **Muunnokset:** Voima on newtoneina. Muunnoksia ei tarvita. Massaa ei tarvita, koska kitka saadaan vaakasuunnan yhtälöstä.
 **Sijoitus:** $F_\mu = 60\,\text{N}\cdot\cos 30^\circ = 51{,}96\,\text{N}$
 **Vastaus:** $52\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska voima $60\,\text{N}$ on annettu kahdella numerolla.
@@ -110,7 +110,7 @@ G 588,6
 N 660,6
 a ylös
 ```
-**Kaava:** $N - mg = ma$, joten $N = m(g + a)$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Kun $y$ osoittaa ylös ja kiihtyvyys $a$ ylöspäin, saadaan $N - mg = ma$, joten $N = m(g + a)$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 60\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}2\,\text{m/s}^2) = 60\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 = 660{,}6\,\text{N}$
 **Vastaus:** $660\,\text{N}$ eli $6{,}6\cdot 10^{2}\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $60\,\text{kg}$ ja kiihtyvyys $1{,}2\,\text{m/s}^2$ on annettu kahdella numerolla.
@@ -131,7 +131,7 @@ a oikea
 akselit 0
 komponentit F
 ```
-**Kaava:** $x$: $F\cos\alpha - F_\mu = ma$, joten $a = \dfrac{F\cos\alpha - F_\mu}{m}$
+**Kaava:** Newtonin toinen laki: $\Sigma F_x = ma$. Silloin $F\cos\alpha - F_\mu = ma$, joten $a = \dfrac{F\cos\alpha - F_\mu}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja massa kilogrammoina. Tulos tulee suoraan yksikössä $\text{m/s}^2$.
 **Sijoitus:** $a = \dfrac{120\,\text{N}\cdot\cos 30^\circ - 80\,\text{N}}{40\,\text{kg}} = \dfrac{103{,}9\,\text{N} - 80\,\text{N}}{40\,\text{kg}} = 0{,}598\,\text{m/s}^2$
 **Vastaus:** $0{,}60\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten lähtötiedoissa.
@@ -148,9 +148,9 @@ F_2 40 90
 a 53,13
 akselit 0
 ```
-**Kaava:** $\Sigma F_x = F_1$ ja $\Sigma F_y = F_2$, joten $\Sigma F = \sqrt{F_1^2 + F_2^2}$. Newtonin toisesta laista $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m}$
+**Kaava:** Newtonin toinen laki: $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m}$. Voimat ovat kohtisuorassa, joten $\Sigma F_x = F_1$ ja $\Sigma F_y = F_2$ ja $\Sigma F = \sqrt{F_1^2 + F_2^2}$. Siis $a = \dfrac{\sqrt{F_1^2 + F_2^2}}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja massa kilogrammoina. Muunnoksia ei tarvita.
-**Sijoitus:** $\Sigma F = \sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}$ ja $a = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1{,}0\,\text{m/s}^2$
+**Sijoitus:** $a = \dfrac{\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2}}{50\,\text{kg}} = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1{,}0\,\text{m/s}^2$
 **Vastaus:** $1{,}0\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, koska voimat $30\,\text{N}$ ja $40\,\text{N}$ on annettu kahdella numerolla.
 **Järkevyys:** Kokonaisvoima $50\,\text{N}$ on suurempi kuin kumpikaan voima. Se on pienempi kuin niiden summa $70\,\text{N}$, koska voimat osoittavat eri suuntiin. Kiihtyvyys osoittaa voimien väliin, lähemmäs suurempaa voimaa.
 
@@ -166,7 +166,7 @@ N 581,7
 v ylös
 a alas
 ```
-**Kaava:** $N - mg = m a_y$, joten $N = m(g + a_y)$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Silloin $N - mg = m a_y$, joten $N = m(g + a_y)$
 **Muunnokset:** Massa on kilogrammoina ja kiihtyvyydet yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 581{,}7\,\text{N}$
 **Vastaus:** $580\,\text{N}$ eli $5{,}8\cdot 10^{2}\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $70\,\text{kg}$ ja kiihtyvyys $1{,}5\,\text{m/s}^2$ on annettu kahdella numerolla.
@@ -185,7 +185,7 @@ F_mu 1,9 vasen
 v oikea
 a vasen
 ```
-**Kaava:** $a_x = \dfrac{v - v_0}{\Delta t}$ ja $x$: $-F_\mu = m a_x$, joten $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
+**Kaava:** Newtonin toinen laki: $\Sigma F_x = ma_x$. Kiihtyvyys on $a_x = \dfrac{v - v_0}{\Delta t}$. Ainoa vaakavoima on kitka, joten $-F_\mu = m a_x = \dfrac{m(v - v_0)}{\Delta t}$. Siis $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
 **Muunnokset:** Massa on kilogrammoina, nopeudet yksikössä $\text{m/s}$ ja aika sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $F_\mu = \dfrac{19\,\text{kg}\cdot(2{,}0\,\text{m/s} - 0)}{20\,\text{s}} = 19\,\text{kg}\cdot 0{,}10\,\text{m/s}^2 = 1{,}9\,\text{N}$
 **Vastaus:** $1{,}9\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa, nopeudessa ja ajassa.
@@ -203,7 +203,7 @@ G 0,03924
 N 0,06076 @ylä
 a 0
 ```
-**Kaava:** $F_\text{noste} - mg - N = 0$, joten $N = F_\text{noste} - mg$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Pallo on levossa, joten $a_y = 0$. Silloin $F_\text{noste} - mg - N = 0$, joten $N = F_\text{noste} - mg$
 **Muunnokset:** $m = 4{,}0\,\text{g} = 4{,}0 \cdot 0{,}001\,\text{kg} = 0{,}0040\,\text{kg}$
 **Sijoitus:** $N = 0{,}10\,\text{N} - 0{,}0040\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}10\,\text{N} - 0{,}03924\,\text{N} = 0{,}06076\,\text{N}$
 **Vastaus:** $0{,}061\,\text{N} \approx 0{,}06\,\text{N}$. Tukivoima on kahden voiman erotus. Erotuksessa ratkaisee desimaalien määrä. Noste $0{,}10\,\text{N}$ tunnetaan sadasosanewtonin tarkkuudella.
@@ -231,7 +231,7 @@ F_mu 150 vasen
 a oikea
 akselit 0
 ```
-**Kaava:** $\Sigma F_x = F_1 + F_2 - F_\mu$
+**Kaava:** Kokonaisvoima on voimien vektorisumma: $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2 + \overline{F}_\mu$. Kun $x$ osoittaa työntämisen suuntaan, $\Sigma F_x = F_1 + F_2 - F_\mu$
 **Muunnokset:** Kaikki voimat ovat newtoneina. Muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
 **Vastaus:** $55\,\text{N}$ työntämisen suuntaan. Vastauksessa on kaksi merkitsevää numeroa, koska annetuissa voimissa on kaksi numeroa.
@@ -260,7 +260,7 @@ akselit 0
 komponentit F_B
 ```
 **Kuvaajan lukeminen:** Taulukosta luetaan kunkin mittauksen voimat $F_\text{A}$ ja $F_\text{C}$. Vertailua varten luetaan myös anturin B lukema.
-**Kaava:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ ja $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, joten $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
+**Kaava:** Newtonin toinen laki: $\Sigma F = ma$. Levossa $a = 0$, joten $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ ja $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$. Siis $F_\text{B}\cos\alpha = F_\text{A}$ ja $F_\text{B}\sin\alpha = F_\text{C}$. Jaetaan yhtälöt keskenään: $\tan\alpha = \dfrac{F_\text{C}}{F_\text{A}}$, joten $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
 **Muunnokset:** Voimat ovat newtoneina ja kulma lasketaan asteina. Muunnoksia ei tarvita. Laskimen asteikko on DEG.
 **Sijoitus:** Kulmat ovat
 ```latex
@@ -287,7 +287,7 @@ F_mu 30 vasen
 v oikea
 a vasen
 ```
-**Kaava:** $x$: $-F_\mu = m a_x$, joten $a_x = -\dfrac{F_\mu}{m}$ ja kiihtyvyyden suuruus on $a = \dfrac{F_\mu}{m}$
+**Kaava:** Newtonin toinen laki: $\Sigma F_x = ma_x$. Ainoa vaakavoima on kitka, joten $-F_\mu = m a_x$. Siis $a_x = -\dfrac{F_\mu}{m}$, ja kiihtyvyyden suuruus on $a = \dfrac{F_\mu}{m}$
 **Muunnokset:** Voima on newtoneina ja massa kilogrammoina. Tulos tulee suoraan yksikössä $\text{m/s}^2$.
 **Sijoitus:** $a = \dfrac{30\,\text{N}}{12\,\text{kg}} = 2{,}5\,\text{m/s}^2$
 **Vastaus:** a) Voimakuvioon on otettu ylimääräinen voima, jolla ei ole aiheuttajaa. b) $a = 2{,}5\,\text{m/s}^2$ vasemmalle eli liikettä vastaan. Vastauksessa on kaksi merkitsevää numeroa, koska annetuissa arvoissa on kaksi numeroa. Laatikko hidastuu.
@@ -307,7 +307,7 @@ akselit 0
 komponentit F_2
 ```
 **Kuvaajan lukeminen:** Taulukosta luetaan rivi $\varphi = 60\,{}^\circ$: $F_3 = 12{,}3\,\text{N}$.
-**Kaava:** $\Sigma F_x = F_1 + F_2\cos\varphi$ ja $\Sigma F_y = F_2\sin\varphi$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
+**Kaava:** Kokonaisvoima on voimien vektorisumma: $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2$. Akseleittain $\Sigma F_x = F_1 + F_2\cos\varphi$ ja $\Sigma F_y = F_2\sin\varphi$. Suuruus on $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
 **Muunnokset:** Voimat ovat newtoneina ja kulma asteina. Muunnoksia ei tarvita.
 **Sijoitus:** Ensin komponentit:
 ```latex
@@ -338,7 +338,7 @@ akselit 0
 komponentit T
 ```
 **Kuvaajan lukeminen:** Nopeus kasvaa suunnilleen yhtä paljon joka sekunti. Peräkkäisten sekuntien muutokset ovat $0{,}78$, $0{,}85$, $0{,}75$, $0{,}84$ ja $0{,}79\,\text{m/s}$. Kiihtyvyys on siis likimain vakio. Se saadaan koko aikavälin muutoksesta $\Delta v = 4{,}01\,\text{m/s} - 0 = 4{,}01\,\text{m/s}$ ja $\Delta t = 5{,}0\,\text{s}$.
-**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$, $x$: $T\cos\alpha - F_\mu = ma$ ja $y$: $N + T\sin\alpha - mg = 0$, joten $F_\mu = T\cos\alpha - ma$ ja $N = mg - T\sin\alpha$
+**Kaava:** Newtonin toinen laki: $\Sigma F = ma$ akseleittain. $x$: $T\cos\alpha - F_\mu = ma$ ja $y$: $N + T\sin\alpha - mg = 0$, koska pystysuunnassa ei ole kiihtyvyyttä. Kiihtyvyys on $a = \dfrac{\Delta v}{\Delta t}$. Siis $F_\mu = T\cos\alpha - ma$ ja $N = mg - T\sin\alpha$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Lisäksi $\text{N} / \text{kg} = \text{m/s}^2$.
 **Sijoitus:** Kiihtyvyys on $a = \dfrac{4{,}01\,\text{m/s}}{5{,}0\,\text{s}} = 0{,}802\,\text{m/s}^2$. Kitkavoima:
 ```latex
@@ -374,7 +374,7 @@ v ylös
 a ylös
 ```
 **Kuvaajan lukeminen:** Taulukon lukemat jaetaan vaiheisiin hetkien $2{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ mukaan. Vaiheen 1 lukemien summa on $$\begin{aligned} &881\,\text{N} + 878\,\text{N} + 883\,\text{N} \\ &= 2642\,\text{N} \end{aligned}$$, joten keskiarvo on $880{,}7\,\text{N}$. Vaiheessa 2 summa on $2354\,\text{N}$ ja keskiarvo $784{,}7\,\text{N}$. Vaiheessa 3 summa on $2069\,\text{N}$ ja keskiarvo $689{,}7\,\text{N}$.
-**Kaava:** $T - mg = m a_y$, joten $a_y = \dfrac{T - mg}{m}$. Suurin nopeus on $v_\text{max} = a_1 \Delta t_1$. Matkat ovat $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ ja $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, koska kolmannessa vaiheessa nopeus pienenee tasaisesti nollaan. Korkeus on $h = h_1 + h_2 + h_3$
+**Kaava:** Newtonin toinen laki: $\Sigma F_y = ma_y$. Silloin $T - mg = m a_y$, joten $a_y = \dfrac{T - mg}{m}$. Suurin nopeus on $v_\text{max} = a_1 \Delta t_1$. Matkat ovat $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ ja $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, koska kolmannessa vaiheessa nopeus pienenee tasaisesti nollaan. Korkeus on $h = h_1 + h_2 + h_3$
 **Muunnokset:** Voimat ovat newtoneina, massa kilogrammoina ja ajat sekunteina. Muunnoksia ei tarvita. Paino on $mg = 80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 784{,}8\,\text{N}$.
 **Sijoitus:** Kiihtyvyydet:
 ```latex
@@ -425,8 +425,8 @@ F_2 5,657 225
 a 53,13
 akselit 0
 ```
-**Kaava:** $\Sigma F_x = F_{1x} + F_{2x}$ ja $\Sigma F_y = F_{1y} + F_{2y}$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. Newtonin toisesta laista $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m}$
+**Kaava:** Kokonaisvoima on voimien vektorisumma: $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2$. Akseleittain $\Sigma F_x = F_{1x} + F_{2x}$ ja $\Sigma F_y = F_{1y} + F_{2y}$, joten $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. Newtonin toinen laki: $\Sigma F = ma$, joten $a = \dfrac{\Sigma F}{m} = \dfrac{\sqrt{(F_{1x} + F_{2x})^2 + (F_{1y} + F_{2y})^2}}{m}$
 **Muunnokset:** Ruudut muunnetaan newtoneiksi: $5\cdot 2{,}0\,\text{N} = 10\,\text{N}$, $6\cdot 2{,}0\,\text{N} = 12\,\text{N}$ ja $2\cdot 2{,}0\,\text{N} = 4{,}0\,\text{N}$.
-**Sijoitus:** $\Sigma F_x = 10\,\text{N} - 4{,}0\,\text{N} = 6{,}0\,\text{N}$ ja $\Sigma F_y = 12\,\text{N} - 4{,}0\,\text{N} = 8{,}0\,\text{N}$, joten $\Sigma F = \sqrt{(6{,}0\,\text{N})^2 + (8{,}0\,\text{N})^2} = 10\,\text{N}$ ja $a = \dfrac{10\,\text{N}}{2{,}5\,\text{kg}} = 4{,}0\,\text{m/s}^2$
+**Sijoitus:** $a = \dfrac{\sqrt{(10\,\text{N} - 4{,}0\,\text{N})^2 + (12\,\text{N} - 4{,}0\,\text{N})^2}}{2{,}5\,\text{kg}} = \dfrac{\sqrt{(6{,}0\,\text{N})^2 + (8{,}0\,\text{N})^2}}{2{,}5\,\text{kg}} = \dfrac{10\,\text{N}}{2{,}5\,\text{kg}} = 4{,}0\,\text{m/s}^2$
 **Vastaus:** $4{,}0\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, koska massa $2{,}5\,\text{kg}$ ja ruudun arvo $2{,}0\,\text{N}$ on annettu kahdella numerolla. Kiihtyvyys osoittaa kokonaisvoiman suuntaan, kulmaan $53^\circ$ $x$-akselista kohti $+y$-suuntaa.
 **Järkevyys:** Kokonaisvoima $10\,\text{N}$ on pienempi kuin voimien suuruuksien summa $15{,}6\,\text{N} + 5{,}7\,\text{N} = 21{,}3\,\text{N}$, koska $\overline{F}_2$ vetää osittain vastaan. Arvio: $10\,\text{N} : 2{,}5\,\text{kg} = 4{,}0\,\text{m/s}^2$. Voimat $6{,}0\,\text{N}$ ja $8{,}0\,\text{N}$ muodostavat suorakulmaisen kolmion, jonka hypotenuusa on $10\,\text{N}$.

@@ -29,7 +29,7 @@ v oikea
 a vasen
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$, so $N = mg$ and $F_\mu = \mu N = \mu mg$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. In the vertical direction $a_y = 0$, so $y$: $N - mg = 0$ and $N = mg$. Sliding friction is $F_\mu = \mu N$, so $F_\mu = \mu mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\mu = 0.12\cdot 30\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 35.316\,\text{N}$
 **Answer:** $35\,\text{N}$, two significant figures like the coefficient of friction $0.12$ and the mass $30\,\text{kg}$.
@@ -50,7 +50,7 @@ v oikea
 a 0
 akselit 0
 ```
-**Formula:** $x$: $F - \mu N = 0$ and $y$: $N - mg = 0$, so $\mu = \dfrac{F}{mg}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, and at constant velocity $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $F - F_\mu = 0$, and sliding friction is $F_\mu = \mu N$, so $F = \mu mg$ and $\mu = \dfrac{F}{mg}$
 **Conversions:** The mass is in kilograms and the force in newtons, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{120\,\text{N}}{40\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{120\,\text{N}}{392.4\,\text{N}} = 0.3058$
 **Answer:** $0.31$, two significant figures like the mass $40\,\text{kg}$.
@@ -70,7 +70,7 @@ a 0
 akselit -20
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$ and $a_y = 0$. The component of the weight perpendicular to the surface is $G_y = G\cos\alpha = mg\cos\alpha$, so $y$: $N - mg\cos\alpha = 0$ and $N = mg\cos\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $N = 0.80\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 20^\circ = 7.848\,\text{N}\cdot 0.9397 = 7.375\,\text{N}$
 **Answer:** $7.4\,\text{N}$, two significant figures like the mass $0.80\,\text{kg}$.
@@ -90,7 +90,7 @@ akselit -30
 komponentit G
 ```
 **Principle:** The weight points straight down. When the $x$-axis is chosen along the slope, the component of the weight in its direction is obtained from a right triangle in which the angle between the weight and the perpendicular component is the angle of inclination $\alpha$ of the slope.
-**Formula:** $G_x = G\sin\alpha = mg\sin\alpha$
+**Formula:** $G = mg$, and the component of the weight along the slope is $G_x = G\sin\alpha$, so $G_x = mg\sin\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $G_x = 12\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 30^\circ = 117.72\,\text{N}\cdot 0.5 = 58.86\,\text{N}$
 **Answer:** $59\,\text{N}$, two significant figures like the mass $12\,\text{kg}$.
@@ -110,7 +110,7 @@ a alas
 akselit -12
 komponentit G
 ```
-**Formula:** $a = \dfrac{v - 0}{t}$, $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
+**Formula:** Acceleration $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v - 0}{t}$. $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$. So $mg\sin\alpha - \mu mg\cos\alpha = ma$, the mass cancels, and $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $a = \dfrac{3.0\,\text{m/s}}{4.0\,\text{s}} = 0.75\,\text{m/s}^2$ and $\mu = \dfrac{9.81\,\text{m/s}^2\cdot\sin 12^\circ - 0.75\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 12^\circ} = \dfrac{2.040 - 0.75}{9.596} = 0.134$
 **Answer:** $0.13$, two significant figures like the velocity $3.0\,\text{m/s}$ and the time $4.0\,\text{s}$.
@@ -131,7 +131,7 @@ v oikea
 a oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $T - \mu N = ma$, so $a = \dfrac{T - \mu mg}{m}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $T - F_\mu = ma$, and $F_\mu = \mu N = \mu mg$. So $T - \mu mg = ma$ and $a = \dfrac{T - \mu mg}{m}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{150\,\text{N} - 0.30\cdot 40\,\text{kg}\cdot 9.81\,\text{m/s}^2}{40\,\text{kg}} = \dfrac{150\,\text{N} - 117.72\,\text{N}}{40\,\text{kg}} = 0.807\,\text{m/s}^2$
 **Answer:** $0.81\,\text{m/s}^2$, two significant figures like the coefficient of friction $0.30$ and the mass $40\,\text{kg}$.
@@ -142,7 +142,7 @@ akselit 0
 **Find:** the coefficient of sliding friction $\mu$ (no unit)
 **Principle:** Sliding friction is proportional to the normal force, $F_\mu = \mu N$, so the $(N, F_\mu)$ graph is a straight line through the origin whose slope is $\mu$. The slope is read from a line fitted to the points, not from two neighbouring measurement points, because measurement points are usually not exactly on the same line because of measurement uncertainty.
 **Reading the graph:** A line is drawn through the origin so that it passes as close as possible to all the points. A point far away is read from the line, for example at the normal force $N = 25\,\text{N}$ the value of the line is about $F_\mu = 5.35\,\text{N}$.
-**Formula:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, when $\Delta F_\mu$ and $\Delta N$ are read from the fitted line
+**Formula:** Sliding friction is $F_\mu = \mu N$, so the slope of the $(N, F_\mu)$ line is $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, when $\Delta F_\mu$ and $\Delta N$ are read from the fitted line
 **Conversions:** Both axes are in newtons, so the units cancel and no conversions are needed.
 **Substitution:** $\mu = \dfrac{5.35\,\text{N} - 0\,\text{N}}{25\,\text{N} - 0\,\text{N}} = 0.214$
 **Answer:** $0.21$, two significant figures, because the friction forces have been measured to two figures and the line is drawn by hand.
@@ -162,9 +162,9 @@ a alas
 akselit -35
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$, so the maximum static friction is $F_\text{max} = \mu_0 mg\cos\alpha$, and it is compared with the component $G_x = mg\sin\alpha$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. Static friction is at most $\mu_0 N$, so the maximum static friction is $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. The component of the weight along the slope is $G_x = mg\sin\alpha$, and the difference asked is $G_x - F_\text{max} = mg\sin\alpha - \mu_0 mg\cos\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
-**Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
+**Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$
 **Answer:** the component exceeds the maximum static friction by $56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$, two significant figures like the coefficient of friction $0.60$. The maximum static friction $48\,\text{N}$ is smaller than the component $56\,\text{N}$, so the box does not stay in place but starts to slide. The difference is positive, so the friction is not enough.
 **Reasonableness:** The same conclusion follows from the angle: $\tan 35^\circ = 0.70$ is greater than $\mu_0 = 0.60$, so the plank is steeper than the limiting angle $\tan^{-1} 0.60 \approx 31^\circ$.
 
@@ -185,7 +185,7 @@ F_mu 175 oikea
 a oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $F_\mu = ma$. The condition $F_\mu \le \mu_0 N$ gives $ma \le \mu_0 mg$, so $\mu_0 \ge \dfrac{a}{g}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $F_\mu = ma$. Static friction is at most $\mu_0 N$, so $F_\mu \le \mu_0 N$ gives $ma \le \mu_0 mg$ and $\mu_0 \ge \dfrac{a}{g}$
 **Conversions:** The accelerations are in $\text{m/s}^2$, so no conversions are needed, and the mass cancels.
 **Substitution:** $\mu_0 = \dfrac{3.5\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.357$
 **Answer:** at least $0.36$, two significant figures like the acceleration $3.5\,\text{m/s}^2$. The calculated limit $0.357$ is rounded up, because an "at least" value is rounded to the safe side.
@@ -208,7 +208,7 @@ a alas
 akselit -20
 komponentit G
 ```
-**Formula:** $y$: $N = mg\cos\alpha$ and $x$: $mg\sin\alpha + \mu mg\cos\alpha = ma$, so $a = g(\sin\alpha + \mu\cos\alpha)$. From the equation of motion $v^2 = v_0^2 - 2as$ and the condition $v = 0$ we get $s = \dfrac{v_0^2}{2a}$, where $a = g(\sin\alpha + \mu\cos\alpha)$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, with $a$ the magnitude of the deceleration. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha + F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$, so $a = g(\sin\alpha + \mu\cos\alpha)$. The equation of motion $v^2 = v_0^2 - 2as$ with the condition $v = 0$ gives $s = \dfrac{v_0^2}{2a}$, where $a = g(\sin\alpha + \mu\cos\alpha)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $$\begin{aligned} &a \\ &= 9.81\,\text{m/s}^2\cdot(\sin 20^\circ \\ &+ 0.25\cdot\cos 20^\circ) \\ &= 5.660\,\text{m/s}^2 \end{aligned}$$ and $s = \dfrac{(3.0\,\text{m/s})^2}{2\cdot 5.660\,\text{m/s}^2} = 0.795\,\text{m}$
 **Answer:** $0.80\,\text{m}$, two significant figures like the velocity $3.0\,\text{m/s}$ and the coefficient of friction $0.25$.
@@ -230,7 +230,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$ and $\mu = \tan\alpha - \dfrac{a_\text{Earth}}{g\cos\alpha}$. Because the expression in the parentheses is the same in both places, $a_\text{Moon} = a_\text{Earth}\cdot\dfrac{g_\text{Moon}}{g}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$, so $a = g(\sin\alpha - \mu\cos\alpha)$. On Earth this gives $\mu = \tan\alpha - \dfrac{a_\text{Earth}}{g\cos\alpha}$. On the Moon the same law gives $a_\text{Moon} = g_\text{Moon}(\sin\alpha - \mu\cos\alpha)$. Because the expression in the parentheses is the same in both places, $a_\text{Moon} = a_\text{Earth}\cdot\dfrac{g_\text{Moon}}{g}$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $\mu = \tan 30^\circ - \dfrac{2.0\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 30^\circ} = 0.577 - 0.235 = 0.342$, and $$\begin{aligned} &a_\text{Moon} \\ &= 1.62\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0.342\cdot\cos 30^\circ) \\ &= 0.330\,\text{m/s}^2 \end{aligned}$$. Directly from the ratio: $2.0\,\text{m/s}^2\cdot\dfrac{1.62}{9.81} = 0.330\,\text{m/s}^2$
 **Answer:** $0.33\,\text{m/s}^2$, two significant figures like the acceleration on Earth $2.0\,\text{m/s}^2$.
@@ -261,7 +261,7 @@ F_mu 220,7 vasen
 a 0
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $F - \mu_0 N = 0$, so $F = \mu_0 mg$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, and in the limiting case $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $F - F_{\mu 0} = 0$, and maximum static friction is $\mu_0 N$, so $F = \mu_0 N = \mu_0 mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F = 0.45\cdot 50\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 220.7\,\text{N}$
 **Answer:** at least $2.3\cdot 10^2\,\text{N}$ or $230\,\text{N}$, two significant figures like the coefficient of friction $0.45$ and the mass $50\,\text{kg}$. The calculated limit $220.7\,\text{N}$ is rounded up, because an "at least" value is rounded to the safe side: $220\,\text{N}$ would not yet be enough. With a force below the limit the box stays in place.
@@ -285,7 +285,7 @@ The claim $N > G$ is wrong, because friction does not press the body against the
 **Reading the graph:** First calculate the normal forces: $N = mg$ gives the values $1.96\,\text{N}$, $3.92\,\text{N}$, $5.89\,\text{N}$, $7.85\,\text{N}$ and $9.81\,\text{N}$. Draw the points $(N, F_\mu)$ and fit to them a straight line through the origin that passes as close as possible to all the points.
 
 Read a distant point from the line: at the normal force $N = 9.81\,\text{N}$ the value of the line is about $F_\mu = 4.1\,\text{N}$.
-**Formula:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, when $\Delta F_\mu$ and $\Delta N$ are read from the fitted line
+**Formula:** For a constant velocity $F = F_\mu$, and $N = mg$. Sliding friction is $F_\mu = \mu N$, so the slope of the $(N, F_\mu)$ line is $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, when $\Delta F_\mu$ and $\Delta N$ are read from the fitted line
 **Conversions:** Both axes are in newtons, so the units cancel. The masses are in kilograms, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{4.1\,\text{N} - 0\,\text{N}}{9.81\,\text{N} - 0\,\text{N}} = 0.418$
 **Answer:** $0.42$, two significant figures, because the pulls were measured to three figures but the line is drawn by hand.
@@ -298,7 +298,7 @@ Read a distant point from the line: at the normal force $N = 9.81\,\text{N}$ the
 
 At a constant velocity the sum of the forces is zero, so the pull is equal to the sliding friction $\mu N$. On a horizontal table $N = mg$.
 **Reading the graph:** The pull increases linearly up to the moment $t = 2.5\,\text{s}$, where the peak of the graph is $3.3\,\text{N}$. After the peak the pull drops and stays almost constant, about $2.2\,\text{N}$, while the block moves at a constant velocity. The sum of the constant-pull readings is $2.2\,\text{N} + 2.1\,\text{N} + 2.2\,\text{N} = 6.5\,\text{N}$, so their mean is $6.5\,\text{N} : 3 = 2.17\,\text{N}$.
-**Formula:** $N = mg$, $\mu_0 = \dfrac{F_{\text{peak}}}{N}$ and $\mu = \dfrac{F_{\text{steady}}}{N}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, $y$: $N - mg = 0$, so $N = mg$. At the peak the pull equals the maximum static friction $\mu_0 N$, so $\mu_0 = \dfrac{F_{\text{peak}}}{N}$. At constant velocity $a = 0$ and the pull equals sliding friction $\mu N$, so $\mu = \dfrac{F_{\text{steady}}}{N}$
 **Conversions:** The mass is in kilograms and the forces in newtons, so no conversions are needed.
 **Substitution:** $N = 0.75\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 7.36\,\text{N}$, $\mu_0 = \dfrac{3.3\,\text{N}}{7.36\,\text{N}} = 0.449$ and $\mu = \dfrac{2.17\,\text{N}}{7.36\,\text{N}} = 0.295$
 **Answer:** the coefficient of sliding friction is $\mu = 0.29$ and the coefficient of static friction $\mu_0 = 0.45$, two significant figures like the mass $0.75\,\text{kg}$ and the force readings.
@@ -310,7 +310,7 @@ At a constant velocity the sum of the forces is zero, so the pull is equal to th
 **Principle:** As the board tilts, the component of the weight along the slope $G_x = mg\sin\alpha$ increases, and the static friction increases with it. The block starts to slide when the component exceeds the maximum static friction $\mu_0 N$.
 
 In the perpendicular direction the block does not accelerate, so $N = mg\cos\alpha$. At the limiting angle $\alpha_0$, $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. The mass cancels, and dividing both sides gives $\mu_0 = \tan\alpha_0$.
-**Formula:** $\mu_0 = \tan\alpha_0$, where $\alpha_0$ is the mean of the measurements
+**Formula:** At the limit angle $\Sigma\overline{F} = \overline{0}$. $x$: $mg\sin\alpha_0 = \mu_0 N$ and $y$: $N = mg\cos\alpha_0$, so $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$. The mass cancels and $\mu_0 = \dfrac{\sin\alpha_0}{\cos\alpha_0} = \tan\alpha_0$, where $\alpha_0$ is the mean of the measurements
 **Conversions:** The angles are in degrees, so no conversions are needed. The calculator must be in degree mode.
 **Substitution:** The sum of the angles is $$\begin{aligned} &24^\circ + 26^\circ \\ &+ 25^\circ + 27^\circ + 25^\circ \\ &= 127^\circ \end{aligned}$$, so the mean is $\alpha_{0,\text{mean}} = 127^\circ : 5 = 25.4^\circ$ and $\mu_0 = \tan 25.4^\circ = 0.4748$
 **Answer:** $0.47$, two significant figures, as the precision of the mean of the angles gives.
@@ -337,7 +337,7 @@ a ylös
 akselit -6
 komponentit G
 ```
-**Formula:** on a horizontal road $N = mg$ and $\mu mg = ma$, so $a = \mu g$. Downhill $x$: $\mu mg\cos\alpha - mg\sin\alpha = ma$, so $a = g(\mu\cos\alpha - \sin\alpha)$. The distance is $s = \dfrac{v_0^2}{2a}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, with $a$ the magnitude of the deceleration. On a horizontal road $y$: $N - mg = 0$, so $N = mg$, and $x$: $F_\mu = ma$ with $F_\mu = \mu N = \mu mg$, so $\mu mg = ma$ and $a = \mu g$. Downhill $y$: $N = mg\cos\alpha$, and $x$ (up the slope positive): $F_\mu - mg\sin\alpha = ma$ with $F_\mu = \mu mg\cos\alpha$, so $\mu mg\cos\alpha - mg\sin\alpha = ma$ and $a = g(\mu\cos\alpha - \sin\alpha)$. The equation of motion $v^2 = v_0^2 - 2as$ with $v = 0$ gives the distance $s = \dfrac{v_0^2}{2a}$
 **Conversions:** $v_0 = 80\,\text{km/h} = 80 : 3.6\,\text{m/s} = 22.22\,\text{m/s}$, and $v_0^2 = 493.8\,\text{m}^2/\text{s}^2$.
 **Substitution:** Part a): $a_a = 0.75\cdot 9.81\,\text{m/s}^2 = 7.358\,\text{m/s}^2$ and $s_a = \dfrac{493.8\,\text{m}^2/\text{s}^2}{2\cdot 7.358\,\text{m/s}^2} = 33.6\,\text{m}$. Parts b) and c):
 ```latex
@@ -373,7 +373,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$. The distance is $s = \tfrac{1}{2}at^2$, because the initial velocity is zero
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$, so $a = g(\sin\alpha - \mu\cos\alpha)$. The distance is $s = v_0 t + \tfrac{1}{2}at^2$, and because the initial velocity is zero, $s = \tfrac{1}{2}at^2$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $$\begin{aligned} &a \\ &= 9.81\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0.35\cdot\cos 30^\circ) \\ &= 1.931\,\text{m/s}^2 \end{aligned}$$ and
 ```latex
@@ -439,7 +439,7 @@ v oikea
 a 0
 akselit 0
 ```
-**Formula:** $x$: $F - \mu N = 0$ and $y$: $N - mg = 0$, so $F = \mu m g$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$, and at constant velocity $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $F - F_\mu = 0$, and $F_\mu = \mu N$, so $F = \mu m g$
 **Conversions:** The mass is in kilograms and the coefficient of friction has no unit, so no conversions are needed.
 **Substitution:** $F = 0.014 \cdot 45\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.014 \cdot 441.5\,\text{N} = 6.18\,\text{N}$
 **Answer:** $6.2\,\text{N}$, two significant figures, like the coefficient $0.014$. The coefficient $0.014$ is from the MAFY table (*Kitkakertoimia*, steel–ice, coefficient of sliding friction); the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
@@ -460,7 +460,7 @@ a vasen
 akselit 0
 ```
 **Reading the graph:** A line is drawn through the origin so that it passes as close as possible to all the points. Its slope is about $0.214$. The normal force is $N = mg = 7.85\,\text{N}$, which lies between the measurement points at $5\,\text{N}$ and $10\,\text{N}$. At $N = 7.85\,\text{N}$ the line gives the friction force $F_\mu \approx 1.68\,\text{N}$.
-**Formula:** $y$: $N - mg = 0$, so $N = mg$. $x$: $-F_\mu = ma_x$, so $a_x = -\dfrac{F_\mu}{m}$ and the magnitude of the deceleration is $a = \dfrac{F_\mu}{m}$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, so $N = mg$. $x$: $-F_\mu = ma_x$, so $a_x = -\dfrac{F_\mu}{m}$ and the magnitude of the deceleration is $a = \dfrac{F_\mu}{m}$
 **Conversions:** $N = mg = 0.80\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{N}$. The axes of the graph are in newtons, so no other conversion is needed.
 **Substitution:** $a = \dfrac{1.68\,\text{N}}{0.80\,\text{kg}} = 2.10\,\text{m/s}^2$
 **Answer:** $2.1\,\text{m/s}^2$ against the motion, two significant figures, because the line is drawn by hand and the points have been measured to two figures.

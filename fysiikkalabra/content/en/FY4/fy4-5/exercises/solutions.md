@@ -8,7 +8,7 @@ G 14,715
 T 14,715 ylös
 a 0
 ```
-**Formula:** $T - mg = 0$, so $T = mg$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$. The lamp is at rest, so $a_y = 0$ and $T - mg = 0$, so $T = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $T = 1.5\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 14.715\,\text{N}$
 **Answer:** $14.7\,\text{N} \approx 15\,\text{N}$, two significant figures like the mass $1.5\,\text{kg}$.
@@ -19,7 +19,7 @@ a 0
 **Find:** the magnitude of the net force $\Sigma F$ in $\text{N}$
 **Principle:** The net force is the vector sum of the forces. Calculate the sums of the components separately in each axis direction, with $x$ pointing to the right and $y$ up.
 **Reading the graph:** The lengths of the arrows are read from the squares: $F_1$ is four squares, $F_2$ two and a half squares, and $F_3$ and $F_4$ three squares each. One square is $10\,\text{N}$.
-**Formula:** $\Sigma F_x = F_1 - F_2$ and $\Sigma F_y = F_3 - F_4$. When $\Sigma F_y = 0$, the magnitude of the net force is $\Sigma F = |\Sigma F_x|$
+**Formula:** The net force is the vector sum of the forces, $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2 + \overline{F}_3 + \overline{F}_4$, so in components $\Sigma F_x = F_1 - F_2$ and $\Sigma F_y = F_3 - F_4$. When $\Sigma F_y = 0$, the magnitude of the net force is $\Sigma F = |\Sigma F_x|$
 **Conversions:** The squares are converted to newtons: $4\cdot 10\,\text{N} = 40\,\text{N}$ and $2.5\cdot 10\,\text{N} = 25\,\text{N}$.
 **Substitution:** $\Sigma F_y = 30\,\text{N} - 30\,\text{N} = 0$ and $\Sigma F = 40\,\text{N} - 25\,\text{N} = 15\,\text{N}$
 **Answer:** $15\,\text{N}$ to the right, with two significant figures; the grid is read to the accuracy of half a square, that is $5\,\text{N}$.
@@ -39,7 +39,7 @@ F_mu 4,905 ylös @oikea
 a 0
 akselit 0
 ```
-**Formula:** $y$: $F_\mu - mg = 0$, so $F_\mu = mg$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$. The book is at rest, so $a_y = 0$ and $F_\mu - mg = 0$, so $F_\mu = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\mu = 0.50\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 4.905\,\text{N}$
 **Answer:** $4.9\,\text{N}$, two significant figures like the mass $0.50\,\text{kg}$.
@@ -56,7 +56,7 @@ G 637,65
 N 637,65
 a 0
 ```
-**Formula:** $N - mg = 0$, so $N = mg$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$. The person is at rest, so $a_y = 0$ and $N - mg = 0$, so $N = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $N = 65\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 637.65\,\text{N}$
 **Answer:** $640\,\text{N}$ or $6.4\cdot 10^{2}\,\text{N}$, two significant figures like the mass $65\,\text{kg}$.
@@ -72,7 +72,7 @@ T 250 40
 akselit 0
 komponentit T
 ```
-**Formula:** $T_x = T\cos\alpha$
+**Formula:** The force and its components form a right triangle in which $\cos\alpha = \dfrac{T_x}{T}$, so $T_x = T\cos\alpha$
 **Conversions:** The force is in newtons and the angle in degrees, so no conversions are needed; the calculator is in DEG mode.
 **Substitution:** $T_x = 250\,\text{N}\cdot\cos 40^\circ = 191.5\,\text{N}$
 **Answer:** $190\,\text{N}$ or $1.9\cdot 10^{2}\,\text{N}$, two significant figures, because the angle $40^\circ$ is given with two figures and the force $250\,\text{N}$ is not more precise than that.
@@ -93,7 +93,7 @@ a 0
 akselit 0
 komponentit T
 ```
-**Formula:** $x$: $T\cos\alpha - F_\mu = 0$, so $F_\mu = T\cos\alpha$
+**Formula:** Newton's second law $\Sigma F_x = ma_x$. In uniform motion $a_x = 0$, so $T\cos\alpha - F_\mu = 0$, so $F_\mu = T\cos\alpha$
 **Conversions:** The force is in newtons, so no conversions are needed. The mass is not needed, because friction comes from the horizontal equation.
 **Substitution:** $F_\mu = 60\,\text{N}\cdot\cos 30^\circ = 51.96\,\text{N}$
 **Answer:** $52\,\text{N}$, two significant figures like the force $60\,\text{N}$.
@@ -110,7 +110,7 @@ G 588,6
 N 660,6
 a ylös
 ```
-**Formula:** $N - mg = ma$, so $N = m(g + a)$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$, with $y$ pointing up and the acceleration $a$ upwards, so $N - mg = ma$ and $N = m(g + a)$
 **Conversions:** The mass is in kilograms and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $N = 60\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.2\,\text{m/s}^2) = 60\,\text{kg}\cdot 11.01\,\text{m/s}^2 = 660.6\,\text{N}$
 **Answer:** $660\,\text{N}$ or $6.6\cdot 10^{2}\,\text{N}$, two significant figures like the mass $60\,\text{kg}$ and the acceleration $1.2\,\text{m/s}^2$.
@@ -131,7 +131,7 @@ a oikea
 akselit 0
 komponentit F
 ```
-**Formula:** $x$: $F\cos\alpha - F_\mu = ma$, so $a = \dfrac{F\cos\alpha - F_\mu}{m}$
+**Formula:** Newton's second law $\Sigma F_x = ma$, so $F\cos\alpha - F_\mu = ma$ and $a = \dfrac{F\cos\alpha - F_\mu}{m}$
 **Conversions:** The forces are in newtons and the mass in kilograms, so the result comes directly in $\text{m/s}^2$.
 **Substitution:** $a = \dfrac{120\,\text{N}\cdot\cos 30^\circ - 80\,\text{N}}{40\,\text{kg}} = \dfrac{103.9\,\text{N} - 80\,\text{N}}{40\,\text{kg}} = 0.598\,\text{m/s}^2$
 **Answer:** $0.60\,\text{m/s}^2$, two significant figures like the data.
@@ -148,9 +148,9 @@ F_2 40 90
 a 53,13
 akselit 0
 ```
-**Formula:** $\Sigma F_x = F_1$ and $\Sigma F_y = F_2$, so $\Sigma F = \sqrt{F_1^2 + F_2^2}$. From Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m}$
+**Formula:** Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m}$. The forces are perpendicular, so $\Sigma F_x = F_1$ and $\Sigma F_y = F_2$ and $\Sigma F = \sqrt{F_1^2 + F_2^2}$. Thus $a = \dfrac{\sqrt{F_1^2 + F_2^2}}{m}$
 **Conversions:** The forces are in newtons and the mass in kilograms, so no conversions are needed.
-**Substitution:** $\Sigma F = \sqrt{(30\,\text{N})^2 + (40\,\text{N})^2} = 50\,\text{N}$ and $a = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1.0\,\text{m/s}^2$
+**Substitution:** $a = \dfrac{\sqrt{(30\,\text{N})^2 + (40\,\text{N})^2}}{50\,\text{kg}} = \dfrac{50\,\text{N}}{50\,\text{kg}} = 1.0\,\text{m/s}^2$
 **Answer:** $1.0\,\text{m/s}^2$, two significant figures like the forces $30\,\text{N}$ and $40\,\text{N}$.
 **Reasonableness:** The net force $50\,\text{N}$ is larger than either force but smaller than their sum $70\,\text{N}$, because the forces point in different directions. The acceleration points between the forces, closer to the larger force.
 
@@ -166,7 +166,7 @@ N 581,7
 v ylös
 a alas
 ```
-**Formula:** $N - mg = m a_y$, so $N = m(g + a_y)$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$, so $N - mg = m a_y$ and $N = m(g + a_y)$
 **Conversions:** The mass is in kilograms and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 70\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 581.7\,\text{N}$
 **Answer:** $580\,\text{N}$ or $5.8\cdot 10^{2}\,\text{N}$, two significant figures like the mass $70\,\text{kg}$ and the acceleration $1.5\,\text{m/s}^2$.
@@ -185,7 +185,7 @@ F_mu 1,9 vasen
 v oikea
 a vasen
 ```
-**Formula:** $a_x = \dfrac{v - v_0}{\Delta t}$ and $x$: $-F_\mu = m a_x$, so $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
+**Formula:** Newton's second law $\Sigma F_x = ma_x$ and the acceleration $a_x = \dfrac{v - v_0}{\Delta t}$. The only horizontal force is friction, so $-F_\mu = m a_x = \dfrac{m(v - v_0)}{\Delta t}$ and $F_\mu = \dfrac{m(v_0 - v)}{\Delta t}$
 **Conversions:** The mass is in kilograms, the velocities in $\text{m/s}$ and the time in seconds, so no conversions are needed.
 **Substitution:** $F_\mu = \dfrac{19\,\text{kg}\cdot(2.0\,\text{m/s} - 0)}{20\,\text{s}} = 19\,\text{kg}\cdot 0.10\,\text{m/s}^2 = 1.9\,\text{N}$
 **Answer:** $1.9\,\text{N}$, two significant figures like the mass, the velocity and the time.
@@ -203,7 +203,7 @@ G 0,03924
 N 0,06076 @ylä
 a 0
 ```
-**Formula:** $F_\text{b} - mg - N = 0$, so $N = F_\text{b} - mg$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$. The balloon is at rest, so $a_y = 0$ and $F_\text{b} - mg - N = 0$, so $N = F_\text{b} - mg$
 **Conversions:** $m = 4.0\,\text{g} = 4.0 \cdot 0.001\,\text{kg} = 0.0040\,\text{kg}$
 **Substitution:** $N = 0.10\,\text{N} - 0.0040\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.10\,\text{N} - 0.03924\,\text{N} = 0.06076\,\text{N}$
 **Answer:** $0.061\,\text{N} \approx 0.06\,\text{N}$. The normal force is a difference, and in a difference the number of decimals decides: the buoyancy $0.10\,\text{N}$ is known to a hundredth of a newton.
@@ -235,7 +235,7 @@ F_mu 150 vasen
 a oikea
 akselit 0
 ```
-**Formula:** $\Sigma F_x = F_1 + F_2 - F_\mu$
+**Formula:** The net force is the vector sum of the forces, $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2 + \overline{F}_\mu$. When $x$ points in the direction of the push, $\Sigma F_x = F_1 + F_2 - F_\mu$
 **Conversions:** All forces are in newtons, so no conversions are needed.
 **Substitution:** $\Sigma F_x = 120\,\text{N} + 85\,\text{N} - 150\,\text{N} = 55\,\text{N}$
 **Answer:** $55\,\text{N}$ in the direction of the pushing, two significant figures like the given forces.
@@ -274,7 +274,7 @@ akselit 0
 komponentit F_B
 ```
 **Reading the graph:** The forces $F_\text{A}$ and $F_\text{C}$ of each measurement are read from the table. The reading of sensor B is also taken for comparison.
-**Formula:** $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ and $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$, so $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
+**Formula:** Newton's second law $\Sigma F = ma$ and at rest $a = 0$, so $x$: $F_\text{B}\cos\alpha - F_\text{A} = 0$ and $y$: $F_\text{B}\sin\alpha - F_\text{C} = 0$. Thus $F_\text{B}\cos\alpha = F_\text{A}$ and $F_\text{B}\sin\alpha = F_\text{C}$, and dividing side by side $\tan\alpha = \dfrac{F_\text{C}}{F_\text{A}}$, so $\alpha = \arctan\dfrac{F_\text{C}}{F_\text{A}}$
 **Conversions:** The forces are in newtons and the angle is calculated in degrees, so no conversions are needed; the calculator is in DEG mode.
 **Substitution:** The angles are
 ```latex
@@ -309,7 +309,7 @@ F_mu 30 vasen
 v oikea
 a vasen
 ```
-**Formula:** $x$: $-F_\mu = m a_x$, so $a_x = -\dfrac{F_\mu}{m}$ and the magnitude of the acceleration is $a = \dfrac{F_\mu}{m}$
+**Formula:** Newton's second law $\Sigma F_x = ma_x$. The only horizontal force is friction, so $-F_\mu = m a_x$ and $a_x = -\dfrac{F_\mu}{m}$, and the magnitude of the acceleration is $a = \dfrac{F_\mu}{m}$
 **Conversions:** The force is in newtons and the mass in kilograms, so the result comes directly in $\text{m/s}^2$.
 **Substitution:** $a = \dfrac{30\,\text{N}}{12\,\text{kg}} = 2.5\,\text{m/s}^2$
 **Answer:** a) An extra force that has no cause was included in the free-body diagram. b) $a = 2.5\,\text{m/s}^2$ to the left, that is, against the motion, two significant figures like the given values. The box slows down.
@@ -331,7 +331,7 @@ akselit 0
 komponentit F_2
 ```
 **Reading the graph:** The row $\varphi = 60\,{}^\circ$ is read from the table: $F_3 = 12.3\,\text{N}$.
-**Formula:** $\Sigma F_x = F_1 + F_2\cos\varphi$ and $\Sigma F_y = F_2\sin\varphi$, so $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
+**Formula:** The net force is the vector sum of the forces, $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2$, so in components $\Sigma F_x = F_1 + F_2\cos\varphi$ and $\Sigma F_y = F_2\sin\varphi$. The magnitude is $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$
 **Conversions:** The forces are in newtons and the angle in degrees, so no conversions are needed.
 **Substitution:** First the components:
 ```latex
@@ -368,7 +368,7 @@ akselit 0
 komponentit T
 ```
 **Reading the graph:** The velocity grows by about the same amount every second: the changes of consecutive seconds are $0.78$, $0.85$, $0.75$, $0.84$ and $0.79\,\text{m/s}$. The acceleration is therefore approximately constant, and it is obtained from the change over the whole interval, $\Delta v = 4.01\,\text{m/s} - 0 = 4.01\,\text{m/s}$ and $\Delta t = 5.0\,\text{s}$.
-**Formula:** $a = \dfrac{\Delta v}{\Delta t}$, $x$: $T\cos\alpha - F_\mu = ma$ and $y$: $N + T\sin\alpha - mg = 0$, so $F_\mu = T\cos\alpha - ma$ and $N = mg - T\sin\alpha$
+**Formula:** Newton's second law $\Sigma F = ma$ in components: $x$: $T\cos\alpha - F_\mu = ma$ and $y$: $N + T\sin\alpha - mg = 0$, because there is no vertical acceleration. The acceleration is $a = \dfrac{\Delta v}{\Delta t}$. Thus $F_\mu = T\cos\alpha - ma$ and $N = mg - T\sin\alpha$
 **Conversions:** All quantities are in SI units, and $\text{N} / \text{kg} = \text{m/s}^2$.
 **Substitution:** The acceleration is $a = \dfrac{4.01\,\text{m/s}}{5.0\,\text{s}} = 0.802\,\text{m/s}^2$. The friction force:
 ```latex
@@ -412,7 +412,7 @@ a ylös
 **Reading the graph:** The readings of the table are divided into phases according to the moments $2.0\,\text{s}$ and $6.0\,\text{s}$. The sum of the readings of phase 1 is $$\begin{aligned} &881\,\text{N} + 878\,\text{N} + 883\,\text{N} \\ &= 2642\,\text{N} \end{aligned}$$, so the mean is $880.7\,\text{N}$.
 
 In phase 2 the sum is $2354\,\text{N}$ and the mean $784.7\,\text{N}$, and in phase 3 the sum is $2069\,\text{N}$ and the mean $689.7\,\text{N}$.
-**Formula:** $T - mg = m a_y$, so $a_y = \dfrac{T - mg}{m}$. The greatest velocity is $v_\text{max} = a_1 \Delta t_1$, and the distances are $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ and $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, because in the third phase the velocity decreases uniformly to zero. The height is $h = h_1 + h_2 + h_3$
+**Formula:** Newton's second law $\Sigma F_y = ma_y$, so $T - mg = m a_y$, so $a_y = \dfrac{T - mg}{m}$. The greatest velocity is $v_\text{max} = a_1 \Delta t_1$, and the distances are $h_1 = \tfrac12 a_1 \Delta t_1^2$, $h_2 = v_\text{max}\,\Delta t_2$ and $h_3 = \tfrac12 v_\text{max}\,\Delta t_3$, because in the third phase the velocity decreases uniformly to zero. The height is $h = h_1 + h_2 + h_3$
 **Conversions:** The forces are in newtons, the mass in kilograms and the times in seconds, so no conversions are needed. The weight is $mg = 80\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 784.8\,\text{N}$.
 **Substitution:** The accelerations:
 ```latex
@@ -473,8 +473,8 @@ F_2 5,657 225
 a 53,13
 akselit 0
 ```
-**Formula:** $\Sigma F_x = F_{1x} + F_{2x}$ and $\Sigma F_y = F_{1y} + F_{2y}$, so $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. From Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m}$
+**Formula:** The net force is the vector sum of the forces, $\Sigma\overline{F} = \overline{F}_1 + \overline{F}_2$, so $\Sigma F_x = F_{1x} + F_{2x}$ and $\Sigma F_y = F_{1y} + F_{2y}$ and $\Sigma F = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$. From Newton's second law $\Sigma F = ma$, so $a = \dfrac{\Sigma F}{m} = \dfrac{\sqrt{(F_{1x} + F_{2x})^2 + (F_{1y} + F_{2y})^2}}{m}$
 **Conversions:** The squares are converted to newtons: $5\cdot 2.0\,\text{N} = 10\,\text{N}$, $6\cdot 2.0\,\text{N} = 12\,\text{N}$ and $2\cdot 2.0\,\text{N} = 4.0\,\text{N}$.
-**Substitution:** $\Sigma F_x = 10\,\text{N} - 4.0\,\text{N} = 6.0\,\text{N}$ and $\Sigma F_y = 12\,\text{N} - 4.0\,\text{N} = 8.0\,\text{N}$, so $\Sigma F = \sqrt{(6.0\,\text{N})^2 + (8.0\,\text{N})^2} = 10\,\text{N}$ and $a = \dfrac{10\,\text{N}}{2.5\,\text{kg}} = 4.0\,\text{m/s}^2$
+**Substitution:** $a = \dfrac{\sqrt{(10\,\text{N} - 4.0\,\text{N})^2 + (12\,\text{N} - 4.0\,\text{N})^2}}{2.5\,\text{kg}} = \dfrac{\sqrt{(6.0\,\text{N})^2 + (8.0\,\text{N})^2}}{2.5\,\text{kg}} = \dfrac{10\,\text{N}}{2.5\,\text{kg}} = 4.0\,\text{m/s}^2$
 **Answer:** $4.0\,\text{m/s}^2$, two significant figures like the mass $2.5\,\text{kg}$ and the value of a square, $2.0\,\text{N}$. The acceleration points in the direction of the net force, $53^\circ$ from the $x$ axis towards $+y$.
 **Reasonableness:** The net force $10\,\text{N}$ is smaller than the sum of the magnitudes $15.6\,\text{N} + 5.7\,\text{N} = 21.3\,\text{N}$, because $\overline{F}_2$ pulls partly the opposite way. Estimate: $10\,\text{N} : 2.5\,\text{kg} = 4.0\,\text{m/s}^2$, and $6.0\,\text{N}$ and $8.0\,\text{N}$ form a triangle with hypotenuse $10\,\text{N}$.

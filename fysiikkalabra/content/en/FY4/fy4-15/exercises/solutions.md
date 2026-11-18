@@ -2,7 +2,7 @@
 **Given:** head $h = 15.0\,\text{m}$, flow rate $Q = 120\,\text{m}^3\text{/s}$, efficiency $\eta = 0.900$; density of water $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the electric power $P$ in $\text{MW}$
 **Principle:** The water falling through the turbines loses potential energy $mgh$, and the mass $\rho Q$ falls every second. The plant converts the fraction $\eta$ of this power into electricity, so we use the formula for the power of a hydropower plant.
-**Formula:** $P = \eta\rho Q g h$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ and $\eta = \dfrac{P}{P_\text{o}}$, so $P = \eta P_\text{o} = \eta\rho Q g h$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Substitution:** $$\begin{aligned} &P \\ &= 0.900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 15.0\,\text{m} \\ &= 15\,892\,200\,\text{W} \\ &\approx 15.9\,\text{MW} \end{aligned}$$
 **Answer:** $15.9\,\text{MW}$, three significant figures like the head $15.0\,\text{m}$, the flow rate $120\,\text{m}^3\text{/s}$ and the efficiency $0.900$.
@@ -32,7 +32,7 @@
 **Given:** area swept by the rotor $A = 1500\,\text{m}^2$, wind speed $v = 8.0\,\text{m/s}$, density of air $\rho = 1.25\,\text{kg/m}^3$
 **Find:** the power of the wind $P_\text{wind}$ in $\text{kW}$
 **Principle:** In time $t$ the undisturbed wind would carry a cylinder of air through the swept area, with mass $m = \rho A v t$ and kinetic energy $\tfrac{1}{2}mv^2$. The power of the wind is this kinetic energy divided by the time. The efficiency is not needed, because we are asked for the power of the wind, not the electric power.
-**Formula:** $P_\text{wind} = \dfrac{\tfrac{1}{2}mv^2}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, so $P_\text{wind} = \tfrac{1}{2}\rho A v^3$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$ and $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t}$, so $P_{\text{wind}} = \tfrac{1}{2}\rho A v^3$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $$\begin{aligned} &P_\text{wind} \\ &= \tfrac{1}{2} \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\text{m}^2 \\ &\cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 480\,000\,\text{W} \\ &= 480\,\text{kW} \end{aligned}$$
 **Answer:** $480\,\text{kW}$ or $4.8 \cdot 10^{2}\,\text{kW}$, two significant figures like the wind speed $8.0\,\text{m/s}$.
@@ -52,7 +52,7 @@
 **Given:** electric power $P = 10.0\,\text{MW}$, head $h = 12.0\,\text{m}$, efficiency $\eta = 0.880$; density of water $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the flow rate $Q$ in $\text{m}^3\text{/s}$
 **Principle:** Falling water loses potential energy, and the plant converts the fraction $\eta$ of it into electricity. We solve the flow rate that gives the desired power from the formula for the power of a hydropower plant.
-**Formula:** $P = \eta\rho Q g h$, so $Q = \dfrac{P}{\eta\rho g h}$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ and $\eta = \dfrac{P}{P_\text{o}}$, so $P = \eta P_\text{o} = \eta\rho Q g h$, from which $Q = \dfrac{P}{\eta\rho g h}$
 **Conversions:** $P = 10.0\,\text{MW} = 10.0 \cdot 10^{6}\,\text{W}$
 **Substitution:** The quantities are in SI units, and $\tfrac{\text{W}}{\text{kg/m}^3 \cdot \text{m/s}^2 \cdot \text{m}} = \tfrac{\text{m}^3}{\text{s}}$, so $Q = \dfrac{10.0 \cdot 10^{6}}{0.880 \cdot 1000 \cdot 9.81 \cdot 12.0}\,\tfrac{\text{m}^3}{\text{s}} = 96.53\,\tfrac{\text{m}^3}{\text{s}}$
 **Answer:** $96.5\,\text{m}^3\text{/s}$, three significant figures like the power $10.0\,\text{MW}$, the head $12.0\,\text{m}$ and the efficiency $0.880$.
@@ -62,7 +62,7 @@
 **Given:** rotor diameter $d = 82\,\text{m}$, wind speed $v = 8.0\,\text{m/s}$, electric power $P = 758\,\text{kW}$, density of air $\rho = 1.25\,\text{kg/m}^3$
 **Find:** the fraction converted into electricity, that is the efficiency $\eta$, as a percentage
 **Principle:** The undisturbed wind carries the kinetic energy $\tfrac{1}{2}\rho A v^3$ per second through the area swept by the rotor; this is the reference power of the turbine. The turbine converts the fraction $\eta$ of it into electricity, so the fraction follows from the formula for the power of a wind turbine.
-**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$, so $\eta = \dfrac{2P}{\rho A v^3}$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$, from which $\eta = \dfrac{2P}{\rho A v^3}$
 **Conversions:** The radius is $r = 82\,\text{m} : 2 = 41\,\text{m}$ and $P = 758\,\text{kW} = 758\,000\,\text{W}$.
 **Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $\eta = \dfrac{2 \cdot 758\,000\,\text{W}}{1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281.0\,\text{m}^2 \cdot \left(8.0\,\tfrac{\text{m}}{\text{s}}\right)^3} = 0.4485$
 **Answer:** about $45\,\%$, two significant figures like the diameter $82\,\text{m}$ and the wind speed $8.0\,\text{m/s}$.
@@ -72,7 +72,7 @@
 **Given:** flow rate $Q = 850\,\textsf{l}\text{/s}$, head $h = 6.5\,\text{m}$, efficiency $\eta = 0.75$; density of water $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the electric power $P$ in $\text{kW}$
 **Principle:** The water falling through the turbine loses potential energy, and the mass $\rho Q$ falls every second. The plant converts the fraction $\eta$ of this power into electricity, so we use the formula for the power of a hydropower plant.
-**Formula:** $P = \eta\rho Q g h$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ and $\eta = \dfrac{P}{P_\text{o}}$, so $P = \eta P_\text{o} = \eta\rho Q g h$
 **Conversions:** $850\,\textsf{l} = 850 \cdot 0.001\,\text{m}^3 = 0.850\,\text{m}^3$, so $Q = 0.850\,\text{m}^3\text{/s}$; finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $$\begin{aligned} &P \\ &= 0.75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 0.850\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 6.5\,\text{m} \\ &= 40\,650\,\text{W} \\ &\approx 41\,\text{kW} \end{aligned}$$
 **Answer:** $41\,\text{kW}$, two significant figures like the head $6.5\,\text{m}$ and the efficiency $0.75$.
@@ -82,7 +82,7 @@
 **Given:** head $h = 9.50\,\text{m}$, flow rate $Q = 3.20\,\text{m}^3\text{/s}$, efficiency $\eta = 0.800$, time $t = 24.0\,\text{h}$; density of water $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the electric energy $E$ in $\text{MWh}$
 **Principle:** First we calculate the electric power from the formula for the power of a hydropower plant, because the fraction $\eta$ of the potential energy of the falling water becomes electricity. The power stays constant when the flow rate stays constant, so the energy is power times time.
-**Formula:** $P = \eta\rho Q g h$ and $E = Pt$, so $E = \eta\rho Q g h t$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ and $\eta = \dfrac{P}{P_\text{o}}$, so $P = \eta P_\text{o} = \eta\rho Q g h$, $E = Pt$, so $E = \eta\rho Q g h t$
 **Conversions:** The power is calculated in watts and converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$; the time is kept in hours, so the energy comes out in megawatt-hours.
 **Substitution:** $$\begin{aligned} &P \\ &= 0.800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 3.20\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\ &\cdot 9.50\,\text{m} \\ &= 238\,579\,\text{W} \end{aligned}$$ and $E = 0.238\,579\,\text{MW} \cdot 24.0\,\text{h} = 5.7259\,\text{MWh}$
 **Answer:** $5.73\,\text{MWh}$, three significant figures like the initial data.
@@ -96,7 +96,7 @@
 When the wind is faster, more air flows through each second in proportion to $v$, and each kilogram has more kinetic energy in proportion to $v^2$.
 
 So the power is proportional to the cube $v^3$, when $\eta$, $\rho$ and $A$ stay the same.
-**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$, so $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, so $x = \dfrac{P_2}{P_1} = \dfrac{\tfrac{1}{2}\eta\rho A v_2^3}{\tfrac{1}{2}\eta\rho A v_1^3} = \left(\dfrac{v_2}{v_1}\right)^3$
 **Conversions:** Both speeds are in the same unit, so the unit cancels and no conversions are needed.
 **Substitution:** $x = \left(\dfrac{9.0\,\text{m/s}}{6.0\,\text{m/s}}\right)^3 = 1.5^3 = 3.375$
 **Answer:** about $3.4$ times as large, two significant figures like the wind speeds $6.0\,\text{m/s}$ and $9.0\,\text{m/s}$.
@@ -108,7 +108,7 @@ So the power is proportional to the cube $v^3$, when $\eta$, $\rho$ and $A$ stay
 **Principle:** At the same wind speed, the undisturbed wind carries a cylinder of air through the swept area of each rotor every second, and its mass is proportional to the area swept by the rotor, $A = \pi r^2$.
 
 Each kilogram of air has the same kinetic energy, so the power is proportional to the area and therefore to the square of the diameter.
-**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi\left(\tfrac{d}{2}\right)^2$, so $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi\left(\tfrac{d}{2}\right)^2$, so $x = \dfrac{P_2}{P_1} = \dfrac{A_2}{A_1} = \left(\dfrac{d_2}{d_1}\right)^2$
 **Conversions:** The diameters are in the same unit, so the unit cancels and no conversions are needed.
 **Substitution:** $x = \left(\dfrac{162\,\text{m}}{82\,\text{m}}\right)^2 = 1.9756^2 = 3.903$
 **Answer:** about $3.9$ times as large, two significant figures like the diameter $82\,\text{m}$.
@@ -137,7 +137,7 @@ The other explanations do not hold: according to the task the flow rate is the s
 **Given:** flow rate $Q = 35.0\,\text{m}^3\text{/s}$, head $h = 8.50\,\text{m}$; density of water $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the power brought by the water $P_\text{o}$ in $\text{MW}$
 **Principle:** The water mass $\rho Q$ falls through the turbines every second, and every kilogram loses potential energy $gh$. The efficiency is not taken into account, so the power asked for is the rate at which the potential energy decreases.
-**Formula:** $P_\text{o} = \rho Q g h$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$ and $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t}$, so $P_\text{o} = \rho Q g h$
 **Conversions:** The quantities are in SI units, so the power comes out in watts; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Substitution:** $$\begin{aligned} &P_\text{o} \\ &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35.0\,\tfrac{\text{m}^3}{\text{s}} \\ &\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 8.50\,\text{m} \\ &= 2\,918\,475\,\text{W} \\ &\approx 2.92\,\text{MW} \end{aligned}$$
 **Answer:** $2.92\,\text{MW}$, three significant figures like the flow rate $35.0\,\text{m}^3\text{/s}$ and the head $8.50\,\text{m}$.
@@ -171,7 +171,7 @@ The other explanations do not hold: according to the task the flow rate is the s
 Since $\eta$, $\rho$ and $h$ are constants, the power is proportional to the flow rate.
 
 Energy is power times time, and every month has the same length, so the energy is obtained by summing the powers of the months and multiplying by the length of one month.
-**Formula:** $P = \eta\rho Q g h$ and $E = Pt$, so $E = \eta\rho g h\,\left(\sum Q\right) t$
+**Formula:** $E_\text{p} = mgh$, $m = \rho V = \rho Q t$, $P_\text{o} = \dfrac{E_\text{p}}{t} = \dfrac{\rho Q t g h}{t} = \rho Q g h$ and $\eta = \dfrac{P}{P_\text{o}}$, so $P = \eta P_\text{o} = \eta\rho Q g h$, $E = Pt$, so $E = \eta\rho g h\,\left(\sum Q\right) t$
 **Conversions:** The length of a month is $t = 30 \cdot 24\,\text{h} = 720\,\text{h}$. The power is calculated in watts and converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$, so the energy comes out in megawatt-hours; finally $1\,\text{GWh} = 1000\,\text{MWh}$.
 **Substitution:** The sum of the flow rates is $$\begin{aligned} &85 + 120 + 45 + 30 \\ &+ 28 + 40 \\ &= 348\,\text{m}^3\text{/s} \end{aligned}$$. The sum of the monthly powers is
 $$\begin{aligned}\textstyle\sum P &= 0.85 \cdot 1000 \cdot 9.81 \cdot 9.0 \cdot 348\,\text{W} \\ &= 26.12\,\text{MW}\end{aligned}$$
@@ -193,7 +193,7 @@ The head and the efficiency stay constant, so they do not explain the variation.
 **Principle:** The mass of air that the undisturbed wind carries through the swept area per second is proportional to the speed $v$, and the kinetic energy of each kilogram of air is proportional to the square of the speed $v^2$.
 
 The power of the wind is therefore proportional to the cube of the speed $v^3$. The student used the speed to the first power.
-**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$
 **Conversions:** The radius is $r = 60\,\text{m} : 2 = 30\,\text{m}$. The area is $A = \pi \cdot (30\,\text{m})^2 = 2827\,\text{m}^2$, as in the student's solution. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** The correct power is
 $$\begin{aligned}P &= 0.5 \cdot 0.40 \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \\ &\quad \cdot 2827\,\text{m}^2 \cdot \left(7.0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 242\,452\,\text{W}\end{aligned}$$
@@ -207,7 +207,7 @@ The error can be noticed from the units: $\tfrac{\text{kg}}{\text{m}^3} \cdot \t
 **Given:** table: speeds $v = 4$–$9\,\text{m/s}$ and powers $P = 80$–$905\,\text{kW}$ (example data), diameter $d = 80\,\text{m}$, density of air $\rho = 1.25\,\text{kg/m}^3$, rated power $2.0\,\text{MW}$
 **Find:** a) whether $P \propto v^3$; b) the efficiency $\eta$ as a percentage; c) the power of the model at a speed of $13\,\text{m/s}$ and its comparison with the rated power
 **Principle:** If the power follows the model $P = k v^3$, the ratio $P/v^3 = k$ is constant. In the formula of a wind turbine, $P = \tfrac{1}{2}\eta\rho A v^3$, the constant is $k = \tfrac{1}{2}\eta\rho A$, so the efficiency is obtained from the constant $k$ when the area of the rotor is known.
-**Formula:** $k = \dfrac{P}{v^3}$ and $k = \tfrac{1}{2}\eta\rho A$, so $\eta = \dfrac{2k}{\rho A}$ and $A = \pi r^2$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, $k = \dfrac{P}{v^3} = \tfrac{1}{2}\eta\rho A$, so $\eta = \dfrac{2k}{\rho A}$ and $A = \pi r^2$
 **Conversions:** The radius is $r = 80\,\text{m} : 2 = 40\,\text{m}$, and $A = \pi \cdot (40\,\text{m})^2 = 5027\,\text{m}^2$. The ratios are calculated in the unit $\text{kW}/(\text{m/s})^3$; the mean is converted to watts, $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** The ratios $P/v^3$ at the speeds $4$–$9\,\text{m/s}$ are $1.250$, $1.240$, $1.273$, $1.239$, $1.270$ and $1.241$ in the unit $\tfrac{\text{kW}}{(\text{m/s})^3}$.
 The sum of the ratios is $7.513$, so the mean is $k_\text{mean} = 7.513 : 6 = 1.252\,\tfrac{\text{kW}}{(\text{m/s})^3} = 1252\,\tfrac{\text{W}}{(\text{m/s})^3}$. The efficiency is
@@ -281,7 +281,7 @@ The result is reasonable. The power of the wind is $P : \eta \approx 4.9\,\text{
 **Given:** rotor diameter $d = 82\,\text{m}$, wind speed $v = 9.0\,\text{m/s}$, efficiency $\eta = 0.45$; from the MAFY table (*Tiheyksiä: Kaasujen tiheyksiä*) the density of air at $0\,{}^\circ\text{C}$ is $\rho = 1.29\,\text{kg/m}^3$
 **Find:** the electric power $P$ in $\text{kW}$
 **Principle:** The undisturbed wind carries the power $\tfrac{1}{2}\rho A v^3$ through the swept area, and the turbine turns the fraction $\eta$ of it into electricity. Cold air is denser than the $1.25\,\text{kg/m}^3$ used in the chapter, so the density from the table is substituted into the formula.
-**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$, so $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
+**Formula:** $m = \rho A v t$, $E_\text{k} = \tfrac{1}{2}mv^2$, $P_{\text{wind}} = \dfrac{E_\text{k}}{t} = \dfrac{\tfrac{1}{2}\rho A v t\, v^2}{t} = \tfrac{1}{2}\rho A v^3$ and $\eta = \dfrac{P}{P_{\text{wind}}}$, so $P = \eta P_{\text{wind}} = \tfrac{1}{2}\eta\rho A v^3$, $A = \pi r^2$, so $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
 **Conversions:** The radius is $r = 82\,\text{m} : 2 = 41\,\text{m}$; finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $$\begin{aligned} &P \\ &= \tfrac{1}{2} \cdot 0.45 \cdot 1.29\,\tfrac{\text{kg}}{\text{m}^3} \\ &\cdot 5281.0\,\text{m}^2 \cdot \left(9.0\,\tfrac{\text{m}}{\text{s}}\right)^3 \\ &= 1\,117\,422\,\text{W} \\ &\approx 1100\,\text{kW} \end{aligned}$$
 **Answer:** $1100\,\text{kW}$, or about $1.1\,\text{MW}$, two significant figures like the efficiency $0.45$ and the wind speed $9.0\,\text{m/s}$.
