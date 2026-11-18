@@ -835,7 +835,7 @@
     "fy6-6"
    ],
    "figure": "fy6-3/lamp-curve",
-   "text": "Pienen hehkulampun ominaiskäyrä on mitattu muuttamalla lampun jännitettä. Kuvaajassa on lampun jännite $U$ virran $I$ funktiona. Lampun suurin sallittu jännite on $3{,}0\\,\\text{V}$. Lamppua halutaan käyttää $4{,}0\\,\\text{V}$:n paristosta.",
+   "text": "Pienen hehkulampun ominaiskäyrä on mitattu muuttamalla lampun jännitettä. Kuvaajassa on lampun jännite $U$ virran $I$ funktiona. Lampun suurin sallittu jännite on $3{,}0\\,\\text{V}$. Lamppua halutaan käyttää $4{,}0\\,\\text{V}$:n paristosta. Pariston sisäinen resistanssi ja johtojen resistanssi jätetään huomiotta.",
    "parts": [
     {
      "id": "a",

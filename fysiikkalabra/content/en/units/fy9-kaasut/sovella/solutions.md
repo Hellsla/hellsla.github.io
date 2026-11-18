@@ -716,18 +716,18 @@ T_2 &= \dfrac{250\,000\,\text{Pa} \cdot 4.0 \cdot 10^{-3}\,\text{m}^3}{0.1026\,\
 &= 1173\,\text{K}
 \end{aligned}
 $$
-**Answer:** $T_2 \approx 1170\,\text{K}$, about $900\,{}^\circ\text{C}$. The answer has three significant figures like the initial temperature $293\,\text{K}$.
+**Answer:** $T_2 \approx 1.2 \cdot 10^{3}\,\text{K}$, about $900\,{}^\circ\text{C}$. The answer has two significant figures like the volumes $1.0\,\textsf{l}$ and $4.0\,\textsf{l}$. The intermediate result $1173\,\text{K}$ is unrounded.
 **Reasonableness:** The volume quadruples at constant pressure, so the kelvin temperature must also quadruple: $T_2 = T_1 \dfrac{V_2}{V_1} = 293.15\,\text{K} \cdot 4.0 = 1173\,\text{K}$. The temperature of the gas rises by about $880\,\text{K}$.
 
 ### d)
 **Find:** whether the heat $Q$ is greater than, equal to or smaller than the work $W$
 **Principle:** Conservation of energy: the change in the internal energy of the gas is the energy transferred to it as heat minus the work done by the gas, $\Delta U = Q - W$, so $Q = \Delta U + W$ (chapter *Internal energy, heat and conservation of energy*). The internal energy of an ideal gas grows when the temperature rises.
-**Model answer:** The temperature of the gas rises from $293\,\text{K}$ to $1170\,\text{K}$, so the mean kinetic energy of its particles and its internal energy increase: $\Delta U > 0$. By conservation of energy $Q = \Delta U + W$. The heat the gas receives is enough both for the work $750\,\text{J}$ and for the increase in internal energy. Therefore $Q$ is greater than $W$. If the temperature stayed constant, $\Delta U = 0$ and $Q = W$, but here the temperature rises.
+**Model answer:** The temperature of the gas rises from $293\,\text{K}$ to $1.2 \cdot 10^{3}\,\text{K}$, so the mean kinetic energy of its particles and its internal energy increase: $\Delta U > 0$. By conservation of energy $Q = \Delta U + W$. The heat the gas receives is enough both for the work $750\,\text{J}$ and for the increase in internal energy. Therefore $Q$ is greater than $W$. If the temperature stayed constant, $\Delta U = 0$ and $Q = W$, but here the temperature rises.
 
 ### Yleisiä virheitä
 - In part a the work is calculated as $pV_2 = 1000\,\text{J}$ or $pV_1$, although the work is the pressure times the change in volume $p\,\Delta V$.
 - In part b $20$ is substituted as the temperature instead of $293\,\text{K}$, or the litres are not converted to cubic metres.
-- In part c the temperature is left in the wrong unit or the answer says that the Celsius temperature quadruples ($80\,{}^\circ\text{C}$).
+- In part c the temperature is not converted from degrees Celsius to kelvins or the answer says that the Celsius temperature quadruples ($80\,{}^\circ\text{C}$).
 - In part d the answer is $Q = W$ without noticing that the temperature and the internal energy of the gas increase.
 
 ### Hyväksytään myös

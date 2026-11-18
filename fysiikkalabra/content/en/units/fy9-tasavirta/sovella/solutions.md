@@ -628,6 +628,7 @@ $$, the same as the power of the battery.
 **Given:** the $30\,\Omega$ resistor is removed; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ and $R_1 = 60\,\Omega$; before, $P_{60} = 0.60\,\text{W}$ and $I = 0.30\,\text{A}$
 **Find:** the new power $P_{60}'$ of the $60\,\Omega$ resistor and the change
 **Principle:** Now the $20\,\Omega$ and $60\,\Omega$ resistors are in series, and the resistance of the circuit is their sum (chapter *Resistors in series and in parallel*). Prediction: the current falls, but the voltage across the $20\,\Omega$ resistor falls with it, so a larger voltage is left for the $60\,\Omega$ resistor and its power grows. Kirchhoff's voltage law gives the voltage and the power is $P = U^2/R$ (chapters *Kirchhoff's laws and potential in a circuit* and *Electric power and the heating of a resistor*).
+**Formula:** $R = R_3 + R_1$, $I = \dfrac{E}{R}$, $U_1 = E - I R_3$ and $P = \dfrac{U_1^2}{R_1}$
 **Model answer:** Without the $30\,\Omega$ resistor the circuit has only $R_3$ and $R_1$ in series. $$
 \begin{aligned}
 R &= 20\,\Omega + 60\,\Omega \\

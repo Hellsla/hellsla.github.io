@@ -847,7 +847,7 @@
         "fy3-6"
       ],
       "figure": "fy3-7/melting-curve",
-      "text": "A piece of ice that has been in a freezer, of mass $0.60\\,\\text{kg}$, is heated steadily. The graph shows the temperature $T$ of the ice as a function of the energy $Q$ transferred. Assume that all the energy transferred goes into the piece of ice and its meltwater. The specific heat capacity of water is $4.18\\,\\text{kJ/(kg}\\cdot\\text{K)}$.",
+      "text": "A piece of ice that has been in a freezer, of mass $0.60\\,\\text{kg}$, is heated steadily. The temperature of the ice at the start is $-16\\,{}^\\circ\\text{C}$. The graph shows the temperature $T$ of the ice as a function of the energy $Q$ transferred. Assume that all the energy transferred goes into the piece of ice and its meltwater. The specific heat capacity of water is $4.18\\,\\text{kJ/(kg}\\cdot\\text{K)}$.",
       "parts": [
         {
           "id": "a",

@@ -1,5 +1,5 @@
 {
-  "intro": "Nine matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. The last problem is an applied source-based problem whose source opens from the link in the problem. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "intro": "Nine matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. One of the problems is an applied source-based problem whose source opens from the link in the problem. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -955,7 +955,7 @@
         "fy3-15"
       ],
       "figure": "fy3-11/pv-isobaari",
-      "text": "Air is sealed in a cylinder whose other end is closed by a light movable piston. A student heats the gas slowly, and the gas expands. The pressure $p$ of the gas as a function of the volume $V$ is plotted in the graph. The temperature of the gas at the start was $20\\,{}^\\circ\\text{C}$. Assume that the gas is an ideal gas and that the amount of gas stays the same.",
+      "text": "Air is sealed in a cylinder whose other end is closed by a movable piston with weights on it. The weights keep the pressure of the gas constant. A student heats the gas slowly, and the gas expands. The pressure $p$ of the gas as a function of the volume $V$ is plotted in the graph. The temperature of the gas at the start was $20\\,{}^\\circ\\text{C}$. Assume that the gas is an ideal gas and that the amount of gas stays the same.",
       "parts": [
         {
           "id": "a",
@@ -1021,7 +1021,7 @@
           "answer": {
             "value": 1172.6,
             "unit": "K",
-            "tolerance": 0.02
+            "tolerance": 0.03
           },
           "criteria": [
             {
@@ -1032,12 +1032,12 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4.0 \\cdot 10^{-3}\\,\\text{m}^3}{0.1026\\,\\text{mol} \\cdot 8.31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1170\\,\\text{K}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4.0 \\cdot 10^{-3}\\,\\text{m}^3}{0.1026\\,\\text{mol} \\cdot 8.31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1.2 \\cdot 10^{3}\\,\\text{K}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "The volume quadrupled at constant pressure, so the kelvin temperature quadruples: $4 \\cdot 293\\,\\text{K} \\approx 1170\\,\\text{K}$, about $900\\,{}^\\circ\\text{C}$."
+              "detail": "The volume quadrupled at constant pressure, so the kelvin temperature quadruples: $4 \\cdot 293\\,\\text{K} \\approx 1.2 \\cdot 10^{3}\\,\\text{K}$, about $900\\,{}^\\circ\\text{C}$."
             }
           ]
         },

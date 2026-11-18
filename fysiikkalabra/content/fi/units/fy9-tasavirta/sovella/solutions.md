@@ -628,6 +628,7 @@ $$, sama kuin pariston teho.
 **Annettu:** $30\,\Omega$:n vastus poistetaan; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ ja $R_1 = 60\,\Omega$; aiemmin $P_{60} = 0{,}60\,\text{W}$ ja $I = 0{,}30\,\text{A}$
 **Kysytty:** $60\,\Omega$:n vastuksen uusi teho $P_{60}'$ ja muutos
 **Periaate:** Nyt $20\,\Omega$:n ja $60\,\Omega$:n vastukset ovat sarjassa, ja piirin resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Ennuste: virta pienenee, mutta $20\,\Omega$:n vastuksen jännite pienenee samalla, joten $60\,\Omega$:n vastukselle jää suurempi jännite ja sen teho kasvaa. Kirchhoffin jännitelaki antaa jännitteen ja teho on $P = U^2/R$ (luvut *Kirchhoffin lait ja potentiaali virtapiirissä* ja *Sähköteho ja vastuksen lämpeneminen*).
+**Kaava:** $R = R_3 + R_1$, $I = \dfrac{E}{R}$, $U_1 = E - I R_3$ ja $P = \dfrac{U_1^2}{R_1}$
 **Mallivastaus:** Kun $30\,\Omega$:n vastus puuttuu, piirissä on vain $R_3$ ja $R_1$ sarjassa. $$
 \begin{aligned}
 R &= 20\,\Omega + 60\,\Omega \\

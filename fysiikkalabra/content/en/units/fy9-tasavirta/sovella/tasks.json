@@ -835,7 +835,7 @@
         "fy6-6"
       ],
       "figure": "fy6-3/lamp-curve",
-      "text": "The characteristic curve of a small filament lamp has been measured by varying the voltage across the lamp. The graph shows the voltage $U$ of the lamp as a function of the current $I$. The largest permitted voltage of the lamp is $3.0\\,\\text{V}$. The lamp is to be used with a $4.0\\,\\text{V}$ battery.",
+      "text": "The characteristic curve of a small filament lamp has been measured by varying the voltage across the lamp. The graph shows the voltage $U$ of the lamp as a function of the current $I$. The largest permitted voltage of the lamp is $3.0\\,\\text{V}$. The lamp is to be used with a $4.0\\,\\text{V}$ battery. The internal resistance of the battery and the resistance of the wires are neglected.",
       "parts": [
         {
           "id": "a",

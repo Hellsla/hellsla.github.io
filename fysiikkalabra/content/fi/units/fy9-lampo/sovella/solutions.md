@@ -392,7 +392,7 @@ $$
 \begin{aligned}
 \dfrac{\Delta T}{\Delta t} &= \dfrac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{180\,\text{s} - 0\,\text{s}} \\
 &= \dfrac{40\,\text{K}}{180\,\text{s}} \\
-&\approx 0.22\,\text{K/s}
+&\approx 0{,}22\,\text{K/s}
 \end{aligned}
 $$
 **Vastaus:** Lämpötila nousee noin $0{,}22\,\text{K/s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
@@ -406,7 +406,7 @@ $$
 **Muunnokset:** Ei tarvita: $1\,\text{W} = 1\,\text{J/s}$, joten $\text{W} \cdot \text{s} = \text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
-c &= \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0.50\,\text{kg} \cdot 40\,\text{K}} \\
+c &= \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0{,}50\,\text{kg} \cdot 40\,\text{K}} \\
 &= \dfrac{18\,000\,\text{J}}{20\,\text{kg} \cdot \text{K}} \\
 &= 900\,\text{J/(kg}\cdot\text{K)}
 \end{aligned}
@@ -427,7 +427,7 @@ $$ Se on mittaustarkkuuden sisällä, joten kappale voi olla alumiinia. Kuvaaja 
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C}$, eli $80\,\text{K}$.
 **Sijoitus:** $$
 \begin{aligned}
-t &= \dfrac{900\,\text{J/(kg}\cdot\text{K)} \cdot 0.50\,\text{kg} \cdot 80\,\text{K}}{100\,\text{W}} \\
+t &= \dfrac{900\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}50\,\text{kg} \cdot 80\,\text{K}}{100\,\text{W}} \\
 &= \dfrac{36\,000\,\text{J}}{100\,\text{W}} \\
 &= 360\,\text{s}
 \end{aligned}
@@ -463,8 +463,8 @@ $$
 **Muunnokset:** $20\,\text{kJ} = 20 \cdot 1000\,\text{J} = 20\,000\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
-c &= \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} \\
-&= \dfrac{20\,000\,\text{J}}{9.6\,\text{kg} \cdot \text{K}} \\
+c &= \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} \\
+&= \dfrac{20\,000\,\text{J}}{9{,}6\,\text{kg} \cdot \text{K}} \\
 &\approx 2083\,\text{J/(kg}\cdot\text{K)}
 \end{aligned}
 $$
@@ -480,7 +480,7 @@ $$
 **Muunnokset:** Ei tarvita, koska vastaus halutaan yksikössä $\text{kJ/kg}$.
 **Sijoitus:** $$
 \begin{aligned}
-s &= \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} \\
+s &= \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} \\
 &\approx 333\,\text{kJ/kg}
 \end{aligned}
 $$
@@ -495,8 +495,8 @@ $$
 **Muunnokset:** Lämpötilan muutos $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,{}^\circ\text{C}$ on $20\,\text{K}$.
 **Sijoitus:** $$
 \begin{aligned}
-Q &= 220\,\text{kJ} + 4.18\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} \cdot 20\,\text{K} \\
-&= 220\,\text{kJ} + 50.2\,\text{kJ} \\
+Q &= 220\,\text{kJ} + 4{,}18\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}60\,\text{kg} \cdot 20\,\text{K} \\
+&= 220\,\text{kJ} + 50{,}2\,\text{kJ} \\
 &\approx 270\,\text{kJ}
 \end{aligned}
 $$
@@ -512,7 +512,7 @@ $$
 **Sijoitus:** $$
 \begin{aligned}
 m_\text{s} &= \dfrac{120\,\text{kJ} - 20\,\text{kJ}}{333\,\text{kJ/kg}} \\
-&\approx 0.30\,\text{kg}
+&\approx 0{,}30\,\text{kg}
 \end{aligned}
 $$
 **Vastaus:** Sulanutta jäätä on noin $0{,}30\,\text{kg}$, puolet massasta; kaksi merkitsevää numeroa. Lämpötila on edelleen $0\,{}^\circ\text{C}$.

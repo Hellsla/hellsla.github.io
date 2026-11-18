@@ -720,18 +720,18 @@ T_2 &= \dfrac{250\,000\,\text{Pa} \cdot 4{,}0 \cdot 10^{-3}\,\text{m}^3}{0{,}102
 &= 1173\,\text{K}
 \end{aligned}
 $$
-**Vastaus:** $T_2 \approx 1170\,\text{K}$ eli noin $900\,{}^\circ\text{C}$. Vastauksessa on kolme merkitsevää numeroa, kuten alkulämpötilassa $293\,\text{K}$.
+**Vastaus:** $T_2 \approx 1{,}2 \cdot 10^{3}\,\text{K}$ eli noin $900\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tilavuuksissa $1{,}0\,\textsf{l}$ ja $4{,}0\,\textsf{l}$. Välitulos $1173\,\text{K}$ on pyöristämätön.
 **Järkevyys:** Tilavuus nelinkertaistuu vakiopaineessa, joten kelvinlämpötilankin on nelinkertaistuttava: $T_2 = T_1 \dfrac{V_2}{V_1} = 293{,}15\,\text{K} \cdot 4{,}0 = 1173\,\text{K}$. Kaasun lämpötila nousee noin $880\,\text{K}$.
 
 ### d)
 **Kysytty:** onko lämpö $Q$ suurempi, yhtä suuri vai pienempi kuin työ $W$
 **Periaate:** Energian säilyminen: kaasun sisäenergian muutos on kaasuun lämpönä siirtynyt energia miinus kaasun tekemä työ, $\Delta U = Q - W$, joten $Q = \Delta U + W$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Ideaalikaasun sisäenergia kasvaa, kun lämpötila nousee.
-**Mallivastaus:** Kaasun lämpötila nousee arvosta $293\,\text{K}$ arvoon $1170\,\text{K}$, joten sen hiukkasten keskimääräinen liike-energia ja sisäenergia kasvavat: $\Delta U > 0$. Energian säilymisen mukaan $Q = \Delta U + W$. Kaasun saama lämpö riittää sekä työhön $750\,\text{J}$ että sisäenergian kasvuun. Siksi $Q$ on suurempi kuin $W$. Jos lämpötila pysyisi vakiona, olisi $\Delta U = 0$ ja $Q = W$, mutta tässä lämpötila nousee.
+**Mallivastaus:** Kaasun lämpötila nousee arvosta $293\,\text{K}$ arvoon $1{,}2 \cdot 10^{3}\,\text{K}$, joten sen hiukkasten keskimääräinen liike-energia ja sisäenergia kasvavat: $\Delta U > 0$. Energian säilymisen mukaan $Q = \Delta U + W$. Kaasun saama lämpö riittää sekä työhön $750\,\text{J}$ että sisäenergian kasvuun. Siksi $Q$ on suurempi kuin $W$. Jos lämpötila pysyisi vakiona, olisi $\Delta U = 0$ ja $Q = W$, mutta tässä lämpötila nousee.
 
 ### Yleisiä virheitä
 - a-kohdassa työksi lasketaan $pV_2 = 1000\,\text{J}$ tai $pV_1$, vaikka työ on paine kertaa tilavuuden muutos $p\,\Delta V$.
 - b-kohdassa lämpötilaksi sijoitetaan $20$ eikä $293\,\text{K}$, tai litrat jätetään muuttamatta kuutiometreiksi.
-- c-kohdassa lämpötila jätetään kelvineiksi tai vastataan, että lämpötila nelinkertaistuu celsiusasteina ($80\,{}^\circ\text{C}$).
+- c-kohdassa lämpötilaa ei muuteta celsiusasteista kelvineiksi tai vastataan, että lämpötila nelinkertaistuu celsiusasteina ($80\,{}^\circ\text{C}$).
 - d-kohdassa vastataan $Q = W$ ajattelematta, että kaasun lämpötila ja sisäenergia kasvavat.
 
 ### Hyväksytään myös

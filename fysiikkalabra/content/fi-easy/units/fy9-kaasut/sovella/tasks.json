@@ -1,5 +1,5 @@
 {
-  "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Yksi tehtävistä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -955,7 +955,7 @@
         "fy3-15"
       ],
       "figure": "fy3-11/pv-isobaari",
-      "text": "Sylinteriin on suljettu ilmaa. Sylinterin toisessa päässä on kevyt liikkuva mäntä. Opiskelija lämmittää kaasua hitaasti, ja kaasu laajenee. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona. Kaasun lämpötila oli alussa $20\\,{}^\\circ\\text{C}$. Oletetaan, että kaasu on ideaalikaasu. Oletetaan myös, että kaasua on koko ajan yhtä paljon.",
+      "text": "Sylinteriin on suljettu ilmaa. Sylinterin toisessa päässä on liikkuva mäntä, jonka päällä on painoja. Painot pitävät kaasun paineen vakiona. Opiskelija lämmittää kaasua hitaasti, ja kaasu laajenee. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona. Kaasun lämpötila oli alussa $20\\,{}^\\circ\\text{C}$. Oletetaan, että kaasu on ideaalikaasu. Oletetaan myös, että kaasua on koko ajan yhtä paljon.",
       "parts": [
         {
           "id": "a",
@@ -1021,7 +1021,7 @@
           "answer": {
             "value": 1172.6,
             "unit": "K",
-            "tolerance": 0.02
+            "tolerance": 0.03
           },
           "criteria": [
             {
@@ -1032,12 +1032,12 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4{,}0 \\cdot 10^{-3}\\,\\text{m}^3}{0{,}1026\\,\\text{mol} \\cdot 8{,}31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1170\\,\\text{K}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4{,}0 \\cdot 10^{-3}\\,\\text{m}^3}{0{,}1026\\,\\text{mol} \\cdot 8{,}31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1{,}2 \\cdot 10^{3}\\,\\text{K}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Tilavuus nelinkertaistui vakiopaineessa, joten kelvinlämpötila nelinkertaistuu: $4 \\cdot 293\\,\\text{K} \\approx 1170\\,\\text{K}$, noin $900\\,{}^\\circ\\text{C}$."
+              "detail": "Tilavuus nelinkertaistui vakiopaineessa, joten kelvinlämpötila nelinkertaistuu: $4 \\cdot 293\\,\\text{K} \\approx 1{,}2 \\cdot 10^{3}\\,\\text{K}$, noin $900\\,{}^\\circ\\text{C}$."
             }
           ]
         },
