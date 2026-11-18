@@ -324,7 +324,7 @@ The hot water is on the left side, as in the general equation. On the first line
 A third mistake is to convert $\Delta T$ to kelvins by adding 273: a change in temperature is the same on both scales.
 
 ## Summary
-- The quantity of heat is proportional to the mass and to the change in temperature: $Q = c m \Delta T$. The specific heat capacity $c$ depends on the substance, and for water it is large, $4190\,\text{J/(kg}\cdot\text{K)}$.
+- When the state does not change, the quantity of heat is proportional to the mass and to the change in temperature: $Q = c m \Delta T$. The specific heat capacity $c$ depends on the substance, and for water it is large, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - The heat capacity $C = cm$ tells how many joules it takes to heat the whole object by one kelvin.
 - In an insulated container the heat given out by the hot object is equal to the heat received by the cold one: $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$. The equilibrium temperature $T$ is solved by collecting the terms with $T$ on the same side; it is a mean weighted by the heat capacities, and usually not the ordinary mean of the initial temperatures.
 - A calorimetric measurement determines the specific heat capacity of an unknown substance with the help of water.
