@@ -4,7 +4,7 @@ Ruukkilabra does not collect any information about students. The site has no ser
 
 ## What is saved in your browser?
 
-So that your work is not lost when you close the page, Ruukkilabra saves some things only in this device's browser: your solutions and answers (solutions written in the editor with their formulas and pasted pictures, numerical answers, choices and written answers), your predictions and measurements, self-assessments, the times of tasks counted as done, lesson progress, concept card progress, and the read-aloud settings and voice model. When you save your first solution, the site asks the browser to keep the data persistently, so that the browser does not delete it by itself when disk space runs low.
+So that your work is not lost when you close the page, Ruukkilabra saves some things only in this device's browser: your solutions and answers (solutions written in the editor with their formulas and pasted pictures, numerical answers, choices and written answers), your predictions and measurements, self-assessments, the times of tasks counted as done, lesson progress, concept card progress, and the read-aloud settings and voice model. When you save your first solution, the site asks the browser to keep the data persistently, so that the browser does not delete it by itself when disk space runs low. The browser also saves the pages you open, with their files, on this device, so that they open without a network connection.
 
 Ruukkilabra does not send this data automatically to your teacher or anywhere else, and your teacher cannot see it in your browser.
 
