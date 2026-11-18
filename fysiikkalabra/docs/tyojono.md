@@ -163,10 +163,6 @@ Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
 
-## 13. Englanninkieliset käsitekortit FY8 (opettaja 2026-11-13; kohdan 18 jälkeen, ennen kohtaa 15)
-Varattu: claude/en-kortit-fy8 (FY8)
-`kortit/en/fy8.json` puuttuu, joten englanninkielisillä FY8-sivuilla ei ole kortteja eikä alleviivauksia. FY6 tehty (PR #702; katselmointi `docs/audits/2026-11-18-en-kortit-fy6-science.md`).
-
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14, kevennetty 2026-11-16)
 Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 16. Ensin pelkkä raportti (`docs/audits/`), korjaukset vasta opettajan luettua. Kevennetty:
 (1) automaattiset läpikäynnit (concepts.py, coverage.py --all, physics_phrases, check_a11y; yksi raportti); (2) otos: täysi tarkistus yhdelle luvulle per kurssi, raportti opettajalle;
