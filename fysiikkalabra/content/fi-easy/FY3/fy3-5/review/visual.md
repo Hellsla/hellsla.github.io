@@ -1,10 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: f7a252b5de468526
+VERDICT: FAIL
+CONTENT-HASH: 4228b47aaf494d40
 
 ## Blocking
+- [Major] inquiry.json, Examples-stage 'find the error' task (rendered at 390 px) — the calculation is written as an inline `$\begin{aligned}…$` inside a sentence, which KaTeX sets as a block centred vertically in the line: 'Opiskelija laskee:' / 'Missä on' sit beside the middle rows of the block and 'virhe?' falls below it, the closing full stop floats on the wrong row; the same happens inside the clickable answer option ('…so W = −90 J and [block] .') — the sentence is hard to read and the option looks broken — put the chain in display maths on its own lines (as fy2-2's 'Find the error' does), the sentence before it ending in a colon and the question after it; in the option put the chain after the sentence, or keep it as one inline chain.
 
 ## Polish
-- [Minor] Pohdinta card, correct feedback — the chain wraps as "= 90 N / · 0,10 m / = 9,0 J" on a phone; a row starting with "·" is the shared mathlayout style, not a lesson fault.
+- none
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa: työ) with feedback open at 390 px (correct and wrong answer) and stage-herata-390; "$90\,\text{N}$:n", "$0{,}10\,\text{m}$:n" case endings and the W = Fs chain render correctly, nothing clipped. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened; the layout is the same shared card as in the 1280 px captures I opened for fy3-1, 3, 7, 12.
+- batch delta review: rendered the changed prompt and option at 390 px in the page; figures untouched by the diff and not re-opened.

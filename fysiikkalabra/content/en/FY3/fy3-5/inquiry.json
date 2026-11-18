@@ -267,14 +267,14 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A quantity of heat of $250\\,\\text{J}$ is transferred into the gas in a cylinder, and the gas expands, doing $90\\,\\text{J}$ of work on the piston. A student calculates: $\\begin{aligned}\\Delta U &= Q + W \\\\ &= 250\\,\\text{J} + 90\\,\\text{J} \\\\ &= 340\\,\\text{J}\\end{aligned}$. Where is the error?",
+      "prompt": "A quantity of heat of $250\\,\\text{J}$ is transferred into the gas in a cylinder, and the gas expands, doing $90\\,\\text{J}$ of work on the piston. A student calculates: $$\\begin{aligned}\\Delta U &= Q + W \\\\ &= 250\\,\\text{J} + 90\\,\\text{J} \\\\ &= 340\\,\\text{J}\\end{aligned}$$. Where is the error?",
       "choices": [
         {
           "text": "$Q$ should be negative, because the gas expands.",
           "feedback": "$Q$ tells you the direction of the heat, not of the motion. Heat is transferred into the gas, so $Q = +250\\,\\text{J}$ is correct. The error is in the other term."
         },
         {
-          "text": "The gas does work on the surroundings, so $W = -90\\,\\text{J}$ and $\\begin{aligned}\\Delta U &= 250\\,\\text{J} - 90\\,\\text{J} \\\\ &= 160\\,\\text{J}\\end{aligned}$.",
+          "text": "The gas does work on the surroundings, so $W = -90\\,\\text{J}$ and $$\\begin{aligned}\\Delta U &= 250\\,\\text{J} - 90\\,\\text{J} \\\\ &= 160\\,\\text{J}\\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. In the formula $\\Delta U = Q + W$, the work $W$ is the work done on the system by the surroundings. When the gas itself pushes the piston, energy leaves the gas, so $W$ is negative."
         },

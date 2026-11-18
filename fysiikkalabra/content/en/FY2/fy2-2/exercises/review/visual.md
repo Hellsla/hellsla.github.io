@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6c4d59375c309c56
+CONTENT-HASH: 5d647162f78272b0
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] solutions.md, formula block of the breakfast task — the chain is hand-broken after 'E_banana +' although the whole sum fits on a row at 360 px; let the layout break it.
 
 ## Checked
-- Delta (md-paragraphs). Opened fy2-2-open-exercises-L3-1280-3.png (2-20 Reasonableness now three paragraphs) and L3-1280-5.png (2-22 Answer split in two); L3-1280-2 and -4 for context. Spacing even, maths and open-solution cards intact.
+- delta: rendered the open solution at 360 px (formula chain and the following ones); layout survived. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

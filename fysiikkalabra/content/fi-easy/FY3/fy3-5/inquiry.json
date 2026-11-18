@@ -267,14 +267,14 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä $250\\,\\text{J}$. Kaasu laajenee ja tekee mäntään työn $90\\,\\text{J}$. Opiskelija laskee: $\\begin{aligned}\\Delta U &= Q + W \\\\ &= 250\\,\\text{J} + 90\\,\\text{J} \\\\ &= 340\\,\\text{J}\\end{aligned}$. Missä on virhe?",
+      "prompt": "Sylinterissä olevaan kaasuun siirtyy lämpömäärä $250\\,\\text{J}$. Kaasu laajenee ja tekee mäntään työn $90\\,\\text{J}$. Opiskelija laskee: $$\\begin{aligned}\\Delta U &= Q + W \\\\ &= 250\\,\\text{J} + 90\\,\\text{J} \\\\ &= 340\\,\\text{J}\\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
           "text": "$Q$:n pitäisi olla negatiivinen, koska kaasu laajenee.",
           "feedback": "$Q$ kertoo lämmön suunnan, ei liikkeen suuntaa. Lämpöä siirtyy kaasuun, joten $Q = +250\\,\\text{J}$ on oikein. Virhe on toisessa termissä."
         },
         {
-          "text": "Kaasu tekee työtä ympäristöön, joten $W = -90\\,\\text{J}$ ja $\\begin{aligned}\\Delta U &= 250\\,\\text{J} - 90\\,\\text{J} \\\\ &= 160\\,\\text{J}\\end{aligned}$.",
+          "text": "Kaasu tekee työtä ympäristöön, joten $W = -90\\,\\text{J}$ ja $$\\begin{aligned}\\Delta U &= 250\\,\\text{J} - 90\\,\\text{J} \\\\ &= 160\\,\\text{J}\\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Kaavassa $\\Delta U = Q + W$ työ $W$ on ympäristön systeemiin tekemä työ. Kaasu työntää itse mäntää, joten energiaa lähtee kaasusta. Siksi $W$ on negatiivinen."
         },

@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fc2b72b86cfc839f
-Mode: delta
-Round: 1
+CONTENT-HASH: 7ab3f1465edd2da9
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- [Minor] exercises.json, bicycle-pump error-analysis task — the student's chain is an inline `aligned` in running text: 'So' sits beside the middle row and the closing quote mark and full stop float at the row ends; put it in display maths or an inline chain. (checked on the English render; the Selkeä suomi page uses the same structure)
 
 ## Checked
-- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; solutions judged at 390 px in the lesson's worked-example captures and at 1280 px.
-- 1280 px with solutions open: fy3-5-open-exercises-1280-3.png (task 6-3 solution rows, boxed Vastaus, Järkevyys block), fy3-5-open-tarkista-1280-1.png (Vastaus boxes with the aligned ΔU rows).
-- 390 px: fy3-5-example-390-1.png, fy3-5-stage-sovella-390-1.png (same row structure at phone width; one thing per paragraph, no clipping or overflow).
+- delta: rendered the changed task and its open solution at 360 px. Rendered in English; the fi-easy page was not separately opened. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

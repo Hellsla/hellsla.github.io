@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 239a684054ec39eb
+CONTENT-HASH: 47ce5f6687399571
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] exercises.json, bicycle-pump error-analysis task — the student's chain is an inline `aligned` in running text: 'So' sits beside the middle row and the closing quote mark and full stop float at the row ends; put it in display maths or an inline chain.
 
 ## Checked
-- Delta (md-paragraphs: paragraph breaks, plus units set as LaTeX). Captures current for this hash (stamp.txt).
-- 1280 px, solutions open: fy3-5-open-exercises-1280-3.png, fy3-5-open-exercises-1280-6.png. Paragraph splits clean; units in the visible text ($350\,\text{J}$, $\Delta U$ rows) render upright with thin spaces, none plain; no clipping.
-- 390 px: fy3-5-stage-tarkista-390-1.png, fy3-5-stage-tarkista-390-2.png (solutions closed there; units render in LaTeX; no solution-open phone capture exists). No 360 px captures exist.
+- delta: rendered the changed task and its open solution at 360 px. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

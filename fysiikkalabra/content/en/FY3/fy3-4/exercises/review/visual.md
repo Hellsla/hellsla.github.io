@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6e46a118823eff8e
+CONTENT-HASH: f3d9bbd1c0229aed
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md, 'Reasonableness' of the pressure-cooker task — inline `aligned` inside a sentence gives a block centred in the line with the text beside it ('mass of [block], which'); write the conversion as one inline chain.
 
 ## Checked
-- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
-- 1280 px, solutions open: fy3-4-open-exercises-1280-3.png, fy3-4-open-exercises-1280-6.png. Split Principle and Model answer paragraphs read cleanly; substitution rows, answer box and Reasonableness intact, no clipping.
-- 390 px: fy3-4-stage-tarkista-390-1.png, fy3-4-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
+- delta: rendered the open solution at 360 px (conversions, substitution, reasonableness). No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5
