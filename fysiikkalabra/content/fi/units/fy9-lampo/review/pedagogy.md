@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 105a4152a036315b
-SCOPE: delta (new tasks fy9-lampo-s7 and s8, changed intro); s1–s6 not re-judged
+CONTENT-HASH: c79ae27e3ce688a5
+SCOPE: delta (round 2): new tasks fy9-lampo-s7 and s8 and changed intro; other tasks not re-judged
 
 ## Blocking
-None.
+None. Round-1 items verified fixed in the current text: s8 start temperature -16 °C is in the task text (and the graph's first part starts there); s8 d now asks "Kuinka suuri massa" (answer in kg); Sijoitus rows use decimal commas (no decimal points in the s7/s8 solutions).
 
 ## Polish
-- Kysymys s8 d: "Kuinka suuri osa jääpalan massasta" mutta vastaus on massa (kg), ei osuus; en kysyy "What mass". Muotoile "Kuinka suuri massa jäätä on sulanut" (vastaus kg).
-- s7 a–c: the task text gives power, mass and c of aluminium only as context; the figure (heating-line) is needed and its description gives the end points but no slope or c, so the structure (slope, then Pt = cm dT) is not revealed. Good.
-- s7 b: "Voisiko kappale olla alumiinia?" is fine; the solution rightly notes the graph does not prove it.
+- s8 d: the solution uses s = 333 kJ/kg from part b; a carried-forward error from b is not mentioned in "Hyväksytään myös".
+- s8 d: no separate mark for recognising that 120 kJ lies on the flat part (only the reasonableness mark); acceptable but thin.
+- s8 c: the graph reaches 300 kJ, so 20 °C can also be read directly (270 kJ); the solution could mention this as a check.
 
 ## Checked
-- Task text does not name the model or give the solution's steps; s8 b/c/d require the student to read the flat part and combine stages (3 parts of rising demand, d needs the a result).
-- Solutions follow rule 7: given/asked, principle, symbolic formula before numbers, conversions, substitution with units, answer with significant figures, reasonableness; graph reading shown; common mistakes real (e.g. 220 kJ as melting energy, 120 kJ giving 0,36 kg).
-- Rubrics: points sum per part (3/4/4/3 and 4/5/4/3), no points for irrelevant things, tolerances fit the data (358 s and table c accepted).
-- Figure ids fy3-6/heating-line and fy3-7/melting-curve match the catalog; values 20 to 60 °C in 180 s, -16 to 0 °C in 20 kJ, flat to 220 kJ agree with tasks and solutions; names and terms consistent across languages.
-- Intro lists eight tasks and fits s7 and s8.
-- fi-easy: short sentences, assumptions split into separate sentences, terms as in the Finnish version, no new hard words (NOTES.md §12 level).
-- Hash re-checked at the end.
+- Task texts reveal no solution structure: s7 gives no slope or c, s8 names no melting part and no s; the figure catalog (REUSE) confirms both figures are safe.
+- Solutions meet rule 7 (given, asked, principle, formula before numbers, conversions, substitution with units, answer with significant figures, reasonableness, common mistakes); numbers match answers.py (0,222; 900; 360; 2083; 333; 270,2; 0,30).
+- Rubrics: points s7 3/4/4/3, s8 4/5/4/3; criteria match the questions; tolerances fit (358 s accepted).
+- Figures fy3-6/heating-line (20 to 60 °C in 180 s) and fy3-7/melting-curve (-16, 0, 220 kJ) match tasks and solutions; names and terms consistent.
+- Intro (eight tasks) fits s7 and s8.
+- Hash c79ae27e3ce688a5 at start and end (unchanged).

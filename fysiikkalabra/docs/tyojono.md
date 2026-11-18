@@ -69,7 +69,7 @@ luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolman
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
 VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units, erillinen malli). Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
-Varattu: claude/fy9-b-kuvatehtavat (FY9 B: lämpö, kaasut, aallot, tasavirta)
+FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei päde (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` 5.2).

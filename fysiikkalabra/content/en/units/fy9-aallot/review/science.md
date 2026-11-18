@@ -1,24 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 050bccd79e623421
-SCOPE: delta: new tasks fy9-aallot-s7 and s8 with their figures and the changed intro; s1–s6 not re-judged; fidelity to fi checked.
+VERDICT: PASS
+CONTENT-HASH: 6e26a08a08a64312
+SCOPE: delta (round 2): new tasks fy9-aallot-s7 and s8 (figures fy5-12/ruudukko-tehtava, fy5-13/kuvio-tehtava) and the changed intro; s1-s6 not re-judged. Language: en; fidelity to fi checked for en and fi-easy.
 
 ## Blocking
-- **A, significant-figure reasons stated wrongly (rounding to data precision)** (same in en):
-  - s8 a Vastaus: "kaksi merkitsevää numeroa kuten silmukoiden lukumäärässä ja pituudessa". The length read off the ruler, 1,20 m, has three significant figures and the loop count is exact, so λ = 0,600 m by the data; give 0,600 m or a correct reason.
-  - s7 b Vastaus: "kolme merkitsevää numeroa kuten nopeudessa": 343,4 m/s has four; the three come from f = 343 Hz.
-  - s7 a Vastaus and the a `units_precision` criterion: "kuten ruutujen lukumäärissä": counts are exact; the two figures come from the square side 0,50 m.
+(none)
 
 ## Polish
-- s8 d model answer: off resonance the string settles to a steady forced vibration at 20 Hz with small amplitude; "epäsäännöllisellä" describes only the transient.
-- s8 c criterion and solution: the speed depends on the tension and the mass per unit length (not "massasta"); harmless here since the string is unchanged.
-- s7: 343,4 m/s is MAFY's value (20 °C); the text could name the temperature.
-- (en) solutions.md s7 and s8 use decimal commas (`0{,}50`, `343{,}4`, `686{,}8`) while en tasks.json and en s1–s6 use decimal points. Make it uniform.
+- s7: the task text says the loudness difference from the unequal distances is ignored, yet the c model answer adds "not completely silent because the farther loudspeaker is heard more weakly". Physically right, but mildly at odds with the stated simplification; one clause could say "in practice".
+- s8 d: the model answer could add that off resonance the string settles to a small-amplitude forced vibration at 20 Hz (it says "small amplitude", which is correct).
 
 ## Checked
-- Geometry from speaker_grid() (36 px squares): S1 (0,0), S2 5 squares up, P 12 right → s1 = 6,0 m, s2 = √42,25 m = 6,5 m, Δs = 0,50 m.
-- λ = 343,4/343 = 1,0012 m; Δs/λ = 0,499 (destructive, in-phase sources); next maximum Δs = λ → f = 686,8 Hz ≈ 690 Hz (2 sf from 0,50 m), answer 687 Hz ±2 %; reasoning 2·343 Hz consistent.
-- String figure: sin(4πu) over 0…1,20 m, five nodes incl. ends → 4 loops; λ = 0,60 m, v = 30 m/s, f3 = 3v/(2L) = 37,5 Hz ≈ 38 Hz, f1 = 12,5 Hz, f2 = 25 Hz, 20/12,5 = 1,6 loops, λ(20 Hz) = 1,5 m; Hyväksytään myös correct.
-- Standing-wave conditions (nodes at both ends, L = nλ/2, f_n = nv/(2L), v fixed by the string) correct.
-- Rubric points: s7 4+2+3+3 = 12, s8 3+3+4+3 = 13, criteria sum to part points; practice.py check OK (8 tasks, 120 points). Intro: eight tasks, matches.
-- Scope: FY5 interference and standing waves; nothing beyond. My script and answers.py agree on every s7/s8 value.
-- Hash identical at start and end.
+- Round-1 blocking items verified fixed in tasks.json and solutions.md: s7 a (two sf from the 0,50 m square side; counts exact), s7 b (three sf from f = 343 Hz; 343,4 has four), s8 a (0,600 m three sf from L = 1,20 m; loop count exact). s8 c now says tension and mass per unit length. en decimal points are periods throughout.
+- Recomputed: s1 = 12*0,50 = 6,0 m; d = 2,5 m; s2 = sqrt(42,25) = 6,5 m; Δs = 0,50 m (12:5:13 triangle). λ = 343,4/343 = 1,0012 m; Δs/λ = 0,499 (destructive for in-phase sources); next maximum Δs = λ gives f = 343,4/0,50 = 686,8 Hz ≈ 690 Hz (answer 687 Hz, 2 % tolerance), consistent with 2*343 Hz.
+- s8: λ = 2*1,20/4 = 0,600 m; v = 50*0,600 = 30 m/s; f3 = 3*30/(2*1,20) = 37,5 Hz ≈ 38 Hz (2 sf limited by 30 m/s); f1 = 12,5 Hz, f2 = 25 Hz; 20/12,5 = 1,6 loops; λ(20 Hz) = 1,5 m. Speed fixed by tension and linear density, unchanged.
+- MAFY constant: 343,4 m/s at 20 °C stated in the task text; speed of sound 343 m/s at nominal. Standing-wave conditions (nodes at both ends, L = nλ/2, f_n = nv/(2L)) correct. Scope is FY5 interference and standing waves; no content beyond.
+- FY9 wording: command words and "Perustele" used correctly; rubric points s7 4+2+3+3 = 12, s8 3+3+4+3 = 13; criteria sum to part points; practice.py check OK for all three languages (8 tasks, 120 points). Intro says eight tasks, matching.
+- Fidelity: en and fi-easy tasks and solutions carry the same numbers, reasons and conclusions as fi.
+- Content hash 6e26a08a08a64312 at start and end, unchanged.
