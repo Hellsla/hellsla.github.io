@@ -1,17 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: a2b51d07ea6aadea
+SCOPE: delta: new tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) and the changed intro; s1–s7 not re-judged (hash at start and end identical).
 
 ## Blocking
-- (none)
+- **s9 text vs figure (B, model condition).** "whose other end is closed by a light movable piston" while the figure holds the gas at a constant 250 kPa. A light piston with outside air on its other side keeps the gas at about 101 kPa, not 250 kPa. State what holds 250 kPa (a load on the piston) and drop "light".
+- **s9 c rounding and tolerance (A, assessment).** The solution gives three significant figures "like the initial temperature 293 K", but 293 gets its third figure from adding 273.15. The data are 20 °C, 1.0 l and 4.0 l (two figures), and part b rounds to two figures "like the volume 1.0 l". By the same reasoning c should be 1.2·10³ K, and that is 2.3 % from 1172.6 K, outside the 2 % tolerance. Make b and c consistent (two figures, tolerance at least 3 %).
+- **Intro (A, internal consistency).** "The last problem is an applied source-based problem…": since s8 and s9 were added after it, the last task is s9 (a graph task), and the source-based task is s7.
 
 ## Polish
-- (none)
+- s9: heating air to about 1170 K (900 °C) is not plausible for a student in a school cylinder. A smaller volume ratio or a note would help.
 
 ## Checked
-- s2 c reasonableness: the added sentence is right. Recomputed: 485.1 kW - 174.6 kW - 232.9 kW = 77.6 kW (= 16 % of the fuel power = 25 % of 310.5 kW); the row with rounded powers gives 77 kW. answers.py key `fy9-kaasut-s2-waste` computes the same quantity from unrounded values.
-- s5 "Yleisiä virheitä": "the molar mass comes out at about two thirds of the correct one" is now unambiguous and right (210 : 311 = 0.68; the amount of substance itself becomes 1.5 times too large).
-- s7 c task text: "derive in symbols ... heat transferred to the water per unit time (the heat power) and the volume flowing per second" matches the rubric and the solution (P_2 t = c rho V dT); the task stays solvable with the given data. Recomputed dT = 2.7e9 W : 2.388e8 W/K = 11.3 K.
-- s7 e: "about 21 C" now agrees with 10 C + 11 K and with the reasonableness check of part c (the old 20 C did not).
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- Own recomputation (R = 8,31, 273,15) from the figure sources (`pt_lines`: p = 0,25 T and 0,15 T kPa, points 200/400 K; `pv_isobar`: 250 kPa, 1,0→4,0 l): s8 0,0602 mol (both points), 0,0361 mol, 40,0 %, 63,29 kPa; s9 750 J, 0,1026 mol, 1172,6 K, 899,5 °C, ΔT 879,5 K. All match answers.py and tasks.json. Magnitude checks (0,083 and 0,042 mol of air) right.
+- The figures show every value read. V and 20 °C come from the text.
+- s9 d: ΔU > 0, Q = ΔU + W, Q > W; the physics, sign convention and energy wording are correct.
+- Points add up, criteria match the parts, alternatives accepted; scope FY3; other tolerances admit two figures.
+- Numbers, criteria and physics match the fi version.

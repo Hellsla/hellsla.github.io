@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 84089ae446eb257f
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 240835f98a13143b
+SCOPE: delta, new Sovella tasks fy9-kaasut-s8 and s9 (task text, figures, solutions) and intro; s1-s7 not re-judged. Language: fi.
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- B s7 b) Vastaus: the answer box holds only $P_2$; the second answer follows as a sentence that starts "Ja $Q_2 \approx 65\,\text{GWh}$ …" (390 and 1280 px). Give $Q_2$ its own sentence in the source, e.g. "… $= 2{,}7\,\text{GW}$. Lämpönä siirtyvä energia on $Q_2 \approx 65\,\text{GWh} \approx 2{,}3 \cdot 10^{14}\,\text{J}$."
-- C s7 source line shows the source name only; the note's remark on the water values and the checked date is not visible there (both are in the task text, so nothing is missing).
+- [Minor] fy3-10/pt-suorat and fy3-11/pv-isobaari at 360 px: the axis labels and tick numbers render at about 9 px; legible but small. The figure is correctly scaled and the description gives the point values.
+- [Minor] pt-suorat: series colours orange (A) and blue (B) are the project's acceleration and velocity colours; harmless in a data graph, but the series are also labelled A/B at the line ends, so colour is not the only cue. No action needed.
 
 ## Checked
-- Captures current for this hash. Opened: stage-exercises-390-51…58, -60…63 (s7 card, source link, assumptions list, parts a–e, every solution, common mistakes, accepted answers, rubric a–e), stage-exercises-1280-39, -41, -42, contact-4, -7, -8, -14.
-- s7: stacked units ($\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$, $\tfrac{\text{m}^3}{\text{s}}$, $\tfrac{\text{W}}{\text{K}}$) legible at 390 px; the three-factor denominator row wraps at a `\cdot` and stays inside its box; `=` aligned; nothing clipped; "$37\,\%$:iin", "$100\,\%$:n" correct.
-- Item 18: stage-exercises-390-14 (s2 Järkevyys: row "$\approx 77\,\text{kW}$" and the added sentence on the unrounded $77{,}6\,\text{kW}$ render cleanly); s4 "noin kaksi kolmasosaa oikeasta" read in the diff.
+- Own 360 px captures of s8 and s9 in the fi page (task, figure, opened model answer; read in parts), no horizontal overflow (scrollWidth 360); check_layout --width 360 OK for fi, en, fi-easy.
+- Calc rows aligned at =, units as LaTeX with a thin space, litre as \textsf{l}, decimal comma, fractions, boxed answer all fine; the longer check chain in s8 c) is broken one row per step and does not clip.
+- Figures sit inside the card, aria-label gives the data points and the grid step.
+- The stage captures in review/shots do not include s8/s9, so I made my own.
