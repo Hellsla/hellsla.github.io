@@ -477,7 +477,7 @@ $$ Se on noin $35$ nanogrammaa.
 \end{aligned}
 $$
 **Vastaus:** $\mu \approx 0{,}14\,\dfrac{1}{\text{cm}}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa. Seuraavissa kohdissa käytetään tarkempaa arvoa $\mu = 0{,}1386\,\dfrac{1}{\text{cm}}$. Silloin pyöristys ei kasva.
-**Järkevyys:** Puoliintumispaksuus on $\dfrac{\ln 2}{\mu} \approx 5{,}0\,\text{cm}$. Kuvaajassa annosnopeus on kohdassa $5\,\text{cm}$ noin $40\,\mu\text{Sv/h}$ eli puolet alkuarvosta. Se sopii tulokseen.
+**Järkevyys:** Kun $d = 1/\mu \approx 7{,}2\,\text{cm}$, annosnopeus on pudonnut tekijään $1/e \approx 0{,}37$. Puoliintumispaksuus on $\dfrac{\ln 2}{\mu} \approx 5{,}0\,\text{cm}$. Kuvaajassa annosnopeus on kohdassa $5\,\text{cm}$ noin $40\,\mu\text{Sv/h}$ eli puolet alkuarvosta. Se sopii tulokseen.
 
 ### b)
 **Annettu:** $\dot{H}_0 = 80\,\mu\text{Sv/h}$, $\mu = 0{,}1386\,\dfrac{1}{\text{cm}}$ ja $d = 18\,\text{cm}$

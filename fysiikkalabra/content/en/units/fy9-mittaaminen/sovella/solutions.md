@@ -723,7 +723,7 @@ $$; $$
 &= 0.61\,\text{cm}
 \end{aligned}
 $$
-**Answer:** $x = (15.0 \pm 0.6)\,\text{cm}$. The result is given to the decimal of the uncertainty, $0.6\,\text{cm}$.
+**Answer:** $x = (15.0 \pm 0.6)\,\text{cm}$. The result is given to the same decimal as the uncertainty.
 **Reasonableness:** With the limiting spring constants the extension is $4.5\,\text{N} : 31.27\,\text{N/m} = 14.4\,\text{cm}$ and $4.5\,\text{N} : 28.83\,\text{N/m} = 15.6\,\text{cm}$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extrapolation: the extension is about $1.5$ times the largest measured one ($9.8\,\text{cm}$) and the force is greater than the largest measured one ($2.94\,\text{N}$). The spring may exceed its elastic limit, and the graph does not tell whether it stays linear. The stated uncertainty describes only the uncertainty of the slope, so the real uncertainty is larger.
 
 ### Yleisiä virheitä
@@ -739,27 +739,62 @@ $$
 ## fy9-mittaaminen-s8
 
 ### a)
-**Given:** nine measured points $(t,\,s)$, $t = 0\ldots 0.40\,\text{s}$ at intervals of $0.05\,\text{s}$; the ball is released at $t = 0$
-**Find:** a graph whose slope gives $g$, and the fitted line
-**Principle:** When a ball falls from rest the acceleration is constant (chapter *Acceleration and uniformly accelerated motion*), so $s = \tfrac{1}{2}gt^2$. Therefore $s$ is directly proportional to $t^2$. When $s$ is put on the vertical axis and $t^2$ on the horizontal axis, the points lie on a straight line whose slope is $\tfrac{1}{2}g$ (chapter *Graphing and fitting a straight line*). In a $(t,s)$ graph the points form a curve from which no slope can be read.
-**Reading the graph:** The time is squared for each point, and the points $(t^2,\,s)$ are marked in the graph:
+**Find:** a graph whose slope gives $g$, and the line fitted to it
+**Graph:** When a ball falls from rest the acceleration is constant (chapter *Acceleration and uniformly accelerated motion*), so $s = \tfrac{1}{2}gt^2$. Therefore $s$ is directly proportional to $t^2$. $t^2\ (\text{s}^2)$ is chosen for the horizontal axis and $s\ (\text{m})$ for the vertical axis, so that the points lie on a straight line whose slope is $\tfrac{1}{2}g$ (chapter *Graphing and fitting a straight line*). The time is squared for each point, and the points $(t^2,\,s)$ are marked in the graph:
 
 | $t\ (\text{s})$ | $0$ | $0.05$ | $0.10$ | $0.15$ | $0.20$ | $0.25$ | $0.30$ | $0.35$ | $0.40$ |
 |---|---|---|---|---|---|---|---|---|---|
 | $t^2\ (\text{s}^2)$ | $0$ | $0.0025$ | $0.0100$ | $0.0225$ | $0.0400$ | $0.0625$ | $0.0900$ | $0.1225$ | $0.1600$ |
 | $s\ (\text{m})$ | $0.002$ | $0.018$ | $0.065$ | $0.128$ | $0.223$ | $0.338$ | $0.477$ | $0.646$ | $0.832$ |
 
-One straight line is fitted to the points. The line is not forced through the origin, but the constant term of the fit can be examined.
-**Formula:** $s = \tfrac{1}{2}g\,t^2 + s_0$, so $s$ is a linear function of $t^2$.
-**Conversions:** None needed: the distances are in metres and the times in seconds.
-**Substitution:** For example at $0.40\,\text{s}$ $$
-\begin{aligned}
-t^2 &= (0.40\,\text{s})^2 \\
-&= 0.16\,\text{s}^2
-\end{aligned}
-$$ The constant term of the fitted line, $s_0 \approx 0.01\,\text{m}$, is as large as the reading uncertainty of the distance, $0.01\,\text{m}$, so it is not significant: the data agree with uniformly accelerated motion.
-**Answer:** The graph is a $(t^2,\,s)$ graph, and the line fitted to the points is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$.
-**Reasonableness:** The points lie well on a line: the vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty $0.01\,\text{m}$. This supports the model $s \propto t^2$.
+<svg data-fig="s8-kuvaaja" viewBox="0 0 600 400" role="img" aria-label="Graph: the distance s the ball has fallen in metres as a function of the square of the time t², in s², 0–0.16 s². Nine blue points lie close to one rising straight line whose slope is 5.18 m/s² and which crosses the vertical axis at about 0.01 m. The points read from the line, (0.020 s²; 0.113 m) and (0.150 s²; 0.786 m), are circled." style="max-width:100%;font-size:30px">
+  <line x1="174.5" y1="340" x2="174.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="259" y1="340" x2="259" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="343.5" y1="340" x2="343.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="428" y1="340" x2="428" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="278" x2="470" y2="278" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="215.5" x2="470" y2="215.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="153.5" x2="470" y2="153.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="91" x2="470" y2="91" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="89" y1="340" x2="484" y2="340" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,340 L483,346 L483,334 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="341" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="174.5" y1="340" x2="174.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="139.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.04$</div></foreignObject>
+  <line x1="259" y1="340" x2="259" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="224" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.08$</div></foreignObject>
+  <line x1="343.5" y1="340" x2="343.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="308.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.12$</div></foreignObject>
+  <line x1="428" y1="340" x2="428" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="393" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0.16$</div></foreignObject>
+  <line x1="83" y1="278" x2="90" y2="278" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="260" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.2$</div></foreignObject>
+  <line x1="83" y1="215.5" x2="90" y2="215.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="197.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.4$</div></foreignObject>
+  <line x1="83" y1="153.5" x2="90" y2="153.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="135.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.6$</div></foreignObject>
+  <line x1="83" y1="91" x2="90" y2="91" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="73" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0.8$</div></foreignObject>
+  <foreignObject x="56" y="342" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0$</div></foreignObject>
+  <foreignObject x="502" y="322" width="106" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$t^2\ (\text{s}^2)$</div></foreignObject>
+  <foreignObject x="80" y="0" width="75" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$s\ (\text{m})$</div></foreignObject>
+  <polyline points="90,337 449,63" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="90" cy="339.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="95.5" cy="334.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="111" cy="320" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="137.5" cy="300" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="174.5" cy="270.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="222" cy="235" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="280" cy="191.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="348.5" cy="139" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="428" cy="81" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="132" cy="304.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="406.5" cy="95.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5.18\,\text{m/s}^2$</div></foreignObject>
+</svg>
+
+**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data. The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, as large as the reading uncertainty of the distance, $0.01\,\text{m}$, so the constant term is not significant. The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$. In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
 
 ### b)
 **Given:** the $(t^2,\,s)$ line of part a; the reading uncertainty of the distance is $0.01\,\text{m}$

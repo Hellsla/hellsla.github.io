@@ -830,7 +830,7 @@
    "parts": [
     {
      "id": "a",
-     "kind": "graph",
+     "kind": "calc",
      "points": 5,
      "text": "Sovita pisteisiin suora ja määritä jousen jousivakio $k$ epävarmuuksineen.",
      "answer": {
@@ -932,7 +932,8 @@
     "graph": "fy1-4",
     "experiment": "fy1-3",
     "math": "fy5-8",
-    "communication": "fy1-4"
+    "communication": "fy1-4",
+    "concept": "fy5-8"
    }
   },
   {
@@ -1052,7 +1053,8 @@
     "graph": "fy1-4",
     "experiment": "fy1-3",
     "math": "fy4-2",
-    "communication": "fy1-3"
+    "communication": "fy1-3",
+    "concept": "fy4-2"
    }
   }
  ]

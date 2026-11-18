@@ -739,27 +739,62 @@ $$
 ## fy9-mittaaminen-s8
 
 ### a)
-**Annettu:** yhdeksän mittauspistettä $(t,\,s)$, $t = 0\ldots 0{,}40\,\text{s}$ välein $0{,}05\,\text{s}$; kuula irtoaa hetkellä $t = 0$
-**Kysytty:** kuvaaja, jonka kulmakertoimesta $g$ saadaan, ja sovitettu suora
-**Periaate:** Levosta lähtevän kuulan putoamisessa kiihtyvyys on vakio (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*), joten $s = \tfrac{1}{2}gt^2$. Siksi $s$ on suoraan verrannollinen aikaan $t^2$. Kun pystyakselille laitetaan $s$ ja vaaka-akselille $t^2$, pisteet asettuvat suoralle, jonka kulmakerroin on $\tfrac{1}{2}g$ (luku *Graafinen esitys ja suoran sovittaminen*). $(t,s)$-kuvaajassa pisteet muodostavat käyrän, josta kulmakerrointa ei voi lukea.
-**Kuvaajan lukeminen:** Aika korotetaan toiseen potenssiin jokaiselle pisteelle, ja pisteet $(t^2,\,s)$ merkitään kuvaajaan:
+**Kysytty:** kuvaaja, jonka kulmakertoimesta $g$ saadaan, ja siihen sovitettu suora
+**Kuvaaja:** Levosta lähtevän kuulan kiihtyvyys on vakio (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*), joten $s = \tfrac{1}{2}gt^2$. Siksi $s$ on suoraan verrannollinen suureeseen $t^2$. Vaaka-akselille valitaan $t^2\ (\text{s}^2)$ ja pystyakselille $s\ (\text{m})$, jolloin pisteet asettuvat suoralle, jonka kulmakerroin on $\tfrac{1}{2}g$ (luku *Graafinen esitys ja suoran sovittaminen*). Jokainen aika korotetaan toiseen potenssiin, ja pisteet $(t^2,\,s)$ merkitään kuvaajaan:
 
 | $t\ (\text{s})$ | $0$ | $0{,}05$ | $0{,}10$ | $0{,}15$ | $0{,}20$ | $0{,}25$ | $0{,}30$ | $0{,}35$ | $0{,}40$ |
 |---|---|---|---|---|---|---|---|---|---|
 | $t^2\ (\text{s}^2)$ | $0$ | $0{,}0025$ | $0{,}0100$ | $0{,}0225$ | $0{,}0400$ | $0{,}0625$ | $0{,}0900$ | $0{,}1225$ | $0{,}1600$ |
 | $s\ (\text{m})$ | $0{,}002$ | $0{,}018$ | $0{,}065$ | $0{,}128$ | $0{,}223$ | $0{,}338$ | $0{,}477$ | $0{,}646$ | $0{,}832$ |
 
-Pisteisiin sovitetaan yksi suora. Suoraa ei pakoteta origon kautta, mutta sovituksen vakiotermi saadaan tarkasteltavaksi.
-**Kaava:** $s = \tfrac{1}{2}g\,t^2 + s_0$, joten $s$ on $t^2$:n lineaarinen funktio.
-**Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
-**Sijoitus:** Esimerkiksi ajalla $0{,}40\,\text{s}$ $$
-\begin{aligned}
-t^2 &= (0{,}40\,\text{s})^2 \\
-&= 0{,}16\,\text{s}^2
-\end{aligned}
-$$ Sovitetun suoran vakiotermi $s_0 \approx 0{,}01\,\text{m}$ on yhtä suuri kuin matkan lukemisen epävarmuus $0{,}01\,\text{m}$, joten se ei ole merkitsevä: aineisto on sopusoinnussa tasaisesti kiihtyvän liikkeen kanssa.
-**Vastaus:** Kuvaaja on $(t^2,\,s)$-kuvaaja, ja pisteisiin sovitettu suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$.
-**Järkevyys:** Pisteet asettuvat hyvin suoralle: suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, mikä on alle lukemisen epävarmuuden $0{,}01\,\text{m}$. Se tukee mallia $s \propto t^2$.
+<svg data-fig="s8-kuvaaja" viewBox="0 0 600 400" role="img" aria-label="Kuvaaja: kuulan putoamismatka s metreinä ajan neliön t² funktiona yksikössä s², 0–0,16 s². Yhdeksän sinistä pistettä on lähellä yhtä nousevaa suoraa, jonka kulmakerroin on 5,18 m/s² ja joka leikkaa pystyakselin kohdassa noin 0,01 m. Suoralta luetut pisteet (0,020 s²; 0,113 m) ja (0,150 s²; 0,786 m) on ympyröity." style="max-width:100%;font-size:30px">
+  <line x1="174.5" y1="340" x2="174.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="259" y1="340" x2="259" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="343.5" y1="340" x2="343.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="428" y1="340" x2="428" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="278" x2="470" y2="278" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="215.5" x2="470" y2="215.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="153.5" x2="470" y2="153.5" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="90" y1="91" x2="470" y2="91" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="89" y1="340" x2="484" y2="340" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M496,340 L483,346 L483,334 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="90" y1="341" x2="90" y2="46" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M90,34 L96,47 L84,47 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="174.5" y1="340" x2="174.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="139.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0{,}04$</div></foreignObject>
+  <line x1="259" y1="340" x2="259" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="224" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0{,}08$</div></foreignObject>
+  <line x1="343.5" y1="340" x2="343.5" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="308.5" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0{,}12$</div></foreignObject>
+  <line x1="428" y1="340" x2="428" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="393" y="346" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$0{,}16$</div></foreignObject>
+  <line x1="83" y1="278" x2="90" y2="278" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="260" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0{,}2$</div></foreignObject>
+  <line x1="83" y1="215.5" x2="90" y2="215.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="197.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0{,}4$</div></foreignObject>
+  <line x1="83" y1="153.5" x2="90" y2="153.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="135.5" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0{,}6$</div></foreignObject>
+  <line x1="83" y1="91" x2="90" y2="91" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="23" y="73" width="55" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0{,}8$</div></foreignObject>
+  <foreignObject x="56" y="342" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$0$</div></foreignObject>
+  <foreignObject x="502" y="322" width="106" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$t^2\ (\text{s}^2)$</div></foreignObject>
+  <foreignObject x="80" y="0" width="75" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$s\ (\text{m})$</div></foreignObject>
+  <polyline points="90,337 449,63" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="90" cy="339.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="95.5" cy="334.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="111" cy="320" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="137.5" cy="300" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="174.5" cy="270.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="222" cy="235" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="280" cy="191.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="348.5" cy="139" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="428" cy="81" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="132" cy="304.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="406.5" cy="95.5" r="12" fill="none" stroke="#1f2933" stroke-width="1.5"/>
+  <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5{,}18\,\text{m/s}^2$</div></foreignObject>
+</svg>
+
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli $s \propto t^2$ sopii aineistoon. Suora ei ole pakotettu origon kautta. Sen vakiotermi on noin $0{,}01\,\text{m}$, mikä on yhtä suuri kuin matkan lukemisen epävarmuus $0{,}01\,\text{m}$, joten vakiotermi ei ole merkitsevä. Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, alle lukemisen epävarmuuden. Kuvaajan suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$. $(t,s)$-kuvaajassa pisteet muodostaisivat käyrän, josta kulmakerrointa ei voisi lukea, ja pisteiden yhdistäminen murtoviivaksi seuraisi mittausvirheitäkin.
 
 ### b)
 **Annettu:** a-kohdan $(t^2,\,s)$-suora; matkan lukemisen epävarmuus $0{,}01\,\text{m}$

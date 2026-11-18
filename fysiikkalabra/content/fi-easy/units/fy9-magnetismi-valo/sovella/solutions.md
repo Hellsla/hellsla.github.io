@@ -526,3 +526,136 @@ Radan sädettä ei voi laskea tällä kurssilla käytetystä lausekkeesta $r = \
 - b-kohdassa vastaus $1{,}1\,\mu\text{J}$.
 - c-kohdassa lasku b-kohdan pyöristetyllä arvolla $1{,}1 \cdot 10^{-6}\,\text{J}$. Se antaa saman tuloksen $4{,}4 \cdot 10^8\,\text{J}$.
 - d-kohdassa lasku pyöristetyillä välituloksilla, $\tfrac{4{,}4 \cdot 10^8\,\text{J}}{5{,}79 \cdot 10^5\,\text{J}} \approx 760$ autoa.
+
+## fy9-magnetismi-valo-s8
+
+### a)
+**Annettu:** kuvaaja, jossa pystyakselilla on $\sin\alpha_1$ ja vaaka-akselilla $\sin\alpha_2$, sovitettu suora; ilman taitekerroin $n_1 = 1{,}00$
+**Kysytty:** akryylin taitekerroin $n$
+**Periaate:** Valo tulee ilmasta akryyliin. Silloin taittumislaki on $n_1 \sin\alpha_1 = n \sin\alpha_2$ (luku *Valon heijastuminen ja taittuminen*). Kun $n_1 = 1{,}00$, saadaan $\sin\alpha_1 = n \sin\alpha_2$. Siis $(\sin\alpha_2, \sin\alpha_1)$-kuvaajan suoran kulmakerroin on $n$. Kulmakerroin luetaan sovitetulta suoralta. Sitä ei lueta yksittäisistä mittauspisteistä (luku *Graafinen esitys ja suoran sovittaminen*).
+**Kuvaajan lukeminen:** Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(0{,}30;\ 0{,}44)$ ja $(0{,}60;\ 0{,}89)$.
+**Kaava:** $n = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)}$
+**Muunnokset:** Muunnoksia ei tarvita. Sinit ovat lukuja, joilla ei ole yksikköä.
+**Sijoitus:** $$
+\begin{aligned}
+n &= \dfrac{0,89 - 0,44}{0,60 - 0,30} \\
+&= \dfrac{0,45}{0,30} \\
+&= 1,5
+\end{aligned}
+$$
+**Vastaus:** $n = 1{,}5$ (ei yksikköä). Tuloksessa on kaksi merkitsevää numeroa, kuten kuvaajalta luetuissa arvoissa.
+**Järkevyys:** Akryylin taitekerroin on suurempi kuin $1$. Se pätee kaikille läpinäkyville aineille. Arvo $1{,}5$ sopii akryylille ja lasille. Valo taittuu akryyliin tullessaan kohti pinnan normaalia. Siksi $\sin\alpha_2 < \sin\alpha_1$, ja suoran kulmakertoimen pitää olla suurempi kuin $1$.
+
+### b)
+**Annettu:** $n = 1{,}5$ (a-kohta), $c = 3{,}00 \cdot 10^8\,\text{m/s}$, levyn paksuus $d = 15\,\text{cm}$
+**Kysytty:** valon nopeus $v$ akryylissä ja kulkuaika $t$ levyn läpi
+**Periaate:** Taitekerroin kertoo, kuinka paljon hitaammin valo etenee aineessa kuin tyhjiössä (ilmassa): $n = \dfrac{c}{v}$ (luku *Valon heijastuminen ja taittuminen*). Kohtisuoraan kulkeva valo ei taitu. Se kulkee matkan $d$ tasaisella nopeudella $v$.
+**Kaava:** $v = \dfrac{c}{n}$ ja $t = \dfrac{d}{v}$
+**Muunnokset:** Paksuus metreinä: $d = 15\,\text{cm} = 0{,}15\,\text{m}$
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{3,00 \cdot 10^8\,\text{m/s}}{1,5} \\
+&= 2,0 \cdot 10^8\,\text{m/s}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+t &= \dfrac{0,15\,\text{m}}{2,0 \cdot 10^8\,\text{m/s}} \\
+&= 7,5 \cdot 10^{-10}\,\text{s} \\
+&= 0,75\,\text{ns}
+\end{aligned}
+$$
+**Vastaus:** Valon nopeus akryylissä on $v = 2{,}0 \cdot 10^8\,\text{m/s}$ ja kulkuaika levyn läpi $t = 0{,}75\,\text{ns}$. Tuloksissa on kaksi merkitsevää numeroa, kuten taitekertoimessa.
+**Järkevyys:** Nopeus on kolmasosan pienempi kuin ilmassa. Se sopii siihen, että $n > 1$ tarkoittaa hitaampaa etenemistä aineessa. Ilmassa sama matka vie $\dfrac{0{,}15\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} = 0{,}50\,\text{ns}$, joten aika $0{,}75\,\text{ns}$ on järkevä.
+
+### c)
+**Annettu:** $n = 1{,}5$ (akryyli), ilman taitekerroin $1{,}00$
+**Kysytty:** kokonaisheijastuksen rajakulma $\alpha_\text{r}$, kun valo tulee akryylistä ilmaan
+**Periaate:** Kokonaisheijastus on mahdollinen vain, kun valo tulee tiheämmästä aineesta harvempaan. Tässä valo tulee akryylistä ilmaan. Rajakulmassa taittokulma on $90^\circ$ (luku *Kokonaisheijastuminen ja valokuitu*). Taittumislaki antaa $n \sin\alpha_\text{r} = 1{,}00 \cdot \sin 90^\circ$.
+**Kaava:** $\sin\alpha_\text{r} = \dfrac{1{,}00}{n}$, joten $\alpha_\text{r} = \arcsin\dfrac{1{,}00}{n}$
+**Muunnokset:** Muunnoksia ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+\alpha_\text{r} &= \arcsin\dfrac{1,00}{1,5} \\
+&= \arcsin 0,667 \\
+&= 41,8^\circ
+\end{aligned}
+$$
+**Vastaus:** Rajakulma on $\alpha_\text{r} \approx 42^\circ$. Tuloksessa on kaksi merkitsevää numeroa, kuten taitekertoimessa $1{,}5$. Tätä suuremmilla tulokulmilla valo heijastuu kokonaan.
+**Järkevyys:** Rajakulma on pienempi kuin $90^\circ$. Se on sitä pienempi, mitä suurempi taitekerroin on. Lasilla ($n \approx 1{,}5$) rajakulma on myös noin $42^\circ$.
+
+### d)
+**Kysytty:** miksi suoran pitäisi kulkea origon kautta ja miksi taitekerroin määritetään kulmakertoimesta
+**Periaate:** Malli on $\sin\alpha_1 = n \sin\alpha_2$ (luku *Valon heijastuminen ja taittuminen*), ja mittausaineisto sovitetaan suoralla (luku *Graafinen esitys ja suoran sovittaminen*).
+**Mallivastaus:** Kun tulokulma on nolla, valo kulkee suoraan eikä taitu. Silloin taitekulmakin on nolla. Siis $\sin\alpha_1 = 0$ ja $\sin\alpha_2 = 0$, ja malli antaa suoran, joka kulkee pisteen $(0;\ 0)$ kautta. Kuvaajan suora kulkee lähes origon kautta, joten malli sopii mittaukseen.
+
+Kulmien lukemisessa on satunnaista virhettä, ja pisteet ovat suoran molemmin puolin. Koko aineistoon sovitettu suora tasaa virheet. Siksi sen kulmakerroin on luotettavampi kuin yhden pisteen osamäärä $\sin\alpha_1 : \sin\alpha_2$. Taitekerroin on aineen ominaisuus. Se ei riipu tulokulmasta, joten kaikki pisteet ovat samalla suoralla. Kulmakerroin on sama pienillä ja suurilla kulmilla.
+
+### Yleisiä virheitä
+- a-kohdassa kulmakerroin lasketaan akseleilta väärin päin ($0{,}30 : 0{,}44$), jolloin tulokseksi tulee $0{,}68$ ja taitekerroin olisi alle $1$.
+- a-kohdassa kulmakerroin luetaan mittauspisteistä eikä sovitetulta suoralta, tai käytetään vierekkäisiä pisteitä, jolloin lukuvirhe kasvaa.
+- b-kohdassa levyn paksuutta $15\,\text{cm}$ ei muunneta metreiksi, tai nopeudeksi lasketaan $n c = 4{,}5 \cdot 10^8\,\text{m/s}$, mikä on suurempi kuin valon nopeus ilmassa.
+- c-kohdassa lasketaan $\arcsin 1{,}5$ tai $\arcsin\dfrac{n}{1{,}00}$, jota ei ole olemassa, koska sinin arvo on enintään $1$.
+- d-kohdassa sanotaan, että suoran pitää kulkea origon kautta, "koska kuvaaja on suora", ilman perustelua nollakulmalla.
+
+### Hyväksytään myös
+- c-kohdassa tulos $42^\circ$ tai $41{,}8^\circ$, kunhan tulos on laskettu taitekertoimesta; taitekertoimella $1{,}49$ saadaan $42{,}2^\circ$.
+- b-kohdassa ajan ilmoittaminen muodossa $0{,}75 \cdot 10^{-9}\,\text{s}$.
+
+## fy9-magnetismi-valo-s9
+
+### a)
+**Annettu:** kierrokset $N = 120$; kuvaajan taitepisteet $(0\,\text{s};\ 5{,}0\,\text{mWb})$, $(0{,}40\,\text{s};\ -3{,}0\,\text{mWb})$, $(0{,}60\,\text{s};\ -3{,}0\,\text{mWb})$ ja $(0{,}80\,\text{s};\ 0\,\text{mWb})$
+**Kysytty:** induktiojännitteen suuruus aikaväleillä $0$–$0{,}40\,\text{s}$ ja $0{,}60$–$0{,}80\,\text{s}$
+**Periaate:** Kun käämin läpi kulkeva vuo muuttuu, käämiin indusoituu jännite $e = -N\,\dfrac{\Delta\Phi}{\Delta t}$ (luku *Sähkömagneettinen induktio*). Kuvaaja on kummallakin aikavälillä suora. Silloin vuo muuttuu tasaisesti ja jännite on vakio. Jännitteen suuruus on vuon muutos jaettuna ajalla ja kerrottuna kierrosluvulla.
+**Kuvaajan lukeminen:** Aikavälillä $0$–$0{,}40\,\text{s}$ vuo muuttuu arvosta $5{,}0\,\text{mWb}$ arvoon $-3{,}0\,\text{mWb}$ ja aikavälillä $0{,}60$–$0{,}80\,\text{s}$ arvosta $-3{,}0\,\text{mWb}$ arvoon $0\,\text{mWb}$.
+**Kaava:** $\lvert e \rvert = N\,\dfrac{\lvert \Delta\Phi \rvert}{\Delta t}$
+**Muunnokset:** Vuon yksikkö muunnetaan: $1\,\text{mWb} = 10^{-3}\,\text{Wb}$, joten $\lvert\Delta\Phi_1\rvert = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$ ja $\lvert\Delta\Phi_3\rvert = 3{,}0 \cdot 10^{-3}\,\text{Wb}$.
+**Sijoitus:** $$
+\begin{aligned}
+\lvert e_1 \rvert &= 120 \cdot \dfrac{8,0 \cdot 10^{-3}\,\text{Wb}}{0,40\,\text{s}} \\
+&= 120 \cdot 0,020\,\text{V} \\
+&= 2,4\,\text{V}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\lvert e_3 \rvert &= 120 \cdot \dfrac{3,0 \cdot 10^{-3}\,\text{Wb}}{0,20\,\text{s}} \\
+&= 120 \cdot 0,015\,\text{V} \\
+&= 1,8\,\text{V}
+\end{aligned}
+$$
+**Vastaus:** Aikavälillä $0$–$0{,}40\,\text{s}$ jännite on $2{,}4\,\text{V}$ ja aikavälillä $0{,}60$–$0{,}80\,\text{s}$ $1{,}8\,\text{V}$. Tuloksissa on kaksi merkitsevää numeroa, kuten kuvaajalta luetuissa vuon arvoissa.
+**Järkevyys:** Ensimmäisellä aikavälillä vuo muuttuu enemmän ($8{,}0\,\text{mWb}$ ja $3{,}0\,\text{mWb}$), mutta aikaa on myös kaksi kertaa enemmän. Kuvaajan suora on ensimmäisellä aikavälillä jyrkempi ($20\,\text{mWb/s}$ ja $15\,\text{mWb/s}$). Siksi jännitteen on oltava suurempi: $2{,}4\,\text{V} > 1{,}8\,\text{V}$.
+
+### b)
+**Annettu:** a-kohdan jännitteet $2{,}4\,\text{V}$ ja $1{,}8\,\text{V}$, piirin resistanssi $R = 8{,}0\,\Omega$, aikavälit $0{,}40\,\text{s}$ ja $0{,}20\,\text{s}$ sekä aikaväli $0{,}40$–$0{,}60\,\text{s}$, jolla vuo on vakio
+**Kysytty:** sisäenergiaksi muuttuva sähköenergia $W$ koko ajalta $0$–$0{,}80\,\text{s}$
+**Periaate:** Aikavälillä $0{,}40$–$0{,}60\,\text{s}$ vuo on vakio. Silloin jännite ja virta ovat nolla, eikä energiaa muutu. Muilla aikaväleillä jännite on vakio. Vastuksen $R$ lämpenemisteho on $P = \dfrac{e^2}{R}$ (luku *Sähköteho ja vastuksen lämpeneminen*). Energia on teho kerrottuna ajalla: $W = P\,\Delta t$.
+**Kaava:** $W = \dfrac{e_1^2}{R}\,\Delta t_1 + \dfrac{e_3^2}{R}\,\Delta t_3$
+**Muunnokset:** Muunnoksia ei tarvita. Jännite on voltteina, resistanssi ohmeina ja aika sekunteina, joten tulos on joulea.
+**Sijoitus:** $$
+\begin{aligned}
+W &= \dfrac{(2,4\,\text{V})^2}{8,0\,\Omega} \cdot 0,40\,\text{s} \\
+&+ \dfrac{(1,8\,\text{V})^2}{8,0\,\Omega} \cdot 0,20\,\text{s} \\
+&= 0,72\,\text{W} \cdot 0,40\,\text{s} + 0,405\,\text{W} \cdot 0,20\,\text{s} \\
+&= 0,288\,\text{J} + 0,081\,\text{J} \\
+&= 0,369\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** Sähköenergiaa muuttuu sisäenergiaksi $W \approx 0{,}37\,\text{J}$. Tuloksessa on kaksi merkitsevää numeroa, kuten resistanssissa $8{,}0\,\Omega$.
+**Järkevyys:** Teho on alle watin ($0{,}72\,\text{W}$ ja $0{,}41\,\text{W}$), ja aikaa on alle sekunti. Siksi energia on alle joulen. Yksikkö: $\dfrac{\text{V}^2}{\Omega}\,\text{s} = \text{W}\,\text{s} = \text{J}$.
+
+### c)
+**Kysytty:** induktiovirran suunta eri aikaväleillä ja vuon nollakohdan vaikutus
+**Periaate:** Jännite indusoituu vain, kun vuo muuttuu. Se riippuu vuon muutosnopeudesta (luku *Sähkömagneettinen induktio*). Lenzin lain mukaan induktiovirran magneettikenttä vastustaa vuon muutosta (luku *Lenzin laki ja pyörrevirrat*).
+**Mallivastaus:** Aikavälillä $0{,}40$–$0{,}60\,\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla. Aikavälillä $0$–$0{,}40\,\text{s}$ vuo pienenee. Induktiovirta vastustaa pienenemistä. Sen oma magneettikenttä osoittaa siis vuon positiiviseen suuntaan, ja induktiojännite on positiivinen. Aikavälillä $0{,}60$–$0{,}80\,\text{s}$ vuo kasvaa kohti nollaa. Induktiovirta vastustaa kasvua. Sen kenttä osoittaa siis negatiiviseen suuntaan, ja virta kulkee vastakkaiseen suuntaan kuin ensimmäisellä aikavälillä ($e = -1{,}8\,\text{V}$).
+
+Vuo on nolla hetkellä $t = \dfrac{5{,}0\,\text{mWb}}{20\,\text{mWb/s}} = 0{,}25\,\text{s}$. Silloin vuon muutosnopeus on sama $-20\,\text{mWb/s}$ kuin ennen ja jälkeen. Induktiojännite on edelleen $2{,}4\,\text{V}$. Jännite riippuu vuon muutosnopeudesta eikä vuon arvosta. Siksi virran suunta ei muutu, vaikka vuon etumerkki vaihtuu.
+
+### Yleisiä virheitä
+- a-kohdassa lasketaan vuon muutokseksi $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb} = 2{,}0\,\text{mWb}$ tai käytetään vain loppuarvoa $3{,}0\,\text{mWb}$, vaikka vuo vaihtaa etumerkkiä; oikea muutos on $8{,}0\,\text{mWb}$.
+- a-kohdassa $\text{mWb}$ jää muuntamatta yksiköksi $\text{Wb}$, jolloin jännite on tuhannesosa oikeasta.
+- b-kohdassa lasketaan energia koko ajalta yhdellä jännitteellä tai otetaan väli $0{,}40$–$0{,}60\,\text{s}$ mukaan nollasta poikkeavalla jännitteellä.
+- c-kohdassa sanotaan, että virran suunta vaihtuu, kun vuo on nolla, tai että virta on nolla silloin; virta riippuu muutosnopeudesta, ei vuon arvosta.
+
+### Hyväksytään myös
+- b-kohdassa teho muodossa $P = e I$ virran $I = \dfrac{e}{R}$ kautta: $I_1 = 0{,}30\,\text{A}$ ja $I_3 = 0{,}225\,\text{A}$ antavat saman tuloksen $0{,}37\,\text{J}$.
