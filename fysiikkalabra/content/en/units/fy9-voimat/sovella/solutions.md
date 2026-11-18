@@ -496,7 +496,8 @@ v alas
 **Substitution:** $$
 \begin{aligned}
 F_\text{v} &= 75.0\,\text{kg} \\
-&\quad \cdot (9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) \\
+&\quad \cdot (9.81\,\text{m/s}^2 \\
+&\qquad - 1.5\,\text{m/s}^2) \\
 &= 75.0\,\text{kg} \cdot 8.31\,\text{m/s}^2 \\
 &= 623\,\text{N}
 \end{aligned}
