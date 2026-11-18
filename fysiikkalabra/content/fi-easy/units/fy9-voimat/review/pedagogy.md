@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cd9e21b2902c37f6
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: b30a3481b4ee561b
+SCOPE: delta: fi-easy; only change since the previous pass is s7 b) rubric detail (tasks.json), Substitution/Sijoitus row "F_v = 75,0 kg · (9,81 m/s² − 1,5 m/s²)" split into three aligned rows for 360 px; other tasks not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- C: inquiry.json lt-6: the first distractor's feedback says "lepokitkan yläraja eli suurin mahdollinen arvo", the prompt now "Lähtökitka"; the feedback could name lähtökitka too.
+- Earlier Polish items remain recorded and unchanged; nothing new.
 
 ## Checked
-- inquiry.json lt-6: read the whole task. The new prompt gives 90 N as lähtökitka without hinting at 40 N; distractors and feedbacks still fit; the term matches unit.md 154 and 247.
-- sovella/solutions.md Järkevyys: "Luiska pienentää tarvittavaa voimaa, ei työtä. Kitka vie tästä hyödystä kuitenkin paljon." is correct physics (665 N + 666 N against weight 2,7 kN) and clear.
-- solutions.md Periaate (rajakulma): sentence grammatical, μ0 = tan α0 derivation unaffected.
-- No task added in fi-easy.
+- tasks.json s7 b detail now reads F_v = 75 kg; · (9.81 − 1.5 m/s² split over two lines); ≈ 623 N: same numbers, order, signs and units; 75.0 · 8.31 = 623 N holds.
+- Identical structure in fi, en and fi-easy; no new content, wording or step added.

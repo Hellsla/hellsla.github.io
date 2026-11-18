@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b3f1ae734e0cf71d
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 33f954faa91767d5
+SCOPE: delta: CI 360 px layout fix, sovella tasks.json s7 b) rubric Substitution row split into three aligned rows (fi); all else not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- Earlier Polish items stay recorded; nothing new.
 
 ## Checked
-- inquiry.json lt-6 prompt: lähtökitka 90 N, push 40 N; correct option 40 N, the feedback's "lepokitkan yläraja" agrees with the new term. solutions.md s1 b Järkevyys: the ramp reduces the force, not the work, correct. s5 a Periaate: at the limit angle the weight component equals the lähtökitka, giving μ0 = tan α0. Recomputed: 665 N and 666 N, T = 1,33 kN, weight 2,75 kN.
-- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-voimat` OK; hash the same at start and end.
+git diff of unit content: only the s7 b) Substitution detail in tasks.json. Same numbers, order, signs and units: 75.0 kg · (9.81 m/s² − 1.5 m/s²) ≈ 623 N (75 · 8.31 = 623.25). Split into rows "75.0 kg", "· (9.81 m/s²", "− 1.5 m/s²)" with unchanged result row; parenthesis still closes, minus kept. Decimal comma/point correct for the language. No new content.
