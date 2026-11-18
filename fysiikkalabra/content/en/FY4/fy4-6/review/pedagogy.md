@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 40aa8b8489e870d0
+CONTENT-HASH: b194c54ac0521986
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- lesson.md "Determining the coefficient of friction" — says the coefficient is the slope of a line through the origin in the (N, F) graph, but the optional spring-balance task (aineisto) asks for the mean of four ratios, and writes "$\mu = F : mg$" with a colon. Make the task fit the text (ask for the slope, or a graph) and write the fraction $F/(mg)$.
-- lesson.md, snow-sledding photo — it sits after the inclined-plane formula with a caption that says nothing about friction. Tie it to the content (a sled on snow: small $\mu$, slides at a gentle slope) or put it beside the paragraph it illustrates.
-- lesson.md, "Common misconception" — about 160 words in one paragraph (limit about 120). Split it into three: static friction adapts, friction can point forward, N is not always mg.
-- inquiry.json exp-2 — the model values only confirm the formula $a = g(\sin\alpha - \mu\cos\alpha)$, so it shows that the mass cancels but does not test it. The conclusion honestly says the limit-angle independence was not measured. Acceptable. A third experiment is not needed, but the reflection could ask the student to say why the table cannot show it.
-- The "kalteva-ydin" and "kalteva" figures have the same drawing and description, once in Key idea and once in Formula. The second can show the same drawing with the formulas for $G_x$ and $G_y$ added, or it can be dropped.
+- The packet header said hash c3f18f9d69e12e96; the lesson is now b194c54ac0521986. I judged the current lesson.md directly, plus the packet's inquiry/exercise text (unchanged parts). `review_packet.py` wrote the Finnish packet, not the English one.
+- Stop and think 3 (steep slope) restates the paragraph's last sentence almost word for word, so it is recall, not thinking. Better: "A heavy and a light box lie on the same slope. Why do they start to slide at the same angle?" (answerable from the paragraph plus the mass-cancels idea) or "What happens to the maximum static friction as the slope steepens?"
+- Question 2 ("How large is the static friction?") could say "compared with your pull" so the expected answer is clear before the student opens it.
+- Question 1 is pure recall of the paragraph's Moon example; add "and why?" so the student argues.
+- Only the Key idea subsections have these; "Determining the coefficient of friction" (the experimental goal) has none. Optional: "You tilt a board until the box slides at 30°. What is mu_0?"
 
 ## Checked
-- Path: hook, an optional retrieval of the normal force, two predictions that experiments can refute (friction grows with the angle; the mass cancels), exp-1 gives $\mu_0$ from the limiting angle, the conclusion needs both experiments, then theory, example, tasks. One lesson's workload.
-- Predictions: the wrong options carry real misconceptions (constant friction, friction decreases with N). Their feedback repairs them, and the numbers appear only after the student commits.
-- Answers are not disclosed in the hook, the prediction prompts or the figure descriptions. The "virhe" and "valitse" descriptions list the arrows without judging them.
-- The experiment tasks are consistent with the model values (tan 26.5° = 0.4986, a = 3.22 m/s², friction 5.2 N after sliding starts). Their wrong-value feedback is specific (sin, cos).
-- Force-diagram plan (select, error, draw, equations) is covered. check-3 is "draw": true with a model figure and criteria. Each distractor diagram has one error that its feedback names. Every solution has the diagram before the equations.
-- Tasks: the suitcase on a walkway (friction in the direction of motion, example J) is a real transfer. Check-1 tests static friction below its limit. Check-2 tests $\mu=\tan\alpha$. The exit ticket covers $\tan\alpha_0$, forward friction and mass versus weight.
-- Not judged: captures were not available ("none yet"), so layout at 360 and 1280 px, figure legibility and the simulation in use are left to the visual reviewer. The exercises are reviewed separately.
-- English is clear. The worked example is staged and its solution has all seven steps. The hash was unchanged at the end.
+Each question against the paragraph just before it:
+1. Weight: mass unchanged, weight smaller. The paragraph states both (mass is the same everywhere, weight depends on place). Answerable.
+2. Static/sliding: static friction equals the pull and is opposite, net force zero. Stated in the paragraph. Answerable.
+3. Inclined plane: answerable from the last paragraph sentence, but pure recall (see Polish).
+4. Friction and motion: walking, ground friction pushes the foot forward. The paragraph explains it. Answerable. This repairs the "friction always opposes motion" misconception.
+No question needs a later subsection or the formula. Each is short (one idea) and the answer is closed until opened. They sit in the Teoria stage, after the experiments, so no premature disclosure. Wording is plain English; LaTeX units are correct (`$80\,\text{kg}$`).
+
+Not re-judged (unchanged, passed in round 1): hook, predictions, experiments, conclusion, worked example, exercises, exit ticket. Task figure `fy4-6/virhe` not re-opened. Captures: I opened none; `review/shots.md` has no capture of an opened Stop and think box, so I checked the template (`stopthink.as_html`, lang `stop_think` = "Stop and think", openable answer) in source only. The visual reviewer should confirm the box on 390 px.
