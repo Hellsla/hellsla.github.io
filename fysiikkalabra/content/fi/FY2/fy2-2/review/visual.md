@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6fd5a9ee46fb3b5c
+CONTENT-HASH: 98b85659627fb4ea
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: only the closed optional retrieval task in inquiry.json changed (wording, no symbols); read the diff, no figure or layout change.
+batch delta review: fy2-2 inquiry 'Etsi virhe' prompt rendered at 390 px (display chain above the question, aligned rows, choices intact); sovella-390-1/2 for the surroundings. Figures untouched by the diff, not reopened.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
