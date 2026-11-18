@@ -77,10 +77,9 @@ Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei p�
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
-Varattu: claude/fy10-8c (FY10: tutkimukset ja TVT-ohjeet, kaikki kielet; FY9 tehdään myöhemmin)
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686). Jäljellä
-järjestyksessä FY8 → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
+Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686), FY10 (ei jaettavaa: kurssilla on vain tutkimukset ja TVT-ohjeet, joissa ei ole esimerkkien vaiheita eikä ratkaisujen vaiheita, ei `<!-- vaihe -->`-rivejä eikä Annettu/Kysytty-vaiheita; pitkät kappaleet ovat ohjeproosaa säännön ulkopuolella; vain suomeksi, tutkimuksista ei ole käännöksiä). Jäljellä
+järjestyksessä FY8 → FY9. Kurssi kerrallaan, kaikki kielet
 (`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
 muiden avointen kohtien kanssa samassa PR:ssä.
 
