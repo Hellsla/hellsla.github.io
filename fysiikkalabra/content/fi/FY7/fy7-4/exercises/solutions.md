@@ -57,7 +57,7 @@
 **Annettu:** etäisyys $r_1 = 4{,}0\,\text{cm}$, voima $F_1 = 0{,}60\,\text{N}$, uusi etäisyys $r_2 = 8{,}0\,\text{cm}$; virrat $I_1$ ja $I_2$ ja pituus $l = 1{,}0\,\text{m}$ pysyvät samoina
 **Kysytty:** voima $F_2$ newtoneina uudella etäisyydellä
 **Periaate:** Toisen johtimen kentän suuruus on $B_1 = \dfrac{\mu_0 I_1}{2\pi r}$, ja se pienenee etäisyyden kasvaessa. Voima toiseen johtimeen on $F = I_2 l B_1$, joten voima on kääntäen verrannollinen etäisyyteen, kun virrat ja pituus eivät muutu.
-**Kaava:** $F = \dfrac{\mu_0 I_1 I_2 l}{2\pi r}$, joten $F r$ on vakio ja $F_1 r_1 = F_2 r_2$, josta $F_2 = F_1 \cdot \dfrac{r_1}{r_2}$
+**Kaava:** $$\begin{aligned} F &= I_2 l B_1 \\ B_1 &= \dfrac{\mu_0 I_1}{2\pi r} \\ F &= \dfrac{\mu_0 I_1 I_2 l}{2\pi r} \\ F_1 r_1 &= F_2 r_2 \\ F_2 &= F_1 \cdot \dfrac{r_1}{r_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyyksiä verrataan keskenään, joten senttimetrit supistuvat.
 **Sijoitus:** $F_2 = 0{,}60\,\text{N} \cdot \dfrac{4{,}0\,\text{cm}}{8{,}0\,\text{cm}} = 0{,}60\,\text{N} \cdot 0{,}50 = 0{,}30\,\text{N}$
 **Vastaus:** $0{,}30\,\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
@@ -67,7 +67,7 @@
 **Annettu:** kulma $\alpha_1 = 20^\circ$, voima $F_1 = 0{,}050\,\text{N}$, uusi kulma $\alpha_2 = 40^\circ$; $I$, $l$ ja $B$ pysyvät samoina
 **Kysytty:** voima $F_2$ newtoneina uudessa kulmassa
 **Periaate:** Voima on $F = I l B \sin\alpha$, ja $I$, $l$ ja $B$ eivät muutu, joten voima on verrannollinen kulman siniin $\sin\alpha$ eikä itse kulmaan $\alpha$. Kulman kaksinkertaistaminen ei siksi kaksinkertaista voimaa.
-**Kaava:** $\dfrac{F_2}{F_1} = \dfrac{I l B \sin\alpha_2}{I l B \sin\alpha_1} = \dfrac{\sin\alpha_2}{\sin\alpha_1}$, josta $F_2 = F_1 \cdot \dfrac{\sin\alpha_2}{\sin\alpha_1}$
+**Kaava:** $$\begin{aligned} F_1 &= I l B \sin\alpha_1 \\ F_2 &= I l B \sin\alpha_2 \\ \dfrac{F_2}{F_1} &= \dfrac{\sin\alpha_2}{\sin\alpha_1} \\ F_2 &= F_1 \cdot \dfrac{\sin\alpha_2}{\sin\alpha_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina, ja kulmat annetaan asteina suoraan sinifunktiolle.
 **Sijoitus:** $F_2 = 0{,}050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0{,}050\,\text{N} \cdot \dfrac{0{,}6428}{0{,}3420} = 0{,}09397\,\text{N}$
 **Vastaus:** $0{,}094\,\text{N}$, kaksi merkitsevää numeroa kuten voimassa $0{,}050\,\text{N}$.
@@ -93,7 +93,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Kenttä kohdistaa johtimeen voiman $F = I l B$, ja Newtonin kolmannen lain mukaan johdin kohdistaa magneettiin yhtä suuren vastakkaissuuntaisen voiman. Siksi vaa'an lukema muuttuu: muutosta $\Delta m$ vastaa voima $F = \Delta m \cdot g$. Suora kulkee origon kautta, koska ilman virtaa voimaa ei ole.
 **Kuvaajan lukeminen:** Mittauspisteet poikkeavat hieman suorasta mittausepätarkkuuden vuoksi, joten käytetään pisteisiin sovitettua suoraa, joka tasoittaa poikkeamat. Suora kulkee origon ja ruudukon pisteen ($5{,}0\,\text{A}$; $1{,}50\,\text{g}$) kautta. Luetaan siis virta $I = 5{,}0\,\text{A}$ ja sitä vastaava muutos $\Delta m = 1{,}50\,\text{g}$ suoralta, ei yksittäisestä mittauspisteestä: viimeinen mittauspiste $1{,}47\,\text{g}$ on hieman suoran alapuolella.
-**Kaava:** $\Delta m \cdot g = I l B$, josta $B = \dfrac{\Delta m \cdot g}{I l}$
+**Kaava:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Muunnokset:** $\Delta m = 1{,}50\,\text{g} = 1{,}50 \cdot 0{,}001\,\text{kg} = 0{,}00150\,\text{kg}$ ja $l = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$
 **Sijoitus:** $B = \dfrac{0{,}00150\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{5{,}0\,\text{A} \cdot 0{,}040\,\text{m}} = \dfrac{0{,}014715\,\text{N}}{0{,}20\,\text{A}\cdot\text{m}} = 0{,}0736\,\text{T}$
 **Vastaus:** $0{,}074\,\text{T}$, kaksi merkitsevää numeroa kuten pituudessa $4{,}0\,\text{cm}$.
@@ -113,7 +113,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** kiskojen väli eli tangon osa virran tiellä $l = 8{,}0\,\text{cm}$, $B = 0{,}30\,\text{T}$ pystysuoraan, $I = 15\,\text{A}$, tangon massa $m = 20\,\text{g}$, ei kitkaa
 **Kysytty:** tangon kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Virta kulkee tangon läpi kiskolta toiselle, joten tangon $l = 8{,}0\,\text{cm}$:n osa on virtajohdin, joka on kohtisuorassa pystysuoraa kenttää vastaan. Voima $F = I l B$ on vaakasuora ja kiskojen suuntainen. Paino ja kiskojen tukivoima kumoavat toisensa, eikä kitkaa ole, joten Newtonin toisen lain mukaan $F = m a$.
-**Kaava:** $I l B = m a$, josta $a = \dfrac{I l B}{m}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a \\ \Sigma F &= I l B \\ I l B &= m a \\ a &= \dfrac{I l B}{m} \end{aligned}$$
 **Muunnokset:** $l = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$ ja $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$
 **Sijoitus:** $a = \dfrac{15\,\text{A} \cdot 0{,}080\,\text{m} \cdot 0{,}30\,\text{T}}{0{,}020\,\text{kg}} = \dfrac{0{,}36\,\text{N}}{0{,}020\,\text{kg}} = 18\,\text{m/s}^2$
 **Vastaus:** $18\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
@@ -123,7 +123,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** taulukon mittaukset $(l;\ \Delta m)$: $(2{,}0\,\text{cm};\ 0{,}35\,\text{g})$, $(3{,}0\,\text{cm};\ 0{,}51\,\text{g})$, $(4{,}0\,\text{cm};\ 0{,}71\,\text{g})$, $(5{,}0\,\text{cm};\ 0{,}86\,\text{g})$ ja $(6{,}0\,\text{cm};\ 1{,}04\,\text{g})$; virta $I = 2{,}0\,\text{A}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** magneettivuon tiheyden keskiarvo $B_{\text{ka}}$ tesloina ja hajonta
 **Periaate:** Kun virta kulkee kentässä, johtimeen kohdistuu voima $F = I l B$, ja vaaka mittaa sen painon muutoksena $F = \Delta m \cdot g$. Jokainen mittaus antaa oman arvon $B$:lle. Tulokset eivät yleensä ole täsmälleen samat mittausepävarmuuden vuoksi, joten ne keskiarvoistetaan.
-**Kaava:** $\Delta m \cdot g = I l B$, josta $B = \dfrac{\Delta m \cdot g}{I l}$
+**Kaava:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Muunnokset:** $\Delta m$ grammoista kilogrammoiksi ja $l$ senttimetreistä metreiksi: esimerkiksi $0{,}35\,\text{g} = 0{,}35 \cdot 10^{-3}\,\text{kg}$ ja $2{,}0\,\text{cm} = 0{,}020\,\text{m}$.
 **Sijoitus:** Ensimmäinen rivi: $B = \dfrac{0{,}35 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{A} \cdot 0{,}020\,\text{m}} = 0{,}0858\,\text{T}$. Samoin muut rivit antavat $0{,}0834\,\text{T}$, $0{,}0871\,\text{T}$, $0{,}0844\,\text{T}$ ja $0{,}0850\,\text{T}$. Summa on $0{,}4257\,\text{T}$, joten $B_{\text{ka}} = 0{,}4257\,\text{T} : 5 = 0{,}08513\,\text{T}$. Hajonta on $$\begin{aligned} &(0{,}0871\,\text{T} - 0{,}0834\,\text{T}) : 2 \\ &= 0{,}0018\,\text{T} \end{aligned}$$.
 **Vastaus:** $B_{\text{ka}} = 0{,}085\,\text{T}$, kaksi merkitsevää numeroa kuten virrassa ja pituuksissa; hajonta on likimain $0{,}002\,\text{T}$, joten tulos on $(0{,}085 \pm 0{,}002)\,\text{T}$. Hajonta on yksinkertainen arvio mittausten vaihtelusta, ei keskiarvon epävarmuus.
@@ -133,7 +133,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** johtimen vaakasuoran osan pituus $6{,}0\,\text{cm}$, kentässä oleva pituus $l = 2{,}5\,\text{cm}$, virta $I = 3{,}0\,\text{A}$, lukeman muutos $\Delta m = 0{,}31\,\text{g}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** a) opiskelijan virhe; b) magneettivuon tiheys $B$ tesloina
 **Periaate:** Kaavassa $F = I l B$ pituus $l$ on vain kentässä olevan johtimen osan pituus, koska kenttä kohdistaa voiman vain siihen osaan. Opiskelija käytti koko johtimen pituutta $6{,}0\,\text{cm}$, vaikka kentässä on vain $2{,}5\,\text{cm}$. Siksi hänen jakajansa oli liian suuri ja $B$ liian pieni.
-**Kaava:** $\Delta m \cdot g = I l B$, josta $B = \dfrac{\Delta m \cdot g}{I l}$
+**Kaava:** $$\begin{aligned} F &= I l B \\ F &= \Delta m \cdot g \\ \Delta m \cdot g &= I l B \\ B &= \dfrac{\Delta m \cdot g}{I l} \end{aligned}$$
 **Muunnokset:** $\Delta m = 0{,}31\,\text{g} = 0{,}31 \cdot 10^{-3}\,\text{kg}$ ja $l = 2{,}5\,\text{cm} = 0{,}025\,\text{m}$
 **Sijoitus:** $B = \dfrac{0{,}31 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{3{,}0\,\text{A} \cdot 0{,}025\,\text{m}} = \dfrac{3{,}041 \cdot 10^{-3}\,\text{N}}{0{,}075\,\text{A}\cdot\text{m}} = 0{,}04055\,\text{T}$
 **Vastaus:** a) Opiskelija jakoi voiman koko johtimen pituudella $6{,}0\,\text{cm}$ kentässä olevan osan $2{,}5\,\text{cm}$ sijaan. b) $B = 0{,}041\,\text{T}$, kaksi merkitsevää numeroa kuten lukeman muutoksessa $0{,}31\,\text{g}$.
@@ -144,7 +144,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Kysytty:** kelan johtimen kokonaispituus $l$ metreinä
 **Periaate:** Säteittäisessä kentässä jokainen johtimen kohta on kohtisuorassa kenttää vastaan, joten voima on $F = I l B$ ja $l$ on koko johtimen pituus. Kun $B$ ja $l$ eivät muutu, $F$ on suoraan verrannollinen virtaan $I$. Suora kulkee origon kautta, koska ilman virtaa kelaan ei kohdistu voimaa.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee origon ja pisteen $(1{,}00\,\text{A};\ 5{,}8\,\text{N})$ kautta. Kulmakerroin luetaan suoralta, ei kahdelta vierekkäiseltä mittauspisteeltä.
-**Kaava:** Suoran kulmakerroin on $k = \dfrac{F}{I} = B l$, josta $l = \dfrac{k}{B}$
+**Kaava:** $$\begin{aligned} F &= I l B \\ k &= \dfrac{F}{I} = B l \\ l &= \dfrac{k}{B} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $\text{N}/\text{A} = \text{T}\cdot\text{m}$, joten $k : B$ on metreinä.
 **Sijoitus:** $k = \dfrac{5{,}8\,\text{N} - 0\,\text{N}}{1{,}00\,\text{A} - 0\,\text{A}} = 5{,}8\,\dfrac{\text{N}}{\text{A}}$ ja $l = \dfrac{5{,}8\,\text{N/A}}{1{,}1\,\text{T}} = 5{,}27\,\text{m}$
 **Vastaus:** $5{,}3\,\text{m}$, kaksi merkitsevää numeroa kuten kentässä $1{,}1\,\text{T}$. Silmämääräisen sovituksen takia vastaus $5{,}1\text{–}5{,}5\,\text{m}$ on hyvä.
@@ -154,7 +154,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** tangon massa $m = 12\,\text{g}$, pituus kentässä $l = 20\,\text{cm}$, $B = 0{,}25\,\text{T}$, tanko kohtisuorassa vaakasuoraa kenttää vastaan; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** virta $I$, jolla langat jäävät löysiksi
 **Periaate:** Langat ovat löysiä, kun niiden jännitysvoima on nolla. Silloin tankoon vaikuttavat vain paino alaspäin ja magneettinen voima. Tanko on levossa, joten Newtonin ensimmäisen lain mukaan voimien on kumottava toisensa: magneettisen voiman on osoitettava ylöspäin ja oltava painon suuruinen. Kenttä on vaakasuora ja tanko kohtisuorassa sitä vastaan, joten voima $I l B$ on pystysuora; virran suunta valitaan niin, että voima osoittaa ylöspäin.
-**Kaava:** $I l B = m g$, josta $I = \dfrac{m g}{l B}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= F_\text{B} - m g = 0 \\ F_\text{B} &= I l B \\ I l B &= m g \\ I &= \dfrac{m g}{l B} \end{aligned}$$
 **Muunnokset:** $m = 12\,\text{g} = 12 \cdot 0{,}001\,\text{kg} = 0{,}012\,\text{kg}$ ja $$\begin{aligned} l &= 20\,\text{cm} \\ &= 20 \cdot 0{,}01\,\text{m} \\ &= 0{,}20\,\text{m} \end{aligned}$$
 **Sijoitus:** $I = \dfrac{0{,}012\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}20\,\text{m} \cdot 0{,}25\,\text{T}} = \dfrac{0{,}11772\,\text{N}}{0{,}050\,\text{T}\cdot\text{m}} = 2{,}354\,\text{A}$
 **Vastaus:** $2{,}4\,\text{A}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
@@ -174,7 +174,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** langan pituus $l = 1{,}0\,\text{m}$, massa $m = 2{,}7\,\text{g}$, lanka vaakasuorassa kompassin mukaan itä–länsisuunnassa; Maan kenttä $B = 53\,\mu\text{T}$ magneettiseen pohjoiseen ja alaspäin $74^\circ$:n kulmassa vaakatasoon nähden; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** virta $I$ kiloampeereina
 **Periaate:** Jaetaan kenttä vaaka- ja pystykomponenttiin. Lanka on kompassin mukaan itä–länsisuunnassa, joten se on kohtisuorassa magneettiseen pohjoiseen osoittavaa vaakakomponenttia vastaan ja myös pystykomponenttia vastaan. Pystykomponentti kohdistaa lankaan vaakasuoran voiman, joka ei kannattele lankaa. Vaakakomponentti $B_\text{vaaka} = B \cos 74^\circ$ osoittaa magneettiseen pohjoiseen, ja oikean käden säännön mukaan itään kulkevaan virtaan kohdistuu siitä pystysuora voima ylöspäin. Lanka pysyy paikallaan, kun tämä voima on painon suuruinen.
-**Kaava:** $I l B \cos 74^\circ = m g$, josta $I = \dfrac{m g}{l B \cos 74^\circ}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= F_\text{B} - m g = 0 \\ F_\text{B} &= I l B \cos 74^\circ \\ I l B \cos 74^\circ &= m g \\ I &= \dfrac{m g}{l B \cos 74^\circ} \end{aligned}$$
 **Muunnokset:** $m = 2{,}7\,\text{g} = 2{,}7 \cdot 0{,}001\,\text{kg} = 0{,}0027\,\text{kg}$ ja $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$. Lopuksi $1\,\text{kA} = 1000\,\text{A}$.
 **Sijoitus:** $I = \dfrac{0{,}0027\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}0\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \cos 74^\circ} = \dfrac{0{,}026487\,\text{N}}{1{,}4609 \cdot 10^{-5}\,\text{T}\cdot\text{m}} = 1813\,\text{A} = 1{,}813\,\text{kA}$
 **Vastaus:** $1{,}8\,\text{kA}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
@@ -185,7 +185,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Kysytty:** magneettivuon tiheys $B$ tesloina (ja lisäksi liukukitkakerroin $\mu$)
 **Periaate:** Kenttä on pystysuora, joten magneettinen voima $I l B$ on vaakasuora. Paino ja tukivoima kumoavat toisensa, joten tukivoima on $m g$ ja liukukitka $\mu m g$ vastustaa liikettä. Newtonin toisen lain mukaan $m a = I l B - \mu m g$, eli $a = kI + b$: kiihtyvyys on virran lineaarinen funktio. Kitka tekee vakiotermistä negatiivisen, joten suora ei kulje origon kautta: liikkuvan tangon kiihtyvyys on positiivinen vain, kun $I l B > \mu m g$.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(4{,}0\,\text{A};\ 1{,}78\,\text{m/s}^2)$ ja $(12{,}0\,\text{A};\ 9{,}26\,\text{m/s}^2)$ kautta, ja se leikkaa pystyakselin kohdassa $-1{,}96\,\text{m/s}^2$. Pisteet luetaan suoralta ja valitaan kaukana toisistaan.
-**Kaava:** $a = \dfrac{l B}{m} \cdot I - \mu g$, joten kulmakerroin on $k = \dfrac{l B}{m}$, josta $B = \dfrac{k m}{l}$, ja vakiotermi on $b = -\mu g$, josta $\mu = -\dfrac{b}{g}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a \\ F_\mu &= \mu N = \mu m g \\ \Sigma F &= I l B - \mu m g \\ a &= \dfrac{l B}{m} \cdot I - \mu g \\ k &= \dfrac{l B}{m} \\ B &= \dfrac{k m}{l} \\ b &= -\mu g \\ \mu &= -\dfrac{b}{g} \end{aligned}$$
 **Muunnokset:** $m = 45\,\text{g} = 0{,}045\,\text{kg}$ ja $l = 12\,\text{cm} = 0{,}12\,\text{m}$
 **Sijoitus:** $k = \dfrac{9{,}26\,\text{m/s}^2 - 1{,}78\,\text{m/s}^2}{12{,}0\,\text{A} - 4{,}0\,\text{A}} = 0{,}935\,\dfrac{\text{m/s}^2}{\text{A}}$, joten $B = \dfrac{0{,}935\,\text{m/s}^2\text{/A} \cdot 0{,}045\,\text{kg}}{0{,}12\,\text{m}} = 0{,}351\,\text{T}$. Lisäksi $\mu = \dfrac{1{,}96\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}200$.
 **Vastaus:** $B = 0{,}35\,\text{T}$, kaksi merkitsevää numeroa kuten massassa ja pituudessa; liukukitkakerroin on $\mu = 0{,}20$.
@@ -195,7 +195,7 @@ $$, ja $0{,}094\,\text{N}$ jää sen alle.
 **Annettu:** ylemmän johtimen pituus $l = 0{,}50\,\text{m}$, massa $m = 3{,}0\,\text{g}$, johtimien etäisyys $r = 1{,}0\,\text{cm}$, sama virta $I$ molemmissa; $g = 9{,}81\,\text{m/s}^2$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** a) virran suunnat ja virta $I$ ampeereina; b) onko leijuminen vakaata pystysuunnassa
 **Periaate:** Ylempi johdin leijuu, kun siihen vaikuttavat voimat kumoavat toisensa: paino osoittaa alas, joten alemman johtimen kentän voiman täytyy osoittaa ylös eli johtimien täytyy hylkiä toisiaan. Hylkimiseen tarvitaan vastakkaissuuntaiset virrat, koska samansuuntaiset virrat vetäisivät johtimia toisiaan kohti. Alemman johtimen kenttä on kohtisuorassa ylempää vastaan, joten voima on $F = I l B_1$, missä $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
-**Kaava:** $I l B_1 = m g$, eli $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, josta $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ I l B_1 &= m g \\ B_1 &= \dfrac{\mu_0 I}{2\pi r} \\ \dfrac{\mu_0 I^2 l}{2\pi r} &= m g \\ I^2 &= \dfrac{2\pi r m g}{\mu_0 l} \\ I &= \sqrt{\dfrac{2\pi r m g}{\mu_0 l}} \end{aligned}$$
 **Muunnokset:** $m = 3{,}0\,\text{g} = 0{,}0030\,\text{kg}$ ja $r = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$
 **Sijoitus:** Nimittäjä on $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0{,}50\,\text{m} = 6{,}283 \cdot 10^{-7}\,\text{Vs/A}$. Osoittaja on $$\begin{aligned} 2\pi r m g &= 2\pi \cdot 0{,}010\,\text{m} \\ &\cdot 0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 1{,}849 \cdot 10^{-3}\,\text{N}\cdot\text{m} \end{aligned}$$. Siis $I = \sqrt{\dfrac{1{,}849 \cdot 10^{-3}}{6{,}283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54{,}25\,\text{A}$
 **Vastaus:** a) Virrat kulkevat vastakkaisiin suuntiin, ja $I = 54\,\text{A}$, kaksi merkitsevää numeroa kuten massassa ja etäisyydessä.

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5e300257d8fa677f
+CONTENT-HASH: c6b17c0a5ccb80ab
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Carried over from my earlier report (unchanged text): earlier polish items stay as recorded.
+- none
 
 ## Checked
-- Delta, round 1: solutions.md only cut into paragraphs, words unchanged (many Principle/Answer/Reasonableness blocks and the data task parts).
-- Captures opened (content/en/FY7/fy7-8/review/shots): fy7-8-open-exercises-L2-1280-15 (Part a) and Part d) in short paragraphs, spacing and hierarchy intact, no clipping). Finnish L2/L3 captures of the same layout also read.
-- Layout checks at 360/768/1280 green in the packet.
+- Delta (changed Formula/Kaava blocks, numbers/formulas): opened current full-size captures at 1280 px in the lesson folder review/shots: open-exercises-L3-1280-5 (8-22, top of the Formula block only). Formula blocks render as aligned display blocks, with equals signs in one column, readable fractions and subscripts, no clipping or overflow, no red KaTeX; the card, the Conversions block and the following Substitution blocks keep their layout. Not every capture was opened; the unopened ones show the same component with other formulas.
+- Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish (English prose) 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5

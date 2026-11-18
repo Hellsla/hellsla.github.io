@@ -51,7 +51,7 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Given:** accelerating voltage $U = 30.0\,\text{kV}$, charge of the ion $e = 1.602 \cdot 10^{-19}\,\text{C}$ and mass $m_{11} = 1.8281 \cdot 10^{-26}\,\text{kg}$; the kinetic energy of the ion before acceleration is negligibly small
 **Find:** the speed $v$ of the ion after the acceleration
 **Principle:** The electric field in the accelerating gap does work $W = eU$ on the ion. Because the kinetic energy of the ion before acceleration is negligibly small and there are no other forces, the work becomes entirely the kinetic energy of the ion (the energy principle).
-**Formula:** $eU = \tfrac{1}{2} m_{11} v^2$, so $v = \sqrt{\dfrac{2eU}{m_{11}}}$
+**Formula:** $$\begin{aligned} W &= eU \\ W &= \Delta E_\text{k} = \tfrac{1}{2} m_{11} v^2 \\ eU &= \tfrac{1}{2} m_{11} v^2 \\ v^2 &= \dfrac{2eU}{m_{11}} \\ v &= \sqrt{\dfrac{2eU}{m_{11}}} \end{aligned}$$
 **Conversions:** $U = 30.0\,\text{kV} = 30.0 \cdot 10^{3}\,\text{V}$
 **Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 30.0 \cdot 10^{3}\,\text{V}}{1.8281 \cdot 10^{-26}\,\text{kg}}} = \sqrt{5.258 \cdot 10^{11}\,\tfrac{\text{m}^2}{\text{s}^2}} = 7.251 \cdot 10^{5}\,\text{m/s}$
 **Answer:** $v \approx 7.25 \cdot 10^{5}\,\text{m/s}$, three significant figures like the accelerating voltage.
@@ -61,7 +61,7 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Given:** $v = 7.251 \cdot 10^{5}\,\text{m/s}$ (part b), $B_\text{s} = 0.200\,\text{T}$ and the distance between the plates $d = 2.00\,\text{cm}$
 **Find:** the voltage $U_\text{s}$ between the plates
 **Principle:** The ion travels straight when the electric force $eE$ and the magnetic force $evB_\text{s}$ are equal in magnitude (part a). The electric field between the plates is uniform, so its strength is the voltage between the plates divided by the distance between the plates.
-**Formula:** $eE = evB_\text{s}$, so $E = vB_\text{s}$. When $E = U_\text{s} : d$, we get $U_\text{s} = Ed = vB_\text{s}d$.
+**Formula:** $$\begin{aligned} F_\text{s} &= F_\text{m} \\ eE &= evB_\text{s} \\ E &= vB_\text{s} \\ U_\text{s} &= Ed = vB_\text{s}d \end{aligned}$$
 **Conversions:** $d = 2.00\,\text{cm} = 0.0200\,\text{m}$
 **Substitution:** $E = 7.251 \cdot 10^{5}\,\text{m/s} \cdot 0.200\,\text{T} = 1.450 \cdot 10^{5}\,\text{V/m}$ and $U_\text{s} = 1.450 \cdot 10^{5}\,\text{V/m} \cdot 0.0200\,\text{m} = 2900\,\text{V}$
 **Answer:** $U_\text{s} \approx 2.90\,\text{kV}$, three significant figures like the data.
@@ -73,7 +73,7 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Principle:** The magnetic force is perpendicular to the velocity, so it does not change the speed but turns the direction of motion. In a uniform field the ion moves in uniform circular motion, and the magnetic force is its centripetal force.
 
 After the selector all the ions have the same velocity, so the radius of the path is directly proportional to the mass of the ion. After the semicircle the ion hits the wall at the far end of a diameter $2r$ from the point of entry, so the distance between the points of impact of the two kinds of ion is the difference of their diameters.
-**Formula:** $evB = \dfrac{m v^2}{r}$, so $B = \dfrac{m_{11} v}{e r}$. At the same speed and in the same field $r_{10} = \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r$, and the distance between the points of impact is $\Delta x = 2r - 2r_{10} = 2(r - r_{10})$.
+**Formula:** $$\begin{aligned} F_\text{m} &= m a_\text{r} \\ evB &= \dfrac{m_{11} v^2}{r} \\ B &= \dfrac{m_{11} v}{e r} \\ r_{10} &= \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r \\ \Delta x &= 2r - 2r_{10} = 2(r - r_{10}) \end{aligned}$$
 **Conversions:** $r = 40.0\,\text{cm} = 0.400\,\text{m}$
 **Substitution:** $mv = 1.8281 \cdot 10^{-26}\,\text{kg} \cdot 7.251 \cdot 10^{5}\,\text{m/s} = 1.3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}$, so $B = \dfrac{1.3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.400\,\text{m}} = 0.2069\,\text{T}$. The radius of the boron-10 ions is $r_{10} = \dfrac{1.6627}{1.8281} \cdot 0.400\,\text{m} = 0.3638\,\text{m}$, so $\Delta x = 2 \cdot (0.400\,\text{m} - 0.3638\,\text{m}) = 0.0724\,\text{m}$
 **Answer:** $B \approx 0.207\,\text{T}$ and $\Delta x \approx 7.2\,\text{cm}$: the boron-10 ions would hit the wall about $7\,\text{cm}$ closer to the point of entry of the ions than the slit. The field has three significant figures like the data; the distance is the difference of two almost equal numbers, so it is left with two.
@@ -124,7 +124,7 @@ Its kinetic energy is then $\tfrac{1}{2} m_{10} v^2$, while that of a boron-11 i
 **Principle:** The magnet ring has $14$ pairs of north and south poles. When one pair of poles passes the coil, the flux through the coil makes one complete oscillation, so the voltage has $14$ cycles per revolution of the wheel.
 
 The rotation frequency of the wheel is therefore $14$ times smaller than the frequency of the voltage. When the wheel rolls without slipping, in one revolution it advances the length of its circumference $\pi D$.
-**Formula:** $f_\text{w} = \dfrac{f}{14}$ and $v = \pi D f_\text{w} = \pi D \cdot \dfrac{f}{14}$
+**Formula:** $$\begin{aligned} f_\text{w} &= \dfrac{f}{14} \\ v &= \dfrac{s}{\Delta t} = \dfrac{\pi D}{T_\text{w}} = \pi D f_\text{w} \\ v &= \pi D \cdot \dfrac{f}{14} \end{aligned}$$
 **Conversions:** The answer is converted at the end: $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $f_\text{w} = \dfrac{33.3\,\text{Hz}}{14} = 2.381\,\text{Hz}$ and $v = \pi \cdot 0.70\,\text{m} \cdot 2.381\,\tfrac{1}{\text{s}} = 5.236\,\text{m/s} = 5.236 \cdot 3.6\,\text{km/h} = 18.8\,\text{km/h}$
 **Answer:** $v \approx 5.2\,\text{m/s} \approx 19\,\text{km/h}$, two significant figures like the diameter and the period.
@@ -136,7 +136,7 @@ The rotation frequency of the wheel is therefore $14$ times smaller than the fre
 **Principle:** The peak value of the voltage of a generator is $e_0 = NBA \cdot 2\pi f$. The number of turns of the coil, the field of the magnets and the area stay the same, so the peak value, and with it the effective value, is directly proportional to the frequency.
 
 The frequency in turn is directly proportional to the rotation frequency of the wheel and to the speed. The effective voltage is therefore directly proportional to the speed: the more slowly one rides, the more slowly the magnets pass the coil and the more slowly the flux changes.
-**Formula:** $\dfrac{v_\text{min}}{v} = \dfrac{U_\text{lamp}}{U}$, so $v_\text{min} = v \cdot \dfrac{U_\text{lamp}}{U}$
+**Formula:** $$\begin{aligned} U &= \dfrac{e_0}{\sqrt{2}} = \dfrac{NBA \cdot 2\pi f}{\sqrt{2}} \\ f &= 14 f_\text{w} = \dfrac{14 v}{\pi D} \\ U &= \kappa v, \quad \kappa = \dfrac{28\,NBA}{\sqrt{2}\,D} \\ \dfrac{U_\text{lamp}}{U} &= \dfrac{\kappa v_\text{min}}{\kappa v} = \dfrac{v_\text{min}}{v} \\ v_\text{min} &= v \cdot \dfrac{U_\text{lamp}}{U} \end{aligned}$$
 **Conversions:** The answer is converted at the end to kilometres per hour: $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_\text{min} = 5.236\,\text{m/s} \cdot \dfrac{6.0\,\text{V}}{9.90\,\text{V}} = 3.17\,\text{m/s} = 3.17 \cdot 3.6\,\text{km/h} = 11.4\,\text{km/h}$
 **Answer:** $v_\text{min} \approx 3.2\,\text{m/s} \approx 11\,\text{km/h}$, two significant figures like the data.
@@ -163,7 +163,7 @@ The eddy currents heat the metal and brake the rotation in accordance with Lenz'
 **Principle:** The dynamo converts the cyclist's work into electrical energy. The light receives the fraction of the power taken by the dynamo given by the efficiency, so the power taken by the dynamo is $P_\text{lamp} : \eta$.
 
 When the braking force acts on a wheel moving at speed $v$, the power of the work it does is $P = Fv$, as in an eddy-current brake.
-**Formula:** $P_\text{in} = \dfrac{P_\text{lamp}}{\eta}$ and $P_\text{in} = Fv$, so $F = \dfrac{P_\text{lamp}}{\eta v}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{P_\text{lamp}}{P_\text{in}} \\ P_\text{in} &= \dfrac{P_\text{lamp}}{\eta} \\ P_\text{in} &= Fv \\ Fv &= \dfrac{P_\text{lamp}}{\eta} \\ F &= \dfrac{P_\text{lamp}}{\eta v} \end{aligned}$$
 **Conversions:** Not needed: the power is in watts and the speed in metres per second.
 **Substitution:** $P_\text{in} = \dfrac{3.0\,\text{W}}{0.60} = 5.0\,\text{W}$ and $F = \dfrac{5.0\,\text{W}}{5.236\,\text{m/s}} = 0.955\,\text{N}$
 **Answer:** $F \approx 0.95\,\text{N}$, two significant figures like the power of the light and the efficiency.
@@ -192,7 +192,7 @@ The difference can be felt, but it is small; for example, a $1\,\%$ uphill gradi
 **Principle:** The current flows to the mine along one conductor and returns along the other, so in the simplified two-wire model the length of the conductors in the circuit is $2 \cdot 25\,\text{km}$. The resistance is obtained from the resistivity, the length and the cross-sectional area.
 
 The transmitted power is the product of the voltage and the current, so the current is the power divided by the voltage. The power converted into heat in the resistance of the line is the product of the resistance and the square of the current.
-**Formula:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ and $P_\text{h} = R I^2$
+**Formula:** $$\begin{aligned} R &= \rho \dfrac{l}{A} \\ P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= R I^2 = \rho \dfrac{l}{A} \left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Conversions:** $l = 2 \cdot 25\,\text{km} = 5.0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6.0 \cdot 10^{6}\,\text{W}$ and $U = 20 \cdot 10^{3}\,\text{V}$
 **Substitution:** $$
 \begin{aligned}
@@ -209,7 +209,7 @@ $\approx 5.2\,\text{MW}$ is left for the mine.
 **Given:** the data of part a and the resistance $R = 9.40\,\Omega$, transmission voltage $U = 110\,\text{kV}$
 **Find:** the power loss $P_\text{h}$
 **Principle:** The same power is transmitted at $110 : 20 = 5.5$ times the voltage, so the current is $5.5$ times smaller. The power loss is proportional to the square of the current, so it decreases by a factor of $5.5^2 \approx 30$. The conductors are the same, so the resistance is the same as in part a.
-**Formula:** $P_\text{h} = R I^2 = R\left(\dfrac{P}{U}\right)^2$
+**Formula:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= R I^2 = R\left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Conversions:** $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
 **Substitution:** $I = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 54.5\,\text{A}$ and $P_\text{h} = 9.40\,\Omega \cdot (54.5\,\text{A})^2 = 27\,970\,\text{W}$. The share is $28.0\,\text{kW} : 6000\,\text{kW} \approx 0.47\,\%$.
 **Answer:** $P_\text{h} \approx 28\,\text{kW}$, that is, about $0.5\,\%$, two significant figures like the power.
@@ -219,7 +219,7 @@ $\approx 5.2\,\text{MW}$ is left for the mine.
 **Given:** in the $20\,\text{kV}$ line the current $I = 300\,\text{A}$ and the resistance $R = 9.40\,\Omega$ (part a); permitted deviation $10\,\%$
 **Find:** the voltage $U_\text{mine}$ left at the mine and whether it is acceptable
 **Principle:** The substation maintains a voltage of $20\,\text{kV}$ at the start of the line. There is a voltage drop across the resistance of the conductors, which is the product of the resistance and the current. What is left at the mine is the difference between the transmission voltage and the voltage drop.
-**Formula:** $U_\text{mine} = U - RI$
+**Formula:** $$\begin{aligned} U &= U_\text{R} + U_\text{mine} \\ U_\text{R} &= RI \\ U_\text{mine} &= U - U_\text{R} = U - RI \end{aligned}$$
 **Conversions:** $U = 20\,\text{kV} = 20\,000\,\text{V}$
 **Substitution:** $RI = 9.40\,\Omega \cdot 300\,\text{A} = 2820\,\text{V}$ and $U_\text{mine} = 20\,000\,\text{V} - 2820\,\text{V} = 17\,180\,\text{V}$. The deviation is $2820\,\text{V} : 20\,000\,\text{V} \approx 14\,\%$.
 **Answer:** $U_\text{mine} \approx 17.2\,\text{kV}$, which is about $14\,\%$ below the rated value. It is not acceptable, because the deviation is more than $10\,\%$. Three significant figures, so that the deviation can be compared with the limit.
@@ -246,7 +246,7 @@ A thicker conductor reduces the loss only in the same ratio as the cross-section
 The field is perpendicular to the other conductor, so a force $F = IlB$ acts on it. By the right-hand rule, currents in opposite directions repel each other. With alternating current the currents change direction at the same time, so they are always in opposite directions and the conductors repel each other all the time.
 
 The weight of a metre of conductor is obtained from its mass, which is the product of the density and the volume.
-**Formula:** $B = \dfrac{\mu_0 I}{2\pi r}$ and $F = IlB$, so $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. For the weight, $\dfrac{G}{l} = \rho_\text{Al} A g$.
+**Formula:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ F &= IlB \\ \dfrac{F}{l} &= IB = \dfrac{\mu_0 I^2}{2\pi r} \\ m &= \rho_\text{Al} V = \rho_\text{Al} A l \\ G &= mg \\ \dfrac{G}{l} &= \rho_\text{Al} A g \end{aligned}$$
 **Conversions:** $I_\text{sc} = 8.0\,\text{kA} = 8.0 \cdot 10^{3}\,\text{A}$ and $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$
 **Substitution:** In normal operation $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1.5\,\text{m}} = 4.0 \cdot 10^{-5}\,\text{T}$ and $\dfrac{F}{l} = 300\,\text{A} \cdot 4.0 \cdot 10^{-5}\,\text{T} = 0.012\,\text{N/m}$.
 
@@ -335,7 +335,7 @@ The end face is perpendicular to the side surface, so the normal of the end face
   <foreignObject x="366" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
 </svg>
 
-**Formula:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, so $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$. At the end face $1.00 \cdot \sin\theta = n_1 \sin\beta$, where $\beta = 90^\circ - \alpha_\text{r}$, so $\sin\theta = n_1 \sin(90^\circ - \alpha_\text{r})$.
+**Formula:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \dfrac{n_2}{n_1} \\ 1.00 \cdot \sin\theta &= n_1 \sin\beta \\ \beta &= 90^\circ - \alpha_\text{r} \\ \sin\theta &= n_1 \sin(90^\circ - \alpha_\text{r}) \\ \theta &= \arcsin\bigl(n_1 \sin(90^\circ - \alpha_\text{r})\bigr) \end{aligned}$$
 **Conversions:** Not needed: refractive indices have no units, and the angles are in degrees.
 **Substitution:** $\sin\alpha_\text{r} = \dfrac{1.42}{1.44} = 0.9861$, so $\alpha_\text{r} = 80.44^\circ$. Then $\beta = 90^\circ - 80.44^\circ = 9.56^\circ$ and $\sin\theta = 1.44 \cdot \sin 9.56^\circ = 1.44 \cdot 0.1661 = 0.2392$, so $\theta = 13.84^\circ$.
 **Answer:** $\alpha_\text{r} \approx 80.4^\circ$ and $\theta \approx 13.8^\circ$, three significant figures like the refractive indices.
@@ -366,7 +366,7 @@ However, the emissivity of real steel and of the scale layer on its surface depe
 When the light arrives perpendicularly, the wave reflected from the lower surface travels an extra distance $2d$ in the film, where the wavelength is $\lambda : n$, so the path difference is $2nd$ measured in wavelengths in air. Both reflections take place against a material with a higher refractive index ($1.00 \to 1.38 \to 1.50$), so each reverses the wave and the reversals cancel each other.
 
 The waves then weaken each other when $2nd = (k + \tfrac{1}{2})\lambda$ and reinforce each other when $2nd = k\lambda$. The thinnest weakening film is obtained with $k = 0$.
-**Formula:** $2nd = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n}$
+**Formula:** $$\begin{aligned} \Delta s &= 2nd \\ \Delta s &= \tfrac{1}{2}\lambda \\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \dfrac{\lambda}{4n} \end{aligned}$$
 **Conversions:** $\lambda = 2.0\,\mu\text{m} = 2.0 \cdot 10^{-6}\,\text{m}$
 **Substitution:** $d = \dfrac{2.0 \cdot 10^{-6}\,\text{m}}{4 \cdot 1.38} = 3.62 \cdot 10^{-7}\,\text{m} = 362\,\text{nm}$
 **Answer:** The thinnest film is $d \approx 0.36\,\mu\text{m}$, that is, about $360\,\text{nm}$ thick, two significant figures like the wavelength. A greenish reflection is not a sign of a wrong film; it is to be expected with a film designed for the infrared.
@@ -494,7 +494,7 @@ A straight line through the origin is fitted to the points, because according to
 
 The gradient is read from the line using two points far from each other; one of them can be the origin, because the line passes through it. The line density is a millimetre divided by the grating spacing.
 **Reading the graph:** The point $(1300\,\text{nm};\ 0.780)$, which is far from the origin, is read from the line. The gradient is $0.780 : 1300\,\text{nm} = 6.00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}$.
-**Formula:** $\dfrac{1}{d} = \text{gradient}$, so $d = \dfrac{1}{\text{gradient}}$, and the line density is $N = \dfrac{1\,\text{mm}}{d}$.
+**Formula:** $$\begin{aligned} a &= \dfrac{\Delta \sin\theta}{\Delta (k\lambda)} = \dfrac{1}{d} \\ d &= \dfrac{1}{a} \\ N &= \dfrac{1\,\text{mm}}{d} \end{aligned}$$
 **Conversions:** $1\,\text{mm} = 10^{6}\,\text{nm}$
 **Substitution:** $d = \dfrac{1}{6.00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}} = 1667\,\text{nm}$ and $N = \dfrac{10^{6}\,\text{nm}}{1667\,\text{nm}} = 600$
 **Answer:** $d \approx 1.67\,\mu\text{m}$, so the grating has about $600$ lines per millimetre, three significant figures like the point read from the graph.

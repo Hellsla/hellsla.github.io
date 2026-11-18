@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 73d5f564adacfc16
+CONTENT-HASH: 30715bc328c977a1
 
 ## Blocking
 None.
 
 ## Polish
-- `intro` says "Five tasks" but lists seven topics in a muddled run (particle, generator, transmission, force between conductors, radiation, fibre, film, grating). Name the five tasks one each: ion implanter, hub dynamo, mine supply, pyrometer, hydrogen lamp.
-- Workload: about 85 points over five tasks of 16-19 points each, with 5 parts apiece. For a 2 op course this is heavy for one sitting. fy7-s3 e (force between the line conductors) is a nice link to FY7 content but is a separate model; consider making it optional or trimming.
-- fy7-s5 e (prism vs grating) is mostly recall of two textbook explanations, with no data to interpret. Weaker than the other "evaluate" parts, which each have a claim plus numbers (s1 e, s3 d, s4 d, s5 d).
-- fy7-s1 text names "velocity selector" and "analysing magnet" and s1 c, d effectively tell the student the model. Acceptable because the device is the context, but the model choice is mostly in b/c, so s1 is the least transfer-heavy task.
-- fy7-s4 e: the film designed for the 2.0 um peak is a slightly contrived link, but the green-reflection check (k = 2) is a good evaluate step.
-- The coverage report lists one gap (building a graph from data, 2 points in Sovella). fy7-s5 a is the right task and the gap is real but thin; the one task closes it only partly, because the choice of axes is the single decisive step. Acceptable.
+- Formula step (8g): the order basic law, derived formula, symbolic simplification is now right everywhere. The substitution does not always go into the last symbolic form. fy7-s3 a and b compute R and I first and then P_h; fy7-s2 b computes f_w first; fy7-s1 d computes mv first; fy7-s3 e computes B first and then F/l = IB instead of the final μ0 I²/(2πr). The chains are fine as teaching steps, but the house rule is to substitute into the last symbolic form, so either add a one-row final-form substitution or let the Formula block end in the form actually used.
+- fy7-s4 c: the prompt says "totally internally reflected", which names the model. "Continues along the fibre only if it stays inside the core" asks the same without the term.
+- Links: fy7-s3 e (force between conductors) and fy7-s4 e (thin film) link only to fy7-8 / fy7-9 / fy7-12, not to the chapters on conductor force and the thin film.
+- fy7-s2 e solution: "as in an eddy-current brake" refers to something not introduced here; drop it.
+- The intro says "Five tasks" and then lists seven topics in one long sentence; shorten it.
+- Workload: 5 tasks and 24 parts is heavy for a 2 op module; s4 (pyrometer, fibre, film) is a stitched context. Fine as a set to choose from, so it is a teacher decision whether to say so.
 
 ## Checked
-- Each task has an authentic, unfamiliar context (implanter, hub dynamo, mine line, rolling-mill pyrometer, hydrogen-lamp spectrometer), sources noted, and parts rising from reading data to calculation to evaluation. No heading names the formula.
-- Variety: charged-particle motion, induction/generator, transmission/force between conductors, radiation/total reflection/thin film, graphing/diffraction; the graph (s2 signal, s4 spectrum) and table (s5) must be interpreted.
-- Rubrics: specific, points match the parts; shared criteria keys used correctly; no points for irrelevant items. s4 d and s5 d reward uncertainty reasoning properly (differences 34 K and 1.4 nm against reading accuracy).
-- Solutions follow the seven-step form, symbols before numbers, with reasonableness checks; the "Hyväksytään myös" alternatives are fair.
-- Common mistakes are real ones (half-period read as period, sqrt 2 multiplied, 2L of the circuit forgotten, radius difference vs diameter difference, swapped refractive indices).
-- Not checked: the figures' rendering (the packet omits the SVGs) and the answers.py code beyond its output matching the stated answers.
+- Independent application: all five tasks are authentic and unfamiliar (ion implanter, hub dynamo, mine supply, pyrometer, hydrogen-lamp spectrum). Parts rise in demand from reading and recalling to evaluating a claim. Parts like s1 e, s2 d, s3 d and s5 e test a stated misconception.
+- Task headings and prompts do not give the formula. The s3 text lists P = UI and the ideal transformer, which is acceptable scaffolding for a simplified model.
+- Variety across the five tasks: graph and data (s2 a, s5 a/b), error and uncertainty (s4 d, s5 d), and justified word answers throughout.
+- Rubrics: points per part match the criteria, shared criteria are used by key with task detail, and no points go to irrelevant things. The s4 d and s5 d uncertainty criteria are specific and fair.
+- Solutions: all seven stages are present. Reading the graph and the force diagram come before the equations. The Formula steps open with the basic law (energy principle, F_s = F_m, F = ma_r, η, λT = b, d sinθ = kλ) and simplify symbolically. Reasonableness checks are meaningful, for example 846 kW = RI · I in s3 c.
+- Common mistakes are real and specific: factor 2 in line length, 10⁻³ against 10⁻⁶, √2 multiplied instead of divided, and a swapped n₁/n₂.
+- The physics of the s4 d emissivity remark and the s4 e double phase shift is explained for a learner.
+- I did not check docs/coverage/FY7.md; the packet does not include it.

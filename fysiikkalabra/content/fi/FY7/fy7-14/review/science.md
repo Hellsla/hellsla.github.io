@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5604a79006b73b70
+CONTENT-HASH: abb1a90e48c8092a
 
 ## Blocking
 
 ## Polish
-
+- lesson.md:357 — the summary bullet now says "Heijastuksen estävässä pinnoitteessa" while the glossary term is "heijastuksenestopinnoite"; same meaning, no physics issue (language only, C).
 
 ## Checked
-batch delta review: round-1 item fixed: retrieval prompt now says the two waves travel in air (no film n, no reflection phase), 975 nm / 650 nm = 1,5 -> destructive, one correct option, distractor feedback right; film framing sentence is a fair C; lesson.md presentation and teacher-approved figures carried; no Ennusta (20 nm film, MgF2 coating) revealed.
+- Delta round 2: only the Tiivistelmä bullet's opening words changed; the physics is unchanged: two phase inversions on a coating, thinnest destructive coating d = λ : (4n), MgF2 99,6 nm for 550 nm (550 / (4 · 1,38) = 99,6 nm).
+- The new wording names the same object as the theory and the glossary; no contradiction with the soap-film bullet (one inversion) or the rest of the summary.
+- Rest of the lesson carried from the round-1 PASS (hash 5604a79006b73b70); no numbers, symbols or inquiry content touched.

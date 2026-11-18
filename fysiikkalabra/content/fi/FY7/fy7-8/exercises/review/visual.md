@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5aaaeda0860a4a84
+CONTENT-HASH: 619f4ca1980ab94e
 
 ## Blocking
 
 ## Polish
-- [Minor] Carried over from my earlier report (unchanged text): fy7-8 L3 "c) Säästö" chain row starts with "=" (the quantity is named in Kaava above); earlier polish items stay as recorded.
+- [Minor] fy7-8-L1-07 Kaava is eight rows tall (P = UI … P_h,2 = …); readable and aligned, but the derivation could drop one row. Optional.
 
 ## Checked
-- Delta, round 1: solutions.md only cut into paragraphs, words unchanged.
-- Captures opened (content/fi/FY7/fy7-8/review/shots): fy7-8-open-exercises-L3-1280-6, -8 (Vastaus, Järkevyys, 8-23 solution), L2-1280-15 (aineistotehtävä Selitys now short paragraphs, 13 MW answer, Järkevyys blocks), L2-1280-16 (end of card).
-- Layout survived; nothing clipped; 360/768/1280 checks green in the packet.
+- Delta, hash current. Opened open-exercises-1280-7 (L1-07: eight-row aligned Kaava, fractions spaced, = aligned, sijoitus and answer follow in order).
+- Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5
