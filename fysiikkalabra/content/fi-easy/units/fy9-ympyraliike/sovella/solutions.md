@@ -503,3 +503,177 @@ $$
 - b-kohdassa $a_\text{n} = \tfrac{v^2}{r}$ a-kohdan pyöristämättömällä nopeudella $7707\,\text{m/s}$. Tulos on sama.
 - d-kohdassa lasku SI-yksiköissä: $E = 2{,}646 \cdot 10^{12}\,\text{J}$ ja $t = 3{,}1536 \cdot 10^{7}\,\text{s}$. Tulos on sama. Myös vuoden pituus $365{,}25\,\text{d}$ hyväksytään.
 - Aineiston arvot voivat muuttua tarkistuspäivän 16.11.2026 jälkeen. Silloin hyväksytään tulos, joka on laskettu oikein opiskelijan lukemilla arvoilla.
+
+## fy9-ympyraliike-s8
+
+### a)
+**Annettu:** kuvaajalle merkitty piste: ratanopeus $v = 15\,\text{m/s}$ ja normaalikiihtyvyys $a_\text{n} = 3{,}0\,\text{m/s}^2$
+**Kysytty:** kaarteen säde $r$
+**Periaate:** Auto kulkee ympyrän muotoista rataa tasaisella vauhdilla. Sen kiihtyvyys on normaalikiihtyvyys $a_\text{n} = \dfrac{v^2}{r}$ kohti ympyrän keskipistettä (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*). Kaarteen säde on sama koko kuvaajassa. Siksi yksi tarkasti luettava piste riittää.
+**Kuvaajan lukeminen:** Käyrälle merkitty piste on apuviivoin luettavissa. Vaaka-akselilta saadaan $15\,\text{m/s}$ ja pystyakselilta $3{,}0\,\text{m/s}^2$.
+**Kaava:** $a_\text{n} = \dfrac{v^2}{r}$, joten $r = \dfrac{v^2}{a_\text{n}}$
+**Muunnokset:** Ei tarvita. Nopeus on yksikössä $\text{m/s}$ ja kiihtyvyys yksikössä $\text{m/s}^2$.
+**Sijoitus:** $$
+\begin{aligned}
+r &= \dfrac{v^2}{a_\text{n}} \\
+&= \dfrac{(15\,\text{m/s})^2}{3{,}0\,\text{m/s}^2} \\
+&= \dfrac{225\,\text{m}^2/\text{s}^2}{3{,}0\,\text{m/s}^2} \\
+&= 75\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $r = 75\,\text{m}$. Tuloksessa on kaksi merkitsevää numeroa, kuten luetuissa arvoissa.
+**Järkevyys:** Toinen piste käyrältä antaa saman säteen. Nopeudella $20\,\text{m/s}$ käyrä on arvossa $a_\text{n} \approx 5{,}3\,\text{m/s}^2$, ja $\dfrac{(20\,\text{m/s})^2}{5{,}3\,\text{m/s}^2} \approx 75\,\text{m}$. Säde sopii maantien kaarteelle.
+
+### b)
+**Annettu:** auton massa $m = 1200\,\text{kg}$, nopeus $v = 15\,\text{m/s}$ ja kuvaajan piste $a_\text{n} = 3{,}0\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** kitkavoima $F$
+**Periaate:** Valitaan kappaleeksi auto. Voimakuviossa siihen vaikuttavat paino $\overline{G}$ alas ja maan tukivoima $\overline{N}$ ylös. Lisäksi renkaiden lepokitka $\overline{F}$ osoittaa vaakasuorassa kohti kaarteen keskipistettä. Kitka on lepokitkaa, koska renkaat eivät liu'u. Keskipakoisvoimaa ei piirretä, koska mikään kappale ei vaikuta autoon sellaisella voimalla. Valitaan akseli $x$ kohti keskipistettä ja akseli $y$ ylös. Pystysuunnassa auto ei kiihdy, joten $N - G = 0$. Vaakasuunnassa kiihtyvyys on normaalikiihtyvyys: $\Sigma F_x = ma_\text{n}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
+**Kaava:** $\Sigma F_x = F = ma_\text{n}$
+**Muunnokset:** Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** $$
+\begin{aligned}
+F &= m a_\text{n} \\
+&= 1200\,\text{kg} \cdot 3{,}0\,\text{m/s}^2 \\
+&= 3600\,\text{N} \\
+&= 3{,}6\,\text{kN}
+\end{aligned}
+$$
+**Vastaus:** $F \approx 3{,}6\,\text{kN}$ kohti kaarteen keskipistettä. Tuloksessa on kaksi merkitsevää numeroa, kuten kiihtyvyydessä.
+**Järkevyys:** Auton paino on $mg = 1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}$. Kitka on noin $\dfrac{3{,}6}{11{,}8} \approx 31\,\%$ siitä. Tavallisessa kaarreajossa kitka on selvästi painoa pienempi, mikä on uskottavaa.
+
+### c)
+**Annettu:** lepokitkakerroin $\mu_\text{s} = 0{,}50$, säde $r = 75\,\text{m}$ a-kohdasta; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** suurin nopeus $v_\text{max}$, jolla auto ei liu'u
+**Periaate:** Voimakuvio on sama kuin b-kohdassa. Pystysuunnassa $N = mg$. Lepokitka on enintään $F_\text{max} = \mu_\text{s} N = \mu_\text{s} mg$ (luku *Paino, kitka ja kalteva taso*). Suurin nopeus saadaan, kun kitka on mahdollisimman suuri. Silloin vaakasuunnan liikeyhtälö $\Sigma F_x = ma_\text{n}$ on $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
+**Kaava:** $v_\text{max} = \sqrt{\mu_\text{s} g r}$, koska massa supistuu
+**Muunnokset:** Lopuksi $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
+**Sijoitus:** $$
+\begin{aligned}
+v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+&= \sqrt{0{,}50 \cdot 9{,}81\,\text{m/s}^2 \cdot 75\,\text{m}} \\
+&= \sqrt{367{,}9\,\text{m}^2/\text{s}^2} \\
+&= 19{,}18\,\text{m/s}
+\end{aligned}
+$$; yksikkö: $\sqrt{\tfrac{\text{m}}{\text{s}^2} \cdot \text{m}} = \tfrac{\text{m}}{\text{s}}$. Kilometreinä tunnissa: $$
+\begin{aligned}
+v_\text{max} &= 19{,}18\,\text{m/s} \cdot 3{,}6 \\
+&= 69{,}0\,\text{km/h}
+\end{aligned}
+$$
+**Vastaus:** $v_\text{max} \approx 19\,\text{m/s}$ eli noin $69\,\text{km/h}$. Tuloksessa on kaksi merkitsevää numeroa, kuten säteessä ja kitkakertoimessa.
+**Järkevyys:** Suurin kitka antaa normaalikiihtyvyyden $a_\text{n} = \mu_\text{s} g \approx 4{,}9\,\text{m/s}^2$. Kuvaajan käyrä saavuttaa tämän arvon nopeudella $\sqrt{4{,}9 \cdot 75} \approx 19\,\text{m/s}$. Nopeudella $15\,\text{m/s}$ tarvittava kitka $3{,}6\,\text{kN}$ on pienempi kuin suurin kitka $\mu_\text{s} mg \approx 5{,}9\,\text{kN}$ (noin $61\,\%$ siitä). Siksi auto ei liu'u.
+
+### d)
+**Kysytty:** miten suurin nopeus ja kuvaaja muuttuvat, kun $m = 1500\,\text{kg}$
+**Periaate:** Liikeyhtälö $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ on sama kuin c-kohdassa. Siinä massa $m$ on molemmilla puolilla (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*, luku *Paino, kitka ja kalteva taso*). Kaarteen säde ja kitkakerroin eivät riipu massasta.
+**Mallivastaus:** Massa supistuu, joten $v_\text{max} = \sqrt{\mu_\text{s} g r} \approx 19\,\text{m/s}$ ei muutu. Kuvaaja ei myöskään muutu, koska $a_\text{n} = \dfrac{v^2}{r}$ ei riipu massasta. Voimat sen sijaan muuttuvat. Nopeudella $15\,\text{m/s}$ tarvittava kitka on $$
+\begin{aligned}
+F &= m a_\text{n} \\
+&= 1500\,\text{kg} \cdot 3{,}0\,\text{m/s}^2 \\
+&= 4500\,\text{N}
+\end{aligned}
+$$ja suurin mahdollinen kitka on $\mu_\text{s} mg = 0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 7360\,\text{N}$. Raskaampi auto tarvitsee suuremman kitkavoiman, mutta renkaat antavat sitä yhtä paljon enemmän. Molemmat ovat verrannollisia massaan. Tarvittava kitka on edelleen noin $61\,\%$ suurimmasta. Kuorma ei siis tee kaarteesta liukkaampaa.
+
+### Yleisiä virheitä
+- a-kohdassa luvut jaetaan väärin päin ($r = a_\text{n} : v^2$), tai nopeus unohdetaan neliöstä.
+- b-kohdassa piirretään keskipakoisvoima tai kitka osoittamaan ulos kaarteesta. Ainoa vaakavoima on lepokitka kohti keskipistettä.
+- c-kohdassa käytetään liukukitkaa tai kitkakerroin kerrotaan nopeudella. Rajalla käytetään lepokitkan suurinta arvoa $\mu_\text{s} mg$. Nopeus saadaan liikeyhtälöstä.
+- d-kohdassa oletetaan, että raskaampi auto saa ajaa kaarteen hitaammin tai nopeammin. Massa supistuu liikeyhtälöstä, joten nopeusraja ei riipu siitä.
+
+### Hyväksytään myös
+- b-kohdassa $F = \dfrac{mv^2}{r} = \dfrac{1200\,\text{kg} \cdot (15\,\text{m/s})^2}{75\,\text{m}} = 3600\,\text{N}$, sama tulos.
+- c-kohdassa suurin nopeus voidaan lukea kuvaajalta. Käyrä saavuttaa arvon $a_\text{n} = \mu_\text{s} g \approx 4{,}9\,\text{m/s}^2$ nopeudella noin $19\,\text{m/s}$.
+
+## fy9-ympyraliike-s9
+
+### a)
+**Annettu:** kyltin massa $m_\text{s} = 18\,\text{kg}$, tangon massa $m_\text{t} = 3{,}0\,\text{kg}$, tangon pituus $L = 1{,}20\,\text{m}$ ja vaijerin ja tangon välinen kulma $\theta = 30{,}0^\circ$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** vaijerin voima $T$
+**Periaate:** Valitaan kappaleeksi tanko ja kyltti. Voimakuviossa kyltin paino $\overline{G}_\text{s}$ osoittaa tangon päästä alas. Tangon paino $\overline{G}_\text{t}$ osoittaa tangon keskeltä alas. Vaijerin voima $\overline{T}$ osoittaa tangon päästä vinosti ylös seinää kohti. Saranan voima $\overline{F}_\text{s}$ vaikuttaa saranasta. Kappale on levossa, joten se on tasapainossa. Voimien summa ja momenttien summa ovat nollia (luku *Kappaleen tasapaino: voimat ja momentit*). Momenttipisteeksi valitaan sarana, koska sen suhteen tuntemattoman saranan voiman varsi on nolla. Tangon paino vaikuttaa painopisteestä. Tasa-aineisella tangolla se on keskellä, etäisyydellä $\tfrac{L}{2}$. Vaijerin voimasta tankoa vastaan kohtisuora komponentti $T\sin\theta$ kiertää tankoa varrella $L$. Painot kiertävät vastakkaiseen suuntaan.
+**Kuvaajan lukeminen:** Kuvasta luetaan tangon pituus $L = 1{,}20\,\text{m}$ ja vaijerin ja tangon välinen kulma $\theta = 30{,}0^\circ$.
+**Kaava:** Momenttien summa saranan suhteen on nolla: $T L\sin\theta - m_\text{s} g L - m_\text{t} g\,\tfrac{L}{2} = 0$. Pituus $L$ supistuu, ja $T = \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta}$
+**Muunnokset:** Ei tarvita. Massat ovat kilogrammoina.
+**Sijoitus:** $$
+\begin{aligned}
+T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta} \\
+&= \dfrac{(18\,\text{kg} + 1{,}5\,\text{kg}) \cdot 9{,}81\,\text{m/s}^2}{\sin 30{,}0^\circ} \\
+&= \dfrac{191{,}3\,\text{N}}{0{,}500} \\
+&= 382{,}6\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $T \approx 380\,\text{N}$. Tuloksessa on kaksi merkitsevää numeroa, kuten massoissa.
+**Järkevyys:** Vaijerin pystykomponentti on $T\sin\theta = 191\,\text{N}$. Se vastaa massaa $19{,}5\,\text{kg}$, eli kyltin ja puolen tangon massaa. Vaijeri on vinossa ($\sin 30{,}0^\circ = 0{,}500$), joten sen voima on suurempi kuin pelkkä paino, noin $380\,\text{N}$.
+
+### b)
+**Annettu:** a-kohdasta $T = 382{,}6\,\text{N}$ ja $\theta = 30{,}0^\circ$; $m_\text{s} = 18\,\text{kg}$, $m_\text{t} = 3{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** saranan voiman $F_\text{s}$ suuruus
+**Periaate:** Kappale on levossa, joten voimien summa on nolla (luku *Kappaleen tasapaino: voimat ja momentit*). Valitaan akseli $x$ seinästä poispäin ja akseli $y$ ylös. Saranan voimalla on vaakakomponentti $H$ ja pystykomponentti $V$. Vaijerin voima osoittaa kuvan mukaan seinää kohti ja ylös. Vaakasuunnassa vaijeri vetää tankoa seinää kohti, joten sarana työntää seinästä poispäin.
+**Kaava:** $\Sigma F_x = H - T\cos\theta = 0$ ja $\Sigma F_y = V + T\sin\theta - (m_\text{s} + m_\text{t})g = 0$; $F_\text{s} = \sqrt{H^2 + V^2}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+H &= T\cos\theta \\
+&= 382{,}6\,\text{N} \cdot \cos 30{,}0^\circ \\
+&= 331{,}3\,\text{N}
+\end{aligned}
+$$; $$
+\begin{aligned}
+V &= (m_\text{s} + m_\text{t})\,g - T\sin\theta \\
+&= 21\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 - 382{,}6\,\text{N} \cdot 0{,}500 \\
+&= 206{,}0\,\text{N} - 191{,}3\,\text{N} \\
+&= 14{,}7\,\text{N}
+\end{aligned}
+$$; $$
+\begin{aligned}
+F_\text{s} &= \sqrt{H^2 + V^2} \\
+&= \sqrt{(331{,}3\,\text{N})^2 + (14{,}7\,\text{N})^2} \\
+&= 331{,}7\,\text{N}
+\end{aligned}
+$$. Suunta: $\tan\alpha = \dfrac{V}{H} = \dfrac{14{,}7}{331{,}3}$, joten $\alpha \approx 2{,}5^\circ$ vaakasuoran yläpuolella.
+**Vastaus:** $F_\text{s} \approx 330\,\text{N}$. Suunta on noin $2{,}5^\circ$ vaakasuoran yläpuolella poispäin seinästä. Tuloksessa on kaksi merkitsevää numeroa, kuten vaijerin voimassa.
+**Järkevyys:** Otetaan momentit tangon uloimman pään suhteen. Vaijerin voimalla ja kyltin painolla ei silloin ole vartta, joten $V L = m_\text{t} g\,\tfrac{L}{2}$ ja $V = \tfrac12 \cdot 3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 14{,}7\,\text{N}$, sama kuin yllä. Saranan voima on lähes vaakasuora. Vaijeri kantaa lähes koko painon, ja vaakavoima $H$ syntyy vaijerin vinoudesta.
+
+### c)
+**Annettu:** $T_\text{max} = 600\,\text{N}$, $\theta = 30{,}0^\circ$, $m_\text{t} = 3{,}0\,\text{kg}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** suurin kyltin massa $m_\text{s}$
+**Periaate:** Tilanne on sama kuin a-kohdassa, ja momenttiehto saranan suhteen pätee (luku *Kappaleen tasapaino: voimat ja momentit*). Suurin massa saadaan, kun vaijerin voima on suurin sallittu, $T = T_\text{max}$.
+**Kaava:** a-kohdan momenttiehdosta $T_\text{max} \sin\theta = (m_\text{s} + \tfrac12 m_\text{t})\,g$, joten $m_\text{s} = \dfrac{T_\text{max}\sin\theta}{g} - \tfrac12 m_\text{t}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+m_\text{s} &= \dfrac{T_\text{max}\sin\theta}{g} - \tfrac12 m_\text{t} \\
+&= \dfrac{600\,\text{N} \cdot 0{,}500}{9{,}81\,\text{m/s}^2} - 1{,}5\,\text{kg} \\
+&= 30{,}58\,\text{kg} - 1{,}5\,\text{kg} \\
+&= 29{,}08\,\text{kg}
+\end{aligned}
+$$
+**Vastaus:** $m_\text{s} \approx 29\,\text{kg}$. Tuloksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa.
+**Järkevyys:** Tarkistus a-kohdan kaavalla: $T = \dfrac{(29{,}08 + 1{,}5)\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}500} \approx 600\,\text{N}$. Tulos on suurempi kuin nykyinen $18\,\text{kg}$. Se on järkevää, koska nykyisessä tilanteessa vaijerin voima $380\,\text{N}$ on alle $600\,\text{N}$.
+
+### d)
+**Kysytty:** miten vaijerin voima muuttuu, kun $\theta' = 45^\circ$
+**Periaate:** Momenttiehto saranan suhteen on sama kuin a-kohdassa, mutta kulma on $\theta'$ (luku *Kappaleen tasapaino: voimat ja momentit*). Momenttiehdosta tulee $T\sin\theta' \cdot L = (m_\text{s} + \tfrac12 m_\text{t})\,g L$. Vaijerin voiman pystykomponentti $T\sin\theta'$ on siis aina sama, koska painojen momentit eivät muutu.
+**Mallivastaus:** Pystykomponentti pysyy arvossa $T\sin\theta = (m_\text{s} + \tfrac12 m_\text{t})g \approx 191\,\text{N}$ riippumatta kulmasta. Vaijerin voima on siis $$
+\begin{aligned}
+T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta'} \\
+&= \dfrac{191{,}3\,\text{N}}{\sin 45^\circ} \\
+&= \dfrac{191{,}3\,\text{N}}{0{,}7071} \\
+&= 270{,}5\,\text{N}
+\end{aligned}
+$$. Voima pienenee noin $29\,\%$ ($380\,\text{N} \to 270\,\text{N}$). Syy: kun vaijeri on jyrkempi, suurempi osa sen voimasta osoittaa ylöspäin. Voiman ei tarvitse olla yhtä suuri saman pystykomponentin saamiseksi. Samalla vaakakomponentti pienenee: $$
+\begin{aligned}
+H' &= T\cos 45^\circ \\
+&= 270{,}5\,\text{N} \cdot 0{,}7071 \\
+&= 191{,}3\,\text{N}
+\end{aligned}
+$$ Aiemmin se oli $331\,\text{N}$, joten myös saranan voima pienenee. Kiinnitys korkeammalle rasittaa siis sekä vaijeria että saranaa vähemmän.
+
+### Yleisiä virheitä
+- a-kohdassa tangon paino otetaan tangon päähän tai sen momentti unohdetaan. Tasa-aineisen tangon paino vaikuttaa keskeltä, varrella $\tfrac{L}{2}$.
+- a-kohdassa vaijerin voiman varreksi otetaan $L$ ilman kulmaa. Vain tankoa vastaan kohtisuora komponentti $T\sin\theta$ kiertää tankoa, tai varsi on $L\sin\theta$.
+- b-kohdassa saranan voimaksi otetaan vain vaakakomponentti tai pystykomponentti. Voima on molempien komponenttien vektorisumma.
+- d-kohdassa oletetaan, että jyrkempi vaijeri kasvattaa voimaa. Pystykomponentti pysyy samana, joten koko voima pienenee.
+
+### Hyväksytään myös
+- b-kohdassa $V$ voidaan laskea momenteilla tangon ulomman pään suhteen: $V L = m_\text{t} g\,\tfrac{L}{2}$, ja $H = T\cos\theta$.
+- a-kohdassa momentit voidaan laskea myös vaijerin voiman vaakakomponentin ja pystykomponentin avulla: pystykomponentin varsi on $L$ ja vaakakomponentin varsi nolla, sama tulos.
