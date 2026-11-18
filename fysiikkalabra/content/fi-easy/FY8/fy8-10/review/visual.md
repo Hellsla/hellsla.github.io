@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7b92fb753e2a6ae5
+CONTENT-HASH: 06650eaca602f1b3
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Opened fy8-10 stage-selita-390-6 (390 px layout survived); the changed Q row in the Kaava line judged from source, the same block type seen at 1280 px in fy8-1.
-- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.
+- Delta (inquiry.json Pohdinta retrieval prompt reworded): opened fy8-10-stage-herata-390. The optional "Kertaa: alfahajoaminen" box is closed in the capture, so the new prompt was judged from source. Wording is fluent; quantity and nuclide symbol are in LaTeX; the helium-4 / alfahiukkanen explanation precedes the question. Layout of the stage is intact. lesson.md changed only in paragraph cutting; no figure changed (teacher-approved).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

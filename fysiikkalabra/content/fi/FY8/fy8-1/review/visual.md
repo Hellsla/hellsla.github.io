@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 97bcda50fbbdcbbb
+CONTENT-HASH: c16091df49761101
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: 97bcda50fbbdcbbb
 - none
 
 ## Checked
-- Delta round 4, long formulas re-set as aligned blocks. Opened fy8-1 example-390-1 and theory-1280-2 at readable size: the changed 1 eV block sets as aligned rows, = under =, nothing clipped.
-- Words, numbers and units unchanged by the diff.
+- Delta round 1: retrieval task now uses UV-C 254 nm / red 650 nm (inquiry.json). Opened fy8-1-stage-herata-390 (Pohdinta, optional Kertaa box consistent with the scene's UV-C/red lamps) and fy8-1-open-ennusta-1280-1 (layout of the neighbouring prediction stage survived). Units are LaTeX; wording fluent, "UV-C-valon" / "punaisen valon" consistent.
+- lesson.md paragraph cut only; no layout regression seen.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

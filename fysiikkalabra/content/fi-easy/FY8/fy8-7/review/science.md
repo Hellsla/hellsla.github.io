@@ -1,21 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 6462de917d30bb56
-Mode: full, round 1
+VERDICT: FAIL
+CONTENT-HASH: d6a1f284318a9815
 
 ## Blocking
-(none)
+- content/fi-easy/FY8/fy8-7/inquiry.json:33 — (A, internal consistency) the prompt now gives the neon atom's photon as $633\,\text{nm}$, but the correct option's feedback still says "Aallonpituutta $650\,\text{nm}$ vastaa energia $\tfrac{hc}{\lambda} \approx 1{,}91\,\text{eV}$". A student checking the number against the prompt is shown the wrong wavelength and energy. — fix: "Aallonpituutta $633\,\text{nm}$ vastaa energia $\tfrac{hc}{\lambda} \approx 1{,}96\,\text{eV}$" (recomputed 1,959 eV; lesson-answers.py `kert-633-eV` = 1,958921).
+- content/fi-easy/FY8/fy8-7/inquiry.json:37 — (A) same stale $650\,\text{nm}$ / $1{,}91\,\text{eV}$ in the "energia on ylemmän tason $E_2$ energia" distractor's feedback. — fix: $633\,\text{nm}$, $1{,}96\,\text{eV}$.
 
 ## Polish
-- assets/sims/fy8/fy8-7/sim.js (readout, `tx(S.Pout, 0)`) — at $P_\text{p} = 1{,}5\,\text{W}$ the readout shows 12 mW while simState, the feedback of ennuste-1 and the johtopaatos model say 12,5 mW — show one decimal in the readout.
-- inquiry.json ennuste-1, first distractor's feedback — "Valo vahvistuu vasta, kun ylätasolla on tarpeeksi enemmän atomeja" blurs gain (any $N_2 > N_1$, as the theory says) with the threshold (gain covers the losses) — say "Säde syntyy vasta, kun vahvistuminen korvaa häviöt".
-- inquiry.json johtopaatos model — "1,0 W ja sen alle ... eikä inversiota ole" skips the model's range 1,1–1,2 W where there is an inversion (52,4 %, 54,5 %) but no beam; one clause would tie it to the threshold 1,22 W and to criterion 2.
 
 ## Checked
-- Own recomputation (h, c, e as given): graph 2,04 / 2,68 / 3,27 · 10^15 1/s; example 3,1399e-19 J, 3,1848e15 1/s, 632,65 nm; 1,91 and 3,06 eV; CdSe 1,74 eV → 713 nm; dots 2,58 / 2,34 / 2,18 / 2,07 / 2,00 eV; hydrogen 3→2 1,89 eV. All agree with the text and lesson-answers.py.
-- Sim model recomputed and driven in the preview: three levels 50 % / 0 mW at 1,0 W, 55 % and 12,5 / 35 / 80 / 125 / 170 mW at 1,5–5,0 W, threshold 0,55/0,45 = 1,22 W; two levels 33,3 / 40,0 / 45,5 %; no mirrors 66,7 / 83,3 %, inversion yes, no beam. simState gives n2, inv, Pout at every experiment's initial state.
-- Experiments: levels and mirrors locked, only P varied; each isolates its parameter.
-- Predictions, kertaus, kvanttipisteet, virhe, tarkistus-1: exactly one correct option; every distractor wrong and its feedback right (1,3e25 · 3,7e-19 J ≈ 5 MW; 1,3e16 1/s corrected).
-- siirto 96,31 W, mistakes 87,85 and 1096 W; tarkistus-2 532,19 nm, mistakes 397 and 228 nm; solutions symbolic first, rounding by the limiting datum.
-- Stimulated emission (incoming photon not absorbed, energy from the atom), two-level limit of one half stated for resonant pumping, thermal equilibrium never inverted, ruby ms lifetime vs 1e-8 s: correct; semiconductor laser kept apart from atomic levels.
-- Scope: laser, quantum structures through applications, tunnelling optional and qualitative; no de Broglie, no Schrödinger; dot-size calculation said to be extra.
-- Laser safety statement exact (power in a narrow beam, not photon energy); Nobel 2023 and 2025 claims correct.
+- hc/λ recomputed in my own script: 633 nm → 1,959 eV → 1,96 eV; 650 nm → 1,908 eV (old value). lesson-answers.py row `kert-633-eV` is correct and its comment right.
+- Prompt physics: the 633 nm He-Ne line is a transition between two neon levels, so spontaneous emission of 633 nm from neon is correct; this matches the lesson's He-Ne photo caption (lesson.md:193) and the worked example's 633 nm check (lesson.md:324).
+- Exactly one correct option (energy = $E_2 - E_1$); the other three options stay wrong and their feedback is still right (random direction in spontaneous emission; spontaneous decay needs no incoming photon).
+- The reworded direction feedback ("atomien itsestään lähettämä valo leviää kaikkialle") is correct and fits the neon context better than "lampun valo".
+- Other 650 nm mentions (rate graph, misconception box, tark2 check) are separate red-pointer contexts, not part of this item, and stay consistent with their own data.
+- Hash d6a1f284318a9815 at start and end.

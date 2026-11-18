@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Kertaa: siirtymän fotoni",
       "optional": true,
-      "prompt": "Laserosoittimen laseraineessa virittynyt atomi palaa itsestään tasolta $E_2$ tasolle $E_1$. Atomi lähettää punaisen valon fotonin, jonka aallonpituus on $650\\,\\text{nm}$. Mikä väite pitää paikkansa?",
+      "prompt": "Helium-neonlaserin neon-atomi palaa virittyneestä tilasta itsestään tasolta $E_2$ tasolle $E_1$. Atomi lähettää punaisen valon fotonin, jonka aallonpituus on $633\\,\\text{nm}$. Mikä väite pitää paikkansa?",
       "choices": [
         {
           "text": "Fotonin energia on tasojen erotus $E_2 - E_1$, joten väri määräytyy tasoista.",
           "correct": true,
-          "feedback": "Oikein. Fotonin energia on tasojen erotus, $hf = E_2 - E_1$ (luku *Vetyatomin energiatasot ja Bohrin malli*). Aallonpituutta $650\\,\\text{nm}$ vastaa energia $\\tfrac{hc}{\\lambda} \\approx 1{,}91\\,\\text{eV}$. Sama ajatus on laserin ytimessä: laserin fotonit syntyvät samassa siirtymässä."
+          "feedback": "Oikein. Fotonin energia on tasojen erotus, $hf = E_2 - E_1$ (luku *Vetyatomin energiatasot ja Bohrin malli*). Aallonpituutta $633\\,\\text{nm}$ vastaa energia $\\tfrac{hc}{\\lambda} \\approx 1{,}96\\,\\text{eV}$. Sama ajatus on laserin ytimessä: laserin fotonit syntyvät samassa siirtymässä."
         },
         {
           "text": "Fotonin energia on ylemmän tason $E_2$ energia.",
-          "feedback": "Fotoni ei kanna yhden tason energiaa vaan tasojen erotuksen $E_2 - E_1 = hf$. Aallonpituutta $650\\,\\text{nm}$ vastaa energia $\\tfrac{hc}{\\lambda} \\approx 1{,}91\\,\\text{eV}$. Se on tasojen erotus."
+          "feedback": "Fotoni ei kanna yhden tason energiaa vaan tasojen erotuksen $E_2 - E_1 = hf$. Aallonpituutta $633\\,\\text{nm}$ vastaa energia $\\tfrac{hc}{\\lambda} \\approx 1{,}96\\,\\text{eV}$. Se on tasojen erotus."
         },
         {
           "text": "Fotoni lähtee aina samaan suuntaan, koska siirtymä on joka kerta täsmälleen sama.",
-          "feedback": "Fotonin energia on aina sama, mutta suunta ei ole. Kun viritetty atomi lähettää fotonin itsestään, suunta on satunnainen. Siksi lampun valo leviää kaikkialle."
+          "feedback": "Fotonin energia on aina sama, mutta suunta ei ole. Kun viritetty atomi lähettää fotonin itsestään, suunta on satunnainen. Siksi atomien itsestään lähettämä valo leviää kaikkialle."
         },
         {
           "text": "Atomi lähettää fotonin vain silloin, kun siihen on ensin osunut jokin toinen fotoni.",

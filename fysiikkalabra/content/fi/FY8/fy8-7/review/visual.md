@@ -1,18 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 70c44750233f7ee3
+VERDICT: FAIL
+CONTENT-HASH: a099757b3027bdc5
 
 ## Blocking
-(none)
+- [Major] inquiry.json, herata "Kertaa: siirtymän fotoni" — the prompt now says 33\,\text{nm}$ (He-Ne laser) but the feedback of the correct choice and of choice 2 still say 50\,\text{nm}$ and {,}91\,\text{eV}$ — the student reads two different wavelengths for the same photon, and the lesson-answers.py key changed to 1,96 eV — change both feedbacks to 33\,\text{nm}$ and $\tfrac{hc}{\lambda} \approx 1{,}96\,\text{eV}$.
 
 ## Polish
-- [Minor] inquiry.json, Esimerkki 3 (stage-sovella-390-2) — for science: the situation now says the energy difference "jää kuituun sisäenergiaksi", while the question and the solution still say "Kuinka paljon lämpöä kuituun syntyy" and "lämpöteho $P_\text{lämpö}$"; the two wordings sit in adjacent sentences. Decide whether the question should follow the new term.
+(none)
 
 ## Checked
-- Round 1, delta: energiarako → energia-aukko (lesson, inquiry, exit ticket) and lämmöksi → sisäenergiaksi (Esimerkki 3). Hash the same at start and end.
-- contact-3 for triage; opened stage-selita-390-3 and -4 (Kvanttirakenteet section, qdots figure and photo under it), stage-selita-390-7 (Tiivistelmä), stage-tutki-390-3 (Kvanttipisteiden värit, table and choices), stage-sovella-390-2 (Esimerkki 3 prompt), open-exit-1280 (answer 2), open-tarkista-1280-4.
-- "energia-aukko" is used in every changed place and inflects correctly (energia-aukosta, energia-aukkoa, energia-aukon); no "energiarako" left in the captures opened. The bold definition and the hyphenated line breaks ("energia-/aukko") read naturally at 390 px.
-- Quantities in the edited sentences stay LaTeX ($1{,}74\,\text{eV}$, $713\,\text{nm}$, $1{,}0\,\text{kW}$); the table, the figure beside its paragraph and the cards kept their layout; nothing clipped.
-- The selitys task's opened model answer (tarkista 3) was judged from the diff text, not from a capture of its own.
+- Delta round 2: He-Ne retrieval card. Opened stage-herata-390 (card in place, layout fine) and open-tarkista-1280-1 (layout survived). Read the changed inquiry.json lines in source: the feedback of the first two choices was not updated; the third feedback ("atomien itsestään lähettämä valo") reads well.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

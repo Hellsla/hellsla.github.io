@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2e8b28968f4ffbc5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: e93d49c1575801b6
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- "UV-C" is not explained in the review task; one clause ("näkymätön ultraviolettivalo") would help an S2 student.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: UV-C 254 nm task, feedback values (1,2e15 Hz, 4,6e14 Hz) and answers.py consistent; figures unchanged.

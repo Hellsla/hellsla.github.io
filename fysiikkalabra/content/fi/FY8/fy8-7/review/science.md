@@ -1,23 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 70c44750233f7ee3
+VERDICT: FAIL
+CONTENT-HASH: a099757b3027bdc5
 
 ## Blocking
+- A (quantitative and internal consistency): content/fi/FY8/fy8-7/inquiry.json:33 and :37. The prompt (line 28) now uses the He-Ne neon atom at $633\,\text{nm}$, but the feedback for the correct option and for distractor 2 still says "aallonpituutta $650\,\text{nm}$ vastaa energia … $\approx 1{,}91\,\text{eV}$". For the stated 633 nm, hc/λ = 1,96 eV. The student is shown a number for a wavelength that is not in the task. The same stale text is in content/en/FY8/fy8-7/inquiry.json:33, :37 and content/fi-easy/FY8/fy8-7/inquiry.json:33, :37. Fix: in all three languages, change it to "$633\,\text{nm}$ … $\approx 1{,}96\,\text{eV}$" (lesson-answers.py `kert-633-eV` already gives 1,96 eV).
 
 ## Polish
-- assets/sims/fy8/fy8-7/sim.js:82 — the readout shows `P_ulos` without decimals, so at 1,5 W it reads 13 mW while simState, the experiment table and the feedback say 12,5 mW — use `tx(S.Pout, 1)`.
-- inquiry.json:403 (siirto) — "kuinka paljon lämpöä kuituun syntyy" right after "jää kuituun sisäenergiaksi" (guardrails: heat is energy in transfer) — ask how much energy becomes the fibre's internal energy per second, and state that all pump light is absorbed (the solution assumes it).
-- lesson.md:124 — "lähes yksiväristä, koska fotonit syntyvät samassa siirtymässä": spontaneous light of one transition is one line too — add that each stimulated photon copies the incoming photon's energy.
-- inquiry.json (ennuste-1 feedback) — cites model values at 0,5 W and 4,0 W, which koe-1 does not ask the student to record — add them to the intro's list or cite 1,0–3,0 W only.
-- lesson.md:89 — "tasolle E2 ehtii kertyä enemmän atomeja kuin perustilaan jää" holds only with strong enough pumping (the sim: none below 1,0 W) — add "kun pumppaus on riittävän voimakas".
+- lessons/FY8/fy8-7/lesson-answers.py:37–38: the comment and `kert-656-eV` (hydrogen 3 → 2) no longer belong to the Kertaa item. Remove them, or relabel them if another place uses them.
 
 ## Checked
-- Every number recomputed with own formulas in one script (graph 2,04 / 2,68 / 3,27 · 10^15 1/s, example 3,1848 · 10^15 1/s and 632,65 nm, photon energies, CdSe 713 nm, dot table 2,58–2,00 eV); agrees with lesson-answers.py.
-- Rate graph and dot figure are to scale as they state (pixel positions; radii 2:3:4:5:6).
-- Sim rate equations: n2 = w/(1+w), clamp 55 %, P_ulos = 100 mW·(0,45w − 0,55), threshold 1,22 W; two levels n2 = w/(1+2w) < 50 %; sim.js, calc box, sim-spec and feedback values agree.
-- Experiments: levels and mirrors locked, only P varied; simState gives n2, inv, Pout; inversion without a beam at 1,1–1,2 W fits the threshold text.
-- Predictions and checks: exactly one correct option each, distractors false, feedback numbers right.
-- Kertaus, Etsi virhe (10^25 vs 1,34 · 10^16; 5 MW), siirto (96,3 W; mistakes 87,9 and 1096 W), tarkistus-2 (532,19 nm; 397, 228 nm).
-- Worked example: seven stages, symbolic first, units, rounding from 1,0 mW, real reasonableness check.
-- Causality: energy in stimulated emission, two-level limit, threshold as gain against losses, laser hazard; same in theory, summary, feedback, exit ticket.
-- Facts: Einstein 1917, ruby 694 nm, He-Ne 633 nm, Nobel 2023 and 2025, tunnelling applications.
-- Scope: FY8 central contents; no de Broglie wavelength; tunnelling optional.
+- The prompt's physics: He-Ne lasers emit red light at 633 nm from neon, and an atomic level transition is the right model (round 1 finding resolved).
+- I recomputed hc/λ with h = 6,626·10⁻³⁴ Js, c = 2,998·10⁸ m/s and e = 1,602·10⁻¹⁹ C: 633 nm gives 1,959 eV and 650 nm gives 1,908 eV. lesson-answers.py `kert-633-eV` agrees.
+- Exactly one correct option. "Energia on tasojen erotus, väri määräytyy tasoista" is right.
+- Distractor 2 ("ylemmän tason energia") is wrong, and its feedback reasons correctly except for the stale number.
+- Distractor 3: spontaneous emission goes in random directions. The revised last sentence ("atomien itsestään lähettämä valo leviää kaikkialle") fits the prompt, so the round 1 polish item is resolved.
+- Distractor 4: spontaneous decay in about 10⁻⁸ s is correct for an allowed transition, and the feedback is right.
+- en and fi-easy prompts match the Finnish change.

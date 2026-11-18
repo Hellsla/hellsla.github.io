@@ -1,15 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 3b02591b23190119
+VERDICT: FAIL
+CONTENT-HASH: 582d3e8f8eaed80e
 
 ## Blocking
-- none
+- [Major] fy8-5-stage-sovella-390-1 (Esimerkit, box title) — "Esimerkki 1: Siirtymä 3extdo2extp" renders as garbled italic text, backslashes lost; source `example-names.json` line 105 `$3\\text{d} \\to 2\\text{p}$` — broken notation in a heading, only math title in the course names — put the title in words ("Siirtymä 3d-tilalta 2p-tilalle" with $3\text{d}$ in maths only if the shared title renderer is fixed) or fix the renderer (shared file, runs alone).
 
 ## Polish
 - none
 
 ## Checked
-- Delta round 4, long formulas re-set as aligned blocks. Judged from source: the diff only re-sets one display block (first row the left-hand side alone, each + or - term whole); the same shared aligned renderer was seen in fy8-1 captures, so the layout is as there; not opened separately.
-- Words, numbers and units unchanged by the diff.
-
+- Delta: inquiry prompt (Pohdinta/herata-390), theory-1280-1 (paragraph cuts: layout intact, figures fine), sovella-390-1.
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4

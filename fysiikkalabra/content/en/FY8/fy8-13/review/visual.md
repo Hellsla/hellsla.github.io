@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe314c2762a71b21
+CONTENT-HASH: 638b961476318230
 
 ## Blocking
 (none)
@@ -8,4 +8,8 @@ CONTENT-HASH: fe314c2762a71b21
 (none)
 
 ## Checked
-- batch delta review, en: opened example-390-2 (stage 5 block, rows aligned at =); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.
+- Delta en: opened stage-herata-390 (Think about it, the changed optional review box; its prompt is closed there, so the new wording was judged from the diff: fluent, one clear question), example-390-2 (stages 5-7, rows aligned at =, units upright), open-tarkista-1280-1 (Test and assess). Paragraph re-cuts show no layout damage.
+- Hash re-run at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b9ea2a08e78ed366
+CONTENT-HASH: 25198780be5abb6a
 
 ## Blocking
 (none)
@@ -8,7 +8,8 @@ CONTENT-HASH: b9ea2a08e78ed366
 - none
 
 ## Checked
-- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
+- Delta round 1, hash 25198780be5abb6a at start and end: one sentence added to the optional "Kertaa: beeta miinus -hajoaminen" prompt in inquiry.json (lesson.md only re-cut into paragraphs, no figure or formula changed).
+- Opened fy8-15-stage-herata-390 (Pohdinta): the closed Kertaa box sits under the question, layout intact. The opened prompt has no capture of its own; judged from source: formula unchanged, new sentence plain words and fluent Finnish, consistent with the Pohdinta text about the free neutron; check_layout is clean.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

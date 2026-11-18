@@ -1,17 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 66c250ebde3dc328
-Mode: delta (round 1)
-
+VERDICT: FAIL
+CONTENT-HASH: 6762f2ae91326a1a
 ## Blocking
-- none
+- content/en/FY8/fy8-7/inquiry.json:33 — the retrieval item's prompt now says 633 nm (helium-neon), but the correct option's feedback still says "wavelength 650 nm ... approx. 1.91 eV" — the feedback contradicts the question and the new answers.py value (hc/633 nm = 1.96 eV) — change to $633\,\text{nm}$ and $\approx 1.96\,\text{eV}$.
+- content/en/FY8/fy8-7/inquiry.json:37 — same in the "energy of the upper level" distractor's feedback (650 nm, 1.91 eV) — change to $633\,\text{nm}$ and $1.96\,\text{eV}$.
 
 ## Polish
-- content/en/FY8/fy8-7/inquiry.json:403 — the prompt says the energy difference stays in the fibre "as internal energy" and then asks "how much heat is produced"; hints, feedback and solution keep "heat" — optional: "At least how much does the internal energy of the fibre grow per second? Give the answer in watts.", keeping "heating power" as the name of the symbol.
+- The lesson-answers.py key is renamed kert-633-eV; confirm the inquiry/answers check no longer refers to kert-650-eV.
+- The reworded direction distractor ("light that atoms emit by themselves spreads in all directions") is fine and no longer mentions a lamp.
 
 ## Checked
-- "as heat" → "as internal energy" in the transfer task's prompt and the solution's Principle: numbers, answer 96.3 W, tolerance, hints and solution steps unchanged.
-- The solution still explains the energy balance (pump power = beam + internal energy of the fibre) before the formula; a student can follow it.
-- The question remains its own last sentence; nothing is disclosed earlier than before; workload unchanged.
-- English reads naturally; no number, formula, symbol or unit changed.
-- lesson.md change is teacher-approved figures only (not judged).
-- Hash identical at start and end.
+- Prompt change to the helium-neon laser, 633 nm: fits the lesson's pics (helium-neon-laser) and the physics.
+- Direction-distractor feedback: still repairs the misconception.
+- Other 650 nm mentions (line 480, exercise solution about graph points) are a separate exercise and unaffected.
+- Hash at start and end: 6762f2ae91326a1a (en); no further edits during review.

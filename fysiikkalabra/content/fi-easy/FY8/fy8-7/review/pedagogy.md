@@ -1,19 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 6462de917d30bb56
-Mode: delta (round 1)
+VERDICT: FAIL
+CONTENT-HASH: d6a1f284318a9815
 
 ## Blocking
-- none
+- content/fi-easy/FY8/fy8-7/inquiry.json:33 — the prompt of "kertaus" now says 633 nm (He-Ne), but the correct option's feedback still says "Aallonpituutta $650\,\text{nm}$ vastaa energia ... $1{,}91\,\text{eV}$" — the student reads feedback about a different wavelength than the one in the task — change to $633\,\text{nm}$ and $\approx 1{,}96\,\text{eV}$ (answers.py "kert-633-eV" already holds 1,96 eV).
+- content/fi-easy/FY8/fy8-7/inquiry.json:37 — same stale values in the distractor "Fotonin energia on ylemmän tason $E_2$ energia." — change to $633\,\text{nm}$ and $1{,}96\,\text{eV}$.
 
 ## Polish
-- content/fi-easy/FY8/fy8-7/inquiry.json:403 — "Energiaero jää kuituun sisäenergiaksi. Kuinka paljon lämpöä kuituun syntyy…": two words for one thing in neighbouring sentences is harder for an S2 reader; hints (:410), feedback (:419) and solution (:422) keep "lämpöä syntyy" — optional: "Energiaero jää kuituun sisäenergiaksi, eli kuitu lämpenee. Kuinka paljon kuidun sisäenergia kasvaa sekunnissa vähintään? Vastaa watteina."
-- glossary.json, term kvanttipiste (outside this lesson's files) — the definition still says "energiarako"; the lesson now says "energia-aukko" — use "energia-aukko" in the definition.
+- none
 
 ## Checked
-- energiarako → energia-aukko applied in every place of lesson.md, inquiry.json, exit-ticket.json and meta.json key_concepts (no leftover form; grep).
-- Inflected forms correct: energia-aukosta, energia-aukkoa, energia-aukon; sentence-initial "Energia-aukko" capitalised.
-- The bold definition of the term in the theory still explains it at first use; the key concept in meta.json matches it.
-- Data task option, its feedback, the explain model answer and criterion use the theory's term, so the criteria still assess what is asked.
-- lämmöksi → sisäenergiaksi in the transfer task: numbers, answer, hints and solution steps unchanged; short sentences kept.
-- No number, formula, symbol or unit changed; nothing disclosed earlier; workload unchanged.
-- Hash identical at start and end.
+- Prompt change (He-Ne laser, 633 nm) is physically right and suits the laser topic; the third distractor's feedback rewording ("atomien itsestään lähettämä valo leviää kaikkialle") is correct and no longer refers to a lamp that is not in the task.
+- 633 nm gives 1,96 eV, so the old 1,91 eV figure is wrong for this task.
+- answers.py key renamed to kert-633-eV with 1,96 eV; consistent with the prompt, but not with the feedback in inquiry.json.
+- Hash at start and end: d6a1f284318a9815 (fi-easy).

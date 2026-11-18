@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9939aab4e79fce7e
-SCOPE: delta added-exercise from c6f2c3a890e2d599 base 96f3d46cabcf
+CONTENT-HASH: 2aca3fef8a216bbd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-1-L2-10 solution, Reasonableness — "as the threshold wavelength of sodium, 544 nm, in the theory" reads clumsily — "like the threshold wavelength of sodium, $544\,\text{nm}$, given in the theory".
-- [Minor] fy8-1-L2-10 solution, "Reading the graph" — a long paragraph, the closing "however, taken straight from the slider" is awkward — start with the slider reading and then the graph remark.
+- [Minor] fy8-1-L2-10 solution, Formula row (open-exercises-L2-1280-10) — the inline chain with two fractions, k = (E_3 - E_1)/(f_3 - f_1) then f_0 = f_1 - E_1/k, sits with the rows nearly touching, so the denominator and the next numerator crowd — put the f_0 line on its own row.
 
 ## Checked
-- Captures fy8-1-open-exercises-L2-1280-14, -15, -16, -17 (task 1-20 text, answer box, whole solution: given, principle, formula, conversions, substitution rows, model answers a–d, answer, reasonableness). KaTeX clean, units upright with thin space, decimal point, no clipping. Set still reads as one. Delta: only the added exercise judged; no 390 px capture of exercises exists.
+- delta, en (solutions.md paragraph cut only): opened review/shots/fy8-1-open-exercises-1280-3.png (task 1-3 fully open: units, fractions, answer block fine) and fy8-1-open-exercises-L2-1280-10.png (graph-reading solution; the crowding above). Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 04d9947faaf13eb6
+CONTENT-HASH: 351f8c4db0b3d511
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] L3-05 mallivastaus — says "lämpöliikkeen energiaksi" while task and solution now say sisäenergiaksi; harmonise if edited again.
+- [Minor] Tehtävän 2-20 (L3, fy8-2-open-exercises-L3-1280-5) taulukon otsikko "Malliatomin mitatut emissioviivat" rivittyy kolmelle riville kapean taulukon leveyteen; leveämpi otsikko riittäisi (jaettu komponentti).
 
 ## Checked
-- Delta: lämpö -> sisäenergia in L3-03, L3-05 text and solutions, "elektronivolteiksi" typo fix, two significant-figure sentences. Opened open-exercises-L3-1280-8 (L3-05 solution): formulas, alignment, units and answer box fine.
+- Delta: markkerin "esimerkkiaineisto" poisto kuvatekstistä ja solutions.md:n kappalejako.
+- Avasin fy8-2-open-exercises-L3-1280-1 (ratkaisun rakenne ja kaavat) ja fy8-2-open-exercises-L3-1280-5 (taulukko, kuvateksti, ratkaisu): kaavat, rivitykset ja yksiköt kunnossa, ei leikkautumista.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

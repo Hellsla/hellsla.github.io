@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Review: the photon of a transition",
       "optional": true,
-      "prompt": "In the laser material of a laser pointer, an excited atom returns by itself from the level $E_2$ to the level $E_1$ and emits a photon of red light with a wavelength of $650\\,\\text{nm}$. Which statement is true?",
+      "prompt": "In a helium-neon laser, an excited neon atom returns by itself from the level $E_2$ to the level $E_1$ and emits a photon of red light with a wavelength of $633\\,\\text{nm}$. Which statement is true?",
       "choices": [
         {
           "text": "The energy of the photon is the difference of the levels, $E_2 - E_1$, so the colour is set by the levels.",
           "correct": true,
-          "feedback": "Correct. The energy of the photon is the difference of the levels, $hf = E_2 - E_1$ (chapter *Energy levels of the hydrogen atom and the Bohr model*), and the wavelength $650\\,\\text{nm}$ corresponds to the energy $\\tfrac{hc}{\\lambda} \\approx 1.91\\,\\text{eV}$. The same idea is at the heart of the laser: the photons of a laser are produced in the same transition."
+          "feedback": "Correct. The energy of the photon is the difference of the levels, $hf = E_2 - E_1$ (chapter *Energy levels of the hydrogen atom and the Bohr model*), and the wavelength $633\\,\\text{nm}$ corresponds to the energy $\\tfrac{hc}{\\lambda} \\approx 1.96\\,\\text{eV}$. The same idea is at the heart of the laser: the photons of a laser are produced in the same transition."
         },
         {
           "text": "The energy of the photon is the energy of the upper level $E_2$.",
-          "feedback": "The photon carries not the energy of one level but the difference of the levels, $E_2 - E_1 = hf$. The wavelength $650\\,\\text{nm}$ corresponds to the energy $\\tfrac{hc}{\\lambda} \\approx 1.91\\,\\text{eV}$, and that is the difference of the levels."
+          "feedback": "The photon carries not the energy of one level but the difference of the levels, $E_2 - E_1 = hf$. The wavelength $633\\,\\text{nm}$ corresponds to the energy $\\tfrac{hc}{\\lambda} \\approx 1.96\\,\\text{eV}$, and that is the difference of the levels."
         },
         {
           "text": "The photon always leaves in the same direction, because the transition is exactly the same every time.",
-          "feedback": "The energy of the photon is always the same, but the direction is not. When an excited atom emits a photon by itself, the direction is random. That is why the light of a lamp spreads everywhere."
+          "feedback": "The energy of the photon is always the same, but the direction is not. When an excited atom emits a photon by itself, the direction is random. That is why light that atoms emit by themselves spreads in all directions."
         },
         {
           "text": "An atom emits a photon only when some other photon has hit it first.",

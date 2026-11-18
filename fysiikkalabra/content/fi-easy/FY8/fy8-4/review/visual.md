@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6e18483831d8ad47
+CONTENT-HASH: 6d4f215f45ab5440
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-- batch delta review, round 2: opened example-390-1 and stage-sovella-390-2 (lifted formulas with a following sentence, unit rows); the lifted formulas carry their closing mark inside the last row, no lone mark, rows aligned and unclipped. Not every capture of this lesson was opened; the rest is judged from the same shared build (mathlayout.with_punct).
+- Delta: rewritten Pohdinta retrieval task (fy8-4-stage-herata-390): fluent Finnish, glossary terms consistent, layout intact, no clipping; intro/other captures unchanged by the diff (paragraph-only lesson.md change).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

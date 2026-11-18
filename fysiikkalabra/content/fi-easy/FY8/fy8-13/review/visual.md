@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 77dfaf74f9ed879e
+CONTENT-HASH: cc6f91eb15d908c2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
+- none
 
 ## Checked
-- batch delta review, round 2: opened stage-sovella-390-1 and stage-selita-390-5 (lifted formulas); the lifted formulas carry their closing mark inside the last row, no lone mark, rows aligned and unclipped. Not every capture of this lesson was opened; the rest is judged from the same shared build (mathlayout.with_punct).
+- Delta (md-paragraphs, wording): fy8-13-stage-herata-390 (Pohdinta; the optional "Kertaa: alfasäteilyn läpäisykyky" task whose prompt changed to the maintenance worker's dusty clothes); the prompt text itself read in inquiry.json. Also fy8-13-open-tarkista-1280-1 (checks, layout intact).
+- New prompt is fluent, glossary terms intact, situation first and question last. Other captures unchanged since the earlier PASS.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
