@@ -1,19 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: e356f29b730cbfea
-SCOPE: delta: new tasks s7 (Jousen kalibrointi) and s8 (Pudotettu teräskuula videolla), the s8-kuvaaja model graph and the changed intro; older tasks s1-s6 untouched (not re-judged).
+CONTENT-HASH: ce624321f2f924f1
+SCOPE: delta: round 2, the fixes of round 1 in fy9-mittaaminen-s7 and -s8 (s8 solutions, rubric, answers.py, the s8-kuvaaja model graph); older tasks s1-s6 untouched (not re-judged).
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-1. **A, s8 c, the frame-interval cause is backwards.** This is in the solution ("Aikaskaalan virhe ... $0{,}974 \cdot 0{,}05\,\text{s} = 0{,}0487\,\text{s}$") and in the rubric `error_sources` detail ("kuvaväli on noin $2{,}6\,\%$ lyhyempi kuin oletettu"). We have $g = 2s/t^2$. If the real interval were shorter than assumed, the computed $g$ would be too small. The measured $10{,}35$ instead of $9{,}81\,\text{m/s}^2$ needs a *longer* real interval: $0{,}05\,\text{s} \cdot \sqrt{10{,}35/9{,}81} \approx 0{,}0514\,\text{s}$, about $2{,}7\,\%$ (the real frame rate lower than nominal). The same error is in fi and en.
-2. **A, s8 a, "Se on yhtä suuri kuin lukemisen epävarmuus, joten se ei ole merkitsevä"** (5th criterion, model answer). Every line through all the $\pm 0{,}01\,\text{m}$ bars crosses the $s$ axis between $+0{,}003$ and $+0{,}012\,\text{m}$, and none passes through the origin. By the method of part b (and of s7 b), the constant term is therefore not shown to be insignificant. Reword as in fi: the constant term is small, about the reading uncertainty, and the slope is not affected because the line is not forced through the origin.
+1. **A, s8 a, round-1 item 2 is fixed only in the solution.** The fi-easy model answer is now correct: "Vakiotermi on pieni. Suoraa ei ole pakotettu origon kautta, joten vakiotermi ei vaikuta kulmakertoimeen." The 5th rubric criterion of a (tasks.json, tag `graph`) still gives a point for "Se on yhtä suuri kuin lukemisen epävarmuus, joten se ei ole merkitsevä." Every line through all the $\pm 0{,}01\,\text{m}$ bars crosses the $s$ axis between $+0{,}0033$ and $+0{,}012\,\text{m}$ (recomputed), so zero is not included. The criterion rewards a wrong conclusion and contradicts the model answer. Reword it in short sentences, for example: "Suoran vakiotermi on noin $0{,}01\,\text{m}$. Se on pieni, suunnilleen lukemisen epävarmuuden suuruinen. Se ei vaikuta kulmakertoimeen, koska suoraa ei ole pakotettu origon kautta." The same item is open in fi and en.
 
 ## Polish
-- s8 b: "$g = 2 \cdot 5{,}18 \approx 10{,}35$". $2 \cdot 5{,}18 = 10{,}36$. Show $5{,}177$.
-- s8 c rubric: "pituuskaavan virhe" should be "mittakaavan virhe". An S2 reader cannot work out "pituuskaava".
-- Language level (not blocking, for the pedagogy reviewer): the s8 a-c solutions are the fi text word for word, with long sentences of several clauses (for example the a "Mallivastaus" and the c "Mahdolliset syyt"). The tasks and rubrics of s7 and s8, and the s7 solutions, are split into short sentences as NOTES §12 asks. The s8 solutions are not.
+- s8 c: the interval $10{,}19\ldots10{,}48\,\text{m/s}^2$ (the limiting lines) differs slightly from $10{,}35 \pm 0{,}15$ ($10{,}20\ldots10{,}50$). Both are defensible.
+- Language level (for the pedagogy reviewer): the fixed parts of s8 are now split into short sentences. The a-part sentence about the $(t,s)$ graph and the broken line is still long.
 
 ## Checked
-- Fidelity to fi for s7 a-c and s8 a-c: the task texts, criteria, solutions, Yleisiä virheitä and Hyväksytään myös. The numbers, units, points, answers and tolerances are identical, and the splitting into short sentences has changed no physics. The s7 b principle sentence "Vakiotermi on merkitsevä vain, jos se on suurempi kuin epävarmuus" is a correct simplification.
-- The same recomputation script as for fi (the fy5-8 and fy4-2 figure data; answers.py side by side): s7 $29{,}98\,\text{N/m}$, $\Delta k = 1{,}22$, $15{,}0 \pm 0{,}61\,\text{cm}$, intercepts $-0{,}20\ldots+0{,}27\,\text{cm}$. s8 $5{,}175$, $0{,}010\,\text{m}$, $5{,}094$/$5{,}242$, $10{,}35 \pm 0{,}15$, $0{,}54$ ($5{,}5\,\%$). All agree except items 1 and 2.
-- The alt text of the s8-kuvaaja figure (fi-easy solutions) matches the solution's numbers.
-- Intro: eight tasks, two with a ready graph, one with the gas law: true; the text is in short sentences.
-- `practice.py check` OK. The hash is the same at the start and the end.
+- Round-1 item 1 is fixed in the fi-easy solution c ("Jos todellinen kuvaväli on pidempi kuin oletettu $0{,}05\,\text{s}$, ajat on arvioitu liian pieniksi. Silloin laskettu $g$ on liian suuri."; $0{,}0514\,\text{s}$, $2{,}7\,\%$, a lower frame rate), in the rubric `error_sources` detail and in answers.py `c-tscale`. "Lyhyempi" and $0{,}0487$ are gone from s8.
+- The polish is fixed: $2 \cdot 5{,}177 = 10{,}35$; "pituuskaava" no longer appears. The rubric says "mittakaavan virhe".
+- The same recomputation as for fi (scratchpad s8r2.py): slope $5{,}175$/$5{,}177$, intercept $0{,}0100\,\text{m}$, largest residual $0{,}008\,\text{m}$, bounds $5{,}094$/$5{,}242$, $\Delta g = 0{,}147$, $0{,}54$ ($5{,}5\,\%$, $3{,}7\Delta g$), $0{,}0514\,\text{s}$. All are identical to fi and agree with the data. The sentence splitting changed no physics. The added "systemaattinen virhe eli virhe, joka vaikuttaa joka kerta samaan suuntaan" is a correct explanation.
+- Precision: $(10{,}35 \pm 0{,}15)\,\text{m/s}^2$ and $0{,}83\,\text{m}$ fit the data. No structure is revealed in the task text. Calculation chains are in aligned rows. The unit fields are language-neutral.
+- The alt text of s8-kuvaaja matches the solution.
+- `practice.py check` OK for fi-easy (8 tasks, 116 points). The hash is the same at the start and the end.
