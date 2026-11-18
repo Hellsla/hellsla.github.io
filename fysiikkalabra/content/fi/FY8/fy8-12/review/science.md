@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a354e4ca44ab66bf
+CONTENT-HASH: 839e9fe5367a7bcf
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: the retrieval prompt now uses Rn-222, a real alpha emitter; the answer (helium nucleus, charge +2e, about 7300 electron masses: 7294 recomputed) and distractor feedback are unchanged and right, one correct option; lesson.md changes are presentation only.
+batch delta review: inquiry.json transfer-task solution, Sijoitus step: unit notation changed from 1/min to min^-1 only; 1/2 · 800 min^-1 = 400 min^-1 is right, d_1/2 = 12 mm unchanged and agrees with the rest of the solution (200 pulses at 24 mm, 50 at 48 mm); no other number, formula or claim changed.

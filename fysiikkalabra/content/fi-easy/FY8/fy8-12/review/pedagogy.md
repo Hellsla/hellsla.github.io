@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e716733e7904e15e
+CONTENT-HASH: 88c65d9e13445881
+
 ## Blocking
 
 ## Polish
+- None needed.
 
 ## Checked
-batch delta review: diff only: americium-241 replaced by radon-222 in the alpha retrieval; the options and feedback do not depend on the nuclide; the model text in the simulation still mentions americium-241 as a real-source remark, which is separate and fine.
+batch delta review: solution of the half-value-thickness task now writes the unit as min^-1 instead of 1/min; consistent with the rest of the solution and the figure unit, no wording changed.
