@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 3899b2fed1ddbaa3
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 4465c40cddfece9f
+SCOPE: delta: new tasks s8 (Betoniseinä) and s9 (Galaksien etääntyminen) and the intro; older tasks untouched
 
 ## Blocking
 - (none)
 
 ## Polish
-- A (kept from round 1) `sovella/tasks.json` s7 b: three points for one division and one subtraction.
+- s9 a: tehtävän teksti antaa suoran pisteen ($250\,\text{Mpc}$; $18\,000\,\text{km/s}$), ja kuvan kuvaus toistaa sen. Kuvaajaa ei tarvitse lukea, joten `graph_read` ei mittaa mitään. Parempi: poista piste tekstistä ja kuvauksesta, jolloin $H_0$ luetaan ruudukosta (s8:ssa näin jo on).
+- s9 a: toinen "kaukana oleva piste" on origo, joka on annettu.
+- s8 antaa mallin $\dot{H}=\dot{H}_0 e^{-\mu d}$ valmiina; sopii tavoitteeseen, mutta mallin tunnistaminen jää harjoittelematta.
+- Helppo kieli: "Se on esitetty seinän paksuuden funktiona" ja "Niihin on sovitettu suora" ovat selkeitä lyhyitä lauseita, mutta s9 c:n ketju "Muuntaa $H_0$:n yksikköön" jättää subjektin pois; "$\dot{H}$ käytävän puolella. Se on esitetty..." on hyvä. Muuten kieli on kevyttä ja termit (annosnopeus, vaimennuskerroin, Hubblen vakio) säilyvät.
 
 ## Checked
-- s7 d prompt (round-1 Blocking): now asks for the estimate its third criterion rewards ("Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella"); the stem's third datum is now used; three demands, three criteria, 3 points. The solution's Kysytty line and model answer (1,05 MJ, 0,35 % of 300 MJ) agree. Fixed.
-- Stem: "Lisätietoja:" and three full sentences; renders as a list at 360 px.
-- s7 c Vastaus: two significant figures are now justified by the 80 K difference, consistent with the criterion "noin 9,4 kg".
-- s7 e criterion 1: either justification is accepted, each observable; agrees with the model answer.
-- Preview at 360 px, all boxes open: s7 has no clipped element and no raw TeX.
+- Avasin fi-easy-paketin: tarkistukset (practice.py check OK), s8 ja s9 tasks.json omana tekstinään, solutions.md ja kuvien kuvaukset.
+- Uskollisuus: samat luvut, pisteet (3+3+3+4, 3+3+4+3), toleranssit ja kriteerit kuin fi-versiossa; lauseet lyhennetty ilman sisällön muutosta, esim. d-kohdan oletus ("Nimeää oletuksen ja kertoo...") ja yläpyöristys säilyvät. Ei lisättyjä tai poistettuja vihjeitä.
+- Laskin luvut uudelleen: $\mu=0{,}1386$, $6{,}6\,\mu\text{Sv/h}$, $2{,}18\,\text{mSv}$, $23{,}6\,\text{cm}$, $H_0=72$, $116{,}7\,\text{Mpc}$, $1{,}36\cdot10^{10}\,\text{a}$; toleranssit hyväksyvät kahden numeron pyöristykset.
+- Taso ja vaihtelu: s8 lukeminen, malli, päättely, mitoitus; s9 lukeminen, käänteinen lasku, yksikkömuunnos, selitys. Yleiset virheet todellisia.
+- Alt-nimet ($\dot{H}$, $d$, $v$) vastaavat tekstiä; yksikkökentät kielineutraaleja.
+- Intro: "Yhdeksän" = 9 tehtävää (136 p); tehtävät 7, 8, 9 oikein. 360 px: luotin check_layoutiin ja shots.md:hen, en avannut kuvia.
+- Hash alussa ja lopussa sama.
