@@ -43,6 +43,7 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 `docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
+Varattu: claude/fy10-4-era1 (erä 1, jaetut komponentit)
 Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Jäljellä, opettajan päätettävä: erä 1
 (jaetut komponentit: taulukoiden otsakkeet ja tyhjät rivit 390 px:ssä, listojen numerointi, laskurivit listoissa, apulinkit,
 tyhjät 28×28 px:n kaappaukset; ajetaan yksin), Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
