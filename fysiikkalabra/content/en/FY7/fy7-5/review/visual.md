@@ -1,14 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 942d55118f8c060b
+VERDICT: FAIL
+CONTENT-HASH: 11872e3655aa7b3d
 
 ## Blocking
-(none)
+- [Major] review/shots — visual verification incomplete: `scripts/screenshot.py` fails (`ModuleNotFoundError: playwright`), so no current captures exist for this hash; the only fy7-5 PNGs are old illustration-audit files — a visual review may not pass from source alone — install playwright (or supply captures) and rerun `python3 scripts/screenshot.py fy7-5 --if-stale`.
 
 ## Polish
-(none)
+(source-only observation, not a verdict basis) The diff text reads fluently: the dynamo sentence, "turns smoothly round its peak" and "tangent ... has slope zero" are correct in form; all quantities are inline LaTeX; no plain-text units seen.
 
 ## Checked
-- Delta round 3: fy7-5-stage-herata-390.png (Pohdinta), fy7-5-open-tarkista-1280-1.png, and my own 360 px capture of the retrieval task with all feedback opened: the shortened option and the re-broken chain read cleanly, rows aligned, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
+- No captures opened (none could be made). Diff read as source only: exit-ticket.json and lesson.md "A change produces a voltage".
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4 (unverified, from the previous report and source)
