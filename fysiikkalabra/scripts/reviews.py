@@ -1028,7 +1028,7 @@ UNIT_NAMES = {"mSv": ("millisievert", "millisv"), "µSv": ("mikrosievert",), "Sv
               "A": ("ampeeri", "ampere"), "Hz": ("hertsi", "hertz"), "Pa": ("pascal",), "m": ("metri", "metre", "meter"), "s": ("sekunti", "second"),
               "h": ("tunti", "hour"), "min": ("minuutti", "minute")}   # a unit written as a word in the other language's text (work queue 8q: $\text{mSv}$ beside "millisieverteinä")
 PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
-LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
+LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w|-[a-zåäö])")   # a capital that is part of a word ("X-radiation") is no label; (A), a), X: stay
 MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$", re.S)
 
 
