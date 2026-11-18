@@ -64,7 +64,7 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
-Varattu: claude/fy9-c-kuvatehtavat (FY9 C: fy9-sahkokentta, fy9-magnetismi-valo, fy9-moderni; fy9-mittaaminen ja fy9-kokeellisuus jos sopiva valmis kuva)
+FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
