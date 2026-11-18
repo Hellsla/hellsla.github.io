@@ -255,6 +255,12 @@ Kahden kappaleen liikkeitä voi verrata vain, kun molempien paikka mitataan sama
 
 Kappaleet **kohtaavat**, kun ne ovat samassa paikassa samalla hetkellä eli $x_\text{A} = x_\text{B}$. Kohtaamisesta kysytään aina kahta asiaa: milloin se tapahtuu ja missä. Jos kappaleet tulevat vastakkaisista suunnista, ne kohtaavat toisensa. Jos takana kulkeva tavoittaa edellä kulkevan ja menee sen ohi, kyseessä on **ohitus**. Molemmissa fysiikka on sama: paikat ovat yhtä suuret.
 
+```pysahdy
+Kaksi pyöräilijää ajaa samaan suuntaan, toinen edellä. Mistä tiedät, että takana ollut on ehtinyt toisen kohdalle?
+---
+Heidän paikkansa ovat samat samalla hetkellä: $x_\text{A} = x_\text{B}$. Sen jälkeen takaa tullut on edellä.
+```
+
 <svg data-fig="tilanne" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva, jossa kaksi kappaletta on samalla x-akselilla, mittakaavassa. Ylhäällä hetkellä t = 0 kappale A on paikassa 0 m ja liikkuu nopeudella 3,0 m/s oikealle, kappale B on paikassa 60 m ja liikkuu nopeudella 2,0 m/s vasemmalle. Alhaalla hetkellä t = 12 s kumpikin on paikassa 36 m: kappaleet ovat kohdanneet. Nopeusnuolet ovat sinisiä ja eri pituisia." style="max-width:100%;font-size:24px">
   <line x1="32" y1="168" x2="516" y2="168" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M528,168 L515,174 L515,162 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -371,6 +377,12 @@ $(t,x)$-kuvaajassa kumpikin liike on oma viivansa samassa koordinaatistossa. Koh
 </svg>
 
 Kohtaaminen ei tarkoita, että kappaleilla olisi sama nopeus. Leikkauspisteessä viivat ovat eri jyrkkiä, koska kappaleiden nopeudet ovat erisuuret. Jos kahden tasaisesti liikkuvan kappaleen nopeudet olisivat yhtä suuret, viivat olisivat yhdensuuntaiset ja kappaleiden välimatka pysyisi samana, joten ne eivät kohtaisi, jos ne lähtevät eri paikoista. Ohituksessa takaa tuleva kappale on kohtaamishetkellä nopeampi kuin ohitettava.
+
+```pysahdy
+Kaksi autoa ajaa samaan suuntaan samalla nopeudella, toinen $50\,\text{m}$ edellä. Kohtaavatko ne?
+---
+Eivät kohtaa. Välimatka pysyy $50\,\text{m}$, koska kuvaajien viivat ovat yhdensuuntaiset eivätkä leikkaa.
+```
 
 ## Kaava: Kohtaamisehto
 Kohtaamishetki ja kohtaamispaikka saadaan kirjoittamalla kummankin kappaleen paikka ajan funktiona ja merkitsemällä paikat yhtä suuriksi:
