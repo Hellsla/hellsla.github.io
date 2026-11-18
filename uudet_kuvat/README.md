@@ -34,14 +34,20 @@ kuvan pohjana (jaettu muutos, oma työjonon kohtansa). Kuvaajia ei piirretty uud
 selkosuomen kuvat ovat samat kuin suomen). Yhtään estettä vaihtamiselle ei löytynyt: yksikään kuva ei piirry selaimessa,
 skripti ei muuta yhtäkään, eikä missään ole animaatiota, valittavia osia tai tekstiä, joka katoaisi.
 
-Huomiot:
+Korjattu 18.11.2026 opettajan pyynnöstä, minkä jälkeen kaikki 662 kuvaa läpäisevät tarkistuksen ilman huomioita:
 
-- FY8:n kuvat ovat pienempiä kuin muiden moduulien (26 kaaviota 832 px, `fy8-2/greenhouse` 566 px), koska ne
-  pienennettiin alkuperäisen kokoon. Pienentämättömät versiot kannattaa pyytää ennen käyttöä.
-- 50 kuvaa on monivalintatehtävien vastausvaihtoehtoja (13 tehtävää). Jokaisessa tehtävässä kaikki vaihtoehdot vaihtuvat.
-  FY3:n luvun 1 tehtävässä kolmessa vaihtoehdossa on tumma kehys ja neljännessä (`pick-weight-only`) ei: nämä neljä
-  kannattaa piirrättää uudelleen ilman kehystä, ettei ulkoasu vihjaa vastausta.
-- Kolmessa FY9:n voimakuviossa kuvasuhde poikkeaa alkuperäisestä 1–4 % (`fy9-voimat/nimeton-1`, `-3`, `-9`).
+- FY8: kaikki 55 kuvaa suurennettu samaan pikselimäärään kuin muissa moduuleissa (noin 1,57 megapikseliä). Suurennus
+  on tehty kuvankäsittelyllä, joten uutta yksityiskohtaa ei ole syntynyt: jos Codexin pienentämättömät versiot saadaan,
+  ne korvaavat nämä.
+- FY3: monivalinnan neljästä vaihtoehtokuvasta (`fy3-1/pick-*`) poistettu kehys, joka oli vain kolmessa.
+- FY9: kuvat `fy9-voimat/nimeton-1`, `-3` ja `-9` täydennetty alkuperäiseen kuvasuhteeseen (kuvaa ei venytetty).
+
+Korjaukset on kirjattu myös kyseisten pakettien `PAATOS.txt`-tiedostoihin.
+
+Muut huomiot:
+
+- 50 kuvaa on monivalintatehtävien vastausvaihtoehtoja (13 tehtävää). Jokaisessa tehtävässä kaikki vaihtoehdot vaihtuvat
+  ja näyttävät keskenään samanlaisilta.
 - Englanninkielisiä merkintöjä ei verrattu 91 kuvassa (FY10 ja kuvauksesta tunnistettavat kuvat), ja kuvissa
   `fy2-7/district`, `fy2-7/grid` ja `fy2-7/storage` englanninkielinen versio poikkeaa hieman suomenkielisestä.
 - Opettajan yleisohje 17.11.2026: jos kuva on osa vuorovaikutteista elementtiä, sitä ei korvata.
