@@ -49,6 +49,15 @@
     if (typeof s !== 'string') return k;
     return s.replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m));
   };
+  /* Soft hyphens for Finnish (work queue 8d): Chromium has no Finnish hyphenation dictionary, so a long term would break
+     mid-word without a hyphen ("Ominaislämpökapasiteet|ti"). Same rule as scripts/tablefit.py hyphenate_card: a break before a
+     consonant followed by a vowel, plus the joints of compounds whose later part starts with a vowel. Only when the page
+     language is Finnish (html lang fi, also fi-easy); English cards are left to the browser. Formulas ($...$) are skipped. */
+  const FI = /^fi\b/i.test(document.documentElement.lang || '');
+  const VOW = 'aeiouyäöåAEIOUYÄÖÅ', JOINT = /(?<=[a-zåäö]{3})(?=(?:energia|asteikko|aalto|aallo|aika|uuni|ääni|aktiivi|ulottei))/;
+  const hy1 = (w) => { let o = ''; for (let i = 0; i < w.length; i++) { const ch = w[i]; if (i >= 2 && i <= w.length - 2 && !VOW.includes(ch) && VOW.includes(w[i + 1]) && /[A-Za-zÅÄÖåäö]/.test(w[i - 1])) o += '\u00ad'; o += ch; } return o; };
+  const hy = (s) => (!FI || typeof s !== 'string') ? s : s.split(/(\$[^$]*\$)/).map((p, i) => i % 2 ? p
+    : p.replace(/[A-Za-zÅÄÖåäö]{9,}/g, (w) => w.split(JOINT).map(hy1).join('\u00ad'))).join('');
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const maths = (node) => {
     if (window.renderMathInElement) {
@@ -76,7 +85,7 @@
     const term = !opts.reverse;
     const face = el('button', 'kc-face'); face.type = 'button';
     face.setAttribute('aria-expanded', 'false'); face.setAttribute('aria-controls', id);
-    const main = el('span', 'kc-front ' + (term ? 'is-term' : 'is-def'), term ? c.kasite : c.maaritelma);
+    const main = el('span', 'kc-front ' + (term ? 'is-term' : 'is-def'), hy(term ? c.kasite : c.maaritelma));
     const hint = el('span', 'kc-hint', t('flip_hint'));
     face.append(el('span', 'kc-kind', t(term ? 'term' : 'definition')), main, hint);
     const back = el('div', 'kc-back'); back.id = id; back.tabIndex = -1;
@@ -86,8 +95,8 @@
     const turn = el('button', 'kc-turn', '↺'); turn.type = 'button';
     turn.setAttribute('aria-expanded', 'true'); turn.setAttribute('aria-controls', id); turn.setAttribute('aria-label', t('flip_back'));
     top.append(turn); back.append(top);
-    if (term) { back.append(el('p', 'kc-back-term', c.kasite), el('p', 'kc-def', c.maaritelma)); const f = formula(c); if (f) back.append(f); }
-    else { back.append(el('p', 'kc-def kc-def-term', c.kasite)); const f = formula(c); if (f) back.append(f); }
+    if (term) { back.append(el('p', 'kc-back-term', hy(c.kasite)), el('p', 'kc-def', hy(c.maaritelma))); const f = formula(c); if (f) back.append(f); }
+    else { back.append(el('p', 'kc-def kc-def-term', hy(c.kasite))); const f = formula(c); if (f) back.append(f); }
     if (c.kuva) { const img = el('img', 'kc-img'); img.src = (opts.base || '') + c.kuva; img.alt = ''; img.loading = 'lazy'; img.onerror = () => img.remove(); back.append(img); }
     const acts = el('div', 'kc-actions');
     const good = el('button', 'kc-good', t('good')), again = el('button', 'kc-again', t('again'));
@@ -138,10 +147,10 @@
     closePop(false);
     const pop = el('div', 'kc-pop'), id = 'kc-pop-' + (++uid);
     pop.id = id; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', c.kasite);
-    const head = el('p', 'kc-pop-term', c.kasite);
+    const head = el('p', 'kc-pop-term', hy(c.kasite));
     const x = el('button', 'kc-pop-close'); x.type = 'button'; x.setAttribute('aria-label', t('close')); x.textContent = '×';
     x.addEventListener('click', () => closePop(true));
-    const def = el('p', 'kc-def', c.maaritelma);
+    const def = el('p', 'kc-def', hy(c.maaritelma));
     pop.append(x, head, def);
     const f = formula(c); if (f) pop.append(f);
     const add = el('button', 'kc-add'); add.type = 'button';
@@ -225,7 +234,7 @@
       if (!mine.length) return;
       box.append(el('p', 'kc-chips-label', t('chips', { n: mine.length })));
       const ul = el('ul', 'kc-chip-list');
-      mine.forEach((c) => { const li = el('li'); li.append(termButton(c.kasite, c, 'kc-chip')); ul.append(li); });
+      mine.forEach((c) => { const li = el('li'); li.append(termButton(hy(c.kasite), c, 'kc-chip')); ul.append(li); });
       box.append(ul); maths(box); box.hidden = false;
     });
     // the section: the chapter's cards two at a time, an answered one replaced by the next
@@ -306,7 +315,7 @@
       const grid = el('div', 'kc-grid');
       Object.entries(mods).forEach(([code, m]) => {
         const b = el('button', 'kc-tile'); b.type = 'button';
-        b.append(el('span', 'kc-tile-code', code), el('span', 'kc-tile-name', names[code] || m.nimi),
+        b.append(el('span', 'kc-tile-code', code), el('span', 'kc-tile-name', hy(names[code] || m.nimi)),
                  el('span', 'kc-tile-count', m.kesken ? t('coming') : t('n_cards', { n: m.kortit.length })));
         if (m.kesken) b.disabled = true; else b.addEventListener('click', () => topicsView(code));
         grid.append(b);
@@ -335,7 +344,7 @@
         const r = el('div', 'kc-topic' + (pick ? '' : ' kc-topic-all'));
         if (pick) r.append(pick);
         const b = el('button', 'kc-topic-main'); b.type = 'button';
-        b.append(el('span', 'kc-topic-label', label), el('span', 'kc-topic-n', String(n)), el('span', 'kc-go', '→'));
+        b.append(el('span', 'kc-topic-label', hy(label)), el('span', 'kc-topic-n', String(n)), el('span', 'kc-go', '→'));
         b.addEventListener('click', fn); r.append(b); list.append(r); return r;
       };
       line(t('own_deck'), own.length, () => study(code, own, t('own_deck'), { moduuli: code, pakka: 'oma' }));
@@ -373,7 +382,7 @@
       clear(); setUrl(params);
       screen.append(backBtn(t('back_topics'), () => topicsView(code)));
       const head = el('div', 'kc-studybar');
-      head.append(el('h2', 'kc-crumb', `${code} · ${label}`));
+      head.append(el('h2', 'kc-crumb', hy(`${code} · ${label}`)));
       const tally = el('span', 'kc-tally'); head.append(tally);
       const track = el('div', 'kc-track'), fill = el('div', 'kc-fill'); track.append(fill);
       screen.append(head, track); maths(head);
