@@ -601,3 +601,129 @@ Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on va
 - b-kohdassa energian voi antaa megawattitunteina, gigawattitunteina tai jouleina.
 - c-kohdassa voi tarkastella yhtä sekuntia: $57\,\text{m}^3$ vettä eli $57\,000\,\text{kg}$ saa lämmön $2{,}7 \cdot 10^{9}\,\text{J}$, ja $\Delta T = \dfrac{Q}{cm} \approx 11\,\text{K}$.
 - c-kohdassa lämpenemisen voi ilmoittaa kelvineinä tai celsiusasteina, koska lämpötilan muutos on molemmissa sama luku.
+
+## fy9-kaasut-s8
+
+### a)
+**Annettu:** kaasun A mittauspisteet $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$, astian tilavuus $V = 2{,}0\,\textsf{l}$, ideaalikaasu; $R = 8{,}31\,\text{J/(mol K)}$
+**Kysytty:** kaasun A ainemäärä $n_\text{A}$
+**Periaate:** Ideaalikaasun tila toteuttaa tilanyhtälön $pV = nRT$ (luku *Ideaalikaasun tilanyhtälö*). Astia on suljettu ja jäykkä, joten ainemäärä $n$ ja tilavuus $V$ pysyvät vakioina. Siksi kuvaajan jokainen piste antaa saman ainemäärän. Ainemäärä kertoo, kuinka paljon hiukkasia kaasussa on, ja sen yksikkö on mooli.
+**Kuvaajan lukeminen:** Kaasun A suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(200\,\text{K};\ 50\,\text{kPa})$ ja $(400\,\text{K};\ 100\,\text{kPa})$. Laske toisen pisteen avulla. Ensimmäinen piste on tarkistus.
+**Kaava:** $pV = nRT$, joten $n = \dfrac{pV}{RT}$
+**Muunnokset:** $V = 2{,}0\,\textsf{l} = 2{,}0 \cdot 10^{-3}\,\text{m}^3$ ja $p = 100\,\text{kPa} = 100\,000\,\text{Pa}$. Lämpötila on jo kelvineinä.
+**Sijoitus:** $$
+\begin{aligned}
+n_\text{A} &= \dfrac{pV}{RT} \\
+&= \dfrac{100\,000\,\text{Pa} \cdot 2{,}0 \cdot 10^{-3}\,\text{m}^3}{8{,}31\,\text{J/(mol K)} \cdot 400\,\text{K}} \\
+&= \dfrac{200\,\text{J}}{3324\,\text{J/mol}} \\
+&= 0{,}0602\,\text{mol}
+\end{aligned}
+$$
+**Vastaus:** $n_\text{A} \approx 0{,}060\,\text{mol}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tilavuudessa ja kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Ensimmäinen piste antaa saman tuloksen: $\dfrac{50\,000\,\text{Pa} \cdot 2{,}0 \cdot 10^{-3}\,\text{m}^3}{8{,}31\,\text{J/(mol K)} \cdot 200\,\text{K}} = 0{,}0602\,\text{mol}$. Yksikkö on oikea, sillä $\text{Pa} \cdot \text{m}^3 = \text{J}$. Suuruusluokka: $2{,}0\,\textsf{l}$ ilmaa on noin $0{,}08\,\text{mol}$ huoneenlämpötilassa ja ilmanpaineessa, joten pieni määrä kaasua sopii.
+
+### b)
+**Annettu:** samat astiat, $V = 2{,}0\,\textsf{l}$; samassa lämpötilassa $T = 400\,\text{K}$ kaasun A paine on $100\,\text{kPa}$ ja kaasun B paine $60\,\text{kPa}$ (kuvaajasta)
+**Kysytty:** kuinka monta prosenttia pienempi $n_\text{B}$ on kuin $n_\text{A}$
+**Periaate:** Tilanyhtälöstä $n = \dfrac{pV}{RT}$ (luku *Ideaalikaasun tilanyhtälö*). Kun tilavuus ja lämpötila ovat samat, ainemäärä on suoraan verrannollinen paineeseen. Verrannollinen tarkoittaa, että kun paine kasvaa kaksinkertaiseksi, myös ainemäärä kasvaa kaksinkertaiseksi. Siksi vertaa kaasuja samassa lämpötilassa.
+**Kuvaajan lukeminen:** Lämpötilassa $400\,\text{K}$ kaasun A paine on $100\,\text{kPa}$ ja kaasun B paine $60\,\text{kPa}$.
+**Kaava:** $\dfrac{n_\text{B}}{n_\text{A}} = \dfrac{p_\text{B}V/(RT)}{p_\text{A}V/(RT)} = \dfrac{p_\text{B}}{p_\text{A}}$ ja $\dfrac{n_\text{A} - n_\text{B}}{n_\text{A}} = 1 - \dfrac{n_\text{B}}{n_\text{A}}$
+**Muunnokset:** Ei tarvita: paineet ovat samassa yksikössä, ja suhde on yksikötön.
+**Sijoitus:** $$
+\begin{aligned}
+\dfrac{n_\text{B}}{n_\text{A}} &= \dfrac{60\,\text{kPa}}{100\,\text{kPa}} \\
+&= 0{,}60
+\end{aligned}
+$$ ja $1 - 0{,}60 = 0{,}40$. Ainemäärä on $n_\text{B} = 0{,}60 \cdot 0{,}0602\,\text{mol} = 0{,}0361\,\text{mol}$.
+**Vastaus:** Kaasun B ainemäärä on $40\,\%$ pienempi kuin kaasun A, $n_\text{B} \approx 0{,}036\,\text{mol}$. Samoilla tilavuudella ja lämpötilalla pienempi paine tarkoittaa, että astiassa on vähemmän hiukkasia.
+**Järkevyys:** Toisessa lämpötilassa saadaan sama suhde: $\dfrac{30\,\text{kPa}}{50\,\text{kPa}} = 0{,}60$ lämpötilassa $200\,\text{K}$. Suhde ei riipu lämpötilasta, koska kumpikin paine kasvaa samassa suhteessa. Kaasun B suora on kuvaajassa kaasun A suoraa alempana, mikä sopii pienempään ainemäärään.
+
+### c)
+**Annettu:** kaasun A piste $(400\,\text{K};\ 100\,\text{kPa})$, uusi lämpötila $\theta_2 = -20\,{}^\circ\text{C}$; tilavuus ja ainemäärä eivät muutu
+**Kysytty:** kaasun A paine $p_2$ lämpötilassa $-20\,{}^\circ\text{C}$
+**Periaate:** Astia on suljettu ja jäykkä, joten $n$ ja $V$ ovat vakioita. Tilanyhtälön mukaan paine on suoraan verrannollinen kelvinlämpötilaan eli paine kasvaa samassa suhteessa kuin lämpötila, $\dfrac{p}{T} = \dfrac{nR}{V}$ = vakio (luku *Kaasujen tilanmuutokset ja Boylen laki*). Laske lämpötila kelvineinä.
+**Kaava:** $\dfrac{p_2}{T_2} = \dfrac{p_1}{T_1}$, joten $p_2 = p_1 \dfrac{T_2}{T_1}$
+**Muunnokset:** $T_2 = (-20 + 273{,}15)\,\text{K} = 253{,}15\,\text{K}$
+**Sijoitus:** $$
+\begin{aligned}
+p_2 &= 100\,\text{kPa} \cdot \dfrac{253{,}15\,\text{K}}{400\,\text{K}} \\
+&= 63{,}3\,\text{kPa}
+\end{aligned}
+$$
+**Vastaus:** $p_2 \approx 63\,\text{kPa}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Lämpötila $253\,\text{K}$ on kuvaajan pisteiden $200\,\text{K}$ ja $400\,\text{K}$ välissä, joten paineen on oltava pisteiden $50\,\text{kPa}$ ja $100\,\text{kPa}$ välissä. Tarkistus tilanyhtälöllä: $p_2 = \dfrac{n_\text{A}RT_2}{V} = \dfrac{0{,}0602\,\text{mol} \cdot 8{,}31\,\text{J/(mol K)} \cdot 253{,}15\,\text{K}}{2{,}0 \cdot 10^{-3}\,\text{m}^3} = 63\,\text{kPa}$.
+
+### Yleisiä virheitä
+- a-kohdassa tilavuutta ei muuteta kuutiometreiksi ($2{,}0\,\textsf{l}$ sijoitetaan lukuna $2{,}0$) tai painetta ei muuteta pascaleiksi, jolloin ainemääräksi tulee väärä kymmenpotenssi.
+- b-kohdassa kaasujen painetta verrataan eri lämpötiloissa, esimerkiksi kaasun A painetta lämpötilassa $400\,\text{K}$ kaasun B paineeseen lämpötilassa $200\,\text{K}$.
+- b-kohdassa vastataan $60\,\%$, joka on suhde $n_\text{B}/n_\text{A}$, vaikka kysytään, kuinka paljon pienempi ainemäärä on.
+- c-kohdassa lämpötilaksi sijoitetaan $-20$ ilman muunnosta kelvineiksi, tai paine lasketaan verrannolla celsiusasteista.
+
+### Hyväksytään myös
+- a-kohdassa ainemäärän voi laskea suoran kulmakertoimesta: $\dfrac{p}{T} = 0{,}25\,\text{kPa/K}$ ja $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$.
+- c-kohdassa paineen voi laskea tilanyhtälöllä $p = \dfrac{nRT}{V}$ a-kohdan ainemäärästä.
+
+## fy9-kaasut-s9
+
+### a)
+**Annettu:** kuvaajasta paine $p = 250\,\text{kPa}$ vakiona, tilavuus kasvaa arvosta $V_1 = 1{,}0\,\textsf{l}$ arvoon $V_2 = 4{,}0\,\textsf{l}$
+**Kysytty:** kaasun tekemä työ $W$
+**Periaate:** Kun paine pysyy vakiona, kaasun tekemä työ on paine kertaa tilavuuden muutos (luku *Kaasun tekemä työ ja lämpövoimakone*). Kuvaajassa tämä on janan ja $V$-akselin väliin jäävän suorakulmion ala.
+**Kuvaajan lukeminen:** Kuvaaja on vaakasuora jana korkeudella $250\,\text{kPa}$. Sen päätepisteet ovat $V = 1{,}0\,\textsf{l}$ ja $V = 4{,}0\,\textsf{l}$.
+**Kaava:** $W = p\,\Delta V = p\,(V_2 - V_1)$
+**Muunnokset:** $\Delta V = 4{,}0\,\textsf{l} - 1{,}0\,\textsf{l} = 3{,}0\,\textsf{l} = 3{,}0 \cdot 10^{-3}\,\text{m}^3$ ja $p = 250\,000\,\text{Pa}$; myös $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$.
+**Sijoitus:** $$
+\begin{aligned}
+W &= 250\,000\,\text{Pa} \cdot 3{,}0 \cdot 10^{-3}\,\text{m}^3 \\
+&= 750\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** $W \approx 750\,\text{J}$ eli $7{,}5 \cdot 10^{2}\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa. Työ on positiivinen, koska kaasu laajenee ja työntää mäntää.
+**Järkevyys:** Yksikkö on oikea, sillä $\text{Pa} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Suorakulmion korkeus on $250$ ja leveys $3{,}0$ yksikköä ($\text{kPa}$ ja $\textsf{l}$), ja $250 \cdot 3{,}0 = 750$.
+
+### b)
+**Annettu:** alkutila $p = 250\,\text{kPa}$, $V_1 = 1{,}0\,\textsf{l}$ ja $\theta_1 = 20\,{}^\circ\text{C}$; ideaalikaasu, $R = 8{,}31\,\text{J/(mol K)}$
+**Kysytty:** ainemäärä $n$
+**Periaate:** Ideaalikaasun tila toteuttaa tilanyhtälön $pV = nRT$ (luku *Ideaalikaasun tilanyhtälö*). Alkutilan kolme suuretta tunnetaan, joten siitä saadaan ainemäärä.
+**Kaava:** $pV = nRT$, joten $n = \dfrac{pV_1}{RT_1}$
+**Muunnokset:** $T_1 = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$, $V_1 = 1{,}0 \cdot 10^{-3}\,\text{m}^3$ ja $p = 250\,000\,\text{Pa}$.
+**Sijoitus:** $$
+\begin{aligned}
+n &= \dfrac{250\,000\,\text{Pa} \cdot 1{,}0 \cdot 10^{-3}\,\text{m}^3}{8{,}31\,\text{J/(mol K)} \cdot 293{,}15\,\text{K}} \\
+&= \dfrac{250\,\text{J}}{2436\,\text{J/mol}} \\
+&= 0{,}1026\,\text{mol}
+\end{aligned}
+$$
+**Vastaus:** $n \approx 0{,}10\,\text{mol}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tilavuudessa $1{,}0\,\textsf{l}$.
+**Järkevyys:** Yksikkö on oikea, sillä $\text{J} : (\text{J/mol}) = \text{mol}$. Suuruusluokka: $1{,}0\,\textsf{l}$ ilmaa on huoneenlämmössä ilmanpaineessa noin $0{,}04\,\text{mol}$, ja kaasun paine on noin $2{,}5$-kertainen, joten $0{,}10\,\text{mol}$ sopii.
+
+### c)
+**Annettu:** $p = 250\,\text{kPa}$ vakiona, $V_2 = 4{,}0\,\textsf{l}$, $n = 0{,}1026\,\text{mol}$, $R = 8{,}31\,\text{J/(mol K)}$
+**Kysytty:** lopun lämpötila $T_2$
+**Periaate:** Ainemäärä on vakio, ja tilanyhtälö pätee myös lopputilassa: $pV_2 = nRT_2$ (luku *Ideaalikaasun tilanyhtälö*). Vakiopaineessa tilavuus on suoraan verrannollinen kelvinlämpötilaan (luku *Kaasujen tilanmuutokset ja Boylen laki*), mikä antaa tarkistuksen.
+**Kaava:** $T_2 = \dfrac{pV_2}{nR}$
+**Muunnokset:** $V_2 = 4{,}0 \cdot 10^{-3}\,\text{m}^3$ ja $p = 250\,000\,\text{Pa}$.
+**Sijoitus:** $$
+\begin{aligned}
+T_2 &= \dfrac{250\,000\,\text{Pa} \cdot 4{,}0 \cdot 10^{-3}\,\text{m}^3}{0{,}1026\,\text{mol} \cdot 8{,}31\,\text{J/(mol K)}} \\
+&= \dfrac{1000\,\text{J}}{0{,}8528\,\text{J/K}} \\
+&= 1173\,\text{K}
+\end{aligned}
+$$
+**Vastaus:** $T_2 \approx 1170\,\text{K}$ eli noin $900\,{}^\circ\text{C}$. Vastauksessa on kolme merkitsevää numeroa, kuten alkulämpötilassa $293\,\text{K}$.
+**Järkevyys:** Tilavuus nelinkertaistuu vakiopaineessa, joten kelvinlämpötilankin on nelinkertaistuttava: $T_2 = T_1 \dfrac{V_2}{V_1} = 293{,}15\,\text{K} \cdot 4{,}0 = 1173\,\text{K}$. Kaasun lämpötila nousee noin $880\,\text{K}$.
+
+### d)
+**Kysytty:** onko lämpö $Q$ suurempi, yhtä suuri vai pienempi kuin työ $W$
+**Periaate:** Energian säilyminen: kaasun sisäenergian muutos on kaasuun lämpönä siirtynyt energia miinus kaasun tekemä työ, $\Delta U = Q - W$, joten $Q = \Delta U + W$ (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Ideaalikaasun sisäenergia kasvaa, kun lämpötila nousee.
+**Mallivastaus:** Kaasun lämpötila nousee arvosta $293\,\text{K}$ arvoon $1170\,\text{K}$, joten sen hiukkasten keskimääräinen liike-energia ja sisäenergia kasvavat: $\Delta U > 0$. Energian säilymisen mukaan $Q = \Delta U + W$. Kaasun saama lämpö riittää sekä työhön $750\,\text{J}$ että sisäenergian kasvuun. Siksi $Q$ on suurempi kuin $W$. Jos lämpötila pysyisi vakiona, olisi $\Delta U = 0$ ja $Q = W$, mutta tässä lämpötila nousee.
+
+### Yleisiä virheitä
+- a-kohdassa työksi lasketaan $pV_2 = 1000\,\text{J}$ tai $pV_1$, vaikka työ on paine kertaa tilavuuden muutos $p\,\Delta V$.
+- b-kohdassa lämpötilaksi sijoitetaan $20$ eikä $293\,\text{K}$, tai litrat jätetään muuttamatta kuutiometreiksi.
+- c-kohdassa lämpötila jätetään kelvineiksi tai vastataan, että lämpötila nelinkertaistuu celsiusasteina ($80\,{}^\circ\text{C}$).
+- d-kohdassa vastataan $Q = W$ ajattelematta, että kaasun lämpötila ja sisäenergia kasvavat.
+
+### Hyväksytään myös
+- c-kohdassa lämpötilan voi laskea suoraan vakiopaineen lausekkeesta $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$ ilman ainemäärää.
+- c-kohdassa lämpötilan voi ilmoittaa celsiusasteina: $T_2 - 273{,}15 \approx 900\,{}^\circ\text{C}$.

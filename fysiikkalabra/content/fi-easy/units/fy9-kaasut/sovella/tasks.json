@@ -1,5 +1,5 @@
 {
-  "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -834,6 +834,236 @@
         "math": "fy3-6",
         "transfer": "fy3-15",
         "communication": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s8",
+      "title": "Kaksi suljettua astiaa",
+      "source": "example",
+      "source_note": "Mittaukset ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy3-10",
+        "fy1-4"
+      ],
+      "figure": "fy3-10/pt-suorat",
+      "text": "Opiskelija lämmittää kahta samanlaista astiaa. Astiat ovat suljettuja, eivätkä ne muuta muotoaan. Kummankin astian tilavuus on $2{,}0\\,\\textsf{l}$. Toisessa astiassa on kaasua A ja toisessa kaasua B. Kumpikin kaasu käyttäytyy kuin ideaalikaasu. Opiskelija mittaa kummankin kaasun paineen $p$ eri lämpötiloissa $T$. Lämpötila on kelvineinä. Mittaukset on piirretty kuvaajaan.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä kaasun A ainemäärä.",
+          "answer": {
+            "value": 0.0602,
+            "unit": "mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Luetaan kuvaajasta kaasun A piste, esimerkiksi $(400\\,\\text{K};\\ 100\\,\\text{kPa})$; astian tilavuus on $2{,}0\\,\\textsf{l}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ideaalikaasun tilanyhtälö $pV = nRT$, josta $n = \\dfrac{pV}{RT}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nn &= \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2{,}0 \\cdot 10^{-3}\\,\\text{m}^3}{8{,}31\\,\\text{J/(mol K)} \\cdot 400\\,\\text{K}} \\\\\n&\\approx 0{,}060\\,\\text{mol}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Litrat kuutiometreiksi ja kilopascalit pascaleiksi; kaksi merkitsevää numeroa. Toinen piste, $(200\\,\\text{K};\\ 50\\,\\text{kPa})$, antaa saman ainemäärän."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta prosenttia pienempi kaasun B ainemäärä on kuin kaasun A ainemäärä? Perustele vertailu.",
+          "answer": {
+            "value": 40.0,
+            "unit": "%",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että astioiden tilavuus ja lämpötila ovat samat, joten ainemäärä on suoraan verrannollinen paineeseen: $\\dfrac{n_\\text{B}}{n_\\text{A}} = \\dfrac{p_\\text{B}}{p_\\text{A}}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Samassa lämpötilassa $T = 400\\,\\text{K}$: $\\dfrac{n_\\text{B}}{n_\\text{A}} = \\dfrac{60\\,\\text{kPa}}{100\\,\\text{kPa}} = 0{,}60$, joten $n_\\text{B} \\approx 0{,}036\\,\\text{mol}$ ja ero on $40\\,\\%$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Vertailu tehdään samassa lämpötilassa kahdesta luetusta pisteestä; tulos prosentteina."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Astia A jäähtyy pakkasessa lämpötilaan $-20\\,{}^\\circ\\text{C}$. Mikä on kaasun A paine silloin?",
+          "answer": {
+            "value": 63.3,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Tilavuus ja ainemäärä ovat vakioita, joten $\\dfrac{p}{T}$ on vakio: $p_2 = p_1 \\dfrac{T_2}{T_1}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_2 = (-20 + 273{,}15)\\,\\text{K} = 253\\,\\text{K}$ ja $p_2 = 100\\,\\text{kPa} \\cdot \\dfrac{253\\,\\text{K}}{400\\,\\text{K}} \\approx 63\\,\\text{kPa}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Paine on pienempi kuin $100\\,\\text{kPa}$, koska lämpötila on alempi; arvo on kuvaajan pisteiden $50\\,\\text{kPa}$ ja $100\\,\\text{kPa}$ välissä, kuten lämpötilakin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy3-10",
+        "concept": "fy3-10"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s9",
+      "title": "Lämmitetty kaasu sylinterissä",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy3-11",
+        "fy3-10",
+        "fy3-15"
+      ],
+      "figure": "fy3-11/pv-isobaari",
+      "text": "Sylinteriin on suljettu ilmaa. Sylinterin toisessa päässä on kevyt liikkuva mäntä. Opiskelija lämmittää kaasua hitaasti, ja kaasu laajenee. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona. Kaasun lämpötila oli alussa $20\\,{}^\\circ\\text{C}$. Oletetaan, että kaasu on ideaalikaasu. Oletetaan myös, että kaasua on koko ajan yhtä paljon.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuren työn kaasu tekee laajetessaan?",
+          "answer": {
+            "value": 750.0,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvaajasta paine $250\\,\\text{kPa}$ ja tilavuus kasvaa arvosta $1{,}0\\,\\textsf{l}$ arvoon $4{,}0\\,\\textsf{l}$, joten $\\Delta V = 3{,}0\\,\\textsf{l}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vakiopaineessa kaasun työ on $W = p\\,\\Delta V$ eli kuvaajan ja $V$-akselin väliin jäävän suorakulmion ala."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 250\\,\\text{kPa} \\cdot 3{,}0\\,\\textsf{l} = 750\\,\\text{J}$; kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka monta moolia kaasua sylinterissä on?",
+          "answer": {
+            "value": 0.1026,
+            "unit": "mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Alkutilaan sovelletaan ideaalikaasun tilanyhtälöä $pV = nRT$, josta $n = \\dfrac{pV}{RT}$."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$$\n\\begin{aligned}\nn &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 1{,}0 \\cdot 10^{-3}\\,\\text{m}^3}{8{,}31\\,\\text{J/(mol K)} \\cdot 293\\,\\text{K}} \\\\\n&\\approx 0{,}10\\,\\text{mol}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Lämpötila kelvineiksi $T = (20 + 273{,}15)\\,\\text{K}$, litrat kuutiometreiksi ja kilopascalit pascaleiksi; kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Mikä on kaasun lämpötila laajenemisen lopussa?",
+          "answer": {
+            "value": 1172.6,
+            "unit": "K",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ainemäärä on vakio, joten lopputilaan pätee $p V_2 = nRT_2$, josta $T_2 = \\dfrac{pV_2}{nR}$; sama tulos saadaan, kun $\\dfrac{V}{T}$ on vakio."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4{,}0 \\cdot 10^{-3}\\,\\text{m}^3}{0{,}1026\\,\\text{mol} \\cdot 8{,}31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1170\\,\\text{K}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tilavuus nelinkertaistui vakiopaineessa, joten kelvinlämpötila nelinkertaistuu: $4 \\cdot 293\\,\\text{K} \\approx 1170\\,\\text{K}$, noin $900\\,{}^\\circ\\text{C}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Kaasu sai laajenemisen aikana ympäristöltä lämpöä $Q$. Onko $Q$ suurempi, yhtä suuri vai pienempi kuin kaasun tekemä työ $W$? Perustele.",
+          "criteria": [
+            {
+              "text": "Toteaa, että kaasun lämpötila nousee, joten sen sisäenergia kasvaa: $\\Delta U > 0$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Käyttää energian säilymistä $Q = \\Delta U + W$ ja päättelee, että lämpö kuluu sekä työhön että sisäenergian kasvuun, joten $Q > W$.",
+              "tag": "concept",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy3-11",
+        "math": "fy3-10",
+        "concept": "fy3-15"
       }
     }
   ]
