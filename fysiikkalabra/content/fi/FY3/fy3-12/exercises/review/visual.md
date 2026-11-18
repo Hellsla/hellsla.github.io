@@ -1,17 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 3b9b9d6862b1821d
+VERDICT: FAIL
+CONTENT-HASH: 9afd6dd6a5108ae3
 
 ## Blocking
-(none)
+- [Major] exercises.json 15-? (ikkunan lämpöteho, oppilaan virhe) — `joten $\begin{aligned}P &= UA\Delta T \\ &= 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} \\ &= 9{,}6\,\text{W}\end{aligned}$.”` inline in the quote: at 390 px the chain rows are split around the sentence and the closing '.”' hangs detached; the student's calculation does not read as one chain — put the chain in a `$$` display block between the sentences.
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Round 1, delta (md-paragraphs; units as LaTeX where the diff shows them): solutions.md paragraph breaks. No 360 px captures exist; 390 px used.
-- 1280 px with solutions open: fy3-12-open-exercises-1280-1.png (15-1: Kaava two forms, Muunnokset display and following sentence, Sijoitus, answer set apart, Järkevyys); fy3-12-open-exercises-L2-1280-1.png (15-10: Kaava display, "joten", second display, Sijoitus rows with "." closing the display); fy3-12-open-tarkista-1280-1.png (model answer).
-- 390 px: fy3-12-stage-exercises-390.png (level cards closed, readable); fy3-12-example-390-1.png (paragraph structure, units upright with thin space).
-- Hash same at start and end.
+batch delta review: task text rendered at 390 px (own capture); no 390 px exercise captures exist.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4
