@@ -860,7 +860,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$$\n\\begin{aligned}\nF_\\text{v} &= 75{,}0\\,\\text{kg} \\cdot (9{,}81\\,\\text{m/s}^2 - 1{,}5\\,\\text{m/s}^2) \\\\\n&\\approx 623\\,\\text{N}\n\\end{aligned}\n$$"
+       "detail": "$$\n\\begin{aligned}\nF_\\text{v} &= 75{,}0\\,\\text{kg} \\\\\n&\\quad \\cdot (9{,}81\\,\\text{m/s}^2 \\\\\n&\\qquad - 1{,}5\\,\\text{m/s}^2) \\\\\n&\\approx 623\\,\\text{N}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
