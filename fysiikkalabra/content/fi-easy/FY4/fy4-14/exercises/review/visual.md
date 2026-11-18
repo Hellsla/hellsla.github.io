@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f5ee7391ba65a72e
+CONTENT-HASH: 7b61c71e80ac95f1
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md several Kaava — the 'Σ F = ma ja a = 0, joten ...' opening is repeated verbatim in about six solutions and 'Lisäksi' starts three Kaava; acceptable, optional variation.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-14-L2-07-390.png (slowing / terminal speed / the two wrong claims) and sol-fy4-14-L2-08-390.png (Järkevyys: drag vs weight, acceleration, start, terminal speed in four paragraphs).
-- One point per paragraph, spacing even, nothing clipped.
+- Opened fy4-14-open-exercises-L2-1280-6 (end of a car-braking solution with Vastaus, Järkevyys, then task 9-14 with table: layout intact, no clipping).
+- Read all 16 changed lines: Σ F = ma, G = mg, F_v and signs shown before the combined form in each.
+- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

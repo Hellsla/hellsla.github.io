@@ -43,7 +43,7 @@ F 38 oikea
 F_mu 20 vasen
 a oikea
 ```
-**Formula:** In the horizontal direction $F - F_\mu = ma$, so $a = \dfrac{F - F_\mu}{m}$
+**Formula:** Newton's second law is $\Sigma F = ma$. In the horizontal direction the net force is $\Sigma F = F - F_\mu$, so $F - F_\mu = ma$ and $a = \dfrac{F - F_\mu}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{38\,\text{N} - 20\,\text{N}}{12\,\text{kg}} = \dfrac{18\,\text{N}}{12\,\text{kg}} = 1.5\,\text{m/s}^2$
 **Answer:** $1.5\,\text{m/s}^2$ in the direction of the pull, two significant figures like the data.
@@ -59,7 +59,7 @@ T 78,48 ylös
 G 78,48
 a 0
 ```
-**Formula:** $T - mg = 0$, so $T = mg$
+**Formula:** Newton's second law is $\Sigma F = ma$, and in uniform motion $a = 0$, so $\Sigma F = 0$. The net force is $\Sigma F = T - G$ and the weight is $G = mg$, so $T - mg = 0$ and $T = mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $T = 8.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 78.48\,\text{N}$
 **Answer:** $78\,\text{N}$, two significant figures like the mass $8.0\,\text{kg}$.
@@ -85,7 +85,7 @@ G 8829
 T 7479 ylös
 a alas
 ```
-**Formula:** $mg - T = ma$, so $T = m(g - a)$
+**Formula:** Newton's second law is $\Sigma F = ma$. With down as the positive direction the net force is $\Sigma F = G - T$ and the weight is $G = mg$, so $mg - T = ma$ and $T = m(g - a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $T = 900\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 7479\,\text{N}$
 **Answer:** $7500\,\text{N}$ or $7.5\,\text{kN}$, two significant figures like the acceleration $1.5\,\text{m/s}^2$.
@@ -102,7 +102,7 @@ G 1177,2
 a ylös
 v alas
 ```
-**Formula:** The magnitude of the acceleration is $a = \dfrac{|v - v_0|}{\Delta t}$ upward, and $T - mg = ma$, so $T = m(g + a)$
+**Formula:** The magnitude of the acceleration is $a = \dfrac{|v - v_0|}{\Delta t}$ upward. Newton's second law is $\Sigma F = ma$. With up as the positive direction the net force is $\Sigma F = T - G$ and the weight is $G = mg$, so $T - mg = ma$ and $T = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{2.0\,\text{m/s}}{2.0\,\text{s}} = 1.0\,\text{m/s}^2$ and $T = 120\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 1297.2\,\text{N}$
 **Answer:** $1300\,\text{N}$ or $1.3\,\text{kN}$, two significant figures like the velocity $2.0\,\text{m/s}$ and the time $2.0\,\text{s}$.
@@ -121,7 +121,7 @@ F_a 60 oikea
 F_b 45 vasen
 a oikea
 ```
-**Formula:** $F_\text{a} - F_\text{b} = ma$, so $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
+**Formula:** Newton's second law is $\Sigma F = ma$. The net force of the opposite horizontal forces is $\Sigma F = F_\text{a} - F_\text{b}$, so $F_\text{a} - F_\text{b} = ma$ and $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{60\,\text{N} - 45\,\text{N}}{30\,\text{kg}} = \dfrac{15\,\text{N}}{30\,\text{kg}} = 0.50\,\text{m/s}^2$
 **Answer:** $0.50\,\text{m/s}^2$ in the direction of the greater pull, two significant figures like the data.
@@ -138,7 +138,7 @@ G 588,6
 N 529,74
 a alas
 ```
-**Formula:** $N - mg = ma$, so $a = \dfrac{N - mg}{m}$
+**Formula:** Newton's second law is $\Sigma F = ma$. With up as the positive direction the net force is $\Sigma F = N - G$ and the weight is $G = mg$, so $N - mg = ma$ and $a = \dfrac{N - mg}{m}$
 **Conversions:** The reading of the scale is converted to a force: $N = 54.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 529.74\,\text{N}$.
 **Substitution:** $a = \dfrac{529.74\,\text{N} - 60.0\,\text{kg}\cdot 9.81\,\text{m/s}^2}{60.0\,\text{kg}} = \dfrac{529.74\,\text{N} - 588.6\,\text{N}}{60.0\,\text{kg}} = -0.981\,\text{m/s}^2$
 **Answer:** $0.98\,\text{m/s}^2$ downward, two significant figures, because the difference of the readings, $6.0\,\text{kg}$, is known to two figures.
@@ -148,7 +148,7 @@ a alas
 **Given:** mass of the empty truck $m_1 = 10\,\text{t}$, of the loaded truck $m_2 = 25\,\text{t}$, change in velocity $\Delta v = 36\,\text{km/h}$, time of the empty truck $\Delta t_1 = 8.0\,\text{s}$, the same net force
 **Find:** the acceleration time $\Delta t_2$ of the loaded truck in $\text{s}$
 **Principle:** The net force is obtained from the acceleration of the empty truck by Newton's second law. The same net force gives a greater mass a smaller acceleration, and with a smaller acceleration the same change in velocity takes longer.
-**Formula:** $\Sigma F = m_1 \dfrac{\Delta v}{\Delta t_1}$ and $\Sigma F = m_2 \dfrac{\Delta v}{\Delta t_2}$, so $\Delta t_2 = \dfrac{m_2 \Delta v}{\Sigma F}$
+**Formula:** Newton's second law is $\Sigma F = ma$ and the acceleration is $a = \dfrac{\Delta v}{\Delta t}$, so $\Sigma F = m_1 \dfrac{\Delta v}{\Delta t_1}$ and $\Sigma F = m_2 \dfrac{\Delta v}{\Delta t_2}$. From the second, $\Delta t_2 = \dfrac{m_2 \Delta v}{\Sigma F}$
 **Conversions:** $36\,\text{km/h} = 36 : 3.6\,\text{m/s} = 10\,\text{m/s}$, $10\,\text{t} = 10\,000\,\text{kg}$ and $25\,\text{t} = 25\,000\,\text{kg}$
 **Substitution:** $\Sigma F = 10\,000\,\text{kg}\cdot\dfrac{10\,\text{m/s}}{8.0\,\text{s}} = 12\,500\,\text{N}$ and $\Delta t_2 = \dfrac{25\,000\,\text{kg}\cdot 10\,\text{m/s}}{12\,500\,\text{N}} = 20\,\text{s}$
 **Answer:** $20\,\text{s}$, two significant figures like the time $8.0\,\text{s}$.
@@ -168,7 +168,7 @@ N 294,3
 F_mu 18 vasen
 a vasen
 ```
-**Formula:** $-F_\mu = ma$ and $a = \dfrac{v - v_0}{\Delta t}$, so $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
+**Formula:** Newton's second law is $\Sigma F = ma$, and the net force is the friction $\Sigma F = -F_\mu$. The acceleration is $a = \dfrac{v - v_0}{\Delta t}$, so $-F_\mu = m\dfrac{v - v_0}{\Delta t}$ and $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4.0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6.67\,\text{s}$
 **Answer:** $6.7\,\text{s}$, two significant figures like the data $4.0\,\text{m/s}$, $18\,\text{N}$ and $30\,\text{kg}$.
@@ -208,7 +208,7 @@ The statement that the force of the rope is always greater than the weight holds
 **Find:** the mass $m$ of the cart in $\text{kg}$
 **Principle:** Friction is small, so the pulling force is the net force, and by Newton's second law $a = \dfrac{1}{m}F$. The acceleration is proportional to the force, so the line of the graph passes through the origin (no force, no acceleration) and its slope is $\dfrac{1}{m}$.
 **Reading the graph:** The points are drawn in the $(F, a)$ coordinate system and a straight line through the origin is fitted between the points. From the line we read the point $F = 1.00\,\text{N}$, $a = 2.01\,\text{m/s}^2$. The slope is calculated using the origin and this point, not from two neighbouring measurement points.
-**Formula:** $k = \dfrac{a}{F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$
+**Formula:** Newton's second law is $\Sigma F = ma$, and without friction $\Sigma F = F$, so $a = \dfrac{1}{m}F$. The slope of the line is $k = \dfrac{a}{F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$
 **Conversions:** The quantities are in SI units, and $\dfrac{\text{m/s}^2}{\text{N}} = \dfrac{1}{\text{kg}}$, so no conversions are needed.
 **Substitution:** $k = \dfrac{2.01\,\text{m/s}^2 - 0\,\text{m/s}^2}{1.00\,\text{N} - 0\,\text{N}} = 2.01\,\tfrac{1}{\text{kg}}$ and $m = \dfrac{1}{2.01\,\tfrac{1}{\text{kg}}} = 0.4975\,\text{kg}$
 **Answer:** $0.50\,\text{kg}$, two significant figures, because the slope is read from the graph to an accuracy of about two figures.
@@ -221,7 +221,7 @@ The statement that the force of the rope is always greater than the weight holds
 
 The line passes through the origin, because with a very large mass the acceleration would be almost zero. The condition for the slope and the straight line to make sense is that only the mass changes: the pulling force, the surface and the friction must stay the same.
 **Reading the graph:** The reciprocals are $5.0$, $3.3$, $2.5$, $2.0$ and $1.7\,\tfrac{1}{\text{kg}}$. The points $(1/m, a)$ lie on a straight line, and from the line we read the points $(0, 0)$ and $(5.0\,\tfrac{1}{\text{kg}}, 6.0\,\text{m/s}^2)$.
-**Formula:** $a = F \cdot \dfrac{1}{m}$, so the slope $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
+**Formula:** Newton's second law is $\Sigma F = ma$, and without friction $\Sigma F = F$, so $a = F \cdot \dfrac{1}{m}$. The slope is $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
 **Conversions:** The quantities are in SI units, and $\text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$, so no conversions are needed.
 **Substitution:** $F = k = \dfrac{6.0\,\text{m/s}^2 - 0\,\text{m/s}^2}{5.0\,\tfrac{1}{\text{kg}} - 0\,\tfrac{1}{\text{kg}}} = 1.2\,\text{N}$
 **Answer:** a) the slope is the pulling force $F$; b) the pulling force, the track and the friction were kept constant, and only the mass changed. The magnitude of the force is $1.2\,\text{N}$, two significant figures like the readings of the accelerations.
@@ -240,7 +240,7 @@ G 8044
 a ylös
 v alas
 ```
-**Formula:** $T - mg = ma$, so $T = m(g + a)$
+**Formula:** Newton's second law is $\Sigma F = ma$. With up as the positive direction the net force is $\Sigma F = T - G$ and the weight is $G = mg$, so $T - mg = ma$ and $T = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $$\begin{aligned} &T \\ &= 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &+ 1.20\,\text{m/s}^2) \\ &= 820\,\text{kg}\cdot 11.01\,\text{m/s}^2 \\ &= 9028.2\,\text{N} \end{aligned}$$
 **Answer:** $9030\,\text{N}$ or $9.03\,\text{kN}$, three significant figures like the acceleration $1.20\,\text{m/s}^2$. The student's error was to take the direction of motion, down, as the direction of the acceleration: the acceleration points up, because the element slows down.
@@ -253,7 +253,7 @@ v alas
 
 The line does not pass through the origin, because part of the pulling force is used to overcome friction: the acceleration is zero when $F = F_\mu$, so the line crosses the $F$-axis at the value of the friction force.
 **Reading the graph:** A straight line is fitted between the points. From the line we read two points far from each other: $(2.0\,\text{N}, 0.41\,\text{m/s}^2)$ and $(6.0\,\text{N}, 2.40\,\text{m/s}^2)$. The slope is calculated from them, and the crossing point on the $F$-axis is obtained from the first point with the slope.
-**Formula:** $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$, and at the crossing point $a = 0$, so $F_\mu = F_1 - \dfrac{a_1}{k}$
+**Formula:** Newton's second law is $\Sigma F = ma$, and the net force is $\Sigma F = F - F_\mu$, so $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. The slope is $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, so $m = \dfrac{1}{k}$. At the point $(F_1, a_1)$ we have $a_1 = k(F_1 - F_\mu)$, so $F_\mu = F_1 - \dfrac{a_1}{k}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $k = \dfrac{2.40\,\text{m/s}^2 - 0.41\,\text{m/s}^2}{6.0\,\text{N} - 2.0\,\text{N}} = 0.4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0.4975\,\tfrac{1}{\text{kg}}} = 2.01\,\text{kg}$ and $F_\mu = 2.0\,\text{N} - \dfrac{0.41\,\text{m/s}^2}{0.4975\,\tfrac{1}{\text{kg}}} = 1.18\,\text{N}$
 **Answer:** $1.2\,\text{N}$ ($1.18\,\text{N}$ before rounding), two significant figures. The mass of the cart is about $2.0\,\text{kg}$. The points are not exactly on the line because of the random variation of the measurement, so the result is an estimate.
@@ -273,7 +273,7 @@ G 686,7
 a alas
 v ylös
 ```
-**Formula:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ and $N - mg = ma_3$, so $N = m(g + a_3)$
+**Formula:** The acceleration is $a = \dfrac{\Delta v}{\Delta t}$, so $v_{\max} = a_1\Delta t_1$ and $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$. Newton's second law is $\Sigma F = ma_3$. With up as the positive direction the net force is $\Sigma F = N - G$ and the weight is $G = mg$, so $N - mg = ma_3$ and $N = m(g + a_3)$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The duration of phase 3 is $\Delta t_3 = 13.0\,\text{s} - 9.0\,\text{s} = 4.0\,\text{s}$.
 **Substitution:** $v_{\max} = 1.0\,\text{m/s}^2 \cdot 3.0\,\text{s} = 3.0\,\text{m/s}$ and $a_3 = \dfrac{0 - 3.0\,\text{m/s}}{4.0\,\text{s}} = -0.75\,\text{m/s}^2$. The normal force is $$\begin{aligned} &N \\ &= 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 0.75\,\text{m/s}^2) \\ &= 70\,\text{kg}\cdot 9.06\,\text{m/s}^2 \\ &= 634.2\,\text{N} \end{aligned}$$
 **Answer:** $630\,\text{N}$ ($634\,\text{N}$ before rounding), two significant figures like the mass $70\,\text{kg}$ and the acceleration. The greatest velocity is $3.0\,\text{m/s}$ and the acceleration in phase 3 is $0.75\,\text{m/s}^2$ downward. The normal force is smaller than the weight $mg = 686.7\,\text{N}$, because the net force and the acceleration point down.
@@ -324,7 +324,7 @@ The acceleration is $2.0\,\text{m/s}^2$ in the direction of the pushing force, t
 **Find:** the acceleration of cart A, $a$, in $\text{m/s}^2$
 **Principle:** By Newton's second law $\Sigma F = ma$. The mass is a property of the cart and the same for every force, so it is found from a point of the graph and then used to find the acceleration for the new force.
 **Reading the graph:** Cart A's line is the steeper one (dark grey). Its rightmost data point is at a grid crossing: $\Sigma F_1 = 3.0\,\text{N}$ and $a_1 = 6.0\,\text{m/s}^2$. The force $2.4\,\text{N}$ lies between data points, so the acceleration is calculated through the mass.
-**Formula:** Mass $m = \dfrac{\Sigma F_1}{a_1}$, and the acceleration for the new force $a = \dfrac{\Sigma F}{m}$
+**Formula:** Newton's second law is $\Sigma F = ma$, so the mass is $m = \dfrac{\Sigma F_1}{a_1}$. The acceleration for the new force is $a = \dfrac{\Sigma F}{m}$
 **Conversions:** The forces are in newtons and the accelerations in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $m = \dfrac{3.0\,\text{N}}{6.0\,\text{m/s}^2} = 0.50\,\text{kg}$ and $a = \dfrac{2.4\,\text{N}}{0.50\,\text{kg}} = 4.8\,\text{m/s}^2$
 **Answer:** $4.8\,\text{m/s}^2$ in the direction of the force, two significant figures like the force $2.4\,\text{N}$.

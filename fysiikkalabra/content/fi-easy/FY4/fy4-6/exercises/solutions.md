@@ -29,7 +29,7 @@ v oikea
 a vasen
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$, joten $N = mg$ ja $F_\mu = \mu N = \mu mg$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. Pystysuunnassa $a_y = 0$, joten $y$: $N - mg = 0$ ja $N = mg$. Liukukitka on $F_\mu = \mu N$, joten $F_\mu = \mu mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\mu = 0{,}12\cdot 30\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 35{,}316\,\text{N}$
 **Vastaus:** $35\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}12$ ja massassa $30\,\text{kg}$.
@@ -50,7 +50,7 @@ v oikea
 a 0
 akselit 0
 ```
-**Kaava:** $x$: $F - \mu N = 0$ ja $y$: $N - mg = 0$, joten $\mu = \dfrac{F}{mg}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, ja tasaisella nopeudella $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $F - F_\mu = 0$, ja liukukitka on $F_\mu = \mu N$, joten $F = \mu mg$ ja $\mu = \dfrac{F}{mg}$
 **Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\mu = \dfrac{120\,\text{N}}{40\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} = \dfrac{120\,\text{N}}{392{,}4\,\text{N}} = 0{,}3058$
 **Vastaus:** $0{,}31$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $40\,\text{kg}$.
@@ -70,7 +70,7 @@ a 0
 akselit -20
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$ ja $a_y = 0$. Painon pintaa vastaan kohtisuora komponentti on $G_y = G\cos\alpha = mg\cos\alpha$, joten $y$: $N - mg\cos\alpha = 0$ ja $N = mg\cos\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 0{,}80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 20^\circ = 7{,}848\,\text{N}\cdot 0{,}9397 = 7{,}375\,\text{N}$
 **Vastaus:** $7{,}4\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $0{,}80\,\text{kg}$.
@@ -90,7 +90,7 @@ akselit -30
 komponentit G
 ```
 **Periaate:** Paino osoittaa suoraan alas. Valitaan $x$-akseli rinteen suuntaiseksi. Painon komponentti sen suuntaan saadaan suorakulmaisesta kolmiosta. Kolmiossa painon ja kohtisuoran komponentin välinen kulma on rinteen kaltevuuskulma $\alpha$.
-**Kaava:** $G_x = G\sin\alpha = mg\sin\alpha$
+**Kaava:** $G = mg$, ja painon rinteen suuntainen komponentti on $G_x = G\sin\alpha$, joten $G_x = mg\sin\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $G_x = 12\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 30^\circ = 117{,}72\,\text{N}\cdot 0{,}5 = 58{,}86\,\text{N}$
 **Vastaus:** $59\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $12\,\text{kg}$.
@@ -110,7 +110,7 @@ a alas
 akselit -12
 komponentit G
 ```
-**Kaava:** $a = \dfrac{v - 0}{t}$, $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
+**Kaava:** Kiihtyvyys $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v - 0}{t}$. $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, ja $F_\mu = \mu N = \mu mg\cos\alpha$. Siis $mg\sin\alpha - \mu mg\cos\alpha = ma$, massa supistuu ja $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu.
 **Sijoitus:** $a = \dfrac{3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = 0{,}75\,\text{m/s}^2$ ja $\mu = \dfrac{9{,}81\,\text{m/s}^2\cdot\sin 12^\circ - 0{,}75\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 12^\circ} = \dfrac{2{,}040 - 0{,}75}{9{,}596} = 0{,}134$
 **Vastaus:** $0{,}13$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$ ja ajassa $4{,}0\,\text{s}$.
@@ -131,7 +131,7 @@ v oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $T - \mu N = ma$, joten $a = \dfrac{T - \mu mg}{m}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $T - F_\mu = ma$, ja $F_\mu = \mu N = \mu mg$. Siis $T - \mu mg = ma$ ja $a = \dfrac{T - \mu mg}{m}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{150\,\text{N} - 0{,}30\cdot 40\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}{40\,\text{kg}} = \dfrac{150\,\text{N} - 117{,}72\,\text{N}}{40\,\text{kg}} = 0{,}807\,\text{m/s}^2$
 **Vastaus:** $0{,}81\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}30$ ja massassa $40\,\text{kg}$.
@@ -142,7 +142,7 @@ akselit 0
 **Kysytty:** liukukitkakerroin $\mu$ (ei yksikköä)
 **Periaate:** Liukukitka on verrannollinen tukivoimaan, $F_\mu = \mu N$. Siksi $(N, F_\mu)$-kuvaaja on suora, joka kulkee origon kautta, ja suoran kulmakerroin on $\mu$. Kulmakerroin luetaan pisteisiin sovitetulta suoralta, ei kahdesta vierekkäisestä mittauspisteestä. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on aina epävarmuutta.
 **Kuvaajan lukeminen:** Piirretään suora origon kautta niin, että se kulkee mahdollisimman läheltä kaikkia pisteitä. Luetaan suoralta kaukainen piste. Esimerkiksi tukivoimalla $N = 25\,\text{N}$ suoran arvo on noin $F_\mu = 5{,}35\,\text{N}$.
-**Kaava:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, kun $\Delta F_\mu$ ja $\Delta N$ luetaan sovitetulta suoralta
+**Kaava:** Liukukitka on $F_\mu = \mu N$, joten $(N, F_\mu)$-suoran kulmakerroin on $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, kun $\Delta F_\mu$ ja $\Delta N$ luetaan sovitetulta suoralta
 **Muunnokset:** Molemmat akselit ovat newtoneina, joten yksiköt supistuvat eikä muunnoksia tarvita.
 **Sijoitus:** $\mu = \dfrac{5{,}35\,\text{N} - 0\,\text{N}}{25\,\text{N} - 0\,\text{N}} = 0{,}214$
 **Vastaus:** $0{,}21$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkavoimat on mitattu kahden numeron tarkkuudella ja suora piirretään käsin.
@@ -162,9 +162,9 @@ a alas
 akselit -35
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$, joten lähtökitka on $F_\text{max} = \mu_0 mg\cos\alpha$, ja sitä verrataan komponenttiin $G_x = mg\sin\alpha$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. Lepokitka on enintään $\mu_0 N$, joten lähtökitka on $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. Painon rinteen suuntainen komponentti on $G_x = mg\sin\alpha$, ja kysytty erotus on $G_x - F_\text{max}$ eli $mg\sin\alpha - \mu_0 mg\cos\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
-**Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 8{,}1\,\text{N}$
+**Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$
 **Vastaus:** komponentti ylittää lähtökitkan $56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}60$. Lähtökitka $48\,\text{N}$ on pienempi kuin komponentti $56\,\text{N}$. Siksi laatikko ei pysy paikallaan vaan lähtee liukumaan. Erotus on positiivinen, joten kitka ei riitä.
 **Järkevyys:** Saman päätelmän antaa kulma. Arvo $\tan 35^\circ = 0{,}70$ on suurempi kuin $\mu_0 = 0{,}60$, joten lankku on jyrkempi kuin rajakulma $\tan^{-1} 0{,}60 \approx 31^\circ$.
 
@@ -181,7 +181,7 @@ F_mu 175 oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $F_\mu = ma$. Ehto $F_\mu \le \mu_0 N$ antaa $ma \le \mu_0 mg$, joten $\mu_0 \ge \dfrac{a}{g}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $F_\mu = ma$. Lepokitka on enintään $\mu_0 N$, joten ehto $F_\mu \le \mu_0 N$ antaa $ma \le \mu_0 mg$ ja $\mu_0 \ge \dfrac{a}{g}$
 **Muunnokset:** Kiihtyvyydet ovat yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita. Massa supistuu.
 **Sijoitus:** $\mu_0 = \dfrac{3{,}5\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}357$
 **Vastaus:** vähintään $0{,}36$. Vastauksessa on kaksi merkitsevää numeroa kuten kiihtyvyydessä $3{,}5\,\text{m/s}^2$. Laskettu raja $0{,}357$ pyöristetään ylöspäin, koska vähintään-arvo pyöristetään turvalliseen suuntaan.
@@ -202,7 +202,7 @@ a alas
 akselit -20
 komponentit G
 ```
-**Kaava:** $y$: $N = mg\cos\alpha$ ja $x$: $mg\sin\alpha + \mu mg\cos\alpha = ma$, joten $a = g(\sin\alpha + \mu\cos\alpha)$. Liikeyhtälöstä $v^2 = v_0^2 - 2as$ ja ehdosta $v = 0$ saadaan $s = \dfrac{v_0^2}{2a}$, missä $a = g(\sin\alpha + \mu\cos\alpha)$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, kun $a$ on hidastuvuuden suuruus. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha + F_\mu = ma$, ja $F_\mu = \mu N = \mu mg\cos\alpha$, joten $a = g(\sin\alpha + \mu\cos\alpha)$. Liikeyhtälöstä $v^2 = v_0^2 - 2as$ ja ehdosta $v = 0$ saadaan $s = \dfrac{v_0^2}{2a}$, missä $a = g(\sin\alpha + \mu\cos\alpha)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &a \\ &= 9{,}81\,\text{m/s}^2\cdot(\sin 20^\circ \\ &+ 0{,}25\cdot\cos 20^\circ) \\ &= 5{,}660\,\text{m/s}^2 \end{aligned}$$ ja $s = \dfrac{(3{,}0\,\text{m/s})^2}{2\cdot 5{,}660\,\text{m/s}^2} = 0{,}795\,\text{m}$
 **Vastaus:** $0{,}80\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$ ja kitkakertoimessa $0{,}25$.
@@ -222,7 +222,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$ ja $\mu = \tan\alpha - \dfrac{a_\text{Maa}}{g\cos\alpha}$. Sulkulauseke on sama molemmissa paikoissa, joten $a_\text{Kuu} = a_\text{Maa}\cdot\dfrac{g_\text{Kuu}}{g}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, ja $F_\mu = \mu N = \mu mg\cos\alpha$, joten $a = g(\sin\alpha - \mu\cos\alpha)$. Maassa tästä saadaan $\mu = \tan\alpha - \dfrac{a_\text{Maa}}{g\cos\alpha}$. Kuussa sama laki antaa $a_\text{Kuu} = g_\text{Kuu}(\sin\alpha - \mu\cos\alpha)$. Sulkulauseke on sama molemmissa paikoissa, $a_\text{Kuu} = a_\text{Maa}\cdot\dfrac{g_\text{Kuu}}{g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu.
 **Sijoitus:** $\mu = \tan 30^\circ - \dfrac{2{,}0\,\text{m/s}^2}{9{,}81\,\text{m/s}^2\cdot\cos 30^\circ} = 0{,}577 - 0{,}235 = 0{,}342$, ja $$\begin{aligned} &a_\text{Kuu} \\ &= 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0{,}342\cdot\cos 30^\circ) \\ &= 0{,}330\,\text{m/s}^2 \end{aligned}$$. Suoraan suhteesta: $2{,}0\,\text{m/s}^2\cdot\dfrac{1{,}62}{9{,}81} = 0{,}330\,\text{m/s}^2$
 **Vastaus:** $0{,}33\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa kuten Maan kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
@@ -249,7 +249,7 @@ F_mu 220,7 vasen
 a 0
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $F - \mu_0 N = 0$, joten $F = \mu_0 mg$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, ja rajatapauksessa $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $F - F_{\mu 0} = 0$, ja lähtökitka on $\mu_0 N$, joten $F = \mu_0 N = \mu_0 mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}45\cdot 50\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 220{,}7\,\text{N}$
 **Vastaus:** vähintään $2{,}3\cdot 10^2\,\text{N}$ eli $230\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja massassa $50\,\text{kg}$. Laskettu raja on $220{,}7\,\text{N}$. Se pyöristetään ylöspäin, koska vähintään-arvo pyöristetään turvalliseen suuntaan: $220\,\text{N}$ ei vielä riittäisi. Rajaa pienemmällä voimalla laatikko pysyy paikallaan.
@@ -267,7 +267,7 @@ Väite, että tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee 
 **Kysytty:** liukukitkakerroin $\mu$ (ei yksikköä)
 **Periaate:** Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liukukitka, $F = F_\mu$. Vaakasuoralla pöydällä tukivoima on yhtä suuri kuin paino, $N = mg$. Koska $F_\mu = \mu N$, $(N, F_\mu)$-kuvaaja on origon kautta kulkeva suora. Suoran kulmakerroin on $\mu$.
 **Kuvaajan lukeminen:** Lasketaan ensin tukivoimat: $N = mg$ antaa arvot $1{,}96\,\text{N}$, $3{,}92\,\text{N}$, $5{,}89\,\text{N}$, $7{,}85\,\text{N}$ ja $9{,}81\,\text{N}$. Piirretään pisteet $(N, F_\mu)$. Sovitetaan niihin origon kautta kulkeva suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Luetaan suoralta kaukainen piste. Tukivoimalla $N = 9{,}81\,\text{N}$ suoran arvo on noin $F_\mu = 4{,}1\,\text{N}$.
-**Kaava:** $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, kun $\Delta F_\mu$ ja $\Delta N$ luetaan sovitetulta suoralta
+**Kaava:** Tasaisella nopeudella $F = F_\mu$ ja $N = mg$. Liukukitka on $F_\mu = \mu N$, joten $(N, F_\mu)$-suoran kulmakerroin on $\mu = \dfrac{\Delta F_\mu}{\Delta N}$, kun $\Delta F_\mu$ ja $\Delta N$ luetaan sovitetulta suoralta
 **Muunnokset:** Molemmat akselit ovat newtoneina, joten yksiköt supistuvat. Massat ovat kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\mu = \dfrac{4{,}1\,\text{N} - 0\,\text{N}}{9{,}81\,\text{N} - 0\,\text{N}} = 0{,}418$
 **Vastaus:** $0{,}42$. Vastauksessa on kaksi merkitsevää numeroa, koska vetovoimat on mitattu kolmen numeron tarkkuudella mutta suora piirretään käsin.
@@ -278,7 +278,7 @@ Väite, että tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee 
 **Kysytty:** liukukitkakerroin $\mu$ (ei yksikköä) ja lepokitkakerroin $\mu_0$
 **Periaate:** Ennen liikkeellelähtöä veto kasvaa, ja lepokitka kasvaa sen mukana. Kun veto ylittää lähtökitkan $\mu_0 N$, palikka lähtee liikkeelle. Kuvaajan huippu on lähtökitka. Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liukukitka $\mu N$. Vaakasuoralla pöydällä $N = mg$.
 **Kuvaajan lukeminen:** Veto kasvaa suoraviivaisesti hetkeen $t = 2{,}5\,\text{s}$ asti. Siinä on kuvaajan huippu $3{,}3\,\text{N}$. Huipun jälkeen veto putoaa ja pysyy lähes vakiona, noin $2{,}2\,\text{N}$, kun palikka liikkuu tasaisella nopeudella. Vakiovedon lukemien summa on $2{,}2\,\text{N} + 2{,}1\,\text{N} + 2{,}2\,\text{N} = 6{,}5\,\text{N}$, joten niiden keskiarvo on $6{,}5\,\text{N} : 3 = 2{,}17\,\text{N}$.
-**Kaava:** $N = mg$, $\mu_0 = \dfrac{F_{\text{huippu}}}{N}$ ja $\mu = \dfrac{F_{\text{tasainen}}}{N}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, $y$: $N - mg = 0$, joten $N = mg$. Huipulla veto on yhtä suuri kuin lähtökitka $\mu_0 N$, joten $\mu_0 = \dfrac{F_{\text{huippu}}}{N}$. Tasaisella nopeudella $a = 0$ ja veto on yhtä suuri kuin liukukitka $\mu N$, joten $\mu = \dfrac{F_{\text{tasainen}}}{N}$
 **Muunnokset:** Massa on kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 0{,}75\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 7{,}36\,\text{N}$, $\mu_0 = \dfrac{3{,}3\,\text{N}}{7{,}36\,\text{N}} = 0{,}449$ ja $\mu = \dfrac{2{,}17\,\text{N}}{7{,}36\,\text{N}} = 0{,}295$
 **Vastaus:** liukukitkakerroin on $\mu = 0{,}29$ ja lepokitkakerroin $\mu_0 = 0{,}45$. Vastauksissa on kaksi merkitsevää numeroa kuten massassa $0{,}75\,\text{kg}$ ja vetovoiman lukemissa.
@@ -288,7 +288,7 @@ Väite, että tukivoima ja paino ovat aina vastakkaiset ja yhtä suuret, pätee 
 **Annettu:** esimerkkiaineiston viisi kulmaa: $24^\circ$, $26^\circ$, $25^\circ$, $27^\circ$ ja $25^\circ$
 **Kysytty:** lepokitkakerroin $\mu_0$ (ei yksikköä)
 **Periaate:** Kun lauta kallistuu, painon rinteen suuntainen komponentti $G_x = mg\sin\alpha$ kasvaa, ja lepokitka kasvaa sen mukana. Palikka lähtee liukumaan, kun komponentti ylittää lähtökitkan $\mu_0 N$. Kohtisuorassa suunnassa palikka ei kiihdy, joten $N = mg\cos\alpha$. Rajakulmalla $\alpha_0$ pätee $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. Massa supistuu. Kun yhtälö jaetaan puolittain, saadaan $\mu_0 = \tan\alpha_0$.
-**Kaava:** $\mu_0 = \tan\alpha_0$, missä $\alpha_0$ on mittausten keskiarvo
+**Kaava:** Rajakulmalla $\Sigma\overline{F} = \overline{0}$. $x$: $mg\sin\alpha_0 = \mu_0 N$ ja $y$: $N = mg\cos\alpha_0$, joten $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$. Massa supistuu ja $\mu_0 = \dfrac{\sin\alpha_0}{\cos\alpha_0} = \tan\alpha_0$, missä $\alpha_0$ on mittausten keskiarvo
 **Muunnokset:** Kulmat ovat asteina, joten muunnoksia ei tarvita. Laskimen on oltava asteiden tilassa.
 **Sijoitus:** Kulmien summa on $$\begin{aligned} &24^\circ + 26^\circ \\ &+ 25^\circ + 27^\circ + 25^\circ \\ &= 127^\circ \end{aligned}$$, joten keskiarvo on $\alpha_{0,\text{ka}} = 127^\circ : 5 = 25{,}4^\circ$ ja $\mu_0 = \tan 25{,}4^\circ = 0{,}4748$
 **Vastaus:** $0{,}47$. Vastauksessa on kaksi merkitsevää numeroa, koska kulmien keskiarvon tarkkuus on sen verran.
@@ -309,7 +309,7 @@ a ylös
 akselit -6
 komponentit G
 ```
-**Kaava:** vaakasuoralla $N = mg$ ja $\mu mg = ma$, joten $a = \mu g$. Alamäessä $x$: $\mu mg\cos\alpha - mg\sin\alpha = ma$, joten $a = g(\mu\cos\alpha - \sin\alpha)$. Matka on $s = \dfrac{v_0^2}{2a}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, kun $a$ on hidastuvuuden suuruus. Vaakasuoralla $y$: $N - mg = 0$, joten $N = mg$, ja $x$: $F_\mu = ma$ kun $F_\mu = \mu N = \mu mg$, joten $\mu mg = ma$ ja $a = \mu g$. Alamäessä $y$: $N = mg\cos\alpha$ ja $x$ (rinnettä ylös positiivinen): $F_\mu - mg\sin\alpha = ma$, kun $F_\mu = \mu mg\cos\alpha$, joten $\mu mg\cos\alpha - mg\sin\alpha = ma$ ja $a = g(\mu\cos\alpha - \sin\alpha)$. Liikeyhtälöstä $v^2 = v_0^2 - 2as$ ja ehdosta $v = 0$ saadaan matka $s = \dfrac{v_0^2}{2a}$
 **Muunnokset:** $v_0 = 80\,\text{km/h} = 80 : 3{,}6\,\text{m/s} = 22{,}22\,\text{m/s}$, ja $v_0^2 = 493{,}8\,\text{m}^2/\text{s}^2$.
 **Sijoitus:** Kohta a): $a_a = 0{,}75\cdot 9{,}81\,\text{m/s}^2 = 7{,}358\,\text{m/s}^2$ ja $s_a = \dfrac{493{,}8\,\text{m}^2/\text{s}^2}{2\cdot 7{,}358\,\text{m/s}^2} = 33{,}6\,\text{m}$. Kohdat b) ja c):
 ```latex
@@ -339,7 +339,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$. Matka on $s = \tfrac{1}{2}at^2$, koska alkunopeus on nolla
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, ja $F_\mu = \mu N = \mu mg\cos\alpha$, joten $a = g(\sin\alpha - \mu\cos\alpha)$. Matka on $s = v_0 t + \tfrac{1}{2}at^2$, ja koska alkunopeus $v_0 = 0$, $s = \tfrac{1}{2}at^2$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu.
 **Sijoitus:** $$\begin{aligned} &a \\ &= 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0{,}35\cdot\cos 30^\circ) \\ &= 1{,}931\,\text{m/s}^2 \end{aligned}$$ ja
 ```latex
@@ -399,7 +399,7 @@ v oikea
 a 0
 akselit 0
 ```
-**Kaava:** $x$: $F - \mu N = 0$ ja $y$: $N - mg = 0$, joten $F = \mu m g$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$, ja tasaisella nopeudella $\overline{a} = \overline{0}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $F - F_\mu = 0$, ja $F_\mu = \mu N$, joten $F = \mu m g$
 **Muunnokset:** Massa on kilogrammoina ja kitkakerroin on yksikötön. Muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}014 \cdot 45\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}014 \cdot 441{,}5\,\text{N} = 6{,}18\,\text{N}$
 **Vastaus:** $6{,}2\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska kitkakertoimessa $0{,}014$ on kaksi. Kerroin $0{,}014$ on MAFY-taulukosta (*Kitkakertoimia*, teräs–jää, liukukitkakerroin). Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -420,7 +420,7 @@ a vasen
 akselit 0
 ```
 **Kuvaajan lukeminen:** Piirretään origon kautta suora, joka kulkee mahdollisimman läheltä kaikkia pisteitä. Sen kulmakerroin on noin $0{,}214$. Tukivoima on $N = mg = 7{,}85\,\text{N}$, joka on mittauspisteiden $5\,\text{N}$ ja $10\,\text{N}$ välissä. Kuvaajasta luetaan suoralta kohdasta $N = 7{,}85\,\text{N}$ kitkavoima $F_\mu \approx 1{,}68\,\text{N}$.
-**Kaava:** $y$: $N - mg = 0$, joten $N = mg$. $x$: $-F_\mu = ma_x$, joten $a_x = -\dfrac{F_\mu}{m}$ ja hidastuvuuden suuruus on $a = \dfrac{F_\mu}{m}$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg = 0$, joten $N = mg$. $x$: $-F_\mu = ma_x$, joten $a_x = -\dfrac{F_\mu}{m}$ ja hidastuvuuden suuruus on $a = \dfrac{F_\mu}{m}$
 **Muunnokset:** $N = mg = 0{,}80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 7{,}85\,\text{N}$. Kuvaajan akselit ovat newtoneina, joten muita muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{1{,}68\,\text{N}}{0{,}80\,\text{kg}} = 2{,}10\,\text{m/s}^2$
 **Vastaus:** $2{,}1\,\text{m/s}^2$ liikettä vastaan, kaksi merkitsevää numeroa, koska suora piirretään käsin ja pisteet on mitattu kahden numeron tarkkuudella.

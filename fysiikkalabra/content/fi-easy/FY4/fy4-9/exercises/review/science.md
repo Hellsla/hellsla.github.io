@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fbbb9b9401d75abc
-SCOPE: delta added-exercise from ce753f67cda910eb base abdc9e095e4f
+CONTENT-HASH: 84dec66598eb69d3
+Mode: delta (round 2)
 
 ## Blocking
 
 ## Polish
-- exercises.json fy4-9-L2-09 — "noin $5\,\text{min}$": the source record says only that these videos are 3–5 minutes long — "muutaman minuutin" would not depend on the exact length.
-- solutions.md fy4-9-L2-09 (Periaate, a) — "painovoima": the course's term for the force is paino; the meaning is clear here (gravity keeps the station in orbit).
-- Earlier polish items (L2-07 rounding reason, L3-03 v_k clash) still open; not part of this change.
+- content/fi-easy/FY4/fy4-9/exercises/solutions.md:185 (L3-04 Kaava) — "pysähtymisaika on $\Delta t_\text{e} = 25\,\text{ms}$" puts a number into the symbolic step. Naming the symbol is enough; the value belongs in Annettu or Muunnokset.
+- solutions.md:195 (L3-05 Kaava) — still open: a full stop is missing after "$v_1 = -g\,t_\text{putoaminen}$". Also say that the ball starts at rest, $v_0 = 0$.
+- solutions.md:174, 185 — still open: $\Sigma F$ here is the sum of the interior forces, not the net force.
 
 ## Checked
-- Hash the same at the start and the end (fbbb9b9401d75abc).
-- Added task fy4-9-L2-09 only; the other 22 exercises are unchanged by the packet's check.
-- Source (coordinator's record, read 16.11.2026): Andreas Mogensen (ESA), SLAMMD, a known force on the attached astronaut and mass from the resulting acceleration by Newton's second law: stated as recorded, with link and date in task and solution. The solution describes no scene of the video and tells the student to compare with what they saw.
-- a: a scale reads the normal force; station and astronaut are in free fall with the same acceleration, so the reading is zero while the mass and the gravitational force remain. Correct.
-- b: m = F/a and m = FΔt/Δv are the same law (a = Δv/Δt); the condition is stated (the push is the only significant force along the motion, body rigid and attached).
-- c: example values named as examples, not measurements: 20,0 N · 0,50 s : 0,125 m/s = 80 kg (two figures from 0,50 s); second method from rest m1v1 = m2v2: 10,0 kg · 0,40 m/s : 0,050 m/s = 80 kg; unit N·s = kg·m/s. The solution says that many methods are right.
-- d: Δv read 0,130 m/s (+4 %) gives 76,9 kg ≈ 77 kg (−4 %); random and systematic error kept apart; calibration with known masses.
-- Every part is answerable with the source and the chapter (impulse principle, Newton II and III); nothing outside FY4.
-- answers.py: the task's numbers recomputed (asserts pass); the answer is a string, no number in the gate.
+- Hash 84dec66598eb69d3 at the start and the end.
+- The round 1 Blocking item is fixed. L3-04 Kaava now gives the stopping time on the rigid obstacle its own symbol: $\Delta t_\text{e}$, with $I = F_\text{ka}\,\Delta t_\text{e}$ and $F_\text{ka} = I/\Delta t_\text{e}$.
+- Sijoitus c uses $\Delta t_\text{e} = 0{,}025\,\text{s}$. $\Delta t = 10\,\text{ms}$ stays the strip width in $I = \Delta t \cdot \Sigma F$ and in Muunnokset. The last symbolic form now matches what is substituted.
+- L3-04 numbers recomputed: $981 / 70 = 14{,}01\,\text{m/s} = 50{,}45\,\text{km/h}$, $981 / 0{,}025 = 39\,240\,\text{N}$, and $981 / 0{,}100 = 9{,}81\,\text{kN}$. All unchanged.
+- The other Kaava lines start from $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, as in round 1. The signs are unchanged.
+- The packet's "$\dfrac{F\,\Delta t}{\Delta v} m$" in L2-09 c is a line-join artifact of the packet. The file (lines 244, 252) reads $m = \dfrac{F\,\Delta t}{\Delta v}$.
+- The L2-09 and L1-06 hunks only split paragraphs, word for word the same.
+- Captures opened: none. I judged from the diff, the file on disk and the packet.

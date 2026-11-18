@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 21ead76999d37875
-SCOPE: delta added-exercise from daa17f1403857258 base abdc9e095e4f
+CONTENT-HASH: 95fdb7a6565fcd50
 ## Blocking
 
 ## Polish
-- exercises.json fy4-10-L2-10 and solutions.md — the source date reads 16.11.2026, while this review ran on 15.11.2026. Fix: confirm the reading date before publication.
-- solutions.md fy4-10-L2-10 c) — the rounding note explains $-0{,}26$ only for elasticity $0\,\%$. Fix: add that at $50\,\%$ the exact velocities $-0{,}6875$ and $0{,}0625\,\text{m/s}$ also give $-0{,}25\,\text{kg}\cdot\text{m/s}$.
-- solutions.md fy4-10-L2-10 b) — the simulation also shows each ball's momentum ($-0{,}63$ and $0{,}38\,\text{kg}\cdot\text{m/s}$ at $100\,\%$); naming them would complete "vertaa simulaation näyttämiin arvoihin".
+- content/fi/FY4/fy4-10/exercises/solutions.md:65 (L2-02 Kaava) — "joten $\Delta E$ on sama kuin $\tfrac12 m_1 v_1^2 - \tfrac12 (m_1 + m_2)\,v'^2$" puts the final symbolic form in words; "joten $\Delta E = \dots$" or a split with "eli" keeps it an equation.
+- solutions.md:65 — "…; Liike-energian pieneneminen" capital after a semicolon; lower case or a full stop (carried over).
+- solutions.md:97 (ballistic pendulum) — "… on sama kuin …" half in words (carried over).
+- Kaava rows of many tasks — "…, joten …, joten …" twice in one sentence; second "joten" → "ja" (carried over).
+- solutions.md L2-10 c) — two results with no separator between them (carried over).
 
 ## Checked
-- Only fy4-10-L2-10 judged (added exercise); the other tasks are as passed.
-- Source: screen Tutki 1D, the controls Arvot, Liike-energia, Lisää tietoja, Seinä and Elastisuus, the default values ($0{,}50\,\text{kg}$, $1{,}00\,\text{m/s}$; $1{,}50\,\text{kg}$, $-0{,}50\,\text{m/s}$) and the shown results at $100\,\%$, $50\,\%$ and $0\,\%$ agree with the coordinator's record of version 1.1.25.
-- Recomputed with my own model (coefficient of restitution 1, 0,5 and 0): velocities $-1{,}25$ and $0{,}25$; $-0{,}6875$ and $0{,}0625$; $-0{,}125\,\text{m/s}$; momentum $-0{,}25\,\text{kg}\cdot\text{m/s}$ in each; kinetic energy $0{,}4375$, $0{,}1211$ and $0{,}0156\,\text{J}$. The solution's values from the shown two-decimal velocities ($0{,}1217$ and $0{,}0169\,\text{J}$; $-0{,}255$ and $-0{,}26\,\text{kg}\cdot\text{m/s}$) follow, and the difference is explained as display rounding.
-- Losses $72\,\%$ and $96\,\%$; momentum changes $\mp 1{,}125\,\text{kg}\cdot\text{m/s}$ at $100\,\%$: correct.
-- The answer depends on the student's values: the solution says so, gives the method, then a dated example with the defaults.
-- Conditions stated: no friction, Seinä off, so no external force along the track; the simulation is called a model.
-- d) Newton III, equal and opposite impulses, momentum a vector, kinetic energy a scalar; kinetic energy becomes internal energy and sound (never "lämmöksi"); total energy conserved.
-- Terms kimmoisa and täysin kimmoton törmäys as in the chapter; "elastisuus" only as the control's name.
-- Hash 21ead76999d37875 at the start and at the end.
+- Round 3, delta: hash 95fdb7a6565fcd50 matches the packet; the diff is the L2-02 Kaava row only; no task, answer, tolerance or id changed.
+- The changed row keeps the physics: $p_\text{ennen} = p_\text{jälkeen}$, $v' = m_1 v_1/(m_1 + m_2)$, decrease $\Delta E = E_\text{k,ennen} - E_\text{k,jälkeen} = \tfrac12 m_1 v_1^2 - \tfrac12 (m_1 + m_2)v'^2$.
+- Recomputed: $v' = 85 \cdot 6{,}0/160\,\text{m/s} = 3{,}1875\,\text{m/s}$, $\Delta E = 1530\,\text{J} - 812{,}8\,\text{J} = 717{,}2\,\text{J}$; agrees with Sijoitus.
+- Captures: none opened (one text row, judged from the diff).
+- Hash 95fdb7a6565fcd50 at start and end.

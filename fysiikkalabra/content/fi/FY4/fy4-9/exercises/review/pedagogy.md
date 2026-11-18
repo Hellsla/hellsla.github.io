@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ffd2c67e70d46b4c
-SCOPE: delta added-exercise from 179ff8f7abefc16c base abdc9e095e4f
+CONTENT-HASH: 5c5e2726a63ff9d8
+SCOPE: delta md-paragraphs,numbers,reflow,typography from ffd2c67e70d46b4c base cabadc3
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- exercises.json fy4-9-L2-09 c — a student can answer c by repeating the video's method from b, and the model answer's first example does so (known force, measured change of velocity) — "Suunnittele toinen, videon laitteesta poikkeava menetelmä, jolla …", and put the two-body push first in the model answer.
-- solutions.md fy4-9-L2-09 b — "Vertaa kuvausta siihen, mitä näit videolla." hands the asked description back to the student — replace it with two or three sentences that say what the video shows (what moves, what the device measures).
-- exercises.json fy4-9-L2-09 — the video is in English; one line of vocabulary helps a weaker reader: "Sanastoa: momentum = liikemäärä, impulse = impulssi, mass = massa, force = voima."
-- exercises.json fy4-9-L2-09 and solutions.md — "luettu 16. marraskuuta 2026" is a day after this review round (15.11.2026); write the date the page was actually read.
-- exercises.json fy4-9-L2-09 — design and error analysis without a number is close to level 3 in demand; acceptable as the closing level-2 task, no change needed if the teacher placed it so.
+- solutions.md:188 (fy4-9-L3-04 Kaava) — "$I = \Delta t \cdot \Sigma F$": here $\Sigma F$ is the sum of the table's force values, while the course's $\Sigma F$ is the net force (the same collision as in fy4-3-L3-05); fix: "$I = \Delta t \cdot (F_1 + F_2 + \dots + F_9)$" or "$\Delta t \cdot \Sigma F_\text{taulukko}$".
+- solutions.md:190 (Muunnokset) — the new $\Delta t_\text{e} = 25\,\text{ms}$ and the airbag's $100\,\text{ms}$ are not converted in the Muunnokset row, only inside Sijoitus; fix: add "$25\,\text{ms} = 0{,}025\,\text{s}$ ja $100\,\text{ms} = 0{,}100\,\text{s}$".
+- Previous polish (L2-08 opening, double "joten") not part of this diff and stands as before.
+
 ## Checked
-- Round 1, delta: only fy4-9-L2-09 judged; the other 22 tasks as passed.
-- Applied and authentic: mass measurement in weightlessness, a situation where the chapter's law is the working method, not an illustration.
-- Source necessary for b (the method must be described from the video) and useful for a; link clickable, length and language stated.
-- Four parts in order: why the familiar method fails (a) → the source's method explained with Newton II and the impulse principle (b) → own design with measured quantities and an equation (c) → error sources and how to reduce them (d).
-- Only FY4 knowledge: the scale measures the normal force (chapter on weight), $\Sigma F = ma$, $I = \Delta p$, Newton III in the alternative design.
-- Model answer followable: principle first, both readings of the same measurement shown as one law, two worked designs with example values marked as such, relative-error example in d.
-- Fits the set: no other task is an experiment design in an unfamiliar setting; does not repeat the worked example (tennis ball and racket).
-- Open task with a text answer: opens its model answer after the student's own solution; no answer disclosed in the task text.
-- Finnish correct ("henkilövaa'asta", cases after units); situation first, parts last.
+- Round 1 blocking fix verified: the stopping time of the rigid obstacle is now $\Delta t_\text{e} = 25\,\text{ms}$, distinct from the sampling step $\Delta t = 10\,\text{ms}$; the Kaava, Sijoitus and Järkevyys rows use it consistently, and the task text (c) gives $25\,\text{ms}$.
+- Arithmetic unchanged and correct: $981 / 0{,}025 = 39\,240\,\text{N}$; answer $39\,\text{kN}$ with two significant figures follows the data.
+- Kaava still reads principle to symbols: $I = \Delta t \cdot \Sigma F$, $-I = \Delta p = 0 - mv_0$, $I = F_\text{ka}\,\Delta t_\text{e}$, then $F_\text{ka} = I/\Delta t_\text{e}$ before substitution.
+- Järkevyys comparison (39 kN against 17,4 kN, and airbag 100 ms) still holds; Finnish ("pysähtymisaika", case after unit "$25\,\text{ms}$:sta") correct.
+- No answer, tolerance, task, id or figure changed; layout checks ran ok at 360-1280 px; text-only change.
+- Captures opened: none.
