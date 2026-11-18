@@ -72,7 +72,7 @@
 **Given:** thickness of the glass $d = 2.0\,\text{cm}$, refractive index of the glass $n = 1.52$, speed of light in air $c = 3.00 \cdot 10^{8}\,\text{m/s}$
 **Find:** the difference in travel times $\Delta t$ in picoseconds
 **Principle:** In the glass light travels at the speed $v = c : n$, so travelling the same distance takes longer in the glass than in the air. The travel time is the distance divided by the speed. The light arrives perpendicular to the glass, so it is not refracted and travels the distance $d$ in the glass.
-**Formula:** $$\begin{aligned} t_\text{lasi} &= \frac{d}{v} \\ t_\text{ilma} &= \frac{d}{c} \\ \Delta t &= t_\text{lasi} - t_\text{ilma} \\ v &= \frac{c}{n} \\ \Delta t &= \frac{n d}{c} - \frac{d}{c} \\ &= \frac{(n - 1)\, d}{c} \end{aligned}$$
+**Formula:** $$\begin{aligned} t_\text{glass} &= \frac{d}{v} \\ t_\text{air} &= \frac{d}{c} \\ \Delta t &= t_\text{glass} - t_\text{air} \\ v &= \frac{c}{n} \\ \Delta t &= \frac{n d}{c} - \frac{d}{c} \\ &= \frac{(n - 1)\, d}{c} \end{aligned}$$
 **Conversions:** $d = 2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$. Finally $1\,\text{ps} = 10^{-12}\,\text{s}$.
 **Substitution:** $\Delta t = \dfrac{(1.52 - 1) \cdot 0.020\,\text{m}}{3.00 \cdot 10^{8}\,\text{m/s}} = 3.467 \cdot 10^{-11}\,\text{s} = 34.67\,\text{ps}$
 **Answer:** $\Delta t \approx 35\,\text{ps}$, two significant figures like the thickness $2.0\,\text{cm}$.

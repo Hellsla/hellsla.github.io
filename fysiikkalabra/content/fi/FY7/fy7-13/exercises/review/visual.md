@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a1006c29d32623aa
+CONTENT-HASH: b01ed154ea75eb18
+SCOPE: delta (Kaava aligned blocks, solutions.md)
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] Kaava blocks (shared) — display blocks use `aligned` rows with the = signs aligned; very tight vertical spacing between fraction rows (e.g. fy7-16 L3 `v = c/n`, `t = L/v`), readable but cramped — shared component line-height tweak if wanted.
-- [Minor] Phone width — the packet has no exercise captures at 390 px (exercise captures are 1280 px only); phone wrapping of the aligned Kaava blocks was not judged from a capture (check_layout 360/390 ok per packet).
+- [Minor] Järkevyys block of 13-11: = under ≈ aligned to the right of the left column looks odd; unchanged text.
 
 ## Checked
-- fy7-13-open-exercises-L2-1280-6.png (aligned Sijoitus rows, table, Järkevyys; layout intact)
-- Delta: the changed Kaava blocks (aligned, one equation per row, aligned on =, $$\begin{aligned}$$ source form); the layout around them survived: Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order intact, blocks inside the card, nothing clipped at 664 px.
+- fy7-13-open-exercises-L2-1280-3 (13-11/13-12 area): Sijoitus and Järkevyys blocks, layout intact; Kaava block of 13-12 not fully in frame, judged from source (aligned, five rows).
+- No 360/390 px exercise capture in the packet (only stage-exercises-390, solutions collapsed); the 360/390/768 px layout checks are in the packet and ok. Judged at 1280 px.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 5
