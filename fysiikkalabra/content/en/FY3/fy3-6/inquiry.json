@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: heat and internal energy",
-      "prompt": "A hot copper object is lowered into cold water in an insulated container. Which description is physically correct?",
+      "title": "Recap: heat and internal energy",
+      "prompt": "The Sun shines on the sand on a beach, and energy is transferred to the sand as heat. No work is done. Which description is physically correct?",
       "choices": [
         {
-          "text": "The heat of the copper flows into the water until the copper has no heat left.",
-          "feedback": "An object does not have heat (chapter *Internal energy, heat and conservation of energy*). Heat is the *transfer* of energy because of a temperature difference, and it stops when the temperatures are equal, not when some store runs empty. The copper still has internal energy."
+          "text": "The sand contains heat, which sunlight adds to until the sand is hot.",
+          "feedback": "An object does not have heat (lesson *Internal energy, heat and conservation of energy*). Heat is the *transfer* of energy because of a temperature difference. The sand has internal energy, and the heat transferred to it increases that."
         },
         {
-          "text": "Energy is transferred as heat from the copper to the water until the temperatures are equal. The internal energy of the copper decreases by as much as the internal energy of the water increases.",
+          "text": "Energy is transferred to the sand as heat, and the internal energy of the sand increases by the same amount ($\\Delta U = Q$).",
           "correct": true,
-          "feedback": "Correct. Heat is energy transferred because of a temperature difference, and in an insulated container energy is conserved: the heat given out by the copper is equal to the heat received by the water (chapter *Internal energy, heat and conservation of energy*). Today you calculate how large that heat is."
+          "feedback": "Correct. Heat is energy transferred because of a temperature difference, and when no work is done the change in internal energy equals the heat transferred (lesson *Internal energy, heat and conservation of energy*)."
         },
         {
-          "text": "Cold is transferred from the water to the copper until the copper is as cold as the water was at the start.",
-          "feedback": "Cold is not a quantity that is transferred. Because of the temperature difference, the net transfer of energy is from the hotter to the colder one, and the water warms too, so the final temperature is between the initial temperatures."
+          "text": "The temperature rises first, and only after that is energy transferred to the sand.",
+          "feedback": "The order is the other way round: energy is transferred as heat because of a temperature difference, and the transferred energy increases the internal energy, which raises the temperature."
         },
         {
-          "text": "Energy is transferred until the internal energies of the copper and the water are equal.",
-          "feedback": "The transfer of heat stops when the *temperatures* are equal. Internal energy also depends on the amount and kind of substance, so in equilibrium the internal energies are usually different."
+          "text": "The internal energy of the sand stays the same because energy is conserved.",
+          "feedback": "Conservation of energy does not mean that the internal energy of a single object stays constant. The internal energy of the sand increases, and the same amount of energy is transferred to it from the surroundings."
         }
       ],
       "optional": true

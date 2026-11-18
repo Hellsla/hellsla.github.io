@@ -20,24 +20,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: paine ja voima",
-      "prompt": "Ruiskun männän pinta-ala on $3{,}0\\,\\text{cm}^2$, ja ruiskun ilman paine on $100\\,\\text{kPa}$. Kuinka suuren voiman ilma kohdistaa mäntään?",
+      "prompt": "Lentokoneen lähtöportilla ilmanpaine on $101\\,\\text{kPa}$. Sipsipussin yhden sivun pinta-ala on $0{,}020\\,\\text{m}^2$. Kuinka suuren voiman ilma kohdistaa pussin yhteen sivuun?",
       "choices": [
         {
-          "text": "$30\\,\\text{N}$",
+          "text": "noin $2{,}0\\,\\text{kN}$",
           "correct": true,
-          "feedback": "Oikein: $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$. Paine on hiukkasten törmäysten aiheuttama voima pinta-alaa kohti, ja siihen tämä tunti nojaa."
+          "feedback": "Oikein: $$\\begin{aligned} F &= pA \\\\ &= 101\\,000\\,\\text{Pa} \\\\ &\\cdot 0{,}020\\,\\text{m}^2 \\\\ &= 2020\\,\\text{N} \\\\ &\\approx 2{,}0\\,\\text{kN} \\end{aligned}$$. Paine on hiukkasten törmäysten aiheuttama voima pinta-alaa kohti. Tämä tunti perustuu siihen."
         },
         {
-          "text": "$300\\,\\text{N}$",
-          "feedback": "Neliösenttimetrien muunnos meni pieleen: $$\\begin{aligned} 1\\,\\text{cm}^2 &= (0{,}01\\,\\text{m})^2 \\\\ &= 10^{-4}\\,\\text{m}^2 \\end{aligned}$$, joten $3{,}0\\,\\text{cm}^2 = 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2$ ja $F = pA = 30\\,\\text{N}$."
+          "text": "$2{,}0\\,\\text{N}$",
+          "feedback": "Paine pitää sijoittaa pascaleina: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$. Silloin $F = pA \\approx 2{,}0\\,\\text{kN}$."
         },
         {
-          "text": "$0{,}030\\,\\text{N}$",
-          "feedback": "Paine on sijoitettava pascaleina: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$. Silloin $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3{,}0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$."
+          "text": "noin $5{,}1\\,\\text{MN}$",
+          "feedback": "Paine jaettiin pinta-alalla. Koska $p = F/A$, voima on $F = pA$, ei $p/A$. Tulos on noin $2{,}0\\,\\text{kN}$."
         },
         {
-          "text": "$3{,}3 \\cdot 10^{8}$ N",
-          "feedback": "Paine jaettiin pinta-alalla. Koska $p = F/A$, voima on $F = pA$, ei $p/A$. Tulos on $30\\,\\text{N}$."
+          "text": "$2{,}0\\,\\text{kPa}$",
+          "feedback": "Kilopascal on paineen yksikkö. Voima mitataan newtoneina: $F = pA \\approx 2{,}0\\,\\text{kN}$."
         }
       ],
       "optional": true

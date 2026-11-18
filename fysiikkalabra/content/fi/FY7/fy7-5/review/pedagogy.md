@@ -1,11 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9156a50e302c58c1
-
+CONTENT-HASH: b7de1d98afc92688
 ## Blocking
-(none)
-
 ## Polish
-- inquiry.json hook — the earlier polish is done: the hook now ends at "magneetti käämin vieressä ei tuottanut virtaa" and no longer says that movement produces a current. The question still works without it.
-
 ## Checked
-- Delta: the hook gives the dynamo phenomenon and Faraday's null result; whether motion matters is left to Ennusta 1 and the simulation. The other polish items from round 1 are outside this diff and remain optional.
+batch delta review (round 3): Pohdinta retrieval option 1 now gives only the value and the perpendicularity, so the formula no longer sits in the correct choice and appears only in feedback; the wrong option's feedback chain is split into short rows, first row symbolic, units kept, same numbers; still consistent with the task and its other feedback.

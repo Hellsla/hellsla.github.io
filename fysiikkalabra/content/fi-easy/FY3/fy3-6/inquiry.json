@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: lämpö ja sisäenergia",
-      "prompt": "Kuuma kuparikappale upotetaan eristetyssä astiassa olevaan kylmään veteen. Mikä kuvaus on fysikaalisesti oikea?",
+      "prompt": "Aurinko paistaa rannan hiekalle, ja hiekkaan siirtyy energiaa lämpönä. Työtä ei tehdä. Mikä kuvaus on oikea?",
       "choices": [
         {
-          "text": "Kuparin lämpö siirtyy veteen, kunnes kuparissa ei ole enää lämpöä.",
-          "feedback": "Kappaleella ei ole lämpöä (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö on energian *siirtymistä* lämpötilaeron vuoksi. Siirtyminen loppuu, kun lämpötilat ovat samat. Se ei lopu siksi, että jokin varasto tyhjenee. Kuparilla on yhä sisäenergiaa."
+          "text": "Hiekassa on lämpöä, jota auringonvalo lisää, kunnes hiekka on kuuma.",
+          "feedback": "Kappaleessa ei ole lämpöä (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö on energian *siirtymistä* lämpötilaeron takia. Hiekassa on sisäenergiaa, ja siihen siirtynyt lämpö kasvattaa sitä."
         },
         {
-          "text": "Energiaa siirtyy lämpönä kuparista veteen, kunnes lämpötilat ovat samat. Kuparin sisäenergia pienenee yhtä paljon kuin veden sisäenergia kasvaa.",
+          "text": "Hiekkaan siirtyy energiaa lämpönä, ja hiekan sisäenergia kasvaa saman verran ($\\Delta U = Q$).",
           "correct": true,
-          "feedback": "Oikein. Lämpö on lämpötilaeron vuoksi siirtyvää energiaa. Eristetyssä astiassa energia säilyy: kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Tänään lasketaan, kuinka suuri tuo lämpömäärä on."
+          "feedback": "Oikein. Lämpö on energiaa, joka siirtyy lämpötilaeron takia. Kun työtä ei tehdä, sisäenergian muutos on yhtä suuri kuin siirtynyt lämpö (luku *Sisäenergia, lämpömäärä ja energian säilyminen*)."
         },
         {
-          "text": "Vedestä siirtyy kylmyyttä kupariin, kunnes kupari on yhtä kylmää kuin vesi oli alussa.",
-          "feedback": "Kylmyys ei ole suure, joka siirtyy. Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti kuumemmasta kylmempään. Vesikin lämpenee, joten loppulämpötila on alkulämpötilojen välissä."
+          "text": "Lämpötila nousee ensin, ja vasta sen jälkeen hiekkaan siirtyy energiaa.",
+          "feedback": "Järjestys on päinvastainen. Energia siirtyy lämpönä lämpötilaeron takia. Siirtynyt energia kasvattaa sisäenergiaa, ja silloin lämpötila nousee."
         },
         {
-          "text": "Energiaa siirtyy, kunnes kuparin ja veden sisäenergiat ovat yhtä suuret.",
-          "feedback": "Lämmön siirtyminen pysähtyy, kun *lämpötilat* ovat samat. Sisäenergia riippuu myös aineen määrästä ja laadusta. Siksi tasapainossa sisäenergiat ovat yleensä erisuuret."
+          "text": "Hiekan sisäenergia pysyy samana, koska energia säilyy.",
+          "feedback": "Energian säilyminen ei tarkoita, että yhden kappaleen sisäenergia pysyisi samana. Hiekan sisäenergia kasvaa, koska siihen siirtyy energiaa ympäristöstä."
         }
       ],
       "optional": true

@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 56ec9ba1af892522
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 19ba641822752b02
 ## Blocking
-- none
-
+(none)
 ## Polish
 - none
-
 ## Checked
-- Diff: the recalled induction law now e_ka (average over dt) with one sentence 'kun vuo muuttuu tasaisesti, jännite on vakio, merkitään e'. Consistent with Sähkömagneettinen induktio; no other change.
-- Language checked: en. Hash 56ec9ba1af892522 at start and end.
+batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Magnet held still in a coil around a copper tube retrieves 'no change, no voltage' without hinting at braking; Ennusta (tube falling times, slit) not revealed.

@@ -1028,7 +1028,7 @@ UNIT_NAMES = {"mSv": ("millisievert", "millisv"), "µSv": ("mikrosievert",), "Sv
               "A": ("ampeeri", "ampere"), "Hz": ("hertsi", "hertz"), "Pa": ("pascal",), "m": ("metri", "metre", "meter"), "s": ("sekunti", "second"),
               "h": ("tunti", "hour"), "min": ("minuutti", "minute")}   # a unit written as a word in the other language's text (work queue 8q: $\text{mSv}$ beside "millisieverteinä")
 PROSE_NUMBER = re.compile(r"(?<!\w)\d+(?:[.,]\d+)*")
-LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w)")
+LABEL = re.compile(r"(?<![\w\\{])[A-Z](?!\w|-[a-zåäö])")   # a capital that is part of a word ("X-radiation") is no label; (A), a), X: stay
 MATH_OR_BLOCK = re.compile(r"<svg\b.*?</svg>|```.*?```|\$\$.*?\$\$|\$[^$\n]*\$", re.S)
 
 
@@ -1093,6 +1093,16 @@ def _tr_data(a, b, pairs, key=None, parent=None, labels=False):
     return _tr_text(a, b, pairs, labels and key == "text")   # an option's own words carry its label; its feedback may name others
 
 
+def _choice_answer(ex):
+    """The exercise with a choice `answer` (the text of an option, which is translated) replaced by the index of that
+    option, so two languages compare the same option, not its words; `ex` unchanged when it is not a choice exercise or
+    its answer names no option (work queue 8r). Numbers, formulas and settings stay strict."""
+    ch = ex.get("choices") if isinstance(ex, dict) else None
+    if not (isinstance(ch, list) and isinstance(ex.get("answer"), str)): return ex
+    idx = [i for i, o in enumerate(ch) if isinstance(o, dict) and o.get("text") == ex["answer"]]
+    return {**ex, "answer": ("option", idx[0])} if len(idx) == 1 else ex
+
+
 def translation_differs(folder, fi=None, tr=None):
     """None when the translated exercise set (`folder`, a content/<lang>/ lesson) is numerically equivalent to the Finnish
     one (module docstring, "Translated exercise sets"); otherwise why not, in a few words. `fi`, `tr`: the Sources the two
@@ -1108,7 +1118,7 @@ def translation_differs(folder, fi=None, tr=None):
     if _core(da) != _core(db): return "the core exercises differ"
     pairs = []
     for i in A:
-        if not _tr_data(A[i][1], B[i][1], pairs): return f"{i}: a number, formula, answer or setting differs"
+        if not _tr_data(_choice_answer(A[i][1]), _choice_answer(B[i][1]), pairs): return f"{i}: a number, formula, answer or setting differs"
     sa, sb = _solution_sections(fi.read(at(src, "solutions.md"))), _solution_sections(tr.read(at(folder, "solutions.md")))
     if not (sa and sb) or [h for h, _ in sa[1]] != [h for h, _ in sb[1]]: return "solutions.md has other sections"
     if not _tr_text(sa[0], sb[0], pairs): return "the text before the first solution differs"

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a9c9c40835ee0d7f
+CONTENT-HASH: 2c3322a79e19d9eb
 
 ## Blocking
 
 ## Polish
+- [Minor] Pohdinta recap card — the card sits closed under the open question; fine, optional by design. No change.
 
 ## Checked
-Delta (solutions.md paragraph breaks only; lesson.md unchanged in substance). Opened:
-- review/shots/contact-6.png (exercises 1-9 to 1-18 with solutions open): the split Principle / Model answer paragraphs read as separate short blocks, no clipping or overlap.
-- review/shots/fy3-1-example-390-1.png (worked example stages 1-5 at 390 px): unchanged, formulas and aligned chains intact, no overflow.
-- review/shots/fy3-1-open-exercises-1280-3.png (opened solution 1-3 and start of 1-4): section order given, find, principle, formula, substitution, answer, reasonableness is preserved; units and LaTeX render correctly.
+batch delta review: opened review/shots/fy3-1-stage-herata-390.png (card closed) and my own captures of the opened Pohdinta recap card with feedback open (wrong option and correct option) at 390 px (wrong) and 1280 px (correct); units are inline LaTeX with thin spaces, feedback sits inside the card, nothing clipped; the packaged shipped captures had no feedback-open state, so I made them. Figures not in the diff.

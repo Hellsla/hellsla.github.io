@@ -23,20 +23,20 @@
       "type": "choice",
       "title": "Kertaa: vektorien summa",
       "optional": true,
-      "prompt": "Veneeseen vaikuttaa $30\\,\\text{N}$:n voima itään ja $40\\,\\text{N}$:n voima pohjoiseen. Kuinka suuri on voimien summa?",
+      "prompt": "Suunnistaja kulkee kompassin avulla ensin $300\\,\\text{m}$ pohjoiseen ja sitten $400\\,\\text{m}$ itään. Kuinka kaukana hän on lähtöpisteestä?",
       "choices": [
         {
-          "text": "$50\\,\\text{N}$, koska kohtisuorat voimat ovat kateetteja.",
+          "text": "$500\\,\\text{m}$, koska kohtisuorat siirtymät ovat kateetteja.",
           "correct": true,
-          "feedback": "Oikein. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit, ja summa on hypotenuusa: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$. Samalla tavalla tässä luvussa lasketaan yhteen magneettikenttiä."
+          "feedback": "Oikein. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit, ja summa on hypotenuusa: $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$. Samalla tavalla tässä luvussa lasketaan yhteen magneettikenttiä."
         },
         {
-          "text": "$70\\,\\text{N}$, koska voimien suuruudet lasketaan yhteen.",
-          "feedback": "Lukuina voi laskea yhteen vain samansuuntaiset vektorit. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit. Siksi summa on $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
+          "text": "$700\\,\\text{m}$, koska matkat lasketaan yhteen.",
+          "feedback": "Lukuina voi laskea yhteen vain samansuuntaiset vektorit. Kohtisuorat siirtymät ovat suorakulmaisen kolmion kateetit. Siksi etäisyys lähtöpisteestä on $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$."
         },
         {
-          "text": "$10\\,\\text{N}$, koska suuremmasta voimasta vähennetään pienempi.",
-          "feedback": "Erotus saadaan vain vastakkaissuuntaisista vektoreista. Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
+          "text": "$100\\,\\text{m}$, koska pidemmästä matkasta vähennetään lyhyempi.",
+          "feedback": "Erotus saadaan vain vastakkaissuuntaisista vektoreista. Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella: $$\n\\begin{aligned}\n&\\sqrt{(300\\,\\text{m})^2 + (400\\,\\text{m})^2} \\\\\n&= 500\\,\\text{m}\n\\end{aligned}\n$$."
         }
       ]
     },

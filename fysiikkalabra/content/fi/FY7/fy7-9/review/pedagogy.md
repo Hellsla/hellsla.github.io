@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0819435386a6e0e6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 9e67b6ab8a650b06
 ## Blocking
-- none
 
 ## Polish
-- [Minor] Two consecutive sentences start with 'Myös' (UV sentence, then 'Myös röntgenputki ...'); drop one.
+- Nothing further.
 
 ## Checked
-- Diff: 'klassisen sähkömagnetismin mukaan' for radiation from accelerated charges, one sentence that atoms and nuclei are treated in quantum physics, non-ionising UV can damage skin and eyes; summary 'klassisen mallin mukaan'.
-- The model statement sets the limit without a jump; the UV sentence corrects a likely misconception (only ionising radiation is harmful).
-- Language checked: fi. Hash 0819435386a6e0e6 at start and end.
+batch delta review: Glowing iron red/violet is the chapter's phenomenon; f = c/lambda retrieval is correct (4,3 and 7,5 e14 Hz); Ennusta on peak shift and room-temperature rock is not revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)

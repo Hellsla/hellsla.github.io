@@ -29,3 +29,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-28T15:36Z	fy3-4	FY3	general-purpose	other	claude-sonnet-5-5			2	1034463	36	7695	956814	69918	69990	17	1787	18		0.4432	transcript	7d0b8046302e
 2026-10-28T15:36Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		full	1	1111761	26	9581	989624	112530	113472	13	106	14		0.9523	transcript	139a1fc84450
 2026-10-28T15:36Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	595393	20	4216	511733	79424	80294	10	48	14		0.3431	transcript	2a67694a1cb3
+2026-11-17T22:58Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	50007	3	1020	42133	6851	6920	11	74	29		0.0358	transcript	956680845e0d
+2026-11-17T22:58Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	80841	3	1897	69479	9462	9623	13	193	22		0.0992	transcript	ce392ff4967b
+2026-11-17T22:58Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	60980	3	1200	52123	7654	7838	11	124	19		0.0727	transcript	013a744c4d06
+2026-11-17T22:58Z	fy3-4	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	108086	5	1255	98186	8640	8715	20	215	46		0.0538	transcript	04201f2fe5ef
+2026-11-17T22:58Z	fy3-4	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	64494	3	1662	54050	8779	8932	12	171	20		0.0879	transcript	1524050c3cc2
+2026-11-17T22:58Z	fy3-4	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	117653	5	1360	107490	8798	8882	21	246	44		0.0571	transcript	42e4db3df5e1
+2026-11-17T22:58Z	fy3-4	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	140273	6	1488	130184	8595	8672	25	267	51		0.0624	transcript	1ef5c31dd452
+2026-11-17T22:58Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	33750	2	895	25419	7434	7564	8	65	17		0.0326	transcript	a89abd4e1d48
+2026-11-17T22:58Z	fy3-4	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	48511	3	1024	39816	7668	7775	11	71	28		0.0374	transcript	f7cd2eb51cef
+2026-11-17T22:58Z	fy3-4	FY3	orchestrator	orchestrate	claude-sonnet-5-5		session/9		3249958	34	8886	3213690	27348	34967	126	9993	108		0.8411	transcript	930f1f950651

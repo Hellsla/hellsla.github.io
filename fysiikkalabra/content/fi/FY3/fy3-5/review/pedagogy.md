@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 31591d2d6f34aec6
+CONTENT-HASH: 0673a9b71c836baf
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Oikean vaihtoehdon palautteessa näyttökaava ($$...$$) on lauseen keskellä ja piste jää sen perään; siirrä kaava omaksi lauseeksi tai käytä rivinsisäistä ketjua.
+- Kertaus kysyy työtä, mutta ilmiön avoin kysymys on lämpeneminen; yhdistä vielä yhdellä virkkeellä pumpun mäntään ("tämä on pumppaajan tekemä työ").
 
 ## Checked
-batch delta review: the rephrased learning goals each complete "Tällä tunnilla opit" with a lowercase -maan/-mään verb, parallel within the list, symbols and numbers unchanged, meaning kept; the change touches no figure, simulation or task.
+batch delta review: kertaus "työ" (pumpun mäntä, 90 N, 0,10 m) kuuluu suoraan pumppausilmiöön ja kysyy esitietoa ilman että Ennusta-vastaukset paljastuvat; harhat (jako, lukuarvo, summa) ovat oikeita; yksiköt LaTeXina.

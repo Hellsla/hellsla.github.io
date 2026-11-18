@@ -226,6 +226,13 @@ tieteen ja pedagogiikan delta-katselmoinnin). Ratkaisuaskeleet, joiden vastauslu
 fy5-3 L3-05, fy5-14 L3-05), ja fy5-2 L2-03:n Kaava-vaihe (check_solutions) jäivät yhdeksi kappaleeksi; FY5:n Sovella ja
 esimerkkikoe odottavat samaa reviews.py:n item-carrya kuin FY1 ja FY2.
 
+FY7 PR 2 (claude/fy7-lapikaynti-2): 8j tehty fy7-1, 3–10, 12–14 (muut liittyivät jo; `docs/audits/2026-11-17-8j-FY7.md`), vanhentuneet
+tehtäväkatselmoinnit (fy7-4, 5, 6, 10, 12, 16 kolmella kielellä, en fy7-6 ja fy7-16 science full), en fy7-16:n kuvan kuvauksen
+käännös ja fy7-6:n L1-06:n Lenzin lain muotoilu ("pyrkii pitämään"). Opit: kierros 1 löysi kaksi lukua, joissa uusi tehtävä oli
+väärin (fy7-12:n vanha 41,7° palautteessa, fy7-14:n kalvofysiikka) ja yhden, jossa tehtävä paljasti Ennusta 1:n (fy7-8,
+fi-easy pedagogiikka); kuolleen pyöristyksen (19,745° → 19,7°) löysi vasta pedagogiikka. Kertaustehtävän uusi tilanne kannattaa
+tarkistaa koko luvun Ennusta-tehtäviä vasten jo kehittäjälle annettavassa paketissa.
+
 FY7 tehty (claude/fy7-lapikaynti, 0f-PR #681): fy7-1…fy7-16 esimerkit ja ratkaisut kolmella kielellä sekä Sovella (fi, en, fi-easy)
 ja esimerkkikoe; tiede ja pedagogiikka carry (`md-paragraphs`), ulkoasu delta PASS. Opit: round.py --batch tarkistuksineen kestää
 noin 15 min per luku (layout), joten FY7:ssä ajettiin --skip-checks ja layout jätettiin CI:lle; tehtäväsarjojen visual-raportit
@@ -696,5 +703,14 @@ Kuvatehtävät fy8-14-L2-08 (`fy8-14/kontrasti-points`, vastaavan luukerroksen p
 ## §5h mathlayout: join_wide ja with_punct (PR #691, 2026-11-17)
 `join_wide` ei liittänyt relaatiorivejä jatkoriviin jo mainissa (5g); jäljellä oli `&/`- ja `&\div`-rivi, jota ei tunnistettu jatkoriviksi (fy3-10: `/ (…) ≈ 0,083` liitettiin leveällä näytöllä). `CONT_OP` sai `/` ja `\div`. `with_punct` jättää loppu-`&`:n ja `\\`:n viimeiseksi, välimerkki viimeisen lausekkeen perään. Testit `test_mathlayout.py` (5h). `site/`: vain fy3-10 fi/en/fi-easy muuttui; check_layout 1280 ja 360 px ok; `reviews.py verify` ok, yksikään raportti ei vanhentunut (renderöinti ei kuulu hashiin).
 
-## §0i Pysähdy ja mieti -pilotti (PR #699, 2026-11-18)
+## §20 Näin opiskelet -sivu (PR #697, 2026-11-17)
+Sivun `nain-opiskelet.html` (fi, en, fi-easy) uudistus: kuusivaiheinen opiskelupolku yhtenä kaaviona (`build.py study_guide`, `.study-path` ja `.path-loop` `site.css`:ssä), kahdeksan opiskeluvinkkiä ja avun pyytäminen, palautteen hyödyntäminen ja itsearvio. Vanha "Jäikö tehtävä jumiin?" -kartta ja vaiheen chipit poistuivat (kaavio korvaa chipit). Kaavion numerot ovat luvun vaihepalkin numerot (1–4, 5–6, 7): luvussa on seitsemän vaihetta, joten askel 5 kattaa Esimerkit ja Tehtävät ja askel 6 on "Testaa ja arvioi" (ei "Itsearvio"). Kaappaukset: `docs/audits/2026-11-17-nain-opiskelet/` (fi 390 ja 1280 px). Ehdotus: nimeä luvun vaihe "Testaa ja arvioi" uudelleen "Itsearvioksi" ja harkitse Tehtävät-vaiheen yhdistämistä Esimerkkeihin (ei tehty; luvun rakenne ei kuulunut tehtävään).
+
+## §0i Kirjavinkit: kuusi uutta kirjaa (opettaja 2026-11-17)
+`content/fi/lukuvinkit.json` 14 → 20 kirjaa (Ehrlich, Press, Krauss, Ferguson, McEvoy–Zarate, Ruelle); järjestys helpoimmasta vaativimpaan; uusi `content/fi-easy/lukuvinkit.json` (selkoversio); en päivitetty. Tieteenhistoriallinen merkintä kirjan tekstissä (Tompkins, Ajan lyhyt historia, Thirty Years), ei uutta avainta. Lainamerkinnät ennallaan, uudet `false`. Uusien kirjojen linkit ovat Finnan hakulinkkejä (`Search/Results?lookfor=…&type=Title`), koska Finnan tietuetunnuksia ei voitu tarkistaa (pilviympäristön verkko esti `finna.fi`); opettaja korvaa ne tietuelinkeillä tarkistettuaan.
+
+## §4b Kuuntele ja katso fysiikkaa / Listen & Watch Physics (PR #696, opettaja 2026-11-17)
+`podcastit.html` fi/en/fi-easy (lähde `content/<lang>/podcastit.json`, `scripts/media_tips.py`, `templates/mediafilter.js`, `scripts/test_media.py`): moduuli-, tyyppi- ja lyhyt-suodatus, kieliversioiden väliset vinkit, linkki yläpalkissa ja valikossa. 24 suomenkielistä ja 23 englanninkielistä sisältöä; vain avatut ja nimeltä tarkistetut linkit; estetyn isännän ehdokkaat ja sisällöltään heikot jätettiin pois. "100 miljoonaa astetta" -ohjelmaa ei löytynyt (Tiedeykkönen-fuusiojakso kattaa aiheen). Opit: (1) yläpalkin valikkoraja nostettu 58 → 72 rem, koska englanninkielinen yläpalkki ei mahtunut yhdelle riville 1024 px:ssä CI:n fonteilla; (2) `site/` on rakennettava uudelleen jokaisen `site.css`-muutoksen jälkeen (tyylitiedoston versiotunniste); (3) matala (shallow) klooni pudottaa tehtävät sivuilta, joiden katselmointi tarvitsee historiaa (en fy7-6, fy7-16): rakenna täydellä historialla tai palauta sivu mainista.
+
+## §0i (toinen) Pysähdy ja mieti -pilotti (PR #699, 2026-11-18)
 Opettaja hyväksyi pilotin 2026-11-18 (koordinaattorin välityksellä, kielikorjausten jälkeen). Merkintä ```pysahdy (kysymys, rivi `---`, vastaus; `scripts/stopthink.py`, `test_stopthink.py`), render `<aside class="stop-think">` + `<details>` "Vastaus", tyyli `templates/site.css`, tekstit `lang/*.json` `lesson.stop_think`. Sisältö: fy4-3 (3 kysymystä), fy4-4 (3), fy4-6 (4), fi/en/fi-easy. Laajennus muihin lukuihin vasta opettajan erillisellä päätöksellä.

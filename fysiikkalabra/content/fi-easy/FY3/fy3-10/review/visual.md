@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: de8b39c51532ea8e
+CONTENT-HASH: 1e3401a595c10da7
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] kertaus card: `\textsf{l}` now reads as a letter, not the digit 1, but in the serif maths line it is a plain vertical bar ("3,0 l", "2,0 l") and can still be mistaken for a capital I or a bar at a glance. Acceptable; a project-wide convention.
 
 ## Checked
-- Delta (md-paragraphs; the question "Kysytään ainemäärää $n$ ja massaa $m$." is now its own paragraph in stage 1; words unchanged). No 360 px captures exist; judged at 390 px.
-- 390 px: fy3-10-example-390-1.png (stages 1-4: knowns, question, aligned chains, unit-conversion list) and fy3-10-example-390-2.png (stages 5-7: result paragraph, Järkevyys). No clipping or overflow; units LaTeX.
-- 390 px: fy3-10-stage-tarkista-390-1.png (cards intact).
-- 1280 px: fy3-10-open-exercises-1280-7.png (solution open: all blocks in order, answer box, Järkevyys), fy3-10-open-exercises-L2-1280-5.png (graph task: Kuvaajan lukeminen paragraphs readable, chains aligned), fy3-10-open-tarkista-1280-1.png (answer and feedback open).
-- Layout survived the splits.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review (round 2): own captures of the kertaus card ("Kertaa: Boylen laki", correct choice committed, every feedback open) at 390 px (c2-fy3-10-390.png) and 1280 px (c2-fy3-10-1280.png) in the scratchpad. Litre sign, case endings ("$3{,}0\,\textsf{l}$:sta", "$150\,\text{kPa}$:iin"), fraction rows aligned at "=", the colon in $3{,}0 : 2{,}0 = 1{,}5$, and feedbacks inside the card without clipping all read correctly. The sticky "Pohdinta" bar in the 390 px capture is a capture artifact. Figures untouched by the diff, not reopened.

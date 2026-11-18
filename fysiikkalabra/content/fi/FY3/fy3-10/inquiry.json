@@ -19,24 +19,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa: Boylen laki",
-      "prompt": "Ruiskun suu tukitaan, kun siinä on $60\\,\\text{ml}$ ilmaa $100\\,\\text{kPa}$:n paineessa. Mäntää painetaan, kunnes ilman tilavuus on $30\\,\\text{ml}$. Lämpötila ei muutu. Mikä on ilman paine nyt?",
+      "prompt": "Heliumia on mäntäsylinterissä $3{,}0\\,\\textsf{l}$ $100\\,\\text{kPa}$:n paineessa. Mäntää painetaan, kunnes kaasun tilavuus on $2{,}0\\,\\textsf{l}$. Lämpötila ja kaasun määrä eivät muutu. Mikä on kaasun paine nyt?",
       "choices": [
         {
-          "text": "$50\\,\\text{kPa}$",
-          "feedback": "Paine ja tilavuus muuttuvat vakiolämpötilassa vastakkaisiin suuntiin: Boylen laki $p_1V_1 = p_2V_2$ tarkoittaa kääntäen verrannollisuutta. Kun tilavuus puolittuu, paine kaksinkertaistuu."
+          "text": "$67\\,\\text{kPa}$",
+          "feedback": "Kerroit paineen tilavuuksien suhteella väärinpäin. Tilavuuden pienentyessä paine kasvaa: $p_2 = p_1 V_1 / V_2 = 150\\,\\text{kPa}$."
         },
         {
           "text": "$100\\,\\text{kPa}$",
-          "feedback": "Ilman määrä pysyy samana, mutta paine ei. Boylen lain $p_1V_1 = p_2V_2$ mukaan $$\\begin{aligned} p_2 &= p_1V_1/V_2 \\\\ &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$."
+          "feedback": "Paine ei pysy samana. Lämpötilan ja kaasun määrän ollessa vakioita tulo $pV$ pysyy vakiona (Boylen laki), joten tilavuuden pienentyessä paine kasvaa: $150\\,\\text{kPa}$."
+        },
+        {
+          "text": "$150\\,\\text{kPa}$",
+          "correct": true,
+          "feedback": "Oikein: $$\\begin{aligned} p_2 &= \\frac{p_1 V_1}{V_2} \\\\ &= \\frac{100\\,\\text{kPa} \\cdot 3{,}0\\,\\textsf{l}}{2{,}0\\,\\textsf{l}} \\\\ &= 150\\,\\text{kPa} \\end{aligned}$$. Samaa kaasun käyttäytymistä selität tällä tunnilla hiukkasten avulla."
         },
         {
           "text": "$200\\,\\text{kPa}$",
-          "correct": true,
-          "feedback": "Oikein: Boylen laki $p_1V_1 = p_2V_2$ antaa $$\\begin{aligned} p_2 &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$. Puolet pienempi tilavuus, kaksinkertainen paine."
-        },
-        {
-          "text": "$400\\,\\text{kPa}$",
-          "feedback": "Paine on kääntäen verrannollinen tilavuuteen, ei sen neliöön. Tilavuus puolittuu kerran, joten paine kaksinkertaistuu: $200\\,\\text{kPa}$."
+          "feedback": "Tilavuus ei puolitu: se pienenee $3{,}0\\,\\textsf{l}$:sta $2{,}0\\,\\textsf{l}$:aan, joten suhde on $3{,}0 : 2{,}0 = 1{,}5$, ei $2$. Paine kasvaa $1{,}5$-kertaiseksi, $150\\,\\text{kPa}$:iin."
         }
       ],
       "optional": true

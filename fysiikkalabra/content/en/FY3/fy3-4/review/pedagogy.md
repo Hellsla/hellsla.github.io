@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 2635a6898134e622
-
+CONTENT-HASH: 4f3e18beb1717ff9
 ## Blocking
-(none)
-
 ## Polish
-(none)
-
+- The new diver photo sits at the end of the "pressure acts in every direction" paragraph and has alt text and a caption; it matches the diver of the worked example. Good.
+- The recap's wrong-answer feedback gives the full result (29 430 N) in every option; harmless here, but a shorter hint would leave the student something to do.
 ## Checked
-- Translation reviewed against the reviewed Finnish after the typesetting round: every inline-math segment of lesson.md, inquiry.json, exit-ticket.json, figures.json compared with the Finnish (same numbers, units, symbols, order; only subscript labels differ, translated); no bare number+unit left outside LaTeX; decimal point (not comma) in English; no Finnish words left (Lake Päijänne is a proper noun); JSON valid; check_i18n 0 errors for en in these chapters.
-- Pedagogy: teaching sequence, staging, tasks, feedback and hints identical in structure to the Finnish; units in LaTeX read cleanly; language natural.
-- Translation-only review (teacher's procedure 2026-10-28); no translation edits were needed.
+batch delta review: herata recap (weight of a 3000 kg column of water above a diver) fits the dam/diver phenomenon and prepares p = F/A = rho g h; it does not reveal Ennusta 1-3 (doubled depth, denser water, narrow tube versus pool); distractors (mass as weight, division, kg) are real; worked-example paragraphs split into one thing each; photo added with alt text.

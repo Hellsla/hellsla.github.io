@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: kompassi magneettikentässä",
+      "title": "Kertaa: kompassi ilman virtaa",
       "optional": true,
-      "prompt": "Kompassi asetetaan sauvamagneetin viereen. Mihin suuntaan kompassin neulan pohjoispää kääntyy?",
+      "prompt": "Kun kuparijohtimessa ei kulje virtaa, kompassi on johtimen vieressä. Mihin suuntaan kompassin neulan pohjoispää osoittaa ja miksi?",
       "choices": [
         {
-          "text": "Kenttäviivan suuntaan eli siihen suuntaan, johon magneettikenttä osoittaa kompassin kohdalla.",
+          "text": "Kenttäviivan suuntaan eli siihen suuntaan, johon Maan magneettikenttä osoittaa kompassin kohdalla.",
           "correct": true,
-          "feedback": "Oikein. Kompassi on pieni magneetti, joka kääntyy kentän suuntaiseksi; siksi sillä voi tutkia kentän suuntaa (luku *Magneetit, magneettinen dipoli ja magneettikenttä*). Tällä tunnilla kompassi paljastaa myös virtajohtimen kentän."
+          "feedback": "Oikein. Kompassi on pieni magneetti, joka kääntyy kentän suuntaiseksi; siksi sillä voi tutkia kentän suuntaa (luku *Magneetit, magneettinen dipoli ja magneettikenttä*). Ilman virtaa neulaan vaikuttaa vain Maan kenttä. Tällä tunnilla kompassi paljastaa myös virtajohtimen kentän."
         },
         {
-          "text": "Aina kohti magneetin pohjoisnapaa, koska samannimiset navat vetävät toisiaan puoleensa.",
-          "feedback": "Samannimiset navat hylkivät toisiaan. Neulan pohjoispää kääntyy kenttäviivan suuntaan, ja magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavalta etelänavalle."
+          "text": "Johtimen suuntaan, koska kuparijohdin vetää neulan puoleensa.",
+          "feedback": "Kupari ei ole magneettista ainetta, joten se ei vedä neulaa puoleensa. Neulan pohjoispää kääntyy kenttäviivan suuntaan, ja ilman virtaa kompassin kohdalla on Maan kenttä (noin $50\\,\\mu\\text{T}$)."
         },
         {
-          "text": "Aina maantieteelliseen pohjoiseen, koska Maan kenttä on magneetin kenttää voimakkaampi.",
-          "feedback": "Magneetin lähellä sen kenttä on yleensä paljon Maan kenttää (noin $50\\,\\mu\\text{T}$) voimakkaampi, joten neula kääntyy magneetin kenttäviivan suuntaan."
+          "text": "Mihin tahansa suuntaan, koska ilman virtaa mikään kenttä ei ohjaa neulaa.",
+          "feedback": "Maan magneettikenttä on aina olemassa, noin $50\\,\\mu\\text{T}$ Suomessa. Neula kääntyy sen kenttäviivan suuntaan, ja siksi kompassi osoittaa pohjoiseen."
         },
         {
-          "text": "Kohtisuoraan kenttäviivoja vastaan, koska magneettinen voima on aina kohtisuorassa kenttää vastaan.",
+          "text": "Kohtisuoraan Maan kenttäviivoja vastaan, koska magneettinen voima on aina kohtisuorassa kenttää vastaan.",
           "feedback": "Kohtisuoruus koskee liikkuvaan varaukseen kohdistuvaa voimaa (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Kompassin neula on magneettinen dipoli, ja se kääntyy kentän suuntaiseksi."
         }
       ]

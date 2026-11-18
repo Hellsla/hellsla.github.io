@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 873d4f3ec6f72561
+CONTENT-HASH: 4f3e18beb1717ff9
 
 ## Blocking
 
 ## Polish
+- [Minor] Recap feedback — "29 430 N" uses a thin space group, correct; "9.81" decimal point is right for English. No change.
 
 ## Checked
-Delta (solutions.md paragraph breaks only). Opened:
-- review/shots/contact-6.png (exercises 5-4 to 5-16, solutions open): the nail model answer (5-6/5-7) now sits in three short paragraphs; the depth model answer of 5-8 and the principle of 5-9 read cleanly; no clipped formulas.
-- review/shots/fy3-4-example-390-1.png (pressure on a diver, stages 1-4 at 390 px): unchanged, display equations centred and legible.
-- review/shots/fy3-4-open-exercises-1280-3.png (opened solution 5-3, start of 5-4): the substitution rows, kPa and pascal units and the reasonableness block render correctly.
+batch delta review: opened my own captures of the Pohdinta recap card with feedback open, correct option at 390 px (G = mg chain aligned, one = per row, fits) and wrong option at 1280 px (inline formula, units upright); no clipping, feedback inside the card. Shipped captures lacked the feedback-open state. Hash unchanged at the end.

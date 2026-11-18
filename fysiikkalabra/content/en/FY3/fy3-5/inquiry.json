@@ -21,25 +21,25 @@
       "id": "pr-mikromalli",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the micro model of temperature",
-      "prompt": "In chapter *Thermodynamic system, state variables and temperature*, the temperature of a gas was described with a micro model. What happens to the particles of a gas when its temperature rises?",
+      "title": "Recap: work",
+      "prompt": "The plunger of a bicycle pump is pushed down with a force of $90\\,\\text{N}$ through a distance of $0.10\\,\\text{m}$. The force is in the direction of the motion. How large is the work done by the force?",
       "choices": [
         {
-          "text": "The particles expand and take up more space.",
-          "feedback": "In the micro model, the size of the particles does not change with temperature. Temperature tells you about the motion of the particles: their average kinetic energy."
+          "text": "$900\\,\\text{J}$",
+          "feedback": "You divided the force by the distance. Work is force *times* distance: $W = Fs = 9.0\\,\\text{J}$."
         },
         {
-          "text": "The average kinetic energy of the particles increases.",
+          "text": "$9.0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct: according to the micro model, temperature tells you the average kinetic energy of the particles. A higher temperature means faster-moving particles."
+          "feedback": "Correct: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\\\ &\\cdot 0.10\\,\\text{m} \\\\ &= 9.0\\,\\text{J} \\end{aligned}$$. The force and the motion are in the same direction, so the work is the product of the force and the distance."
         },
         {
-          "text": "More particles enter the gas.",
-          "feedback": "The amount of substance is a state variable of its own. The temperature can rise even though the number of particles stays the same; then the same particles move faster on average."
+          "text": "$90\\,\\text{J}$",
+          "feedback": "This is the numerical value of the force, not the work. Work is obtained by multiplying the force by the distance: $W = Fs = 9.0\\,\\text{J}$."
         },
         {
-          "text": "Each particle itself becomes hotter.",
-          "feedback": "A single particle does not have a temperature. Temperature describes the average kinetic energy of a large group of particles."
+          "text": "$90.1\\,\\text{J}$",
+          "feedback": "You added the numerical values of the force and the distance. Work is the *product* of the force and the distance: $W = Fs = 9.0\\,\\text{J}$."
         }
       ],
       "optional": true

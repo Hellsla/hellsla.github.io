@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2e26d69fe5be0d20
+CONTENT-HASH: 3c3268272cf8b312
 
 ## Blocking
 
 ## Polish
+- [Minor] Pohdinta, Kertaa-kortti: "$5{,}5\,\text{cm}$"-vaihtoehto on ensimmäisenä, oikea viimeisenä; vaihtoehtojen järjestys on kunnossa, ei muutosta.
 
 ## Checked
-- Round 1, delta (lesson.md, md-paragraphs: text cut into paragraphs, words unchanged). No 360 px captures exist (said once); the 360 px layout check is clean per the packet.
-- 390 px: fy3-1-example-390-1 (stages 1-5: Tunnetut / Kysytty, Periaate, Kaava, Yksikkömuunnokset, Sijoitus each their own paragraph, question last; formula boxes and aligned equals signs intact) and fy3-1-stage-sovella-390-1 (the same stages inside the Esimerkit stage, nothing clipped, no horizontal overflow).
-- 1280 px: fy3-1-open-exercises-1280-1 (solution open: Annettu/Kysytty/Periaate rows and boxed Sijoitus) and fy3-1-open-tarkista-1280-1 (Testaa ja arvioi: answers and feedback paragraphs, reading width and hierarchy fine).
-- Paragraph breaks sit at meaningful boundaries; the layout around them survived.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review: Pohdinta-kortti auki ja palaute näkyvissä (väärä vaihtoehto valittu, Vastaa painettu) 390 px ja 1280 px (oma Playwright-kaappaus preview-sivusta, koska valmiissa kuvissa palaute ei ole auki), lisäksi fy3-1-stage-herata-390 ja fy3-1-open-ennusta-1280. Yksiköt (cm, N) KaTeXina ohennetulla välilyönnillä, $3 \cdot 1{,}5\,\text{cm} = 4{,}5\,\text{cm}$ mahtuu riville, ei leikkautumista, palaute korttiin sisällä. Suomi sujuvaa. lesson-answers.py ei näy sivulla.

@@ -22,21 +22,21 @@
       "id": "pr-pumppu",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: why does a tyre get harder?",
-      "prompt": "You pump more air into a bicycle tyre. Why does the tyre get harder?",
+      "title": "Recap: the Celsius scale",
+      "prompt": "In the morning the air in a bicycle tyre is at $-6\\,{}^\\circ\\text{C}$ in the frost. In the afternoon the same bicycle has stood in the sun, and the air is at $14\\,{}^\\circ\\text{C}$. By how many degrees has the temperature of the air risen?",
       "choices": [
         {
-          "text": "More air gets into the tyre, and the air pushes harder on the walls of the tyre from the inside.",
+          "text": "$20\\,{}^\\circ\\text{C}$",
           "correct": true,
-          "feedback": "Exactly: when more air is brought into the same space, its pressure on the walls of the tyre increases. In the opening phenomenon, however, no air is added. Something else increases the pressure of the same air."
+          "feedback": "Correct: $$\\begin{aligned} \\Delta T &= 14\\,{}^\\circ\\text{C} - (-6\\,{}^\\circ\\text{C}) \\\\ &= 20\\,{}^\\circ\\text{C} \\end{aligned}$$. The zero of the Celsius scale is the freezing point of water. The morning reading is below zero, so the rise is first $6$ degrees up to zero and then $14$ degrees from zero to the afternoon reading."
         },
         {
-          "text": "The air is squeezed together in the tyre, so in the end there is less of it.",
-          "feedback": "Pumping increases the amount of air in the tyre; no air disappears anywhere. The air is squeezed into a smaller space, but that is exactly why its pressure in the tyre increases."
+          "text": "$8\\,{}^\\circ\\text{C}$",
+          "feedback": "You subtracted the numbers as if they were on the same side of zero: $14 - 6$. The morning temperature is *below* zero, so the rise is $6 + 14 = 20$ degrees."
         },
         {
-          "text": "The rubber tightens from the strokes of the pump, and the air has nothing to do with it.",
-          "feedback": "An empty tyre does not get harder even if you tap it. The hardness comes from the air inside the tyre, which pushes the rubber outwards."
+          "text": "$14\\,{}^\\circ\\text{C}$",
+          "feedback": "This is the afternoon temperature, not the change in temperature. The change is the final temperature minus the initial one, $14 - (-6) = 20$ degrees."
         }
       ],
       "optional": true

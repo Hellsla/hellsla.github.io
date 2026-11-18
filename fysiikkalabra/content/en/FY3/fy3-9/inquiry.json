@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: pressure and force",
-      "prompt": "The area of a syringe plunger is $3.0\\,\\text{cm}^2$, and the air pressure in the syringe is $100\\,\\text{kPa}$. How large a force does the air exert on the plunger?",
+      "prompt": "At the departure gate of an airport the air pressure is $101\\,\\text{kPa}$. The area of one side of a bag of crisps is $0.020\\,\\text{m}^2$. How large a force does the air exert on one side of the bag?",
       "choices": [
         {
-          "text": "$30\\,\\text{N}$",
+          "text": "about $2.0\\,\\text{kN}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3.0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$. Pressure is the force caused by particle collisions per unit area, and this lesson builds on it."
+          "feedback": "Correct: $$\\begin{aligned} F &= pA \\\\ &= 101\\,000\\,\\text{Pa} \\\\ &\\cdot 0.020\\,\\text{m}^2 \\\\ &= 2020\\,\\text{N} \\\\ &\\approx 2.0\\,\\text{kN} \\end{aligned}$$. Pressure is the force caused by particle collisions per unit area, and this lesson builds on it."
         },
         {
-          "text": "$300\\,\\text{N}$",
-          "feedback": "The conversion of square centimetres went wrong: $$\\begin{aligned} 1\\,\\text{cm}^2 &= (0.01\\,\\text{m})^2 \\\\ &= 10^{-4}\\,\\text{m}^2 \\end{aligned}$$, so $3.0\\,\\text{cm}^2 = 3.0 \\cdot 10^{-4}\\,\\text{m}^2$ and $F = pA = 30\\,\\text{N}$."
+          "text": "$2.0\\,\\text{N}$",
+          "feedback": "The pressure must be substituted in pascals: $101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$. Then $F = pA \\approx 2.0\\,\\text{kN}$."
         },
         {
-          "text": "$0.030\\,\\text{N}$",
-          "feedback": "The pressure must be substituted in pascals: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$. Then $$\\begin{aligned} F &= pA \\\\ &= 100\\,000\\,\\text{Pa} \\\\ &\\cdot 3.0 \\cdot 10^{-4}\\,\\text{m}^2 \\\\ &= 30\\,\\text{N} \\end{aligned}$$."
+          "text": "about $5.1\\,\\text{MN}$",
+          "feedback": "The pressure was divided by the area. Since $p = F/A$, the force is $F = pA$, not $p/A$. The result is about $2.0\\,\\text{kN}$."
         },
         {
-          "text": "$3.3 \\cdot 10^{8}$ N",
-          "feedback": "The pressure was divided by the area. Since $p = F/A$, the force is $F = pA$, not $p/A$. The result is $30\\,\\text{N}$."
+          "text": "$2.0\\,\\text{kPa}$",
+          "feedback": "The kilopascal is a unit of pressure. Force is measured in newtons: $F = pA \\approx 2.0\\,\\text{kN}$."
         }
       ],
       "optional": true

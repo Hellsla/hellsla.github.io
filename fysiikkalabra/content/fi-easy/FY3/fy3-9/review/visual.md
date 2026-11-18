@@ -1,18 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c5885e599ac7a2f9
+CONTENT-HASH: e1902a1b05ce6194
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Pohdinta card, correct feedback — the F = pA chain wraps with a leading "·" row on a phone (shared mathlayout style); readable.
 
 ## Checked
-- Delta (md-paragraphs, words unchanged): the worked-example stages were cut into paragraphs. There are no 360 px captures; judged at 390 px.
-- 390 px: fy3-9-example-390-1.png (stages 1-5: knowns and question as separate short paragraphs, display chains aligned at `=`) and fy3-9-example-390-2.png (stage 6-7: result, Järkevyys with two aligned blocks). No clipping, no horizontal overflow.
-- 390 px: fy3-9-stage-tarkista-390-1.png (Testaa ja arvioi cards intact).
-- 1280 px: fy3-9-open-tarkista-1280-1.png (solution open, feedback block in order), fy3-9-open-exercises-1280-5.png (solution open: Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys blocks), fy3-9-open-exercises-L3-1280-6.png (L3 solution, paragraph breaks in Mallivastaus b) read as separate paragraphs; calculation rows fine).
-- Layout survived the splits; units in LaTeX; decimal comma kept.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: Pohdinta card (Kertaa: paine ja voima) with feedback open at 390 px (correct answer) and stage-herata-390; "$101\,\text{kPa}$", "$0{,}020\,\text{m}^2$", "$2020\,\text{N} \approx 2{,}0\,\text{kN}$" render correctly, nothing clipped. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened (same shared card as fy3-1, 3, 7, 12 at 1280 px).

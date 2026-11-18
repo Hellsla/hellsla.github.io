@@ -32,6 +32,7 @@
     "resume_clear_confirm": "Tyhjennetäänkö eteneminen? Lukujen vaihemerkinnät ja Jatka-rivi poistetaan tästä selaimesta. Vastauksesi, ratkaisusi ja itsearviosi säilyvät.",
     "modules": "Moduulit",
     "reading_tips": "Kirjavinkit",
+    "media_nav": "Kuuntele ja katso",
     "booklets": "Vihkot",
     "teacher_nav": "Opettajalle",
     "reading_loan": "Lainattavissa Laurilta",
@@ -3182,6 +3183,17 @@
     "total_note": "Monivalinnat pisteyttää sivu, kun avaat niiden mallivastauksen. Muut pisteet ovat oma arviosi. Valinnaisista osista lasketaan parhaat tehtävät sääntöjen mukaan.",
     "revise": "Jos jokin tehtävä jäi heikoksi, palaa luvuille, jotka on mainittu tehtävän kohdassa Taidot luvuista."
   },
+  "media": {
+    "module": "Moduuli",
+    "type": "Tyyppi",
+    "type_podcast": "Podcast",
+    "type_documentary": "Dokumentti",
+    "type_video": "Opetusvideo",
+    "minutes": "{{n}} min",
+    "short": "Vain lyhyet (alle {{n}} min)",
+    "count": "Näytetään {{n}}",
+    "none": "Ei sisältöjä näillä valinnoilla"
+  },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
     "download": "Lataa PDF",
@@ -3217,79 +3229,118 @@
     "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
   },
   "guide": {
-    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08): build.py study_guide. steps[] gets the lesson's stage chips from inquiry.stage_* and lesson.exercises; ways[] are the options of the Jäikö tehtävä jumiin? map in the order icons draw, sketch, theory, hint, talk.",
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[] and help[] follow STUDY_TIPS and STUDY_HELP; fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
     "title": "Näin opit fysiikkaa",
-    "lead": "Fysiikkaa oppii kokeilemalla, pohtimalla, laskemalla ja keskustelemalla. Kaikkea ei tarvitse ymmärtää heti. Tärkeintä on yrittää itse ja harjoitella säännöllisesti.",
-    "description": "Näin opit fysiikkaa Ruukkilabrassa: mistä aloittaa, mitä tehdä, kun tehtävä ei etene, ja viisi vinkkiä fysiikan opiskeluun.",
-    "start_h": "Näin pääset alkuun",
+    "lead": "Fysiikkaa oppii kokeilemalla, pohtimalla, laskemalla ja keskustelemalla. Kaikkea ei tarvitse ymmärtää heti. Tärkeintä on yrittää itse, tarkistaa ja yrittää uudelleen.",
+    "description": "Näin opit fysiikkaa Ruukkilabrassa: luvun kuusi vaihetta, tehokkaat opiskelutavat, avun pyytäminen sekä palautteen ja itsearvioinnin hyödyntäminen.",
+    "path_h": "Näin Ruukkilabrassa opiskellaan",
+    "path_lead": "Jokainen luku etenee samoin. Numerot ovat luvun vaihepalkin numerot. Voit palata mihin tahansa vaiheeseen.",
+    "stage_no": "Luvun vaihe",
     "steps": [
       {
-        "title": "Tutki ja ennusta",
-        "text": "Aloita luvun pohdintakysymyksistä. Mieti, mitä arvelet tapahtuvan ja miksi. Kokeile simulaatioita ja vertaile havaintojasi ennusteisiin. Myös vääristä ennusteista oppii."
+        "title": "Pohdinta",
+        "text": "Tutustu ilmiöön, muista, mitä jo tiedät, ja katso, mitä luvussa opit."
       },
       {
-        "title": "Lue teoriaa ajatuksella",
-        "text": "Tutustu käsitteisiin, kuviin, kuvaajiin ja kaavoihin. Yritä ymmärtää, mitä ne tarkoittavat. Pysähdy miettimään, osaisitko selittää asian omin sanoin."
+        "title": "Ennusta",
+        "text": "Tee perusteltu ennuste ennen kokeilua. Myöhemmin vertaat sitä havaintoihisi."
       },
       {
-        "title": "Tee ohjatut esimerkit",
-        "text": "Kokeile ratkaista esimerkkitehtäviä itse. Hyödynnä vaiheittaista ohjausta ja vihjeitä. Mieti, miksi ratkaisu etenee juuri esitetyllä tavalla."
+        "title": "Tutki",
+        "text": "Kokeile tai tutki simulaatiota. Muuta yhtä asiaa kerrallaan, kirjaa havainnot ja tulkitse ne."
       },
       {
-        "title": "Harjoittele perustehtävillä",
-        "text": "Aloita tason 1 tehtävistä ja ydintehtävistä. Kun perusteet sujuvat, siirry vaativampiin. Kaikkia tehtäviä ei tarvitse tehdä kerralla."
+        "title": "Teoria",
+        "text": "Yhdistä havaintosi käsitteisiin, malleihin ja lakeihin. Mieti myös, missä malli toimii ja missä ei."
+      },
+      {
+        "title": "Esimerkit ja tehtävät",
+        "text": "Tutki malliratkaisuja ja harjoittele vihjeiden avulla. Siirry vähitellen ratkaisemaan itse."
+      },
+      {
+        "title": "Testaa ja arvioi",
+        "text": "Testaa osaamisesi, tunnista, mikä on vielä epäselvää, ja päätä, mitä harjoittelet seuraavaksi."
       }
     ],
-    "where": "Luvun vaiheet",
-    "stuck_h": "Jäikö tehtävä jumiin?",
-    "stuck_lead": "Vaikeisiin kohtiin törmää jokainen. Kokeile jotain näistä keinoista.",
-    "stuck_question": "Tehtävä ei etene?",
-    "stuck_note": "Keinoilla ei ole järjestystä: valitse tilanteeseen sopiva. Apua saa kysyä heti.",
-    "ways": [
-      {
-        "title": "Piirrä ja hahmottele",
-        "text": "Piirrä tilanteesta kuva. Mitä tiedät? Mitä pitäisi selvittää?"
-      },
-      {
-        "title": "Palaa teoriaan tai esimerkkiin",
-        "text": "Lue tarvittava kohta uudelleen tai tarkastele vastaavan ohjatun esimerkin ratkaisua."
-      },
-      {
-        "title": "Kokeile vihjettä",
-        "text": "Jos tehtävässä on vihjeitä, avaa yksi kerrallaan ja yritä jatkaa itse."
-      },
-      {
-        "title": "Keskustele ja kysy apua",
-        "text": "Juttele kaverin kanssa, verratkaa ratkaisujanne tai kysy opettajalta. Kerro, mitä olet jo yrittänyt."
-      }
-    ],
-    "retry_title": "Yritä uudelleen itse",
-    "retry_text": "Jos katsoit malliratkaisun, kokeile ratkaista tehtävä uudelleen ilman sitä.",
-    "core_h": "Ydinpolku ja valinnaiset tehtävät",
-    "core_text": "Etene luvun vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. Valinnainen-merkityt tehtävät tarjoavat lisäharjoittelua.",
-    "tips_h": "Viisi vinkkiä fysiikan opiskeluun",
+    "loop_title": "Takaisin harjoitteluun",
+    "loop_text": "Itsearvio ja palaute näyttävät, mitä kannattaa kerrata. Palaa teoriaan, esimerkkeihin tai tehtäviin ja yritä uudelleen.",
+    "core_text": "Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. Valinnainen-merkityt tehtävät tarjoavat lisäharjoittelua.",
+    "learn_h": "Näin opit tehokkaammin",
+    "learn_lead": "Mikään keino ei toimi kaikkialla yhtä hyvin. Aloittelija tarvitsee yleensä enemmän tukea: lue esimerkit tarkasti ja käytä vihjeitä. Kun osaat enemmän, vähennä tukea. Valitse aluksi yksi tai kaksi keinoa.",
     "tips": [
       {
-        "title": "Piirrä ja havainnollista",
-        "text": "Kuva tai kaavio auttaa ymmärtämään tilannetta. Piirrä esimerkiksi voimakuvio tai hahmottele kuvaaja."
+        "title": "Muista, ennen kuin katsot",
+        "text": "Kirjoita ensin ulkomuistista, mitä ymmärsit, ja tarkista vasta sitten. Se opettaa enemmän kuin pelkkä uudelleenlukeminen."
       },
       {
-        "title": "Selitä omin sanoin",
-        "text": "Mieti, miksi ilmiö tapahtuu, mitä kaavat tarkoittavat ja mitä laskemasi tulos kertoo."
+        "title": "Hajauta harjoittelu",
+        "text": "Harjoittele lyhyesti useana päivänä, älä kaikkea yhdellä kerralla. Palaa vanhoihin lukuihin viikon tai parin kuluttua."
       },
       {
-        "title": "Laske itse",
-        "text": "Laskemaan oppii laskemalla. Mieti ensin fysiikan periaate ja tarkista lopuksi yksiköt sekä tuloksen järkevyys."
+        "title": "Sekoita tehtäviä",
+        "text": "Kun perusasiat sujuvat, ota tehtäviä eri luvuista ja tehtävätyypeistä. Mieti jokaisessa ensin, mikä periaate sopii."
       },
       {
-        "title": "Opiskele yhdessä",
-        "text": "Keskustele kaverin kanssa, vertailkaa ratkaisutapoja ja selittäkää asioita toisillenne."
+        "title": "Opettele esimerkeistä ja vähennä tukea",
+        "text": "Käy malliratkaisu läpi vaihe vaiheelta ja kysy, miksi se etenee noin. Käytä sitten vihjeitä ja ratkaise lopuksi ilman niitä."
       },
       {
-        "title": "Kertaa säännöllisesti",
-        "text": "Palaa vanhoihin tehtäviin ja testaa osaamistasi ilman malliratkaisuja. Lyhyet ja toistuvat harjoittelukerrat auttavat muistamaan."
+        "title": "Selitä ja perustele",
+        "text": "Sano omin sanoin, miksi ilmiö tapahtuu ja miksi valitsit juuri tämän kaavan. Perustelu paljastaa, mikä on vielä epäselvää."
+      },
+      {
+        "title": "Tutki virheitäsi",
+        "text": "Älä vain korjaa vastausta. Selvitä, mistä virhe johtui: käsitteestä, kuvasta, laskusta vai yksiköstä. Kirjoita korjattu ajatus muistiin."
+      },
+      {
+        "title": "Tarkista fysiikan keinoin",
+        "text": "Piirrä voimakuvio tai hahmottele kuvaaja. Tarkista yksiköt ja mieti, onko tulos järkevä: ovatko suuruusluokka ja suunta uskottavia?"
+      },
+      {
+        "title": "Tee ratkaisusi näkyväksi",
+        "text": "Paperilla tai digitaalisesti: tee kuva, kirjaa annetut tiedot, periaate, välivaiheet ja vastaus yksikköineen sekä perustele päätelmäsi. Tärkeintä on, että ajattelusi näkyy."
       }
     ],
+    "help_h": "Kun tehtävä ei etene",
+    "help": [
+      {
+        "title": "Piirrä ja luettele",
+        "text": "Mitä tiedät? Mitä pitää selvittää? Jo kuva auttaa usein eteenpäin."
+      },
+      {
+        "title": "Palaa teoriaan, esimerkkiin tai vihjeeseen",
+        "text": "Lue tarvittava kohta uudelleen, katso vastaavan esimerkin ratkaisu tai avaa yksi vihje kerrallaan. Jos katsoit malliratkaisun, yritä sen jälkeen uudelleen ilman sitä."
+      },
+      {
+        "title": "Ratkaiskaa yhdessä",
+        "text": "Selittäkää vuorotellen ajatuksenne ja kysykää toisiltanne, miksi. Vertailkaa välivaiheita. Älkää kopioiko pelkkää vastausta."
+      },
+      {
+        "title": "Pyydä apua tarkasti",
+        "text": "Kerro, mitä pitää selvittää, mitä olet jo yrittänyt ja mihin kohtaan jäit jumiin. Silloin apua on helppo antaa. Apua saa kysyä heti."
+      }
+    ],
+    "feedback_h": "Näin hyödynnät palautetta ja arvioit osaamistasi",
+    "feedback_lead": "Palaute ja itsearvio kertovat, mitä kannattaa tehdä seuraavaksi.",
+    "fb_h": "Hyödynnä palautetta",
+    "fb_text": "Opettajasi voi antaa säännöllisesti palautetta tehtäviesi oikeellisuudesta ja ratkaisujen laadusta, esimerkiksi pisteinä.",
+    "fb_when": "Kun saat palautetta:",
+    "fb_list": [
+      "Selvitä, missä onnistuit.",
+      "Tarkastele virheitäsi ja puutteellisia perusteluja.",
+      "Korjaa ratkaisuja ja harjoittele tarvittaessa lisää.",
+      "Seuraa osaamisesi kehittymistä."
+    ],
+    "fb_note": "Yksittäinen pistemäärä ei kuvaa koko osaamistasi. Se kertoo vain, miten tietyt ratkaisut onnistuivat sillä kertaa.",
+    "sa_h": "Arvioi osaamistasi itse",
+    "sa_text": "Luvun viimeisessä vaiheessa vastaat ensin omin sanoin ja avaat vasta sitten mallivastauksen. Sen jälkeen merkitset, miten hyvin osasit: Harjoittelen vielä, Osaan osittain tai Osaan. Moduulin sivun Oma itsearvio -kohdassa näet luvun tavoitteiden arvioinnit.",
+    "sa_when": "Päätä sitten seuraava askel:",
+    "sa_list": [
+      "Osaan: siirry eteenpäin ja kertaa asia myöhemmin.",
+      "Osaan osittain: tee lisää tehtäviä ja kirjoita, mikä on vielä epävarmaa.",
+      "Harjoittelen vielä: palaa teoriaan ja esimerkkeihin tai pyydä apua."
+    ],
+    "sa_note": "Merkinnät tallentuvat tähän selaimeen. Ne auttavat sinua suunnittelemaan harjoitteluasi.",
     "closing": "Fysiikka ei ole pelkkää kaavojen muistamista. Tavoitteena on ymmärtää ilmiöitä ja oppia ratkaisemaan ongelmia.",
     "cta": "Siirry moduuleihin"
   }

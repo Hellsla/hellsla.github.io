@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 22d5a045d608c2a4
+CONTENT-HASH: 1e3401a595c10da7
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The unit symbol l is now \textsf{l} in the maths; check that it renders legibly next to the upright kPa on the phone.
 
 ## Checked
-- Delta 2026-11-15: balloon solution's reasonableness line now says "eli $720\,\text{kg}$" instead of "noin 700 kg"; 3360 − 2640 = 720, so the line now agrees with its own numbers.
-- The rest of the solution (n = pV/RT, m = nM, 2,64 · 10^3 kg, unit conversions, buoyancy-style check) is unchanged and still follows step by step.
+batch delta review: the piston-cylinder Boyle retrieval (helium, push the piston, T and n constant) is a clearer closed-system case than a squeezed balloon; the answer 150 kPa, the 200 kPa distractor feedback (ratio 3,0 : 2,0 = 1,5) and the link to the lesson's particle explanation hold together.

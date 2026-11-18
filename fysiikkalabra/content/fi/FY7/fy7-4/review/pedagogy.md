@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c2d11b5d1dc9750b
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 5de74d227b4171df
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- The retrieval lost its speaker-cable setting and is now a bare 1/r calculation; a link to the hook's wire in a magnet's field would tie it to the phenomenon again.
 ## Checked
-- Diff is only mu0 = -> \approx in the lesson text, worked example, inquiry calc text and solutions (2019 SI); nothing else changed.
-- The approx sign does not change any step or number; the worked steps read the same.
-- Language checked: fi. Hash c2d11b5d1dc9750b at start and end.
+batch delta review (round 2): retrieval retrieves B~1/r needed for the wire-force model; no Ennusta answer disclosed; distractors are real misconceptions.

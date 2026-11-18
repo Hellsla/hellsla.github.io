@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a7bd01372641e3fc
-SCOPE: delta added-exercise from 8b13af556f7aa21c base 8f23aa7ae3bd
+CONTENT-HASH: 448eb73bf6862c33
 
 ## Blocking
 
 ## Polish
-- solutions.md:197 (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k holds only for a magnet of the same strength and size; add "yhtä voimakas" so it does not read as a general mass rule.
+- solutions.md (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k still holds only for a magnet of the same strength and size (carried from the previous report) — add "yhtä voimakas".
 
 ## Checked
-- Delta: L2-09 and L3-06 added; hash identical at start and end.
-- brake-task: line F = 1,6 N·s/m · v, points within ±0,003 N. L2-09: P = Fv = 0,40 · 0,25 = 0,100 W = 100 mW; P = Fv as the rate of work into internal energy at constant speed is right.
-- L3-06: terminal speed from ΣF = 0, mg = kv: 0,4415 N / 1,6 = 0,276 m/s → 0,28 m/s; weight 0,44 N lies on the drawn line range (to 0,48 N). Air resistance negligible at this speed (fair simplification).
-- Both solutions complete, symbolic first, conversions shown.
+- Delta: L1-06 answer and correct option changed from "pitää vuon ennallaan" to "pyrkii pitämään vuon ennallaan"; hash identical at start and end.
+- The new wording is right physics: the induced field opposes the decrease of flux but does not keep it constant (the flux still falls); the old wording overstated Lenz's law (A-type error now removed).
+- `answer` matches the `correct: true` option text word for word; exactly one option is correct.
+- Distractors stay wrong for the right reasons (field vs. change of flux; flux increasing; ferromagnetism not needed); their feedback already used "pyrkii pitämään", so feedback, answer and solutions.md:47 now say the same.
+- Correct option's feedback: flux same direction as the magnet's field in the ring's centre, S pole facing the N pole, attraction opposes the receding motion: correct.
+- solutions.md diff is presentation only (paragraphs, reflow); no number, symbol or unit changed.

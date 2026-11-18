@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 90026d19b7fa9771
+CONTENT-HASH: fa506db425667c03
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY7/fy7-5/inquiry.json:18 (hook) — C. "Magneetti käämin vieressä ei tuottanut virtaa" means a magnet at rest, and the Finnish lesson text says the magnet was stationary. A student could still read it as "a magnet never gives a current", but the dynamo sentences before it, where the lamp lights only while the wheel turns, prevent that. No change is needed. If a word is wanted, "paikallaan oleva" names the condition without giving the answer away.
+- None.
 
 ## Checked
-- The hash is the same at the start and the end.
-- Delta: only the hook text changed. It no longer says "liikkuva magneetti tuotti". No number, symbol, question, option or feedback changed, so the earlier recomputation still stands.
-- Physics of the new sentence: a stationary magnet beside a coil induces no current (ΔΦ = 0). That is correct and agrees with the Ydinajatus and the Faraday figure.
-- History: in 1831 Faraday studied whether magnetism can produce a current. This is accurate.
-- The hook question still asks what decides whether a voltage appears. The answer (a change of flux) is now left to the student, and nothing later in the lesson relied on the removed clause.
-- The earlier Polish item on lamp brightness at speed still applies (C) and is unchanged.
+batch delta review: Pohdinta retrieval task kertaus-voima, option 1 text without the inline formula and option 3 feedback split into aligned rows; recomputed F = |q|vB = 1.602e-19 C x 2.0e6 m/s x 0.50 T = 1.60e-13 N (two significant figures from the data, v perpendicular to B as the prompt states), distractor 3.2e-13 N = |q|v with B omitted matches its feedback; same numbers, order and units as before the split; option 1 still the only correct one, its feedback still names F = |q|vB and the perpendicular direction; the compass-needle distractor unchanged.

@@ -21,21 +21,21 @@
       "id": "pr-lampo",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: quantity of heat",
-      "prompt": "A pan contains $0.50\\,\\text{kg}$ of water at $0\\,{}^\\circ\\text{C}$. What quantity of heat is needed to warm the water to $100\\,{}^\\circ\\text{C}$? The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "title": "Recap: heat and power",
+      "prompt": "A pot contains $0.40\\,\\text{kg}$ of water. The hotplate gives the water a power of $800\\,\\text{W}$, and all the energy goes into the water. How long does it take for the water to warm by $10\\,\\text{K}$? The specific heat capacity of water is $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
       "choices": [
         {
-          "text": "about $2.1\\,\\text{kJ}$",
-          "feedback": "This is the quantity of heat for warming by one kelvin. The temperature change is $\\Delta T = 100\\,\\text{K}$, so $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
+          "text": "$0.048\\,\\text{s}$",
+          "feedback": "You divided the power by the heat. Since $Q = Pt$, the time is $t = Q/P$, not $P/Q$. The result is about $21\\,\\text{s}$."
         },
         {
-          "text": "about $210\\,\\text{kJ}$",
+          "text": "about $21\\,\\text{s}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$. You can compare this figure with the changes of state in this lesson."
+          "feedback": "Correct: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0.40\\,\\text{kg} \\cdot 10\\,\\text{K} \\\\ &= 16\\,760\\,\\text{J} \\end{aligned}$$ The time follows from the power: $$\\begin{aligned} t &= \\frac{Q}{P} \\\\ &= \\frac{16\\,760\\,\\text{J}}{800\\,\\text{W}} \\\\ &\\approx 21\\,\\text{s} \\end{aligned}$$."
         },
         {
-          "text": "about $419\\,\\text{kJ}$",
-          "feedback": "The mass was left out. The specific heat capacity gives the quantity of heat per *kilogram*, so it is multiplied by the mass: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190 \\cdot 0.50 \\cdot 100\\,\\text{J} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
+          "text": "about $17\\,\\text{kJ}$",
+          "feedback": "You calculated the heat needed to warm the water, but the question asked for a time. The hotplate supplies $800\\,\\text{J}$ every second, so $16\\,760\\,\\text{J}$ takes $t = Q/P \\approx 21\\,\\text{s}$."
         }
       ],
       "optional": true
