@@ -124,11 +124,6 @@ Varattu: claude/8r-translation-choice
 en ja fi-easy saivat eron ja tiedekatselmointi ajettiin turhaan täytenä (fy8-14-L1-06, #692). Korjaus: choice-`answer` verrataan
 oikean vaihtoehdon indeksin kautta; luvut, kaavat ja asetukset pysyvät tiukkoina. Yhdistetään yksin.
 
-
-## 8t-jatko. FY6 Sovella-hionta (opettaja 2026-11-18)
-Varattu: claude/fy6-sovella-hionta
-Rajaus (opettaja 2026-11-18, koordinaattorin kautta): FY6 Sovella itsenäisesti -tehtävien (a) alakohdat, jotka paljastavat seuraavan alakohdan vastauksen, muotoillaan niin, ettei vastaus paljastu; (b) ajautuma ja idealisointi: tarkennetaan, missä malli on idealisoitu ja mitä ajautuma tarkoittaa. Ei uusia tehtävätyyppejä, ei kuvia, ei jaettuja tiedostoja, ei uusia käyttöliittymätekstejä. Mukana fy6-5 lesson.md:n kirjoitusvirhe "sisäenergiakseen" (fi, fi-easy). Kaikki kielet, `/practice`-putki.
-
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
