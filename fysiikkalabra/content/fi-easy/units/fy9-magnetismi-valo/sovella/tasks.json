@@ -1069,7 +1069,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$$\\begin{aligned}v &= \\dfrac{3,00 \\cdot 10^8\\,\\text{m/s}}{1,5} \\\\&= 2,0 \\cdot 10^8\\,\\text{m/s}\\end{aligned}$$ ja $t = \\dfrac{0{,}15\\,\\text{m}}{2{,}0 \\cdot 10^8\\,\\text{m/s}} = 7{,}5 \\cdot 10^{-10}\\,\\text{s}$"
+              "detail": "$$\\begin{aligned}v &= \\dfrac{3{,}00 \\cdot 10^8\\,\\text{m/s}}{1{,}5} \\\\&= 2{,}0 \\cdot 10^8\\,\\text{m/s}\\end{aligned}$$ ja $t = \\dfrac{0{,}15\\,\\text{m}}{2{,}0 \\cdot 10^8\\,\\text{m/s}} = 7{,}5 \\cdot 10^{-10}\\,\\text{s}$"
             },
             {
               "key": "units_precision",
@@ -1189,7 +1189,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned}\\lvert e_1 \\rvert &= 120 \\cdot \\dfrac{8,0 \\cdot 10^{-3}\\,\\text{Wb}}{0,40\\,\\text{s}} \\\\&= 2,4\\,\\text{V}\\end{aligned}$$ ja $\\lvert e_3 \\rvert = 120 \\cdot \\dfrac{3{,}0 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}20\\,\\text{s}} = 1{,}8\\,\\text{V}$"
+              "detail": "$$\\begin{aligned}\\lvert e_1 \\rvert &= 120 \\cdot \\dfrac{8{,}0 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}40\\,\\text{s}} \\\\&= 2{,}4\\,\\text{V}\\end{aligned}$$ ja $\\lvert e_3 \\rvert = 120 \\cdot \\dfrac{3{,}0 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}20\\,\\text{s}} = 1{,}8\\,\\text{V}$"
             },
             {
               "key": "units_precision",
@@ -1222,7 +1222,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned}W &= \\dfrac{(2,4\\,\\text{V})^2}{8,0\\,\\Omega} \\cdot 0,40\\,\\text{s} \\\\&+ \\dfrac{(1,8\\,\\text{V})^2}{8,0\\,\\Omega} \\cdot 0,20\\,\\text{s} \\\\&= 0,288\\,\\text{J} + 0,081\\,\\text{J} \\\\&\\approx 0,37\\,\\text{J}\\end{aligned}$$"
+              "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}288\\,\\text{J} + 0{,}081\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
             },
             {
               "key": "units_precision",

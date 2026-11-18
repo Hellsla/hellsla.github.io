@@ -538,9 +538,9 @@ Radan sädettä ei voi laskea tällä kurssilla käytetystä lausekkeesta $r = \
 **Muunnokset:** Ei tarvita: sinit ovat yksikköttömiä lukuja.
 **Sijoitus:** $$
 \begin{aligned}
-n &= \dfrac{0,89 - 0,44}{0,60 - 0,30} \\
-&= \dfrac{0,45}{0,30} \\
-&= 1,5
+n &= \dfrac{0{,}89 - 0{,}44}{0{,}60 - 0{,}30} \\
+&= \dfrac{0{,}45}{0{,}30} \\
+&= 1{,}5
 \end{aligned}
 $$
 **Vastaus:** $n = 1{,}5$ (ei yksikköä). Tuloksessa on kaksi merkitsevää numeroa, kuten kuvaajalta luetuissa arvoissa.
@@ -554,14 +554,14 @@ $$
 **Muunnokset:** $d = 15\,\text{cm} = 0{,}15\,\text{m}$
 **Sijoitus:** $$
 \begin{aligned}
-v &= \dfrac{3,00 \cdot 10^8\,\text{m/s}}{1,5} \\
-&= 2,0 \cdot 10^8\,\text{m/s}
+v &= \dfrac{3{,}00 \cdot 10^8\,\text{m/s}}{1{,}5} \\
+&= 2{,}0 \cdot 10^8\,\text{m/s}
 \end{aligned}
 $$ ja $$
 \begin{aligned}
-t &= \dfrac{0,15\,\text{m}}{2,0 \cdot 10^8\,\text{m/s}} \\
-&= 7,5 \cdot 10^{-10}\,\text{s} \\
-&= 0,75\,\text{ns}
+t &= \dfrac{0{,}15\,\text{m}}{2{,}0 \cdot 10^8\,\text{m/s}} \\
+&= 7{,}5 \cdot 10^{-10}\,\text{s} \\
+&= 0{,}75\,\text{ns}
 \end{aligned}
 $$
 **Vastaus:** Valon nopeus akryylissä on $v = 2{,}0 \cdot 10^8\,\text{m/s}$ ja kulkuaika levyn läpi $t = 0{,}75\,\text{ns}$. Tuloksissa on kaksi merkitsevää numeroa, kuten taitekertoimessa.
@@ -575,9 +575,9 @@ $$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
-\alpha_\text{r} &= \arcsin\dfrac{1,00}{1,5} \\
-&= \arcsin 0,667 \\
-&= 41,8^\circ
+\alpha_\text{r} &= \arcsin\dfrac{1{,}00}{1{,}5} \\
+&= \arcsin 0{,}667 \\
+&= 41{,}8^\circ
 \end{aligned}
 $$
 **Vastaus:** Rajakulma on $\alpha_\text{r} \approx 42^\circ$. Tuloksessa on kaksi merkitsevää numeroa, kuten taitekertoimessa $1{,}5$. Tätä suuremmilla tulokulmilla valo heijastuu kokonaan.
@@ -612,15 +612,15 @@ Yksittäisessä mittauspisteessä on kulmien lukemisen satunnaista virhettä, ja
 **Muunnokset:** $1\,\text{mWb} = 10^{-3}\,\text{Wb}$, joten $\lvert\Delta\Phi_1\rvert = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$ ja $\lvert\Delta\Phi_3\rvert = 3{,}0 \cdot 10^{-3}\,\text{Wb}$.
 **Sijoitus:** $$
 \begin{aligned}
-\lvert e_1 \rvert &= 120 \cdot \dfrac{8,0 \cdot 10^{-3}\,\text{Wb}}{0,40\,\text{s}} \\
-&= 120 \cdot 0,020\,\text{V} \\
-&= 2,4\,\text{V}
+\lvert e_1 \rvert &= 120 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} \\
+&= 120 \cdot 0{,}020\,\text{V} \\
+&= 2{,}4\,\text{V}
 \end{aligned}
 $$ ja $$
 \begin{aligned}
-\lvert e_3 \rvert &= 120 \cdot \dfrac{3,0 \cdot 10^{-3}\,\text{Wb}}{0,20\,\text{s}} \\
-&= 120 \cdot 0,015\,\text{V} \\
-&= 1,8\,\text{V}
+\lvert e_3 \rvert &= 120 \cdot \dfrac{3{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}20\,\text{s}} \\
+&= 120 \cdot 0{,}015\,\text{V} \\
+&= 1{,}8\,\text{V}
 \end{aligned}
 $$
 **Vastaus:** Aikavälillä $0$–$0{,}40\,\text{s}$ jännite on $2{,}4\,\text{V}$ ja aikavälillä $0{,}60$–$0{,}80\,\text{s}$ $1{,}8\,\text{V}$. Tuloksissa on kaksi merkitsevää numeroa, kuten kuvaajalta luetuissa vuon arvoissa.
@@ -634,11 +634,11 @@ $$
 **Muunnokset:** Ei tarvita: jännite on voltteina, resistanssi ohmeina ja aika sekunteina, joten tulos on joulea.
 **Sijoitus:** $$
 \begin{aligned}
-W &= \dfrac{(2,4\,\text{V})^2}{8,0\,\Omega} \cdot 0,40\,\text{s} \\
-&+ \dfrac{(1,8\,\text{V})^2}{8,0\,\Omega} \cdot 0,20\,\text{s} \\
-&= 0,72\,\text{W} \cdot 0,40\,\text{s} + 0,405\,\text{W} \cdot 0,20\,\text{s} \\
-&= 0,288\,\text{J} + 0,081\,\text{J} \\
-&= 0,369\,\text{J}
+W &= \dfrac{(2{,}4\,\text{V})^2}{8{,}0\,\Omega} \cdot 0{,}40\,\text{s} \\
+&+ \dfrac{(1{,}8\,\text{V})^2}{8{,}0\,\Omega} \cdot 0{,}20\,\text{s} \\
+&= 0{,}72\,\text{W} \cdot 0{,}40\,\text{s} + 0{,}405\,\text{W} \cdot 0{,}20\,\text{s} \\
+&= 0{,}288\,\text{J} + 0{,}081\,\text{J} \\
+&= 0{,}369\,\text{J}
 \end{aligned}
 $$
 **Vastaus:** Sähköenergiaa muuttuu sisäenergiaksi $W \approx 0{,}37\,\text{J}$. Tuloksessa on kaksi merkitsevää numeroa, kuten resistanssissa $8{,}0\,\Omega$.
