@@ -201,9 +201,21 @@ Kytketyt kappaleet käsitellään yksi kerrallaan. Kummallekin piirretään oma 
 
 Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline{T}_2$. Voimat vaikuttavat eri kappaleisiin, joten ne ovat eri voimakuvioissa. Kevyt lanka ja kitkaton väkipyörä vain siirtävät voiman ja kääntävät sen suunnan. Siksi voimien suuruudet ovat samat: $T_1 = T_2 = T$. Voimat $\overline{T}_1$ ja $\overline{T}_2$ eivät kuitenkaan ole voima ja vastavoima. Kun lanka vetää kärryä, kärry vetää lankaa takaisin yhtä suurella voimalla. Tämä voima vaikuttaa lankaan, joten se ei ole kärryn voimakuviossa.
 
+```pysahdy
+Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline{T}_2$. Miksi nämä kaksi voimaa eivät ole voima ja vastavoima?
+---
+Ne vaikuttavat kahteen eri kappaleeseen, kärryyn ja punnukseen. Voiman $\overline{T}_1$ vastavoima on voima, jolla kärry vetää lankaa. Se vaikuttaa lankaan.
+```
+
 <figure class="unit-photo"><img src="pics/fy4/inclined-plane-apparatus.webp" alt="Vanha koelaite: rulla kaltevalla tasolla ja riippuva punnus, joita yhdistää naru."><figcaption>Vanha kaltevan tason koelaite koulumuseossa Saksassa. Rulla ja riippuva punnus on yhdistetty narulla. Naru kulkee pyörän yli.</figcaption></figure>
 
 Kun punnus kiihtyy alaspäin, langan jännitysvoima on pienempi kuin punnuksen paino. Kiihtyvyys on alas, joten punnuksen kokonaisvoima osoittaa alas ja $G_2 > T$. Jos $T$ olisi yhtä suuri kuin $G_2$, punnukseen vaikuttava kokonaisvoima olisi nolla. Silloin punnus ei lähtisi liikkeelle. Punnus laskee siksi hitaammin kuin vapaasti putoava kappale. Kiihtyvyys $a = \tfrac{m_2 g}{m_1 + m_2}$ on pienempi kuin $g$, koska punnuksen paino kiihdyttää myös kärryä.
+
+```pysahdy
+Kärryn massa kasvaa, mutta punnus pysyy samana. Miten punnuksen kiihtyvyys muuttuu ja miksi?
+---
+Kiihtyvyys pienenee. Sama paino $m_2 g$ kiihdyttää nyt suurempaa kokonaismassaa $m_1 + m_2$.
+```
 
 ## Kaava: Kytkettyjen kappaleiden liikeyhtälöt
 Jokaiselle kappaleelle kirjoitetaan oma liikeyhtälö $\Sigma F = ma$. Positiivinen suunta valitaan kullekin kappaleelle erikseen kiihtyvyyden suuntaan: kärryllä oikealle ja punnuksella alas. Lanka ei veny, joten kummankin kappaleen kiihtyvyys on yhtä suuri, $a$. Kärryn ja punnuksen yhtälöt ovat

@@ -201,9 +201,21 @@ Connected bodies are treated one at a time. Each gets its own free-body diagram 
 
 The string pulls the cart with the force $\overline{T}_1$ and the hanging mass with the force $\overline{T}_2$. They act on different bodies, so they appear in different free-body diagrams. A light string and a frictionless pulley only pass the force on and turn its direction, so the magnitudes are equal: $T_1 = T_2 = T$. The forces $\overline{T}_1$ and $\overline{T}_2$ are nevertheless not an action–reaction pair. When the string pulls the cart, the cart pulls the string back with an equally large force, and that force acts on the string and is not in the cart's free-body diagram.
 
+```pysahdy
+The string pulls the cart with the force $\overline{T}_1$ and the hanging mass with the force $\overline{T}_2$. Why are these two forces not a force and its reaction?
+---
+They act on two different bodies, the cart and the hanging mass. The reaction to $\overline{T}_1$ is the force the cart exerts on the string, and it acts on the string.
+```
+
 <figure class="unit-photo"><img src="pics/fy4/inclined-plane-apparatus.webp" alt="An old inclined plane apparatus: a small roller on a sloping bar and a hanging weight are connected by a string over a pulley."><figcaption>An inclined plane teaching apparatus from the early 20th century in the school museum of Bremerhaven, Germany. A roller on the incline and a hanging weight are connected by a string that runs over a pulley.</figcaption></figure>
 
 When the hanging mass accelerates downward, the tension in the string is smaller than its weight. The acceleration is downward, so the net force on the mass points down and $G_2 > T$. If $T$ were equal to $G_2$, the net force on the mass would be zero and it would not start to move. The mass therefore descends more slowly than a freely falling object: the acceleration $a = \tfrac{m_2 g}{m_1 + m_2}$ is smaller than $g$, because the weight of the hanging mass also accelerates the cart.
+
+```pysahdy
+The mass of the cart increases while the hanging mass stays the same. How does the acceleration of the hanging mass change, and why?
+---
+It decreases. The same weight $m_2 g$ now accelerates a larger total mass $m_1 + m_2$.
+```
 
 ## Formula: Equations of motion for connected bodies
 Each body gets its own equation of motion $\Sigma F = ma$. The positive direction is chosen separately for each body along its acceleration: to the right for the cart and down for the hanging mass. Because the string does not stretch, both bodies have the same acceleration magnitude $a$. The equations of the cart and the hanging mass are
