@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 7e098a62279429a4
-SCOPE: delta (numbers) from bdc81a30bee53f41, round 2
+SCOPE: delta added-exercise from 9b35050b83c355e9 base 110ed2029320
 
 ## Blocking
 (none)
