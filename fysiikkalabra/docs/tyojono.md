@@ -114,13 +114,6 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
-## 8t. Pienet korjaukset (koordinaattori 2026-11-18)
-Varattu: claude/8t-pienet-korjaukset
-(a) Epädeterministinen build: `site/fy9-tasavirta*.html` (fi, en, fi-easy) muuttuu joka rakennuksella; etsi syy, korjaa, testi.
-(b) Käsitekortti Coulombin laki (`kortit/*/fy6.json`): kaavaan itseisarvo $F = k\cdot|q_1q_2|/r^2$ (fi, fi-easy, en).
-(c) Kohdan 18 FY6-rivit (`docs/physics-phrases-known/FY6.tsv`, P1–P9) korjataan ja poistetaan; samat virkkeet en ja fi-easy;
-tiedekatselmointi vain suomeksi, yksi katselmoija, kaikki rivit yhdessä (delta). Poistuu jonosta, kun PR on valmis.
-
 ## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
 Varattu: claude/reviews-translation-units
 Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
@@ -164,7 +157,7 @@ Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
-Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY6, FY9): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
+Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY9; FY6 tehty §8t): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
 Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien tarkistus hyväksyy poikkeaman molempiin suuntiin.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
