@@ -1,5 +1,5 @@
 {
-  "intro": "Six problems in the style of the matriculation exam bring together the skills of measuring, uncertainty and graphs. Decide yourself how the data should be presented and what is read from the graph, and justify the precision of the result. The last problem combines measuring with the ideal gas law.",
+  "intro": "Eight problems in the style of the matriculation exam bring together the skills of measuring, uncertainty and graphs. Decide yourself how the data should be presented and what is read from the graph, and justify the precision of the result. The sixth problem combines measuring with the ideal gas law. Invented example data: the numbers are calculated from a model, and small random variation has been added to them, as in a measurement.",
   "tasks": [
     {
       "id": "fy9-mittaaminen-s1",
@@ -813,6 +813,307 @@
         "graph": "fy1-4",
         "concept": "fy3-9",
         "transfer": "fy3-10"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s7",
+      "title": "An aluminium rod beside a ruler",
+      "source": "example",
+      "source_note": "Invented example data: the numbers are calculated from a model, and small random variation has been added to them, as in a measurement.",
+      "skills": [
+        "fy1-2",
+        "fy1-3",
+        "fy1-7"
+      ],
+      "figure": "fy1-2/ruler-read",
+      "text": "A student examines a turned rod that she believes to be aluminium. In the picture the rod lies beside a ruler whose smallest scale division is $1\\,\\text{mm}$. She measures the diameter of the rod with a calliper, $d = 8.0\\,\\text{mm}$ (resolution of the calliper $0.1\\,\\text{mm}$), and the mass with a balance, $m = 15.7\\,\\text{g}$ (resolution of the balance $0.1\\,\\text{g}$). The rod is a cylinder of constant thickness. The uncertainty of each reading is estimated as half of the resolution. Investigate whether the rod can be aluminium.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the length of the rod from the picture. Why is the reading of the right-hand end alone not the length?",
+          "answer": {
+            "value": 11.6,
+            "unit": "cm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The ends are read from the millimetre scale: the left end $2.0\\,\\text{cm}$ and the right end $13.6\\,\\text{cm}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$l = x_\\text{right} - x_\\text{left} = 13.6\\,\\text{cm} - 2.0\\,\\text{cm} = 11.6\\,\\text{cm}$"
+            },
+            {
+              "text": "Explains that the rod does not start at the zero of the ruler: the right-hand reading $13.6\\,\\text{cm}$ alone would be $2.0\\,\\text{cm}$ too large.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Estimate the uncertainty of the length and give the length with its uncertainty. What is the relative uncertainty?",
+          "answer": {
+            "value": 0.1,
+            "unit": "cm",
+            "tolerance": 0.1
+          },
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Each reading is uncertain by $0.5\\,\\text{mm} = 0.05\\,\\text{cm}$, because the scale division is $1\\,\\text{mm}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The length is the difference of two readings, so the uncertainties of the readings add: $\\Delta l = 0.05\\,\\text{cm} + 0.05\\,\\text{cm} = 0.10\\,\\text{cm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$l = (11.6 \\pm 0.1)\\,\\text{cm}$ and the relative uncertainty $\\tfrac{0.10}{11.6} \\approx 0.9\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the density of the rod with its uncertainty in $\\text{kg/m}^3$. Which of the three measurements ($m$, $d$, $l$) affects the uncertainty of the result the most?",
+          "answer": {
+            "value": 2690,
+            "unit": "kg/m³",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\rho = \\tfrac{m}{V}$ and the volume of a cylinder $V = \\tfrac{\\pi d^2}{4}\\,l$, so $\\rho = \\dfrac{4m}{\\pi d^2 l}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d = 8.0\\,\\text{mm} = 0.80\\,\\text{cm}$ and $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V \\approx 5.83\\,\\text{cm}^3$ and $\\rho \\approx 2.69\\,\\text{g/cm}^3 = 2.69 \\cdot 10^3\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\tfrac{\\Delta\\rho}{\\rho} = \\tfrac{\\Delta m}{m} + 2\\,\\tfrac{\\Delta d}{d} + \\tfrac{\\Delta l}{l} \\approx 0.3\\,\\% + 1.25\\,\\% + 0.9\\,\\% \\approx 2.4\\,\\%$, so $\\Delta\\rho \\approx 0.07 \\cdot 10^3\\,\\text{kg/m}^3$ and $\\rho = (2.69 \\pm 0.07) \\cdot 10^3\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The diameter affects it the most: its relative uncertainty is the largest of the readings' ($0.6\\,\\%$) because the resolution $0.1\\,\\text{mm}$ is large compared with $8.0\\,\\text{mm}$, and the square doubles it ($1.25\\,\\%$)."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Does the result agree with the table value of aluminium, $2.70 \\cdot 10^3\\,\\text{kg/m}^3$? Can the rod be concluded to be aluminium on the density alone? Justify.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The interval of the result is $2.63 \\cdot 10^3 \\ldots 2.76 \\cdot 10^3\\,\\text{kg/m}^3$ and the table value is inside it; the difference is only about $7\\,\\text{kg/m}^3$, much smaller than the uncertainty."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The result agrees with the density of aluminium within the uncertainty; it does not contradict the claim that the rod is aluminium."
+            },
+            {
+              "text": "Density alone does not prove the material: other materials or alloys can have almost the same density, so the conclusion is \"agrees with aluminium\", not \"is aluminium\".",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "For example chamfered or rounded ends of the rod, a zero error of the calliper, or cavities and alloying elements inside the rod affect the result; the direction is justified."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy1-7",
+        "experiment": "fy1-3",
+        "communication": "fy1-3",
+        "graph": "fy1-4",
+        "concept": "fy1-2"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s8",
+      "title": "A pendulum and the acceleration of free fall",
+      "source": "example",
+      "source_note": "Invented example data: the numbers are calculated from a model, and small random variation has been added to them, as in a measurement.",
+      "skills": [
+        "fy1-3",
+        "fy5-9",
+        "fy1-6"
+      ],
+      "figure": "fy1-3/pendulum-dots",
+      "text": "A student measures the acceleration of free fall with a pendulum. The length of the pendulum from the point of suspension to the centre of the bob is $l = 40.0\\,\\text{cm}$, and the uncertainty of the length is estimated as $0.2\\,\\text{cm}$. With a stopwatch she measures the time $t$ of ten full swings five times; the measurements are shown as dots in the picture. The angle of swing is small, below $10^\\circ$, and then the period of the pendulum is $T = 2\\pi\\sqrt{l/g}$. Find out whether the result of the measurement agrees with $9.81\\,\\text{m/s}^2$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Read the times of ten swings from the picture and calculate their mean. Estimate the uncertainty of the time as half of the range.",
+          "answer": [
+            {
+              "name": "mean",
+              "value": 12.56,
+              "unit": "s",
+              "tolerance": 0.01
+            },
+            {
+              "name": "spread",
+              "value": 0.35,
+              "unit": "s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The dots are read from the time axis: $12.2\\,\\text{s}$, $12.4\\,\\text{s}$, $12.6\\,\\text{s}$, $12.7\\,\\text{s}$ and $12.9\\,\\text{s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\bar{t} = \\tfrac{12.2 + 12.4 + 12.6 + 12.7 + 12.9}{5}\\,\\text{s} = 12.56\\,\\text{s}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\Delta t = \\tfrac{t_\\text{max} - t_\\text{min}}{2} = \\tfrac{12.9\\,\\text{s} - 12.2\\,\\text{s}}{2} = 0.35\\,\\text{s}$, so $t = (12.56 \\pm 0.35)\\,\\text{s}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the period $T$ of the pendulum with its uncertainty. Why is it worthwhile to time ten swings instead of one?",
+          "answer": [
+            {
+              "name": "T",
+              "value": 1.256,
+              "unit": "s",
+              "tolerance": 0.01
+            },
+            {
+              "name": "dT",
+              "value": 0.035,
+              "unit": "s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = \\tfrac{t}{10}$ and likewise $\\Delta T = \\tfrac{\\Delta t}{10}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = 1.256\\,\\text{s}$ and $\\Delta T = 0.035\\,\\text{s}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T = (1.26 \\pm 0.04)\\,\\text{s}$; the relative uncertainty $\\approx 2.8\\,\\%$."
+            },
+            {
+              "text": "Justifies: because of pressing the watch, the uncertainty of the timing is about $0.35\\,\\text{s}$ regardless of the time measured. For one swing (about $1.26\\,\\text{s}$) it would be about $28\\,\\%$, for ten about $2.8\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Solve $g$ from the formula of the period and calculate its value with its uncertainty. Use the uncertainty of the length, $0.2\\,\\text{cm}$.",
+          "answer": {
+            "value": 10.0,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = 2\\pi\\sqrt{\\tfrac{l}{g}}$, from which $g = \\dfrac{4\\pi^2 l}{T^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$l = 0.400\\,\\text{m}$; $g = \\tfrac{4\\pi^2 \\cdot 0.400\\,\\text{m}}{(1.256\\,\\text{s})^2} \\approx 10.0\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "$\\tfrac{\\Delta g}{g} = 2\\,\\tfrac{\\Delta T}{T} + \\tfrac{\\Delta l}{l} \\approx 5.6\\,\\% + 0.5\\,\\% \\approx 6.1\\,\\%$; the period is in the second power, so its relative uncertainty doubles. $\\Delta g \\approx 0.6\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g = (10.0 \\pm 0.6)\\,\\text{m/s}^2$: the uncertainty with one digit and the result to the same decimal."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Does the result agree with $9.81\\,\\text{m/s}^2$? Why must the angle of swing be small? Suggest one improvement that reduces the uncertainty and justify what it affects.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The interval $9.4 \\ldots 10.6\\,\\text{m/s}^2$ contains $9.81\\,\\text{m/s}^2$; the difference $0.2\\,\\text{m/s}^2$ is smaller than the uncertainty, so the result agrees within the accuracy of the measurement."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "The formula $T = 2\\pi\\sqrt{l/g}$ holds only for small angles (below about $10^\\circ$). At a large angle the period is longer, so $g$ would come out too small."
+            },
+            {
+              "text": "The improvement is aimed at the timing, because its share is the largest ($5.6\\,\\%$ vs $0.5\\,\\%$): for example timing $30$ swings or a light gate. For $30$ swings $\\Delta T/T \\approx 0.9\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy5-9",
+        "experiment": "fy1-3",
+        "communication": "fy1-3",
+        "graph": "fy1-4",
+        "transfer": "fy5-9"
       }
     }
   ]

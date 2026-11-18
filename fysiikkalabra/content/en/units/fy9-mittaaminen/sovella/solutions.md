@@ -662,3 +662,267 @@ $$.
 - In part b, a $(\tfrac{1}{V}, p)$ graph is drawn and the line is forced through the origin; the air space of the tube then does not show.
 - In part c, the temperature is substituted in degrees Celsius, or the volume in millilitres and the pressure in kilopascals without conversion, so the amount of substance is wrong by a factor of a thousand.
 - In part d, assumptions are listed without saying in which direction they would change the result.
+
+## fy9-mittaaminen-s7
+
+### a)
+**Given:** the ruler of the picture, whose smallest scale division is $1\,\text{mm}$; the left end of the rod is at $2.0\,\text{cm}$ and the right end at $13.6\,\text{cm}$
+**Find:** the length $l$ of the rod
+**Principle:** The length is the difference of the positions of the ends of the rod on the ruler. The rod does not start at the zero of the ruler, so the reading of the right-hand end alone is not the length (chapter *Quantities, units and the SI system*).
+**Reading the graph:** The ends of the rod are read from the millimetre scale: the left end $2.0\,\text{cm}$ and the right end $13.6\,\text{cm}$.
+**Formula:** $l = x_\text{right} - x_\text{left}$
+**Conversions:** None needed: both readings are in centimetres.
+**Substitution:** $$
+\begin{aligned}
+l &= 13.6\,\text{cm} - 2.0\,\text{cm} \\
+&= 11.6\,\text{cm}
+\end{aligned}
+$$
+**Answer:** $l = 11.6\,\text{cm}$, three significant figures like the values read.
+**Reasonableness:** The length of the rod is smaller than the $15\,\text{cm}$ of the ruler. If only the right-hand reading $13.6\,\text{cm}$ were taken as the length, it would be $2.0\,\text{cm}$, about $17\,\%$, too large, because the rod does not start at the zero of the ruler.
+
+### b)
+**Given:** the readings $2.0\,\text{cm}$ and $13.6\,\text{cm}$, scale division $1\,\text{mm}$; $l = 11.6\,\text{cm}$ from part a
+**Find:** the uncertainty $\Delta l$ of the length, the length with its uncertainty and the relative uncertainty
+**Principle:** The uncertainty of one reading is half of the scale division. The length is the difference of two readings, so in the worst case both readings are wrong in opposite directions and the uncertainties add.
+**Formula:** $\Delta l = \Delta x_\text{right} + \Delta x_\text{left}$ and the relative uncertainty $\dfrac{\Delta l}{l}$
+**Conversions:** $1\,\text{mm} = 0.1\,\text{cm}$, so the uncertainty of a reading, $0.5\,\text{mm}$, is $0.05\,\text{cm}$.
+**Substitution:** $$
+\begin{aligned}
+\Delta x &= 0.5\,\text{mm} \\
+&= 0.5 \cdot 0.1\,\text{cm} \\
+&= 0.05\,\text{cm}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta l &= 0.05\,\text{cm} + 0.05\,\text{cm} \\
+&= 0.10\,\text{cm}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta l}{l} &= \dfrac{0.10\,\text{cm}}{11.6\,\text{cm}} \\
+&= 0.0086 \\
+&\approx 0.9\,\%
+\end{aligned}
+$$
+**Answer:** $l = (11.6 \pm 0.1)\,\text{cm}$ and the relative uncertainty about $0.9\,\%$. The uncertainty is given with one digit and the length to the same decimal.
+**Reasonableness:** An uncertainty of $1\,\text{mm}$ equals one small division of the ruler, which fits reading the ends by eye from the scale. The uncertainty of the difference of two readings is larger than that of one reading ($0.5\,\text{mm}$).
+
+### c)
+**Given:** $m = (15.7 \pm 0.05)\,\text{g}$, $d = (8.0 \pm 0.05)\,\text{mm}$ and $l = (11.6 \pm 0.1)\,\text{cm}$; the uncertainty is half of the resolution
+**Find:** the density $\rho$ with its uncertainty in $\text{kg/m}^3$ and the measurement that affects the uncertainty the most
+**Principle:** Density is mass divided by volume (chapter *Density*). The rod is a cylinder, so the volume is the cross-sectional area times the length. When the result is a product or a quotient, the relative uncertainties add, and the power $d^2$ doubles the relative uncertainty of the diameter.
+**Formula:** $\rho = \dfrac{m}{V}$ and $V = \dfrac{\pi d^2}{4}\,l$, so $\rho = \dfrac{4m}{\pi d^2 l}$. Uncertainty: $\dfrac{\Delta\rho}{\rho} = \dfrac{\Delta m}{m} + 2\,\dfrac{\Delta d}{d} + \dfrac{\Delta l}{l}$
+**Conversions:** $d = 8.0\,\text{mm} = 0.80\,\text{cm}$ and $\Delta d = 0.05\,\text{mm}$. Unit of density: $1\,\text{g} = 10^{-3}\,\text{kg}$ and $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$, so $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
+**Substitution:** Volume: $$
+\begin{aligned}
+V &= \dfrac{\pi d^2}{4}\,l \\
+&= \dfrac{\pi \cdot (0.80\,\text{cm})^2}{4} \cdot 11.6\,\text{cm} \\
+&= 0.503\,\text{cm}^2 \cdot 11.6\,\text{cm} \\
+&= 5.83\,\text{cm}^3
+\end{aligned}
+$$ Density: $$
+\begin{aligned}
+\rho &= \dfrac{m}{V} \\
+&= \dfrac{15.7\,\text{g}}{5.83\,\text{cm}^3} \\
+&= 2.69\,\text{g/cm}^3 \\
+&= 2.69 \cdot \dfrac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} \\
+&= 2.69 \cdot 10^3\,\text{kg/m}^3
+\end{aligned}
+$$ Relative uncertainties: $$
+\begin{aligned}
+\dfrac{\Delta m}{m} &= \dfrac{0.05\,\text{g}}{15.7\,\text{g}} \\
+&= 0.0032
+\end{aligned}
+$$ $$
+\begin{aligned}
+2\,\dfrac{\Delta d}{d} &= 2 \cdot \dfrac{0.05\,\text{mm}}{8.0\,\text{mm}} \\
+&= 0.0125
+\end{aligned}
+$$ and for the length $\dfrac{\Delta l}{l} = 0.0086$ from part b. Together: $$
+\begin{aligned}
+\dfrac{\Delta\rho}{\rho} &= 0.0032 \\
+&\quad + 0.0125 \\
+&\quad + 0.0086 \\
+&= 0.0243 \\
+&\approx 2.4\,\%
+\end{aligned}
+$$ Uncertainty: $$
+\begin{aligned}
+\Delta\rho &= 0.0243 \cdot 2693\,\text{kg/m}^3 \\
+&= 65\,\text{kg/m}^3
+\end{aligned}
+$$
+**Answer:** $\rho = (2.69 \pm 0.07) \cdot 10^3\,\text{kg/m}^3$. The uncertainty is rounded to one digit ($65 \to 0.07 \cdot 10^3$) and the result to the same decimal. The diameter affects the uncertainty the most: its share is $1.25\,\%$, that of the length $0.9\,\%$ and that of the mass $0.3\,\%$. The diameter dominates because the resolution $0.1\,\text{mm}$ is large compared with $8.0\,\text{mm}$ (relative uncertainty $0.6\,\%$) and the square doubles it; without the square the length would be the largest.
+**Reasonableness:** A density of $2.7\,\text{g/cm}^3$ means that the mass of the rod is $2.7$ times that of the same volume of water (the density of water is $1.0 \cdot 10^3\,\text{kg/m}^3$), which fits a light metal. The total uncertainty $2.4\,\%$ is of the same order as the single shares.
+
+### d)
+**Find:** whether the result agrees with the table value of aluminium and whether the rod can be concluded to be aluminium from the density
+**Principle:** The result and the table value agree if the table value is inside the uncertainty interval of the result. The mere difference of the numbers tells nothing without the uncertainty.
+**Model answer:** The interval of the result is $$
+\begin{aligned}
+\rho_\text{min} &= 2693\,\text{kg/m}^3 \\
+&\quad - 65\,\text{kg/m}^3 \\
+&= 2628\,\text{kg/m}^3 \\
+\rho_\text{max} &= 2693\,\text{kg/m}^3 \\
+&\quad + 65\,\text{kg/m}^3 \\
+&= 2758\,\text{kg/m}^3
+\end{aligned}
+$$ that is $2.63 \cdot 10^3 \ldots 2.76 \cdot 10^3\,\text{kg/m}^3$. The table value of aluminium is $2.70 \cdot 10^3\,\text{kg/m}^3$ ([MAFY table](https://mafytaulukot.fi/d67c966e-4e50-48d3-beae-9ae0a5f7838c/fi/1787666412/theory.html), densities at $20\,{}^\circ\text{C}$), and it is inside the interval. The difference is $$
+\begin{aligned}
+\text{ero} &= 2700\,\text{kg/m}^3 \\
+&\quad - 2693\,\text{kg/m}^3 \\
+&= 7\,\text{kg/m}^3
+\end{aligned}
+$$ that is much smaller than the uncertainty $65\,\text{kg/m}^3$. The result therefore agrees with the density of aluminium within the accuracy of the measurement, and it does not contradict the claim that the rod is aluminium. Density alone does not prove the material, however: other materials or alloys can have almost the same density, so the correct conclusion is "the rod can be aluminium". The result is affected for example by chamfered or rounded ends of the rod, which reduce the true volume and raise the density, and by a zero error of the calliper. Cavities inside the rod would, in turn, lower the measured density.
+
+### Yleisiä virheitä
+- In part a the right-hand reading $13.6\,\text{cm}$ is taken as the length, although the rod starts at $2.0\,\text{cm}$.
+- In part b only the uncertainty of one reading, $0.5\,\text{mm}$, is used as the uncertainty of the length, although the difference contains two readings.
+- In part c the diameter is substituted in millimetres but the length in centimetres, or the diameter is used as the radius in $\pi d^2/4$.
+- In part c the relative uncertainty of the diameter is calculated without the square ($0.6\,\%$ instead of $1.25\,\%$), so the length seems to give the largest uncertainty.
+- In part d the comparison is made by looking at the numbers only ("$2.69$ is not $2.70$") without considering the uncertainty.
+
+### Hyväksytään myös
+- In part b the uncertainties of independent readings can be combined in quadrature: $\Delta l = \sqrt{(0.05)^2 + (0.05)^2}\,\text{cm} = 0.07\,\text{cm}$. Then $l = (11.6 \pm 0.1)\,\text{cm}$ rounds in the same way.
+- In part c the density $2.69\,\text{g/cm}^3$ and the uncertainty $0.07\,\text{g/cm}^3$ in the unit $\text{g/cm}^3$ are accepted when the conversion or the unit is written down.
+
+## fy9-mittaaminen-s8
+
+### a)
+**Given:** five measurements from the picture: $12.2\,\text{s}$, $12.4\,\text{s}$, $12.6\,\text{s}$, $12.7\,\text{s}$ and $12.9\,\text{s}$; the time of ten swings
+**Find:** the mean $\bar{t}$ of the time of ten swings and its uncertainty $\Delta t$
+**Principle:** From repeated measurements the best estimate is the mean, and the size of the random variation is estimated as half of the range (chapter *Measuring and the reliability of measurement*).
+**Reading the graph:** The dots are read from the time axis, where the vertical lines are $0.1\,\text{s}$ apart: $12.2\,\text{s}$, $12.4\,\text{s}$, $12.6\,\text{s}$, $12.7\,\text{s}$ and $12.9\,\text{s}$.
+**Formula:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ and $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
+**Conversions:** None needed: all times are in seconds.
+**Substitution:** $12.2 + 12.4 + 12.6 + 12.7 + 12.9 = 62.8\,\text{s}$ $$
+\begin{aligned}
+\bar{t} &= \dfrac{62.8\,\text{s}}{5} \\
+&= 12.56\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta t &= \dfrac{12.9\,\text{s} - 12.2\,\text{s}}{2} \\
+&= \dfrac{0.7\,\text{s}}{2} \\
+&= 0.35\,\text{s}
+\end{aligned}
+$$
+**Answer:** $t = (12.56 \pm 0.35)\,\text{s}$. Two digits are kept in the uncertainty because it is used in further calculations; the final result is rounded only at the end.
+**Reasonableness:** The spread is about $2.8\,\%$ of the mean, which is usual for a stopwatch pressed by hand. The interval $12.56 \pm 0.35\,\text{s}$ reaches roughly the extreme values of the dots, $12.2\,\text{s}$ and $12.9\,\text{s}$.
+
+### b)
+**Given:** $\bar{t} = 12.56\,\text{s}$ and $\Delta t = 0.35\,\text{s}$ for ten swings
+**Find:** the period $T$ with its uncertainty and a justification for timing ten swings
+**Principle:** The period is the duration of one swing, so it is the time of ten swings divided by $10$. The number $10$ is exact, so both the time and its uncertainty are divided by it.
+**Formula:** $T = \dfrac{t}{10}$ and $\Delta T = \dfrac{\Delta t}{10}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+T &= \dfrac{t}{10} \\
+&= \dfrac{12.56\,\text{s}}{10} \\
+&= 1.256\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta T &= \dfrac{\Delta t}{10} \\
+&= \dfrac{0.35\,\text{s}}{10} \\
+&= 0.035\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta T}{T} &= \dfrac{0.035\,\text{s}}{1.256\,\text{s}} \\
+&= 0.028 \\
+&= 2.8\,\%
+\end{aligned}
+$$
+**Answer:** $T = (1.26 \pm 0.04)\,\text{s}$; the uncertainty $0.035\,\text{s}$ rounds to one digit, $0.04\,\text{s}$, and the relative uncertainty is $2.8\,\%$. The unrounded values $1.256\,\text{s}$ and $0.035\,\text{s}$ are used in the further calculation.
+**Reasonableness:** A period of about $1.3\,\text{s}$ fits a pendulum of length $40\,\text{cm}$. The uncertainty $0.04\,\text{s}$ is a small fraction of the period.
+**Model answer:** The uncertainty caused by starting and stopping the watch is about $0.35\,\text{s}$ regardless of how long a time is measured. If one swing were timed, the relative uncertainty would be $$
+\begin{aligned}
+\dfrac{\Delta t}{T} &= \dfrac{0.35\,\text{s}}{1.256\,\text{s}} \\
+&= 0.28 \\
+&= 28\,\%
+\end{aligned}
+$$ For the time of ten swings it is only $2.8\,\%$, because the same $0.35\,\text{s}$ is shared between ten periods. The assumption is that the error of pressing does not grow when the swings are counted; the swings must, however, be counted correctly.
+
+### c)
+**Given:** $T = 1.256\,\text{s}$ and $\Delta T = 0.035\,\text{s}$ from part b; $l = 40.0\,\text{cm}$ and $\Delta l = 0.2\,\text{cm}$; at a small angle $T = 2\pi\sqrt{l/g}$
+**Find:** the acceleration of free fall $g$ with its uncertainty
+**Principle:** For a pendulum with a small angle $T = 2\pi\sqrt{l/g}$ (chapter *Spring oscillator and pendulum*). The equation is squared and $g$ is solved before numbers are substituted. Because $g \propto l\,T^{-2}$, the relative uncertainties add and the share of the period is multiplied by the power $2$.
+**Formula:** $T^2 = \dfrac{4\pi^2 l}{g}$, so $g = \dfrac{4\pi^2 l}{T^2}$ and $\dfrac{\Delta g}{g} = \dfrac{\Delta l}{l} + 2\,\dfrac{\Delta T}{T}$
+**Conversions:** $l = 40.0\,\text{cm} = 0.400\,\text{m}$ and $\Delta l = 0.2\,\text{cm} = 0.002\,\text{m}$.
+**Substitution:** $$
+\begin{aligned}
+g &= \dfrac{4\pi^2 l}{T^2} \\
+&= \dfrac{4\pi^2 \cdot 0.400\,\text{m}}{(1.256\,\text{s})^2} \\
+&= \dfrac{15.79\,\text{m}}{1.578\,\text{s}^2} \\
+&= 10.01\,\text{m/s}^2
+\end{aligned}
+$$ Relative uncertainties: $$
+\begin{aligned}
+2\,\dfrac{\Delta T}{T} &= 2 \cdot \dfrac{0.035\,\text{s}}{1.256\,\text{s}} \\
+&= 0.0557
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta l}{l} &= \dfrac{0.002\,\text{m}}{0.400\,\text{m}} \\
+&= 0.0050
+\end{aligned}
+$$ Together: $$
+\begin{aligned}
+\dfrac{\Delta g}{g} &= 0.0557 + 0.0050 \\
+&= 0.0607 \\
+&\approx 6.1\,\%
+\end{aligned}
+$$ Uncertainty: $$
+\begin{aligned}
+\Delta g &= 0.0607 \cdot 10.01\,\text{m/s}^2 \\
+&= 0.61\,\text{m/s}^2
+\end{aligned}
+$$
+**Answer:** $g = (10.0 \pm 0.6)\,\text{m/s}^2$. The uncertainty has one digit and the result is rounded to the same decimal. Almost all of the uncertainty ($5.6\,\%$ of $6.1\,\%$) comes from the period.
+**Reasonableness:** The result is close to the known value $9.81\,\text{m/s}^2$ (difference about $2\,\%$). Check the other way round: with $9.81\,\text{m/s}^2$ the period would be $T = 2\pi\sqrt{0.400/9.81}\,\text{s} = 1.27\,\text{s}$, close to the measured $1.26\,\text{s}$.
+
+### d)
+**Find:** whether the result agrees with $9.81\,\text{m/s}^2$, why the angle must be small and one improvement
+**Principle:** The results agree if the reference value is inside the uncertainty interval of the result. The formula $T = 2\pi\sqrt{l/g}$ is derived with the small-angle approximation (chapter *Spring oscillator and pendulum*).
+**Model answer:** The interval of the result is $$
+\begin{aligned}
+g_\text{min} &= 10.01\,\text{m/s}^2 \\
+&\quad - 0.61\,\text{m/s}^2 \\
+&= 9.40\,\text{m/s}^2 \\
+g_\text{max} &= 10.01\,\text{m/s}^2 \\
+&\quad + 0.61\,\text{m/s}^2 \\
+&= 10.62\,\text{m/s}^2
+\end{aligned}
+$$ that is $9.4 \ldots 10.6\,\text{m/s}^2$. The value $9.81\,\text{m/s}^2$ is inside the interval, and the difference is $$
+\begin{aligned}
+\text{ero} &= 10.01\,\text{m/s}^2 \\
+&\quad - 9.81\,\text{m/s}^2 \\
+&= 0.20\,\text{m/s}^2
+\end{aligned}
+$$ that is much smaller than the uncertainty $0.61\,\text{m/s}^2$. The result therefore agrees with $9.81\,\text{m/s}^2$ within the accuracy of the measurement. The measurement does not prove the value exactly, but there is no contradiction. The angle must be small because the derivation assumes $\sin\theta \approx \theta$. At a large angle the period is longer: for example at the amplitude $30^\circ$ by about $1.7\,\%$, and because $g \propto T^{-2}$, the $g$ calculated from the formula would be about $3.4\,\%$ too small. The length must also be measured from the point of suspension to the centre of the bob. Most of the uncertainty comes from the timing ($5.6\,\%$ vs $0.5\,\%$), so the improvement should be aimed at it: for example the time of $30$ swings is measured. Then $$
+\begin{aligned}
+t_{30} &= 30 \cdot 1.256\,\text{s} \\
+&= 37.7\,\text{s} \\
+\dfrac{\Delta t}{t_{30}} &= \dfrac{0.35\,\text{s}}{37.7\,\text{s}} \\
+&= 0.0093
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\dfrac{\Delta g}{g} &= 2 \cdot 0.0093 + 0.0050 \\
+&= 0.0236 \\
+&\approx 2.4\,\%
+\end{aligned}
+$$ that is $\Delta g \approx 0.24\,\text{m/s}^2$. A light gate that measures the time without a reaction delay would improve the result even more. After that the uncertainty of the length ($0.5\,\%$) would begin to show in the result.
+
+### Yleisiä virheitä
+- In part a the whole range $0.7\,\text{s}$ is taken as the uncertainty instead of half of it, $0.35\,\text{s}$, or the mean is calculated from three dots only.
+- In part b the time is divided by ten but the uncertainty is left at $0.35\,\text{s}$, so the uncertainty of the period seems larger than it is.
+- In part c the square of the period is forgotten in the relative uncertainty ($2.8\,\%$ instead of $5.6\,\%$), or the length is left in centimetres ($40.0$ instead of $0.400\,\text{m}$), so $g$ is $100$ times too large.
+- In part d the result $10.0$ is declared "wrong" because it is not $9.81$, although the difference is smaller than the uncertainty.
+
+### Hyväksytään myös
+- In part a the standard deviation can also be used as the uncertainty when it has been calculated and named; it is of a different size than half of the range, and the further calculations are done in the same way.
+- In part c the uncertainty can be calculated with extreme values: $g_\text{max} = \dfrac{4\pi^2 \cdot 0.402\,\text{m}}{(1.221\,\text{s})^2} = 10.65\,\text{m/s}^2$ and $g_\text{min} = \dfrac{4\pi^2 \cdot 0.398\,\text{m}}{(1.291\,\text{s})^2} = 9.43\,\text{m/s}^2$, so $\Delta g \approx 0.6\,\text{m/s}^2$.

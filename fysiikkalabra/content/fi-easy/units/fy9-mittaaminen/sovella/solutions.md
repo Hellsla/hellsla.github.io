@@ -662,3 +662,267 @@ $$.
 - b-kohdassa piirretään $(\tfrac{1}{V}, p)$-kuvaaja, ja suora pakotetaan kulkemaan origon kautta. Silloin letkun ilmatila ei näy.
 - c-kohdassa lämpötila sijoitetaan celsiusasteina. Tai tilavuus sijoitetaan millilitroina ja paine kilopascaleina ilman muunnosta. Silloin ainemäärä on tuhat kertaa väärin.
 - d-kohdassa luetellaan oletuksia, mutta ei kerrota, mihin suuntaan ne muuttaisivat tulosta.
+
+## fy9-mittaaminen-s7
+
+### a)
+**Annettu:** kuvan viivain, jonka pienin asteikkoväli on $1\,\text{mm}$; tangon vasen pää on kohdassa $2{,}0\,\text{cm}$ ja oikea pää kohdassa $13{,}6\,\text{cm}$
+**Kysytty:** tangon pituus $l$
+**Periaate:** Pituus on tangon päiden paikkojen erotus viivaimella. Tanko ei ala viivaimen nollasta. Siksi pelkkä oikean pään lukema ei ole pituus (luku *Suureet, yksiköt ja SI-järjestelmä*).
+**Kuvaajan lukeminen:** Tangon päät luetaan millimetrin asteikolta: vasen pää $2{,}0\,\text{cm}$ ja oikea pää $13{,}6\,\text{cm}$.
+**Kaava:** $l = x_\text{oikea} - x_\text{vasen}$
+**Muunnokset:** Ei tarvita: kumpikin lukema on senttimetreinä.
+**Sijoitus:** $$
+\begin{aligned}
+l &= 13{,}6\,\text{cm} - 2{,}0\,\text{cm} \\
+&= 11{,}6\,\text{cm}
+\end{aligned}
+$$
+**Vastaus:** $l = 11{,}6\,\text{cm}$. Vastauksessa on kolme merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Tangon pituus on pienempi kuin viivaimen $15\,\text{cm}$. Jos pituudeksi luettaisiin vain oikean pään lukema $13{,}6\,\text{cm}$, se olisi $2{,}0\,\text{cm}$ eli noin $17\,\%$ liian suuri. Tanko ei nimittäin ala viivaimen nollasta.
+
+### b)
+**Annettu:** lukemat $2{,}0\,\text{cm}$ ja $13{,}6\,\text{cm}$, asteikkoväli $1\,\text{mm}$; $l = 11{,}6\,\text{cm}$ a-kohdasta
+**Kysytty:** pituuden epävarmuus $\Delta l$, pituus epävarmuuksineen ja suhteellinen epävarmuus
+**Periaate:** Yhden lukeman epävarmuus on puolet asteikkovälistä. Pituus on kahden lukeman erotus. Pahimmassa tapauksessa kumpikin lukema on väärin eri suuntaan. Silloin epävarmuudet lasketaan yhteen.
+**Kaava:** $\Delta l = \Delta x_\text{oikea} + \Delta x_\text{vasen}$ ja suhteellinen epävarmuus $\dfrac{\Delta l}{l}$
+**Muunnokset:** $1\,\text{mm} = 0{,}1\,\text{cm}$, joten lukeman epävarmuus $0{,}5\,\text{mm}$ on $0{,}05\,\text{cm}$.
+**Sijoitus:** $$
+\begin{aligned}
+\Delta x &= 0{,}5\,\text{mm} \\
+&= 0{,}5 \cdot 0{,}1\,\text{cm} \\
+&= 0{,}05\,\text{cm}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta l &= 0{,}05\,\text{cm} + 0{,}05\,\text{cm} \\
+&= 0{,}10\,\text{cm}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta l}{l} &= \dfrac{0{,}10\,\text{cm}}{11{,}6\,\text{cm}} \\
+&= 0{,}0086 \\
+&\approx 0{,}9\,\%
+\end{aligned}
+$$
+**Vastaus:** $l = (11{,}6 \pm 0{,}1)\,\text{cm}$ ja suhteellinen epävarmuus on noin $0{,}9\,\%$. Epävarmuus ilmoitetaan yhdellä numerolla. Pituus pyöristetään samaan desimaaliin.
+**Järkevyys:** Epävarmuus $1\,\text{mm}$ vastaa viivaimen yhtä pientä viivaväliä. Se sopii siihen, että päät luetaan silmällä asteikolta. Kahden lukeman erotuksen epävarmuus on suurempi kuin yhden lukeman ($0{,}5\,\text{mm}$).
+
+### c)
+**Annettu:** $m = (15{,}7 \pm 0{,}05)\,\text{g}$, $d = (8{,}0 \pm 0{,}05)\,\text{mm}$ ja $l = (11{,}6 \pm 0{,}1)\,\text{cm}$; epävarmuus on puolet lukematarkkuudesta
+**Kysytty:** tiheys $\rho$ epävarmuuksineen yksikössä $\text{kg/m}^3$ ja se mittaus, joka vaikuttaa epävarmuuteen eniten
+**Periaate:** Tiheys on massa jaettuna tilavuudella (luku *Tiheys*). Tanko on sylinteri. Sen tilavuus on poikkipinta-ala kertaa pituus. Kun tulos on tulo tai osamäärä, suhteelliset epävarmuudet lasketaan yhteen. Potenssi $d^2$ kaksinkertaistaa halkaisijan suhteellisen epävarmuuden.
+**Kaava:** $\rho = \dfrac{m}{V}$ ja $V = \dfrac{\pi d^2}{4}\,l$, joten $\rho = \dfrac{4m}{\pi d^2 l}$. Epävarmuus: $\dfrac{\Delta\rho}{\rho} = \dfrac{\Delta m}{m} + 2\,\dfrac{\Delta d}{d} + \dfrac{\Delta l}{l}$
+**Muunnokset:** $d = 8{,}0\,\text{mm} = 0{,}80\,\text{cm}$ ja $\Delta d = 0{,}05\,\text{mm}$. Tiheyden yksikkö: $1\,\text{g} = 10^{-3}\,\text{kg}$ ja $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$, joten $1\,\text{g/cm}^3 = 1000\,\text{kg/m}^3$.
+**Sijoitus:** Tilavuus: $$
+\begin{aligned}
+V &= \dfrac{\pi d^2}{4}\,l \\
+&= \dfrac{\pi \cdot (0{,}80\,\text{cm})^2}{4} \cdot 11{,}6\,\text{cm} \\
+&= 0{,}503\,\text{cm}^2 \cdot 11{,}6\,\text{cm} \\
+&= 5{,}83\,\text{cm}^3
+\end{aligned}
+$$ Tiheys: $$
+\begin{aligned}
+\rho &= \dfrac{m}{V} \\
+&= \dfrac{15{,}7\,\text{g}}{5{,}83\,\text{cm}^3} \\
+&= 2{,}69\,\text{g/cm}^3 \\
+&= 2{,}69 \cdot \dfrac{10^{-3}\,\text{kg}}{10^{-6}\,\text{m}^3} \\
+&= 2{,}69 \cdot 10^3\,\text{kg/m}^3
+\end{aligned}
+$$ Suhteelliset epävarmuudet: $$
+\begin{aligned}
+\dfrac{\Delta m}{m} &= \dfrac{0{,}05\,\text{g}}{15{,}7\,\text{g}} \\
+&= 0{,}0032
+\end{aligned}
+$$ $$
+\begin{aligned}
+2\,\dfrac{\Delta d}{d} &= 2 \cdot \dfrac{0{,}05\,\text{mm}}{8{,}0\,\text{mm}} \\
+&= 0{,}0125
+\end{aligned}
+$$ ja pituuden $\dfrac{\Delta l}{l} = 0{,}0086$ b-kohdasta. Yhteensä: $$
+\begin{aligned}
+\dfrac{\Delta\rho}{\rho} &= 0{,}0032 \\
+&\quad + 0{,}0125 \\
+&\quad + 0{,}0086 \\
+&= 0{,}0243 \\
+&\approx 2{,}4\,\%
+\end{aligned}
+$$ Epävarmuus: $$
+\begin{aligned}
+\Delta\rho &= 0{,}0243 \cdot 2693\,\text{kg/m}^3 \\
+&= 65\,\text{kg/m}^3
+\end{aligned}
+$$
+**Vastaus:** $\rho = (2{,}69 \pm 0{,}07) \cdot 10^3\,\text{kg/m}^3$. Epävarmuus pyöristetään yhteen numeroon ($65 \to 0{,}07 \cdot 10^3$). Tulos pyöristetään samaan desimaaliin. Eniten epävarmuuteen vaikuttaa halkaisija. Sen osuus on $1{,}25\,\%$, pituuden $0{,}9\,\%$ ja massan $0{,}3\,\%$. Halkaisija on suurin, koska lukematarkkuus $0{,}1\,\text{mm}$ on suuri verrattuna arvoon $8{,}0\,\text{mm}$ (suhteellinen epävarmuus $0{,}6\,\%$). Lisäksi neliö kaksinkertaistaa sen. Ilman neliötä pituus olisi suurin.
+**Järkevyys:** Tiheys $2{,}7\,\text{g/cm}^3$ tarkoittaa, että tangon massa on $2{,}7$-kertainen samankokoiseen vesimäärään verrattuna (veden tiheys on $1{,}0 \cdot 10^3\,\text{kg/m}^3$). Se sopii kevytmetallille. Kokonaisepävarmuus $2{,}4\,\%$ on samaa suuruusluokkaa kuin yksittäiset osuudet.
+
+### d)
+**Kysytty:** sopiiko tulos alumiinin taulukkoarvoon ja voiko tangon päätellä alumiiniksi tiheyden perusteella
+**Periaate:** Tulos ja taulukkoarvo sopivat yhteen, jos taulukkoarvo on tuloksen epävarmuusvälin sisällä. Pelkkä lukujen erisuuruus ei kerro mitään ilman epävarmuutta.
+**Mallivastaus:** Tuloksen väli on $$
+\begin{aligned}
+\rho_\text{min} &= 2693\,\text{kg/m}^3 \\
+&\quad - 65\,\text{kg/m}^3 \\
+&= 2628\,\text{kg/m}^3 \\
+\rho_\text{max} &= 2693\,\text{kg/m}^3 \\
+&\quad + 65\,\text{kg/m}^3 \\
+&= 2758\,\text{kg/m}^3
+\end{aligned}
+$$ eli $2{,}63 \cdot 10^3 \ldots 2{,}76 \cdot 10^3\,\text{kg/m}^3$. Alumiinin taulukkoarvo on $2{,}70 \cdot 10^3\,\text{kg/m}^3$ ([MAFY-taulukko](https://mafytaulukot.fi/d67c966e-4e50-48d3-beae-9ae0a5f7838c/fi/1787666412/theory.html), tiheydet $20\,{}^\circ\text{C}$:n lämpötilassa). Se on välin sisällä. Ero on $$
+\begin{aligned}
+\text{ero} &= 2700\,\text{kg/m}^3 \\
+&\quad - 2693\,\text{kg/m}^3 \\
+&= 7\,\text{kg/m}^3
+\end{aligned}
+$$ eli paljon pienempi kuin epävarmuus $65\,\text{kg/m}^3$. Tulos sopii siis alumiinin tiheyteen mittauksen tarkkuuden rajoissa. Se ei kumoa väitettä, että tanko on alumiinia. Tiheys yksin ei kuitenkaan todista ainetta. Muillakin aineilla tai seoksilla voi olla lähes sama tiheys. Oikea päätelmä on siis "tanko voi olla alumiinia". Tulokseen vaikuttavat esimerkiksi tangon päiden viisteet tai pyöristykset. Ne pienentävät todellista tilavuutta ja nostavat tiheyttä. Myös työntömitan nollavirhe vaikuttaa. Tangon sisäiset onkalot taas pienentäisivät mitattua tiheyttä.
+
+### Yleisiä virheitä
+- a-kohdassa pituudeksi luetaan oikean pään lukema $13{,}6\,\text{cm}$, vaikka tanko alkaa kohdasta $2{,}0\,\text{cm}$.
+- b-kohdassa pituuden epävarmuudeksi otetaan vain yhden lukeman epävarmuus $0{,}5\,\text{mm}$, vaikka erotuksessa on kaksi lukemaa.
+- c-kohdassa halkaisija sijoitetaan millimetreinä mutta pituus senttimetreinä. Tai halkaisija sijoitetaan säteenä kaavaan $\pi d^2/4$.
+- c-kohdassa halkaisijan suhteellinen epävarmuus lasketaan ilman neliötä ($0{,}6\,\%$ eikä $1{,}25\,\%$). Silloin pituuden epävarmuus näyttää suurimmalta.
+- d-kohdassa vertailu tehdään pelkästään lukuja katsomalla ("$2{,}69$ ei ole $2{,}70$") ja epävarmuus unohtuu.
+
+### Hyväksytään myös
+- b-kohdassa riippumattomien lukemien epävarmuus voidaan yhdistää neliöllisesti: $\Delta l = \sqrt{(0{,}05)^2 + (0{,}05)^2}\,\text{cm} = 0{,}07\,\text{cm}$. Silloin $l = (11{,}6 \pm 0{,}1)\,\text{cm}$ pyöristyy samoin.
+- c-kohdassa tiheys $2{,}69\,\text{g/cm}^3$ ja epävarmuus $0{,}07\,\text{g/cm}^3$ yksikössä $\text{g/cm}^3$ kelpaavat. Muunnos tai yksikkö on silloin kirjoitettava näkyviin.
+
+## fy9-mittaaminen-s8
+
+### a)
+**Annettu:** viisi mittausta kuvasta: $12{,}2\,\text{s}$, $12{,}4\,\text{s}$, $12{,}6\,\text{s}$, $12{,}7\,\text{s}$ ja $12{,}9\,\text{s}$; kymmenen heilahduksen aika
+**Kysytty:** kymmenen heilahduksen ajan keskiarvo $\bar{t}$ ja sen epävarmuus $\Delta t$
+**Periaate:** Toistetuista mittauksista paras arvio on keskiarvo. Satunnaisvaihtelun suuruus arvioidaan vaihteluvälin puolikkaana (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Kuvaajan lukeminen:** Pisteet luetaan aika-akselilta, jossa pystyviivat ovat $0{,}1\,\text{s}$ välein: $12{,}2\,\text{s}$, $12{,}4\,\text{s}$, $12{,}6\,\text{s}$, $12{,}7\,\text{s}$ ja $12{,}9\,\text{s}$.
+**Kaava:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
+**Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
+**Sijoitus:** $12{,}2 + 12{,}4 + 12{,}6 + 12{,}7 + 12{,}9 = 62{,}8\,\text{s}$ $$
+\begin{aligned}
+\bar{t} &= \dfrac{62{,}8\,\text{s}}{5} \\
+&= 12{,}56\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta t &= \dfrac{12{,}9\,\text{s} - 12{,}2\,\text{s}}{2} \\
+&= \dfrac{0{,}7\,\text{s}}{2} \\
+&= 0{,}35\,\text{s}
+\end{aligned}
+$$
+**Vastaus:** $t = (12{,}56 \pm 0{,}35)\,\text{s}$. Epävarmuuteen jätetään kaksi numeroa, koska sitä käytetään jatkolaskuissa. Lopullinen tulos pyöristetään vasta lopuksi.
+**Järkevyys:** Hajonta on noin $2{,}8\,\%$ keskiarvosta. Se on tavallista käsin painetulle sekuntikellolle. Väli $12{,}56 \pm 0{,}35\,\text{s}$ ulottuu likimain pisteiden ääriarvoihin $12{,}2\,\text{s}$ ja $12{,}9\,\text{s}$.
+
+### b)
+**Annettu:** $\bar{t} = 12{,}56\,\text{s}$ ja $\Delta t = 0{,}35\,\text{s}$ kymmenelle heilahdukselle
+**Kysytty:** jaksonaika $T$ epävarmuuksineen ja perustelu, miksi mitataan kymmenen heilahdusta
+**Periaate:** Jaksonaika on yhden heilahduksen kesto. Se on siis kymmenen heilahduksen aika jaettuna luvulla $10$. Luku $10$ on tarkka. Siksi sekä aika että sen epävarmuus jaetaan sillä.
+**Kaava:** $T = \dfrac{t}{10}$ ja $\Delta T = \dfrac{\Delta t}{10}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+T &= \dfrac{t}{10} \\
+&= \dfrac{12{,}56\,\text{s}}{10} \\
+&= 1{,}256\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\Delta T &= \dfrac{\Delta t}{10} \\
+&= \dfrac{0{,}35\,\text{s}}{10} \\
+&= 0{,}035\,\text{s}
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta T}{T} &= \dfrac{0{,}035\,\text{s}}{1{,}256\,\text{s}} \\
+&= 0{,}028 \\
+&= 2{,}8\,\%
+\end{aligned}
+$$
+**Vastaus:** $T = (1{,}26 \pm 0{,}04)\,\text{s}$. Epävarmuus $0{,}035\,\text{s}$ pyöristyy yhteen numeroon arvoon $0{,}04\,\text{s}$. Suhteellinen epävarmuus on $2{,}8\,\%$. Jatkolaskussa käytetään pyöristämättömiä arvoja $1{,}256\,\text{s}$ ja $0{,}035\,\text{s}$.
+**Järkevyys:** Jaksonaika noin $1{,}3\,\text{s}$ sopii heilurille, jonka pituus on $40\,\text{cm}$. Epävarmuus $0{,}04\,\text{s}$ on pieni osa jaksonajasta.
+**Mallivastaus:** Kellon käynnistämiseen ja pysäyttämiseen liittyy noin $0{,}35\,\text{s}$ epävarmuus. Se on sama, vaikka mitattava aika olisi pitkä. Jos mitattaisiin yksi heilahdus, suhteellinen epävarmuus olisi $$
+\begin{aligned}
+\dfrac{\Delta t}{T} &= \dfrac{0{,}35\,\text{s}}{1{,}256\,\text{s}} \\
+&= 0{,}28 \\
+&= 28\,\%
+\end{aligned}
+$$ Kymmenen heilahduksen ajasta se on vain $2{,}8\,\%$. Sama $0{,}35\,\text{s}$ jakautuu nimittäin kymmenelle jaksolle. Oletus on, että painamisen virhe ei kasva heilahduksia laskettaessa. Heilahdukset on silti laskettava oikein.
+
+### c)
+**Annettu:** $T = 1{,}256\,\text{s}$ ja $\Delta T = 0{,}035\,\text{s}$ b-kohdasta; $l = 40{,}0\,\text{cm}$ ja $\Delta l = 0{,}2\,\text{cm}$; pienellä kulmalla $T = 2\pi\sqrt{l/g}$
+**Kysytty:** putoamiskiihtyvyys $g$ epävarmuuksineen
+**Periaate:** Pienen kulman heilurille $T = 2\pi\sqrt{l/g}$ (luku *Jousivärähtelijä ja heiluri*). Yhtälö korotetaan toiseen potenssiin. Sitten ratkaistaan $g$ ennen lukujen sijoittamista. Koska $g \propto l\,T^{-2}$, suhteelliset epävarmuudet lasketaan yhteen. Jaksonajan osuus kerrotaan luvulla $2$.
+**Kaava:** $T^2 = \dfrac{4\pi^2 l}{g}$, joten $g = \dfrac{4\pi^2 l}{T^2}$ ja $\dfrac{\Delta g}{g} = \dfrac{\Delta l}{l} + 2\,\dfrac{\Delta T}{T}$
+**Muunnokset:** $l = 40{,}0\,\text{cm} = 0{,}400\,\text{m}$ ja $\Delta l = 0{,}2\,\text{cm} = 0{,}002\,\text{m}$.
+**Sijoitus:** $$
+\begin{aligned}
+g &= \dfrac{4\pi^2 l}{T^2} \\
+&= \dfrac{4\pi^2 \cdot 0{,}400\,\text{m}}{(1{,}256\,\text{s})^2} \\
+&= \dfrac{15{,}79\,\text{m}}{1{,}578\,\text{s}^2} \\
+&= 10{,}01\,\text{m/s}^2
+\end{aligned}
+$$ Suhteelliset epävarmuudet: $$
+\begin{aligned}
+2\,\dfrac{\Delta T}{T} &= 2 \cdot \dfrac{0{,}035\,\text{s}}{1{,}256\,\text{s}} \\
+&= 0{,}0557
+\end{aligned}
+$$ $$
+\begin{aligned}
+\dfrac{\Delta l}{l} &= \dfrac{0{,}002\,\text{m}}{0{,}400\,\text{m}} \\
+&= 0{,}0050
+\end{aligned}
+$$ Yhteensä: $$
+\begin{aligned}
+\dfrac{\Delta g}{g} &= 0{,}0557 + 0{,}0050 \\
+&= 0{,}0607 \\
+&\approx 6{,}1\,\%
+\end{aligned}
+$$ Epävarmuus: $$
+\begin{aligned}
+\Delta g &= 0{,}0607 \cdot 10{,}01\,\text{m/s}^2 \\
+&= 0{,}61\,\text{m/s}^2
+\end{aligned}
+$$
+**Vastaus:** $g = (10{,}0 \pm 0{,}6)\,\text{m/s}^2$. Epävarmuudessa on yksi numero, ja tulos on samassa desimaalissa. Lähes kaikki epävarmuus ($5{,}6\,\%$ luvusta $6{,}1\,\%$) tulee jaksonajasta.
+**Järkevyys:** Tulos on lähellä tunnettua arvoa $9{,}81\,\text{m/s}^2$ (ero noin $2\,\%$). Käänteinen tarkistus: arvolla $9{,}81\,\text{m/s}^2$ jaksonaika olisi $T = 2\pi\sqrt{0{,}400/9{,}81}\,\text{s} = 1{,}27\,\text{s}$. Se on lähellä mitattua arvoa $1{,}26\,\text{s}$.
+
+### d)
+**Kysytty:** sopiiko tulos arvoon $9{,}81\,\text{m/s}^2$, miksi kulman pitää olla pieni ja yksi parannus
+**Periaate:** Tulokset sopivat yhteen, jos vertailuarvo on tuloksen epävarmuusvälin sisällä. Kaava $T = 2\pi\sqrt{l/g}$ on johdettu pienen kulman likiarvolla (luku *Jousivärähtelijä ja heiluri*).
+**Mallivastaus:** Tuloksen väli on $$
+\begin{aligned}
+g_\text{min} &= 10{,}01\,\text{m/s}^2 \\
+&\quad - 0{,}61\,\text{m/s}^2 \\
+&= 9{,}40\,\text{m/s}^2 \\
+g_\text{max} &= 10{,}01\,\text{m/s}^2 \\
+&\quad + 0{,}61\,\text{m/s}^2 \\
+&= 10{,}62\,\text{m/s}^2
+\end{aligned}
+$$ eli $9{,}4 \ldots 10{,}6\,\text{m/s}^2$. Arvo $9{,}81\,\text{m/s}^2$ on välin sisällä. Ero on $$
+\begin{aligned}
+\text{ero} &= 10{,}01\,\text{m/s}^2 \\
+&\quad - 9{,}81\,\text{m/s}^2 \\
+&= 0{,}20\,\text{m/s}^2
+\end{aligned}
+$$ eli paljon pienempi kuin epävarmuus $0{,}61\,\text{m/s}^2$. Tulos sopii siis arvoon $9{,}81\,\text{m/s}^2$ mittauksen tarkkuuden rajoissa. Mittaus ei todista arvoa tarkasti, mutta ristiriitaa ei ole. Kulman pitää olla pieni, koska johdossa oletetaan $\sin\theta \approx \theta$. Isolla kulmalla jaksonaika on pidempi. Esimerkiksi amplitudilla $30^\circ$ se on noin $1{,}7\,\%$ pidempi. Koska $g \propto T^{-2}$, kaavasta laskettu $g$ olisi noin $3{,}4\,\%$ liian pieni. Pituus on myös mitattava kiinnityskohdasta kuulan keskipisteeseen. Suurin osa epävarmuudesta tulee ajanotosta ($5{,}6\,\%$ ja $0{,}5\,\%$). Parannus kannattaa siis kohdistaa siihen. Mitataan esimerkiksi $30$ heilahduksen aika. Silloin $$
+\begin{aligned}
+t_{30} &= 30 \cdot 1{,}256\,\text{s} \\
+&= 37{,}7\,\text{s} \\
+\dfrac{\Delta t}{t_{30}} &= \dfrac{0{,}35\,\text{s}}{37{,}7\,\text{s}} \\
+&= 0{,}0093
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\dfrac{\Delta g}{g} &= 2 \cdot 0{,}0093 + 0{,}0050 \\
+&= 0{,}0236 \\
+&\approx 2{,}4\,\%
+\end{aligned}
+$$ eli $\Delta g \approx 0{,}24\,\text{m/s}^2$. Valoportti mittaa ajan ilman reaktioviivettä, ja se parantaisi tulosta vielä enemmän. Sen jälkeen pituuden epävarmuus ($0{,}5\,\%$) alkaisi näkyä tuloksessa.
+
+### Yleisiä virheitä
+- a-kohdassa epävarmuudeksi otetaan koko vaihteluväli $0{,}7\,\text{s}$ eikä sen puolikas $0{,}35\,\text{s}$. Tai keskiarvo lasketaan vain kolmesta pisteestä.
+- b-kohdassa aika jaetaan kymmenellä, mutta epävarmuus jää arvoon $0{,}35\,\text{s}$. Silloin jaksonajan epävarmuus näyttää suuremmalta kuin se on.
+- c-kohdassa unohdetaan jaksonajan neliö suhteellisessa epävarmuudessa ($2{,}8\,\%$ eikä $5{,}6\,\%$). Tai pituus jää senttimetreiksi ($40{,}0$ eikä $0{,}400\,\text{m}$), jolloin $g$ on $100$-kertainen.
+- d-kohdassa tulos $10{,}0$ todetaan vääräksi, koska se ei ole $9{,}81$. Ero on kuitenkin epävarmuutta pienempi.
+
+### Hyväksytään myös
+- a-kohdassa epävarmuutena voidaan käyttää myös keskihajontaa, kun se on laskettu ja nimetty. Se on eri suuruinen kuin vaihteluvälin puolikas. Jatkolaskut tehdään samalla tavalla.
+- c-kohdassa epävarmuus voidaan laskea ääriarvoilla. $g_\text{max} = \dfrac{4\pi^2 \cdot 0{,}402\,\text{m}}{(1{,}221\,\text{s})^2} = 10{,}65\,\text{m/s}^2$ ja $g_\text{min} = \dfrac{4\pi^2 \cdot 0{,}398\,\text{m}}{(1{,}291\,\text{s})^2} = 9{,}43\,\text{m/s}^2$, joten $\Delta g \approx 0{,}6\,\text{m/s}^2$.

@@ -115,5 +115,53 @@ out.update({"fy9-mittaaminen-s6-pV-first": round(pV[0]), "fy9-mittaaminen-s6-pV-
             # the solution reads (4,0 1/MPa; 8,6 ml) and (12,0 1/MPa; 29,5 ml) off the drawn line
             "fy9-mittaaminen-s6-C-read": round((29.5 - 8.6) / 8.0, 4), "fy9-mittaaminen-s6-n-read": round((29.5 - 8.6) / 8.0 / (R * T6), 7)})
 
+# s7: an aluminium rod beside a ruler (fy1-2/ruler-read: left end 2,0 cm, right end 13,6 cm, 1 mm marks), caliper d = 8,0 mm
+# (resolution 0,1 mm), balance m = 15,7 g (resolution 0,1 g); table value of aluminium 2,70·10³ kg/m³ (MAFY, row fy1-4)
+x_l, x_r, dread = 2.0, 13.6, 0.05                             # cm: the two readings, each ± 0,5 mm
+l7 = x_r - x_l; dl7 = 2 * dread                               # cm: the readings' uncertainties add in the difference
+d7, dd7, m7, dm7 = 0.80, 0.005, 15.7, 0.05                    # cm, cm, g, g: half of each resolution
+V7 = math.pi * d7 ** 2 * l7 / 4                               # cm³
+rho7 = m7 / V7 * 1000                                         # kg/m³ (1 g/cm³ = 1000 kg/m³)
+rl7, rd7, rm7 = dl7 / l7, 2 * dd7 / d7, dm7 / m7
+r7 = rl7 + rd7 + rm7
+rho_table = 2700.0
+out.update({"fy9-mittaaminen-s7-a": round(l7, 2), "fy9-mittaaminen-s7-a-wrong": x_r,
+            "fy9-mittaaminen-s7-b": round(dl7, 2), "fy9-mittaaminen-s7-b-rel": round(rl7 * 100, 2),
+            "fy9-mittaaminen-s7-c": round(rho7, 1), "fy9-mittaaminen-s7-c-V": round(V7, 3),
+            "fy9-mittaaminen-s7-c-rl": round(rl7 * 100, 2), "fy9-mittaaminen-s7-c-rd": round(rd7 * 100, 2),
+            "fy9-mittaaminen-s7-c-rm": round(rm7 * 100, 2), "fy9-mittaaminen-s7-c-rtot": round(r7 * 100, 2),
+            "fy9-mittaaminen-s7-c-drho": round(rho7 * r7, 1),
+            "fy9-mittaaminen-s7-d-diff": round(rho_table - rho7, 1), "fy9-mittaaminen-s7-d-lo": round(rho7 * (1 - r7), 1),
+            "fy9-mittaaminen-s7-d-hi": round(rho7 * (1 + r7), 1)})
+
+# s8: pendulum, time of ten swings (fy1-3/pendulum-dots: 12,2; 12,4; 12,6; 12,7; 12,9 s), l = 40,0 cm ± 0,2 cm
+t8 = [12.2, 12.4, 12.6, 12.7, 12.9]
+tm8 = sum(t8) / len(t8); dt8 = (max(t8) - min(t8)) / 2         # s: mean and half the range (as in s1)
+T8, dT8 = tm8 / 10, dt8 / 10                                   # s
+l8, dl8 = 0.400, 0.002                                         # m
+g8 = 4 * math.pi ** 2 * l8 / T8 ** 2                           # m/s²
+rT8, rl8 = dT8 / T8, dl8 / l8
+rg8 = 2 * rT8 + rl8
+dg8 = g8 * rg8
+out.update({"fy9-mittaaminen-s8-a-mean": round(tm8, 2), "fy9-mittaaminen-s8-a-spread": round(dt8, 2),
+            "fy9-mittaaminen-s8-a-rel": round(dt8 / tm8 * 100, 2),
+            "fy9-mittaaminen-s8-b-T": round(T8, 3), "fy9-mittaaminen-s8-b-dT": round(dT8, 3),
+            "fy9-mittaaminen-s8-b-one": round(dt8 / T8 * 100, 1), "fy9-mittaaminen-s8-b-ten": round(rT8 * 100, 2),
+            "fy9-mittaaminen-s8-c": round(g8, 2), "fy9-mittaaminen-s8-c-4pi2l": round(4 * math.pi ** 2 * l8, 3),
+            "fy9-mittaaminen-s8-c-T2": round(T8 ** 2, 4), "fy9-mittaaminen-s8-c-rT": round(2 * rT8 * 100, 2),
+            "fy9-mittaaminen-s8-c-rl": round(rl8 * 100, 2), "fy9-mittaaminen-s8-c-rtot": round(rg8 * 100, 2),
+            "fy9-mittaaminen-s8-c-dg": round(dg8, 2),
+            "fy9-mittaaminen-s8-d-diff": round(abs(g8 - 9.81), 2), "fy9-mittaaminen-s8-d-lo": round(g8 - dg8, 2),
+            "fy9-mittaaminen-s8-d-hi": round(g8 + dg8, 2)})
+rT30 = dt8 / (T8 * 30)                                         # improvement: 30 swings, the same ± 0,35 s timing uncertainty
+out.update({"fy9-mittaaminen-s8-d-30": round(rT30 * 100, 2), "fy9-mittaaminen-s8-d-30g": round((2 * rT30 + rl8) * 100, 2),
+            "fy9-mittaaminen-s8-d-30dg": round(g8 * (2 * rT30 + rl8), 2), "fy9-mittaaminen-s8-d-30t": round(30 * T8, 2)})
+th = math.radians(30)                                          # amplitude 30°: the period is longer by about th²/16
+out.update({"fy9-mittaaminen-s8-d-big": round(2 * th ** 2 / 16 * 100, 2), "fy9-mittaaminen-s8-d-bigT": round(th ** 2 / 16 * 100, 2), "fy9-mittaaminen-s8-d-Tcheck": round(2 * math.pi * math.sqrt(l8 / 9.81), 3)})
+g_max = 4 * math.pi ** 2 * (l8 + dl8) / (T8 - dT8) ** 2        # the extremes method (accepted in the solution)
+g_min = 4 * math.pi ** 2 * (l8 - dl8) / (T8 + dT8) ** 2
+out.update({"fy9-mittaaminen-s8-acc-gmax": round(g_max, 2), "fy9-mittaaminen-s8-acc-gmin": round(g_min, 2)})
+out.update({"fy9-mittaaminen-s7-acc-rss": round(math.hypot(dread, dread), 3)})
+
 out = {k_: v_ for k_, v_ in out.items() if not isinstance(v_, list)}
 print(json.dumps(out))

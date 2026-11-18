@@ -1,5 +1,5 @@
 {
-  "intro": "Tässä on kuusi ylioppilaskokeen tyylistä tehtävää. Niissä tarvitaan mittaamisen, epävarmuuden ja kuvaajien taitoja. Päätä itse, miten aineisto kannattaa esittää ja mitä kuvaajasta luetaan. Perustele tuloksen tarkkuus. Viimeinen tehtävä yhdistää mittaamisen kaasujen tilanyhtälöön.",
+  "intro": "Tässä on kahdeksan ylioppilaskokeen tyylistä tehtävää. Niissä tarvitaan mittaamisen, epävarmuuden ja kuvaajien taitoja. Päätä itse, miten aineisto kannattaa esittää ja mitä kuvaajasta luetaan. Perustele tuloksen tarkkuus. Kuudes tehtävä yhdistää mittaamisen kaasujen tilanyhtälöön. Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
   "tasks": [
     {
       "id": "fy9-mittaaminen-s1",
@@ -813,6 +813,307 @@
         "graph": "fy1-4",
         "concept": "fy3-9",
         "transfer": "fy3-10"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s7",
+      "title": "Alumiinitanko viivaimen vieressä",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "skills": [
+        "fy1-2",
+        "fy1-3",
+        "fy1-7"
+      ],
+      "figure": "fy1-2/ruler-read",
+      "text": "Opiskelija tutkii sorvattua tankoa. Hän uskoo, että tanko on alumiinia. Kuvassa tanko on viivaimen vieressä. Viivaimen pienin asteikkoväli on $1\\,\\text{mm}$. Opiskelija mittaa tangon halkaisijan työntömitalla: $d = 8{,}0\\,\\text{mm}$. Työntömitan lukematarkkuus on $0{,}1\\,\\text{mm}$. Massan hän mittaa vaa'alla: $m = 15{,}7\\,\\text{g}$. Vaa'an lukematarkkuus on $0{,}1\\,\\text{g}$. Tanko on tasapaksu sylinteri. Kunkin lukeman epävarmuus on puolet lukematarkkuudesta. Tutki, voiko tanko olla alumiinia.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä tangon pituus kuvasta. Miksi oikean pään lukema ei yksin kelpaa pituudeksi?",
+          "answer": {
+            "value": 11.6,
+            "unit": "cm",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Tangon päät luetaan millimetrin asteikolta. Vasen pää on kohdassa $2{,}0\\,\\text{cm}$ ja oikea pää kohdassa $13{,}6\\,\\text{cm}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$l = x_\\text{oikea} - x_\\text{vasen} = 13{,}6\\,\\text{cm} - 2{,}0\\,\\text{cm} = 11{,}6\\,\\text{cm}$"
+            },
+            {
+              "text": "Perustelee, että tanko ei ala viivaimen nollasta. Oikean pään lukema $13{,}6\\,\\text{cm}$ yksin olisi $2{,}0\\,\\text{cm}$ liian suuri.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Arvioi pituuden epävarmuus. Ilmoita pituus epävarmuuksineen. Mikä on suhteellinen epävarmuus?",
+          "answer": {
+            "value": 0.1,
+            "unit": "cm",
+            "tolerance": 0.1
+          },
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Kumpikin lukema on epävarma $0{,}5\\,\\text{mm} = 0{,}05\\,\\text{cm}$, koska asteikkoväli on $1\\,\\text{mm}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Pituus on kahden lukeman erotus. Siksi lukemien epävarmuudet lasketaan yhteen: $\\Delta l = 0{,}05\\,\\text{cm} + 0{,}05\\,\\text{cm} = 0{,}10\\,\\text{cm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$l = (11{,}6 \\pm 0{,}1)\\,\\text{cm}$. Suhteellinen epävarmuus on $\\tfrac{0{,}10}{11{,}6} \\approx 0{,}9\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Laske tangon tiheys epävarmuuksineen yksikössä $\\text{kg/m}^3$. Mikä kolmesta mittauksesta ($m$, $d$, $l$) vaikuttaa tuloksen epävarmuuteen eniten?",
+          "answer": {
+            "value": 2690,
+            "unit": "kg/m³",
+            "tolerance": 0.01
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\rho = \\tfrac{m}{V}$ ja sylinterin tilavuus on $V = \\tfrac{\\pi d^2}{4}\\,l$. Siis $\\rho = \\dfrac{4m}{\\pi d^2 l}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d = 8{,}0\\,\\text{mm} = 0{,}80\\,\\text{cm}$ ja $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V \\approx 5{,}83\\,\\text{cm}^3$ ja $\\rho \\approx 2{,}69\\,\\text{g/cm}^3 = 2{,}69 \\cdot 10^3\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\tfrac{\\Delta\\rho}{\\rho} = \\tfrac{\\Delta m}{m} + 2\\,\\tfrac{\\Delta d}{d} + \\tfrac{\\Delta l}{l} \\approx 0{,}3\\,\\% + 1{,}25\\,\\% + 0{,}9\\,\\% \\approx 2{,}4\\,\\%$. Siis $\\Delta\\rho \\approx 0{,}07 \\cdot 10^3\\,\\text{kg/m}^3$ ja $\\rho = (2{,}69 \\pm 0{,}07) \\cdot 10^3\\,\\text{kg/m}^3$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Halkaisija vaikuttaa eniten. Sen suhteellinen epävarmuus on lukemista suurin ($0{,}6\\,\\%$), koska lukematarkkuus $0{,}1\\,\\text{mm}$ on suuri verrattuna arvoon $8{,}0\\,\\text{mm}$. Neliö kaksinkertaistaa sen ($1{,}25\\,\\%$)."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "Sopiiko tulos alumiinin taulukkoarvoon $2{,}70 \\cdot 10^3\\,\\text{kg/m}^3$? Voiko tangon päätellä alumiiniksi pelkän tiheyden perusteella? Perustele.",
+          "criteria": [
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Tuloksen väli on $2{,}63 \\cdot 10^3 \\ldots 2{,}76 \\cdot 10^3\\,\\text{kg/m}^3$. Taulukkoarvo on sen sisällä. Ero on vain noin $7\\,\\text{kg/m}^3$, paljon epävarmuutta pienempi."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Tulos sopii alumiinin tiheyteen epävarmuuden rajoissa. Tulos ei kumoa väitettä, että tanko on alumiinia."
+            },
+            {
+              "text": "Tiheys yksin ei todista ainetta. Muillakin aineilla tai seoksilla voi olla lähes sama tiheys. Päätelmä on siis \"sopii alumiiniin\", ei \"on alumiinia\".",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Esimerkiksi tangon päiden viisteet tai pyöristykset, työntömitan nollavirhe tai tangon sisäiset onkalot ja seosaineet vaikuttavat tulokseen. Suunta on perusteltu."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy1-7",
+        "experiment": "fy1-3",
+        "communication": "fy1-3",
+        "graph": "fy1-4",
+        "concept": "fy1-2"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s8",
+      "title": "Heiluri ja putoamiskiihtyvyys",
+      "source": "example",
+      "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
+      "skills": [
+        "fy1-3",
+        "fy5-9",
+        "fy1-6"
+      ],
+      "figure": "fy1-3/pendulum-dots",
+      "text": "Opiskelija mittaa putoamiskiihtyvyyden heilurilla. Heilurin pituus kiinnityskohdasta kuulan keskipisteeseen on $l = 40{,}0\\,\\text{cm}$. Pituuden epävarmuus on $0{,}2\\,\\text{cm}$. Hän mittaa sekuntikellolla kymmenen täyden heilahduksen ajan $t$ viisi kertaa. Mittaukset ovat kuvassa pisteinä. Heilahduskulma on pieni, alle $10^\\circ$. Silloin heilurin jaksonaika on $T = 2\\pi\\sqrt{l/g}$. Selvitä, sopiiko mittauksen tulos arvoon $9{,}81\\,\\text{m/s}^2$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Lue kuvasta kymmenen heilahduksen ajat. Laske niiden keskiarvo. Arvioi ajan epävarmuus vaihteluvälin puolikkaana.",
+          "answer": [
+            {
+              "name": "mean",
+              "value": 12.56,
+              "unit": "s",
+              "tolerance": 0.01
+            },
+            {
+              "name": "spread",
+              "value": 0.35,
+              "unit": "s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Pisteet luetaan aika-akselilta: $12{,}2\\,\\text{s}$, $12{,}4\\,\\text{s}$, $12{,}6\\,\\text{s}$, $12{,}7\\,\\text{s}$ ja $12{,}9\\,\\text{s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\bar{t} = \\tfrac{12{,}2 + 12{,}4 + 12{,}6 + 12{,}7 + 12{,}9}{5}\\,\\text{s} = 12{,}56\\,\\text{s}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "$\\Delta t = \\tfrac{t_\\text{max} - t_\\text{min}}{2} = \\tfrac{12{,}9\\,\\text{s} - 12{,}2\\,\\text{s}}{2} = 0{,}35\\,\\text{s}$. Siis $t = (12{,}56 \\pm 0{,}35)\\,\\text{s}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Laske heilurin jaksonaika $T$ epävarmuuksineen. Miksi kannattaa mitata kymmenen heilahdusta yhden sijasta?",
+          "answer": [
+            {
+              "name": "T",
+              "value": 1.256,
+              "unit": "s",
+              "tolerance": 0.01
+            },
+            {
+              "name": "dT",
+              "value": 0.035,
+              "unit": "s",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = \\tfrac{t}{10}$ ja samoin $\\Delta T = \\tfrac{\\Delta t}{10}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T = 1{,}256\\,\\text{s}$ ja $\\Delta T = 0{,}035\\,\\text{s}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T = (1{,}26 \\pm 0{,}04)\\,\\text{s}$. Suhteellinen epävarmuus on $\\approx 2{,}8\\,\\%$."
+            },
+            {
+              "text": "Perustelee: kellon painaminen tuo ajanottoon noin $0{,}35\\,\\text{s}$ epävarmuuden. Se on sama, vaikka mitattava aika olisi pitkä. Yhdelle heilahdukselle (noin $1{,}26\\,\\text{s}$) epävarmuus olisi noin $28\\,\\%$ ja kymmenelle noin $2{,}8\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Ratkaise jaksonajan kaavasta $g$. Laske sen arvo epävarmuuksineen. Käytä pituuden epävarmuutta $0{,}2\\,\\text{cm}$.",
+          "answer": {
+            "value": 10.0,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$T = 2\\pi\\sqrt{\\tfrac{l}{g}}$. Siitä $g = \\dfrac{4\\pi^2 l}{T^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$l = 0{,}400\\,\\text{m}$ ja $g = \\tfrac{4\\pi^2 \\cdot 0{,}400\\,\\text{m}}{(1{,}256\\,\\text{s})^2} \\approx 10{,}0\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 2,
+              "detail": "$\\tfrac{\\Delta g}{g} = 2\\,\\tfrac{\\Delta T}{T} + \\tfrac{\\Delta l}{l} \\approx 5{,}6\\,\\% + 0{,}5\\,\\% \\approx 6{,}1\\,\\%$. Jaksonaika on toisessa potenssissa, joten sen suhteellinen epävarmuus kaksinkertaistuu. $\\Delta g \\approx 0{,}6\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g = (10{,}0 \\pm 0{,}6)\\,\\text{m/s}^2$. Epävarmuudessa on yksi numero, ja tulos on samassa desimaalissa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Sopiiko tulos arvoon $9{,}81\\,\\text{m/s}^2$? Miksi heilahduskulman pitää olla pieni? Ehdota yksi parannus, joka pienentää epävarmuutta. Perustele, mihin se vaikuttaa.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väli $9{,}4 \\ldots 10{,}6\\,\\text{m/s}^2$ sisältää arvon $9{,}81\\,\\text{m/s}^2$. Ero $0{,}2\\,\\text{m/s}^2$ on epävarmuutta pienempi. Tulos sopii mittauksen tarkkuuden rajoissa."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kaava $T = 2\\pi\\sqrt{l/g}$ pätee vain pienillä kulmilla (alle noin $10^\\circ$). Suurella kulmalla jaksonaika on pidempi, jolloin $g$ tulisi liian pieneksi."
+            },
+            {
+              "text": "Parannus kohdistuu ajan mittaukseen, koska ajan osuus epävarmuudesta on suurin ($5{,}6\\,\\%$ ja $0{,}5\\,\\%$). Esimerkiksi $30$ heilahduksen mittaus tai valoportti. $30$ heilahdukselle $\\Delta T/T \\approx 0{,}9\\,\\%$.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "math": "fy5-9",
+        "experiment": "fy1-3",
+        "communication": "fy1-3",
+        "graph": "fy1-4",
+        "transfer": "fy5-9"
       }
     }
   ]
