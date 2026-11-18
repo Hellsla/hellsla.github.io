@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 95d0a676d9ff05f9
+CONTENT-HASH: fe2328407c0d03bc
 
 ## Blocking
 
 ## Polish
-- solutions.md:132 (Kaava row of the deviation, not changed in this round) — the factor $\cdot 100\,\%$ still starts its own row after the fraction; it reads correctly, but one row would match the substitution row below it.
+- solutions.md:132 (deviation, Kaava) — the factor $\cdot 100\,\%$ still starts its own row after the fraction (carried); one row would match the substitution row.
 
 ## Checked
-- Delta round 2: compared with the version passed in round 1 (commit 1ec494e0df) with the row markup (aligned, row breaks, alignment marks, formula delimiters) stripped: exercises.json and solutions.md are character-identical apart from that markup; no number, sign, unit or word changed. answers.py unchanged.
-- L2-07 task text: the quoted student calculation now reads $I = P : U$ $= 60\,\text{W} : 163\,\text{V}$ $= 0{,}37\,\text{A}$ as three adjacent formulas inside the quotation; same chain, same planted error, $60 : 163 = 0{,}368$.
-- solutions.md:113 (share of nominal power): rows are now "$= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\%$" and "$= 26{,}97\,\%$"; the factor $100\,\%$ stays with its fraction. Recomputed: $19{,}8 \cdot 10^{12}\,\text{Wh} : 8784\,\text{h} = 2{,}254 \cdot 10^{9}\,\text{W}$, share $26{,}97\,\%$.
-- solutions.md:134 (deviation): rows "$= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\%$" and "$= 2{,}44\,\%$"; recomputed $2{,}44\,\%$. Each row starts with its relation and the chain reads correctly.
-- Hash identical at start and end.
+- Delta: Kaava steps rewritten as aligned chains from the basic laws, three answer paragraphs split in two; no number, answer, Muunnokset or Sijoitus changed; hash identical at start and end.
+- Peak from effective value: $U = U_0/\sqrt{2} \Rightarrow U_0 = \sqrt{2}\,U$: correct.
+- Graph task: $f = 1/T$, $e_0 = NBA\cdot 2\pi f \Rightarrow B = e_0/(NA\cdot 2\pi f) = e_0 T/(NA\cdot 2\pi)$: correct.
+- Rotation frequency: $\sqrt{2}\,U = NBA\cdot 2\pi f \Rightarrow f = \sqrt{2}\,U/(NBA\cdot 2\pi)$: correct.
+- Doubling task: ratio of $e_{0,i} = NBA\cdot 2\pi f_i$ gives $e_{0,2} = e_{0,1} f_2/f_1$, with $N$, $B$, $A$ constant as the Periaate says: correct.
+- Lamp current $I = P/U$ and resistor power $P = UI$, $I = U/R$, $P = U^2/R = U_0^2/(2R)$: correct, resistive load stated.
+- Wind turbine: $U_i = NBA\cdot 2\pi f_i/\sqrt{2}$, ratio $U_2/U_1 = f_2/f_1$: correct for same $N$, $B$, $A$ (stated in the Periaate).
+- Slope task: $k = NBA\cdot 2\pi \Rightarrow B = k/(NA\cdot 2\pi)$: correct.
+- Paragraph splits (pick-graph explanation, sim observation c and d, deviation c): text identical, physics unchanged.
+- Every chain's last symbolic form is the one the unchanged Sijoitus substitutes into.
