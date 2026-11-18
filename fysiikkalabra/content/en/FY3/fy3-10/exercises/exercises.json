@@ -306,7 +306,7 @@
     {
       "id": "fy3-10-L2-08",
       "level": 2,
-      "text": "A rigid, closed $2.00\\,\\textsf{l}$ bottle contains $0.0800\\,\\text{mol}$ of air, and the pressure of the gas is $100\\,\\text{kPa}$. A student calculates the temperature of the gas in degrees Celsius.\n\nRow 1: $p = 100\\,000\\,\\text{Pa}$ and $V = 0.00200\\,\\text{m}^3$.\n\nRow 2: $pV = nRT$, so $T = \\dfrac{pV}{nR}$.\n\nRow 3: $T = \\dfrac{100\\,000 \\cdot 0.00200}{0.0800 \\cdot 8.31}\\,\\text{K}$, that is, $T \\approx 301\\,\\text{K}$.\n\nRow 4: $\\theta = 301 + 273 = 574\\,{}^\\circ\\text{C}$.\n\nWhich row is wrong? If there is no error in the calculation, choose the last option.",
+      "text": "Example data: a rigid, closed $2.00\\,\\textsf{l}$ bottle contains $0.0800\\,\\text{mol}$ of air, and the pressure of the gas is $100\\,\\text{kPa}$. A student calculates the temperature of the gas in degrees Celsius.\n\nRow 1: $p = 100\\,000\\,\\text{Pa}$ and $V = 0.00200\\,\\text{m}^3$.\n\nRow 2: $pV = nRT$, so $T = \\dfrac{pV}{nR}$.\n\nRow 3: $T = \\dfrac{100\\,000 \\cdot 0.00200}{0.0800 \\cdot 8.31}\\,\\text{K}$, that is, $T \\approx 301\\,\\text{K}$.\n\nRow 4: $\\theta = 301 + 273 = 574\\,{}^\\circ\\text{C}$.\n\nWhich row is wrong? If there is no error in the calculation, choose the last option.",
       "kind": [
         "error",
         "reasoning"

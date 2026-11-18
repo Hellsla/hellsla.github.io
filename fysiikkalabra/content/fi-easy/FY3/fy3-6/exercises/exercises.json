@@ -243,7 +243,7 @@
     {
       "id": "fy3-6-L2-08",
       "level": 2,
-      "text": "Uunista otettu $3{,}0\\,\\text{kg}$:n rautalevy jäähtyy lämpötilasta $220\\,{}^\\circ\\text{C}$ lämpötilaan $40\\,{}^\\circ\\text{C}$. Raudan ominaislämpökapasiteetti on $450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Oppilas selvittää, kuinka paljon energiaa levyn ja ympäristön välillä siirtyy ja mihin suuntaan.\n\nRivi 1: $\\Delta T = 40\\,{}^\\circ\\text{C} - 220\\,{}^\\circ\\text{C}$, eli $\\Delta T = -180\\,\\text{K}$.\n\nRivi 2: $Q = c m \\Delta T$.\n\nRivi 3: $Q = 450 \\cdot 3{,}0 \\cdot (-180)$, eli $Q = -243\\,000\\,\\text{J}$.\n\nRivi 4: lämpömäärä ei voi olla negatiivinen, joten levyyn siirtyy $243\\,\\text{kJ}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
+      "text": "Esimerkkiaineisto: uunista otettu $3{,}0\\,\\text{kg}$:n rautalevy jäähtyy lämpötilasta $220\\,{}^\\circ\\text{C}$ lämpötilaan $40\\,{}^\\circ\\text{C}$. Raudan ominaislämpökapasiteetti on $450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Oppilas selvittää, kuinka paljon energiaa levyn ja ympäristön välillä siirtyy ja mihin suuntaan.\n\nRivi 1: $\\Delta T = 40\\,{}^\\circ\\text{C} - 220\\,{}^\\circ\\text{C}$, eli $\\Delta T = -180\\,\\text{K}$.\n\nRivi 2: $Q = c m \\Delta T$.\n\nRivi 3: $Q = 450 \\cdot 3{,}0 \\cdot (-180)$, eli $Q = -243\\,000\\,\\text{J}$.\n\nRivi 4: lämpömäärä ei voi olla negatiivinen, joten levyyn siirtyy $243\\,\\text{kJ}$.\n\nMikä rivi on väärin? Jos laskussa ei ole virhettä, valitse viimeinen vaihtoehto.",
       "kind": [
         "error",
         "reasoning"

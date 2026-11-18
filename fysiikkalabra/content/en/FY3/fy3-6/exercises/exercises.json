@@ -243,7 +243,7 @@
     {
       "id": "fy3-6-L2-08",
       "level": 2,
-      "text": "An iron plate of mass $3.0\\,\\text{kg}$ taken out of an oven cools from $220\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$. The specific heat capacity of iron is $450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. A student finds out how much energy is transferred between the plate and the surroundings and in which direction.\n\nLine 1: $\\Delta T = 40\\,{}^\\circ\\text{C} - 220\\,{}^\\circ\\text{C}$, that is $\\Delta T = -180\\,\\text{K}$.\n\nLine 2: $Q = c m \\Delta T$.\n\nLine 3: $Q = 450 \\cdot 3.0 \\cdot (-180)$, that is $Q = -243\\,000\\,\\text{J}$.\n\nLine 4: the amount of heat cannot be negative, so $243\\,\\text{kJ}$ is transferred to the plate.\n\nWhich line is wrong? If there is no error in the calculation, choose the last option.",
+      "text": "Sample data: an iron plate of mass $3.0\\,\\text{kg}$ taken out of an oven cools from $220\\,{}^\\circ\\text{C}$ to $40\\,{}^\\circ\\text{C}$. The specific heat capacity of iron is $450\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. A student finds out how much energy is transferred between the plate and the surroundings and in which direction.\n\nLine 1: $\\Delta T = 40\\,{}^\\circ\\text{C} - 220\\,{}^\\circ\\text{C}$, that is $\\Delta T = -180\\,\\text{K}$.\n\nLine 2: $Q = c m \\Delta T$.\n\nLine 3: $Q = 450 \\cdot 3.0 \\cdot (-180)$, that is $Q = -243\\,000\\,\\text{J}$.\n\nLine 4: the amount of heat cannot be negative, so $243\\,\\text{kJ}$ is transferred to the plate.\n\nWhich line is wrong? If there is no error in the calculation, choose the last option.",
       "kind": [
         "error",
         "reasoning"

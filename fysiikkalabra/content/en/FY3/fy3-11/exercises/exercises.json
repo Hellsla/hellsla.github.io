@@ -164,7 +164,7 @@
     {
       "id": "fy3-11-L2-05",
       "level": 2,
-      "text": "In a test run of a diesel generator, the mechanical power $P$ of the engine and the fuel consumption $q_m$ in kilograms per hour were measured at four different loads. The heat of combustion of diesel fuel is $43\\,\\text{MJ/kg}$. At which load is the efficiency of the engine greatest? Give this greatest efficiency as a percentage as the answer.",
+      "text": "Example data: in a test run of a diesel generator, the mechanical power $P$ of the engine and the fuel consumption $q_m$ in kilograms per hour were measured at four different loads. The heat of combustion of diesel fuel is $43\\,\\text{MJ/kg}$. At which load is the efficiency of the engine greatest? Give this greatest efficiency as a percentage as the answer.",
       "kind": [
         "data"
       ],
@@ -232,7 +232,7 @@
     {
       "id": "fy3-11-L2-07",
       "level": 2,
-      "text": "The operation of the air-source heat pump of a school was followed for four days. For each day the electrical energy $W$ used by the pump and the heat given out indoors $Q_1$ were measured. How much heat did the pump take from the outdoor air in total during these four days? Give the answer in kilowatt-hours.",
+      "text": "Example data: the operation of the air-source heat pump of a school was followed for four days. For each day the electrical energy $W$ used by the pump and the heat given out indoors $Q_1$ were measured. How much heat did the pump take from the outdoor air in total during these four days? Give the answer in kilowatt-hours.",
       "kind": [
         "data"
       ],
@@ -373,7 +373,7 @@
     {
       "id": "fy3-11-L3-04",
       "level": 3,
-      "text": "The heating of a detached house is being planned with a heat pump. The table shows the monthly heat demand $Q$ of the house in the winter season and the coefficient of performance $\\varepsilon$ of the pump at the average outdoor temperature of each month. The heat demand is covered entirely by the pump.\n\na) Calculate the electrical energy $W$ that the pump uses in each month, and the total electrical energy of all the months.\n\nb) Calculate the coefficient of performance of the season $\\varepsilon_\\text{season}$, which is the ratio of the heat given out during the whole season to the electrical energy of the whole season.\n\nc) Explain why the coefficient of performance of the season must not be calculated as the ordinary average of the monthly coefficients of performance, and calculate how much electricity the pump saves compared with direct electric heating, where all the heat comes from electricity.\n\nWrite the result of part b) in the answer box.",
+      "text": "Example data: the heating of a detached house is being planned with a heat pump. The table shows the monthly heat demand $Q$ of the house in the winter season and the coefficient of performance $\\varepsilon$ of the pump at the average outdoor temperature of each month. The heat demand is covered entirely by the pump.\n\na) Calculate the electrical energy $W$ that the pump uses in each month, and the total electrical energy of all the months.\n\nb) Calculate the coefficient of performance of the season $\\varepsilon_\\text{season}$, which is the ratio of the heat given out during the whole season to the electrical energy of the whole season.\n\nc) Explain why the coefficient of performance of the season must not be calculated as the ordinary average of the monthly coefficients of performance, and calculate how much electricity the pump saves compared with direct electric heating, where all the heat comes from electricity.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "data",
         "model"
@@ -426,7 +426,7 @@
     {
       "id": "fy3-11-L3-05",
       "level": 3,
-      "text": "In a vertical cylinder there is air closed by a lightly moving piston. The cross-sectional area of the cylinder is $A = 200\\,\\text{cm}^2$, and according to the measurements the pressure of the air stays constant at $p = 125\\,\\text{kPa}$. The air is heated with an electric resistor whose power is $260\\,\\text{W}$. Assume that all the energy given out by the resistor is transferred to the air as heat. The table gives the height $h$ of the piston, measured from the bottom of the cylinder, during the heating.\n\na) Calculate the heat $Q$ transferred to the air in four seconds and the work $W$ done by the air, using the first and last values of the table.\n\nb) Calculate the change in the internal energy of the air $\\Delta U$.\n\nc) Calculate what share of the heat turned into work, and justify why a single expansion like this is not yet a heat engine.\n\nWrite the result of part b) in kilojoules in the answer box.",
+      "text": "Example data: in a vertical cylinder there is air closed by a lightly moving piston. The cross-sectional area of the cylinder is $A = 200\\,\\text{cm}^2$, and according to the measurements the pressure of the air stays constant at $p = 125\\,\\text{kPa}$. The air is heated with an electric resistor whose power is $260\\,\\text{W}$. Assume that all the energy given out by the resistor is transferred to the air as heat. The table gives the height $h$ of the piston, measured from the bottom of the cylinder, during the heating.\n\na) Calculate the heat $Q$ transferred to the air in four seconds and the work $W$ done by the air, using the first and last values of the table.\n\nb) Calculate the change in the internal energy of the air $\\Delta U$.\n\nc) Calculate what share of the heat turned into work, and justify why a single expansion like this is not yet a heat engine.\n\nWrite the result of part b) in kilojoules in the answer box.",
       "kind": [
         "data",
         "model"
