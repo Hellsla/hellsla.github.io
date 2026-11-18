@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9b44845a75fe196a
-SCOPE: delta: the new Sovella itsenäisesti tasks s7 (Kärry radalla, figure fy4-1/ex-kolme-osaa) and s8 (Kaksi kulkijaa samalla tiellä, figure fy4-1/ex-kaksi-kappaletta) with their solutions, and the unit intro; s1–s6 untouched. 
+CONTENT-HASH: 4f3fa501813f33a8
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] sovella/solutions.md s7 Yleisiä virheitä, last item: "tai kuljetusta matkasta" is ungrammatical; write "tai kuljetun matkan perusteella".
-- [Minor] fy4-1/ex-kaksi-kappaletta alt text says "Kappale A/B" while task s8 says "kulkija"; the figure is shared, so only note it, or name both ("kulkija") in the task text.
-- [Minor] s7 and s8 graphs are small at 390 px (tick labels about 9 px); legible, but a larger render would help.
+- none
 
 ## Checked
-- Captures opened (fi, 390 px, stage-exercises parts 50, 51, 53, 54, 55, 59, 60, 62, 64, 69): the s7 and s8 task cards with their (t,x) graphs, the opened solutions, the aligned calculation rows (a–d), the fractions and the answer boxes, and the self-assessment rows. Nothing is clipped or overflowing; the graphs are legible with units on both axes and the points marked; the axes of s7 and s8 use the figure palette (A blue, B orange, no force/velocity colour clash).
-- check_layout.py at 360 px for all three language pages: OK, with one known clipped formula from docs/clipped-formulas/FY9.tsv; it is in the older text (fy9-liike: `(20 km/h + 60 km/h) : 2 = 40 km/h`), not in s7 or s8.
-- Finnish and translations are cut identically (671 lines and 71 display blocks per solutions.md), so the layout carries over.
+- Diff origin/main...HEAD (fi, excluding review/): only paragraph breaks in sovella/solutions.md (train a-part model answer split into two paragraphs) and inquiry.json (moped/car model answer split into three paragraphs). Words, maths and figures unchanged; each new paragraph is one idea under about 120 words, which improves readability.
+- Captures fy9-liike-stage-sovella-390-5.png and fy9-liike-stage-sovella-390-3.png, and contact-10.png: open solutions render in the single column, formulas unclipped, figures intact, no overflow.
+- The earlier Sovella visual PASS (unit's sovella review packet) is consistent with this; the prior unit PASS stands over a paragraph-only change.

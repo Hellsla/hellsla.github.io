@@ -96,7 +96,11 @@ $$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}02362 = 7080\,\text{km/s}$ 
 ### d)
 **Kysytty:** miksi vedyn viivat näkyvät galaksin spektrissä tummina
 **Periaate:** Kuuma, tiheä kappale lähettää jatkuvan spektrin. Harva kaasu absorboi vain fotoneja, joiden energia on täsmälleen kahden energiatason erotus (luvut *Spektrit paljastavat atomin energiatasot* ja *Vetyatomin energiatasot ja Bohrin malli*).
-**Mallivastaus:** Galaksin valo on sen tähtien valoa. Tähden kuuma, tiheä pinta lähettää jatkuvan spektrin, jossa on kaikkia aallonpituuksia. Valo kulkee tähden uloimpien, harvempien ja viileämpien kaasukerrosten läpi, ja niissä on vetyä. Vetyatomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden energiatason erotus, esimerkiksi $E_3 - E_2 = 1{,}89\,\text{eV}$ punaiselle viivalle. Atomi virittyy ja purkautuu pian lähettämällä samanlaisen fotonin, mutta satunnaiseen suuntaan. Siksi meidän suuntaamme tulee näillä aallonpituuksilla vähemmän valoa kuin viereisillä, ja viivat näkyvät tummina absorptioviivoina. Kirkkaita viivoja nähtäisiin, jos katsottaisiin harvaa kuumaa kaasua ilman sen takana olevaa jatkuvaa spektriä, kuten kaasupurkausputkessa.
+**Mallivastaus:** Galaksin valo on sen tähtien valoa. Tähden kuuma, tiheä pinta lähettää jatkuvan spektrin, jossa on kaikkia aallonpituuksia. Valo kulkee tähden uloimpien, harvempien ja viileämpien kaasukerrosten läpi, ja niissä on vetyä.
+
+Vetyatomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden energiatason erotus, esimerkiksi $E_3 - E_2 = 1{,}89\,\text{eV}$ punaiselle viivalle. Atomi virittyy ja purkautuu pian lähettämällä samanlaisen fotonin, mutta satunnaiseen suuntaan. Siksi meidän suuntaamme tulee näillä aallonpituuksilla vähemmän valoa kuin viereisillä, ja viivat näkyvät tummina absorptioviivoina.
+
+Kirkkaita viivoja nähtäisiin, jos katsottaisiin harvaa kuumaa kaasua ilman sen takana olevaa jatkuvaa spektriä, kuten kaasupurkausputkessa.
 
 ### Yleisiä virheitä
 - a-kohdassa lasketaan yhden tason energia, esimerkiksi $|E_3| = 1{,}51\,\text{eV}$, eikä tasojen erotusta.
@@ -172,7 +176,11 @@ $$, koska $1 + z$ on havaitun ja laboratorioarvon suhde.
 
 ### b)
 **Kysytty:** perustelu sille, että pisteisiin sopii suora, sovitettu suora ja sen jatke akseleille
-**Kuvaaja:** Yksi fotoni luovuttaa koko energiansa $hf$ yhdelle elektronille. Osa energiasta kuluu irrotustyöhön $W$, ja nopeimmalle elektronille jää liike-energia $E_\text{k,max} = hf - W$ (luku *Valosähköinen ilmiö ja fotoni*). Kun anodi on katodia negatiivisempi, sähkökenttä jarruttaa elektronia, ja sen liike-energia muuttuu sähköiseksi potentiaalienergiaksi. Virta lakkaa, kun nopeinkin elektroni pysähtyy juuri ennen anodia: $eU = E_\text{k,max}$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Yhdistämällä saadaan $eU = hf - W$ eli $U = \tfrac{h}{e}\,f - \tfrac{W}{e}$, joten $U$ on taajuuden lineaarinen funktio, jonka kulmakerroin on $\tfrac{h}{e}$ ja vakiotermi $-\tfrac{W}{e}$. Suora sovitetaan pisteiden lomitse ja jatketaan katkoviivana pystyakselille asti, koska vakiotermi tarvitaan irrotustyön määrittämiseen (luku *Graafinen esitys ja suoran sovittaminen*).
+**Kuvaaja:** Yksi fotoni luovuttaa koko energiansa $hf$ yhdelle elektronille. Osa energiasta kuluu irrotustyöhön $W$, ja nopeimmalle elektronille jää liike-energia $E_\text{k,max} = hf - W$ (luku *Valosähköinen ilmiö ja fotoni*).
+
+Kun anodi on katodia negatiivisempi, sähkökenttä jarruttaa elektronia, ja sen liike-energia muuttuu sähköiseksi potentiaalienergiaksi. Virta lakkaa, kun nopeinkin elektroni pysähtyy juuri ennen anodia: $eU = E_\text{k,max}$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*).
+
+Yhdistämällä saadaan $eU = hf - W$ eli $U = \tfrac{h}{e}\,f - \tfrac{W}{e}$, joten $U$ on taajuuden lineaarinen funktio, jonka kulmakerroin on $\tfrac{h}{e}$ ja vakiotermi $-\tfrac{W}{e}$. Suora sovitetaan pisteiden lomitse ja jatketaan katkoviivana pystyakselille asti, koska vakiotermi tarvitaan irrotustyön määrittämiseen (luku *Graafinen esitys ja suoran sovittaminen*).
 
 <svg data-fig="fy9-moderni-s3-fit" viewBox="0 0 600 470" role="img" aria-label="Kuvaaja: pysäytysjännite U voltteina valon taajuuden f funktiona, taajuusakseli nollasta 9 kertaa 10 potenssiin 14 hertsiin ja jänniteakseli miinus 2,5:stä plus 1,5 volttiin. Viiteen pisteeseen on sovitettu nouseva suora, jota on jatkettu katkoviivana pystyakselille asti. Suora leikkaa pystyakselin noin arvossa miinus 2,24 volttia ja vaaka-akselin noin kohdassa 5,43 kertaa 10 potenssiin 14 hertsiä. Suoralta on ympyröity lukemiseen käytetyt pisteet nolla ja miinus 2,24 volttia sekä 8,0 kertaa 10 potenssiin 14 hertsiä ja 1,06 volttia." style="max-width:100%;font-size:28px">
   <line x1="130.5" y1="410" x2="130.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -287,18 +295,34 @@ $$
 
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa ja miten radon aiheuttaa säteilyannoksen
-**Periaate:** Alfahiukkanen on raskas ja kaksinkertaisesti varattu, joten se ionisoi tiheästi ja menettää energiansa lyhyellä matkalla: ilmassa muutamassa senttimetrissä ja kudoksessa alle kymmenesosamillimetrissä. Ulkopuolinen alfasäteily pysähtyy ihon kuolleeseen pintakerrokseen, mutta elimistön sisällä alfahiukkanen osuu suoraan eläviin soluihin. Siksi sen säteilyn painotuskerroin on $20$ (luku *Ionisoiva säteily ja elimistö*). Radon on kaasu, ja sen lyhytikäiset hajoamistuotteet ovat kiinteitä aineita, jotka tarttuvat ilman pölyhiukkasiin (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
-**Mallivastaus:** Väitteen ensimmäinen osa pitää paikkansa: radonin alfasäteily ei läpäise paperia eikä ihoa, joten huoneen ilmassa oleva radon ei säteilytä ihoa vaarallisesti ulkopuolelta. Johtopäätös on silti väärä. Radon ja sen hajoamistuotteet, poloniumin, lyijyn ja vismutin isotoopit, hengitetään keuhkoihin, ja hajoamistuotteet tarttuvat keuhkoputkien pintaan. Siellä niiden alfahiukkaset osuvat suoraan keuhkojen soluihin. Alfahiukkanen luovuttaa koko energiansa, useita megaelektronivoltteja, muutaman solun matkalle ja voi katkaista DNA:n molemmat juosteet. Siksi saman absorboituneen annoksen ekvivalenttiannos on $20$-kertainen fotonisäteilyyn verrattuna. Radon on Suomessa suurin yksittäinen säteilyannoksen lähde ja tupakoinnin jälkeen yleisin keuhkosyövän aiheuttaja. Asunnon $450\,\tfrac{\text{Bq}}{\text{m}^3}$ ylittää viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$ $1{,}5$-kertaisesti, joten korjaustoimet kannattavat.
+**Periaate:** Alfahiukkanen on raskas ja kaksinkertaisesti varattu, joten se ionisoi tiheästi ja menettää energiansa lyhyellä matkalla: ilmassa muutamassa senttimetrissä ja kudoksessa alle kymmenesosamillimetrissä. Ulkopuolinen alfasäteily pysähtyy ihon kuolleeseen pintakerrokseen, mutta elimistön sisällä alfahiukkanen osuu suoraan eläviin soluihin. Siksi sen säteilyn painotuskerroin on $20$ (luku *Ionisoiva säteily ja elimistö*).
+
+Radon on kaasu, ja sen lyhytikäiset hajoamistuotteet ovat kiinteitä aineita, jotka tarttuvat ilman pölyhiukkasiin (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+**Mallivastaus:** Väitteen ensimmäinen osa pitää paikkansa: radonin alfasäteily ei läpäise paperia eikä ihoa, joten huoneen ilmassa oleva radon ei säteilytä ihoa vaarallisesti ulkopuolelta. Johtopäätös on silti väärä.
+
+Radon ja sen hajoamistuotteet, poloniumin, lyijyn ja vismutin isotoopit, hengitetään keuhkoihin, ja hajoamistuotteet tarttuvat keuhkoputkien pintaan. Siellä niiden alfahiukkaset osuvat suoraan keuhkojen soluihin. Alfahiukkanen luovuttaa koko energiansa, useita megaelektronivoltteja, muutaman solun matkalle ja voi katkaista DNA:n molemmat juosteet. Siksi saman absorboituneen annoksen ekvivalenttiannos on $20$-kertainen fotonisäteilyyn verrattuna.
+
+Radon on Suomessa suurin yksittäinen säteilyannoksen lähde ja tupakoinnin jälkeen yleisin keuhkosyövän aiheuttaja. Asunnon $450\,\tfrac{\text{Bq}}{\text{m}^3}$ ylittää viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$ $1{,}5$-kertaisesti, joten korjaustoimet kannattavat.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, kuinka suuri osa radonytimistä on hajoamatta kuukauden kuluttua ja häviääkö radon
 **Periaate:** Suuri joukko radonytimiä hajoaa hajoamislain mukaan, ja jäljellä oleva osuus on $\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ (luku *Hajoamislaki ja puoliintumisaika*). Laki koskee vain ytimiä, jotka ovat huoneessa alussa. Uusia radonytimiä syntyy jatkuvasti maaperän uraanin hajoamissarjassa radiumista, ja niitä virtaa sisään perustusten raoista (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
-**Mallivastaus:** Kuukaudessa, $30\,\text{vrk}$, on $\tfrac{30\,\text{vrk}}{3{,}8\,\text{vrk}} = 7{,}89$ puoliintumisaikaa, joten huoneessa alussa olleista radonytimistä on jäljellä $\left(\tfrac{1}{2}\right)^{7{,}89} = 0{,}0042$, eli noin $0{,}4\,\%$. Laskelma on oikein, mutta väite on silti väärä. Radonin emoaine radium-226, jonka puoliintumisaika on noin $1600$ vuotta, ja hajoamissarjan alku uraani-238 ovat maaperässä ja kalliossa, joten radonia syntyy koko ajan uudelleen. Kun lämmin sisäilma nousee ylös ja poistuu, talon alaosaan syntyy alipaine, joka imee maaperän radonpitoista ilmaa perustusten raoista sisään. Kun ikkunat ovat kiinni, radonia hajoaa ja tulee sisään yhtä paljon, ja pitoisuus asettuu korkealle tasolle. Tiiviisti suljetussa asunnossa pitoisuus yleensä kasvaa, koska ilma vaihtuu vähemmän. Pitoisuutta pienennetään tehostamalla ilmanvaihtoa, tiivistämällä perustusten raot ja asentamalla radonimuri, joka imee ilman talon alta ulos.
+**Mallivastaus:** Kuukaudessa, $30\,\text{vrk}$, on $\tfrac{30\,\text{vrk}}{3{,}8\,\text{vrk}} = 7{,}89$ puoliintumisaikaa, joten huoneessa alussa olleista radonytimistä on jäljellä $\left(\tfrac{1}{2}\right)^{7{,}89} = 0{,}0042$, eli noin $0{,}4\,\%$. Laskelma on oikein, mutta väite on silti väärä.
+
+Radonin emoaine radium-226, jonka puoliintumisaika on noin $1600$ vuotta, ja hajoamissarjan alku uraani-238 ovat maaperässä ja kalliossa, joten radonia syntyy koko ajan uudelleen.
+
+Kun lämmin sisäilma nousee ylös ja poistuu, talon alaosaan syntyy alipaine, joka imee maaperän radonpitoista ilmaa perustusten raoista sisään. Kun ikkunat ovat kiinni, radonia hajoaa ja tulee sisään yhtä paljon, ja pitoisuus asettuu korkealle tasolle. Tiiviisti suljetussa asunnossa pitoisuus yleensä kasvaa, koska ilma vaihtuu vähemmän.
+
+Pitoisuutta pienennetään tehostamalla ilmanvaihtoa, tiivistämällä perustusten raot ja asentamalla radonimuri, joka imee ilman talon alta ulos.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa
 **Periaate:** Radioaktiivisuus on epävakaiden ytimien ominaisuus: ydin hajoaa ja lähettää säteilyä. Röntgensäteily on fotonisäteilyä, joka syntyy röntgenputkessa vain, kun putkessa on jännite (luku *Säteily lääketieteessä ja teknologiassa*). Röntgenfotonin energia, noin $60\,\text{keV}$, riittää ionisoimaan atomeja, mutta on liian pieni muuttamaan ytimiä (luku *Ionisoiva säteily ja elimistö*).
-**Mallivastaus:** Väite on väärä. Hammasröntgenissä naapuria säteilytettiin hetken ulkoisella röntgensäteilyllä. Jokainen fotoni joko kulki kudoksen läpi kuvalevylle tai absorboitui ja ionisoi atomin kuvauksen aikana. Fotoneja ei jää elimistöön, eikä niiden energia, noin $60\,\text{keV}$, riitä muuttamaan atomiytimiä epävakaiksi, sillä ytimen hiukkasten sidosenergiat ovat megaelektronivolttien luokkaa. Kun laite sammuu, säteilyä ei enää ole, ja naapuri on säteilyn kannalta täsmälleen samanlainen kuin ennen. Ihminen voi olla hetkellisesti säteilylähde vain, jos hänen elimistöönsä viedään radioaktiivista ainetta, kuten isotooppitutkimuksen merkkiainetta tai kilpirauhasen jodihoidossa. Silloin ohjeet annetaan sairaalassa. Lasten ei siis tarvitse välttää naapuria. Hammasröntgenkuvan annos, noin $0{,}01\,\text{mSv}$, on lisäksi pieni verrattuna asunnon radonin annokseen.
+**Mallivastaus:** Väite on väärä. Hammasröntgenissä naapuria säteilytettiin hetken ulkoisella röntgensäteilyllä. Jokainen fotoni joko kulki kudoksen läpi kuvalevylle tai absorboitui ja ionisoi atomin kuvauksen aikana.
+
+Fotoneja ei jää elimistöön, eikä niiden energia, noin $60\,\text{keV}$, riitä muuttamaan atomiytimiä epävakaiksi, sillä ytimen hiukkasten sidosenergiat ovat megaelektronivolttien luokkaa. Kun laite sammuu, säteilyä ei enää ole, ja naapuri on säteilyn kannalta täsmälleen samanlainen kuin ennen.
+
+Ihminen voi olla hetkellisesti säteilylähde vain, jos hänen elimistöönsä viedään radioaktiivista ainetta, kuten isotooppitutkimuksen merkkiainetta tai kilpirauhasen jodihoidossa. Silloin ohjeet annetaan sairaalassa. Lasten ei siis tarvitse välttää naapuria. Hammasröntgenkuvan annos, noin $0{,}01\,\text{mSv}$, on lisäksi pieni verrattuna asunnon radonin annokseen.
 
 ### Yleisiä virheitä
 - a-kohdassa alfasäteilyn sanotaan olevan vaaratonta tai vaarallista ilman, että erotetaan ulkoinen säteily ja hengitetyt hajoamistuotteet.
@@ -322,12 +346,22 @@ $$
 ### b)
 **Kysytty:** ryhmän johtopäätöksen arvio
 **Periaate:** Ytimellä ei ole muistia eikä ikää: jokainen barium-137m-ydin hajoaa samalla todennäköisyydellä sekunnissa riippumatta siitä, kuinka kauan se on ollut olemassa (luku *Hajoamislaki ja puoliintumisaika*). GM-putken pulssimäärä vaihtelee satunnaisesti noin $\sqrt{N}$:n verran (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Ryhmän selitys on väärä. Minuutin seisominen pienentää näytteen aktiivisuutta, mutta ei muuta puoliintumisaikaa, koska jäljellä olevat ytimet hajoavat täsmälleen samalla todennäköisyydellä kuin aiemmin. Ero johtuu menetelmästä. Ryhmä luki puoliintumisajan yhden pisteparin väliltä, ja yksittäinen lukema vaihtelee satunnaisesti: $212$ pulssin lukeman epävarmuus on noin $\sqrt{212} \approx 15$ pulssia eli $7\,\%$. Kohdan $150\,\text{s}$ lukema on sattumalta suuri, mikä siirtää lukemaa myöhemmäksi. Myös taustan sivuuttaminen oli virhe. Alussa tausta on vain $1\,\%$ lukemasta, mutta lopussa jo $5\,\%$, ja vähentämättä jätetty tausta hidastaa näennäisesti vähenemistä ja pidentää puoliintumisaikaa. Lisäksi taustaa mitattiin vain kerran $10\,\text{s}$, joten sen arvo $5 \pm 2$ on hyvin epätarkka. Johtopäätös ”$166\,\text{s}$” ei siis ole luotettava. Kaikista pisteistä taustan vähentämisen jälkeen saadaan noin $153\,\text{s}$, mikä vastaa kirjan arvoa.
+**Mallivastaus:** Ryhmän selitys on väärä. Minuutin seisominen pienentää näytteen aktiivisuutta, mutta ei muuta puoliintumisaikaa, koska jäljellä olevat ytimet hajoavat täsmälleen samalla todennäköisyydellä kuin aiemmin.
+
+Ero johtuu menetelmästä. Ryhmä luki puoliintumisajan yhden pisteparin väliltä, ja yksittäinen lukema vaihtelee satunnaisesti: $212$ pulssin lukeman epävarmuus on noin $\sqrt{212} \approx 15$ pulssia eli $7\,\%$. Kohdan $150\,\text{s}$ lukema on sattumalta suuri, mikä siirtää lukemaa myöhemmäksi.
+
+Myös taustan sivuuttaminen oli virhe. Alussa tausta on vain $1\,\%$ lukemasta, mutta lopussa jo $5\,\%$, ja vähentämättä jätetty tausta hidastaa näennäisesti vähenemistä ja pidentää puoliintumisaikaa. Lisäksi taustaa mitattiin vain kerran $10\,\text{s}$, joten sen arvo $5 \pm 2$ on hyvin epätarkka.
+
+Johtopäätös ”$166\,\text{s}$” ei siis ole luotettava. Kaikista pisteistä taustan vähentämisen jälkeen saadaan noin $153\,\text{s}$, mikä vastaa kirjan arvoa.
 
 ### c)
 **Kysytty:** miten mittausta ja tulosten käsittelyä parannetaan
 **Periaate:** Satunnaisvirhe pienenee, kun pulsseja lasketaan enemmän tai mittaus toistetaan, ja systemaattinen virhe poistetaan korjaamalla sen syy. Kaikki mittauspisteet otetaan käyttöön sovittamalla malli (luvut *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi* ja *Graafinen esitys ja suoran sovittaminen*).
-**Mallivastaus:** Taustaa mitataan ennen mittausta ja sen jälkeen pitkään, esimerkiksi $10\,\text{min}$, jolloin pulsseja kertyy noin $300$ ja taustan epävarmuus on noin $6\,\%$ eikä $45\,\%$. Tausta muunnetaan samaan yksikköön, pulssia $10\,\text{s}$:ssa, ja vähennetään jokaisesta lukemasta. Laskenta-aikaa voi pidentää esimerkiksi $20\,\text{s}$:iin ja mitata tiheämmin, jolloin yksittäisen lukeman suhteellinen epävarmuus pienenee. Kaikki pisteet käytetään: piirretään $\ln(N - N_\text{tausta})$ ajan funktiona, ja suoran kulmakerroin on $-\tfrac{\ln 2}{T_{1/2}}$, tai sovitetaan laskimella malli $N = A\,e^{-Ct} + B$, jossa vakio $B$ on tausta. Mittaus toistetaan uudella näytteellä, ja tuloksia verrataan, jolloin nähdään hajonta. Näytteen etäisyys GM-putkesta pidetään koko ajan samana. Ilmoitetaan tulos epävarmuuksineen, esimerkiksi $T_{1/2} = (152 \pm 4)\,\text{s}$.
+**Mallivastaus:** Taustaa mitataan ennen mittausta ja sen jälkeen pitkään, esimerkiksi $10\,\text{min}$, jolloin pulsseja kertyy noin $300$ ja taustan epävarmuus on noin $6\,\%$ eikä $45\,\%$. Tausta muunnetaan samaan yksikköön, pulssia $10\,\text{s}$:ssa, ja vähennetään jokaisesta lukemasta.
+
+Laskenta-aikaa voi pidentää esimerkiksi $20\,\text{s}$:iin ja mitata tiheämmin, jolloin yksittäisen lukeman suhteellinen epävarmuus pienenee. Kaikki pisteet käytetään: piirretään $\ln(N - N_\text{tausta})$ ajan funktiona, ja suoran kulmakerroin on $-\tfrac{\ln 2}{T_{1/2}}$, tai sovitetaan laskimella malli $N = A\,e^{-Ct} + B$, jossa vakio $B$ on tausta.
+
+Mittaus toistetaan uudella näytteellä, ja tuloksia verrataan, jolloin nähdään hajonta. Näytteen etäisyys GM-putkesta pidetään koko ajan samana. Ilmoitetaan tulos epävarmuuksineen, esimerkiksi $T_{1/2} = (152 \pm 4)\,\text{s}$.
 
 ### Yleisiä virheitä
 - a-kohdassa taustaa ei vähennetä tai se vähennetään vain alkulukemasta.
@@ -398,7 +432,9 @@ $$ ja $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 ### a)
 **Kysytty:** miten fuusioreaktio saatiin aikaan ja mitä aineiston kaksi energiaa tarkoittavat
 **Periaate:** Fuusiossa kevyet ytimet yhdistyvät raskaammaksi ytimeksi, ja energiaa vapautuu. Ytimet ovat positiivisesti varattuja ja hylkivät toisiaan, joten ne pääsevät yhdistymään vain hyvin kuumassa ja tiheässä aineessa (luku *Fissio, fuusio ja ydinvoima*).
-**Mallivastaus:** Aineiston mukaan (Yle Uutiset 12.12.2022, tarkistettu 16.11.2026) koe tehtiin Lawrence Livermoren kansallisessa laboratoriossa Kaliforniassa. Suurten laserien säteet kohdistettiin yhteen pisteeseen, jossa polttoaine oli. Laserien tuoma energia kuumensi polttoaineen niin, että sen ytimet yhdistyivät raskaammiksi ytimiksi: syntyi heliumia, ja energiaa vapautui. Energioista $3{,}15\,\text{MJ}$ on fuusioreaktiossa vapautunut energia. $2{,}05\,\text{MJ}$ on energia, joka kokeessa käytettiin reaktion käynnistämiseen, eli laserien polttoaineeseen tuoma energia. Artikkelin korjausmerkinnän mukaan siinä ei ole mukana laserien toimintaan kulunutta energiaa.
+**Mallivastaus:** Aineiston mukaan (Yle Uutiset 12.12.2022, tarkistettu 16.11.2026) koe tehtiin Lawrence Livermoren kansallisessa laboratoriossa Kaliforniassa. Suurten laserien säteet kohdistettiin yhteen pisteeseen, jossa polttoaine oli. Laserien tuoma energia kuumensi polttoaineen niin, että sen ytimet yhdistyivät raskaammiksi ytimiksi: syntyi heliumia, ja energiaa vapautui.
+
+Energioista $3{,}15\,\text{MJ}$ on fuusioreaktiossa vapautunut energia. $2{,}05\,\text{MJ}$ on energia, joka kokeessa käytettiin reaktion käynnistämiseen, eli laserien polttoaineeseen tuoma energia. Artikkelin korjausmerkinnän mukaan siinä ei ole mukana laserien toimintaan kulunutta energiaa.
 
 ### b)
 **Annettu:** fuusiossa vapautunut energia $E_\text{f} = 3{,}15\,\text{MJ}$, laserien polttoaineeseen tuoma energia $E_\text{l} = 2{,}05\,\text{MJ}$ (aineisto, tarkistettu 16.11.2026)
@@ -429,17 +465,33 @@ $$
 ### d)
 **Kysytty:** miksi tulos ei osoita, että koko koelaitteisto tuotti enemmän energiaa kuin kulutti, ja kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella
 **Periaate:** Energiatase riippuu siitä, miten systeemi rajataan (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*). Laitteen hyötysuhde on hyödyksi saadun energian ja laitteen ottaman energian suhde (luku *Hyötysuhde*). Lämpövoimala muuttaa sähköksi vain osan lämpönä saamastaan energiasta (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).
-**Mallivastaus:** Vertailu $3{,}15\,\text{MJ} > 2{,}05\,\text{MJ}$ koskee vain polttoainetta: siitä vapautui enemmän energiaa kuin laserit siihen toivat. Aineiston mukaan luvussa $2{,}05\,\text{MJ}$ ei ole mukana laserien toimintaan kulunutta energiaa. Kun systeemiksi rajataan koko koelaitteisto, sen ottama energia on verkosta otettu sähköenergia $E_\text{v} \approx 300\,\text{MJ}$. Silloin $$
+**Mallivastaus:** Vertailu $3{,}15\,\text{MJ} > 2{,}05\,\text{MJ}$ koskee vain polttoainetta: siitä vapautui enemmän energiaa kuin laserit siihen toivat. Aineiston mukaan luvussa $2{,}05\,\text{MJ}$ ei ole mukana laserien toimintaan kulunutta energiaa.
+
+Kun systeemiksi rajataan koko koelaitteisto, sen ottama energia on verkosta otettu sähköenergia $E_\text{v} \approx 300\,\text{MJ}$. Silloin $$
 \begin{aligned}
 \dfrac{E_\text{f}}{E_\text{v}} &= \dfrac{3{,}15\,\text{MJ}}{300\,\text{MJ}} \\
 &= 0{,}0105 \approx 1\,\%
 \end{aligned}
-$$ Fuusiossa vapautui siis vain noin sadasosa energiasta, jonka laitteisto otti verkosta. Polttoaineeseen päätyi laserien ottamasta energiasta vain $\dfrac{2{,}05\,\text{MJ}}{300\,\text{MJ}} \approx 0{,}7\,\%$. Loppu kasvatti laitteiston ja ympäristön sisäenergiaa. Lisäksi vapautunutta energiaa ei muutettu sähköksi. Jos se otettaisiin talteen lämpönä ja lämpövoimala muuttaisi siitä kolmasosan sähköksi, sähköä saataisiin noin $\tfrac{1}{3} \cdot 3{,}15\,\text{MJ} = 1{,}05\,\text{MJ}$. Se on noin $0{,}35\,\%$ eli alle puoli prosenttia verkosta otetusta energiasta. Koko laitteisto kulutti siis noin sata kertaa enemmän energiaa kuin fuusiossa vapautui. Voimalassa fuusiosta saadun sähköenergian pitäisi olla selvästi suurempi kuin laitteiston ottama sähköenergia, ja laukauksia pitäisi toistaa jatkuvasti.
+$$ Fuusiossa vapautui siis vain noin sadasosa energiasta, jonka laitteisto otti verkosta.
+
+Polttoaineeseen päätyi laserien ottamasta energiasta vain $\dfrac{2{,}05\,\text{MJ}}{300\,\text{MJ}} \approx 0{,}7\,\%$. Loppu kasvatti laitteiston ja ympäristön sisäenergiaa.
+
+Lisäksi vapautunutta energiaa ei muutettu sähköksi. Jos se otettaisiin talteen lämpönä ja lämpövoimala muuttaisi siitä kolmasosan sähköksi, sähköä saataisiin noin $\tfrac{1}{3} \cdot 3{,}15\,\text{MJ} = 1{,}05\,\text{MJ}$. Se on noin $0{,}35\,\%$ eli alle puoli prosenttia verkosta otetusta energiasta.
+
+Koko laitteisto kulutti siis noin sata kertaa enemmän energiaa kuin fuusiossa vapautui. Voimalassa fuusiosta saadun sähköenergian pitäisi olla selvästi suurempi kuin laitteiston ottama sähköenergia, ja laukauksia pitäisi toistaa jatkuvasti.
 
 ### e)
 **Kysytty:** mitä keksityssä otsikossa pitäisi täsmentää ja miksi tulos ei riko energian säilymistä
 **Periaate:** Energia säilyy: sitä ei synny tyhjästä eikä häviä (luku *Energialajit ja energian säilyminen*). Ydinreaktiossa vapautuva energia vastaa massan pienenemistä, $E = \Delta m c^2$ (luvut *Massavaje ja ytimen sidosenergia* ja *Fissio, fuusio ja ydinvoima*). Väitettä arvioitaessa tarkistetaan, mitä systeemiä ja mitä energioita se koskee.
-**Mallivastaus:** Otsikossa on kolme täsmennettävää asiaa. Ensinnäkin kyseessä ei ole voimala vaan yksittäinen laboratoriokoe. Sähköä ei tuotettu lainkaan, ja aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä. Toiseksi ”enemmän kuin kuluttaa” pätee vain polttoaineen energiataseeseen: polttoaineesta vapautui $3{,}15\,\text{MJ}$, kun laserit toivat siihen $2{,}05\,\text{MJ}$. Koko laitteisto kulutti moninkertaisesti enemmän energiaa kuin fuusiossa vapautui (d-kohta). Kolmanneksi sana ”jo” antaa ymmärtää, että tuotanto olisi jatkuvaa, vaikka kyse oli yhdestä laukauksesta. Artikkelin oma korjausmerkintä on esimerkki samasta täsmennyksestä: otsikkoa ja tekstiä muutettiin 13.12.2022, jotta lukija ei luulisi laserien energian olevan mukana luvussa $2{,}05\,\text{MJ}$. Täsmällisempi otsikko olisi esimerkiksi ”Fuusiokokeessa polttoaineesta vapautui ensi kertaa enemmän energiaa kuin laserit siihen toivat”. Tulos ei riko energian säilymistä. Ylimääräinen $1{,}10\,\text{MJ}$ ei synny tyhjästä: fuusiossa syntyvät ytimet ovat lujemmin sidottuja kuin lähtöytimet, joten reaktiotuotteiden massa on pienempi kuin lähtöaineiden. Vapautunut energia vastaa massan pienenemistä $$
+**Mallivastaus:** Otsikossa on kolme täsmennettävää asiaa. Ensinnäkin kyseessä ei ole voimala vaan yksittäinen laboratoriokoe. Sähköä ei tuotettu lainkaan, ja aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.
+
+Toiseksi ”enemmän kuin kuluttaa” pätee vain polttoaineen energiataseeseen: polttoaineesta vapautui $3{,}15\,\text{MJ}$, kun laserit toivat siihen $2{,}05\,\text{MJ}$. Koko laitteisto kulutti moninkertaisesti enemmän energiaa kuin fuusiossa vapautui (d-kohta).
+
+Kolmanneksi sana ”jo” antaa ymmärtää, että tuotanto olisi jatkuvaa, vaikka kyse oli yhdestä laukauksesta.
+
+Artikkelin oma korjausmerkintä on esimerkki samasta täsmennyksestä: otsikkoa ja tekstiä muutettiin 13.12.2022, jotta lukija ei luulisi laserien energian olevan mukana luvussa $2{,}05\,\text{MJ}$. Täsmällisempi otsikko olisi esimerkiksi ”Fuusiokokeessa polttoaineesta vapautui ensi kertaa enemmän energiaa kuin laserit siihen toivat”.
+
+Tulos ei riko energian säilymistä. Ylimääräinen $1{,}10\,\text{MJ}$ ei synny tyhjästä: fuusiossa syntyvät ytimet ovat lujemmin sidottuja kuin lähtöytimet, joten reaktiotuotteiden massa on pienempi kuin lähtöaineiden. Vapautunut energia vastaa massan pienenemistä $$
 \begin{aligned}
 \Delta m &= \dfrac{E_\text{f}}{c^2} \\
 &= \dfrac{3{,}15 \cdot 10^{6}\,\text{J}}{(2{,}998 \cdot 10^{8}\,\text{m/s})^2} \\
@@ -621,7 +673,11 @@ $$
 ### d)
 **Kysytty:** miksi havainto kaikkien kaukaisten galaksien etääntymisestä ei tee Linnunradasta keskipistettä
 **Periaate:** Havainto kertoo etäisyyksien muutoksesta, ei paikasta, josta liike alkoi. Laajenevassa avaruudessa Hubblen laki näyttää samalta kaikkialla (luku *Maailmankaikkeuden kehitys*).
-**Mallivastaus:** Kuvaajan mukaan nopeus on suoraan verrannollinen etäisyyteen: kaksi kertaa kauempana oleva galaksi etääntyy kaksi kertaa nopeammin. Sama suhde havaittaisiin mistä tahansa galaksista katsoen, joten jokainen havaitsija näkee kaikkien muiden etääntyvän itsestään ja pitäisi itseään keskipisteenä. Galaksit eivät liiku avaruuden läpi pois jostain tietystä pisteestä, vaan avaruus itse laajenee: etäisyydet kaikkien galaksien välillä kasvavat samalla tavalla. Laajenemisella ei siis ole keskipistettä, ja Linnunrata on vain yksi paikka muiden joukossa. Vertauksena toimivat ilmapallon pintaan piirretyt pisteet: kun palloa täytetään, jokaisesta pisteestä katsoen muut pisteet etääntyvät.
+**Mallivastaus:** Kuvaajan mukaan nopeus on suoraan verrannollinen etäisyyteen: kaksi kertaa kauempana oleva galaksi etääntyy kaksi kertaa nopeammin.
+
+Sama suhde havaittaisiin mistä tahansa galaksista katsoen, joten jokainen havaitsija näkee kaikkien muiden etääntyvän itsestään ja pitäisi itseään keskipisteenä. Galaksit eivät liiku avaruuden läpi pois jostain tietystä pisteestä, vaan avaruus itse laajenee: etäisyydet kaikkien galaksien välillä kasvavat samalla tavalla.
+
+Laajenemisella ei siis ole keskipistettä, ja Linnunrata on vain yksi paikka muiden joukossa. Vertauksena toimivat ilmapallon pintaan piirretyt pisteet: kun palloa täytetään, jokaisesta pisteestä katsoen muut pisteet etääntyvät.
 
 ### Yleisiä virheitä
 - a-kohdassa kulmakerroin luetaan yhdestä mittauspisteestä eikä suoralta, tai $H_0$ lasketaan jakamalla $d / v$ väärin päin ($250 : 18\,000 = 0{,}014$).

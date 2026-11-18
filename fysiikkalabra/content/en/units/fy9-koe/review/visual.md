@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: aeaefa09d8b665ad
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 2fb2712dc782cb16
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Hunks: inquiry.json efficiency check (correct option and three feedback texts); solutions.md c) and d) Principle. Each sentence says internal energy, none says energy turns into heat; the correct option's feedback ("the rest heats the lamp and the room") stays compatible.
-- Captures opened: `fy9-koe-stage-sovella-390-7` (the choice card: the longer correct option wraps to three lines inside its box), `fy9-koe-stage-exercises-390-4` (c Principle, formula and substitution rows), `fy9-koe-stage-exercises-390-5` (d Principle).
-- The three changed feedback texts show only after an answer, so no capture holds them: judged from the source text (plain prose with one link each, no formula; nothing that can clip).
+- Diff origin/main...HEAD for unit.md and inquiry.json (en): only paragraph breaks. In unit.md the worked example's "Given and find" paragraph is split so the question stands alone; in inquiry.json two model-answer fields (kettle-efficiency marking comment, helmet answer) are split at a sentence boundary. Words, maths and figures are identical.
+- Contact sheets contact-6.png (#61-#72: model solutions, marking, self-assessment, exit ticket) and contact-9.png (#97-#108: example boxes with staged solutions) in review/shots/, at contact-sheet resolution only. The split paragraphs sit as short paragraphs inside the cards; no clipping, overlap or overflow, and the stage layout survived.
+- The earlier Sovella visual report (sovella/review/visual.md, PASS) read as evidence. I did not open individual 390 px captures, so fine type size is not judged.

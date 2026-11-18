@@ -265,7 +265,9 @@ The circled points are the two points on the line from which the slope in part b
 ### c)
 **Find:** the free-body diagram of the cart when $F = 1.20\,\text{N}$, and its connection with the model of part b
 **Principle:** The forces on the cart come from the Earth (weight), the track (normal force and friction) and the string (pull). The string is horizontal, so vertically only the weight and the normal force act, and they cancel each other.
-**Model answer:** The cart is drawn as a rectangle. The weight $\overline{G}$ from the centre downwards and the normal force $\overline{N}$ from the bottom surface upwards, equally long. The pull of the string $\overline{T}$ starts from the point of attachment and points forwards, and friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards, about a fifth of the pull. The acceleration is marked separately next to the diagram. The horizontal forces are drawn to a scale of their own, because they are much smaller than the weight.
+**Model answer:** The cart is drawn as a rectangle. The weight $\overline{G}$ from the centre downwards and the normal force $\overline{N}$ from the bottom surface upwards, equally long. The pull of the string $\overline{T}$ starts from the point of attachment and points forwards, and friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards, about a fifth of the pull.
+
+The acceleration is marked separately next to the diagram. The horizontal forces are drawn to a scale of their own, because they are much smaller than the weight.
 ```voimakuvio
 pinta 0
 G 8,35
@@ -306,17 +308,23 @@ $$.
 ### a)
 **Find:** which force accelerates a walker forwards and why setting off is hard on glare ice
 **Principle:** The state of motion of an object is changed only by the external forces acting on it (Newton's second law). Force and counterforce act on different objects (third law). Static friction is at most $\mu_0 N$.
-**Model answer:** When Ella takes a step, her foot pushes the ground backwards. By the third law the ground pushes the foot forwards with a force of the same magnitude. This force is the static friction of the ground: the foot tends to slide backwards relative to the ground, and friction prevents it. It is the only horizontal external force, so it is exactly this force that accelerates Ella forwards. Ella's muscles exert internal forces, and they alone cannot change the state of motion of the whole body. On glare ice the coefficient of static friction is small, so the upper limit of friction $\mu_0 N$ is small. If the foot pushes backwards harder than friction can resist, the foot slides. That is why the largest possible acceleration stays small, and on ice people walk with short steps, placing the foot almost vertically.
+**Model answer:** When Ella takes a step, her foot pushes the ground backwards. By the third law the ground pushes the foot forwards with a force of the same magnitude. This force is the static friction of the ground: the foot tends to slide backwards relative to the ground, and friction prevents it. It is the only horizontal external force, so it is exactly this force that accelerates Ella forwards.
+
+Ella's muscles exert internal forces, and they alone cannot change the state of motion of the whole body. On glare ice the coefficient of static friction is small, so the upper limit of friction $\mu_0 N$ is small. If the foot pushes backwards harder than friction can resist, the foot slides. That is why the largest possible acceleration stays small, and on ice people walk with short steps, placing the foot almost vertically.
 
 ### b)
 **Find:** whether the claim "the engine pushes the car forwards" holds
 **Principle:** The motion of the car is changed only by the external forces acting on the car. The engine is part of the car, so its forces on the wheels and the body are internal forces that cancel each other (third law).
-**Model answer:** The claim is only partly right. The engine turns the front wheels, but it cannot by itself push the whole car, because it is inside the car. The turning tyre tends to slide backwards relative to the road surface, and the static friction of the road opposes this sliding by pointing forwards. This force of the road on the driving wheels is the external force that accelerates the car. That is why a car cannot set off on glare ice even if the engine runs at full power: the wheels just spin, because the friction is not enough.
+**Model answer:** The claim is only partly right. The engine turns the front wheels, but it cannot by itself push the whole car, because it is inside the car. The turning tyre tends to slide backwards relative to the road surface, and the static friction of the road opposes this sliding by pointing forwards.
+
+This force of the road on the driving wheels is the external force that accelerates the car. That is why a car cannot set off on glare ice even if the engine runs at full power: the wheels just spin, because the friction is not enough.
 
 ### c)
 **Find:** the free-body diagram of an accelerating car when air resistance and rolling resistance are taken into account
 **Principle:** The forces on the car come from the Earth (weight), the road (normal force, static friction on the driving wheels and rolling resistance) and the air (air resistance). The car accelerates, so the net force points forwards.
-**Model answer:** The car is drawn as a rectangle. The weight $\overline{G}$ from the centre downwards and the normal force $\overline{N}$ from the bottom surface upwards, equally long. The static friction of the road on the driving wheels $\overline{F}_\mu$ starts from the front corner of the bottom surface and points forwards. Rolling resistance $\overline{F}_\text{r}$ and air resistance $\overline{F}_\text{v}$ point backwards. The friction pointing forwards is larger than the resistive forces, because the car accelerates. The velocity and the acceleration are marked next to the diagram. The magnitudes are illustrative, and the horizontal forces are drawn to a scale of their own. The normal force may also be split into the normal forces on the front and rear wheels, $\overline{N}_1$ and $\overline{N}_2$.
+**Model answer:** The car is drawn as a rectangle. The weight $\overline{G}$ from the centre downwards and the normal force $\overline{N}$ from the bottom surface upwards, equally long. The static friction of the road on the driving wheels $\overline{F}_\mu$ starts from the front corner of the bottom surface and points forwards. Rolling resistance $\overline{F}_\text{r}$ and air resistance $\overline{F}_\text{v}$ point backwards.
+
+The friction pointing forwards is larger than the resistive forces, because the car accelerates. The velocity and the acceleration are marked next to the diagram. The magnitudes are illustrative, and the horizontal forces are drawn to a scale of their own. The normal force may also be split into the normal forces on the front and rear wheels, $\overline{N}_1$ and $\overline{N}_2$.
 ```voimakuvio
 pinta 0
 G 100
@@ -336,7 +344,9 @@ v oikea
 a_\text{max} &\approx 0.8 \cdot 9.81\,\text{m/s}^2 \\
 &\approx 8\,\text{m/s}^2
 \end{aligned}
-$$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the resistive forces are ignored. In a front-wheel-drive car the static friction pushing forwards acts only on the driving front wheels, and their normal force is only part of the weight of the car, for example about half. Then the largest accelerating force is $\mu_0 N_\text{etu} < \mu_0 mg$ (etu = front), and the largest acceleration is smaller. On ice a front-wheel-drive car can therefore accelerate at less than $1\,\text{m/s}^2$ at most.
+$$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the resistive forces are ignored.
+
+In a front-wheel-drive car the static friction pushing forwards acts only on the driving front wheels, and their normal force is only part of the weight of the car, for example about half. Then the largest accelerating force is $\mu_0 N_\text{etu} < \mu_0 mg$ (etu = front), and the largest acceleration is smaller. On ice a front-wheel-drive car can therefore accelerate at less than $1\,\text{m/s}^2$ at most.
 
 ### Yleisiä virheitä
 - The muscles or the engine "push" the walker or the car, that is, an internal force is presented as an external one.
@@ -349,7 +359,9 @@ $$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the r
 ### a)
 **Given:** limiting angles $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ and $33^\circ$; in measurement 5 the book was lifted with a jerk
 **Find:** the coefficient of static friction $\mu_0$ and its uncertainty
-**Principle:** At the limiting angle the component of the weight along the cover is as large as the maximum (fully developed) static friction, and the normal force is the perpendicular component of the weight (chapter *Weight, friction and the inclined plane*). Measurement 5 is left out, because a gross error is recorded in the report: a quick lift momentarily presses the cover against the phone, so the normal force and the upper limit of static friction grow for a moment, and the angle is read too late. So $33^\circ$ is not the limit of sliding. A result would not be removed only because it differs from the others.
+**Principle:** At the limiting angle the component of the weight along the cover is as large as the maximum (fully developed) static friction, and the normal force is the perpendicular component of the weight (chapter *Weight, friction and the inclined plane*).
+
+Measurement 5 is left out, because a gross error is recorded in the report: a quick lift momentarily presses the cover against the phone, so the normal force and the upper limit of static friction grow for a moment, and the angle is read too late. So $33^\circ$ is not the limit of sliding. A result would not be removed only because it differs from the others.
 **Formula:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, so $\mu_0 = \tan\alpha_0$. The limiting angle is the mean of the accepted readings, $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, so $\mu_0 = \tan\alpha_\text{ka}$, and the uncertainty is half the range, $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$
 **Conversions:** None needed. The angles are in degrees, and the coefficient has no unit.
 **Substitution:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22.5^\circ$ and $\mu_0 = \tan 22.5^\circ = 0.414$. Limits of the spread: $\tan 21^\circ = 0.384$ and $\tan 24^\circ = 0.445$
@@ -440,7 +452,9 @@ $$. The distance is long but possible on packed snow.
 ### c)
 **Find:** whether the heavy father slides further than the light children, in the model and when air resistance is taken into account
 **Principle:** In the model all the forces are proportional to the mass, so the mass cancels from the equations of motion. Air resistance depends on the speed and on the size and position of the rider, but not on the mass (chapter *Air resistance and falling through air*).
-**Model answer:** In the model of parts a and b, $a_1 = g(\sin\alpha - \mu\cos\alpha)$ and $a_2 = -\mu g$, so the mass affects neither the speed nor the sliding distance: the father and the children stop at the same place. In reality air resistance $F_\text{v}$ slows everyone down further. It changes the rider's acceleration by $F_\text{v} : m$. The father is bigger than a child, so at the same speed his air resistance is a little larger, but his mass is much larger, so the air resistance is a smaller part of his weight. The father's deceleration therefore grows less, and he probably slides further. So the claim may hold, but the reason is air resistance and not that a heavy rider would press the sliding mat forwards. The position, the bottom of the sliding mat and the spot on the snow also affect the result.
+**Model answer:** In the model of parts a and b, $a_1 = g(\sin\alpha - \mu\cos\alpha)$ and $a_2 = -\mu g$, so the mass affects neither the speed nor the sliding distance: the father and the children stop at the same place. In reality air resistance $F_\text{v}$ slows everyone down further. It changes the rider's acceleration by $F_\text{v} : m$. The father is bigger than a child, so at the same speed his air resistance is a little larger, but his mass is much larger, so the air resistance is a smaller part of his weight.
+
+The father's deceleration therefore grows less, and he probably slides further. So the claim may hold, but the reason is air resistance and not that a heavy rider would press the sliding mat forwards. The position, the bottom of the sliding mat and the spot on the snow also affect the result.
 
 ### Yleisiä virheitä
 - On the slope the friction is taken as $\mu mg$, although $N = mg\cos\alpha$.
@@ -708,7 +722,9 @@ $$ ($\tfrac{1}{2}\cdot 2.29\,\text{m/s} \cdot 2.0\,\text{s}$, $2.29\,\text{m/s} 
 mg &= 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 &= 736\,\text{N}
 \end{aligned}
-$$ does not change when the lift moves. At rest and at constant velocity the acceleration is zero, so $N - mg = 0$ and $N = mg = 736\,\text{N}$; the reading does not depend on whether the lift moves but on whether it accelerates. When the lift starts down, the acceleration points down and $N - mg = ma < 0$, so $N < mg$ and the reading drops to $650\,\text{N}$. The person's feeling of being lighter is real, but the force of gravity did not decrease. In everyday language "weight" often means the reading of the plate, and it does decrease.
+$$ does not change when the lift moves. At rest and at constant velocity the acceleration is zero, so $N - mg = 0$ and $N = mg = 736\,\text{N}$; the reading does not depend on whether the lift moves but on whether it accelerates.
+
+When the lift starts down, the acceleration points down and $N - mg = ma < 0$, so $N < mg$ and the reading drops to $650\,\text{N}$. The person's feeling of being lighter is real, but the force of gravity did not decrease. In everyday language "weight" often means the reading of the plate, and it does decrease.
 
 ### Yleisiä virheitä
 - The reading $650\,\text{N}$ is taken as the force of gravity, in which case the equation of part a gives zero.

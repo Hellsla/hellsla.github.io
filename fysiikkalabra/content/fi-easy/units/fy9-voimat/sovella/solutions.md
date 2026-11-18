@@ -265,7 +265,9 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan kulmakerroin 
 ### c)
 **Kysytty:** vaunun voimakuvio, kun $F = 1{,}20\,\text{N}$, ja kuvion yhteys b-kohdan malliin
 **Periaate:** Vaunuun vaikuttavat Maa (paino), rata (tukivoima ja kitka) ja lanka (veto). Lanka on vaakasuora. Siksi pystysuunnassa vaikuttavat vain paino ja tukivoima, ja ne kumoavat toisensa.
-**Mallivastaus:** Vaunu piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Langan veto $\overline{T}$ lähtee kiinnityskohdasta eteenpäin. Kitka $\overline{F}_\mu$ lähtee alapinnan takakulmasta taaksepäin. Kitka on noin viidesosa vedosta. Kiihtyvyys merkitään erikseen kuvion viereen. Vaakasuorat voimat on piirretty omassa mittakaavassaan, koska ne ovat paljon pienempiä kuin paino.
+**Mallivastaus:** Vaunu piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Langan veto $\overline{T}$ lähtee kiinnityskohdasta eteenpäin. Kitka $\overline{F}_\mu$ lähtee alapinnan takakulmasta taaksepäin. Kitka on noin viidesosa vedosta. Kiihtyvyys merkitään erikseen kuvion viereen.
+
+Vaakasuorat voimat on piirretty omassa mittakaavassaan, koska ne ovat paljon pienempiä kuin paino.
 ```voimakuvio
 pinta 0
 G 8,35
@@ -306,17 +308,23 @@ $$.
 ### a)
 **Kysytty:** mikä voima kiihdyttää kävelijää eteenpäin ja miksi peilijäällä on vaikeaa lähteä liikkeelle
 **Periaate:** Kappaleen liiketilaa muuttavat vain ulkoiset voimat, jotka vaikuttavat siihen (Newtonin toinen laki). Voima ja vastavoima vaikuttavat eri kappaleisiin (kolmas laki). Lepokitka on enintään $\mu_0 N$.
-**Mallivastaus:** Kun Ella astuu, hänen jalkansa työntää maata taaksepäin. Kolmannen lain mukaan maa työntää jalkaa eteenpäin yhtä suurella voimalla. Tämä voima on maan lepokitka. Jalka pyrkii liukumaan taaksepäin maan suhteen, ja kitka estää sen. Lepokitka on ainoa vaakasuora ulkoinen voima. Siksi juuri se kiihdyttää Ellaa eteenpäin. Ellan lihasten voimat ovat hänen sisäisiä voimiaan. Ne eivät yksin voi muuttaa koko kehon liiketilaa. Peilijäällä lepokitkakerroin on pieni. Siksi kitkan yläraja $\mu_0 N$ on pieni. Jos jalka työntää taaksepäin lujemmin kuin kitka pystyy vastustamaan, jalka liukuu. Siksi suurin mahdollinen kiihtyvyys jää pieneksi. Jäällä kävellään lyhyin askelin, ja jalka asetetaan melkein pystysuoraan.
+**Mallivastaus:** Kun Ella astuu, hänen jalkansa työntää maata taaksepäin. Kolmannen lain mukaan maa työntää jalkaa eteenpäin yhtä suurella voimalla. Tämä voima on maan lepokitka. Jalka pyrkii liukumaan taaksepäin maan suhteen, ja kitka estää sen. Lepokitka on ainoa vaakasuora ulkoinen voima. Siksi juuri se kiihdyttää Ellaa eteenpäin.
+
+Ellan lihasten voimat ovat hänen sisäisiä voimiaan. Ne eivät yksin voi muuttaa koko kehon liiketilaa. Peilijäällä lepokitkakerroin on pieni. Siksi kitkan yläraja $\mu_0 N$ on pieni. Jos jalka työntää taaksepäin lujemmin kuin kitka pystyy vastustamaan, jalka liukuu. Siksi suurin mahdollinen kiihtyvyys jää pieneksi. Jäällä kävellään lyhyin askelin, ja jalka asetetaan melkein pystysuoraan.
 
 ### b)
 **Kysytty:** pitääkö väite ”moottori työntää autoa eteenpäin” paikkansa
 **Periaate:** Auton liikettä muuttavat vain ulkoiset voimat, jotka vaikuttavat autoon. Moottori on auton osa. Siksi sen voimat pyöriin ja koriin ovat sisäisiä voimia, jotka kumoavat toisensa (kolmas laki).
-**Mallivastaus:** Väite on vain osittain oikein. Moottori pyörittää etupyöriä. Moottori ei kuitenkaan voi yksin työntää koko autoa, koska se on auton sisällä. Pyörivä rengas pyrkii liukumaan taaksepäin tien pinnan suhteen. Tien lepokitka vastustaa tätä liukumista, ja siksi kitka osoittaa eteenpäin. Tämä tien voima vetäviin pyöriin on ulkoinen voima, joka kiihdyttää autoa. Siksi auto ei pääse liikkeelle peilijäällä, vaikka moottori kävisi täysillä. Pyörät vain sutivat eli pyörivät paikallaan, koska kitka ei riitä.
+**Mallivastaus:** Väite on vain osittain oikein. Moottori pyörittää etupyöriä. Moottori ei kuitenkaan voi yksin työntää koko autoa, koska se on auton sisällä. Pyörivä rengas pyrkii liukumaan taaksepäin tien pinnan suhteen. Tien lepokitka vastustaa tätä liukumista, ja siksi kitka osoittaa eteenpäin.
+
+Tämä tien voima vetäviin pyöriin on ulkoinen voima, joka kiihdyttää autoa. Siksi auto ei pääse liikkeelle peilijäällä, vaikka moottori kävisi täysillä. Pyörät vain sutivat eli pyörivät paikallaan, koska kitka ei riitä.
 
 ### c)
 **Kysytty:** kiihtyvän auton voimakuvio, kun ilmanvastus ja vierimisvastus otetaan huomioon
 **Periaate:** Autoon vaikuttavat Maa (paino), tie (tukivoima, lepokitka vetäviin pyöriin ja vierimisvastus) ja ilma (ilmanvastus). Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.
-**Mallivastaus:** Auto piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Tien lepokitka vetäviin pyöriin $\overline{F}_\mu$ lähtee alapinnan etukulmasta eteenpäin. Vierimisvastus $\overline{F}_\text{r}$ ja ilmanvastus $\overline{F}_\text{v}$ osoittavat taaksepäin. Eteenpäin osoittava kitka on suurempi kuin vastukset, koska auto kiihtyy. Nopeus ja kiihtyvyys merkitään kuvion viereen. Suuruudet ovat vain esimerkkejä. Vaakasuorat voimat on piirretty omassa mittakaavassaan. Tukivoiman voi jakaa myös kahdeksi tukivoimaksi: etupyörien $\overline{N}_1$ ja takapyörien $\overline{N}_2$.
+**Mallivastaus:** Auto piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Tien lepokitka vetäviin pyöriin $\overline{F}_\mu$ lähtee alapinnan etukulmasta eteenpäin. Vierimisvastus $\overline{F}_\text{r}$ ja ilmanvastus $\overline{F}_\text{v}$ osoittavat taaksepäin.
+
+Eteenpäin osoittava kitka on suurempi kuin vastukset, koska auto kiihtyy. Nopeus ja kiihtyvyys merkitään kuvion viereen. Suuruudet ovat vain esimerkkejä. Vaakasuorat voimat on piirretty omassa mittakaavassaan. Tukivoiman voi jakaa myös kahdeksi tukivoimaksi: etupyörien $\overline{N}_1$ ja takapyörien $\overline{N}_2$.
 ```voimakuvio
 pinta 0
 G 100
@@ -336,7 +344,9 @@ v oikea
 a_\text{max} &\approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \\
 &\approx 8\,\text{m/s}^2
 \end{aligned}
-$$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastuksia ei oteta huomioon. Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin. Niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
+$$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastuksia ei oteta huomioon.
+
+Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin. Niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
 
 ### Yleisiä virheitä
 - Kävelijää tai autoa ”työntävät” lihakset tai moottori. Silloin sisäinen voima esitetään ulkoisena voimana.
@@ -349,7 +359,9 @@ $$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun
 ### a)
 **Annettu:** rajakulmat $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ ja $33^\circ$; mittauksessa 5 kirjaa nostettiin nykäisten
 **Kysytty:** lepokitkakerroin $\mu_0$ ja sen epävarmuus
-**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
+**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*).
+
+Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
 **Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_0$. Rajakulmana käytetään hyväksyttyjen mittausten keskiarvoa $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, joten $\mu_0 = \tan\alpha_\text{ka}$. Epävarmuus on puolet vaihteluvälistä: $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$.
 **Muunnokset:** Ei tarvita. Kulmat ovat asteina, eikä kertoimella ole yksikköä.
 **Sijoitus:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22{,}5^\circ$ ja $\mu_0 = \tan 22{,}5^\circ = 0{,}414$. Hajonnan rajat: $\tan 21^\circ = 0{,}384$ ja $\tan 24^\circ = 0{,}445$
@@ -440,7 +452,9 @@ $$. Matka on pitkä, mutta tamppautuneella eli tiiviiksi painetulla lumella se o
 ### c)
 **Kysytty:** liukuuko raskas isä pidemmälle kuin kevyet lapset mallissa ja silloin, kun ilmanvastus otetaan huomioon
 **Periaate:** Mallissa kaikki voimat ovat verrannollisia massaan. Siksi massa supistuu liikeyhtälöistä. Ilmanvastus riippuu nopeudesta sekä laskijan koosta ja asennosta. Se ei riipu massasta (luku *Ilmanvastus ja putoaminen ilmassa*).
-**Mallivastaus:** a- ja b-kohdan mallissa $a_1 = g(\sin\alpha - \mu\cos\alpha)$ ja $a_2 = -\mu g$. Massa ei siis vaikuta nopeuteen eikä liukumatkaan. Isä ja lapset pysähtyvät samaan kohtaan. Todellisuudessa ilmanvastus $F_\text{v}$ hidastaa jokaista lisää. Se muuttaa laskijan kiihtyvyyttä määrällä $F_\text{v} : m$. Isä on suurempi kuin lapsi. Siksi isän ilmanvastus on samalla nopeudella vähän suurempi. Isän massa on kuitenkin paljon suurempi. Siksi ilmanvastus on pienempi osa hänen painostaan. Isän hidastuvuus kasvaa siis vähemmän, ja hän liukuu todennäköisesti pidemmälle. Väite voi siis pitää paikkansa. Syy on kuitenkin ilmanvastus. Syy ei ole se, että raskas laskija painaisi liukuria eteenpäin. Myös asento, liukurin pohja ja lumen kohta vaikuttavat tulokseen.
+**Mallivastaus:** a- ja b-kohdan mallissa $a_1 = g(\sin\alpha - \mu\cos\alpha)$ ja $a_2 = -\mu g$. Massa ei siis vaikuta nopeuteen eikä liukumatkaan. Isä ja lapset pysähtyvät samaan kohtaan. Todellisuudessa ilmanvastus $F_\text{v}$ hidastaa jokaista lisää. Se muuttaa laskijan kiihtyvyyttä määrällä $F_\text{v} : m$. Isä on suurempi kuin lapsi. Siksi isän ilmanvastus on samalla nopeudella vähän suurempi. Isän massa on kuitenkin paljon suurempi. Siksi ilmanvastus on pienempi osa hänen painostaan.
+
+Isän hidastuvuus kasvaa siis vähemmän, ja hän liukuu todennäköisesti pidemmälle. Väite voi siis pitää paikkansa. Syy on kuitenkin ilmanvastus. Syy ei ole se, että raskas laskija painaisi liukuria eteenpäin. Myös asento, liukurin pohja ja lumen kohta vaikuttavat tulokseen.
 
 ### Yleisiä virheitä
 - Rinteessä kitkaksi otetaan $\mu mg$, vaikka $N = mg\cos\alpha$.
@@ -708,7 +722,9 @@ $$ ($\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}0\,\text{s}$, $2{,}29\,\text
 mg &= 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 &= 736\,\text{N}
 \end{aligned}
-$$ ei muutu, kun hissi liikkuu. Levossa ja tasaisella nopeudella kiihtyvyys on nolla, joten $N - mg = 0$ ja $N = mg = 736\,\text{N}$. Lukema ei riipu siitä, liikkuuko hissi. Se riippuu siitä, kiihtyykö hissi. Kun hissi lähtee alas, kiihtyvyys osoittaa alas ja $N - mg = ma < 0$. Silloin $N < mg$, ja lukema pienenee arvoon $650\,\text{N}$. Henkilön tunne siitä, että hän on kevyempi, on todellinen. Painovoima ei kuitenkaan pienentynyt. Arkikielessä ”paino” tarkoittaa usein levyn lukemaa, ja se pienenee.
+$$ ei muutu, kun hissi liikkuu. Levossa ja tasaisella nopeudella kiihtyvyys on nolla, joten $N - mg = 0$ ja $N = mg = 736\,\text{N}$. Lukema ei riipu siitä, liikkuuko hissi. Se riippuu siitä, kiihtyykö hissi.
+
+Kun hissi lähtee alas, kiihtyvyys osoittaa alas ja $N - mg = ma < 0$. Silloin $N < mg$, ja lukema pienenee arvoon $650\,\text{N}$. Henkilön tunne siitä, että hän on kevyempi, on todellinen. Painovoima ei kuitenkaan pienentynyt. Arkikielessä ”paino” tarkoittaa usein levyn lukemaa, ja se pienenee.
 
 ### Yleisiä virheitä
 - Painovoimaksi otetaan levyn lukema $650\,\text{N}$, jolloin $a$-kohdan yhtälö antaa nollan.

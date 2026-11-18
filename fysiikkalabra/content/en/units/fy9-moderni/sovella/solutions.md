@@ -96,7 +96,11 @@ $$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.02362 = 7080\,\text{km/s}$ and 
 ### d)
 **Find:** why the hydrogen lines appear dark in the spectrum of the galaxy
 **Principle:** A hot, dense body emits a continuous spectrum. A thin gas absorbs only photons whose energy is exactly the difference of two energy levels (chapters *Spectra reveal the energy levels of atoms* and *Energy levels of the hydrogen atom and the Bohr model*).
-**Model answer:** The light of the galaxy is the light of its stars. The hot, dense surface of a star emits a continuous spectrum containing all wavelengths. The light passes through the outermost, thinner and cooler gas layers of the star, and these contain hydrogen. A hydrogen atom absorbs a photon only if the photon energy is exactly the difference of two energy levels, for example $E_3 - E_2 = 1.89\,\text{eV}$ for the red line. The atom is excited and soon de-excites by emitting a similar photon, but in a random direction. That is why less light comes in our direction at these wavelengths than at the neighbouring ones, and the lines appear dark as absorption lines. Bright lines would be seen if we looked at a thin hot gas without a continuous spectrum behind it, as in a gas discharge tube.
+**Model answer:** The light of the galaxy is the light of its stars. The hot, dense surface of a star emits a continuous spectrum containing all wavelengths. The light passes through the outermost, thinner and cooler gas layers of the star, and these contain hydrogen.
+
+A hydrogen atom absorbs a photon only if the photon energy is exactly the difference of two energy levels, for example $E_3 - E_2 = 1.89\,\text{eV}$ for the red line. The atom is excited and soon de-excites by emitting a similar photon, but in a random direction. That is why less light comes in our direction at these wavelengths than at the neighbouring ones, and the lines appear dark as absorption lines.
+
+Bright lines would be seen if we looked at a thin hot gas without a continuous spectrum behind it, as in a gas discharge tube.
 
 ### Yleisiä virheitä
 - In part a, the energy of one level is calculated, for example $|E_3| = 1.51\,\text{eV}$, instead of the difference of the levels.
@@ -172,7 +176,11 @@ $$, because $1 + z$ is the ratio of the observed value to the laboratory value.
 
 ### b)
 **Find:** a justification that a straight line fits the points, the fitted line and its extension to the axes
-**Graph:** One photon gives all its energy $hf$ to one electron. Part of the energy is used for the work function $W$, and the fastest electron is left with the kinetic energy $E_\text{k,max} = hf - W$ (chapter *The photoelectric effect and the photon*). When the anode is more negative than the cathode, the electric field brakes the electron, and its kinetic energy turns into electric potential energy. The current stops when even the fastest electron stops just before the anode: $eU = E_\text{k,max}$ (chapter *Potential energy and potential in an electric field*). Combining these gives $eU = hf - W$, that is $U = \tfrac{h}{e}\,f - \tfrac{W}{e}$, so $U$ is a linear function of the frequency with slope $\tfrac{h}{e}$ and constant term $-\tfrac{W}{e}$. The line is fitted between the points and extended as a dashed line to the vertical axis, because the constant term is needed to determine the work function (chapter *Graphing and fitting a straight line*).
+**Graph:** One photon gives all its energy $hf$ to one electron. Part of the energy is used for the work function $W$, and the fastest electron is left with the kinetic energy $E_\text{k,max} = hf - W$ (chapter *The photoelectric effect and the photon*).
+
+When the anode is more negative than the cathode, the electric field brakes the electron, and its kinetic energy turns into electric potential energy. The current stops when even the fastest electron stops just before the anode: $eU = E_\text{k,max}$ (chapter *Potential energy and potential in an electric field*).
+
+Combining these gives $eU = hf - W$, that is $U = \tfrac{h}{e}\,f - \tfrac{W}{e}$, so $U$ is a linear function of the frequency with slope $\tfrac{h}{e}$ and constant term $-\tfrac{W}{e}$. The line is fitted between the points and extended as a dashed line to the vertical axis, because the constant term is needed to determine the work function (chapter *Graphing and fitting a straight line*).
 
 <svg data-fig="fy9-moderni-s3-fit" viewBox="0 0 600 470" role="img" aria-label="Graph: the stopping voltage U in volts as a function of the frequency f of the light, the frequency axis from zero to 9 times 10 to the power 14 hertz and the voltage axis from minus 2.5 to plus 1.5 volts. A rising straight line has been fitted to five points and extended as a dashed line to the vertical axis. The line crosses the vertical axis at about minus 2.24 volts and the horizontal axis at about 5.43 times 10 to the power 14 hertz. The points used for reading are circled on the line: zero and minus 2.24 volts, and 8.0 times 10 to the power 14 hertz and 1.06 volts." style="max-width:100%;font-size:28px">
   <line x1="130.5" y1="410" x2="130.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -287,18 +295,34 @@ $$
 
 ### a)
 **Find:** whether claim 1 is true and how radon causes a radiation dose
-**Principle:** An alpha particle is heavy and doubly charged, so it ionises densely and loses its energy over a short distance: a few centimetres in air and less than a tenth of a millimetre in tissue. External alpha radiation is stopped by the dead surface layer of the skin, but inside the body an alpha particle hits living cells directly. That is why its radiation weighting factor is $20$ (chapter *Ionising radiation and the body*). Radon is a gas, and its short-lived decay products are solids that stick to dust particles in the air (chapter *Radiation dose and radiation safety in Finland*).
-**Model answer:** The first part of the claim is true: the alpha radiation of radon does not pass through paper or skin, so radon in the air of the room does not irradiate the skin dangerously from outside. The conclusion is still false. Radon and its decay products, isotopes of polonium, lead and bismuth, are breathed into the lungs, and the decay products stick to the surface of the bronchi. There their alpha particles hit the cells of the lungs directly. An alpha particle gives up all its energy, several megaelectronvolts, over a distance of a few cells and can break both strands of DNA. That is why the equivalent dose of the same absorbed dose is $20$ times that of photon radiation. Radon is the largest single source of radiation dose in Finland and, after smoking, the most common cause of lung cancer. The $450\,\tfrac{\text{Bq}}{\text{m}^3}$ of the flat exceeds the reference level $300\,\tfrac{\text{Bq}}{\text{m}^3}$ by a factor of $1.5$, so remedial measures are worthwhile.
+**Principle:** An alpha particle is heavy and doubly charged, so it ionises densely and loses its energy over a short distance: a few centimetres in air and less than a tenth of a millimetre in tissue. External alpha radiation is stopped by the dead surface layer of the skin, but inside the body an alpha particle hits living cells directly. That is why its radiation weighting factor is $20$ (chapter *Ionising radiation and the body*).
+
+Radon is a gas, and its short-lived decay products are solids that stick to dust particles in the air (chapter *Radiation dose and radiation safety in Finland*).
+**Model answer:** The first part of the claim is true: the alpha radiation of radon does not pass through paper or skin, so radon in the air of the room does not irradiate the skin dangerously from outside. The conclusion is still false.
+
+Radon and its decay products, isotopes of polonium, lead and bismuth, are breathed into the lungs, and the decay products stick to the surface of the bronchi. There their alpha particles hit the cells of the lungs directly. An alpha particle gives up all its energy, several megaelectronvolts, over a distance of a few cells and can break both strands of DNA. That is why the equivalent dose of the same absorbed dose is $20$ times that of photon radiation.
+
+Radon is the largest single source of radiation dose in Finland and, after smoking, the most common cause of lung cancer. The $450\,\tfrac{\text{Bq}}{\text{m}^3}$ of the flat exceeds the reference level $300\,\tfrac{\text{Bq}}{\text{m}^3}$ by a factor of $1.5$, so remedial measures are worthwhile.
 
 ### b)
 **Find:** whether claim 2 is true, what fraction of the radon nuclei is undecayed after a month, and whether the radon disappears
 **Principle:** A large set of radon nuclei decays according to the decay law, and the fraction left is $\left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ (chapter *The decay law and half-life*). The law applies only to the nuclei that are in the room at the start. New radon nuclei form all the time from radium in the uranium decay series of the soil, and they flow in through cracks in the foundations (chapter *Radiation dose and radiation safety in Finland*).
-**Model answer:** A month, $30\,\text{d}$, is $\tfrac{30\,\text{d}}{3.8\,\text{d}} = 7.89$ half-lives, so of the radon nuclei that were in the room at the start $\left(\tfrac{1}{2}\right)^{7.89} = 0.0042$ is left, that is about $0.4\,\%$. The calculation is correct, but the claim is still false. The parent of radon, radium-226, whose half-life is about $1600$ years, and the start of the decay series, uranium-238, are in the soil and bedrock, so radon forms again all the time. When warm indoor air rises and leaves, a lower pressure arises in the lower part of the house, which draws radon-rich air from the soil in through the cracks in the foundations. With the windows shut, as much radon decays as comes in, and the concentration settles at a high level. In a tightly closed flat the concentration usually increases, because the air is exchanged less. The concentration is reduced by improving the ventilation, sealing the cracks in the foundations and installing a radon extraction fan, which draws the air from under the house outside.
+**Model answer:** A month, $30\,\text{d}$, is $\tfrac{30\,\text{d}}{3.8\,\text{d}} = 7.89$ half-lives, so of the radon nuclei that were in the room at the start $\left(\tfrac{1}{2}\right)^{7.89} = 0.0042$ is left, that is about $0.4\,\%$. The calculation is correct, but the claim is still false.
+
+The parent of radon, radium-226, whose half-life is about $1600$ years, and the start of the decay series, uranium-238, are in the soil and bedrock, so radon forms again all the time.
+
+When warm indoor air rises and leaves, a lower pressure arises in the lower part of the house, which draws radon-rich air from the soil in through the cracks in the foundations. With the windows shut, as much radon decays as comes in, and the concentration settles at a high level. In a tightly closed flat the concentration usually increases, because the air is exchanged less.
+
+The concentration is reduced by improving the ventilation, sealing the cracks in the foundations and installing a radon extraction fan, which draws the air from under the house outside.
 
 ### c)
 **Find:** whether claim 3 is true
 **Principle:** Radioactivity is a property of unstable nuclei: the nucleus decays and emits radiation. X-rays are photon radiation that is produced in an X-ray tube only while there is a voltage across the tube (chapter *Radiation in medicine and technology*). The energy of an X-ray photon, about $60\,\text{keV}$, is enough to ionise atoms but too small to change nuclei (chapter *Ionising radiation and the body*).
-**Model answer:** The claim is false. At the dental X-ray the neighbour was briefly exposed to external X-rays. Each photon either passed through the tissue to the image plate or was absorbed and ionised an atom during the imaging. No photons stay in the body, and their energy, about $60\,\text{keV}$, is not enough to make atomic nuclei unstable, since the binding energies of the particles of the nucleus are of the order of megaelectronvolts. When the unit switches off, there is no radiation any more, and as far as radiation goes the neighbour is exactly the same as before. A person can be a radiation source for a short time only if radioactive material is put into the body, such as the tracer of a nuclear medicine examination or in radioiodine treatment of the thyroid. Then the hospital gives instructions. So the children do not need to avoid the neighbour. In addition, the dose of a dental X-ray image, about $0.01\,\text{mSv}$, is small compared with the dose from the radon of the flat.
+**Model answer:** The claim is false. At the dental X-ray the neighbour was briefly exposed to external X-rays. Each photon either passed through the tissue to the image plate or was absorbed and ionised an atom during the imaging.
+
+No photons stay in the body, and their energy, about $60\,\text{keV}$, is not enough to make atomic nuclei unstable, since the binding energies of the particles of the nucleus are of the order of megaelectronvolts. When the unit switches off, there is no radiation any more, and as far as radiation goes the neighbour is exactly the same as before.
+
+A person can be a radiation source for a short time only if radioactive material is put into the body, such as the tracer of a nuclear medicine examination or in radioiodine treatment of the thyroid. Then the hospital gives instructions. So the children do not need to avoid the neighbour. In addition, the dose of a dental X-ray image, about $0.01\,\text{mSv}$, is small compared with the dose from the radon of the flat.
 
 ### Yleisiä virheitä
 - In part a, alpha radiation is said to be harmless or dangerous without distinguishing external radiation from inhaled decay products.
@@ -322,12 +346,22 @@ $$
 ### b)
 **Find:** an assessment of the group's conclusion
 **Principle:** A nucleus has no memory and no age: each barium-137m nucleus decays with the same probability per second, however long it has existed (chapter *The decay law and half-life*). The count of a GM tube varies randomly by about $\sqrt{N}$ (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The group's explanation is wrong. Standing for a minute reduces the activity of the sample but does not change the half-life, because the remaining nuclei decay with exactly the same probability as before. The difference comes from the method. The group read the half-life between one pair of points, and a single reading varies randomly: the uncertainty of the reading of $212$ counts is about $\sqrt{212} \approx 15$ counts, that is $7\,\%$. The reading at $150\,\text{s}$ happens to be large, which shifts the reading later. Ignoring the background was also a mistake. At the start the background is only $1\,\%$ of the reading, but at the end already $5\,\%$, and a background left unsubtracted apparently slows down the decrease and lengthens the half-life. In addition, the background was measured only once for $10\,\text{s}$, so its value $5 \pm 2$ is very imprecise. The conclusion “$166\,\text{s}$” is therefore not reliable. All the points after subtracting the background give about $153\,\text{s}$, which matches the book value.
+**Model answer:** The group's explanation is wrong. Standing for a minute reduces the activity of the sample but does not change the half-life, because the remaining nuclei decay with exactly the same probability as before.
+
+The difference comes from the method. The group read the half-life between one pair of points, and a single reading varies randomly: the uncertainty of the reading of $212$ counts is about $\sqrt{212} \approx 15$ counts, that is $7\,\%$. The reading at $150\,\text{s}$ happens to be large, which shifts the reading later.
+
+Ignoring the background was also a mistake. At the start the background is only $1\,\%$ of the reading, but at the end already $5\,\%$, and a background left unsubtracted apparently slows down the decrease and lengthens the half-life. In addition, the background was measured only once for $10\,\text{s}$, so its value $5 \pm 2$ is very imprecise.
+
+The conclusion “$166\,\text{s}$” is therefore not reliable. All the points after subtracting the background give about $153\,\text{s}$, which matches the book value.
 
 ### c)
 **Find:** how the measurement and the processing of the results can be improved
 **Principle:** The random error decreases when more pulses are counted or the measurement is repeated, and a systematic error is removed by correcting its cause. All the measurement points are used by fitting a model (chapters *Your own experimental investigation: planning, carrying out and reporting* and *Graphing and fitting a straight line*).
-**Model answer:** The background is measured for a long time before and after the measurement, for example $10\,\text{min}$, so that about $300$ counts accumulate and the uncertainty of the background is about $6\,\%$ and not $45\,\%$. The background is converted into the same unit, counts in $10\,\text{s}$, and subtracted from each reading. The counting time can be lengthened, for example to $20\,\text{s}$, and measurements made more often, so that the relative uncertainty of a single reading decreases. All the points are used: $\ln(N - N_\text{bg})$ is plotted against time, and the slope of the line is $-\tfrac{\ln 2}{T_{1/2}}$, or the model $N = A\,e^{-Ct} + B$, in which the constant $B$ is the background, is fitted with a calculator. The measurement is repeated with a new sample and the results compared, so that the spread can be seen. The distance of the sample from the GM tube is kept the same throughout. The result is given with its uncertainty, for example $T_{1/2} = (152 \pm 4)\,\text{s}$.
+**Model answer:** The background is measured for a long time before and after the measurement, for example $10\,\text{min}$, so that about $300$ counts accumulate and the uncertainty of the background is about $6\,\%$ and not $45\,\%$. The background is converted into the same unit, counts in $10\,\text{s}$, and subtracted from each reading.
+
+The counting time can be lengthened, for example to $20\,\text{s}$, and measurements made more often, so that the relative uncertainty of a single reading decreases. All the points are used: $\ln(N - N_\text{bg})$ is plotted against time, and the slope of the line is $-\tfrac{\ln 2}{T_{1/2}}$, or the model $N = A\,e^{-Ct} + B$, in which the constant $B$ is the background, is fitted with a calculator.
+
+The measurement is repeated with a new sample and the results compared, so that the spread can be seen. The distance of the sample from the GM tube is kept the same throughout. The result is given with its uncertainty, for example $T_{1/2} = (152 \pm 4)\,\text{s}$.
 
 ### Yleisiä virheitä
 - In part a, the background is not subtracted, or it is subtracted only from the first reading.
@@ -398,7 +432,9 @@ $$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 ### a)
 **Find:** how the fusion reaction was produced and what the two energies in the source mean
 **Principle:** In fusion light nuclei join into a heavier nucleus, and energy is released. Nuclei are positively charged and repel each other, so they can join only in very hot and dense matter (chapter *Fission, fusion and nuclear power*).
-**Model answer:** According to the source (Yle News 12 Dec 2022, checked 16 Nov 2026) the experiment was done at Lawrence Livermore National Laboratory in California. The beams of huge lasers were focused on one point, where the fuel was. The energy delivered by the lasers heated the fuel so that its nuclei joined into heavier nuclei: helium formed, and energy was released. Of the energies, $3.15\,\text{MJ}$ is the energy released in the fusion reaction. $2.05\,\text{MJ}$ is the energy used in the experiment to start the reaction, that is the energy the lasers delivered to the fuel. According to the article's correction note it does not include the energy used to run the lasers.
+**Model answer:** According to the source (Yle News 12 Dec 2022, checked 16 Nov 2026) the experiment was done at Lawrence Livermore National Laboratory in California. The beams of huge lasers were focused on one point, where the fuel was. The energy delivered by the lasers heated the fuel so that its nuclei joined into heavier nuclei: helium formed, and energy was released.
+
+Of the energies, $3.15\,\text{MJ}$ is the energy released in the fusion reaction. $2.05\,\text{MJ}$ is the energy used in the experiment to start the reaction, that is the energy the lasers delivered to the fuel. According to the article's correction note it does not include the energy used to run the lasers.
 
 ### b)
 **Given:** energy released in fusion $E_\text{f} = 3.15\,\text{MJ}$, energy the lasers delivered to the fuel $E_\text{l} = 2.05\,\text{MJ}$ (source, checked 16 Nov 2026)
@@ -429,17 +465,33 @@ $$
 ### d)
 **Find:** why the result does not show that the whole experimental facility produced more energy than it used, and how much electrical energy the released energy would give with the efficiency of a thermal power plant
 **Principle:** An energy balance depends on how the system is bounded (chapter *Thermodynamic system, state variables and temperature*). The efficiency of a device is the ratio of the useful energy to the energy the device takes in (chapter *Efficiency*). A thermal power plant turns only a part of the energy it receives as heat into electricity (chapter *Energy production and the efficiency of power plants*).
-**Model answer:** The comparison $3.15\,\text{MJ} > 2.05\,\text{MJ}$ concerns only the fuel: more energy was released from it than the lasers delivered to it. According to the source, the figure $2.05\,\text{MJ}$ does not include the energy used to run the lasers. When the system is taken to be the whole experimental facility, the energy it takes in is the electrical energy from the grid, $E_\text{g} \approx 300\,\text{MJ}$. Then $$
+**Model answer:** The comparison $3.15\,\text{MJ} > 2.05\,\text{MJ}$ concerns only the fuel: more energy was released from it than the lasers delivered to it. According to the source, the figure $2.05\,\text{MJ}$ does not include the energy used to run the lasers.
+
+When the system is taken to be the whole experimental facility, the energy it takes in is the electrical energy from the grid, $E_\text{g} \approx 300\,\text{MJ}$. Then $$
 \begin{aligned}
 \dfrac{E_\text{f}}{E_\text{g}} &= \dfrac{3.15\,\text{MJ}}{300\,\text{MJ}} \\
 &= 0.0105 \approx 1\,\%
 \end{aligned}
-$$ So fusion released only about a hundredth of the energy the facility took from the grid. Of the energy the lasers took in, only $\dfrac{2.05\,\text{MJ}}{300\,\text{MJ}} \approx 0.7\,\%$ ended up in the fuel. The rest increased the internal energy of the facility and its surroundings. In addition, the released energy was not turned into electricity. If it were captured as heat and a thermal power plant turned a third of it into electricity, the electricity would be about $\tfrac{1}{3} \cdot 3.15\,\text{MJ} = 1.05\,\text{MJ}$. That is about $0.35\,\%$, less than half a per cent, of the energy taken from the grid. So the whole facility used about a hundred times more energy than fusion released. In a power plant the electrical energy obtained from fusion would have to be clearly greater than the electrical energy the facility takes in, and the shots would have to be repeated continuously.
+$$ So fusion released only about a hundredth of the energy the facility took from the grid.
+
+Of the energy the lasers took in, only $\dfrac{2.05\,\text{MJ}}{300\,\text{MJ}} \approx 0.7\,\%$ ended up in the fuel. The rest increased the internal energy of the facility and its surroundings.
+
+In addition, the released energy was not turned into electricity. If it were captured as heat and a thermal power plant turned a third of it into electricity, the electricity would be about $\tfrac{1}{3} \cdot 3.15\,\text{MJ} = 1.05\,\text{MJ}$. That is about $0.35\,\%$, less than half a per cent, of the energy taken from the grid.
+
+So the whole facility used about a hundred times more energy than fusion released. In a power plant the electrical energy obtained from fusion would have to be clearly greater than the electrical energy the facility takes in, and the shots would have to be repeated continuously.
 
 ### e)
 **Find:** what should be made more precise in the invented headline and why the result does not violate conservation of energy
 **Principle:** Energy is conserved: it is not created from nothing and it does not disappear (chapter *Forms of energy and conservation of energy*). The energy released in a nuclear reaction corresponds to a decrease in mass, $E = \Delta m c^2$ (chapters *Mass defect and nuclear binding energy* and *Fission, fusion and nuclear power*). When a claim is assessed, one checks which system and which energies it concerns.
-**Model answer:** Three things in the headline need to be made more precise. First, this is not a power plant but a single laboratory experiment. No electricity was produced at all, and according to the source a fusion power plant connected to the grid is still decades away. Second, “more than it uses” holds only for the energy balance of the fuel: $3.15\,\text{MJ}$ was released from the fuel when the lasers delivered $2.05\,\text{MJ}$ to it. The whole facility used many times more energy than fusion released (part d). Third, the word “already” suggests that the production is continuous, although it was a single shot. The article's own correction note is an example of the same kind of precision: the headline and the text were changed on 13 Dec 2022 so that the reader would not think the lasers' energy is included in the figure $2.05\,\text{MJ}$. A more precise headline would be, for example, “In a fusion experiment the fuel released for the first time more energy than the lasers delivered to it”. The result does not violate conservation of energy. The extra $1.10\,\text{MJ}$ does not come from nothing: the nuclei formed in fusion are more tightly bound than the initial nuclei, so the mass of the reaction products is smaller than that of the reactants. The released energy corresponds to the decrease in mass $$
+**Model answer:** Three things in the headline need to be made more precise. First, this is not a power plant but a single laboratory experiment. No electricity was produced at all, and according to the source a fusion power plant connected to the grid is still decades away.
+
+Second, “more than it uses” holds only for the energy balance of the fuel: $3.15\,\text{MJ}$ was released from the fuel when the lasers delivered $2.05\,\text{MJ}$ to it. The whole facility used many times more energy than fusion released (part d).
+
+Third, the word “already” suggests that the production is continuous, although it was a single shot.
+
+The article's own correction note is an example of the same kind of precision: the headline and the text were changed on 13 Dec 2022 so that the reader would not think the lasers' energy is included in the figure $2.05\,\text{MJ}$. A more precise headline would be, for example, “In a fusion experiment the fuel released for the first time more energy than the lasers delivered to it”.
+
+The result does not violate conservation of energy. The extra $1.10\,\text{MJ}$ does not come from nothing: the nuclei formed in fusion are more tightly bound than the initial nuclei, so the mass of the reaction products is smaller than that of the reactants. The released energy corresponds to the decrease in mass $$
 \begin{aligned}
 \Delta m &= \dfrac{E_\text{f}}{c^2} \\
 &= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{(2.998 \cdot 10^{8}\,\text{m/s})^2} \\
@@ -621,7 +673,11 @@ $$
 ### d)
 **Find:** why the observation that all distant galaxies recede does not make the Milky Way the centre
 **Principle:** The observation tells about the change of distances, not about the place from which the motion started. In expanding space Hubble's law looks the same everywhere (chapter *The evolution of the universe*).
-**Model answer:** According to the graph the velocity is directly proportional to the distance: a galaxy twice as far away recedes twice as fast. The same ratio would be observed from any galaxy, so every observer sees all the others receding from them and would take themselves for the centre. The galaxies do not move through space away from some particular point, but space itself expands: the distances between all galaxies grow in the same way. So the expansion has no centre, and the Milky Way is just one place among others. As a comparison, think of dots drawn on the surface of a balloon: when the balloon is inflated, the other dots recede from every dot.
+**Model answer:** According to the graph the velocity is directly proportional to the distance: a galaxy twice as far away recedes twice as fast.
+
+The same ratio would be observed from any galaxy, so every observer sees all the others receding from them and would take themselves for the centre. The galaxies do not move through space away from some particular point, but space itself expands: the distances between all galaxies grow in the same way.
+
+So the expansion has no centre, and the Milky Way is just one place among others. As a comparison, think of dots drawn on the surface of a balloon: when the balloon is inflated, the other dots recede from every dot.
 
 ### Yleisiä virheitä
 - In part a the slope is read from one data point instead of the line, or $H_0$ is calculated upside down, $250 : 18\,000 = 0.014$.

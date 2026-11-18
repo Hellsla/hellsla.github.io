@@ -274,7 +274,9 @@ $$, kuten c-kohdan päättely vaatii. Pallo A nousee vielä, koska se on lakipis
   <foreignObject x="81" y="274.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{jarrutusmatka}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteistä näkyy kaksi vaihetta. Hetkinä $0$, $4$ ja $8\,\text{s}$ nopeus pysyy noin $90\,\text{km/h}$:ssa. Vaihtelu $\pm 1\,\text{km/h}$ on yhtä suuri kuin sovelluksen epävarmuus. Juna siis kulkee tasaisesti, ja näille pisteille piirretään vaakasuora suora. Hetkestä $12\,\text{s}$ alkaen nopeus pienenee joka neljässä sekunnissa suunnilleen yhtä paljon. Juna siis jarruttaa tasaisesti. Näihin pisteisiin sovitetaan laskeva suora niin, että pisteitä jää suoran molemmille puolille. Kolmea ensimmäistä pistettä ei oteta mukaan jarrutussuoraan. Ne kuuluvat eri vaiheeseen, ja ne kääntäisivät suoran väärään asentoon. Laskevaa suoraa jatketaan katkoviivana aika-akselille c-kohtaa varten.
+**Mallivastaus:** Pisteistä näkyy kaksi vaihetta. Hetkinä $0$, $4$ ja $8\,\text{s}$ nopeus pysyy noin $90\,\text{km/h}$:ssa. Vaihtelu $\pm 1\,\text{km/h}$ on yhtä suuri kuin sovelluksen epävarmuus. Juna siis kulkee tasaisesti, ja näille pisteille piirretään vaakasuora suora.
+
+Hetkestä $12\,\text{s}$ alkaen nopeus pienenee joka neljässä sekunnissa suunnilleen yhtä paljon. Juna siis jarruttaa tasaisesti. Näihin pisteisiin sovitetaan laskeva suora niin, että pisteitä jää suoran molemmille puolille. Kolmea ensimmäistä pistettä ei oteta mukaan jarrutussuoraan. Ne kuuluvat eri vaiheeseen, ja ne kääntäisivät suoran väärään asentoon. Laskevaa suoraa jatketaan katkoviivana aika-akselille c-kohtaa varten.
 
 ### b)
 **Annettu:** a-kohdan jarrutussuora; siltä luetaan pisteet $(12\,\text{s};\ 85\,\text{km/h})$ ja $(40\,\text{s};\ 20\,\text{km/h})$

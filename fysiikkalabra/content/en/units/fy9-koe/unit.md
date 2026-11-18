@@ -269,7 +269,9 @@ The stages of the example are the same as the headings of the model answers: *Gi
 
 <!-- vaihe -->
 
-**Given and find.** The mass of the water $m = 145\,\text{kg}$, the initial temperature $T_1 = 10.0\,{}^\circ\text{C}$, the final temperature $T_2 = 38.0\,{}^\circ\text{C}$ and, from the table, the specific heat capacity of water $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. The heat $Q$ in kilowatt-hours is asked for.
+**Given and find.** The mass of the water $m = 145\,\text{kg}$, the initial temperature $T_1 = 10.0\,{}^\circ\text{C}$, the final temperature $T_2 = 38.0\,{}^\circ\text{C}$ and, from the table, the specific heat capacity of water $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+
+The heat $Q$ in kilowatt-hours is asked for.
 
 <!-- vaihe -->
 
