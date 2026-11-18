@@ -1,19 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 57b16d7452a47e0a
-SCOPE: delta: new tasks s7 (Measuring sliding friction) and s8 (The magnetic field of a coil and sources of error) and the changed intro; older tasks untouched
+VERDICT: PASS
+CONTENT-HASH: 3cc6d946afc32a21
+SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7 and -s8; older tasks untouched
+
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- s7 c: the task text gives away the explanation part: "Also explain why the zero error would not affect the slope if ...". The student is told the conclusion and only restates it for the rubric point. Teacher's rule: the task text must not reveal the solution's structure. s8 c is neutral ("how does it affect the slope?"); use that form here: "How would the zero error affect the slope if the coefficient were determined from a line fitted to the whole series? Justify." Rubric and solution stay as they are.
+- None. The round-1 item is fixed: s7 c now says "Also justify how the zero error would affect the slope if the coefficient were determined from a line fitted to the whole series." The conclusion is no longer disclosed; rubric and solution still match.
 
 ## Polish
-- s7 c: "the size of the error as a percentage of the correct value" fixes the denominator; acceptable, as the rubric lists the wrong denominator as a mistake.
-- s8 a: the definition "the number of turns per unit length" is clear; no change.
+- s7 c: "as a percentage of the correct value" fixes the denominator; acceptable, as the wrong denominator is a listed mistake.
 
 ## Checked
-- Opened the en packet: intro, s7 and s8 text, criteria and solutions; compared every number with the Finnish text: all identical ($0.215 \pm 0.005$, $14\,\%$, $2.47\,\text{mT/A}$, $2.0 \cdot 10^3\,\text{1/m}$, $4.9\,\text{A}$, $3\,\%$, $0.6\,\%$); decimal points used throughout.
-- Translation fidelity: meaning of each part and criterion matches the Finnish; terms right ("sliding friction", "zero error", "systematic error", "magnetic flux density", "turn density"). Intro says eight tasks and matches the set.
-- Level, workload (14 p each), variety and reasoning quality as in the Finnish review: authentic report, four connected parts, nothing names the method.
-- Figure descriptions in the catalogue name $N$, $F_\mu$, $B$, $I$ as the task text does; no slope or fit given away.
-- Calculation chains aligned; unit field language-neutral; rounding follows the data's precision with the reason stated.
-- 360 px: shots.md captures and check_layout pass; no clipping seen.
-- Hash same at start and end.
+- Read the round-1 report first; grepped the rebuilt en packet for the s7 c text, criteria, solution and common mistakes: neutral wording, matches the Finnish meaning and numbers, nothing newly broken.
+- Rounding, no revealed structure, aligned rows, language-neutral unit field re-checked: fine.
+- Hash at start and end: 3cc6d946afc32a21.
