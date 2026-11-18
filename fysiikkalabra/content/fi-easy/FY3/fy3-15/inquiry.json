@@ -28,12 +28,12 @@
       "choices": [
         {
           "text": "$Q_2 = 1080\\,\\text{MJ}$",
-          "feedback": "Laskit lämmöt yhteen: $Q_1 + W$. Koneesta ulos tuleva energia ei voi olla suurempi kuin sinne tullut. Energian säilymisestä saadaan $Q_1 = W + Q_2$. Siis $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+          "feedback": "Laskit lämmöt yhteen: $Q_1 + W$. Koneesta ulos tuleva energia ei voi olla suurempi kuin sinne tullut. Energian säilymisestä saadaan $Q_1 = W + Q_2$. Siis $\\begin{aligned}Q_2 &= Q_1 - W \\\\ &= 800\\,\\text{MJ} - 280\\,\\text{MJ} \\\\ &= 520\\,\\text{MJ}\\end{aligned}$."
         },
         {
           "text": "$Q_2 = 520\\,\\text{MJ}$",
           "correct": true,
-          "feedback": "Oikein: $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$. Koneen hyötysuhde on $\\eta = W/Q_1 = 0{,}35$. Tällä tunnilla lasket samalla tavalla koko voimalaitoksen ja sen vaiheiden hyötysuhteen."
+          "feedback": "Oikein: $\\begin{aligned}Q_2 &= Q_1 - W \\\\ &= 800\\,\\text{MJ} - 280\\,\\text{MJ} \\\\ &= 520\\,\\text{MJ}\\end{aligned}$. Koneen hyötysuhde on $\\eta = W/Q_1 = 0{,}35$. Tällä tunnilla lasket samalla tavalla koko voimalaitoksen ja sen vaiheiden hyötysuhteen."
         },
         {
           "text": "$Q_2 = 280\\,\\text{MJ}$",

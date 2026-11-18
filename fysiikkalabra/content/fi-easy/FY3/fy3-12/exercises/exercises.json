@@ -230,7 +230,7 @@
     {
       "id": "fy3-12-L2-06",
       "level": 2,
-      "text": "Oppilas laskee, kuinka suuri lämpöteho johtuu ikkunan läpi. Ikkunan pinta-ala on $1{,}6\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\cdot\\text{K)}$. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-15\\,{}^\\circ\\text{C}$. Oppilaan ratkaisu on: ”Lämpötilaero on $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, joten $P = UA\\Delta T = 1{,}0 \\cdot 1{,}6 \\cdot 6\\,\\text{W} = 9{,}6\\,\\text{W}$.”\n\na) Missä oppilaan ratkaisun virhe on? Miten huomaisit jo pyöristetyillä luvuilla, että tulos on liian pieni?\n\nb) Laske ikkunan läpi johtuva lämpöteho oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "text": "Oppilas laskee, kuinka suuri lämpöteho johtuu ikkunan läpi. Ikkunan pinta-ala on $1{,}6\\,\\text{m}^2$ ja U-arvo $1{,}0\\,\\text{W/(m}^2\\cdot\\text{K)}$. Sisällä on $21\\,{}^\\circ\\text{C}$ ja ulkona $-15\\,{}^\\circ\\text{C}$. Oppilaan ratkaisu on: ”Lämpötilaero on $21\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 6\\,\\text{K}$, joten $\\begin{aligned}P &= UA\\Delta T \\\\ &= 1{,}0 \\cdot 1{,}6 \\cdot 6\\,\\text{W} \\\\ &= 9{,}6\\,\\text{W}\\end{aligned}$.”\n\na) Missä oppilaan ratkaisun virhe on? Miten huomaisit jo pyöristetyillä luvuilla, että tulos on liian pieni?\n\nb) Laske ikkunan läpi johtuva lämpöteho oikein.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "error"
       ],

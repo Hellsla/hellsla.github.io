@@ -87,7 +87,7 @@
 **Conversions:** $0.85\,\text{bar} = 85\,\text{kPa} = 85\,000\,\text{Pa}$ and $380\,\text{cm}^2 = 380 \cdot 10^{-4}\,\text{m}^2 = 0.0380\,\text{m}^2$. At the end $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F = 85\,000\,\text{Pa} \cdot 0.0380\,\text{m}^2 = 3230\,\text{N} = 3.23\,\text{kN}$
 **Answer:** $3.2\,\text{kN}$, two significant figures like the gauge pressure $0.85\,\text{bar}$.
-**Reasonableness:** The force equals the weight of a mass of $3230\,\text{N} / 9.81\,\text{m/s}^2 \approx 330\,\text{kg}$, which is a lot, although the gauge pressure is less than one atmosphere. Estimate: $80\,\text{kPa} \cdot 0.04\,\text{m}^2 = 3200\,\text{N}$. That is why the lid must not be opened before the gauge pressure has been released.
+**Reasonableness:** The force equals the weight of a mass of $\begin{aligned}&3230\,\text{N} / 9.81\,\text{m/s}^2 \\ &\approx 330\,\text{kg}\end{aligned}$, which is a lot, although the gauge pressure is less than one atmosphere. Estimate: $80\,\text{kPa} \cdot 0.04\,\text{m}^2 = 3200\,\text{N}$. That is why the lid must not be opened before the gauge pressure has been released.
 
 ## fy3-4-L3-01
 **Given:** mass with the rucksack $m = 85\,\text{kg}$, greatest permitted pressure $p_\text{max} = 6.0\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; the whole weight on one foot

@@ -87,7 +87,7 @@
 **Muunnokset:** $0{,}85\,\text{bar} = 85\,\text{kPa} = 85\,000\,\text{Pa}$ ja $380\,\text{cm}^2 = 380 \cdot 10^{-4}\,\text{m}^2 = 0{,}0380\,\text{m}^2$. Lopuksi muutetaan kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F = 85\,000\,\text{Pa} \cdot 0{,}0380\,\text{m}^2 = 3230\,\text{N} = 3{,}23\,\text{kN}$
 **Vastaus:** $3{,}2\,\text{kN}$. Vastauksessa on kaksi merkitsevää numeroa, koska ylipaine $0{,}85\,\text{bar}$ on annettu kahdella numerolla.
-**Järkevyys:** Voima vastaa $3230\,\text{N} / 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}$:n massan painoa. Se on paljon, vaikka ylipaine on alle yhden ilmanpaineen. Arvio: $80\,\text{kPa} \cdot 0{,}04\,\text{m}^2 = 3200\,\text{N}$. Siksi kantta ei saa avata ennen kuin ylipaine on päästetty pois.
+**Järkevyys:** Voima vastaa $\begin{aligned}&3230\,\text{N} / 9{,}81\,\text{m/s}^2 \\ &\approx 330\,\text{kg}\end{aligned}$:n massan painoa. Se on paljon, vaikka ylipaine on alle yhden ilmanpaineen. Arvio: $80\,\text{kPa} \cdot 0{,}04\,\text{m}^2 = 3200\,\text{N}$. Siksi kantta ei saa avata ennen kuin ylipaine on päästetty pois.
 
 ## fy3-4-L3-01
 **Annettu:** massa rinkan kanssa $m = 85\,\text{kg}$, suurin sallittu paine $p_\text{max} = 6{,}0\,\text{kPa}$, $g = 9{,}81\,\text{m/s}^2$; koko paino on yhden jalan varassa
