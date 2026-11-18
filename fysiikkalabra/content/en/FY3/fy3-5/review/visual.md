@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 344632ed25343156
+VERDICT: PASS
+CONTENT-HASH: 3070f8cb00e437e5
 
 ## Blocking
-- [Major] inquiry.json, Examples-stage 'find the error' task (rendered at 390 px) — the calculation is written as an inline `$\begin{aligned}…$` inside a sentence, which KaTeX sets as a block centred vertically in the line: 'calculates:' sits beside the middle row of the block, the closing full stop floats on the wrong row; the same happens inside the clickable answer option ('…so W = −90 J and [block] .') — the sentence is hard to read and the option looks broken — put the chain in display maths on its own lines (as fy2-2's 'Find the error' does), the sentence before it ending in a colon and the question after it; in the option put the chain after the sentence, or keep it as one inline chain.
 
 ## Polish
-- none
+- [Minor] Etsi virhe (Esimerkit): the full stop after the display chain sits inside the chain (`160 J.`), fine; no change needed beyond keeping the option's "ja" + display block as is.
 
 ## Checked
-- batch delta review: rendered the changed prompt and option at 390 px in the page; figures untouched by the diff and not re-opened.
+batch delta review (round 2): fy3-5 en, Esimerkit stage capture (fi) and my own render of the "Etsi virhe" task at 360 and 390 px with the answer option selected (no overflow, scrollWidth = viewport; prompt chain and the option's chain are aligned at "=", inside the card, readable), fig-row-1280; the re-broken chain unchanged in order.
