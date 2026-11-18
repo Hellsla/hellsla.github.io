@@ -1321,7 +1321,7 @@ svg.fig-anim.is-playing .fa-vib{animation:fa-vib var(--fa-t,2s) var(--fa-d,0s) i
 .kc-item dt{font:700 var(--fs-body) var(--sans);color:var(--ink)}
 .kc-item dd{margin:.15rem 0 0;font-size:var(--fs-inner)}
 /* a long word or formula never widens the page (teacher 2026-11-04, UI fix 5: 360 px scrollWidth === clientWidth) */
-.kc-item,.kc-item dt,.kc-item dd{min-width:0;overflow-wrap:anywhere}
+.kc-item,.kc-item dt,.kc-item dd{min-width:0;overflow-wrap:break-word}
 .kc-item .katex-display{overflow-x:auto;overflow-y:hidden;max-width:100%}
 .kc-formula{display:block}
 .kc-more,.kc-all{font:600 var(--fs-ui) var(--sans);margin:.9rem 0 0}
@@ -1344,7 +1344,8 @@ svg.fig-anim.is-playing .fa-vib{animation:fa-vib var(--fa-t,2s) var(--fa-d,0s) i
 .kc-back{transform:rotateY(180deg);padding:.8rem 1rem 1rem;display:flex;flex-direction:column;gap:.35rem}
 .kc-back:focus{outline:none}.kc-back:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .kc-kind{font:700 .8125rem/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
-.kc-front{flex:1;display:flex;align-items:center;font:600 1.3125rem/1.3 var(--serif);overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
+.kc-front{flex:1;display:flex;align-items:center;font:600 1.3125rem/1.3 var(--serif);overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+:lang(fi) .kc-front,:lang(fi) .kc-topic-label,:lang(fi) .kc-tile-name,:lang(fi) .kc-item dt,:lang(fi) .kc-item dd{hyphens:manual;-webkit-hyphens:manual}   /* Finnish text carries its own soft hyphens (kortit.js, tablefit.py): the browser's automatic breaks would add others mid-syllable (work queue 8d) */
 .kc-front.is-def{font:500 var(--fs-inner)/1.5 var(--sans)}
 .kc-hint{font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
 .kc-hint::after{content:" ↻"}
