@@ -666,9 +666,8 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .ex-row>.pad{flex:1 1 100%;min-width:0;margin:0}
 .ex-row>.pad-head{margin:0;flex:0 1 auto}.ex-row>.pad-head[hidden]{display:none}
 .pad-saverow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 1.2rem;margin-top:.3rem}.pad-saverow>.pad-save,.pad-saverow>.pad-saved{margin:0}.pad-saverow>.pad-saved[open]{flex-basis:100%}
-/* U2 (work queue 11): the field, its unit and Tarkista (filled) and Kirjoita ratkaisu (outlined) wrap as one row; the feedback comes under them, the editor under that */
+/* U2 (work queue 11): Kirjoita ratkaisu (outlined), then the field, its unit and Tarkista (filled, last) wrap as one row; the open editor takes a row between them, the feedback comes under Tarkista */
 .ex-row>form.check{display:contents}
-.ex-row>form.check output{order:1}.ex-row>.pad{order:2}
 #exercises .pad-open{background:var(--surface);color:var(--accent-deep)}
 #exercises .pad-open:hover,#exercises .pad-open[aria-expanded=true]{background:var(--accent-soft);border-color:var(--accent-deep);color:var(--accent-deep)}
 #exercises .choice-actions .pad-open{margin:0}

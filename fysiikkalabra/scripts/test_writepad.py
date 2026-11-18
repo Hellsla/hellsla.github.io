@@ -111,9 +111,9 @@ with sync_playwright() as pw:
         order = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
             const b = li.querySelector(':scope > .pad-open, :scope > .ex-row > .pad-open, :scope > fieldset .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution'), f = li.querySelector(':scope > .ex-row > form.check');
             const ft = li.querySelector(':scope > .ex-foot');
-            return b && [a, s, ft].every(x => !x || (b.compareDocumentPosition(x) & 4)) && (!f || (f.nextElementSibling === b && b.nextElementSibling.classList.contains('pad'))); })""")
-        expect(f"{page}: the field and Tarkista first, then the button and editor, all before the foot with Vastaus and Näytä ratkaisu (U2)", order)
-        row = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => !li.querySelector('form.check') || li.querySelector(':scope > .ex-row > form.check + .pad-open + .pad'))
+            return b && [a, s, ft].every(x => !x || (b.compareDocumentPosition(x) & 4)) && (!f || (b.nextElementSibling.classList.contains('pad') && (b.compareDocumentPosition(f) & 4))); })""")
+        expect(f"{page}: Kirjoita ratkaisu and its editor first, then the field and Tarkista, all before the foot with Vastaus and Näytä ratkaisu (U2)", order)
+        row = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => !li.querySelector('form.check') || li.querySelector(':scope > .ex-row > .pad-open + .pad + form.check'))
             && document.querySelectorAll('label.solved').length === 0""")
         expect(f"{page}: '{T('js.pad_write')}' and the answer box (input, unit, Tarkista) on one row; no tick 'Olen tehnyt ratkaisun' (teacher 2026-11-06)", row)
         head = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {

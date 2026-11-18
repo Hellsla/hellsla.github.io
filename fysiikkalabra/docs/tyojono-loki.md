@@ -489,8 +489,8 @@ kortissa:
 1. numero, merkit (Ydintehtävä, Annettu, Syventävä) ja Avaa isoksi;
 2. tilanne ja kysymys;
 3. kuva tai taulukko;
-4. vastauskenttä, yksikkö ja Tarkista (täytetty päänappi); Kirjoita ratkaisu samalla rivillä ääriviivanappina
-   (puhelimella omalla rivillään Tarkista-rivin alla);
+4. Kirjoita ratkaisu (ääriviivanappi), sitten vastauskenttä, yksikkö ja Tarkista (täytetty päänappi, viimeisenä; opettaja
+   2026-11-18: ratkaisu kirjoitetaan ensin, sitten tarkistetaan; monivalinnassa Kirjoita ratkaisu → Vastaa);
 5. palaute heti kentän alla;
 6. erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu ja lukko.
 

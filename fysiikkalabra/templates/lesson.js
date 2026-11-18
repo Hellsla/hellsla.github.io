@@ -377,7 +377,7 @@
   // (padstore.js, IndexedDB, loaded with the editor): saved a moment after each change, restored when the editor
   // opens, with export/import of a backup file and deletion. Nothing is sent anywhere.
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > .ex-foot, :scope > details.answer')],   // the answer field first, then Kirjoita ratkaisu beside it (U2); the foot (Vihjeet, Vastaus, ...) after both
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > .ex-foot, :scope > details.answer')],   // Kirjoita ratkaisu first, then the answer field and Tarkista (U2); the foot (Vihjeet, Vastaus, ...) after both
     ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
     // an exam task and a review (FY9) task are their own card (practice.py exam_task); one with only choices gets none (teacher 2026-11-06, "lisää kaikkiin materiaaleihin")
     ['div.practice-task[id]', (t) => (!t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')) && t, (box) => box.querySelector(':scope > details.reveal')],
@@ -571,8 +571,8 @@
       const row = document.createElement('div'); row.className = 'ex-row';
       li.insertBefore(row, open);
       const acts = li.querySelector(':scope > fieldset.choice .choice-actions');   // a task of choices: Kirjoita ratkaisu beside Vastaa, the editor below the choices
-      if (before && before.matches('form.check')) row.append(before, open, box);
-      else { if (acts) acts.append(open); else row.append(open); row.append(box); }
+      if (before && before.matches('form.check')) row.append(open, box, before);   // write first, then the field and Tarkista (teacher 2026-11-18)
+      else { if (acts) acts.prepend(open); else row.append(open); row.append(box); }
     }
     // a written solution in the editor opens the task's answer (part 8; it replaced the tick "Olen tehnyt ratkaisun")
     let told = false;
