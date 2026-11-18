@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9adad6486d58e32c
-SCOPE: delta: Sovella itsenäisesti tasks s7 (Laskuvarjohyppääjä ennen varjon avaamista) and s8 (Hissi ja voima-anturilevy) with solutions, answers.py and the changed intro sentence (fi); s1-s6 passed earlier and not re-judged.
+CONTENT-HASH: 3e3fdacfe3d4a70d
+SCOPE: delta: round 2, fi; only change since round 1 is s7 "Yleisiä virheitä" last bullet, a one-row aligned block became inline $100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$ (same numbers, units, meaning); s1-s6, s8 not re-judged.
 
 ## Blocking
 - (none)
@@ -21,3 +21,8 @@ SCOPE: delta: Sovella itsenäisesti tasks s7 (Laskuvarjohyppääjä ennen varjon
 - Calculation chains are aligned rows starting with the quantity; solutions open with Annettu, Kysytty, Periaate, Kaava symbolic first.
 - Intro sentence now includes air resistance and counts eight tasks; matches the eight tasks of the set.
 - Language neutrality: same numbers, points and criteria in fi, en and fi-easy (compared field by field); fi-easy sentences short and clear.
+
+## Checked
+- Git diff of the unit's content since round 1 shows only that formatting change in sovella/solutions.md (6 lines, same in all three languages); all other differences are review files.
+- The inline formula reads correctly in the bullet and the point (v proportional to sqrt(m), not m) is unchanged.
+- No new issue; round 1 Polish items above remain recorded and unchanged.
