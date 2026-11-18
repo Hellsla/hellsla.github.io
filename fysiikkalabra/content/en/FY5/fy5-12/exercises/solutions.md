@@ -174,7 +174,7 @@ The points are sound minima and not complete silence, because near one loudspeak
 **Principle:** Destructive interference means that the waves cancel each other's displacements at certain points. The loudspeakers, however, keep emitting the same amount of energy all the time, so the total amount of energy must be conserved.
 **Model answer:** The claim is wrong. On nodal lines the displacements cancel each other, so very little energy is carried there. The energy is not lost, however: the interference pattern distributes it in space differently, and correspondingly more energy goes to the points of constructive interference.
 
-The energy does not turn into heat on nodal lines and does not move back to the loudspeakers, because the waves pass through each other and the power produced by the loudspeakers stays the same.
+The energy does not turn into internal energy on nodal lines and does not move back to the loudspeakers, because the waves pass through each other and the power produced by the loudspeakers stays the same.
 
 ## fy5-12-L2-07
 **Given:** amplitudes by path difference from the table; the waves of the sources are equally large
