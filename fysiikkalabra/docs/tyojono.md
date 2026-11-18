@@ -68,6 +68,7 @@ luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolman
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
 VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; kierros: `python scripts/round.py fy9-<id>` ja `--finish` (0j; unitin Sovella-sarja on `figcat`-omistaja `<unit>-sovella`, joten uusi unit-kuva kelpaa)); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
+FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 Sivupohjaosa tehty (PR #713: `boxed_section` build.py, `details.theory-box`; test_home.py avaa laatikon näppäimellä). Jäljellä vain sisältötyö luku kerrallaan.
@@ -133,11 +134,7 @@ nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien pois
 Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekstiä. U4 (#561) ja U5 (#582) tehty. U1–U3 jaettuja (`templates/`, `scripts/`, `site.css`, `lang/`):
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
-- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: luvun ydintehtävät (`build.py core_ids`, tasot 1 ja 2, ei tasoa 3) näkyvät auki otsikon alla yhdessä kortissa,
-  tason merkki **Perus**/**Soveltava** (hyväksytty teksti), muut tehtävät suljetuissa tasolaatikoissa niiden alla; ei uutta otsikkoa, laskuria eikä ohjeriviä;
-  `level_lead_1/2` poistetaan. Ehdot: tehtävä DOM:ssa kerran, id, `data-num`, tarkistus, vihjeet, ratkaisut ja Yritä ensin ennallaan; `palautus_tasks.py` lukee
-  tason uudesta `data-level`-tiedosta; `lesson.js`:n tasolaskuri, pakollisten vastausten sääntö, teorian vieressä -tila ja koko näytön tila päivitetään; toimii ilman JS:ää.
-  Testit: `test_progress`, `test_palautus`, `test_tehty`, `test_writepad`, `test_koko`, `check_layout`, `palautus_tasks.py --check`, `check_a11y`. Samassa PR:ssä CLAUDE.md:n Lesson page 8 korjataan.
+- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: toteutettu (`claude/11-u1-ydintehtavat`), odottaa opettajan hyväksyntää ja yhdistämistä; poistetaan jonosta yhdistettäessä. Luvut, joiden ydintehtävät ovat yhdeltä tasolta: PR:n kuvaus.
 - **U2 Tehtäväkortin järjestys** (U1:n jälkeen): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
 - **U3 Teorian taitto, vaihtoehto B** (kohta 8e): 38 rem:n palsta säilyy; teksti kuvarivin yläreunaan, valokuva viereen, kaksi pientä taulukkoa vierekkäin, korkea kuva alle tai seuraava kappale viereen.
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.

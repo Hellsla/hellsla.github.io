@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 84089ae446eb257f
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 2f9de8817eb2638d
+SCOPE: delta (round 2), new Sovella tasks fy9-kaasut-s8 and s9 (text, figures fy3-10/pt-suorat and fy3-11/pv-isobaari, model answers, rubrics) and the changed intro; s1-s7 not re-judged. Language: fi.
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- B s7 b) Vastaus: the answer box holds only $P_2$; the second answer follows as a sentence that starts "Ja $Q_2 \approx 65\,\text{GWh}$ …" (390 and 1280 px). Give $Q_2$ its own sentence in the source, e.g. "… $= 2{,}7\,\text{GW}$. Lämpönä siirtyvä energia on $Q_2 \approx 65\,\text{GWh} \approx 2{,}3 \cdot 10^{14}\,\text{J}$."
-- C s7 source line shows the source name only; the note's remark on the water values and the checked date is not visible there (both are in the task text, so nothing is missing).
+- [Minor] pt-suorat: the two lines are solid from 100 K although data points exist only at 200 K and 400 K; the stretch below 200 K is extrapolation and could be dashed. Description gives the two real points per gas.
+- [Minor] Axis tick labels in both figures render at about 9-10 px at 360 px; legible, figure correctly scaled inside its card.
 
 ## Checked
-- Captures current for this hash. Opened: stage-exercises-390-51…58, -60…63 (s7 card, source link, assumptions list, parts a–e, every solution, common mistakes, accepted answers, rubric a–e), stage-exercises-1280-39, -41, -42, contact-4, -7, -8, -14.
-- s7: stacked units ($\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$, $\tfrac{\text{m}^3}{\text{s}}$, $\tfrac{\text{W}}{\text{K}}$) legible at 390 px; the three-factor denominator row wraps at a `\cdot` and stays inside its box; `=` aligned; nothing clipped; "$37\,\%$:iin", "$100\,\%$:n" correct.
-- Item 18: stage-exercises-390-14 (s2 Järkevyys: row "$\approx 77\,\text{kW}$" and the added sentence on the unrounded $77{,}6\,\text{kW}$ render cleanly); s4 "noin kaksi kolmasosaa oikeasta" read in the diff.
+- Round 1 (visual) had no blocking items; the PASS stands. Round-1 content fixes verified in the current text: s9 piston is movable with weights holding the pressure constant (task text and the isobaric graph agree); s9 c answer tolerance 3 % matches the two-significant-figure model answer 1,2 * 10^3 K (1173 K); the intro no longer calls the last task the source task (s8, s9 are plain figure tasks, source note says invented examples); s9 c reasonableness line (4 * 293 K, about 900 C) consistent.
+- Own 360 px captures of s8 and s9 (fi page, model answer opened): no horizontal overflow (page scrollWidth 360, task cards 326/326); check_layout --width 360 OK for fi, en, fi-easy.
+- Calculation rows aligned at =, units LaTeX with thin space, litre as \textsf{l}, decimal commas throughout, boxed answers, fractions legible; the s8 c) chain breaks one step per row without clipping.
+- Figures sit inside the card; aria-label gives the data points and grid step; axes carry quantity and unit; s9 shows the isobar as a horizontal line with direction arrow and end markers.

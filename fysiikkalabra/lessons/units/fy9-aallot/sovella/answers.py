@@ -91,4 +91,26 @@ out.update({f"{S}-s6-a": round(v6, 3), f"{S}-s6-mg": round(m6 * g, 2), f"{S}-s6-
             f"{S}-s6-x0": round(m6 * g / k6, 3), f"{S}-s6-d": round(T6, 4),
             f"{S}-s6-check": round(m6 * g * (L6 + x6) - 0.5 * k6 * x6 ** 2, 6)})
 
+# s7: two loudspeakers on a 0,50 m grid (example data; figure fy5-12/ruudukko-tehtava)
+sq, n_h, n_v, f7, v7 = 0.50, 12, 5, 343.0, 343.4
+s1_7 = n_h * sq                                    # m, S1 and P on the same horizontal line
+d7 = n_v * sq                                      # m, S2 is above S1
+s2_7 = math.sqrt(s1_7 ** 2 + d7 ** 2)
+ds7 = s2_7 - s1_7
+lam7 = v7 / f7
+f_loud = v7 / ds7                                  # delta s = 1 lambda, the next loud sound above 343 Hz
+out.update({f"{S}-s7-a-s1": s1_7, f"{S}-s7-a-s2": round(s2_7, 3), f"{S}-s7-a-ds": round(ds7, 3),
+            f"{S}-s7-d7": d7, f"{S}-s7-s2sq": round(s2_7 ** 2, 2),
+            f"{S}-s7-b": round(lam7, 3), f"{S}-s7-c-ratio": round(ds7 / lam7, 3), f"{S}-s7-d": round(f_loud, 1)})
+
+# s8: a standing wave on a string (example data; figure fy5-13/kuvio-tehtava: L = 1,20 m, four loops)
+L8, n8, f8 = 1.20, 4, 50.0
+lam8 = 2 * L8 / n8
+v8 = f8 * lam8
+f3 = 3 * v8 / (2 * L8)                             # three loops at the same speed
+f1_8 = v8 / (2 * L8)
+out.update({f"{S}-s8-a": lam8, f"{S}-s8-b": round(v8, 3), f"{S}-s8-c": round(f3, 3),
+            f"{S}-s8-c-lam": round(2 * L8 / 3, 3), f"{S}-s8-d-f1": round(f1_8, 3), f"{S}-s8-d-f2": round(2 * f1_8, 3),
+            f"{S}-s8-d-n": round(20.0 / f1_8, 3)})
+
 print(json.dumps(out))
