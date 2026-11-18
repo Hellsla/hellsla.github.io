@@ -12,6 +12,7 @@ the link was opened and the programme checked; an item that is not verified is n
 import json, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from courses import ROOT
+import page_art
 
 PAGE = "podcastit.html"
 MODULES = [f"FY{i}" for i in range(1, 9)]
@@ -77,9 +78,9 @@ def item(it, T, feat=False):
 def body(T, lang, names, other_href):
     """The page's <main> content; names: {"FY1": course title}; other_href: the link to the other language's page."""
     d = load(lang); items = d["items"]; o = d["other_lang"]
-    head = (f'<span class="eyebrow">{esc(d["subtitle"])}</span><h1>{esc(d["title"])}</h1>'
+    head = (f'<div class="page-head"><div><span class="eyebrow">{esc(d["subtitle"])}</span><h1>{esc(d["title"])}</h1></div>{page_art.svg("listen", 88)}</div>'
             + "".join(f'<p class="{"lead" if i == 0 else "reading-intro"}">{esc(p)}</p>' for i, p in enumerate(d["intro"]))
-            + f'<aside class="media-other" lang="{esc(o["lang"])}"><p><strong>{esc(o["lead"])}</strong> {esc(o["text"])} '
+            + f'<aside class="media-other"><p><strong>{esc(o["lead"])}</strong> {esc(o["text"])} '
               f'<a href="{esc(other_href)}" hreflang="{esc(o["lang"])}">{esc(o["link"])}</a></p></aside>')
     if not items: return head
     def chips(group, labels):
@@ -98,7 +99,7 @@ def body(T, lang, names, other_href):
     for m in MODULES:
         group = [it for it in items if it["modules"][0] == m]
         if group:
-            out += (f'<section class="media-module" id="{m.lower()}" data-module="{m}"><h2>{m.replace("FY", "FY0")} · {esc(names.get(m, ""))}</h2>'
+            out += (f'<section class="media-module" id="{m.lower()}" data-module="{m}"><h2 class="media-mod-h">{page_art.svg(m, 56)}<span>{m.replace("FY", "FY0")} · {esc(names.get(m, ""))}</span></h2>'
                     f'<ul class="media-list">{"".join(item(i, T) for i in group)}</ul></section>')
     return out + '<script src="mediafilter.js"></script>'
 
