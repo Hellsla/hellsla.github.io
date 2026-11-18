@@ -1,15 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: d6a1f284318a9815
+VERDICT: PASS
+CONTENT-HASH: 77247589df7c4d0d
 
 ## Blocking
-- content/fi-easy/FY8/fy8-7/inquiry.json:33 — the prompt of "kertaus" now says 633 nm (He-Ne), but the correct option's feedback still says "Aallonpituutta $650\,\text{nm}$ vastaa energia ... $1{,}91\,\text{eV}$" — the student reads feedback about a different wavelength than the one in the task — change to $633\,\text{nm}$ and $\approx 1{,}96\,\text{eV}$ (answers.py "kert-633-eV" already holds 1,96 eV).
-- content/fi-easy/FY8/fy8-7/inquiry.json:37 — same stale values in the distractor "Fotonin energia on ylemmän tason $E_2$ energia." — change to $633\,\text{nm}$ and $1{,}96\,\text{eV}$.
 
 ## Polish
-- none
+- content/fi-easy/FY8/fy8-7/inquiry.json:37 — "Se on tasojen erotus." repeats the first sentence of the feedback; drop it or write "Siksi väri määräytyy tasoista."
 
 ## Checked
-- Prompt change (He-Ne laser, 633 nm) is physically right and suits the laser topic; the third distractor's feedback rewording ("atomien itsestään lähettämä valo leviää kaikkialle") is correct and no longer refers to a lamp that is not in the task.
-- 633 nm gives 1,96 eV, so the old 1,91 eV figure is wrong for this task.
-- answers.py key renamed to kert-633-eV with 1,96 eV; consistent with the prompt, but not with the feedback in inquiry.json.
-- Hash at start and end: d6a1f284318a9815 (fi-easy).
+- Both stale feedback lines I flagged (correct option and the E_2 distractor) now say 633 nm and 1,96 eV; they match the prompt and answers.py key kert-633-eV.
+- hc/λ for 633 nm is 1,96 eV, so the number is right.
+- The He-Ne wording suits the laser topic. The task still asks for the transition photon and ties to fy8-6 and the new chapter's core idea.
+- The distractors still each carry one misconception: level energy instead of the difference, fixed direction, and emission only after a hit by another photon. Each feedback repairs its misconception.
+- The directional-photon feedback no longer refers to a lamp that is not in the task.
+- The correct option no longer says "kaikki ... samanvärisiä". It now states the principle (the level difference sets the colour), which is clearer.
+- No other 656, 650 or 1,89 values remain in the kertaus item. The 650 nm and 1,91 eV figures at line 480 belong to a different exercise (the green laser) and are correct there.
+- The lesson.md changes are presentation only, with figures approved; nothing further to judge.
+- Hash at start and end: 77247589df7c4d0d (fi-easy).

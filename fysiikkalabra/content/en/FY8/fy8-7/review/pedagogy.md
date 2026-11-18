@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 6762f2ae91326a1a
+VERDICT: PASS
+CONTENT-HASH: 2c79b025b43f5d01
 ## Blocking
-- content/en/FY8/fy8-7/inquiry.json:33 — the retrieval item's prompt now says 633 nm (helium-neon), but the correct option's feedback still says "wavelength 650 nm ... approx. 1.91 eV" — the feedback contradicts the question and the new answers.py value (hc/633 nm = 1.96 eV) — change to $633\,\text{nm}$ and $\approx 1.96\,\text{eV}$.
-- content/en/FY8/fy8-7/inquiry.json:37 — same in the "energy of the upper level" distractor's feedback (650 nm, 1.91 eV) — change to $633\,\text{nm}$ and $1.96\,\text{eV}$.
 
 ## Polish
-- The lesson-answers.py key is renamed kert-633-eV; confirm the inquiry/answers check no longer refers to kert-650-eV.
-- The reworded direction distractor ("light that atoms emit by themselves spreads in all directions") is fine and no longer mentions a lamp.
+- inquiry.json:27 — the item is a retrieval of fy8-6 but is now framed in the laser; the glossed levels E_1, E_2 are unnamed in the prompt's own context, acceptable as it is optional. No change needed.
 
 ## Checked
-- Prompt change to the helium-neon laser, 633 nm: fits the lesson's pics (helium-neon-laser) and the physics.
-- Direction-distractor feedback: still repairs the misconception.
-- Other 650 nm mentions (line 480, exercise solution about graph points) are a separate exercise and unaffected.
-- Hash at start and end: 6762f2ae91326a1a (en); no further edits during review.
+- Both earlier blockers fixed: prompt, correct-option and "upper level" feedback all say 633 nm and 1.96 eV (hc/633 nm = 1.96 eV, matches kert-633-eV).
+- No kert-650 or 1.91 eV reference remains in the retrieval item; the other 650 nm mentions (graph points, L1-09, mis-650) are separate and consistent.
+- The correct option is no longer disclosing the distractor wording; the options remain distinct and none refers to another by place.
+- Direction distractor feedback (random direction of spontaneous emission) still repairs the misconception and no longer mentions a lamp.
+- The retrieval does not give away the lesson's opening answer (stimulated emission is only hinted by the last distractor).
+- Hash at start and end: 2c79b025b43f5d01 (en).
