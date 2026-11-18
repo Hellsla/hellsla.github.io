@@ -296,6 +296,12 @@ Luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia* opit, että ka
 
 Kaikki vaunuun vaikuttavat voimat eivät muuta sen energiaa. Paino tekee työtä, kun vaunu laskee tai nousee, ja juuri tämä työ muuttaa potentiaalienergiaa liike-energiaksi ja takaisin. Radan tukivoima on kohtisuorassa radan pintaa ja siis myös liikettä vastaan, joten se ei tee työtä. Siksi mekaaninen energia säilyy, kun vain paino tekee työtä, olipa rata kuinka mutkainen tahansa. Vaunun nopeus missä tahansa kohdassa riippuu silloin vain siitä, kuinka paljon alemmas se on lähtökohdasta laskeutunut, eikä radan muodosta tai vaunun massasta.
 
+```pysahdy
+Kaksi vaunua, joista toinen on kaksi kertaa raskaampi, lähtee levosta saman mäen huipulta kitkattomalle radalle. Kumpi on laakson pohjalla nopeampi?
+---
+Ne ovat yhtä nopeita. Nopeus riippuu vain siitä, kuinka paljon alemmas vaunu on laskeutunut, eikä massasta tai radan muodosta.
+```
+
 ### Työ siirtää energiaa
 Luvussa *Työ ja energia* opit, että voima tekee työtä, kun kappale liikkuu voiman suuntaan. Nyt tarvitaan myös työn etumerkki. Voima tekee positiivista työtä, kun sillä on liikkeen suuntainen komponentti: se lisää kappaleen energiaa. Liikettä vastustava voima, kuten kitka, tekee negatiivista työtä: se vähentää kappaleen energiaa. Liikettä vastaan kohtisuora voima, kuten tukivoima, ei tee työtä lainkaan. Työn yksikkö on sama kuin energian, joule.
 
@@ -340,10 +346,22 @@ Luvussa *Työ ja energia* opit, että voima tekee työtä, kun kappale liikkuu v
   <foreignObject x="410" y="281.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kohtisuoraan}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Lapsi liukuu pulkalla alas rinnettä. Tekeekö lumen tukivoima työtä? Entä kitka?
+---
+Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka vastustaa liikettä, joten se tekee negatiivista työtä ja vähentää energiaa.
+```
+
 ### Kitka muuttaa mekaanista energiaa sisäenergiaksi
 Todellisessa vuoristoradassa pyörien vierimisvastus ja ilmanvastus vastustavat liikettä koko matkan ajan. Ne tekevät negatiivista työtä, ja vaunun mekaaninen energia pienenee juuri tämän työn verran. Energia ei katoa, vaan se muuttuu pyörien, kiskojen ja ilman sisäenergiaksi, jolloin ne lämpenevät hieman. Kokonaisenergia säilyy aina. Mekaaninen energia säilyy vain, kun kitkaa ja ilmanvastusta ei ole tai ne ovat niin pieniä, että ne voi jättää huomiotta.
 
 Painon eli painovoiman ja kitkan eron muistat luvusta *Liike-energia, potentiaalienergia ja mekaaninen energia*: paino on **konservatiivinen voima**. Uutta on se, mitä tästä seuraa energian laskemiselle: painon tekemä työ riippuu vain korkeuserosta, joten palatessaan samalle korkeudelle kappale saa takaisin saman energian, kulki se mitä reittiä tahansa. Siksi painoon liittyy potentiaalienergia. Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä, joten se riippuu reitistä. Tällaiselle **ei-konservatiiviselle voimalle** ei voi määritellä potentiaalienergiaa.
+
+```pysahdy
+Auto jarruttaa pysähdyksiin. Mihin sen liike-energia muuttuu?
+---
+Jarrujen, renkaiden ja tien sisäenergiaksi, jolloin ne lämpenevät. Energia ei katoa.
+```
 
 ### Vastaus alun kysymykseen
 Ketjuhissi nostaa junan ensimmäisen mäen huipulle. Sen jälkeen junalla on vain se mekaaninen energia, jonka se sai noston aikana, eikä mikään lisää sitä. Vastusvoimat vähentävät sitä jokaisella metrillä. Jos seuraava mäki olisi yhtä korkea kuin ensimmäinen, juna ei pääsisi sen huipulle. Jokaisen myöhemmän mäen on oltava matalampi kuin ensimmäinen ja matalampi kuin korkeus, jolle jäljellä oleva energia riittäisi, jotta junalle jää huipulla vielä liike-energiaa.
