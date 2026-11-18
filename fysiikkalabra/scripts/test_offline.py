@@ -80,11 +80,24 @@ other = next((p.name for p in sorted(SITE.glob("fy*-*.html")) if p.stem != lid),
 if not lid or not other:
     print("FAIL no lesson page with a task check and a simulation"); sys.exit(1)
 
+def ev(expr, tries=8):
+    """pg.evaluate that survives the page navigating under it (the worker taking control can reload the page: 'Execution context was
+    destroyed'): wait for the page to settle and run it again."""
+    for i in range(tries):
+        try:
+            return pg.evaluate(expr)
+        except PwError as e:
+            if i == tries - 1 or not re.search(r"context was destroyed|navigation|Target (page|closed)", str(e)): raise
+            try: pg.wait_for_load_state("load", timeout=10000)
+            except PwError: pass
+            pg.wait_for_timeout(250)
+
+
 def until(expr, tries=60):
     """Poll a promise-valued expression in the page; wait_for_function does not await an async function."""
     for _ in range(tries):
         try:
-            if pg.evaluate(expr): return True
+            if ev(expr): return True
         except PwError: pass                                    # the page reloaded under us
         pg.wait_for_timeout(250)
     return False
@@ -97,13 +110,13 @@ with sync_playwright() as pw:
     errors = []; pg.on("pageerror", lambda e: errors.append(str(e)))
     pg.goto(URL + f"{lid}.html"); until("navigator.serviceWorker.ready.then(() => true)")
     # seed what an older worker and the read-aloud feature would have: a stale schema cache and the model's cache
-    pg.evaluate("""async () => { await caches.open('fl-sw-0-old'); const t = await caches.open('fl-tts-supertonic3-v1'); await t.put('/m.bin', new Response('model')); }""")
+    ev("""async () => { await caches.open('fl-sw-0-old'); const t = await caches.open('fl-tts-supertonic3-v1'); await t.put('/m.bin', new Response('model')); }""")
     until("caches.keys().then(a => a.some(k => k.startsWith('fl-sw-1-static')))")
     pg.wait_for_timeout(1500)                                  # the warm-up of the files the page had already loaded
     expect("the worker is registered and controls the page after one visit",
-           pg.evaluate("navigator.serviceWorker.getRegistration().then(r => !!(r && r.active))"))
-    pg.evaluate("fetch('models/x.bin').catch(() => 0); fetch('audio/fi/x.mp3').catch(() => 0)"); pg.wait_for_timeout(500)
-    keys = pg.evaluate("""async () => { const o = []; for (const k of await caches.keys()) for (const r of await (await caches.open(k)).keys()) o.push(k + ' ' + r.url); return o; }""")
+           ev("navigator.serviceWorker.getRegistration().then(r => !!(r && r.active))"))
+    ev("fetch('models/x.bin').catch(() => 0); fetch('audio/fi/x.mp3').catch(() => 0)"); pg.wait_for_timeout(500)
+    keys = ev("""async () => { const o = []; for (const k of await caches.keys()) for (const r of await (await caches.open(k)).keys()) o.push(k + ' ' + r.url); return o; }""")
     expect("models/ and audio/ are never cached", not any(re.search(r"/(models|audio)/", k) for k in keys if "fl-sw-" in k), keys[:3])
     expect("the main files are cached (page, script, KaTeX, simulation library)", all(any(x in k for k in keys) for x in (f"/{lid}.html", "lesson.js", "katex.min.js", "p5.min.js")),
            [k for k in keys][:8])
@@ -120,9 +133,9 @@ with sync_playwright() as pw:
     pg.goto(URL + f"{lid}.html?simloop=1"); pg.wait_for_timeout(1500)
     expect("a query part does not stop the page from being found in the cache", pg.query_selector("main, article") is not None and pg.query_selector("#v2") is not None)
     pg.goto(URL + f"{lid}.html"); pg.wait_for_timeout(2500)
-    expect("offline: KaTeX has typeset the formulas", pg.evaluate("document.querySelectorAll('.katex').length") > 0)
-    expect("offline: the simulation draws", pg.evaluate("[...document.querySelectorAll('canvas')].some(c => c.width > 0)"),
-           pg.evaluate("document.querySelectorAll('canvas').length"))
+    expect("offline: KaTeX has typeset the formulas", ev("document.querySelectorAll('.katex').length") > 0)
+    expect("offline: the simulation draws", ev("[...document.querySelectorAll('canvas')].some(c => c.width > 0)"),
+           ev("document.querySelectorAll('canvas').length"))
     form = pg.query_selector("form.check")
     ans = form.get_attribute("data-answer")
     form.evaluate("(f, a) => { f.querySelector('input').value = a; f.requestSubmit(); }", ans.replace(".", ","))   # the form sits in a closed stage; the check itself is what is tested
@@ -141,16 +154,16 @@ with sync_playwright() as pw:
     sw = (SITE / "sw.js").read_text()
     OVERRIDE["/sw.js"] = (("// next release\n" + sw).encode(), "text/javascript")
     pg.goto(URL + f"{lid}.html")
-    pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r.update())")
+    ev("navigator.serviceWorker.getRegistration().then(r => r.update())")
     until("caches.keys().then(a => !a.includes('fl-sw-0-old'))")
-    names = pg.evaluate("caches.keys()")
+    names = ev("caches.keys()")
     expect("a new worker removes the caches of an older schema and keeps the read-aloud model's", "fl-sw-0-old" not in names and "fl-tts-supertonic3-v1" in names, names)
 
     # the emergency switch
     OVERRIDE["/sw.js"] = ((ROOT / "templates" / "sw-kill.js").read_bytes(), "text/javascript")
-    pg.evaluate("navigator.serviceWorker.getRegistration().then(r => r.update())")
+    ev("navigator.serviceWorker.getRegistration().then(r => r.update())")
     until("navigator.serviceWorker.getRegistrations().then(a => a.length === 0)")
-    names = pg.evaluate("caches.keys()")
+    names = ev("caches.keys()")
     expect("the emergency switch unregisters the worker and empties its caches, leaving the read-aloud model's", names == ["fl-tts-supertonic3-v1"], names)
     # persistent storage: asked after the first attempt, once, silently; Firefox is left out
     for ua, want in (("Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0 Safari/537.36", 1), ("Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0", 0)):
