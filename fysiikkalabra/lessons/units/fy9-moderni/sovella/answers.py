@@ -119,4 +119,31 @@ out.update({f"{S}-s7-b-ratio": round(gain, 4), f"{S}-s7-b-diff": round(surplus /
             f"{S}-s7-d-share-laser": round(100 * E_las / E_grid, 2), f"{S}-s7-b-inverse": round(E_las / E_fus, 3),
             f"{S}-s7-e-dm": dm7, f"{S}-s7-e-dm-ng": round(dm7 * 1e12, 2)})
 
+# s8: concrete wall and gamma radiation (fy8-13/vaimennus; read from the graph): H = 80 uSv/h at d = 0 and 5,0 uSv/h at d = 20 cm
+H8_0, H8_20, d8_20 = 80.0, 5.0, 20.0
+mu8 = math.log(H8_0 / H8_20) / d8_20                              # 1/cm
+d8 = 18.0                                                         # cm, the wall
+H8 = H8_0 * math.exp(-mu8 * d8)                                   # uSv/h behind the wall
+hours8 = 1.5 * 220                                                # h a year in the corridor
+D8 = H8 * hours8                                                  # uSv a year
+Hmax8 = 1000.0 / hours8                                           # uSv/h, limit 1,0 mSv a year
+dmin8 = math.log(H8_0 / Hmax8) / mu8                              # cm
+out.update({f"{S}-s8-a": round(mu8, 4), f"{S}-s8-a-ln": round(math.log(H8_0 / H8_20), 4),
+            f"{S}-s8-b": round(H8, 2), f"{S}-s8-b-exp": round(mu8 * d8, 3), f"{S}-s8-b-e": round(math.exp(-mu8 * d8), 4),
+            f"{S}-s8-c": round(D8 / 1000, 3), f"{S}-s8-c-h": hours8, f"{S}-s8-c-uSv": round(D8, 0),
+            f"{S}-s8-d": round(dmin8, 2), f"{S}-s8-d-Hmax": round(Hmax8, 3), f"{S}-s8-d-ln": round(math.log(H8_0 / Hmax8), 3),
+            f"{S}-s8-d-check": round(H8_0 * math.exp(-mu8 * 24.0), 3), f"{S}-s8-d-half": round(math.log(2) / mu8, 3)})
+
+# s9: Hubble's law (fy8-16/hubble-t; read from the graph): the fitted line passes through (250 Mpc; 18 000 km/s) and the origin
+d9, v9 = 250.0, 18000.0
+H9 = v9 / d9                                                      # km/s per Mpc
+v9b = 8400.0                                                      # km/s, a galaxy
+dist9 = v9b / H9                                                  # Mpc
+Mpc_km, a_s = 3.086e19, year                                      # km, s
+H9_s = H9 / Mpc_km                                                # 1/s
+T9 = 1 / H9_s                                                     # s
+T9_a = T9 / a_s                                                   # a
+out.update({f"{S}-s9-a": round(H9, 2), f"{S}-s9-b": round(dist9, 2), f"{S}-s9-c": round(T9_a, -7),
+            f"{S}-s9-c-Hs": H9_s, f"{S}-s9-c-s": T9, f"{S}-s9-c-a": T9_a})
+
 print(json.dumps(out))

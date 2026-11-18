@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin liikkeen, kuvaajat ja mittausaineiston. Ratkaise ne kuten kokeessa: valitse koordinaatisto ja positiivinen suunta, perustele mallin valinta, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa tunnin liikkeen, kuvaajat ja mittausaineiston. Ratkaise ne kuten kokeessa: valitse koordinaatisto ja positiivinen suunta, perustele mallin valinta, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-liike-s1",
@@ -741,6 +741,298 @@
     "math": "fy4-2",
     "experiment": "fy1-3",
     "communication": "fy1-3"
+   }
+  },
+  {
+   "id": "fy9-liike-s7",
+   "title": "Kärry radalla",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy4-1",
+    "fy1-5"
+   ],
+   "figure": "fy4-1/ex-kolme-osaa",
+   "text": "Opiskelija seuraa kärryä, joka liikkuu suoralla vaakaradalla, ja piirtää kärryn paikasta $(t,x)$-kuvaajan. Paikka $x$ mitataan radan suuntaisella akselilla, ja $x$ kasvaa oikealle. Kuvaajan perusteella kärryn liike jakautuu kolmeen vaiheeseen, ja kussakin vaiheessa liike on tasaista.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä kärryn nopeus liikkeen ensimmäisessä vaiheessa.",
+     "answer": {
+      "value": 3.0,
+      "unit": "m/s",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan ensimmäisen suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(0\\,\\text{s};\\ 4\\,\\text{m})$ ja $(4\\,\\text{s};\\ 16\\,\\text{m})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{\\Delta x}{\\Delta t}$, tasaisessa liikkeessä $(t,x)$-kuvaajan kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\dfrac{16\\,\\text{m} - 4\\,\\text{m}}{4\\,\\text{s}} = 3{,}0\\,\\text{m/s}$, positiivinen eli oikealle."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Mikä on kärryn nopeus hetkellä $8\\,\\text{s}$? Mihin suuntaan kärry silloin liikkuu?",
+     "answer": {
+      "value": -2.0,
+      "unit": "m/s",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Hetki $8\\,\\text{s}$ kuuluu kolmanteen vaiheeseen. Sen suoralta luetaan pisteet $(6\\,\\text{s};\\ 16\\,\\text{m})$ ja $(10\\,\\text{s};\\ 8\\,\\text{m})$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\dfrac{8\\,\\text{m} - 16\\,\\text{m}}{10\\,\\text{s} - 6\\,\\text{s}} = -2{,}0\\,\\text{m/s}$"
+      },
+      {
+       "text": "Tulkitsee etumerkin: nopeus on negatiivinen, joten paikka $x$ pienenee ja kärry liikkuu vasemmalle, $x$-akselin suuntaa vastaan. Vauhti on $2{,}0\\,\\text{m/s}$.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kärry on paikassa $x = 12\\,\\text{m}$ kaksi kertaa. Määritä molemmat hetket.",
+     "answer": [
+      {
+       "name": "t1",
+       "value": 2.67,
+       "unit": "s",
+       "tolerance": 0.04
+      },
+      {
+       "name": "t2",
+       "value": 8.0,
+       "unit": "s",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Perustelee kuvaajalla, mihin vaiheisiin paikka $12\\,\\text{m}$ kuuluu: ensimmäisessä vaiheessa paikka nousee arvosta $4\\,\\text{m}$ arvoon $16\\,\\text{m}$ ja kolmannessa laskee arvosta $16\\,\\text{m}$ arvoon $8\\,\\text{m}$. Toisessa vaiheessa kärry pysyy paikassa $16\\,\\text{m}$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Kussakin vaiheessa $x = x_0 + v\\,(t - t_0)$, josta $t = t_0 + \\dfrac{x - x_0}{v}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t_1 = \\dfrac{12\\,\\text{m} - 4\\,\\text{m}}{3{,}0\\,\\text{m/s}} \\approx 2{,}67\\,\\text{s}$ ja $t_2 = 6\\,\\text{s} + \\dfrac{12\\,\\text{m} - 16\\,\\text{m}}{-2{,}0\\,\\text{m/s}} = 8{,}0\\,\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t_1 \\approx 2{,}7\\,\\text{s}$ ja $t_2 = 8{,}0\\,\\text{s}$; kumpikin hetki kuuluu oman vaiheensa aikaväliin."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske kärryn keskinopeus koko kuvaajan esittämältä ajalta. Miksi keskinopeus poikkeaa keskivauhdista, ja kumpi niistä on suurempi?",
+     "answer": {
+      "value": 0.4,
+      "unit": "m/s",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v_\\text{ka} = \\dfrac{\\Delta x}{\\Delta t}$, jossa $\\Delta x$ on siirtymä eli paikan muutos alku- ja loppuhetken välillä, ei kuljettu matka."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nv_\\text{ka} &= \\dfrac{8\\,\\text{m} - 4\\,\\text{m}}{10\\,\\text{s}} \\\\\n&= +0{,}40\\,\\text{m/s}\n\\end{aligned}\n$$, oikealle"
+      },
+      {
+       "text": "Selittää, että keskivauhdissa lasketaan kuljettu matka ($12\\,\\text{m} + 0\\,\\text{m} + 8\\,\\text{m} = 20\\,\\text{m}$), mutta keskinopeudessa vain siirtymä ($4\\,\\text{m}$). Kärry kulkee viimeisessä vaiheessa takaisin päin, joten matkaa kertyy mutta siirtymä pienenee. Keskivauhti on tässä $2{,}0\\,\\text{m/s}$, siis suurempi kuin keskinopeuden suuruus.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy4-1",
+    "math": "fy4-1",
+    "concept": "fy4-1"
+   }
+  },
+  {
+   "id": "fy9-liike-s8",
+   "title": "Kaksi kulkijaa samalla tiellä",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy4-1",
+    "fy4-12",
+    "fy1-5"
+   ],
+   "figure": "fy4-1/ex-kaksi-kappaletta",
+   "text": "Kaksi kulkijaa, A ja B, liikkuu suoralla tiellä toisiaan kohti. Kumpikin kulkee tasaisella nopeudella. Paikka $x$ mitataan tien suuntaisella akselilla, ja $x$ kasvaa A:n kulkusuuntaan. Kuvaajassa on molempien kulkijoiden paikka ajan funktiona.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kulkijoiden nopeudet etumerkkeineen.",
+     "answer": [
+      {
+       "name": "vA",
+       "value": 2.0,
+       "unit": "m/s",
+       "tolerance": 0.03
+      },
+      {
+       "name": "vB",
+       "value": -2.0,
+       "unit": "m/s",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kummankin suoran kulmakerroin luetaan suoran päätepisteistä: A $(0\\,\\text{s};\\ 4\\,\\text{m})$ ja $(8\\,\\text{s};\\ 20\\,\\text{m})$, B $(0\\,\\text{s};\\ 20\\,\\text{m})$ ja $(8\\,\\text{s};\\ 4\\,\\text{m})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{\\Delta x}{\\Delta t}$ kummallekin kulkijalle."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v_\\text{A} = \\dfrac{20\\,\\text{m} - 4\\,\\text{m}}{8\\,\\text{s}} = 2{,}0\\,\\text{m/s}$ ja $v_\\text{B} = \\dfrac{4\\,\\text{m} - 20\\,\\text{m}}{8\\,\\text{s}} = -2{,}0\\,\\text{m/s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v_\\text{A} = +2{,}0\\,\\text{m/s}$ ja $v_\\text{B} = -2{,}0\\,\\text{m/s}$; B:n negatiivinen etumerkki kertoo, että B kulkee $x$-akselin suuntaa vastaan."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Kirjoita kulkijoiden paikat ajan funktiona ja laske, milloin kulkijat kohtaavat.",
+     "answer": {
+      "value": 4.0,
+      "unit": "s",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "$$\n\\begin{aligned}\nx_\\text{A} &= x_{0\\text{A}} + v_\\text{A}\\,t \\\\\n&= 4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot t\n\\end{aligned}\n$$ ja $x_\\text{B} = 20\\,\\text{m} - 2{,}0\\,\\text{m/s} \\cdot t$. Kohtaamisehto on $x_\\text{A} = x_\\text{B}$, josta $t = \\dfrac{x_{0\\text{B}} - x_{0\\text{A}}}{v_\\text{A} - v_\\text{B}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{20\\,\\text{m} - 4\\,\\text{m}}{2{,}0\\,\\text{m/s} - (-2{,}0\\,\\text{m/s})} \\\\\n&= 4{,}0\\,\\text{s}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t = 4{,}0\\,\\text{s}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Välimatka $16\\,\\text{m}$ pienenee nopeudella $4{,}0\\,\\text{m/s}$, ja $16\\,\\text{m} : 4{,}0\\,\\text{m/s} = 4{,}0\\,\\text{s}$; hetki on kuvaajan aikavälillä $0\\ldots 8\\,\\text{s}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 2,
+     "text": "Missä kulkijat kohtaavat?",
+     "answer": {
+      "value": 12.0,
+      "unit": "m",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} \\\\\n&= 12\\,\\text{m}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tarkistus B:n yhtälöllä: $20\\,\\text{m} - 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 12\\,\\text{m}$, sama paikka."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Oletetaan, että B:n nopeuden suuruus olisi $1{,}0\\,\\text{m/s}$ ja B lähtisi samasta alkupaikasta kuin ennen. A:n liike ei muutu. Miten kohtaamishetki ja kohtaamispaikka muuttuisivat? Perustele laskemalla ja kuvaajan suoran avulla.",
+     "criteria": [
+      {
+       "text": "Perustelee kuvaajalla: B:n suora loivenee, koska B:n nopeuden suuruus pienenee, joten se leikkaa A:n suoran myöhemmin ja ylempänä kuin alkuperäinen suora.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Kohtaamisehto $x_\\text{A} = x_\\text{B}$ antaa: $$\n\\begin{aligned}\nx_\\text{A} &= x_\\text{B} \\\\\n4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot t &= 20\\,\\text{m} \\\\\n&\\quad - 1{,}0\\,\\text{m/s} \\cdot t\n\\end{aligned}\n$$, josta $t = \\dfrac{x_{0\\text{B}} - x_{0\\text{A}}}{v_\\text{A} - v_\\text{B}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = \\dfrac{16\\,\\text{m}}{3{,}0\\,\\text{m/s}} \\approx 5{,}3\\,\\text{s}$ ja $$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 5{,}33\\,\\text{s} \\\\\n&\\approx 14{,}7\\,\\text{m}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kohtaaminen tapahtuisi myöhemmin ($5{,}3\\,\\text{s} > 4{,}0\\,\\text{s}$) ja lähempänä B:n alkupaikkaa ($14{,}7\\,\\text{m} > 12\\,\\text{m}$), koska välimatka pienenee hitaammin ja A ehtii kulkea pidemmälle."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy4-1",
+    "math": "fy4-12",
+    "concept": "fy4-12",
+    "communication": "fy4-12"
    }
   }
  ]

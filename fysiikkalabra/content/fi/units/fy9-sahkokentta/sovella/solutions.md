@@ -508,3 +508,189 @@ F &= N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} \\
 &\approx 87{,}5\,\text{mN}
 \end{aligned}
 $$.
+
+## fy9-sahkokentta-s7
+
+### a)
+**Annettu:** $V(x)$-kuvaaja; levyjen välinen kenttä on homogeeninen ja $x$ mitataan negatiivisesta levystä
+**Kysytty:** sähkökentän voimakkuus $E$ ja kentän suunta
+**Periaate:** Homogeenisessa kentässä potentiaali muuttuu tasaisesti matkan funktiona, ja kentän voimakkuus on potentiaalin muutos jaettuna matkalla (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Kenttä osoittaa siihen suuntaan, jossa potentiaali pienenee.
+**Kuvaajan lukeminen:** Luetaan kaksi kaukana toisistaan olevaa pistettä: $(1{,}0\,\text{cm};\ 50\,\text{V})$ ja $(5{,}0\,\text{cm};\ 250\,\text{V})$.
+**Kaava:** $E = \dfrac{|\Delta V|}{\Delta x} = \dfrac{|V_2 - V_1|}{x_2 - x_1}$
+**Muunnokset:** $1{,}0\,\text{cm} = 0{,}010\,\text{m}$ ja $5{,}0\,\text{cm} = 0{,}050\,\text{m}$.
+**Sijoitus:** $$
+\begin{aligned}
+E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0{,}050\,\text{m} - 0{,}010\,\text{m}} \\
+&= \dfrac{200\,\text{V}}{0{,}040\,\text{m}} \\
+&= 5000\,\text{V/m}
+\end{aligned}
+$$
+**Vastaus:** $E = 5{,}0\,\text{kV/m}$. Kenttä osoittaa positiivisesta levystä negatiiviseen, koska potentiaali pienenee siihen suuntaan: $x$-akselia vastaan. Tuloksessa on kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Kenttä on selvästi pienempi kuin ilman läpilyöntikenttä, noin $3\,\text{MV/m}$.
+
+### b)
+**Annettu:** $E = 5{,}0\,\text{kV/m}$ a-kohdasta; alfahiukkasen varaus $q = +2e = 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C}$ ja massa $m = 6{,}645 \cdot 10^{-27}\,\text{kg}$; vain sähköinen voima
+**Kysytty:** kiihtyvyys $a$ ja sen suunta
+**Periaate:** Homogeenisessa kentässä varaukseen vaikuttaa sähköinen voima $F = qE$ (luku *Homogeeninen sähkökenttä*). Positiiviseen varaukseen voima on kentän suuntaan. Kun vain tämä voima vaikuttaa, Newtonin toinen laki $F = ma$ antaa kiihtyvyyden (luku *Newtonin toinen laki*).
+**Kaava:** $qE = ma$, joten $a = \dfrac{qE}{m} = \dfrac{2eE}{m}$
+**Muunnokset:** $E = 5{,}0\,\text{kV/m} = 5{,}0 \cdot 10^{3}\,\text{V/m} = 5{,}0 \cdot 10^{3}\,\text{N/C}$.
+**Sijoitus:** $$
+\begin{aligned}
+F &= 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5{,}0 \cdot 10^{3}\,\text{N/C} \\
+&= 1{,}602 \cdot 10^{-15}\,\text{N}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+a &= \dfrac{1{,}602 \cdot 10^{-15}\,\text{N}}{6{,}645 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 2{,}41 \cdot 10^{11}\,\text{m/s}^2
+\end{aligned}
+$$
+**Vastaus:** $a \approx 2{,}4 \cdot 10^{11}\,\text{m/s}^2$, kentän suuntaan eli kohti negatiivista levyä ($x$ pienenee). Kaksi merkitsevää numeroa kuten kentän voimakkuudessa.
+**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
+
+### c)
+**Annettu:** alfahiukkanen lähtee levosta kohdasta $x = 4{,}0\,\text{cm}$; $q = 2e$ ja $m$ kuten b-kohdassa; vain sähköinen voima tekee työtä
+**Kysytty:** nopeus $v$ kohdassa $x = 2{,}0\,\text{cm}$
+**Periaate:** Vain sähköinen voima tekee työtä, joten energiaperiaatteen mukaan potentiaalienergian väheneminen muuttuu liike-energiaksi: $\tfrac12 mv^2 = q\,\Delta V$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Positiivinen hiukkanen siirtyy kohti pienempää potentiaalia, joten sen potentiaalienergia pienenee.
+**Kuvaajan lukeminen:** Kuvaajalta: $V(4{,}0\,\text{cm}) = 200\,\text{V}$ ja $V(2{,}0\,\text{cm}) = 100\,\text{V}$.
+**Kaava:** $\tfrac12 mv^2 = 2e\,(V_\text{alku} - V_\text{loppu})$, joten $v = \sqrt{\dfrac{4e\,(V_\text{alku} - V_\text{loppu})}{m}}$
+**Muunnokset:** Ei tarvita: potentiaalit ovat voltteina.
+**Sijoitus:** $$
+\begin{aligned}
+\Delta V &= 200\,\text{V} - 100\,\text{V} \\
+&= 100\,\text{V} \\
+E_\text{k} &= 2e\,\Delta V \\
+&= 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\quad \cdot 100\,\text{V} \\
+&= 3{,}204 \cdot 10^{-17}\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 3{,}204 \cdot 10^{-17}\,\text{J}}{6{,}645 \cdot 10^{-27}\,\text{kg}}} \\
+&= \sqrt{9{,}64 \cdot 10^{9}\,\text{m}^2/\text{s}^2} \\
+&\approx 9{,}8 \cdot 10^{4}\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v \approx 98\,\text{km/s}$ eli $9{,}8 \cdot 10^{4}\,\text{m/s}$. Kaksi merkitsevää numeroa kuten luetuissa potentiaaleissa.
+**Järkevyys:** Tarkistus työllä: $W = Fs = 1{,}602 \cdot 10^{-15}\,\text{N} \cdot 0{,}020\,\text{m} = 3{,}2 \cdot 10^{-17}\,\text{J}$, sama kuin $E_\text{k}$. Nopeus on vain noin $0{,}03\,\%$ valon nopeudesta, joten klassinen laskenta kelpaa.
+
+### d)
+**Annettu:** uusi nollataso on positiivisella levyllä; entisessä valinnassa $V(5{,}0\,\text{cm}) = 250\,\text{V}$ ja $V(4{,}0\,\text{cm}) = 200\,\text{V}$
+**Kysytty:** potentiaali kohdassa $x = 4{,}0\,\text{cm}$ uudessa valinnassa sekä se, muuttuvatko $E$ ja c-kohdan nopeus
+**Periaate:** Nollatason valinta siirtää kaikkia potentiaaleja saman verran, mutta potentiaalierot pysyvät samoina (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Kentän voimakkuus ja energian muutos riippuvat vain potentiaalieroista.
+**Kuvaajan lukeminen:** Uudessa valinnassa positiivisen levyn potentiaali on $0\,\text{V}$, eli kaikki entiset arvot pienenevät $250\,\text{V}$.
+**Kaava:** $V_\text{uusi} = V_\text{vanha} - 250\,\text{V}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+V_\text{uusi}(4{,}0\,\text{cm}) &= 200\,\text{V} - 250\,\text{V} \\
+&= -50\,\text{V}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+V_\text{uusi}(2{,}0\,\text{cm}) &= 100\,\text{V} - 250\,\text{V} \\
+&= -150\,\text{V}
+\end{aligned}
+$$
+**Vastaus:** $V = -50\,\text{V}$. Kentän voimakkuus ei muutu, koska potentiaalin suora siirtyy alaspäin mutta sen kulmakerroin pysyy samana. Potentiaaliero kohtien $4{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$ välillä on yhä $-50\,\text{V} - (-150\,\text{V}) = 100\,\text{V}$, joten liike-energian kasvu ja nopeus $98\,\text{km/s}$ pysyvät samoina.
+**Järkevyys:** Levyjen välinen jännite on edelleen $0\,\text{V} - (-250\,\text{V}) = 250\,\text{V}$. Fysikaalisesti merkitsevä on potentiaaliero, ei potentiaalin arvo.
+
+### Yleisiä virheitä
+- a-kohdassa kenttä lasketaan jakamalla $250\,\text{V}$ luvulla $5{,}0$ ilman yksikkömuunnosta, jolloin tulokseksi tulee $50\,\text{V/cm}$ ja yksikkö unohtuu muuttaa muotoon $\text{V/m}$.
+- b-kohdassa käytetään varauksena $e$ eikä $2e$, jolloin kiihtyvyys jää puoleen oikeasta, tai painovoima otetaan mukaan, vaikka se on mitätön.
+- c-kohdassa sijoitetaan potentiaalieron $\Delta V$ sijaan yksi potentiaalin arvo, esimerkiksi $200\,\text{V}$.
+- d-kohdassa luullaan, että nollatason siirto muuttaa kenttää tai nopeutta, tai potentiaalin etumerkki unohtuu.
+
+### Hyväksytään myös
+- a-kohdassa kentän voimakkuus voidaan laskea kuvaajan koko suoralta: $\dfrac{250\,\text{V}}{0{,}050\,\text{m}}$.
+- c-kohdassa nopeus voidaan laskea myös kiihtyvyydestä ja matkasta: $v^2 = 2as$ b-kohdan kiihtyvyydellä ja $s = 0{,}020\,\text{m}$.
+
+## fy9-sahkokentta-s8
+
+### a)
+**Annettu:** lähdejännite $U = 6{,}0\,\text{V}$, etuvastus $R = 220\,\Omega$ ja LEDin ominaiskäyrä; LED ja vastus ovat sarjassa
+**Kysytty:** virta $I$ piirissä
+**Periaate:** Sarjassa virta on kaikkialla sama, ja lähteen jännite jakautuu vastuksen ja LEDin kesken: $U = U_\text{R} + U_\text{D}$ (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Vastuksen jännite on $U_\text{R} = RI$ (luku *Resistanssi ja Ohmin laki*). LEDin jännite saadaan ominaiskäyrältä.
+**Kuvaajan lukeminen:** Virta-alueella $5\ldots 30\,\text{mA}$ käyrä on lähes pystysuora kohdassa $U_\text{D} \approx 2{,}2\,\text{V}$ (esimerkiksi piste $(2{,}2\,\text{V};\ 10\,\text{mA})$). Siksi LEDin jännite on tällä alueella noin $2{,}2\,\text{V}$ riippumatta tarkasta virrasta; alue tarkistetaan lopuksi.
+**Kaava:** $U = RI + U_\text{D}$, joten $I = \dfrac{U - U_\text{D}}{R}$
+**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja vastus ohmeina; virta muunnetaan lopuksi milliampeereiksi.
+**Sijoitus:** $$
+\begin{aligned}
+U_\text{R} &= 6{,}0\,\text{V} - 2{,}2\,\text{V} = 3{,}8\,\text{V} \\
+I &= \dfrac{3{,}8\,\text{V}}{220\,\Omega} \\
+&= 0{,}01727\,\text{A} \\
+&\approx 17\,\text{mA}
+\end{aligned}
+$$
+**Vastaus:** $I \approx 17\,\text{mA}$. Tuloksessa on kaksi merkitsevää numeroa kuten lähtötiedoissa ja kuvaajasta luetussa jännitteessä.
+**Järkevyys:** Virta $17\,\text{mA}$ on alueella $5\ldots 30\,\text{mA}$, jolla käyrän jännite on $2{,}2\,\text{V}$, ja alle sallitun $30\,\text{mA}$. LEDin virta ei ole liian suuri, joten oletus ja tulos sopivat yhteen.
+
+### b)
+**Annettu:** $U = 6{,}0\,\text{V}$, $U_\text{R} = 3{,}8\,\text{V}$ ja $I = 17{,}27\,\text{mA}$ a-kohdasta
+**Kysytty:** vastuksen teho $P_\text{R}$ ja sen osuus lähteen sähkötehosta
+**Periaate:** Sähköteho on jännite kertaa virta, $P = UI$ (luku *Sähköteho ja vastuksen lämpeneminen*). Vastuksessa sähköenergia muuttuu sisäenergiaksi. Lähteen teho on $UI$, ja koska virta on sama, osuus on jännitteiden suhde.
+**Kaava:** $P_\text{R} = U_\text{R} I$ ja osuus $= \dfrac{P_\text{R}}{UI} = \dfrac{U_\text{R}}{U}$
+**Muunnokset:** $I = 17{,}27\,\text{mA} = 0{,}01727\,\text{A}$.
+**Sijoitus:** $$
+\begin{aligned}
+P_\text{R} &= 3{,}8\,\text{V} \cdot 0{,}01727\,\text{A} \\
+&= 0{,}0656\,\text{W} \\
+&\approx 66\,\text{mW}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\dfrac{P_\text{R}}{P} &= \dfrac{3{,}8\,\text{V}}{6{,}0\,\text{V}} \\
+&= 0{,}633 \\
+&\approx 63\,\%
+\end{aligned}
+$$
+**Vastaus:** $P_\text{R} \approx 66\,\text{mW}$ ja noin $63\,\%$ lähteen tehosta muuttuu vastuksessa sisäenergiaksi. Kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** LEDin teho on $U_\text{D} I \approx 38\,\text{mW}$ ja lähteen teho $UI \approx 104\,\text{mW}$. Summa $66\,\text{mW}$ + $38\,\text{mW}$ = $104\,\text{mW}$ täsmää, ja LEDin osuus on $37\,\%$. Tavallinen $0{,}25\,\text{W}$:n vastus kestää $66\,\text{mW}$:n tehon hyvin.
+
+### c)
+**Annettu:** $U = 6{,}0\,\text{V}$, $U_\text{D} \approx 2{,}2\,\text{V}$ kuvaajasta ja suurin sallittu virta $I_\text{max} = 30\,\text{mA}$
+**Kysytty:** pienin etuvastus $R_\text{min}$
+**Periaate:** Piiri on sama kuin a-kohdassa: $U = RI + U_\text{D}$. Mitä pienempi vastus on, sitä suurempi virta on, joten pienin sallittu vastus vastaa suurinta sallittua virtaa (luku *Resistanssi ja Ohmin laki*).
+**Kuvaajan lukeminen:** Käyrä on suurimmallakin virralla $30\,\text{mA}$ lähes pystysuora kohdassa $U_\text{D} \approx 2{,}2\,\text{V}$.
+**Kaava:** $R_\text{min} = \dfrac{U - U_\text{D}}{I_\text{max}}$
+**Muunnokset:** $30\,\text{mA} = 0{,}030\,\text{A}$.
+**Sijoitus:** $$
+\begin{aligned}
+R_\text{min} &= \dfrac{6{,}0\,\text{V} - 2{,}2\,\text{V}}{0{,}030\,\text{A}} \\
+&= \dfrac{3{,}8\,\text{V}}{0{,}030\,\text{A}} \\
+&\approx 127\,\Omega
+\end{aligned}
+$$
+**Vastaus:** Vastuksen on oltava vähintään noin $130\,\Omega$. Tulos pyöristetään ylöspäin, koska pienempi vastus päästäisi läpi liian suuren virran; kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** Alkuperäinen $220\,\Omega$ on suurempi kuin $130\,\Omega$, ja sen virta $17\,\text{mA}$ on alle $30\,\text{mA}$, mikä sopii yhteen. Vastuksella $130\,\Omega$ virta olisi $3{,}8\,\text{V} : 130\,\Omega \approx 29\,\text{mA}$, eli alle sallitun.
+
+### d)
+**Annettu:** LEDin ominaiskäyrä; virrat $5\,\text{mA}$ ja $20\,\text{mA}$
+**Kysytty:** LEDin resistanssi $R_\text{D} = U_\text{D}/I$ kummallakin virralla ja johtopäätös Ohmin laista
+**Periaate:** Resistanssi on jännitteen ja virran suhde $R = U/I$ (luku *Resistanssi ja Ohmin laki*). Ohmin laki pätee eli resistanssi on vakio vain, jos jännite ja virta ovat suoraan verrannolliset, eli $(U, I)$-kuvaaja on origon kautta kulkeva suora.
+**Kuvaajan lukeminen:** Käyrältä luetaan kummallakin virralla jännite: $5\,\text{mA}$ ja $20\,\text{mA}$ kohdalla $U_\text{D} \approx 2{,}2\,\text{V}$.
+**Kaava:** $R_\text{D} = \dfrac{U_\text{D}}{I}$
+**Muunnokset:** $5\,\text{mA} = 0{,}005\,\text{A}$ ja $20\,\text{mA} = 0{,}020\,\text{A}$.
+**Sijoitus:** $$
+\begin{aligned}
+R_\text{D}(5\,\text{mA}) &= \dfrac{2{,}2\,\text{V}}{0{,}005\,\text{A}} \\
+&= 440\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+R_\text{D}(20\,\text{mA}) &= \dfrac{2{,}2\,\text{V}}{0{,}020\,\text{A}} \\
+&= 110\,\Omega
+\end{aligned}
+$$
+**Vastaus:** $R_\text{D} \approx 440\,\Omega$ virralla $5\,\text{mA}$ ja $110\,\Omega$ virralla $20\,\text{mA}$. Resistanssi ei ole vakio vaan pienenee neljäsosaan, kun virta nelinkertaistuu, joten LED ei noudata Ohmin lakia: käyrä ei ole origon kautta kulkeva suora. Kun virta muuttuu paljon, jännite pysyy lähes samana, joten LEDiä ei voi kytkeä suoraan jännitelähteeseen: pienikin jännitteen ero lähteen ja LEDin välillä aiheuttaisi suuren virran. Etuvastus ottaa ylimääräisen jännitteen ja määrää virran.
+**Järkevyys:** Virta nelinkertaistui ($5\,\text{mA} \to 20\,\text{mA}$) ja jännite pysyi samana, joten resistanssin on pienennyttävä neljäsosaan: $440\,\Omega : 4 = 110\,\Omega$.
+
+### Yleisiä virheitä
+- a-kohdassa lasketaan $I = 6{,}0\,\text{V} : 220\,\Omega \approx 27\,\text{mA}$ eli unohdetaan, että osa lähteen jännitteestä on LEDin yli.
+- b-kohdassa vastuksen tehoksi lasketaan $P = UI$ koko lähdejännitteellä $6{,}0\,\text{V}$ ja saadaan koko piirin teho $104\,\text{mW}$.
+- c-kohdassa pienin vastus pyöristetään alaspäin, vaikka silloin virta voisi ylittää sallitun arvon.
+- d-kohdassa resistanssi lasketaan vain yhdellä virralla ja oletetaan vakioksi, tai sanotaan, että LED noudattaa Ohmin lakia, koska jännite ja virta kasvavat yhtä aikaa.
+
+### Hyväksytään myös
+- a-kohdassa virta voidaan ratkaista myös silmukkasäännöstä: $6{,}0\,\text{V} - RI - U_\text{D} = 0$.
+- d-kohdassa jännite voidaan lukea myös hieman tarkemmin ($2{,}17\,\text{V}$ ja $2{,}23\,\text{V}$), jolloin resistanssit ovat noin $430\,\Omega$ ja $110\,\Omega$; lukematarkkuus on tässä noin $0{,}05\,\text{V}$.

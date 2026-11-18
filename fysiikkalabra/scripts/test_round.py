@@ -3,7 +3,10 @@
 1. parse_carry reads every form of reviews.py carry's lines (carried now, already current, delta/full needed, and a
    reviewer whose scope says delta although its PASS is for the current content).
 2. For a published lesson in every language, the reviews round.py calls needed are exactly those reviews.py carry
-   and reviews.py status report when run on their own (carry writes nothing for a lesson whose reviews are current)."""
+   and reviews.py status report when run on their own (carry writes nothing for a lesson whose reviews are current).
+3. preflight. 4. Course units (work queue 0j): round.py recognises a unit id, parse_item_carry reads reviews.py
+   carry-item's lines, and for fy9-liike in every language the reviews round.py calls needed are exactly those
+   units.status reports not PASS."""
 import pathlib, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, round as rnd
@@ -47,4 +50,28 @@ for lang in rnd.languages(lid, []):
         half = st.split("; exercises: ")[1 if part == "exercises" else 0]
         stale = {n for n in rnd.ROLES if f"{n}=PASS" not in half}
         check(need == stale, f"{lid} [{lang}] {part}: round needs {sorted(need) or 'nothing'}, status says {sorted(stale) or 'nothing'} stale")
+
+# 4. course units (work queue 0j)
+check(rnd.parse_item_carry(["science: carried over (a figure)", "pedagogy: already current", "visual: no earlier PASS, review needed", "fi/fy9-liike: draft"])
+      == {"science": ("none", True), "pedagogy": ("none", False), "visual": ("full", False)}, "parse_item_carry: carried, current and needed")
+check(rnd.parse_item_carry(["visual: more than teacher-approved figures changed, review needed"]) == {"visual": ("full", False)}, "parse_item_carry: a changed item needs a full review")
+check(rnd.is_unit("fy9-liike") and not rnd.is_unit("fy8-8"), "is_unit: fy9-liike is a unit, fy8-8 is a lesson")
+import units
+uid = "fy9-liike"
+check(set(rnd.unit_languages(uid, [])) >= {"fi", "en", "fi-easy"} and rnd.unit_languages(uid, ["en"]) == ["en"], "unit_languages: every language of the unit, --lang limits them")
+check(rnd.has_sovella(uid, "fi"), "has_sovella: fy9-liike has a Sovella task set")
+for lang in rnd.unit_languages(uid, []):
+    out = subprocess.run([sys.executable, "scripts/reviews.py", "carry-item", "unit", uid, "--lang", lang], capture_output=True, text=True, cwd=ROOT).stdout.splitlines()
+    need = {n for n, (m, _) in rnd.parse_item_carry(out).items() if m != "none"}
+    stale = {n for n, v in units.status(uid, lang)["reports"].items() if v != "PASS"}
+    check(need == stale, f"{uid} [{lang}]: round needs {sorted(need) or 'nothing'}, units.status says {sorted(stale) or 'nothing'} not PASS")
+# a unit round makes no lesson calls: with every command faked, the unit's steps are the ones listed in the docstring
+calls = []
+def fake(args, log):
+    calls.append(args); return 0, (["science: full review needed"] if args[0] == "reviews.py" else ["ok"])
+with mock.patch.object(rnd, "run", fake):
+    n = rnd.unit_round([uid], ["en"], False, None, lambda s: None)
+names = [(c[0], c[1] if c[0] in ("practice.py", "reviews.py") else "") for c in calls]
+check(n == 0 and ("reviews.py", "carry-item") in names and ("screenshot.py", "") not in names and ("practice.py", "packet") in names
+      and calls[-1][:4] == ["practice.py", "packet", f"units/{uid}", "--role"] and calls[-1][4] == "science", "unit_round: checks, carry-item and one science packet, no captures when visual is current")
 sys.exit(1 if bad else 0)

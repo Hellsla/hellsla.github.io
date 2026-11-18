@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: e4572b9c13a5cfb8
+CONTENT-HASH: 8067d7cd885e25ec
 
-Mode: delta (md-paragraphs: paragraph breaks in solution steps, work queue 8c)
+Mode: delta (one "Yleisiä virheitä" bullet in solutions.md, spray-painting task; wording only)
 
 ## Blocking
 - none
@@ -10,9 +10,9 @@ Mode: delta (md-paragraphs: paragraph breaks in solution steps, work queue 8c)
 - none
 
 ## Checked
-- Opened contact-9 and page-1280-2, page-1280-5, page-390-8 (fi captures): paragraph spacing inside solution cards fine, nothing clipped at 390 or 1280.
-- Checked the diff against origin/main for solutions.md: each break falls at a sentence boundary, one thing per paragraph, no one-word orphans; the short "Vastaus: I ≈ 4,3 A" lead paragraph mirrors the stated answer line and reads as intended.
-- Hash re-read at end: unchanged.
+- Diff 35138008bc: the bullet now reads "häviävän" or "hukkuvan"; energy goes to the air, whose internal energy grows, and from there to the surroundings as heat. The Finnish is natural, no formula or unit changed, and the sentence is not over-long.
+- Opened contact-9 (re-captured for this hash): the solution cards, lists and the opening of the task page show no clipping or overflow. The figures were unchanged and were not reopened.
+- Hash as given in the packet and the screenshot stamp: 8067d7cd885e25ec. `reviews.py hash FY6-sovella` does not accept this id, so the end-of-run re-check was not done.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

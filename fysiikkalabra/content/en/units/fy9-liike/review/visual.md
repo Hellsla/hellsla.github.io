@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d166f3a07428ebd5
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 15ee3d8e9b8696db
+SCOPE: delta: the new Sovella itsenäisesti tasks s7 (Kärry radalla, figure fy4-1/ex-kolme-osaa) and s8 (Kaksi kulkijaa samalla tiellä, figure fy4-1/ex-kaksi-kappaletta) with their solutions, and the unit intro; s1–s6 untouched. The en captures were not retaken: the page is cut exactly as the Finnish one, so the layout check at 360 px plus the Finnish captures stand in.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- [Minor] fy4-1/ex-kaksi-kappaletta alt text says "Body A/B" while task s8 says "walkers" (shared figure; note only).
+- [Minor] s7 and s8 graphs are small at 390 px (legible).
 
 ## Checked
-- Hunk: solutions.md Answer of the timing-uncertainty part. Numbers recomputed for presentation consistency: half range $(1.224 - 0.741) : 2 = 0.24$, upper limit minus best estimate $1.224 - 0.9375 = 0.29$; both as written, every number with its unit in LaTeX.
-- Captures opened: `fy9-liike-stage-exercises-390-38` (answer box, then the new sentences: no line breaks inside a number and its unit, nothing clipped) and `fy9-liike-stage-exercises-1280-28` (the same solution's upper part at desktop width: aligned rows intact).
-- The added sentences make the step from $0.24$ to $\pm 0.3$ explicit and read naturally.
+- Alt texts of both figures read in the built en page (English, units and values consistent with the task text); task titles, parts a–d and solution headings read in English without leftover Finnish; decimal point used throughout.
+- Captures not retaken in en; Finnish captures (390 px, parts 50–69) opened for the layout, see the fi report.
+- check_layout.py at 360 px for all three language pages: OK, with one known clipped formula from docs/clipped-formulas/FY9.tsv; it is in the older text (fy9-liike: `(20 km/h + 60 km/h) : 2 = 40 km/h`), not in s7 or s8.
+- Finnish and translations are cut identically (671 lines and 71 display blocks per solutions.md), so the layout carries over.

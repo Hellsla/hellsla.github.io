@@ -3,7 +3,7 @@
  "subtitle": "Podcastit, dokumentit ja videot suomeksi",
  "description": "Suomenkielisiä fysiikan podcasteja, dokumentteja ja opetusvideoita lukiolaisille moduuleittain FY1–FY8.",
  "intro": [
-  "Fysiikkaa voi opiskella myös kuuntelemalla ja katsomalla. Tähän on koottu suomenkielisiä ohjelmia, joiden sisältö on tarkistettu ja linkki toimii.",
+  "Fysiikkaa voi opiskella myös kuuntelemalla ja katsomalla. Tälle sivulle on koottu suomenkielisiä ohjelmia, joiden sisältö on tarkistettu ja joiden linkit toimivat.",
   "Valitse oma moduulisi tai vain podcastit, dokumentit tai videot. Lyhyet ohjelmat sopivat hyvin aloitukseen."
  ],
  "featured_title": "Hyvä paikka aloittaa",
@@ -88,7 +88,7 @@
     "ITER"
    ],
    "durationMinutes": 49,
-   "description": "Voisiko Auringon energiantuotannon jäljitteleminen ratkaista energiaongelmat? Tutustu siihen, miksi fuusioreaktoreissa tarvitaan yli sadan miljoonan asteen lämpötiloja ja miksi läpimurtoa on odotettu niin kauan.",
+   "description": "Voisiko Auringon energiantuotannon jäljitteleminen ratkaista energiaongelmat? Ohjelmassa selvitetään, miksi fuusioreaktoreissa tarvitaan yli sadan miljoonan asteen lämpötiloja ja miksi läpimurtoa on odotettu niin kauan.",
    "featured": true,
    "verified": true
   },
@@ -127,7 +127,7 @@
     "avaruustutkimus"
    ],
    "durationMinutes": 49,
-   "description": "Vuoden 2022 fysiikan läpimurroista: kun luotain törmäytettiin asteroidin kuuhun, sen rata muuttui. Hyvä lisä liikemäärän ja törmäysten opiskeluun.",
+   "description": "Vuoden 2022 fysiikan läpimurroista: kun luotain törmäytettiin asteroidin kuuhun, kuun rata muuttui. Hyvä lisä liikemäärän ja törmäysten opiskeluun.",
    "verified": true
   },
   {

@@ -1,5 +1,5 @@
 {
-  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: varaukset, sähkökentän, potentiaalin, kondensaattorin, puolijohteet ja sähköturvallisuuden. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä tarvittaessa voimakuvio tai kytkentä. Perustele, mitä periaatetta käytät ja miksi se pätee. Ratkaise kysytty suure symboleilla ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: varaukset, sähkökentän, potentiaalin, kondensaattorin, puolijohteet ja sähköturvallisuuden. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä tarvittaessa voimakuvio tai kytkentä. Perustele, mitä periaatetta käytät ja miksi se pätee. Ratkaise kysytty suure symboleilla ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-sahkokentta-s1",
@@ -841,6 +841,324 @@
         "math": "fy6-12",
         "transfer": "fy4-9",
         "communication": "fy4-9"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s7",
+      "title": "Alfahiukkanen levyjen välissä",
+      "source": "example",
+      "source_note": "Laite ja luvut ovat keksittyjä. Alfahiukkanen on heliumin ydin.",
+      "skills": [
+        "fy6-12",
+        "fy6-11",
+        "fy4-4",
+        "fy4-7"
+      ],
+      "figure": "fy6-12/ex-vgraph",
+      "text": "Kaksi suurta metallilevyä on rinnakkain tyhjiössä. Niiden välissä on homogeeninen sähkökenttä. Kuvaajassa on potentiaali $V$ etäisyyden $x$ funktiona. Etäisyys $x$ mitataan negatiivisesta levystä. Levyjen välissä on alfahiukkanen (heliumin ydin, varaus $+2e$). Siihen vaikuttaa vain sähköinen voima.\n\n- alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- alfahiukkasen massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä sähkökentän voimakkuus levyjen välissä. Kerro myös kentän suunta.",
+          "answer": {
+            "value": 5.0,
+            "unit": "kV/m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Luetaan kaksi pistettä, jotka ovat kaukana toisistaan, esimerkiksi $(1{,}0\\,\\text{cm};\\ 50\\,\\text{V})$ ja $(5{,}0\\,\\text{cm};\\ 250\\,\\text{V})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Homogeenisessa kentässä $E = \\dfrac{|\\Delta V|}{\\Delta x}$. Kenttä on kuvaajan kulmakertoimen itseisarvo."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = \\dfrac{200\\,\\text{V}}{0{,}040\\,\\text{m}} = 5{,}0\\,\\text{kV/m}$, kaksi merkitsevää numeroa."
+            },
+            {
+              "text": "Kertoo suunnan: kenttä osoittaa positiivisesta levystä negatiiviseen levyyn. Se osoittaa siihen suuntaan, jossa potentiaali pienenee, eli $x$-akselia vastaan.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on alfahiukkasen kiihtyvyys? Mihin suuntaan se kiihtyy?",
+          "answer": {
+            "value": 241100000000.0,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Kertoo, että alfahiukkaseen vaikuttaa sähköinen voima $F = qE$ kentän suuntaan, koska varaus on positiivinen. Käyttää Newtonin toista lakia. Painovoima on niin pieni, ettei sillä ole merkitystä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{F}{m} = \\dfrac{2eE}{m}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF &= 2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\\\\n&\\quad \\cdot 5{,}0 \\cdot 10^{3}\\,\\text{N/C} \\\\\n&\\approx 1{,}6 \\cdot 10^{-15}\\,\\text{N}\n\\end{aligned}\n$$ ja $a \\approx 2{,}4 \\cdot 10^{11}\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 2{,}4 \\cdot 10^{11}\\,\\text{m/s}^2$ kahdella merkitsevällä numerolla. Suunta on kohti negatiivista levyä, eli $x$ pienenee."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Alfahiukkanen vapautetaan levosta kohdassa $x = 4{,}0\\,\\text{cm}$. Kuinka suuri on sen nopeus kohdassa $x = 2{,}0\\,\\text{cm}$?",
+          "answer": {
+            "value": 98.2,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Käyttää energiaperiaatetta: vain sähköinen voima tekee työtä. Potentiaalienergian väheneminen $q\\Delta V$ muuttuu liike-energiaksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Luetaan potentiaalit: $V(4{,}0\\,\\text{cm}) = 200\\,\\text{V}$ ja $V(2{,}0\\,\\text{cm}) = 100\\,\\text{V}$. Siis $\\Delta V = 100\\,\\text{V}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv^2 = 2e\\,\\Delta V$, joten $v = \\sqrt{\\dfrac{4e\\,\\Delta V}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{k} = 3{,}204 \\cdot 10^{-17}\\,\\text{J}$; $v = \\sqrt{2E_\\text{k}/m} \\approx 98\\,\\text{km/s}$, kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Nollataso valitaan nyt positiiviselle levylle (aiemmin negatiiviselle). Mikä on potentiaali kohdassa $x = 4{,}0\\,\\text{cm}$? Muuttuvatko sähkökentän voimakkuus ja c-kohdan nopeus?",
+          "answer": {
+            "value": -50.0,
+            "unit": "V",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Kertoo, että nollatason siirto muuttaa kaikkia potentiaaleja saman verran. Potentiaalierot eivät muutu. Kuvaajan suora siirtyy alas ja sen kulmakerroin pysyy samana, joten $E$ ei muutu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V = 200\\,\\text{V} - 250\\,\\text{V} = -50\\,\\text{V}$"
+            },
+            {
+              "text": "Päättelee, että nopeus ei muutu. Liike-energian kasvu riippuu potentiaalierosta $\\Delta V = 100\\,\\text{V}$, ei nollatason valinnasta.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy6-12",
+        "math": "fy6-12",
+        "concept": "fy6-12",
+        "transfer": "fy6-11",
+        "communication": "fy6-12"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s8",
+      "title": "Vihreä merkkivalo",
+      "source": "example",
+      "source_note": "Piiri ja luvut ovat keksittyjä. Ominaiskäyrä on tyypillinen vihreän LEDin käyrä.",
+      "skills": [
+        "fy6-14",
+        "fy6-3",
+        "fy6-6",
+        "fy6-5"
+      ],
+      "figure": "fy6-14/ex-led",
+      "text": "Pienessä merkkivalossa on vihreä LED. Se kytketään $6{,}0\\,\\text{V}$:n tasajännitelähteeseen. LEDin kanssa sarjassa on $220\\,\\Omega$:n etuvastus. Kuvaajassa on LEDin ominaiskäyrä: LEDin virta $I$ sen jännitteen $U_\\text{D}$ funktiona. LEDin suurin sallittu virta on $30\\,\\text{mA}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri virta piirissä kulkee?",
+          "answer": {
+            "value": 17.27,
+            "unit": "mA",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Huomaa, että virta-alueella $5\\ldots 30\\,\\text{mA}$ käyrä on lähes pystysuora: $U_\\text{D} \\approx 2{,}2\\,\\text{V}$, esimerkiksi piste $(2{,}2\\,\\text{V};\\ 10\\,\\text{mA})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Sarjassa virta on sama. Lisäksi $U = U_\\text{R} + U_\\text{D}$ ja $U_\\text{R} = RI$, joten $I = \\dfrac{U - U_\\text{D}}{R}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = \\dfrac{6{,}0\\,\\text{V} - 2{,}2\\,\\text{V}}{220\\,\\Omega} \\approx 17\\,\\text{mA}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Virta $17\\,\\text{mA}$ on alueella, jolla $U_\\text{D} \\approx 2{,}2\\,\\text{V}$. Se on alle sallitun $30\\,\\text{mA}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on vastuksen teho? Kuinka suuri osa lähteen sähkötehosta muuttuu vastuksessa sisäenergiaksi?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 65.64,
+              "unit": "mW",
+              "tolerance": 0.06
+            },
+            {
+              "name": "share",
+              "value": 63.33,
+              "unit": "%",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{R} = U_\\text{R} I$. Virta on sama, joten osuus on $\\dfrac{P_\\text{R}}{P} = \\dfrac{U_\\text{R}}{U}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nP_\\text{R} &= 3{,}8\\,\\text{V} \\cdot 0{,}01727\\,\\text{A} \\\\\n&\\approx 66\\,\\text{mW}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Osuus $= \\dfrac{3{,}8\\,\\text{V}}{6{,}0\\,\\text{V}} \\approx 63\\,\\%$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tehot täsmäävät: LED $38\\,\\text{mW}$ + vastus $66\\,\\text{mW}$ $\\approx$ lähde $104\\,\\text{mW}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Vastus vaihdetaan toiseen. Lähdejännite pysyy samana. Mikä on pienin etuvastus, jolla virta ei ylitä sallittua virtaa?",
+          "answer": {
+            "value": 126.7,
+            "unit": "Ω",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Pienin vastus antaa suurimman virran: $R_\\text{min} = \\dfrac{U - U_\\text{D}}{I_\\text{max}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{min} = \\dfrac{3{,}8\\,\\text{V}}{0{,}030\\,\\text{A}} \\approx 127\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Tulos pyöristetään ylöspäin: vastus on vähintään $130\\,\\Omega$. Pienempi vastus päästäisi liian suuren virran."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Lue kuvaajasta LEDin jännite virroilla $5\\,\\text{mA}$ ja $20\\,\\text{mA}$. Laske LEDin resistanssi $U_\\text{D}/I$ kummallakin virralla. Mitä tulokset kertovat LEDistä ja Ohmin laista?",
+          "answer": [
+            {
+              "name": "R5",
+              "value": 440.0,
+              "unit": "Ω",
+              "tolerance": 0.1
+            },
+            {
+              "name": "R20",
+              "value": 110.0,
+              "unit": "Ω",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kummallakin virralla $5\\,\\text{mA}$ ja $20\\,\\text{mA}$ jännite luetaan käyrältä: $U_\\text{D} \\approx 2{,}2\\,\\text{V}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{2{,}2\\,\\text{V}}{0{,}005\\,\\text{A}} = 440\\,\\Omega$ ja $\\dfrac{2{,}2\\,\\text{V}}{0{,}020\\,\\text{A}} = 110\\,\\Omega$"
+            },
+            {
+              "text": "Päättelee, että LEDin resistanssi ei ole vakio. Se pienenee neljäsosaan, kun virta nelinkertaistuu. LED ei noudata Ohmin lakia, koska käyrä ei ole suora, joka kulkee origon kautta.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että jännite melkein ei muutu, vaikka virta muuttuu paljon. Siksi LEDiä ei voi kytkeä suoraan jännitelähteeseen. Etuvastus ottaa ylimääräisen jännitteen ja määrää virran.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy6-14",
+        "math": "fy6-14",
+        "concept": "fy6-14",
+        "transfer": "fy6-5",
+        "communication": "fy6-14"
       }
     }
   ]

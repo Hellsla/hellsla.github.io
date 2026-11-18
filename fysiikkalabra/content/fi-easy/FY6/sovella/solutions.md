@@ -244,7 +244,7 @@ Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \appro
 - Potentiaaliero $60\,\text{kV}$ sijoitetaan kilovoltteina, jolloin kenttä saadaan väärin tuhatkertaisena tai tuhannesosana.
 - Voimaksi lasketaan $U : d$, jolloin kentän voimakkuus sekoitetaan voimaan.
 - b-kohdassa käytetään kaavaa $v = \sqrt{2 a d}$ kiihtyvyydellä $g$ tai lasketaan työ painosta.
-- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
+- Pisaran energian ilmoitetaan "häviävän" tai "hukkuvan"; energia siirtyy ilmaan, jonka sisäenergia kasvaa, ja sieltä lämpönä ympäristöön.
 - d-kohdassa etäisyys sijoitetaan millimetreinä, tai unohdetaan neliöinti.
 
 ## fy6-s4

@@ -1,5 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 780f2e62011fe6f0
+CONTENT-HASH: d545a6f33a79d74d
+SCOPE: delta wording from feb3d9ff810a6f9a base 899ba65272b9
+Delta: exercises.json L1-06 feedback, one sentence reworded; wording only.
 
 ## Blocking
 (none)
@@ -8,8 +10,7 @@ CONTENT-HASH: 780f2e62011fe6f0
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05 Vastaus: "Pallojen etäisyys …" joined, break now before the part label c)).
-- Opened fy6-10-open-exercises-L3-1280-8 at 1280 px: the open solution reads cleanly, spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Diff read in full: "Varaus ei häviä eikä synny tyhjästä." became "Varaus ei muutu miksikään muuksi eikä häviä." The sentence is fluent, has no numbers, symbols or units, and the glossary terms are unchanged. It rebuts the wrong option (charge turned into heat) directly. Layout cannot change with one sentence in a feedback line; the layout checks at 360 to 1280 px are green. No captures opened.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

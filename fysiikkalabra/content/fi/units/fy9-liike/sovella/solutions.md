@@ -456,3 +456,216 @@ A_\text{k} &= 1{,}10 \cdot (-4{,}44\,\text{m/s}^2) \\
 \end{aligned}
 $$ ja sitten $a_\text{k} = 2A_\text{k}$.
 - b-kohdassa vertailu suhteellisina lukuina: ero noin $9{,}5\,\%$, epävarmuus noin $1\,\%$.
+
+## fy9-liike-s7
+
+### a)
+**Annettu:** $(t,x)$-kuvaaja, jossa $x$ kasvaa oikealle; ensimmäinen vaihe on kuvaajan ensimmäinen suora
+**Kysytty:** nopeus $v_1$ ensimmäisessä vaiheessa
+**Periaate:** Tasaisessa liikkeessä $(t,x)$-kuvaaja on suora, ja sen kulmakerroin on nopeus (luku *Paikka, nopeus ja tasainen liike kuvaajina*).
+**Kuvaajan lukeminen:** Ensimmäiseltä suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0\,\text{s};\ 4\,\text{m})$ ja $(4\,\text{s};\ 16\,\text{m})$.
+**Kaava:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $$
+\begin{aligned}
+v_1 &= \dfrac{16\,\text{m} - 4\,\text{m}}{4\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{12\,\text{m}}{4\,\text{s}} \\
+&= 3{,}0\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v_1 = 3{,}0\,\text{m/s}$ oikealle. Tuloksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
+**Järkevyys:** Kärry etenee $12\,\text{m}$ neljässä sekunnissa, eli $3{,}0\,\text{m}$ joka sekunti. Se on noin $11\,\text{km/h}$, mikä sopii moottoroidun kärryn nopeudeksi.
+
+### b)
+**Annettu:** $(t,x)$-kuvaaja ja hetki $8\,\text{s}$
+**Kysytty:** nopeus $v$ hetkellä $8\,\text{s}$ ja liikkeen suunta
+**Periaate:** Hetki $8\,\text{s}$ on kolmannessa vaiheessa, jossa kuvaaja on laskeva suora. Siinä nopeus on vakio ja sama kuin suoran kulmakerroin (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Laskeva suora tarkoittaa, että paikka $x$ pienenee, joten nopeus on negatiivinen.
+**Kuvaajan lukeminen:** Kolmannelta suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(6\,\text{s};\ 16\,\text{m})$ ja $(10\,\text{s};\ 8\,\text{m})$.
+**Kaava:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v_3 &= \dfrac{8\,\text{m} - 16\,\text{m}}{10\,\text{s} - 6\,\text{s}} \\
+&= \dfrac{-8\,\text{m}}{4\,\text{s}} \\
+&= -2{,}0\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v = -2{,}0\,\text{m/s}$. Miinusmerkki kertoo, että kärry liikkuu vasemmalle eli $x$-akselin suuntaa vastaan; vauhti on $2{,}0\,\text{m/s}$. Nopeus on sama koko vaiheen ajan, joten se on tämä myös hetkellä $8\,\text{s}$.
+**Järkevyys:** Kolmannessa vaiheessa kärry kulkee takaisin päin: paikka pienenee $8\,\text{m}$ neljässä sekunnissa. Kuvaaja laskee, joten etumerkin pitää olla negatiivinen. Suoran jyrkkyys on pienempi kuin ensimmäisessä vaiheessa ($2{,}0\,\text{m/s} < 3{,}0\,\text{m/s}$), mikä näkyy kuvaajassa.
+
+### c)
+**Annettu:** paikka $x = 12\,\text{m}$; ensimmäisessä vaiheessa $x_0 = 4\,\text{m}$ hetkellä $0\,\text{s}$ ja $v_1 = 3{,}0\,\text{m/s}$; kolmannessa vaiheessa $x_0 = 16\,\text{m}$ hetkellä $6\,\text{s}$ ja $v_3 = -2{,}0\,\text{m/s}$
+**Kysytty:** hetket $t_1$ ja $t_2$, joilla kärry on paikassa $12\,\text{m}$
+**Periaate:** Kuvaajan perusteella paikka $12\,\text{m}$ on kahdessa vaiheessa: ensimmäisessä paikka nousee arvosta $4\,\text{m}$ arvoon $16\,\text{m}$, ja kolmannessa se laskee arvosta $16\,\text{m}$ arvoon $8\,\text{m}$. Toisessa vaiheessa kärry on koko ajan paikassa $16\,\text{m}$. Kussakin vaiheessa liike on tasaista, joten paikka on $x = x_0 + v\,(t - t_0)$ (luku *Paikka, nopeus ja tasainen liike kuvaajina*).
+**Kuvaajan lukeminen:** Nopeudet ja alkupisteet saatiin a- ja b-kohdan kuvaajan lukemisesta: ensimmäinen suora alkaa pisteestä $(0\,\text{s};\ 4\,\text{m})$ ja kolmas pisteestä $(6\,\text{s};\ 16\,\text{m})$.
+**Kaava:** $x = x_0 + v\,(t - t_0)$, joten $t = t_0 + \dfrac{x - x_0}{v}$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $$
+\begin{aligned}
+t_1 &= 0\,\text{s} + \dfrac{12\,\text{m} - 4\,\text{m}}{3{,}0\,\text{m/s}} \\
+&= \dfrac{8\,\text{m}}{3{,}0\,\text{m/s}} \\
+&\approx 2{,}67\,\text{s}
+\end{aligned}
+$$; $$
+\begin{aligned}
+t_2 &= 6\,\text{s} + \dfrac{12\,\text{m} - 16\,\text{m}}{-2{,}0\,\text{m/s}} \\
+&= 6\,\text{s} + 2{,}0\,\text{s} \\
+&= 8{,}0\,\text{s}
+\end{aligned}
+$$
+**Vastaus:** Kärry on paikassa $12\,\text{m}$ ensimmäisen kerran hetkellä $t_1 \approx 2{,}7\,\text{s}$ ja toisen kerran hetkellä $t_2 = 8{,}0\,\text{s}$. Kaksi merkitsevää numeroa riittää, koska luetut arvot ovat kaksinumeroisia.
+**Järkevyys:** Hetki $2{,}7\,\text{s}$ on ensimmäisen vaiheen aikavälillä $0\ldots 4\,\text{s}$ ja hetki $8{,}0\,\text{s}$ kolmannen vaiheen aikavälillä $6\ldots 10\,\text{s}$. Tarkistus: $$
+\begin{aligned}
+x(8{,}0\,\text{s}) &= 16\,\text{m} \\
+&- 2{,}0\,\text{m/s} \cdot 2{,}0\,\text{s} \\
+&= 12\,\text{m}
+\end{aligned}
+$$.
+
+### d)
+**Annettu:** alkupaikka $x = 4\,\text{m}$ hetkellä $0\,\text{s}$ ja loppupaikka $x = 8\,\text{m}$ hetkellä $10\,\text{s}$; vaiheiden paikan muutokset ovat $+12\,\text{m}$, $0\,\text{m}$ ja $-8\,\text{m}$
+**Kysytty:** keskinopeus $v_\text{ka}$ sekä se, miksi se poikkeaa keskivauhdista ja kumpi on suurempi
+**Periaate:** Keskinopeus on siirtymä jaettuna ajalla, ja siirtymä on pelkkä alku- ja loppupaikan ero (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Keskivauhdissa jaetaan kuljettu matka, johon kertyy kaikki liike suunnasta riippumatta. Kun kärry liikkuu osan matkasta takaisin päin, nämä kaksi eroavat.
+**Kuvaajan lukeminen:** Kuvaajan alkupiste on $(0\,\text{s};\ 4\,\text{m})$ ja loppupiste $(10\,\text{s};\ 8\,\text{m})$.
+**Kaava:** $v_\text{ka} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_\text{loppu} - x_\text{alku}}{t_\text{loppu} - t_\text{alku}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v_\text{ka} &= \dfrac{8\,\text{m} - 4\,\text{m}}{10\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{4\,\text{m}}{10\,\text{s}} \\
+&= +0{,}40\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v_\text{ka} = +0{,}40\,\text{m/s}$ eli $0{,}40\,\text{m/s}$ oikealle. Keskinopeus on pieni, koska kärry palaa viimeisessä vaiheessa takaisin päin, joten paikan muutos jää vain $4\,\text{m}$. Keskivauhti on tässä suurempi: $2{,}0\,\text{m/s}$.
+**Järkevyys:** Kuljettu matka on $$
+\begin{aligned}
+s &= 12\,\text{m} + 0\,\text{m} + 8\,\text{m} \\
+&= 20\,\text{m}
+\end{aligned}
+$$ ja keskivauhti $$
+\begin{aligned}
+v_\text{vauhti} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\
+&= 2{,}0\,\text{m/s}
+\end{aligned}
+$$ Keskivauhti on aina vähintään keskinopeuden suuruus, ja ne ovat yhtä suuret vain, jos kärry ei vaihda suuntaa. Tässä kärry vaihtaa suuntaa, joten keskivauhti ($2{,}0\,\text{m/s}$) on suurempi kuin keskinopeuden suuruus ($0{,}40\,\text{m/s}$).
+
+### Yleisiä virheitä
+- Nopeudeksi merkitään kuvaajan arvo $x/t$, esimerkiksi $16\,\text{m} : 4\,\text{s} = 4{,}0\,\text{m/s}$, vaikka kuvaajan alkupaikka on $4\,\text{m}$ eikä nolla.
+- b-kohdassa nopeus annetaan positiivisena tai laskussa vähennetään ajat ja paikat eri järjestyksessä, jolloin etumerkki menee väärin.
+- c-kohdassa löydetään vain toinen hetki, tai toinen lasketaan kaavalla $t = x : v$ ilman alkupaikkaa ja alkuhetkeä, jolloin tulos on $12\,\text{m} : (-2{,}0\,\text{m/s}) = -6\,\text{s}$.
+- d-kohdassa keskinopeus lasketaan vaiheiden nopeuksien keskiarvona $(3{,}0 + 0 - 2{,}0)\,\text{m/s} : 3$ tai kuljetusta matkasta; kumpikin antaa väärän tuloksen.
+
+### Hyväksytään myös
+- c-kohdassa toinen hetki voidaan ratkaista kolmannen suoran yhtälöstä $$
+\begin{aligned}
+x &= 16\,\text{m} \\
+&- 2{,}0\,\text{m/s} \cdot (t - 6\,\text{s})
+\end{aligned}
+$$.
+- d-kohdassa keskinopeus voidaan lukea kuvaajalta alku- ja loppupisteen kautta kulkevan suoran kulmakertoimena.
+
+## fy9-liike-s8
+
+### a)
+**Annettu:** kuvaajan suorat: A kulkee pisteestä $(0\,\text{s};\ 4\,\text{m})$ pisteeseen $(8\,\text{s};\ 20\,\text{m})$ ja B pisteestä $(0\,\text{s};\ 20\,\text{m})$ pisteeseen $(8\,\text{s};\ 4\,\text{m})$; $x$ kasvaa A:n kulkusuuntaan
+**Kysytty:** nopeudet $v_\text{A}$ ja $v_\text{B}$ etumerkkeineen
+**Periaate:** Tasaisessa liikkeessä $(t,x)$-kuvaajan suoran kulmakerroin on nopeus, ja etumerkki kertoo suunnan: nouseva suora on positiivinen ja laskeva negatiivinen (luku *Paikka, nopeus ja tasainen liike kuvaajina*).
+**Kuvaajan lukeminen:** Kummankin suoran päätepisteet ovat kaukana toisistaan, joten niistä luetaan paikat: A $4\,\text{m}$ ja $20\,\text{m}$, B $20\,\text{m}$ ja $4\,\text{m}$; aikaväli on $0\ldots 8\,\text{s}$.
+**Kaava:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $$
+\begin{aligned}
+v_\text{A} &= \dfrac{20\,\text{m} - 4\,\text{m}}{8\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{16\,\text{m}}{8\,\text{s}} \\
+&= 2{,}0\,\text{m/s}
+\end{aligned}
+$$; $$
+\begin{aligned}
+v_\text{B} &= \dfrac{4\,\text{m} - 20\,\text{m}}{8\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{-16\,\text{m}}{8\,\text{s}} \\
+&= -2{,}0\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v_\text{A} = +2{,}0\,\text{m/s}$ ja $v_\text{B} = -2{,}0\,\text{m/s}$. A kulkee $x$-akselin suuntaan ja B sitä vastaan; kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Kumpikin kulkee $16\,\text{m}$ kahdeksassa sekunnissa, eli vauhti on $2{,}0\,\text{m/s} = 7{,}2\,\text{km/h}$, reipasta kävelyä. Nopeuksien etumerkit ovat vastakkaiset, mikä sopii tilanteeseen, jossa kulkijat tulevat toisiaan kohti.
+
+### b)
+**Annettu:** $x_{0\text{A}} = 4\,\text{m}$, $v_\text{A} = 2{,}0\,\text{m/s}$, $x_{0\text{B}} = 20\,\text{m}$ ja $v_\text{B} = -2{,}0\,\text{m/s}$ a-kohdasta
+**Kysytty:** paikat ajan funktiona ja kohtaamishetki $t$
+**Periaate:** Tasaisessa liikkeessä paikka on $x = x_0 + v\,t$ (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Kulkijat kohtaavat, kun heidän paikkansa ovat samat samalla hetkellä (luku *Kahden kappaleen liikkeiden vertailu*), eli kun suorat leikkaavat.
+**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. Kohtaamisehto $x_\text{A} = x_\text{B}$ antaa $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, joten $t\,(v_\text{A} - v_\text{B}) = x_{0\text{B}} - x_{0\text{A}}$ ja $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** Paikat ovat $x_\text{A} = 4\,\text{m} + 2{,}0\,\text{m/s} \cdot t$ ja $x_\text{B} = 20\,\text{m} - 2{,}0\,\text{m/s} \cdot t$. Kohtaamishetki: $$
+\begin{aligned}
+t &= \dfrac{20\,\text{m} - 4\,\text{m}}{2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s})} \\
+&= \dfrac{16\,\text{m}}{4{,}0\,\text{m/s}} \\
+&= 4{,}0\,\text{s}
+\end{aligned}
+$$
+**Vastaus:** Kulkijat kohtaavat hetkellä $t = 4{,}0\,\text{s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Kulkijoiden välimatka alussa on $20\,\text{m} - 4\,\text{m} = 16\,\text{m}$, ja se pienenee nopeudella $$
+\begin{aligned}
+v &= 2{,}0\,\text{m/s} + 2{,}0\,\text{m/s} \\
+&= 4{,}0\,\text{m/s}
+\end{aligned}
+$$, joten $16\,\text{m} : 4{,}0\,\text{m/s} = 4{,}0\,\text{s}$. Hetki on kuvaajan aikavälillä $0\ldots 8\,\text{s}$.
+
+### c)
+**Annettu:** a-kohdan yhtälö $x_\text{A} = 4\,\text{m} + 2{,}0\,\text{m/s} \cdot t$ ja b-kohdan hetki $t = 4{,}0\,\text{s}$
+**Kysytty:** kohtaamispaikka $x$
+**Periaate:** Kohtaamishetkellä kummankin paikka on sama, joten paikan voi laskea kummalla tahansa yhtälöllä.
+**Kaava:** $x = x_{0\text{A}} + v_\text{A}\,t$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+x &= 4\,\text{m} + 2{,}0\,\text{m/s} \cdot 4{,}0\,\text{s} \\
+&= 4\,\text{m} + 8{,}0\,\text{m} \\
+&= 12\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** Kulkijat kohtaavat paikassa $x = 12\,\text{m}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Tarkistus B:n yhtälöllä: $x_\text{B} = 20\,\text{m} - 2{,}0\,\text{m/s} \cdot 4{,}0\,\text{s} = 12\,\text{m}$, sama paikka. Paikka on lähtöpaikkojen $4\,\text{m}$ ja $20\,\text{m}$ puolivälissä, koska nopeuksien suuruudet ovat samat.
+
+### d)
+**Kysytty:** miten kohtaamishetki ja kohtaamispaikka muuttuisivat, jos $v_\text{B} = -1{,}0\,\text{m/s}$
+**Periaate:** Kohtaamisehto $x_\text{A} = x_\text{B}$ on sama kuin ennen. Vain B:n suora muuttuu: se loivenee, koska B:n nopeuden suuruus pienenee, mutta lähtee yhä pisteestä $20\,\text{m}$ (luku *Kahden kappaleen liikkeiden vertailu*).
+**Mallivastaus:** Kuvaajassa B:n suora loivenisi ja kääntyisi vähemmän alaspäin, joten se leikkaisi A:n suoran myöhemmin ja ylempänä. Laskemalla: ehto $$
+\begin{aligned}
+x_\text{A} &= x_\text{B} \\
+4\,\text{m} + 2{,}0\,\text{m/s} \cdot t &= 20\,\text{m} \\
+&\quad - 1{,}0\,\text{m/s} \cdot t
+\end{aligned}
+$$ antaa $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$, eli $$
+\begin{aligned}
+t &= \dfrac{20\,\text{m} - 4\,\text{m}}{2{,}0\,\text{m/s} - (-1{,}0\,\text{m/s})} \\
+&= \dfrac{16\,\text{m}}{3{,}0\,\text{m/s}} \\
+&\approx 5{,}3\,\text{s}
+\end{aligned}
+$$ Paikka on $$
+\begin{aligned}
+x &= 4\,\text{m} + 2{,}0\,\text{m/s} \cdot 5{,}33\,\text{s} \\
+&\approx 4\,\text{m} + 10{,}7\,\text{m} \\
+&\approx 14{,}7\,\text{m}
+\end{aligned}
+$$ Kohtaaminen tapahtuisi siis myöhemmin ($5{,}3\,\text{s} > 4{,}0\,\text{s}$) ja lähempänä B:n alkupaikkaa ($14{,}7\,\text{m} > 12\,\text{m}$). Välimatka $16\,\text{m}$ pienenee nyt hitaammin, nopeudella $3{,}0\,\text{m/s}$ eikä $4{,}0\,\text{m/s}$, ja A ehtii kulkea pidemmälle ennen kohtaamista. Hetki $5{,}3\,\text{s}$ on edelleen kuvaajan aikavälillä $0\ldots 8\,\text{s}$.
+
+### Yleisiä virheitä
+- B:n nopeuden etumerkki unohdetaan ($v_\text{B} = +2{,}0\,\text{m/s}$), jolloin yhtälöllä $4 + 2t = 20 + 2t$ ei ole ratkaisua, tai kohtaamishetkeksi tulee väärä luku.
+- Kohtaamishetki lasketaan jakamalla koko välimatka $16\,\text{m}$ vain toisen nopeudella ($16\,\text{m} : 2{,}0\,\text{m/s} = 8\,\text{s}$), vaikka välimatka pienenee molempien nopeuksilla.
+- Kohtaamispaikaksi merkitään kohtaamishetki tai matka, jonka A on kulkenut ($8{,}0\,\text{m}$), vaikka paikkaan kuuluu myös alkupaikka $4\,\text{m}$.
+- d-kohdassa oletetaan, että kulkijat kohtaisivat yhä samalla hetkellä tai keskellä väliä, vaikka kulkijoiden nopeudet eivät enää ole yhtä suuret.
+
+### Hyväksytään myös
+- b-kohdassa yhtälö $$
+\begin{aligned}
+x_\text{A} &= x_\text{B} \\
+4\,\text{m} + 2{,}0\,\text{m/s} \cdot t &= 20\,\text{m} \\
+&\quad - 2{,}0\,\text{m/s} \cdot t
+\end{aligned}
+$$ ratkaistaan suoraan: $4{,}0\,\text{m/s} \cdot t = 16\,\text{m}$.
+- d-kohdassa kohtaamishetki voidaan laskea myös välimatkasta: $$
+\begin{aligned}
+t &= 16\,\text{m} : (2{,}0 + 1{,}0)\,\text{m/s} \\
+&\approx 5{,}3\,\text{s}
+\end{aligned}
+$$.
