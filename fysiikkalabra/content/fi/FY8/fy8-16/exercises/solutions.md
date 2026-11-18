@@ -244,3 +244,35 @@ $$ ja $$
 2{,}725\,\text{K} \cdot 1{,}06\,\text{mm} &= 2{,}89\,\text{K mm}
 \end{aligned}
 $$.
+
+## fy8-16-L2-09
+**Annettu:** $\lambda_0 = 434{,}0\,\text{nm}$, $\lambda = 449{,}3\,\text{nm}$, $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ ja kuvan suora pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta
+**Kysytty:** a) punasiirtymä $z$ ja nopeus $v$; b) Hubblen vakio $H_0$ kuvasta; c) galaksin etäisyys $d$ megaparsekeina
+**Periaate:** Viivan siirtymä on punasiirtymä $z = \tfrac{\Delta\lambda}{\lambda_0}$. Se on pieni, joten $v = c\,z$. Hubblen ja Lemaîtren lain $v = H_0\,d$ mukaan etäisyys saadaan jakamalla nopeus Hubblen vakiolla, kun vakio luetaan kuvan suorasta.
+**Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten sen kulmakerroin on $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = c\,z$ ja $v = H_0\,d$, joten $d = \dfrac{v}{H_0} = \dfrac{c\,z}{H_0}$
+**Muunnokset:** Ei tarvita: nanometrit supistuvat punasiirtymästä, ja nopeus on kilometreinä sekunnissa ja $H_0$ yksikössä $\tfrac{\text{km/s}}{\text{Mpc}}$, joten etäisyys tulee megaparsekeina.
+**Sijoitus:**
+a) $z = \dfrac{449{,}3\,\text{nm} - 434{,}0\,\text{nm}}{434{,}0\,\text{nm}} = \dfrac{15{,}3\,\text{nm}}{434{,}0\,\text{nm}} = 0{,}03525$
+a) $v = c\,z = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}03525 = 10\,569\,\text{km/s}$
+b) $H_0 = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$
+c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 146{,}8\,\text{Mpc}$
+**Vastaus:** $1{,}47 \cdot 10^{2}\,\text{Mpc}$ eli noin $147\,\text{Mpc}$, kolme merkitsevää numeroa kuten aallonpituuksissa $434{,}0\,\text{nm}$ ja $449{,}3\,\text{nm}$. Samalla $z = 0{,}0353$, $v = 1{,}06 \cdot 10^{4}\,\text{km/s}$ ja $H_0 = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Järkevyys:** Punasiirtymä $0{,}035$ on alle $0{,}1$, joten yhtälö $v = c\,z$ pätee. Nopeus $10\,569\,\text{km/s}$ on noin $3{,}5\,\%$ valon nopeudesta. Etäisyys $147\,\text{Mpc}$ on kuvan pisteiden $120\,\text{Mpc}$ ja $160\,\text{Mpc}$ välissä, ja niiden nopeudet $8300\,\text{km/s}$ ja $11\,900\,\text{km/s}$ ovat nopeuden $10\,569\,\text{km/s}$ molemmin puolin. Tarkistus kertomalla: $72{,}0 \cdot 146{,}8 = 10\,570\,\text{km/s}$.
+
+## fy8-16-L3-06
+**Annettu:** kuvan suora pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta; $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$; $v = c\,z$ pätee, kun $z < 0{,}10$; kaukaisin piste on noin $285\,\text{Mpc}$:n päässä
+**Kysytty:** a) Hubblen vakio $H_0$ kuvasta; b) etäisyys, jolla suora antaa nopeuden $0{,}10\,c$; c) miksi arvio on epävarma ja miksi $v = c\,z$ ei päde suurilla punasiirtymillä
+**Periaate:** Suora on kuvaaja yhtälöstä $v = H_0\,d$, jonka kulmakerroin on Hubblen vakio. Kun suoraa jatketaan, oletetaan, että sama verrannollisuus pätee kuvan pisteitä kauempana.
+**Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Suoran nopeus $0{,}10\,c = 2{,}998 \cdot 10^{4}\,\text{km/s}$ on kuvan yläreunaa $21\,000\,\text{km/s}$ suurempi, joten kohta jää kuvan ulkopuolelle.
+**Kaava:** $v = H_0\,d$, joten $d = \dfrac{v}{H_0}$, kun $v = 0{,}10\,c$
+**Muunnokset:** Ei tarvita: nopeus ja $H_0$ ovat kilometrejä sekunnissa ja $\tfrac{\text{km/s}}{\text{Mpc}}$, joten etäisyys tulee megaparsekeina.
+**Sijoitus:**
+a) $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$
+b) $v = 0{,}10 \cdot 2{,}998 \cdot 10^{5}\,\text{km/s} = 2{,}998 \cdot 10^{4}\,\text{km/s}$
+b) $d = \dfrac{v}{H_0} = \dfrac{2{,}998 \cdot 10^{4}\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 416{,}4\,\text{Mpc}$
+**Vastaus:** b) $4{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $416\,\text{Mpc}$; a) $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Kolme merkitsevää numeroa, koska suora kulkee ruudukon pisteen kautta ja $H_0$ saadaan siitä kolmella numerolla.
+c) Arvio on epävarma, koska pisteet ulottuvat vain noin $285\,\text{Mpc}$:iin ja arvio on noin $1{,}5$-kertainen siihen verrattuna. Jatkaminen olettaa verrannollisuuden pätevän myös kuvan ulkopuolella, mitä pisteet eivät osoita.
+
+Kaava $v = c\,z$ on pienen punasiirtymän likiarvo. Suurilla punasiirtymillä se voisi antaa nopeuden yli $c$: esimerkiksi $z = 3{,}00$ antaisi $v = 3{,}00\,c$, mikä on mahdoton galaksin nopeudeksi.
+**Järkevyys:** Tarkistus kertomalla: $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 416{,}4\,\text{Mpc} = 2{,}998 \cdot 10^{4}\,\text{km/s}$, sama kuin $0{,}10\,c$. Kuvan yläreunan nopeus $21\,000\,\text{km/s}$ vastaa $z = 0{,}070$, joten kuvan kaikki pisteet ovat rajan $0{,}10$ alapuolella ja $v = c\,z$ kelpaa niille. Tulos $416\,\text{Mpc}$ on suurempi kuin akselin $300\,\text{Mpc}$, kuten pitää, koska $21\,000\,\text{km/s} < 29\,980\,\text{km/s}$.
