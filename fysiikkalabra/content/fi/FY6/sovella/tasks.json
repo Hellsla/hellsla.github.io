@@ -6,7 +6,7 @@
       "title": "Taskulampun paristo",
       "source": "example",
       "source_note": "Mittaustulokset on laadittu tehtävää varten, mutta ne ovat samaa suuruusluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
-      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Tätä jännitteen hidasta muutosta ajan kuluessa kutsutaan ajautumaksi. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
@@ -124,7 +124,7 @@
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
+              "detail": "Malli on idealisoitu tässä: se olettaa, että $E$ ja $R_\\text{s}$ pysyvät vakioina koko mittauksen ajan. Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
             },
             {
               "key": "uncertainty",
@@ -197,7 +197,7 @@
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho lamppuun A todellisuudessa siirtyy? Vertaa tulosta lampun nimellistehoon.",
+          "text": "Kuinka suuri teho lamppuun A siirtyy? Vertaa tulosta lampun nimellistehoon.",
           "answer": {
             "value": 16.7,
             "unit": "W",
@@ -335,7 +335,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen, kun ilmanvastusta ei oteta huomioon?",
+          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen? Kerro oletuksesi.",
           "answer": {
             "value": 13.4,
             "unit": "m/s",
@@ -343,7 +343,7 @@
           },
           "criteria": [
             {
-              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
+              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois, ja sanoo tämän oletuksen; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
               "tag": "transfer",
               "points": 1
             },
@@ -368,7 +368,7 @@
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi se on paljon pienempi kuin b-kohdan tulos, ja päättele, minne sähkökentän tekemä työ jää.",
+          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi mitattu nopeus poikkeaa b-kohdan tuloksesta, ja päättele, minne sähkökentän tekemä työ jää.",
           "criteria": [
             {
               "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois: ilma vastustaa pisaran liikettä, ja nopeuden kasvaessa ilmanvastus kasvaa, kunnes se on likimain yhtä suuri kuin sähkövoima.",
@@ -472,7 +472,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
+          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on? Vertaa osuutta jännitteen suhteelliseen pienenemiseen ja selitä ero.",
           "answer": [
             {
               "name": "E",
