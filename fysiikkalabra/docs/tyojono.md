@@ -114,13 +114,6 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
-## 8s. Pienet jaetut korjaukset (koordinaattori 2026-11-18)
-Varattu: claude/8s-small-shared-fixes
-Jaettu `scripts/`; yhdistetään yksin ennen sisältöä.
-- a) `answers_shown.py` lukee Vastaus-vaiheen vain ensimmäisen rivin loppuun; luettava seuraavaan vaiheotsikkoon tai ratkaisun loppuun (+ testi).
-- b) `reviews.translation_differs`: fy8-14 L1-06 choices/2 ("X-radiation" / "röntgensäteilyä") lasketaan erona; sanan osana oleva iso kirjain ei ole vaihtoehtotunniste, (A), a), X: jne. pysyvät tiukkoina (+ testi).
-- c) `round.py --finish` ajaa `palautus_tasks.py`:n site-rakennuksen yhteydessä, jotta `palautus/`-tiedostot eivät vanhene (checks-2).
-
 ## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
 Varattu: claude/reviews-translation-units
 Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
