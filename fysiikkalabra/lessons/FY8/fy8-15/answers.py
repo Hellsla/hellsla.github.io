@@ -52,4 +52,9 @@ a["fy8-15-L3-04"] = (2.615 - 2 * 0.511) / 2             # Tl-208 line: T_total =
 m_pi, m_p, m_La, m_K0 = 139.570, 938.272, 1115.683, 497.611
 assert abs(m_pi + m_p - m_La) > 0 and charge("d", "u") == -1   # L3-05 a): pi- = d anti-u, q = -1; both sides q 0, B 1, u 1, d 2, s 0
 a["fy8-15-L3-05"] = m_K0 - 2 * m_pi                     # K0 -> pi+ + pi-: Q = 218,471 MeV (stored 218,5)
+# Figure tasks (fy8-15/taulukko): values read from the chart
+chart_q = {"u": F(2, 3), "c": F(2, 3), "t": F(2, 3), "d": F(-1, 3), "s": F(-1, 3), "b": F(-1, 3),
+           "e": -1, "mu": -1, "tau": -1, "nu_e": 0, "nu_mu": 0, "nu_tau": 0, "g": 0, "gamma": 0, "Z": 0, "W": "+-", "H": 0}
+a["fy8-15-L1-10"] = sum(1 for v in chart_q.values() if v == 0)   # nu_e, nu_mu, nu_tau, g, gamma, Z, H = 7 neutral boxes (b: 3 neutrinos)
+a["fy8-15-L2-08"] = float(chart_q["t"] - 1)             # t -> W+ + X: q_X = 2/3 - 1 = -1/3 -> -0,3333 e (X = d, s or b)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
