@@ -277,7 +277,7 @@ Siksi kannattaa parantaa nopeuden mittausta: mitataan valoportin katkaisijan pit
 **Annettu:** $m_\text{A} = 24\,\text{t}$, $v_\text{A} = 1{,}5\,\text{m/s}$, $m_\text{B} = 36\,\text{t}$, $v_\text{B} = 0$
 **Kysytty:** yhteinen nopeus $u$
 **Periaate:** Tarkastellaan kahden vaunun systeemiä. Paino ja tukivoima kumoavat toisensa, eikä kitkaa oteta huomioon, joten systeemiin ei vaikuta vaakasuoria ulkoisia voimia: liikemäärä säilyy. Positiivinen suunta on vaunun A kulkusuunta.
-**Kaava:** $m_\text{A}v_\text{A} = (m_\text{A} + m_\text{B})\,u \quad\Rightarrow\quad u = \dfrac{m_\text{A}v_\text{A}}{m_\text{A} + m_\text{B}}$
+**Kaava:** $p_\text{ennen} = p_\text{jälkeen}$, missä $p = mv$ ja $v_\text{B} = 0$, joten $m_\text{A}v_\text{A} = (m_\text{A} + m_\text{B})\,u \quad\Rightarrow\quad u = \dfrac{m_\text{A}v_\text{A}}{m_\text{A} + m_\text{B}}$
 **Muunnokset:** Massat voi sijoittaa tonneina, koska yksikkö supistuu: $24\,\text{t} = 24\,000\,\text{kg}$ ja $36\,\text{t} = 36\,000\,\text{kg}$.
 **Sijoitus:** $u = \dfrac{24\,000\,\text{kg} \cdot 1{,}5\,\tfrac{\text{m}}{\text{s}}}{60\,000\,\text{kg}} = 0{,}60\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** Vaunut jatkavat yhdessä nopeudella $0{,}60\,\text{m/s}$ vaunun A alkuperäiseen kulkusuuntaan.
@@ -297,7 +297,7 @@ Siksi kannattaa parantaa nopeuden mittausta: mitataan valoportin katkaisijan pit
 **Annettu:** $m_\text{B} = 36\,\text{t}$, $u = 0{,}60\,\text{m/s}$, $\Delta t = 0{,}80\,\text{s}$
 **Kysytty:** vaunuun B kohdistunut keskimääräinen voima $F$
 **Periaate:** Impulssiperiaate vaunulle B: siihen kytkeytymisen aikana kohdistuvan voiman impulssi on yhtä suuri kuin sen liikemäärän muutos. Vaunu B oli aluksi levossa.
-**Kaava:** $F\,\Delta t = m_\text{B}u - 0 \quad\Rightarrow\quad F = \dfrac{m_\text{B}u}{\Delta t}$
+**Kaava:** $I = \Delta p$, $I = F\,\Delta t$ ja $p = mv$, joten $F\,\Delta t = m_\text{B}u - 0 \quad\Rightarrow\quad F = \dfrac{m_\text{B}u}{\Delta t}$
 **Muunnokset:** $36\,\text{t} = 36\,000\,\text{kg}$
 **Sijoitus:** $\Delta p = 36\,000\,\text{kg} \cdot 0{,}60\,\tfrac{\text{m}}{\text{s}} = 21\,600\,\text{N}\cdot\text{s}$ ja $F = \dfrac{21\,600\,\text{N}\cdot\text{s}}{0{,}80\,\text{s}} = 27\,000\,\text{N}$
 **Vastaus:** Vaunuun B kohdistui keskimäärin noin $27\,\text{kN}$:n voima vaunun A kulkusuuntaan.

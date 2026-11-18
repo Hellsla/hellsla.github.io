@@ -324,9 +324,9 @@ $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 
 By the third law the cart pulls the rope with a force as large as the rope pulls the cart. The student is pulled by the rope, not by the cart.
 **Reading the graph:** The velocity increases from $t = 0$ from $0$ to $0.69\,\text{m/s}$ and then, from $t = 4.0\,\text{s}$ on, stays almost the same, about $0.70\,\text{m/s}$. The net force is zero from $t = 4.0\,\text{s}$ on. The sensor readings at these three moments are $3.4\,\text{N}$, $3.5\,\text{N}$ and $3.3\,\text{N}$.
-**Formula:** Constant velocity, so the net force is zero: $F_\text{av} - F_\text{f} = 0$, so $F_\text{f} = F_\text{av}$ where $F_\text{av} = \dfrac{\Sigma F}{n}$, so $F_\text{f} = \dfrac{\Sigma F}{n}$
+**Formula:** The force of the rope is the mean of the readings, $F_\text{av} = \dfrac{F_1 + F_2 + F_3}{3}$. The velocity is constant, so by the first law $\Sigma F = F_\text{av} - F_\text{f} = 0$, so $F_\text{f} = F_\text{av} = \dfrac{F_1 + F_2 + F_3}{3}$
 **Conversions:** The forces are in newtons and the velocity in $\text{m/s}$, so no conversions are needed.
-**Substitution:** The sum of the forces is $10.2\,\text{N}$ and there are $3$ readings, so
+**Substitution:** The sum of the readings $F_1 + F_2 + F_3$ is $10.2\,\text{N}$, so
 $F_\text{f} = \dfrac{10.2\,\text{N}}{3} = 3.40\,\text{N}$.
 **Answer:** b) $3.4\,\text{N}$, two significant figures like the sensor readings. a) The net force is zero from the moment the velocity is constant, that is, from the fourth second on. c) At the start the velocity increases, so the net force is not zero: the rope pulls the cart forwards more than friction opposes, and at the start the rope pulls the cart with a force of $5.1\,\text{N}$. By the third law the cart pulls the rope with the same $5.1\,\text{N}$ backwards, even though the cart accelerates. The rope in turn pulls the student's hand backwards, and the hand pulls the rope forwards with an equally large force.
 **Reasonableness:** The force decreases from $5.1\,\text{N}$ towards $3.4\,\text{N}$ as the acceleration ends. The friction $3.4\,\text{N}$ is smaller than the force at the start, so the cart has speeded up, and equal to the force at constant speed, so the velocity no longer changes.

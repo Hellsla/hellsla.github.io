@@ -62,7 +62,7 @@
 **Given:** $m = 1200\,\text{kg}$, initial speed $v_1 = 72\,\text{km/h}$, final speed $v_2 = 0$, frictional force $F_\mu = 6.0\,\text{kN}$ against the motion; the road is horizontal and air resistance is ignored
 **Find:** the braking distance $s$ in $\text{m}$
 **Principle:** The road is horizontal, so the potential energy does not change. The weight and the normal force of the road are perpendicular to the motion and do no work. The only force that does work is friction, which is also the net force, so its work is the change in kinetic energy.
-**Formula:** Work–energy principle: $E_{\text{k}0} + W = E_\text{k}$. The friction is the net force and opposes the motion, so $W = -F_\mu s$. Also $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$ and $E_\text{k} = 0$, so $\tfrac{1}{2} mv_1^2 - F_\mu s = 0$, so $s = \dfrac{mv_1^2}{2F_\mu}$
+**Formula:** Work principle: $E_{\text{k}0} + W = E_\text{k}$. The friction is the net force and opposes the motion, so $W = -F_\mu s$. Also $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$ and $E_\text{k} = 0$, so $\tfrac{1}{2} mv_1^2 - F_\mu s = 0$, so $s = \dfrac{mv_1^2}{2F_\mu}$
 **Conversions:** $v_1 = 72\,\text{km/h} = 72 : 3.6\,\text{m/s} = 20\,\text{m/s}$ and $F_\mu = 6.0\,\text{kN} = 6.0 \cdot 1000\,\text{N} = 6000\,\text{N}$
 **Substitution:** $s = \dfrac{1200\,\text{kg} \cdot (20\,\text{m/s})^2}{2 \cdot 6000\,\text{N}} = \dfrac{480\,000\,\text{J}}{12\,000\,\text{N}} = 40\,\text{m}$
 **Answer:** $40\,\text{m}$, two significant figures like the speed $72\,\text{km/h}$ and the force $6.0\,\text{kN}$.
@@ -74,7 +74,7 @@
 **Principle:** The weight and the tension force of the rope act on the load. The rope is a force other than the weight, so we use the work–energy principle.
 
 The speed is constant, so the kinetic energy does not change, and the work of the rope increases only the potential energy. The zero level is chosen at the starting height of the load.
-**Formula:** Energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The speed is constant, so $E_{\text{k}0} = E_\text{k}$, and at the zero level $E_{\text{p}0} = 0$ and $E_\text{p} = mgh$. So $W = mgh$
+**Formula:** Work–energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The speed is constant, so $E_{\text{k}0} = E_\text{k}$, and at the zero level $E_{\text{p}0} = 0$ and $E_\text{p} = mgh$. So $W = mgh$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 250\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 18.0\,\text{m} = 44\,145\,\text{J} = 44.1\,\text{kJ}$
 **Answer:** $44.1\,\text{kJ}$, three significant figures like the lifting height $18.0\,\text{m}$ and the mass $250\,\text{kg}$.
@@ -84,7 +84,7 @@ The speed is constant, so the kinetic energy does not change, and the work of th
 **Given:** $m = 0.16\,\text{kg}$, initial speed $v_1 = 0$, force of the stick $F = 120\,\text{N}$ in the direction of the motion, distance $s = 0.30\,\text{m}$; the friction of the ice is ignored
 **Find:** the speed $v_2$ of the puck at the moment it leaves the stick in $\text{m/s}$
 **Principle:** The weight, the normal force of the ice and the force of the stick act on the puck. The weight and the normal force cancel each other and do no work in horizontal motion, so the force of the stick is the net force. The work done by the net force equals the change in kinetic energy.
-**Formula:** Work–energy principle: $E_{\text{k}0} + W = E_\text{k}$. The force of the stick is the net force and is along the motion, so $W = Fs$. Also $E_{\text{k}0} = 0$ and $E_\text{k} = \tfrac{1}{2} mv_2^2$, so $Fs = \tfrac{1}{2} mv_2^2$, so $v_2 = \sqrt{\dfrac{2Fs}{m}}$
+**Formula:** Work principle: $E_{\text{k}0} + W = E_\text{k}$. The force of the stick is the net force and is along the motion, so $W = Fs$. Also $E_{\text{k}0} = 0$ and $E_\text{k} = \tfrac{1}{2} mv_2^2$, so $Fs = \tfrac{1}{2} mv_2^2$, so $v_2 = \sqrt{\dfrac{2Fs}{m}}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $v_2 = \sqrt{\dfrac{2 \cdot 120\,\text{N} \cdot 0.30\,\text{m}}{0.16\,\text{kg}}} = \sqrt{\dfrac{72\,\text{J}}{0.16\,\text{kg}}} = 21.2\,\text{m/s}$
 **Answer:** $21\,\text{m/s}$, two significant figures like the mass $0.16\,\text{kg}$ and the distance $0.30\,\text{m}$.
@@ -96,7 +96,7 @@ The speed is constant, so the kinetic energy does not change, and the work of th
 **Principle:** The weight, the normal force of the road, and air resistance and rolling resistance act on the cyclist. The normal force does no work. The resistive forces are forces other than the weight, so the work–energy principle gives their work.
 
 The resistive force points against the motion all the way, so its work is $-F_\text{res} s$. The zero level is chosen at the bottom of the hill.
-**Formula:** Energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is at the bottom of the hill: $E_{\text{p}0} = mgh$, $E_\text{p} = 0$, $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$ and $E_\text{k} = \tfrac{1}{2} mv_2^2$. The resistive force opposes the motion, so $W = -F_\text{res} s$. Hence $$\begin{aligned} &mgh + \tfrac{1}{2} mv_1^2 - F_\text{res} s \\ &= \tfrac{1}{2} mv_2^2 \end{aligned}$$, so $F_\text{res} s = \tfrac{m}{2}(v_1^2 - v_2^2) + mgh$, that is $F_\text{res} = \dfrac{\tfrac{m}{2}(v_1^2 - v_2^2) + mgh}{s}$
+**Formula:** Work–energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is at the bottom of the hill: $E_{\text{p}0} = mgh$, $E_\text{p} = 0$, $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$ and $E_\text{k} = \tfrac{1}{2} mv_2^2$. The resistive force opposes the motion, so $W = -F_\text{res} s$. Hence $$\begin{aligned} &mgh + \tfrac{1}{2} mv_1^2 - F_\text{res} s \\ &= \tfrac{1}{2} mv_2^2 \end{aligned}$$, so $F_\text{res} s = \tfrac{m}{2}(v_1^2 - v_2^2) + mgh$, that is $F_\text{res} = \dfrac{\tfrac{m}{2}(v_1^2 - v_2^2) + mgh}{s}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** First $$\begin{aligned} &\tfrac{m}{2}(v_1^2 - v_2^2) \\ &= \tfrac12 \cdot 80\,\text{kg} \\ &\cdot (16 - 169)\,\text{m}^2/\text{s}^2 \\ &= -6120\,\text{J} \end{aligned}$$ and $$\begin{aligned} &mgh \\ &= 80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 12.0\,\text{m} \\ &= 9417.6\,\text{J} \end{aligned}$$, so $F_\text{res} = \dfrac{-6120\,\text{J} + 9417.6\,\text{J}}{150\,\text{m}} = \dfrac{3297.6\,\text{J}}{150\,\text{m}} = 21.98\,\text{N}$
 **Answer:** $22\,\text{N}$, two significant figures like the mass $80\,\text{kg}$ and the speed $4.0\,\text{m/s}$.
@@ -108,7 +108,7 @@ The resistive force points against the motion all the way, so its work is $-F_\t
 **Principle:** The weight, the normal force of the track and the resistive force act on the car. The normal force does no work, and the resistive force does the work $-F_\text{res} s$, so we use the work–energy principle.
 
 The car reaches the highest possible hill when its speed at the top is just zero. The zero level is chosen at the ground.
-**Formula:** Energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is at the ground: $E_{\text{p}0} = mgh_1$, $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$, $E_\text{p} = mgh_2$ and at the top $E_\text{k} = 0$. The resistive force opposes the motion, so $W = -F_\text{res} s$. Hence $$\begin{aligned} &mgh_1 + \tfrac{1}{2} mv_1^2 - F_\text{res} s \\ &= mgh_2 \end{aligned}$$, so $h_2 = h_1 + \dfrac{v_1^2}{2 \cdot g} - \dfrac{F_\text{res} s}{mg}$
+**Formula:** Work–energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is at the ground: $E_{\text{p}0} = mgh_1$, $E_{\text{k}0} = \tfrac{1}{2} mv_1^2$, $E_\text{p} = mgh_2$ and at the top $E_\text{k} = 0$. The resistive force opposes the motion, so $W = -F_\text{res} s$. Hence $$\begin{aligned} &mgh_1 + \tfrac{1}{2} mv_1^2 - F_\text{res} s \\ &= mgh_2 \end{aligned}$$, so $h_2 = h_1 + \dfrac{v_1^2}{2 \cdot g} - \dfrac{F_\text{res} s}{mg}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\dfrac{v_1^2}{2g} = \dfrac{(2.0\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = 0.204\,\text{m}$ and $\dfrac{F_\text{res} s}{mg} = \dfrac{150\,\text{N} \cdot 120\,\text{m}}{500\,\text{kg} \cdot 9.81\,\text{m/s}^2} = 3.670\,\text{m}$, so $h_2 = (35.0 + 0.204 - 3.670)\,\text{m} = 31.53\,\text{m}$
 **Answer:** at most $31.5\,\text{m}$, three significant figures like the height $35.0\,\text{m}$.
@@ -142,7 +142,7 @@ On the steep slide the acceleration is greater but the distance is shorter, and 
 **Given:** $m = 58.0\,\text{kg}$, initial speed $v_1 = 7.50\,\text{m/s}$, final speed $v_2 = 4.50\,\text{m/s}$
 **Find:** the work $W$ done by the net force, with its sign, in $\text{kJ}$
 **Principle:** The work done by the net force equals the change in kinetic energy. The net force and the distance do not need to be known, because the initial and final speeds give the change in kinetic energy.
-**Formula:** Work–energy principle: $W = \Delta E_\text{k}$, and the kinetic energy is $E_\text{k} = \tfrac{1}{2} mv^2$, so $W = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2 = \tfrac{1}{2} m\left(v_2^2 - v_1^2\right)$
+**Formula:** Work principle: $W = \Delta E_\text{k}$, and the kinetic energy is $E_\text{k} = \tfrac{1}{2} mv^2$, so $W = \tfrac{1}{2} mv_2^2 - \tfrac{1}{2} mv_1^2 = \tfrac{1}{2} m\left(v_2^2 - v_1^2\right)$
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** First $v_2^2 - v_1^2 = (20.25 - 56.25)\,\text{m}^2/\text{s}^2 = -36.0\,\text{m}^2/\text{s}^2$, so $W = \tfrac12 \cdot 58.0\,\text{kg} \cdot (-36.0\,\text{m}^2/\text{s}^2) = -1044\,\text{J} = -1.044\,\text{kJ}$
 **Answer:** $-1.04\,\text{kJ}$, three significant figures like the mass $58.0\,\text{kg}$ and the speeds.
@@ -180,7 +180,7 @@ The equation $v^2 = 2gh$ is a proportionality with no constant term.
 **Given:** $m = 420\,\text{kg}$, $g = 9.81\,\text{m/s}^2$; at points A, B, C, D the track distance $s = 0;\ 55;\ 120;\ 170\,\text{m}$, the height $h = 18.0;\ 6.0;\ 12.0;\ 3.0\,\text{m}$ and the speed $v = 1.5;\ 14.6;\ 7.9;\ 14.2\,\text{m/s}$
 **Find:** a) the mechanical energy $E_\text{mech}$ at points A–D; b) the work $W$ of the resistive forces between points A and D; c) the section between points where the average resistive force is greatest
 **Principle:** The mechanical energy is $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$ with the ground as the zero level. The normal force does no work, so the change in the mechanical energy of the car is the work of the resistive forces, $W = E_\text{mech} - E_{\text{mech}0}$. The resistive force points against the motion all the way, so its average over a section is $F = -W : \Delta s$.
-**Formula:** The mechanical energy is $E_\text{mech} = E_\text{k} + E_\text{p}$, where $E_\text{k} = \tfrac{1}{2} mv^2$ and $E_\text{p} = mgh$, so $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$. Energy principle: $E_{\text{mech}0} + W = E_\text{mech}$, so $W = E_{\text{mech,D}} - E_{\text{mech,A}}$. The resistive force opposes the motion, so over a section $W = -F \Delta s$ and $F = -\dfrac{W}{\Delta s}$.
+**Formula:** The mechanical energy is $E_\text{mech} = E_\text{k} + E_\text{p}$, where $E_\text{k} = \tfrac{1}{2} mv^2$ and $E_\text{p} = mgh$, so $E_\text{mech} = \tfrac{1}{2} mv^2 + mgh$. Work–energy principle: $E_{\text{mech}0} + W = E_\text{mech}$, so $W = E_{\text{mech,D}} - E_{\text{mech,A}}$. The resistive force opposes the motion, so over a section $W = -F \Delta s$ and $F = -\dfrac{W}{\Delta s}$.
 **Conversions:** The quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** a) At A it is $\tfrac12 \cdot 420 \cdot 1.5^2\,\text{J} + 420 \cdot 9.81 \cdot 18.0\,\text{J} = 0.47\,\text{kJ} + 74.16\,\text{kJ} = 74.6\,\text{kJ}$.
 
@@ -195,7 +195,7 @@ Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 1
 **Find:** the frictional force $F_\mu$ in $\text{N}$
 **Principle:** The table is horizontal, so the potential energy does not change. The weight and the normal force are perpendicular to the motion and do no work, so friction is the net force and its work equals the change in kinetic energy.
 **Reading the graph:** The squares are $v_0^2 = 1.00;\ 2.25;\ 4.00;\ 6.25;\ 9.00\,\text{m}^2/\text{s}^2$. The points $(v_0^2, s)$ lie close to a straight line through the origin. The line passes through the point $(9.00\,\text{m}^2/\text{s}^2;\ 1.97\,\text{m})$, so the slope is $k = 1.97\,\text{m} : 9.00\,\text{m}^2/\text{s}^2 = 0.219\,\text{s}^2/\text{m}$.
-**Formula:** Work–energy principle: $E_{\text{k}0} + W = E_\text{k}$. The friction is the net force and opposes the motion, so $W = -F_\mu s$. Also $E_{\text{k}0} = \tfrac{1}{2} m v_0^2$ and $E_\text{k} = 0$, so $\tfrac{1}{2} m v_0^2 - F_\mu s = 0$, so $s = \dfrac{m}{2F_\mu} \cdot v_0^2$. The slope is $k = \dfrac{m}{2F_\mu}$, so $F_\mu = \dfrac{m}{2k}$.
+**Formula:** Work principle: $E_{\text{k}0} + W = E_\text{k}$. The friction is the net force and opposes the motion, so $W = -F_\mu s$. Also $E_{\text{k}0} = \tfrac{1}{2} m v_0^2$ and $E_\text{k} = 0$, so $\tfrac{1}{2} m v_0^2 - F_\mu s = 0$, so $s = \dfrac{m}{2F_\mu} \cdot v_0^2$. The slope is $k = \dfrac{m}{2F_\mu}$, so $F_\mu = \dfrac{m}{2k}$.
 **Conversions:** The quantities are in SI units, so no conversions are needed. $1\,\text{kg} : (\text{s}^2/\text{m}) = 1\,\text{kg}\cdot\text{m/s}^2 = 1\,\text{N}$.
 **Substitution:** $F_\mu = \dfrac{0.50\,\text{kg}}{2 \cdot 0.2188\,\text{s}^2/\text{m}} = 1.14\,\text{N}$
 **Answer:** $F_\mu \approx 1.1\,\text{N}$, two significant figures like the mass $0.50\,\text{kg}$.
@@ -209,7 +209,7 @@ Between B and C it decreases by $6.94\,\text{kJ}$ over $65\,\text{m}$, so $F = 1
 Friction opposes the motion all the time, so its work is $-F$ times the whole distance travelled, $L + s_\text{mean}$. The zero level is the bottom of the slope.
 
 At the start and at the end the speed is zero, so all of the initial potential energy $mgh$ turns into internal energy.
-**Formula:** a) The mean is $s_\text{mean} = \dfrac{\text{sum}}{6}$. b) Energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. At the start and at the end the snowboarder is at rest, $E_{\text{k}0} = E_\text{k} = 0$. The zero level is at the bottom of the slope, so $E_{\text{p}0} = mgh$ and $E_\text{p} = 0$. The friction opposes the motion the whole way, so $W = -F\left(L + s_\text{mean}\right)$. Hence $mgh - F\left(L + s_\text{mean}\right) = 0$, so $F = \dfrac{mgh}{L + s_\text{mean}}$. c) On the slope $E_{\text{p}0} = mgh$, $E_{\text{k}0} = 0$, $E_\text{p} = 0$, $E_\text{k} = \tfrac{1}{2} mv^2$ and $W = -F L$, so $mgh - F L = \tfrac{1}{2} mv^2$, so $v = \sqrt{\dfrac{2\left(mgh - F L\right)}{m}}$.
+**Formula:** a) The mean is $s_\text{mean} = \dfrac{\text{sum}}{6}$. b) Work–energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. At the start and at the end the snowboarder is at rest, $E_{\text{k}0} = E_\text{k} = 0$. The zero level is at the bottom of the slope, so $E_{\text{p}0} = mgh$ and $E_\text{p} = 0$. The friction opposes the motion the whole way, so $W = -F\left(L + s_\text{mean}\right)$. Hence $mgh - F\left(L + s_\text{mean}\right) = 0$, so $F = \dfrac{mgh}{L + s_\text{mean}}$. c) On the slope $E_{\text{p}0} = mgh$, $E_{\text{k}0} = 0$, $E_\text{p} = 0$, $E_\text{k} = \tfrac{1}{2} mv^2$ and $W = -F L$, so $mgh - F L = \tfrac{1}{2} mv^2$, so $v = \sqrt{\dfrac{2\left(mgh - F L\right)}{m}}$.
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** a) The sum of the stopping distances is $180.4\,\text{m}$, so $s_\text{mean} = 180.4\,\text{m} : 6 = 30.07\,\text{m}$. b) $$\begin{aligned} &mgh \\ &= 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 6.0\,\text{m} \\ &= 4120\,\text{J} \end{aligned}$$ and $L + s_\text{mean} = 45\,\text{m} + 30.07\,\text{m} = 75.07\,\text{m}$, so $F = 4120\,\text{J} : 75.07\,\text{m} = 54.9\,\text{N}$. c) The work of friction on the slope is $F L = 54.9\,\text{N} \cdot 45\,\text{m} = 2470\,\text{J}$, so $\tfrac{1}{2} mv^2 = 4120\,\text{J} - 2470\,\text{J} = 1650\,\text{J}$ and $v = \sqrt{2 \cdot 1650\,\text{J} : 70\,\text{kg}} = 6.87\,\text{m/s}$.
 **Answer:** b) $F \approx 55\,\text{N}$, two significant figures like the mass $70\,\text{kg}$ and the height $6.0\,\text{m}$. c) The speed at the bottom of the slope is about $6.9\,\text{m/s}$, and it is smaller than the speed on a frictionless slope, $\sqrt{2gh} = 10.8\,\text{m/s}$, because friction has already turned part of the potential energy into internal energy on the slope: the mechanical energy at the bottom of the slope is $1650\,\text{J}$ and not $4120\,\text{J}$.
@@ -270,7 +270,7 @@ The car would stop only at the starting height of $20\,\text{m}$.
 **Find:** the magnitude of the friction force $F_\mu$ in $\text{N}$
 **Principle:** The normal force is perpendicular to the motion and does no work, so the other force is friction. By the energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. Friction points against the motion, so its work is negative, $W = -F_\mu s$.
 **Reading the graph:** The green bar reaches the $40\,\text{J}$ line of the scale and the blue bar the $25\,\text{J}$ line. At the start there is no kinetic energy and at the end there is no potential energy, so both are zero.
-**Formula:** Energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, so $W = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$. The friction opposes the motion, so $W = -F_\mu s$. Hence $-F_\mu s$ equals $(E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$, so $F_\mu = \dfrac{(E_{\text{p}0} + E_{\text{k}0}) - (E_\text{p} + E_\text{k})}{s}$
+**Formula:** Work–energy principle: $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, so $W = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$. The friction opposes the motion, so $W = -F_\mu s$. Hence $-F_\mu s$ equals $(E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$, so $F_\mu = \dfrac{(E_{\text{p}0} + E_{\text{k}0}) - (E_\text{p} + E_\text{k})}{s}$
 **Conversions:** $1\,\text{J} = 1\,\text{N}\cdot\text{m}$, so joules and metres give newtons directly.
 **Substitution:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, and $F_\mu = \dfrac{15\,\text{J}}{6.0\,\text{m}} = 2.5\,\text{N}$
 **Answer:** $2.5\,\text{N}$, two significant figures, like the distance $6.0\,\text{m}$.
@@ -287,7 +287,7 @@ The acceleration of free fall is $g = 9.81\,\text{m/s}^2$.
 
 The motion is horizontal, so the weight and the normal force do no work and the stopping force is the net force.
 
-That is why the work–energy principle $E_{\text{k}0} + W = E_\text{k}$ is used: the work of the net force equals the change in kinetic energy. In part d the force is assumed to be constant, so its work is $W = -F s$.
+That is why the work principle $E_{\text{k}0} + W = E_\text{k}$ is used: the work of the net force equals the change in kinetic energy. In part d the force is assumed to be constant, so its work is $W = -F s$.
 **Formula:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) When the speed is $2v$, the kinetic energy is $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$, that is $4E_\text{k}$.
 
 In the same way at the speed $3v$ it is $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$, that is $9E_\text{k}$. d) The force is equal to the weight, $F = m_F g$.
@@ -325,7 +325,7 @@ In addition: a) The kinetic energy $E_\text{k}$ of the car is about $52.1\,\text
 
 b) The claim is correct, because kinetic energy is proportional to the square of the speed: twice the speed gives $2^2 = 4$ times the energy, and this holds for every mass. At $90\,\text{km/h}$ the kinetic energy is $9$ times that at $30\,\text{km/h}$.
 
-c) The force of the obstacle does negative work on the car, and by the work–energy principle the kinetic energy of the car decreases to zero. The energy does not vanish.
+c) The force of the obstacle does negative work on the car, and by the work principle the kinetic energy of the car decreases to zero. The energy does not vanish.
 
 Most of it goes into the permanent deformation of the structures of the car (and of the obstacle) and turns into their internal energy: the parts warm up, and this energy is then gradually transferred to the surroundings as heat.
 
