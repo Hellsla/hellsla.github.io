@@ -1,19 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5794e4f908fc2530
-Mode: delta
-Round: 1
+CONTENT-HASH: f7a252b5de468526
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] Pohdinta card, correct feedback — the chain wraps as "= 90 N / · 0,10 m / = 9,0 J" on a phone; a row starting with "·" is the shared mathlayout style, not a lesson fault.
 
 ## Checked
-- Diff: paragraph breaks in the worked example and units set as LaTeX ("$75\,\text{N}$:n", "$8{,}0\,\text{cm}$:n" in inquiry.json); words unchanged. No 360 px captures exist; phone judged at 390 px.
-- 390 px: fy3-5-example-390-1.png (stages 1-5: lead-in, knowns, question as own paragraph, equation block, aligned substitution rows, nothing clipped), fy3-5-stage-sovella-390-1.png (same example in the Esimerkit stage, layout identical).
-- 1280 px: fy3-5-open-tarkista-1280-1.png (Vastaus boxes open, W and Q in maths, units upright with thin space), fy3-5-open-exercises-1280-3.png (solution open: Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus/Järkevyys each its own row).
-- Units in prose are LaTeX in every opened capture; case endings follow the maths.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: Pohdinta card (Kertaa: työ) with feedback open at 390 px (correct and wrong answer) and stage-herata-390; "$90\,\text{N}$:n", "$0{,}10\,\text{m}$:n" case endings and the W = Fs chain render correctly, nothing clipped. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened; the layout is the same shared card as in the 1280 px captures I opened for fy3-1, 3, 7, 12.

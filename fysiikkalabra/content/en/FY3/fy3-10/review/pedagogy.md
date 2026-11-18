@@ -1,13 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 17e2a10800bbe32f
-
+CONTENT-HASH: 6edf712b0fd0697f
 ## Blocking
-(none)
-
 ## Polish
-(none)
-
+- The feedback writes "$3.0 : 2.0 = 1.5$"; "$3.0/2.0 = 1.5$" (the earlier form) reads more clearly as a quotient.
 ## Checked
-- Delta: in the balloon task's reasonableness stage the difference 3360 kg - 2640 kg is now stated as 720 kg instead of the loose 'about 700 kg'; subtraction verified, and it matches the given masses.
-- Rest of the solution (n = pV/RT, m = nM, conversions, substitution) unchanged; the symbolic-first order holds.
-- No task, hint or answer changed.
+batch delta review: the piston-and-cylinder retrieval states constant temperature and amount of gas, keeps Boyle's law, and the distractor feedback still repairs the "volume halves" misconception; the helium cylinder links to the lesson's cylinder figure better than the squeezed balloon did.

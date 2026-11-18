@@ -22,25 +22,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Revise: Boyle's law",
-      "prompt": "The nozzle of a syringe is blocked when it contains $60\\,\\text{ml}$ of air at a pressure of $100\\,\\text{kPa}$. The plunger is pushed until the volume of the air is $30\\,\\text{ml}$. The temperature does not change. What is the pressure of the air now?",
+      "title": "Recap: Boyle's law",
+      "prompt": "A cylinder with a piston contains helium, $3.0\\,\\textsf{l}$ at a pressure of $100\\,\\text{kPa}$. The piston is pushed in until the volume of the gas is $2.0\\,\\textsf{l}$. The temperature and the amount of gas do not change. What is the pressure of the gas now?",
       "choices": [
         {
-          "text": "$50\\,\\text{kPa}$",
-          "feedback": "At constant temperature, pressure and volume change in opposite directions: Boyle's law $p_1V_1 = p_2V_2$ means inverse proportionality. When the volume is halved, the pressure doubles."
+          "text": "$67\\,\\text{kPa}$",
+          "feedback": "You multiplied the pressure by the ratio of the volumes the wrong way round. When the volume decreases, the pressure increases: $p_2 = p_1 V_1 / V_2 = 150\\,\\text{kPa}$."
         },
         {
           "text": "$100\\,\\text{kPa}$",
-          "feedback": "The amount of air stays the same, but the pressure does not. By Boyle's law $p_1V_1 = p_2V_2$, $$\\begin{aligned} p_2 &= p_1V_1/V_2 \\\\ &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$."
+          "feedback": "The pressure does not stay the same. When the temperature and the amount of gas are constant, the product $pV$ stays constant (Boyle's law), so when the volume decreases the pressure increases: $150\\,\\text{kPa}$."
+        },
+        {
+          "text": "$150\\,\\text{kPa}$",
+          "correct": true,
+          "feedback": "Correct: $$\\begin{aligned} p_2 &= \\frac{p_1 V_1}{V_2} \\\\ &= \\frac{100\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l}}{2.0\\,\\textsf{l}} \\\\ &= 150\\,\\text{kPa} \\end{aligned}$$. In this lesson you explain the same behaviour of a gas with particles."
         },
         {
           "text": "$200\\,\\text{kPa}$",
-          "correct": true,
-          "feedback": "Correct: Boyle's law $p_1V_1 = p_2V_2$ gives $$\\begin{aligned} p_2 &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$. Half the volume, twice the pressure."
-        },
-        {
-          "text": "$400\\,\\text{kPa}$",
-          "feedback": "The pressure is inversely proportional to the volume, not to its square. The volume is halved once, so the pressure doubles once: $200\\,\\text{kPa}$."
+          "feedback": "The volume does not halve: it decreases from $3.0\\,\\textsf{l}$ to $2.0\\,\\textsf{l}$, so the ratio is $3.0 : 2.0 = 1.5$, not $2$. The pressure becomes $1.5$ times as large, $150\\,\\text{kPa}$."
         }
       ],
       "optional": true

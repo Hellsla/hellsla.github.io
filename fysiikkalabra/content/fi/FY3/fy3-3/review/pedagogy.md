@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0bb2960dd8b3e142
+CONTENT-HASH: b2afd734c032e77c
 
 ## Blocking
 
 ## Polish
-- none
+- Palaute kertoo, että Celsius-asteikon nollakohta on jäätymispiste; hyvä, koska seuraava vaihe tarvitsee Kelvinin nollakohtaa.
 
 ## Checked
-- Delta (oikoluvun korjaukset): the diff changes one Sijoitus/Järkevyys line of the check-2 solution; $60/293 \approx 0{,}205$ and $0{,}205 \cdot 101\,\text{kPa}$ are correct and consistent with the shown 20 %.
-- lesson.md: "alaasteikko" to "ala-asteikko" is correct Finnish; the teacher-approved figure is unchanged.
-- Staging, answers and activities untouched; previous PASS stands.
+batch delta review: kertaus (rengasilman lämpötilan nousu -6 -> 14 astetta) kuuluu samaan pyörän renkaan ilmiöön ja kysyy esitietoa (ΔT negatiivisella lukemalla); ei paljasta Ennusta-vastauksia, distraktorit (14-6, loppulämpötila) ovat oikeita virheitä.

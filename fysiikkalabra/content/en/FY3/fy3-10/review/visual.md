@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2bd01af38fa74e17
+CONTENT-HASH: 6edf712b0fd0697f
 
 ## Blocking
 
 ## Polish
+- [Minor] Litre sign: `\textsf{l}` is now clearly not the digit 1, but at 390 px "3.0 l" is a thin upright stroke close to a vertical bar; acceptable, a shared KaTeX matter (`\ell` would be the alternative), no change requested.
+- [Minor] The correct feedback ends the display block with a full stop outside it ("$$…$$. In this lesson…"); renders cleanly, nothing to fix.
 
 ## Checked
-Delta (solutions.md paragraph breaks only). Opened:
-- review/shots/contact-6.png (exercises 12-1 to 12-11, solutions open): the split Principle paragraphs of 12-11, the reasonableness notes of 12-4 and 12-10 and the wrong-option feedback of 12-8 read well; no overflow.
-- review/shots/fy3-10-example-390-1.png (helium balloon example, stages 1-4 at 390 px): unchanged, the bulleted unit conversions with their boxes fit the phone width.
-- review/shots/fy3-10-open-exercises-1280-3.png (opened solution 12-3 and the end of 12-2): J/(mol·K) fractions, scientific notation and units render correctly.
+- batch delta review: own captures of the Pohdinta (Recap: Boyle's law) card with the correct feedback open, 390 px and 1280 px (scratchpad fy3-10-card-390.png, fy3-10-card-1280.png): prompt, options, fraction chain with aligned "=", litre sign, closing sentence all legible and unclipped. Round-1 defect (l read as 1) resolved.

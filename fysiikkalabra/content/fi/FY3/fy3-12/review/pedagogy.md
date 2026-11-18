@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 337e48e6aa0cc5a4
-
+CONTENT-HASH: 2ffd1ae3f9d1f45d
 ## Blocking
-- none
-
 ## Polish
-- exercises/solutions.md:3,24,55,65,115,151,162,194,195,210 — still "läpi johtuva lämpöteho"; the lesson now says "siirtyvä" — align at the next exercises pass (exercises are reviewed apart, so not blocking here).
-
+- Feedback: "Pois siirtyvä energia siirtyy lämpönä" repeats the verb; e.g. "Kerroksesta pois mennyt energia siirtyy lämpönä ympäristöön ...".
 ## Checked
-Delta: "johtuva" → "siirtyvä" in the formula heading sentence and the summary. Better: P = UAΔT covers the whole component (wall, window, roof), and "johtuminen" is a glossary term for one of three transfer modes. The new term matches the U-arvo glossary definition ("siirtyy") and avoids the mix-up between johtuminen and lämmönsiirtyminen. Grammar is correct ("läpi siirtyvä lämpöteho"). Activities, staging and feedback unchanged.
+batch delta review: "eikä olomuoto muutu" closes the latent-heat loophole so the answer is unambiguous; the new feedback sentence separates the layer's change from the environment's gain and ends with the correct ΔU = -3,0 kJ.

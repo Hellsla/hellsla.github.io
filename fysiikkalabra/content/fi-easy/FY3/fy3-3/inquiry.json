@@ -22,21 +22,21 @@
       "id": "pr-pumppu",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: miksi rengas kovenee?",
-      "prompt": "Pumppaat pyörän renkaaseen lisää ilmaa. Miksi rengas kovenee?",
+      "title": "Kertaa: Celsius-asteikko",
+      "prompt": "Pyörän rengas on aamulla pakkasessa, ja sen ilman lämpötila on $-6\\,{}^\\circ\\text{C}$. Iltapäivällä pyörä on seissyt auringossa, ja ilman lämpötila on $14\\,{}^\\circ\\text{C}$. Kuinka monta astetta lämpötila on noussut?",
       "choices": [
         {
-          "text": "Renkaaseen tulee lisää ilmaa, ja ilma painaa renkaan seiniä sisältäpäin voimakkaammin.",
+          "text": "$20\\,{}^\\circ\\text{C}$",
           "correct": true,
-          "feedback": "Juuri näin. Kun samaan tilaan tuodaan lisää ilmaa, ilman paine renkaan seiniin kasvaa. Alun ilmiössä ilmaa ei kuitenkaan lisätä. Jokin muu kasvattaa saman ilman painetta."
+          "feedback": "Oikein: $$\\begin{aligned} \\Delta T &= 14\\,{}^\\circ\\text{C} - (-6\\,{}^\\circ\\text{C}) \\\\ &= 20\\,{}^\\circ\\text{C} \\end{aligned}$$. Celsius-asteikon nolla on veden jäätymispiste. Aamun lukema on nollan alapuolella. Lämpötila nousee ensin $6$ astetta nollaan ja sitten vielä $14$ astetta."
         },
         {
-          "text": "Ilma puristuu renkaassa kokoon, joten sitä on lopulta vähemmän.",
-          "feedback": "Pumppaaminen lisää ilman määrää renkaassa. Ilmaa ei katoa minnekään. Ilma kyllä puristuu pienempään tilaan, ja juuri siksi ilman paine renkaassa kasvaa."
+          "text": "$8\\,{}^\\circ\\text{C}$",
+          "feedback": "Vähensit luvut, kuin ne olisivat nollan samalla puolella: $14 - 6$. Aamun lämpötila on nollan *alapuolella*. Nousu on $6 + 14 = 20$ astetta."
         },
         {
-          "text": "Kumi kiristyy pumpun iskuista, ja ilmalla ei ole asian kanssa tekemistä.",
-          "feedback": "Tyhjä rengas ei kovene, vaikka sitä taputtelisi. Kovuus tulee renkaan sisällä olevasta ilmasta. Ilma painaa kumia ulospäin."
+          "text": "$14\\,{}^\\circ\\text{C}$",
+          "feedback": "Tämä on iltapäivän lämpötila, ei muutos. Muutos on loppulämpötila miinus alkulämpötila: $14 - (-6) = 20$ astetta."
         }
       ],
       "optional": true

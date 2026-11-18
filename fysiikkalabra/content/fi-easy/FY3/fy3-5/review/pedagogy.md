@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ee08d6fd321e1cf2
+CONTENT-HASH: f7a252b5de468526
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- meta.json key_concepts "lämpö" and "lämpömäärä" overlap — merge: "Lämpö on energiaa, joka siirtyy lämpimämmästä kappaleesta kylmempään. Lämpömäärä kertoo, kuinka paljon energiaa siirtyy."
-- meta.json "termodynamiikan ensimmäinen pääsääntö" — abstract for S2 ("liike- ja potentiaalienergia eivät muutu"); simpler: "Systeemin sisäenergia kasvaa sen verran kuin siihen tulee energiaa lämpönä ja työnä."
+- The correct option's feedback has a display block (`$$\begin{aligned}...`) followed by a full stop, and it breaks one short calculation over four rows. Use one inline chain `$W = Fs = 90\,\text{N} \cdot 0{,}10\,\text{m} = 9{,}0\,\text{J}$`.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review, round 1: the retrieval (a 90 N push on the pump over 0,10 m, work W = Fs) is the hook's own pump and the prior knowledge the lesson needs. Distractors (divide, the bare 90, adding) are real slips with repairing feedback. It does not state ΔU = W or that the air heats, so Ennuste 1 and 2 stay open, and the open question stays open. Glowing-metal photo and wording changes read clearly.

@@ -41,3 +41,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-11-15T20:27Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	1	233149	16	3812	193272	36049	40019	8	30	8		0.1669	transcript	72f2ba9da4bc
 2026-11-15T20:27Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	84672	10	1883	65873	16906	23189	5	15	5		0.0743	transcript	8921157cd086
 2026-11-15T20:27Z	fy3-5	FY3	orchestrator	orchestrate	claude-opus-5-5		session/12	1	4485973	31	10083	4439010	36849	39754	177	6435	186		1.3844	transcript	394cab0807a4
+2026-11-17T22:58Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	50007	3	1020	42133	6851	6920	11	74	29		0.0358	transcript	956680845e0d
+2026-11-17T22:58Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	80841	3	1897	69479	9462	9623	13	193	22		0.0992	transcript	ce392ff4967b
+2026-11-17T22:58Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	60980	3	1200	52123	7654	7838	11	124	19		0.0727	transcript	013a744c4d06
+2026-11-17T22:58Z	fy3-5	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	108086	5	1255	98186	8640	8715	20	215	46		0.0538	transcript	04201f2fe5ef
+2026-11-17T22:58Z	fy3-5	FY3	science-reviewer	review	claude-opus-5-5		batch/9	1	64494	3	1662	54050	8779	8932	12	171	20		0.0879	transcript	1524050c3cc2
+2026-11-17T22:58Z	fy3-5	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	117653	5	1360	107490	8798	8882	21	246	44		0.0571	transcript	42e4db3df5e1
+2026-11-17T22:58Z	fy3-5	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		batch/9	1	140273	6	1488	130184	8595	8672	25	267	51		0.0624	transcript	1ef5c31dd452
+2026-11-17T22:58Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	33750	2	895	25419	7434	7564	8	65	17		0.0326	transcript	a89abd4e1d48
+2026-11-17T22:58Z	fy3-5	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		batch/9	1	48511	3	1024	39816	7668	7775	11	71	28		0.0374	transcript	f7cd2eb51cef
+2026-11-17T22:58Z	fy3-5	FY3	orchestrator	orchestrate	claude-sonnet-5-5		session/9		3214992	34	8864	3178815	27279	34901	125	9988	107		0.8336	transcript	412f0704da90

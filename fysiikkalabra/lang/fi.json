@@ -32,6 +32,7 @@
     "resume_clear_confirm": "Tyhjennetäänkö eteneminen? Lukujen vaihemerkinnät ja Jatka-rivi poistetaan tästä selaimesta. Vastauksesi, ratkaisusi ja itsearviosi säilyvät.",
     "modules": "Moduulit",
     "reading_tips": "Kirjavinkit",
+    "media_nav": "Kuuntele ja katso",
     "booklets": "Vihkot",
     "teacher_nav": "Opettajalle",
     "reading_loan": "Lainattavissa Laurilta",
@@ -3181,6 +3182,17 @@
     "total_note": "Monivalinnat pisteyttää sivu, kun avaat niiden mallivastauksen. Muut pisteet ovat oma arviosi. Valinnaisista osista lasketaan parhaat tehtävät sääntöjen mukaan.",
     "revise": "Jos jokin tehtävä jäi heikoksi, palaa luvuille, jotka on mainittu tehtävän kohdassa Taidot luvuista."
   },
+  "media": {
+    "module": "Moduuli",
+    "type": "Tyyppi",
+    "type_podcast": "Podcast",
+    "type_documentary": "Dokumentti",
+    "type_video": "Opetusvideo",
+    "minutes": "{{n}} min",
+    "short": "Vain lyhyet (alle {{n}} min)",
+    "count": "Näytetään {{n}}",
+    "none": "Ei sisältöjä näillä valinnoilla"
+  },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
     "download": "Lataa PDF",
@@ -3230,7 +3242,7 @@
       },
       {
         "title": "Ennusta",
-        "text": "Tee perusteltu ennuste ennen kokeilua. Vertaat sitä myöhemmin havaintoihisi."
+        "text": "Tee perusteltu ennuste ennen kokeilua. Myöhemmin vertaat sitä havaintoihisi."
       },
       {
         "title": "Tutki",
@@ -3246,7 +3258,7 @@
       },
       {
         "title": "Testaa ja arvioi",
-        "text": "Testaa osaamisesi, huomaa, mikä on vielä epäselvää, ja päätä, mitä harjoittelet seuraavaksi."
+        "text": "Testaa osaamisesi, tunnista, mikä on vielä epäselvää, ja päätä, mitä harjoittelet seuraavaksi."
       }
     ],
     "loop_title": "Takaisin harjoitteluun",
@@ -3256,8 +3268,8 @@
     "learn_lead": "Mikään keino ei toimi kaikkialla yhtä hyvin. Aloittelija tarvitsee yleensä enemmän tukea: lue esimerkit tarkasti ja käytä vihjeitä. Kun osaat enemmän, vähennä tukea. Valitse aluksi yksi tai kaksi keinoa.",
     "tips": [
       {
-        "title": "Muista ennen kuin katsot",
-        "text": "Yritä muistaa ja kirjoita muistista, mitä ymmärsit. Tarkista vasta sitten. Se opettaa enemmän kuin pelkkä uudelleenlukeminen."
+        "title": "Muista, ennen kuin katsot",
+        "text": "Kirjoita ensin ulkomuistista, mitä ymmärsit, ja tarkista vasta sitten. Se opettaa enemmän kuin pelkkä uudelleenlukeminen."
       },
       {
         "title": "Hajauta harjoittelu",
@@ -3269,7 +3281,7 @@
       },
       {
         "title": "Opettele esimerkeistä ja vähennä tukea",
-        "text": "Tutki malliratkaisu vaihe vaiheelta ja kysy, miksi se etenee noin. Käytä sitten vihjeitä ja lopuksi ratkaise ilman niitä."
+        "text": "Käy malliratkaisu läpi vaihe vaiheelta ja kysy, miksi se etenee noin. Käytä sitten vihjeitä ja ratkaise lopuksi ilman niitä."
       },
       {
         "title": "Selitä ja perustele",
@@ -3281,7 +3293,7 @@
       },
       {
         "title": "Tarkista fysiikan keinoin",
-        "text": "Piirrä voimakuvio tai hahmottele kuvaaja. Tarkista yksiköt ja mieti, onko tulos järkevä: onko suuruusluokka ja suunta uskottava?"
+        "text": "Piirrä voimakuvio tai hahmottele kuvaaja. Tarkista yksiköt ja mieti, onko tulos järkevä: ovatko suuruusluokka ja suunta uskottavia?"
       },
       {
         "title": "Tee ratkaisusi näkyväksi",
@@ -3300,7 +3312,7 @@
       },
       {
         "title": "Ratkaiskaa yhdessä",
-        "text": "Selittäkää vuorotellen ajatuksenne ja kysykää toisiltanne, miksi. Vertailkaa välivaiheita. Älä kopioi pelkkää vastausta."
+        "text": "Selittäkää vuorotellen ajatuksenne ja kysykää toisiltanne, miksi. Vertailkaa välivaiheita. Älkää kopioiko pelkkää vastausta."
       },
       {
         "title": "Pyydä apua tarkasti",

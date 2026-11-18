@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c9df1db22f9c4cba
+CONTENT-HASH: a437c1ecc1e1ec1f
 
 ## Blocking
 
 ## Polish
+- [Minor] Recap card — feedback closes with "this lesson builds on it"; elsewhere the chapter says "chapter". Unify the word.
 
 ## Checked
-Delta (solutions.md paragraph breaks only). Opened:
-- review/shots/contact-7.png (exercises 11-11 to 11-18, solutions open): the new breaks in the Reading the graph block of 11-12 and the reasonableness notes of 11-11 and 11-13 are clear; the graph options of 11-17 are intact; no clipping.
-- review/shots/fy3-9-example-390-1.png (crisp packet Boyle example, stages 1-5 at 390 px): unchanged, the aligned chain wraps correctly.
-- review/shots/fy3-9-open-exercises-1280-3.png (opened solution 11-3 with its (V, p) graph): data points distinct, axes with units, solution blocks and the dotted pV reading readable.
+batch delta review: opened my own captures of the Pohdinta recap card with feedback open, correct option at 390 px (F = pA chain, "101 000 Pa", \cdot, ≈ 2.0 kN, aligned and fits) and wrong option at 1280 px (inline p = F/A, F = pA); units LaTeX and upright, nothing clipped. Shipped captures lacked the feedback-open state. Hash unchanged at the end.

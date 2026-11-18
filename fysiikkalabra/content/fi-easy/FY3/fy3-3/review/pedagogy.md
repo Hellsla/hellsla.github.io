@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eec751c0f8637a81
+CONTENT-HASH: 31d0645c09b5bd10
 
 ## Blocking
 - none
@@ -8,6 +8,4 @@ CONTENT-HASH: eec751c0f8637a81
 - none
 
 ## Checked
-- Delta 2026-11-15 (proofreading): "alaasteikko" -> "ala-asteikko" in the kelvin-scale figure text is correct Finnish.
-- Järkevyys of the pressure solution now gives 60/293 ≈ 0,205 and 0,205 · 101 kPa ≈ 21 kPa; arithmetic correct (60/293,15 = 0,2047), 20 % kept as the rounded form, and the chain still ends at 122 kPa.
-- Wording and steps stay clear for an S2 reader; no activity, answer or level changed.
+batch delta review, round 1: the retrieval (tyre air from -6 to 14 °C, how many degrees it rose) uses the hook's bicycle and tests the real prior skill, Celsius below zero. Distractors (14-6 = 8; the final value 14) are real slips and the feedback repairs them. It gives nothing away of Ennuste 1 (the pressure ratio at 27 and 327 °C: no Kelvin hint), 2 or 3, nor of the hook's question. Order phenomenon, retrieval, open question holds.
