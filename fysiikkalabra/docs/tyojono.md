@@ -130,7 +130,7 @@ oikean vaihtoehdon indeksin kautta; luvut, kaavat ja asetukset pysyvät tiukkoin
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
-**PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
+**PR 5: Varattu: claude/sim-ui-pr5-saavutettavuus (PR 5)** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
 nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien poisto. Ei muuta sim.js-tiedostoja eikä fysiikkaa PR 5:ssä; 1366×650:n lisähuomiot: loki §10.
 
