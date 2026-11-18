@@ -162,7 +162,7 @@ a alas
 akselit -35
 komponentit G
 ```
-**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. Static friction is at most $\mu_0 N$, so the maximum static friction is $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. The component of the weight along the slope is $G_x = mg\sin\alpha$, and the difference asked is $G_x - F_\text{max} = mg\sin\alpha - \mu_0 mg\cos\alpha$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. Static friction is at most $\mu_0 N$, so the maximum static friction is $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. The component of the weight along the slope is $G_x = mg\sin\alpha$, and the difference asked is $G_x - F_\text{max}$ that is $mg\sin\alpha - \mu_0 mg\cos\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$
 **Answer:** the component exceeds the maximum static friction by $56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$, two significant figures like the coefficient of friction $0.60$. The maximum static friction $48\,\text{N}$ is smaller than the component $56\,\text{N}$, so the box does not stay in place but starts to slide. The difference is positive, so the friction is not enough.
@@ -373,7 +373,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$, so $a = g(\sin\alpha - \mu\cos\alpha)$. The distance is $s = v_0 t + \tfrac{1}{2}at^2$, and because the initial velocity is zero, $s = \tfrac{1}{2}at^2$
+**Formula:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - F_\mu = ma$, and $F_\mu = \mu N = \mu mg\cos\alpha$, so $a = g(\sin\alpha - \mu\cos\alpha)$. The distance is $s = v_0 t + \tfrac{1}{2}at^2$, and because the initial velocity $v_0 = 0$, $s = \tfrac{1}{2}at^2$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
 **Substitution:** $$\begin{aligned} &a \\ &= 9.81\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0.35\cdot\cos 30^\circ) \\ &= 1.931\,\text{m/s}^2 \end{aligned}$$ and
 ```latex

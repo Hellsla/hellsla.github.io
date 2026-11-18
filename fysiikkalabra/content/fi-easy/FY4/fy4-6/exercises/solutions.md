@@ -162,7 +162,7 @@ a alas
 akselit -35
 komponentit G
 ```
-**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. Lepokitka on enintään $\mu_0 N$, joten lähtökitka on $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. Painon rinteen suuntainen komponentti on $G_x = mg\sin\alpha$, ja kysytty erotus on $G_x - F_\text{max} = mg\sin\alpha - \mu_0 mg\cos\alpha$
+**Kaava:** $\Sigma\overline{F} = m\overline{a}$. $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$. Lepokitka on enintään $\mu_0 N$, joten lähtökitka on $F_\text{max} = \mu_0 N = \mu_0 mg\cos\alpha$. Painon rinteen suuntainen komponentti on $G_x = mg\sin\alpha$, ja kysytty erotus on $G_x - F_\text{max}$ eli $mg\sin\alpha - \mu_0 mg\cos\alpha$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{max} = 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ = 48{,}2\,\text{N}$ ja $G_x = 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 35^\circ = 56{,}3\,\text{N}$, joten $G_x - F_\text{max} = 56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$
 **Vastaus:** komponentti ylittää lähtökitkan $56{,}3\,\text{N} - 48{,}2\,\text{N} = 8{,}1\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}60$. Lähtökitka $48\,\text{N}$ on pienempi kuin komponentti $56\,\text{N}$. Siksi laatikko ei pysy paikallaan vaan lähtee liukumaan. Erotus on positiivinen, joten kitka ei riitä.
