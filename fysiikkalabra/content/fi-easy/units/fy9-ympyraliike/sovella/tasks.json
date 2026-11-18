@@ -1090,7 +1090,7 @@
               "points": 1
             },
             {
-              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ ja suurin mahdollinen $$\n\\begin{aligned}\n0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 &\\approx 7360\\,\\text{N}\n\\end{aligned}\n$$.",
+              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ ja suurin mahdollinen $$\n\\begin{aligned}\n0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 &\\approx 7400\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },

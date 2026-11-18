@@ -507,9 +507,9 @@ $$
 ## fy9-ympyraliike-s8
 
 ### a)
-**Given:** the marked point of the graph: speed $v = 15\,\text{m/s}$ and normal acceleration $a_\text{n} = 3.0\,\text{m/s}^2$
+**Given:** the marked point of the graph: speed $v = 15\,\text{m/s}$ and centripetal acceleration $a_\text{n} = 3.0\,\text{m/s}^2$
 **Find:** the radius $r$ of the bend
-**Principle:** The car moves along a circular path at a constant speed, so its acceleration is the normal acceleration $a_\text{n} = \dfrac{v^2}{r}$ towards the centre of the circle (chapter *Centripetal acceleration and the equation of motion in a circle*). The radius is the same at every point of the graph, so one point that can be read accurately is enough.
+**Principle:** The car moves along a circular path at a constant speed, so its acceleration is the centripetal acceleration $a_\text{n} = \dfrac{v^2}{r}$ towards the centre of the circle (chapter *Centripetal acceleration and the equation of motion in a circle*). The radius is the same at every point of the graph, so one point that can be read accurately is enough.
 **Reading the graph:** The point marked on the curve can be read with the guide lines: $15\,\text{m/s}$ from the horizontal axis and $3.0\,\text{m/s}^2$ from the vertical axis.
 **Formula:** $a_\text{n} = \dfrac{v^2}{r}$, so $r = \dfrac{v^2}{a_\text{n}}$
 **Conversions:** None needed: the speed is in $\text{m/s}$ and the acceleration in $\text{m/s}^2$.
@@ -531,7 +531,7 @@ $$. The radius is plausible for a bend of a road.
 ### b)
 **Given:** mass of the car $m = 1200\,\text{kg}$, speed $v = 15\,\text{m/s}$ and the point of the graph $a_\text{n} = 3.0\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
 **Find:** the friction force $F$
-**Principle:** Choose the car as the body. In the free-body diagram the forces on it are the weight $\overline{G}$ down, the normal force of the road $\overline{N}$ up and the static friction of the tyres $\overline{F}$ horizontally towards the centre of the bend. The friction is static friction, because the tyres do not slip on the road. There is no centrifugal force, because no body acts on the car with such a force. Choose the $x$ axis towards the centre and the $y$ axis up. In the vertical direction the car does not accelerate, so $N - G = 0$. In the horizontal direction the acceleration is the normal acceleration: $\Sigma F_x = ma_\text{n}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
+**Principle:** Choose the car as the body. In the free-body diagram the forces on it are the weight $\overline{G}$ down, the normal force of the road $\overline{N}$ up and the static friction of the tyres $\overline{F}$ horizontally towards the centre of the bend. The friction is static friction, because the tyres do not slip on the road. There is no centrifugal force, because no body acts on the car with such a force. Choose the $x$ axis towards the centre and the $y$ axis up. In the vertical direction the car does not accelerate, so $N - G = 0$. In the horizontal direction the acceleration is the centripetal acceleration: $\Sigma F_x = ma_\text{n}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
 **Formula:** $\Sigma F_x = F = ma_\text{n}$
 **Conversions:** Finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $$
@@ -579,7 +579,7 @@ v_\text{max} &= 19.18\,\text{m/s} \cdot 3.6 \\
 \end{aligned}
 $$
 **Answer:** $v_\text{max} \approx 19\,\text{m/s}$ or about $69\,\text{km/h}$. Two significant figures like the radius and the coefficient of friction.
-**Reasonableness:** The greatest friction gives the normal acceleration $$
+**Reasonableness:** The greatest friction gives the centripetal acceleration $$
 \begin{aligned}
 a_\text{n} &= \mu_\text{s} g \\
 &\approx 4.9\,\text{m/s}^2
@@ -603,7 +603,7 @@ F &= m a_\text{n} \\
 $$and the greatest possible friction is $$
 \begin{aligned}
 \mu_\text{s} mg &= 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
-&\approx 7360\,\text{N}
+&\approx 7400\,\text{N}
 \end{aligned}
 $$. So the heavier car needs a larger friction force, but the tyres give proportionally as much more: both are proportional to the mass, and the friction needed is still about $61\,\%$ of the greatest. The load does not make the bend more slippery.
 

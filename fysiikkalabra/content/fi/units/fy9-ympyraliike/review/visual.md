@@ -1,16 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 53b02751f63afd8a
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: 6b1b4c290d7b688d
+SCOPE: delta: Sovella itsenäisesti tasks s8 (Auto ajaa kaarteessa, figure fy5-4/kuvaaja-a) and s9 (Kyltti seinän tangossa, figure fy5-2/kyltti) with solutions, rubric and answers, and the changed intro sentence ("Yhdeksän ... tehtävää"), fi. Tasks s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+- B s8 d) Mallivastaus and rubric (tasks.json s8 d, solutions.md "### d)", line about 606): the greatest friction is given as `{\approx 7360\,\text{N}}` (three figures) although the data ($\mu_\text{s} = 0{,}50$) has two. Round to the data's precision: $0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 7400\,\text{N}$ (or $7{,}4\,\text{kN}$). The "4500 N" beside it is right. The 61 % ratio and the 5,9 kN of part c are already two-figure. Language-neutral: the same line in all three languages.
 
 ## Polish
-- B s7 e) Mallivastaus: the sentence that defines $\theta$ is hard to parse. Clearer: "Kun Aurinko on ratatasossa, varjon reuna on suunnassa, joka poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$ verran. Sille pätee $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$." The paragraph (about 130 words) also reads better split before "Varjossa paneelit eivät tuota sähköä, …".
-- B s7 a) Annettu: at 390 px the range breaks as "370 / –460 km". One formula keeps it together: `$370\text{–}460\,\text{km}$`.
-- C s7 e): a sentence starts with a lowercase letter ("d-kohdan $84\,\text{kW}$ on keskiarvo"). "Kohdan d teho $84\,\text{kW}$ on keskiarvo, …".
+- B s9 a) Periaate: one paragraph of about 115 words (hinge choice, centre of mass, torque of $T\sin\theta$, directions of rotation). Split before "Tangon paino vaikuttaa painopisteestä" and again before "Vaijerin voimasta tankoa vastaan ...".
+- C s9 d) Mallivastaus: the last chain (H') ends a display block and "Aiemmin $331\,\text{N}$" starts the next sentence with no full stop; s8 d) has "$$ja suurin" with no space after a display block. Both render acceptably at 390 px but the source joins are fragile; end the display with a full stop or move the text into its own sentence.
 
 ## Checked
-- Captures current for this hash. Opened: stage-exercises-390-52, -54…59, -62 (s7 card, source link, data list, solutions a–e, common mistakes, rubric c–e), stage-exercises-1280-40, contact-7.
-- s7: `=` aligned in every chain; answer boxes ($a_\text{n} \approx 8{,}8\,\text{m/s}^2$, $P \approx 84\,\text{kW}$) intact; $\overline{G}$, $\overline{N}$ with overlines; "$92\,\text{min}$:ssa", "$370$–$460\,\text{km}$:n" correct; nothing clipped or scrolled at 390 px.
-- Item 18: s3 a) "laskevalle käyrälle" read in the diff.
+- Opened in the Finnish captures (current for this hash, stamp 6b1b4c290d7b688d): contact-8 and -9, stage-exercises-390-63 (s8 card and graph), -73 (s9 card and figure), 1280-48 (s8 a solution), 1280-56 (s9 a solution).
+- s8: graph has quantity and unit on both axes, readable ticks, the marked point (15 m/s, 3,0 m/s²) with dashed guides, curve distinct from the marker; alt text uses the task's names (auto, kaarre, normaalikiihtyvyys, ratanopeus). Answer box $r = 75\,\text{m}$, $F \approx 3{,}6\,\text{kN}$, $v_\text{max} \approx 19\,\text{m/s}$ (69 km/h) rounded to two figures; chains aligned at `=`, nothing clipped with solutions open at 390.
+- s9: figure alt names kyltti, tanko, vaijeri match the task; hinge, wire angle and length are shown; answers $380\,\text{N}$, $330\,\text{N}$, $29\,\text{kg}$ rounded to two figures; aligned chains and fractions intact at 390 and 1280.
+- Task texts do not reveal the structure (no "kolme vaihetta", no "kahdesti"); questions are last. Unit is language-neutral: ids, figures, numbers and answers identical across fi, en, fi-easy.
+- Hash at start and end: 6b1b4c290d7b688d (unchanged).

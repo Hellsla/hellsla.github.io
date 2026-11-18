@@ -603,7 +603,7 @@ F &= m a_\text{n} \\
 $$ja suurin mahdollinen kitka on $$
 \begin{aligned}
 \mu_\text{s} mg &= 0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&\approx 7360\,\text{N}
+&\approx 7400\,\text{N}
 \end{aligned}
 $$. Raskaampi auto tarvitsee siis suuremman kitkavoiman, mutta renkaat antavat sitä yhtä paljon enemmän: molemmat ovat verrannollisia massaan, ja tarvittava kitka on edelleen noin $61\,\%$ suurimmasta. Kuorma ei siis tee kaarteesta liukkaampaa.
 

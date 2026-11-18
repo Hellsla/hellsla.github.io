@@ -458,7 +458,7 @@ $$
 ### b)
 **Given:** $E_{\text{p}0} = 40\,\text{J}$, final kinetic energy $E_\text{k} = 25\,\text{J}$ (top of the blue bar), length of the slope $s = 6.0\,\text{m}$; at the start $E_\text{k0} = 0$ and at the end $E_\text{p} = 0$
 **Find:** the work $W_\text{friction}$ of the friction force and the magnitude $F$ of the friction force
-**Principle:** The forces on the sled are the weight, the normal force and the kinetic friction. The normal force is perpendicular to the motion, so it does no work. Friction changes the mechanical energy, so the energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of the other forces equals the final energy. The kinetic friction force is against the motion, so its work is negative: $W_\text{friction} = -Fs$.
+**Principle:** The forces on the sled are the weight, the normal force and the sliding friction. The normal force is perpendicular to the motion, so it does no work. Friction changes the mechanical energy, so the energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of the other forces equals the final energy. The sliding friction force is against the motion, so its work is negative: $W_\text{friction} = -Fs$.
 **Reading the graph:** The blue bar reaches $25\,\text{J}$, so $E_\text{k} = 25\,\text{J}$. The work of friction is not drawn.
 **Formula:** $E_{\text{p}0} + W_\text{friction} = E_\text{k}$, so $W_\text{friction} = E_\text{k} - E_{\text{p}0}$; and $W_\text{friction} = -Fs$, so $F = \dfrac{-W_\text{friction}}{s}$
 **Conversions:** None needed: $1\,\text{J} = 1\,\text{N m}$.
@@ -474,7 +474,7 @@ F &= \dfrac{15\,\text{J}}{6.0\,\text{m}} \\
 \end{aligned}
 $$
 **Answer:** $W_\text{friction} = -15\,\text{J}$ and $F = 2.5\,\text{N}$, two significant figures. The work of friction is negative because friction is against the motion. $15\,\text{J}$ of energy became internal energy, which is transferred to the surroundings as heat.
-**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 19.6\,\text{N}$, so the friction force is about $13\,\%$ of the weight. The coefficient of kinetic friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
+**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 19.6\,\text{N}$, so the friction force is about $13\,\%$ of the weight. The coefficient of sliding friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
 
 ### c)
 **Given:** $m = 2.0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ at the bottom, $E_{\text{p}0} = 40\,\text{J}$
@@ -499,9 +499,9 @@ $$
 **Reasonableness:** The speed without friction is $6.3\,\text{m/s} \approx 23\,\text{km/h}$ and with friction $5.0\,\text{m/s} = 18\,\text{km/h}$. The speed with friction is lower, as it should be. The speed without friction equals that of a free fall from a height of $2.0\,\text{m}$: $\sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 2.04\,\text{m}} \approx 6.3\,\text{m/s}$.
 
 ### d)
-**Given:** new mass $m' = 3.0\,\text{kg}$; the same slope ($h = 2.04\,\text{m}$, $s = 6.0\,\text{m}$, $\alpha \approx 20^\circ$) and the same coefficient of kinetic friction $\mu$
+**Given:** new mass $m' = 3.0\,\text{kg}$; the same slope ($h = 2.04\,\text{m}$, $s = 6.0\,\text{m}$, $\alpha \approx 20^\circ$) and the same coefficient of sliding friction $\mu$
 **Find:** the speed of the sled at the bottom
-**Principle:** The energy principle (chapter *Conservation of mechanical energy and the energy principle*). The kinetic friction force is $F = \mu N$, and the normal force on the slope is $N = mg\cos\alpha$. Therefore the friction force is directly proportional to the mass.
+**Principle:** The energy principle (chapter *Conservation of mechanical energy and the energy principle*). The sliding friction force is $F = \mu N$, and the normal force on the slope is $N = mg\cos\alpha$. Therefore the friction force is directly proportional to the mass.
 **Formula:** $$
 \begin{aligned}
 mgh - Fs &= \tfrac12 mv^2 \\

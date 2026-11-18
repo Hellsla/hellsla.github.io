@@ -977,7 +977,7 @@
         "fy1-4"
       ],
       "figure": "fy5-4/kuvaaja-a",
-      "text": "A car drives at a constant speed through a level, circular bend. The radius of the bend is not given. The graph shows the normal acceleration of the car as a function of its speed along this bend. The mass of the car is $1200\\,\\text{kg}$. On a wet road the coefficient of static friction between the tyres and the road is $0.50$, and the tyres do not slip.",
+      "text": "A car drives at a constant speed through a level, circular bend. The radius of the bend is not given. The graph shows the centripetal acceleration of the car as a function of its speed along this bend. The mass of the car is $1200\\,\\text{kg}$. On a wet road the coefficient of static friction between the tyres and the road is $0.50$, and the tyres do not slip.",
       "parts": [
         {
           "id": "a",
@@ -1090,7 +1090,7 @@
               "points": 1
             },
             {
-              "text": "Calculates the friction forces: the friction needed at $15\\,\\text{m/s}$ is $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ and the greatest possible is $$\n\\begin{aligned}\n0.50 \\cdot 1500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 &\\approx 7360\\,\\text{N}\n\\end{aligned}\n$$.",
+              "text": "Calculates the friction forces: the friction needed at $15\\,\\text{m/s}$ is $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ and the greatest possible is $$\n\\begin{aligned}\n0.50 \\cdot 1500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 &\\approx 7400\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
@@ -1185,7 +1185,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14.7\\,\\text{N}$ ylöspäin."
+              "detail": "$H \\approx 331\\,\\text{N}$ away from the wall and $V \\approx 14.7\\,\\text{N}$ upwards."
             },
             {
               "text": "Calculates the magnitude from the components: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",

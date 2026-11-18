@@ -796,7 +796,7 @@
         "fy4-6"
       ],
       "figure": "fy4-8/palkit-asteikko",
-      "text": "A student studies a sled sliding down a straight slope. The mass of the sled is $2.0\\,\\text{kg}$ and it starts from rest. The slope is $6.0\\,\\text{m}$ long, and the coefficient of kinetic friction is the same all the way. Air resistance is negligible. The bottom of the slope is the zero level of potential energy. The graph shows the potential energy $E_{\\text{p}0}$ of the sled at the start and its kinetic energy $E_\\text{k}$ at the end.",
+      "text": "A student studies a sled sliding down a straight slope. The mass of the sled is $2.0\\,\\text{kg}$ and it starts from rest. The slope is $6.0\\,\\text{m}$ long, and the coefficient of sliding friction is the same all the way. Air resistance is negligible. The bottom of the slope is the zero level of potential energy. The graph shows the potential energy $E_{\\text{p}0}$ of the sled at the start and its kinetic energy $E_\\text{k}$ at the end.",
       "parts": [
         {
           "id": "a",
@@ -909,7 +909,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "The sled is replaced by a similar sled with a mass of $3.0\\,\\text{kg}$. The slope and the coefficient of kinetic friction stay the same. What happens to the speed at the bottom of the slope? Justify by calculation.",
+          "text": "The sled is replaced by a similar sled with a mass of $3.0\\,\\text{kg}$. The slope and the coefficient of sliding friction stay the same. What happens to the speed at the bottom of the slope? Justify by calculation.",
           "answer": {
             "value": 5.0,
             "unit": "m/s",
@@ -917,7 +917,7 @@
           },
           "criteria": [
             {
-              "text": "Justifies that the kinetic friction force $F = \\mu N = \\mu mg\\cos\\alpha$ is directly proportional to the mass, as is the potential energy $mgh$. Both the source of energy and the work of friction grow in the same ratio.",
+              "text": "Justifies that the sliding friction force $F = \\mu N = \\mu mg\\cos\\alpha$ is directly proportional to the mass, as is the potential energy $mgh$. Both the source of energy and the work of friction grow in the same ratio.",
               "tag": "concept",
               "points": 1
             },

@@ -1,16 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 15f19034f31ca8a5
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: e9bf2efc3c9791b6
+SCOPE: delta: new tasks s8 and s9 (text, solutions, criteria), answers.py s8/s9, changed intro sentence; s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+- s9 b rubric (tasks.json, criterion 2) is untranslated Finnish: "$H \approx 331\,\text{N}$ poispäin seinästä ja $V \approx 14.7\,\text{N}$ ylöspäin." Should read "... away from the wall and ... upwards."
+- Alt text names differ from the task's names: the s9 figure (content/en/FY5/fy5-2/figures.json, shared with the chapter) says "cable" (and the label "vaijeri" -> "cable") while the task says "wire"; the s8 graph alt says "centripetal acceleration" while the task says "normal acceleration". Align to the task's terms ("wire", "normal acceleration"; the chapter's own en text should be checked for the same terms before changing the shared file).
 
 ## Polish
-- C: s7 b reasonableness: the 0.9 % difference comes almost wholly from the period (a 400 km orbit has T = 92.4 min, and (92.4 : 92)^2 = 1.009); "and by the height chosen for the model together" is harmless, since the two given values are simply not an exactly matching pair.
+- s8 d: 7360 N has more figures than the data (0.50); use about 7.4 kN / 7400 N.
 
 ## Checked
-- s7 a: the new sentence says correctly that 370-460 km is the range in which the altitude is kept over time and not a variation within one orbit; 90 km : 6771 km = 1.3 %, and the conclusion (circular orbit is a good model) still follows.
-- s7 b: recomputed a_n = 4 pi^2 r : T^2 = 8.773 m/s^2, field strength 8.69 m/s^2, difference 0.9 %; the corrected explanation is consistent with these.
-- s7 e: the angle is now defined (at the centre of the Earth, from the direction pointing straight away from the Sun). For a cylindrical shadow the station is at its edge when r sin(theta) = R, so the statement is right; theta = 70.2 degrees, 2 theta : 360 = 39 %, 35.9 min, 84 kW : 0.61 = 138 kW, all as in the text.
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- s8 recomputed: r = 15^2/3,0 = 75 m; second graph point 20 m/s, 5,3 m/s^2 -> 75 m (curve a = v^2/75 in figures.py); F = 1200*3,0 = 3,6 kN; mu g = 4,905; v_max = 19,18 m/s = 69,0 km/h; F_max = 5,89 kN, need/max = 61 %; d: 4500 N and 7357 N, ratio unchanged. Physics sound (static friction, no centrifugal force, mass cancels).
+- s9 recomputed: T = 19,5*9,81/0,500 = 382,6 N; H = 331,3 N; V = 14,7 N; F_s = 331,7 N at 2,5 deg; end-moment check V = m_t g/2 = 14,7 N; m_s,max = 29,08 kg; d: T = 270,5 N (-29 %), H' = 191,3 N, hinge force falls (about 192 N). Direction of change and explanation correct.
+- Task text does not reveal solution structure (no 'phases', 'twice', no 'use moments about the hinge'); s9 d "perustele laskemalla ja selitä" is neutral.
+- Points: s8 4+3+5+3 = 15, s9 6+5+3+3 = 17; `practice.py check units/fy9-ympyraliike` OK for fi, en, fi-easy (9 tasks, 142 points). answers.py s8/s9 blocks match tasks.json values.
+- Intro: nine tasks, equilibrium/circular motion/gravitation, task 7 note: correct.
+- Figures fy5-4/kuvaaja-a (point 15 m/s, 3,0) and fy5-2/kyltti (L 1,20 m, 30,0 deg) match the task data.
+- Gap: captures (shots.md) contain no screenshot of s8/s9 (the sovella stage captures show the older worked examples); 360 px layout with solutions open not judged by me, left to the visual reviewer / check_layout.py. Calculation chains are written as aligned rows in the source.

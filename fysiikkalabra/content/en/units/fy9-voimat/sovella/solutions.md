@@ -572,11 +572,7 @@ $$. The heavier skydiver's terminal velocity is about $56\,\text{m/s}$, about $1
 - The acceleration is read from one point or from the value of the velocity; acceleration is the change in velocity divided by the time, not the velocity.
 - Air resistance is taken as $mg$ or $ma$; it is $m(g - a)$, because the weight and air resistance act together.
 - The last point of the graph, $47.3\,\text{m/s}$, is taken as the terminal velocity, although the speed still grows.
-- In part d it is claimed that the terminal velocity is proportional to the mass ($$
-\begin{aligned}
-100 : 75 \cdot 48\,\text{m/s} &\approx 64\,\text{m/s}
-\end{aligned}
-$$), although $v_\text{t} \propto \sqrt{m}$.
+- In part d it is claimed that the terminal velocity is proportional to the mass ($100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$), although $v_\text{t} \propto \sqrt{m}$.
 
 ### Hyväksytään myös
 - The numbers of parts a and b with slightly different readings (e.g. $v_\text{8\,s} = 44.6\,\text{m/s}$); the result $a_2$ in the range $1.4\ldots 1.6\,\text{m/s}^2$ and $F_\text{v}$ in the range $600\ldots 650\,\text{N}$.

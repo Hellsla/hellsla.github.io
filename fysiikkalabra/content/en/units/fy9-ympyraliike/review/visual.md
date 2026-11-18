@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 15f19034f31ca8a5
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: e9bf2efc3c9791b6
+SCOPE: delta: Sovella itsenäisesti tasks s8 (Auto ajaa kaarteessa, figure fy5-4/kuvaaja-a) and s9 (Kyltti seinän tangossa, figure fy5-2/kyltti) with solutions, rubric and answers, and the changed intro sentence ("Yhdeksän ... tehtävää"), en. Tasks s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+- B s8 d) Mallivastaus and rubric (tasks.json s8 d, solutions.md "### d)", line about 606): the greatest friction is given as `{\approx 7360\,\text{N}}` (three figures) although the data ($\mu_\text{s} = 0{,}50$) has two. Round to the data's precision: $0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 7400\,\text{N}$ (or $7{,}4\,\text{kN}$). The "4500 N" beside it is right. The 61 % ratio and the 5,9 kN of part c are already two-figure. Language-neutral: the same line in all three languages.
 
 ## Polish
-- B `sovella/solutions.md` s7 e, Model answer: one paragraph of about 200 words with the shadow geometry in the middle; a break before "When the Sun is in the plane of the orbit" and before "The $84\,\text{kW}$ of part d" would separate the reason, the estimate and the conclusion. s7 c (about 170 words) likewise before "Gravitation has not disappeared".
-- B s7 e: the shadow-edge sentence ("the station is at the edge of the shadow when its direction, seen from the centre of the Earth, differs from the direction pointing straight away from the Sun by the angle $\theta$ for which …") is long and has no figure; two sentences would be easier to follow.
-- C s7 a, Principle: the comparison with the source and the circular-motion principle share one paragraph; the comparison could stand as its own paragraph.
+- B s9 a) Periaate: one paragraph of about 115 words (hinge choice, centre of mass, torque of $T\sin\theta$, directions of rotation). Split before "Tangon paino vaikuttaa painopisteestä" and again before "Vaijerin voimasta tankoa vastaan ...".
+- C s9 d) Mallivastaus: the last chain (H') ends a display block and "Aiemmin $331\,\text{N}$" starts the next sentence with no full stop; s8 d) has "$$ja suurin" with no space after a display block. Both render acceptably at 390 px but the source joins are fragile; end the display with a full stop or move the text into its own sentence.
 
 ## Checked
-- Hash at start and end: 15f19034f31ca8a5 (captures current for this hash).
-- Diff hunks read: s3 a ("a falling curve that becomes less steep as the period grows") reads well, judged from source; the intro.
-- ADDED TASK s7 at 390 px: contact-7 and contact-8 (#82–#93) and `stage-exercises-390-57`, `-61`: title, source link, NASA link, model data list, parts a–e, all solutions, common mistakes, also accepted, rubric. Inline $\sqrt{\tfrac{\gamma M}{r}}$, $\tfrac{2\theta}{360^\circ}$ and $\tfrac{84\,\text{kW}}{0.61}$ render cleanly; aligned rows keep `=` in one column; nothing clipped.
-- s7 at 1280 px: contact-15 (#169–#174): card and solution rows intact.
-- Vector notation $\overline{G}$, $\overline{N}$; every number with a unit is LaTeX; decimal point throughout.
-
-## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+- No English captures exist; read the English tasks.json and solutions.md against the Finnish captures (same cut: paragraphs, chains and the 7360 line sit at the same lines), and ran `check_layout.py fy9-ympyraliike --width 360`: OK for en (1 known clipped formula, all in older tasks, none in s8/s9). Captures not opened per language, so layout verdict rests on that check plus the Finnish captures.
+- s8: graph has quantity and unit on both axes, readable ticks, the marked point (15 m/s, 3,0 m/s²) with dashed guides, curve distinct from the marker; alt text uses the task's names (auto, kaarre, normaalikiihtyvyys, ratanopeus). Answer box $r = 75\,\text{m}$, $F \approx 3{,}6\,\text{kN}$, $v_\text{max} \approx 19\,\text{m/s}$ (69 km/h) rounded to two figures; chains aligned at `=`, nothing clipped with solutions open at 390.
+- s9: figure alt names kyltti, tanko, vaijeri match the task; hinge, wire angle and length are shown; answers $380\,\text{N}$, $330\,\text{N}$, $29\,\text{kg}$ rounded to two figures; aligned chains and fractions intact at 390 and 1280.
+- Task texts do not reveal the structure (no "kolme vaihetta", no "kahdesti"); questions are last. Unit is language-neutral: ids, figures, numbers and answers identical across fi, en, fi-easy.
+- Hash at start and end: e9bf2efc3c9791b6 (unchanged).

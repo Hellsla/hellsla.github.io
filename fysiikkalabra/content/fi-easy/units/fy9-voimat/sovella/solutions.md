@@ -572,11 +572,7 @@ $$. Raskaamman hyppääjän rajanopeus on noin $56\,\text{m/s}$ eli noin $15\,\%
 - Kiihtyvyys luetaan yhdestä pisteestä tai nopeuden arvosta. Kiihtyvyys on kuitenkin nopeuden muutos jaettuna ajalla, ei nopeus.
 - Ilmanvastukseksi otetaan $mg$ tai $ma$. Ilmanvastus on kuitenkin $m(g - a)$, koska paino ja ilmanvastus vaikuttavat yhdessä.
 - Rajanopeudeksi otetaan kuvaajan viimeinen piste $47{,}3\,\text{m/s}$, vaikka nopeus kasvaa vielä.
-- d-kohdassa väitetään, että rajanopeus on verrannollinen massaan ($$
-\begin{aligned}
-100 : 75 \cdot 48\,\text{m/s} &\approx 64\,\text{m/s}
-\end{aligned}
-$$), vaikka $v_\text{r} \propto \sqrt{m}$.
+- d-kohdassa väitetään, että rajanopeus on verrannollinen massaan ($100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$), vaikka $v_\text{r} \propto \sqrt{m}$.
 
 ### Hyväksytään myös
 - a- ja b-kohdan luvut luetuilla arvoilla, jotka poikkeavat vähän (esim. $v_\text{8\,s} = 44{,}6\,\text{m/s}$); tulos $a_2$ välillä $1{,}4\ldots 1{,}6\,\text{m/s}^2$ ja $F_\text{v}$ välillä $600\ldots 650\,\text{N}$.
