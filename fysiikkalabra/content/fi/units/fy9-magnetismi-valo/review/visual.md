@@ -1,20 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 1197865df5c60483
-SCOPE: delta: new tasks s8, s9 and intro; older tasks untouched
+VERDICT: PASS
+CONTENT-HASH: f56ae41225b29686
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Sijoitus split); older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- [Major] s9 b) mallivastaus, Sijoitus (exercises-390-76) — rivi `= 0,72 W · 0,40 s + 0,405 W · 0,20 s` leikkautuu 390 px:ssä oikeasta reunasta (viimeinen `s` katkeaa; 360 px:ssä pahemmin) — leikkautunut kaava on lukijalle vieras ja rikkoo "ei vieritettävää kaavaa" -säännön, vaikka check_layout ei sitä tunnistanut — jaa rivi kahdeksi: `= 0,72 W · 0,40 s` ja `+ 0,405 W · 0,20 s` omille riveilleen (+ rivin alkuun, tasattuna), tai laske termit erikseen (`W_1`, `W_3`) ennen summaamista.
+(none) Round 1:n Major on korjattu: s9 b) Sijoitus on nyt `W = (2,4 V)²/8,0 Ω · 0,40 s` / `+ (1,8 V)²/8,0 Ω · 0,20 s` / `= 0,72 W · 0,40 s` / `+ 0,41 W · 0,20 s` / `= 0,29 J + 0,082 J` / `≈ 0,37 J`, tasatut rivit. Mitattu 360 px:ssä (Chrome): kaavalohkojen scrollWidth = clientWidth (271 ja 276 px), oikea reuna alle 320 px, sivulla ei vaakavieritystä. Välitulos 0,41 W vastaa Järkevyys-kohtaa.
 
 ## Polish
-- [Minor] s9 b) — välitulos 0,405 W on kolmella numerolla, Järkevyys-kohdassa sama teho on 0,41 W; yhtenäistä (esim. 0,41 W vai merkitse välitulos "0,405").
-- [Minor] s9 b) Järkevyys — yksikköketju `V²/Ω s = W s = J` purkautuu kahdelle riville, jossa toinen `= J` on irrallinen; pidä yhdellä rivillä tai tasaa.
-- [Minor] s9 a)/Annettu — aikaväli "0,60–0,80 s" katkeaa viivan kohdalta rivin vaihtuessa (0,60–/0,80 s); käytä erottamatonta väliä/viivaa.
-- [Minor] s8 kuvaaja (fy7-10/fit, exercises-390-64) — merkityt pisteet ovat 390 px:ssä pieniä ja vaaleanpunaisia; lukukelpoinen, ei muutosta vaadita.
+- [Minor] s9 b) Järkevyys — yksikköketju `V²/Ω s = W s = J` on yhä sisällä tekstissä; ei häiriötä 360 px:ssä.
+- [Minor] s9 a) aikavälin "0,60–0,80 s" rivinvaihto viivan kohdalta (round 1) ei muutettu; ei estä.
 
 ## Checked
-- exercises-390-64 (s8 tehtävä + kuva), -66, -69, -70 (s8 malli, virheet, pisteytys), -73, -74 (s9 tehtävä + kuva, a-ratkaisu), -76 (s9 b/c), intro-390, hero.
-- Kuvien alt-/kuvausnimet (sin α₁, sin α₂, Φ, t) vastaavat tehtävätekstiä; unit-kentät kieliriippumattomia (s8 tyhjä, s9 V); tulokset pyöristetty datan tarkkuuteen (1,5; 2,0·10⁸; 42°; 2,4/1,8 V; 0,37 J); tehtävätekstit eivät paljasta ratkaisurakennetta; muu laskuketju riveinä, tasattu.
-- Ei avattu: 1280 px -kuvat, vanhat tehtävät.
+- fi solutions.md s9 b -rivit (lähdetekstistä) ja preview/fy9-magnetismi-valo.html 360 px:ssä: katex-display-lohkojen leveys ja reunat; uusia rikkoutumia ei löytynyt. Vanhat tehtävät ja 1280 px ei avattu.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: e09f46511f4167f8
-SCOPE: delta: new tasks s8, s9 and intro; older tasks untouched
+VERDICT: PASS
+CONTENT-HASH: b48cf7172d7bb274
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Substitution split); older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- [Major] s9 b) model solution, Substitution (en exercises-390-79) — the row `= 0.72 W · 0.40 s + 0.405 W · 0.20 s` is clipped at the right edge at 390 px (last `s` cut; worse at 360 px) — a clipped formula is unreadable and breaks the "nothing to scroll" rule although check_layout did not flag it — put `+ 0.405 W · 0.20 s` on its own aligned row, or compute W_1 and W_3 separately first.
+(none) The round-1 Major is fixed: the en s9 b) Substitution is now aligned rows `W = (2.4 V)²/8.0 Ω · 0.40 s` / `+ (1.8 V)²/8.0 Ω · 0.20 s` / `= 0.72 W · 0.40 s` / `+ 0.41 W · 0.20 s` / `= 0.29 J + 0.082 J` / `≈ 0.37 J`. Measured at 360 px in Chrome on the built page: the formula blocks fit (scrollWidth = clientWidth), right edge under 320 px, no horizontal scroll. Intermediate 0.41 W now matches Reasonableness; decimal point correct.
 
 ## Polish
-- [Minor] s9 b) — intermediate 0.405 W has three figures while Reasonableness says 0.41 W; make consistent.
-- [Minor] s9 b) Reasonableness — unit chain `V²/Ω s = W s = J` splits over two rows with a lone `= J`; keep on one row.
-- [Minor] s9 intervals "0.60–0.80 s" can break after the dash at a line end; use a non-breaking form.
+- [Minor] s9 b) Reasonableness — the unit chain stays inline; no problem at 360 px.
+- [Minor] "0.60–0.80 s" can still break after the dash; not blocking.
 
 ## Checked
-- en exercises-390-78, -79 (s9 solution a, b with substitution, reasonableness); en text of s8 and s9 in the packet compared with the Finnish: same numbers, units, ids, the figures' symbols ($\sin\alpha_1$, $\sin\alpha_2$, $\Phi$, $t$) match the task text; decimal point correct in English; unit fields language-neutral; "internal energy" wording right.
-- Layout of the s8 task and figure taken from the Finnish captures (same shared figures, same structure); 1280 px not opened.
+- en solutions.md s9 b source text, and the built page at 360 px (formula block widths and edges). Older tasks and 1280 px not opened.
 
 ## Scores
-illustrations 4 · typography 3 · English 4 · accessibility 4
+illustrations 4 · typography 4 · English 4 · accessibility 4

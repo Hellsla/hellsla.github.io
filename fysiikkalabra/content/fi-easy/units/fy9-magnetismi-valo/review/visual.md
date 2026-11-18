@@ -1,18 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 77f6edd72ebe61ef
-SCOPE: delta: new tasks s8, s9 and intro; older tasks untouched
+VERDICT: PASS
+CONTENT-HASH: 43b392b3a623282a
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Sijoitus split); older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- [Major] s9 b) mallivastaus, Sijoitus (fi-easy exercises-390-78) — rivi `= 0,72 W · 0,40 s + 0,405 W · 0,20 s` leikkautuu oikeasta reunasta 390 px:ssä (viimeinen `s` katkeaa; 360 px:ssä pahemmin) — selkeän suomen lukija ei voi lukea leikkautunutta kaavaa — siirrä `+ 0,405 W · 0,20 s` omalle tasatulle rivilleen tai laske W₁ ja W₃ erikseen ennen yhteenlaskua.
+(none) Round 1:n Major on korjattu: fi-easy s9 b) Sijoitus on tasatuilla riveillä (`W = (2,4 V)²/8,0 Ω · 0,40 s` / `+ (1,8 V)²/8,0 Ω · 0,20 s` / `= 0,72 W · 0,40 s` / `+ 0,41 W · 0,20 s` / `= 0,29 J + 0,082 J` / `≈ 0,37 J`). Chromella 360 px:ssä mitattuna lohkot mahtuvat (scrollWidth = clientWidth), ei vaakavieritystä. Välitulos 0,41 W vastaa Järkevyys-kohtaa; luvut ja yksiköt samat kuin fi:ssä.
 
 ## Polish
-- [Minor] s9 b) — välitulos 0,405 W kolmella numerolla, Järkevyys sanoo 0,41 W; yhtenäistä.
-- [Minor] s9 b) Kysytty/Annettu — "0–/0,80 s" ja "0,40–/0,60 s" katkeavat viivan kohdalta (kuvassa 390-77); käytä erottamatonta väliä.
-- [Minor] s9 b) Järkevyys — yksikköketjun toinen `= J` jää irralliseksi riviksi.
+- [Minor] s9 b) aikavälit "0–0,80 s" voivat katketa viivan kohdalta; ei estä.
+- [Minor] Yksikköketju Järkevyys-kohdassa pysyy tekstirivinä; ei häiriötä.
 
 ## Checked
-- fi-easy exercises-390-77, -78 (s9 a:n loppu, b koko ratkaisu); s8 ja s9 tehtävätekstit paketista: lauseet lyhyitä ja yksiasiaisia (esim. "Valo tulee ilmasta akryylilevyyn."), samat luvut, yksiköt ja symbolit kuin suomessa, kuvien nimet vastaavat tekstiä, unit-kentät kieliriippumattomia, kielen taso sopii S2-lukijalle.
-- s8-kuvan ja johdannon ulkoasu suomenkielisistä kuvista (jaettu rakenne); 1280 px ei avattu.
+- fi-easy solutions.md s9 b lähdeteksti ja rakennettu sivu 360 px:ssä (kaavalohkojen leveydet). Vanhat tehtävät ja 1280 px ei avattu.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
