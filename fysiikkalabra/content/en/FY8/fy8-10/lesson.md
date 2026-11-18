@@ -410,7 +410,10 @@ Another mistake is to think that mass is conserved in a nuclear reaction as in c
 
 ## Summary
 - Atomic masses are given in atomic mass units: $1\,\text{u}$ is $\tfrac{1}{12}$ of the mass of a carbon-12 atom, that is, $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$.
-- A nucleus is lighter than its separate nucleons. The mass defect is $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}$.
+- A nucleus is lighter than its separate nucleons. The mass defect is
+
+    $$\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}$$.
+
 - The binding energy $E_\text{B} = \Delta m\,c^2$ is needed to break a nucleus into nucleons, and it is released when a nucleus forms. Putting in $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ gives the energy in megaelectronvolts.
 - The binding energy per nucleon is highest, about $8.8\,\text{MeV}$, for iron and nickel; fusion and fission release energy because they move nucleons into more tightly bound nuclei.
 - The reaction energy is $Q = (m_\text{initial} - m_\text{final})\,c^2$: mass is not conserved in a nuclear reaction, although the mass number and the charge number are. With atomic masses, in beta minus decay $Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2$, and in beta plus decay $2m_e$ is also subtracted.

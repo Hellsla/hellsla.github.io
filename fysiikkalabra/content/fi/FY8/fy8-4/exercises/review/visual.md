@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2d131b382d63c27b
-SCOPE: delta added-exercise from df0225f5b9796ad4 base cabadc3e6179
+CONTENT-HASH: ee8323182bafbce6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy8-3/levels-task and fy8-2/lamp-spectrum (L1-09, L2-09) — the lamp figure draws the yellow pair 577/579 nm as one thick line, while the description and solution speak of two lines — acceptable at this scale; optionally say "kaksi lähekkäistä viivaa, jotka näkyvät yhtenä" in the solution's reading step.
+- none
 
 ## Checked
-- Opened (1280 px, solutions open, language fi): the L1 parts holding tasks 4-9 and 4-10 (spectrum figure, Annettu to Vastaus, Järkevyys) and the L2 parts holding task 4-19 (energy-level figure, solution rows, Vastaus, Järkevyys wavelength block).
-- Figure for 4-9: dark spectrum strip, ticks every 10 nm, numbers every 50 nm, axis "λ (nm)" in LaTeX, green line clearly just left of 550; gives the value needed, does not give the answer away.
-- Figure for 4-19: grid 1 eV, E axis in eV, levels E1 to E4 labelled in LaTeX; E3 and E1 readable.
-- Formula rows: aligned, no clipping, decimal comma/point right, units upright with thin space, fractions in display, MAFY hint in a closed Vihje; the set reads as one with the neighbouring tasks.
-- Hash 2d131b382d63c27b at the start and at the end.
+- Round 2 delta (solutions.md cut into paragraphs, words unchanged). Opened fy8-4-open-exercises-1280-3.png (L1, tasks 4-3 and 4-4 solutions open) and fy8-4-open-exercises-L2-1280-6.png (L2 data task). Rows aligned, fractions in display, units upright with a thin space, Vastaus and Järkevyys blocks intact, nothing clipped. Layout checks in the packet are green.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

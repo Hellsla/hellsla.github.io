@@ -25,7 +25,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: half-value thickness",
-      "prompt": "Behind a lead plate the intensity of gamma radiation is a quarter of what it is without the plate. How thick is the plate?",
+      "prompt": "The staff of a PET scan shield themselves from the gamma radiation coming from the patient behind a lead plate. Behind the plate the intensity of gamma radiation is a quarter of what it is without the plate. How thick is the plate?",
       "choices": [
         {
           "text": "Two half-value thicknesses, because the first halves the radiation and the second halves what is left.",

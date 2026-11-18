@@ -8,7 +8,11 @@
 **Formula:** $E = hf = \dfrac{hc}{\lambda}$, so for the third transition $\lambda_3 = \dfrac{hc}{E_3}$
 **Conversions:** $\lambda_\text{v} = 557.7 \cdot 10^{-9}\,\text{m}$ and $\lambda_\text{p} = 630.0 \cdot 10^{-9}\,\text{m}$. The electronvolts are converted by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $E_3 = 4.19 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 6.712 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** Green: $$\begin{aligned} E_\text{v} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{557.7 \cdot 10^{-9}\,\text{m}} \\ &= 3.562 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{3.562 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\ &= 2.22\,\text{eV} \end{aligned}$$, so green light is produced in the transition from the second excited state to the lower one. Red: in the same way $E_\text{p} = 3.153 \cdot 10^{-19}\,\text{J} = 1.97\,\text{eV}$, so red light is produced in the transition from the first excited state to the ground state. Third transition: $$\begin{aligned} \lambda_3 &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{6.712 \cdot 10^{-19}\,\text{J}} \\ &= 2.959 \cdot 10^{-7}\,\text{m} \end{aligned}$$
-**Answer:** Green light is produced in the transition from the second excited state to the lower one and red light from the first excited state to the ground state. The wavelength of the third transition is $\lambda_3 \approx 296\,\text{nm}$, three significant figures like the energy levels. It is ultraviolet radiation, which the eye cannot see. In addition, this transition is much less probable than the transition of the green light, so its line is weak: not every difference between energy levels appears as a strong spectral line.
+**Answer:** Green light is produced in the transition from the second excited state to the lower one and red light from the first excited state to the ground state.
+
+The wavelength of the third transition is $\lambda_3 \approx 296\,\text{nm}$, three significant figures like the energy levels. It is ultraviolet radiation, which the eye cannot see.
+
+In addition, this transition is much less probable than the transition of the green light, so its line is weak: not every difference between energy levels appears as a strong spectral line.
 **Reasonableness:** The greatest energy difference gives the shortest wavelength, and $296\,\text{nm}$ is shorter than the lower limit of visible light, about $380\,\text{nm}$. The energies of photons of visible light are $1.7$–$3.3\,\text{eV}$, and both colours of the aurora fall in this range, but $4.19\,\text{eV}$ does not.
 
 ### b)
@@ -24,9 +28,15 @@
 ### c)
 **Find:** why red light is not produced lower down and why the spectrum consists of lines
 **Principle:** The energy of an atom can have only certain values. An excited atom can give up its energy in two ways: by emitting a photon or in a collision in which the energy is transferred to another particle. Which happens first depends on the mean lifetime of the excited state and on how often the atom collides.
-**Model answer:** *Spectral lines.* The energy of an oxygen atom can have only the values of the energy levels. When an atom moves from one level to another, the energy of the photon produced is the difference of the levels, and a definite wavelength follows from it. This is why the light of the gas contains only these wavelengths, that is, separate spectral lines, and not a continuous spectrum.
+**Model answer:** *Spectral lines.* The energy of an oxygen atom can have only the values of the energy levels. When an atom moves from one level to another, the energy of the photon produced is the difference of the levels, and a definite wavelength follows from it.
 
-*Altitude and colours.* The first excited state, which produces the red light, decays by emitting a photon only after about $110\,\text{s}$ on average. At an altitude of $100$–$150\,\text{km}$ the air is so dense that an excited atom collides with other particles many times in a much shorter time. A collision releases the excited state: the energy is transferred to another particle, and no photon is produced. At altitudes above $200\,\text{km}$ the air is very thin and there are few collisions, so many atoms have time to emit a red photon.
+This is why the light of the gas contains only these wavelengths, that is, separate spectral lines, and not a continuous spectrum.
+
+*Altitude and colours.* The first excited state, which produces the red light, decays by emitting a photon only after about $110\,\text{s}$ on average. At an altitude of $100$–$150\,\text{km}$ the air is so dense that an excited atom collides with other particles many times in a much shorter time.
+
+A collision releases the excited state: the energy is transferred to another particle, and no photon is produced.
+
+At altitudes above $200\,\text{km}$ the air is very thin and there are few collisions, so many atoms have time to emit a red photon.
 
 The second excited state decays in only about $0.7\,\text{s}$, so many atoms emit a green photon before a collision even in denser air. Red light therefore requires thin air, and this is why it is seen in the upper part of the aurora.
 
@@ -37,7 +47,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Formula:** $E = \dfrac{hc}{\lambda}$, so $\lambda_\text{max} = \dfrac{hc}{E}$
 **Conversions:** $E = 1.12 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.794 \cdot 10^{-19}\,\text{J}$
 **Substitution:** $$\begin{aligned} \lambda_\text{max} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.794 \cdot 10^{-19}\,\text{J}} \\ &= 1.107 \cdot 10^{-6}\,\text{m} \end{aligned}$$. For the radiation of the claim $$\begin{aligned} E &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1500 \cdot 10^{-9}\,\text{m}} \\ &= 1.324 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{1.324 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\ &= 0.83\,\text{eV} \end{aligned}$$
-**Answer:** The sensor detects wavelengths up to $\lambda_\text{max} \approx 1110\,\text{nm}$, so it detects the green and red light of the aurora. The claim is false: the energy $0.83\,\text{eV}$ of a $1500\,\text{nm}$ photon is smaller than $1.12\,\text{eV}$. More intense radiation brings more photons to the sensor, but none of them raises an electron to the conduction band, so the pixel detects nothing.
+**Answer:** The sensor detects wavelengths up to $\lambda_\text{max} \approx 1110\,\text{nm}$, so it detects the green and red light of the aurora.
+
+The claim is false: the energy $0.83\,\text{eV}$ of a $1500\,\text{nm}$ photon is smaller than $1.12\,\text{eV}$.
+
+More intense radiation brings more photons to the sensor, but none of them raises an electron to the conduction band, so the pixel detects nothing.
 **Reasonableness:** The limit $1.1\,\mu\text{m}$ is in the near infrared, and silicon sensors are indeed also used to photograph the near infrared. The threshold is the same idea as in the photoelectric effect: what matters is the energy of a single photon, not the intensity of the light.
 
 ### Hyväksytään myös
@@ -57,7 +71,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 ### a)
 **Given:** atomic masses $m_\text{Pu} = 238.049560\,\text{u}$, $m_\text{U} = 234.040952\,\text{u}$ and $m_\text{He} = 4.002603\,\text{u}$ and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$
 **Find:** the reaction equation and the energy $Q$ of one decay
-**Principle:** In alpha decay a helium-4 nucleus leaves the nucleus, so the nucleon number decreases by four and the atomic number by two. The combined mass of the reaction products is smaller than that of the original nucleus, and the difference of the masses corresponds to the energy released. Atomic masses include the electrons: a plutonium atom has $94$ electrons, a uranium atom $92$ and a helium atom $2$, so the masses of the electrons cancel.
+**Principle:** In alpha decay a helium-4 nucleus leaves the nucleus, so the nucleon number decreases by four and the atomic number by two.
+
+The combined mass of the reaction products is smaller than that of the original nucleus, and the difference of the masses corresponds to the energy released.
+
+Atomic masses include the electrons: a plutonium atom has $94$ electrons, a uranium atom $92$ and a helium atom $2$, so the masses of the electrons cancel.
 **Formula:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ and $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
 **Conversions:** The mass defect is converted to energy by substituting $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
 **Substitution:** $$\begin{aligned} &m_\text{Pu} - m_\text{U} - m_\text{He} \\ &= 238.049560\,\text{u} - 234.040952\,\text{u} \\ &- 4.002603\,\text{u} \\ &= 0.006005\,\text{u} \end{aligned}$$, so $Q = 0.006005 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5.594\,\text{MeV}$
@@ -81,9 +99,15 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 
 *Uranium-238.* The half-life $4.47 \cdot 10^{9}\,\text{a} : 87.7\,\text{a} \approx 5 \cdot 10^{7}$ times longer than that of plutonium-238, so the activity per nucleus is that many times smaller. Hundreds of millions of kilograms of uranium would be needed to produce the same power.
 
-*Cobalt-60.* The half-life is rather short, and the strong gamma radiation penetrates matter: it would require tonnes of lead shielding and would damage the electronics and instruments of the rover. The alpha particles of plutonium-238, on the other hand, stop already in the fuel, so their energy is turned into internal energy where the heating is needed. Plutonium-238 is thus long-lived enough and still active enough.
+*Cobalt-60.* The half-life is rather short, and the strong gamma radiation penetrates matter: it would require tonnes of lead shielding and would damage the electronics and instruments of the rover.
 
-*Radiation safety.* Alpha radiation does not penetrate the shell of the generator, so the external radiation is small. Plutonium is, however, very dangerous if it gets into the body, for example as inhaled dust: alpha particles give all their energy to the nearby cells. This is why the fuel is a durable ceramic, plutonium dioxide, in tight capsules that are designed to withstand an explosion and a fall in a launch accident.
+The alpha particles of plutonium-238, on the other hand, stop already in the fuel, so their energy is turned into internal energy where the heating is needed.
+
+Plutonium-238 is thus long-lived enough and still active enough.
+
+*Radiation safety.* Alpha radiation does not penetrate the shell of the generator, so the external radiation is small.
+
+Plutonium is, however, very dangerous if it gets into the body, for example as inhaled dust: alpha particles give all their energy to the nearby cells. This is why the fuel is a durable ceramic, plutonium dioxide, in tight capsules that are designed to withstand an explosion and a fall in a launch accident.
 
 ### d)
 **Given:** initial power $P_0 = 2000\,\text{W}$, electrical power $110\,\text{W}$, time $t = 14\,\text{a}$ and $T_{1/2} = 87.7\,\text{a}$
@@ -98,12 +122,20 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 ### e)
 **Given:** activity $A = 10\,\text{Bq}$, time $t = 1\,\text{a}$, $Q = 8.961 \cdot 10^{-13}\,\text{J}$ of part a, mass of the lungs $m = 1.2\,\text{kg}$, $w_\text{R} = 20$ and $w_\text{T} = 0.12$
 **Find:** the effective dose $H_\text{E}$ in a year and a comparison with the average annual dose
-**Principle:** Alpha particles stop within a few cells, so the energy of every decay remains in the lung tissue. The activity is decays per second, and the half-life $87.7\,\text{a}$ is so long that the activity stays approximately constant for a year. The absorbed dose is energy per mass. The radiation weighting factor of alpha radiation gives the equivalent dose of the lungs, and because only the lungs are irradiated, the effective dose is obtained with the tissue weighting factor of the lungs.
+**Principle:** Alpha particles stop within a few cells, so the energy of every decay remains in the lung tissue.
+
+The activity is decays per second, and the half-life $87.7\,\text{a}$ is so long that the activity stays approximately constant for a year. The absorbed dose is energy per mass.
+
+The radiation weighting factor of alpha radiation gives the equivalent dose of the lungs, and because only the lungs are irradiated, the effective dose is obtained with the tissue weighting factor of the lungs.
 **Formula:** $E = AtQ$, $D = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D$ and $H_\text{E} = w_\text{T} H_\text{T}$
 **Conversions:** $t = 365.25 \cdot 24 \cdot 3600\,\text{s} = 3.156 \cdot 10^{7}\,\text{s}$
 **Substitution:** $$\begin{aligned} E &= 10\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} \\ &\cdot 8.961 \cdot 10^{-13}\,\text{J} \\ &= 2.83 \cdot 10^{-4}\,\text{J} \end{aligned}$$, $D = \dfrac{2.83 \cdot 10^{-4}\,\text{J}}{1.2\,\text{kg}} = 2.36 \cdot 10^{-4}\,\text{Gy}$, $H_\text{T} = 20 \cdot 2.36 \cdot 10^{-4}\,\text{Gy} = 4.71 \cdot 10^{-3}\,\text{Sv}$ and $H_\text{E} = 0.12 \cdot 4.71 \cdot 10^{-3}\,\text{Sv} = 5.66 \cdot 10^{-4}\,\text{Sv}$
 **Answer:** The effective dose would be about $H_\text{E} \approx 0.57\,\text{mSv}$ a year, two significant figures like the mass $1.2\,\text{kg}$. This is about a tenth of the average annual dose in Finland, $5.9\,\text{mSv}$, even though $10\,\text{Bq}$ is a very small activity. This is why plutonium is prevented from entering the body with a durable ceramic fuel and tight capsules.
-**Reasonableness:** From the outside the same alpha emitter of $10\,\text{Bq}$ would be almost harmless, because alpha particles stop in the dead surface layer of the skin. In the lungs the factor $20$ increases the dose, and the factor $0.12$ reduces it to a risk for the whole body. The result is of the same order of magnitude as the dose limit of the population from the use of radiation, $1\,\text{mSv}$ a year.
+**Reasonableness:** From the outside the same alpha emitter of $10\,\text{Bq}$ would be almost harmless, because alpha particles stop in the dead surface layer of the skin.
+
+In the lungs the factor $20$ increases the dose, and the factor $0.12$ reduces it to a risk for the whole body.
+
+The result is of the same order of magnitude as the dose limit of the population from the use of radiation, $1\,\text{mSv}$ a year.
 
 ### Hyväksytään myös
 - In part b the decay constant can be calculated in years and converted to seconds only at the end, and the mass can be calculated using the amount of substance from the molar mass $238\,\tfrac{\text{g}}{\text{mol}}$; $3.5\,\text{kg}$ is accepted as the answer.
@@ -123,7 +155,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 
 ### a)
 **Find:** a graph whose points should lie on a straight line through the origin according to the assumption, and the conclusion from it
-**Graph:** The count rate of the background is $R_\text{t} = \dfrac{112}{5.0\,\text{min}} = 22.4\,\tfrac{1}{\text{min}}$. It is subtracted from every reading, which gives the net count rate $R$ of the source. If the source is a point source and the radiation spreads evenly in all directions, at the distance $r$ the photons are spread over the surface of a sphere whose area is $4\pi r^2$. The fraction that hits the window of the tube is then proportional to $\tfrac{1}{r^2}$, so according to the assumption $R = \dfrac{K}{r^2}$. We choose $\tfrac{1}{r^2}$ for the horizontal axis and $R$ for the vertical axis.
+**Graph:** The count rate of the background is $R_\text{t} = \dfrac{112}{5.0\,\text{min}} = 22.4\,\tfrac{1}{\text{min}}$. It is subtracted from every reading, which gives the net count rate $R$ of the source.
+
+If the source is a point source and the radiation spreads evenly in all directions, at the distance $r$ the photons are spread over the surface of a sphere whose area is $4\pi r^2$.
+
+The fraction that hits the window of the tube is then proportional to $\tfrac{1}{r^2}$, so according to the assumption $R = \dfrac{K}{r^2}$. We choose $\tfrac{1}{r^2}$ for the horizontal axis and $R$ for the vertical axis.
 
 | $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\tfrac{\text{cm}^2}{\text{min}})$ |
 |---|---|---|---|
@@ -190,11 +226,23 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
   <circle cx="103" cy="363.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
-**Model answer:** The points do not lie on a straight line through the origin. The line through the origin drawn through the most distant point passes above the nearest points, and the points form a curve bending downwards. The same can be seen from the product $Rr^2$ in the table: according to the assumption it would be constant, but apart from random variation it increases with distance from about $12\,000$ to $29\,000$. The count rate thus increases more slowly than $\tfrac{1}{r^2}$ as the source is approached. The assumption does not hold as such, at least near the source, so some part of it is wrong: for example, the distance is not the right distance from the source to the place where the radiation is detected.
+**Model answer:** The points do not lie on a straight line through the origin. The line through the origin drawn through the most distant point passes above the nearest points, and the points form a curve bending downwards.
+
+The same can be seen from the product $Rr^2$ in the table: according to the assumption it would be constant, but apart from random variation it increases with distance from about $12\,000$ to $29\,000$.
+
+The count rate thus increases more slowly than $\tfrac{1}{r^2}$ as the source is approached.
+
+The assumption does not hold as such, at least near the source, so some part of it is wrong: for example, the distance is not the right distance from the source to the place where the radiation is detected.
 
 ### b)
 **Find:** a graph whose points should lie on a straight line according to the model $R = \dfrac{K}{(r + d)^2}$, and the distance $d$ from it
-**Graph:** From the model we get $$\begin{aligned} \dfrac{1}{\sqrt{R}} &= \dfrac{r + d}{\sqrt{K}} \\ &= \dfrac{1}{\sqrt{K}} \cdot r + \dfrac{d}{\sqrt{K}} \end{aligned}$$. So the quantity $\tfrac{1}{\sqrt{R}}$ is a first-degree function of $r$, and the line crosses the $r$ axis at $r = -d$. We choose $r$ for the horizontal axis and $\tfrac{1}{\sqrt{R}} = R^{-1/2}$ for the vertical axis; its unit is $\sqrt{\text{min}} = \text{min}^{1/2}$. For example, at $20\,\text{cm}$, $R = 71.6\,\tfrac{1}{\text{min}}$, so $\tfrac{1}{\sqrt{R}} = 11.82 \cdot 10^{-2}\,\sqrt{\text{min}}.$
+**Graph:** From the model we get $$\begin{aligned} \dfrac{1}{\sqrt{R}} &= \dfrac{r + d}{\sqrt{K}} \\ &= \dfrac{1}{\sqrt{K}} \cdot r + \dfrac{d}{\sqrt{K}} \end{aligned}$$.
+
+So the quantity $\tfrac{1}{\sqrt{R}}$ is a first-degree function of $r$, and the line crosses the $r$ axis at $r = -d$.
+
+We choose $r$ for the horizontal axis and $\tfrac{1}{\sqrt{R}} = R^{-1/2}$ for the vertical axis; its unit is $\sqrt{\text{min}} = \text{min}^{1/2}$.
+
+For example, at $20\,\text{cm}$, $R = 71.6\,\tfrac{1}{\text{min}}$, so $\tfrac{1}{\sqrt{R}} = 11.82 \cdot 10^{-2}\,\sqrt{\text{min}}.$
 
 | $r\ (\text{cm})$ | $\tfrac{1}{\sqrt{R}}\ (10^{-2}\,\sqrt{\text{min}})$ |
 |---|---|
@@ -297,7 +345,17 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1.3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The points lie well on a straight line, so the model describes the measurement over the whole range. The line is extended as a dashed line to the $r$ axis, which it crosses at $r = -1.3\,\text{cm}$. The intercept can also be calculated from two points read from the line within the measured range, $(2.0\,\text{cm};\ 1.86 \cdot 10^{-2}\,\sqrt{\text{min}})$ and $(20.0\,\text{cm};\ 12.0 \cdot 10^{-2}\,\sqrt{\text{min}})$. The slope of the line is $$\begin{aligned} k &= \dfrac{(12.0 - 1.86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20.0\,\text{cm} - 2.0\,\text{cm}} \\ &= 5.63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, so the line crosses the $r$ axis at $$\begin{aligned} r &= 2.0\,\text{cm} - \dfrac{1.86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1.3\,\text{cm} \end{aligned}$$. Thus $d \approx 1.3\,\text{cm}$. The effective detection point of the tube is therefore about a centimetre behind the window, which fits the structure of a GM tube. Lines fitted by eye typically give $d = 1.0$–$1.6\,\text{cm}$. From the slope, $K = \dfrac{1}{k^2} = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Model answer:** The points lie well on a straight line, so the model describes the measurement over the whole range.
+
+The line is extended as a dashed line to the $r$ axis, which it crosses at $r = -1.3\,\text{cm}$.
+
+The intercept can also be calculated from two points read from the line within the measured range, $(2.0\,\text{cm};\ 1.86 \cdot 10^{-2}\,\sqrt{\text{min}})$ and $(20.0\,\text{cm};\ 12.0 \cdot 10^{-2}\,\sqrt{\text{min}})$. The slope of the line is $$\begin{aligned} k &= \dfrac{(12.0 - 1.86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20.0\,\text{cm} - 2.0\,\text{cm}} \\ &= 5.63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, so the line crosses the $r$ axis at $$\begin{aligned} r &= 2.0\,\text{cm} - \dfrac{1.86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1.3\,\text{cm} \end{aligned}$$.
+
+Thus $d \approx 1.3\,\text{cm}$. The effective detection point of the tube is therefore about a centimetre behind the window, which fits the structure of a GM tube.
+
+Lines fitted by eye typically give $d = 1.0$–$1.6\,\text{cm}$.
+
+From the slope, $K = \dfrac{1}{k^2} = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Find:** the uncertainty of the net count rates at $2.0\,\text{cm}$ and $20\,\text{cm}$, the more uncertain point and improvements
@@ -306,7 +364,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 
 *$2.0\,\text{cm}$.* $\Delta N \approx \sqrt{3048} \approx 55$, so $R = 3026 \pm 55\,\tfrac{1}{\text{min}}$, only about $2\,\%$. At this distance the error in the distance is more important: if the distance is wrong by $1\,\text{mm}$, the distance $3.3\,\text{cm}$ to the detection point changes by about $3\,\%$ and the count rate by about $2 \cdot 3\,\% = 6\,\%$.
 
-*Conclusion.* Because of random variation the most uncertain is the most distant point at $20\,\text{cm}$, while near the source it is the setting of the distance. Far from the source it is worth counting pulses for longer: a counting time four times as long halves the relative variation. The background should be measured for even longer. For the near points the source and the tube should be fixed on a stand where the distance is set accurately.
+*Conclusion.* Because of random variation the most uncertain is the most distant point at $20\,\text{cm}$, while near the source it is the setting of the distance.
+
+Far from the source it is worth counting pulses for longer: a counting time four times as long halves the relative variation. The background should be measured for even longer.
+
+For the near points the source and the tube should be fixed on a stand where the distance is set accurately.
 
 ### d)
 **Given:** $K = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$ and $d = 1.3\,\text{cm}$ of part b, background $R_\text{t} = 22.4\,\tfrac{1}{\text{min}}$, dose rate $3.0\,\mu\text{Sv/h}$ at $10\,\text{cm}$
@@ -315,7 +377,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Formula:** $\dfrac{K}{(r + d)^2} = R_\text{t}$, so $r = \sqrt{\dfrac{K}{R_\text{t}}} - d$, and the dose rate $H = H_{10} \left(\dfrac{10\,\text{cm}}{r}\right)^2$
 **Conversions:** Not needed.
 **Substitution:** $r = \sqrt{\dfrac{3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}}{22.4\,\tfrac{1}{\text{min}}}} - 1.3\,\text{cm} = 37.5\,\text{cm} - 1.3\,\text{cm} = 36.2\,\text{cm}$ and $H = 3.0\,\mu\text{Sv/h} \cdot \left(\dfrac{10\,\text{cm}}{36.2\,\text{cm}}\right)^2 = 0.23\,\mu\text{Sv/h}$
-**Answer:** The net count rate equals that of the background at a distance of about $r \approx 36\,\text{cm}$, and the dose rate there is about $0.2\,\mu\text{Sv/h}$. The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and with this counting time the tube cannot distinguish it from the variation of the background. Far from the source the radiation is still very weak, so distance is a good means of protection, as is limiting the time.
+**Answer:** The net count rate equals that of the background at a distance of about $r \approx 36\,\text{cm}$, and the dose rate there is about $0.2\,\mu\text{Sv/h}$.
+
+The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and with this counting time the tube cannot distinguish it from the variation of the background.
+
+Far from the source the radiation is still very weak, so distance is a good means of protection, as is limiting the time.
 **Reasonableness:** The dose rate of the source, $0.2\,\mu\text{Sv/h}$, is of the same order of magnitude as the outdoor background $0.05$–$0.30\,\mu\text{Sv/h}$, so the pulse measurement and the dose rate tell the same thing. For comparison: working for $45\,\text{min}$ at $10\,\text{cm}$ gives about $3.0\,\mu\text{Sv/h} \cdot 0.75\,\text{h} \approx 2\,\mu\text{Sv}$, while a person in Finland receives on average $5.9\,\text{mSv} : 365 \approx 16\,\mu\text{Sv}$ a day.
 
 ### Hyväksytään myös
@@ -335,14 +401,24 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 ### a)
 **Find:** why a free neutron decays but a proton does not, what happens to the quarks, and which interaction causes it
 **Principle:** A free particle can decay by itself only if the combined mass of the products is smaller than its own mass: the difference of the masses is released as the kinetic energy of the products. A neutron is $udd$ and a proton $uud$.
-**Model answer:** *Masses.* In the decay of a neutron a proton, an electron and an electron antineutrino are produced: $n \rightarrow p + e^- + \bar{\nu}_e$. The charge is conserved, because $0 = (+e) + (-e) + 0$. The difference of the masses is $$\begin{aligned} &939.565\,\tfrac{\text{MeV}}{c^2} - 938.272\,\tfrac{\text{MeV}}{c^2} \\ &- 0.511\,\tfrac{\text{MeV}}{c^2} \\ &= 0.782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, when the very small mass of the antineutrino is left out. The neutron is thus heavier than the products together, and about $0.782\,\text{MeV}$ of energy is released in the decay. The proton is lighter than the neutron, so a free proton cannot change into a neutron: that would require energy.
+**Model answer:** *Masses.* In the decay of a neutron a proton, an electron and an electron antineutrino are produced: $n \rightarrow p + e^- + \bar{\nu}_e$. The charge is conserved, because $0 = (+e) + (-e) + 0$. The difference of the masses is $$\begin{aligned} &939.565\,\tfrac{\text{MeV}}{c^2} - 938.272\,\tfrac{\text{MeV}}{c^2} \\ &- 0.511\,\tfrac{\text{MeV}}{c^2} \\ &= 0.782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, when the very small mass of the antineutrino is left out.
+
+The neutron is thus heavier than the products together, and about $0.782\,\text{MeV}$ of energy is released in the decay.
+
+The proton is lighter than the neutron, so a free proton cannot change into a neutron: that would require energy.
 
 *Quarks and interaction.* One $d$ quark of the neutron ($udd$) changes into a $u$ quark, which produces a proton ($uud$). Only the weak interaction changes the flavour of a quark. Its mediator particle $W^-$ is produced when the $d$ quark changes, and it immediately turns into an electron and an antineutrino.
 
 ### b)
 **Given:** mass fraction of helium-4 $Y = 0.245$
 **Find:** the ratio $\tfrac{N_p}{N_n}$ of the numbers of protons and neutrons when the nuclei formed
-**Principle:** Almost all the neutrons ended up in helium-4 nuclei, and each of them contains two neutrons and two protons. For every neutron that ended up in helium, one proton also ended up in helium, and the helium contains $2N_n$ nucleons. We assume the masses of the proton and the neutron to be equal and ignore the small effect of the binding energy of the nucleus on the mass. Then the mass fraction is the same as the fraction of the numbers of nucleons.
+**Principle:** Almost all the neutrons ended up in helium-4 nuclei, and each of them contains two neutrons and two protons.
+
+For every neutron that ended up in helium, one proton also ended up in helium, and the helium contains $2N_n$ nucleons.
+
+We assume the masses of the proton and the neutron to be equal and ignore the small effect of the binding energy of the nucleus on the mass.
+
+Then the mass fraction is the same as the fraction of the numbers of nucleons.
 **Formula:** $Y = \dfrac{2N_n}{N_n + N_p}$, so $\dfrac{N_p}{N_n} = \dfrac{2 - Y}{Y}$
 **Conversions:** $24.5\,\% = 0.245$
 **Substitution:** $\dfrac{N_p}{N_n} = \dfrac{2 - 0.245}{0.245} = \dfrac{1.755}{0.245} = 7.16$
@@ -352,7 +428,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 ### c)
 **Given:** at the moment $t = 1\,\text{s}$ the ratio $1 : 6$, the ratio $1 : 7.16$ of part b and $T_{1/2} = 609\,\text{s}$
 **Find:** the time from the Big Bang to the formation of nuclei
-**Principle:** We consider a group in which at the moment $1\,\text{s}$ there is one neutron and six protons. Every neutron that decays turns into a proton, so there are always $7$ nucleons. When $N_n$ neutrons are left, there are $7 - N_n$ protons. First we solve when their ratio is the ratio of part b, and then the time from the decay law.
+**Principle:** We consider a group in which at the moment $1\,\text{s}$ there is one neutron and six protons.
+
+Every neutron that decays turns into a proton, so there are always $7$ nucleons. When $N_n$ neutrons are left, there are $7 - N_n$ protons.
+
+First we solve when their ratio is the ratio of part b, and then the time from the decay law.
 **Formula:** $\dfrac{7 - N_n}{N_n} = 7.16$, so $N_n = \dfrac{7}{1 + 7.16}$. From the decay law $N_n = N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}}$, where $N_0 = 1$, we get $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2}$.
 **Conversions:** Not needed.
 **Substitution:** $N_n = \dfrac{7}{8.163} = 0.8575$, $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0.8575}}{\lg 2} = \dfrac{0.0668}{0.3010} = 0.222$, so $t = 0.222 \cdot 609\,\text{s} = 135\,\text{s}$ from the moment $1\,\text{s}$.
@@ -364,7 +444,11 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Principle:** We calculate the same time with the ratio $1 : 5$: there are now $6$ nucleons for every original neutron. The sensitivity of the result tells how reliable the method is.
 **Model answer:** *Calculation.* The number of neutrons left is $N_n = \dfrac{6}{1 + 7.16} = 0.735$, so $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0.735}}{\lg 2} = 0.444$ and $t = 0.444 \cdot 609\,\text{s} = 270\,\text{s}$. The nuclei would form about $271\,\text{s}$, that is, about $4.5\,\text{min}$ after the Big Bang.
 
-*Evaluation.* The claim is false: the time almost doubles, even though the initial ratio changed only a little. The reason is that the time depends on what fraction of the neutrons has time to decay. With the ratio $1 : 6$ only about $14\,\%$ of the neutrons decay, with the ratio $1 : 5$ about $26\,\%$. When the fraction that decays is so small, even a small change in the initial ratio changes it, and with it the time, by a large proportion. The method gives the right order of magnitude, a few minutes, but not the exact time.
+*Evaluation.* The claim is false: the time almost doubles, even though the initial ratio changed only a little. The reason is that the time depends on what fraction of the neutrons has time to decay.
+
+With the ratio $1 : 6$ only about $14\,\%$ of the neutrons decay, with the ratio $1 : 5$ about $26\,\%$. When the fraction that decays is so small, even a small change in the initial ratio changes it, and with it the time, by a large proportion.
+
+The method gives the right order of magnitude, a few minutes, but not the exact time.
 
 *Assumptions.* The result of part c requires that after the moment $1\,\text{s}$ neutrons changed into protons only in the decay of free neutrons and not in other reactions, that the nuclei formed practically at a single moment, and that almost all the neutrons ended up in helium-4.
 
@@ -396,11 +480,19 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 ### b)
 **Find:** what the small proportion of uranium-235 tells us and how groundwater started and stopped the reactor
 **Principle:** Uranium-235 undergoes fission easily when a slow neutron hits it, but the neutrons produced in fission are fast. A chain reaction continues when the multiplication factor is at least $1$, that is, every fission causes on average at least one new fission. Water slows neutrons down as they collide with the hydrogen nuclei of the water molecules.
-**Model answer:** *Small proportion.* In a chain reaction it is exactly uranium-235 that undergoes fission, so it was used up from the ore. This is why its proportion decreased from the value $0.720\,\%$ found elsewhere to $0.440\,\%$. The small proportion is thus a trace of the fissions. This is also supported by the fact that the ore contains isotopes of fission products.
+**Model answer:** *Small proportion.* In a chain reaction it is exactly uranium-235 that undergoes fission, so it was used up from the ore. This is why its proportion decreased from the value $0.720\,\%$ found elsewhere to $0.440\,\%$.
+
+The small proportion is thus a trace of the fissions. This is also supported by the fact that the ore contains isotopes of fission products.
 
 *Starting.* When groundwater seeped into the ore, it slowed down the fast neutrons produced in fission. The slow neutrons caused new fissions of uranium-235, and when the multiplication factor rose to one, the chain reaction started.
 
-*Stopping.* The energy of the fissions turned into internal energy of the ore, and the ore heated up so much that the water boiled away. Without a moderator the neutrons stayed fast, the multiplication factor fell below one and the chain reaction stopped. When the ore cooled, water flowed back and the reaction started again. This explains the observed cycles, about half an hour of operation and a pause of a couple of hours. The reactor thus regulated itself, in the same way as a light-water reactor, in which boiling reduces the moderating ability.
+*Stopping.* The energy of the fissions turned into internal energy of the ore, and the ore heated up so much that the water boiled away.
+
+Without a moderator the neutrons stayed fast, the multiplication factor fell below one and the chain reaction stopped.
+
+When the ore cooled, water flowed back and the reaction started again. This explains the observed cycles, about half an hour of operation and a pause of a couple of hours.
+
+The reactor thus regulated itself, in the same way as a light-water reactor, in which boiling reduces the moderating ability.
 
 ### c)
 **Given:** power of Oklo $P_\text{O} = 100\,\text{kW}$, time $t_\text{O} = 150\,000\,\text{a}$ and the thermal power of Olkiluoto 3 $P_\text{OL3} = 4300\,\text{MW}$
@@ -410,14 +502,26 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Conversions:** $P_\text{O} = 100\,\text{kW} = 0.100\,\text{MW}$. The time need not be converted to seconds, because the result is obtained directly in years.
 **Substitution:** $t_\text{OL3} = \dfrac{0.100\,\text{MW}}{4300\,\text{MW}} \cdot 150\,000\,\text{a} = 3.49\,\text{a}$
 **Answer:** Olkiluoto 3 produces the same energy in about $3.5$ years. The power and the time are only order-of-magnitude estimates, so the result has at most two significant figures.
-**Reasonableness:** The power of the natural reactor was about $43\,000$ times smaller than that of Olkiluoto 3, but it operated about $43\,000$ times longer than $3.5$ years. The energy is $E = 100 \cdot 10^{3}\,\text{W} \cdot 4.73 \cdot 10^{12}\,\text{s} \approx 4.7 \cdot 10^{17}\,\text{J}$. With about $200\,\text{MeV}$ for one fission, this corresponds to about $1.5 \cdot 10^{28}$ fissions, that is, about $6\,\text{t}$ of uranium-235, which is of the same order of magnitude as the estimates in the literature.
+**Reasonableness:** The power of the natural reactor was about $43\,000$ times smaller than that of Olkiluoto 3, but it operated about $43\,000$ times longer than $3.5$ years.
+
+The energy is $E = 100 \cdot 10^{3}\,\text{W} \cdot 4.73 \cdot 10^{12}\,\text{s} \approx 4.7 \cdot 10^{17}\,\text{J}$.
+
+With about $200\,\text{MeV}$ for one fission, this corresponds to about $1.5 \cdot 10^{28}$ fissions, that is, about $6\,\text{t}$ of uranium-235, which is of the same order of magnitude as the estimates in the literature.
 
 ### d)
 **Find:** how the staying in place of plutonium can be concluded, and an evaluation of the claim that on the basis of Oklo the final disposal in Onkalo is certainly safe
 **Principle:** A natural example can support a model if the conditions are similar, but it does not prove the safety of another place. We must also check what can be observed at Oklo at all: the half-life of plutonium-239 is $24\,100\,\text{a}$.
-**Model answer:** *What is seen at Oklo.* In two billion years $2.0 \cdot 10^{9}\,\text{a} : 24\,100\,\text{a} \approx 83\,000$ half-lives of plutonium-239 have passed, so no plutonium is left. Its staying in place is concluded from its decay product: plutonium-239 decays by alpha decay into uranium-235, and this uranium has been found in the same places. Many fission products have also stayed near where they were formed, but some of the more mobile substances have been carried away.
+**Model answer:** *What is seen at Oklo.* In two billion years $2.0 \cdot 10^{9}\,\text{a} : 24\,100\,\text{a} \approx 83\,000$ half-lives of plutonium-239 have passed, so no plutonium is left.
 
-*Evaluation.* Oklo is a good natural example of how bedrock and clay can retain many heavy elements for a very long time. The claim, however, assumes that the conditions in Onkalo are similar to those at Oklo. The bedrock, the chemistry of the groundwater and the form of the waste are different: at Oklo there was not spent fuel in canisters but ore. An observation at one place therefore does not transfer as such to another, and the word "certain" is too strong.
+Its staying in place is concluded from its decay product: plutonium-239 decays by alpha decay into uranium-235, and this uranium has been found in the same places.
+
+Many fission products have also stayed near where they were formed, but some of the more mobile substances have been carried away.
+
+*Evaluation.* Oklo is a good natural example of how bedrock and clay can retain many heavy elements for a very long time.
+
+The claim, however, assumes that the conditions in Onkalo are similar to those at Oklo. The bedrock, the chemistry of the groundwater and the form of the waste are different: at Oklo there was not spent fuel in canisters but ore.
+
+An observation at one place therefore does not transfer as such to another, and the word "certain" is too strong.
 
 *What safety is based on.* The safety of Onkalo is based on several successive barriers: a copper canister, the bentonite clay around it and bedrock at a depth of about $430\,\text{m}$. Their operation is studied with experiments and models for hundreds of thousands of years, and STUK evaluates the calculations. Oklo supports these models but does not replace them.
 

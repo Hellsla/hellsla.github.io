@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 99372561eb10c7d5
-SCOPE: delta added-exercise from 64bd83cc9cf83c67 base 5b3ca4f81c77
+CONTENT-HASH: d75b4048e0db7028
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-10 answer box — the same missing unit "1/s" as in fi.
+- [Minor] L1-10 answer box — the unit "1/s" is still missing (carried from the earlier round).
 
 ## Checked
-- L2-08 "Kuvaajan lukeminen" now says "hieman vaakaviivan $4{,}0$ alapuolella", no ordinal.
-- Capture L3-1280-10 (L3-06 solution): formulas aligned, "Muunnokset" in plain Finnish, the ratio chain readable.
-- The L3-06 and L1-10 wording is plain, in order and S2-appropriate.
-- Other fi-easy captures and the 360 px captures not opened.
+- Delta round 2: solutions.md changed only in paragraph presentation (md-paragraphs); words, numbers and formulas unchanged.
+- The exercises packet has no own shots folder; opened the lesson-level capture fy8-7-open-exercises-1280-1 (7-1 solution): the Annettu to Järkevyys blocks, aligned chain and answer box all survive, nothing clipped.
+- Other captures not opened.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

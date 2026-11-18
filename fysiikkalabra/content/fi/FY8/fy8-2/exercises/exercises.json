@@ -163,7 +163,7 @@
       "unit": "eV",
       "tolerance": 0.02,
       "data": {
-        "caption": "Alkuaineiden emissioviivat, esimerkkiaineisto",
+        "caption": "Alkuaineiden emissioviivat",
         "columns": [
           "Alkuaine",
           "$\\lambda_1\\,(\\text{nm})$",
@@ -215,7 +215,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Auringon absorptiospektrin tummat viivat, esimerkkiaineisto",
+        "caption": "Auringon absorptiospektrin tummat viivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"
@@ -265,7 +265,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Elohopean viivat ja asteikon lukemat, esimerkkiaineisto",
+        "caption": "Elohopean viivat ja asteikon lukemat",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$x\\,(\\text{mm})$"
@@ -378,7 +378,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Malliatomin mitatut emissioviivat, esimerkkiaineisto",
+        "caption": "Malliatomin mitatut emissioviivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"
@@ -420,7 +420,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Väriaineiden valaistus ja fluoresenssi, esimerkkiaineisto",
+        "caption": "Väriaineiden valaistus ja fluoresenssi",
         "columns": [
           "Väriaine",
           "$\\lambda_\\text{abs}\\,(\\text{nm})$",

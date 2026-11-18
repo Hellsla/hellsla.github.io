@@ -282,7 +282,9 @@ Helium–neonlaserin lasersiirtymän tasojen energiaero on $1{,}96\,\text{eV}$, 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Tasojen energiaero $E_2 - E_1 = 1{,}96\,\text{eV}$ ja teho $P = 1{,}0\,\text{mW}$. Kysytään sekunnissa lähtevien fotonien määrää $\tfrac{N}{t}$.
+**Tunnetut ja kysytty.** Tasojen energiaero $E_2 - E_1 = 1{,}96\,\text{eV}$ ja teho $P = 1{,}0\,\text{mW}$.
+
+Kysytään sekunnissa lähtevien fotonien määrää $\tfrac{N}{t}$.
 
 <!-- vaihe -->
 

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f1aa00156e15f160
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1d14143dcfdb5fb2
 
 ## Blocking
-- none
 
 ## Polish
-- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
+- "Tapahtuma on sama kuin vapaan neutronin hajoaminen" nearly names the answer (a neutron becomes a proton); consider asking the question first and leaving the hint for the feedback.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: prompt change read; answer partly disclosed.

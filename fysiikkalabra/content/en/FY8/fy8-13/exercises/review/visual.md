@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a5c6089260b9a4af
-SCOPE: delta added-exercise from 75be1fcbd4cc4475 base 5b3ca4f81c77
+CONTENT-HASH: 26dbe99dacd4680d
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- en capture open-exercises-L2-1280-15 (L2-10, changed Järkevyys/Reasonableness block): units upright, $16\,\mu\text{Sv/h}$ and $15\,\mu\text{Sv/h}$ set cleanly, no clipping; the sentence on interpolation and the convex curve reads clearly in en.
-- No 360 px capture exists in the packet's inventory; 360 px taken from the passing layout check (short prose, no display maths). Rest of the set unchanged since the round-2 PASS.
+- Delta en, solutions.md paragraph re-cut only: opened open-exercises-L2-1280-1 (13-9 solution open: GIVEN, ASKED, PRINCIPLE as separate short paragraphs, formula and substitution blocks intact, units upright, no clipping).
+- Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

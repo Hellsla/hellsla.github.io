@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 82fca11c683128df
-
+CONTENT-HASH: 1275ef93804ae18a
 ## Blocking
 - none
-
 ## Polish
 - none
-
 ## Checked
-- Diff is one hint sentence: "Lämmöksi jää" to "Sisäenergiaksi jää"; now matches the task and the other hints; numbers and answer unchanged.
+batch delta review: Retrieval prompt reworded to the red and violet ends of the solar spectrum; clear, options untouched.

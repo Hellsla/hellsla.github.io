@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 309758a906385bfb
+CONTENT-HASH: 8f13b609fe914498
 
-Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
+Round 1 (delta): one word changed in the optional review task (americium-241 to radon-222).
 
 ## Blocking
 - None.
 
 ## Polish
-- [Minor] fy8-12 stage-selita-390-3 (radiation table) — at 390 px the cells break into very narrow words ("he-lium nu-cleus", "me-tres"), rows tall and cramped; not part of the diff — let the table scroll sideways in its own container or shorten the cells.
+- None new. (Earlier Minor on the radiation table at 390 px stands, not part of the diff.)
 
 ## Checked
-- Opened (fy8-12): example-390-1, stage-selita-390-3. Lifted formulas in the staged example and open solutions show the sentence mark inside the formula's last row; no lone mark, no clipping, rows aligned.
+- Opened fy8-12-stage-herata-390 (the changed task sits in the closed optional box under the Think about it question; layout intact, no clipping) and fy8-12-stage-tarkista-390-1 (surrounding stage). The word is plain text, no quantity or formula affected.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
