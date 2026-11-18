@@ -119,6 +119,11 @@ code, out = run(S / "figcat.py", "render", "fy1-4/scatter-points", "--lang", "xx
 expect("a translation draws the same figure with its own description", code == 0 and 'aria-label="A graph to scale: six points."' in out, out[:400])
 shutil.rmtree(T / "content/xx"); (T / "lang/xx.json").unlink()
 
+# a course unit's own Sovella set is a figure owner (work queue 0j): <unit>-sovella
+import figcat as _fc
+expect("a unit's Sovella figures.py is an owner", "fy9-liike-sovella" in [o[0] for o in _fc.owners()] and _fc.owner("fy9-liike-sovella") is not None, "owners()/owner()")
+expect("a unit's Sovella figure id resolves", _fc.exists("fy9-liike-sovella/" + next(iter(_fc.module(str(_fc.owner("fy9-liike-sovella")[0])).FIGURES))), "exists()")
+
 shutil.rmtree(T, ignore_errors=True)
 print("all figure catalog tests passed" if not failures else f"{len(failures)} FAILED: {', '.join(failures)}")
 sys.exit(1 if failures else 0)
