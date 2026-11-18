@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9e94a7d9332387f3
+CONTENT-HASH: 76dadb3bbd6deb39
+SCOPE: delta wording from 9e94a7d9332387f3 base 64d4935
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] open-exercises-L3-1280-3 — in the Formula row the first line holds two formulas and a sentence on one wrapped line; a break before "The saving is" would read better.
+- none
 
 ## Checked
-- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-11-open-exercises-L3-1280-3.png (Principle now three short paragraphs, Formula, Conversions, Substitution, Answer; even spacing, nothing clipped); fy3-11-open-tarkista-1280-2.png (feedback and hints open).
-- 390 px: fy3-11-stage-tarkista-390-2.png and fy3-11-stage-sovella-390-2.png (worked example stages 4-6: paragraphs separate, aligned rows fit the phone width, no overflow).
-- Hash run at start and end: unchanged.
+- Delta: fy3-4-open-exercises-L3-1280-1.png opened at readable size (task card with answer row, solution and substitution rows intact, no clipping); contact-sheet layout not changed by a shorter task text. Task texts read from the diff.
+- Captures current for this hash (stamp.txt). Changed text is one removed prefix or clause, no numbers, symbols or figures touched; the edited sentences open directly with the situation and end with the question as before.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
