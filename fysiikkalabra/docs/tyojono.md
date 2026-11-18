@@ -64,13 +64,12 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13…15)
-Varattu: claude/exercises-fy8-16 (fy8-16)
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
-lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682), fy8-12 (#685), fy8-13 (#688; ei taulukkotehtävää: ei VERIFIED-riviä, MAFY-taulukkoa ei löytynyt), fy8-14 (#692; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei FY8-riviä), fy8-15 (#700; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei fy8-15-riviä); tila: `python scripts/exercise_bank.py FY8`.
-Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila), fy8-16 ja FY9.
+lähde-URL:n kanssa. FY8 yksi luku per PR; tehty fy8-1, fy8-3, fy8-7, fy8-8 (#669), fy8-9 (#674), fy8-10 (#678), fy8-11 (#682), fy8-12 (#685), fy8-13 (#688; ei taulukkotehtävää: ei VERIFIED-riviä, MAFY-taulukkoa ei löytynyt), fy8-14 (#692; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei FY8-riviä), fy8-15 (#700; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei fy8-15-riviä), fy8-16 (#705; ei taulukkotehtävää: mafy-arvot.tsv:ssä ei fy8-16-riviä); tila: `python scripts/exercise_bank.py FY8`.
+FY8:n numeroidut luvut tehty. Jäljellä fy8-2 (kuva `fy8-2/lamp-spectrum`; tiedekatselmoinnin löydös elohopean tasoista: loki §6), fy8-4…fy8-6 (tarkista tila: `python scripts/exercise_bank.py FY8`) sekä FY9 (units, erillinen malli).
 Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä
-versiossa. Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
+versiossa. Tämä kohta jää, kunnes FY8:n jäljellä olevat ja FY9 on tehty.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei päde (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` 5.2).
