@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7bec1da5aa5477b3
+CONTENT-HASH: a0a4d834902f878c
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-13-L2-10, Kaava) — "$\theta = T - 273{,}15\,\text{K}$ (celsiusasteina)" still mixes units; $T = \theta + T_0$ solved for $\theta$ is cleaner (carried over).
 
 ## Checked
-- L2-10 Periaate: "Pisteet ovat lähes suoralla" now follows the fits guardrail and L2-09 (my previous polish point); the five points (75; 82; 89; 96; 102,5 kPa) are indeed nearly, not exactly, linear.
-- No number, answer or symbol changed; L2-10 still $p = 75 + 0{,}275\cdot(-73{,}15) = 54{,}9\,\text{kPa}$.
-- Every answers.py value lies inside its tolerance.
+- Diff recomputed character by character: the only change in the task texts is the removed prefix "Esimerkkiaineisto: " (first letter capitalised); no number, unit, symbol or condition changed.
+- Data, answers.py, tolerances and solutions are untouched (solutions.md only reflowed), so my earlier PASS recomputation stands.
+- Without the prefix the tasks still state their assumptions and uncertainties; the data are not claimed to be a real measurement beyond what the task text says (teacher-approved removal).
 - Hash same at start and end.
