@@ -355,7 +355,9 @@ Tässä $m_e = 0{,}000549\,\text{u}$ on elektronin massa. Malli jättää huomio
 Laske helium-4-ytimen ${}^{4}_{2}\text{He}$ sidosenergia ja sidosenergia nukleonia kohti. Käytä atomimassoja $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$ (AME2020). Käytä myös arvoa $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 
 <!-- vaihe -->
-**Tunnetut ja kysytty.** Järjestysluku eli protonien määrä on $Z = 2$ ja massaluku on $A = 4$. Neutroneja on siis $N = A - Z = 2$. Atomimassat ovat $m_\text{atomi} = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$. Kysytään sidosenergiaa $E_\text{B}$ ja sidosenergiaa nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina.
+**Tunnetut ja kysytty.** Järjestysluku eli protonien määrä on $Z = 2$ ja massaluku on $A = 4$. Neutroneja on siis $N = A - Z = 2$. Atomimassat ovat $m_\text{atomi} = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$.
+
+Kysytään sidosenergiaa $E_\text{B}$ ja sidosenergiaa nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina.
 
 <!-- vaihe -->
 **Periaate.** Ydin on kevyempi kuin sen erilliset nukleonit. Massavajetta $\Delta m$ vastaa sidosenergia $E_\text{B} = \Delta m\,c^2$. Lasketaan atomimassoilla. Kahdessa vetyatomissa on kaksi elektronia, kuten helium-4-atomissakin, joten elektronien massat kumoutuvat.
@@ -403,7 +405,10 @@ Toinen virhe on ajatella, että massa säilyy ydinreaktiossa kuten kemiassa. Ydi
 
 ## Tiivistelmä
 - Atomimassat ilmoitetaan atomimassayksikköinä. Yksikkö $1\,\text{u}$ on $\tfrac{1}{12}$ hiili-12-atomin massasta, eli $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$.
-- Ydin on kevyempi kuin sen erilliset nukleonit. Massavaje on $\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$.
+- Ydin on kevyempi kuin sen erilliset nukleonit. Massavaje on
+
+    $$\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$$.
+
 - Sidosenergia $E_\text{B} = \Delta m\,c^2$ tarvitaan ytimen hajottamiseen nukleoneiksi, ja se vapautuu ytimen muodostuessa. Kun sijoitetaan $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, energia tulee megaelektronivoltteina.
 - Sidosenergia nukleonia kohti on suurin, noin $8{,}8\,\text{MeV}$, raudan ja nikkelin kohdalla. Fuusio ja fissio vapauttavat energiaa, koska ne siirtävät nukleoneja tiiviimmin sidottuihin ytimiin.
 - Reaktioenergia on $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Massa ei säily ydinreaktiossa, vaikka massaluku ja varausluku säilyvät. Atomimassoilla beeta miinus -hajoamisessa $Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2$. Beeta plus -hajoamisessa vähennetään lisäksi $2m_e$.

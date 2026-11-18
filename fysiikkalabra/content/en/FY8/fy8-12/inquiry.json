@@ -25,7 +25,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: types of radiation",
-      "prompt": "An americium-241 nucleus decays by alpha decay. What is the alpha particle that leaves the nucleus?",
+      "prompt": "A radon-222 nucleus decays by alpha decay. What is the alpha particle that leaves the nucleus?",
       "choices": [
         {
           "text": "A helium nucleus with two protons and two neutrons.",

@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6462de917d30bb56
-Mode: delta (round 1)
+CONTENT-HASH: 77247589df7c4d0d
 
 ## Blocking
-- none
 
 ## Polish
-- content/fi-easy/FY8/fy8-7/inquiry.json:403 — "Energiaero jää kuituun sisäenergiaksi. Kuinka paljon lämpöä kuituun syntyy…": two words for one thing in neighbouring sentences is harder for an S2 reader; hints (:410), feedback (:419) and solution (:422) keep "lämpöä syntyy" — optional: "Energiaero jää kuituun sisäenergiaksi, eli kuitu lämpenee. Kuinka paljon kuidun sisäenergia kasvaa sekunnissa vähintään? Vastaa watteina."
-- glossary.json, term kvanttipiste (outside this lesson's files) — the definition still says "energiarako"; the lesson now says "energia-aukko" — use "energia-aukko" in the definition.
+- content/fi-easy/FY8/fy8-7/inquiry.json:37 — "Se on tasojen erotus." repeats the first sentence of the feedback; drop it or write "Siksi väri määräytyy tasoista."
 
 ## Checked
-- energiarako → energia-aukko applied in every place of lesson.md, inquiry.json, exit-ticket.json and meta.json key_concepts (no leftover form; grep).
-- Inflected forms correct: energia-aukosta, energia-aukkoa, energia-aukon; sentence-initial "Energia-aukko" capitalised.
-- The bold definition of the term in the theory still explains it at first use; the key concept in meta.json matches it.
-- Data task option, its feedback, the explain model answer and criterion use the theory's term, so the criteria still assess what is asked.
-- lämmöksi → sisäenergiaksi in the transfer task: numbers, answer, hints and solution steps unchanged; short sentences kept.
-- No number, formula, symbol or unit changed; nothing disclosed earlier; workload unchanged.
-- Hash identical at start and end.
+- Both stale feedback lines I flagged (correct option and the E_2 distractor) now say 633 nm and 1,96 eV; they match the prompt and answers.py key kert-633-eV.
+- hc/λ for 633 nm is 1,96 eV, so the number is right.
+- The He-Ne wording suits the laser topic. The task still asks for the transition photon and ties to fy8-6 and the new chapter's core idea.
+- The distractors still each carry one misconception: level energy instead of the difference, fixed direction, and emission only after a hit by another photon. Each feedback repairs its misconception.
+- The directional-photon feedback no longer refers to a lamp that is not in the task.
+- The correct option no longer says "kaikki ... samanvärisiä". It now states the principle (the level difference sets the colour), which is clearer.
+- No other 656, 650 or 1,89 values remain in the kertaus item. The 650 nm and 1,91 eV figures at line 480 belong to a different exercise (the green laser) and are correct there.
+- The lesson.md changes are presentation only, with figures approved; nothing further to judge.
+- Hash at start and end: 77247589df7c4d0d (fi-easy).

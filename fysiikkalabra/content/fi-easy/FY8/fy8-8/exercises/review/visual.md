@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 745807716c462177
-SCOPE: delta added-exercise from 193a1334ab5f0ba7 base 5b3ca4f81c77
+CONTENT-HASH: 0b3fd34bd2632c1c
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy8-8-L2-09 and L3-06 solutions — both tasks ask the student to draw a level diagram, but the solution only describes it in words (levels and arrows in one sentence); a small model level diagram (as the lesson's energy-level figure) would serve a visual learner better. Optional.
-- [Minor] L3-06 solution a) — one long paragraph (alternative, check, level list, arrows); split the alternative ("if A to ground were 1173,2") and the diagram description into their own paragraphs. Intermediate rows (E_C = 1173,2 + 826,1 + 347,1; 347,1 + 826,1 = 1173,2; the conversion chain) carry no keV unit.
-- [Minor] L3-06 part c) task text — at 390 to 1280 px the constants bracket can break right after the opening parenthesis (seen in en); keep "(h = ..." together.
+- none
 
 ## Checked
-- Captures opened (shots in lesson review/shots, regenerated for this hash): open-exercises-L2-1280-10, -11, -12 and L3-1280-8, -9, -10 in fi-easy (and the L2/L3 captures of the other two languages for the same tasks).
-- Spectrum figure beside both tasks: axes, units, peak labels legible; the figure gives both strong peaks and does not give the answer; the weak peaks come from the text and the table. Table renders with decimal separator of the language.
-- Maths: aligned chains, KaTeX units upright with thin space, answer boxed, reasonableness block separate. Set still reads as one (same solution layout as neighbours).
-- Not re-reviewed: the other 21 exercises (unchanged).
+- Delta: solutions.md, paragraph cut only (md-paragraphs). Opened open-exercises-1280-1 (level 1, solution blocks: Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus, Järkevyys), open-exercises-L2-1280-3 (aligned conversion rows, fraction display, unit maths), open-exercises-L3-1280-4 (data table, long task text, solution rows) in the lesson's shots folder (exercises has none of its own). No clipping, no horizontal overflow, labelled blocks distinct.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

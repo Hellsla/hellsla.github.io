@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2): new tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) and the changed intro, judged afresh; s1-s7 not re-judged. Hash at start and end identical. Language: fi-easy.
+CONTENT-HASH: fd4f0479d36b9c00
+SCOPE: delta: fi-easy diff since 49ba8f9. In this unit the new tasks are fy9-kaasut-s8 (p(T) lines) and s9 (isobaric expansion); s7 (OL3) is unchanged but was re-checked. Also the intro ("Seitsemän" -> "Yhdeksän", "Viimeinen" -> "Yksi tehtävistä") and fidelity to fi; s1-s6 not re-judged.
 
 ## Blocking
 (none)
 
 ## Polish
-- s9: heating air to about 1170 K (about 900 C) is still not plausible for a school cylinder; a smaller volume ratio or a one-line note ("the gas is idealised") would help. Not blocking, the task is explicitly an invented example.
+- s7 c model answer: the remark that salt water's density is a little higher and its c a little lower is fine. A note that the two effects partly cancel would round it off. This is optional.
 
 ## Checked
-- Round-1 blockers verified in the current text, not trusted: (1) s9 now says the movable piston carries weights that hold the pressure constant, "light" is gone, consistent with the constant 250 kPa in the figure; (2) s9 b and c both use two significant figures, answer.value 1172.6 K with tolerance 3 %: 1.2e3 K is 2.3 % off, so inside tolerance, and n = 0.10 mol gives 1203 K (2.6 %), also inside; (3) the intro no longer calls the last task the source task, it says only that one of the tasks is source-based; (4) the s9 c common-mistake line now reads "temperature not converted from Celsius to kelvins or the answer says it quadruples in Celsius (80 C)", which is correct.
-- Own recomputation (R = 8.31, 273.15): s8 a n = 100000*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa point gives the same); s8 b 60/100 = 0.60, so 40 % smaller, n_B 0.036 mol; s8 c 253.15/400*100 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; s9 b n = 0.1026 mol; s9 c T2 = 4*293.15 = 1172.6 K (880 K rise, 899.5 C). All match tasks.json answers and solutions.
-- s8: rigid vessel, constant V and n, so p proportional to T; comparison at equal T and V is physically sound; reading from two far-apart points; precision (two figures) matches the data; the -20 C part lies within the graph's range logic (253 K between 200 K and 400 K).
-- s9 d: heating at constant pressure, internal energy up, Q = dU + W, so Q > W; sign convention and energy wording correct. Magnitude check (0.04 mol of air per litre at 101 kPa, 2.5x pressure gives 0.10 mol) right.
-- Points add up per part, criteria match the parts, scope FY3, figure values are readable from the figures (V and 20 C given in the text).
-- Fidelity: numbers, criteria and physics identical across fi, en and fi-easy.
+- Recomputed in one script: s7 a 1600/4300 = 37,21 %; b P2 = 2700 MW, Q2 = 64,8 GWh = 2,33·10^14 J; c ΔT = 2,7·10^9/(4190·1000·57) = 11,31 K; d 563 K vs 283 K. s8 a n = 100e3·2,0e-3/(8,31·400) = 0,0602 mol (same from (200 K; 50 kPa)); b 1 - 60/100 = 40 %, nB = 0,0361 mol; c 100·253,15/400 = 63,3 kPa. s9 a W = 250 kPa·3,0 l = 750 J; b n = 0,1026 mol; c T2 = 1172,6 K (about 900 °C); d Q = ΔU + W > W. All keys are within tolerance.
+- Data: the TVO OL3 page (fetched 2026-11-18) gives 1600 MW, 4300 MW, 37 %, 290 °C, 57 m³/s and 13 TWh, as the task uses.
+- Figures: fy3-10 pt_lines (A 0,25 kPa/K, B 0,15 kPa/K, V = 2,0 l) and fy3-11 pv-isobaari (250 kPa, 1,0 to 4,0 l) match the readings.
+- Physics: the models are stated (rigid closed vessel, ideal gas, constant amount, constant pressure, temperatures in kelvin). The heat-engine argument: Q2 > 0 is required, not a loss, and heat flows by itself only from hot to cold. The Carnot-type ratio is only qualitative. The first law has the right sign convention. The FY3 scope is kept.
+- Rubrics: s8 4+4+3, s9 3+4+4+3, s7 2+3+4+3+3. The criteria match the parts and solutions. "Hyväksytään myös" covers the slope method, V/T constant and °C answers.
+- Fidelity to fi: ids, figures, points, criteria, answers, tolerances and every number in tasks and solutions are identical (compared with a script).
+- Intro: nine tasks, matching the set; "Yksi tehtävistä" is correct because s7 is no longer last.
+- The hash was the same at start and end.

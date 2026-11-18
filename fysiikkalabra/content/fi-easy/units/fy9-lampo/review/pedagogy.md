@@ -1,16 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c79ae27e3ce688a5
-SCOPE: delta (round 2): new tasks fy9-lampo-s7 and s8 and changed intro; other tasks not re-judged
+CONTENT-HASH: 689e602ef05c8a50
+SCOPE: delta: s7 (kuvaajasta kulmakerroin, c, vertailu alumiiniin, todellisuuden poikkeama) ja s8 (jään lämpenemis- ja sulamiskuvaaja, kolme vaihetta); tehtävien tekstit, osatehtävät, pisteytys, mallivastaukset ja uskollisuus fi-versiolle; unit.md ei ole muuttunut tästä versiosta.
 
 ## Blocking
-None. Round-1 items verified: -16 °C is stated in the s8 text; Sijoitus rows use decimal commas; s8 d asks "Kuinka suuri massa".
+
+(none)
 
 ## Polish
-- The solutions are word for word the Finnish ones (long "Periaate" sentences, "kaksi merkitsevää numeroa kuten luetuissa arvoissa"); fi-easy solutions could use shorter sentences like the task texts.
-- s8 d: same notes as fi (carried-forward error from b, no separate mark for recognising the flat part).
+
+- Polish: s8c:n Järkevyys-rivi on pitkä (23 sanaa) helppoon suomeen; jaa kahdeksi virkkeeksi.
 
 ## Checked
-- Task texts: short sentences, assumptions split into separate sentences (s7 "kaksi oletusta"), same terms as fi, no new hard words (NOTES.md §12).
-- Numbers, points, criteria and answers identical to fi (numeric tokens of s7/s8 solutions diffed equal); no solution structure revealed; solutions meet rule 7.
-- Figures and names consistent (fy3-6/heating-line, fy3-7/melting-curve); intro fits eight tasks.
-- Hash c79ae27e3ce688a5 at start and end (unchanged).
+
+- Uudet tehtävät vaativat itsenäistä soveltamista: tuntematon mutta uskottava tilanne, aineisto (kuvaaja tai kuva) luetaan itse, osat nousevat vaativammiksi (lukeminen, laskenta, perustelu tai ennuste).
+- Tehtävän otsikko tai teksti ei paljasta ratkaisumallia tai kaavaa; vihjeet eivät kerro vastausta.
+- Pisteytys on tarkka eikä anna pisteitä epäolennaisesta; sanalliset osat ovat havaittavia kriteereitä.
+- Mallivastaukset ovat täydelliset (annettu, kysytty, periaate, kaava, sijoitus, vastaus, järkevyys), yleiset virheet ja hyväksytyt vaihtoehdot mukana; laskin tarkistettu (vastaukset täsmäävät).
+- Vastaukset, pisteet ja kuva-viitteet ovat samat kuin fi-versiossa.
+- Lukutaso: lyhyet virkkeet, tuttu sanasto; muutama pitkä virke mallivastauksissa (Polish).
+- Hash alussa ja lopussa sama.

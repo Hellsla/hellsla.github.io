@@ -46,6 +46,7 @@ docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit test
                                                                rendered into the pages, and their site/ diff names them
   docs/*.md and docs/<dir>/**, *.md outside content/, tests/models/**, news/ newsletter/ tips/   nothing
   docs/visual-baseline.tsv                                     full (decides what publishes)
+  templates/sw.js, templates/offline.js, site/sw.js, site/offline.js                shared (every page registers the worker): smoke; scripts/test_offline.py runs in every run
   scripts/, templates/, other site/ files (site.css, lesson.js, vendor/ ...), curriculum.json, competencies.json,
   glossary.json, local-courses.json, the workflow file                                             full
 The site/ rows are sound because CI fails unless the committed site/ is exactly a fresh render of the sources:

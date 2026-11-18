@@ -224,9 +224,9 @@ Mieti ainakin näitä:
 Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle.
 
 ::: tuki O
-Voit käyttää esimerkiksi tällaista taulukkoa:
+Voit käyttää esimerkiksi tällaista taulukkoa. Kokonaisvalaistus $E_\text{kok}$ luetaan lamppu päällä ja taustavalo $E_\text{tausta}$ lamppu sammutettuna:
 
-| $r\ (\text{m})$ | $E_\text{kok}\ (\text{lx})$, lamppu päällä | $E_\text{tausta}\ (\text{lx})$, lamppu pois | $E = E_\text{kok} - E_\text{tausta}\ (\text{lx})$ | $\dfrac{1}{r^2}\ \left(\dfrac{1}{\text{m}^2}\right)$ |
+| $r\ (\text{m})$ | $E_\text{kok}\ (\text{lx})$ | $E_\text{tausta}\ (\text{lx})$ | $E = E_\text{kok} - E_\text{tausta}\ (\text{lx})$ | $\dfrac{1}{r^2}\ \left(\dfrac{1}{\text{m}^2}\right)$ |
 |---|---|---|---|---|
 | | | | | |
 | | | | | |

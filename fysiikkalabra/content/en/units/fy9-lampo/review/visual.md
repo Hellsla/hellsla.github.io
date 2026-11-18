@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c79ae27e3ce688a5
-SCOPE: delta (round 2): new Sovella tasks fy9-lampo-s7 and s8 (figures fy3-6/heating-line, fy3-7/melting-curve) and the changed intro; other tasks not re-judged. Language: en.
+CONTENT-HASH: e2d1a4f13b4f84c1
+SCOPE: delta: new Sovella tasks s7 and s8 (figures from the catalog, aligned calculation rows, LaTeX units, English decimal points) judged at 390 px, check_layout at 360 px; other tasks not re-judged
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy3-6/heating-line and fy3-7/melting-curve: tick labels are small at 390 px (about 10 px) and the plot area is short; legible, no information lost.
+- [Minor] s7/s8 figures (fy3-6/heating-line, fy3-7/melting-curve) — tick numbers are about 10 px at 390 px, readable but small — catalog figures, leave to a figure-fixes pass; s8 graph has no marker for the point read at 120 kJ, which is fine since it is only in the text.
 
 ## Checked
-- Round 1: the previous visual.md covered an earlier delta (items 18/19) and listed no blocking item; the three named round-1 fixes were verified in the current text: s8 start temperature -16 °C stated in the task text; Sijoitus rows use decimal commas (fi/fi-easy; en uses points); s8 d asks for the mass (sulanut massa / melted mass).
-- fi captures opened (contact sheet 2, then exercises-390-45, 46, 47, 48, 50, 54, 55, 57, 58, 63, intro-390-1): s7 and s8 task text, figures (axes with quantity and unit, data markers, red/orange line), aligned Sijoitus rows, LaTeX units with thin space, answer boxes, Järkevyys blocks; nothing clipped or overflowing.
-- Intro (Miksi, goals, Pohjatiedot) reads cleanly at 390 px.
-- en and fi-easy are cut like fi (same rows and starting data); check_layout.py fy9-lampo --width 360 OK for fi, en and fi-easy (only the 2 known clipped formulas).
-- Hash unchanged at start and end.
+- Unit page captures made (screenshot.py fy9-lampo --lang en); packet read; page opened at 390 px with every box open, tasks s7 and s8 captured as element screenshots (statement, figure, parts, model answer, substitution, answer, reasonableness).
+- check_layout.py fy9-lampo --width 360: OK for en (known clipped formulas are old rows, none in s7/s8).
+- s7 (heating line graph, a–d) and s8 (melting curve, a–d): statement, graph axes with units (T in °C, t in s / Q in kJ), data markers distinct from the line, decimal points, LaTeX units, aligned rows (c = ... rows with = in one column), answer boxes, reasonableness blocks. Opening and intro unchanged in the diff apart from tasks; the surrounding older tasks (Radio mast, Power cut) glanced at for layout only.
+
+## Scores
+illustrations 5 · typography 5 · Finnish (English prose) 4 · accessibility 5

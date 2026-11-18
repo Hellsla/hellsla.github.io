@@ -25,7 +25,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: säteilyn lajit",
-      "prompt": "Amerikium-241-ydin hajoaa alfahajoamisella. Mikä on ytimestä lähtevä alfahiukkanen?",
+      "prompt": "Radon-222-ydin hajoaa alfahajoamisella. Mikä on ytimestä lähtevä alfahiukkanen?",
       "choices": [
         {
           "text": "Heliumydin, jossa on kaksi protonia ja kaksi neutronia.",

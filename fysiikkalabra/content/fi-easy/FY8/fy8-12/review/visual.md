@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: aaa75c66831fbfcc
+CONTENT-HASH: e716733e7904e15e
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
+- none
 
 ## Checked
-- batch delta review, round 2: no capture of this lesson was opened. Judged by inference from the shared mathlayout.with_punct build, which I saw working in fy8-4, fy8-8, fy8-13 (and fy8-1 theory); this lesson's own lifted formulas were not individually seen. The lesson's own diff (formula names, reflow) was not inspected in a capture.
+- Delta (radon-222 in the optional Kertaa prompt, paragraph cut): fy8-12-stage-herata-390 (Pohdinta, layout intact, Kertaa box closed), fy8-12-open-ennusta-1280-1 (card layout). The prompt text is plain Finnish, no plain quantity.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

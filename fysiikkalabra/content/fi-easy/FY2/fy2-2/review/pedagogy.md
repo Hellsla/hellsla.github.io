@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: aae9dd26b4f53cb2
+CONTENT-HASH: 185e6302bbcff16e
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: the retrieval now asks about the opening cyclist braking; it does not touch the Ennusta questions (petrol vs food, Sun vs humankind). The paragraph splits in the worked example keep the same words and numbers.
+batch delta review: the find-the-error prompt now shows the student's conversion as two aligned rows in a display block; same numbers, text and distractors, so the task and its feedback are unchanged and the error is easier to see on a phone. Figure captures unchanged in content.

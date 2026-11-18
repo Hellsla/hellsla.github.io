@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: daea67607c8150ac
+CONTENT-HASH: 6ff1dcd6c1f24b76
 
 ## Blocking
 None.
@@ -7,7 +7,5 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-11-16, round 2)
-Diff `git diff origin/main` of investigation.md read with surrounding context. Typography/wording branch; no figure changed.
-- Data table headers: LaTeX spacing `\ ` -> `\,` between number and unit; repetition columns renamed *mittaus 1–3* (same meaning).
-- Temperature model $v = v_0\sqrt{T/T_0}$ with $v_0 \approx 331\,\text{m/s}$, $T_0 = 273{,}15\,\text{K}$ = $0\,{}^\circ\text{C}$: the degree sign now uses `{}^\circ` (fixes the KaTeX parse error); values and conditions (dry air, kelvins) unchanged and correct.
+## Checked (delta 2026-11-18)
+Table headers only: $(t_2 - t_1)_k$ with the subscript explained in the sentence before the table, $\overline{t_2 - t_1}$ for the mean (overline is not used for another quantity in this investigation). Units and meaning unchanged.

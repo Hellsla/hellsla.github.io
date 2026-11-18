@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Recap: absorption lines",
-      "prompt": "When white light passes through hydrogen gas, dark lines are left in the spectrum at exactly certain wavelengths. Why exactly those?",
+      "prompt": "The light of a distant galaxy passes through hydrogen gas, and dark lines are left in the spectrum at exactly certain wavelengths. Why exactly those?",
       "choices": [
         {
           "text": "A hydrogen atom absorbs only photons whose energy is the difference between two of its energy levels.",

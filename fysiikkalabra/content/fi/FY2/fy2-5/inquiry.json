@@ -84,7 +84,7 @@
       "choices": [
         {
           "text": "Polttopuun luku on suurempi, koska puu on polttoainetta ja suklaa vain ravintoa.",
-          "feedback": "Ruokakin on kemiallisen energian varasto. Muunna suklaan luku samaan yksikköön: $2200\\,\\text{kJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$, joten luku on $2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} = 22\\,\\text{MJ/kg}$. Se on suurempi kuin puun $15\\,\\text{MJ/kg}$."
+          "feedback": "Ruokakin on kemiallisen energian varasto. Muunna suklaan luku samaan yksikköön: $2200\\,\\text{kJ} = 2{,}2\\,\\text{MJ}$ ja $100\\,\\text{g} = 0{,}100\\,\\text{kg}$, joten luku on $$\n\\begin{aligned}\n&2{,}2\\,\\text{MJ} : 0{,}100\\,\\text{kg} \\\\\n&= 22\\,\\text{MJ/kg}\n\\end{aligned}\n$$ Se on suurempi kuin puun $15\\,\\text{MJ/kg}$."
         },
         {
           "text": "Suklaan luku on suurempi, mutta ravintoarvomerkintä ja lämpöarvo kuvaavat eri asiaa.",
@@ -276,7 +276,7 @@
       "hints": [
         "Kuinka paljon energiaa kaasusta vapautuu palaessaan? Mikä laki kertoo sen?",
         "Vapautuva energia on $E_\\text{sisään} = Hm$. Hyötysuhde on $\\eta = \\dfrac{E_\\text{hyöty}}{E_\\text{sisään}}$ (luku *Hyötysuhde*), josta $E_\\text{hyöty} = \\eta\\, E_\\text{sisään}$.",
-        "$E_\\text{sisään} = 46\\,\\text{MJ/kg} \\cdot 0{,}230\\,\\text{kg}$ ja $E_\\text{hyöty} = 0{,}60 \\cdot E_\\text{sisään}$."
+        "$$\n\\begin{aligned}\nE_\\text{sisään} &= 46\\,\\text{MJ/kg} \\\\\n&\\cdot 0{,}230\\,\\text{kg}\n\\end{aligned}\n$$ ja $E_\\text{hyöty} = 0{,}60 \\cdot E_\\text{sisään}$."
       ],
       "mistakes": [
         {

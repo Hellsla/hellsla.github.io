@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c608f2d0b5a85f56
-SCOPE: delta added-exercise from e9f304fedd91631d base f08a2494a45d
+CONTENT-HASH: 6ed6cdfba3595d98
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy1-3-L2-09 b) — "press release rounds to 20 parts per million" is a source claim a student cannot check from the task; say it is from the page or drop it.
-- exercises.json fy1-3-L2-09 — four parts including a long source reading; consider telling the student to read only the press release and the updates for part c.
+- solutions.md fy1-3-L2-09 b): the earlier polish stands. The press-release rounding to "20 parts per million" is a source claim the student cannot check from the task; name the source page or drop it.
+- solutions.md fy1-3-L1-09 (density, Sijoitus): the mean is now a \begin{matrix} inside a fraction numerator; check it at 360 px, a simpler split of the sum above the fraction would read more easily.
 
 ## Checked
-- t = 7.30e5/2.998e8 = 2.435 ms; 60 ns / t = 2.46e-5 = 0.002464 %; c*60 ns = 18 m; answer and tolerance agree.
-- 18 m vs 20 cm distance uncertainty is a good argument that the timing, not the distance, was suspect.
-- Systematic vs random is justified from the lesson's own ideas (repetition does not remove it); thermometer analogy is accessible.
-- Solution has all seven steps; reasonableness check consistent.
-- Distinct from L2-05..08 (new real-case error analysis).
+- Delta judged: solution steps cut into one idea per paragraph (L1-02, L1-03, L1-05, L2-01, L2-04, L2-05, L2-09, L3 tasks); same words, numbers, units and order, so every step stays whole and easier to follow.
+- Cuts fall where the subject changes (principle / extra remark, answer / what to do if no reason is found); Model answer paragraphs in L2-09 a)-d) and the pendulum task read as a clear sequence.
+- Levels, task texts and answers untouched; no solution step lost.

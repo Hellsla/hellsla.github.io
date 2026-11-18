@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f08e184ae3cb1022
+CONTENT-HASH: 49dfaa86f7573fbd
 
 ## Blocking
 - none
@@ -8,20 +8,11 @@ CONTENT-HASH: f08e184ae3cb1022
 - none
 
 ## Checked
-- This review covers fy1-3-L2-09 only (a new exercise, judged in full). The other diff line in L1-09 is a spacing change only, with the same numbers. The hash was f08e184ae3cb1022 at the start and at the end.
-- I recomputed it myself:
-  - t = s/c = 7,30·10⁵ m / 2,998·10⁸ m/s = 2,4350·10⁻³ s.
-  - Δt/t = 6,0·10⁻⁸ s / 2,435·10⁻³ s = 2,464·10⁻⁵ = 0,002464 %.
-  - cΔt = 17,99 m ≈ 18 m.
-  - 18 m / 0,20 m ≈ 90, which the text calls "lähes sata".
-  - t/Δt ≈ 40 600.
-- answers.py gives 0.0024641, which matches the key 0.002464. The tolerance of 0,03 accepts the two-figure answer 0,0025 % (1,5 % off). Two significant figures, from 60 ns, is the right count.
-- I checked the CERN page (fetched 2026-11-16). It has the 730 km distance with a 20 cm uncertainty, a time of flight better than 10 ns using GPS and atomic clocks, and over 15 000 events. It gives "20 parts per million" (the solution's 25 ppm is computed from 60 ns, and it says how the two relate). It also has:
-  - the two possible effects found later: the GPS synchronisation oscillator and the optical fibre connector to the master clock;
-  - ICARUS's result consistent with c (16 March 2012);
-  - Borexino, ICARUS, LVD and OPERA all consistent with c, and the "faulty element of the experiment's fibre optic timing system".
-  The model answers a) and c) match the page.
-- The systematic vs random reasoning follows the guardrails. Repeating reduces random error, not systematic error, and independent apparatus is needed.
-- d): the anomalous result is checked and not discarded, and the theory would change only after independent replication. The thermometer example (80 °C at normal pressure) is sound.
-- The light time is computed "tyhjiössä", as the task states. The neutrino's path through rock does not affect the comparison (C).
-- The scope (measurement, error types, s = ct) is FY1.
+- Delta: every solutions.md change except one in L1-09 only splits a paragraph. This covers L1-06, L1-07 (turntable), L2-06 (outlier), L2-08 (densities), L2-07 (pendulum masses) and L2-09 a)–d) (OPERA). The wording, numbers and units are the same, and no claim or condition was lost when a paragraph was cut.
+- L1-09: the mean is now an aligned block with a two-row numerator, and it still has the same values. I recomputed it: (1,004 + 1,012 + 1,008 + 1,014 + 1,012)/5 = 1,010 g/cm³. The deviation is (1,010 − 0,998206)/0,998206 = 1,18 %, which matches 1,18 % and the answer 1,2 %.
+- L2-07 is unchanged: 71,5/5 = 14,30 s, 71,8/5 = 14,36 s and the difference is 0,06 s.
+- The guardrails still hold in the split paragraphs:
+  - Separate intervals do not prove either result wrong, and an uncertainty estimate is not a sure limit (L2-08).
+  - A difference smaller than the uncertainty does not prove the two values equal (L2-07).
+  - An outlier is checked, not discarded (L2-09 d), and it is left out only for a recorded reason (L2-06).
+- The hash was 49dfaa86f7573fbd at the start and at the end.

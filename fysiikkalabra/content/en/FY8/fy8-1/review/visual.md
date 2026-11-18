@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f22d191b59d568a6
+CONTENT-HASH: ca526143ca8f4ef0
 
 ## Blocking
 (none)
@@ -8,4 +8,7 @@ CONTENT-HASH: f22d191b59d568a6
 (none)
 
 ## Checked
-- batch delta review, en: opened theory-1280-3 (the 1 eV block, the threshold-wavelength block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.
+- delta, en: opened review/shots/fy8-1-stage-herata-390.png (the changed retrieval task sits in a closed optional box; layout intact, UV-C wording matches the phenomenon above) and fy8-1-open-ennusta-1280-1.png (surrounding page, maths and layout fine). The inquiry change is wording and numbers only (54\,\text{nm}$, .2 \cdot 10^{15}\,\text{Hz}$ in LaTeX, decimal point in English); lesson.md is a paragraph cut only. Hash re-run at the end: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

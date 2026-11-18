@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eeccff04aba30fbe
-SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
+CONTENT-HASH: 1cb678e66328f853
 
 ## Blocking
 - none
@@ -9,8 +8,7 @@ SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
 - none
 
 ## Checked
-- fi-easy capture open-exercises-L2-1280-15 (L2-10, changed Järkevyys/Reasonableness block): units upright, $16\,\mu\text{Sv/h}$ and $15\,\mu\text{Sv/h}$ set cleanly, no clipping; the sentence on interpolation and the convex curve reads clearly in fi-easy.
-- No 360 px capture exists in the packet's inventory; 360 px taken from the passing layout check (short prose, no display maths). Rest of the set unchanged since the round-2 PASS.
+- Delta (solutions.md, md-paragraphs): fy8-13-open-exercises-1280-1 (13-1) and fy8-13-open-exercises-L2-1280-8 (a multi-paragraph solution with a/b/c parts and chains): paragraphs cut cleanly, chains aligned, units upright, nothing clipped. Captures read from the lesson's review/shots (the exercise review folder has none of its own).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

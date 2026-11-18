@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 64d355b8acb5b36a
-SCOPE: delta added-exercise from 0afbb0e960a7159d base 5b3ca4f81c77
+CONTENT-HASH: 950e9e54b7eb5103
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-12-L3-07 solution (Vastaus) — suorat lainausmerkit "enintään" — käytä ”enintään”.
+- [Minor] L1-07 answer input — unit label "1/min" is plain beside the box (interface, not a lesson text); the task text and solution use LaTeX. No change asked.
 
 ## Checked
-- Delta: L2-09 (capture fi-easy L2-1280-14) and L3-07 (L3-1280-13), solutions open; figure checked in the fi capture (same shared figure).
-- Task texts explain "nettopulssitaajuus" and the horizontal axis before asking; steps in order, short sentences, physics unchanged.
-- Formula rows aligned, units upright, no clipping.
+- Delta (unit "pulssia/min" -> "1/min"): fy8-12-open-exercises-1280-6 and -7 (L1-06, L1-07, solution open, unit row and chain aligned, no clipping), fy8-12-open-exercises-L2-1280-14 (L2-09 solution rows aligned, units upright).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

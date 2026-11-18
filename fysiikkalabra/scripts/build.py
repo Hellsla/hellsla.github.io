@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -803,7 +803,7 @@ def chapter_eyebrow(html, code, n):
     return html.replace("<h1>", f'<span class="eyebrow ch-no">{esc(code)} · {T("site.chapter_n", n=n)}</span><h1>', 1)
 
 
-def exercise_html(e, solution_html, read=None, core=False, num=None):
+def exercise_html(e, solution_html, read=None, core=False, num=None, level=None):
     numeric = isinstance(e["answer"], (int, float))
     ans = nbsp_units(f"{fi(answers_shown.fallback(e['answer']) if numeric else e['answer'])} {e.get('unit', '')}".strip())
     if numeric and solution_html:                                                  # the solution's own rounded answer
@@ -831,6 +831,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
                                               + (f" {i + 1}" if len(hints) > 1 else "") + f'</summary><div>{nbsp_units(render_md(h))}</div></details>'
                                               for i, h in enumerate(hints)) + "</div>"
     tag = f'<span class="ex-core">{T("lesson.core_exercise")}</span>' if core else ""
+    if core and level in ("1", "2"): tag += f'<span class="ex-core ex-level">{T("lesson.core_level_" + level)}</span>'   # Perus / Soveltava beside the core tag (teacher 2026-11-14)
     given = e["id"] in ASSIGNED_IDS   # an assigned task (annetut.json, teacher 2026-11-07): "Annettu" beside its number, a green left edge
     if given: tag = f'<span class="ex-core ex-given">{T("lesson.assigned_exercise")}</span>' + tag
     text = e["text"]
@@ -838,7 +839,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None):
     if text.startswith(ext): text, tag = text[len(ext):].lstrip(), tag + f'<span class="ex-core ex-ext">{T("lesson.extension_exercise")}</span>'
     written = "" if numeric else ' data-written="1"'   # a written task opens its answer once the student has written in the editor (lesson.js part 8; the tick "Olen tehnyt ratkaisun" removed, teacher 2026-11-06)
     cls = " ".join(c for c, on in (("core", core), ("assigned", given)) if on)
-    return (f'<li id="{e["id"]}"{" class=" + chr(34) + cls + chr(34) if cls else ""}{written}' + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
+    return (f'<li id="{e["id"]}"{" class=" + chr(34) + cls + chr(34) if cls else ""}{written}' + (f' data-level="{level}"' if level else "") + (f' data-num="{num}">' + number_label(num) if num else ">") + f'{tag}{exercise_text(nbsp_units(text), f"{e['id']}-q")}{fig}{check}'
             f'<details class="answer"><summary>{T("lesson.answer")}</summary><p>{ans}</p></details>{sol}</li>')
 
 
@@ -1190,14 +1191,23 @@ def build_language(lang):
         ex_html = "" if ex else f'<p class="notice" role="note">{T("lesson.exercises_pending")}</p>'
         core = core_ids(ex)
         ch_no = chapter_no(meta["course"], meta["id"]); k = 0   # running number over all levels: 6-1 ... 6-12 (teacher 2026-11-04)
+        # The core exercises (levels 1 and 2) open in one card under the heading, level 1 first; the other tasks of each level
+        # stay in that level's closed box. Every task is in the page once, with its level in data-level (work queue 11, U1).
+        nums, k = {}, 0
         for lvl, items in ex.items():
+            for e in items: k += 1; nums[e["id"]] = f"{ch_no}-{k}" if ch_no else None
+        def task(e, i, lvl, core_card=False):
+            show = publish == "all" or (publish == "first" and i == 0)
+            return exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read, core=e["id"] in core,
+                                 num=nums[e["id"]], level=lvl[-1])
+        core_items = [task(e, i, lvl) for lvl in ex if lvl[-1] in "12" for i, e in enumerate(ex[lvl]) if e["id"] in core]
+        if core_items: ex_html += '<div class="core-card"><ol>' + "".join(core_items) + "</ol></div>"
+        for lvl, items in ex.items():
+            rest = [(i, e) for i, e in enumerate(items) if not (lvl[-1] in "12" and e["id"] in core)]
+            if not rest: continue
             ex_html += (f"<details class=\"level\"><summary>{T('lesson.level', n=lvl[-1])} · {T('lesson.level_kind_' + lvl[-1])} "
-                        f"<span class=\"count\">{T.count('lesson.level_count', len(items))}</span></summary><p class=\"level-lead\">{T('lesson.level_lead_' + lvl[-1])}</p><ol>")
-            for i, e in enumerate(items):
-                show = publish == "all" or (publish == "first" and i == 0); k += 1
-                ex_html += exercise_html(e, solutions.get(e["id"]) if show else None, None if isinstance(ex_src, WorkTree) else ex_src.read, core=e["id"] in core,
-                                         num=f"{ch_no}-{k}" if ch_no else None)
-            ex_html += "</ol></details>"
+                        f"<span class=\"count\">{T.count('lesson.level_count', len(rest))}</span></summary><ol>")
+            ex_html += "".join(task(e, i, lvl) for i, e in rest) + "</ol></details>"
         exit_q = json.loads((folder / "exit-ticket.json").read_text())
         exit_items = "<ol>" + "".join(
             f"<li>{nbsp_units(q['q'])}<details class=\"answer\"><summary>{T('lesson.answer')}</summary><div class=\"answer-body\">{nbsp_units(render_md(mathlayout.display_chains(q['a'])))}</div></details></li>"
@@ -1672,8 +1682,12 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
+# Service worker (work queue 17a PR 1): site/sw.js at the root covers the language folders too. Its text carries the hash of the shared
+# files, so a new release is a new worker. FL_SW_KILL=1 publishes the self-removing worker instead (docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md).
+if os.environ.get("FL_SW_KILL") == "1": (SITE / "sw.js").write_text((TPL / "sw-kill.js").read_text())
+else: (SITE / "sw.js").write_text((TPL / "sw.js").read_text().replace("__FL_BUILD__", hashlib.sha256("".join(sorted(_ver.values())).encode()).hexdigest()[:12]))
 _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f in _ver) + r')(?:\?v=[0-9a-f]*)?"')
 for _page in SITE.rglob("*.html"):
     if "vendor" in _page.relative_to(SITE).parts: continue
@@ -1685,7 +1699,7 @@ for _page in SITE.rglob("*.html"):
     if 'class="kc-item"' in _new: _new = tablefit.kc_items(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # the card list without scripts (work queue 8d)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js"] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "sw.js"] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
