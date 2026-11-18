@@ -41,8 +41,8 @@
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Coulombin laki",
    "maaritelma": "Kahden pistevarauksen välinen voima.",
-   "kaava": "F = k\\dfrac{q_1 q_2}{r^2}",
-   "kaava_puhe": "F on k kertaa q yksi q kaksi jaettuna r toiseen"
+   "kaava": "F = k\\dfrac{\\lvert q_1 q_2 \\rvert}{r^2}",
+   "kaava_puhe": "F on k kertaa q yksi kertaa q kaksi itseisarvo, jaettuna r toiseen"
   },
   {
    "id": "fy6-sahkokentta",

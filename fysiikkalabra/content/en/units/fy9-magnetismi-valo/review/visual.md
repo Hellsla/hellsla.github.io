@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 69c269589f348d38
-Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
+CONTENT-HASH: b48cf7172d7bb274
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Substitution split); older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+(none) The round-1 Major is fixed: the en s9 b) Substitution is now aligned rows `W = (2.4 V)²/8.0 Ω · 0.40 s` / `+ (1.8 V)²/8.0 Ω · 0.20 s` / `= 0.72 W · 0.40 s` / `+ 0.41 W · 0.20 s` / `= 0.29 J + 0.082 J` / `≈ 0.37 J`. Measured at 360 px in Chrome on the built page: the formula blocks fit (scrollWidth = clientWidth), right edge under 320 px, no horizontal scroll. Intermediate 0.41 W now matches Reasonableness; decimal point correct.
 
 ## Polish
-- C `sovella/tasks.json` s7 d: "The energy of one proton beam corresponds to the kinetic energy of how many such cars?" → "How many such cars have, together, the same kinetic energy as one proton beam?"
-- C s7 a, Answer: "does not however tell how far" → "does not, however, show how far".
-- C s7 e Model answer: the second paragraph is still about 120 words (21 lines at 390 px); it could break once more at "Because the force is perpendicular to the direction of motion". Not required.
+- [Minor] s9 b) Reasonableness — the unit chain stays inline; no problem at 360 px.
+- [Minor] "0.60–0.80 s" can still break after the dash; not blocking.
 
 ## Checked
-- Hash at start and end: 69c269589f348d38 (captures re-made for this hash). `git diff -w c502cb9e26`: only the three paragraph breaks in s7 e of solutions.md, no word changed.
-- s7 e Model answer at 390 px: `stage-exercises-390-60`, `-61`, `-62`: four separate paragraphs (source and magnets / force perpendicular, no work / current and superconductivity / $r = \tfrac{mv}{qB}$ not applicable), each of readable length with a visible gap; inline $P = RI^2$, $RI^2 = 0$, $1.9\,\text{K}$ whole; nothing clipped; Common mistakes and Also accepted lists intact. Round 1's text-wall remark is resolved.
-- s7 at 1280 px: `stage-exercises-1280-45` (Principle, the four paragraphs, Common mistakes), `-46` (Also accepted, rubric part a): card and reading column unchanged.
-- Contact sheet `contact-8` (#85–#96): parts c, d, the rest of the solution, the rubric and the following Test and assess stage as in round 1; nothing else moved.
+- en solutions.md s9 b source text, and the built page at 360 px (formula block widths and edges). Older tasks and 1280 px not opened.
+
+## Scores
+illustrations 4 · typography 4 · English 4 · accessibility 4

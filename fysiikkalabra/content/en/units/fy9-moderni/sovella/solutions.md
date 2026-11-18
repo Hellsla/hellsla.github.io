@@ -458,3 +458,184 @@ $$ That is about $35$ nanograms.
 - In part b, the ratio the other way round, $\tfrac{E_\text{l}}{E_\text{f}} \approx 0.651$, when it is interpreted correctly: the energy delivered to the fuel was about $65\,\%$ of the released energy.
 - In part c, the change in temperature directly in degrees Celsius, $\Delta T = 80\,{}^\circ\text{C}$, because a temperature difference is the same in kelvins and in degrees Celsius.
 - In part c, the answer to three significant figures, $9.40\,\text{kg}$, when the temperatures are read as exact values.
+
+## fy9-moderni-s8
+
+### a)
+**Given:** a graph of the dose rate $\dot{H}$ as a function of the wall thickness $d$ and the model $\dot{H} = \dot{H}_0\,e^{-\mu d}$
+**Find:** the attenuation coefficient $\mu$
+**Principle:** The attenuation of gamma radiation in matter is exponential, so the dose rate falls by the same factor for every equal increase in the thickness of the wall (chapter *Radiation dose and radiation safety in Finland*). The coefficient $\mu$ is found by solving the equation using two points of the graph.
+**Reading the graph:** Two points far apart are read from the graph: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(10\,\text{cm};\ 20\,\mu\text{Sv/h})$. The first one is the dose rate without the wall, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
+**Formula:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$, so $\dfrac{\dot{H}_0}{\dot{H}} = e^{\mu d}$ and $\mu = \dfrac{\ln(\dot{H}_0 / \dot{H})}{d}$
+**Conversions:** None needed: the thickness is in centimetres and the dose rates in microsieverts per hour, and $\mu$ gets the unit $1/\text{cm}$.
+**Substitution:** $$
+\begin{aligned}
+\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 20\,\mu\text{Sv/h})}{10\,\text{cm}} \\
+&= \dfrac{\ln 4}{10\,\text{cm}} \\
+&= \dfrac{1.386}{10\,\text{cm}} \\
+&\approx 0.14\,\dfrac{1}{\text{cm}}
+\end{aligned}
+$$
+**Answer:** $\mu \approx 0.14\,\dfrac{1}{\text{cm}}$. The result has two significant figures, like the values read from the graph. The following parts use the more precise value $\mu = 0.1386\,\dfrac{1}{\text{cm}}$ so that the rounding does not grow.
+**Reasonableness:** At $d = 1/\mu \approx 7.2\,\text{cm}$ the dose rate has fallen by the factor $1/e \approx 0.37$. The half-value layer is $\dfrac{\ln 2}{\mu} \approx 5.0\,\text{cm}$, and in the graph the dose rate at $5\,\text{cm}$ is indeed about $40\,\mu\text{Sv/h}$, half of the initial value.
+
+### b)
+**Given:** $\dot{H}_0 = 80\,\mu\text{Sv/h}$, $\mu = 0.1386\,\dfrac{1}{\text{cm}}$ and $d = 18\,\text{cm}$
+**Find:** the dose rate $\dot{H}$ behind the wall
+**Principle:** The model $\dot{H} = \dot{H}_0\,e^{-\mu d}$ holds over the whole range of the graph (chapter *Radiation dose and radiation safety in Finland*). The thickness $18\,\text{cm}$ is within the range of the graph, so the model can be used directly.
+**Formula:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$
+**Conversions:** None needed. The exponent $\mu d$ has no unit.
+**Substitution:** $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot e^{-0.1386\,\text{1/cm} \cdot 18\,\text{cm}} \\
+&= 80\,\mu\text{Sv/h} \cdot e^{-2.495} \\
+&= 80\,\mu\text{Sv/h} \cdot 0.0825 \\
+&\approx 6.6\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Answer:** $\dot{H} \approx 6.6\,\mu\text{Sv/h}$, two significant figures like the dose rate $80\,\mu\text{Sv/h}$ and the thickness $18\,\text{cm}$.
+**Reasonableness:** The wall is $18\,\text{cm} : 5.0\,\text{cm} = 3.6$ half-value layers, so the dose rate is $80 \cdot 0.5^{3.6} \approx 6.6\,\mu\text{Sv/h}$. It lies between the graph values at $15\,\text{cm}$ ($10\,\mu\text{Sv/h}$) and $20\,\text{cm}$ ($5.0\,\mu\text{Sv/h}$), as it should.
+
+### c)
+**Given:** $\dot{H} = 6.6\,\mu\text{Sv/h}$ from part b, $1.5\,\text{h}$ per working day and $220$ working days, maximum dose $1.0\,\text{mSv}$ a year
+**Find:** the annual dose $H$ and its comparison with the maximum dose
+**Principle:** When the dose rate is constant, the dose is the dose rate multiplied by the time spent (chapter *Radiation dose and radiation safety in Finland*).
+**Formula:** $H = \dot{H}\,t$, where $t = 1.5\,\text{h} \cdot 220$
+**Conversions:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Substitution:** $$
+\begin{aligned}
+t &= 1.5\,\text{h} \cdot 220 \\
+&= 330\,\text{h}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+H &= 6.6\,\mu\text{Sv/h} \cdot 330\,\text{h} \\
+&\approx 2180\,\mu\text{Sv} \\
+&\approx 2.2\,\text{mSv}
+\end{aligned}
+$$
+**Answer:** The person's annual dose is about $2.2\,\text{mSv}$. It is more than twice the maximum dose $1.0\,\text{mSv}$, so the maximum dose is exceeded and the wall is too thin.
+**Reasonableness:** The time spent is $330\,\text{h}$, about $4\,\%$ of the hours of a year, and the dose rate is about $6.6\,\mu\text{Sv/h}$. The dose is of the order of millisieverts, which fits staying behind a wall like this.
+
+### d)
+**Given:** $\dot{H}_0 = 80\,\mu\text{Sv/h}$, $\mu = 0.1386\,\dfrac{1}{\text{cm}}$, $t = 330\,\text{h}$ and the maximum dose $1.0\,\text{mSv}$
+**Find:** the smallest wall thickness $d$ for which the annual dose does not exceed the limit
+**Principle:** The greatest permitted dose rate is the maximum dose divided by the time spent. The thickness of the wall is solved from the exponential model with it (chapter *Radiation dose and radiation safety in Finland*).
+**Formula:** $\dot{H}_\text{max} = \dfrac{H_\text{max}}{t}$. The condition $\dot{H}_0\,e^{-\mu d} = \dot{H}_\text{max}$ gives $d = \dfrac{\ln(\dot{H}_0 / \dot{H}_\text{max})}{\mu}$
+**Conversions:** $1.0\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Substitution:** $$
+\begin{aligned}
+\dot{H}_\text{max} &= \dfrac{1000\,\mu\text{Sv}}{330\,\text{h}} \\
+&= 3.03\,\mu\text{Sv/h}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+d &= \dfrac{\ln(80\,\mu\text{Sv/h} : 3.03\,\mu\text{Sv/h})}{0.1386\,\text{1/cm}} \\
+&= \dfrac{3.273}{0.1386\,\text{1/cm}} \\
+&= 23.6\,\text{cm}
+\end{aligned}
+$$
+**Answer:** The wall must be at least $24\,\text{cm}$ thick. The result is rounded up, because $23\,\text{cm}$ would give the dose rate $3.3\,\mu\text{Sv/h}$ and a dose of more than $1.0\,\text{mSv}$. Two significant figures like the initial data.
+**Reasonableness:** The thickness $24\,\text{cm}$ is within the range of the graph (it ends at $25\,\text{cm}$), and in the graph the dose rate there is about $2.9\,\mu\text{Sv/h}$, below the limit $3.03\,\mu\text{Sv/h}$. The wall must be thicker than the present $18\,\text{cm}$, because the present wall exceeded the limit.
+**Assumptions:** The model ignores scattering: radiation scattered from the wall and the surroundings brings an additional dose, so the real dose rate is larger than the calculated one. The result is also too small if the source is replaced by a stronger one or the time spent grows. A real wall should therefore be made thicker than the result, for example $25\,\text{cm}$ or more.
+
+### Yleisiä virheitä
+- In part a the quotient is used instead of its logarithm: $\mu = 16 / 20\,\text{cm} = 0.80\,\text{1/cm}$. Another mistake is to turn the ratio upside down, which makes $\mu$ negative.
+- In part b the dose rate is calculated linearly, $80\,\mu\text{Sv/h} - 18 \cdot 3.0\,\mu\text{Sv/h}$, or the sign of the exponent of $e$ is forgotten.
+- In part c the dose rate is multiplied only by the $1.5\,\text{h}$ of one working day, or $\mu\text{Sv}$ and $\text{mSv}$ are mixed up ($6.6 \cdot 330 = 2178\,\text{mSv}$).
+- In part d the annual limit $1.0\,\text{mSv}$ is used as the dose rate $1.0\,\mu\text{Sv/h}$, which gives the thickness $31.6\,\text{cm}$, a wrong value outside the graph.
+
+### Hyväksytään myös
+- In part a two other points of the graph that are far apart, for example $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$, give the same result $$
+\begin{aligned}
+\mu &= \ln 8 / 15\,\text{cm} \\
+&= 0.139\,\text{1/cm}
+\end{aligned}
+$$.
+- In part b through the half-value layer: $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot 0.5^{18/5.0} \\
+&\approx 6.6\,\mu\text{Sv/h}
+\end{aligned}
+$$.
+- In part d the thickness may be read directly from the graph at the point where the dose rate is $3.0\,\mu\text{Sv/h}$, if the value is about $24\,\text{cm}$.
+
+## fy9-moderni-s9
+
+### a)
+**Given:** a graph of the recession velocity $v$ of galaxies as a function of the distance $d$ and a fitted line through the origin; Hubble's law $v = H_0\,d$
+**Find:** the Hubble constant $H_0$
+**Principle:** According to Hubble's law the recession velocity is directly proportional to the distance, so the line passes through the origin and its slope is $H_0$ (chapter *The evolution of the universe*).
+**Reading the graph:** Two points far apart are read from the line: the origin $(0\,\text{Mpc};\ 0\,\text{km/s})$ and the grid point $(250\,\text{Mpc};\ 18\,000\,\text{km/s})$.
+**Formula:** $H_0 = \dfrac{v}{d} = \dfrac{v_2 - v_1}{d_2 - d_1}$
+**Conversions:** None needed: the units $\text{km/s}$ and $\text{Mpc}$ are the usual unit of the Hubble constant.
+**Substitution:** $$
+\begin{aligned}
+H_0 &= \dfrac{18\,000\,\text{km/s} - 0\,\text{km/s}}{250\,\text{Mpc} - 0\,\text{Mpc}} \\
+&= 72\,\dfrac{\text{km/s}}{\text{Mpc}}
+\end{aligned}
+$$
+**Answer:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$, two significant figures like the values of the grid point.
+**Reasonableness:** A galaxy at a distance of $1\,\text{Mpc}$ would recede at only $72\,\text{km/s}$, slowly on the scale of space. The points of the graph are close to the line, so the slope describes the whole data.
+
+### b)
+**Given:** $v = 8400\,\text{km/s}$ and $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$ from part a
+**Find:** the distance $d$ of the galaxy
+**Principle:** Hubble's law $v = H_0\,d$ holds for the new galaxy too. The distance is solved from it (chapter *The evolution of the universe*).
+**Formula:** $d = \dfrac{v}{H_0}$
+**Conversions:** None needed. The units $\text{km/s}$ cancel and $\text{Mpc}$ remains.
+**Substitution:** $$
+\begin{aligned}
+d &= \dfrac{8400\,\text{km/s}}{72\,\tfrac{\text{km/s}}{\text{Mpc}}} \\
+&= 116.7\,\text{Mpc}
+\end{aligned}
+$$
+**Answer:** $d \approx 1.2 \cdot 10^{2}\,\text{Mpc}$, about $120\,\text{Mpc}$. Two significant figures, like the velocity $8400\,\text{km/s}$ and the Hubble constant.
+**Reasonableness:** The distance $117\,\text{Mpc}$ is within the range of the graph, and the line of the graph gives at the distance $120\,\text{Mpc}$ a velocity of about $8600\,\text{km/s}$. It is close to the given velocity $8400\,\text{km/s}$, so the result is of the right size.
+
+### c)
+**Given:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$, $1\,\text{Mpc} = 3.086 \cdot 10^{19}\,\text{km}$ and $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$
+**Find:** the time $t$ the galaxies have been moving apart
+**Principle:** If the distances between the galaxies have grown from zero at the same rate $v$ all the time, the distance of a galaxy is $d = v\,t$. According to Hubble's law $v = H_0\,d$, so $t = d / v = 1 / H_0$ is the same for all galaxies (chapter *The evolution of the universe*).
+**Formula:** $t = \dfrac{d}{v} = \dfrac{1}{H_0}$
+**Conversions:** $H_0$ is converted to the unit $1/\text{s}$: $\text{Mpc}$ is $3.086 \cdot 10^{19}\,\text{km}$, so $\text{km}$ cancels.
+**Substitution:** $$
+\begin{aligned}
+H_0 &= \dfrac{72\,\text{km/s}}{3.086 \cdot 10^{19}\,\text{km}} \\
+&= 2.333 \cdot 10^{-18}\,\dfrac{1}{\text{s}}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+t &= \dfrac{1}{2.333 \cdot 10^{-18}\,\text{1/s}} \\
+&= 4.286 \cdot 10^{17}\,\text{s}
+\end{aligned}
+$$ and in years $$
+\begin{aligned}
+t &= \dfrac{4.286 \cdot 10^{17}\,\text{s}}{3.156 \cdot 10^{7}\,\text{s/a}} \\
+&= 1.358 \cdot 10^{10}\,\text{a}
+\end{aligned}
+$$
+**Answer:** $t \approx 1.4 \cdot 10^{10}\,\text{a}$, about $14$ billion years. Two significant figures, because $H_0$ is given to two significant figures.
+**Reasonableness:** The result is of the same order of magnitude as the present estimate of the age of the universe, about $14$ billion years. The estimate is rough, because the rate of expansion has not stayed constant, but it gives the right order of magnitude.
+
+### d)
+**Find:** why the observation that all distant galaxies recede does not make the Milky Way the centre
+**Principle:** The observation tells about the change of distances, not about the place from which the motion started. In expanding space Hubble's law looks the same everywhere (chapter *The evolution of the universe*).
+**Model answer:** According to the graph the velocity is directly proportional to the distance: a galaxy twice as far away recedes twice as fast. The same ratio would be observed from any galaxy, so every observer sees all the others receding from them and would take themselves for the centre. The galaxies do not move through space away from some particular point, but space itself expands: the distances between all galaxies grow in the same way. So the expansion has no centre, and the Milky Way is just one place among others. As a comparison, think of dots drawn on the surface of a balloon: when the balloon is inflated, the other dots recede from every dot.
+
+### Yleisiä virheitä
+- In part a the slope is read from one data point instead of the line, or $H_0$ is calculated upside down, $250 : 18\,000 = 0.014$.
+- In part b the distance is calculated as $$
+\begin{aligned}
+d &= v \cdot H_0 \\
+&= 8400 \cdot 72 \\
+&= 6.0 \cdot 10^{5}\,\text{Mpc}
+\end{aligned}
+$$, or the result is given in kilometres.
+- In part c $H_0$ is not converted to $1/\text{s}$, which gives $1 / 72 = 0.014$ with no sensible unit, or the megaparsecs and kilometres are not cancelled correctly.
+- In part d it is said that the galaxies recede from us, so we are at the centre, or the galaxies are claimed to move through space like the fragments of an explosion.
+
+### Hyväksytään myös
+- In part a the slope from two other points of the line that are far apart, for example $(125\,\text{Mpc};\ 9000\,\text{km/s})$ and $(250\,\text{Mpc};\ 18\,000\,\text{km/s})$, if the value is $72\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+- In part c the result $13.6$ billion years or $1.36 \cdot 10^{10}\,\text{a}$, when the final result is rounded suitably.
+- In part d the balloon comparison or another similar one, when the reasoning includes that the expansion looks the same in all places.

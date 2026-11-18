@@ -113,4 +113,35 @@ out.update({f"{S}-s6-a": round(v6 / 1000, 3), f"{S}-s6-E": round(E6 / 1e6, 2), f
             f"{S}-s6-c-dv": round(dv6, 1), f"{S}-s6-c-m": round(mXe, 3), f"{S}-s6-t": t6,
             f"{S}-s6-d-P": round(P6, 1), f"{S}-s6-d-Pk": round(Pk, 1), f"{S}-s6-d-F2Pv": round(2 * P6 / v6 * 1000, 2)})
 
+# s7: an alpha particle between two plates (fy6-12/ex-vgraph; values read from the graph): V = 0 at x = 0, 250 V at 5,0 cm
+m_alpha = 6.645e-27                                     # kg
+xv1, V1, xv2, V2 = 1.0e-2, 50.0, 5.0e-2, 250.0          # m, V: two far-apart points of the line
+E7 = (V2 - V1) / (xv2 - xv1)                            # V/m: the slope of the line
+F7 = 2 * e * 5.0e3                                      # N: from the rounded E = 5,0 kV/m
+a7 = F7 / m_alpha                                       # m/s^2
+xs, xe = 4.0e-2, 2.0e-2                                 # m: from rest at 4,0 cm to 2,0 cm
+Vs, Ve = E7 * xs, E7 * xe                               # V: read 200 V and 100 V
+dV7 = Vs - Ve
+W7 = 2 * e * dV7                                        # J = Ek gain
+v7 = math.sqrt(2 * W7 / m_alpha)
+G7 = F7 / (m_alpha * g)                                 # the electric force / the weight
+W7_check = F7 * (xs - xe)                               # J: F * s
+V7_new = Vs - V2                                        # V: the zero level moved to the positive plate
+out.update({f"{S}-s7-a": round(E7 / 1000, 3), f"{S}-s7-b": round(a7, -8), f"{S}-s7-b-F": round(F7 * 1e15, 4), f"{S}-s7-b-G": round(G7 / 1e10, 3),
+            f"{S}-s7-c": round(v7 / 1000, 3), f"{S}-s7-c-dV": dV7, f"{S}-s7-c-eV": 2 * dV7, f"{S}-s7-c-W": round(W7 * 1e17, 4),
+            f"{S}-s7-c-Wcheck": round(W7_check * 1e17, 4), f"{S}-s7-d": V7_new})
+
+# s8: a green LED with a series resistor (fy6-14/ex-led; values read from the graph: U_D = 2,2 V between 5 and 30 mA)
+Us8, R8, UD8, Imax8 = 6.0, 220.0, 2.2, 30e-3            # V, ohm, V, A
+UR8 = Us8 - UD8
+I8 = UR8 / R8                                           # A
+P_R8 = UR8 * I8                                         # W
+share8 = UR8 / Us8                                      # the resistor's share of the source power
+R_min8 = UR8 / Imax8                                    # ohm
+R_d1, R_d2 = UD8 / 5e-3, UD8 / 20e-3                    # ohm: U_D / I at 5 mA and 20 mA
+out.update({f"{S}-s8-a": round(I8 * 1000, 3), f"{S}-s8-a-UR": round(UR8, 2),
+            f"{S}-s8-b-P": round(P_R8 * 1000, 2), f"{S}-s8-b-share": round(100 * share8, 2),
+            f"{S}-s8-b-PLED": round(UD8 * I8 * 1000, 2), f"{S}-s8-b-Ptot": round(Us8 * I8 * 1000, 2),
+            f"{S}-s8-c": round(R_min8, 2), f"{S}-s8-d-R5": round(R_d1, 1), f"{S}-s8-d-R20": round(R_d2, 1)})
+
 print(json.dumps(out))

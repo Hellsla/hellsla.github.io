@@ -75,4 +75,38 @@ out["fy9-kokeellisuus-s6-c"] = round(a6 / g, 4)
 out["fy9-kokeellisuus-s6-d"] = round((1.05 ** 2 - 1) * 100, 2)                # %
 out["fy9-kokeellisuus-s6-atrue"] = round(a6 / 1.05 ** 2, 3)
 
+# s7: kinetic friction measurement (fy4-6/mittaus; values read from the figure: N = 5...25 N, F = 1,1; 2,1; 3,3; 4,2; 5,4 N)
+N7 = [5.0, 10.0, 15.0, 20.0, 25.0]
+F7 = [1.1, 2.1, 3.3, 4.2, 5.4]
+q7 = [f / n for f, n in zip(F7, N7)]
+mu7 = sum(q7) / len(q7)                                                        # mean of the ratios
+dmu7 = (max(q7) - min(q7)) / 2                                                 # half the range
+k7, b7 = fit(N7, F7)                                                           # least squares: slope and intercept (check)
+k7o = sum(n * f for n, f in zip(N7, F7)) / sum(n * n for n in N7)              # through the origin
+res7 = [f - k7o * n for f, n in zip(F7, N7)]                                   # residuals N
+out.update({"fy9-kokeellisuus-s7-q": [round(x, 3) for x in q7], "fy9-kokeellisuus-s7-b": round(mu7, 4),
+            "fy9-kokeellisuus-s7-db": round(dmu7, 4), "fy9-kokeellisuus-s7-fitk": round(k7, 4),
+            "fy9-kokeellisuus-s7-fitb": round(b7, 3), "fy9-kokeellisuus-s7-origink": round(k7o, 4),
+            "fy9-kokeellisuus-s7-res": [round(x, 3) for x in res7]})
+F0, Fr, Nc = 0.3, 2.4, 10.0                                                    # zero error N, reading N, normal force N
+mu_w, mu_r = Fr / Nc, (Fr - F0) / Nc
+out.update({"fy9-kokeellisuus-s7-c-mu_wrong": round(mu_w, 3), "fy9-kokeellisuus-s7-c-mu_right": round(mu_r, 3),
+            "fy9-kokeellisuus-s7-c-err": round((mu_w - mu_r) / mu_r * 100, 2)})
+out["fy9-kokeellisuus-s7-d-rel5"] = round(0.05 / F7[0] * 100, 1)               # % half the 0,1 N division at N = 5 N
+out["fy9-kokeellisuus-s7-d-rel25"] = round(0.05 / F7[-1] * 100, 1)
+
+# s8: coil, B against I (fy7-3/coil-fit; read from the fitted line: (1,0 A; 2,5 mT) and (2,5 A; 6,2 mT))
+mu0 = 4 * math.pi * 1e-7
+k8 = (6.2 - 2.5) / (2.5 - 1.0)                                                 # mT/A
+n8 = k8 * 1e-3 / mu0                                                           # 1/m
+out["fy9-kokeellisuus-s8-a-k"] = round(k8, 4)
+out["fy9-kokeellisuus-s8-a"] = round(n8, 1)
+out["fy9-kokeellisuus-s8-a-percm"] = round(n8 / 100, 1)
+B8 = 12.0                                                                      # mT wanted
+out["fy9-kokeellisuus-s8-b"] = round(B8 / k8, 3)                               # A
+out["fy9-kokeellisuus-s8-b-ratio"] = round(B8 / k8 / 2.5, 2)                   # times the largest measured current
+B05, B25, B00 = 1.3, 6.2, 0.04                                                 # mT read at 0,5 A and 2,5 A; zero reading
+out["fy9-kokeellisuus-s8-c-r05"] = round(B00 / B05 * 100, 2)
+out["fy9-kokeellisuus-s8-c-r25"] = round(B00 / B25 * 100, 3)
+
 print(json.dumps(out))
