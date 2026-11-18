@@ -913,7 +913,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\n\\begin{aligned}\\nx &= \\dfrac{4{,}5\\,\\text{N}}{30{,}0\\,\\text{N/m}} \\\\\\n&= 0{,}150\\,\\text{m} \\\\\\n&= 15{,}0\\,\\text{cm}\\n\\end{aligned}\\n$$"
+              "detail": "$$\n\\begin{aligned}\nx &= \\dfrac{4{,}5\\,\\text{N}}{30{,}0\\,\\text{N/m}} \\\\\n&= 0{,}150\\,\\text{m} \\\\\n&= 15{,}0\\,\\text{cm}\n\\end{aligned}\n$$"
             },
             {
               "key": "uncertainty",
@@ -976,7 +976,7 @@
               "detail": "Pisteisiin on sovitettu yksi suora. Suoraa ei ole pakotettu origon kautta, eikä pisteitä ole yhdistetty murtoviivaksi."
             },
             {
-              "text": "Suoran vakiotermi on noin $0{,}01\\,\\text{m}$. Se on yhtä suuri kuin lukemisen epävarmuus, joten se ei ole merkitsevä.",
+              "text": "Suoran vakiotermi on noin $0{,}01\\,\\text{m}$, suunnilleen yhtä suuri kuin lukemisen epävarmuus. Se on pieni. Kaikki suorat, jotka kulkevat pisteiden $\\pm 0{,}01\\,\\text{m}$:n välien kautta, leikkaavat $s$-akselin välillä $+0{,}003\\ldots{+}0{,}012\\,\\text{m}$. Mikään origon kautta kulkeva suora ei sovi. Suoraa ei ole pakotettu origon kautta, joten vakiotermi ei vaikuta kulmakertoimeen.",
               "tag": "graph",
               "points": 1
             }

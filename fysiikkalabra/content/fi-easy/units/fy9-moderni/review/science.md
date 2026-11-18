@@ -1,20 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 4465c40cddfece9f
-SCOPE: delta: new tasks s8 (Betoniseinä) and s9 (Galaksien etääntyminen) and the changed intro; older tasks s1-s7 untouched
+VERDICT: PASS
+CONTENT-HASH: 43cb3edae017c63d
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8, -s9; older tasks s1-s7 and the intro untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- **A (causality), s8 d Oletukset:** "Lähteen aktiivisuuskaan ei pysy vakiona. Siksi oikea seinä kannattaa tehdä tulosta paksummaksi." A decaying source gives a *smaller* dose rate over time, so the reason points the other way. Keep the scattering reason; replace this one with a reason that really raises the dose (voimakkaampi tai vaihdettu lähde, pidempi oleskelu) or drop it. Same error as in fi.
-- **Assessment (7), s8 d criterion 4 (transfer, 1 p):** d asks only the least thickness. The criterion scores naming an assumption, which d does not ask, and "annosnopeus on vakio" is given in the task text. Ask for it in d or move the point.
-- **B (6, consistency), s9 c:** the Periaate "Oletetaan, että galaksi on liikkunut ... ja lähtenyt samasta paikasta kuin muut" (part text "jokainen galaksi on liikkunut koko ajan samalla nopeudella", criterion 1 "kulkenut matkan d") is the explosion-from-a-point picture that s9 d's model answer, its Yleisiä virheitä ("kuin räjähdyksen sirpaleet") and the chapter *Maailmankaikkeuden kehitys* reject. Say it with distances: "galaksien väliset etäisyydet ovat kasvaneet nollasta koko ajan samaa tahtia", t = d/v = 1/H0.
+None. The three round-1 items are fixed in the fi-easy text:
+- s8 d Oletukset: "Lähteen aktiivisuuskaan ei pysy vakiona" is gone; now "Tulos on liian pieni myös, jos lähde vaihdetaan vahvempaan tai oleskeluaika pitenee", after the scattering reason. Both raise the dose.
+- s8 d criterion 4: part d now asks "Mainitse myös yksi mallin oletus, joka voi tehdä tuloksesta liian pienen, ja kerro sen vaikutus"; the criterion's examples are not the given "annosnopeus on vakio". Points 4 = 1+1+1+1.
+- s9 c: part text "kuinka kauan sitten galaksien väliset etäisyydet olivat nollia. Oleta, että etäisyydet ovat kasvaneet koko ajan samalla nopeudella", Periaate "galaksien väliset etäisyydet ovat kasvaneet nollasta", criterion 1 "etäisyys d on kasvanut nollasta". Consistent with d and *Maailmankaikkeuden kehitys*.
 
 ## Polish
-- s9 a: the text gives the grid point (250 Mpc; 18 000 km/s), so the graph_read point is earned by copying it; the alt-text already carries it.
-- s9 d criterion 2 requires "avaruus itse laajenee"; the no-centre argument is criterion 1. Consider accepting either.
-- s8 a: (20 cm; 5,0 µSv/h) is near the axis of a linear graph; ±0,5 µSv/h reading gives µ = 0,134-0,144 1/cm, outside the 3 % tolerance. (10 cm; 20 µSv/h) is more robust, or widen the tolerance.
+- s8 Yleisiä virheitä, a-kohta: "μ = 16 / 20 cm = 0,80 1/cm" is left from the old point (20 cm; 5,0 µSv/h); with (0; 80) and (10; 20) the quotient error is 4 / 10 cm = 0,40 1/cm. Same as in fi.
+- s9 c criterion 1 "Galaksin etäisyys d on kasvanut nollasta vakionopeudella v. Aika on ..." reads as a fact, not as the assumption; "Jos ..., aika on" (as in fi) keeps the condition in one sentence.
+- Round-1 polish taken as in fi.
 
 ## Checked
-- Read the fi-easy tasks.json entries and solutions of s8 and s9 and the intro in this language's packet. Every number, unit and rounding is the same as in fi (0,14 1/cm, 6,6 µSv/h, 330 h, 2,2 mSv, 3,03 µSv/h, 23,6 -> 24 cm rounded up; 72 km/s/Mpc, 120 Mpc, 2,333e-18 1/s, 4,286e17 s, 1,358e10 a); criteria, common mistakes and accepted methods mean the same as in fi. The split into short sentences keeps every physical reason (exponential law: same factor per equal thickness; why d rounds up; why 1/H0 is rough).
-- One script (scratchpad rc_moderni.py) recomputed all numbers from the figures' own data (80 µSv/h, half-value 5,0 cm; H0 = 72, nine points) beside answers.py: all agree.
-- Physics and scope as in fi (FY8); points 13 and 13, criteria sum to part points.
-- Intro: nine tasks; the facts are those of fi.
-- practice.py check OK; hash the same at start and end.
+- Read the fi-easy s8 and s9 tasks.json entries and solutions.md sections. Every number, unit and rounding is the same as in fi (0,14 1/cm, 6,6 µSv/h, 330 h, 2,2 mSv, 3,0 µSv/h, 23,6 -> 24 cm rounded up; 72 km/s/Mpc, 120 Mpc, 2,33e-18 1/s, 4,29e17 s, 1,4e10 a); the short-sentence split keeps every reason (why the wall is made thicker, why d rounds up, the distance-growth assumption).
+- The same script as for fi recomputed every value: all agree; two significant figures as the data.
+- Aligned calculation rows; unit fields language-neutral; part texts reveal no structure.
+- practice.py check --lang fi-easy OK (9 tasks, 136 points); hash the same at start and end.

@@ -1,22 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: e356f29b730cbfea
-SCOPE: delta: new tasks s7 (Jousen kalibrointi) and s8 (Pudotettu teräskuula videolla, with graph s8-kuvaaja) and the changed intro; older tasks untouched
+VERDICT: FAIL
+CONTENT-HASH: ce624321f2f924f1
+SCOPE: delta: round 2, the fixes of round 1 in s7 (Jousen kalibrointi) and s8 (Pudotettu teräskuula videolla); only changed passages and 360 px layout
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- [Major] sovella/tasks.json (fi-easy), s7 c, criterion `calculation` — the formula is written with literal backslash-n sequences (`$$\\n\\begin{aligned}\\nx &= \\dfrac{4{,}5...`), so KaTeX shows a red error "\nx = 4,5 N / 30,0 N/m …" in the grading panel instead of three aligned rows — the model calculation is unreadable — use real line breaks (single `\n` in JSON, as in s2 b / s3 e / s6 c). Same defect in the fi and en files.
 
 ## Polish
-- [Minor] s8 c, "Vertailu": the second row of the chain is a bare "≈ 5,5 %" with no quantity; write `\dfrac{0{,}54}{9{,}81} \approx 5{,}5\,\%`.
-- [Minor] s8 c, Aikaskaalan virhe: two separate calculations (`√(9,81/10,35) = 0,974` and `0,974 · 0,05 s = 0,0487 s`) are set in one block with no named left side; make two blocks or name them.
-- [Minor] s8 b: say that the points read from the line are the circled ones in the graph (only the alt text does).
-- [Minor] Sijoitus boxes end in ";" or ","; optional, as in the older tasks.
+- [Minor] s7/s8 Sijoitus boxes end in ";" or ","; same as older tasks, optional.
 
 ## Checked
-- Playwright is missing, so I rendered `preview/fi-easy/fy9-mittaaminen.html` in headless Chrome at 360 px, s7 and s8 cards isolated with solutions open (own captures; graph's alt text and figure compared with the Finnish one). Opened: both task cards, s8 solution c; s7 and s8 a-b structure was checked in the Finnish render because the layout is identical.
-- Language level: short sentences, one idea each ("Videosta mitataan kuulan putoamismatka s yhdeksällä hetkellä t. Hetket ovat välillä … ja niiden väli on …"; "Satunnainen lukemisvirhe ei siis selitä eroa"); the terms epävarmuus, kulmakerroin, systemaattinen virhe match the glossary and the Finnish version. Instructions are clear ("Perustele, miksi valitset tämän kuvaajan").
-- Same numbers as the Finnish text in tasks, chains and graph (30,0 ± 1,2 N/m; 10,35 ± 0,15 m/s²; 15,0 ± 0,6 cm; 5,18 m/s²). The alt text is split into short sentences and names the same quantities as the task text.
-- 360 px: no clipping, aligned rows wrap, and the line break "3,7-/kertainen" falls at a hyphen.
-- Intro: "Tässä on kahdeksan … Kaksi tehtävää alkaa valmiista kuvaajasta. Yksi tehtävä yhdistää …" read from tasks.json; true. Not opened as a render.
+- Round-1 polish items verified in fi-easy solutions.md and tasks.json: s8 c Vertailu has the quantities in both rows; the time-scale chain is its own block with named rows; s8 b says "ympyröidyt" points; results rounded to the data (30,0 ± 1,2; 10,35 ± 0,15); short sentences, one idea each, same numbers as the Finnish text ("Ero on 0,54 : 0,147 ≈ 3,7-kertainen").
+- Own headless-Chrome render at 360 px of s7 and s8 (fi-easy): cards, figures, parts clean, no clipping or overflow. The s7 grading panel is shared with the Finnish render, where the `\n` error appears; the s8 panel checked from source.
+- Intro read from tasks.json (short sentences, eight tasks, two with a graph): true.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 3 · Finnish 5 · accessibility 4

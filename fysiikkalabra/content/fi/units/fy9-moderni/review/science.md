@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 115941f6cb5f4383
-SCOPE: delta: new tasks s8 (Betoniseinä) and s9 (Galaksien etääntyminen) and the changed intro; older tasks s1-s7 untouched
+VERDICT: PASS
+CONTENT-HASH: 876c08f6ee47b4ec
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8, -s9; older tasks s1-s7 and the intro untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- **A (causality), s8 d Oletukset:** "eikä lähteen aktiivisuus pysy vakiona. Siksi todellinen seinä kannattaa tehdä tulosta paksummaksi". A decaying source gives a *smaller* dose rate over time, so this reason points the other way. Scattering (build-up) is a correct reason; replace the activity clause with one that really raises the dose (a stronger or replaced source, longer time in the corridor) or drop it.
-- **Assessment (7), s8 d criterion 4 (transfer, 1 p):** d asks only "kuinka paksu seinän pitää vähintään olla". The criterion scores naming an assumption and its effect, which d does not ask, and "annosnopeus on vakio" is an assumption the task text itself gives. Either ask for it in d ("Mikä mallin oletus voi tehdä tuloksesta liian pienen?") or move the point.
-- **B (6, consistency), s9 c:** the Periaate "on liikkunut ... ja lähtenyt samasta paikasta kuin muut" (and the part text "jokaisen galaksin liikkuneen koko ajan samalla nopeudella", criterion 1 "kulkenut matkan d") is the explosion-from-a-point picture that s9 d's model answer, its Yleisiä virheitä ("kuin räjähdyksen sirpaleet") and fy8-16 ("ei ollut räjähdys ... jostakin pisteestä") reject. State the condition as distances: "galaksien väliset etäisyydet ovat kasvaneet nollasta koko ajan samalla nopeudella", t = d/v = 1/H0.
+None. The three round-1 items are fixed in the fi text:
+- s8 d Oletukset: the activity clause is gone; it now says scattering adds dose and "tulos on liian pieni, jos lähde vaihdetaan vahvempaan tai oleskeluaika pitenee". Both reasons really raise the dose, so "paksummaksi" follows.
+- s8 d criterion 4: the part text now asks "Mainitse myös yksi mallin oletus, joka voi tehdä tuloksesta liian pienen, ja sen vaikutus", and the criterion's examples (sironta, vahvempi lähde, pidempi oleskelu) are not the given "annosnopeus on vakio". Points still 4 = 1+1+1+1.
+- s9 c: part text "galaksien väliset etäisyydet olivat nollia ... etäisyydet ovat kasvaneet koko ajan samalla nopeudella", Periaate "galaksien väliset etäisyydet ovat kasvaneet nollasta", criterion 1 "etäisyys d on kasvanut nollasta". No start-from-one-place picture left; consistent with d and fy8-16.
 
 ## Polish
-- s9 a: the task text gives the grid point (250 Mpc; 18 000 km/s), so the graph_read point is earned by copying the text and a) is a single division. The alt-text already carries the point for non-visual readers; the bullet could go.
-- s9 d criterion 2 requires "avaruus itse laajenee". The no-centre argument is criterion 1 (v ∝ d looks the same from every galaxy); consider accepting criterion 1's argument with any correct expansion picture.
-- s8 a: (20 cm; 5,0 µSv/h) sits near the axis of a linear graph; a ±0,5 µSv/h reading gives µ = 0,134–0,144 1/cm, outside the 3 % tolerance. (10 cm; 20 µSv/h) is more robust, or widen the tolerance to about 5 %.
+- s8 Yleisiä virheitä, a-kohta: "μ = 16 / 20 cm = 0,80 1/cm" is left over from the old reading point (20 cm; 5,0 µSv/h). With the new points (0; 80) and (10; 20) the quotient error is 4 / 10 cm = 0,40 1/cm. Newly inconsistent, not wrong physics.
+- Round-1 polish taken: s9 task text no longer gives the grid point; s8 a uses (10 cm; 20 µSv/h) (a ±0,5 µSv/h reading now gives µ = 0,136-0,141 1/cm, inside 3 %); s9 d criterion 2 now accepts "muulla yhtä pätevällä tavalla".
 
 ## Checked
-- One script (scratchpad rc_moderni.py) recomputed every number from the figures' own data (fy8-13 figures.py: 80 µSv/h, half-value 5,0 cm; fy8-16: line H0 = 72, nine points, LS slope 72,4) beside answers.py: µ 0,1386 (also ln 8/15), 6,60 µSv/h, 330 h, 2,18 mSv, Ḣmax 3,03 µSv/h, d 23,61 cm, 23 cm -> 1,09 mSv, 24 cm -> 0,95 mSv, error value 31,6 cm; H0 72, 116,7 Mpc, 8640 km/s at 120 Mpc, 2,333e-18 1/s, 4,286e17 s, 1,358e10 a. All agree; roundings and the upward rounding of d are justified.
-- Physics: exponential attenuation (task gives the model; fy8-13 teaches the half-value form, accepted under Hyväksytään myös), H = Ḣt, 1 mSv public limit; Hubble's law, 1/H0 as Hubble time with the non-constant rate stated. Scope FY8.
-- Points: s8 3+3+3+4, s9 3+3+4+3; criteria sum to part points.
-- Intro: nine tasks match the set; "Tehtävissä 8 ja 9 ... kuvaajan kanssa" true.
-- practice.py check OK; hash the same at start and end.
+- Read the s8 and s9 tasks.json entries and solutions.md sections (current packet-science.md matches them).
+- One script recomputed from the figures' data (80 µSv/h, half-value 5,0 cm; H0 = 72): µ = ln 4/10 = 0,1386 (also ln 8/15), 6,60 µSv/h, 330 h, 2,18 mSv, 3,03 µSv/h, d 23,61 cm, 23 cm -> 3,30 µSv/h, 24 cm -> 2,87 µSv/h ("noin 2,9"), error value 31,6 cm; 116,7 Mpc, 8640 km/s at 120 Mpc, 2,333e-18 1/s, 4,286e17 s, 1,358e10 a. All agree; results rounded to the data's two significant figures, d rounded up with reason.
+- Calculation chains are aligned rows; unit fields (1/cm, µSv/h, mSv, cm, km/s/Mpc, Mpc, a) language-neutral; part texts reveal no solution structure beyond what is asked.
+- practice.py check units/fy9-moderni OK (9 tasks, 136 points), units.py check OK; shots.md is for this hash; hash the same at start and end.

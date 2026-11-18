@@ -1,22 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: a7fd1f4cabdc517a
-SCOPE: delta: new tasks s7 (Calibrating a spring) and s8 (A steel ball dropped, filmed on video, with graph s8-kuvaaja) and the changed intro; older tasks untouched
+VERDICT: FAIL
+CONTENT-HASH: 0da2cfcc91630694
+SCOPE: delta: round 2, the fixes of round 1 in s7 (Calibrating a spring) and s8 (A steel ball dropped); only changed passages and 360 px layout
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- [Major] sovella/tasks.json (en), s7 c, criterion `calculation` — the formula is written with literal backslash-n sequences (`$$\\n\\begin{aligned}\\nx &= \\dfrac{4.5...`), so KaTeX shows a red error "\nx = 4.5 N / 30.0 N/m …" in the grading panel instead of three aligned rows — the model calculation is unreadable — use real line breaks (single `\n` escapes in JSON, as in s2 b / s3 e / s6 c). The same defect is in the fi and fi-easy files.
 
 ## Polish
-- [Minor] s8 c, Comparison: the second row of the chain is a bare "≈ 5.5 %" with no quantity; write `\dfrac{0.54}{9.81} \approx 5.5\,\%`.
-- [Minor] s8 c, error in the time scale: two separate calculations (`√(9.81/10.35) = 0.974`, `0.974 · 0.05 s = 0.0487 s`) share one block with no named left side; two blocks, or name them.
-- [Minor] s8 b, "Reading the graph" does not say the read points are the circled ones in the figure (only the alt text does); add "(circled in the graph)".
-- [Minor] s7/s8 Substitution: chain boxes end in ";" or "," (`= 30.0 N/m;`); same as the older tasks, so optional.
+- [Minor] s7/s8 Substitution boxes end in ";" or ","; same as older tasks, optional.
 
 ## Checked
-- Playwright is missing, so I rendered the English page (`preview/en/fy9-mittaaminen.html`) in headless Chrome at 360 px, s7 and s8 cards isolated with solutions open (own captures; graph at 2.5x). Opened: both task cards, s8 graph, s8 solution b-c; s7 solution read from the Finnish render, the English structure being the same.
-- English text: natural and consistent with the Finnish; same numbers and units (30.0 ± 1.2 N/m, 10.35 ± 0.15 m/s², 15.0 ± 0.6 cm, 9.81 m/s²); decimal point used in prose and graph labels; "She measures" matches the student; "Skills from the chapters" links read correctly; chapter names match the interface ("Measuring and the reliability of a measurement").
-- Graph labels and alt text in English match the task text ("distance s the ball has fallen", t², 5.18 m/s², 0.01 m, circled points). Axes carry quantity and unit, points distinct from the line, nothing clipped.
-- 360 px: aligned rows wrap, no clipped formula, tables stack readably.
-- Intro: "Eight problems … Two problems start from a ready graph, and one combines measuring with the ideal gas law" read from tasks.json; true (s7 and s8 give a graph). Intro not opened as a render.
+- Round-1 polish items verified in the English solutions.md and tasks.json: s8 c Comparison now has the quantities in both rows (`\dfrac{0.54 m/s²}{9.81 m/s²} ≈ 5.5 %`); the time-scale chain is a separate block with named rows; s8 b says "circled points"; results rounded to the data (30.0 ± 1.2; 10.35 ± 0.15); decimal point and units language-neutral; English reads naturally and matches the Finnish numbers.
+- Own headless-Chrome render at 360 px of s7 and s8 (English): cards, figures, parts, skill links clean, no clipping or overflow. Opened the s7 grading panel (shared structure with the Finnish render), where the `\n` error appears; the s8 panel and solution c checked from source.
+- Intro read from tasks.json: true.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish (English text) 5 · accessibility 4
+illustrations 4 · typography 3 · Finnish (English text) 5 · accessibility 4

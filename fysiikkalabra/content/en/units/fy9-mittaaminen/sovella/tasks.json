@@ -913,7 +913,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\n\\begin{aligned}\\nx &= \\dfrac{4.5\\,\\text{N}}{30.0\\,\\text{N/m}} \\\\\\n&= 0.150\\,\\text{m} \\\\\\n&= 15.0\\,\\text{cm}\\n\\end{aligned}\\n$$"
+              "detail": "$$\n\\begin{aligned}\nx &= \\dfrac{4.5\\,\\text{N}}{30.0\\,\\text{N/m}} \\\\\n&= 0.150\\,\\text{m} \\\\\n&= 15.0\\,\\text{cm}\n\\end{aligned}\n$$"
             },
             {
               "key": "uncertainty",
@@ -976,7 +976,7 @@
               "detail": "One straight line through the points; the line is not forced through the origin and the points are not joined with a broken line."
             },
             {
-              "text": "The constant term of the line is about $0.01\\,\\text{m}$, the size of the reading uncertainty, so it is not significant.",
+              "text": "The constant term of the line is about $0.01\\,\\text{m}$, the size of the reading uncertainty. It is small: every line through the $\\pm 0.01\\,\\text{m}$ ranges of the points crosses the $s$ axis between $+0.003\\ldots{+}0.012\\,\\text{m}$, and no line through the origin fits. Because the line is not forced through the origin, the constant term does not affect the slope.",
               "tag": "graph",
               "points": 1
             }
