@@ -575,7 +575,7 @@
    "moduuli": "FY8",
    "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
-   "kasite": "Characteristic radiation",
+   "kasite": "Characteristic X-radiation",
    "maaritelma": "Produced by transitions between electron states of atoms; it forms spectral lines characteristic of the material."
   },
   {
@@ -1035,7 +1035,7 @@
    "moduuli": "FY8",
    "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
-   "kasite": "Radiation shielding",
+   "kasite": "Shielding",
    "maaritelma": "Exposure is reduced by shortening the time, increasing the distance and using suitable shielding."
   },
   {
@@ -1075,7 +1075,7 @@
    "moduuli": "FY8",
    "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
-   "kasite": "PET imaging",
+   "kasite": "PET scan",
    "maaritelma": "A tracer that emits positrons is used to form an image of the metabolism of the body."
   },
   {
