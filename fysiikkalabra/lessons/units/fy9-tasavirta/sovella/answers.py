@@ -127,4 +127,42 @@ out.update({f"{S}-s6-Q": round(Q6 / 1e6, 4), f"{S}-s6-Q-kWh": round(Q6 / 3.6e6, 
             f"{S}-s6-d-cost": round(100 * Q_shower / 3.6e6 * 0.14, 2), f"{S}-s6-d-showers": round(Q6 / Q_shower, 2),
             f"{S}-s6-d-hot-l": round(hot_share * m_shower, 1), f"{S}-s6-a-cost": round(Q6 / 3.6e6 * 0.14, 2)})
 
+# s7: a filament lamp's U-I curve (fy6-3/lamp-curve; values read from the curve: 0,21 A at 2,0 V and 0,25 A at 3,0 V)
+# on a 4,0 V battery with one resistor in series so that the lamp gets its largest voltage 3,0 V
+U7a, I7a = 2.0, 0.21
+R7a = U7a / I7a                                     # ohm, R = U / I at one point of the curve
+U7b, I7b = 3.0, 0.25
+R7b = U7b / I7b                                     # ohm
+E7, UL7 = 4.0, 3.0
+UR7 = E7 - UL7                                      # V, the series resistor takes the rest
+R7c = UR7 / I7b                                     # ohm
+PL7, PR7, Ptot7 = UL7 * I7b, UR7 * I7b, E7 * I7b    # W
+share7 = 100 * PL7 / Ptot7                          # %
+out.update({f"{S}-s7-a": round(R7a, 3), f"{S}-s7-a-P": round(U7a * I7a, 3), f"{S}-s7-a-Rlow": round(U7a / 0.22, 3),
+            f"{S}-s7-a-Rhigh": round(U7a / 0.20, 3), f"{S}-s7-b-R": round(R7b, 3), f"{S}-s7-b-ratio": round(R7b / R7a, 3),
+            f"{S}-s7-c-UR": round(UR7, 3), f"{S}-s7-c": round(R7c, 3),
+            f"{S}-s7-d-PL": round(PL7, 3), f"{S}-s7-d-PR": round(PR7, 3), f"{S}-s7-d-Ptot": round(Ptot7, 3),
+            f"{S}-s7-d": round(share7, 2)})
+
+# s8: 12 V battery, 20 ohm in series with 60 ohm || 30 ohm (fy6-4/siirto-mixed), no internal resistance
+E8, R8a, R8b, R8c = 12.0, 20.0, 60.0, 30.0
+Rp8 = R8b * R8c / (R8b + R8c)                       # ohm
+Rt8 = R8a + Rp8                                     # ohm
+I8 = E8 / Rt8                                       # A
+Up8 = E8 - I8 * R8a                                 # V, over the parallel pair
+I8b, I8c = Up8 / R8b, Up8 / R8c                     # A
+P8a, P8b, P8c, Pt8 = R8a * I8 ** 2, R8b * I8b ** 2, R8c * I8c ** 2, E8 * I8      # W
+# d: the 30 ohm resistor is removed
+Rt8d = R8a + R8b                                    # ohm
+I8d = E8 / Rt8d                                     # A
+Ub8d = E8 - I8d * R8a                               # V over the 60 ohm resistor
+P8bd = Ub8d ** 2 / R8b                              # W
+out.update({f"{S}-s8-a": round(I8, 4), f"{S}-s8-a-Rp": round(Rp8, 3), f"{S}-s8-a-R": round(Rt8, 3),
+            f"{S}-s8-a-Imax": round(E8 / R8a, 3), f"{S}-s8-a-Imin": round(E8 / (R8a + R8b + R8c), 4),
+            f"{S}-s8-b-U": round(Up8, 3), f"{S}-s8-b-I60": round(I8b, 4), f"{S}-s8-b-I30": round(I8c, 4),
+            f"{S}-s8-c-P20": round(P8a, 3), f"{S}-s8-c-P": round(Pt8, 3), f"{S}-s8-c-P60": round(P8b, 3),
+            f"{S}-s8-c-P30": round(P8c, 3),
+            f"{S}-s8-d-R": round(Rt8d, 3), f"{S}-s8-d-I": round(I8d, 4), f"{S}-s8-d-U": round(Ub8d, 3),
+            f"{S}-s8-d": round(P8bd, 3), f"{S}-s8-d-ratio": round(P8bd / P8b, 3)})
+
 print(json.dumps(out))

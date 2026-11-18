@@ -443,3 +443,221 @@ $$
 
 ### Hyväksytään myös
 - a-kohdassa energia kilowattitunteina: $19{,}2\,\text{kWh} : 3{,}0\,\text{kW} = 6{,}4\,\text{h}$.
+
+## fy9-tasavirta-s7
+
+### a)
+**Annettu:** hehkulampun ominaiskäyrä $U(I)$; jännite $U = 2{,}0\,\text{V}$
+**Kysytty:** lampun resistanssi $R$, kun $U = 2{,}0\,\text{V}$
+**Periaate:** Resistanssi on jännitteen ja virran suhde, $R = U/I$ (luku *Resistanssi ja Ohmin laki*). Lampun käyrä ei ole suora. Siksi resistanssi lasketaan erikseen jokaisessa pisteessä. Käyrän kulmakerroin ei ole resistanssi.
+**Kuvaajan lukeminen:** Jännitettä $2{,}0\,\text{V}$ vastaavasta kohdasta luetaan virta $I \approx 0{,}21\,\text{A}$. Ruudukon väli on $0{,}05\,\text{A}$. Lukema on siis tarkka noin $\pm 0{,}01\,\text{A}$.
+**Kaava:** $R = \dfrac{U}{I}$
+**Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina.
+**Sijoitus:** $$
+\begin{aligned}
+R &= \dfrac{2{,}0\,\text{V}}{0{,}21\,\text{A}} \\
+&= 9{,}52\,\Omega
+\end{aligned}
+$$
+**Vastaus:** $R \approx 9{,}5\,\Omega$, kaksi merkitsevää numeroa kuten kuvaajasta luetut arvot.
+**Järkevyys:** Lampun teho on $2{,}0\,\text{V} \cdot 0{,}21\,\text{A} \approx 0{,}42\,\text{W}$. Se sopii pienelle lampulle. Lukemat $0{,}20\,\text{A}$ ja $0{,}22\,\text{A}$ antaisivat $10\,\Omega$ ja $9{,}1\,\Omega$. Tulos on siis luotettava kahdella numerolla.
+
+### b)
+**Annettu:** ominaiskäyrä ja jännite $U = 3{,}0\,\text{V}$
+**Kysytty:** resistanssi $R$ jännitteellä $3{,}0\,\text{V}$ ja syy sen eroon a-kohdan arvosta
+**Periaate:** Resistanssi lasketaan taas jännitteen ja virran suhteena kyseisessä pisteessä (luku *Resistanssi ja Ohmin laki*). Hehkulangan resistanssi kasvaa, kun lanka kuumenee.
+**Kuvaajan lukeminen:** Jännitettä $3{,}0\,\text{V}$ vastaava virta luetaan käyrän päätepisteestä: $I = 0{,}25\,\text{A}$.
+**Kaava:** $R = \dfrac{U}{I}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+R &= \dfrac{3{,}0\,\text{V}}{0{,}25\,\text{A}} \\
+&= 12\,\Omega
+\end{aligned}
+$$
+**Mallivastaus:** Resistanssi on $3{,}0\,\text{V}$:ssa $12\,\Omega$, mikä on noin $1{,}3$-kertainen $2{,}0\,\text{V}$:n arvoon $9{,}5\,\Omega$ verrattuna. Kun jännite kasvaa, lampun virta ja teho kasvavat. Hehkulanka kuumenee. Kuumassa metallilangassa ionit värähtelevät voimakkaammin. Ne estävät elektronien liikettä enemmän, joten resistanssi kasvaa. Siksi käyrä kaartuu: $U$ kasvaa nopeammin kuin $I$. Lamppu ei noudata Ohmin lakia. Vakioresistanssinen vastus antaisi suoran.
+**Järkevyys:** Käyrä jyrkkenee koko matkan, joten resistanssin täytyy kasvaa jännitteen mukana. Lukema $12\,\Omega$ on suurempi kuin $9{,}5\,\Omega$, kuten pitää.
+
+### c)
+**Annettu:** pariston jännite $E = 4{,}0\,\text{V}$, lampun suurin jännite $U_\text{L} = 3{,}0\,\text{V}$ ja ominaiskäyrä
+**Kysytty:** vastuksen kytkentä ja sen resistanssi $R$
+**Periaate:** Lampun suurin jännite $3{,}0\,\text{V}$ on pienempi kuin pariston $4{,}0\,\text{V}$. Loput jännitteestä on siis otettava vastukselle. Vastus kytketään lampun kanssa sarjaan. Sarjassa virta on sama ja jännitteet summautuvat, $E = U_\text{L} + U_\text{R}$ (luvut *Vastusten sarja- ja rinnankytkennät* ja *Kirchhoffin lait ja potentiaali virtapiirissä*). Rinnankytkennässä lampun yli olisi koko $4{,}0\,\text{V}$. Se ei auta.
+**Kuvaajan lukeminen:** Jännitettä $3{,}0\,\text{V}$ vastaava virta luetaan käyrän päätepisteestä: $I = 0{,}25\,\text{A}$. Sama virta kulkee vastuksen läpi.
+**Kaava:** $U_\text{R} = E - U_\text{L}$ ja $R = \dfrac{U_\text{R}}{I}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+U_\text{R} &= 4{,}0\,\text{V} - 3{,}0\,\text{V} \\
+&= 1{,}0\,\text{V}
+\end{aligned}
+$$; $$
+\begin{aligned}
+R &= \dfrac{1{,}0\,\text{V}}{0{,}25\,\text{A}} \\
+&= 4{,}0\,\Omega
+\end{aligned}
+$$
+**Vastaus:** Vastus kytketään lampun kanssa sarjaan, ja sen resistanssin pitää olla $R = 4{,}0\,\Omega$. Kaksi merkitsevää numeroa kuten jännitteet.
+**Järkevyys:** Koko piirin resistanssi on $\dfrac{4{,}0\,\text{V}}{0{,}25\,\text{A}} = 16\,\Omega$. Lampun resistanssi on $12\,\Omega$ (b-kohta). Vastukselle jää $16\,\Omega - 12\,\Omega = 4{,}0\,\Omega$. Tulos on sama.
+
+### d)
+**Annettu:** $E = 4{,}0\,\text{V}$, $U_\text{L} = 3{,}0\,\text{V}$, $U_\text{R} = 1{,}0\,\text{V}$ ja $I = 0{,}25\,\text{A}$
+**Kysytty:** lampun teho $P_\text{L}$, vastuksen teho $P_\text{R}$ ja lampun osuus pariston tehosta
+**Periaate:** Sähköteho on jännitteen ja virran tulo, $P = UI$ (luku *Sähköteho ja vastuksen lämpeneminen*). Pariston teho on yhtä suuri kuin lampun ja vastuksen tehojen summa.
+**Kaava:** $P = UI$ ja osuus $= \dfrac{P_\text{L}}{P}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+P_\text{L} &= 3{,}0\,\text{V} \cdot 0{,}25\,\text{A} \\
+&= 0{,}75\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P_\text{R} &= 1{,}0\,\text{V} \cdot 0{,}25\,\text{A} \\
+&= 0{,}25\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P &= 4{,}0\,\text{V} \cdot 0{,}25\,\text{A} \\
+&= 1{,}0\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\text{osuus} &= \dfrac{0{,}75\,\text{W}}{1{,}0\,\text{W}} \\
+&= 0{,}75 \\
+&= 75\,\%
+\end{aligned}
+$$
+**Vastaus:** Lampun teho on $P_\text{L} = 0{,}75\,\text{W}$ ja vastuksen $P_\text{R} = 0{,}25\,\text{W}$. Lampussa muuttuu $75\,\%$ pariston tehosta, kaksi merkitsevää numeroa kuten jännitteet.
+**Järkevyys:** Virta on sama, joten teho jakautuu samassa suhteessa kuin jännite, $3{,}0 : 1{,}0$. Lisäksi $0{,}75\,\text{W} + 0{,}25\,\text{W} = 1{,}0\,\text{W}$. Vastus ($0{,}25\,\text{W}$) lämpenee vain vähän.
+
+### Yleisiä virheitä
+- a-kohdassa resistanssi otetaan käyrän kulmakertoimesta tai lasketaan $R = I/U$, jolloin tulos on käänteisluku $0{,}105\,\text{S}$ eikä resistanssi.
+- b-kohdassa oletetaan, että lamppu noudattaa Ohmin lakia ja resistanssi pysyy samana, tai selitykseksi sanotaan vain "käyrä kaartuu" ilman lämpenemistä.
+- c-kohdassa vastus kytketään lampun kanssa rinnan, tai vastuksen jännitteeksi otetaan $4{,}0\,\text{V}$ eikä $1{,}0\,\text{V}$.
+- d-kohdassa vastuksen tehoksi lasketaan $R I^2$ väärällä virralla, tai lampun osuus jaetaan vastuksen tehosta ($0{,}75 : 0{,}25 = 3{,}0$) eikä kokonaistehosta.
+
+### Hyväksytään myös
+- c-kohdassa vastuksen resistanssi voidaan laskea myös koko piirin resistanssista: $$
+\begin{aligned}
+R &= \dfrac{E}{I} - R_\text{L} \\
+&= 16\,\Omega - 12\,\Omega \\
+&= 4{,}0\,\Omega
+\end{aligned}
+$$.
+- d-kohdassa pariston teho voidaan laskea myös tehojen summana $P_\text{L} + P_\text{R}$.
+
+## fy9-tasavirta-s8
+
+### a)
+**Annettu:** $E = 12\,\text{V}$, $R_3 = 20\,\Omega$, $R_1 = 60\,\Omega$ ja $R_2 = 30\,\Omega$; sisäinen resistanssi ja johtojen resistanssi $= 0$
+**Kysytty:** pariston virta $I$
+**Periaate:** Kuvasta nähdään, että $60\,\Omega$:n ja $30\,\Omega$:n vastukset ovat rinnan. Niiden ryhmä on sarjassa $20\,\Omega$:n vastuksen kanssa. Rinnankytkennän resistanssi on pienempi kuin kumpikaan vastus. Sarjassa resistanssit lasketaan yhteen (luku *Vastusten sarja- ja rinnankytkennät*). Pariston virta saadaan Ohmin laista, kun kokonaisresistanssi tunnetaan (luku *Resistanssi ja Ohmin laki*).
+**Kaava:** $R_\text{p} = \dfrac{R_1 R_2}{R_1 + R_2}$, $R = R_3 + R_\text{p}$ ja $I = \dfrac{E}{R}$
+**Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
+**Sijoitus:** $$
+\begin{aligned}
+R_\text{p} &= \dfrac{60\,\Omega \cdot 30\,\Omega}{60\,\Omega + 30\,\Omega} \\
+&= 20\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+R &= 20\,\Omega + 20\,\Omega \\
+&= 40\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+I &= \dfrac{12\,\text{V}}{40\,\Omega} \\
+&= 0{,}30\,\text{A}
+\end{aligned}
+$$
+**Vastaus:** Paristosta kulkee virta $I = 0{,}30\,\text{A}$, kaksi merkitsevää numeroa kuten jännite ja resistanssit.
+**Järkevyys:** Virta on pienempi kuin $\dfrac{12\,\text{V}}{20\,\Omega} = 0{,}60\,\text{A}$, koska muut vastukset lisäävät resistanssia. Virta on myös suurempi kuin $\dfrac{12\,\text{V}}{110\,\Omega} \approx 0{,}11\,\text{A}$, joka saataisiin, jos kaikki vastukset olisivat sarjassa.
+
+### b)
+**Annettu:** $E = 12\,\text{V}$, $R_3 = 20\,\Omega$, $R_1 = 60\,\Omega$, $R_2 = 30\,\Omega$ ja $I = 0{,}30\,\text{A}$ a-kohdasta
+**Kysytty:** virrat $I_{60}$ ja $I_{30}$
+**Periaate:** Koko virta $I$ kulkee $20\,\Omega$:n vastuksen läpi. Kirchhoffin jännitelain mukaan rinnakkaisille vastuksille jää jännite $U_\text{p} = E - I R_3$, ja se on sama kummankin vastuksen yli (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Kummankin virta saadaan Ohmin laista.
+**Kaava:** $U_\text{p} = E - I R_3$ ja $I_k = \dfrac{U_\text{p}}{R_k}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+U_\text{p} &= 12\,\text{V} - 0{,}30\,\text{A} \cdot 20\,\Omega \\
+&= 6{,}0\,\text{V}
+\end{aligned}
+$$; $$
+\begin{aligned}
+I_{60} &= \dfrac{6{,}0\,\text{V}}{60\,\Omega} \\
+&= 0{,}10\,\text{A}
+\end{aligned}
+$$; $$
+\begin{aligned}
+I_{30} &= \dfrac{6{,}0\,\text{V}}{30\,\Omega} \\
+&= 0{,}20\,\text{A}
+\end{aligned}
+$$
+**Vastaus:** $60\,\Omega$:n vastuksessa kulkee $I_{60} = 0{,}10\,\text{A}$ ja $30\,\Omega$:n vastuksessa $I_{30} = 0{,}20\,\text{A}$. Kaksi merkitsevää numeroa kuten a-kohdan virta.
+**Järkevyys:** Virrat ovat yhdessä $0{,}10\,\text{A} + 0{,}20\,\text{A} = 0{,}30\,\text{A}$. Se on sama kuin pariston virta. Pienempi resistanssi vie suuremman virran. Virtojen suhde on $1 : 2$, kuten resistanssien käänteissuhde.
+
+### c)
+**Annettu:** $R_3 = 20\,\Omega$, $E = 12\,\text{V}$ ja $I = 0{,}30\,\text{A}$
+**Kysytty:** $20\,\Omega$:n vastuksen teho $P_{20}$ ja koko kytkennän teho $P$
+**Periaate:** Vastuksen teho on $P = R I^2$ (luku *Sähköteho ja vastuksen lämpeneminen*). Pariston koko piirille antama teho on $P = EI$, koska pariston ja johtojen häviöt jätetään huomiotta.
+**Kaava:** $P_{20} = R_3 I^2$ ja $P = EI$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+P_{20} &= 20\,\Omega \cdot (0{,}30\,\text{A})^2 \\
+&= 1{,}8\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P &= 12\,\text{V} \cdot 0{,}30\,\text{A} \\
+&= 3{,}6\,\text{W}
+\end{aligned}
+$$
+**Vastaus:** $20\,\Omega$:n vastuksen teho on $P_{20} = 1{,}8\,\text{W}$ ja koko kytkennän teho $P = 3{,}6\,\text{W}$, kaksi merkitsevää numeroa kuten virta.
+**Järkevyys:** Muiden vastusten tehot ovat $60\,\Omega \cdot (0{,}10\,\text{A})^2 = 0{,}60\,\text{W}$ ja $30\,\Omega \cdot (0{,}20\,\text{A})^2 = 1{,}2\,\text{W}$. Yhteensä $$
+\begin{aligned}
+P &= 1{,}8\,\text{W} + 0{,}60\,\text{W} \\
+&\quad + 1{,}2\,\text{W} \\
+&= 3{,}6\,\text{W}
+\end{aligned}
+$$, sama kuin pariston teho.
+
+### d)
+**Annettu:** $30\,\Omega$:n vastus poistetaan; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ ja $R_1 = 60\,\Omega$; aiemmin $P_{60} = 0{,}60\,\text{W}$ ja $I = 0{,}30\,\text{A}$
+**Kysytty:** $60\,\Omega$:n vastuksen uusi teho $P_{60}'$ ja muutos
+**Periaate:** Nyt $20\,\Omega$:n ja $60\,\Omega$:n vastukset ovat sarjassa, ja piirin resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Ennuste: virta pienenee, ja samalla $20\,\Omega$:n vastuksen jännite pienenee. Siksi $60\,\Omega$:n vastukselle jää suurempi jännite, ja sen teho kasvaa. Kirchhoffin jännitelaki antaa jännitteen ja teho on $P = U^2/R$ (luvut *Kirchhoffin lait ja potentiaali virtapiirissä* ja *Sähköteho ja vastuksen lämpeneminen*).
+**Kaava:** $R = R_3 + R_1$, $I = \dfrac{E}{R}$, $U_1 = E - I R_3$ ja $P = \dfrac{U_1^2}{R_1}$
+**Mallivastaus:** Kun $30\,\Omega$:n vastus puuttuu, piirissä on vain $R_3$ ja $R_1$ sarjassa. $$
+\begin{aligned}
+R &= 20\,\Omega + 60\,\Omega \\
+&= 80\,\Omega
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+I &= \dfrac{12\,\text{V}}{80\,\Omega} \\
+&= 0{,}15\,\text{A}
+\end{aligned}
+$$ Vastuksen $R_1$ jännite on $$
+\begin{aligned}
+U_1 &= 12\,\text{V} - 0{,}15\,\text{A} \cdot 20\,\Omega \\
+&= 9{,}0\,\text{V}
+\end{aligned}
+$$ ja teho $$
+\begin{aligned}
+P_{60}' &= \dfrac{(9{,}0\,\text{V})^2}{60\,\Omega} \\
+&= 1{,}35\,\text{W}
+\end{aligned}
+$$ Teho kasvaa arvosta $0{,}60\,\text{W}$ arvoon $1{,}35\,\text{W}$ eli $2{,}3$-kertaiseksi. Pariston virta pienenee silti arvosta $0{,}30\,\text{A}$ arvoon $0{,}15\,\text{A}$. Jännite vastuksen yli kasvaa arvosta $6{,}0\,\text{V}$ arvoon $9{,}0\,\text{V}$. Teho kasvaa jännitteen neliönä: $(9{,}0 : 6{,}0)^2 = 2{,}25$.
+**Järkevyys:** Tarkistus virralla: $P_{60}' = 60\,\Omega \cdot (0{,}15\,\text{A})^2 = 1{,}35\,\text{W}$, sama tulos.
+
+### Yleisiä virheitä
+- a-kohdassa $60\,\Omega$ ja $30\,\Omega$ lasketaan yhteen ($90\,\Omega$) tai rinnankytkennän resistanssiksi otetaan $1 : 60 + 1 : 30$ ilman käänteislukua, jolloin kokonaisresistanssi on väärä.
+- b-kohdassa rinnakkaisten vastusten jännitteeksi otetaan pariston koko $12\,\text{V}$, vaikka $20\,\Omega$:n vastus vie osan jännitteestä.
+- c-kohdassa $20\,\Omega$:n vastuksen tehoksi lasketaan $12\,\text{V} \cdot 0{,}30\,\text{A}$ eli koko kytkennän teho, tai virta jätetään neliöimättä.
+- d-kohdassa päätellään, että virran pienentyessä myös $60\,\Omega$:n vastuksen teho pienenee, vaikka sen jännite kasvaa.
+
+### Hyväksytään myös
+- a-kohdassa rinnankytkennän resistanssi voidaan laskea käänteislukujen summana: $\dfrac{1}{R_\text{p}} = \dfrac{1}{60\,\Omega} + \dfrac{1}{30\,\Omega} = \dfrac{1}{20\,\Omega}$.
+- d-kohdassa teho voidaan laskea muodossa $R I^2$ tai $UI$.

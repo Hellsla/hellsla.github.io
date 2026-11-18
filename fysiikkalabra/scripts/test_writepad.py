@@ -65,6 +65,7 @@ for lang in i18n.languages():
             import courses as _c, json as _j
             slots = [l["id"] for l in _j.loads((SITE.parent / "curriculum.json").read_text())[_c.course_of(f.stem)]["lessons"]]
             want = [f"{slots.index(f.stem) + 1}-{k}" for k in range(1, len(nums) + 1)]
+            nums = sorted(nums, key=lambda n: int(n.split("-")[1]))   # the core exercises come first on the page (U1); the numbers still run over every level
             if not nums or nums != want: expect(f"{lang} {f.name}: exercises numbered {want[:1]}…{want[-1:]} over every level", False, str(nums))
 for lang in pages:
     expect(f"{lang}: {len(pages[lang])} published lessons have exercises", True)
