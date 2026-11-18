@@ -3,7 +3,9 @@
 ### a)
 **Annettu:** kierrokset $N = 60$, pinta-ala $A = 0{,}060\,\text{m}^2$, magneettivuon tiheys $B = 0{,}50\,\text{T}$, pyörimistaajuus $f = 50\,\text{Hz}$
 **Kysytty:** jännitteen huippuarvo $e_0$ ja tehollinen arvo $U$
-**Periaate:** Kun käämi pyörii tasaisesti homogeenisessa kentässä, sen läpi kulkeva vuo vaihtelee jaksollisesti, ja induktiolain mukaan käämiin syntyy sinimuotoinen jännite. Jännite on huippuarvossaan, kun käämin taso on kentän suuntainen, koska vuo muuttuu silloin nopeimmin (luvut *Sähkömagneettinen induktio* ja *Generaattori ja vaihtovirta*). Tehollinen arvo on se tasajännite, joka antaisi vastukseen saman keskimääräisen tehon; sinimuotoisella jännitteellä se on huippuarvo jaettuna luvulla $\sqrt{2}$.
+**Periaate:** Kun käämi pyörii tasaisesti homogeenisessa kentässä, sen läpi kulkeva vuo vaihtelee jaksollisesti, ja induktiolain mukaan käämiin syntyy sinimuotoinen jännite. Jännite on huippuarvossaan, kun käämin taso on kentän suuntainen, koska vuo muuttuu silloin nopeimmin (luvut *Sähkömagneettinen induktio* ja *Generaattori ja vaihtovirta*).
+
+Tehollinen arvo on se tasajännite, joka antaisi vastukseen saman keskimääräisen tehon; sinimuotoisella jännitteellä se on huippuarvo jaettuna luvulla $\sqrt{2}$.
 **Kaava:** $e_0 = NBA \cdot 2\pi f$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$
@@ -85,7 +87,9 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 ### d)
 **Kysytty:** miksi loivasti kaartuva kuitu johtaa valoa mutta jyrkkä mutka päästää sen ulos
 **Periaate:** Valo pysyy ytimessä, kun tulokulma ytimen ja kuoren rajapinnassa on rajakulmaa suurempi, tässä kuidussa vähintään $81{,}8^\circ$ (luku *Kokonaisheijastuminen ja valokuitu*).
-**Mallivastaus:** Loivassa kaaressa rajapinnan suunta muuttuu säteen matkalla vain vähän, joten säde osuu rajapintaan edelleen lähes sen suuntaisesti, ja tulokulma pysyy rajakulmaa suurempana. Valo kokonaisheijastuu ja seuraa kuitua. Jyrkässä mutkassa ulkokaaren rajapinta kääntyy säteen eteen, joten säde osuu siihen jyrkemmin: tulokulma pienenee alle $81{,}8^\circ$:n, valo taittuu kuoreen ja vuotaa ulos. Koska rajakulma on lähellä $90^\circ$, jo melko pieni muutos tulokulmassa riittää. Siksi kuitukaapelille ilmoitetaan pienin sallittu taivutussäde.
+**Mallivastaus:** Loivassa kaaressa rajapinnan suunta muuttuu säteen matkalla vain vähän, joten säde osuu rajapintaan edelleen lähes sen suuntaisesti, ja tulokulma pysyy rajakulmaa suurempana. Valo kokonaisheijastuu ja seuraa kuitua.
+
+Jyrkässä mutkassa ulkokaaren rajapinta kääntyy säteen eteen, joten säde osuu siihen jyrkemmin: tulokulma pienenee alle $81{,}8^\circ$:n, valo taittuu kuoreen ja vuotaa ulos. Koska rajakulma on lähellä $90^\circ$, jo melko pieni muutos tulokulmassa riittää. Siksi kuitukaapelille ilmoitetaan pienin sallittu taivutussäde.
 
 ### Yleisiä virheitä
 - a-kohdassa taitekertoimet käännetään, $\sin\alpha_\text{r} = \tfrac{n_1}{n_2} > 1$, tai kulma annetaan akselin suhteen tulokulmana.
@@ -181,11 +185,19 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
   <foreignObject x="263" y="169.5" width="133" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{loivenee}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Kenttä pienenee etäisyyden kasvaessa yhä hitaammin, mutta se ei ole kääntäen verrannollinen etäisyyteen. Jos olisi, kaksinkertainen etäisyys puolittaisi kentän, mutta $2{,}0\,\text{cm}$:stä $4{,}0\,\text{cm}$:iin kenttä pienenee vain $132\,\mu\text{T}$:sta $72\,\mu\text{T}$:iin, ja $4{,}0\,\text{cm}$:stä $8{,}0\,\text{cm}$:iin $72\,\mu\text{T}$:sta $41\,\mu\text{T}$:iin. Myös tulo $Br$ kasvaa: $264$, $270$, $288$, $300$, $328$ ja $372\,\mu\text{T} \cdot \text{cm}$. Kääntäen verrannollisessa riippuvuudessa se olisi vakio. Käyrä ei siis lähesty nollaa vaan jotakin positiivista arvoa: kenttään näyttää sisältyvän etäisyydestä riippumaton osa.
+**Mallivastaus:** Kenttä pienenee etäisyyden kasvaessa yhä hitaammin, mutta se ei ole kääntäen verrannollinen etäisyyteen.
+
+Jos olisi, kaksinkertainen etäisyys puolittaisi kentän, mutta $2{,}0\,\text{cm}$:stä $4{,}0\,\text{cm}$:iin kenttä pienenee vain $132\,\mu\text{T}$:sta $72\,\mu\text{T}$:iin, ja $4{,}0\,\text{cm}$:stä $8{,}0\,\text{cm}$:iin $72\,\mu\text{T}$:sta $41\,\mu\text{T}$:iin. Myös tulo $Br$ kasvaa: $264$, $270$, $288$, $300$, $328$ ja $372\,\mu\text{T} \cdot \text{cm}$. Kääntäen verrannollisessa riippuvuudessa se olisi vakio.
+
+Käyrä ei siis lähesty nollaa vaan jotakin positiivista arvoa: kenttään näyttää sisältyvän etäisyydestä riippumaton osa.
 
 ### b)
 **Kysytty:** aineiston esitys niin, että pisteisiin sopii suora, perustelu ja sovitettu suora
-**Kuvaaja:** Pitkän suoran johtimen kenttä on $B = \tfrac{\mu_0 I}{2\pi r} = \tfrac{\mu_0 I}{2\pi} \cdot \tfrac{1}{r}$, joten $B$ on suoraan verrannollinen etäisyyden käänteislukuun. Jos mukana on lisäksi vakiokenttä $b$, $B = k \cdot \tfrac{1}{r} + b$, joka on edelleen suora $(\tfrac{1}{r}, B)$-koordinaatistossa. Lasketaan käänteisluvut: $50{,}0$, $33{,}3$, $25{,}0$, $16{,}7$, $12{,}5$ ja $8{,}33\,\tfrac{1}{\text{m}}$. Vaaka-akselilla on $\tfrac{1}{r}\ (\tfrac{1}{\text{m}})$ ja pystyakselilla $B\ (\mu\text{T})$. Suora sovitetaan pisteiden lomitse eikä pakoteta origon kautta, jotta mahdollinen vakiokenttä näkyy.
+**Kuvaaja:** Pitkän suoran johtimen kenttä on $B = \tfrac{\mu_0 I}{2\pi r} = \tfrac{\mu_0 I}{2\pi} \cdot \tfrac{1}{r}$, joten $B$ on suoraan verrannollinen etäisyyden käänteislukuun. Jos mukana on lisäksi vakiokenttä $b$, $B = k \cdot \tfrac{1}{r} + b$, joka on edelleen suora $(\tfrac{1}{r}, B)$-koordinaatistossa.
+
+Lasketaan käänteisluvut: $50{,}0$, $33{,}3$, $25{,}0$, $16{,}7$, $12{,}5$ ja $8{,}33\,\tfrac{1}{\text{m}}$. Vaaka-akselilla on $\tfrac{1}{r}\ (\tfrac{1}{\text{m}})$ ja pystyakselilla $B\ (\mu\text{T})$.
+
+Suora sovitetaan pisteiden lomitse eikä pakoteta origon kautta, jotta mahdollinen vakiokenttä näkyy.
 
 <svg data-fig="fy9-magnetismi-valo-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: magneettivuon tiheys B mikrotesloina etäisyyden käänteisluvun 1 per r funktiona yksikössä 1 per metri. Kuusi mustaa pistettä välillä 8–50 per metri, arvot 31:stä 132 mikroteslaan. Pisteisiin on sovitettu nouseva suora, jota on jatkettu katkoviivana pystyakselille, jonka se leikkaa noin arvossa 11 mikroteslaa, selvästi origon yläpuolella. Suoralta on ympyröity kaksi pistettä, (5,0; 23) ja (50; 132), joista luetaan kulmakerroin noin 2,42 mikroteslaa kertaa metri." style="max-width:100%;font-size:30px">
   <line x1="126.5" y1="380" x2="126.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -291,12 +303,18 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 ### d)
 **Annettu:** suoran kulmakerroin $k \approx 2{,}42\,\mu\text{T} \cdot \text{m}$ ja vakiotermi $b \approx 10{,}9\,\mu\text{T}$ (c-kohdan luetuista pisteistä: $23\,\mu\text{T} - 2{,}422\,\mu\text{T} \cdot \text{m} \cdot 5{,}0\,\tfrac{1}{\text{m}}$), etäisyys $r = 50\,\text{cm}$, johtimen pituus $2{,}0\,\text{m}$
 **Kysytty:** mitä vakiotermi kertoo mittauksesta ja anturin lukema $50\,\text{cm}$:n päässä
-**Periaate:** Johtimen oma kenttä on kääntäen verrannollinen etäisyyteen, joten vakiotermi on kenttää, joka ei riipu virrasta eikä etäisyydestä. Anturi pysyi samassa asennossa eikä sitä nollattu, joten sen lukemaan sisältyy Maan magneettikentän komponentti anturin suunnassa ja anturin oma nollakohta (luvut *Magneetit, magneettinen dipoli ja magneettikenttä* ja *Mittaaminen ja mittauksen luotettavuus*). Lukema kauempana saadaan sovitetun suoran yhtälöstä, mutta pitkän johtimen malli pätee vain, kun etäisyys on paljon pienempi kuin johtimen pituus.
+**Periaate:** Johtimen oma kenttä on kääntäen verrannollinen etäisyyteen, joten vakiotermi on kenttää, joka ei riipu virrasta eikä etäisyydestä.
+
+Anturi pysyi samassa asennossa eikä sitä nollattu, joten sen lukemaan sisältyy Maan magneettikentän komponentti anturin suunnassa ja anturin oma nollakohta (luvut *Magneetit, magneettinen dipoli ja magneettikenttä* ja *Mittaaminen ja mittauksen luotettavuus*). Lukema kauempana saadaan sovitetun suoran yhtälöstä, mutta pitkän johtimen malli pätee vain, kun etäisyys on paljon pienempi kuin johtimen pituus.
 **Kuvaajan lukeminen:** Suora leikkaa $B$-akselin noin arvossa $11\,\mu\text{T}$; luetuista pisteistä $b = 23\,\mu\text{T} - 2{,}422\,\mu\text{T} \cdot \text{m} \cdot 5{,}0\,\tfrac{1}{\text{m}} = 10{,}9\,\mu\text{T}$.
 **Kaava:** $B = \dfrac{k}{r} + b$
 **Muunnokset:** $50\,\text{cm} = 50 \cdot 0{,}01\,\text{m} = 0{,}50\,\text{m}$
 **Sijoitus:** $B = \dfrac{2{,}422\,\mu\text{T} \cdot \text{m}}{0{,}50\,\text{m}} + 10{,}9\,\mu\text{T} = 4{,}84\,\mu\text{T} + 10{,}9\,\mu\text{T} = 15{,}7\,\mu\text{T}$
-**Vastaus:** Vakiotermi noin $11\,\mu\text{T}$ on johtimen virrasta riippumaton vakiokenttä: Maan magneettikentän komponentti anturin suunnassa ja anturin nollakohdan siirtymä. Sen voi tarkistaa mittaamalla lukeman virta katkaistuna, jolloin anturin pitäisi näyttää noin $11\,\mu\text{T}$. Mallin mukaan anturi näyttäisi $50\,\text{cm}$:n päässä noin $16\,\mu\text{T}$, kaksi merkitsevää numeroa, koska tulos riippuu kuvaajalta luetusta vakiotermistä. Tulos on vain arvio, koska $50\,\text{cm}$ on mitatun alueen ($2$–$12\,\text{cm}$) ulkopuolella ja johtimen pituus $2{,}0\,\text{m}$ ei ole enää paljon suurempi kuin etäisyys, joten johtimen oma kenttä on hieman pienempi kuin $4{,}8\,\mu\text{T}$.
+**Vastaus:** Vakiotermi noin $11\,\mu\text{T}$ on johtimen virrasta riippumaton vakiokenttä: Maan magneettikentän komponentti anturin suunnassa ja anturin nollakohdan siirtymä.
+
+Sen voi tarkistaa mittaamalla lukeman virta katkaistuna, jolloin anturin pitäisi näyttää noin $11\,\mu\text{T}$. Mallin mukaan anturi näyttäisi $50\,\text{cm}$:n päässä noin $16\,\mu\text{T}$, kaksi merkitsevää numeroa, koska tulos riippuu kuvaajalta luetusta vakiotermistä.
+
+Tulos on vain arvio, koska $50\,\text{cm}$ on mitatun alueen ($2$–$12\,\text{cm}$) ulkopuolella ja johtimen pituus $2{,}0\,\text{m}$ ei ole enää paljon suurempi kuin etäisyys, joten johtimen oma kenttä on hieman pienempi kuin $4{,}8\,\mu\text{T}$.
 **Järkevyys:** Etelä-Suomessa Maan kentän vaakakomponentti on noin $14\,\mu\text{T}$, joten $11\,\mu\text{T}$:n komponentti anturin suunnassa on uskottava. Vakiotermin saa myös kahdesta mittauksesta: jos $B = \tfrac{k}{r} + b$, niin $b = 2B(4{,}0\,\text{cm}) - B(2{,}0\,\text{cm}) = 2 \cdot 72\,\mu\text{T} - 132\,\mu\text{T} = 12\,\mu\text{T}$, lähes sama.
 
 ### Yleisiä virheitä
@@ -314,17 +332,31 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 ### a)
 **Kysytty:** miten sateenkaari syntyy ja kummalla reunalla punainen on
 **Periaate:** Taitekerroin riippuu aallonpituudesta (dispersio): vedessä violetin taitekerroin on suurin ja punaisen pienin. Sateenkaaressa valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos (luku *Dispersio: prisma ja sateenkaari*).
-**Mallivastaus:** Auringonvalo tulee pisaraan, taittuu sen etupinnassa, heijastuu pisaran takapinnasta ja taittuu uudelleen ulos. Koska veden taitekerroin on punaiselle $1{,}331$ ja violetille $1{,}343$, värit taittuvat eri määrän ja lähtevät pisarasta hieman eri suuntiin. Kirkkain valo lähtee punaisella noin $42^\circ$:n ja violetilla noin $40{,}6^\circ$:n kulmassa vastapisteen suuntaan nähden. Katsoja näkee punaista niistä pisaroista, jotka ovat $42^\circ$:n kulmassa, ja violettia hieman sisempänä olevista pisaroista. Siksi punainen on kaaren ulkoreunalla ja violetti sisäreunalla. Sateenkaaren kohdalla juhlavieraan väite pitää paikkansa: värit erottuvat, koska eri värit taittuvat vedessä eri määrän.
+**Mallivastaus:** Auringonvalo tulee pisaraan, taittuu sen etupinnassa, heijastuu pisaran takapinnasta ja taittuu uudelleen ulos. Koska veden taitekerroin on punaiselle $1{,}331$ ja violetille $1{,}343$, värit taittuvat eri määrän ja lähtevät pisarasta hieman eri suuntiin. Kirkkain valo lähtee punaisella noin $42^\circ$:n ja violetilla noin $40{,}6^\circ$:n kulmassa vastapisteen suuntaan nähden.
+
+Katsoja näkee punaista niistä pisaroista, jotka ovat $42^\circ$:n kulmassa, ja violettia hieman sisempänä olevista pisaroista. Siksi punainen on kaaren ulkoreunalla ja violetti sisäreunalla.
+
+Sateenkaaren kohdalla juhlavieraan väite pitää paikkansa: värit erottuvat, koska eri värit taittuvat vedessä eri määrän.
 
 ### b)
 **Kysytty:** miten saippuakuplan värit syntyvät ja miksi ohuin kohta näyttää tummalta
 **Periaate:** Ohuen kalvon kahdesta pinnasta heijastuneet aallot interferoivat. Kohtisuorassa tulossa niiden matkaero on $2nd$, ja aalto kääntyy, kun se heijastuu suuremman taitekertoimen ainetta vasten (luku *Ohuen kalvon interferenssi*).
-**Mallivastaus:** Kupla on ohut saippuavesikalvo, jonka molemmin puolin on ilmaa. Osa valosta heijastuu kalvon ulkopinnasta ja osa sisäpinnasta, ja nämä aallot interferoivat. Niiden matkaero $2nd$ riippuu kalvon paksuudesta $d$: joillakin aallonpituuksilla aallot vahvistavat toisiaan ja toisilla heikentävät. Valkoisesta valosta jää jäljelle aallonpituuksien sekoitus, joka näkyy värinä, ja kun kalvon paksuus vaihtelee, väri vaihtuu raidoittain. Vain ulkopinnan heijastus kääntää aallon, koska valo heijastuu siinä ilmasta saippuaveteen. Juuri ennen puhkeamista kuplan yläosa on hyvin ohut, $2nd \approx 0$, joten heijastuneet aallot ovat lähes vastakkaisessa vaiheessa ja kumoavat toisensa kaikilla aallonpituuksilla, ja kohta näyttää tummalta. Kuplan kohdalla väite on väärä: värit syntyvät interferenssistä, eivät taittumisesta, ja väri riippuu kalvon paksuudesta.
+**Mallivastaus:** Kupla on ohut saippuavesikalvo, jonka molemmin puolin on ilmaa. Osa valosta heijastuu kalvon ulkopinnasta ja osa sisäpinnasta, ja nämä aallot interferoivat.
+
+Niiden matkaero $2nd$ riippuu kalvon paksuudesta $d$: joillakin aallonpituuksilla aallot vahvistavat toisiaan ja toisilla heikentävät. Valkoisesta valosta jää jäljelle aallonpituuksien sekoitus, joka näkyy värinä, ja kun kalvon paksuus vaihtelee, väri vaihtuu raidoittain.
+
+Vain ulkopinnan heijastus kääntää aallon, koska valo heijastuu siinä ilmasta saippuaveteen. Juuri ennen puhkeamista kuplan yläosa on hyvin ohut, $2nd \approx 0$, joten heijastuneet aallot ovat lähes vastakkaisessa vaiheessa ja kumoavat toisensa kaikilla aallonpituuksilla, ja kohta näyttää tummalta.
+
+Kuplan kohdalla väite on väärä: värit syntyvät interferenssistä, eivät taittumisesta, ja väri riippuu kalvon paksuudesta.
 
 ### c)
 **Kysytty:** miten CD-levy synnyttää värit, punaisen ja violetin ensimmäisen kertaluvun kulmat ja arvio väitteestä
 **Periaate:** Tiheät, säännöllisin välein toistuvat urat toimivat heijastushilana. Vierekkäisistä urista heijastuneet aallot vahvistavat toisiaan suunnissa, joille $d\sin\theta = k\lambda$ (luku *Valon interferenssi ja diffraktio*).
-**Mallivastaus:** CD-levyn pinnassa on spiraalina kulkeva ura, jonka vierekkäiset kierrokset ovat $1{,}6\,\mu\text{m}$:n päässä toisistaan. Jokainen ura heijastaa valoa, ja eri urista heijastuneet aallot vahvistavat toisiaan vain suunnissa, joissa niiden matkaero on kokonainen määrä aallonpituuksia. Kohtisuorassa tulossa ensimmäinen kertaluku on punaiselle $\sin\theta = \tfrac{650 \cdot 10^{-9}\,\text{m}}{1{,}6 \cdot 10^{-6}\,\text{m}} = 0{,}41$ eli $\theta \approx 24^\circ$ ja violetille $\sin\theta = \tfrac{400 \cdot 10^{-9}\,\text{m}}{1{,}6 \cdot 10^{-6}\,\text{m}} = 0{,}25$ eli $\theta \approx 14{,}5^\circ$. Punainen poikkeaa siis eniten, päinvastoin kuin pisarassa ja prismassa, mikä osoittaa, että värit syntyvät eri tavalla. Kokonaisuutena juhlavieraan väite on väärä. Se pitää paikkansa vain sateenkaaressa. Kuplan värit syntyvät kalvon kahden pinnan heijastusten interferenssistä ja CD-levyn värit monen uran heijastusten interferenssistä, eikä niissä tarvita taittumista.
+**Mallivastaus:** CD-levyn pinnassa on spiraalina kulkeva ura, jonka vierekkäiset kierrokset ovat $1{,}6\,\mu\text{m}$:n päässä toisistaan. Jokainen ura heijastaa valoa, ja eri urista heijastuneet aallot vahvistavat toisiaan vain suunnissa, joissa niiden matkaero on kokonainen määrä aallonpituuksia.
+
+Kohtisuorassa tulossa ensimmäinen kertaluku on punaiselle $\sin\theta = \tfrac{650 \cdot 10^{-9}\,\text{m}}{1{,}6 \cdot 10^{-6}\,\text{m}} = 0{,}41$ eli $\theta \approx 24^\circ$ ja violetille $\sin\theta = \tfrac{400 \cdot 10^{-9}\,\text{m}}{1{,}6 \cdot 10^{-6}\,\text{m}} = 0{,}25$ eli $\theta \approx 14{,}5^\circ$. Punainen poikkeaa siis eniten, päinvastoin kuin pisarassa ja prismassa, mikä osoittaa, että värit syntyvät eri tavalla.
+
+Kokonaisuutena juhlavieraan väite on väärä. Se pitää paikkansa vain sateenkaaressa. Kuplan värit syntyvät kalvon kahden pinnan heijastusten interferenssistä ja CD-levyn värit monen uran heijastusten interferenssistä, eikä niissä tarvita taittumista.
 
 ### Yleisiä virheitä
 - a-kohdassa sanotaan, että punainen taittuu eniten, koska sen aallonpituus on pisin; vedessä violetti taittuu eniten.
@@ -346,7 +378,11 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 ### b)
 **Kysytty:** ovatko ryhmän johtopäätökset perusteltuja
 **Periaate:** Pienen kulman oletus $\sin\theta \approx \tfrac{x}{L}$ pätee vain pienillä kulmilla. Tulosta verrataan valmistajan arvoon epävarmuuden avulla, ja maksimien määrää rajoittaa ehto $k\lambda < d$ (luvut *Valon interferenssi ja diffraktio* ja *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, noin $6\,\%$ liikaa, ja toisesta $692\,\text{nm}$, noin $30\,\%$ liikaa, koska ero tangentin ja sinin välillä kasvaa kulman kasvaessa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$. Jos etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella, toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$, joten tulos on sopusoinnussa valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä, mikä jo sulkee pois punaisen valon. Kolmas kertaluku on olemassa, koska $$
+**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, noin $6\,\%$ liikaa, ja toisesta $692\,\text{nm}$, noin $30\,\%$ liikaa, koska ero tangentin ja sinin välillä kasvaa kulman kasvaessa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$.
+
+Jos etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella, toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$, joten tulos on sopusoinnussa valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä, mikä jo sulkee pois punaisen valon.
+
+Kolmas kertaluku on olemassa, koska $$
 \begin{aligned}
 &3\lambda \\
 &= 1{,}60\,\mu\text{m} \\
@@ -358,7 +394,11 @@ $$, mutta $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$ ja maksimi on $x
 ### c)
 **Kysytty:** miten mittausta parannetaan
 **Periaate:** Suhteellinen epävarmuus pienenee, kun mitattava etäisyys on suuri verrattuna sen lukemisen epävarmuuteen. Systemaattiset virheet, kuten vino asettelu, poistetaan mittaustavalla, ja tulos ilmoitetaan epävarmuuksineen (luvut *Mittaaminen ja mittauksen luotettavuus* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Mitataan keskimaksimin molemmin puolin olevien maksimien $+k$ ja $-k$ välinen etäisyys ja puolitetaan se. Kahden valopisteen välin mittaaminen on tarkempaa kuin keskimaksimin keskikohdan arvioiminen, ja jos etäisyydet eri puolille ovat yhtä suuret, säde osuu hilaan kohtisuoraan. Käytetään toista kertalukua, jonka $x$ on suuri, tai kasvatetaan etäisyyttä $L$, jotta lukemisen epävarmuus noin $0{,}3\,\text{cm}$ on pieni osa mitatusta etäisyydestä. Arvioidaan $\Delta x$ ja $\Delta L$, lasketaan aallonpituus niiden ääriarvoilla ja ilmoitetaan tulos muodossa $\lambda \pm \Delta\lambda$, esimerkiksi $(532 \pm 3)\,\text{nm}$, jotta sitä voi verrata valmistajan arvoon. Mittaus toistetaan, mieluiten eri henkilöiden lukemina, ja laskussa käytetään tangenttia eikä pienen kulman oletusta. Turvallisuus: lasersäteeseen ei katsota, eikä sitä suunnata kenenkään silmiin, eikä heijastavia esineitä jätetä säteen tielle.
+**Mallivastaus:** Mitataan keskimaksimin molemmin puolin olevien maksimien $+k$ ja $-k$ välinen etäisyys ja puolitetaan se. Kahden valopisteen välin mittaaminen on tarkempaa kuin keskimaksimin keskikohdan arvioiminen, ja jos etäisyydet eri puolille ovat yhtä suuret, säde osuu hilaan kohtisuoraan.
+
+Käytetään toista kertalukua, jonka $x$ on suuri, tai kasvatetaan etäisyyttä $L$, jotta lukemisen epävarmuus noin $0{,}3\,\text{cm}$ on pieni osa mitatusta etäisyydestä. Arvioidaan $\Delta x$ ja $\Delta L$, lasketaan aallonpituus niiden ääriarvoilla ja ilmoitetaan tulos muodossa $\lambda \pm \Delta\lambda$, esimerkiksi $(532 \pm 3)\,\text{nm}$, jotta sitä voi verrata valmistajan arvoon.
+
+Mittaus toistetaan, mieluiten eri henkilöiden lukemina, ja laskussa käytetään tangenttia eikä pienen kulman oletusta. Turvallisuus: lasersäteeseen ei katsota, eikä sitä suunnata kenenkään silmiin, eikä heijastavia esineitä jätetä säteen tielle.
 
 ### Yleisiä virheitä
 - a-kohdassa käytetään $\sin\theta = \tfrac{x}{L}$ tai $\sin\theta = \tfrac{x}{\sqrt{x^2 + L^2}}$ unohtaen jakaa kertaluvulla.
@@ -443,12 +483,18 @@ v &= \dfrac{11\,245 \cdot 26\,659\,\text{m}}{1\,\text{s}} \\
 &\approx 2{,}9978 \cdot 10^{8}\,\text{m/s}
 \end{aligned}
 $$
-**Vastaus:** Protonien vauhti on $v \approx 2{,}9978 \cdot 10^8\,\text{m/s}$, viisi merkitsevää numeroa kuten aineiston luvuissa. Vertailu: $$
+**Vastaus:** Protonien vauhti on $v \approx 2{,}9978 \cdot 10^8\,\text{m/s}$, viisi merkitsevää numeroa kuten aineiston luvuissa.
+
+Vertailu: $$
 \begin{aligned}
 \dfrac{v}{c} &= \dfrac{2{,}9978 \cdot 10^{8}\,\text{m/s}}{2{,}99792458 \cdot 10^{8}\,\text{m/s}} \\
 &\approx 0{,}99996
 \end{aligned}
-$$ eli vauhti on käytännössä valon nopeus. Laskettu ero, noin $12\,\text{km/s}$ eli $0{,}004\,\%$, ei kuitenkaan kerro, kuinka paljon protonit jäävät valon nopeudesta. Aineiston luvut on pyöristetty kokonaisiksi metreiksi ja kierroksiksi, ja jo tämä pyöristys sallii vauhdille välin $2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$, johon valon nopeus sisältyy. Aineistosta voi siis päätellä, että protonit kulkevat näiden lukujen tarkkuudella valon nopeudella, mutta todellista eroa siitä ei voi päätellä. Koska protonilla on massa, sen vauhti jää kuitenkin aina alle valon nopeuden.
+$$ eli vauhti on käytännössä valon nopeus.
+
+Laskettu ero, noin $12\,\text{km/s}$ eli $0{,}004\,\%$, ei kuitenkaan kerro, kuinka paljon protonit jäävät valon nopeudesta. Aineiston luvut on pyöristetty kokonaisiksi metreiksi ja kierroksiksi, ja jo tämä pyöristys sallii vauhdille välin $2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$, johon valon nopeus sisältyy.
+
+Aineistosta voi siis päätellä, että protonit kulkevat näiden lukujen tarkkuudella valon nopeudella, mutta todellista eroa siitä ei voi päätellä. Koska protonilla on massa, sen vauhti jää kuitenkin aina alle valon nopeuden.
 **Järkevyys:** Valo kulkee sekunnissa noin $300\,000\,\text{km}$, ja noin $27\,\text{km}$:n kehä mahtuu tähän matkaan noin $\tfrac{300\,000\,\text{km}}{27\,\text{km}} \approx 11\,000$ kertaa. Aineiston $11\,245$ kierrosta sekunnissa sopii tähän.
 
 ### b)
@@ -508,9 +554,13 @@ $$ ja $\dfrac{E}{E_\text{k}} = \dfrac{4{,}357 \cdot 10^{8}\,\text{J}}{5{,}787 \c
 **Periaate:** Magneettikentässä liikkuvaan varattuun hiukkaseen kohdistuu magneettinen voima, joka on kohtisuorassa hiukkasen nopeutta vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Liikesuuntaa vastaan kohtisuora voima ei tee työtä. Käämin magneettivuon tiheys on verrannollinen käämin virtaan (luku *Virtajohtimen ja käämin magneettikenttä*), ja johtimessa, jonka resistanssi on $R$, sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*).
 **Mallivastaus:** Aineiston mukaan (tarkistettu 16.11.2026) LHC:n $1232$ dipolimagneettia taivuttavat suihkujen rataa ja $392$ kvadrupolimagneettia kohdistavat suihkuja, magneetit jäähdytetään supranesteisellä heliumilla lämpötilaan $1{,}9\,\text{K}$, ja protonit kiihdytetään kiihdytysonteloissa.
 
-Magneettinen voima on kohtisuorassa protonin nopeutta vastaan, joten se muuttaa vain nopeuden suuntaa: dipolimagneettien kentässä suoraan pyrkivän protonin rata kaartuu ympyrän kaareksi, ja protoni pysyy renkaassa. Kvadrupolimagneettien kenttä ohjaa reunoille ajautuvia protoneja takaisin kohti suihkun keskustaa, joten suihku pysyy kapeana. Koska voima on kohtisuorassa liikesuuntaa vastaan, se ei tee työtä, eikä magneettikenttä siksi lisää protonin energiaa. Energia tulee kiihdytysonteloiden sähkökentästä, joka kohdistaa protoniin liikkeen suuntaisen voiman ja tekee työtä jokaisella kierroksella.
+Magneettinen voima on kohtisuorassa protonin nopeutta vastaan, joten se muuttaa vain nopeuden suuntaa: dipolimagneettien kentässä suoraan pyrkivän protonin rata kaartuu ympyrän kaareksi, ja protoni pysyy renkaassa. Kvadrupolimagneettien kenttä ohjaa reunoille ajautuvia protoneja takaisin kohti suihkun keskustaa, joten suihku pysyy kapeana.
 
-Mitä suurempi protonin energia on, sitä vahvempi kenttä tarvitaan pitämään se samalla radalla, ja vahva kenttä vaatii käämiin hyvin suuren virran. Tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$, joka kasvaa virran neliössä: käämit kuumenisivat, ja sisäenergia olisi siirrettävä jatkuvasti pois jäähdyttämällä. Lämpötilassa $1{,}9\,\text{K}$ käämien johdin on suprajohtavassa tilassa, jossa sen resistanssi on nolla. Silloin $RI^2 = 0$, ja suuri virta kulkee käämissä ilman häviötehoa. Suprajohtavuus tekee siis vahvat kentät mahdollisiksi, ja sen hinta on jäähdytys lähelle absoluuttista nollapistettä.
+Koska voima on kohtisuorassa liikesuuntaa vastaan, se ei tee työtä, eikä magneettikenttä siksi lisää protonin energiaa. Energia tulee kiihdytysonteloiden sähkökentästä, joka kohdistaa protoniin liikkeen suuntaisen voiman ja tekee työtä jokaisella kierroksella.
+
+Mitä suurempi protonin energia on, sitä vahvempi kenttä tarvitaan pitämään se samalla radalla, ja vahva kenttä vaatii käämiin hyvin suuren virran. Tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$, joka kasvaa virran neliössä: käämit kuumenisivat, ja sisäenergia olisi siirrettävä jatkuvasti pois jäähdyttämällä.
+
+Lämpötilassa $1{,}9\,\text{K}$ käämien johdin on suprajohtavassa tilassa, jossa sen resistanssi on nolla. Silloin $RI^2 = 0$, ja suuri virta kulkee käämissä ilman häviötehoa. Suprajohtavuus tekee siis vahvat kentät mahdollisiksi, ja sen hinta on jäähdytys lähelle absoluuttista nollapistettä.
 
 Radan sädettä ei voi laskea tällä kurssilla käytetystä lausekkeesta $r = \tfrac{mv}{qB}$ protonin massalla, koska protonit kulkevat lähes valon nopeudella eikä klassinen mekaniikka päde niille (b-kohta).
 
@@ -649,7 +699,11 @@ $$
 ### c)
 **Kysytty:** induktiovirran suunta eri aikaväleillä ja vuon nollakohdan vaikutus
 **Periaate:** Jännite indusoituu vain, kun vuo muuttuu, ja se riippuu vuon muutosnopeudesta (luku *Sähkömagneettinen induktio*). Lenzin lain mukaan induktiovirran magneettikenttä vastustaa vuon muutosta (luku *Lenzin laki ja pyörrevirrat*).
-**Mallivastaus:** Aikavälillä $0{,}40$–$0{,}60\,\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla. Aikavälillä $0$–$0{,}40\,\text{s}$ vuo pienenee. Induktiovirta vastustaa pienenemistä, joten sen oma magneettikenttä osoittaa vuon positiiviseen suuntaan, ja induktiojännite on positiivinen. Aikavälillä $0{,}60$–$0{,}80\,\text{s}$ vuo kasvaa kohti nollaa. Induktiovirta vastustaa kasvua, joten sen kenttä osoittaa negatiiviseen suuntaan, ja virta kulkee vastakkaiseen suuntaan kuin ensimmäisellä aikavälillä ($e = -1{,}8\,\text{V}$).
+**Mallivastaus:** Aikavälillä $0{,}40$–$0{,}60\,\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla.
+
+Aikavälillä $0$–$0{,}40\,\text{s}$ vuo pienenee. Induktiovirta vastustaa pienenemistä, joten sen oma magneettikenttä osoittaa vuon positiiviseen suuntaan, ja induktiojännite on positiivinen.
+
+Aikavälillä $0{,}60$–$0{,}80\,\text{s}$ vuo kasvaa kohti nollaa. Induktiovirta vastustaa kasvua, joten sen kenttä osoittaa negatiiviseen suuntaan, ja virta kulkee vastakkaiseen suuntaan kuin ensimmäisellä aikavälillä ($e = -1{,}8\,\text{V}$).
 
 Vuo on nolla hetkellä $t = \dfrac{5{,}0\,\text{mWb}}{20\,\text{mWb/s}} = 0{,}25\,\text{s}$. Silloin vuon muutosnopeus on sama $-20\,\text{mWb/s}$ kuin ennen ja jälkeen, ja induktiojännite on edelleen $2{,}4\,\text{V}$. Jännite riippuu vuon muutosnopeudesta, ei vuon arvosta, joten virran suunta ei muutu, vaikka vuon etumerkki vaihtuu.
 
