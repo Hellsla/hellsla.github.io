@@ -236,12 +236,12 @@ main.home+footer.bottom{margin-top:1.4rem}   /* 1.75rem left the Finnish page 2 
   .plan-list{margin-top:60px}   /* the gap one row high, so the planned courses' rows stay level with the modules' (teacher 2026-11-04) */
 }
 @media (min-width:700px) and (max-width:71.99rem){.mod-name{font-size:.9375rem;line-height:1.25}.mod-q{font-size:.8125rem;line-height:1.3}.mod-row{gap:.6rem;padding-inline:.4rem}}
-/* Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, build.py study_guide): a wider column than the reading
-   pages (the problem-solving map needs four cards side by side), text kept to the reading measure. Three parts under
-   full-width rules like a lesson's stages. 1 four numbered steps on thin rules, two columns, each with the lesson's
-   stage chips it means. 2 the map: the question, four ways (white cards, line icons) joined by quiet SVG curves to the
-   retry card in the accent tint; under 50rem a vertical rail with a node at each card. 3 five tips with line icons.
-   Green is the interaction colour, copper the thin accent (numbers, the question's outline). No animation. */
+/* Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17, build.py study_guide): a wider column than the
+   reading pages, text kept to the reading measure. Three parts under full-width rules like a lesson's stages. 1 the path:
+   the six steps as one diagram, a grid of outlined steps (line icon, the chapter's stage number, name, one sentence) joined
+   by arrows, 3 x 2 from a 40rem column and 2 x 3 below it, then the feedback loop back to practice in the accent tint.
+   2 eight tips and the help list, two columns from 40rem. 3 feedback and self-assessment side by side from 40rem.
+   Thin dark-grey outlines, green the interaction colour, copper the thin accent (the numbers). No animation. */
 main.study-page{max-width:60rem}
 .study-page .study-intro{max-width:var(--measure);padding-top:.4rem}
 .study-page .study-intro .lead{max-width:none;margin:0}
@@ -249,45 +249,41 @@ main.study-page{max-width:60rem}
 .study-sec>h2{margin:0 0 .5rem;font:600 clamp(1.5rem,1.3rem + .6vw,1.75rem)/1.2 var(--serif);letter-spacing:-.01em}
 .study-sec>.section-lead{max-width:var(--measure);font-size:var(--fs-body);margin:0 0 1.2rem}
 .study-page h3{margin:0 0 .3rem;font:700 var(--fs-h3)/1.3 var(--sans)}
-.study-page li p{margin:0;color:var(--ink-2)}
+.study-page li p,.study-page .study-two p{margin:0;color:var(--ink-2)}
 .study-icon{width:28px;height:28px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;color:var(--accent-deep)}
-/* 1 Näin pääset alkuun */
-.study-steps{list-style:none;counter-reset:step;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;column-gap:2rem}
-.study-steps>li{counter-increment:step;position:relative;margin:0;padding:1rem 0 1.1rem 2.6rem;border-bottom:1px solid var(--line)}
-.study-steps>li::before{content:counter(step);position:absolute;left:0;top:.85rem;font:600 1.75rem/1 var(--serif);color:var(--copper-ink)}
-.study-where{display:flex;flex-wrap:wrap;gap:.35rem;margin:.65rem 0 0}
-.study-chip{display:inline-flex;align-items:center;gap:.4rem;min-height:30px;padding:0 .7rem 0 .3rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font:600 var(--fs-small)/1.2 var(--sans);color:var(--ink-2)}
-.study-chip-no{display:inline-grid;place-items:center;width:1.4rem;height:1.4rem;border-radius:50%;border:1px solid var(--line);font-size:.75rem;font-weight:700;color:var(--accent-deep)}
-@container content (min-width:40rem){.study-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-/* 2 Jäikö tehtävä jumiin? */
-.stuck-map{position:relative;margin:1.4rem 0 0;padding-left:2.25rem}
-.stuck-map::before{content:"";position:absolute;left:.8rem;top:1.5rem;bottom:2.5rem;border-left:2px solid var(--fig-line)}
-.stuck-q{position:relative;display:inline-block;margin:0 0 1rem;padding:.55rem 1.25rem;border:1.5px solid var(--copper);border-radius:999px;background:var(--surface);font:600 1.25rem/1.3 var(--serif);color:var(--ink)}
-.stuck-ways{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
-.stuck-ways>li,.stuck-retry{position:relative;margin:0;padding:1rem 1.1rem 1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--card-radius)}
-.stuck-ways .study-icon,.stuck-retry .study-icon{display:block;margin:0 0 .5rem}
-.stuck-ways>li::before,.stuck-retry::before,.stuck-q::before{content:"";position:absolute;left:calc(-1.45rem - 6px);top:1.4rem;width:10px;height:10px;border-radius:50%;background:var(--bg);border:2px solid var(--fig-line)}
-.stuck-q::before{left:calc(-1.45rem - 7.5px);top:calc(50% - 6px)}
-.stuck-retry{margin-top:1rem;background:var(--accent-soft);border-color:var(--accent)}
-.stuck-retry::before{background:var(--accent);border-color:var(--accent)}
-.stuck-retry p{margin:0;color:var(--ink-2)}
-.stuck-lines{display:none}
-@container content (min-width:50rem){
-  .stuck-map{padding-left:0;text-align:center}
-  .stuck-map::before,.stuck-ways>li::before,.stuck-retry::before,.stuck-q::before{display:none}
-  .stuck-q{margin:0}
-  .stuck-lines{display:block;width:100%;height:2.5rem;fill:none;stroke:var(--fig-line);stroke-width:2;overflow:visible}
-  .stuck-lines path{vector-effect:non-scaling-stroke}
-  .stuck-ways{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 1rem;text-align:left}
-  .stuck-ways .study-icon{margin-bottom:.6rem}
-  .stuck-retry{display:inline-grid;grid-template-columns:auto minmax(0,1fr);column-gap:.8rem;align-items:start;max-width:34rem;margin:0;text-align:left}
-  .stuck-retry .study-icon{grid-row:span 2;margin:0}
+/* 1 the path */
+.study-path{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem 1.5rem}
+.study-path>li{position:relative;margin:0;padding:.9rem .9rem 1rem;background:var(--surface);border:1.5px solid var(--ink-2);border-radius:var(--card-radius)}
+.study-path .study-icon{display:block;margin:0 0 .45rem}
+.path-no{position:absolute;right:.8rem;top:.8rem;min-width:1.9rem;height:1.9rem;padding:0 .45rem;box-sizing:border-box;display:grid;place-items:center;border:1.5px solid var(--copper);border-radius:999px;font:700 var(--fs-small)/1 var(--sans);color:var(--copper-ink);font-variant-numeric:tabular-nums}
+.study-path h3{font-size:1.0625rem;overflow-wrap:break-word;hyphens:auto}
+.study-path p{font-size:var(--fs-ui);line-height:1.45}
+.study-path>li:nth-child(odd)::after{content:"→";content:"→" / "";position:absolute;right:-1.5rem;top:50%;width:1.5rem;margin-top:-.7rem;text-align:center;font:400 1.1rem/1.4 var(--sans);color:var(--ink-2)}
+.study-path>li:last-child::before{content:"";position:absolute;left:50%;top:100%;height:1.1rem;border-left:1.5px solid var(--ink-2)}
+.path-loop{display:flex;gap:.9rem;align-items:flex-start;margin:1.1rem 0 0;padding:.95rem 1.1rem;background:var(--accent-soft);border:1.5px solid var(--accent);border-radius:var(--card-radius)}
+.path-loop h3{margin:0 0 .2rem}
+.path-loop p{max-width:var(--measure);font-size:var(--fs-ui);line-height:1.45}
+.path-core{max-width:var(--measure);margin:1rem 0 0;font-size:var(--fs-ui);color:var(--ink-2)}
+@container content (min-width:40rem){
+  .study-path{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .study-path>li:nth-child(odd)::after{content:none}
+  .study-path>li:nth-child(3n+1)::after,.study-path>li:nth-child(3n+2)::after{content:"→";content:"→" / "";position:absolute;right:-1.5rem;top:50%;width:1.5rem;margin-top:-.7rem;text-align:center;font:400 1.1rem/1.4 var(--sans);color:var(--ink-2)}
+  .study-path>li:nth-child(3n+3)::after{content:none}
 }
-/* 3 Viisi vinkkiä */
+/* 2 tips and help */
 .study-tips{list-style:none;margin:.4rem 0 0;padding:0;display:grid;grid-template-columns:1fr;column-gap:2rem}
 .study-tips>li{display:flex;gap:.9rem;align-items:flex-start;margin:0;padding:1rem 0;border-bottom:1px solid var(--line)}
 .study-tips .study-icon{margin-top:.1rem}
+.study-sub{margin:1.9rem 0 .2rem}
 @container content (min-width:40rem){.study-tips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* 3 feedback and self-assessment */
+.study-two{display:grid;grid-template-columns:1fr;gap:1.6rem 2.5rem;margin-top:.4rem}
+.study-two>div{min-width:0}
+.study-two ul{margin:.3rem 0 0;padding-left:1.25rem;color:var(--ink-2)}
+.study-two li{margin:.3rem 0}
+.study-when{margin-top:.7rem!important;font-weight:600;color:var(--ink)!important}
+.study-note{margin-top:.8rem!important;padding-left:.8rem;border-left:3px solid var(--copper);font-size:var(--fs-ui)}
+@container content (min-width:40rem){.study-two{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* the closing line and the way on to the modules */
 .study-end{margin-top:var(--stage-space);max-width:var(--measure)}
 .study-end p{margin:0 0 1.1rem;font:400 1.25rem/1.45 var(--serif);color:var(--ink)}
