@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4cff2c272ce8d199 at start; 401f1bd1abe3a5d4 at end (no lesson file differs from HEAD, lesson.md line 417 unchanged; the render was re-run after the change with the same result)
+CONTENT-HASH: 401f1bd1abe3a5d4
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] Tiivistelmä, Δm formula at 390 px — the closing "." sits inside the formula box flush against its right edge, so it reads as a dot attached to $m_\text{atomi}$ — leave it, or move the period out of the display block if a later edit touches this.
+- [Minor] Tiivistelmä formula — the trailing "." sits tight against the display box's right edge at 390 px (not clipped) — optional: none needed.
 
 ## Checked
-- Delta round 4 (only the Tiivistelmä Δm formula moved to its own display line).
-- The shipped captures show Tiivistelmä closed, so I opened the box myself in a 390 px render of the page (own capture, scratchpad vis/v10.png): the formula is complete on its own line, not clipped (scrollWidth = clientWidth, page width 390), the bullets before and after are intact.
-- Also opened stage-selita-390-5, stage-selita-390-6 and theory-1280-4: layout of the surrounding theory survived.
+- Delta (round 5). Opened stage-selita-390-6 (Tiivistelmä closed there) and my own 390 px render of the opened Tiivistelmä (preview/fy8-10.html, Chrome): formula on its own display line, fits (scrollWidth = clientWidth, page 390), trailing "." present, five separate bullets (the formula belongs to bullet 2), no overflow.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

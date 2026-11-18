@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 1a71d15608689d46
+VERDICT: PASS
+CONTENT-HASH: 1efff356a0921e84
 
 ## Blocking
-- [Major] Tiivistelmä (fi-easy lesson.md l.406-414) — The formula now fits at 360 px, but the display block after the second bullet swallowed the list. Bullets 3-5 render as one paragraph with literal "- " in it ("…nukleoneiksi. - Sidosenergia nukleonia kohti… - Reaktioenergia on…"). — A broken list is hard to read and looks like a bug. — Put the formula in the list item correctly (a blank line, then the display block indented to the item's content column, and the next "- " bullets at column 0 after a blank line). Otherwise end the bullet with a colon and set the formula after the list. The lone "." is now inside the display, which is fine.
+(none)
 
 ## Polish
+- [Minor] Tiivistelmä formula — the trailing "." sits inside the display at the right edge; harmless, no clipping (scrollWidth 282 = clientWidth).
 
 ## Checked
-- Own capture of the opened Tiivistelmä box at 360 px (built preview, all boxes open, scratchpad t.png). The formula is not clipped (scrollWidth equals clientWidth). The stage-selita-390-6 capture shows the box closed.
-- Not reviewed: the rest of the page, which is unchanged.
+- Delta: own capture of opened Tiivistelmä at 390 px (built preview, scratchpad t.png) plus fy8-10-stage-selita-390-6.png (closed box in context). Formula on its own display line, fits; five separate bullets; no literal "- "; page scrollWidth 390 = 390.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
