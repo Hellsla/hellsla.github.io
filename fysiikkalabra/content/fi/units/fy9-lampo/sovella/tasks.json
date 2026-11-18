@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin lämpömäärän, olomuodon muutokset, lämpötasapainon, lämpölaajenemisen ja lämmön siirtymisen. Ratkaise ne kuten kokeessa: kerro, mihin energia menee, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa tunnin lämpömäärän, olomuodon muutokset, lämpötasapainon, lämpölaajenemisen ja lämmön siirtymisen. Ratkaise ne kuten kokeessa: kerro, mihin energia menee, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-lampo-s1",
@@ -701,6 +701,292 @@
     "math": "fy4-8",
     "concept": "fy3-12",
     "communication": "fy4-8"
+   }
+  },
+  {
+   "id": "fy9-lampo-s7",
+   "title": "Metallikappaleen lämmitys",
+   "source": "example",
+   "source_note": "Koe ja sen luvut ovat keksittyjä esimerkkejä. Alumiinin ominaislämpökapasiteetti on MAFY-taulukon arvo.",
+   "skills": [
+    "fy3-6",
+    "fy1-4"
+   ],
+   "figure": "fy3-6/heating-line",
+   "text": "Opiskelija lämmittää metallikappaletta, jonka massa on $0{,}50\\,\\text{kg}$, sähkövastuksella. Vastus luovuttaa kappaleeseen tehon $100\\,\\text{W}$. Opiskelija mittaa kappaleen lämpötilan $T$ ajan $t$ funktiona ja piirtää kuvaajan. Tee a–c-kohdissa oletus, että vastuksen koko teho siirtyy kappaleeseen ja että kuvaajan suora jatkuu samanlaisena. Alumiinin ominaislämpökapasiteetti on $896\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka monta kelvintä kappaleen lämpötila nousee sekunnissa?",
+     "answer": {
+      "value": 0.222,
+      "unit": "K/s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, $(0\\,\\text{s};\\ 20\\,{}^\\circ\\text{C})$ ja $(180\\,\\text{s};\\ 60\\,{}^\\circ\\text{C})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\dfrac{\\Delta T}{\\Delta t}$, $(t,T)$-kuvaajan kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{60\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C}}{180\\,\\text{s}} \\approx 0{,}22\\,\\text{K/s}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kappaleen aineen ominaislämpökapasiteetti. Voisiko kappale olla alumiinia?",
+     "answer": {
+      "value": 900,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Pt = cm\\Delta T$, josta $c = \\dfrac{P\\,\\Delta t}{m\\,\\Delta T}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nc &= \\dfrac{100\\,\\text{W} \\cdot 180\\,\\text{s}}{0{,}50\\,\\text{kg} \\cdot 40\\,\\text{K}} \\\\\n&= 900\\,\\text{J/(kg}\\cdot\\text{K)}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$c \\approx 9{,}0 \\cdot 10^{2}\\,\\text{J/(kg}\\cdot\\text{K)}$, kaksi merkitsevää numeroa"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulos poikkeaa alumiinin arvosta $896\\,\\text{J/(kg}\\cdot\\text{K)}$ alle $1\\,\\%$, joten kappale voi olla alumiinia."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka kauan lämmitystä on jatkettava mittauksen alusta, jotta kappaleen lämpötila on $100\\,{}^\\circ\\text{C}$?",
+     "answer": {
+      "value": 360,
+      "unit": "s",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Pt = cm\\Delta T$, josta $t = \\dfrac{cm\\,\\Delta T}{P}$, $\\Delta T = 100\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{900\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 80\\,\\text{K}}{100\\,\\text{W}} \\\\\n&= 360\\,\\text{s}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$t \\approx 3{,}6 \\cdot 10^{2}\\,\\text{s}$ eli $6{,}0\\,\\text{min}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Tarkistus kuvaajalla: lämpötilan nousu $80\\,\\text{K}$ on kaksi kertaa $40\\,\\text{K}$, joten aika on kaksi kertaa $180\\,\\text{s}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Todellisessa kokeessa kuvaaja kaartuisi loppua kohti loivemmaksi. Selitä energian avulla, miksi.",
+     "criteria": [
+      {
+       "text": "Selittää, että lämmin kappale siirtää lämpönä energiaa ympäristöön, ja lämpöteho kasvaa kappaleen ja ympäristön lämpötilaeron kasvaessa.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kappaleen sisäenergiaa kasvattava teho on vastuksen teho vähennettynä ympäristöön siirtyvällä teholla, joten lämpötila nousee hitaammin ja a–c-kohdan aika $360\\,\\text{s}$ on liian lyhyt."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy3-6",
+    "concept": "fy3-6",
+    "experiment": "fy1-4",
+    "graph": "fy3-6",
+    "communication": "fy3-6"
+   }
+  },
+  {
+   "id": "fy9-lampo-s8",
+   "title": "Jääpalan lämmitys",
+   "source": "example",
+   "source_note": "Koe ja sen luvut ovat keksittyjä esimerkkejä. Veden ominaislämpökapasiteetti on MAFY-taulukon arvo.",
+   "skills": [
+    "fy3-7",
+    "fy3-14",
+    "fy3-6"
+   ],
+   "figure": "fy3-7/melting-curve",
+   "text": "Pakkasessa ollutta jääpalaa, jonka massa on $0{,}60\\,\\text{kg}$, lämmitetään tasaisesti. Jään lämpötila on alussa $-16\\,{}^\\circ\\text{C}$. Kuvaaja esittää jään lämpötilaa $T$ siirretyn energian $Q$ funktiona. Oleta, että kaikki siirretty energia menee jääpalaan ja sen sulamisveteen. Veden ominaislämpökapasiteetti on $4{,}18\\,\\text{kJ/(kg}\\cdot\\text{K)}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä jään ominaislämpökapasiteetti kuvaajasta.",
+     "answer": {
+      "value": 2083,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Jään lämpeneminen luetaan kuvaajan ensimmäiseltä osalta: $(0\\,\\text{kJ};\\ -16\\,{}^\\circ\\text{C})$ ja $(20\\,\\text{kJ};\\ 0\\,{}^\\circ\\text{C})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = cm\\Delta T$, josta $c = \\dfrac{Q}{m\\,\\Delta T}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nc &= \\dfrac{20\\,000\\,\\text{J}}{0{,}60\\,\\text{kg} \\cdot 16\\,\\text{K}} \\\\\n&\\approx 2083\\,\\text{J/(kg}\\cdot\\text{K)}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$c \\approx 2{,}1 \\cdot 10^{3}\\,\\text{J/(kg}\\cdot\\text{K)}$, kaksi merkitsevää numeroa"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Määritä jään ominaissulamislämpö kuvaajasta.",
+     "answer": {
+      "value": 333,
+      "unit": "kJ/kg",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Tunnistaa, että lämpötilan pysyessä vakiona arvossa $0\\,{}^\\circ\\text{C}$ siirretty energia sulattaa jään eikä nosta lämpötilaa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Vaakasuoran osan päätepisteet $20\\,\\text{kJ}$ ja $220\\,\\text{kJ}$, joten sulamiseen kuluu $200\\,\\text{kJ}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = sm$, josta $s = \\dfrac{Q}{m}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$s = \\dfrac{200\\,\\text{kJ}}{0{,}60\\,\\text{kg}} \\approx 333\\,\\text{kJ/kg}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$s \\approx 3{,}3 \\cdot 10^{2}\\,\\text{kJ/kg}$, kaksi merkitsevää numeroa; sama kuin taulukon arvo $333\\,\\text{kJ/kg}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Lämmitystä jatketaan, kunnes lämpötila on $20\\,{}^\\circ\\text{C}$. Kuinka paljon energiaa on silloin siirretty yhteensä?",
+     "answer": {
+      "value": 270.2,
+      "unit": "kJ",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Jää on sulanut kokonaan kohdassa $220\\,\\text{kJ}$, ja sen jälkeen veden lämpötila nousee arvosta $0\\,{}^\\circ\\text{C}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = Q_\\text{jää+sulaminen} + c_\\text{v} m\\,\\Delta T$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nc_\\text{v} m\\,\\Delta T &= 4{,}18\\,\\text{kJ/(kg}\\cdot\\text{K)} \\\\\n&\\cdot 0{,}60\\,\\text{kg} \\cdot 20\\,\\text{K} \\\\\n&\\approx 50\\,\\text{kJ}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\nQ &\\approx 220\\,\\text{kJ} + 50\\,\\text{kJ} \\\\\n&\\approx 270\\,\\text{kJ}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q \\approx 2{,}7 \\cdot 10^{2}\\,\\text{kJ}$, kaksi merkitsevää numeroa"
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri massa jääpalasta on sulanut, kun siirretty energia on $120\\,\\text{kJ}$?",
+     "answer": {
+      "value": 0.3,
+      "unit": "kg",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Sulamiseen käytetty energia on $Q - Q_1$, ja $m_\\text{s} = \\dfrac{Q - Q_1}{s}$, kun $Q_1 = 20\\,\\text{kJ}$ meni jään lämmittämiseen."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{(120 - 20)\\,\\text{kJ}}{333\\,\\text{kJ/kg}} \\\\\n&\\approx 0{,}30\\,\\text{kg}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "$0{,}30\\,\\text{kg}$ on puolet massasta, ja $120\\,\\text{kJ}$ on vaakasuoran osan puolivälissä; lämpötila on $0\\,{}^\\circ\\text{C}$."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "math": "fy3-7",
+    "concept": "fy3-7",
+    "communication": "fy3-6",
+    "graph": "fy3-7"
    }
   }
  ]

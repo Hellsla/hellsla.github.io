@@ -70,6 +70,17 @@
       if (name && !sel.hasAttribute('aria-label')) sel.setAttribute('aria-label', name.textContent.trim());
     }
   }
+  // The canvas is a picture to a screen reader: its name is the card's heading with the lesson's title (texts the page has
+  // already, none new) and its description the live readout under it (work queue 10, PR 5). A sim.js that names its own
+  // canvas keeps its name.
+  function nameCanvas(c, root) {
+    if (!c || c.hasAttribute('aria-label') || c.hasAttribute('aria-labelledby')) return;
+    const sec = root && root.closest('#sim'), head = sec && sec.querySelector('h2,h3'), h1 = document.querySelector('h1');
+    const name = [head, h1].map((e) => e && e.textContent.trim()).filter(Boolean).join(': ');
+    if (name) { c.setAttribute('role', 'img'); c.setAttribute('aria-label', name); }
+    const ro = root && root.querySelector('.readout');
+    if (ro && name) { if (!ro.id) ro.id = 'sim-readout'; c.setAttribute('aria-describedby', ro.id); }
+  }
   let fontGen = 0;                             // bumped when a web font (KaTeX's) finishes loading: label sizes measured before it are stale
   const onFont = new Set(), simWakers = new Set();   // the on-demand sims to draw again with new metrics, or after an adapter call
   window.flSimWake = () => simWakers.forEach((f) => f());
@@ -296,6 +307,7 @@
           if (simRoot && simRoot.closest('.sim-card2')) tagSpeed(simRoot);
           if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
           wrapCanvas();
+          nameCanvas(p.canvas, simRoot);
           keep(p.canvas.parentElement, 'clientWidth');
           canvasSize = keep(p.canvas, 'clientWidth', 'clientHeight');
           fit();
