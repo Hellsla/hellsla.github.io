@@ -6,7 +6,7 @@ None.
 
 ## Polish
 - fy7-k4 b Kaava: the step now runs through a derivative, $e = -N\,\text{d}\Phi/\text{d}t$, $\Phi = BA\cos(2\pi f t)$. Physics and sign are right, but the course sheet gives $e_0 = NBA \cdot 2\pi f$ directly, and a student without the long maths syllabus cannot follow a derivative. Consider the sheet's form with the derivative as an aside. Not an error (C).
-- fy7-k3 d Mallivastaus: the hypothetical case says "vastus [saisi] lämpöä". Following P1, "vastuksen sisäenergia kasvaisi" would match the next paragraph. It is inside a counterfactual, so it is not blocking.
+- fy7-k3 d Mallivastaus: the hypothetical case says "vastus [saisi] lämpöä". Following P1, "vastuksen sisäenergia kasvaisi" would match the next paragraph. Inside a counterfactual; not blocking.
 
 ## Checked
 - Full review of tasks.json, solutions.md and answers.py. Focus: the rewritten Kaava steps (8g). Each starts from the basic law. Each is solved symbolically before substitution, and each derivation is algebraically correct: $r^2 = m_\text{e}^2v^2/(e^2B^2) = 2m_\text{e}U/(eB^2)$, and $\Delta\Phi = Blv\Delta t$.
@@ -21,5 +21,5 @@ None.
   - k7: b = 2,758·10⁻³ (origin fit), 2,75·10⁻³ read; 4,8 %; random 2,6 %; all λT below literature; 9,47 µm; 5269 K.
 - k3 b direction: v to the right × B into the page gives the force up, which agrees with Lenz's law (current counterclockwise).
 - Osa 1: exactly one correct option per item, and the distractor explanations are right.
-- Scope: everything is within the FY7 central contents. No self-induction, and polarisation is qualitative only.
+- Scope: within FY7; no self-induction; polarisation qualitative.
 - Hash d63f5c2e6544c73f at start and end.
