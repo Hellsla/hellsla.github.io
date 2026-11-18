@@ -271,8 +271,8 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}
 a) $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$
 b) $v = 0{,}10 \cdot 2{,}998 \cdot 10^{5}\,\text{km/s} = 2{,}998 \cdot 10^{4}\,\text{km/s}$
 b) $d = \dfrac{v}{H_0} = \dfrac{2{,}998 \cdot 10^{4}\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 416{,}4\,\text{Mpc}$
-**Vastaus:** b) $4{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $416\,\text{Mpc}$; a) $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Kolme merkitsevää numeroa, koska suora kulkee ruudukon pisteen kautta ja $H_0$ saadaan siitä kolmella numerolla.
+**Vastaus:** b) $4{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $416\,\text{Mpc}$; a) $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Kaksi merkitsevää numeroa b)-kohdassa, koska nopeus $0{,}10\,c$ on annettu kahdella numerolla; $H_0$ saadaan ruudukon pisteestä kolmella numerolla.
 c) Arvio on epävarma, koska pisteet ulottuvat vain noin $285\,\text{Mpc}$:iin ja arvio on noin $1{,}5$-kertainen siihen verrattuna. Jatkaminen olettaa verrannollisuuden pätevän myös kuvan ulkopuolella, mitä pisteet eivät osoita.
 
-Kaava $v = c\,z$ on pienen punasiirtymän likiarvo. Suurilla punasiirtymillä se voisi antaa nopeuden yli $c$: esimerkiksi $z = 3{,}00$ antaisi $v = 3{,}00\,c$, mikä on mahdoton galaksin nopeudeksi.
+Kaava $v = c\,z$ on vain pienen punasiirtymän ($z < 0{,}1$) likiarvo. Suurella punasiirtymällä tulosta ei voi pitää galaksin nopeutena: esimerkiksi $z = 3{,}00$ antaisi $v = 3{,}00\,c$, merkki siitä, että likiarvo ei enää päde.
 **Järkevyys:** Tarkistus kertomalla: $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 416{,}4\,\text{Mpc} = 2{,}998 \cdot 10^{4}\,\text{km/s}$, sama kuin $0{,}10\,c$. Kuvan yläreunan nopeus $21\,000\,\text{km/s}$ vastaa $z = 0{,}070$, joten kuvan kaikki pisteet ovat rajan $0{,}10$ alapuolella ja $v = c\,z$ kelpaa niille. Tulos $416\,\text{Mpc}$ on suurempi kuin akselin $300\,\text{Mpc}$, kuten pitää, koska $21\,000\,\text{km/s}$ on pienempi kuin $29\,980\,\text{km/s}$.

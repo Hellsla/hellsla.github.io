@@ -271,8 +271,8 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{
 a) $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$
 b) $v = 0.10 \cdot 2.998 \cdot 10^{5}\,\text{km/s} = 2.998 \cdot 10^{4}\,\text{km/s}$
 b) $d = \dfrac{v}{H_0} = \dfrac{2.998 \cdot 10^{4}\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 416.4\,\text{Mpc}$
-**Answer:** b) $4.2 \cdot 10^{2}\,\text{Mpc}$, about $416\,\text{Mpc}$; a) $72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Three significant figures, because the line passes through a grid point and gives $H_0$ with three figures.
+**Answer:** b) $4.2 \cdot 10^{2}\,\text{Mpc}$, about $416\,\text{Mpc}$; a) $72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Two significant figures in b), because the speed $0.10\,c$ is given with two figures; $H_0$ comes from the grid point with three figures.
 c) The estimate is uncertain because the points reach only about $285\,\text{Mpc}$ and the estimate is about $1.5$ times that. Extending the line assumes that the proportionality holds outside the figure too, which the points do not show.
 
-The formula $v = c\,z$ is an approximation for a small redshift. At large redshifts it could give a speed above $c$: for example, $z = 3.00$ would give $v = 3.00\,c$, which is impossible as the speed of a galaxy.
+The formula $v = c\,z$ is only an approximation for a small redshift ($z < 0.1$). At large redshifts the result cannot be taken as the speed of the galaxy: for example, $z = 3.00$ would give $v = 3.00\,c$, a sign that the approximation has broken down.
 **Reasonableness:** Check by multiplying: $72.0\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 416.4\,\text{Mpc} = 2.998 \cdot 10^{4}\,\text{km/s}$, the same as $0.10\,c$. The speed at the top of the figure, $21\,000\,\text{km/s}$, corresponds to $z = 0.070$, so all the points of the figure are below the limit $0.10$ and $v = c\,z$ is valid for them. The result $416\,\text{Mpc}$ is greater than the axis $300\,\text{Mpc}$, as it should be, because $21\,000\,\text{km/s}$ is less than $29\,980\,\text{km/s}$.
