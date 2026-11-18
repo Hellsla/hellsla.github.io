@@ -314,6 +314,42 @@ def forms_page_body():
             + "".join(out))
 
 
+def ol_starts(html, text):
+    """A numbered list that goes on from an earlier one ("4. ..." under the next ### heading) keeps its first number:
+    markdown drops it, so the page restarted at 1 (work queue 4 batch 1, FY10 TVT guide). Reads the first number of every
+    top-level numbered list from the source and gives the matching top-level <ol> a start attribute; when the two counts
+    differ (a list made some other way), nothing is changed."""
+    starts, in_ol, fence, blank = [], False, False, False
+    for line in text.split("\n"):
+        if line.lstrip().startswith("```"): fence = not fence
+        if fence: continue
+        m = re.match(r"(\d{1,3})\. ", line)
+        if m:
+            if not in_ol: starts.append(int(m.group(1)))
+            in_ol, blank = True, False
+        elif not line.strip(): blank = True
+        elif line.startswith((" ", "\t")): blank = False
+        else:
+            if blank or re.match(r"(#|[-*+] |>|<)", line): in_ol = False    # after a blank line a flush paragraph ends the list
+            blank = False
+    parts, depth, tops = re.split(r"(</?ol(?:\s[^>]*)?>)", html), 0, 0
+    for t in parts:
+        if t.startswith("<ol"):
+            depth += 1; tops += depth == 1
+        elif t == "</ol>": depth -= 1
+    if all(x == 1 for x in starts) or tops != len(starts): return html
+    depth, out, n = 0, [], 0
+    for t in parts:
+        if t.startswith("<ol"):
+            depth += 1
+            if depth == 1:
+                if starts[n] != 1: t = f'<ol start="{starts[n]}">'
+                n += 1
+        elif t == "</ol>": depth -= 1
+        out.append(t)
+    return "".join(out)
+
+
 def render_md(text, **kw):
     """Markdown -> HTML, with LaTeX kept out of markdown's reach, force-diagram specs drawn (scripts/fbdspec.py) and
     figures embedded by id (`<svg data-fig="fy5-2/lauta-voimat"></svg>`, figcat.embed) drawn in the page's language.
@@ -334,6 +370,7 @@ def render_md(text, **kw):
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(mathlayout.DISPLAY_OR_INLINE, stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
+    html = ol_starts(html, text)
     html = fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
     return figcat.restore(html, figrefs, T.lang) if figrefs else html
 
@@ -373,6 +410,16 @@ def staged_example(lesson_html):
             f'<p class="step-controls"><button type="button" class="next-step">{T("lesson.example_next")}</button> '
             f'<button type="button" class="all-steps">{T("lesson.example_all")}</button></p></div></div>')
     return lesson_html[:m.start(2)] + body + lesson_html[m.end(2):]
+
+
+BOX_SECTIONS = ("Yleinen virhekäsitys", "Tiivistelmä")
+
+
+def boxed_section(piece):
+    """A theory section as a closed <details> box: its heading becomes the summary (opens with Enter/Space), the rest the body."""
+    m = re.match(r'<h3 class="theory-h">(.*?)</h3>(.*)\Z', piece, flags=re.S)
+    if not m: return piece
+    return f'<details class="theory-box"><summary>{m.group(1)}</summary><div class="box-body">{m.group(2)}</div></details>'
 
 
 def named_sections(html):
@@ -1218,6 +1265,8 @@ def build_language(lang):
             if kc_section and "Tiivistelmä" in sections:   # the chapter's concept chips after the summary list (concept_cards.chips)
                 tv = sections["Tiivistelmä"]; kc = concept_cards.chips(meta["course"], meta["id"], T, lang)
                 sections["Tiivistelmä"] = tv.replace("</ul>", "</ul>" + kc, 1) if "</ul>" in tv else tv + kc
+            for key in BOX_SECTIONS:                      # "Yleinen virhekäsitys" and Tiivistelmä: each in its own closed box (work queue 8, teacher 2026-11-13)
+                if key in sections: sections[key] = boxed_section(sections[key])
             parts = {"intro": intro, "sections": sections, "sim": sim, "exercises": ex_html,
                      "concepts": inquiry.key_concepts_html(meta["id"], meta.get("key_concepts"), lambda t: nbsp_units(render_md(t))),   # Selkeä suomi only (NOTES.md §12)
                      "exit": f'<div id="exit"><h3>{inquiry.exit_title()}</h3>{exit_items}</div>', "cards": kc_section,

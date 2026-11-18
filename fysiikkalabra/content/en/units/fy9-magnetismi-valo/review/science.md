@@ -1,16 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: e6beb601d86e4127
+CONTENT-HASH: b48cf7172d7bb274
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8 and -s9; s1-s7 and the intro untouched, not re-judged.
 Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- (none)
+- s9 b: the chain now rounds its intermediate values ($0.405 \to 0.41\,\text{W}$, $0.288 \to 0.29\,\text{J}$, $0.081 \to 0.082\,\text{J}$). The result is the same: $0.29 + 0.082 = 0.372 \approx 0.37$, and the unrounded sum is $0.369$. A guard digit would be cleaner, but this is no error. The Finnish text has the same chain.
+- Carried from round 1: the solution headings "Yleisiä virheitä" and "Hyväksytään myös" in solutions.md are presumably parser keys, so they are no finding if the page shows them translated.
 
 ## Checked
-- unit.md Key idea: "on a moving charge and on a current-carrying wire it exerts a force when the motion or the current is not parallel to the field" states the missing condition correctly (F = qvB sin(alpha), F = IlB sin(alpha)); it agrees with the recognition chart's "perpendicular flux density". My round-1 Polish A is carried out.
-- s7 a task text: the added sentence about the precision of the source's figures points at exactly what the conclusion criterion asks (the difference from c is smaller than the rounding of the figures). Recomputed: 11 245 * 26 659 m = 2.9978e8 m/s, v/c = 0.99996.
-- s7 d rubric: the removed clause about the mass of the protons was true (4.0e14 * 1.673e-27 kg = 6.7e-13 kg, under a nanogram) but not asked in part d; the criterion now asks only what the task asks. The solution still gives the mass as a reasonableness remark, with the right number. Recomputed 435.7 MJ : 0.5787 MJ = 753.
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- `units.py hash --lang en` gave b48cf7172d7bb274 at the start and at the end. Packet check: `practice.py check: OK`.
+- Round-1 Blocking item, s9 common mistakes line 2: it now reads "the voltage comes out a thousand times too large ($2400\,\text{V}$ instead of $2.4\,\text{V}$)". This is right: $120 \cdot 8.0 / 0.40 = 2400$. Fixed in solutions.md line 658 and in the packet.
+- Round-1 Polish, s8 line 1: it now reads "$0.30 : 0.45$, which gives $0.67$". This is right ($0.667$).
+- I diffed against the round-1 commit (ad5dcedf). The changes are:
+  - s8 c text: "smallest angle of incidence at which total internal reflection occurs". The physics is right, and the text names no formula or method.
+  - s9 b: the chain in solutions.md and in the tasks.json detail now has aligned rows, with a power row added. It matches the Finnish text number for number.
+- My recomputation script:
+  - s9: $e = 2.4$ and $1.8\,\text{V}$; $P = 0.72$ and $0.405\,\text{W}$; $W = 0.369 \approx 0.37\,\text{J}$; flux zero at $0.25\,\text{s}$.
+  - s8: $n = 1.5$; $v = 2.0 \cdot 10^8\,\text{m/s}$; $\alpha_\text{c} = 41.8^\circ \approx 42^\circ$.
+- The Reasonableness line ("powers below one watt, time under a second") holds, since the total time is $0.60\,\text{s}$.
+- Nothing newly broken:
+  - the answers keep two significant figures, matching the data;
+  - the unit fields are unchanged and language-neutral;
+  - the English is fluent and faithful to the Finnish.

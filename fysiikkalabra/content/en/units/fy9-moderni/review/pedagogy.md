@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 000b72e7ae8c6d61
+CONTENT-HASH: f5355edae2761e52
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
 Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
 - (none)
 
 ## Polish
-- C (round 1, still open): the title says "fusion reactor" for a laser experiment; the model answer of e could note it.
+- s8 Common mistakes, part a: the example "$\mu = 16 / 20\,\text{cm} = 0.80$" is left over from the old read-off values. With the current points $(0;\,80)$ and $(10;\,20)$ the quotient is $80/20 = 4$ and the wrong result $4/10\,\text{cm} = 0.40\,\text{1/cm}$. Fix the numbers so the student does not see a 16 that is not in the data.
+- s9 a: the grid point now appears only in the solution and criterion, not in the task text; the second point is still the origin. Acceptable.
+- s8 gives the model ready-made (a conscious choice).
 
 ## Checked
-- tasks.json s7 d part text (the round-1 Blocking of the other reviewers): the added sentence "Estimate also how much electrical energy the released energy would give with the efficiency of a thermal power plant" now asks for what criterion 3 awards ($\tfrac{1}{3} \cdot 3.15\,\text{MJ} \approx 1\,\text{MJ}$, less than half a per cent of $300\,\text{MJ}$). The efficiency is in the statement's list, so the sentence can be answered. The three sentences match the three criteria one to one; 3 p is fair.
-- solutions.md s7 d Find: now names both questions and agrees with the part text and the model answer ($1.05\,\text{MJ}$, $0.35\,\%$).
-- Statement: "Further information:" with three full sentences reads better than the earlier fragments; values unchanged.
-- solutions.md s7 c Answer: the reason for two significant figures is now the temperature difference $80\,\text{K}$, consistent with "Hyväksytään myös" (three figures when the temperatures are read as exact).
-- tasks.json s7 e criterion 1 (my round-1 Polish A): the point is for "a single laboratory experiment, not a power plant", the other two ideas are examples of a reason. Observable, and the model answer gives both.
-- Hash identical at start and end.
+- Opened the en packet: s8 and s9 in tasks.json (own English text), solutions.md and the checks (practice.py check OK); hash same at start and end (f5355edae2761e52).
+- Round-1 items: s9 a text no longer gives $(250;\,18\,000)$, so $H_0$ is read off the graph and `graph_read` measures something. s8 a: second point $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ matches the solution ($\ln 4/10 = 0.14$).
+- s8 d: the assumption is asked in the text ("Also name one assumption ... and its effect"); the criterion matches and what the assumption is stays with the student.
+- s9 c: the reworded task (distances "were zero", constant rate) does not reveal $t = 1/H_0$ or the unit conversion.
+- Translation: same numbers, points, tolerances and criteria as Finnish; decimal points; terms (attenuation coefficient, dose rate, Hubble constant) correct. Results rounded to two figures like the data; aligned calculation rows; unit fields language-neutral.
+- Points 3+3+3+4 and 3+3+4+3 equal the criterion sums; 360 px: check_layout and shots.md, not opened.

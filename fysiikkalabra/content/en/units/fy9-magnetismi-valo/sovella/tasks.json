@@ -1,5 +1,5 @@
 {
-  "intro": "Seven matriculation-exam-style problems bring together the magnetism, induction and light of the lesson. The last problem is an applied source-based problem whose source material is behind the link in the problem. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Nine matriculation-exam-style problems bring together the magnetism, induction and light of the lesson. The seventh problem is an applied source-based problem whose source material is behind the link in the problem. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-magnetismi-valo-s1",
@@ -993,6 +993,278 @@
         "math": "fy4-7",
         "concept": "fy7-2",
         "communication": "fy7-3"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s8",
+      "title": "A laser experiment with an acrylic plate",
+      "source": "example",
+      "source_note": "The measurement and the numbers are an invented example whose points are rounded to the precision of the scale.",
+      "skills": [
+        "fy7-10",
+        "fy7-12",
+        "fy1-4"
+      ],
+      "figure": "fy7-10/fit",
+      "text": "A student uses a laser pointer to study how light refracts when it goes from air into an acrylic plate. She measures the angle of incidence $\\alpha_1$ in air and the angle of refraction $\\alpha_2$ in acrylic at angles of incidence $10^\\circ$, $20^\\circ$, $\\ldots$, $70^\\circ$. In the graph $\\sin\\alpha_1$ is on the vertical axis and $\\sin\\alpha_2$ on the horizontal axis, and a straight line has been fitted to the data points. The refractive index of air is $1.00$, the speed of light in air is $3.00 \\cdot 10^8\\,\\text{m/s}$ and the acrylic plate is $15\\,\\text{cm}$ thick.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the refractive index of acrylic from the graph.",
+          "answer": {
+            "value": 1.5,
+            "unit": "",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points far apart on the fitted line, for example $(0.30;\\ 0.44)$ and $(0.60;\\ 0.89)$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Snell's law $1.00 \\cdot \\sin\\alpha_1 = n \\sin\\alpha_2$, so $\\sin\\alpha_1 = n \\sin\\alpha_2$ and $n$ is the slope of the line."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$n = \\dfrac{0.89 - 0.44}{0.60 - 0.30} = 1.5$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$n = 1.5$ (no unit), two significant figures like the values read from the graph."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the speed of light in acrylic? How long does the light take to pass through the plate when it travels perpendicular to the surface of the plate?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 2.0,
+              "unit": "· 10⁸ m/s",
+              "tolerance": 0.03
+            },
+            {
+              "name": "t",
+              "value": 0.75,
+              "unit": "ns",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\dfrac{c}{n}$ and $t = \\dfrac{d}{v}$"
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$$\\begin{aligned}v &= \\dfrac{3.00 \\cdot 10^8\\,\\text{m/s}}{1.5} \\\\&= 2.0 \\cdot 10^8\\,\\text{m/s}\\end{aligned}$$ and $t = \\dfrac{0.15\\,\\text{m}}{2.0 \\cdot 10^8\\,\\text{m/s}} = 7.5 \\cdot 10^{-10}\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The thickness $15\\,\\text{cm}$ is converted to metres, $0.15\\,\\text{m}$; $v = 2.0 \\cdot 10^8\\,\\text{m/s}$ and $t = 0.75\\,\\text{ns}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the smallest angle of incidence at which total internal reflection occurs when light goes from acrylic into air?",
+          "answer": {
+            "value": 41.81,
+            "unit": "°",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that total internal reflection is possible only when light goes from an optically denser medium (acrylic, $n = 1.5$) into a less dense one (air, $n = 1.00$), and that at the critical angle the angle of refraction is $90^\\circ$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$n \\sin\\alpha_\\text{c} = 1.00 \\cdot \\sin 90^\\circ$, so $\\sin\\alpha_\\text{c} = \\dfrac{1.00}{n}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\alpha_\\text{c} = \\arcsin\\dfrac{1.00}{1.5} = 41.8^\\circ$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\alpha_\\text{c} \\approx 42^\\circ$, two significant figures like the refractive index $1.5$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Why should the fitted line pass through the origin? Why is the refractive index determined from the slope of the line and not from a single data point?",
+          "criteria": [
+            {
+              "text": "Explains that when the angle of incidence is zero the light is not refracted and the angle of refraction is zero. Then $\\sin\\alpha_1 = 0$ and $\\sin\\alpha_2 = 0$, so the line must pass through the point $(0;\\ 0)$. The line in the graph passes almost through the origin, so the model $\\sin\\alpha_1 = n \\sin\\alpha_2$ fits the measurement.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains that reading the angles of a single point has a random error, and the points are scattered on both sides of the line. The slope of a line fitted to the whole data averages the errors, so it is more reliable than the quotient $\\sin\\alpha_1 : \\sin\\alpha_2$ of one point.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "States that the refractive index is a property of the material and does not depend on the angle of incidence, so all the points lie on the same line: the slope is the same for small and large angles.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy7-10",
+        "concept": "fy7-12",
+        "experiment": "fy1-4",
+        "communication": "fy7-10"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s9",
+      "title": "Flux through a coil and the induced current",
+      "source": "example",
+      "source_note": "The coil and the numbers are an invented example.",
+      "skills": [
+        "fy7-5",
+        "fy7-6",
+        "fy6-6"
+      ],
+      "figure": "fy7-5/flux-task-2",
+      "text": "A coil has $120$ turns, and its ends are connected together through a resistor so that the resistance of the whole circuit is $8.0\\,\\Omega$. The graph shows the magnetic flux $\\Phi$ through one turn as a function of time $t$. A positive direction of the flux has been chosen, and the flux is negative when it points in the opposite direction.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the voltage induced in the coil during the interval $0$–$0.40\\,\\text{s}$ and during the interval $0.60$–$0.80\\,\\text{s}$?",
+          "answer": [
+            {
+              "name": "e1",
+              "value": 2.4,
+              "unit": "V",
+              "tolerance": 0.02
+            },
+            {
+              "name": "e3",
+              "value": 1.8,
+              "unit": "V",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The values of the flux are read from the turning points of the graph: $(0\\,\\text{s};\\ 5.0\\,\\text{mWb})$, $(0.40\\,\\text{s};\\ -3.0\\,\\text{mWb})$, $(0.60\\,\\text{s};\\ -3.0\\,\\text{mWb})$ and $(0.80\\,\\text{s};\\ 0\\,\\text{mWb})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lvert e \\rvert = N\\,\\dfrac{\\lvert \\Delta\\Phi \\rvert}{\\Delta t}$, because the flux changes uniformly in both intervals."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\\begin{aligned}\\lvert e_1 \\rvert &= 120 \\cdot \\dfrac{8.0 \\cdot 10^{-3}\\,\\text{Wb}}{0.40\\,\\text{s}} \\\\&= 2.4\\,\\text{V}\\end{aligned}$$ and $$\n\\begin{aligned}\n\\lvert e_3 \\rvert &= 120 \\cdot \\dfrac{3.0 \\cdot 10^{-3}\\,\\text{Wb}}{0.20\\,\\text{s}} \\\\\n&= 1.8\\,\\text{V}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The unit $\\text{mWb}$ is converted to $\\text{Wb}$; $2.4\\,\\text{V}$ and $1.8\\,\\text{V}$, two significant figures like the flux values."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How much electrical energy is converted into internal energy in the coil circuit during the whole $0.80\\,\\text{s}$?",
+          "answer": {
+            "value": 0.369,
+            "unit": "J",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies that during $0.40$–$0.60\\,\\text{s}$ the flux is constant, so the voltage and the current are zero and no energy is converted.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$W = P\\,\\Delta t = \\dfrac{e^2}{R}\\,\\Delta t$ in each interval, and the energies are added."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\\begin{aligned}W &= \\dfrac{(2.4\\,\\text{V})^2}{8.0\\,\\Omega} \\cdot 0.40\\,\\text{s} \\\\&+ \\dfrac{(1.8\\,\\text{V})^2}{8.0\\,\\Omega} \\cdot 0.20\\,\\text{s} \\\\&= 0.72\\,\\text{W} \\cdot 0.40\\,\\text{s} \\\\&+ 0.41\\,\\text{W} \\cdot 0.20\\,\\text{s} \\\\&= 0.29\\,\\text{J} + 0.082\\,\\text{J} \\\\&\\approx 0.37\\,\\text{J}\\end{aligned}$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$W \\approx 0.37\\,\\text{J}$, two significant figures like the resistance $8.0\\,\\Omega$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Explain the direction of the induced current in the different intervals. How does the value zero of the flux, at the moment when the flux changes its sign, affect the current?",
+          "criteria": [
+            {
+              "text": "States that a voltage is induced only when the flux changes. During $0.40$–$0.60\\,\\text{s}$ the flux is constant, so the voltage and the current are zero.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Applies Lenz's law in the interval $0$–$0.40\\,\\text{s}$: the flux decreases, so the magnetic field of the induced current points in the positive direction of the flux and opposes the decrease.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Applies Lenz's law in the interval $0.60$–$0.80\\,\\text{s}$: the flux increases towards zero, so the field of the induced current points in the negative direction and the current flows in the opposite direction to that in the first interval.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Concludes that at $0.25\\,\\text{s}$ the flux is zero but its rate of change is the same as before and after ($-20\\,\\text{mWb/s}$). The induced voltage depends on the rate of change of the flux and not on its value, so the voltage is $2.4\\,\\text{V}$ and the direction of the current does not change.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy7-5",
+        "math": "fy7-5",
+        "concept": "fy7-6",
+        "communication": "fy7-6"
       }
     }
   ]

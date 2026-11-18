@@ -29,7 +29,7 @@ each course in `courses` lists it: the course refers to the investigation, it ne
 """
 import hashlib, importlib.util, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import cardgrid, courses, guides, i18n
+import cardgrid, courses, guides, i18n, mathlayout
 
 ROOT = courses.ROOT
 DIR = "tutkimukset"
@@ -187,6 +187,22 @@ def bank(T, items, lang=i18n.SOURCE):
             f'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">{rows}</ol>')
 
 
+def _unwrap_chains(html):
+    return re.sub(r'<p>\s*(<div class="eq-chain".*?</div></div>)\s*</p>', r"\1", html, flags=re.S)
+
+
+def _help_after_paragraph(html):
+    """A help link ("Tarvitsetko apua? → …") is a block of its own: written in the middle of a sentence it would cut the
+    sentence into pieces, so each one moves to follow its paragraph (work queue 4 batch 1, FY10 audit)."""
+    def fix(m):
+        p = m.group(0)
+        found = re.findall(r'<span class="inv-help">(?:(?!</span>).)*?</span>', p, flags=re.S)
+        if not found: return p
+        rest = re.sub(r'\s*<span class="inv-help">(?:(?!</span>).)*?</span>', "", p, flags=re.S)
+        return rest + "".join(found)
+    return re.sub(r"<p>.*?</p>", fix, html, flags=re.S)
+
+
 def render(iid, lang, T, md, chapters, published):
     """(body html, toc html) of the investigation page. md renders markdown with maths; chapters: lesson id ->
     (module, title) in this language; published: the page names this language built."""
@@ -198,13 +214,14 @@ def render(iid, lang, T, md, chapters, published):
         inner = f'<a href="{lid}.html">{esc(label)}</a>' if f"{lid}.html" in published else f'{esc(label)} ({code}, {T("investigation.not_published")})'
         return f'<span class="inv-help">{T("investigation.need_help")} → {inner}</span>'
     text = re.sub(r"\[\[apua:([\w-]+)\|([^\]]+)\]\]", help_link, text)
-    text = guides.inline_links(text, published, lang)
+    text = mathlayout.list_chains(guides.inline_links(text, published, lang))
     blocks = []
     def tuki(m):
-        blocks.append(f'<div class="inv-tuki" data-modes="{m.group(1).strip()}">{md(m.group(2))}</div>')
+        blocks.append(f'<div class="inv-tuki" data-modes="{m.group(1).strip()}">{_unwrap_chains(md(m.group(2)))}</div>')
         return f"\n\nTUKIBLOCK{len(blocks) - 1}X\n\n"
     text = re.sub(r"^::: tuki ([A-Z ]+)\n(.*?)^:::$", tuki, text, flags=re.S | re.M)
-    html = md(text)
+    html = _unwrap_chains(md(text))
+    html = _help_after_paragraph(html)
     html = re.sub(r"<p>TUKIBLOCK(\d+)X</p>", lambda m: blocks[int(m.group(1))], html)
     sections = re.split(r"(?=<h2>)", html)
     intro, rest = sections[0], sections[1:]

@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6baa2111c76a816f
+CONTENT-HASH: 43b392b3a623282a
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8 and -s9; older tasks untouched
+
 Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A (kept from round 1) `sovella/tasks.json` s7 e: no criterion names the three facts the student must find in the source separately.
+- s9 "Vuolle on valittu positiivinen suunta. Jos vuo kulkee vastakkaiseen suuntaan, vuo on negatiivinen." is now clear (round-1 wording fixed).
+- s9 c is now split into short sentences and "tämä nollakohta" removes the ambiguous "se"; the question still announces the zero-flux trap (same as fi), recorded.
+- s8 a and s9 a still use the chapter figures; the independent demand is in the later parts.
 
 ## Checked
-- s7 a prompt: the added sentence "Ota huomioon, millä tarkkuudella aineiston luvut on annettu" points the student to the reasoning criterion 3 rewards (the difference is below the rounding of the source figures) without giving the conclusion; the solution's interval argument matches it.
-- s7 d criterion 3: the sentence about the protons' total mass is removed from the criterion, so the point is only for the ratio the part asks for (753, about 750 cars). The fact stays, correctly, in c's Järkevyys ($6{,}7 \cdot 10^{-13}\,\text{kg}$, under a nanogram); nothing contradicts.
-- `unit.md` Ydinajatus: "kun liike tai virta ei ole kentän suuntainen" is correct and the next sentence ("Kohdistaa tarkoittaa...") still follows naturally.
-- Preview at 360 px, all boxes open: s7 has no clipped element and no raw TeX.
+- Round-1 report read first (PASS, no Blocking).
+- Read the fi-easy packet s8 and s9 solutions and tasks.json: same numbers and points as fi, physics terms kept, short sentences, decimal comma, two significant figures, aligned rows, language-neutral units. The solutions were also split into short sentences without changing content.
+- Nothing newly broken.
+- Hash at start and end 43b392b3a623282a.
