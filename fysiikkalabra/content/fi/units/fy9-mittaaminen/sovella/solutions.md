@@ -809,24 +809,24 @@ $$, siis sama väli kuin $15{,}0 \pm 0{,}6\,\text{cm}$. Tulos on kuitenkin ekstr
   <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5{,}18\,\text{m/s}^2$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli $s \propto t^2$ sopii aineistoon. Suora ei ole pakotettu origon kautta. Sen vakiotermi on noin $0{,}01\,\text{m}$, mikä on yhtä suuri kuin matkan lukemisen epävarmuus $0{,}01\,\text{m}$, joten vakiotermi ei ole merkitsevä. Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, alle lukemisen epävarmuuden. Kuvaajan suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$. $(t,s)$-kuvaajassa pisteet muodostaisivat käyrän, josta kulmakerrointa ei voisi lukea, ja pisteiden yhdistäminen murtoviivaksi seuraisi mittausvirheitäkin.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli $s \propto t^2$ sopii aineistoon. Suora ei ole pakotettu origon kautta. Sen vakiotermi on noin $0{,}01\,\text{m}$ eli suunnilleen matkan lukemisen epävarmuuden $0{,}01\,\text{m}$ suuruinen. Se on pieni, ja koska suoraa ei ole pakotettu origon kautta, se ei vaikuta kulmakertoimeen. Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, alle lukemisen epävarmuuden. Kuvaajan suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$. $(t,s)$-kuvaajassa pisteet muodostaisivat käyrän, josta kulmakerrointa ei voisi lukea, ja pisteiden yhdistäminen murtoviivaksi seuraisi mittausvirheitäkin.
 
 ### b)
 **Annettu:** a-kohdan $(t^2,\,s)$-suora; matkan lukemisen epävarmuus $0{,}01\,\text{m}$
 **Kysytty:** putoamiskiihtyvyys $g$ epävarmuuksineen yksikössä $\text{m/s}^2$
 **Periaate:** Suoran kulmakerroin on $\tfrac{1}{2}g$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Epävarmuus arvioidaan jyrkimmästä ja loivimmasta suorasta, jotka vielä kulkevat kaikkien pisteiden $\pm 0{,}01\,\text{m}$:n pystyvälien kautta (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Kuvaajan lukeminen:** Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0{,}020\,\text{s}^2;\ 0{,}113\,\text{m})$ ja $(0{,}150\,\text{s}^2;\ 0{,}786\,\text{m})$. Rajasuorien kulmakertoimet ovat $5{,}09\,\text{m/s}^2$ (loivin) ja $5{,}24\,\text{m/s}^2$ (jyrkin).
+**Kuvaajan lukeminen:** Suoralta luetaan kuvaajaan ympyröidyt kaksi kaukana toisistaan olevaa pistettä: $(0{,}020\,\text{s}^2;\ 0{,}113\,\text{m})$ ja $(0{,}150\,\text{s}^2;\ 0{,}786\,\text{m})$. Rajasuorien kulmakertoimet ovat $5{,}09\,\text{m/s}^2$ (loivin) ja $5{,}24\,\text{m/s}^2$ (jyrkin).
 **Kaava:** $a_\text{k} = \dfrac{\Delta s}{\Delta (t^2)} = \dfrac{1}{2}g$, joten $g = 2a_\text{k}$ ja $\Delta g = 2 \cdot \dfrac{a_\text{max} - a_\text{min}}{2}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
 a_\text{k} &= \dfrac{0{,}786\,\text{m} - 0{,}113\,\text{m}}{0{,}150\,\text{s}^2 - 0{,}020\,\text{s}^2} \\
 &= \dfrac{0{,}673\,\text{m}}{0{,}130\,\text{s}^2} \\
-&= 5{,}18\,\text{m/s}^2
+&= 5{,}177\,\text{m/s}^2
 \end{aligned}
 $$; $$
 \begin{aligned}
-g &= 2 \cdot 5{,}18\,\text{m/s}^2 \\
+g &= 2 \cdot 5{,}177\,\text{m/s}^2 \\
 &= 10{,}35\,\text{m/s}^2
 \end{aligned}
 $$; $$
@@ -845,18 +845,18 @@ $$
 **Mallivastaus:** *Vertailu.* Ero on $$
 \begin{aligned}
 10{,}35\,\text{m/s}^2 - 9{,}81\,\text{m/s}^2 &= 0{,}54\,\text{m/s}^2 \\
-&\approx 5{,}5\,\%
+\dfrac{0{,}54\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} &\approx 5{,}5\,\%
 \end{aligned}
 $$ eli $0{,}54 : 0{,}147 \approx 3{,}7$-kertainen epävarmuuteen verrattuna. Arvo $9{,}81\,\text{m/s}^2$ on epävarmuusvälin $10{,}19\ldots 10{,}48\,\text{m/s}^2$ ulkopuolella, joten ero ei selity satunnaisella lukemisvirheellä. Mittauksessa on todennäköisesti systemaattinen virhe.
 
 *Ilmanvastus.* Ilmanvastus vastustaa kuulan liikettä, joten se pienentäisi mitattua kiihtyvyyttä. Mitattu arvo on kuitenkin liian suuri, joten ilmanvastus ei selitä eroa.
 
-*Mahdolliset syyt.* Mittakaavan virhe: jos matkat on mitattu videolta mittakaavalla, jossa pituus on yliarvioitu noin $5{,}5\,\%$, myös $g$ on yliarvioitu. Aikaskaalan virhe: koska $g$ on verrannollinen suureeseen $\dfrac{s}{t^2}$, ajan $2{,}6\,\%$:n virhe riittää: $$
+*Mahdolliset syyt.* Mittakaavan virhe: jos matkat on mitattu videolta mittakaavalla, jossa pituus on yliarvioitu noin $5{,}5\,\%$, myös $g$ on yliarvioitu. Aikaskaalan virhe: $g = 2s/t^2$, joten jos todellinen kuvaväli on oletettua $0{,}05\,\text{s}$ pidempi, ajat on aliarvioitu ja laskettu $g$ on liian suuri. Jotta mitattu $10{,}35\,\text{m/s}^2$ olisi todellisuudessa $9{,}81\,\text{m/s}^2$, kuvavälin pitäisi olla $$
 \begin{aligned}
-\sqrt{\dfrac{9{,}81}{10{,}35}} &= 0{,}974 \\
-0{,}974 \cdot 0{,}05\,\text{s} &= 0{,}0487\,\text{s}
+\sqrt{\dfrac{10{,}35}{9{,}81}} &= 1{,}027 \\
+1{,}027 \cdot 0{,}05\,\text{s} &= 0{,}0514\,\text{s}
 \end{aligned}
-$$ eli kuvaväli olisi todellisuudessa $0{,}0487\,\text{s}$ eikä oletettu $0{,}05\,\text{s}$. Kuvataajuus on voinut poiketa nimellisestä.
+$$ eli noin $2{,}7\,\%$ pidempi kuin oletettu. Kuvataajuus olisi silloin nimellistä pienempi.
 
 *Parannukset.* Mittakaava kalibroidaan tunnetulla pituudella kuulan putoamissuoran tasossa, kuvataajuus tarkistetaan ja pudotus toistetaan useita kertoja.
 

@@ -921,7 +921,7 @@
               "detail": "Suhteellinen epävarmuus on $\\tfrac{1{,}2}{30{,}0} \\approx 4{,}1\\,\\%$. Se antaa $\\Delta x \\approx 0{,}6\\,\\text{cm}$, joten $x = (15{,}0 \\pm 0{,}6)\\,\\text{cm}$."
             },
             {
-              "text": "Arvioi luotettavuutta. Voima $4{,}5\\,\\text{N}$ ja venymä $15\\,\\text{cm}$ ovat kuvaajan alueen ($2{,}94\\,\\text{N}$ ja $9{,}8\\,\\text{cm}$) ulkopuolella, joten tulos on ekstrapolointia. Jousi voi ylittää kimmorajansa. Epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.",
+              "text": "Arvioi luotettavuutta. Voima $4{,}5\\,\\text{N}$ ja venymä $15\\,\\text{cm}$ ovat kuvaajan alueen ($2{,}94\\,\\text{N}$ ja $9{,}8\\,\\text{cm}$) ulkopuolella, joten tulos on ekstrapolointia eli arviointia mitatun alueen ulkopuolelle. Jousi voi ylittää kimmorajansa eli rajan, jonka jälkeen se ei enää palaudu entiseen pituuteensa. Epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.",
               "tag": "graph",
               "points": 1
             }
@@ -953,7 +953,7 @@
           "id": "a",
           "kind": "graph",
           "points": 5,
-          "text": "Esitä aineisto kuvaajana, josta putoamiskiihtyvyys saadaan suoran kulmakertoimesta. Sovita pisteisiin suora. Perustele, miksi valitsit tämän kuvaajan.",
+          "text": "Esitä aineisto kuvaajana, josta putoamiskiihtyvyys voidaan määrittää. Sovita pisteisiin suora. Perustele, miksi valitsit tämän kuvaajan.",
           "criteria": [
             {
               "key": "graph_axes",
@@ -996,7 +996,7 @@
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "Kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Esimerkiksi $(0{,}020\\,\\text{s}^2;\\ 0{,}113\\,\\text{m})$ ja $(0{,}150\\,\\text{s}^2;\\ 0{,}786\\,\\text{m})$ antavat noin $5{,}18\\,\\text{m/s}^2$."
+              "detail": "Kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Esimerkiksi ympyröidyt pisteet $(0{,}020\\,\\text{s}^2;\\ 0{,}113\\,\\text{m})$ ja $(0{,}150\\,\\text{s}^2;\\ 0{,}786\\,\\text{m})$ antavat noin $5{,}18\\,\\text{m/s}^2$."
             },
             {
               "key": "equation",
@@ -1006,7 +1006,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$g = 2 \\cdot 5{,}18\\,\\text{m/s}^2 \\approx 10{,}35\\,\\text{m/s}^2$"
+              "detail": "$g = 2 \\cdot 5{,}177\\,\\text{m/s}^2 \\approx 10{,}35\\,\\text{m/s}^2$"
             },
             {
               "key": "uncertainty",
@@ -1029,7 +1029,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Ero on $0{,}54\\,\\text{m/s}^2$ eli noin $5{,}5\\,\\%$. Se on yli kolme kertaa epävarmuus. Arvo $9{,}81\\,\\text{m/s}^2$ on epävarmuusvälin $10{,}19\\ldots 10{,}48\\,\\text{m/s}^2$ ulkopuolella. Satunnainen lukemisvirhe ei siis selitä eroa, vaan syy on todennäköisesti systemaattinen virhe."
+              "detail": "Ero on $0{,}54\\,\\text{m/s}^2$ eli noin $5{,}5\\,\\%$. Se on yli kolme kertaa epävarmuus. Arvo $9{,}81\\,\\text{m/s}^2$ on epävarmuusvälin $10{,}19\\ldots 10{,}48\\,\\text{m/s}^2$ ulkopuolella. Satunnainen lukemisvirhe ei siis selitä eroa, vaan syy on todennäköisesti systemaattinen virhe eli virhe, joka vaikuttaa joka kerta samaan suuntaan."
             },
             {
               "text": "Ilmanvastus pienentäisi mitattua kiihtyvyyttä eikä suurentaisi sitä. Se ei siis selitä liian suurta tulosta.",
@@ -1039,7 +1039,7 @@
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Mahdollinen systemaattinen virhe on pituuskaavan virhe noin $5{,}5\\,\\%$. Toinen mahdollisuus on, että kuvaväli on noin $2{,}6\\,\\%$ lyhyempi kuin oletettu ($0{,}0487\\,\\text{s}$ eikä $0{,}05\\,\\text{s}$)."
+              "detail": "Mahdollinen systemaattinen virhe on mittakaavan virhe noin $5{,}5\\,\\%$. Toinen mahdollisuus on, että kuvaväli on noin $2{,}7\\,\\%$ pidempi kuin oletettu ($0{,}0514\\,\\text{s}$ eikä $0{,}05\\,\\text{s}$)."
             },
             {
               "text": "Ehdottaa tarkistuksia: mittakaava tunnetulla pituudella kuulan putoamissuoran tasossa, kuvataajuuden tarkistus ja toistetut pudotukset.",

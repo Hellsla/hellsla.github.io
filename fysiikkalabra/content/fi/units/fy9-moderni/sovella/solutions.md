@@ -465,14 +465,14 @@ $$ Se on noin $35$ nanogrammaa.
 **Annettu:** kuvaaja annosnopeudesta $\dot{H}$ seinän paksuuden $d$ funktiona ja malli $\dot{H} = \dot{H}_0\,e^{-\mu d}$
 **Kysytty:** vaimennuskerroin $\mu$
 **Periaate:** Gammasäteilyn vaimeneminen aineessa on eksponentiaalista, joten annosnopeus pienenee samassa suhteessa jokaista seinän paksuuden lisäystä kohti (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Kerroin $\mu$ saadaan ratkaisemalla yhtälö kahden kuvaajan pisteen avulla.
-**Kuvaajan lukeminen:** Kuvaajalta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(20\,\text{cm};\ 5{,}0\,\mu\text{Sv/h})$. Ensimmäinen on annosnopeus ilman seinää, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
+**Kuvaajan lukeminen:** Kuvaajalta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(10\,\text{cm};\ 20\,\mu\text{Sv/h})$. Ensimmäinen on annosnopeus ilman seinää, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
 **Kaava:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$, joten $\dfrac{\dot{H}_0}{\dot{H}} = e^{\mu d}$ ja $\mu = \dfrac{\ln(\dot{H}_0 / \dot{H})}{d}$
 **Muunnokset:** Ei tarvita: paksuus on senttimetreinä ja annosnopeudet mikrosieverteinä tunnissa, ja $\mu$ saa yksikön $1/\text{cm}$.
 **Sijoitus:** $$
 \begin{aligned}
-\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 5{,}0\,\mu\text{Sv/h})}{20\,\text{cm}} \\
-&= \dfrac{\ln 16}{20\,\text{cm}} \\
-&= \dfrac{2{,}773}{20\,\text{cm}} \\
+\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 20\,\mu\text{Sv/h})}{10\,\text{cm}} \\
+&= \dfrac{\ln 4}{10\,\text{cm}} \\
+&= \dfrac{1{,}386}{10\,\text{cm}} \\
 &\approx 0{,}14\,\dfrac{1}{\text{cm}}
 \end{aligned}
 $$
@@ -537,7 +537,7 @@ d &= \dfrac{\ln(80\,\mu\text{Sv/h} : 3{,}03\,\mu\text{Sv/h})}{0{,}1386\,\text{1/
 $$
 **Vastaus:** Seinän pitää olla vähintään $24\,\text{cm}$ paksu. Tulos pyöristetään ylöspäin, koska $23\,\text{cm}$ antaisi annosnopeuden $3{,}3\,\mu\text{Sv/h}$ ja annoksen yli $1{,}0\,\text{mSv}$. Kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Paksuus $24\,\text{cm}$ on kuvaajan alueella (se päättyy kohtaan $25\,\text{cm}$), ja kuvaajalla annosnopeus on siinä noin $2{,}9\,\mu\text{Sv/h}$, alle rajan $3{,}03\,\mu\text{Sv/h}$. Seinän pitää olla paksumpi kuin nykyinen $18\,\text{cm}$, koska nykyinen seinä ylitti rajan.
-**Oletukset:** Malli olettaa annosnopeuden vakioksi ja jättää sironnan huomiotta: seinästä ja ympäristöstä sironnut säteily tuo lisäannosta, eikä lähteen aktiivisuus pysy vakiona. Siksi todellinen seinä kannattaa tehdä tulosta paksummaksi, esimerkiksi $25\,\text{cm}$ tai enemmän.
+**Oletukset:** Malli jättää sironnan huomiotta: seinästä ja ympäristöstä sironnut säteily tuo lisäannosta, joten todellinen annosnopeus on laskettua suurempi. Samoin tulos on liian pieni, jos lähde vaihdetaan vahvempaan tai oleskeluaika pitenee. Siksi todellinen seinä kannattaa tehdä tulosta paksummaksi, esimerkiksi $25\,\text{cm}$ tai enemmän.
 
 ### Yleisiä virheitä
 - a-kohdassa suhteesta otetaan logaritmin sijaan pelkkä osamäärä: $\mu = 16 / 20\,\text{cm} = 0{,}80\,\text{1/cm}$. Toinen virhe on kääntää suhde, jolloin $\mu$ tulee negatiiviseksi.
@@ -596,7 +596,7 @@ $$
 ### c)
 **Annettu:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$, $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$
 **Kysytty:** aika $t$, jonka galaksit ovat etääntyneet toisistaan
-**Periaate:** Jos galaksi on liikkunut koko ajan samalla nopeudella $v$ ja lähtenyt samasta paikasta kuin muut, se on kulkenut matkan $d = v\,t$. Hubblen lain mukaan $v = H_0\,d$, joten $t = d / v = 1 / H_0$ on sama kaikille galakseille (luku *Maailmankaikkeuden kehitys*).
+**Periaate:** Jos galaksien väliset etäisyydet ovat kasvaneet nollasta koko ajan samalla nopeudella $v$, galaksin etäisyys on $d = v\,t$. Hubblen lain mukaan $v = H_0\,d$, joten $t = d / v = 1 / H_0$ on sama kaikille galakseille (luku *Maailmankaikkeuden kehitys*).
 **Kaava:** $t = \dfrac{d}{v} = \dfrac{1}{H_0}$
 **Muunnokset:** $H_0$ muunnetaan yksikköön $1/\text{s}$: $\text{Mpc}$ on $3{,}086 \cdot 10^{19}\,\text{km}$, joten $\text{km}$ supistuu.
 **Sijoitus:** $$

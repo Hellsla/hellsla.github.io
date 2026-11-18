@@ -465,14 +465,14 @@ $$ That is about $35$ nanograms.
 **Given:** a graph of the dose rate $\dot{H}$ as a function of the wall thickness $d$ and the model $\dot{H} = \dot{H}_0\,e^{-\mu d}$
 **Find:** the attenuation coefficient $\mu$
 **Principle:** The attenuation of gamma radiation in matter is exponential, so the dose rate falls by the same factor for every equal increase in the thickness of the wall (chapter *Radiation dose and radiation safety in Finland*). The coefficient $\mu$ is found by solving the equation using two points of the graph.
-**Reading the graph:** Two points far apart are read from the graph: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(20\,\text{cm};\ 5.0\,\mu\text{Sv/h})$. The first one is the dose rate without the wall, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
+**Reading the graph:** Two points far apart are read from the graph: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(10\,\text{cm};\ 20\,\mu\text{Sv/h})$. The first one is the dose rate without the wall, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
 **Formula:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$, so $\dfrac{\dot{H}_0}{\dot{H}} = e^{\mu d}$ and $\mu = \dfrac{\ln(\dot{H}_0 / \dot{H})}{d}$
 **Conversions:** None needed: the thickness is in centimetres and the dose rates in microsieverts per hour, and $\mu$ gets the unit $1/\text{cm}$.
 **Substitution:** $$
 \begin{aligned}
-\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 5.0\,\mu\text{Sv/h})}{20\,\text{cm}} \\
-&= \dfrac{\ln 16}{20\,\text{cm}} \\
-&= \dfrac{2.773}{20\,\text{cm}} \\
+\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 20\,\mu\text{Sv/h})}{10\,\text{cm}} \\
+&= \dfrac{\ln 4}{10\,\text{cm}} \\
+&= \dfrac{1.386}{10\,\text{cm}} \\
 &\approx 0.14\,\dfrac{1}{\text{cm}}
 \end{aligned}
 $$
@@ -537,7 +537,7 @@ d &= \dfrac{\ln(80\,\mu\text{Sv/h} : 3.03\,\mu\text{Sv/h})}{0.1386\,\text{1/cm}}
 $$
 **Answer:** The wall must be at least $24\,\text{cm}$ thick. The result is rounded up, because $23\,\text{cm}$ would give the dose rate $3.3\,\mu\text{Sv/h}$ and a dose of more than $1.0\,\text{mSv}$. Two significant figures like the initial data.
 **Reasonableness:** The thickness $24\,\text{cm}$ is within the range of the graph (it ends at $25\,\text{cm}$), and in the graph the dose rate there is about $2.9\,\mu\text{Sv/h}$, below the limit $3.03\,\mu\text{Sv/h}$. The wall must be thicker than the present $18\,\text{cm}$, because the present wall exceeded the limit.
-**Assumptions:** The model assumes that the dose rate is constant and ignores scattering: radiation scattered from the wall and the surroundings brings an additional dose, and the activity of the source does not stay constant. A real wall should therefore be made thicker than the result, for example $25\,\text{cm}$ or more.
+**Assumptions:** The model ignores scattering: radiation scattered from the wall and the surroundings brings an additional dose, so the real dose rate is larger than the calculated one. The result is also too small if the source is replaced by a stronger one or the time spent grows. A real wall should therefore be made thicker than the result, for example $25\,\text{cm}$ or more.
 
 ### Yleisiä virheitä
 - In part a the quotient is used instead of its logarithm: $\mu = 16 / 20\,\text{cm} = 0.80\,\text{1/cm}$. Another mistake is to turn the ratio upside down, which makes $\mu$ negative.
@@ -596,7 +596,7 @@ $$
 ### c)
 **Given:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$, $1\,\text{Mpc} = 3.086 \cdot 10^{19}\,\text{km}$ and $1\,\text{a} = 3.156 \cdot 10^{7}\,\text{s}$
 **Find:** the time $t$ the galaxies have been moving apart
-**Principle:** If a galaxy has moved at the same velocity $v$ all the time and started from the same place as the others, it has travelled the distance $d = v\,t$. According to Hubble's law $v = H_0\,d$, so $t = d / v = 1 / H_0$ is the same for all galaxies (chapter *The evolution of the universe*).
+**Principle:** If the distances between the galaxies have grown from zero at the same rate $v$ all the time, the distance of a galaxy is $d = v\,t$. According to Hubble's law $v = H_0\,d$, so $t = d / v = 1 / H_0$ is the same for all galaxies (chapter *The evolution of the universe*).
 **Formula:** $t = \dfrac{d}{v} = \dfrac{1}{H_0}$
 **Conversions:** $H_0$ is converted to the unit $1/\text{s}$: $\text{Mpc}$ is $3.086 \cdot 10^{19}\,\text{km}$, so $\text{km}$ cancels.
 **Substitution:** $$

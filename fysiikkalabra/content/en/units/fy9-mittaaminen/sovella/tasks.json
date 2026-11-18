@@ -953,7 +953,7 @@
           "id": "a",
           "kind": "graph",
           "points": 5,
-          "text": "Present the data as a graph from whose slope the acceleration of free fall can be obtained, and fit a straight line to the points. Justify your choice of graph.",
+          "text": "Present the data as a graph from which the acceleration of free fall can be determined, and fit a straight line to the points. Justify your choice of graph.",
           "criteria": [
             {
               "key": "graph_axes",
@@ -996,7 +996,7 @@
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "The slope is read from two points of the line that are far apart, for example $(0.020\\,\\text{s}^2;\\ 0.113\\,\\text{m})$ and $(0.150\\,\\text{s}^2;\\ 0.786\\,\\text{m})$: about $5.18\\,\\text{m/s}^2$."
+              "detail": "The slope is read from two points of the line that are far apart, for example the circled points $(0.020\\,\\text{s}^2;\\ 0.113\\,\\text{m})$ and $(0.150\\,\\text{s}^2;\\ 0.786\\,\\text{m})$: about $5.18\\,\\text{m/s}^2$."
             },
             {
               "key": "equation",
@@ -1006,7 +1006,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$g = 2 \\cdot 5.18\\,\\text{m/s}^2 \\approx 10.35\\,\\text{m/s}^2$"
+              "detail": "$g = 2 \\cdot 5.177\\,\\text{m/s}^2 \\approx 10.35\\,\\text{m/s}^2$"
             },
             {
               "key": "uncertainty",
@@ -1039,7 +1039,7 @@
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "A possible systematic error: an error of about $5.5\\,\\%$ in the length scale, or a frame interval about $2.6\\,\\%$ shorter than assumed ($0.0487\\,\\text{s}$ instead of $0.05\\,\\text{s}$)."
+              "detail": "A possible systematic error: an error of about $5.5\\,\\%$ in the length scale, or a frame interval about $2.7\\,\\%$ longer than assumed ($0.0514\\,\\text{s}$ instead of $0.05\\,\\text{s}$)."
             },
             {
               "text": "Proposes a check: calibrating the scale with a known length in the plane of the falling line, checking the frame rate, and repeated drops.",

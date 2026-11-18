@@ -155,7 +155,7 @@ out.update({"fy9-mittaaminen-s8-b": round(g8, 3), "fy9-mittaaminen-s8-slope": ro
             "fy9-mittaaminen-s8-dg": round(dg8, 3), "fy9-mittaaminen-s8-g-lo": round(g8lo, 3), "fy9-mittaaminen-s8-g-hi": round(g8hi, 3),
             "fy9-mittaaminen-s8-t2-last": round(t8sq[-1], 4), "fy9-mittaaminen-s8-c-diff": round(diff8, 3),
             "fy9-mittaaminen-s8-c-rel": round(diff8 / 9.81 * 100, 2), "fy9-mittaaminen-s8-c-times": round(diff8 / dg8, 2),
-            "fy9-mittaaminen-s8-c-tscale": round((9.81 / g8) ** 0.5, 4)})
+            "fy9-mittaaminen-s8-c-tscale": round((g8 / 9.81) ** 0.5, 4)})
 
 out = {k_: v_ for k_, v_ in out.items() if not isinstance(v_, list)}
 print(json.dumps(out))

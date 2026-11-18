@@ -995,7 +995,7 @@
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "Kuvaajalta luetaan kaksi pistettä, jotka ovat kaukana toisistaan. Esimerkiksi $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ ja $(20\\,\\text{cm};\\ 5{,}0\\,\\mu\\text{Sv/h})$."
+              "detail": "Kuvaajalta luetaan kaksi pistettä, jotka ovat kaukana toisistaan. Esimerkiksi $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ ja $(10\\,\\text{cm};\\ 20\\,\\mu\\text{Sv/h})$."
             },
             {
               "key": "equation",
@@ -1005,7 +1005,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 5{,}0)}{20\\,\\text{cm}} \\\\\n&= \\dfrac{2{,}77}{20\\,\\text{cm}} \\\\\n&\\approx 0{,}14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 20)}{10\\,\\text{cm}} \\\\\n&= \\dfrac{1{,}39}{10\\,\\text{cm}} \\\\\n&\\approx 0{,}14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
             }
           ]
         },
@@ -1069,7 +1069,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka paksu seinän pitää vähintään olla, jotta vuosiannos ei ylitä enimmäisannosta?",
+          "text": "Kuinka paksu seinän pitää vähintään olla, jotta vuosiannos ei ylitä enimmäisannosta? Mainitse myös yksi mallin oletus, joka voi tehdä tuloksesta liian pienen, ja kerro sen vaikutus.",
           "answer": {
             "value": 23.6,
             "unit": "cm",
@@ -1092,7 +1092,7 @@
               "detail": "$d \\approx 24\\,\\text{cm}$. Tulos pyöristetään ylöspäin, koska $23\\,\\text{cm}$ antaisi vielä liian suuren annoksen."
             },
             {
-              "text": "Nimeää oletuksen ja kertoo, miten se vaikuttaa tulokseen: annosnopeus on vakio eikä sirontaa oteta huomioon. Siksi oikea seinä kannattaa tehdä tulosta paksummaksi.",
+              "text": "Nimeää oletuksen, joka voi tehdä tuloksesta liian pienen. Esimerkiksi sirontaa ei oteta huomioon, lähde on vahvempi tai oleskeluaika on pidempi. Kertoo, miten oletus vaikuttaa: oikea seinä kannattaa tehdä tulosta paksummaksi.",
               "tag": "transfer",
               "points": 1
             }
@@ -1117,7 +1117,7 @@
         "fy1-2"
       ],
       "figure": "fy8-16/hubble-t",
-      "text": "Tähtitieteilijä on mitannut yhdeksän galaksin etääntymisnopeuden $v$ ja etäisyyden $d$. Kuvassa on mittauspisteet. Niihin on sovitettu suora, joka kulkee origon kautta. Hubblen lain mukaan $v = H_0\\,d$. Tässä $H_0$ on Hubblen vakio.\n\n- suora kulkee ruudukon pisteen $d = 250\\,\\text{Mpc}$, $v = 18\\,000\\,\\text{km/s}$ kautta\n- $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$\n- tähtitieteilijä havaitsee uuden galaksin, joka etääntyy meistä nopeudella $8400\\,\\text{km/s}$",
+      "text": "Tähtitieteilijä on mitannut yhdeksän galaksin etääntymisnopeuden $v$ ja etäisyyden $d$. Kuvassa on mittauspisteet. Niihin on sovitettu suora, joka kulkee origon kautta. Hubblen lain mukaan $v = H_0\\,d$. Tässä $H_0$ on Hubblen vakio.\n\n- $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$\n- tähtitieteilijä havaitsee uuden galaksin, joka etääntyy meistä nopeudella $8400\\,\\text{km/s}$",
       "parts": [
         {
           "id": "a",
@@ -1179,7 +1179,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Arvioi, kuinka kauan galaksit ovat etääntyneet toisistaan. Oleta, että jokainen galaksi on liikkunut koko ajan samalla nopeudella. Anna vastaus vuosina.",
+          "text": "Arvioi, kuinka kauan sitten galaksien väliset etäisyydet olivat nollia. Oleta, että etäisyydet ovat kasvaneet koko ajan samalla nopeudella. Anna vastaus vuosina.",
           "answer": {
             "value": 13580000000,
             "unit": "a",
@@ -1189,12 +1189,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Galaksi on kulkenut matkan $d$ vakionopeudella $v$. Aika on $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
+              "detail": "Galaksin etäisyys $d$ on kasvanut nollasta vakionopeudella $v$. Aika on $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muuntaa $H_0$:n yksikköön $1/\\text{s}$: $$\n\\begin{aligned}\nH_0 &= 72\\,\\text{km/s} : (3{,}086 \\cdot 10^{19}\\,\\text{km}) \\\\\n&\\approx 2{,}33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}\n\\end{aligned}\n$$."
+              "detail": "Muunnetaan $H_0$ yksikköön $1/\\text{s}$: $$\n\\begin{aligned}\nH_0 &= 72\\,\\text{km/s} : (3{,}086 \\cdot 10^{19}\\,\\text{km}) \\\\\n&\\approx 2{,}33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}\n\\end{aligned}\n$$."
             },
             {
               "key": "calculation",
@@ -1220,7 +1220,7 @@
               "points": 1
             },
             {
-              "text": "Selittää, että galaksit eivät liiku avaruuden läpi pois jostain pisteestä. Avaruus itse laajenee, ja etäisyydet kaikkien galaksien välillä kasvavat.",
+              "text": "Esittää oikean laajenemiskuvan. Avaruus itse laajenee, ja etäisyydet kaikkien galaksien välillä kasvavat. Se ei ole räjähdys jostain pisteestä. Esimerkiksi ilmapallovertaus käy. Myös muu yhtä pätevä perustelu ilman keskipistettä käy.",
               "tag": "concept",
               "points": 1
             },

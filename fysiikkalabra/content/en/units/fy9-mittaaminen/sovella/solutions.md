@@ -809,24 +809,24 @@ $$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extr
   <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5.18\,\text{m/s}^2$</div></foreignObject>
 </svg>
 
-**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data. The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, as large as the reading uncertainty of the distance, $0.01\,\text{m}$, so the constant term is not significant. The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$. In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
+**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data. The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, roughly the size of the reading uncertainty of the distance, $0.01\,\text{m}$. It is small, and because the line is not forced through the origin, it does not affect the slope. The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$. In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
 
 ### b)
 **Given:** the $(t^2,\,s)$ line of part a; the reading uncertainty of the distance is $0.01\,\text{m}$
 **Find:** the acceleration of free fall $g$ with its uncertainty in $\text{m/s}^2$
 **Principle:** The slope of the line is $\tfrac{1}{2}g$ (chapter *Acceleration and uniformly accelerated motion*). The uncertainty is estimated from the steepest and shallowest lines that still pass through all the $\pm 0.01\,\text{m}$ vertical ranges of the points (chapter *Measuring and the reliability of a measurement*).
-**Reading the graph:** Two points far apart are read from the line: $(0.020\,\text{s}^2;\ 0.113\,\text{m})$ and $(0.150\,\text{s}^2;\ 0.786\,\text{m})$. The slopes of the limiting lines are $5.09\,\text{m/s}^2$ (shallowest) and $5.24\,\text{m/s}^2$ (steepest).
+**Reading the graph:** The two circled points, far apart, are read from the line: $(0.020\,\text{s}^2;\ 0.113\,\text{m})$ and $(0.150\,\text{s}^2;\ 0.786\,\text{m})$. The slopes of the limiting lines are $5.09\,\text{m/s}^2$ (shallowest) and $5.24\,\text{m/s}^2$ (steepest).
 **Formula:** $a_\text{k} = \dfrac{\Delta s}{\Delta (t^2)} = \dfrac{1}{2}g$, so $g = 2a_\text{k}$ and $\Delta g = 2 \cdot \dfrac{a_\text{max} - a_\text{min}}{2}$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
 a_\text{k} &= \dfrac{0.786\,\text{m} - 0.113\,\text{m}}{0.150\,\text{s}^2 - 0.020\,\text{s}^2} \\
 &= \dfrac{0.673\,\text{m}}{0.130\,\text{s}^2} \\
-&= 5.18\,\text{m/s}^2
+&= 5.177\,\text{m/s}^2
 \end{aligned}
 $$; $$
 \begin{aligned}
-g &= 2 \cdot 5.18\,\text{m/s}^2 \\
+g &= 2 \cdot 5.177\,\text{m/s}^2 \\
 &= 10.35\,\text{m/s}^2
 \end{aligned}
 $$; $$
@@ -845,18 +845,18 @@ $$
 **Model answer:** *Comparison.* The difference is $$
 \begin{aligned}
 10.35\,\text{m/s}^2 - 9.81\,\text{m/s}^2 &= 0.54\,\text{m/s}^2 \\
-&\approx 5.5\,\%
+\dfrac{0.54\,\text{m/s}^2}{9.81\,\text{m/s}^2} &\approx 5.5\,\%
 \end{aligned}
 $$ that is $0.54 : 0.147 \approx 3.7$ times the uncertainty. The value $9.81\,\text{m/s}^2$ is outside the uncertainty range $10.19\ldots 10.48\,\text{m/s}^2$, so the difference is not explained by random reading error. The measurement probably has a systematic error.
 
 *Air resistance.* Air resistance opposes the motion of the ball, so it would decrease the measured acceleration. The measured value is, however, too large, so air resistance does not explain the difference.
 
-*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too. An error in the time scale: since $g$ is proportional to $\dfrac{s}{t^2}$, a $2.6\,\%$ error in the time is enough: $$
+*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too. An error in the time scale: $g = 2s/t^2$, so if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large. For the measured $10.35\,\text{m/s}^2$ to really be $9.81\,\text{m/s}^2$, the frame interval would have to be $$
 \begin{aligned}
-\sqrt{\dfrac{9.81}{10.35}} &= 0.974 \\
-0.974 \cdot 0.05\,\text{s} &= 0.0487\,\text{s}
+\sqrt{\dfrac{10.35}{9.81}} &= 1.027 \\
+1.027 \cdot 0.05\,\text{s} &= 0.0514\,\text{s}
 \end{aligned}
-$$ so the real frame interval would be $0.0487\,\text{s}$ instead of the assumed $0.05\,\text{s}$. The frame rate may have differed from the nominal one.
+$$ that is, about $2.7\,\%$ longer than assumed. The frame rate would then be lower than the nominal one.
 
 *Improvements.* The scale is calibrated with a known length in the plane of the falling line, the frame rate is checked and the drop is repeated several times.
 

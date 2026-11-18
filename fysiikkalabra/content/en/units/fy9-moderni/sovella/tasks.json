@@ -995,7 +995,7 @@
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "Two points far apart are read from the graph, for example $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ and $(20\\,\\text{cm};\\ 5.0\\,\\mu\\text{Sv/h})$."
+              "detail": "Two points far apart are read from the graph, for example $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ and $(10\\,\\text{cm};\\ 20\\,\\mu\\text{Sv/h})$."
             },
             {
               "key": "equation",
@@ -1005,7 +1005,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 5.0)}{20\\,\\text{cm}} \\\\\n&= \\dfrac{2.77}{20\\,\\text{cm}} \\\\\n&\\approx 0.14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 20)}{10\\,\\text{cm}} \\\\\n&= \\dfrac{1.39}{10\\,\\text{cm}} \\\\\n&\\approx 0.14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
             }
           ]
         },
@@ -1069,7 +1069,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "How thick must the wall be at least so that the annual dose does not exceed the maximum dose?",
+          "text": "How thick must the wall be at least so that the annual dose does not exceed the maximum dose? Also name one assumption of the model that may make the result too small, and its effect.",
           "answer": {
             "value": 23.6,
             "unit": "cm",
@@ -1092,7 +1092,7 @@
               "detail": "$d \\approx 24\\,\\text{cm}$, rounded up, because $23\\,\\text{cm}$ would still give too large a dose."
             },
             {
-              "text": "Names an assumption and justifies its effect: the dose rate is constant and scattering is ignored, so a real wall should be made thicker than the result.",
+              "text": "Names an assumption that may make the result too small (for example scattering is ignored, the source is stronger or the time spent is longer) and justifies its effect: a real wall should be made thicker than the result.",
               "tag": "transfer",
               "points": 1
             }
@@ -1117,7 +1117,7 @@
         "fy1-2"
       ],
       "figure": "fy8-16/hubble-t",
-      "text": "An astronomer has measured the recession velocity $v$ and the distance $d$ of nine galaxies. The figure shows the data points and a fitted line through the origin. According to Hubble's law $v = H_0\\,d$, where $H_0$ is the Hubble constant.\n\n- the line passes through the grid point $d = 250\\,\\text{Mpc}$, $v = 18\\,000\\,\\text{km/s}$\n- $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$\n- the astronomer observes a new galaxy that recedes from us at the velocity $8400\\,\\text{km/s}$",
+      "text": "An astronomer has measured the recession velocity $v$ and the distance $d$ of nine galaxies. The figure shows the data points and a fitted line through the origin. According to Hubble's law $v = H_0\\,d$, where $H_0$ is the Hubble constant.\n\n- $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$ and $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$\n- the astronomer observes a new galaxy that recedes from us at the velocity $8400\\,\\text{km/s}$",
       "parts": [
         {
           "id": "a",
@@ -1179,7 +1179,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Estimate how long the galaxies have been moving apart, assuming that every galaxy has moved at the same velocity all the time. Give the answer in years.",
+          "text": "Estimate how long ago the distances between the galaxies were zero, assuming that the distances have grown at the same rate all the time. Give the answer in years.",
           "answer": {
             "value": 13580000000,
             "unit": "a",
@@ -1189,7 +1189,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "If a galaxy has travelled the distance $d$ at the constant velocity $v$, the time is $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
+              "detail": "If the distance $d$ of a galaxy has grown from zero at the constant velocity $v$, the time is $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
             },
             {
               "key": "calculation",
@@ -1220,7 +1220,7 @@
               "points": 1
             },
             {
-              "text": "Explains that the galaxies do not move through space away from some point, but space itself expands: the distances between all galaxies grow.",
+              "text": "Gives a correct picture of the expansion: space itself expands and the distances between all galaxies grow (no explosion from a point), for example with the balloon comparison, or justifies the absence of a centre in another equally valid way.",
               "tag": "concept",
               "points": 1
             },
