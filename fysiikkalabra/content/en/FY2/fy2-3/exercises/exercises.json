@@ -220,7 +220,7 @@
     {
       "id": "fy2-3-L2-06",
       "level": 2,
-      "text": "A student solves a problem: “The power of an oven is $2.0\\,\\text{kW}$, and it is on for $90\\,\\text{min}$. The energy is $E = P\\,t = 2.0\\,\\text{kW} \\cdot 90 = 180\\,\\text{kWh}$.” The result is not believable. Find the error and calculate the energy consumed by the oven correctly in kilowatt-hours.",
+      "text": "A student solves a problem: “The power of an oven is $2.0\\,\\text{kW}$, and it is on for $90\\,\\text{min}$. The energy is $$\n\\begin{aligned}\nE &= P\\,t \\\\\n&= 2.0\\,\\text{kW} \\cdot 90 \\\\\n&= 180\\,\\text{kWh}\n\\end{aligned}\n$$” The result is not believable. Find the error and calculate the energy consumed by the oven correctly in kilowatt-hours.",
       "kind": [
         "error"
       ],

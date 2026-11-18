@@ -68,7 +68,8 @@ $$, close to the result. The emission is only under a quarter of a kilogram per 
 **Conversions:** The kilowatt-hours cancel, so the result comes out in grams. Finally $1\,\text{g} = 10^{-6}\,\text{t}$.
 **Substitution:** $$
 \begin{aligned}
-m_1 - m_2 &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&m_1 - m_2 \\
+&= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
 &\cdot 3600\,\text{kWh} \\
 &= 808\,\text{g/kWh} \\
 &\cdot 3600\,\text{kWh} \\
@@ -144,7 +145,14 @@ The emission factor tells only the greenhouse gases per kilowatt-hour; it does n
 **Principle:** Calculate the emission of each vehicle per hundred kilometres as the factor times the energy and divide the emission of the bus among the passengers. Then compare the emissions of one person by division.
 **Formula:** $m_\text{bus} = e_\text{b} \cdot V_\text{b} \cdot h_\text{b} : N$, $m_\text{car} = e_\text{c} \cdot V_\text{c} \cdot h_\text{c}$ and the ratio is $m_\text{car} : m_\text{bus}$, where $N$ is the number of passengers on the bus, $e$ the emission factor, $V$ the amount of fuel and $h$ the energy content per litre
 **Conversions:** Not needed: the litres and megajoules cancel, and the emissions come out in grams.
-**Substitution:** $m_\text{bus} = 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} : 25 = 79\,920\,\text{g} : 25 = 3196.8\,\text{g}$, $m_\text{car} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $13\,248\,\text{g} : 3196.8\,\text{g} = 4.14$
+**Substitution:** $$
+\begin{aligned}
+m_\text{bus} &= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \\
+&\cdot 36\,\text{MJ/}\textsf{l} : 25 \\
+&= 79\,920\,\text{g} : 25 \\
+&= 3196.8\,\text{g}
+\end{aligned}
+$$ $m_\text{car} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $13\,248\,\text{g} : 3196.8\,\text{g} = 4.14$
 **Answer:** $4.1$ times, two significant figures like the consumptions $6.0\,\textsf{l}$ and $30\,\textsf{l}$.
 **Reasonableness:** The bus uses five times as much fuel as the car, but its load is shared among $25$ passengers, so the emission per passenger is smaller. With rounded numbers $13\,000 : 3200 \approx 4$.
 

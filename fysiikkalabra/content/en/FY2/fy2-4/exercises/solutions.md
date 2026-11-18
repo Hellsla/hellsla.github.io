@@ -150,7 +150,12 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$. The power does not need converting, because the answer is requested in kilowatts.
 **Substitution:** $P_\text{o} = \dfrac{180\,\text{kW}}{0.90} = 200\,\text{kW}$
 **Answer:** $200\,\text{kW}$ or $2.0 \cdot 10^{2}\,\text{kW}$, two significant figures, as in the efficiency $90\,\%$.
-**Reasonableness:** The power taken is larger than the useful power, as it should be. Check: $0.90 \cdot 200\,\text{kW} = 180\,\text{kW}$, and the loss power is $200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}$, that is, $10\,\%$ of the power taken.
+**Reasonableness:** The power taken is larger than the useful power, as it should be. Check: $0.90 \cdot 200\,\text{kW} = 180\,\text{kW}$, and the loss power is $$
+\begin{aligned}
+&200\,\text{kW} - 180\,\text{kW} \\
+&= 20\,\text{kW}
+\end{aligned}
+$$ that is, $10\,\%$ of the power taken.
 
 ## fy2-4-L2-05
 **Given:** from the table, the power taken $P_\text{o}$ and the light power $P_\text{a}$ of the lamps: incandescent lamp $60\,\text{W}$ and $3.0\,\text{W}$, halogen lamp $40\,\text{W}$ and $2.8\,\text{W}$, fluorescent lamp $18\,\text{W}$ and $3.6\,\text{W}$, LED lamp $9.0\,\text{W}$ and $2.7\,\text{W}$
@@ -245,7 +250,12 @@ $$, as they should be. The typical efficiency of an LED lamp is about $30\,\%$. 
 **Principle:** Efficiency is the share of the useful energy in the energy taken, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so it is at most $100\,\%$. The calculation can be checked line by line: the unit conversions, the energy at steady power $E = P \cdot t$, the conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, and the direction of the ratio.
 **Model answer:** Line 1: $2.5\,\text{kW} = 2500\,\text{W}$ and $4.0\,\text{min} = 240\,\text{s}$ are correct.
 Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, that is $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
-Line 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ is correct.
+Line 3: $$
+\begin{aligned}
+E_\text{h} &= 600\,\text{kJ} - 360\,\text{kJ} \\
+&= 240\,\text{kJ}
+\end{aligned}
+$$ is correct.
 Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $$
 \begin{aligned}
 \eta &= \dfrac{E_\text{a}}{E_\text{o}} \\

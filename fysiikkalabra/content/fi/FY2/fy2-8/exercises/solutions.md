@@ -68,7 +68,8 @@ $$, lähellä tulosta. Päästö on vain vajaan neljänneskilon verran sadalta k
 **Muunnokset:** Kilowattitunnit supistuvat, joten tulos tulee grammoina. Lopuksi $1\,\text{g} = 10^{-6}\,\text{t}$.
 **Sijoitus:** $$
 \begin{aligned}
-m_1 - m_2 &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&m_1 - m_2 \\
+&= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
 &\cdot 3600\,\text{kWh} \\
 &= 808\,\text{g/kWh} \\
 &\cdot 3600\,\text{kWh} \\
@@ -133,7 +134,14 @@ $$.
 **Periaate:** Lasketaan kummankin ajoneuvon päästö sadalta kilometriltä kertoimella kertaa energia ja jaetaan bussin päästö matkustajien kesken. Sen jälkeen verrataan yhden henkilön päästöjä jakolaskulla.
 **Kaava:** $m_\text{bussi} = e_\text{b} \cdot V_\text{b} \cdot h_\text{b} : N$, $m_\text{auto} = e_\text{a} \cdot V_\text{a} \cdot h_\text{a}$ ja suhde on $m_\text{auto} : m_\text{bussi}$, missä $N$ on bussin matkustajien määrä, $e$ päästökerroin, $V$ polttoaineen määrä ja $h$ energiasisältö litraa kohti
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästöt tulevat grammoina.
-**Sijoitus:** $m_\text{bussi} = 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} : 25 = 79\,920\,\text{g} : 25 = 3196{,}8\,\text{g}$, $m_\text{auto} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $13\,248\,\text{g} : 3196{,}8\,\text{g} = 4{,}14$
+**Sijoitus:** $$
+\begin{aligned}
+m_\text{bussi} &= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \\
+&\cdot 36\,\text{MJ/}\textsf{l} : 25 \\
+&= 79\,920\,\text{g} : 25 \\
+&= 3196{,}8\,\text{g}
+\end{aligned}
+$$ $m_\text{auto} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $13\,248\,\text{g} : 3196{,}8\,\text{g} = 4{,}14$
 **Vastaus:** $4{,}1$ kertaa, kaksi merkitsevää numeroa kuten kulutuksissa $6{,}0\,\textsf{l}$ ja $30\,\textsf{l}$.
 **Järkevyys:** Bussi kuluttaa viisi kertaa enemmän polttoainetta kuin auto, mutta sen kuorma jakautuu $25$ matkustajalle, joten matkustajaa kohti päästö on pienempi. Pyöristetyillä luvuilla $13\,000 : 3200 \approx 4$.
 

@@ -117,7 +117,13 @@ This is wrong because the wind does not blow all the time, so the energy is calc
 **Conversions:** $32\,\% = 0.32$. Finally megawatt-hours to gigawatt-hours: $70\,080\,\text{MWh} = 70.08 \cdot 1000\,\text{MWh} = 70.08\,\text{GWh}$.
 **Substitution:** $P_\text{avg} = 0.32 \cdot 25\,\text{MW} = 8.0\,\text{MW}$ and $E = 8.0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70.08\,\text{GWh}$
 **Answer:** $70\,\text{GWh}$, two significant figures like the rated power $25\,\text{MW}$ and the share $32\,\%$.
-**Reasonableness:** At full power the farm would produce $25\,\text{MW} \cdot 8760\,\text{h} = 219\,000\,\text{MWh} \approx 220\,\text{GWh}$, and about a third of that is about $70\,\text{GWh}$. The result is smaller than the energy at rated power, because the wind varies.
+**Reasonableness:** At full power the farm would produce $$
+\begin{aligned}
+&25\,\text{MW} \cdot 8760\,\text{h} \\
+&= 219\,000\,\text{MWh} \\
+&\approx 220\,\text{GWh}
+\end{aligned}
+$$ and about a third of that is about $70\,\text{GWh}$. The result is smaller than the energy at rated power, because the wind varies.
 
 ## fy2-6-L2-02
 **Given:** energy $E = 14\,\text{TWh}$, power $P = 1.6\,\text{GW}$
@@ -229,7 +235,13 @@ o_\text{C} &= 4.0\,\text{MW} : 12\,\text{MW} = 0.33
 \end{aligned}
 ```
 **Answer:** The student is not right. Farm B produces the most energy because its rated power is the greatest, but it makes the poorest use of its rated power ($29\,\%$). The error is to mix up the annual energy and the use of the rated power: the energy grows with the rated power, so the share must be calculated by dividing the average power by the rated power. The best is farm C, whose average power is $33\,\%$ of the rated power, two significant figures like the rated powers.
-**Reasonableness:** If farm B ran at its rated power the whole year, it would produce $60\,\text{MW} \cdot 8760\,\text{h} = 525\,600\,\text{MWh} \approx 526\,\text{GWh}$, and $150 : 526 = 0.29$. All the shares are below one and of the order of a third, as is typical for wind power, because the wind varies.
+**Reasonableness:** If farm B ran at its rated power the whole year, it would produce $$
+\begin{aligned}
+&60\,\text{MW} \cdot 8760\,\text{h} \\
+&= 525\,600\,\text{MWh} \\
+&\approx 526\,\text{GWh}
+\end{aligned}
+$$ and $150 : 526 = 0.29$. All the shares are below one and of the order of a third, as is typical for wind power, because the wind varies.
 
 ## fy2-6-L2-07
 **Given:** emission factors coal $820\,\text{g/kWh}$ and wind power $12\,\text{g/kWh}$, the city's electricity $E = 2.0\,\text{TWh}$ per year
