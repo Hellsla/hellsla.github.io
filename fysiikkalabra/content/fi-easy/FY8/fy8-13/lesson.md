@@ -637,6 +637,7 @@ Toinen yleinen virhe on ajatella, että etäisyyden kaksinkertaistaminen puolitt
     $$H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$$
 
     ottaa huomioon kudosten herkkyyden. Molempien yksikkö on sievert $\text{Sv}$.
+
 - Suomalaisen keskimääräinen efektiivinen annos on noin $5{,}9\,\text{mSv}$ vuodessa (STUK-A263, 2020). Siitä sisäilman radon on noin $4\,\text{mSv}$ eli noin kaksi kolmasosaa.
 - Radonin hajoamistuotteet lähettävät alfasäteilyä keuhkoihin. Asuntojen viitearvo on $300\,\tfrac{\text{Bq}}{\text{m}^3}$.
 - Ulkoiselta säteilyltä suojaudutaan ajalla ($H = \dot{H} t$), etäisyydellä ($\dot{H} \propto \tfrac{1}{r^2}$) ja suojalla. Jokainen puoliintumispaksuus puolittaa gammasäteilyn annosnopeuden.

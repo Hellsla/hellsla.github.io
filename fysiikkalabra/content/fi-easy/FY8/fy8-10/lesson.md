@@ -408,6 +408,7 @@ Toinen virhe on ajatella, että massa säilyy ydinreaktiossa kuten kemiassa. Ydi
 - Ydin on kevyempi kuin sen erilliset nukleonit. Massavaje on
 
     $$\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}$$.
+
 - Sidosenergia $E_\text{B} = \Delta m\,c^2$ tarvitaan ytimen hajottamiseen nukleoneiksi, ja se vapautuu ytimen muodostuessa. Kun sijoitetaan $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, energia tulee megaelektronivoltteina.
 - Sidosenergia nukleonia kohti on suurin, noin $8{,}8\,\text{MeV}$, raudan ja nikkelin kohdalla. Fuusio ja fissio vapauttavat energiaa, koska ne siirtävät nukleoneja tiiviimmin sidottuihin ytimiin.
 - Reaktioenergia on $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Massa ei säily ydinreaktiossa, vaikka massaluku ja varausluku säilyvät. Atomimassoilla beeta miinus -hajoamisessa $Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2$. Beeta plus -hajoamisessa vähennetään lisäksi $2m_e$.

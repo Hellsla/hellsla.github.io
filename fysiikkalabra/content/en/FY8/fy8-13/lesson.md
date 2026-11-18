@@ -637,6 +637,7 @@ Another common mistake is to think that doubling the distance halves the dose ra
     $$H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$$
 
     the sensitivity of the tissues. Both are in the unit sievert, $\text{Sv}$.
+
 - The average effective dose of a Finn is about $5.9\,\text{mSv}$ per year (STUK-A263, 2020), of which indoor radon is about $4\,\text{mSv}$, or about two thirds.
 - The decay products of radon emit alpha radiation into the lungs; the reference level for dwellings is $300\,\tfrac{\text{Bq}}{\text{m}^3}$.
 - Protection from external radiation is by time ($H = \dot{H} t$), distance ($\dot{H} \propto \tfrac{1}{r^2}$) and shielding: every half-value thickness halves the dose rate of gamma radiation.
