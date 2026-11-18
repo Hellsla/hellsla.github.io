@@ -165,6 +165,12 @@ The brakes slow the rotation of the wheels, but it is the road that slows the ca
 
 Friction has an upper limit that depends on the tyres and the road surface. On dry asphalt the deceleration can be about $9\,\text{m/s}^2$, and the Liikenneturva calculator uses this value too. On a wet, snowy or icy road the friction and therefore the deceleration are smaller, on ice only a fraction of the value on a dry road. Anti-lock brakes (ABS) stop the wheels from locking. The surface of a rolling tyre does not slide relative to the road, so static friction acts on the tyre. It can be greater than the sliding friction of a sliding tyre, and the car stays steerable.
 
+```pysahdy
+Why is the braking distance longer on an icy road than on dry asphalt, even when the brake pedal is pressed fully?
+---
+On ice the friction is smaller, so the deceleration is smaller. Stopping then takes longer and the car travels a longer distance.
+```
+
 ### Speed makes the braking distance grow steeply
 The reaction distance is directly proportional to the speed: at double the speed the car travels double the distance during the reaction time. The braking distance grows more steeply. With the same deceleration, stopping from double the speed takes twice as long, and for that whole time the car moves twice as fast. The braking distance is therefore four times as long. In the figure the reaction time is $1.0\,\text{s}$ and the deceleration $9.0\,\text{m/s}^2$ at both speeds.
 
@@ -236,6 +242,12 @@ The reaction distance is directly proportional to the speed: at double the speed
 
 This gives the answer to the first part of the opening question. When the speed doubles from $50\,\text{km/h}$ to $100\,\text{km/h}$, the reaction distance doubles from $13.9\,\text{m}$ to $27.8\,\text{m}$, but the braking distance quadruples from $10.7\,\text{m}$ to $42.9\,\text{m}$. The stopping distance therefore grows from $24.6\,\text{m}$ to $70.6\,\text{m}$, almost three times as long.
 
+```pysahdy
+A driver slows from $80\,\text{km/h}$ to $40\,\text{km/h}$. How does the braking distance change when the deceleration is the same?
+---
+It becomes one quarter. Stopping takes only half the time, and the car moves at half the speed the whole time.
+```
+
 ### Same change in momentum, different collision time
 If the obstacle is closer than the stopping distance, the car collides with it. In a frontal collision the front of the car crumples and the car stops in about a tenth of a second. When the passenger stops with the car, their momentum $p = mv$ changes from $mv$ to zero. For a passenger of the same mass the change in momentum is the same with and without a seat belt when they stop from the same initial velocity to the same final velocity: the initial and final velocities determine the change in momentum. In a real accident, however, the motion of a passenger without a belt does not necessarily end when the car stops, because they may, for example, be thrown through the windscreen. When the change in momentum is the same, the only thing that can be changed is how long the **collision time** $\Delta t$ is, that is, the time in which the passenger stops. In the chapter *Momentum and impulse* you learned that the change in momentum equals the impulse $\overline{I} = \overline{F}\,\Delta t$. The longer the collision time, the smaller the force needed for the same change in momentum.
 
@@ -284,6 +296,12 @@ If the obstacle is closer than the stopping distance, the car collides with it. 
 </svg>
 
 Without a seat belt the passenger keeps moving at almost the original speed while the car slows down around them: by Newton's first law no force is yet slowing them down. They hit the steering wheel, the dashboard or the windscreen and stop in hundredths of a second. The **seat belt** fastens the passenger to the car, so they slow down together with the crumpling front of the car. The belt also stretches a little and spreads the force over the strong bones of the pelvis, chest and shoulder.
+
+```pysahdy
+The car stops in a collision. Why does a passenger without a belt keep moving forward even though nothing pushes them?
+---
+No force slows them down, so by Newton's first law they keep moving at their original velocity while the car stops around them.
+```
 
 <figure class="unit-photo"><img src="pics/fy4/side-impact-crash-test.webp" alt="A yellow small car in a test hall, its side pushed in and its body covered in measurement markers."><figcaption>A 2014 Chevrolet Spark after a side impact test by the US National Highway Traffic Safety Administration (NHTSA). The side of the car has been pushed in.</figcaption></figure>
 
