@@ -154,7 +154,7 @@ with sync_playwright() as pw:
                 save(pg, f"open-exercises{'' if k == 0 else '-L' + str(k + 1)}-{w}", f"exercise level {k + 1} at {w} px, every solution open", locator=lvl)
             pg.close(); continue
         pg.evaluate("document.querySelectorAll('details.fold').forEach((d) => { d.open = true; })")   # the Ennusta box starts closed; reviewers read its predictions
-        figs = pg.locator("main svg:not(#sim-root svg)")
+        figs = pg.locator("main svg:not(#sim-root svg):not(.katex svg):not(.zoom-btn svg):not([aria-hidden='true'])")   # figures only: the zoom button's icon and KaTeX's own drawings (a root sign) were captured as empty 28×28 px "figures" (work queue 4 batch 1)
         for i in range(figs.count()):
             f = figs.nth(i)
             label = f.get_attribute("aria-label") or ""

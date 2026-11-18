@@ -1,8 +1,0 @@
-# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
-# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
-# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
-tvt-epavarmuus	\Delta g \approx 0{,}040 \cdot 9{,}748\,\text{m/s}^2 \approx 0{,}39\,\
-tvt-epavarmuus	\Delta k = (4{,}21 - 3{,}89)\,\text{s}^2/\text{m} : 2 = 0{,}16\,\text{
-tvt-epavarmuus	g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}748\,\text{m/s}^2
-tvt-kulmakerroin	g = 4\pi^2 : 4{,}05\,\text{s}^2/\text{m} \approx 9{,}75\,\text{m/s}^2
-tvt-nopeus-datasta	v = 0{,}010\,\text{m} : 0{,}020\,\text{s} = 0{,}50\,\text{m/s}
