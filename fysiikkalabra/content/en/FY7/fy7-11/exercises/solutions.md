@@ -32,7 +32,7 @@
 **Given:** apex angle of the prism $A = 60.0^\circ$, angle of incidence $\alpha_1 = 45.0^\circ$, angle of refraction of the emerging ray $\alpha_4 = 52.0^\circ$
 **Find:** angle of deviation $\delta$ in degrees
 **Principle:** In a prism the ray turns by $\alpha_1 - \alpha_2$ at the first surface and by $\alpha_4 - \alpha_3$ at the second. Because the geometry of the prism gives $\alpha_2 + \alpha_3 = A$, the total turning depends only on the outer angles and the apex angle.
-**Formula:** $\delta = \alpha_1 + \alpha_4 - A$
+**Formula:** $$\begin{aligned} \delta &= (\alpha_1 - \alpha_2) + (\alpha_4 - \alpha_3) \\ \alpha_2 + \alpha_3 &= A \\ \delta &= \alpha_1 + \alpha_4 - (\alpha_2 + \alpha_3) \\ &= \alpha_1 + \alpha_4 - A \end{aligned}$$
 **Conversions:** Not needed: all the angles are in degrees.
 **Substitution:** $\delta = 45.0^\circ + 52.0^\circ - 60.0^\circ = 37.0^\circ$
 **Answer:** $37.0^\circ$, to one decimal like the angles.
@@ -42,7 +42,7 @@
 **Given:** angle of incidence at the surface of the droplet $\alpha = 55.0^\circ$, angle of refraction $\beta = 38.0^\circ$, one reflection from the back surface of the droplet
 **Find:** angle $\theta$ from the direction of the antisolar point in degrees
 **Principle:** The ray turns by $\alpha - \beta$ at the point of entry, by $180^\circ - 2\beta$ at the reflection and by $\alpha - \beta$ at the point of exit. The total turning is $180^\circ + 2\alpha - 4\beta$, so the light leaves at $180^\circ$ minus the turning, measured from the direction the sunlight came from.
-**Formula:** $\theta = 4\beta - 2\alpha$
+**Formula:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) \\ &+ (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees.
 **Substitution:** $\theta = 4 \cdot 38.0^\circ - 2 \cdot 55.0^\circ = 152.0^\circ - 110.0^\circ = 42.0^\circ$
 **Answer:** $42.0^\circ$, to one decimal like the angles.
@@ -52,7 +52,7 @@
 **Given:** length of the fibre $L = 5.00\,\text{km}$, refractive index of red $n_\text{r} = 1.5143$, of violet $n_\text{v} = 1.5302$, speed of light in vacuum $c = 3.00 \cdot 10^8\,\text{m/s}$
 **Find:** difference $\Delta t$ in arrival times in nanoseconds
 **Principle:** According to the assumption of the problem, each colour travels in the glass at speed $v = c : n$; a real short flash travels slightly more slowly at the group velocity, but that is ignored here. The refractive index depends on wavelength. The refractive index of violet is greater, so violet travels more slowly and arrives later. Each colour travels the same distance at a steady speed, so the travel time is $t = L : v$.
-**Formula:** $v = \dfrac{c}{n}$ and $t = \dfrac{L}{v} = \dfrac{L n}{c}$, so $\Delta t = t_\text{v} - t_\text{r} = \dfrac{L n_\text{v}}{c} - \dfrac{L n_\text{r}}{c}$
+**Formula:** $$\begin{aligned} v &= \frac{c}{n} \\ t &= \frac{L}{v} \\ &= \frac{L n}{c} \\ \Delta t &= t_\text{v} - t_\text{r} \\ &= \frac{L n_\text{v}}{c} - \frac{L n_\text{r}}{c} \end{aligned}$$
 **Conversions:** $L = 5.00\,\text{km} = 5.00 \cdot 1000\,\text{m} = 5000\,\text{m}$. Finally $1\,\text{s} = 10^9\,\text{ns}$.
 **Substitution:** $t_\text{v} = \dfrac{5000\,\text{m} \cdot 1.5302}{3.00 \cdot 10^8\,\text{m/s}} = 2.55033 \cdot 10^{-5}\,\text{s}$ and $t_\text{r} = \dfrac{5000\,\text{m} \cdot 1.5143}{3.00 \cdot 10^8\,\text{m/s}} = 2.52383 \cdot 10^{-5}\,\text{s}$, so $$\begin{aligned} \Delta t &= 2.55033 \cdot 10^{-5}\,\text{s} \\ &- 2.52383 \cdot 10^{-5}\,\text{s} \\ &= 2.650 \cdot 10^{-7}\,\text{s} \\ &= 265\,\text{ns} \end{aligned}$$
 **Answer:** $265\,\text{ns}$, three significant figures like the difference of the refractive indices $0.0159$ and the length $5.00\,\text{km}$.
@@ -93,7 +93,7 @@
 **Given:** apex angle $A = 50.0^\circ$, angle of incidence $\alpha_1 = 45.0^\circ$, refractive index of red $n_\text{r} = 1.5143$, of violet $n_\text{v} = 1.5302$, prism in air
 **Find:** angle between the emerging rays $\Delta\delta = \delta_\text{v} - \delta_\text{r}$ in degrees
 **Principle:** Each colour is refracted at both surfaces with its own refractive index, because the refractive index depends on wavelength. Both colours arrive from the same direction, so the angle between the emerging rays is the difference of the angles of deviation. From the geometry of the prism $\alpha_2 + \alpha_3 = A$ and $\delta = \alpha_1 + \alpha_4 - A$.
-**Formula:** $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$, $\alpha_3 = A - \alpha_2$, $\sin\alpha_4 = n \sin\alpha_3$ and $\delta = \alpha_1 + \alpha_4 - A$, so $\Delta\delta = \alpha_{4,\text{v}} - \alpha_{4,\text{r}}$
+**Formula:** $$\begin{aligned} \sin\alpha_2 &= \frac{\sin\alpha_1}{n} \\ \alpha_3 &= A - \alpha_2 \\ \sin\alpha_4 &= n \sin\alpha_3 \\ \delta &= \alpha_1 + \alpha_4 - A \\ \Delta\delta &= \delta_\text{v} - \delta_\text{r} \\ &= \alpha_{4,\text{v}} - \alpha_{4,\text{r}} \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees, and the refractive indices have no unit.
 **Substitution:** Red: $\sin\alpha_2 = \dfrac{\sin 45.0^\circ}{1.5143} = 0.46695$, $\alpha_2 = 27.84^\circ$, $\alpha_3 = 50.0^\circ - 27.84^\circ = 22.16^\circ$, $\sin\alpha_4 = 1.5143 \cdot \sin 22.16^\circ = 0.57119$, $\alpha_4 = 34.83^\circ$. Violet: $\sin\alpha_2 = \dfrac{\sin 45.0^\circ}{1.5302} = 0.46210$, $\alpha_2 = 27.52^\circ$, $\alpha_3 = 22.48^\circ$, $\sin\alpha_4 = 1.5302 \cdot \sin 22.48^\circ = 0.58509$, $\alpha_4 = 35.81^\circ$. $\Delta\delta = 35.81^\circ - 34.83^\circ = 0.98^\circ$
 **Answer:** $0.98^\circ$ with the intermediate angles rounded to hundredths of a degree (with accurate intermediate values $0.966^\circ \approx 0.97^\circ$), two significant figures, because the result is the difference of two almost equal angles.
@@ -181,7 +181,7 @@
 **Given:** the six rows of the table $(\alpha,\ \theta_\text{solution})$ and $(\alpha,\ \theta_\text{water})$, one reflection from the back surface of the droplet, refractive index of water for red $1.3315$
 **Find:** refractive index $n$ of the solution (no unit) as the mean of the rows, and the difference of the greatest angles $\theta$ of the droplets and the relative positions of the arcs
 **Principle:** In the droplet $\theta = 4\beta - 2\alpha$, so when $\alpha$ and $\theta$ are known, the angle of refraction is $\beta = (\theta + 2\alpha) : 4$. The refractive index is obtained from the law of refraction from air into the droplet, and because the measured points have slight variation, the mean of all rows is taken.
-**Formula:** $\beta = \dfrac{\theta + 2\alpha}{4}$ and $\sin\alpha = n\sin\beta$, so $n = \dfrac{\sin\alpha}{\sin\beta}$
+**Formula:** $$\begin{aligned} \theta &= 4\beta - 2\alpha \\ \beta &= \frac{\theta + 2\alpha}{4} \\ \sin\alpha &= n \sin\beta \\ n &= \frac{\sin\alpha}{\sin\beta} \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees, and the refractive index has no unit.
 **Substitution:** $\alpha = 40.0^\circ$: $\beta = \dfrac{29.35^\circ + 2 \cdot 40.0^\circ}{4} = 27.337^\circ$, $n = \dfrac{\sin 40.0^\circ}{\sin 27.337^\circ} = 1.3997$; $\alpha = 50.0^\circ$: $\beta = \dfrac{32.67^\circ + 2 \cdot 50.0^\circ}{4} = 33.168^\circ$, $n = \dfrac{\sin 50.0^\circ}{\sin 33.168^\circ} = 1.4002$; $\alpha = 55.0^\circ$: $\beta = \dfrac{33.26^\circ + 2 \cdot 55.0^\circ}{4} = 35.815^\circ$, $n = \dfrac{\sin 55.0^\circ}{\sin 35.815^\circ} = 1.3999$; $\alpha = 58.0^\circ$: $\beta = \dfrac{33.10^\circ + 2 \cdot 58.0^\circ}{4} = 37.275^\circ$, $n = \dfrac{\sin 58.0^\circ}{\sin 37.275^\circ} = 1.4002$; $\alpha = 62.0^\circ$: $\beta = \dfrac{32.41^\circ + 2 \cdot 62.0^\circ}{4} = 39.102^\circ$, $n = \dfrac{\sin 62.0^\circ}{\sin 39.102^\circ} = 1.3999$; $\alpha = 66.0^\circ$: $\beta = \dfrac{30.91^\circ + 2 \cdot 66.0^\circ}{4} = 40.727^\circ$, $n = \dfrac{\sin 66.0^\circ}{\sin 40.727^\circ} = 1.4002$. The sum of the refractive indices of the rows is $8.4001$, so the mean is $1.4000$. The greatest angles in the table are $42.25^\circ$ for water and $33.26^\circ$ for the solution, so the difference is $42.25^\circ - 33.26^\circ = 8.99^\circ$
 **Answer:** $n = 1.40$, three significant figures like the angles $\alpha$. The greatest angles are about $42.3^\circ$ for water and about $33.3^\circ$ for the solution, so the arc of the solution would be seen at an angle about $9^\circ$ smaller.

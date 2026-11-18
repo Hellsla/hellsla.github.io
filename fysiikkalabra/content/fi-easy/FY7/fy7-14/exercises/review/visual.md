@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 613be1c1acb7c3fe
+CONTENT-HASH: 228c9fec9c5b6564
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 14-15 and 14-? error task — "Oppilas" is used; the sister chapter fy7-13 and the other FY7 sets say "opiskelija". Use one word for the student across the course.
-- [Minor] soap-curve and coating-curve descriptions — say "laskettu, havainnollistava käyrä" so a non-seeing reader knows the curve is a model, not measured data.
-- [Minor] 14-19 text — "Kameran objektiivissa on neljä erillistä lasilinssiä eli kahdeksan pintaa" is clear, but "pintaa, joissa valo tulee ilmasta lasiin tai lasista ilmaan" is long; could be two sentences.
+- [Minor] aligned Kaava blocks — rows with stacked fractions sit tight against the next row; legible, only subtle spacing — optional: a little more row spacing in the shared aligned-block style.
 
 ## Checked
-- contact-8 (exercise captures #85–#96) at triage resolution: coating-curve (#88: axes R (%) and λ (nm), "ilman pinnoitetta" and "MgF₂-pinnoite" curves distinct, Finnish labels in LaTeX-style text), tables with LaTeX headers, solution blocks (Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys) aligned, units upright, decimal comma.
-- Not opened at full size: soap-curve in the fi-easy capture (judged from the en review's identical figure and its Finnish text in the packet; same figure source).
-- Full text of every task and multiple-choice feedback in the packet: short sentences, terms explained (matkaero, taitekerroin, kertaluku), case forms after units correct ("$110\,\text{nm}$:n").
+- fy7-14 captures open-exercises-L2-1280-8 (two-row Kaava `2nd=(k+½)λ`, `λ=2nd/(k+½)`, equals signs aligned) and open-exercises-L3-1280-9 (solution layout and the coating figure).
+- Delta: about 20 Kaava blocks changed; I opened two captures, the others use the same markup. Layout around the blocks survived; no clipping or overflow.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

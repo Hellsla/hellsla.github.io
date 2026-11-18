@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b20798f10602ca62
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 565e8027ad3e4499
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- A (for science): "Kuinka suuri teho muuttuu jatkojohdossa sisäenergiaksi?" keeps the old sentence's loose pairing of a power with an energy form. A stricter wording would be "Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?". The solution's Periaate already says it that way. Optional.
-- C: task d's Periaate says "Lähtökitka eli täysin kehittynyt lepokitka" and its Mallivastaus two lines later "suurin mahdollinen lepokitka". Both are correct; one term would be tidier.
+- [Minor] fy9-harjoituskoe-s2-fbd — the earlier Sovella review noted the labels render small at 390 px; unchanged by this diff, fix when the figure is next edited.
 
 ## Checked
-- Hunks: solutions.md task d Periaate and task c Kysytty; tasks.json rubric criterion d, questions c and d.
-- Opened `stage-exercises-390-14` (Periaate d), `-390-16` (rubric d), `-390-26` and `-1280-20` (questions c and d), `-390-29` (solution c, Kysytty and Periaate). All five changed sentences render whole; $\mu_0 N = \mu_0 mg$, $2{,}5\,\text{mm}^2$ and $P_\text{j}$ are KaTeX; no clipping, no orphaned punctuation; the point marks (3 p) keep their column at 1280 px.
-- Grammar: "muuttuu johdon sisäenergiaksi", "muuttuisi silloin sisäenergiaksi" are correct translative forms.
-- Page overflow at 390 and 1280 px, every box open: 0 px.
+- Hash 565e8027ad3e4499 at start and at end (unchanged).
+- Diff (excluding review/): only sovella/solutions.md, paragraph breaks inside Mallivastaus fields; words, maths and figures unchanged. Same paragraph cuts as the Finnish source (same diff: 42 insertions, 14 deletions in sovella/solutions.md).
+- Read the earlier Sovella visual report (PASS) as evidence.
+- Opened review/shots/contact-5.png (fi-easy): model-solution cards, Yleisia virheita lists, rubric rows, inquiry solution; split paragraphs read well, no clipping, overflow or red KaTeX source.
+- Did not open individual 390 px or 1280 px captures one by one this round; judgement of the changed paragraphs rests on the diff and that contact sheet.

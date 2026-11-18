@@ -288,7 +288,7 @@ Kysytään pisteen $B$ potentiaalia $V_B$ ja virtaa $I_3$.
 **Järkevyys.** Vastuksen $R_2$ kautta kulkee $6{,}0\,\text{V} : 60\,\Omega = 0{,}10\,\text{A}$, ja haarojen virrat ovat yhteensä $0{,}30\,\text{A}$ kuten virtalaki vaatii. Silmukassa $12\,\text{V} - 6{,}0\,\text{V} - 6{,}0\,\text{V} = 0$, kuten jännitelaki vaatii. Pienemmän resistanssin haaraan kulkee suurempi virta, kuten pitääkin.
 
 ## Yleinen virhekäsitys
-Moni ajattelee, että vastus kuluttaa virtaa, joten virta olisi vastuksen jälkeen pienempi kuin ennen sitä. Vastus muuttaa sähköenergiaa sisäenergiakseen, mutta varauksia ei katoa: virtamittari näyttää vastuksen kummallakin puolella saman lukeman. Vastuksessa pienenee potentiaali, ei virta.
+Moni ajattelee, että vastus kuluttaa virtaa, joten virta olisi vastuksen jälkeen pienempi kuin ennen sitä. Vastus muuttaa sähköenergiaa sisäenergiaksi, mutta varauksia ei katoa: virtamittari näyttää vastuksen kummallakin puolella saman lukeman. Vastuksessa pienenee potentiaali, ei virta.
 
 Toinen yleinen virhe on käyttää haaran virran laskemisessa koko lähteen jännitettä. Jos $30\,\Omega$:n haaran virta laskettaisiin virheellisesti jännitteestä $9{,}0\,\text{V}$, saataisiin $0{,}30\,\text{A}$. Haaran todellinen jännite on kuitenkin $6{,}0\,\text{V}$, joten $I_2 = 0{,}20\,\text{A}$. Toisessa haarassa $I_3 = 6{,}0\,\text{V} : 60\,\Omega = 0{,}10\,\text{A}$. Kirchhoffin virtalaki toteutuu: $0{,}20\,\text{A} + 0{,}10\,\text{A} = 0{,}30\,\text{A}$. Kolmas virhe on ajatella, että jännite on jonkin kohdan ominaisuus: jännite on aina kahden kohdan välinen potentiaaliero.
 

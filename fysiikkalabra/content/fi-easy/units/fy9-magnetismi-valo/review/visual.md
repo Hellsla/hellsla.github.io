@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 43b392b3a623282a
-SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8, -s9 (s9 b Sijoitus split); older tasks untouched
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 09bccee0c720559e
 
 ## Blocking
-(none) Round 1:n Major on korjattu: fi-easy s9 b) Sijoitus on tasatuilla riveillä (`W = (2,4 V)²/8,0 Ω · 0,40 s` / `+ (1,8 V)²/8,0 Ω · 0,20 s` / `= 0,72 W · 0,40 s` / `+ 0,41 W · 0,20 s` / `= 0,29 J + 0,082 J` / `≈ 0,37 J`). Chromella 360 px:ssä mitattuna lohkot mahtuvat (scrollWidth = clientWidth), ei vaakavieritystä. Välitulos 0,41 W vastaa Järkevyys-kohtaa; luvut ja yksiköt samat kuin fi:ssä.
+(none)
 
 ## Polish
-- [Minor] s9 b) aikavälit "0–0,80 s" voivat katketa viivan kohdalta; ei estä.
-- [Minor] Yksikköketju Järkevyys-kohdassa pysyy tekstirivinä; ei häiriötä.
+- [Minor] Sovella s7 solution, "Annettu": "400–700 nm" can break after the en dash at 390 px; keep it in one non-breaking math group (optional, carried from the Sovella report).
 
 ## Checked
-- fi-easy solutions.md s9 b lähdeteksti ja rakennettu sivu 360 px:ssä (kaavalohkojen leveydet). Vanhat tehtävät ja 1280 px ei avattu.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Language fi-easy. Read the diff (origin/main...HEAD) of sovella/solutions.md and inquiry.json: only paragraph breaks in solution fields; words, maths and figures unchanged.
+- Read the earlier Sovella visual report (PASS) as evidence.
+- Opened review/shots/contact-15.png (open solutions and model answers) at contact-sheet resolution: split paragraphs render as separate blocks inside the cards, no clipped formulas or overflow visible. No full-size captures opened; fine spacing judged only at contact-sheet scale.
+- Hash re-run at the end: 09bccee0c720559e (unchanged).

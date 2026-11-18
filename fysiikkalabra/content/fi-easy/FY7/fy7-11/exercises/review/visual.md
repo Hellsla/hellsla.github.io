@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fbddb24054c0d311
+CONTENT-HASH: 494809aa821182e9
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Delta (md-paragraphs and the caption marker). Opened fy7-11-open-exercises-L3-1280-5 (fi-easy): task 11-20 now reads "Aineisto on esimerkki." in plain sentences, the marker is gone from the caption, table and Annettu/Periaate blocks render correctly. The new solution paragraphs share the structure checked in the fi captures; not every one located by position.
-- Wording unchanged by the diff, plain Finnish.
+- content/fi-easy/FY7/fy7-11/review/shots/fy7-11-open-exercises-1280-5.png (regenerated 18:3x, stamp matches hash): 11-5 Kaava block. At 1280 px the capture shows the first row on one line ($\delta_\text{k} = (\alpha-\beta) + (180^\circ-2\beta) + (\alpha-\beta)$), i.e. the renderer joins the `&+` continuation when it fits; equals signs aligned, four rows, nothing clipped, Sijoitus/Vastaus/Järkevyys intact.
+- Phone width not captured (exercise captures exist at 1280 only); judged from the coordinator's `check_layout.py fy7-11 --width 352` pass on the rebuilt page in this language, which failed by 7 px before the split. That is deterministic evidence, not my own look.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

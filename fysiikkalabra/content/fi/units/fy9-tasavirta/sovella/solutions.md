@@ -28,7 +28,9 @@ $$ ja $h = \dfrac{2{,}933 \cdot 10^{-8}\,\text{m}^2}{3{,}0 \cdot 10^{-3}\,\text{
 ### c)
 **Kysytty:** miten virta ja teho muuttuvat, kun yksi raita katkeaa, ja lämpeneekö lasi ehjien raitojen kohdalta yhtä hyvin
 **Periaate:** Rinnakkaisten haarojen yli on sama jännite, joten katkennut haara ei muuta muiden haarojen jännitettä eikä virtaa (luku *Vastusten sarja- ja rinnankytkennät*). Kiskoihin tuleva virta on haarojen virtojen summa (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).
-**Mallivastaus:** Katkenneen raidan läpi ei enää kulje virtaa, mutta yhdeksän ehjän raidan yli on edelleen $13{,}5\,\text{V}$. Jokaisen ehjän raidan virta on yhä $1{,}20\,\text{A}$ ja teho $13{,}5\,\text{V} \cdot 1{,}20\,\text{A} = 16{,}2\,\text{W}$, joten ne lämmittävät lasia kuten ennen. Lämmittimen virta pienenee arvoon $9 \cdot 1{,}20\,\text{A} = 10{,}8\,\text{A}$, ja teho arvoon $13{,}5\,\text{V} \cdot 10{,}8\,\text{A} \approx 146\,\text{W}$, eli kumpikin pienenee kymmenesosalla. Katkenneen raidan kohdalle jää kapea kaista, josta huurre sulaa vain viereisten raitojen lämmön avulla. Jos raidat olisivat sarjassa, yksi katkos sammuttaisi koko lämmittimen.
+**Mallivastaus:** Katkenneen raidan läpi ei enää kulje virtaa, mutta yhdeksän ehjän raidan yli on edelleen $13{,}5\,\text{V}$. Jokaisen ehjän raidan virta on yhä $1{,}20\,\text{A}$ ja teho $13{,}5\,\text{V} \cdot 1{,}20\,\text{A} = 16{,}2\,\text{W}$, joten ne lämmittävät lasia kuten ennen.
+
+Lämmittimen virta pienenee arvoon $9 \cdot 1{,}20\,\text{A} = 10{,}8\,\text{A}$, ja teho arvoon $13{,}5\,\text{V} \cdot 10{,}8\,\text{A} \approx 146\,\text{W}$, eli kumpikin pienenee kymmenesosalla. Katkenneen raidan kohdalle jää kapea kaista, josta huurre sulaa vain viereisten raitojen lämmön avulla. Jos raidat olisivat sarjassa, yksi katkos sammuttaisi koko lämmittimen.
 
 ### d)
 **Annettu:** raidan resistanssi $R_1 = 11{,}25\,\Omega$ (a-kohta), $10$ raitaa rinnan, akun lähdejännite $E = 12{,}6\,\text{V}$ ja sisäinen resistanssi $R_\text{s} = 0{,}020\,\Omega$, lämmittimen teho moottorin käydessä $162\,\text{W}$ (a-kohta)
@@ -201,7 +203,9 @@ $$ muuttuu laturin, johtojen ja akun resistanssien sisäenergiaksi; siksi laturi
   <foreignObject x="158" y="322" width="247" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(1{,}20\,\text{A};\ 3{,}75\,\text{V})$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Paristoryhmää kuvataan mallilla, jossa lähde, jonka lähdejännite on $E$, on sarjassa sisäisen resistanssin $R_\text{s}$ kanssa. Kun ryhmästä otetaan virta $I$, napajännite pienenee sisäisen resistanssin jännitehäviön verran, $U = E - R_\text{s} I$. Jännitehäviö on verrannollinen virtaan, kun $E$ ja $R_\text{s}$ ovat vakioita, joten mallin kuvaaja on laskeva suora. Pisteet asettuvat hyvin suoralle, ja niiden poikkeamat suorasta ovat noin $0{,}01\,\text{V}$, lukemien tarkkuuden luokkaa. Malli sopii siis aineistoon.
+**Mallivastaus:** Paristoryhmää kuvataan mallilla, jossa lähde, jonka lähdejännite on $E$, on sarjassa sisäisen resistanssin $R_\text{s}$ kanssa. Kun ryhmästä otetaan virta $I$, napajännite pienenee sisäisen resistanssin jännitehäviön verran, $U = E - R_\text{s} I$.
+
+Jännitehäviö on verrannollinen virtaan, kun $E$ ja $R_\text{s}$ ovat vakioita, joten mallin kuvaaja on laskeva suora. Pisteet asettuvat hyvin suoralle, ja niiden poikkeamat suorasta ovat noin $0{,}01\,\text{V}$, lukemien tarkkuuden luokkaa. Malli sopii siis aineistoon.
 
 ### b)
 **Annettu:** sovitettu suora kuvaajassa; suoralta luetut pisteet $(0\,\text{A};\ 4{,}63\,\text{V})$ ja $(1{,}20\,\text{A};\ 3{,}75\,\text{V})$; uuden AA-pariston tyypilliset arvot $1{,}5$–$1{,}6\,\text{V}$ ja $0{,}1$–$0{,}3\,\Omega$
@@ -322,12 +326,18 @@ R &= 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\
 &\cdot \tfrac{30\,\text{m}}{0{,}75 \cdot 10^{-6}\,\text{m}^2} \\
 &= 0{,}68\,\Omega
 \end{aligned}
-$$. Virralla $10\,\text{A}$ teho on $0{,}68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, kuin pieni lämmitin johdon sisällä. Resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan, joten ohut johto lämpenee pituusyksikköä kohti yhtä paljon, oli se lyhyt tai pitkä. Teho kasvaa virran neliönä, joten ratkaisevaa on suuri virta: ohut johto on vaarallinen suurella virralla myös lyhyenä, ja varsinkin kelalle kierrettynä, jolloin lämpö ei pääse pois. Paksumpi johto $1{,}5\,\text{mm}^2$ puolittaisi tehon $34\,\text{W}$:iin.
+$$.
+
+Virralla $10\,\text{A}$ teho on $0{,}68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, kuin pieni lämmitin johdon sisällä. Resistanssi on verrannollinen pituuteen ja kääntäen verrannollinen poikkipinta-alaan, joten ohut johto lämpenee pituusyksikköä kohti yhtä paljon, oli se lyhyt tai pitkä.
+
+Teho kasvaa virran neliönä, joten ratkaisevaa on suuri virta: ohut johto on vaarallinen suurella virralla myös lyhyenä, ja varsinkin kelalle kierrettynä, jolloin lämpö ei pääse pois. Paksumpi johto $1{,}5\,\text{mm}^2$ puolittaisi tehon $34\,\text{W}$:iin.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, kun samassa $10\,\text{A}$:n ryhmässä ovat $2000\,\text{W}$:n vedenkeitin ja $850\,\text{W}$:n leivänpaahdin
 **Periaate:** Kodin pistorasiat on kytketty rinnan, joten jokaisen laitteen yli on verkon jännite (luku *Vastusten sarja- ja rinnankytkennät*). Lämmittävän laitteen virta on $I = \tfrac{P}{U}$ (luku *Sähköenergia kotona*). Ryhmän johdossa kulkee haarojen virtojen summa (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).
-**Mallivastaus:** Väite on väärä. Pistorasiat ovat rinnan, joten jokaisen laitteen yli on $230\,\text{V}$, ja laite ottaa oman virtansa $I = \tfrac{P}{U}$ muista laitteista riippumatta. Vedenkeitin ottaa $\tfrac{2000\,\text{W}}{230\,\text{V}} = 8{,}7\,\text{A}$ ja leivänpaahdin $\tfrac{850\,\text{W}}{230\,\text{V}} = 3{,}7\,\text{A}$ riippumatta siitä, onko toinen päällä. Ryhmän johdossa kulkee virtalain mukaan niiden summa $12{,}4\,\text{A}$, joka ylittää sulakkeen $10\,\text{A}$. Sulake katkaisee virran, koska liian suuri virta kuumentaisi ryhmän johtoja (teho $RI^2$). Uusi laite ei siis pienennä muiden virtaa, vaan kasvattaa ryhmän kokonaisvirtaa, ja juuri siksi ryhmää ei saa kuormittaa liikaa.
+**Mallivastaus:** Väite on väärä. Pistorasiat ovat rinnan, joten jokaisen laitteen yli on $230\,\text{V}$, ja laite ottaa oman virtansa $I = \tfrac{P}{U}$ muista laitteista riippumatta. Vedenkeitin ottaa $\tfrac{2000\,\text{W}}{230\,\text{V}} = 8{,}7\,\text{A}$ ja leivänpaahdin $\tfrac{850\,\text{W}}{230\,\text{V}} = 3{,}7\,\text{A}$ riippumatta siitä, onko toinen päällä.
+
+Ryhmän johdossa kulkee virtalain mukaan niiden summa $12{,}4\,\text{A}$, joka ylittää sulakkeen $10\,\text{A}$. Sulake katkaisee virran, koska liian suuri virta kuumentaisi ryhmän johtoja (teho $RI^2$). Uusi laite ei siis pienennä muiden virtaa, vaan kasvattaa ryhmän kokonaisvirtaa, ja juuri siksi ryhmää ei saa kuormittaa liikaa.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri jännite on linnun jalkojen välillä
@@ -337,7 +347,9 @@ $$. Virralla $10\,\text{A}$ teho on $0{,}68\,\Omega \cdot (10\,\text{A})^2 = 68\
 &2{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0{,}040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} \\
 &= 2{,}7 \cdot 10^{-6}\,\Omega
 \end{aligned}
-$$, ja jalkojen välinen jännite on $2{,}7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1{,}6\,\text{mV}$. Niin pieni jännite ei aja linnun kehon läpi juuri lainkaan virtaa, vaikka koko lintu on johdon kanssa korkeassa potentiaalissa maahan nähden. Pylväs on maan potentiaalissa. Jos lintu koskettaa sitä samalla, sen kehon yli on lähes koko johdon ja maan välinen jännite, kymmeniä tai satoja kilovoltteja, ja kehon kautta kulkee vaarallinen virta. Vaarallista ei siis ole korkea potentiaali vaan suuri potentiaaliero kehon kahden kohdan välillä.
+$$, ja jalkojen välinen jännite on $2{,}7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1{,}6\,\text{mV}$. Niin pieni jännite ei aja linnun kehon läpi juuri lainkaan virtaa, vaikka koko lintu on johdon kanssa korkeassa potentiaalissa maahan nähden.
+
+Pylväs on maan potentiaalissa. Jos lintu koskettaa sitä samalla, sen kehon yli on lähes koko johdon ja maan välinen jännite, kymmeniä tai satoja kilovoltteja, ja kehon kautta kulkee vaarallinen virta. Vaarallista ei siis ole korkea potentiaali vaan suuri potentiaaliero kehon kahden kohdan välillä.
 
 ### Yleisiä virheitä
 - a-kohdassa johdon pituudeksi otetaan $15\,\text{m}$, vaikka virta kulkee kahden johtimen kautta, tai neliömillimetrejä ei muuteta neliömetreiksi.
@@ -360,17 +372,23 @@ $$, ja jalkojen välinen jännite on $2{,}7 \cdot 10^{-6}\,\Omega \cdot 600\,\te
 ### b)
 **Kysytty:** onko ryhmän johtopäätös perusteltu
 **Periaate:** Kahden tuloksen ero on todellinen vain, jos se on suurempi kuin tulosten virherajat (luku *Mittaaminen ja mittauksen luotettavuus*). Mittarin virherajassa numeroiden osuus on sitä merkittävämpi, mitä pienempi lukema on alueeseen verrattuna (luku *Mittaukset virtapiirissä*). Metallin ja hiilikalvon resistanssi muuttuu lähinnä lämpötilan mukana (luku *Resistanssi ja Ohmin laki*).
-**Mallivastaus:** Johtopäätös ei ole perusteltu. Samalla tavalla laskettuna mittauksen 2 resistanssi on $(100 \pm 4)\,\Omega$ ja mittauksen 3 $(102 \pm 3)\,\Omega$, ja mittauksen 1 tulos on $(96 \pm 9)\,\Omega$. Kaikki kolme väliä kattavat arvon $100\,\Omega$, joten resistanssit eivät eroa toisistaan mittaustarkkuuden rajoissa. Suurin poikkeama on mittauksessa 1, jossa lukemat $0{,}51\,\text{V}$ ja $5{,}3\,\text{mA}$ ovat pieniä alueisiin verrattuna, joten numeroiden osuus hallitsee virherajaa. Lämpeneminen voisi muuttaa resistanssia, mutta vastuksen teho on suurimmillaankin vain $3{,}02\,\text{V} \cdot 29{,}6\,\text{mA} \approx 0{,}09\,\text{W}$, joten vastus ei juuri lämpene. Aineisto sopii siis vakioresistanssiin noin $100\,\Omega$, eikä kolmesta epätarkasta pisteestä voi päätellä, että resistanssi riippuisi jännitteestä.
+**Mallivastaus:** Johtopäätös ei ole perusteltu. Samalla tavalla laskettuna mittauksen 2 resistanssi on $(100 \pm 4)\,\Omega$ ja mittauksen 3 $(102 \pm 3)\,\Omega$, ja mittauksen 1 tulos on $(96 \pm 9)\,\Omega$. Kaikki kolme väliä kattavat arvon $100\,\Omega$, joten resistanssit eivät eroa toisistaan mittaustarkkuuden rajoissa.
+
+Suurin poikkeama on mittauksessa 1, jossa lukemat $0{,}51\,\text{V}$ ja $5{,}3\,\text{mA}$ ovat pieniä alueisiin verrattuna, joten numeroiden osuus hallitsee virherajaa. Lämpeneminen voisi muuttaa resistanssia, mutta vastuksen teho on suurimmillaankin vain $3{,}02\,\text{V} \cdot 29{,}6\,\text{mA} \approx 0{,}09\,\text{W}$, joten vastus ei juuri lämpene. Aineisto sopii siis vakioresistanssiin noin $100\,\Omega$, eikä kolmesta epätarkasta pisteestä voi päätellä, että resistanssi riippuisi jännitteestä.
 
 ### c)
 **Kysytty:** miten mittausta parannetaan, jotta Ohmin lain voimassaolo voidaan todeta luotettavasti
 **Periaate:** Riippuvuus todetaan luotettavimmin kuvaajasta, johon on sovitettu suora monesta pisteestä (luku *Graafinen esitys ja suoran sovittaminen*). Mittarin virheraja on pienin, kun käytetään pienintä aluetta, jolle lukema mahtuu (luku *Mittaukset virtapiirissä*). Ohmin laki koskee vakiolämpötilaa, joten lämpötila on pidettävä vakiona (luku *Resistanssi ja Ohmin laki*).
-**Mallivastaus:** Mitataan vähintään kahdeksan pistettä laajalla jännitealueella, esimerkiksi $0{,}5$–$10\,\text{V}$, ja piirretään $(I, U)$-kuvaaja. Jos vastus noudattaa Ohmin lakia, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$; poikkeama suorasta näkyy kuvaajasta paremmin kuin kolmesta suhteesta. Jokainen lukema luetaan pienimmältä alueelta, jolle se mahtuu: esimerkiksi $0{,}510\,\text{V}$ alueella $2\,\text{V}$ antaa virherajan $$
+**Mallivastaus:** Mitataan vähintään kahdeksan pistettä laajalla jännitealueella, esimerkiksi $0{,}5$–$10\,\text{V}$, ja piirretään $(I, U)$-kuvaaja. Jos vastus noudattaa Ohmin lakia, pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$; poikkeama suorasta näkyy kuvaajasta paremmin kuin kolmesta suhteesta.
+
+Jokainen lukema luetaan pienimmältä alueelta, jolle se mahtuu: esimerkiksi $0{,}510\,\text{V}$ alueella $2\,\text{V}$ antaa virherajan $$
 \begin{aligned}
 &0{,}005 \cdot 0{,}510\,\text{V} + 2 \cdot 0{,}001\,\text{V} \\
 &\approx 0{,}005\,\text{V}
 \end{aligned}
-$$ eli noin $0{,}9\,\%$. Lämpötila pidetään vakiona: vastuksen teho pidetään pienenä, lukemat otetaan nopeasti, ja jännitettä sekä kasvatetaan että pienennetään, jolloin lämpenemisen vaikutus näkyisi eroina. Virtamittari pidetään sarjassa ja jännitemittari vastuksen rinnalla, ja mittarien vaikutus arvioidaan: jännitemittarin resistanssi on megaohmien luokkaa eli paljon suurempi kuin $100\,\Omega$, joten sen kautta kulkee mitättömän pieni virta. Tulos ilmoitetaan virherajoineen.
+$$ eli noin $0{,}9\,\%$. Lämpötila pidetään vakiona: vastuksen teho pidetään pienenä, lukemat otetaan nopeasti, ja jännitettä sekä kasvatetaan että pienennetään, jolloin lämpenemisen vaikutus näkyisi eroina.
+
+Virtamittari pidetään sarjassa ja jännitemittari vastuksen rinnalla, ja mittarien vaikutus arvioidaan: jännitemittarin resistanssi on megaohmien luokkaa eli paljon suurempi kuin $100\,\Omega$, joten sen kautta kulkee mitättömän pieni virta. Tulos ilmoitetaan virherajoineen.
 
 ### Yleisiä virheitä
 - a-kohdassa virheraja lasketaan pelkästä prosenttiosuudesta, jolloin numeroiden osuus $n \cdot r$ unohtuu ja virheraja jää liian pieneksi.
@@ -627,7 +645,9 @@ $$, sama kuin pariston teho.
 ### d)
 **Annettu:** $30\,\Omega$:n vastus poistetaan; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ ja $R_1 = 60\,\Omega$; aiemmin $P_{60} = 0{,}60\,\text{W}$ ja $I = 0{,}30\,\text{A}$
 **Kysytty:** $60\,\Omega$:n vastuksen uusi teho $P_{60}'$ ja muutos
-**Periaate:** Nyt $20\,\Omega$:n ja $60\,\Omega$:n vastukset ovat sarjassa, ja piirin resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Ennuste: virta pienenee, mutta $20\,\Omega$:n vastuksen jännite pienenee samalla, joten $60\,\Omega$:n vastukselle jää suurempi jännite ja sen teho kasvaa. Kirchhoffin jännitelaki antaa jännitteen ja teho on $P = U^2/R$ (luvut *Kirchhoffin lait ja potentiaali virtapiirissä* ja *Sähköteho ja vastuksen lämpeneminen*).
+**Periaate:** Nyt $20\,\Omega$:n ja $60\,\Omega$:n vastukset ovat sarjassa, ja piirin resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*).
+
+Ennuste: virta pienenee, mutta $20\,\Omega$:n vastuksen jännite pienenee samalla, joten $60\,\Omega$:n vastukselle jää suurempi jännite ja sen teho kasvaa. Kirchhoffin jännitelaki antaa jännitteen ja teho on $P = U^2/R$ (luvut *Kirchhoffin lait ja potentiaali virtapiirissä* ja *Sähköteho ja vastuksen lämpeneminen*).
 **Kaava:** $R = R_3 + R_1$, $I = \dfrac{E}{R}$, $U_1 = E - I R_3$ ja $P = \dfrac{U_1^2}{R_1}$
 **Mallivastaus:** Kun $30\,\Omega$:n vastus puuttuu, piirissä on vain $R_3$ ja $R_1$ sarjassa. $$
 \begin{aligned}

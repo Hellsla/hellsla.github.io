@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 705a4aa32fbad8ff
-SCOPE: delta: s7 (Kaksi kaiutinta pihalla, kuva fy5-12/ruudukko-tehtava), s8 (Seisova aalto narussa, kuva fy5-13/kuvio-tehtava) ja muuttunut johdanto 390 px:llä
+CONTENT-HASH: 487d83df3bf17103
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] s7 a — VASTAUS-laatikkoon tulee vain $s_1 = 6{,}0\,\text{m}$, $s_2$ ja $\Delta s$ jäävät laatikon ulkopuolelle; aloita vastaus esim. "Matkat ovat $s_1 = ...$".
-- [Minor] s8 kuva — viivaimen asteikon numerot pienet 390 px:llä.
+(none)
 
 ## Checked
-- Omat 390 px:n elementtikuvat tehtävistä s7 ja s8 (ongelma, kuva, mallivastaukset auki). check_layout.py --width 360: OK.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+- Read `git diff origin/main...HEAD` for fi-easy (excluding review/): only sovella/solutions.md and inquiry.json, 36 insertions / 12 deletions. Changes are paragraph breaks (blank line inserted between sentences of Periaate and Mallivastaus fields); words, maths, units and figures unchanged. A display-math block that opens mid-paragraph stays in the later paragraph, so no formula is split by the new break.
+- Read the previous Sovella visual report (PASS) as evidence.
+- Opened fi-easy 390 px (sovella-390-2) from review/shots/: Sovella task cards render cleanly, KaTeX and units intact, no clipping or overflow, one reading column.
+- Not opened: captures of the solution panels with the solution button open, so the rendered paragraph spacing inside solutions rests on the diff and the earlier Sovella report, not on my own view.

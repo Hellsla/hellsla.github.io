@@ -12,7 +12,7 @@
 **Annettu:** aallonpituus ilmassa $\lambda = 633\,\text{nm}$, magnesiumfluoridin taitekerroin $n = 1{,}38$
 **Kysytty:** aallonpituus magnesiumfluoridissa $\lambda_n$ nanometreinä
 **Periaate:** Aineessa valo etenee nopeudella $v = c : n$, mutta sen taajuus $f$ ei muutu rajapinnassa. Koska $\lambda = v : f$, aallonpituus lyhenee samassa suhteessa kuin nopeus eli $n$-kertaisesti.
-**Kaava:** $\lambda_n = \dfrac{v}{f} = \dfrac{c}{nf}$, josta $\lambda_n = \dfrac{\lambda}{n}$
+**Kaava:** $$\begin{aligned} \lambda_n &= \frac{v}{f} \\ v &= \frac{c}{n} \\ \lambda_n &= \frac{c}{nf} \\ \lambda &= \frac{c}{f} \\ \lambda_n &= \frac{\lambda}{n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus on nanometreinä, ja taitekerroin on yksikötön.
 **Sijoitus:** $\lambda_n = \dfrac{633\,\text{nm}}{1{,}38} = 458{,}70\,\text{nm}$
 **Vastaus:** $459\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituus $633\,\text{nm}$ ja taitekerroin $1{,}38$.
@@ -22,7 +22,7 @@
 **Annettu:** pinnoitteen taitekerroin $n = 1{,}38$, lasin taitekerroin $1{,}52$, aallonpituus $\lambda = 500\,\text{nm}$, kohtisuora tulo
 **Kysytty:** ohuimman heijastusta heikentävän pinnoitteen paksuus $d$ nanometreinä
 **Periaate:** Kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}52$), joten kumpikin aalto kääntyy, ja käännökset kumoavat toisensa. Silloin aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$, ja ohuin pinnoite saadaan arvolla $k = 0$.
-**Kaava:** $2nd = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{500\,\text{nm}}{4 \cdot 1{,}38} = 90{,}580\,\text{nm}$
 **Vastaus:** $90{,}6\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $500\,\text{nm}$.
@@ -32,7 +32,7 @@
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, aallonpituus $\lambda = 600\,\text{nm}$, kohtisuora tulo
 **Kysytty:** ohuimman voimakkaasti heijastavan kalvon paksuus $d$ nanometreinä
 **Periaate:** Yläpinnan heijastus ilmasta kalvoon kääntää aallon, alapinnan heijastus kalvosta ilmaan ei. Yhden käännöksen vuoksi aallot vahvistavat toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$, ja ohuin tällainen kalvo saadaan arvolla $k = 0$.
-**Kaava:** $2nd = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{600\,\text{nm}}{4 \cdot 1{,}33} = 112{,}78\,\text{nm}$
 **Vastaus:** $113\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja aallonpituus $600\,\text{nm}$.
@@ -42,7 +42,7 @@
 **Annettu:** linssin muovin taitekerroin $n_\text{muovi} = 1{,}60$, kohtisuora tulo
 **Kysytty:** ihanteellisen pinnoitteen taitekerroin $n_\text{p}$
 **Periaate:** Heijastunut aalto on sitä voimakkaampi, mitä enemmän rajapinnan taitekertoimet eroavat. Kun pinnoitteen yläpinnasta ja alapinnasta heijastuneet aallot ovat yhtä voimakkaat, ne voivat kumota toisensa täysin. Kohtisuorassa tulossa näin käy, kun pinnoitteen taitekerroin on linssin aineen taitekertoimen neliöjuuri, kuten luvussa todettiin: silloin $1{,}00 : n_\text{p} = n_\text{p} : n_\text{muovi}$.
-**Kaava:** $n_\text{p} = \sqrt{n_\text{muovi}}$
+**Kaava:** $$\begin{aligned} \frac{1{,}00}{n_\text{p}} &= \frac{n_\text{p}}{n_\text{muovi}} \\ n_\text{p}^2 &= n_\text{muovi} \\ n_\text{p} &= \sqrt{n_\text{muovi}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä.
 **Sijoitus:** $n_\text{p} = \sqrt{1{,}60} = 1{,}2649$
 **Vastaus:** $1{,}26$, kolme merkitsevää numeroa kuten taitekerroin $1{,}60$.
@@ -57,7 +57,7 @@
 **Annettu:** öljyn taitekerroin $n_\text{ö} = 1{,}47$, veden taitekerroin $n_\text{v} = 1{,}33$, ilman taitekerroin $1{,}00$, aallonpituus $\lambda = 570\,\text{nm}$, kohtisuora tulo
 **Kysytty:** ohuimman voimakkaasti heijastavan öljykalvon paksuus $d$ nanometreinä
 **Periaate:** Yläpinnalla valo tulee ilmasta öljyyn ($1{,}00 \to 1{,}47$), joten taitekerroin kasvaa ja aalto kääntyy. Alapinnalla valo tulee öljystä veteen ($1{,}47 \to 1{,}33$), joten taitekerroin pienenee eikä aalto käänny. Käännöksiä on yksi, joten aallot vahvistavat toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$, ja ohuin kalvo saadaan arvolla $k = 0$.
-**Kaava:** $2n_\text{ö}d = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n_\text{ö}}$
+**Kaava:** $$\begin{aligned} 2n_\text{ö}d &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2n_\text{ö}d &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n_\text{ö}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1{,}47} = 96{,}94\,\text{nm}$
 **Vastaus:** $96{,}9\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}47$ ja aallonpituus $570\,\text{nm}$.
@@ -67,7 +67,7 @@
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 300\,\text{nm}$, aallonpituus ilmassa $\lambda = 532\,\text{nm}$, kohtisuora tulo
 **Kysytty:** matkaeroon mahtuvien aallonpituuksien lukumäärä $\Delta s : \lambda$
 **Periaate:** Kohtisuorassa tulossa kalvon kahdesta pinnasta heijastuneiden aaltojen matkaero on $\Delta s = 2nd$. Kun se jaetaan ilmassa mitatulla aallonpituudella, saadaan, montako aallonpituutta matkaeroon mahtuu.
-**Kaava:** $\Delta s = 2nd$ ja lukumäärä $= \dfrac{\Delta s}{\lambda}$
+**Kaava:** $$\begin{aligned} \Delta s &= 2nd \\ \frac{\Delta s}{\lambda} &= \frac{2nd}{\lambda} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituus ovat kumpikin nanometreinä.
 **Sijoitus:** $\Delta s = 2 \cdot 1{,}33 \cdot 300\,\text{nm} = 798\,\text{nm}$, joten $\dfrac{\Delta s}{\lambda} = \dfrac{798\,\text{nm}}{532\,\text{nm}} = 1{,}5$
 **Vastaus:** $1{,}5$ aallonpituutta, kaksi merkitsevää numeroa kuten paksuus $300\,\text{nm}$.
@@ -91,7 +91,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 240\,\text{nm}$, ilmaa molemmin puolin, näkyvä valo $400$–$700\,\text{nm}$
 **Kysytty:** heijastuneesta valosta puuttuva aallonpituus $\lambda$ nanometreinä
 **Periaate:** Yläpinnan heijastus ilmasta kalvoon kääntää aallon, alapinnan heijastus kalvosta ilmaan ei. Yhden käännöksen vuoksi aallot heikentävät toisiaan, kun matkaero on kokonainen määrä aallonpituuksia, $2nd = k\lambda$. Lasketaan $\lambda$ arvoilla $k = 1, 2$ ja valitaan näkyvä.
-**Kaava:** $2nd = k\lambda$, josta $\lambda = \dfrac{2nd}{k}$
+**Kaava:** $$\begin{aligned} 2nd &= k\lambda \\ \lambda &= \frac{2nd}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = 1$: $\lambda = \dfrac{2 \cdot 1{,}33 \cdot 240\,\text{nm}}{1} = 638{,}4\,\text{nm}$; arvolla $k = 2$ saadaan $319{,}2\,\text{nm}$, joka on ultraviolettia.
 **Vastaus:** $638\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja paksuus $240\,\text{nm}$.
@@ -101,7 +101,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Annettu:** pinnoitteen taitekerroin $n = 1{,}38$, paksuus $d = 110\,\text{nm}$, lasin taitekerroin $1{,}52$, näkyvä valo $400$–$700\,\text{nm}$
 **Kysytty:** heikoimmin heijastuva aallonpituus $\lambda$ nanometreinä
 **Periaate:** Kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}52$), joten käännökset kumoavat toisensa. Aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Lasketaan $\lambda$ arvoilla $k = 0, 1$ ja valitaan näkyvä.
-**Kaava:** $2nd = (k + \tfrac{1}{2})\lambda$, josta $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = 0$: $\lambda = \dfrac{2 \cdot 1{,}38 \cdot 110\,\text{nm}}{0{,}5} = \dfrac{303{,}6\,\text{nm}}{0{,}5} = 607{,}2\,\text{nm}$; arvolla $k = 1$ saadaan $303{,}6\,\text{nm} : 1{,}5 = 202{,}4\,\text{nm}$, joka on ultraviolettia.
 **Vastaus:** $607\,\text{nm}$, kolme merkitsevää numeroa kuten paksuus $110\,\text{nm}$ ja taitekerroin $1{,}38$.
@@ -111,7 +111,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Annettu:** pinnoitteen taitekerroin $n = 1{,}38$, lasin taitekerroin $1{,}52$, aallonpituus $\lambda = 520\,\text{nm}$, kohtisuora tulo
 **Kysytty:** toiseksi ohuimman heikentävän pinnoitteen paksuus $d$ nanometreinä
 **Periaate:** Kumpikin heijastus kääntää aallon ($1{,}00 \to 1{,}38 \to 1{,}52$), joten käännökset kumoavat toisensa, ja aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Ohuin pinnoite on $k = 0$, joten toiseksi ohuin saadaan arvolla $k = 1$.
-**Kaava:** $2nd = (1 + \tfrac{1}{2})\lambda$, josta $d = \dfrac{3\lambda}{4n}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 1:\ 2nd &= \tfrac{3}{2}\lambda \\ d &= \frac{3\lambda}{4n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{3 \cdot 520\,\text{nm}}{4 \cdot 1{,}38} = \dfrac{1560\,\text{nm}}{5{,}52} = 282{,}61\,\text{nm}$
 **Vastaus:** $283\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $520\,\text{nm}$.
@@ -121,7 +121,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Annettu:** kerroksen taitekerroin $n = 2{,}30$, lasin taitekerroin $1{,}52$, aallonpituus $\lambda = 550\,\text{nm}$, valo ilmasta kohtisuoraan
 **Kysytty:** ohuimman voimakkaasti heijastavan kerroksen paksuus $d$ nanometreinä
 **Periaate:** Yläpinnan heijastus ilmasta kerrokseen ($1{,}00 \to 2{,}30$) kääntää aallon. Alapinnassa valo heijastuu kerroksesta lasiin ($2{,}30 \to 1{,}52$) eli pienemmän taitekertoimen ainetta vasten, joten aalto ei käänny. Yhden käännöksen vuoksi ehdot ovat samat kuin saippuakalvossa: aallot vahvistavat toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$, ja ohuin kerros saadaan arvolla $k = 0$.
-**Kaava:** $2nd = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{550\,\text{nm}}{4 \cdot 2{,}30} = 59{,}783\,\text{nm}$
 **Vastaus:** $59{,}8\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $2{,}30$ ja aallonpituus $550\,\text{nm}$.
@@ -132,7 +132,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Kysytty:** kalvon taitekerroin $n$
 **Periaate:** Saippuakalvossa on yksi kääntävä heijastus, joten voimakkaimmin heijastuu aallonpituus, jolle $2nd = (k + \tfrac{1}{2})\lambda$, eli $\lambda = \dfrac{2n}{k + \frac{1}{2}} \cdot d$. Aallonpituus on suoraan verrannollinen paksuuteen, joten kuvaajan suora kulkee likimain origon kautta ja sen kulmakerroin on $\dfrac{2n}{k + \frac{1}{2}}$. Kertaluku päätellään kulmakertoimesta: arvolla $k = 0$ saadaan $n = \tfrac{1}{4} \cdot$ kulmakerroin ja arvolla $k = 1$ saadaan $n = 0{,}75 \cdot$ kulmakerroin. Taitekerroin pitää olla saippuavedelle sopiva, noin $1{,}3$.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä ja joka kulkee lähellä origoa. Sovitettu suora kulkee likimain pisteiden $(90\,\text{nm};\ 482\,\text{nm})$ ja $(130\,\text{nm};\ 692\,\text{nm})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
-**Kaava:** kulmakerroin $a = \dfrac{\Delta\lambda}{\Delta d}$ ja $a = \dfrac{2n}{k + \frac{1}{2}}$, josta arvolla $k = 0$ saadaan $n = \dfrac{a}{4}$
+**Kaava:** $$\begin{aligned} a &= \frac{\Delta\lambda}{\Delta d} \\ \lambda &= \frac{2n}{k + \frac{1}{2}}\,d \\ a &= \frac{2n}{k + \frac{1}{2}} \\ k = 0:\ a &= 4n \\ n &= \frac{a}{4} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituus ovat kumpikin nanometreinä, ja kulmakerroin on yksikötön.
 **Sijoitus:** $a = \dfrac{692\,\text{nm} - 482\,\text{nm}}{130\,\text{nm} - 90\,\text{nm}} = \dfrac{210\,\text{nm}}{40\,\text{nm}} = 5{,}25$. Arvolla $k = 1$ saataisiin $n = 0{,}75 \cdot 5{,}25 = 3{,}9$, mikä on kaukana saippuaveden taitekertoimesta. Arvolla $k = 0$ saadaan $n = \dfrac{5{,}25}{4} = 1{,}31$.
 **Vastaus:** $1{,}3$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $1{,}26$–$1{,}37$ on hyvä vastaus.
@@ -142,7 +142,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 250\,\text{nm}$, ilmaa molemmin puolin, näkyvä valo $400$–$700\,\text{nm}$, kohtisuora tulo; oppilaan laskema matkaero $2nd = 665\,\text{nm}$
 **Kysytty:** oppilaan päättelyn virhe ja voimakkaimmin heijastuva näkyvän valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Oppilas laski matkaeron oikein mutta unohti heijastuksen puolen aallonpituuden siirtymän. Yläpinnan heijastus ilmasta kalvoon kääntää aallon, alapinnan heijastus kalvosta ilmaan ei. Kun matkaero on kokonainen aallonpituus, toinen aalto on kääntymisen vuoksi vastakkaisessa vaiheessa, joten aallot heikentävät toisiaan: $2nd = k\lambda$ on heikentävä ehto. Punaisen valon $665\,\text{nm}$ aallot heikentävät toisiaan, ja kalvo ei näytä punaiselta. Voimakkaimmin heijastuu aallonpituus, jolle $2nd = (k + \tfrac{1}{2})\lambda$.
-**Kaava:** $2nd = (k + \tfrac{1}{2})\lambda$, josta $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = 1$: $\lambda = \dfrac{665\,\text{nm}}{1{,}5} = 443{,}3\,\text{nm}$. Arvolla $k = 0$ saadaan $1330\,\text{nm}$ (infrapunaa) ja arvolla $k = 2$ saadaan $266\,\text{nm}$ (ultraviolettia), joten ne eivät ole näkyvää valoa.
 **Vastaus:** $443\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja paksuus $250\,\text{nm}$.
@@ -153,7 +153,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Kysytty:** aallonpituus, jolle pinnoite on mitoitettu, ja pinnoitteen paksuus $d$ nanometreinä; lisäksi syy linssin purppuraan väriin
 **Periaate:** Pinnoite on mitoitettu sille aallonpituudelle, jolla heijastus on pienin. Kumpikin pinnoitteen pinnan heijastus kääntää aallon ($1{,}00 \to 1{,}38 \to 1{,}52$), joten aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Ohuimmalla pinnoitteella $k = 0$ ja $d = \dfrac{\lambda}{4n}$.
 **Kuvaajan lukeminen:** Kuvaaja on kuppimainen: heijastus pienenee $1{,}84\,\%$:sta kohti keskiosaa, on pienimmillään $1{,}26\,\%$ aallonpituudella $540\,\text{nm}$ ja kasvaa taas $1{,}64\,\%$:iin aallonpituudella $700\,\text{nm}$. Pienin heijastus on siis aallonpituudella $\lambda = 540\,\text{nm}$.
-**Kaava:** $d = \dfrac{\lambda}{4n}$
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{540\,\text{nm}}{4 \cdot 1{,}38} = 97{,}83\,\text{nm}$
 **Vastaus:** $97{,}8\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $540\,\text{nm}$. Pinnoite on mitoitettu vihreälle aallonpituudelle $540\,\text{nm}$.
@@ -166,7 +166,7 @@ Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päi
 **Kysytty:** kuinka monta prosenttia pinnoite poistaa pinnoittamattoman lasin heijastuksesta siinä kohdassa, jossa heijastus on pienin
 **Periaate:** Valoa ei katoa pinnoitteessa, vaan heikentävä interferenssi vähentää heijastunutta osuutta. Pienin heijastus kuvaa aallonpituutta, jolle pinnoite on mitoitettu. Poistuva osuus saadaan vertaamalla pinnoitetun linssin heijastusta $R_\text{pinn}$ pinnoittamattoman lasin heijastukseen $R_0$ samalla aallonpituudella.
 **Kuvaajan lukeminen:** Pinnoittamattoman lasin heijastus on vaakasuora musta viiva, ja sen kohdalta luetaan $R_0 \approx 4{,}3\,\%$. Vihreä käyrä on kuppimainen. Sen pohjassa, noin aallonpituudella $500\,\text{nm}$, luetaan $R_\text{pinn} \approx 1{,}3\,\%$. Pohja on käyrän alin kohta ja viiva on sen yläpuolella.
-**Kaava:** poistuva osuus $= \dfrac{R_0 - R_\text{pinn}}{R_0} = 1 - \dfrac{R_\text{pinn}}{R_0}$
+**Kaava:** $$\begin{aligned} \text{poistuva osuus} &= \frac{R_0 - R_\text{pinn}}{R_0} \\ &= 1 - \frac{R_\text{pinn}}{R_0} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat osuudet luetaan prosentteina, ja suhde on yksikötön.
 **Sijoitus:** $\text{poistuva osuus} = 1 - \dfrac{R_\text{pinn}}{R_0} = 1 - \dfrac{1{,}3\,\%}{4{,}3\,\%} = 1 - 0{,}302 = 0{,}698 = 69{,}8\,\%$
 **Vastaus:** noin $70\,\%$, kaksi merkitsevää numeroa kuten kuvaajasta luetut arvot. Kuvaajasta lukemisen epätarkkuus vaikuttaa kolmanteen numeroon.
@@ -176,7 +176,7 @@ Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päi
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, aallonpituus $\lambda = 589\,\text{nm}$, kohtisuora tulo; kalvo paksunee ylhäältä alaspäin, ylin osa on musta
 **Kysytty:** kalvon paksuus $d$ nanometreinä toisen tumman raidan kohdalla
 **Periaate:** Yläpinnan heijastus kääntää aallon, alapinnan ei, joten aallot heikentävät toisiaan, kun $2nd = k\lambda$. Musta yläosa on arvo $k = 0$, jossa kalvo on paljon ohuempi kuin aallonpituus. Kalvo paksunee alaspäin, joten seuraavat tummat raidat ovat järjestyksessä $k = 1$ ja $k = 2$; toisen tumman raidan kohdalla $k = 2$. Kirkkaat raidat ovat tummien välissä.
-**Kaava:** $2nd = 2\lambda$, josta $d = \dfrac{\lambda}{n}$
+**Kaava:** $$\begin{aligned} 2nd &= k\lambda \\ k = 2:\ 2nd &= 2\lambda \\ d &= \frac{\lambda}{n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{589\,\text{nm}}{1{,}33} = 442{,}86\,\text{nm}$
 **Vastaus:** $443\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja aallonpituus $589\,\text{nm}$.
@@ -186,7 +186,7 @@ Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päi
 **Annettu:** kahdeksan pintaa, joista kukin heijastaa $1{,}3\,\%$ siihen tulevasta valosta; lasi ei ime valoa, eikä heijastunut valo palaa kennolle
 **Kysytty:** objektiivin läpi pääsevän valon osuus prosentteina
 **Periaate:** Valo ei katoa pinnoitteessa: se, mikä ei heijastu, menee pinnan läpi. Jokaisen pinnan läpi pääsee siksi $98{,}7\,\%$ siihen tulevasta valosta, sillä $100\,\% - 1{,}3\,\% = 98{,}7\,\%$. Seuraavaan pintaan tulee vain edellisen läpäissyt valo, joten osuudet kerrotaan keskenään kahdeksan kertaa.
-**Kaava:** $\dfrac{I_\text{läpi}}{I_0} = (1 - R)^8$
+**Kaava:** $$\begin{aligned} I_1 &= (1 - R)I_0 \\ I_8 &= (1 - R)I_7 = \ldots \\ \frac{I_\text{läpi}}{I_0} &= (1 - R)^8 \end{aligned}$$
 **Muunnokset:** $R = 1{,}3\,\% = 0{,}013$. Lopuksi osuus kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\dfrac{I_\text{läpi}}{I_0} = (1 - 0{,}013)^8 = 0{,}987^8 = 0{,}9006 = 90{,}06\,\%$
 **Vastaus:** $90\,\%$, kaksi merkitsevää numeroa kuten heijastuva osuus $1{,}3\,\%$.
@@ -196,7 +196,7 @@ Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päi
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, voimakkaimmin heijastuvat aallonpituudet $\lambda_1 = 630\,\text{nm}$ ja $\lambda_2 = 450\,\text{nm}$, ei muita niiden välissä
 **Kysytty:** kalvon paksuus $d$ nanometreinä
 **Periaate:** Yksi kääntävä heijastus, joten aallot vahvistavat toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$. Sama paksuus vahvistaa kumpaakin aallonpituutta. Lyhyempi aallonpituus mahtuu matkaeroon useamman kerran, ja koska välissä ei ole muita, sen kertaluku on yhtä suurempi: $(k + \tfrac{1}{2})\lambda_1 = (k + \tfrac{3}{2})\lambda_2$. Tästä ratkaistaan ensin $k$ ja sitten $d$.
-**Kaava:** $(k + \tfrac{1}{2})\lambda_1 = (k + \tfrac{3}{2})\lambda_2$, josta $k = \dfrac{\tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1}{\lambda_1 - \lambda_2}$; paksuus $d = \dfrac{(k + \frac{1}{2})\lambda_1}{2n}$
+**Kaava:** $$\begin{aligned} (k + \tfrac{1}{2})\lambda_1 &= (k + \tfrac{3}{2})\lambda_2 \\ k(\lambda_1 - \lambda_2) &= \tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1 \\ k &= \frac{\tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1}{\lambda_1 - \lambda_2} \\ 2nd &= (k + \tfrac{1}{2})\lambda_1 \\ d &= \frac{(k + \frac{1}{2})\lambda_1}{2n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituudet ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = \dfrac{1{,}5 \cdot 450\,\text{nm} - 0{,}5 \cdot 630\,\text{nm}}{630\,\text{nm} - 450\,\text{nm}} = \dfrac{360\,\text{nm}}{180\,\text{nm}} = 2$, joten $d = \dfrac{2{,}5 \cdot 630\,\text{nm}}{2 \cdot 1{,}33} = \dfrac{1575\,\text{nm}}{2{,}66} = 592{,}11\,\text{nm}$
 **Vastaus:** $592\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja aallonpituudet.
@@ -212,7 +212,7 @@ b) Kalvon ohentuessa matkaero $2nd$ pienenee.
 Aallonpituus heijastuu heikoimmin (heikentävä interferenssi), kun matkaero on kokonainen määrä aallonpituuksia. Matkaero on aluksi $2{,}5$ aallonpituutta, joten ensimmäinen heikentyminen ohenemisessa on kohdassa, jossa matkaero on $2$ aallonpituutta.
 
 c) Hyvin ohuessa kalvossa matkaero on lähes nolla, mutta yksi heijastus on kääntynyt. Ilma–öljy-rajapinta heijastaa voimakkaammin kuin öljy–vesi-rajapinta, joten aallot eivät kumoa toisiaan kokonaan.
-**Kaava:** $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$ (voimakkaimmin heijastuvat) ja $d = \dfrac{k\lambda}{2n}$ (heikentävä interferenssi)
+**Kaava:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \\ 2nd &= k\lambda \\ d &= \frac{k\lambda}{2n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paksuus ja aallonpituudet ovat kumpikin nanometreinä.
 **Sijoitus:** a) Matkaero on $2nd = 2 \cdot 1{,}47 \cdot 450\,\text{nm} = 1323\,\text{nm}$. Arvolla $k = 0$ saadaan $2646\,\text{nm}$ ja arvolla $k = 1$ saadaan $882\,\text{nm}$, molemmat infrapunaa. Arvolla $k = 2$ saadaan $\lambda = \dfrac{1323\,\text{nm}}{2{,}5} = 529{,}2\,\text{nm}$, ja arvolla $k = 3$ saadaan $378\,\text{nm}$, joka on ultraviolettia. Näkyvällä alueella voimakkaasti heijastuu siis vain $529\,\text{nm}$, vihreä.
 
@@ -241,7 +241,7 @@ Raidat ovat tasavälisiä, joten kiilan paksuus kasvaa tasaisesti etäisyyden mu
 
 c) Raitoja mahtuu matkalle $L$ yhteensä $\dfrac{L}{\Delta x}$, ja jokaista kohti paksuus kasvaa $\dfrac{\lambda}{2}$.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä ja joka kulkee lähes origon kautta. Sovitettu suora kulkee likimain pisteiden $(0;\ 0{,}05\,\text{mm})$ ja $(8;\ 15{,}2\,\text{mm})$ kautta. Piste $(0;\ 0{,}05\,\text{mm})$ on sovitetun suoran leikkauskohta pystyakselin kanssa eikä mittaus. Pisteet luetaan suoralta ja valitaan kaukana toisistaan. Kulmakerroin on raitojen väli $\Delta x$.
-**Kaava:** $\Delta x = \dfrac{x_2 - x_1}{k_2 - k_1}$, $\Delta d = \dfrac{\lambda}{2}$ ja $D = \dfrac{L}{\Delta x} \cdot \dfrac{\lambda}{2}$
+**Kaava:** $$\begin{aligned} \Delta x &= \frac{x_2 - x_1}{k_2 - k_1} \\ 2d &= k\lambda \\ \Delta d &= \frac{\lambda}{2} \\ D &= \frac{L}{\Delta x} \cdot \Delta d \\ &= \frac{L}{\Delta x} \cdot \frac{\lambda}{2} \end{aligned}$$
 **Muunnokset:** $\dfrac{\lambda}{2} = \dfrac{589\,\text{nm}}{2} = 294{,}5\,\text{nm} = 0{,}2945\,\mu\text{m}$, koska $1\,\mu\text{m} = 1000\,\text{nm}$. Etäisyydet $L$ ja $\Delta x$ ovat kumpikin millimetreinä, joten niiden suhde on yksikötön.
 **Sijoitus:** $\Delta x = \dfrac{15{,}2\,\text{mm} - 0{,}05\,\text{mm}}{8 - 0} = 1{,}894\,\text{mm}$. Paksuus kasvaa raidasta seuraavaan $294{,}5\,\text{nm}$. Raitoja on matkalla $L$ yhteensä $\dfrac{80\,\text{mm}}{1{,}894\,\text{mm}} = 42{,}24$, joten $D = 42{,}24 \cdot 0{,}2945\,\mu\text{m} = 12{,}44\,\mu\text{m} \approx 12\,\mu\text{m}$.
 **Vastaus:** $12\,\mu\text{m}$, kaksi merkitsevää numeroa, koska etäisyys $L = 80\,\text{mm}$ on annettu kahdella numerolla ja suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee, joten noin $11{,}9$–$12{,}9\,\mu\text{m}$ on hyvä vastaus.
@@ -252,7 +252,7 @@ c) Raitoja mahtuu matkalle $L$ yhteensä $\dfrac{L}{\Delta x}$, ja jokaista koht
 **Kysytty:** heikentävän ehdon kertaluku $k$ ja kalvon paksuus $d$ nanometreinä
 **Periaate:** Yksi kääntävä heijastus, joten heijastus on pohjassa, kun $2nd = k\lambda_\text{min}$, ja huipussa, kun $2nd = (k' + \tfrac{1}{2})\lambda_\text{max}$. Sama kalvo, joten matkaero $2nd$ on molemmissa sama. Peräkkäisistä ääriarvoista lyhyempi aallonpituus mahtuu matkaeroon useammin, joten pohjan viereisellä pidemmällä huipulla $k' = k - 1$. Tästä ratkaistaan ensin $k$ ja sitten $d$.
 **Kuvaajan lukeminen:** Käyrässä on näkyvällä alueella yksi pohja ja sen oikealla puolella yksi huippu. Pohja on lähes nollassa aallonpituudella $\lambda_\text{min} \approx 466\,\text{nm}$. Huippu on korkeimmillaan, noin $7{,}7\,\%$, aallonpituudella $\lambda_\text{max} \approx 621\,\text{nm}$.
-**Kaava:** $k\lambda_\text{min} = (k - \tfrac{1}{2})\lambda_\text{max}$, josta $k = \dfrac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})}$; paksuus $d = \dfrac{k\lambda_\text{min}}{2n}$
+**Kaava:** $$\begin{aligned} 2nd &= k\lambda_\text{min} \\ 2nd &= (k - \tfrac{1}{2})\lambda_\text{max} \\ k\lambda_\text{min} &= (k - \tfrac{1}{2})\lambda_\text{max} \\ k &= \frac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})} \\ d &= \frac{k\lambda_\text{min}}{2n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituudet ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = \dfrac{621\,\text{nm}}{2 \cdot (621\,\text{nm} - 466\,\text{nm})} = \dfrac{621}{310} = 2{,}003 \approx 2$, joten $d = \dfrac{2 \cdot 466\,\text{nm}}{2 \cdot 1{,}33} = 350{,}4\,\text{nm}$
 **Vastaus:** $k = 2$ ja $d \approx 350\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$. Kertaluvun on oltava kokonaisluku, joten se pyöristetään, ja lukuvirhe vaikuttaa paksuuteen vain vähän.

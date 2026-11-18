@@ -37,7 +37,11 @@
   <foreignObject x="344.5" y="112" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
 </svg>
 
-**Principle:** One ball is chosen as the object. The forces on it are the weight $\overline{G}$ down, the tension $\overline{T}$ of the thread along the thread towards the hook, and the electric force $\overline{F}_\text{s}$ of the other ball. The balls are at the same height, so the electric force is horizontal and points away from the other ball: charges of the same sign repel. The ball is at rest, so the sum of the forces is zero. The horizontal component of the force of the thread cancels the electric force and the vertical component cancels the weight. The angle $\alpha$ of the thread from the vertical comes from the geometry, because the ball is half the distance away from the vertical through the hook (chapter *Free-body diagrams and the combined effect of forces*).
+**Principle:** One ball is chosen as the object. The forces on it are the weight $\overline{G}$ down, the tension $\overline{T}$ of the thread along the thread towards the hook, and the electric force $\overline{F}_\text{s}$ of the other ball.
+
+The balls are at the same height, so the electric force is horizontal and points away from the other ball: charges of the same sign repel. The ball is at rest, so the sum of the forces is zero. The horizontal component of the force of the thread cancels the electric force and the vertical component cancels the weight.
+
+The angle $\alpha$ of the thread from the vertical comes from the geometry, because the ball is half the distance away from the vertical through the hook (chapter *Free-body diagrams and the combined effect of forces*).
 **Formula:** $T\sin\alpha = F_\text{s}$ and $T\cos\alpha = mg$, so $F_\text{s} = mg\tan\alpha$, where $\sin\alpha = \dfrac{r/2}{L}$
 **Conversions:** $m = 0.50\,\text{g} = 0.50 \cdot 0.001\,\text{kg} = 5.0 \cdot 10^{-4}\,\text{kg}$. The ratio of the lengths needs no conversion. Finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** $\sin\alpha = \dfrac{4.0\,\text{cm}}{40.0\,\text{cm}} = 0.100$, so $\alpha = 5.74^\circ$ and $\tan\alpha = 0.1005$. The weight is $mg = 5.0 \cdot 10^{-4}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 4.905 \cdot 10^{-3}\,\text{N}$, so $F_\text{s} = 4.905 \cdot 10^{-3}\,\text{N} \cdot 0.1005 = 4.930 \cdot 10^{-4}\,\text{N} = 0.493\,\text{mN}$
@@ -146,7 +150,15 @@ $$. The energy is small, but the margin to breakdown is only a factor of two, an
 ### d)
 **Find:** where the energy went, and whether the plates of a disconnected capacitor can be touched
 **Principle:** Energy is conserved: if the energy of the capacitor decreases, it has done work or turned into another form of energy. The charge and the voltage of a disconnected capacitor stay until it is discharged (chapter *The capacitor and its energy*).
-**Model answer:** The energy of the capacitor decreased from about $1.87\,\text{mJ}$ to $0.33\,\text{mJ}$, so about $1.5\,\text{mJ}$ went elsewhere. The glass becomes polarised in the field of the plates: its surface against the positive plate gets a negative charge and the opposite surface a positive charge. The charges of the plates attract these surface charges, so the field pulls the glass plate into the gap between the plates and does positive work on it. If the glass is pushed in slowly, the hand has to hold it back, and the energy goes to the hand and finally into internal energy; if the glass can move freely, it gets kinetic energy, which turns into internal energy through friction. The student's claim is wrong. Disconnecting the source does not discharge the capacitor: the plates still have the charge $0.83\,\mu\text{C}$, and there is a voltage of about $800\,\text{V}$ between them, and before the glass was pushed in as much as $4.5\,\text{kV}$. When you touch the plates, the charge is discharged through the body. The energy of this capacitor is small, but the shock of larger capacitors can be dangerous. That is why a capacitor is always first discharged with an insulated discharge rod or through a resistor before the plates are touched.
+**Model answer:** The energy of the capacitor decreased from about $1.87\,\text{mJ}$ to $0.33\,\text{mJ}$, so about $1.5\,\text{mJ}$ went elsewhere.
+
+The glass becomes polarised in the field of the plates: its surface against the positive plate gets a negative charge and the opposite surface a positive charge. The charges of the plates attract these surface charges, so the field pulls the glass plate into the gap between the plates and does positive work on it.
+
+If the glass is pushed in slowly, the hand has to hold it back, and the energy goes to the hand and finally into internal energy; if the glass can move freely, it gets kinetic energy, which turns into internal energy through friction.
+
+The student's claim is wrong. Disconnecting the source does not discharge the capacitor: the plates still have the charge $0.83\,\mu\text{C}$, and there is a voltage of about $800\,\text{V}$ between them, and before the glass was pushed in as much as $4.5\,\text{kV}$. When you touch the plates, the charge is discharged through the body.
+
+The energy of this capacitor is small, but the shock of larger capacitors can be dangerous. That is why a capacitor is always first discharged with an insulated discharge rod or through a resistor before the plates are touched.
 
 ### Yleisiä virheitä
 - The length of the side is taken as the area of the plate, or centimetres and millimetres are not converted to metres.
@@ -219,11 +231,21 @@ $$. The energy is small, but the margin to breakdown is only a factor of two, an
   <foreignObject x="267" y="164.5" width="133" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{not a line}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points lie on a downward-curving curve that levels off as the distance increases. If the capacitance were inversely proportional to the distance, twice the distance would halve it. In the data, however, $1.0\,\text{mm} \to 2.0\,\text{mm}$ gives $375\,\text{pF} \to 199\,\text{pF}$, a ratio of $0.53$, and $3.0\,\text{mm} \to 6.0\,\text{mm}$ gives $140\,\text{pF} \to 82\,\text{pF}$, a ratio of $0.59$. The ratio is always over one half and grows as the distance increases. The curve therefore approaches not zero but a value of about $20\,\text{pF}$. Plain inverse proportionality does not fit the data. The capacitance seems to include a constant part that does not depend on the distance between the plates.
+**Model answer:** The points lie on a downward-curving curve that levels off as the distance increases. If the capacitance were inversely proportional to the distance, twice the distance would halve it.
+
+In the data, however, $1.0\,\text{mm} \to 2.0\,\text{mm}$ gives $375\,\text{pF} \to 199\,\text{pF}$, a ratio of $0.53$, and $3.0\,\text{mm} \to 6.0\,\text{mm}$ gives $140\,\text{pF} \to 82\,\text{pF}$, a ratio of $0.59$. The ratio is always over one half and grows as the distance increases. The curve therefore approaches not zero but a value of about $20\,\text{pF}$.
+
+Plain inverse proportionality does not fit the data. The capacitance seems to include a constant part that does not depend on the distance between the plates.
 
 ### b)
 **Find:** a quantity as a function of which the graph of the capacitance is a straight line, a justification, the graph and the fitted line
-**Graph:** The capacitance of a parallel-plate capacitor is $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d} = \varepsilon_0\varepsilon_\text{r}A \cdot \dfrac{1}{d}$. For air $\varepsilon_\text{r} \approx 1.0$, and $A$ stays the same, so the capacitance of the plates is directly proportional to the quantity $\tfrac{1}{d}$. The meter also measures the capacitance of its leads and of itself, which does not depend on the distance, so the model is the straight line $C = k \cdot \tfrac{1}{d} + b$. Calculated into the table: $\tfrac{1}{d}$ is $1.00$, $0.667$, $0.500$, $0.333$, $0.250$, $0.200$ and $0.167\,\tfrac{1}{\text{mm}}$. On the horizontal axis $\tfrac{1}{d}\ (\tfrac{1}{\text{mm}})$ and on the vertical axis $C\ (\text{pF})$. A straight line is fitted to the points, passing through them so that points are left on both sides, and it is extended to the vertical axis.
+**Graph:** The capacitance of a parallel-plate capacitor is $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d} = \varepsilon_0\varepsilon_\text{r}A \cdot \dfrac{1}{d}$. For air $\varepsilon_\text{r} \approx 1.0$, and $A$ stays the same, so the capacitance of the plates is directly proportional to the quantity $\tfrac{1}{d}$.
+
+The meter also measures the capacitance of its leads and of itself, which does not depend on the distance, so the model is the straight line $C = k \cdot \tfrac{1}{d} + b$.
+
+Calculated into the table: $\tfrac{1}{d}$ is $1.00$, $0.667$, $0.500$, $0.333$, $0.250$, $0.200$ and $0.167\,\tfrac{1}{\text{mm}}$.
+
+On the horizontal axis $\tfrac{1}{d}\ (\tfrac{1}{\text{mm}})$ and on the vertical axis $C\ (\text{pF})$. A straight line is fitted to the points, passing through them so that points are left on both sides, and it is extended to the vertical axis.
 
 <svg data-fig="fy9-sahkokentta-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Graph: the capacitance C in picofarads as a function of the quantity one divided by d in the unit one per millimetre. Seven black points between 0.17 and 1.00, capacitances from 82 pF to 375 pF. A rising straight line has been fitted to the points and extended as a dashed line to the vertical axis: it crosses the vertical axis at about 22 pF and does not pass through the origin. Two points on the line are circled, (0.20, 93) and (1.00, 376), from which the slope of about 354 pF times millimetre is read." style="max-width:100%;font-size:30px">
   <line x1="136.5" y1="380" x2="136.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -324,7 +346,11 @@ b &= 93\,\text{pF} \\
 \end{aligned}
 $$
 **Answer:** $b \approx 22\,\text{pF}$, two significant figures, because the difference of two numbers of similar size has a larger relative uncertainty than either number.
-**Reasonableness:** The constant term is the capacitance of the leads and the meter themselves: the leads are close to each other and to the terminals of the meter, and the meter measures their capacitance in addition to the capacitance of the plates. Tens of picofarads is the usual order of magnitude for test leads. The model works in the measured range, because even the largest distance, $6.0\,\text{mm}$, is only $3\,\%$ of the side of the plate, $200\,\text{mm}$. If the distance were centimetres, the curving field at the edges would increase the capacitance above the value of the model. At the smallest distances, on the other hand, the uncertainty of the thickness of the spacers and the bending of the plates, for example $\pm 0.1\,\text{mm}$, is $10\,\%$ of the distance $1.0\,\text{mm}$. That is why the slope is best determined from the whole line and not from a single point.
+**Reasonableness:** The constant term is the capacitance of the leads and the meter themselves: the leads are close to each other and to the terminals of the meter, and the meter measures their capacitance in addition to the capacitance of the plates. Tens of picofarads is the usual order of magnitude for test leads.
+
+The model works in the measured range, because even the largest distance, $6.0\,\text{mm}$, is only $3\,\%$ of the side of the plate, $200\,\text{mm}$. If the distance were centimetres, the curving field at the edges would increase the capacitance above the value of the model.
+
+At the smallest distances, on the other hand, the uncertainty of the thickness of the spacers and the bending of the plates, for example $\pm 0.1\,\text{mm}$, is $10\,\%$ of the distance $1.0\,\text{mm}$. That is why the slope is best determined from the whole line and not from a single point.
 
 ### Yleisiä virheitä
 - The capacitance is plotted as a function of the distance, and the slope is read from the curved graph.
@@ -342,7 +368,9 @@ $$
 ### a)
 **Find:** an assessment of the claim that the bird on the conductor is safe because its feet insulate
 **Principle:** A current flows through the body only if there is a voltage, that is, a potential difference, between two points of the body. The voltage between different points of a conductor comes from Ohm's law when the resistance of the conductor between them and the current are known (chapters *Electrical safety at home and at work* and *Potential energy and potential in an electric field*).
-**Model answer:** The bird's feet are about $5\,\text{cm}$ apart. The resistance of the conductor between the feet is $$
+**Model answer:** The bird's feet are about $5\,\text{cm}$ apart.
+
+The resistance of the conductor between the feet is $$
 \begin{aligned}
 &0.30\,\tfrac{\Omega}{\text{km}} \cdot 0.05 \cdot 10^{-3}\,\text{km} \\
 &= 1.5 \cdot 10^{-5}\,\Omega
@@ -353,17 +381,35 @@ U &= RI \\
 &= 1.5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} \\
 &= 1.5\,\text{mV}
 \end{aligned}
-$$. Such a small voltage does not drive a noticeable current through the bird's body. The bird is indeed at almost the same potential as the conductor, about $12\,\text{kV}$ relative to earth (the $20\,\text{kV}$ of the line is the voltage between the phase conductors), but potential alone is not dangerous: a current needs two points at different potentials. The bird does not touch the ground, the pole or another conductor, so no current flows through its body. The conclusion of the claim is right, but the justification is wrong: the bird would be safe even if its feet conducted electricity well. The bird is in danger if it touches another conductor or an earthed part of the pole with its wing at the same time.
+$$. Such a small voltage does not drive a noticeable current through the bird's body.
+
+The bird is indeed at almost the same potential as the conductor, about $12\,\text{kV}$ relative to earth (the $20\,\text{kV}$ of the line is the voltage between the phase conductors), but potential alone is not dangerous: a current needs two points at different potentials. The bird does not touch the ground, the pole or another conductor, so no current flows through its body.
+
+The conclusion of the claim is right, but the justification is wrong: the bird would be safe even if its feet conducted electricity well. The bird is in danger if it touches another conductor or an earthed part of the pole with its wing at the same time.
 
 ### b)
 **Find:** why the angler can get a shock without touching the conductor, and the smallest air gap that can break down
 **Principle:** Air is an insulator only when the electric field is smaller than the dielectric strength of air. In a uniform field an air gap $d$ withstands the voltage $E_\text{max} d$ (chapters *The capacitor and its energy* and *Electrical safety at home and at work*).
-**Model answer:** Carbon fibre conducts electricity. When the angler stands on the ground, the tip of the rod is almost at earth potential, so the whole voltage between the conductor and earth, about $12\,\text{kV}$, is across the air gap between the tip and the conductor. The nominal voltage of the line, $20\,\text{kV}$, is between two phase conductors, and one conductor is at a voltage of $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$ relative to earth. With the uniform field model the smallest gap that breaks down is $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$. The estimate is a lower limit for the safety distance, not a safe distance: near a thin conductor and the tip of the rod the field is much stronger than $\tfrac{U}{d}$, and humid air, dirt and the fishing line weaken the insulation, so an arc can strike across a clearly longer gap too. After the breakdown the air conducts, and the current flows through the arc, the rod and the angler's body to earth. If the resistance of the current path is, for example, $10\,\text{k}\Omega$, $12\,\text{kV}$ drives a current of about $1.2\,\text{A}$ through the body, tens of times larger than the about $50\,\text{mA}$ that is enough for ventricular fibrillation. That is why you do not fish or fly a kite under power lines, and you do not approach the conductors with any object.
+**Model answer:** Carbon fibre conducts electricity. When the angler stands on the ground, the tip of the rod is almost at earth potential, so the whole voltage between the conductor and earth, about $12\,\text{kV}$, is across the air gap between the tip and the conductor.
+
+The nominal voltage of the line, $20\,\text{kV}$, is between two phase conductors, and one conductor is at a voltage of $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$ relative to earth. With the uniform field model the smallest gap that breaks down is $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
+
+The estimate is a lower limit for the safety distance, not a safe distance: near a thin conductor and the tip of the rod the field is much stronger than $\tfrac{U}{d}$, and humid air, dirt and the fishing line weaken the insulation, so an arc can strike across a clearly longer gap too.
+
+After the breakdown the air conducts, and the current flows through the arc, the rod and the angler's body to earth. If the resistance of the current path is, for example, $10\,\text{k}\Omega$, $12\,\text{kV}$ drives a current of about $1.2\,\text{A}$ through the body, tens of times larger than the about $50\,\text{mA}$ that is enough for ventricular fibrillation.
+
+That is why you do not fish or fly a kite under power lines, and you do not approach the conductors with any object.
 
 ### c)
 **Find:** why you must not go close to a conductor that has fallen to the ground, how to leave the area, and why a cow is in greater danger than a person
 **Principle:** A current conducted into the ground spreads into the soil, and the potential of the ground decreases as the distance from the point of contact increases. The voltage between two points is the difference of their potentials (chapter *Electrical safety at home and at work*).
-**Model answer:** When the conductor touches the ground, the current flows through the soil. The potential of the ground is highest at the point of contact, almost the voltage of the conductor, and decreases further away. There is therefore a voltage between two points, and it is largest near the point of contact, where the potential changes most steeply. If a person stands with the feet apart, there is a step voltage between the feet, and the current flows up one leg and down the other. The step voltage is the larger, the closer you are to the point of contact and the longer the step is. That is why you do not approach a fallen conductor. If you are already close, you leave with short steps taken with the feet together or by jumping with both feet together, so that the feet are at almost the same potential. The damage is reported by calling the emergency number $112$, and you do not return to the area before the network company has cut the power. The distance between the front and hind legs of a cow is over a metre, so the voltage between them is much larger than across the short step of a person. In addition, the current flows from the front legs of the cow to the hind legs through the chest and the heart, so even a smaller voltage is dangerous.
+**Model answer:** When the conductor touches the ground, the current flows through the soil. The potential of the ground is highest at the point of contact, almost the voltage of the conductor, and decreases further away. There is therefore a voltage between two points, and it is largest near the point of contact, where the potential changes most steeply.
+
+If a person stands with the feet apart, there is a step voltage between the feet, and the current flows up one leg and down the other. The step voltage is the larger, the closer you are to the point of contact and the longer the step is.
+
+That is why you do not approach a fallen conductor. If you are already close, you leave with short steps taken with the feet together or by jumping with both feet together, so that the feet are at almost the same potential. The damage is reported by calling the emergency number $112$, and you do not return to the area before the network company has cut the power.
+
+The distance between the front and hind legs of a cow is over a metre, so the voltage between them is much larger than across the short step of a person. In addition, the current flows from the front legs of the cow to the hind legs through the chest and the heart, so even a smaller voltage is dangerous.
 
 ### Yleisiä virheitä
 - The safety of the bird is explained by the bird not being earthed, without mentioning that there is no voltage between its feet.
@@ -394,12 +440,26 @@ $$
 ### b)
 **Find:** an assessment of the conclusion of the report and the reliability of the measurement
 **Principle:** A conclusion is reliable only if the power has been measured correctly, the power of the light is known and the uncertainty of the result has been estimated (chapters *Semiconductors, the diode, the LED and the solar cell* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** The most important mistake of the report is systematic. With no load the current is zero and in a short circuit the voltage is zero, so the power of the panel is zero in both. The product $U_\text{oc}I_\text{sc} = 1.28\,\text{W}$ is larger than any power the panel really gives. The student's own table shows $0.99\,\text{W}$ as the largest power, so the efficiency is about $16\,\%$ and not $21\,\%$. The second shortcoming is that the light intensity was not measured. The value $1000\,\text{W/m}^2$ is only an assumption, and the real value depends on the height of the sun, the angle of the panel relative to the rays of the sun and thin clouds; in May in Finland it can be clearly smaller. The report also lacks information on the orientation and the temperature of the panel. Thirdly, the report has no uncertainty: $21.35\,\%$ gives four figures, although the area is given to two figures and the light intensity is an estimate. The conclusion that the panel is better than the manufacturer states is wrong: the correctly calculated efficiency, about $16\,\%$, agrees with the manufacturer's value $15\,\%$ within the precision of the measurements.
+**Model answer:** The most important mistake of the report is systematic.
+
+With no load the current is zero and in a short circuit the voltage is zero, so the power of the panel is zero in both. The product $U_\text{oc}I_\text{sc} = 1.28\,\text{W}$ is larger than any power the panel really gives. The student's own table shows $0.99\,\text{W}$ as the largest power, so the efficiency is about $16\,\%$ and not $21\,\%$.
+
+The second shortcoming is that the light intensity was not measured. The value $1000\,\text{W/m}^2$ is only an assumption, and the real value depends on the height of the sun, the angle of the panel relative to the rays of the sun and thin clouds; in May in Finland it can be clearly smaller. The report also lacks information on the orientation and the temperature of the panel.
+
+Thirdly, the report has no uncertainty: $21.35\,\%$ gives four figures, although the area is given to two figures and the light intensity is an estimate.
+
+The conclusion that the panel is better than the manufacturer states is wrong: the correctly calculated efficiency, about $16\,\%$, agrees with the manufacturer's value $15\,\%$ within the precision of the measurements.
 
 ### c)
 **Find:** an improved experiment that gives the efficiency reliably
 **Principle:** The efficiency needs the largest electric power and, at the same time, the power of the light falling on the panel. The largest power is found reliably only when the power is measured with many loads and the peak is found from a graph (chapters *Semiconductors, the diode, the LED and the solar cell* and *Graphing and fitting a straight line*).
-**Model answer:** The panel is placed perpendicular to the rays of the sun, and the light intensity is measured with an irradiance meter in the plane of the panel just before and after the measurement series. A variable resistor is connected to the panel, and the voltage and the current are measured with, for example, $15$–$20$ loads, most densely around the power peak, in the range of about $20$–$35\,\Omega$. The measurement is made quickly so that the light intensity and the temperature of the panel stay as constant as possible, and the series is repeated. $P = UI$ is calculated for each point, and the graph of the power is plotted as a function of the voltage. The largest power is read from the peak of the graph. The efficiency is calculated as $\eta = \tfrac{P_\text{max}}{GA}$, with the area of the cells measured with a ruler. The uncertainty is estimated from the uncertainties of the light intensity, the area and the power and from the spread of the repetitions, and the result is compared with the manufacturer's value with its uncertainties.
+**Model answer:** The panel is placed perpendicular to the rays of the sun, and the light intensity is measured with an irradiance meter in the plane of the panel just before and after the measurement series.
+
+A variable resistor is connected to the panel, and the voltage and the current are measured with, for example, $15$–$20$ loads, most densely around the power peak, in the range of about $20$–$35\,\Omega$. The measurement is made quickly so that the light intensity and the temperature of the panel stay as constant as possible, and the series is repeated.
+
+$P = UI$ is calculated for each point, and the graph of the power is plotted as a function of the voltage. The largest power is read from the peak of the graph. The efficiency is calculated as $\eta = \tfrac{P_\text{max}}{GA}$, with the area of the cells measured with a ruler.
+
+The uncertainty is estimated from the uncertainties of the light intensity, the area and the power and from the spread of the repetitions, and the result is compared with the manufacturer's value with its uncertainties.
 
 ### Yleisiä virheitä
 - The power is calculated as the product of the open-circuit voltage and the short-circuit current.
@@ -429,7 +489,11 @@ $$ and $E = \dfrac{1100\,\text{V}}{0.0010\,\text{m}} = 1.1 \cdot 10^{6}\,\text{V
 ### b)
 **Given:** the current of the ion beam $I = 1.60\,\text{A}$; from part a $v = 4.021 \cdot 10^{4}\,\text{m/s}$; $m = 2.180 \cdot 10^{-25}\,\text{kg}$; $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the thrust $F$ that the ion beam gives the satellite
-**Principle:** Current is the charge flowing per unit time, so it tells how many ions the thruster sends out per second. The mass $\Delta m$ of the ions leaving in the time $\Delta t$ gets the speed $v$ from almost rest. By the impulse principle their change in momentum $\Delta m \cdot v$ is the impulse $F\,\Delta t$ of the force the thruster exerts on them. By Newton's third law the ions exert an equal and opposite force on the thruster, which pushes the satellite (chapters *Momentum and impulse* and *Interaction and force: Newton's first and third laws*).
+**Principle:** Current is the charge flowing per unit time, so it tells how many ions the thruster sends out per second.
+
+The mass $\Delta m$ of the ions leaving in the time $\Delta t$ gets the speed $v$ from almost rest. By the impulse principle their change in momentum $\Delta m \cdot v$ is the impulse $F\,\Delta t$ of the force the thruster exerts on them.
+
+By Newton's third law the ions exert an equal and opposite force on the thruster, which pushes the satellite (chapters *Momentum and impulse* and *Interaction and force: Newton's first and third laws*).
 **Formula:** $N = \dfrac{I}{e}$, $\dfrac{\Delta m}{\Delta t} = Nm$ and $F\,\Delta t = \Delta m \cdot v$, so $F = \dfrac{\Delta m}{\Delta t}\,v = \dfrac{Imv}{e}$
 **Conversions:** $1\,\text{A} = 1\,\text{C/s}$. Finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** $N = \dfrac{1.60\,\text{C/s}}{1.602 \cdot 10^{-19}\,\text{C}} = 9.988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $$
@@ -491,7 +555,13 @@ $$. It is as large as the kinetic energy of the ions per second, $$
 &\cdot (4.021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 \\
 &= 1.76\,\text{kW}
 \end{aligned}
-$$, as the conservation of energy requires. The $2.5\,\text{kW}$ of the panels is therefore enough for the beam, and the remaining $0.7\,\text{kW}$ goes to ionisation, neutralisation and the other devices of the satellite. The thrust is $F = \tfrac{\Delta m}{\Delta t}\,v$ and the power $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, so $F = \tfrac{2P}{v}$. With a given power a large ion speed gives a small thrust, only $87.5\,\text{mN}$. On the other hand, a large speed means that each kilogram of propellant gives a lot of momentum, so little xenon is used. An ion thruster is not suitable for launch or fast manoeuvres, but for long orbit changes of weeks or months it is good, because it saves tens of kilograms of mass.
+$$, as the conservation of energy requires.
+
+The $2.5\,\text{kW}$ of the panels is therefore enough for the beam, and the remaining $0.7\,\text{kW}$ goes to ionisation, neutralisation and the other devices of the satellite.
+
+The thrust is $F = \tfrac{\Delta m}{\Delta t}\,v$ and the power $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, so $F = \tfrac{2P}{v}$. With a given power a large ion speed gives a small thrust, only $87.5\,\text{mN}$.
+
+On the other hand, a large speed means that each kilogram of propellant gives a lot of momentum, so little xenon is used. An ion thruster is not suitable for launch or fast manoeuvres, but for long orbit changes of weeks or months it is good, because it saves tens of kilograms of mass.
 
 ### Yleisiä virheitä
 - In part a the mass of the electron is used as the mass of the ion, or kilovolts are not converted to volts.
@@ -682,7 +752,9 @@ R_\text{D}(20\,\text{mA}) &= \dfrac{2.2\,\text{V}}{0.020\,\text{A}} \\
 &= 110\,\Omega
 \end{aligned}
 $$
-**Answer:** $R_\text{D} \approx 440\,\Omega$ at $5\,\text{mA}$ and $110\,\Omega$ at $20\,\text{mA}$. The resistance is not constant but falls to a quarter when the current is four times as large, so the LED does not obey Ohm's law: the curve is not a straight line through the origin. When the current changes a lot, the voltage stays almost the same, so an LED cannot be connected directly to a voltage source: even a small difference between the voltage of the source and that of the LED would cause a large current. The series resistor takes the excess voltage and sets the current.
+**Answer:** $R_\text{D} \approx 440\,\Omega$ at $5\,\text{mA}$ and $110\,\Omega$ at $20\,\text{mA}$. The resistance is not constant but falls to a quarter when the current is four times as large, so the LED does not obey Ohm's law: the curve is not a straight line through the origin.
+
+When the current changes a lot, the voltage stays almost the same, so an LED cannot be connected directly to a voltage source: even a small difference between the voltage of the source and that of the LED would cause a large current. The series resistor takes the excess voltage and sets the current.
 **Reasonableness:** The current became four times as large ($5\,\text{mA} \to 20\,\text{mA}$) and the voltage stayed the same, so the resistance must fall to a quarter: $440\,\Omega : 4 = 110\,\Omega$.
 
 ### Yleisiä virheitä

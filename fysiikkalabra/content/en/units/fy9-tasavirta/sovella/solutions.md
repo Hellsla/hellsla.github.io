@@ -28,7 +28,9 @@ $$ and $h = \dfrac{2.933 \cdot 10^{-8}\,\text{m}^2}{3.0 \cdot 10^{-3}\,\text{m}}
 ### c)
 **Find:** how the current and the power change when one strip breaks, and whether the glass warms up as well as before where the strips are intact
 **Principle:** The voltage across parallel branches is the same, so a broken branch does not change the voltage or the current of the other branches (chapter *Resistors in series and in parallel*). The current entering the busbars is the sum of the currents of the branches (chapter *Kirchhoff's laws and potential in a circuit*).
-**Model answer:** No current passes through the broken strip any more, but the voltage across the nine intact strips is still $13.5\,\text{V}$. The current of each intact strip is still $1.20\,\text{A}$ and its power $13.5\,\text{V} \cdot 1.20\,\text{A} = 16.2\,\text{W}$, so they heat the glass as before. The current of the heater decreases to $9 \cdot 1.20\,\text{A} = 10.8\,\text{A}$, and the power to $13.5\,\text{V} \cdot 10.8\,\text{A} \approx 146\,\text{W}$, so both decrease by a tenth. A narrow band remains where the broken strip is, and there the frost melts only with the heat of the neighbouring strips. If the strips were in series, one break would switch off the whole heater.
+**Model answer:** No current passes through the broken strip any more, but the voltage across the nine intact strips is still $13.5\,\text{V}$. The current of each intact strip is still $1.20\,\text{A}$ and its power $13.5\,\text{V} \cdot 1.20\,\text{A} = 16.2\,\text{W}$, so they heat the glass as before.
+
+The current of the heater decreases to $9 \cdot 1.20\,\text{A} = 10.8\,\text{A}$, and the power to $13.5\,\text{V} \cdot 10.8\,\text{A} \approx 146\,\text{W}$, so both decrease by a tenth. A narrow band remains where the broken strip is, and there the frost melts only with the heat of the neighbouring strips. If the strips were in series, one break would switch off the whole heater.
 
 ### d)
 **Given:** resistance of a strip $R_1 = 11.25\,\Omega$ (part a), $10$ strips in parallel, emf of the battery $E = 12.6\,\text{V}$ and internal resistance $R_\text{s} = 0.020\,\Omega$, power of the heater with the engine running $162\,\text{W}$ (part a)
@@ -201,7 +203,9 @@ $$ is transformed into internal energy of the resistances of the charger, the le
   <foreignObject x="158" y="322" width="247" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(1.20\,\text{A};\ 3.75\,\text{V})$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The group of batteries is described by a model in which a source with the emf $E$ is in series with the internal resistance $R_\text{s}$. When the current $I$ is drawn from the group, the terminal voltage is smaller by the voltage drop across the internal resistance, $U = E - R_\text{s} I$. The voltage drop is proportional to the current when $E$ and $R_\text{s}$ are constant, so the graph of the model is a falling straight line. The points lie well on a straight line, and their deviations from the line are about $0.01\,\text{V}$, of the order of the precision of the readings. So the model fits the data.
+**Model answer:** The group of batteries is described by a model in which a source with the emf $E$ is in series with the internal resistance $R_\text{s}$. When the current $I$ is drawn from the group, the terminal voltage is smaller by the voltage drop across the internal resistance, $U = E - R_\text{s} I$.
+
+The voltage drop is proportional to the current when $E$ and $R_\text{s}$ are constant, so the graph of the model is a falling straight line. The points lie well on a straight line, and their deviations from the line are about $0.01\,\text{V}$, of the order of the precision of the readings. So the model fits the data.
 
 ### b)
 **Given:** the fitted line in the graph; the points read from the line $(0\,\text{A};\ 4.63\,\text{V})$ and $(1.20\,\text{A};\ 3.75\,\text{V})$; the typical values of a new AA battery $1.5$–$1.6\,\text{V}$ and $0.1$–$0.3\,\Omega$
@@ -322,12 +326,18 @@ R &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\
 &\cdot \tfrac{30\,\text{m}}{0.75 \cdot 10^{-6}\,\text{m}^2} \\
 &= 0.68\,\Omega
 \end{aligned}
-$$. With a current of $10\,\text{A}$ the power is $0.68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, like a small heater inside the cord. The resistance is proportional to the length and inversely proportional to the cross-sectional area, so a thin cord heats up equally much per unit length whether it is short or long. The power grows as the square of the current, so the decisive factor is a large current: a thin cord is dangerous with a large current even when it is short, and especially when it is wound on a reel, so that the heat cannot escape. A thicker cord of $1.5\,\text{mm}^2$ would halve the power to $34\,\text{W}$.
+$$.
+
+With a current of $10\,\text{A}$ the power is $0.68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, like a small heater inside the cord. The resistance is proportional to the length and inversely proportional to the cross-sectional area, so a thin cord heats up equally much per unit length whether it is short or long.
+
+The power grows as the square of the current, so the decisive factor is a large current: a thin cord is dangerous with a large current even when it is short, and especially when it is wound on a reel, so that the heat cannot escape. A thicker cord of $1.5\,\text{mm}^2$ would halve the power to $34\,\text{W}$.
 
 ### b)
 **Find:** whether claim 2 is true when a $2000\,\text{W}$ kettle and an $850\,\text{W}$ toaster are on the same $10\,\text{A}$ circuit
 **Principle:** The sockets of a home are connected in parallel, so the mains voltage is across every device (chapter *Resistors in series and in parallel*). The current of a heating device is $I = \tfrac{P}{U}$ (chapter *Electrical energy at home*). The wiring of the circuit carries the sum of the currents of the branches (chapter *Kirchhoff's laws and potential in a circuit*).
-**Model answer:** The claim is wrong. The sockets are in parallel, so the voltage across every device is $230\,\text{V}$, and a device takes its own current $I = \tfrac{P}{U}$ regardless of the other devices. The kettle takes $\tfrac{2000\,\text{W}}{230\,\text{V}} = 8.7\,\text{A}$ and the toaster $\tfrac{850\,\text{W}}{230\,\text{V}} = 3.7\,\text{A}$ whether or not the other one is on. By the current law the wiring of the circuit carries their sum $12.4\,\text{A}$, which exceeds the $10\,\text{A}$ of the fuse. The fuse cuts off the current, because too large a current would heat the wiring of the circuit (power $RI^2$). So a new device does not reduce the current of the others but increases the total current of the circuit, and that is exactly why a circuit must not be overloaded.
+**Model answer:** The claim is wrong. The sockets are in parallel, so the voltage across every device is $230\,\text{V}$, and a device takes its own current $I = \tfrac{P}{U}$ regardless of the other devices. The kettle takes $\tfrac{2000\,\text{W}}{230\,\text{V}} = 8.7\,\text{A}$ and the toaster $\tfrac{850\,\text{W}}{230\,\text{V}} = 3.7\,\text{A}$ whether or not the other one is on.
+
+By the current law the wiring of the circuit carries their sum $12.4\,\text{A}$, which exceeds the $10\,\text{A}$ of the fuse. The fuse cuts off the current, because too large a current would heat the wiring of the circuit (power $RI^2$). So a new device does not reduce the current of the others but increases the total current of the circuit, and that is exactly why a circuit must not be overloaded.
 
 ### c)
 **Find:** whether claim 3 is true, and how large the voltage between the bird's feet is
@@ -337,7 +347,9 @@ $$. With a current of $10\,\text{A}$ the power is $0.68\,\Omega \cdot (10\,\text
 &2.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0.040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} \\
 &= 2.7 \cdot 10^{-6}\,\Omega
 \end{aligned}
-$$, and the voltage between the feet is $2.7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1.6\,\text{mV}$. Such a small voltage drives hardly any current through the bird's body, although the whole bird is, together with the line, at a high potential relative to the earth. The pylon is at the potential of the earth. If the bird touches it at the same time, almost the whole voltage between the line and the earth, tens or hundreds of kilovolts, is across its body, and a dangerous current passes through the body. So what is dangerous is not a high potential but a large potential difference between two points of the body.
+$$, and the voltage between the feet is $2.7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1.6\,\text{mV}$. Such a small voltage drives hardly any current through the bird's body, although the whole bird is, together with the line, at a high potential relative to the earth.
+
+The pylon is at the potential of the earth. If the bird touches it at the same time, almost the whole voltage between the line and the earth, tens or hundreds of kilovolts, is across its body, and a dangerous current passes through the body. So what is dangerous is not a high potential but a large potential difference between two points of the body.
 
 ### Yleisiä virheitä
 - In part a the length of the cord is taken as $15\,\text{m}$, although the current passes through two conductors, or square millimetres are not converted into square metres.
@@ -360,17 +372,23 @@ $$, and the voltage between the feet is $2.7 \cdot 10^{-6}\,\Omega \cdot 600\,\t
 ### b)
 **Find:** whether the group's conclusion is justified
 **Principle:** A difference between two results is real only if it is larger than the error limits of the results (chapter *Measuring and the reliability of a measurement*). In the error limit of a meter the digits part matters more the smaller the reading is compared with the range (chapter *Measurements in an electric circuit*). The resistance of a metal and of a carbon film changes mainly with temperature (chapter *Resistance and Ohm's law*).
-**Model answer:** The conclusion is not justified. Calculated in the same way, the resistance of measurement 2 is $(100 \pm 4)\,\Omega$ and that of measurement 3 $(102 \pm 3)\,\Omega$, and the result of measurement 1 is $(96 \pm 9)\,\Omega$. All three intervals include the value $100\,\Omega$, so the resistances do not differ from each other within the measurement precision. The largest deviation is in measurement 1, in which the readings $0.51\,\text{V}$ and $5.3\,\text{mA}$ are small compared with the ranges, so the digits part dominates the error limit. Heating could change the resistance, but the power of the resistor is at most only $3.02\,\text{V} \cdot 29.6\,\text{mA} \approx 0.09\,\text{W}$, so the resistor hardly heats up. So the data fit a constant resistance of about $100\,\Omega$, and it cannot be concluded from three imprecise points that the resistance depends on the voltage.
+**Model answer:** The conclusion is not justified. Calculated in the same way, the resistance of measurement 2 is $(100 \pm 4)\,\Omega$ and that of measurement 3 $(102 \pm 3)\,\Omega$, and the result of measurement 1 is $(96 \pm 9)\,\Omega$. All three intervals include the value $100\,\Omega$, so the resistances do not differ from each other within the measurement precision.
+
+The largest deviation is in measurement 1, in which the readings $0.51\,\text{V}$ and $5.3\,\text{mA}$ are small compared with the ranges, so the digits part dominates the error limit. Heating could change the resistance, but the power of the resistor is at most only $3.02\,\text{V} \cdot 29.6\,\text{mA} \approx 0.09\,\text{W}$, so the resistor hardly heats up. So the data fit a constant resistance of about $100\,\Omega$, and it cannot be concluded from three imprecise points that the resistance depends on the voltage.
 
 ### c)
 **Find:** how the measurement is improved so that the validity of Ohm's law can be established reliably
 **Principle:** A dependence is established most reliably from a graph in which a straight line has been fitted to many points (chapter *Graphing and fitting a straight line*). The error limit of a meter is smallest when the smallest range on which the reading fits is used (chapter *Measurements in an electric circuit*). Ohm's law concerns a constant temperature, so the temperature must be kept constant (chapter *Resistance and Ohm's law*).
-**Model answer:** At least eight points are measured over a wide voltage range, for example $0.5$–$10\,\text{V}$, and an $(I, U)$ graph is drawn. If the resistor obeys Ohm's law, the points lie on a straight line through the origin whose slope is $R$; a deviation from the line shows better in a graph than in three ratios. Each reading is taken on the smallest range on which it fits: for example $0.510\,\text{V}$ on the $2\,\text{V}$ range gives the error limit $$
+**Model answer:** At least eight points are measured over a wide voltage range, for example $0.5$–$10\,\text{V}$, and an $(I, U)$ graph is drawn. If the resistor obeys Ohm's law, the points lie on a straight line through the origin whose slope is $R$; a deviation from the line shows better in a graph than in three ratios.
+
+Each reading is taken on the smallest range on which it fits: for example $0.510\,\text{V}$ on the $2\,\text{V}$ range gives the error limit $$
 \begin{aligned}
 &0.005 \cdot 0.510\,\text{V} + 2 \cdot 0.001\,\text{V} \\
 &\approx 0.005\,\text{V}
 \end{aligned}
-$$, that is, about $0.9\,\%$. The temperature is kept constant: the power of the resistor is kept small, the readings are taken quickly, and the voltage is both increased and decreased, so that any effect of heating would show as differences. The ammeter is kept in series and the voltmeter in parallel with the resistor, and the effect of the meters is assessed: the resistance of the voltmeter is of the order of megohms, that is, much larger than $100\,\Omega$, so a negligibly small current passes through it. The result is given with its error limits.
+$$, that is, about $0.9\,\%$. The temperature is kept constant: the power of the resistor is kept small, the readings are taken quickly, and the voltage is both increased and decreased, so that any effect of heating would show as differences.
+
+The ammeter is kept in series and the voltmeter in parallel with the resistor, and the effect of the meters is assessed: the resistance of the voltmeter is of the order of megohms, that is, much larger than $100\,\Omega$, so a negligibly small current passes through it. The result is given with its error limits.
 
 ### Yleisiä virheitä
 - In part a the error limit is calculated from the percentage alone, so that the digits part $n \cdot r$ is forgotten and the error limit is too small.
@@ -627,7 +645,9 @@ $$, the same as the power of the battery.
 ### d)
 **Given:** the $30\,\Omega$ resistor is removed; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ and $R_1 = 60\,\Omega$; before, $P_{60} = 0.60\,\text{W}$ and $I = 0.30\,\text{A}$
 **Find:** the new power $P_{60}'$ of the $60\,\Omega$ resistor and the change
-**Principle:** Now the $20\,\Omega$ and $60\,\Omega$ resistors are in series, and the resistance of the circuit is their sum (chapter *Resistors in series and in parallel*). Prediction: the current falls, but the voltage across the $20\,\Omega$ resistor falls with it, so a larger voltage is left for the $60\,\Omega$ resistor and its power grows. Kirchhoff's voltage law gives the voltage and the power is $P = U^2/R$ (chapters *Kirchhoff's laws and potential in a circuit* and *Electric power and the heating of a resistor*).
+**Principle:** Now the $20\,\Omega$ and $60\,\Omega$ resistors are in series, and the resistance of the circuit is their sum (chapter *Resistors in series and in parallel*).
+
+Prediction: the current falls, but the voltage across the $20\,\Omega$ resistor falls with it, so a larger voltage is left for the $60\,\Omega$ resistor and its power grows. Kirchhoff's voltage law gives the voltage and the power is $P = U^2/R$ (chapters *Kirchhoff's laws and potential in a circuit* and *Electric power and the heating of a resistor*).
 **Formula:** $R = R_3 + R_1$, $I = \dfrac{E}{R}$, $U_1 = E - I R_3$ and $P = \dfrac{U_1^2}{R_1}$
 **Model answer:** Without the $30\,\Omega$ resistor the circuit has only $R_3$ and $R_1$ in series. $$
 \begin{aligned}

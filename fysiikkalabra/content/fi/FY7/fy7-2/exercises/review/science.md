@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c4a62c74b27e255e
+CONTENT-HASH: ac618b954077e556
 
 ## Blocking
 
 ## Polish
-- solutions.md:253 (L2-10 Kohta c) — "samat hiukkaset synnyttävät revontulia" is a simplification (C): the ground disturbance comes from currents in the upper atmosphere that strengthen when particles precipitate, not literally from the same particles — "samaan aikaan yläilmakehään syöksyvät hiukkaset synnyttävät revontulia" would be exact.
-- solutions.md:244 (L2-10 Järkevyys) — "kenttä muuttuu minuutissa enintään 36 nT" holds because R sums the absolute changes of the three components; one clause could say that R is a mean of absolute changes, so the net change is usually smaller.
+- solutions.md L3-03 (r_α : r_p) Kaava — the chain goes from $qvB = mv^2/r$ to $r = \tfrac{1}{B}\sqrt{2mU/q}$ without the rows $v = \sqrt{2qU/m}$ and $r = mv/(qB)$ that L3-01 shows (carried). — Add the two rows.
 
 ## Checked
-- Delta round 1: only fy7-2-L2-10 (FY7-A5) judged; hash identical at start and end.
-- Recomputed from the task text: $r = mv/(|q|B) = 83{,}55\,\text{m} \to 84\,\text{m}$ (two significant figures from 4,0 and 50; tolerance 2 % covers it), $r/R_\text{M} = 1{,}3 \cdot 10^{-5}$, hundredfold weaker field 8,4 km, $810/1350 = 0{,}60\,\text{nT/s}$, 36 nT per minute = 0,072 % of 50 000 nT. answers.py agrees.
-- Example table: lower threshold 200 exceeded 20–0 (five hours), upper 400 exceeded 21–23 (three), maximum 810 at 22; the solution reads it correctly. The table and the thresholds are marked invented in the task, the caption and the solution.
-- Source pages fetched 16 Nov 2026 (both HTTP 200). The aurora page has the chart title "Magneettinen aktiivisuus kuluneen vuorokauden aikana", station-specific thresholds, the link to the interpretation guide, and the dated review (16.11. 9.23: quiet weekend, solar wind strengthening Monday and Tuesday). The guide has: R describes the speed of field variations; divide by 1350 for nT/s; lower and upper threshold about 50 % for faint and for bright or wide auroras; statistical link, never a certain sign, short crossings without auroras, several consecutive bars a better sign; cloudiness not included; probability grows northwards; auroral zone a ring round the magnetic pole, Lapland in it; solar wind a particle stream that causes auroras, typical speed 300–400 km/s. Every claim the task and the solution attribute to the source is there; the solution's own additions are marked as its own.
-- Physics of b): force perpendicular to $\overline{v}$ and $\overline{B}$, no work, motion along the field unaffected, helical path along field lines; the uniform-field assumption and the simplification (solar wind does not enter the atmosphere directly) are stated.
-- Scope: charged particle in a magnetic field (FY7), field of a current (later chapter named); notation as in the brief.
+- Round-1 finding fixed: L2-04 Kaava now opens $F_\text{m} = G$, then $qvB = mg$, $v = mg/(qB)$. It no longer claims $\Sigma F = 0$, which matches the task and the Periaate ("yhtä suuriksi"). 2,049 mm/s unchanged.
+- Circular-motion chains (L1-01, L1-03, L1-04, L2-02, L2-05, L2-06, L3-02, L3-05, the electron task) start from $\Sigma F = ma_\text{n}$ and $F_\text{m} = mv^2/r$, and every rearrangement is right.
+- Velocity selectors (L1-02, L2-03): $\Sigma F = 0$ is right there because the forces are opposite. $v = E/B = U/(dB)$.
+- L1-04 and L3-02: $T = 2\pi r/v = 2\pi m/(qB)$ and $f = qB/(2\pi m)$; $v$ cancels.
+- L3-01: the energy and radius chain gives $r = \tfrac1B\sqrt{2mU/q}$. Δd = 4,006 cm.
+- L3-04 a/b: $r^2 = 2mU/(qB^2)$ and $m = qB^2k/2$ are right.
+- Cyclotron: $E_\text{k} = nqU$, $t = (n/2)T$. The numbers are unchanged.
+- L2-06: $d = (2v/(qB))\,m$, so the mass ratio equals the distance ratio.
+- Hash identical at start and end.

@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 81de44efc34be42b
-SCOPE: delta: round 3, the fix of round 2 in s7 (Jousen kalibrointi) c criterion `calculation`; s8 grading panel re-checked; 360 px
-Round 3: delta against the version round 2 reviewed (fix round 2).
+CONTENT-HASH: 1eabb3e4e16f4029
 
 ## Blocking
-(none) The round-2 Major (literal backslash-n in the s7 c formula, red KaTeX error) is fixed: the JSON now has real newlines, and the formula is rendered as three aligned rows.
+- none
 
 ## Polish
-- [Minor] s7/s8 Sijoitus boxes still end in ";" or "," between chain boxes; same as older tasks, optional.
+- [Minor] sovella/solutions.md s3 d) — pre-existing, not in this diff: text after the framed answer starts with a lowercase fragment; begin the sentence properly.
 
 ## Checked
-- Rebuilt fy9-mittaaminen (fi) and rendered preview/fy9-mittaaminen.html in headless Chrome at 360 px width with every details element open (self-assessment/mallivastaus panels of s7 and s8 included): 0 `katex-error` elements, 373 rendered formulas; also without opening: 0 errors.
-- DOM source of the s7 c block read: `x &= \dfrac{4{,}5\,\text{N}}{30{,}0\,\text{N/m}}` etc. present as KaTeX annotation, no raw `\n` text. Hash re-run: 81de44efc34be42b.
-- The round-2 render of the cards and figures (no clipping or overflow) stands; only the JSON line breaks changed.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Read git diff origin/main...HEAD for fi (sovella/solutions.md only, 52 insertions, 12 deletions): paragraph breaks only; words, maths, figures unchanged. Read the earlier sovella/review/visual.md as evidence.
+- Opened fi stage-exercises-390-6 (s1 d model answer in short paragraphs, Hyväksytään myös with display block) and -31 (s3 a/b: italic labelled paragraphs, display blocks intact).
+- Paragraphs are readable at 390 px, no clipping, no stray empty paragraphs, display math blocks unbroken. Hash re-run at the end: unchanged.

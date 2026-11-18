@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ec48e7cd49143106
+CONTENT-HASH: e0098bccffc6e74b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review (round 2): opened fy7-14-stage-herata-390 (Pohdinta; changed retrieval prompt in the closed box, layout intact). Wording judged from the diff: units in LaTeX, situation then question.
+- Delta round 2. The packet's captures show the Tiivistelmä box closed, so I opened my own 1280 px capture of the opened box (scratchpad easy.png): the list sits in its narrow column beside the scene figure, the reworded bullet "Heijastuksen estävässä pinnoitteessa on kaksi siirtymää. …" wraps cleanly with no clipping, and the page's scrollWidth is 1280 (no horizontal overflow). The sticky stage bar over the list is a screenshot artefact.
+- Opened fy7-14-theory-1280-3.png (surrounding layout, figure, closed boxes intact).
+- The new wording is fluent Finnish, and the unit and quantity LaTeX in the bullet are unchanged. The Heijastuksenestopinnoite term stays in the concept chip and in the text.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

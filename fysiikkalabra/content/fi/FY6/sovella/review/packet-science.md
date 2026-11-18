@@ -1,6 +1,6 @@
 # Sovella itsenäisesti FY6 (fi): science packet
 
-Course: FY6 Sähkö, 2 op. Content hash now: 8067d7cd885e25ec (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
+Course: FY6 Sähkö, 2 op. Content hash now: 78dc8c2332232d74 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
 
 ## Scope
 Central contents: jännite ja sähkövirta tasavirtapiireissä; resistanssi ja Ohmin laki; sähköteho ja Joulen laki; vastusten kytkennät ja Kirchhoffin lait; akut ja akun latauspiiri; Coulombin laki ja homogeeninen sähkökenttä; potentiaalienergia ja potentiaali homogeenisessa sähkökentässä; kondensaattori ja kondensaattorin energia; puolijohteet, diodi ja LED komponentteina virtapiirissä; sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus
@@ -46,7 +46,7 @@ practice.py check: OK
 {"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b-E": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 46.22, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3}
 
 ## Your job
-Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: 8067d7cd885e25ec`, then Blocking, Polish, Checked (under 400 words).
+Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: 78dc8c2332232d74`, then Blocking, Polish, Checked (under 400 words).
 
 ## content/fi/FY6/sovella/tasks.json
 ```
@@ -58,7 +58,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
       "title": "Taskulampun paristo",
       "source": "example",
       "source_note": "Mittaustulokset on laadittu tehtävää varten, mutta ne ovat samaa suuruusluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
-      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Tätä jännitteen hidasta muutosta ajan kuluessa kutsutaan ajautumaksi. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
@@ -176,7 +176,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
+              "detail": "Malli on idealisoitu tässä: se olettaa, että $E$ ja $R_\\text{s}$ pysyvät vakioina koko mittauksen ajan. Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
             },
             {
               "key": "uncertainty",
@@ -249,7 +249,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho lamppuun A todellisuudessa siirtyy? Vertaa tulosta lampun nimellistehoon.",
+          "text": "Kuinka suuri teho lamppuun A siirtyy? Vertaa tulosta lampun nimellistehoon.",
           "answer": {
             "value": 16.7,
             "unit": "W",
@@ -387,7 +387,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen, kun ilmanvastusta ei oteta huomioon?",
+          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen? Kerro oletuksesi.",
           "answer": {
             "value": 13.4,
             "unit": "m/s",
@@ -395,7 +395,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           },
           "criteria": [
             {
-              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
+              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois, ja sanoo tämän oletuksen; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
               "tag": "transfer",
               "points": 1
             },
@@ -420,7 +420,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi se on paljon pienempi kuin b-kohdan tulos, ja päättele, minne sähkökentän tekemä työ jää.",
+          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi mitattu nopeus poikkeaa b-kohdan tuloksesta, ja päättele, minne sähkökentän tekemä työ jää.",
           "criteria": [
             {
               "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois: ilma vastustaa pisaran liikettä, ja nopeuden kasvaessa ilmanvastus kasvaa, kunnes se on likimain yhtä suuri kuin sähkövoima.",
@@ -524,7 +524,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
+          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on? Vertaa osuutta jännitteen suhteelliseen pienenemiseen ja selitä ero.",
           "answer": [
             {
               "name": "E",
@@ -693,7 +693,7 @@ Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienen
 
 Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
-*Ajautuman suuruus.* Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
+*Ajautuman suuruus.* Ajautuma tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ajautumisnopeus on jännitteen muutos aikayksikössä. Ajautuma osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten ajautumisnopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Jos suoran toinen pää nousee ja toinen laskee tämän verran, kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
@@ -788,7 +788,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 
 ### b)
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
-**Kysytty:** pisaran nopeus $v$ osuessaan työkappaleeseen, kun ilmanvastusta ei oteta huomioon
+**Kysytty:** pisaran nopeus $v$ osuessaan työkappaleeseen; oletus: paino ja ilmanvastus jätetään pois
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
 **Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.

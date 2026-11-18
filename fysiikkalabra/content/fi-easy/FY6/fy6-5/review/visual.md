@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ddf91186f54ab9b2
+CONTENT-HASH: e610ccd099e89397
+
+Mode: delta (one word: "sisäenergiakseen" -> "sisäenergiaksi" in the misconception paragraph)
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: the diff is the Kertaa retrieval task (inquiry.json); opened stage-herata-390 and rendered the opened Kertaa box at 390 px (question, options, wrong- and correct-answer feedback with the aligned chain): KaTeX, units, case endings and layout fine, nothing clipped. Hash rechecked after the 11:59 spacing fix "$$ (luku".
+- Diff only; screenshots are missing for this lesson (review/shots absent), so nothing was opened. The change is a single correct word form (the old "sisäenergiakseen" was ungrammatical and also off the house wording "muuttuu sisäenergiaksi"); no figure, formula, unit or line length is affected, so layout cannot have changed.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
