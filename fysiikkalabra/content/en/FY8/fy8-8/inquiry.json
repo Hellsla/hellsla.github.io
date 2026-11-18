@@ -22,26 +22,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: energy levels and the photon",
+      "title": "Review: energy levels and ionisation",
       "optional": true,
-      "prompt": "An electron of a hydrogen atom moves from the level $E_3 = -1.51\\,\\text{eV}$ to the level $E_2 = -3.40\\,\\text{eV}$. What is the energy of the photon that is created?",
+      "prompt": "In the chamber of a smoke detector, an alpha particle ionises the atoms of the air, that is, it detaches electrons from them. In a simplified example the atom is hydrogen, whose ground-state energy is $E_1 = -13.6\\,\\text{eV}$. How much energy is needed to detach the electron from the atom?",
       "choices": [
         {
-          "text": "$1.89\\,\\text{eV}$, because the energy of the photon is the difference between the levels.",
+          "text": "$13.6\\,\\text{eV}$, because the electron is lifted from the level $E_1$ to the energy $0\\,\\text{eV}$.",
           "correct": true,
-          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $$\n\\begin{aligned}\nhf &= E_3 - E_2 \\\\\n&= -1.51\\,\\text{eV} + 3.40\\,\\text{eV} \\\\\n&= 1.89\\,\\text{eV}\n\\end{aligned}\n$$, the red line of hydrogen. In this chapter the same principle is carried over to the atomic nucleus."
+          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $$\n\\begin{aligned}\n\\Delta E &= 0 - E_1 \\\\\n&= 0 - (-13.6\\,\\text{eV}) \\\\\n&= 13.6\\,\\text{eV}\n\\end{aligned}\n$$. In this chapter the same principle, the difference of energy levels, is carried over to the atomic nucleus."
         },
         {
-          "text": "$1.51\\,\\text{eV}$, because the photon gets the energy of the starting level.",
-          "feedback": "The photon does not carry the energy of one level but the difference between the levels: $E_3 - E_2 = 1.89\\,\\text{eV}$."
+          "text": "$10.2\\,\\text{eV}$, because the electron is lifted to the level $n = 2$.",
+          "feedback": "The level $n = 2$ is still a bound state, and lifting the electron there takes the energy $-3.40\\,\\text{eV} + 13.6\\,\\text{eV} = 10.2\\,\\text{eV}$. In ionisation the electron is detached completely, so the energy is $0 - (-13.6\\,\\text{eV}) = 13.6\\,\\text{eV}$."
         },
         {
-          "text": "$4.91\\,\\text{eV}$, because the energies are added.",
-          "feedback": "Energy is conserved: the energy of the atom decreases from $-1.51\\,\\text{eV}$ to $-3.40\\,\\text{eV}$, so the photon carries away the difference $1.89\\,\\text{eV}$, not the sum."
+          "text": "$27.2\\,\\text{eV}$, because the energies of the electron and the nucleus are added.",
+          "feedback": "The ground-state energy $-13.6\\,\\text{eV}$ is already the energy of the electron and the nucleus together. Detaching takes only the difference $0 - (-13.6\\,\\text{eV}) = 13.6\\,\\text{eV}$, not a sum."
         },
         {
-          "text": "$3.40\\,\\text{eV}$, because the photon gets the energy of the final level.",
-          "feedback": "The energy of the final level is not the energy of the photon. The energy of the photon is the difference between the levels, $E_3 - E_2 = 1.89\\,\\text{eV}$."
+          "text": "$0\\,\\text{eV}$, because the energy of a free electron is zero.",
+          "feedback": "The energy of a free electron is $0\\,\\text{eV}$, but the energy of a bound electron is $-13.6\\,\\text{eV}$. Detaching takes their difference, $13.6\\,\\text{eV}$."
         }
       ]
     },

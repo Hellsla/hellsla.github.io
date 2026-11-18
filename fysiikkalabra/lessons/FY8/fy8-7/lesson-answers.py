@@ -36,6 +36,7 @@ a["cdse-bulk-nm"] = hc / (1.74 * e) * 1e9                  # bulk CdSe gap 1,74 
 a["mis-650"] = eV(650); a["mis-405"] = eV(405)             # 1,91 eV, 3,06 eV
 # inquiry: kertaus (hydrogen 3 -> 2 gives 1,89 eV, 656 nm)
 a["kert-656-eV"] = eV(656)                                 # 1,89 eV
+a["kert-650-eV"] = eV(650)                                 # 1,91 eV: laserosoittimen kertaustehtävä (herata), lambda = 650 nm
 # sim: koe-1 (three levels, mirrors), koe-2 (two levels), koe-3 (no mirrors)
 for P in (0.5, 1.0, 1.5, 2.0, 3.0, 4.0, 5.0):
     n2, n1, Po = model(P); a[f"koe1-{P}-n2"] = n2; a[f"koe1-{P}-P"] = Po

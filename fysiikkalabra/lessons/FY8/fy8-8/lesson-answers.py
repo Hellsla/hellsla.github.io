@@ -48,4 +48,7 @@ a["siirto-m-5"] = (92 - 82) / 2                               # mistake 5
 # exit: Po-210 alpha -> Pb-206; C-14: 6 p, 8 n
 a["exit-pb"] = 210 - 4
 a["exit-n"] = 14 - 6
+# kertaus (herata): savuilmaisimen ionisaatio, vedyn perustila -13,6 eV
+a["kert-ion-eV"] = 0 - (-13.6)                                 # 13,6 eV
+a["kert-n2-eV"] = -3.40 + 13.6                                # 10,2 eV (nosto tasolle n = 2)
 print(json.dumps({k: round(v, 6) if isinstance(v, float) else v for k, v in a.items()}))
