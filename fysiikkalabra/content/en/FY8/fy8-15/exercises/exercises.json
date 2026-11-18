@@ -153,6 +153,18 @@
           "feedback": "False: here the direction of the change is reversed. The neutron $udd$ changes into the proton $uud$, so a $d$ quark changes into a $u$ quark through the weak interaction. The change $u \\to d$ happens in beta plus decay."
         }
       ]
+    },
+    {
+      "id": "fy8-15-L1-10",
+      "level": 1,
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy8-15/taulukko",
+      "text": "The figure shows the elementary particles of the standard model as boxes, and the charge of each particle is marked. Each box is one particle, and antiparticles are not counted.\n\na) Read from the figure how many boxes are electrically neutral particles.\n\nb) How many of these neutral particles are leptons?\n\nThe answer box takes the result of part a).",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -318,6 +330,19 @@
           "feedback": "The neutron has an antiparticle, the antineutron. A decay does not require an antiparticle to exist, only that the conservation laws are satisfied and $Q$ is positive."
         }
       ]
+    },
+    {
+      "id": "fy8-15-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-15/taulukko",
+      "text": "The top quark $t$ can decay by $t \\to W^+ + X$, where $X$ is a particle of the figure. Charge is conserved, and the baryon number of $X$ is $\\tfrac{1}{3}$, so $X$ is a quark. In the figure the charge of the particle in every box is marked.\n\na) Read from the figure the charges of the particles $t$ and $W^+$ as multiples of the elementary charge $e$.\n\nb) Calculate the charge of the particle $X$.\n\nc) Which quarks of the figure can be $X$?\n\nThe answer box takes the result of part b).",
+      "answer": -0.3333,
+      "unit": "e",
+      "tolerance": 0.02
     }
   ],
   "level3": [

@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, svgids, units, tablefit
+import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -322,6 +322,7 @@ def render_md(text, **kw):
     text = re.sub(r"```latex\n(.*?)```", lambda m: "\n$$" + m.group(1).strip() + "$$\n", text, flags=re.S)
     text = kaavat.as_html(text, T("lesson.extra_formula"))                         # ```kaavat: named formulas as a formula table
     text = kaavat.johda_html(text, T("lesson.derive"), T("lesson.derive_show"))   # ```johda: "Johda itse", the derivation behind a button
+    text = stopthink.as_html(text, T("lesson.stop_think"), T("lesson.answer"))     # ```pysahdy: "Pysähdy ja mieti", a question and an openable answer
     text, fbds = fbdspec.render(text)                                              # ```voimakuvio specs -> drawn diagrams
     text, figrefs = figcat.embed(text)                                             # a model figure by id inside a solution step
     maths = []
@@ -556,24 +557,35 @@ def front_chrome(html):
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
-# Line icons of the study guide (teacher 2026-11-08): 24 x 24, drawn with the text colour, never the only carrier of a meaning.
+# Line icons of the study guide (teacher 2026-11-08, renewed 2026-11-17): 24 x 24, drawn with the text colour, never the only
+# carrier of a meaning (every icon sits beside its words, aria-hidden).
 STUDY_ICONS = {
+    "herata": "M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.1h5c0-.8.4-1.5 1.1-2.1A6 6 0 0 0 12 3z",
+    "ennusta": "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.8.4-1.2 1-1.2 1.8M12 16.8h.01",
+    "tutki": "M9.5 3h5M10.5 3v6L5 18.5A1.5 1.5 0 0 0 6.3 21h11.4a1.5 1.5 0 0 0 1.3-2.5L13.5 9V3M8 15h8",
+    "selita": "M12 6.5C9.5 4.8 6.5 4.6 3.5 5.5v13c3-.9 6-.7 8.5 1 2.5-1.7 5.5-1.9 8.5-1v-13c-3-.9-6-.7-8.5 1zM12 6.5v13",
+    "sovella": "M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM8 9l1.3 1.3L11.8 8M14 9.5h3M8 15l1.3 1.3L11.8 14M14 15.5h3",
+    "tarkista": "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12.3l2.8 2.8 5.5-5.9",
+    "retry": "M19.5 12.5a7.5 7.5 0 1 1-2.2-5.8M19.5 3.5v4.8h-4.8",
+    "recall": "M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM8 20h8M12 16v4M10.2 8.6a2 2 0 1 1 2.8 1.8c-.6.3-1 .8-1 1.4M12 13.6h.01",
+    "spaced": "M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 9.5h16M8 3v4M16 3v4M8 13.5h.01M12 13.5h.01M16 13.5h.01M8 17h.01M12 17h.01",
+    "mix": "M3 7h3.5c4 0 5 10 9 10H21M3 17h3.5c1.5 0 2.6-1 3.5-2.4M13.5 9.4C14.4 8 15.5 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3",
+    "fade": "M3 20h6v-5h6v-5h6V4",
+    "explain": "M5 4.5h14a1 1 0 0 1 1 1v9.5a1 1 0 0 1-1 1h-7.5L7 19.5V16H5a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 8.5h8M8 12h5",
+    "errors": "M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zM15.5 15.5L21 21M8.3 10.5l1.6 1.6 2.9-3",
+    "graph": "M4 3.5v16.5h16.5M7 16.5c2.5 0 3.5-8.5 6.5-8.5s3 5 6 5",
     "draw": "M4 20l1-4.2L15.6 5.2a2.1 2.1 0 0 1 3 3L8.2 19zM13.6 7.2l3 3",
+    "talk": "M4 4.5h10a1 1 0 0 1 1 1V11a1 1 0 0 1-1 1H8.5L5 15v-3H4a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM18 8.5h2a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-1v3l-3.5-3H11a1 1 0 0 1-1-1v-1",
+    "together": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 5.2a3 3 0 0 1 0 5.6M17 14.3c2.3.6 4 2.8 4 5.7",
     "theory": "M12 6.5C9.5 4.8 6.5 4.6 3.5 5.5v13c3-.9 6-.7 8.5 1 2.5-1.7 5.5-1.9 8.5-1v-13c-3-.9-6-.7-8.5 1zM12 6.5v13",
     "hint": "M9.5 18h5M10.5 21h3M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.1h5c0-.8.4-1.5 1.1-2.1A6 6 0 0 0 12 3z",
-    "talk": "M4 4.5h10a1 1 0 0 1 1 1V11a1 1 0 0 1-1 1H8.5L5 15v-3H4a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM18 8.5h2a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1h-1v3l-3.5-3H11a1 1 0 0 1-1-1v-1",
-    "retry": "M19.5 12.5a7.5 7.5 0 1 1-2.2-5.8M19.5 3.5v4.8h-4.8",
-    "graph": "M4 3.5v16.5h16.5M7 16.5c2.5 0 3.5-8.5 6.5-8.5s3 5 6 5",
-    "explain": "M5 4.5h14a1 1 0 0 1 1 1v9.5a1 1 0 0 1-1 1h-7.5L7 19.5V16H5a1 1 0 0 1-1-1V5.5a1 1 0 0 1 1-1zM8 8.5h8M8 12h5",
-    "calc": "M6.5 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM8.5 6.5h7v3h-7zM9 13.5h.01M12 13.5h.01M15 13.5h.01M9 17h.01M12 17h.01M15 17h.01",
-    "together": "M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 5.2a3 3 0 0 1 0 5.6M17 14.3c2.3.6 4 2.8 4 5.7",
-    "review": "M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 9.5h16M8 3v4M16 3v4M8 13.5h.01M12 13.5h.01M16 13.5h.01M8 17h.01M12 17h.01",
 }
-STUDY_WAYS = ["draw", "theory", "hint", "talk"]                  # lang guide.ways in this order
-STUDY_TIPS = ["graph", "explain", "calc", "together", "review"]   # lang guide.tips in this order
-# Each getting-started step shows the stages of a chapter it means, numbered as in a lesson's stage bar (Pohdinta 1 ...
-# Itsearvio 7, the exercises sixth): the guide speaks the lessons' own words (inquiry.stage_*, lesson.exercises).
-STUDY_STEP_STAGES = [[1, 2, 3], [4], [5], [6]]
+# The six steps of the path diagram, as the chapter's stage bar has them (Pohdinta 1 ... Esimerkit 5, Tehtävät 6, Testaa ja
+# arvioi 7): step 5 covers the stage bar's 5 and 6, so its badge reads "5–6" and the numbers agree with the chapter's.
+STUDY_STEPS = [("herata", "1"), ("ennusta", "2"), ("tutki", "3"), ("selita", "4"), ("sovella", "5–6"), ("tarkista", "7")]
+STUDY_TIPS = ["recall", "spaced", "mix", "fade", "explain", "errors", "graph", "draw"]   # lang guide.tips in this order
+STUDY_HELP = ["draw", "theory", "talk", "together"]                                       # lang guide.help in this order
+STUDY_FEEDBACK = ["hint", "errors", "retry", "graph"]                                     # lang guide.feedback in this order
 
 
 def study_icon(name, cls="study-icon"):
@@ -582,38 +594,36 @@ def study_icon(name, cls="study-icon"):
 
 
 def study_guide():
-    """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, "Näin opiskelet -sivun uudistaminen"; its own page
-    since 2026-11-04): three parts. Näin pääset alkuun: four numbered steps, each with the chapter stages it means as
-    the lesson's stage chips. Jäikö tehtävä jumiin?: a problem-solving map, the question, four ways out side by side
-    (HTML cards, so the text reflows) joined by quiet SVG lines to Yritä uudelleen itse; below 50rem the same map is a
-    vertical rail, the lines' SVGs hidden. The ways are a <ul>: no order, help may be asked at once. Viisi vinkkiä:
-    five short tips with line icons. Then the closing line and a link to the front page's module list."""
+    """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17: "Näin opiskelet -sivun pedagoginen
+    ja visuaalinen kehittäminen"): three parts. 1 Näin Ruukkilabrassa opiskellaan: the six steps as one diagram (an <ol>
+    of six steps with line icons and arrows, 3 x 2 on a wide column, 2 x 3 on a phone) and the feedback loop under it; the
+    chapter's stage numbers are the badges. 2 Näin opit tehokkaammin: eight study tips and a short help list (problem
+    solving together, asking for help). 3 Näin hyödynnät palautetta ja arvioit osaamistasi: the teacher's feedback (written
+    so that it holds for any teacher) and the self-assessment the chapters have. No promise of a step or a feature the
+    chapters lack (lesson.html, inquiry stages)."""
     g = lambda k: T("guide." + k)
-    names = [T("inquiry.stage_" + k) for k in inquiry.STAGE_IDS[:5]] + [T("lesson.exercises")]
-    def chips(nums):
-        return (f'<p class="study-where"><span class="visually-hidden">{esc(g("where"))}: </span>'
-                + "".join(f'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">{n}</span>{esc(names[n - 1])}</span>' for n in nums) + '</p>')
-    steps = "".join(f'<li><h3>{esc(s["title"])}</h3><p>{esc(s["text"])}</p>{chips(nums)}</li>'
-                    for s, nums in zip(g("steps"), STUDY_STEP_STAGES))
-    ways = "".join(f'<li>{study_icon(k)}<h3>{esc(w["title"])}</h3><p>{esc(w["text"])}</p></li>' for k, w in zip(STUDY_WAYS, g("ways")))
-    tips = "".join(f'<li>{study_icon(k)}<div><h3>{esc(t["title"])}</h3><p>{esc(t["text"])}</p></div></li>' for k, t in zip(STUDY_TIPS, g("tips")))
-    # the map's lines in a 400 x 40 box stretched over the row of four cards (preserveAspectRatio none, so the strokes
-    # keep their width): from the question's centre to each card's centre, and from each card back to the retry card
-    xs = [50, 150, 250, 350]
-    fan = "".join(f'<path d="M200 0C200 22 {x} 18 {x} 40"/>' for x in xs)
-    join = "".join(f'<path d="M{x} 0C{x} 22 200 18 200 40"/>' for x in xs)
-    lines = lambda d, cls: f'<svg class="stuck-lines {cls}" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">{d}</svg>'
+    def items(cls, icons, key):
+        return f'<ul class="{cls}">' + "".join(f'<li>{study_icon(ic)}<div><h3>{esc(t["title"])}</h3><p>{esc(t["text"])}</p></div></li>'
+                                              for ic, t in zip(icons, g(key))) + '</ul>'
+    steps = "".join(f'<li>{study_icon(ic)}<span class="path-no"><span class="visually-hidden">{esc(g("stage_no"))} </span>{no}</span>'
+                    f'<h3>{esc(s["title"])}</h3><p>{esc(s["text"])}</p></li>'
+                    for (ic, no), s in zip(STUDY_STEPS, g("steps")))
+    list_ = lambda key: "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in g(key)) + "</ul>"
     return (f'<section class="study-intro" id="{STUDY_ID}" aria-labelledby="h-study"><h1 id="h-study">{esc(g("title"))}</h1><p class="lead">{esc(g("lead"))}</p></section>'
-            f'<section class="study-sec" id="alkuun" aria-labelledby="h-start"><h2 id="h-start">{esc(g("start_h"))}</h2>'
-            f'<ol class="study-steps">{steps}</ol></section>'
-            f'<section class="study-sec" id="ydinpolku" aria-labelledby="h-core"><h2 id="h-core">{esc(g("core_h"))}</h2><p class="section-lead">{esc(g("core_text"))}</p></section>'
-            f'<section class="study-sec stuck" id="jumissa" aria-labelledby="h-stuck"><h2 id="h-stuck">{esc(g("stuck_h"))}</h2>'
-            f'<p class="section-lead">{esc(g("stuck_lead"))} {esc(g("stuck_note"))}</p>'
-            f'<div class="stuck-map"><p class="stuck-q">{esc(g("stuck_question"))}</p>{lines(fan, "fan")}'
-            f'<ul class="stuck-ways">{ways}</ul>{lines(join, "join")}'
-            f'<div class="stuck-retry">{study_icon("retry")}<h3>{esc(g("retry_title"))}</h3><p>{esc(g("retry_text"))}</p></div></div></section>'
-            f'<section class="study-sec" id="vinkit" aria-labelledby="h-tips"><h2 id="h-tips">{esc(g("tips_h"))}</h2>'
-            f'<ul class="study-tips">{tips}</ul></section>'
+            f'<section class="study-sec" id="polku" aria-labelledby="h-path"><h2 id="h-path">{esc(g("path_h"))}</h2>'
+            f'<p class="section-lead">{esc(g("path_lead"))}</p>'
+            f'<ol class="study-path">{steps}</ol>'
+            f'<div class="path-loop">{study_icon("retry")}<div><h3>{esc(g("loop_title"))}</h3><p>{esc(g("loop_text"))}</p></div></div>'
+            f'<p class="path-core">{esc(g("core_text"))}</p></section>'
+            f'<section class="study-sec" id="vinkit" aria-labelledby="h-learn"><h2 id="h-learn">{esc(g("learn_h"))}</h2>'
+            f'<p class="section-lead">{esc(g("learn_lead"))}</p>{items("study-tips", STUDY_TIPS, "tips")}'
+            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
+            f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
+            f'<p class="section-lead">{esc(g("feedback_lead"))}</p>'
+            f'<div class="study-two"><div><h3>{esc(g("fb_h"))}</h3><p>{esc(g("fb_text"))}</p>'
+            f'<p class="study-when">{esc(g("fb_when"))}</p>{list_("fb_list")}<p class="study-note">{esc(g("fb_note"))}</p></div>'
+            f'<div><h3>{esc(g("sa_h"))}</h3><p>{esc(g("sa_text"))}</p><p class="study-when">{esc(g("sa_when"))}</p>{list_("sa_list")}'
+            f'<p class="study-note">{esc(g("sa_note"))}</p></div></div></section>'
             f'<section class="study-end"><p>{esc(g("closing"))}</p><a class="study-cta" href="index.html#moduulit">{esc(g("cta"))}<span aria-hidden="true">→</span></a></section>')
 
 

@@ -244,3 +244,35 @@ $$ and $$
 2.725\,\text{K} \cdot 1.06\,\text{mm} &= 2.89\,\text{K mm}
 \end{aligned}
 $$.
+
+## fy8-16-L2-09
+**Given:** $\lambda_0 = 434.0\,\text{nm}$, $\lambda = 449.3\,\text{nm}$, $c = 2.998 \cdot 10^{5}\,\text{km/s}$ and the line of the figure through the point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$
+**Asked:** a) the redshift $z$ and the speed $v$; b) the Hubble constant $H_0$ from the figure; c) the distance $d$ of the galaxy in megaparsecs
+**Principle:** The shift of the line is the redshift $z = \tfrac{\Delta\lambda}{\lambda_0}$. It is small, so $v = c\,z$. By the Hubble–Lemaître law $v = H_0\,d$, the distance is obtained by dividing the speed by the Hubble constant, which is read from the line of the figure.
+**Reading the graph:** The line passes through the origin and the grid point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$, so its slope is $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = c\,z$ and $v = H_0\,d$, so $d = \dfrac{v}{H_0} = \dfrac{c\,z}{H_0}$
+**Conversions:** None needed: the nanometres cancel in the redshift, and the speed is in kilometres per second and $H_0$ in $\tfrac{\text{km/s}}{\text{Mpc}}$, so the distance comes out in megaparsecs.
+**Substitution:**
+a) $z = \dfrac{449.3\,\text{nm} - 434.0\,\text{nm}}{434.0\,\text{nm}} = \dfrac{15.3\,\text{nm}}{434.0\,\text{nm}} = 0.03525$
+a) $v = c\,z = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.03525 = 10\,569\,\text{km/s}$
+b) $H_0 = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$
+c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 146.8\,\text{Mpc}$
+**Answer:** $1.47 \cdot 10^{2}\,\text{Mpc}$, about $147\,\text{Mpc}$, three significant figures, as in the wavelengths $434.0\,\text{nm}$ and $449.3\,\text{nm}$. Along the way $z = 0.0353$, $v = 1.06 \cdot 10^{4}\,\text{km/s}$ and $H_0 = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+**Reasonableness:** The redshift $0.035$ is below $0.1$, so the formula $v = c\,z$ holds. The speed $10\,569\,\text{km/s}$ is about $3.5\,\%$ of the speed of light. The distance $147\,\text{Mpc}$ lies between the points $120\,\text{Mpc}$ and $160\,\text{Mpc}$ of the figure, whose speeds $8300\,\text{km/s}$ and $11\,900\,\text{km/s}$ are on either side of $10\,569\,\text{km/s}$. Check by multiplying: $72.0 \cdot 146.8 = 10\,570\,\text{km/s}$.
+
+## fy8-16-L3-06
+**Given:** the line of the figure through the point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$; $c = 2.998 \cdot 10^{5}\,\text{km/s}$; $v = c\,z$ holds when $z < 0.10$; the farthest point is about $285\,\text{Mpc}$ away
+**Asked:** a) the Hubble constant $H_0$ from the figure; b) the distance at which the line gives the speed $0.10\,c$; c) why the estimate is uncertain and why $v = c\,z$ does not hold for large redshifts
+**Principle:** The line is the graph of the equation $v = H_0\,d$, whose slope is the Hubble constant. Extending the line assumes that the same proportionality holds farther away than the points of the figure.
+**Reading the graph:** The line passes through the origin and the grid point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$, so $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$. The speed $0.10\,c = 2.998 \cdot 10^{4}\,\text{km/s}$ is greater than the top of the figure, $21\,000\,\text{km/s}$, so the point lies outside the figure.
+**Formula:** $v = H_0\,d$, so $d = \dfrac{v}{H_0}$ when $v = 0.10\,c$
+**Conversions:** None needed: the speed and $H_0$ are in kilometres per second and $\tfrac{\text{km/s}}{\text{Mpc}}$, so the distance comes out in megaparsecs.
+**Substitution:**
+a) $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$
+b) $v = 0.10 \cdot 2.998 \cdot 10^{5}\,\text{km/s} = 2.998 \cdot 10^{4}\,\text{km/s}$
+b) $d = \dfrac{v}{H_0} = \dfrac{2.998 \cdot 10^{4}\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{\text{Mpc}}} = 416.4\,\text{Mpc}$
+**Answer:** b) $4.2 \cdot 10^{2}\,\text{Mpc}$, about $416\,\text{Mpc}$; a) $72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Two significant figures in b), because the speed $0.10\,c$ is given with two figures; $H_0$ comes from the grid point with three figures.
+c) The estimate is uncertain because the points reach only about $285\,\text{Mpc}$ and the estimate is about $1.5$ times that. Extending the line assumes that the proportionality holds outside the figure too, which the points do not show.
+
+The formula $v = c\,z$ is only an approximation for a small redshift ($z < 0.1$). At large redshifts the result cannot be taken as the speed of the galaxy: for example, $z = 3.00$ would give $v = 3.00\,c$, a sign that the approximation has broken down.
+**Reasonableness:** Check by multiplying: $72.0\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 416.4\,\text{Mpc} = 2.998 \cdot 10^{4}\,\text{km/s}$, the same as $0.10\,c$. The speed at the top of the figure, $21\,000\,\text{km/s}$, corresponds to $z = 0.070$, so all the points of the figure are below the limit $0.10$ and $v = c\,z$ is valid for them. The result $416\,\text{Mpc}$ is greater than the axis $300\,\text{Mpc}$, as it should be, because $21\,000\,\text{km/s}$ is less than $29\,980\,\text{km/s}$.

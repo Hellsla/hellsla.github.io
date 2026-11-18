@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 853ea13465225fe1
-SCOPE: delta reflow from 8d435459e6011e55 base cf5f907
+CONTENT-HASH: 35eb2ff6a77795e8
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
-- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
+- [Minor] solutions.md L3-06 Vastaus c) — "$285\,\text{Mpc}$:iin" — a case ending after a LaTeX unit reads awkwardly (still open from round 1) — "pisteet ulottuvat vain etäisyydelle $285\,\text{Mpc}$".
+- [Minor] solutions.md L3-06 Vastaus b) — "$4{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $416\,\text{Mpc}$" next to "kaksi merkitsevää numeroa" shows a three-figure value as the equal; say "pyöristettynä" and keep $416{,}4$ as the unrounded intermediate.
 
 ## Checked
-- Opened at 1280 px: fy8-16 open-exercises-1280-4 (Hubble fractions, ν rows). The 390 px layout is covered by check_layout 360/390 (passed), no 390 px exercise capture exists.
-- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
+- Delta (only solutions.md L3-06 changed): fy8-16-open-exercises-L3-1280-9 and -10 (in content/fi/FY8/fy8-16/review/shots/), the changed Vastaus paragraph, the revised "v = c z" note ($z < 0{,}1$) and the Järkevyys block. fy8-16-open-exercises-L3-1280-8 and the figure capture fy8-16-fig-25-390 were not reopened; the figure is unchanged since round 1.
+- The new sentences render cleanly: LaTeX units with thin spaces, decimal comma, aligned chains, no clipping at 664 px.
+- Finnish: the new "merkki siitä, että likiarvo ei enää päde" is fluent and the physical meaning is clear.
+- The exercises' shots directory does not exist; the lesson's captures carry the hash-current exercise states.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

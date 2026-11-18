@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 75cc6de28fa950e1
+CONTENT-HASH: 8a3bb847f1c530b5
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md (L2-10 a) — the solution still says the sound view shows pressure as light and dark areas; unverified against the live simulation, soften to "kuvio".
+- solutions.md (L2-10 a) — "paineen vaihtelun" in the sound view is still unverified against the live simulation; consider "kuvio".
 
 ## Checked
-- Unverified button wording removed: "lähteiden omista painikkeista" is safe.
-- c) next destructive difference 3/2 λ = 1,20 m recomputed; answer box 0,40 m unchanged and still the only asked value.
-- Solution follows the new part (Kaava, Sijoitus, Vastaus); the 0,4 / 0,40 note is helpful.
-- Earlier Polish on a)/d) split not required.
+- The diff changes no numbers or symbols: only paragraph breaks inside long Periaate and Mallivastaus fields (L1-03, L1-04, the breakwater task, the microphone task, L2-10, the standing-wave and room tasks), plus one word.
+- The breaks fall at sentence boundaries that make the reasoning easier to read (rule, then application; model, then real room); no step is separated from what it needs.
+- "sisäenergiaksi" is the right FY term; "lämmöksi" was a loose term for energy transformed in the medium. The sentence still refutes the student's claim (energy redistributed, not lost).
+- The unchanged Kaava, Sijoitus and Vastaus fields, including the 0,40 m answer, are untouched.
+- Hash is 8a3bb847f1c530b5 at start and end.

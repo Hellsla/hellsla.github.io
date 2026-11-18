@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d9f79207147a8ef9
+CONTENT-HASH: d6490d7f746bd076
+SCOPE: delta added-exercise from d9f79207147a8ef9 base 1bdc56f920e4
 
 ## Blocking
 
 ## Polish
+- [Minor] fy8-15-L1-10 / L2-08 figure — the chart's quark/lepton rows carry no charge unit hint beyond "e"; fine as is. Optional: task could say "ruudun luku on varaus alkeisvarauksen e monikertana" (not needed).
 
 ## Checked
-- Delta round 1 (wording, caption-label), fi-easy: "leptolukua" → "leptonilukua" and "baryolukua" → "baryonilukua" in the Järkevyys of fy8-15-L2-06. Hash d9f79207147a8ef9 at the start and at the end.
-- Opened fy8-15-open-exercises-L2-1280-8 (end of task 15-15's solution, then task 15-16): Järkevyys reads "reaktio 3 leptonilukua, reaktio 5 varausta ja reaktio 7 baryonilukua"; the terms now match "baryoniluku ja leptoniluku" in the next solution's Periaate. The short Selkeä suomi sentences ("Ne tunnetaan.") are kept; five lines inside the tinted block. The card of task 15-16 below it is intact.
-- Caption change (the marker "esimerkkiaineisto" removed, teacher-approved): this version's table captures were not opened; the four captions were read in the source (Kvarkkiyhdistelmiä, Reaktioita, and two with their real sources), no marker or stray bracket left. The same caption component was seen rendered in the Finnish set's capture L2-1280-7.
-- No figure, formula, number or unit changed; nothing else judged in this delta.
+- fy8-15-open-exercises-1280-9 and -10 (L1-10 task, figure fy8-15/taulukko, full solution, Järkevyys), fy8-15-open-exercises-L2-1280-8 (end of neighbouring set) and -9 (L2-08 task, figure, answer box with unit e, start of solution).
+- Figure is legible, nothing clipped, colours and legend consistent; charges readable; task text, LaTeX maths, units and solution order (annettu, periaate, kaava, sijoitus, vastaus, järkevyys) correct in presentation; Finnish natural; set reads as one. No 360 px capture of these two was opened; layout checks are in the packet.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
