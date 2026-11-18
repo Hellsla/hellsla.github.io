@@ -12,6 +12,6 @@ Delta from the version I passed (7c8b70ef0c8025aa): only the diff in the packet 
 ## Checked
 - exercises.json L1-06 feedback: "Charge does not turn into anything else or disappear" is correct (conservation of charge), and the distractor about heat keeps its wrong words on purpose. This removes the "into heat" phrasing (guardrail P1).
 - solutions.md L1-06 model answer: "charge disappearing is wrong, because charge is conserved" still rejects the heat distractor correctly. Exactly one option is correct (wool +, equal magnitude).
-- All other hunks (L1-02, L2-01 [three-charge line], L1-05, L1-07, L2-05, L2-06, L2-07, L2-08, L3-04, L3-05, L3-06, L3-10 pair graph) only split paragraphs. Numbers, signs, units, formulas and their order are unchanged, and no physical reason or causal step was lost.
+- Every other hunk (L1-07, L2-07, L2-08, L2-10, L3-04, the threads task, the three-charge and zero-point tasks, the fit and pair-table tasks, the MAFY-k task) only splits paragraphs. Numbers, signs, units, formulas and their order are unchanged, and no physical reason or causal step was lost.
 - Paragraph order still runs principle, then formula, then substitution, so solving symbolically first is intact.
 - Nothing in answers.py or in the figures changed, so the recomputations in my previous report still hold.
