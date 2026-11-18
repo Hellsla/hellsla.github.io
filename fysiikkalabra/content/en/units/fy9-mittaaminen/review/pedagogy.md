@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a7fd1f4cabdc517a
-SCOPE: delta: new tasks s7 (Calibrating a spring) and s8 (A steel ball dropped, filmed on video) and the changed intro; older tasks untouched
+CONTENT-HASH: 0da2cfcc91630694
+SCOPE: delta: round 2, the fixes of round 1 in s7 and s8; older tasks untouched
+
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- s8 a: "Present the data as a graph from whose slope the acceleration of free fall can be obtained" is awkward English and gives away the route (a linear graph with the slope giving g), while the intro tells the student to decide how to present the data. Suggest "Present the data as a graph from which the acceleration of free fall can be determined. Fit a straight line and justify your choice of graph."
-- s8 a rubric: "the points are not joined with a broken line" reads better as "joined by line segments".
+- s8 a rubric line (row 1021) still says "joined with a broken line"; "joined by line segments" would read better. Optional.
 - s7 a names the model ("spring constant", "fit a straight line"); fine at this level.
 
 ## Checked
-- Read the en tasks.json for s7 and s8 (text, parts, answers, criteria) and the intro, beside the fi text.
-- Translation fidelity: same numbers in every part ($0.2\,\text{cm}$, $0.01\,\text{m}$, $30.0 \pm 1.2\,\text{N/m}$, $15.0 \pm 0.6\,\text{cm}$, $10.35 \pm 0.15\,\text{m/s}^2$, $9.81\,\text{m/s}^2$, $0.0487\,\text{s}$), same points per part, same answer fields. Decimal point is used in English text, as it should be.
-- "Length scale" (s8 c) is the right term; the fi "pituuskaava" is the weaker wording, so the English is better here.
-- Intro says eight problems, two from a ready graph, one gas-law task; this matches the set.
-- Demand and rubric: three connected parts of rising demand; criteria ask only what each part asks; the air-resistance sign check and the uncertainty comparison in s8 c are real reasoning. Rubric points equal part points.
-- Units are language-neutral (N/m, cm, m/s^2); calculation chains are aligned rows; results are rounded to the data.
-- 360 px: shots.md for the current hash and the packet's check are OK; no unit-level issue found for these tasks.
-- Hash re-checked at the end: a7fd1f4cabdc517a.
+- Round 1 had no Blocking items. Re-checked its Polish in the en packet: s8 a now reads "Present the data as a graph from which the acceleration of free fall can be determined, and fit a straight line to the points. Justify your choice of graph." Natural English, the route is no longer given.
+- "Length scale" term kept in s8 c; the numbers (30.0 ± 1.2 N/m, 15.0 ± 0.6 cm, 10.35 ± 0.15 m/s^2, 0.0487 s) are the same as in fi, decimal point in English.
+- Newly broken: nothing; practice.py check OK; no revealed structure, aligned rows and language-neutral units unchanged.
+- Hash re-checked: 0da2cfcc91630694.

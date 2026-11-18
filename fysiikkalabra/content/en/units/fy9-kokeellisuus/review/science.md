@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 57b16d7452a47e0a
-SCOPE: delta: new tasks s7 (Measuring sliding friction) and s8 (The magnetic field of a coil and sources of error) and the changed intro; older tasks s1-s6 untouched
+VERDICT: PASS
+CONTENT-HASH: 3cc6d946afc32a21
+SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7 and -s8; the intro and older tasks s1-s6 untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- **s8 b, criterion 3 and Reasonableness (A, causality; 7, assessment).** The point is given for "It cannot be known whether the dependence stays linear, for example when the coil warms up", and the solution gives the reason "a large current heats the wire of the coil and increases its resistance". The graph is $B$ against the current itself. For a long air-core coil $B = \mu_0 n I$ (given in the task) has no saturation, and a higher resistance changes the voltage needed for a given current, not $B$ at that current. A student who says "with no iron the law stays linear, so $4.9\,\text{A}$ is a sound estimate if coil and supply can carry it" is right and loses the point. Fix: the point goes for noting that the current is outside the measured range, so the coil and supply must be able to give it, and the estimate is checked by measuring.
-- **s8 common mistakes, second item (A, assessment).** "the current is calculated as $12 : 6.2 \cdot 2.5\,\text{A}$" is listed as a mistake, but $(12/6.2) \cdot 2.5\,\text{A} = 4.84\,\text{A}$ is a correct proportion for a line through the origin and falls inside the accepted $4.8\text{–}5.0\,\text{A}$. Remove it or replace it with a real mistake.
+- (none)
 
 ## Polish
-- s8 d: "the current heats the coil and changes its resistance" names no effect on $B$. The effect is real only if the current drifts between readings under a voltage-set supply, or if the sensor drifts with temperature.
-- s8 a Answer: "values read are of two or three figures". All four have two.
-- s7 a: a scale (calibration) error would also pass through the origin. "the zero point at least is in order" is right; one clause would make that explicit.
+- s8 c Principle: "An error that is constant and does not depend on the current is called systematic" reads like a definition. A systematic error need not be constant (s7 a now names a scale error, which is proportional). "A constant error is systematic" says the same thing without narrowing the term.
 
 ## Checked
-- The translation matches the Finnish text part by part: the same numbers ($0.1\,\text{N}$, $0.3\,\text{N}$, $2.4\,\text{N}$, $12\,\text{mT}$, $0.04\,\text{mT}$), answers, tolerances, criteria and points. The decimal point is used throughout. "Sliding friction", "coefficient of sliding friction" and "normal force" follow the house terms; "turn density" is defined in the task. The level of the English is right for the age group.
-- Numbers recomputed in the same script as the Finnish review, from the figure sources: s7 mean 0.2152, ±0.005, fit intercept 0.010 N, c 0.24 / 0.21 / 14.3 %, d 4.5 % and 0.93 %; s8 k = 2.467 mT/A, n = 1963 1/m, b 4.86 A, c 3.08 % and 0.645 %. All agree with answers.py.
-- The physics is otherwise right: zero error vs slope, current reversal, the stated model conditions. Points: s7 14, s8 14, criteria summing to the part points. The intro says "Eight", which matches the 8 tasks.
-- `practice.py check` OK; hash the same at start and end.
+- Round 1 Blocking 1 (s8 b heating as a cause of nonlinearity) is fixed in the English text. Criterion 3 now reads "the result is extrapolation ... about twice that. The coil and the power supply must be able to carry such a current ... checked by measuring". Reasonableness: "According to the model $B = \mu_0 n I$ the dependence stays linear, but it has not been measured in this range". No heating-resistance reason is left in b.
+- Round 1 Blocking 2 is fixed: the "$12 : 6.2 \cdot 2.5\,\text{A}$" item is gone. The b mistake is now inverting the slope ($I = kB$) or no reliability assessment.
+- Round 1 Polish is all done. s8 d (model answer and criterion 3) says "the current may drift if the supply regulates voltage, or the sensor reading may drift with temperature". s8 a Answer says "the values read have two figures". s7 a has the scale (calibration) error clause.
+- Rounding matches the Finnish text and the data's precision: s7 c "about $14\,\%$", s8 c $3\,\%$ and $0.6\,\%$ with the reason (one figure in $0.04\,\text{mT}$), b $4.9\,\text{A}$. The tolerances in tasks.json are the same as fi and accept them. The decimal point is used throughout. Units are language-neutral (1/m, mT/A, Vs/(Am)), and the chains are aligned rows.
+- I recomputed the numbers in the same script as fi: s7 0.2152 ± 0.005, c 0.24 / 0.21 / 14.3 %, mistake 12.5 % ≈ 13 %, d 4.5 % and 0.93 %; s8 k = 2.467 mT/A, n = 1963 1/m (×1000 without conversion), b 4.86 A (range 4.8–5.0), c 3.08 % and 0.645 %. All agree.
+- The translation of the fixed sentences is faithful part by part. Points are still 14 + 14. The intro says "Eight", which matches the 8 tasks.
+- Packet rebuilt (fixed text present), `practice.py check: OK`; the hash is the same at start and end.

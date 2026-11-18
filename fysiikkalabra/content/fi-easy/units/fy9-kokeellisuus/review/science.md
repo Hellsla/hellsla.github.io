@@ -1,17 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: e8f3c72d018fd722
-SCOPE: delta: new tasks s7 (Liukukitkan mittaus) and s8 (Käämin magneettikenttä ja virhelähteet) and the changed intro; older tasks s1-s6 untouched
+VERDICT: PASS
+CONTENT-HASH: fc1b77921967a9ae
+SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7 and -s8; the intro and older tasks s1-s6 untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- **s8 b, criterion 3 and Järkevyys (A, causality; 7, assessment).** The text is the same as in fi. The point is given for "Ei voi tietää, pysyykö riippuvuus suorana, esimerkiksi kun käämi lämpenee", and the reason given is "suuri virta lämmittää käämin johdinta ja kasvattaa sen resistanssia". The graph is $B$ against the current. For a coil with no iron, $B = \mu_0 n I$ stays linear, and resistance changes only the voltage needed for a given current. Fix it as in fi: the point goes for noting that $4{,}9\,\text{A}$ is outside the measured range, so the coil and supply must be able to give it, and the estimate is checked by measuring.
-- **s8 Yleisiä virheitä, second item (A, assessment).** "$12 : 6{,}2 \cdot 2{,}5\,\text{A}$" gives $4{,}84\,\text{A}$. That is a correct proportion and is accepted in Hyväksytään myös, so it is not a mistake. Remove or replace it.
+- (none)
 
 ## Polish
-- s8 d: "Virta lämmittää käämiä ja muuttaa sen resistanssia" needs its effect on the result (the current drifts with a voltage-set supply, or the sensor drifts).
-- s8 a Vastaus: "kaksi- tai kolminumeroisia". The values read all have two figures.
+- (none of substance). The s8 c Principle sentence "kutsutaan systemaattiseksi" from fi does not occur in this text.
 
 ## Checked
-- The S2 text matches fi in every number, answer, tolerance, criterion and point. The sentences are split shorter and are clear. "Ilmasydäminen" becomes "Käämin sisällä ei ole rautaa", which is a faithful and helpful paraphrase. Kierrostiheys is explained as kierrokset metrin matkalla. Systemaattinen and satunnainen virhe are explained in s7 a Periaate ("sama joka kerta", "vaihtelee arvaamattomasti"), and the physics of these is right. s7 a says "nollakohta on kunnossa" (the fi text says "vähintään nollakohdan osalta"); both are correct.
-- Numbers recomputed in the same script as fi (figure sources fy4-6 `MITTAUS`, fy7-3 data and fit): s7 0,2152 ± 0,005, c 0,24 / 0,21 / 14,3 %, d 4,5 % and 0,93 %; s8 2,467 mT/A, 1963 1/m, 4,86 A, 3,08 % and 0,645 %. All agree with answers.py.
-- Intro: "Kahdeksan tehtävää" matches. Points 14 + 14.
-- `practice.py check` OK; hash the same at start and end.
+- Round 1 Blocking 1 (s8 b heating as a cause of nonlinearity) is fixed in the S2 text. Criterion 3 now reads "tulos on ekstrapolointia ... Käämin ja virtalähteen on kestettävä tällainen virta. Tulos on vain arvio, ja se pitää tarkistaa mittaamalla". Järkevyys says "Mallin $B = \mu_0 n I$ mukaan riippuvuus pysyy suorana, mutta sitä ei ole mitattu tällä alueella", and "ekstrapolointi" is explained as "arvio mittausalueen ulkopuolelle", which helps an S2 reader.
+- Round 1 Blocking 2 is fixed: the "$12 : 6{,}2 \cdot 2{,}5\,\text{A}$" item is gone. The b mistake is now $I = kB$ or no reliability assessment.
+- Round 1 Polish is done. s8 d (model answer and criterion 3) names the drift: of the current under a voltage-set supply, or of the sensor with temperature. s8 a Vastaus says "kaksinumeroisia". In s7 a the scale error clause has also been added ("Väärä asteikko eli kalibrointi antaisi silti suoran origon kautta"), which is correct.
+- Rounding is the same as in fi and matches the data: s7 c $14\,\%$, s8 c $3\,\%$ and $0{,}6\,\%$ with the reason, b $4{,}9\,\text{A}$. The tolerances are the same as in fi. The decimal comma is used, units are language-neutral, and the chains are aligned rows.
+- The numbers were recomputed in the same script as fi: s7 0,2152 ± 0,005, c 0,24 / 0,21 / 14,3 %, d 4,5 % and 0,93 %; s8 2,467 mT/A, 1963 1/m, 4,86 A, 3,08 % and 0,645 %. All agree. Points are still 14 + 14, and the intro "Kahdeksan tehtävää" matches the 8 tasks.
+- Packet rebuilt (fixed text present), `practice.py check: OK`; the hash is the same at start and end.
