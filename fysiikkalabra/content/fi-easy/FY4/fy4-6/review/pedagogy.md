@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 26546fe8d6e3ece7
+CONTENT-HASH: 47eb9ebfe8beba17
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:134 and :190 — the figures `kalteva-ydin` and `kalteva` have the same description, so the same picture appears twice about 50 lines apart with no new role. Fix: keep one, or let the second show only what is new (the equations or the angle α).
-- lesson.md:179-182 and :228-236 — Fi-easy rule: "verrannollinen", "tangentti"/"tan" and "kokeellinen malli" are not explained at first use. Fix: add a short gloss, e.g. "verrannollinen eli kasvaa samassa suhteessa" and "tangentti on laskimen tan-näppäin; se on sin ÷ cos".
-- lesson.md:228-236 — The Kaava stage jumps from the two equations to $a = g(\sin\alpha - \mu\cos\alpha)$ without showing the substitution of $N$ and the cancelling of $m$. Fix: add one row, $ma = mg\sin\alpha - \mu mg\cos\alpha$, before the result.
-- lesson.md:198 — The sledding photo is not tied to any paragraph or task. Fix: move it next to the slope text with a question ("Mitkä voimat vaikuttavat liukuriin?"), or drop it.
-- exit-ticket.json item 3 — repeats the Moon numbers of the Paino section (60 kg, 97 N), so it tests recall. The weight goal has no inquiry task. Fix: use another mass or another planet, or ask which of mass and weight changes and why.
+- Four "Pysähdy ja mieti" questions (Paino, Lepokitka, Kalteva taso, Kitka ei aina vastusta liikettä): each answer is nearly word for word in the paragraph just read, so they check recall, not reasoning. Acceptable for S2 first reading. Fix: in Lepokitka use a number, "Vedät laatikkoa $30\,\text{N}$:n voimalla eikä se liiku. Kuinka suuri lepokitka on?" (answer $30\,\text{N}$).
+- Kitkakertoimen määrittäminen (under Kaava) is the only ### subsection without a question, though it carries the slot's experimental goal. Fix: "Lauta kallistetaan, ja kappale lähtee liukumaan $30^\circ$:n kulmassa. Mikä on lepokitkakerroin?" (answer $\tan 30^\circ \approx 0{,}58$).
+- Kitka ei aina vastusta liikettä: the question is about walking (one sentence of text) and repeats exit-ticket item 2. Ask about the box on the accelerating truck bed, the section's main idea; keep walking for the exit ticket.
+- Kalteva taso: the answer holds three linked claims and repeats the hook's answer. For S2, split: "Mikä kasvaa, kun rinne jyrkkenee: rinnettä alas vievä osa painosta vai tukivoima?"
+- Answer of Lepokitka: "kumoavat toisensa" is not explained; write "ovat yhtä suuret ja vastakkaiset, joten kokonaisvoima on nolla". "liiketila" in Paino is not explained either.
+- The Moon question repeats exit-ticket item 3's numbers. Round-1 polish is not re-judged.
 
 ## Checked
-- Learning path: hook, retrieval of the normal force, two predictions, two experiments, theory, worked example, transfer, checks. It builds on fy4-5 and covers the slot's goals (paino, lepokitka and liukukitka, kalteva taso, kitka suunnassa, kitkakertoimen määritys). Workload fits about one lesson.
-- Predictions: both are arguable before the evidence and each wrong option carries its own misconception feedback. Prediction 1 is refutable from the table (friction at 0, 10 and 20 degrees). Prediction 2 is refutable from three masses.
-- Experiments: variables are locked (surface and mass in 1, surface and angle in 2). The model values are called model values. Experiment 1 ends with a real task, the limit angle giving $\mu_0$, with hints and mistake feedback on sin and cos.
-- The worked example has its stages and puts the force diagram before the equations. I recomputed the numbers: 48 N, 1,48 m/s², G_x about 75 N.
-- Force diagrams (plan select, error, draw, equations): all four are present, including draw (check-3, with a model figure and criteria) and an equations task (siirto). The distractors in "valitse" each have one named error. Every solution gives its diagram before its equations.
-- Misconceptions (friction is constant, N = mg, friction always opposes motion, mass matters) are covered in the text, the predictions and the checks. Checks 1 and 2 are misconception-based. Check 3's criteria are observable.
-- Mechanics (gating, reveal, 360 px) are covered by the tests, so I did not repeat them. No page captures were in the packet. I judged the figures from their descriptions and source and left figure legibility and the simulation at 390 and 1280 px to the visual reviewer.
-- The hash was the same at the start and the end.
+- Each question is answerable from the paragraph just read; none needs the Kaava section, the simulation or a formula. Finnish is short, concrete, second person, clear for S2.
+- The answer sits in a closed "Vastaus" box under the question, so nothing is disclosed before the student thinks. The boxes are in Teoria and do not touch the Ennusta stage.
+- Physics of the four answers matches the text (static friction equals the pull; walking friction forward; N and the friction limit fall on a steeper slope; mass constant, weight changes).
+- Page: captures opened: fy4-6-theory-1280-1.png (Paino and Lepokitka questions at 1280 px: readable, one column, figure beside text, box closed). Lesson.md Pysähdy blocks at lines 141, 204, 269, 333 read as the packet shows them.
+- Inquiry, exercises and exit ticket unchanged from round 1; no new judgement needed.
+- Hash fixed: this report uses the fi-easy hash (`reviews.py hash fy4-6 --lang fi-easy`), not the Finnish one.
