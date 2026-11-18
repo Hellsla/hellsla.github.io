@@ -82,6 +82,27 @@ WebKitin omasta dokumentaatiosta ja kirjaa lähteen tähän tiedostoon ennen kui
   (`navigator.storage.estimate()`). Arvio: 5–10 Mt moduulia ja kieltä kohti.
 - K2: painikkeen tekstit (nimi, edistyminen, valmis, koko) ja paikka moduulisivulla ehdotetaan PR:n kuvauksessa.
 
+### 17a PR 1: toteutus ja hätäkatkaisu (työntekijä 2026-11-18)
+
+- **Tiedostot:** `templates/sw.js` → `site/sw.js` (juuri, kattaa `en/` ja `fi-easy/`), `templates/offline.js` (rekisteröi vain
+  `https:`-osoitteessa ja localhostissa, ei `file://`, ei `preview/`; ensimmäisen asennuksen jälkeen kertoo työntekijälle jo ladatut
+  tiedostot, jotta ensimmäinen käynti toimii heti verkotta), `templates/sw-kill.js` (hätäkatkaisu). Molemmat sivupohjat lataavat `offline.js`:n.
+- **Välimuistit:** `fl-sw-1-pages` (HTML, enintään 120 sivua) ja `fl-sw-1-static` (muut, enintään 1500 tiedostoa); vanhimmat poistuvat
+  ensin, ja kun `navigator.storage.estimate()` näyttää yli 80 % käytetystä, poistetaan 20 vanhinta. Vain etuliitteellä `fl-sw-` alkavat
+  välimuistit ovat työntekijän omia: ääneenluvun `fl-tts-supertonic3-v1` jää koskematta. Uusi `sw.js` (sen teksti sisältää jaettujen
+  skriptien tiivisteen) korvaa vanhan ja poistaa muut `fl-sw-`-välimuistit; skeeman vaihto = `SCHEMA`-vakion muutos.
+- **Säännöt:** HTML verkosta ensin, 3 s kuluttua välimuistin kopio (verkon vastaus päivittää kopion silti); `?v=`-tiedostot ensin
+  välimuistista; muut saman alkuperän GET-pyynnöt välimuistista ja päivitys taustalla; kyselyosa ei vaikuta sivun löytymiseen. Ei
+  välimuistiin: `models/`, `audio/`, Range-pyynnöt, ohjatut vastaukset ja muut alkuperät.
+- **Hätäkatkaisu (rikkinäinen service worker pois):** rakenna ja julkaise sivusto komennolla `FL_SW_KILL=1 python scripts/build.py`
+  (tai kopioi `templates/sw-kill.js` tiedostoksi `site/sw.js`). Se on sama osoite, joten selain hakee sen seuraavalla käynnillä
+  (enintään 24 h, GitHub Pages -välimuistilla tyypillisesti minuuteissa), poistaa kaikki `fl-sw-`-välimuistit, poistaa rekisteröinnin ja
+  lataa avoimet sivut uudelleen. Sen jälkeen julkaistaan tavallinen `sw.js` takaisin, kun vika on korjattu. `test_offline.py` testaa
+  katkaisun. Opiskelijan tallentamat työt (localStorage, IndexedDB) eivät ole välimuistissa eikä katkaisu koske niitä.
+- **Safarin tallennuksen poisto (WebKit):** lähdettä ei saatu tarkistettua tässä istunnossa, koska `webkit.org` ei ole ympäristön
+  verkkolistalla. Mitään ei perustella sillä: PR 1 ei tee oletusta siitä, että kotivalikkoon asennettu sivusto säilyy. Tarkistus tehdään
+  PR 2:n alussa (WebKitin blogi "Full Third-Party Cookie Blocking and More", 7 päivän raja ja kotivalikon poikkeus) ja lähde kirjataan tähän.
+
 ## 17b. Koko työ yhteen tiedostoon
 
 **Miksi:** moduulin työtiedosto on jo olemassa, mutta kolmen moduulin opiskelija tallentaa kolme tiedostoa, eikä
