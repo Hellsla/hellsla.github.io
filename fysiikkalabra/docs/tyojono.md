@@ -59,7 +59,7 @@ Varattu: claude/elevenlabs-readaloud
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
-`docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
+`docs/clipped-formulas/`:n tähderivit (FY5 ja FY6 mitattu, loput rivit sisältömuutoksia, loki §5d; FY4 ja FY7 8g:n PR:issä); ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
 FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
@@ -68,6 +68,7 @@ luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolman
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
 VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; kierros: `python scripts/round.py fy9-<id>` ja `--finish` (0j; unitin Sovella-sarja on `figcat`-omistaja `<unit>-sovella`, joten uusi unit-kuva kelpaa)); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
+FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 Sivupohjaosa tehty (PR #713: `boxed_section` build.py, `details.theory-box`; test_home.py avaa laatikon näppäimellä). Jäljellä vain sisältötyö luku kerrallaan.
@@ -125,20 +126,15 @@ en ja fi-easy saivat eron ja tiedekatselmointi ajettiin turhaan täytenä (fy8-1
 oikean vaihtoehdon indeksin kautta; luvut, kaavat ja asetukset pysyvät tiukkoina. Yhdistetään yksin.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
-Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652). Jäljellä
-**PR 5** (jaettu, yksin): canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus. Myöhemmin kurssi kerrallaan luvun seuraavan
+Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
-nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien poisto. Ei muuta sim.js-tiedostoja eikä fysiikkaa PR 5:ssä; 1366×650:n lisähuomiot: loki §10.
+nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien poisto. 1366×650:n lisähuomiot: loki §10.
 
 ## 11. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditointi)
 Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekstiä. U4 (#561) ja U5 (#582) tehty. U1–U3 jaettuja (`templates/`, `scripts/`, `site.css`, `lang/`):
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
-- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: luvun ydintehtävät (`build.py core_ids`, tasot 1 ja 2, ei tasoa 3) näkyvät auki otsikon alla yhdessä kortissa,
-  tason merkki **Perus**/**Soveltava** (hyväksytty teksti), muut tehtävät suljetuissa tasolaatikoissa niiden alla; ei uutta otsikkoa, laskuria eikä ohjeriviä;
-  `level_lead_1/2` poistetaan. Ehdot: tehtävä DOM:ssa kerran, id, `data-num`, tarkistus, vihjeet, ratkaisut ja Yritä ensin ennallaan; `palautus_tasks.py` lukee
-  tason uudesta `data-level`-tiedosta; `lesson.js`:n tasolaskuri, pakollisten vastausten sääntö, teorian vieressä -tila ja koko näytön tila päivitetään; toimii ilman JS:ää.
-  Testit: `test_progress`, `test_palautus`, `test_tehty`, `test_writepad`, `test_koko`, `check_layout`, `palautus_tasks.py --check`, `check_a11y`. Samassa PR:ssä CLAUDE.md:n Lesson page 8 korjataan.
+- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: toteutettu (`claude/11-u1-ydintehtavat`), odottaa opettajan hyväksyntää ja yhdistämistä; poistetaan jonosta yhdistettäessä. Luvut, joiden ydintehtävät ovat yhdeltä tasolta: PR:n kuvaus.
 - **U2 Tehtäväkortin järjestys** (U1:n jälkeen): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
 - **U3 Teorian taitto, vaihtoehto B** (kohta 8e): 38 rem:n palsta säilyy; teksti kuvarivin yläreunaan, valokuva viereen, kaksi pientä taulukkoa vierekkäin, korkea kuva alle tai seuraava kappale viereen.
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.
@@ -160,10 +156,29 @@ Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien 
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14, kevennetty 2026-11-16)
+Varattu: claude/15-lopputarkistus
 Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 16. Ensin pelkkä raportti (`docs/audits/`), korjaukset vasta opettajan luettua. Kevennetty:
 (1) automaattiset läpikäynnit (concepts.py, coverage.py --all, physics_phrases, check_a11y; yksi raportti); (2) otos: täysi tarkistus yhdelle luvulle per kurssi, raportti opettajalle;
 (3) laajennus vain, jos otos löytää kriittisiä virheitä. LOPS 2019 vertailuperusta; julkaistuja oppikirjoja ei käytetä; virheitä ei oleteta; tunnisteita, vastauksia ja tallennusmuotoja
 ei muuteta ilman todettua virhettä; lähdekoodia ei muokata. Raportin rakenne ja kahdeksan tarkistuskohtaa: loki §15.
+Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyväksytty: opettaja 2026-11-18 klo 18.33** (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti"): korjataan kaikki raportin löydökset, kurssi kerrallaan omissa PR:issään saman kurssin keskeneräisen PR:n jälkeen:
+- FY2–FY3: fy2-4 M1 (check-patteri-vaihtoehto), M2 ja M3 (ennuste-1/koe-1, johtopäätös); fy3-6 Tiivistelmään "kun olomuoto ei muutu". #724:n jälkeen.
+- FY4: fy4-4 M4 (lesson.md "480 kg tarkka arvo"). #727:n jälkeen.
+- FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen" (FY6 Sovella-hionnan PR:ssä).
+- FY7: fy7-5 lesson.md:201 napadynamon kuvaus ja exit-ticket.json:8 kysymys 2. #726:n jälkeen.
+
+## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
+Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
+- FY8: `kortit/fi/fy8.json` fy8-annihilaatio korjataan kuten en-kortti (#707); fy8-kosminen-inflaatio: lisätään luvun fy8-16 tekstiin lause kosmisesta inflaatiosta (kaikki kielet); fy8-12 yksikkö "1/min" → min⁻¹. #718:n jälkeen.
+- FY3: 8l-b "Esimerkkiaineisto:" pois myös tehtävien `text`-kentistä (fy3-4, 6, 7, 8, 10, 11, 13; kaikki kielet; delta-katselmoinnit). #724:n jälkeen.
+- 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
+- 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
+- Pysähdy ja mieti: laajennus ensin FY4:n muihin lukuihin (#727:n jälkeen).
+- FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
+- Pienet: header-raja 72 rem hyväksytty (jaettu, site.css); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
+- 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.
+- Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
+- Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.

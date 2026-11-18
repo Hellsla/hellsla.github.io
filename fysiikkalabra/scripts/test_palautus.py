@@ -160,7 +160,7 @@ with sync_playwright() as p:
     expect("en: the file is fy3-1.ratkaisut.json with lang 'en' and the same task ids as Finnish (one grading page for both)", name == "fy3-1.ratkaisut.json" and fe.get("lang") == "en" and fe.get("chapter") == "fy3-1" and "fy3-1-L1-01" in [a["task"] for a in fe["answers"]], {k: v for k, v in fe.items() if k != "answers"})
     pg.goto(BASE + "fy3-1.html"); pg.evaluate(OPEN)
     expect("no separate image button (Ctrl+V only)", pg.locator(".pad-image").count() == 0)
-    tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).map((li) => li.id)")
+    tasks = pg.evaluate("[...document.querySelectorAll('#exercises li[id]')].filter((li) => li.querySelector(':scope > .task')).sort((a, b) => Number(a.dataset.num.split('-').pop()) - Number(b.dataset.num.split('-').pop())).map((li) => li.id)")   # in the running order: the core card (U1) comes first on the page
     all_tasks = pg.evaluate("window.flSubmissionTasks().map(window.flSubmissionTaskId)")   # version 3: the lesson's own tasks too (teacher 2026-11-06 evening)
     # another chapter's solution in the same store must stay out
     pg.evaluate("""() => new Promise((ok) => { const s = document.createElement('script'); s.src = 'padstore.js'; s.onload = ok; document.head.append(s); })""")
@@ -193,7 +193,7 @@ with sync_playwright() as p:
     expect("format, version (3: every answer and the goals' summary), chapter and a 32-hex submission id", f1.get("format") == "ruukkilabra-palautus" and f1.get("version") == 3 and f1.get("chapter") == "fy3-1"
            and re.fullmatch(r"[0-9a-f]{32}", f1.get("submission_id", "")) and f1.get("exported"), {k: v for k, v in f1.items() if k != "answers"})
     ids1 = [a["task"] for a in f1["answers"]]
-    expect("every task of the chapter once, in page order: the lesson's tasks and every exercise", ids1 == all_tasks and [i for i in ids1 if i in tasks] == tasks and len(set(ids1)) == len(ids1)
+    expect("every task of the chapter once, in page order: the lesson's tasks and every exercise", ids1 == all_tasks and sorted(i for i in ids1 if i in tasks) == sorted(tasks) and len(set(ids1)) == len(ids1)
            and {"fy3-1:pred-1", "fy3-1:exp-1", "fy3-1:johtopaatos", "fy3-1:check-2", "fy3-1:check-3"} <= set(ids1), ids1)
     AN = lambda f: {a["task"]: a for a in f["answers"]}
     expect("only this chapter (no fy3-2 solution)", "fy3-2" not in json.dumps(f1))
