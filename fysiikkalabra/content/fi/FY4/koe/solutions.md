@@ -133,7 +133,7 @@ Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään e
 **Annettu:** a-kohdan malli: kiihdytys $0$–$8{,}0\,\text{s}$ nopeuteen $7{,}6\,\text{m/s}$ ja sen jälkeen tasainen nopeus
 **Kysytty:** kuljettu matka $s$ ajassa $0$–$14\,\text{s}$
 **Periaate:** Kuljettu matka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävän alueen pinta-ala. Alue jakautuu kolmioon (kiihdytys) ja suorakulmioon (tasainen nopeus).
-**Kaava:** $s = \tfrac{1}{2}\,t_1 v_1 + (t_2 - t_1)\,v_1$, kun $t_1 = 8{,}0\,\text{s}$, $t_2 = 14\,\text{s}$ ja $v_1 = 7{,}6\,\text{m/s}$
+**Kaava:** $s = s_1 + s_2$, missä kiihdytysvaiheessa $s_1 = \tfrac{1}{2}\,t_1 v_1$ (keskinopeus $\tfrac{1}{2}v_1$) ja tasaisen nopeuden vaiheessa $s_2 = v_1\,(t_2 - t_1)$, joten $s = \tfrac{1}{2}\,t_1 v_1 + (t_2 - t_1)\,v_1$, kun $t_1 = 8{,}0\,\text{s}$, $t_2 = 14\,\text{s}$ ja $v_1 = 7{,}6\,\text{m/s}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** Kolmio: $\tfrac{1}{2} \cdot 8{,}0\,\text{s} \cdot 7{,}6\,\tfrac{\text{m}}{\text{s}} = 30{,}4\,\text{m}$. Suorakulmio: $6{,}0\,\text{s} \cdot 7{,}6\,\tfrac{\text{m}}{\text{s}} = 45{,}6\,\text{m}$. Yhteensä $s = 30{,}4\,\text{m} + 45{,}6\,\text{m} = 76\,\text{m}$.
 **Vastaus:** Vaunu kulki ensimmäisten $14$ sekunnin aikana noin $76\,\text{m}$.
@@ -191,7 +191,7 @@ Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja l
 **Annettu:** $\mu_0 = 0{,}40$, $m = 40\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** suurin kiihtyvyys $a_\text{max}$, jolla laatikko ei liu'u
 **Periaate:** a-kohdan voimakuviosta: valitaan positiiviseksi suunnaksi auton kulkusuunta ja ylös. Pystysuunnassa $N - G = 0$, joten $N = mg$. Vaakasuunnassa ainoa voima on lepokitka, joten $F_{\mu 0} = ma$. Lepokitka voi olla enintään $\mu_0 N$, joten laatikko pysyy paikallaan vain, kun $ma \le \mu_0 mg$.
-**Kaava:** $ma \le \mu_0 mg \quad\Rightarrow\quad a_\text{max} = \mu_0 g$
+**Kaava:** $\Sigma F = ma$ ja $F_{\mu 0} \le \mu_0 N = \mu_0 mg$, joten $ma \le \mu_0 mg \quad\Rightarrow\quad a \le \mu_0 g \quad\Rightarrow\quad a_\text{max} = \mu_0 g$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $a_\text{max} = 0{,}40 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 3{,}9\,\tfrac{\text{m}}{\text{s}^2}$
 **Vastaus:** Auton kiihtyvyys saa olla enintään noin $3{,}9\,\text{m/s}^2$. Kaksi merkitsevää numeroa, kuten kitkakertoimessa. Massa supistuu pois, joten raja on sama painavalle ja kevyelle laatikolle.
@@ -211,7 +211,7 @@ Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja l
 **Annettu:** $\mu = 0{,}30$, auton hidastuvuus $5{,}0\,\text{m/s}^2$ (c-kohta)
 **Kysytty:** laatikkoon vaikuttavat voimat, laatikon hidastuvuus tien suhteen ja laatikon liike lavan suhteen
 **Periaate:** Laatikkoon vaikuttavat paino, tukivoima ja liukukitka. Laatikko liukuu lavan suhteen eteenpäin, joten liukukitka osoittaa taaksepäin. Pystysuunnassa $N = mg$, ja vaakasuunnassa Newtonin II lain mukaan $\mu mg = ma$.
-**Kaava:** $a = \mu g$
+**Kaava:** $\Sigma F = ma$ ja $F_\mu = \mu N = \mu mg$, joten $\mu mg = ma \quad\Rightarrow\quad a = \mu g$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $a = 0{,}30 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}9\,\tfrac{\text{m}}{\text{s}^2}$
 **Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liukukitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
@@ -233,7 +233,7 @@ Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja l
 **Annettu:** $v = 1{,}50\,\text{m/s}$, $s = 0{,}46\,\text{m}$, $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukukitkakerroin $\mu$
 **Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liukukitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
-**Kaava:** $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
+**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, $W = Fs$ ja $F_\mu = \mu mg$, joten energiaperiaatteesta $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(1{,}50\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}46\,\text{m}} = \dfrac{2{,}25\,\tfrac{\text{m}^2}{\text{s}^2}}{9{,}03\,\tfrac{\text{m}^2}{\text{s}^2}} \approx 0{,}249$
 **Vastaus:** Liukukitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
@@ -243,7 +243,7 @@ Lepokitka osoittaa eteenpäin, koska ilman sitä laatikko jäisi paikalleen ja l
 **Annettu:** $v = (1{,}50 \pm 0{,}03)\,\text{m/s}$ ja $s = (0{,}46 \pm 0{,}01)\,\text{m}$
 **Kysytty:** kitkakertoimen epävarmuus
 **Periaate:** Lasketaan kertoimen ääriarvot. Kerroin kasvaa, kun nopeus kasvaa tai matka lyhenee, joten suurin arvo saadaan suurimmalla nopeudella ja lyhimmällä matkalla, pienin päinvastoin.
-**Kaava:** $\mu_\text{max} = \dfrac{(v + \Delta v)^2}{2g\,(s - \Delta s)}$ ja $\mu_\text{min} = \dfrac{(v - \Delta v)^2}{2g\,(s + \Delta s)}$
+**Kaava:** $\mu = \dfrac{v^2}{2gs}$ (a-kohta), joten $\mu_\text{max} = \dfrac{(v + \Delta v)^2}{2g\,(s - \Delta s)}$ ja $\mu_\text{min} = \dfrac{(v - \Delta v)^2}{2g\,(s + \Delta s)}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\mu_\text{max} = \dfrac{\left(1{,}53\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}45\,\text{m}} \approx 0{,}265$ ja $\mu_\text{min} = \dfrac{\left(1{,}47\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}47\,\text{m}} \approx 0{,}234$
 **Vastaus:** Kerroin on välillä $0{,}234$–$0{,}265$, joten epävarmuus on noin puolet välin pituudesta, $\tfrac{0{,}265 - 0{,}234}{2} \approx 0{,}02$. Tulos on $\mu = 0{,}25 \pm 0{,}02$.
@@ -327,7 +327,7 @@ Sama impulssi muuttaa raskaamman vaunun nopeutta vähemmän, koska $\Delta v = \
 **Annettu:** levyn lukema levossa $687\,\text{N}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** opiskelijan massa $m$ ja perustelu
 **Periaate:** Levossa opiskelijaan vaikuttavat paino $\overline{G}$ alas ja levyn tukivoima $\overline{N}$ ylös. Kiihtyvyys on nolla, joten Newtonin I lain mukaan voimat kumoavat toisensa: $N = G$. Levy mittaa voimaa, jolla opiskelija painaa levyä. Se on tukivoiman vastavoima, joten Newtonin III lain mukaan se on yhtä suuri kuin tukivoima. Levyn lukema on siis levossa painon suuruinen.
-**Kaava:** $G = mg \quad\Rightarrow\quad m = \dfrac{G}{g}$
+**Kaava:** $\Sigma \overline{F} = \overline{0}$, joten $N = G$, ja $G = mg \quad\Rightarrow\quad m = \dfrac{G}{g}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $m = \dfrac{687\,\text{N}}{9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 70{,}0\,\text{kg}$
 **Vastaus:** Opiskelijan massa on noin $70{,}0\,\text{kg}$.
@@ -396,7 +396,7 @@ Siellä missä käyrä on painon viivan yläpuolella, kokonaisvoima osoittaa yl�
 **Kysytty:** nopeus $v$ irtoamishetkellä
 **Periaate:** Opiskelijaan vaikuttavat levyn tukivoima ylös ja paino alas, ja tukivoima on yhtä suuri kuin levyn lukema $F$. Impulssiperiaatteen mukaan kokonaisvoiman $F - G$ impulssi on liikemäärän muutos, ja alkunopeus on nolla. Levyn voiman impulssi on käyrän ja aika-akselin väliin jäävä pinta-ala, ja painon impulssi on $G \cdot 0{,}40\,\text{s}$.
 **Kuvaajan lukeminen:** Arvioidaan käyrän alle jäävä ala puolisuunnikkailla, joiden leveys on $0{,}05\,\text{s}$: korkeuksien keskiarvot ovat $894$, $1250$, $1460$, $1510$, $1440$, $1240$, $850$ ja $300\,\text{N}$, ja niiden summa on $8944\,\text{N}$.
-**Kaava:** $I = \Delta p \quad\Rightarrow\quad A - G\,\Delta t = mv - 0 \quad\Rightarrow\quad v = \dfrac{A - G\,\Delta t}{m}$, missä $A$ on käyrän alle jäävä pinta-ala
+**Kaava:** $I = \Sigma F\,\Delta t = \Delta p$ ja $\Sigma F = F - G$, joten $A - G\,\Delta t = mv - 0 \quad\Rightarrow\quad v = \dfrac{A - G\,\Delta t}{m}$, missä $A$ on käyrän alle jäävä pinta-ala
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $A = 8944\,\text{N} \cdot 0{,}05\,\text{s} \approx 447\,\text{N}\cdot\text{s}$ ja $G\,\Delta t = 687\,\text{N} \cdot 0{,}40\,\text{s} \approx 275\,\text{N}\cdot\text{s}$, joten $I = 447\,\text{N}\cdot\text{s} - 275\,\text{N}\cdot\text{s} = 172\,\text{N}\cdot\text{s}$ ja $v = \dfrac{172\,\text{N}\cdot\text{s}}{70{,}0\,\text{kg}} \approx 2{,}46\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** Opiskelijan nopeus irtoamishetkellä on noin $2{,}5\,\text{m/s}$ ylöspäin. Kaksi merkitsevää numeroa riittää, koska pinta-ala on arvio ja impulssi on kahden lähes yhtä suuren luvun erotus.
@@ -406,7 +406,7 @@ Siellä missä käyrä on painon viivan yläpuolella, kokonaisvoima osoittaa yl�
 **Annettu:** $v = 2{,}46\,\text{m/s}$ (c-kohta), $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** painopisteen nousukorkeus $h$ irtoamiskohdasta
 **Periaate:** Ilmassa opiskelijaan vaikuttaa vain paino, joten mekaaninen energia säilyy. Lakipisteessä nopeus on nolla, ja liike-energia on muuttunut potentiaalienergiaksi.
-**Kaava:** $\tfrac{1}{2}mv^2 = mgh \quad\Rightarrow\quad h = \dfrac{v^2}{2g}$
+**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, $E_\text{p} = mgh$ ja $E_\text{k} = E_\text{p}$, joten $\tfrac{1}{2}mv^2 = mgh \quad\Rightarrow\quad h = \dfrac{v^2}{2g}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $h = \dfrac{\left(2{,}46\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 0{,}31\,\text{m}$
 **Vastaus:** Painopiste nousee noin $0{,}31\,\text{m}$ irtoamiskohdasta.
@@ -416,7 +416,7 @@ Siellä missä käyrä on painon viivan yläpuolella, kokonaisvoima osoittaa yl�
 **Annettu:** lentoaika $t = 0{,}49\,\text{s}$, kuvanopeus $30$ kuvaa sekunnissa, $h_\text{levy} \approx 0{,}31\,\text{m}$ (d-kohta)
 **Kysytty:** nousukorkeus lentoajasta, tulosten yhteensopivuus ja parannusehdotus
 **Periaate:** Opiskelija laskeutuu samaan asentoon, jossa hän irtosi, joten ilmalento on symmetrinen: nousu kestää puolet lentoajasta. Lakipisteestä alas painopiste putoaa levosta ajassa $\tfrac{t}{2}$.
-**Kaava:** $h = \tfrac{1}{2}g\left(\dfrac{t}{2}\right)^2 = \dfrac{g\,t^2}{8}$
+**Kaava:** vapaassa putoamisessa levosta $s = \tfrac{1}{2}at^2$ ja $a = g$; putoamisaika on $\tfrac{t}{2}$, joten $h = \tfrac{1}{2}g\left(\dfrac{t}{2}\right)^2 = \dfrac{g\,t^2}{8}$
 **Muunnokset:** Yhden kuvan kesto on $\tfrac{1}{30}\,\text{s} \approx 0{,}033\,\text{s}$.
 **Sijoitus:** $h = \dfrac{9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot (0{,}49\,\text{s})^2}{8} \approx 0{,}29\,\text{m}$. Kun lentoaika on yhden kuvan verran pidempi tai lyhyempi, $0{,}52\,\text{s}$ tai $0{,}46\,\text{s}$, saadaan $0{,}34\,\text{m}$ ja $0{,}26\,\text{m}$.
 **Vastaus:** Lentoajan mukaan nousukorkeus on noin $0{,}29\,\text{m}$ ja sen epävarmuus noin $0{,}04\,\text{m}$ eli noin $14\,\%$. Voimalevyn tulos $0{,}31\,\text{m}$ on tällä välillä, joten tulokset sopivat yhteen.
@@ -441,7 +441,7 @@ Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävar
 **Annettu:** $h = 1{,}50\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$, alkunopeus nolla
 **Kysytty:** nopeus $v$ juuri ennen osumaa
 **Periaate:** Ilmanvastus on merkityksetön, joten pudotuksessa mekaaninen energia säilyy: potentiaalienergia muuttuu liike-energiaksi.
-**Kaava:** $mgh = \tfrac{1}{2}mv^2 \quad\Rightarrow\quad v = \sqrt{2gh}$
+**Kaava:** $E_\text{p} = mgh$, $E_\text{k} = \tfrac{1}{2}mv^2$ ja $E_\text{k} = E_\text{p}$, joten $mgh = \tfrac{1}{2}mv^2 \quad\Rightarrow\quad v = \sqrt{2gh}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1{,}50\,\text{m}} \approx 5{,}42\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** Päämallin nopeus on juuri ennen osumaa noin $5{,}4\,\text{m/s}$ eli noin $20\,\text{km/h}$.
@@ -462,7 +462,7 @@ Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävar
 **Annettu:** $m = 5{,}0\,\text{kg}$, $a = 600\,\text{m/s}^2$ ylöspäin (b-kohta), $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kypärän päämalliin kohdistama keskimääräinen voima $F$
 **Periaate:** Valitaan kappaleeksi päämalli. Siihen vaikuttavat paino $\overline{G}$ alas ja kypärän voima $\overline{F}$ ylös. Päämalli hidastuu alaspäin liikkuessaan, joten kiihtyvyys osoittaa ylös. Valitaan positiivinen suunta ylös, ja Newtonin II laki antaa $F - G = ma$.
-**Kaava:** $F - mg = ma \quad\Rightarrow\quad F = m\,(a + g)$
+**Kaava:** $\Sigma F = ma$, $\Sigma F = F - G$ ja $G = mg$, joten $F - mg = ma \quad\Rightarrow\quad F = m\,(a + g)$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $F = 5{,}0\,\text{kg} \cdot \left(603\,\tfrac{\text{m}}{\text{s}^2} + 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\right) \approx 3060\,\text{N}$
 **Vastaus:** Kypärä kohdistaa päämalliin keskimäärin noin $3{,}1\,\text{kN}$:n voiman ylöspäin.
@@ -472,7 +472,7 @@ Videon tarkkuutta rajoittaa kuvanopeus: suurempi kuvanopeus pienentäisi epävar
 **Annettu:** painuma $s_1 = 2{,}4\,\text{cm}$ ja huippuarvo $950\,\text{m/s}^2$ (mittaus), uusi painuma $s_2 = 1{,}0\,\text{cm}$, $v = 5{,}42\,\text{m/s}$, raja $2450\,\text{m/s}^2$
 **Kysytty:** ohuemman kypärän suurin kiihtyvyys ja läpäiseekö kypärä iskutestin
 **Periaate:** Nopeus $v$ pysähtyy painuman matkalla $s$. Kun kiihtyvyys korvataan keskiarvollaan, liike on tasaisesti hidastuvaa, ja $v^2 = 2as$, joten keskimääräinen kiihtyvyys on kääntäen verrannollinen painumaan. Koska kuvaajan muoto pysyy samana, myös huippuarvo on yhtä monta kertaa keskiarvo kuin mittauksessa.
-**Kaava:** $a = \dfrac{v^2}{2s}$ ja $a_\text{huippu,2} = a_2 \cdot \dfrac{a_\text{huippu,1}}{a_1}$
+**Kaava:** $E_\text{k} = \tfrac{1}{2}mv^2$, $W = Fs$ ja $F = ma$, joten $\tfrac{1}{2}mv^2 = mas \quad\Rightarrow\quad a = \dfrac{v^2}{2s}$, ja $a_\text{huippu,2} = a_2 \cdot \dfrac{a_\text{huippu,1}}{a_1}$
 **Muunnokset:** $2{,}4\,\text{cm} = 0{,}024\,\text{m}$ ja $1{,}0\,\text{cm} = 0{,}010\,\text{m}$
 **Sijoitus:** Mitattu kypärä: $a_1 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}024\,\text{m}} \approx 613\,\tfrac{\text{m}}{\text{s}^2}$, joten huippuarvo on $\tfrac{950}{613} \approx 1{,}55$ kertaa keskiarvo. Tämä matkan suhteen laskettu keskiarvo eroaa hieman b-kohdan ajan suhteen lasketusta $603\,\text{m/s}^2$:stä, koska painuma on pyöristetty $2{,}4\,\text{cm}$:iin; ero ei muuta johtopäätöstä. Ohuempi kypärä: $a_2 = \dfrac{\left(5{,}42\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}010\,\text{m}} \approx 1470\,\tfrac{\text{m}}{\text{s}^2}$ ja $a_\text{huippu,2} \approx 1{,}55 \cdot 1470\,\tfrac{\text{m}}{\text{s}^2} \approx 2280\,\tfrac{\text{m}}{\text{s}^2}$.
 **Vastaus:** Ohuemman kypärän suurin kiihtyvyys olisi noin $2300\,\text{m/s}^2$ eli noin $230$ kertaa $g$. Se jää rajan $2450\,\text{m/s}^2$ alle, joten kypärä läpäisisi tämän iskutestin, mutta vain noin $7\,\%$:n marginaalilla.
