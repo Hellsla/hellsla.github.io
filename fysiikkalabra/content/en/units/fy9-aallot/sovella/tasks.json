@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style problems bring together the oscillations, waves and sound of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Eight matriculation-exam-style problems bring together the oscillations, waves and sound of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-aallot-s1",
@@ -783,6 +783,270 @@
         "math": "fy4-8",
         "concept": "fy4-8",
         "transfer": "fy5-9"
+      }
+    },
+    {
+      "id": "fy9-aallot-s7",
+      "title": "Two loudspeakers in a yard",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy5-12",
+        "fy5-14"
+      ],
+      "figure": "fy5-12/ruudukko-tehtava",
+      "text": "Two loudspeakers, $S_1$ and $S_2$, have been set up in a school yard. They play the same sine tone from the same signal generator in phase, and its frequency is $343\\,\\text{Hz}$. The figure shows the yard from above as a grid, and $\\text{P}$ is the point where a microphone has been placed. The speed of sound in air at $20\\,{}^\\circ\\text{C}$ is $343.4\\,\\text{m/s}$. Reflections from walls and the difference in loudness caused by the different distances of the loudspeakers are ignored.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the distances $s_1$ and $s_2$ from the point $\\text{P}$ to the loudspeakers $S_1$ and $S_2$ and the path difference $\\Delta s = s_2 - s_1$.",
+          "answer": [
+            {
+              "name": "s1",
+              "value": 6.0,
+              "unit": "m",
+              "tolerance": 0.03
+            },
+            {
+              "name": "s2",
+              "value": 6.5,
+              "unit": "m",
+              "tolerance": 0.03
+            },
+            {
+              "name": "ds",
+              "value": 0.5,
+              "unit": "m",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Numbers of squares: the distance between $S_1$ and $\\text{P}$ is $12$ squares and between $S_1$ and $S_2$ it is $5$ squares; the side of a square is $0.50\\,\\text{m}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$s_1$ follows directly, and $s_2 = \\sqrt{s_1^2 + d^2}$ (Pythagorean theorem), $\\Delta s = s_2 - s_1$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$s_1 = 6.0\\,\\text{m}$, $$\n\\begin{aligned}\ns_2 &= \\sqrt{(6.0\\,\\text{m})^2 + (2.5\\,\\text{m})^2} \\\\\n&= 6.5\\,\\text{m}\n\\end{aligned}\n$$ and $\\Delta s = 0.50\\,\\text{m}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Distances in metres, two significant figures according to the side of a square, $0.50\\,\\text{m}$; the numbers of squares are exact."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "Calculate the wavelength of the loudspeakers' sound in air.",
+          "answer": {
+            "value": 1.0,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = f\\lambda$, so $\\lambda = \\dfrac{v}{f}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda = \\dfrac{343.4\\,\\text{m/s}}{343\\,\\text{Hz}} \\approx 1.00\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Is the sound loud or quiet at the microphone, at the point $\\text{P}$? Justify using the results of parts a and b.",
+          "criteria": [
+            {
+              "text": "Compares the path difference with the wavelength: $\\Delta s = 0.50\\,\\text{m}$ is half of the wavelength $1.00\\,\\text{m}$, so the waves arrive at $\\text{P}$ in opposite phase.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Waves in opposite phase cancel each other, so $\\text{P}$ is a point of quiet sound (almost silent, a nodal line)."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "The frequency of the generator is raised from $343\\,\\text{Hz}$. At what lowest frequency is the sound at the point $\\text{P}$ loud again?",
+          "answer": {
+            "value": 687,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The sound is loud when $\\Delta s = n\\lambda$. The next one is $\\Delta s = \\lambda$, so $\\dfrac{v}{f} = \\Delta s$ and $f = \\dfrac{v}{\\Delta s}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$f = \\dfrac{343.4\\,\\text{m/s}}{0.50\\,\\text{m}} \\approx 690\\,\\text{Hz}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The frequency is about double the original: the wavelength halves, so $\\Delta s$ is then one whole wavelength."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-12",
+        "math": "fy5-12",
+        "concept": "fy5-12",
+        "communication": "fy5-12"
+      }
+    },
+    {
+      "id": "fy9-aallot-s8",
+      "title": "A standing wave on a string",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy5-13",
+        "fy5-10"
+      ],
+      "figure": "fy5-13/kuvio-tehtava",
+      "text": "A student investigates a standing wave on a string. One end of the string is attached to a vibrator, and the other goes over a pulley with a weight hanging from its end. The part of the string between the vibrator and the pulley vibrates as a standing wave when the frequency of the vibrator is $50\\,\\text{Hz}$. In the figure the string lies on a ruler. The positions of the vibrator and the pulley are the ends of the string, and the weight and the string stay the same throughout the problem.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the wavelength $\\lambda$ on the string from the figure.",
+          "answer": {
+            "value": 0.6,
+            "unit": "m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "From the ruler the length of the string $L = 1.20\\,\\text{m}$ is read, and from the figure the number of loops $n = 4$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The length of a loop is $\\dfrac{\\lambda}{2}$, so $L = n\\dfrac{\\lambda}{2}$ and $\\lambda = \\dfrac{2L}{n}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\lambda = \\dfrac{2 \\cdot 1.20\\,\\text{m}}{4} = 0.600\\,\\text{m}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the speed of the wave on the string.",
+          "answer": {
+            "value": 30,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = f\\lambda$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = 50\\,\\text{Hz} \\cdot 0.600\\,\\text{m} = 30\\,\\text{m/s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The speed is $30\\,\\text{m/s}$, two significant figures according to the initial values."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The frequency of the vibrator is changed so that there are three equally long loops on the string. What frequency must the vibrator be set to?",
+          "answer": {
+            "value": 37.5,
+            "unit": "Hz",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the speed of the wave on the string does not change: it depends on the tension and the mass per unit length of the string, not on the frequency of the vibrator, and the weight and the string stay the same.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\lambda_3 = \\dfrac{2L}{3}$ and $f_3 = \\dfrac{v}{\\lambda_3} = \\dfrac{3v}{2L}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$f_3 = \\dfrac{3 \\cdot 30\\,\\text{m/s}}{2 \\cdot 1.20\\,\\text{m}} = 37.5\\,\\text{Hz}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$f_3 \\approx 38\\,\\text{Hz}$; the frequency is lower than at the start because the wavelength is longer."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The frequency of the vibrator is set to $20\\,\\text{Hz}$. Does a clear standing wave form on the string? Justify.",
+          "criteria": [
+            {
+              "text": "Explains that a standing wave forms only when the length of the string is a whole number of half wavelengths, so that nodes come at the ends: the natural frequencies are $f_n = n\\dfrac{v}{2L}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$f_1 = 12.5\\,\\text{Hz}$ and $f_2 = 25\\,\\text{Hz}$, so $20\\,\\text{Hz}$ lies between them and is not a natural frequency; no clear standing wave forms."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-13",
+        "math": "fy5-13",
+        "concept": "fy5-13",
+        "communication": "fy5-13"
       }
     }
   ]

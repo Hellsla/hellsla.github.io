@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 84089ae446eb257f
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 2f9de8817eb2638d
+SCOPE: delta (round 2) s8 fy3-10/pt-suorat, s9 fy3-11/pv-isobaari, changed intro; s1-s7 not re-judged; language: fi
 
 ## Blocking
-- (none)
 
 ## Polish
-- A (carried from round 1), s7 d repeats the idea of s2 c; a cross-reference in the solution would turn it into revision.
-- C (carried), `tasks.json` intro: "Ratkaise ne kuten kokeessa" follows the sentence about the last task, so "ne" points the wrong way.
+- s8 b: criterion tagged units_precision ("same temperature") duplicates the 2-point concept criterion; relabel or drop.
+- s8 b: "Perustele vertailu" / "Justify the comparison" mildly signals the equal-conditions argument; "Perustele, voiko kaasuja vertailla suoraan" would hide it better.
+- s8 solution: state that b uses 0,0602 mol unrounded.
+- s9 b/c: rubric shows 293 K, solution 293,15 K; add "(293,15 K ~ 293 K)" to the rubric.
+- Solutions headings "Yleisia virheita" / "Hyvaksytaan myos" stay Finnish in en (consistent across all 9 tasks, so a convention, not a delta defect).
 
 ## Checked
-- `solutions.md` s2 c, added sentence: 485,1 − 174,6 − 232,9 = 77,6 kW and 485 − 175 − 233 = 77 kW, both recomputed; 77,6/485,1 = 16 %. The sentence explains the difference between the displayed row and the unrounded value without confusing the 16 % conclusion.
-- `solutions.md` s5 common mistake: with 311 kPa the amount of substance is 1,48 times too large, so the molar mass is 210/311 = 0,68 of the right one. "moolimassaksi tulee noin kaksi kolmasosaa oikeasta" now names the quantity; the old "tulos" was ambiguous.
-- `solutions.md` s7 e: "noin 21 °C" now agrees with c (10 °C + 11 K, line 573).
-- `tasks.json` s7 c part text: the formula name is no longer given in the prompt, which suits an application task. "veteen aikayksikössä siirtyvä lämpö eli lämpöteho" and "sekunnissa virtaavan veden tilavuus" give a student what the derivation needs; the equation criterion and the solution (Q = cmΔT, m = ρV, Q = P₂t) still match the instruction "Johda symbolein". The situation is first, the three questions follow in the order of the criteria.
-- `answers.py`: only an added check value; no content effect.
+- Round-1 blocker verified fixed: intro no longer says "the last task is the source task"; it says only that one task is a source-based task opening from its link. True for the student.
+- s9 text now has a movable piston with weights holding pressure constant: isobar graph is consistent; ideal-gas and constant-amount assumptions stated.
+- s9 c answer 1172,6 K with 3 % tolerance, 1,2e3 K accepted (2,3 % off); b 0,10 mol (2,5 %) and carry-through c from 0,10 mol (2,6 %) stay inside tolerance. Common-mistake line for c (Celsius quadrupling, 80 C) is correct.
+- Task texts reveal no solution structure or formula; s8 b and s9 d leave the model choice to the student. Parts rise in demand.
+- Solutions follow CLAUDE.md rule 7 (given, asked, principle, graph reading, formula, conversions, substitution, rounding reason, reasonableness) for every part; s9 d has a justified model answer. Alternative methods listed.
+- Rubrics fair: points match demand (s8 11 p, s9 14 p); figure data (A 200/50, 400/100 K/kPa; B 60 kPa at 400 K; isobar 1,0-4,0 l at 250 kPa) agree across text, rubric, solution; names A/B and figure ids consistent; en and fi-easy mirror fi fully.
+- fi-easy: short sentences, new sentences for each assumption, no extra jargon (NOTES.md 12 satisfied).

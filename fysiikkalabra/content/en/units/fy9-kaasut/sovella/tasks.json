@@ -1,5 +1,5 @@
 {
-  "intro": "Seven matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. The last problem is an applied source-based problem whose source opens from the link in the problem. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "intro": "Nine matriculation-exam-style problems bring together the lesson's pressure, gases and heat engine. One of the problems is an applied source-based problem whose source opens from the link in the problem. Solve them as in the exam: justify the choice of model, check that the temperature is in kelvins and the pressure is the total pressure, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -834,6 +834,236 @@
         "math": "fy3-6",
         "transfer": "fy3-15",
         "communication": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s8",
+      "title": "Two sealed vessels",
+      "source": "example",
+      "source_note": "The measurements and numbers are invented examples.",
+      "skills": [
+        "fy3-10",
+        "fy1-4"
+      ],
+      "figure": "fy3-10/pt-suorat",
+      "text": "A student heats two identical sealed rigid vessels. The volume of each vessel is $2.0\\,\\textsf{l}$. One contains gas A and the other gas B, and each gas behaves like an ideal gas. The student measures the pressure $p$ of each gas as a function of the kelvin temperature $T$. The measurements are plotted in the graph.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the amount of substance of gas A.",
+          "answer": {
+            "value": 0.0602,
+            "unit": "mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "A point of gas A is read from the graph, for example $(400\\,\\text{K};\\ 100\\,\\text{kPa})$; the volume of the vessel is $2.0\\,\\textsf{l}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The ideal gas law $pV = nRT$, so $n = \\dfrac{pV}{RT}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nn &= \\dfrac{100\\,000\\,\\text{Pa} \\cdot 2.0 \\cdot 10^{-3}\\,\\text{m}^3}{8.31\\,\\text{J/(mol K)} \\cdot 400\\,\\text{K}} \\\\\n&\\approx 0.060\\,\\text{mol}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Litres to cubic metres and kilopascals to pascals; two significant figures. The other point, $(200\\,\\text{K};\\ 50\\,\\text{kPa})$, gives the same amount of substance."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "By what percentage is the amount of substance of gas B smaller than that of gas A? Justify the comparison.",
+          "answer": {
+            "value": 40.0,
+            "unit": "%",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the volume and temperature of the vessels are the same, so the amount of substance is directly proportional to the pressure: $\\dfrac{n_\\text{B}}{n_\\text{A}} = \\dfrac{p_\\text{B}}{p_\\text{A}}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "At the same temperature $T = 400\\,\\text{K}$: $\\dfrac{n_\\text{B}}{n_\\text{A}} = \\dfrac{60\\,\\text{kPa}}{100\\,\\text{kPa}} = 0.60$, so $n_\\text{B} \\approx 0.036\\,\\text{mol}$ and the difference is $40\\,\\%$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The comparison is made at the same temperature from two read points; the result as a percentage."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Vessel A cools in frosty weather to a temperature of $-20\\,{}^\\circ\\text{C}$. What is the pressure of gas A then?",
+          "answer": {
+            "value": 63.3,
+            "unit": "kPa",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The volume and the amount of substance are constant, so $\\dfrac{p}{T}$ is constant: $p_2 = p_1 \\dfrac{T_2}{T_1}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_2 = (-20 + 273.15)\\,\\text{K} = 253\\,\\text{K}$ and $p_2 = 100\\,\\text{kPa} \\cdot \\dfrac{253\\,\\text{K}}{400\\,\\text{K}} \\approx 63\\,\\text{kPa}$."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The pressure is smaller than $100\\,\\text{kPa}$ because the temperature is lower; the value is between the graph points $50\\,\\text{kPa}$ and $100\\,\\text{kPa}$, as is the temperature."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "math": "fy3-10",
+        "concept": "fy3-10"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s9",
+      "title": "Heated gas in a cylinder",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy3-11",
+        "fy3-10",
+        "fy3-15"
+      ],
+      "figure": "fy3-11/pv-isobaari",
+      "text": "Air is sealed in a cylinder whose other end is closed by a movable piston with weights on it. The weights keep the pressure of the gas constant. A student heats the gas slowly, and the gas expands. The pressure $p$ of the gas as a function of the volume $V$ is plotted in the graph. The temperature of the gas at the start was $20\\,{}^\\circ\\text{C}$. Assume that the gas is an ideal gas and that the amount of gas stays the same.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "How much work does the gas do as it expands?",
+          "answer": {
+            "value": 750.0,
+            "unit": "J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "From the graph the pressure is $250\\,\\text{kPa}$ and the volume grows from $1.0\\,\\textsf{l}$ to $4.0\\,\\textsf{l}$, so $\\Delta V = 3.0\\,\\textsf{l}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "At constant pressure the work of the gas is $W = p\\,\\Delta V$, the area of the rectangle between the graph and the $V$ axis."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$W = 250\\,\\text{kPa} \\cdot 3.0\\,\\textsf{l} = 750\\,\\text{J}$; two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "How many moles of gas are in the cylinder?",
+          "answer": {
+            "value": 0.1026,
+            "unit": "mol",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The ideal gas law is applied to the initial state: $pV = nRT$, so $n = \\dfrac{pV}{RT}$."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$$\n\\begin{aligned}\nn &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 1.0 \\cdot 10^{-3}\\,\\text{m}^3}{8.31\\,\\text{J/(mol K)} \\cdot 293\\,\\text{K}} \\\\\n&\\approx 0.10\\,\\text{mol}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The temperature in kelvins, $T = (20 + 273.15)\\,\\text{K}$, litres to cubic metres and kilopascals to pascals; two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the temperature of the gas at the end of the expansion?",
+          "answer": {
+            "value": 1172.6,
+            "unit": "K",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The amount of substance is constant, so the final state obeys $p V_2 = nRT_2$, giving $T_2 = \\dfrac{pV_2}{nR}$; the same result follows from $\\dfrac{V}{T}$ being constant."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$$\n\\begin{aligned}\nT_2 &= \\dfrac{250\\,000\\,\\text{Pa} \\cdot 4.0 \\cdot 10^{-3}\\,\\text{m}^3}{0.1026\\,\\text{mol} \\cdot 8.31\\,\\text{J/(mol K)}} \\\\\n&\\approx 1.2 \\cdot 10^{3}\\,\\text{K}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The volume quadrupled at constant pressure, so the kelvin temperature quadruples: $4 \\cdot 293\\,\\text{K} \\approx 1.2 \\cdot 10^{3}\\,\\text{K}$, about $900\\,{}^\\circ\\text{C}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "During the expansion the gas received heat $Q$ from its surroundings. Is $Q$ greater than, equal to or smaller than the work $W$ done by the gas? Justify.",
+          "criteria": [
+            {
+              "text": "States that the temperature of the gas rises, so its internal energy increases: $\\Delta U > 0$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Uses conservation of energy $Q = \\Delta U + W$ and concludes that the heat goes both to the work and to the increase in internal energy, so $Q > W$.",
+              "tag": "concept",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy3-11",
+        "math": "fy3-10",
+        "concept": "fy3-15"
       }
     }
   ]
