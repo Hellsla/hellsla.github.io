@@ -1,15 +1,18 @@
 VERDICT: PASS
 CONTENT-HASH: 2e5d53eab6b173d8
-SCOPE: delta kaava-step rewrite and paragraph splits, round 1
 ## Blocking
 
 ## Polish
+- content/fi/FY4/fy4-1/exercises/solutions.md (L3-04 Kaava) — the Kaava step is now long prose with three inline equations; the final form $t = \dfrac{x - x_0}{v}$ sits at the end of a sentence. Acceptable; a display row for $t$ would read more easily (presentation only).
 
 ## Checked
-- L2-06 Kaava: $x_{0\text{A}} + v_\text{A}t = x_{0\text{B}} + v_\text{B}t \Rightarrow (v_\text{A} - v_\text{B})t = x_{0\text{B}} - x_{0\text{A}}$. The algebra is right and ends in the unchanged $t$ formula. The derivation starts from the two motion equations and the meeting condition, as the house rule asks.
-- L3-04 Kaava: $x = k\,x_\text{ohj}$ and $v = k\,v_\text{ohj}$ follow from one scale factor for every length. Substituting $x_\text{ohj} = x_{0,\text{ohj}} + v_\text{ohj}t$ gives $x = x_0 + vt$ with $x_0 = k\,x_{0,\text{ohj}}$, and $t = (x - x_0)/v$ is right. It agrees with the substitution ($0{,}39\,\text{m}$, $0{,}80\,\text{m/s}$, $7{,}0\,\text{s}$). The new $x_0$ and $v$ are the lesson's symbols for the true values.
-- L3-05 Kaava: $x_{0\text{R}} + v_\text{R}t = v_\text{P}t - v_\text{P}t_0 \Rightarrow x_{0\text{R}} + v_\text{P}t_0 = (v_\text{P} - v_\text{R})t$. The algebra is right and the $t$ formula is unchanged.
-- The rest of the diff (L1-06 Mallivastaus, L3-04 and L3-05 Järkevyys, L1-09 option discussion) only splits paragraphs. Its words, numbers, signs and units are identical.
-- The caption marker removal in exercises.json changes no physics.
-- No number, answer, unit or tolerance changed, so answers.py needs no recomputation for this delta.
+- Delta only: L2-09, L3-04 and L3-05 Kaava steps rewritten; paragraph splits in L1-06 Mallivastaus, L3-04 and L3-05 Järkevyys and L1-09; caption marker removed from exercises.json. No number, answer, tolerance, task or id changed in the diff.
+- L2-09: $x_{0\text{A}} + v_\text{A}t = x_{0\text{B}} + v_\text{B}t \Rightarrow (v_\text{A}-v_\text{B})t = x_{0\text{B}}-x_{0\text{A}}$, gives the same $t$ formula as before; algebra right.
+- L3-04: $x = k\,x_\text{ohj}$, $x_\text{ohj} = x_{0,\text{ohj}} + v_\text{ohj}t$, so $x = x_0 + vt$ with $x_0 = k\,x_{0,\text{ohj}}$, $t = (x-x_0)/v$: right; matches the substitution row ($0{,}39\,\text{m}$, $0{,}80\,\text{m/s}$, $7{,}0\,\text{s}$).
+- L3-05: $x_{0\text{R}} + v_\text{R}t = v_\text{P}t - v_\text{P}t_0 \Rightarrow x_{0\text{R}} + v_\text{P}t_0 = (v_\text{P}-v_\text{R})t$: right; same final formula as the substitution.
+- Recomputed: L2-09 $t = 16/4 = 4{,}0\,\text{s}$; L3-04 $k = 1{,}25$, $t = (6{,}0 - 0{,}39)/0{,}80 \approx 7{,}0\,\text{s}$; L3-05 $t = 331/6{,}1 \approx 54\,\text{s}$, $x \approx 7{,}4\cdot10^2\,\text{m}$. All unchanged and consistent.
+- Each derivation starts from the basic equations (tasainen liike $x = x_0 + vt$, the meeting condition), simplifies symbolically to the end and substitutes into the last form, as the 8g rule asks.
+- Paragraph splits change no wording or physics; the Järkevyys checks remain real checks.
+- Notation as in the brief ($x_0$, $v$, $\Delta x$, subscripts A/B/R/P).
+- Capture opened: review/shots/fy4-1-open-exercises-L3-1280-5.png (L3-04 Kaava renders as derived, aligned).
 - Hash 2e5d53eab6b173d8 at start and end.

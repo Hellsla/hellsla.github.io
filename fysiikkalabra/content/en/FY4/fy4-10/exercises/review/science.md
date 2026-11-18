@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: da2c178e628d95c8
-SCOPE: delta added-exercise from 4c8ef47087644985 base abdc9e095e4f
+CONTENT-HASH: 54c02dd6d58ffcf6
 
 ## Blocking
 
 ## Polish
+- solutions.md:111 (L3-01) — the general $p = mv$ and $E_\text{k} = \tfrac12 mv^2$ reuse $m$, which in this task is the bullet's mass $10\,\text{g}$; and "$E_\text{k,start} + E_\text{p,start}$ equals …" writes the energy equation in words — write $E_\text{k,start} + E_\text{p,start} = E_\text{k,end} + E_\text{p,end}$ and the general laws with no clash (e.g. "for each body $p = mv$").
+- solutions.md:71 (L2-02 hockey) — "…; The kinetic energy changed…" starts with a capital after a semicolon — a full stop, or lower case.
 
 ## Checked
-- Hash identical at start and end (da2c178e628d95c8).
-- Added exercise L2-10 only, judged as in a full review.
-- Default values and readings (0.50 kg, 1.00 m/s; 1.50 kg, −0.50 m/s; after: −1.25 and 0.25; −0.69 and 0.06; −0.13 m/s; 0.44 J) and the English control names (Explore 1D, Values, Kinetic Energy, More Data, Reflecting Border, Elasticity) agree with the coordinator's record; version and date stated.
-- My own collision model (momentum conservation with the restitution of the relative velocity) reproduces the readings: 100 % −1.25 and 0.25 m/s; 50 % −0.6875 and 0.0625 m/s; 0 % −0.125 m/s.
-- Recomputed: $p = -0.25\,\text{kg}\cdot\text{m/s}$ before and after; $E_\text{k} = 0.4375\,\text{J}$ before and at 100 %; from the shown values at 50 % $p' = -0.255$, $E_\text{k}' = 0.1217\,\text{J}$; at 0 % $p' = -0.26$, $E_\text{k}' = 0.0169\,\text{J}$; losses 72 % and 96 %; momentum changes $\mp 1.125\,\text{kg}\cdot\text{m/s}$.
-- The −0.26 against −0.25 is explained as display rounding with the exact −0.125 m/s: right.
-- The solution gives the method first and says the numbers depend on the student's values; the example is dated, so no moving number is the only right one.
-- Part d: third-law forces for the same time, equal and opposite impulses, condition "no external force along the track" stated; kinetic energy goes to internal energy and sound, total energy conserved. Correct, no "heat" wording.
-- Terms elastic and perfectly inelastic collision tied to 100 % and 0 %.
+- Hash 54c02dd6d58ffcf6 at start and end; only solutions.md changed; no number, answer, tolerance, task or id changed.
+- Captures: none opened; judged from the text and the packet's diff.
+- Every momentum task now opens with $p_\text{before} = p_\text{after}$ and $p = mv$, then the combined equation, then the symbolic solution; each derived form follows from the one before and matches the substitution.
+- L1-01 total momentum: $p = mv$ summed over the parts, correct.
+- L1-08 billiard: momentum and energy equations, $m$ cancels, squaring gives $v_1' v_2' = 0$; rejecting $v_2' = 0$ because the ball cannot pass through the target is right.
+- Energy losses (L2-02 hockey, L3-06 gliders): $\Delta E = E_\text{k,before} - E_\text{k,after}$ with $E_\text{k} = \tfrac12 mv^2$ stated first, correct.
+- L3-01 pendulum: momentum across the collision, mechanical energy only in the swing; $h = v'^2/(2g)$ correct.
+- L3-04 traffic: $E_\text{k} = W$, $W = F_\mu s$, $F_\mu = \mu N$, $N = (m_\text{A} + m_\text{B})g$ gives $v' = \sqrt{2\mu g s}$, then momentum; order and conditions right.
+- L3-05: $\Sigma F = ma$ with only friction horizontal; $F_\mu = (m_\text{A} + m_\text{B})|a|$; momentum with $v_\text{B} = 0$.
+- L3-03 astronaut: $v = s/t$ added for the uniform motion; sign convention unchanged and right.
+- Paragraph splits move no claim and drop no condition.

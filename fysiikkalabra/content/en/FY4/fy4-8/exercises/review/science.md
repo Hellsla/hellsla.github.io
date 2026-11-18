@@ -1,20 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 98be4db96580125c
-
+VERDICT: FAIL
+CONTENT-HASH: 42433b757b13505f
 ## Blocking
+- content/en/FY4/fy4-8/exercises/solutions.md:65, 87, 145, 198 — the new Formula labels call $E_{\text{k}0} + W = E_\text{k}$ (and $W = \Delta E_\text{k}$) the "Work–energy principle", but the chapter calls that law the **work principle** (lesson "work principle :: $E_{\text{k}0} + W = E_\text{k}$") and keeps "work–energy principle" for $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$; the same name now stands for two different equations — label these "Work principle:" (the Finnish has Työperiaate).
+- content/en/FY4/fy4-8/exercises/solutions.md:77, 99, 111, 183, 212, 273 — the new label "Energy principle:" names $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$ differently from the lesson ("work–energy principle of mechanics") and from these tasks' own Principle lines (e.g. 74, 96, 108: "so we use the work–energy principle") — label them "Work–energy principle:" (Finnish Energiaperiaate).
 
 ## Polish
-- content/en/FY4/fy4-8/exercises/solutions.md:149 (L2-05) — the substitution shows $19.5 : 2 = 9.77$, but $19.5 : 2 = 9.75$; the unrounded slope $5.86 : 0.30 = 19.53$ gives $9.77$ — write $19.53\,\text{m/s}^2$ in the substitution.
-- solutions.md:276 (L2-10 a) — $1500\,\text{kg}$ has four significant figures and the speeds are exact, so "three figures do not promise too much" is true but not the usual rule; either give four or say three suffice for the comparison.
+- content/en/FY4/fy4-8/exercises/solutions.md:290 — older text, same mix-up: "the work–energy principle $E_{\text{k}0} + W = E_\text{k}$" — "the work principle" (fix together with the labels above).
 
 ## Checked
-- Hash identical at start and end (98be4db96580125c).
-- git diff since the version passed: solutions.md L2-10 Answer only; the d) paragraph moved first, a) now begins "In addition:"; no number, formula or other word changed. exercises.json and answers.py unchanged.
-- First line of the answer step, $s \approx 0.26\,\text{m}$, matches `answer` 0.26 (tolerance 0.05); every other part's result still present in order a, b, c, e.
-- All 20 numeric answers recomputed in one script with my own formulas (energy conservation, work–energy principle, least-squares lines through the origin for L2-05 and L2-07): equal to answers.py and inside every tolerance.
-- L2-10 a: 52 083 J, 144 676 J, 468 750 J; b: ratio 9.00; d: $F = 29\,430\,\text{N}$, $E_{\text{k}0} = 7716\,\text{J}$, $s = 0.2622\,\text{m}$; e: 7.7 kN and 154 kN, twenty-fold; $a = 37.5\,g$; 12 000 kg at 100 km/h for the same distance.
-- L2-10 source: quotation, 50 km/h / 80 kg / "3 000 kg", 12 000 kg, pedestrians above 60 km/h agree with the coordinator's verified record; link dated.
-- L2-10 model: kg-as-force interpretation and constant force stated in the task; stopping force as net force justified; mean-force limit said.
-- L2-10 c: deformation, internal energy, then transfer to the surroundings as heat; no "turns into heat".
-- Significant figures: 80 kg two (trailing zero counts) → 0.26 m.
-- Multiple choice L1-06, L1-08 and statements L1-09: one correct option each, distractors really wrong, feedback right.
+- Captures opened: none (text and formula changes only; judged from the files and the packet).
+- Physics of every rewritten Formula step is right: conservation tasks start from $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$ with the zero level named, the mass cancels, $v = \sqrt{2gh}$, $h = v^2/(2g)$, $v_2 = \sqrt{v_1^2 + 2gh}$, $h = (E_{\text{k}0} - E_\text{k})/(mg)$.
+- Friction and resistance: $W = -F_\mu s$ or $-F_\text{res}s$ against the motion; $s = mv_1^2/(2F_\mu)$, $F_\text{res} = [\tfrac{m}{2}(v_1^2 - v_2^2) + mgh]/s$, $h_2 = h_1 + v_1^2/(2g) - F_\text{res}s/(mg)$, snowboarder $F = mgh/(L + s_\text{mean})$ and $v = \sqrt{2(mgh - FL)/m}$: correct.
+- Lift at constant speed $W = mgh$; stick $v_2 = \sqrt{2Fs/m}$; data lines $g = k/2$ and $F_\mu = m/(2k)$; bounce shares $r_n = h_{n+1}/h_n$.
+- Substitutions, answers and significant figures unchanged; paragraph splits change no claim.
+- answers.py run: every numeric answer agrees with exercises.json within rounding; answers, units and tolerances identical to content/fi; git diff origin/main touches no task text, answer, unit, tolerance, id or answers.py.

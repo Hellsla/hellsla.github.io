@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: af8705ea9b13dc3c
-SCOPE: delta added-exercise from 070b5689fcb10cb3 base abdc9e095e4f
+CONTENT-HASH: e42850bb00939229
 
 ## Blocking
 
 ## Polish
-- exercises.json (L2-09, text) — "about $5\,\text{min}$": the coordinator's record gives only 3–5 minutes for the series and the video itself was not watched — "a few minutes" would promise nothing unverified.
+- solutions.md:120 (L3-03) — "$F\,\Delta t = m\,|v - v_0|$" puts a signed force against a magnitude — write "$|F|\,\Delta t = m\,|v - v_0|$" or "the magnitude of the force is".
+- solutions.md:108 (L3-02) — "$F\,\Delta t = mv_0 - 0$" has the sign of $\Delta p = 0 - mv_0$ turned without saying so (pre-existing, not new) — add "in magnitude" as in L2-01 and L2-06.
 
 ## Checked
-- Hash identical at start and end (af8705ea9b13dc3c).
-- Added exercise L2-09 only, judged as in a full review.
-- Part a: a scale measures the supporting force; in free fall with the station the reading is zero while mass and gravity remain. Correct.
-- Part b: stated source facts (SLAMMD, known force on an astronaut attached to the arm, mass from the acceleration with Newton's second law) agree with the coordinator's record; no scene of the video is described; the student is told to compare with the video.
-- $m = F/a$ and $m = F\,\Delta t/\Delta v$ shown as the same law; the condition (the push is the only significant force along the motion, so it is the net force) is stated.
-- Part c recomputed: $20.0 \cdot 0.50 / 0.125 = 80\,\text{kg}$ ($a = 0.25\,\text{m/s}^2$, $F/a = 80\,\text{kg}$); second method $10.0 \cdot 0.40 / 0.050 = 80\,\text{kg}$ from the third law and equal impulses, no later-chapter law needed. Numbers labelled as example values, not measured data.
-- Part d recomputed: $\Delta v = 0.130\,\text{m/s}$ is 4 % too large, $m = 76.9 \to 77\,\text{kg}$, 3.8 % too small; random and systematic error kept apart.
-- Written task, string answer, no numeric field; scope inside FY4 (Newton's laws, impulse).
+- Hash e42850bb00939229 at start and end; only solutions.md changed, no number, answer, tolerance, task or id changed.
+- Captures: none opened; judged from the text and the packet's diff.
+- L2-01, L2-02, L2-04, L3-02, L2-05, L2-06: the Kaava step now starts from $I = \Delta p$, $I = F\,\Delta t$, $p = mv$ and solves symbolically; each derived formula follows.
+- L3-01, L2-07, L3-04: impulse as area first, then $I = \Delta p$; L3-04 adds $F_\text{avg} = I/\Delta t$ for part c, consistent with the substitution.
+- L3-03: $\Delta F = F_\text{r} - F_\text{c}$ with symbols named; $m(v_0 + v_\text{r})/\Delta t - mv_0/\Delta t = mv_\text{r}/\Delta t$ correct.
+- L3-05: $v = v_0 + at$, $a = -g$ (up positive): $v_1 = -g t_\text{fall}$ from rest, $0 = v_2 - g t_\text{rise}$; $\Sigma F = N_\text{avg} - mg$; final form unchanged and right.
+- L1-07: $I = \Delta p = mv - mv_0$ right.
+- Paragraph splits (L1-06, L1-09, L2-06, L3-04, L3-05, L2-09) move no claim and drop no reason; the run-together formulas in the packet diff are diff rendering only (file lines 230–236 are separate).
+- Substitutions still match the last symbolic forms; answers recomputed earlier stand (no value changed).
