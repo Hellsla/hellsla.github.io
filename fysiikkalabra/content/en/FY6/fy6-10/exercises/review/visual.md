@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 21672faf3c60a0f2
+CONTENT-HASH: e4698eb90a6f28b3
+SCOPE: delta wording from 21672faf3c60a0f2 base 205dde902d
+Delta: one feedback sentence in exercises.json and one sentence in solutions.md (task 10-6), wording only.
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md, the "Answer ... ball charge doubled" task — "The product of the charges doubles ..." follows the previous paragraph with no blank line, so the paragraph gap is missing there; add a blank line.
+- none
 
 ## Checked
-- Delta: solutions.md paragraph breaks only. Opened fy6-10-open-exercises-L3-1280-5 (10-23, Principle in four short paragraphs), plus the changed-text diff for every task.
-- Breaks fall at sentence boundaries, one thing per paragraph, no one-word paragraph, spacing inside the solution card even, nothing clipped, formulas and units unchanged.
-- 390 px captures not opened separately.
+- Diff of exercises.json and solutions.md: "turned into anything else" and "charge disappearing ... is conserved" read naturally and are consistent with each other and the glossary.
+- Opened fy6-10-open-exercises-1280-6 (task 10-6, options, feedback and solution card): layout intact, nothing clipped; formulas and units untouched.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
