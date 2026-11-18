@@ -27,7 +27,7 @@ A link to a guide this language has not published is shown as plain text, never 
 """
 import hashlib, importlib.util, json, re, sys, pathlib, html as _h
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n
+import courses, i18n, mathlayout
 
 ROOT = courses.ROOT
 DIR = "tvt"
@@ -138,8 +138,9 @@ def render(gid, lang, T, md, published, users):
     """(body html, toc html) of a guide page. md renders markdown with maths; published: the page names this language
     built; users: [(investigation id, title)] of the published investigations that name this guide."""
     d = load(gid, lang)
-    text = inline_links((folder(gid, lang) / "guide.md").read_text(), published, lang)
+    text = mathlayout.list_chains(inline_links((folder(gid, lang) / "guide.md").read_text(), published, lang))   # a long calculation in a step: rows of its own
     html = re.sub(r"<p>\s*(<figure\b.*?</figure>)\s*</p>", r"\1", md(text), flags=re.S)   # a figure is no paragraph
+    html = re.sub(r'<p>\s*(<div class="eq-chain".*?</div></div>)\s*</p>', r"\1", html, flags=re.S)
     sections = re.split(r"(?=<h2>)", html)
     intro, rest = sections[0], sections[1:]
     def anchor(h): return re.sub(r"[^a-z0-9äö]+", "-", h.lower()).strip("-").replace("ä", "a").replace("ö", "o")
