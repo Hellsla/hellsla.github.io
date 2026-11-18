@@ -1,18 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: ce624321f2f924f1
-SCOPE: delta: round 2, the fixes of round 1 in s7 (Jousen kalibrointi) and s8 (Pudotettu teräskuula videolla); only changed passages and 360 px layout
-Round 2: delta against the version round 1 reviewed (fix round 1).
+VERDICT: PASS
+CONTENT-HASH: ce981cbb7ceb9e3a
+SCOPE: delta: round 3, the fix of round 2 in s7 (Jousen kalibrointi) c criterion `calculation`; s8 grading panel re-checked; 360 px
+Round 3: delta against the version round 2 reviewed (fix round 2).
 
 ## Blocking
-- [Major] sovella/tasks.json (fi-easy), s7 c, criterion `calculation` — the formula is written with literal backslash-n sequences (`$$\\n\\begin{aligned}\\nx &= \\dfrac{4{,}5...`), so KaTeX shows a red error "\nx = 4,5 N / 30,0 N/m …" in the grading panel instead of three aligned rows — the model calculation is unreadable — use real line breaks (single `\n` in JSON, as in s2 b / s3 e / s6 c). Same defect in the fi and en files.
+(none) The round-2 Major (literal backslash-n in the s7 c formula, red KaTeX error) is fixed in the fi-easy file: real newlines, three aligned rows render.
 
 ## Polish
 - [Minor] s7/s8 Sijoitus boxes end in ";" or ","; same as older tasks, optional.
 
 ## Checked
-- Round-1 polish items verified in fi-easy solutions.md and tasks.json: s8 c Vertailu has the quantities in both rows; the time-scale chain is its own block with named rows; s8 b says "ympyröidyt" points; results rounded to the data (30,0 ± 1,2; 10,35 ± 0,15); short sentences, one idea each, same numbers as the Finnish text ("Ero on 0,54 : 0,147 ≈ 3,7-kertainen").
-- Own headless-Chrome render at 360 px of s7 and s8 (fi-easy): cards, figures, parts clean, no clipping or overflow. The s7 grading panel is shared with the Finnish render, where the `\n` error appears; the s8 panel checked from source.
-- Intro read from tasks.json (short sentences, eight tasks, two with a graph): true.
+- Rebuilt fy9-mittaaminen and rendered preview/fi-easy/fy9-mittaaminen.html in headless Chrome at 360 px with every details element open (s7 and s8 grading panels included): 0 `katex-error` elements, 375 formulas rendered; 0 errors without opening too.
+- DOM of the s7 c block read: `x &= \dfrac{4{,}5\,\text{N}}{30{,}0\,\text{N/m}}` etc. present, no raw `\n` text. Hash re-run: ce981cbb7ceb9e3a.
+- Round-2 card and figure checks stand; only JSON line breaks changed.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

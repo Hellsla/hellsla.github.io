@@ -1,18 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 0ca9f52c9bb8edae
-SCOPE: delta: round 2, the fixes of round 1 in fy9-mittaaminen-s7 and -s8 (s8 solutions, rubric, answers.py, the s8-kuvaaja model graph); older tasks s1-s6 untouched (not re-judged).
-Round 2: delta against the version round 1 reviewed (fix round 1).
+VERDICT: PASS
+CONTENT-HASH: 81de44efc34be42b
+SCOPE: delta: round 3, the fixes of round 2 in fy9-mittaaminen-s7 and -s8 (s8 a rubric criterion 5, s7 c formula rows); older tasks s1-s6 untouched (not re-judged).
+Round 3: delta against the version round 2 reviewed (fix round 2).
 
 ## Blocking
-1. **A, s8 a, round-1 item 2 is fixed only in the solution.** The model answer now says what is true: the constant term is small, about the size of the reading uncertainty, and does not affect the slope. But the 5th rubric criterion of a (tasks.json, the criterion tagged `graph`) still gives a point for "Suoran vakiotermi on noin $0{,}01\,\text{m}$, ja se on lukemisen epävarmuuden suuruinen, joten se ei ole merkitsevä." My script checked every line that passes through all the $\pm 0{,}01\,\text{m}$ bars. Each one crosses the $s$ axis between $+0{,}0033$ and $+0{,}012\,\text{m}$. So the data do not show that the constant term is insignificant. The rubric now also contradicts the model answer. Reword the criterion to match the model answer, for example: "Vakiotermi (noin $0{,}01\,\text{m}$) on pieni, lukemisen epävarmuuden suuruinen, eikä vaikuta kulmakertoimeen, koska suoraa ei ole pakotettu origon kautta."
+None.
 
 ## Polish
-- s8 c: the interval $10{,}19\ldots10{,}48\,\text{m/s}^2$ comes from the limiting lines ($2 \cdot 5{,}094$, $2 \cdot 5{,}242$), while the stated result $10{,}35 \pm 0{,}15$ gives $10{,}20\ldots10{,}50$. Either is correct. One sentence saying which one is used would prevent confusion.
+- s8 a, criterion 5 now gives the range of the axis crossing ($+0{,}003\ldots{+}0{,}012\,\text{m}$) and says no line through the origin fits. This is correct, but the model answer (solutions.md row 812) does not show it. A grader should give the point for "small, about the size of the reading uncertainty, does not affect the slope" without the range. Either add the sentence to the model answer or mark the range as extra information.
+- s7 c, rubric detail 3: $\tfrac{1{,}2}{30{,}0} \approx 4{,}1\,\%$ is arithmetically $4{,}0\,\%$. The solution uses $\tfrac{1{,}22}{30{,}0} = 4{,}07\,\%$. Write $1{,}22$ in the rubric too. The result $\pm 0{,}6\,\text{cm}$ does not change.
+- Carried from round 2: s8 c, the interval $10{,}19\ldots10{,}48$ versus $10{,}35 \pm 0{,}15$. Both are defensible.
 
 ## Checked
-- Round-1 item 1 is fixed in the solution c, in the rubric `error_sources` detail and in answers.py `c-tscale` ($\sqrt{g/9{,}81}$): a real frame interval of $0{,}0514\,\text{s}$, about $2{,}7\,\%$ longer than assumed, so the frame rate is lower than nominal. The direction is right: $g = 2s/t^2$, and times that are underestimated make $g$ too large.
-- The round-1 polish items are fixed: the chain uses $2 \cdot 5{,}177 = 10{,}35$, and "pituuskaava" no longer appears.
-- My script (scratchpad s8r2.py) recomputed from the data: least-squares slope $5{,}175$, intercept $0{,}0100\,\text{m}$ and largest residual $0{,}008\,\text{m}$ (matches "enintään noin $0{,}008$"). The read slope is $5{,}177$, the limiting slopes $5{,}094$/$5{,}242$, $\Delta g = 0{,}147$, the difference $0{,}54$ ($5{,}5\,\%$, $3{,}7\Delta g$) and the interval $0{,}0514\,\text{s}$ ($2{,}7\,\%$). All agree with the text and answers.py.
-- Precision: $10{,}35 \pm 0{,}15$ (two digits because the first digit of the uncertainty is 1) and $0{,}83\,\text{m}$ in the check are consistent with the data. The task text names no $t^2$ and does not reveal the structure. Calculation chains are in aligned rows. The unit fields are `N/m`, `cm`, `m/s^2`: language-neutral.
-- The alt text of s8-kuvaaja (slope $5{,}18$, intercept about $0{,}01\,\text{m}$, circled points) matches the solution.
-- `practice.py check` OK (8 tasks, 116 points). The hash is the same at the start and the end.
+- Round-2 item 1 is fixed. In tasks.json, s8 a criterion 5 no longer says "ei ole merkitsevä". It now says the constant term is small, that every line through all the $\pm 0{,}01\,\text{m}$ bars crosses the $s$ axis at $+0{,}003\ldots{+}0{,}012\,\text{m}$ (I recomputed $+0{,}0033\ldots{+}0{,}012$ in scratchpad s8r2.py, so the rounding is right), and that it does not affect the slope because the line is not forced through the origin. The criterion agrees with the model answer.
+- s7 c: the substitution chain in rubric detail 2 is now a real `aligned` block with newlines and aligned rows ($4{,}5/30{,}0 = 0{,}150\,\text{m} = 15{,}0\,\text{cm}$). It is the same chain as in the solution. Recomputed: $\Delta k = (31{,}27 - 28{,}83)/2 = 1{,}22$, $\Delta x = 0{,}61\,\text{cm}$, $x_\text{min}$/$x_\text{max}$ $14{,}4$/$15{,}6\,\text{cm}$.
+- s7 b, detail: "forcing through the origin is justified here, but not when the constant term stands out" is correct physics.
+- s8 recomputation is unchanged from round 2: slope $5{,}175$/$5{,}177$, bounds $5{,}094$/$5{,}242$, $g = 10{,}35 \pm 0{,}15$, $0{,}0514\,\text{s}$.
+- `practice.py check`: OK (8 tasks, 116 points). The hash is $81de44efc34be42b$ at the start and at the end.
