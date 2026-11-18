@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: daea67607c8150ac
+CONTENT-HASH: 6ff1dcd6c1f24b76
 
 ## Blocking
 (none)
@@ -11,7 +11,10 @@ CONTENT-HASH: daea67607c8150ac
 - [Minor] Mittaa, text after the signal figure — one 50-word paragraph explains why the onset beats the peak but sits after the figure, apart from the sentence about reading the time — acceptable; keep it adjacent.
 - [Minor] hero (fig 1) — the thermometer floats beside the wall without a mount, and the wavefront arcs are very faint at 390 px — thicken the arcs slightly.
 
-## Checked (delta 2026-11-16, redone)
+## Checked
+- Delta 2026-11-18: Mittaa table headers $(t_2-t_1)_k$, $\overline{t_2-t_1}$ and the added sentence. Opened page-390-6: headers fit, no mid-word break, the added sentence explains subscript and last column; table renders as a stacked card at 390 px, nothing clipped.
+
+## Earlier checked (delta 2026-11-16, redone)
 - Changed: units `\,`, Mittaa table headers 'mittaus 1/2/3', `0\,{}^\circ\text{C}` (earlier KaTeX parse error fixed). Opened page-390-9 (Johtopäätökset box: $v_0 \approx 331\,\text{m/s}$, $T_0 = 273{,}15\,\text{K}$, $0\,^\circ\text{C}$ render with thin spaces, no red error), page-390-6 (table headers), page-390-10 and -11. Pixel scan of all 22 page captures: no red error text. Figure findings above are the redraw queue, not Blocking.
 
 ## Scores
