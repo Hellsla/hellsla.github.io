@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f6246ca290795a6d
-SCOPE: delta added-exercise from 9e2cfdfc78467a9e base 110ed2029320
+CONTENT-HASH: 35eb2ff6a77795e8
+SCOPE: delta round 2, solutions.md fy8-16-L3-06 only (answer line and the v = cz remark)
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy8-16-L3-06 Vastaus — the boxed value reads "4,2 · 10^2 Mpc" (two figures) while the sentence says three significant figures; show "4,16 · 10^2 Mpc" (or "noin 416 Mpc" in the box) to match the answer 416,4 and the text.
-- solutions.md fy8-16-L3-06 c) — the second half (why v = cz fails at large z) rests on one example (z = 3 gives 3c); add one clause that the approximation comes from small shifts, so a student sees why it breaks down rather than only that it can exceed c.
+- solutions.md L3-06 Vastaus: the box says "4,2 · 10^2 Mpc eli noin 416 Mpc". The two-figure rule is now explained, but the working line above shows 416,4 Mpc. Consider writing the working line as "≈ 4,2 · 10^2 Mpc (416 Mpc)" so the student sees where the rounding happens.
+- solutions.md L3-06 Järkevyys: 416,4 is checked by multiplication back. After the rounding rule, "kolme numeroa" in the neighbouring text no longer appears, so nothing is inconsistent; no action needed beyond the line above.
 
 ## Checked
-- L2-09 (level 2): three linked steps (z, then v = cz, then d = v/H0 with H0 read from the figure) plus a conversion-free unit chain; fits level 2 and does not repeat the worked example (which goes z, v, H0 from a known d) or L2-05 (fitting H0 from table data): here H0 is read and used as a distance indicator.
-- L2-09: the figure is needed (H0 comes only from the line and its grid point); the figure description gives the grid point without the answer 146,8 Mpc. Parts a to c in order, question last, answer field named for c).
-- L2-09 solution: all seven parts present, symbolic d = cz/H0 before numbers, reasonableness check against neighbouring points 120 and 160 Mpc is a good one.
-- L3-06 (level 3): graph reading, extrapolation outside the data and a justified evaluation of model limits; reasoning and model kinds are genuine, so the level is justified although the arithmetic is light. Fits the slot goal (Hubble law and its limits) and adds the one idea the set lacked: extrapolation and the small-z validity limit.
-- L3-06: the task text states the z < 0,10 limit and the axis end, so no trap; the checks (z = 0,070 at the top of the figure, 416 Mpc beyond the 300 Mpc axis) are consistent. Part c) is observable: uncertainty from extrapolating 1,5 times beyond the data, plus v > c absurdity.
-- Set mix: L2 now has two figure tasks (L2-05, L2-09) and L3 has L3-04 data plus L3-06 graph; no duplication, progression within each level sound.
-- Finnish: wording, "megaparsekeina", "punasiirtymä", case endings after number+unit read correctly; no errors found.
-- Captures viewed: fy8-16-open-exercises-L2-1280-13.png (end of L2-09 solution) and fy8-16-open-exercises-L3-1280-10.png (end of L3-06 solution); nothing clipped. I did not open the 360 px or figure captures.
+- The sig-fig sentence is now correct and teaches: the speed 0,10 c has two figures, H0 has three, so the result has two. It repairs the earlier mismatch (my round 1 polish).
+- The v = cz remark now names the limit z < 0,1 and calls z = 3,00 giving 3,00 c "a sign that the approximation no longer applies". This is a better explanation than "impossible speed", and it matches the lesson (the equation does not hold at large z).
+- The rest of L3-06 and L2-09 are unchanged since my PASS; their figure (hubble-t, H0 = 72 from the grid point 250 Mpc, 18 000 km/s) and its description are unchanged, and the description does not give the answer.
+- Finnish: "Kaksi merkitsevää numeroa b)-kohdassa", "pienen punasiirtymän (z < 0,10) likiarvo" read correctly.
+- Captures: none opened this round (text-only change, no layout effect; the round 1 captures L2-1280-13 and L3-1280-10 were fine).
