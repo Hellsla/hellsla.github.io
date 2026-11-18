@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ebe800111c50a61e
-Mode: delta (one changed sentence in Kosteus ja polttoaineen laatu)
+CONTENT-HASH: f580794a34c9dd43
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- inquiry.json line 87, feedback of the "Polttopuun luku on suurempi" option: the full stop after $22\,\text{MJ/kg}$ was lost, so "…$22\,\text{MJ/kg}$ Se on suurempi…" runs two sentences together; restore "$22\,\text{MJ/kg}$. Se on suurempi kuin puun $15\,\text{MJ/kg}$."
 
 ## Checked
-- The sentence now gives dry wood as 16,2 MJ/kg (MAFY) instead of 19; it is above the table's air-dry 15 MJ/kg, so the point "drier wood gives more" holds and the sentence no longer contradicts the table.
-- No other text (figures, inquiry, example) uses the old 19 MJ/kg value.
+batch delta review: lesson.md change is presentation only (md-paragraphs, teacher-approved figures); the one wording diff is the feedback above, which still repairs the misconception (food is chemical energy storage, units converted).

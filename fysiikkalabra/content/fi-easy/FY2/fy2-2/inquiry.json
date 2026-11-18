@@ -244,7 +244,7 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija muuntaa energian $2{,}5\\,\\text{kJ}$ jouleiksi. Hän kirjoittaa $2{,}5\\,\\text{kJ} = 2{,}5 : 1000\\,\\text{J} = 0{,}0025\\,\\text{J}$. Missä on virhe?",
+      "prompt": "Opiskelija muuntaa energian $2{,}5\\,\\text{kJ}$ jouleiksi. Hän kirjoittaa $$\n\\begin{aligned}\n2{,}5\\,\\text{kJ} &= 2{,}5 : 1000\\,\\text{J} \\\\\n&= 0{,}0025\\,\\text{J}\n\\end{aligned}\n$$ Missä on virhe?",
       "choices": [
         {
           "text": "Kilojoule on tuhat joulea, joten oikein on $2{,}5 \\cdot 1000\\,\\text{J} = 2500\\,\\text{J}$.",
