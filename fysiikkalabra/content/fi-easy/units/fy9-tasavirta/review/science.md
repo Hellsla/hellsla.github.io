@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 9298f8fbb6e98905
-SCOPE: delta (round 2) (fi-easy): new tasks fy9-tasavirta-s7 and s8 and the changed intro of the Sovella set; s1-s6 not re-judged. Unit hash unchanged start to end.
+CONTENT-HASH: 3b9eee5b55139e4f
+SCOPE: delta: fi-easy diff since 49ba8f9 (new tasks fy9-tasavirta-s7 lamp characteristic with a series resistor and s8 mixed circuit in sovella/tasks.json and solutions.md, intro "kahdeksan"); fidelity of s7/s8 to fi; s1-s6 not re-judged.
 
 ## Blocking
-(none) Round-1 blocking item verified fixed: s7 task text now states "Pariston sisäinen resistanssi ja johtojen resistanssi jätetään huomiotta" (fi-easy), so E = 4,0 V terminal voltage and P = EI are valid; s8 d solution now has a Kaava line (Formula/Kaava) and the Periaate carries the prediction.
+(none)
 
 ## Polish
-- s7 c Annettu/Periaate does not itself name the neglected internal resistance (the task text does); one phrase would make the model answer self-contained.
-- s8 d: P60' = 1,35 W is three figures where the data carry two (1,4 W); ratio 2,25 given as 2,3 is right.
-- s8 symbols put R3 in series, reverse of fy6-4 figure convention; harmless.
+(none)
 
 ## Checked
-- Recomputed independently: s7 R(2,0 V) = 2,0/0,21 = 9,5 ohm (9,1 to 10 over 0,22 to 0,20 A, inside 6 % tolerance); R(3,0 V) = 3,0/0,25 = 12 ohm, ratio 1,26; U_R = 1,0 V, R = 4,0 ohm, check 16 - 12 ohm; PL 0,75 W, PR 0,25 W, P 1,0 W, 75 %.
-- s8: Rp = 20 ohm, R = 40 ohm, I = 0,30 A, bounds 0,60 and 0,11 A, Up = 6,0 V, 0,10 and 0,20 A, 1,8 + 0,60 + 1,2 = 3,6 W; d: 80 ohm, 0,15 A, 9,0 V, 1,35 W, x2,25; prediction correct (current falls, 20 ohm drop falls, 60 ohm voltage and power rise).
-- Physics of b (hot filament, lattice vibrations, non-ohmic) correct; slope is not resistance distractor valid; no MAFY constants needed; FY6 scope; data labelled invented; FY9 wording rules met; en and fi-easy faithful to fi (numbers, assumption sentence, answers identical).
+- Recomputed in one script. The lamp curve comes from the figure model (lessons/FY6/fy6-3 lamp_I, RK 1, RN 12, UN 3): I(2,0 V) = 0,208 A, I(3,0 V) = 0,25 A.
+  - s7: a R = 9,6 Ω from the exact curve; the key 9,5 Ω with 6 % tolerance admits readings of 0,20 to 0,22 A (10 and 9,1 Ω). b R = 12 Ω. c series R = (4,0 - 3,0)/0,25 = 4,0 Ω (check 16 - 12). d 0,75 W, 0,25 W and 1,0 W, which gives 75 %.
+  - s8: a Rp = 20 Ω, R = 40 Ω, I = 0,30 A (bounds 0,60 A and 0,11 A). b Up = 6,0 V, so 0,10 A and 0,20 A. c 1,8 W and 3,6 W, which equal 1,8 + 0,60 + 1,2 W. d 80 Ω, 0,15 A and 9,0 V give 1,35 W (2,25 times 0,60 W).
+  - All keys are within tolerance.
+- Figure fy6-4 siirto-mixed: 20 Ω in series with 60 Ω || 30 Ω on 12 V, as the solution reads it.
+- Physics: R = U/I at a point, and not the slope. The lamp's resistance grows as the filament heats, so it does not follow Ohm's law. The series connection is justified and a parallel one rejected. Kirchhoff's voltage law is used, and P = UI = RI² = U²/R. The internal resistance and wire resistance are stated as neglected. s8 d keeps two things apart: the battery current falls, yet the 60 Ω power rises. All of this is in FY6 scope.
+- Significant figures follow the readings and data.
+- Rubrics: s7 4+3+5+4 and s8 5+5+4+4. The criteria match the parts and solutions. "Hyväksytään myös" covers the total-resistance route, 1/Rp, RI² and UI.
+- Fidelity to fi: ids, figures, points, criteria, answers, tolerances and every number in tasks and solutions are identical (compared with a script).
+- Intro: eight tasks, matching the set.
+- The hash was the same at start and end.
