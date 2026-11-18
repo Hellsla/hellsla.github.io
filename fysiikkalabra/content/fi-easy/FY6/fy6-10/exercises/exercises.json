@@ -69,7 +69,7 @@
         },
         {
           "text": "Villa on positiivinen mutta vähemmän varautunut, koska osa varauksesta muuttui lämmöksi.",
-          "feedback": "Varaus ei muutu lämmöksi eikä katoa. Varaus säilyy: eristetyn systeemin kokonaisvaraus pysyy samana. Villan varaus on siis yhtä suuri kuin sauvan varaus."
+          "feedback": "Varaus ei katoa eikä synny tyhjästä. Varaus säilyy: eristetyn systeemin kokonaisvaraus pysyy samana. Villan varaus on siis yhtä suuri kuin sauvan varaus."
         }
       ]
     },
