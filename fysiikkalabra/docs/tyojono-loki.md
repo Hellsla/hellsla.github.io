@@ -413,7 +413,7 @@ lang-tekstejä tai fysiikkaa.
 - **PR 4b: Varattu: claude/sim-ui-pr4b-tarttuva-kaikki** yleistys: tarttuva kuva kaikkiin simulaatioihin puhelimella;
   korkeusraja 45 % ikkunasta vaihepalkin alla (opettaja 2026-11-17; 390 px:llä 48/96 tarttuu, korkeammat kuten fy7-4
   pysyvät paikallaan; `inquiry.SIM_STICK_SHARE`, `docs/audits/2026-11-16-sim-pr4b-tarttuva-kaikki/`).
-- **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
+- **PR 5 (tehty, #711)** canvasin nimi (kortin otsikko ja luvun nimi, ei uutta tekstiä) ja kuvaus (lukema, `aria-describedby`), valintaruudut 40 px:n kohteiksi, näkyvä kohdistus (`sim-embed.js`, `site.css`; kaappaukset `docs/audits/2026-11-18-sim-pr5-saavutettavuus/`).
 
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
 fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
