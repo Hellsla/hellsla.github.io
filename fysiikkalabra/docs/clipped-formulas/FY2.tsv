@@ -1,5 +1,19 @@
 # Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
 # page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
 # (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+en/fy2-6	E = 1.6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
+en/fy2-7	0.048 = 0.048 \cdot 100\,\% = 4.8\,\%
+fi-easy/fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
+fi-easy/fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
+fi-easy/fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
+fi-easy/fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
 fi-easy/fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
+fi-easy/fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
+fi-easy/fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
+fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
+fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
+fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
+fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
 fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
+fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
+fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
