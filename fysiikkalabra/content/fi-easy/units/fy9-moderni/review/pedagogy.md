@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 4465c40cddfece9f
-SCOPE: delta: new tasks s8 (Betoniseinä) and s9 (Galaksien etääntyminen) and the intro; older tasks untouched
+CONTENT-HASH: 43cb3edae017c63d
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- (ei mitään)
 
 ## Polish
-- s9 a: tehtävän teksti antaa suoran pisteen ($250\,\text{Mpc}$; $18\,000\,\text{km/s}$), ja kuvan kuvaus toistaa sen. Kuvaajaa ei tarvitse lukea, joten `graph_read` ei mittaa mitään. Parempi: poista piste tekstistä ja kuvauksesta, jolloin $H_0$ luetaan ruudukosta (s8:ssa näin jo on).
-- s9 a: toinen "kaukana oleva piste" on origo, joka on annettu.
-- s8 antaa mallin $\dot{H}=\dot{H}_0 e^{-\mu d}$ valmiina; sopii tavoitteeseen, mutta mallin tunnistaminen jää harjoittelematta.
-- Helppo kieli: "Se on esitetty seinän paksuuden funktiona" ja "Niihin on sovitettu suora" ovat selkeitä lyhyitä lauseita, mutta s9 c:n ketju "Muuntaa $H_0$:n yksikköön" jättää subjektin pois; "$\dot{H}$ käytävän puolella. Se on esitetty..." on hyvä. Muuten kieli on kevyttä ja termit (annosnopeus, vaimennuskerroin, Hubblen vakio) säilyvät.
+- s8 Yleisiä virheitä, a: esimerkki "$\mu = 16 / 20\,\text{cm} = 0{,}80$" on jäänyt vanhoista luvuista. Nykyisillä pisteillä $(0;\,80)$ ja $(10;\,20)$ osamäärä on $80/20 = 4$ ja väärä tulos $0{,}40\,\text{1/cm}$. Korjaa luvut.
+- s8 d, kriteeri: "Kertoo, miten oletus vaikuttaa" on lauseena vajaa (subjekti puuttuu); kuitenkin ymmärrettävä.
+- s9 a: ruudukon piste on enää vain ratkaisussa ja kriteerissä; toinen piste on origo. Hyväksyttävä.
 
 ## Checked
-- Avasin fi-easy-paketin: tarkistukset (practice.py check OK), s8 ja s9 tasks.json omana tekstinään, solutions.md ja kuvien kuvaukset.
-- Uskollisuus: samat luvut, pisteet (3+3+3+4, 3+3+4+3), toleranssit ja kriteerit kuin fi-versiossa; lauseet lyhennetty ilman sisällön muutosta, esim. d-kohdan oletus ("Nimeää oletuksen ja kertoo...") ja yläpyöristys säilyvät. Ei lisättyjä tai poistettuja vihjeitä.
-- Laskin luvut uudelleen: $\mu=0{,}1386$, $6{,}6\,\mu\text{Sv/h}$, $2{,}18\,\text{mSv}$, $23{,}6\,\text{cm}$, $H_0=72$, $116{,}7\,\text{Mpc}$, $1{,}36\cdot10^{10}\,\text{a}$; toleranssit hyväksyvät kahden numeron pyöristykset.
-- Taso ja vaihtelu: s8 lukeminen, malli, päättely, mitoitus; s9 lukeminen, käänteinen lasku, yksikkömuunnos, selitys. Yleiset virheet todellisia.
-- Alt-nimet ($\dot{H}$, $d$, $v$) vastaavat tekstiä; yksikkökentät kielineutraaleja.
-- Intro: "Yhdeksän" = 9 tehtävää (136 p); tehtävät 7, 8, 9 oikein. 360 px: luotin check_layoutiin ja shots.md:hen, en avannut kuvia.
-- Hash alussa ja lopussa sama.
+- Avasin fi-easy-paketin: s8 ja s9 tasks.json omana tekstinään, solutions.md ja tarkistusosio (practice.py check OK); hash alussa ja lopussa 43cb3edae017c63d.
+- Round 1:n kohdat: s9 a:n teksti ei anna pistettä $(250;\,18\,000)$, joten $H_0$ luetaan kuvaajalta. s8 a:n toinen piste $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ vastaa ratkaisua ($\ln 4/10 = 0{,}14$).
+- s8 d: oletus kysytään tekstissä ("Mainitse myös yksi mallin oletus ... ja kerro sen vaikutus"); kriteeri vastaa kysymystä eikä paljasta sisältöä.
+- s9 c: kysymys ei paljasta ketjua $t = 1/H_0$ eikä yksikkömuunnosta.
+- Uskollisuus: samat luvut, pisteet (3+3+3+4, 3+3+4+3), toleranssit ja kriteerit kuin fi:ssä; lauseet lyhyitä ja termit (annosnopeus, vaimennuskerroin, Hubblen vakio) säilyvät. Pyöristys kahteen numeroon kuten lähtötiedoissa; laskuketjut tasattuina riveinä; yksikkökentät kielineutraaleja.
+- 360 px: check_layout ja shots.md, ei avattu.

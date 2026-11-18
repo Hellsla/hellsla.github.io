@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f4531b7790ea5ae7
-SCOPE: delta: new tasks s8 (concrete wall) and s9 (recession of galaxies) and the intro; older tasks untouched
+CONTENT-HASH: f5355edae2761e52
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- s9 a: the task text gives the line's grid point ($250\,\text{Mpc}$, $18\,000\,\text{km/s}$) and the figure description repeats it. The graph need not be read, so the `graph_read` criterion measures nothing and the nine data points are decoration. Better: drop the point from the text and the description so $H_0$ is read off the grid; s8 already works that way (the description gives only the value at $d=0$).
-- s9 a: the second "far apart point" is the origin, which is given. Reading a graph is only practised if the point has to be found.
-- s8 gives the model $\dot{H}=\dot{H}_0 e^{-\mu d}$ in the text. That suits the graph-reading goal, but recognising exponential attenuation is not practised; a conscious choice.
-- s9 c: the text gives the constant-velocity assumption, not the chain $t=1/H_0$; the structure is not revealed. Good.
-- Rounding: inputs have two significant figures and the answers too (6.6; 24; 120; 1.4·10^10); the exact $\mu$ used in later parts is explained in the solution.
+- s8 Common mistakes, part a: the example "$\mu = 16 / 20\,\text{cm} = 0.80$" is left over from the old read-off values. With the current points $(0;\,80)$ and $(10;\,20)$ the quotient is $80/20 = 4$ and the wrong result $4/10\,\text{cm} = 0.40\,\text{1/cm}$. Fix the numbers so the student does not see a 16 that is not in the data.
+- s9 a: the grid point now appears only in the solution and criterion, not in the task text; the second point is still the origin. Acceptable.
+- s8 gives the model ready-made (a conscious choice).
 
 ## Checked
-- Opened the en packet: checks (practice.py check OK), s8 and s9 in tasks.json (own English text), solutions.md, answers.py and the figure descriptions.
-- Translation fidelity: same numbers, points, criteria and tolerances as the Finnish; decimals are points (1.5 h, 0.14), "recession velocity", "attenuation coefficient", "dose rate", "Hubble constant" are the right terms; the "Milky Way" explanation criteria match the Finnish. Units fields (1/cm, µSv/h, a) are language-neutral. Language level suits upper-secondary students.
-- Recomputed: $\mu=0.1386$ per cm; $6.6\,\mu\text{Sv/h}$; $330\,\text{h}$, $2.18\,\text{mSv}$; $3.03\,\mu\text{Sv/h}$, $23.6\,\text{cm}$; $H_0=72$; $116.7\,\text{Mpc}$; $1.36\cdot10^{10}\,\text{a}$. Tolerances accept the two-figure roundings.
-- Level and variety: s8 reading, model, judgement, design and assumption; s9 reading, inverse calculation, unit conversion, conceptual explanation. Points 3+3+3+4 and 3+3+4+3 equal the criterion sums; common mistakes are real.
-- Figure alt names ($\dot{H}$, $d$, $v$) match the text; s8's alt does not give the $5.0$ read-off.
-- Intro says "Nine" for 9 tasks (136 p); problems 7, 8, 9 correctly referred to. 360 px: relied on check_layout and shots.md (same hash), did not open captures.
-- Hash same at start and end.
+- Opened the en packet: s8 and s9 in tasks.json (own English text), solutions.md and the checks (practice.py check OK); hash same at start and end (f5355edae2761e52).
+- Round-1 items: s9 a text no longer gives $(250;\,18\,000)$, so $H_0$ is read off the graph and `graph_read` measures something. s8 a: second point $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ matches the solution ($\ln 4/10 = 0.14$).
+- s8 d: the assumption is asked in the text ("Also name one assumption ... and its effect"); the criterion matches and what the assumption is stays with the student.
+- s9 c: the reworded task (distances "were zero", constant rate) does not reveal $t = 1/H_0$ or the unit conversion.
+- Translation: same numbers, points, tolerances and criteria as Finnish; decimal points; terms (attenuation coefficient, dose rate, Hubble constant) correct. Results rounded to two figures like the data; aligned calculation rows; unit fields language-neutral.
+- Points 3+3+3+4 and 3+3+4+3 equal the criterion sums; 360 px: check_layout and shots.md, not opened.

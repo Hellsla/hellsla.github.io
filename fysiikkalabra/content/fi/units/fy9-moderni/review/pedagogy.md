@@ -1,22 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 115941f6cb5f4383
-SCOPE: delta: new tasks s8 (Betoniseinä) and s9 (Galaksien etääntyminen) and the intro; older tasks untouched
+CONTENT-HASH: 876c08f6ee47b4ec
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-- (none)
+- (ei mitään)
 
 ## Polish
-- s9 a: tehtävän teksti antaa suoran pisteen ($250\,\text{Mpc}$; $18\,000\,\text{km/s}$), ja kuvan kuvaus toistaa sen. Kuvaajaa ei tarvitse lukea, joten kriteeri `graph_read` ei mittaa mitään ja yhdeksän mittauspistettä ovat koristetta. Parempi: poista piste tekstistä ja kuvauksesta, jolloin $H_0$ luetaan ruudukosta; s8:ssa näin jo on (kuvaus kertoo vain arvon $80$ kohdassa $d=0$).
-- s9 a: toinen "kaukana oleva piste" on origo, joka on annettu. Lukeminen on silti oppimisen kohde vasta, kun piste pitää löytää itse.
-- s8 teksti antaa mallin $\dot{H}=\dot{H}_0 e^{-\mu d}$ valmiina. Se sopii tehtävän tavoitteeseen (kuvaajan lukeminen ja malli), mutta "tunnista eksponentiaalinen vaimeneminen" jää harjoittelematta; sanottakoon tämä tietoisena valintana.
-- s9 c: teksti kertoo vakionopeusoletuksen, mutta ei ketjua $t=1/H_0$. Hyvä; rakenne ei paljastu.
-- Pyöristys: kuvaaja, s8 ja s9 antavat lähtötiedot kahdella numerolla, ja vastaukset ovat kahdella (6,6; 24; 120; 1,4·10^10). Täsmällinen $\mu$ jatkolaskuissa on selitetty ratkaisussa.
+- s8 Yleisiä virheitä, a: esimerkki "$\mu = 16 / 20\,\text{cm} = 0{,}80$" on jäänyt vanhoista lukuarvoista. Nykyisillä pisteillä $(0;\,80)$ ja $(10;\,20)$ osamäärä on $80/20 = 4$ ja virheellinen tulos $4/10\,\text{cm} = 0{,}40\,\text{1/cm}$. Korjaa luvut, ettei oppija näe lukua 16, jota aineistossa ei ole.
+- s9 a: ruudukon piste on enää vain ratkaisussa ja kriteerissä, ei tehtävätekstissä; toinen piste on silti origo. Hyväksyttävä.
+- s8 antaa mallin valmiina (tietoinen valinta).
 
 ## Checked
-- Avasin fi-paketin: tarkistusosio (practice.py check OK), s8 ja s9 tasks.json, solutions.md ja answers.py-laskennat sekä kuvien figures.py (alt-tekstit).
-- Laskin luvut uudelleen: $\mu=\ln16/20=0{,}1386\,1/\text{cm}$; $6{,}6\,\mu\text{Sv/h}$; $330\,\text{h}$, $2{,}18\,\text{mSv}$; $3{,}03\,\mu\text{Sv/h}$, $23{,}6\,\text{cm}$; $H_0=72$; $116{,}7\,\text{Mpc}$; $1/H_0=1{,}36\cdot10^{10}\,\text{a}$. Toleranssit hyväksyvät kahden numeron pyöristykset.
-- Taso: s8 nousee lukemisesta mallin käyttöön, päättelyyn (raja ylittyy) ja mitoitukseen ja oletuksen arviointiin; s9 lukemisesta käänteiseen laskuun, yksikkömuunnokseen ja käsitteelliseen selitykseen (ei keskipistettä). Sopii FY8:n tasolle, vaihtelua kahden kuvaajatehtävän välillä on.
-- Pisteytys: osien pisteet = kriteerien summa (3+3+3+4, 3+3+4+3); kriteerit kysyvät vain sen, mitä osa; yleiset virheet ovat todellisia (ln vs osamäärä, mSv/$\mu$Sv, $1/72$ ilman muunnosta, "räjähdyksen sirpaleet"). Ratkaisut: laskuketjut tasattuina riveinä, järkevyysarviot mukana.
-- Kuvien alt-nimet ($\dot{H}$, $d$, $v$) vastaavat tehtävätekstiä; s8:n alt ei paljasta arvoa $5{,}0$. Yksikkökentät ($1/\text{cm}$, $\mu$Sv/h, $\text{a}$) kielineutraaleja.
-- Intro: "Yhdeksän" vastaa 9 tehtävää (136 p); viittaus tehtäviin 7, 8, 9 oikein. 360 px: luotin check_layoutiin ja shots.md:hen (hash sama), en avannut kuvia.
-- Hash alussa ja lopussa sama.
+- Avasin fi-paketin: s8 ja s9 tasks.json, solutions.md ja tarkistusosio (practice.py check OK); hash alussa ja lopussa 876c08f6ee47b4ec.
+- Round 1:n polish-kohdat: s9 a:n teksti ei enää anna pistettä $(250;\,18\,000)$, joten $H_0$ luetaan kuvaajalta ja `graph_read` mittaa jotain. s8 a: toinen luettava piste $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ ja ratkaisun luvut ($\ln 4/10 = 0{,}14$) täsmäävät.
+- s8 d: oletus kysytään nyt tekstissä ("Mainitse myös yksi mallin oletus ... ja sen vaikutus"), kriteeri vastaa kysymystä; ei paljasta ratkaisun rakennetta (oletuksen sisältö jää oppijalle).
+- s9 c: uudelleenmuotoilu ("etäisyydet olivat nollia ... samalla nopeudella") ei paljasta ketjua $t = 1/H_0$ eikä yksikkömuunnosta.
+- Pyöristys kahteen numeroon (0,14; 6,6; 2,2; 24; 72; 120; $1{,}4\cdot10^{10}$) vastaa lähtötietoja; tarkempi $\mu$ selitetty. Laskuketjut tasattuina riveinä; yksikkökentät (1/cm, µSv/h, mSv, cm, km/s/Mpc, a) kielineutraaleja.
+- Pisteet 3+3+3+4 ja 3+3+4+3 täsmäävät kriteereihin; 360 px: check_layout ja shots.md, ei avattu.
