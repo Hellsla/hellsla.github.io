@@ -75,4 +75,47 @@ out["fy9-kokeellisuus-s6-c"] = round(a6 / g, 4)
 out["fy9-kokeellisuus-s6-d"] = round((1.05 ** 2 - 1) * 100, 2)                # %
 out["fy9-kokeellisuus-s6-atrue"] = round(a6 / 1.05 ** 2, 3)
 
+# s7: a steel beam heated, fy3-8/length-graph: (20 C; 0 mm) and (70 C; 3,0 mm) on a line; l0 = 5,0 m; table steel 12e-6 1/K
+l7, T7a, T7b, D7a, D7b = 5.0, 20.0, 70.0, 0.0, 3.0           # m, C, C, mm, mm
+dT7 = T7b - T7a                                               # K (a difference of Celsius temperatures)
+k7 = (D7b - D7a) / dT7                                        # mm/K: the slope read from the end points
+alpha7 = k7 * 1e-3 / l7                                       # 1/K: alpha = k / l0 (mm -> m)
+alpha_tab = 12e-6                                             # 1/K: MAFY, steel (fy3-8 row of mafy-arvot.tsv)
+out["fy9-kokeellisuus-s7-a"] = round(k7, 4)
+out["fy9-kokeellisuus-s7-b"] = alpha7
+out["fy9-kokeellisuus-s7-check"] = round(alpha_tab * l7 * dT7 * 1e3, 3)           # mm: the elongation the table value predicts
+out["fy9-kokeellisuus-s7-dev"] = round((alpha7 - alpha_tab) / alpha_tab * 100, 2)   # % deviation from the table
+rT = 2 * 1.0 / dT7                                            # thermometer +-1 C twice: +-2 K
+rl = 2 * 0.1 / (D7b - D7a)                                    # ruler +-0,1 mm twice: +-0,2 mm
+out["fy9-kokeellisuus-s7-rT"] = round(rT * 100, 2); out["fy9-kokeellisuus-s7-rl"] = round(rl * 100, 2)
+out["fy9-kokeellisuus-s7-d"] = round((rT + rl) * 100, 2)      # % relative uncertainty of alpha
+out["fy9-kokeellisuus-s7-dalpha"] = round(alpha7 * (rT + rl) * 1e6, 3)           # 1e-6 1/K
+out["fy9-kokeellisuus-s7-lo"] = round(alpha7 * (1 - rT - rl) * 1e6, 2); out["fy9-kokeellisuus-s7-hi"] = round(alpha7 * (1 + rT + rl) * 1e6, 2)
+rl2 = 2 * 0.01 / (D7b - D7a)                                  # an improvement: a dial gauge, +-0,01 mm
+out["fy9-kokeellisuus-s7-rl2"] = round(rl2 * 100, 2); out["fy9-kokeellisuus-s7-d2"] = round((rT + rl2) * 100, 2)
+out["fy9-kokeellisuus-s7-dalpha2"] = round(alpha7 * (rT + rl2) * 1e6, 3)
+out["fy9-kokeellisuus-s7-growth"] = round(alpha7 * dT7 * 100, 3)  # % of the length
+
+# s8: a cart, fy1-4/scatter-points: six (t; s) points, no fitted line (the catalog's numbers)
+T8 = [1, 2, 3, 4, 5, 6]
+S8 = [0.6, 0.8, 1.6, 2.1, 2.4, 2.9]
+k8_ls, b8_ls = fit(T8, S8)                                     # least squares as a reference for the eye fit
+res8 = [round(y - (k8_ls * x + b8_ls), 3) for x, y in zip(T8, S8)]
+P8a, P8b = (1.0, 0.53), (6.0, 2.93)                            # two far-apart points read on the fitted line
+k8 = (P8b[1] - P8a[1]) / (P8b[0] - P8a[0])                     # m/s
+s08 = P8a[1] - k8 * P8a[0]                                     # m: the intercept s0 = s - v t
+s9 = s08 + k8 * 9.0                                            # m: at t = 9 s
+dk8 = 0.04                                                     # m/s: the slope's uncertainty (steepest and shallowest line through the cloud)
+out["fy9-kokeellisuus-s8-ls-k"] = round(k8_ls, 4); out["fy9-kokeellisuus-s8-ls-b"] = round(b8_ls, 4)
+out["fy9-kokeellisuus-s8-res"] = res8
+out["fy9-kokeellisuus-s8-a"] = round(k8, 4)
+out["fy9-kokeellisuus-s8-alt"] = round((S8[5] - S8[0]) / (T8[5] - T8[0]), 4)     # from the first and last data points
+out["fy9-kokeellisuus-s8-b"] = round(s08, 4)
+out["fy9-kokeellisuus-s8-c"] = round(s9, 3)
+out["fy9-kokeellisuus-s8-c-ds"] = round(9.0 * dk8, 3)
+out["fy9-kokeellisuus-s8-c-ls"] = round(k8_ls * 9 + b8_ls, 3)
+out["fy9-kokeellisuus-s8-dt"] = [round(abs(r) / k8, 2) for r in res8]            # s: the deviation as a timing error
+out["fy9-kokeellisuus-s8-timing"] = round(0.25 * k8, 3)                           # m: a 0,25 s timing error at this speed
+out["fy9-kokeellisuus-s8-extra"] = round((9 - 6) / (6 - 1) * 100, 1)             # %: the extrapolated 3 s as a share of the 5 s data span
+
 print(json.dumps(out))

@@ -400,3 +400,186 @@ two significant figures as in the braking distances and the slope.
 ### Hyväksytään myös
 - In part b, the slope can be determined from a calculator fit through the origin ($k \approx 0.121\,\text{s}^2/\text{m}$, $a \approx 4.15\,\text{m/s}^2$) or from another distant point of the line. Decelerations of $4.0\text{–}4.4\,\text{m/s}^2$ are accepted, as are coefficients of $0.41\text{–}0.45$ in part c.
 - In part d the answer $10.25\,\%$ or “about $10\,\%$”.
+
+## fy9-kokeellisuus-s7
+
+### a)
+**Given:** the line of the graph passes through the points $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ and $(70\,{}^\circ\text{C};\ 3.0\,\text{mm})$
+**Find:** the slope $k$ of the line
+**Principle:** The points lie on a line, so the change in length $\Delta l$ is proportional to the change in temperature. The slope tells how much the beam lengthens per kelvin (chapter *Thermal expansion*).
+**Reading the graph:** The end points of the line are far apart, so the slope is read from them: temperatures $20\,{}^\circ\text{C}$ and $70\,{}^\circ\text{C}$, changes in length $0\,\text{mm}$ and $3.0\,\text{mm}$.
+**Formula:** $k = \dfrac{\Delta(\Delta l)}{\Delta T}$, that is $$
+\begin{aligned}
+k &= \dfrac{\Delta l_2 - \Delta l_1}{T_2 - T_1}
+\end{aligned}
+$$
+**Conversions:** A difference of temperatures is the same in degrees Celsius and in kelvins: $70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$.
+**Substitution:** $$
+\begin{aligned}
+k &= \dfrac{3.0\,\text{mm} - 0\,\text{mm}}{70\,{}^\circ\text{C} - 20\,{}^\circ\text{C}} \\
+&= \dfrac{3.0\,\text{mm}}{50\,\text{K}} \\
+&= 0.060\,\text{mm/K}
+\end{aligned}
+$$
+**Answer:** The slope is $k = 0.060\,\text{mm/K}$, two significant figures like the values read.
+**Reasonableness:** A temperature difference of ten kelvins lengthens the beam by $0.060\,\text{mm/K} \cdot 10\,\text{K} = 0.60\,\text{mm}$, which fits the graph: one temperature interval of the grid rises slightly more than one $0.5\,\text{mm}$ square.
+
+### b)
+**Given:** $l_0 = 5.0\,\text{m}$ and the slope $k = 0.060\,\text{mm/K}$ from part a
+**Find:** the coefficient of linear expansion $\alpha$
+**Principle:** The change in the length of a solid is proportional to the initial length and to the change in temperature: $\Delta l = \alpha\, l_0\, \Delta T$ (chapter *Thermal expansion*). The slope of the graph is $k = \Delta l / \Delta T$.
+**Formula:** $\Delta l = \alpha\, l_0\, \Delta T$, so $\alpha = \dfrac{\Delta l}{l_0\, \Delta T} = \dfrac{k}{l_0}$
+**Conversions:** The change in length is in millimetres and the initial length in metres, so the slope is converted: $$
+\begin{aligned}
+0.060\,\text{mm/K} &= 0.060 \cdot 10^{-3}\,\text{m/K} \\
+&= 6.0 \cdot 10^{-5}\,\text{m/K}
+\end{aligned}
+$$.
+**Substitution:** $$
+\begin{aligned}
+\alpha &= \dfrac{k}{l_0} \\
+&= \dfrac{6.0 \cdot 10^{-5}\,\text{m/K}}{5.0\,\text{m}} \\
+&= 1.2 \cdot 10^{-5}\,\text{1/K}
+\end{aligned}
+$$
+**Answer:** $\alpha = 1.2 \cdot 10^{-5}\,\text{1/K} = 12 \cdot 10^{-6}\,\text{1/K}$, two significant figures like the values read.
+**Reasonableness:** A check backwards: $$
+\begin{aligned}
+\Delta l &= \alpha\, l_0\, \Delta T \\
+&= 12 \cdot 10^{-6}\,\text{1/K} \cdot 5.0\,\text{m} \cdot 50\,\text{K} \\
+&= 3.0 \cdot 10^{-3}\,\text{m} \\
+&= 3.0\,\text{mm}
+\end{aligned}
+$$ the same as the change in length in the graph. The beam lengthens by $3.0\,\text{mm} : 5000\,\text{mm} = 0.06\,\%$, which is usual for a solid.
+
+### c)
+**Find:** how the result differs from the table value for steel and what it tells about the material
+**Principle:** The table value is a reference: if the measured value is close to it, the data fit the assumed material. The table value $12 \cdot 10^{-6}\,\text{1/K}$ is the coefficient of linear expansion of steel ([MAFY table: coefficients of linear expansion](https://mafytaulukot.fi/d483a4f3-e523-4a51-9b9a-07ec5b57cd35/fi/1787733935/theory.html)).
+**Model answer:** The measured $\alpha = 12 \cdot 10^{-6}\,\text{1/K}$ equals the table value for steel, the deviation is $0\,\%$. So the measurement fits a beam made of steel. Agreement does not, however, prove the exact alloy: the table value is a typical value for steel, different alloys vary slightly, and the result rests on one measurement that has an uncertainty (part d).
+
+### d)
+**Given:** $\Delta T = 50\,\text{K}$, $\Delta l = 3.0\,\text{mm}$, the reading of the thermometer is off by at most $\pm 1\,{}^\circ\text{C}$ and that of the callipers by at most $\pm 0.1\,\text{mm}$
+**Find:** the largest relative uncertainty $\dfrac{\Delta\alpha}{\alpha}$ of $\alpha$, its range and the most important source of error
+**Principle:** When a quantity is calculated as a quotient, the relative uncertainties add in the worst case. The uncertainty of the initial length is, according to the task, so small that it is left out. Both the change in temperature and the change in length are the difference of two readings, and the errors of the readings can be in the same direction, so the error of the difference is twice as large.
+**Formula:** Because $\alpha = \dfrac{\Delta l}{l_0\, \Delta T}$, we have $$
+\begin{aligned}
+\dfrac{\Delta\alpha}{\alpha} &= \dfrac{\delta(\Delta l)}{\Delta l} \\
+&\quad + \dfrac{\delta(\Delta T)}{\Delta T}
+\end{aligned}
+$$
+**Conversions:** None needed: relative uncertainties are dimensionless when numerator and denominator are in the same unit. The temperature error $\pm 1\,{}^\circ\text{C}$ is $\pm 1\,\text{K}$.
+**Substitution:** The errors of the differences are $\delta(\Delta T) = 2 \cdot 1\,\text{K} = 2\,\text{K}$ and $\delta(\Delta l) = 2 \cdot 0.1\,\text{mm} = 0.2\,\text{mm}$. The relative uncertainties: $$
+\begin{aligned}
+\dfrac{\delta(\Delta T)}{\Delta T} &= \dfrac{2\,\text{K}}{50\,\text{K}} \\
+&= 4.0\,\%
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\dfrac{\delta(\Delta l)}{\Delta l} &= \dfrac{0.2\,\text{mm}}{3.0\,\text{mm}} \\
+&= 6.7\,\%
+\end{aligned}
+$$ Together $$
+\begin{aligned}
+\dfrac{\Delta\alpha}{\alpha} &= 4.0\,\% + 6.7\,\% \\
+&= 10.7\,\%
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\Delta\alpha &= 0.107 \cdot 12 \cdot 10^{-6}\,\text{1/K} \\
+&\approx 1.3 \cdot 10^{-6}\,\text{1/K}
+\end{aligned}
+$$
+**Answer:** The largest relative uncertainty is about $11\,\%$ and $\alpha = (12 \pm 1.3) \cdot 10^{-6}\,\text{1/K}$, that is the range $10.7 \ldots 13.3\ (10^{-6}\,\text{1/K})$. The table value $12 \cdot 10^{-6}\,\text{1/K}$ lies within the range, so the difference from the table is not significant. The most important source of error is the reading of the length ($6.7\,\%$ vs. $4.0\,\%$), because the change in length is only $3.0\,\text{mm}$.
+**Reasonableness:** The result is the worst case: the real error is usually smaller because the errors of the readings can cancel. An uncertainty of ten per cent is usual when a change of a few millimetres is measured.
+
+### e)
+**Find:** why the points lie on a line and one change that would reduce the uncertainty
+**Principle:** Thermal expansion follows the formula $\Delta l = \alpha\, l_0\, \Delta T$. The relative uncertainty decreases when the measured change is larger or the reading more precise (chapter *Thermal expansion*).
+**Model answer:** The points lie on a line because $\Delta l = \alpha\, l_0\, \Delta T$ and over a narrow temperature range $\alpha$ is nearly constant. Then $\Delta l$ is proportional to the change in temperature. The line passes through $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ because the change is zero at the starting temperature.
+
+The best change is a more precise measurement of the length, because it was the largest source of error. If the callipers are replaced by a dial gauge with an error of $\pm 0.01\,\text{mm}$, the relative uncertainty of the length is $0.02\,\text{mm} : 3.0\,\text{mm} = 0.67\,\%$ and the total uncertainty $4.0\,\% + 0.67\,\% \approx 4.7\,\%$, that is $\Delta\alpha \approx 0.6 \cdot 10^{-6}\,\text{1/K}$. A larger temperature difference (for example $20\,{}^\circ\text{C} \ldots 120\,{}^\circ\text{C}$) would also reduce both relative errors, because $\Delta l$ and $\Delta T$ would grow while the errors of the readings stay the same.
+
+### Yleisiä virheitä
+- The slope is read from one point by dividing $3.0\,\text{mm} : 70\,{}^\circ\text{C}$, although the line starts at $(20\,{}^\circ\text{C};\ 0\,\text{mm})$, and the result is wrong.
+- The slope $0.060\,\text{mm/K}$ is divided by the initial length $5.0\,\text{m}$ without converting millimetres to metres, so $\alpha$ is a thousand times too large.
+- The unit of $\alpha$ is forgotten or written as $\text{m/K}$ instead of $\text{1/K}$.
+- In part c it is concluded that the beam is certainly steel of a particular alloy, although one measurement and a typical table value do not prove it.
+- In part d the error is taken to be that of one reading only ($\pm 1\,\text{K}$ and $\pm 0.1\,\text{mm}$) and not that of the difference of the readings, or the relative uncertainties are multiplied instead of added.
+
+### Hyväksytään myös
+- In part a a slope of $0.058 \ldots 0.062\,\text{mm/K}$, and in part b correspondingly $\alpha = (11.6 \ldots 12.4) \cdot 10^{-6}\,\text{1/K}$.
+- In part d $\dfrac{\Delta\alpha}{\alpha}$ may also be calculated by combining in quadrature, $\sqrt{4.0^2 + 6.7^2}\,\% \approx 7.8\,\%$, when it is justified that the errors are not usually all at their worst at the same time.
+
+## fy9-kokeellisuus-s8
+
+### a)
+**Given:** the six points $(t;\ s)$ of the graph: $(1\,\text{s};\ 0.6\,\text{m})$, $(2\,\text{s};\ 0.8\,\text{m})$, $(3\,\text{s};\ 1.6\,\text{m})$, $(4\,\text{s};\ 2.1\,\text{m})$, $(5\,\text{s};\ 2.4\,\text{m})$ and $(6\,\text{s};\ 2.9\,\text{m})$; the speed of the cart is constant
+**Find:** the speed $v$ of the cart
+**Principle:** At a constant speed the distance grows evenly, so a line is fitted to the points and the speed is its slope (chapter *Graphical presentation and fitting a line*). The line is drawn through the middle of the cloud of points with about as many points on each side; the points are not joined into a broken line.
+**Reading the graph:** The fitted line passes about through the points $(1\,\text{s};\ 0.53\,\text{m})$ and $(6\,\text{s};\ 2.93\,\text{m})$. They are far apart and on the line, so the slope is read from them and not from the data points, which deviate from the line.
+**Formula:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Conversions:** None needed: the distances are in metres and the times in seconds.
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{2.93\,\text{m} - 0.53\,\text{m}}{6\,\text{s} - 1\,\text{s}} \\
+&= \dfrac{2.40\,\text{m}}{5\,\text{s}} \\
+&\approx 0.48\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The speed of the cart is about $0.5\,\text{m/s}$ (more precisely $0.48\,\text{m/s}$). For a fit by eye $0.44 \ldots 0.52\,\text{m/s}$ is accepted. The result has two significant figures because the values read have two-digit accuracy.
+**Reasonableness:** Between the first and the last data point the cart travels $2.9\,\text{m} - 0.6\,\text{m} = 2.3\,\text{m}$ in five seconds, that is $0.46\,\text{m/s}$, close to the result. The speed is slower than walking ($1.7\,\text{km/h}$), which fits a cart moved by hand.
+
+### b)
+**Given:** the speed $v = 0.48\,\text{m/s}$ from part a and the point $(1\,\text{s};\ 0.53\,\text{m})$ of the line
+**Find:** where the line meets the $s$ axis, $s_0$, and what it means
+**Principle:** The equation of the line is $s = s_0 + v\,t$. If the motion starts at the zero mark at the moment the clock is started, the line passes through the origin and $s_0 = 0$. A deviation can be a measurement error, and its significance is judged against the scatter of the points.
+**Formula:** $s = s_0 + v\,t$, so $s_0 = s - v\,t$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+s_0 &= s - v\,t \\
+&= 0.53\,\text{m} - 0.48\,\text{m/s} \cdot 1\,\text{s} \\
+&= 0.05\,\text{m}
+\end{aligned}
+$$
+**Answer:** The line meets the $s$ axis at $s_0 \approx 0.05\,\text{m}$, very close to the origin. For a fit by eye $-0.10 \ldots +0.20\,\text{m}$ is accepted. The data do not show that the line misses the origin: $0.05\,\text{m}$ is smaller than the scatter of the points about the line (about $0.2\,\text{m}$).
+**Reasonableness:** A systematic error would move all points in the same direction and so the whole line. If, for example, the clock were started $0.3\,\text{s}$ too late, all times would be too short and the line would move up by $0.48\,\text{m/s} \cdot 0.3\,\text{s} \approx 0.14\,\text{m}$. The zero mark in the wrong place would cause a similar shift. A random error, on the other hand, spreads the points on both sides of the line and does not move the line. In these data $0.05\,\text{m}$ is clearly less than such a shift.
+
+### c)
+**Given:** the equation of the line $s = 0.05\,\text{m} + 0.48\,\text{m/s} \cdot t$ from parts a and b; $t = 9\,\text{s}$
+**Find:** the distance $s$ at $9\,\text{s}$ and how reliable the result is
+**Principle:** A prediction is obtained by extending the line beyond the measured range (extrapolation). It requires that the motion continues in the same way, that is, that the speed stays constant.
+**Reading the graph:** The line is extended to $9\,\text{s}$ on the time axis, and about $4.4\,\text{m}$ is read on the distance axis (the axis goes up to $4.5\,\text{m}$).
+**Formula:** $s = s_0 + v\,t$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+s &= s_0 + v\,t \\
+&= 0.05\,\text{m} + 0.48\,\text{m/s} \cdot 9\,\text{s} \\
+&= 0.05\,\text{m} + 4.32\,\text{m} \\
+&\approx 4.4\,\text{m}
+\end{aligned}
+$$
+**Answer:** The distance at $9\,\text{s}$ is about $4.4\,\text{m}$; the value read from the graph and the calculated value are the same within the reading accuracy. The result is an estimate, not a measured value.
+**Reasonableness:** The prediction is less reliable than values within the measured range. The time $9\,\text{s}$ is $3\,\text{s}$ after the last measured point at $6\,\text{s}$, that is $60\,\%$ of the length of the measured range of $5\,\text{s}$. The error $\pm 0.04\,\text{m/s}$ of the slope grows with time: $0.04\,\text{m/s} \cdot 9\,\text{s} = 0.36\,\text{m}$, so the distance is $4.4 \pm 0.4\,\text{m}$. In addition, the assumption of a constant speed has been tested only over $1 \ldots 6\,\text{s}$: the track may end, or the cart may slow down because of friction.
+
+### d)
+**Find:** the cause of the deviations, whether the error is random or systematic, and one improvement
+**Principle:** A random error spreads the measurements in both directions with no pattern; a systematic error moves all measurements in the same direction. A random error is reduced with repeats and a more precise instrument (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** The deviations of the points from the fitted line (measured $-$ line) are $+0.07\,\text{m}$, $-0.21\,\text{m}$, $+0.11\,\text{m}$, $+0.13\,\text{m}$, $-0.05\,\text{m}$ and $-0.03\,\text{m}$. They are both above and below the line with no pattern, so the error is mainly random. A systematic error would move all points in the same direction.
+
+The likely cause is timing by hand: starting and stopping the clock are delayed by the reaction time, typically $0.2 \ldots 0.3\,\text{s}$. At $0.48\,\text{m/s}$ this corresponds to a distance of $0.10 \ldots 0.14\,\text{m}$. The largest deviation, $0.21\,\text{m}$ at $t = 2\,\text{s}$, corresponds to a time of $0.21\,\text{m} : 0.48\,\text{m/s} \approx 0.4\,\text{s}$, and the other deviations are at most $0.13\,\text{m}$, about $0.3\,\text{s}$. They are of the same order of magnitude as the timing error, so the explanation fits the data.
+
+Improvement: timing with a light gate or a fast video instead of a hand-held stopwatch would remove the reaction time, and the mean of several repeats would reduce the remaining scatter.
+
+### Yleisiä virheitä
+- The points are joined into a broken line, or the line is drawn through two data points although they are not in the middle of the cloud of points.
+- The slope is read from two neighbouring points, for example $(0.8\,\text{m} - 0.6\,\text{m}) : 1\,\text{s} = 0.2\,\text{m/s}$, so the scatter affects the result disproportionately.
+- The slope is calculated by dividing the values of one point only, $s : t$, for example $2.9\,\text{m} : 6\,\text{s} = 0.48\,\text{m/s}$; the result is close, but the method assumes the line passes through the origin, which is exactly what part b asks.
+- In part c the prediction is treated as reliable as the values within the measured range, or it is found by reading the last point and estimating "a bit more".
+- In part d the scatter is called a systematic error although the deviations go in both directions, or the cause is named as "a bad cart" without justification.
+
+### Hyväksytään myös
+- In part a the slope can be calculated from the least-squares fit of a calculator ($v = 0.48\,\text{m/s}$, $s_0 = 0.05\,\text{m}$) or through the first and last data points ($0.46\,\text{m/s}$).
+- In part b the answer "the line passes about through the origin" is accepted when the intercept is given and compared with the scatter. If the intercept by eye is $0.1 \ldots 0.2\,\text{m}$, the answer is accepted when a timing error is named as a possible cause.
+- In part c the answer $4.2 \ldots 4.6\,\text{m}$ is accepted because of the variation of a fit by eye.

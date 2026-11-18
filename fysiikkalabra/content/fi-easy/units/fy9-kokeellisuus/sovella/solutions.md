@@ -400,3 +400,186 @@ kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 ### Hyväksytään myös
 - b-kohdassa kulmakertoimen voi määrittää laskimen sovituksesta origon kautta ($k \approx 0{,}121\,\text{s}^2/\text{m}$, $a \approx 4{,}15\,\text{m/s}^2$) tai muusta kaukaisesta suoran pisteestä. Hidastuvuudet $4{,}0\text{–}4{,}4\,\text{m/s}^2$ hyväksytään, samoin c-kohdan kertoimet $0{,}41\text{–}0{,}45$.
 - d-kohdassa vastaus $10{,}25\,\%$ tai "noin $10\,\%$".
+
+## fy9-kokeellisuus-s7
+
+### a)
+**Annettu:** kuvaajan suora kulkee pisteiden $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ ja $(70\,{}^\circ\text{C};\ 3{,}0\,\text{mm})$ kautta
+**Kysytty:** suoran kulmakerroin $k$
+**Periaate:** Pisteet ovat suoralla, joten pituuden muutos $\Delta l$ on verrannollinen lämpötilan muutokseen. Kulmakerroin kertoo, kuinka paljon palkki pitenee yhtä kelviniä kohti (luku *Lämpölaajeneminen*).
+**Kuvaajan lukeminen:** Suoran päätepisteet ovat kaukana toisistaan, joten kulmakerroin luetaan niistä: lämpötilat $20\,{}^\circ\text{C}$ ja $70\,{}^\circ\text{C}$, pituuden muutokset $0\,\text{mm}$ ja $3{,}0\,\text{mm}$.
+**Kaava:** $k = \dfrac{\Delta(\Delta l)}{\Delta T}$, eli $$
+\begin{aligned}
+k &= \dfrac{\Delta l_2 - \Delta l_1}{T_2 - T_1}
+\end{aligned}
+$$
+**Muunnokset:** Lämpötilojen erotus on sama celsiusasteina ja kelvineinä: $70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$.
+**Sijoitus:** $$
+\begin{aligned}
+k &= \dfrac{3{,}0\,\text{mm} - 0\,\text{mm}}{70\,{}^\circ\text{C} - 20\,{}^\circ\text{C}} \\
+&= \dfrac{3{,}0\,\text{mm}}{50\,\text{K}} \\
+&= 0{,}060\,\text{mm/K}
+\end{aligned}
+$$
+**Vastaus:** Kulmakerroin on $k = 0{,}060\,\text{mm/K}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Kymmenen kelvinin lämpötilaero pidentää palkkia $0{,}060\,\text{mm/K} \cdot 10\,\text{K} = 0{,}60\,\text{mm}$, mikä sopii kuvaajaan: ruudukon yksi lämpötilaväli on hieman yli yhden $0{,}5\,\text{mm}$:n ruudun korkuinen.
+
+### b)
+**Annettu:** $l_0 = 5{,}0\,\text{m}$ ja a-kohdan kulmakerroin $k = 0{,}060\,\text{mm/K}$
+**Kysytty:** lämpölaajenemiskerroin $\alpha$
+**Periaate:** Kiinteän kappaleen pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen: $\Delta l = \alpha\, l_0\, \Delta T$ (luku *Lämpölaajeneminen*). Kuvaajan kulmakerroin on $k = \Delta l / \Delta T$.
+**Kaava:** $\Delta l = \alpha\, l_0\, \Delta T$, joten $\alpha = \dfrac{\Delta l}{l_0\, \Delta T} = \dfrac{k}{l_0}$
+**Muunnokset:** Pituuden muutos on millimetreinä ja alkupituus metreinä, joten kulmakerroin muunnetaan: $$
+\begin{aligned}
+0{,}060\,\text{mm/K} &= 0{,}060 \cdot 10^{-3}\,\text{m/K} \\
+&= 6{,}0 \cdot 10^{-5}\,\text{m/K}
+\end{aligned}
+$$.
+**Sijoitus:** $$
+\begin{aligned}
+\alpha &= \dfrac{k}{l_0} \\
+&= \dfrac{6{,}0 \cdot 10^{-5}\,\text{m/K}}{5{,}0\,\text{m}} \\
+&= 1{,}2 \cdot 10^{-5}\,\text{1/K}
+\end{aligned}
+$$
+**Vastaus:** $\alpha = 1{,}2 \cdot 10^{-5}\,\text{1/K} = 12 \cdot 10^{-6}\,\text{1/K}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Tarkistus takaperin: $$
+\begin{aligned}
+\Delta l &= \alpha\, l_0\, \Delta T \\
+&= 12 \cdot 10^{-6}\,\text{1/K} \cdot 5{,}0\,\text{m} \cdot 50\,\text{K} \\
+&= 3{,}0 \cdot 10^{-3}\,\text{m} \\
+&= 3{,}0\,\text{mm}
+\end{aligned}
+$$ sama kuin kuvaajan pituuden muutos. Palkki pitenee $3{,}0\,\text{mm} : 5000\,\text{mm} = 0{,}06\,\%$, mikä on kiinteälle aineelle tavallista.
+
+### c)
+**Kysytty:** miten tulos eroaa teräksen taulukkoarvosta ja mitä se kertoo materiaalista
+**Periaate:** Taulukkoarvo on vertailukohta: jos mitattu arvo on lähellä sitä, aineisto sopii oletettuun materiaaliin. Taulukkoarvo $12 \cdot 10^{-6}\,\text{1/K}$ on teräksen pituuden lämpölaajenemiskerroin ([MAFY-taulukko: pituuden lämpölaajenemiskertoimia](https://mafytaulukot.fi/d483a4f3-e523-4a51-9b9a-07ec5b57cd35/fi/1787733935/theory.html)).
+**Mallivastaus:** Mitattu $\alpha = 12 \cdot 10^{-6}\,\text{1/K}$ on sama kuin teräksen taulukkoarvo, poikkeama on $0\,\%$. Mittaus sopii siis siihen, että palkki on terästä. Yhtäpitävyys ei kuitenkaan todista tarkkaa seosta: taulukkoarvo on teräksen tyypillinen arvo, eri seoksilla arvo vaihtelee hieman, ja tulos perustuu yhteen mittaukseen, jolla on epävarmuus (d-kohta).
+
+### d)
+**Annettu:** $\Delta T = 50\,\text{K}$, $\Delta l = 3{,}0\,\text{mm}$, lämpömittarin lukeman virhe enintään $\pm 1\,{}^\circ\text{C}$ ja työntömitan enintään $\pm 0{,}1\,\text{mm}$
+**Kysytty:** $\alpha$:n suurin suhteellinen epävarmuus $\dfrac{\Delta\alpha}{\alpha}$, vaihteluväli ja merkittävin virhelähde
+**Periaate:** Kun suure lasketaan osamääränä, suhteelliset epävarmuudet lasketaan pahimmassa tapauksessa yhteen. Alkupituuden epävarmuus on tehtävän mukaan niin pieni, että se jätetään pois. Sekä lämpötilan että pituuden muutos on kahden lukeman erotus, ja kummankin lukeman virhe voi olla samansuuntainen, joten erotuksen virhe on kaksinkertainen.
+**Kaava:** Koska $\alpha = \dfrac{\Delta l}{l_0\, \Delta T}$, pätee $$
+\begin{aligned}
+\dfrac{\Delta\alpha}{\alpha} &= \dfrac{\delta(\Delta l)}{\Delta l} \\
+&\quad + \dfrac{\delta(\Delta T)}{\Delta T}
+\end{aligned}
+$$
+**Muunnokset:** Ei tarvita: suhteelliset epävarmuudet ovat dimensiottomia, kun osoittaja ja nimittäjä ovat samassa yksikössä. Lämpötilan virhe $\pm 1\,{}^\circ\text{C}$ on $\pm 1\,\text{K}$.
+**Sijoitus:** Erotusten virheet ovat $\delta(\Delta T) = 2 \cdot 1\,\text{K} = 2\,\text{K}$ ja $\delta(\Delta l) = 2 \cdot 0{,}1\,\text{mm} = 0{,}2\,\text{mm}$. Suhteelliset epävarmuudet: $$
+\begin{aligned}
+\dfrac{\delta(\Delta T)}{\Delta T} &= \dfrac{2\,\text{K}}{50\,\text{K}} \\
+&= 4{,}0\,\%
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\dfrac{\delta(\Delta l)}{\Delta l} &= \dfrac{0{,}2\,\text{mm}}{3{,}0\,\text{mm}} \\
+&= 6{,}7\,\%
+\end{aligned}
+$$ Yhteensä $$
+\begin{aligned}
+\dfrac{\Delta\alpha}{\alpha} &= 4{,}0\,\% + 6{,}7\,\% \\
+&= 10{,}7\,\%
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+\Delta\alpha &= 0{,}107 \cdot 12 \cdot 10^{-6}\,\text{1/K} \\
+&\approx 1{,}3 \cdot 10^{-6}\,\text{1/K}
+\end{aligned}
+$$
+**Vastaus:** Suurin suhteellinen epävarmuus on noin $11\,\%$ ja $\alpha = (12 \pm 1{,}3) \cdot 10^{-6}\,\text{1/K}$ eli väli $10{,}7 \ldots 13{,}3\ (10^{-6}\,\text{1/K})$. Taulukkoarvo $12 \cdot 10^{-6}\,\text{1/K}$ on välin sisällä, joten ero taulukkoon ei ole merkitsevä. Merkittävin virhelähde on pituuden lukema ($6{,}7\,\%$ vs. $4{,}0\,\%$), koska pituuden muutos on vain $3{,}0\,\text{mm}$.
+**Järkevyys:** Tulos on pahin tapaus: todellinen virhe on yleensä pienempi, koska lukemien virheet voivat kumota toisensa. Kymmenen prosentin epävarmuus on tavallinen, kun mitataan millimetrien suuruista muutosta.
+
+### e)
+**Kysytty:** miksi pisteet ovat suoralla ja yksi muutos, joka pienentäisi epävarmuutta
+**Periaate:** Lämpölaajeneminen noudattaa kaavaa $\Delta l = \alpha\, l_0\, \Delta T$. Suhteellinen epävarmuus pienenee, kun mitattava muutos on suurempi tai lukema tarkempi (luku *Lämpölaajeneminen*).
+**Mallivastaus:** Pisteet ovat suoralla, koska $\Delta l = \alpha\, l_0\, \Delta T$ ja $\alpha$ on kapealla lämpötilavälillä likimain vakio. Silloin $\Delta l$ on verrannollinen lämpötilan muutokseen. Suora kulkee pisteen $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ kautta, koska muutos on alkulämpötilassa nolla.
+
+Paras muutos on tarkempi pituuden mittaus, koska se oli suurin virhelähde. Jos työntömitta vaihdetaan mittakelloon, jonka virhe on $\pm 0{,}01\,\text{mm}$, pituuden suhteellinen epävarmuus on $0{,}02\,\text{mm} : 3{,}0\,\text{mm} = 0{,}67\,\%$ ja kokonaisepävarmuus $4{,}0\,\% + 0{,}67\,\% \approx 4{,}7\,\%$ eli $\Delta\alpha \approx 0{,}6 \cdot 10^{-6}\,\text{1/K}$. Myös suurempi lämpötilaero (esimerkiksi $20\,{}^\circ\text{C} \ldots 120\,{}^\circ\text{C}$) pienentäisi molempia suhteellisia virheitä, koska $\Delta l$ ja $\Delta T$ kasvaisivat mutta lukemien virheet pysyisivät samoina.
+
+### Yleisiä virheitä
+- Kulmakerroin luetaan yhdestä pisteestä jakamalla $3{,}0\,\text{mm} : 70\,{}^\circ\text{C}$, vaikka suora lähtee pisteestä $(20\,{}^\circ\text{C};\ 0\,\text{mm})$, ja tulos on väärä.
+- Kulmakerroin $0{,}060\,\text{mm/K}$ jaetaan alkupituudella $5{,}0\,\text{m}$ muuntamatta millimetrejä metreiksi, jolloin $\alpha$ on tuhatkertaisesti liian suuri.
+- $\alpha$:n yksikkö unohtuu tai kirjoitetaan $\text{m/K}$ eikä $\text{1/K}$.
+- c-kohdassa päätellään, että palkki on ehdottomasti tietyn seoksen terästä, vaikka yksi mittaus ja taulukon tyypillinen arvo eivät sitä todista.
+- d-kohdassa lasketaan virheeksi vain yksi lukema ($\pm 1\,\text{K}$ ja $\pm 0{,}1\,\text{mm}$) eikä lukemien erotuksen virhe, tai suhteelliset epävarmuudet kerrotaan keskenään eikä lasketa yhteen.
+
+### Hyväksytään myös
+- a-kohdassa kulmakerroin $0{,}058 \ldots 0{,}062\,\text{mm/K}$, ja b-kohdassa vastaavasti $\alpha = (11{,}6 \ldots 12{,}4) \cdot 10^{-6}\,\text{1/K}$.
+- d-kohdassa $\dfrac{\Delta\alpha}{\alpha}$ voidaan laskea myös neliöllisellä yhdistämisellä $\sqrt{4{,}0^2 + 6{,}7^2}\,\% \approx 7{,}8\,\%$, kun perustellaan, että virheet eivät tavallisesti ole kaikki pahimmillaan yhtä aikaa.
+
+## fy9-kokeellisuus-s8
+
+### a)
+**Annettu:** kuvaajan kuusi pistettä $(t;\ s)$: $(1\,\text{s};\ 0{,}6\,\text{m})$, $(2\,\text{s};\ 0{,}8\,\text{m})$, $(3\,\text{s};\ 1{,}6\,\text{m})$, $(4\,\text{s};\ 2{,}1\,\text{m})$, $(5\,\text{s};\ 2{,}4\,\text{m})$ ja $(6\,\text{s};\ 2{,}9\,\text{m})$; kärryn nopeus on vakio
+**Kysytty:** kärryn nopeus $v$
+**Periaate:** Vakionopeudella matka kasvaa tasaisesti, joten pisteisiin sovitetaan suora ja nopeus on sen kulmakerroin (luku *Graafinen esitys ja suoran sovittaminen*). Suora piirretään pisteparven keskeltä niin, että pisteitä on suunnilleen yhtä monta sen molemmin puolin; pisteitä ei yhdistetä murtoviivaksi.
+**Kuvaajan lukeminen:** Sovitettu suora kulkee noin pisteiden $(1\,\text{s};\ 0{,}53\,\text{m})$ ja $(6\,\text{s};\ 2{,}93\,\text{m})$ kautta. Ne ovat kaukana toisistaan ja suoralla, joten kulmakerroin luetaan niistä eikä mittauspisteistä, jotka poikkeavat suorasta.
+**Kaava:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{2{,}93\,\text{m} - 0{,}53\,\text{m}}{6\,\text{s} - 1\,\text{s}} \\
+&= \dfrac{2{,}40\,\text{m}}{5\,\text{s}} \\
+&\approx 0{,}48\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Kärryn nopeus on noin $0{,}5\,\text{m/s}$ (tarkemmin $0{,}48\,\text{m/s}$). Silmämääräisessä sovituksessa hyväksytään $0{,}44 \ldots 0{,}52\,\text{m/s}$. Tulos annetaan kahdella merkitsevällä numerolla, koska luetut arvot ovat kahden numeron tarkkuudella.
+**Järkevyys:** Kärry kulkee ensimmäisen ja viimeisen mittauspisteen välillä $2{,}9\,\text{m} - 0{,}6\,\text{m} = 2{,}3\,\text{m}$ viidessä sekunnissa, eli $0{,}46\,\text{m/s}$, mikä on lähellä tulosta. Nopeus on kävelyvauhtia hitaampi ($1{,}7\,\text{km/h}$), mikä sopii käsin liikuteltavalle kärrylle.
+
+### b)
+**Annettu:** a-kohdan nopeus $v = 0{,}48\,\text{m/s}$ ja suoran piste $(1\,\text{s};\ 0{,}53\,\text{m})$
+**Kysytty:** suoran ja $s$-akselin leikkauspiste $s_0$ sekä sen tulkinta
+**Periaate:** Suoran yhtälö on $s = s_0 + v\,t$. Jos liike alkaa nollamerkistä samalla hetkellä kuin kello käynnistyy, suora kulkee origon kautta ja $s_0 = 0$. Poikkeama voi olla mittausvirhe, ja sen merkitsevyyttä arvioidaan pisteiden hajontaa vasten.
+**Kaava:** $s = s_0 + v\,t$, joten $s_0 = s - v\,t$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+s_0 &= s - v\,t \\
+&= 0{,}53\,\text{m} - 0{,}48\,\text{m/s} \cdot 1\,\text{s} \\
+&= 0{,}05\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** Suora leikkaa $s$-akselin kohdassa $s_0 \approx 0{,}05\,\text{m}$, hyvin lähellä origoa. Silmämääräisessä sovituksessa hyväksytään $-0{,}10 \ldots +0{,}20\,\text{m}$. Aineisto ei osoita, että suora ohittaisi origon: $0{,}05\,\text{m}$ on pienempi kuin pisteiden hajonta suorasta (noin $0{,}2\,\text{m}$).
+**Järkevyys:** Systemaattinen virhe siirtäisi kaikkia pisteitä samaan suuntaan ja siten koko suoraa. Jos esimerkiksi kello käynnistettäisiin $0{,}3\,\text{s}$ liian myöhään, kaikki ajat olisivat liian lyhyitä ja suora siirtyisi $0{,}48\,\text{m/s} \cdot 0{,}3\,\text{s} \approx 0{,}14\,\text{m}$ ylöspäin. Samanlaisen siirtymän aiheuttaisi nollamerkin väärä kohta. Satunnaisvirhe puolestaan hajottaa pisteet suoran molemmin puolin eikä siirrä suoraa. Tässä aineistossa $0{,}05\,\text{m}$ on selvästi vähemmän kuin tällainen siirtymä.
+
+### c)
+**Annettu:** suoran yhtälö $s = 0{,}05\,\text{m} + 0{,}48\,\text{m/s} \cdot t$ a- ja b-kohdasta; $t = 9\,\text{s}$
+**Kysytty:** matka $s$ hetkellä $9\,\text{s}$ ja tuloksen luotettavuus
+**Periaate:** Ennuste saadaan jatkamalla suoraa mittausalueen ulkopuolelle (ekstrapolointi). Se edellyttää, että liike jatkuu samanlaisena eli nopeus pysyy vakiona.
+**Kuvaajan lukeminen:** Suora jatketaan aika-akselin kohtaan $9\,\text{s}$, ja matka-akselilta luetaan noin $4{,}4\,\text{m}$ (akseli ulottuu arvoon $4{,}5\,\text{m}$).
+**Kaava:** $s = s_0 + v\,t$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+s &= s_0 + v\,t \\
+&= 0{,}05\,\text{m} + 0{,}48\,\text{m/s} \cdot 9\,\text{s} \\
+&= 0{,}05\,\text{m} + 4{,}32\,\text{m} \\
+&\approx 4{,}4\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** Matka hetkellä $9\,\text{s}$ on noin $4{,}4\,\text{m}$; kuvaajalta luettu ja laskettu arvo ovat samat lukutarkkuuden rajoissa. Tulos on arvio eikä mitattu arvo.
+**Järkevyys:** Ennusteen luotettavuus on heikompi kuin mittausalueen sisällä. Aika $9\,\text{s}$ on $3\,\text{s}$ viimeisen mittauspisteen $6\,\text{s}$ jälkeen, eli $60\,\%$ mittausalueen pituudesta $5\,\text{s}$. Kulmakertoimen epävarmuus $\pm 0{,}04\,\text{m/s}$ kasvaa ajan mukana: $0{,}04\,\text{m/s} \cdot 9\,\text{s} = 0{,}36\,\text{m}$, joten matka on $4{,}4 \pm 0{,}4\,\text{m}$. Lisäksi oletus vakionopeudesta on todennettu vain välillä $1 \ldots 6\,\text{s}$: rata voi loppua, tai kärry voi hidastua kitkan takia.
+
+### d)
+**Kysytty:** poikkeamien syy, onko virhe satunnainen vai systemaattinen, ja yksi parannus
+**Periaate:** Satunnaisvirhe hajottaa mittaukset molempiin suuntiin eikä sillä ole kuviota; systemaattinen virhe siirtää kaikkia mittauksia samaan suuntaan. Satunnaisvirhettä pienennetään toistoilla ja tarkemmalla mittausvälineellä (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** Pisteiden poikkeamat sovitetusta suorasta ovat (mitattu $-$ suora) $+0{,}07\,\text{m}$, $-0{,}21\,\text{m}$, $+0{,}11\,\text{m}$, $+0{,}13\,\text{m}$, $-0{,}05\,\text{m}$ ja $-0{,}03\,\text{m}$. Ne ovat sekä suoran ylä- että alapuolella eikä niissä ole kuviota, joten virhe on pääosin satunnainen. Systemaattinen virhe siirtäisi kaikkia pisteitä samaan suuntaan.
+
+Todennäköinen syy on käsin ajastus: kellon käynnistäminen ja pysäyttäminen viivästyvät reaktioajan verran, tyypillisesti $0{,}2 \ldots 0{,}3\,\text{s}$. Nopeudella $0{,}48\,\text{m/s}$ se vastaa matkaa $0{,}10 \ldots 0{,}14\,\text{m}$. Suurin poikkeama, $0{,}21\,\text{m}$ kohdassa $t = 2\,\text{s}$, vastaa aikaa $0{,}21\,\text{m} : 0{,}48\,\text{m/s} \approx 0{,}4\,\text{s}$, ja muut poikkeamat ovat enintään $0{,}13\,\text{m}$ eli noin $0{,}3\,\text{s}$. Ne ovat samaa suuruusluokkaa kuin ajastusvirhe, joten selitys sopii aineistoon.
+
+Parannus: ajastus valokennolla tai nopealla videolla käsikellon sijaan poistaisi reaktioajan, ja usean toiston keskiarvo pienentäisi jäljelle jäävää hajontaa.
+
+### Yleisiä virheitä
+- Pisteet yhdistetään murtoviivaksi, tai suora piirretään kahden mittauspisteen kautta, vaikka ne eivät ole pisteparven keskellä.
+- Kulmakerroin luetaan kahdesta vierekkäisestä pisteestä, esimerkiksi $(0{,}8\,\text{m} - 0{,}6\,\text{m}) : 1\,\text{s} = 0{,}2\,\text{m/s}$, jolloin hajonta vaikuttaa tulokseen suhteettoman paljon.
+- Kulmakerroin lasketaan jakamalla vain yhden pisteen arvot $s : t$, esimerkiksi $2{,}9\,\text{m} : 6\,\text{s} = 0{,}48\,\text{m/s}$; tulos on lähellä, mutta menetelmä olettaa suoran kulkevan origon kautta, mitä b-kohta nimenomaan kysyy.
+- c-kohdassa ennustetta pidetään yhtä luotettavana kuin mittausalueen arvoja, tai ennuste lasketaan lukemalla viimeinen piste ja arvioimalla "vähän lisää".
+- d-kohdassa hajontaa kutsutaan systemaattiseksi virheeksi, vaikka poikkeamat ovat molempiin suuntiin, tai syyksi nimetään "huono kärry" ilman perustelua.
+
+### Hyväksytään myös
+- a-kohdassa kulmakerroin voidaan laskea laskimen pienimmän neliösumman sovituksesta ($v = 0{,}48\,\text{m/s}$, $s_0 = 0{,}05\,\text{m}$) tai ensimmäisen ja viimeisen mittauspisteen kautta ($0{,}46\,\text{m/s}$).
+- b-kohdassa vastaus "suora kulkee likimain origon kautta" hyväksytään, kun leikkauspiste on annettu ja sitä on verrattu hajontaan. Jos leikkauspisteeksi saadaan silmämääräisesti $0{,}1 \ldots 0{,}2\,\text{m}$, vastaus hyväksytään, kun ajastusvirhe nimetään mahdolliseksi syyksi.
+- c-kohdassa vastaus $4{,}2 \ldots 4{,}6\,\text{m}$ hyväksytään silmämääräisen sovituksen vaihtelun vuoksi.

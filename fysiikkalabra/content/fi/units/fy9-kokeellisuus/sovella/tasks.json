@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi tehtävää kokeellisesta työstä: kaksi koesuunnitelmaa, raportin arviointi, mittausaineisto kuvaajana, laskutehtävä epävarmuuksineen ja moduuleja yhdistävä tehtävä.",
+ "intro": "Kahdeksan tehtävää kokeellisesta työstä: kaksi koesuunnitelmaa, raportin arviointi, mittausaineisto kuvaajana, laskutehtävä epävarmuuksineen, moduuleja yhdistävä tehtävä sekä kaksi tehtävää, joissa luetaan kuvaajaa ja arvioidaan mittauksen epävarmuutta.",
  "tasks": [
   {
    "id": "fy9-kokeellisuus-s1",
@@ -719,6 +719,302 @@
     "concept": "fy4-6",
     "experiment": "fy1-3",
     "communication": "fy1-8"
+   }
+  },
+  {
+   "id": "fy9-kokeellisuus-s7",
+   "title": "Teräspalkin pidentyminen",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy3-8",
+    "fy1-3",
+    "fy1-4"
+   ],
+   "figure": "fy3-8/length-graph",
+   "text": "Opiskelija tutkii, kuinka paljon teräspalkki pitenee lämmetessään. Palkin pituus lämpötilassa $20\\,{}^\\circ\\text{C}$ on $l_0 = 5{,}0\\,\\text{m}$, ja pituus on mitattu niin tarkasti, että sen epävarmuuden voi jättää huomiotta. Opiskelija lämmittää palkkia tasaisesti ja lukee lämpötilan digitaalisella lämpömittarilla, jonka lukeman virhe on enintään $\\pm 1\\,{}^\\circ\\text{C}$. Pituuden muutoksen $\\Delta l$ hän mittaa palkin päästä työntömitalla, jonka lukeman virhe on enintään $\\pm 0{,}1\\,\\text{mm}$. Kuvaajassa ovat mittauspisteet.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä kuvaajan suoran kulmakerroin.",
+     "answer": {
+      "value": 0.06,
+      "unit": "mm/K",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä: $(20\\,{}^\\circ\\text{C};\\ 0\\,\\text{mm})$ ja $(70\\,{}^\\circ\\text{C};\\ 3{,}0\\,\\text{mm})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$k = \\dfrac{\\Delta(\\Delta l)}{\\Delta T}$, pituuden muutoksen kasvu lämpötilan muutosta kohti."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{3{,}0\\,\\text{mm} - 0\\,\\text{mm}}{70\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C}} \\\\\n&= 0{,}060\\,\\text{mm/K}\n\\end{aligned}\n$$, kun lämpötilaero $50\\,{}^\\circ\\text{C}$ on $50\\,\\text{K}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä palkin pituuden lämpölaajenemiskerroin $\\alpha$ mittauksen perusteella.",
+     "answer": {
+      "value": 1.2e-05,
+      "unit": "1/K",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Lähtöyhtälö $\\Delta l = \\alpha\\, l_0\\, \\Delta T$ ratkaistaan ennen lukuja: $\\alpha = \\dfrac{\\Delta l}{l_0\\,\\Delta T} = \\dfrac{k}{l_0}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Muunnos $0{,}060\\,\\text{mm/K} = 6{,}0 \\cdot 10^{-5}\\,\\text{m/K}$ ja $$\n\\begin{aligned}\n\\alpha &= \\dfrac{6{,}0 \\cdot 10^{-5}\\,\\text{m/K}}{5{,}0\\,\\text{m}} \\\\\n&= 1{,}2 \\cdot 10^{-5}\\,\\text{1/K}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\alpha = 12 \\cdot 10^{-6}\\,\\text{1/K}$: kaksi merkitsevää numeroa kuten luetuissa arvoissa ja yksikkö $\\text{1/K}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Käänteinen tarkistus: $$\n\\begin{aligned}\n\\Delta l &= \\alpha\\, l_0\\, \\Delta T \\\\\n&= 12 \\cdot 10^{-6}\\,\\text{1/K} \\cdot 5{,}0\\,\\text{m} \\cdot 50\\,\\text{K} \\\\\n&= 3{,}0\\,\\text{mm}\n\\end{aligned}\n$$ sama kuin kuvaajan pituuden muutos. Palkki pitenee vain $0{,}06\\,\\%$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 2,
+     "text": "Vertaa tulosta teräksen taulukkoarvoon, joka on $12 \\cdot 10^{-6}\\,\\text{1/K}$. Mitä vertailu kertoo palkin materiaalista?",
+     "criteria": [
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulos $12 \\cdot 10^{-6}\\,\\text{1/K}$ on sama kuin teräksen taulukkoarvo (poikkeama $0\\,\\%$), joten mittaus sopii siihen, että palkki on terästä."
+      },
+      {
+       "text": "Selittää, miksi yhtäpitävyys ei todista seosta: taulukkoarvo on teräksen tyypillinen arvo ja eri seoksilla arvo vaihtelee hieman, ja tulos perustuu yhteen mittaukseen, jolla on epävarmuus.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Arvioi mittauksen epävarmuus: laske $\\alpha$:n suurin suhteellinen epävarmuus, kun lämpötilan ja pituuden muutoksen lukemat ovat kumpikin pahimmillaan väärin. Anna myös $\\alpha$:n vaihteluväli ja kerro, mikä virhelähde vaikuttaa eniten.",
+     "answer": {
+      "value": 10.7,
+      "unit": "%",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Osamäärän $\\alpha = \\dfrac{\\Delta l}{l_0\\,\\Delta T}$ suhteelliset epävarmuudet lasketaan yhteen: $$\n\\begin{aligned}\n\\dfrac{\\Delta\\alpha}{\\alpha} &= \\dfrac{\\delta(\\Delta l)}{\\Delta l} \\\\\n&\\quad + \\dfrac{\\delta(\\Delta T)}{\\Delta T}\n\\end{aligned}\n$$ ja $l_0$:n epävarmuus jätetään pois."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Kumpikin muutos on kahden lukeman erotus, joten virhe voi olla kaksinkertainen: $\\delta(\\Delta T) = 2\\,\\text{K}$ ja $\\delta(\\Delta l) = 0{,}2\\,\\text{mm}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{2\\,\\text{K}}{50\\,\\text{K}} = 4{,}0\\,\\%$ ja $\\dfrac{0{,}2\\,\\text{mm}}{3{,}0\\,\\text{mm}} = 6{,}7\\,\\%$, yhteensä $10{,}7\\,\\%$, joten $\\Delta\\alpha \\approx 1{,}3 \\cdot 10^{-6}\\,\\text{1/K}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "$\\alpha = (12 \\pm 1{,}3) \\cdot 10^{-6}\\,\\text{1/K}$ eli väli $10{,}7 \\ldots 13{,}3\\ (10^{-6}\\,\\text{1/K})$ sisältää taulukkoarvon $12 \\cdot 10^{-6}\\,\\text{1/K}$, joten ero taulukkoon ei ole merkitsevä. Pituuden lukeman virhe ($6{,}7\\,\\%$) vaikuttaa eniten, koska pituuden muutos on vain $3{,}0\\,\\text{mm}$."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 2,
+     "text": "Selitä, miksi mittauspisteet ovat samalla suoralla. Ehdota yksi muutos mittaukseen, joka pienentäisi $\\alpha$:n epävarmuutta, ja perustele se.",
+     "criteria": [
+      {
+       "text": "Ehdottaa muutoksen ja perustelee sen epävarmuudella, esimerkiksi mittakello, jonka virhe on $\\pm 0{,}01\\,\\text{mm}$, pienentää pituuden suhteellisen virheen arvoon $0{,}67\\,\\%$ ja kokonaisepävarmuuden noin arvoon $4{,}7\\,\\%$. Kelpaa myös suurempi lämpötilaero tai pidempi palkki, kun vaikutus perustellaan.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Selittää suoruuden: $\\Delta l = \\alpha\\, l_0\\,\\Delta T$, ja kapealla lämpötilavälillä $\\alpha$ on likimain vakio, joten $\\Delta l$ on verrannollinen lämpötilan muutokseen. Suora kulkee pisteen $(20\\,{}^\\circ\\text{C};\\ 0\\,\\text{mm})$ kautta, koska alkulämpötilassa muutos on nolla.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy3-8",
+    "concept": "fy3-8",
+    "communication": "fy1-8",
+    "experiment": "fy1-3"
+   }
+  },
+  {
+   "id": "fy9-kokeellisuus-s8",
+   "title": "Kärry tasaisella radalla",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy1-4",
+    "fy1-5",
+    "fy1-3"
+   ],
+   "figure": "fy1-4/scatter-points",
+   "text": "Opiskelija tutkii kärryä, joka liikkuu tasaisella radalla. Hän käynnistää käsikellon, kun kärry lähtee radan nollamerkistä, ja pysäyttää kellon, kun kärry ohittaa kunkin merkin. Merkin etäisyys $s$ nollamerkistä luetaan mittanauhasta. Kuvaajassa on kuusi mittauspistettä $(t,s)$; suoraa ei ole piirretty. Oletetaan, että kärryn nopeus on vakio.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Sovita pisteisiin suora silmämääräisesti ja määritä sen kulmakertoimesta kärryn nopeus.",
+     "answer": {
+      "value": 0.48,
+      "unit": "m/s",
+      "tolerance": 0.08
+     },
+     "criteria": [
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Suora kulkee pisteparven keskeltä, ja pisteitä on suunnilleen yhtä monta sen molemmin puolin. Pisteitä ei yhdistetä murtoviivaksi."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan sovitetun suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(1\\,\\text{s};\\ 0{,}53\\,\\text{m})$ ja $(6\\,\\text{s};\\ 2{,}93\\,\\text{m})$. Kaksi mittauspistettä ei kelpaa, jos ne eivät ole suoralla."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{\\Delta s}{\\Delta t}$, tasaisessa liikkeessä $(t,s)$-kuvaajan suoran kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nv &= \\dfrac{2{,}93\\,\\text{m} - 0{,}53\\,\\text{m}}{6\\,\\text{s} - 1\\,\\text{s}} \\\\\n&\\approx 0{,}48\\,\\text{m/s}\n\\end{aligned}\n$$ Silmämääräisesti hyväksytään $0{,}44 \\ldots 0{,}52\\,\\text{m/s}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kulkeeko sovittamasi suora origon kautta? Määritä suoran ja $s$-akselin leikkauspiste ja selitä, miten mittausvirhe voisi siirtää suoran pois origosta.",
+     "answer": {
+      "value": 0.05,
+      "unit": "m",
+      "tolerance": 2.0
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Suoran yhtälö on $s = s_0 + v\\,t$, joten $s_0 = s - v\\,t$ suoran jollakin pisteellä."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\ns_0 &= 0{,}53\\,\\text{m} - 0{,}48\\,\\text{m/s} \\cdot 1\\,\\text{s} \\\\\n&= 0{,}05\\,\\text{m}\n\\end{aligned}\n$$ Silmämääräisesti hyväksytään $-0{,}10 \\ldots +0{,}20\\,\\text{m}$."
+      },
+      {
+       "text": "Päättelee, että $0{,}05\\,\\text{m}$ on pienempi kuin pisteiden hajonta suorasta (noin $0{,}2\\,\\text{m}$), joten suora voi kulkea origon kautta eikä aineisto osoita poikkeamaa. Nimeää systemaattisen virheen, joka siirtäisi kaikkia pisteitä samaan suuntaan, esimerkiksi kellon käynnistys liian myöhään tai nollamerkin väärä kohta.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Mikä on kärryn matka hetkellä $9\\,\\text{s}$? Lue arvo jatkamalla suoraa, laske se yhtälöllä ja arvioi, kuinka luotettava tulos on.",
+     "answer": {
+      "value": 4.4,
+      "unit": "m",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Suora jatketaan aika-akselin arvoon $9\\,\\text{s}$, ja matka-akselilta luetaan noin $4{,}4\\,\\text{m}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$s = s_0 + v\\,t$ suoran yhtälönä."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\ns &= 0{,}05\\,\\text{m} + 0{,}48\\,\\text{m/s} \\cdot 9\\,\\text{s} \\\\\n&\\approx 4{,}4\\,\\text{m}\n\\end{aligned}\n$$ kuvaajalta luettu arvo on sama lukutarkkuuden rajoissa."
+      },
+      {
+       "text": "Nimeää oletuksen, että nopeus pysyy vakiona mittausalueen $1 \\ldots 6\\,\\text{s}$ ulkopuolellakin, ja arvioi epävarmuuden: $9\\,\\text{s}$ on $3\\,\\text{s}$ viimeisen pisteen jälkeen, ja kulmakertoimen virhe $\\pm 0{,}04\\,\\text{m/s}$ antaa $\\pm 0{,}4\\,\\text{m}$. Tulos on arvio eikä mitattu arvo.",
+       "tag": "transfer",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Pisteet eivät ole täsmälleen suoralla. Selitä, mistä poikkeamat johtuvat ja onko kyse satunnaisesta vai systemaattisesta virheestä. Ehdota yksi muutos, joka vähentäisi hajontaa.",
+     "criteria": [
+      {
+       "text": "Päättelee virheen satunnaiseksi: poikkeamat ovat molempiin suuntiin ($-0{,}2 \\ldots +0{,}1\\,\\text{m}$) eikä niissä ole kuviota, kun systemaattinen virhe siirtäisi kaikkia pisteitä samaan suuntaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Nimeää syyn: käsin ajastus. Reaktioaika $0{,}2 \\ldots 0{,}3\\,\\text{s}$ vastaa nopeudella $0{,}48\\,\\text{m/s}$ matkaa $0{,}10 \\ldots 0{,}14\\,\\text{m}$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Vertaa suuruuksia: suurin poikkeama kohdassa $t = 2\\,\\text{s}$ on $0{,}21\\,\\text{m}$ eli ajaksi muutettuna noin $0{,}4\\,\\text{s}$, ja muut poikkeamat ovat enintään $0{,}13\\,\\text{m}$ eli noin $0{,}3\\,\\text{s}$, samaa suuruusluokkaa kuin ajastusvirhe."
+      },
+      {
+       "text": "Esittää muutoksen, joka vähentäisi hajontaa, ja perustelee sen: valokenno tai videokuva ajastukseen käsikellon tilalle, tai monta toistoa ja keskiarvo.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy1-5",
+    "concept": "fy1-3",
+    "experiment": "fy1-3",
+    "transfer": "fy1-4"
    }
   }
  ]
