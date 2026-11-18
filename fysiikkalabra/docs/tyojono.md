@@ -92,7 +92,7 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8f. Animoitu kuva (opettaja 2026-11-13, pilotti fy3-8)
-Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`); odottaa opettajan hyväksyntää (`reviews.py approve-figures fy3-8` vasta sen jälkeen). Muut luvut vasta hyväksynnän jälkeen. Vaatimukset: loki §8f.
+Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Vaatimukset: loki §8f.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
