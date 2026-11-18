@@ -76,6 +76,7 @@ Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei p�
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
+Varattu (FY8, 0f): claude/fy8-0f
 Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
 Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686). Jäljellä
 järjestyksessä FY8 → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
@@ -99,6 +100,7 @@ sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurs
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
+Varattu (FY8, 0f): claude/fy8-0f
 Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`), FY6 (0f-PR #675: fy6-2…14; `docs/audits/2026-11-17-8j-FY6.md`), FY3 (0f-PR claude/fy3-8j-0f: fy3-1, -3, -4, -5, -6, -7, -9, -10, -12; `docs/audits/2026-11-17-8j-FY3.md`).
 FY2 tehty paitsi fy2-1 (ei kertaustehtävää; kysymys opettajalle, `docs/audits/2026-11-17-8j-FY2.md`; PR #676).
 FY7 tehty (0f-PR 2: fy7-1, 3–10, 12–14; `docs/audits/2026-11-17-8j-FY7.md`).
@@ -110,6 +112,7 @@ Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <
 `scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
+Varattu (FY8, 0f): claude/fy8-0f
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7. FY5 tehty (0f-PR #671). Jäljellä FY8 (fy8-2), fi, fi-easy, en:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
