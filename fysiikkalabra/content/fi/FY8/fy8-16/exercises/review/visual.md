@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 853ea13465225fe1
-SCOPE: delta reflow from 8d435459e6011e55 base cf5f907
+CONTENT-HASH: f6246ca290795a6d
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
-- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
+- [Minor] solutions.md L3-06 (Annettu, Vastaus c) — "$285\,\text{Mpc}$:n päässä", "$285\,\text{Mpc}$:iin" — a case ending after a LaTeX unit reads awkwardly — rephrase, e.g. "kaukaisin piste on etäisyydellä $285\,\text{Mpc}$", "pisteet ulottuvat etäisyydelle $285\,\text{Mpc}$".
+- [Minor] L3-06 task text — "kulmakertoimena" in a) vs "kulmakertoimen" wording used elsewhere; keep one term (kulmakerroin) throughout.
 
 ## Checked
-- Opened at 1280 px: fy8-16 open-exercises-1280-4 (Hubble fractions, ν rows). The 390 px layout is covered by check_layout 360/390 (passed), no 390 px exercise capture exists.
-- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
+- Delta, exercises: fy8-16-L2-09 and fy8-16-L3-06 at 1280 px with solutions open: fy8-16-open-exercises-L2-1280-12, -13 and fy8-16-open-exercises-L3-1280-8, -9, -10 (in content/fi/FY8/fy8-16/review/shots/). The packet's exercise-folder shots dir was absent; the lesson's captures were current (screenshot.py reused them).
+- Figure fy8-16/hubble-t shown in both tasks: axes with quantity and unit, readable ticks, points distinct from the line, grid and line through (250 Mpc, 18 000 km/s) as stated, axis ends at 300 Mpc. Consistent with the task text.
+- Solutions: principle, symbolic form, substitution, aligned chains, boxed answer and reasonableness block render cleanly, with units in LaTeX and the decimal comma; no clipping.
+- Caption changes (removal of "esimerkkiaineisto") have no layout effect.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
