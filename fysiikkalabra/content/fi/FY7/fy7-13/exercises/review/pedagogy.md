@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 601522414dcda47b
+CONTENT-HASH: a1006c29d32623aa
 
 ## Blocking
 (none)
 
 ## Polish
-- L2-07 Mallivastaus: "eikä virhe jakaudu mihinkään" is left over from the old wording and is unclear; delete it.
+(none)
 
 ## Checked
-- virhe to epävarmuus change is applied consistently in the task, options, feedback, Kysytty, Periaate and Mallivastaus; fits the lesson's measurement vocabulary.
-- L2-05 answer rounded to two significant figures with the reason (x1 = 5,0 mm); L3-05 punctuation fix; 'punaisen laserin' is more accurate.
+- Delta: only the Kaava step of solutions.md was rewritten (basic law, derived formula, symbolic simplification, then Sijoitus); numbers, answers and tasks unchanged.
+- The derivation steps follow the required order and are aligned blocks in the file; the packet diff shows them flattened.
+- Each Sijoitus still uses the formula its Kaava ends with.
+- Paragraph splits in long Periaate and Vastaus texts are layout only; layout checks are green.
+- Language fi: nothing to correct. Hash a1006c29d32623aa at start and end.
