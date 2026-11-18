@@ -109,22 +109,23 @@ with sync_playwright() as pw:
         expect(f"{page}: one '{T('js.pad_write')}' per exercise ({n_ex})", n_ex > 0 and btns.count() == n_ex, f"{btns.count()} buttons")
         expect(f"{page}: the button's text is this language's", btns.first.inner_text().strip() == T("js.pad_write"), btns.first.inner_text())
         order = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
-            const b = li.querySelector(':scope > .pad-open, :scope > .ex-row > .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution'), f = li.querySelector(':scope > .ex-row > form.check');
-            return b && [a, s, f].every(x => !x || (b.compareDocumentPosition(x) & 4)) && (!f || (b.nextElementSibling.classList.contains('pad') && (b.nextElementSibling.compareDocumentPosition(f) & 4))); })""")
-        expect(f"{page}: the button and editor come after the task and before its answer box, answer and model solution (write first, then check)", order)
-        row = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => !li.querySelector('form.check') || li.querySelector(':scope > .ex-row > .pad-open + .pad + form.check'))
+            const b = li.querySelector(':scope > .pad-open, :scope > .ex-row > .pad-open, :scope > fieldset .pad-open'), a = li.querySelector(':scope > details.answer'), s = li.querySelector(':scope > details.solution'), f = li.querySelector(':scope > .ex-row > form.check');
+            const ft = li.querySelector(':scope > .ex-foot');
+            return b && [a, s, ft].every(x => !x || (b.compareDocumentPosition(x) & 4)) && (!f || (f.nextElementSibling === b && b.nextElementSibling.classList.contains('pad'))); })""")
+        expect(f"{page}: the field and Tarkista first, then the button and editor, all before the foot with Vastaus and Näytä ratkaisu (U2)", order)
+        row = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => !li.querySelector('form.check') || li.querySelector(':scope > .ex-row > form.check + .pad-open + .pad'))
             && document.querySelectorAll('label.solved').length === 0""")
         expect(f"{page}: '{T('js.pad_write')}' and the answer box (input, unit, Tarkista) on one row; no tick 'Olen tehnyt ratkaisun' (teacher 2026-11-06)", row)
         head = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
-            const h = li.firstElementChild, t = h && [...h.querySelectorAll('.ex-toggle')], d = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
-            return h && h.classList.contains('ex-head') && t.length === d.length && t.every((b, i) => b.getAttribute('aria-controls') === d[i].id && b.textContent === d[i].querySelector('summary').textContent)
-                && (!li.querySelector('.ex-core') || h.contains(li.querySelector('.ex-core'))) && d.every(x => !x.open && x.querySelector('summary').offsetHeight === 0); })""")
-        expect(f"{page}: Vastaus and Näytä ratkaisu are buttons in the exercise's top row beside its tag (teacher 2026-11-01)", head)
+            const h = li.querySelector(':scope > .ex-foot'), t = h && [...h.querySelectorAll('.ex-toggle')], d = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
+            return h && h.classList.contains('ex-foot') && t.length === d.length && t.every((b, i) => b.getAttribute('aria-controls') === d[i].id && b.textContent === d[i].querySelector('summary').textContent)
+                && li.firstElementChild.classList.contains('ex-head') && !li.firstElementChild.querySelector('.ex-toggle') && (h.nextElementSibling === d[0]) && d.every(x => !x.open && x.querySelector('summary').offsetHeight === 0); })""")
+        expect(f"{page}: Vastaus and Näytä ratkaisu are buttons in the foot under the rule, the number and tags stay on top (U2)", head)
         tg = pg.locator("#exercises li[id] .ex-toggle").first
         tg.scroll_into_view_if_needed()
         li0 = pg.locator("#exercises li[id]:has(.ex-toggle)").first
         expect(f"{page}: Vastaus and Näytä ratkaisu stay in view, locked with the reason, until the student tries (teacher 2026-11-03)",
-               tg.is_visible() and tg.is_disabled() and tg.get_attribute("aria-disabled") == "true" and li0.locator(".ex-head .lock-note").inner_text().strip() == T("js.locked_try" if li0.locator("form.check").count() else "js.locked_done"))
+               tg.is_visible() and tg.is_disabled() and tg.get_attribute("aria-disabled") == "true" and li0.locator(".ex-foot .lock-note").inner_text().strip() == T("js.locked_try" if li0.locator("form.check").count() else "js.locked_done"))
         if li0.locator("form.check").count(): li0.locator("form.check input").fill("1"); li0.locator("form.check button").click()
         else: li0.evaluate("(li) => li.dispatchEvent(new CustomEvent('fl:written'))")   # what the editor tells once something is written in it
         expect(f"{page}: one try opens them", not tg.is_disabled() and li0.locator(".lock-note").count() == 0)
