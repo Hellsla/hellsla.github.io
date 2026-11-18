@@ -56,7 +56,7 @@ The light comes from air and is reflected back into air, so $n_1$ is the refract
 **Given:** intensity of unpolarised light $I_0 = 900\,\text{W/m}^2$, angle between the transmission axes of the polarisers $\theta = 40.0^\circ$
 **Find:** intensity $I_2$ after the second polariser, in $\text{W/m}^2$
 **Principle:** The first polariser lets through half of the intensity of the unpolarised light, and the light that comes through is polarised along its transmission axis. The light arriving at the second polariser is therefore polarised at an angle of $40.0^\circ$ to its transmission axis, so Malus's law applies to it.
-**Formula:** $I_1 = \tfrac{1}{2} I_0$ and $I_2 = I_1 \cos^2\theta$, so $I_2 = \tfrac{1}{2} I_0 \cos^2\theta$
+**Formula:** $$\begin{aligned} I_1 &= \tfrac{1}{2} I_0 \\ I_2 &= I_1 \cos^2\theta \\ &= \tfrac{1}{2} I_0 \cos^2\theta \end{aligned}$$
 **Conversions:** Not needed: the intensity stays in $\text{W/m}^2$, and the angle is in degrees.
 **Substitution:** $I_2 = \tfrac{1}{2} \cdot 900\,\text{W/m}^2 \cdot \cos^2 40.0^\circ = 450\,\text{W/m}^2 \cdot 0.5868 = 264.1\,\text{W/m}^2$
 **Answer:** $264\,\text{W/m}^2$, three significant figures like the angle $40.0^\circ$.
@@ -66,7 +66,7 @@ The light comes from air and is reflected back into air, so $n_1$ is the refract
 **Given:** $25.0\,\%$ of the intensity of the polarised light arriving at the analyser passes through it, that is, $I : I_0 = 0.250$
 **Find:** the angle $\theta$ between the direction of polarisation and the transmission axis, in degrees
 **Principle:** Polarised light arrives at the analyser, so the share of the light that passes through follows from Malus's law. The angle is solved from the law.
-**Formula:** $I = I_0 \cos^2\theta$, so $\cos\theta = \sqrt{\dfrac{I}{I_0}}$ and $\theta = \cos^{-1}\sqrt{\dfrac{I}{I_0}}$
+**Formula:** $$\begin{aligned} I &= I_0 \cos^2\theta \\ \cos^2\theta &= \frac{I}{I_0} \\ \cos\theta &= \sqrt{\frac{I}{I_0}} \\ \theta &= \cos^{-1}\sqrt{\frac{I}{I_0}} \end{aligned}$$
 **Conversions:** $25.0\,\% = 25.0 \cdot 0.01 = 0.250$
 **Substitution:** $\theta = \cos^{-1}\sqrt{0.250} = \cos^{-1} 0.500 = 60.0^\circ$
 **Answer:** $60.0^\circ$, three significant figures like the share $25.0\,\%$.
@@ -86,7 +86,7 @@ The light comes from air and is reflected back into air, so $n_1$ is the refract
 **Given:** refractive index of air $n_1 = 1.00$, refractive index of glass $n_2 = 1.50$, the light arrives at Brewster's angle
 **Find:** angle of refraction $\alpha_2$ in degrees from the normal of the surface
 **Principle:** Brewster's angle follows from Brewster's law. At Brewster's angle the reflected and the refracted ray are perpendicular to each other, and the angle of reflection equals the angle of incidence. The angle of incidence and the angle of refraction therefore add up to $90^\circ$.
-**Formula:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$ and $\alpha_\text{B} + \alpha_2 = 90^\circ$, so $\alpha_2 = 90^\circ - \tan^{-1}\dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} \tan\alpha_\text{B} &= \frac{n_2}{n_1} \\ \alpha_\text{B} + \alpha_2 &= 90^\circ \\ \alpha_2 &= 90^\circ - \alpha_\text{B} \\ &= 90^\circ - \tan^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices have no units, and the angles are in degrees.
 **Substitution:** $\alpha_2 = 90^\circ - \tan^{-1}\dfrac{1.50}{1.00} = 90^\circ - 56.31^\circ = 33.69^\circ$
 **Answer:** $33.7^\circ$, three significant figures like the refractive indices.
@@ -96,7 +96,7 @@ The light comes from air and is reflected back into air, so $n_1$ is the refract
 **Given:** intensity of unpolarised light $I_0 = 800\,\text{W/m}^2$, the transmission axes of the first and the last polariser are perpendicular, the transmission axis of the middle one is at an angle of $30.0^\circ$ to the first
 **Find:** intensity $I_3$ of the light that passes through the last polariser, in $\text{W/m}^2$
 **Principle:** The first polariser halves the unpolarised light. After that, polarised light arrives at every polariser, so Malus's law applies to each one with the angle measured from the transmission axis of the previous polariser. The middle one is at an angle of $30.0^\circ$ to the first, so it is at an angle of $90.0^\circ - 30.0^\circ = 60.0^\circ$ to the last.
-**Formula:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta_1$ and $I_3 = I_2 \cos^2\theta_2$, so $I_3 = \tfrac{1}{2} I_0 \cos^2\theta_1 \cos^2\theta_2$, where $\theta_1 = 30.0^\circ$ and $\theta_2 = 60.0^\circ$
+**Formula:** $$\begin{aligned} I_1 &= \tfrac{1}{2} I_0 \\ I_2 &= I_1 \cos^2\theta_1 \\ I_3 &= I_2 \cos^2\theta_2 \\ &= \tfrac{1}{2} I_0 \cos^2\theta_1 \cos^2\theta_2 \end{aligned}$$ where $\theta_1 = 30.0^\circ$ and $\theta_2 = 60.0^\circ$
 **Conversions:** Not needed: the intensity stays in $\text{W/m}^2$, and the angles are in degrees.
 **Substitution:** $$\begin{aligned} I_3 &= \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 30.0^\circ \\ &\cdot \cos^2 60.0^\circ \\ &= 400\,\text{W/m}^2 \cdot 0.750 \cdot 0.250 \\ &= 75.0\,\text{W/m}^2 \end{aligned}$$
 **Answer:** $75.0\,\text{W/m}^2$, three significant figures like the angles $30.0^\circ$ and $60.0^\circ$.
@@ -120,7 +120,7 @@ A refracted ray exists only if the angle of incidence is smaller than the critic
 **Principle:** The reading is the sum of the share of the polarised light of the display and the background light. At $90^\circ$ no light of the display passes through, so the reading $16\,\text{lx}$ is background light alone.
 
 The share of the light of the display is at most $E_\text{max} - E_\text{b}$, and according to Malus's law it decreases by the factor $\cos^2\theta$. The reading is proportional to the intensity, so Malus's law also applies to the reading.
-**Formula:** $E = (E_\text{max} - E_\text{b}) \cos^2\theta + E_\text{b}$
+**Formula:** $$\begin{aligned} E &= E_\text{n} + E_\text{b} \\ E_\text{n} &= (E_\text{max} - E_\text{b}) \cos^2\theta \\ E &= (E_\text{max} - E_\text{b}) \cos^2\theta + E_\text{b} \end{aligned}$$
 **Conversions:** Not needed: the readings are in lux, and the angle is in degrees.
 **Substitution:** $$\begin{aligned} E &= (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60.0^\circ \\ &+ 16\,\text{lx} \\ &= 404\,\text{lx} \cdot 0.250 + 16\,\text{lx} \\ &= 117\,\text{lx} \end{aligned}$$
 **Answer:** $117\,\text{lx}$, three significant figures like the reading $420\,\text{lx}$.
@@ -192,7 +192,7 @@ When $E$ is plotted as a function of $\cos^2\theta$, the points lie on a straigh
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The angles $0^\circ$, $30^\circ$, $60^\circ$ and $90^\circ$ give the values $\cos^2\theta = 1$, $0.75$, $0.25$ and $0$.
 
 The fitted line passes approximately through the points $(0;\ 7\,\text{lx})$ and $(1;\ 321\,\text{lx})$. The constant term $7\,\text{lx}$ is the background light, and the values are read from the line, not from individual measured points.
-**Formula:** $E_0 = \dfrac{\Delta E}{\Delta (\cos^2\theta)} = \dfrac{E_2 - E_1}{x_2 - x_1}$, where $x = \cos^2\theta$
+**Formula:** $$\begin{aligned} E &= E_0 \cos^2\theta + E_\text{t} \\ \Delta E &= E_0 \Delta (\cos^2\theta) \\ E_0 &= \frac{\Delta E}{\Delta (\cos^2\theta)} \\ &= \frac{E_2 - E_1}{x_2 - x_1} \end{aligned}$$ where $x = \cos^2\theta$
 **Conversions:** Not needed: the readings are in lux, and $\cos^2\theta$ is a number without units.
 **Substitution:** $E_0 = \dfrac{321\,\text{lx} - 7\,\text{lx}}{1 - 0} = 314\,\text{lx}$
 **Answer:** $314\,\text{lx}$, three significant figures like the readings. A fit by eye varies, so about $309\text{–}319\,\text{lx}$ is a good answer.
@@ -205,7 +205,7 @@ In real series of measurements the points do not usually lie exactly on one line
 **Find:** the angle $\theta$ in degrees at which the intensity is $40\,\%$ of the intensity of the incident light
 **Principle:** The share of polarised light that passes through follows Malus's law, $I : I_0 = \cos^2\theta$. A smooth curve is drawn through the measured points, because the points have scatter caused by measurement uncertainty. The angle is read from the curve where the ratio is $0.40$, and the result is checked by calculating with Malus's law.
 **Reading the graph:** The curve falls from the angle $45^\circ$, where the ratio is about $0.51$, to the angle $60^\circ$, where it is about $0.26$. A line parallel to the horizontal axis from $0.40$ meets the curve at the angle $51^\circ$, because the curve is almost straight between these points.
-**Formula:** $\cos^2\theta = \dfrac{I}{I_0}$, so $\theta = \cos^{-1}\sqrt{\dfrac{I}{I_0}}$
+**Formula:** $$\begin{aligned} I &= I_0 \cos^2\theta \\ \cos^2\theta &= \frac{I}{I_0} \\ \theta &= \cos^{-1}\sqrt{\frac{I}{I_0}} \end{aligned}$$
 **Conversions:** Not needed: the share $40\,\% = 0.40$ is a ratio, and the angle comes out in degrees.
 **Substitution:** $\theta = \cos^{-1}\sqrt{0.40} = \cos^{-1} 0.6325 = 50.77^\circ$
 **Answer:** $50.8^\circ$, three significant figures like the angles of the measured points. About $51^\circ$ read from the curve is a good answer.
@@ -233,7 +233,7 @@ It would be Brewster's angle only for light arriving from inside the ethanol int
 **Find:** what percentage of $I_0$ passes through at most, the ratio $I_3 : I_0$ in $\%$; also the angle of the greatest intensity and the justification for the effect of the third polariser
 **Principle:** The first polariser halves the unpolarised light. After that the light is polarised, so Malus's law applies to the middle and the last polariser. The middle one is at an angle $\theta$ to the first and therefore at an angle $90^\circ - \theta$ to the last, because the first and the last are perpendicular.
 **Reading the graph:** The greatest reading of the table, $114\,\text{W/m}^2$, is at the angle $45^\circ$. The readings at the angles $15^\circ$ and $75^\circ$ are $32\,\text{W/m}^2$ and $28\,\text{W/m}^2$, so approximately equal, and the readings at the angles $0^\circ$ and $90^\circ$ are almost zero.
-**Formula:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta$ and $I_3 = I_2 \cos^2(90^\circ - \theta) = I_2 \sin^2\theta$, so $I_3 = \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta = \tfrac{1}{8} I_0 \sin^2 2\theta$. The greatest value is obtained when $\sin 2\theta = 1$, that is $\theta = 45^\circ$, and then $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
+**Formula:** $$\begin{aligned} I_1 &= \tfrac{1}{2} I_0 \\ I_2 &= I_1 \cos^2\theta \\ I_3 &= I_2 \cos^2(90^\circ - \theta) \\ &= I_2 \sin^2\theta \\ &= \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta \\ &= \tfrac{1}{8} I_0 \sin^2 2\theta \end{aligned}$$ The greatest value is obtained when $\sin 2\theta = 1$, that is $\theta = 45^\circ$, and then $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
 **Conversions:** Not needed: the angles are in degrees, and the share is converted to a percentage by multiplying by $100$.
 **Substitution:** $$\begin{aligned} &I_3 \\ &= \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ \\ &= 480\,\text{W/m}^2 \cdot 0.500 \cdot 0.500 \\ &= 120\,\text{W/m}^2 \end{aligned}$$ and $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0.125 = 12.5\,\%$
 **Answer:** $12.5\,\%$, that is $120\,\text{W/m}^2$. The result is exact, because the ideal model gives exactly $\tfrac{1}{8} = 0.125$. The intensity is greatest at the angle $45^\circ$. At the angles $15^\circ$ and $75^\circ$ the expression gives the same value, $30\,\text{W/m}^2$, because $\sin 2\theta$ is the same at the angles $\theta$ and $90^\circ - \theta$.
@@ -250,7 +250,7 @@ The light then has a component also along the transmission axis of the last one,
 **Principle:** The light goes from air into water, so $n_1$ is the refractive index of air and $n_2$ that of water, and Brewster's angle is $\alpha_\text{B} = \tan^{-1}(n_2 : n_1)$. The angle is measured from the normal of the surface, so the height of the Sun from the horizontal surface is $90^\circ - \alpha_\text{B}$.
 
 At Brewster's angle the reflected light is completely polarised along the surface, that is, horizontally. Malus's law applies to it: when the transmission axis is $25.0^\circ$ from the vertical, the angle between it and the horizontal polarisation direction is $\theta = 90^\circ - 25.0^\circ$.
-**Formula:** $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$, height $h = 90^\circ - \alpha_\text{B}$, angle $\theta = 90^\circ - \varphi$ and $I = I_0 \cos^2\theta$
+**Formula:** $$\begin{aligned} \alpha_\text{B} &= \tan^{-1}\frac{n_2}{n_1} \\ h &= 90^\circ - \alpha_\text{B} \\ \theta &= 90^\circ - \varphi \\ I &= I_0 \cos^2\theta \end{aligned}$$
 **Conversions:** Not needed: the angles are in degrees, and the intensity stays in $\text{W/m}^2$. The share $30\,\% = 0.30$.
 **Substitution:** $\alpha_\text{B} = \tan^{-1}\dfrac{1.33}{1.00} = 53.06^\circ$, so $h = 90^\circ - 53.06^\circ = 36.94^\circ$. The angle is $\theta = 90^\circ - 25.0^\circ = 65.0^\circ$, and $I = 40\,\text{W/m}^2 \cdot \cos^2 65.0^\circ = 40\,\text{W/m}^2 \cdot 0.1786 = 7.144\,\text{W/m}^2$. An ordinary lens would let through $0.30 \cdot 40\,\text{W/m}^2 = 12\,\text{W/m}^2$.
 **Answer:** $7.1\,\text{W/m}^2$, two significant figures like the intensity of the glare $40\,\text{W/m}^2$. The Sun is at a height of $36.9^\circ$. Polarised glasses reduce glare more, because $7.1\,\text{W/m}^2$ passes through them and $12\,\text{W/m}^2$ through an ordinary lens.
@@ -264,7 +264,7 @@ If the tilt is more than $33.2^\circ$, the ordinary lens would be better. Polari
 **Asked:** the intensity $I$ that comes through the polariser in $\text{W/m}^2$
 **Principle:** The light is already polarised, so Malus's law $I = I_0 \cos^2\theta$ applies directly. The graph shows the share $I : I_0 = \cos^2\theta$ as a function of the angle, so the share is read from the graph at the angle $35^\circ$ and multiplied by the incident intensity.
 **Reading the graph:** The vertical line at $35^\circ$ lies between $30^\circ$ and $45^\circ$ and meets the curve where the share is between $0.75$ and $0.50$, closer to $0.75$, about $0.67$. A good reading is $0.65\text{–}0.69$.
-**Formula:** $I = I_0 \cdot \dfrac{I}{I_0}$, where $\dfrac{I}{I_0} = \cos^2\theta$
+**Formula:** $$\begin{aligned} \frac{I}{I_0} &= \cos^2\theta \\ I &= I_0 \cdot \frac{I}{I_0} \end{aligned}$$
 **Conversions:** Not needed: the intensity stays in $\text{W/m}^2$ and the share is a dimensionless number.
 **Substitution:** $I = 400\,\text{W/m}^2 \cdot 0.67 = 268\,\text{W/m}^2$
 **Answer:** $270\,\text{W/m}^2$ (read from the graph $268\,\text{W/m}^2$), two or three significant figures according to the accuracy of the reading. A good answer is $260\text{–}280\,\text{W/m}^2$.
@@ -285,7 +285,7 @@ If the tilt is more than $33.2^\circ$, the ordinary lens would be better. Polari
 **Asked:** the angle of the film $\theta$ in degrees
 **Principle:** The light of the display is polarised, so by Malus's law its share of the reading is $E_0 \cos^2\theta$. The background light adds a constant $E_\text{t}$ to the reading, so $E = E_0 \cos^2\theta + E_\text{t}$. The constant term of the line is $E_\text{t}$ and its slope is $E_0$. The angle is found by solving $\cos^2\theta$ and taking the inverse cosine.
 **Reading the graph:** The line starts at $\cos^2\theta = 0$ from the reading $E_\text{t} = 15\,\text{lx}$ and rises to $375\,\text{lx}$ at $\cos^2\theta = 1$, so the slope is $E_0 = 375\,\text{lx} - 15\,\text{lx} = 360\,\text{lx}$. The reading $200\,\text{lx}$ corresponds on the line to a point slightly to the right of the middle ($\cos^2\theta = 0.5$), about $\cos^2\theta = 0.51$. The value is read from the line, not from individual data points.
-**Formula:** $E = E_0 \cos^2\theta + E_\text{t}$, so $\cos^2\theta = \dfrac{E - E_\text{t}}{E_0}$ and $\theta = \cos^{-1}\sqrt{\dfrac{E - E_\text{t}}{E_0}}$
+**Formula:** $$\begin{aligned} E &= E_0 \cos^2\theta + E_\text{t} \\ \cos^2\theta &= \frac{E - E_\text{t}}{E_0} \\ \theta &= \cos^{-1}\sqrt{\frac{E - E_\text{t}}{E_0}} \end{aligned}$$
 **Conversions:** Not needed: all readings are in lux, and $\cos^2\theta$ is a dimensionless number.
 **Substitution:** $\cos^2\theta = \dfrac{200\,\text{lx} - 15\,\text{lx}}{360\,\text{lx}} = 0.514$ and $\theta = \cos^{-1}\sqrt{0.514} = \cos^{-1} 0.717 = 44.2^\circ$
 **Answer:** $44^\circ$, two significant figures according to the accuracy of reading the graph. A good answer is $43\text{–}46^\circ$.

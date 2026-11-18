@@ -62,7 +62,7 @@
 **Given:** transmitted power $P_0 = 1.0\,\text{mW}$, smallest power that can be received $P = 1.0\,\mu\text{W}$, attenuation coefficient $a = 0.20\,\text{dB/km}$
 **Find:** the greatest length $L$ of the link in kilometres
 **Principle:** The receiver detects the pulses when the power is at least $1.0\,\mu\text{W}$, so the greatest permitted attenuation follows from the ratio of the powers. The fibre is uniform along its whole length, so the attenuation is $A = aL$, and the length is solved from it.
-**Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ and $A = aL$, so $L = \dfrac{A}{a}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ L &= \frac{A}{a} \end{aligned}$$
 **Conversions:** $P_0 = 1.0\,\text{mW} = 1.0 \cdot 10^{-3}\,\text{W}$ and $P = 1.0\,\mu\text{W} = 1.0 \cdot 10^{-6}\,\text{W}$
 **Substitution:** $A = 10\,\text{dB} \cdot \lg \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{1.0 \cdot 10^{-6}\,\text{W}} = 10\,\text{dB} \cdot \lg 1000 = 30\,\text{dB}$, so $L = \dfrac{30\,\text{dB}}{0.20\,\text{dB/km}} = 150\,\text{km}$
 **Answer:** $150\,\text{km}$, that is $1.5 \cdot 10^{2}\,\text{km}$, two significant figures like the attenuation coefficient $0.20\,\text{dB/km}$.
@@ -72,7 +72,7 @@
 **Given:** power of the cooking zone $P = 2.0\,\text{kW}$, share transferred to the water $\eta = 85\,\%$, mass of water $m = 1.5\,\text{kg}$, initial temperature $15\,{}^\circ\text{C}$, final temperature $100\,{}^\circ\text{C}$, specific heat capacity of water from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the heating time $t$ in minutes
 **Principle:** The water stays liquid throughout the heating, so the energy it needs is $Q = cm\Delta T$. The eddy currents heat the base, and by assumption $85\,\%$ of the power taken by the hob is transferred to the water, so the power transferred to the water is $\eta P$. The time is the energy divided by the power.
-**Formula:** $Q = cm\Delta T$ and $Q = \eta P t$, so $t = \dfrac{cm\Delta T}{\eta P}$
+**Formula:** $$\begin{aligned} Q &= cm\Delta T \\ Q &= \eta P t \\ \eta P t &= cm\Delta T \\ t &= \frac{cm\Delta T}{\eta P} \end{aligned}$$
 **Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 85\,{}^\circ\text{C} = 85\,\text{K}$ (a temperature difference is the same in degrees Celsius and in kelvins), $P = 2.0\,\text{kW} = 2000\,\text{W}$ and $\eta = 85\,\% = 0.85$. Finally $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1.5\,\text{kg} \cdot 85\,\text{K}}{0.85 \cdot 2000\,\text{W}} = \dfrac{534\,225\,\text{J}}{1700\,\text{W}} = 314.3\,\text{s} = 5.238\,\text{min}$
 **Answer:** $5.2\,\text{min}$, two significant figures like the power $2.0\,\text{kW}$ and the mass $1.5\,\text{kg}$.
@@ -94,7 +94,7 @@
 **Principle:** The fibre is uniform along its whole length, so the attenuation of a section is $A = a\,l$, where $l$ is the length of the section. A section may be at most so long that the attenuation is $20\,\text{dB}$.
 
 Enough sections are needed to cover the whole cable, and because the transmitter and the receiver are at the ends, there is one amplifier fewer than there are sections.
-**Formula:** $A_\text{max} = a\,l_\text{max}$, so $l_\text{max} = \dfrac{A_\text{max}}{a}$; the number of sections $k \ge \dfrac{L}{l_\text{max}}$ and the number of amplifiers $k - 1$
+**Formula:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ N &= k - 1 \end{aligned}$$
 **Conversions:** Not needed: the lengths are in kilometres and the attenuations in decibels.
 **Substitution:** $l_\text{max} = \dfrac{20\,\text{dB}}{0.18\,\text{dB/km}} = 111.1\,\text{km}$, so $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111.1\,\text{km}} = 10.55$. Thus $k = 11$ sections are needed, and $11 - 1 = 10$ amplifiers.
 **Answer:** at least $10$ amplifiers. The number is a whole number, and the number of sections is rounded up, because $10$ sections would be too long.
@@ -104,7 +104,7 @@ Enough sections are needed to cover the whole cable, and because the transmitter
 **Given:** frequency $f = 25\,\text{kHz}$, peak value of the magnetic flux density $B_0 = 4.0\,\text{mT}$, radius of the loop $r = 8.0\,\text{cm}$, resistance of the loop $R = 0.050\,\Omega$, field uniform and perpendicular to the base
 **Find:** the mean power $P$ at which the base heats up, in kilowatts
 **Principle:** The flux $\Phi = BA$ through the loop varies sinusoidally, so a sinusoidal voltage is induced in the loop, with the peak value $e_0 = 2\pi f \cdot \Phi_0$, as in a one-turn generator (chapter *The generator and alternating current*). The electrical energy of the eddy current changes into internal energy in the resistance; the mean power is calculated from the effective voltage $U = e_0 : \sqrt{2}$.
-**Formula:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$, $U = \dfrac{e_0}{\sqrt{2}}$ and $P = \dfrac{U^2}{R}$, so $P = \dfrac{(2\pi f \cdot B_0 \cdot \pi r^2)^2}{2R}$
+**Formula:** $$\begin{aligned} \Phi_0 &= B_0 \cdot \pi r^2 \\ e_0 &= 2\pi f \cdot \Phi_0 \\ U &= \frac{e_0}{\sqrt{2}} \\ P &= \frac{U^2}{R} \\ &= \frac{e_0^2}{2R} \\ &= \frac{(2\pi f \cdot B_0 \cdot \pi r^2)^2}{2R} \end{aligned}$$
 **Conversions:** $f = 25\,\text{kHz} = 25 \cdot 1000\,\text{Hz} = 2.5 \cdot 10^{4}\,\text{Hz}$, $B_0 = 4.0\,\text{mT} = 4.0 \cdot 10^{-3}\,\text{T}$ and $r = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $$\begin{aligned} e_0 &= 2\pi \cdot 2.5 \cdot 10^{4}\,\text{Hz} \\ &\cdot 4.0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0.080\,\text{m})^2 \\ &= 12.63\,\text{V} \end{aligned}$$, so $P = \dfrac{(12.63\,\text{V})^2}{2 \cdot 0.050\,\Omega} = 1596\,\text{W} = 1.596\,\text{kW}$
 **Answer:** $1.6\,\text{kW}$, two significant figures like the flux density $4.0\,\text{mT}$, the radius $8.0\,\text{cm}$ and the resistance $0.050\,\Omega$.
@@ -116,7 +116,7 @@ Enough sections are needed to cover the whole cable, and because the transmitter
 **Principle:** The total attenuation of the link may be at most the amount given by the ratio of the powers. Decibels are added, so the part that is not used up by the splices is left for the fibre, and from it the greatest length is found.
 
 In glass light travels at the speed $v = c : n$ (chapter *Total internal reflection and optical fibre*), and a pulse travelling along the axis covers the length of the fibre.
-**Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, $A = aL + 4 \cdot 0.50\,\text{dB}$, so $L = \dfrac{A - 4 \cdot 0.50\,\text{dB}}{a}$, and $t = \dfrac{L}{v} = \dfrac{nL}{c}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL + 4 \cdot 0.50\,\text{dB} \\ L &= \frac{A - 4 \cdot 0.50\,\text{dB}}{a} \\ v &= \frac{c}{n} \\ t &= \frac{L}{v} \\ &= \frac{nL}{c} \end{aligned}$$
 **Conversions:** $P_0 = 1.0\,\text{mW} = 1.0 \cdot 10^{-3}\,\text{W}$, $P = 10\,\mu\text{W} = 1.0 \cdot 10^{-5}\,\text{W}$; length $90\,\text{km} = 90 \cdot 1000\,\text{m}$; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $A = 10\,\text{dB} \cdot \lg \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{1.0 \cdot 10^{-5}\,\text{W}} = 10\,\text{dB} \cdot \lg 100 = 20\,\text{dB}$, $L = \dfrac{20\,\text{dB} - 2.0\,\text{dB}}{0.20\,\text{dB/km}} = 90\,\text{km} = 90\,000\,\text{m}$, so $t = \dfrac{1.47 \cdot 90\,000\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} = 4.41 \cdot 10^{-4}\,\text{s} = 0.441\,\text{ms}$
 **Answer:** $0.44\,\text{ms}$, two significant figures like the powers and the attenuation coefficient.
@@ -133,7 +133,7 @@ The option saying that the melting point prevents heating is wrong, because heat
 **Given:** power at the start $P_0 = 4.0\,\text{mW}$, attenuation coefficient $a = 0.20\,\text{dB/km}$, length $L = 45\,\text{km}$
 **Find:** the power $P$ at the end of the fibre in milliwatts
 **Principle:** The fibre is uniform along its whole length, so the attenuation is calculated with the formula $A = aL$. After that the ratio of the powers follows from the definition of attenuation, and the power $P$ is solved.
-**Formula:** $A = aL$ and $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, so $P = P_0 \cdot 10^{-A / (10\,\text{dB})}$
+**Formula:** $$\begin{aligned} A &= aL \\ A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ \lg\frac{P_0}{P} &= \frac{A}{10\,\text{dB}} \\ \frac{P_0}{P} &= 10^{A / (10\,\text{dB})} \\ P &= P_0 \cdot 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Conversions:** Not needed: the power stays in milliwatts, because the ratio $P : P_0$ has no unit.
 **Substitution:** $A = 0.20\,\tfrac{\text{dB}}{\text{km}} \cdot 45\,\text{km} = 9.0\,\text{dB}$, so $P = 4.0\,\text{mW} \cdot 10^{-9.0 / 10} = 4.0\,\text{mW} \cdot 0.1259 = 0.5036\,\text{mW}$
 **Answer:** $0.50\,\text{mW}$, two significant figures like the initial data.
@@ -143,7 +143,7 @@ The option saying that the melting point prevents heating is wrong, because heat
 **Given:** attenuation coefficient $a = 0.20\,\text{dB/km}$, the power halves, that is $P_0 : P = 2$
 **Find:** the distance $L$ in kilometres over which the power halves
 **Principle:** Halving means a power ratio of $2$, which gives the attenuation in decibels. The fibre is uniform along its whole length, so the attenuation is $A = aL$, and the distance is solved from it.
-**Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ and $A = aL$, so $L = \dfrac{A}{a}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ L &= \frac{A}{a} \end{aligned}$$
 **Conversions:** Not needed: the attenuation is in decibels and the attenuation coefficient in decibels per kilometre.
 **Substitution:** $A = 10\,\text{dB} \cdot \lg 2 = 3.010\,\text{dB}$, so $L = \dfrac{3.010\,\text{dB}}{0.20\,\text{dB/km}} = 15.05\,\text{km}$
 **Answer:** $15\,\text{km}$, two significant figures like the attenuation coefficient $0.20\,\text{dB/km}$.
@@ -167,7 +167,7 @@ The option saying that the melting point prevents heating is wrong, because heat
 
 The line goes through the origin because a fibre of zero length has no attenuation.
 **Reading the graph:** The attenuations are $A = 2.15;\ 3.89;\ 6.11;\ 7.93;\ 10.05\,\text{dB}$ at the lengths $10;\ 20;\ 30;\ 40;\ 50\,\text{km}$. In real measurements the points are not exactly on one line, so the line is drawn between the points. The fitted line goes through the points $(0;\ 0)$ and $(50;\ 10.0)$.
-**Formula:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ and $A = aL$, so the slope of the line is $a = \dfrac{\Delta A}{\Delta L}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ a &= \frac{A}{L} \\ &= \frac{\Delta A}{\Delta L} \end{aligned}$$
 **Conversions:** Not needed: the powers are in microwatts and their ratio has no unit.
 **Substitution:** For example at the length $10\,\text{km}$: $A = 10\,\text{dB} \cdot \lg \dfrac{800\,\mu\text{W}}{488\,\mu\text{W}} = 2.15\,\text{dB}$. The slope is $a = \dfrac{10.0\,\text{dB} - 0}{50\,\text{km} - 0} = 0.200\,\text{dB/km}$. The least-squares line through the origin gives the slope $0.2003\,\text{dB/km}$.
 **Answer:** $0.20\,\text{dB/km}$, two significant figures; the power was measured with three significant figures, but the scatter of the points limits the result.
@@ -177,7 +177,7 @@ The line goes through the origin because a fibre of zero length has no attenuati
 **Given:** attenuation $A = 20\,\text{dB}$; the student’s claim: the power decreases by $20\,\%$ and $80\,\%$ arrives
 **Find:** a) the error in the student’s reasoning; b) the share of the transmitted power that arrives, as a percentage
 **Principle:** The decibel is a logarithmic unit, not a percentage. The attenuation $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ gives the ratio of the powers as a power of ten, and every $10\,\text{dB}$ reduces the power to a tenth. Therefore $20\,\text{dB}$ is a reduction to a tenth twice.
-**Formula:** $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ \lg\frac{P_0}{P} &= \frac{A}{10\,\text{dB}} \\ \frac{P_0}{P} &= 10^{A / (10\,\text{dB})} \\ \frac{P}{P_0} &= 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Conversions:** Finally the ratio is multiplied by one hundred to give percent.
 **Substitution:** $\dfrac{P}{P_0} = 10^{-20\,\text{dB} / (10\,\text{dB})} = 10^{-2} = 0.010$, so $0.010 \cdot 100\,\% = 1.0\,\%$ arrives
 **Answer:** a) The error is that decibels were interpreted as percentages. Decibels are added and the ratios of the powers are multiplied: two $10\,\text{dB}$ parts reduce the power to a tenth twice. b) $1.0\,\%$ of the transmitted power arrives. The student’s value $80\,\%$ would correspond to an attenuation of only about $1\,\text{dB}$.
@@ -214,7 +214,7 @@ If the speed is taken as $300\,000$, that is the speed in kilometres per second,
 **Given:** $N = 15$, $f = 130\,\text{kHz}$, $d$ and $e_0$ of the table, the charging limit $e_0 = 1.0\,\text{V}$, new frequency $f' = 100\,\text{kHz}$ and the same flux
 **Find:** the greatest distance $d$ in millimetres at which charging works at the frequency $100\,\text{kHz}$
 **Principle:** The flux varies sinusoidally, so $e_0 = N \cdot 2\pi f \cdot \Phi_0$. The flux at each distance is calculated from the voltages of the table. The voltage $1.0\,\text{V}$ at the frequency $100\,\text{kHz}$ requires a certain flux, and the distance is found by interpolation.
-**Formula:** $\Phi_0 = \dfrac{e_0}{N \cdot 2\pi f}$, $\Phi_{\min} = \dfrac{1.0\,\text{V}}{N \cdot 2\pi f'}$ and $d = d_1 + (d_2 - d_1) \cdot \dfrac{\Phi_1 - \Phi_{\min}}{\Phi_1 - \Phi_2}$
+**Formula:** $$\begin{aligned} e_0 &= N \cdot 2\pi f \cdot \Phi_0 \\ \Phi_0 &= \frac{e_0}{N \cdot 2\pi f} \\ \Phi_\text{min} &= \frac{1.0\,\text{V}}{N \cdot 2\pi f'} \\ d &= d_1 + (d_2 - d_1) \cdot \frac{\Phi_1 - \Phi_\text{min}}{\Phi_1 - \Phi_2} \end{aligned}$$
 **Conversions:** $f = 1.30 \cdot 10^{5}\,\text{Hz}$, $f' = 1.00 \cdot 10^{5}\,\text{Hz}$ and $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
 **Substitution:** a) The denominator is $15 \cdot 2\pi \cdot 1.30 \cdot 10^{5}\,\text{Hz} = 1.225 \cdot 10^{7}\,\text{Hz}$, so the fluxes are $0.377;\ 0.221;\ 0.124;\ 0.0677;\ 0.0384\,\mu\text{Wb}$ at the distances $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
 b) $\Phi_{\min} = \dfrac{1.0\,\text{V}}{15 \cdot 2\pi \cdot 1.00 \cdot 10^{5}\,\text{Hz}} = 0.1061\,\mu\text{Wb}$ is between the flux values $0.1241\,\mu\text{Wb}$ ($12\,\text{mm}$) and $0.0677\,\mu\text{Wb}$ ($16\,\text{mm}$): $$\begin{aligned} d &= 12\,\text{mm} \\ &+ 4\,\text{mm} \cdot \dfrac{0.1241 - 0.1061}{0.1241 - 0.0677} \\ &= 13.28\,\text{mm} \end{aligned}$$
@@ -231,7 +231,7 @@ Increasing the turns from $15$ to $20$ would raise the voltage by the factor $1.
 **Given:** $f = 30\,\text{kHz}$, $B_0 = 3.0\,\text{mT}$, $r = 9.0\,\text{cm}$, $R_\text{A} = 0.040\,\Omega$, $R_\text{B} = 0.050\,\Omega$, $R_\text{C} = 0.080\,\Omega$, field uniform and perpendicular to the base
 **Find:** the frequency $f_\text{C}$ in kilohertz at which the base of pan C heats up at the same power as the base of pan A at $30\,\text{kHz}$
 **Principle:** The flux $\Phi = BA$ of the loop varies sinusoidally, so the peak voltage is $e_0 = 2\pi f \cdot \Phi_0$ and the power is $P = U^2 : R$ with the effective voltage $U = e_0 : \sqrt{2}$. The peak voltage is directly proportional to the frequency, so the power is directly proportional to the square of the frequency and inversely proportional to the resistance.
-**Formula:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$ and $P = \dfrac{e_0^2}{2R} \sim \dfrac{f^2}{R}$. Equal powers: $\dfrac{f_\text{C}^2}{R_\text{C}} = \dfrac{f^2}{R_\text{A}}$, so $f_\text{C} = f \cdot \sqrt{\dfrac{R_\text{C}}{R_\text{A}}}$
+**Formula:** $$\begin{aligned} \Phi_0 &= B_0 \cdot \pi r^2 \\ e_0 &= 2\pi f \cdot \Phi_0 \\ P &= \frac{e_0^2}{2R} \\ &= \frac{(2\pi f \cdot \Phi_0)^2}{2R} \\ &\sim \frac{f^2}{R} \\ \frac{f_\text{C}^2}{R_\text{C}} &= \frac{f^2}{R_\text{A}} \\ f_\text{C}^2 &= f^2 \cdot \frac{R_\text{C}}{R_\text{A}} \\ f_\text{C} &= f \cdot \sqrt{\frac{R_\text{C}}{R_\text{A}}} \end{aligned}$$
 **Conversions:** $f = 3.0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3.0 \cdot 10^{-3}\,\text{T}$, $r = 0.090\,\text{m}$ and $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** a) $\Phi_0 = 3.0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0.090\,\text{m})^2 = 7.63 \cdot 10^{-5}\,\text{Wb}$ and $$\begin{aligned} e_0 &= 2\pi \cdot 3.0 \cdot 10^{4}\,\text{Hz} \\ &\cdot 7.63 \cdot 10^{-5}\,\text{Wb} \\ &= 14.39\,\text{V} \end{aligned}$$. The powers $P = \dfrac{(14.39\,\text{V})^2}{2R}$ are $2.59\,\text{kW}$ for pan A, $2.07\,\text{kW}$ for B and $1.29\,\text{kW}$ for C.
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0.080\,\Omega}{0.040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42.43\,\text{kHz}$
@@ -249,7 +249,7 @@ In a base that conducts very well (aluminium, copper) the field of the eddy curr
 **Find:** the peak voltage $e_0'$ at $6\,\text{mm}$ in volts
 **Principle:** The peak voltage is $e_0 = N \cdot 2\pi f \cdot \Phi_0$. When $N$ and $f$ stay the same, $e_0$ is proportional to the flux $\Phi_0$. The field lines of the figure are drawn at equal flux steps, so the number $n$ of lines passing through the receiver coil is proportional to the flux and therefore to the voltage.
 **Reading the graph:** Count the darker lines that pass through the receiver coil. On the left ($3\,\text{mm}$) there are $6$ and on the right ($6\,\text{mm}$) $4$.
-**Formula:** $\dfrac{e_0'}{e_0} = \dfrac{\Phi_0'}{\Phi_0} = \dfrac{n'}{n}$, so $e_0' = e_0 \cdot \dfrac{n'}{n}$
+**Formula:** $$\begin{aligned} e_0 &= N \cdot 2\pi f \cdot \Phi_0 \\ e_0' &= N \cdot 2\pi f \cdot \Phi_0' \\ \frac{e_0'}{e_0} &= \frac{\Phi_0'}{\Phi_0} \\ &= \frac{n'}{n} \\ e_0' &= e_0 \cdot \frac{n'}{n} \end{aligned}$$
 **Conversions:** Not needed: the ratio of the numbers of lines has no unit, and the voltage stays in volts.
 **Substitution:** $e_0' = 4.2\,\text{V} \cdot \dfrac{4}{6} = 2.8\,\text{V}$
 **Answer:** $2.8\,\text{V}$, two significant figures like the given voltage. Counting lines is rough, so the value is approximate.
@@ -260,7 +260,7 @@ In a base that conducts very well (aluminium, copper) the field of the eddy curr
 **Find:** the attenuation coefficient $a$ and the power $P : P_0$ as a percentage at the length $70\,\text{km}$
 **Principle:** The fibre is the same along its whole length, so $A = aL$, and the attenuation tells the power ratio: $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$. When the power has halved, $P_0 : P = 2$, so the attenuation is known without the numerical powers. The attenuation coefficient is obtained by dividing it by the length needed for the halving.
 **Reading the graph:** Draw a horizontal line at the height $50\,\%$ and go straight down from its crossing with the curve to the horizontal axis. The point is $L_{1/2} = 10\,\text{km}$. The graph ends at $40\,\text{km}$, so the asked length $70\,\text{km}$ is calculated with the attenuation coefficient, not read from the graph.
-**Formula:** $a = \dfrac{10\,\text{dB} \cdot \lg 2}{L_{1/2}}$, $A = aL$ and $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Formula:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ a &= \frac{A_{1/2}}{L_{1/2}} \\ &= \frac{10\,\text{dB} \cdot \lg 2}{L_{1/2}} \\ \frac{P}{P_0} &= 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Conversions:** Not needed: the lengths are in kilometres and the attenuation coefficient is calculated in $\text{dB/km}$.
 **Substitution:** $a = \dfrac{10\,\text{dB} \cdot 0.301}{10\,\text{km}} = 0.301\,\text{dB/km}$. At the length $70\,\text{km}$: $A = 0.301\,\text{dB/km} \cdot 70\,\text{km} = 21.07\,\text{dB}$ and $\dfrac{P}{P_0} = 10^{-21.07 / 10} = 0.00782 = 0.78\,\%$.
 **Answer:** $0.78\,\%$, two significant figures; the attenuation coefficient is about $0.30\,\text{dB/km}$.

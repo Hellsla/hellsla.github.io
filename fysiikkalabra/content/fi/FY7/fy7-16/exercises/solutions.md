@@ -62,7 +62,7 @@
 **Annettu:** lähetetty teho $P_0 = 1{,}0\,\text{mW}$, pienin vastaanotettava teho $P = 1{,}0\,\mu\text{W}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$
 **Kysytty:** yhteyden suurin pituus $L$ kilometreinä
 **Periaate:** Vastaanotin tunnistaa pulssit, kun teho on vähintään $1{,}0\,\mu\text{W}$, joten suurin sallittu vaimennus saadaan tehojen suhteesta. Kuitu on koko matkalta samanlaista, joten vaimennus on $A = aL$, ja siitä ratkaistaan pituus.
-**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ ja $A = aL$, josta $L = \dfrac{A}{a}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ L &= \frac{A}{a} \end{aligned}$$
 **Muunnokset:** $P_0 = 1{,}0\,\text{mW} = 1{,}0 \cdot 10^{-3}\,\text{W}$ ja $P = 1{,}0\,\mu\text{W} = 1{,}0 \cdot 10^{-6}\,\text{W}$
 **Sijoitus:** $A = 10\,\text{dB} \cdot \lg \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{1{,}0 \cdot 10^{-6}\,\text{W}} = 10\,\text{dB} \cdot \lg 1000 = 30\,\text{dB}$, joten $L = \dfrac{30\,\text{dB}}{0{,}20\,\text{dB/km}} = 150\,\text{km}$
 **Vastaus:** $150\,\text{km}$ eli $1{,}5 \cdot 10^{2}\,\text{km}$, kaksi merkitsevää numeroa kuten vaimennuskerroin $0{,}20\,\text{dB/km}$.
@@ -72,7 +72,7 @@
 **Annettu:** keittoalueen teho $P = 2{,}0\,\text{kW}$, veteen siirtyvä osuus $\eta = 85\,\%$, veden massa $m = 1{,}5\,\text{kg}$, alkulämpötila $15\,{}^\circ\text{C}$, loppulämpötila $100\,{}^\circ\text{C}$, taulukosta veden ominaislämpökapasiteetti $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lämmitysaika $t$ minuutteina
 **Periaate:** Vesi pysyy nesteenä koko lämmityksen ajan, joten sen tarvitsema energia on $Q = cm\Delta T$. Pyörrevirrat lämmittävät pohjaa, ja oletuksen mukaan $85\,\%$ lieden ottamasta tehosta siirtyy veteen, joten veteen siirtyvä teho on $\eta P$. Aika on energia jaettuna teholla.
-**Kaava:** $Q = cm\Delta T$ ja $Q = \eta P t$, josta $t = \dfrac{cm\Delta T}{\eta P}$
+**Kaava:** $$\begin{aligned} Q &= cm\Delta T \\ Q &= \eta P t \\ \eta P t &= cm\Delta T \\ t &= \frac{cm\Delta T}{\eta P} \end{aligned}$$
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 85\,{}^\circ\text{C} = 85\,\text{K}$ (lämpötilaero on sama celsiusasteina ja kelvineinä), $P = 2{,}0\,\text{kW} = 2000\,\text{W}$ ja $\eta = 85\,\% = 0{,}85$. Lopuksi $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 85\,\text{K}}{0{,}85 \cdot 2000\,\text{W}} = \dfrac{534\,225\,\text{J}}{1700\,\text{W}} = 314{,}3\,\text{s} = 5{,}238\,\text{min}$
 **Vastaus:** $5{,}2\,\text{min}$, kaksi merkitsevää numeroa kuten teho $2{,}0\,\text{kW}$ ja massa $1{,}5\,\text{kg}$.
@@ -92,7 +92,7 @@
 **Annettu:** kaapelin pituus $L = 1172\,\text{km}$, vaimennuskerroin $a = 0{,}18\,\text{dB/km}$, yhden osuuden suurin vaimennus $A_\text{max} = 20\,\text{dB}$
 **Kysytty:** vahvistimien vähimmäismäärä
 **Periaate:** Kuitu on koko matkalta samanlaista, joten osuuden vaimennus on $A = a\,l$, missä $l$ on osuuden pituus. Osuus saa olla enintään niin pitkä, että vaimennus on $20\,\text{dB}$. Osuuksia tarvitaan niin monta, että ne kattavat koko kaapelin, ja koska lähetin ja vastaanotin ovat päissä, vahvistimia on yksi vähemmän kuin osuuksia.
-**Kaava:** $A_\text{max} = a\,l_\text{max}$, josta $l_\text{max} = \dfrac{A_\text{max}}{a}$; osuuksien määrä $k \ge \dfrac{L}{l_\text{max}}$ ja vahvistimien määrä $k - 1$
+**Kaava:** $$\begin{aligned} A_\text{max} &= a\,l_\text{max} \\ l_\text{max} &= \frac{A_\text{max}}{a} \\ k &\ge \frac{L}{l_\text{max}} \\ N &= k - 1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennukset desibeleinä.
 **Sijoitus:** $l_\text{max} = \dfrac{20\,\text{dB}}{0{,}18\,\text{dB/km}} = 111{,}1\,\text{km}$, joten $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111{,}1\,\text{km}} = 10{,}55$. Osuuksia tarvitaan siis $k = 11$, ja vahvistimia $11 - 1 = 10$.
 **Vastaus:** vähintään $10$ vahvistinta. Lukumäärä on kokonaisluku, ja se pyöristetään ylöspäin osuuksien määränä, koska $10$ osuutta olisi liian pitkiä.
@@ -102,7 +102,7 @@
 **Annettu:** taajuus $f = 25\,\text{kHz}$, magneettivuon tiheyden huippuarvo $B_0 = 4{,}0\,\text{mT}$, silmukan säde $r = 8{,}0\,\text{cm}$, silmukan resistanssi $R = 0{,}050\,\Omega$, kenttä homogeeninen ja kohtisuorassa pohjaa vastaan
 **Kysytty:** pohjan lämpenemisen keskimääräinen teho $P$ kilowatteina
 **Periaate:** Silmukan läpi kulkeva vuo $\Phi = BA$ vaihtelee sinimuotoisesti, joten silmukkaan indusoituu sinimuotoinen jännite, jonka huippuarvo on $e_0 = 2\pi f \cdot \Phi_0$ kuten yhden kierroksen generaattorissa (luku *Generaattori ja vaihtovirta*). Pyörrevirran sähköenergia muuttuu resistanssissa sisäenergiaksi; keskimääräinen teho lasketaan tehollisesta jännitteestä $U = e_0 : \sqrt{2}$.
-**Kaava:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$, $U = \dfrac{e_0}{\sqrt{2}}$ ja $P = \dfrac{U^2}{R}$, josta $P = \dfrac{(2\pi f \cdot B_0 \cdot \pi r^2)^2}{2R}$
+**Kaava:** $$\begin{aligned} \Phi_0 &= B_0 \cdot \pi r^2 \\ e_0 &= 2\pi f \cdot \Phi_0 \\ U &= \frac{e_0}{\sqrt{2}} \\ P &= \frac{U^2}{R} \\ &= \frac{e_0^2}{2R} \\ &= \frac{(2\pi f \cdot B_0 \cdot \pi r^2)^2}{2R} \end{aligned}$$
 **Muunnokset:** $f = 25\,\text{kHz} = 25 \cdot 1000\,\text{Hz} = 2{,}5 \cdot 10^{4}\,\text{Hz}$, $B_0 = 4{,}0\,\text{mT} = 4{,}0 \cdot 10^{-3}\,\text{T}$ ja $r = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} e_0 &= 2\pi \cdot 2{,}5 \cdot 10^{4}\,\text{Hz} \\ &\cdot 4{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}080\,\text{m})^2 \\ &= 12{,}63\,\text{V} \end{aligned}$$, joten $P = \dfrac{(12{,}63\,\text{V})^2}{2 \cdot 0{,}050\,\Omega} = 1596\,\text{W} = 1{,}596\,\text{kW}$
 **Vastaus:** $1{,}6\,\text{kW}$, kaksi merkitsevää numeroa kuten vuon tiheys $4{,}0\,\text{mT}$, säde $8{,}0\,\text{cm}$ ja resistanssi $0{,}050\,\Omega$.
@@ -112,7 +112,7 @@
 **Annettu:** lähetetty teho $P_0 = 1{,}0\,\text{mW}$, pienin tarvittava teho $P = 10\,\mu\text{W}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, neljä liitosta, joista kukin vaimentaa $0{,}50\,\text{dB}$, lasin taitekerroin $n = 1{,}47$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** valopulssin kulkuaika $t$ pisimmän yhteyden päästä päähän millisekunteina
 **Periaate:** Yhteyden koko vaimennus saa olla enintään tehojen suhteen antama määrä. Desibelit lasketaan yhteen, joten kuidulle jää se osa, joka ei kulu liitoksiin, ja siitä saadaan suurin pituus. Lasissa valo etenee nopeudella $v = c : n$ (luku *Kokonaisheijastuminen ja valokuitu*), ja akselin suuntainen pulssi kulkee kuidun pituuden.
-**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, $A = aL + 4 \cdot 0{,}50\,\text{dB}$, josta $L = \dfrac{A - 4 \cdot 0{,}50\,\text{dB}}{a}$, ja $t = \dfrac{L}{v} = \dfrac{nL}{c}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL + 4 \cdot 0{,}50\,\text{dB} \\ L &= \frac{A - 4 \cdot 0{,}50\,\text{dB}}{a} \\ v &= \frac{c}{n} \\ t &= \frac{L}{v} \\ &= \frac{nL}{c} \end{aligned}$$
 **Muunnokset:** $P_0 = 1{,}0\,\text{mW} = 1{,}0 \cdot 10^{-3}\,\text{W}$, $P = 10\,\mu\text{W} = 1{,}0 \cdot 10^{-5}\,\text{W}$; pituus $90\,\text{km} = 90 \cdot 1000\,\text{m}$; lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $A = 10\,\text{dB} \cdot \lg \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{1{,}0 \cdot 10^{-5}\,\text{W}} = 10\,\text{dB} \cdot \lg 100 = 20\,\text{dB}$, $L = \dfrac{20\,\text{dB} - 2{,}0\,\text{dB}}{0{,}20\,\text{dB/km}} = 90\,\text{km} = 90\,000\,\text{m}$, joten $t = \dfrac{1{,}47 \cdot 90\,000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} = 4{,}41 \cdot 10^{-4}\,\text{s} = 0{,}441\,\text{ms}$
 **Vastaus:** $0{,}44\,\text{ms}$, kaksi merkitsevää numeroa kuten tehot ja vaimennuskerroin.
@@ -129,7 +129,7 @@ Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, 
 **Annettu:** teho alussa $P_0 = 4{,}0\,\text{mW}$, vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, pituus $L = 45\,\text{km}$
 **Kysytty:** teho $P$ kuidun lopussa milliwatteina
 **Periaate:** Kuitu on koko matkalta samanlaista, joten vaimennus lasketaan kaavalla $A = aL$. Sen jälkeen tehojen suhde saadaan vaimennuksen määritelmästä ratkaisemalla teho $P$.
-**Kaava:** $A = aL$ ja $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$, josta $P = P_0 \cdot 10^{-A / (10\,\text{dB})}$
+**Kaava:** $$\begin{aligned} A &= aL \\ A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ \lg\frac{P_0}{P} &= \frac{A}{10\,\text{dB}} \\ \frac{P_0}{P} &= 10^{A / (10\,\text{dB})} \\ P &= P_0 \cdot 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Muunnokset:** Ei tarvita: teho säilyy milliwatteina, koska suhde $P : P_0$ on yksikötön.
 **Sijoitus:** $A = 0{,}20\,\tfrac{\text{dB}}{\text{km}} \cdot 45\,\text{km} = 9{,}0\,\text{dB}$, joten $P = 4{,}0\,\text{mW} \cdot 10^{-9{,}0 / 10} = 4{,}0\,\text{mW} \cdot 0{,}1259 = 0{,}5036\,\text{mW}$
 **Vastaus:** $0{,}50\,\text{mW}$, kaksi merkitsevää numeroa kuten lähtötiedot.
@@ -139,7 +139,7 @@ Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, 
 **Annettu:** vaimennuskerroin $a = 0{,}20\,\text{dB/km}$, teho puolittuu eli $P_0 : P = 2$
 **Kysytty:** matka $L$ kilometreinä, jonka kuluessa teho puolittuu
 **Periaate:** Puolittuminen tarkoittaa tehojen suhdetta $2$, joten siitä saadaan vaimennus desibeleinä. Kuitu on koko matkalta samanlaista, joten vaimennus on $A = aL$, ja siitä ratkaistaan matka.
-**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ ja $A = aL$, josta $L = \dfrac{A}{a}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ L &= \frac{A}{a} \end{aligned}$$
 **Muunnokset:** Ei tarvita: vaimennus on desibeleinä ja vaimennuskerroin desibelejä kilometriä kohti.
 **Sijoitus:** $A = 10\,\text{dB} \cdot \lg 2 = 3{,}010\,\text{dB}$, joten $L = \dfrac{3{,}010\,\text{dB}}{0{,}20\,\text{dB/km}} = 15{,}05\,\text{km}$
 **Vastaus:** $15\,\text{km}$, kaksi merkitsevää numeroa kuten vaimennuskerroin $0{,}20\,\text{dB/km}$.
@@ -161,7 +161,7 @@ Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, 
 **Kysytty:** vaimennuskerroin $a$ yksikössä $\text{dB/km}$
 **Periaate:** Kuitu on koko matkalta samanlaista, joten vaimennus kasvaa suoraan verrannollisena pituuteen: $A = aL$. Kun $A$ piirretään pituuden $L$ funktiona, pisteet asettuvat origon kautta kulkevalle suoralle, jonka kulmakerroin on $a$. Suora kulkee origon kautta, koska nollan pituisella kuidulla ei ole vaimennusta.
 **Kuvaajan lukeminen:** Vaimennukset ovat $A = 2{,}15;\ 3{,}89;\ 6{,}11;\ 7{,}93;\ 10{,}05\,\text{dB}$ pituuksilla $10;\ 20;\ 30;\ 40;\ 50\,\text{km}$. Todellisissa mittauksissa pisteet eivät ole täsmälleen samalla suoralla, joten suora piirretään pisteiden lomaan. Sovitettu suora kulkee pisteiden $(0;\ 0)$ ja $(50;\ 10{,}0)$ kautta.
-**Kaava:** $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ ja $A = aL$, joten suoran kulmakerroin $a = \dfrac{\Delta A}{\Delta L}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ a &= \frac{A}{L} \\ &= \frac{\Delta A}{\Delta L} \end{aligned}$$
 **Muunnokset:** Ei tarvita: tehot ovat mikrowatteina ja niiden suhde on yksikötön.
 **Sijoitus:** Esimerkiksi pituudella $10\,\text{km}$: $A = 10\,\text{dB} \cdot \lg \dfrac{800\,\mu\text{W}}{488\,\mu\text{W}} = 2{,}15\,\text{dB}$. Kulmakerroin $a = \dfrac{10{,}0\,\text{dB} - 0}{50\,\text{km} - 0} = 0{,}200\,\text{dB/km}$. Pienimmän neliösumman suora origon kautta antaa kulmakertoimeksi $0{,}2003\,\text{dB/km}$.
 **Vastaus:** $0{,}20\,\text{dB/km}$, kaksi merkitsevää numeroa; teho on mitattu kolmen merkitsevän numeron tarkkuudella, mutta pisteiden hajonta rajoittaa tulosta.
@@ -171,7 +171,7 @@ Vaihtoehto, jonka mukaan sulamislämpötila estää lämpenemisen, on väärä, 
 **Annettu:** vaimennus $A = 20\,\text{dB}$; opiskelijan väite: teho pienenee $20\,\%$ ja perille saapuu $80\,\%$
 **Kysytty:** a) opiskelijan päättelyn virhe; b) perille saapuva osuus lähetetystä tehosta prosentteina
 **Periaate:** Desibeli on logaritminen yksikkö, ei prosentti. Vaimennus $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$ kertoo tehojen suhteen kymmenpotenssina, ja jokainen $10\,\text{dB}$ pienentää tehon kymmenesosaan. Siksi $20\,\text{dB}$ on kaksi kertaa kymmenesosaan pienentyminen.
-**Kaava:** $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ \lg\frac{P_0}{P} &= \frac{A}{10\,\text{dB}} \\ \frac{P_0}{P} &= 10^{A / (10\,\text{dB})} \\ \frac{P}{P_0} &= 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Muunnokset:** Lopuksi suhde kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\dfrac{P}{P_0} = 10^{-20\,\text{dB} / (10\,\text{dB})} = 10^{-2} = 0{,}010$, joten perille saapuu $0{,}010 \cdot 100\,\% = 1{,}0\,\%$
 **Vastaus:** a) Virhe on se, että desibelit tulkittiin prosenteiksi. Desibelit lasketaan yhteen ja tehojen suhteet kerrotaan: kaksi $10\,\text{dB}$:n osuutta pienentää tehon kymmenesosaan kahdesti. b) $1{,}0\,\%$ lähetetystä tehosta saapuu perille. Opiskelijan arvo $80\,\%$ vastaisi vaimennusta vain noin $1\,\text{dB}$.
@@ -204,7 +204,7 @@ Väärät suuruusluokat syntyvät yksikkövirheistä. Jos pituus sijoitetaan kil
 **Annettu:** $N = 15$, $f = 130\,\text{kHz}$, taulukon $d$ ja $e_0$, latauksen raja $e_0 = 1{,}0\,\text{V}$, uusi taajuus $f' = 100\,\text{kHz}$ ja sama vuo
 **Kysytty:** suurin etäisyys $d$ millimetreinä, jolla lataus toimii taajuudella $100\,\text{kHz}$
 **Periaate:** Vuo vaihtelee sinimuotoisesti, joten $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Taulukon jännitteistä lasketaan vuo jokaisella etäisyydellä. Jännite $1{,}0\,\text{V}$ vaatii taajuudella $100\,\text{kHz}$ tietyn vuon, ja etäisyys saadaan interpoloimalla.
-**Kaava:** $\Phi_0 = \dfrac{e_0}{N \cdot 2\pi f}$, $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{N \cdot 2\pi f'}$ ja $d = d_1 + (d_2 - d_1) \cdot \dfrac{\Phi_1 - \Phi_{\min}}{\Phi_1 - \Phi_2}$
+**Kaava:** $$\begin{aligned} e_0 &= N \cdot 2\pi f \cdot \Phi_0 \\ \Phi_0 &= \frac{e_0}{N \cdot 2\pi f} \\ \Phi_\text{min} &= \frac{1{,}0\,\text{V}}{N \cdot 2\pi f'} \\ d &= d_1 + (d_2 - d_1) \cdot \frac{\Phi_1 - \Phi_\text{min}}{\Phi_1 - \Phi_2} \end{aligned}$$
 **Muunnokset:** $f = 1{,}30 \cdot 10^{5}\,\text{Hz}$, $f' = 1{,}00 \cdot 10^{5}\,\text{Hz}$ ja $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
 **Sijoitus:** a) Nimittäjä on $15 \cdot 2\pi \cdot 1{,}30 \cdot 10^{5}\,\text{Hz} = 1{,}225 \cdot 10^{7}\,\text{Hz}$, joten vuot ovat $0{,}377;\ 0{,}221;\ 0{,}124;\ 0{,}0677;\ 0{,}0384\,\mu\text{Wb}$ etäisyyksillä $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
 b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5}\,\text{Hz}} = 0{,}1061\,\mu\text{Wb}$ on vuoarvojen $0{,}1241\,\mu\text{Wb}$ ($12\,\text{mm}$) ja $0{,}0677\,\mu\text{Wb}$ ($16\,\text{mm}$) välissä: $$\begin{aligned} d &= 12\,\text{mm} \\ &+ 4\,\text{mm} \cdot \dfrac{0{,}1241 - 0{,}1061}{0{,}1241 - 0{,}0677} \\ &= 13{,}28\,\text{mm} \end{aligned}$$
@@ -217,7 +217,7 @@ c) Sama vuo vaihtelee taajuudella $100\,\text{kHz}$ hitaammin kuin taajuudella $
 **Annettu:** $f = 30\,\text{kHz}$, $B_0 = 3{,}0\,\text{mT}$, $r = 9{,}0\,\text{cm}$, $R_\text{A} = 0{,}040\,\Omega$, $R_\text{B} = 0{,}050\,\Omega$, $R_\text{C} = 0{,}080\,\Omega$, kenttä homogeeninen ja kohtisuorassa pohjaa vastaan
 **Kysytty:** taajuus $f_\text{C}$ kilohertseinä, jolla kattilan C pohja lämpenee samalla teholla kuin kattilan A pohja taajuudella $30\,\text{kHz}$
 **Periaate:** Silmukan vuo $\Phi = BA$ vaihtelee sinimuotoisesti, joten huippujännite on $e_0 = 2\pi f \cdot \Phi_0$ ja teho $P = U^2 : R$ tehollisella jännitteellä $U = e_0 : \sqrt{2}$. Huippujännite on verrannollinen taajuuteen, joten teho on verrannollinen taajuuden neliöön ja kääntäen verrannollinen resistanssiin.
-**Kaava:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$ ja $P = \dfrac{e_0^2}{2R} \sim \dfrac{f^2}{R}$. Yhtäsuuret tehot: $\dfrac{f_\text{C}^2}{R_\text{C}} = \dfrac{f^2}{R_\text{A}}$, josta $f_\text{C} = f \cdot \sqrt{\dfrac{R_\text{C}}{R_\text{A}}}$
+**Kaava:** $$\begin{aligned} \Phi_0 &= B_0 \cdot \pi r^2 \\ e_0 &= 2\pi f \cdot \Phi_0 \\ P &= \frac{e_0^2}{2R} \\ &= \frac{(2\pi f \cdot \Phi_0)^2}{2R} \\ &\sim \frac{f^2}{R} \\ \frac{f_\text{C}^2}{R_\text{C}} &= \frac{f^2}{R_\text{A}} \\ f_\text{C}^2 &= f^2 \cdot \frac{R_\text{C}}{R_\text{A}} \\ f_\text{C} &= f \cdot \sqrt{\frac{R_\text{C}}{R_\text{A}}} \end{aligned}$$
 **Muunnokset:** $f = 3{,}0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3{,}0 \cdot 10^{-3}\,\text{T}$, $r = 0{,}090\,\text{m}$ ja $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** a) $\Phi_0 = 3{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}090\,\text{m})^2 = 7{,}63 \cdot 10^{-5}\,\text{Wb}$ ja $$\begin{aligned} e_0 &= 2\pi \cdot 3{,}0 \cdot 10^{4}\,\text{Hz} \\ &\cdot 7{,}63 \cdot 10^{-5}\,\text{Wb} \\ &= 14{,}39\,\text{V} \end{aligned}$$. Tehot $P = \dfrac{(14{,}39\,\text{V})^2}{2R}$ ovat kattilalle A $2{,}59\,\text{kW}$, B $2{,}07\,\text{kW}$ ja C $1{,}29\,\text{kW}$.
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42{,}43\,\text{kHz}$
@@ -233,7 +233,7 @@ Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa su
 **Kysytty:** jännitteen huippuarvo $e_0'$ etäisyydellä $6\,\text{mm}$ voltteina
 **Periaate:** Jännitteen huippuarvo on $e_0 = N \cdot 2\pi f \cdot \Phi_0$. Kun $N$ ja $f$ pysyvät samoina, $e_0$ on verrannollinen vuohon $\Phi_0$. Kuvan kenttäviivat on piirretty yhtä suurin vuoaskelin, joten vastaanotinkäämin läpi kulkevien viivojen lukumäärä $n$ on verrannollinen vuohon ja siten jännitteeseen.
 **Kuvaajan lukeminen:** Lasketaan tummennetut viivat, jotka kulkevat vastaanotinkäämin läpi. Vasemmalla ($3\,\text{mm}$) niitä on $6$ ja oikealla ($6\,\text{mm}$) $4$.
-**Kaava:** $\dfrac{e_0'}{e_0} = \dfrac{\Phi_0'}{\Phi_0} = \dfrac{n'}{n}$, joten $e_0' = e_0 \cdot \dfrac{n'}{n}$
+**Kaava:** $$\begin{aligned} e_0 &= N \cdot 2\pi f \cdot \Phi_0 \\ e_0' &= N \cdot 2\pi f \cdot \Phi_0' \\ \frac{e_0'}{e_0} &= \frac{\Phi_0'}{\Phi_0} \\ &= \frac{n'}{n} \\ e_0' &= e_0 \cdot \frac{n'}{n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: viivamäärien suhde on yksikötön, ja jännite pysyy voltteina.
 **Sijoitus:** $e_0' = 4{,}2\,\text{V} \cdot \dfrac{4}{6} = 2{,}8\,\text{V}$
 **Vastaus:** $2{,}8\,\text{V}$, kaksi merkitsevää numeroa kuten annettu jännite. Viivojen laskeminen on karkea, joten arvo on suuntaa antava.
@@ -244,7 +244,7 @@ Hyvin johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa su
 **Kysytty:** vaimennuskerroin $a$ ja teho $P : P_0$ prosentteina pituudella $70\,\text{km}$
 **Periaate:** Kuitu on koko matkalta samanlaista, joten $A = aL$, ja vaimennus kertoo tehon suhteen: $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$. Kun teho on puolittunut, $P_0 : P = 2$, joten vaimennus tunnetaan ilman tehojen lukuarvoja. Vaimennuskerroin saadaan jakamalla se puolittumiseen tarvittavalla pituudella.
 **Kuvaajan lukeminen:** Vedä vaakasuora viiva korkeudelle $50\,\%$ ja mene sen ja käyrän leikkauspisteestä pystysuoraan alas vaaka-akselille. Kohta on $L_{1/2} = 10\,\text{km}$. Kuvaaja päättyy $40\,\text{km}$:iin, joten kysytty pituus $70\,\text{km}$ lasketaan vaimennuskertoimella eikä lueta kuvaajasta.
-**Kaava:** $a = \dfrac{10\,\text{dB} \cdot \lg 2}{L_{1/2}}$, $A = aL$ ja $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
+**Kaava:** $$\begin{aligned} A &= 10\,\text{dB} \cdot \lg\frac{P_0}{P} \\ A &= aL \\ a &= \frac{A_{1/2}}{L_{1/2}} \\ &= \frac{10\,\text{dB} \cdot \lg 2}{L_{1/2}} \\ \frac{P}{P_0} &= 10^{-A / (10\,\text{dB})} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennuskerroin lasketaan yksikössä $\text{dB/km}$.
 **Sijoitus:** $a = \dfrac{10\,\text{dB} \cdot 0{,}301}{10\,\text{km}} = 0{,}301\,\text{dB/km}$. Pituudella $70\,\text{km}$: $A = 0{,}301\,\text{dB/km} \cdot 70\,\text{km} = 21{,}07\,\text{dB}$ ja $\dfrac{P}{P_0} = 10^{-21{,}07 / 10} = 0{,}00782 = 0{,}78\,\%$.
 **Vastaus:** $0{,}78\,\%$, kaksi merkitsevää numeroa; vaimennuskerroin on noin $0{,}30\,\text{dB/km}$.
