@@ -1,15 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 9298f8fbb6e98905
-SCOPE: delta (round 2): new Sovella tasks s7 (lamp curve, fy6-3/lamp-curve) and s8 (three resistors, fy6-4/siirto-mixed), their solutions, and the changed intro; s1-s6 not re-judged. Cut like fi (same text structure); check_layout 360 px OK; judged by fidelity to fi captures.
+VERDICT: FAIL
+CONTENT-HASH: 3b9eee5b55139e4f
+SCOPE: delta: s7 (Hehkulamppu ja pariston jännite, kuva fy6-3/lamp-curve), s8 (Kolmen vastuksen kytkentä, kuva fy6-4/siirto-mixed) ja muuttunut johdanto 390 px:llä
 
 ## Blocking
-(none)
+- [Major] s8 b ja c, VASTAUS-laatikko (solutions.md rivit 598 ja 618) — vastaus alkaa kaavalla `$60\,\Omega$:n vastuksessa ...` ja `$20\,\Omega$:n vastuksen teho ...`; sivu laatikoi vain ensimmäisen kaavan, joten laatikossa lukee "60 Ω" tai "20 Ω" (kysytty suure ei ole laatikossa) ja lause jatkuu irrallisena ":n vastuksessa ..." — laatikko näyttää virheellisen lopputuloksen ja lause on rikki — aloita vastaus sanalla tai kysytyllä suureella: "Virrat ovat $I_{60} = 0{,}10\,\text{A}$ ja $I_{30} = 0{,}20\,\text{A}$ ..." ja "Tehot ovat $P_{20} = 1{,}8\,\text{W}$ ja $P = 3{,}6\,\text{W}$ ...".
 
 ## Polish
-- [Minor] s8 d rubric criterion (calculation): the aligned row starts "U = 12 V" without the subscript (should be U_1, the voltage over the 60 ohm resistor) and carries a hand-made break (\quad - 0,15 A * 20 ohm); not blocking, the model answer names U_1.
-- [Minor] figures fy6-3/lamp-curve and fy6-4/siirto-mixed at 360 px: tick numbers and resistor labels about 10 px; legible, reading 0,21 A off the lamp graph is tight. Shared figures, no change asked here.
+- [Minor] s7/s8 kuvat — pienet akselinumerot ja komponenttitunnisteet 390 px:llä, luettavissa.
 
 ## Checked
-- Round 1: s7 text now says battery internal resistance and wires are neglected (verified in the task text and in the fy9 page capture); s8 d solution now has a Kaava line (verified in solutions and capture). Both fixed.
-- Captures (fi, 390 px): s7 and s8 task cards with figures, opened model answers (aligned calc rows, Jarkevyys boxes, Yleisia virheita, Hyvaksytaan myos), rubric rows; intro text. Contact sheets 7 and 8, parts 52 and 70 at full size.
-- check_layout 360 px: OK for fi, en and fi-easy. Units LaTeX with thin space, decimal comma (fi, fi-easy) and point (en), no overflow or clipping.
+- Omat 390 px:n elementtikuvat tehtävistä s7 ja s8 (ongelma, kuva, mallivastaukset auki; s8 b ja c vastauslaatikot avattu täysikokoisina; s7 a luettu). check_layout.py --width 360: OK.
+
+## Scores
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4

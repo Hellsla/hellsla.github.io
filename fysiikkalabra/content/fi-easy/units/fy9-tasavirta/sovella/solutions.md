@@ -595,7 +595,7 @@ I_{30} &= \dfrac{6{,}0\,\text{V}}{30\,\Omega} \\
 &= 0{,}20\,\text{A}
 \end{aligned}
 $$
-**Vastaus:** $60\,\Omega$:n vastuksessa kulkee $I_{60} = 0{,}10\,\text{A}$ ja $30\,\Omega$:n vastuksessa $I_{30} = 0{,}20\,\text{A}$. Kaksi merkitsevää numeroa kuten a-kohdan virta.
+**Vastaus:** Virrat ovat $I_{60} = 0{,}10\,\text{A}$ ($60\,\Omega$:n vastus) ja $I_{30} = 0{,}20\,\text{A}$ ($30\,\Omega$:n vastus). Kaksi merkitsevää numeroa kuten a-kohdan virta.
 **Järkevyys:** Virrat ovat yhdessä $0{,}10\,\text{A} + 0{,}20\,\text{A} = 0{,}30\,\text{A}$. Se on sama kuin pariston virta. Pienempi resistanssi vie suuremman virran. Virtojen suhde on $1 : 2$, kuten resistanssien käänteissuhde.
 
 ### c)
@@ -615,7 +615,7 @@ P &= 12\,\text{V} \cdot 0{,}30\,\text{A} \\
 &= 3{,}6\,\text{W}
 \end{aligned}
 $$
-**Vastaus:** $20\,\Omega$:n vastuksen teho on $P_{20} = 1{,}8\,\text{W}$ ja koko kytkennän teho $P = 3{,}6\,\text{W}$, kaksi merkitsevää numeroa kuten virta.
+**Vastaus:** Tehot ovat $P_{20} = 1{,}8\,\text{W}$ ($20\,\Omega$:n vastus) ja $P = 3{,}6\,\text{W}$ (koko kytkentä), kaksi merkitsevää numeroa kuten virta.
 **Järkevyys:** Muiden vastusten tehot ovat $60\,\Omega \cdot (0{,}10\,\text{A})^2 = 0{,}60\,\text{W}$ ja $30\,\Omega \cdot (0{,}20\,\text{A})^2 = 1{,}2\,\text{W}$. Yhteensä $$
 \begin{aligned}
 P &= 1{,}8\,\text{W} + 0{,}60\,\text{W} \\
