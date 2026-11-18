@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 22126cca58c08cf9
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 5b16af0ea83ce87b
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- C `sovella/tasks.json` c and d: "teho muuttuu sisäenergiaksi" is loose (energy changes form, power is its rate); it was as loose before the change. For science: consider "Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?" at a later edit.
+- [Minor] fy9-harjoituskoe-s2-fbd — the earlier Sovella review noted the labels render small at 390 px; unchanged by this diff, fix when the figure is next edited.
 
 ## Checked
-- Hunks: solutions.md d) Periaate (lähtökitka eli täysin kehittynyt lepokitka), c) Kysytty (johdon sisäenergiaksi muuttuva teho); tasks.json criterion of d and the questions c and d of Jatkojohto kelalla. Grammar and terms correct; the model answer's "suurin mahdollinen lepokitka" stays consistent with the new term.
-- Captures opened: `fy9-harjoituskoe-stage-exercises-390-13.png`, `-390-16.png`, `-390-25.png`, `-390-28.png`, `-1280-10.png`, `-1280-19.png`: inline formulas whole at 390 px, the longer question d wraps in two lines beside its points, nothing clipped.
-- The first `screenshot.py --if-stale` run failed once with a UnicodeDecodeError (a preview being rebuilt at the same time); the rerun wrote 179 captures for this hash.
-- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.
+- Hash 5b16af0ea83ce87b at start and at end (unchanged).
+- Diff (excluding review/): only sovella/solutions.md, paragraph breaks inside Mallivastaus fields; words, maths and figures unchanged. Fi: sovella solutions s1 c/e, s2 a/d, s5 d split into two paragraphs each.
+- Read the earlier Sovella visual report (PASS) as evidence.
+- Opened review/shots/contact-5.png (fi): model-solution cards, Yleisia virheita lists, rubric rows, inquiry solution; split paragraphs read well, no clipping, overflow or red KaTeX source.
+- Did not open individual 390 px or 1280 px captures one by one this round; judgement of the changed paragraphs rests on the diff and that contact sheet.

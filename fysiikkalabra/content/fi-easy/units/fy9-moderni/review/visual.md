@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 43cb3edae017c63d
-SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9 (changed passages, 360 px layout); older tasks untouched
-
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 9f6d0a54ea9df872
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- [Minor] s9 figure alt text (fy8-16/hubble-t) in fi-easy may still be one long sentence; split in a later figure-fix.
-- [Minor] s8 and s9 figures: small ticks and faint grid on a phone; shared catalogue figures.
+- [Minor] The shots predate the paragraph split (earlier hash), so the new breaks are judged from the diff plus the existing layout of the same solution blocks, not seen rendered. Gap noted, not a ground for FAIL.
 
 ## Checked
-- Rebuilt captures for hash 43cb3edae017c63d (screenshot.py --lang fi-easy, current). Same components as fi (fi captures 64, 66, 75 opened and fine).
-- Read the fi-easy s8 and s9 text and every rubric row: short sentences, one idea each (the s8 comma before "Se on enemmän kuin" is gone: the display ends with a full stop), same numbers and units as fi, decimal comma, LaTeX units, results at the data's precision, question last, no revealed structure, language-neutral unit fields.
-- check_layout.py --width 360 for preview/fi-easy/fy9-moderni: OK; known clipped formulas are older rows, none in s8/s9.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (selkeä suomi) 5 · accessibility 4
+- git diff origin/main...HEAD for fi-easy/units/fy9-moderni (excl. review/): solutions.md (same stat as fi, about 70 lines added, 13 removed) and one inquiry.json solution field; only blank lines inserted; no word, formula, number or figure changed. Fi diff read in full.
+- Read the previous Sovella visual report (PASS, same change).
+- Opened fi-easy review/shots/fy9-moderni-stage-sovella-390-5.png and -390-9.png (plus the fi 1280 capture): labelled solution sections, display maths and calculation rows intact, no clipping or overflow at 390 px.
+- Figures unchanged, not re-opened.

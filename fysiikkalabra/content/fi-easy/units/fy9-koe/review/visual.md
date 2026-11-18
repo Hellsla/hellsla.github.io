@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c8d1c7be46b19133
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 82bed51c399175e5
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Hunks: inquiry.json Esimerkki 7 (correct option and three feedback texts); solutions.md Periaate of c and d.
-- Opened `fy9-koe-stage-sovella-390-7.png`: the option "Se muuttuu lampun ja ympäristön sisäenergiaksi. Energiaa ei katoa." fits its button on three lines, $35\,\%$ and $100\,\%$ in KaTeX.
-- Opened `fy9-koe-stage-exercises-390-4.png` and `-390-5.png`: both Periaate paragraphs read well, formulas and the aligned Sijoitus rows around them intact.
-- The three changed feedback texts show only after an answer is committed, so no capture holds them; judged from the source: plain prose without formulas, correct grammar ("muuttuu valoksi ja sisäenergiaksi. Niiden summa…" has a clear referent), the link text unchanged. The feedback panel itself is the shared component seen in other captures.
-- Page overflow at 390 and 1280 px: 0 px.
+- Diff origin/main...HEAD for unit.md and inquiry.json (fi-easy): only paragraph breaks. In unit.md the worked example's "Tunnetut ja kysytty" paragraph is split so the question stands alone; in inquiry.json two model-answer fields (kettle-efficiency marking comment, helmet answer) are split at a sentence boundary. Words, maths and figures are identical.
+- Contact sheets contact-6.png (#61-#72: model solutions, marking, self-assessment, exit ticket) and contact-9.png (#97-#108: example boxes with staged solutions) in review/shots/, at contact-sheet resolution only. The split paragraphs sit as short paragraphs inside the cards; no clipping, overlap or overflow, and the stage layout survived.
+- The earlier Sovella visual report (sovella/review/visual.md, PASS) read as evidence. I did not open individual 390 px captures, so fine type size is not judged.

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fd4f0479d36b9c00
-SCOPE: delta: s7 (ydinvoimalan lähdeaineisto), s8 (kuva fy3-10/pt-suorat), s9 (kuva fy3-11/pv-isobaari) ja muuttunut johdanto 390 px:llä
+CONTENT-HASH: 4298223815f5ef64
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] s7 — ominaislämpökapasiteetti ja tiheys kirjoitettu murtoyksiköllä ($\frac{\text{kJ}}{\text{kg·K}}$), muualla J/(kg·K); yhtenäistä yksikkömuoto.
-- [Minor] s8/s9 — $R = 8{,}31\,\text{J/(mol K)}$ ilman $\cdot$-merkkiä; muualla $\text{J/(mol}\cdot\text{K)}$.
-- [Minor] vanhat tehtävät — kaksi tunnettua leikkautuvaa kaavaa (FY9.tsv), ei tämän deltan.
+- [Minor] capture gap: the shots have no capture of the opened Sovella solution paragraphs the diff touches; judged from the diff and the opened solution of the service-hatch task in the same component.
+- The earlier Sovella report's minor figure notes (s3-extra axis labels, s3-graph label, s6-vaaka arrows) are unchanged by this diff and still stand as Polish.
 
 ## Checked
-- Omat 390 px:n elementtikuvat tehtävistä s7, s8, s9 (ongelma, kuva, mallivastaukset auki): kuvat, kaavarivit, vastauslaatikot luettu. check_layout.py --width 360: OK (2 tunnettua).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+- git diff origin/main...HEAD (excluding review/): only solutions.md changed; blank lines between paragraphs; words, maths and figures unchanged; no break inside a formula.
+- Read sovella/review/visual.md (earlier PASS).
+- Opened stage-sovella-390-3 (fi-easy): opened solution (Annettu, Kysytty, Periaate, Kaava) with paragraph spacing and KaTeX readable at 390 px.
