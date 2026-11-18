@@ -2,7 +2,7 @@
 **Given:** $v_0 = 72.0\,\text{km/h}$, reaction time $t_\text{r} = 1.20\,\text{s}$
 **Find:** the reaction distance $s_\text{r}$ in $\text{m}$
 **Principle:** During the reaction time the driver is not yet braking, so the car moves at a constant speed. In uniform motion the distance travelled is speed times time.
-**Formula:** $s_\text{r} = v_0\,t_\text{r}$
+**Formula:** $v = \dfrac{s}{t}$, so in uniform motion $s_\text{r} = v_0\,t_\text{r}$
 **Conversions:** $72.0\,\text{km/h} = \dfrac{72.0 \cdot 1000\,\text{m}}{3600\,\text{s}} = 20.0\,\text{m/s}$
 **Substitution:** $s_\text{r} = 20.0\,\text{m/s} \cdot 1.20\,\text{s} = 24.0\,\text{m}$
 **Answer:** $24.0\,\text{m}$, three significant figures like the speed $72.0\,\text{km/h}$ and the reaction time $1.20\,\text{s}$.
@@ -32,7 +32,7 @@
 **Given:** $m = 70.0\,\text{kg}$, the speed changes from $15.0\,\text{m/s}$ to zero, $\Delta t = 0.120\,\text{s}$
 **Find:** the average force $F_\text{avg}$ in $\text{N}$
 **Principle:** By the impulse–momentum principle, the impulse of the force acting on the passenger equals the change in their momentum. When the force varies during the collision, the principle gives the average force.
-**Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
+**Formula:** $I = F\,\Delta t$, $p = m\,v$ and $I = \Delta p$, so $F\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $F_\text{avg} = \dfrac{70.0\,\text{kg} \cdot 15.0\,\text{m/s}}{0.120\,\text{s}} = \dfrac{1050\,\text{kg}\cdot\text{m/s}}{0.120\,\text{s}} = 8750\,\text{N}$
 **Answer:** $8750\,\text{N}$, that is, $8.75\,\text{kN}$, three significant figures like the data.
@@ -42,7 +42,7 @@
 **Given:** speed $v_0 = 15.0\,\text{m/s}$, reaction distance $s_\text{r} = 18.0\,\text{m}$
 **Find:** the reaction time $t_\text{r}$ in $\text{s}$
 **Principle:** Before the brakes start to work, the car moves at a constant speed. The reaction distance is therefore speed times reaction time, and the time is solved from it.
-**Formula:** $s_\text{r} = v_0\,t_\text{r}$, so $t_\text{r} = \dfrac{s_\text{r}}{v_0}$
+**Formula:** $v_0 = \dfrac{s_\text{r}}{t_\text{r}}$, so $t_\text{r} = \dfrac{s_\text{r}}{v_0}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $t_\text{r} = \dfrac{18.0\,\text{m}}{15.0\,\text{m/s}} = 1.20\,\text{s}$
 **Answer:** $1.20\,\text{s}$, three significant figures like the speed $15.0\,\text{m/s}$ and the distance $18.0\,\text{m}$.
@@ -70,7 +70,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Given:** coefficient of friction $\mu = 0.75$, horizontal road, full grip; $g = 9.81\,\text{m/s}^2$
 **Find:** the deceleration of the car $a$ in $\text{m/s}^2$
 **Principle:** On a horizontal road the car does not accelerate vertically, so the normal force equals the weight, $N = mg$. In full braking the friction $F_\mu = \mu N$ is the only horizontal force, so by Newton's second law $\mu mg = ma$. The mass cancels.
-**Formula:** $a = \mu g$
+**Formula:** $\Sigma F = ma$, $F_\mu = \mu N$ and $N = mg$, so $\mu m g = m a$ and $a = \mu g$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = 0.75 \cdot 9.81\,\text{m/s}^2 = 7.358\,\text{m/s}^2$
 **Answer:** $7.4\,\text{m/s}^2$, two significant figures like the coefficient of friction $0.75$.
@@ -80,7 +80,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Given:** $v_0 = 90\,\text{km/h}$, reaction time $t_\text{r} = 1.5\,\text{s}$, deceleration $a = 7.5\,\text{m/s}^2$
 **Find:** the stopping distance $s_\text{stop}$ in $\text{m}$
 **Principle:** During the reaction time the car moves at a constant speed, so the reaction distance is speed times time. Then the car slows down at a constant deceleration, and the braking distance is the area of the triangle on the $(t,v)$ graph. The stopping distance is the sum of these.
-**Formula:** $s_\text{stop} = s_\text{r} + s_\text{b}$, so $s_\text{stop} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a}$
+**Formula:** $s_\text{stop} = s_\text{r} + s_\text{b}$, $s_\text{r} = v_0\,t_\text{r}$, $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$ and $s_\text{stop} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a}$
 **Conversions:** $90\,\text{km/h} = \dfrac{90 \cdot 1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$
 **Substitution:** $s_\text{stop} = 25\,\text{m/s} \cdot 1.5\,\text{s} + \dfrac{(25\,\text{m/s})^2}{2 \cdot 7.5\,\text{m/s}^2} = 37.5\,\text{m} + 41.67\,\text{m} = 79.17\,\text{m}$
 **Answer:** $79\,\text{m}$, two significant figures like the reaction time $1.5\,\text{s}$ and the deceleration $7.5\,\text{m/s}^2$.
@@ -90,7 +90,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Given:** $v_0 = 100\,\text{km/h}$, coefficient of friction $\mu = 0.30$, horizontal road; $g = 9.81\,\text{m/s}^2$
 **Find:** the braking distance $s_\text{b}$ in $\text{m}$
 **Principle:** On a horizontal road friction is the only horizontal force and the normal force equals the weight, so full grip gives the deceleration $a = \mu g$. The deceleration is constant, so the braking distance is the area of the triangle on the $(t,v)$ graph.
-**Formula:** $a = \mu g$ and $s_\text{b} = \dfrac{v_0^2}{2a}$, so $s_\text{b} = \dfrac{v_0^2}{2\mu g}$
+**Formula:** $\Sigma F = ma$, $F_\mu = \mu N$ and $N = mg$, so $\mu m g = m a$ and $a = \mu g$. In addition, $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Conversions:** $100\,\text{km/h} = \dfrac{100 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 27.78\,\text{m/s}$
 **Substitution:** $s_\text{b} = \dfrac{(27.78\,\text{m/s})^2}{2 \cdot 0.30 \cdot 9.81\,\text{m/s}^2} = \dfrac{771.6\,\text{m}^2/\text{s}^2}{5.886\,\text{m/s}^2} = 131.1\,\text{m}$
 **Answer:** $130\,\text{m}$ (that is, $1.3 \cdot 10^2\,\text{m}$), two significant figures like the coefficient of friction $0.30$.
@@ -100,7 +100,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Given:** $m = 75.0\,\text{kg}$, the speed changes from $50.0\,\text{km/h}$ to zero, $\Delta t = 0.100\,\text{s}$
 **Find:** the average force $F_\text{avg}$ in $\text{N}$
 **Principle:** By the impulse–momentum principle, the impulse of the forces acting on the driver equals the change in their momentum. The belt and the airbag lengthen the time in which the change happens, and the principle gives the average force.
-**Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
+**Formula:** $I = F\,\Delta t$, $p = m\,v$ and $I = \Delta p$, so $F\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$
 **Conversions:** $50.0\,\text{km/h} = \dfrac{50.0 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 13.89\,\text{m/s}$
 **Substitution:** $F_\text{avg} = \dfrac{75.0\,\text{kg} \cdot 13.89\,\text{m/s}}{0.100\,\text{s}} = \dfrac{1041.7\,\text{kg}\cdot\text{m/s}}{0.100\,\text{s}} = 10\,417\,\text{N}$
 **Answer:** $10\,400\,\text{N}$, that is, $10.4\,\text{kN}$, three significant figures like the data.
@@ -110,7 +110,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Given:** braking distance $s_\text{b} = 32.0\,\text{m}$, deceleration $a = 8.0\,\text{m/s}^2$, the car came to a stop
 **Find:** the speed at the start of braking $v_0$ in $\text{km/h}$
 **Principle:** The deceleration is assumed to be constant along the whole skid mark, so the formula for the braking distance applies. The initial speed is solved from it.
-**Formula:** $s_\text{b} = \dfrac{v_0^2}{2a}$, so $v_0^2 = 2a\,s_\text{b}$ and $v_0 = \sqrt{2a\,s_\text{b}}$
+**Formula:** $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$, from which $v_0^2 = 2a\,s_\text{b}$ and $v_0 = \sqrt{2a\,s_\text{b}}$
 **Conversions:** We calculate first in $\text{m/s}$ and convert at the end: $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_0^2 = 2 \cdot 8.0\,\text{m/s}^2 \cdot 32.0\,\text{m} = 512\,\text{m}^2/\text{s}^2$, so $v_0 = \sqrt{512}\,\text{m/s} = 22.63\,\text{m/s} = 22.63 \cdot 3.6\,\text{km/h} = 81.46\,\text{km/h}$
 **Answer:** $81\,\text{km/h}$, two significant figures, because the deceleration $8.0\,\text{m/s}^2$ is an estimate with two figures.
@@ -121,7 +121,7 @@ The belt does not slow the passenger before the collision and does not take part
 **Find:** the deceleration of the car $a$ in $\text{m/s}^2$
 **Principle:** With a constant deceleration the braking distance is $s_\text{b} = \dfrac{v_0^2}{2a}$. When the distance is plotted as a function of the square of the speed, the graph is a straight line through the origin whose slope is $\dfrac{1}{2a}$.
 **Reading the graph:** The squares of the speeds are $100$; $225$; $400$ and $625\,\text{m}^2/\text{s}^2$. The points $(v_0^2, s_\text{b})$ lie almost on a straight line through the origin. The measurement contains small random variation, so the line passes between the points. The point $(600\,\text{m}^2/\text{s}^2;\ 38.2\,\text{m})$ is read from the fitted line.
-**Formula:** slope $k = \dfrac{s_\text{b}}{v_0^2} = \dfrac{1}{2a}$, so $a = \dfrac{1}{2k}$
+**Formula:** $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{1}{2a}\,v_0^2$. The slope is $k = \dfrac{s_\text{b}}{v_0^2} = \dfrac{1}{2a}$, so $a = \dfrac{1}{2k}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** The slope is $k = \dfrac{38.2\,\text{m}}{600\,\text{m}^2/\text{s}^2} = 0.0637\,\text{s}^2/\text{m}$. The deceleration is
 ```latex
@@ -140,7 +140,7 @@ When the speed doubles from $10$ to $20\,\text{m/s}$, the distance grows from $6
 **Find:** the speed of the dummy before the collision $v_0$ in $\text{km/h}$
 **Principle:** By the impulse–momentum principle $F_\text{avg}\,\Delta t = m\,\Delta v$. The change in speed is the same in all tests, so $F_\text{avg} = m\,\Delta v \cdot \dfrac{1}{\Delta t}$: when the force is plotted as a function of the inverse time $\tfrac{1}{\Delta t}$, the graph is a straight line through the origin whose slope is the change in momentum $m\,\Delta v$.
 **Reading the graph:** The inverse times are $20.0$; $12.5$; $10.0$; $6.7$ and $5.0\,\text{s}^{-1}$. The points lie almost on a straight line through the origin. There is a little random variation, so the line passes between the points. The point $(20.0\,\text{s}^{-1};\ 25.0\,\text{kN})$ is read from the fitted line, so the slope is $\dfrac{25.0\,\text{kN}}{20.0\,\text{s}^{-1}} = 1.25\,\text{kN}\cdot\text{s}$.
-**Formula:** $m\,\Delta v = $ slope, so $v_0 = \Delta v = \dfrac{\text{slope}}{m}$
+**Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$ (impulse $I = F\,\Delta t$ and change in momentum $\Delta p = m\,\Delta v$), so $F_\text{avg} = m\,\Delta v \cdot \dfrac{1}{\Delta t}$. The slope is $m\,\Delta v$, and the final speed is zero, so $v_0 = \Delta v = \dfrac{\text{slope}}{m}$
 **Conversions:** $1.25\,\text{kN}\cdot\text{s} = 1250\,\text{N}\cdot\text{s} = 1250\,\text{kg}\cdot\text{m/s}$ and finally $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** The speed $v_0 = \Delta v$ is
 ```latex
@@ -157,7 +157,7 @@ v_0 &= \frac{1250\,\text{kg}\cdot\text{m/s}}{75.0\,\text{kg}} \\
 **Given:** the braking distance from $50\,\text{km/h}$ is $12.0\,\text{m}$, the braking distance from $90\,\text{km/h}$ is asked; deceleration constant and the same in both
 **Find:** a) what the error in the student's reasoning is; b) the braking distance $s_\text{b}$ from $90\,\text{km/h}$ in $\text{m}$
 **Principle:** With a constant deceleration the braking distance $s_\text{b} = \dfrac{v_0^2}{2a}$ is proportional to the square of the speed, not to the speed. When the deceleration is the same, a speed ratio $k$ changes the braking distance by the factor $k^2$.
-**Formula:** $\dfrac{s_2}{s_1} = \dfrac{v_2^2 / (2a)}{v_1^2 / (2a)} = \left(\dfrac{v_2}{v_1}\right)^2$, so $s_2 = s_1 \left(\dfrac{v_2}{v_1}\right)^2$
+**Formula:** $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so $s_\text{b} = \dfrac{v_0^2}{2a}$. $\dfrac{s_2}{s_1} = \dfrac{v_2^2 / (2a)}{v_1^2 / (2a)} = \left(\dfrac{v_2}{v_1}\right)^2$, so $s_2 = s_1 \left(\dfrac{v_2}{v_1}\right)^2$
 **Conversions:** The ratio of the speeds does not depend on the unit, so no conversion is needed: $\dfrac{90\,\text{km/h}}{50\,\text{km/h}} = 1.8$.
 **Substitution:** The braking distance $s_2$ is
 ```latex
@@ -195,7 +195,7 @@ In the same car, double the speed doubles the average force if the stopping time
 **Principle:** First the distance $d$ is calculated from the formula for the stopping distance. At $40\,\text{km/h}$ the car travels the reaction distance at constant speed and brakes for the rest of the distance.
 
 If the speed at the child is $v$, stopping would still need the distance $\tfrac{v^2}{2a}$, so the whole braking distance is the distance braked up to the child plus this.
-**Formula:** $d = u\,t_\text{r} + \dfrac{u^2}{2a}$, where $u = 30\,\text{km/h}$, and $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$, so $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
+**Formula:** The distance $d$ is the stopping distance from $u = 30\,\text{km/h}$: $s_\text{r} = u\,t_\text{r}$, $s_\text{b} = \tfrac{1}{2}\,u\,t_\text{b}$ and $t_\text{b} = \dfrac{u}{a}$, so $d = u\,t_\text{r} + \dfrac{u^2}{2a}$. At $v_0$ the car travels the reaction distance $v_0\,t_\text{r}$ and brakes over the distance $d - v_0\,t_\text{r}$. Stopping from $v_0$ would need $s_\text{b} = \dfrac{v_0^2}{2a}$, which is the braked distance plus the distance still needed from $v$, so $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$ and $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Conversions:** $u = 30\,\text{km/h} \approx 8.333\,\text{m/s}$ and $v_0 = 40\,\text{km/h} \approx 11.11\,\text{m/s}$; the answer is finally multiplied by $3.6$.
 **Substitution:** $$\begin{aligned} &d = 8.333\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(8.333\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 8.333\,\text{m} + 3.858\,\text{m} \\ &= 12.19\,\text{m} \end{aligned}$$; $d - v_0\,t_\text{r} = 12.19\,\text{m} - 11.11\,\text{m} = 1.080\,\text{m}$; $$\begin{aligned} &v^2 = (11.11\,\text{m/s})^2 \\ &- 2 \cdot 9.0\,\text{m/s}^2 \cdot 1.080\,\text{m} \\ &= 104.0\,\text{m}^2/\text{s}^2 \end{aligned}$$, so $v = \sqrt{104.0}\,\text{m/s} = 10.20\,\text{m/s} = 36.7\,\text{km/h}$
 **Answer:** $37\,\text{km/h}$, two significant figures like the reaction time $1.0\,\text{s}$ and the deceleration $9.0\,\text{m/s}^2$.
@@ -205,9 +205,9 @@ If the speed at the child is $v$, stopping would still need the distance $\tfrac
 **Given:** $m = 70.0\,\text{kg}$, $v_0 = 50.0\,\text{km/h}$, stopping distance $s = 0.600\,\text{m}$, deceleration constant
 **Find:** the average force $F_\text{avg}$ in $\text{N}$
 **Principle:** The force follows from the impulse–momentum principle when the stopping time is known. The time is not given, but with a constant deceleration the average speed is half the initial speed, so the distance is $s = \tfrac{1}{2}\,v_0\,\Delta t$ (the area of the triangle on the $(t,v)$ graph). The time is solved from this.
-**Formula:** $s = \tfrac{1}{2}\,v_0\,\Delta t$, so $\Delta t = \dfrac{2s}{v_0}$, and $F_\text{avg}\,\Delta t = m\,v_0$, so $F_\text{avg} = \dfrac{m\,v_0}{\Delta t}$
+**Formula:** $s = \tfrac{1}{2}\,v_0\,\Delta t$ and $F_\text{avg}\,\Delta t = m\,v_0$, so $\Delta t = \dfrac{2s}{v_0}$ and $F_\text{avg} = \dfrac{m\,v_0}{\Delta t} = \dfrac{m\,v_0^2}{2s}$
 **Conversions:** $50.0\,\text{km/h} = \dfrac{50.0 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 13.89\,\text{m/s}$
-**Substitution:** $\Delta t = \dfrac{2 \cdot 0.600\,\text{m}}{13.89\,\text{m/s}} = 0.08640\,\text{s}$ and $F_\text{avg} = \dfrac{70.0\,\text{kg} \cdot 13.89\,\text{m/s}}{0.08640\,\text{s}} = 11\,253\,\text{N}$
+**Substitution:** $F_\text{avg} = \dfrac{70.0\,\text{kg} \cdot (13.89\,\text{m/s})^2}{2 \cdot 0.600\,\text{m}} = \dfrac{70.0\,\text{kg} \cdot 192.9\,\text{m}^2/\text{s}^2}{1.200\,\text{m}} = 11\,253\,\text{N}$. The stopping time is $\Delta t = \dfrac{2 \cdot 0.600\,\text{m}}{13.89\,\text{m/s}} = 0.08640\,\text{s}$.
 **Answer:** $11\,300\,\text{N}$, that is, $11.3\,\text{kN}$, three significant figures like the data.
 **Reasonableness:** The stopping time is about $0.09\,\text{s}$, the same order of magnitude as the crumpling time of the car, and the force is about $16$ times the passenger's weight $687\,\text{N}$. If the passenger stopped without a belt in a few centimetres, the force would be tens of times greater.
 
@@ -217,7 +217,7 @@ If the speed at the child is $v$, stopping would still need the distance $\tfrac
 **Principle:** The car in front starts to brake at once and stops after its braking distance. The car behind first travels the reaction distance and then a longer braking distance, because its deceleration is smaller.
 
 The car in front is all the time moving more slowly than the car behind, so the gap shrinks until the car behind stops. There is no collision if the gap is at least the difference between the distances the cars travel.
-**Formula:** $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, so $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
+**Formula:** The cars do not collide if $d$ plus the front car's stopping point reaches the rear car's stopping point; in the limiting case $d + s_1 = s_2$. For each car $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$ and $t_\text{b} = \dfrac{v_0}{a}$, so the front car brakes over $s_1 = \dfrac{v_0^2}{2a_1}$ and the rear car travels $s_2 = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$. Thus $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, so $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
 **Conversions:** $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 22.22\,\text{m/s}$
 **Substitution:** $$\begin{aligned} &d = 22.22\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 6.0\,\text{m/s}^2} \\ &- \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 22.22\,\text{m} + 41.15\,\text{m} \\ &- 27.43\,\text{m} \\ &= 35.94\,\text{m} \end{aligned}$$
 **Answer:** $36\,\text{m}$, two significant figures like the reaction time $1.0\,\text{s}$ and the decelerations.
@@ -230,7 +230,7 @@ The car in front is all the time moving more slowly than the car behind, so the 
 **Reading the graph:** The speeds are $8.33$; $13.89$; $19.44$ and $25.0\,\text{m/s}$, and the ratios $\tfrac{s_\text{stop}}{v}$ are $2.04$; $2.56$; $3.09$ and $3.68\,\text{s}$. The points lie almost on a straight line. The points $(10\,\text{m/s};\ 2.19\,\text{s})$ and $(25\,\text{m/s};\ 3.66\,\text{s})$ are read from the fitted line.
 
 The slope is $\dfrac{(3.66 - 2.19)\,\text{s}}{(25 - 10)\,\text{m/s}} = 0.098\,\text{s}^2/\text{m}$, and the intercept of the line on the vertical axis is $2.19\,\text{s} - 0.098\,\text{s}^2/\text{m} \cdot 10\,\text{m/s} = 1.21\,\text{s}$.
-**Formula:** $t_\text{r}$ = intercept, $a = \dfrac{1}{2 \cdot \text{slope}}$ and $v\,t_\text{r} + \dfrac{v^2}{2a} = d$, so $\dfrac{1}{2a}\,v^2 + t_\text{r}\,v - d = 0$ and the positive solution is $v = -a\,t_\text{r} + \sqrt{(a\,t_\text{r})^2 + 2a\,d}$
+**Formula:** $s_\text{stop} = s_\text{r} + s_\text{b}$, $s_\text{r} = v\,t_\text{r}$ and $s_\text{b} = \dfrac{v^2}{2a}$ (from $s_\text{b} = \tfrac{1}{2}\,v\,t_\text{b}$ and $t_\text{b} = \dfrac{v}{a}$), so $s_\text{stop} = v\,t_\text{r} + \dfrac{v^2}{2a}$ and $\dfrac{s_\text{stop}}{v} = t_\text{r} + \dfrac{1}{2a}\,v$. $t_\text{r}$ = intercept, $a = \dfrac{1}{2 \cdot \text{slope}}$ and $v\,t_\text{r} + \dfrac{v^2}{2a} = d$, so $\dfrac{1}{2a}\,v^2 + t_\text{r}\,v - d = 0$ and the positive solution is $v = -a\,t_\text{r} + \sqrt{(a\,t_\text{r})^2 + 2a\,d}$
 **Conversions:** $1\,\text{km/h} = \tfrac{1}{3.6}\,\text{m/s}$ and $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** a) The reaction time is $t_\text{r} = 1.2\,\text{s}$ and the deceleration is $a = \dfrac{1}{2 \cdot 0.098\,\text{s}^2/\text{m}} = 5.1\,\text{m/s}^2$. b) First the product $a\,t_\text{r} = 5.1\,\text{m/s}^2 \cdot 1.2\,\text{s} = 6.12\,\text{m/s}$ is calculated, and then
 ```latex
@@ -263,7 +263,7 @@ s_\text{stop} &= 22.22\,\text{m/s} \cdot 1.2\,\text{s} \\
 
 The greatest force is the force in the interval where the speed changes the most.
 **Reading the graph:** The changes in speed over the intervals are $1.6$; $3.3$; $4.5$; $3.4$; $1.5$ and $0.7\,\text{m/s}$. The speed changes the most in the interval $40$–$60\,\text{ms}$, where it decreases by $4.5\,\text{m/s}$. The stopping time of the dummy is $120\,\text{ms}$, because the speed is then zero.
-**Formula:** $s = \sum \tfrac{v_\text{start} + v_\text{end}}{2}\,\Delta t$, $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$ and in each interval $F = \dfrac{m\,\Delta v_\text{interval}}{\Delta t_\text{interval}}$
+**Formula:** $s = \sum \tfrac{v_\text{start} + v_\text{end}}{2}\,\Delta t$, $\Sigma F = ma$ and $a = \dfrac{\Delta v}{\Delta t}$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$ and in each interval $F = \dfrac{m\,\Delta v_\text{interval}}{\Delta t_\text{interval}}$
 **Conversions:** $20\,\text{ms} = 0.020\,\text{s}$ and $120\,\text{ms} = 0.120\,\text{s}$.
 **Substitution:** a) The sum of the average speeds is $$\begin{aligned} &14.2 + 11.75 + 7.85 \\ &+ 3.9 + 1.45 + 0.35 \\ &= 39.5\,\text{m/s} \end{aligned}$$, so
 ```latex
@@ -297,9 +297,9 @@ The distance can be checked with the average speed: over the whole time the aver
 **Given:** $v_0 = 80\,\text{km/h}$, finally $v = 0$; coefficient of sliding friction between rubber and asphalt from the MAFY table (table *Kitkakertoimia*, rubber–asphalt, sliding friction): the range $0.5$–$0.8$, the greatest value $\mu = 0.8$ is used; $g = 9.81\,\text{m/s}^2$
 **Find:** the braking distance $s$ in $\text{m}$
 **Principle:** On a horizontal road the normal force equals the weight, $N = mg$, and the friction $F_\mu = \mu N$ on the sliding tyres is the only horizontal force. By Newton's second law $\mu mg = ma$, so the deceleration is $a = \mu g$, and the mass cancels. The deceleration is constant, so the braking distance follows from $v_0^2 = 2as$.
-**Formula:** $a = \mu g$ and $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
+**Formula:** $\Sigma F = ma$, $F_\mu = \mu N$ and $N = mg$, so $a = \mu g$. In addition, $s = \tfrac{1}{2}\,v_0\,t$ and $t = \dfrac{v_0}{a}$, so $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Conversions:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3.6}\,\text{m/s} = 22.22\,\text{m/s}$
-**Substitution:** $a = 0.8 \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{m/s}^2$ and $s = \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 31.5\,\text{m}$
+**Substitution:** $s = \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 0.8 \cdot 9.81\,\text{m/s}^2} = 31.5\,\text{m}$. The deceleration is $a = \mu g = 0.8 \cdot 9.81\,\text{m/s}^2 = 7.85\,\text{m/s}^2$.
 **Answer:** $s \approx 31\,\text{m}$, two significant figures as in the speed $80\,\text{km/h}$. The coefficient $0.8$ is the upper end of the MAFY table's range $0.5$–$0.8$ (table *Kitkakertoimia*), so the braking distance $31\,\text{m}$ is the shorter end of the range; at the lower end, $\mu = 0.5$, the braking distance would be $50\,\text{m}$, which is longer. The distance thus varies with the table's range far more than with the rounding.
 **Reasonableness:** A braking distance of $31\,\text{m}$ is of the order of a typical dry-road braking distance from $80\,\text{km/h}$. The deceleration $7.85\,\text{m/s}^2$ is smaller than in ABS braking on dry asphalt ($\mu \approx 0.9$), which fits locked, sliding wheels.
 
@@ -308,7 +308,7 @@ The distance can be checked with the average speed: over the whole time the aver
 **Find:** the total distance $s$ in $\text{m}$
 **Principle:** The distance is the area between the $(t, v)$ graph and the time axis. The velocity is first constant (the reaction time), then it decreases linearly (braking), so the region is a rectangle and a triangle.
 **Reading the graph:** The rectangle has height $20\,\text{m/s}$ and width $1.0\,\text{s}$. The triangle has height $20\,\text{m/s}$ and base $3.5\,\text{s} - 1.0\,\text{s} = 2.5\,\text{s}$.
-**Formula:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
+**Formula:** The speed is constant during the reaction time, so $s_\text{r} = v_0\,t_\text{r}$. In braking the speed falls evenly to zero, so the mean speed is $\tfrac{1}{2}\,v_0$ and $s_\text{b} = \tfrac{1}{2}\,v_0\,t_\text{b}$. Thus $s = s_\text{r} + s_\text{b} = v_0\,t_\text{r} + \tfrac{1}{2}\,v_0\,t_\text{b}$
 **Conversions:** None needed: the quantities are in SI units.
 **Substitution:** $$\begin{aligned} &s = 20\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2.5\,\text{s} \\ &= 20\,\text{m} + 25\,\text{m} \\ &= 45\,\text{m} \end{aligned}$$
 **Answer:** $45\,\text{m}$, two significant figures, the precision of the values read from the graph.
@@ -319,7 +319,7 @@ The distance can be checked with the average speed: over the whole time the aver
 **Find:** the difference of the average forces $F_\text{A} - F_\text{B}$ in $\text{kN}$
 **Principle:** By the impulse–momentum principle the impulse of the force on the dummy equals the change in momentum, $F_\text{avg}\,\Delta t = m\,\Delta v$. In both tests the velocity decreases linearly, so the force is constant and the average force equals the instantaneous force.
 **Reading the graph:** In both tests the velocity changes from $15\,\text{m/s}$ to zero, so $\Delta v = 15\,\text{m/s}$. The stopping times are read where the lines meet the time axis: $0.060\,\text{s}$ and $0.150\,\text{s}$.
-**Formula:** $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, so $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
+**Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$ (impulse principle), so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$ and $F_\text{A} - F_\text{B} = \dfrac{m\,\Delta v}{\Delta t_\text{A}} - \dfrac{m\,\Delta v}{\Delta t_\text{B}}$
 **Conversions:** None needed: the quantities are in SI units; finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.060\,\text{s}} = 17\,500\,\text{N}$ and $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.150\,\text{s}} = 7000\,\text{N}$, so $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10.5\,\text{kN}$
 **Answer:** $11\,\text{kN}$. The mass $70\,\text{kg}$ and the speed $15\,\text{m/s}$ have two significant figures, so the answer is given to two significant figures. The calculated value is $10.5\,\text{kN}$, and the rounding is done only at the end.

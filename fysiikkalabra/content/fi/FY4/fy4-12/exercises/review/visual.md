@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c4260198e2153c66
+CONTENT-HASH: 0e7961781cc75498
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md Kaava lines — "..., joten ..., joten ..." chains repeat "joten"; optional smoother "ja".
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-12-open-exercises-L3-1280-7 (overtaking task, given/principle/graph reading); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- fy4-12-open-exercises-L2-1280-5.png (graph meeting-time task): Kaava x = x0 + vt, then s = xB − xA, solved for t, display cards aligned; Sijoitus now with (−2,0 m/s) in parentheses, reads correctly; nothing clipped.
+- Other changed Kaava and Sijoitus lines read in the diff (same numbers, signs and units; the substitution follows the last symbolic form).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

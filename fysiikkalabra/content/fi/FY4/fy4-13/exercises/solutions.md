@@ -11,7 +11,7 @@ T 3,0 oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $T = ma$, joten $a = \dfrac{T}{m}$
+**Kaava:** Newtonin toinen laki kappaleelle: $\Sigma F = ma$. $T = ma$, joten $a = \dfrac{T}{m}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{3{,}0\,\text{N}}{1{,}5\,\text{kg}} = 2{,}0\,\text{m/s}^2$
 **Vastaus:** $2{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten tiedoissa $3{,}0\,\text{N}$ ja $1{,}5\,\text{kg}$.
@@ -27,7 +27,7 @@ G 5,886
 T 4,686 ylös
 a alas
 ```
-**Kaava:** $mg - T = ma$, joten $T = m(g - a)$
+**Kaava:** Newtonin toinen laki kappaleelle: $\Sigma F = ma$. $mg - T = ma$, joten $T = m(g - a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &T \\ &= 0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 2{,}0\,\text{m/s}^2) \\ &= 0{,}60\,\text{kg} \cdot 7{,}81\,\text{m/s}^2 \\ &= 4{,}686\,\text{N} \end{aligned}$$
 **Vastaus:** $4{,}7\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
@@ -49,7 +49,7 @@ G_2 3,924
 T_2 2,803 ylös
 a alas
 ```
-**Kaava:** $T = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $m_2 g = (m_1 + m_2)\,a$, joten $a = \dfrac{m_2 g}{m_1 + m_2}$, ja $T = m_1 a$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $m_2 g = (m_1 + m_2)\,a$, joten $a = \dfrac{m_2 g}{m_1 + m_2}$, ja $T = m_1 a$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{0{,}40\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}4\,\text{kg}} = 2{,}803\,\text{m/s}^2$ ja $T = 1{,}0\,\text{kg} \cdot 2{,}803\,\text{m/s}^2 = 2{,}803\,\text{N}$
 **Vastaus:** $2{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten massoissa $1{,}0\,\text{kg}$ ja $0{,}40\,\text{kg}$.
@@ -65,7 +65,7 @@ G 29,43
 T 29,43 ylös
 a 0
 ```
-**Kaava:** $T - mg = 0$, joten $T = mg$
+**Kaava:** Newtonin toinen laki levossa olevalle kappaleelle: $\Sigma F = 0$. $T - mg = 0$, joten $T = mg$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 29{,}43\,\text{N}$
 **Vastaus:** $29\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $3{,}0\,\text{kg}$.
@@ -90,7 +90,7 @@ N_2 19,62
 T_2 8,0 oikea
 a oikea
 ```
-**Kaava:** $F - T = m_1 a$ ja $T = m_2 a$. Yhteenlaskusta $F = (m_1 + m_2)\,a$, joten $a = \dfrac{F}{m_1 + m_2}$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $F - T = m_1 a$ ja $T = m_2 a$. Yhteenlaskusta $F = (m_1 + m_2)\,a$, joten $a = \dfrac{F}{m_1 + m_2}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{12\,\text{N}}{1{,}0\,\text{kg} + 2{,}0\,\text{kg}} = 4{,}0\,\text{m/s}^2$
 **Vastaus:** $4{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten tiedoissa.
@@ -111,7 +111,7 @@ T_2 330,3 ylös
 G_2 294,3
 a ylös
 ```
-**Kaava:** $T_1 - T_2 - m_1 g = m_1 a$ ja $T_2 - m_2 g = m_2 a$, joten yhteenlaskusta $T_1 = (m_1 + m_2)(g + a)$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T_1 - T_2 - m_1 g = m_1 a$ ja $T_2 - m_2 g = m_2 a$, joten yhteenlaskusta $T_1 = (m_1 + m_2)(g + a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &T_1 \\ &= (50\,\text{kg} + 30\,\text{kg}) \\ &\cdot (9{,}81\,\text{m/s}^2 \\ &+ 1{,}2\,\text{m/s}^2) \\ &= 80\,\text{kg} \cdot 11{,}01\,\text{m/s}^2 \\ &= 880{,}8\,\text{N} \end{aligned}$$
 **Vastaus:** $880\,\text{N}$, eli $8{,}8 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $1{,}2\,\text{m/s}^2$ ja massassa $30\,\text{kg}$.
@@ -131,7 +131,7 @@ G_2 9,81
 T_2 6,54 ylös
 a alas
 ```
-**Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten yhteenlaskusta $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2}$ ja $T = m_1 (g + a) = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten yhteenlaskusta $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2}$ ja $T = m_1 (g + a) = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = \dfrac{2 \cdot 0{,}50\,\text{kg} \cdot 1{,}0\,\text{kg}}{0{,}50\,\text{kg} + 1{,}0\,\text{kg}} \cdot 9{,}81\,\text{m/s}^2 = 0{,}6667\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 6{,}54\,\text{N}$
 **Vastaus:** $6{,}5\,\text{N}$, kaksi merkitsevää numeroa kuten massoissa $0{,}50\,\text{kg}$ ja $1{,}0\,\text{kg}$.
@@ -156,7 +156,7 @@ N_2 19,62
 T_2 8,0 oikea
 a oikea
 ```
-**Kaava:** $F - T = m_1 a$ ja $T = m_2 a$. Yhteenlaskusta $a = \dfrac{F}{m_1 + m_2}$, joten $T = m_2 a = \dfrac{m_2}{m_1 + m_2}\,F$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $F - T = m_1 a$ ja $T = m_2 a$. Yhteenlaskusta $a = \dfrac{F}{m_1 + m_2}$, joten $T = m_2 a = \dfrac{m_2}{m_1 + m_2}\,F$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = \dfrac{2{,}0\,\text{kg}}{3{,}0\,\text{kg} + 2{,}0\,\text{kg}} \cdot 20\,\text{N} = 0{,}40 \cdot 20\,\text{N} = 8{,}0\,\text{N}$
 **Vastaus:** $8{,}0\,\text{N}$, kaksi merkitsevää numeroa kuten tiedoissa.
@@ -176,7 +176,7 @@ G_2 8,901
 T_2 7,086 ylös
 a alas
 ```
-**Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Ensimmäisestä $T = m_1 (g + a)$, ja toinen antaa $m_2 (g - a) = T$, joten $m_2 = \dfrac{m_1 (g + a)}{g - a}$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Ensimmäisestä $T = m_1 (g + a)$, ja toinen antaa $m_2 (g - a) = T$, joten $m_2 = \dfrac{m_1 (g + a)}{g - a}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $m_2 = \dfrac{0{,}60\,\text{kg} \cdot (9{,}81 + 2{,}0)\,\text{m/s}^2}{(9{,}81 - 2{,}0)\,\text{m/s}^2} = \dfrac{7{,}086\,\text{N}}{7{,}81\,\text{m/s}^2} = 0{,}9073\,\text{kg}$
 **Vastaus:** $0{,}91\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
@@ -196,7 +196,7 @@ G_2 1,177e+04
 T_2 9418 ylös
 a alas
 ```
-**Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten $T = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$. Pyörän tasapainosta $F_\text{akseli} - 2T = 0$, joten $F_\text{akseli} = 2T$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten $T = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$. Pyörälle $\Sigma F = 0$, eli $F_\text{akseli} - 2T = 0$, joten $F_\text{akseli} = 2T$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &T \\ &= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} + 1200\,\text{kg}} \\ &\cdot 9{,}81\,\text{m/s}^2 \\ &= 960\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 9418\,\text{N} \end{aligned}$$ ja $F_\text{akseli} = 2 \cdot 9418\,\text{N} = 18\,835\,\text{N}$
 **Vastaus:** $19000\,\text{N}$, eli $19\,\text{kN}$, kaksi merkitsevää numeroa, koska massat on annettu sadan kilogramman tarkkuudella.
@@ -218,7 +218,7 @@ G_2 4,321
 T_2 3 ylös
 a alas
 ```
-**Kaava:** $T = m_1 a$ ja $m_2 g - T = m_2 a$, joten $T = \dfrac{m_1 m_2}{m_1 + m_2}\,g$. Kun $T = T_{\max}$: $T_{\max} (m_1 + m_2) = m_1 m_2 g$, joten $m_2 = \dfrac{m_1\,T_{\max}}{g\,m_1 - T_{\max}}$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T = m_1 a$ ja $m_2 g - T = m_2 a$, joten $T = \dfrac{m_1 m_2}{m_1 + m_2}\,g$. Kun $T = T_{\max}$: $T_{\max} (m_1 + m_2) = m_1 m_2 g$, joten $m_2 = \dfrac{m_1\,T_{\max}}{g\,m_1 - T_{\max}}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $m_2 = \dfrac{3{,}0\,\text{N} \cdot 1{,}0\,\text{kg}}{1{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 - 3{,}0\,\text{N}} = \dfrac{3{,}0\,\text{N}\cdot\text{kg}}{6{,}81\,\text{N}} = 0{,}4405\,\text{kg}$
 **Vastaus:** $0{,}44\,\text{kg}$, kaksi merkitsevää numeroa kuten tiedoissa $3{,}0\,\text{N}$ ja $1{,}0\,\text{kg}$.
@@ -240,7 +240,7 @@ G_2 4,905
 T_2 3,679 ylös
 a alas
 ```
-**Kaava:** $T = m_1 a$ ja $m_2 g - T = m_2 a$, joten $a = \dfrac{m_2 g}{m_1 + m_2}$. Matkasta $s = \tfrac{1}{2}at^2$, joten $t = \sqrt{\dfrac{2s}{a}}$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T = m_1 a$ ja $m_2 g - T = m_2 a$, joten $a = \dfrac{m_2 g}{m_1 + m_2}$. Matkasta $s = \tfrac{1}{2}at^2$, joten $t = \sqrt{\dfrac{2s}{a}}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg}} = 2{,}4525\,\text{m/s}^2$ ja $t = \sqrt{\dfrac{2 \cdot 0{,}90\,\text{m}}{2{,}4525\,\text{m/s}^2}} = 0{,}857\,\text{s}$
 **Vastaus:** $0{,}86\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}90\,\text{m}$ ja $0{,}50\,\text{kg}$.
@@ -269,7 +269,7 @@ G_2 6,867
 T_2 4,12 ylös
 a alas
 ```
-**Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $T$ poistuu: $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2}$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $T$ poistuu: $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{(0{,}70\,\text{kg} - 0{,}30\,\text{kg}) \cdot 9{,}81\,\text{m/s}^2}{0{,}30\,\text{kg} + 0{,}70\,\text{kg}} = \dfrac{0{,}40 \cdot 9{,}81}{1{,}00}\,\text{m/s}^2 = 3{,}924\,\text{m/s}^2$
 **Vastaus:** $3{,}9\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten massoissa $0{,}30\,\text{kg}$ ja $0{,}70\,\text{kg}$.
@@ -285,7 +285,7 @@ a alas
 **Kysytty:** a) kaava $a$:lle massaeron $\Delta m$ avulla; b) putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Kummallekin punnukselle kirjoitetaan oma liikeyhtälö. Lanka on venymätön ja kevyt, joten punnusten kiihtyvyyden suuruus $a$ ja jännitysvoima $T$ ovat samat. Kun yhtälöt lasketaan yhteen, $T$ poistuu ja jäljelle jää suora verrannollisuus $a \propto \Delta m$. Suoran kulmakertoimesta saadaan $g$.
 **Kuvaajan lukeminen:** Pisteet $(\Delta m, a)$ asettuvat lähes suoralle, joka kulkee origon kautta; yksittäiset pisteet poikkeavat siitä enintään noin $0{,}1\,\text{m/s}^2$, mikä on mittauksen satunnaisvaihtelua. Origon kautta kulkeva sovitussuora osuu viimeisen pisteen kohdalla arvoon $a = 4{,}9\,\text{m/s}^2$, kun $\Delta m = 0{,}250\,\text{kg}$, joten kulmakerroin on $k = \dfrac{4{,}9\,\text{m/s}^2}{0{,}250\,\text{kg}} = 19{,}6\,\dfrac{\text{m/s}^2}{\text{kg}}$.
-**Kaava:** Kevyempi $m_1$ nousee ja raskaampi $m_2$ laskee: $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{g}{M}\,\Delta m$. Kulmakerroin on $k = \dfrac{g}{M}$, joten $g = k\,M$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. Kevyempi $m_1$ nousee ja raskaampi $m_2$ laskee: $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$. Yhteenlaskusta $(m_2 - m_1)\,g = (m_1 + m_2)\,a$, joten $a = \dfrac{g}{M}\,\Delta m$. Kulmakerroin on $k = \dfrac{g}{M}$, joten $g = k\,M$
 **Muunnokset:** $\Delta m = 250\,\text{g} = 0{,}250\,\text{kg}$; muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $g = 19{,}6\,\dfrac{\text{m/s}^2}{\text{kg}} \cdot 0{,}500\,\text{kg} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska käsin sovitetusta suorasta kulmakerroin saadaan vain kahden numeron tarkkuudella.
@@ -308,7 +308,7 @@ G_2 4,905
 T_2 3,41 ylös
 a alas
 ```
-**Kaava:** Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$, joten tarkistus $T = m_2\,(g - a)$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$, joten tarkistus $T = m_2\,(g - a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 1{,}20\,\text{kg} \cdot 2{,}84\,\text{m/s}^2 = 3{,}408\,\text{N}$. Tarkistus: $$\begin{aligned} &T \\ &= 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 2{,}84\,\text{m/s}^2) \\ &= 0{,}50\,\text{kg} \cdot 6{,}97\,\text{m/s}^2 \\ &= 3{,}485\,\text{N} \end{aligned}$$
 **Vastaus:** $3{,}4\,\text{N}$, kaksi merkitsevää numeroa, koska kaksi yhtälöä antaa $3{,}41\,\text{N}$ ja $3{,}49\,\text{N}$, jotka eroavat noin $2\,\%$, joten vain kaksi ensimmäistä numeroa on luotettavia.
@@ -369,7 +369,7 @@ N 15
 K_23 6 oikea
 a oikea
 ```
-**Kaava:** Vaunu 3: $K_{23} = m_3 a$. Vaunu 2: $K_{12} - K_{23} = m_2 a$. Yhteenlaskusta $K_{12} = (m_2 + m_3)\,a$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. Vaunu 3: $K_{23} = m_3 a$. Vaunu 2: $K_{12} - K_{23} = m_2 a$. Yhteenlaskusta $K_{12} = (m_2 + m_3)\,a$
 **Muunnokset:** $m_2 + m_3 = 18\,\text{t} + 12\,\text{t} = 30\,\text{t} = 30\,000\,\text{kg}$ ja $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** b) $K_{12} = 30\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 15\,000\,\text{N} = 15\,\text{kN}$
 c) Uusi järjestys on $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, ja vaunujen 1 ja 2 välisen kytkimen takana ovat $18\,\text{t}$ ja $24\,\text{t}$, yhteensä $42\,\text{t}$. Silloin $K_{12}' = 42\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 21\,000\,\text{N} = 21\,\text{kN}$
@@ -393,7 +393,7 @@ G_2 1,962
 T_2 1,6 ylös
 a alas
 ```
-**Kaava:** a) $a = \dfrac{2s}{t^2}$. Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Sijoittamalla $m_2 g = m_1 a + m_2 a$, joten $m_1 = m_2 \left(\dfrac{g}{a} - 1\right)$. b) $m_{1,\text{ka}} = \dfrac{\Sigma m_1}{n}$. c) $v = at$ ja $s = \tfrac{1}{2}vt$, joten $v = \dfrac{2s}{t}$
+**Kaava:** a) $s = \tfrac{1}{2}at^2$, joten $a = \dfrac{2s}{t^2}$. Newtonin toinen laki kappaleille, $\Sigma F = ma$. Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Sijoittamalla $m_2 g = m_1 a + m_2 a$, joten $m_1 = m_2 \left(\dfrac{g}{a} - 1\right)$. b) $m_{1,\text{ka}} = \dfrac{\Sigma m_1}{n}$. c) $v = at$ ja $s = \tfrac{1}{2}vt$, joten $v = \dfrac{2s}{t}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** a) Kiihtyvyydet ovat $a = \dfrac{1{,}60\,\text{m}}{t^2}$: $0{,}961$; $1{,}736$; $2{,}500$ ja $3{,}002\,\text{m/s}^2$.
 b) $m_1 = m_2 \left(\dfrac{g}{a} - 1\right)$ antaa kullekin mittaukselle
@@ -442,7 +442,7 @@ T_1 1,56 oikea
 a oikea
 ```
 **Kuvaajan lukeminen:** Pisteet ovat suoralla, joka kulkee origon kautta: nopeus kasvaa joka puolen sekunnin välillä noin $1{,}0\,\text{m/s}$. Kiihtyvyys on siis vakio. Luetaan kaukaisin piste $(2{,}0\,\text{s};\, 3{,}9\,\text{m/s})$ ja alkupiste $(0\,\text{s};\, 0\,\text{m/s})$. Kaukainen piste antaa tarkimman kulmakertoimen.
-**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$ ja $T = m_1 a$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. $a = \dfrac{\Delta v}{\Delta t}$ ja $T = m_1 a$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{3{,}9\,\text{m/s} - 0\,\text{m/s}}{2{,}0\,\text{s} - 0\,\text{s}} = 1{,}95\,\text{m/s}^2$ ja $T = 0{,}80\,\text{kg} \cdot 1{,}95\,\text{m/s}^2 = 1{,}56\,\text{N}$
 **Vastaus:** $T \approx 1{,}6\,\text{N}$, kaksi merkitsevää numeroa, koska massa $0{,}80\,\text{kg}$ ja luetut nopeudet ovat kahden numeron tarkkuudella.
@@ -465,7 +465,7 @@ T_2 2,358 ylös
 a alas
 ```
 **Kuvaajan lukeminen:** Pisteet ovat suoralla, joka kulkee origon kautta, joten kiihtyvyys on vakio. Kaukaisin piste $(2{,}0\,\text{s};\, 3{,}9\,\text{m/s})$ ja alkupiste $(0\,\text{s};\, 0\,\text{m/s})$ antavat kulmakertoimen $a = \dfrac{3{,}9\,\text{m/s}}{2{,}0\,\text{s}} = 1{,}95\,\text{m/s}^2$. Piste $(1{,}0\,\text{s};\, 2{,}0\,\text{m/s})$ antaa lähes saman, $2{,}0\,\text{m/s}^2$.
-**Kaava:** Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Yhtälöistä $m_2 g = (m_1 + m_2)\,a$, joten $m_1 = m_2\left(\dfrac{g}{a} - 1\right)$
+**Kaava:** Newtonin toinen laki kullekin kappaleelle erikseen, $\Sigma F = ma$, positiivinen suunta liikkeen suuntaan. Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$. Yhtälöistä $m_2 g = (m_1 + m_2)\,a$, joten $m_1 = m_2\left(\dfrac{g}{a} - 1\right)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** a) $m_1 = 0{,}30\,\text{kg} \cdot \left(\dfrac{9{,}81\,\text{m/s}^2}{1{,}95\,\text{m/s}^2} - 1\right) = 0{,}30\,\text{kg} \cdot 4{,}031 = 1{,}21\,\text{kg}$. b) $T = m_1 a = 1{,}21\,\text{kg} \cdot 1{,}95\,\text{m/s}^2 = 2{,}36\,\text{N}$ ja $m_2 g = 0{,}30\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}94\,\text{N}$
 **Vastaus:** a) $m_1 \approx 1{,}2\,\text{kg}$, kaksi merkitsevää numeroa, koska punnuksen massa $0{,}30\,\text{kg}$ ja luettu kiihtyvyys ovat kahden numeron tarkkuudella. b) Jännitysvoima $2{,}4\,\text{N}$ on pienempi kuin punnuksen paino $2{,}9\,\text{N}$. Punnus kiihtyy alas, joten sen kokonaisvoima $m_2 g - T = m_2 a$ osoittaa alas ja $T < m_2 g$. Jännitysvoima olisi painon suuruinen vain, jos kiihtyvyys olisi nolla.

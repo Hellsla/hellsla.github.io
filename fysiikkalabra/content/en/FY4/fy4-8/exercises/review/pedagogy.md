@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 98be4db96580125c
+CONTENT-HASH: 9cc204efa1efbd97
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- solutions.md fy4-8-L2-10 (Vastaus/Answer) — part d now comes first and a, b, c, e follow after a lead-in ("Lisäksi: a)" / "In addition: a)"); a student reading in order meets d before a. Acceptable given the CI constraint; the earlier polish items (c and e under the answer step, wording) stand unchanged.
+- solutions.md (energy-bars task, Principle) — "By the energy principle" is the old label; the Formula row says "Work–energy principle"; use the same name.
+- Earlier open polish: "sum" as a word in the snowboarder $s_\text{mean} = \text{sum}/6$; "work–energy principle" for the kinetic-energy-only equation in the cushion task and v0² graph task (should be "work principle").
+
 ## Checked
-- Delta: only the order of paragraphs in the answer step of fy4-8-L2-10 changed; no wording, number or unit changed, and part d keeps its value (s ≈ 0,26 m, about 29 kN).
-- The lead-in leaves no part missing or duplicated (a, b, c, d, e all present); the worked Sijoitus sequence before it is untouched.
-- No task text, level, figure or exit-ticket change; the earlier pass stands.
-- Hash the same at start and end.
+- Round 3, delta (work queue 8g): three wording changes, no number, answer or tolerance changed.
+- Bounce task Formula now says "The decrease of the mechanical energy in the first bounce is $\Delta E = E_0 - E_1$": correct and positive, matches 0.240 J.
+- Energy-bars task: "so $W$ equals $(E_\text{p}+E_\text{k}) - (E_{\text{p}0}+E_{\text{k}0})$" splits the long inline formula; signs and result ($-15\,\text{J}$, $2.5\,\text{N}$) unchanged.
+- Captures not opened: text-only change.

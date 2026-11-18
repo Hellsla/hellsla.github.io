@@ -393,6 +393,6 @@ Another mistake is to forget the signs. When objects move towards each other, th
 ## Summary
 - The total momentum of a system is conserved when the sum of the external forces is zero or their impulse during the collision or explosion is negligibly small: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
 - Conservation follows from Newton's third law: the internal forces in a collision are equally large and opposite and act for the same time, so the changes in the momenta of the objects cancel each other.
-- In one dimension we choose a positive direction, and velocities are signed: $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$.
+- In one dimension we choose a positive direction, and velocities are signed: $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= m_1 v_1' + m_2 v_2' \end{aligned}$$
 - In an elastic collision, kinetic energy is also conserved. In an inelastic collision some of the kinetic energy changes into internal energy, and in a perfectly inelastic collision the objects move on together with a common velocity.
 - In an explosion, the total momentum of a system at rest stays zero: when it splits into two parts, the parts get momenta of equal magnitude in opposite directions, and kinetic energy increases.

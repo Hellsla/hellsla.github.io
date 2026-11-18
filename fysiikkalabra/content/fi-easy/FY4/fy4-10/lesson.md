@@ -395,6 +395,6 @@ Toinen virhe on unohtaa etumerkit. Jos kappaleet liikkuvat toisiaan kohti, niide
 ## Tiivistelmä
 - Systeemin kokonaisliikemäärä säilyy, kun ulkoisten voimien summa on nolla. Se säilyy myös, kun ulkoisten voimien impulssi on törmäyksen tai räjähdyksen aikana niin pieni, ettei sillä ole merkitystä: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
 - Säilyminen seuraa Newtonin kolmannesta laista. Törmäyksen sisäiset voimat ovat yhtä suuret ja vastakkaissuuntaiset, ja ne vaikuttavat saman ajan. Siksi kappaleiden liikemäärien muutokset kumoavat toisensa.
-- Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja nopeuksilla on etumerkit: $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$.
+- Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja nopeuksilla on etumerkit: $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= m_1 v_1' + m_2 v_2' \end{aligned}$$
 - Kimmoisassa törmäyksessä myös liike-energia säilyy. Kimmottomassa törmäyksessä osa liike-energiasta muuttuu sisäenergiaksi. Täysin kimmottomassa törmäyksessä kappaleet jatkavat yhdessä yhteisellä nopeudella.
 - Räjähdyksessä levossa olevan systeemin kokonaisliikemäärä pysyy nollana. Kun systeemi hajoaa kahdeksi osaksi, osat saavat yhtä suuret liikemäärät vastakkaisiin suuntiin. Liike-energia kasvaa.

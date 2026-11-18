@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9e3f1aafd212641a
-SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
+CONTENT-HASH: 2e5d53eab6b173d8
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-1/exercises/solutions.md (L2-09 Vastaus) — "nopeudet $2{,}0\,\text{m/s}$ ja aika $6{,}0\,\text{s}$ on luettu kuvaajasta": aika $6{,}0\,\text{s}$ annetaan tehtävätekstissä, sitä ei lueta kuvaajasta. Parempi: "nopeudet on laskettu kuvaajan ruudukon risteyksistä, ja aika $6{,}0\,\text{s}$ on annettu kahdella numerolla".
-- solutions.md (L2-08 Järkevyys) — "Nopeus $2{,}0\,\text{m/s}$ on kävelyvauhtia": kyse on keskivauhdista, joten "Keskivauhti $2{,}0\,\text{m/s}$" pitäisi suureet erillään, kuten ratkaisun muu osa tekee.
+- content/fi/FY4/fy4-1/exercises/solutions.md (L3-04 Kaava) — the Kaava step is now long prose with three inline equations; the final form $t = \dfrac{x - x_0}{v}$ sits at the end of a sentence. Acceptable; a display row for $t$ would read more easily (presentation only).
 
 ## Checked
-- Kierroksen 3 polish-huomiot on korjattu. L2-08:n keskivauhdilla on oma tunnus $v_\text{kv}$, joten se ei enää sekoitu luvun keskinopeuteen $v_\text{k}$. L2-09:n Vastaus sanoo, että nopeudet on luettu kuvaajasta.
-- Laskin vastaukset uudelleen yhdessä skriptissä, omat kaavani `python -I answers.py`:n rinnalla. L2-08: $s = 12 + 0 + 8 = 20\,\text{m}$ ja $20\,\text{m} : 10\,\text{s} = 2{,}0\,\text{m/s}$. L2-09: $x_\text{A} = 16\,\text{m}$, $x_\text{B} = 8\,\text{m}$ ja $d = 8\,\text{m}$. Sekä answers.py että exercises.json antavat samat arvot.
-- Fysiikka: keskivauhti on matka jaettuna ajalla, ja tehtävä määrittelee sen. Matka saadaan osasiirtymien itseisarvoista, ja vertailu keskinopeuteen $0{,}4\,\text{m/s}$ pitää paikkansa. L2-09 käyttää yhtälöä $x = x_0 + vt$ ja välimatkaa $|x_\text{A} - x_\text{B}|$. Suorat leikkaavat pisteessä $(4\,\text{s};\, 12\,\text{m})$. Ohjeen sanamuoto "ylempänä oleva viiva" on käytössä.
-- Kuvien kulmapisteet ovat ruudukon risteyksissä, joten toleranssit (2 % ja 4 %) riittävät.
-- Hash 9e3f1aafd212641a sekä alussa että lopussa.
+- Delta only: L2-09, L3-04 and L3-05 Kaava steps rewritten; paragraph splits in L1-06 Mallivastaus, L3-04 and L3-05 Järkevyys and L1-09; caption marker removed from exercises.json. No number, answer, tolerance, task or id changed in the diff.
+- L2-09: $x_{0\text{A}} + v_\text{A}t = x_{0\text{B}} + v_\text{B}t \Rightarrow (v_\text{A}-v_\text{B})t = x_{0\text{B}}-x_{0\text{A}}$, gives the same $t$ formula as before; algebra right.
+- L3-04: $x = k\,x_\text{ohj}$, $x_\text{ohj} = x_{0,\text{ohj}} + v_\text{ohj}t$, so $x = x_0 + vt$ with $x_0 = k\,x_{0,\text{ohj}}$, $t = (x-x_0)/v$: right; matches the substitution row ($0{,}39\,\text{m}$, $0{,}80\,\text{m/s}$, $7{,}0\,\text{s}$).
+- L3-05: $x_{0\text{R}} + v_\text{R}t = v_\text{P}t - v_\text{P}t_0 \Rightarrow x_{0\text{R}} + v_\text{P}t_0 = (v_\text{P}-v_\text{R})t$: right; same final formula as the substitution.
+- Recomputed: L2-09 $t = 16/4 = 4{,}0\,\text{s}$; L3-04 $k = 1{,}25$, $t = (6{,}0 - 0{,}39)/0{,}80 \approx 7{,}0\,\text{s}$; L3-05 $t = 331/6{,}1 \approx 54\,\text{s}$, $x \approx 7{,}4\cdot10^2\,\text{m}$. All unchanged and consistent.
+- Each derivation starts from the basic equations (tasainen liike $x = x_0 + vt$, the meeting condition), simplifies symbolically to the end and substitutes into the last form, as the 8g rule asks.
+- Paragraph splits change no wording or physics; the Järkevyys checks remain real checks.
+- Notation as in the brief ($x_0$, $v$, $\Delta x$, subscripts A/B/R/P).
+- Capture opened: review/shots/fy4-1-open-exercises-L3-1280-5.png (L3-04 Kaava renders as derived, aligned).
+- Hash 2e5d53eab6b173d8 at start and end.

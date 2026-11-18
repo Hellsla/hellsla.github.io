@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5d87bb715aeee774
+CONTENT-HASH: 90c89598d4a1e0f7
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md rinne task Sijoitus — \tfrac{m}{s^2} and {}^\circ differ from the house forms (carried).
+- [Minor] solutions.md long Kaava paragraphs (slope, 16-22) — consider a break before 'Siis' (carried).
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-16-L1-06-390.png (lift scale), sol-fy4-16-L1-07-390.png (energy: claims and closing remark), sol-fy4-16-L3-04-390.png (sled Järkevyys, real-snow caveat as its own paragraph) and sol-fy4-16-L3-05-390.png (parachutist Järkevyys in three paragraphs).
-- Breaks separate distinct points; spacing even, nothing clipped, display blocks intact.
+- Opened (content/fi-easy/FY4/fy4-16/review/shots/): fy4-16-open-exercises-L3-1280-3.png (lift task, Newton II Kaava), fy4-16-open-exercises-L3-1280-9.png (parachutist 16-22 table task). All changed Kaava (slope, plateau, air-resistance, Siis E_alku + W = E_loppu) read from the diff.
+- Friction and air-resistance work now signed W = -F s throughout; E_alku + W = E_loppu matches each aligned row.
+- Round 2 delta: round-1 fixes verified in the diff and captures; no layout regression. Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

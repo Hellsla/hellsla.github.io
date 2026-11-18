@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6c461d8697bc0f1f
+CONTENT-HASH: 48393647ff99e09e
+Mode: delta (round 3)
 
 ## Blocking
 
@@ -7,4 +8,7 @@ CONTENT-HASH: 6c461d8697bc0f1f
 - None.
 
 ## Checked
-batch delta review: Recomputed Δp = 60 N · 0,0050 s = 0,30 N·s = 0,30 kg·m/s and the quotient 12 000; 'muut vaakasuorat voimat ovat pieniä' makes the cue force the net force; mass-not-needed feedback correct; one correct option.
+- Hash 48393647ff99e09e at the start and the end.
+- Tiivistelmä bullet 3: the inline formula is now a display aligned block, $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$ across two rows. The symbols, primes and sides are the same as before and the same as the Kaava section's one-dimensional law. The physics is unchanged.
+- Worked example stage 1: the knowns and the question are now separate paragraphs. The numbers are unchanged ($32\,000\,\text{kg}$, $1{,}5\,\text{m/s}$, $18\,000\,\text{kg}$, $0{,}50\,\text{m/s}$), and the question is still $v'$ right after coupling.
+- Captures opened: none. The change is layout only, and I judged it from the diff.

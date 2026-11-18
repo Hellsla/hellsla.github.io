@@ -8,7 +8,7 @@ G 735,8
 F_v 735,8 ylös työntö @ala
 a 0
 ```
-**Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
+**Kaava:** $\Sigma F = ma$ ja $a = 0$, joten $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ ja $F_\text{v} = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{v} = 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$
 **Vastaus:** $736\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $75{,}0\,\text{kg}$ on annettu kolmella numerolla.
@@ -40,7 +40,7 @@ G 5,886
 F_v 8 ylös työntö @ala
 a ylös
 ```
-**Kaava:** $mg - F_\text{v} = ma$, joten $a = \dfrac{mg - F_\text{v}}{m}$
+**Kaava:** $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $a = \dfrac{mg - F_\text{v}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\tfrac{\text{N}}{\text{kg}} = \tfrac{\text{m}}{\text{s}^2}$. Muunnoksia ei siis tarvita.
 **Sijoitus:** $a = \dfrac{0{,}600\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = \dfrac{5{,}886\,\text{N} - 8{,}00\,\text{N}}{0{,}600\,\text{kg}} = -3{,}523\,\text{m/s}^2$
 **Vastaus:** $3{,}52\,\text{m/s}^2$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $0{,}600\,\text{kg}$ ja ilmanvastus $8{,}00\,\text{N}$ on annettu kolmella numerolla. Miinusmerkki kertoo, että kiihtyvyys osoittaa ylös.
@@ -77,7 +77,7 @@ F_v 18 vasen
 F_r 6,0 vasen
 a 0
 ```
-**Kaava:** $F - F_\text{v} - F_\text{r} = 0$, joten $F = F_\text{v} + F_\text{r}$
+**Kaava:** $\Sigma F = ma$ ja $a = 0$, joten $\Sigma F = 0$. Eteenpäin on positiivinen suunta, joten $\Sigma F = F - F_\text{v} - F_\text{r} = 0$ ja $F = F_\text{v} + F_\text{r}$
 **Muunnokset:** Kaikki voimat ovat newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 18\,\text{N} + 6{,}0\,\text{N} = 24\,\text{N}$
 **Vastaus:** $24\,\text{N}$ eteenpäin. Vastauksessa on kaksi merkitsevää numeroa, koska ilmanvastus $18\,\text{N}$ on annettu kahdella numerolla.
@@ -93,7 +93,7 @@ G 0,05003
 F_v 0,05003 ylös työntö @ala
 a 0
 ```
-**Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
+**Kaava:** $\Sigma F = ma$ ja $a = 0$, joten $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ ja $F_\text{v} = mg$
 **Muunnokset:** $5{,}10\,\text{g} = 5{,}10 : 1000\,\text{kg} = 5{,}10\cdot 10^{-3}\,\text{kg}$
 **Sijoitus:** $F_\text{v} = 5{,}10\cdot 10^{-3}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}050031\,\text{N}$
 **Vastaus:** $0{,}0500\,\text{N}$ eli $50{,}0\,\text{mN}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $5{,}10\,\text{g}$ on annettu kolmella numerolla.
@@ -109,7 +109,7 @@ G 686,7
 F_v 266,7 ylös työntö @ala
 a alas
 ```
-**Kaava:** $mg - F_\text{v} = ma$, joten $F_\text{v} = mg - ma = m(g - a)$
+**Kaava:** $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &F_\text{v} \\ &= 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 6{,}00\,\text{m/s}^2) \\ &= 70{,}0\,\text{kg}\cdot 3{,}81\,\text{m/s}^2 \\ &= 266{,}7\,\text{N} \end{aligned}$$
 **Vastaus:** $267\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $70{,}0\,\text{kg}$ ja kiihtyvyys $6{,}00\,\text{m/s}^2$ on annettu kolmella numerolla.
@@ -126,7 +126,7 @@ F_v 0,25 alas työntö @ylä
 a alas
 v ylös
 ```
-**Kaava:** $-mg - F_\text{v} = ma$, joten $a = -\dfrac{mg + F_\text{v}}{m} = -\left(g + \dfrac{F_\text{v}}{m}\right)$
+**Kaava:** $\Sigma F = ma$. Lisäksi $\Sigma F = -G - F_\text{v} = -mg - F_\text{v}$, joten $-mg - F_\text{v} = ma$ ja $a = -\dfrac{mg + F_\text{v}}{m} = -\left(g + \dfrac{F_\text{v}}{m}\right)$
 **Muunnokset:** $57{,}0\,\text{g} = 57{,}0 : 1000\,\text{kg} = 0{,}0570\,\text{kg}$
 **Sijoitus:** $a = -\left(9{,}81\,\text{m/s}^2 + \dfrac{0{,}250\,\text{N}}{0{,}0570\,\text{kg}}\right) = -(9{,}81\,\text{m/s}^2 + 4{,}386\,\text{m/s}^2) = -14{,}196\,\text{m/s}^2$
 **Vastaus:** $14{,}2\,\text{m/s}^2$ alaspäin. Vastauksessa on kolme merkitsevää numeroa, koska massa $57{,}0\,\text{g}$ ja ilmanvastus $0{,}250\,\text{N}$ on annettu kolmella numerolla. Miinusmerkki kertoo, että kiihtyvyys osoittaa alas.
@@ -145,7 +145,7 @@ F_v 450 vasen
 F_r 180 vasen
 a vasen
 ```
-**Kaava:** $-F_\text{v} - F_\text{r} = ma$, joten $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
+**Kaava:** $\Sigma F = ma$. Lisäksi $\Sigma F = -F_\text{v} - F_\text{r}$ (positiivinen suunta on eteenpäin), joten $-F_\text{v} - F_\text{r} = ma$ ja $a = -\dfrac{F_\text{v} + F_\text{r}}{m}$
 **Muunnokset:** Nopeutta ei tarvita laskussa, joten sitä ei muunneta. Voimat ovat newtoneina ja massa kilogrammoina.
 **Sijoitus:** $a = -\dfrac{450\,\text{N} + 180\,\text{N}}{1200\,\text{kg}} = -\dfrac{630\,\text{N}}{1200\,\text{kg}} = -0{,}525\,\text{m/s}^2$
 **Vastaus:** $0{,}525\,\text{m/s}^2$. Vastauksessa on kolme merkitsevää numeroa, kun tehtävän luvut $450\,\text{N}$, $180\,\text{N}$ ja $1200\,\text{kg}$ luetaan kolminumeroisiksi arvoiksi.
@@ -165,7 +165,7 @@ G 706,3
 F_v 353,2 ylös työntö @ala
 a alas
 ```
-**Kaava:** Ennen muutosta $F_\text{v} = mg$, joten muutoksen jälkeen $F_\text{v}' = \tfrac{1}{2}mg$. Liikeyhtälö $mg - F_\text{v}' = ma$ antaa $a = \dfrac{mg - \tfrac{1}{2}mg}{m} = \dfrac{g}{2}$
+**Kaava:** Ennen muutosta $\Sigma F = 0$, joten $mg - F_\text{v} = 0$ ja $F_\text{v} = mg$. Muutoksen jälkeen $F_\text{v}' = \tfrac{1}{2}mg$. Newtonin toinen laki on $\Sigma F = ma$, ja $\Sigma F = mg - F_\text{v}'$. Siksi $mg - F_\text{v}' = ma$ ja $a = \dfrac{mg - \tfrac{1}{2}mg}{m} = \dfrac{g}{2}$
 **Muunnokset:** Massa supistuu pois, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{9{,}81\,\text{m/s}^2}{2} = 4{,}905\,\text{m/s}^2$
 **Vastaus:** $4{,}91\,\text{m/s}^2$ alaspäin. Vastauksessa on kolme merkitsevää numeroa, koska putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$ on annettu kolmella numerolla. Massaa ei tarvittu.
@@ -185,7 +185,7 @@ G 1,962
 F_v 0,6 ylös työntö @ala
 a alas
 ```
-**Kaava:** Nousussa $mg + F_\text{v} = ma_1$, joten $a_1 = g + \dfrac{F_\text{v}}{m}$. Laskussa $mg - F_\text{v} = ma_2$, joten $a_2 = g - \dfrac{F_\text{v}}{m}$. Erotus on $\Delta a = a_1 - a_2 = \dfrac{2F_\text{v}}{m}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Positiivinen suunta on alas. Nousussa paino ja ilmanvastus osoittavat molemmat alas: $\Sigma F = G + F_\text{v} = mg + F_\text{v}$, joten $mg + F_\text{v} = ma_1$ ja $a_1 = g + \dfrac{F_\text{v}}{m}$. Laskussa ilmanvastus osoittaa ylös: $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma_2$ ja $a_2 = g - \dfrac{F_\text{v}}{m}$. Erotus on $\Delta a = a_1 - a_2 = \dfrac{2F_\text{v}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta a = \dfrac{2\cdot 0{,}600\,\text{N}}{0{,}200\,\text{kg}} = 6{,}00\,\text{m/s}^2$
 **Vastaus:** $6{,}00\,\text{m/s}^2$. Vastauksessa on kolme merkitsevää numeroa, koska massa $0{,}200\,\text{kg}$ ja ilmanvastus $0{,}600\,\text{N}$ on annettu kolmella numerolla.
@@ -202,7 +202,7 @@ F_v 0,4965 ylös työntö @ala
 a alas
 ```
 **Kuvaajan lukeminen:** Tangentti alkaa pystyakselilta kohdasta $(0;\, 2{,}0\,\text{m/s})$ ja kulkee ruudukon risteyksen $(2{,}0\,\text{s};\, 15{,}0\,\text{m/s})$ kautta. Nämä pisteet ovat kaukana toisistaan ja ruudukon viivoilla, joten ne voi lukea tarkasti. Kulmakerroin luetaan tangentilta, ei käyrän pisteistä.
-**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Kaava:** $a = \dfrac{\Delta v}{\Delta t}$. Newtonin toinen laki: $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{15{,}0\,\text{m/s} - 2{,}0\,\text{m/s}}{2{,}0\,\text{s} - 0\,\text{s}} = 6{,}5\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 6{,}5\,\text{m/s}^2) \\ &= 0{,}150\,\text{kg}\cdot 3{,}31\,\text{m/s}^2 \\ &= 0{,}4965\,\text{N} \end{aligned}$$
 **Vastaus:** $0{,}50\,\text{N}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luettu kiihtyvyys $6{,}5\,\text{m/s}^2$ on kahden numeron tarkkuudella.
@@ -229,7 +229,7 @@ F_v 1500 ylös työntö @ala
 a ylös
 v alas
 ```
-**Kaava:** $\Sigma F = mg - F_\text{v}$, ja kokonaisvoiman suuruus on $|\Sigma F|$
+**Kaava:** $\Sigma F = G - F_\text{v}$ ja $G = mg$, joten $\Sigma F = mg - F_\text{v}$. Kokonaisvoiman suuruus on $|\Sigma F|$
 **Muunnokset:** Massa on kilogrammoina ja voima newtoneina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F = 60{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 1500\,\text{N} = 588{,}6\,\text{N} - 1500\,\text{N} = -911{,}4\,\text{N}$
 **Vastaus:** $911\,\text{N}$ ylöspäin. Miinusmerkki kertoo suunnan, kun positiivinen suunta on alas. Vastauksessa on kolme merkitsevää numeroa kuten massassa $60{,}0\,\text{kg}$.
@@ -246,7 +246,7 @@ G 0,1962
 F_v 0,1062 ylös työntö @ala
 a alas
 ```
-**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newtonin toinen laki: $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** $m = 20{,}0\,\text{g} = 20{,}0 \cdot 10^{-3}\,\text{kg} = 0{,}0200\,\text{kg}$
 **Sijoitus:** $a = \dfrac{5{,}15\,\text{m/s} - 3{,}35\,\text{m/s}}{0{,}80\,\text{s} - 0{,}40\,\text{s}} = 4{,}50\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 4{,}50\,\text{m/s}^2) \\ &= 0{,}0200\,\text{kg}\cdot 5{,}31\,\text{m/s}^2 \\ &= 0{,}1062\,\text{N} \end{aligned}$$
 **Vastaus:** $0{,}106\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $20{,}0\,\text{g}$ ja nopeuksissa.
@@ -262,7 +262,7 @@ G 0,04709
 F_v 0,04709 ylös työntö @ala
 a 0
 ```
-**Kaava:** $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$
+**Kaava:** $\Sigma F = ma$ ja $a = 0$, joten $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ ja $F_\text{v} = mg$
 **Muunnokset:** $m_4 = 4{,}8\,\text{g} = 4{,}8 \cdot 10^{-3}\,\text{kg}$
 **Sijoitus:** a) $F_\text{v} = 4{,}8 \cdot 10^{-3}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}047088\,\text{N}$. b) Ilmanvastuksien suhde on sama kuin massojen suhde: $4{,}8\,\text{g} : 1{,}2\,\text{g} = 4{,}0$. Nopeuksien suhde on $1{,}49\,\text{m/s} : 0{,}72\,\text{m/s} = 2{,}1$.
 **Vastaus:** a) $0{,}047\,\text{N}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $4{,}8\,\text{g}$. b) Ilmanvastus on $4{,}0$ kertaa suurempi, mutta nopeus vain noin $2{,}1$ kertaa suurempi. Ilmanvastus kasvaa siis nopeammin kuin nopeus. Kun nopeus kaksinkertaistuu, ilmanvastus kasvaa noin nelinkertaiseksi.
@@ -289,7 +289,7 @@ F_v 2239 ylös työntö @ala
 a ylös
 v alas
 ```
-**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$. Lopussa $a = 0$, joten $F_\text{v} = mg$.
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newtonin toinen laki: $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $F_\text{v} = mg - ma = m(g - a)$. Lopussa $a = 0$, joten $\Sigma F = 0$ ja $F_\text{v} = mg$.
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** a) $a = \dfrac{15{,}5\,\text{m/s} - 33{,}0\,\text{m/s}}{1{,}5\,\text{s} - 0{,}5\,\text{s}} = -17{,}5\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &+ 17{,}5\,\text{m/s}^2) \\ &= 82{,}0\,\text{kg}\cdot 27{,}31\,\text{m/s}^2 \\ &= 2239{,}42\,\text{N} \end{aligned}$$. b) $mg = 82{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 804{,}42\,\text{N}$, joten $F_\text{v} : mg = 2239{,}42\,\text{N} : 804{,}42\,\text{N} = 2{,}78$. c) $F_\text{v} = mg = 804{,}42\,\text{N}$.
 **Vastaus:** a) $2240\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $82{,}0\,\text{kg}$. b) Ilmanvastus on noin $2{,}8$-kertainen paino. Kokonaisvoima $\Sigma F = mg - F_\text{v} = -1435\,\text{N}$ osoittaa ylös, koska kiihtyvyys on ylös. Hyppääjä ei nouse, koska kokonaisvoima vain pienentää alaspäin suuntautuvaa nopeutta. Nopeus on kaikissa taulukon kohdissa positiivinen alas. c) Ilmanvastus on noin $804\,\text{N}$ eli painon suuruinen. Nopeus pysyy vakiona, koska paino ja ilmanvastus kumoavat toisensa ja kokonaisvoima on nolla.
@@ -305,7 +305,7 @@ G 1,373
 F_v 1,373 ylös työntö @ala
 a 0
 ```
-**Kaava:** a) $mg - F_\text{v} = 0$, joten $F_\text{v} = mg$. b) $v^2 = 2gh$, joten $v = \sqrt{2gh}$.
+**Kaava:** a) $\Sigma F = ma$ ja $a = 0$, joten $\Sigma F = G - F_\text{v} = mg - F_\text{v} = 0$ ja $F_\text{v} = mg$. b) Putoaminen on tasaisesti kiihtyvää liikettä: $v^2 = v_0^2 + 2as$, missä $v_0 = 0$, $a = g$ ja $s = h$, joten $v^2 = 2gh$ ja $v = \sqrt{2gh}$. Ilman ilmanvastusta $\Sigma F = G = mg$ ja $\Sigma F = ma$, joten $a = g$.
 **Muunnokset:** $m = 0{,}0140\,\text{g} = 1{,}40 \cdot 10^{-5}\,\text{kg}$ ja $h = 1{,}50\,\text{km} = 1500\,\text{m}$
 **Sijoitus:** a) $F_\text{v} = 1{,}40 \cdot 10^{-5}\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 1{,}373 \cdot 10^{-4}\,\text{N}$. b) $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1500\,\text{m}} = \sqrt{29430\,\text{m}^2/\text{s}^2} = 171{,}55\,\text{m/s}$
 **Vastaus:** a) $1{,}37 \cdot 10^{-4}\,\text{N}$ ylöspäin. b) $172\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa kuten korkeudessa $1{,}50\,\text{km}$. c) Ilman ilmanvastusta nopeus olisi noin $620\,\text{km/h}$. Se on yli $20$-kertainen todelliseen $8{,}0\,\text{m/s}$ verrattuna, ja pisara olisi vaarallinen. Kun pisara putoaa, ilmanvastus kasvaa nopeuden kasvaessa, kunnes se on painon suuruinen. Silloin kokonaisvoima on nolla ja nopeus pysyy vakiona. Pisaran paino on vain noin $1{,}4 \cdot 10^{-4}\,\text{N}$. Pieni ilmanvastus riittää kumoamaan sen jo pienellä nopeudella.
@@ -336,7 +336,7 @@ a alas
 v alas
 ```
 **Kuvaajan lukeminen:** Lue pisteet $(6{,}0\,\text{s};\, 40{,}4\,\text{m/s})$ ja $(10{,}0\,\text{s};\, 46{,}4\,\text{m/s})$. Ne ovat hetken $8{,}0\,\text{s}$ molemmin puolin. Nopeus kasvaa vielä, joten kiihtyvyys on positiivinen alas. Käyrän nousu loivenee. Välillä $0 \ldots 2{,}0\,\text{s}$ kulmakerroin on noin $9{,}3\,\text{m/s}^2$ eli lähes $g$. Välillä $10 \ldots 12\,\text{s}$ se on vain noin $0{,}5\,\text{m/s}^2$.
-**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newtonin toinen laki: $\Sigma F = ma$. Lisäksi $\Sigma F = G - F_\text{v} = mg - F_\text{v}$, joten $mg - F_\text{v} = ma$ ja $F_\text{v} = mg - ma = m(g - a)$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$, ajat sekunteina ja massa kilogrammoina. Muunnoksia ei tarvita.
 **Sijoitus:** a) $a = \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10{,}0\,\text{s} - 6{,}0\,\text{s}} = 1{,}50\,\text{m/s}^2$ ja $$\begin{aligned} &F_\text{v} \\ &= 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 1{,}50\,\text{m/s}^2) \\ &= 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 \\ &= 623{,}25\,\text{N} \end{aligned}$$. b) Paino $G = mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, joten $\dfrac{F_\text{v}}{G} = \dfrac{623{,}25\,\text{N}}{735{,}75\,\text{N}} = 0{,}847$
 **Vastaus:** a) $F_\text{v} \approx 623\,\text{N}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa kuten massassa $75{,}0\,\text{kg}$. b) Ilmanvastus on noin $85\,\%$ painosta. Kuvaajan pisteet tasaantuvat lähelle arvoa $48\,\text{m/s}$. Viimeisellä kahden sekunnin välillä nopeus kasvaa enää $0{,}9\,\text{m/s}$. Kun nopeus ei enää muutu, kiihtyvyys on nolla ja kokonaisvoima on nolla. Silloin ilmanvastus on yhtä suuri kuin paino, noin $736\,\text{N}$.

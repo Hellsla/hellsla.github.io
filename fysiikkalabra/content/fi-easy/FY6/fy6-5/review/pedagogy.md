@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6a5751d3f9bbb354
+CONTENT-HASH: e610ccd099e89397
 
 ## Blocking
-none
+(none)
 
 ## Polish
-- Ohmin laki retrieval: the bird is hypothetical and clear; the 2,0 A feedback could say 'k = 1000' more directly.
-- Display block then `(luku` without a space in the correct feedback.
+(none)
 
 ## Checked
-batch delta review: retrieval I=U:R (2,0 mA; distractors k forgotten, product, inverted), split Tunnetut/Kysytään paragraph.
+- Delta is one word, "sisäenergiakseen" -> "sisäenergiaksi" (correct translative case for "muuttaa X:ksi"); no pedagogical content changed.
