@@ -120,7 +120,7 @@ A refracted ray exists only if the angle of incidence is smaller than the critic
 **Principle:** The reading is the sum of the share of the polarised light of the display and the background light. At $90^\circ$ no light of the display passes through, so the reading $16\,\text{lx}$ is background light alone.
 
 The share of the light of the display is at most $E_\text{max} - E_\text{b}$, and according to Malus's law it decreases by the factor $\cos^2\theta$. The reading is proportional to the intensity, so Malus's law also applies to the reading.
-**Formula:** $$\begin{aligned} E &= E_\text{n} + E_\text{b} \\ E_\text{n} &= (E_\text{max} - E_\text{b}) \cos^2\theta \\ E &= (E_\text{max} - E_\text{b}) \cos^2\theta + E_\text{b} \end{aligned}$$
+**Formula:** $$\begin{aligned} E &= E_0 \cos^2\theta + E_\text{b} \\ E_0 &= E_\text{max} - E_\text{b} \\ E &= (E_\text{max} - E_\text{b}) \cos^2\theta + E_\text{b} \end{aligned}$$
 **Conversions:** Not needed: the readings are in lux, and the angle is in degrees.
 **Substitution:** $$\begin{aligned} E &= (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60.0^\circ \\ &+ 16\,\text{lx} \\ &= 404\,\text{lx} \cdot 0.250 + 16\,\text{lx} \\ &= 117\,\text{lx} \end{aligned}$$
 **Answer:** $117\,\text{lx}$, three significant figures like the reading $420\,\text{lx}$.

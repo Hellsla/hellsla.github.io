@@ -114,7 +114,7 @@ Tässä se on veden taitekerroin. Luku $n_2$ on sen aineen taitekerroin, johon v
 **Annettu:** lukema $E_\text{max} = 420\,\text{lx}$, kun kalvo on näytön polarisaation suuntainen; lukema $E_\text{t} = 16\,\text{lx}$, kun kalvoa on kierretty $90{,}0^\circ$ (taustavalo); kiertokulma $\theta = 60{,}0^\circ$
 **Kysytty:** anturin lukema $E$ luksiyksikössä kulmalla $60{,}0^\circ$
 **Periaate:** Lukema on kahden osan summa: näytön polarisoituneen valon osuus ja taustavalo. Kulmalla $90^\circ$ näytön valoa ei pääse läpi, joten lukema $16\,\text{lx}$ on pelkkää taustavaloa. Näytön valon osuus on suurimmillaan $E_\text{max} - E_\text{t}$. Malusin lain mukaan se pienenee kertoimella $\cos^2\theta$. Lukema on verrannollinen intensiteettiin, joten Malusin laki koskee myös lukemaa.
-**Kaava:** $$\begin{aligned} E &= E_\text{n} + E_\text{t} \\ E_\text{n} &= (E_\text{max} - E_\text{t}) \cos^2\theta \\ E &= (E_\text{max} - E_\text{t}) \cos^2\theta + E_\text{t} \end{aligned}$$
+**Kaava:** $$\begin{aligned} E &= E_0 \cos^2\theta + E_\text{t} \\ E_0 &= E_\text{max} - E_\text{t} \\ E &= (E_\text{max} - E_\text{t}) \cos^2\theta + E_\text{t} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita: lukemat ovat luksiyksikössä, ja kulma on asteina.
 **Sijoitus:** $$\begin{aligned} E &= (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60{,}0^\circ \\ &+ 16\,\text{lx} \\ &= 404\,\text{lx} \cdot 0{,}250 + 16\,\text{lx} \\ &= 117\,\text{lx} \end{aligned}$$
 **Vastaus:** $117\,\text{lx}$. Vastauksessa on kolme merkitsevää numeroa, kuten lukemassa $420\,\text{lx}$.

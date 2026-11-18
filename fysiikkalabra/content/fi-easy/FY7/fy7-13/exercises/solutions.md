@@ -52,7 +52,7 @@
 **Annettu:** aallonpituus $\lambda = 450\,\text{nm}$, viivatiheys $N = 600$ viivaa millimetrillä
 **Kysytty:** varjostimelle syntyvien valopisteiden lukumäärä
 **Periaate:** Jokainen maksimi on yksi valopiste. Hilayhtälön mukaan $\sin\theta = k\lambda : d$, ja koska sini on enintään $1$, maksimi syntyy vain kertaluvuilla, joille $k\lambda < d$. Keskimaksimin kummallakin puolella on yhtä monta maksimia.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $k < \dfrac{d}{\lambda}$; pisteitä on $2k_\text{max} + 1$, missä $k_\text{max}$ on suurin ehdon täyttävä kokonaisluku.
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ k\lambda &= d\sin\theta < d \\ k &< \frac{d}{\lambda} \end{aligned}$$ Pisteitä on $2k_\text{max} + 1$, missä $k_\text{max}$ on suurin ehdon täyttävä kokonaisluku.
 **Muunnokset:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1{,}667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ ja $450\,\text{nm} = 450 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\dfrac{d}{\lambda} = \dfrac{1{,}667 \cdot 10^{-6}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 3{,}70$, joten $k_\text{max} = 3$ ja pisteitä on $2 \cdot 3 + 1 = 7$.
 **Vastaus:** $7$ valopistettä: keskimaksimi ja kertaluvut $\pm 1$, $\pm 2$ ja $\pm 3$. Vastaus on kokonaisluku, joten pyöristystä ei tarvita.
@@ -62,7 +62,7 @@
 **Annettu:** aallonpituus $\lambda = 650\,\text{nm}$, viivatiheys $N = 100$ viivaa millimetrillä, varjostimen etäisyys $L = 2{,}50\,\text{m}$, kertaluku $k = 1$
 **Kysytty:** ensimmäisen maksimin etäisyys $x$ keskimaksimista senttimetreinä
 **Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimin kulma saadaan hilayhtälöstä. Varjostin on kohtisuorassa sädettä vastaan, joten maksimin paikka saadaan suorakulmaisesta kolmiosta, jonka kateetit ovat $L$ ja $x$.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $d\sin\theta = k\lambda$ ja $\tan\theta = \dfrac{x}{L}$, joista $\theta = \sin^{-1}\dfrac{k\lambda}{d}$ ja $x = L\tan\theta$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \tan\theta &= \frac{x}{L} \\ x &= L\tan\theta \\ &= L\tan\bigl(\sin^{-1}\frac{k\lambda}{d}\bigr) \end{aligned}$$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1{,}00 \cdot 10^{-5}\,\text{m}$, $650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ ja lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\theta = \sin^{-1}\dfrac{650 \cdot 10^{-9}\,\text{m}}{1{,}00 \cdot 10^{-5}\,\text{m}} = \sin^{-1} 0{,}0650 = 3{,}727^\circ$ ja $x = 2{,}50\,\text{m} \cdot \tan 3{,}727^\circ = 2{,}50\,\text{m} \cdot 0{,}06514 = 0{,}1628\,\text{m} = 16{,}28\,\text{cm}$
 **Vastaus:** $16{,}3\,\text{cm}$, kolme merkitsevää numeroa kuten etäisyys $2{,}50\,\text{m}$.
@@ -72,7 +72,7 @@
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, varjostimen etäisyys $L = 1{,}00\,\text{m}$, maksimien $\pm 1$ välinen etäisyys $66{,}8\,\text{cm}$, kertaluku $k = 1$
 **Kysytty:** hilan viivatiheys $N$ eli viivojen määrä millimetrillä
 **Periaate:** Maksimit ovat symmetrisesti keskimaksimin molemmin puolin, joten ensimmäinen maksimi on puolen pisteiden välin päässä keskimaksimista. Kulma saadaan suorakulmaisesta kolmiosta, hilavakio hilayhtälöstä ja viivatiheys hilavakiosta.
-**Kaava:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ ja $d = \dfrac{1\,\text{mm}}{N}$, joista $d = \dfrac{k\lambda}{\sin\theta}$ ja $N = \dfrac{1\,\text{mm}}{d}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
 **Muunnokset:** $x = 66{,}8\,\text{cm} : 2 = 33{,}4\,\text{cm} = 33{,}4 \cdot 0{,}01\,\text{m} = 0{,}334\,\text{m}$, $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}334\,\text{m}}{1{,}00\,\text{m}} = 18{,}47^\circ$, $d = \dfrac{532 \cdot 10^{-9}\,\text{m}}{\sin 18{,}47^\circ} = \dfrac{532 \cdot 10^{-9}\,\text{m}}{0{,}3168} = 1{,}679 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{1{,}679 \cdot 10^{-6}\,\text{m}} = 595{,}5$
 **Vastaus:** noin $596$ viivaa millimetrillä, kolme merkitsevää numeroa kuten etäisyydet. Hila on todennäköisesti valmistajan hila, jossa on $600$ viivaa millimetrillä. Ero johtuu mittausepävarmuudesta.
@@ -82,7 +82,7 @@
 **Annettu:** aallonpituudet $\lambda_\text{v} = 400\,\text{nm}$ (violetti reuna) ja $\lambda_\text{p} = 700\,\text{nm}$ (punainen reuna), viivatiheys $N = 300$ viivaa millimetrillä, varjostimen etäisyys $L = 1{,}00\,\text{m}$, kertaluku $k = 1$
 **Kysytty:** ensimmäisen kertaluvun spektrin leveys $\Delta x$ varjostimella senttimetreinä
 **Periaate:** Jokainen aallonpituus poikkeaa omaan kulmaansa hilayhtälön mukaan, joten spektri alkaa violetin valon maksimista ja päättyy punaisen valon maksimiin. Kumpikin paikka saadaan suorakulmaisesta kolmiosta, ja leveys on niiden erotus.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\theta = \sin^{-1}\dfrac{k\lambda}{d}$, $x = L\tan\theta$ ja $\Delta x = x_\text{p} - x_\text{v}$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \tan\theta &= \frac{x}{L} \\ x_\text{v} &= L\tan\bigl(\sin^{-1}\frac{k\lambda_\text{v}}{d}\bigr) \\ x_\text{p} &= L\tan\bigl(\sin^{-1}\frac{k\lambda_\text{p}}{d}\bigr) \\ \Delta x &= x_\text{p} - x_\text{v} \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 300 \\ &= 3{,}333 \cdot 10^{-6}\,\text{m} \end{aligned}$$, aallonpituudet $400 \cdot 10^{-9}\,\text{m}$ ja $700 \cdot 10^{-9}\,\text{m}$, lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $\theta_\text{v} = \sin^{-1}\dfrac{400 \cdot 10^{-9}\,\text{m}}{3{,}333 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0{,}120 = 6{,}892^\circ$, $\theta_\text{p} = \sin^{-1} 0{,}210 = 12{,}12^\circ$, $x_\text{v} = 1{,}00\,\text{m} \cdot \tan 6{,}892^\circ = 0{,}1209\,\text{m}$, $x_\text{p} = 1{,}00\,\text{m} \cdot \tan 12{,}12^\circ = 0{,}2148\,\text{m}$ ja $\Delta x = 0{,}2148\,\text{m} - 0{,}1209\,\text{m} = 0{,}0939\,\text{m} = 9{,}39\,\text{cm}$
 **Vastaus:** $9{,}39\,\text{cm}$, kolme merkitsevää numeroa kuten etäisyys $1{,}00\,\text{m}$ ja aallonpituudet.
@@ -92,7 +92,7 @@
 **Annettu:** toisen kertaluvun ($k = 2$) aallonpituus $\lambda_2 = 700\,\text{nm}$, kolmas kertaluku $k = 3$, valkoisen valon aallonpituudet $400$–$700\,\text{nm}$
 **Kysytty:** aallonpituus $\lambda_3$, jonka kolmannen kertaluvun maksimi on samassa suunnassa, ja mitä se kertoo spektreistä
 **Periaate:** Samassa suunnassa $\theta$ hilayhtälön vasen puoli $d\sin\theta$ on molemmille aallonpituuksille sama, joten myös oikeat puolet ovat yhtä suuret. Hilavakiota ei tarvita, koska se supistuu pois: tulos pätee jokaiselle hilalle.
-**Kaava:** $d\sin\theta = 2\lambda_2$ ja $d\sin\theta = 3\lambda_3$, joten $3\lambda_3 = 2\lambda_2$ ja $\lambda_3 = \dfrac{2\lambda_2}{3}$
+**Kaava:** $$\begin{aligned} d\sin\theta &= 2\lambda_2 \\ d\sin\theta &= 3\lambda_3 \\ 3\lambda_3 &= 2\lambda_2 \\ \lambda_3 &= \frac{2\lambda_2}{3} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aallonpituudet pysyvät nanometreinä, koska yksikkö supistuu suhteessa $2 : 3$.
 **Sijoitus:** $\lambda_3 = \dfrac{2 \cdot 700\,\text{nm}}{3} = 466{,}7\,\text{nm}$
 **Vastaus:** $467\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituus $700\,\text{nm}$. Sininen $467\,\text{nm}$ on valkoisessa valossa mukana. Kolmannen kertaluvun spektri alkaa violetista $400\,\text{nm}$ vielä pienemmästä kulmasta. Siksi toisen kertaluvun spektrin punainen pää ja kolmannen kertaluvun spektrin violetti ja sininen osa menevät päällekkäin.
@@ -102,7 +102,7 @@
 **Annettu:** aallonpituus $\lambda = 650\,\text{nm}$, varjostimen etäisyys levystä $L = 10{,}0\,\text{cm}$, maksimien $\pm 1$ välinen etäisyys $89\,\text{mm}$, kertaluku $k = 1$
 **Kysytty:** raitojen etäisyys $d$ mikrometreinä
 **Periaate:** CD-levyn tasaväliset raidat toimivat heijastushilana: kohtisuoraan tulevan valon heijastuneet maksimit noudattavat samaa hilayhtälöä kuin läpäisevässä hilassa, ja $d$ on raitojen väli. Varjostin on levyn suuntainen eli kohtisuorassa tulevaa sädettä vastaan, joten kulma saadaan suorakulmaisesta kolmiosta. Maksimi on puolen pisteiden välin päässä reiästä.
-**Kaava:** $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $d = \dfrac{k\lambda}{\sin\theta}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \end{aligned}$$
 **Muunnokset:** $x = 89\,\text{mm} : 2 = 44{,}5\,\text{mm} = 4{,}45\,\text{cm}$; kulmaan riittää, että $x$ ja $L$ ovat samassa yksikössä. $650\,\text{nm} = 0{,}650\,\mu\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{4{,}45\,\text{cm}}{10{,}0\,\text{cm}} = \tan^{-1} 0{,}445 = 23{,}99^\circ$ ja $d = \dfrac{1 \cdot 0{,}650\,\mu\text{m}}{\sin 23{,}99^\circ} = \dfrac{0{,}650\,\mu\text{m}}{0{,}4066} = 1{,}599\,\mu\text{m}$
 **Vastaus:** $1{,}6\,\mu\text{m}$, kaksi merkitsevää numeroa kuten pisteiden väli $89\,\text{mm}$.
@@ -112,7 +112,7 @@
 **Annettu:** punaisen laserin aallonpituus $\lambda_\text{p} = 650\,\text{nm}$, varjostimen etäisyys $L = 1{,}00\,\text{m}$, punaisen ensimmäisen maksimin etäisyys $x_\text{p} = 19{,}9\,\text{cm}$ ja vihreän $x_\text{v} = 16{,}2\,\text{cm}$, kertaluku $k = 1$
 **Kysytty:** vihreän laserin aallonpituus $\lambda_\text{v}$ nanometreinä
 **Periaate:** Hila on molemmilla lasereilla sama. Tunnetun punaisen laserin mittauksesta saadaan ensin hilavakio, eli hila kalibroidaan. Sen jälkeen vihreän valon aallonpituus saadaan samasta hilayhtälöstä. Kulmat saadaan suorakulmaisista kolmioista, koska varjostin on kohtisuorassa sädettä vastaan.
-**Kaava:** $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $d = \dfrac{\lambda_\text{p}}{\sin\theta_\text{p}}$ ja $\lambda_\text{v} = d\sin\theta_\text{v}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{\lambda_\text{p}}{\sin\theta_\text{p}} \\ \lambda_\text{v} &= d\sin\theta_\text{v} \end{aligned}$$
 **Muunnokset:** $x_\text{p} = 19{,}9 \cdot 0{,}01\,\text{m} = 0{,}199\,\text{m}$, $x_\text{v} = 0{,}162\,\text{m}$ ja $650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\theta_\text{p} = \tan^{-1}\dfrac{0{,}199\,\text{m}}{1{,}00\,\text{m}} = 11{,}25^\circ$, $d = \dfrac{650 \cdot 10^{-9}\,\text{m}}{\sin 11{,}25^\circ} = \dfrac{650 \cdot 10^{-9}\,\text{m}}{0{,}1952} = 3{,}330 \cdot 10^{-6}\,\text{m}$, $\theta_\text{v} = \tan^{-1} 0{,}162 = 9{,}202^\circ$ ja $\lambda_\text{v} = 3{,}330 \cdot 10^{-6}\,\text{m} \cdot \sin 9{,}202^\circ = 3{,}330 \cdot 10^{-6}\,\text{m} \cdot 0{,}1599 = 5{,}326 \cdot 10^{-7}\,\text{m} = 532{,}6\,\text{nm}$
 **Vastaus:** $533\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyydet $19{,}9\,\text{cm}$ ja $16{,}2\,\text{cm}$.
@@ -129,7 +129,7 @@ Juuri raon leveys ratkaisee, kuinka paljon valo taipuu. Vaihtoehto, jonka mukaan
 **Annettu:** viivatiheys $N = 500$ viivaa millimetrillä, aallonpituus $\lambda = 532\,\text{nm}$, kertaluku $k = 2$
 **Kysytty:** toisen kertaluvun maksimin kulma $\theta$ asteina
 **Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimin suunta noudattaa hilayhtälöä. Ensin lasketaan hilavakio viivatiheydestä. Toisen kertaluvun maksimissa vierekkäisten rakojen matkaero on kaksi aallonpituutta.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $d\sin\theta = k\lambda$, josta $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \sin\theta &= \frac{k\lambda}{d} \\ \theta &= \sin^{-1}\frac{k\lambda}{d} \end{aligned}$$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 500 = 2{,}00 \cdot 10^{-6}\,\text{m}$ ja $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\theta = \sin^{-1}\dfrac{2 \cdot 532 \cdot 10^{-9}\,\text{m}}{2{,}00 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0{,}532 = 32{,}14^\circ$
 **Vastaus:** $32{,}1^\circ$, kolme merkitsevää numeroa kuten aallonpituus.
@@ -139,7 +139,7 @@ Juuri raon leveys ratkaisee, kuinka paljon valo taipuu. Vaihtoehto, jonka mukaan
 **Annettu:** aallonpituus $\lambda = 589\,\text{nm}$, viivatiheys $N = 400$ viivaa millimetrillä
 **Kysytty:** suurin kertaluku $k_\text{max}$, jonka maksimi syntyy
 **Periaate:** Sini on enintään $1$. Siksi maksimi syntyy vain kertaluvuilla, joille $k\lambda < d$. Suurin kokonaisluku, joka täyttää ehdon, on suurin kertaluku.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $k < \dfrac{d}{\lambda}$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ k\lambda &= d\sin\theta < d \\ k &< \frac{d}{\lambda} \end{aligned}$$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2{,}50 \cdot 10^{-6}\,\text{m}$ ja $589\,\text{nm} = 589 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\dfrac{d}{\lambda} = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m}}{589 \cdot 10^{-9}\,\text{m}} = 4{,}24$, joten $k < 4{,}24$ ja $k_\text{max} = 4$
 **Vastaus:** $4$. Tulos on kokonaisluku, joten pyöristystä ei tarvita.
@@ -152,7 +152,7 @@ Juuri raon leveys ratkaisee, kuinka paljon valo taipuu. Vaihtoehto, jonka mukaan
 **Kuvaajan lukeminen:** Taulukon $x_k$:sta lasketaan $\theta_k = \tan^{-1}(x_k : L)$ ja $\sin\theta_k$. Arvot ovat $0{,}0629$, $0{,}1250$, $0{,}1914$, $0{,}2516$, $0{,}3176$, $0{,}3801$, $0{,}4429$ ja $0{,}5081$.
 
 Pisteet ovat lähellä suoraa, joka kulkee origon kautta. Pienimmän neliösumman suora origon kautta (laskimella tai taulukkolaskennalla) antaa kulmakertoimeksi $0{,}06337$. Käsin piirretty suora antaa samoin noin $0{,}063$. Yksittäinen piste poikkeaa suorasta hieman mittausvirheen takia.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja kulmakerroin $a = \dfrac{\lambda}{d}$, josta $\lambda = a\,d$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \sin\theta_k &= \frac{\lambda}{d}\,k \\ a &= \frac{\lambda}{d} \\ \lambda &= a\,d \end{aligned}$$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1{,}00 \cdot 10^{-5}\,\text{m}$ ja lopuksi $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\lambda = 0{,}06337 \cdot 1{,}00 \cdot 10^{-5}\,\text{m} = 6{,}337 \cdot 10^{-7}\,\text{m} = 633{,}7\,\text{nm}$
 **Vastaus:** $634\,\text{nm}$, kolme merkitsevää numeroa kuten etäisyys $L$. Punaisen laserin aallonpituus on yleensä noin $630$–$650\,\text{nm}$, joten tulos sopii.
@@ -162,7 +162,7 @@ Pisteet ovat lähellä suoraa, joka kulkee origon kautta. Pienimmän neliösumma
 **Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, $L = 1{,}00\,\text{m}$, $x = 33{,}7\,\text{cm}$, kertaluku $k = 1$; opiskelijan tulos $562\,\text{nm}$
 **Kysytty:** a) opiskelijan päättelyn virhe, b) oikea aallonpituus, c) opiskelijan tuloksen poikkeama oikeasta tuloksesta prosentteina
 **Periaate:** Varjostimen kolmiosta saadaan $\tan\theta = x : L$. Siitä ei saada $\sin\theta = x : L$. Sini ja tangentti ovat melkein yhtä suuret vain pienillä kulmilla. Tässä kulma on lähes $19^\circ$. Oikea aallonpituus lasketaan kulman sinistä. Virhe on opiskelijan tuloksen ja oikean tuloksen ero jaettuna oikealla tuloksella.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta = \dfrac{x}{L}$, $\lambda = d\sin\theta$ ja virhe $\dfrac{\lambda_\text{op} - \lambda}{\lambda} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \tan\theta &= \frac{x}{L} \\ \lambda &= d\sin\theta \\ \text{virhe} &= \frac{\lambda_\text{op} - \lambda}{\lambda} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** $x = 33{,}7\,\text{cm} = 0{,}337\,\text{m}$ ja $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1{,}667 \cdot 10^{-6}\,\text{m} \end{aligned}$$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}337\,\text{m}}{1{,}00\,\text{m}} = 18{,}62^\circ$, $\lambda = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot \sin 18{,}62^\circ = 1{,}667 \cdot 10^{-6}\,\text{m} \cdot 0{,}3193 = 5{,}323 \cdot 10^{-7}\,\text{m} = 532{,}3\,\text{nm}$ ja virhe $$\begin{aligned} &= \dfrac{561{,}7\,\text{nm} - 532{,}3\,\text{nm}}{532{,}3\,\text{nm}} \cdot 100\,\% \\ &= 5{,}53\,\% \end{aligned}$$
 **Vastaus:** $5{,}5\,\%$, kaksi merkitsevää numeroa. Opiskelijan virhe: hän käytti kaavaa $\sin\theta \approx x : L$. Varjostimen kolmiosta kuitenkin saadaan $\tan\theta = x : L$. Kulma on liian suuri pienen kulman likiarvolle. Oikea aallonpituus on $532\,\text{nm}$. Opiskelijan $562\,\text{nm}$ on liian suuri.
@@ -209,7 +209,7 @@ Jos ottaisi huomioon vain hilan, saisi kolminkertaisen etäisyyden. Pelkästä v
 **Kuvaajan lukeminen:** Kuvaajassa $I(x)$ on huippu $I = 1{,}00$ keskimaksimissa $x = 0{,}0\,\text{mm}$. Minimi $I = 0{,}00$ on kohdassa $2{,}5\,\text{mm}$ ja seuraava huippu $I = 1{,}00$ kohdassa $5{,}0\,\text{mm}$. Lukemat kohdissa $4{,}5\,\text{mm}$ ja $5{,}5\,\text{mm}$ ($0{,}91$ ja $0{,}89$) ovat lähes yhtä suuret.
 
 Siksi ensimmäisen kertaluvun maksimi on kohdassa $x_1 = 5{,}0\,\text{mm}$. Seuraava huippu on taulukossa kohdassa $10{,}0\,\text{mm}$ ($I = 1{,}00$, lukemat $9{,}5\,\text{mm}$ ja $10{,}5\,\text{mm}$ ovat $0{,}91$ ja $0{,}89$). Niiden välissä minimi on kohdassa $7{,}5\,\text{mm}$ ($I = 0{,}00$).
-**Kaava:** $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $\lambda = \dfrac{d\sin\theta}{k}$ ja $x_k = L\tan\theta_k$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ \lambda &= \frac{d\sin\theta}{k} \\ x_k &= L\tan\theta_k \end{aligned}$$
 **Muunnokset:** $d = 0{,}250\,\text{mm} = 2{,}50 \cdot 10^{-4}\,\text{m}$ ja $x_1 = 5{,}0\,\text{mm} = 5{,}0 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** a) $\theta_1 = \tan^{-1}\dfrac{5{,}0 \cdot 10^{-3}\,\text{m}}{2{,}00\,\text{m}} = \tan^{-1} 0{,}00250 = 0{,}143^\circ$ ja $\lambda = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot \sin 0{,}143^\circ = 2{,}50 \cdot 10^{-4}\,\text{m} \cdot 0{,}00250 = 6{,}25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$.
 
@@ -223,7 +223,7 @@ c) Hilan ensimmäinen maksimi tulee samaan kohtaan, $x_1 = 5{,}0\,\text{mm}$.
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, kertaluku $k = 1$, mittaukset $(L; 2x)$: $(4{,}0\,\text{cm}; 8{,}3\,\text{cm})$, $(6{,}0\,\text{cm}; 12{,}5\,\text{cm})$, $(8{,}0\,\text{cm}; 16{,}7\,\text{cm})$ ja $(10{,}0\,\text{cm}; 20{,}9\,\text{cm})$, vertailuarvo $0{,}74\,\mu\text{m}$
 **Kysytty:** a) raitojen etäisyys $d$ ja sen keskiarvo $d_\text{ka}$ mikrometreinä, b) syntyykö toisen kertaluvun maksimi, valopisteiden määrä ja nollannen kertaluvun heijastuksen suunta, c) keskiarvon poikkeama vertailuarvosta
 **Periaate:** DVD-levyn tasaväliset raidat toimivat heijastushilana. Kohtisuoraan tulevan valon heijastuneet maksimit noudattavat hilayhtälöä $d\sin\theta = k\lambda$. Pahvi on levyn suuntainen eli kohtisuorassa tulevaa sädettä vastaan. Siksi kulma saadaan suorakulmaisesta kolmiosta. Maksimi on puolen välimatkan $2x$ päässä reiästä.
-**Kaava:** $x = \dfrac{2x}{2}$, $\tan\theta = \dfrac{x}{L}$ ja $d\sin\theta = k\lambda$, joista $d = \dfrac{\lambda}{\sin\theta}$
+**Kaava:** $$\begin{aligned} x &= \frac{2x}{2} \\ \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{\lambda}{\sin\theta} \end{aligned}$$
 **Muunnokset:** $532\,\text{nm} = 0{,}532\,\mu\text{m}$. Kulman laskemiseen riittää, että $x$ ja $L$ ovat samassa yksikössä (senttimetreinä).
 **Sijoitus:** a) Kulmat ovat $\theta_1 = \tan^{-1}\dfrac{4{,}15}{4{,}0} = 46{,}05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6{,}25}{6{,}0} = 46{,}17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8{,}35}{8{,}0} = 46{,}23^\circ$ ja $\theta_4 = \tan^{-1}\dfrac{10{,}45}{10{,}0} = 46{,}26^\circ$. Niistä $d_1 = \dfrac{0{,}532\,\mu\text{m}}{\sin 46{,}05^\circ} = 0{,}7389\,\mu\text{m}$, $d_2 = 0{,}7375\,\mu\text{m}$, $d_3 = 0{,}7368\,\mu\text{m}$ ja $d_4 = 0{,}7363\,\mu\text{m}$. Summa on $2{,}9495\,\mu\text{m}$, joten $d_\text{ka} = 2{,}9495\,\mu\text{m} : 4 = 0{,}7374\,\mu\text{m}$.
 
@@ -237,7 +237,7 @@ c) $\dfrac{0{,}7374 - 0{,}74}{0{,}74} \cdot 100\,\% = -0{,}36\,\%$.
 **Annettu:** viivatiheys $N = 600$ viivaa millimetrillä, kertaluku $k = 1$; heliumin keltaisen viivan aallonpituus haetaan MAFY-taulukon taulukosta *Spektriviivoja*: $\lambda = 587{,}56\,\text{nm}$
 **Kysytty:** ensimmäisen kertaluvun maksimin kulma $\theta$ asteina
 **Periaate:** Valo tulee kohtisuoraan hilaan, joten maksimin suunta noudattaa hilayhtälöä. Ensin lasketaan hilavakio eli kahden viivan väli viivatiheydestä. Ensimmäisessä kertaluvussa vierekkäisten rakojen matkaero on yksi aallonpituus.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$ ja $d\sin\theta = k\lambda$, josta $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \sin\theta &= \frac{k\lambda}{d} \\ \theta &= \sin^{-1}\frac{k\lambda}{d} \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1{,}667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ ja $587{,}56\,\text{nm} = 587{,}56 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\theta = \sin^{-1}\dfrac{1 \cdot 587{,}56 \cdot 10^{-9}\,\text{m}}{1{,}667 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0{,}3525 = 20{,}64^\circ$
 **Vastaus:** $20{,}6^\circ$. Vastauksessa on kolme merkitsevää numeroa, koska viivatiheydessäkin on kolme.
@@ -248,7 +248,7 @@ c) $\dfrac{0{,}7374 - 0{,}74}{0{,}74} \cdot 100\,\% = -0{,}36\,\%$.
 **Kysytty:** laserin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Varjostin on kohtisuorassa sädettä vastaan. Siksi kulma saadaan suorakulmaisesta kolmiosta tangentin kautta. Maksimin suunta noudattaa hilayhtälöä. Toisen kertaluvun maksimissa matkaero on kaksi aallonpituutta.
 **Kuvaajan lukeminen:** Etäisyys $L$ luetaan kuvan alareunan mitasta: $L = 1{,}20\,\text{m}$. Toisen kertaluvun maksimi on se kahdesta valopisteestä, joka on kauempana keskimaksimista. Sen paikka luetaan asteikolta: piste on kohtien $60\,\text{cm}$ ja $80\,\text{cm}$ välissä, melkein kohdassa $70\,\text{cm}$. Siis $x_2 \approx 70{,}0\,\text{cm}$ (lukematarkkuus noin $\pm 1\,\text{cm}$). Ensimmäisen kertaluvun piste on lähempänä keskimaksimia.
-**Kaava:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta_2 = \dfrac{x_2}{L}$ ja $d\sin\theta_2 = 2\lambda$, josta $\lambda = \dfrac{d\sin\theta_2}{2}$
+**Kaava:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \tan\theta_2 &= \frac{x_2}{L} \\ d\sin\theta_2 &= 2\lambda \\ \lambda &= \frac{d\sin\theta_2}{2} \end{aligned}$$
 **Muunnokset:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2{,}50 \cdot 10^{-6}\,\text{m}$ ja $x_2 = 70{,}0\,\text{cm} = 0{,}700\,\text{m}$.
 **Sijoitus:** $\theta_2 = \tan^{-1}\dfrac{0{,}700\,\text{m}}{1{,}20\,\text{m}} = 30{,}26^\circ$ ja $\lambda = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m} \cdot \sin 30{,}26^\circ}{2} = \dfrac{2{,}50 \cdot 10^{-6}\,\text{m} \cdot 0{,}5039}{2} = 6{,}30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$
 **Vastaus:** $630\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska etäisyys $L$ ja viivatiheys on annettu kolmella.
@@ -259,7 +259,7 @@ c) $\dfrac{0{,}7374 - 0{,}74}{0{,}74} \cdot 100\,\% = -0{,}36\,\%$.
 **Kysytty:** hilan viivatiheys $N$ viivoina millimetrillä
 **Periaate:** Punainen valo taipuu eniten. Siksi spektrin ulkoreuna on punaisen ensimmäisen kertaluvun maksimi. Kulma saadaan varjostimen suorakulmaisesta kolmiosta tangentin kautta. Hilavakio saadaan hilayhtälöstä. Viivatiheys on hilavakion käänteisluku.
 **Kuvaajan lukeminen:** Valkoisen keskimaksimin kohta on asteikon nolla. Spektrin ulkoreuna on punainen reuna. Se on asteikolla kohtien $15\,\text{cm}$ ja $20\,\text{cm}$ välissä, hieman alle $18\,\text{cm}$: $x \approx 17{,}8\,\text{cm}$ (lukematarkkuus noin $\pm 0{,}3\,\text{cm}$). Sisäreuna on violetti, ja sen kohta on noin $10\,\text{cm}$.
-**Kaava:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ ja $N = \dfrac{1}{d}$ (viivoja pituusyksikköä kohti), josta $N = \dfrac{\sin\theta}{k\lambda}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \\ N &= \frac{1}{d} \\ &= \frac{\sin\theta}{k\lambda} \end{aligned}$$ Tässä $N$ on viivoja pituusyksikköä kohti.
 **Muunnokset:** $x = 17{,}8\,\text{cm} = 0{,}178\,\text{m}$, $700\,\text{nm} = 7{,}00 \cdot 10^{-7}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}178\,\text{m}}{1{,}00\,\text{m}} = 10{,}09^\circ$, $d = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{\sin 10{,}09^\circ} = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{0{,}1752} = 3{,}99 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3{,}99 \cdot 10^{-6}\,\text{m}} = 250$ viivaa millimetrillä
 **Vastaus:** $250$ viivaa millimetrillä. Vastauksessa on kolme merkitsevää numeroa, koska etäisyys $L$ ja luettu paikka on annettu kolmella.
