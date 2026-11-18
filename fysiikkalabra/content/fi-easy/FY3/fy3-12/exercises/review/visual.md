@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4d3b35f783160156
+CONTENT-HASH: ebc0dbaacb3c6385
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] exercises.json, window U-value task — same inline `aligned` inside the quoted solution ('so [block] .”'): dangling quote and stop; use display maths or an inline chain. (checked on the English render; the Selkeä suomi page uses the same structure)
+- none
 
 ## Checked
-- delta: rendered the changed task with its open solution at 360 px. Rendered in English; the fi-easy page was not separately opened. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
+- Delta: solutions.md only cut into paragraphs (md-paragraphs): the Vastaus note and two Mallivastaus blocks, words unchanged. No 360 px captures exist; judged at 390 px.
+- 1280 px (lesson's review/shots): fy3-12-open-exercises-L2-1280-7.png (solution open: Sijoitus, Vastaus, Järkevyys, Mallivastaus b) with two paragraphs; chains aligned) and fy3-12-open-tarkista-1280-1.png (answers open).
+- 390 px: fy3-12-example-390-2.png and fy3-12-stage-tarkista-390-1.png (cards and chains fit, no overflow).
+- Layout survived; blocks in order.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

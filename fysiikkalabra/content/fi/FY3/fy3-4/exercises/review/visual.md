@@ -1,14 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: c9dcaca37dffabf8
+VERDICT: PASS
+CONTENT-HASH: 30bab5b7eaa001b7
 
 ## Blocking
-- [Major] solutions.md 5-14 Järkevyys — `Voima vastaa $\begin{aligned}&3230\,\text{N}/9{,}81\,\text{m/s}^2 \\ &\approx 330\,\text{kg}\end{aligned}$:n massan painoa` is a two-row block inside a sentence with ':n' detached from its number (fy3-4-open-exercises-L2-1280-5 at 1280 px, and the same construct at 390 px) — breaks the sentence and the case ending — write it as one inline chain `$3230\,\text{N} : 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}$:n massan painoa` (the page rows long chains itself) or end the sentence before a display.
+(none)
 
 ## Polish
-- none
+- [Minor] fy3-4-L3-04 Sijoitus a) — "$\rho_i d_i$ -summa" has a space before the hyphen; write "$\rho_i d_i$-summa".
 
 ## Checked
-batch delta review: fy3-4-open-exercises-L2-1280-4 and -5 (5-14 Sijoitus, Vastaus, Järkevyys).
+- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-4 L3 captures 5 and 6 (L3-04 Sijoitus a)-c), Vastaus, Järkevyys).
+- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

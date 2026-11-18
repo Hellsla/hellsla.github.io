@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 01017249bf2618e7
+CONTENT-HASH: 1fcd163f97f4b029
+Mode: delta
+Round: 1
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] solutions.md, 'Reasonableness' of the pressure-cooker task — inline `aligned` inside a sentence gives a block centred in the line with the text beside it ('mass of [block], which'); write the conversion as one inline chain. (checked on the English render; the Selkeä suomi page uses the same structure)
+- [Minor] Only shared captures examined; no per-exercise check of fy3-4.
 
 ## Checked
-- delta: rendered the open solution at 360 px (conversions, substitution, reasonableness). Rendered in English; the fi-easy page was not separately opened. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
+- Delta formulas judged from the same shared rendering in fy3-1 and fy3-8 captures; no fy3-4-specific capture opened.
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

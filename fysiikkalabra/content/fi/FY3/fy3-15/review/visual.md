@@ -1,14 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: ccb18239df72263a
+VERDICT: PASS
+CONTENT-HASH: 0b286001548e8fad
 
 ## Blocking
-- [Major] inquiry.json kertaus (Pohdinta, 'Kertaa aiemmilta tunneilta'), feedback of the choices Q_2 = 1080 MJ and Q_2 = 520 MJ — an inline `$\begin{aligned}Q_2 &= Q_1 - W ...\end{aligned}$` inside a sentence is shown at 390 px as a three-row block beside 'Oikein:', with the closing full stop detached on the second row (k1.png: 'Oikein: / = 800 MJ − 280 MJ. / = 520 MJ'); it does not read as a calculation — use display form: `joten $$\begin{aligned}...\end{aligned}$$` and let the sentence continue in its own line, or leave the chain as one inline chain, which the page rows itself (NOTES §1).
 
 ## Polish
-- none
 
 ## Checked
-batch delta review: kertaus feedback rendered at 390 px (wrong and right choice). Figures unchanged by the diff, not reopened.
+- Round 1, delta (md-paragraphs, teacher-figure): lesson.md only, text cut into paragraphs, words unchanged, figures untouched.
+- 1280 px with solutions open: fy3-15-open-tarkista-1280-1.png (Pohdintatehtävä Vastaus: lead sentence, display chain, closing sentence as separate paragraphs; Käsitetehtävä feedback), fy3-15-open-exercises-1280-1.png (14-1 solution blocks, aligned rows, no clipping).
+- 390 px: fy3-15-example-390-1.png and fy3-15-stage-sovella-390-1.png (worked example stages 1-4: knowns and question as separate paragraphs, principle, display with three rows aligned, units conversions paragraph; no overflow, units LaTeX, decimal commas right). There are no 360 px captures.
+- Language: breaks fall at one idea each; no mechanical phrasing.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
