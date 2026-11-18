@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: d9bf88cc467f4846
-SCOPE: delta, one Kaava row of 11-5 (solutions.md), split with `&+`
 
 ## Blocking
 - none

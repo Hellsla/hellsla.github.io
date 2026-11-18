@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 1158a87cfa9aa918
-SCOPE: delta (Formula step rewrite)
 
 ## Blocking
 

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: ac618b954077e556
-SCOPE: delta (Kaava aligned blocks, solutions.md)
 
 ## Blocking
 

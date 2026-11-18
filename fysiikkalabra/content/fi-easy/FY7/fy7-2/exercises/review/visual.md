@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: d5a2748b4e5bd31f
-SCOPE: delta (Kaava blocks rewritten as aligned display blocks, fi-easy, round 1)
 
 ## Blocking
 (none)
