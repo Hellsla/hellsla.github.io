@@ -1,6 +1,7 @@
 VERDICT: PASS
 CONTENT-HASH: feb3d9ff810a6f9a
-SCOPE: delta (exercises.json L1-06 feedback, solutions.md L1-06 one sentence; wording only)
+SCOPE: delta wording from 780f2e62011fe6f0 base 22bd38f
+Delta: exercises.json L1-06 feedback and one solutions.md sentence; wording only.
 
 ## Blocking
 (none)

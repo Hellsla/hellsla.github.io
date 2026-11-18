@@ -1,6 +1,7 @@
 VERDICT: PASS
 CONTENT-HASH: feb3d9ff810a6f9a
-SCOPE: delta wording-only from b294f169a9ddc0c5 (feedback sentence in the charge-conservation task; solutions split into paragraphs in L1-06, the graph task, the zero-force task and the thread-pendulum task)
+SCOPE: delta caption-label,md-paragraphs,reflow,typography,wording from b294f169a9ddc0c5 base b5600a6
+Note: delta wording-only from b294f169a9ddc0c5 (feedback sentence in the charge-conservation task; solutions split into paragraphs in L1-06, the graph task, the zero-force task and the thread-pendulum task)
 
 ## Blocking
 (none)
