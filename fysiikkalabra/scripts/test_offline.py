@@ -10,6 +10,8 @@ The built site is served over http on localhost (a service worker needs https or
   - the read-aloud model (models/) and recordings (audio/) are never cached; the model's own cache survives
   - a new worker replaces the old one and removes the caches of an older schema, leaving fl-tts-supertonic3-v1
   - the emergency switch (templates/sw-kill.js published as sw.js) unregisters the worker and empties its caches
+  - installable site (17a PR 2): a manifest per language folder (start page, scope, three icons of the right pixel size) linked from every page;
+    navigator.storage.persist() is asked for once, after the first fl:attempt and not before, and never in Firefox (it would prompt)
   - the files are written: site/sw.js and site/offline.js at the root, every page of every language loads offline.js
 Exit status 1 on any failure."""
 import functools, http.server, pathlib, re, sys, threading
@@ -35,6 +37,23 @@ missing = [str(p.relative_to(SITE)) for p in SITE.rglob("*.html") if "vendor" no
            and "<main" in p.read_text(errors="ignore") and "offline.js" not in p.read_text(errors="ignore")
            and p.relative_to(SITE).parts[0] not in ("laskuri", "tyokalut")]   # the standalone tools are single files, not the site's pages
 expect("every page with the shared header or the lesson template loads offline.js", not missing, missing[:5])
+
+# manifest and icons (17a PR 2)
+import json, struct
+for d in [SITE] + [x for x in sorted(SITE.iterdir()) if x.is_dir() and (x / "index.html").is_file() and x.name not in ("vendor", "sims", "pics", "brand", "laskuri", "tyokalut")]:
+    try: m = json.loads((d / "manifest.webmanifest").read_text())
+    except (OSError, ValueError): m = None
+    nm = d.name if d != SITE else "root"
+    expect(f"{nm}: manifest.webmanifest exists with its front page as start_url and its folder as scope",
+           bool(m) and (d / m["start_url"]).is_file() and m["scope"] == "./" and m["display"] == "standalone" and m["name"] and m["short_name"], m)
+    ok = bool(m) and {(i["sizes"], i["purpose"]) for i in m["icons"]} == {("192x192", "any"), ("512x512", "any"), ("512x512", "maskable")}
+    for i in (m["icons"] if m else []):
+        f = (d / i["src"]).resolve(); w, h = struct.unpack(">II", f.read_bytes()[16:24]) if f.is_file() else (0, 0)
+        ok = ok and f"{w}x{h}" == i["sizes"]
+    expect(f"{nm}: the manifest's icons exist at their stated size, one of them maskable", ok)
+    pages = [x for x in d.glob("*.html") if "<main" in x.read_text(errors="ignore") and x.name != "404.html"]
+    nolink = [x.name for x in pages if 'rel="manifest" href="manifest.webmanifest"' not in x.read_text(errors="ignore")]
+    expect(f"{nm}: every page links the manifest", not nolink, nolink[:5])
 
 OVERRIDE = {}
 
@@ -133,6 +152,17 @@ with sync_playwright() as pw:
     until("navigator.serviceWorker.getRegistrations().then(a => a.length === 0)")
     names = pg.evaluate("caches.keys()")
     expect("the emergency switch unregisters the worker and empties its caches, leaving the read-aloud model's", names == ["fl-tts-supertonic3-v1"], names)
+    # persistent storage: asked after the first attempt, once, silently; Firefox is left out
+    for ua, want in (("Mozilla/5.0 (X11; Linux x86_64) Chrome/120.0 Safari/537.36", 1), ("Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0", 0)):
+        c2 = b.new_context(user_agent=ua); p2 = c2.new_page()
+        p2.add_init_script("window.__persist = 0; Object.defineProperty(navigator, 'storage', {value: {persisted: () => Promise.resolve(false), persist: () => { window.__persist++; return Promise.resolve(true); }}});")
+        p2.goto(URL + f"{lid}.html"); p2.wait_for_timeout(800)
+        before = p2.evaluate("window.__persist")
+        p2.evaluate("() => { const e = new CustomEvent('fl:attempt', {bubbles: true, detail: {id: 'x', kind: 'check', state: 'no'}}); document.body.dispatchEvent(e); document.body.dispatchEvent(e); }")
+        p2.wait_for_timeout(300)
+        expect(f"persist() is not asked before an attempt and {'once' if want else 'never'} after it ({'Chromium/Safari' if want else 'Firefox'})",
+               before == 0 and p2.evaluate("window.__persist") == want, (before, p2.evaluate("window.__persist")))
+        c2.close()
     b.close()
 srv.shutdown()
 print("test_offline: " + ("FAIL" if fails else "PASS")); sys.exit(1 if fails else 0)
