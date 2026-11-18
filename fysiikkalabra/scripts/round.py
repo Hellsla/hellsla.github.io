@@ -17,7 +17,7 @@ Runs, in this order, what /lesson, /exercises and /quality-audit used to run one
   5. review_packet.py for every needed review (with --batch: one review_packet.py --batch per role and language for
      the lesson diffs; an exercise set still gets its own packet).
 --finish instead regenerates the files of step 1, runs reviews.py verify (as CI does; a few minutes), prints each id's
-status in every language and rebuilds site/ (build.py --all, build.py).
+status in every language and rebuilds site/ (build.py --all, build.py) and palautus/ (palautus_tasks.py).
 
 Before anything else it checks the environment (work queue 0d): a shallow clone (a cloud session clones with limited
 history, and reviews.py scope then answers FULL for "not in git history") is deepened with git fetch --unshallow, and a
@@ -144,7 +144,7 @@ def main(a):
                 for lang in languages(lid, only):
                     _, out = run(["reviews.py", "status", lid, *lang_args(lang)], log)
                     say(f"[{lang}] " + (out[-1] if out else "?"))
-            for args in (["build.py", "--all"], ["build.py"]):
+            for args in (["build.py", "--all"], ["build.py"], ["palautus_tasks.py"]):   # palautus/ is generated from the built pages (8s)
                 rc, out = run(args, log)
                 warn = [l for l in out if "WARNING" in l]
                 say(f"{' '.join(args)}: " + ("ok" if rc == 0 else "FAIL " + (out[-1] if out else "")) + (f", {len(warn)} WARNING line(s) (in the log)" if warn else ""))

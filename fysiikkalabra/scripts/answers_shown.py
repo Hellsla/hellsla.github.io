@@ -35,7 +35,7 @@ def shown(block, label, answer, tolerance=0.02):
     """The $…$ of a solution's answer step that states the checked answer (rounded), or None: the first whose number
     agrees with `answer` within the tolerance or the rounding of its last digit (a value given as a·10^n in the
     exercise's unit agrees by its mantissa)."""
-    m = re.search(rf"\*\*{re.escape(label)}:\*\*(.*)", block)
+    m = re.search(rf"\*\*{re.escape(label)}:\*\*(.*?)(?=^\*\*[^*\n]+:\*\*|\Z)", block, re.S | re.M)   # the whole step: up to the next step's bold lead-in or the end
     if not m: return None
     tol = tolerance * abs(answer) if answer else tolerance
     for tex in re.findall(r"\$([^$]+)\$", m.group(1)):
@@ -69,6 +69,14 @@ def blocks(text):
     return out
 
 
+def test():
+    """A multi-line answer step is read to its end, and stops at the next step."""
+    blk = "**Vastaus:** a) $2{,}0\\,\\text{m}$\nb) $5{,}0\\,\\text{s}$\n**Järkevyys:** $7{,}0$\n"
+    assert shown(blk, "Vastaus", 5.0) == "5{,}0\\,\\text{s}", shown(blk, "Vastaus", 5.0)
+    assert shown(blk, "Vastaus", 2.0) is not None and shown(blk, "Vastaus", 7.0) is None
+    print("answers_shown self-test ok")
+
+
 def check():
     bad = n = 0
     for lang in i18n.languages():
@@ -87,4 +95,5 @@ def check():
 
 
 if __name__ == "__main__":
+    test()
     sys.exit(1 if check() else 0)
