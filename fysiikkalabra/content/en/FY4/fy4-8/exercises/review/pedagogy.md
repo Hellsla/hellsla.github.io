@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fda453fe872bb127
+CONTENT-HASH: 9cc204efa1efbd97
 
 ## Blocking
 None.
 
 ## Polish
-- solutions.md:295 (cushion/stopping task, Formula) — kinetic-energy-only equation $\tfrac12 m_\text{p}v^2 - Fs = 0$ is called "the work–energy principle", but the lesson and the rest of the set call $E_\text{k0}+W=E_\text{k}$ the "work principle"; use "work principle" there.
-- exercises.json:285 (v0² against s graph task, part b) — "Derive from the work–energy principle ..." uses only kinetic energy, and its solution now says "Work principle"; make the task say "work principle" too.
-- solutions.md:271 (energy-bars task, Principle) — "By the energy principle" is the old label; the Formula row below says "Work–energy principle". Use the same name.
-- Earlier polish still open: "sum" as a word in the snowboarder $s_\text{mean} = \text{sum}/6$.
+- solutions.md (energy-bars task, Principle) — "By the energy principle" is the old label; the Formula row says "Work–energy principle"; use the same name.
+- Earlier open polish: "sum" as a word in the snowboarder $s_\text{mean} = \text{sum}/6$; "work–energy principle" for the kinetic-energy-only equation in the cushion task and v0² graph task (should be "work principle").
 
 ## Checked
-- Round 2, delta (work queue 8g): label-only change; no number, answer, tolerance or task changed.
-- Fixed in solutions: $E_\text{k0}+W=E_\text{k}$ (braking distance, puck, v0² graph, net-force work, cushion, Principle in the final task) is "work principle"; the full equation with $E_\text{p}$ or $E_\text{mech}$ (crane, hill, car on the hill, mechanical-energy table, bars) is "work–energy principle". This matches the lesson's two named formulas.
-- Each changed line keeps its equation, signs ($W=-F_\mu s$) and result unchanged.
-- No unlabelled new text; the open items above are naming slips between two correct principles, not physics errors.
+- Round 3, delta (work queue 8g): three wording changes, no number, answer or tolerance changed.
+- Bounce task Formula now says "The decrease of the mechanical energy in the first bounce is $\Delta E = E_0 - E_1$": correct and positive, matches 0.240 J.
+- Energy-bars task: "so $W$ equals $(E_\text{p}+E_\text{k}) - (E_{\text{p}0}+E_{\text{k}0})$" splits the long inline formula; signs and result ($-15\,\text{J}$, $2.5\,\text{N}$) unchanged.
 - Captures not opened: text-only change.

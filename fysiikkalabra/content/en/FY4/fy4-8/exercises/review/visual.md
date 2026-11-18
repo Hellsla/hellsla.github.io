@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: fda453fe872bb127
+CONTENT-HASH: 9cc204efa1efbd97
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md, principle names — the same kinetic-only equation $E_{\text{k}0} + W = E_\text{k}$ is called "Work principle" in the Formula lines and the task about the obstacle, but "work–energy principle" at line 295 and in the 11-14 style Principle texts; the general form is "Work–energy principle". Choose one name per equation (the glossary's) for the whole set.
-- [Minor] solutions.md, bar-chart task Principle ("By the energy principle ...") still uses the old name while its Formula line now says "Work–energy principle".
-- [Minor] Round 1 polish (bounce task commas, "so ... so" stacks, snowboarder paragraph break) not changed; optional.
+- [Minor] solutions.md, sled bar-chart task Principle ("By the energy principle ...") still uses the old name while its Formula line says "Work-energy principle"; one name per equation would be tidier.
+- [Minor] Round 1 polish (bounce task commas, "so ... so" stacks) unchanged; optional.
 
 ## Checked
-- Round 2 delta (solutions.md, principle-name wording in about ten Formula lines). Opened content/en/FY4/fy4-8/review/shots/fy4-8-open-exercises-L2-1280-3.png (crane task with the new "Work–energy principle:" Formula) and fy4-8-open-exercises-L2-1280-5.png (puck and pendulum task, layout).
-- Labels now match the equation they introduce in the Formula lines; no layout change, no clipping. Hash unchanged at end.
+- Round 3 delta (solutions.md: bounce task "The decrease of the mechanical energy in the first bounce is"; sled task "so W equals ..."). Opened content/en/FY4/fy4-8/review/shots/fy4-8-open-exercises-L3-1280-8.png (bounce task Formula, Substitution, Answer) and fy4-8-open-exercises-L2-1280-12.png and -13.png (sled task Formula and Substitution).
+- Also opened fy4-8-open-exercises-L3-1280-6.png, -7.png and L2-1280-14.png, -15.png, -16.png (neighbouring tasks, layout).
+- Wording reads correctly, formulas split with "equals" do not clip or overlap, layout intact. Hash unchanged at end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

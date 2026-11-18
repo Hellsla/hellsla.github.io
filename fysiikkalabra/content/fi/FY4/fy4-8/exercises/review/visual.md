@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 64e7e82ffa22ebdf
+CONTENT-HASH: bf5ae79a8c20ac83
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-8 Kaava lines (11-1, 11-23 and others): the principle equation $E_{\text{p}0}+E_{\text{k}0}=E_\text{p}+E_\text{k}$ now runs inline inside a 3-4 line paragraph; readable, but the opening equation could be set apart in display like the later chains. Optional.
-- [Minor] fy4-8 L3-04 Kaava (a, b, c in one block) is the longest Kaava paragraph; legible, optional split by part.
+- [Minor] fy4-8 L3-05 (11-24) Sijoitus: part c) opens inline ("b) ... 63,9 %. c)") and the display block follows on the next line; readable, but c) could start on its own line.
+- [Minor] fy4-8 L2-09 (11-18) Kaava: the closing result F_mu = ... is set as display, but the preceding sentence repeats "on sama kuin" twice; wording only.
 
 ## Checked
-- Delta: opened fy4-8-open-exercises-1280-1.png (11-1 stone: Kaava, Sijoitus, Vastaus, Järkevyys), fy4-8-open-exercises-L2-1280-3.png (braking, hoist: work principle and energy principle Kaava), fy4-8-open-exercises-L3-1280-4.png (throw with $v_2=\sqrt{v_1^2+2gh}$), fy4-8-open-exercises-L3-1280-6.png (snowboarder a-c: Kaava end, Sijoitus rows, Vastaus), fy4-8-open-exercises-L2-1280-6.png (pendulum slope $k=2g$).
-- Subscripts $E_{\text{p}0}$, $E_{\text{k}0}$, fractions and aligned rows render cleanly; friction work signed $W=-F_\mu s$; nothing clipped. 1280 px captures; packet layout checks passed at all widths. Hash unchanged.
+- Delta: fy4-8-open-exercises-L3-1280-8.png (L3-05 Kaava "mekaanisen energian pieneneminen on ΔE = E_0 - E_1 eli mgh_0 - mgh_1 eli ΔE = mg(h_0 - h_1)", Sijoitus a-c, Vastaus, Järkevyys), fy4-8-open-exercises-L3-1280-7.png (task text and table, Periaate), fy4-8-open-exercises-L2-1280-12.png and -13.png (L2-09 friction Kaava "W on sama kuin ...", display F_mu fraction, Sijoitus, Vastaus), fy4-8-open-exercises-L2-1280-14.png and -15.png, -16.png (11-19 work principle chain, unchanged context).
+- Term now matches the quantity in L3-05; the split formulas read as short lines, nothing clipped, subscripts and fractions clean. 1280 px; packet layout checks passed at 360-1280. Hash unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

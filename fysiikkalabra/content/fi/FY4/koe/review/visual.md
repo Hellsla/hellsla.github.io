@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 75c95b152de5d86b
+CONTENT-HASH: 0935f577ae3e5f4c
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] k5 a) and c) Kaava: the chain `... \quad\Rightarrow\quad u = ...` is broken by the page so that the row ends "$\Rightarrow\ u$" and the next row starts "$= \dfrac{...}{...}$" (same in c, "$\Rightarrow\ F$"); readable but the dangling symbol looks like a continuation of the first equation. Same pattern in 11 Kaava lines of solutions.md; optional: write "joten" in words and put the solved form in its own inline formula.
-- [Minor] k2 a) and k6 b) graph y gridlines (round 1 note) still readable; optional extra tick.
+- [Minor] k4 a Kaava at 360 px: the chain "1/2 mv^2 - mu m g s = 0 => mu = v^2/(2gs)" wraps after "=> mu", leaving "mu" at the end of row one and "= v^2/2gs" alone on row two; readable and not clipped, but breaking before the arrow would read better.
+- [Minor] k7 d Kaava: the work-principle line and the a_huippu,2 relation sit in two separate display blocks with a bare "ja" between; fine, optional.
+- [Minor] Several Sijoitus fractions use stacked unit fractions (\tfrac{m}{s}); small but legible at 360 px.
 
 ## Checked
-- Round 2 fixes: opened FY4-koe-page-1280-25.png (k5 a Kaava starts from $p_\text{ennen}=p_\text{jälkeen}$, $p=mv$, then $m_\text{A}v_\text{A}=(m_\text{A}+m_\text{B})u$ and solved $u$; Sijoitus, Vastaus, Järkevyys), -26.png (k5 b), -27.png (k5 c Kaava starts from $I=\Delta p$, $I=F\Delta t$, $p=mv$; Sijoitus, Vastaus, d) start).
-- Context: FY4-koe-page-1280-30.png (task 6 with table, Osa 3 header), FY4-koe-top-390.png, FY4-koe-fig-1-390.png (velocity graphs A-D), FY4-koe-fig-4-390.png (tram graph, labels and area legible).
-- Units, decimal commas, overlines and spacing consistent in all opened parts. Hash unchanged.
+- Rendered the current FY4-koe preview at 360 px with every box open (scrollWidth 360, no horizontal overflow) and looked at the two reworked solutions: k4 a (Annettu, Periaate, Kaava starting from work principle with signed work W = -F_mu s = -mu m g s, Sijoitus rows, Vastaus, Järkevyys) and k7 d (Periaate, Kaava, Muunnokset, Sijoitus with two chains, Vastaus, Järkevyys): signed work present, every row inside its card, nothing clipped (the sticky stage bar overlaps the screenshot only).
+- Captures: contact-7.png (#73-#84: monivalinnat solutions, osa 2 task 2 with graph and rubric), FY4-koe-fig-2-390.png (four force diagrams A-D: colours and labels consistent, \overline notation, friction down the slope), FY4-koe-fig-7-390.png (a-t graph: axes with units, ticks, curve to 9 ms then zero).
+- Packet layout checks and the text packet show no red KaTeX. Hash unchanged. Not every one of the 176 captures was opened; contact sheets and the changed solutions were.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 5

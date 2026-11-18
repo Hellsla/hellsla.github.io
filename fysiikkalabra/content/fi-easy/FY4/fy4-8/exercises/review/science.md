@@ -1,22 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 856d6753f79d091c
-Mode: delta (round 2)
+CONTENT-HASH: 3b35764bb6843951
+Mode: delta (round 3)
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY4/fy4-8/exercises/solutions.md (L2-09 Kaava) — "Siis $-F_\mu s$ on sama kuin $(E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$" puts an equation in words. One formula, $-F_\mu s = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$, is clearer.
-- solutions.md:150, 276 — the earlier items (the significant figures of $h$; 1500 kg) are still open. They are not part of this change.
+- content/fi-easy/FY4/fy4-8/exercises/solutions.md (L2-09 Kaava) — the split now puts two equations in words: "Siis $W$ on sama kuin …" and "Siis $-F_\mu s$ on sama kuin …". The physics is right. If the reason is only the phone width, the shared layout (mathlayout) could wrap a single formula $W = (E_\text{p} + E_\text{k}) - (E_{\text{p}0} + E_{\text{k}0})$ instead, which reads more clearly.
+- solutions.md:150, 276 — the earlier items (the significant figures of $h$; 1500 kg) are still open. This change does not touch them.
 
 ## Checked
-- Hash 856d6753f79d091c at the start and the end. Only the Kaava lines of solutions.md and some paragraph splits changed. No number, answer or tolerance changed. The exercises.json change is presentation only.
-- Each Kaava now starts from its basic equation and then sets each term from the situation:
-  - energy conservation, $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$: L1-01, L1-02, L1-05, L1-06, L2-05, L2-08;
-  - the energy principle, with $W$: L1-08, L2-01, L2-02, L2-07, L2-09, L3-04;
-  - the work principle, $E_{\text{k}0} + W = E_\text{k}$: L1-04, L1-07, L1-09, L2-06.
-- Every resisting force has signed work: $W = -F_\mu s$, $W = -F_\text{vast} s$, $W = -F(L + s_\text{ka})$ and $W = -FL$. The stick's work is $+Fs$, along the motion. The signs are right.
-- L2-07 (radan A–D): the step now says $E_{\text{mek}0} + W = E_\text{mek}$, then $W = -F\Delta s$, then $F = -W/\Delta s$. The values 94, 107 and 157 N are unchanged.
-- L3-05: $r_n = mgh_{n+1}/(mgh_n) = h_{n+1}/h_n$, and $\Delta E = mg(h_0 - h_1)$. Both are right.
-- L2-10: only the paragraph splits changed, word for word the same.
-- The notation matches the brief's lesson ($E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$).
+- Hash 3b35764bb6843951 at the start and the end.
+- L3-05 Kaava: "mekaanisen energian pieneneminen on $\Delta E = E_0 - E_1$" is right. $E_0 > E_1$, so a positive $\Delta E$ is a decrease, and its sign matches the c) answer $0{,}240\,\text{J}$. The wording no longer calls a decrease a "muutos" with the opposite sign.
+- Recomputed c): $0{,}057 \cdot 9{,}81 \cdot (1{,}20 - 0{,}77) = 0{,}2404\,\text{J}$. This is unchanged.
+- L2-09: only the wording changed (formula → "on sama kuin"). The work principle, the signed work $W = -F_\mu s$ and $F_\mu = 15\,\text{J} / 6{,}0\,\text{m} = 2{,}5\,\text{N}$ are unchanged and right.
+- No number, answer, unit or tolerance changed.
 - Captures opened: none. I judged from the diff and the packet.

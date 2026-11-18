@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0f9fb56b0a5cdc15
+CONTENT-HASH: de64c6015046f816
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md ice-hockey Kaava — "Kappaleiden liike-energian pieneneminen muuttuu muuksi energiaksi" says a decrease turns into energy; better "Liike-energiasta osa muuttuu muuksi energiaksi: $\Delta E = E_\text{k,ennen} - E_\text{k,jälkeen}$ on liike-energian pieneneminen."
-2. Same Kaava — capital "Kappaleiden" after a semicolon (round 1 polish 1 still open) and "joten ... joten"; use a full stop.
-3. Round 1 polish 2 and 3 unchanged.
+1. solutions.md ice-hockey Kaava — "; Kappaleiden liike-energian pieneneminen ..." has a capital letter after a semicolon (still open from earlier rounds); use a full stop.
+2. Same Kaava — "joten ... joten ... joten" chain; vary with "eli" or a full stop.
 
 ## Checked
-- Round 2 fix verified: "pieneneminen" now names the quantity (kinetic energy decrease), not a loss; physically acceptable and matches the lesson.
-- Only one line changed; no number, symbol, answer or id changed; Sijoitus still gives $\Delta E = 717\,\text{J}$ from the same formula.
+- Only the last formula changed: "joten $\Delta E$ on sama kuin $\tfrac12 m_1 v_1^2 - \tfrac12 (m_1+m_2)v'^2$" replaces the equals-chain; mathematically identical, and it follows the pieneneminen definition on the same line.
+- Sijoitus unchanged and consistent: v' = 3,1875 m/s, ΔE = 717 J.
+- No number, symbol, answer or id changed; hash unchanged at end.
 - Captures: none opened (text-only delta).
