@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6fd5a9ee46fb3b5c
+CONTENT-HASH: 98b85659627fb4ea
 
 ## Blocking
+- none
 
 ## Polish
-retrieval now ties to the cyclist hook, no Ennusta answer disclosed; stage split in the worked example reads well; no figure changed.
+- none
 
 ## Checked
-batch delta review: 
+batch delta review: the "Etsi virhe" prompt now shows the wrong conversion as an aligned display block with the question last; numbers and the error (divided by 1000 instead of multiplied) unchanged and consistent with the choices and feedback.

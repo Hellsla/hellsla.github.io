@@ -177,7 +177,12 @@ $$.
 **Given:** foods of the table: porridge $250\,\text{g}$ ($300\,\text{kJ}$ per hundred grams), banana $120\,\text{g}$ ($400\,\text{kJ}$) and orange juice $200\,\text{g}$ ($190\,\text{kJ}$); energy used in walking $220\,\text{kJ}$ per kilometre
 **Find:** energy of the breakfast $E$ in megajoules and the corresponding walking distance $s$ in kilometres
 **Principle:** The energy of each food is obtained by multiplying the energy of a hundred grams by its mass divided by a hundred grams. The energies are added in the same unit. The walking distance is obtained by dividing the energy by the energy per kilometre, because every kilometre uses the same energy.
-**Formula:** $E_\text{food} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $E = E_\text{porridge} + E_\text{banana} + E_\text{juice}$ and $s = E : E_\text{km}$
+**Formula:** $E_\text{food} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
+\begin{aligned}
+E &= E_\text{porridge} + E_\text{banana} \\
+&+ E_\text{juice}
+\end{aligned}
+$$ and $s = E : E_\text{km}$
 **Conversions:** Calculate in kilojoules and convert at the end: $1\,\text{MJ} = 1000\,\text{kJ}$.
 **Substitution:** $E_\text{porridge} = 2.5 \cdot 300\,\text{kJ} = 750\,\text{kJ}$, $E_\text{banana} = 1.2 \cdot 400\,\text{kJ} = 480\,\text{kJ}$ and $E_\text{juice} = 2.0 \cdot 190\,\text{kJ} = 380\,\text{kJ}$. The sum is $1610\,\text{kJ} = 1.6\,\text{MJ}$, so $s = 1610\,\text{kJ} : 220\,\text{kJ/km} = 7.3\,\text{km}$.
 **Answer:** The walking distance is about $7.3\,\text{km}$ and the energy of the breakfast about $1.6\,\text{MJ}$, two significant figures as in the data.
@@ -187,7 +192,10 @@ $$.
 **Given:** breakfast $0.85\,\text{MJ}$, lunch $1200\,\text{kJ}$ and snack $450\,\text{kJ}$; the student's result $1650.85\,\text{kJ}$
 **Find:** the student's error and the correct energy $E$ in megajoules
 **Principle:** Energies are added only in the same unit. A prefix is a multiplier, so $0.85\,\text{MJ}$ and $1200\,\text{kJ}$ are not in the same unit, even though their numbers can be added together. The student added the numbers together and attached one unit to the sum.
-**Formula:** $E = E_\text{breakfast} + E_\text{lunch} + E_\text{snack}$
+**Formula:** $$\begin{aligned} E &= E_\text{breakfast} + E_\text{lunch} \\
+&+ E_\text{snack}
+\end{aligned}
+$$
 **Conversions:** Convert the kilojoules to megajoules: $1200\,\text{kJ} = 1200 : 1000\,\text{MJ} = 1.2\,\text{MJ}$ and $450\,\text{kJ} = 0.45\,\text{MJ}$.
 **Substitution:** $E = 0.85\,\text{MJ} + 1.2\,\text{MJ} + 0.45\,\text{MJ} = 2.5\,\text{MJ}$
 **Answer:** The correct energy is $2.5\,\text{MJ}$. The student's $1650.85\,\text{kJ}$ is only $1.65\,\text{MJ}$, so it is too small: the breakfast's $0.85\,\text{MJ}$ has turned in the student's calculation into $0.85\,\text{kJ}$, that is, a thousandth of the real value ($850\,\text{kJ}$).

@@ -4,7 +4,7 @@ Ruukkilabra ei kerää opiskelijoiden tietoja. Sivustolla ei ole palvelinta, jok
 
 ## Mitä selaimeesi tallentuu?
 
-Jotta työsi ei katoa, kun suljet sivun, Ruukkilabra tallentaa joitakin asioita vain tämän laitteen selaimeen: tehtävien ratkaisut ja vastaukset (editoriin kirjoitetut ratkaisut kaavoineen ja liitettyine kuvineen, numerovastaukset, valinnat ja kirjoitetut vastaukset), ennusteet ja mittaustulokset, itsearviot, tehdyiksi laskettujen tehtävien ajat, oppitunnin edistymisen, käsitekorttien etenemisen sekä ääneenluvun asetukset ja puhemallin. Kun tallennat ensimmäisen ratkaisun, sivusto pyytää selainta säilyttämään tiedot pysyvästi, jotta selain ei poista niitä itsestään levytilan käydessä vähiin.
+Jotta työsi ei katoa, kun suljet sivun, Ruukkilabra tallentaa joitakin asioita vain tämän laitteen selaimeen: tehtävien ratkaisut ja vastaukset (editoriin kirjoitetut ratkaisut kaavoineen ja liitettyine kuvineen, numerovastaukset, valinnat ja kirjoitetut vastaukset), ennusteet ja mittaustulokset, itsearviot, tehdyiksi laskettujen tehtävien ajat, oppitunnin edistymisen, käsitekorttien etenemisen sekä ääneenluvun asetukset ja puhemallin. Kun tallennat ensimmäisen ratkaisun, sivusto pyytää selainta säilyttämään tiedot pysyvästi, jotta selain ei poista niitä itsestään levytilan käydessä vähiin. Lisäksi selain tallentaa avaamasi sivut tiedostoineen tälle laitteelle, jotta ne avautuvat myös ilman verkkoyhteyttä.
 
 Ruukkilabra ei lähetä näitä tietoja automaattisesti opettajalle eikä muualle, eikä opettaja näe niitä selaimestasi.
 

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 220e08dbe292bd1b
+CONTENT-HASH: 0e09c62e2d91551c
 
 ## Blocking
 
 ## Polish
+- inquiry.json, firewood distractor feedback: the edit dropped the full stop after `$22\,\text{MJ/kg}$`, so two sentences now run together; restore the period.
 
 ## Checked
-- Delta review: hash 220e08dbe292bd1b at the start and the end; I judged the one changed line in lesson.md (Kosteus ja polttoaineen laatu); the rest is re-broken chains, teacher-approved figures and formula names (carried).
-- 16,2 MJ/kg is MAFY's LHV for "puu, kuiva" (docs/mafy-arvot.tsv, VERIFIED) and larger than the table's air-dry 15 MJ/kg, so "Kuivemmasta puusta saa enemmän energiaa" is right.
-- Same value and meaning as the Finnish version; no step or reason dropped.
-- No other 19 MJ/kg remains in lesson.md, inquiry.json or exit-ticket.json.
+batch delta review: distractor feedback recomputed (2200 kJ = 2.2 MJ, 100 g = 0.100 kg, 2.2 MJ / 0.100 kg = 22 MJ/kg > 15 MJ/kg); physics unchanged and still says why the option is wrong; lesson.md changes are teacher-approved figures and paragraph presentation only.
