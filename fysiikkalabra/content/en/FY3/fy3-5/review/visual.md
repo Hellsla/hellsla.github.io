@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3070f8cb00e437e5
+CONTENT-HASH: 315fdc66a6e43aa3
 
 ## Blocking
 
 ## Polish
-- [Minor] Etsi virhe (Esimerkit): the full stop after the display chain sits inside the chain (`160 J.`), fine; no change needed beyond keeping the option's "ja" + display block as is.
+- [Minor] Recap card, correct feedback — the source hand-splits the chain (`&= 90\,\text{N} \\ &\cdot 0.10\,\text{m}`), so at 390 px the row "· 0.10 m" stands alone; at 1280 px it joins up correctly. Write it as one inline chain and let mathlayout wrap it.
 
 ## Checked
-batch delta review (round 2): fy3-5 en, Esimerkit stage capture (fi) and my own render of the "Etsi virhe" task at 360 and 390 px with the answer option selected (no overflow, scrollWidth = viewport; prompt chain and the option's chain are aligned at "=", inside the card, readable), fig-row-1280; the re-broken chain unchanged in order.
+batch delta review: opened my own captures of the Pohdinta recap card with feedback open, correct option at 390 px and 1280 px, wrong option at 1280 px and 390 px; units are LaTeX, feedback is inside the card, nothing clipped. Shipped captures lacked the feedback-open state. Hash unchanged at the end.

@@ -117,13 +117,7 @@ Se on väärin, koska tuuli ei puhalla koko ajan, joten energia lasketaan keskit
 **Muunnokset:** $32\,\% = 0{,}32$. Lopuksi megawattitunnit gigawattitunneiksi: $70\,080\,\text{MWh} = 70{,}08 \cdot 1000\,\text{MWh} = 70{,}08\,\text{GWh}$.
 **Sijoitus:** $P_\text{ka} = 0{,}32 \cdot 25\,\text{MW} = 8{,}0\,\text{MW}$ ja $E = 8{,}0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70{,}08\,\text{GWh}$
 **Vastaus:** $70\,\text{GWh}$, kaksi merkitsevää numeroa kuten nimellistehossa $25\,\text{MW}$ ja osuudessa $32\,\%$.
-**Järkevyys:** Täydellä teholla puisto tuottaisi $$
-\begin{aligned}
-&25\,\text{MW} \cdot 8760\,\text{h} \\
-&= 219\,000\,\text{MWh} \\
-&\approx 220\,\text{GWh}
-\end{aligned}
-$$ ja noin kolmannes siitä on noin $70\,\text{GWh}$. Tulos on pienempi kuin nimellistehon mukainen energia, koska tuuli vaihtelee.
+**Järkevyys:** Täydellä teholla puisto tuottaisi $25\,\text{MW} \cdot 8760\,\text{h} = 219\,000\,\text{MWh} \approx 220\,\text{GWh}$, ja noin kolmannes siitä on noin $70\,\text{GWh}$. Tulos on pienempi kuin nimellistehon mukainen energia, koska tuuli vaihtelee.
 
 ## fy2-6-L2-02
 **Annettu:** energia $E = 14\,\text{TWh}$, teho $P = 1{,}6\,\text{GW}$
@@ -235,13 +229,7 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 \end{aligned}
 ```
 **Vastaus:** Oppilas ei ole oikeassa. Puisto B tuottaa eniten energiaa, koska sen nimellisteho on suurin, mutta se hyödyntää nimellistehoaan huonoiten ($29\,\%$). Virhe on sekoittaa vuosienergia ja nimellistehon hyödyntäminen: energia kasvaa nimellistehon mukana, joten osuus on laskettava jakamalla keskiteho nimellisteholla. Paras on puisto C, jonka keskiteho on $33\,\%$ nimellistehosta, kaksi merkitsevää numeroa kuten nimellistehoissa.
-**Järkevyys:** Jos puisto B toimisi koko vuoden nimellisteholla, se tuottaisi $$
-\begin{aligned}
-&60\,\text{MW} \cdot 8760\,\text{h} \\
-&= 525\,600\,\text{MWh} \\
-&\approx 526\,\text{GWh}
-\end{aligned}
-$$ ja $150 : 526 = 0{,}29$. Kaikki osuudet ovat alle yksi ja noin kolmasosan luokkaa, kuten tuulivoimalle on tyypillistä, koska tuuli vaihtelee.
+**Järkevyys:** Jos puisto B toimisi koko vuoden nimellisteholla, se tuottaisi $60\,\text{MW} \cdot 8760\,\text{h} = 525\,600\,\text{MWh} \approx 526\,\text{GWh}$, ja $150 : 526 = 0{,}29$. Kaikki osuudet ovat alle yksi ja noin kolmasosan luokkaa, kuten tuulivoimalle on tyypillistä, koska tuuli vaihtelee.
 
 ## fy2-6-L2-07
 **Annettu:** päästökertoimet kivihiili $820\,\text{g/kWh}$ ja tuulivoima $12\,\text{g/kWh}$, kaupungin sähkö $E = 2{,}0\,\text{TWh}$ vuodessa

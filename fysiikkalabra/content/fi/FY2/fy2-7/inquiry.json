@@ -250,7 +250,7 @@
     {
      "text": "Prosentti on vähennetty megawattitunteina, vaikka häviö $4\\,\\%$ on $20\\,\\text{MWh}$.",
      "correct": true,
-     "feedback": "Oikein. Häviö $4\\,\\%$ tarkoittaa neljää sadasosaa lähtevästä energiasta, $4 : 100 = 0{,}04$. Häviö on $$\n\\begin{aligned}\n&0{,}04 \\cdot 500\\,\\text{MWh} \\\\\n&= 20\\,\\text{MWh}\n\\end{aligned}\n$$ ja perille tulee $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. Arvion olisi voinut tehdä: kun $1\\,\\%$ on $5\\,\\text{MWh}$, neljä prosenttia on $20\\,\\text{MWh}$."
+     "feedback": "Oikein. Häviö $4\\,\\%$ tarkoittaa neljää sadasosaa lähtevästä energiasta, $4 : 100 = 0{,}04$. Häviö on $0{,}04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ ja perille tulee $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. Arvion olisi voinut tehdä: kun $1\\,\\%$ on $5\\,\\text{MWh}$, neljä prosenttia on $20\\,\\text{MWh}$."
     },
     {
      "text": "Häviö pitää laskea perille tulevasta energiasta eikä verkkoon lähtevästä energiasta.",

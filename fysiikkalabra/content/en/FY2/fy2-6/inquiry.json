@@ -86,7 +86,7 @@
         "hints": [
           "The average power is found by dividing the energy by time: $P = E : t$.",
           "First convert terawatt-hours to kilowatt-hours: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
-          "$$\n\\begin{aligned}\nP &= 20.2 \\cdot 10^{9}\\,\\text{kWh} \\\\\n&: 8760\\,\\text{h}\n\\end{aligned}\n$$ and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+          "$P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
         ],
         "mistakes": [
           {
@@ -361,7 +361,7 @@
           "feedback": "The result is correct in megawatt-hours. A gigawatt-hour is a thousand times a megawatt-hour: $8760\\,\\text{MWh} = 8.76 \\cdot 1000\\,\\text{MWh} = 8.76\\,\\text{GWh}$."
         }
       ],
-      "solution": "**Given:** average power $P = 1.0\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in gigawatt-hours\n\n**Principle:** The average power is the power at which the plant would produce the same energy steadily, so $E = P t$.\n\n**Formula:** $E = P t$\n\n**Conversions:** $1.0\\,\\text{MW} = 1.0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ and finally $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8.76 \\cdot 10^{6}\\,\\text{kWh} = 8.76\\,\\text{GWh}$\n\n**Answer:** $8.8\\,\\text{GWh}$, two significant figures like the average power $1.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $$\n\\begin{aligned}\n&1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} \\\\\n&= 9 \\cdot 1000\\,\\text{MWh} \\\\\n&= 9\\,\\text{GWh}\n\\end{aligned}\n$$ The annual energy of a single power plant is gigawatt-hours, not terawatt-hours, which fits the size of one power plant."
+      "solution": "**Given:** average power $P = 1.0\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in gigawatt-hours\n\n**Principle:** The average power is the power at which the plant would produce the same energy steadily, so $E = P t$.\n\n**Formula:** $E = P t$\n\n**Conversions:** $1.0\\,\\text{MW} = 1.0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ and finally $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8.76 \\cdot 10^{6}\\,\\text{kWh} = 8.76\\,\\text{GWh}$\n\n**Answer:** $8.8\\,\\text{GWh}$, two significant figures like the average power $1.0\\,\\text{MW}$.\n\n**Reasonableness:** Estimate: $1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} = 9 \\cdot 1000\\,\\text{MWh} = 9\\,\\text{GWh}$. The annual energy of a single power plant is gigawatt-hours, not terawatt-hours, which fits the size of one power plant."
     },
     {
       "id": "tarkistus-3",

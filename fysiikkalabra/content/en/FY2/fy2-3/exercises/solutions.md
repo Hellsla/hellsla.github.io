@@ -97,12 +97,7 @@
 **Conversions:** $P_1 - P_2 = 60\,\text{W} - 8.0\,\text{W} = 52\,\text{W} = 52 \cdot 10^{-3}\,\text{kW} = 0.052\,\text{kW}$ and $t = 4.0\,\text{h} \cdot 365 = 1460\,\text{h}$.
 **Substitution:** $\Delta E = 0.052\,\text{kW} \cdot 1460\,\text{h} = 75.92\,\text{kWh}$ and $\text{saving} = 75.92\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 15.18\,\text{€}$
 **Answer:** $15\,\text{€}$, two significant figures as in the power $8.0\,\text{W}$ and the time $4.0\,\text{h}$.
-**Reasonableness:** With rounded numbers $$
-\begin{aligned}
-&0.05\,\text{kW} \cdot 1500\,\text{h} \\
-&= 75\,\text{kWh}
-\end{aligned}
-$$ and $75 \cdot 0.20\,\text{€} = 15\,\text{€}$. An LED lamp costs a few euros in a shop, so a saving of about $15\,\text{€}$ a year pays back the lamp in less than a year. This is believable for a single lamp.
+**Reasonableness:** With rounded numbers $0.05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}$, and $75 \cdot 0.20\,\text{€} = 15\,\text{€}$. An LED lamp costs a few euros in a shop, so a saving of about $15\,\text{€}$ a year pays back the lamp in less than a year. This is believable for a single lamp.
 
 ## fy2-3-L3-02
 **Given:** energy $E = 3.0 \cdot 10^{3}\,\text{kWh}$, time $t = 8760\,\text{h}$
@@ -262,19 +257,9 @@ The assumptions that affect the result: the four measured periods are representa
 ## fy2-3-L2-08
 **Find:** how the power $P$ of the stove changes when the same energy $E$ is transformed in half of the time.
 **Principle:** The stove transforms energy steadily, so power is energy divided by time, $P = E : t$. The energy is the same both times, so only the time affects the power, and the time is in the denominator of the quotient.
-**Model answer:** The first time $$
-\begin{aligned}
-P_1 &= 6.0\,\text{kWh} : 3.0\,\text{h} \\
-&= 2.0\,\text{kW}
-\end{aligned}
-$$
+**Model answer:** The first time $P_1 = 6.0\,\text{kWh} : 3.0\,\text{h} = 2.0\,\text{kW}$.
 
-The second time $$
-\begin{aligned}
-P_2 &= 6.0\,\text{kWh} : 1.5\,\text{h} \\
-&= 4.0\,\text{kW}
-\end{aligned}
-$$
+The second time $P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}$.
 
 So the power doubles: $$
 \begin{aligned}

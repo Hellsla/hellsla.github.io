@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3070f8cb00e437e5
+CONTENT-HASH: f7a252b5de468526
 
 ## Blocking
 
 ## Polish
-- [Minor] Etsi virhe (Esimerkit): the full stop after the display chain sits inside the chain (`160 J.`), fine; no change needed beyond keeping the option's "ja" + display block as is.
+- [Minor] Pohdinta card, correct feedback — the chain wraps as "= 90 N / · 0,10 m / = 9,0 J" on a phone; a row starting with "·" is the shared mathlayout style, not a lesson fault.
 
 ## Checked
-batch delta review (round 2): fy3-5 fi-easy, Esimerkit stage capture (fi) and my own render of the "Etsi virhe" task at 360 and 390 px with the answer option selected (no overflow, scrollWidth = viewport; prompt chain and the option's chain are aligned at "=", inside the card, readable), fig-row-1280; the re-broken chain unchanged in order.
+batch delta review: Pohdinta card (Kertaa: työ) with feedback open at 390 px (correct and wrong answer) and stage-herata-390; "$90\,\text{N}$:n", "$0{,}10\,\text{m}$:n" case endings and the W = Fs chain render correctly, nothing clipped. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened; the layout is the same shared card as in the 1280 px captures I opened for fy3-1, 3, 7, 12.

@@ -86,7 +86,7 @@
         "hints": [
           "Keskiteho saadaan, kun energia jaetaan ajalla: $P = E : t$.",
           "Muuta ensin teravattitunnit kilowattitunneiksi: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
-          "$$\n\\begin{aligned}\nP &= 20{,}2 \\cdot 10^{9}\\,\\text{kWh} \\\\\n&: 8760\\,\\text{h}\n\\end{aligned}\n$$ ja lopuksi $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+          "$P = 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}$, ja lopuksi $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
         ],
         "mistakes": [
           {
@@ -361,7 +361,7 @@
           "feedback": "Tulos on oikea megawattitunteina. Gigawattitunti on tuhat kertaa megawattituntia suurempi: $8760\\,\\text{MWh} = 8{,}76 \\cdot 1000\\,\\text{MWh} = 8{,}76\\,\\text{GWh}$."
         }
       ],
-      "solution": "**Annettu:** keskiteho $P = 1{,}0\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ gigawattitunteina\n\n**Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian tasaisesti, joten $E = P t$.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $1{,}0\\,\\text{MW} = 1{,}0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ ja lopuksi $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8{,}76 \\cdot 10^{6}\\,\\text{kWh} = 8{,}76\\,\\text{GWh}$\n\n**Vastaus:** $8{,}8\\,\\text{GWh}$, kaksi merkitsevää numeroa kuten keskitehossa $1{,}0\\,\\text{MW}$.\n\n**Järkevyys:** Arvio: $$\n\\begin{aligned}\n&1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} \\\\\n&= 9 \\cdot 1000\\,\\text{MWh} \\\\\n&= 9\\,\\text{GWh}\n\\end{aligned}\n$$ Yhden voimalan vuosienergia on gigawattitunteja, ei teravattitunteja, mikä sopii yhden voimalan kokoon."
+      "solution": "**Annettu:** keskiteho $P = 1{,}0\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ gigawattitunteina\n\n**Periaate:** Keskiteho on teho, jolla voimala tuottaisi saman energian tasaisesti, joten $E = P t$.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $1{,}0\\,\\text{MW} = 1{,}0 \\cdot 1000\\,\\text{kW} = 1000\\,\\text{kW}$ ja lopuksi $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1000\\,\\text{kW} \\cdot 8760\\,\\text{h} = 8\\,760\\,000\\,\\text{kWh} = 8{,}76 \\cdot 10^{6}\\,\\text{kWh} = 8{,}76\\,\\text{GWh}$\n\n**Vastaus:** $8{,}8\\,\\text{GWh}$, kaksi merkitsevää numeroa kuten keskitehossa $1{,}0\\,\\text{MW}$.\n\n**Järkevyys:** Arvio: $1\\,\\text{MW} \\cdot 9000\\,\\text{h} = 9000\\,\\text{MWh} = 9 \\cdot 1000\\,\\text{MWh} = 9\\,\\text{GWh}$. Yhden voimalan vuosienergia on gigawattitunteja, ei teravattitunteja, mikä sopii yhden voimalan kokoon."
     },
     {
       "id": "tarkistus-3",

@@ -97,12 +97,7 @@
 **Muunnokset:** $P_1 - P_2 = 60\,\text{W} - 8{,}0\,\text{W} = 52\,\text{W} = 52 \cdot 10^{-3}\,\text{kW} = 0{,}052\,\text{kW}$ ja $t = 4{,}0\,\text{h} \cdot 365 = 1460\,\text{h}$.
 **Sijoitus:** $\Delta E = 0{,}052\,\text{kW} \cdot 1460\,\text{h} = 75{,}92\,\text{kWh}$ ja $\text{säästö} = 75{,}92\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 15{,}18\,\text{€}$
 **Vastaus:** $15\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $8{,}0\,\text{W}$ ja ajassa $4{,}0\,\text{h}$.
-**Järkevyys:** Pyöristetyillä luvuilla $$
-\begin{aligned}
-&0{,}05\,\text{kW} \cdot 1500\,\text{h} \\
-&= 75\,\text{kWh}
-\end{aligned}
-$$ ja $75 \cdot 0{,}20\,\text{€} = 15\,\text{€}$. LED-lamppu maksaa kaupassa muutaman euron, joten noin $15\,\text{€}$ vuosisäästö maksaa lampun takaisin alle vuodessa. Se on uskottava yhdelle lampulle.
+**Järkevyys:** Pyöristetyillä luvuilla $0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}$, ja $75 \cdot 0{,}20\,\text{€} = 15\,\text{€}$. LED-lamppu maksaa kaupassa muutaman euron, joten noin $15\,\text{€}$ vuosisäästö maksaa lampun takaisin alle vuodessa. Se on uskottava yhdelle lampulle.
 
 ## fy2-3-L3-02
 **Annettu:** energia $E = 3{,}0 \cdot 10^{3}\,\text{kWh}$, aika $t = 8760\,\text{h}$
@@ -262,19 +257,9 @@ Tulokseen vaikuttavat oletukset: mitattu neljä jaksoa on edustava, eikä huonee
 ## fy2-3-L2-08
 **Kysytty:** miten kiukaan teho $P$ muuttuu, kun sama energia $E$ muunnetaan puolessa ajasta.
 **Periaate:** Kiuas muuntaa energiaa tasaisesti, joten teho on energia jaettuna ajalla, $P = E : t$. Energia on molemmilla kerroilla sama, joten tehoon vaikuttaa vain aika, ja se on osamäärän nimittäjässä.
-**Mallivastaus:** Ensimmäisellä kerralla $$
-\begin{aligned}
-P_1 &= 6{,}0\,\text{kWh} : 3{,}0\,\text{h} \\
-&= 2{,}0\,\text{kW}
-\end{aligned}
-$$
+**Mallivastaus:** Ensimmäisellä kerralla $P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}$.
 
-Toisella kerralla $$
-\begin{aligned}
-P_2 &= 6{,}0\,\text{kWh} : 1{,}5\,\text{h} \\
-&= 4{,}0\,\text{kW}
-\end{aligned}
-$$
+Toisella kerralla $P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}$.
 
 Teho on siis kaksinkertainen: $$
 \begin{aligned}
