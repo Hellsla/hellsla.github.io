@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a16dce319a7fc6ed
+CONTENT-HASH: 2ffd1ae3f9d1f45d
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] Kertaa aiemmalta tunnilta, uusi palaute — "Pois siirtyvä energia siirtyy lämpönä ympäristöön" toistaa verbin; e.g. "Pois lämpönä ympäristöön siirtyvä energia kasvattaa ympäristön sisäenergiaa." (for science: confirm that this sentence is the intended point about the surroundings.)
 
 ## Checked
-- Round 1, delta (md-paragraphs, plus units set as LaTeX in the example problem, exit ticket and inquiry prompts): no 360 px captures exist; 390 px used.
-- 390 px: fy3-12-example-390-1.png (problem now has $120\,\text{m}^2$, $20{,}0\,\text{m}^2$ in LaTeX with thin space; new paragraph "Kysytään lämpötehoa P ja energiaa E vuorokaudessa." sits after the knowns; stage 3 display wraps as aligned rows; nothing clipped); fy3-12-stage-selita-390-2.png (U-value text, energy balance, greenhouse figure after its paragraph, no overflow).
-- 1280 px with solutions open: fy3-12-open-tarkista-1280-1.png (exit ticket "50 m²" now LaTeX, same type as the other numbers; answer rows aligned); fy3-12-open-exercises-1280-1.png (15-1 solution); fy3-12-open-exercises-L2-1280-1.png (15-10, Kaava text-display-text).
-- Hash same at start and end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+batch delta review (round 2): own captures of the Kertaa card (#pr-tasapaino) with the changed feedback of "Sisäenergia pysyy samana…" open at 390 px and 1280 px (/tmp/claude-0/s/fy3-12-390-0.png, fy3-12-1280-0.png, from preview/fy3-12.html): the reworded prompt ("eikä olomuoto muutu") and the feedback with inline $\Delta U = Q + W = -3{,}0\,\text{kJ}$ render cleanly, units with thin space, no clipping.

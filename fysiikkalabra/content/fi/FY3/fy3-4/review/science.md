@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d61ddef784685b68
+CONTENT-HASH: 157e9f9b32853727
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-Re-review after typesetting round. All changes in lesson.md, inquiry.json, exit-ticket.json are mechanical: numbers with units re-set as $N\,\text{unit}$ with decimal {,}, joined spans (1 Pa = 1 N/m², 1 kPa = 1000 Pa). Word-level diff shows no digit or unit changed. Spot-recomputed: 1000·9,81·3,0 m = 29 kPa; 29,4 kPa · 0,6 cm² ≈ 1,8 N; 8,0 m / 70 kPa gives 875 kg/m³ (unchanged); 101+49=150, 101+98=199 kPa; 30 m dam: ≈ 290 kPa, 290 kN per m². Case endings after maths ($…$:sta, :iin, :n, :ssä) grammatical. LaTeX valid (latex check ok), \cdot and \, per rules.
+batch delta review: the new retrieval choice `pr-paino` is recomputed: a 3000 kg water column weighs G = mg = 29 430 N ≈ 29 kN, the only correct option. The distractors are wrong and their feedback right: 3000 N confuses mass with weight, 306 N comes from m/g = 305,8 N, and 3000 kg gives a mass unit. The choice fits the hook's diver. It does not reveal Ennuste 1 (5 m → 10 m with p₀), Ennuste 2 (density +24 %) or Ennuste 3 (the hydrostatic paradox), because it never gives the pressure or ρgh. The new photo caption (a diver, exhaled bubbles rising) is correct and makes no safety claim. The worked-example and Järkevyys edits only split paragraphs: the numbers are unchanged (2,2 · p₀, ≈ 220 kPa, ≈ 180 kg). The exit ticket's change is presentation only. lesson-answers.py agrees with my own values.

@@ -42,5 +42,8 @@ a["inq-predN"] = 200 / 100
 # check-c2: rigid vessel heated from 20 °C to 40 °C: p2/p1 = T2/T1 = 313,15 / 293,15 = 1,068 -> about 7 %
 a["inq-c2-suhde"] = K(40) / K(20)                         # 1,068
 a["inq-c2-prosentti"] = (K(40) / K(20) - 1) * 100         # 6,8 % (mistakes: 100 % doubling, 20 % from the 20 degrees)
+# kertaus: helium balloon 3,0 l at 100 kPa squeezed to 2,0 l (Boyle)
+a["kertaus-p2"] = 100 * 3.0 / 2.0                    # 150 kPa (mistakes: 67 kPa inverted, 200 kPa)
+a["kertaus-kaanteinen"] = 100 * 2.0 / 3.0
 
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

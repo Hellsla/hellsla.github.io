@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 55b4c2b210987f0d
+CONTENT-HASH: e63148ee36441aa8
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Pohdinta retrieval (spring stretch, factor 3, "Tarvitset samaa päättelyä tällä tunnilla") does not state that weight is proportional to mass, so it does not give away Ennuste 1. It does lean on it, though: its prompt says the meter's spring is linear, which rules out Ennuste 1's "jousi jäykistyy" distractor, and its 5,5 cm feedback ("samalla kertoimella, eivät saman verran") answers the "+20 N" distractor. You could use a factor other than 3, or leave the meter out of the retrieval.
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): worked example mass now 1,20·10² kg: G = 1177,2 N ≈ 1,18 kN and 445,2 N ≈ 445 N recomputed, three significant figures justified by m and g; reasonableness sentence (1,18 kN) consistent with the unchanged 120 kg estimate. Selkokieli text carries the same meaning as fi.
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: new herata retrieval choice (4,5 cm correct, 5,5 / 6,0 / 3,0 cm distractors recomputed, each feedback names the right error, one correct option). The Hooke-type proportionality is given in the prompt and is a fair FY1 retrieval (C). I checked it against Ennuste 1–2 for a revealed answer (none). lesson-answers.py agrees. lesson.md changes are presentation and approved formula names only.

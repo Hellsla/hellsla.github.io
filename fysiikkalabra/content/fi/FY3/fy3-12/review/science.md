@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 337e48e6aa0cc5a4
+CONTENT-HASH: 2ffd1ae3f9d1f45d
 
 ## Blocking
-- none
 
 ## Polish
-- content/fi/FY3/fy3-12/lesson.md:155, 225, 233, 266 — the worked example and the U-value paragraph still say "lämpö johtuu" / "läpi johtuu teho" for the same $P = UA\Delta T$. That is a fair simplification (C), because conduction dominates in an insulated wall. To match the new wording, "siirtyy" could replace it there as well (the same holds for en and fi-easy if they have the same lines).
+- lesson-answers.py defines g = 9.81 but never uses it. Remove it.
 
 ## Checked
-- Hash 337e48e6aa0cc5a4 at the start and at the end.
-- The diff changes only one word, "johtuva" to "siirtyvä", in the Kaava section and the Tiivistelmä. No numbers or symbols changed.
-- The physics is better now. A U-value is a combined thermal transmittance: it includes surface convection, radiation, and conduction and convection in window gaps. So "siirtyvä" is more accurate than "johtuva".
-- It agrees with the glossary's U-arvo definition ("lämpötehoa siirtyy neliömetrin läpi") and with the paragraph at line 155.
-- The condition "Kaava pätee, kun lämpötilat … pysyvät vakioina" stays next to the formula.
-- The en ("conducted" to "transferred") and fi-easy diffs are the same change in the same two places.
+batch delta review: the Kertaa ΔU = Q + W choice changed to a ground layer that gives off 4,0 kJ as heat and receives 1,0 kJ. I recomputed ΔU = 1,0 − 4,0 + 0 = −3,0 kJ. The prompt now states W = 0 and "eikä olomuoto muutu", so a falling temperature follows; without that, freezing could hold the layer at 0 °C. Exactly one option is correct (−3,0 kJ, temperature falls). The other three feedbacks are right. "Energy is conserved" is answered with the layer's own change, and the energy "siirtyy lämpönä ympäristöön ja kasvattaa sen sisäenergiaa", which follows the guardrail that a body has internal energy, not heat. The −4,0 kJ option misses the heat received, and the +3,0 kJ option has the sign wrong. The edits to the exit ticket, the Etsi virhe and fridge prompts and the example's knowns only add LaTeX units and split one paragraph, and their numbers are unchanged. I recomputed them: exit ticket 0,20 · 50 · 30 = 300 W, window 1,0 · 1,5 · 30 = 45 W, fridge 0,30 · 4,0 · 16 W · 24 h = 0,461 kWh (stored 0,461). The new lesson-answers.py gives −3,0.

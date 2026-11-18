@@ -22,25 +22,25 @@
       "id": "pr-tasapaino",
       "stage": "herata",
       "type": "choice",
-      "title": "Review from the previous lesson",
-      "prompt": "In chapter *Internal energy, heat and conservation of energy*, the change in internal energy was written as $\\Delta U = Q + W$. Every minute, $600\\,\\text{J}$ of heat transfers from the stove to the water in a pan, and every minute $600\\,\\text{J}$ of heat transfers from the water to the surroundings. No work is done. What happens to the internal energy and the temperature of the water?",
+      "title": "Recap from an earlier lesson",
+      "prompt": "In the lesson *Internal energy, heat and conservation of energy* the change in internal energy was written as $\\Delta U = Q + W$. On a winter night a layer of the ground surface gives $4.0\\,\\text{kJ}$ of heat to its surroundings and at the same time receives $1.0\\,\\text{kJ}$ of heat from them. No work is done, and there is no change of state. What happens to the internal energy and the temperature of the layer?",
       "choices": [
         {
-          "text": "The internal energy increases, because heat keeps coming into the water.",
-          "feedback": "Only the net transfer changes the internal energy. $600\\,\\text{J}$ comes into the water and $600\\,\\text{J}$ leaves it every minute, so $Q = 600\\,\\text{J} - 600\\,\\text{J} = 0$ and $\\Delta U = 0$."
+          "text": "The internal energy stays the same because energy is conserved, and the temperature stays the same.",
+          "feedback": "Energy is conserved, but the layer gives away more than it receives, so its own internal energy decreases. The energy that leaves is transferred as heat to the surroundings and increases their internal energy. The change of the layer itself is $\\Delta U = Q + W = -3.0\\,\\text{kJ}$."
         },
         {
-          "text": "The internal energy and the temperature stay constant.",
+          "text": "The internal energy decreases by $3.0\\,\\text{kJ}$ and the temperature falls.",
           "correct": true,
-          "feedback": "Correct. In a minute $Q = +600\\,\\text{J} - 600\\,\\text{J} = 0$ and $W = 0$, so $\\Delta U = Q + W = 0$. When the energy coming in and the energy going out are equal, the temperature does not change."
+          "feedback": "Correct: $$\\begin{aligned} \\Delta U &= Q + W \\\\ &= 1.0\\,\\text{kJ} - 4.0\\,\\text{kJ} + 0 \\\\ &= -3.0\\,\\text{kJ} \\end{aligned}$$. Net energy leaves the layer, so its internal energy decreases and its temperature falls."
         },
         {
-          "text": "The internal energy decreases, because heat keeps leaving the water.",
-          "feedback": "The heat leaving would decrease the internal energy only if it were not replaced. Here as much comes into the water as leaves it, so $\\Delta U = 0$."
+          "text": "The internal energy decreases by $4.0\\,\\text{kJ}$ and the temperature falls.",
+          "feedback": "You took into account only the heat given away. The layer also receives $1.0\\,\\text{kJ}$ of heat, so the net change is $$\\begin{aligned} Q &= 1.0\\,\\text{kJ} - 4.0\\,\\text{kJ} \\\\ &= -3.0\\,\\text{kJ} \\end{aligned}$$."
         },
         {
-          "text": "You cannot tell without the temperature of the water.",
-          "feedback": "The first law is enough: $\\Delta U = Q + W$, and here $Q = 0$ and $W = 0$ every minute. You do not need the temperature to decide whether the internal energy changes."
+          "text": "The internal energy increases by $3.0\\,\\text{kJ}$ and the temperature rises.",
+          "feedback": "The sign went wrong. The heat given away is negative ($-4.0\\,\\text{kJ}$) and the heat received is positive ($+1.0\\,\\text{kJ}$), so $\\Delta U = -3.0\\,\\text{kJ}$: the internal energy decreases."
         }
       ],
       "optional": true

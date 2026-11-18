@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ca261fda071e6e92
+CONTENT-HASH: bec22c4ab3c51162
 ## Blocking
-
 ## Polish
-
 ## Checked
-batch delta review: decimal comma changed to decimal point in English numbers (tasks and worked example); no remaining {,} in the lesson files, so the notation is consistent; meaning, answers and solutions unaffected.
+batch delta review: "no change of state" removes an ambiguity about temperature; the feedback now says the lost energy is transferred as heat and raises the surroundings' internal energy, in line with the house rule on energy and heat, and gives the layer's own $\Delta U$.

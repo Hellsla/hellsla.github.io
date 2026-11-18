@@ -21,21 +21,21 @@
       "id": "pr-lampo",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: lämpömäärä",
-      "prompt": "Kattilassa on $0{,}50\\,\\text{kg}$ vettä, jonka lämpötila on $0\\,{}^\\circ\\text{C}$. Kuinka suuri lämpömäärä tarvitaan, jotta vesi lämpenee $100\\,{}^\\circ\\text{C}$:seen? Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
+      "title": "Kertaa: lämpömäärä ja teho",
+      "prompt": "Kattilassa on $0{,}40\\,\\text{kg}$ vettä. Levy antaa vedelle tehon $800\\,\\text{W}$, ja kaikki energia menee veteen. Kuinka kauan kestää, ennen kuin vesi on lämmennyt $10\\,\\text{K}$? Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.",
       "choices": [
         {
-          "text": "noin $2{,}1\\,\\text{kJ}$",
-          "feedback": "Tämä on lämpömäärä vain yhden kelvinin lämpenemiseen. Lämpötilan muutos on $\\Delta T = 100\\,\\text{K}$. Siksi $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
+          "text": "$0{,}048\\,\\text{s}$",
+          "feedback": "Jaoit tehon lämpömäärällä. Koska $Q = Pt$, aika on $t = Q/P$, ei $P/Q$. Tulos on noin $21\\,\\text{s}$."
         },
         {
-          "text": "noin $210\\,\\text{kJ}$",
+          "text": "noin $21\\,\\text{s}$",
           "correct": true,
-          "feedback": "Oikein: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}50\\,\\text{kg} \\cdot 100\\,\\text{K} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$. Voit verrata tätä lukua tämän tunnin olomuodon muutoksiin."
+          "feedback": "Oikein: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190\\,\\text{J/(kg}\\cdot\\text{K)} \\\\ &\\cdot 0{,}40\\,\\text{kg} \\cdot 10\\,\\text{K} \\\\ &= 16\\,760\\,\\text{J} \\end{aligned}$$ Aika saadaan tehosta: $$\\begin{aligned} t &= \\frac{Q}{P} \\\\ &= \\frac{16\\,760\\,\\text{J}}{800\\,\\text{W}} \\\\ &\\approx 21\\,\\text{s} \\end{aligned}$$."
         },
         {
-          "text": "noin $419\\,\\text{kJ}$",
-          "feedback": "Massa jäi pois. Ominaislämpökapasiteetti kertoo lämpömäärän *kilogrammaa* kohti. Siksi se kerrotaan massalla: $$\\begin{aligned} Q &= cm\\Delta T \\\\ &= 4190 \\cdot 0{,}50 \\cdot 100\\,\\text{J} \\\\ &\\approx 210\\,\\text{kJ} \\end{aligned}$$."
+          "text": "noin $17\\,\\text{kJ}$",
+          "feedback": "Laskit veden lämmittämiseen tarvittavan lämpömäärän, mutta kysyttiin aikaa. Levy antaa $800\\,\\text{J}$ joka sekunti. Siksi $16\\,760\\,\\text{J}$ kestää $t = Q/P \\approx 21\\,\\text{s}$."
         }
       ],
       "optional": true

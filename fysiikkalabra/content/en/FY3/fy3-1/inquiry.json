@@ -22,25 +22,25 @@
       "id": "pr-verrannollisuus",
       "stage": "herata",
       "type": "choice",
-      "title": "Revision from FY1: direct proportionality",
-      "prompt": "A cyclist rides at a constant speed and travels $2.0\\,\\text{km}$ in 6.0 minutes. How far does the cyclist ride at the same speed in 18 minutes?",
+      "title": "Recap from FY1: direct proportionality",
+      "prompt": "The stretch of a force meter's spring is directly proportional to the force pulling it. The spring stretches $1.5\\,\\text{cm}$ when an object of weight $2.0\\,\\text{N}$ is hung from it. How far does it stretch when the object's weight is $6.0\\,\\text{N}$?",
       "choices": [
         {
-          "text": "$6.0\\,\\text{km}$",
+          "text": "$4.5\\,\\text{cm}$",
           "correct": true,
-          "feedback": "Correct. In uniform motion, distance is directly proportional to time, $s = vt$: three times the time, three times the distance, $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$. You need the same reasoning in this lesson with the spring and weight."
+          "feedback": "Correct. The stretch is directly proportional to the force: three times the force, three times the stretch, $3 \\cdot 1.5\\,\\text{cm} = 4.5\\,\\text{cm}$. You need the same reasoning in this lesson."
         },
         {
-          "text": "$14\\,\\text{km}$",
-          "feedback": "You added the difference in times ($12\\,\\text{min}$) to the distance. In direct proportionality the quantities change by the same *ratio*, not by the same amount: the time triples, so the distance triples too, $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$."
+          "text": "$5.5\\,\\text{cm}$",
+          "feedback": "You added the difference of the forces ($4.0\\,\\text{N}$) to the stretch. In direct proportionality the quantities change by the same *ratio*, not by the same amount: the force triples, so the stretch triples, $3 \\cdot 1.5\\,\\text{cm} = 4.5\\,\\text{cm}$."
         },
         {
-          "text": "$18\\,\\text{km}$",
-          "feedback": "The distance in kilometres is not the same number as the time in minutes. The speed is $2.0\\,\\text{km} / 6.0\\,\\text{min}$, that is, one third of a kilometre per minute; in 18 minutes the distance is $6.0\\,\\text{km}$."
+          "text": "$6.0\\,\\text{cm}$",
+          "feedback": "The stretch in centimetres is not the same number as the force in newtons. The spring stretches $1.5\\,\\text{cm}$ under a force of two newtons, so under six newtons the stretch is three times as large, $4.5\\,\\text{cm}$."
         },
         {
-          "text": "$4.0\\,\\text{km}$",
-          "feedback": "The time grows from 6 minutes to 18 minutes, that is, it triples, not doubles. Multiply the distance by the same number: $3 \\cdot 2.0\\,\\text{km} = 6.0\\,\\text{km}$."
+          "text": "$3.0\\,\\text{cm}$",
+          "feedback": "The force grows from $2.0\\,\\text{N}$ to $6.0\\,\\text{N}$, which is three times as large, not two. Multiply the stretch by the same number: $3 \\cdot 1.5\\,\\text{cm} = 4.5\\,\\text{cm}$."
         }
       ],
       "optional": true

@@ -21,25 +21,25 @@
       "id": "pr-mikromalli",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: lämpötilan mikromalli",
-      "prompt": "Luvussa *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila* kaasun lämpötilaa kuvattiin mikromallilla. Mitä kaasun hiukkasille tapahtuu, kun kaasun lämpötila nousee?",
+      "title": "Kertaa: työ",
+      "prompt": "Pyörän pumpun mäntää painetaan alas $90\\,\\text{N}$:n voimalla $0{,}10\\,\\text{m}$:n matka. Voima on samansuuntainen kuin liike. Kuinka suuri on voiman tekemä työ?",
       "choices": [
         {
-          "text": "Hiukkaset laajenevat ja vievät enemmän tilaa.",
-          "feedback": "Mikromallissa hiukkasten koko ei muutu lämpötilan mukana. Lämpötila kertoo hiukkasten liikkeestä. Se kertoo hiukkasten keskimääräisestä liike-energiasta."
+          "text": "$900\\,\\text{J}$",
+          "feedback": "Jaoit voiman matkalla. Työ on voima *kertaa* matka: $W = Fs = 9{,}0\\,\\text{J}$."
         },
         {
-          "text": "Hiukkasten keskimääräinen liike-energia kasvaa.",
+          "text": "$9{,}0\\,\\text{J}$",
           "correct": true,
-          "feedback": "Oikein: mikromallin mukaan lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Korkeampi lämpötila tarkoittaa nopeammin liikkuvia hiukkasia."
+          "feedback": "Oikein: $$\\begin{aligned} W &= Fs \\\\ &= 90\\,\\text{N} \\\\ &\\cdot 0{,}10\\,\\text{m} \\\\ &= 9{,}0\\,\\text{J} \\end{aligned}$$. Voima ja liike ovat samansuuntaiset, joten työ on voiman ja matkan tulo."
         },
         {
-          "text": "Kaasuun tulee lisää hiukkasia.",
-          "feedback": "Aineen määrä on oma tilanmuuttujansa. Lämpötila voi nousta, vaikka hiukkasten määrä pysyy samana. Silloin samat hiukkaset liikkuvat keskimäärin nopeammin."
+          "text": "$90\\,\\text{J}$",
+          "feedback": "Tämä on voiman lukuarvo, ei työ. Kerro voima matkalla: $W = Fs = 9{,}0\\,\\text{J}$."
         },
         {
-          "text": "Jokainen hiukkanen muuttuu itse kuumemmaksi.",
-          "feedback": "Yksittäisellä hiukkasella ei ole lämpötilaa. Lämpötila kuvaa suuren hiukkasjoukon keskimääräistä liike-energiaa."
+          "text": "$90{,}1\\,\\text{J}$",
+          "feedback": "Laskit voiman ja matkan luvut yhteen. Työ on voiman ja matkan *tulo*: $W = Fs = 9{,}0\\,\\text{J}$."
         }
       ],
       "optional": true

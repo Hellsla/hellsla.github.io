@@ -22,25 +22,25 @@
       "id": "pr-paino",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the weight of water",
-      "prompt": "A cubic metre of water (density $1000\\,\\text{kg/m}^3$) has a mass of $1000\\,\\text{kg}$. What is the weight $G = mg$ of this amount of water?",
+      "title": "Recap: weight of water",
+      "prompt": "Above a diver there is a column of water with a mass of $3000\\,\\text{kg}$. How large is the weight $G = mg$ of this column of water?",
       "choices": [
         {
-          "text": "$1000\\,\\text{N}$",
-          "feedback": "You mixed up mass and weight. Weight is a force, and you get it by multiplying the mass by the acceleration of free fall: $$\\begin{aligned} G &= mg \\\\ &= 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 9810\\,\\text{N} \\end{aligned}$$."
+          "text": "$3000\\,\\text{N}$",
+          "feedback": "Mass and weight got mixed up. Weight is a force, and it is obtained by multiplying the mass by the acceleration of free fall: $$\\begin{aligned} G &= mg \\\\ &= 3000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 29\\,430\\,\\text{N} \\end{aligned}$$."
         },
         {
-          "text": "about $9.8\\,\\text{kN}$",
+          "text": "about $29\\,\\text{kN}$",
           "correct": true,
-          "feedback": "Correct: $$\\begin{aligned} G &= mg \\\\ &= 1000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 9810\\,\\text{N} \\\\ &\\approx 9.8\\,\\text{kN} \\end{aligned}$$. You need this weight of a column of water in this lesson."
+          "feedback": "Correct: $$\\begin{aligned} G &= mg \\\\ &= 3000\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 29\\,430\\,\\text{N} \\\\ &\\approx 29\\,\\text{kN} \\end{aligned}$$. You need the weight of a column of water in this lesson."
         },
         {
-          "text": "$102\\,\\text{N}$",
-          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs $9.81\\,\\text{N}$ at the Earth's surface, so $1000\\,\\text{kg}$ weighs $9810\\,\\text{N}$."
+          "text": "$306\\,\\text{N}$",
+          "feedback": "You divided the mass by the acceleration of free fall. Weight is mass *times* $g$: every kilogram weighs $9.81\\,\\text{N}$ at the surface of the Earth, so $3000\\,\\text{kg}$ weighs $29\\,430\\,\\text{N}$."
         },
         {
-          "text": "$1000\\,\\text{kg}$",
-          "feedback": "The kilogram is the unit of mass. Weight is a force, and the unit of force is the newton: $G = mg = 9810\\,\\text{N}$."
+          "text": "$3000\\,\\text{kg}$",
+          "feedback": "The kilogram is a unit of mass. Weight is a force, and the unit of force is the newton: $G = mg \\approx 29\\,\\text{kN}$."
         }
       ],
       "optional": true
