@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: aae9dd26b4f53cb2
+CONTENT-HASH: 185e6302bbcff16e
 
 ## Blocking
 
 ## Polish
-- (none)
 
 ## Checked
-batch delta review: retrieval rewritten for a cyclist: all three options checked in context, one correct (kinetic energy mainly to lämpöenergia in brakes, tyres and road, total conserved), distractor feedback right; worked example's knowns/question split only, numbers unchanged.
+batch delta review: the "Find the error" prompt's chain only moved into an aligned display block; same numbers, units and the same deliberate error (dividing by 1000 instead of multiplying, 2.5 kJ = 2500 J); choices and feedback unchanged, exactly one correct option remains.
