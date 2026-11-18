@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bdc81a30bee53f41
-SCOPE: delta added-exercise from 9b35050b83c355e9 base 110ed2029320
+CONTENT-HASH: 7e098a62279429a4
+SCOPE: delta (numbers) from bdc81a30bee53f41, round 2
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-16/hubble-t (L2-09, L3-06) — the x-axis tick labels 100, 150, 200, 250, 300 sit close together at the phone-width capture — drop to the ticks 0, 100, 200, 300 or narrow the digits, if the figure is next opened.
-- [Minor] L3-06 solution, Reasonableness — a display equation splits the sentence ("Check by multiplying:" ... "the same as 0.10 c") — put the check and its remark in one inline chain or end the sentence before the block.
-- [Minor] L2-09 solution, Answer — the answer chip shows 1.47 · 10^2 Mpc while the text says "About 147 Mpc"; fine, but one form would read more evenly.
+- [Minor] L3-06 solution, Reasonableness — the display equation still splits the sentence ("Check by multiplying:" / "the same as 0.10 c"); put the check and remark in one inline chain or end the sentence before the block.
+- [Minor] hubble-t (L2-09, L3-06) — x-axis ticks 100, 150, 200, 250, 300 are close together at phone width; use 0, 100, 200, 300 if the figure is next opened.
+- [Minor] L3-06 Answer — "Two significant figures in b)" sits in one paragraph with the c) text and the closing remark on separate lines; a short gap before c) would read more evenly.
 
 ## Checked
-- Opened open-exercises-L2-1280-11 (L2-09 task text and the figure start), -12 (figure, answer field, solution up to Formula) and -13 (substitution, answer, reasonableness).
-- Opened open-exercises-L3-1280-8 (L3-06 task text, figure, answer field), -9 (solution up to substitution) and -10 (answer, c, reasonableness).
-- Both tasks: units upright with thin space, aligned equals signs in the chains, fractions readable, answer set apart, the figure is the existing hubble-t with its axes, units and grid labelled; its description gives the same information and does not give the answers away.
-- The set reads as one: same section headings and layout as the neighbouring exercises. Did not open a 360 px capture (none of these exercises exists in the packet at that width).
+- Opened (in content/en/FY8/fy8-16/review/shots/) open-exercises-L3-1280-8 (L3-06 task, figure, answer field), -9 (solution up to substitution) and -10 (changed Answer, the z < 0.1 remark, Reasonableness).
+- The changed text renders cleanly: units upright with thin space, 0.10 c and z < 0.1 in KaTeX, answer chip 4.2 · 10^2 Mpc matches the text, the sig-fig explanation is clear and consistent with the data.
+- L2-09 captures not reopened: the diff touches only the L3-06 solution text; the figure is unchanged.
 - Hash re-run at the end: unchanged.
 
 ## Scores
