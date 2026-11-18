@@ -1,14 +1,17 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: f0e1efdc7a0a1270
 
 ## Blocking
-- [Major] review/shots — visual verification incomplete: screenshot.py could not run (playwright browser install and the `markdown` module are missing in this environment), so no captures exist — a visual review never passes from source alone — run `python3 scripts/screenshot.py fy7-5 --if-stale` in an environment with Playwright and re-request the delta review.
+(none)
 
 ## Polish
-- [Minor] lesson.md (source read only) — the changed napadynamo sentences and exit-ticket text read fluently, units/maths are in LaTeX, `\Delta\Phi : \Delta t` uses a colon; no issues seen in source.
+- [Minor] exit-ticket.json question 2 — "Se kääntyy tasaisesti kaartuen huippuunsa" is a little stiff and "Se" is ambiguous (vuo or käämi) — e.g. "Vuo saavuttaa huippunsa tasaisesti kaartuen hetkellä $t_1$ ja alkaa sitten pienentyä."
 
 ## Checked
-- Read packet and diff only. No captures opened. Changes are text-only (one paragraph in "Muutos synnyttää jännitteen", one exit-ticket question and answer); no figure changed.
+- Hash run at start and end: f0e1efdc7a0a1270; captures current (stamp.txt matches).
+- Opened fy7-5-open-exit-1280.png: changed exit-ticket question and answer render cleanly (KaTeX, colon in \Delta\Phi : \Delta t, (t, \Phi), no clipping).
+- Opened fy7-5-theory-1280-1.png: changed napadynamo paragraph under "Muutos synnyttää jännitteen" reads fluently, about 100 words, figures and photo beside their paragraphs unchanged and not displaced, no overflow.
+- Delta is text-only, no figure changed; the other captures were not opened.
 
 ## Scores
-illustrations n/a · typography 4 (source only) · Finnish 4 (source only) · accessibility n/a
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

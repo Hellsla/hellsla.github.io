@@ -1,14 +1,17 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 11872e3655aa7b3d
 
 ## Blocking
-- [Major] review/shots — visual verification incomplete: `scripts/screenshot.py` fails (`ModuleNotFoundError: playwright`), so no current captures exist for this hash; the only fy7-5 PNGs are old illustration-audit files — a visual review may not pass from source alone — install playwright (or supply captures) and rerun `python3 scripts/screenshot.py fy7-5 --if-stale`.
+(none)
 
 ## Polish
-(source-only observation, not a verdict basis) The diff text reads fluently: the dynamo sentence, "turns smoothly round its peak" and "tangent ... has slope zero" are correct in form; all quantities are inline LaTeX; no plain-text units seen.
+- [Minor] lesson.md "A change produces a voltage" — "relative to the coils" after "around fixed coils" is slightly redundant — optional: "a ring magnet turns with the hub around fixed coils, so the magnet moves relative to the coils."
 
 ## Checked
-- No captures opened (none could be made). Diff read as source only: exit-ticket.json and lesson.md "A change produces a voltage".
+- Delta round 2, captures now current for hash 11872e3655aa7b3d (en).
+- fy7-5-open-exit-1280 (exit ticket task 2: new question and answer; math inline LaTeX, "(t, \Phi)", "\Delta\Phi : \Delta t" render correctly, nothing clipped).
+- fy7-5-theory-1280-1 and fy7-5-stage-selita-390-1 (new dynamo sentence; paragraph length ok, layout intact beside the shake-torch photo, figures not displaced).
+- fy7-5-fig-1-390 (opening illustration, unchanged).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4 (unverified, from the previous report and source)
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
