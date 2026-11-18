@@ -30,9 +30,10 @@ ART = {
             f'<g {_S}><path d="M6 38c3-4 5-4 8 0s5 4 8 0 5-4 8 0 5 4 8 0" opacity=".6"/></g>'),
     "FY6": (f'<g {_S}><path d="M24 5L16 43M24 5l8 38M19.5 25h9M17.5 34h13M11 14h26M11 14l13-6 13 6M18 43h12"/></g>'
             f'<g {_ACC}><path d="M2 20q4 3 9-6M46 20q-4 3-9-6"/></g><circle cx="11" cy="14" r="1.8" {_DOT}/><circle cx="37" cy="14" r="1.8" {_DOT}/>'),
-    "FY7": (f'<path d="M12 6v21a12 12 0 0 0 24 0V6" {_S} stroke-width="5" stroke="{G}"/><path d="M12 6v8M36 6v8" {_ACC} stroke-width="5" stroke-linecap="butt"/>'
-            f'<g {_S} stroke-width="1.5"><path d="M17 8q7-5 14 0"/></g>'
-            f'<g {_ACC} stroke-width="1.8"><path d="M24 42v3M17 41l-2 2.5M31 41l2 2.5"/></g>'),
+    "FY7": (f'<path d="M12 6v21a12 12 0 0 0 24 0V6" fill="none" stroke="{G}" stroke-width="5" stroke-linejoin="round"/>'
+            f'<path d="M12 6v9M36 6v9" fill="none" stroke="{A}" stroke-width="5"/>'
+            f'<path d="M17 8q7-5 14 0" {_S} stroke-width="1.5"/>'
+            f'<path d="M24 42v3M17 41l-2 2.5M31 41l2 2.5" {_ACC} stroke-width="1.8"/>'),
     "FY8": _atom(24, 24, 19, 7) + f'<g {_DOT}><circle cx="43" cy="24" r="2.2"/><circle cx="14.5" cy="7.5" r="2.2"/><circle cx="14.5" cy="40.5" r="2.2"/></g>',
     # the page tops
     "listen": (f'<path d="M9 29v-5a15 15 0 0 1 30 0v5" {_S} stroke-width="2.6"/>'
