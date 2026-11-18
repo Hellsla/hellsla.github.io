@@ -34,6 +34,8 @@ Ehdotus yhteiseksi kuvasäännöksi (koordinaattori 16.11; opettajan päätettä
 
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
+Erä 1, jaetut komponentit (PR #709, 2026-11-18): `investigations.py` siirtää apulinkit kappaleen perään; `build.ol_starts` säilyttää numeroidun listan alkunumeron; `mathlayout.list_chains` näyttää listakohdan pitkän laskuketjun riveinä (poisti 5 tunnettua leikkautuvaa kaavaa: docs/clipped-formulas/tvt.tsv ja FY10.tsv); `.investigation td:empty` (site.css) korkeammat tyhjät rivit; `screenshot.py` ei kaappaa zoom-painikkeen eikä KaTeXin svg:itä kuvina. Auki: taulukkojen otsakkeet 390 px:ssä. Kuviin ei koskettu (ZIP-kuvia ei käytetä, opettaja 2026-11-18).
+
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
 #536:n kuvauksen järjestyksessä: ensin Major-löydökset tvt-epavarmuus, tvt-kuvaaja, tvt-tyoselostus, fy10-jousivakio,
 fy10-induktio, fy10-lammonjohtuminen, fy10-liukukitka ja fy10-hiuksen-paksuus. fy10-liukukitkan kallistusvirhe
