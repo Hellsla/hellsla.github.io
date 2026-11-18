@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 298e4ad8d54385f9
-Mode: delta
+CONTENT-HASH: 53ebde5f1231272f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- inquiry.json, chocolate-vs-firewood distractor feedback: the full stop after $22\,\text{MJ/kg}$ was lost in the edit, so the next sentence ("That is larger ..." / "Se on suurempi ...") runs on. Restore the stop (a stop inside the formula or after it, as in the earlier version).
 
 ## Checked
-- Delta: the "Moisture and fuel quality" paragraph. "Drier wood gives more: in the MAFY tables the heating value of dry wood is 16.2 MJ/kg" replaces the unsourced 19 MJ/kg; it is consistent with the air-dried 15 MJ/kg in the table and with the exercises, and still makes the point of the paragraph.
-- Other changes (rows re-broken, approved figures and formula names) carry no content.
+batch delta review: lesson.md change is presentation only (md-paragraphs, approved figures); the feedback keeps its repair of the misconception (unit conversion shows 22 MJ/kg > 15 MJ/kg); figure captures and 1280 px row unchanged in meaning.
