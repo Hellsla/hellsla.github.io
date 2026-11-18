@@ -84,6 +84,7 @@ järjestyksessä FY8 → FY9 → FY10. Kurssi kerrallaan, kaikki kielet
 muiden avointen kohtien kanssa samassa PR:ssä.
 
 ## 8d. Käsitekorttien pitkät otsikot katkeavat keskeltä sanaa (opettaja 2026-11-13)
+Varattu: claude/8d-kortit-tavutus
 "Ominaislämpökapasiteet|ti": korjaus kerran `templates/kortit.js`:ssä tavutuksella (pehmeät tavuviivat tai `hyphens:auto` + `lang`),
 niin että katko osuu tavurajalle viivalla; koskee myös kasitteet.html, Kertauspakka ja Varmista käsitteet; `test_home.py`: 360 ja 1280 px. Sivupohja, ei katselmointeja.
 
