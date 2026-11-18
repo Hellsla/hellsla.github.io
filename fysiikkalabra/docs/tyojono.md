@@ -70,6 +70,7 @@ VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike teh
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
+Sivupohjaosa tehty (PR #713: `boxed_section` build.py, `details.theory-box`; test_home.py avaa laatikon näppäimellä). Jäljellä vain sisältötyö luku kerrallaan.
 Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei päde (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` 5.2).
 "Yleinen virhekäsitys" ja Tiivistelmä omiin suljettuihin `<details>`-laatikkoihinsa (näppäimistöllä avattavat); sivupohjan
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
