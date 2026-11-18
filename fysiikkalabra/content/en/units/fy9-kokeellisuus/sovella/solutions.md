@@ -400,3 +400,161 @@ two significant figures as in the braking distances and the slope.
 ### Hyväksytään myös
 - In part b, the slope can be determined from a calculator fit through the origin ($k \approx 0.121\,\text{s}^2/\text{m}$, $a \approx 4.15\,\text{m/s}^2$) or from another distant point of the line. Decelerations of $4.0\text{–}4.4\,\text{m/s}^2$ are accepted, as are coefficients of $0.41\text{–}0.45$ in part c.
 - In part d the answer $10.25\,\%$ or “about $10\,\%$”.
+
+## fy9-kokeellisuus-s7
+
+### a)
+**Given:** five measurement points in the graph: normal force $N = 5\,\text{N}\ldots 25\,\text{N}$ and friction force $F_\mu = 1.1\,\text{N}\ldots 5.4\,\text{N}$; the scale division of the spring balance is $0.1\,\text{N}$
+**Find:** whether there is a systematic error and what the graph tells about random variation
+**Principle:** The sliding friction force is directly proportional to the normal force, $F_\mu = \mu N$, so the points should lie on a straight line through the origin. A systematic error shifts all points in the same direction, a random error scatters them in both directions (chapter *Measuring and the reliability of a measurement*).
+**Reading the graph:** The points lie close to a line through the origin. The deviations of the points from the line are at most about $0.1\,\text{N}$, and they go sometimes up and sometimes down.
+**Model answer:** There is no sign of a systematic error: if the spring balance had been zeroed wrongly, the line would cross the vertical axis above or below the origin, and every point would be the same distance from its correct place. Here the line passes through the origin, so the zero point at least is in order. A scale error, that is a wrong calibration of the balance, would still give a line through the origin, so this does not rule out every systematic error. The scatter of the points on both sides of the line is random variation, for example the balance reading fluctuating while pulling and the limit of reading accuracy. Its size is of the same order as the scale division $0.1\,\text{N}$.
+**Reasonableness:** When the normal force is $0\,\text{N}$, the friction force is zero, so the line must pass through the origin. The deviations are about $2\,\%$ of the largest friction force, so the variation is small.
+
+### b)
+**Given:** the points $(5\,\text{N};\ 1.1\,\text{N})$, $(10\,\text{N};\ 2.1\,\text{N})$, $(15\,\text{N};\ 3.3\,\text{N})$, $(20\,\text{N};\ 4.2\,\text{N})$ and $(25\,\text{N};\ 5.4\,\text{N})$
+**Find:** the coefficient of sliding friction $\mu$ and its error estimate $\Delta\mu$
+**Principle:** Sliding friction force $F_\mu = \mu N$. The points lie on a line through the origin, so the coefficient is the ratio $F_\mu : N$ of each point and also the slope of the line. A single ratio varies because of measurement error, so the result is the mean of the ratios and the error estimate is half the range.
+**Reading the graph:** The coordinates of each point are read from the graph and are given above.
+**Formula:** $\mu = \dfrac{F_\mu}{N}$ and $\Delta\mu = \dfrac{\mu_\text{max} - \mu_\text{min}}{2}$
+**Conversions:** None needed: the forces are in newtons.
+**Substitution:** $$
+\begin{aligned}
+\mu_1 &= \dfrac{1.1\,\text{N}}{5\,\text{N}} = 0.22 \\
+\mu_2 &= \dfrac{2.1\,\text{N}}{10\,\text{N}} = 0.21 \\
+\mu_3 &= \dfrac{3.3\,\text{N}}{15\,\text{N}} = 0.22 \\
+\mu_4 &= \dfrac{4.2\,\text{N}}{20\,\text{N}} = 0.21 \\
+\mu_5 &= \dfrac{5.4\,\text{N}}{25\,\text{N}} = 0.216
+\end{aligned}
+$$ $$
+\begin{aligned}
+\textstyle\sum\mu &= 0.22 + 0.21 + 0.22 \\
+&\quad + 0.21 + 0.216 \\
+&= 1.076 \\
+\mu &= \dfrac{1.076}{5} \\
+&= 0.215 \\
+\Delta\mu &= \dfrac{0.22 - 0.21}{2} \\
+&= 0.005
+\end{aligned}
+$$
+**Answer:** $\mu = 0.215 \pm 0.005$. The result is written to the decimal of the error estimate, and the error estimate has one significant figure.
+**Reasonableness:** The coefficient of sliding friction of wood on a table is typically $0.2\text{–}0.4$, so the result is reasonable. The error estimate $0.005 : 0.215 \approx 2\,\%$ is small because the five ratios are close to each other.
+
+### c)
+**Given:** zero error $F_0 = 0.3\,\text{N}$, balance reading $F_\text{reading} = 2.4\,\text{N}$ and normal force $N = 10\,\text{N}$
+**Find:** the group's coefficient $\mu_\text{group}$, the correct coefficient $\mu$, the size of the error as a percentage and the effect of the zero error on the slope
+**Principle:** With no load the balance read $0.3\,\text{N}$, so every reading is $0.3\,\text{N}$ too large. This is a systematic error: the correct friction force is the reading minus the zero error.
+**Formula:** $\mu_\text{group} = \dfrac{F_\text{reading}}{N}$, $\mu = \dfrac{F_\text{reading} - F_0}{N}$ and error $\dfrac{\mu_\text{group} - \mu}{\mu} \cdot 100\,\%$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+\mu_\text{group} &= \dfrac{2.4\,\text{N}}{10\,\text{N}} \\
+&= 0.24 \\
+\mu &= \dfrac{2.4\,\text{N} - 0.3\,\text{N}}{10\,\text{N}} \\
+&= 0.21 \\
+\text{error} &= \dfrac{0.24 - 0.21}{0.21} \cdot 100\,\% \\
+&\approx 14\,\%
+\end{aligned}
+$$
+**Answer:** The group's coefficient is $0.24$, the correct coefficient $0.21$ and the error about $14\,\%$ of the correct value. The coefficient is written with two significant figures, like the readings.
+**Reasonableness:** The correct value $0.21$ fits the series of parts a and b ($0.215 \pm 0.005$). The error is greatest when the friction force is small, because the constant $0.3\,\text{N}$ is then a large part of the reading.
+**Zero error and the slope:** The zero error adds the same $0.3\,\text{N}$ to every friction force, so the line in the graph moves up but stays equally steep. The slope $\dfrac{\Delta F}{\Delta N}$ is calculated as a difference, and the constant cancels. So the $\mu$ obtained from the slope of the fitted line does not change. The line would only cross the vertical axis at $0.3\,\text{N}$, and the zero error would be noticed from that.
+
+### d)
+**Find:** two things that weaken the reliability of the measurement and improvements to the experiment
+**Principle:** We assess which sources of error affect the result most and how each can be reduced (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** The first weakness is variation of the pulling speed. Sliding friction is measured only when the block slides at a constant speed, and if the pull is jerky, the balance reading fluctuates and the reading is uncertain. Improvement: use a force sensor and a steady pulling device, or read the value only when the speed is steady.
+
+The second weakness is that there is only one measurement at each normal force and the scale division is $0.1\,\text{N}$. The uncertainty of a reading is about half the scale division, $0.05\,\text{N}$, and at a small normal force it is a large part of the result: $$
+\begin{aligned}
+\dfrac{0.05\,\text{N}}{1.1\,\text{N}} &\approx 5\,\% \quad (N = 5\,\text{N}) \\
+\dfrac{0.05\,\text{N}}{5.4\,\text{N}} &\approx 1\,\% \quad (N = 25\,\text{N})
+\end{aligned}
+$$ Improvement: repeat each measurement three times and take the mean, add measurement points and use large normal forces more, so that the relative error becomes smaller.
+
+### Yleisiä virheitä
+- In part a the scatter of the points is confused with a systematic error: random variation does not shift all points in the same direction.
+- In part b the coefficient is calculated from a single point or the slope of the graph is read wrongly, for example as $\Delta N : \Delta F$.
+- In part b the result is written with too many figures for its uncertainty ($0.2152$) or the deviation of a single point is taken as the error estimate.
+- In part c the zero error is added to the reading instead of subtracted, or the percentage is calculated from the wrong value ($0.03 : 0.24 \approx 13\,\%$) instead of the correct one.
+- In part c it is claimed that the zero error changes the slope, although it only moves the line.
+
+### Hyväksytään myös
+- In part b $\mu$ can be read from a fitted line, for example the point $(25\,\text{N};\ 5.4\,\text{N})$ gives $0.216$. Coefficients $0.21\text{–}0.22$ are accepted, and an error estimate $\pm 0.01$ if it is justified with extreme lines.
+- In part d other justified sources of error, for example dust on the surface of the table.
+
+## fy9-kokeellisuus-s8
+
+### a)
+**Given:** the fitted line of the graph; $B = \mu_0 n I$ and $\mu_0 = 4\pi \cdot 10^{-7}\,\text{Vs/(Am)}$
+**Find:** the slope $k$ of the line and the turn density $n$
+**Principle:** In $B = \mu_0 n I$ the field is directly proportional to the current, so the slope of the line in the $(I, B)$ graph is $k = \mu_0 n$ (chapter *Magnetic field of a wire and a coil*).
+**Reading the graph:** Two points of the fitted line that are far apart are read: $(1.0\,\text{A};\ 2.5\,\text{mT})$ and $(2.5\,\text{A};\ 6.2\,\text{mT})$.
+**Formula:** $k = \dfrac{\Delta B}{\Delta I}$ and $n = \dfrac{k}{\mu_0}$
+**Conversions:** $1\,\text{mT} = 10^{-3}\,\text{T}$, so $k$ is converted to $\text{T/A}$.
+**Substitution:** $$
+\begin{aligned}
+k &= \dfrac{6.2\,\text{mT} - 2.5\,\text{mT}}{2.5\,\text{A} - 1.0\,\text{A}} \\
+&= 2.47\,\text{mT/A} \\
+&= 2.47 \cdot 10^{-3}\,\text{T/A}
+\end{aligned}
+$$ $$
+\begin{aligned}
+n &= \dfrac{2.47 \cdot 10^{-3}\,\text{T/A}}{4\pi \cdot 10^{-7}\,\text{Vs/(Am)}} \\
+&\approx 1.96 \cdot 10^{3}\,\text{1/m}
+\end{aligned}
+$$
+**Answer:** $n \approx 2.0 \cdot 10^{3}\,\text{1/m}$, about $20$ turns per centimetre. Two significant figures, because the values read have two figures.
+**Reasonableness:** A typical laboratory coil has tens of turns per centimetre, so the number is suitable. Unit: $\text{T/A} : \text{Vs/(Am)} = \text{1/m}$, because $1\,\text{T} = 1\,\text{Vs/m}^2$.
+
+### b)
+**Given:** $B = 12\,\text{mT}$; the slope $k = 2.47\,\text{mT/A}$ from part a; the largest measured current $2.5\,\text{A}$
+**Find:** the current $I$ needed and the reliability of the result
+**Principle:** The line passes practically through the origin, so $B = kI$.
+**Formula:** $I = \dfrac{B}{k}$
+**Conversions:** None needed: both $B$ and $k$ are in millitesla.
+**Substitution:** $$
+\begin{aligned}
+I &= \dfrac{12\,\text{mT}}{2.47\,\text{mT/A}} \\
+&\approx 4.9\,\text{A}
+\end{aligned}
+$$
+**Answer:** The current needed is about $4.9\,\text{A}$, two significant figures like the values read.
+**Reasonableness:** The current is $4.9 : 2.5 \approx 2$ times the largest measured current, so the result is extrapolation outside the measured range. According to the model $B = \mu_0 n I$ the dependence stays linear, but it has not been measured in this range. In addition, the wire of the coil and the power supply must be able to carry such a current. So the result is an estimate and is checked by measuring.
+
+### c)
+**Given:** zero reading $B_0 = 0.04\,\text{mT}$ at the current $0\,\text{A}$
+**Find:** the relative share of the zero reading of the field at the currents $0.50\,\text{A}$ and $2.5\,\text{A}$, the type of the error and its effect on the slope
+**Principle:** The relative share of an error is the error divided by the measured result (chapter *Measuring and the reliability of a measurement*). An error that is constant and does not depend on the current is called systematic.
+**Reading the graph:** At the current $0.50\,\text{A}$ the field is $B \approx 1.3\,\text{mT}$ and at $2.5\,\text{A}$ it is $B \approx 6.2\,\text{mT}$.
+**Formula:** $\dfrac{B_0}{B} \cdot 100\,\%$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+\dfrac{B_0}{B(0.50\,\text{A})} &= \dfrac{0.04\,\text{mT}}{1.3\,\text{mT}} \\
+&\approx 3\,\% \\
+\dfrac{B_0}{B(2.5\,\text{A})} &= \dfrac{0.04\,\text{mT}}{6.2\,\text{mT}} \\
+&\approx 0.6\,\%
+\end{aligned}
+$$
+**Answer:** The zero reading is about $3\,\%$ of the field at $0.50\,\text{A}$ and about $0.6\,\%$ at $2.5\,\text{A}$. The results are rounded to one significant figure, because the zero reading $0.04\,\text{mT}$ has one figure. The error is systematic: it is constant, has the same direction and does not depend on the current. The cause can be, for example, the Earth's magnetic field or a zero error of the sensor. A constant shifts all points by the same amount, so the slope of the line does not change and only the intercept on the vertical axis moves.
+**Reasonableness:** The share decreases as the field grows, because the same constant is a smaller part of a large reading. At a small current the error would affect the result most if the result were calculated from a single point.
+
+### d)
+**Find:** whether the model $B \propto I$ fits the measurement and how the experiment is improved
+**Principle:** The fit of a model is judged by whether the points are on a line and whether the deviation is random. For sources of error we look for ways to reduce them (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** The points lie almost on the line and deviate from it only a little, sometimes up and sometimes down. So the model $B \propto I$ fits the current range $0\text{–}2.5\,\text{A}$, and the random variation is small. The model is valid only at the centre of the coil, where the field is almost uniform, and only when the coil is long and air-core.
+
+The systematic error, the zero reading $0.04\,\text{mT}$, is removed by measuring the reading at zero current and subtracting it from all readings. Another way is to reverse the direction of the current and calculate $B$ as half the difference of the readings, so that a constant field cancels.
+
+Another weakness is that there is only one reading at each current. The measurements are repeated and the mean is taken. In addition, as the coil warms up the current may drift if the supply regulates voltage, or the sensor reading may drift with temperature. So the current is read at every reading and kept on only for a short time.
+
+### Yleisiä virheitä
+- In part a the slope is read from measurement points that are close together, or the steepness of the line is calculated in $\text{mT/A}$ without converting to tesla, so $n$ becomes $1000$ times too large.
+- In part b the slope is inverted ($I = kB$) or the reliability of the result is not assessed, although the result is outside the measured range.
+- In part c the zero reading is taken to be a random error, or it is claimed that it changes the slope.
+- In part d a source of error is named but its effect on the result or an improvement is missing.
+
+### Hyväksytään myös
+- In part a a slope of $2.4\text{–}2.5\,\text{mT/A}$ and a turn density of $1.9 \cdot 10^3\text{–}2.0 \cdot 10^3\,\text{1/m}$.
+- In part b $4.8\text{–}5.0\,\text{A}$, when the slope has been read from other points of the line.

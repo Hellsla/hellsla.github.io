@@ -526,3 +526,138 @@ The radius of the path cannot be calculated from the expression $r = \tfrac{mv}{
 - In part b the answer $1.1\,\mu\text{J}$.
 - In part c a calculation with the rounded value $1.1 \cdot 10^{-6}\,\text{J}$ of part b, which gives the same result $4.4 \cdot 10^8\,\text{J}$.
 - In part d a calculation with rounded intermediate results, $\tfrac{4.4 \cdot 10^8\,\text{J}}{5.79 \cdot 10^5\,\text{J}} \approx 760$ cars.
+
+## fy9-magnetismi-valo-s8
+
+### a)
+**Given:** a graph with $\sin\alpha_1$ on the vertical axis and $\sin\alpha_2$ on the horizontal axis and a fitted line; refractive index of air $n_1 = 1.00$
+**Find:** the refractive index $n$ of acrylic
+**Principle:** When light goes from air into acrylic, Snell's law is $n_1 \sin\alpha_1 = n \sin\alpha_2$ (chapter *Reflection and refraction of light*). With $n_1 = 1.00$, $\sin\alpha_1 = n \sin\alpha_2$, so the slope of the line in the $(\sin\alpha_2, \sin\alpha_1)$ graph is $n$. The slope is read from the fitted line, not from individual data points (chapter *Graphing and fitting a straight line*).
+**Reading the graph:** Two points far apart are read from the line: $(0.30;\ 0.44)$ and $(0.60;\ 0.89)$.
+**Formula:** $n = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)}$
+**Conversions:** None needed: sines are dimensionless numbers.
+**Substitution:** $$
+\begin{aligned}
+n &= \dfrac{0.89 - 0.44}{0.60 - 0.30} \\
+&= \dfrac{0.45}{0.30} \\
+&= 1.5
+\end{aligned}
+$$
+**Answer:** $n = 1.5$ (no unit). The result has two significant figures, like the values read from the graph.
+**Reasonableness:** The refractive index of acrylic is greater than $1$, as for all transparent materials, and about $1.5$ is the right size for ordinary acrylic or glass. Light entering acrylic bends towards the normal, so $\sin\alpha_2 < \sin\alpha_1$ and the slope of the line must be greater than $1$.
+
+### b)
+**Given:** $n = 1.5$ (part a), $c = 3.00 \cdot 10^8\,\text{m/s}$, thickness of the plate $d = 15\,\text{cm}$
+**Find:** the speed $v$ of light in acrylic and the travel time $t$ through the plate
+**Principle:** The refractive index of a material is the ratio of the speed of light in vacuum (air) to the speed in the material, $n = \dfrac{c}{v}$ (chapter *Reflection and refraction of light*). Light travelling perpendicular to the surface is not refracted, so it covers the distance $d$ at the constant speed $v$.
+**Formula:** $v = \dfrac{c}{n}$ and $t = \dfrac{d}{v}$
+**Conversions:** $d = 15\,\text{cm} = 0.15\,\text{m}$
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{3.00 \cdot 10^8\,\text{m/s}}{1.5} \\
+&= 2.0 \cdot 10^8\,\text{m/s}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+t &= \dfrac{0.15\,\text{m}}{2.0 \cdot 10^8\,\text{m/s}} \\
+&= 7.5 \cdot 10^{-10}\,\text{s} \\
+&= 0.75\,\text{ns}
+\end{aligned}
+$$
+**Answer:** The speed of light in acrylic is $v = 2.0 \cdot 10^8\,\text{m/s}$ and the travel time through the plate is $t = 0.75\,\text{ns}$. The results have two significant figures, like the refractive index.
+**Reasonableness:** The speed is one third lower than in air, and $n > 1$ means exactly that light travels more slowly in the material. In air the same distance takes $\dfrac{0.15\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} = 0.50\,\text{ns}$, so $0.75\,\text{ns}$ is reasonable.
+
+### c)
+**Given:** $n = 1.5$ (acrylic), refractive index of air $1.00$
+**Find:** the critical angle $\alpha_\text{c}$ of total internal reflection when light goes from acrylic into air
+**Principle:** Total internal reflection is possible only when light goes from a denser medium into a less dense one, here from acrylic into air. At the critical angle the angle of refraction is $90^\circ$ (chapter *Total internal reflection and optical fibre*), and Snell's law gives $n \sin\alpha_\text{c} = 1.00 \cdot \sin 90^\circ$.
+**Formula:** $\sin\alpha_\text{c} = \dfrac{1.00}{n}$, so $\alpha_\text{c} = \arcsin\dfrac{1.00}{n}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+\alpha_\text{c} &= \arcsin\dfrac{1.00}{1.5} \\
+&= \arcsin 0.667 \\
+&= 41.8^\circ
+\end{aligned}
+$$
+**Answer:** The critical angle is $\alpha_\text{c} \approx 42^\circ$. The result has two significant figures, like the refractive index $1.5$. At larger angles of incidence the light is totally reflected.
+**Reasonableness:** The critical angle is smaller than $90^\circ$, and the greater the refractive index, the smaller it is. For glass ($n \approx 1.5$) the familiar value is of the same size, about $42^\circ$.
+
+### d)
+**Find:** why the line should pass through the origin and why the refractive index is determined from the slope
+**Principle:** The model is $\sin\alpha_1 = n \sin\alpha_2$ (chapter *Reflection and refraction of light*), and the data are fitted with a straight line (chapter *Graphing and fitting a straight line*).
+**Model answer:** When the angle of incidence is zero, the light goes straight through without refraction, so the angle of refraction is also zero. Then $\sin\alpha_1 = 0$ and $\sin\alpha_2 = 0$, and the model gives a line through the point $(0;\ 0)$. The line in the graph passes almost through the origin, so the model fits the measurement.
+
+A single data point contains the random error of reading the angles, and the points lie on both sides of the line. A line fitted to the whole data averages these errors, so its slope is more reliable than the quotient $\sin\alpha_1 : \sin\alpha_2$ of one point. The refractive index is a property of the material and does not depend on the angle of incidence, so all the points lie on the same line and the slope is the same for small and large angles.
+
+### Yleisiä virheitä
+- In part a the slope is calculated from the axes the wrong way round ($0.30 : 0.45$), which gives $0.67$, and the refractive index would be less than $1$.
+- In part a the slope is read from data points and not from the fitted line, or neighbouring points are used, which increases the reading error.
+- In part b the thickness $15\,\text{cm}$ is not converted to metres, or the speed is calculated as $n c = 4.5 \cdot 10^8\,\text{m/s}$, which is greater than the speed of light in air.
+- In part c $\arcsin 1.5$ or $\arcsin\dfrac{n}{1.00}$ is calculated, which does not exist because a sine is at most $1$.
+- In part d it is said that the line must pass through the origin "because the graph is a straight line", without the justification with the zero angle.
+
+### Hyväksytään myös
+- In part c the result $42^\circ$ or $41.8^\circ$, as long as it is calculated from the refractive index; with the refractive index $1.49$ the result is $42.2^\circ$.
+- In part b the time given as $0.75 \cdot 10^{-9}\,\text{s}$.
+
+## fy9-magnetismi-valo-s9
+
+### a)
+**Given:** number of turns $N = 120$; the turning points of the graph $(0\,\text{s};\ 5.0\,\text{mWb})$, $(0.40\,\text{s};\ -3.0\,\text{mWb})$, $(0.60\,\text{s};\ -3.0\,\text{mWb})$ and $(0.80\,\text{s};\ 0\,\text{mWb})$
+**Find:** the magnitude of the induced voltage during $0$–$0.40\,\text{s}$ and during $0.60$–$0.80\,\text{s}$
+**Principle:** When the flux through a coil changes, a voltage $e = -N\,\dfrac{\Delta\Phi}{\Delta t}$ is induced in the coil (chapter *Electromagnetic induction*). The graph is a straight line in both intervals, so the flux changes uniformly and the voltage is constant. The magnitude of the voltage is the change of flux divided by the time, multiplied by the number of turns.
+**Reading the graph:** During $0$–$0.40\,\text{s}$ the flux changes from $5.0\,\text{mWb}$ to $-3.0\,\text{mWb}$, and during $0.60$–$0.80\,\text{s}$ from $-3.0\,\text{mWb}$ to $0\,\text{mWb}$.
+**Formula:** $\lvert e \rvert = N\,\dfrac{\lvert \Delta\Phi \rvert}{\Delta t}$
+**Conversions:** $1\,\text{mWb} = 10^{-3}\,\text{Wb}$, so $\lvert\Delta\Phi_1\rvert = 8.0\,\text{mWb} = 8.0 \cdot 10^{-3}\,\text{Wb}$ and $\lvert\Delta\Phi_3\rvert = 3.0 \cdot 10^{-3}\,\text{Wb}$.
+**Substitution:** $$
+\begin{aligned}
+\lvert e_1 \rvert &= 120 \cdot \dfrac{8.0 \cdot 10^{-3}\,\text{Wb}}{0.40\,\text{s}} \\
+&= 120 \cdot 0.020\,\text{V} \\
+&= 2.4\,\text{V}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\lvert e_3 \rvert &= 120 \cdot \dfrac{\lvert\Delta\Phi_3\rvert}{0.20\,\text{s}} \\
+&= 120 \cdot \dfrac{3.0 \cdot 10^{-3}\,\text{Wb}}{0.20\,\text{s}} \\
+&= 120 \cdot 0.015\,\text{V} \\
+&= 1.8\,\text{V}
+\end{aligned}
+$$
+**Answer:** During $0$–$0.40\,\text{s}$ the voltage is $2.4\,\text{V}$ and during $0.60$–$0.80\,\text{s}$ it is $1.8\,\text{V}$. The results have two significant figures, like the flux values read from the graph.
+**Reasonableness:** In the first interval the flux changes more ($8.0\,\text{mWb}$ compared with $3.0\,\text{mWb}$), but the time is also twice as long. The line in the graph is steeper in the first interval ($20\,\text{mWb/s}$ compared with $15\,\text{mWb/s}$), so the voltage must be greater: $2.4\,\text{V} > 1.8\,\text{V}$.
+
+### b)
+**Given:** the voltages $2.4\,\text{V}$ and $1.8\,\text{V}$ of part a, resistance of the circuit $R = 8.0\,\Omega$, intervals of $0.40\,\text{s}$ and $0.20\,\text{s}$, and the interval $0.40$–$0.60\,\text{s}$ during which the flux is constant
+**Find:** the electrical energy $W$ converted into internal energy during the whole time $0$–$0.80\,\text{s}$
+**Principle:** During $0.40$–$0.60\,\text{s}$ the flux is constant, so the voltage and the current are zero and no energy is converted. In the other intervals the voltage is constant, and the heating power of a resistance $R$ is $P = \dfrac{e^2}{R}$ (chapter *Electric power and the heating of a resistor*). Energy is power times time, $W = P\,\Delta t$.
+**Formula:** $W = \dfrac{e_1^2}{R}\,\Delta t_1 + \dfrac{e_3^2}{R}\,\Delta t_3$
+**Conversions:** None needed: the voltage is in volts, the resistance in ohms and the time in seconds, so the result is in joules.
+**Substitution:** $$
+\begin{aligned}
+W &= \dfrac{(2.4\,\text{V})^2}{8.0\,\Omega} \cdot 0.40\,\text{s} \\
+&+ \dfrac{(1.8\,\text{V})^2}{8.0\,\Omega} \cdot 0.20\,\text{s} \\
+&= 0.72\,\text{W} \cdot 0.40\,\text{s} \\
+&+ 0.41\,\text{W} \cdot 0.20\,\text{s} \\
+&= 0.29\,\text{J} + 0.082\,\text{J} \\
+&\approx 0.37\,\text{J}
+\end{aligned}
+$$
+**Answer:** The energy converted into internal energy is $W \approx 0.37\,\text{J}$. The result has two significant figures, like the resistance $8.0\,\Omega$.
+**Reasonableness:** The powers are below one watt ($0.72\,\text{W}$ and $0.41\,\text{W}$) and the time is less than a second, so the energy is less than a joule. Unit: $\dfrac{\text{V}^2}{\Omega}\,\text{s} = \text{W}\,\text{s} = \text{J}$.
+
+### c)
+**Find:** the direction of the induced current in the different intervals and the effect of the zero value of the flux
+**Principle:** A voltage is induced only when the flux changes, and it depends on the rate of change of the flux (chapter *Electromagnetic induction*). By Lenz's law the magnetic field of the induced current opposes the change of the flux (chapter *Lenz's law and eddy currents*).
+**Model answer:** During $0.40$–$0.60\,\text{s}$ the flux is constant, so the voltage and the current are zero. During $0$–$0.40\,\text{s}$ the flux decreases. The induced current opposes the decrease, so its own magnetic field points in the positive direction of the flux, and the induced voltage is positive. During $0.60$–$0.80\,\text{s}$ the flux increases towards zero. The induced current opposes the increase, so its field points in the negative direction, and the current flows in the opposite direction to that in the first interval ($e = -1.8\,\text{V}$).
+
+The flux is zero at $t = \dfrac{5.0\,\text{mWb}}{20\,\text{mWb/s}} = 0.25\,\text{s}$. At that moment the rate of change of the flux is the same $-20\,\text{mWb/s}$ as before and after, and the induced voltage is still $2.4\,\text{V}$. The voltage depends on the rate of change of the flux, not on its value, so the direction of the current does not change although the sign of the flux does.
+
+### Yleisiä virheitä
+- In part a the change of flux is calculated as $5.0\,\text{mWb} - 3.0\,\text{mWb}$, or only the final value $3.0\,\text{mWb}$ is used, although the flux changes its sign; the correct change is $8.0\,\text{mWb}$.
+- In part a $\text{mWb}$ is not converted to $\text{Wb}$, so the voltage comes out a thousand times too large ($2400\,\text{V}$ instead of $2.4\,\text{V}$).
+- In part b the energy is calculated for the whole time with one voltage, or the interval $0.40$–$0.60\,\text{s}$ is included with a nonzero voltage.
+- In part c it is said that the direction of the current changes when the flux is zero, or that the current is zero then; the current depends on the rate of change, not on the value of the flux.
+
+### Hyväksytään myös
+- In part b the power as $P = e I$ through the current $I = \dfrac{e}{R}$: $I_1 = 0.30\,\text{A}$ and $I_3 = 0.225\,\text{A}$ give the same result $0.37\,\text{J}$.

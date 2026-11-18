@@ -1,5 +1,5 @@
 {
- "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin magnetismin, induktion ja valon. Viimeinen tehtävä on soveltava aineistotehtävä, jonka aineisto on tehtävän linkin takana. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin magnetismin, induktion ja valon. Seitsemäs tehtävä on soveltava aineistotehtävä, jonka aineisto on tehtävän linkin takana. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-magnetismi-valo-s1",
@@ -993,6 +993,278 @@
     "math": "fy4-7",
     "concept": "fy7-2",
     "communication": "fy7-3"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s8",
+   "title": "Laserkoe akryylilevyllä",
+   "source": "example",
+   "source_note": "Mittaus ja luvut ovat keksitty esimerkki, jonka pisteet on pyöristetty asteikon tarkkuuteen.",
+   "skills": [
+    "fy7-10",
+    "fy7-12",
+    "fy1-4"
+   ],
+   "figure": "fy7-10/fit",
+   "text": "Opiskelija tutkii laserosoittimella, miten valo taittuu, kun se tulee ilmasta akryylilevyyn. Hän mittaa tulokulman $\\alpha_1$ ilmassa ja taitekulman $\\alpha_2$ akryylissä, kun tulokulma on $10^\\circ$, $20^\\circ$, $\\ldots$, $70^\\circ$. Kuvaajassa pystyakselilla on $\\sin\\alpha_1$ ja vaaka-akselilla $\\sin\\alpha_2$, ja mittauspisteisiin on sovitettu suora. Ilman taitekerroin on $1{,}00$, valon nopeus ilmassa $3{,}00 \\cdot 10^8\\,\\text{m/s}$ ja akryylilevyn paksuus $15\\,\\text{cm}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä akryylin taitekerroin kuvaajan avulla.",
+     "answer": {
+      "value": 1.5,
+      "unit": "",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan sovitetun suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(0{,}30;\\ 0{,}44)$ ja $(0{,}60;\\ 0{,}89)$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Taittumislaki $1{,}00 \\cdot \\sin\\alpha_1 = n \\sin\\alpha_2$, joten $\\sin\\alpha_1 = n \\sin\\alpha_2$ ja $n$ on suoran kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$n = \\dfrac{0{,}89 - 0{,}44}{0{,}60 - 0{,}30} = 1{,}5$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$n = 1{,}5$ (ei yksikköä), kaksi merkitsevää numeroa kuten kuvaajalta luetut arvot."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on valon nopeus akryylissä? Kuinka kauan valolta kuluu levyn läpi, kun se kulkee levyn pintaa vastaan kohtisuoraan?",
+     "answer": [
+      {
+       "name": "v",
+       "value": 2.0,
+       "unit": "· 10⁸ m/s",
+       "tolerance": 0.03
+      },
+      {
+       "name": "t",
+       "value": 0.75,
+       "unit": "ns",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = \\dfrac{c}{n}$ ja $t = \\dfrac{d}{v}$"
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "$$\\begin{aligned}v &= \\dfrac{3{,}00 \\cdot 10^8\\,\\text{m/s}}{1{,}5} \\\\&= 2{,}0 \\cdot 10^8\\,\\text{m/s}\\end{aligned}$$ ja $t = \\dfrac{0{,}15\\,\\text{m}}{2{,}0 \\cdot 10^8\\,\\text{m/s}} = 7{,}5 \\cdot 10^{-10}\\,\\text{s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Paksuus $15\\,\\text{cm}$ muunnetaan metreiksi, $0{,}15\\,\\text{m}$; $v = 2{,}0 \\cdot 10^8\\,\\text{m/s}$ ja $t = 0{,}75\\,\\text{ns}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on pienin tulokulma, jolla valo heijastuu kokonaan, kun se tulee akryylistä ilmaan?",
+     "answer": {
+      "value": 41.81,
+      "unit": "°",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että kokonaisheijastus on mahdollinen vain, kun valo tulee optisesti tiheämmästä aineesta (akryyli, $n = 1{,}5$) harvempaan (ilma, $n = 1{,}00$), ja rajakulmassa taittokulma on $90^\\circ$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$n \\sin\\alpha_\\text{r} = 1{,}00 \\cdot \\sin 90^\\circ$, joten $\\sin\\alpha_\\text{r} = \\dfrac{1{,}00}{n}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\alpha_\\text{r} = \\arcsin\\dfrac{1{,}00}{1{,}5} = 41{,}8^\\circ$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\alpha_\\text{r} \\approx 42^\\circ$, kaksi merkitsevää numeroa kuten taitekerroin $1{,}5$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Miksi sovitetun suoran pitäisi kulkea origon kautta? Miksi taitekerroin määritetään suoran kulmakertoimesta eikä yhdestä mittauspisteestä?",
+     "criteria": [
+      {
+       "text": "Selittää, että kun tulokulma on nolla, valo ei taitu ja taitekulma on nolla. Silloin $\\sin\\alpha_1 = 0$ ja $\\sin\\alpha_2 = 0$, joten suoran pitää kulkea pisteen $(0;\\ 0)$ kautta. Kuvaajan suora kulkee lähes origon kautta, joten malli $\\sin\\alpha_1 = n \\sin\\alpha_2$ sopii mittaukseen.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että yksittäisen pisteen kulmien lukemisessa on satunnaista virhettä, ja pisteet ovat suoran molemmin puolin hajallaan. Kulmakerroin koko aineistoon sovitetusta suorasta keskiarvoistaa virheet, joten se on luotettavampi kuin yhden pisteen osamäärä $\\sin\\alpha_1 : \\sin\\alpha_2$.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että taitekerroin on aineen ominaisuus eikä riipu tulokulmasta, joten kaikki pisteet kuuluvat samalle suoralle: kulmakerroin on sama, olipa tulokulma pieni tai suuri.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "math": "fy7-10",
+    "concept": "fy7-12",
+    "experiment": "fy1-4",
+    "communication": "fy7-10"
+   }
+  },
+  {
+   "id": "fy9-magnetismi-valo-s9",
+   "title": "Käämin vuo ja induktiovirta",
+   "source": "example",
+   "source_note": "Käämi ja luvut ovat keksitty esimerkki.",
+   "skills": [
+    "fy7-5",
+    "fy7-6",
+    "fy6-6"
+   ],
+   "figure": "fy7-5/flux-task-2",
+   "text": "Käämissä on $120$ kierrosta, ja sen päät on kytketty yhteen vastuksen kautta niin, että koko virtapiirin resistanssi on $8{,}0\\,\\Omega$. Kuvaajassa on yhden kierroksen läpi kulkeva magneettivuo $\\Phi$ ajan $t$ funktiona. Vuon positiivinen suunta on valittu, ja vuo on negatiivinen, kun se kulkee vastakkaiseen suuntaan.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri on käämiin indusoituva jännite aikavälillä $0$–$0{,}40\\,\\text{s}$ ja kuinka suuri aikavälillä $0{,}60$–$0{,}80\\,\\text{s}$?",
+     "answer": [
+      {
+       "name": "e1",
+       "value": 2.4,
+       "unit": "V",
+       "tolerance": 0.02
+      },
+      {
+       "name": "e3",
+       "value": 1.8,
+       "unit": "V",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Vuon arvot luetaan kuvaajan taitepisteistä: $(0\\,\\text{s};\\ 5{,}0\\,\\text{mWb})$, $(0{,}40\\,\\text{s};\\ -3{,}0\\,\\text{mWb})$, $(0{,}60\\,\\text{s};\\ -3{,}0\\,\\text{mWb})$ ja $(0{,}80\\,\\text{s};\\ 0\\,\\text{mWb})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lvert e \\rvert = N\\,\\dfrac{\\lvert \\Delta\\Phi \\rvert}{\\Delta t}$, koska vuo muuttuu tasaisesti kummallakin aikavälillä."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\\begin{aligned}\\lvert e_1 \\rvert &= 120 \\cdot \\dfrac{8{,}0 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}40\\,\\text{s}} \\\\&= 2{,}4\\,\\text{V}\\end{aligned}$$ ja $$\n\\begin{aligned}\n\\lvert e_3 \\rvert &= 120 \\cdot \\dfrac{3{,}0 \\cdot 10^{-3}\\,\\text{Wb}}{0{,}20\\,\\text{s}} \\\\\n&= 1{,}8\\,\\text{V}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Yksikkö $\\text{mWb}$ muunnetaan yksiköksi $\\text{Wb}$; $2{,}4\\,\\text{V}$ ja $1{,}8\\,\\text{V}$, kaksi merkitsevää numeroa kuten vuon arvot."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon sähköenergiaa muuttuu käämipiirissä sisäenergiaksi koko $0{,}80\\,\\text{s}$:n aikana?",
+     "answer": {
+      "value": 0.369,
+      "unit": "J",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että aikavälillä $0{,}40$–$0{,}60\\,\\text{s}$ vuo on vakio, jännite ja virta ovat nolla eikä energiaa muutu.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$W = P\\,\\Delta t = \\dfrac{e^2}{R}\\,\\Delta t$ kullakin aikavälillä, ja energiat lasketaan yhteen."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\\begin{aligned}W &= \\dfrac{(2{,}4\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}40\\,\\text{s} \\\\&+ \\dfrac{(1{,}8\\,\\text{V})^2}{8{,}0\\,\\Omega} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}72\\,\\text{W} \\cdot 0{,}40\\,\\text{s} \\\\&+ 0{,}41\\,\\text{W} \\cdot 0{,}20\\,\\text{s} \\\\&= 0{,}29\\,\\text{J} + 0{,}082\\,\\text{J} \\\\&\\approx 0{,}37\\,\\text{J}\\end{aligned}$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$W \\approx 0{,}37\\,\\text{J}$, kaksi merkitsevää numeroa kuten resistanssi $8{,}0\\,\\Omega$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 4,
+     "text": "Selitä, millainen on induktiovirran suunta eri aikaväleillä. Kuinka vuon arvo nolla hetkellä, jolloin vuo vaihtaa etumerkkiä, vaikuttaa virtaan?",
+     "criteria": [
+      {
+       "text": "Toteaa, että induktiojännite syntyy vain, kun vuo muuttuu. Aikavälillä $0{,}40$–$0{,}60\\,\\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Soveltaa Lenzin lakia aikavälillä $0$–$0{,}40\\,\\text{s}$: vuo pienenee, joten induktiovirran oma magneettikenttä on vuon positiivisen suunnan suuntainen ja vastustaa vuon pienenemistä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Soveltaa Lenzin lakia aikavälillä $0{,}60$–$0{,}80\\,\\text{s}$: vuo kasvaa kohti nollaa, joten induktiovirran kenttä on negatiivisen suunnan suuntainen ja virta kulkee vastakkaiseen suuntaan kuin ensimmäisellä aikavälillä.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Päättelee, että hetkellä $0{,}25\\,\\text{s}$ vuo on nolla mutta sen muutosnopeus on sama kuin ennen ja jälkeen ($-20\\,\\text{mWb/s}$). Induktiojännite riippuu vuon muutosnopeudesta eikä vuon arvosta, joten jännite on $2{,}4\\,\\text{V}$ ja virran suunta ei muutu.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy7-5",
+    "math": "fy7-5",
+    "concept": "fy7-6",
+    "communication": "fy7-6"
    }
   }
  ]

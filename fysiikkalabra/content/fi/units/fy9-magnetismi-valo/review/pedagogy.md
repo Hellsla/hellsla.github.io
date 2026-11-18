@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1cb41420fdb3d846
+CONTENT-HASH: f56ae41225b29686
+SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8 and -s9; older tasks untouched
+
 Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A (carried from round 1), s7 b is a bare conversion; the classical-speed check of the solution could be brought into the task.
-- C (carried), `tasks.json` intro: order of the sentence about the last task and "Ratkaise ne kuten kokeessa".
+- s8 a and s9 a still use the chapter figures (fy7-10/fit, fy7-5/flux-task-2); a variant figure would make them original. The demand is in s8 b-d and s9 b-c.
+- s8 text names the axes and s9 c names the zero-flux moment, so the model and the trap are announced; acceptable, recorded.
 
 ## Checked
-- `tasks.json` s7 a: the added sentence "Ota huomioon, millä tarkkuudella aineiston luvut on annettu." makes the conclusion criterion (the difference from c is smaller than the precision of the rounded data) something the part actually asks. It points the student at the method, not at the result: whether v comes out below or above c and what follows must still be worked out. Situation first, question last still holds.
-- s7 d, conclusion criterion: the clause about the protons' total mass is removed, so the point is given for the ratio 753 alone, which is what the part asks. The mass remark remains in the solution as a plausibility note (`solutions.md` lines 488 and 504), consistent with the criterion.
-- `unit.md` Ydinajatus: "kun liike tai virta ei ole kentän suuntainen" is correct and placed so that the sentence still reads in one pass; it agrees with the map's "kohtisuora magneettivuon tiheys".
-- No number changed in this unit; nothing to recompute.
+- Round-1 report read first (PASS, no Blocking); only Polish had been raised.
+- Opened the fi packet s8 and s9 solutions and the fi tasks.json texts: numbers consistent (n = 0,45/0,30 = 1,5; 2,0·10^8 m/s; 0,75 ns; 41,8° ≈ 42°; 2,4 V and 1,8 V; 0,37 J), rounded to two significant figures as the data, chains in aligned rows, unit fields language-neutral ("", "· 10⁸ m/s", "ns", "V", "J", "°").
+- Nothing newly broken: task texts name no solution steps beyond what round 1 accepted; figure ids unchanged.
+- Hash at start and end f56ae41225b29686.

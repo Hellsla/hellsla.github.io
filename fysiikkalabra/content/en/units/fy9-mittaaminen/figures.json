@@ -46,5 +46,6 @@
  "paras arvio": "best estimate",
  "etsi syy": "find the cause",
  "uusi suure": "new quantity",
- "mistä tunnistan menetelmän?": "how do I tell the method?"
+ "mistä tunnistan menetelmän?": "how do I tell the method?",
+ "Kuvaaja: kuulan putoamismatka s metreinä ajan neliön t² funktiona yksikössä s², 0–0,16 s². Yhdeksän sinistä pistettä on lähellä yhtä nousevaa suoraa, jonka kulmakerroin on 5,18 m/s² ja joka leikkaa pystyakselin kohdassa noin 0,01 m. Suoralta luetut pisteet (0,020 s²; 0,113 m) ja (0,150 s²; 0,786 m) on ympyröity.": "Graph: the distance s the ball has fallen in metres as a function of the square of the time t², in s², 0–0.16 s². Nine blue points lie close to one rising straight line whose slope is 5.18 m/s² and which crosses the vertical axis at about 0.01 m. The points read from the line, (0.020 s²; 0.113 m) and (0.150 s²; 0.786 m), are circled."
 }

@@ -1,6 +1,6 @@
 # Sovella itsenäisesti FY6 (fi): science packet
 
-Course: FY6 Sähkö, 2 op. Content hash now: a34f3aab0e6c03cc (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
+Course: FY6 Sähkö, 2 op. Content hash now: 8067d7cd885e25ec (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
 
 ## Scope
 Central contents: jännite ja sähkövirta tasavirtapiireissä; resistanssi ja Ohmin laki; sähköteho ja Joulen laki; vastusten kytkennät ja Kirchhoffin lait; akut ja akun latauspiiri; Coulombin laki ja homogeeninen sähkökenttä; potentiaalienergia ja potentiaali homogeenisessa sähkökentässä; kondensaattori ja kondensaattorin energia; puolijohteet, diodi ja LED komponentteina virtapiirissä; sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus
@@ -43,10 +43,10 @@ Chapters (link targets, by id): fy6-1 Virtapiiri, sähkövirta ja jännite; fy6-
 practice.py check: OK
 
 ## answers.py output
-{"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 0.4622, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3, "fy6-s4-d-Ires": 30.0}
+{"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b-E": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 46.22, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3}
 
 ## Your job
-Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: a34f3aab0e6c03cc`, then Blocking, Polish, Checked (under 400 words).
+Judge the files below as the science reviewer (.claude/agents/science-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/science.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: 8067d7cd885e25ec`, then Blocking, Polish, Checked (under 400 words).
 
 ## content/fi/FY6/sovella/tasks.json
 ```
@@ -264,7 +264,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$U_\\text{L} = 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} = 10{,}0\\,\\text{V}$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
+              "detail": "$$\\begin{aligned} U_\\text{L} &= 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} \\\\ &= 10{,}0\\,\\text{V} \\end{aligned}$$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
             },
             {
               "key": "reasonableness",
@@ -407,7 +407,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$qU = 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} = 3{,}6 \\cdot 10^{-8}\\,\\text{J}$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+              "detail": "$$\\begin{aligned} qU &= 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} \\\\ &= 3{,}6 \\cdot 10^{-8}\\,\\text{J} \\end{aligned}$$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
             },
             {
               "key": "units_precision",
@@ -463,7 +463,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $$\\begin{aligned} F &= 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\\\ &\\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2} \\end{aligned}$$."
             },
             {
               "key": "units_precision",
@@ -525,11 +525,20 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
-          "answer": {
-            "value": 6.86,
-            "unit": "J",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "E",
+              "value": 6.86,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "share",
+              "value": 46.2,
+              "unit": "%",
+              "tolerance": 0.03
+            }
+          ],
           "criteria": [
             {
               "text": "Päättelee, että salamaan siirtynyt energia on kondensaattorin energian muutos: energiat lasketaan erikseen ennen ja jälkeen eikä jännitteen muutoksella $\\Delta U$ yksin.",
@@ -544,7 +553,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7{,}99\\,\\text{J}$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
@@ -572,7 +581,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0{,}0264\\,\\text{C}$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
+              "detail": "$$\\begin{aligned} \\Delta Q &= 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} \\\\ &= 0{,}0264\\,\\text{C} \\end{aligned}$$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
             },
             {
               "key": "reasonableness",
@@ -585,7 +594,7 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Arvioi, onko kondensaattorissa vaaraa, ja kuvaile, miten kondensaattori puretaan turvallisesti. Arvioi vaaraa myös laskemalla virta, jos ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$.",
+          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Selitä, miksi kondensaattori voi olla edelleen vaarallinen. Arvioi laskennallisesti kehon läpi kulkevan virran suuruus kuvitteellisessa kosketustilanteessa, jossa ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$. Miksi laitteen turvallinen huolto ja kondensaattorin jännitteettömyyden varmistaminen kuuluvat tehtävään perehtyneelle ammattilaiselle?",
           "criteria": [
             {
               "text": "Tietää, että kondensaattori säilyttää varauksensa ja energiansa, kun paristo irrotetaan: se on edelleen $300\\,\\text{V}$:ssa ja siinä on noin $15\\,\\text{J}$, vaikka laitetta syöttää pieni paristo.",
@@ -593,19 +602,19 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
               "points": 1
             },
             {
-              "text": "Laskee virran kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
+              "text": "Laskee idealisoidun arvion virrasta kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
               "tag": "math",
               "points": 1
             },
             {
-              "text": "Kuvaa turvallisen purkamisen: napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$, jolloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön; alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla. Vastuksen on kestettävä alussa noin $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, joten sen tehonkesto on valittava sen mukaan. Kuvaus on tarkoitettu ymmärtämiseen: älä yritä purkaa itse.",
+              "text": "Perustelee, että turvallinen huolto edellyttää kondensaattorin varatun energian hallittua poistamista ja jännitteettömyyden luotettavaa varmistamista, eikä huoltoa saa yrittää ilman asianmukaista pätevyyttä ja välineitä.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee (esimerkiksi kostea iho), joten arvio on suuruusluokka."
+              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta, koska kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan."
             }
           ]
         }
@@ -627,7 +636,13 @@ Judge the files below as the science reviewer (.claude/agents/science-reviewer.m
 
 ### a)
 **Kysytty:** kuvaaja, jonka pisteisiin pariston mallin mukaan sopii suora
-**Kuvaaja:** Paristo mallinnetaan ideaaliseksi jännitelähteeksi, jonka lähdejännite on $E$, ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi $R_\text{s}$. Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$, ja napajännite on $U = E - R_\text{s} I$. Tämä on suoran yhtälö: kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$ ja sen kulmakerroin on $-R_\text{s}$. Mittaukset viedään siis kuvaajaan sellaisinaan.
+**Kuvaaja:** Paristo mallinnetaan ideaaliseksi jännitelähteeksi, jonka lähdejännite on $E$, ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi $R_\text{s}$.
+
+Kun paristosta kulkee virta $I$, sisäisen resistanssin yli on jännite $R_\text{s} I$, ja napajännite on $U = E - R_\text{s} I$.
+
+Tämä on suoran yhtälö: kun virta $I$ on vaaka-akselilla ja napajännite $U$ pystyakselilla, suora leikkaa pystyakselin kohdassa $E$ ja sen kulmakerroin on $-R_\text{s}$.
+
+Mittaukset viedään siis kuvaajaan sellaisinaan.
 
 | $I\ (\text{A})$ | $U\ (\text{V})$ |
 |---|---|
@@ -663,12 +678,20 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
 **Vastaus:** Vastukseen siirtyy teho $P \approx 2{,}0\,\text{W}$, ja noin $13\,\%$ pariston sähkötehosta siirtyy lämpönä pariston sisällä. Tulos on annettu kahden merkitsevän numeron tarkkuudella kuten lähtötiedot.
-**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
+**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $$\begin{aligned} &E - R_\text{s} I \\ &= 4{,}60\,\text{V} - 0{,}60\,\text{V} \end{aligned}$$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
 
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus
 **Periaate:** Malli $U = E - R_\text{s} I$ olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina koko mittauksen ajan. Jos paristo purkautuu tai lämpenee, ne muuttuvat mittauksen aikana, ja kuvaajan suora kuvaa jonkinlaista keskiarvoa. Hajonta kertoo satunnaisista virheistä eli siitä, kuinka paljon sovitettu suora voisi kääntyä.
-**Mallivastaus:** *Systemaattinen virhe.* Virtaa kasvatettiin koko ajan samaan suuntaan, ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin. Pariston purkautuminen laskee jännitettä ajan myötä, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä. Koska aika ja virta kasvavat yhtä aikaa, ajan vaikutus sekoittuu kulmakertoimeen: suora laskee liian jyrkästi ja $R_\text{s}$ tulee liian suureksi. Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen vaikutuksen suunta on epävarma. Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
+**Mallivastaus:** *Systemaattinen virhe.* Virtaa kasvatettiin koko ajan samaan suuntaan, ja jokaista lukemaa varten piiri oli kytkettynä noin minuutin.
+
+Pariston purkautuminen laskee jännitettä ajan myötä, joten myöhemmin mitatut jännitteet eli suurimpia virtoja vastaavat jännitteet ovat liian pieniä.
+
+Koska aika ja virta kasvavat yhtä aikaa, ajan vaikutus sekoittuu kulmakertoimeen: suora laskee liian jyrkästi ja $R_\text{s}$ tulee liian suureksi.
+
+Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen vaikutuksen suunta on epävarma.
+
+Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
 *Ajautuman suuruus.* Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
@@ -708,9 +731,9 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Silmukkasäännön mukaan akun jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi, ja teho lasketaan tästä todellisesta jännitteestä.
 **Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} = 12{,}0\,\text{V} - 2{,}0\,\text{V} = 10{,}0\,\text{V}$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
+**Sijoitus:** $$\begin{aligned} U_\text{L} &= 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} \\ &= 12{,}0\,\text{V} - 2{,}0\,\text{V} \\ &= 10{,}0\,\text{V} \end{aligned}$$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
 **Vastaus:** $P_\text{A} \approx 17\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$, kaksi merkitsevää numeroa kuten lähtötiedoissa ($0{,}80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
-**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
+**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $$\begin{aligned} &16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
 
 ### c)
 **Kysytty:** miten lampun A kirkkaus, akuston virta ja kaapelin lämpeneminen muuttuvat, kun lamppu B poistuu piiristä, sekä lampun A tehon tarkistus laskemalla
@@ -719,7 +742,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 *Kirkkaus.* Pienempi virta pienentää kaapelin jännitehäviötä: $0{,}80\,\Omega \cdot 1{,}76\,\text{A} \approx 1{,}4\,\text{V}$, aiemmin $2{,}0\,\text{V}$. Lampulle A jää siksi suurempi jännite $U_\text{A} \approx 10{,}6\,\text{V}$, ja sen teho on $\dfrac{(10{,}6\,\text{V})^2}{6{,}0\,\Omega} \approx 18{,}7\,\text{W}$, aiemmin $16{,}7\,\text{W}$. Lamppu A siis palaa kirkkaammin, vaikka sen omassa haarassa ei muuttunut mikään.
 
-*Kaapeli.* Kaapeliin siirtyy lämpönä teho $R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
+*Kaapeli.* Kaapeliin siirtyy lämpönä teho $$\begin{aligned} R_\text{k} I^2 &= 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \\ &\approx 2{,}5\,\text{W} \end{aligned}$$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
 
 *Johtopäätös.* Rinnankytketyt lamput ovat toisistaan riippumattomia vain, jos jännite niiden yli pysyy vakiona. Kaapelin resistanssi tekee lampuista hieman riippuvaisia toisistaan: jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi lainkaan.
 
@@ -730,7 +753,13 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kaava:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{r}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ ja $I = \dfrac{E}{R_\text{k} + R_\text{r}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4{,}0\,\Omega$ ja $\dfrac{1}{R_\text{r}} = \dfrac{1}{6{,}0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4{,}0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2{,}0\,\Omega}$, joten $R_\text{r} = 2{,}0\,\Omega$. Virta on $I = \dfrac{12{,}0\,\text{V}}{0{,}80\,\Omega + 2{,}0\,\Omega} = \dfrac{12{,}0\,\text{V}}{2{,}8\,\Omega} = 4{,}3\,\text{A}$.
-**Vastaus:** $I \approx 4{,}3\,\text{A}$. Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin (todellinen toiminta-aika riippuu sulakkeen tyypistä, joten tämä on yksinkertaistus). Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \approx 8{,}6\,\text{V}$, joten ne palavat himmeämmin kuin aiemmin. Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
+**Vastaus:** $I \approx 4{,}3\,\text{A}$.
+
+Virta ylittää sekä sulakkeen nimellisvirran $3{,}15\,\text{A}$ että kaapelin sallitun virran $4{,}0\,\text{A}$, joten sulake todennäköisesti palaa ylivirran jatkuessa ja katkaisee piirin (todellinen toiminta-aika riippuu sulakkeen tyypistä, joten tämä on yksinkertaistus).
+
+Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \approx 8{,}6\,\text{V}$, joten ne palavat himmeämmin kuin aiemmin.
+
+Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvirta on kaapelin sallittua virtaa pienempi, jotta kaapeli ei lämpene vaarallisesti ennen kuin piiri katkeaa.
 **Järkevyys:** Kolmas lamppu pienentää rinnankytkennän resistanssin $4{,}0\,\Omega$:sta $2{,}0\,\Omega$:iin, joten virran täytyy kasvaa $2{,}5\,\text{A}$:sta. Jos sulaketta ei olisi, kaapeliin siirtyisi lämpönä $0{,}80\,\Omega \cdot (4{,}3\,\text{A})^2 \approx 15\,\text{W}$, melkein kolminkertainen teho aiempaan $5{,}0\,\text{W}$:iin verrattuna. Lamppujen resistanssit on laskettu nimellisarvoista, joten tulos on arvio.
 
 ### Hyväksytään myös
@@ -755,7 +784,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** $20\,\text{cm} = 0{,}20\,\text{m}$ ja $60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6{,}0 \cdot 10^{4}\,\text{V}$.
 **Sijoitus:** $E = \dfrac{6{,}0 \cdot 10^{4}\,\text{V}}{0{,}20\,\text{m}} = 3{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 3{,}0 \cdot 10^{5}\,\text{V/m} = 1{,}8 \cdot 10^{-7}\,\text{N}$
 **Vastaus:** $F \approx 1{,}8 \cdot 10^{-7}\,\text{N}$ kentän suuntaan kohti työkappaletta, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
+**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $$3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
 
 ### b)
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
@@ -763,18 +792,18 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
 **Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Sijoitus:** $qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} = 3{,}6 \cdot 10^{-8}\,\text{J}$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
+**Sijoitus:** $$\begin{aligned} qU &= 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} \\ &= 3{,}6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
 **Vastaus:** $v \approx 13\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} = 13{,}4\,\text{m/s}$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
+**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} \\ &= 13{,}4\,\text{m/s} \end{aligned}$$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
 
 ### c)
 **Kysytty:** miksi mitattu osumanopeus $5{,}0\,\text{m/s}$ on paljon pienempi kuin b-kohdan tulos ja minne sähkökentän tekemä työ jää
 **Periaate:** B-kohdan malli jätti ilmanvastuksen pois. Ilmanvastus vaikuttaa pisaran liikkeen suuntaa vastaan, ja sen tekemä työ on negatiivista. Kun pisaran nopeus kasvaa, ilmanvastus kasvaa, ja pisara etenee nopeudella, jolla ilmanvastus ja sähkövoima ovat likimain yhtä suuret. Energian säilymisen mukaan sähkökentän tekemä työ ei häviä, vaan se siirtyy muualle.
 **Mallivastaus:** *Selitys.* B-kohdan nopeus $13\,\text{m/s}$ olisi mahdollinen vain tyhjiössä. Ilmassa ilmanvastus rajoittaa nopeuden paljon pienemmäksi, joten b-kohdan tulos on pisaran suurin mahdollinen nopeus eli yläraja.
 
-*Laskenta.* Pisaran todellinen liike-energia on $\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot (5{,}0\,\text{m/s})^2 = 5{,}0 \cdot 10^{-9}\,\text{J}$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
+*Laskenta.* Pisaran todellinen liike-energia on $$\begin{aligned} \dfrac{1}{2} m v^2 &= \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \\ &\cdot (5{,}0\,\text{m/s})^2 \\ &= 5{,}0 \cdot 10^{-9}\,\text{J} \end{aligned}$$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
 
-*Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
+*Energian kohtalo.* Loput $$\begin{aligned} &3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} \\ &= 3{,}1 \cdot 10^{-8}\,\text{J} \end{aligned}$$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
 
 *Johtopäätös.* B-kohdan oletus (ei ilmanvastusta) tekee nopeudesta liian suuren, joten tulos on suurin mahdollinen nopeus. Energia ei häviä, vaan se siirtyy ilmaan.
 
@@ -784,7 +813,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Pisarat ovat paljon pienempiä kuin niiden etäisyys, joten ne voi käsitellä pistemäisinä varauksina. Niiden välinen voima noudattaa Coulombin lakia: samanmerkkiset varaukset hylkivät toisiaan.
 **Kaava:** $F = k\dfrac{q_1 q_2}{r^2}$
 **Muunnokset:** $1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
-**Sijoitus:** $F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} = 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} = 3{,}2 \cdot 10^{-9}\,\text{N}$
+**Sijoitus:** $$\begin{aligned} F &= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} \\ &= 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} \\ &= 3{,}2 \cdot 10^{-9}\,\text{N} \end{aligned}$$
 **Vastaus:** $F \approx 3{,}2 \cdot 10^{-9}\,\text{N}$, hylkivä, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Voima on noin $1{,}8\,\%$ kentän voimasta $1{,}8 \cdot 10^{-7}\,\text{N}$ mutta $0{,}8$-kertainen pisaran painoon $3{,}9 \cdot 10^{-9}\,\text{N}$ verrattuna. Hylkimisvoima on siis pieni verrattuna sähkökentän voimaan, joten pisarat kulkevat edelleen kohti työkappaletta, mutta hylkiminen levittää pisarapilveä sivusuunnassa. Tämä on osa sitä, miksi suihku leviää suuttimen jälkeen.
 
@@ -796,7 +825,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 - Potentiaaliero $60\,\text{kV}$ sijoitetaan kilovoltteina, jolloin kenttä saadaan väärin tuhatkertaisena tai tuhannesosana.
 - Voimaksi lasketaan $U : d$, jolloin kentän voimakkuus sekoitetaan voimaan.
 - b-kohdassa käytetään kaavaa $v = \sqrt{2 a d}$ kiihtyvyydellä $g$ tai lasketaan työ painosta.
-- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
+- Pisaran energian ilmoitetaan "häviävän" tai "hukkuvan"; energia siirtyy ilmaan, jonka sisäenergia kasvaa, ja sieltä lämpönä ympäristöön.
 - d-kohdassa etäisyys sijoitetaan millimetreinä, tai unohdetaan neliöinti.
 
 ## fy6-s4
@@ -817,7 +846,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Salamaan siirtynyt energia on kondensaattorin energian muutos: se on energia ennen salamaa vähennettynä energialla salaman jälkeen. Jännite on energiakaavassa neliönä, joten kumpikin energia lasketaan erikseen; pelkkä jännitteen muutos $\Delta U$ ei riitä.
 **Kaava:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7{,}99\,\text{J}$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
+**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
 **Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
@@ -827,20 +856,20 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Virta on varauksen siirtymisnopeus. Kondensaattorin varaus on $Q = C U$, joten jännitteen pienentyessä $80\,\text{V}$ kondensaattorilta on lähtenyt varausta $\Delta Q = C\,\Delta U$ salamaputken kautta.
 **Kaava:** $I = \dfrac{\Delta Q}{\Delta t}$ ja $\Delta Q = C\,\Delta U$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ ja $1{,}0\,\text{ms} = 1{,}0 \cdot 10^{-3}\,\text{s}$
-**Sijoitus:** $\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0{,}0264\,\text{C}$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
+**Sijoitus:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0{,}0264\,\text{C} \end{aligned}$$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
 **Vastaus:** $I \approx 26\,\text{A}$, kaksi merkitsevää numeroa kuten keston $1{,}0\,\text{ms}$ tarkkuus.
 **Järkevyys:** Keskiteho on $\dfrac{6{,}86\,\text{J}}{1{,}0 \cdot 10^{-3}\,\text{s}} \approx 6{,}9\,\text{kW}$ ja virta $26\,\text{A}$: nämä ovat paljon suurempia kuin pieni paristo voisi antaa näin lyhyessä pulssissa. Siksi energia varastoidaan ensin kondensaattoriin, joka luovuttaa sen nopeasti.
 
 ### d)
-**Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
+**Kysytty:** miksi kondensaattori voi olla vaarallinen pariston irrottamisen jälkeen, kuinka suuri virta kulkisi laskennallisesti kehon läpi ja miksi huolto kuuluu ammattilaiselle
 **Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
-*Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
+*Virta.* Lasketaan idealisoitu arvio kuvitellussa kosketustilanteessa. Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
 
-*Turvallinen purku* (vain ymmärtämiseksi: älä yritä purkaa kondensaattoria itse). Kondensaattorin napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\,\text{k}\Omega$. Alkuvirta on silloin $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, ja kondensaattorin energia siirtyy vastuksen sisäenergiaksi ja siitä lämpönä ympäristöön. Vastuksen teho on aluksi $\dfrac{(300\,\text{V})^2}{10\,\text{k}\Omega} = 9\,\text{W}$, joten vastuksen tehonkeston on oltava sen mukainen. Napoja ei oikosulkuteta ruuvimeisselillä, koska silloin virta on hyvin suuri ja syntyy kipinä. Lopuksi jännite varmistetaan mittarilla.
+*Huolto kuuluu ammattilaiselle.* Turvallinen huolto edellyttää, että kondensaattorin varattu energia poistetaan hallitusti ja jännitteettömyys varmistetaan luotettavasti ennen kuin laitteen sisäosiin kosketaan. Tämä vaatii perehtymistä laitteeseen sekä oikeat välineet ja menettelyt, joten huoltoa ei saa yrittää ilman asianmukaista pätevyyttä.
 
-*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, joten laskettu virta on suuruusluokka-arvio.
+*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta: kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, ja virta pienenee kondensaattorin purkautuessa.
 
 ### Hyväksytään myös
 - a-kohdassa energian saa laskea myös kaavalla $E = \dfrac{1}{2} Q U$, missä $Q = C U = 0{,}099\,\text{C}$.
@@ -852,7 +881,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 - Energian laskemisessa unohdetaan jännitteen neliöinti, tai salamaan siirtynyt energia lasketaan kaavasta $\tfrac{1}{2} C (\Delta U)^2$.
 - Virta lasketaan jakamalla energia ajalla, jolloin saadaan teho.
 - Todetaan, että kondensaattori on vaaraton, koska laitteessa on vain pieni paristo.
-- Kondensaattori puretaan oikosulkemalla se metallityökalulla.
+- Laskettua kehon virtaa pidetään tarkkana arvona, vaikka se on idealisoitu suuruusluokka-arvio.
 ```
 
 ## lessons/FY6/sovella/answers.py
@@ -940,9 +969,9 @@ C4, U4a, U4b, t4 = 330e-6, 300.0, 220.0, 1.0e-3
 Ea, Eb = 0.5 * C4 * U4a ** 2, 0.5 * C4 * U4b ** 2
 dE = Ea - Eb
 dQ = C4 * (U4a - U4b)
-out.update({"fy6-s4-a": round(Ea, 3), "fy6-s4-b": round(dE, 3), "fy6-s4-b-Eb": round(Eb, 3), "fy6-s4-b-share": round(dE / Ea, 4),
+out.update({"fy6-s4-a": round(Ea, 3), "fy6-s4-b-E": round(dE, 3), "fy6-s4-b-Eb": round(Eb, 3), "fy6-s4-b-share": round(100 * dE / Ea, 2),
             "fy6-s4-c": round(dQ / t4, 3), "fy6-s4-c-dQ": round(dQ * 1e3, 3), "fy6-s4-c-P": round(dE / t4, 1),
-            "fy6-s4-Qa": round(C4 * U4a, 4), "fy6-s4-d-I": round(U4a / 1000.0, 3), "fy6-s4-d-Ires": round(U4a / 10e3 * 1e3, 3)})
+            "fy6-s4-Qa": round(C4 * U4a, 4), "fy6-s4-d-I": round(U4a / 1000.0, 3)})
 print(json.dumps(out))
 ```
 

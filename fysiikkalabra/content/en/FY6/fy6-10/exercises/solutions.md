@@ -131,7 +131,7 @@ In Coulomb's law the magnitude of the third charge and $k$ are the same in both 
 When the rod has gained extra electrons and become negatively charged, the wool has lost the same number of electrons and become positively charged.
 **Model answer:** The correct statement is the one according to which the charge of the wool is positive and equal in magnitude to the charge of the rod, because electrons moved from the wool to the rod.
 
-The statement that the wool would stay neutral is wrong, because the electrons the rod gained are not created out of nothing. The statement about charge disappearing as heat is wrong, because charge does not turn into heat but is conserved.
+The statement that the wool would stay neutral is wrong, because the electrons the rod gained are not created out of nothing. The statement about charge disappearing is wrong, because charge is conserved.
 
 The statement that the wool would be negative too is wrong, because both objects cannot gain electrons without them coming from somewhere.
 
