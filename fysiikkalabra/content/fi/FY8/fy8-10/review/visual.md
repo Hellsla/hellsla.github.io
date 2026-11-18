@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a794501f2c9dba0f
+CONTENT-HASH: 36c15f8b62d12e9c
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: a794501f2c9dba0f
 - none
 
 ## Checked
-- Delta round 4, long formulas re-set as aligned blocks. Judged from source: the diff only re-sets one display block (first row the left-hand side alone, each + or - term whole); the same shared aligned renderer was seen in fy8-1 captures, so the layout is as there; not opened separately.
-- Words, numbers and units unchanged by the diff.
+- Delta round 1: Kertaa-prompt of the alfa-decay task reworded (inquiry.json); lesson.md only re-cut into paragraphs, figures teacher-approved.
+- Opened open-ennusta-1280, stage-ennusta-390-2, theory-1280-1 (paragraph cuts, formula blocks, table, figure start intact). Inline maths of the new prompt is LaTeX; the sentences are fluent and the added helium-4 line reads naturally before the question.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
