@@ -443,3 +443,208 @@ $$
 
 ### Hyväksytään myös
 - In part a the energy in kilowatt-hours: $19.2\,\text{kWh} : 3.0\,\text{kW} = 6.4\,\text{h}$.
+
+## fy9-tasavirta-s7
+
+### a)
+**Given:** the characteristic curve $U(I)$ of a filament lamp; voltage $U = 2.0\,\text{V}$
+**Find:** the resistance $R$ of the lamp when $U = 2.0\,\text{V}$
+**Principle:** Resistance is the ratio of the voltage to the current, $R = U/I$ (chapter *Resistance and Ohm's law*). The curve of the lamp is not a straight line, so the resistance has to be calculated separately at each point. The slope of the curve is not the resistance.
+**Reading the graph:** At the voltage $2.0\,\text{V}$ the current is read off the curve: $I \approx 0.21\,\text{A}$. The grid spacing is $0.05\,\text{A}$, so the reading is accurate to about $\pm 0.01\,\text{A}$.
+**Formula:** $R = \dfrac{U}{I}$
+**Conversions:** None needed: the voltage is in volts and the current in amperes.
+**Substitution:** $$
+\begin{aligned}
+R &= \dfrac{2.0\,\text{V}}{0.21\,\text{A}} \\
+&= 9.52\,\Omega
+\end{aligned}
+$$
+**Answer:** $R \approx 9.5\,\Omega$, two significant figures like the values read from the graph.
+**Reasonableness:** The power of the lamp is $2.0\,\text{V} \cdot 0.21\,\text{A} \approx 0.42\,\text{W}$, which suits a small lamp. The readings $0.20\,\text{A}$ and $0.22\,\text{A}$ would give $10\,\Omega$ and $9.1\,\Omega$, so two figures are reliable.
+
+### b)
+**Given:** the characteristic curve and the voltage $U = 3.0\,\text{V}$
+**Find:** the resistance $R$ at $3.0\,\text{V}$ and the reason why it differs from the value in part a
+**Principle:** The resistance is again the ratio of the voltage to the current at that point (chapter *Resistance and Ohm's law*). The resistance of a filament grows when the filament gets hot.
+**Reading the graph:** The current for the voltage $3.0\,\text{V}$ is read at the end point of the curve: $I = 0.25\,\text{A}$.
+**Formula:** $R = \dfrac{U}{I}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+R &= \dfrac{3.0\,\text{V}}{0.25\,\text{A}} \\
+&= 12\,\Omega
+\end{aligned}
+$$
+**Model answer:** At $3.0\,\text{V}$ the resistance is $12\,\Omega$, about $1.3$ times the value $9.5\,\Omega$ at $2.0\,\text{V}$. As the voltage grows, the current and the power of the lamp grow and the filament gets hotter. In a hot metal wire the ions vibrate more strongly and hinder the motion of the electrons more, so the resistance grows. That is why the curve bends, that is, $U$ grows faster than $I$, and the lamp does not obey Ohm's law: a resistor of constant resistance would give a straight line.
+**Reasonableness:** The curve gets steeper all the way, so the resistance must grow with the voltage. The reading $12\,\Omega$ is larger than $9.5\,\Omega$, as it should be.
+
+### c)
+**Given:** battery voltage $E = 4.0\,\text{V}$, largest voltage of the lamp $U_\text{L} = 3.0\,\text{V}$ and the characteristic curve
+**Find:** the connection of the resistor and its resistance $R$
+**Principle:** The largest voltage of the lamp, $3.0\,\text{V}$, is smaller than the $4.0\,\text{V}$ of the battery, so the rest of the voltage has to be taken by the resistor. The resistor is connected in series with the lamp: in series the current is the same and the voltages add, $E = U_\text{L} + U_\text{R}$ (chapters *Resistors in series and in parallel* and *Kirchhoff's laws and potential in a circuit*). In parallel the lamp would have the whole $4.0\,\text{V}$, so that does not help.
+**Reading the graph:** The current for the voltage $3.0\,\text{V}$ is read at the end point of the curve: $I = 0.25\,\text{A}$. The same current goes through the resistor.
+**Formula:** $U_\text{R} = E - U_\text{L}$ and $R = \dfrac{U_\text{R}}{I}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+U_\text{R} &= 4.0\,\text{V} - 3.0\,\text{V} \\
+&= 1.0\,\text{V}
+\end{aligned}
+$$; $$
+\begin{aligned}
+R &= \dfrac{1.0\,\text{V}}{0.25\,\text{A}} \\
+&= 4.0\,\Omega
+\end{aligned}
+$$
+**Answer:** The resistor is connected in series with the lamp, and its resistance must be $R = 4.0\,\Omega$. Two significant figures like the voltages.
+**Reasonableness:** The resistance of the whole circuit is $\dfrac{4.0\,\text{V}}{0.25\,\text{A}} = 16\,\Omega$ and that of the lamp $12\,\Omega$ (part b), so the resistor gets $16\,\Omega - 12\,\Omega = 4.0\,\Omega$, the same result.
+
+### d)
+**Given:** $E = 4.0\,\text{V}$, $U_\text{L} = 3.0\,\text{V}$, $U_\text{R} = 1.0\,\text{V}$ and $I = 0.25\,\text{A}$
+**Find:** the power $P_\text{L}$ of the lamp, the power $P_\text{R}$ of the resistor and the share of the lamp in the power of the battery
+**Principle:** Electric power is the product of the voltage and the current, $P = UI$ (chapter *Electric power and the heating of a resistor*). The power of the battery equals the sum of the powers of the lamp and the resistor.
+**Formula:** $P = UI$ and share $= \dfrac{P_\text{L}}{P}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+P_\text{L} &= 3.0\,\text{V} \cdot 0.25\,\text{A} \\
+&= 0.75\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P_\text{R} &= 1.0\,\text{V} \cdot 0.25\,\text{A} \\
+&= 0.25\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P &= 4.0\,\text{V} \cdot 0.25\,\text{A} \\
+&= 1.0\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\text{share} &= \dfrac{0.75\,\text{W}}{1.0\,\text{W}} \\
+&= 0.75 \\
+&= 75\,\%
+\end{aligned}
+$$
+**Answer:** The power of the lamp is $P_\text{L} = 0.75\,\text{W}$ and that of the resistor $P_\text{R} = 0.25\,\text{W}$. In the lamp $75\,\%$ of the power of the battery is transferred, two significant figures like the voltages.
+**Reasonableness:** The power divides in the same ratio as the voltage, $3.0 : 1.0$, because the current is the same; and $0.75\,\text{W} + 0.25\,\text{W} = 1.0\,\text{W}$. The resistor, $0.25\,\text{W}$, warms up only a little.
+
+### Yleisiä virheitä
+- In part a the resistance is taken from the slope of the curve or calculated as $R = I/U$, which gives the reciprocal $0.105\,\text{S}$, not a resistance.
+- In part b it is assumed that the lamp obeys Ohm's law and the resistance stays the same, or the explanation is only "the curve bends" without the heating.
+- In part c the resistor is connected in parallel with the lamp, or the voltage of the resistor is taken as $4.0\,\text{V}$ instead of $1.0\,\text{V}$.
+- In part d the power of the resistor is calculated as $R I^2$ with a wrong current, or the share of the lamp is divided by the power of the resistor ($0.75 : 0.25 = 3.0$) instead of the total power.
+
+### Hyväksytään myös
+- In part c the resistance of the resistor can also be calculated from the resistance of the whole circuit: $R = \dfrac{E}{I} - R_\text{L} = 16\,\Omega - 12\,\Omega = 4.0\,\Omega$.
+- In part d the power of the battery can also be calculated as the sum of the powers $P_\text{L} + P_\text{R}$.
+
+## fy9-tasavirta-s8
+
+### a)
+**Given:** $E = 12\,\text{V}$, $R_3 = 20\,\Omega$, $R_1 = 60\,\Omega$ and $R_2 = 30\,\Omega$; internal resistance and resistance of the wires $= 0$
+**Find:** the current $I$ through the battery
+**Principle:** The figure shows that the $60\,\Omega$ and $30\,\Omega$ resistors are in parallel and that group is in series with the $20\,\Omega$ resistor. The resistance of a parallel connection is smaller than either resistor, and in series the resistances add (chapter *Resistors in series and in parallel*). The current of the battery follows from Ohm's law once the total resistance is known (chapter *Resistance and Ohm's law*).
+**Formula:** $R_\text{p} = \dfrac{R_1 R_2}{R_1 + R_2}$, $R = R_3 + R_\text{p}$ and $I = \dfrac{E}{R}$
+**Conversions:** None needed: all quantities are in base units.
+**Substitution:** $$
+\begin{aligned}
+R_\text{p} &= \dfrac{60\,\Omega \cdot 30\,\Omega}{60\,\Omega + 30\,\Omega} \\
+&= 20\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+R &= 20\,\Omega + 20\,\Omega \\
+&= 40\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+I &= \dfrac{12\,\text{V}}{40\,\Omega} \\
+&= 0.30\,\text{A}
+\end{aligned}
+$$
+**Answer:** The current through the battery is $I = 0.30\,\text{A}$, two significant figures like the voltage and the resistances.
+**Reasonableness:** The current is smaller than $\dfrac{12\,\text{V}}{20\,\Omega} = 0.60\,\text{A}$, because the other resistors add resistance. It is larger than $\dfrac{12\,\text{V}}{110\,\Omega} \approx 0.11\,\text{A}$, which would result if all the resistors were in series.
+
+### b)
+**Given:** $E = 12\,\text{V}$, $R_3 = 20\,\Omega$, $R_1 = 60\,\Omega$, $R_2 = 30\,\Omega$ and $I = 0.30\,\text{A}$ from part a
+**Find:** the currents $I_{60}$ and $I_{30}$
+**Principle:** The whole current $I$ goes through the $20\,\Omega$ resistor. By Kirchhoff's voltage law the voltage left for the parallel resistors is $U_\text{p} = E - I R_3$, and it is the same across both of them (chapter *Kirchhoff's laws and potential in a circuit*). The current in each follows from Ohm's law.
+**Formula:** $U_\text{p} = E - I R_3$ and $I_k = \dfrac{U_\text{p}}{R_k}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+U_\text{p} &= 12\,\text{V} - 0.30\,\text{A} \cdot 20\,\Omega \\
+&= 6.0\,\text{V}
+\end{aligned}
+$$; $$
+\begin{aligned}
+I_{60} &= \dfrac{6.0\,\text{V}}{60\,\Omega} \\
+&= 0.10\,\text{A}
+\end{aligned}
+$$; $$
+\begin{aligned}
+I_{30} &= \dfrac{6.0\,\text{V}}{30\,\Omega} \\
+&= 0.20\,\text{A}
+\end{aligned}
+$$
+**Answer:** The current in the $60\,\Omega$ resistor is $I_{60} = 0.10\,\text{A}$ and in the $30\,\Omega$ resistor $I_{30} = 0.20\,\text{A}$. Two significant figures like the current of part a.
+**Reasonableness:** Together the currents are $0.10\,\text{A} + 0.20\,\text{A} = 0.30\,\text{A}$, the same as the current of the battery. The smaller resistance takes the larger current, and the ratio of the currents is $1 : 2$, the inverse of the ratio of the resistances.
+
+### c)
+**Given:** $R_3 = 20\,\Omega$, $E = 12\,\text{V}$ and $I = 0.30\,\text{A}$
+**Find:** the power $P_{20}$ of the $20\,\Omega$ resistor and the power $P$ of the whole connection
+**Principle:** The power of a resistor is $P = R I^2$ (chapter *Electric power and the heating of a resistor*). The power that the battery delivers to the whole circuit is $P = EI$, because the losses in the battery and the wires are neglected.
+**Formula:** $P_{20} = R_3 I^2$ and $P = EI$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+P_{20} &= 20\,\Omega \cdot (0.30\,\text{A})^2 \\
+&= 1.8\,\text{W}
+\end{aligned}
+$$; $$
+\begin{aligned}
+P &= 12\,\text{V} \cdot 0.30\,\text{A} \\
+&= 3.6\,\text{W}
+\end{aligned}
+$$
+**Answer:** The power of the $20\,\Omega$ resistor is $P_{20} = 1.8\,\text{W}$ and that of the whole connection $P = 3.6\,\text{W}$, two significant figures like the current.
+**Reasonableness:** The powers of the other resistors are $60\,\Omega \cdot (0.10\,\text{A})^2 = 0.60\,\text{W}$ and $30\,\Omega \cdot (0.20\,\text{A})^2 = 1.2\,\text{W}$. Together $1.8\,\text{W} + 0.60\,\text{W} + 1.2\,\text{W} = 3.6\,\text{W}$, the same as the power of the battery.
+
+### d)
+**Given:** the $30\,\Omega$ resistor is removed; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ and $R_1 = 60\,\Omega$; before, $P_{60} = 0.60\,\text{W}$ and $I = 0.30\,\text{A}$
+**Find:** the new power $P_{60}'$ of the $60\,\Omega$ resistor and the change
+**Principle:** Now the $20\,\Omega$ and $60\,\Omega$ resistors are in series, and the resistance of the circuit is their sum (chapter *Resistors in series and in parallel*). Prediction: the current falls, but the voltage across the $20\,\Omega$ resistor falls with it, so a larger voltage is left for the $60\,\Omega$ resistor and its power grows. Kirchhoff's voltage law gives the voltage and the power is $P = U^2/R$ (chapters *Kirchhoff's laws and potential in a circuit* and *Electric power and the heating of a resistor*).
+**Model answer:** Without the $30\,\Omega$ resistor the circuit has only $R_3$ and $R_1$ in series. $$
+\begin{aligned}
+R &= 20\,\Omega + 60\,\Omega \\
+&= 80\,\Omega
+\end{aligned}
+$$ and $$
+\begin{aligned}
+I &= \dfrac{12\,\text{V}}{80\,\Omega} \\
+&= 0.15\,\text{A}
+\end{aligned}
+$$ The voltage across $R_1$ is $$
+\begin{aligned}
+U_1 &= 12\,\text{V} - 0.15\,\text{A} \cdot 20\,\Omega \\
+&= 9.0\,\text{V}
+\end{aligned}
+$$ and its power $$
+\begin{aligned}
+P_{60}' &= \dfrac{(9.0\,\text{V})^2}{60\,\Omega} \\
+&= 1.35\,\text{W}
+\end{aligned}
+$$ The power grows from $0.60\,\text{W}$ to $1.35\,\text{W}$, that is, $2.3$ times as large, although the current of the battery falls from $0.30\,\text{A}$ to $0.15\,\text{A}$. The voltage across the resistor grows from $6.0\,\text{V}$ to $9.0\,\text{V}$, and the power grows as the square of the voltage: $(9.0 : 6.0)^2 = 2.25$.
+**Reasonableness:** Check with the current: $P_{60}' = 60\,\Omega \cdot (0.15\,\text{A})^2 = 1.35\,\text{W}$, the same result.
+
+### Yleisiä virheitä
+- In part a the $60\,\Omega$ and $30\,\Omega$ are added ($90\,\Omega$), or the resistance of the parallel connection is taken as $1 : 60 + 1 : 30$ without the reciprocal, so the total resistance is wrong.
+- In part b the voltage across the parallel resistors is taken as the whole $12\,\text{V}$ of the battery, although the $20\,\Omega$ resistor takes part of the voltage.
+- In part c the power of the $20\,\Omega$ resistor is calculated as $12\,\text{V} \cdot 0.30\,\text{A}$, the power of the whole connection, or the current is not squared.
+- In part d it is concluded that as the current falls, the power of the $60\,\Omega$ resistor falls too, although its voltage grows.
+
+### Hyväksytään myös
+- In part a the resistance of the parallel connection can be calculated as a sum of reciprocals: $\dfrac{1}{R_\text{p}} = \dfrac{1}{60\,\Omega} + \dfrac{1}{30\,\Omega} = \dfrac{1}{20\,\Omega}$.
+- In part d the power can be calculated as $R I^2$ or $UI$.

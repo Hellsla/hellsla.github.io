@@ -430,3 +430,155 @@ $$. Nauha venyy yli lepopituutensa, mikä on benjinauhalle tavallista; silta on 
 ### Hyväksytään myös
 - b-kohdassa nollataso sillan kohdalla, kun potentiaalienergian etumerkit ovat johdonmukaiset.
 - c-kohdassa vastaus muodossa $a \approx 2{,}7g$ ylöspäin.
+
+## fy9-aallot-s7
+
+### a)
+**Annettu:** ruudukossa yksi ruutu on $0{,}50\,\text{m}$; $S_1$:n ja $\text{P}$:n väli on $12$ ruutua vaakasuoraan; $S_2$ on samassa pystylinjassa $S_1$:n yläpuolella $5$ ruutua; $\text{P}$ on samalla vaakalinjalla kuin $S_1$
+**Kysytty:** matkat $s_1$ ja $s_2$ sekä matkaero $\Delta s = s_2 - s_1$
+**Periaate:** Matka $s_1$ kulkee ruudukkoa pitkin, joten se saadaan ruutujen lukumäärästä. Matka $s_2$ on suorakulmaisen kolmion hypotenuusa, jonka kateetit ovat $s_1$ ja kaiuttimien väli $d$ (Pythagoraan lause). Matkaero on kahden matkan erotus (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*).
+**Kuvaajan lukeminen:** Kuvasta luetaan ruutujen lukumäärät: $S_1$:stä pisteeseen $\text{P}$ on $12$ ruutua ja $S_1$:n ja $S_2$:n väli on $5$ ruutua.
+**Kaava:** $s_1 = 12\,a$, $d = 5\,a$ ja $s_2 = \sqrt{s_1^2 + d^2}$, joten $\Delta s = s_2 - s_1$; tässä $a = 0{,}50\,\text{m}$ on ruudun sivu.
+**Muunnokset:** Ruutujen lukumäärät muunnetaan metreiksi ruudun sivun avulla.
+**Sijoitus:** $$
+\begin{aligned}
+s_1 &= 12 \cdot 0{,}50\,\text{m} \\
+&= 6{,}0\,\text{m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+d &= 5 \cdot 0{,}50\,\text{m} \\
+&= 2{,}5\,\text{m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+s_2 &= \sqrt{(6{,}0\,\text{m})^2 + (2{,}5\,\text{m})^2} \\
+&= \sqrt{42{,}25\,\text{m}^2} \\
+&= 6{,}5\,\text{m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta s &= 6{,}5\,\text{m} - 6{,}0\,\text{m} \\
+&= 0{,}50\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $s_1 = 6{,}0\,\text{m}$, $s_2 = 6{,}5\,\text{m}$ ja $\Delta s = 0{,}50\,\text{m}$. Tuloksissa on kaksi merkitsevää numeroa, kuten ruutujen lukumäärissä ja ruudun koossa.
+**Järkevyys:** Kolmion sivut $6{,}0\,\text{m}$, $2{,}5\,\text{m}$ ja $6{,}5\,\text{m}$ ovat suhteessa $12 : 5 : 13$. Hypotenuusa on kateettia pidempi mutta lyhyempi kuin kateettien summa $8{,}5\,\text{m}$. Matkaero ei voi olla suurempi kuin kaiuttimien väli $2{,}5\,\text{m}$, ja se on pienempi.
+
+### b)
+**Annettu:** $f = 343\,\text{Hz}$ ja $v = 343{,}4\,\text{m/s}$
+**Kysytty:** aallonpituus $\lambda$ ilmassa
+**Periaate:** Jaksollisessa aallossa aalto etenee yhden aallonpituuden yhdessä jaksossa, joten $v = \lambda f$ (luku *Aaltojen synty ja eteneminen*).
+**Kaava:** $v = \lambda f$, joten $\lambda = \dfrac{v}{f}$
+**Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja taajuus yksikössä $\text{Hz} = 1/\text{s}$.
+**Sijoitus:** $$
+\begin{aligned}
+\lambda &= \dfrac{343{,}4\,\text{m/s}}{343\,\text{Hz}} \\
+&\approx 1{,}00\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $\lambda \approx 1{,}00\,\text{m}$, kolme merkitsevää numeroa kuten nopeudessa.
+**Järkevyys:** Tavallisen puheen ja musiikin aallonpituudet ovat noin $0{,}3\ldots 3\,\text{m}$, joten metri sopii. Matkaero $0{,}50\,\text{m}$ on puolet siitä.
+
+### c)
+**Annettu:** $\Delta s = 0{,}50\,\text{m}$ ja $\lambda = 1{,}00\,\text{m}$; kaiuttimet toistavat ääntä samassa vaiheessa
+**Kysytty:** onko pisteessä $\text{P}$ ääni voimakas vai vaimea
+**Periaate:** Kun lähteet ovat samassa vaiheessa, aallot vahvistavat toisiaan, jos $\Delta s = n\lambda$, ja kumoavat toisensa, jos $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Aallonpituutta verrataan siis matkaeroon.
+**Mallivastaus:** Matkaero on $\dfrac{\Delta s}{\lambda} = \dfrac{0{,}50\,\text{m}}{1{,}00\,\text{m}} = 0{,}50$ eli puoli aallonpituutta. Toinen aalto on kulkenut puoli aallonpituutta pidemmän matkan, joten se saapuu pisteeseen $\text{P}$ vastakkaisvaiheessa: kun toinen aalto painaa ilmaa kokoon, toinen harventaa sitä. Aallot kumoavat toisensa, joten $\text{P}$ on vaimean äänen kohta, lähes hiljainen solmuviiva. Täysin hiljainen se ei ole, koska kauempana oleva kaiutin kuuluu hieman heikommin.
+
+### d)
+**Annettu:** $\Delta s = 0{,}50\,\text{m}$ ja $v = 343{,}4\,\text{m/s}$; alussa $f = 343\,\text{Hz}$, jolloin $\Delta s = \tfrac{1}{2}\lambda$
+**Kysytty:** pienin taajuus alkuperäistä suurempana, jolla pisteessä $\text{P}$ on voimakas ääni
+**Periaate:** Matkaero $\Delta s$ riippuu vain paikoista, ei taajuudesta. Voimakas ääni kuuluu, kun $\Delta s$ on kokonainen määrä aallonpituuksia, $\Delta s = n\lambda$. Taajuutta nostettaessa aallonpituus lyhenee, ja seuraava voimakas kohta tulee, kun $\Delta s = 1\cdot\lambda$.
+**Kaava:** $\lambda = \dfrac{v}{f} = \Delta s$, joten $f = \dfrac{v}{\Delta s}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+f &= \dfrac{343{,}4\,\text{m/s}}{0{,}50\,\text{m}} \\
+&= 686{,}8\,\text{Hz} \\
+&\approx 690\,\text{Hz}
+\end{aligned}
+$$
+**Vastaus:** Voimakas ääni kuuluu taas taajuudella $f \approx 690\,\text{Hz}$, kaksi merkitsevää numeroa kuten matkaerossa $0{,}50\,\text{m}$.
+**Järkevyys:** Alkuperäisellä taajuudella $343\,\text{Hz}$ matkaero oli puoli aallonpituutta. Kun aallonpituus puolittuu, sama matkaero on kokonainen aallonpituus, ja taajuuden täytyy kaksinkertaistua: $2 \cdot 343\,\text{Hz} \approx 690\,\text{Hz}$.
+
+### Yleisiä virheitä
+- a-kohdassa kaiuttimen $S_2$ matkaksi otetaan ruutujen summa $12 + 5 = 17$ ruutua ($8{,}5\,\text{m}$), vaikka matka kulkee vinosti suoraan pisteeseen $\text{P}$.
+- a-kohdassa ruutujen lukumäärät jätetään muuntamatta metreiksi, tai matkaeroksi lasketaan $s_1 + s_2$.
+- c-kohdassa ajatellaan, että pieni matkaero tarkoittaa aina voimakasta ääntä; ratkaisevaa on matkaeron suhde aallonpituuteen.
+- d-kohdassa lasketaan $f = v : \lambda = 343{,}4\,\text{m/s} : 1{,}00\,\text{m} \approx 343\,\text{Hz}$ eli alkuperäinen taajuus, vaikka matkaero on silloin vain puoli aallonpituutta.
+
+### Hyväksytään myös
+- c-kohdassa vastaus muodossa "vaihe-ero on $180^\circ$" tai "matkaero on $\left(n + \tfrac{1}{2}\right)\lambda$, kun $n = 0$".
+- d-kohdassa taajuus voidaan päätellä suhteesta: aallonpituus on puolet entisestä, joten taajuus on $2 \cdot 343\,\text{Hz}$.
+
+## fy9-aallot-s8
+
+### a)
+**Annettu:** narun pituus viivaimelta $L = 1{,}20\,\text{m}$ ja silmukoiden lukumäärä kuvasta $n = 4$; päät ovat solmuja
+**Kysytty:** aallonpituus $\lambda$ narussa
+**Periaate:** Seisovassa aallossa kahden vierekkäisen solmun väli on $\dfrac{\lambda}{2}$, ja yksi silmukka on solmujen väli (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Narun pituus on $n$ silmukkaa.
+**Kuvaajan lukeminen:** Viivaimen asteikolta täryttäjän kohta on $0$ ja väkipyörän kohta $1{,}20\,\text{m}$. Kuvassa on neljä yhtä pitkää silmukkaa.
+**Kaava:** $L = n\,\dfrac{\lambda}{2}$, joten $\lambda = \dfrac{2L}{n}$
+**Muunnokset:** Ei tarvita: pituus on metreinä.
+**Sijoitus:** $$
+\begin{aligned}
+\lambda &= \dfrac{2 \cdot 1{,}20\,\text{m}}{4} \\
+&= 0{,}60\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $\lambda = 0{,}60\,\text{m}$, kaksi merkitsevää numeroa kuten silmukoiden lukumäärässä ja pituudessa.
+**Järkevyys:** Yksi silmukka on $0{,}30\,\text{m}$ ja neljä silmukkaa $4 \cdot 0{,}30\,\text{m} = 1{,}20\,\text{m}$, kuten kuvassa.
+
+### b)
+**Annettu:** $f = 50\,\text{Hz}$ ja $\lambda = 0{,}60\,\text{m}$ a-kohdasta
+**Kysytty:** aallon nopeus $v$ narussa
+**Periaate:** Jaksollisessa aallossa $v = \lambda f$ (luku *Aaltojen synty ja eteneminen*). Seisovan aallon aallonpituus ja taajuus ovat samat kuin sen synnyttävien etenevien aaltojen.
+**Kaava:** $v = \lambda f$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v &= 50\,\text{Hz} \cdot 0{,}60\,\text{m} \\
+&= 30\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v = 30\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** Nopeus $30\,\text{m/s}$ on noin $110\,\text{km/h}$, mikä sopii kiristetylle narulle; aalto kulkee koko narun $1{,}20\,\text{m}$ noin $0{,}04\,\text{s}$:ssa.
+
+### c)
+**Annettu:** $L = 1{,}20\,\text{m}$ ja $v = 30\,\text{m/s}$ b-kohdasta; silmukoiden lukumäärä $n = 3$
+**Kysytty:** täryttäjän taajuus $f_3$
+**Periaate:** Aallon nopeus narussa määräytyy narun kireydestä ja massasta, ei täryttäjän taajuudesta (luku *Aaltojen synty ja eteneminen*). Punnus ja naru pysyvät samoina, joten nopeus on edelleen $30\,\text{m/s}$. Kolmella silmukalla $L = 3\cdot\dfrac{\lambda_3}{2}$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
+**Kaava:** $\lambda_3 = \dfrac{2L}{3}$ ja $v = f_3\lambda_3$, joten $f_3 = \dfrac{v}{\lambda_3} = \dfrac{3v}{2L}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+f_3 &= \dfrac{3 \cdot 30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
+&= \dfrac{90\,\text{m/s}}{2{,}40\,\text{m}} \\
+&= 37{,}5\,\text{Hz} \\
+&\approx 38\,\text{Hz}
+\end{aligned}
+$$
+**Vastaus:** Täryttäjän taajuus on $f_3 \approx 38\,\text{Hz}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
+**Järkevyys:** Aallonpituus on nyt $\dfrac{2 \cdot 1{,}20\,\text{m}}{3} = 0{,}80\,\text{m}$, suurempi kuin $0{,}60\,\text{m}$, joten taajuuden pitää olla pienempi kuin $50\,\text{Hz}$ ($38\,\text{Hz} < 50\,\text{Hz}$).
+
+### d)
+**Annettu:** $L = 1{,}20\,\text{m}$, $v = 30\,\text{m/s}$ ja $f = 20\,\text{Hz}$
+**Kysytty:** syntyykö selvä seisova aalto
+**Periaate:** Narun päissä on solmut, joten seisova aalto syntyy vain, kun narun pituus on kokonainen määrä puolia aallonpituuksia, $L = n\dfrac{\lambda}{2}$. Silloin taajuus on ominaistaajuus $f_n = n\dfrac{v}{2L}$ (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
+**Mallivastaus:** Alin ominaistaajuus on $$
+\begin{aligned}
+f_1 &= \dfrac{30\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} \\
+&= 12{,}5\,\text{Hz}
+\end{aligned}
+$$ Seuraava on $f_2 = 2 f_1 = 25\,\text{Hz}$. Taajuus $20\,\text{Hz}$ on näiden välissä: $\dfrac{20\,\text{Hz}}{12{,}5\,\text{Hz}} = 1{,}6$, eli narun pituuteen mahtuisi $1{,}6$ silmukkaa. Kokonaista silmukoiden määrää ei synny, joten päihin ei saada molempiin solmua. Narussa ei synny selvää seisovaa aaltoa: se värähtelee vain pienellä, epäsäännöllisellä amplitudilla.
+
+### Yleisiä virheitä
+- a-kohdassa aallonpituudeksi otetaan $\dfrac{L}{n} = 0{,}30\,\text{m}$, vaikka silmukka on vain puoli aallonpituutta.
+- c-kohdassa nopeudeksi lasketaan uusi arvo $\lambda f$ vanhalla taajuudella; nopeus ei kuitenkaan muutu, kun taajuutta muutetaan, vaan muuttuu aallonpituus.
+- c-kohdassa taajuudeksi otetaan $3 \cdot 50\,\text{Hz} = 150\,\text{Hz}$ tai $\dfrac{50\,\text{Hz}}{3}$.
+- d-kohdassa vastataan vain "ei, koska taajuus on liian pieni", vaikka syy on, ettei $20\,\text{Hz}$ ole ominaistaajuus.
+
+### Hyväksytään myös
+- c-kohdassa taajuus suhteesta $\dfrac{f_3}{f_1} = \dfrac{3}{1}$: $f_1 = 12{,}5\,\text{Hz}$, joten $f_3 = 37{,}5\,\text{Hz}$.
+- d-kohdassa perustelu nopeudella: kun $f = 20\,\text{Hz}$, aallonpituus on $\dfrac{30\,\text{m/s}}{20\,\text{Hz}} = 1{,}5\,\text{m}$, jolloin $\dfrac{L}{\lambda/2} = 1{,}6$ ei ole kokonaisluku.

@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style problems bring together the lesson's direct-current circuits, electric power and electrical energy. Solve them as in the exam: first work out the connection and the model and justify why the model suits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "intro": "Eight matriculation-exam-style problems bring together the lesson's direct-current circuits, electric power and electrical energy. Solve them as in the exam: first work out the connection and the model and justify why the model suits the situation, solve for the unknown before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
   "tasks": [
     {
       "id": "fy9-tasavirta-s1",
@@ -822,6 +822,314 @@
       "links": {
         "concept": "fy3-6",
         "math": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s7",
+      "title": "A filament lamp and the battery voltage",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy6-3",
+        "fy6-4",
+        "fy6-6"
+      ],
+      "figure": "fy6-3/lamp-curve",
+      "text": "The characteristic curve of a small filament lamp has been measured by varying the voltage across the lamp. The graph shows the voltage $U$ of the lamp as a function of the current $I$. The largest permitted voltage of the lamp is $3.0\\,\\text{V}$. The lamp is to be used with a $4.0\\,\\text{V}$ battery.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the resistance of the lamp when the voltage across it is $2.0\\,\\text{V}$.",
+          "answer": {
+            "value": 9.5,
+            "unit": "Ω",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The current for the voltage $2.0\\,\\text{V}$ is read off the curve: about $0.21\\,\\text{A}$ ($0.20\\ldots 0.22\\,\\text{A}$ is accepted)."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R = \\dfrac{U}{I}$ at this point; the slope of the tangent of the curve is not the resistance."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = \\dfrac{2.0\\,\\text{V}}{0.21\\,\\text{A}} = 9.5\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$R \\approx 9.5\\,\\Omega$ to two significant figures, like the values read from the graph."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 3,
+          "text": "Determine the resistance of the lamp also at the voltage $3.0\\,\\text{V}$ and explain why it differs from the value in part a.",
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Reads $I = 0.25\\,\\text{A}$ and calculates $R = \\dfrac{3.0\\,\\text{V}}{0.25\\,\\text{A}} = 12\\,\\Omega$, which is larger than $9.5\\,\\Omega$."
+            },
+            {
+              "text": "Explains the difference: as the voltage grows, the current and the power grow and the filament gets hotter, so its resistance grows. That is why the curve bends and the lamp does not obey Ohm's law.",
+              "tag": "concept",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "The lamp is to be used at its largest permitted voltage. Besides the battery, one resistor is available. How is the resistor connected, and how large must its resistance be?",
+          "answer": {
+            "value": 4.0,
+            "unit": "Ω",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies the connection: the resistor is connected in series with the lamp, so the current is the same and the battery voltage divides between the lamp and the resistor. In parallel, the lamp would have the whole $4.0\\,\\text{V}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The current for the voltage $3.0\\,\\text{V}$ is read at the end point of the curve: $0.25\\,\\text{A}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = U_\\text{L} + U_\\text{R}$, so $U_\\text{R} = E - U_\\text{L}$ and $R = \\dfrac{U_\\text{R}}{I}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R = \\dfrac{4.0\\,\\text{V} - 3.0\\,\\text{V}}{0.25\\,\\text{A}} = 4.0\\,\\Omega$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Check: the resistance of the whole circuit is $\\dfrac{4.0\\,\\text{V}}{0.25\\,\\text{A}} = 16\\,\\Omega$, and $12\\,\\Omega + 4.0\\,\\Omega = 16\\,\\Omega$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the power of the lamp and of the resistor in the connection of part c. What fraction of the power of the battery is transferred in the lamp?",
+          "answer": {
+            "value": 75.0,
+            "unit": "%",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = UI$ for each part and $P = EI$ for the power of the battery."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{L} = 3.0\\,\\text{V} \\cdot 0.25\\,\\text{A} = 0.75\\,\\text{W}$, $P_\\text{R} = 1.0\\,\\text{V} \\cdot 0.25\\,\\text{A} = 0.25\\,\\text{W}$ and $P = 4.0\\,\\text{V} \\cdot 0.25\\,\\text{A} = 1.0\\,\\text{W}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Together the powers make the power of the battery: $0.75\\,\\text{W} + 0.25\\,\\text{W} = 1.0\\,\\text{W}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The lamp gets $\\dfrac{0.75\\,\\text{W}}{1.0\\,\\text{W}} = 75\\,\\%$ of the power of the battery."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy6-3",
+        "concept": "fy6-3",
+        "math": "fy6-4",
+        "communication": "fy6-6"
+      }
+    },
+    {
+      "id": "fy9-tasavirta-s8",
+      "title": "A connection of three resistors",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy6-4",
+        "fy6-5",
+        "fy6-6"
+      ],
+      "figure": "fy6-4/siirto-mixed",
+      "text": "In the connection in the figure, three resistors of $20\\,\\Omega$, $60\\,\\Omega$ and $30\\,\\Omega$ are connected to a $12\\,\\text{V}$ battery. The internal resistance of the battery and the resistance of the wires are neglected.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the current through the battery?",
+          "answer": {
+            "value": 0.3,
+            "unit": "A",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Works out the connection from the figure: the $60\\,\\Omega$ and $30\\,\\Omega$ resistors are in parallel, and that group is in series with the $20\\,\\Omega$ resistor.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$R_\\text{p} = \\dfrac{R_1 R_2}{R_1 + R_2}$, $R = R_3 + R_\\text{p}$ and $I = \\dfrac{E}{R}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{p} = 20\\,\\Omega$, $R = 40\\,\\Omega$ and $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0.30\\,\\text{A}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I = 0.30\\,\\text{A}$ to two significant figures."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The current is smaller than with the $20\\,\\Omega$ resistor alone ($0.60\\,\\text{A}$) and larger than if all the resistors were in series ($\\approx 0.11\\,\\text{A}$)."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the current in the $60\\,\\Omega$ resistor, and how large in the $30\\,\\Omega$ resistor?",
+          "answer": [
+            {
+              "name": "I60",
+              "value": 0.1,
+              "unit": "A",
+              "tolerance": 0.02
+            },
+            {
+              "name": "I30",
+              "value": 0.2,
+              "unit": "A",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The voltage across resistors in parallel is the same: $U_\\text{p} = E - I R_3$ and $I_k = \\dfrac{U_\\text{p}}{R_k}$."
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$U_\\text{p} = 12\\,\\text{V} - 0.30\\,\\text{A} \\cdot 20\\,\\Omega = 6.0\\,\\text{V}$, $I_{60} = \\dfrac{6.0\\,\\text{V}}{60\\,\\Omega} = 0.10\\,\\text{A}$ and $I_{30} = \\dfrac{6.0\\,\\text{V}}{30\\,\\Omega} = 0.20\\,\\text{A}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$I_{60} = 0.10\\,\\text{A}$ and $I_{30} = 0.20\\,\\text{A}$ with units."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Together the currents make the current of the battery: $0.10\\,\\text{A} + 0.20\\,\\text{A} = 0.30\\,\\text{A}$, and the smaller resistance takes the larger current."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the power of the $20\\,\\Omega$ resistor and the power of the whole connection.",
+          "answer": [
+            {
+              "name": "P20",
+              "value": 1.8,
+              "unit": "W",
+              "tolerance": 0.02
+            },
+            {
+              "name": "P",
+              "value": 3.6,
+              "unit": "W",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = R I^2$ for the resistor and $P = EI$ for the whole connection."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_{20} = 20\\,\\Omega \\cdot (0.30\\,\\text{A})^2 = 1.8\\,\\text{W}$ and $P = 12\\,\\text{V} \\cdot 0.30\\,\\text{A} = 3.6\\,\\text{W}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_{20} = 1.8\\,\\text{W}$ and $P = 3.6\\,\\text{W}$ with units."
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Together the powers of the resistors make the power of the battery: $1.8\\,\\text{W} + 0.60\\,\\text{W} + 1.2\\,\\text{W} = 3.6\\,\\text{W}$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A student removes the $30\\,\\Omega$ resistor from the connection. How does the power of the $60\\,\\Omega$ resistor change? First predict, then justify by calculation.",
+          "criteria": [
+            {
+              "text": "Predicts and justifies: the resistance of the circuit grows and the current falls, but the voltage across the $20\\,\\Omega$ resistor falls, so a larger voltage is left for the $60\\,\\Omega$ resistor and its power grows.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 2,
+              "detail": "$R = 20\\,\\Omega + 60\\,\\Omega = 80\\,\\Omega$, $I = \\dfrac{12\\,\\text{V}}{80\\,\\Omega} = 0.15\\,\\text{A}$, $U = 12\\,\\text{V} - 0.15\\,\\text{A} \\cdot 20\\,\\Omega = 9.0\\,\\text{V}$ and $P = \\dfrac{(9.0\\,\\text{V})^2}{60\\,\\Omega} = 1.35\\,\\text{W}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The power grows from $0.60\\,\\text{W}$ to $1.35\\,\\text{W}$, that is, $2.3$ times as large, although the current of the battery falls from $0.30\\,\\text{A}$ to $0.15\\,\\text{A}$."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy6-4",
+        "math": "fy6-5",
+        "communication": "fy6-6"
       }
     }
   ]

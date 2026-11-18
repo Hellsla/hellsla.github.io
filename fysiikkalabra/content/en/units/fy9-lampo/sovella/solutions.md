@@ -378,3 +378,153 @@ $$
 
 ### Hyväksytään myös
 - In part a the answer $31.5\,\text{K}$ or $32\,\text{K}$, when justified by rounding.
+
+## fy9-lampo-s7
+
+### a)
+**Given:** the line of the $(t,T)$ graph runs from $(0\,\text{s};\ 20\,{}^\circ\text{C})$ to $(180\,\text{s};\ 60\,{}^\circ\text{C})$
+**Find:** the rise in temperature per second $\dfrac{\Delta T}{\Delta t}$
+**Principle:** The power is constant, so the temperature rises steadily and the graph is a straight line. The slope of the line gives the change in temperature per second (chapter *Heating and cooling of a substance*).
+**Reading the graph:** Two points far apart are read from the line: $(0\,\text{s};\ 20\,{}^\circ\text{C})$ and $(180\,\text{s};\ 60\,{}^\circ\text{C})$.
+**Formula:** $\dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$
+**Conversions:** A temperature difference of $40\,{}^\circ\text{C}$ is the same as $40\,\text{K}$.
+**Substitution:** $$
+\begin{aligned}
+\dfrac{\Delta T}{\Delta t} &= \dfrac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{180\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{40\,\text{K}}{180\,\text{s}} \\
+&\approx 0.22\,\text{K/s}
+\end{aligned}
+$$
+**Answer:** The temperature rises about $0.22\,\text{K/s}$, two significant figures like the values read.
+**Reasonableness:** About $13\,\text{K}$ per minute: in three minutes the temperature rises $40\,\text{K}$, which suits a block of half a kilogram heated with a hundred-watt element.
+
+### b)
+**Given:** $m = 0.50\,\text{kg}$, $P = 100\,\text{W}$; from the graph $\Delta t = 180\,\text{s}$ and $\Delta T = 40\,\text{K}$ (part a)
+**Find:** the specific heat capacity $c$ and whether the material is aluminium
+**Principle:** Energy is conserved: the energy $Pt$ delivered by the element increases the internal energy of the block, and the energy needed for the change in temperature is $cm\Delta T$ (chapter *Heating and cooling of a substance*). By the assumption all the power goes into the block.
+**Formula:** $Pt = cm\Delta T$, so $c = \dfrac{P\,\Delta t}{m\,\Delta T}$
+**Conversions:** Not needed: $1\,\text{W} = 1\,\text{J/s}$, so $\text{W} \cdot \text{s} = \text{J}$.
+**Substitution:** $$
+\begin{aligned}
+c &= \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0.50\,\text{kg} \cdot 40\,\text{K}} \\
+&= \dfrac{18\,000\,\text{J}}{20\,\text{kg} \cdot \text{K}} \\
+&= 900\,\text{J/(kg}\cdot\text{K)}
+\end{aligned}
+$$
+**Answer:** $c \approx 9.0 \cdot 10^{2}\,\text{J/(kg}\cdot\text{K)}$, two significant figures. The table value of aluminium is $896\,\text{J/(kg}\cdot\text{K)}$, so the difference is $$
+\begin{aligned}
+\dfrac{900 - 896}{896} &\approx 0.004 \\
+&= 0.4\,\%
+\end{aligned}
+$$ This is within the accuracy of the measurement, so the block could be aluminium. The graph does not prove it, though, because other materials may have almost the same value.
+**Reasonableness:** The specific heat capacities of metals are hundreds of joules per kilogram and kelvin, and the result is of the same order; water ($4190\,\text{J/(kg}\cdot\text{K)}$) would warm much more slowly with this power.
+
+### c)
+**Given:** $m = 0.50\,\text{kg}$, $P = 100\,\text{W}$, $c = 900\,\text{J/(kg}\cdot\text{K)}$ from part b; initial temperature $20\,{}^\circ\text{C}$ and final temperature $100\,{}^\circ\text{C}$
+**Find:** the heating time $t$ from the start of the measurement
+**Principle:** The same energy principle as in part b: the energy delivered by the element equals the increase in the internal energy of the block. The element works at the same power, so the time is the energy divided by the power.
+**Formula:** $Pt = cm\Delta T$, so $t = \dfrac{cm\,\Delta T}{P}$
+**Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C}$, that is $80\,\text{K}$.
+**Substitution:** $$
+\begin{aligned}
+t &= \dfrac{900\,\text{J/(kg}\cdot\text{K)} \cdot 0.50\,\text{kg} \cdot 80\,\text{K}}{100\,\text{W}} \\
+&= \dfrac{36\,000\,\text{J}}{100\,\text{W}} \\
+&= 360\,\text{s}
+\end{aligned}
+$$
+**Answer:** $t \approx 3.6 \cdot 10^{2}\,\text{s}$, that is $6.0\,\text{min}$, two significant figures. The energy transferred is $36\,\text{kJ}$.
+**Reasonableness:** According to the graph a rise of $40\,\text{K}$ takes $180\,\text{s}$. A rise of $80\,\text{K}$ is twice that, so the time is $2 \cdot 180\,\text{s} = 360\,\text{s}$, the same result. With the table value of aluminium the result would be $358\,\text{s}$.
+
+### d)
+**Find:** why the real graph would curve flatter
+**Principle:** Energy is conserved. Not all the power of the element stays in the block; the warm block transfers energy as heat to the surrounding air and the support (chapter *Heat transfer, energy balance and climate change*).
+**Model answer:** The warmer the block is compared with the surroundings, the greater the power transferred to the surroundings. At first the block is at the temperature of the surroundings and the power transferred is small, so almost all of the power $100\,\text{W}$ increases the internal energy. As the block warms, more and more is transferred to the surroundings, and the power that increases the internal energy (the power of the element minus the power transferred to the surroundings) decreases. So the temperature rises more and more slowly and the graph flattens. Finally the temperature of the block settles at a value where the power transferred to the surroundings equals the power of the element. So the idealised time $360\,\text{s}$ of parts a–c is too short in a real experiment.
+
+### Yleisiä virheitä
+- In part a $60\,{}^\circ\text{C} : 180\,\text{s}$ is calculated, forgetting that the temperature is $20\,{}^\circ\text{C}$ at the start.
+- In part b the mass is not substituted, or the power is multiplied by a wrong time, for example the whole time $360\,\text{s}$.
+- In part c the change in temperature is taken as $100\,\text{K}$ instead of $80\,\text{K}$.
+- In part d it is said that the energy "disappears" or "is lost", without saying that it is transferred as heat to the surroundings.
+
+
+### Hyväksytään myös
+- In part b $c$ can be calculated first from the rate of rise $c = \dfrac{P}{m\,(\Delta T / \Delta t)}$, using the result of part a.
+- In part c the result $358\,\text{s}$ or $3.6 \cdot 10^{2}\,\text{s}$, when $c$ is taken from the table.
+
+
+## fy9-lampo-s8
+
+### a)
+**Given:** $m = 0.60\,\text{kg}$; the first part of the graph runs from $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ to $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$
+**Find:** the specific heat capacity $c$ of ice
+**Principle:** When the temperature changes and the state does not, the energy transferred is $Q = cm\Delta T$ (chapter *Heating and cooling of a substance*). In the first part of the graph the ice warms from below freezing to $0\,{}^\circ\text{C}$.
+**Reading the graph:** The end points of the first part are far apart: $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ and $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. From them $Q = 20\,\text{kJ}$ and $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
+**Formula:** $Q = cm\Delta T$, so $c = \dfrac{Q}{m\,\Delta T}$
+**Conversions:** $20\,\text{kJ} = 20 \cdot 1000\,\text{J} = 20\,000\,\text{J}$.
+**Substitution:** $$
+\begin{aligned}
+c &= \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} \\
+&= \dfrac{20\,000\,\text{J}}{9.6\,\text{kg} \cdot \text{K}} \\
+&\approx 2083\,\text{J/(kg}\cdot\text{K)}
+\end{aligned}
+$$
+**Answer:** $c \approx 2.1 \cdot 10^{3}\,\text{J/(kg}\cdot\text{K)}$, two significant figures like the values read.
+**Reasonableness:** The result equals the table value $2.1\,\text{kJ/(kg}\cdot\text{K)}$ and is about half of the value of water, $4.18\,\text{kJ/(kg}\cdot\text{K)}$, as is known for ice.
+
+### b)
+**Given:** $m = 0.60\,\text{kg}$; the flat part of the graph starts at $Q = 20\,\text{kJ}$ and ends at $Q = 220\,\text{kJ}$, temperature $0\,{}^\circ\text{C}$
+**Find:** the specific latent heat of fusion $s$ of ice
+**Principle:** When the temperature stays constant and energy is still transferred, the energy does not raise the temperature but changes the state: it melts the ice. The energy needed for melting is $Q = sm$ (chapter *Changes of state*).
+**Reading the graph:** The end points of the flat part are far apart, so $Q_1 = 20\,\text{kJ}$ and $Q_2 = 220\,\text{kJ}$ are read from them. Melting takes $Q_\text{m} = Q_2 - Q_1 = 200\,\text{kJ}$.
+**Formula:** $Q_\text{m} = sm$, so $s = \dfrac{Q_\text{m}}{m}$
+**Conversions:** Not needed, because the answer is wanted in $\text{kJ/kg}$.
+**Substitution:** $$
+\begin{aligned}
+s &= \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} \\
+&\approx 333\,\text{kJ/kg}
+\end{aligned}
+$$
+**Answer:** $s \approx 3.3 \cdot 10^{2}\,\text{kJ/kg}$, two significant figures. The table value is $333\,\text{kJ/kg}$, so the result is the same.
+**Reasonableness:** Melting takes $200\,\text{kJ}$, ten times the $20\,\text{kJ}$ used for warming the ice, although the temperature does not change: melting needs a lot of energy. $333\,\text{kJ/kg}$ corresponds to warming water by about $80\,\text{K}$.
+
+### c)
+**Given:** $m = 0.60\,\text{kg}$, $c_\text{w} = 4.18\,\text{kJ/(kg}\cdot\text{K)}$; the ice has melted completely at $Q_2 = 220\,\text{kJ}$ (part b); finally $\Delta T = 20\,\text{K}$
+**Find:** the total energy $Q$ transferred when the temperature is $20\,{}^\circ\text{C}$
+**Principle:** Energy is conserved: the total energy is the energy transferred for warming the ice, melting it and warming the meltwater. According to the graph the first two stages take $220\,\text{kJ}$ together, and after that the temperature of the water rises from $0\,{}^\circ\text{C}$ ($Q = cm\Delta T$, chapter *Thermal balance when the state changes*).
+**Formula:** $Q = Q_2 + c_\text{w} m\,\Delta T$
+**Conversions:** The change in temperature $20\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 20\,{}^\circ\text{C}$ is $20\,\text{K}$.
+**Substitution:** $$
+\begin{aligned}
+Q &= 220\,\text{kJ} + 4.18\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg} \cdot 20\,\text{K} \\
+&= 220\,\text{kJ} + 50.2\,\text{kJ} \\
+&\approx 270\,\text{kJ}
+\end{aligned}
+$$
+**Answer:** $Q \approx 2.7 \cdot 10^{2}\,\text{kJ}$, two significant figures.
+**Reasonableness:** After $220\,\text{kJ}$ the temperature rises about $0.40\,\text{K}$ per kilojoule ($1 : (4.18 \cdot 0.60)$), so $20\,\text{K}$ needs about $50\,\text{kJ}$ more. Water warms more gently than ice, because the $c$ of water is about twice as large.
+
+### d)
+**Given:** $Q = 120\,\text{kJ}$; warming the ice took $Q_1 = 20\,\text{kJ}$ (part a); $s = 333\,\text{kJ/kg}$ (part b)
+**Find:** the melted mass $m_\text{m}$
+**Principle:** The point $120\,\text{kJ}$ lies on the flat part of the graph ($20\,\text{kJ} \ldots 220\,\text{kJ}$), so the temperature is $0\,{}^\circ\text{C}$ and the ice has melted partly. The energy used for melting is $Q - Q_1$, and it is $Q = sm$ for the melted mass (chapter *Changes of state*).
+**Formula:** $Q - Q_1 = s\,m_\text{m}$, so $m_\text{m} = \dfrac{Q - Q_1}{s}$
+**Conversions:** Not needed: the energies and $s$ are in kilojoules.
+**Substitution:** $$
+\begin{aligned}
+m_\text{m} &= \dfrac{120\,\text{kJ} - 20\,\text{kJ}}{333\,\text{kJ/kg}} \\
+&\approx 0.30\,\text{kg}
+\end{aligned}
+$$
+**Answer:** About $0.30\,\text{kg}$ of the ice has melted, half of the mass; two significant figures. The temperature is still $0\,{}^\circ\text{C}$.
+**Reasonableness:** The point $120\,\text{kJ}$ is halfway along the flat part ($(20 + 220) : 2 = 120$), so half the ice has melted: $0.30\,\text{kg}$ is half of the mass $0.60\,\text{kg}$.
+
+### Yleisiä virheitä
+- In part a the change in temperature is taken as $0\,{}^\circ\text{C}$ or $16\,{}^\circ\text{C}$, forgetting that the first part of the graph starts below zero, or the kilojoules are not converted to joules.
+- In part b the whole $220\,\text{kJ}$ is taken as the energy of melting instead of the length of the flat part, $200\,\text{kJ}$.
+- In part c only the warming of the water, $50\,\text{kJ}$, is calculated, forgetting the warming and melting of the ice.
+- In part d the whole $120\,\text{kJ}$ is taken as the energy of melting, which gives $0.36\,\text{kg}$.
+
+
+### Hyväksytään myös
+- In part a the table value $2100\,\text{J/(kg}\cdot\text{K)}$ instead of the value read from the graph, as long as the reading is shown.
+- In part c the answer $2.7 \cdot 10^{2}\,\text{kJ}$ or $270\,\text{kJ}$.

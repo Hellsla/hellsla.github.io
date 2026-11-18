@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin värähtelyt, aallot ja äänen. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa tunnin värähtelyt, aallot ja äänen. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-aallot-s1",
@@ -783,6 +783,270 @@
     "math": "fy4-8",
     "concept": "fy4-8",
     "transfer": "fy5-9"
+   }
+  },
+  {
+   "id": "fy9-aallot-s7",
+   "title": "Kaksi kaiutinta pihalla",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy5-12",
+    "fy5-14"
+   ],
+   "figure": "fy5-12/ruudukko-tehtava",
+   "text": "Koulun pihalle on pystytetty kaksi kaiutinta, $S_1$ ja $S_2$. Ne toistavat samasta signaaligeneraattorista samassa vaiheessa samaa siniääntä, jonka taajuus on $343\\,\\text{Hz}$. Kuvassa on piha ylhäältä katsottuna ruudukkona, ja $\\text{P}$ on piste, johon mikrofoni on asetettu. Äänen nopeus ilmassa on $343{,}4\\,\\text{m/s}$. Seinien heijastukset ja kaiuttimien eri etäisyydestä johtuva voimakkuusero jätetään huomiotta.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä matkat $s_1$ ja $s_2$ pisteestä $\\text{P}$ kaiuttimiin $S_1$ ja $S_2$ sekä matkaero $\\Delta s = s_2 - s_1$.",
+     "answer": [
+      {
+       "name": "s1",
+       "value": 6.0,
+       "unit": "m",
+       "tolerance": 0.03
+      },
+      {
+       "name": "s2",
+       "value": 6.5,
+       "unit": "m",
+       "tolerance": 0.03
+      },
+      {
+       "name": "ds",
+       "value": 0.5,
+       "unit": "m",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Ruutujen lukumäärät: $S_1$:n ja $\\text{P}$:n väli on $12$ ruutua ja $S_1$:n ja $S_2$:n väli $5$ ruutua; ruudun sivu on $0{,}50\\,\\text{m}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$s_1$ saadaan suoraan, ja $s_2 = \\sqrt{s_1^2 + d^2}$ (Pythagoraan lause), $\\Delta s = s_2 - s_1$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$s_1 = 6{,}0\\,\\text{m}$, $s_2 = \\sqrt{(6{,}0\\,\\text{m})^2 + (2{,}5\\,\\text{m})^2} = 6{,}5\\,\\text{m}$ ja $\\Delta s = 0{,}50\\,\\text{m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Matkat metreinä, kaksi merkitsevää numeroa ruutujen lukumäärien ja ruudun koon mukaan."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 2,
+     "text": "Laske kaiuttimien äänen aallonpituus ilmassa.",
+     "answer": {
+      "value": 1.0,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = f\\lambda$, joten $\\lambda = \\dfrac{v}{f}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\lambda = \\dfrac{343{,}4\\,\\text{m/s}}{343\\,\\text{Hz}} \\approx 1{,}00\\,\\text{m}$"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "word",
+     "points": 3,
+     "text": "Onko mikrofonin kohdalla pisteessä $\\text{P}$ ääni voimakas vai vaimea? Perustele a- ja b-kohdan tuloksilla.",
+     "criteria": [
+      {
+       "text": "Vertaa matkaeroa aallonpituuteen: $\\Delta s = 0{,}50\\,\\text{m}$ on puolet aallonpituudesta $1{,}00\\,\\text{m}$, joten aallot saapuvat pisteeseen $\\text{P}$ vastakkaisvaiheessa.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Vastakkaisvaiheiset aallot kumoavat toisensa, joten $\\text{P}$ on vaimean äänen kohta (lähes hiljainen, solmuviiva)."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Generaattorin taajuutta nostetaan arvosta $343\\,\\text{Hz}$. Millä pienimmällä taajuudella pisteessä $\\text{P}$ kuuluu taas voimakas ääni?",
+     "answer": {
+      "value": 687,
+      "unit": "Hz",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Voimakas ääni, kun $\\Delta s = n\\lambda$. Seuraavaksi $\\Delta s = \\lambda$, joten $\\dfrac{v}{f} = \\Delta s$ ja $f = \\dfrac{v}{\\Delta s}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$f = \\dfrac{343{,}4\\,\\text{m/s}}{0{,}50\\,\\text{m}} \\approx 690\\,\\text{Hz}$"
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Taajuus on noin kaksinkertainen alkuperäiseen, kun aallonpituus puolittuu ja $\\Delta s$ on silloin yksi kokonainen aallonpituus."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy5-12",
+    "math": "fy5-12",
+    "concept": "fy5-12",
+    "communication": "fy5-12"
+   }
+  },
+  {
+   "id": "fy9-aallot-s8",
+   "title": "Seisova aalto narussa",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy5-13",
+    "fy5-10"
+   ],
+   "figure": "fy5-13/kuvio-tehtava",
+   "text": "Opiskelija tutkii seisovaa aaltoa narussa. Narun toinen pää on kiinni täryttäjässä, ja toinen kulkee väkipyörän yli. Sen päässä riippuu punnus. Täryttäjän ja väkipyörän välinen osa värähtelee seisovana aaltona, kun täryttäjän taajuus on $50\\,\\text{Hz}$. Kuvassa naru on viivaimen päällä. Täryttäjän ja väkipyörän kohdat ovat narun päät, ja punnus ja naru pysyvät samoina koko tehtävän ajan.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä kuvan perusteella aallonpituus $\\lambda$ narussa.",
+     "answer": {
+      "value": 0.6,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Luetaan viivaimelta narun pituus $L = 1{,}20\\,\\text{m}$ ja kuvasta silmukoiden lukumäärä $n = 4$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Silmukan pituus on $\\dfrac{\\lambda}{2}$, joten $L = n\\dfrac{\\lambda}{2}$ ja $\\lambda = \\dfrac{2L}{n}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\lambda = \\dfrac{2 \\cdot 1{,}20\\,\\text{m}}{4} = 0{,}60\\,\\text{m}$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske aallon etenemisnopeus narussa.",
+     "answer": {
+      "value": 30,
+      "unit": "m/s",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$v = f\\lambda$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = 50\\,\\text{Hz} \\cdot 0{,}60\\,\\text{m} = 30\\,\\text{m/s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Nopeus $30\\,\\text{m/s}$, kaksi merkitsevää numeroa lähtöarvojen mukaan."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Täryttäjän taajuutta muutetaan niin, että narussa on kolme yhtä pitkää silmukkaa. Mikä taajuus täryttäjälle on asetettava?",
+     "answer": {
+      "value": 37.5,
+      "unit": "Hz",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että aallon nopeus narussa ei muutu: se riippuu narun kireydestä ja massasta, ei täryttäjän taajuudesta, ja punnus ja naru pysyvät samoina.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lambda_3 = \\dfrac{2L}{3}$ ja $f_3 = \\dfrac{v}{\\lambda_3} = \\dfrac{3v}{2L}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$f_3 = \\dfrac{3 \\cdot 30\\,\\text{m/s}}{2 \\cdot 1{,}20\\,\\text{m}} = 37{,}5\\,\\text{Hz}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$f_3 \\approx 38\\,\\text{Hz}$; taajuus on pienempi kuin alussa, koska aallonpituus on suurempi."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Täryttäjän taajuudeksi asetetaan $20\\,\\text{Hz}$. Syntyykö narussa selvä seisova aalto? Perustele.",
+     "criteria": [
+      {
+       "text": "Selittää, että seisova aalto syntyy vain, kun narun pituus on kokonainen määrä puolia aallonpituuksia, jolloin päihin tulee solmut: ominaistaajuudet ovat $f_n = n\\dfrac{v}{2L}$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "$f_1 = 12{,}5\\,\\text{Hz}$ ja $f_2 = 25\\,\\text{Hz}$, joten $20\\,\\text{Hz}$ on niiden välissä eikä ole ominaistaajuus; selvää seisovaa aaltoa ei synny."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy5-13",
+    "math": "fy5-13",
+    "concept": "fy5-13",
+    "communication": "fy5-13"
    }
   }
  ]
