@@ -479,6 +479,39 @@ with sync_playwright() as pw:
         expect(f"Käsitetakomo: {what}", pg.evaluate(f"!!document.querySelector('{sel}') && document.querySelector('.kc-static').hidden"), q)
     found = pg.evaluate(JS); expect("Käsitetakomo at 360 px: no sideways scroll, header on one row", not found, found)
     pg.close()
+    # work queue 8d: a long concept-card title breaks only at a syllable, with a hyphen, and the card's lang matches its text
+    BREAKS = """() => { const bad = []; const doc = document;
+      for (const f of doc.querySelectorAll('.kc-study .kc-card .kc-front, .kc-topic-label, .kc-tile-name, .kc-dl dt')) {
+        if (!f.offsetParent) continue;
+        const tn = [...f.childNodes].find(n => n.nodeType === 3); if (!tn) continue;
+        const s = tn.data, r = doc.createRange(); let prev = null, shy = false;
+        for (let i = 0; i < s.length; i++) {
+          if (s[i] === '\\u00ad') { shy = true; continue; }
+          r.setStart(tn, i); r.setEnd(tn, i + 1); const q = r.getClientRects()[0]; if (!q || !q.width) continue;
+          if (prev && /[A-Za-zÅÄÖåäö]/.test(s[i]) && /[A-Za-zÅÄÖåäö]/.test(s[i - 1]) && !shy && q.top > prev.top + q.height / 2) bad.push(s.slice(Math.max(0, i - 6), i + 3));
+          prev = q; shy = false;
+        }
+        if (f.scrollWidth > f.clientWidth + 1) bad.push('overflow: ' + s.slice(0, 20));
+      }
+      return bad; }"""
+    for lang in i18n.languages():
+        pre = "" if lang == i18n.SOURCE else lang + "/"
+        dl = concept_cards.data_lang(lang)
+        pairs = [(c, k) for c in concept_cards.modules(dl) for k in concept_cards.cards_of(c, lang)]
+        if not pairs: continue
+        code, card = max(pairs, key=lambda p: max(len(w) for w in p[1]["kasite"].split()))
+        want = "en" if lang == "en" else "fi"
+        for w, hgt in ((360, 780), (1280, 900)):
+            pg = b.new_page(viewport={"width": w, "height": hgt})
+            pg.goto(URL + f"{pre}kasitteet.html?moduuli={code}&aihe={card['aihe']}"); pg.wait_for_timeout(400)
+            root = pg.evaluate("document.documentElement.lang")
+            expect(f"{lang}/kasitteet.html at {w} px: the page language is {want} and the card texts have no foreign lang", root.startswith(want) and pg.evaluate(f"[...document.querySelectorAll('.kc-app [lang], .kc-card [lang]')].every(e => e.lang.startsWith('{want}'))"), root)
+            shy = pg.evaluate("[...document.querySelectorAll('.kc-front')].some(e => e.textContent.includes('\\u00ad'))")
+            expect(f"{lang}/kasitteet.html at {w} px: soft hyphens only on Finnish cards ({card['kasite']})", shy == (want == "fi"), shy)
+            pg.wait_for_timeout(300)
+            found = pg.evaluate(BREAKS)
+            expect(f"{lang}/kasitteet.html at {w} px: long card titles break only at a syllable with a hyphen, none overflows", not found, found[:4])
+            pg.close()
     srv.shutdown()
     b.close()
 sys.exit(1 if fails else 0)
