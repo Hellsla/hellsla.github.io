@@ -116,7 +116,7 @@
    "luku": "fy8-1",
    "aihe": "fy8-sateilyn-kvantittuminen",
    "kasite": "Electronvolt",
-   "maaritelma": "The energy that a charge with the magnitude of the elementary charge gains in a potential difference of one volt.",
+   "maaritelma": "The energy that a charge with the magnitude of the elementary charge gains when it moves through a potential difference of one volt.",
    "kaava": "1\\,\\text{eV} \\approx 1.60 \\cdot 10^{-19}\\,\\text{J}",
    "kaava_puhe": "one electronvolt is about 1.60 times 10 to the power minus 19 joules"
   },
@@ -175,8 +175,8 @@
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Maximum kinetic energy",
    "maaritelma": "The energy of the fastest released electron follows from conservation of energy.",
-   "kaava": "E_{\\text{k,max}} = hf - W_0",
-   "kaava_puhe": "E k max is h f minus W zero"
+   "kaava": "E_{\\text{k,max}} = hf - W",
+   "kaava_puhe": "E k max is h f minus W"
   },
   {
    "id": "fy8-valosahkoilmion-energiayhtalo",
@@ -185,8 +185,8 @@
    "aihe": "fy8-valosahkoilmio",
    "kasite": "Photoelectric equation",
    "maaritelma": "The energy of the photon is used for the work function and the kinetic energy of the electron.",
-   "kaava": "hf = W_0 + E_{\\text{k,max}}",
-   "kaava_puhe": "h f is W zero plus E k max"
+   "kaava": "hf = W + E_{\\text{k,max}}",
+   "kaava_puhe": "h f is W plus E k max"
   },
   {
    "id": "fy8-sateilyn-intensiteetti",
@@ -318,7 +318,7 @@
    "luku": "fy8-2",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Emission spectrum",
-   "maaritelma": "Contains the wavelengths that excited matter emits when its energy states de-excite."
+   "maaritelma": "Contains the wavelengths that excited matter emits when its atoms de-excite to lower energy levels."
   },
   {
    "id": "fy8-absorptiospektri",
@@ -350,7 +350,7 @@
    "luku": "fy8-3",
    "aihe": "fy8-atomin-energiatasot",
    "kasite": "Ionisation energy",
-   "maaritelma": "The smallest energy with which an electron can be released from an atom completely."
+   "maaritelma": "The smallest energy needed to release an electron completely from an atom in its ground state."
   },
   {
    "id": "fy8-vetyatomin-energia",
@@ -440,7 +440,7 @@
    "luku": "fy8-5",
    "aihe": "fy8-kvanttimekaaninen-atomimalli",
    "kasite": "Standing wave",
-   "maaritelma": "A wave form that stays in place and allows only certain quantum states of the electron."
+   "maaritelma": "A wave whose pattern stays in place; the allowed states of a bound electron are standing waves, so only certain quantum states are possible."
   },
   {
    "id": "fy8-puolijohde",
@@ -520,7 +520,7 @@
    "luku": "fy8-7",
    "aihe": "fy8-kvantti-ilmioiden-sovellukset",
    "kasite": "Laser",
-   "maaritelma": "Produces strongly directed, almost single-coloured and coherent electromagnetic radiation."
+   "maaritelma": "Produces directional, nearly monochromatic and coherent electromagnetic radiation."
   },
   {
    "id": "fy8-koherentti-valo",
@@ -575,8 +575,8 @@
    "moduuli": "FY8",
    "luku": "fy8-14",
    "aihe": "fy8-rontgensateily",
-   "kasite": "Characteristic radiation",
-   "maaritelma": "Produced by transitions between electron states of atoms; it forms spectral lines characteristic of the material."
+   "kasite": "Characteristic X-radiation",
+   "maaritelma": "Produced when an electron of an anode atom drops into a vacancy in an inner shell; it forms spectral lines characteristic of the material."
   },
   {
    "id": "fy8-rontgenspektri",
@@ -594,7 +594,7 @@
    "kasite": "Shortest wavelength",
    "maaritelma": "The photon of highest energy from an X-ray tube is produced when all the energy of an electron changes into a photon.",
    "kaava": "\\lambda_{\\text{min}} = \\dfrac{hc}{eU}",
-   "kaava_puhe": "lambda min is h c divided by e U"
+   "kaava_puhe": "lambda min is h c divided by the product e U"
   },
   {
    "id": "fy8-nukleoni",
@@ -642,7 +642,7 @@
    "luku": "fy8-8",
    "aihe": "fy8-atomiydin",
    "kasite": "Isotope",
-   "maaritelma": "A nucleus of an element whose number of neutrons differs from that of another nucleus of the same element."
+   "maaritelma": "Nuclei of the same element with different numbers of neutrons."
   },
   {
    "id": "fy8-atomimassayksikko",
@@ -669,8 +669,8 @@
    "aihe": "fy8-atomiydin",
    "kasite": "Binding energy",
    "maaritelma": "The energy needed to break a nucleus into separate nucleons.",
-   "kaava": "E = \\Delta m c^2",
-   "kaava_puhe": "E is delta m times c squared"
+   "kaava": "E_\\text{B} = \\Delta m\\,c^2",
+   "kaava_puhe": "E B is delta m times c squared"
   },
   {
    "id": "fy8-sidososuus",
@@ -695,8 +695,8 @@
    "aihe": "fy8-ydinreaktiot",
    "kasite": "Reaction energy",
    "maaritelma": "The energy released or taken up in a nuclear reaction is determined by the mass difference between the initial and final states.",
-   "kaava": "Q = \\Delta m c^2",
-   "kaava_puhe": "Q is delta m times c squared"
+   "kaava": "Q = (m_\\text{initial} - m_\\text{final})\\,c^2",
+   "kaava_puhe": "Q is the difference m initial minus m final, times c squared"
   },
   {
    "id": "fy8-fissio",
@@ -800,7 +800,7 @@
    "luku": "fy8-8",
    "aihe": "fy8-radioaktiivisuus",
    "kasite": "Electron capture",
-   "maaritelma": "The nucleus captures an electron, so a proton changes into a neutron and a neutrino is produced."
+   "maaritelma": "The nucleus captures an electron from the innermost shell of its own atom, so a proton changes into a neutron and a neutrino is produced."
   },
   {
    "id": "fy8-gammahajoaminen",
@@ -978,7 +978,7 @@
    "luku": "fy8-12",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Ionising radiation",
-   "maaritelma": "Radiation with enough energy to release electrons from atoms or molecules."
+   "maaritelma": "Radiation whose single particles or photons have enough energy to release electrons from atoms or molecules."
   },
   {
    "id": "fy8-absorboitunut-annos",
@@ -1028,14 +1028,14 @@
    "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
    "kasite": "Radon",
-   "maaritelma": "A radioactive gas that moves from the ground into buildings and is a significant source of radiation dose in Finland."
+   "maaritelma": "A radioactive gas that moves from the ground into buildings and is the largest source of radiation dose in Finland."
   },
   {
    "id": "fy8-sateilysuojaus",
    "moduuli": "FY8",
    "luku": "fy8-13",
    "aihe": "fy8-sateilyturvallisuus",
-   "kasite": "Radiation shielding",
+   "kasite": "Radiation protection",
    "maaritelma": "Exposure is reduced by shortening the time, increasing the distance and using suitable shielding."
   },
   {
@@ -1075,7 +1075,7 @@
    "moduuli": "FY8",
    "luku": "fy8-14",
    "aihe": "fy8-sateilyn-hyotykaytto",
-   "kasite": "PET imaging",
+   "kasite": "PET scan",
    "maaritelma": "A tracer that emits positrons is used to form an image of the metabolism of the body."
   },
   {
@@ -1180,7 +1180,7 @@
    "luku": "fy8-15",
    "aihe": "fy8-standardimalli",
    "kasite": "Annihilation",
-   "maaritelma": "When a particle and an antiparticle meet, they can change into radiation energy."
+   "maaritelma": "When a particle and its antiparticle meet, both can disappear, and all their energy is carried away by, for example, photons."
   },
   {
    "id": "fy8-vahva-vuorovaikutus",
