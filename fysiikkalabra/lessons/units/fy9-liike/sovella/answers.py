@@ -113,4 +113,32 @@ out.update({"fy9-liike-s6-A": round(A6, 3), "fy9-liike-s6-B": round(B6, 4), "fy9
             "fy9-liike-s6-diff": round(9.81 - g_meas, 3), "fy9-liike-s6-c": round(g_corr, 3), "fy9-liike-s6-dgc": round(dg_corr, 3),
             "fy9-liike-s6-last": round(g_last, 3)})
 
+# s7: a cart on a track, (t,x) graph with three straight phases (fy4-1/ex-kolme-osaa; values read from the graph):
+# (0 s; 4 m), (4 s; 16 m), (6 s; 16 m), (10 s; 8 m). x grows to the right.
+P7 = [(0.0, 4.0), (4.0, 16.0), (6.0, 16.0), (10.0, 8.0)]
+v7_1 = (P7[1][1] - P7[0][1]) / (P7[1][0] - P7[0][0])             # m/s: slope of the first line
+v7_3 = (P7[3][1] - P7[2][1]) / (P7[3][0] - P7[2][0])             # m/s: slope of the third line (8 s lies in it)
+x7 = 12.0
+t7_1 = P7[0][0] + (x7 - P7[0][1]) / v7_1                         # s: first time at 12 m
+t7_2 = P7[2][0] + (x7 - P7[2][1]) / v7_3                         # s: second time at 12 m
+v7_mean = (P7[3][1] - P7[0][1]) / (P7[3][0] - P7[0][0])          # m/s: displacement / time
+path7 = abs(P7[1][1] - P7[0][1]) + abs(P7[2][1] - P7[1][1]) + abs(P7[3][1] - P7[2][1])   # m: distance travelled
+out.update({"fy9-liike-s7-a": round(v7_1, 3), "fy9-liike-s7-b": round(v7_3, 3),
+            "fy9-liike-s7-c-t1": round(t7_1, 3), "fy9-liike-s7-c-t2": round(t7_2, 3),
+            "fy9-liike-s7-d": round(v7_mean, 3), "fy9-liike-s7-path": path7,
+            "fy9-liike-s7-speed": round(path7 / (P7[3][0] - P7[0][0]), 3)})
+
+# s8: two walkers on the same road (fy4-1/ex-kaksi-kappaletta; values read from the graph): A 4 m -> 20 m, B 20 m -> 4 m in 8 s.
+xA0, xA8, xB0, xB8, T8 = 4.0, 20.0, 20.0, 4.0, 8.0
+vA8, vB8 = (xA8 - xA0) / T8, (xB8 - xB0) / T8                     # m/s, B's sign negative
+t8 = (xB0 - xA0) / (vA8 - vB8)                                    # s: x_A = x_B  =>  t = (x0B - x0A) / (vA - vB)
+x8 = xA0 + vA8 * t8                                               # m
+x8_B = xB0 + vB8 * t8                                             # m: check with B's equation
+vB8d = -1.0                                                       # d: the magnitude of B's velocity 1,0 m/s
+t8d = (xB0 - xA0) / (vA8 - vB8d)                                  # s
+x8d = xA0 + vA8 * t8d                                             # m
+out.update({"fy9-liike-s8-a-vA": round(vA8, 3), "fy9-liike-s8-a-vB": round(vB8, 3),
+            "fy9-liike-s8-b": round(t8, 3), "fy9-liike-s8-c": round(x8, 3), "fy9-liike-s8-xB": round(x8_B, 3),
+            "fy9-liike-s8-d-t": round(t8d, 3), "fy9-liike-s8-d-x": round(x8d, 3)})
+
 print(json.dumps(out))
