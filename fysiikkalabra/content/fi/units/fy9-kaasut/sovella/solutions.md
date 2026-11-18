@@ -649,8 +649,12 @@ $$
 **Vastaus:** $p_2 \approx 63\,\text{kPa}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
 **Järkevyys:** Lämpötila $253\,\text{K}$ on kuvaajan pisteiden $200\,\text{K}$ ja $400\,\text{K}$ välissä, joten paineen on oltava pisteiden $50\,\text{kPa}$ ja $100\,\text{kPa}$ välissä. Tarkistus tilanyhtälöllä: $$
 \begin{aligned}
+n_\text{A}RT_2 &= 0{,}0602\,\text{mol} \\
+&\cdot 8{,}31\,\text{J/(mol K)} \\
+&\cdot 253{,}15\,\text{K} \\
+&= 126{,}6\,\text{J} \\
 p_2 &= \dfrac{n_\text{A}RT_2}{V} \\
-&= \dfrac{0{,}0602\,\text{mol} \cdot 8{,}31\,\text{J/(mol K)} \cdot 253{,}15\,\text{K}}{2{,}0 \cdot 10^{-3}\,\text{m}^3} \\
+&= \dfrac{126{,}6\,\text{J}}{2{,}0 \cdot 10^{-3}\,\text{m}^3} \\
 &= 63\,\text{kPa}
 \end{aligned}
 $$

@@ -649,8 +649,12 @@ $$
 **Answer:** $p_2 \approx 63\,\text{kPa}$, two significant figures like the values read from the graph.
 **Reasonableness:** The temperature $253\,\text{K}$ is between the graph points $200\,\text{K}$ and $400\,\text{K}$, so the pressure must be between $50\,\text{kPa}$ and $100\,\text{kPa}$. Check with the ideal gas law: $$
 \begin{aligned}
+n_\text{A}RT_2 &= 0.0602\,\text{mol} \\
+&\cdot 8.31\,\text{J/(mol K)} \\
+&\cdot 253.15\,\text{K} \\
+&= 126.6\,\text{J} \\
 p_2 &= \dfrac{n_\text{A}RT_2}{V} \\
-&= \dfrac{0.0602\,\text{mol} \cdot 8.31\,\text{J/(mol K)} \cdot 253.15\,\text{K}}{2.0 \cdot 10^{-3}\,\text{m}^3} \\
+&= \dfrac{126.6\,\text{J}}{2.0 \cdot 10^{-3}\,\text{m}^3} \\
 &= 63\,\text{kPa}
 \end{aligned}
 $$
