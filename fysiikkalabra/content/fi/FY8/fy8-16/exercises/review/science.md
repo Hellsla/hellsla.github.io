@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8d435459e6011e55
-Mode: delta (wording only: "kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa" -> "kaukaisten galaksien väliset etäisyydet kasvavat keskimäärin samassa suhteessa")
+CONTENT-HASH: 35eb2ff6a77795e8
+Mode: delta, round 2 (new tasks L2-09 and L3-06 on figure fy8-16/hubble-t; "(esimerkkiaineisto)" removed from two table captions)
 
 ## Blocking
 - none
@@ -9,8 +9,13 @@ Mode: delta (wording only: "kaikki galaksien väliset etäisyydet kasvavat samas
 - none
 
 ## Checked
-- exercises.json:247 (fi, en, fi-easy): the feedback on the correct option now says what holds. Uniform expansion holds on average, for galaxies far enough apart that their own motion and bound systems do not matter. The old "all distances" was a B (missing condition): bound groups and galaxies' own motion break it. This also follows the brief's Yleinen virhekäsitys word for word. The option itself stays the only correct one.
-- solutions.md:24 (the Hubble-law L1 task, $d = 120\,\text{Mpc}$): the principle still explains why $v \propto d$, and it still says the galaxy's own motion is ignored. That matches the brief's Kaava text (own motion is a few hundred km/s, small for distant galaxies). The answer $v = H_0 d = 8400\,\text{km/s}$ is unchanged and recomputed.
-- solutions.md:165 (L2-07, the error analysis): the reasoning still runs from no centre, through the same view from every galaxy, to $v = H_0 d$, and the model answer is consistent with it. Nothing in it relied on "all".
-- en and fi-easy: the same change, the same meaning, the same formulas. The other "samassa suhteessa" sentences (wavelength stretching, lines 114, 123, 207 and the task text at 369) are untouched and correct.
-- Diff scope: no data, answers or answers.py changed (git diff of lessons/FY8/fy8-16 is empty). Hash at start and end: 8d435459e6011e55.
+- Round-1 finding 1 (L3-06 c, "mahdoton galaksin nopeudeksi") is fixed in fi, en and fi-easy. The text now says $v = cz$ is only the small-$z$ approximation and that $z = 3{,}00 \to 3{,}00\,c$ is "merkki siitä, että likiarvo ei enää päde". It no longer claims recession faster than $c$ is impossible.
+- Round-1 finding 2 (rounding reason) is fixed in all three languages. "Kaksi merkitsevää numeroa b)-kohdassa", because $0{,}10\,c$ has two figures, and $H_0 = 72{,}0$ is read from the grid point with three.
+- I recomputed both answers in one script. L2-09: $z = 0{,}035253$, $v = 10\,569\,\text{km/s}$, $d = 146{,}79\,\text{Mpc}$. L3-06: $d = 0{,}10c/72 = 416{,}39\,\text{Mpc}$. Both match answers.py and exercises.json (146,8 and 416,4).
+- Tolerance 2 %: a student who rounds to 147 Mpc is off by 0,14 % and one who rounds to $4{,}2 \cdot 10^2$ Mpc by 0,87 %, so both stay inside it.
+- Figure: the line uses $H_0 = 18000/250 = 72$. A least-squares fit through the origin of the nine T2 points gives $72{,}4$, so the drawn line is a fair fit. Neither the figure nor its description gives either answer away.
+- L2-09: $z < 0{,}1$, so $v = cz$ is valid. The solution is symbolic first ($d = cz/H_0$), and the 147 Mpc sits between the points at 120 and 160 Mpc, whose speeds bracket $v$.
+- L3-06: the extrapolation beyond the 285 Mpc data (×1,46) and the assumption it rests on are stated, as the guardrail on extrapolation asks. The top of the axis, $21\,000\,\text{km/s}$, corresponds to $z = 0{,}070$.
+- The task texts give $c$, the $z < 0{,}10$ condition, the axis end and the farthest point. Both tasks stay inside the FY8 scope and use the brief's notation.
+- Removing the caption labels changes no physics.
+- Hash at start and end: 35eb2ff6a77795e8.

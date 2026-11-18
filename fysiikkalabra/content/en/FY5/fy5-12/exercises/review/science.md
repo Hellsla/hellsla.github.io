@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b8fc622146b746b9
+CONTENT-HASH: c1008c5486383ca4
 
 ## Blocking
 
@@ -7,10 +7,8 @@ CONTENT-HASH: b8fc622146b746b9
 - none.
 
 ## Checked
-- fy5-12-L2-10 recomputed: λ = 0.80 m; constructive Δs = nλ with n = 1 gives 0.80 m; destructive Δs = (n + ½)λ gives 0.40 m and 1.20 m. Box answer 0.4 m, unit m, tolerance 0.02 are right.
-- In-phase sources stated, so Δs alone decides the type of interference; the perpendicular bisector stays constructive at every f; with v fixed, λ = v/f shortens and the nodal lines crowd together as f rises. All right.
-- Part d's limits of the model are physically right: reflections, many frequencies, sources that are not point sources, unequal amplitudes so no complete cancellation, and Δs ≤ the source separation.
-- PhET facts (Interference screen, sound wave type, in-phase sources, an English version exists) agree with the verified sources.
-- The text says the same as the Finnish; the numbers are identical (word order only).
-- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
-- Hash unchanged at start and end of the re-check.
+- Word diff of the whole delta (removed vs added text, whitespace-normalised): the only changed word is "heat" -> "internal energy" in the energy-claim model answer (solutions.md:177); everything else is paragraph splits with no changed word, number or formula.
+- The new sentence is physically right and follows the guardrail: heat is an energy transfer, not a form energy turns into; "does not turn into internal energy on nodal lines" states the correct mechanism (no dissipation caused by interference, energy redistributed to constructive points, source power unchanged).
+- The English now matches the Finnish ("ei muutu solmuviivoilla sisäenergiaksi").
+- No numbers or answers changed, so answers.py and the earlier recomputations (L2-10: lambda = 0.80 m, destructive 0.40 m and 1.20 m) stand.
+- Hash unchanged at start and end of the review.

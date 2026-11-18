@@ -364,6 +364,12 @@ On the left of the figure a box rests on the floor. The weight $\overline{G}$ an
   <foreignObject x="513.5" y="345.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\Sigma\overline{F}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A box is pulled to the right by a rope, and it speeds up. What can you conclude about the horizontal forces?
+---
+The force of the rope is greater than the friction, so the horizontal net force is not zero but points to the right.
+```
+
 ### Mass resists a change in velocity
 Measurements with a cart reveal two regularities. When the net force doubles, the acceleration doubles: the acceleration is directly proportional to the net force. When the same net force acts on a cart with twice the mass, the acceleration is halved. Mass therefore tells us about the inertia of an object, that is, how hard it is to change its velocity. In the graph each mass gives a straight line through the origin, and the line of the heavier cart is half as steep.
 
@@ -425,6 +431,12 @@ Measurements with a cart reveal two regularities. When the net force doubles, th
 </svg>
 
 This gives the answer to the opening question. The engine turns the driving wheels, and the road pushes the tyres forward. When this force is equally large for the loaded and the empty truck, the much greater mass of the loaded truck makes its acceleration small. The weight of the load does not pull the truck backward as such, because the normal force from the road cancels it. The heavy load does increase the rolling resistance of the tyres, but the main reason for the slow acceleration is the large mass.
+
+```pysahdy
+The same net force acts on an empty and on a full shopping cart. Which one accelerates more, and why?
+---
+The empty cart, because its mass is smaller. Mass resists a change in velocity: double the mass halves the acceleration.
+```
 
 ## Formula: Newton's second law
 Newton's second law, also called the fundamental law of dynamics, gathers the observations into one equation:
@@ -523,6 +535,12 @@ The law is a vector equation: the net force and the acceleration always point in
   <path d="M565.5,493 L572,506 L578.5,493" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="555.5" y="509.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A box rises on a rope and slows down. Which way does the net force point?
+---
+Downwards, because the acceleration points downwards even though the box is still moving up. The force of the rope is smaller than the weight.
+```
 
 ### First the forces, then the equation
 When the law is used in a calculation, the steps are always taken in the same order. Choose the object and draw its free-body diagram, in which every force has a cause: the Earth, a rope, a surface or a puller. Choose a positive direction, usually the direction of the acceleration. Only then write the net force from the forces, with signs, and set it equal to $ma$. For the crate of the crane, when up is positive, we get $T - G = ma$. In the chapter *Free-body diagrams and the combined effect of forces* the same method extends to slanted forces.

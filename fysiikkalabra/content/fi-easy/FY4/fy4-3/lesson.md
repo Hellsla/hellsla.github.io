@@ -361,6 +361,12 @@
 ### Voima on vuorovaikutus
 Kun kaksi kappaletta vaikuttavat toisiinsa, niiden välillä on **vuorovaikutus**. Esimerkiksi käsi työntää laatikkoa, naru vetää pulkkaa ja Maa vetää omenaa. Vuorovaikutuksen voimakkuutta kuvaa **voima**. Voiman yksikkö on newton ($\text{N}$). Voima on vektori. Sillä on suuruus ja suunta, ja sitä merkitään $\overline{F}$. Jokaisella voimalla on aiheuttaja, ja aiheuttaja on aina toinen kappale. Kosketusvoimissa kappaleet koskettavat toisiaan. Maan vetovoima eli **paino** $\overline{G}$ ja magneettien voimat vaikuttavat myös kaukaa.
 
+```pysahdy
+Heität pallon ilmaan. Mikä vaikuttaa palloon, kun se lentää?
+---
+Maa vetää palloa alaspäin (paino). Myös ilma vaikuttaa siihen (ilmanvastus). Käsi ei enää vaikuta palloon.
+```
+
 ### Liike jatkuu ilman voimaa
 Curlingin heittäjä työntää kiveä vain hetken. Kun käsi irtoaa, mikään ei enää työnnä kiveä eteenpäin. Kivi liukuu silti kymmeniä metrejä. Liukumisen aikana kiveen vaikuttavat vain Maa ja jää. Ilmanvastus on hyvin pieni. Pystysuunnassa paino ja jään tukivoima kumoavat toisensa. Tukivoima on voima, joka tukee kiveä ylöspäin ja on kohtisuorassa pintaa vastaan. Vaakasuunnassa on vain jään pieni kitkavoima. Kitkavoima on pintojen välinen voima, joka vastustaa liikettä. Tässä se osoittaa taaksepäin ja hidastaa kiveä hyvin vähitellen.
 
@@ -405,6 +411,12 @@ Jos kitkaa ei olisi lainkaan, kiven nopeus ei muuttuisi. Kivi liukuisi samaan su
 <figure class="unit-photo"><img src="pics/fy4/tug-of-war.webp" alt="Kolme miestä vetää köyttä ja nojaa taaksepäin."><figcaption>Köydenvetäjät nojaavat taaksepäin. He painavat jalkansa maata vasten.</figcaption></figure>
 
 Arjessa näyttää siltä, että liike loppuu itsestään. Syy on se, että maan päällä kitka ja ilmanvastus hidastavat lähes kaikkea, mikä liikkuu. Pyörä pysähtyy, kun polkeminen loppuu, koska tie ja ilma jarruttavat sitä. Syy ei ole se, että "liikkeen voima" kuluisi loppuun. Mitä pienempi kitka on, sitä kauemmin liike jatkuu: jäällä pidemmälle kuin asfaltilla ja avaruudessa lähes loputtomiin.
+
+```pysahdy
+Miksi kaupan kärry pysähtyy, kun lakkaat työntämästä?
+---
+Kitka ja ilmanvastus hidastavat kärryä. Ilman niitä kärry liikkuisi samalla nopeudella eteenpäin.
+```
 
 ### Voima ja vastavoima
 Luistelija A työntää luistelijaa B. Silloin kumpikin lähtee liukumaan poispäin toisesta. B ei vain ota työntöä vastaan. B vaikuttaa samalla myös A:han. Vuorovaikutus on aina kaksisuuntainen. Tämä on **Newtonin kolmas laki** eli **voiman ja vastavoiman laki**. Kun kappale A vaikuttaa kappaleeseen B voimalla, B vaikuttaa A:han yhtä suurella mutta vastakkaisella voimalla. Voima ja vastavoima syntyvät samassa vuorovaikutuksessa samaan aikaan. Ne ovat samaa lajia: työntö ja vastatyöntö tai vetovoima ja vastavetovoima.
@@ -465,6 +477,12 @@ Luistelija A työntää luistelijaa B. Silloin kumpikin lähtee liukumaan poisp�
 <figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="Valkoinen raketti nousee suoraan ylös. Raketin alla on kirkas liekki ja maassa isoja valkoisia pilviä."><figcaption>Falcon 9 -raketti lähtee Floridassa vuonna 2024. Raketti työntää kaasuja alaspäin. Kaasut työntävät rakettia ylöspäin yhtä suurella voimalla. Raketti ei tarvitse ilmaa eikä maata, jota vasten työntää.</figcaption></figure>
 
 Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella. Syy on se, että samasta voimasta pienemmän massan liike muuttuu enemmän. Tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on muistaa, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät koskaan kumoa toisiaan. Siksi niitä ei myöskään piirretä saman kappaleen voimakuvioon.
+
+```pysahdy
+Potkaiset palloa jalalla. Mikä voima vaikuttaa jalkaasi, kun jalka osuu palloon?
+---
+Pallo työntää jalkaasi takaisin. Voima on yhtä suuri kuin potkusi voima, mutta se osoittaa vastakkaiseen suuntaan. Sitä sanotaan vastavoimaksi.
+```
 
 ## Kaava: Newtonin ensimmäinen ja kolmas laki
 Newtonin ensimmäinen laki on ehto kappaleeseen vaikuttavien voimien summalle:

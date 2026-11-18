@@ -153,6 +153,18 @@
           "feedback": "Epätosi: tässä muutoksen suunta on käännetty. Neutroni $udd$ muuttuu protoniksi $uud$, joten $d$-kvarkki muuttuu $u$-kvarkiksi heikon vuorovaikutuksen välityksellä. Muutos $u \\to d$ tapahtuu beeta plus -hajoamisessa."
         }
       ]
+    },
+    {
+      "id": "fy8-15-L1-10",
+      "level": 1,
+      "kind": [
+        "graph"
+      ],
+      "figure": "fy8-15/taulukko",
+      "text": "Kuvassa ovat standardimallin perushiukkaset ruutuina, ja jokaisen hiukkasen varaus on merkitty. Jokainen ruutu on yksi hiukkanen, eikä antihiukkasia lasketa mukaan.\n\na) Lue kuvasta, kuinka monta ruutua on sähköisesti neutraaleja hiukkasia.\n\nb) Kuinka moni näistä neutraaleista hiukkasista on leptoni?\n\nVastauslaatikkoon tulee a-kohdan tulos.",
+      "answer": 7,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level2": [
@@ -318,6 +330,19 @@
           "feedback": "Neutronilla on antihiukkanen, antineutroni. Hajoaminen ei vaadi antihiukkasen olemassaoloa vaan säilymislakien täyttymistä ja positiivista $Q$:ta."
         }
       ]
+    },
+    {
+      "id": "fy8-15-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "figure": "fy8-15/taulukko",
+      "text": "Huippukvarkki $t$ voi hajota reaktiolla $t \\to W^+ + X$, jossa $X$ on kuvan hiukkanen. Varaus säilyy, ja hiukkasen $X$ baryoniluku on $\\tfrac{1}{3}$, joten $X$ on kvarkki. Kuvassa jokaisen ruudun hiukkasen varaus on merkitty.\n\na) Lue kuvasta hiukkasten $t$ ja $W^+$ varaukset alkeisvarauksen $e$ monikertoina.\n\nb) Laske hiukkasen $X$ varaus.\n\nc) Mitkä kuvan kvarkit voivat olla $X$?\n\nVastauslaatikkoon tulee b-kohdan tulos.",
+      "answer": -0.3333,
+      "unit": "e",
+      "tolerance": 0.02
     }
   ],
   "level3": [

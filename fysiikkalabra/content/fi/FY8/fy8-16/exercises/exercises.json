@@ -278,6 +278,20 @@
           "feedback": "Oikein: $z_\\text{A} \\approx 0{,}0101$ ja $z_\\text{B} \\approx 0{,}0300$. Etäisyys $d = \\tfrac{cz}{H_0}$ on verrannollinen punasiirtymään, joten etäisyyksien suhde on noin $3{,}0$."
         }
       ]
+    },
+    {
+      "id": "fy8-16-L2-09",
+      "level": 2,
+      "core": true,
+      "text": "Kuvassa on yhdeksän galaksin etääntymisnopeus $v$ etäisyyden $d$ funktiona megaparsekeina. Pisteisiin on sovitettu origon kautta kulkeva suora. Uuden galaksin spektrissä vedyn $\\text{H}\\gamma$-viiva, jonka aallonpituus laboratoriossa on $434{,}0\\,\\text{nm}$, näkyy aallonpituudella $449{,}3\\,\\text{nm}$. Galaksin etäisyyttä ei ole mitattu muulla tavalla.\n\na) Laske galaksin punasiirtymä $z$ ja etääntymisnopeus $v$. Käytä arvoa $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nb) Lue kuvasta suoran kulmakerroin eli Hubblen vakio $H_0$. Suora kulkee ruudukon pisteen kautta.\n\nc) Kuinka kaukana galaksi on?\n\nAnna c)-kohdan tulos vastauskenttään megaparsekeina.",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "answer": 146.8,
+      "unit": "Mpc",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -373,6 +387,20 @@
       ],
       "answer": 10.9,
       "unit": "K",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy8-16-L3-06",
+      "level": 3,
+      "text": "Kuvassa on yhdeksän galaksin etääntymisnopeus $v$ etäisyyden $d$ funktiona megaparsekeina. Pisteisiin on sovitettu origon kautta kulkeva suora. Kaava $v = c\\,z$ pätee vain, kun punasiirtymä on pieni, noin $z < 0{,}10$. Valon nopeus on $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$. Kuvan akseli päättyy etäisyyteen $300\\,\\text{Mpc}$, ja kaukaisimman pisteen etäisyys on noin $285\\,\\text{Mpc}$.\n\na) Lue kuvasta Hubblen vakio $H_0$ suoran kulmakertoimena. Suora kulkee ruudukon pisteen kautta.\n\nb) Jatketaan suoraa kuvan ulkopuolelle. Millä etäisyydellä suora antaa etääntymisnopeudeksi $0{,}10\\,c$?\n\nc) Miksi tämä etäisyys on kuvan perusteella epävarma arvio, ja miksi kaavalla $v = c\\,z$ ei voi päätellä nopeutta galakseista, joiden punasiirtymä on selvästi yli $0{,}10$?\n\nAnna b)-kohdan tulos vastauskenttään megaparsekeina.",
+      "kind": [
+        "graph",
+        "reasoning",
+        "model"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "answer": 416.4,
+      "unit": "Mpc",
       "tolerance": 0.02
     }
   ]
