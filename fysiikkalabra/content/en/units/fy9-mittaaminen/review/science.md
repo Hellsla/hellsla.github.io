@@ -1,18 +1,19 @@
 VERDICT: FAIL
-CONTENT-HASH: a7fd1f4cabdc517a
-SCOPE: delta: new tasks s7 (Calibrating a spring) and s8 (A steel ball dropped, filmed on video), the s8-kuvaaja model graph and the changed intro; older tasks s1-s6 untouched (not re-judged).
+CONTENT-HASH: 0da2cfcc91630694
+SCOPE: delta: round 2, the fixes of round 1 in fy9-mittaaminen-s7 and -s8 (s8 solutions, rubric, answers.py, the s8-kuvaaja model graph); older tasks s1-s6 untouched (not re-judged).
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-1. **A, s8 c, the frame-interval cause is backwards.** This is in the solution ("An error in the time scale ... $0.974 \cdot 0.05\,\text{s} = 0.0487\,\text{s}$") and in the rubric `error_sources` detail ("a frame interval about $2.6\,\%$ shorter than assumed"). We have $g = 2s/t^2$. If the real interval were shorter than the assumed $0.05\,\text{s}$, the assumed times would be too long and the computed $g$ too *small*. To turn a true $9.81$ into the measured $10.35\,\text{m/s}^2$, the real interval must be *longer*: $0.05\,\text{s} \cdot \sqrt{10.35/9.81} \approx 0.0514\,\text{s}$, about $2.7\,\%$ (frame rate about 19.5 instead of 20 per second). The same error is in fi, along with answers.py `c-tscale`.
-2. **A, s8 a, "the constant term ... is not significant"** (5th criterion, model answer). Every line that passes through all the $\pm 0.01\,\text{m}$ bars (part b's own test) crosses the $s$ axis between $+0.003$ and $+0.012\,\text{m}$, and no line through the origin fits. The claim therefore contradicts the task's own method (s7 b uses it correctly). Say instead that the constant term is small, about the reading uncertainty, perhaps an offset in the distance zero. Since the line is not forced through the origin, the slope is not affected.
+1. **A, s8 a, round-1 item 2 is fixed only in the solution.** The en model answer now says: "It is small, and because the line is not forced through the origin, it does not affect the slope." This is correct. The 5th rubric criterion of a (tasks.json, tag `graph`) still reads "The constant term of the line is about $0.01\,\text{m}$, the size of the reading uncertainty, so it is not significant." I recomputed every line through all the $\pm 0.01\,\text{m}$ bars. Each crosses the $s$ axis between $+0.0033$ and $+0.012\,\text{m}$, so zero is excluded. The criterion awards a point for a wrong conclusion, and it contradicts the model answer. Reword it, for example: "The constant term (about $0.01\,\text{m}$) is small, the size of the reading uncertainty, and does not affect the slope because the line is not forced through the origin." The same item is open in fi and fi-easy.
 
 ## Polish
-- s8 b: "$g = 2 \cdot 5.18 \approx 10.35$". $2 \cdot 5.18$ is $10.36$. Show $5.177$ in the chain.
-- In the en solutions file, the headings `### Yleisiä virheitä` and `### Hyväksytään myös` are left in Finnish. Check whether the renderer replaces them, or whether a student sees them.
+- The headings `### Yleisiä virheitä` and `### Hyväksytään myös` in the en solutions are still in Finnish. This is carried from round 1; it is fine if the renderer maps them to the English labels.
+- s8 c: the interval $10.19\ldots10.48\,\text{m/s}^2$ (the limiting lines) differs slightly from $10.35 \pm 0.15$ ($10.20\ldots10.50$). Both are defensible.
 
 ## Checked
-- Translation fidelity against fi, part by part, for s7 a-c and s8 a-c: the task texts, every criterion, the solutions, Common mistakes and Accept also. The numbers, units, points, answers and tolerances are identical, with decimal points used throughout. The physics wording is accurate (spring constant, extension, coils pressed together, elastic limit, extrapolation, acceleration of free fall). The text does not reveal the solution's structure: s8 asks for a graph whose slope gives $g$ but does not name $t^2$.
-- The same recomputation script as for fi (the data from the fy5-8 and fy4-2 figure sources; answers.py side by side): s7 $k = 29.98\,\text{N/m}$, bounds $28.83$/$31.27$, $\Delta k = 1.22$, $x = 15.0 \pm 0.61\,\text{cm}$, intercept range $-0.20\ldots+0.27\,\text{cm}$. s8 slope $5.175$, intercept $0.010\,\text{m}$, bounds $5.094$/$5.242$, $g = 10.35 \pm 0.15$, difference $0.54$ ($5.5\,\%$, $3.7\Delta g$). All match the en text except items 1 and 2.
-- The alt text of the s8-kuvaaja figure (en solutions) matches the solution: slope $5.18\,\text{m/s}^2$, intercept about $0.01\,\text{m}$, circled points.
-- Intro: eight problems, two with a ready graph, one with the ideal gas law: true.
-- `practice.py check` OK. The hash is the same at the start and the end.
+- Round-1 item 1 is fixed in the en solution c ("if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large"; $1.027 \cdot 0.05\,\text{s} = 0.0514\,\text{s}$, about $2.7\,\%$, lower frame rate), in the rubric `error_sources` detail and in answers.py `c-tscale` ($\sqrt{g/9.81}$). "Shorter than assumed" and $0.0487$ no longer appear.
+- The polish is fixed: the substitution uses $2 \cdot 5.177\,\text{m/s}^2 = 10.35$, and so does the rubric detail.
+- My script (scratchpad s8r2.py): least-squares slope $5.175$, intercept $0.0100\,\text{m}$, largest residual $0.008\,\text{m}$. Read slope $5.177$, limiting slopes $5.094$/$5.242$, $\Delta g = 0.147$, difference $0.54$ ($5.5\,\%$, $3.7\Delta g$), interval $0.0514\,\text{s}$. All match the en text, with the same numbers as fi and decimal points throughout.
+- Precision: $(10.35 \pm 0.15)\,\text{m/s}^2$ and the check value $0.83\,\text{m}$ fit the data. The task text does not name $t^2$ (no structure revealed). Calculation chains are in aligned rows. The unit fields `N/m`, `cm` and `m/s^2` are language-neutral.
+- The figure alt text matches the solution (slope $5.18$, intercept about $0.01\,\text{m}$, circled points). The physics wording of the fix is accurate.
+- `practice.py check` OK for en (8 tasks, 116 points). The hash is the same at the start and the end.
