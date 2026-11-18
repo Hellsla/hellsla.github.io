@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: e4698eb90a6f28b3
-SCOPE: delta wording from 21672faf3c60a0f2 base 205dde902d
+SCOPE: delta wording from 21672faf3c60a0f2 base ee70813398
 Delta: one feedback sentence in exercises.json and one sentence in solutions.md (task 10-6), wording only.
 
 ## Blocking
