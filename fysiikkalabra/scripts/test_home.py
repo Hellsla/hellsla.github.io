@@ -444,6 +444,10 @@ with sync_playwright() as pw:
         pg.click(term); pg.mouse.click(5, 300); out_click = pg.evaluate("!document.querySelector('.kc-pop')")
         expect(f"{lid}: a bold term opens its popover, Esc and a click outside close it", opened and closed and out_click, (opened, closed, out_click))
         pg.evaluate("localStorage.clear()")
+        # Yleinen virhekäsitys and Tiivistelmä are closed <details> boxes (work queue 8): the chips inside open by keyboard
+        box = pg.locator("details.theory-box:has(.kc-chips) > summary"); box.focus(); was_closed = pg.evaluate("!document.querySelector('details.theory-box:has(.kc-chips)').open")
+        pg.keyboard.press("Enter"); pg.wait_for_timeout(100)
+        expect(f"{lid}: the Tiivistelmä box starts closed and opens with Enter", was_closed and pg.evaluate("document.querySelector('details.theory-box:has(.kc-chips)').open"))
         pg.locator(".kc-chips .kc-chip >> nth=0").scroll_into_view_if_needed(); pg.click(".kc-chips .kc-chip >> nth=0"); pg.click(".kc-pop .kc-add")
         added = pg.evaluate("Object.values(JSON.parse(localStorage.getItem('ruukkilabra:kortit') || '{}')).some(e => e.tila === 'kertaa')")
         expect(f"{lid}: a chip opens the popover and 'Lisää kertauspakkaan' adds the card", added)
