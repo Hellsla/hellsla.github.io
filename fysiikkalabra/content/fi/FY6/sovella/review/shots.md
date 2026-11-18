@@ -1,6 +1,6 @@
 # Screenshots of FY6-sovella (preview/FY6-sovella.html)
 
-Captured for: 8067d7cd885e25ec page 1664fd85d9a95885 (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
+Captured for: 8067d7cd885e25ec page 90f8311dee37957f (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
 
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
