@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 89c67b32e341a590
+CONTENT-HASH: 695f92c88ea4c6b7
 
 ## Blocking
 
 ## Polish
-- None.
+- Puskuri card: "pienemmän voiman" means the average force; "pienemmän keskimääräisen voiman" would match the impulse model.
 
 ## Checked
-batch delta review: Recomputed 1200 N / 60 kg = 20 m/s², Δv = 20·0,30 = 6,0 m/s; distractors 20 (acceleration) and 360 (F·Δt without mass) with correct feedback; net force 'keskimäärin' and direction stated; one correct option.
+batch delta review: cards: equal momentum, smaller mass gives larger speed; same impulse, longer stopping time, smaller (average) force; rebound change -2mv and double impulse; split stage.

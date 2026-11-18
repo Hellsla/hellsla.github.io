@@ -349,7 +349,7 @@ Luvussa *Työ ja energia* opit, että voima tekee työtä, kun kappale liikkuu v
 ```pysahdy
 Lapsi liukuu pulkalla alas rinnettä. Tekeekö lumen tukivoima työtä? Entä kitka?
 ---
-Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka vastustaa liikettä, joten se tekee negatiivista työtä ja vähentää energiaa.
+Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka vastustaa liikettä, joten se tekee negatiivista työtä ja vähentää mekaanista energiaa.
 ```
 
 ### Kitka muuttaa mekaanista energiaa sisäenergiaksi

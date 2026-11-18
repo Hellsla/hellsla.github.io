@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: edf1d7cb11644c3b
+CONTENT-HASH: 297c79ec484ee192
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json retrieval feedback — where a display `aligned` block sits mid-sentence and is followed by punctuation (fy4-7, 9, 10) the full stop/comma lands on its own line after the block; consider ending the sentence before the block.
 
 ## Checked
-batch delta review: diff is retrieval-question text/numbers in inquiry.json; opened the Pohdinta captures of fy4-1 and fy4-7 and the Ennusta capture and contact sheet of fy4-9 (maths, units, layout at 390 and 1280 px fine, no clipping); figures unchanged; sources of the other lessons' diffs read (units in LaTeX, decimal point, English fluent).
+batch delta review: Stop and think boxes judged from the diff text and the same shared component seen in fy4-1, fy4-7, fy4-13, fy4-16 captures (theory-1280); the lesson's own theory captures were not opened individually. Maths in the boxes is in LaTeX.

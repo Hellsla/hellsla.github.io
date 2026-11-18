@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e5f316e371ac3789
+CONTENT-HASH: 0c9d8336c40ac1f1
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json retrieval feedback — where a display `aligned` block sits mid-sentence and is followed by punctuation (fy4-7, 9, 10) the full stop/comma lands on its own line after the block; consider ending the sentence before the block.
+- [Minor] Stop and think answer (100 MW / 90 MW): the new sentence is long; consider splitting after "transferred to the surroundings as heat".
 
 ## Checked
-batch delta review: diff is retrieval-question text/numbers in inquiry.json; opened the Pohdinta captures of fy4-1 and fy4-7 and the Ennusta capture and contact sheet of fy4-9 (maths, units, layout at 390 and 1280 px fine, no clipping); figures unchanged; sources of the other lessons' diffs read (units in LaTeX, decimal point, English fluent).
+batch delta review: fy4-15-theory-1280-2 (Stop and think box with the 100 MW / 90 MW question: units in KaTeX; the changed answer is closed), fig-row-1280. The new wording is grammatical.

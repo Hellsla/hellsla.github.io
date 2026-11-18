@@ -243,7 +243,7 @@ The reaction distance is directly proportional to the speed: at double the speed
 This gives the answer to the first part of the opening question. When the speed doubles from $50\,\text{km/h}$ to $100\,\text{km/h}$, the reaction distance doubles from $13.9\,\text{m}$ to $27.8\,\text{m}$, but the braking distance quadruples from $10.7\,\text{m}$ to $42.9\,\text{m}$. The stopping distance therefore grows from $24.6\,\text{m}$ to $70.6\,\text{m}$, almost three times as long.
 
 ```pysahdy
-A driver slows from $80\,\text{km/h}$ to $40\,\text{km/h}$. How does the braking distance change when the deceleration is the same?
+A driver brakes to a stop from $40\,\text{km/h}$ instead of from $80\,\text{km/h}$. How does the braking distance change when the deceleration is the same?
 ---
 It becomes one quarter. Stopping takes only half the time, and the car moves at half the speed the whole time.
 ```

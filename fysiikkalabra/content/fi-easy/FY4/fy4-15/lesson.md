@@ -242,7 +242,7 @@ missä $\eta$ (eta) on hyötysuhde. Se ilmoitetaan desimaalilukuna tai prosentte
 ```pysahdy
 Voimala ottaa vedestä tehon $100\,\text{MW}$ ja antaa sähkötehon $90\,\text{MW}$. Mihin loput $10\,\text{MW}$ menevät?
 ---
-Energiaa ei katoa. Suurin osa muuttuu lämmöksi, kun vesi hankaa ja laitteet lämpenevät. Osa jää alaveteen virtaavan veden liike-energiaksi.
+Energiaa ei katoa. Suurin osa muuttuu sisäenergiaksi, kun vesi hankaa ja laitteet lämpenevät. Sisäenergia siirtyy lämpönä ympäristöön. Osa jää alaveteen virtaavan veden liike-energiaksi.
 ```
 
 ### Tuulen liike-energia

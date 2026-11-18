@@ -204,7 +204,7 @@ The string pulls the cart with the force $\overline{T}_1$ and the hanging mass w
 ```pysahdy
 The string pulls the cart with the force $\overline{T}_1$ and the hanging mass with the force $\overline{T}_2$. Why are these two forces not a force and its reaction?
 ---
-They act on two different bodies, the cart and the hanging mass. The reaction to $\overline{T}_1$ is the force the cart exerts on the string, and it acts on the string.
+They belong to two different interactions: string and cart, and string and hanging mass. The reaction to $\overline{T}_1$ is the force with which the cart pulls the string.
 ```
 
 <figure class="unit-photo"><img src="pics/fy4/inclined-plane-apparatus.webp" alt="An old inclined plane apparatus: a small roller on a sloping bar and a hanging weight are connected by a string over a pulley."><figcaption>An inclined plane teaching apparatus from the early 20th century in the school museum of Bremerhaven, Germany. A roller on the incline and a hanging weight are connected by a string that runs over a pulley.</figcaption></figure>

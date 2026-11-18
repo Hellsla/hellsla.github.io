@@ -349,7 +349,7 @@ In the chapter *Work and energy* you learned that a force does work when an obje
 ```pysahdy
 A child slides down a slope on a sled. Does the normal force of the snow do work? What about friction?
 ---
-The normal force is perpendicular to the motion, so it does no work. Friction opposes the motion, so it does negative work and decreases the energy.
+The normal force is perpendicular to the motion, so it does no work. Friction opposes the motion, so it does negative work and decreases the mechanical energy.
 ```
 
 ### Friction turns mechanical energy into internal energy

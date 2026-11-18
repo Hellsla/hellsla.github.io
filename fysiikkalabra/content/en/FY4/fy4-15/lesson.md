@@ -242,7 +242,7 @@ where $\eta$ (eta) is the efficiency, given as a decimal number or as a percenta
 ```pysahdy
 A power plant takes in a power of $100\,\text{MW}$ from the water and delivers an electric power of $90\,\text{MW}$. Where does the other $10\,\text{MW}$ go?
 ---
-No energy disappears. It mostly becomes thermal energy as the water rubs against the pipe and the machines warm up, and some stays as the kinetic energy of the water leaving into the lower pool.
+No energy disappears. Most of it becomes internal energy, which is transferred to the surroundings as heat, as the water rubs against the pipe and the machines warm up, and some stays as the kinetic energy of the water leaving into the lower pool.
 ```
 
 ### The kinetic energy of the wind

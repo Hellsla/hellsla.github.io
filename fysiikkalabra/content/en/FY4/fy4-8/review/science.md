@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: dcb4c31e8b7caf56
+CONTENT-HASH: 039f025a3dac3e58
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: the Why question and the explain prompt now say "traditional chain-lift ... usually the highest". This removes the false "always" (launched and booster coasters) and agrees with the criterion "the work by the chain lift ... nothing adds to it afterwards". The friction and drag work is now negative "when they oppose the motion", which is correct and avoids the overclaim "always negative". The work-energy statement and the formula are unchanged.
+batch delta review: the sled prompt now says friction does negative work and "decreases the mechanical energy". That is correct and more precise than before: the total energy is conserved, and the next section says the mechanical energy becomes internal energy. The normal force does no work because it is perpendicular to the motion. No numbers or options changed.

@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 389bd4a1d84db983
+CONTENT-HASH: cd4e6911f8763c04
 
 ## Blocking
 
+
 ## Polish
+- None.
 
 ## Checked
-batch delta review: the pysahdy answer on the rising, slowing box changes "Alas" to "Alaspäin" twice. Physics unchanged and correct: slowing while moving up means acceleration and hence net force point down (Newton II, F = ma), so the rope force is smaller than the weight; velocity is not confused with force. Consistent with the lesson's theory. No numbers or symbols changed; no captures opened (wording only).
+batch delta review: the significant-figures justification now follows the house rule (480 kg: three significant figures, trailing zero of a given value significant); recomputed a = T/m - g = 5200/480 - 9,81 = 1,023 m/s², so 1,02 m/s² with three figures is right; no other text in the lesson or inquiry still calls 480 kg exact.

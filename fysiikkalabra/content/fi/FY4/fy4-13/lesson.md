@@ -204,7 +204,7 @@ Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline
 ```pysahdy
 Lanka vetää kärryä voimalla $\overline{T}_1$ ja punnusta voimalla $\overline{T}_2$. Miksi nämä kaksi voimaa eivät ole voima ja vastavoima?
 ---
-Ne vaikuttavat kahteen eri kappaleeseen, kärryyn ja punnukseen. Voiman $\overline{T}_1$ vastavoima on kärryn lankaan kohdistama voima, ja se vaikuttaa lankaan.
+Ne kuuluvat kahteen eri vuorovaikutukseen: langan ja kärryn sekä langan ja punnuksen. Voiman $\overline{T}_1$ vastavoima on voima, jolla kärry vetää lankaa.
 ```
 
 <figure class="unit-photo"><img src="pics/fy4/inclined-plane-apparatus.webp" alt="Vanha kaltevan tason koelaite: kaltevalla sauvalla oleva pieni rulla ja riippuva punnus on yhdistetty narulla väkipyörän yli."><figcaption>Kaltevan tason opetusväline 1900-luvun alusta Bremerhavenin koulumuseossa. Kaltevalla tasolla oleva rulla ja riippuva punnus on yhdistetty narulla, joka kulkee väkipyörän yli.</figcaption></figure>

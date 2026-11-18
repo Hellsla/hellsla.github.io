@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 35b940b761644836
+CONTENT-HASH: b744226b9f29e1da
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: Parachute just opened, moving down and slowing: acceleration and net force point up (N2L), the one correct option; distractors' feedback correct; photo caption agrees with fi (NASA test, drone drop, no person); the new parachutist alt-text entry's data matches v_t·tanh(gt/v_t) with v_t = 48 m/s and is not used in the fi-easy lesson page.
+batch delta review: cards: no drag at zero speed relative to air (plane's speed ignored, stated in the next paragraph); at terminal speed drag = weight, net force and acceleration zero; flat sheet reaches drag = weight at lower speed, smaller terminal speed (correct); split stage.

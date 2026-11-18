@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: eee552233cd72c1e
+CONTENT-HASH: 7ee88e9d52476707
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: Recomputed 1,2 m / 0,50 s = 2,4 m/s (½·9,81·0,50² = 1,23 m, so the data is free fall), first-second mean 4,9 ≈ 5 m/s, distractors 0,60 (m·s) and 0,42 (s/m) with correct unit reasoning; one correct option; lesson.md change is row reflow only.
+batch delta review: pysahdy cards: v<0 and a<0 give increasing speed (correct); secant slope of a (t,x) curve = average velocity between the points, not instantaneous (correct); tennis ball and steel ball land together with small air resistance (condition stated); split stage unchanged in numbers.

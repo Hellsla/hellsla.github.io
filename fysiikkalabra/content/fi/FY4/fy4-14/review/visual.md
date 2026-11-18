@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1955e4987003f3bb
+CONTENT-HASH: 9e28e0df9919af33
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] Pysähdy-kysymys "Hyppääjä lähtee ilman suhteen levosta, vaikka…" — hankala sanajärjestys — esim. "Hyppääjä on hypyn alussa levossa ilmaan nähden, vaikka hänen ympärillään on ilmaa."
 
 ## Checked
-- batch delta review: opened example-390 captures (fi, fy4-14); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: Pysähdy ja mieti -ruudut (suljettu ja vastaus auki) 360 px ja 1280 px renderöitynä esikatselusta; teksti, KaTeX ja asettelu kunnossa, ei ylivuotoa.

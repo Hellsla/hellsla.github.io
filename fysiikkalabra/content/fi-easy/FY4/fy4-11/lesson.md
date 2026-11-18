@@ -243,7 +243,7 @@ Reaktiomatka on suoraan verrannollinen nopeuteen. Kun nopeus on kaksinkertainen,
 Tästä saadaan vastaus alun kysymyksen ensimmäiseen osaan. Nopeus kaksinkertaistuu $50\,\text{km/h}$:sta $100\,\text{km/h}$:iin. Silloin reaktiomatka kaksinkertaistuu $13{,}9\,\text{m}$:stä $27{,}8\,\text{m}$:iin, mutta jarrutusmatka nelinkertaistuu $10{,}7\,\text{m}$:stä $42{,}9\,\text{m}$:iin. Pysähtymismatka kasvaa siksi $24{,}6\,\text{m}$:stä $70{,}6\,\text{m}$:iin, lähes kolminkertaiseksi.
 
 ```pysahdy
-Kuljettaja hidastaa nopeudesta $80\,\text{km/h}$ nopeuteen $40\,\text{km/h}$. Miten jarrutusmatka muuttuu, kun hidastuvuus on sama?
+Kuljettaja jarruttaa pysähdyksiin nopeudesta $40\,\text{km/h}$ eikä nopeudesta $80\,\text{km/h}$. Miten jarrutusmatka muuttuu, kun hidastuvuus on sama?
 ---
 Se lyhenee neljäsosaan. Pysäyttäminen kestää vain puolet ajasta, ja auto liikkuu koko ajan puolta hitaammin.
 ```

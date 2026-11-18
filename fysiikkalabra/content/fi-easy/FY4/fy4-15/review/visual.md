@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: acc54d6e3cb68acd
+CONTENT-HASH: 631ccc6ac2265706
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] none worth listing.
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-15); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review (round 2): opened fy4-15-theory-1280-2.png (two Pysähdy ja mieti boxes: 100 MW/90 MW and wind rotor; units in KaTeX), fy4-15-theory-1280-3.png, fy4-15-fig-5-390.png. Boxes fit the reading column, Vastaus closed, Finnish natural, figures and formulas intact.

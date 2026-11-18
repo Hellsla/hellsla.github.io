@@ -357,7 +357,7 @@ Työn yksikkö on sama kuin energian yksikkö, joule.
 ```pysahdy
 Lapsi liukuu pulkalla alas rinnettä. Tekeekö lumen tukivoima työtä? Entä kitka?
 ---
-Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka vastustaa liikettä. Siksi se tekee negatiivista työtä ja vähentää energiaa.
+Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka vastustaa liikettä. Siksi se tekee negatiivista työtä ja vähentää mekaanista energiaa.
 ```
 
 ### Kitka muuttaa mekaanista energiaa sisäenergiaksi

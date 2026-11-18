@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 48393647ff99e09e
+CONTENT-HASH: c44200e4363c7ccd
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- lesson.md Pysähdy 1 and 2 (auto, tarranauha) — answered in the sentences just above ("Kitkan impulssi jää siksi … niin pieneksi"; "Toinen puoli muuttuu … sisäenergiaksi"), so they test recall only. Fix: ask before the explanation or turn into a transfer question.
+- lesson.md "Vastaus alun kysymykseen" — the squaring step is the real jump for an S2 reader and has no box; one box here would help more than box 2. "Korotetaan ensimmäinen ehto toiseen potenssiin" is heavy: "Lasketaan ehto $v_1'+v_2'=v$ toiseen potenssiin".
+- lesson.md "Törmäysten lajit" — "Silloin törmäys on täysin kimmoton… Silloin mahdollisimman suuri osa…" repeats "Silloin" three times; vary or merge.
+- Box 3 (luistelija) is short, concrete and a real transfer; keep it. Short answers of three sentences suit S2 readers.
 
 ## Checked
-- Delta judged in context: the worked example's "Tunnetut ja kysytty" now has the knowns and the question in separate paragraphs (the question last, per house rules); text unchanged.
-- Tiivistelmä bullet: the formula m1 v1 + m2 v2 = m1 v1' + m2 v2' is the same equation, now as an aligned display block; symbols, signs and primes identical to the Kaava section.
-- No wording, number or unit changed, so learning path, goals and Finnish are as previously approved.
-- Captures: none opened (the phone clipping of this display block is the visual reviewer's question).
+- Same physics, numbers and stages as Finnish; difficult words (systeemi, sisäinen voima) explained at first use.
+- Pysähdy placement and closed answers fine; sentences short.
+- Predictions, experiments and feedback unchanged and sound; exit ticket tests the core idea.
+- Workload one lesson.

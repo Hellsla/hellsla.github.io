@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec4bb66eaa5f1426
+CONTENT-HASH: 313f6528beb5e31c
 
 ## Blocking
 
+
 ## Polish
+- None.
 
 ## Checked
-batch delta review: skateboarder 3,0 m/s up: h = v²/(2g) = 0,459 m, t = 0,306 s, v²/g = 0,92 m, v/(2g) = 0,15 (unit s) recomputed; 'sama kuin rampilla' matches the hook's 0,46 m; one correct option; answers.py runs; roller-coaster photo and alt text match the image.
+batch delta review: four new blocks: v tripled gives 3² = 9 times E_k, correct; friction turns kinetic energy into internal energy of box and floor, non-conservative, wording follows the P1 guardrail; frictionless ramp: ΔE_k = -30 J gives ΔE_p = +30 J, E_mek constant, correct. Knowns/question split changes no number.
