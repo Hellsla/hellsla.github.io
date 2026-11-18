@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c79ae27e3ce688a5
-SCOPE: delta (round 2): new tasks fy9-lampo-s7 and s8 and changed intro; other tasks not re-judged
+CONTENT-HASH: e2d1a4f13b4f84c1
+SCOPE: delta: tasks s7 (heating a metal block) and s8 (heating a piece of ice) with solutions, and the changed intro in sovella/tasks.json; other tasks not re-judged
 
 ## Blocking
-None. Round-1 items verified: -16 °C is stated in the s8 text; s8 d asks "What mass"; decimal points are used consistently in English.
+None.
 
 ## Polish
-- s8 d: the solution relies on s from part b; no note on a carried-forward error, and no separate mark for recognising that 120 kJ lies on the flat part.
-- s8 c: the graph reaches 300 kJ, so 270 kJ can also be read directly; the solution could mention it as a check.
+- In the English solutions.md the fixed section headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish; if the build shows them to students, translate them (the parser may key on them, so check first).
 
 ## Checked
-- Task text reveals no solution structure; both figures are marked safe in the catalog.
-- Fidelity to fi: same numbers, points (s7 3/4/4/3, s8 4/5/4/3), criteria, answers and tolerances; terms consistent.
-- Solutions meet rule 7 (given/asked, principle, formula before numbers, conversions, substitution with units, significant figures, reasonableness, common mistakes).
-- Figures fy3-6/heating-line and fy3-7/melting-curve match tasks; intro (eight problems) fits s7 and s8.
-- Hash c79ae27e3ce688a5 at start and end (unchanged).
+s7 and s8 each combine a graph (heating-line, melting-curve) with several connected parts of rising demand; s7 d (explain with energy) and s8 b (flat part = melting) need interpretation. Task texts and headings do not name the formula or the answer. Parts, points (14, 16), answers and figures match fi. Solutions have all parts a-d with Given/Find/Principle/Formula/Substitution/Answer/Reasonableness, real common mistakes (0.36 kg, 220 kJ taken as melting energy) and accepted alternatives. Intro (eight problems) fits the unit.

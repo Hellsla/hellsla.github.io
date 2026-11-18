@@ -1405,7 +1405,9 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Alkutila $3\text{d}$ kuuluu kuoreen $n = 3$. Lopputila $2\text{p}$ kuuluu kuoreen $n = 2$. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, Planckin vakio on $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja valon nopeus on $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$. Kysytään fotonin aallonpituutta $\lambda$.
+**Tunnetut ja kysytty.** Alkutila $3\text{d}$ kuuluu kuoreen $n = 3$. Lopputila $2\text{p}$ kuuluu kuoreen $n = 2$. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, Planckin vakio on $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja valon nopeus on $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
+
+Kysytään fotonin aallonpituutta $\lambda$.
 
 <!-- vaihe -->
 

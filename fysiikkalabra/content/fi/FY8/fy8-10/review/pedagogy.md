@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 2259920fc70ee655
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 36c15f8b62d12e9c
 ## Blocking
-- none
 
 ## Polish
-- The beta-plus atomic-mass formula could later be marked as an extension; left in the core text for now.
-
+- none
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: prompt now names helium-4 as the alpha particle; keeps the task (daughter nucleus) intact, clearer for a first-time reader.

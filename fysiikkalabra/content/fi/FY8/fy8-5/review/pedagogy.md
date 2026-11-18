@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 04da912ff11c958c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 582d3e8f8eaed80e
 ## Blocking
 - none
-
 ## Polish
-- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
-
+- none
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: Retrieval prompt adds a short bridge from chemistry's electron clouds to the double slit; clear and fits the lesson's start.

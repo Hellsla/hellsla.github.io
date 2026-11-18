@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 0a14917be2b6beb5
-
+CONTENT-HASH: 8f13b609fe914498
 ## Blocking
 
 ## Polish
-- None.
-
+- none
 ## Checked
-batch delta review: half-value thickness paragraph is more accurate (energy and material dependence) and consistent with the table and the 662 keV note; no task relies on 'higher energy always penetrates more'.
+batch delta review: americium to radon-222 alpha-type item; no leftover americium text in the item or its feedback (the americium mention in the simulation note is separate and accurate).

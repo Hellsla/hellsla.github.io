@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9136b7411732c7ca
-SCOPE: delta answers,numbers from f60b307c452eec2c base 7669c41
+CONTENT-HASH: f84ec544751b6b2e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-9-L2-09 solution, Järkevyys — the no-background chain (200 s · 0.69315 over ln 380/58) renders at a small nested-fraction size, readable but cramped at 1280 px; a shared-layout matter, no content change.
-- [Minor] fy8-9-L2-10 figure — y labels every 200 kBq against a 50 kBq grid; an optional label every 100 kBq would help reading 360 kBq (carried over from round 1).
+- [Minor] fy8-9 L2-09 solution, Järkevyys — the no-background chain renders as a small nested fraction (carried over; shared layout matter).
 
 ## Checked
-- Delta (en): fy8-9-open-exercises-L2-1280-13 and -14 (tasks 9-18 and 9-19, every solution open) and -15 (end of 9-19); -12 also opened in fi. Figures unchanged since round 1 (fig-28-390 judged then).
-- L2-09: new "Kuvaajan lukeminen" text reads fluently; 2 %:n and 73,7 s:sta (en: 73.7 s) set correctly; Sijoitus nested fraction ln 375/53 clean, equals signs aligned, answer 70,9 s set apart with its justification.
-- L2-10: new Järkevyys chain (1/2)^(1/5,0) ≈ 0,871 and 0,871^5 ≈ 0,50 renders cleanly.
-- No clipping, overflow or red KaTeX; solutions inside their cards.
+- Delta (en): fy8-9-open-exercises-L2-1280-13 and -14 (tasks 9-18, 9-19, every solution open): paragraphs read in order, formulas aligned, answer set apart, nothing clipped or red; figure fig-28 unchanged.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 5 · accessibility 5

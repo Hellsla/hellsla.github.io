@@ -213,7 +213,9 @@ $$, joten jos jokainen elektroni synnyttäisi fotonin, säteilyteho olisi noin $
 ## fy8-6-L1-06
 **Kysytty:** miksi LED syttyy vasta kynnysjännitteellä
 **Periaate:** LEDissä elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja luovuttaa energiansa yhtenä fotonina, jonka energia on likimain $hf \approx E_\text{g}$. Elektroni saa jännitelähteeltä energian $eU$, ja kynnysjännitteellä $eU_\text{k} \approx hf$.
-**Mallivastaus:** Fotoni voi syntyä vasta, kun elektronin saama energia $eU$ on likimain fotonin energian $hf$ suuruinen. Pienemmällä jännitteellä energia ei riitä, joten fotoneja ei synny ja LED pysyy pimeänä. Kynnysjännitteen jälkeen virta kasvaa jyrkästi, ja fotoneja syntyy enemmän, joten LED loistaa kirkkaammin. Väärät selitykset ovat muut vaihtoehdot: LEDin valo ei synny lämpenemisestä, saman LEDin valon väri ei muutu jännitettä säätämällä, koska fotonin energian määrää energia-aukko, eikä LEDin kuori estä fotoneja pääsemästä ulos.
+**Mallivastaus:** Fotoni voi syntyä vasta, kun elektronin saama energia $eU$ on likimain fotonin energian $hf$ suuruinen. Pienemmällä jännitteellä energia ei riitä, joten fotoneja ei synny ja LED pysyy pimeänä. Kynnysjännitteen jälkeen virta kasvaa jyrkästi, ja fotoneja syntyy enemmän, joten LED loistaa kirkkaammin.
+
+Väärät selitykset ovat muut vaihtoehdot: LEDin valo ei synny lämpenemisestä, saman LEDin valon väri ei muutu jännitettä säätämällä, koska fotonin energian määrää energia-aukko, eikä LEDin kuori estä fotoneja pääsemästä ulos.
 
 ## fy8-6-L1-07
 **Annettu:** kynnysjännite $U_\text{k} = 2{,}30\,\text{V}$, $eU_\text{k} = \tfrac{hc}{\lambda}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -283,7 +285,12 @@ eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
 &= 2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan poikkeama on $\dfrac{6{,}868 - 6{,}626}{6{,}626} \cdot 100\,\% = 3{,}65\,\%$.
-**Vastaus:** Sallan Planckin vakio poikkeaa hyväksytystä arvosta $3{,}65\,\%$ ylöspäin, kolme merkitsevää numeroa kuten jännitteissä. Muut tulokset ovat Ainolla $5{,}86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11{,}6\,\%$) ja Eerolla $6{,}33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4{,}5\,\%$). Kohta b): Ainon ja Sallan lukutavat ovat virheellisiä, koska tulos riippuu valitusta virrasta. Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta. Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
+**Vastaus:** Sallan Planckin vakio poikkeaa hyväksytystä arvosta $3{,}65\,\%$ ylöspäin, kolme merkitsevää numeroa kuten jännitteissä. Muut tulokset ovat Ainolla $5{,}86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11{,}6\,\%$) ja Eerolla $6{,}33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4{,}5\,\%$). Kohta b): Ainon ja Sallan lukutavat ovat virheellisiä, koska tulos riippuu valitusta virrasta.
+
+Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta.
+
+Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
+
 **Järkevyys:** Eeron $h$ poikkeaa hyväksytystä arvosta silti $-4{,}5\,\%$, ja ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$ ($\tfrac{hc}{e\lambda} = 1{,}97\,\text{V}$ ja Eeron $1{,}88\,\text{V}$), joten sitä ei pidä pitää virheellisenä lukutapana. Suunta täsmää: $5{,}86 < 6{,}33 < 6{,}87$ vastaa jännitteiden järjestystä $1{,}74\,\text{V} < 1{,}88\,\text{V} < 2{,}04\,\text{V}$.
 
 ## fy8-6-L2-07
@@ -294,7 +301,10 @@ $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot
 **Kaava:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
 **Muunnokset:** $\lambda_1 = 620 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 640 \cdot 10^{-9}\,\text{m}$; energiat jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\dfrac{hc}{\lambda_1} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$ ja $\dfrac{hc}{\lambda_2} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{640 \cdot 10^{-9}\,\text{m}} = 3{,}1039 \cdot 10^{-19}\,\text{J} = 1{,}9375\,\text{eV}$, joten $\Delta E = 2{,}0000\,\text{eV} - 1{,}9375\,\text{eV} = 0{,}0625\,\text{eV}$
-**Vastaus:** $\Delta E = 0{,}0625\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa. LED ei ole yksivärinen, koska sen fotonien energiat vaihtelevat: intensiteetti on vähintään puolet maksimista, kun fotonin energia on välillä $1{,}94\,\text{eV}$–$2{,}00\,\text{eV}$, ja nämä fotonit muodostavat spektrin pääosan. Huipun fotonin energia on noin $1{,}97\,\text{eV}$. Energia-aukko on materiaalin ominaisuus, mutta elektronit ja aukot ovat vöissä lämpöliikkeen vuoksi hieman eri energioilla, joten fotonien energiat jakautuvat kapealle välille energia-aukon kohdalle.
+**Vastaus:** $\Delta E = 0{,}0625\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa. LED ei ole yksivärinen, koska sen fotonien energiat vaihtelevat: intensiteetti on vähintään puolet maksimista, kun fotonin energia on välillä $1{,}94\,\text{eV}$–$2{,}00\,\text{eV}$, ja nämä fotonit muodostavat spektrin pääosan. Huipun fotonin energia on noin $1{,}97\,\text{eV}$.
+
+Energia-aukko on materiaalin ominaisuus, mutta elektronit ja aukot ovat vöissä lämpöliikkeen vuoksi hieman eri energioilla, joten fotonien energiat jakautuvat kapealle välille energia-aukon kohdalle.
+
 **Järkevyys:** Pyöreillä luvuilla $1240 : 620 - 1240 : 640 \approx 2{,}00 - 1{,}94 = 0{,}06\,\text{eV}$. Ero on noin $3\,\%$ huipun fotonin energiasta $1{,}97\,\text{eV}$, mikä sopii kapeaan mutta ei äärettömän kapeaan kaistaan.
 
 ## fy8-6-L2-08
@@ -336,7 +346,9 @@ $$\begin{aligned}
 
 ja mitattu $1{,}85\,\text{V}$ poikkeaa siitä vähemmän kuin mittausepävarmuus $0{,}05\,\text{V}$.
 
-Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon kautta, koska mitattu kynnysjännite eroaa arvosta $\tfrac{hf}{e}$; kun ero on suunnilleen sama kaikilla LEDeillä, se siirtää lähinnä suoraa eikä juuri muuta kulmakerrointa. Systemaattista virhettä ei voi päätellä, koska ero $0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$ on epävarmuuden $0{,}34 \cdot 10^{-34}\,\text{J}\,\text{s}$ sisällä. Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$, koska sillä on eri yksikkö; vertailu tehdään Planckin vakion epävarmuuteen $\Delta h = e\,\Delta k$.
+Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon kautta, koska mitattu kynnysjännite eroaa arvosta $\tfrac{hf}{e}$; kun ero on suunnilleen sama kaikilla LEDeillä, se siirtää lähinnä suoraa eikä juuri muuta kulmakerrointa. Systemaattista virhettä ei voi päätellä, koska ero $0{,}25 \cdot 10^{-34}\,\text{J}\,\text{s}$ on epävarmuuden $0{,}34 \cdot 10^{-34}\,\text{J}\,\text{s}$ sisällä.
+
+Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$, koska sillä on eri yksikkö; vertailu tehdään Planckin vakion epävarmuuteen $\Delta h = e\,\Delta k$.
 
 ## fy8-6-L3-04
 **Annettu:** viiden LEDin aallonpituudet ja mitatut jännitteet taulukosta, nollapistevirhe $+0{,}05\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, hyväksytty $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$

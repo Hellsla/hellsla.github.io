@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: bce70f1717c48c57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 25198780be5abb6a
 ## Blocking
 - none
-
 ## Polish
-- A short note on sphalerons (B and L not separately conserved at extreme energies) could be added later as enrichment.
-
+- The added sentence nearly gives the answer (neutron becomes proton); consider cutting it so the student recalls it.
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: Retrieval adds that the decay equals free-neutron decay; this is a hint from the lesson's own content.

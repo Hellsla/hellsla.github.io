@@ -201,7 +201,7 @@ JS = """() => {
   const R = (e) => e.getBoundingClientRect();
   const name = (e) => (e.id ? '#' + e.id : '') + (e.className && typeof e.className === 'string' ? '.' + e.className.trim().split(/\\s+/).join('.') : e.tagName.toLowerCase());
   // overlap: blocks of the same group (siblings) never drawn over each other
-  const groups = ['.activity', 'details.opt', 'details.level', '.fig-row', '.fig-row > *', '.intro-row > *', '.sol-step', 'ul.choices > li', '.stage', '#exit > ol > li', 'details.level > ol > li'];
+  const groups = ['.activity', 'details.opt', 'details.level', '.core-card', '.fig-row', '.fig-row > *', '.intro-row > *', '.sol-step', 'ul.choices > li', '.stage', '#exit > ol > li', 'details.level > ol > li', '.core-card > ol > li'];
   const seen = new Set();
   for (const g of groups) for (const a of document.querySelectorAll(g)) {
     if (!V(a) || a.closest('.lab-side, .example-task')) continue;
@@ -243,7 +243,7 @@ JS = """() => {
 
 OPEN = {
   "closed": "() => true",
-  "hints": """() => { for (const g of document.querySelectorAll('.hints, .numeric, .activity, details.level > ol > li')) {
+  "hints": """() => { for (const g of document.querySelectorAll('.hints, .numeric, .activity, details.level > ol > li, .core-card > ol > li')) {
       const h = g.querySelector('details.hint'); if (h) h.open = true; const s = g.querySelector(':scope details.solution, :scope > details.solution'); if (s) s.open = true; }
     document.querySelectorAll('details.fold, details.level').forEach((d) => { d.open = true; }); if (window.flFitMath) window.flFitMath(); return true; }""",
   "open": """() => { document.querySelectorAll('details').forEach((d) => { d.open = true; });

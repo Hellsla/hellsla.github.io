@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 922e2d0ce28bdf91
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 836e5e3ada8283ce
 
 ## Blocking
-- none
 
 ## Polish
-- The beta-plus atomic-mass formula could later be marked as an extension; left in the core text for now.
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: the prompt now says that a He-4 nucleus is an alpha particle and that Po-210 emits one; daughter Pb-206 (A 210 - 4, Z 84 - 2) recomputed; the unchanged options and feedback stay consistent; exactly one correct option; the exit ticket and lesson changes are reflow only.

@@ -11,19 +11,33 @@ $$\begin{aligned} W &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot 5{,}
 Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
 
 ### c)
-**Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset. Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja. Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
+**Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset.
+
+Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja.
+
+Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
 
 ### d)
-**Perustelu:** Siirtymässä $2 \to 1$ fotonin energia on $13{,}6\,\text{eV}\,(1 - \tfrac{1}{4}) = 10{,}2\,\text{eV}$ ja siirtymässä $3 \to 2$ se on $13{,}6\,\text{eV}\,(\tfrac{1}{4} - \tfrac{1}{9}) \approx 1{,}89\,\text{eV}$. Suhde on $10{,}2 : 1{,}89 \approx 5{,}4$. Energiatasot tihenevät ylöspäin mentäessä, joten perustilalle johtava siirtymä on paljon suurempi kuin ylempien tasojen välinen. Suhde $3{,}0$ syntyy, jos energian luullaan olevan verrannollinen lukuun $\tfrac{1}{n}$: $\tfrac{1 - 1/2}{1/2 - 1/3} = 3{,}0$. Suhde $0{,}6$ syntyy, jos energian luullaan kasvavan lukuun $n^2$ verrannollisena: $\tfrac{4 - 1}{9 - 4} = 0{,}6$. Suhde $1{,}0$ syntyy, jos vain lasketaan, että kummassakin siirtymässä taso muuttuu yhdellä.
+**Perustelu:** Siirtymässä $2 \to 1$ fotonin energia on $13{,}6\,\text{eV}\,(1 - \tfrac{1}{4}) = 10{,}2\,\text{eV}$ ja siirtymässä $3 \to 2$ se on $13{,}6\,\text{eV}\,(\tfrac{1}{4} - \tfrac{1}{9}) \approx 1{,}89\,\text{eV}$. Suhde on $10{,}2 : 1{,}89 \approx 5{,}4$. Energiatasot tihenevät ylöspäin mentäessä, joten perustilalle johtava siirtymä on paljon suurempi kuin ylempien tasojen välinen.
+
+Suhde $3{,}0$ syntyy, jos energian luullaan olevan verrannollinen lukuun $\tfrac{1}{n}$: $\tfrac{1 - 1/2}{1/2 - 1/3} = 3{,}0$. Suhde $0{,}6$ syntyy, jos energian luullaan kasvavan lukuun $n^2$ verrannollisena: $\tfrac{4 - 1}{9 - 4} = 0{,}6$. Suhde $1{,}0$ syntyy, jos vain lasketaan, että kummassakin siirtymässä taso muuttuu yhdellä.
 
 ### e)
 **Perustelu:** Kun $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$, kynnysjännite on kääntäen verrannollinen aallonpituuteen. Sinisen LEDin kynnysjännite on $1{,}9\,\text{V} \cdot \tfrac{650}{450} \approx 2{,}7\,\text{V}$. Lyhyempi aallonpituus tarkoittaa suurempaa fotonin energiaa, joten jännite kasvaa; arvo $1{,}3\,\text{V}$ saadaan kääntämällä suhde väärinpäin. Arvo $4{,}0\,\text{V}$ syntyy, jos suhde korotetaan toiseen potenssiin ($1{,}9\,\text{V} \cdot 1{,}44^2 \approx 4{,}0\,\text{V}$), vaikka riippuvuus on suoraan käänteinen. Arvo $1{,}9\,\text{V}$ on punaisen LEDin kynnysjännite; se pätisi vain, jos aallonpituudella ei olisi vaikutusta.
 
 ### f)
-**Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo. Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi: uuden fotonin energia tulee atomilta, joka luovuttaa koko siirtymän energian, joten molemmilla fotoneilla on koko siirtymän energia $hf$.
+**Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo.
+
+Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi: uuden fotonin energia tulee atomilta, joka luovuttaa koko siirtymän energian, joten molemmilla fotoneilla on koko siirtymän energia $hf$.
 
 ### g)
-**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, aika on $\tfrac{3{,}1}{1{,}6} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, vaikka puoliintuminen on suhteellista eikä vakiomäärän väheneminen. Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vielä $0{,}20\,\text{MBq}$. Vaihtoehto $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
+**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$.
+
+Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$.
+
+Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, aika on $\tfrac{3{,}1}{1{,}6} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, vaikka puoliintuminen on suhteellista eikä vakiomäärän väheneminen.
+
+Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vielä $0{,}20\,\text{MBq}$. Vaihtoehto $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
 
 ### h)
 **Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun $200\,\text{MeV}$ luetaan kiloelektronivolteiksi; $5 \cdot 10^{10}$ syntyy, kun $200\,\text{MeV}$ luetaan gigaelektronivolteiksi ($200 \cdot 10^{9} : 4$).
@@ -157,7 +171,9 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### d)
 **Kysytty:** virhelähde, joka selittää suoran poikkeaman origosta
 **Periaate:** Jos malli $eU_\text{k} = hf$ pitäisi täsmälleen, suora kulkisi origon kautta. Systemaattinen virhe, joka vaikuttaa kaikkiin mittauksiin yhtä paljon, siirtää suoraa mutta ei muuta sen kulmakerrointa.
-**Mallivastaus:** Mitatut kynnysjännitteet ovat kaikilla väreillä $0{,}02$–$0{,}07\,\text{V}$ pienempiä kuin malli $\tfrac{hf}{e}$ ennustaa, joten suora leikkaa pystyakselin alapuolelta ($-0{,}1\,\text{V}$). Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaistaväliä vastaavalla energialla, joka on pienempi kuin spektrin huipun fotonin energia $hf$. Jos poikkeama olisi vakio, se siirtäisi vain suoraa; koska se vaihtelee värin mukaan, kulmakerroin ja $h$ poikkeavat hieman mallista.
+**Mallivastaus:** Mitatut kynnysjännitteet ovat kaikilla väreillä $0{,}02$–$0{,}07\,\text{V}$ pienempiä kuin malli $\tfrac{hf}{e}$ ennustaa, joten suora leikkaa pystyakselin alapuolelta ($-0{,}1\,\text{V}$).
+
+Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaistaväliä vastaavalla energialla, joka on pienempi kuin spektrin huipun fotonin energia $hf$. Jos poikkeama olisi vakio, se siirtäisi vain suoraa; koska se vaihtelee värin mukaan, kulmakerroin ja $h$ poikkeavat hieman mallista.
 
 ### Yleisiä virheitä
 - Kuvaajaan laitetaan aallonpituus taajuuden sijasta, jolloin pisteet eivät ole suoralla.
@@ -335,7 +351,9 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### d)
 **Kysytty:** miksi reaktio vapauttaa energiaa ja miksi lämpötilan on oltava korkea
 **Periaate:** Energia vapautuu, kun reaktio vie ytimet kohti tiukemmin sidottua tilaa, jolloin massa pienenee. Ytimet ovat positiivisesti varattuja ja hylkivät toisiaan, kunnes ne tulevat vahvan vuorovaikutuksen kantaman sisälle.
-**Mallivastaus:** Helium-4:n sidosenergia nukleonia kohti on $7{,}07\,\text{MeV}$, selvästi suurempi kuin deuteriumin ($1{,}11\,\text{MeV}$) ja tritiumin ($2{,}83\,\text{MeV}$). Reaktion lopputila on tiukemmin sidottu, joten sen massa on pienempi, ja massaero $0{,}0189\,\text{u}$ vapautuu energiana ($17{,}6\,\text{MeV}$). Deuterium- ja tritiumytimillä on positiivinen varaus, joten ne hylkivät toisiaan sähköisesti. Vahva vuorovaikutus sitoo ytimet vasta noin $10^{-15}\,\text{m}$:n etäisyydellä, joten ytimien on päästävä hyvin lähelle toisiaan. Siihen tarvitaan suuri liike-energia eli lämpötila, noin sata miljoonaa kelviniä, jolloin kaasu on plasmaa.
+**Mallivastaus:** Helium-4:n sidosenergia nukleonia kohti on $7{,}07\,\text{MeV}$, selvästi suurempi kuin deuteriumin ($1{,}11\,\text{MeV}$) ja tritiumin ($2{,}83\,\text{MeV}$). Reaktion lopputila on tiukemmin sidottu, joten sen massa on pienempi, ja massaero $0{,}0189\,\text{u}$ vapautuu energiana ($17{,}6\,\text{MeV}$).
+
+Deuterium- ja tritiumytimillä on positiivinen varaus, joten ne hylkivät toisiaan sähköisesti. Vahva vuorovaikutus sitoo ytimet vasta noin $10^{-15}\,\text{m}$:n etäisyydellä, joten ytimien on päästävä hyvin lähelle toisiaan. Siihen tarvitaan suuri liike-energia eli lämpötila, noin sata miljoonaa kelviniä, jolloin kaasu on plasmaa.
 
 ### Yleisiä virheitä
 - Massavaje lasketaan väärin: vedyn massan tilalla käytetään protonin massaa atomimassojen kanssa, jolloin elektronien massat jäävät huomiotta.
@@ -382,7 +400,9 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### d)
 **Kysytty:** orbitaalin merkitys ja energioiden kvantittuminen
 **Periaate:** Aaltomekaanisessa mallissa elektronia kuvataan aaltomaisella tilalla, jonka neliö kertoo löytymistodennäköisyyden. Atomissa rajoitettu aalto on seisova aalto.
-**Mallivastaus:** Orbitaali on ytimen ympärillä oleva alue, jossa elektroni löytyy suurella todennäköisyydellä, esimerkiksi $90\,\%$. Se ei ole rata, eikä elektronilla ole tarkkaa paikkaa ja nopeutta samaan aikaan, toisin kuin Bohrin mallissa. Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt seisovat aallot mahtuvat atomiin. Jokaista sallittua seisovaa aaltoa vastaa tietty energia, ja siksi atomin energiat ovat erillisiä eli kvantittuneita eivätkä jatkuvia.
+**Mallivastaus:** Orbitaali on ytimen ympärillä oleva alue, jossa elektroni löytyy suurella todennäköisyydellä, esimerkiksi $90\,\%$. Se ei ole rata, eikä elektronilla ole tarkkaa paikkaa ja nopeutta samaan aikaan, toisin kuin Bohrin mallissa.
+
+Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt seisovat aallot mahtuvat atomiin. Jokaista sallittua seisovaa aaltoa vastaa tietty energia, ja siksi atomin energiat ovat erillisiä eli kvantittuneita eivätkä jatkuvia.
 
 ### Yleisiä virheitä
 - Elektronivoltit jätetään muuntamatta jouleiksi, kun käytetään $h$:ta ja $c$:tä.
@@ -502,7 +522,9 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Kaava:** $\Delta N_\text{netto} = \sqrt{N + N_\text{t}}$ ja suhteellinen epävarmuus $\dfrac{\Delta N_\text{netto}}{N - N_\text{t}}$
 **Muunnokset:** $N = 8{,}7\,\text{s}^{-1} \cdot 100\,\text{s} = 870$ ja $N_\text{t} = 0{,}8\,\text{s}^{-1} \cdot 100\,\text{s} = 80$
 **Sijoitus:** $\Delta N_\text{netto} = \sqrt{870 + 80} = 31$ ja $\dfrac{31}{870 - 80} = \dfrac{31}{790} \approx 0{,}039$
-**Vastaus:** Suhteellinen epävarmuus on noin $3{,}9\,\%$. Pisteet ovat hyvin suoralla, joten malli sopii mitatulle alueelle $0\text{–}24\,\text{mm}$, mutta tulos $31\,\text{mm}$ on ekstrapolointia mitatun alueen ulkopuolelle. Malli olettaa kapean, yhden energian säteilykimpun; todellisessa säteilyssä on myös hajaantunutta säteilyä, ja paksussa suojassa vaimennus voi poiketa tästä. Suojan paksuus kannattaa valita turvallisuuden vuoksi mallin antamaa arvoa paksummaksi, esimerkiksi $35\,\text{mm}$, tai mittaus kannattaa toistaa suuremmilla paksuuksilla.
+**Vastaus:** Suhteellinen epävarmuus on noin $3{,}9\,\%$. Pisteet ovat hyvin suoralla, joten malli sopii mitatulle alueelle $0\text{–}24\,\text{mm}$, mutta tulos $31\,\text{mm}$ on ekstrapolointia mitatun alueen ulkopuolelle.
+
+Malli olettaa kapean, yhden energian säteilykimpun; todellisessa säteilyssä on myös hajaantunutta säteilyä, ja paksussa suojassa vaimennus voi poiketa tästä. Suojan paksuus kannattaa valita turvallisuuden vuoksi mallin antamaa arvoa paksummaksi, esimerkiksi $35\,\text{mm}$, tai mittaus kannattaa toistaa suuremmilla paksuuksilla.
 **Järkevyys:** Epävarmuus pienenee, kun lukumäärä kasvaa: nelinkertainen mittausaika nelinkertaistaisi pulssien määrän ja puolittaisi suhteellisen epävarmuuden.
 
 ### Yleisiä virheitä
@@ -561,7 +583,11 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### e)
 **Kysytty:** kumpi merkkiaine soveltuu kolmen tunnin kuljetukseen
 **Periaate:** Merkkiaineen aktiivisuus pienenee puoliintumisajan mukaan koko kuljetuksen ajan. Kun puoliintumisaika on lyhyt verrattuna kuljetusaikaan, lähes kaikki aine ehtii hajota ennen käyttöä.
-**Mallivastaus:** Kuljetuksen aikana ($3{,}0\,\text{h}$) fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$. Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä, koska näin suuren aktiivisuuden käsittely vaatisi raskaan säteilysuojauksen ja aiheuttaisi suuren annoksen työntekijöille. Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
+**Mallivastaus:** Kuljetuksen aikana ($3{,}0\,\text{h}$) fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$.
+
+Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä, koska näin suuren aktiivisuuden käsittely vaatisi raskaan säteilysuojauksen ja aiheuttaisi suuren annoksen työntekijöille.
+
+Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
 
 ### Yleisiä virheitä
 - Puoliintumisaika sekoitetaan hajoamisvakioon tai tunnit ja minuutit jätetään muuntamatta.
