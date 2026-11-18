@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c2c5b5eccc5d3fd7
+CONTENT-HASH: a7a058b9720f1015
+SCOPE: delta: new Sovella tasks s7 (lamp curve) and s8 (three resistors), their solutions and figures; s1-s6 not re-judged. fi-easy judged via identical cut and layout check (not separately captured).
 
 ## Blocking
-
+(none)
 
 ## Polish
-- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
+- [Minor] figures fy6-3/lamp-curve and fy6-4/siirto-mixed at 360 px: tick numbers and resistor labels are small (about 10 px); readable, but reading 0,21 A off the graph is tight. Shared figures, no change asked here.
 
 ## Checked
-batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.
+- Captures (fi, 390 px) of s7 and s8: task cards, figures, opened model answers with aligned calc rows, Järkevyys boxes, Yleisiä virheitä, Hyväksytään myös, scoring rows. Contact sheets 2, 7, 8.
+- check_layout 360 px: OK for fi, en, fi-easy. Solutions cut like fi; no plain quantities found in s7/s8 solutions.
+- Rows aligned at "=", units LaTeX with thin space, decimal comma, no overflow or clipping.
